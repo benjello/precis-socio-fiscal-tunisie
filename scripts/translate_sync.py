@@ -36,13 +36,17 @@ def main():
         guidelines = "Tu es un traducteur professionnel juridique."
 
     for file_path in files_to_process:
-        if not file_path.endswith(".qmd") and not file_path.endswith("_quarto.yml"):
+        if not file_path.endswith(".qmd") and not file_path.endswith("_quarto.yml") and file_path != "CHANGELOG.md":
             continue
             
         if not os.path.exists(file_path):
             continue
 
-        if "precis/fr/" in file_path:
+        if file_path == "CHANGELOG.md":
+            source_lang = "Français/Anglais"
+            target_lang = "Arabe"
+            target_path = "CHANGELOG_ar.md"
+        elif "precis/fr/" in file_path:
             source_lang = "Français"
             target_lang = "Arabe"
             target_path = file_path.replace("precis/fr/", "precis/ar/")

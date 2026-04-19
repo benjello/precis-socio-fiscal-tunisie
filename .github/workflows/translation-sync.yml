@@ -9,12 +9,14 @@ on:
       - 'precis/fr/**/_quarto.yml'
       - 'precis/ar/**/*.qmd'
       - 'precis/ar/**/_quarto.yml'
+      - 'CHANGELOG.md'
   pull_request:
     paths:
       - 'precis/fr/**/*.qmd'
       - 'precis/fr/**/_quarto.yml'
       - 'precis/ar/**/*.qmd'
       - 'precis/ar/**/_quarto.yml'
+      - 'CHANGELOG.md'
 
 jobs:
   translate:
@@ -41,7 +43,7 @@ jobs:
             BASE_SHA=${{ github.event.before }}
             HEAD_SHA=${{ github.sha }}
           fi
-          CHANGED=$(git diff --name-only $BASE_SHA $HEAD_SHA | grep -E 'precis/(fr|ar)/.*\.(qmd|yml)$' | tr '\n' ' ' || true)
+          CHANGED=$(git diff --name-only $BASE_SHA $HEAD_SHA | grep -E 'precis/(fr|ar)/.*\.(qmd|yml)$|^CHANGELOG\.md$' | tr '\n' ' ' || true)
           echo "files=$CHANGED" >> $GITHUB_OUTPUT
 
       - name: Run translation script
@@ -64,7 +66,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add precis/
+          git add precis/ CHANGELOG_ar.md
           
           # Vérifie s'il y a de nouveaux fichiers ou des modifications à commiter
           if ! git diff --staged --quiet; then
