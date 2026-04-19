@@ -1,0 +1,33 @@
+name: Verify Translation (Checker AI)
+
+on:
+  pull_request:
+    paths:
+      - 'precis/fr/**/*.qmd'
+      - 'precis/fr/**/_quarto.yml'
+      - 'precis/ar/**/*.qmd'
+      - 'precis/ar/**/_quarto.yml'
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Run verification script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          uv run --with google-genai python scripts/verify_translation.py
