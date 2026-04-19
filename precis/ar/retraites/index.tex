@@ -1,0 +1,448 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{arabic}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\ifPDFTeX
+  \TeXXeTstate=1
+  \newcommand{\RL}[1]{\beginR #1\endR}
+  \newcommand{\LR}[1]{\beginL #1\endL}
+  \newenvironment{RTL}{\beginR}{\endR}
+  \newenvironment{LTR}{\beginL}{\endL}
+\fi
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Retraites},
+  pdfauthor={Mahdi Ben Jelloul},
+  pdflang={ar},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Retraites}
+\author{Mahdi Ben Jelloul}
+\date{}
+
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+\bookmarksetup{startatroot}
+
+\chapter{Le système de retraite
+tunisien}\label{le-systuxe8me-de-retraite-tunisien}
+
+\section{Présentation générale}\label{pruxe9sentation-guxe9nuxe9rale}
+
+Il existe deux caisses nationales gérant les régimes dispensant une
+retraite à leurs affiliés.
+
+La Caisse nationale de retraite et de prévoyance sociale (CNRPS) gère
+les régimes de la fonction publique civile et militaire, des régimes
+spéciaux des députés, des gouverneurs et celui des membres du
+gouvernement.
+
+La Caisse nationale de sécurité sociale (CNSS) gère les régimes assurant
+une etraite aux travailleurs du secteur privé.
+
+\bookmarksetup{startatroot}
+
+\chapter{Le secteur public}\label{le-secteur-public}
+
+\subsection{Avant l'indépendance}\label{avant-linduxe9pendance}
+
+Le premier régime de sécurité sociale a été instauré en Tunisie en 1898
+avec la création de la Société de prévoyance des fonctionnaires et
+employés tunisiens (SPFET).
+
+En 1948, un régime de retraite pour les personnels des compagnies
+d'électricité, de gaz et des transports a été crée (Décret du 26 août
+1948).
+
+\subsection{Les pensions civiles et
+militaires}\label{les-pensions-civiles-et-militaires}
+
+Depuis 1985 le texte de référence est la Loi 85-12 du 5 Mars 1985
+portant régime des pensions civiles et militaires de retraite et des
+survivants dans le secteur public\footnote{L'ouvrage de (Sdiri 2014) est
+  une bonne référence pour le fonctionnement du sstème de retraite en
+  vigueur en 2012 soit avec l'essentiel des disposition de la loi de
+  1985.}.
+
+Citation de loi (\emph{Loi n° 2016-1321}, د.ت)
+
+Elle couvre tous les agents du secteur public quels que soient leur
+situation administrative, les modalités de paiement de leur
+rémunération, leux sexe, leur nationalité. Sont concernés, les agents de
+l'État, des collectivités publiques locales, les établissements publics
+à caractère administratif, les établissements publics à caractère
+industriel et commercial et les sociétés nationales.
+
+\subsubsection{Les conditions du droit à
+pension}\label{les-conditions-du-droit-uxe0-pension}
+
+\paragraph{Conditions d'âge}\label{conditions-duxe2ge}
+
+L'âge légal de départ à la retraite a été fixé à 60 ans.
+
+Il est abaissé à 55 ans pour les agents des cadres actifs ainsi que pou
+les ouvriers accomplissant des tâches pénibles, dans des conditions
+insalbubres ou astreignantes.
+
+Il peut être prorogé jusqu'à 65 ans par décret.
+
+La loi n° 2009-20 du 13 avril 2009, portant dispositions exceptionnelles
+relatives à la retraite de certains professeurs de l'enseignement
+supérieur porte l'âge de mise à la retraite à 65 ans. Les enseignants
+concernés sont:
+
+\begin{itemize}
+\item
+  les professeurs de l'enseignement supérieur et les maîtres de
+  conférences de l'enseignement supérieur rattachés aux établissements
+  universitaires et aux établissements de recherche scientifique civils
+  et militaires
+\item
+  les professeurs hospitalo-universitaires et les maîtres de conférences
+  agrégés hospitalo-universitaires
+\end{itemize}
+
+Il peut être prorogé jusqu'à 70 ans par décret.
+
+L'âge légal été modifé par la loi du 30 avril 2019 pour être porté à 62
+ans. Cette augmentation est graduelle. Elle est portée à 61 au 1er
+juiller 2019 et à 62 ans au 1er janvier 2020.
+
+\paragraph{Condition de stage}\label{condition-de-stage}
+
+La durée de stage minimale qui doit être effectuée pour l'ouverture des
+droits est de 15 ans de service.
+
+Cette durée est réduite à 10 ans pour les ouvriers.
+
+\subsubsection{Le taux de liquidation}\label{le-taux-de-liquidation}
+
+\subsubsection{Le salaire de
+référence}\label{le-salaire-de-ruxe9fuxe9rence}
+
+L'assiette de cotisation comprend l'ensemble des éléments permanents de
+la rémunération de l'agent.
+
+Le ssalaire de référence correspond à :
+
+\begin{itemize}
+\tightlist
+\item
+  la dernière rémunération ayant l'objet de retenues pour pension
+  pendant au moins trois ans
+\item
+  ou la rémunération afférente à la fonction la plus élevée
+  effectivement exercée pendant au moins deux ans au cours de la
+  carrière de l'agent.
+\end{itemize}
+
+\subsubsection{Les départs anticipés}\label{les-duxe9parts-anticipuxe9s}
+
+Le droit à pension de retraite peut s'acquérir avant d'atteindre l'âge
+légal dans les cas suivants :
+
+\begin{itemize}
+\item
+  En cas d'invalidité
+\item
+  Sur demande de l'assuré et après accord de l'employeur soumis au visa
+  du Premier ministre (vu l'accroissement des demandes et des
+  répercussions financières)
+\item
+  En cas de démission
+\item
+  En cas de révocation par l'employeur pour insuffisance professionelle
+\item
+  Sur demande des mères ayant 3 enfants de moins de 20 ans ou comprenant
+  un enfant ayant un handicap lourd (sans limite d'âge) après accord du
+  Premier ministre
+\item
+  En cas de mise à la retraite d'office après 15 nas de service civils
+  et militaires effectifs
+\item
+  Par arrêté de premier ministre après avis de commission
+  d'assainissement et de restructuration des entreprises à participation
+  publiques (CAREP)
+\end{itemize}
+
+Cependant la date jouissance de la pension ne correspond pas forcément à
+la date de départ à la retraite. La joussiance de la pension
+n'intervient
+
+\subsubsection{La pension minimale}\label{la-pension-minimale}
+
+La pension minimale s'établit à 2/3 du Smig.
+
+\subsubsection{L'allocation vieillesse}\label{lallocation-vieillesse}
+
+Les agents ayant une durée d'assurance supérieure ou égale à 5 ans et
+strictement inférieure à la durée de stage requise par leur statut
+peuvent opter pour le remboursement de leurs cotisations retraites ou
+demander à jouir d'une allocation vieillesse.
+
+L'allocation vieillesse 50\% du Smig du régime de 2400 heures par an.
+
+\subsubsection{Droits annexes}\label{droits-annexes}
+
+\subsubsection{Rente d'invalidité}\label{rente-dinvalidituxe9}
+
+La pension maximale servie comprise comme la somme de la rente
+d'invalidité et de la pension de retraite ne saurait être à 100 \% du
+traitement ayant servi de référence pour la liquidation de la pension.
+
+\subsubsection{Les militaires}\label{les-militaires}
+
+\begin{verbatim}
+   
+
+
+`<!-- quarto-file-metadata: eyJyZXNvdXJjZURpciI6Ii4ifQ== -->`{=html}
+
+```{=html}
+<!-- quarto-file-metadata: eyJyZXNvdXJjZURpciI6Ii4iLCJib29rSXRlbVR5cGUiOiJjaGFwdGVyIiwiYm9va0l0ZW1OdW1iZXIiOjMsImJvb2tJdGVtRmlsZSI6Il9zZWN0ZXVyX3ByaXZlLnFtZCIsImJvb2tJdGVtRGVwdGgiOjB9 -->
+\end{verbatim}
+
+\bookmarksetup{startatroot}
+
+\chapter{Le secteur privé}\label{le-secteur-privuxe9}
+
+\subsection{Le régime des salariés
+non-agricoles}\label{le-ruxe9gime-des-salariuxe9s-non-agricoles}
+
+\subsection{Le régime des salariés
+agricoles}\label{le-ruxe9gime-des-salariuxe9s-agricoles}
+
+\subsection{Le régime des salariés agricoles
+amélioré}\label{le-ruxe9gime-des-salariuxe9s-agricoles-amuxe9lioruxe9}
+
+\subsection{Le régime des travailleurs
+non-salariés}\label{le-ruxe9gime-des-travailleurs-non-salariuxe9s}
+
+\subsection{Le régime des travailleurs tunisiens à
+l'étranger}\label{le-ruxe9gime-des-travailleurs-tunisiens-uxe0-luxe9tranger}
+
+\subsection{Le régime des travailleurs à bas
+revenu}\label{le-ruxe9gime-des-travailleurs-uxe0-bas-revenu}
+
+\subsection{Le régime des artistes, des créateurs et des
+intellectuels}\label{le-ruxe9gime-des-artistes-des-cruxe9ateurs-et-des-intellectuels}
+
+\subsection{Le régime complémentaire de
+retraite}\label{le-ruxe9gime-compluxe9mentaire-de-retraite}
+
+\subsection{Le régime des étudiants et des
+staiaires}\label{le-ruxe9gime-des-uxe9tudiants-et-des-staiaires}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-loi2016}
+\emph{Loi n° 2016-1321}. د.ت.
+\url{https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000033202746}.
+
+\bibitem[\citeproctext]{ref-sdiri2014}
+Sdiri, Khaled. 2014. \emph{Analyse économique et pilotage des régimes de
+retraite}.
+
+\end{CSLReferences}
+
+
+
+
+\end{document}
