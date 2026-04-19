@@ -1,0 +1,4 @@
+# Règles pour les agents LLM (Cursor, Windsurf, Copilot, etc.)
+
+- Toujours utiliser `uv run` pour exécuter les commandes Python, les scripts ou d'autres utilitaires CLI liés à Python (par exemple `uv run quarto render`, `uv run python -m http.server`, etc.).
+- Ne jamais appeler `python3` ou l'environnement virtuel `.venv/bin/python3` directement, toujours utiliser `uv run`.
