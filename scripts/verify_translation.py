@@ -108,6 +108,7 @@ TRES IMPORTANT : Tu dois IMPÉRATIVEMENT inclure une suggestion de correction pr
             subprocess.run(["gh", "pr", "comment", pr_number, "-b", comment_body], check=True)
         except Exception as e:
             print(f"Impossible de poster le commentaire sur la PR : {e}")
+        sys.exit(1) # Échouer le job CI
     else:
         print("Toutes les traductions sont vérifiées et validées. Aucun avertissement.")
 
