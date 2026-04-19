@@ -5,14 +5,16 @@ project:
 lang: fr
 
 book:
-  title: "Prestations sociales"
+  title: "Retraites"
   author: "Mahdi Ben Jelloul"
   repo-url: https://github.com/benjello/precis-socio-fiscal-tunisie/
-  repo-subdir: precis/prestations_sociales
+  repo-subdir: precis/fr/retraites
   repo-branch: master
   repo-actions: [edit, issue]
   chapters:
     - index.qmd
+    - _secteur_public.qmd
+    - _secteur_prive.qmd
 
 bibliography: ../references.bib
 
