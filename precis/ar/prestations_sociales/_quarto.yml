@@ -13,6 +13,9 @@ book:
   repo-branch: master
   repo-actions: [edit, issue]
 
+  chapters:
+    - index.qmd
+
 language:
   toc-title-document: "المحتويات"
   toc-title-website: "المحتويات"
@@ -22,8 +25,6 @@ language:
   search-clear-button-title: "مسح"
   search-no-results-text: "لا توجد نتائج"
   search-text-placeholder: "بحث"
-  chapters:
-    - index.qmd
 
 bibliography: ../references.bib
 

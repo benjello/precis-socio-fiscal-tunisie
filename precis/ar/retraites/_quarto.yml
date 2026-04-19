@@ -13,6 +13,11 @@ book:
   repo-branch: master
   repo-actions: [edit, issue]
 
+  chapters:
+    - index.qmd
+    - _secteur_public.qmd
+    - _secteur_prive.qmd
+
 language:
   toc-title-document: "المحتويات"
   toc-title-website: "المحتويات"
@@ -22,10 +27,6 @@ language:
   search-clear-button-title: "مسح"
   search-no-results-text: "لا توجد نتائج"
   search-text-placeholder: "بحث"
-  chapters:
-    - index.qmd
-    - _secteur_public.qmd
-    - _secteur_prive.qmd
 
 bibliography: ../references.bib
 
