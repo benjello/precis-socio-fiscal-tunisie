@@ -9,6 +9,12 @@ on:
       - 'precis/fr/**/_quarto.yml'
       - 'precis/ar/**/*.qmd'
       - 'precis/ar/**/_quarto.yml'
+  pull_request:
+    paths:
+      - 'precis/fr/**/*.qmd'
+      - 'precis/fr/**/_quarto.yml'
+      - 'precis/ar/**/*.qmd'
+      - 'precis/ar/**/_quarto.yml'
 
 jobs:
   translate:
@@ -26,9 +32,15 @@ jobs:
 
       - name: Get changed files
         id: changed-files
-        # Trouve les fichiers modifiés dans ce commit qui sont dans fr/ ou ar/
         run: |
-          CHANGED=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E 'precis/(fr|ar)/.*\.(qmd|yml)$' | tr '\n' ' ' || true)
+          if [ "${{ github.event_name }}" == "pull_request" ]; then
+            BASE_SHA=${{ github.event.pull_request.base.sha }}
+            HEAD_SHA=${{ github.event.pull_request.head.sha }}
+          else
+            BASE_SHA=${{ github.event.before }}
+            HEAD_SHA=${{ github.sha }}
+          fi
+          CHANGED=$(git diff --name-only $BASE_SHA $HEAD_SHA | grep -E 'precis/(fr|ar)/.*\.(qmd|yml)$' | tr '\n' ' ' || true)
           echo "files=$CHANGED" >> $GITHUB_OUTPUT
 
       - name: Run translation script
