@@ -1,0 +1,8 @@
+image: registry.gitlab.com/quarto-forge/docker/python
+
+pages:
+  script:
+    - quarto render --execute --to html --output-dir public
+  artifacts:
+    paths:
+      - public
