@@ -2,7 +2,8 @@ project:
   type: book
   output-dir: public
 
-lang: fr
+lang: ar
+dir: rtl
 
 book:
   title: "Retraites"
