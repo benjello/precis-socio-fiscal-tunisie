@@ -6,12 +6,22 @@ lang: ar
 dir: rtl
 
 book:
-  title: "Prestations sociales"
-  author: "Mahdi Ben Jelloul"
+  title: "المنافع الاجتماعية"
+  author: "مهدي بن جلول"
   repo-url: https://github.com/benjello/precis-socio-fiscal-tunisie/
   repo-subdir: precis/ar/prestations_sociales
   repo-branch: master
   repo-actions: [edit, issue]
+
+language:
+  toc-title-document: "المحتويات"
+  toc-title-website: "المحتويات"
+  author: "الكاتب"
+  repo-edit: "تعديل هذه الصفحة"
+  repo-issue: "الإبلاغ عن مشكلة"
+  search-clear-button-title: "مسح"
+  search-no-results-text: "لا توجد نتائج"
+  search-text-placeholder: "بحث"
   chapters:
     - index.qmd
 
