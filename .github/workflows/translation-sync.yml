@@ -1,0 +1,55 @@
+name: Auto-Translate Sync
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'precis/fr/**/*.qmd'
+      - 'precis/fr/**/_quarto.yml'
+      - 'precis/ar/**/*.qmd'
+      - 'precis/ar/**/_quarto.yml'
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Get changed files
+        id: changed-files
+        # Trouve les fichiers modifiés dans ce commit qui sont dans fr/ ou ar/
+        run: |
+          CHANGED=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E 'precis/(fr|ar)/.*\.(qmd|yml)$' | tr '\n' ' ' || true)
+          echo "files=$CHANGED" >> $GITHUB_OUTPUT
+
+      - name: Run translation script
+        if: steps.changed-files.outputs.files != ''
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "Translating files: ${{ steps.changed-files.outputs.files }}"
+          uv run --with google-genai python scripts/translate_sync.py ${{ steps.changed-files.outputs.files }}
+
+      - name: Commit and Push changes
+        if: steps.changed-files.outputs.files != ''
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add precis/
+          
+          # Vérifie s'il y a de nouveaux fichiers ou des modifications à commiter
+          if ! git diff --staged --quiet; then
+            git commit -m "Auto-translate sync (fr <-> ar) [skip ci]"
+            git push
+          else
+            echo "No translation changes to commit."
+          fi
