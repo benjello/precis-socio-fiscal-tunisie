@@ -19,9 +19,9 @@ book:
 language:
   toc-title-document: "المحتويات"
   toc-title-website: "المحتويات"
-  author: "الكاتب"
-  repo-edit: "تعديل هذه الصفحة"
-  repo-issue: "الإبلاغ عن مشكلة"
+  title-block-author-single: "الكاتب"
+  repo-action-links-edit: "تعديل هذه الصفحة"
+  repo-action-links-issue: "الإبلاغ عن مشكلة"
   search-clear-button-title: "مسح"
   search-no-results-text: "لا توجد نتائج"
   search-text-placeholder: "بحث"
