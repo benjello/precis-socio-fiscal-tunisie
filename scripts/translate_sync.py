@@ -1,3 +1,4 @@
+import time
 import os
 import sys
 import subprocess
@@ -103,9 +104,11 @@ Fichier à traduire :
 ```
 """
 
+
+
         try:
             response = client.models.generate_content(
-                model='gemini-2.5-flash',
+                model='gemini-2.0-flash',
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     system_instruction=guidelines,
@@ -125,6 +128,7 @@ Fichier à traduire :
             with open(target_path, "w", encoding="utf-8") as f:
                 f.write(translated_text)
             print(f"Succès : {target_path} mis à jour.")
+            time.sleep(5) # Éviter le Rate Limit (15 RPM)
             
         except Exception as e:
             print(f"Erreur lors de la traduction de {file_path}: {e}")

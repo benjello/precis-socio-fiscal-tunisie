@@ -82,11 +82,12 @@ VÉRIFICATIONS À EFFECTUER IMPÉRATIVEMENT :
 3. Le sens historique et pédagogique doit être préservé.
 
 Si tout te semble parfait, cohérent et sans anomalie, réponds UNIQUEMENT par le mot exact : "OK".
-S'il y a la moindre anomalie (hallucination de chiffres, perte de balise Markdown, débordement sur un autre paragraphe), rédige un court rapport d'alerte en français (3 à 4 phrases maximum) expliquant précisément le problème pour alerter l'auteur humain. Ne dis rien d'autre.
+S'il y a la moindre anomalie (hallucination de chiffres, perte de balise Markdown, débordement, ou texte non traduit de manière évidente), rédige un rapport d'alerte en français expliquant le problème.
+TRES IMPORTANT : Tu dois IMPÉRATIVEMENT inclure une suggestion de correction prête à l'emploi. Montre le texte original fautif, et en dessous, le texte corrigé que l'auteur devrait utiliser.
 """
         try:
             response = client.models.generate_content(
-                model='gemini-2.5-flash',
+                model='gemini-2.0-flash',
                 contents=prompt,
                 config=types.GenerateContentConfig(temperature=0.0)
             )
@@ -107,6 +108,7 @@ S'il y a la moindre anomalie (hallucination de chiffres, perte de balise Markdow
             subprocess.run(["gh", "pr", "comment", pr_number, "-b", comment_body], check=True)
         except Exception as e:
             print(f"Impossible de poster le commentaire sur la PR : {e}")
+        sys.exit(1) # Échouer le job CI
     else:
         print("Toutes les traductions sont vérifiées et validées. Aucun avertissement.")
 
