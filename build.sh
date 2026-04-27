@@ -12,7 +12,7 @@ PRECIS_DIR="$ROOT_DIR/precis"
 LOCAL_SITE="$ROOT_DIR/local_site"
 
 LANGUAGES=(fr ar)
-BOOKS=(prestations_sociales retraites fiscalite)
+BOOKS=(prestations_sociales retraites)
 
 DO_PDF=true
 
