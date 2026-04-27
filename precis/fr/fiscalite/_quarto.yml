@@ -1,0 +1,27 @@
+project:
+  type: book
+  output-dir: public
+
+lang: fr
+
+book:
+  title: "Fiscalité"
+  author: "Mahdi Ben Jelloul"
+  repo-url: https://github.com/benjello/precis-socio-fiscal-tunisie/
+  repo-subdir: precis/fr/fiscalite
+  repo-branch: master
+  repo-actions: [edit, issue]
+  chapters:
+    - index.qmd
+
+bibliography: ../references.bib
+
+format:
+  html:
+    theme: cosmo
+    number-depth: 3
+    toc: true
+  pdf:
+    documentclass: scrreprt
+    toc: true
+    number-sections: true
