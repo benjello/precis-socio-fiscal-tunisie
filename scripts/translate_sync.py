@@ -35,10 +35,12 @@ def main():
     except Exception:
         guidelines = "Tu es un traducteur professionnel juridique."
 
+    fr_files = {f for f in files_to_process if "precis/fr/" in f}
+
     for file_path in files_to_process:
         if not file_path.endswith(".qmd") and not file_path.endswith("_quarto.yml") and file_path != "CHANGELOG.md":
             continue
-            
+
         if not os.path.exists(file_path):
             continue
 
@@ -51,6 +53,10 @@ def main():
             target_lang = "Arabe"
             target_path = file_path.replace("precis/fr/", "precis/ar/")
         elif "precis/ar/" in file_path:
+            fr_counterpart = file_path.replace("precis/ar/", "precis/fr/")
+            if fr_counterpart in fr_files:
+                print(f"Skip : {file_path} (le fichier FR correspondant est aussi dans le diff, FR est la source de vérité)")
+                continue
             source_lang = "Arabe"
             target_lang = "Français"
             target_path = file_path.replace("precis/ar/", "precis/fr/")
@@ -112,7 +118,7 @@ Fichier à traduire :
 
         try:
             response = client.models.generate_content(
-                model='gemini-2.0-flash',
+                model='gemini-2.5-flash',
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     system_instruction=guidelines,

@@ -25,13 +25,13 @@ jobs:
       contents: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
           ref: ${{ github.head_ref || github.ref_name }}
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v7
 
       - name: Get changed files
         id: changed-files
@@ -66,7 +66,8 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add precis/ CHANGELOG_ar.md
+          git add precis/
+          git add CHANGELOG_ar.md 2>/dev/null || true
           
           # Vérifie s'il y a de nouveaux fichiers ou des modifications à commiter
           if ! git diff --staged --quiet; then
