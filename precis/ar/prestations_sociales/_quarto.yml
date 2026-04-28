@@ -26,7 +26,10 @@ language:
   search-no-results-text: "لا توجد نتائج"
   search-text-placeholder: "بحث"
 
-bibliography: ../references.bib
+bibliography:
+  - references.json
+  - ../references.json
+  - ../references.bib
 
 format:
   html:

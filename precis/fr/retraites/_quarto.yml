@@ -16,7 +16,10 @@ book:
     - _secteur_public.qmd
     - _secteur_prive.qmd
 
-bibliography: ../references.bib
+bibliography:
+  - references.json
+  - ../references.json
+  - ../references.bib
 
 format:
   html:

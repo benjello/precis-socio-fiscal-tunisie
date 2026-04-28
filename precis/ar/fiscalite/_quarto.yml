@@ -15,7 +15,10 @@ book:
   chapters:
     - index.qmd
 
-bibliography: ../references.bib
+bibliography:
+  - references.json
+  - ../references.json
+  - ../references.bib
 
 format:
   html:
