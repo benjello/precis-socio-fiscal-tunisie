@@ -1,3 +1,91 @@
 {
-  "items": []
+  "items": [
+    {
+      "id": "loi83-112",
+      "type": "legislation",
+      "title": "Loi n°83-112 du 12 décembre 1983, portant statut général des personnels de l'État, des collectivités publiques locales et des établissements publics à caractère administratif",
+      "note": "citation-key: loi83-112",
+      "URL": "https://www.jurisitetunisie.com/tunisie/codes/spf/Menu.html",
+      "issued": {
+        "date-parts": [
+          [
+            1983,
+            12,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "id": "loi85-78",
+      "type": "legislation",
+      "title": "Loi n°85-78 du 5 août 1985, portant statut général des agents des offices, des établissements publics à caractère industriel et commercial et des sociétés dont le capital est directement et de plein droit détenu par l'État ou les collectivités publiques locales",
+      "note": "citation-key: loi85-78",
+      "issued": {
+        "date-parts": [
+          [
+            1985,
+            8,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "loi89-9",
+      "type": "legislation",
+      "title": "Loi n°89-9 du 1er février 1989, relative aux participations, entreprises et établissements publics",
+      "note": "citation-key: loi89-9",
+      "URL": "http://www.pm.gov.tn/pm/article/article.php?id=92&lang=fr",
+      "issued": {
+        "date-parts": [
+          [
+            1989,
+            2,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "sna2008",
+      "type": "book",
+      "title": "System of National Accounts 2008",
+      "note": "citation-key: sna2008",
+      "publisher": "Nations Unies, Commission européenne, FMI, OCDE, Banque mondiale",
+      "publisher-place": "New York",
+      "URL": "https://unstats.un.org/unsd/nationalaccount/sna2008.asp",
+      "issued": {
+        "date-parts": [
+          [
+            2009
+          ]
+        ]
+      }
+    },
+    {
+      "id": "imfgfsm2014",
+      "type": "book",
+      "title": "Government Finance Statistics Manual 2014",
+      "note": "citation-key: imfgfsm2014",
+      "publisher": "Fonds monétaire international",
+      "publisher-place": "Washington, D.C.",
+      "URL": "https://www.imf.org/external/pubs/ft/gfs/manual/2014/gfsfinal.pdf",
+      "issued": {
+        "date-parts": [
+          [
+            2014
+          ]
+        ]
+      }
+    },
+    {
+      "id": "minfin-ep",
+      "type": "report",
+      "title": "Entreprises publiques et établissements publics à caractère non administratif sous tutelle",
+      "note": "citation-key: minfin-ep",
+      "publisher": "Ministère des Finances de la République tunisienne",
+      "URL": "https://www.finances.gov.tn/"
+    }
+  ]
 }
