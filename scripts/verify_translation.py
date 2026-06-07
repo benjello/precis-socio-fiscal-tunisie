@@ -34,6 +34,14 @@ def main():
         print(f"Erreur d'initialisation de l'API Gemini : {e}")
         sys.exit(1)
 
+    # Glossaire terminologique canonique généré depuis precis/glossaire.yml,
+    # utilisé pour signaler toute divergence de terme entre les deux langues.
+    try:
+        with open("translation_glossary.generated.md", "r", encoding="utf-8") as f:
+            glossary_table = f.read()
+    except Exception:
+        glossary_table = ""
+
     warnings = []
 
     for file_path in changed_files:
@@ -76,10 +84,14 @@ Voici le DIFF des modifications apportées à la traduction cible ({target_lang}
 {target_diff}
 ```
 
+Voici le GLOSSAIRE TERMINOLOGIQUE CANONIQUE (bijection FR↔AR à respecter strictement) :
+{glossary_table}
+
 VÉRIFICATIONS À EFFECTUER IMPÉRATIVEMENT :
 1. Les dates, données chiffrées, et citations bibliographiques `[@ref]` doivent être rigoureusement identiques entre la source et la cible.
 2. La traduction cible ne doit modifier QUE les paragraphes qui ont été modifiés dans le fichier source. S'il y a des lignes modifiées dans la cible qui ne correspondent à aucune modification conceptuelle dans la source (un "débordement"), c'est une alerte grave.
 3. Le sens historique et pédagogique doit être préservé.
+4. Les notions figurant dans le GLOSSAIRE TERMINOLOGIQUE CANONIQUE doivent être traduites EXACTEMENT par l'équivalent indiqué. Toute divergence de terme par rapport au glossaire est une alerte.
 
 Si tout te semble parfait, cohérent et sans anomalie, réponds UNIQUEMENT par le mot exact : "OK".
 S'il y a la moindre anomalie (hallucination de chiffres, perte de balise Markdown, débordement, ou texte non traduit de manière évidente), rédige un rapport d'alerte en français expliquant le problème.
