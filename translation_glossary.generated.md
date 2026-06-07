@@ -14,8 +14,12 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Caisse nationale de sécurité sociale | الصندوق الوطني للضمان الاجتماعي | CNSS |
 | Contribution sociale de solidarité | المساهمة الاجتماعية التضامنية | CSS |
 | Cotisations sociales | المساهمات الاجتماعية |  |
+| Échelon | الدرجة |  |
 | Emploi public | التشغيل العمومي |  |
 | Entreprises publiques | المنشآت العمومية |  |
+| Établissement public à caractère administratif | المؤسسة العمومية ذات الصبغة الإدارية | EPA |
+| Établissement public à caractère industriel et commercial | المؤسسة العمومية ذات الصبغة الصناعية والتجارية | EPIC |
+| Établissement public à caractère non administratif | المؤسسة العمومية التي لا تكتسي صبغة إدارية | EPNA |
 | Fonction publique | الوظيفة العمومية |  |
 | Grade | الرتبة |  |
 | Impôt sur le revenu des personnes physiques | الضريبة على دخل الأشخاص الطبيعيين | IRPP |
@@ -29,7 +33,3 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Taux marginal | النسبة الحدية |  |
 | Traitement de base | الأجر الأساسي |  |
 | Valeur du point d'indice | قيمة النقطة الاستدلالية |  |
-| Échelon | الدرجة |  |
-| Établissement public à caractère administratif | المؤسسة العمومية ذات الصبغة الإدارية | EPA |
-| Établissement public à caractère industriel et commercial | المؤسسة العمومية ذات الصبغة الصناعية والتجارية | EPIC |
-| Établissement public à caractère non administratif | المؤسسة العمومية التي لا تكتسي صبغة إدارية | EPNA |

@@ -18,6 +18,7 @@ Fichiers générés : NE PAS éditer à la main, modifiez `precis/glossaire.yml`
 
 import os
 import sys
+import unicodedata
 
 try:
     import yaml
@@ -68,10 +69,22 @@ def clean(text):
     return " ".join((text or "").split())
 
 
+def sort_key(terme, lang):
+    """Clé de tri alphabétique : sans accents/casse pour le FR, sans l'article
+    défini « ال » pour l'AR (convention d'alphabétisation arabe)."""
+    if lang == "ar":
+        t = terme.strip()
+        if t.startswith("ال") and len(t) > 2:
+            t = t[2:]
+        return t
+    nfkd = unicodedata.normalize("NFKD", terme)
+    return "".join(c for c in nfkd if not unicodedata.combining(c)).casefold()
+
+
 def render_book(entries, book, lang):
     other = OTHER[lang]
     by_id = {e["id"]: e for e in entries}
-    ordered = sorted(entries, key=lambda e: e[lang]["terme"])
+    ordered = sorted(entries, key=lambda e: sort_key(e[lang]["terme"], lang))
 
     lines = [DO_NOT_EDIT[lang], "", f"# {HEADER[lang]} {{.unnumbered}}", "", INTRO[lang], ""]
 
@@ -114,7 +127,7 @@ def render_translation_table(entries):
         "| Français | Arabe (Tunisie) | Acronyme |",
         "| :--- | :--- | :--- |",
     ]
-    for e in sorted(entries, key=lambda e: e["fr"]["terme"]):
+    for e in sorted(entries, key=lambda e: sort_key(e["fr"]["terme"], "fr")):
         acro = e.get("acronyme") or ""
         lines.append(f"| {e['fr']['terme']} | {e['ar']['terme']} | {acro} |")
     return "\n".join(lines) + "\n"
