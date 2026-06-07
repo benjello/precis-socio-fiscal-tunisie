@@ -58,6 +58,8 @@ entries:
     acronyme: null
     statut: valide
     references: [loi83-112]
+    source_definition: {ref: loi83-112, locator: "art. 1"}
+    source_traduction: {ref: loi83-112, locator: "art. 1"}
     voir_aussi: [emploi-public, secteur-public, epa]
     fr:
       terme: Fonction publique
@@ -96,6 +98,7 @@ entries:
     acronyme: null
     statut: provisoire
     references: [sna2008, imfgfsm2014]
+    source_definition: {ref: sna2008}
     voir_aussi: [entreprises-publiques, secteur-public]
     fr:
       terme: Administrations publiques
@@ -116,6 +119,8 @@ entries:
     acronyme: null
     statut: provisoire
     references: [loi89-9, sna2008]
+    source_definition: {ref: loi89-9}
+    source_traduction: {ref: loi89-9}
     voir_aussi: [administrations-publiques, epna, epic]
     fr:
       terme: Entreprises publiques
@@ -135,6 +140,8 @@ entries:
     acronyme: EPA
     statut: provisoire
     references: [loi83-112]
+    source_definition: {ref: loi83-112}
+    source_traduction: {ref: loi83-112}
     voir_aussi: [epna, epic, fonction-publique]
     fr:
       terme: Établissement public à caractère administratif
@@ -154,6 +161,8 @@ entries:
     acronyme: EPNA
     statut: provisoire
     references: [loi89-9]
+    source_definition: {ref: loi89-9}
+    source_traduction: {ref: loi89-9}
     voir_aussi: [epa, epic, entreprises-publiques]
     fr:
       terme: Établissement public à caractère non administratif
@@ -174,6 +183,8 @@ entries:
     acronyme: EPIC
     statut: provisoire
     references: [loi85-78]
+    source_definition: {ref: loi85-78}
+    source_traduction: {ref: loi85-78}
     voir_aussi: [epna, entreprises-publiques, regime-conventionnel-public]
     fr:
       terme: Établissement public à caractère industriel et commercial
@@ -232,6 +243,7 @@ entries:
     acronyme: null
     statut: provisoire
     references: [loi85-78, loi89-9]
+    source_definition: {ref: loi85-78}
     voir_aussi: [entreprises-publiques, epic]
     fr:
       terme: Régime conventionnel public

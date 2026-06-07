@@ -53,6 +53,8 @@ INTRO = {
 SWITCH_LABEL = {"fr": "العربية", "ar": "Français"}
 SEE_ALSO = {"fr": "Voir aussi", "ar": "انظر أيضًا"}
 REFS = {"fr": "Références", "ar": "المراجع"}
+SRC_DEF = {"fr": "Source de la définition", "ar": "مصدر التعريف"}
+SRC_TRAD = {"fr": "Terme officiel", "ar": "المصطلح الرسمي"}
 DO_NOT_EDIT = {
     "fr": "<!-- Fichier généré par scripts/build_glossary.py — ne pas éditer. Source : precis/glossaire.yml -->",
     "ar": "<!-- ملف مولَّد بواسطة scripts/build_glossary.py — لا تُحرِّره. المصدر: precis/glossaire.yml -->",
@@ -63,6 +65,43 @@ def load_entries():
     with open(GLOSSARY, "r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
     return data.get("entries", [])
+
+
+def cite(source):
+    """Rendu d'une source canonique (str ou {ref, locator}) en citation Pandoc."""
+    if not source:
+        return None
+    if isinstance(source, str):
+        return f"[@{source}]"
+    ref = source.get("ref")
+    if not ref:
+        return None
+    locator = source.get("locator")
+    return f"[@{ref}, {locator}]" if locator else f"[@{ref}]"
+
+
+def validate(entries):
+    """Verrou de synchro : termes FR/AR obligatoires partout ; définitions FR/AR
+    obligatoires pour les entrées `valide`. Renvoie (errors, warnings)."""
+    errors, warnings = [], []
+    seen = set()
+    for e in entries:
+        eid = e.get("id", "<sans id>")
+        if eid in seen:
+            errors.append(f"{eid} : identifiant en double.")
+        seen.add(eid)
+        for lang in LANGS:
+            block = e.get(lang) or {}
+            if not (block.get("terme") or "").strip():
+                errors.append(f"{eid} : terme {lang.upper()} manquant.")
+        if e.get("statut") == "valide":
+            for lang in LANGS:
+                block = e.get(lang) or {}
+                if not (block.get("definition") or "").strip():
+                    errors.append(f"{eid} : définition {lang.upper()} manquante (statut valide).")
+            if not e.get("source_definition"):
+                warnings.append(eid)
+    return errors, warnings
 
 
 def clean(text):
@@ -101,6 +140,14 @@ def render_book(entries, book, lang):
         lines.append("")
         lines.append(clean(e[lang]["definition"]))
         lines.append("")
+        src_def = cite(e.get("source_definition"))
+        if src_def:
+            lines.append(f"*{SRC_DEF[lang]} :* {src_def}")
+            lines.append("")
+        src_trad = cite(e.get("source_traduction"))
+        if src_trad:
+            lines.append(f"*{SRC_TRAD[lang]} :* {src_trad}")
+            lines.append("")
         voir = [v for v in e.get("voir_aussi", []) if v in by_id]
         if voir:
             links = ", ".join(f"[{by_id[v][lang]['terme']}](#g-{v})" for v in voir)
@@ -138,6 +185,15 @@ def main():
     if not entries:
         print("Aucune entrée dans precis/glossaire.yml.")
         sys.exit(1)
+
+    errors, warnings = validate(entries)
+    if errors:
+        print("✗ Glossaire invalide (synchro FR/AR) :")
+        for err in errors:
+            print(f"  - {err}")
+        sys.exit(1)
+    if warnings:
+        print(f"⚠ {len(warnings)} entrée(s) « valide » sans source_definition : {', '.join(warnings)}")
 
     written = []
     for book in BOOKS:
