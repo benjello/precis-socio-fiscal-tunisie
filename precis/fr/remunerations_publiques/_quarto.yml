@@ -13,7 +13,6 @@ book:
   repo-actions: [edit, issue]
   chapters:
     - index.qmd
-    - _perimetre.qmd
     - _regime_indiciaire.qmd
     - _regime_statutaire_autonome.qmd
     - _regime_conventionnel.qmd
