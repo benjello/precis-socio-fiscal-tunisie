@@ -44,19 +44,43 @@ def prepare(generated: str | None = None):
     return df
 
 
+# libellés bilingues (FR source de vérité ; AR pour le livre arabe)
+_L = {
+    "lg_pib":  {"fr": "… du PIB (éch. gauche)", "ar": "… من الناتج المحلي الإجمالي (يسار)"},
+    "lg_dep":  {"fr": "… des dépenses totales (éch. droite)",
+                "ar": "… من إجمالي النفقات (يمين)"},
+    "y_pib":   {"fr": "Masse salariale / PIB (%)",
+                "ar": "كتلة الأجور / الناتج المحلي الإجمالي (%)"},
+    "y_dep":   {"fr": "Masse salariale / dépenses (%)", "ar": "كتلة الأجور / النفقات (%)"},
+    "xlabel":  {"fr": "Année", "ar": "السنة"},
+    "title":   {"fr": "Poids de la masse salariale publique en Tunisie, 1990-2025",
+                "ar": "وزن كتلة الأجور العمومية في تونس، 1990-2025"},
+    "col_annee": {"fr": "Année", "ar": "السنة"},
+    "col_pib":   {"fr": "% du PIB", "ar": "% من الناتج المحلي الإجمالي"},
+    "col_dep":   {"fr": "% des dépenses totales", "ar": "% من إجمالي النفقات"},
+    "col_fonc":  {"fr": "% des dépenses de fonctionnement", "ar": "% من نفقات التسيير"},
+}
+
+
+def _lab(key: str) -> str:
+    return _L[key].get(figtools.lang(), _L[key]["fr"])
+
+
 def fig_A():
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
     df = figtools.series(SERIE)
     y = df["annee"]
     fig, ax1 = plt.subplots(figsize=(9, 5))
     ax2 = ax1.twinx()
     l1, = ax1.plot(y, df["ms_sur_pib_pct"], "o-", color="#1f6feb", lw=2, ms=4,
-                   label="… du PIB (éch. gauche)")
+                   label=ft(_lab("lg_pib")))
     l2, = ax2.plot(y, df["ms_sur_depenses_totales_pct"], "s--", color="#d1242f", lw=1.8, ms=3,
-                   label="… des dépenses totales (éch. droite)")
-    ax1.set_ylabel("Masse salariale / PIB (%)", color="#1f6feb")
-    ax2.set_ylabel("Masse salariale / dépenses (%)", color="#d1242f")
-    ax1.set_xlabel("Année")
-    ax1.set_title("Poids de la masse salariale publique en Tunisie, 1990-2025")
+                   label=ft(_lab("lg_dep")))
+    ax1.set_ylabel(ft(_lab("y_pib")), color="#1f6feb")
+    ax2.set_ylabel(ft(_lab("y_dep")), color="#d1242f")
+    ax1.set_xlabel(ft(_lab("xlabel")))
+    ax1.set_title(ft(_lab("title")))
     ax1.grid(True, alpha=0.3)
     ax1.legend(handles=[l1, l2], loc="upper left", fontsize=9)
     fig.tight_layout()
@@ -70,10 +94,10 @@ def ratios_table():
             "ms_sur_depenses_fonctionnement_pct"]
     w = df[[c for c in cols if c in df.columns]].copy()
     return w.rename(columns={
-        "annee": "Année",
-        "ms_sur_pib_pct": "% du PIB",
-        "ms_sur_depenses_totales_pct": "% des dépenses totales",
-        "ms_sur_depenses_fonctionnement_pct": "% des dépenses de fonctionnement",
+        "annee": _lab("col_annee"),
+        "ms_sur_pib_pct": _lab("col_pib"),
+        "ms_sur_depenses_totales_pct": _lab("col_dep"),
+        "ms_sur_depenses_fonctionnement_pct": _lab("col_fonc"),
     })
 
 
