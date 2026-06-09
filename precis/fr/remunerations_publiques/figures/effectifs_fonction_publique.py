@@ -43,35 +43,57 @@ def _pivot(serie: str, indicateurs: list[str]):
     return w[["annee", *[c for c in indicateurs if c in w.columns]]]
 
 
+# libellés bilingues (FR source de vérité ; AR pour le livre arabe)
+_L = {
+    "col_hors":  {"fr": "Hors collectivités locales", "ar": "باستثناء الجماعات المحلية"},
+    "col_loc":   {"fr": "Collectivités locales", "ar": "الجماعات المحلية"},
+    "col_tot":   {"fr": "Total fonction publique", "ar": "إجمالي الوظيفة العمومية"},
+    "col_annee": {"fr": "Année", "ar": "السنة"},
+    "lg_hors":   {"fr": "Hors collectivités locales (série homogène)",
+                  "ar": "باستثناء الجماعات المحلية (سلسلة متجانسة)"},
+    "lg_tot":    {"fr": "Total fonction publique", "ar": "إجمالي الوظيفة العمومية"},
+    "lg_loc":    {"fr": "Collectivités locales", "ar": "الجماعات المحلية"},
+    "rupture":   {"fr": "rupture de série :\nchangement de périmètre\ndes collectivités locales",
+                  "ar": "انقطاع السلسلة:\nتغيّر نطاق\nالجماعات المحلية"},
+    "xlabel":    {"fr": "Année", "ar": "السنة"},
+    "ylabel":    {"fr": "Effectifs (milliers d’agents)", "ar": "الأعداد (بآلاف الأعوان)"},
+    "title":     {"fr": "Effectifs de la fonction publique en Tunisie, 2015-2021",
+                  "ar": "أعداد أعوان الوظيفة العمومية في تونس، 2015-2021"},
+}
+
+
+def _lab(key: str) -> str:
+    return _L[key].get(figtools.lang(), _L[key]["fr"])
+
+
 def effectifs_table():
     """Tableau (onglet Données) : effectifs par périmètre, milliers d'agents."""
     w = _pivot(SERIE_EFF, [_HORS, _LOC, _TOT])
     return w.rename(columns={
-        "annee": "Année",
-        _HORS: "Hors collectivités locales",
-        _LOC: "Collectivités locales",
-        _TOT: "Total fonction publique",
+        "annee": _lab("col_annee"),
+        _HORS: _lab("col_hors"),
+        _LOC: _lab("col_loc"),
+        _TOT: _lab("col_tot"),
     })
 
 
 def fig_effectifs():
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
     w = _pivot(SERIE_EFF, [_HORS, _LOC, _TOT])
     y = w["annee"]
     fig, ax = plt.subplots(figsize=(9, 5))
-    ax.plot(y, w[_HORS], "o-", color="#1f6feb", lw=2.2, ms=5,
-            label="Hors collectivités locales (série homogène)")
-    ax.plot(y, w[_TOT], "s--", color="#6e7781", lw=1.6, ms=4,
-            label="Total fonction publique")
-    ax.plot(y, w[_LOC], "^:", color="#bf8700", lw=1.4, ms=4,
-            label="Collectivités locales")
+    ax.plot(y, w[_HORS], "o-", color="#1f6feb", lw=2.2, ms=5, label=ft(_lab("lg_hors")))
+    ax.plot(y, w[_TOT], "s--", color="#6e7781", lw=1.6, ms=4, label=ft(_lab("lg_tot")))
+    ax.plot(y, w[_LOC], "^:", color="#bf8700", lw=1.4, ms=4, label=ft(_lab("lg_loc")))
     # repère de la rupture de périmètre 2016→2017
     ax.axvspan(2016, 2017, color="#bf8700", alpha=0.08)
-    ax.annotate("rupture de série :\nchangement de périmètre\ndes collectivités locales",
+    ax.annotate("\n".join(ft(line) for line in _lab("rupture").split("\n")),
                 xy=(2016.5, w[_LOC].max() * 0.9), fontsize=7.5, color="#7a5b00",
                 ha="center", va="top")
-    ax.set_xlabel("Année")
-    ax.set_ylabel("Effectifs (milliers d’agents)")
-    ax.set_title("Effectifs de la fonction publique en Tunisie, 2015-2021")
+    ax.set_xlabel(ft(_lab("xlabel")))
+    ax.set_ylabel(ft(_lab("ylabel")))
+    ax.set_title(ft(_lab("title")))
     ax.set_ylim(bottom=0)
     ax.grid(True, alpha=0.3)
     ax.legend(loc="center left", fontsize=8.5)

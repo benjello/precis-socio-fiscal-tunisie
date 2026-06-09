@@ -1,3 +1,204 @@
 {
-  "items": []
+ "items": [
+  {
+   "id": "loi83-112",
+   "type": "legislation",
+   "title": "Loi n°83-112 du 12 décembre 1983, portant statut général des personnels de l'État, des collectivités publiques locales et des établissements publics à caractère administratif",
+   "note": "citation-key: loi83-112",
+   "URL": "https://www.jurisitetunisie.com/tunisie/codes/spf/Menu.html",
+   "issued": {
+    "date-parts": [
+     [
+      1983,
+      12,
+      12
+     ]
+    ]
+   }
+  },
+  {
+   "id": "loi85-78",
+   "type": "legislation",
+   "title": "Loi n°85-78 du 5 août 1985, portant statut général des agents des offices, des établissements publics à caractère industriel et commercial et des sociétés dont le capital est directement et de plein droit détenu par l'État ou les collectivités publiques locales",
+   "note": "citation-key: loi85-78",
+   "issued": {
+    "date-parts": [
+     [
+      1985,
+      8,
+      5
+     ]
+    ]
+   }
+  },
+  {
+   "id": "loi89-9",
+   "type": "legislation",
+   "title": "Loi n°89-9 du 1er février 1989, relative aux participations, entreprises et établissements publics",
+   "note": "citation-key: loi89-9",
+   "URL": "http://www.pm.gov.tn/pm/article/article.php?id=92&lang=fr",
+   "issued": {
+    "date-parts": [
+     [
+      1989,
+      2,
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "id": "sna2008",
+   "type": "book",
+   "title": "System of National Accounts 2008",
+   "note": "citation-key: sna2008",
+   "publisher": "Nations Unies, Commission européenne, FMI, OCDE, Banque mondiale",
+   "publisher-place": "New York",
+   "URL": "https://unstats.un.org/unsd/nationalaccount/sna2008.asp",
+   "issued": {
+    "date-parts": [
+     [
+      2009
+     ]
+    ]
+   }
+  },
+  {
+   "id": "imfgfsm2014",
+   "type": "book",
+   "title": "Government Finance Statistics Manual 2014",
+   "note": "citation-key: imfgfsm2014",
+   "publisher": "Fonds monétaire international",
+   "publisher-place": "Washington, D.C.",
+   "URL": "https://www.imf.org/external/pubs/ft/gfs/manual/2014/gfsfinal.pdf",
+   "issued": {
+    "date-parts": [
+     [
+      2014
+     ]
+    ]
+   }
+  },
+  {
+   "id": "minfin-ep",
+   "type": "report",
+   "title": "Entreprises publiques et établissements publics à caractère non administratif sous tutelle",
+   "note": "citation-key: minfin-ep",
+   "publisher": "Ministère des Finances de la République tunisienne",
+   "URL": "https://www.finances.gov.tn/"
+  },
+  {
+   "id": "imf-tunisia-art4-2020",
+   "type": "report",
+   "title": "Tunisia: 2020 Article IV Consultation — Press Release; Staff Report; and Statement by the Executive Director for Tunisia",
+   "note": "citation-key: imf-tunisia-art4-2020 | IMF Country Report, publié février 2021. Source du 17,6 % du PIB (2020) et de « among the highest in the world ». Numéro (probable CR 21/44) à confirmer sur le PDF.",
+   "publisher": "Fonds monétaire international",
+   "publisher-place": "Washington, D.C.",
+   "URL": "https://www.imf.org/-/media/files/publications/cr/2021/english/1tunea2021001.pdf",
+   "issued": {
+    "date-parts": [
+     [
+      2021,
+      2
+     ]
+    ]
+   }
+  },
+  {
+   "id": "wb-tunisia-per-2020",
+   "type": "report",
+   "title": "Tunisia Public Expenditure Review: A New Pact for the Transition — Modernizing the State for Better and Fairer Public Spending (Overview Report)",
+   "note": "citation-key: wb-tunisia-per-2020 | Source des 14,7 % du PIB (2017), +4 pts depuis 2010, >60 % des recettes / 50 % des dépenses, et du périmètre (exclut ~30 000 collectivités et ~190 000 entreprises publiques).",
+   "publisher": "Banque mondiale",
+   "publisher-place": "Washington, D.C.",
+   "URL": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/225051591252911165",
+   "issued": {
+    "date-parts": [
+     [
+      2020
+     ]
+    ]
+   }
+  },
+  {
+   "id": "ins-fonction-publique-2021",
+   "type": "dataset",
+   "title": "Caractéristiques des agents de la fonction publique et leurs salaires 2010-2021",
+   "author": [
+    {
+     "literal": "Institut National de la Statistique (INS)"
+    }
+   ],
+   "publisher": "Institut National de la Statistique, Tunisie",
+   "note": "citation-key: ins-fonction-publique-2021",
+   "URL": "https://www.ins.tn/enquetes/caracteristiques-des-agents-de-la-fonction-publique-et-leurs-salaires-2010-2021",
+   "issued": {
+    "date-parts": [
+     [
+      2023
+     ]
+    ]
+   }
+  },
+  {
+   "id": "minfin-remunerations",
+   "type": "dataset",
+   "title": "Série de répartition économique des dépenses du budget de l’État (Rémunérations publiques)",
+   "author": [
+    {
+     "literal": "Ministère des Finances, Tunisie"
+    }
+   ],
+   "publisher": "Ministère des Finances, Tunisie",
+   "note": "citation-key: minfin-remunerations",
+   "URL": "http://www.finances.gov.tn",
+   "issued": {
+    "date-parts": [
+     [
+      2025
+     ]
+    ]
+   }
+  },
+  {
+   "id": "minfin-indicateurs-fp",
+   "type": "dataset",
+   "title": "Indicateurs des finances publiques",
+   "author": [
+    {
+     "literal": "Ministère des Finances, Tunisie"
+    }
+   ],
+   "publisher": "Ministère des Finances, Tunisie",
+   "note": "citation-key: minfin-indicateurs-fp",
+   "URL": "http://www.finances.gov.tn",
+   "issued": {
+    "date-parts": [
+     [
+      2025
+     ]
+    ]
+   }
+  },
+  {
+   "id": "ins-cnat-2015",
+   "type": "dataset",
+   "title": "Les Comptes de la Nation (base 2015)",
+   "author": [
+    {
+     "literal": "Institut National de la Statistique, Tunisie"
+    }
+   ],
+   "publisher": "Institut National de la Statistique, Tunisie",
+   "note": "citation-key: ins-cnat-2015",
+   "URL": "https://www.ins.tn/statistiques/153",
+   "issued": {
+    "date-parts": [
+     [
+      2024
+     ]
+    ]
+   }
+  }
+ ]
 }

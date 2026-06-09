@@ -46,3 +46,8 @@ est créée ; sinon ranger ces deux rapports en « Commun » (bibliographie part
 - À terme, ces estimations FMI/BM seront **corroborées/remplacées par des sources
   officielles tunisiennes** fournies par l'auteur (Finances / Présidence du gouvernement /
   INS) — cf. `perimetre-masse-salariale.md` §III.5.
+
+### URL corrigées (à reporter dans Zotero — sync_biblio écrase references.json)
+- `ins-cnat-2015` : URL → `https://www.ins.tn/statistiques/153` (l'ancienne `/publications` renvoyait 404).
+- `minfin-remunerations` / `minfin-indicateurs-fp` : `http://www.finances.gov.tn` (landing ; affiner vers la page série si dispo).
+- Entrées dataset **dupliquées dans `precis/ar/remunerations_publiques/references.json`** (titres en langue d'origine, non traduits) en attendant le rapatriement Zotero + mapping `COLLECTION_TO_BOOK`.

@@ -29,6 +29,73 @@ import pandas as pd
 _CACHE = Path(__file__).resolve().parent.parent / "precis" / "_seriescache"
 
 
+# --- i18n : la langue du livre est déduite du cwd au render (precis/<lang>/...) ---
+def lang() -> str:
+    """Langue du livre en cours de rendu, déduite du chemin de travail."""
+    p = Path.cwd().as_posix()
+    if "/ar/" in p or p.endswith("/ar"):
+        return "ar"
+    return "fr"
+
+
+# Chrome d'interface généré par Python (jamais vu par le pipeline de traduction).
+# Le texte des figures (titres/axes/légendes/en-têtes) est, lui, dans chaque module.
+_UI = {
+    "tab_graph":  {"fr": "📈 Graphique",  "ar": "📈 الرسم البياني"},
+    "tab_data":   {"fr": "📊 Données",    "ar": "📊 البيانات"},
+    "tab_src":    {"fr": "🔗 Sources",    "ar": "🔗 المصادر"},
+    "source":     {"fr": "Source",        "ar": "المصدر"},
+    "nominal":    {"fr": "valeurs courantes (nominal)", "ar": "قيم جارية (اسمية)"},
+    "pib_base":   {"fr": "PIB base",      "ar": "الناتج المحلي الإجمالي، أساس"},
+    "consult":    {"fr": "consulter la série en ligne ↗",
+                   "ar": "الاطّلاع على السلسلة عبر الإنترنت ↗"},
+    "perimetre":  {"fr": "périmètre",     "ar": "النطاق"},
+    "unite":      {"fr": "unité",         "ar": "الوحدة"},
+    "reserves":   {"fr": "Réserves",      "ar": "تحفّظات"},
+    "download":   {"fr": "Télécharger les données (sourcées)",
+                   "ar": "تنزيل البيانات (مع مصادرها)"},
+    "how_to_read": {"fr": "Comment lire cette figure",
+                    "ar": "كيف نقرأ هذا الرسم البياني"},
+}
+
+
+def t(key: str) -> str:
+    """Traduit une chaîne de chrome d'interface selon la langue courante."""
+    return _UI[key].get(lang(), _UI[key]["fr"])
+
+
+# --- arabe dans matplotlib : police OFL embarquée + shaping RTL ---------------
+@functools.lru_cache(maxsize=1)
+def _register_ar_font() -> str:
+    """Enregistre la police arabe embarquée (indépendance CI) ; retourne son nom."""
+    from matplotlib import font_manager
+    fp = Path(__file__).resolve().parent / "fonts" / "NotoNaskhArabic-Regular.ttf"
+    font_manager.fontManager.addfont(str(fp))
+    return font_manager.FontProperties(fname=str(fp)).get_name()
+
+
+def apply_lang_font() -> None:
+    """Configure la police des figures pour le livre courant (arabe si lang=ar).
+
+    Police arabe + repli DejaVu Sans pour les chiffres/symboles latins.
+    À appeler une fois en tête de chaque fonction de figure.
+    """
+    if lang() != "ar":
+        return
+    import matplotlib as mpl
+    name = _register_ar_font()
+    mpl.rcParams["font.family"] = [name, "DejaVu Sans"]
+
+
+def fig_text(s: str) -> str:
+    """Met en forme une chaîne pour matplotlib (shaping + RTL en arabe, sinon identité)."""
+    if lang() != "ar":
+        return s
+    import arabic_reshaper
+    from bidi.algorithm import get_display
+    return get_display(arabic_reshaper.reshape(s))
+
+
 def _td():
     """Retourne le module `tunisia_data` s'il est installé, sinon None."""
     try:
@@ -115,14 +182,14 @@ def source_line(*series_ids: str) -> str:
             bases.add(str(m["base_pib"]))
         if m.get("unite"):
             units.add(str(m["unite"]).lower())
-    parts = ["Source : " + ", ".join(dict.fromkeys(keys))]
+    parts = [f"{t('source')} : " + ", ".join(dict.fromkeys(keys))]
     if bases:
-        parts.append("PIB base " + "/".join(sorted(bases)))
+        parts.append(f"{t('pib_base')} " + "/".join(sorted(bases)))
     # mention « prix courants » seulement pour les séries monétaires (pas les effectifs)
     monetaire = any(k in u for u in units
                     for k in ("dinar", "pib", "dépense", "depense", "%", "budget"))
     if monetaire:
-        parts.append("valeurs courantes (nominal)")
+        parts.append(t("nominal"))
     return " — ".join(parts)
 
 
@@ -170,9 +237,9 @@ def write_figdata(df: pd.DataFrame, out_csv: Path, *series_ids: str,
     return out_csv
 
 
-def download_button(figdata_csv: str, label: str = "Télécharger les données (sourcées)") -> str:
+def download_button(figdata_csv: str, label: str | None = None) -> str:
     """Markdown du lien de téléchargement (le site sert le figdata sourcé, pas le raw)."""
-    return f"[⬇️ {label}]({figdata_csv}){{download=\"\"}}"
+    return f"[⬇️ {label or t('download')}]({figdata_csv}){{download=\"\"}}"
 
 
 # --- traçabilité détaillée des sources ---------------------------------------
@@ -223,21 +290,21 @@ def source_details(*series_ids: str) -> str:
             url = ref.get("URL")  # lien public vers la série/l'enquête (site producteur)
             cite = f"[@{key}]"
             if url:
-                lines.append(f"- {cite} — {titre} · [consulter la série en ligne ↗]({url})")
+                lines.append(f"- {cite} — {titre} · [{t('consult')}]({url})")
             else:
                 lines.append(f"- {cite} — {titre}")
         meta_bits = []
         if m.get("perimetre"):
-            meta_bits.append(f"*périmètre* : {m['perimetre']}")
+            meta_bits.append(f"*{t('perimetre')}* : {m['perimetre']}")
         if m.get("unite"):
-            meta_bits.append(f"*unité* : {m['unite']}")
+            meta_bits.append(f"*{t('unite')}* : {m['unite']}")
         if m.get("base_pib"):
-            meta_bits.append(f"*PIB base* : {m['base_pib']}")
+            meta_bits.append(f"*{t('pib_base')}* : {m['base_pib']}")
         if meta_bits:
             lines.append("- " + " · ".join(meta_bits))
         cav = m.get("caveats")
         if cav and not str(cav).endswith(".md"):  # pas de chemin local de fiche
-            lines.append(f"- ⚠️ *Réserves* : {cav}")
+            lines.append(f"- ⚠️ *{t('reserves')}* : {cav}")
         blocks.append("\n".join(lines))
     return "\n\n".join(blocks)
 
@@ -287,11 +354,11 @@ def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
     lecture = ""
     if note_lecture:
         lecture = (f'\n::: {{.callout-note appearance="simple" '
-                   f'icon=true title="Comment lire cette figure"}}\n'
+                   f'icon=true title="{t("how_to_read")}"}}\n'
                    f'{note_lecture}\n:::\n')
     print(f"""::: {{.panel-tabset}}
 
-## 📈 Graphique
+## {t('tab_graph')}
 
 ![{caption}]({png_path}){{#{fig_id} fig-alt="{caption}"}}
 
@@ -299,13 +366,13 @@ def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
 {src}
 :::
 {lecture}
-## 📊 Données
+## {t('tab_data')}
 
 {dl}
 
 {table}
 
-## 🔗 Sources
+## {t('tab_src')}
 
 ::: {{.figure-sources-detail}}
 {details}
