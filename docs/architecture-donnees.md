@@ -49,10 +49,22 @@ from figtools import download_button
 download_button("figdata/fig_A_masse_salariale.csv")
 ```
 
-## Build / CI
-- `tunisia-data` : `make data` (fetch+build), `tunisia-data validate`.
-- `precis` : `build.sh` importe `tunisia_data`, **régénère figdata + figures**, rend le site.
-- CI : vérifie la fraîcheur (figure/figdata vs série) — cf. `verify_translation` pour l'AR.
+## Build / CI — autonomie de diffusion (décidé 2026-06-09)
+Le build du site est **autonome** : il ne dépend pas du repo privé `tunisia-data`.
+- Accès aux séries via **une seule couche**, `scripts/figtools.py` :
+  `series(id)` / `meta(id)` utilisent l'entrepôt s'il est importable (dev local),
+  sinon retombent sur un **snapshot versionné** `precis/_seriescache/` (un CSV par
+  série + `catalog.snapshot.yml` pour la provenance). Les modules figures n'importent
+  **jamais** `tunisia_data` directement.
+- `tunisia-data` n'est **pas** déclaré dans le pyproject du précis (une source path
+  épinglée dans `uv.lock` ferait échouer `uv sync` en CI, repo privé absent — vérifié).
+- Régénération du snapshot (étape « produire »), avec l'entrepôt présent :
+  `uv pip install -e ../tunisia-data` puis
+  `PYTHONPATH=scripts uv run python -c "import figtools; figtools.refresh_cache(*ids)"`,
+  enfin commit de `precis/_seriescache/`. À refaire quand une série change.
+- `tunisia-data` (entrepôt) : `make data` (fetch+build), `tunisia-data validate`.
+- CI/Pages (`deploy.yml`) : `uv sync` (cœur, sans entrepôt) → `build.sh` rend le site
+  depuis le snapshot. Les PNG de figures sont régénérés au render (non committés).
 
 ## Conséquences
 - Le précis ne contient **pas** de données brutes ; il **produit** ses figures depuis le paquet.

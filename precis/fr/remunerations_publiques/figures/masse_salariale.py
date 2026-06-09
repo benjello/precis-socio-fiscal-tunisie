@@ -16,7 +16,6 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-import tunisia_data as td
 
 # helper partagé du précis (precis/scripts/figtools.py)
 _SCRIPTS = Path(__file__).resolve().parents[4] / "scripts"
@@ -31,7 +30,7 @@ FACTOR = 1.060  # base2015 / base2010 (mesuré sur le CNAT)
 
 def prepare(generated: str | None = None):
     """Écrit les figdata sourcés (téléchargeables sur le site)."""
-    df = td.load(SERIE)
+    df = figtools.series(SERIE)
     a = df[["annee", "ms_sur_pib_pct", "ms_sur_depenses_totales_pct"]].dropna(how="all")
     figtools.write_figdata(a, FIGDATA / "fig_A_masse_salariale.csv", SERIE,
                            note="masse salariale / PIB et / dépenses, 1990-2025",
@@ -46,7 +45,7 @@ def prepare(generated: str | None = None):
 
 
 def fig_A():
-    df = td.load(SERIE)
+    df = figtools.series(SERIE)
     y = df["annee"]
     fig, ax1 = plt.subplots(figsize=(9, 5))
     ax2 = ax1.twinx()
@@ -60,13 +59,26 @@ def fig_A():
     ax1.set_title("Poids de la masse salariale publique en Tunisie, 1990-2025")
     ax1.grid(True, alpha=0.3)
     ax1.legend(handles=[l1, l2], loc="upper left", fontsize=9)
-    fig.text(0.01, -0.02, figtools.source_line(SERIE), fontsize=7, color="#555")
     fig.tight_layout()
     return fig
 
 
+def ratios_table():
+    """Tableau (onglet Données) : masse salariale en % du PIB et des dépenses."""
+    df = figtools.series(SERIE)
+    cols = ["annee", "ms_sur_pib_pct", "ms_sur_depenses_totales_pct",
+            "ms_sur_depenses_fonctionnement_pct"]
+    w = df[[c for c in cols if c in df.columns]].copy()
+    return w.rename(columns={
+        "annee": "Année",
+        "ms_sur_pib_pct": "% du PIB",
+        "ms_sur_depenses_totales_pct": "% des dépenses totales",
+        "ms_sur_depenses_fonctionnement_pct": "% des dépenses de fonctionnement",
+    })
+
+
 def fig_B():
-    df = td.load(SERIE)
+    df = figtools.series(SERIE)
     y, pib = df["annee"], df["ms_sur_pib_pct"]
     fmi_bm = {2010: 10.7, 2017: 14.7, 2019: 14.1, 2020: 17.6}
     fig, ax = plt.subplots(figsize=(9, 5))

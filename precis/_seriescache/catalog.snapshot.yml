@@ -1,0 +1,57 @@
+- id: fonction-publique-effectifs
+  titre: Effectifs de la fonction publique, 2015-2021
+  sources:
+  - ins-fonction-publique-2021
+  build: tunisia_data.build.fonction_publique:effectifs
+  raw:
+  - data/raw/ins-fonction-publique-salaires-2010-2021/tab1.xlsx
+  output: data/processed/ins-fonction-publique-salaires-2010-2021/effectifs_evolution.csv
+  unite: milliers d'agents
+  perimetre: fonction publique (dont/hors collectivités locales)
+  caveats: rupture de série collectivités locales 2016→2017 (changement de périmètre/comptage)
+  fiche: sources/ins-fonction-publique-salaires-2010-2021.md
+- id: fonction-publique-salaires
+  titre: Salaire mensuel moyen de la fonction publique, 2015-2020
+  sources:
+  - ins-fonction-publique-2021
+  build: tunisia_data.build.fonction_publique:salaires
+  raw:
+  - data/raw/ins-fonction-publique-salaires-2010-2021/tab18_0.xlsx
+  output: data/processed/ins-fonction-publique-salaires-2010-2021/salaire_mensuel_evolution.csv
+  unite: dinars courants / mois
+  perimetre: fonction publique (agents civils de l'État)
+  caveats: salaire brut (avec/sans contributions) et net ; dinars courants
+  fiche: sources/ins-fonction-publique-salaires-2010-2021.md
+- id: masse-salariale-ratios
+  titre: 'Masse salariale publique : ratios au PIB et aux dépenses, 1990-2025'
+  sources:
+  - minfin-remunerations
+  - minfin-indicateurs-fp
+  - ins-cnat-2015
+  fetch: tunisia_data.sources.minfinances:download_repartition
+  build: tunisia_data.build.masse_salariale:ratios_longs
+  raw:
+  - data/raw/minfinances/repartition_depenses.xls
+  - data/raw/minfinances/indicateurs_fp_2025.xls
+  output: data/processed/precis/masse_salariale_ratios_longs_1990_2025.csv
+  unite: '% du PIB / % des dépenses (nominal, prix courants)'
+  perimetre: masse salariale = budget de l'État (Rémunérations publiques), hors entreprises
+    publiques
+  base_pib: 2015
+  caveats: docs/hypotheses-series-masse-salariale.md
+  fiche: sources/minfinances-indicateurs.md
+- id: masse-salariale-reconciliation
+  titre: 'Réconciliation masse salariale/PIB : base 2015 vs base 2010 (FMI/BM)'
+  sources:
+  - minfin-remunerations
+  - ins-cnat-2015
+  - imf-tunisia-art4-2020
+  - wb-tunisia-per-2020
+  build: tunisia_data.build.masse_salariale:reconciliation_base
+  raw:
+  - data/raw/minfinances/repartition_depenses.xls
+  output: data/processed/precis/masse_salariale_reconciliation_base.csv
+  unite: '% du PIB (nominal)'
+  perimetre: administration centrale
+  caveats: docs/reconciliation-masse-salariale-pib.md
+  fiche: sources/minfinances-indicateurs.md

@@ -7,34 +7,122 @@ sont définies **par livre** (`precis/fr/<livre>/figures/`), jamais à la racine
 
 La provenance (sources/clés de citation, unité, périmètre, base, caveats) est tirée
 de `tunisia_data.meta(series_id)` — jamais saisie à la main.
+
+Autonomie de build (diffusion GitHub Pages)
+-------------------------------------------
+Le rendu du site **ne dépend pas** de la présence de l'entrepôt `tunisia_data`.
+`series()` et `meta()` utilisent l'entrepôt s'il est importable (dev local), sinon
+ils retombent sur un **snapshot versionné dans le précis** (`precis/_seriescache/` :
+un CSV par série + `catalog.snapshot.yml` pour la provenance). Le snapshot est
+régénéré depuis l'entrepôt par `refresh_cache(*series_ids)` (étape « produire »),
+puis committé. Ainsi le build CI/Pages reste reproductible sans le repo privé.
 """
 from __future__ import annotations
 
 import datetime as _dt
+import functools
 from pathlib import Path
 
 import pandas as pd
-import tunisia_data as td
+
+# Cache versionné sous precis/ (jamais à la racine du repo) : autonomie de build.
+_CACHE = Path(__file__).resolve().parent.parent / "precis" / "_seriescache"
+
+
+def _td():
+    """Retourne le module `tunisia_data` s'il est installé, sinon None."""
+    try:
+        import tunisia_data as td
+        return td
+    except Exception:
+        return None
+
+
+@functools.lru_cache(maxsize=1)
+def _snapshot() -> dict:
+    """Provenance snapshotée {id: entrée} lue depuis le cache du précis."""
+    f = _CACHE / "catalog.snapshot.yml"
+    if not f.exists():
+        return {}
+    import yaml
+    return {e["id"]: e for e in (yaml.safe_load(f.read_text(encoding="utf-8")) or [])}
+
+
+def meta(series_id: str) -> dict:
+    """Provenance d'une série : entrepôt si présent, sinon snapshot du précis."""
+    td = _td()
+    if td is not None:
+        try:
+            return td.meta(series_id)
+        except Exception:
+            pass
+    snap = _snapshot()
+    if series_id in snap:
+        return snap[series_id]
+    raise KeyError(f"série inconnue: {series_id!r} (ni entrepôt, ni snapshot)")
+
+
+def series(series_id: str) -> pd.DataFrame:
+    """Données d'une série : entrepôt si présent, sinon CSV snapshoté du précis."""
+    td = _td()
+    if td is not None:
+        try:
+            return td.load(series_id)
+        except Exception:
+            pass
+    p = _CACHE / f"{series_id}.csv"
+    if p.exists():
+        return pd.read_csv(p)
+    raise FileNotFoundError(
+        f"série {series_id!r} absente du cache {p} — lancer figtools.refresh_cache()")
+
+
+def refresh_cache(*series_ids: str) -> None:
+    """Snapshote séries + provenance depuis l'entrepôt vers le cache du précis.
+
+    À lancer en dev (entrepôt présent) puis committer `_seriescache/`. Fusionne
+    avec le snapshot existant pour ne pas perdre les séries des autres livres.
+    """
+    td = _td()
+    if td is None:
+        raise RuntimeError("tunisia_data requis pour rafraîchir le cache des séries")
+    import yaml
+    _CACHE.mkdir(parents=True, exist_ok=True)
+    snap_path = _CACHE / "catalog.snapshot.yml"
+    existing = {}
+    if snap_path.exists():
+        existing = {e["id"]: e for e in (yaml.safe_load(snap_path.read_text("utf-8")) or [])}
+    for sid in series_ids:
+        td.load(sid).to_csv(_CACHE / f"{sid}.csv", index=False)
+        existing[sid] = td.meta(sid)
+    snap_path.write_text(
+        yaml.safe_dump(list(existing.values()), allow_unicode=True, sort_keys=False),
+        encoding="utf-8")
+    _snapshot.cache_clear()
 
 
 def _meta(series_id: str) -> dict:
-    return td.meta(series_id)
+    return meta(series_id)
 
 
 def source_line(*series_ids: str) -> str:
     """Ligne « Source » d'une figure, assemblée depuis la provenance des séries."""
-    keys, bases, perims = [], set(), set()
+    keys, bases, units = [], set(), set()
     for sid in series_ids:
         m = _meta(sid)
         keys += [f"@{k}" for k in m.get("sources", [])]
         if m.get("base_pib"):
             bases.add(str(m["base_pib"]))
-        if m.get("perimetre"):
-            perims.add(m["perimetre"])
+        if m.get("unite"):
+            units.add(str(m["unite"]).lower())
     parts = ["Source : " + ", ".join(dict.fromkeys(keys))]
     if bases:
         parts.append("PIB base " + "/".join(sorted(bases)))
-    parts.append("nominal (prix courants)")
+    # mention « prix courants » seulement pour les séries monétaires (pas les effectifs)
+    monetaire = any(k in u for u in units
+                    for k in ("dinar", "pib", "dépense", "depense", "%", "budget"))
+    if monetaire:
+        parts.append("valeurs courantes (nominal)")
     return " — ".join(parts)
 
 
@@ -56,7 +144,10 @@ def write_figdata(df: pd.DataFrame, out_csv: Path, *series_ids: str,
             fiches.append(m["fiche"])
         if m.get("caveats"):
             caveats.append(m["caveats"])
-    stamp = generated or _dt.date.today().isoformat()
+    # un shortcode Quarto non résolu (passé tel quel depuis un chunk) → date du jour
+    if not generated or "{{" in generated:
+        generated = _dt.date.today().isoformat()
+    stamp = generated
     header = [
         f"# Figure-data du précis socio-fiscal tunisien — généré le {stamp}",
         f"# séries (tunisia_data) : {', '.join(series_ids)}",
@@ -84,24 +175,99 @@ def download_button(figdata_csv: str, label: str = "Télécharger les données (
     return f"[⬇️ {label}]({figdata_csv}){{download=\"\"}}"
 
 
+# --- traçabilité détaillée des sources ---------------------------------------
+
+@functools.lru_cache(maxsize=1)
+def _ref_index() -> dict:
+    """Index {clé: entrée CSL} des references.json visibles depuis le cwd.
+
+    Lit `references.json` du livre (cwd) puis ceux des dossiers parents
+    (`../references.json` = bibliographie commune). Sert à enrichir la
+    provenance : titre lisible et URL web de la source d'origine.
+    """
+    import json
+    idx: dict = {}
+    seen = set()
+    for base in (Path.cwd(), *Path.cwd().parents):
+        rj = base / "references.json"
+        if rj in seen or not rj.exists():
+            continue
+        seen.add(rj)
+        try:
+            items = json.loads(rj.read_text(encoding="utf-8")).get("items", [])
+        except (ValueError, OSError):
+            continue
+        for e in items:
+            idx.setdefault(e.get("id"), e)  # le plus proche (livre) prime
+        if base == Path.cwd().anchor:
+            break
+    return idx
+
+
+def source_details(*series_ids: str) -> str:
+    """Bloc Markdown « Sources & traçabilité » : tout ce qui permet de remonter
+    de la figure jusqu'au fichier brut récupéré sur le web.
+
+    Pour chaque série : titre + clé de citation, **lien web** vers la source
+    d'origine (references.json), fiche de provenance, fichiers raw de l'entrepôt
+    `tunisia-data`, périmètre, unité, base PIB, hypothèses/caveats.
+    """
+    refs = _ref_index()
+    blocks = []
+    for sid in series_ids:
+        m = _meta(sid)
+        lines = [f"**{m.get('titre', sid)}**\n"]
+        for key in m.get("sources", []):
+            ref = refs.get(key, {})
+            titre = ref.get("title", key)
+            url = ref.get("URL")  # lien public vers la série/l'enquête (site producteur)
+            cite = f"[@{key}]"
+            if url:
+                lines.append(f"- {cite} — {titre} · [consulter la série en ligne ↗]({url})")
+            else:
+                lines.append(f"- {cite} — {titre}")
+        meta_bits = []
+        if m.get("perimetre"):
+            meta_bits.append(f"*périmètre* : {m['perimetre']}")
+        if m.get("unite"):
+            meta_bits.append(f"*unité* : {m['unite']}")
+        if m.get("base_pib"):
+            meta_bits.append(f"*PIB base* : {m['base_pib']}")
+        if meta_bits:
+            lines.append("- " + " · ".join(meta_bits))
+        cav = m.get("caveats")
+        if cav and not str(cav).endswith(".md"):  # pas de chemin local de fiche
+            lines.append(f"- ⚠️ *Réserves* : {cav}")
+        blocks.append("\n".join(lines))
+    return "\n\n".join(blocks)
+
+
 def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
-                caption: str = "", figdata_dir: str = "figdata",
+                caption: str = "", note_lecture: str | None = None,
+                fig_id: str | None = None, figdata_dir: str = "figdata",
                 png_dir: str = "_fig", scroll_y: str = "420px",
                 generated: str | None = None) -> None:
-    """Composant générique : figure en **onglets** Graphique / Données.
+    """Composant générique : figure en **onglets** Graphique / Données / Sources.
 
     À appeler dans un chunk Quarto `#| output: asis`. Produit :
-      - onglet « Graphique » : l'image (PNG) + la ligne « Source » (provenance) ;
-      - onglet « Données » : table **itables** scrollable + boutons d'export (CSV/Excel)
-        + lien de téléchargement du **figdata sourcé**.
+      - onglet « Graphique » : figure **numérotée** (crossref Quarto « Figure N : … »),
+        ligne « Source » courte, et — si fournie — une **note de lecture** ;
+      - onglet « Données » : table **itables** scrollable + export CSV/Excel
+        + téléchargement du **figdata sourcé** ;
+      - onglet « Sources » : provenance détaillée (citation, **lien web** vers la
+        source d'origine, fiche, fichiers bruts, périmètre, réserves).
 
-    `fig`        : figure matplotlib (déjà rendue).
-    `df`         : données de la figure (deviennent le figdata téléchargeable).
-    `series_ids` : id(s) de série `tunisia_data` (pour la provenance/citation).
-    `slug`       : identifiant de fichier (png + csv).
+    `fig`          : figure matplotlib (déjà rendue).
+    `df`           : données de la figure (deviennent le figdata téléchargeable).
+    `series_ids`   : id(s) de série `tunisia_data` (provenance/citation).
+    `slug`         : identifiant de fichier (png + csv).
+    `caption`      : **titre** de la figure (légende numérotée par Quarto).
+    `note_lecture` : texte « Comment lire cette figure » (callout). Optionnel.
+    `fig_id`       : ancre de référence croisée (défaut `fig-<slug>`).
     """
     from itables import to_html_datatable
 
+    fig_id = fig_id or f"fig-{slug.replace('_', '-')}"
     png = Path(png_dir)
     png.mkdir(parents=True, exist_ok=True)
     png_path = png / f"{slug}.png"
@@ -117,21 +283,33 @@ def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
 
     src = source_line(*series_ids)
     dl = download_button(str(csv_path))
+    details = source_details(*series_ids)
+    lecture = ""
+    if note_lecture:
+        lecture = (f'\n::: {{.callout-note appearance="simple" '
+                   f'icon=true title="Comment lire cette figure"}}\n'
+                   f'{note_lecture}\n:::\n')
     print(f"""::: {{.panel-tabset}}
 
 ## 📈 Graphique
 
-![{caption}]({png_path}){{fig-alt="{caption}"}}
+![{caption}]({png_path}){{#{fig_id} fig-alt="{caption}"}}
 
 ::: {{.figure-source}}
 {src}
 :::
-
+{lecture}
 ## 📊 Données
 
 {dl}
 
 {table}
+
+## 🔗 Sources
+
+::: {{.figure-sources-detail}}
+{details}
+:::
 
 :::
 """)

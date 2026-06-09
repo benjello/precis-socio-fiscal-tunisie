@@ -9,12 +9,16 @@ dependencies = [
     "jupyter>=1.1.1",
     "matplotlib>=3.8",
     "pandas>=2",
-    "tunisia-data",
+    "pyyaml>=6",
 ]
 
-# tunisia-data = entrepôt de données (paquet local, pas de submodule).
-# On le source en chemin éditable : le précis produit ses figures à partir des
-# séries exposées par `tunisia_data` (load/meta).
-[tool.uv.sources]
-tunisia-data = { path = "../tunisia-data", editable = true }
+# Le build du site est AUTONOME : il ne dépend pas de l'entrepôt `tunisia-data`,
+# qui n'est donc PAS déclaré ici (une source path épinglée dans uv.lock ferait
+# échouer `uv sync` en CI où le repo privé est absent).
+# Les figures lisent les séries via la couche `scripts/figtools.py`, qui retombe
+# sur le snapshot versionné `precis/_seriescache/` quand l'entrepôt est absent.
+# Pour *régénérer* ce snapshot (étape « produire »), un dev installe l'entrepôt
+# éditable à la demande dans l'environnement, puis lance refresh_cache :
+#     uv pip install -e ../tunisia-data
+#     PYTHONPATH=scripts uv run python -c "import figtools; figtools.refresh_cache('id', ...)"
 

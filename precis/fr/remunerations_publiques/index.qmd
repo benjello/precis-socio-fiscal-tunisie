@@ -33,6 +33,55 @@ Les deux angles ne coïncident pas exactement, et cet écart est instructif : un
 <!-- TODO (auteur) : substituer/corroborer les chiffres FMI/BM ci-dessous par des SOURCES OFFICIELLES TUNISIENNES (ministère des Finances « Résultats de l'exécution du budget », Présidence du gouvernement, INS) — % du PIB, % du budget, effectifs, idéalement un agrégat en dinars. Cf. docs/notes/perimetre-masse-salariale.md §III.5. -->
 Avant de descendre dans le détail, il faut prendre la mesure du **poids agrégé** de la masse salariale publique — non sans précaution, car le chiffre dépend étroitement du périmètre retenu et du dénominateur auquel on le rapporte. Les ordres de grandeur les mieux documentés concernent l'**administration centrale**, et non le secteur public dans son ensemble. Selon le Fonds monétaire international, la masse salariale de la fonction publique de l'administration centrale aurait atteint de l'ordre de **17,6 % du PIB en 2020** — un niveau que le FMI range « parmi les plus élevés au monde » et qu'il attribue aux recrutements de la décennie et, cette année-là, aux besoins liés à la pandémie [@imf-tunisia-art4-2020]. La Banque mondiale, sur un périmètre proche (administration centrale et régionale) mais pour 2017, l'évaluait à environ **14,7 % du PIB**, au terme d'une trajectoire ascendante d'à peu près 10,7 % en 2010 à 14,7 % en 2017, puis 17,6 % en 2020 [@wb-tunisia-per-2020; @imf-tunisia-art4-2020]. Rapportée non plus au PIB mais aux finances de l'État, cette masse salariale absorberait **plus de 60 % des recettes** et **près de la moitié des dépenses** [@wb-tunisia-per-2020]. Du côté des effectifs, la fonction publique serait passée d'environ **435 000 agents en 2010** à de l'ordre de **640 000 en 2017**, soit une hausse voisine de **47 %** cohérente avec la progression de la part dans le PIB [@wb-tunisia-per-2020].
 
+Une source officielle tunisienne permet de préciser ces effectifs sur la période récente. Selon l'enquête de l'Institut national de la statistique sur les agents de la fonction publique [@ins-fonction-publique-2021], la fonction publique hors collectivités locales compte de l'ordre de **595 000 agents en 2015** et **642 000 en 2021**, soit, total inclus, près de **669 000 agents** ; le rythme d'accroissement des effectifs ralentit toutefois nettement sur la période, revenant d'environ 3 % par an au milieu de la décennie 2010 à moins de 1 % en fin de période. La série des collectivités locales connaît entre 2016 et 2017 une rupture de périmètre qui interdit d'en lire la variation comme une évolution réelle.
+
+```{python}
+#| label: fig-effectifs-fp
+#| fig-cap: "Effectifs de la fonction publique tunisienne, 2015-2021 (source INS)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import effectifs_fonction_publique as efp
+import figtools
+figtools.figure_tabs(
+    efp.fig_effectifs(), efp.effectifs_table(), "fonction-publique-effectifs",
+    slug="fig_effectifs_fonction_publique",
+    caption="Effectifs de la fonction publique tunisienne, 2015-2021",
+    note_lecture=(
+        "Chaque courbe est un périmètre : la **série bleue** (hors collectivités "
+        "locales) est la trajectoire homogène à privilégier. La bande grisée signale "
+        "la **rupture de série** des collectivités locales entre 2016 et 2017 "
+        "(changement de périmètre de comptage) : le saut n'y traduit pas un "
+        "recrutement réel, et la variation ne doit pas être lue à travers cette zone."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
+Ces estimations ponctuelles se replacent dans une trajectoire de plus longue durée, que documente une source budgétaire officielle. À partir des séries de dépenses du ministère des Finances [@minfin-remunerations; @minfin-indicateurs-fp] et du produit intérieur brut des comptes nationaux [@ins-cnat-2015], on peut suivre depuis 1990 le poids de la masse salariale de l'État rapporté à deux dénominateurs : le **PIB** et les **dépenses budgétaires**. Mesurée sur ce périmètre — le budget de l'État, hors entreprises publiques — la masse salariale représente de l'ordre de **11 à 12 % du PIB** au début des années 1990, reflue jusqu'à environ **10 % vers 2010**, puis s'élève nettement après 2011 pour culminer à **16,1 % en 2020**, avant de revenir autour de **13,5 % en 2025**. Rapportée aux **dépenses totales**, elle passe d'environ **39 % en 1990** à un maximum proche de **52 % au milieu de la décennie 2010**. Cette série, construite en base 2015, est homogène mais distincte du périmètre d'administration centrale retenu par le FMI et la Banque mondiale, dont les niveaux (exprimés en base 2010) sont un peu plus élevés ; les deux s'accordent néanmoins sur le profil d'ensemble et sur le pic de 2020.
+
+```{python}
+#| label: fig-masse-salariale-ratios
+#| fig-cap: "Masse salariale publique rapportée au PIB et aux dépenses de l'État, 1990-2025."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import masse_salariale as ms
+import figtools
+figtools.figure_tabs(
+    ms.fig_A(), ms.ratios_table(), "masse-salariale-ratios",
+    slug="fig_masse_salariale_ratios",
+    caption="Masse salariale publique rapportée au PIB et aux dépenses de l'État, 1990-2025",
+    note_lecture=(
+        "Deux dénominateurs, deux échelles : la courbe **bleue** (échelle de gauche) "
+        "rapporte la masse salariale au **PIB**, la courbe **rouge** (échelle de droite) "
+        "aux **dépenses totales** de l'État. Le périmètre est le budget de l'État (hors "
+        "entreprises publiques) ; les ratios sont en valeurs courantes, PIB en base 2015."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
 Ces chiffres appellent une lecture prudente, et ils éclairent directement la grille d'analyse. Le ratio de 14,7 % du PIB de la Banque mondiale est un agrégat d'**administration centrale** : il **exclut** explicitement les agents des collectivités locales — de l'ordre de 30 000 — et ceux des entreprises publiques — environ 190 000 [@wb-tunisia-per-2020]. Autrement dit, le chiffre le plus souvent cité ne mesure pas la masse salariale du **secteur public consolidé**, mais celle d'un sous-ensemble : il illustre concrètement l'écart entre fonction publique, emploi public et secteur public que dessine l'entonnoir. À ce jour, du reste, **aucun agrégat consolidé** de masse salariale réunissant l'administration centrale, les collectivités locales, les entreprises publiques et les organismes de sécurité sociale n'est publiquement documenté : seul l'agrégat d'administration centrale fait l'objet d'un suivi régulier. Cette lacune n'est pas un détail méthodologique ; elle justifie à elle seule la démarche d'entonnoir, qui reconstitue le périmètre sous-secteur par sous-secteur, faute de pouvoir partir d'un total fiable.
 
 ### Les sous-périmètres et leur placement
