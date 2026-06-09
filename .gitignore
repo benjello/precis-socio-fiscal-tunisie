@@ -69,6 +69,6 @@ biblio_pdfs/
 pdf_fetcher_shs.md
 
 # Artefacts de build des figures
-precis/fr/*/_fig/
-precis/fr/*/_demo_*.html
-precis/fr/*/_demo_*_files/
+precis/*/*/_fig/
+precis/*/*/_demo_*.html
+precis/*/*/_demo_*_files/
