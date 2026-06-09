@@ -1,0 +1,43 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-06-09
+# séries (tunisia_data) : masse-salariale-ratios, masse-salariale-reconciliation
+# sources (citation) : @minfin-remunerations, @minfin-indicateurs-fp, @ins-cnat-2015, @imf-tunisia-art4-2020, @wb-tunisia-per-2020
+# fiches : sources/minfinances-indicateurs.md, sources/minfinances-indicateurs.md
+# méthode/hypothèses : docs/hypotheses-series-masse-salariale.md, docs/reconciliation-masse-salariale-pib.md
+# note : réconciliation base 2015 vs base 2010 (FMI/BM)
+annee,ms_sur_pib_pct,ms_sur_pib_base2010_pct
+1990,11.49,12.18
+1991,11.71,12.41
+1992,11.45,12.14
+1993,11.72,12.42
+1994,12.06,12.78
+1995,12.26,13.0
+1996,10.45,11.08
+1997,10.0,10.6
+1998,10.04,10.64
+1999,9.94,10.54
+2000,10.67,11.31
+2001,10.79,11.44
+2002,11.47,12.16
+2003,11.46,12.15
+2004,11.31,11.99
+2005,10.96,11.62
+2006,10.78,11.43
+2007,10.68,11.32
+2008,10.42,11.05
+2009,10.7,11.34
+2010,10.26,10.88
+2011,11.34,12.02
+2012,12.3,13.04
+2013,12.79,13.56
+2014,13.03,13.81
+2015,12.9,13.67
+2016,13.82,14.65
+2017,14.07,14.91
+2018,13.08,13.86
+2019,13.63,14.45
+2020,16.07,17.03
+2021,15.34,16.26
+2022,15.15,16.06
+2023,14.49,15.36
+2024,13.94,14.78
+2025,13.48,14.29

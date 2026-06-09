@@ -7,5 +7,14 @@ requires-python = ">=3.13"
 dependencies = [
     "itables>=2.2.4",
     "jupyter>=1.1.1",
+    "matplotlib>=3.8",
+    "pandas>=2",
+    "tunisia-data",
 ]
+
+# tunisia-data = entrepôt de données (paquet local, pas de submodule).
+# On le source en chemin éditable : le précis produit ses figures à partir des
+# séries exposées par `tunisia_data` (load/meta).
+[tool.uv.sources]
+tunisia-data = { path = "../tunisia-data", editable = true }
 

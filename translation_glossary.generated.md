@@ -21,8 +21,10 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Établissement public à caractère industriel et commercial | المؤسسة العمومية ذات الصبغة الصناعية والتجارية | EPIC |
 | Établissement public à caractère non administratif | المؤسسة العمومية التي لا تكتسي صبغة إدارية | EPNA |
 | Fonction publique | الوظيفة العمومية |  |
+| Fonds de sécurité sociale | صناديق الضمان الاجتماعي |  |
 | Grade | الرتبة |  |
 | Impôt sur le revenu des personnes physiques | الضريبة على دخل الأشخاص الطبيعيين | IRPP |
+| Masse salariale | كتلة الأجور |  |
 | Précis socio-fiscal | الملخّص الاجتماعي والجبائي |  |
 | Régime conventionnel public | النظام الاتفاقي العمومي |  |
 | Régime de marché contrôlé | نظام السوق الموجَّه |  |

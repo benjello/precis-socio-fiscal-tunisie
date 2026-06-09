@@ -99,5 +99,6 @@ Hausse FP 2010→2017 : ≈ **+47 %** (≈ +207 000), cohérent avec le +4 pts d
 3. **Réconcilier 17,6 % vs 16 % (2020)** et **14,1 % vs 14,7 % (2016/2017)** : écarts de périmètre (FP vs administration centrale) ou réalisé vs prévision — trancher sur source, ne pas moyenner.
 4. **Effectifs** (435 487 / 642 918) : ancrer sur un document primaire (Présidence du gouvernement / ministère des Finances / INS).
 5. **Source primaire tunisienne en dinars et % du budget** (« Résultats de l'exécution du budget » du ministère des Finances) non localisée — source FR à privilégier.
+   - **[En cours — auteur]** L'auteur fournira des **sources officielles tunisiennes** (ministère des Finances / Présidence du gouvernement / INS) destinées à **remplacer ou corroborer** les chiffres FMI/BM actuels (% du PIB, % du budget, effectifs) et à ancrer un agrégat en dinars. À substituer aux estimations FMI/BM dès réception.
 6. **Comparaison internationale chiffrée** absente (seulement la formule qualitative) — extraire un classement du PER 2020 / Article IV.
 7. **Secteur public consolidé** : aucun agrégat masse salariale incluant entreprises publiques + collectivités + sécurité sociale trouvé ; seul l'agrégat administration centrale est documenté.

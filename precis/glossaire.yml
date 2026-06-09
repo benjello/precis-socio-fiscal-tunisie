@@ -99,7 +99,7 @@ entries:
     statut: provisoire
     references: [sna2008, imfgfsm2014]
     source_definition: {ref: sna2008}
-    voir_aussi: [entreprises-publiques, secteur-public]
+    voir_aussi: [entreprises-publiques, secteur-public, fonds-de-securite-sociale, masse-salariale]
     fr:
       terme: Administrations publiques
       definition: >
@@ -351,6 +351,60 @@ entries:
       definition: >
         تقسيم فرعي للرتبة يعبّر عن الأقدمية؛ ويرفع الترقّي في الدرجة الرقمَ
         الاستدلالي وبالتالي الأجر الأساسي.
+      synonymes: []
+
+  - id: masse-salariale
+    acronyme: null
+    statut: provisoire
+    references: [imf-tunisia-art4-2020, wb-tunisia-per-2020]
+    voir_aussi: [secteur-public, fonction-publique, administrations-publiques, fonds-de-securite-sociale, emploi-public]
+    fr:
+      terme: Masse salariale
+      definition: >
+        Total des rémunérations versées aux agents, charges sociales
+        comprises. Sa mesure dépend étroitement du périmètre retenu —
+        administration centrale, fonction publique, ou secteur public
+        consolidé (administration centrale, collectivités locales, entreprises
+        publiques et organismes de sécurité sociale) — et du dénominateur
+        auquel on la rapporte : % du PIB, % des recettes ou % des dépenses
+        de l'État. En Tunisie, seul l'agrégat d'administration centrale fait
+        l'objet d'un suivi régulier ; aucun agrégat consolidé n'est
+        publiquement documenté.
+      synonymes: []
+    ar:
+      terme: كتلة الأجور
+      definition: >
+        مجموع الأجور المدفوعة للأعوان، بما في ذلك الأعباء الاجتماعية. يتوقّف
+        قياسها بشكل وثيق على النطاق المعتمَد — الإدارة المركزية، أو الوظيفة
+        العمومية، أو القطاع العام المُدمَج (الإدارة المركزية والجماعات المحلية
+        والمنشآت العمومية وهياكل الضمان الاجتماعي) — وعلى المقام الذي تُنسب
+        إليه: نسبة من الناتج المحلّي الإجمالي، أو من المداخيل، أو من نفقات
+        الدولة. وفي تونس، لا يخضع للمتابعة المنتظمة سوى مجمَّع الإدارة المركزية؛
+        ولا يوجد مجمَّع مُدمَج موثَّق علنًا.
+      synonymes: []
+
+  - id: fonds-de-securite-sociale
+    acronyme: null
+    statut: provisoire
+    references: [sna2008, imfgfsm2014]
+    source_definition: {ref: sna2008}
+    voir_aussi: [administrations-publiques, cnss, cnrps, cnam]
+    fr:
+      terme: Fonds de sécurité sociale
+      definition: >
+        Sous-secteur des administrations publiques (comptes nationaux, SNA
+        2008 / GFSM 2014) regroupant les unités gérant des régimes de sécurité
+        sociale obligatoires. En Tunisie, les caisses sociales (CNSS, CNRPS,
+        CNAM) y sont rattachées économiquement bien qu'elles soient
+        juridiquement des EPNA.
+      synonymes: []
+    ar:
+      terme: صناديق الضمان الاجتماعي
+      definition: >
+        قطاع فرعي من الإدارات العمومية (الحسابات الوطنية، SNA 2008 / GFSM
+        2014) يضمّ الوحدات التي تدير أنظمة الضمان الاجتماعي الإجبارية. وفي
+        تونس، تُرتبط صناديق الضمان الاجتماعي (CNSS وCNRPS وCNAM) بهذا القطاع
+        اقتصاديًا رغم كونها قانونيًا مؤسسات عمومية لا تكتسي صبغة إدارية.
       synonymes: []
 
   - id: cotisations-sociales

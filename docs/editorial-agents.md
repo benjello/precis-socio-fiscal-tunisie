@@ -39,9 +39,10 @@ Invariant transverse encodé dans chaque agent : toujours `uv run` (jamais `pyth
 
 ## Parties différées (design, à confirmer)
 
-- **Sous-agent `bibliographe`** — complète `references.json`, vérifie la résolution des
-  `[@clés]`, prépare le rapatriement Zotero (issue #17). Une clé Zotero en écriture existe
-  déjà côté projet.
+- **Sous-agent `bibliographe`** *(créé)* — intègre/vérifie les références CSL-JSON, contrôle
+  la résolution des `[@clés]`, et alimente l'inbox de rapatriement Zotero
+  (`docs/notes/biblio-a-rapatrier.md`, issue #17). Câblé dans `/rediger` (étape 4). Le push
+  Zotero reste manuel (feu vert humain). Une clé Zotero en écriture existe déjà côté projet.
 - **Sous-agent `relecteur-FR`** — relecture adversariale de l'exactitude juridique/historique
   (la vérification AR est déjà couverte par `verify-translation`).
 - **Workflow d'éventail (Phase 2)** — traitement parallèle de plusieurs chapitres
@@ -51,5 +52,5 @@ Invariant transverse encodé dans chaque agent : toujours `uv run` (jamais `pyth
 ## Trajectoire
 
 1. Phase 0 (faite) → tester `/rediger 6` (A.2 périmètre) sur un cas réel.
-2. Phase 1 → ajouter `bibliographe` + `relecteur-FR`.
+2. Phase 1 → `bibliographe` (fait) ; reste `relecteur-FR`.
 3. Phase 2 → industrialiser via Workflow en éventail.
