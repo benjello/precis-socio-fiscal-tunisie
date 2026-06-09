@@ -8,6 +8,20 @@
 
 ## En attente
 
+### Sources de données (catalog.yml de tunisia-data) — type CSL `dataset`
+Clés référencées par les séries de données (`tunisia_data.meta()`), à créer dans Zotero
+pour que les figures du précis soient citées et tracées :
+
+| Clé | Source | Type |
+|---|---|---|
+| `minfin-remunerations` | Min. Finances — Série répartition économique des dépenses (masse salariale) | dataset |
+| `minfin-indicateurs-fp` | Min. Finances — Indicateurs des finances publiques (déficit, dette, pression fiscale) | dataset |
+| `ins-cnat-2015` | INS — Comptes de la Nation, base 2015 | dataset |
+| `ins-fonction-publique-2021` | INS — Caractéristiques des agents de la fonction publique et leurs salaires 2010-2021 | dataset |
+| `bct-bsf` | BCT — Bulletin des Statistiques Financières (et archives) | dataset |
+
+Fiches de provenance correspondantes : `tunisia-data/sources/*.md`.
+
 ### Ticket #6 — section A.2 (rémunérations publiques)
 
 Ajoutées à la main dans `precis/fr/remunerations_publiques/references.json` (résolues au
