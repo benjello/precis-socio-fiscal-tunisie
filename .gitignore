@@ -67,3 +67,8 @@ index_files/
 *.tex
 biblio_pdfs/
 pdf_fetcher_shs.md
+
+# Artefacts de build des figures
+precis/fr/*/_fig/
+precis/fr/*/_demo_*.html
+precis/fr/*/_demo_*_files/

@@ -1,0 +1,30 @@
+---
+title: "Démo — figure à onglets (Graphique / Données)"
+format: html
+execute:
+  echo: false
+  warning: false
+---
+
+Composant générique `figtools.figure_tabs` : onglet **Graphique** (figure + source) et
+onglet **Données** (table scrollable, export CSV/Excel, téléchargement du figdata sourcé).
+
+```{python}
+#| output: asis
+import sys
+sys.path.insert(0, ".")
+sys.path.insert(0, "../../../scripts")
+import tunisia_data as td
+from figures import masse_salariale as ms
+import figtools
+
+df = td.load("masse-salariale-ratios")[
+    ["annee", "ms_sur_pib_pct", "ms_sur_depenses_totales_pct"]
+]
+figtools.figure_tabs(
+    ms.fig_A(), df, "masse-salariale-ratios",
+    slug="fig_A_masse_salariale",
+    caption="Poids de la masse salariale publique en Tunisie, 1990-2025",
+    generated="2026-06-09",
+)
+```

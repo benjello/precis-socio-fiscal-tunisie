@@ -82,3 +82,56 @@ def write_figdata(df: pd.DataFrame, out_csv: Path, *series_ids: str,
 def download_button(figdata_csv: str, label: str = "Télécharger les données (sourcées)") -> str:
     """Markdown du lien de téléchargement (le site sert le figdata sourcé, pas le raw)."""
     return f"[⬇️ {label}]({figdata_csv}){{download=\"\"}}"
+
+
+def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
+                caption: str = "", figdata_dir: str = "figdata",
+                png_dir: str = "_fig", scroll_y: str = "420px",
+                generated: str | None = None) -> None:
+    """Composant générique : figure en **onglets** Graphique / Données.
+
+    À appeler dans un chunk Quarto `#| output: asis`. Produit :
+      - onglet « Graphique » : l'image (PNG) + la ligne « Source » (provenance) ;
+      - onglet « Données » : table **itables** scrollable + boutons d'export (CSV/Excel)
+        + lien de téléchargement du **figdata sourcé**.
+
+    `fig`        : figure matplotlib (déjà rendue).
+    `df`         : données de la figure (deviennent le figdata téléchargeable).
+    `series_ids` : id(s) de série `tunisia_data` (pour la provenance/citation).
+    `slug`       : identifiant de fichier (png + csv).
+    """
+    from itables import to_html_datatable
+
+    png = Path(png_dir)
+    png.mkdir(parents=True, exist_ok=True)
+    png_path = png / f"{slug}.png"
+    fig.savefig(png_path, dpi=150, bbox_inches="tight")
+
+    csv_path = Path(figdata_dir) / f"{slug}.csv"
+    write_figdata(df, csv_path, *series_ids, note=caption, generated=generated)
+
+    table = to_html_datatable(
+        df, buttons=["csvHtml5", "excelHtml5"], scrollY=scroll_y, scrollX=True,
+        scrollCollapse=True, paging=False, classes="display compact nowrap",
+        connected=True)  # charge DataTables depuis le CDN (figure autoportante)
+
+    src = source_line(*series_ids)
+    dl = download_button(str(csv_path))
+    print(f"""::: {{.panel-tabset}}
+
+## 📈 Graphique
+
+![{caption}]({png_path}){{fig-alt="{caption}"}}
+
+::: {{.figure-source}}
+{src}
+:::
+
+## 📊 Données
+
+{dl}
+
+{table}
+
+:::
+""")
