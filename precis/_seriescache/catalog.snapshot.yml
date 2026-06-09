@@ -9,6 +9,10 @@
   unite: milliers d'agents
   perimetre: fonction publique (dont/hors collectivités locales)
   caveats: rupture de série collectivités locales 2016→2017 (changement de périmètre/comptage)
+  titre_ar: أعداد أعوان الوظيفة العمومية، 2015-2021
+  unite_ar: بآلاف الأعوان
+  perimetre_ar: الوظيفة العمومية (بما في ذلك/باستثناء الجماعات المحلية)
+  caveats_ar: انقطاع سلسلة الجماعات المحلية 2016→2017 (تغيّر النطاق/طريقة العدّ)
   fiche: sources/ins-fonction-publique-salaires-2010-2021.md
 - id: fonction-publique-salaires
   titre: Salaire mensuel moyen de la fonction publique, 2015-2020
@@ -21,6 +25,10 @@
   unite: dinars courants / mois
   perimetre: fonction publique (agents civils de l'État)
   caveats: salaire brut (avec/sans contributions) et net ; dinars courants
+  titre_ar: متوسط الأجر الشهري في الوظيفة العمومية، 2015-2020
+  unite_ar: دينار جاري / شهر
+  perimetre_ar: الوظيفة العمومية (الأعوان المدنيون للدولة)
+  caveats_ar: أجر خام (مع/بدون مساهمات) وصافٍ؛ دينار جاري
   fiche: sources/ins-fonction-publique-salaires-2010-2021.md
 - id: masse-salariale-ratios
   titre: 'Masse salariale publique : ratios au PIB et aux dépenses, 1990-2025'
@@ -37,6 +45,10 @@
   unite: '% du PIB / % des dépenses (nominal, prix courants)'
   perimetre: masse salariale = budget de l'État (Rémunérations publiques), hors entreprises
     publiques
+  titre_ar: 'كتلة الأجور العمومية: النسب إلى الناتج المحلي الإجمالي وإلى النفقات،
+    1990-2025'
+  unite_ar: '% من الناتج المحلي الإجمالي / % من النفقات (قيم جارية)'
+  perimetre_ar: كتلة الأجور = ميزانية الدولة (الأجور العمومية)، باستثناء المنشآت العمومية
   base_pib: 2015
   caveats: docs/hypotheses-series-masse-salariale.md
   fiche: sources/minfinances-indicateurs.md
@@ -53,5 +65,9 @@
   output: data/processed/precis/masse_salariale_reconciliation_base.csv
   unite: '% du PIB (nominal)'
   perimetre: administration centrale
+  titre_ar: 'مطابقة كتلة الأجور/الناتج المحلي الإجمالي: أساس 2015 مقابل أساس 2010
+    (صندوق النقد/البنك الدولي)'
+  unite_ar: '% من الناتج المحلي الإجمالي (اسمي)'
+  perimetre_ar: الإدارة المركزية
   caveats: docs/reconciliation-masse-salariale-pib.md
   fiche: sources/minfinances-indicateurs.md

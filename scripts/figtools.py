@@ -279,11 +279,15 @@ def source_details(*series_ids: str) -> str:
     d'origine (references.json), fiche de provenance, fichiers raw de l'entrepôt
     `tunisia-data`, périmètre, unité, base PIB, hypothèses/caveats.
     """
+    def mf(m, key, default=None):
+        """Champ de provenance localisé : `<key>_<lang>` si présent, sinon `<key>`."""
+        return m.get(f"{key}_{lang()}") or m.get(key, default)
+
     refs = _ref_index()
     blocks = []
     for sid in series_ids:
         m = _meta(sid)
-        lines = [f"**{m.get('titre', sid)}**\n"]
+        lines = [f"**{mf(m, 'titre', sid)}**\n"]
         for key in m.get("sources", []):
             ref = refs.get(key, {})
             titre = ref.get("title", key)
@@ -294,15 +298,15 @@ def source_details(*series_ids: str) -> str:
             else:
                 lines.append(f"- {cite} — {titre}")
         meta_bits = []
-        if m.get("perimetre"):
-            meta_bits.append(f"*{t('perimetre')}* : {m['perimetre']}")
-        if m.get("unite"):
-            meta_bits.append(f"*{t('unite')}* : {m['unite']}")
+        if mf(m, "perimetre"):
+            meta_bits.append(f"*{t('perimetre')}* : {mf(m, 'perimetre')}")
+        if mf(m, "unite"):
+            meta_bits.append(f"*{t('unite')}* : {mf(m, 'unite')}")
         if m.get("base_pib"):
             meta_bits.append(f"*{t('pib_base')}* : {m['base_pib']}")
         if meta_bits:
             lines.append("- " + " · ".join(meta_bits))
-        cav = m.get("caveats")
+        cav = mf(m, "caveats")
         if cav and not str(cav).endswith(".md"):  # pas de chemin local de fiche
             lines.append(f"- ⚠️ *{t('reserves')}* : {cav}")
         blocks.append("\n".join(lines))
