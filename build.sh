@@ -12,7 +12,7 @@ PRECIS_DIR="$ROOT_DIR/precis"
 LOCAL_SITE="$ROOT_DIR/local_site"
 
 LANGUAGES=(fr ar)
-BOOKS=(prestations_sociales retraites fiscalite)
+BOOKS=(prestations_sociales retraites fiscalite remunerations_publiques)
 
 DO_PDF=true
 
@@ -36,6 +36,16 @@ fi
 
 rm -rf "$LOCAL_SITE"
 mkdir -p "$LOCAL_SITE"
+
+# ── Step 0: Regenerate the bilingual glossary from precis/glossaire.yml ─────────
+if [[ -f "$ROOT_DIR/precis/glossaire.yml" ]]; then
+  echo "[build] Regenerating bilingual glossary..."
+  if (cd "$ROOT_DIR" && uv run python scripts/build_glossary.py); then
+    echo "[build] ✓ Glossary regenerated"
+  else
+    echo "[build] ⚠ Glossary generation failed; using committed files."
+  fi
+fi
 
 # ── Step 1: Render each language and book ──────────────────────────────────────
 FAILED_BOOKS=()

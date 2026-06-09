@@ -35,6 +35,15 @@ def main():
     except Exception:
         guidelines = "Tu es un traducteur professionnel juridique."
 
+    # Glossaire terminologique canonique généré depuis precis/glossaire.yml.
+    # Inclus tel quel (sans modifier le guide rédigé à la main) pour garantir
+    # la bijection des termes FR↔AR.
+    try:
+        with open("translation_glossary.generated.md", "r", encoding="utf-8") as f:
+            guidelines += "\n\n" + f.read()
+    except Exception:
+        pass
+
     fr_files = {f for f in files_to_process if "precis/fr/" in f}
 
     for file_path in files_to_process:

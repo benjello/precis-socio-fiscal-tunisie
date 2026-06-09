@@ -16,15 +16,12 @@ Toute traduction automatique doit obéir strictement aux règles ci-dessous.
 
 ## 3. Glossaire Officiel (À respecter scrupuleusement)
 
-| Français | Arabe (Tunisie) | Notes |
-| :--- | :--- | :--- |
-| Précis socio-fiscal | الملخّص الاجتماعي والجبائي | |
-| Caisse Nationale de Sécurité Sociale (CNSS) | الصندوق الوطني للضمان الاجتماعي | |
-| Caisse Nationale de Retraite et de Prévoyance Sociale (CNRPS) | الصندوق الوطني للتقاعد والحيطة الاجتماعية | |
-| Impôt sur le Revenu des Personnes Physiques (IRPP) | الضريبة على دخل الأشخاص الطبيعيين | |
-| Cotisations sociales | المساهمات الاجتماعية | |
-| Assiette fiscale | الوعاء الضريبي | |
-| Taux marginal | النسبة الحدية | |
-| SMIG (Salaire Minimum Interprofessionnel Garanti) | الأجر الأدنى المضمون لمختلف المهن | |
+Le glossaire terminologique canonique (bijection FR↔AR) n'est plus tenu à la
+main ici. Il est désormais généré depuis la **source unique** `precis/glossaire.yml`
+par `scripts/build_glossary.py`, qui produit `translation_glossary.generated.md`.
+Ce tableau est **automatiquement ajouté** à ces directives par le pipeline de
+traduction (`translate_sync.py`) et de vérification (`verify_translation.py`).
 
-*(Note aux experts : Ajoutez vos nouveaux termes dans ce tableau. L'IA les lira automatiquement avant chaque traduction).*
+*(Note aux experts : pour ajouter ou corriger un terme, éditez `precis/glossaire.yml`
+puis relancez `uv run python scripts/build_glossary.py`. Ne modifiez pas les
+fichiers générés à la main.)*

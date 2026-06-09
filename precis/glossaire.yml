@@ -1,0 +1,573 @@
+# Glossaire bilingue — source unique de vérité (FR ⇄ AR)
+#
+# Fichier global partagé par tous les précis. Chaque entrée est identifiée par
+# un `id` (slug stable) qui sert d'ancre commune `#g-<id>` dans les deux langues.
+#
+# À partir de ce fichier, `scripts/build_glossary.py` génère :
+#   - l'annexe glossaire FR et AR de chaque précis ;
+#   - `translation_glossary.generated.md`, table FR↔AR injectée dans le pipeline
+#     de traduction (translate_sync.py / verify_translation.py) pour garantir la
+#     bijection des termes et éviter les divergences.
+#
+# Champs : id, acronyme, statut (valide | provisoire), references (clés CSL),
+# voir_aussi (slugs), fr/ar { terme, definition, synonymes }.
+# NE PAS modifier les fichiers générés à la main : éditez ce glossaire.
+
+entries:
+  - id: precis-socio-fiscal
+    acronyme: null
+    statut: valide
+    references: []
+    voir_aussi: []
+    fr:
+      terme: Précis socio-fiscal
+      definition: >
+        Ouvrage de synthèse documentant l'évolution de la législation sociale
+        et fiscale tunisienne depuis l'indépendance, dans son contexte
+        historique et politique.
+      synonymes: []
+    ar:
+      terme: الملخّص الاجتماعي والجبائي
+      definition: >
+        مُصنَّف توليفي يوثّق تطوّر التشريع الاجتماعي والجبائي التونسي منذ
+        الاستقلال، في سياقه التاريخي والسياسي.
+      synonymes: []
+
+  - id: secteur-public
+    acronyme: null
+    statut: valide
+    references: []
+    voir_aussi: [fonction-publique, emploi-public, administrations-publiques, entreprises-publiques]
+    fr:
+      terme: Secteur public
+      definition: >
+        Ensemble des organisations contrôlées ou détenues par l'État :
+        administrations publiques (État, collectivités locales, sécurité
+        sociale) et entreprises publiques. Notion plus large que la fonction
+        publique et que l'emploi public.
+      synonymes: []
+    ar:
+      terme: القطاع العام
+      definition: >
+        مجموع المنظمات التي تسيطر عليها الدولة أو تملكها: الإدارات العمومية
+        (الدولة، الجماعات المحلية، الضمان الاجتماعي) والمنشآت العمومية. مفهوم
+        أوسع من الوظيفة العمومية ومن التشغيل العمومي.
+      synonymes: []
+
+  - id: fonction-publique
+    acronyme: null
+    statut: valide
+    references: [loi83-112]
+    source_definition: {ref: loi83-112, locator: "art. 1"}
+    source_traduction: {ref: loi83-112, locator: "art. 1"}
+    voir_aussi: [emploi-public, secteur-public, epa]
+    fr:
+      terme: Fonction publique
+      definition: >
+        Au sens strict, ensemble des agents de l'État, des collectivités
+        locales et des établissements publics à caractère administratif, régis
+        par le statut général (loi n°83-112).
+      synonymes: []
+    ar:
+      terme: الوظيفة العمومية
+      definition: >
+        بالمعنى الضيّق، مجموع أعوان الدولة والجماعات المحلية والمؤسسات العمومية
+        ذات الصبغة الإدارية، الخاضعين للنظام الأساسي العام (القانون عدد 83-112).
+      synonymes: []
+
+  - id: emploi-public
+    acronyme: null
+    statut: provisoire
+    references: []
+    voir_aussi: [fonction-publique, secteur-public]
+    fr:
+      terme: Emploi public
+      definition: >
+        Concept statistique recouvrant la fonction publique et une partie des
+        agents des établissements et entreprises publics ; intermédiaire entre
+        la fonction publique et le secteur public.
+      synonymes: []
+    ar:
+      terme: التشغيل العمومي
+      definition: >
+        مفهوم إحصائي يشمل الوظيفة العمومية وجزءًا من أعوان المؤسسات والمنشآت
+        العمومية؛ وسيط بين الوظيفة العمومية والقطاع العام.
+      synonymes: []
+
+  - id: administrations-publiques
+    acronyme: null
+    statut: provisoire
+    references: [sna2008, imfgfsm2014]
+    source_definition: {ref: sna2008}
+    voir_aussi: [entreprises-publiques, secteur-public, fonds-de-securite-sociale, masse-salariale]
+    fr:
+      terme: Administrations publiques
+      definition: >
+        Sous-secteur des comptes nationaux (General Government) regroupant
+        l'administration centrale, les administrations locales et les fonds de
+        sécurité sociale, financés principalement par des prélèvements
+        obligatoires.
+      synonymes: []
+    ar:
+      terme: الإدارات العمومية
+      definition: >
+        قطاع فرعي في الحسابات الوطنية يضمّ الإدارة المركزية والإدارات المحلية
+        وصناديق الضمان الاجتماعي، ويُموَّل أساسًا من الاقتطاعات الإجبارية.
+      synonymes: []
+
+  - id: entreprises-publiques
+    acronyme: null
+    statut: provisoire
+    references: [loi89-9, sna2008]
+    source_definition: {ref: loi89-9}
+    source_traduction: {ref: loi89-9}
+    voir_aussi: [administrations-publiques, epna, epic]
+    fr:
+      terme: Entreprises publiques
+      definition: >
+        Sous-secteur des comptes nationaux (Public Corporations) regroupant les
+        unités contrôlées par l'État qui produisent des biens et services
+        marchands ; au sens juridique, périmètre défini par la loi n°89-9.
+      synonymes: []
+    ar:
+      terme: المنشآت العمومية
+      definition: >
+        قطاع فرعي في الحسابات الوطنية يضمّ الوحدات التي تسيطر عليها الدولة
+        وتنتج سلعًا وخدمات سوقية؛ وبالمعنى القانوني، نطاق يحدّده القانون عدد 89-9.
+      synonymes: []
+
+  - id: epa
+    acronyme: EPA
+    statut: provisoire
+    references: [loi83-112]
+    source_definition: {ref: loi83-112}
+    source_traduction: {ref: loi83-112}
+    voir_aussi: [epna, epic, fonction-publique]
+    fr:
+      terme: Établissement public à caractère administratif
+      definition: >
+        Organisme public doté de la personnalité morale et de l'autonomie
+        financière, exerçant une mission administrative ; son personnel relève
+        généralement de la fonction publique.
+      synonymes: [EPA]
+    ar:
+      terme: المؤسسة العمومية ذات الصبغة الإدارية
+      definition: >
+        هيكل عمومي يتمتّع بالشخصية المعنوية والاستقلال المالي، يمارس مهمّة
+        إدارية؛ وينتمي أعوانه عمومًا إلى الوظيفة العمومية.
+      synonymes: []
+
+  - id: epna
+    acronyme: EPNA
+    statut: provisoire
+    references: [loi89-9]
+    source_definition: {ref: loi89-9}
+    source_traduction: {ref: loi89-9}
+    voir_aussi: [epa, epic, entreprises-publiques]
+    fr:
+      terme: Établissement public à caractère non administratif
+      definition: >
+        Organisme public doté de la personnalité morale et de l'autonomie de
+        gestion, exerçant une activité technique, économique ou sociale ;
+        certains EPNA sont, par décret, considérés comme entreprises publiques.
+      synonymes: [EPNA]
+    ar:
+      terme: المؤسسة العمومية التي لا تكتسي صبغة إدارية
+      definition: >
+        هيكل عمومي يتمتّع بالشخصية المعنوية واستقلالية التصرّف، يمارس نشاطًا
+        فنّيًا أو اقتصاديًا أو اجتماعيًا؛ وتُعتبر بعض هذه المؤسسات، بمقتضى أمر،
+        منشآت عمومية.
+      synonymes: []
+
+  - id: epic
+    acronyme: EPIC
+    statut: provisoire
+    references: [loi85-78]
+    source_definition: {ref: loi85-78}
+    source_traduction: {ref: loi85-78}
+    voir_aussi: [epna, entreprises-publiques, regime-conventionnel-public]
+    fr:
+      terme: Établissement public à caractère industriel et commercial
+      definition: >
+        Établissement public exerçant une activité industrielle ou
+        commerciale, dont les agents relèvent de la loi n°85-78 et non du statut
+        général de la fonction publique.
+      synonymes: [EPIC]
+    ar:
+      terme: المؤسسة العمومية ذات الصبغة الصناعية والتجارية
+      definition: >
+        مؤسسة عمومية تمارس نشاطًا صناعيًا أو تجاريًا، يخضع أعوانها للقانون عدد
+        85-78 لا للنظام الأساسي العام للوظيفة العمومية.
+      synonymes: []
+
+  - id: regime-indiciaire
+    acronyme: null
+    statut: provisoire
+    references: [loi83-112]
+    voir_aussi: [point-indice, traitement-de-base, grade, echelon, fonction-publique]
+    fr:
+      terme: Régime indiciaire
+      definition: >
+        Régime de rémunération fondé sur un grade et un échelon auxquels
+        correspond un indice, converti en traitement de base par la valeur du
+        point d'indice ; héritier du modèle français de carrière.
+      synonymes: []
+    ar:
+      terme: النظام الاستدلالي للتأجير
+      definition: >
+        نظام تأجير يقوم على رتبة ودرجة يقابلهما رقم استدلالي يُحوَّل إلى أجر
+        أساسي عبر قيمة النقطة الاستدلالية؛ وهو امتداد للنموذج الفرنسي للمسار
+        المهني.
+      synonymes: []
+
+  - id: regime-statutaire-autonome
+    acronyme: null
+    statut: provisoire
+    references: []
+    voir_aussi: [regime-indiciaire]
+    fr:
+      terme: Régime statutaire autonome
+      definition: >
+        Régime de rémunération propre à des corps dotés d'un statut spécial
+        (magistrats, militaires, forces de sécurité intérieure), détaché du
+        statut commun de la fonction publique.
+      synonymes: []
+    ar:
+      terme: النظام الأساسي الخاص
+      definition: >
+        نظام تأجير خاصّ بأسلاك تتمتّع بنظام أساسي خاصّ (القضاة، العسكريون، قوات
+        الأمن الداخلي)، منفصل عن النظام الأساسي العام للوظيفة العمومية.
+      synonymes: []
+
+  - id: regime-conventionnel-public
+    acronyme: null
+    statut: provisoire
+    references: [loi85-78, loi89-9]
+    source_definition: {ref: loi85-78}
+    voir_aussi: [entreprises-publiques, epic]
+    fr:
+      terme: Régime conventionnel public
+      definition: >
+        Régime de rémunération des entreprises publiques non financières, fondé
+        sur des conventions collectives, une négociation salariale et une
+        classification des emplois.
+      synonymes: []
+    ar:
+      terme: النظام الاتفاقي العمومي
+      definition: >
+        نظام تأجير المنشآت العمومية غير المالية، يقوم على الاتفاقيات المشتركة
+        والتفاوض الأجري وتصنيف المواطن الشغلية.
+      synonymes: []
+
+  - id: regime-marche-controle
+    acronyme: null
+    statut: provisoire
+    references: [loi89-9]
+    voir_aussi: [entreprises-publiques]
+    fr:
+      terme: Régime de marché contrôlé
+      definition: >
+        Régime de rémunération des entreprises publiques financières et de
+        certaines filiales, à forte autonomie salariale, avec des rémunérations
+        proches du secteur privé sous contrôle de l'État actionnaire.
+      synonymes: []
+    ar:
+      terme: نظام السوق الموجَّه
+      definition: >
+        نظام تأجير المنشآت العمومية المالية وبعض الفروع، ذو استقلالية أجرية
+        مرتفعة وأجور قريبة من القطاع الخاص تحت رقابة الدولة المساهمة.
+      synonymes: []
+
+  - id: point-indice
+    acronyme: null
+    statut: provisoire
+    references: []
+    voir_aussi: [regime-indiciaire, traitement-de-base]
+    fr:
+      terme: Valeur du point d'indice
+      definition: >
+        Montant monétaire attribué à un point d'indice ; multiplié par l'indice
+        de l'agent, il détermine le traitement de base. Sa revalorisation est un
+        enjeu central des négociations salariales.
+      synonymes: [point d'indice]
+    ar:
+      terme: قيمة النقطة الاستدلالية
+      definition: >
+        المبلغ المالي المخصَّص للنقطة الاستدلالية؛ يُضرب في الرقم الاستدلالي
+        للعون لتحديد الأجر الأساسي. وتُعدّ مراجعتها رهانًا محوريًا في المفاوضات
+        الأجرية.
+      synonymes: []
+
+  - id: traitement-de-base
+    acronyme: null
+    statut: provisoire
+    references: []
+    voir_aussi: [regime-indiciaire, point-indice]
+    fr:
+      terme: Traitement de base
+      definition: >
+        Part principale de la rémunération d'un agent public, obtenue en
+        multipliant son indice par la valeur du point d'indice, avant indemnités
+        et primes.
+      synonymes: []
+    ar:
+      terme: الأجر الأساسي
+      definition: >
+        الجزء الرئيسي من أجر العون العمومي، ويُحتسب بضرب رقمه الاستدلالي في قيمة
+        النقطة الاستدلالية، قبل المنح والمكافآت.
+      synonymes: []
+
+  - id: grade
+    acronyme: null
+    statut: provisoire
+    references: []
+    voir_aussi: [echelon, regime-indiciaire]
+    fr:
+      terme: Grade
+      definition: >
+        Position d'un agent dans la hiérarchie d'un corps, conditionnant son
+        indice et ses fonctions ; l'avancement de grade traduit une promotion.
+      synonymes: []
+    ar:
+      terme: الرتبة
+      definition: >
+        موقع العون في التدرّج الهرمي للسلك، يحدّد رقمه الاستدلالي ووظائفه؛
+        ويعبّر الترقّي في الرتبة عن ترقية.
+      synonymes: []
+
+  - id: echelon
+    acronyme: null
+    statut: provisoire
+    references: []
+    voir_aussi: [grade, regime-indiciaire]
+    fr:
+      terme: Échelon
+      definition: >
+        Subdivision d'un grade traduisant l'ancienneté ; l'avancement d'échelon
+        augmente l'indice et donc le traitement de base.
+      synonymes: []
+    ar:
+      terme: الدرجة
+      definition: >
+        تقسيم فرعي للرتبة يعبّر عن الأقدمية؛ ويرفع الترقّي في الدرجة الرقمَ
+        الاستدلالي وبالتالي الأجر الأساسي.
+      synonymes: []
+
+  - id: masse-salariale
+    acronyme: null
+    statut: provisoire
+    references: [imf-tunisia-art4-2020, wb-tunisia-per-2020]
+    voir_aussi: [secteur-public, fonction-publique, administrations-publiques, fonds-de-securite-sociale, emploi-public]
+    fr:
+      terme: Masse salariale
+      definition: >
+        Total des rémunérations versées aux agents, charges sociales
+        comprises. Sa mesure dépend étroitement du périmètre retenu —
+        administration centrale, fonction publique, ou secteur public
+        consolidé (administration centrale, collectivités locales, entreprises
+        publiques et organismes de sécurité sociale) — et du dénominateur
+        auquel on la rapporte : % du PIB, % des recettes ou % des dépenses
+        de l'État. En Tunisie, seul l'agrégat d'administration centrale fait
+        l'objet d'un suivi régulier ; aucun agrégat consolidé n'est
+        publiquement documenté.
+      synonymes: []
+    ar:
+      terme: كتلة الأجور
+      definition: >
+        مجموع الأجور المدفوعة للأعوان، بما في ذلك الأعباء الاجتماعية. يتوقّف
+        قياسها بشكل وثيق على النطاق المعتمَد — الإدارة المركزية، أو الوظيفة
+        العمومية، أو القطاع العام المُدمَج (الإدارة المركزية والجماعات المحلية
+        والمنشآت العمومية وهياكل الضمان الاجتماعي) — وعلى المقام الذي تُنسب
+        إليه: نسبة من الناتج المحلّي الإجمالي، أو من المداخيل، أو من نفقات
+        الدولة. وفي تونس، لا يخضع للمتابعة المنتظمة سوى مجمَّع الإدارة المركزية؛
+        ولا يوجد مجمَّع مُدمَج موثَّق علنًا.
+      synonymes: []
+
+  - id: fonds-de-securite-sociale
+    acronyme: null
+    statut: provisoire
+    references: [sna2008, imfgfsm2014]
+    source_definition: {ref: sna2008}
+    voir_aussi: [administrations-publiques, cnss, cnrps, cnam]
+    fr:
+      terme: Fonds de sécurité sociale
+      definition: >
+        Sous-secteur des administrations publiques (comptes nationaux, SNA
+        2008 / GFSM 2014) regroupant les unités gérant des régimes de sécurité
+        sociale obligatoires. En Tunisie, les caisses sociales (CNSS, CNRPS,
+        CNAM) y sont rattachées économiquement bien qu'elles soient
+        juridiquement des EPNA.
+      synonymes: []
+    ar:
+      terme: صناديق الضمان الاجتماعي
+      definition: >
+        قطاع فرعي من الإدارات العمومية (الحسابات الوطنية، SNA 2008 / GFSM
+        2014) يضمّ الوحدات التي تدير أنظمة الضمان الاجتماعي الإجبارية. وفي
+        تونس، تُرتبط صناديق الضمان الاجتماعي (CNSS وCNRPS وCNAM) بهذا القطاع
+        اقتصاديًا رغم كونها قانونيًا مؤسسات عمومية لا تكتسي صبغة إدارية.
+      synonymes: []
+
+  - id: cotisations-sociales
+    acronyme: null
+    statut: valide
+    references: []
+    voir_aussi: [cnss, cnrps, cnam]
+    fr:
+      terme: Cotisations sociales
+      definition: >
+        Prélèvements obligatoires assis sur les salaires, finançant les régimes
+        de sécurité sociale (retraite, maladie, prestations familiales).
+      synonymes: []
+    ar:
+      terme: المساهمات الاجتماعية
+      definition: >
+        اقتطاعات إجبارية على الأجور، تموّل أنظمة الضمان الاجتماعي (التقاعد،
+        المرض، المنح العائلية).
+      synonymes: []
+
+  - id: css
+    acronyme: CSS
+    statut: provisoire
+    references: []
+    voir_aussi: [irpp, cotisations-sociales]
+    fr:
+      terme: Contribution sociale de solidarité
+      definition: >
+        Prélèvement additionnel à l'impôt sur le revenu, affecté au financement
+        des régimes de sécurité sociale.
+      synonymes: [CSS]
+    ar:
+      terme: المساهمة الاجتماعية التضامنية
+      definition: >
+        اقتطاع إضافي على الضريبة على الدخل، مخصَّص لتمويل أنظمة الضمان
+        الاجتماعي.
+      synonymes: []
+
+  - id: irpp
+    acronyme: IRPP
+    statut: valide
+    references: []
+    voir_aussi: [taux-marginal, assiette-fiscale, css]
+    fr:
+      terme: Impôt sur le revenu des personnes physiques
+      definition: >
+        Impôt direct et progressif frappant le revenu net global des personnes
+        physiques, retenu à la source sur les salaires.
+      synonymes: [IRPP]
+    ar:
+      terme: الضريبة على دخل الأشخاص الطبيعيين
+      definition: >
+        ضريبة مباشرة تصاعدية على الدخل الصافي الجملي للأشخاص الطبيعيين، تُخصم من
+        المورد على الأجور.
+      synonymes: []
+
+  - id: assiette-fiscale
+    acronyme: null
+    statut: valide
+    references: []
+    voir_aussi: [irpp, taux-marginal]
+    fr:
+      terme: Assiette fiscale
+      definition: >
+        Base de calcul de l'impôt, c'est-à-dire le montant sur lequel s'applique
+        le taux d'imposition après déductions et abattements.
+      synonymes: []
+    ar:
+      terme: الوعاء الضريبي
+      definition: >
+        قاعدة احتساب الضريبة، أي المبلغ الذي تُطبَّق عليه نسبة الضريبة بعد
+        الطرحات والتخفيضات.
+      synonymes: []
+
+  - id: taux-marginal
+    acronyme: null
+    statut: valide
+    references: []
+    voir_aussi: [irpp, assiette-fiscale]
+    fr:
+      terme: Taux marginal
+      definition: >
+        Taux d'imposition applicable à la dernière tranche de revenu ; dans un
+        barème progressif, il s'applique à l'euro (au dinar) supplémentaire.
+      synonymes: []
+    ar:
+      terme: النسبة الحدية
+      definition: >
+        نسبة الضريبة المطبَّقة على آخر شريحة من الدخل؛ في جدول تصاعدي، تُطبَّق
+        على الدينار الإضافي.
+      synonymes: []
+
+  - id: smig
+    acronyme: SMIG
+    statut: valide
+    references: []
+    voir_aussi: []
+    fr:
+      terme: Salaire minimum interprofessionnel garanti
+      definition: >
+        Rémunération horaire ou mensuelle minimale légale applicable aux
+        salariés des secteurs non agricoles.
+      synonymes: [SMIG]
+    ar:
+      terme: الأجر الأدنى المضمون لمختلف المهن
+      definition: >
+        الحدّ الأدنى القانوني للأجر بالساعة أو بالشهر المطبَّق على أجراء
+        القطاعات غير الفلاحية.
+      synonymes: []
+
+  - id: cnss
+    acronyme: CNSS
+    statut: valide
+    references: []
+    voir_aussi: [cnrps, cnam, cotisations-sociales]
+    fr:
+      terme: Caisse nationale de sécurité sociale
+      definition: >
+        Organisme gérant les régimes de sécurité sociale des travailleurs du
+        secteur privé ; établissement public à caractère non administratif sous
+        tutelle du ministère des Affaires sociales.
+      synonymes: [CNSS]
+    ar:
+      terme: الصندوق الوطني للضمان الاجتماعي
+      definition: >
+        هيكل يدير أنظمة الضمان الاجتماعي لعمّال القطاع الخاص؛ مؤسسة عمومية لا
+        تكتسي صبغة إدارية تحت إشراف وزارة الشؤون الاجتماعية.
+      synonymes: []
+
+  - id: cnrps
+    acronyme: CNRPS
+    statut: valide
+    references: []
+    voir_aussi: [cnss, cnam, cotisations-sociales]
+    fr:
+      terme: Caisse nationale de retraite et de prévoyance sociale
+      definition: >
+        Organisme gérant les régimes de retraite et de prévoyance du secteur
+        public ; établissement public à caractère non administratif sous tutelle
+        du ministère des Affaires sociales.
+      synonymes: [CNRPS]
+    ar:
+      terme: الصندوق الوطني للتقاعد والحيطة الاجتماعية
+      definition: >
+        هيكل يدير أنظمة التقاعد والحيطة الاجتماعية للقطاع العام؛ مؤسسة عمومية لا
+        تكتسي صبغة إدارية تحت إشراف وزارة الشؤون الاجتماعية.
+      synonymes: []
+
+  - id: cnam
+    acronyme: CNAM
+    statut: valide
+    references: []
+    voir_aussi: [cnss, cnrps]
+    fr:
+      terme: Caisse nationale d'assurance maladie
+      definition: >
+        Organisme gérant le régime unifié d'assurance maladie (créé en 2004) ;
+        établissement public à caractère non administratif sous tutelle du
+        ministère des Affaires sociales.
+      synonymes: [CNAM]
+    ar:
+      terme: الصندوق الوطني للتأمين على المرض
+      definition: >
+        هيكل يدير النظام الموحَّد للتأمين على المرض (أُحدث سنة 2004)؛ مؤسسة
+        عمومية لا تكتسي صبغة إدارية تحت إشراف وزارة الشؤون الاجتماعية.
+      synonymes: []

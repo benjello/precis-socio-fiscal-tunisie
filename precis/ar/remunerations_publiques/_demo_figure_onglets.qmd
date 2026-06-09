@@ -1,0 +1,29 @@
+---
+title: "نموذج — شكل بتبويبات (رسم بياني / بيانات)"
+format: html
+execute:
+  echo: false
+  warning: false
+---
+
+مكون عام `figtools.figure_tabs`: تبويب **الرسم البياني** (شكل + مصدر) وتبويب **البيانات** (جدول قابل للتمرير، تصدير CSV/Excel، تنزيل بيانات الشكل المصدرية).
+
+```{python}
+#| output: asis
+import sys
+sys.path.insert(0, ".")
+sys.path.insert(0, "../../../scripts")
+import tunisia_data as td
+from figures import masse_salariale as ms
+import figtools
+
+df = td.load("masse-salariale-ratios")[
+    ["annee", "ms_sur_pib_pct", "ms_sur_depenses_totales_pct"]
+]
+figtools.figure_tabs(
+    ms.fig_A(), df, "masse-salariale-ratios",
+    slug="fig_A_masse_salariale",
+    caption="وزن كتلة الأجور العمومية في تونس، 1990-2025",
+    generated="2026-06-09",
+)
+```
