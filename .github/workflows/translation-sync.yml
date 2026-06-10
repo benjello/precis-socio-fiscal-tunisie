@@ -18,8 +18,13 @@ on:
       - 'precis/ar/**/_quarto.yml'
       - 'CHANGELOG.md'
   workflow_dispatch:
-    # Re-synchro manuelle : retraduit intégralement tous les .qmd FR vers l'AR.
-    # Utile quand un sync a échoué (ex. 503 Gemini) sans nouveau commit FR.
+    # Re-synchro manuelle, utile quand un sync a échoué (ex. 503 Gemini) sans
+    # nouveau commit FR.
+    inputs:
+      files:
+        description: "Fichiers FR à retraduire (séparés par des espaces). Vide = tous les .qmd FR (hors _glossaire, généré)."
+        required: false
+        default: ""
 
 jobs:
   translate:
@@ -41,8 +46,15 @@ jobs:
         id: changed-files
         run: |
           if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            # Re-synchro totale : tous les .qmd / _quarto.yml FR.
-            CHANGED=$(git ls-files | grep -E '^precis/fr/.*\.(qmd|yml)$' | tr '\n' ' ' || true)
+            INPUT_FILES="${{ github.event.inputs.files }}"
+            if [ -n "$INPUT_FILES" ]; then
+              # Re-synchro ciblée sur les fichiers fournis.
+              CHANGED="$INPUT_FILES"
+            else
+              # Re-synchro totale : tous les .qmd / _quarto.yml FR, SAUF les
+              # _glossaire.qmd (générés par build_glossary.py, pas traduits).
+              CHANGED=$(git ls-files | grep -E '^precis/fr/.*\.(qmd|yml)$' | grep -v '_glossaire\.qmd' | tr '\n' ' ' || true)
+            fi
           else
             if [ "${{ github.event_name }}" == "pull_request" ]; then
               BASE_SHA=${{ github.event.pull_request.base.sha }}
