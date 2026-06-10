@@ -12,10 +12,12 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Caisse nationale d'assurance maladie | الصندوق الوطني للتأمين على المرض | CNAM |
 | Caisse nationale de retraite et de prévoyance sociale | الصندوق الوطني للتقاعد والحيطة الاجتماعية | CNRPS |
 | Caisse nationale de sécurité sociale | الصندوق الوطني للضمان الاجتماعي | CNSS |
+| Catégorie de grade | صنف الرتبة |  |
 | Contribution sociale de solidarité | المساهمة الاجتماعية التضامنية | CSS |
 | Convention collective sectorielle | الاتفاقية المشتركة القطاعية |  |
 | Cotisations sociales | المساهمات الاجتماعية |  |
 | Échelon | الدرجة |  |
+| Échelonnement indiciaire | التدرّج القياسي |  |
 | Emploi public | التشغيل العمومي |  |
 | Entreprises publiques | المنشآت العمومية |  |
 | Établissement public à caractère administratif | المؤسسة العمومية ذات الصبغة الإدارية | EPA |
@@ -25,16 +27,20 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fonds de sécurité sociale | صناديق الضمان الاجتماعي |  |
 | Forces de sécurité intérieure | قوات الأمن الداخلي |  |
 | Grade | الرتبة |  |
+| Grille des salaires | شبكة الأجور |  |
 | Impôt sur le revenu des personnes physiques | الضريبة على دخل الأشخاص الطبيعيين | IRPP |
+| Indemnité spécifique | المنحة الخصوصية |  |
 | Masse salariale | كتلة الأجور |  |
 | Précis socio-fiscal | الملخّص الاجتماعي والجبائي |  |
+| Prime de rendement | منحة المردودية |  |
 | Régime conventionnel public | النظام الاتفاقي العمومي |  |
 | Régime de marché contrôlé | نظام السوق الموجَّه |  |
 | Régime indiciaire | النظام الاستدلالي للتأجير |  |
 | Régime statutaire autonome | النظام الأساسي الخاص |  |
+| Retenue à la source | الخصم من المورد |  |
 | Salaire minimum interprofessionnel garanti | الأجر الأدنى المضمون لمختلف المهن | SMIG |
 | Secteur public | القطاع العام |  |
 | Statut particulier | النظام الأساسي الخصوصي |  |
 | Taux marginal | النسبة الحدية |  |
-| Traitement de base | الأجر الأساسي |  |
+| Traitement de base | المرتب الأساسي |  |
 | Valeur du point d'indice | قيمة النقطة الاستدلالية |  |

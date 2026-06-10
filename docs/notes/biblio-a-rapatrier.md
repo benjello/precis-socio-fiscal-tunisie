@@ -64,26 +64,91 @@ collection dédiée ou « Commun »).
 
 | Clé de citation | Référence | URL JORT | État |
 |---|---|---|---|
-| `loi67-29` | Loi n°67-29 du 14 juillet 1967, organisation judiciaire / CSM / statut de la magistrature | `https://www.pist.tn/jort/1967/1967F/Jo03067.pdf` (JORT n°30, vérifié HTTP 200) | OK |
-| `loi67-20` | Loi n°67-20 du 31 mai 1967, statut général des militaires | — | URL à compléter |
-| `loi82-70` | Loi n°82-70 du 6 août 1982, statut général des forces de sécurité intérieure | — | URL à compléter |
-| `decret-statut-caisses-2022` | Décret présidentiel, statut particulier des agents des organismes de sécurité sociale (CNSS, CNRPS, CNAM) | — | **numéro de décret + URL à confirmer** |
+| `loi67-29` | Loi n°67-29 du 14 juillet 1967, organisation judiciaire / CSM / statut de la magistrature | `https://www.pist.tn/jort/1967/1967F/Jo03067.pdf` (JORT n°30) | OK |
+| `loi67-20` | Loi n°67-20 du 31 mai 1967, statut général des militaires | `https://www.pist.tn/jort/1967/1967F/Jo02467.pdf` (JORT n°24/1967) | **RÉSOLU** |
+| `loi82-70` | Loi n°82-70 du 6 août 1982, statut général des forces de sécurité intérieure | `https://www.pist.tn/jort/1982/1982F/Jo05482.pdf` (JORT n°54/1982) | **RÉSOLU** |
+| `decret-statut-caisses-2022` | Décret présidentiel n°2022-76 du 22 février 2022, statut particulier du personnel des organismes de sécurité sociale (CNSS, CNRPS, CNAM) | `https://www.pist.tn/jort/2022/2022F/Jo0202022.pdf` (JORT n°20/2022) | **RÉSOLU** |
 
-#### TODO de vérification métadonnées (A.5)
-- `loi67-29` : date **14 juillet 1967** confirmée (mention « Fait à Tunis, le 14 juillet 1967 »
-  dans le JORT ; legislation-securite titre par erreur « 17 juillet ») ; cohérente avec `index.qmd`.
-- `loi67-20` : **numéro de JORT du 31 mai 1967 non confirmé** par les sources consultées
-  (legislation-securite n'expose pas le n° de JORT pour la loi originale). URL pist.tn à
-  ajouter une fois le n° de JORT établi — ne pas deviner (les PDF pist.tn renvoient HTTP 200
-  pour tous les numéros, ce qui ne prouve pas la présence de la loi).
-- `loi82-70` : idem, **numéro de JORT du 6 août 1982 non confirmé**.
-- `decret-statut-caisses-2022` : **numéro exact du décret NON confirmé**. Sources (businessnews,
-  La Presse, openedition) confirment seulement la **publication au JORT le 23 février 2022**.
-  Entrée créée avec date + titre prudent, sans numéro inventé. À retrouver sur le JORT pist.tn
-  du 23/02/2022 (ou n° voisin) ou sur legislation-securite.tn, puis compléter numéro + URL.
+#### Résolution métadonnées (A.5) — base JORT `jort_cache.db` (PDFs-legislation-tunisie)
+Méthode de confirmation : recherche par **numéro de texte** dans la base JORT locale (78 953
+textes, champs `numero`/`type`/`date_signature`/`jort_numero`/`pdf_fr` issus de l'API JORT),
+reproduisant exactement les 3 URLs déjà validées (`loi83-112`, `loi89-9`, `loi67-29`). L'URL
+pist.tn est dérivée du `jort_numero` confirmé, puis vérifiée HTTP 200 + type PDF.
+- `loi67-20` : **JORT n°24 de 1967** (Loi n°67-20 du 31 mai 1967, titre concordant dans la base). RÉSOLU.
+- `loi82-70` : **JORT n°54 de 1982** (Loi n°82-70 du 6 août 1982, titre concordant). RÉSOLU.
+- `decret-statut-caisses-2022` : numéro désormais **confirmé** = **Décret présidentiel n°2022-76
+  du 22 février 2022**, publié au **JORT n°20 de 2022** (publication 23/02/2022), titre base :
+  « relatif à l'approbation du statut particulier du personnel des organismes [de sécurité
+  sociale] ». Entrée corrigée (titre + numéro + date de signature 22/02/2022). RÉSOLU.
 
-### loi85-78 — URL JORT manquante (signalée par la note documentaire)
-- `loi85-78` (5 août 1985) : **URL JORT toujours absente** de `references.json`. Le n° de JORT
-  d'août 1985 n'a pas été confirmé par les sources consultées (legislation-securite, idaraty,
-  legal-doctrine n'exposent pas le n° de JORT ni de lien pist.tn). URL pist.tn à ajouter une
-  fois le n° de JORT établi (probable plage ~57-59/1985, **à vérifier — ne pas deviner**).
+### loi85-78 — URL JORT — RÉSOLU
+- `loi85-78` (5 août 1985) : **JORT n°58 de 1985** confirmé via base JORT locale (Loi n°85-78
+  du 5 août 1985, titre concordant). URL = `https://www.pist.tn/jort/1985/1985F/Jo05885.pdf`. RÉSOLU.
+
+### Section B.1 — le régime indiciaire (rémunérations publiques)
+
+Ajoutées à la main dans `precis/{fr,ar}/remunerations_publiques/references.json`
+(type CSL `legislation`, titres en français = langue d'origine, **dupliquées en AR non
+traduites**). Résolues au rendu (`quarto render _regime_indiciaire.qmd`, aucun `[?]`,
+les 6 clés sortent en `data-cites`). **Pas encore dans Zotero.** Même réserve
+`COLLECTION_TO_BOOK` (livre `remunerations_publiques` non mappé → collection dédiée ou « Commun »).
+
+| Clé de citation | Référence | URL | État |
+|---|---|---|---|
+| `decret-97-1832` | Décret n°97-1832 du 16 sept. 1997, traitement de base des personnels de l'État/CPL/EPA | `https://www.pist.tn/jort/1997/1997F/Jo07697.pdf` (JORT n°76/1997) | **RÉSOLU** |
+| `decret-2007-267` | Décret n°2007-267 du 12 fév. 2007, transfert d'indemnités spécifiques vers le traitement de base | `https://www.pist.tn/jort/2007/2007F/Jo0142007.pdf` (JORT n°14/2007) | **RÉSOLU** |
+| `decret-2007-268` | Décret n°2007-268 du 12 fév. 2007, modifiant le décret 97-1832 | `https://www.pist.tn/jort/2007/2007F/Jo0142007.pdf` (JORT n°14/2007, même JORT que 2007-267) | **RÉSOLU** |
+| `decret-99-12` | Décret n°99-12 du 4 janv. 1999, catégories des grades (État/CL/EPA) | `https://www.pist.tn/jort/1999/1999F/Jo00499.pdf` (JORT n°4/1999) | **RÉSOLU** |
+| `loi85-12` | Loi n°85-12 du 5 mars 1985, régime des pensions civiles et militaires de retraite et des survivants (secteur public) | `https://www.pist.tn/jort/1985/1985F/Jo02085.pdf` (JORT n°20/1985 — **remplace** legislation-securite.tn) | **RÉSOLU** |
+| `loi2017-66-lf2018` | Loi n°2017-66 du 18 déc. 2017, loi de finances pour 2018 (art. 53 — contribution sociale de solidarité) | `https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf` (JORT n°101/2017) | **RÉSOLU** |
+
+#### Résolution métadonnées (B.1) — base JORT `jort_cache.db`
+- **URLs JORT pist.tn** des 4 décrets, de `loi85-12` et de la loi de finances 2018 :
+  **toutes RÉSOLUES** via la base JORT locale (numéro de JORT confirmé par le champ `jort_numero`
+  du texte correspondant, titre/date concordants ; URL dérivée puis vérifiée HTTP 200 + PDF).
+- **Annexes chiffrées** : les grilles de traitement de base (`decret-97-1832`) et la nouvelle
+  grille des salaires (`decret-2007-268`) sont incluses dans les JORT correspondants (n°76/1997
+  et n°14/2007). Vérification des valeurs chiffrées hors périmètre biblio.
+- `loi85-12` : titre promulgué « **portant** régime… » confirmé (legislation-securite.tn, NATLEX) ;
+  les *vu*-clauses des décrets 2007 le paraphrasent en « fixant le régime… » — wording promulgué retenu.
+
+#### Anti-duplication — réutilisation inter-livres
+- `loi85-12` (loi pensions → livre `retraites`) et `loi2017-66-lf2018` (loi de finances → livre
+  `fiscalite`) : **absentes** de `precis/fr/{retraites,fiscalite}/references.json` et du partagé
+  `precis/fr/references.json` au moment de l'ajout (aucun conflit de clé/contenu). Créées ici dans
+  le livre `remunerations_publiques`. Toute citation future dans `retraites`/`fiscalite` doit
+  **réutiliser ces mêmes clés** ; envisager de les **promouvoir dans le partagé**
+  `precis/fr/references.json` (« Commun ») plutôt que de les dupliquer. À arbitrer au rapatriement Zotero.
+
+### Bibliographie partagée (`precis/{fr,ar}/references.json`) — URLs non-pist remplacées
+URL canonique d'un texte juridique = JORT pist.tn (consigne durable). Remplacement des URLs
+9anoun.tn par le PDF JORT pist.tn, confirmées via la base JORT locale `jort_cache.db`.
+- `loi-amen-social-2019` (loi organique n°2019-10 du 30 janvier 2019) :
+  **JORT n°11 de 2019** confirmé (texte « Loi organique n°2019-10 », base JORT). URL =
+  `https://www.pist.tn/jort/2019/2019F/Jo0112019.pdf` (PDF absent du champ `pdf_fr` de la base
+  mais n° de JORT confirmé ; URL dérivée selon le motif 2019 et vérifiée HTTP 200 + PDF 1,3 Mo).
+  Remplace `9anoun.tn`. RÉSOLU.
+- `loi-irpp-is-1989` (loi n°89-114 du 30 décembre 1989, **texte promulgateur** du Code IRPP/IS) :
+  visé = la loi de promulgation, et non le code consolidé. Base JORT : deux textes n°89-114 du
+  30/12/1989 — celui « **portant promulgation** du code… » est au **JORT n°88 de 1989**. URL =
+  `https://www.pist.tn/jort/1989/1989F/Jo08889.pdf` (vérifiée HTTP 200 + PDF 9,6 Mo). Remplace
+  `9anoun.tn`. RÉSOLU. (NB : le code consolidé n'a pas de PDF JORT unique ; on cite le texte
+  promulgateur, conformément à la consigne.)
+
+### Méthode de résolution JORT (toutes entrées ci-dessus)
+Les outils MCP `mcp__jort__*` n'étaient pas exposés à la session ; résolution faite via la
+**base JORT locale** `PDFs-legislation-tunisie/jort_cache.db` (78 953 textes, champs issus de
+l'API JORT : `numero`, `type`, `date_signature`, `jort_annee`, `jort_numero`, `pdf_fr`). La base
+reproduit **à l'identique** les 3 URLs déjà validées (`loi83-112` → Jo08283, `loi89-9` → Jo00989,
+`loi67-29` → Jo03067), ce qui la qualifie comme source de confirmation. Pour chaque entrée :
+recherche par numéro de texte → confirmation type/date/titre concordants → URL = `pist.tn` +
+`pdf_fr` (ou dérivée du `jort_numero` confirmé quand `pdf_fr` est nul) → contrôle HTTP 200 + PDF.
+Aucune URL non-pist conservée ; aucun numéro deviné.
+
+### À pousser dans Zotero (rappel — NE PAS pousser sans feu vert)
+Toutes les entrées `legislation` ci-dessus ont leur URL pist.tn corrigée dans les `references.json`
+FR + miroirs AR. Au rapatriement Zotero, reporter le champ `URL` (PDF pist.tn) dans l'item
+correspondant (`citation-key` en « Extra »). Items concernés : decret-97-1832, decret-2007-267,
+decret-2007-268, decret-99-12, loi2017-66-lf2018, loi85-78, loi67-20, loi82-70,
+decret-statut-caisses-2022 (n°2022-76), loi85-12 (livre `remunerations_publiques`) ;
+loi-irpp-is-1989, loi-amen-social-2019 (partagé « Commun »).
