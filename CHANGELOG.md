@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.4.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.3.1...v1.4.0) (2026-06-10)
+
+
+### ✨ Nouveautés
+
+* **ar:** parité AR des 4 régimes (câble conventionnel + marché contrôlé) ([1ddc568](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/1ddc5681b9beb434fb578cac8a738bbee43c8a7b))
+
+
+### 🐛 Corrections de bugs
+
+* **ar:** retrait suspendu RTL de la biblio + libellé « Appendices » en arabe ([4236a91](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/4236a9108fd24ee39a2c6527c5a019e9771e251e))
+
 ## [1.3.1](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.3.0...v1.3.1) (2026-06-10)
 
 
