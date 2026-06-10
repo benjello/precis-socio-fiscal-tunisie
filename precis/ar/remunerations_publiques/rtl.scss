@@ -50,3 +50,23 @@ pre, code, .sourceCode {
   direction: ltr;
   text-align: left;
 }
+
+/* Bibliographie : retrait suspendu (hanging indent) côté droit.
+   Quarto applique le retrait à gauche (margin-left + text-indent négatif) ;
+   en RTL la première ligne de chaque entrée débordait et se faisait rogner à
+   droite (« lettres manquantes », sur les entrées arabes ET latines). On
+   bascule le retrait du côté droit. */
+.hanging-indent {
+  margin-left: 0;
+  margin-right: 1.5em;
+}
+.hanging-indent div.csl-entry {
+  margin-left: 0;
+  margin-right: 1em;
+  text-indent: -1em;
+}
+/* Les entrées dont le titre/URL est en caractères latins restent lisibles en
+   LTR à l'intérieur du bloc RTL (bidi naturel). */
+#refs .csl-entry {
+  text-align: right;
+}
