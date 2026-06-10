@@ -25,6 +25,8 @@ book:
     - index.qmd
     - _regime_indiciaire.qmd
     - _regime_statutaire_autonome.qmd
+    - _regime_conventionnel.qmd
+    - _regime_marche_controle.qmd
   appendices:
     - _glossaire.qmd
     - _references.qmd
