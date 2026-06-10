@@ -71,3 +71,20 @@
   perimetre_ar: الإدارة المركزية
   caveats: docs/reconciliation-masse-salariale-pib.md
   fiche: sources/minfinances-indicateurs.md
+- id: fonction-publique-categories
+  titre: Fonctionnaires par catégorie statutaire (A1-D), 2015-2021
+  sources:
+  - ins-fonction-publique-2021
+  build: tunisia_data.build.fonction_publique:categories
+  raw:
+  - data/raw/ins-fonction-publique-salaires-2010-2021/tab8.xlsx
+  output: data/processed/ins-fonction-publique-salaires-2010-2021/categories_statutaires_evolution.csv
+  unite: milliers d'agents
+  perimetre: fonctionnaires de l'État (hors ouvriers et contractuels)
+  caveats: catégories statutaires A1/A2/A3/B/C/D ; champ = fonctionnaires (tab8 INS)
+  titre_ar: الموظفون حسب الصنف القانوني (أ1-د)، 2015-2021
+  unite_ar: بآلاف الأعوان
+  perimetre_ar: موظفو الدولة (باستثناء العملة والمتعاقدين)
+  caveats_ar: الأصناف القانونية أ1/أ2/أ3/ب/ج/د؛ المجال = الموظفون (جدول 8 للمعهد الوطني
+    للإحصاء)
+  fiche: sources/ins-fonction-publique-salaires-2010-2021.md
