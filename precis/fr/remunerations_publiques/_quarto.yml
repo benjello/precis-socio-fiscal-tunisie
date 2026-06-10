@@ -4,6 +4,15 @@ project:
 
 lang: fr
 
+# Surcharge des libellés d'interface Quarto en arabe (lang: ar ne les traduit
+# pas tous). Customisation propre au livre AR.
+language:
+  toc-title-document: "Table des matières"
+  toc-title-website: "Sur cette page"
+  repo-action-links-edit: "Modifier cette page"
+  repo-action-links-issue: "Signaler un problème"
+  repo-action-links-source: "Voir le code source"
+
 book:
   title: "Les rémunérations dans le secteur public"
   author: "Mahdi Ben Jelloul"
