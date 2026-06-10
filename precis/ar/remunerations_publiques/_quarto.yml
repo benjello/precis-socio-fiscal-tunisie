@@ -4,6 +4,15 @@ project:
 
 lang: ar
 
+# Surcharge des libellés d'interface Quarto en arabe (lang: ar ne les traduit
+# pas tous). Customisation propre au livre AR.
+language:
+  toc-title-document: "المحتويات"
+  toc-title-website: "في هذه الصفحة"
+  repo-action-links-edit: "تعديل هذه الصفحة"
+  repo-action-links-issue: "الإبلاغ عن مشكل"
+  repo-action-links-source: "عرض المصدر"
+
 book:
   title: "الأجور في القطاع العام"
   author: "Mahdi Ben Jelloul"
