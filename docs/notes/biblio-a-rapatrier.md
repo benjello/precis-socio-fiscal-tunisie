@@ -190,3 +190,23 @@ non nulles.
 Aucune entrée AR laissée sans URL (tous les `pdf_ar` présents). JSON AR valides ; rendu FR du
 livre `remunerations_publiques` OK (0 `[?]`). Au rapatriement Zotero, les URL **AR** devront être
 portées dans le champ language-specific approprié (à arbitrer selon le modèle Zotero retenu).
+
+### Titres arabes des références juridiques (`legislation`) — posés 10/06/2026
+Les entrées `legislation` des `references.json` **AR** portaient un `title` français ; remplacé
+par la dénomination arabe (forme canonique `«type» عدد «numéro» المؤرخ في «date» [المتعلق بـ«objet»]`).
+Dénomination = forme déjà publiée dans la prose AR (sortie CI), nettoyée ; **aucun objet
+machine-traduit**. Seul le champ `title` a changé (id/type/issued/URL `Ja…`/note intacts).
+Les deux JSON AR restent valides.
+
+Objet présent en prose AR → attaché (verbatim) :
+- `loi83-112` → `القانون عدد 83-112 المؤرخ في 12 ديسمبر 1983 المتعلق بضبط النظام الأساسي العام لأعوان الدولة والجماعات المحلية والمؤسسات العمومية ذات الصبغة الإدارية`
+- `decret-99-12` → `الأمر عدد 99-12 المؤرخ في 4 جانفي 1999 المتعلق بضبط أصناف الرتب في الوظيفة العمومية`
+- `loi2017-66-lf2018` → `القانون عدد 2017-66 المؤرخ في 18 ديسمبر 2017 المتعلق بقانون المالية لسنة 2018`
+
+Dénomination nue (type+numéro+date, faits) → **TODO objet arabe à compléter sur titre officiel JORT**
+(ne pas machine-traduire l'objet français ; à reprendre du JORT AR ou d'une prose AR future) :
+- `decret-97-1832`, `decret-2007-267`, `decret-2007-268`, `loi85-12`, `loi85-78`, `loi89-9`,
+  `loi67-29`, `loi67-20`, `loi82-70`, `loi-irpp-is-1989` (objet « إصدار مجلة الضريبة على دخل
+  الأشخاص الطبيعيين والضريبة على الشركات » absent de la prose AR), `decret-statut-caisses-2022`
+  (objet : statut particulier du personnel des organismes de sécurité sociale),
+  `loi-amen-social-2019` (objet : programme AMEN SOCIAL).
