@@ -6,9 +6,54 @@ Sur le plan **historique**, c'est le régime le plus directement façonné par l
 
 ## Champ d'application
 
-Le régime indiciaire est défini par le statut général des personnels de l'État, des collectivités locales et des établissements publics à caractère administratif, fixé par la loi n°83-112 du 12 décembre 1983 [@loi83-112]. Ce statut général s'applique à la fonction publique de l'État, aux personnels des collectivités locales et à une partie des EPA ; il est décliné, pour chaque corps, par des statuts particuliers pris par décret.
+Le régime indiciaire est défini par le statut général des personnels de l'État, des collectivités locales et des établissements publics à caractère administratif, fixé par la loi n°83-112 du 12 décembre 1983 [@loi83-112]. Ce statut général, décliné pour chaque corps par des statuts particuliers pris par décret, couvre trois **sous-secteurs juridiques** distincts, examinés tour à tour ci-dessous : la fonction publique de l'État, les personnels des collectivités locales et une partie des établissements publics à caractère administratif.
 
-La structuration des grades en catégories repose sur le décret n°99-12 du 4 janvier 1999, qui définit les catégories de grades de la fonction publique [@decret-99-12], modifié par le décret n°2003-2338 du 11 novembre 2003. Ce classement organise les corps en catégories hiérarchiques, support de la grille de traitement de base décrite ci-après.
+### L'État
+
+La fonction publique de l'État constitue le cœur du régime indiciaire. Les agents de l'État sont régis par le statut général de la loi n°83-112 du 12 décembre 1983 [@loi83-112], décliné, corps par corps, par des statuts particuliers pris par décret qui précisent les conditions de recrutement, d'avancement et les obligations propres à chaque corps.
+
+La structuration des grades en catégories repose sur le décret n°99-12 du 4 janvier 1999, qui définit les catégories de grades de la fonction publique [@decret-99-12], modifié par le décret n°2003-2338 du 11 novembre 2003. Ce classement organise les corps en catégories hiérarchiques — de la catégorie A1 (cadres de conception) à la catégorie D (exécution) —, support de la grille de traitement de base décrite ci-après.
+
+Cette population n'est pas homogène : la statistique de la fonction publique ventile les fonctionnaires de l'État par **catégorie statutaire**, de la catégorie A1 (cadres supérieurs et conception) à la catégorie D (exécution). La hiérarchie des qualifications y pèse lourd : en 2021, la catégorie **A** (A1, A2 et A3) regroupe à elle seule près des **trois quarts** des fonctionnaires, la seule catégorie **A1** en représentant environ **38 %**. La période 2015-2021 est en outre marquée par une recomposition : les effectifs de catégorie **A1** progressent fortement (d'environ 99 000 à 198 000), tandis que la catégorie **A3** recule (d'environ 78 000 à 36 000), sous l'effet conjugué des recrutements de cadres et des reclassements.
+
+```{python}
+#| label: fig-categories-statutaires
+#| fig-cap: "Fonctionnaires de l'État par catégorie statutaire, 2015-2021 (source INS)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import categories_statutaires as cs
+import figtools
+figtools.figure_tabs(
+    cs.fig_structure(), cs.structure_table(), "fonction-publique-categories",
+    slug="fig_categories_statutaires",
+    caption="Fonctionnaires de l'État par catégorie statutaire, 2015-2021",
+    note_lecture=(
+        "Chaque barre empile les effectifs des six catégories statutaires pour une "
+        "année donnée : la hauteur totale donne l'effectif des fonctionnaires, et "
+        "l'épaisseur de chaque segment la part de la catégorie. Les catégories **A1 à "
+        "A3** correspondent aux agents de conception et d'encadrement, **B** à la "
+        "maîtrise, **C** et **D** à l'exécution. Le champ couvre les seuls "
+        "fonctionnaires (hors ouvriers et contractuels), d'où un total inférieur à "
+        "l'effectif global de la fonction publique."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
+### Les collectivités locales
+
+Le régime indiciaire est étendu aux personnels des communes et des régions. Le statut général de la loi n°83-112 vise expressément, à côté des personnels de l'État, ceux des collectivités publiques locales [@loi83-112], de sorte que la construction de leur rémunération obéit à la même logique de grade et d'échelon convertis en traitement de base.
+
+<!-- TODO : statut des personnels des collectivités locales, texte précis à sourcer (statut particulier des agents des collectivités locales ; renvoi éventuel du Code des collectivités locales, loi organique n°2018-29). Ne pas inventer de clé de citation. -->
+
+### Les établissements publics à caractère administratif (EPA)
+
+Une partie des établissements publics à caractère administratif (EPA) relève également du régime indiciaire : il s'agit de ceux dont le personnel est régi par le statut général de la fonction publique [@loi83-112]. Tous les EPA ne sont donc pas concernés — seuls le sont ceux pour lesquels le personnel est soumis au statut général, à l'exclusion de ceux dotés d'un régime propre.
+
+Ces EPA se distinguent des **établissements publics à caractère non administratif (EPNA)**, dont le personnel ne relève pas du statut général et dont la rémunération est traitée ailleurs (chapitre du régime conventionnel public).
+
+<!-- TODO : préciser sur source primaire la liste ou le critère textuel des EPA dont le personnel est régi par le statut général de la fonction publique. -->
 
 ## La construction de la rémunération
 

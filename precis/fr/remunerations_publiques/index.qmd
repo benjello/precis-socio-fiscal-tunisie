@@ -58,34 +58,7 @@ figtools.figure_tabs(
 )
 ```
 
-Cette population n'est pas homogène : la même source ventile les fonctionnaires de l'État par **catégorie statutaire**, de la catégorie A1 (cadres supérieurs et conception) à la catégorie D (exécution). La hiérarchie des qualifications y pèse lourd : en 2021, la catégorie **A** (A1, A2 et A3) regroupe à elle seule près des **trois quarts** des fonctionnaires, la seule catégorie **A1** en représentant environ **38 %**. La période 2015-2021 est en outre marquée par une recomposition : les effectifs de catégorie **A1** progressent fortement (d'environ 99 000 à 198 000), tandis que la catégorie **A3** recule (d'environ 78 000 à 36 000), sous l'effet conjugué des recrutements de cadres et des reclassements.
-
-```{python}
-#| label: fig-categories-statutaires
-#| fig-cap: "Fonctionnaires de l'État par catégorie statutaire, 2015-2021 (source INS)."
-#| echo: false
-#| output: asis
-import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
-from figures import categories_statutaires as cs
-import figtools
-figtools.figure_tabs(
-    cs.fig_structure(), cs.structure_table(), "fonction-publique-categories",
-    slug="fig_categories_statutaires",
-    caption="Fonctionnaires de l'État par catégorie statutaire, 2015-2021",
-    note_lecture=(
-        "Chaque barre empile les effectifs des six catégories statutaires pour une "
-        "année donnée : la hauteur totale donne l'effectif des fonctionnaires, et "
-        "l'épaisseur de chaque segment la part de la catégorie. Les catégories **A1 à "
-        "A3** correspondent aux agents de conception et d'encadrement, **B** à la "
-        "maîtrise, **C** et **D** à l'exécution. Le champ couvre les seuls "
-        "fonctionnaires (hors ouvriers et contractuels), d'où un total inférieur à "
-        "l'effectif global de la fonction publique."
-    ),
-    generated="{{< meta date >}}",
-)
-```
-
-Ces estimations ponctuelles se replacent dans une trajectoire de plus longue durée, que documente une source budgétaire officielle. À partir des séries de dépenses du ministère des Finances [@minfin-remunerations; @minfin-indicateurs-fp] et du produit intérieur brut des comptes nationaux [@ins-cnat-2015], on peut suivre depuis 1990 le poids de la masse salariale de l'État rapporté à deux dénominateurs : le **PIB** et les **dépenses budgétaires**. Mesurée sur ce périmètre — le budget de l'État, hors entreprises publiques — la masse salariale représente de l'ordre de **11 à 12 % du PIB** au début des années 1990, reflue jusqu'à environ **10 % vers 2010**, puis s'élève nettement après 2011 pour culminer à **16,1 % en 2020**, avant de revenir autour de **13,5 % en 2025**. Rapportée aux **dépenses totales**, elle passe d'environ **39 % en 1990** à un maximum proche de **52 % au milieu de la décennie 2010**. Cette série, construite en base 2015, est homogène mais distincte du périmètre d'administration centrale retenu par le FMI et la Banque mondiale, dont les niveaux (exprimés en base 2010) sont un peu plus élevés ; les deux s'accordent néanmoins sur le profil d'ensemble et sur le pic de 2020.
+Ces effectifs se replacent dans une trajectoire de plus longue durée, que documente une source budgétaire officielle. À partir des séries de dépenses du ministère des Finances [@minfin-remunerations; @minfin-indicateurs-fp] et du produit intérieur brut des comptes nationaux [@ins-cnat-2015], on peut suivre depuis 1990 le poids de la masse salariale de l'État rapporté à deux dénominateurs : le **PIB** et les **dépenses budgétaires**. Mesurée sur ce périmètre — le budget de l'État, hors entreprises publiques — la masse salariale représente de l'ordre de **11 à 12 % du PIB** au début des années 1990, reflue jusqu'à environ **10 % vers 2010**, puis s'élève nettement après 2011 pour culminer à **16,1 % en 2020**, avant de revenir autour de **13,5 % en 2025**. Rapportée aux **dépenses totales**, elle passe d'environ **39 % en 1990** à un maximum proche de **52 % au milieu de la décennie 2010**. Cette série, construite en base 2015, est homogène mais distincte du périmètre d'administration centrale retenu par le FMI et la Banque mondiale, dont les niveaux (exprimés en base 2010) sont un peu plus élevés ; les deux s'accordent néanmoins sur le profil d'ensemble et sur le pic de 2020.
 
 ```{python}
 #| label: fig-masse-salariale-ratios
