@@ -1,0 +1,52 @@
+/*-- scss:rules --*/
+
+/* Mise en page RTL pour le livre arabe.
+   Quarto sort `lang="ar"` mais sans `dir="rtl"` : sans cela, titres, numéros
+   de section et alignement de bloc restent à gauche. On force le sens RTL et
+   l'alignement à droite sur l'ensemble du contenu. */
+
+html, body {
+  direction: rtl;
+}
+
+body {
+  text-align: right;
+}
+
+/* Titres et corps de texte alignés à droite. */
+h1, h2, h3, h4, h5, h6,
+p, li, dt, dd,
+.quarto-title,
+#title-block-header .quarto-title-block,
+figcaption, caption {
+  text-align: right;
+}
+
+/* Numérotation des sections : avec direction RTL, le numéro se place
+   naturellement à droite du titre ; on garde l'espacement. */
+.header-section-number {
+  margin-inline-end: .4em;
+}
+
+/* Listes : puces du bon côté. */
+ul, ol {
+  padding-right: 2rem;
+  padding-left: 0;
+}
+
+/* Table des matières latérale et navigation. */
+#TOC, nav[role="doc-toc"], .sidebar nav[role="doc-toc"] {
+  text-align: right;
+}
+
+/* Tableaux : en-têtes et cellules alignés à droite. */
+table th, table td {
+  text-align: right;
+}
+
+/* Blocs de code et contenus intrinsèquement LTR (chiffres, libellés latins)
+   restent en LTR pour rester lisibles. */
+pre, code, .sourceCode {
+  direction: ltr;
+  text-align: left;
+}
