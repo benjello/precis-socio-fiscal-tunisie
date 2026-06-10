@@ -126,15 +126,33 @@ Fichier à traduire :
 
 
         try:
-            response = client.models.generate_content(
-                model='gemini-2.5-flash',
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    system_instruction=guidelines,
-                    temperature=0.0,
-                ),
-            )
-            
+            # Retry avec backoff exponentiel sur erreurs transitoires (503/429).
+            # Gemini renvoie régulièrement 503 UNAVAILABLE en pic de demande ;
+            # sans retry, une seule occurrence faisait échouer toute la synchro.
+            max_attempts = 5
+            response = None
+            for attempt in range(1, max_attempts + 1):
+                try:
+                    response = client.models.generate_content(
+                        model='gemini-2.5-flash',
+                        contents=prompt,
+                        config=types.GenerateContentConfig(
+                            system_instruction=guidelines,
+                            temperature=0.0,
+                        ),
+                    )
+                    break
+                except Exception as api_err:
+                    msg = str(api_err)
+                    transient = any(s in msg for s in ("503", "UNAVAILABLE", "429", "RESOURCE_EXHAUSTED", "overloaded"))
+                    if not transient or attempt == max_attempts:
+                        raise
+                    wait = min(60, 5 * (2 ** (attempt - 1)))  # 5,10,20,40,60s
+                    print(f"  {file_path}: erreur transitoire ({msg[:60]}…), retry {attempt}/{max_attempts - 1} dans {wait}s")
+                    time.sleep(wait)
+
+            if response is None:
+                raise RuntimeError("aucune réponse de l'API après retries")
             translated_text = response.text
             if translated_text.startswith("```markdown\n"):
                 translated_text = translated_text[12:]
