@@ -223,20 +223,93 @@ entries:
   - id: regime-statutaire-autonome
     acronyme: null
     statut: provisoire
-    references: []
-    voir_aussi: [regime-indiciaire]
+    references: [loi67-29, loi67-20, loi82-70]
+    voir_aussi: [regime-indiciaire, fonction-publique, forces-de-securite-interieure, statut-particulier]
     fr:
       terme: Régime statutaire autonome
       definition: >
         Régime de rémunération propre à des corps dotés d'un statut spécial
         (magistrats, militaires, forces de sécurité intérieure), détaché du
-        statut commun de la fonction publique.
-      synonymes: []
+        statut commun de la fonction publique. Chaque corps est régi par un
+        texte propre : loi n°67-29 (magistrats), loi n°67-20 (militaires),
+        loi n°82-70 (forces de sécurité intérieure).
+      synonymes: [statut spécial]
     ar:
       terme: النظام الأساسي الخاص
       definition: >
         نظام تأجير خاصّ بأسلاك تتمتّع بنظام أساسي خاصّ (القضاة، العسكريون، قوات
-        الأمن الداخلي)، منفصل عن النظام الأساسي العام للوظيفة العمومية.
+        الأمن الداخلي)، منفصل عن النظام الأساسي العام للوظيفة العمومية. ويخضع كلّ
+        سلك لنصّ خاصّ به: القانون عدد 67-29 (القضاة)، والقانون عدد 67-20
+        (العسكريون)، والقانون عدد 82-70 (قوات الأمن الداخلي).
+      synonymes: []
+
+  - id: statut-particulier
+    acronyme: null
+    statut: provisoire
+    references: [loi83-112, decret-statut-caisses-2022]
+    voir_aussi: [fonction-publique, regime-statutaire-autonome, cnss, cnrps, cnam]
+    fr:
+      terme: Statut particulier
+      definition: >
+        Statut dérogatoire applicable à une catégorie d'agents publics, fixé par
+        un texte propre (souvent un décret) par opposition au statut général de
+        la fonction publique (loi n°83-112). Le statut particulier des agents des
+        caisses sociales (CNSS, CNRPS, CNAM), adopté par décret en 2022, en est
+        un exemple : un régime sui generis, ni statut général ni convention
+        collective de droit commun.
+      synonymes: []
+    ar:
+      terme: النظام الأساسي الخصوصي
+      definition: >
+        نظام استثنائي يُطبَّق على صنف من الأعوان العموميين، يُضبَط بنصّ خاصّ (أمر
+        في الغالب) خلافًا للنظام الأساسي العام للوظيفة العمومية (القانون عدد
+        83-112). ومن أمثلته النظام الأساسي الخصوصي لأعوان صناديق الضمان الاجتماعي
+        (CNSS وCNRPS وCNAM) المعتمَد بأمر سنة 2022: نظام ذو طبيعة خاصّة، لا هو
+        نظام أساسي عام ولا اتفاقية مشتركة عامة.
+      synonymes: []
+
+  - id: forces-de-securite-interieure
+    acronyme: null
+    statut: provisoire
+    references: [loi82-70]
+    voir_aussi: [regime-statutaire-autonome, statut-particulier]
+    fr:
+      terme: Forces de sécurité intérieure
+      definition: >
+        Corps chargés du maintien de l'ordre et de la sécurité publique (sûreté
+        nationale, garde nationale, protection civile), dotés d'un statut spécial
+        distinct du statut général de la fonction publique (loi n°82-70 du
+        6 août 1982).
+      synonymes: []
+    ar:
+      terme: قوات الأمن الداخلي
+      definition: >
+        الأسلاك المكلّفة بحفظ النظام والأمن العام (الأمن الوطني، الحرس الوطني،
+        الحماية المدنية)، التي تتمتّع بنظام أساسي خاصّ مستقلّ عن النظام الأساسي
+        العام للوظيفة العمومية (القانون عدد 82-70 المؤرّخ في 6 أوت 1982).
+      synonymes: []
+
+  - id: convention-collective-sectorielle
+    acronyme: null
+    statut: provisoire
+    references: [loi85-78]
+    voir_aussi: [regime-conventionnel-public, entreprises-publiques, epic]
+    fr:
+      terme: Convention collective sectorielle
+      definition: >
+        Accord négocié entre employeurs et organisations syndicales, fixant les
+        conditions d'emploi et de rémunération (classification des emplois,
+        grilles, primes) pour un secteur d'activité donné. Dans le secteur public
+        non administratif, elle constitue le fondement du régime conventionnel
+        (code du travail ; loi n°85-78).
+      synonymes: []
+    ar:
+      terme: الاتفاقية المشتركة القطاعية
+      definition: >
+        اتفاق متفاوَض عليه بين الأعراف والمنظمات النقابية، يضبط شروط الشغل
+        والتأجير (تصنيف المواطن الشغلية والسلالم والمنح) لقطاع نشاط معيَّن. وفي
+        القطاع العام غير الإداري، تُشكّل أساس النظام الاتفاقي (مجلة الشغل؛ القانون
+        عدد 85-78).
       synonymes: []
 
   - id: regime-conventionnel-public
@@ -244,7 +317,7 @@ entries:
     statut: provisoire
     references: [loi85-78, loi89-9]
     source_definition: {ref: loi85-78}
-    voir_aussi: [entreprises-publiques, epic]
+    voir_aussi: [entreprises-publiques, epic, convention-collective-sectorielle, statut-particulier]
     fr:
       terme: Régime conventionnel public
       definition: >

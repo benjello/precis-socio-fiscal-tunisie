@@ -53,3 +53,37 @@ est créée ; sinon ranger ces deux rapports en « Commun » (bibliographie part
 - Entrées dataset **dupliquées dans `precis/ar/remunerations_publiques/references.json`** (titres en langue d'origine, non traduits) en attendant le rapatriement Zotero + mapping `COLLECTION_TO_BOOK`.
 - `loi83-112` : URL jurisitetunisie (404) -> PDF JORT officiel `https://www.pist.tn/jort/1983/1983F/Jo08283.pdf`.
 - `loi89-9` : URL pm.gov.tn (404) -> PDF JORT officiel `https://www.pist.tn/jort/1989/1989F/Jo00989.pdf`.
+
+### Section A.5 — statuts spéciaux & caisses sociales (rémunérations publiques)
+
+Ajoutées à la main dans `precis/{fr,ar}/remunerations_publiques/references.json`
+(type CSL `legislation`, titres en français = langue d'origine, **dupliquées en AR non
+traduites**). Résolues au rendu (`quarto render`, aucun `[?]`). **Pas encore dans Zotero.**
+Même réserve `COLLECTION_TO_BOOK` que ci-dessus (livre `remunerations_publiques` non mappé →
+collection dédiée ou « Commun »).
+
+| Clé de citation | Référence | URL JORT | État |
+|---|---|---|---|
+| `loi67-29` | Loi n°67-29 du 14 juillet 1967, organisation judiciaire / CSM / statut de la magistrature | `https://www.pist.tn/jort/1967/1967F/Jo03067.pdf` (JORT n°30, vérifié HTTP 200) | OK |
+| `loi67-20` | Loi n°67-20 du 31 mai 1967, statut général des militaires | — | URL à compléter |
+| `loi82-70` | Loi n°82-70 du 6 août 1982, statut général des forces de sécurité intérieure | — | URL à compléter |
+| `decret-statut-caisses-2022` | Décret présidentiel, statut particulier des agents des organismes de sécurité sociale (CNSS, CNRPS, CNAM) | — | **numéro de décret + URL à confirmer** |
+
+#### TODO de vérification métadonnées (A.5)
+- `loi67-29` : date **14 juillet 1967** confirmée (mention « Fait à Tunis, le 14 juillet 1967 »
+  dans le JORT ; legislation-securite titre par erreur « 17 juillet ») ; cohérente avec `index.qmd`.
+- `loi67-20` : **numéro de JORT du 31 mai 1967 non confirmé** par les sources consultées
+  (legislation-securite n'expose pas le n° de JORT pour la loi originale). URL pist.tn à
+  ajouter une fois le n° de JORT établi — ne pas deviner (les PDF pist.tn renvoient HTTP 200
+  pour tous les numéros, ce qui ne prouve pas la présence de la loi).
+- `loi82-70` : idem, **numéro de JORT du 6 août 1982 non confirmé**.
+- `decret-statut-caisses-2022` : **numéro exact du décret NON confirmé**. Sources (businessnews,
+  La Presse, openedition) confirment seulement la **publication au JORT le 23 février 2022**.
+  Entrée créée avec date + titre prudent, sans numéro inventé. À retrouver sur le JORT pist.tn
+  du 23/02/2022 (ou n° voisin) ou sur legislation-securite.tn, puis compléter numéro + URL.
+
+### loi85-78 — URL JORT manquante (signalée par la note documentaire)
+- `loi85-78` (5 août 1985) : **URL JORT toujours absente** de `references.json`. Le n° de JORT
+  d'août 1985 n'a pas été confirmé par les sources consultées (legislation-securite, idaraty,
+  legal-doctrine n'exposent pas le n° de JORT ni de lien pist.tn). URL pist.tn à ajouter une
+  fois le n° de JORT établi (probable plage ~57-59/1985, **à vérifier — ne pas deviner**).

@@ -13,6 +13,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Caisse nationale de retraite et de prévoyance sociale | الصندوق الوطني للتقاعد والحيطة الاجتماعية | CNRPS |
 | Caisse nationale de sécurité sociale | الصندوق الوطني للضمان الاجتماعي | CNSS |
 | Contribution sociale de solidarité | المساهمة الاجتماعية التضامنية | CSS |
+| Convention collective sectorielle | الاتفاقية المشتركة القطاعية |  |
 | Cotisations sociales | المساهمات الاجتماعية |  |
 | Échelon | الدرجة |  |
 | Emploi public | التشغيل العمومي |  |
@@ -22,6 +23,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Établissement public à caractère non administratif | المؤسسة العمومية التي لا تكتسي صبغة إدارية | EPNA |
 | Fonction publique | الوظيفة العمومية |  |
 | Fonds de sécurité sociale | صناديق الضمان الاجتماعي |  |
+| Forces de sécurité intérieure | قوات الأمن الداخلي |  |
 | Grade | الرتبة |  |
 | Impôt sur le revenu des personnes physiques | الضريبة على دخل الأشخاص الطبيعيين | IRPP |
 | Masse salariale | كتلة الأجور |  |
@@ -32,6 +34,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Régime statutaire autonome | النظام الأساسي الخاص |  |
 | Salaire minimum interprofessionnel garanti | الأجر الأدنى المضمون لمختلف المهن | SMIG |
 | Secteur public | القطاع العام |  |
+| Statut particulier | النظام الأساسي الخصوصي |  |
 | Taux marginal | النسبة الحدية |  |
 | Traitement de base | الأجر الأساسي |  |
 | Valeur du point d'indice | قيمة النقطة الاستدلالية |  |
