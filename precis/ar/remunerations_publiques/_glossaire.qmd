@@ -1,28 +1,14 @@
-<!-- ملف مولَّد بواسطة scripts/build_glossary.py — لا تُحرِّره. المصدر: precis/glossaire.yml -->
+<!-- Fichier généré par scripts/build_glossary.py — ne pas éditer. Source : precis/glossaire.yml -->
 
-# المعجم {.unnumbered}
+# مسرد المصطلحات {.unnumbered}
 
-معجم ثنائي اللغة للمفاهيم الأساسية. يحيل كلّ مصطلح إلى مقابله الفرنسي (تصفّح عربي ⇄ فرنسي) لضمان الاتّساق المصطلحي بين نسختي الملخّص.
-
-## الأجر الأدنى المضمون لمختلف المهن (SMIG) {#g-smig}
-
-[Français → Salaire minimum interprofessionnel garanti](../../fr/remunerations_publiques/_glossaire.html#g-smig)
-
-الحدّ الأدنى القانوني للأجر بالساعة أو بالشهر المطبَّق على أجراء القطاعات غير الفلاحية.
-
-## الأجر الأساسي {#g-traitement-de-base}
-
-[Français → Traitement de base](../../fr/remunerations_publiques/_glossaire.html#g-traitement-de-base)
-
-الجزء الرئيسي من أجر العون العمومي، ويُحتسب بضرب رقمه الاستدلالي في قيمة النقطة الاستدلالية، قبل المنح والمكافآت.
-
-*انظر أيضًا :* [النظام الاستدلالي للتأجير](#g-regime-indiciaire), [قيمة النقطة الاستدلالية](#g-point-indice)
+مسرد ثنائي اللغة للمفاهيم الأساسية. يشير كل مصطلح إلى مكافئه الفرنسي (التنقل AR ⇄ FR) لضمان الاتساق المصطلحي بين نسختي الملخص.
 
 ## الإدارات العمومية {#g-administrations-publiques}
 
-[Français → Administrations publiques](../../fr/remunerations_publiques/_glossaire.html#g-administrations-publiques)
+[الفرنسية → Administrations publiques](../../fr/remunerations_publiques/_glossaire.html#g-administrations-publiques)
 
-قطاع فرعي في الحسابات الوطنية يضمّ الإدارة المركزية والإدارات المحلية وصناديق الضمان الاجتماعي، ويُموَّل أساسًا من الاقتطاعات الإجبارية.
+قطاع فرعي من الحسابات القومية (الحكومة العامة) يضم الإدارة المركزية والإدارات المحلية وصناديق الضمان الاجتماعي، ويتم تمويله أساسًا من الاقتطاعات الإجبارية.
 
 *مصدر التعريف :* [@sna2008]
 
@@ -30,139 +16,99 @@
 
 *المراجع :* [@sna2008] [@imfgfsm2014]
 
-## الاتفاقية المشتركة القطاعية {#g-convention-collective-sectorielle}
+## الوعاء الضريبي {#g-assiette-fiscale}
 
-[Français → Convention collective sectorielle](../../fr/remunerations_publiques/_glossaire.html#g-convention-collective-sectorielle)
+[الفرنسية → Assiette fiscale](../../fr/remunerations_publiques/_glossaire.html#g-assiette-fiscale)
 
-اتفاق متفاوَض عليه بين الأعراف والمنظمات النقابية، يضبط شروط الشغل والتأجير (تصنيف المواطن الشغلية والسلالم والمنح) لقطاع نشاط معيَّن. وفي القطاع العام غير الإداري، تُشكّل أساس النظام الاتفاقي (مجلة الشغل؛ القانون عدد 85-78).
+أساس احتساب الضريبة، أي المبلغ الذي يطبق عليه معدل الضريبة بعد الخصومات والتخفيضات.
 
-*انظر أيضًا :* [النظام الاتفاقي العمومي](#g-regime-conventionnel-public), [المنشآت العمومية](#g-entreprises-publiques), [المؤسسة العمومية ذات الصبغة الصناعية والتجارية](#g-epic)
-
-*المراجع :* [@loi85-78]
-
-## التشغيل العمومي {#g-emploi-public}
-
-[Français → Emploi public](../../fr/remunerations_publiques/_glossaire.html#g-emploi-public)
-
-مفهوم إحصائي يشمل الوظيفة العمومية وجزءًا من أعوان المؤسسات والمنشآت العمومية؛ وسيط بين الوظيفة العمومية والقطاع العام.
-
-*انظر أيضًا :* [الوظيفة العمومية](#g-fonction-publique), [القطاع العام](#g-secteur-public)
-
-## الدرجة {#g-echelon}
-
-[Français → Échelon](../../fr/remunerations_publiques/_glossaire.html#g-echelon)
-
-تقسيم فرعي للرتبة يعبّر عن الأقدمية؛ ويرفع الترقّي في الدرجة الرقمَ الاستدلالي وبالتالي الأجر الأساسي.
-
-*انظر أيضًا :* [الرتبة](#g-grade), [النظام الاستدلالي للتأجير](#g-regime-indiciaire)
-
-## الرتبة {#g-grade}
-
-[Français → Grade](../../fr/remunerations_publiques/_glossaire.html#g-grade)
-
-موقع العون في التدرّج الهرمي للسلك، يحدّد رقمه الاستدلالي ووظائفه؛ ويعبّر الترقّي في الرتبة عن ترقية.
-
-*انظر أيضًا :* [الدرجة](#g-echelon), [النظام الاستدلالي للتأجير](#g-regime-indiciaire)
-
-## صناديق الضمان الاجتماعي {#g-fonds-de-securite-sociale}
-
-[Français → Fonds de sécurité sociale](../../fr/remunerations_publiques/_glossaire.html#g-fonds-de-securite-sociale)
-
-قطاع فرعي من الإدارات العمومية (الحسابات الوطنية، SNA 2008 / GFSM 2014) يضمّ الوحدات التي تدير أنظمة الضمان الاجتماعي الإجبارية. وفي تونس، تُرتبط صناديق الضمان الاجتماعي (CNSS وCNRPS وCNAM) بهذا القطاع اقتصاديًا رغم كونها قانونيًا مؤسسات عمومية لا تكتسي صبغة إدارية.
-
-*مصدر التعريف :* [@sna2008]
-
-*انظر أيضًا :* [الإدارات العمومية](#g-administrations-publiques), [الصندوق الوطني للضمان الاجتماعي](#g-cnss), [الصندوق الوطني للتقاعد والحيطة الاجتماعية](#g-cnrps), [الصندوق الوطني للتأمين على المرض](#g-cnam)
-
-*المراجع :* [@sna2008] [@imfgfsm2014]
+*انظر أيضًا :* [الضريبة على دخل الأشخاص الطبيعيين](#g-irpp), [النسبة الحدية](#g-taux-marginal)
 
 ## الصندوق الوطني للتأمين على المرض (CNAM) {#g-cnam}
 
-[Français → Caisse nationale d'assurance maladie](../../fr/remunerations_publiques/_glossaire.html#g-cnam)
+[الفرنسية → Caisse nationale d'assurance maladie](../../fr/remunerations_publiques/_glossaire.html#g-cnam)
 
-هيكل يدير النظام الموحَّد للتأمين على المرض (أُحدث سنة 2004)؛ مؤسسة عمومية لا تكتسي صبغة إدارية تحت إشراف وزارة الشؤون الاجتماعية.
+هيئة تدير النظام الموحد للتأمين على المرض (أُنشئ عام 2004)؛ مؤسسة عمومية لا تكتسي صبغة إدارية تحت إشراف وزارة الشؤون الاجتماعية.
 
 *انظر أيضًا :* [الصندوق الوطني للضمان الاجتماعي](#g-cnss), [الصندوق الوطني للتقاعد والحيطة الاجتماعية](#g-cnrps)
 
 ## الصندوق الوطني للتقاعد والحيطة الاجتماعية (CNRPS) {#g-cnrps}
 
-[Français → Caisse nationale de retraite et de prévoyance sociale](../../fr/remunerations_publiques/_glossaire.html#g-cnrps)
+[الفرنسية → Caisse nationale de retraite et de prévoyance sociale](../../fr/remunerations_publiques/_glossaire.html#g-cnrps)
 
-هيكل يدير أنظمة التقاعد والحيطة الاجتماعية للقطاع العام؛ مؤسسة عمومية لا تكتسي صبغة إدارية تحت إشراف وزارة الشؤون الاجتماعية.
+هيئة تدير أنظمة التقاعد والحيطة الاجتماعية للقطاع العام؛ مؤسسة عمومية لا تكتسي صبغة إدارية تحت إشراف وزارة الشؤون الاجتماعية.
 
 *انظر أيضًا :* [الصندوق الوطني للضمان الاجتماعي](#g-cnss), [الصندوق الوطني للتأمين على المرض](#g-cnam), [المساهمات الاجتماعية](#g-cotisations-sociales)
 
 ## الصندوق الوطني للضمان الاجتماعي (CNSS) {#g-cnss}
 
-[Français → Caisse nationale de sécurité sociale](../../fr/remunerations_publiques/_glossaire.html#g-cnss)
+[الفرنسية → Caisse nationale de sécurité sociale](../../fr/remunerations_publiques/_glossaire.html#g-cnss)
 
-هيكل يدير أنظمة الضمان الاجتماعي لعمّال القطاع الخاص؛ مؤسسة عمومية لا تكتسي صبغة إدارية تحت إشراف وزارة الشؤون الاجتماعية.
+هيئة تدير أنظمة الضمان الاجتماعي لعمال القطاع الخاص؛ مؤسسة عمومية لا تكتسي صبغة إدارية تحت إشراف وزارة الشؤون الاجتماعية.
 
 *انظر أيضًا :* [الصندوق الوطني للتقاعد والحيطة الاجتماعية](#g-cnrps), [الصندوق الوطني للتأمين على المرض](#g-cnam), [المساهمات الاجتماعية](#g-cotisations-sociales)
 
-## الضريبة على دخل الأشخاص الطبيعيين (IRPP) {#g-irpp}
+## المساهمة الاجتماعية التضامنية (CSS) {#g-css}
 
-[Français → Impôt sur le revenu des personnes physiques](../../fr/remunerations_publiques/_glossaire.html#g-irpp)
+[الفرنسية → Contribution sociale de solidarité](../../fr/remunerations_publiques/_glossaire.html#g-css)
 
-ضريبة مباشرة تصاعدية على الدخل الصافي الجملي للأشخاص الطبيعيين، تُخصم من المورد على الأجور.
+اقتطاع إضافي على ضريبة الدخل، مخصص لتمويل أنظمة الضمان الاجتماعي.
 
-*انظر أيضًا :* [النسبة الحدية](#g-taux-marginal), [الوعاء الضريبي](#g-assiette-fiscale), [المساهمة الاجتماعية التضامنية](#g-css)
+*انظر أيضًا :* [الضريبة على دخل الأشخاص الطبيعيين](#g-irpp), [المساهمات الاجتماعية](#g-cotisations-sociales)
 
-## القطاع العام {#g-secteur-public}
+## الاتفاقية المشتركة القطاعية {#g-convention-collective-sectorielle}
 
-[Français → Secteur public](../../fr/remunerations_publiques/_glossaire.html#g-secteur-public)
+[الفرنسية → Convention collective sectorielle](../../fr/remunerations_publiques/_glossaire.html#g-convention-collective-sectorielle)
 
-مجموع المنظمات التي تسيطر عليها الدولة أو تملكها: الإدارات العمومية (الدولة، الجماعات المحلية، الضمان الاجتماعي) والمنشآت العمومية. مفهوم أوسع من الوظيفة العمومية ومن التشغيل العمومي.
+اتفاق يتم التفاوض عليه بين أرباب العمل والمنظمات النقابية، يحدد شروط التوظيف والأجور (تصنيف الوظائف، جداول الأجور، المنح) لقطاع نشاط معين. في القطاع العام غير الإداري، تشكل أساس النظام الاتفاقي (مجلة الشغل؛ القانون عدد 78-85).
 
-*انظر أيضًا :* [الوظيفة العمومية](#g-fonction-publique), [التشغيل العمومي](#g-emploi-public), [الإدارات العمومية](#g-administrations-publiques), [المنشآت العمومية](#g-entreprises-publiques)
+*انظر أيضًا :* [النظام الاتفاقي العمومي](#g-regime-conventionnel-public), [المنشآت العمومية](#g-entreprises-publiques), [المؤسسة العمومية ذات الصبغة الصناعية والتجارية](#g-epic)
 
-## قوات الأمن الداخلي {#g-forces-de-securite-interieure}
+*المراجع :* [@loi85-78]
 
-[Français → Forces de sécurité intérieure](../../fr/remunerations_publiques/_glossaire.html#g-forces-de-securite-interieure)
+## المساهمات الاجتماعية {#g-cotisations-sociales}
 
-الأسلاك المكلّفة بحفظ النظام والأمن العام (الأمن الوطني، الحرس الوطني، الحماية المدنية)، التي تتمتّع بنظام أساسي خاصّ مستقلّ عن النظام الأساسي العام للوظيفة العمومية (القانون عدد 82-70 المؤرّخ في 6 أوت 1982).
+[الفرنسية → Cotisations sociales](../../fr/remunerations_publiques/_glossaire.html#g-cotisations-sociales)
 
-*انظر أيضًا :* [النظام الأساسي الخاص](#g-regime-statutaire-autonome), [النظام الأساسي الخصوصي](#g-statut-particulier)
+اقتطاعات إجبارية تُفرض على الأجور، وتمول أنظمة الضمان الاجتماعي (التقاعد، المرض، المنافع العائلية).
 
-*المراجع :* [@loi82-70]
+*انظر أيضًا :* [الصندوق الوطني للضمان الاجتماعي](#g-cnss), [الصندوق الوطني للتقاعد والحيطة الاجتماعية](#g-cnrps), [الصندوق الوطني للتأمين على المرض](#g-cnam)
 
-## قيمة النقطة الاستدلالية {#g-point-indice}
+## الدرجة {#g-echelon}
 
-[Français → Valeur du point d'indice](../../fr/remunerations_publiques/_glossaire.html#g-point-indice)
+[الفرنسية → Échelon](../../fr/remunerations_publiques/_glossaire.html#g-echelon)
 
-المبلغ المالي المخصَّص للنقطة الاستدلالية؛ يُضرب في الرقم الاستدلالي للعون لتحديد الأجر الأساسي. وتُعدّ مراجعتها رهانًا محوريًا في المفاوضات الأجرية.
+تقسيم فرعي للرتبة يعكس الأقدمية؛ يؤدي الترقّي في الدرجة إلى زيادة المؤشر وبالتالي الأجر الأساسي.
 
-*انظر أيضًا :* [النظام الاستدلالي للتأجير](#g-regime-indiciaire), [الأجر الأساسي](#g-traitement-de-base)
+*انظر أيضًا :* [الرتبة](#g-grade), [النظام الاستدلالي للتأجير](#g-regime-indiciaire)
 
-## كتلة الأجور {#g-masse-salariale}
+## التشغيل العمومي {#g-emploi-public}
 
-[Français → Masse salariale](../../fr/remunerations_publiques/_glossaire.html#g-masse-salariale)
+[الفرنسية → Emploi public](../../fr/remunerations_publiques/_glossaire.html#g-emploi-public)
 
-مجموع الأجور المدفوعة للأعوان، بما في ذلك الأعباء الاجتماعية. يتوقّف قياسها بشكل وثيق على النطاق المعتمَد — الإدارة المركزية، أو الوظيفة العمومية، أو القطاع العام المُدمَج (الإدارة المركزية والجماعات المحلية والمنشآت العمومية وهياكل الضمان الاجتماعي) — وعلى المقام الذي تُنسب إليه: نسبة من الناتج المحلّي الإجمالي، أو من المداخيل، أو من نفقات الدولة. وفي تونس، لا يخضع للمتابعة المنتظمة سوى مجمَّع الإدارة المركزية؛ ولا يوجد مجمَّع مُدمَج موثَّق علنًا.
+مفهوم إحصائي يشمل الوظيفة العمومية وجزءًا من أعوان المؤسسات والمنشآت العمومية؛ وهو وسيط بين الوظيفة العمومية والقطاع العام.
 
-*انظر أيضًا :* [القطاع العام](#g-secteur-public), [الوظيفة العمومية](#g-fonction-publique), [الإدارات العمومية](#g-administrations-publiques), [صناديق الضمان الاجتماعي](#g-fonds-de-securite-sociale), [التشغيل العمومي](#g-emploi-public)
+*انظر أيضًا :* [الوظيفة العمومية](#g-fonction-publique), [القطاع العام](#g-secteur-public)
 
-*المراجع :* [@imf-tunisia-art4-2020] [@wb-tunisia-per-2020]
+## المنشآت العمومية {#g-entreprises-publiques}
 
-## المؤسسة العمومية التي لا تكتسي صبغة إدارية (EPNA) {#g-epna}
+[الفرنسية → Entreprises publiques](../../fr/remunerations_publiques/_glossaire.html#g-entreprises-publiques)
 
-[Français → Établissement public à caractère non administratif](../../fr/remunerations_publiques/_glossaire.html#g-epna)
-
-هيكل عمومي يتمتّع بالشخصية المعنوية واستقلالية التصرّف، يمارس نشاطًا فنّيًا أو اقتصاديًا أو اجتماعيًا؛ وتُعتبر بعض هذه المؤسسات، بمقتضى أمر، منشآت عمومية.
+قطاع فرعي من الحسابات القومية (الشركات العمومية) يضم الوحدات التي تسيطر عليها الدولة وتنتج سلعًا وخدمات سوقية؛ بالمعنى القانوني، هو النطاق المحدد بالقانون عدد 9-89.
 
 *مصدر التعريف :* [@loi89-9]
 
 *المصطلح الرسمي :* [@loi89-9]
 
-*انظر أيضًا :* [المؤسسة العمومية ذات الصبغة الإدارية](#g-epa), [المؤسسة العمومية ذات الصبغة الصناعية والتجارية](#g-epic), [المنشآت العمومية](#g-entreprises-publiques)
+*انظر أيضًا :* [الإدارات العمومية](#g-administrations-publiques), [المؤسسة العمومية التي لا تكتسي صبغة إدارية](#g-epna), [المؤسسة العمومية ذات الصبغة الصناعية والتجارية](#g-epic)
 
-*المراجع :* [@loi89-9]
+*المراجع :* [@loi89-9] [@sna2008]
 
 ## المؤسسة العمومية ذات الصبغة الإدارية (EPA) {#g-epa}
 
-[Français → Établissement public à caractère administratif](../../fr/remunerations_publiques/_glossaire.html#g-epa)
+[الفرنسية → Établissement public à caractère administratif](../../fr/remunerations_publiques/_glossaire.html#g-epa)
 
-هيكل عمومي يتمتّع بالشخصية المعنوية والاستقلال المالي، يمارس مهمّة إدارية؛ وينتمي أعوانه عمومًا إلى الوظيفة العمومية.
+هيئة عمومية تتمتع بالشخصية المعنوية والاستقلال المالي، تمارس مهمة إدارية؛ يخضع موظفوها عمومًا للوظيفة العمومية.
 
 *مصدر التعريف :* [@loi83-112]
 
@@ -174,9 +120,9 @@
 
 ## المؤسسة العمومية ذات الصبغة الصناعية والتجارية (EPIC) {#g-epic}
 
-[Français → Établissement public à caractère industriel et commercial](../../fr/remunerations_publiques/_glossaire.html#g-epic)
+[الفرنسية → Établissement public à caractère industriel et commercial](../../fr/remunerations_publiques/_glossaire.html#g-epic)
 
-مؤسسة عمومية تمارس نشاطًا صناعيًا أو تجاريًا، يخضع أعوانها للقانون عدد 85-78 لا للنظام الأساسي العام للوظيفة العمومية.
+مؤسسة عمومية تمارس نشاطًا صناعيًا أو تجاريًا، يخضع أعوانها للقانون عدد 78-85 وليس للنظام الأساسي العام للوظيفة العمومية.
 
 *مصدر التعريف :* [@loi85-78]
 
@@ -186,107 +132,25 @@
 
 *المراجع :* [@loi85-78]
 
-## المساهمات الاجتماعية {#g-cotisations-sociales}
+## المؤسسة العمومية التي لا تكتسي صبغة إدارية (EPNA) {#g-epna}
 
-[Français → Cotisations sociales](../../fr/remunerations_publiques/_glossaire.html#g-cotisations-sociales)
+[الفرنسية → Établissement public à caractère non administratif](../../fr/remunerations_publiques/_glossaire.html#g-epna)
 
-اقتطاعات إجبارية على الأجور، تموّل أنظمة الضمان الاجتماعي (التقاعد، المرض، المنح العائلية).
-
-*انظر أيضًا :* [الصندوق الوطني للضمان الاجتماعي](#g-cnss), [الصندوق الوطني للتقاعد والحيطة الاجتماعية](#g-cnrps), [الصندوق الوطني للتأمين على المرض](#g-cnam)
-
-## المساهمة الاجتماعية التضامنية (CSS) {#g-css}
-
-[Français → Contribution sociale de solidarité](../../fr/remunerations_publiques/_glossaire.html#g-css)
-
-اقتطاع إضافي على الضريبة على الدخل، مخصَّص لتمويل أنظمة الضمان الاجتماعي.
-
-*انظر أيضًا :* [الضريبة على دخل الأشخاص الطبيعيين](#g-irpp), [المساهمات الاجتماعية](#g-cotisations-sociales)
-
-## الملخّص الاجتماعي والجبائي {#g-precis-socio-fiscal}
-
-[Français → Précis socio-fiscal](../../fr/remunerations_publiques/_glossaire.html#g-precis-socio-fiscal)
-
-مُصنَّف توليفي يوثّق تطوّر التشريع الاجتماعي والجبائي التونسي منذ الاستقلال، في سياقه التاريخي والسياسي.
-
-## المنشآت العمومية {#g-entreprises-publiques}
-
-[Français → Entreprises publiques](../../fr/remunerations_publiques/_glossaire.html#g-entreprises-publiques)
-
-قطاع فرعي في الحسابات الوطنية يضمّ الوحدات التي تسيطر عليها الدولة وتنتج سلعًا وخدمات سوقية؛ وبالمعنى القانوني، نطاق يحدّده القانون عدد 89-9.
+هيئة عمومية تتمتع بالشخصية المعنوية والاستقلال في التصرف، تمارس نشاطًا فنيًا أو اقتصاديًا أو اجتماعيًا؛ تعتبر بعض المؤسسات العمومية التي لا تكتسي صبغة إدارية، بموجب مرسوم، منشآت عمومية.
 
 *مصدر التعريف :* [@loi89-9]
 
 *المصطلح الرسمي :* [@loi89-9]
 
-*انظر أيضًا :* [الإدارات العمومية](#g-administrations-publiques), [المؤسسة العمومية التي لا تكتسي صبغة إدارية](#g-epna), [المؤسسة العمومية ذات الصبغة الصناعية والتجارية](#g-epic)
-
-*المراجع :* [@loi89-9] [@sna2008]
-
-## النسبة الحدية {#g-taux-marginal}
-
-[Français → Taux marginal](../../fr/remunerations_publiques/_glossaire.html#g-taux-marginal)
-
-نسبة الضريبة المطبَّقة على آخر شريحة من الدخل؛ في جدول تصاعدي، تُطبَّق على الدينار الإضافي.
-
-*انظر أيضًا :* [الضريبة على دخل الأشخاص الطبيعيين](#g-irpp), [الوعاء الضريبي](#g-assiette-fiscale)
-
-## النظام الأساسي الخاص {#g-regime-statutaire-autonome}
-
-[Français → Régime statutaire autonome](../../fr/remunerations_publiques/_glossaire.html#g-regime-statutaire-autonome)
-
-نظام تأجير خاصّ بأسلاك تتمتّع بنظام أساسي خاصّ (القضاة، العسكريون، قوات الأمن الداخلي)، منفصل عن النظام الأساسي العام للوظيفة العمومية. ويخضع كلّ سلك لنصّ خاصّ به: القانون عدد 67-29 (القضاة)، والقانون عدد 67-20 (العسكريون)، والقانون عدد 82-70 (قوات الأمن الداخلي).
-
-*انظر أيضًا :* [النظام الاستدلالي للتأجير](#g-regime-indiciaire), [الوظيفة العمومية](#g-fonction-publique), [قوات الأمن الداخلي](#g-forces-de-securite-interieure), [النظام الأساسي الخصوصي](#g-statut-particulier)
-
-*المراجع :* [@loi67-29] [@loi67-20] [@loi82-70]
-
-## النظام الأساسي الخصوصي {#g-statut-particulier}
-
-[Français → Statut particulier](../../fr/remunerations_publiques/_glossaire.html#g-statut-particulier)
-
-نظام استثنائي يُطبَّق على صنف من الأعوان العموميين، يُضبَط بنصّ خاصّ (أمر في الغالب) خلافًا للنظام الأساسي العام للوظيفة العمومية (القانون عدد 83-112). ومن أمثلته النظام الأساسي الخصوصي لأعوان صناديق الضمان الاجتماعي (CNSS وCNRPS وCNAM) المعتمَد بأمر سنة 2022: نظام ذو طبيعة خاصّة، لا هو نظام أساسي عام ولا اتفاقية مشتركة عامة.
-
-*انظر أيضًا :* [الوظيفة العمومية](#g-fonction-publique), [النظام الأساسي الخاص](#g-regime-statutaire-autonome), [الصندوق الوطني للضمان الاجتماعي](#g-cnss), [الصندوق الوطني للتقاعد والحيطة الاجتماعية](#g-cnrps), [الصندوق الوطني للتأمين على المرض](#g-cnam)
-
-*المراجع :* [@loi83-112] [@decret-statut-caisses-2022]
-
-## النظام الاتفاقي العمومي {#g-regime-conventionnel-public}
-
-[Français → Régime conventionnel public](../../fr/remunerations_publiques/_glossaire.html#g-regime-conventionnel-public)
-
-نظام تأجير المنشآت العمومية غير المالية، يقوم على الاتفاقيات المشتركة والتفاوض الأجري وتصنيف المواطن الشغلية.
-
-*مصدر التعريف :* [@loi85-78]
-
-*انظر أيضًا :* [المنشآت العمومية](#g-entreprises-publiques), [المؤسسة العمومية ذات الصبغة الصناعية والتجارية](#g-epic), [الاتفاقية المشتركة القطاعية](#g-convention-collective-sectorielle), [النظام الأساسي الخصوصي](#g-statut-particulier)
-
-*المراجع :* [@loi85-78] [@loi89-9]
-
-## النظام الاستدلالي للتأجير {#g-regime-indiciaire}
-
-[Français → Régime indiciaire](../../fr/remunerations_publiques/_glossaire.html#g-regime-indiciaire)
-
-نظام تأجير يقوم على رتبة ودرجة يقابلهما رقم استدلالي يُحوَّل إلى أجر أساسي عبر قيمة النقطة الاستدلالية؛ وهو امتداد للنموذج الفرنسي للمسار المهني.
-
-*انظر أيضًا :* [قيمة النقطة الاستدلالية](#g-point-indice), [الأجر الأساسي](#g-traitement-de-base), [الرتبة](#g-grade), [الدرجة](#g-echelon), [الوظيفة العمومية](#g-fonction-publique)
-
-*المراجع :* [@loi83-112]
-
-## نظام السوق الموجَّه {#g-regime-marche-controle}
-
-[Français → Régime de marché contrôlé](../../fr/remunerations_publiques/_glossaire.html#g-regime-marche-controle)
-
-نظام تأجير المنشآت العمومية المالية وبعض الفروع، ذو استقلالية أجرية مرتفعة وأجور قريبة من القطاع الخاص تحت رقابة الدولة المساهمة.
-
-*انظر أيضًا :* [المنشآت العمومية](#g-entreprises-publiques)
+*انظر أيضًا :* [المؤسسة العمومية ذات الصبغة الإدارية](#g-epa), [المؤسسة العمومية ذات الصبغة الصناعية والتجارية](#g-epic), [المنشآت العمومية](#g-entreprises-publiques)
 
 *المراجع :* [@loi89-9]
 
 ## الوظيفة العمومية {#g-fonction-publique}
 
-[Français → Fonction publique](../../fr/remunerations_publiques/_glossaire.html#g-fonction-publique)
+[الفرنسية → Fonction publique](../../fr/remunerations_publiques/_glossaire.html#g-fonction-publique)
 
-بالمعنى الضيّق، مجموع أعوان الدولة والجماعات المحلية والمؤسسات العمومية ذات الصبغة الإدارية، الخاضعين للنظام الأساسي العام (القانون عدد 83-112).
+بالمعنى الضيق، هي مجموع أعوان الدولة والجماعات المحلية والمؤسسات العمومية ذات الصبغة الإدارية، الذين يخضعون للنظام الأساسي العام (القانون عدد 112-83).
 
 *مصدر التعريف :* [@loi83-112, art. 1]
 
@@ -296,10 +160,146 @@
 
 *المراجع :* [@loi83-112]
 
-## الوعاء الضريبي {#g-assiette-fiscale}
+## صناديق الضمان الاجتماعي {#g-fonds-de-securite-sociale}
 
-[Français → Assiette fiscale](../../fr/remunerations_publiques/_glossaire.html#g-assiette-fiscale)
+[الفرنسية → Fonds de sécurité sociale](../../fr/remunerations_publiques/_glossaire.html#g-fonds-de-securite-sociale)
 
-قاعدة احتساب الضريبة، أي المبلغ الذي تُطبَّق عليه نسبة الضريبة بعد الطرحات والتخفيضات.
+قطاع فرعي من الإدارات العمومية (الحسابات القومية، نظام الحسابات القومية 2008 / دليل إحصاءات مالية الحكومة 2014) يضم الوحدات التي تدير أنظمة الضمان الاجتماعي الإجباري. في تونس، ترتبط الصناديق الاجتماعية (الصندوق الوطني للضمان الاجتماعي، الصندوق الوطني للتقاعد والحيطة الاجتماعية، الصندوق الوطني للتأمين على المرض) به اقتصاديًا رغم أنها قانونيًا مؤسسات عمومية لا تكتسي صبغة إدارية.
 
-*انظر أيضًا :* [الضريبة على دخل الأشخاص الطبيعيين](#g-irpp), [النسبة الحدية](#g-taux-marginal)
+*مصدر التعريف :* [@sna2008]
+
+*انظر أيضًا :* [الإدارات العمومية](#g-administrations-publiques), [الصندوق الوطني للضمان الاجتماعي](#g-cnss), [الصندوق الوطني للتقاعد والحيطة الاجتماعية](#g-cnrps), [الصندوق الوطني للتأمين على المرض](#g-cnam)
+
+*المراجع :* [@sna2008] [@imfgfsm2014]
+
+## قوات الأمن الداخلي {#g-forces-de-securite-interieure}
+
+[الفرنسية → Forces de sécurité intérieure](../../fr/remunerations_publiques/_glossaire.html#g-forces-de-securite-interieure)
+
+هيئات مكلفة بحفظ النظام والأمن العام (الأمن الوطني، الحرس الوطني، الحماية المدنية)، تتمتع بنظام أساسي خاص يختلف عن النظام الأساسي العام للوظيفة العمومية (القانون عدد 70-82 المؤرخ في 6 أوت 1982).
+
+*انظر أيضًا :* [النظام الأساسي الخاص](#g-regime-statutaire-autonome), [النظام الأساسي الخصوصي](#g-statut-particulier)
+
+*المراجع :* [@loi82-70]
+
+## الرتبة {#g-grade}
+
+[الفرنسية → Grade](../../fr/remunerations_publiques/_glossaire.html#g-grade)
+
+موقع العون في التسلسل الهرمي لهيئة، يحدد مؤشره ومهامه؛ يعكس الترقّي في الرتبة ترقية وظيفية.
+
+*انظر أيضًا :* [الدرجة](#g-echelon), [النظام الاستدلالي للتأجير](#g-regime-indiciaire)
+
+## الضريبة على دخل الأشخاص الطبيعيين (IRPP) {#g-irpp}
+
+[الفرنسية → Impôt sur le revenu des personnes physiques](../../fr/remunerations_publiques/_glossaire.html#g-irpp)
+
+ضريبة مباشرة وتصاعدية تفرض على الدخل الصافي الإجمالي للأشخاص الطبيعيين، وتُقتطع من المنبع على الأجور.
+
+*انظر أيضًا :* [النسبة الحدية](#g-taux-marginal), [الوعاء الضريبي](#g-assiette-fiscale), [المساهمة الاجتماعية التضامنية](#g-css)
+
+## كتلة الأجور {#g-masse-salariale}
+
+[الفرنسية → Masse salariale](../../fr/remunerations_publiques/_glossaire.html#g-masse-salariale)
+
+إجمالي الأجور المدفوعة للأعوان، بما في ذلك الأعباء الاجتماعية. يعتمد قياسها بشكل وثيق على النطاق المعتمد — الإدارة المركزية، الوظيفة العمومية، أو القطاع العام الموحد (الإدارة المركزية، الجماعات المحلية، المنشآت العمومية وهيئات الضمان الاجتماعي) — وعلى المقام الذي تُنسب إليه: % من الناتج المحلي الإجمالي، % من الإيرادات أو % من نفقات الدولة. في تونس، لا يتم تتبع سوى مجموع الإدارة المركزية بانتظام؛ ولا يوجد أي مجموع موحد موثق علنًا.
+
+*انظر أيضًا :* [القطاع العام](#g-secteur-public), [الوظيفة العمومية](#g-fonction-publique), [الإدارات العمومية](#g-administrations-publiques), [صناديق الضمان الاجتماعي](#g-fonds-de-securite-sociale), [التشغيل العمومي](#g-emploi-public)
+
+*المراجع :* [@imf-tunisia-art4-2020] [@wb-tunisia-per-2020]
+
+## الملخّص الاجتماعي والجبائي {#g-precis-socio-fiscal}
+
+[الفرنسية → Précis socio-fiscal](../../fr/remunerations_publiques/_glossaire.html#g-precis-socio-fiscal)
+
+مؤلف تركيبي يوثق تطور التشريعات الاجتماعية والجبائية التونسية منذ الاستقلال، في سياقها التاريخي والسياسي.
+
+## النظام الاتفاقي العمومي {#g-regime-conventionnel-public}
+
+[الفرنسية → Régime conventionnel public](../../fr/remunerations_publiques/_glossaire.html#g-regime-conventionnel-public)
+
+نظام تأجير المنشآت العمومية غير المالية، يقوم على الاتفاقيات المشتركة، التفاوض حول الأجور، وتصنيف الوظائف.
+
+*مصدر التعريف :* [@loi85-78]
+
+*انظر أيضًا :* [المنشآت العمومية](#g-entreprises-publiques), [المؤسسة العمومية ذات الصبغة الصناعية والتجارية](#g-epic), [الاتفاقية المشتركة القطاعية](#g-convention-collective-sectorielle), [النظام الأساسي الخصوصي](#g-statut-particulier)
+
+*المراجع :* [@loi85-78] [@loi89-9]
+
+## نظام السوق الموجَّه {#g-regime-marche-controle}
+
+[الفرنسية → Régime de marché contrôlé](../../fr/remunerations_publiques/_glossaire.html#g-regime-marche-controle)
+
+نظام تأجير المنشآت العمومية المالية وبعض الفروع، يتمتع باستقلالية كبيرة في تحديد الأجور، مع أجور قريبة من القطاع الخاص تحت رقابة الدولة المساهمة.
+
+*انظر أيضًا :* [المنشآت العمومية](#g-entreprises-publiques)
+
+*المراجع :* [@loi89-9]
+
+## النظام الاستدلالي للتأجير {#g-regime-indiciaire}
+
+[الفرنسية → Régime indiciaire](../../fr/remunerations_publiques/_glossaire.html#g-regime-indiciaire)
+
+نظام تأجير يقوم على الرتبة والدرجة التي يقابلها مؤشر، يتم تحويله إلى أجر أساسي بقيمة النقطة الاستدلالية؛ وهو وريث النموذج الفرنسي للمسار المهني.
+
+*انظر أيضًا :* [قيمة النقطة الاستدلالية](#g-point-indice), [الأجر الأساسي](#g-traitement-de-base), [الرتبة](#g-grade), [الدرجة](#g-echelon), [الوظيفة العمومية](#g-fonction-publique)
+
+*المراجع :* [@loi83-112]
+
+## النظام الأساسي الخاص {#g-regime-statutaire-autonome}
+
+[الفرنسية → Régime statutaire autonome](../../fr/remunerations_publiques/_glossaire.html#g-regime-statutaire-autonome)
+
+نظام تأجير خاص بهيئات تتمتع بنظام أساسي خاص (القضاة، العسكريون، قوات الأمن الداخلي)، منفصل عن النظام الأساسي المشترك للوظيفة العمومية. تخضع كل هيئة لنص خاص بها: القانون عدد 29-67 (القضاة)، القانون عدد 20-67 (العسكريون)، القانون عدد 70-82 (قوات الأمن الداخلي).
+
+*انظر أيضًا :* [النظام الاستدلالي للتأجير](#g-regime-indiciaire), [الوظيفة العمومية](#g-fonction-publique), [قوات الأمن الداخلي](#g-forces-de-securite-interieure), [النظام الأساسي الخصوصي](#g-statut-particulier)
+
+*المراجع :* [@loi67-29] [@loi67-20] [@loi82-70]
+
+## الأجر الأدنى المضمون لمختلف المهن (SMIG) {#g-smig}
+
+[الفرنسية → Salaire minimum interprofessionnel garanti](../../fr/remunerations_publiques/_glossaire.html#g-smig)
+
+الحد الأدنى القانوني للأجر بالساعة أو بالشهر المطبق على الأجراء في القطاعات غير الفلاحية.
+
+## القطاع العام {#g-secteur-public}
+
+[الفرنسية → Secteur public](../../fr/remunerations_publiques/_glossaire.html#g-secteur-public)
+
+مجموع المنظمات التي تسيطر عليها الدولة أو تمتلكها: الإدارات العمومية (الدولة، الجماعات المحلية، الضمان الاجتماعي) والمنشآت العمومية. مفهوم أوسع من الوظيفة العمومية والتشغيل العمومي.
+
+*انظر أيضًا :* [الوظيفة العمومية](#g-fonction-publique), [التشغيل العمومي](#g-emploi-public), [الإدارات العمومية](#g-administrations-publiques), [المنشآت العمومية](#g-entreprises-publiques)
+
+## النظام الأساسي الخصوصي {#g-statut-particulier}
+
+[الفرنسية → Statut particulier](../../fr/remunerations_publiques/_glossaire.html#g-statut-particulier)
+
+نظام أساسي استثنائي ينطبق على فئة من الأعوان العموميين، يحدد بنص خاص (غالبًا مرسوم) على عكس النظام الأساسي العام للوظيفة العمومية (القانون عدد 112-83). النظام الأساسي الخصوصي لأعوان الصناديق الاجتماعية (الصندوق الوطني للضمان الاجتماعي، الصندوق الوطني للتقاعد والحيطة الاجتماعية، الصندوق الوطني للتأمين على المرض)، الذي اعتمد بمرسوم سنة 2022، هو مثال على ذلك: نظام خاص بذاته، ليس نظامًا أساسيًا عامًا ولا اتفاقية مشتركة للقانون العام.
+
+*انظر أيضًا :* [الوظيفة العمومية](#g-fonction-publique), [النظام الأساسي الخاص](#g-regime-statutaire-autonome), [الصندوق الوطني للضمان الاجتماعي](#g-cnss), [الصندوق الوطني للتقاعد والحيطة الاجتماعية](#g-cnrps), [الصندوق الوطني للتأمين على المرض](#g-cnam)
+
+*المراجع :* [@loi83-112] [@decret-statut-caisses-2022]
+
+## النسبة الحدية {#g-taux-marginal}
+
+[الفرنسية → Taux marginal](../../fr/remunerations_publiques/_glossaire.html#g-taux-marginal)
+
+معدل الضريبة المطبق على الشريحة الأخيرة من الدخل؛ في جدول ضريبي تصاعدي، يطبق على اليورو (أو الدينار) الإضافي.
+
+*انظر أيضًا :* [الضريبة على دخل الأشخاص الطبيعيين](#g-irpp), [الوعاء الضريبي](#g-assiette-fiscale)
+
+## الأجر الأساسي {#g-traitement-de-base}
+
+[الفرنسية → Traitement de base](../../fr/remunerations_publiques/_glossaire.html#g-traitement-de-base)
+
+الجزء الرئيسي من أجر العون العمومي، يتم الحصول عليه بضرب مؤشره في قيمة النقطة الاستدلالية، قبل المنح والعلاوات.
+
+*انظر أيضًا :* [النظام الاستدلالي للتأجير](#g-regime-indiciaire), [قيمة النقطة الاستدلالية](#g-point-indice)
+
+## قيمة النقطة الاستدلالية {#g-point-indice}
+
+[الفرنسية → Valeur du point d'indice](../../fr/remunerations_publiques/_glossaire.html#g-point-indice)
+
+المبلغ المالي المخصص لنقطة استدلالية؛ بضربه في مؤشر العون، يحدد الأجر الأساسي. تعتبر إعادة تقييمها قضية محورية في المفاوضات حول الأجور.
+
+*انظر أيضًا :* [النظام الاستدلالي للتأجير](#g-regime-indiciaire), [الأجر الأساسي](#g-traitement-de-base)

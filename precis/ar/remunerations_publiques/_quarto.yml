@@ -3,16 +3,21 @@ project:
   output-dir: public
 
 lang: ar
+dir: rtl
 
 book:
   title: "الأجور في القطاع العام"
-  author: "Mahdi Ben Jelloul"
+  author: "مهدي بن جلول"
   repo-url: https://github.com/benjello/precis-socio-fiscal-tunisie/
   repo-subdir: precis/ar/remunerations_publiques
   repo-branch: master
   repo-actions: [edit, issue]
   chapters:
     - index.qmd
+    - _regime_indiciaire.qmd
+    - _regime_statutaire_autonome.qmd
+    - _regime_conventionnel.qmd
+    - _regime_marche_controle.qmd
   appendices:
     - _glossaire.qmd
     - _references.qmd

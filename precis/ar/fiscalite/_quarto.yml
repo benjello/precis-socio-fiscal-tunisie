@@ -6,10 +6,10 @@ lang: ar
 dir: rtl
 
 book:
-  title: "الجباية"
-  author: "Mahdi Ben Jelloul"
+  title: "الجبائية"
+  author: "مهدي بنجلول"
   repo-url: https://github.com/benjello/precis-socio-fiscal-tunisie/
-  repo-subdir: precis/ar/fiscalite
+  repo-subdir: precis/fr/fiscalite
   repo-branch: master
   repo-actions: [edit, issue]
   chapters:
