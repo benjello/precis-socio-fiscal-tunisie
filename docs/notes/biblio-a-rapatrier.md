@@ -152,3 +152,41 @@ correspondant (`citation-key` en « Extra »). Items concernés : decret-97-1832
 decret-2007-268, decret-99-12, loi2017-66-lf2018, loi85-78, loi67-20, loi82-70,
 decret-statut-caisses-2022 (n°2022-76), loi85-12 (livre `remunerations_publiques`) ;
 loi-irpp-is-1989, loi-amen-social-2019 (partagé « Commun »).
+
+### Règle URL JORT par langue — FR = `pdf_fr`, AR = `pdf_ar`
+Pour toute entrée CSL `legislation` :
+- `references.json` **FR** → URL = `https://www.pist.tn` + `pdf_fr` (dossier `…F`, préfixe `Jo`).
+- `references.json` **AR** → URL = `https://www.pist.tn` + `pdf_ar` **du même enregistrement**
+  de `PDFs-legislation-tunisie/jort_cache.db` (dossier `…A`, préfixe `Ja`). L'URL AR est **lue
+  dans le champ `pdf_ar`**, jamais dérivée par substitution `Jo→Ja`/`F→A`.
+
+#### Correction AR (10/06/2026) — entrées AR repointées du JORT FR vers le JORT AR
+Méthode : enregistrement retrouvé dans `jort_cache.db` par `pdf_fr` (= URL FR actuelle, sans
+`https://www.pist.tn`), puis lecture du champ `pdf_ar`. Toutes les valeurs `pdf_ar` étaient
+non nulles.
+
+`precis/ar/references.json` :
+- `loi-irpp-is-1989` → `https://www.pist.tn/jort/1989/1989A/Ja08889.pdf`
+- `loi-amen-social-2019` → `https://www.pist.tn/jort/2019/2019A/Ja0112019.pdf`
+  (record `pdf_fr` NULL : retrouvé par numéro+type+date = Loi organique n°2019-10 du 30/01/2019,
+  JORT n°11/2019 ; `pdf_ar` présent. **NB** : l'URL **FR** de cette entrée reste *dérivée du motif*
+  et **à confirmer** — le record n'a pas de `pdf_fr` dans la base.)
+
+`precis/ar/remunerations_publiques/references.json` (13 entrées) :
+- `decret-97-1832` → `.../1997/1997A/Ja07697.pdf`
+- `decret-2007-267` → `.../2007/2007A/Ja0142007.pdf`
+- `decret-2007-268` → `.../2007/2007A/Ja0142007.pdf`
+- `decret-99-12` → `.../1999/1999A/Ja00499.pdf`
+- `loi85-12` → `.../1985/1985A/Ja02085.pdf`
+- `loi2017-66-lf2018` → `.../2017/2017A/Ja1012017.pdf`
+- `loi83-112` → `.../1983/1983A/Ja08283.pdf`
+- `loi85-78` → `.../1985/1985A/Ja05885.pdf`
+- `loi89-9` → `.../1989/1989A/Ja00989.pdf`
+- `loi67-29` → `.../1967/1967A/Ja03067.pdf`
+- `loi67-20` → `.../1967/1967A/Ja02467.pdf`
+- `loi82-70` → `.../1982/1982A/Ja05482.pdf`
+- `decret-statut-caisses-2022` → `.../2022/2022A/Ja0202022.pdf`
+
+Aucune entrée AR laissée sans URL (tous les `pdf_ar` présents). JSON AR valides ; rendu FR du
+livre `remunerations_publiques` OK (0 `[?]`). Au rapatriement Zotero, les URL **AR** devront être
+portées dans le champ language-specific approprié (à arbitrer selon le modèle Zotero retenu).
