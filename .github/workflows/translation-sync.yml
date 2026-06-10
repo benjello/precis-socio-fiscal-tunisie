@@ -17,12 +17,16 @@ on:
       - 'precis/ar/**/*.qmd'
       - 'precis/ar/**/_quarto.yml'
       - 'CHANGELOG.md'
+  workflow_dispatch:
+    # Re-synchro manuelle : retraduit intégralement tous les .qmd FR vers l'AR.
+    # Utile quand un sync a échoué (ex. 503 Gemini) sans nouveau commit FR.
 
 jobs:
   translate:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
@@ -36,14 +40,19 @@ jobs:
       - name: Get changed files
         id: changed-files
         run: |
-          if [ "${{ github.event_name }}" == "pull_request" ]; then
-            BASE_SHA=${{ github.event.pull_request.base.sha }}
-            HEAD_SHA=${{ github.event.pull_request.head.sha }}
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            # Re-synchro totale : tous les .qmd / _quarto.yml FR.
+            CHANGED=$(git ls-files | grep -E '^precis/fr/.*\.(qmd|yml)$' | tr '\n' ' ' || true)
           else
-            BASE_SHA=${{ github.event.before }}
-            HEAD_SHA=${{ github.sha }}
+            if [ "${{ github.event_name }}" == "pull_request" ]; then
+              BASE_SHA=${{ github.event.pull_request.base.sha }}
+              HEAD_SHA=${{ github.event.pull_request.head.sha }}
+            else
+              BASE_SHA=${{ github.event.before }}
+              HEAD_SHA=${{ github.sha }}
+            fi
+            CHANGED=$(git diff --name-only $BASE_SHA $HEAD_SHA | grep -E 'precis/(fr|ar)/.*\.(qmd|yml)$|^CHANGELOG\.md$' | tr '\n' ' ' || true)
           fi
-          CHANGED=$(git diff --name-only $BASE_SHA $HEAD_SHA | grep -E 'precis/(fr|ar)/.*\.(qmd|yml)$|^CHANGELOG\.md$' | tr '\n' ' ' || true)
           echo "files=$CHANGED" >> $GITHUB_OUTPUT
 
       - name: Run translation script
@@ -51,7 +60,11 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          if [ "${{ github.event_name }}" == "pull_request" ]; then
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            # base == head → diff vide → le script fait une traduction complète.
+            BASE_SHA=${{ github.sha }}
+            HEAD_SHA=${{ github.sha }}
+          elif [ "${{ github.event_name }}" == "pull_request" ]; then
             BASE_SHA=${{ github.event.pull_request.base.sha }}
             HEAD_SHA=${{ github.event.pull_request.head.sha }}
           else
@@ -61,18 +74,37 @@ jobs:
           echo "Translating files: ${{ steps.changed-files.outputs.files }}"
           uv run --with google-genai python scripts/translate_sync.py $BASE_SHA $HEAD_SHA ${{ steps.changed-files.outputs.files }}
 
-      - name: Commit and Push changes
+      - name: Open PR with translation changes
         if: steps.changed-files.outputs.files != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add precis/
           git add CHANGELOG_ar.md 2>/dev/null || true
-          
-          # Vérifie s'il y a de nouveaux fichiers ou des modifications à commiter
-          if ! git diff --staged --quiet; then
-            git commit -m "Auto-translate sync (fr <-> ar) [skip ci]"
-            git push
-          else
+
+          # Rien à propager → on s'arrête proprement.
+          if git diff --staged --quiet; then
             echo "No translation changes to commit."
+            exit 0
+          fi
+
+          # `master` est une branche protégée (require PR) : on ne pousse pas en
+          # direct. On dépose la traduction sur une branche dédiée et on ouvre une
+          # PR. Une PR créée via GITHUB_TOKEN ne re-déclenche aucun workflow
+          # (pas de boucle de traduction) ; le merge humain déploie la version AR.
+          BRANCH="auto-translate/${{ github.sha }}"
+          git checkout -b "$BRANCH"
+          git commit -m "Auto-translate sync (fr -> ar) [skip ci]"
+          git push -f origin "$BRANCH"
+
+          if gh pr view "$BRANCH" --json number >/dev/null 2>&1; then
+            echo "PR déjà ouverte pour $BRANCH."
+          else
+            gh pr create --base master --head "$BRANCH" \
+              --title "Auto-translate sync (AR) — ${{ github.sha }}" \
+              --body "Synchronisation automatique FR→AR générée par \`translation-sync\` à partir de ${{ github.sha }}.
+
+          \`master\` étant protégée (require PR), la traduction passe par cette PR. **Merge-la pour déployer la version arabe** ; aucun workflow n'a été re-déclenché par sa création."
           fi
