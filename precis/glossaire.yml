@@ -203,21 +203,29 @@ entries:
   - id: regime-indiciaire
     acronyme: null
     statut: provisoire
-    references: [loi83-112]
-    voir_aussi: [point-indice, traitement-de-base, grade, echelon, fonction-publique]
+    references: [loi83-112, decret-97-1832, decret-2007-268]
+    voir_aussi: [grille-des-salaires, traitement-de-base, point-indice, grade, echelon, fonction-publique]
     fr:
       terme: Régime indiciaire
       definition: >
-        Régime de rémunération fondé sur un grade et un échelon auxquels
-        correspond un indice, converti en traitement de base par la valeur du
-        point d'indice ; héritier du modèle français de carrière.
+        Régime de rémunération de la fonction publique, des collectivités
+        locales et d'une partie des établissements publics à caractère
+        administratif, fondé sur un grade et un échelon. En droit positif
+        tunisien, à chaque couple grade × échelon correspond un traitement de
+        base mensuel fixé directement en dinars par les grilles annexées aux
+        décrets (décret n°97-1832, décret n°2007-268) ; le « point d'indice »,
+        hérité du modèle français de carrière, subsiste dans le vocabulaire
+        mais n'opère pas comme paramètre multiplicateur.
       synonymes: []
     ar:
       terme: النظام الاستدلالي للتأجير
       definition: >
-        نظام تأجير يقوم على رتبة ودرجة يقابلهما رقم استدلالي يُحوَّل إلى أجر
-        أساسي عبر قيمة النقطة الاستدلالية؛ وهو امتداد للنموذج الفرنسي للمسار
-        المهني.
+        نظام تأجير الوظيفة العمومية والجماعات المحلية وجزء من المؤسسات العمومية
+        ذات الصبغة الإدارية، يقوم على رتبة ودرجة. وفي القانون الوضعي التونسي،
+        يقابل كلَّ ثنائي رتبة × درجة مرتبٌ أساسي شهري محدَّد مباشرة بالدينار في
+        الشبكات المُلحقة بالأوامر (الأمر عدد 97-1832 والأمر عدد 2007-268)؛ أمّا
+        «النقطة الاستدلالية» الموروثة عن النموذج الفرنسي للمسار المهني فلا تزال
+        قائمة في المصطلحات لكنّها لا تعمل كمُعامِل ضربٍ.
       synonymes: []
 
   - id: regime-statutaire-autonome
@@ -354,76 +362,234 @@ entries:
   - id: point-indice
     acronyme: null
     statut: provisoire
-    references: []
-    voir_aussi: [regime-indiciaire, traitement-de-base]
+    references: [decret-2007-268]
+    voir_aussi: [regime-indiciaire, traitement-de-base, grille-des-salaires]
     fr:
       terme: Valeur du point d'indice
       definition: >
-        Montant monétaire attribué à un point d'indice ; multiplié par l'indice
-        de l'agent, il détermine le traitement de base. Sa revalorisation est un
-        enjeu central des négociations salariales.
+        Notion héritée du modèle français de carrière, NON OPÉRANTE en droit
+        positif tunisien actuel. À la différence du système français, aucun
+        texte en vigueur ne publie de « valeur du point » qui, multipliée par
+        un indice, déterminerait le traitement de base : ce sont les grilles
+        annexées aux décrets qui fixent les montants directement en dinars
+        (cf. décret n°2007-268, art. 2 bis). Le terme subsiste dans le
+        vocabulaire et dans certains décrets de classement.
       synonymes: [point d'indice]
     ar:
       terme: قيمة النقطة الاستدلالية
       definition: >
-        المبلغ المالي المخصَّص للنقطة الاستدلالية؛ يُضرب في الرقم الاستدلالي
-        للعون لتحديد الأجر الأساسي. وتُعدّ مراجعتها رهانًا محوريًا في المفاوضات
-        الأجرية.
+        مفهوم موروث عن النموذج الفرنسي للمسار المهني، غير معمولٍ به في القانون
+        الوضعي التونسي الحالي. فخلافًا للنظام الفرنسي، لا ينشر أيّ نصّ ساري
+        المفعول «قيمةً للنقطة» تُضرب في رقم استدلالي لتحديد المرتب الأساسي: بل
+        إنّ الشبكات المُلحقة بالأوامر هي التي تضبط المبالغ مباشرة بالدينار
+        (انظر الأمر عدد 2007-268، الفصل 2 مكرّر). ولا يزال المصطلح قائمًا في
+        المصطلحات وفي بعض أوامر التصنيف.
       synonymes: []
 
   - id: traitement-de-base
     acronyme: null
-    statut: provisoire
-    references: []
-    voir_aussi: [regime-indiciaire, point-indice]
+    statut: valide
+    references: [decret-97-1832, decret-2007-268]
+    source_definition: {ref: decret-2007-268, locator: "art. 2 bis"}
+    source_traduction: {ref: decret-2007-268}
+    voir_aussi: [regime-indiciaire, grille-des-salaires, point-indice, grade, echelon]
     fr:
       terme: Traitement de base
       definition: >
-        Part principale de la rémunération d'un agent public, obtenue en
-        multipliant son indice par la valeur du point d'indice, avant indemnités
-        et primes.
+        Part principale de la rémunération d'un agent public du régime
+        indiciaire, avant indemnités et primes. En droit positif tunisien, son
+        montant mensuel est fixé directement en dinars, pour chaque couple
+        grade × échelon, par les grilles annexées aux décrets (décret
+        n°97-1832, puis décret n°2007-268, art. 2 bis), et non calculé à partir
+        d'une valeur du point d'indice.
       synonymes: []
     ar:
-      terme: الأجر الأساسي
+      terme: المرتب الأساسي
       definition: >
-        الجزء الرئيسي من أجر العون العمومي، ويُحتسب بضرب رقمه الاستدلالي في قيمة
-        النقطة الاستدلالية، قبل المنح والمكافآت.
-      synonymes: []
+        الجزء الرئيسي من أجر العون العمومي الخاضع للنظام الاستدلالي، قبل المنح
+        والمكافآت. وفي القانون الوضعي التونسي، يُضبَط مبلغه الشهري مباشرة
+        بالدينار، لكلّ ثنائي رتبة × درجة، في الشبكات المُلحقة بالأوامر (الأمر
+        عدد 97-1832 ثمّ الأمر عدد 2007-268، الفصل 2 مكرّر)، ولا يُحتسب انطلاقًا
+        من قيمة نقطة استدلالية.
+      synonymes: [الأجر الأساسي]
 
   - id: grade
     acronyme: null
-    statut: provisoire
-    references: []
-    voir_aussi: [echelon, regime-indiciaire]
+    statut: valide
+    references: [decret-99-12]
+    source_definition: {ref: decret-99-12}
+    voir_aussi: [echelon, categorie-de-grade, regime-indiciaire, traitement-de-base]
     fr:
       terme: Grade
       definition: >
-        Position d'un agent dans la hiérarchie d'un corps, conditionnant son
-        indice et ses fonctions ; l'avancement de grade traduit une promotion.
+        Position d'un agent dans la hiérarchie d'un corps, déterminant ses
+        fonctions et, combinée à l'échelon, son traitement de base ; les grades
+        sont organisés en catégories par le décret n°99-12. L'avancement de
+        grade traduit une promotion.
       synonymes: []
     ar:
       terme: الرتبة
       definition: >
-        موقع العون في التدرّج الهرمي للسلك، يحدّد رقمه الاستدلالي ووظائفه؛
+        موقع العون في التدرّج الهرمي للسلك، يحدّد وظائفه ويحدّد، مقترنًا
+        بالدرجة، مرتبه الأساسي؛ وتُنظَّم الرتب في أصناف بمقتضى الأمر عدد 99-12.
         ويعبّر الترقّي في الرتبة عن ترقية.
       synonymes: []
 
   - id: echelon
     acronyme: null
-    statut: provisoire
-    references: []
-    voir_aussi: [grade, regime-indiciaire]
+    statut: valide
+    references: [decret-2007-268]
+    source_definition: {ref: decret-2007-268}
+    voir_aussi: [grade, regime-indiciaire, traitement-de-base]
     fr:
       terme: Échelon
       definition: >
-        Subdivision d'un grade traduisant l'ancienneté ; l'avancement d'échelon
-        augmente l'indice et donc le traitement de base.
+        Subdivision d'un grade traduisant l'ancienneté ; l'avancement
+        d'échelon, par ancienneté, fait progresser l'agent dans son grade et
+        relève le traitement de base correspondant au couple grade × échelon
+        dans la grille.
       synonymes: []
     ar:
       terme: الدرجة
       definition: >
-        تقسيم فرعي للرتبة يعبّر عن الأقدمية؛ ويرفع الترقّي في الدرجة الرقمَ
-        الاستدلالي وبالتالي الأجر الأساسي.
+        تقسيم فرعي للرتبة يعبّر عن الأقدمية؛ ويُمكّن الترقّي في الدرجة، حسب
+        الأقدمية، العونَ من التقدّم داخل رتبته ويرفع المرتب الأساسي المقابل
+        لثنائي رتبة × درجة في الشبكة.
+      synonymes: []
+
+  - id: categorie-de-grade
+    acronyme: null
+    statut: valide
+    references: [decret-99-12]
+    source_definition: {ref: decret-99-12}
+    source_traduction: {ref: decret-99-12}
+    voir_aussi: [grade, echelon, regime-indiciaire, grille-des-salaires]
+    fr:
+      terme: Catégorie de grade
+      definition: >
+        Regroupement hiérarchique des grades de la fonction publique, fixé par
+        le décret n°99-12 du 4 janvier 1999 (modifié) ; ce classement organise
+        les corps en catégories et sert de support à la grille de traitement de
+        base.
+      synonymes: []
+    ar:
+      terme: صنف الرتبة
+      definition: >
+        تجميع هرمي لرتب الوظيفة العمومية، يُضبَط بمقتضى الأمر عدد 99-12 المؤرّخ
+        في 4 جانفي 1999 (المنقَّح)؛ وينظّم هذا التصنيف الأسلاك في أصناف ويُتّخذ
+        أساسًا لشبكة المرتّب الأساسي.
+      synonymes: []
+
+  - id: grille-des-salaires
+    acronyme: null
+    statut: valide
+    references: [decret-97-1832, decret-2007-268]
+    source_definition: {ref: decret-2007-268, locator: "art. 2 bis"}
+    source_traduction: {ref: decret-2007-268, locator: "art. 2 bis"}
+    voir_aussi: [traitement-de-base, regime-indiciaire, grade, echelon, point-indice]
+    fr:
+      terme: Grille des salaires
+      definition: >
+        Barème, annexé aux décrets, fixant directement en dinars le traitement
+        de base mensuel pour chaque couple grade × échelon. En droit positif
+        tunisien, l'article 2 bis du décret n°2007-268 dispose que « la grille
+        des salaires […] est fixée conformément aux annexes ci-jointes » : les
+        montants sont arrêtés en annexes, et non calculés à partir d'un point
+        d'indice.
+      synonymes: [grille indiciaire]
+    ar:
+      terme: شبكة الأجور
+      definition: >
+        سُلَّمٌ مُلحَق بالأوامر، يضبط مباشرة بالدينار المرتبَ الأساسي الشهري
+        لكلّ ثنائي رتبة × درجة. وفي القانون الوضعي التونسي، ينصّ الفصل 2 مكرّر
+        من الأمر عدد 2007-268 على أنّ «شبكة الأجور […] تُضبَط وفقًا للملاحق
+        المصاحبة»: فالمبالغ محدَّدة في الملاحق، لا محتسَبة انطلاقًا من نقطة
+        استدلالية.
+      synonymes: [الشبكة الاستدلالية]
+
+  - id: echelonnement-indiciaire
+    acronyme: null
+    statut: provisoire
+    references: [decret-99-12]
+    voir_aussi: [categorie-de-grade, grade, echelon, regime-indiciaire]
+    fr:
+      terme: Échelonnement indiciaire
+      definition: >
+        Classement hiérarchique des grades d'un corps les uns par rapport aux
+        autres, fixé par les décrets de classement par corps ; il situe chaque
+        grade dans la grille de traitement de base sans recourir à une valeur du
+        point d'indice.
+      synonymes: [classement hiérarchique]
+    ar:
+      terme: التدرّج القياسي
+      definition: >
+        ترتيبٌ هرمي لرتب السلك بعضها بالنسبة إلى بعض، تضبطه أوامر التصنيف حسب
+        الأسلاك؛ ويحدّد موقع كلّ رتبة في شبكة المرتّب الأساسي دون اللجوء إلى
+        قيمة نقطة استدلالية.
+      synonymes: [التصنيف الهرمي]
+
+  - id: indemnite-specifique
+    acronyme: null
+    statut: provisoire
+    references: [decret-2007-267]
+    voir_aussi: [prime-de-rendement, traitement-de-base, regime-indiciaire]
+    fr:
+      terme: Indemnité spécifique
+      definition: >
+        Indemnité propre à chaque corps, s'ajoutant au traitement de base. La
+        recomposition de 2007 (décret n°2007-267) a transféré une partie des
+        indemnités spécifiques de corps vers le traitement de base, à effet du
+        1ᵉʳ avril 2007.
+      synonymes: []
+    ar:
+      terme: المنحة الخصوصية
+      definition: >
+        منحة خاصّة بكلّ سلك، تُضاف إلى المرتب الأساسي. وقد أحالت إعادة التركيب
+        سنة 2007 (الأمر عدد 2007-267) جزءًا من المنح الخصوصية للأسلاك إلى
+        المرتّب الأساسي، ابتداءً من غرّة أفريل 2007.
+      synonymes: []
+
+  - id: prime-de-rendement
+    acronyme: null
+    statut: provisoire
+    references: []
+    voir_aussi: [indemnite-specifique, traitement-de-base, regime-indiciaire]
+    fr:
+      terme: Prime de rendement
+      definition: >
+        Composante indemnitaire de la rémunération du régime indiciaire,
+        s'ajoutant au traitement de base et aux indemnités spécifiques ; ces
+        composantes sont souvent exclusives les unes des autres.
+      synonymes: []
+    ar:
+      terme: منحة المردودية
+      definition: >
+        مكوّن مِنَحي من أجر النظام الاستدلالي، يُضاف إلى المرتب الأساسي وإلى
+        المنح الخصوصية؛ وكثيرًا ما تكون هذه المكوّنات متنافية فيما بينها.
+      synonymes: []
+
+  - id: retenue-a-la-source
+    acronyme: null
+    statut: valide
+    references: [loi-irpp-is-1989]
+    source_definition: {ref: loi-irpp-is-1989}
+    voir_aussi: [irpp, css, traitement-de-base]
+    fr:
+      terme: Retenue à la source
+      definition: >
+        Prélèvement de l'impôt opéré par l'employeur, lors du paiement du
+        traitement et des indemnités imposables, au titre de l'impôt sur le
+        revenu des personnes physiques (code de l'IRPP et de l'IS, loi
+        n°89-114). Le montant retenu est reversé au Trésor et imputé sur
+        l'impôt dû par l'agent.
+      synonymes: []
+    ar:
+      terme: الخصم من المورد
+      definition: >
+        اقتطاع للضريبة يقوم به المؤجِّر، عند دفع المرتب والمنح الخاضعة للضريبة،
+        بعنوان الضريبة على دخل الأشخاص الطبيعيين (مجلة الضريبة على الدخل
+        والضريبة على الشركات، القانون عدد 89-114). ويُدفَع المبلغ المخصوم
+        للخزينة ويُحتسَب على الضريبة المستوجَبة على العون.
       synonymes: []
 
   - id: masse-salariale
@@ -500,9 +666,10 @@ entries:
 
   - id: css
     acronyme: CSS
-    statut: provisoire
-    references: []
-    voir_aussi: [irpp, cotisations-sociales]
+    statut: valide
+    references: [loi2017-66-lf2018]
+    source_definition: {ref: loi2017-66-lf2018, locator: "art. 53"}
+    voir_aussi: [irpp, cotisations-sociales, retenue-a-la-source]
     fr:
       terme: Contribution sociale de solidarité
       definition: >
@@ -519,13 +686,15 @@ entries:
   - id: irpp
     acronyme: IRPP
     statut: valide
-    references: []
-    voir_aussi: [taux-marginal, assiette-fiscale, css]
+    references: [loi-irpp-is-1989]
+    source_definition: {ref: loi-irpp-is-1989}
+    voir_aussi: [taux-marginal, assiette-fiscale, css, retenue-a-la-source]
     fr:
       terme: Impôt sur le revenu des personnes physiques
       definition: >
         Impôt direct et progressif frappant le revenu net global des personnes
-        physiques, retenu à la source sur les salaires.
+        physiques, retenu à la source sur les salaires (code de l'IRPP et de
+        l'IS, loi n°89-114).
       synonymes: [IRPP]
     ar:
       terme: الضريبة على دخل الأشخاص الطبيعيين
@@ -610,8 +779,9 @@ entries:
   - id: cnrps
     acronyme: CNRPS
     statut: valide
-    references: []
-    voir_aussi: [cnss, cnam, cotisations-sociales]
+    references: [loi85-12]
+    source_definition: {ref: loi85-12}
+    voir_aussi: [cnss, cnam, cotisations-sociales, regime-indiciaire]
     fr:
       terme: Caisse nationale de retraite et de prévoyance sociale
       definition: >
