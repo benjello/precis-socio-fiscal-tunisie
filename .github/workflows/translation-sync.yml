@@ -59,18 +59,17 @@ jobs:
             if [ "${{ github.event_name }}" == "pull_request" ]; then
               BASE_SHA=${{ github.event.pull_request.base.sha }}
               HEAD_SHA=${{ github.event.pull_request.head.sha }}
-              # En PR, on autorise les deux sens (un contributeur peut amender l'AR).
-              PATTERN='precis/(fr|ar)/.*\.(qmd|yml)$|^CHANGELOG\.md$'
             else
               BASE_SHA=${{ github.event.before }}
               HEAD_SHA=${{ github.sha }}
-              # Sur push master, le FR est TOUJOURS la source de vérité : on ne
-              # propage que FR→AR. Sans ce filtre, le merge d'une PR auto-translate
-              # (qui pousse des fichiers AR sur master) re-déclenche une
-              # rétro-traduction AR→FR et ouvre une PR parasite — boucle observée
-              # (#31, #35). Restreindre le diff au FR coupe la boucle à la racine.
-              PATTERN='precis/fr/.*\.(qmd|yml)$|^CHANGELOG\.md$'
             fi
+            # Le FR est TOUJOURS la source de vérité ; l'AR est généré, jamais
+            # rédigé à la main. On ne propage donc QUE FR→AR, sur push ET en PR.
+            # Le sens AR→FR est un piège : une modif AR (PR de config AR-only, ou
+            # merge d'une PR auto-translate) y déclencherait une rétro-traduction
+            # AR→FR ouvrant une PR parasite qui corromprait la source FR
+            # (boucle observée : #31, #35, #37, #44). On filtre le diff au FR.
+            PATTERN='precis/fr/.*\.(qmd|yml)$|^CHANGELOG\.md$'
             CHANGED=$(git diff --name-only $BASE_SHA $HEAD_SHA | grep -E "$PATTERN" | tr '\n' ' ' || true)
           fi
           echo "files=$CHANGED" >> $GITHUB_OUTPUT
