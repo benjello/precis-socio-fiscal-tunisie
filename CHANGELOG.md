@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.3.1](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.3.0...v1.3.1) (2026-06-10)
+
+
+### 🐛 Corrections de bugs
+
+* **ar:** libellés d'interface Quarto en arabe (TOC, éditer, signaler) ([e7b1233](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e7b123346e45f83cf55d3437089cd5ad95abc12f))
+* **ar:** mise en page RTL du livre arabe (titres et texte alignés à droite) ([bfb54e5](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/bfb54e572e6819f00675508ed7c823449ec73eea))
+* **biblio:** titres arabes pour les références juridiques (references.json AR) ([410c10d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/410c10dbe37c9fe34ef94e35833d4877a4ef02c1))
+* **ci:** translation-sync ne propage que FR→AR (même en PR) ([ef51b3b](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/ef51b3b877ee2997cad57136f96be5ac952fc3bc))
+
 ## [1.3.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.2.0...v1.3.0) (2026-06-10)
 
 
