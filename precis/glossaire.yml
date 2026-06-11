@@ -119,7 +119,7 @@ entries:
     acronyme: null
     statut: provisoire
     references: [loi89-9, sna2008]
-    source_definition: {ref: loi89-9}
+    source_definition: {ref: loi89-9, locator: "art. 8"}
     source_traduction: {ref: loi89-9}
     voir_aussi: [administrations-publiques, epna, epic]
     fr:
@@ -161,7 +161,7 @@ entries:
     acronyme: EPNA
     statut: provisoire
     references: [loi89-9]
-    source_definition: {ref: loi89-9}
+    source_definition: {ref: loi89-9, locator: "art. 8"}
     source_traduction: {ref: loi89-9}
     voir_aussi: [epa, epic, entreprises-publiques]
     fr:

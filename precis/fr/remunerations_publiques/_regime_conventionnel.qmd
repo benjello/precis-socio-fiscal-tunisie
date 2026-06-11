@@ -1,20 +1,46 @@
 # Le régime conventionnel public
 
-Dans les entreprises publiques non financières, la rémunération relève de conventions collectives, d'une négociation salariale et d'une classification des emplois propre à chaque secteur. On y trouve des garanties souvent supérieures à celles du privé. Les **sous-secteurs juridiques** concernés sont les offices, les établissements publics à caractère industriel et commercial (EPIC) et les sociétés à capital public non financières (STEG, SONEDE, SNCFT, etc.), régis par la loi n°85-78 [@loi85-78] et la loi n°89-9 [@loi89-9]. Leurs agents ne sont pas des fonctionnaires.
+Dans les [entreprises publiques](#g-entreprises-publiques) non financières, la rémunération relève de conventions collectives, d'une négociation salariale et d'une classification des emplois propre à chaque secteur. Les **sous-secteurs juridiques** concernés sont les offices, les [établissements publics à caractère industriel et commercial (EPIC)](#g-epic) et les sociétés à capital public non financières, régis par la loi n°85-78 [@loi85-78] et la loi n°89-9 [@loi89-9]. Leurs agents relèvent d'un statut propre et ne sont pas des fonctionnaires au sens du statut général de la fonction publique (loi n°83-112) [@loi85-78].
 
-Sur le plan **historique**, ce régime est lié à l'expansion de l'État employeur des années 1970-1980 et à la mise en place des conventions collectives sectorielles. Sur le plan **budgétaire**, les entreprises publiques pèsent lourdement sur les finances de l'État (transferts, garanties), et leurs salaires moyens font l'objet de classements réguliers ; les caisses de sécurité sociale, traitées plus bas, relèvent quant à elles des administrations publiques en comptabilité nationale. Ces repères sont précisés dans les sous-sections suivantes.
-
-<!-- TODO: poids budgétaire des entreprises publiques, salaire brut moyen par entreprise -->
+Sur le plan **budgétaire**, le périmètre des entreprises publiques fait l'objet d'un suivi régulier : le ministère des Finances lui consacre un *Rapport sur les entreprises publiques* annexé à la loi de finances [@minfin-ep], et la Banque mondiale a documenté l'évolution des transferts publics à ce secteur [@wb-tunisia-per-2020] ; ces éléments sont repris plus bas. Les caisses de sécurité sociale, traitées en fin de chapitre, occupent quant à elles une position de frontière et relèvent des administrations publiques en comptabilité nationale [@sna2008]. La frontière avec les entreprises publiques **financières** (banques, assurances) est traitée au chapitre du régime de marché contrôlé (B.4).
 
 ## Champ d'application
-<!-- TODO: offices, EPIC, sociétés à capital public non financières ; lois 85-78 et 89-9 -->
+
+Deux textes structurent ce régime. La **loi n°89-9 du 1ᵉʳ février 1989** délimite le *périmètre* : à son article 8, elle qualifie d'entreprise publique (1) les [établissements publics à caractère non administratif (EPNA)](#g-epna) dont la liste est fixée par décret, (2) les sociétés dont le capital est entièrement détenu par l'État, et (3) les sociétés dont le capital est détenu à 50 % au moins par l'État, les collectivités locales et/ou les établissements publics, individuellement ou conjointement [@loi89-9].
+
+La **loi n°85-78 du 5 août 1985** fixe quant à elle le *statut des agents* des offices, des EPIC et des sociétés dont le capital appartient directement et entièrement à l'État ou aux collectivités publiques locales ; l'organisation administrative et financière de chaque établissement, ainsi que le statut particulier de ses agents, sont arrêtés par décret [@loi85-78]. Les deux textes sont complémentaires : la loi 89-9 définit qui est une entreprise publique, la loi 85-78 définit le régime de ses agents.
+
+Le présent chapitre porte sur les entreprises publiques **non financières** (offices, EPIC et sociétés à capital public hors banques et assurances). Les *Rapports sur les entreprises publiques* du ministère des Finances retiennent d'ailleurs un périmètre qui exclut explicitement les caisses de sécurité sociale et les banques publiques [@minfin-ep] ; c'est ce découpage qui fonde le renvoi du secteur financier au chapitre B.4.
 
 ## La construction de la rémunération
-<!-- TODO: conventions collectives, classification des emplois, négociation salariale ;
-     historique des conventions sectorielles -->
+
+La rémunération des agents relevant de la loi 85-78 se construit par voie de **convention collective**, assortie d'une **classification des emplois** et d'une **grille salariale**, établies entreprise par entreprise sous l'encadrement de la tutelle de l'État. Cette logique découle du renvoi opéré par la loi 85-78, qui prévoit que le statut particulier des agents de chaque établissement est fixé par décret [@loi85-78].
+
+L'architecture combine ainsi deux niveaux : d'une part la [convention collective sectorielle](#g-convention-collective-sectorielle) négociée, qui fixe les grilles et les éléments de rémunération ; d'autre part les statuts particuliers approuvés par décret sous tutelle. L'articulation précise de ces deux niveaux — selon les secteurs et les entreprises — n'est pas uniforme.
+
+<!-- TODO: citer l'article exact de la loi 85-78 renvoyant à la convention collective et au décret d'approbation de la grille (lecture du texte intégral requise) ; identifier le décret fixant la liste des éléments permanents de rémunération -->
+<!-- TODO: existence d'UNE convention-cadre des entreprises publiques vs statuts particuliers par décret : non tranché par la note (ne pas affirmer) -->
+<!-- TODO: chronologie des conventions sectorielles (années 1970-1980) : non sourcée, retirée du texte pour ne pas affirmer sans source -->
 
 ## Les prélèvements sur la rémunération
-<!-- TODO: cotisations sociales (CNSS / CNRPS selon le cas), retenue à la source IRPP, CSS -->
+
+L'affiliation à la sécurité sociale des agents des entreprises publiques **n'est pas uniforme** et ne se déduit pas mécaniquement de la forme juridique de l'entreprise. Par principe, les salariés du secteur relèvent du régime des salariés non agricoles géré par la **CNSS**, organisé par la loi n°60-30 du 14 décembre 1960 [@loi60-30]. Toutefois, la loi n°85-12 du 5 mars 1985 (régime des pensions civiles et militaires du secteur public, géré par la **CNRPS**) inclut à son article 1ᵉʳ les « établissements publics à caractère industriel et commercial et sociétés nationales dont la liste est fixée par décret » [@loi85-12]. Il en résulte que **certains EPIC et sociétés nationales figurant sur cette liste réglementaire relèvent de la CNRPS**, tandis que les autres relèvent de la CNSS. Le rattachement dépend donc de la liste fixée par décret, et non de la seule nature de l'entreprise.
+
+<!-- TODO IMPORTANT: retrouver le(s) décret(s) fixant la liste des EPIC/sociétés nationales affiliés à la CNRPS (loi 85-12 art. 1) ; sans ce texte, ne pas attribuer nommément un régime à STEG/SONEDE/SNCFT/Transtu -->
+<!-- TODO: taux salarial/patronal exacts CNSS (régime salariés non agricoles) à sourcer par décret de cotisation -->
+
+Les traitements de ces agents sont par ailleurs soumis à la **retenue à la source** au titre de l'impôt sur le revenu des personnes physiques (IRPP), comme les autres revenus salariaux, en application du code de l'IRPP et de l'IS [@loi-irpp-is-1989] ; les modalités générales de cette imposition sont exposées dans la partie consacrée à la fiscalité des revenus du travail.
+
+S'y ajoute la **contribution sociale de solidarité (CSS)**, instituée par la loi de finances pour 2018 et applicable aux revenus salariaux [@loi2017-66-lf2018].
+
+## Repères budgétaires
+
+Le poids des entreprises publiques dans les finances publiques est documenté par deux sources principales. Le ministère des Finances publie un *Rapport sur les entreprises publiques* annexé à la loi de finances [@minfin-ep], et la Banque mondiale a analysé l'évolution des transferts de l'État au secteur dans sa *Revue des dépenses publiques* [@wb-tunisia-per-2020].
+
+Selon la Banque mondiale, les transferts et subventions de l'État aux entreprises publiques représentaient environ 8,9 % du PIB en 2013 et 7,5 % en 2014 [@wb-tunisia-per-2020]. Cette série n'est ici disponible que sur deux exercices ; elle est rapportée à titre d'illustration de l'ordre de grandeur, sans qu'on puisse en inférer une tendance de long terme.
+
+<!-- TODO: construire les séries pluriannuelles (effectifs, masse salariale par entreprise, transferts/PIB) à partir des annexes successives des lois de finances [@minfin-ep] ; site gbo.tn injoignable depuis l'environnement (ECONNREFUSED). Les chiffres de masse salariale par entreprise (STEG, CPG, Tunisie Télécom) issus de la presse et non du PDF officiel ne sont pas publiés ici : point unique non sourcé officiellement -->
+
 
 ## Les organismes de sécurité sociale : un statut hybride
 
