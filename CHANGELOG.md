@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.7.0...v1.8.0) (2026-06-11)
+
+
+### ✨ Nouveautés
+
+* **remunerations:** renvois inter-chapitres par balise + liste CNRPS (B.3) ([0c59359](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/0c59359fdb745bdd44d0005ae09771accf8e621c))
+
 ## [1.7.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.6.0...v1.7.0) (2026-06-11)
 
 
