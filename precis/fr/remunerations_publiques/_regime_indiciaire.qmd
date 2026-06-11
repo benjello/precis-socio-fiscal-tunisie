@@ -1,4 +1,4 @@
-# Le régime indiciaire
+# Le régime indiciaire {#sec-regime-indiciaire}
 
 Le [régime indiciaire](#g-regime-indiciaire) est l'héritier direct du modèle français de carrière. Il concerne les **sous-secteurs juridiques** suivants : la fonction publique de l'État, les collectivités locales et une partie des établissements publics à caractère administratif (EPA), tous régis par la loi n°83-112 du 12 décembre 1983 [@loi83-112]. La rémunération y est construite à partir d'un [grade](#g-grade) et d'un [échelon](#g-echelon) auxquels les textes réglementaires associent directement un **traitement de base mensuel exprimé en dinars**, complété d'indemnités et de primes. La notion de « point d'indice », héritée du modèle de carrière, subsiste dans le vocabulaire et dans certains décrets de classement des corps, mais elle n'opère pas, en droit positif actuel, comme un paramètre multiplicateur : aucun texte en vigueur ne publie de « valeur du point » qui, appliquée à un indice, déterminerait le traitement ; ce sont les grilles annexées aux décrets qui fixent les montants directement.
 
@@ -51,7 +51,7 @@ Le régime indiciaire est étendu aux personnels des communes et des régions. L
 
 Une partie des établissements publics à caractère administratif (EPA) relève également du régime indiciaire : il s'agit de ceux dont le personnel est régi par le statut général de la fonction publique [@loi83-112]. Tous les EPA ne sont donc pas concernés — seuls le sont ceux pour lesquels le personnel est soumis au statut général, à l'exclusion de ceux dotés d'un régime propre.
 
-Ces EPA se distinguent des **établissements publics à caractère non administratif (EPNA)**, dont le personnel ne relève pas du statut général et dont la rémunération est traitée ailleurs (chapitre du régime conventionnel public).
+Ces EPA se distinguent des **établissements publics à caractère non administratif (EPNA)**, dont le personnel ne relève pas du statut général et dont la rémunération est traitée ailleurs (chapitre [Le régime conventionnel public](_regime_conventionnel.qmd)).
 
 <!-- TODO : préciser sur source primaire la liste ou le critère textuel des EPA dont le personnel est régi par le statut général de la fonction publique. -->
 
@@ -97,7 +97,7 @@ Le régime indiciaire concentre l'essentiel des effectifs et de la masse salaria
 
 Pour situer le poids de ce régime, on renvoie aux agrégats présentés en introduction, avec leurs réserves de périmètre : l'évolution des effectifs de la fonction publique (@fig-effectifs-fp), leur répartition par catégorie statutaire (@fig-categories-statutaires) et la trajectoire de la masse salariale rapportée au PIB et aux dépenses de l'État (@fig-masse-salariale-ratios). Ces ordres de grandeur, documentés par l'INS, le ministère des Finances, le FMI et la Banque mondiale [@ins-fonction-publique-2021; @minfin-remunerations; @minfin-indicateurs-fp; @imf-tunisia-art4-2020; @wb-tunisia-per-2020], portent sur la fonction publique dans son ensemble et non sur le seul régime indiciaire.
 
-### La ventilation par ministère et ses limites
+### La ventilation par ministère et ses limites {#sec-ventilation-ministere}
 
 L'enquête de l'INS sur les agents de la fonction publique [@ins-fonction-publique-2021] propose une ventilation des effectifs par ministère, sur la période 2015-2021, ainsi que des salaires moyens par ministère. Cette ventilation porte sur la fonction publique civile : les agents y sont entièrement répartis dans les catégories statutaires A1 à D, c'est-à-dire selon la grille du statut général, ce qui en fait une statistique du **régime indiciaire**. À ce titre, elle éclaire la répartition des agents indiciaires entre les administrations, mais elle appelle une réserve importante dès lors qu'on s'intéresse à certains ministères.
 

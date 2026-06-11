@@ -288,3 +288,24 @@ du **même enregistrement**, jamais dérivées par transformation de chaîne) :
 `loi60-30` (FR + AR, nouvelles/complétées), `loi89-9` (titre FR corrigé).
 
 Contrôle : rendu FR `remunerations_publiques` OK, **0 `[?]`**. JSON FR et AR valides (36 items chacun).
+
+#### Décrets/loi CNRPS (chaîne 85-1025 / CREGT) — 3 clés ajoutées (B.3, §5.5) — 11/06/2026
+3 nouvelles clés `legislation` citées dans `_regime_conventionnel.qmd`, créées en FR + AR.
+URL résolues depuis `jort_cache.db` (FR = `pdf_fr`, AR = `pdf_ar` du **même** enregistrement,
+identifié par numéro+type+date ; jamais dérivées par substitution de chaîne). **Tous les
+`pdf_ar` présents → aucune entrée AR sans URL.**
+
+| Clé | Texte | URL FR | URL AR | JORT |
+|---|---|---|---|---|
+| `decret85-1025` | Décret n°85-1025 du 29/08/1985 (liste EPIC/soc. nat. affiliés CNRPS) | `Jo06285.pdf` | `Ja06285.pdf` | n°62/1985 |
+| `loi98-37` | Loi n°98-37 du 25/05/1998 (transfert CREGT électricité/gaz/transports → CNRPS) | `Jo04398.pdf` | `Ja04398.pdf` | n°43/1998 |
+| `decret98-1981` | Décret n°98-1981 du 12/10/1998 (transfert agents CREGT en activité → CNRPS) | `Jo08398.pdf` | `Ja08398.pdf` | n°83/1998 |
+
+- TODO objets arabes (ne pas machine-traduire) : `decret85-1025`, `loi98-37`, `decret98-1981`
+  posés en dénomination nue (`«type» عدد «num» المؤرخ في «date»`). Objet AR à compléter sur
+  titre officiel JORT AR.
+- À rapatrier dans Zotero (provisoires) : `decret85-1025`, `loi98-37`, `decret98-1981` (FR + AR).
+  Livre `remunerations_publiques` **toujours absent** de `COLLECTION_TO_BOOK` → collection
+  Zotero dédiée à créer ou ranger en « Commun ».
+- Contrôle : rendu FR `_regime_conventionnel.qmd` OK, **0 `[?]`** ; les 3 clés sortent en
+  `data-cites`. JSON FR et AR valides (39 items chacun).
