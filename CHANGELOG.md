@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.5.0...v1.6.0) (2026-06-11)
+
+
+### ✨ Nouveautés
+
+* **remunerations:** ventilation INS par ministère → régime indiciaire (B.1) ([39b03fd](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/39b03fdcdb9fb2851280bec01382bd0004a6734e))
+
 ## [1.5.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.4.0...v1.5.0) (2026-06-11)
 
 
