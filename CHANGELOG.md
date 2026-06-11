@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.5.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.4.0...v1.5.0) (2026-06-11)
+
+
+### ✨ Nouveautés
+
+* **remunerations:** rédige B.2 régime statutaire autonome ([#53](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/53), [#54](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/54)) ([fecf21c](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/fecf21cc84108061082e16ff8219d5f679839b66))
+
+
+### 🐛 Corrections de bugs
+
+* **ci:** exclut les _glossaire.qmd générés de verify-translation ([5de47a8](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/5de47a891181eda9ce7db737f467479f53bfaf0e))
+
 ## [1.4.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.3.1...v1.4.0) (2026-06-10)
 
 
