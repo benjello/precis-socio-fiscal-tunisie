@@ -47,7 +47,17 @@ def main():
     for file_path in changed_files:
         if not file_path.endswith(".qmd") and not file_path.endswith("_quarto.yml"):
             continue
-            
+
+        # Les _glossaire.qmd sont GÉNÉRÉS par build_glossary.py depuis la source
+        # unique precis/glossaire.yml : les versions FR et AR sont produites
+        # ensemble et synchrones par construction (ce ne sont pas des traductions).
+        # Le checker IA, en les comparant comme une paire source/cible, voit un
+        # gros diff d'un côté sans contrepartie et lève une fausse alerte. On les
+        # exclut donc de la vérification de traduction.
+        if file_path.endswith("_glossaire.qmd"):
+            continue
+
+
         # On vérifie symétriquement
         if "precis/ar/" in file_path:
             source_file = file_path.replace("precis/ar/", "precis/fr/")

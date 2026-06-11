@@ -231,24 +231,123 @@ entries:
   - id: regime-statutaire-autonome
     acronyme: null
     statut: provisoire
-    references: [loi67-29, loi67-20, loi82-70]
-    voir_aussi: [regime-indiciaire, fonction-publique, forces-de-securite-interieure, statut-particulier]
+    references: [loi83-112, loi91-62, loi67-29, loi67-20, loi82-70]
+    source_definition: {ref: loi83-112, locator: "art. 2"}
+    voir_aussi: [regime-indiciaire, fonction-publique, forces-de-securite-interieure, statut-particulier, magistrat, solde-militaire, pensions-civiles-militaires]
     fr:
       terme: Régime statutaire autonome
       definition: >
         Régime de rémunération propre à des corps dotés d'un statut spécial
         (magistrats, militaires, forces de sécurité intérieure), détaché du
-        statut commun de la fonction publique. Chaque corps est régi par un
-        texte propre : loi n°67-29 (magistrats), loi n°67-20 (militaires),
-        loi n°82-70 (forces de sécurité intérieure).
+        statut commun de la fonction publique. Ce détachement procède d'une
+        clause d'exclusion de champ, et non d'une sortie progressive : l'article
+        2 de la loi n°83-112 portant statut général, modifié par la loi
+        n°91-62 du 22 juillet 1991, écarte ces corps de son champ d'application
+        et les renvoie à leurs textes propres — loi n°67-29 (magistrats de
+        l'ordre judiciaire), loi n°67-20 (militaires), loi n°82-70 (forces de
+        sécurité intérieure). Le corps des agents des douanes relève, lui, d'un
+        statut séparé encore (loi n°95-46).
       synonymes: [statut spécial]
     ar:
       terme: النظام الأساسي الخاص
       definition: >
         نظام تأجير خاصّ بأسلاك تتمتّع بنظام أساسي خاصّ (القضاة، العسكريون، قوات
-        الأمن الداخلي)، منفصل عن النظام الأساسي العام للوظيفة العمومية. ويخضع كلّ
-        سلك لنصّ خاصّ به: القانون عدد 67-29 (القضاة)، والقانون عدد 67-20
-        (العسكريون)، والقانون عدد 82-70 (قوات الأمن الداخلي).
+        الأمن الداخلي)، منفصل عن النظام الأساسي العام للوظيفة العمومية. وهذا
+        الانفصال ناتج عن بند استثناء من مجال التطبيق، لا عن خروج تدريجي: فالفصل
+        2 من القانون عدد 83-112 المتعلّق بالنظام الأساسي العام، المنقَّح بالقانون
+        عدد 91-62 المؤرّخ في 22 جويلية 1991، يُخرج هذه الأسلاك من مجال تطبيقه
+        ويحيلها إلى نصوصها الخاصّة — القانون عدد 67-29 (القضاة العدليون)،
+        والقانون عدد 67-20 (العسكريون)، والقانون عدد 82-70 (قوات الأمن الداخلي).
+        أمّا سلك أعوان الديوانة فيخضع لنظام أساسي منفصل آخر (القانون عدد 95-46).
+      synonymes: []
+
+  - id: magistrat
+    acronyme: null
+    statut: valide
+    references: [loi67-29, loi72-40, decret-loi-70-6]
+    source_definition: {ref: loi67-29}
+    source_traduction: {ref: loi67-29}
+    voir_aussi: [regime-statutaire-autonome, pensions-civiles-militaires]
+    fr:
+      terme: Magistrat
+      definition: >
+        Membre d'un corps de magistrats doté d'un statut propre, distinct du
+        statut général de la fonction publique. Le droit tunisien connaît trois
+        statuts distincts : les magistrats de l'ordre judiciaire (loi n°67-29 du
+        14 juillet 1967), les magistrats du Tribunal administratif (loi n°72-40
+        du 1ᵉʳ juin 1972) et les membres de la Cour des comptes (décret-loi
+        n°70-6 du 26 septembre 1970). Le barème de rémunération de chaque corps
+        relève de ses dispositions statutaires propres.
+      synonymes: []
+    ar:
+      terme: القاضي
+      definition: >
+        عضو في سلك من أسلاك القضاة يتمتّع بنظام أساسي خاصّ به، متميّز عن النظام
+        الأساسي العام للوظيفة العمومية. ويعرف القانون التونسي ثلاثة أنظمة
+        أساسية متمايزة: قضاة القضاء العدلي (القانون عدد 67-29 المؤرّخ في 14
+        جويلية 1967)، وقضاة المحكمة الإدارية (القانون عدد 72-40 المؤرّخ في غرّة
+        جوان 1972)، وأعضاء دائرة المحاسبات (المرسوم عدد 70-6 المؤرّخ في 26
+        سبتمبر 1970). ويخضع سُلَّم تأجير كلّ سلك لأحكامه الأساسية الخاصّة.
+      synonymes: []
+
+  - id: solde-militaire
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #53
+
+    references: [decret-79-96, decret-67-158]
+    source_definition: {ref: decret-79-96}
+    voir_aussi: [regime-statutaire-autonome, traitement-de-base, regime-indiciaire]
+    fr:
+      terme: Solde (militaire)
+      definition: >
+        Rémunération de base des militaires, équivalent du traitement de base de
+        la fonction publique mais établi hors de la grille indiciaire de droit
+        commun. Le décret n°79-96 du 11 janvier 1979 fixe la solde des
+        militaires « non classés dans la grille des salaires mensuels de la
+        fonction publique » ; l'intitulé même atteste que la rémunération
+        militaire n'est pas adossée à la grille indiciaire. À cette solde
+        s'ajoutent des indemnités liées aux sujétions du service.
+      synonymes: []
+    ar:
+      terme: المرتّب العسكري
+      definition: >
+        الأجر الأساسي للعسكريين، المقابل للمرتّب الأساسي في الوظيفة العمومية لكن
+        المضبوط خارج الشبكة الاستدلالية للقانون العام. يضبط الأمر عدد 79-96
+        المؤرّخ في 11 جانفي 1979 مرتّب العسكريين «غير المصنّفين في شبكة الأجور
+        الشهرية للوظيفة العمومية»؛ ويشهد العنوان ذاته على أنّ التأجير العسكري لا
+        يستند إلى الشبكة الاستدلالية. وتُضاف إلى هذا المرتّب منحٌ مرتبطة بأعباء
+        الخدمة.
+      synonymes: []
+
+  - id: pensions-civiles-militaires
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #54
+
+    references: [loi85-12, loi2019-37]
+    source_definition: {ref: loi85-12}
+    voir_aussi: [cnrps, regime-statutaire-autonome, solde-militaire, cotisations-sociales]
+    fr:
+      terme: Pensions civiles et militaires
+      definition: >
+        Régime de retraite commun aux agents civils et militaires du secteur
+        public, géré par la Caisse nationale de retraite et de prévoyance
+        sociale (CNRPS) : il n'existe pas de caisse militaire distincte. Ce
+        régime est fixé par la loi n°85-12 du 5 mars 1985 portant régime des
+        pensions civiles et militaires de retraite et des survivants dans le
+        secteur public, modifiée notamment par la loi n°2019-37. Au sein de ce
+        régime commun, le volet militaire connaît des paramètres dérogatoires
+        (durées de services et âges de jouissance différenciés selon le grade).
+      synonymes: []
+    ar:
+      terme: الجرايات المدنية والعسكرية
+      definition: >
+        نظام تقاعد مشترك بين الأعوان المدنيين والعسكريين في القطاع العام، يديره
+        الصندوق الوطني للتقاعد والحيطة الاجتماعية: ولا يوجد صندوق عسكري منفصل.
+        يضبط هذا النظامَ القانونُ عدد 85-12 المؤرّخ في 5 مارس 1985 المتعلّق
+        بنظام جرايات التقاعد والباقين على قيد الحياة المدنية والعسكرية في القطاع
+        العام، المنقَّح خاصّةً بالقانون عدد 2019-37. وضمن هذا النظام المشترك،
+        يعرف الشقّ العسكري معاييرَ استثنائية (مدد خدمة وأعمار انتفاع متمايزة حسب
+        الرتبة).
       synonymes: []
 
   - id: statut-particulier
@@ -280,21 +379,24 @@ entries:
     acronyme: null
     statut: provisoire
     references: [loi82-70]
-    voir_aussi: [regime-statutaire-autonome, statut-particulier]
+    source_definition: {ref: loi82-70}
+    voir_aussi: [regime-statutaire-autonome, statut-particulier, pensions-civiles-militaires]
     fr:
       terme: Forces de sécurité intérieure
       definition: >
-        Corps chargés du maintien de l'ordre et de la sécurité publique (sûreté
-        nationale, garde nationale, protection civile), dotés d'un statut spécial
-        distinct du statut général de la fonction publique (loi n°82-70 du
-        6 août 1982).
+        Corps chargés du maintien de l'ordre et de la sécurité publique, dotés
+        d'un statut spécial distinct du statut général de la fonction publique
+        (loi n°82-70 du 6 août 1982). Ce statut couvre les agents de la sûreté
+        nationale, de la garde nationale, de la protection civile ainsi que des
+        services des prisons et de la rééducation.
       synonymes: []
     ar:
       terme: قوات الأمن الداخلي
       definition: >
-        الأسلاك المكلّفة بحفظ النظام والأمن العام (الأمن الوطني، الحرس الوطني،
-        الحماية المدنية)، التي تتمتّع بنظام أساسي خاصّ مستقلّ عن النظام الأساسي
-        العام للوظيفة العمومية (القانون عدد 82-70 المؤرّخ في 6 أوت 1982).
+        الأسلاك المكلّفة بحفظ النظام والأمن العام، التي تتمتّع بنظام أساسي خاصّ
+        مستقلّ عن النظام الأساسي العام للوظيفة العمومية (القانون عدد 82-70
+        المؤرّخ في 6 أوت 1982). ويشمل هذا النظام أعوان الأمن الوطني والحرس
+        الوطني والحماية المدنية وكذلك مصالح السجون والإصلاح.
       synonymes: []
 
   - id: convention-collective-sectorielle
@@ -781,7 +883,7 @@ entries:
     statut: valide
     references: [loi85-12]
     source_definition: {ref: loi85-12}
-    voir_aussi: [cnss, cnam, cotisations-sociales, regime-indiciaire]
+    voir_aussi: [cnss, cnam, cotisations-sociales, regime-indiciaire, pensions-civiles-militaires]
     fr:
       terme: Caisse nationale de retraite et de prévoyance sociale
       definition: >
