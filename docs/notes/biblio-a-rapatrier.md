@@ -120,6 +120,56 @@ les 6 clés sortent en `data-cites`). **Pas encore dans Zotero.** Même réserve
   **réutiliser ces mêmes clés** ; envisager de les **promouvoir dans le partagé**
   `precis/fr/references.json` (« Commun ») plutôt que de les dupliquer. À arbitrer au rapatriement Zotero.
 
+### Section B.2 — le régime statutaire autonome (rémunérations publiques)
+
+Ajoutées à la main dans `precis/{fr,ar}/remunerations_publiques/references.json` (12 entrées
+`legislation` citées + `loi91-62` créée mais citée en prose seulement + `sipri-milex` type
+`dataset`). Render FR OK, **0 `[?]`**, les 12 clés citées sortent en `data-cites`. **Pas encore
+dans Zotero.** Même réserve `COLLECTION_TO_BOOK` (livre `remunerations_publiques` non mappé →
+collection dédiée ou « Commun »).
+
+URL JORT pist.tn résolues depuis `jort_cache.db` (FR = `pdf_fr`, AR = `pdf_ar` du **même**
+enregistrement, identifié numéro+type+date_signature ; jamais dérivé `Jo→Ja`). **Tous les
+`pdf_ar` présents → aucune entrée AR laissée sans URL.**
+
+| Clé | Texte | URL FR | URL AR | JORT |
+|---|---|---|---|---|
+| `loi-org-2016-34` | Loi org. n°2016-34 du 28/04/2016 (CSM) | `Jo0352016.pdf` | `Ja0352016.pdf` | n°35/2016 |
+| `loi72-40` | Loi n°72-40 du 01/06/1972 (Tribunal administratif) | `Jo02372.pdf` | `Ja02372.pdf` | n°23/1972 |
+| `loi68-8` | Loi n°68-8 du 08/03/1968 (org. Cour des comptes) | `Jo01168.pdf` | `Ja01168.pdf` | n°11/1968 |
+| `decret-loi-70-6` | Décret-loi n°70-6 du 26/09/1970 (statut membres Cour des comptes) | `Jo04570.pdf` | `Ja04570.pdf` | n°45/1970 |
+| `decret-72-380` | Décret n°72-380 du 06/12/1972 (statut part. militaires) | `Jo04972.pdf` | `Ja04972.pdf` | n°49/1972 |
+| `decret-79-96` | Décret n°79-96 du 11/01/1979 (solde militaires) | `Jo00579.pdf` | `Ja00579.pdf` | n°5/1979 |
+| `decret-67-158` | Décret n°67-158 du 31/05/1967 (indemnités armée de terre) | `Jo02467.pdf` | `Ja02467.pdf` | n°24/1967 |
+| `loi95-46` | Loi n°95-46 du 15/05/1995 (statut agents des douanes) | `Jo03995.pdf` | `Ja03995.pdf` | n°39/1995 |
+| `decret-96-2311` | Décret n°96-2311 du 03/12/1996 (statut part. douaniers) | `Jo09996.pdf` | `Ja09996.pdf` | n°99/1996 |
+| `loi2019-37` | Loi n°2019-37 du 30/04/2019 (mod. loi 85-12) | `Jo0352019.pdf` | `Ja0352019.pdf` | n°35/2019 |
+| `loi68-12` | Loi n°68-12 du 03/06/1968 (statut général antérieur) | `Jo02468.pdf` | `Ja02468.pdf` | n°24/1968 |
+| `loi91-62` | Loi n°91-62 du 22/07/1991 (mod. art. 2 loi 83-112) | `Jo05391.pdf` | `Ja05391.pdf` | n°53/1991 |
+| `sipri-milex` | SIPRI Military Expenditure Database — Tunisia (`dataset`) | https://www.sipri.org/databases/milex | — | — |
+
+Notes de résolution :
+- `loi72-40` : deux enregistrements même date (JORT n°23 = texte original ; n°26 = rectificatif).
+  Retenu le **texte original n°23**.
+- `loi91-62` : **créée comme demandé** mais le chapitre la cite en prose (« modifiée par la loi
+  n°91-62 ») sous `[@loi83-112, art. 2]`, **pas** via `@loi91-62`. Entrée non `data-cites`
+  (n'affecte pas le compte `[?]`). À conserver pour Zotero ; à arbitrer si une citation propre
+  `@loi91-62` est souhaitée dans la prose.
+
+#### TODO objets arabes (B.2) — ne pas machine-traduire
+Titres AR posés en dénomination nue (`«type» عدد «num» المؤرخ في «date»`, mois tunisiens, types :
+قانون أساسي / قانون / أمر / مرسوم). **Objet arabe à compléter sur titre officiel JORT AR** pour :
+`loi72-40`, `loi68-8`, `decret-loi-70-6`, `decret-72-380`, `decret-79-96`, `decret-67-158`,
+`loi95-46`, `decret-96-2311`, `loi2019-37`, `loi68-12`, `loi91-62`.
+- Exception : `loi-org-2016-34` porte l'objet AR **publié** (champ `titre` de la base JORT :
+  « يتعلق بالمجلس الأعلى للقضاء ») → pas de TODO objet.
+
+#### À pousser dans Zotero (B.2) — NE PAS pousser sans feu vert
+Clés : `loi-org-2016-34`, `loi72-40`, `loi68-8`, `decret-loi-70-6`, `decret-72-380`,
+`decret-79-96`, `decret-67-158`, `loi95-46`, `decret-96-2311`, `loi2019-37`, `loi68-12`,
+`loi91-62`, `sipri-milex` (collection `remunerations_publiques` **toujours absente** de
+`COLLECTION_TO_BOOK` → collection Zotero dédiée à créer + mapping, ou ranger en « Commun »).
+
 ### Bibliographie partagée (`precis/{fr,ar}/references.json`) — URLs non-pist remplacées
 URL canonique d'un texte juridique = JORT pist.tn (consigne durable). Remplacement des URLs
 9anoun.tn par le PDF JORT pist.tn, confirmées via la base JORT locale `jort_cache.db`.

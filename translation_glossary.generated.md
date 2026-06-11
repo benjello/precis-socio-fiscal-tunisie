@@ -30,7 +30,9 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Grille des salaires | شبكة الأجور |  |
 | Impôt sur le revenu des personnes physiques | الضريبة على دخل الأشخاص الطبيعيين | IRPP |
 | Indemnité spécifique | المنحة الخصوصية |  |
+| Magistrat | القاضي |  |
 | Masse salariale | كتلة الأجور |  |
+| Pensions civiles et militaires | الجرايات المدنية والعسكرية |  |
 | Précis socio-fiscal | الملخّص الاجتماعي والجبائي |  |
 | Prime de rendement | منحة المردودية |  |
 | Régime conventionnel public | النظام الاتفاقي العمومي |  |
@@ -40,6 +42,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Retenue à la source | الخصم من المورد |  |
 | Salaire minimum interprofessionnel garanti | الأجر الأدنى المضمون لمختلف المهن | SMIG |
 | Secteur public | القطاع العام |  |
+| Solde (militaire) | المرتّب العسكري |  |
 | Statut particulier | النظام الأساسي الخصوصي |  |
 | Taux marginal | النسبة الحدية |  |
 | Traitement de base | المرتب الأساسي |  |
