@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.6.0...v1.7.0) (2026-06-11)
+
+
+### ✨ Nouveautés
+
+* **remunerations:** rédige B.3 régime conventionnel public ([85016f4](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/85016f4c757b50098591b831c1368b3f5386cab2))
+
 ## [1.6.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.5.0...v1.6.0) (2026-06-11)
 
 
