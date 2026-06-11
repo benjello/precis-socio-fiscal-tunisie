@@ -260,3 +260,31 @@ Dénomination nue (type+numéro+date, faits) → **TODO objet arabe à compléte
   الأشخاص الطبيعيين والضريبة على الشركات » absent de la prose AR), `decret-statut-caisses-2022`
   (objet : statut particulier du personnel des organismes de sécurité sociale),
   `loi-amen-social-2019` (objet : programme AMEN SOCIAL).
+
+### Chapitre B.3 « Régime conventionnel public » — passe bibliographe 11/06/2026
+
+URL JORT pist.tn résolues depuis la base locale `jort_cache.db` (champs `pdf_fr`/`pdf_ar`
+du **même enregistrement**, jamais dérivées par transformation de chaîne) :
+
+- `loi60-30` (Loi n°60-30 du 14 décembre 1960, sécurité sociale, JORT n°57/1960) — **RÉSOLU**.
+  Entrée FR créée à la main par le rédacteur avec URL vide → complétée.
+  - FR : `https://www.pist.tn/jort/1960/1960F/Jo05760.pdf`
+  - AR : `https://www.pist.tn/jort/1960/1960A/Ja05760.pdf` (entrée AR **créée**, titre =
+    dénomination factuelle `القانون عدد 60-30 المؤرخ في 14 ديسمبر 1960` → **TODO objet arabe**).
+  - Note FR nettoyée (clause « URL pist.tn à compléter (TODO bibliographe) » retirée).
+- `loi85-78` — **déjà résolu** (FR `Jo05885` / AR `Ja05885`), vérifié conforme au cache. Sans changement.
+- `loi89-9` — **titre FR corrigé** : intitulé d'origine 1989 « relative aux participations et
+  entreprises publiques » (verbatim cache JORT n°9/1989). La mention « et établissements publics »
+  provenait de la version amendée (loi 2006-36). AR = dénomination nue (type+numéro+date), aucune
+  incohérence d'objet → inchangée.
+- **Code IRPP/IS** (TODO du rédacteur, ligne 34 du `.qmd`) : clé **déjà existante** dans le
+  partagé `precis/{fr,ar}/references.json` = **`loi-irpp-is-1989`** (loi n°89-114 du 30 déc. 1989,
+  JORT n°88/1989, FR `Jo08889` / AR `Ja08889`). **Aucune entrée à créer.** Pour sourcer la retenue
+  à la source IRPP, le rédacteur doit citer `@loi-irpp-is-1989` (non encore cité dans le chapitre ;
+  n'apparaît donc pas au contrôle `[?]`).
+
+À rapatrier dans Zotero (provisoires, livre `remunerations_publiques` **toujours absent** de
+`COLLECTION_TO_BOOK` → collection dédiée à créer ou ranger en « Commun ») :
+`loi60-30` (FR + AR, nouvelles/complétées), `loi89-9` (titre FR corrigé).
+
+Contrôle : rendu FR `remunerations_publiques` OK, **0 `[?]`**. JSON FR et AR valides (36 items chacun).
