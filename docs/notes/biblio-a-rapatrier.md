@@ -309,3 +309,68 @@ identifié par numéro+type+date ; jamais dérivées par substitution de chaîne
   Zotero dédiée à créer ou ranger en « Commun ».
 - Contrôle : rendu FR `_regime_conventionnel.qmd` OK, **0 `[?]`** ; les 3 clés sortent en
   `data-cites`. JSON FR et AR valides (39 items chacun).
+
+### Chapitre B.4 « Le régime de marché contrôlé » — passe bibliographe 12/06/2026
+
+4 nouvelles clés `legislation` citées dans `_regime_marche_controle.qmd`, créées en FR + AR.
+URL résolues depuis `jort_cache.db` (FR = `pdf_fr`, AR = `pdf_ar` du **même** enregistrement,
+identifié par numéro+type+date_signature ; jamais dérivées par substitution de chaîne).
+**Tous les `pdf_ar` présents → aucune entrée AR sans URL.** URL repères de la note B.4
+(`Jo0582016`, `Jo1012015`, `Jo07590`, `Jo0232014`) **confirmées** contre `pdf_fr`.
+
+| Clé | Texte | URL FR | URL AR | JORT |
+|---|---|---|---|---|
+| `loi2016-48` | Loi n°2016-48 du 11/07/2016 (banques et établissements financiers) | `Jo0582016.pdf` | `Ja0582016.pdf` | n°58/2016 |
+| `cc-banques-2014` | Arrêté du 17/02/2014 (agrément convention coll. sectorielle banques/étab. financiers, révisée) | `Jo0232014.pdf` | `Ja0232014.pdf` | n°23/2014 |
+| `decret2015-2217` | Décret n°2015-2217 du 11/12/2015 (taux rémunération chefs d'étab./entreprises publiques et soc. à majorité publique) | `Jo1012015.pdf` | `Ja1012015.pdf` | n°101/2015 |
+| `decret90-1855` | Décret n°90-1855 du 10/11/1990 (régime rémunération chefs d'entreprises à majorité publique) | `Jo07590.pdf` | `Ja07590.pdf` | n°75/1990 |
+
+- `cc-banques-2014` : l'enregistrement de l'**arrêté du 17 février 2014** EST présent dans le
+  cache (recid 50874, type `Arrete`, JORT 23/2014, `pdf_fr` + `pdf_ar` présents) → URL FR **et**
+  AR résolues depuis le champ, pas seulement l'URL repère. Pas de TODO URL.
+- Objets arabes : `loi2016-48` et `decret2015-2217` portent l'**objet AR publié** repris du champ
+  `objet` du cache (« يتعلق بالبنوك والمؤسسات المالية » ; « يتعلق بضبط نظام تأجير رؤساء المؤسسات
+  والمنشآت العمومية والشركات ذات الأغلبية العمومية ») → pas de TODO objet. **TODO objet arabe**
+  (ne pas machine-traduire ; confirmer sur titre officiel JORT AR) pour : `cc-banques-2014`,
+  `decret90-1855`.
+- À rapatrier dans Zotero (provisoires) : `loi2016-48`, `cc-banques-2014`, `decret2015-2217`,
+  `decret90-1855` (FR + AR). Livre `remunerations_publiques` **toujours absent** de
+  `COLLECTION_TO_BOOK` → collection Zotero dédiée à créer ou ranger en « Commun ».
+- Contrôle : rendu FR `_regime_marche_controle.qmd` OK, **0 `[?]`** ; les 4 clés résolues
+  (`ref-…` présents dans le HTML). JSON FR et AR valides (43 items chacun).
+
+#### Consolidation `minfin-ep` + loi 2018-56 (B.3/B.4) — passe bibliographe 12/06/2026
+
+`minfin-ep` (FR + AR) : entrée faible (URL `finances.gov.tn/` page d'accueil) **remplacée** par
+l'édition précise **Rapport sur les entreprises publiques, annexe 9 au PLF 2021** (Ministère de
+l'économie, des finances et de l'appui à l'investissement ; données 2017-2019). `type: report`,
+`issued: 2020`, URL stable gbo.tn
+(`http://www.gbo.tn/sites/default/files/2021-04/Annexe%209%20LF2021%20Entreprises%20Publiques.pdf`),
+landing de repli `https://www.finances.gov.tn/fr/document/le-rapport-sur-les-entreprises-publiques-ar`.
+PDF archivé tracé dans `note` : `biblio_pdfs/minfin_rapport_entreprises_publiques_lf2021.pdf`.
+- **Titre AR officiel confirmé** = `التقرير حول المنشآت العمومية` (intitulé repris de la page
+  document officielle finances.gov.tn, chemin AR `/ar/document/altqryr-hwl-almnshyat-almwmyt` ;
+  forme **منشآت** retenue, pas une machine-traduction). Pas de TODO objet AR.
+
+`minfin-ep-2020` (FR + AR) : **créé** pour la vue d'évolution — édition annexe 9 au PLF 2020
+(données 2016-2018), `issued: 2019`, URL gbo
+`http://www.gbo.tn/sites/default/files/2021-02/Annexe_9_LF2020-Entreprises_publiques.pdf`,
+PDF archivé `biblio_pdfs/minfin_rapport_entreprises_publiques_lf2020.pdf`. Entrée orpheline
+(non citée en prose à ce stade) — n'affecte pas le compte `[?]`.
+
+`loi2018-56-lf2019` (Loi n°2018-56 du 27 décembre 2018, loi de finances 2019, art. 28 augm.
+capital BNA) : clé **absente** de tous les `references.json` (FR/AR/partagé). **Créée** en FR + AR.
+- Résolution `jort_cache.db` : Loi 2018-56, 27/12/2018, **JORT n°104/2018**. `pdf_fr` **VIDE**
+  (NULL), `pdf_ar` présent = `/jort/2018/2018A/Ja1042018.pdf`.
+  - **FR : pas d'URL** + **TODO URL FR** (pdf_fr absent du cache ; ne pas dériver `Ja→Jo`).
+  - AR : `https://www.pist.tn/jort/2018/2018A/Ja1042018.pdf` (lu dans `pdf_ar`).
+- La prose B.4 cite l'art. 28 sans `[@clé]` (fait couvert par l'encadré `[@minfin-ep]`). La clé
+  `loi2018-56-lf2019` est donc **disponible mais non citée** (entrée orpheline, pas de `[?]`).
+  → Si l'auteur veut une citation propre, ajouter `[@loi2018-56-lf2019]` à la prose (action
+  rédacteur ; non faite ici).
+
+À rapatrier dans Zotero (provisoires, NE PAS pousser sans feu vert) : `minfin-ep` (consolidée),
+`minfin-ep-2020`, `loi2018-56-lf2019` (FR + AR). Livre `remunerations_publiques` **toujours absent**
+de `COLLECTION_TO_BOOK` (`scripts/sync_biblio.py`) → créer une collection Zotero dédiée + mapping,
+ou ranger en « Commun ».
+- Contrôle : rendu FR `remunerations_publiques` OK, **0 `[?]`**. JSON FR et AR valides (45 items chacun).

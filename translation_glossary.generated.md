@@ -15,6 +15,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Catégorie de grade | صنف الرتبة |  |
 | Contribution sociale de solidarité | المساهمة الاجتماعية التضامنية | CSS |
 | Convention collective sectorielle | الاتفاقية المشتركة القطاعية |  |
+| Convention collective sectorielle des banques et établissements financiers | الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية |  |
 | Cotisations sociales | المساهمات الاجتماعية |  |
 | Échelon | الدرجة |  |
 | Échelonnement indiciaire | التدرّج القياسي |  |
@@ -39,6 +40,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Régime de marché contrôlé | نظام السوق الموجَّه |  |
 | Régime indiciaire | النظام الاستدلالي للتأجير |  |
 | Régime statutaire autonome | النظام الأساسي الخاص |  |
+| Rémunération des dirigeants d'entreprises publiques | تأجير رؤساء المؤسسات والمنشآت العمومية |  |
 | Retenue à la source | الخصم من المورد |  |
 | Salaire minimum interprofessionnel garanti | الأجر الأدنى المضمون لمختلف المهن | SMIG |
 | Secteur public | القطاع العام |  |

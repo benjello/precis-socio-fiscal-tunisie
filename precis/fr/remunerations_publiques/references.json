@@ -1,6 +1,70 @@
 {
  "items": [
   {
+   "id": "loi2016-48",
+   "type": "legislation",
+   "title": "Loi n°2016-48 du 11 juillet 2016, relative aux banques et aux établissements financiers",
+   "note": "citation-key: loi2016-48 | JORT n°58 de 2016. Texte-cadre en vigueur de la profession bancaire (succède à la loi 2001-65 et à la loi 67-51). Intitulé FR attesté par le décret d'application 2020-113.",
+   "URL": "https://www.pist.tn/jort/2016/2016F/Jo0582016.pdf",
+   "issued": {
+    "date-parts": [
+     [
+      2016,
+      7,
+      11
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cc-banques-2014",
+   "type": "legislation",
+   "title": "Arrêté du ministre des affaires sociales du 17 février 2014, portant agrément de la convention collective sectorielle du personnel des banques et des établissements financiers (révisée)",
+   "note": "citation-key: cc-banques-2014 | JORT n°23 de 2014. Convention sectorielle couvrant banques publiques ET privées ; socle conventionnel de la rémunération bancaire. Convention initiale agréée en 1975 (JORT n°87/1975, texte JORT n°6/1976) ; avenants jusqu'à l'avenant n°5 (arrêté du 17 nov. 2022, JORT n°126/2022).",
+   "URL": "https://www.pist.tn/jort/2014/2014F/Jo0232014.pdf",
+   "issued": {
+    "date-parts": [
+     [
+      2014,
+      2,
+      17
+     ]
+    ]
+   }
+  },
+  {
+   "id": "decret2015-2217",
+   "type": "legislation",
+   "title": "Décret n°2015-2217 du 11 décembre 2015, fixant les taux des éléments de rémunération des chefs d'établissements et entreprises publiques et de sociétés à majorité publique",
+   "note": "citation-key: decret2015-2217 | JORT n°101 de 2015. Texte en vigueur encadrant la rémunération des dirigeants d'entreprises publiques (y c. banques à majorité publique — à confirmer sur PDF). Succède aux décrets 78-885, 90-1855, 2014-12.",
+   "URL": "https://www.pist.tn/jort/2015/2015F/Jo1012015.pdf",
+   "issued": {
+    "date-parts": [
+     [
+      2015,
+      12,
+      11
+     ]
+    ]
+   }
+  },
+  {
+   "id": "decret90-1855",
+   "type": "legislation",
+   "title": "Décret n°90-1855 du 10 novembre 1990, fixant le régime de rémunération des chefs d'entreprises à majorité publique",
+   "note": "citation-key: decret90-1855 | JORT n°75 de 1990. Maillon central (1990-2014) de l'encadrement de la rémunération des dirigeants d'entreprises à majorité publique ; modifié par décrets 92-1 et 2006-2564 ; remplacé en 2014/2015.",
+   "URL": "https://www.pist.tn/jort/1990/1990F/Jo07590.pdf",
+   "issued": {
+    "date-parts": [
+     [
+      1990,
+      11,
+      10
+     ]
+    ]
+   }
+  },
+  {
    "id": "loi60-30",
    "type": "legislation",
    "title": "Loi n°60-30 du 14 décembre 1960, relative à l'organisation des régimes de sécurité sociale",
@@ -512,10 +576,59 @@
   {
    "id": "minfin-ep",
    "type": "report",
-   "title": "Entreprises publiques et établissements publics à caractère non administratif sous tutelle",
-   "note": "citation-key: minfin-ep",
-   "publisher": "Ministère des Finances de la République tunisienne",
-   "URL": "https://www.finances.gov.tn/"
+   "title": "Rapport sur les entreprises publiques (annexe 9 au projet de loi de finances pour 2021)",
+   "author": [
+    {
+     "literal": "Ministère de l'économie, des finances et de l'appui à l'investissement, Tunisie"
+    }
+   ],
+   "publisher": "Ministère de l'économie, des finances et de l'appui à l'investissement, Tunisie",
+   "publisher-place": "Tunis",
+   "note": "citation-key: minfin-ep | PDF archivé : biblio_pdfs/minfin_rapport_entreprises_publiques_lf2021.pdf | Annexe 9 au PLF 2021 (loi organique du budget 2019-15, art. 46). Échantillon de 33 entreprises publiques (~90 % des indicateurs ; 110 EP au total), données 2017-2019. 2e partie, ch. 1 « entreprises publiques actives dans le secteur financier et assimilé » (STB, BNA, BH, Poste, CPSCL) ; ch. 2 « caisses sociales » (CNSS, CNRPS, CNAM). Landing page de repli : https://www.finances.gov.tn/fr/document/le-rapport-sur-les-entreprises-publiques-ar . Version arabe officielle (traduction FR Expertise France/UE).",
+   "URL": "http://www.gbo.tn/sites/default/files/2021-04/Annexe%209%20LF2021%20Entreprises%20Publiques.pdf",
+   "issued": {
+    "date-parts": [
+     [
+      2020
+     ]
+    ]
+   }
+  },
+  {
+   "id": "minfin-ep-2020",
+   "type": "report",
+   "title": "Rapport sur les entreprises publiques (annexe 9 au projet de loi de finances pour 2020)",
+   "author": [
+    {
+     "literal": "Ministère de l'économie, des finances et de l'appui à l'investissement, Tunisie"
+    }
+   ],
+   "publisher": "Ministère de l'économie, des finances et de l'appui à l'investissement, Tunisie",
+   "publisher-place": "Tunis",
+   "note": "citation-key: minfin-ep-2020 | PDF archivé : biblio_pdfs/minfin_rapport_entreprises_publiques_lf2020.pdf | Édition antérieure de minfin-ep (données 2016-2018), retenue pour la vue d'évolution. URL gbo.tn : http://www.gbo.tn/sites/default/files/2021-02/Annexe_9_LF2020-Entreprises_publiques.pdf .",
+   "URL": "http://www.gbo.tn/sites/default/files/2021-02/Annexe_9_LF2020-Entreprises_publiques.pdf",
+   "issued": {
+    "date-parts": [
+     [
+      2019
+     ]
+    ]
+   }
+  },
+  {
+   "id": "loi2018-56-lf2019",
+   "type": "legislation",
+   "title": "Loi n°2018-56 du 27 décembre 2018, portant loi de finances pour l'année 2019",
+   "note": "citation-key: loi2018-56-lf2019 | JORT n°104 de 2018. Article 28 : augmentation du capital de la BNA par conversion de créances de l'État (cf. minfin-ep, p. 37). TODO URL FR : le champ pdf_fr de jort_cache.db est vide pour ce texte (seul pdf_ar présent) ; pas d'URL FR pist.tn jusqu'à confirmation.",
+   "issued": {
+    "date-parts": [
+     [
+      2018,
+      12,
+      27
+     ]
+    ]
+   }
   },
   {
    "id": "imf-tunisia-art4-2020",
