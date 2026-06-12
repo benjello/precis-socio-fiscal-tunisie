@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.8.0...v1.9.0) (2026-06-12)
+
+
+### ✨ Nouveautés
+
+* **remunerations:** B.4 banques publiques + correction périmètre du Rapport EP ([9f05561](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/9f055618bbd94b1ffd35e4c18c9a76311400ce0d))
+
 ## [1.8.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.7.0...v1.8.0) (2026-06-11)
 
 
