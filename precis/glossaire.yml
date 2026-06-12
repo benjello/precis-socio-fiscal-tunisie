@@ -403,7 +403,7 @@ entries:
     acronyme: null
     statut: provisoire
     references: [loi85-78]
-    voir_aussi: [regime-conventionnel-public, entreprises-publiques, epic]
+    voir_aussi: [regime-conventionnel-public, convention-collective-banques, entreprises-publiques, epic]
     fr:
       terme: Convention collective sectorielle
       definition: >
@@ -420,6 +420,71 @@ entries:
         والتأجير (تصنيف المواطن الشغلية والسلالم والمنح) لقطاع نشاط معيَّن. وفي
         القطاع العام غير الإداري، تُشكّل أساس النظام الاتفاقي (مجلة الشغل؛ القانون
         عدد 85-78).
+      synonymes: []
+
+  - id: convention-collective-banques
+    acronyme: null
+    statut: valide
+    references: [cc-banques-2014, loi2016-48]
+    source_definition: {ref: cc-banques-2014}
+    source_traduction: {ref: cc-banques-2014}
+    voir_aussi: [convention-collective-sectorielle, regime-marche-controle, cnss]
+    fr:
+      terme: Convention collective sectorielle des banques et établissements financiers
+      definition: >
+        Convention collective de droit commun du travail régissant la
+        classification des emplois et la rémunération des agents des banques et
+        établissements financiers, publics comme privés, agréée par arrêté du
+        ministre des Affaires sociales en application du Code du travail. Sa
+        lignée remonte à un agrément de 1975 ; la version en vigueur est la
+        convention révisée agréée par arrêté du 17 février 2014, complétée par
+        des avenants successifs. Une convention sectorielle unique couvrant
+        indistinctement banques publiques et privées est la marque documentaire
+        de l'autonomie salariale « proche du privé » du régime de marché
+        contrôlé.
+      synonymes: [convention collective des banques]
+    ar:
+      terme: الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية
+      definition: >
+        اتفاقية مشتركة من القانون العام للشغل تضبط تصنيف المواطن الشغلية وتأجير
+        أعوان البنوك والمؤسسات المالية، العمومية منها والخاصة، مصادَق عليها بقرار
+        من وزير الشؤون الاجتماعية تطبيقًا لمجلة الشغل. تعود نشأتها إلى مصادقة سنة
+        1975؛ والنسخة السارية هي الاتفاقية المنقَّحة المصادَق عليها بقرار مؤرَّخ
+        في 17 فيفري 2014، المستكمَلة بملاحق متتالية. ووجودُ اتفاقية قطاعية وحيدة
+        تشمل دون تمييز البنوك العمومية والخاصة هو العلامة الوثائقية على
+        الاستقلالية الأجرية «القريبة من القطاع الخاص» لنظام السوق الموجَّه.
+      synonymes: []
+
+  - id: remuneration-dirigeants-entreprises-publiques
+    acronyme: null
+    statut: valide
+    references: [decret2015-2217, decret90-1855]
+    source_definition: {ref: decret2015-2217}
+    source_traduction: {ref: decret2015-2217}
+    voir_aussi: [regime-marche-controle, entreprises-publiques, regime-conventionnel-public]
+    fr:
+      terme: Rémunération des dirigeants d'entreprises publiques
+      definition: >
+        Rémunération des chefs d'établissements et entreprises publics et de
+        sociétés à majorité publique — y compris les banques à majorité publique
+        — encadrée et plafonnée par voie réglementaire au titre des prérogatives
+        de l'État actionnaire. Le texte en vigueur est le décret n°2015-2217 du
+        11 décembre 2015 fixant les taux des éléments de cette rémunération ; il
+        s'inscrit dans une chaîne réglementaire continue (décrets n°78-885,
+        n°90-1855, n°2014-12). Ce plafonnement constitue le versant « contrôle »
+        du régime de marché contrôlé, par contraste avec l'autonomie
+        conventionnelle de marché des agents.
+      synonymes: []
+    ar:
+      terme: تأجير رؤساء المؤسسات والمنشآت العمومية
+      definition: >
+        تأجير رؤساء المؤسسات والمنشآت العمومية والشركات ذات الأغلبية العمومية —
+        بما في ذلك البنوك ذات الأغلبية العمومية — المضبوط والمسقَّف عن طريق
+        التنظيم بعنوان صلاحيات الدولة المساهمة. والنصّ الساري هو الأمر الحكومي
+        عدد 2015-2217 المؤرّخ في 11 ديسمبر 2015 الذي يضبط نسب عناصر هذا التأجير؛
+        وهو يندرج ضمن سلسلة تنظيمية متّصلة (الأوامر عدد 78-885 وعدد 90-1855 وعدد
+        2014-12). ويشكّل هذا التسقيف الشقَّ «الرقابي» من نظام السوق الموجَّه، في
+        مقابل الاستقلالية الاتفاقية السوقية لأعوانها.
       synonymes: []
 
   - id: regime-conventionnel-public
@@ -446,19 +511,33 @@ entries:
     acronyme: null
     statut: provisoire
     references: [loi89-9]
-    voir_aussi: [entreprises-publiques]
+    voir_aussi: [entreprises-publiques, convention-collective-banques, remuneration-dirigeants-entreprises-publiques, regime-conventionnel-public, cnss]
     fr:
       terme: Régime de marché contrôlé
       definition: >
-        Régime de rémunération des entreprises publiques financières et de
-        certaines filiales, à forte autonomie salariale, avec des rémunérations
-        proches du secteur privé sous contrôle de l'État actionnaire.
+        Régime de rémunération des entreprises publiques financières (banques,
+        assurances et institutions financières à capital public) et de certaines
+        filiales, caractérisé par un double trait. Côté agents, l'autonomie
+        salariale est forte : leur rémunération relève d'une convention
+        collective sectorielle de droit commun commune aux établissements
+        publics et privés, ce qui aligne les rémunérations de base sur le secteur
+        financier privé. Côté dirigeants, l'État exerce ses prérogatives
+        d'actionnaire et la rémunération des chefs d'entreprise est plafonnée par
+        voie réglementaire. C'est cette articulation — autonomie conventionnelle
+        de marché pour les agents, plafonnement réglementaire pour les dirigeants
+        — qui justifie le qualificatif de « marché contrôlé ».
       synonymes: []
     ar:
       terme: نظام السوق الموجَّه
       definition: >
-        نظام تأجير المنشآت العمومية المالية وبعض الفروع، ذو استقلالية أجرية
-        مرتفعة وأجور قريبة من القطاع الخاص تحت رقابة الدولة المساهمة.
+        نظام تأجير المنشآت العمومية المالية (البنوك والتأمين والمؤسسات المالية
+        ذات رأس المال العمومي) وبعض الفروع، يتميّز بسمة مزدوجة. فمن جهة الأعوان،
+        تكون الاستقلالية الأجرية مرتفعة: إذ يخضع تأجيرهم لاتفاقية مشتركة قطاعية
+        من القانون العام مشتركة بين المؤسسات العمومية والخاصة، ممّا يحاذي الأجور
+        الأساسية بالقطاع المالي الخاص. ومن جهة الرؤساء، تمارس الدولة صلاحياتها
+        بوصفها مساهمة ويُسقَّف تأجير رؤساء المؤسسات عن طريق التنظيم. وهذا
+        التمفصُل — استقلالية اتفاقية سوقية للأعوان وتسقيف تنظيمي للرؤساء — هو ما
+        يبرّر وصف «السوق الموجَّه».
       synonymes: []
 
   - id: point-indice

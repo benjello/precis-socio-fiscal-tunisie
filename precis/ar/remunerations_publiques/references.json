@@ -1,6 +1,70 @@
 {
  "items": [
   {
+   "id": "loi2016-48",
+   "type": "legislation",
+   "title": "القانون عدد 2016-48 المؤرخ في 11 جويلية 2016 يتعلق بالبنوك والمؤسسات المالية",
+   "note": "citation-key: loi2016-48 | JORT n°58 de 2016. Objet AR repris de l'enregistrement jort_cache (objet officiel).",
+   "URL": "https://www.pist.tn/jort/2016/2016A/Ja0582016.pdf",
+   "issued": {
+    "date-parts": [
+     [
+      2016,
+      7,
+      11
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cc-banques-2014",
+   "type": "legislation",
+   "title": "قرار من وزير الشؤون الاجتماعية مؤرخ في 17 فيفري 2014 يتعلق بالمصادقة على الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية (المنقحة)",
+   "note": "citation-key: cc-banques-2014 | JORT n°23 de 2014. TODO objet arabe (titre officiel JORT AR à confirmer).",
+   "URL": "https://www.pist.tn/jort/2014/2014A/Ja0232014.pdf",
+   "issued": {
+    "date-parts": [
+     [
+      2014,
+      2,
+      17
+     ]
+    ]
+   }
+  },
+  {
+   "id": "decret2015-2217",
+   "type": "legislation",
+   "title": "الأمر الحكومي عدد 2015-2217 المؤرخ في 11 ديسمبر 2015 يتعلق بضبط نسب عناصر تأجير رؤساء المؤسسات والمنشآت العمومية والشركات ذات الأغلبية العمومية",
+   "note": "citation-key: decret2015-2217 | JORT n°101 de 2015. Objet AR repris de l'enregistrement jort_cache (objet officiel).",
+   "URL": "https://www.pist.tn/jort/2015/2015A/Ja1012015.pdf",
+   "issued": {
+    "date-parts": [
+     [
+      2015,
+      12,
+      11
+     ]
+    ]
+   }
+  },
+  {
+   "id": "decret90-1855",
+   "type": "legislation",
+   "title": "الأمر عدد 90-1855 المؤرخ في 10 نوفمبر 1990 يتعلق بضبط نظام تأجير رؤساء المؤسسات ذات الأغلبية العمومية",
+   "note": "citation-key: decret90-1855 | JORT n°75 de 1990. TODO objet arabe (titre officiel JORT AR à confirmer).",
+   "URL": "https://www.pist.tn/jort/1990/1990A/Ja07590.pdf",
+   "issued": {
+    "date-parts": [
+     [
+      1990,
+      11,
+      10
+     ]
+    ]
+   }
+  },
+  {
    "id": "loi60-30",
    "type": "legislation",
    "title": "القانون عدد 60-30 المؤرخ في 14 ديسمبر 1960",
@@ -512,10 +576,60 @@
   {
    "id": "minfin-ep",
    "type": "report",
-   "title": "Entreprises publiques et établissements publics à caractère non administratif sous tutelle",
-   "note": "citation-key: minfin-ep",
-   "publisher": "Ministère des Finances de la République tunisienne",
-   "URL": "https://www.finances.gov.tn/"
+   "title": "التقرير حول المنشآت العمومية (الملحق 9 لمشروع قانون المالية لسنة 2021)",
+   "author": [
+    {
+     "literal": "وزارة الاقتصاد والمالية ودعم الاستثمار، تونس"
+    }
+   ],
+   "publisher": "وزارة الاقتصاد والمالية ودعم الاستثمار، تونس",
+   "publisher-place": "تونس",
+   "note": "citation-key: minfin-ep | PDF archivé : biblio_pdfs/minfin_rapport_entreprises_publiques_lf2021.pdf | الملحق 9 لمشروع قانون المالية 2021 (القانون الأساسي للميزانية 2019-15، الفصل 46). عيّنة من 33 منشأة عمومية، معطيات 2017-2019. عنوان التقرير الرسمي مأخوذ من بوابة وزارة المالية. النسخة العربية هي المرجع.",
+   "URL": "http://www.gbo.tn/sites/default/files/2021-04/Annexe%209%20LF2021%20Entreprises%20Publiques.pdf",
+   "issued": {
+    "date-parts": [
+     [
+      2020
+     ]
+    ]
+   }
+  },
+  {
+   "id": "minfin-ep-2020",
+   "type": "report",
+   "title": "التقرير حول المنشآت العمومية (الملحق 9 لمشروع قانون المالية لسنة 2020)",
+   "author": [
+    {
+     "literal": "وزارة الاقتصاد والمالية ودعم الاستثمار، تونس"
+    }
+   ],
+   "publisher": "وزارة الاقتصاد والمالية ودعم الاستثمار، تونس",
+   "publisher-place": "تونس",
+   "note": "citation-key: minfin-ep-2020 | PDF archivé : biblio_pdfs/minfin_rapport_entreprises_publiques_lf2020.pdf | طبعة سابقة (معطيات 2016-2018) لعرض التطور. النسخة العربية هي المرجع.",
+   "URL": "http://www.gbo.tn/sites/default/files/2021-02/Annexe_9_LF2020-Entreprises_publiques.pdf",
+   "issued": {
+    "date-parts": [
+     [
+      2019
+     ]
+    ]
+   }
+  },
+  {
+   "id": "loi2018-56-lf2019",
+   "type": "legislation",
+   "title": "القانون عدد 2018-56 المؤرخ في 27 ديسمبر 2018 المتعلق بقانون المالية لسنة 2019",
+   "note": "citation-key: loi2018-56-lf2019 | JORT n°104 de 2018. الفصل 28 : الترفيع في رأس مال البنك الوطني الفلاحي. URL AR = pdf_ar من jort_cache.db.",
+   "issued": {
+    "date-parts": [
+     [
+      2018,
+      12,
+      27
+     ]
+    ]
+   },
+   "URL": "https://www.pist.tn/jort/2018/2018A/Ja1042018.pdf"
   },
   {
    "id": "imf-tunisia-art4-2020",

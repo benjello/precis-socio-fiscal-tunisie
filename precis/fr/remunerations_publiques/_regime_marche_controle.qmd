@@ -1,16 +1,62 @@
 # Le régime de marché contrôlé {#sec-regime-marche-controle}
 
-Les entreprises publiques financières — banques publiques notamment — et certaines filiales bénéficient d'une forte autonomie salariale, avec des rémunérations proches de celles du secteur privé, tout en restant soumises au contrôle de l'État actionnaire. Les **sous-secteurs juridiques** concernés sont les sociétés à capital public du secteur financier (STB, BNA, etc.) et certaines filiales, régies par la loi n°89-9 [@loi89-9].
+Les entreprises publiques **financières** — banques à capital public au premier chef, mais aussi sociétés d'assurance et institutions financières dont l'État est actionnaire — présentent une configuration salariale particulière au sein du secteur public. La rémunération de leurs agents n'y est pas fixée par un statut public, mais par les mécanismes de droit commun du travail (négociation collective sectorielle), ce qui en fait un régime largement aligné sur les pratiques du secteur financier privé. En contrepartie, l'État exerce ses prérogatives d'actionnaire, et la rémunération des **dirigeants** de ces entreprises est encadrée par voie réglementaire. C'est ce double trait — autonomie salariale de marché pour les agents, plafonnement réglementaire pour les dirigeants — qui justifie le qualificatif de [régime de marché contrôlé](#g-regime-marche-controle).
 
-Sur le plan **historique**, ce régime traduit l'autonomisation salariale du secteur financier public, aligné par la concurrence sur les pratiques du privé. Sur le plan **budgétaire**, ses effectifs sont restreints mais ses rémunérations moyennes figurent parmi les plus élevées du secteur public, ce qui en fait un point de comparaison récurrent. Ces repères généraux sont précisés ci-dessous.
+Sur le plan **historique**, ce régime traduit l'autonomisation salariale du secteur financier public : la rémunération de ses agents est fixée, comme dans le secteur financier privé, par une convention collective sectorielle commune aux établissements publics et privés.
 
-<!-- TODO: salaire moyen comparé au privé, effectifs du secteur financier public -->
+<!-- NB éditorial : toute comparaison du niveau de rémunération du secteur financier public avec le reste du secteur public ou avec le privé est écartée tant qu'aucune série officielle (INS, comptes de la nation par branche « activités financières et d'assurance », ou BCT) ne l'étaye. Rester purement factuel et descriptif. -->
+<!-- TODO: si une série officielle de salaire moyen / coût du travail du secteur financier devient disponible, l'introduire avec sa vue d'évolution ; sinon ne rien affirmer. -->
+<!-- TODO: effectifs du secteur financier public sur source officielle. -->
 
 ## Champ d'application
-<!-- TODO: banques publiques (STB, BNA), institutions financières, certaines filiales -->
+
+Le périmètre actionnarial du régime de marché contrôlé n'est pas différent de celui du [régime conventionnel public](_regime_conventionnel.qmd) : il s'agit d'entreprises publiques au sens de l'article 8 de la loi n°89-9 du 1^er^ février 1989 — entreprises dont l'État, les collectivités ou les établissements publics détiennent directement ou indirectement la totalité du capital, ou une participation au moins égale à la moitié de celui-ci [@loi89-9, art. 8]. La spécificité du sous-secteur ne tient donc pas au périmètre du capital, mais à l'**activité financière** exercée — activité bancaire, de crédit ou d'assurance.
+
+C'est cette activité financière qui distingue le sous-secteur de celui du [régime conventionnel public](_regime_conventionnel.qmd). Le *Rapport sur les entreprises publiques* annexé à la loi de finances, publié par le ministère chargé des finances, consacre d'ailleurs un chapitre distinct aux « entreprises publiques actives dans le secteur financier et assimilé », où figurent les banques publiques [@minfin-ep].
+
+L'activité bancaire est régie par un cadre sectoriel propre : la loi n°2016-48 du 11 juillet 2016 relative aux banques et aux établissements financiers [@loi2016-48], qui s'inscrit dans une lignée déjà ancienne (loi n°67-51 du 7 décembre 1967 réglementant la profession bancaire, puis loi n°2001-65 du 10 juillet 2001 relative aux établissements de crédit). Ces lois-cadres définissent l'activité et ses conditions d'exercice ; elles ne distinguent pas le capital public du capital privé et ne régissent pas la rémunération des agents. Elles servent ici uniquement à délimiter le champ « financier » du chapitre.
+
+Un critère juridique simple sépare ces établissements du champ statutaire des entreprises publiques : le statut des agents fixé par la loi n°85-78 ne vise que les sociétés dont le capital appartient *entièrement* à l'État ou aux collectivités publiques (voir le [régime conventionnel public](_regime_conventionnel.qmd)). Or les grandes banques publiques sont des sociétés anonymes à capital **mixte** — participation publique majoritaire, mais non exclusive —, de sorte que leurs agents relèvent du droit commun du travail et non d'un statut public. Les principales banques à participation publique majoritaire, ainsi que les parts correspondantes, sont récapitulées dans l'encadré ci-dessous.
+
+::: {.callout-note collapse="true"}
+## Principales banques à participation publique majoritaire
+
+D'après le *Rapport sur les entreprises publiques* annexé à la loi de finances pour 2021 (données arrêtées à fin 2019) [@minfin-ep], la participation de l'État et des actionnaires publics dans les trois principales banques publiques s'établit comme suit :
+
+- **Société tunisienne de banque (STB)** — capital de 776,9 MD ; participation publique **83,3 %**.
+- **Banque nationale agricole (BNA)** — capital porté de 176 MD (2018) à 320 MD (fin 2019) par conversion de créances de l'État (article 28 de la loi n°2018-56 du 27 décembre 2018 portant loi de finances pour 2019 [@loi2018-56-lf2019]) ; participation publique **50,23 %**.
+- **BH Bank** — capital de 238 MD ; participation publique **55,6 %**.
+
+Ces parts sont données à leur **date de référence (fin 2019)** et **évoluent** au gré des recapitalisations — comme l'illustre l'augmentation de capital de la BNA. Les agents de ces banques relèvent de la convention collective sectorielle des banques et établissements financiers [@cc-banques-2014].
+
+Cette liste n'est pas exhaustive : d'autres banques à participation publique — banques spécialisées (Banque tunisienne de solidarité, Banque de financement des PME) et banques mixtes à capitaux d'États tiers (Banque de Tunisie et des Émirats, Banque tuniso-libyenne, Tunisian Saudi Bank) — n'entrent pas dans l'échantillon chiffré du Rapport ; leur participation publique est attestée par leurs textes de création mais n'est pas reproduite ici faute de pourcentage officiel daté.
+
+Le même Rapport classe également dans le « secteur financier et assimilé » la Poste tunisienne (Office national des postes) et la Caisse des prêts et de soutien des collectivités locales (CPSCL) — établissements publics à caractère non administratif. Leur personnel relève toutefois d'un régime distinct (statut d'EPNA), et non de la convention collective des banques.
+:::
+
+<!-- TODO: intégration éventuelle des sociétés d'assurance publiques (code des assurances, loi n°92-24) et des institutions financières spécialisées / filiales (sociétés de leasing publiques, etc.) — à cadrer si le précis veut les couvrir. -->
+<!-- TODO: parts de capital des banques spécialisées/mixtes (BTS, BFPME, BTE, BTL, TSB) à sourcer une à une sur leurs textes fondateurs JORT (pist.tn) si l'on veut l'exhaustivité de l'encadré. -->
+
+Le trait juridique structurant est le suivant : les agents des banques — publiques comme privées — ne relèvent ni de la loi n°83-112 portant statut général de la fonction publique, ni du statut des agents des entreprises publiques, mais d'une **convention collective sectorielle de droit commun**, agréée par arrêté du ministre des Affaires sociales en application du Code du travail. La convention collective nationale du personnel des banques et des établissements financiers, dont la lignée remonte à un agrément de 1975, est aujourd'hui en vigueur dans sa version révisée agréée par arrêté du 17 février 2014 [@cc-banques-2014], complétée par des avenants successifs jusqu'à l'avenant n°5 (2022). Une convention sectorielle unique couvrant indistinctement banques publiques et privées : c'est la marque documentaire la plus nette de l'autonomie « proche du privé » qui caractérise ce régime.
 
 ## La construction de la rémunération
-<!-- TODO: grilles propres, politiques salariales d'entreprise, part variable -->
+
+La rémunération des agents repose sur un socle conventionnel de droit commun. La convention collective sectorielle des banques et établissements financiers [@cc-banques-2014] fixe la classification des emplois et les grilles applicables, dans le cadre de la négociation collective et de l'agrément ministériel prévus par le Code du travail. Ce mécanisme — distinct de la rémunération [indiciaire](#g-regime-indiciaire) de la fonction publique comme du barème statutaire des entreprises publiques — explique l'alignement de la rémunération de base sur la concurrence du secteur, banques publiques et privées étant soumises à la même convention.
+
+<!-- TODO: la structure détaillée (éléments permanents conventionnels, part variable / politique salariale propre à chaque établissement) n'est pas établie sur source primaire ; l'OCR du texte de la convention révisée 2014 et de ses avenants reste à faire pour citer les articles et les grilles. Ne pas restituer de montants ni de part variable chiffrée avant cette lecture. -->
+
+À cette autonomie salariale des agents répond l'autre versant du régime, qui en justifie le caractère « contrôlé » : la rémunération des **dirigeants** des entreprises publiques — y compris les banques à majorité publique — est encadrée par voie réglementaire au titre des prérogatives de l'État actionnaire. Le texte en vigueur est le décret n°2015-2217 du 11 décembre 2015 fixant les taux des éléments de rémunération des chefs d'établissements et entreprises publiques et de sociétés à majorité publique [@decret2015-2217]. Il s'inscrit dans une chaîne réglementaire continue : décret n°78-885 du 11 octobre 1978, puis décret n°90-1855 du 10 novembre 1990 fixant le régime de rémunération des chefs d'entreprises à majorité publique [@decret90-1855], et décret n°2014-12 du 10 janvier 2014.
+
+Le contraste est ainsi documenté : la rémunération des agents relève d'un mécanisme conventionnel de marché, tandis que celle des dirigeants est plafonnée par l'État actionnaire. C'est cette articulation qui matérialise le « marché contrôlé ».
+
+<!-- TODO: confirmer sur le PDF du décret 2015-2217 que les banques à majorité publique entrent bien dans le champ « entreprises publiques et sociétés à majorité publique » ; sourcer la circulaire d'application n°04 du 10 mars 2021. -->
 
 ## Les prélèvements sur la rémunération
-<!-- TODO: cotisations sociales, retenue à la source IRPP, CSS -->
+
+Parce que les agents des banques relèvent d'une convention de droit commun et non d'un statut public, ils sont affiliés au régime des salariés non agricoles géré par la [Caisse nationale de sécurité sociale (CNSS)](#g-cnss), institué par la loi n°60-30 du 14 décembre 1960 [@loi60-30]. Ce rattachement à la CNSS, et non à la CNRPS, se vérifie par le même discriminant que celui retenu pour le régime conventionnel public : les banques ne figurent pas sur la liste des organismes affiliés à la CNRPS fixée par le décret n°85-1025, et aucun régime spécial de retraite bancaire transféré à la CNRPS n'a été identifié.
+
+<!-- TODO: confirmer l'absence de tout régime de retraite complémentaire ou spécial propre à un établissement bancaire public particulier avant d'affirmer une affiliation CNSS sans exception ; taux de cotisation salarial/patronal exacts (décret de cotisation / fiche CLEISS), non reproduits ici. -->
+
+Les traitements versés sont soumis à la [retenue à la source](#g-retenue-a-la-source) au titre des traitements et salaires, en application du Code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés [@loi-irpp-is-1989] ; les modalités générales de cet impôt sont renvoyées à la partie consacrée à la fiscalité des revenus du travail.
+
+S'y ajoute la [contribution sociale de solidarité (CSS)](#g-css), applicable aux revenus salariaux, instituée par l'article 53 de la loi de finances pour 2018 [@loi2017-66-lf2018].
