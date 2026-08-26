@@ -231,8 +231,8 @@ entries:
   - id: regime-statutaire-autonome
     acronyme: null
     statut: provisoire
-    references: [loi83-112, loi91-62, loi67-29, loi67-20, loi82-70]
-    source_definition: {ref: loi83-112, locator: "art. 2"}
+    references: [loi83-112, loi67-29, loi67-20, loi82-70]
+    source_definition: {ref: loi83-112, locator: "art. 1er"}
     voir_aussi: [regime-indiciaire, fonction-publique, forces-de-securite-interieure, statut-particulier, magistrat, solde-militaire, pensions-civiles-militaires]
     fr:
       terme: Régime statutaire autonome
@@ -241,8 +241,8 @@ entries:
         (magistrats, militaires, forces de sécurité intérieure), détaché du
         statut commun de la fonction publique. Ce détachement procède d'une
         clause d'exclusion de champ, et non d'une sortie progressive : l'article
-        2 de la loi n°83-112 portant statut général, modifié par la loi
-        n°91-62 du 22 juillet 1991, écarte ces corps de son champ d'application
+        premier de la loi n°83-112 portant statut général écarte ces corps de
+        son champ d'application
         et les renvoie à leurs textes propres — loi n°67-29 (magistrats de
         l'ordre judiciaire), loi n°67-20 (militaires), loi n°82-70 (forces de
         sécurité intérieure). Le corps des agents des douanes relève, lui, d'un
@@ -254,8 +254,8 @@ entries:
         نظام تأجير خاصّ بأسلاك تتمتّع بنظام أساسي خاصّ (القضاة، العسكريون، قوات
         الأمن الداخلي)، منفصل عن النظام الأساسي العام للوظيفة العمومية. وهذا
         الانفصال ناتج عن بند استثناء من مجال التطبيق، لا عن خروج تدريجي: فالفصل
-        2 من القانون عدد 83-112 المتعلّق بالنظام الأساسي العام، المنقَّح بالقانون
-        عدد 91-62 المؤرّخ في 22 جويلية 1991، يُخرج هذه الأسلاك من مجال تطبيقه
+        الأول من القانون عدد 83-112 المتعلّق بالنظام الأساسي العام يُخرج هذه
+        الأسلاك من مجال تطبيقه
         ويحيلها إلى نصوصها الخاصّة — القانون عدد 67-29 (القضاة العدليون)،
         والقانون عدد 67-20 (العسكريون)، والقانون عدد 82-70 (قوات الأمن الداخلي).
         أمّا سلك أعوان الديوانة فيخضع لنظام أساسي منفصل آخر (القانون عدد 95-46).
@@ -544,7 +544,7 @@ entries:
     acronyme: null
     statut: provisoire
     references: [decret-2007-268]
-    voir_aussi: [regime-indiciaire, traitement-de-base, grille-des-salaires]
+    voir_aussi: [regime-indiciaire, traitement-de-base, grille-des-salaires, chiffre-indiciaire]
     fr:
       terme: Valeur du point d'indice
       definition: >
@@ -638,27 +638,83 @@ entries:
         لثنائي رتبة × درجة في الشبكة.
       synonymes: []
 
+  - id: avancement-echelon
+    acronyme: null
+    statut: provisoire  # équivalent AR (الترقّي في الدرجة) à valider par un locuteur — cf. issue #77
+    references: [loi83-112]
+    source_definition: {ref: loi83-112, locator: "art. 23-24"}
+    voir_aussi: [regime-indiciaire, echelon, grade, traitement-de-base]
+    fr:
+      terme: Avancement d'échelon
+      definition: >
+        Progression d'un agent à l'échelon immédiatement supérieur de son grade.
+        Dans le régime indiciaire, l'avancement d'échelon est automatique : il
+        s'opère selon les cadences fixées par les statuts particuliers de chaque
+        corps (loi n°83-112 portant statut général, art. 23 et 24).
+      synonymes: []
+    ar:
+      terme: الترقّي في الدرجة
+      definition: >
+        تقدّم العون إلى الدرجة الأعلى مباشرةً ضمن رتبته. وفي النظام الاستدلالي
+        للتأجير، يكون الترقّي في الدرجة آليًّا: إذ يتمّ وفق الإيقاعات التي تضبطها
+        الأنظمة
+        الأساسية الخاصّة بكلّ سلك (القانون عدد 83-112 المتعلّق بالنظام الأساسي
+        العام، الفصلان 23 و24).
+      synonymes: []
+
   - id: categorie-de-grade
     acronyme: null
     statut: valide
-    references: [decret-99-12]
+    references: [decret-99-12, decret-2003-2338]
     source_definition: {ref: decret-99-12}
     source_traduction: {ref: decret-99-12}
     voir_aussi: [grade, echelon, regime-indiciaire, grille-des-salaires]
     fr:
       terme: Catégorie de grade
       definition: >
-        Regroupement hiérarchique des grades de la fonction publique, fixé par
-        le décret n°99-12 du 4 janvier 1999 (modifié) ; ce classement organise
-        les corps en catégories et sert de support à la grille de traitement de
-        base.
+        Classement hiérarchique des grades de la fonction publique fixé par le
+        décret n°99-12 du 4 janvier 1999 (modifié), qui répartit les grades en
+        quatre catégories A, B, C et D selon le niveau de diplôme exigé au
+        recrutement par concours externe ; ce classement sert de support à la
+        grille de traitement de base.
+        La catégorie A (art. 2) comprend trois sous-catégories : A1, recrutement
+        au niveau du mastère au moins, ou du diplôme national d'ingénieur, ou
+        équivalent (les anciens diplômes de troisième cycle — DEA/DESS —
+        antérieurs à la réforme LMD restent admis ; sous-catégorie réécrite par
+        le décret n°2003-2338 du 11 novembre 2003) (usuellement conception,
+        cadres supérieurs) ; A2, niveau de la maîtrise au moins ou équivalent ; A3,
+        niveau du premier cycle de l'enseignement supérieur au moins ou
+        équivalent (A2 et A3 usuellement encadrement). La catégorie B (art. 3)
+        correspond au baccalauréat au moins ou équivalent (usuellement
+        maîtrise). La catégorie C (art. 4) correspond au cycle primaire achevé
+        et à la 6ᵉ année secondaire au moins, ou au diplôme de fin d'études de
+        l'enseignement de base et à la 3ᵉ année secondaire. La catégorie D
+        (art. 5) correspond au cycle primaire achevé et à la 3ᵉ année secondaire
+        au moins, ou au diplôme de fin d'études de l'enseignement de base (C et D
+        usuellement exécution). Les diplômes de formation homologués au niveau
+        requis sont admis dans chaque catégorie.
       synonymes: []
     ar:
       terme: صنف الرتبة
       definition: >
-        تجميع هرمي لرتب الوظيفة العمومية، يُضبَط بمقتضى الأمر عدد 99-12 المؤرّخ
-        في 4 جانفي 1999 (المنقَّح)؛ وينظّم هذا التصنيف الأسلاك في أصناف ويُتّخذ
-        أساسًا لشبكة المرتّب الأساسي.
+        تصنيف هرمي لرتب الوظيفة العمومية يُضبَط بمقتضى الأمر عدد 99-12 المؤرّخ في
+        4 جانفي 1999 (المنقَّح)، يوزّع الرتب على أربعة أصناف A وB وC وD حسب مستوى
+        الشهادة المطلوبة عند الانتداب عن طريق المناظرة الخارجية؛ ويُتّخذ هذا
+        التصنيف أساسًا لشبكة المرتّب الأساسي.
+        يشمل الصنف A (الفصل 2) ثلاثة أصناف فرعية: A1، الانتداب في مستوى الماجستير
+        على الأقلّ، أو الشهادة الوطنية للمهندس، أو ما يعادلها (مع قبول شهادات
+        الدراسات العليا في المرحلة الثالثة — الدراسات المعمّقة والدراسات المعمّقة
+        المتخصّصة — السابقة لإصلاح نظام «إجازة-ماجستير-دكتوراه»؛ صنف فرعي أُعيدت
+        صياغته بمقتضى الأمر عدد 2003-2338 المؤرّخ في 11 نوفمبر 2003) (عادةً
+        التصوّر والإطارات العليا)؛ A2، مستوى الأستاذية على الأقلّ أو ما
+        يعادلها؛ A3، مستوى المرحلة الأولى من التعليم العالي على الأقلّ أو ما
+        يعادلها (A2 وA3 عادةً التأطير). ويقابل الصنف B (الفصل 3) شهادة الباكالوريا
+        على الأقلّ أو ما يعادلها (عادةً الكفاءة). ويقابل الصنف C (الفصل 4) إتمام
+        المرحلة الابتدائية والسنة السادسة من التعليم الثانوي على الأقلّ، أو شهادة
+        ختم التعليم الأساسي والسنة الثالثة من التعليم الثانوي. ويقابل الصنف D
+        (الفصل 5) إتمام المرحلة الابتدائية والسنة الثالثة من التعليم الثانوي على
+        الأقلّ، أو شهادة ختم التعليم الأساسي (C وD عادةً التنفيذ). وتُقبل في كلّ
+        صنف شهادات التكوين المعادَلة للمستوى المطلوب.
       synonymes: []
 
   - id: grille-des-salaires
@@ -691,22 +747,27 @@ entries:
   - id: echelonnement-indiciaire
     acronyme: null
     statut: provisoire
-    references: [decret-99-12]
-    voir_aussi: [categorie-de-grade, grade, echelon, regime-indiciaire]
+    references: [decret-60-328, decret-73-316, decret-99-12]
+    voir_aussi: [categorie-de-grade, grade, echelon, regime-indiciaire, chiffre-indiciaire]
     fr:
       terme: Échelonnement indiciaire
       definition: >
         Classement hiérarchique des grades d'un corps les uns par rapport aux
-        autres, fixé par les décrets de classement par corps ; il situe chaque
+        autres. Il était fixé, corps par corps, par une longue série de décrets
+        « relatifs au classement hiérarchique et à l'échelonnement indiciaire »,
+        qui attribuaient à chaque grade son chiffre indiciaire (au moins depuis
+        le décret n°60-328 de 1960). Depuis 1998, ce classement situe chaque
         grade dans la grille de traitement de base sans recourir à une valeur du
         point d'indice.
       synonymes: [classement hiérarchique]
     ar:
       terme: التدرّج القياسي
       definition: >
-        ترتيبٌ هرمي لرتب السلك بعضها بالنسبة إلى بعض، تضبطه أوامر التصنيف حسب
-        الأسلاك؛ ويحدّد موقع كلّ رتبة في شبكة المرتّب الأساسي دون اللجوء إلى
-        قيمة نقطة استدلالية.
+        ترتيبٌ هرمي لرتب السلك بعضها بالنسبة إلى بعض. وقد كانت تضبطه، سلكًا
+        سلكًا، سلسلةٌ طويلة من الأوامر «المتعلقة بالتصنيف الهرمي والتدرّج
+        القياسي» التي تُسنِد لكلّ رتبة رقمها القياسي (منذ الأمر عدد 60-328
+        لسنة 1960 على الأقلّ). ومنذ سنة 1998، يحدّد هذا الترتيب موقع كلّ رتبة
+        في شبكة المرتّب الأساسي دون اللجوء إلى قيمة نقطة استدلالية.
       synonymes: [التصنيف الهرمي]
 
   - id: indemnite-specifique
@@ -995,3 +1056,157 @@ entries:
         هيكل يدير النظام الموحَّد للتأمين على المرض (أُحدث سنة 2004)؛ مؤسسة
         عمومية لا تكتسي صبغة إدارية تحت إشراف وزارة الشؤون الاجتماعية.
       synonymes: []
+
+  - id: service-fait
+    acronyme: null
+    statut: valide
+    references: [loi83-112, loi73-81]
+    source_definition: {ref: loi83-112, locator: "art. 13"}
+    source_traduction: {ref: loi83-112}
+    voir_aussi: [traitement-de-base, regime-indiciaire, masse-salariale]
+    fr:
+      terme: Service fait
+      definition: >
+        Règle selon laquelle le droit à rémunération de l'agent public naît de
+        l'exécution effective du service, et non de sa seule qualité d'agent.
+        Posée par le statut général — les agents « ont droit, après service
+        fait, à une rémunération » (loi n°83-112, art. 13) —, elle prolonge un
+        principe général des finances publiques : aucun paiement ne peut être
+        effectué qu'au véritable créancier justifiant de ses droits et pour
+        l'acquittement d'un service fait (Code de la comptabilité publique,
+        art. 41).
+      synonymes: []
+    ar:
+      terme: قاعدة الخدمة المنجزة
+      definition: >
+        قاعدة مفادها أنّ حقّ العون العمومي في الأجر ينشأ عن الأداء الفعلي
+        للخدمة، لا عن مجرّد صفته كعون. أقرّها النظام الأساسي العام — إذ
+        «للأعوان الحقّ في أجر بعد أداء الخدمة» (القانون عدد 83-112، الفصل 13)
+        — وهي امتداد لمبدإٍ عامّ في المالية العمومية: لا يُصرف أيّ دفع إلّا
+        للدائن الحقيقي المثبت لحقوقه ومقابل خدمة منجزة (مجلة المحاسبة
+        العمومية، الفصل 41).
+      synonymes: [أداء الخدمة]
+
+  - id: chiffre-indiciaire
+    acronyme: null
+    statut: provisoire
+    references: [decret-73-316, decret-79-93, decret-60-328]
+    voir_aussi: [point-indice, echelonnement-indiciaire, regime-indiciaire, traitement-de-base]
+    fr:
+      terme: Chiffre indiciaire
+      definition: >
+        Nombre affecté à chaque emploi ou grade dans le système de rémunération
+        en vigueur avant 1998, et à partir duquel le traitement était calculé.
+        Les décrets de « classement hiérarchique et échelonnement indiciaire »
+        attribuaient l'indice, tandis que des décrets « fixant le traitement
+        global annuel » lui donnaient sa valeur en dinars. Ce mécanisme de
+        conversion a disparu avec le décret n°97-1832, sans que le régime cesse
+        d'être appelé « indiciaire ».
+      synonymes: [indice]
+    ar:
+      terme: الرقم القياسي
+      definition: >
+        عددٌ يُسنَد إلى كلّ خطّة أو رتبة في نظام التأجير الذي كان ساريًا قبل
+        سنة 1998، ويُحتسَب على أساسه المرتّب. فأوامر «التصنيف الهرمي والتدرّج
+        القياسي» كانت تُسنِد الرقم، في حين أنّ أوامر «ضبط المرتّب الجملي
+        السنوي» كانت تحدّد قيمته بالدينار. وقد زالت آليّة التحويل هذه بمقتضى
+        الأمر عدد 97-1832، دون أن يكفّ النظام عن تسميته «استدلاليًّا».
+      synonymes: []
+
+  - id: indemnite-compensatrice
+    acronyme: null
+    statut: provisoire
+    references: [decret-97-1832, decret-97-2127]
+    voir_aussi: [traitement-de-base, indemnite-specifique, chiffre-indiciaire]
+    fr:
+      terme: Indemnité compensatrice
+      definition: >
+        Indemnité instituée par le décret n°97-1832 lors du passage du calcul
+        indiciaire à une grille libellée en dinars, et dont le régime est
+        précisé par le décret n°97-2127. Sa fonction est de neutraliser, au
+        niveau individuel, les pertes que la substitution de barème aurait pu
+        faire subir à certains agents.
+      synonymes: []
+    ar:
+      terme: المنحة التعويضية
+      definition: >
+        منحة أُحدثت بمقتضى الأمر عدد 97-1832 عند الانتقال من الاحتساب
+        الاستدلالي إلى شبكة محرَّرة بالدينار، وضبط الأمر عدد 97-2127 نظامها.
+        وتتمثّل وظيفتها في تحييد ما كان يمكن أن يلحق بعض الأعوان من خسائر على
+        المستوى الفردي جرّاء تعويض سلّم بآخر.
+      synonymes: []
+
+  - id: agent-temporaire
+    acronyme: null
+    statut: provisoire
+    references: [decret-73-316]
+    voir_aussi: [fonction-publique, ouvrier-de-l-etat, chiffre-indiciaire]
+    fr:
+      terme: Agent temporaire
+      definition: >
+        Catégorie d'agents publics distincte des fonctionnaires titulaires et
+        des ouvriers, dotée avant 1998 de sa propre chaîne de textes de
+        classement et de rémunération (décret n°73-316), et faisant l'objet
+        d'une grille distincte dans les barèmes postérieurs.
+      synonymes: []
+    ar:
+      terme: العون الوقتي
+      definition: >
+        صنفٌ من الأعوان العموميين متميّز عن الموظفين المرسَّمين وعن العملة،
+        كانت له قبل سنة 1998 سلسلة نصوص خاصّة به في التصنيف والتأجير (الأمر
+        عدد 73-316)، وله شبكة مستقلّة في السلالم اللاحقة.
+      synonymes: [الأعوان الوقتيون]
+
+  - id: ouvrier-de-l-etat
+    acronyme: null
+    statut: provisoire
+    references: [decret-73-384, decret-79-94]
+    voir_aussi: [agent-temporaire, fonction-publique, chiffre-indiciaire]
+    fr:
+      terme: Ouvrier de l'État
+      definition: >
+        Agent public relevant du statut du personnel ouvrier de l'État, des
+        collectivités publiques locales et des établissements publics à
+        caractère administratif (décret n°73-384). Distincts des fonctionnaires
+        depuis le statut des ouvriers permanents de 1956, les ouvriers ont
+        toujours été rémunérés sur une grille propre ; ils sont classés par
+        « unités » et apparaissent à ce titre dans les accords salariaux.
+      synonymes: [personnel ouvrier]
+    ar:
+      terme: عامل الدولة
+      definition: >
+        عونٌ عمومي يخضع للنظام الأساسي لعملة الدولة والجماعات العمومية المحلية
+        والمؤسسات العمومية ذات الصبغة الإدارية (الأمر عدد 73-384). وقد ظلّ
+        العملة، المتميّزون عن الموظفين منذ النظام الأساسي لعملة الدولة
+        القارّين لسنة 1956، يُؤجَّرون وفق شبكة خاصّة بهم؛ ويُصنَّفون في
+        «وحدات» ويردون بهذه الصفة في الاتفاقيات الأجرية.
+      synonymes: [العملة]
+
+  - id: promotion
+    acronyme: null
+    statut: valide
+    references: [loi83-112, loi97-83, decret-2007-268]
+    source_definition: {ref: loi83-112, locator: "art. 28"}
+    source_traduction: {ref: loi83-112}
+    voir_aussi: [avancement-echelon, grade, echelon, traitement-de-base]
+    fr:
+      terme: Promotion
+      definition: >
+        Accession du fonctionnaire au grade immédiatement supérieur à celui
+        dont il est titulaire (loi n°83-112, art. 28). Elle emprunte deux
+        voies : le concours interne, l'examen professionnel ou le cycle de
+        formation ; ou le choix, sur liste d'aptitude établie après
+        consultation de la commission administrative paritaire. À la différence
+        de l'avancement d'échelon, automatique et lié à l'ancienneté, la
+        promotion fait intervenir la sélection et la manière de servir.
+      synonymes: [avancement de grade]
+    ar:
+      terme: الترقية
+      definition: >
+        ارتقاء الموظّف إلى الرتبة الموالية مباشرةً للرتبة التي هو متحصّل عليها
+        (القانون عدد 83-112، الفصل 28). وتتمّ بطريقتين: المناظرة الداخلية أو
+        الامتحان المهني أو دورة التكوين؛ أو بالاختيار، على أساس قائمة كفاءة
+        تُضبط بعد استشارة اللجنة الإدارية المتناصفة. وخلافًا للترقية في الدرجة
+        التي تتمّ آليًّا حسب الأقدمية، تُدخل الترقية في الرتبة عنصر الانتقاء
+        وطريقة أداء العمل.
+      synonymes: [الترقية في الرتبة]

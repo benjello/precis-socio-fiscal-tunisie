@@ -374,3 +374,142 @@ capital BNA) : clé **absente** de tous les `references.json` (FR/AR/partagé). 
 de `COLLECTION_TO_BOOK` (`scripts/sync_biblio.py`) → créer une collection Zotero dédiée + mapping,
 ou ranger en « Commun ».
 - Contrôle : rendu FR `remunerations_publiques` OK, **0 `[?]`**. JSON FR et AR valides (45 items chacun).
+
+#### Suppression loi91-62 + création decret-2022-797 & loi-org-2018-29-ccl (B.1) — passe bibliographe 12/06/2026
+
+`loi91-62` (Loi n°91-62 du 22 juillet 1991) : **SUPPRIMÉE** (FR + AR). Créée sur prémisse fausse
+(« modifie l'art. 2 de la loi 83-112 / clause d'exclusion ») ; l'exclusion des corps à statut
+spécial est en réalité à l'**art. 1er** de la loi 83-112 (texte 1983), sans modification de 1991.
+Plus aucune prose `.qmd` (FR/AR) ne cite `@loi91-62` (seule occurrence résiduelle : le fichier
+généré `_glossaire.qmd`, régénéré au build depuis `precis/glossaire.yml` qui pointe désormais
+`loi83-112` art. 1er — pas d'édition manuelle d'un fichier généré).
+
+`decret-2022-797` (Décret n°2022-797 du 8 novembre 2022, programme/montants de l'augmentation
+générale des salaires, années 2023-2024-2025) : **créé** FR + AR. Cité en B.1 (`_regime_indiciaire`).
+Résolution `jort_cache.db` (recid 170029) : JORT n°120/2022.
+- FR : `pdf_fr` = `https://www.pist.tn/jort/2022/2022F/Jo1202022.pdf`.
+- AR : `pdf_ar` = `https://www.pist.tn/jort/2022/2022A/Ja1202022.pdf` (lu dans le champ, pas dérivé).
+- **TODO objet AR** : l'objet du cache est en français ; titre AR = dénomination factuelle, à
+  confirmer sur titre officiel JORT AR.
+
+`loi-org-2018-29-ccl` (Loi organique n°2018-29 du 9 mai 2018, Code des collectivités locales) :
+**créée** FR + AR. Citée en B.1 (`_regime_indiciaire`). Résolution `jort_cache.db` (recid 108664) :
+JORT n°39/2018.
+- **FR : pas d'URL** + **TODO URL FR** (`pdf_fr` VIDE/NULL dans le cache ; ne pas dériver `Ja→Jo`).
+- AR : `pdf_ar` = `https://www.pist.tn/jort/2018/2018A/Ja0392018.pdf`. Objet AR officiel repris du
+  cache (`يتعلق بمجلة الجماعات المحلية`) — pas de TODO objet AR.
+
+`ugtt-pv-augmentation-2022` (PV d'accord UGTT–gouvernement sur l'augmentation des salaires
+de la fonction publique et du secteur public, séance du 14 sept. 2022, publié le 16 sept. 2022) :
+**créé** FR + AR. Cité en B.1 (`_regime_indiciaire`) comme source de **contexte** (dialogue
+social), jamais opposable (opposabilité = `decret-2022-797`).
+- URL page : `https://www.ugtt.org.tn/?p=7841`. Scans sources : `uploads/2022/09/01-1.jpg`,
+  `02-1.jpg`, `03-1.jpg` (TLS UGTT non vérifiable → `curl -sk`).
+- **PDF local** : `biblio_pdfs/ugtt_pv_augmentation_2022.pdf` (3 pages, assemblage des 3 scans ;
+  dossier gitignoré). À joindre comme pièce jointe Zotero au rapatriement.
+- Titre AR repris du titre du PV publié par l'UGTT (pas de rédaction AR à la main).
+- Scans connexes **archivés mais NON cités** (pas d'entrée CSL créée — non opposables,
+  pas de décret JORT) : `biblio_pdfs/ugtt_table_fp_2017_2018.pdf` (cycle FP 2017-2018,
+  table désormais lisible — cf. note b1 §effort OCR) et
+  `biblio_pdfs/ugtt_pv_secteur_public_2018.pdf` (PV secteur public 2017-2019, périmètre
+  B.3). À ne créer en référence que si un décret JORT de mise en œuvre est identifié.
+
+À rapatrier dans Zotero (provisoires, NE PAS pousser sans feu vert) : `decret-2022-797`,
+`loi-org-2018-29-ccl` (FR + AR), `ugtt-pv-augmentation-2022` (FR + AR, + PDF joint). Livre
+`remunerations_publiques` **toujours absent** de `COLLECTION_TO_BOOK` → collection Zotero dédiée
++ mapping, ou « Commun ».
+
+### Apports « précis ajouts.docx » — passe du 26/08/2026 (B.1 et B.2)
+
+15 entrées **créées à la main** FR + AR dans
+`precis/{fr,ar}/remunerations_publiques/references.json`, toutes résolues au rendu
+(`quarto render` FR et AR OK). **Aucune n'est encore dans Zotero.**
+
+URLs JORT dérivées de `jort_cache.db` selon la règle par langue déjà posée plus haut
+(FR = `Jo…` sous `<annee>F/`, AR = `Ja…` sous `<annee>A/`) ; le motif
+`Jo<NNN><aa>.pdf` (avant 2000) / `Jo<NNN><aaaa>.pdf` (à partir de 2000) a été vérifié sur
+quatre échantillons (1959, 1960, 1973, 2004).
+
+#### Ancien régime indiciaire (nouvelle sous-section B.1)
+
+| Clé | Référence | JORT |
+|---|---|---|
+| `decret-60-328` | Décret n°60-328 du 17 sept. 1960, classement hiérarchique et échelonnements indiciaires (cadres du secrétariat d'État à la santé publique) | n°44/1960, p. 1218-1221 |
+| `decret-73-316` | Décret n°73-316 du 27 juin 1973, classement hiérarchique et échelonnement indiciaire des **agents temporaires** | n°25/1973, p. 1026-1027 |
+| `decret-73-384` | Décret n°73-384 du 10 août 1973, statut du **personnel ouvrier** de l'État | n°31/1973 |
+| `decret-75-353` | Décret n°75-353 du 3 juin 1975, fixant le **traitement global annuel** | n°38/1975 |
+| `decret-79-93` | Décret n°79-93 du 11 janv. 1979, fixant le traitement global annuel | n°5/1979 |
+| `decret-79-94` | Décret n°79-94 du 11 janv. 1979, modifiant le décret n°73-384 (ouvriers) | n°5/1979 |
+
+Série « traitement global annuel » **incomplète** : les décrets n°77-122 (16 fév. 1977),
+n°78-53 (25 janv. 1978), n°78-923 (23 oct. 1978) et n°80-128 (12 fév. 1980) sont identifiés
+au JORT et cités dans le texte **sans clé CSL** (mention en toutes lettres). À créer si l'on
+veut une chronologie citée pièce par pièce.
+
+#### Bascule de 1997-1998 et statut général
+
+| Clé | Référence | JORT |
+|---|---|---|
+| `decret-97-2127` | Décret n°97-2127 du 10 nov. 1997, **indemnités compensatrices** instituées par le décret n°97-1832 | n°93/1997, p. 2081 |
+| `loi97-83` | Loi n°97-83 du 20 déc. 1997, modifiant la loi n°83-112 (art. 28 bis, 33, 37, 38) | n°103/1997 |
+| `loi59-12` | Loi n°59-12 du 5 fév. 1959, **fixant le statut des fonctionnaires de l'État** | n°8/1959, p. 84-90 |
+
+⚠ **Intitulé** : `loi59-12` s'intitule au JORT « *fixant le statut des fonctionnaires de
+l'État* », et non « portant statut général des fonctionnaires » comme on le lit souvent.
+
+#### Fondements transversaux
+
+| Clé | Référence | JORT |
+|---|---|---|
+| `loi73-81` | Loi n°73-81 du 31 déc. 1973, promulguant le **Code de la comptabilité publique** | n°51/1973 |
+| `loi2004-71` | Loi n°2004-71 du 2 août 2004, instituant le régime d'**assurance maladie** (CNAM) | n°63/2004, p. 2228-2230 |
+| `loi95-56` | Loi n°95-56 du 28 juin 1995, régime particulier de réparation des **AT/MP dans le secteur public** | n°53/1995 |
+
+`loi73-81` : le code est publié en entier dans le JORT n°51/1973 mais **éclaté en 26 notices**
+dans le cache (une par titre/chapitre) ; l'URL retenue est celle du fascicule. Les articles 41
+et 42 ont été **vérifiés sur la version consolidée du ministère des Finances**
+(`https://www.finances.gov.tn/sites/default/files/2018-11/code_compta_fr.pdf`), mentionnée
+dans le champ `note`.
+
+#### Statuts autonomes (B.2)
+
+| Clé | Référence | JORT |
+|---|---|---|
+| `decret-71-222` | Décret n°71-222 du 29 mai 1971, rémunération du personnel de la **Cour des comptes** | n°25/1971 |
+| `decret-73-58` | Décret n°73-58 du 14 fév. 1973, indemnités servies au personnel du **Tribunal administratif** | n°7/1973 |
+
+Chaînes de modification **citées en toutes lettres, sans clés CSL** (à créer si le chapitre
+passe des structures aux montants) : solde militaire (n°87-878, 88-263, 88-909, 2002-1973,
+2004-2127, 2005-3382, 2007-2408, 2010-2935) et **indemnité de magistrature** (n°2001-2125,
+2001-2775, 2001-2776 ; 2009-2791, 2009-2792, 2009-2826 ; 2010-1749, 2010-1751, 2010-2521 ;
+2012-3552, 2012-3553, 2012-3554 ; 2017-1361, 2017-1362, 2017-1364 ; 2018-73) — chacun à
+vérifier sur `jort_cache.db` avant création.
+
+#### Doctrine — entrée INCOMPLÈTE
+
+`cherif-kammoun-tajir` : Salah Eddine Chérif & Maher Kammoun,
+*سلسلة قانون الوظيفة العمومية في تونس، الجزء الرابع: نظام التأجير بالوظيفة العمومية*.
+**Éditeur, année et ISBN manquants** — la couverture du scan fourni est illisible.
+À compléter avant publication.
+
+Rôle éditorial strict : cette référence sert uniquement à **attribuer** deux affirmations non
+vérifiées sur source primaire — (a) l'ordre du 23 mai 1949 et ses articles 103 à 105
+(indices 100-800, catégories A/B/C/D), (b) la date d'effet au 1^er^ janvier 1998 du décret
+n°97-1832 et la publication des grilles en trois tableaux. Elle ne vaut jamais source
+opposable.
+
+⚠ **Erreur de la source à ne pas propager** : l'ouvrage date le décret n°97-1832 du
+**10 novembre 1997**. La date exacte est le **16 septembre 1997** (JORT n°76, publié le
+23 sept. 1997) — `decret-97-1832` est correct et ne doit pas être « corrigé ». L'erreur vient
+probablement du lot d'application du 10 novembre 1997 (décrets n°97-2127 à 97-2134).
+
+#### Contenu non lu — limite commune à ces entrées
+
+**pist.tn est injoignable depuis l'environnement de rédaction** (`ECONNREFUSED` sur
+164.160.2.73:443, comme gbo.tn). Sauf `loi73-81` et `loi97-83` (vérifiés sur versions
+consolidées hors JORT), ces entrées reposent sur les **métadonnées** de `jort_cache.db`
+— numéro, date, intitulé, fascicule, pagination — et **non** sur la lecture du texte.
+Les intitulés sont donc fiables, les contenus ne le sont pas : aucun montant ni aucune
+disposition n'est cité d'après elles.
+
+À rapatrier dans Zotero (provisoires, NE PAS pousser sans feu vert) : les 15 clés ci-dessus.
