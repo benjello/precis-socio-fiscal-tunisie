@@ -1,9 +1,43 @@
 import time
 import os
+import re
 import sys
 import subprocess
 from google import genai
 from google.genai import types
+
+CITATION_RE = re.compile(r"\[@([A-Za-z][A-Za-z0-9_-]*),\s*([^\]]+)\]")
+ARABIC_RE = re.compile(r"[\u0600-\u06FF]")
+
+
+def restore_locators(source_text, translated_text):
+    """Rétablit les locateurs de citation dans leur forme d'origine.
+
+    Le contenu qui suit la virgule dans `[@ref, art. 13]` est de la SYNTAXE de
+    citation, pas de la prose : il doit rester tel quel. Le modèle le traduit
+    malgré la consigne — « art. 5 à 7 » devient « art. 5 إلى 7 » —, et c'est
+    une transformation assez mécanique pour être défaite ici plutôt que
+    négociée à chaque passe.
+
+    Prudence : on ne recopie que si les clés apparaissent dans le même ordre et
+    en même nombre des deux côtés. Sinon on ne touche à rien, et le contrôle de
+    parité signalera l'écart.
+    """
+    src = CITATION_RE.findall(source_text)
+    dst = CITATION_RE.findall(translated_text)
+    if len(src) != len(dst) or [k for k, _ in src] != [k for k, _ in dst]:
+        return translated_text
+
+    locators = iter(loc for _, loc in src)
+
+    def swap(match):
+        source_locator = next(locators)
+        if ARABIC_RE.search(match.group(2)):
+            return f"[@{match.group(1)}, {source_locator}]"
+        return match.group(0)
+
+    return CITATION_RE.sub(swap, translated_text)
+
 
 def get_git_diff(base_sha, head_sha, file_path):
     try:
@@ -186,6 +220,8 @@ Fichier à traduire :
             elif translated_text.endswith("\n```"):
                 translated_text = translated_text[:-4]
                 
+            translated_text = restore_locators(new_source_text, translated_text)
+
             os.makedirs(os.path.dirname(target_path), exist_ok=True)
             with open(target_path, "w", encoding="utf-8") as f:
                 f.write(translated_text)
