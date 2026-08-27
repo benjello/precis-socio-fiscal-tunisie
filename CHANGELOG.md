@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.1](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.10.0...v1.10.1) (2026-08-27)
+
+
+### 📝 Documentation
+
+* **notes:** conserve l'analyse du rapport INS et ses figures à produire ([a8e4a3f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/a8e4a3f07b8ef0263815356cdbcc98d5a2ab829c))
+
 ## [1.10.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.9.0...v1.10.0) (2026-08-27)
 
 
