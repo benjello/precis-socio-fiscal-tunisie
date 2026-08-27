@@ -132,7 +132,7 @@
    "id": "decret-97-1832",
    "type": "legislation",
    "title": "Décret n°97-1832 du 16 septembre 1997, fixant le traitement de base des personnels de l'État, des collectivités publiques locales et des établissements publics à caractère administratif",
-   "note": "citation-key: decret-97-1832 | JORT n°76 de 1997. Annexes chiffrées (grilles de traitement de base) incluses dans le JORT.",
+   "note": "citation-key: decret-97-1832 | JORT n°76 de 1997. Texte intégral LU sur le corpus local PDFs-legislation-tunisie (markdown_output/JORT/), pist.tn étant injoignable. Art. 2 et 12 : entrée en vigueur et effet au 1er janvier 1998. Art. 3 et 6 : composition de l'ancienne rémunération (traitement indiciaire + indemnité complémentaire + indemnité provisoire complémentaire) et reclassement avec indemnité compensatrice. Art. 10 : reclassement après promotion (abrogé et remplacé par le décret n°2007-268, art. 2). Art. 11 : abrogation des dispositions antérieures. VISA NOTABLE : « Vu le décret du 23 mai 1949, portant fixation du budget de l'exercice 1949-1950 » et « Vu la loi n°83-112 [...] et notamment ses articles 13 et 14 ». Annexes chiffrées (grilles) incluses dans le JORT.",
    "issued": {
     "date-parts": [
      [
@@ -164,7 +164,7 @@
    "id": "decret-2007-268",
    "type": "legislation",
    "title": "Décret n°2007-268 du 12 février 2007, modifiant et complétant le décret n°97-1832 du 16 septembre 1997, fixant le traitement de base des personnels de l'État, des collectivités publiques locales et des établissements publics à caractère administratif",
-   "note": "citation-key: decret-2007-268 | JORT n°14 de 2007. Annexes chiffrées (nouvelle grille des salaires) incluses dans le JORT.",
+   "note": "citation-key: decret-2007-268 | JORT n°14 de 2007. Texte intégral LU sur le corpus local PDFs-legislation-tunisie (markdown_output/JORT/), pist.tn étant injoignable. Ne crée pas de grille autonome : modifie et complète le décret n°97-1832. Art. 1er : insère l'article 2 bis (intégration des montants transférés ; grille en trois tableaux — fonctionnaires, agents temporaires, ouvriers). Art. 2 : abroge et remplace l'article 10 du décret n°97-1832 (reclassement après promotion). Art. 3 : entrée en vigueur au 1er avril 2007. Annexes chiffrées (nouvelle grille des salaires) incluses dans le JORT.",
    "issued": {
     "date-parts": [
      [
@@ -817,7 +817,7 @@
    "id": "decret-97-2127",
    "type": "legislation",
    "title": "Décret n°97-2127 du 10 novembre 1997, relatif aux indemnités compensatrices instituées par le décret n°97-1832 du 16 septembre 1997, fixant le traitement de base des personnels de l'État, des collectivités publiques locales et des établissements publics à caractère administratif",
-   "note": "citation-key: decret-97-2127 | JORT n°93 de 1997, p. 2081. Appartient au lot de textes du 10 novembre 1997 accompagnant la réforme de 1997. Contenu non lu (pist.tn injoignable) : métadonnées JORT uniquement. Provisoire : à rapatrier dans Zotero.",
+   "note": "citation-key: decret-97-2127 | JORT n°93 de 1997, p. 2081. Texte intégral LU sur le corpus local PDFs-legislation-tunisie (markdown_output/JORT/), pist.tn étant injoignable. Art. 1-2 : maintien de l'indemnité compensatrice lors des avancements et extinction en cas de promotion ou de changement de grille. Art. 4 : double reclassement des agents au dernier échelon depuis 5 ans ou plus. Art. 5-7 : seconde indemnité compensant la cotisation retraite pour les agents à indice ≤ 200, résorbée puis éteinte à des niveaux fixés par catégorie. Provisoire : à rapatrier dans Zotero.",
    "issued": {
     "date-parts": [
      [
@@ -1035,7 +1035,22 @@
      "given": "Maher"
     }
    ],
-   "note": "citation-key: cherif-kammoun-tajir | Titre original : سلسلة قانون الوظيفة العمومية في تونس، الجزء الرابع: نظام التأجير بالوظيفة العمومية. INCOMPLET : éditeur, année et ISBN non déterminés (page de couverture du scan illisible) — à compléter avant publication. Source doctrinale, tierce main : sert uniquement à ATTRIBUER les affirmations relatives à l'ordre du 23 mai 1949 et à la date d'effet du décret n°97-1832 ; ne vaut pas source primaire. Provisoire : à rapatrier dans Zotero."
+   "note": "citation-key: cherif-kammoun-tajir | Titre original : سلسلة قانون الوظيفة العمومية في تونس، الجزء الرابع: نظام التأجير بالوظيفة العمومية. INCOMPLET : éditeur, année et ISBN non déterminés (couverture du scan illisible) — à compléter avant publication. Source doctrinale, tierce main. Portée réduite depuis la lecture du corpus local : la date d'effet au 1er janvier 1998, la structure en trois grilles et la nature budgétaire du texte de 1949 sont désormais établies sur source primaire. Ne sert plus qu'à attribuer le CONTENU des articles 103 à 105 du décret de 1949 (plages d'indices, quatre catégories). ATTENTION : l'ouvrage date le décret n°97-1832 du 10 novembre 1997 — c'est faux, il est du 16 septembre 1997. Provisoire : à rapatrier dans Zotero."
+  },
+  {
+   "id": "decret-1949-budget",
+   "type": "legislation",
+   "issued": {
+    "date-parts": [
+     [
+      1949,
+      5,
+      23
+     ]
+    ]
+   },
+   "note": "citation-key: decret-1949-budget | PAS D'URL ni de numéro JORT : le corpus JORT disponible ne remonte pas à 1949. Texte IDENTIFIÉ par le visa du décret n°97-1832 (« Vu le décret du 23 mai 1949, portant fixation du budget de l'exercice 1949-1950 »), lu sur le corpus local — son existence, son intitulé et son maintien en vigueur jusqu'en 1997 sont donc établis sur source primaire. Son CONTENU (art. 103-105, système des chiffres indiciaires) reste attribué à cherif-kammoun-tajir. TODO : retrouver le texte. Provisoire : à rapatrier dans Zotero.",
+   "title": "Décret du 23 mai 1949, portant fixation du budget de l'exercice 1949-1950"
   }
  ]
 }

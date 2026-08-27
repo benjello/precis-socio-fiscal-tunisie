@@ -1115,25 +1115,34 @@ entries:
 
   - id: indemnite-compensatrice
     acronyme: null
-    statut: provisoire
+    statut: valide
     references: [decret-97-1832, decret-97-2127]
-    voir_aussi: [traitement-de-base, indemnite-specifique, chiffre-indiciaire]
+    source_definition: {ref: decret-97-1832, locator: "art. 6"}
+    source_traduction: {ref: decret-97-2127}
+    voir_aussi: [traitement-de-base, indemnite-specifique, chiffre-indiciaire, promotion]
     fr:
       terme: Indemnité compensatrice
       definition: >
-        Indemnité instituée par le décret n°97-1832 lors du passage du calcul
-        indiciaire à une grille libellée en dinars, et dont le régime est
-        précisé par le décret n°97-2127. Sa fonction est de neutraliser, au
-        niveau individuel, les pertes que la substitution de barème aurait pu
-        faire subir à certains agents.
+        Différentiel alloué lors du passage du calcul indiciaire à la grille en
+        dinars de 1998, égal à l'écart entre l'ancienne rémunération de base de
+        l'agent et l'échelon de la nouvelle grille auquel il est reclassé
+        (décret n°97-1832, art. 6). Ce n'est pas un complément pérenne : elle est
+        maintenue lors des avancements d'échelon mais cesse d'être servie en cas
+        de promotion, de changement de grille ou au terme du dépassement du
+        dernier échelon du grade, l'agent étant alors rangé au traitement
+        immédiatement supérieur à la somme de son traitement et de son indemnité
+        (décret n°97-2127, art. 1 et 2).
       synonymes: []
     ar:
       terme: المنحة التعويضية
       definition: >
-        منحة أُحدثت بمقتضى الأمر عدد 97-1832 عند الانتقال من الاحتساب
-        الاستدلالي إلى شبكة محرَّرة بالدينار، وضبط الأمر عدد 97-2127 نظامها.
-        وتتمثّل وظيفتها في تحييد ما كان يمكن أن يلحق بعض الأعوان من خسائر على
-        المستوى الفردي جرّاء تعويض سلّم بآخر.
+        فارقٌ يُسنَد عند الانتقال من الاحتساب الاستدلالي إلى الشبكة المحرَّرة
+        بالدينار لسنة 1998، يساوي الفرق بين الأجر الأساسي القديم للعون والدرجة
+        التي أُعيد ترتيبه فيها ضمن الشبكة الجديدة (الأمر عدد 97-1832، الفصل 6).
+        وهي ليست مكمّلًا دائمًا: إذ تُحافَظ عليها عند الترقية في الدرجة، لكنّها
+        تنقطع عند الترقية في الرتبة أو عند تغيير الشبكة أو عند انتهاء مدّة
+        تجاوز الدرجة الأخيرة من الرتبة، فيُرتَّب العون حينئذٍ في المرتّب
+        الموالي مباشرةً لمجموع مرتّبه ومنحته (الأمر عدد 97-2127، الفصلان 1 و2).
       synonymes: []
 
   - id: agent-temporaire

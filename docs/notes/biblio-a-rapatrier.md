@@ -513,3 +513,31 @@ Les intitulés sont donc fiables, les contenus ne le sont pas : aucun montant ni
 disposition n'est cité d'après elles.
 
 À rapatrier dans Zotero (provisoires, NE PAS pousser sans feu vert) : les 15 clés ci-dessus.
+
+#### Correctif 27/08/2026 — lecture sur corpus local, trois entrées ne sont plus « contenu non lu »
+
+pist.tn est toujours injoignable, mais le dépôt **`~/projets/PDFs-legislation-tunisie`**
+contient un corpus JORT converti en Markdown (`markdown_output/JORT/<année>/<langue>/`).
+Trois fascicules y ont été lus intégralement — `1997/fr/Jo07697.md`, `1997/fr/Jo09397.md`,
+`2007/fr/Jo0142007.md` —, ce qui met à jour les `note` CSL de **`decret-97-1832`**,
+**`decret-97-2127`** et **`decret-2007-268`** : elles portent désormais le détail des
+articles lus, et non plus la mention « contenu non lu ».
+
+**Réflexe à retenir** : avant de conclure qu'un texte JORT est inaccessible, chercher dans
+`markdown_output/JORT/` du dépôt de législation. La façade `uv run legislation search …` /
+`uv run jort search …` (voir son `AGENTS.md`) indexe ce corpus et celui de l'IORT.
+
+**Entrée créée** — `decret-1949-budget` : *Décret du 23 mai 1949, portant fixation du budget
+de l'exercice 1949-1950*. **Sans URL ni numéro JORT** (le corpus ne remonte pas à 1949).
+Le texte est identifié par le **visa du décret n°97-1832**, ce qui établit sur source
+primaire son intitulé, sa nature budgétaire et son maintien en vigueur jusqu'en 1997 ; son
+contenu (art. 103-105) reste attribué à `cherif-kammoun-tajir`.
+
+**Portée de `cherif-kammoun-tajir` réduite** : la date d'effet au 1^er^ janvier 1998, la
+structure en trois grilles et la nature budgétaire du texte de 1949 sont désormais primaires.
+L'ouvrage ne sert plus qu'à attribuer le contenu des articles 103 à 105. Sa `note` a été
+mise à jour en conséquence, avertissement sur l'erreur de date compris.
+
+**À vérifier au prochain passage** : les fascicules portant les chaînes « indemnité de
+magistrature » et « solde militaire » sont peut-être eux aussi dans le corpus local — cela
+lèverait le blocage sur les chronologies chiffrées de B.2.

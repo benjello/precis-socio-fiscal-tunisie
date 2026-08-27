@@ -32,27 +32,69 @@ d'égalité des *rémunérations* serait un détournement de texte. Le principe 
 réellement la matière — la légalité de la rémunération — est textuel et se trouve à
 l'article 13 de la loi n°83-112, désormais cité.
 
-**Non appliqué, en attente** : la vérification du JORT n°76 de 1997 (date d'effet et
-structure des annexes du décret n°97-1832) et celle de l'ordre du 23 mai 1949, l'une et
-l'autre bloquées par l'indisponibilité de pist.tn ; les chronologies chiffrées de
-l'indemnité de magistrature et de la solde militaire, qui demandent la lecture des textes.
-Chaque point porte un commentaire `TODO` à l'endroit exact du chapitre.
-
-### Deux points laissés ouverts à dessein
-
-**L'articulation art. 33 loi 83-112 / art. 10 décret n°2007-268 n'est pas tranchée.**
-L'article 33 (dans sa rédaction issue de la loi n°97-83) pose la règle protectrice du
-reclassement après promotion ; l'article 10 du décret n°2007-268 traite lui aussi du
-reclassement. Faute d'avoir pu lire le décret, le chapitre expose les deux textes côte à
-côte sans affirmer que le second applique le premier — il pourrait tout aussi bien y
-déroger pour les grades placés sur la grille de 2007. TODO posé.
-
 **La réserve de l'article 41 du Code de la comptabilité publique a été circonscrite après
 lecture.** Les articles 108 à 118 ont été lus (109 à 114 sont abrogés par la loi
 n°2003-43) : tous visent les marchés et conventions passés avec des entrepreneurs ou des
 fournisseurs. Le chapitre dit donc que cette réserve ne joue pas pour la rémunération des
 agents, sans pour autant affirmer que la règle du service fait serait absolue — ce qui
 entrerait en contradiction avec le TODO sur les exceptions jurisprudentielles.
+
+## Passe de vérification sur corpus local (27/08/2026)
+
+pist.tn reste injoignable (`getent` résout bien 164.160.2.73, et `finances.gov.tn` comme
+`legislation-securite.tn` répondent : c'est cet hôte-là qui est down). Mais le dépôt
+**`~/projets/PDFs-legislation-tunisie`** contient un corpus JORT converti en Markdown,
+dans `markdown_output/JORT/<année>/<langue>/`, avec les trois fascicules exactement
+requis : `1997/fr/Jo07697.md`, `1997/fr/Jo09397.md` et `2007/fr/Jo0142007.md`.
+
+**Cinq points passent de l'attribution ou de l'hypothèse à la source primaire.**
+
+| Point | Avant | Après lecture |
+|---|---|---|
+| Date d'effet de la grille | attribuée à Chérif & Kammoun | **primaire** — décret n°97-1832, art. 2 (« fixé à compter du 1^er^ janvier 1998 ») et art. 12 |
+| Grille en trois tableaux | attribuée | **primaire** — Tableaux n°1 FONCTIONNAIRES, n°2 AGENTS TEMPORAIRES, n°3 OUVRIERS (JORT n°14/2007) |
+| Nature du texte de 1949 | rattachement budgétaire *écarté* faute de preuve | **primaire** — visa du décret n°97-1832 : « Vu le décret du 23 mai 1949, portant fixation du budget de l'exercice 1949-1950 » |
+| Art. 33 loi 83-112 / art. 10 | articulation non tranchée | **tranchée** — application, non dérogation (voir ci-dessous) |
+| Indemnités compensatrices | existence seule | **mécanisme complet** — art. 6 et 9 du décret n°97-1832, art. 1 à 7 du décret n°97-2127 |
+
+### L'ambiguïté du reclassement est levée — et une erreur du précis corrigée
+
+L'article 10 n'est **pas** un article du décret n°2007-268, comme l'écrivait le chapitre :
+c'est un article du décret n°97-1832, que l'article 2 du décret de 2007 abroge et remplace.
+De même, l'article 2 bis n'appartient pas au décret de 2007 : celui-ci l'*insère* dans le
+décret de 1997, qui demeure le texte de base. Le chapitre disait « le décret n°2007-268 a,
+corrélativement, fixé la nouvelle grille » — en réalité il **modifie et complète** le
+décret de 1997.
+
+Sur le fond, l'article 10 (nouveau) distingue la promotion intra-catégorielle du changement
+de catégorie, et son alinéa final **reprend mot pour mot** la garantie de l'article 33 du
+statut général (« l'augmentation obtenue suite à la promotion ne peut être inférieure à
+l'avantage que lui aurait procuré un avancement normal dans son ancienne position »). Le
+règlement applique la loi, il n'y déroge pas. Le TODO est levé.
+
+### Ce que la lecture apporte en plus
+
+- **La composition de l'ancienne rémunération de base** est désormais primaire : traitement
+  indiciaire + indemnité complémentaire + indemnité provisoire complémentaire, plus une
+  exonération de cotisation retraite de 7 dinars pour les indices ≤ 200 (art. 3 et 6 du
+  décret n°97-1832). Le mécanisme indiciaire ne portait donc qu'une part de la base.
+- **Une seconde indemnité compensatrice**, propre aux agents à indice ≤ 200, compensait la
+  perte nette due à l'assujettissement du nouveau traitement à la cotisation retraite ; elle
+  se résorbe à hauteur de tout avancement (art. 5 à 7 du décret n°97-2127).
+- Le décret n°97-1832 **vise expressément les articles 13 et 14 de la loi n°83-112** — les
+  deux articles sur lesquels la nouvelle sous-section « service fait et base réglementaire »
+  est construite. Corroboration inattendue du choix éditorial.
+- Deux textes repérés, non encore exploités : le **décret du 10 janvier 1952** sur
+  l'indemnité compensatrice (visé par le décret n°97-2127) et le **décret n°98-2509 du
+  18 décembre 1998**, statut particulier du corps des ouvriers de l'État (visé par le décret
+  n°2007-268) — ce dernier intéresse directement le fil « ouvriers ».
+
+### Reste en attente
+
+Le contenu des articles 103 à 105 du décret de 1949 : le corpus local ne remonte pas à cette
+date, seul le texte de 1997 l'atteste par son visa. Les chronologies chiffrées de l'indemnité
+de magistrature et de la solde militaire restent à construire — **les fascicules
+correspondants sont peut-être dans le corpus local**, ce qui n'a pas été vérifié.
 
 ---
 
