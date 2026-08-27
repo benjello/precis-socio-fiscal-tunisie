@@ -1,5 +1,29 @@
 # Changelog
 
+## [1.10.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.9.0...v1.10.0) (2026-08-27)
+
+
+### ✨ Nouveautés
+
+* **ci:** contrôle déterministe de parité FR/AR ([38aef8e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/38aef8e506f888a65016f2d4a68d4e8e4a9f3fe3))
+* **remunerations:** B.1 service fait, ancien régime indiciaire, bascule 1997-98 ([21c7856](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/21c785685f5c9b83a58dc15b8f3ca8adee57e057))
+
+
+### 🐛 Corrections de bugs
+
+* **ci:** fait tourner le Checker AI sur la traduction réellement livrée ([08d57f8](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/08d57f8d784567dfde0f6e70591bdda44a831633))
+* **ci:** le contrôle de parité accepte les deux écritures arabes des numéros ([625c837](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/625c837fde1247e66e2fa5f96356bfb4eafb3df7))
+* **ci:** rétablit les locateurs de citation après traduction ([7e64f78](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/7e64f784a978bcfaa2470f5c96cf1bc47e4c882c))
+* **ci:** traduction après merge, et protection des retouches arabes ([4765c79](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/4765c79719c5a93e66ab78f6127c79df68ced999))
+* **ci:** une synchro partielle ne peut plus passer pour complète ([d02b29f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/d02b29f3d4ffff0fe411b8595e68a83e8aeb67e3))
+* **remunerations:** vérifie B.1 sur corpus JORT local, corrige l'article 10 ([7004f3f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/7004f3fa9ea3fefc438420929f667f0196f50825))
+
+
+### 📝 Documentation
+
+* **traduction:** fixe les formules de procédure FR→AR (avis vs proposition) ([b691bd1](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/b691bd1fa44c72c566e654df5e101eb0259021bf))
+* **traduction:** interdit la réécriture des numéros de textes juridiques ([aaff4d4](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/aaff4d4dec9e9bf231406eede4246376c0684624))
+
 ## [1.9.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.8.0...v1.9.0) (2026-06-12)
 
 
