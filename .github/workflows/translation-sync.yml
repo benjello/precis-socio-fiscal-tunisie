@@ -94,6 +94,7 @@ jobs:
           uv run --with google-genai python scripts/translate_sync.py $BASE_SHA $HEAD_SHA ${{ steps.changed-files.outputs.files }}
 
       - name: Open PR with translation changes
+        id: open-pr
         if: steps.changed-files.outputs.files != ''
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -106,6 +107,7 @@ jobs:
           # Rien à propager → on s'arrête proprement.
           if git diff --staged --quiet; then
             echo "No translation changes to commit."
+            echo "pr=" >> $GITHUB_OUTPUT
             exit 0
           fi
 
@@ -125,5 +127,38 @@ jobs:
               --title "Auto-translate sync (AR) — ${{ github.sha }}" \
               --body "Synchronisation automatique FR→AR générée par \`translation-sync\` à partir de ${{ github.sha }}.
 
-          \`master\` étant protégée (require PR), la traduction passe par cette PR. **Merge-la pour déployer la version arabe** ; aucun workflow n'a été re-déclenché par sa création."
+          \`master\` étant protégée (require PR), la traduction passe par cette PR. **Merge-la pour déployer la version arabe.**
+
+          Sa création ne déclenche aucun workflow (PR ouverte avec le \`GITHUB_TOKEN\`) : la vérification est donc exécutée par le job qui l'a produite, à l'étape suivante, et son rapport est posté ici en commentaire."
           fi
+
+          # Sorties pour l'étape de vérification : numéro de PR, et bornes du
+          # diff à vérifier. La base est la base de la PR (master) et non le
+          # commit précédent : c'est la seule borne qui expose À LA FOIS le diff
+          # FR (venant des commits de la branche) et le diff AR (venant du commit
+          # de traduction). Avec le commit précédent comme base, le diff FR est
+          # vide en re-synchro manuelle et le checker saute silencieusement tout.
+          git fetch -q origin master
+          {
+            echo "pr=$(gh pr view "$BRANCH" --json number -q .number)"
+            echo "base=$(git merge-base origin/master HEAD)"
+            echo "head=$(git rev-parse HEAD)"
+          } >> $GITHUB_OUTPUT
+
+      # La PR ci-dessus est ouverte avec le GITHUB_TOKEN, ce qui par conception
+      # ne déclenche AUCUN workflow : `verify-translation.yml`, qui écoute
+      # `pull_request`, ne tourne donc jamais sur le contenu arabe réellement
+      # livré. Il tournait uniquement sur la PR FR d'origine, où le diff AR est
+      # vide — et où le script se contentait de sauter chaque fichier. La
+      # vérification est donc rapatriée ici, dans le job qui produit la
+      # traduction, seul endroit où elle porte sur ce qui sera mergé.
+      - name: Verify the generated translation
+        if: steps.open-pr.outputs.pr != ''
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ steps.open-pr.outputs.pr }}
+          BASE_SHA: ${{ steps.open-pr.outputs.base }}
+          HEAD_SHA: ${{ steps.open-pr.outputs.head }}
+        run: |
+          uv run --with google-genai python scripts/verify_translation.py

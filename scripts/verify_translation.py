@@ -43,6 +43,8 @@ def main():
         glossary_table = ""
 
     warnings = []
+    verified = []
+    skipped = []
 
     for file_path in changed_files:
         if not file_path.endswith(".qmd") and not file_path.endswith("_quarto.yml"):
@@ -74,9 +76,20 @@ def main():
 
         source_diff = get_git_diff(base_sha, head_sha, source_file)
         target_diff = get_git_diff(base_sha, head_sha, target_file)
-        
-        if not target_diff or not source_diff:
-            # S'il manque l'un des deux diffs, on passe
+
+        # Sans les DEUX diffs, il n'y a rien à comparer et le fichier est sauté.
+        # Ce cas doit rester VISIBLE : un job qui saute tous les fichiers ne
+        # vérifie rien, et il ne doit surtout pas être lu comme une validation
+        # (cf. le rapport final). C'est ce qui se produit sur une PR où seul le
+        # français a bougé, la traduction n'ayant pas encore été générée.
+        if not source_diff and not target_diff:
+            skipped.append(f"{target_file} : aucun des deux côtés n'a changé")
+            continue
+        if not source_diff:
+            skipped.append(f"{target_file} : la cible a changé mais pas la source ({source_file})")
+            continue
+        if not target_diff:
+            skipped.append(f"{target_file} : la source a changé mais pas la cible ({source_file}) — traduction non encore générée ?")
             continue
 
         prompt = f"""
@@ -116,10 +129,17 @@ TRES IMPORTANT : Tu dois IMPÉRATIVEMENT inclure une suggestion de correction pr
             
             text = response.text.strip()
             # On tolère les minuscules ou petits espaces
+            verified.append(target_file)
             if text.upper() != "OK" and text.upper() != "OK.":
                 warnings.append(f"**Fichier `{target_file}`** :\n{text}")
         except Exception as e:
             print(f"Erreur lors de la vérification de {target_file}: {e}")
+            skipped.append(f"{target_file} : erreur d'appel au modèle ({e})")
+
+    if skipped:
+        print("Fichiers sautés (non vérifiés) :")
+        for line in skipped:
+            print(f"  - {line}")
 
     if warnings:
         comment_body = "⚠️ **Alerte de l'IA de Vérification (Checker AI)**\n\nJ'ai inspecté la traduction générée pour cette Pull Request et j'ai détecté des anomalies potentielles (débordement, modification de chiffres ou de balises) :\n\n" + "\n\n".join(warnings) + "\n\n_Veuillez vérifier manuellement ces lignes avant de valider._"
@@ -131,8 +151,12 @@ TRES IMPORTANT : Tu dois IMPÉRATIVEMENT inclure une suggestion de correction pr
         except Exception as e:
             print(f"Impossible de poster le commentaire sur la PR : {e}")
         sys.exit(1) # Échouer le job CI
+    elif verified:
+        print(f"{len(verified)} fichier(s) vérifié(s), aucun avertissement : " + ", ".join(verified))
     else:
-        print("Toutes les traductions sont vérifiées et validées. Aucun avertissement.")
+        # NE PAS annoncer une validation ici : rien n'a été comparé.
+        print("AUCUN fichier n'a pu être vérifié : ce job ne vaut donc PAS validation "
+              "de la traduction.")
 
 if __name__ == "__main__":
     main()

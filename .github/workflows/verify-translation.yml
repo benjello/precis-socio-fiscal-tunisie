@@ -1,5 +1,19 @@
 name: Verify Translation (Checker AI)
 
+# PORTÉE — à lire avant de se fier au vert de ce workflow.
+#
+# Il ne couvre PAS les PR `auto-translate/*`. Celles-ci sont ouvertes avec le
+# `GITHUB_TOKEN`, ce qui par conception ne déclenche aucun workflow : rien
+# n'écoute donc leur `pull_request`. La vérification du contenu arabe réellement
+# livré est faite par `translation-sync.yml`, dans le job même qui le produit
+# (étape « Verify the generated translation »), et son rapport est posté en
+# commentaire sur la PR de traduction.
+#
+# Ce workflow-ci sert aux PR ordinaires touchant les deux langues. Sur une PR où
+# seul le français a bougé, le script saute chaque fichier faute de diff arabe à
+# comparer, et le dit explicitement dans son journal : un job vert n'y vaut alors
+# PAS validation de la traduction.
+
 on:
   pull_request:
     paths:
