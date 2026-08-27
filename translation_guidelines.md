@@ -25,3 +25,44 @@ traduction (`translate_sync.py`) et de vérification (`verify_translation.py`).
 *(Note aux experts : pour ajouter ou corriger un terme, éditez `precis/glossaire.yml`
 puis relancez `uv run python scripts/build_glossary.py`. Ne modifiez pas les
 fichiers générés à la main.)*
+
+## 4. Formules juridiques récurrentes
+
+Le glossaire ci-dessus couvre les **notions** du précis. Cette section-ci couvre les
+**formules de procédure** qui reviennent dans les textes cités et qui n'ont pas leur place
+dans le glossaire. Elles doivent être rendues exactement comme suit, faute de quoi la
+traduction décrit une procédure administrative différente de celle du texte source.
+
+| Français | Arabe | Piège à éviter |
+|---|---|---|
+| sur avis de / après avis de / vu l'avis de | **على رأي** (visa) · **بعد أخذ رأي** (corps de texte) | **JAMAIS `باقتراح من`** : cette formule rend « sur proposition de », qui est une procédure distincte. L'usage du JORT est massivement `على رأي` pour l'avis. |
+| sur proposition de | **باقتراح من** | réservé à ce seul cas |
+| pris par décret | **يُتخذ بمقتضى أمر** | |
+| après service fait | **بعد أداء الخدمة** | |
+
+### Numéros de textes juridiques — RÈGLE CRITIQUE
+
+Un numéro de texte tunisien s'écrit en français `n°AA-NNN`, où **AA est l'année** et
+**NNN le numéro d'ordre** : « loi n°83-112 » est la loi **112** de l'année **1983**.
+
+**Reproduisez le numéro tel quel, sans le réécrire** : `القانون عدد 83-112`,
+`الأمر عدد 97-1832`. C'est la forme employée partout ailleurs dans le précis et dans les
+titres arabes de `references.json` ; elle doit rester uniforme d'un chapitre à l'autre.
+
+**Ne convertissez pas vers la forme développée `عدد NNN لسنة AAAA`.** Cette écriture est
+parfaitement correcte en soi — « texte NNN de l'année AAAA » — et plusieurs chapitres du
+précis l'emploient ; il ne faut donc surtout pas la « corriger » là où elle figure déjà.
+Mais elle demande une inversion, et cette inversion échoue : une passe a rendu la loi
+n°83-112 par `القانون عدد 83 لسنة 1983` (numéro 83 au lieu de 112), et de même pour les
+lois n°68-12, n°67-29, n°68-8, n°67-20 et n°72-40. Le résultat est plausible et cohérent
+avec la date affichée : l'erreur est invisible pour qui ne recoupe pas avec le français.
+
+Reproduire le numéro tel quel supprime ce risque. `scripts/check_translation_parity.py`
+accepte les deux écritures et ne signale que ce qui est réellement fautif.
+
+### Locateurs de citation
+
+Le contenu d'un locateur Pandoc — la partie qui suit la virgule dans `[@ref, art. 13]` —
+**ne se traduit pas** et reste tel quel en français, y compris les mots de liaison :
+`[@ref, art. 11 et 12]`, `[@ref, art. 5 à 7]`, `[@ref, art. 1er]`. Ne pas écrire
+`art. 5 إلى 7`. C'est de la syntaxe de citation, pas de la prose.

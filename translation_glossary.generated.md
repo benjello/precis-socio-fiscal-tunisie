@@ -8,11 +8,14 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Français | Arabe (Tunisie) | Acronyme |
 | :--- | :--- | :--- |
 | Administrations publiques | الإدارات العمومية |  |
+| Agent temporaire | العون الوقتي |  |
 | Assiette fiscale | الوعاء الضريبي |  |
+| Avancement d'échelon | الترقّي في الدرجة |  |
 | Caisse nationale d'assurance maladie | الصندوق الوطني للتأمين على المرض | CNAM |
 | Caisse nationale de retraite et de prévoyance sociale | الصندوق الوطني للتقاعد والحيطة الاجتماعية | CNRPS |
 | Caisse nationale de sécurité sociale | الصندوق الوطني للضمان الاجتماعي | CNSS |
 | Catégorie de grade | صنف الرتبة |  |
+| Chiffre indiciaire | الرقم القياسي |  |
 | Contribution sociale de solidarité | المساهمة الاجتماعية التضامنية | CSS |
 | Convention collective sectorielle | الاتفاقية المشتركة القطاعية |  |
 | Convention collective sectorielle des banques et établissements financiers | الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية |  |
@@ -30,12 +33,15 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Grade | الرتبة |  |
 | Grille des salaires | شبكة الأجور |  |
 | Impôt sur le revenu des personnes physiques | الضريبة على دخل الأشخاص الطبيعيين | IRPP |
+| Indemnité compensatrice | المنحة التعويضية |  |
 | Indemnité spécifique | المنحة الخصوصية |  |
 | Magistrat | القاضي |  |
 | Masse salariale | كتلة الأجور |  |
+| Ouvrier de l'État | عامل الدولة |  |
 | Pensions civiles et militaires | الجرايات المدنية والعسكرية |  |
 | Précis socio-fiscal | الملخّص الاجتماعي والجبائي |  |
 | Prime de rendement | منحة المردودية |  |
+| Promotion | الترقية |  |
 | Régime conventionnel public | النظام الاتفاقي العمومي |  |
 | Régime de marché contrôlé | نظام السوق الموجَّه |  |
 | Régime indiciaire | النظام الاستدلالي للتأجير |  |
@@ -44,6 +50,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Retenue à la source | الخصم من المورد |  |
 | Salaire minimum interprofessionnel garanti | الأجر الأدنى المضمون لمختلف المهن | SMIG |
 | Secteur public | القطاع العام |  |
+| Service fait | قاعدة الخدمة المنجزة |  |
 | Solde (militaire) | المرتّب العسكري |  |
 | Statut particulier | النظام الأساسي الخصوصي |  |
 | Taux marginal | النسبة الحدية |  |
