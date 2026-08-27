@@ -9,10 +9,15 @@ name: Verify Translation (Checker AI)
 # (étape « Verify the generated translation »), et son rapport est posté en
 # commentaire sur la PR de traduction.
 #
-# Ce workflow-ci sert aux PR ordinaires touchant les deux langues. Sur une PR où
-# seul le français a bougé, le script saute chaque fichier faute de diff arabe à
-# comparer, et le dit explicitement dans son journal : un job vert n'y vaut alors
-# PAS validation de la traduction.
+# Ce workflow-ci sert aux PR ordinaires — au premier chef celles qui corrigent
+# l'ARABE seul, à la main. Il y fait tourner le contrôle de parité déterministe,
+# qui est le seul filet contre une clé de citation, une ancre ou un numéro de
+# texte cassés par une retouche humaine.
+#
+# Le Checker AI, lui, compare deux diffs : sur une PR où une seule langue a
+# bougé, il saute chaque fichier et le dit explicitement dans son journal. Un job
+# vert ne vaut alors PAS validation de la traduction — c'est le contrôle de
+# parité qui aura fait le travail.
 
 on:
   pull_request:
@@ -36,7 +41,34 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v7
 
+      # Utile surtout sur une PR corrigeant l'ARABE seul — cas courant, et le
+      # seul endroit où une main humaine peut casser une clé de citation, une
+      # ancre ou un numéro de texte sans que rien ne le signale. Le contrôle est
+      # restreint aux fichiers de la PR : lancé sur tout le dépôt il remonterait
+      # la dette préexistante d'autres livres.
+      #
+      # CONSULTATIF ici, bloquant dans `translation-sync`. La différence est
+      # voulue : là-bas l'arabe vient d'être généré en bloc et la parité doit
+      # tenir ; ici la PR est humaine et les fichiers touchés peuvent porter de
+      # la dette antérieure (au 27/08/2026 : fiscalite, retraites,
+      # prestations_sociales et _regime_conventionnel en ont). Faire échouer la
+      # PR de quelqu'un pour une divergence qu'il n'a pas introduite serait
+      # punir la mauvaise personne. Le rapport est là, à lire.
+      - name: Check FR/AR parity (deterministic)
+        continue-on-error: true
+        run: |
+          FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} \
+                                       ${{ github.event.pull_request.head.sha }} \
+                  | grep -E '^precis/(fr|ar)/.*\.qmd$' | tr '\n' ' ' || true)
+          if [ -z "$FILES" ]; then
+            echo "Aucun .qmd de précis dans cette PR."
+            exit 0
+          fi
+          echo "Rapport consultatif — une divergence ici peut être antérieure à cette PR."
+          python3 scripts/check_translation_parity.py $FILES
+
       - name: Run verification script
+        if: always()
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PR_NUMBER: ${{ github.event.pull_request.number }}

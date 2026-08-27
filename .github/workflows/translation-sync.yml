@@ -10,13 +10,16 @@ on:
       - 'precis/ar/**/*.qmd'
       - 'precis/ar/**/_quarto.yml'
       - 'CHANGELOG.md'
-  pull_request:
-    paths:
-      - 'precis/fr/**/*.qmd'
-      - 'precis/fr/**/_quarto.yml'
-      - 'precis/ar/**/*.qmd'
-      - 'precis/ar/**/_quarto.yml'
-      - 'CHANGELOG.md'
+  # PAS de déclencheur `pull_request`. Sur une PR, les filtres `paths` sont
+  # évalués sur le diff ENTIER de la PR, pas sur le seul nouveau commit : tant
+  # que la PR reste ouverte, chaque push relance donc la synchro et ouvre une PR
+  # de traduction de plus — y compris pour des commits qui ne touchent pas au
+  # français (une correction de CI, une note). Cascade observée le 27/08/2026 :
+  # six PR de traduction pour une seule PR de contenu, cinq à fermer à la main.
+  #
+  # La traduction part donc APRÈS le merge sur master, une fois, sur le texte
+  # définitif, dans une PR unique. Contrepartie assumée : le site a brièvement
+  # un français plus récent que son arabe.
   workflow_dispatch:
     # Re-synchro manuelle, utile quand un sync a échoué (ex. 503 Gemini) sans
     # nouveau commit FR.
@@ -56,13 +59,8 @@ jobs:
               CHANGED=$(git ls-files | grep -E '^precis/fr/.*\.(qmd|yml)$' | grep -v '_glossaire\.qmd' | tr '\n' ' ' || true)
             fi
           else
-            if [ "${{ github.event_name }}" == "pull_request" ]; then
-              BASE_SHA=${{ github.event.pull_request.base.sha }}
-              HEAD_SHA=${{ github.event.pull_request.head.sha }}
-            else
-              BASE_SHA=${{ github.event.before }}
-              HEAD_SHA=${{ github.sha }}
-            fi
+            BASE_SHA=${{ github.event.before }}
+            HEAD_SHA=${{ github.sha }}
             # Le FR est TOUJOURS la source de vérité ; l'AR est généré, jamais
             # rédigé à la main. On ne propage donc QUE FR→AR, sur push ET en PR.
             # Le sens AR→FR est un piège : une modif AR (PR de config AR-only, ou
@@ -80,12 +78,11 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            # base == head → diff vide → le script fait une traduction complète.
+            # base == head → diff vide. Le script part alors de la traduction
+            # existante et la met à jour, sans repartir de zéro : c'est ce qui
+            # protège les corrections faites à la main sur l'arabe seul.
             BASE_SHA=${{ github.sha }}
             HEAD_SHA=${{ github.sha }}
-          elif [ "${{ github.event_name }}" == "pull_request" ]; then
-            BASE_SHA=${{ github.event.pull_request.base.sha }}
-            HEAD_SHA=${{ github.event.pull_request.head.sha }}
           else
             BASE_SHA=${{ github.event.before }}
             HEAD_SHA=${{ github.sha }}
@@ -132,16 +129,22 @@ jobs:
           Sa création ne déclenche aucun workflow (PR ouverte avec le \`GITHUB_TOKEN\`) : la vérification est donc exécutée par le job qui l'a produite, à l'étape suivante, et son rapport est posté ici en commentaire."
           fi
 
-          # Sorties pour l'étape de vérification : numéro de PR, et bornes du
-          # diff à vérifier. La base est la base de la PR (master) et non le
-          # commit précédent : c'est la seule borne qui expose À LA FOIS le diff
-          # FR (venant des commits de la branche) et le diff AR (venant du commit
-          # de traduction). Avec le commit précédent comme base, le diff FR est
-          # vide en re-synchro manuelle et le checker saute silencieusement tout.
-          git fetch -q origin master
+          # Sorties pour les étapes de contrôle. La borne basse doit précéder le
+          # changement FRANÇAIS, et pas seulement le commit de traduction : sinon
+          # le diff FR est vide et le Checker AI n'a rien à comparer — c'est le
+          # défaut qui le faisait passer au vert sans rien vérifier. Sur un push,
+          # cette borne est `github.event.before`. En re-synchro manuelle il n'y
+          # a pas de changement FR à valider : le checker le dira honnêtement, et
+          # c'est le contrôle de parité — qui compare les fichiers et non les
+          # diffs — qui fait alors le travail.
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            VERIFY_BASE=$(git rev-parse HEAD~1)
+          else
+            VERIFY_BASE=${{ github.event.before }}
+          fi
           {
             echo "pr=$(gh pr view "$BRANCH" --json number -q .number)"
-            echo "base=$(git merge-base origin/master HEAD)"
+            echo "base=$VERIFY_BASE"
             echo "head=$(git rev-parse HEAD)"
           } >> $GITHUB_OUTPUT
 

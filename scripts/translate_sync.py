@@ -84,7 +84,33 @@ def main():
                 
         diff_text = get_git_diff(base_sha, head_sha, file_path)
         
-        if old_target_text and diff_text:
+        # Dès qu'une traduction existe, on part d'elle — même sans diff.
+        # Retraduire de zéro un fichier déjà traduit EFFACE les corrections faites
+        # à la main sur la seule langue cible, qui sont légitimes et courantes
+        # (l'arabe se corrige parfois seul, sans passer par le français). Le DIFF,
+        # quand il est disponible, ne sert qu'à désigner ce qui a bougé ; son
+        # absence — cas de la re-synchro manuelle — ne doit pas faire basculer en
+        # traduction complète.
+        if old_target_text:
+            if diff_text:
+                diff_section = f"""
+Voici le DIFF (les modifications) qui viennent d'être faites sur le fichier source :
+```diff
+{diff_text}
+```
+
+TA TÂCHE :
+Mets à jour l'ANCIENNE TRADUCTION pour qu'elle corresponde au FICHIER SOURCE MIS À JOUR.
+RÈGLE D'OR ABSOLUE : Tu DOIS conserver exactement la même formulation que l'ANCIENNE TRADUCTION pour tous les paragraphes qui n'ont pas été modifiés. Ne modifie la traduction que pour les parties qui ont été ajoutées ou modifiées dans le DIFF.
+"""
+            else:
+                diff_section = """
+Aucun DIFF n'est disponible : compare toi-même le FICHIER SOURCE MIS À JOUR et l'ANCIENNE TRADUCTION.
+
+TA TÂCHE :
+Mets à jour l'ANCIENNE TRADUCTION pour qu'elle corresponde au FICHIER SOURCE MIS À JOUR.
+RÈGLE D'OR ABSOLUE : Tu DOIS conserver exactement la même formulation que l'ANCIENNE TRADUCTION partout où le sens du fichier source n'a pas changé. L'ANCIENNE TRADUCTION peut contenir des corrections faites à la main : ne les défais pas, ne reformule pas ce qui est déjà correct. Ne touche qu'à ce qui ne correspond plus à la source.
+"""
             prompt = f"""
 Voici une tâche de mise à jour de traduction bilingue.
 
@@ -100,15 +126,7 @@ Voici l'ANCIENNE TRADUCTION CIBLE ({target_lang}) (avant tes modifications) :
 ```markdown
 {old_target_text}
 ```
-
-Voici le DIFF (les modifications) qui viennent d'être faites sur le fichier source :
-```diff
-{diff_text}
-```
-
-TA TÂCHE :
-Mets à jour l'ANCIENNE TRADUCTION pour qu'elle corresponde au FICHIER SOURCE MIS À JOUR.
-RÈGLE D'OR ABSOLUE : Tu DOIS conserver exactement la même formulation que l'ANCIENNE TRADUCTION pour tous les paragraphes qui n'ont pas été modifiés. Ne modifie la traduction que pour les parties qui ont été ajoutées ou modifiées dans le DIFF.
+{diff_section}
 Renvoie UNIQUEMENT le nouveau fichier cible mis à jour, sans aucun commentaire avant ou après.
 """
         else:
