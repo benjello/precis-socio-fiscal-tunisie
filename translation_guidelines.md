@@ -40,6 +40,21 @@ traduction décrit une procédure administrative différente de celle du texte s
 | pris par décret | **يُتخذ بمقتضى أمر** | |
 | après service fait | **بعد أداء الخدمة** | |
 
+### Numéros de textes juridiques — RÈGLE CRITIQUE
+
+Un numéro de texte tunisien s'écrit en français `n°AA-NNN`, où **AA est l'année** et
+**NNN le numéro d'ordre** : « loi n°83-112 » est la loi **112** de l'année **1983**.
+
+**Reproduisez le numéro tel quel, sans le réécrire** : `القانون عدد 83-112`,
+`الأمر عدد 97-1832`. C'est la forme employée partout ailleurs dans le précis et dans les
+titres arabes de `references.json` ; elle doit rester uniforme d'un chapitre à l'autre.
+
+**Ne convertissez JAMAIS vers la forme `عدد NNN لسنة AAAA`.** Cette conversion, même
+lorsqu'elle est correctement menée, produit des incohérences entre chapitres — et elle
+échoue régulièrement : une passe a rendu la loi n°83-112 par `القانون عدد 83 لسنة 1983`
+(numéro 83 au lieu de 112), et de même pour les lois n°68-12, n°67-29 et n°72-40. Ce sont
+des textes fondateurs, et l'erreur est invisible pour qui ne recoupe pas avec le français.
+
 ### Locateurs de citation
 
 Le contenu d'un locateur Pandoc — la partie qui suit la virgule dans `[@ref, art. 13]` —
