@@ -145,6 +145,46 @@ jobs:
             echo "head=$(git rev-parse HEAD)"
           } >> $GITHUB_OUTPUT
 
+      # Contrôle mécanique, sans appel réseau : citations, ancres, cibles de
+      # liens, numéros de textes juridiques, labels de figures, locateurs. Il
+      # attrape avec certitude ce que le checker IA peut laisser passer — un
+      # numéro de loi réécrit produit un texte idiomatique et plausible, mais qui
+      # ne renvoie plus au bon texte. `continue-on-error` pour que le checker IA
+      # tourne quand même et que la PR reçoive les deux rapports d'un coup ; le
+      # verdict est rendu par l'étape de synthèse en fin de job.
+      - name: Check FR/AR parity (deterministic)
+        id: parity
+        if: steps.open-pr.outputs.pr != ''
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ steps.open-pr.outputs.pr }}
+        run: |
+          set +e
+          # Restreint aux fichiers qui viennent d'être traduits. Sans cela, le
+          # contrôle échouerait sur la dette préexistante d'autres chapitres —
+          # le corpus arabe mélange aujourd'hui deux conventions de numérotation
+          # selon les livres — et bloquerait toute PR de traduction pour des
+          # raisons étrangères à son contenu. Pour un audit d'ensemble, lancer
+          # le script sans argument en local.
+          python3 scripts/check_translation_parity.py ${{ steps.changed-files.outputs.files }} | tee parity.log
+          rc=${PIPESTATUS[0]}
+          if [ "$rc" -ne 0 ]; then
+            { echo "⚠️ **Contrôle de parité FR/AR (déterministe)**"
+              echo
+              echo "Des jetons qui doivent être identiques dans les deux langues divergent."
+              echo "Ce contrôle ne juge pas le sens : il compare les clés de citation, les"
+              echo "ancres, les cibles de liens, les **numéros de textes juridiques** et les"
+              echo "labels de figures."
+              echo
+              echo '```'
+              cat parity.log
+              echo '```'
+            } > parity_comment.md
+            gh pr comment "$PR_NUMBER" -F parity_comment.md || echo "Commentaire non posté."
+          fi
+          exit $rc
+
       # La PR ci-dessus est ouverte avec le GITHUB_TOKEN, ce qui par conception
       # ne déclenche AUCUN workflow : `verify-translation.yml`, qui écoute
       # `pull_request`, ne tourne donc jamais sur le contenu arabe réellement
@@ -162,3 +202,13 @@ jobs:
           HEAD_SHA: ${{ steps.open-pr.outputs.head }}
         run: |
           uv run --with google-genai python scripts/verify_translation.py
+
+      # `continue-on-error` sur l'étape de parité laisse le job vert même quand
+      # elle échoue : sans ce verdict final, une divergence de numéro de loi
+      # passerait inaperçue.
+      - name: Gate on the parity check
+        if: always() && steps.parity.outcome == 'failure'
+        run: |
+          echo "Le contrôle de parité FR/AR a échoué : voir son rapport ci-dessus" \
+               "et le commentaire posté sur la PR de traduction."
+          exit 1
