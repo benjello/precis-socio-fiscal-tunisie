@@ -14,6 +14,14 @@ Motivation, tirée de deux régressions réelles observées en août 2026 :
     indétectable à la lecture de l'arabe seul ;
   - un locateur de citation a été partiellement traduit (`art. 5 إلى 7`).
 
+Sur les numéros de textes, l'arabe dispose de DEUX écritures également correctes :
+la forme littérale reprise du français (`الأمر عدد 97-1832`) et la forme
+développée (`الأمر عدد 1832 لسنة 1997`, « texte 1832 de l'année 1997 »). Le
+corpus emploie les deux selon les livres. Le contrôle accepte donc les deux, et
+ne signale que ce qui est réellement fautif : un numéro absent des deux formes,
+ou une conversion qui prend l'ANNÉE pour le numéro d'ordre — l'erreur observée,
+la seule qui soit indétectable à la lecture de l'arabe seul.
+
 Usage :
     python scripts/check_translation_parity.py [chemins...]
 
@@ -66,11 +74,72 @@ def extract(text):
         "ancres": counter(re.findall(r"\{#([A-Za-z0-9_-]+)\}", body)),
         # Cibles de liens internes : ](#ancre) et ](fichier.qmd#ancre)
         "cibles de liens": counter(re.findall(r"\]\(([^)\s]+)\)", body)),
-        # Numéros de textes juridiques : 83-112, 97-1832, 2007-268...
-        "numéros de textes": counter(re.findall(r"(?<![\d-])(\d{2,4}-\d{1,5})(?![\d-])", body)),
+        # Les numéros de textes juridiques sont traités à part, par
+        # `check_law_numbers` : l'arabe dispose de DEUX écritures légitimes.
         # Étiquettes des cellules de code, hors strip (elles vivent dans les blocs)
         "labels de figures": counter(re.findall(r"^#\|\s*label:\s*(\S+)", text, flags=re.M)),
     }
+
+
+LAW_RE = re.compile(r"(?<![\d-])(\d{2,4})-(\d{1,5})(?![\d-])")
+
+
+def law_year(prefix):
+    """Année d'un numéro de texte tunisien, ou None si ce n'en est pas un.
+
+    Un numéro s'écrit `AA-NNN` (année sur deux chiffres, à partir de 1956) ou
+    `AAAA-NNN`. Tout le reste — plages d'indices « 225-800 », intervalles
+    d'années « 2023-2025 », pages « 415-453 » — n'est pas un numéro de texte et
+    doit être écarté, sous peine de bruit."""
+    n = int(prefix)
+    if len(prefix) == 2:
+        return 1900 + n if n >= 56 else 2000 + n
+    if len(prefix) == 4 and 1956 <= n <= 2035:
+        return n
+    return None
+
+
+def check_law_numbers(fr_text, ar_text, ar_path, problems):
+    """Compare les numéros de textes en acceptant les deux écritures arabes."""
+    fr_body, ar_body = strip_noise(fr_text), strip_noise(ar_text)
+
+    fr_laws = {}
+    for prefix, num in LAW_RE.findall(fr_body):
+        year = law_year(prefix)
+        if year is None or law_year(num) is not None and len(num) == 4:
+            continue  # plage d'années (« 2023-2025 ») : pas un numéro de texte
+        key = f"{prefix}-{num}"
+        fr_laws[key] = fr_laws.get(key, 0) + 1
+
+    for key, n_fr in sorted(fr_laws.items()):
+        prefix, num = key.split("-")
+        year = law_year(prefix)
+        literal = len(re.findall(rf"(?<![\d-]){re.escape(key)}(?![\d-])", ar_body))
+        expanded = len(re.findall(rf"(?<!\d){num}\s+لسنة\s+{year}(?!\d)", ar_body))
+        n_ar = literal + expanded
+
+        if n_ar >= n_fr:
+            continue
+
+        # Cas le plus grave : l'ANNÉE a été prise pour le numéro d'ordre.
+        # « loi n°83-112 » rendue « القانون عدد 83 لسنة 1983 ». Plausible,
+        # cohérent avec la date affichée, invisible à la lecture de l'arabe.
+        if num != prefix and re.search(rf"(?<!\d){prefix}\s+لسنة\s+{year}(?!\d)", ar_body):
+            problems.append(
+                f"{ar_path} : numéro de texte FAUSSÉ — « {key} » (texte {num} de {year}) "
+                f"est rendu « عدد {prefix} لسنة {year} » : l'année a été prise pour le "
+                f"numéro d'ordre."
+            )
+        elif n_ar == 0:
+            problems.append(
+                f"{ar_path} : numéro de texte — « {key} » absent de l'arabe "
+                f"({n_fr}× en français), sous aucune des deux écritures."
+            )
+        else:
+            problems.append(
+                f"{ar_path} : numéro de texte — « {key} » apparaît {n_fr}× en français "
+                f"et {n_ar}× en arabe."
+            )
 
 
 def check_locators(text, path, problems):
@@ -105,6 +174,7 @@ def compare(fr_path, ar_path):
             else:
                 problems.append(f"{ar_path} : {kind} — « {token} » apparaît {n_fr}× en français et {n_ar}× en arabe.")
 
+    check_law_numbers(fr_text, ar_text, ar_path, problems)
     check_locators(ar_text, ar_path, problems)
     return problems
 
