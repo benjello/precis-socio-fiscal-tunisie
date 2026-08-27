@@ -45,6 +45,7 @@ def main():
         pass
 
     fr_files = {f for f in files_to_process if "precis/fr/" in f}
+    failures = []
 
     for file_path in files_to_process:
         if not file_path.endswith(".qmd") and not file_path.endswith("_quarto.yml") and file_path != "CHANGELOG.md":
@@ -144,9 +145,12 @@ Fichier à traduire :
 
 
         try:
-            # Retry avec backoff exponentiel sur erreurs transitoires (503/429).
+            # Retry avec backoff exponentiel sur erreurs transitoires.
             # Gemini renvoie régulièrement 503 UNAVAILABLE en pic de demande ;
             # sans retry, une seule occurrence faisait échouer toute la synchro.
+            # Le 500 INTERNAL est tout aussi transitoire — le message de l'API
+            # invite lui-même à réessayer — et il n'était pas rattrapé : le
+            # 27/08/2026 il a fait échouer la traduction d'un chapitre entier.
             max_attempts = 5
             response = None
             for attempt in range(1, max_attempts + 1):
@@ -162,7 +166,10 @@ Fichier à traduire :
                     break
                 except Exception as api_err:
                     msg = str(api_err)
-                    transient = any(s in msg for s in ("503", "UNAVAILABLE", "429", "RESOURCE_EXHAUSTED", "overloaded"))
+                    transient = any(s in msg for s in (
+                        "503", "UNAVAILABLE", "429", "RESOURCE_EXHAUSTED", "overloaded",
+                        "500", "INTERNAL", "502", "504", "DEADLINE_EXCEEDED",
+                    ))
                     if not transient or attempt == max_attempts:
                         raise
                     wait = min(60, 5 * (2 ** (attempt - 1)))  # 5,10,20,40,60s
@@ -187,6 +194,21 @@ Fichier à traduire :
             
         except Exception as e:
             print(f"Erreur lors de la traduction de {file_path}: {e}")
+            failures.append(f"{file_path} : {e}")
+
+    # Une synchro partielle ne doit JAMAIS passer pour complète. Jusqu'ici le
+    # script signalait l'échec d'un fichier puis rendait la main en code 0 : le
+    # workflow committait et ouvrait une PR d'apparence normale, à laquelle il
+    # manquait un chapitre. C'est ainsi que l'arabe de `fiscalite` a perdu ses
+    # citations sans que personne ne le voie. En échouant ici, on n'ouvre pas de
+    # PR trompeuse ; il suffit de relancer la synchro.
+    if failures:
+        print(f"\n{len(failures)} fichier(s) NON traduit(s) :")
+        for line in failures:
+            print(f"  - {line}")
+        print("\nSynchro incomplète : aucune PR ne doit être ouverte sur cet état. "
+              "Relancer le workflow (workflow_dispatch) sur les fichiers concernés.")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
