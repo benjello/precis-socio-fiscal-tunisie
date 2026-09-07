@@ -357,10 +357,11 @@ L'article 27 définit la catégorie par une formule de **subsidiarité**, inchan
 
 C'est le régime de la **plus-value immobilière** qui a le plus bougé. Dans le texte de 1990, l'imposition était bornée par une **durée de détention** : n'étaient visés que les biens « détenus depuis moins de 10 ans », sous réserve d'exclusions tenant à la qualité du cessionnaire (conjoint, parents en ligne directe), à l'expropriation pour cause d'utilité publique, aux biens hérités et à l'habitation principale. La condition de durée a disparu et le champ des exclusions a été réécrit à plusieurs reprises. Dans sa rédaction issue de la loi de finances pour 2023, l'exclusion du local à usage d'habitation est devenue conditionnelle : elle ne joue que pour la **première** opération de cession, portant sur un **seul** local, dans la limite d'une superficie globale de 1 000 m² dépendances comprises, et à condition que le prix de cession déclaré soit inférieur à 500 000 dinars [@lf-2023, art. 43] — alors qu'elle était auparavant accordée sans condition de prix ni de rang de cession.
 
-<!-- TODO (bibliographe) : la clé « lf-2023 » (décret-loi n° 2022-79 du 22 décembre 2022 portant loi
-de finances pour 2023) est citée sans numéro de JORT, date de publication ni page : ces éléments
-n'ont pas pu être établis, le PDF local étant dépourvu de couche texte. À compléter avant
-publication. -->
+<!-- Note bibliographique : la clé « lf-2023 » (décret-loi n° 2022-79 du 22 décembre 2022 portant
+loi de finances pour 2023) est créée. Numéro et date du fascicule établis : JORT n° 141 du
+23 décembre 2022, tome 165, édition arabe vérifiée sur pièce. Reste non établie la PAGINATION DE
+L'ÉDITION FRANÇAISE : ce fascicule français n'est pas en ligne sur pist.tn (404) et la copie
+locale du texte est illisible. -->
 
 **La détermination du revenu net (article 28) distingue le bâti et le non bâti.** Le revenu brut est, dans les deux cas, le montant des recettes brutes perçues par le propriétaire, augmenté des dépenses lui incombant normalement et mises par convention à la charge du locataire, diminué des dépenses qu'il a supportées pour le compte du locataire. Mais le **bâti** relève d'un forfait, tandis que le revenu net des **propriétés non bâties louées** est déterminé au réel, en déduisant du revenu brut « les dépenses justifiées et nécessitées pour la production de ce revenu » ainsi que la taxe sur les terrains non bâtis acquittée — règle inchangée depuis 1990. Cette asymétrie entre les deux régimes est d'origine.
 
@@ -524,10 +525,10 @@ Cf. Q12 et Q6 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
 La [contribution sociale de solidarité](#g-css) est un prélèvement distinct de l'IRPP mais assis sur la même assiette et liquidé avec lui : instituée par l'article 53 de la loi de finances pour 2018, elle est calculée comme la différence entre l'impôt résultant du barème majoré d'un point sur chaque taux de tranche et l'impôt résultant du barème non majoré.
 
-<!-- TODO : section à compléter, et référence manquante à transmettre au bibliographe. Aucune clé
-ne désigne la loi de finances pour 2018 (loi n° 2017-66 du 18 décembre 2017) dans les
-references.json local et partagé : clé « lf-2018 » à créer, avec URL JORT pist.tn, avant de citer
-l'article 53. Reste également à documenter en série datée : le passage du taux à 0,5 point par
+<!-- TODO : section à compléter. La clé « lf-2018 » (loi n° 2017-66 du 18 décembre 2017) est
+désormais disponible dans precis/fr/fiscalite/references.json, avec URL JORT pist.tn et page
+vérifiée (article 53 en page 4289 de l'édition française) : l'article 53 peut être cité. Reste à
+documenter en série datée : le passage du taux à 0,5 point par
 l'article 22 du décret-loi n° 2022-79 (LF 2023), à titre temporaire pour 2023-2025 ; le maintien
 opéré par la LF 2025 ; et l'état du droit pour 2026, le régime temporaire arrivant à échéance. Les
 références d'openfisca-tunisia pointent vers un dépôt privé et sont à remplacer par des URL
@@ -557,22 +558,12 @@ l'impôt sur le revenu, tranche, revenu annuel global net, minimum d'impôt, ré
 régime estimatif optionnel, rétribution provisoire ou accidentelle, frais professionnels,
 abattement sur les pensions et rentes viagères. -->
 
-<!-- TODO (bibliographe) : la sous-section « L'évolution de l'assiette et des abattements » cite
-vingt clés qui n'existent encore ni dans precis/fr/references.json ni dans
-precis/fr/fiscalite/references.json. Leurs notices CSL-JSON complètes (titre, JORT, page, URL
-pist.tn testée, note de vérification) sont proposées au § 11.2 de
-docs/notes/fiscalite-irpp-assiette-abattements.md et sont à verser via Zotero (groupe 6529669),
-scripts/sync_biblio.py faisant autorité en sens Zotero → references.json.
-
-Lois et décrets-lois : lf-2005, lf-2007, lf-2010, lf-2016, lf-2018, lf-2020, lf-2021, lf-2022,
-lf-2023, lf-2024, loi-avantages-fiscaux-2017.
-Doctrine administrative (notes communes DGI) : dgi-nc-33-2005, dgi-nc-18-2007, dgi-nc-14-2010,
-dgi-nc-16-2016, dgi-nc-2-2017, dgi-nc-7-2018, dgi-nc-3-2020, dgi-nc-1-2021, dgi-nc-1-2022.
-
-Deux réserves à reporter dans les notices : (i) lf-2023 (décret-loi n° 2022-79) est dépourvue de
-numéro de JORT, de date de publication et de page — non établis ; (ii) pour lf-2016, lf-2020 et
-lf-2024, l'édition française du fascicule n'est pas en ligne sur pist.tn (404) : seule l'édition
-arabe répond, alors que la pagination citée est celle de l'édition française.
+<!-- TODO (bibliographe) : les vingt clés citées par la sous-section « L'évolution de l'assiette
+et des abattements » ont été créées dans precis/fr/fiscalite/references.json ; le livre rend sans
+citation non résolue. Elles restent PROVISOIRES tant qu'elles ne sont pas versées dans Zotero
+(groupe 6529669), scripts/sync_biblio.py faisant autorité en sens Zotero → references.json : la
+liste à rapatrier est tenue dans docs/notes/biblio-a-rapatrier.md. Les entrées arabes
+correspondantes (precis/ar/fiscalite/references.json) restent à créer.
 
 Textes cités en prose sans clé, faute de référence disponible — à créer si le précis doit les
 citer formellement : loi n° 91-98 du 31 décembre 1991 (LF 1992, art. 30, intérêts de l'épargne) ;
