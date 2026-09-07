@@ -930,7 +930,7 @@ entries:
     statut: valide
     references: [loi-irpp-is-1989]
     source_definition: {ref: loi-irpp-is-1989}
-    voir_aussi: [taux-marginal, assiette-fiscale, css, retenue-a-la-source]
+    voir_aussi: [bareme-irpp, taux-marginal, assiette-fiscale, css, retenue-a-la-source, revenu-annuel-net, regime-forfaitaire]
     fr:
       terme: Impôt sur le revenu des personnes physiques
       definition: >
@@ -967,7 +967,7 @@ entries:
     acronyme: null
     statut: valide
     references: []
-    voir_aussi: [irpp, assiette-fiscale]
+    voir_aussi: [irpp, assiette-fiscale, bareme-irpp, tranche-de-revenu, taux-effectif-limite-superieure]
     fr:
       terme: Taux marginal
       definition: >
@@ -1219,3 +1219,249 @@ entries:
         التي تتمّ آليًّا حسب الأقدمية، تُدخل الترقية في الرتبة عنصر الانتقاء
         وطريقة أداء العمل.
       synonymes: [الترقية في الرتبة]
+
+  - id: bareme-irpp
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, lf-2017, lf-2025]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 44, § I"}
+    source_traduction: {ref: lf-2017, locator: "art. 14"}
+    voir_aussi: [irpp, tranche-de-revenu, taux-marginal, taux-effectif-limite-superieure, revenu-annuel-net]
+    fr:
+      terme: Barème de l'impôt sur le revenu
+      definition: >
+        Tableau qui associe à chaque tranche de revenu annuel net un taux
+        d'imposition et selon lequel est liquidé l'impôt sur le revenu des
+        personnes physiques. Il figure au paragraphe I de l'article 44 du code
+        de l'IRPP et de l'IS et publie, à côté du taux de chaque tranche, le
+        taux effectif à la limite supérieure de celle-ci.
+      synonymes: [barème progressif]
+    ar:
+      terme: جدول الضريبة على الدخل
+      definition: >
+        جدول يُسند إلى كلّ شريحة من الدخل السنوي الصافي نسبةً للضريبة، وعلى
+        أساسه تُحتسب الضريبة على دخل الأشخاص الطبيعيين. ويرد بالفقرة I من
+        الفصل 44 من مجلة الضريبة على دخل الأشخاص الطبيعيين والضريبة على
+        الشركات، ويُبيّن إلى جانب نسبة كلّ شريحة النسبة الفعلية في الحدّ
+        الأقصى لتلك الشريحة.
+      synonymes: []
+
+  - id: tranche-de-revenu
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, lf-2017]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 44, § I"}
+    source_traduction: {ref: lf-2017, locator: "art. 14"}
+    voir_aussi: [bareme-irpp, taux-marginal, taux-effectif-limite-superieure]
+    fr:
+      terme: Tranche
+      definition: >
+        Segment du revenu annuel net délimité par deux seuils exprimés en
+        dinars, auquel le barème applique un taux d'imposition propre. Le
+        barème étant progressif, chaque tranche n'est imposée qu'à hauteur de
+        la fraction de revenu qu'elle contient.
+      synonymes: [tranche de revenu, tranche d'imposition]
+    ar:
+      terme: شريحة
+      definition: >
+        جزء من الدخل السنوي الصافي محدّد بعتبتين بالدينار، يُطبّق عليه الجدول
+        نسبةً خاصّة به. ولمّا كان الجدول تصاعديًّا، فإنّ كلّ شريحة لا تُوظّف
+        عليها الضريبة إلاّ في حدود الجزء من الدخل الذي تشمله.
+      synonymes: [شريحة من الدخل]
+
+  - id: taux-effectif-limite-superieure
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, lf-2017, lf-2025]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 44, § I"}
+    source_traduction: {ref: lf-2017, locator: "art. 14"}
+    voir_aussi: [bareme-irpp, taux-marginal, tranche-de-revenu]
+    fr:
+      terme: Taux effectif à la limite supérieure
+      definition: >
+        Rapport de l'impôt total dû au revenu, calculé au seuil supérieur d'une
+        tranche. Il mesure la charge réellement supportée, par différence avec
+        le taux marginal de la tranche. Particularité rare : cette colonne
+        figure dans le texte de loi lui-même, au barème de l'article 44 § I.
+      synonymes: [taux effectif]
+    ar:
+      terme: النسبة الفعلية في الحدّ الأقصى
+      definition: >
+        نسبة جملة الضريبة المستوجَبة إلى الدخل، محتسبةً عند الحدّ الأعلى
+        للشريحة. وهي تقيس العبء المتحمَّل فعليًّا، خلافًا للنسبة الحدية
+        للشريحة. ومن الخصائص النادرة أنّ هذا العمود يرد في نصّ القانون ذاته،
+        ضمن جدول الفقرة I من الفصل 44.
+      synonymes: []
+
+  - id: revenu-annuel-net
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, lf-2014]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 1"}
+    source_traduction: {ref: lf-2014, locator: "art. 73"}
+    voir_aussi: [bareme-irpp, assiette-fiscale, irpp, frais-professionnels]
+    fr:
+      terme: Revenu annuel net
+      definition: >
+        Revenu net global du contribuable pour une année donnée, après
+        déduction des charges admises et application des abattements
+        catégoriels et des déductions pour situation et charges de famille.
+        C'est la grandeur à laquelle s'applique le barème de l'article 44 § I.
+      synonymes: [revenu net global]
+    ar:
+      terme: الدخل السنوي الصافي
+      definition: >
+        الدخل الصافي الجملي للمطالب بالأداء بعنوان سنة معيّنة، بعد طرح الأعباء
+        المقبولة وتطبيق الطرحات الصنفية والتخفيضات بعنوان الحالة والأعباء
+        العائلية. وهو المقدار الذي يُطبَّق عليه جدول الفقرة I من الفصل 44.
+      synonymes: []
+
+  - id: minimum-impot
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, lf-2014]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 44, § II"}
+    source_traduction: {ref: lf-2014, locator: "art. 48"}
+    voir_aussi: [irpp, bareme-irpp, regime-forfaitaire]
+    fr:
+      terme: Minimum d'impôt
+      definition: >
+        Montant plancher d'impôt annuel, calculé en pourcentage du chiffre
+        d'affaires ou des recettes brutes, en deçà duquel l'impôt liquidé selon
+        le barème ne peut descendre pour les activités commerciales et non
+        commerciales (article 44 § II du code de l'IRPP et de l'IS).
+      synonymes: []
+    ar:
+      terme: الضريبة الدنيا
+      definition: >
+        الحدّ الأدنى من الضريبة السنوية، المحتسَب بنسبة من رقم المعاملات أو من
+        المقابيض الخام، والذي لا يمكن أن تنزل عنه الضريبة المحتسبة حسب الجدول
+        بالنسبة إلى الأنشطة التجارية وغير التجارية (الفقرة II من الفصل 44 من
+        مجلة الضريبة على دخل الأشخاص الطبيعيين والضريبة على الشركات).
+      synonymes: []
+
+  - id: regime-forfaitaire
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, lf-1993, lf-2014]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 44, § IV"}
+    source_traduction: {ref: lf-2014, locator: "art. 45"}
+    voir_aussi: [regime-estimatif-optionnel, minimum-impot, irpp]
+    fr:
+      terme: Régime forfaitaire d'imposition
+      definition: >
+        Régime d'imposition des entreprises individuelles réalisant des
+        bénéfices industriels et commerciaux dans un établissement unique, sous
+        conditions d'activité et de chiffre d'affaires : l'impôt y est
+        déterminé forfaitairement à partir du chiffre d'affaires annuel, et non
+        du bénéfice réel. Institué au § IV de l'article 44 du code, il a été
+        transféré aux articles 44 bis à 44 sexies.
+      synonymes: [régime forfaitaire]
+    ar:
+      terme: النظام التقديري
+      definition: >
+        نظام توظيف الضريبة على المؤسسات الفردية التي تحقّق أرباحًا صناعية
+        وتجارية في إطار مقرّ وحيد، ضمن شروط تتعلّق بالنشاط وبرقم المعاملات:
+        تُضبط فيه الضريبة تقديريًّا على أساس رقم المعاملات السنوي لا على أساس
+        الربح الحقيقي. أُحدث بالفقرة IV من الفصل 44 من المجلة ثمّ نُقل إلى
+        الفصول من 44 مكرّر إلى 44 سادسا.
+      synonymes: [نظام الضريبة التقديرية]
+
+  - id: regime-estimatif-optionnel
+    acronyme: null
+    statut: provisoire
+    references: [lf-2026]
+    source_definition: {ref: lf-2026, locator: "art. 91"}
+    voir_aussi: [regime-forfaitaire, irpp, minimum-impot]
+    fr:
+      terme: Régime estimatif optionnel
+      definition: >
+        Régime ouvert sur option, ajouté à l'article 44 ter du code par
+        l'article 91 de la loi de finances pour 2026, aux contribuables dont le
+        chiffre d'affaires annuel n'excède pas 100 000 dinars : l'impôt y est
+        forfaitisé en deux classes (4 000 et 5 000 dinars par an, réduits de
+        moitié dans les campagnes et villages) et libératoire dans la limite du
+        chiffre d'affaires déclaré spontanément. Terme français provisoire :
+        seul le texte arabe du JORT est publié à ce jour.
+      synonymes: []
+    ar:
+      terme: النظام التقديري الاختياري
+      definition: >
+        نظام يُفتح بالاختيار، أُضيف إلى الفصل 44 ثالثا من المجلة بمقتضى الفصل
+        91 من قانون المالية لسنة 2026، لفائدة المطالبين بالأداء الذين لا
+        يتجاوز رقم معاملاتهم السنوي 100.000 دينار: تُضبط فيه الضريبة جزافيًّا
+        في صنفين (4000 و5000 دينار سنويًّا، مع التخفيض إلى النصف في الأرياف
+        والقرى) وتكون تحرّرية في حدود رقم المعاملات المصرّح به تلقائيًّا.
+      synonymes: [نظام الضريبة التقديرية الاختيارية]
+
+  - id: retribution-provisoire-accidentelle
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, lf-2017]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 53, § II"}
+    source_traduction: {ref: lf-2017, locator: "art. 14"}
+    voir_aussi: [retenue-a-la-source, irpp, assiette-fiscale]
+    fr:
+      terme: Rétribution provisoire ou accidentelle
+      definition: >
+        Somme servie par l'employeur en sus du traitement et des indemnités
+        régulières, soumise à une retenue à la source à taux propre sur son
+        montant net. Depuis l'article 14 § 3 de la loi de finances pour 2017,
+        le taux est de 20 % et la retenue n'est pas due lorsque le salaire
+        annuel global net ne dépasse pas 5 000 dinars.
+      synonymes: []
+    ar:
+      terme: الأجر الوقتي أو العرضي
+      definition: >
+        مبلغ يمنحه المؤجِّر علاوة على المرتب والمنح المنتظمة، ويخضع لخصم من
+        المورد بنسبة خاصّة من مبلغه الصافي. ومنذ الفقرة 3 من الفصل 14 من قانون
+        المالية لسنة 2017، حُدّدت النسبة بـ20 % ولا يُستوجب الخصم إذا كان
+        الأجر السنوي الجملي الصافي لا يتجاوز 5000 دينار.
+      synonymes: []
+
+  - id: frais-professionnels
+    acronyme: null
+    statut: provisoire
+    references: [code-irpp-is-1990, lf-2017]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 26, § I"}
+    voir_aussi: [revenu-annuel-net, assiette-fiscale, abattement-pensions]
+    fr:
+      terme: Frais professionnels
+      definition: >
+        Déduction forfaitaire opérée sur les traitements et salaires pour la
+        détermination du revenu net, fixée à 10 % du reliquat après déduction
+        des retenues sociales obligatoires. L'article 14 § 2 de la loi de
+        finances pour 2017 en a plafonné le montant à 2 000 dinars par an.
+      synonymes: [abattement de 10 % pour frais professionnels]
+    ar:
+      terme: المصاريف المهنية
+      definition: >
+        طرح جزافي يُجرى على المرتبات والأجور لتحديد الدخل الصافي، حُدّد بـ10 %
+        من الباقي بعد طرح الاقتطاعات الاجتماعية الوجوبية. وقد حدّدت الفقرة 2
+        من الفصل 14 من قانون المالية لسنة 2017 سقفه بـ2000 دينار سنويًّا.
+      synonymes: []
+
+  - id: abattement-pensions
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, lf-2026]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 26, § II"}
+    source_traduction: {ref: lf-2026, locator: "art. 56"}
+    voir_aussi: [frais-professionnels, revenu-annuel-net, assiette-fiscale, irpp]
+    fr:
+      terme: Abattement sur les pensions et rentes viagères
+      definition: >
+        Réduction appliquée au montant brut des pensions et rentes viagères
+        pour leur imposition, fixée à 25 % par le paragraphe II de l'article 26
+        du code. L'article 56 de la loi de finances pour 2026 le porte
+        progressivement à 30 % pour les revenus de 2027, 40 % pour 2028 et
+        50 % pour 2029.
+      synonymes: []
+    ar:
+      terme: الطرح بعنوان الجرايات والإيرادات العمرية
+      definition: >
+        تخفيض يُطبَّق على المبلغ الخام للجرايات والإيرادات العمرية بغرض توظيف
+        الضريبة عليها، حُدّد بـ25 % بالفقرة II من الفصل 26 من المجلة. ويرفعه
+        الفصل 56 من قانون المالية لسنة 2026 تدريجيًّا إلى 30 % بالنسبة إلى
+        مداخيل 2027 و40 % بالنسبة إلى 2028 و50 % بالنسبة إلى 2029.
+      synonymes: []

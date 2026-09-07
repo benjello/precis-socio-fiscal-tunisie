@@ -5,6 +5,11 @@ project:
 lang: ar
 dir: rtl
 
+# Surcharge des libellés d'interface Quarto en arabe (lang: ar ne les traduit
+# pas tous). Customisation propre au livre AR.
+language:
+  section-title-appendices: "ملاحق"
+
 book:
   title: "الجباية"
   author: "Mahdi Ben Jelloul"
@@ -14,6 +19,8 @@ book:
   repo-actions: [edit, issue]
   chapters:
     - index.qmd
+  appendices:
+    - _glossaire.qmd
 
 bibliography:
   - references.json

@@ -1,0 +1,63 @@
+<!-- Fichier généré par scripts/build_glossary.py — ne pas éditer. Source : precis/glossaire.yml -->
+
+# Glossaire {.unnumbered}
+
+Glossaire bilingue des notions fondamentales. Chaque terme renvoie à son équivalent arabe (navigation FR ⇄ AR) afin de garantir la cohérence terminologique entre les deux versions du précis.
+
+## Assiette fiscale {#g-assiette-fiscale}
+
+[العربية → الوعاء الضريبي](../../ar/fiscalite/_glossaire.html#g-assiette-fiscale)
+
+Base de calcul de l'impôt, c'est-à-dire le montant sur lequel s'applique le taux d'imposition après déductions et abattements.
+
+*Voir aussi :* [Impôt sur le revenu des personnes physiques](#g-irpp), [Taux marginal](#g-taux-marginal)
+
+## Contribution sociale de solidarité (CSS) {#g-css}
+
+[العربية → المساهمة الاجتماعية التضامنية](../../ar/fiscalite/_glossaire.html#g-css)
+
+Prélèvement additionnel à l'impôt sur le revenu, affecté au financement des régimes de sécurité sociale.
+
+*Source de la définition :* [@loi2017-66-lf2018, art. 53]
+
+*Voir aussi :* [Impôt sur le revenu des personnes physiques](#g-irpp), [Retenue à la source](#g-retenue-a-la-source)
+
+*Références :* [@loi2017-66-lf2018]
+
+## Impôt sur le revenu des personnes physiques (IRPP) {#g-irpp}
+
+[العربية → الضريبة على دخل الأشخاص الطبيعيين](../../ar/fiscalite/_glossaire.html#g-irpp)
+
+Impôt direct et progressif frappant le revenu net global des personnes physiques, retenu à la source sur les salaires (code de l'IRPP et de l'IS, loi n°89-114).
+
+*Source de la définition :* [@loi-irpp-is-1989]
+
+*Voir aussi :* [Taux marginal](#g-taux-marginal), [Assiette fiscale](#g-assiette-fiscale), [Contribution sociale de solidarité](#g-css), [Retenue à la source](#g-retenue-a-la-source)
+
+*Références :* [@loi-irpp-is-1989]
+
+## Retenue à la source {#g-retenue-a-la-source}
+
+[العربية → الخصم من المورد](../../ar/fiscalite/_glossaire.html#g-retenue-a-la-source)
+
+Prélèvement de l'impôt opéré par l'employeur, lors du paiement du traitement et des indemnités imposables, au titre de l'impôt sur le revenu des personnes physiques (code de l'IRPP et de l'IS, loi n°89-114). Le montant retenu est reversé au Trésor et imputé sur l'impôt dû par l'agent.
+
+*Source de la définition :* [@loi-irpp-is-1989]
+
+*Voir aussi :* [Impôt sur le revenu des personnes physiques](#g-irpp), [Contribution sociale de solidarité](#g-css)
+
+*Références :* [@loi-irpp-is-1989]
+
+## Salaire minimum interprofessionnel garanti (SMIG) {#g-smig}
+
+[العربية → الأجر الأدنى المضمون لمختلف المهن](../../ar/fiscalite/_glossaire.html#g-smig)
+
+Rémunération horaire ou mensuelle minimale légale applicable aux salariés des secteurs non agricoles.
+
+## Taux marginal {#g-taux-marginal}
+
+[العربية → النسبة الحدية](../../ar/fiscalite/_glossaire.html#g-taux-marginal)
+
+Taux d'imposition applicable à la dernière tranche de revenu ; dans un barème progressif, il s'applique à l'euro (au dinar) supplémentaire.
+
+*Voir aussi :* [Impôt sur le revenu des personnes physiques](#g-irpp), [Assiette fiscale](#g-assiette-fiscale)
