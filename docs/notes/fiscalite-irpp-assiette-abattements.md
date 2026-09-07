@@ -1424,3 +1424,76 @@ postérieurs. Pour celles-là, seuls les textes et les notes communes font foi, 
 attesté/dérivé de chaque ligne reste celui établi au § 1 de la présente note.
 
 Aucune divergence n'a été relevée entre la sous-section publiée et le code consolidé.
+
+---
+
+## Annexe F — Le miroir iort.tn comme source de texte français
+
+### F.1 Ce que c'est
+
+Le corpus `PDFs-legislation-tunisie` a été constitué en partie par scraping de **iort.tn**, le site
+de l'Imprimerie officielle. Le résultat est versionné en local :
+`PDFs-legislation-tunisie/data/iort/textes/md/`, **32 118 textes en markdown**, chacun portant les
+sections « Version française » et « النسخة العربية ».
+
+Conventions de nommage, à connaître pour ne pas conclure à tort à une absence :
+`loi_<numéro sans le millésime>_<numéro>_<année>.md`, avec l'année **sur deux chiffres avant 2000**
+et **sur quatre chiffres ensuite**. La loi n° 89-114 est donc `loi_89_114_1989.md`, la loi
+n° 2013-54 est `loi_2013_54_2013.md`.
+
+### F.2 Sa portée réelle — la limite qui compte
+
+**Le texte intégral n'est disponible qu'à partir de 2000.** Avant, le scraping n'a récupéré que
+l'habillage du site : les fichiers antérieurs font 61 à 65 lignes en moyenne, contre 85 à 1 500
+ensuite, et ne contiennent que le titre du texte.
+
+| Années | Fichiers | Lignes en moyenne | Exploitable |
+|---|---|---|---|
+| 1996 à 1999 | ~100 par an | 61 à 65 | **non** — titre seul |
+| 2000 et après | ~100 par an | 85 à 1 500 | **oui** — texte intégral |
+
+Conséquence directe : **les lois de finances 1992, 1998 et 1999 ne sont pas récupérables par cette
+voie.** Pour elles, il faut océriser les fascicules du corpus local (`PDFs/JORT/1991/fr/`,
+`1997/fr/`, `1998/fr/`).
+
+### F.3 Ce que le miroir apporte, et ce qu'il n'apporte pas
+
+Il donne le **texte français authentique**, article par article, avec les **intitulés officiels**
+des mesures — ce qui en fait la source de recours quand l'édition française d'un fascicule n'est
+pas en ligne sur pist.tn, cas des JORT n° 104/2015, n° 104/2019, n° 141/2022, n° 144/2023 et
+n° 149/2024.
+
+Il ne donne **pas la pagination du JORT**. Pour elle, seules l'édition arabe sur pist.tn, la notice
+`jort_cache.db` ou les PDF du corpus local font foi.
+
+### F.4 Série du plafond de déduction des primes d'assurance-vie — deux maillons récupérés
+
+Le § 9.1 laissait cette série avec ses deux bornes seulement et sept textes à dépouiller. Deux sont
+désormais établis sur le texte français.
+
+| Années de revenus | Plafond | Texte | Intitulé officiel |
+|---|---|---|---|
+| 1990 → ? | 200 D/an, + 100 D conjoint, + 50 D par enfant (4 premiers) | art. 39 § I-2 du code | — |
+| ? → ? | **1 200 D/an, + 600 D conjoint, + 300 D par enfant** | **art. 23 § 1 de la loi n° 2007-70 (LF 2008)** | « Relèvement du plafond déductible des primes d'assurance vie et assouplissement du bénéfice des avantages fiscaux à ce titre » |
+| ? → 2019 | **10 000 D/an**, sans majoration par personne à charge | **art. 24 § 1 de la loi n° 2013-54 (LF 2014)** | « Encouragement de l'épargne à long terme en matière d'assurance vie » |
+| 2020 → | 100 000 D/an, soumis au minimum d'impôt | art. 16 § 2 et 3 de la loi n° 2020-46 (LF 2021) | « Encouragement de l'épargne à moyen et long terme… » |
+
+Le mot « **relèvement** » de l'intitulé de 2008 atteste qu'une valeur intermédiaire existe entre
+200 D et 1 200 D : elle est vraisemblablement dans la LF 1998 (art. 52), hors de portée du miroir.
+La LF 2014 fait disparaître les majorations pour conjoint et enfants au profit d'un plafond unique.
+
+**Point négatif également utile** : l'article 45 de la loi n° 2001-123 (LF 2002), que le § 9.1
+citait parmi les véhicules à dépouiller, **ne concerne pas** le paragraphe 2 du § I de l'article 39.
+Le fichier `loi_2001_123_2001.md` ne comporte aucune disposition relative aux primes d'assurance.
+Ce texte est à retirer de la liste.
+
+### F.5 Autres points établis par le miroir
+
+- L'**article 12 bis de la loi n° 89-114** est visé par des textes dès la loi n° 2001-123 (LF 2002,
+  § VIII sur les comptes épargne en actions), ce qui confirme son existence bien avant 2007. Le
+  miroir ne porte pas son texte, la loi de 1989 étant antérieure à la couverture intégrale : le
+  véhicule d'origine du taux de 60 % reste à établir.
+- L'**article 12 bis du code** — l'homonyme, relatif aux amortissements — est **créé par
+  l'article 41 de la loi n° 2007-70 (LF 2008)** : « Est ajouté aux dispositions du code […] un
+  article 12 bis ainsi libellé ». La mise en garde du § 9.3 contre la confusion des deux est donc
+  vérifiée sur texte.
