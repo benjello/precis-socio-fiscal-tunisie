@@ -17,6 +17,7 @@ Fichiers générés : NE PAS éditer à la main, modifiez `precis/glossaire.yml`
 """
 
 import os
+import re
 import sys
 import unicodedata
 
@@ -120,8 +121,35 @@ def sort_key(terme, lang):
     return "".join(c for c in nfkd if not unicodedata.combining(c)).casefold()
 
 
-def render_book(entries, book, lang):
+def ancres_utilisees(book):
+    """Identifiants `#g-…` auxquels le texte FRANÇAIS du livre renvoie.
+
+    Le français fait foi : l'arabe en est la traduction et doit porter la même
+    annexe, sans quoi les deux versions divergeraient.
+    """
+    source = os.path.join(ROOT, "precis", "fr", book)
+    trouvees = set()
+    if not os.path.isdir(source):
+        return trouvees
+    for nom in os.listdir(source):
+        if not nom.endswith(".qmd") or nom.startswith("_glossaire"):
+            continue
+        with open(os.path.join(source, nom), encoding="utf-8") as f:
+            trouvees |= set(re.findall(r"#g-([a-z0-9-]+)", f.read()))
+    return trouvees
+
+
+def render_book(entries, book, lang, retenues=None):
+    """Rend l'annexe glossaire d'un livre.
+
+    `retenues` : identifiants des notions à inclure. None = toutes.
+    L'annexe d'un livre ne contient que les notions auxquelles son texte renvoie
+    effectivement : les entrées d'un autre livre y seraient du bruit, et leurs
+    citations ne résoudraient pas, les bibliographies étant par livre.
+    """
     other = OTHER[lang]
+    if retenues is not None:
+        entries = [e for e in entries if e["id"] in retenues]
     by_id = {e["id"]: e for e in entries}
     ordered = sorted(entries, key=lambda e: sort_key(e[lang]["terme"], lang))
 
@@ -196,7 +224,14 @@ def main():
         print(f"⚠ {len(warnings)} entrée(s) « valide » sans source_definition : {', '.join(warnings)}")
 
     written = []
+    ids_connus = {e["id"] for e in entries}
     for book in BOOKS:
+        retenues = ancres_utilisees(book)
+        inconnues = sorted(retenues - ids_connus)
+        if inconnues:
+            print(f"⚠ {book} : ancres sans entrée au glossaire : {', '.join(inconnues)}")
+        retenues &= ids_connus
+        print(f"  {book} : {len(retenues)} notion(s) sur {len(entries)}")
         for lang in LANGS:
             out_dir = os.path.join(ROOT, "precis", lang, book)
             if not os.path.isdir(out_dir):
@@ -204,7 +239,7 @@ def main():
                 continue
             out_path = os.path.join(out_dir, "_glossaire.qmd")
             with open(out_path, "w", encoding="utf-8") as f:
-                f.write(render_book(entries, book, lang))
+                f.write(render_book(entries, book, lang, retenues))
             written.append(os.path.relpath(out_path, ROOT))
 
     with open(GENERATED_TABLE, "w", encoding="utf-8") as f:
