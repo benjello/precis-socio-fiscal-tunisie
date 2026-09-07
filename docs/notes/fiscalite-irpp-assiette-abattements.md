@@ -1384,3 +1384,43 @@ rétribution provisoire, frais professionnels, abattement sur les pensions) ne s
 | Minimum d'impôt au titre des avantages fiscaux | الضريبة الدنيا | **article 12 bis de la loi n° 89-114 du 30 décembre 1989** (à distinguer de l'art. 12 bis du code, amortissements, et de l'art. 44 § II) |
 | Revenus et bénéfices exceptionnels | المداخيل والأرباح الاستثنائية | art. 11 § I bis du code |
 | Gratification de fin de service | منحة نهاية الخدمة | art. 38 point 5 du code |
+
+---
+
+## Annexe E — Contrôle croisé sur les six millésimes du code consolidé
+
+Vérification indépendante de la sous-section publiée, menée après rédaction sur
+`PDFs-legislation-tunisie/markdown_output/Code_de_lIRPP_et_IS_{2019,2020,2021,2022,2023,2025}.md`.
+Méthode : extraction du corps de chaque article cité, puis comparaison des valeurs entre
+millésimes. Rejouable tel quel.
+
+### E.1 Intégrité des renvois
+
+Les **21 articles du code** cités dans la sous-section (8, 9, 21 à 29, 33, 36 à 40, 43, 44, 49,
+et l'article 12 *bis* de la loi de promulgation) existent tous dans le code 2025, qui en compte
+94. **Aucun renvoi orphelin.**
+
+### E.2 Valeurs confirmées par comparaison des millésimes
+
+| Article | Observation sur les millésimes | Ce qu'elle confirme |
+|---|---|---|
+| **28 § II** (foncier bâti) | **20 %** dans les éditions 2019 à 2023, **25 %** dans l'édition 2025 | Le relèvement par l'art. 39 de la LF 2025, applicable aux revenus 2024. Confirmation indépendante de la date. |
+| **40 § I** (chef de famille) | **300 D dès l'édition 2019**, annoté « Modifié **Art 54-1** LF 2017-66 du 18/12/2017 » | Le véhicule est bien l'**article 54** de la LF 2018, et non l'article 55 comme l'indique `openfisca-tunisia`. L'erreur d'openfisca est confirmée sur le texte. |
+| **40 § IV** (parent à charge) | Condition de ressources : « n'excède pas le **salaire minimum interprofessionnel garanti** » en 2019 → « n'excède pas le **double** du SMIG » en 2020 | Le doublement de la condition par l'art. 41 de la LF 2020, aux revenus 2019. Le millésime 2019 capture l'**état intermédiaire** : chef de famille déjà à 300 D, parent à charge encore à la condition simple. |
+| **40 § III** (enfant étudiant, enfant infirme) | Chaîne annotée « Art 50 LF 2004-90, Art 40-2 LF 2009-71, Art 94-2 LF 2013-54 et Art 55 LF 2017-66 » | Les quatre ruptures de la série (revenus 2004, 2009, 2013, 2017) et leurs véhicules. |
+| **40 § V** (abattement salaire minimum) | **Absent des six millésimes** | L'abrogation par l'art. 73 de la LF 2014. Un paramètre encore actif dans openfisca est donc bien sans support depuis les revenus 2014. |
+| **26 § I et § II** | 10 %, plafond **2 000**, et 25 % sur pensions, **stables sur les six millésimes** | Cohérent avec un plafond créé en 2017 : tous les millésimes disponibles lui sont postérieurs. Le millésime ne peut pas, à lui seul, établir la création — c'est le texte de la LF 2017 (« Est **ajouté** … ») qui l'établit. |
+| **22 § II** (BNC) | **80 %** sur les six millésimes | Cohérent avec une bascule antérieure à 2019 (revenus 2013, dérivée). Ne la confirme pas à elle seule. |
+| **39 § VIII** (CEA) | **50 000** en 2019 et 2020, **100 000** à partir de 2021 | Le relèvement par l'art. 16 de la LF 2021, aux revenus 2020. |
+
+### E.3 Portée et limite du contrôle
+
+Le contrôle est **concluant pour les modifications postérieures à 2019** : la comparaison des
+millésimes date la bascule à l'édition près, indépendamment des notes communes. C'est ainsi que
+sont confirmés le foncier bâti, le parent à charge et le compte épargne en actions.
+
+Il est **muet sur les modifications antérieures à 2019**, tous les millésimes disponibles étant
+postérieurs. Pour celles-là, seuls les textes et les notes communes font foi, et le statut
+attesté/dérivé de chaque ligne reste celui établi au § 1 de la présente note.
+
+Aucune divergence n'a été relevée entre la sous-section publiée et le code consolidé.
