@@ -31,7 +31,7 @@ GLOSSARY = os.path.join(ROOT, "precis", "glossaire.yml")
 GENERATED_TABLE = os.path.join(ROOT, "translation_glossary.generated.md")
 
 # Précis pour lesquels on génère l'annexe glossaire (portée incrémentale).
-BOOKS = ["remunerations_publiques"]
+BOOKS = ["remunerations_publiques", "fiscalite"]
 
 LANGS = ("fr", "ar")
 OTHER = {"fr": "ar", "ar": "fr"}
