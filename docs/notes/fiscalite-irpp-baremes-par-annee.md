@@ -12,9 +12,11 @@
 >   et il contredit à la fois le précis et openfisca. Voir §2.
 > - Le **véhicule du barème 2017** est établi : article 14-1 de la loi n° 2016-78 du
 >   17 décembre 2016, JORT n° 105 du 27 décembre 2016.
-> - **Pagination LF 2025 : tranchée.** La notice JORT officielle (recid 189500) donne
->   `pages: 6429-6429`. La métadonnée openfisca (p. 6429) est exacte ; la valeur p. 3430
->   avancée dans la note du rédacteur est erronée et ne doit pas être reprise.
+> - **Pagination LF 2025 : les DEUX valeurs sont exactes, ce sont deux éditions.**
+>   L'article 36 est en **p. 3429-3430 de l'édition française** et en **p. 6429 de l'édition
+>   arabe**. La notice `jort_cache.db` (recid 189500, `pages: 6429-6429`) décrit l'édition
+>   arabe. J'avais d'abord conclu que « 3430 » était erronée : c'était faux, et cette
+>   conclusion a été propagée avant d'être corrigée. Toute citation doit préciser l'édition.
 
 **Statut : note de travail, à consolider.** Source principale de ce tableau :
 `openfisca-tunisia/openfisca_tunisia/parameters/impot_revenu/bareme.yaml` (paramètres
@@ -200,8 +202,8 @@ JORT n° 105 du 27 décembre 2016, **p. 3831** (la loi commence p. 3829).
 ## 4. Barème applicable aux revenus à compter de 2025
 
 Texte : article 36 de la loi n° 2024-48 du 9 décembre 2024 portant loi de finances pour
-l'année 2025, JORT n° 149 du 10 décembre 2024, tome 167, **p. 6429** (notice JORT recid 189500,
-`pages: 6429-6429`). Fascicule : https://www.pist.tn/jort/2024/2024A/Ja1492024.pdf
+l'année 2025, JORT n° 149 du 10 décembre 2024, tome 167, **p. 3429-3430 (édition française)**,
+**p. 6429 (édition arabe)**. Fascicule : https://www.pist.tn/jort/2024/2024A/Ja1492024.pdf
 (édition arabe ; pas d'édition française référencée dans la notice).
 L'article 36 modifie le **§I de l'article 44** du code de l'IRPP et de l'IS et s'applique
 aux revenus réalisés à compter du 1er janvier 2025.

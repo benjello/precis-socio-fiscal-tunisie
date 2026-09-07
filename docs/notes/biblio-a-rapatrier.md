@@ -563,7 +563,7 @@ collection**, champ « Extra » = `citation-key: <clé>`. Tant que ce n'est pas 
 | `lf-2017` | legislation | Loi n° 2016-78 du 17/12/2016, LF 2017 (art. 14 p. 3831) | n° 105 du 27/12/2016, p. 3829 | `…/2016/2016F/Jo1052016.pdf` |
 | `lf-2025` | legislation | Loi n° 2024-48 du 09/12/2024, LF 2025 (art. 36 p. 6429) | n° 149 du 10/12/2024, t. 167, la loi commence p. 6418 | `…/2024/2024A/Ja1492024.pdf` |
 | `lf-2026` | legislation | Loi n° 2025-17 du 12/12/2025, LF 2026 (art. 56 p. 4243 ; art. 91 p. 4254-4255) | n° 148 du 12/12/2025, t. 168, p. 4231-4331 | `…/2025/2025A/Ja1482025.pdf` |
-| `dgi-nc-3-2017` | report | Note commune n° 3/2017 (commentaire de l'art. 14 de la LF 2017) | — | *pas d'URL* |
+| `dgi-nc-3-2017` | report | Note commune n° 3/2017 (commentaire de l'art. 14 de la LF 2017) | — | *pas d'URL à cette date — **périmé**, URL jibaya.tn trouvée le 07/09/2026, voir la passe « sous-section assiette et abattements » plus bas* |
 
 Métadonnées vérifiées sur `jort_cache.db` (`~/projets/PDFs-legislation-tunisie`) : numéro,
 type, date de signature, fascicule, tome, pagination, `pdf_fr`/`pdf_ar`. Les dix URL ont
@@ -600,11 +600,14 @@ p. 2142-2144, `Jo08889.pdf`, déjà en base sous `loi-irpp-is-1989`, dans le
   passe) : les dix clés y manquent. URL arabes à utiliser, lues dans le champ `pdf_ar` des
   mêmes enregistrements : `Ja09185`, `Ja00190`, `Ja08690`, `Ja08892`, `Ja06498`,
   `Ja1052013`, `Ja1052016`, `Ja1492024`, `Ja1482025` (chemins `…/<année>/<année>A/…`).
-  Pour `dgi-nc-3-2017` : pas d'URL.
+  Pour `dgi-nc-3-2017` : pas d'URL à cette date — **périmé**, voir la passe « sous-section
+  assiette et abattements » plus bas (URL jibaya.tn trouvée le 07/09/2026).
 - **`yaich`** : le millésime de l'édition citée manque (« Les impôts en Tunisie », ouvrage
   réédité annuellement). Non inventé — à relever sur l'exemplaire utilisé par le rédacteur,
   puis renseigner `issued` dans Zotero.
-- **`dgi-nc-3-2017`** : aucune URL pérenne identifiée sur le portail du ministère des
+- **`dgi-nc-3-2017`** (**PÉRIMÉ — résolu plus bas, passe « sous-section assiette et
+  abattements » : URL jibaya.tn trouvée et vérifiée le 07/09/2026**) : aucune URL pérenne
+  identifiée sur le portail du ministère des
   finances ; l'entrée renvoie à la copie locale
   `PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_numéro 3  …_2017_re.pdf`.
   À chercher côté `impots.finances.gov.tn` avant rapatriement.
@@ -613,3 +616,131 @@ p. 2142-2144, `Jo08889.pdf`, déjà en base sous `loi-irpp-is-1989`, dans le
   précis — entrée non créée. À documenter si le rédacteur la cite.
 - **`eset2016`** et **`lapresse2025`** ne sont plus cités dans le corps de la section IRPP.
   Conservées (`lapresse2025` est rattachée à un TODO « incidence » en cours).
+
+---
+
+### Livre « Fiscalité », sous-section « L'évolution de l'assiette et des abattements » — passe bibliographe 07/09/2026
+
+**Vingt clés créées à la main dans `precis/fr/fiscalite/references.json`** (le livre rend
+désormais sans aucune citation non résolue : 20 avertissements `Citeproc: citation … not
+found` avant la passe, **0 après**). Elles sont **provisoires** tant qu'elles ne sont pas
+dans Zotero (groupe 6529669, collection « fiscalité », mappée dans `COLLECTION_TO_BOOK`).
+
+#### Textes législatifs — type CSL `legislation`
+
+| Clé | Texte | JORT | Édition de l'URL | Page (édition française) |
+|---|---|---|---|---|
+| `lf-2005` | Loi n° 2004-90 du 31/12/2004, LF 2005 (art. 49 et 50) | n° 105 du 31/12/2004, t. 147 | **FR** `…/2004/2004F/Jo1052004.pdf` | 3440 |
+| `lf-2007` | Loi n° 2006-85 du 25/12/2006, LF 2007 (art. 35) | n° 103 du 26/12/2006, t. 149 | **FR** `…/2006/2006F/Jo1032006.pdf` | **4387** |
+| `lf-2010` | Loi n° 2009-71 du 21/12/2009, LF 2010 (art. 39 et 40) | n° 102 du 22/12/2009, t. 152 | **FR** `…/2009/2009F/Jo1022009.pdf` | 3919 |
+| `lf-2016` | Loi n° 2015-53 du 25/12/2015, LF 2016 (art. 21) | n° 104 du 29/12/2015, t. 158 | **AR** `…/2015/2015A/Ja1042015.pdf` | **3143** |
+| `lf-2018` | Loi n° 2017-66 du 18/12/2017, LF 2018 (art. 53, 54, 55) | n° 101 du 19/12/2017, t. 160 | **FR** `…/2017/2017F/Jo1012017.pdf` | **4289-4290** |
+| `lf-2020` | Loi n° 2019-78 du 23/12/2019, LF 2020 (art. 41) | n° 104 du 27/12/2019, t. 162 | **AR** `…/2019/2019A/Ja1042019.pdf` | 4435 |
+| `lf-2021` | Loi n° 2020-46 du 23/12/2020, LF 2021 (art. 16) | n° 128 du 25/12/2020, t. 163 | **FR** `…/2020/2020F/Jo1282020.pdf` | **3129** |
+| `lf-2022` | Décret-loi n° 2021-21 du 28/12/2021, LF 2022 (art. 24) | n° 119 du 28/12/2021, t. 164 | **FR** `…/2021/2021F/Jo1192021.pdf` | 3086 |
+| `lf-2023` | Décret-loi n° 2022-79 du 22/12/2022, LF 2023 (art. 43) | n° 141 du 23/12/2022, t. 165 | **AR** `…/2022/2022A/Ja1412022.pdf` | *non établie — voir ci-dessous* |
+| `lf-2024` | Loi n° 2023-13 du 11/12/2023, LF 2024 (art. 34) | n° 144 du 12/12/2023, t. 166 | **AR** `…/2023/2023A/Ja1442023.pdf` | **3476** |
+| `loi-avantages-fiscaux-2017` | Loi n° 2017-8 du 14/02/2017, refonte des avantages fiscaux (art. 2 § 6) | n° 15 du 21/02/2017, t. 160 | **FR** `…/2017/2017F/Jo0152017.pdf` | **778** |
+
+#### Doctrine administrative (notes communes DGI) — type CSL `report`
+
+Les neuf notes ont une **URL pérenne sur `jibaya.tn`** (portail de la DGI) : page
+`https://jibaya.tn/docs/<slug>/`, renvoyant au PDF sous `wp-content/uploads/2024/02/`.
+Les neuf PDF ont été téléchargés et leur **en-tête et objet contrôlés sur pièce** ; les
+neuf **copies locales** correspondantes existent dans
+`PDFs-legislation-tunisie/PDFs/Notes_Communes/` (nom de fichier exact consigné dans le
+champ `note` de chaque entrée).
+
+| Clé | Note commune | Texte commenté | Couche texte du PDF |
+|---|---|---|---|
+| `dgi-nc-33-2005` | n° 33/2005 | art. 50 LF 2005 (enfant infirme, 500 → 750 D) | oui |
+| `dgi-nc-18-2007` | n° 18/2007 | art. 35 et 36 LF 2007 (pensions étrangères, 80 %) | oui |
+| `dgi-nc-14-2010` | n° 14/2010 | art. 39 LF 2010 (intérêts de prêt logement social) | oui |
+| `dgi-nc-16-2016` | n° 16/2016 | art. 21, 23 et 27 LF 2016 (revenus fonciers, 30 → 20 %) | oui |
+| `dgi-nc-2-2017` | n° 2/2017 | art. 13 LF 2017 (intérêts de l'épargne) | **non** (lue à l'image) |
+| `dgi-nc-7-2018` | n° 7/2018 | art. 54 et 55 LF 2018 (charges de famille, enfants infirmes) | oui |
+| `dgi-nc-3-2020` | n° 3/2020 | art. 40 et 41 LF 2020 (parent à charge, 150 → 450 D) | **non** (lue à l'image) |
+| `dgi-nc-1-2021` | n° 1/2021 | art. 16 LF 2021 (CEA, assurance-vie ; minimum d'impôt à 45 %) | **non** (lue à l'image) |
+| `dgi-nc-1-2022` | n° 1/2022 | art. 24, 29 et 38 LF 2022 (intérêts de l'épargne) | oui |
+
+#### Méthode de vérification appliquée (07/09/2026)
+
+`www.pist.tn` a un **certificat TLS expiré** (`curl -k`). Un code 200 ne prouve rien : les
+onze fascicules ont été **téléchargés et ouverts**, et pour chacun l'édition (mention
+« TRADUCTION FRANÇAISE POUR INFORMATION » ou couverture arabe), le numéro, l'année (tome)
+et la date de publication ont été relevés sur la page de couverture, puis la page de
+l'article citée lue sur le pied de page de la page physique correspondante.
+
+- Signature d'un 404 sur ce serveur : `404 text/html; charset=iso-8859-1 289` (289 octets
+  de HTML, pas un PDF). **Le champ `pdf_fr` de `jort_cache.db` ne prouve pas l'existence
+  du fichier** : `…/2022/2022F/Jo1412022.pdf` y figure pour d'autres textes du fascicule
+  n° 141/2022 et renvoie pourtant un 404.
+- Le fascicule `Jo1052004.pdf` a une couche texte à encodage de police décalé qui
+  **n'expose pas les chiffres** : la pagination y a été lue à l'image (rendu du pied de
+  page, « Page 3440 — Journal Officiel de la République Tunisienne — 31 décembre 2004 —
+  N° 105 »).
+- Pour les fascicules français absents en ligne, la **pagination française** a été relevée
+  sur les extraits du JORT français conservés dans
+  `PDFs-legislation-tunisie/PDFs/Lois_de_Finances/` (pieds de page français intacts).
+
+#### Cinq corrections de pagination au § 11.2 de `docs/notes/fiscalite-irpp-assiette-abattements.md`
+
+Établies sur pièce, consignées dans le champ `note` des entrées concernées. La note
+documentaire n'a pas été modifiée (hors périmètre) : à corriger là-bas si elle doit
+continuer à servir de source.
+
+| Clé | § 11.2 | Valeur établie |
+|---|---|---|
+| `lf-2007` | ~4386 | **4387** |
+| `loi-avantages-fiscaux-2017` | 777 | **778** |
+| `lf-2024` | 3475 | **3476** |
+| `lf-2016` | 3142-3143 | **3143** (l'article 21 tient sur une page) |
+| `lf-2021` | 3128-3129 | **3129** (l'article 16 tient sur une page) |
+| `lf-2018` | art. 54 et 55 tous deux p. 4289 | art. 53 et 54 p. **4289**, art. 55 p. **4290** |
+
+#### Cinq éditions françaises confirmées absentes de pist.tn — URL arabe assumée
+
+`Jo1042015`, `Jo1042019`, `Jo1442023`, `Jo1492024` et `Jo1412022` renvoient tous un
+**404** (signature `text/html`, 289 octets). Les entrées `lf-2016`, `lf-2020`, `lf-2023`,
+`lf-2024` (et, déjà en base, `lf-2025`) pointent donc sur l'**édition arabe**, tandis que
+le champ `page` porte la **pagination française**. Les deux paginations coexistent et sont
+l'une et l'autre exactes ; chaque `note` le dit explicitement. **Ne pas « corriger » ces
+URL vers une adresse en `…F/Jo…`, ni la pagination vers la pagination arabe.** Pages de
+début en pagination arabe, pour mémoire : 3597 (`lf-2016`), 4699 (`lf-2020`), 4059
+(`lf-2023`), 6437 (`lf-2024`).
+
+#### Reste à faire
+
+- **`lf-2023` — pagination française non établie.** Le numéro et la date du fascicule sont
+  désormais **acquis** (JORT n° 141 du 23/12/2022, t. 165, sommaire arabe vérifié + notice
+  `jort_cache.db`), ce qui lève la réserve principale du § 11.2. Mais le fascicule français
+  est absent en ligne et la copie locale
+  `PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_de_Finances_2023.pdf` est
+  **illisible** (« Couldn't read xref table »). L'entrée est donc **sans champ `page`**, et
+  sa `note` le dit. À reprendre si une source française du fascicule apparaît.
+- **`precis/ar/fiscalite/references.json` n'a pas été mis à jour** (hors périmètre de la
+  commande) : les vingt clés y manquent. URL arabes à utiliser, lues dans le champ `pdf_ar`
+  des mêmes enregistrements de `jort_cache.db` (ne jamais déduire l'URL AR en transformant
+  la chaîne FR) : `Ja1052004`, `Ja1032006`, `Ja1022009`, `Ja1042015`, `Ja1012017`,
+  `Ja1042019`, `Ja1282020`, `Ja1192021`, `Ja1412022`, `Ja1442023`, `Ja0152017`
+  (chemins `…/<année>/<année>A/…`). Pour les neuf notes communes, l'URL `jibaya.tn` est la
+  même dans les deux langues (jibaya.tn a un miroir arabe `/ar/`, non vérifié).
+- **`dgi-nc-3-2017` — URL pérenne trouvée et RENSEIGNÉE (TODO levé).** Le PDF
+  `https://jibaya.tn/wp-content/uploads/2024/02/Note-Commune-n%C2%B003-5.pdf` a été
+  téléchargé et lu à l'image : en-tête « NOTE COMMUNE N° 3/2017 », objet conforme
+  (article 14 de la LF 2017), cachet du 24 janvier 2017. L'entrée existante a été complétée
+  par l'URL de la page jibaya.tn correspondante ; **à reporter dans Zotero**. Quirk à
+  connaître : le slug de cette page mentionne à tort « larticle-13 » (collision avec la
+  note commune n° 2/2017), mais le titre de la page et le PDF servi sont bien ceux de la
+  note commune n° 3/2017.
+- **Huit lois de finances citées en prose sans clé** dans `precis/fr/fiscalite/index.qmd`
+  (liste conservée dans le commentaire de fin de fichier), hors périmètre de cette passe :
+  loi n° 91-98 (LF 1992), n° 97-88 (LF 1998), n° 98-111 (LF 1999), n° 2001-123 (LF 2002),
+  n° 2002-101 (LF 2003), n° 2003-80 (LF 2004), n° 2007-70 (LF 2008), n° 2010-58 (LF 2011).
+  À créer si le précis doit les citer formellement.
+
+#### À pousser dans Zotero — NE PAS pousser sans feu vert
+
+Les vingt clés ci-dessus, collection « fiscalité » (mappée `fiscalite` dans
+`COLLECTION_TO_BOOK`), champ « Extra » : `citation-key: <clé>`. Aucune écriture Zotero
+n'a été effectuée.

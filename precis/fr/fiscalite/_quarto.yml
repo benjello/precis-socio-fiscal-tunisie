@@ -22,9 +22,12 @@ bibliography:
 format:
   html:
     theme: cosmo
-    number-depth: 3
+    number-depth: 4
     toc: true
+    toc-depth: 4
   pdf:
     documentclass: scrreprt
     toc: true
+    toc-depth: 4
     number-sections: true
+    number-depth: 4
