@@ -209,9 +209,11 @@ Sources : @lf-1986 ; @code-irpp-is-1990 ; @lf-2017 ; @lf-2025 ; @lf-2026.
 
 Le tableau @tbl-bareme-irpp-generations fait apparaître deux rythmes très différents : une rupture unique et de grande ampleur en 1989-1990, suivie d'une immobilité de vingt-sept exercices, puis deux modifications en huit ans (2017 et 2025).
 
-Cette succession fait l'objet de lectures divergentes. Pour @touaiti2026, l'abaissement du taux marginal supérieur intervenu avec la réforme de 1989-1990, quoique présenté à l'époque comme une simplification du système et un moyen de stimuler l'investissement, a réduit la progressivité de l'impôt et affaibli sa fonction redistributive. Cette appréciation porte sur une évolution que l'auteur situe en 1991 et rattache à un texte postérieur au code ; les textes officiels la situent un an plus tôt et l'attribuent au code de 1989 lui-même, sans que cela modifie la substance de la lecture proposée.
-
-<!-- TODO: figure « taux moyen d'imposition selon le revenu, par génération de barème » (courbes 1986, 1990-2016, 2017-2024, 2025) — figures/bareme_irpp.py, figdata fig_bareme_irpp_taux_moyen.csv. Les barèmes sont désormais tous établis sur texte officiel ; la figure est constructible. -->
+<!-- NOTE : une figure comparant les taux moyens d'imposition par génération de barème a été
+écartée. Les seuils sont exprimés en dinars courants, de 1986 à 2025 : superposer les courbes sans
+déflater les seuils comparerait des revenus qui n'ont pas le même pouvoir d'achat et n'aurait pas de
+sens. Une telle figure supposerait au préalable une série de prix ou de revenu moyen, et l'énoncé
+explicite du déflateur retenu. -->
 
 <!-- TODO : exposer en regard au moins deux autres lectures attribuées (doctrine fiscale tunisienne — @ayadi1996, @baccouche2008, @yaich ; organisations internationales ; partenaires sociaux UGTT et UTICA sur les réformes 2017 et 2025), conformément à la règle d'attribution du précis. Références à identifier avec le bibliographe ; cf. Q16 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
