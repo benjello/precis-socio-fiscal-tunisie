@@ -513,3 +513,38 @@ Signalements issus de l'inventaire ; **aucun fichier de bibliographie n'a été 
 6. **Rappel** : toute clé ajoutée à la main dans un `references.json` doit être remontée dans
    Zotero (groupe 6529669) pour être stable, `scripts/sync_biblio.py` faisant autorité en sens
    Zotero → `references.json`.
+
+---
+
+## Annexe D — Rendement et incidence : matière retirée du corps du précis
+
+Les sous-sections « Rendement et incidence » et « Appréciations et débats » ont été
+supprimées de `precis/fr/fiscalite/index.qmd` lors de la restructuration de la section IRPP
+(décision de l'auteur). Les deux besoins de documentation qu'elles portaient sont conservés
+ici pour ne pas être perdus.
+
+### D.1 Série longue des recettes d'IRPP
+
+À produire : recettes d'IRPP en pourcentage du PIB et des recettes fiscales, et part des
+salariés dans le total, sur une période aussi longue que possible (cf. Q17). Sources
+pressenties : ministère des finances, BCT, INS, via le dépôt `tunisia-data`.
+
+### D.2 Taux d'imposition effectif par décile — **et pourquoi le chiffre actuel a été retiré**
+
+Le corps du précis reprenait, d'après un relais de presse [@lapresse2025], un couple de
+valeurs INS pour 2023 — décile le plus pauvre à 18,2 %, décile le plus riche à 16,7 % —
+présenté comme une inversion de la progressivité ayant motivé la réforme de 2025.
+
+**Ce couple de valeurs a été retiré, et ne doit pas être réintroduit depuis la source de
+presse.** Trois motifs cumulés :
+
+1. la publication INS d'origine n'a pas été retrouvée ; la seule source est un article de
+   presse qui la relaie ;
+2. l'assiette mesurée n'est pas établie — IRPP seul, ou ensemble des prélèvements y compris
+   **indirects** ? Si c'est le second cas, en tirer une conclusion sur la progressivité de
+   l'IRPP est une erreur de catégorie ;
+3. deux points isolés ne permettent ni de lire une distribution ni d'établir une causalité
+   avec la réforme de 2025, et la règle du projet interdit le chiffre ponctuel isolé.
+
+À reprendre avec la ventilation complète par décile et la définition d'assiette, ou à partir
+d'une microsimulation d'incidence documentée (jeu CEQ Tunisie).
