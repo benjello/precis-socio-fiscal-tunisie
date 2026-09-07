@@ -541,3 +541,75 @@ mise à jour en conséquence, avertissement sur l'erreur de date compris.
 **À vérifier au prochain passage** : les fascicules portant les chaînes « indemnité de
 magistrature » et « solde militaire » sont peut-être eux aussi dans le corpus local — cela
 lèverait le blocage sur les chronologies chiffrées de B.2.
+
+---
+
+### Livre « Fiscalité », section IRPP — passe bibliographe 07/09/2026
+
+Dix clés créées à la main dans **`precis/fr/fiscalite/references.json`** (aucune n'est
+partagée : seul `precis/fr/fiscalite/index.qmd` les cite). Le livre `fiscalite` figure déjà
+dans `COLLECTION_TO_BOOK` (collection Zotero « fiscalité ») : **à pousser dans cette
+collection**, champ « Extra » = `citation-key: <clé>`. Tant que ce n'est pas fait, un
+`sync_biblio.py` les écrase.
+
+| Clé | Type CSL | Texte | JORT | URL |
+|---|---|---|---|---|
+| `lf-1986` | legislation | Loi n° 85-109 du 31/12/1985, LF 1986 (barème C.P.E., art. 8 p. 1731) | n° 91 du 31/12/1985, t. 128, la loi commence p. 1730 | `…/1985/1985F/Jo09185.pdf` |
+| `code-irpp-is-1990` | legislation | Code IRPP-IS, texte annexé à la loi n° 89-114 (art. 44 p. 9) | n° 1 des 2-5/01/1990, t. 133, p. 3-21 | `…/1990/1990F/Jo00190.pdf` |
+| `lf-1991` | legislation | Loi n° 90-111 du 31/12/1990, LF 1991 | n° 86 des 28-31/12/1990, t. 133, la loi commence p. 2049 | `…/1990/1990F/Jo08690.pdf` |
+| `lf-1993` | legislation | Loi n° 92-122 du 29/12/1992, LF 1993 (art. 101, forfait) | n° 88 du 31/12/1992, t. 135, la loi commence p. 1668 | `…/1992/1992F/Jo08892.pdf` |
+| `loi-98-73` | legislation | Loi n° 98-73 du 04/08/1998, simplification et réduction des taux | n° 64 du 11/08/1998, t. 141, p. 1736-1737 | `…/1998/1998F/Jo06498.pdf` |
+| `lf-2014` | legislation | Loi n° 2013-54 du 30/12/2013, LF 2014 (art. 73 p. 3691) | n° 105 du 31/12/2013, t. 156, p. 3666-3832 | `…/2013/2013F/Jo1052013.pdf` |
+| `lf-2017` | legislation | Loi n° 2016-78 du 17/12/2016, LF 2017 (art. 14 p. 3831) | n° 105 du 27/12/2016, p. 3829 | `…/2016/2016F/Jo1052016.pdf` |
+| `lf-2025` | legislation | Loi n° 2024-48 du 09/12/2024, LF 2025 (art. 36 p. 6429) | n° 149 du 10/12/2024, t. 167, la loi commence p. 6418 | `…/2024/2024A/Ja1492024.pdf` |
+| `lf-2026` | legislation | Loi n° 2025-17 du 12/12/2025, LF 2026 (art. 56 p. 4243 ; art. 91 p. 4254-4255) | n° 148 du 12/12/2025, t. 168, p. 4231-4331 | `…/2025/2025A/Ja1482025.pdf` |
+| `dgi-nc-3-2017` | report | Note commune n° 3/2017 (commentaire de l'art. 14 de la LF 2017) | — | *pas d'URL* |
+
+Métadonnées vérifiées sur `jort_cache.db` (`~/projets/PDFs-legislation-tunisie`) : numéro,
+type, date de signature, fascicule, tome, pagination, `pdf_fr`/`pdf_ar`. Les dix URL ont
+été retestées en HTTP 200 le 07/09/2026 (`curl -skIL` — `www.pist.tn` a un **certificat TLS
+expiré**, les clients stricts échouent à tort).
+
+**Deux URL pointent volontairement sur l'édition arabe, ne pas « corriger » :**
+- `lf-2025` : le champ `pdf_fr` de `jort_cache.db` est **vide** pour le JORT 149/2024 —
+  l'édition française n'est pas référencée.
+- `lf-2026` : `jort_cache.db` porte pourtant `pdf_fr = /jort/2025/2025F/Jo1482025.pdf`.
+  Ce fichier a été téléchargé et ouvert le 07/09/2026 : **il sert le fascicule arabe**
+  (l'édition française n'est pas parue). La justification est consignée dans le champ
+  `note` de l'entrée.
+
+**`code-irpp-is-1990` ≠ `loi-irpp-is-1989`** : `jort_cache.db` porte deux enregistrements
+distincts pour la loi n° 89-114 — la promulgation (JORT n° 88 du 31/12/1989, t. 132,
+p. 2142-2144, `Jo08889.pdf`, déjà en base sous `loi-irpp-is-1989`, dans le
+`references.json` **partagé** car `remunerations_publiques` la cite) et le **code annexé**
+(JORT n° 1 du 02/01/1990, `Jo00190.pdf`). Les deux clés doivent coexister dans Zotero.
+
+#### Hygiène — fait
+
+- Supprimé : entrée parasite de pièce jointe Zotero `23975222/K2B3EV4C`
+  (`bastier_1997_fiscalite_coloniale.pdf`) dans `precis/fr/fiscalite/references.json` —
+  la référence réelle `bastier1997` était bien présente.
+- Supprimé : entrée parasite `23975222/DKA289MH` (`loi_2019_10_amen_social.pdf`) dans
+  `precis/fr/references.json` — la référence réelle `loi-amen-social-2019` était bien présente.
+- Ces deux pièces jointes doivent aussi cesser d'être exportées côté Zotero (elles
+  reviendront au prochain `sync_biblio.py` si l'export inclut les attachments).
+
+#### Reste à faire
+
+- **`precis/ar/fiscalite/references.json` n'a pas été mis à jour** (hors périmètre de cette
+  passe) : les dix clés y manquent. URL arabes à utiliser, lues dans le champ `pdf_ar` des
+  mêmes enregistrements : `Ja09185`, `Ja00190`, `Ja08690`, `Ja08892`, `Ja06498`,
+  `Ja1052013`, `Ja1052016`, `Ja1492024`, `Ja1482025` (chemins `…/<année>/<année>A/…`).
+  Pour `dgi-nc-3-2017` : pas d'URL.
+- **`yaich`** : le millésime de l'édition citée manque (« Les impôts en Tunisie », ouvrage
+  réédité annuellement). Non inventé — à relever sur l'exemplaire utilisé par le rédacteur,
+  puis renseigner `issued` dans Zotero.
+- **`dgi-nc-3-2017`** : aucune URL pérenne identifiée sur le portail du ministère des
+  finances ; l'entrée renvoie à la copie locale
+  `PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_numéro 3  …_2017_re.pdf`.
+  À chercher côté `impots.finances.gov.tn` avant rapatriement.
+- **`dgi-nc-14-2014`** (note commune n° 14/2014, modalités de détermination du seuil de
+  5 000 D) : citée par la NC 3/2017, **document non consulté**, pas encore citée dans le
+  précis — entrée non créée. À documenter si le rédacteur la cite.
+- **`eset2016`** et **`lapresse2025`** ne sont plus cités dans le corps de la section IRPP.
+  Conservées (`lapresse2025` est rattachée à un TODO « incidence » en cours).

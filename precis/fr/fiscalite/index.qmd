@@ -4,37 +4,196 @@ Ce document est une ébauche.
 
 ## Présentation générale
 
-Ce précis a concerne les impôts en Tunisie depuis 1956.
+Ce précis présente les impôts en Tunisie, principalement depuis l'indépendance (1956), après un rappel des antécédents beylicaux et coloniaux dont le système fiscal a hérité.
 
 ## L'impôt sur le revenu des personnes physiques (IRPP)
 
-### Les grandes étapes de l'IRPP en Tunisie
+L'[impôt sur le revenu des personnes physiques](#g-irpp) est régi par le code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés, promulgué par la loi n° 89-114 du 30 décembre 1989 [@loi-irpp-is-1989] et applicable aux revenus réalisés à compter du 1^er^ janvier 1990. Le barème progressif de cet impôt figure au paragraphe I de son article 44.
+
+::: {.callout-note}
+## Deux conventions de lecture, retenues dans tout ce qui suit
+
+**1. Les barèmes sont datés en années de revenus.** C'est la convention du législateur lui-même, qui énonce ses barèmes sous la forme « applicable aux revenus réalisés à compter du 1^er^ janvier … » — formule que l'on trouve aussi bien dans l'article 3 de la loi n° 89-114 [@loi-irpp-is-1989, art. 3] que dans l'article 36 de la loi de finances pour 2025 [@lf-2025, art. 36]. Il faut donc distinguer soigneusement trois dates qui ne coïncident pas : l'année des revenus imposés, l'année de publication du texte au *Journal officiel de la République tunisienne* (JORT), et le millésime de la loi de finances. Ainsi le barème « 2025 » s'applique aux revenus de l'année 2025, déclarés et liquidés en 2026, mais il a été publié au JORT en décembre 2024 par la loi de finances portant le millésime 2025.
+
+**2. Le décompte des tranches inclut la tranche à taux nul.** Sauf mention contraire, le nombre de tranches annoncé correspond à toutes les lignes du tableau légal, y compris celle qui est imposée à 0 %. Sous cette convention : 18 tranches pour le dernier barème de la contribution personnelle d'État (revenus 1986), 6 pour le barème d'origine de l'IRPP (revenus 1990 à 2016), 5 à compter des revenus 2017 et 8 à compter des revenus 2025.
+:::
+
+### Antécédents : de la fiscalité beylicale au système cédulaire
 
 #### L'héritage beylical et colonial (avant 1956)
+
 Sous la Régence, la fiscalité reposait sur des impôts affermés et des contributions traditionnelles (la mejba, capitation abolie après la révolte de 1864, puis réintroduite sous d'autres formes). Sous le protectorat, la doctrine française assumée était celle de Maurice Boulard (1901) : « notre mission se résumait dans la perception des impôts existants, l'économie politique enseignant que les meilleurs impôts sont les plus anciens » [@bastier1997]. Ce n'est qu'après la Seconde Guerre mondiale que des outils fiscaux plus modernes tels que les impôts directs sur le revenu ont été développés [@mesple-somps2022], dans le but d'accélérer les investissements publics.
 La référence incontournable sur cette période est @bastier1997.
 
+#### Le système cédulaire et la contribution personnelle d'État (1956 – 1989)
 
-#### Le système cédulaire post-indépendance (1956 – 1989)
-Entre l'indépendance et la réforme de 1989, la Tunisie hérite et fait évoluer un système d'impôts cédulaires (un impôt par catégorie de revenu : BIC, BNC, salaires, revenus fonciers, etc.) couronné par un impôt général sur le revenu (IGR) à vocation progressive. Le code IRPP-IS de 1989 remplace, à compter du 1er janvier 1990, l'ancien système mixte composé d'impôts cédulaires et d'un impôt général [@eset2016].
+Entre l'indépendance et l'entrée en vigueur du code de 1989, la Tunisie a conservé et fait évoluer un système d'impôts **cédulaires** — un impôt distinct par catégorie de revenu — surmonté d'un impôt progressif sur le revenu global. Contrairement à une présentation répandue, cet impôt progressif ne s'appelait pas « impôt général sur le revenu » : il portait le nom de **contribution personnelle d'État** (CPE) et procédait du décret du 31 mars 1932.
 
-#### La grande réforme de 1989-1990 (PAS)
-Dans le cadre du plan d'ajustement structurel lancé à la fin des années 1980, la Tunisie a entrepris un vaste programme de réformes économiques et administratives [@touaiti2026]. La loi n°89-114 du 30 décembre 1989 promulgue le Code de l'IRPP et de l'IS, entré en vigueur le 1er janvier 1990. Il unifie les impôts cédulaires en un impôt synthétique sur le revenu net global, avec cinq catégories catégorielles maintenues pour la détermination de l'assiette.
-L'IRPP était initialement très progressif avec 16 tranches et un taux marginal maximal de 68 % [@touaiti2026].
-Sources académiques : @ayadi1996 — considéré comme le fondateur de l'école fiscale tunisienne ; @baccouche2008 ; @yaich.
+L'inventaire le plus sûr de ce système est donné par le texte qui l'abroge. L'article 2 de la loi n° 89-114 du 30 décembre 1989 énumère nommément, avec leurs textes fondateurs, les prélèvements supprimés pour les revenus et bénéfices réalisés à compter du 1^er^ janvier 1990 [@loi-irpp-is-1989, art. 2] :
 
-####  La simplification de 1991
-Le barème a été simplifié en 1991 pour ne compter que 6 tranches, avec un taux marginal maximal réduit à 35 %. Si cette réforme était présentée comme un moyen de simplifier le système et de stimuler l'investissement, elle a en réalité réduit la progressivité de l'impôt et affaibli sa fonction redistributive [@touaiti2026]. C'est une étape charnière qui oriente la fiscalité tunisienne vers une logique d'attractivité plutôt que de redistribution.
+- l'impôt sur les **bénéfices industriels et commerciaux** (article 9 de la loi n° 85-109 du 31 décembre 1985) ;
+- l'impôt sur les **bénéfices des professions non commerciales** (arrêté du 30 mars 1954) ;
+- l'impôt sur les **traitements et salaires**, indemnités et émoluments, pensions et rentes viagères (décret du 29 mars 1945) ;
+- la **taxe sur le revenu des valeurs mobilières** et sur les intérêts des créances hypothécaires ou privilégiées (décret organique du 23 décembre 1918) ;
+- l'**impôt sur le revenu des créances** (décret organique du 20 décembre 1919) ;
+- la **contribution personnelle d'État** (décret du 31 mars 1932) ;
+- la **contribution de solidarité** (loi n° 73-72 du 19 novembre 1973) ;
+- et, pour les personnes morales, l'**impôt sur les bénéfices des sociétés** (article 9 de la loi n° 85-109 du 31 décembre 1985).
 
-#### Longue stabilité et ajustement de 2017
-Entre 1991 et 2016, le barème reste largement inchangé. En 2017, le barème a été ajusté, passant à 5 tranches, sans modification du taux marginal supérieur fixé à 35 % pour un plafond de 50 000 dinars, contre 80 000 dinars auparavant. Cette mise à jour intervenait après près de deux décennies sans ajustement [@touaiti2026]. Un seuil d'exonération pour les bas salaires (revenu net inférieur à 5 000 DT) avait été introduit dès la loi de finances 2014.
+Le dernier barème de la contribution personnelle d'État avant la réforme résulte de l'article 8 de la loi n° 85-109 du 31 décembre 1985 portant loi de finances pour la gestion 1986, qui abroge et remplace l'article 8 du décret du 31 mars 1932 [@lf-1986, art. 8]. Il comportait **dix-huit tranches** et un [taux marginal](#g-taux-marginal) supérieur de **68 % au-delà de 80 000 dinars**. Le texte légal publiait, à côté du taux de chaque tranche, le taux d'imposition du revenu global atteint à la limite supérieure de celle-ci — une présentation rare, qui permet de lire directement la charge effective.
 
+: Barème de la contribution personnelle d'État applicable aux revenus de 1986 (art. 8 de la loi n° 85-109 du 31 décembre 1985) {#tbl-bareme-cpe-1986}
 
-#### La réforme de la loi de finances 2025
-La loi de finances 2025 a introduit une amélioration en portant le barème de 5 à 8 tranches et en augmentant le taux marginal supérieur à 40 % au-delà de 50 000 dinars [@touaiti2026]. L'indice de progressivité calculé par l'INS pour 2023 révélait que les ménages du décile le plus pauvre supportaient un taux d'imposition effectif de 18,2%, contre 16,7% pour le décile le plus riche [@lapresse2025] — une inversion de la progressivité qui a motivé la réforme.
+| Tranche de revenu imposable (dinars) | Taux de la tranche | Taux d'imposition du revenu global à la limite supérieure |
+|---|---:|---:|
+| 0 à 900 | 0 % | 0 % |
+| 900,001 à 1 300 | 5 % | 1,53 % |
+| 1 300,001 à 1 500 | 10 % | 2,66 % |
+| 1 500,001 à 2 000 | 15 % | 5,75 % |
+| 2 000,001 à 2 500 | 20 % | 8,60 % |
+| 2 500,001 à 3 000 | 25 % | 11,33 % |
+| 3 000,001 à 3 500 | 30 % | 14,00 % |
+| 3 500,001 à 4 000 | 36 % | 16,75 % |
+| 4 000,001 à 5 000 | 42 % | 21,80 % |
+| 5 000,001 à 6 000 | 48 % | 26,16 % |
+| 6 000,001 à 8 000 | 54 % | 33,12 % |
+| 8 000,001 à 10 000 | 56 % | 37,70 % |
+| 10 000,001 à 14 000 | 58 % | 43,50 % |
+| 14 000,001 à 25 000 | 60 % | 50,76 % |
+| 25 000,001 à 40 000 | 62 % | 54,97 % |
+| 40 000,001 à 60 000 | 64 % | 57,98 % |
+| 60 000,001 à 80 000 | 66 % | 59,98 % |
+| au-delà de 80 000 | 68 % | — |
 
+Source : @lf-1986, art. 8 (JORT n° 91 du 31 décembre 1985, p. 1731).
 
-<!-- TODO: détailler -->
+La lecture de la troisième colonne invite à ne pas confondre le taux marginal affiché et la charge réellement supportée : à 80 000 dinars de revenu, le taux d'imposition du revenu global ressortait à 59,98 %, et non à 68 %. Le même article assortissait d'ailleurs le barème de plusieurs correctifs : les contribuables dont les revenus annuels ne dépassaient pas le [SMIG](#g-smig) en étaient exonérés, l'impôt ne pouvait excéder l'excédent des revenus par rapport au SMIG, et la cotisation effective ne pouvait dépasser **60 % du revenu global imposable**. Un décret devait par ailleurs publier le barème par tranches de 20 dinars à partir de 900 dinars, sous forme de table de cotes d'impôt : c'est l'objet du décret n° 86-1188 du 12 novembre 1986.
+
+### La réforme de 1989-1990 : le code de l'IRPP et de l'IS
+
+Dans le cadre du programme d'ajustement structurel engagé à la fin des années 1980, la Tunisie a entrepris un vaste programme de réformes économiques et administratives, dont la refonte de la fiscalité directe [@touaiti2026]. La loi n° 89-114 du 30 décembre 1989 promulgue le code de l'IRPP et de l'IS [@loi-irpp-is-1989] ; le texte du code, annexé à la loi, est publié séparément au JORT n° 1 des 2-5 janvier 1990 [@code-irpp-is-1990]. Le nouvel impôt est **synthétique** : il frappe le revenu net global du contribuable, les catégories de revenus étant maintenues pour la seule détermination de l'[assiette](#g-assiette-fiscale).
+
+Le barème d'origine de l'article 44 § I comporte **six tranches** et un taux marginal supérieur de **35 % au-delà de 50 000 dinars** [@code-irpp-is-1990, art. 44]. Comme celui de la contribution personnelle d'État, il est publié avec la colonne des taux d'imposition à la limite supérieure de chaque tranche.
+
+: Barème de l'IRPP applicable aux revenus réalisés à compter du 1^er^ janvier 1990 (art. 44 § I du code) {#tbl-bareme-irpp-1990}
+
+| Tranche de revenu annuel net (dinars) | Taux de la tranche | Taux d'imposition du revenu global à la limite supérieure |
+|---|---:|---:|
+| 0 à 1 500 | 0 % | 0 % |
+| 1 500,001 à 5 000 | 15 % | 10,50 % |
+| 5 000,001 à 10 000 | 20 % | 15,25 % |
+| 10 000,001 à 20 000 | 25 % | 20,12 % |
+| 20 000,001 à 50 000 | 30 % | 26,05 % |
+| au-delà de 50 000 | 35 % | — |
+
+Source : @code-irpp-is-1990, art. 44 § I (JORT n° 1 des 2-5 janvier 1990, p. 9).
+
+La comparaison des deux tableaux donne la mesure de la rupture. Le nombre de tranches passe de dix-huit à six et le taux marginal supérieur de 68 % à 35 %, **en une seule fois et par le code lui-même**. La simplification du barème est donc l'œuvre de la réforme de 1989-1990, et non d'un texte ultérieur : le récit d'une « simplification de 1991 », que l'on rencontre parfois, ne correspond à aucun véhicule législatif — la loi de finances pour la gestion 1991 ne comporte pas une seule occurrence du mot « barème » et ses dispositions relatives au code de l'IRPP et de l'IS visent les articles 45, 52, 54 et 63 [@lf-1991]. Le terme de « simplification » a bien un référent dans la décennie, mais il porte sur d'autres objets : le **régime forfaitaire** du § IV de l'article 44, refondu par l'article 101 de la loi de finances pour 1993 sous l'intitulé « Unification et simplification du régime forfaitaire » [@lf-1993, art. 101], et les **procédures fiscales**, avec la loi n° 98-73 du 4 août 1998 portant simplification des procédures fiscales et réduction des taux de l'impôt, dont le dispositif concerne la plus-value immobilière et les droits d'enregistrement [@loi-98-73].
+
+De même, le seuil de 80 000 dinars parfois présenté comme l'ancien plafond du taux marginal de l'IRPP n'a jamais été un seuil de cet impôt : c'est le seuil d'entrée dans la tranche à 68 % de la contribution personnelle d'État (@tbl-bareme-cpe-1986), supprimée pour les revenus réalisés à compter du 1^er^ janvier 1990.
+
+### La stabilité du barème sur les revenus 1990 à 2016
+
+Le barème de l'article 44 § I n'a pas été modifié entre son entrée en vigueur et la loi de finances pour 2017, soit **vingt-sept années de revenus**. Ce constat repose sur trois vérifications convergentes.
+
+1. **La chaîne d'annotation du code consolidé.** Le code de l'IRPP et de l'IS annote le § I de l'article 44 de deux modifications seulement (art. 14-1 de la loi de finances pour 2017 et art. 36-1 de la loi de finances pour 2025), alors que le § II du même article porte une chaîne d'annotations remontant à 1997 et que le document conserve ailleurs des mentions de textes de 1991 et 1993. Le silence sur le § I est donc significatif.
+2. **L'identité des barèmes aux deux extrémités de la période.** Le barème de 1990 et le barème « en vigueur jusqu'au 31 décembre 2016 » reproduit par la doctrine administrative sont identiques ligne pour ligne, taux d'imposition à la limite supérieure compris [@dgi-nc-3-2017].
+3. **Le dépouillement des textes de la décennie 1990-1999** — les dix lois de finances annuelles, la loi de finances complémentaire pour 1991 et la loi n° 98-73 — dont aucun ne modifie le § I. Les dispositions de ces lois qui visent l'article 44 portent sur le minimum d'impôt (§ II), la plus-value immobilière (§ III) ou le régime forfaitaire (§ IV).
+
+Une conséquence mécanique de cette stabilité mérite d'être relevée : les seuils du barème étant fixés en dinars courants et n'ayant jamais été indexés, la hausse des prix et des salaires nominaux a déplacé les contribuables vers le haut du barème à revenu réel inchangé. La limite de la tranche à taux nul est ainsi restée à 1 500 dinars pendant vingt-sept ans.
+
+<!-- TODO: construire la série du seuil de la tranche à 0 % rapporté au SMIG et à l'indice des prix à la consommation, 1990-2026 (figure), pour documenter cet effet de dérive sans l'apprécier. Source pressentie : dépôt tunisia-data (INS, BCT). -->
+
+### L'ajustement applicable aux revenus 2017 à 2024
+
+L'article 14 § 1 de la loi n° 2016-78 du 17 décembre 2016 portant loi de finances pour 2017 modifie le § I de l'article 44, sous l'intitulé officiel « Allégement de la charge fiscale des personnes physiques à faible revenu et renforcement de l'équité fiscale » ; les nouvelles dispositions s'appliquent aux revenus réalisés à partir du 1^er^ janvier 2017 [@lf-2017, art. 14].
+
+: Barème de l'IRPP applicable aux revenus réalisés de 2017 à 2024 (art. 14 § 1 de la loi n° 2016-78) {#tbl-bareme-irpp-2017}
+
+| Tranche de revenu annuel net (dinars) | Taux de la tranche |
+|---|---:|
+| 0 à 5 000 | 0 % |
+| 5 000,001 à 20 000 | 26 % |
+| 20 000,001 à 30 000 | 28 % |
+| 30 000,001 à 50 000 | 32 % |
+| au-delà de 50 000 | 35 % |
+
+Source : @lf-2017, art. 14 § 1 (JORT n° 105 du 27 décembre 2016, p. 3831).
+
+La réforme relève la limite de la tranche exonérée de 1 500 à 5 000 dinars, supprime les tranches à 15 % et 20 %, et rehausse les taux intermédiaires. Elle ne déplace pas le seuil du taux marginal supérieur, qui reste fixé à 50 000 dinars comme depuis 1990.
+
+Il convient de distinguer cette tranche à taux nul de deux autres dispositifs souvent confondus avec elle parce qu'ils font intervenir le même montant de 5 000 dinars :
+
+- une **exonération catégorielle** du revenu annuel net n'excédant pas 5 000 dinars, réservée aux personnes réalisant exclusivement des traitements, salaires, pensions et rentes viagères, introduite par l'article 73 § 1 de la loi n° 2013-54 du 30 décembre 2013 (loi de finances pour 2014) [@lf-2014, art. 73]. Elle n'a produit effet que pour les revenus de 2014 à 2016 et a été abrogée par l'article 14 § 5 de la loi de finances pour 2017, l'administration expliquant cette abrogation par le relèvement de la tranche exonérée du barème à 5 000 dinars, qui couvre désormais toutes les catégories de revenus [@dgi-nc-3-2017] ;
+- une dispense de [retenue à la source](#g-retenue-a-la-source) sur les rétributions provisoires ou accidentelles servies en sus du traitement, lorsque le salaire annuel global net ne dépasse pas 5 000 dinars, introduite par l'article 14 § 3 de la même loi de finances pour 2017 [@lf-2017, art. 14]. Il s'agit d'une règle de recouvrement et non d'assiette.
+
+### Le barème applicable à compter des revenus 2025
+
+L'article 36 § 1 de la loi n° 2024-48 du 9 décembre 2024 portant loi de finances pour 2025 modifie de nouveau le § I de l'article 44, pour les revenus réalisés à compter du 1^er^ janvier 2025 [@lf-2025, art. 36]. Le nombre de tranches passe de cinq à huit et le taux marginal supérieur de 35 % à **40 %, applicable au-delà de 70 000 dinars** — et non au-delà de 50 000 dinars, seuil qui correspond désormais à la tranche imposée à 38 %.
+
+: Barème de l'IRPP applicable aux revenus réalisés à compter du 1^er^ janvier 2025 (art. 36 § 1 de la loi n° 2024-48) {#tbl-bareme-irpp-2025}
+
+| Tranche de revenu annuel net (dinars) | Taux de la tranche |
+|---|---:|
+| 0 à 5 000 | 0 % |
+| 5 000,001 à 10 000 | 15 % |
+| 10 000,001 à 20 000 | 25 % |
+| 20 000,001 à 30 000 | 30 % |
+| 30 000,001 à 40 000 | 33 % |
+| 40 000,001 à 50 000 | 36 % |
+| 50 000,001 à 70 000 | 38 % |
+| au-delà de 70 000 | 40 % |
+
+Source : @lf-2025, art. 36 § 1 (JORT n° 149 du 10 décembre 2024, tome 167, p. 6429).
+
+La loi n° 2025-17 du 12 décembre 2025 portant loi de finances pour 2026 ne modifie pas ce barème : aucune de ses dispositions ne vise le § I de l'article 44 [@lf-2026]. Le barème du tableau @tbl-bareme-irpp-2025 demeure donc applicable aux revenus de 2026.
+
+### Vue d'ensemble des générations de barème
+
+: Générations successives du barème progressif sur le revenu global — contribution personnelle d'État jusqu'aux revenus de 1989, puis IRPP à partir des revenus de 1990 {#tbl-bareme-irpp-generations}
+
+| | Revenus 1986 (CPE) | Revenus 1990 → 2016 | Revenus 2017 → 2024 | Revenus 2025 → 2026 |
+|---|---|---|---|---|
+| Nombre de tranches (tranche à 0 % comprise) | 18 | 6 | 5 | 8 |
+| Limite supérieure de la tranche à 0 % | 900 D | 1 500 D | 5 000 D | 5 000 D |
+| Taux marginal supérieur | 68 % | 35 % | 35 % | 40 % |
+| Seuil du taux marginal supérieur | 80 000 D | 50 000 D | 50 000 D | 70 000 D |
+| Texte | art. 8 de la loi n° 85-109 du 31/12/1985 | art. 44 § I du code annexé à la loi n° 89-114 du 30/12/1989 | art. 14 § 1 de la loi n° 2016-78 du 17/12/2016 | art. 36 § 1 de la loi n° 2024-48 du 09/12/2024 |
+| JORT | n° 91 du 31 déc. 1985, p. 1731 | n° 1 des 2-5 janv. 1990, p. 9 | n° 105 du 27 déc. 2016, p. 3831 | n° 149 du 10 déc. 2024, p. 6429 |
+
+Sources : @lf-1986 ; @code-irpp-is-1990 ; @lf-2017 ; @lf-2025 ; @lf-2026.
+
+Le tableau @tbl-bareme-irpp-generations fait apparaître deux rythmes très différents : une rupture unique et de grande ampleur en 1989-1990, suivie d'une immobilité de vingt-sept exercices, puis deux modifications en huit ans (2017 et 2025).
+
+<!-- TODO: figure « taux moyen d'imposition selon le revenu, par génération de barème » (courbes 1986, 1990-2016, 2017-2024, 2025) — figures/bareme_irpp.py, figdata fig_bareme_irpp_taux_moyen.csv. Les barèmes sont désormais tous établis sur texte officiel ; la figure est constructible. -->
+
+### Régimes d'imposition et paramètres périphériques
+
+Le barème ne détermine à lui seul ni l'assiette ni l'impôt effectivement dû. Trois ensembles de règles doivent lui être adjoints, et font l'objet des développements à venir.
+
+- **Les sous-secteurs juridiques de l'imposition des personnes physiques** : le **régime réel**, le **régime forfaitaire** des bénéfices industriels et commerciaux (articles 44 *bis* à 44 *sexies* du code, issus du transfert opéré par l'article 37 de la loi de finances pour 2011 depuis le § IV de l'article 44), et le **régime estimatif optionnel** que l'article 91 de la loi de finances pour 2026 ajoute à l'article 44 *ter* pour les contribuables dont le chiffre d'affaires n'excède pas 100 000 dinars [@lf-2026, art. 91].
+- **Les paramètres d'assiette** : abattement de 10 % pour frais professionnels, abattement sur les pensions et rentes viagères — que l'article 56 de la loi de finances pour 2026 porte progressivement de 25 % à 30 % en 2027, 40 % en 2028 et 50 % en 2029 [@lf-2026, art. 56] —, déductions pour situation et charges de famille.
+- **Les prélèvements adossés à l'assiette de l'IRPP**, au premier rang desquels la [contribution sociale de solidarité](#g-css), instituée par l'article 53 de la loi de finances pour 2018 et calculée comme la différence entre l'impôt résultant du barème majoré d'un point sur chaque taux de tranche et l'impôt résultant du barème non majoré.
+
+<!-- TODO (vérification) : les articles 56 et 91 de la loi n° 2025-17 (LF 2026) ont été lus sur le fascicule arabe du JORT n° 148 du 12 décembre 2025, l'édition française n'étant pas encore parue. Faire relire par un arabophone avant publication ; l'article 91 n'énonce pas sa date d'effet en années de revenus, à établir sur les dispositions finales de la loi ou une note commune DGI 2026. -->
+
+<!-- TODO : construire le tableau des paramètres périphériques (déductions pour charges de famille, abattements sur salaires et pensions, minimum d'impôt de l'art. 44 § II, plafonnement des déductions, CSS) en série datée avec le texte modificatif de chaque valeur — cf. Q8 à Q11 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
+
+### Rendement et incidence
+
+<!-- TODO : série longue des recettes d'IRPP, en pourcentage du PIB et des recettes fiscales, et part des salariés dans le total (cf. Q17). Source pressentie : ministère des finances, BCT, INS via le dépôt tunisia-data. -->
+
+<!-- TODO : taux d'imposition effectif par décile. La section reprenait auparavant, d'après un relais de presse [@lapresse2025], un couple de valeurs INS pour 2023 (décile le plus pauvre / décile le plus riche) présenté comme une inversion de la progressivité ayant motivé la réforme de 2025. Ce chiffre est retiré : la publication INS d'origine n'a pas été retrouvée, l'assiette mesurée (IRPP seul ou ensemble des prélèvements, y compris indirects) n'est pas établie, et deux points isolés ne permettent ni la lecture d'une distribution ni l'établissement d'une causalité. À reprendre avec la ventilation complète par décile et la définition d'assiette, ou à partir d'une microsimulation d'incidence documentée (jeu CEQ Tunisie). -->
+
+### Appréciations et débats
+
+Les réformes de 2017 et de 2025 ont été présentées par leurs auteurs sous des intitulés explicites : « Allégement de la charge fiscale des personnes physiques à faible revenu et renforcement de l'équité fiscale » pour l'article 14 de la loi de finances pour 2017 [@lf-2017, art. 14], « Allégement de la charge fiscale des individus et renforcement de l'équité fiscale » pour l'article 36 de la loi de finances pour 2025 [@lf-2025, art. 36].
+
+Ces réformes font l'objet de lectures divergentes. Pour @touaiti2026, l'abaissement du taux marginal supérieur intervenu avec la réforme de 1989-1990, quoique présenté à l'époque comme une simplification du système et un moyen de stimuler l'investissement, a réduit la progressivité de l'impôt et affaibli sa fonction redistributive. Cette appréciation porte sur une évolution que l'auteur situe en 1991 et rattache à un texte postérieur au code ; les textes officiels la situent un an plus tôt et l'attribuent au code de 1989 lui-même, sans que cela modifie la substance de la lecture proposée.
+
+<!-- TODO : exposer en regard au moins deux autres lectures attribuées (doctrine fiscale tunisienne — @ayadi1996, @baccouche2008, @yaich ; organisations internationales ; partenaires sociaux UGTT et UTICA sur les réformes 2017 et 2025), conformément à la règle d'attribution du précis. Références à identifier avec le bibliographe. -->
+
+<!-- TODO : rechercher les notes communes de la DGI commentant l'article 36 de la loi de finances pour 2025, qui fourniraient la justification officielle détaillée de la réforme. -->
 
 ## L'impôt sur les sociétés (IS)
 
@@ -47,3 +206,13 @@ La loi de finances 2025 a introduit une amélioration en portant le barème de 5
 ## Les droits de consommation
 
 <!-- TODO: détailler -->
+
+<!-- TODO (terminologue) : la section renvoie aux entrées de glossaire #g-irpp, #g-taux-marginal,
+#g-assiette-fiscale, #g-smig, #g-retenue-a-la-source et #g-css, toutes présentes dans
+precis/glossaire.yml. Ces ancres ne résolvent pas encore dans ce livre : à la différence du livre
+« rémunérations publiques », le _quarto.yml de « fiscalité » ne liste pas de chapitre
+_glossaire.qmd. Ajouter la page de glossaire générée aux chapitres du livre. Entrées à créer par
+ailleurs, d'après l'annexe B de docs/notes/fiscalite-irpp-bloc-a-documentation.md : barème de
+l'impôt sur le revenu, tranche, revenu annuel global net, minimum d'impôt, régime forfaitaire,
+régime estimatif optionnel, rétribution provisoire ou accidentelle, frais professionnels,
+abattement sur les pensions et rentes viagères. -->
