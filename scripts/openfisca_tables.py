@@ -1,0 +1,314 @@
+"""Construction des tableaux de barèmes à partir des paramètres openfisca-tunisia.
+
+Pendant tunisien de `quarto/openfisca_tables/core.py` du dépôt `conversion_precis_ipp`,
+adapté à ce dont le précis a besoin : des **barèmes à tranches** (`brackets:`), là où le
+module d'origine ne traite que des paramètres scalaires (`values:`).
+
+Principe, aligné sur celui de `figtools.py` : **le build du site est autonome.**
+`openfisca-tunisia` n'est pas une dépendance déclarée du précis. Les tableaux publiés
+proviennent de snapshots Markdown versionnés (`precis/fr/fiscalite/tables/`), régénérés à
+la demande par `scripts/generate_bareme_tables.py`. Quand une version suffisante
+d'openfisca-tunisia est installée, `get_table_or_static` bascule automatiquement sur la
+lecture directe des paramètres.
+
+Garde-fou de version : la version 0.67 publiée sur PyPI contient un barème 1990-2016
+**erroné** (tranche supérieure absente, cf. openfisca/openfisca-tunisia#380). En deçà de
+`VERSION_MINIMALE`, on refuse la lecture directe et on retombe sur le snapshot.
+"""
+
+from __future__ import annotations
+
+import datetime
+import os
+from pathlib import Path
+from typing import Any, Callable
+
+try:
+    import yaml
+except ImportError:  # pragma: no cover
+    yaml = None
+
+try:
+    import pandas as pd
+except ImportError:  # pragma: no cover
+    pd = None
+
+
+VERSION_MINIMALE = (0, 68)
+
+MESSAGE_INDISPONIBLE = (
+    "*Tableau non disponible : ni openfisca-tunisia installé, ni snapshot statique.*"
+)
+
+
+# --------------------------------------------------------------------------- accès
+
+
+def _racine_paquet():
+    """Racine des sources openfisca-tunisia, ou None.
+
+    Cherche d'abord le paquet installé, puis un checkout désigné par la variable
+    d'environnement `OPENFISCA_TUNISIA_PATH` (utilisée pour régénérer les snapshots
+    depuis une copie de travail non publiée).
+    """
+    try:
+        import importlib.resources
+
+        return importlib.resources.files("openfisca_tunisia")
+    except Exception:
+        pass
+    chemin = os.environ.get("OPENFISCA_TUNISIA_PATH")
+    if chemin:
+        racine = Path(chemin) / "openfisca_tunisia"
+        if racine.is_dir():
+            return racine
+    return None
+
+
+def version_openfisca() -> tuple[int, ...] | None:
+    """Version d'openfisca-tunisia disponible, sous forme de tuple, ou None."""
+    try:
+        from importlib.metadata import version
+
+        return tuple(int(x) for x in version("openfisca-tunisia").split(".")[:2])
+    except Exception:
+        pass
+    racine = _racine_paquet()
+    if racine is None:
+        return None
+    # Copie de travail : lire la version dans le pyproject.toml voisin.
+    try:
+        pyproject = Path(str(racine)).parent / "pyproject.toml"
+        for ligne in pyproject.read_text(encoding="utf-8").splitlines():
+            if ligne.startswith("version"):
+                brut = ligne.split("=", 1)[1].strip().strip('"').strip("'")
+                return tuple(int(x) for x in brut.split(".")[:2])
+    except Exception:
+        return None
+    return None
+
+
+def openfisca_utilisable() -> bool:
+    """Vrai si openfisca-tunisia est disponible ET assez récent pour être lu."""
+    if yaml is None or _racine_paquet() is None:
+        return False
+    version = version_openfisca()
+    return version is not None and version >= VERSION_MINIMALE
+
+
+def charge_parametre(chemin_relatif: str) -> dict[str, Any] | None:
+    """Charge un YAML de paramètre, chemin relatif à la racine du paquet.
+
+    Exemple : "parameters/impot_revenu/bareme.yaml".
+    """
+    if yaml is None:
+        return None
+    racine = _racine_paquet()
+    if racine is None:
+        return None
+    try:
+        ref = racine
+        for element in chemin_relatif.split("/"):
+            ref = ref / element
+        return yaml.safe_load(ref.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+
+# ------------------------------------------------------------------- lecture datée
+
+
+def _annee(cle: Any) -> int:
+    return cle.year if hasattr(cle, "year") else int(str(cle)[:4])
+
+
+def valeur_a_la_date(bloc: dict[str, Any] | None, date: datetime.date) -> float | None:
+    """Valeur en vigueur à `date` dans un bloc daté {date: {value: x}}.
+
+    Renvoie None si la valeur en vigueur est nulle : dans openfisca, `value: null`
+    signifie que le paramètre cesse d'exister à cette date. On ne remonte alors pas
+    au-delà — c'est ce qui permet à une tranche de disparaître d'un barème.
+    """
+    if not bloc:
+        return None
+    for cle in sorted(bloc.keys(), key=lambda k: (_annee(k), str(k)), reverse=True):
+        if _annee(cle) > date.year:
+            continue
+        brut = bloc[cle]
+        if brut is None:
+            return None
+        if isinstance(brut, dict):
+            valeur = brut.get("value")
+            return None if valeur is None else float(valeur)
+        if isinstance(brut, (int, float)):
+            return float(brut)
+    return None
+
+
+def bareme_a_la_date(
+    chemin_relatif: str, date: datetime.date
+) -> list[tuple[float, float]] | None:
+    """Barème en vigueur à `date` : liste de (seuil, taux), triée par seuil croissant.
+
+    Les tranches dont le seuil ou le taux est nul à cette date sont écartées.
+    """
+    donnees = charge_parametre(chemin_relatif)
+    if not donnees or "brackets" not in donnees:
+        return None
+    tranches: list[tuple[float, float]] = []
+    for tranche in donnees["brackets"]:
+        seuil = valeur_a_la_date(tranche.get("threshold"), date)
+        taux = valeur_a_la_date(tranche.get("rate"), date)
+        if seuil is None or taux is None:
+            continue
+        tranches.append((seuil, taux))
+    if not tranches:
+        return None
+    return sorted(tranches)
+
+
+# ------------------------------------------------------------------------ calculs
+
+
+def taux_effectifs_limite_superieure(
+    tranches: list[tuple[float, float]],
+) -> list[float | None]:
+    """Taux d'imposition du revenu global à la limite supérieure de chaque tranche.
+
+    Troisième colonne des barèmes publiés au JORT jusqu'en 1990. Elle n'est pas dans
+    openfisca : on la recalcule. La dernière tranche étant ouverte, elle n'en a pas.
+    """
+    resultats: list[float | None] = []
+    cumul = 0.0
+    for indice, (seuil, taux) in enumerate(tranches):
+        if indice + 1 >= len(tranches):
+            resultats.append(None)
+            continue
+        limite = tranches[indice + 1][0]
+        cumul += (limite - seuil) * taux
+        resultats.append(cumul / limite if limite else 0.0)
+    return resultats
+
+
+# ---------------------------------------------------------------------- formatage
+
+
+def formate_dinars(montant: float) -> str:
+    """1500.0 -> '1 500' ; 1500.001 -> '1 500,001'."""
+    entier = int(montant)
+    decimales = montant - entier
+    texte = f"{entier:,}".replace(",", " ")
+    if decimales:
+        texte += "," + f"{decimales:.3f}".split(".")[1].rstrip("0")
+    return texte
+
+
+def formate_taux(taux: float) -> str:
+    """0.15 -> '15 %' ; 0.005 -> '0,5 %'."""
+    pourcentage = taux * 100
+    if abs(pourcentage - round(pourcentage)) < 1e-9:
+        return f"{round(pourcentage)} %"
+    return f"{pourcentage:.2f}".rstrip("0").rstrip(".").replace(".", ",") + " %"
+
+
+def formate_taux_effectif(taux: float | None) -> str:
+    """Deux décimales, **tronquées** et non arrondies, comme au JORT.
+
+    Contrôle : 20,125 % est imprimé « 20,12 % » dans le barème de 1990, et 2,667 %
+    « 2,66 % » dans celui de 1986 — c'est bien une troncature.
+    """
+    if taux is None:
+        return "—"
+    if taux == 0:
+        return "0 %"
+    pourcentage = taux * 100
+    tronque = int(pourcentage * 100 + 1e-9) / 100
+    return f"{tronque:.2f}".replace(".", ",") + " %"
+
+
+def libelle_tranche(seuil: float, seuil_suivant: float | None) -> str:
+    """'0 à 1 500', '1 500,001 à 5 000', 'au-delà de 50 000'."""
+    if seuil_suivant is None:
+        return f"au-delà de {formate_dinars(seuil)}"
+    bas = formate_dinars(seuil) if seuil == 0 else formate_dinars(seuil + 0.001)
+    return f"{bas} à {formate_dinars(seuil_suivant)}"
+
+
+# ------------------------------------------------------------------------ tableau
+
+
+def tableau_bareme(
+    chemin_relatif: str,
+    date: datetime.date,
+    colonne_tranche: str = "Tranche de revenu annuel net (dinars)",
+    avec_taux_effectif: bool = False,
+) -> "pd.DataFrame | None":
+    """Barème en vigueur à `date`, sous forme de DataFrame prêt à publier."""
+    if pd is None:
+        return None
+    tranches = bareme_a_la_date(chemin_relatif, date)
+    if not tranches:
+        return None
+    effectifs = taux_effectifs_limite_superieure(tranches)
+    lignes = []
+    for indice, (seuil, taux) in enumerate(tranches):
+        suivant = tranches[indice + 1][0] if indice + 1 < len(tranches) else None
+        ligne = {
+            colonne_tranche: libelle_tranche(seuil, suivant),
+            "Taux de la tranche": formate_taux(taux),
+        }
+        if avec_taux_effectif:
+            ligne["Taux d’imposition du revenu global à la limite supérieure"] = (
+                formate_taux_effectif(effectifs[indice])
+            )
+        lignes.append(ligne)
+    return pd.DataFrame(lignes)
+
+
+def tableau_vers_markdown(df: "pd.DataFrame") -> str:
+    """DataFrame -> tableau Markdown pipe, colonnes numériques alignées à droite."""
+    colonnes = list(df.columns)
+    lignes = ["| " + " | ".join(str(c) for c in colonnes) + " |"]
+    lignes.append("|" + "|".join("---" if i == 0 else "---:" for i in range(len(colonnes))) + "|")
+    for _, ligne in df.iterrows():
+        lignes.append("| " + " | ".join(str(ligne[c]) for c in colonnes) + " |")
+    return "\n".join(lignes)
+
+
+def lit_markdown_statique(chemin: str | Path) -> "pd.DataFrame | None":
+    """Relit un snapshot Markdown pipe en DataFrame (lignes de commentaire ignorées)."""
+    if pd is None:
+        return None
+    fichier = Path(chemin)
+    if not fichier.is_file():
+        return None
+    lignes = [
+        ligne.strip()
+        for ligne in fichier.read_text(encoding="utf-8").splitlines()
+        if ligne.strip().startswith("|")
+    ]
+    cellules = []
+    for ligne in lignes:
+        contenu = [c.strip() for c in ligne.split("|")[1:-1]]
+        if contenu and not all(set(c) <= set("-:") for c in contenu if c):
+            cellules.append(contenu)
+    if not cellules:
+        return None
+    return pd.DataFrame(cellules[1:], columns=cellules[0])
+
+
+def get_table_or_static(
+    fonction_openfisca: Callable[[], "pd.DataFrame | None"],
+    chemin_statique: str | Path,
+    variable_env: str = "PRECIS_USE_OPENFISCA_TABLES",
+) -> "pd.DataFrame | None":
+    """Lit le barème dans openfisca s'il est disponible et assez récent, sinon le snapshot.
+
+    Mettre `PRECIS_USE_OPENFISCA_TABLES=false` force le snapshot.
+    """
+    autorise = os.environ.get(variable_env, "true").lower() in ("true", "1", "yes")
+    if autorise and openfisca_utilisable():
+        df = fonction_openfisca()
+        if df is not None and not df.empty:
+            return df
+    return lit_markdown_statique(chemin_statique)
