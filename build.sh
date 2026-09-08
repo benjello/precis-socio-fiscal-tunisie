@@ -2,8 +2,14 @@
 # build.sh — Convert and render all Quarto précis and assemble local site.
 #
 # Usage:
-#   ./build.sh            # full build (HTML + PDF)
+#   ./build.sh            # full build (HTML + PDF) — le PDF est le défaut
 #   ./build.sh --no-pdf   # skip PDF rendering
+#   ./build.sh --help     # affiche l'aide
+#
+# Attention : une option inconnue sort en code 2. Si vous appelez ce script
+# dans un pipeline (« ./build.sh | tail »), le code de retour du pipeline est
+# celui de la dernière commande : utilisez « set -o pipefail » ou testez
+# "${PIPESTATUS[0]}" pour ne pas masquer l'échec.
 
 set -euo pipefail
 
@@ -16,10 +22,37 @@ BOOKS=(prestations_sociales retraites fiscalite remunerations_publiques)
 
 DO_PDF=true
 
+usage() {
+  cat <<'USAGE'
+build.sh — rend tous les précis Quarto et assemble le site local.
+
+Usage :
+  ./build.sh            build complet (HTML + PDF)
+  ./build.sh --no-pdf   rend le HTML seul, sans PDF
+  ./build.sh --help     affiche cette aide
+
+Le PDF est produit PAR DÉFAUT ; il n'existe pas d'option « --pdf ».
+
+Sortie : local_site/ à la racine du dépôt.
+Prévisualisation : cd local_site && uv run python -m http.server 8765
+
+Codes de retour :
+  0  succès
+  1  au moins un livre n'a pas pu être rendu
+  2  option invalide
+USAGE
+}
+
 for arg in "$@"; do
   case "$arg" in
     --no-pdf)     DO_PDF=false ;;
-    *)            echo "Unknown option: $arg"; exit 2 ;;
+    --help|-h)    usage; exit 0 ;;
+    *)
+      echo "build.sh : option inconnue « $arg »." >&2
+      echo >&2
+      usage >&2
+      exit 2
+      ;;
   esac
 done
 

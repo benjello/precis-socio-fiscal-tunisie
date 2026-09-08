@@ -21,6 +21,7 @@ book:
   repo-subdir: precis/ar/remunerations_publiques
   repo-branch: master
   repo-actions: [edit, issue]
+  downloads: [pdf]
   chapters:
     - index.qmd
     - _regime_indiciaire.qmd

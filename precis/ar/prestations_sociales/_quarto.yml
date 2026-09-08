@@ -13,6 +13,7 @@ book:
   repo-branch: master
   repo-actions: [edit, issue]
 
+  downloads: [pdf]
   chapters:
     - index.qmd
 

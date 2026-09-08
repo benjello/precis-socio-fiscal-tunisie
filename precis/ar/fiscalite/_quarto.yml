@@ -17,6 +17,7 @@ book:
   repo-subdir: precis/ar/fiscalite
   repo-branch: master
   repo-actions: [edit, issue]
+  downloads: [pdf]
   chapters:
     - index.qmd
   appendices:

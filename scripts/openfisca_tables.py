@@ -11,8 +11,10 @@ la demande par `scripts/generate_bareme_tables.py`. Quand une version suffisante
 d'openfisca-tunisia est installée, `get_table_or_static` bascule automatiquement sur la
 lecture directe des paramètres.
 
-Garde-fou de version : la version 0.67 publiée sur PyPI contient un barème 1990-2016
-**erroné** (tranche supérieure absente, cf. openfisca/openfisca-tunisia#380). En deçà de
+Garde-fou de version. Les paramètres n'ont atteint leur état actuel qu'en 0.71 : le barème
+1990-2016 était amputé de sa tranche supérieure jusqu'en 0.68 (openfisca-tunisia#380), les
+tarifs de la contribution personnelle d'État n'existaient pas avant 0.69 (#381), et une
+dizaine de valeurs d'assiette étaient fausses ou mal datées jusqu'en 0.70 (#382). En deçà de
 `VERSION_MINIMALE`, on refuse la lecture directe et on retombe sur le snapshot.
 """
 
@@ -20,6 +22,7 @@ from __future__ import annotations
 
 import datetime
 import os
+import re
 from pathlib import Path
 from typing import Any, Callable
 
@@ -34,7 +37,7 @@ except ImportError:  # pragma: no cover
     pd = None
 
 
-VERSION_MINIMALE = (0, 68)
+VERSION_MINIMALE = (0, 71)
 
 MESSAGE_INDISPONIBLE = (
     "*Tableau non disponible : ni openfisca-tunisia installé, ni snapshot statique.*"
@@ -234,6 +237,133 @@ def libelle_tranche(seuil: float, seuil_suivant: float | None) -> str:
     return f"{bas} à {formate_dinars(seuil_suivant)}"
 
 
+# ------------------------------------------------------- séries de valeurs datées
+
+
+def _reference_a_la_date(donnees: dict[str, Any], cle_date: Any) -> tuple[str, str]:
+    """Titre et lien de la référence attachée à une date d'effet, sinon ("", "")."""
+    refs = ((donnees.get("metadata") or {}).get("reference")) or {}
+    for cle, valeur in refs.items():
+        if str(cle)[:10] == str(cle_date)[:10]:
+            if isinstance(valeur, list):
+                valeur = valeur[0] if valeur else {}
+            if isinstance(valeur, dict):
+                return valeur.get("title", ""), valeur.get("href", "")
+            if isinstance(valeur, str):
+                return valeur, ""
+    return "", ""
+
+
+def serie_datee(chemin_relatif: str) -> list[tuple[str, float | None, str, str]]:
+    """Série (date d'effet, valeur, titre de la référence, lien) d'un paramètre scalaire.
+
+    Les dates sont rendues telles qu'elles figurent dans le paramètre : ce sont, dans ce
+    dépôt, des **années de revenus**. Les références proviennent de `metadata.reference`,
+    ce qui rend le tableau publié et le paramètre indissociables : corriger l'un corrige
+    l'autre.
+    """
+    donnees = charge_parametre(chemin_relatif)
+    if not donnees or "values" not in donnees:
+        return []
+    sortie = []
+    for cle in sorted(donnees["values"].keys(), key=lambda k: (_annee(k), str(k))):
+        brut = donnees["values"][cle]
+        valeur = None
+        if isinstance(brut, dict):
+            valeur = brut.get("value")
+        elif isinstance(brut, (int, float)):
+            valeur = brut
+        titre, lien = _reference_a_la_date(donnees, cle)
+        sortie.append((str(cle)[:10], None if valeur is None else float(valeur), titre, lien))
+    return sortie
+
+
+def tableau_serie(
+    chemin_relatif: str,
+    colonne_valeur: str = "Valeur",
+    formateur: Callable[[float | None], str] | None = None,
+    avec_reference: bool = True,
+) -> "pd.DataFrame | None":
+    """Un paramètre scalaire, sous forme de tableau d'évolution daté et sourcé."""
+    if pd is None:
+        return None
+    serie = serie_datee(chemin_relatif)
+    if not serie:
+        return None
+    if formateur is None:
+        formateur = lambda v: "—" if v is None else formate_dinars(v)
+    lignes = []
+    for date, valeur, titre, _lien in serie:
+        ligne = {
+            "À compter des revenus de": date[:4],
+            colonne_valeur: formateur(valeur),
+        }
+        if avec_reference:
+            ligne["Texte"] = titre or "—"
+        lignes.append(ligne)
+    return pd.DataFrame(lignes)
+
+
+def tableau_evolution(
+    specs: list[tuple[str, str, Callable[[float | None], str]]],
+    cles: dict[str, str] | None = None,
+    colonne_periode: str = "Années de revenus",
+    derniere_annee: str = "2026",
+) -> "pd.DataFrame | None":
+    """Plusieurs paramètres côte à côte, une ligne par période homogène.
+
+    `specs` : (chemin du paramètre, en-tête de colonne, formateur).
+    `cles`  : date d'effet -> clé de citation du précis, par exemple
+              {"2017-01-01": "lf-2017, art. 14"}. La colonne « Texte » émet alors
+              `[@clé]`, ce qui raccroche le tableau à la bibliographie ; à défaut,
+              elle reprend le titre de la référence portée par le paramètre.
+
+    Les bornes de période sont calculées sur l'union des dates de changement de tous
+    les paramètres : une ligne couvre un intervalle pendant lequel aucune valeur ne bouge.
+    """
+    if pd is None:
+        return None
+    series = {}
+    for chemin, _entete, _f in specs:
+        s = serie_datee(chemin)
+        if not s:
+            return None
+        series[chemin] = s
+    dates = sorted({d for s in series.values() for d, *_ in s})
+    if not dates:
+        return None
+
+    def valeur_a(chemin, date):
+        retenue = None
+        for d, v, _t, _h in series[chemin]:
+            if d <= date:
+                retenue = v
+        return retenue
+
+    lignes = []
+    for indice, date in enumerate(dates):
+        debut = date[:4]
+        fin = str(int(dates[indice + 1][:4]) - 1) if indice + 1 < len(dates) else derniere_annee
+        periode = debut if debut == fin else f"{debut} → {fin}"
+        ligne = {colonne_periode: periode}
+        for chemin, entete, formateur in specs:
+            ligne[entete] = formateur(valeur_a(chemin, date))
+        texte = ""
+        if cles and date in cles:
+            texte = f"[@{cles[date]}]"
+        else:
+            for chemin, _e, _f in specs:
+                for d, _v, titre, _h in series[chemin]:
+                    if d == date and titre:
+                        texte = titre
+                        break
+                if texte:
+                    break
+        ligne["Texte"] = texte or "—"
+        lignes.append(ligne)
+    return pd.DataFrame(lignes)
+
+
 # ------------------------------------------------------------------------ tableau
 
 
@@ -265,11 +395,28 @@ def tableau_bareme(
     return pd.DataFrame(lignes)
 
 
+def _colonne_numerique(df: "pd.DataFrame", colonne: str) -> bool:
+    """Vrai si toutes les cellules tiennent du nombre (chiffres, %, dinars, tiret)."""
+    motif = re.compile(r"^[\d\s.,%—–-]+$|^.*\d.*(%|D)$")
+    return all(motif.match(str(v).strip()) for v in df[colonne])
+
+
 def tableau_vers_markdown(df: "pd.DataFrame") -> str:
-    """DataFrame -> tableau Markdown pipe, colonnes numériques alignées à droite."""
+    """DataFrame -> tableau Markdown pipe.
+
+    Seules les colonnes dont toutes les cellules sont numériques sont alignées à droite ;
+    une colonne de texte, comme la référence du texte de loi, reste alignée à gauche.
+    """
     colonnes = list(df.columns)
     lignes = ["| " + " | ".join(str(c) for c in colonnes) + " |"]
-    lignes.append("|" + "|".join("---" if i == 0 else "---:" for i in range(len(colonnes))) + "|")
+    lignes.append(
+        "|"
+        + "|".join(
+            "---:" if i > 0 and _colonne_numerique(df, c) else "---"
+            for i, c in enumerate(colonnes)
+        )
+        + "|"
+    )
     for _, ligne in df.iterrows():
         lignes.append("| " + " | ".join(str(ligne[c]) for c in colonnes) + " |")
     return "\n".join(lignes)
