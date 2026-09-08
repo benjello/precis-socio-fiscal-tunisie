@@ -37,6 +37,7 @@ L'état actuel du livre mélange les deux : le PNAFN y apparaît **deux fois**, 
 
 1.2  Les prestations contributives (sécurité sociale, hors vieillesse)
      1.2.1  Comment une prestation contributive est ouverte      ← introduction mécanisme
+              affiliation, régime, stage, assiette, fait générateur, ayants droit
      1.2.2  Les prestations familiales
      1.2.3  Les indemnités de maladie et de maternité
      1.2.4  Le capital décès et les droits des survivants
@@ -52,7 +53,7 @@ L'état actuel du livre mélange les deux : le PNAFN y apparaît **deux fois**, 
      1.3.5  Les allocations familiales non contributives (2020 →)
      1.3.6  Les aides ponctuelles
 
-1.4  Vue d'ensemble : qui reçoit quoi, et à quel titre
+1.4  Qui reçoit quoi : la matrice régime × prestation
 ```
 
 Chaque grande partie s'ouvre sur une introduction posant la **chaîne** — affiliation, assiette,
@@ -255,17 +256,38 @@ pour critères : zéro citation non résolue, ancres `#g-…` qui résolvent ré
 Côté modèle : `uv run openfisca test --country-package openfisca_tunisia tests`, avec des tests
 ajoutés sur les variables aujourd'hui sans couverture.
 
-## 8. Question ouverte, à trancher avant l'étape 1
+## 8. Périmètre — tranché
 
-**Le livre couvre-t-il les prestations contributives non-retraite ?** La description du portail
-ne mentionne que l'aide et l'assistance sociale, le soutien à l'emploi et les prestations
-monétaires et non monétaires. Mais si les prestations contributives ne sont pas ici, elles ne
-sont nulle part : le livre Retraites ne traite que la branche vieillesse, et le livre Cotisations
-sociales traitera le prélèvement.
+**Le livre couvre les prestations contributives non-retraite**, en plus de l'assistance sociale.
+Sans cela elles ne seraient nulle part : le livre Retraites ne traite que la branche vieillesse,
+et le livre Cotisations sociales traitera le prélèvement.
 
-Le plan ci-dessus les **inclut**. Les en retirer réduirait le livre à la partie 1.3 et
-diviserait le périmètre par deux.
+**Avec une exigence propre : préciser les éligibles.** Une prestation contributive n'est pas
+ouverte à tous les affiliés ; elle l'est aux affiliés **de certains régimes**, sous des
+conditions de stage et d'assiette qui diffèrent. Un chapitre qui listerait des montants sans
+dire qui y a droit serait trompeur — c'est même l'inégalité de couverture entre régimes qui est
+le fait le plus documentable du système tunisien.
+
+Concrètement, cela ajoute deux choses au plan :
+
+1. **Dans chaque sous-section de la partie 1.2**, un développement « qui y a droit » : les
+   régimes qui ouvrent la prestation, les conditions de stage, les ayants droit, et les
+   exclusions. Les régimes concernés sont ceux que le livre Retraites énumère déjà — RSNA
+   (salariés non agricoles), RSA (agricoles), RSAA (agricole amélioré), RTNS (travailleurs non
+   salariés), RTTE (Tunisiens à l'étranger), régime des bas revenus, régime des artistes,
+   créateurs et intellectuels, secteur public (CNRPS) — auxquels s'ajoutent les régimes créés
+   récemment, dont celui des travailleuses agricoles (décret-loi n° 2024-4).
+
+2. **La partie 1.4 devient centrale et non plus récapitulative** : une matrice
+   **régime × prestation**, indiquant pour chaque croisement si la prestation est ouverte, et
+   depuis quel texte. C'est cette matrice qui donne au chapitre sa valeur d'usage, et c'est
+   elle qui fera apparaître les angles morts de la couverture.
+
+Le dossier documentaire de l'étape 1 doit donc établir, pour chaque prestation, **le champ
+d'application personnel** autant que le montant — et signaler explicitement les régimes pour
+lesquels la question n'a pas pu être tranchée, plutôt que de laisser une case vide se lire comme
+une absence de droit.
 
 Deux programmes de la typologie officielle — **soutien à l'emploi** et **amélioration des
-conditions de vie** — ne sont pas traités par ce plan. Ils seront mentionnés dans le chapeau
-comme relevant du périmètre annoncé mais non couverts, plutôt que passés sous silence.
+conditions de vie** — restent hors du plan. Ils seront mentionnés dans le chapeau comme relevant
+du périmètre annoncé mais non couverts, plutôt que passés sous silence.
