@@ -37,7 +37,7 @@ except ImportError:  # pragma: no cover
     pd = None
 
 
-VERSION_MINIMALE = (0, 71)
+VERSION_MINIMALE = (0, 76)
 
 MESSAGE_INDISPONIBLE = (
     "*Tableau non disponible : ni openfisca-tunisia installé, ni snapshot statique.*"
@@ -442,6 +442,148 @@ def lit_markdown_statique(chemin: str | Path) -> "pd.DataFrame | None":
     if not cellules:
         return None
     return pd.DataFrame(cellules[1:], columns=cellules[0])
+
+
+# ------------------------------------------------------------------- prestations
+#
+# Les tableaux du livre « Fiscalité » sont datés en ANNÉES DE REVENUS : le mois est sans
+# objet, une loi de finances prenant effet au 1er janvier. Ceux du livre « Prestations
+# sociales » ne le supportent pas — la majoration pour salaire unique prend effet au 1er mai
+# 1980, le plafond d'assiette au 1er mai 1986, la contribution aux frais de crèche au
+# 1er octobre 1994. Réduire ces dates à l'année les rendrait fausses. D'où les fonctions
+# ci-dessous, qui rendent la date d'effet au jour près et exposent l'attestation.
+
+MOIS_FR = [
+    "janvier", "février", "mars", "avril", "mai", "juin",
+    "juillet", "août", "septembre", "octobre", "novembre", "décembre",
+]
+
+
+def formate_date_fr(date_iso: str) -> str:
+    """« 1980-05-01 » -> « 1^er^ mai 1980 » (exposant Pandoc pour l'ordinal)."""
+    try:
+        annee, mois, jour = (int(x) for x in str(date_iso)[:10].split("-"))
+    except ValueError:
+        return str(date_iso)
+    ordinal = "1^er^" if jour == 1 else str(jour)
+    return f"{ordinal} {MOIS_FR[mois - 1]} {annee}"
+
+
+def attestation(titre: str) -> str:
+    """Niveau d'attestation d'une valeur, déduit de la présence d'une référence.
+
+    Convention de lecture n° 3 du chapitre : une valeur que le paramètre ne rattache à
+    aucun texte n'est pas présentée comme attestée. La colonne se calcule donc, elle ne
+    se saisit pas — ajouter la référence au paramètre suffit à la faire basculer.
+    """
+    return "texte lu" if titre else "**non établie**"
+
+
+def tableau_evolution_datee(
+    specs: list[tuple[str, str, Callable[[float | None], str]]],
+    cles: dict[str, str] | None = None,
+    colonne_periode: str = "Effet",
+    avec_attestation: bool = False,
+) -> "pd.DataFrame | None":
+    """Comme `tableau_evolution`, mais une ligne par DATE D'EFFET rendue au jour près.
+
+    `cles` : date ISO -> clé de citation du précis. À défaut, la colonne « Texte »
+    reprend le titre de la référence portée par le paramètre lui-même.
+    """
+    if pd is None:
+        return None
+    series = {}
+    for chemin, _entete, _f in specs:
+        s = serie_datee(chemin)
+        if not s:
+            return None
+        series[chemin] = s
+    dates = sorted({d for s in series.values() for d, *_ in s})
+    if not dates:
+        return None
+
+    def valeur_a(chemin, date):
+        retenue = None
+        for d, v, _t, _h in series[chemin]:
+            if d <= date:
+                retenue = v
+        return retenue
+
+    def titre_a(date):
+        for chemin, _e, _f in specs:
+            for d, _v, titre, _h in series[chemin]:
+                if d == date and titre:
+                    return titre
+        return ""
+
+    lignes = []
+    for date in dates:
+        ligne = {colonne_periode: formate_date_fr(date)}
+        for chemin, entete, formateur in specs:
+            ligne[entete] = formateur(valeur_a(chemin, date))
+        titre = titre_a(date)
+        if cles and date in cles:
+            ligne["Texte"] = f"[@{cles[date]}]"
+        else:
+            ligne["Texte"] = titre or "—"
+        if avec_attestation:
+            ligne["Attestation"] = attestation(titre)
+        lignes.append(ligne)
+    return pd.DataFrame(lignes)
+
+
+def tableau_a_la_date(
+    specs: list[tuple[str, str, Callable[[float | None], str]]],
+    date: str,
+    cles: dict[str, str] | None = None,
+) -> "pd.DataFrame | None":
+    """Rendu VERTICAL — un paramètre par ligne — d'un dispositif à millésime unique.
+
+    La contribution aux frais de crèche ou les aides ponctuelles de l'AMEN social n'ont
+    qu'une seule date d'effet : les mettre en colonnes donnerait un tableau d'une ligne et
+    de cinq colonnes hétérogènes (un montant, une durée, deux âges, un plafond). La lecture
+    par ligne « Paramètre / Valeur / Texte » est celle du chapitre.
+
+    `cles` : chemin du paramètre -> clé de citation ; à défaut, titre de la référence.
+    """
+    if pd is None:
+        return None
+    lignes = []
+    for chemin, libelle, formateur in specs:
+        serie = serie_datee(chemin)
+        if not serie:
+            return None
+        retenue, titre_retenu = None, ""
+        for d, v, titre, _h in serie:
+            if d <= date:
+                retenue, titre_retenu = v, titre
+        if cles and chemin in cles:
+            texte = f"[@{cles[chemin]}]"
+        else:
+            texte = titre_retenu or "—"
+        lignes.append({"Paramètre": libelle, "Valeur": formateur(retenue), "Texte": texte})
+    return pd.DataFrame(lignes)
+
+
+def markdown_avec_legende(
+    chemin: str | Path, legende: str, label: str, colonnes: str = ""
+) -> str:
+    """Rend un snapshot en tableau Markdown légendé, pour un chunk `#| output: asis`.
+
+    POURQUOI PASSER PAR LÀ. Un DataFrame stylé est émis en HTML : Pandoc reçoit du balisage
+    déjà cuit, et les citations qu'il contient — `[@lf-2017, art. 14]` — ne sont jamais vues
+    par citeproc. Elles s'impriment alors telles quelles dans la page. En émettant du
+    Markdown, la table et ses citations sont analysées par Pandoc : les clés se résolvent et
+    la légende porte une ancre `@tbl-…` référençable dans le texte.
+
+    `colonnes` : spécification facultative de largeur, par exemple `{tbl-colwidths="[20,80]"}`.
+    """
+    fichier = Path(chemin)
+    if not fichier.is_file():
+        return MESSAGE_INDISPONIBLE
+    corps = fichier.read_text(encoding="utf-8").rstrip()
+    attributs = f"{{#{label}}}" if not colonnes else f"{{#{label} {colonnes}}}"
+    return f"{corps}\n\n: {legende} {attributs}\n"
 
 
 def get_table_or_static(

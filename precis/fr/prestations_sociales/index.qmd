@@ -1,5 +1,30 @@
 # Les prestations sociales en Tunisie
 
+```{python}
+#| echo: false
+#| output: false
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+
+TABLES = Path.cwd() / "tables"
+
+
+def table(nom, legende, label):
+    """Tableau de paramètres : snapshot versionné, régénéré depuis openfisca-tunisia.
+
+    Les valeurs et les dates d'effet viennent des paramètres du modèle, la colonne
+    « Texte » de leurs références JORT : corriger le paramètre corrige le tableau.
+    Régénération : `scripts/generate_prestations_tables.py`.
+
+    Le rendu est du Markdown, et non un DataFrame stylé, afin que Pandoc voie les
+    citations qu'il contient et les résolve.
+    """
+    print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label))
+```
+
 Ce chapitre traite des prestations sociales autres que les pensions de vieillesse : d'un côté les prestations **contributives** servies par les caisses de sécurité sociale au titre d'une affiliation et de cotisations — prestations familiales, indemnités de maladie et de maternité, capital décès, réparation des accidents du travail, assurance maladie — ; de l'autre les prestations **non contributives** d'assistance sociale, attribuées sous condition de ressources et financées par le budget de l'État.
 
 Le partage avec les autres livres du précis est le suivant. Le livre « Retraites » traite la branche vieillesse, organisée par régime ; le livre « Cotisations sociales » traitera le financement. Les mêmes régimes servent donc trois livres pour trois objets distincts : le prélèvement, la pension, les autres prestations. Ce chapitre-ci prend les régimes du côté des prestations qu'ils ouvrent, et non du côté de ce qu'ils prélèvent.
@@ -90,12 +115,13 @@ Sources : @loi60-30, art. 54 ; @loi96-65. La date d'effet de la loi n° 96-65 n'
 
 **Le montant : quatre états, aucun n'est celui de 1960.** C'est le point sur lequel la lecture des textes corrige le plus nettement la présentation courante. L'article 61, alinéa 2, de la loi n° 60-30 a été réécrit trois fois, et chaque réécriture ne touche pas les mêmes paramètres.
 
-| Effet | Texte | Taux, par rang d'enfant | Rémunération trimestrielle retenue |
-|---|---|---|---|
-| origine (1960) | loi n° 60-30, art. 61 [@loi60-30, art. 61] | **15 %** pour chaque enfant en rang utile | bande **52 D – 500 D** |
-| **1^er^ janvier 1976** | loi n° 75-82, art. 1^er^ et 2 [@loi75-82] | **18 / 16 / 14 / 12 %** (1^er^ au 4^e^ enfant) | plafond **72,000 D** |
-| **1^er^ mai 1986** | loi n° 86-75, art. 1^er^ et 2 [@loi86-75] | **18 / 16 / 14 / 12 %**, inchangés | plafond **122,000 D** |
-| **1^er^ janvier 1989** | loi n° 88-38, art. 1^er^ et 5 [@loi88-38] | **18 / 16 / 14 %** — le quatrième rang est supprimé | plafond **122,000 D**, inchangé |
+```{python}
+#| echo: false
+#| output: asis
+table("af_evolution",
+      "Allocations familiales du régime contributif : taux par rang de l'enfant, assiette trimestrielle et nombre de rangs servis, de 1960 à nos jours",
+      "tbl-af-evolution")
+```
 
 Sources : textes lus à l'image ; chaque ligne porte sa date d'effet telle que l'énonce l'article final du texte.
 
@@ -111,11 +137,13 @@ Le texte fondateur de ce dispositif est la **loi n° 80-36 du 28 mai 1980**, don
 
 Trois conditions cumulatives ouvrent la majoration : des enfants à charge au sens de l'article 53, un **droit ouvert aux allocations familiales**, et un **conjoint n'exerçant aucune activité professionnelle** — c'est cette dernière qui donne au dispositif son nom. Les montants trimestriels énoncés par l'article 65 bis, avec effet au 1^er^ mai 1980, sont les suivants.
 
-| Composition du foyer | Montant trimestriel |
-|---|---|
-| un enfant à charge | 9,375 D |
-| deux enfants à charge | 18,750 D |
-| trois enfants à charge ou plus | 23,475 D |
+```{python}
+#| echo: false
+#| output: asis
+table("salaire_unique",
+      "Majoration trimestrielle pour salaire unique, article 65 bis de la loi n° 60-30 ajouté par la loi n° 80-36, avec effet au 1^er^ mai 1980",
+      "tbl-salaire-unique")
+```
 
 Source : @loi80-36, art. 65 bis. Effet au 1^er^ mai 1980 (art. 2).
 
@@ -131,13 +159,13 @@ Ce dispositif n'appartient pas à la loi n° 60-30 : c'est un texte autonome de 
 
 La loi n° 94-88 institue une contribution aux frais de prise en charge des enfants dans les crèches autorisées, servie au titre des enfants « des assurées sociales et des affiliées aux caisses de sécurité sociale » dont le salaire ne dépasse pas un montant fixé par décret, et seulement pour les enfants admis au régime des allocations familiales ; elle est à la charge des caisses et versée **directement à la crèche**, pour les enfants de deux à trente-six mois, onze mois par année, et n'est pas servie pendant le congé de maternité [@loi94-88, art. 2-4]. Le décret n° 95-114 en fixe les paramètres, avec effet au 1^er^ octobre 1994.
 
-| Paramètre | Valeur | Texte |
-|---|---|---|
-| Montant | 15 dinars par enfant et par mois | @decret95-114, art. 1 |
-| Durée | 11 mois par an | @loi94-88, art. 4 ; @decret95-114, art. 1 |
-| Âge de l'enfant | de 2 à 36 mois | @loi94-88, art. 4 |
-| Plafond de revenu de la mère | 2,5 fois le salaire minimum garanti | @decret95-114, art. 1 |
-| Effet | 1^er^ octobre 1994 | @decret95-114, art. 4 |
+```{python}
+#| echo: false
+#| output: asis
+table("creche",
+      "Contribution aux frais de crèche : paramètres en vigueur depuis le 1^er^ octobre 1994, jamais modifiés depuis",
+      "tbl-creche")
+```
 
 C'est le seul dispositif du bloc contributif dont le champ soit explicitement **genré** : la loi vise « les assurées sociales » et « les affiliées », le décret « la mère bénéficiaire ». Comme pour la majoration pour salaire unique, aucun texte revalorisant le montant de 15 dinars n'a été repéré, sans que cette absence ait pu être confirmée auprès des caisses.
 
@@ -358,12 +386,13 @@ Une pièce va plus loin. L'arrêté du 30 septembre 1997 fixant l'aide matériel
 
 L'état des sources sur le montant est donc le suivant.
 
-| Période ou date | Montant | Attestation | Texte |
-|---|---|---|---|
-| 1987 → juillet 2024 | onze paliers successifs | **non établie** — aucun texte publié | aucun ; décisions administratives |
-| au 10 juillet 2024 | **180 D** par mois, constaté | texte lu | @arrete-2024-07-10-allocation-pauvres, art. 1 |
-| à compter du 10 juillet 2024 | relèvement **plafonné à 240 D** | texte lu | @arrete-2024-07-10-allocation-pauvres, art. 1 |
-| à compter du 1^er^ janvier 2025 | relèvement **plafonné à 260 D** | texte lu | @arrete-2025-08-29-allocation-pauvres, art. 1-2 |
+```{python}
+#| echo: false
+#| output: asis
+table("pnafn_allocation",
+      "Allocation mensuelle du programme national d'aide aux familles nécessiteuses : onze paliers de 1987 à 2018, dont un seul est attesté par un texte publié",
+      "tbl-pnafn-allocation")
+```
 
 L'arrêté conjoint du 10 juillet 2024 est le premier texte publié à énoncer le montant de l'allocation. Il faut le lire avec précision : il ne fixe pas un nouveau montant, il **autorise un relèvement plafonné** au niveau du transfert monétaire de l'AMEN social. Sa rédaction énonce que l'allocation « fixée à 180 dinars à la date de la publication du présent arrêté conjoint, est augmentée sans que le montant de cette allocation ne dépasse le montant des transferts monétaires mensuels directs attribués dans le cadre du programme "AMEN SOCIAL", fixée à 240 dinars ». Écrire que l'allocation vaut 240 dinars depuis juillet 2024 serait une sur-interprétation ; la formulation exacte est celle d'un alignement par le haut, dans une limite. L'arrêté conjoint du 29 août 2025 reprend la même mécanique de 240 vers 260 dinars, avec **effet rétroactif au 1^er^ janvier 2025** [@arrete-2025-08-29-allocation-pauvres, art. 2].
 
@@ -497,23 +526,25 @@ L'arrêté du 19 mai 2020 relatif au modèle de *scoring* dispose que celui-ci �
 
 L'arrêté conjoint fondateur du 19 mai 2020 construit le transfert en deux éléments : un montant de base mensuel servi par individu ou par famille, et une allocation supplémentaire par enfant à charge, doublée pour l'enfant titulaire d'une carte de handicap [@arrete-2020-05-19-transferts, art. 2]. La base a été revalorisée chaque année depuis.
 
-| Effet | Montant de base mensuel | Texte | Publication |
-|---|---|---|---|
-| 20 mai 2020 | 180 D | @arrete-2020-05-19-transferts, art. 2 | JORT n° 45 du 20 mai 2020, p. 1097 |
-| 1^er^ janvier 2022 | **200 D** | @arrete-2022-04-01-transferts, art. 1 | JORT n° 38 du 8 avril 2022, p. 972 |
-| 1^er^ janvier 2023 | **220 D** | @arrete-2023-04-03-transferts, art. 1-2 | JORT n° 34 du 6 avril 2023, p. 809 |
-| 1^er^ janvier 2024 | **240 D** | @arrete-2024-02-28-transferts, art. 1-2 | JORT n° 33 du 1^er^ mars 2024, p. 768 |
-| 1^er^ janvier 2025 | **260 D** | @arrete-2025-01-29-transferts, art. 1-2 | JORT n° 12 du 30 janvier 2025, p. 275 |
+```{python}
+#| echo: false
+#| output: asis
+table("amen_base",
+      "Allocation de base mensuelle du transfert monétaire permanent de l'AMEN social, revalorisée chaque année avec effet rétroactif au 1^er^ janvier",
+      "tbl-amen-base")
+```
 
-Une régularité mérite d'être énoncée : ces revalorisations sont **rétroactives au 1^er^ janvier** de l'année. L'arrêté est pris en janvier, février, mars ou avril et fait remonter son effet au premier jour de l'exercice.
+Une régularité mérite d'être énoncée : ces revalorisations sont **rétroactives au 1^er^ janvier** de l'année. L'arrêté est pris en janvier, février, mars ou avril et fait remonter son effet au premier jour de l'exercice — JORT n° 45 du 20 mai 2020, p. 1097 pour l'arrêté fondateur, puis n° 38 du 8 avril 2022, p. 972, n° 34 du 6 avril 2023, p. 809, n° 33 du 1^er^ mars 2024, p. 768 et n° 12 du 30 janvier 2025, p. 275. La date d'effet du montant d'origine est celle de la publication, le 20 mai 2020, et non le 1^er^ mai : aucun texte n'énonce cette dernière.
 
 Le supplément par enfant a connu, lui, une modification de bornes d'âge décisive pour l'articulation des dispositifs.
 
-| Période | Supplément mensuel par enfant | Âge de l'enfant | Texte |
-|---|---|---|---|
-| depuis le 20 mai 2020 | 10 D | moins de 18 ans sans condition, jusqu'à 25 ans en cas d'études, d'apprentissage ou de formation | @arrete-2020-05-19-transferts, art. 2 |
-| depuis le 1^er^ février 2022 | 10 D | **de 6 ans** à moins de 18 ans, mêmes prolongations jusqu'à 25 ans | @arrete-2022-04-01-transferts, art. 1 |
-| tout du long | montant **doublé** pour l'enfant titulaire d'une carte de handicap | — | @arrete-2020-05-19-transferts, art. 2 |
+```{python}
+#| echo: false
+#| output: asis
+table("amen_supplement_enfant",
+      "Supplément par enfant à charge du transfert monétaire permanent : montant, majoration pour handicap et bornes d'âge",
+      "tbl-amen-supplement")
+```
 
 Ce déplacement de borne est la clé de l'articulation avec l'allocation familiale non contributive : les enfants de moins de six ans sortent du supplément de dix dinars le 1^er^ février 2022, jour où l'allocation familiale de trente dinars les prend en charge. **Il n'y a pas cumul.**
 
@@ -533,13 +564,13 @@ Quatre traits la distinguent des allocations familiales contributives. Elle est 
 
 Le montant de trente dinars n'a pas été modifié depuis 2022, aucun texte modifiant l'arrêté du 1^er^ avril 2022 n'ayant été trouvé jusqu'à décembre 2025. Rapporté à l'évolution de la base du transfert monétaire sur la même période, cela donne la vue suivante.
 
-| Année d'effet | Base mensuelle du transfert AMEN | Allocation familiale non contributive (par enfant de moins de 6 ans) |
-|---|---|---|
-| 2020 | 180 D | — (le dispositif n'existe pas) |
-| 2022 | 200 D | 30 D à compter du 8 avril 2022 |
-| 2023 | 220 D | 30 D |
-| 2024 | 240 D | 30 D |
-| 2025 | 260 D | 30 D |
+```{python}
+#| echo: false
+#| output: asis
+table("amen_vs_afnc",
+      "Transfert monétaire permanent et allocation familiale non contributive : la base est revalorisée chaque année, l'allocation ne l'a jamais été",
+      "tbl-amen-vs-afnc")
+```
 
 Sources : arrêtés conjoints cités à la section précédente ; @arrete-2022-04-01-allocation-familiale, art. 3.
 
