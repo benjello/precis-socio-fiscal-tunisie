@@ -1,5 +1,18 @@
 # Commande de documentation — IRPP (livre « Fiscalité »)
 
+> **Statut : mixte. À lire avec précaution.**
+>
+> Cette note a été écrite **avant** le dépouillement du JORT. Son **état des lieux** (§ 1) décrit
+> une version du chapitre qui n'existe plus et contient des hypothèses depuis **infirmées** — il
+> ne fait plus foi.
+>
+> En revanche son **registre de questions** (§ 2) reste vivant : six TODO du texte publié y
+> renvoient (Q9, Q10, Q12, Q16, Q18) et les blocs B, C et D n'ont jamais été traités. C'est pour
+> cela que cette note n'est pas supprimée.
+>
+> Ce qui fait foi sur le barème et l'assiette : `fiscalite-irpp-bloc-a-documentation.md` et
+> `fiscalite-irpp-assiette-abattements.md`.
+
 > Destinataire : agent **documentaliste** (et, pour la dernière partie, agent **bibliographe**).
 > Cible rédactionnelle : section « L'impôt sur le revenu des personnes physiques (IRPP) »
 > de `precis/fr/fiscalite/index.qmd` (ébauche, 49 lignes).
