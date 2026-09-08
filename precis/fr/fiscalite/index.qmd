@@ -29,9 +29,14 @@ def bareme(annee, entete, taux_effectif=False):
 COL_IRPP = "Tranche de revenu annuel net (dinars)"
 
 
-def table(nom):
-    """Tableau de paramètres : snapshot versionné, régénéré depuis openfisca-tunisia."""
-    return ot.lit_markdown_statique(TABLES / f"{nom}.md")
+def table(nom, legende, label):
+    """Tableau de paramètres : snapshot versionné, régénéré depuis openfisca-tunisia.
+
+    Le rendu est du Markdown, et non un DataFrame stylé : Pandoc doit voir les citations
+    que le tableau contient pour les résoudre. Émises dans du HTML déjà cuit, elles
+    s'imprimaient telles quelles, « [@lf-2017, art. 14] » au milieu d'une colonne.
+    """
+    print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label))
 ```
 
 
@@ -263,10 +268,11 @@ L'article 21 définit les [bénéfices des professions non commerciales](#g-bnc)
 Le bénéfice net est en principe déterminé au **réel** : différence entre les produits bruts réalisés au cours de l'année civile et les charges nécessitées par l'exploitation (article 22 § I). Mais le § II du même article ouvre une **option pour un forfait d'assiette**, exercée lors du dépôt de la déclaration : le bénéfice imposable est alors une fraction fixe des recettes brutes, le complément valant [abattement forfaitaire](#g-abattement-forfaitaire) implicite pour charges. Cette fraction n'a changé qu'une fois en trente-six exercices.
 
 ```{python}
-#| label: tbl-bnc-forfait
-#| tbl-cap: "Fraction des recettes brutes retenue comme bénéfice forfaitaire des professions non commerciales (article 22 § II du code)"
 #| echo: false
-table("bnc_forfait").style.hide(axis="index")
+#| output: asis
+table("bnc_forfait",
+      "Fraction des recettes brutes retenue comme bénéfice forfaitaire des professions non commerciales (article 22 § II du code)",
+      "tbl-bnc-forfait")
 ```
 
 L'article 46 de la loi de finances pour 2014, intitulé « Rationalisation de l'assiette forfaitaire des bénéfices non commerciaux », se borne à remplacer le taux de 70 % par celui de 80 % [@lf-2014, art. 46] : c'est ce mode de rédaction — le texte modificatif cite la valeur qu'il remplace — qui permet d'attester les valeurs antérieures sans dépouiller le JORT année par année. Il n'énonce en revanche aucune date d'effet propre, d'où l'astérisque porté sur l'année 2013.
@@ -301,10 +307,11 @@ C'est la catégorie qui concerne le plus grand nombre de contribuables, et la pl
 Le [taux de la déduction pour frais professionnels](#g-frais-professionnels) n'a jamais varié. Son **plafond**, en revanche, n'existait pas avant 2017.
 
 ```{python}
-#| label: tbl-frais-professionnels
-#| tbl-cap: "Déduction forfaitaire pour frais professionnels sur les traitements et salaires (article 26 § I du code)"
 #| echo: false
-table("frais_professionnels").style.hide(axis="index")
+#| output: asis
+table("frais_professionnels",
+      "Déduction forfaitaire pour frais professionnels sur les traitements et salaires (article 26 § I du code)",
+      "tbl-frais-professionnels")
 ```
 
 Ce point mérite d'être souligné, car il est fréquemment présenté à l'envers. Le texte de 2017 est un **ajout** et non un remplacement : « est ajouté au deuxième tiret du paragraphe I de l'article 26 […] : *sans que la déduction dépasse 2.000 dinars par an* » [@lf-2017, art. 14]. Le plafond de 2 000 dinars n'a donc pas été relevé en 2017 — **il a été créé** ; de 1990 à 2016, l'abattement salarial était strictement proportionnel. La mesure figure dans le **même article 14** que le relèvement de la tranche à taux nul du barème de 1 500 à 5 000 dinars, sous l'intitulé officiel « Allégement de la charge fiscale des personnes physiques à faible revenu et renforcement de l'équité fiscale » : l'article combine ainsi un allègement en bas de barème et un resserrement en haut d'assiette, l'intitulé ne mentionnant que le premier.
@@ -312,10 +319,11 @@ Ce point mérite d'être souligné, car il est fréquemment présenté à l'enve
 L'abattement sur les **pensions et rentes viagères** a connu la trajectoire inverse : trente-sept exercices sans changement, puis un relèvement programmé en trois marches.
 
 ```{python}
-#| label: tbl-abattement-pensions
-#| tbl-cap: "Abattement sur les pensions et rentes viagères (article 26 § II du code)"
 #| echo: false
-table("abattement_pensions").style.hide(axis="index")
+#| output: asis
+table("abattement_pensions",
+      "Abattement sur les pensions et rentes viagères (article 26 § II du code)",
+      "tbl-abattement-pensions")
 ```
 
 L'intitulé officiel de l'article 56 de la loi de finances pour 2026 est « Allègement progressif de la charge fiscale sur les pensions de retraite » ; les trois dates sont énoncées par l'article lui-même. Sa lecture a été faite sur le fascicule arabe du JORT n° 148 du 12 décembre 2025, l'édition française n'étant pas encore parue au moment de la rédaction : elle reste à faire confirmer sur l'édition française.
@@ -335,10 +343,11 @@ L'article 35 de la loi de finances pour 2007, intitulé « Instauration d'un ré
 **L'abattement pour salaire minimum : un dispositif clos, et le premier de sa série.** Formellement rattaché à l'article 40 du code — donc aux déductions communes —, ce dispositif ne concernait que les salariés et se lit comme une règle d'assiette salariale. Il n'a existé que dix exercices.
 
 ```{python}
-#| label: tbl-abattement-smig
-#| tbl-cap: "Abattement au titre du salaire minimum interprofessionnel garanti (article 40 § V du code)"
 #| echo: false
-table("abattement_salaire_minimum").style.hide(axis="index")
+#| output: asis
+table("abattement_salaire_minimum",
+      "Abattement au titre du salaire minimum interprofessionnel garanti (article 40 § V du code)",
+      "tbl-abattement-smig")
 ```
 
 L'intitulé officiel de l'article 49 de la loi de finances pour 2005 dit ce que le dispositif visait : « Allègement de la charge fiscale des salariés payés au salaire minimum interprofessionnel garanti **par l'augmentation du montant de la déduction de la base de l'impôt de 1500 D à 2000 D** ». En additionnant la tranche à taux nul du barème — 1 500 dinars, inchangée depuis 1990 — et la nouvelle déduction de 500 dinars, le législateur portait à 2 000 dinars le revenu effectivement affranchi d'impôt pour un salarié payé au SMIG. **C'est le premier des dispositifs de seuil pour bas salaires**, antérieur de neuf ans à l'exonération de 2014 et de douze ans à la tranche à taux nul de 5 000 dinars.
@@ -369,10 +378,11 @@ locale du texte est illisible. -->
 **La détermination du revenu net (article 28) distingue le bâti et le non bâti.** Le revenu brut est, dans les deux cas, le montant des recettes brutes perçues par le propriétaire, augmenté des dépenses lui incombant normalement et mises par convention à la charge du locataire, diminué des dépenses qu'il a supportées pour le compte du locataire. Mais le **bâti** relève d'un forfait, tandis que le revenu net des **propriétés non bâties louées** est déterminé au réel, en déduisant du revenu brut « les dépenses justifiées et nécessitées pour la production de ce revenu » ainsi que la taxe sur les terrains non bâtis acquittée — règle inchangée depuis 1990. Cette asymétrie entre les deux régimes est d'origine.
 
 ```{python}
-#| label: tbl-foncier-bati
-#| tbl-cap: "Détermination forfaitaire du revenu net des propriétés bâties (article 28 § II du code)"
 #| echo: false
-table("foncier_bati").style.hide(axis="index")
+#| output: asis
+table("foncier_bati",
+      "Détermination forfaitaire du revenu net des propriétés bâties (article 28 § II du code)",
+      "tbl-foncier-bati")
 ```
 
 Trois observations s'imposent à la lecture de ce tableau.
@@ -439,10 +449,11 @@ Les autres paragraphes de l'article 39 relèvent moins de l'assiette que du rég
 Ce plafonnement n'agit pas en montant sur les déductions, mais **par le bas de l'impôt**. La note commune n° 1/2021 en donne la formulation administrative, à propos de la déduction des primes d'assurance-vie : la déduction est octroyée « sous réserve du minimum d'impôt prévu à l'article 12 *bis* de la loi n° 89-114 du 30 décembre 1989 […] **fixé à 45 % de l'impôt dû sur le revenu global compte non tenu de cette déduction** » [@dgi-nc-1-2021]. Quel que soit le volume d'avantages mobilisés, le contribuable ne peut donc ramener son impôt en dessous d'une fraction de ce qu'il aurait acquitté sans eux.
 
 ```{python}
-#| label: tbl-plafonnement
-#| tbl-cap: "Minimum d'impôt au titre des avantages fiscaux (article 12 *bis* de la loi n° 89-114)"
 #| echo: false
-table("minimum_impot_avantages").style.hide(axis="index")
+#| output: asis
+table("minimum_impot_avantages",
+      "Minimum d'impôt au titre des avantages fiscaux (article 12 *bis* de la loi n° 89-114)",
+      "tbl-plafonnement")
 ```
 
 Deux précisions doivent accompagner ce tableau. **La date d'effet du passage à 45 % est énoncée en date calendaire et non en années de revenus** — l'article 23 de la loi n° 2017-8 dispose que ses dispositions s'appliquent « à partir du 1^er^ avril 2017 », au milieu d'un exercice. C'est le seul texte de cette sous-section dans ce cas, et l'exercice de rattachement n'est pas établi. Par ailleurs, l'homonymie doit être surveillée : l'article 12 *bis* **du code**, ajouté par l'article 41 de la loi de finances pour 2008, porte sur les amortissements et n'a aucun rapport avec le présent mécanisme ; le minimum d'impôt de l'article 44 § II du code, assis sur le chiffre d'affaires, en est également distinct et est examiné plus loin.
@@ -464,10 +475,11 @@ instituteur, durée d'application, abrogation. Cf. Q13 de la même note. -->
 Ce sont des montants forfaitaires en dinars, retranchés du revenu net global. Leur série est complète et intégralement adossée aux textes, chaque texte modificatif citant la valeur qu'il remplace, et la note commune n° 7/2018 reproduisant l'état du droit en vigueur jusqu'au 31 décembre 2017 [@dgi-nc-7-2018].
 
 ```{python}
-#| label: tbl-charges-famille
-#| tbl-cap: "Déductions au titre de la situation et des charges de famille, en années de revenus (article 40 du code)"
 #| echo: false
-table("famille_chef_de_famille").style.hide(axis="index")
+#| output: asis
+table("famille_chef_de_famille",
+      "Déductions au titre de la situation et des charges de famille, en années de revenus (article 40 du code)",
+      "tbl-charges-famille")
 ```
 
 *Note de lecture.* Les colonnes sont des **années de revenus**. Les valeurs suivies d'un astérisque relèvent du second cas de la règle de conversion : l'article modificatif n'énonce pas de date d'effet propre et l'année indiquée est dérivée de la lecture administrative de l'article final de la loi, sans note commune portant sur l'article en cause. Les autres ruptures sont attestées : l'enfant infirme à 750 D par la note commune n° 33/2005 [@dgi-nc-33-2005], le passage à 2 000 D par la note commune n° 7/2018 [@dgi-nc-7-2018], le chef de famille et les enfants par la clause propre de l'article 67 § 4 de la loi de finances pour 2018 [@lf-2018, art. 54], le parent à charge par la note commune n° 3/2020 [@dgi-nc-3-2020], et l'abrogation du § V par la clause propre de l'article 73 § 3 de la loi de finances pour 2014 [@lf-2014, art. 73]. Le § V déborde la grille des colonnes : lire 500 D pour les revenus 2004 à 2008 et 1 000 D pour les revenus 2009 à 2013.
