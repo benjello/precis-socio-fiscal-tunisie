@@ -68,7 +68,14 @@ jobs:
             # AR→FR ouvrant une PR parasite qui corromprait la source FR
             # (boucle observée : #31, #35, #37, #44). On filtre le diff au FR.
             PATTERN='precis/fr/.*\.(qmd|yml)$|^CHANGELOG\.md$'
-            CHANGED=$(git diff --name-only $BASE_SHA $HEAD_SHA | grep -E "$PATTERN" | tr '\n' ' ' || true)
+            # Les `_glossaire.qmd` sont GÉNÉRÉS par build_glossary.py à partir de
+            # precis/glossaire.yml, qui porte déjà les deux langues. Les traduire
+            # est au mieux inutile — la prochaine exécution du générateur écrase
+            # la traduction —, au pire nuisible : le fichier arabe cesse d'être
+            # le reflet exact de la source unique. La re-synchro manuelle les
+            # excluait déjà ; le chemin `push` ne le faisait pas.
+            CHANGED=$(git diff --name-only $BASE_SHA $HEAD_SHA \
+              | grep -E "$PATTERN" | grep -v '_glossaire\.qmd' | tr '\n' ' ' || true)
           fi
           echo "files=$CHANGED" >> $GITHUB_OUTPUT
 
