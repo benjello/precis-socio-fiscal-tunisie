@@ -132,8 +132,9 @@ d'État, barème de l'article 8 de la loi n° 85-109 du 31 décembre 1985) à un
 35 %** s'opère **en une seule fois, par le code de 1989 lui-même**, applicable aux revenus réalisés
 à compter du 1er janvier 1990. `@touaiti2026` a correctement identifié l'avant et l'après, mais les
 a **datés à un an d'écart** et **attribués au mauvais texte** (et son décompte de « 16 tranches »
-vaut en réalité 18). *Le barème de la C.P.E. est documenté par ailleurs :
-voir `docs/notes/fiscalite-irpp-baremes-par-annee.md` § 1.1 — hors périmètre du Bloc A.*
+vaut en réalité 18). *Le barème de la C.P.E. est désormais encodé et sourcé dans openfisca-tunisia,
+`parameters/impot_revenu/contribution_personnelle_etat/bareme.yaml`, d'où le précis le génère —
+hors périmètre du Bloc A.*
 
 Deux emplois **réels** du mot « simplification » dans la période, à ne pas confondre avec le
 barème :

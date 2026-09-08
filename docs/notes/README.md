@@ -45,8 +45,14 @@ Matière première constituée sur le JORT, avec ses preuves. Se consultent, ne 
 
 | Note | Pourquoi | Où regarder |
 |---|---|---|
-| [`fiscalite-irpp-besoins-documentation.md`](fiscalite-irpp-besoins-documentation.md) | C'était la **commande** passée au documentaliste. Ses questions ont reçu réponse ; elle contient des hypothèses depuis infirmées, dont une pagination erronée. | `fiscalite-irpp-bloc-a-documentation.md` |
-| [`fiscalite-irpp-baremes-par-annee.md`](fiscalite-irpp-baremes-par-annee.md) | Tableau de travail bâti sur les paramètres openfisca **avant** dépouillement du JORT. Trois avertissements successifs ont dû y être ajoutés. | `fiscalite-irpp-bloc-a-documentation.md` |
+| [`fiscalite-irpp-besoins-documentation.md`](fiscalite-irpp-besoins-documentation.md) | **Statut mixte.** Son état des lieux est périmé et contient des hypothèses infirmées ; son **registre de questions reste vivant** — six TODO du texte publié y renvoient et les blocs B, C et D ne sont pas traités. Conservée pour cela. | `fiscalite-irpp-bloc-a-documentation.md` pour le barème et l'assiette |
+
+**`fiscalite-irpp-baremes-par-annee.md` a été supprimée le 08/09/2026.** Tableau de travail bâti
+sur les paramètres openfisca avant dépouillement du JORT : il a fallu y empiler trois
+avertissements successifs pour éviter qu'on le lise comme une source, et un agent a failli en
+reprendre le tableau tel quel. Son contenu est repris, sourcé, dans
+`fiscalite-irpp-bloc-a-documentation.md` et dans les paramètres openfisca. Récupérable dans
+l'historique git.
 
 ## Ce qui n'a pas sa place ici
 
