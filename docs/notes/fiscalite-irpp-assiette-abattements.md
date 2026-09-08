@@ -1443,9 +1443,17 @@ n° 2013-54 est `loi_2013_54_2013.md`.
 
 ### F.2 Sa portée réelle — la limite qui compte
 
-**Le texte intégral n'est disponible qu'à partir de 2000.** Avant, le scraping n'a récupéré que
-l'habillage du site : les fichiers antérieurs font 61 à 65 lignes en moyenne, contre 85 à 1 500
-ensuite, et ne contiennent que le titre du texte.
+**Le CORPS du texte n'est disponible qu'à partir de 2000.** Avant, le scraping n'a récupéré que
+l'habillage du site plus le titre : les fichiers antérieurs font 61 à 65 lignes, contre 85 à
+1 500 ensuite.
+
+> **Correction apportée après coup.** Cette section a d'abord affirmé que les fichiers pré-2000
+> ne contenaient « que l'habillage ». C'est inexact : ils portent l'**intitulé arabe intégral**
+> à la ligne 39, et 15 893 titres sur 16 958 sont extractibles (93,7 %). Ce qui manque avant
+> 2000, c'est le corps du texte et la version française, pas l'identification — le miroir reste
+> donc utilisable comme index thématique sur toute la période. En revanche les champs
+> `السنة` / `العدد` / `التاريخ` y sont des libellés nus, sans valeurs : la date doit venir de
+> `jort_cache.date_signature`. Voir `prestations-sociales-plan.md` § 3.2.
 
 | Années | Fichiers | Lignes en moyenne | Exploitable |
 |---|---|---|---|
