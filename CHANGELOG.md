@@ -1,5 +1,29 @@
 # Changelog
 
+## [1.11.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.10.0...v1.11.0) (2026-09-08)
+
+
+### ✨ Nouveautés
+
+* **fiscalite:** documente l'assiette de l'IRPP par catégorie de revenus ([3c4c5a8](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/3c4c5a814dc69c9fe25c1ba10d3fcb78c6115a62))
+* **fiscalite:** génère les barèmes de l'IRPP depuis openfisca-tunisia ([48e958f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/48e958ff8a3cdb705cd73a2e15628c307ad3413b))
+* **fiscalite:** génère tous les tableaux de paramètres depuis openfisca-tunisia ([451a946](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/451a94628142884cb144252eb6fc2ae01b0b8eac))
+* **glossaire:** restreint l'annexe de chaque livre aux notions qu'il utilise ([864698c](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/864698ca5a62acd207b82ccdcc9fd93f031030ab))
+* **glossaire:** verse les notions de l'IRPP et branche l'annexe du livre fiscalité ([5524401](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/5524401ea6d698c657a787411193e56160e6e944))
+* **precis:** expose le PDF de chaque livre depuis sa page web ([e3c4b63](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e3c4b638435d21505a0064dea363021eecabf76d))
+
+
+### 📝 Documentation
+
+* **biblio:** crée les vingt références de la section assiette ([9294c10](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/9294c10667844db1100e27a93506c77f5258d15f))
+* **build:** ajoute une aide et documente le piège du code de retour ([5094111](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/50941110300e62aa815a763063c655f09707fb98))
+* **fiscalite:** réécrit la section IRPP en la sourçant sur le JORT ([71bb6c8](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/71bb6c8ad2189d25835a24034d253677d4a22720))
+* **fiscalite:** retire l'appréciation attribuée sur la progressivité ([0759468](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/0759468234db26aefadc08923d14ab57d8d2c17a))
+* **notes:** conserve l'analyse du rapport INS et ses figures à produire ([a8e4a3f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/a8e4a3f07b8ef0263815356cdbcc98d5a2ab829c))
+* **notes:** consigne le contrôle croisé sur les millésimes du code ([bdb9b97](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/bdb9b97cc4bd884a0078a783e4aa1f9259ab2baa))
+* **notes:** exploite le miroir iort.tn pour les textes 2000-2011 ([040d5fe](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/040d5fe0ed0b5998759e78d412dd2878ed44d4f0))
+* **notes:** plan de travail du livre « Prestations sociales » ([5569e8d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/5569e8d9d91ea9d94c42e146e6c25247171c8ce6))
+
 ## [1.10.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.9.0...v1.10.0) (2026-08-27)
 
 
