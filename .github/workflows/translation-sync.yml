@@ -28,6 +28,11 @@ on:
         description: "Fichiers FR à retraduire (séparés par des espaces). Vide = tous les .qmd FR (hors _glossaire, généré)."
         required: false
         default: ""
+      traduction_complete:
+        description: "Repartir de zéro au lieu de mettre à jour la traduction existante. À n'employer que sur un fichier dont la traduction a trop décroché : les corrections faites à la main sur l'arabe seul seront perdues."
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   translate:
@@ -83,6 +88,7 @@ jobs:
         if: steps.changed-files.outputs.files != ''
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TRADUCTION_COMPLETE: ${{ github.event.inputs.traduction_complete == 'true' && '1' || '0' }}
         run: |
           if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
             # base == head → diff vide. Le script part alors de la traduction

@@ -119,6 +119,26 @@ def main():
                 
         diff_text = get_git_diff(base_sha, head_sha, file_path)
         
+        # Retraduction complète, demandée explicitement : on ignore la traduction
+        # existante. C'est le recours quand une traduction a trop décroché pour être
+        # rattrapée par mise à jour. Le modèle, à qui l'on demande de « conserver
+        # exactement la formulation de l'ancienne traduction partout où le sens n'a
+        # pas changé », préserve alors une cible bien plus courte que sa source au
+        # lieu de la compléter : le chapitre Fiscalité arabe est resté à 105 lignes
+        # contre 580 en français, quinze appels de tableaux et onze numéros de textes
+        # en moins. Aucune consigne supplémentaire ne corrige cela de façon fiable ;
+        # seul le départ de zéro le fait.
+        #
+        # Le prix est réel et assumé : les corrections faites à la main sur la seule
+        # langue cible sont perdues. D'où le caractère explicite de l'option — jamais
+        # de retraduction complète par défaut.
+        if os.environ.get("TRADUCTION_COMPLETE") == "1":
+            if old_target_text:
+                print(f"  {file_path} : retraduction complète demandée, "
+                      f"l'ancienne traduction ({len(old_target_text.splitlines())} lignes) "
+                      "est ignorée.")
+            old_target_text = ""
+
         # Dès qu'une traduction existe, on part d'elle — même sans diff.
         # Retraduire de zéro un fichier déjà traduit EFFACE les corrections faites
         # à la main sur la seule langue cible, qui sont légitimes et courantes
