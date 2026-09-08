@@ -291,3 +291,67 @@ une absence de droit.
 Deux programmes de la typologie officielle — **soutien à l'emploi** et **amélioration des
 conditions de vie** — restent hors du plan. Ils seront mentionnés dans le chapeau comme relevant
 du périmètre annoncé mais non couverts, plutôt que passés sous silence.
+
+---
+
+## 9. Les deux autres familles de programmes — premier repérage
+
+La typologie du ministère des Affaires sociales, reprise dans le chapeau du livre, distingue
+trois groupes. Le plan ci-dessus n'en traite qu'un. Voici ce que la base `jort_cache` établit
+sur les deux autres, à titre de repérage — aucun texte n'a encore été lu.
+
+### 9.1 Le soutien à l'emploi et la création de sources de revenus
+
+Deux instruments distincts, de deux époques.
+
+**Le Fonds national de l'emploi**, dit « fonds 21-21 ». Créé par les **articles 13 et 14 de la
+loi n° 99-101 du 31 décembre 1999** portant loi de finances pour 2000 — donc, comme le PNAFN, par
+une loi de finances et non par une loi propre. Ses programmes sont fixés par le **décret
+n° 2009-349 du 9 février 2009**, dix ans plus tard, puis modifiés à un rythme soutenu : décrets
+2009-1052, 2010-87, 2011-1, 2011-98, 2011-621. Le **décret-loi n° 2011-16 du 26 mars 2011**, pris
+dans les semaines suivant la révolution, le refond. Dix-sept textes sont indexés sous ce mot-clé.
+
+**Le microcrédit**, adossé à la **Banque tunisienne de solidarité** (loi n° 97-87 du 29 décembre
+1997 autorisant l'État à souscrire à son capital, augmenté par la loi n° 2000-45). Le régime
+juridique du microcrédit associatif est posé par la **loi organique n° 99-67 du 15 juillet 1999**,
+complétée le même jour par la **loi n° 99-70** sur ses dispositions fiscales, et l'arrêté du
+27 août 1999 en fixe le montant maximum.
+
+À rattacher : le **Fonds de solidarité nationale** (« 26-26 »), dont la contribution est organisée
+par le décret n° 96-631 du 15 avril 1996 et les lois de finances 1993, 1996 et 1998.
+
+### 9.2 L'amélioration des conditions de vie
+
+Le programme identifiable est le **PNRLR**, programme national de résorption des logements
+rudimentaires, institué par le **décret n° 86-438 du 12 avril 1986**. L'arrêté du ministre de
+l'Intérieur du 17 avril 1986 fixe les montants des subventions, la **loi n° 86-47 du 7 juin 1986**
+institue une contribution destinée à le financer, et le décret n° 87-709 le modifie l'année
+suivante.
+
+### 9.3 Le fait que ce repérage met au jour
+
+**Les trois familles naissent la même année, 1986, et de la même cause.** Le PNRLR est institué
+en **avril 1986**, la première trace budgétaire du PNAFN est dans la **loi de finances
+rectificative de septembre 1986**. Le plan d'ajustement structurel n'a donc pas produit un
+programme d'assistance mais un **dispositif à trois branches** : le transfert monétaire, le
+logement, et — plus tard, avec le fonds de solidarité de 1996 puis le fonds de l'emploi de 1999 —
+le revenu d'activité.
+
+La typologie en trois groupes que le livre reprend n'est donc pas une commodité administrative :
+c'est la trace d'une architecture voulue. Cela mérite d'être dit dans la présentation générale,
+même si les deux dernières familles ne sont pas traitées au fond.
+
+**Second constat, récurrent** : comme le PNAFN, le Fonds national de l'emploi est créé **par une
+loi de finances**, et son contenu n'est fixé par décret que dix ans après. La création par voie
+budgétaire n'est donc pas une singularité du PNAFN mais un mode de faire.
+
+### 9.4 Ce que cela change au plan
+
+Rien sur le périmètre rédactionnel : ces deux familles restent hors du chapitre. Mais la
+**présentation générale doit porter ce constat de naissance commune**, avec ses textes, plutôt
+que de se contenter d'énumérer la typologie. Et la frontière doit être énoncée pour ce qu'elle
+est — un choix de découpage — et non laissée à deviner.
+
+Si l'on décidait plus tard de les couvrir, la matière existe : dix-sept textes pour le fonds de
+l'emploi, une dizaine pour le microcrédit, autant pour le PNRLR, tous postérieurs à 1986 et donc
+en partie dans le miroir iort.tn pour ceux d'après 2000.
