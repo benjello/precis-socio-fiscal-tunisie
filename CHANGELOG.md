@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.13.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.12.0...v1.13.0) (2026-09-08)
+
+
+### ✨ Nouveautés
+
+* **ci:** permet une retraduction complète, sur demande explicite ([d3a143f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/d3a143f56ffc94cbfea7b546a5ad69f1eef9de05))
+* **tables:** génère les tableaux de la fiscalité dans les deux langues ([e84f44e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e84f44e1072f598d26889b8c39638bc1c28db09a))
+* **tables:** génère les tableaux de paramètres dans les deux langues ([e1a3cc3](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e1a3cc3950e69a3aa97ac6b231492ccdaa6c1322))
+
+
+### 🐛 Corrections de bugs
+
+* **ar:** retire une ancre de glossaire dupliquée ([9a971dd](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/9a971dd8e65fc85cd587793d35a7e5f7c7100d3e))
+* **ci:** n'envoie plus les glossaires générés à la traduction ([3220083](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/32200833d0e4de0d174d49f8f9b562ee99bdd961))
+
 ## [1.12.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.11.0...v1.12.0) (2026-09-08)
 
 
