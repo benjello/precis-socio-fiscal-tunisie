@@ -11,6 +11,7 @@ book:
   repo-subdir: precis/fr/retraites
   repo-branch: master
   repo-actions: [edit, issue]
+  downloads: [pdf]
   chapters:
     - index.qmd
     - _secteur_public.qmd
