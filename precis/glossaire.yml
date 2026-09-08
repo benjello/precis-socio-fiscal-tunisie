@@ -909,8 +909,8 @@ entries:
   - id: css
     acronyme: CSS
     statut: valide
-    references: [loi2017-66-lf2018]
-    source_definition: {ref: loi2017-66-lf2018, locator: "art. 53"}
+    references: [lf-2018]
+    source_definition: {ref: lf-2018, locator: "art. 53"}
     voir_aussi: [irpp, cotisations-sociales, retenue-a-la-source]
     fr:
       terme: Contribution sociale de solidarité

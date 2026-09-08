@@ -673,46 +673,42 @@ d'assistance portent des références apocryphes. Les tableaux devront être ré
 de paramètres décrite au §2.1 de docs/notes/prestations-contributif.md et au §10 de
 docs/notes/prestations-assistance.md. -->
 
-<!-- TODO (bibliographe) : clés effectivement citées par ce chapitre et NON résolues par la
-bibliographie du livre (references.json local + ../references.json + ../references.bib).
-Les entrées CSL-JSON correspondantes sont prêtes au §12.2 de docs/notes/prestations-contributif.md
-(29 entrées) et au §8.2 de docs/notes/prestations-assistance.md (32 entrées), avec URL pist.tn
-vérifiées, numéro de fascicule et page.
+<!-- FAIT (bibliographe, 8 septembre 2026) : les 63 clés citées et non résolues le sont
+désormais toutes. Rendu du livre : 65 citations, 65 entrées de bibliographie, zéro avertissement
+citeproc « citation not found ».
 
-Bloc contributif : loi60-30, loi72-2, loi74-41, decret74-463, loi75-82, loi80-36, loi81-6,
-loi86-75, loi86-86, loi88-38, loi88-39, loi89-73, decret93-308, loi94-28, loi94-88, loi57-73, decret95-114,
-decret95-1166, decret89-107, loi95-56, loi96-65, loi96-101, decret96-1906, loi97-58, loi98-91, loi2002-32, loi2002-104, loi2004-71, decret2007-1366, loi2024-44,
-decret-loi2024-4, lf-2025.
+- 59 entrées créées dans precis/fr/prestations_sociales/references.json, reprises du §12.2 de
+  docs/notes/prestations-contributif.md (28 sur 29) et du §8.2 de
+  docs/notes/prestations-assistance.md (31 sur 32), avec `note` normalisée
+  (« citation-key: <clé> » en première ligne, prose à partir de la deuxième).
+- Les quatre clés partagées (loi60-30, loi2004-71, loi95-56, lf-2025) ont été PROMUES dans
+  precis/fr/references.json et RETIRÉES de precis/fr/remunerations_publiques/references.json et
+  de precis/fr/fiscalite/references.json : pas de doublon. Les quatre livres (prestations
+  sociales, rémunérations publiques, fiscalité, retraites) chargent tous ../references.json et
+  rendent sans citation non résolue après l'opération. Les mentions « contenu non lu » de
+  loi2004-71 et loi95-56 ont été retirées, la date d'effet du 1er janvier 1996 (art. 58) ajoutée
+  à loi95-56, la pagination 1602-1613 et le découpage en articles à loi60-30, et le renvoi à
+  l'article 17 (pp. 6420-6421 de l'édition arabe) à lf-2025.
+- loi-amen-social-2019 (precis/fr/references.json) a reçu les métadonnées de loi-org-2019-10-amen
+  (JORT n° 11 du 5 février 2019, pp. 277-279) ; aucun doublon n'a été créé.
+- La pièce jointe Zotero résiduelle 23975222/EZEBV8GK a été retirée du references.json local.
+- Vérification des URL : les 59 entrées pointent 52 fascicules distincts (sept fascicules
+  portent deux textes ou plus), tous téléchargés sur pist.tn (curl -k). Tous répondent 200 en
+  application/pdf, aucun n'est le HTML de 289 octets du 404, et aucun n'est l'édition arabe :
+  30 fascicules ont une couche texte en caractères latins, et les 22 autres (scannés d'avant
+  1994, plus les JORT 2002 et 2005 dont la couche texte est défectueuse) ont été océrisés en
+  première page — tous portent la mention « traduction française » ou l'en-tête français du
+  Journal officiel.
 
-Bloc assistance : loi-86-83-lfr-1986, arrete-1987-01-06-financement-pnafn, loi-87-29-amg,
-loi-87-83-lf-1988, decret-88-175-livrets-amg, arrete-1988-02-17-droit-affiliation-amg,
-loi-90-111-lf-1991, arrete-1997-09-30-personnes-agees, decret-98-409-amg2, decret-98-1812-amg1,
-decret-2005-2886-amg2-ascendants, decret-2012-2521-amg1-pnafn, decret-2012-2522-amg2-commissions,
-decret-2014-1526-banque-donnees, decret-gouv-2020-317-amen, arrete-2020-05-19-scoring,
-arrete-2020-05-19-transferts, arrete-2020-05-19-appui-occasionnel, arrete-2021-08-20-aides-covid,
-decret-loi-2022-8-allocation-familiale, arrete-2022-04-01-transferts,
-arrete-2022-04-01-allocation-familiale, decret-2022-715-autonomisation, decret-2022-919-soins-amen,
-arrete-2022-12-08-appui-occasionnel, arrete-2023-04-03-transferts, arrete-2024-02-28-transferts,
-arrete-2024-07-10-allocation-pauvres, arrete-2025-01-29-transferts, arrete-2025-07-30-gluten,
-arrete-2025-08-29-allocation-pauvres.
-
-Cinq remarques. (1) loi60-30, loi2004-71 et loi95-56 existent dans
-precis/fr/remunerations_publiques/references.json, et lf-2025 dans
-precis/fr/fiscalite/references.json : elles ne résolvent PAS depuis ce livre, dont le _quarto.yml
-ne charge que references.json, ../references.json et ../references.bib. Il faut les rendre
-accessibles depuis ce livre plutôt que les dupliquer, en tranchant si le partage se fait par
-promotion dans precis/fr/references.json ou par ajout au bibliography du _quarto.yml. Les notes
-de loi2004-71 et loi95-56 portent « contenu non lu » : le texte intégral a été dépouillé depuis,
-la note est à corriger, et la date d'effet du 1er janvier 1996 (art. 58) à ajouter pour loi95-56.
-(2) loi-amen-social-2019 existe dans precis/fr/references.json et est employée telle quelle dans
-ce chapitre. Le dossier assistance propose une entrée loi-org-2019-10-amen avec des métadonnées
-plus complètes (JORT n° 11 du 5 février 2019, pp. 277-279) : les verser dans l'entrée existante
-plutôt que créer un doublon. (3) unicef2020 est désormais citée pour la première fois. La pièce
-jointe Zotero résiduelle 23975222/EZEBV8GK reste à retirer de references.json. (4) La clé circulaire-42-1996, proposée par le dossier contributif, n'est PAS citée par ce
-chapitre : la circulaire n'a pas été lue et n'est mentionnée qu'en TODO. Ne la créer que si le
-texte est établi. (5) Ces clés
-restent provisoires tant qu'elles ne sont pas versées dans Zotero, sync_biblio.py faisant
-autorité en sens Zotero vers references.json ; à porter sur docs/notes/biblio-a-rapatrier.md. -->
+RESTE À FAIRE. (1) circulaire-42-1996 n'a pas été créée : elle n'est pas citée par ce chapitre et
+la circulaire n'a pas été lue. (2) Les 63 clés sont PROVISOIRES : sync_biblio.py est en lecture
+seule (Zotero vers references.json) et les écrasera au prochain sync tant qu'elles ne sont pas
+montées dans le groupe Zotero 6529669 ; elles sont listées dans docs/notes/biblio-a-rapatrier.md.
+Le livre prestations_sociales n'est de surcroît pas dans COLLECTION_TO_BOOK de
+scripts/sync_biblio.py : une collection Zotero dédiée est à créer, ou les items à ranger en
+« Commun ». (3) Le pendant arabe precis/ar/prestations_sociales/references.json n'a PAS été
+alimenté (hors périmètre de cette passe) : il demande les mêmes 63 entrées avec l'URL du champ
+pdf_ar du même enregistrement de jort_cache.db, jamais déduite de l'URL française. -->
 
 <!-- TODO (terminologue) : ce livre n'est pas dans le périmètre de scripts/build_glossary.py
 (BOOKS = ["remunerations_publiques", "fiscalite"]) et son _quarto.yml ne liste pas d'annexe de

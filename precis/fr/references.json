@@ -19,10 +19,23 @@
     {
       "id": "loi-amen-social-2019",
       "type": "legislation",
-      "note": "citation-key: loi-amen-social-2019",
+      "note": "citation-key: loi-amen-social-2019\nJORT n° 11 du 5 février 2019, pp. 277-279. Loi organique n° 2019-10 du 30 janvier 2019 relative au programme AMEN SOCIAL. Métadonnées complétées depuis le dossier « assistance » (fascicule vérifié, édition française). Provisoire : à rapatrier dans Zotero.",
       "title": "Loi organique n°2019-10 du 30 janvier 2019 relative à la création du programme AMEN SOCIAL",
       "URL": "https://www.pist.tn/jort/2019/2019F/Jo0112019.pdf",
       "issued": {
+        "date-parts": [
+          [
+            2019,
+            2,
+            5
+          ]
+        ]
+      },
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "11",
+      "page": "277-279",
+      "authority": "République tunisienne",
+      "event-date": {
         "date-parts": [
           [
             2019,
@@ -31,6 +44,74 @@
           ]
         ]
       }
+    },
+    {
+      "id": "loi60-30",
+      "type": "legislation",
+      "title": "Loi n°60-30 du 14 décembre 1960, relative à l'organisation des régimes de sécurité sociale",
+      "note": "citation-key: loi60-30\nJORT n° 57 des 16-20 décembre 1960, pp. 1602-1613. Base légale de la CNSS (régime des salariés non agricoles). Porte les articles 51 à 67 (prestations familiales) et 68 à 98 (assurances sociales : maladie, maternité, décès). Provisoire : à rapatrier dans Zotero.",
+      "URL": "https://www.pist.tn/jort/1960/1960F/Jo05760.pdf",
+      "issued": {
+        "date-parts": [
+          [
+            1960,
+            12,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "id": "loi2004-71",
+      "type": "legislation",
+      "title": "Loi n°2004-71 du 2 août 2004, portant institution d'un régime d'assurance maladie",
+      "note": "citation-key: loi2004-71\nJORT n° 63 du 6 août 2004, pp. 2228-2230. Institue le régime d'assurance maladie géré par la CNAM, commun aux affiliés CNRPS et CNSS. Texte français intégral dépouillé. Provisoire : à rapatrier dans Zotero.",
+      "issued": {
+        "date-parts": [
+          [
+            2004,
+            8,
+            2
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2004/2004F/Jo0632004.pdf"
+    },
+    {
+      "id": "loi95-56",
+      "type": "legislation",
+      "title": "Loi n°95-56 du 28 juin 1995, portant régime particulier de réparation des préjudices résultant des accidents du travail et des maladies professionnelles dans le secteur public",
+      "note": "citation-key: loi95-56\nJORT n° 53 du 4 juillet 1995. Régime particulier de réparation des accidents du travail et des maladies professionnelles dans le secteur public. Date d'effet : 1er janvier 1996 (art. 58). Champ d'application fixé par décret (décret n° 95-2487, modifié par 2000-908, 2001-1446, 2006-2777, 2012-2586), chaîne non vérifiée texte par texte. Texte français intégral dépouillé. Provisoire : à rapatrier dans Zotero.",
+      "issued": {
+        "date-parts": [
+          [
+            1995,
+            6,
+            28
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1995/1995F/Jo05395.pdf"
+    },
+    {
+      "id": "lf-2025",
+      "type": "legislation",
+      "title": "Loi n° 2024-48 du 9 décembre 2024, portant loi de finances pour l'année 2025",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "149",
+      "volume": "167",
+      "page": "6418",
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            9
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2024/2024A/Ja1492024.pdf",
+      "note": "citation-key: lf-2025\nJORT n° 149 du 10 décembre 2024, tome 167. ATTENTION, DEUX PAGINATIONS COEXISTENT et les deux sont exactes : l'article 36 (barème applicable aux revenus réalisés à compter du 1er janvier 2025) est en PAGE 3429-3430 DE L'ÉDITION FRANÇAISE et en PAGE 6429 DE L'ÉDITION ARABE. Toute citation doit préciser l'édition. La notice de jort_cache.db, qui donne 6429, décrit l'édition arabe. URL pointée sur l'édition arabe faute d'édition française référencée ; ne pas « corriger » vers une URL en 2024F. URL vérifiée (HTTP 200).\nArticle 17, pp. 6420-6421 de l'édition arabe : création du fonds d'assurance contre la perte de postes de travail (cité par le livre « Prestations sociales »)."
     }
   ]
 }
