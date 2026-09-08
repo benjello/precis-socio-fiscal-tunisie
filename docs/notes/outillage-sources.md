@@ -40,6 +40,20 @@ PNAFN, aides aux personnes âgées, montants des subventions.
 
   → Pour un `LIKE`, chercher **sans accents**. Pour le FTS, peu importe.
 
+  **Cas réel, qui a coûté cher.** La recherche du texte fondateur du programme national d'aide
+  aux familles nécessiteuses a d'abord conclu qu'il n'existait aucune mention du programme au
+  JORT. Le compte exact :
+
+  | Requête | Résultats |
+  |---|---:|
+  | `titre like '%familles nécessiteuses%'` | **0** |
+  | `titre like '%familles necessiteuses%'` | **4** |
+  | `textes_fts match 'necessiteuses'` | **6** |
+
+  Le faux négatif a été propagé dans une note de plan puis dans le brief d'un agent, avant
+  d'être rattrapé. **Toujours doubler un `LIKE` par une requête FTS** avant de conclure à une
+  absence.
+
 **d) Quelques `jort_annee` aberrantes** : 150, 199, 201, 975, 1070, 1075, 1775, 1870. Filtrer par
 `jort_annee between 1956 and 2026`.
 
@@ -85,6 +99,12 @@ curl -sk -o /dev/null -w "%{http_code} %{content_type} %{size_download}\n" -L --
 | Fascicule réel | `200 application/pdf 2277815` |
 | Absent | `404 text/html; charset=iso-8859-1 289` |
 
+**Le contrôle par taille ne suffit pas.** `2025F/Jo1482025.pdf` et `2025F/Jo0882025.pdf`
+répondent 200 avec plusieurs mégaoctets en `application/pdf` — et **servent le fascicule
+arabe**. Une URL en « F » n'est donc une garantie ni par son code, ni par son type, ni par son
+poids : il faut **ouvrir le fichier et lire son contenu** avant de citer une pagination
+française.
+
 Le 404 fait **exactement 289 octets de HTML**. Et une URL en « F » peut servir un fascicule
 **arabe** : c'est arrivé pour le JORT n° 148 de 2025. Le champ `pdf_fr` existe pour le fascicule
 n° 141 de 2022 alors que le fichier répond 404.
@@ -95,6 +115,12 @@ corpus local.
 
 **Convention d'URL** : `/jort/<année>/<année>{F|A}/{Jo|Ja}<n° sur 3 chiffres><année sur 2 chiffres
 jusqu'en 1999, 4 ensuite>.pdf`.
+
+## 3 bis. Les dates de `jort_cache` ne font pas foi contre le fascicule
+
+Sur 29 textes contrôlés lors du dossier « assistance sociale », **8 dates de publication de la
+base divergent du pied de page du fascicule**. Le pied de page fait foi. Vérifier dès qu'une
+date de publication est citée dans le précis.
 
 ## 4. Deux paginations coexistent
 
