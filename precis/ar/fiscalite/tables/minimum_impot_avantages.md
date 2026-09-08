@@ -1,7 +1,7 @@
 <!-- Généré par scripts/generate_bareme_tables.py — ne pas éditer à la main.
      Paramètres : parameters/impot_revenu/minimum_impot/taux.yaml -->
 
-| Années de revenus | Minimum d'impôt | Texte |
+| سنوات المداخيل | الضريبة الدنيا | النصّ |
 |---|---:|---|
 | 1990 → 1998 | 0 % | — |
 | 1999 → 2016 | 60 % | [@lf-1998, art. 62] |

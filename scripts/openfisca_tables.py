@@ -229,12 +229,19 @@ def formate_taux_effectif(taux: float | None) -> str:
     return f"{tronque:.2f}".replace(".", ",") + " %"
 
 
-def libelle_tranche(seuil: float, seuil_suivant: float | None) -> str:
-    """'0 à 1 500', '1 500,001 à 5 000', 'au-delà de 50 000'."""
+BORNES = {
+    "fr": ("{bas} à {haut}", "au-delà de {bas}"),
+    "ar": ("من {bas} إلى {haut}", "ما يفوق {bas}"),
+}
+
+
+def libelle_tranche(seuil: float, seuil_suivant: float | None, langue: str = "fr") -> str:
+    """'0 à 1 500', '1 500,001 à 5 000', 'au-delà de 50 000' ; en arabe 'من … إلى …'."""
+    intervalle, au_dela = BORNES.get(langue, BORNES["fr"])
     if seuil_suivant is None:
-        return f"au-delà de {formate_dinars(seuil)}"
+        return au_dela.format(bas=formate_dinars(seuil))
     bas = formate_dinars(seuil) if seuil == 0 else formate_dinars(seuil + 0.001)
-    return f"{bas} à {formate_dinars(seuil_suivant)}"
+    return intervalle.format(bas=bas, haut=formate_dinars(seuil_suivant))
 
 
 # ------------------------------------------------------- séries de valeurs datées
@@ -309,6 +316,7 @@ def tableau_evolution(
     cles: dict[str, str] | None = None,
     colonne_periode: str = "Années de revenus",
     derniere_annee: str = "2026",
+    colonne_texte: str = "Texte",
 ) -> "pd.DataFrame | None":
     """Plusieurs paramètres côte à côte, une ligne par période homogène.
 
@@ -359,7 +367,7 @@ def tableau_evolution(
                         break
                 if texte:
                     break
-        ligne["Texte"] = texte or "—"
+        ligne[colonne_texte] = texte or "—"
         lignes.append(ligne)
     return pd.DataFrame(lignes)
 
@@ -372,6 +380,9 @@ def tableau_bareme(
     date: datetime.date,
     colonne_tranche: str = "Tranche de revenu annuel net (dinars)",
     avec_taux_effectif: bool = False,
+    langue: str = "fr",
+    colonne_taux: str = "Taux de la tranche",
+    colonne_taux_effectif: str = "Taux d’imposition du revenu global à la limite supérieure",
 ) -> "pd.DataFrame | None":
     """Barème en vigueur à `date`, sous forme de DataFrame prêt à publier."""
     if pd is None:
@@ -384,13 +395,11 @@ def tableau_bareme(
     for indice, (seuil, taux) in enumerate(tranches):
         suivant = tranches[indice + 1][0] if indice + 1 < len(tranches) else None
         ligne = {
-            colonne_tranche: libelle_tranche(seuil, suivant),
-            "Taux de la tranche": formate_taux(taux),
+            colonne_tranche: libelle_tranche(seuil, suivant, langue),
+            colonne_taux: formate_taux(taux),
         }
         if avec_taux_effectif:
-            ligne["Taux d’imposition du revenu global à la limite supérieure"] = (
-                formate_taux_effectif(effectifs[indice])
-            )
+            ligne[colonne_taux_effectif] = formate_taux_effectif(effectifs[indice])
         lignes.append(ligne)
     return pd.DataFrame(lignes)
 
