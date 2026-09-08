@@ -11,6 +11,7 @@ The script maps Zotero collections to book directories:
     Collection "Fiscalité"            → precis/{lang}/fiscalite/references.json
     Collection "Retraites"            → precis/{lang}/retraites/references.json
     Collection "Prestations sociales" → precis/{lang}/prestations_sociales/references.json
+    Collection "Rémunérations publiques" → precis/{lang}/remunerations_publiques/references.json
 
 Items not in any collection (or in "Commun") go to:
     precis/{lang}/references.json     (shared across books)
@@ -35,6 +36,8 @@ COLLECTION_TO_BOOK = {
     "fiscalite": "fiscalite",
     "retraites": "retraites",
     "prestations sociales": "prestations_sociales",
+    "rémunérations publiques": "remunerations_publiques",
+    "remunerations publiques": "remunerations_publiques",
 }
 
 
