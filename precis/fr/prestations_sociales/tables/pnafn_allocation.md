@@ -10,4 +10,4 @@
 | 1^er^ juillet 2013 | 110 D | — | **non établie** |
 | 1^er^ juillet 2014 | 120 D | — | **non établie** |
 | 1^er^ janvier 2015 | 150 D | — | **non établie** |
-| 1^er^ avril 2018 | 180 D | Montant constaté à 180 dinars par l'arrêté conjoint du ministre des affaires sociales et de la ministre des finances du 10 juillet 2024 | texte lu |
+| 1^er^ avril 2018 | 180 D | [@arrete-2024-07-10-allocation-pauvres, art. 1] | texte lu |

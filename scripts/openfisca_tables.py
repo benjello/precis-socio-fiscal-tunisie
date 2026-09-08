@@ -453,30 +453,53 @@ def lit_markdown_statique(chemin: str | Path) -> "pd.DataFrame | None":
 # 1er octobre 1994. Réduire ces dates à l'année les rendrait fausses. D'où les fonctions
 # ci-dessous, qui rendent la date d'effet au jour près et exposent l'attestation.
 
-MOIS_FR = [
-    "janvier", "février", "mars", "avril", "mai", "juin",
-    "juillet", "août", "septembre", "octobre", "novembre", "décembre",
-]
+MOIS = {
+    "fr": ["janvier", "février", "mars", "avril", "mai", "juin",
+           "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+    # Noms de mois en usage en Tunisie, hérités du calendrier grégorien tel qu'il est
+    # imprimé au Journal officiel arabe — et non les noms du Machrek (كانون الثاني, …),
+    # qui dérouteraient un lecteur tunisien.
+    "ar": ["جانفي", "فيفري", "مارس", "أفريل", "ماي", "جوان",
+           "جويلية", "أوت", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
+}
 
 
-def formate_date_fr(date_iso: str) -> str:
-    """« 1980-05-01 » -> « 1^er^ mai 1980 » (exposant Pandoc pour l'ordinal)."""
+def formate_date(date_iso: str, langue: str = "fr") -> str:
+    """« 1980-05-01 » -> « 1^er^ mai 1980 » en français, « 1 ماي 1980 » en arabe.
+
+    L'ordinal en exposant est une convention typographique française ; l'arabe
+    n'ordinalise pas le premier jour du mois.
+    """
     try:
         annee, mois, jour = (int(x) for x in str(date_iso)[:10].split("-"))
     except ValueError:
         return str(date_iso)
+    if langue == "ar":
+        return f"{jour} {MOIS['ar'][mois - 1]} {annee}"
     ordinal = "1^er^" if jour == 1 else str(jour)
-    return f"{ordinal} {MOIS_FR[mois - 1]} {annee}"
+    return f"{ordinal} {MOIS['fr'][mois - 1]} {annee}"
 
 
-def attestation(titre: str) -> str:
+def formate_date_fr(date_iso: str) -> str:
+    """Conservé pour compatibilité : `formate_date(date, "fr")`."""
+    return formate_date(date_iso, "fr")
+
+
+ATTESTATION = {
+    "fr": ("texte lu", "**non établie**"),
+    "ar": ("نصّ مقروء", "**غير ثابتة**"),
+}
+
+
+def attestation(titre: str, langue: str = "fr") -> str:
     """Niveau d'attestation d'une valeur, déduit de la présence d'une référence.
 
     Convention de lecture n° 3 du chapitre : une valeur que le paramètre ne rattache à
     aucun texte n'est pas présentée comme attestée. La colonne se calcule donc, elle ne
     se saisit pas — ajouter la référence au paramètre suffit à la faire basculer.
     """
-    return "texte lu" if titre else "**non établie**"
+    atteste, non_etabli = ATTESTATION.get(langue, ATTESTATION["fr"])
+    return atteste if titre else non_etabli
 
 
 def tableau_evolution_datee(
@@ -484,6 +507,9 @@ def tableau_evolution_datee(
     cles: dict[str, str] | None = None,
     colonne_periode: str = "Effet",
     avec_attestation: bool = False,
+    langue: str = "fr",
+    colonne_texte: str = "Texte",
+    colonne_attestation: str = "Attestation",
 ) -> "pd.DataFrame | None":
     """Comme `tableau_evolution`, mais une ligne par DATE D'EFFET rendue au jour près.
 
@@ -518,16 +544,16 @@ def tableau_evolution_datee(
 
     lignes = []
     for date in dates:
-        ligne = {colonne_periode: formate_date_fr(date)}
+        ligne = {colonne_periode: formate_date(date, langue)}
         for chemin, entete, formateur in specs:
             ligne[entete] = formateur(valeur_a(chemin, date))
         titre = titre_a(date)
         if cles and date in cles:
-            ligne["Texte"] = f"[@{cles[date]}]"
+            ligne[colonne_texte] = f"[@{cles[date]}]"
         else:
-            ligne["Texte"] = titre or "—"
+            ligne[colonne_texte] = titre or "—"
         if avec_attestation:
-            ligne["Attestation"] = attestation(titre)
+            ligne[colonne_attestation] = attestation(titre, langue)
         lignes.append(ligne)
     return pd.DataFrame(lignes)
 
@@ -536,6 +562,7 @@ def tableau_a_la_date(
     specs: list[tuple[str, str, Callable[[float | None], str]]],
     date: str,
     cles: dict[str, str] | None = None,
+    entetes: tuple[str, str, str] = ("Paramètre", "Valeur", "Texte"),
 ) -> "pd.DataFrame | None":
     """Rendu VERTICAL — un paramètre par ligne — d'un dispositif à millésime unique.
 
@@ -561,7 +588,7 @@ def tableau_a_la_date(
             texte = f"[@{cles[chemin]}]"
         else:
             texte = titre_retenu or "—"
-        lignes.append({"Paramètre": libelle, "Valeur": formateur(retenue), "Texte": texte})
+        lignes.append(dict(zip(entetes, (libelle, formateur(retenue), texte))))
     return pd.DataFrame(lignes)
 
 
