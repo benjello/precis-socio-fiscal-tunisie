@@ -1,5 +1,33 @@
 # Changelog
 
+## [1.12.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.11.0...v1.12.0) (2026-09-08)
+
+
+### ✨ Nouveautés
+
+* **glossaire:** ouvre le glossaire au livre Prestations sociales ([1be9579](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/1be9579dc401faf469cef772649e645bf4e40cd5))
+* **precis:** génère les tableaux des prestations depuis openfisca-tunisia ([c2748f4](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/c2748f421b86a60a9c9a7a8fbd6c330aec44cecc))
+* **prestations:** bascule sept tableaux sur les paramètres et répare la bibliographie ([bac014f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/bac014f7d02215e0f8bb336f7d24c99dcad650bd))
+* **prestations:** écrit le chapitre sur les prestations sociales ([85e5f85](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/85e5f8515677071678f12687026d45b0cde99e86))
+
+
+### 🐛 Corrections de bugs
+
+* **biblio:** aligne les bibliographies arabes sur les françaises ([19cf44a](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/19cf44a251af836b93cbecf09991cb7eed659c5d))
+* **precis:** résout les citations dans les tableaux de paramètres ([6d0a0e5](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/6d0a0e5f40bf918d9f8967480dd213612f33b5e4))
+
+
+### 📝 Documentation
+
+* **biblio:** crée les soixante-trois références du chapitre prestations ([13281cd](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/13281cdd52131a4227d791faaa33dd5384b4a46d))
+* **notes:** ajoute trois pièges observés sur cas réels ([08d63e4](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/08d63e4fdd36598ad4b4ad98569043bb255f603a))
+* **notes:** consigne l'outillage et les pièges de sources, vérifiés ([7bf9b38](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/7bf9b38c42cacd3d2eeedc241a83eec15d65217f))
+* **notes:** dossiers documentaires des prestations sociales ([2c8c4a7](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/2c8c4a79068e7cce3a5a31fae185f71660a4e8aa))
+* **notes:** index des notes de travail ([ef6e130](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/ef6e130eac7ff3bc42008978fc29c6d306ed7b76))
+* **notes:** repère les deux familles de programmes hors périmètre ([20e81e0](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/20e81e0eae948d0f366857abe9db85568c246109))
+* **notes:** supprime le tableau de travail des barèmes, périmé et risqué ([235f945](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/235f945226db5ffe5765410794baad9044755dba))
+* **notes:** tranche le périmètre du livre prestations sociales ([1aa1796](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/1aa1796c62f8331ed23d8b38d7b47de8cea0ed46))
+
 ## [1.11.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.10.0...v1.11.0) (2026-09-08)
 
 
