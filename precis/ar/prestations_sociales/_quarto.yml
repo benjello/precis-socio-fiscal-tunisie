@@ -17,6 +17,9 @@ book:
   chapters:
     - index.qmd
 
+  appendices:
+    - _glossaire.qmd
+
 language:
   toc-title-document: "المحتويات"
   toc-title-website: "المحتويات"

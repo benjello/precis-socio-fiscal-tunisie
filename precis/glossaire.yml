@@ -985,7 +985,7 @@ entries:
     acronyme: SMIG
     statut: valide
     references: []
-    voir_aussi: []
+    voir_aussi: [condition-de-ressources]
     fr:
       terme: Salaire minimum interprofessionnel garanti
       definition: >
@@ -1464,4 +1464,749 @@ entries:
         الضريبة عليها، حُدّد بـ25 % بالفقرة II من الفصل 26 من المجلة. ويرفعه
         الفصل 56 من قانون المالية لسنة 2026 تدريجيًّا إلى 30 % بالنسبة إلى
         مداخيل 2027 و40 % بالنسبة إلى 2028 و50 % بالنسبة إلى 2029.
+      synonymes: []
+
+  # ------------------------------------------------------------------ prestations
+  # Notions du livre « Prestations sociales ». Termes arabes repris des dossiers
+  # documentaires (docs/notes/prestations-contributif.md §11 et
+  # docs/notes/prestations-assistance.md §9), où chacun est rattaché à son texte.
+
+  - id: prestations-familiales
+    acronyme: null
+    statut: valide
+    references: [loi60-30, loi88-38]
+    source_definition: {ref: loi60-30, locator: "art. 51"}
+    voir_aussi: [allocation-familiale, majoration-salaire-unique, contribution-frais-creche, cnss]
+    fr:
+      terme: Prestations familiales
+      definition: >
+        Ensemble des trois prestations servies par les caisses au titre des enfants à
+        charge : l'allocation familiale, la majoration pour salaire unique et la
+        contribution aux frais de crèche. L'article 51 de la loi n° 60-30 en fixe la
+        liste ; leur ouverture suppose une affiliation et un droit ouvert, non une
+        condition de ressources.
+      synonymes: []
+    ar:
+      terme: المنح العائلية
+      definition: >
+        مجموع المنح الثلاث التي تسندها الصناديق بعنوان الأبناء المتكفَّل بهم: المنحة
+        العائلية ومنحة الأجر الوحيد والمساهمة في مصاريف رياض الأطفال. يضبط الفصل 51 من
+        القانون عدد 30 لسنة 1960 قائمتها، ويتوقّف فتح الحقّ فيها على الانخراط لا على شرط
+        الموارد.
+      synonymes: []
+
+  - id: allocation-familiale
+    acronyme: null
+    statut: valide
+    references: [loi60-30, loi75-82, loi86-75, loi88-38]
+    source_definition: {ref: loi60-30, locator: "art. 61"}
+    voir_aussi: [prestations-familiales, enfant-a-charge, allocation-familiale-non-contributive]
+    fr:
+      terme: Allocation familiale
+      definition: >
+        Prestation trimestrielle servie par rang d'enfant, calculée en pourcentage d'une
+        rémunération trimestrielle bornée. Le taux unique de 15 % de 1960 devient un
+        barème dégressif par rang en 1976, et le nombre de rangs servis passe de quatre
+        à trois en 1989.
+      synonymes: []
+    ar:
+      terme: المنحة العائلية
+      definition: >
+        منحة ثلاثية تُسند حسب رتبة الطفل وتُحتسب بنسبة مئوية من أجر ثلاثي محدود بسقف.
+        تحوّلت النسبة الموحّدة البالغة 15 % سنة 1960 إلى جدول تنازلي حسب الرتبة سنة
+        1976، وانخفض عدد الرتب المشمولة من أربع إلى ثلاث سنة 1989.
+      synonymes: []
+
+  - id: majoration-salaire-unique
+    acronyme: null
+    statut: valide
+    references: [loi80-36]
+    source_definition: {ref: loi80-36, locator: "art. 65 bis"}
+    voir_aussi: [prestations-familiales, allocation-familiale]
+    fr:
+      terme: Majoration pour salaire unique
+      definition: >
+        Majoration trimestrielle des prestations familiales, créée par la loi n° 80-36
+        avec effet au 1^er^ mai 1980. Trois conditions cumulatives : des enfants à
+        charge, un droit ouvert aux allocations familiales, et un conjoint n'exerçant
+        aucune activité professionnelle — c'est cette dernière qui donne au dispositif
+        son nom.
+      synonymes: []
+    ar:
+      terme: منحة الأجر الوحيد
+      definition: >
+        زيادة ثلاثية في المنح العائلية أحدثها القانون عدد 36 لسنة 1980 ابتداء من غرّة
+        ماي 1980. تُشترط فيها ثلاثة شروط مجتمعة: وجود أبناء متكفَّل بهم، وحقّ مفتوح في
+        المنح العائلية، وقرين لا يمارس أيّ نشاط مهني، وهو الشرط الذي أخذت منه المنحة
+        تسميتها.
+      synonymes: []
+
+  - id: contribution-frais-creche
+    acronyme: null
+    statut: valide
+    references: [loi94-88, decret95-114]
+    source_definition: {ref: loi94-88, locator: "art. 2-4"}
+    voir_aussi: [prestations-familiales, smig]
+    fr:
+      terme: Contribution aux frais de crèche
+      definition: >
+        Contribution mensuelle versée directement à la crèche au titre des enfants de
+        deux à trente-six mois des assurées sociales dont le revenu ne dépasse pas un
+        plafond exprimé en multiples du salaire minimum. C'est le seul dispositif du
+        bloc contributif dont le champ soit explicitement genré : la loi vise « les
+        assurées sociales », le décret « la mère bénéficiaire ».
+      synonymes: []
+    ar:
+      terme: المساهمة في مصاريف رياض الأطفال
+      definition: >
+        مساهمة شهرية تُدفع مباشرة إلى روضة الأطفال بعنوان أبناء المضمونات اجتماعيًّا
+        الذين تتراوح أعمارهم بين شهرين وستّة وثلاثين شهرًا، شرط ألّا يتجاوز دخل الأمّ
+        سقفًا محدّدًا بمضاعفات الأجر الأدنى. وهي الترتيب الوحيد في الصنف المساهماتي الذي
+        يقتصر ميدانه صراحة على النساء.
+      synonymes: []
+
+  - id: indemnite-journaliere
+    acronyme: null
+    statut: valide
+    references: [loi60-30, loi94-28]
+    source_definition: {ref: loi60-30, locator: "art. 77"}
+    voir_aussi: [carence, stage-cotisation, accident-du-travail, salaire-journalier-moyen]
+    fr:
+      terme: Indemnité journalière
+      definition: >
+        Revenu de remplacement versé par jour d'arrêt de travail, calculé en fraction du
+        salaire journalier moyen. Sa fraction et son délai de carence varient selon la
+        branche : maladie au titre de la loi n° 60-30, accident du travail au titre de
+        la loi n° 94-28, qui la porte aux deux tiers de la rémunération quotidienne
+        habituelle.
+      synonymes: []
+    ar:
+      terme: التعويض اليومي
+      definition: >
+        دخل تعويضي يُصرف عن كلّ يوم انقطاع عن العمل ويُحتسب بجزء من الأجر اليومي
+        المتوسّط. يختلف هذا الجزء وتختلف فترة الانتظار باختلاف الفرع: المرض بمقتضى
+        القانون عدد 30 لسنة 1960، وحوادث الشغل بمقتضى القانون عدد 28 لسنة 1994 الذي
+        يرفعه إلى ثلثي الأجر اليومي المعتاد.
+      synonymes: []
+
+  - id: carence
+    acronyme: null
+    statut: valide
+    references: [loi60-30, loi94-28]
+    source_definition: {ref: loi60-30, locator: "art. 72"}
+    voir_aussi: [indemnite-journaliere, stage-cotisation]
+    fr:
+      terme: Délai de carence
+      definition: >
+        Nombre de jours d'arrêt non indemnisés à l'ouverture du droit. Il est de vingt
+        jours en maladie ordinaire et de trois jours pour les affections de longue durée
+        sous la loi n° 60-30 ; de trois jours en accident du travail, sauf
+        hospitalisation ou gravité prouvée.
+      synonymes: []
+    ar:
+      terme: فترة الانتظار
+      definition: >
+        عدد أيّام الانقطاع غير المشمولة بالتعويض عند فتح الحقّ. وهي عشرون يومًا في المرض
+        العادي وثلاثة أيّام في الأمراض طويلة المدى بمقتضى القانون عدد 30 لسنة 1960،
+        وثلاثة أيّام في حوادث الشغل ما لم يقع الإيواء بالمستشفى أو تثبت الخطورة.
+      synonymes: []
+
+  - id: stage-cotisation
+    acronyme: null
+    statut: valide
+    references: [loi60-30, decret95-1166]
+    source_definition: {ref: loi60-30, locator: "art. 71 et 78"}
+    voir_aussi: [indemnite-journaliere, cotisations-sociales, carence]
+    fr:
+      terme: Stage de cotisation
+      definition: >
+        Durée minimale d'affiliation et de cotisation exigée avant qu'une prestation
+        puisse être servie. C'est le maillon qui distingue une prestation contributive
+        d'une prestation d'assistance : le droit s'achète par un passé de cotisations,
+        non par un niveau de ressources.
+      synonymes: []
+    ar:
+      terme: مدة الانخراط الدنيا
+      definition: >
+        المدّة الدنيا من الانخراط ودفع المساهمات المطلوبة قبل إمكان إسناد المنفعة. وهي
+        الحلقة التي تميّز المنفعة المساهماتية عن منفعة المساعدة: إذ يُكتسب الحقّ بماضٍ
+        من المساهمات لا بمستوى الموارد.
+      synonymes: []
+
+  - id: indemnite-de-deces
+    acronyme: null
+    statut: valide
+    references: [loi60-30]
+    source_definition: {ref: loi60-30, locator: "art. 83-87"}
+    voir_aussi: [capital-deces, ayant-droit]
+    fr:
+      terme: Indemnité de décès
+      definition: >
+        Somme versée aux ayants droit au décès du travailleur ou d'un membre de sa
+        famille, exprimée en multiples de l'indemnité journalière : cent vingt fois pour
+        le travailleur lui-même, et selon un barème dégressif par âge pour les autres
+        membres du foyer.
+      synonymes: []
+    ar:
+      terme: منحة الوفاة
+      definition: >
+        مبلغ يُسند لذوي الحقّ عند وفاة العامل أو أحد أفراد عائلته، ويُعبَّر عنه بمضاعفات
+        التعويض اليومي: مائة وعشرون مرّة بالنسبة إلى العامل نفسه، ووفق جدول تنازلي حسب
+        السنّ لبقية أفراد الأسرة.
+      synonymes: []
+
+  - id: capital-deces
+    acronyme: null
+    statut: valide
+    references: [decret93-308]
+    source_definition: {ref: decret93-308}
+    voir_aussi: [indemnite-de-deces, cnrps, ayant-droit]
+    fr:
+      terme: Capital-décès
+      definition: >
+        Équivalent du secteur public de l'indemnité de décès, servi par la Caisse
+        nationale de retraite et de prévoyance sociale. Il s'exprime en pourcentage de
+        la rémunération annuelle de référence, décroissant avec l'âge du retraité au
+        décès.
+      synonymes: []
+    ar:
+      terme: رأس مال الوفاة
+      definition: >
+        نظير منحة الوفاة في القطاع العام، يُسنده الصندوق الوطني للتقاعد والحيطة
+        الاجتماعية. ويُعبَّر عنه بنسبة مئوية من الأجر السنوي المرجعي تتناقص مع تقدّم سنّ
+        المتقاعد عند الوفاة.
+      synonymes: []
+
+  - id: accident-du-travail
+    acronyme: null
+    statut: valide
+    references: [loi94-28]
+    source_definition: {ref: loi94-28, locator: "art. 3"}
+    voir_aussi: [rente-accident-travail, indemnite-journaliere, cnam]
+    fr:
+      terme: Accident du travail
+      definition: >
+        Fait générateur de la branche de réparation régie par la loi n° 94-28 : soins
+        servis dès l'information de la caisse, indemnité journalière pendant
+        l'incapacité temporaire, puis rente ou capital en cas d'incapacité permanente.
+      synonymes: []
+    ar:
+      terme: حادث شغل
+      definition: >
+        الواقعة المنشئة لفرع جبر الضرر الذي ينظّمه القانون عدد 28 لسنة 1994: إسداء
+        العلاج بمجرّد إعلام الصندوق، وتعويض يومي طيلة العجز الوقتي، ثمّ إيراد أو رأس مال
+        عند العجز الدائم.
+      synonymes: []
+
+  - id: rente-accident-travail
+    acronyme: null
+    statut: valide
+    references: [loi94-28]
+    source_definition: {ref: loi94-28, locator: "art. 39 et s."}
+    voir_aussi: [accident-du-travail, ayant-droit]
+    fr:
+      terme: Rente d'accident du travail
+      definition: >
+        Revenu périodique servi au titre d'une incapacité permanente, converti en
+        capital en dessous de quinze pour cent d'incapacité et majoré en cas de recours
+        à une tierce personne. Une rente de survivants est servie au conjoint et aux
+        orphelins.
+      synonymes: []
+    ar:
+      terme: إيراد حادث الشغل
+      definition: >
+        دخل دوري يُسند بعنوان العجز الدائم، يُحوَّل إلى رأس مال دون نسبة خمسة عشر
+        بالمائة من العجز ويُرفَّع عند الحاجة إلى مساعدة الغير. ويُسند إيراد للباقين على
+        قيد الحياة لفائدة القرين واليتامى.
+      synonymes: []
+
+  - id: ayant-droit
+    acronyme: null
+    statut: valide
+    references: [loi2004-71]
+    source_definition: {ref: loi2004-71, locator: "art. 4"}
+    voir_aussi: [assure-social, indemnite-de-deces, capital-deces]
+    fr:
+      terme: Ayant droit
+      definition: >
+        Personne qui tient son droit à prestations de son lien avec un assuré social, et
+        non d'une affiliation propre : conjoint, enfants à charge, et selon les cas
+        ascendants.
+      synonymes: []
+    ar:
+      terme: ذو الحقّ
+      definition: >
+        الشخص الذي يستمدّ حقّه في المنافع من صلته بمضمون اجتماعي لا من انخراط خاصّ به:
+        القرين والأبناء المتكفَّل بهم، والأصول في بعض الحالات.
+      synonymes: []
+
+  - id: assure-social
+    acronyme: null
+    statut: valide
+    references: [loi2004-71]
+    source_definition: {ref: loi2004-71, locator: "art. 4"}
+    voir_aussi: [ayant-droit, cnss, cnrps, cnam]
+    fr:
+      terme: Assuré social
+      definition: >
+        Personne affiliée à l'un des régimes de sécurité sociale à raison de son
+        activité, et qui ouvre de ce fait des droits pour elle-même et pour ses ayants
+        droit.
+      synonymes: []
+    ar:
+      terme: المضمون الاجتماعي
+      definition: >
+        الشخص المنخرط في أحد أنظمة الضمان الاجتماعي بحكم نشاطه، والذي يفتح بذلك حقوقًا
+        لنفسه ولذوي حقّه.
+      synonymes: []
+
+  - id: enfant-a-charge
+    acronyme: null
+    statut: valide
+    references: [loi60-30, loi96-65]
+    source_definition: {ref: loi60-30, locator: "art. 53"}
+    voir_aussi: [allocation-familiale, prestations-familiales]
+    fr:
+      terme: Enfant à charge
+      definition: >
+        Notion qui commande l'ouverture des prestations familiales. Les bornes d'âge de
+        l'article 53 de la loi n° 60-30 ont été relevées par la loi n° 96-65 : seize ans
+        sans condition, vingt et un ans en cas de scolarité, sans limite en cas
+        d'infirmité ou de maladie incurable.
+      synonymes: []
+    ar:
+      terme: الطفل المتكفَّل به
+      definition: >
+        مفهوم يتحكّم في فتح الحقّ في المنح العائلية. وقد رفع القانون عدد 65 لسنة 1996
+        حدود السنّ الواردة بالفصل 53 من القانون عدد 30 لسنة 1960: ستّة عشر عامًا دون
+        شرط، وواحد وعشرون عامًا في صورة الدراسة، ودون تحديد في صورة العجز أو المرض
+        العضال.
+      synonymes: []
+
+  - id: indemnite-perte-emploi
+    acronyme: null
+    statut: valide
+    references: [loi96-101]
+    source_definition: {ref: loi96-101}
+    voir_aussi: [assure-social, cnss]
+    fr:
+      terme: Indemnité pour perte d'emploi
+      definition: >
+        Prestation servie au salarié privé de son emploi pour un motif économique ou
+        technique. Elle n'est ouverte qu'à une partie des régimes, ce qui en fait la
+        branche la plus inégalement distribuée du système contributif tunisien.
+      synonymes: []
+    ar:
+      terme: منحة فقدان الشغل
+      definition: >
+        منفعة تُسند إلى الأجير الذي فقد شغله لسبب اقتصادي أو فنّي. ولا تُفتح إلّا في بعض
+        الأنظمة، ممّا يجعلها الفرع الأكثر تفاوتًا في التوزيع داخل المنظومة المساهماتية
+        التونسية.
+      synonymes: []
+
+  - id: pnafn
+    acronyme: PNAFN
+    statut: valide
+    references: [loi-86-83-lfr-1986, arrete-2024-07-10-allocation-pauvres]
+    source_definition: {ref: arrete-2024-07-10-allocation-pauvres, locator: "art. 1"}
+    voir_aussi: [amen-social, amg1, condition-de-ressources]
+    fr:
+      terme: Programme national d'aide aux familles nécessiteuses
+      definition: >
+        Programme d'assistance servant une allocation mensuelle aux familles sans
+        ressources, apparu en 1986. Aucun texte publié ne le crée, n'en fixe l'objet ni
+        l'éligibilité : il n'apparaît au *Journal officiel* qu'en qualité d'objet de
+        dépense, et son montant n'a été énoncé par un texte qu'en 2024.
+      synonymes: []
+    ar:
+      terme: البرنامج الوطني لمساعدة العائلات المعوزة
+      definition: >
+        برنامج مساعدة يُسند منحة شهرية إلى العائلات المعوزة، ظهر سنة 1986. ولا يوجد نصّ
+        منشور يُحدثه أو يضبط موضوعه أو شروط الانتفاع به: إذ لا يرد بالرائد الرسمي إلّا
+        بوصفه بابًا من أبواب الإنفاق، ولم يُصرَّح بمقداره في نصّ إلّا سنة 2024.
+      synonymes: []
+
+  - id: amen-social
+    acronyme: null
+    statut: valide
+    references: [loi-amen-social-2019, decret-gouv-2020-317-amen]
+    source_definition: {ref: loi-amen-social-2019, locator: "art. 1"}
+    voir_aussi: [pnafn, transfert-monetaire, score-eligibilite, categories-pauvres]
+    fr:
+      terme: AMEN social
+      definition: >
+        Programme institué par la loi organique n° 2019-10, qui refonde l'assistance
+        autour d'un ciblage par score, d'un transfert monétaire permanent et d'un accès
+        aux soins. Il se superpose au programme national d'aide aux familles
+        nécessiteuses sans l'abroger.
+      synonymes: []
+    ar:
+      terme: برنامج الأمان الاجتماعي
+      definition: >
+        برنامج أحدثه القانون الأساسي عدد 10 لسنة 2019، أعاد بناء المساعدة الاجتماعية حول
+        الاستهداف بالتنقيط والتحويل النقدي القارّ والنفاذ إلى العلاج. وهو يتراكب مع
+        البرنامج الوطني لمساعدة العائلات المعوزة دون أن يلغيه.
+      synonymes: []
+
+  - id: categories-pauvres
+    acronyme: null
+    statut: valide
+    references: [loi-amen-social-2019, decret-gouv-2020-317-amen]
+    source_definition: {ref: loi-amen-social-2019, locator: "art. 2"}
+    voir_aussi: [categories-revenu-limite, amen-social, score-eligibilite]
+    fr:
+      terme: Catégories pauvres
+      definition: >
+        Catégorie légale de bénéficiaires de l'AMEN social, définie par la loi organique
+        n° 2019-10 à partir d'un revenu inférieur au seuil de pauvreté ou d'une
+        situation de privation multidimensionnelle. Elle ouvre le transfert monétaire
+        permanent.
+      synonymes: []
+    ar:
+      terme: الفئات الفقيرة
+      definition: >
+        صنف قانوني من المنتفعين ببرنامج الأمان الاجتماعي، عرّفه القانون الأساسي عدد 10
+        لسنة 2019 انطلاقًا من دخل دون خطّ الفقر أو من وضعية حرمان متعدّد الأبعاد. ويفتح
+        هذا الصنف الحقّ في التحويل النقدي القارّ.
+      synonymes: []
+
+  - id: categories-revenu-limite
+    acronyme: null
+    statut: valide
+    references: [loi-amen-social-2019]
+    source_definition: {ref: loi-amen-social-2019, locator: "art. 2"}
+    voir_aussi: [categories-pauvres, amen-social, amg2]
+    fr:
+      terme: Catégories à revenu limité
+      definition: >
+        Seconde catégorie légale de l'AMEN social, au-dessus des catégories pauvres.
+        Elle n'ouvre pas le transfert monétaire permanent mais donne accès aux soins à
+        tarif réduit et, depuis 2022, à l'allocation familiale non contributive.
+      synonymes: []
+    ar:
+      terme: الفئات محدودة الدخل
+      definition: >
+        الصنف القانوني الثاني في برنامج الأمان الاجتماعي، ويأتي فوق الفئات الفقيرة. ولا
+        يفتح الحقّ في التحويل النقدي القارّ، لكنّه يخوّل النفاذ إلى العلاج بالتعريفة
+        المنخفضة، ومنذ سنة 2022 إلى المنحة العائلية غير المساهماتية.
+      synonymes: []
+
+  - id: condition-de-ressources
+    acronyme: null
+    statut: valide
+    references: [decret-gouv-2020-317-amen, decret-98-409-amg2]
+    source_definition: {ref: decret-gouv-2020-317-amen, locator: "art. 5"}
+    voir_aussi: [ciblage, score-eligibilite, smig, amg2]
+    fr:
+      terme: Condition de ressources
+      definition: >
+        Plafond de revenu, exprimé en multiples du salaire minimum et modulé par la
+        taille du ménage, dont le franchissement ferme le droit à une prestation
+        d'assistance. C'est le pendant, côté non contributif, du stage de cotisation.
+      synonymes: []
+    ar:
+      terme: شرط الموارد
+      definition: >
+        سقف للدخل يُعبَّر عنه بمضاعفات الأجر الأدنى ويتغيّر بحسب حجم الأسرة، ويُغلق
+        تجاوزُه الحقَّ في منفعة المساعدة. وهو المقابل، في الجانب غير المساهماتي، لمدّة
+        الانخراط الدنيا.
+      synonymes: []
+
+  - id: ciblage
+    acronyme: null
+    statut: valide
+    references: [loi-amen-social-2019]
+    source_definition: {ref: loi-amen-social-2019, locator: "art. 9"}
+    voir_aussi: [score-eligibilite, condition-de-ressources, amen-social]
+    fr:
+      terme: Ciblage
+      definition: >
+        Opération consistant à sélectionner les bénéficiaires d'une prestation
+        d'assistance parmi les demandeurs, par condition de ressources, par score ou par
+        contingentement. En Tunisie, les trois techniques coexistent.
+      synonymes: []
+    ar:
+      terme: الاستهداف
+      definition: >
+        عملية اختيار المنتفعين بمنفعة المساعدة من بين المطالبين بها، إمّا بشرط الموارد
+        أو بالتنقيط أو بتحديد حصص. وتتعايش هذه التقنيات الثلاث في تونس.
+      synonymes: []
+
+  - id: score-eligibilite
+    acronyme: null
+    statut: valide
+    references: [arrete-2020-05-19-scoring]
+    source_definition: {ref: arrete-2020-05-19-scoring, locator: "art. 2"}
+    voir_aussi: [ciblage, amen-social, condition-de-ressources]
+    fr:
+      terme: Score d'éligibilité
+      definition: >
+        Note calculée à partir de variables observables du ménage — le *proxy means
+        test* — servant à départager les demandeurs de l'AMEN social. L'arrêté du 19 mai
+        2020 en énumère les dimensions mais **non les pondérations**, qui ne sont pas
+        publiées.
+      synonymes: []
+    ar:
+      terme: أنموذج التنقيط
+      definition: >
+        عدد يُحتسب انطلاقًا من متغيّرات قابلة للملاحظة في الأسرة، ويُستعمل للمفاضلة بين
+        المطالبين بالانتفاع ببرنامج الأمان الاجتماعي. وقد عدّد قرار 19 ماي 2020 أبعاده
+        دون أن ينشر معاملات ترجيحه.
+      synonymes: []
+
+  - id: transfert-monetaire
+    acronyme: null
+    statut: valide
+    references: [loi-amen-social-2019, arrete-2020-05-19-transferts]
+    source_definition: {ref: arrete-2020-05-19-transferts, locator: "art. 2"}
+    voir_aussi: [amen-social, categories-pauvres, allocation-familiale-non-contributive]
+    fr:
+      terme: Transfert monétaire direct
+      definition: >
+        Versement mensuel de l'AMEN social, composé d'une allocation de base et d'un
+        supplément par enfant à charge, doublé pour l'enfant titulaire d'une carte de
+        handicap. La base est revalorisée chaque année, avec effet rétroactif au 1^er^
+        janvier.
+      synonymes: []
+    ar:
+      terme: التحويل النقدي المباشر
+      definition: >
+        دفع شهري في إطار برنامج الأمان الاجتماعي يتكوّن من منحة قاعدية وزيادة عن كلّ طفل
+        متكفَّل به، تُضاعَف بالنسبة إلى الطفل حامل بطاقة إعاقة. وتُراجَع المنحة القاعدية
+        سنويًّا بمفعول رجعي إلى غرّة جانفي.
+      synonymes: []
+
+  - id: allocation-familiale-non-contributive
+    acronyme: null
+    statut: valide
+    references: [decret-loi-2022-8-allocation-familiale, arrete-2022-04-01-allocation-familiale]
+    source_definition: {ref: arrete-2022-04-01-allocation-familiale, locator: "art. 2-3"}
+    voir_aussi: [allocation-familiale, transfert-monetaire, amen-social]
+    fr:
+      terme: Allocation familiale non contributive
+      definition: >
+        Allocation mensuelle servie au titre des enfants de moins de six ans des
+        catégories pauvres et à revenu limité, créée en 2022. Elle est servie sans
+        plafonnement du nombre d'enfants, et exclut expressément les affiliés à un
+        régime de sécurité sociale : c'est la règle de non-cumul avec l'allocation
+        familiale contributive.
+      synonymes: []
+    ar:
+      terme: المنحة العائلية غير المساهماتية
+      definition: >
+        منحة شهرية تُسند بعنوان الأبناء دون سنّ ستّ سنوات في الفئات الفقيرة ومحدودة
+        الدخل، أُحدثت سنة 2022. وتُسند دون تحديد لعدد الأبناء، وتستثني صراحة المنخرطين
+        في أحد أنظمة الضمان الاجتماعي، وهي قاعدة منع الجمع مع المنحة العائلية
+        المساهماتية.
+      synonymes: []
+
+  - id: amg1
+    acronyme: AMG1
+    statut: valide
+    references: [loi-87-29-amg, decret-98-1812-amg1]
+    source_definition: {ref: decret-98-1812-amg1, locator: "art. 2"}
+    voir_aussi: [amg2, pnafn, quota-regional]
+    fr:
+      terme: Carte de soins gratuits
+      definition: >
+        Titre ouvrant la gratuité des soins dans les structures publiques, attribué aux
+        familles sans ressources et, de droit, aux bénéficiaires du programme national
+        d'aide aux familles nécessiteuses. Son attribution est contingentée par des
+        quotas régionaux non publiés.
+      synonymes: []
+    ar:
+      terme: بطاقة العلاج المجاني
+      definition: >
+        سند يخوّل مجّانية العلاج بالهياكل الصحّية العمومية، ويُسند إلى العائلات المعوزة،
+        وبقوّة القانون إلى المنتفعين بالبرنامج الوطني لمساعدة العائلات المعوزة. ويخضع
+        إسناده إلى حصص جهوية غير منشورة.
+      synonymes: []
+
+  - id: amg2
+    acronyme: AMG2
+    statut: valide
+    references: [decret-98-409-amg2]
+    source_definition: {ref: decret-98-409-amg2, locator: "art. 2 et 10"}
+    voir_aussi: [amg1, condition-de-ressources, categories-revenu-limite, smig]
+    fr:
+      terme: Carte de soins à tarifs réduits
+      definition: >
+        Titre ouvrant l'accès aux soins publics à tarif réduit, moyennant un droit
+        annuel d'affiliation, sous une condition de ressources exprimée en multiples du
+        salaire minimum et modulée par la taille de la famille.
+      synonymes: []
+    ar:
+      terme: بطاقة العلاج بالتعريفة المنخفضة
+      definition: >
+        سند يخوّل النفاذ إلى العلاج العمومي بتعريفة منخفضة مقابل معلوم انخراط سنوي، وذلك
+        ضمن شرط موارد يُعبَّر عنه بمضاعفات الأجر الأدنى ويتغيّر بحسب حجم العائلة.
+      synonymes: []
+
+  - id: appui-financier-occasionnel
+    acronyme: null
+    statut: valide
+    references: [loi-amen-social-2019, arrete-2022-12-08-appui-occasionnel]
+    source_definition: {ref: arrete-2022-12-08-appui-occasionnel}
+    voir_aussi: [amen-social, transfert-monetaire]
+    fr:
+      terme: Appui financier occasionnel
+      definition: >
+        Aides ponctuelles servies aux bénéficiaires de l'AMEN social à des occasions
+        déterminées — mois de Ramadan, fêtes religieuses, rentrée scolaire et
+        universitaire — par opposition au transfert monétaire permanent.
+      synonymes: []
+    ar:
+      terme: الدعم المادي الظرفي
+      definition: >
+        مساعدات ظرفية تُسند إلى المنتفعين ببرنامج الأمان الاجتماعي في مناسبات محدّدة،
+        كشهر رمضان والأعياد الدينية والعودة المدرسية والجامعية، خلافًا للتحويل النقدي
+        القارّ.
+      synonymes: []
+
+  - id: quota-regional
+    acronyme: null
+    statut: valide
+    references: [decret-98-1812-amg1, decret-98-409-amg2]
+    source_definition: {ref: decret-98-1812-amg1, locator: "art. 2"}
+    voir_aussi: [amg1, amg2, ciblage]
+    fr:
+      terme: Quota régional
+      definition: >
+        Contingent de cartes de soins réparti entre gouvernorats, qui borne le nombre de
+        bénéficiaires indépendamment du nombre de ménages éligibles. Aucun arrêté fixant
+        ces quotas n'a été retrouvé : c'est l'un des trois paramètres décisifs de
+        l'assistance tunisienne à ne pas être publié.
+      synonymes: []
+    ar:
+      terme: الحصّة الجهوية
+      definition: >
+        حصّة من بطاقات العلاج تُوزَّع بين الولايات وتحدّ من عدد المنتفعين بصرف النظر عن
+        عدد الأسر المستوفية للشروط. ولم يُعثر على أيّ قرار يضبط هذه الحصص، وهي أحد ثلاثة
+        معايير حاسمة في المساعدة الاجتماعية التونسية لم تُنشر.
+      synonymes: []
+
+  - id: salaire-journalier-moyen
+    acronyme: null
+    statut: valide
+    references: [loi60-30, loi98-91]
+    source_definition: {ref: loi60-30, locator: "art. 88-90"}
+    voir_aussi: [indemnite-journaliere, carence]
+    fr:
+      terme: Salaire journalier moyen
+      definition: >
+        Assiette de référence des indemnités journalières, reconstituée à partir des
+        rémunérations d'une période antérieure à l'arrêt. Sa définition a été réécrite par
+        l'article 88 nouveau de la loi n° 98-91.
+      synonymes: []
+    ar:
+      terme: الأجر اليومي المتوسّط
+      definition: >
+        القاعدة المرجعية لاحتساب التعويضات اليومية، تُستخرج من الأجور المقبوضة خلال فترة سابقة
+        للانقطاع عن العمل. وقد أعاد الفصل 88 الجديد من القانون عدد 91 لسنة 1998 صياغة تعريفها.
+      synonymes: []
+
+  # ------------------------------------------------------------------- fiscalité
+  # Notions auxquelles le chapitre IRPP renvoyait sans qu'elles existent au glossaire.
+
+  - id: bic
+    acronyme: BIC
+    statut: valide
+    references: [code-irpp-is-1990]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 9"}
+    voir_aussi: [bnc, assiette-fiscale, regime-forfaitaire]
+    fr:
+      terme: Bénéfices industriels et commerciaux
+      definition: >
+        Catégorie de revenus définie par renvoi aux professions commerciales, industrielles,
+        artisanales et assimilées. C'est la catégorie de droit commun des revenus d'activité
+        indépendante non salariée, dont les bénéfices non commerciaux se distinguent.
+      synonymes: [BIC]
+    ar:
+      terme: الأرباح الصناعية والتجارية
+      definition: >
+        صنف من المداخيل يُعرَّف بالإحالة على المهن التجارية والصناعية والحرفية وما ماثلها. وهو
+        الصنف العامّ لمداخيل النشاط المستقلّ غير الأجير، وتتميّز عنه الأرباح غير التجارية.
+      synonymes: []
+
+  - id: bnc
+    acronyme: BNC
+    statut: valide
+    references: [code-irpp-is-1990]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 21"}
+    voir_aussi: [bic, abattement-forfaitaire, assiette-fiscale]
+    fr:
+      terme: Bénéfices des professions non commerciales
+      definition: >
+        Catégorie couvrant les professions libérales, les charges et offices et les revenus
+        d'activités lucratives non rangés ailleurs. Un régime forfaitaire y impose une
+        fraction des recettes brutes, le complément valant abattement forfaitaire implicite.
+      synonymes: [BNC]
+    ar:
+      terme: الأرباح غير التجارية
+      definition: >
+        صنف يشمل المهن الحرّة والخطط والوظائف ومداخيل الأنشطة المدرّة للربح غير المصنّفة في
+        مكان آخر. ويُخضع نظام جزافي جزءًا من المقابيض الخام للضريبة، ويقوم الباقي مقام طرح
+        جزافي ضمني.
+      synonymes: []
+
+  - id: abattement-forfaitaire
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 22"}
+    voir_aussi: [bnc, frais-professionnels, assiette-fiscale]
+    fr:
+      terme: Abattement forfaitaire
+      definition: >
+        Fraction du revenu brut retranchée de l'assiette sans justification de dépense réelle,
+        par opposition à la déduction des frais engagés. Il peut être explicite, comme la
+        déduction pour frais professionnels, ou implicite, quand le texte n'impose qu'une part
+        des recettes brutes.
+      synonymes: []
+    ar:
+      terme: الطرح الجزافي
+      definition: >
+        جزء من الدخل الخام يُطرح من القاعدة الخاضعة للضريبة دون إثبات مصاريف حقيقية، خلافًا
+        لطرح المصاريف المنجزة فعلًا. وقد يكون صريحًا كطرح المصاريف المهنية، أو ضمنيًّا حين لا
+        يُخضع النصّ للضريبة إلّا جزءًا من المقابيض الخام.
+      synonymes: []
+
+  - id: revenus-fonciers
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 27"}
+    voir_aussi: [assiette-fiscale, abattement-forfaitaire]
+    fr:
+      terme: Revenus fonciers
+      definition: >
+        Catégorie définie par subsidiarité : y entrent les revenus des immeubles et des droits
+        immobiliers lorsqu'ils ne relèvent pas d'une autre catégorie. Le revenu net des
+        propriétés bâties se détermine forfaitairement.
+      synonymes: []
+    ar:
+      terme: المداخيل العقارية
+      definition: >
+        صنف يُعرَّف بصفة تكميلية: تدخل فيه مداخيل العقارات والحقوق العقارية إذا لم تندرج ضمن
+        صنف آخر. ويُضبط الدخل الصافي للعقارات المبنية بصفة جزافية.
+      synonymes: []
+
+  - id: deductions-communes
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 39"}
+    voir_aussi: [assiette-fiscale, revenu-annuel-net, bareme-irpp]
+    fr:
+      terme: Déductions communes
+      definition: >
+        Déductions opérées sur le revenu global, après détermination des revenus catégoriels
+        et avant application du barème : intérêts de l'épargne, primes d'assurance-vie,
+        situation et charges de famille. Elles ne se rattachent à aucune catégorie particulière.
+      synonymes: []
+    ar:
+      terme: الطروحات المشتركة
+      definition: >
+        طروحات تُجرى على الدخل الجملي بعد ضبط المداخيل الصنفية وقبل تطبيق الجدول: فوائد
+        الادّخار وأقساط التأمين على الحياة والحالة والأعباء العائلية. ولا ترتبط بأيّ صنف بعينه.
       synonymes: []

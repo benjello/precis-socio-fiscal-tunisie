@@ -15,6 +15,9 @@ book:
   chapters:
     - index.qmd
 
+  appendices:
+    - _glossaire.qmd
+
 bibliography:
   - references.json
   - ../references.json
