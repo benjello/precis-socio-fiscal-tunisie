@@ -744,3 +744,115 @@ début en pagination arabe, pour mémoire : 3597 (`lf-2016`), 4699 (`lf-2020`), 
 Les vingt clés ci-dessus, collection « fiscalité » (mappée `fiscalite` dans
 `COLLECTION_TO_BOOK`), champ « Extra » : `citation-key: <clé>`. Aucune écriture Zotero
 n'a été effectuée.
+
+---
+
+### Livre « Prestations sociales » — 63 clés (8 septembre 2026)
+
+Ajoutées ou déplacées à la main pour que le chapitre « Prestations sociales » rende sans
+citation non résolue (une clé non résolue s'affiche **en gras dans le corps du texte**, pas
+en `[?]` : le contrôle utile est l'absence d'avertissement `Citeproc: citation … not found`
+au rendu, et la présence d'une ancre `#ref-<clé>` pour chaque clé citée). **Aucune écriture
+Zotero n'a été effectuée.**
+
+Métadonnées reprises du §12.2 de `docs/notes/prestations-contributif.md` et du §8.2 de
+`docs/notes/prestations-assistance.md`. Toutes les URL sont des fascicules JORT pist.tn
+**vérifiés par téléchargement** (`curl -k`, certificat expiré). Les 59 entrées pointent
+**52 fascicules distincts** (sept fascicules portent deux textes ou plus : JORT 33/1988,
+14/1988, 84/2012, 45/2020 — quatre textes —, 38/2022). Tous répondent 200 en `application/pdf`,
+aucun n'est le corps HTML de 289 octets du 404, et **l'édition française est confirmée sur le
+contenu** : couche texte en caractères latins pour 30 fascicules, océrisation de la première
+page (`pdftoppm` + `tesseract -l fra`) pour les 22 autres (scannés d'avant 1994, plus les JORT
+2002 et 2005 dont la couche texte est défectueuse, cf. §5 de
+`docs/notes/outillage-sources.md`).
+
+#### a) 59 clés créées dans `precis/fr/prestations_sociales/references.json`
+
+Collection Zotero cible : **à créer** pour `prestations_sociales` (voir réserve ci-dessous),
+sinon « Commun ». Champ « Extra » : `citation-key: <clé>`.
+
+*Bloc contributif (28)* : `loi57-73`, `loi72-2`, `loi74-41`, `decret74-463`, `loi75-82`,
+`loi80-36`, `loi81-6`, `loi86-75`, `loi86-86`, `loi88-38`, `loi88-39`, `loi89-73`,
+`decret89-107`, `decret93-308`, `loi94-28`, `loi94-88`, `decret95-114`, `decret95-1166`,
+`loi96-65`, `loi96-101`, `decret96-1906`, `loi97-58`, `loi98-91`, `loi2002-32`, `loi2002-104`,
+`decret2007-1366`, `loi2024-44`, `decret-loi2024-4`.
+
+*Bloc assistance (31)* : `loi-86-83-lfr-1986`, `arrete-1987-01-06-financement-pnafn`,
+`loi-87-29-amg`, `loi-87-83-lf-1988`, `decret-88-175-livrets-amg`,
+`arrete-1988-02-17-droit-affiliation-amg`, `loi-90-111-lf-1991`,
+`arrete-1997-09-30-personnes-agees`, `decret-98-409-amg2`, `decret-98-1812-amg1`,
+`decret-2005-2886-amg2-ascendants`, `decret-2012-2521-amg1-pnafn`,
+`decret-2012-2522-amg2-commissions`, `decret-2014-1526-banque-donnees`,
+`decret-gouv-2020-317-amen`, `arrete-2020-05-19-scoring`, `arrete-2020-05-19-transferts`,
+`arrete-2020-05-19-appui-occasionnel`, `arrete-2021-08-20-aides-covid`,
+`decret-loi-2022-8-allocation-familiale`, `arrete-2022-04-01-transferts`,
+`arrete-2022-04-01-allocation-familiale`, `decret-2022-715-autonomisation`,
+`decret-2022-919-soins-amen`, `arrete-2022-12-08-appui-occasionnel`,
+`arrete-2023-04-03-transferts`, `arrete-2024-02-28-transferts`,
+`arrete-2024-07-10-allocation-pauvres`, `arrete-2025-01-29-transferts`,
+`arrete-2025-07-30-gluten`, `arrete-2025-08-29-allocation-pauvres`.
+
+#### b) 4 clés promues dans la bibliographie partagée `precis/fr/references.json`
+
+`loi60-30`, `loi2004-71`, `loi95-56` (retirées de
+`precis/fr/remunerations_publiques/references.json`) et `lf-2025` (retirée de
+`precis/fr/fiscalite/references.json`). Ces quatre textes fondateurs servent plusieurs livres ;
+**ne pas les dupliquer**. Collection Zotero cible : **Commun**. Les quatre livres chargent
+`../references.json` et rendent sans citation non résolue après l'opération (vérifié).
+
+Corrections portées au passage, à répercuter dans Zotero : `loi60-30` — pp. 1602-1613, articles
+51-67 (prestations familiales) et 68-98 (assurances sociales) ; `loi2004-71` et `loi95-56` —
+mention « contenu non lu » retirée (textes dépouillés depuis) et date d'effet du 1er janvier
+1996 (art. 58) ajoutée à `loi95-56` ; `lf-2025` — renvoi à l'article 17 (pp. 6420-6421 de
+l'**édition arabe**), l'avertissement sur les deux paginations restant intact.
+
+#### c) Entrée existante complétée, sans doublon
+
+`loi-amen-social-2019` (`precis/fr/references.json`) reçoit les métadonnées de l'entrée
+candidate `loi-org-2019-10-amen` du dossier assistance : JORT n° 11 du 5 février 2019,
+pp. 277-279, `event-date` = 30 janvier 2019. La clé `loi-org-2019-10-amen` **n'a pas été
+créée** : le chapitre cite `loi-amen-social-2019`.
+
+#### Reste à faire
+
+- **Collection Zotero manquante.** `prestations_sociales` n'est pas dans `COLLECTION_TO_BOOK`
+  de `scripts/sync_biblio.py` — même réserve que `remunerations_publiques` ci-dessus. Créer une
+  collection Zotero dédiée et l'ajouter au mapping, ou ranger les 59 items en « Commun ».
+  Tant que rien n'est monté dans Zotero, **le prochain sync écrasera ces 63 clés**.
+- **`precis/ar/prestations_sociales/references.json` n'a pas été alimenté** (hors périmètre de
+  la commande) : les 63 entrées y manquent. URL arabes à lire dans le champ `pdf_ar` des
+  **mêmes** enregistrements de `jort_cache.db` — ne jamais déduire l'URL AR en transformant la
+  chaîne FR. Cas particulier : `lf-2025` pointe déjà l'édition arabe (`Ja1492024`), l'édition
+  française du JORT n° 149/2024 étant absente en ligne.
+- **`circulaire-42-1996` non créée.** Circulaire n° 42 du 25 octobre 1996 sur la gestion des
+  indemnités à caractère familial dans le secteur public (JORT n° 94 du 22 novembre 1996,
+  pp. 2349-2364) : repérée et proposée au §12.2 du dossier contributif, mais **non lue** et
+  **non citée** par le chapitre. À créer seulement si le texte est établi et cité.
+- **`loi2017-66-lf2018` non résolue dans le livre « fiscalité »** — anomalie **préexistante**,
+  sans rapport avec la promotion des quatre clés : la clé est citée par
+  `precis/fr/fiscalite/_glossaire.qmd` (fichier **généré**, non modifiable à la main) et
+  n'existe dans aucune bibliographie. À corriger côté `precis/glossaire.yml` ou en créant
+  l'entrée (loi n° 2017-66 du 18 décembre 2017, loi de finances pour 2018).
+- **`unicef2020`** est désormais citée pour la première fois ; la pièce jointe Zotero
+  résiduelle `23975222/EZEBV8GK` a été **retirée** de
+  `precis/fr/prestations_sociales/references.json`.
+
+#### Deux divergences de convention entre les deux blocs — à NE PAS « harmoniser » à l'aveugle
+
+- **Nature de la date.** Le bloc contributif porte `issued` = **date de signature** du texte et
+  pas d'`event-date` ; le bloc assistance porte `issued` = **date de publication relevée sur le
+  pied de page du fascicule** et `event-date` = date de signature. Les deux blocs sont
+  internement cohérents et aucune année ne bascule, mais des entrées voisines de la
+  bibliographie afficheront des dates de nature différente. Trancher avant la montée dans
+  Zotero.
+- **Sens du champ `page`.** Le §8.2 du dossier assistance définit `page` comme « page du
+  fascicule ». Pour les lois de finances, la page portée est celle de la **disposition citée**
+  et non celle du début de la loi : `loi-90-111-lf-1991` porte 2056 (articles 65-66) alors que
+  le sommaire du fascicule annonce la loi p. 2040 ; même configuration probable pour
+  `loi-86-83-lfr-1986` (art. 13, p. 928) et `loi-87-83-lf-1988` (art. 62 à 67, pp. 1633-1634).
+  Ce n'est pas une erreur, mais la convention doit être explicitée dans Zotero.
+
+#### À pousser dans Zotero — NE PAS pousser sans feu vert
+
+Les 63 clés ci-dessus (59 en collection « prestations sociales » à créer, 4 en « Commun »),
+champ « Extra » : `citation-key: <clé>`. Aucune écriture Zotero n'a été effectuée.
