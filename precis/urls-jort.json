@@ -1,0 +1,13 @@
+{
+  "commentaire": "Fascicules dont l'édition homologue est absente de pist.tn, ou dont les deux chemins servent le même fichier. La synchronisation descendante les laisse tels quels. Régénérer avec scripts/verifier_urls_jort.py.",
+  "sans_homologue": [
+    "https://www.pist.tn/jort/2015/2015A/Ja1042015.pdf",
+    "https://www.pist.tn/jort/2018/2018A/Ja0392018.pdf",
+    "https://www.pist.tn/jort/2018/2018A/Ja1042018.pdf",
+    "https://www.pist.tn/jort/2019/2019A/Ja1042019.pdf",
+    "https://www.pist.tn/jort/2022/2022A/Ja1412022.pdf",
+    "https://www.pist.tn/jort/2023/2023A/Ja1442023.pdf",
+    "https://www.pist.tn/jort/2024/2024A/Ja1492024.pdf",
+    "https://www.pist.tn/jort/2025/2025A/Ja1482025.pdf"
+  ]
+}

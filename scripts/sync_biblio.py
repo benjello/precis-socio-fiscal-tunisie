@@ -159,12 +159,58 @@ ARABE = re.compile(r"[\u0600-\u06FF]")
 CHAMPS_TRADUITS = ("title", "title-short", "container-title", "publisher",
                    "publisher-place", "authority", "author", "editor")
 
-# Le JORT paraît en deux éditions, et pist.tn les sert sous deux chemins distincts :
-# /2014F/Jo0232014.pdf pour la française, /2014A/Ja0232014.pdf pour l'arabe. Une
-# bibliographie arabe qui renvoie à l'édition arabe ne se trompe pas : elle renvoie au
-# texte que son lecteur peut lire. Ces URL ne contiennent aucun caractère arabe et
-# échapperaient donc à la règle de préservation ci-dessus — d'où ce motif.
-URL_JORT_ARABE = re.compile(r"/\d{4}A/Ja\d+", re.I)
+# Le JORT paraît en deux éditions, et pist.tn les sert sous deux chemins qui ne diffèrent
+# que par une lettre de répertoire et un préfixe de fichier, les chiffres étant identiques :
+#
+#     .../jort/2014/2014F/Jo0232014.pdf   (française)
+#     .../jort/2014/2014A/Ja0232014.pdf   (arabe)
+#
+# Une bibliographie arabe qui renvoie à l'édition arabe ne se trompe pas : elle renvoie au
+# texte que son lecteur peut lire. La conversion étant mécanique, elle se dérive au lieu de
+# se saisir — deux formats coexistent, cinq chiffres avant 2000 et sept après, et le motif
+# couvre les deux.
+JORT_FR = re.compile(r"/(\d{4})F/Jo(\d+)\.pdf", re.I)
+JORT_AR = re.compile(r"/(\d{4})A/Ja(\d+)\.pdf", re.I)
+
+# Fascicules dont l'édition homologue n'existe pas sur pist.tn. La dérivation les laisse
+# tels quels : mieux vaut renvoyer à l'autre édition qu'à un lien mort. Régénéré par
+# `--verifier-urls`, versionné pour que la descente reste déterministe et hors ligne.
+FICHIER_EXCEPTIONS = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "precis", "urls-jort.json"
+)
+
+
+def charge_exceptions():
+    if not os.path.exists(FICHIER_EXCEPTIONS):
+        return set()
+    with open(FICHIER_EXCEPTIONS, encoding="utf-8") as f:
+        return set(json.load(f).get("sans_homologue", []))
+
+
+def url_jort(url, langue, exceptions=()):
+    """Rend l'URL du JORT dans l'édition de `langue`, ou l'URL inchangée.
+
+    Ne touche à rien d'autre : une URL qui ne suit pas le motif du JORT — INS, article
+    académique, texte hébergé ailleurs — ressort telle quelle.
+    """
+    if not url or url in exceptions:
+        return url
+    if langue == "ar":
+        return JORT_FR.sub(lambda m: f"/{m.group(1)}A/Ja{m.group(2)}.pdf", url)
+    return JORT_AR.sub(lambda m: f"/{m.group(1)}F/Jo{m.group(2)}.pdf", url)
+
+
+def applique_edition(items, langue, exceptions):
+    change = 0
+    for item in items:
+        avant = item.get("URL", "")
+        apres = url_jort(avant, langue, exceptions)
+        if apres != avant:
+            item["URL"] = apres
+            change += 1
+    if change:
+        print(f"    {change} lien(s) JORT basculé(s) vers l'édition {langue}")
+    return items
 
 
 def contient_arabe(valeur):
@@ -202,9 +248,6 @@ def preserve_traductions(items, chemin_existant):
             if champ in ancien and contient_arabe(ancien[champ]) and not contient_arabe(item.get(champ)):
                 item[champ] = ancien[champ]
                 preserves += 1
-        if URL_JORT_ARABE.search(ancien.get("URL", "")) and ancien.get("URL") != item.get("URL"):
-            item["URL"] = ancien["URL"]
-            preserves += 1
     if preserves:
         print(f"    {preserves} champ(s) arabes préservés dans {os.path.basename(os.path.dirname(chemin_existant))}")
     return items
@@ -224,6 +267,20 @@ def sans_cle_de_citation(items):
     if ecartes:
         print(f"    {ecartes} article(s) sans clé de citation écarté(s)")
     return gardes
+
+
+# Champs que l'export de l'API émet sous leur nom ZOTERO au lieu de leur nom CSL. Un
+# `shortTitle` dans un fichier CSL-JSON n'est pas lu par citeproc : le titre court est
+# simplement ignoré au rendu, sans erreur ni avertissement.
+RENOMMAGES = {"shortTitle": "title-short"}
+
+
+def normalise_noms_de_champs(csl_items):
+    for item in csl_items:
+        for zotero, csl in RENOMMAGES.items():
+            if zotero in item:
+                item.setdefault(csl, item.pop(zotero))
+    return csl_items
 
 
 def normalise_auteurs(csl_items):
@@ -342,6 +399,10 @@ def main():
     api_key = args.key
     precis_dir = os.path.join(os.path.dirname(__file__), "..", "precis")
 
+    exceptions = charge_exceptions()
+    if exceptions:
+        print(f"{len(exceptions)} fascicule(s) sans édition homologue, laissés tels quels")
+
     print("Fetching citation keys from Zotero...")
     key_map = build_citation_key_map(group_id, api_key)
     print(f"  {len(key_map)} citation keys found")
@@ -367,7 +428,9 @@ def main():
             api_key,
             params={"format": "csljson"},
         )
-        items = normalise_auteurs(apply_extra_variables(items, extra_map))
+        items = normalise_noms_de_champs(
+            normalise_auteurs(apply_extra_variables(items, extra_map))
+        )
         items = apply_citation_keys(items, key_map, group_id)
         book_items.setdefault(book, []).extend(items)
         print(f"  {collections[ckey]}: {len(items)} items → {book}")
@@ -377,7 +440,9 @@ def main():
         api_key,
         params={"format": "csljson"},
     )
-    all_items = normalise_auteurs(apply_extra_variables(all_items, extra_map))
+    all_items = normalise_noms_de_champs(
+        normalise_auteurs(apply_extra_variables(all_items, extra_map))
+    )
     all_items = apply_citation_keys(all_items, key_map, group_id)
 
     collected_ids = set()
@@ -401,7 +466,7 @@ def main():
             out_path = os.path.join(precis_dir, lang, book, "references.json")
             # Chaque langue reçoit sa propre copie : `preserve_traductions` modifie les
             # items en place, et l'arabe ne doit pas contaminer le français.
-            a_ecrire = copy.deepcopy(items)
+            a_ecrire = applique_edition(copy.deepcopy(items), lang, exceptions)
             if lang == "ar":
                 a_ecrire = preserve_traductions(a_ecrire, out_path)
             write_csl_json(a_ecrire, out_path)
@@ -412,7 +477,7 @@ def main():
     if shared_items:
         for lang in LANGUAGES:
             out_path = os.path.join(precis_dir, lang, "references.json")
-            a_ecrire = copy.deepcopy(shared_items)
+            a_ecrire = applique_edition(copy.deepcopy(shared_items), lang, exceptions)
             if lang == "ar":
                 a_ecrire = preserve_traductions(a_ecrire, out_path)
             write_csl_json(a_ecrire, out_path)
