@@ -1,6 +1,38 @@
 {
   "items": [
     {
+      "id": "loi2018-56-lf2019",
+      "type": "legislation",
+      "note": "citation-key: loi2018-56-lf2019\nLe fascicule français correspondant n'est pas en ligne sur pist.tn : l'URL renvoie à l'édition arabe, qui porte le même texte.",
+      "title": "Loi n°2018-56 du 27 décembre 2018, portant loi de finances pour l'année 2019",
+      "URL": "https://www.pist.tn/jort/2018/2018A/Ja1042018.pdf",
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            12,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "id": "loi-org-2018-29-ccl",
+      "type": "legislation",
+      "note": "citation-key: loi-org-2018-29-ccl\nLe fascicule français correspondant n'est pas en ligne sur pist.tn : l'URL renvoie à l'édition arabe, qui porte le même texte.",
+      "title": "Loi organique n°2018-29 du 9 mai 2018, relative au Code des collectivités locales",
+      "URL": "https://www.pist.tn/jort/2018/2018A/Ja0392018.pdf",
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            5,
+            9
+          ]
+        ]
+      }
+    },
+    {
       "id": "wb-tunisia-per-2020",
       "type": "report",
       "note": "citation-key: wb-tunisia-per-2020",
@@ -407,22 +439,6 @@
       }
     },
     {
-      "id": "loi2018-56-lf2019",
-      "type": "legislation",
-      "note": "citation-key: loi2018-56-lf2019\nLe fascicule français correspondant n'est pas en ligne sur pist.tn : l'URL renvoie à l'édition arabe, qui porte le même texte.",
-      "title": "Loi n°2018-56 du 27 décembre 2018, portant loi de finances pour l'année 2019",
-      "issued": {
-        "date-parts": [
-          [
-            2018,
-            12,
-            27
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2018/2018A/Ja1042018.pdf"
-    },
-    {
       "id": "loi2017-66-lf2018",
       "type": "legislation",
       "note": "citation-key: loi2017-66-lf2018",
@@ -453,22 +469,6 @@
           ]
         ]
       }
-    },
-    {
-      "id": "loi-org-2018-29-ccl",
-      "type": "legislation",
-      "note": "citation-key: loi-org-2018-29-ccl\nLe fascicule français correspondant n'est pas en ligne sur pist.tn : l'URL renvoie à l'édition arabe, qui porte le même texte.",
-      "title": "Loi organique n°2018-29 du 9 mai 2018, relative au Code des collectivités locales",
-      "issued": {
-        "date-parts": [
-          [
-            2018,
-            5,
-            9
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2018/2018A/Ja0392018.pdf"
     },
     {
       "id": "loi-org-2016-34",

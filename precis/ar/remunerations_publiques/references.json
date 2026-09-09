@@ -1,6 +1,38 @@
 {
   "items": [
     {
+      "id": "loi2018-56-lf2019",
+      "type": "legislation",
+      "note": "citation-key: loi2018-56-lf2019\nLe fascicule français correspondant n'est pas en ligne sur pist.tn : l'URL renvoie à l'édition arabe, qui porte le même texte.",
+      "title": "القانون عدد 2018-56 المؤرخ في 27 ديسمبر 2018 المتعلق بقانون المالية لسنة 2019",
+      "URL": "https://www.pist.tn/jort/2018/2018A/Ja1042018.pdf",
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            12,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "id": "loi-org-2018-29-ccl",
+      "type": "legislation",
+      "note": "citation-key: loi-org-2018-29-ccl\nLe fascicule français correspondant n'est pas en ligne sur pist.tn : l'URL renvoie à l'édition arabe, qui porte le même texte.",
+      "title": "قانون أساسي عدد 2018-29 المؤرخ في 9 ماي 2018 يتعلق بمجلة الجماعات المحلية",
+      "URL": "https://www.pist.tn/jort/2018/2018A/Ja0392018.pdf",
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            5,
+            9
+          ]
+        ]
+      }
+    },
+    {
       "id": "wb-tunisia-per-2020",
       "type": "report",
       "note": "citation-key: wb-tunisia-per-2020",
@@ -407,22 +439,6 @@
       }
     },
     {
-      "id": "loi2018-56-lf2019",
-      "type": "legislation",
-      "note": "citation-key: loi2018-56-lf2019",
-      "title": "القانون عدد 2018-56 المؤرخ في 27 ديسمبر 2018 المتعلق بقانون المالية لسنة 2019",
-      "issued": {
-        "date-parts": [
-          [
-            2018,
-            12,
-            27
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2018/2018A/Ja1042018.pdf"
-    },
-    {
       "id": "loi2017-66-lf2018",
       "type": "legislation",
       "note": "citation-key: loi2017-66-lf2018",
@@ -455,22 +471,6 @@
       }
     },
     {
-      "id": "loi-org-2018-29-ccl",
-      "type": "legislation",
-      "note": "citation-key: loi-org-2018-29-ccl",
-      "title": "قانون أساسي عدد 2018-29 المؤرخ في 9 ماي 2018 يتعلق بمجلة الجماعات المحلية",
-      "issued": {
-        "date-parts": [
-          [
-            2018,
-            5,
-            9
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2018/2018A/Ja0392018.pdf"
-    },
-    {
       "id": "loi-org-2016-34",
       "type": "legislation",
       "note": "citation-key: loi-org-2016-34",
@@ -493,7 +493,7 @@
       "note": "citation-key: lf-2018\nissue: 101\nJORT n° 101 du 19 décembre 2017, tome 160, ÉDITION FRANÇAISE ; la loi commence page 4268. Article 53 (institution de la contribution sociale de solidarité) et article 54 (déduction au titre du chef de famille portée à 300 D) en PAGE 4289 ; article 55 (enfant infirme, 1 200 → 2 000 D) en PAGE 4290 ; article 67 en page 4292, dont le § 4 fixe l'effet de l'article 54 « aux revenus et bénéfices réalisés à partir du 1er janvier 2019 ». Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. CORRECTION : le § 11.2 de la note documentaire plaçait les articles 54 et 55 tous deux en page 4289. Édition arabe : https://www.pist.tn/jort/2017/2017A/Ja1012017.pdf",
       "page": "4289-4290",
       "title": "Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018",
-      "URL": "https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf",
+      "URL": "https://www.pist.tn/jort/2017/2017A/Ja1012017.pdf",
       "volume": "160",
       "issued": {
         "date-parts": [
