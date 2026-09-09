@@ -1,6 +1,613 @@
 {
   "items": [
     {
+      "id": "loi-avantages-fiscaux-2017",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: loi-avantages-fiscaux-2017\nissue: 15\nJORT n° 15 du 21 février 2017, tome 160, ÉDITION FRANÇAISE (40 pages) ; la loi commence page 771. Article 2 § 6 (« Le taux “60%” prévu par l'article 12 bis de la loi n° 89-114 du 30 décembre 1989 […] est remplacé par le taux “45%” ») en PAGE 778. Article 23 : « les dispositions de la présente loi s'appliquent à partir du 1er avril 2017 ». Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. CORRECTION : le § 11.2 de la note documentaire indiquait « p. 777 » ; la valeur exacte est 778. Édition arabe : https://www.pist.tn/jort/2017/2017A/Ja0152017.pdf",
+      "page": "778",
+      "title": "Loi n° 2017-8 du 14 février 2017, portant refonte du dispositif des avantages fiscaux",
+      "URL": "https://www.pist.tn/jort/2017/2017F/Jo0152017.pdf",
+      "volume": "160",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            2,
+            14
+          ]
+        ]
+      },
+      "issue": "15"
+    },
+    {
+      "id": "loi-98-73",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: loi-98-73\nissue: 64\nJORT n° 64 du 11 août 1998, tome 141, pages 1736-1737. URL pist.tn vérifiée (HTTP 200). Édition arabe : https://www.pist.tn/jort/1998/1998A/Ja06498.pdf",
+      "page": "1736-1737",
+      "title": "Loi n° 98-73 du 4 août 1998, portant simplification des procédures fiscales et réduction des taux de l'impôt",
+      "URL": "https://www.pist.tn/jort/1998/1998F/Jo06498.pdf",
+      "volume": "141",
+      "issued": {
+        "date-parts": [
+          [
+            1998,
+            8,
+            4
+          ]
+        ]
+      },
+      "issue": "64"
+    },
+    {
+      "id": "lf-2026",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-2026\nissue: 148\nJORT n° 148 du 12 décembre 2025, tome 168, pages 4231-4331 ; article 56 (abattement sur les pensions et rentes viagères) page 4243 ; article 91 (régime estimatif) pages 4254-4255. URL volontairement pointée sur l'ÉDITION ARABE : l'édition française n'est pas parue au 7 septembre 2026. jort_cache.db porte pourtant un pdf_fr (/jort/2025/2025F/Jo1482025.pdf) ; ce fichier a été téléchargé et vérifié le 7 septembre 2026 : il sert le fascicule ARABE. Ne pas « corriger » l'URL vers l'adresse en 2025F. URL vérifiée (HTTP 200).",
+      "page": "4231-4331",
+      "title": "Loi n° 2025-17 du 12 décembre 2025, portant loi de finances pour l'année 2026",
+      "URL": "https://www.pist.tn/jort/2025/2025A/Ja1482025.pdf",
+      "volume": "168",
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            12
+          ]
+        ]
+      },
+      "issue": "148"
+    },
+    {
+      "id": "lf-2024",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-2024\nissue: 144\nATTENTION, DEUX ÉDITIONS. L'édition FRANÇAISE du JORT n° 144 du 12 décembre 2023 n'est pas en ligne sur pist.tn : https://www.pist.tn/jort/2023/2023F/Jo1442023.pdf renvoie un 404 (text/html, 289 octets) et jort_cache.db ne porte pas de pdf_fr pour cet enregistrement. L'URL donnée est celle de l'ÉDITION ARABE, téléchargée et ouverte le 7 septembre 2026 (184 pages, couverture « السنة 166 — الثلاثاء 12 ديسمبر 2023 — عدد 144 », loi n° 2023-13 à partir de la page 6437 de la pagination arabe). LA PAGINATION DU CHAMP page EST CELLE DE L'ÉDITION FRANÇAISE : article 34 (ajout des bons du trésor assimilables aux supports d'épargne déductibles ; les montants ne sont pas modifiés) et article 35 (délai d'introduction en bourse) en PAGE 3476 ; vérifiée sur l'extrait français du JORT conservé localement (PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_de_Finances_2024.pdf, pieds de page français, la loi y commence page 3468). CORRECTION : le § 11.2 de la note documentaire indiquait « 3475 » ; la valeur exacte est 3476. Ne pas « corriger » l'URL vers une adresse en 2023F, ni la pagination vers la pagination arabe.",
+      "page": "3476",
+      "title": "Loi n° 2023-13 du 11 décembre 2023, portant loi de finances pour l'année 2024",
+      "URL": "https://www.pist.tn/jort/2023/2023A/Ja1442023.pdf",
+      "volume": "166",
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            11
+          ]
+        ]
+      },
+      "issue": "144"
+    },
+    {
+      "id": "lf-2023",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-2023\nissue: 141\nJORT n° 141 du 23 décembre 2022, tome 165. Numéro et date du fascicule ÉTABLIS : la notice jort_cache.db rattache le « مرسوم عدد 79 لسنة 2022 مؤرخ في 22 ديسمبر 2022 و المتعلق بقانون المالية لسنة 2023 » au JORT n° 141 de 2022, date de publication 23 décembre 2022, tome 165, et le sommaire de l'ÉDITION ARABE téléchargée et ouverte le 7 septembre 2026 (168 pages, couverture « السنة 165 — الجمعة 23 ديسمبر 2022 — عدد 141 ») le confirme, le décret-loi commençant page 4059 de la pagination arabe. ATTENTION : l'édition FRANÇAISE n'est pas en ligne sur pist.tn — https://www.pist.tn/jort/2022/2022F/Jo1412022.pdf renvoie un 404 (text/html, 289 octets), bien que jort_cache.db porte un pdf_fr pour d'autres textes du même fascicule. TODO — LA PAGINATION FRANÇAISE N'EST PAS ÉTABLIE, d'où l'absence de champ page : le fascicule français est absent en ligne et la copie locale PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_de_Finances_2023.pdf est illisible (« Couldn't read xref table »). Ne pas y substituer la pagination arabe sans le dire. Articles intéressant l'assiette de l'IRPP : article 43 (revenus fonciers, refonte des exclusions de la plus-value et seuil de 500 000 D), article 41-2 (article 38 point 24), article 42-2 (abrogation du point 18 de l'article 38), article 22 (taux de la contribution sociale de solidarité).",
+      "title": "Décret-loi n° 2022-79 du 22 décembre 2022, portant loi de finances pour l'année 2023",
+      "URL": "https://www.pist.tn/jort/2022/2022A/Ja1412022.pdf",
+      "volume": "165",
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            22
+          ]
+        ]
+      },
+      "issue": "141"
+    },
+    {
+      "id": "lf-2018",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-2018\nissue: 101\nJORT n° 101 du 19 décembre 2017, tome 160, ÉDITION FRANÇAISE ; la loi commence page 4268. Article 53 (institution de la contribution sociale de solidarité) et article 54 (déduction au titre du chef de famille portée à 300 D) en PAGE 4289 ; article 55 (enfant infirme, 1 200 → 2 000 D) en PAGE 4290 ; article 67 en page 4292, dont le § 4 fixe l'effet de l'article 54 « aux revenus et bénéfices réalisés à partir du 1er janvier 2019 ». Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. CORRECTION : le § 11.2 de la note documentaire plaçait les articles 54 et 55 tous deux en page 4289. Édition arabe : https://www.pist.tn/jort/2017/2017A/Ja1012017.pdf",
+      "page": "4289-4290",
+      "title": "Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018",
+      "URL": "https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf",
+      "volume": "160",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            12,
+            18
+          ]
+        ]
+      },
+      "issue": "101"
+    },
+    {
+      "id": "lf-2022",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-2022\nissue: 119\nJORT n° 119 du 28 décembre 2021, tome 164, ÉDITION FRANÇAISE (179 pages) ; le décret-loi commence page 3081. Article 24 (intérêts de l'épargne : « cinq mille dinars » → « dix mille dinars » et « trois mille dinars » → « six mille dinars », article 39 § II du code) en PAGE 3086. NC 1/2022 : effet sur les revenus réalisés à partir de l'année 2021. Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. Édition arabe : https://www.pist.tn/jort/2021/2021A/Ja1192021.pdf",
+      "page": "3086",
+      "title": "Décret-loi n° 2021-21 du 28 décembre 2021, portant loi de finances pour l'année 2022",
+      "URL": "https://www.pist.tn/jort/2021/2021F/Jo1192021.pdf",
+      "volume": "164",
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            12,
+            28
+          ]
+        ]
+      },
+      "issue": "119"
+    },
+    {
+      "id": "lf-2021",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-2021\nissue: 128\nJORT n° 128 du 25 décembre 2020, tome 163, ÉDITION FRANÇAISE (200 pages) ; la loi commence page 3124. Article 16 en PAGE 3129 : § 1 compte épargne en actions (50 000 → 100 000 D), § 2 contrats assurance-vie et de capitalisation (10 000 → 100 000 D), § 3 soumission de la déduction au minimum d'impôt de l'article 12 bis de la loi n° 89-114. La loi NE MODIFIE PAS le taux de l'article 12 bis. Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. CORRECTION : le § 11.2 de la note documentaire indiquait « 3128-3129 » ; l'article 16 est entièrement en page 3129 — l'article 15 le précède sur la même page, et la page 3130 s'ouvre sur l'intitulé « Révision du régime fiscal des revenus de capitaux mobiliers » suivi de l'article 17. Édition arabe : https://www.pist.tn/jort/2020/2020A/Ja1282020.pdf",
+      "page": "3129",
+      "title": "Loi n° 2020-46 du 23 décembre 2020, portant loi de finances pour l'année 2021",
+      "URL": "https://www.pist.tn/jort/2020/2020F/Jo1282020.pdf",
+      "volume": "163",
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            12,
+            23
+          ]
+        ]
+      },
+      "issue": "128"
+    },
+    {
+      "id": "lf-2020",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-2020\nissue: 104\nATTENTION, DEUX ÉDITIONS. L'édition FRANÇAISE du JORT n° 104 du 27 décembre 2019 n'est pas en ligne sur pist.tn : https://www.pist.tn/jort/2019/2019F/Jo1042019.pdf renvoie un 404 (text/html, 289 octets) et jort_cache.db ne porte pas de pdf_fr pour cet enregistrement. L'URL donnée est celle de l'ÉDITION ARABE, téléchargée et ouverte le 7 septembre 2026 (192 pages, couverture « السنة 162 — الجمعة 27 ديسمبر 2019 — عدد 104 », loi n° 2019-78 à partir de la page 4699 de la pagination arabe). LA PAGINATION DU CHAMP page EST CELLE DE L'ÉDITION FRANÇAISE : article 41 (plafond de la déduction pour parent à charge porté de 150 D à 450 D et condition de ressources portée au double du SMIG, article 40 § IV du code) en PAGE 4435 ; vérifiée sur l'extrait français du JORT conservé localement (PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_n_2019-78_du_23_décembre_2019_portant_loi_de_finances_pour_lannée_2020.pdf, pieds de page français, la loi y commence page 4425). NC 3/2020 : effet sur les revenus réalisés à partir du 1er janvier 2019. Ne pas « corriger » l'URL vers une adresse en 2019F, ni la pagination vers la pagination arabe.",
+      "page": "4435",
+      "title": "Loi n° 2019-78 du 23 décembre 2019, portant loi de finances pour l'année 2020",
+      "URL": "https://www.pist.tn/jort/2019/2019A/Ja1042019.pdf",
+      "volume": "162",
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            12,
+            23
+          ]
+        ]
+      },
+      "issue": "104"
+    },
+    {
+      "id": "lf-2017",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-2017\nissue: 105\nJORT n° 105 du 27 décembre 2016 ; la loi commence page 3829, l'article 14 (barème applicable aux revenus réalisés à compter du 1er janvier 2017) est en page 3831. Pagination et tome absents de la notice de jort_cache.db, relevés sur le fascicule. URL pist.tn vérifiée (HTTP 200). Édition arabe : https://www.pist.tn/jort/2016/2016A/Ja1052016.pdf",
+      "page": "3829",
+      "title": "Loi n° 2016-78 du 17 décembre 2016, portant loi de finances pour l'année 2017",
+      "URL": "https://www.pist.tn/jort/2016/2016F/Jo1052016.pdf",
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            17
+          ]
+        ]
+      },
+      "issue": "105"
+    },
+    {
+      "id": "lf-2016",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-2016\nissue: 104\nATTENTION, DEUX ÉDITIONS. L'édition FRANÇAISE du JORT n° 104 du 29 décembre 2015 n'est pas en ligne sur pist.tn : https://www.pist.tn/jort/2015/2015F/Jo1042015.pdf renvoie un 404 (text/html, 289 octets), et jort_cache.db ne porte pas de pdf_fr pour cet enregistrement. L'URL donnée est donc celle de l'ÉDITION ARABE, téléchargée et ouverte le 7 septembre 2026 (312 pages, couverture « السنة 158 — الثلاثاء 29 ديسمبر 2015 — عدد 104 », loi n° 2015-53 à partir de la page 3597 de la pagination arabe). LA PAGINATION DU CHAMP page EST CELLE DE L'ÉDITION FRANÇAISE : article 21 (« Rationalisation de l'assiette forfaitaire de l'impôt pour les revenus fonciers » : abattement des propriétés bâties ramené de 30 % à 20 %) en PAGE 3143, article 92 (application à compter du 1er janvier 2016) en page 3165 ; pagination vérifiée sur l'extrait français du JORT conservé localement (PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_de_Finances_2016.pdf, pieds de page français, la loi y commence page 3137). CORRECTION : le § 11.2 de la note documentaire indiquait « 3142-3143 » ; l'article 21 est entièrement en page 3143. NC 16/2016 : effet sur les revenus réalisés au titre de l'exercice 2015. Ne pas « corriger » l'URL vers une adresse en 2015F, ni la pagination vers la pagination arabe.",
+      "page": "3143",
+      "title": "Loi n° 2015-53 du 25 décembre 2015, portant loi de finances pour l'année 2016",
+      "URL": "https://www.pist.tn/jort/2015/2015A/Ja1042015.pdf",
+      "volume": "158",
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            12,
+            25
+          ]
+        ]
+      },
+      "issue": "104"
+    },
+    {
+      "id": "lf-2014",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-2014\nissue: 105\nJORT n° 105 du 31 décembre 2013, tome 156 ; la loi commence page 3666. Article 73 (exonération des revenus nets n'excédant pas 5 000 D des salariés et pensionnés) en page 3691. URL pist.tn vérifiée (HTTP 200). Édition arabe : https://www.pist.tn/jort/2013/2013A/Ja1052013.pdf",
+      "page": "3666-3832",
+      "title": "Loi n° 2013-54 du 30 décembre 2013, portant loi de finances pour l'année 2014",
+      "URL": "https://www.pist.tn/jort/2013/2013F/Jo1052013.pdf",
+      "volume": "156",
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            12,
+            30
+          ]
+        ]
+      },
+      "issue": "105"
+    },
+    {
+      "id": "lf-2010",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-2010\nissue: 102\nJORT n° 102 du 22 décembre 2009, tome 152, ÉDITION FRANÇAISE ; la loi commence page 3911. Article 39 (« Allègement de la charge fiscale pour les personnes à revenu limité » : intérêts des prêts au logement social ; déduction de l'article 40 § V relevée à 1 000 D) et article 40 (enfant étudiant 300 → 600 D ; enfant infirme 750 → 1 000 D) en PAGE 3919. Article 56 : application à compter du 1er janvier 2010, lue par la NC 14/2010 comme visant l'année 2009. Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. Édition arabe : https://www.pist.tn/jort/2009/2009A/Ja1022009.pdf",
+      "page": "3919",
+      "title": "Loi n° 2009-71 du 21 décembre 2009, portant loi de finances pour l'année 2010",
+      "URL": "https://www.pist.tn/jort/2009/2009F/Jo1022009.pdf",
+      "volume": "152",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            12,
+            21
+          ]
+        ]
+      },
+      "issue": "102"
+    },
+    {
+      "id": "lf-2007",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-2007\nissue: 103\nJORT n° 103 du 26 décembre 2006, tome 149, ÉDITION FRANÇAISE ; la loi commence page 4380. Article 35 (« Instauration d'un régime fiscal de faveur pour les pensions et les rentes viagères provenant de l'étranger » : abattement de 80 % du montant brut, article 37 du code) en PAGE 4387, article 36 sur la même page. Article 88 : application à compter du 1er janvier 2007, lue par la NC 18/2007 comme visant les pensions perçues en 2006. Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. CORRECTION : le § 11.2 de docs/notes/fiscalite-irpp-assiette-abattements.md indiquait « p. ~4386 » ; la valeur exacte est 4387. Édition arabe : https://www.pist.tn/jort/2006/2006A/Ja1032006.pdf",
+      "page": "4387",
+      "title": "Loi n° 2006-85 du 25 décembre 2006, portant loi de finances pour l'année 2007",
+      "URL": "https://www.pist.tn/jort/2006/2006F/Jo1032006.pdf",
+      "volume": "149",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            12,
+            25
+          ]
+        ]
+      },
+      "issue": "103"
+    },
+    {
+      "id": "lf-2005",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-2005\nissue: 105\nJORT n° 105 du 31 décembre 2004, tome 147, ÉDITION FRANÇAISE. Article 49 (création de la déduction supplémentaire de 500 D pour les salariés payés au SMIG, § V ajouté à l'article 40 du code) et article 50 (relèvement de la déduction pour enfant infirme de 500 D à 750 D) en PAGE 3440. Article 89 : « Les dispositions de la présente loi sont applicables à compter du 1er janvier 2005 », lue par la NC 33/2005 comme visant les revenus de l'année 2004. Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. La couche texte de ce fascicule porte un encodage de police décalé et n'expose pas les chiffres : la pagination a été lue à l'image, le pied de page rendu portant « Page 3440 — Journal Officiel de la République Tunisienne — 31 décembre 2004 — N° 105 ». Édition arabe : https://www.pist.tn/jort/2004/2004A/Ja1052004.pdf",
+      "page": "3440",
+      "title": "Loi n° 2004-90 du 31 décembre 2004, portant loi de finances pour l'année 2005",
+      "URL": "https://www.pist.tn/jort/2004/2004F/Jo1052004.pdf",
+      "volume": "147",
+      "issued": {
+        "date-parts": [
+          [
+            2004,
+            12,
+            31
+          ]
+        ]
+      },
+      "issue": "105"
+    },
+    {
+      "id": "lf-1998",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-1998\nissue: 104\nJORT n° 104 des 30-31 décembre 1997. Article 62, p. 2441 : minimum d'impôt au titre des avantages fiscaux, fixé à 60 % de l'impôt dû, applicable à compter du 1er janvier 1999. Article 61 : abattement sur les pensions de source étrangère par renvoi à l'article 26 du code. Métadonnées vérifiées dans le corpus JORT local (jort_cache.db).",
+      "page": "2435-2559",
+      "title": "Loi n° 97-88 du 29 décembre 1997, portant loi de finances pour la gestion 1998",
+      "URL": "https://www.pist.tn/jort/1997/1997F/Jo10497.pdf",
+      "issued": {
+        "date-parts": [
+          [
+            1997,
+            12,
+            29
+          ]
+        ]
+      },
+      "issue": "104"
+    },
+    {
+      "id": "lf-1993",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-1993\nissue: 88\nJORT n° 88 du 31 décembre 1992, tome 135 ; la loi commence page 1668. Article 101 : « Unification et simplification du régime forfaitaire ». URL pist.tn vérifiée (HTTP 200). Édition arabe : https://www.pist.tn/jort/1992/1992A/Ja08892.pdf",
+      "page": "1668",
+      "title": "Loi n° 92-122 du 29 décembre 1992, portant loi de finances pour la gestion 1993",
+      "URL": "https://www.pist.tn/jort/1992/1992F/Jo08892.pdf",
+      "volume": "135",
+      "issued": {
+        "date-parts": [
+          [
+            1992,
+            12,
+            29
+          ]
+        ]
+      },
+      "issue": "88"
+    },
+    {
+      "id": "lf-1991",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-1991\nissue: 86\nJORT n° 86 des 28-31 décembre 1990, tome 133 ; la loi commence page 2049. URL pist.tn vérifiée (HTTP 200). Édition arabe : https://www.pist.tn/jort/1990/1990A/Ja08690.pdf",
+      "page": "2049",
+      "title": "Loi n° 90-111 du 31 décembre 1990, portant loi de finances pour la gestion 1991",
+      "URL": "https://www.pist.tn/jort/1990/1990F/Jo08690.pdf",
+      "volume": "133",
+      "issued": {
+        "date-parts": [
+          [
+            1990,
+            12,
+            31
+          ]
+        ]
+      },
+      "issue": "86"
+    },
+    {
+      "id": "lf-1986",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-1986\nissue: 91\nJORT n° 91 du 31 décembre 1985, tome 128. Barème de la contribution personnelle d'État : article 8, page 1731. URL pist.tn vérifiée (HTTP 200 ; certificat TLS expiré, utiliser curl -k). Édition arabe : https://www.pist.tn/jort/1985/1985A/Ja09185.pdf",
+      "page": "1730",
+      "title": "Loi n° 85-109 du 31 décembre 1985, portant loi de finances pour la gestion 1986",
+      "URL": "https://www.pist.tn/jort/1985/1985F/Jo09185.pdf",
+      "volume": "128",
+      "issued": {
+        "date-parts": [
+          [
+            1985,
+            12,
+            31
+          ]
+        ]
+      },
+      "issue": "91"
+    },
+    {
+      "id": "dgi-nc-7-2018",
+      "type": "report",
+      "note": "citation-key: dgi-nc-7-2018\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-commune-N%C2%B007-3.pdf (3 pages, couche texte). Reproduit l'état du droit en vigueur jusqu'au 31 décembre 2017 (150 D chef de famille ; 90/75/60/45 D pour les quatre premiers enfants ; 1 200 D enfant infirme ; 1 000 D enfant étudiant) et fixe les dates d'application (article 55 : revenus à partir du 1er janvier 2017 ; article 54 : revenus à partir du 1er janvier 2019). L'en-tête du document porte une coquille : « NOTE COMMUNE N° 7/1028 » (vérifiée sur pièce). Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_numéro 7  Commentaire_des_dispositions_des_articles_54_et_55_de_la_loi_n_2017-66_du_18_décembre_2017_portant_loi_de_finances_pour_lannée_.pdf",
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "title": "Note commune n° 7/2018 — Commentaire des dispositions des articles 54 et 55 de la loi n° 2017-66 du 18 décembre 2017 portant loi de finances pour l'année 2018 relatives au relèvement des abattements au titre des charges de famille et des enfants infirmes",
+      "URL": "https://jibaya.tn/docs/note-commune-numero-7-commentaire-des-dispositions-des-articles-54-et-55-de-la-loi-n-2017-66-du-18-decembre-2017-portant-loi-de-finances-pour-lannee-2018-relatives-au-r/",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      }
+    },
+    {
+      "id": "dgi-nc-33-2005",
+      "type": "report",
+      "note": "citation-key: dgi-nc-33-2005\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-commune-n-33-1-1.pdf (3 pages, couche texte, en-tête « NOTE COMMUNE N° 33/2005 »). Atteste la valeur antérieure (500 D) et la date d'effet : « La déduction de 750 D s'applique sur les revenus de l'année 2004 à déclarer en 2005 et des années ultérieures (article 89) ». Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_numéro 33  Commentaire_des_dispositions_de_larticle_50_de_la_loi_n2004-90_du_31_décembre_2004_portant_loi_de_finances_pour_lannée_2005_re.pdf",
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "title": "Note commune n° 33/2005 — Commentaire des dispositions de l'article 50 de la loi n° 2004-90 du 31 décembre 2004, portant loi de finances pour l'année 2005, relatives au relèvement du montant déductible de l'assiette de l'impôt sur le revenu au titre des enfants infirmes",
+      "URL": "https://jibaya.tn/docs/note-commune-numero-33-commentaire-des-dispositions-de-larticle-50-de-la-loi-n2004-90-du-31-decembre-2004-portant-loi-de-finances-pour-lannee-2005-relatives/",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2005
+          ]
+        ]
+      }
+    },
+    {
+      "id": "dgi-nc-3-2020",
+      "type": "report",
+      "note": "citation-key: dgi-nc-3-2020\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-Commune-n%C2%B03-1.pdf (7 pages, SANS couche texte : en-tête « Note commune N°3/2020 » et objet lus à l'image ; cachet d'enregistrement du 5 février 2020 ; annexe d'exemple d'illustration). Relèvement de la déduction pour parent à charge de 150 D à 450 D ; date d'application : « aux revenus réalisés à partir du 1er janvier 2019 à déclarer à partir du 1er janvier 2020 ». Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_N03_Commentaire_des_dispositions_des_articles_40_et_41_de_la_loi_n2019-78_du_23_décembre_2019_portant_loi_de_finances_pour_lannée_2020_re.pdf",
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "title": "Note commune n° 3/2020 — Commentaire des dispositions des articles 40 et 41 de la loi n° 2019-78 du 23 décembre 2019, portant loi de finances pour l'année 2020 relatives à l'assouplissement et l'amélioration de l'abattement de certaines déductions communes",
+      "URL": "https://jibaya.tn/docs/note-commune-numero-note-commune-n03-commentaire-des-dispositions-des-articles-40-et-41-de-la-loi-n2019-78-du-23-decembre-2019-portant-loi-de-finances-pour-lannee-2020-rela/",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "id": "dgi-nc-3-2017",
+      "type": "report",
+      "note": "citation-key: dgi-nc-3-2017\nReproduit côte à côte le barème en vigueur jusqu'au 31 décembre 2016 et le barème issu de la loi de finances pour 2017. Numérotation confirmée dans le corps du document (« Annexe à la note commune n°3/2017 »). Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_numéro 3  Commentaire_des_dispositions_de_larticle_14_de_la_loi_n_2016-78_du_17_décembre_2016_portant_loi_de_finances_pour_lannée_2017_re.pdf. URL PÉRENNE IDENTIFIÉE ET VÉRIFIÉE le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) — le TODO « pas d'URL pérenne identifiée » est levé. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-Commune-n%C2%B003-5.pdf (SANS couche texte : en-tête « NOTE COMMUNE N° 3/2017 », objet « Commentaire des dispositions de l'article 14 de la loi n° 2016-78 du 17 décembre 2016 portant loi de finances pour l'année 2017 relatives à l'allégement de la charge fiscale des personnes physiques à faible revenu et au renforcement de l'équité fiscale » et mention « ANNEXE : Exemples d'illustration » lus à l'image ; cachet d'enregistrement du 24 janvier 2017). ATTENTION, le slug de la page jibaya.tn mentionne à tort « larticle-13 » (collision de slug avec la note commune n° 2/2017) ; le titre de la page et le PDF servi sont bien ceux de la note commune n° 3/2017.",
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "title": "Note commune n° 3/2017 — Commentaire des dispositions de l'article 14 de la loi n° 2016-78 du 17 décembre 2016 portant loi de finances pour l'année 2017",
+      "URL": "https://jibaya.tn/docs/note-commune-numero-2-commentaire-des-dispositions-de-larticle-13-de-la-loi-n2016-78-du-17-decembre-2016-portant-loi-de-finances-pour-lannee-2017-relatives-au-2/",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      }
+    },
+    {
+      "id": "dgi-nc-2-2017",
+      "type": "report",
+      "note": "citation-key: dgi-nc-2-2017\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-Commune-n%C2%B002-4.pdf (2 pages, SANS couche texte : en-tête « NOTE COMMUNE N° 2/2017 » et objet lus à l'image ; cachet d'enregistrement du 19 janvier 2017). Atteste les valeurs antérieures (1 500 D et 1 000 D) et la date d'effet : « s'applique aux intérêts réalisés à partir du 1er janvier 2016 déductibles des revenus réalisés au cours de l'année 2016 à déclarer au cours de l'année 2017 ». Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_numéro 2  Commentaire_des_dispositions_de_larticle_13_de_la_loi_n2016-78_du_17_décembre_2016_portant_loi_de_finances_pour_lannée_2017_rel.pdf",
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "title": "Note commune n° 2/2017 — Commentaire des dispositions de l'article 13 de la loi n° 2016-78 du 17 décembre 2016 portant loi de finances pour l'année 2017 relatives au relèvement du montant des intérêts des comptes spéciaux d'épargne déductible de l'assiette de l'impôt",
+      "URL": "https://jibaya.tn/docs/note-commune-numero-2-commentaire-des-dispositions-de-larticle-13-de-la-loi-n2016-78-du-17-decembre-2016-portant-loi-de-finances-pour-lannee-2017-relatives-au/",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      }
+    },
+    {
+      "id": "dgi-nc-18-2007",
+      "type": "report",
+      "note": "citation-key: dgi-nc-18-2007\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-commune-n-18-6.pdf (6 pages, couche texte ; publiée au Bulletin officiel des douanes et des impôts n° 2007/03/11, texte n° DGI 2007/29). Date d'effet de l'abattement de 80 % sur les pensions de source étrangère : « s'applique aux pensions et rentes perçues en 2006 et déclarées en 2007 ». Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_numéro 18  Commentaire_des_dispositions_des_articles_35_et_36_de_la_loi_n2006-85_du_25_décembre_2006_portant_loi_de_finances_pour_lannée_.pdf",
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "title": "Note commune n° 18/2007 — Commentaire des dispositions des articles 35 et 36 de la loi n° 2006-85 du 25 décembre 2006 portant loi de finances pour l'année 2007 relatives à l'instauration d'un régime fiscal de faveur pour les pensions et les rentes viagères de source étrangère",
+      "URL": "https://jibaya.tn/docs/note-commune-numero-18-commentaire-des-dispositions-des-articles-35-et-36-de-la-loi-n2006-85-du-25-decembre-2006-portant-loi-de-finances-pour-lannee-2007-relatives-a-l/",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2007
+          ]
+        ]
+      }
+    },
+    {
+      "id": "dgi-nc-16-2016",
+      "type": "report",
+      "note": "citation-key: dgi-nc-16-2016\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-commune-n-16.pdf (13 pages, couche texte, en-tête « NOTE COMMUNE N°16 /2016 »). Abattement forfaitaire des revenus fonciers bâtis ramené de 30 % à 20 % ; date d'application : « aux revenus et bénéfices réalisés au titre de l'exercice 2015 et au titre des exercices ultérieurs ». Comporte des exemples chiffrés en annexe. Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_numéro 16  Commentaire_des_dispositions_des_articles_21_23_et_27_de_la_loi_n2015-53_du_25_décembre_2015_portant_loi_de_finances_pour_lann.pdf",
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "title": "Note commune n° 16/2016 — Commentaire des dispositions des articles 21, 23 et 27 de la loi n° 2015-53 du 25 décembre 2015 portant loi de finances pour l'année 2016",
+      "URL": "https://jibaya.tn/docs/note-commune-numero-16-commentaire-des-dispositions-des-articles-21-23-et-27-de-la-loi-n2015-53-du-25-decembre-2015-portant-loi-de-finances-pour-lannee-2016/",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "id": "dgi-nc-14-2010",
+      "type": "report",
+      "note": "citation-key: dgi-nc-14-2010\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-commune-n-14-4.pdf (3 pages, couche texte ; publiée au Bulletin officiel des douanes et des impôts n° 2010/03/12, texte n° DGI 2010/21, sous l'intitulé « Note commune n° 14 pour l'année 2010 »). Pièce de la règle de conversion : « Les dispositions de la loi de finances pour l'année 2010 s'appliquent à partir du 1er janvier 2010. Sur cette base, la déduction des intérêts s'applique à partir des intérêts payés au cours de l'année 2009. » Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_numéro 14  commentaire_des_dispositions_de_larticle_39_de_la_loi_n2009-71_du_21_décembre_2009_portant_loi_de_finances_pour_lannée_2010_re.pdf",
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "title": "Note commune n° 14/2010 — Commentaire des dispositions de l'article 39 de la loi n° 2009-71 du 21 décembre 2009 portant loi de finances pour l'année 2010 relatives à la déduction des intérêts des prêts relatifs à l'acquisition ou la construction d'un logement social de l'assiette de l'impôt sur le revenu",
+      "URL": "https://jibaya.tn/docs/note-commune-numero-14-commentaire-des-dispositions-de-larticle-39-de-la-loi-n2009-71-du-21-decembre-2009-portant-loi-de-finances-pour-lannee-2010-relatives-a/",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      }
+    },
+    {
+      "id": "dgi-nc-1-2022",
+      "type": "report",
+      "note": "citation-key: dgi-nc-1-2022\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-Commune-N%C2%B001-1.pdf (7 pages, couche texte, en-tête « Note commune N° 1/2022 »). Date d'application : « s'appliquent aux intérêts déductibles des revenus réalisés à partir de l'année 2021 à déclarer au cours de l'année 2022 et des années ultérieures ». Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_N01__Commentaire_des_dispositions_des_articles_24_29_et_38_du_décret-loi_n2021-21_du_28_décembre_2021_portant_loi_de_finances_pour_lannée.pdf",
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "title": "Note commune n° 1/2022 — Commentaire des dispositions des articles 24, 29 et 38 du décret-loi n° 2021-21 du 28 décembre 2021 portant loi de finances pour l'année 2022, relatives à l'instauration de mesures en faveur de l'épargne, l'appui au financement de l'économie verte et la réinstauration de la retenue à la source déductible due sur les revenus de capitaux mobiliers",
+      "URL": "https://jibaya.tn/docs/note-commune-numero-note-commune-n01-commentaire-des-dispositions-des-articles-24-29-et-38-du-decret-loi-n2021-21-du-28-decembre-2021-portant-loi-de-finances-pour-lannee-2/",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    {
+      "id": "dgi-nc-1-2021",
+      "type": "report",
+      "note": "citation-key: dgi-nc-1-2021\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-Commune-N%C2%B01.pdf (7 pages, SANS couche texte : en-tête « NOTE COMMUNE N°1/2021 » et objet lus à l'image ; cachet d'enregistrement du 13 janvier 2021 ; en-tête « Ministère de l'économie, des finances et de l'appui à l'investissement »). PIÈCE CLÉ pour le plafonnement : énonce le minimum d'impôt de l'article 12 bis de la loi n° 89-114 comme « fixé à 45 % de l'impôt dû sur le revenu global compte non tenu de cette déduction ». Documente aussi les relèvements du compte épargne en actions (50 000 → 100 000 D) et de l'assurance-vie (10 000 → 100 000 D). Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_N1_Commentaire_des_dispositions_de_larticle_16_de_la_loi_n2020-46_du_23_décembre_2020_portant_loi_de_finances_pour_lannée_2021_relatives_.pdf",
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "title": "Note commune n° 1/2021 — Commentaire des dispositions de l'article 16 de la loi n° 2020-46 du 23 décembre 2020 portant loi de finances pour l'année 2021 relatives à l'encouragement de l'épargne à moyen et long terme via les comptes épargne en actions et les contrats assurance-vie et de capitalisation",
+      "URL": "https://jibaya.tn/docs/note-commune-n1-commentaire-des-dispositions-de-larticle-16-de-la-loi-n2020-46-du-23-decembre-2020-portant-loi-de-finances-pour-lannee-2021-relatives-a-lencouragement/",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      }
+    },
+    {
+      "id": "code-irpp-is-1990",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: code-irpp-is-1990\nissue: 1\nJORT n° 1 des 2-5 janvier 1990, tome 133, pages 3-21 ; article 44 en page 9. Date d'édition = date de publication du fascicule (2 janvier 1990) et non date de signature, le code annexé ayant paru dans un fascicule distinct de la loi de promulgation. Clé distincte de loi-irpp-is-1989 (JORT n° 88 du 31 décembre 1989, Jo08889.pdf), qui porte la seule loi de promulgation, sans le code annexé. URL pist.tn vérifiée (HTTP 200). Édition arabe : https://www.pist.tn/jort/1990/1990A/Ja00190.pdf",
+      "page": "3-21",
+      "title": "Code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés (texte annexé à la loi n° 89-114 du 30 décembre 1989)",
+      "URL": "https://www.pist.tn/jort/1990/1990F/Jo00190.pdf",
+      "volume": "133",
+      "issued": {
+        "date-parts": [
+          [
+            1990,
+            1,
+            2
+          ]
+        ]
+      },
+      "issue": "1"
+    },
+    {
       "id": "eset2016",
       "type": "webpage",
       "container-title": "ESET - Portail économique du Sud-Est Tunisien",
@@ -173,613 +780,6 @@
           ]
         ]
       }
-    },
-    {
-      "id": "lf-1986",
-      "type": "legislation",
-      "title": "Loi n° 85-109 du 31 décembre 1985, portant loi de finances pour la gestion 1986",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "91",
-      "volume": "128",
-      "page": "1730",
-      "issued": {
-        "date-parts": [
-          [
-            1985,
-            12,
-            31
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1985/1985F/Jo09185.pdf",
-      "note": "citation-key: lf-1986\nJORT n° 91 du 31 décembre 1985, tome 128. Barème de la contribution personnelle d'État : article 8, page 1731. URL pist.tn vérifiée (HTTP 200 ; certificat TLS expiré, utiliser curl -k). Édition arabe : https://www.pist.tn/jort/1985/1985A/Ja09185.pdf"
-    },
-    {
-      "id": "code-irpp-is-1990",
-      "type": "legislation",
-      "title": "Code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés (texte annexé à la loi n° 89-114 du 30 décembre 1989)",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "1",
-      "volume": "133",
-      "page": "3-21",
-      "issued": {
-        "date-parts": [
-          [
-            1990,
-            1,
-            2
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1990/1990F/Jo00190.pdf",
-      "note": "citation-key: code-irpp-is-1990\nJORT n° 1 des 2-5 janvier 1990, tome 133, pages 3-21 ; article 44 en page 9. Date d'édition = date de publication du fascicule (2 janvier 1990) et non date de signature, le code annexé ayant paru dans un fascicule distinct de la loi de promulgation. Clé distincte de loi-irpp-is-1989 (JORT n° 88 du 31 décembre 1989, Jo08889.pdf), qui porte la seule loi de promulgation, sans le code annexé. URL pist.tn vérifiée (HTTP 200). Édition arabe : https://www.pist.tn/jort/1990/1990A/Ja00190.pdf"
-    },
-    {
-      "id": "lf-1991",
-      "type": "legislation",
-      "title": "Loi n° 90-111 du 31 décembre 1990, portant loi de finances pour la gestion 1991",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "86",
-      "volume": "133",
-      "page": "2049",
-      "issued": {
-        "date-parts": [
-          [
-            1990,
-            12,
-            31
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1990/1990F/Jo08690.pdf",
-      "note": "citation-key: lf-1991\nJORT n° 86 des 28-31 décembre 1990, tome 133 ; la loi commence page 2049. URL pist.tn vérifiée (HTTP 200). Édition arabe : https://www.pist.tn/jort/1990/1990A/Ja08690.pdf"
-    },
-    {
-      "id": "lf-1993",
-      "type": "legislation",
-      "title": "Loi n° 92-122 du 29 décembre 1992, portant loi de finances pour la gestion 1993",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "88",
-      "volume": "135",
-      "page": "1668",
-      "issued": {
-        "date-parts": [
-          [
-            1992,
-            12,
-            29
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1992/1992F/Jo08892.pdf",
-      "note": "citation-key: lf-1993\nJORT n° 88 du 31 décembre 1992, tome 135 ; la loi commence page 1668. Article 101 : « Unification et simplification du régime forfaitaire ». URL pist.tn vérifiée (HTTP 200). Édition arabe : https://www.pist.tn/jort/1992/1992A/Ja08892.pdf"
-    },
-    {
-      "id": "loi-98-73",
-      "type": "legislation",
-      "title": "Loi n° 98-73 du 4 août 1998, portant simplification des procédures fiscales et réduction des taux de l'impôt",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "64",
-      "volume": "141",
-      "page": "1736-1737",
-      "issued": {
-        "date-parts": [
-          [
-            1998,
-            8,
-            4
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1998/1998F/Jo06498.pdf",
-      "note": "citation-key: loi-98-73\nJORT n° 64 du 11 août 1998, tome 141, pages 1736-1737. URL pist.tn vérifiée (HTTP 200). Édition arabe : https://www.pist.tn/jort/1998/1998A/Ja06498.pdf"
-    },
-    {
-      "id": "lf-2014",
-      "type": "legislation",
-      "title": "Loi n° 2013-54 du 30 décembre 2013, portant loi de finances pour l'année 2014",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "105",
-      "volume": "156",
-      "page": "3666-3832",
-      "issued": {
-        "date-parts": [
-          [
-            2013,
-            12,
-            30
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2013/2013F/Jo1052013.pdf",
-      "note": "citation-key: lf-2014\nJORT n° 105 du 31 décembre 2013, tome 156 ; la loi commence page 3666. Article 73 (exonération des revenus nets n'excédant pas 5 000 D des salariés et pensionnés) en page 3691. URL pist.tn vérifiée (HTTP 200). Édition arabe : https://www.pist.tn/jort/2013/2013A/Ja1052013.pdf"
-    },
-    {
-      "id": "lf-2017",
-      "type": "legislation",
-      "title": "Loi n° 2016-78 du 17 décembre 2016, portant loi de finances pour l'année 2017",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "105",
-      "page": "3829",
-      "issued": {
-        "date-parts": [
-          [
-            2016,
-            12,
-            17
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2016/2016F/Jo1052016.pdf",
-      "note": "citation-key: lf-2017\nJORT n° 105 du 27 décembre 2016 ; la loi commence page 3829, l'article 14 (barème applicable aux revenus réalisés à compter du 1er janvier 2017) est en page 3831. Pagination et tome absents de la notice de jort_cache.db, relevés sur le fascicule. URL pist.tn vérifiée (HTTP 200). Édition arabe : https://www.pist.tn/jort/2016/2016A/Ja1052016.pdf"
-    },
-    {
-      "id": "lf-2026",
-      "type": "legislation",
-      "title": "Loi n° 2025-17 du 12 décembre 2025, portant loi de finances pour l'année 2026",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "148",
-      "volume": "168",
-      "page": "4231-4331",
-      "issued": {
-        "date-parts": [
-          [
-            2025,
-            12,
-            12
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2025/2025A/Ja1482025.pdf",
-      "note": "citation-key: lf-2026\nJORT n° 148 du 12 décembre 2025, tome 168, pages 4231-4331 ; article 56 (abattement sur les pensions et rentes viagères) page 4243 ; article 91 (régime estimatif) pages 4254-4255. URL volontairement pointée sur l'ÉDITION ARABE : l'édition française n'est pas parue au 7 septembre 2026. jort_cache.db porte pourtant un pdf_fr (/jort/2025/2025F/Jo1482025.pdf) ; ce fichier a été téléchargé et vérifié le 7 septembre 2026 : il sert le fascicule ARABE. Ne pas « corriger » l'URL vers l'adresse en 2025F. URL vérifiée (HTTP 200)."
-    },
-    {
-      "id": "dgi-nc-3-2017",
-      "type": "report",
-      "title": "Note commune n° 3/2017 — Commentaire des dispositions de l'article 14 de la loi n° 2016-78 du 17 décembre 2016 portant loi de finances pour l'année 2017",
-      "author": [
-        {
-          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
-        }
-      ],
-      "publisher": "Ministère des finances",
-      "publisher-place": "Tunis",
-      "issued": {
-        "date-parts": [
-          [
-            2017
-          ]
-        ]
-      },
-      "note": "citation-key: dgi-nc-3-2017\nReproduit côte à côte le barème en vigueur jusqu'au 31 décembre 2016 et le barème issu de la loi de finances pour 2017. Numérotation confirmée dans le corps du document (« Annexe à la note commune n°3/2017 »). Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_numéro 3  Commentaire_des_dispositions_de_larticle_14_de_la_loi_n_2016-78_du_17_décembre_2016_portant_loi_de_finances_pour_lannée_2017_re.pdf. URL PÉRENNE IDENTIFIÉE ET VÉRIFIÉE le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) — le TODO « pas d'URL pérenne identifiée » est levé. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-Commune-n%C2%B003-5.pdf (SANS couche texte : en-tête « NOTE COMMUNE N° 3/2017 », objet « Commentaire des dispositions de l'article 14 de la loi n° 2016-78 du 17 décembre 2016 portant loi de finances pour l'année 2017 relatives à l'allégement de la charge fiscale des personnes physiques à faible revenu et au renforcement de l'équité fiscale » et mention « ANNEXE : Exemples d'illustration » lus à l'image ; cachet d'enregistrement du 24 janvier 2017). ATTENTION, le slug de la page jibaya.tn mentionne à tort « larticle-13 » (collision de slug avec la note commune n° 2/2017) ; le titre de la page et le PDF servi sont bien ceux de la note commune n° 3/2017.",
-      "URL": "https://jibaya.tn/docs/note-commune-numero-2-commentaire-des-dispositions-de-larticle-13-de-la-loi-n2016-78-du-17-decembre-2016-portant-loi-de-finances-pour-lannee-2017-relatives-au-2/"
-    },
-    {
-      "id": "lf-2005",
-      "type": "legislation",
-      "title": "Loi n° 2004-90 du 31 décembre 2004, portant loi de finances pour l'année 2005",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "105",
-      "volume": 147,
-      "page": "3440",
-      "issued": {
-        "date-parts": [
-          [
-            2004,
-            12,
-            31
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2004/2004F/Jo1052004.pdf",
-      "note": "citation-key: lf-2005\nJORT n° 105 du 31 décembre 2004, tome 147, ÉDITION FRANÇAISE. Article 49 (création de la déduction supplémentaire de 500 D pour les salariés payés au SMIG, § V ajouté à l'article 40 du code) et article 50 (relèvement de la déduction pour enfant infirme de 500 D à 750 D) en PAGE 3440. Article 89 : « Les dispositions de la présente loi sont applicables à compter du 1er janvier 2005 », lue par la NC 33/2005 comme visant les revenus de l'année 2004. Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. La couche texte de ce fascicule porte un encodage de police décalé et n'expose pas les chiffres : la pagination a été lue à l'image, le pied de page rendu portant « Page 3440 — Journal Officiel de la République Tunisienne — 31 décembre 2004 — N° 105 ». Édition arabe : https://www.pist.tn/jort/2004/2004A/Ja1052004.pdf"
-    },
-    {
-      "id": "lf-2007",
-      "type": "legislation",
-      "title": "Loi n° 2006-85 du 25 décembre 2006, portant loi de finances pour l'année 2007",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "103",
-      "volume": 149,
-      "page": "4387",
-      "issued": {
-        "date-parts": [
-          [
-            2006,
-            12,
-            25
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2006/2006F/Jo1032006.pdf",
-      "note": "citation-key: lf-2007\nJORT n° 103 du 26 décembre 2006, tome 149, ÉDITION FRANÇAISE ; la loi commence page 4380. Article 35 (« Instauration d'un régime fiscal de faveur pour les pensions et les rentes viagères provenant de l'étranger » : abattement de 80 % du montant brut, article 37 du code) en PAGE 4387, article 36 sur la même page. Article 88 : application à compter du 1er janvier 2007, lue par la NC 18/2007 comme visant les pensions perçues en 2006. Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. CORRECTION : le § 11.2 de docs/notes/fiscalite-irpp-assiette-abattements.md indiquait « p. ~4386 » ; la valeur exacte est 4387. Édition arabe : https://www.pist.tn/jort/2006/2006A/Ja1032006.pdf"
-    },
-    {
-      "id": "lf-2010",
-      "type": "legislation",
-      "title": "Loi n° 2009-71 du 21 décembre 2009, portant loi de finances pour l'année 2010",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "102",
-      "volume": 152,
-      "page": "3919",
-      "issued": {
-        "date-parts": [
-          [
-            2009,
-            12,
-            21
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2009/2009F/Jo1022009.pdf",
-      "note": "citation-key: lf-2010\nJORT n° 102 du 22 décembre 2009, tome 152, ÉDITION FRANÇAISE ; la loi commence page 3911. Article 39 (« Allègement de la charge fiscale pour les personnes à revenu limité » : intérêts des prêts au logement social ; déduction de l'article 40 § V relevée à 1 000 D) et article 40 (enfant étudiant 300 → 600 D ; enfant infirme 750 → 1 000 D) en PAGE 3919. Article 56 : application à compter du 1er janvier 2010, lue par la NC 14/2010 comme visant l'année 2009. Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. Édition arabe : https://www.pist.tn/jort/2009/2009A/Ja1022009.pdf"
-    },
-    {
-      "id": "lf-2016",
-      "type": "legislation",
-      "title": "Loi n° 2015-53 du 25 décembre 2015, portant loi de finances pour l'année 2016",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "104",
-      "volume": 158,
-      "page": "3143",
-      "issued": {
-        "date-parts": [
-          [
-            2015,
-            12,
-            25
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2015/2015A/Ja1042015.pdf",
-      "note": "citation-key: lf-2016\nATTENTION, DEUX ÉDITIONS. L'édition FRANÇAISE du JORT n° 104 du 29 décembre 2015 n'est pas en ligne sur pist.tn : https://www.pist.tn/jort/2015/2015F/Jo1042015.pdf renvoie un 404 (text/html, 289 octets), et jort_cache.db ne porte pas de pdf_fr pour cet enregistrement. L'URL donnée est donc celle de l'ÉDITION ARABE, téléchargée et ouverte le 7 septembre 2026 (312 pages, couverture « السنة 158 — الثلاثاء 29 ديسمبر 2015 — عدد 104 », loi n° 2015-53 à partir de la page 3597 de la pagination arabe). LA PAGINATION DU CHAMP page EST CELLE DE L'ÉDITION FRANÇAISE : article 21 (« Rationalisation de l'assiette forfaitaire de l'impôt pour les revenus fonciers » : abattement des propriétés bâties ramené de 30 % à 20 %) en PAGE 3143, article 92 (application à compter du 1er janvier 2016) en page 3165 ; pagination vérifiée sur l'extrait français du JORT conservé localement (PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_de_Finances_2016.pdf, pieds de page français, la loi y commence page 3137). CORRECTION : le § 11.2 de la note documentaire indiquait « 3142-3143 » ; l'article 21 est entièrement en page 3143. NC 16/2016 : effet sur les revenus réalisés au titre de l'exercice 2015. Ne pas « corriger » l'URL vers une adresse en 2015F, ni la pagination vers la pagination arabe."
-    },
-    {
-      "id": "lf-2018",
-      "type": "legislation",
-      "title": "Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "101",
-      "volume": 160,
-      "page": "4289-4290",
-      "issued": {
-        "date-parts": [
-          [
-            2017,
-            12,
-            18
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf",
-      "note": "citation-key: lf-2018\nJORT n° 101 du 19 décembre 2017, tome 160, ÉDITION FRANÇAISE ; la loi commence page 4268. Article 53 (institution de la contribution sociale de solidarité) et article 54 (déduction au titre du chef de famille portée à 300 D) en PAGE 4289 ; article 55 (enfant infirme, 1 200 → 2 000 D) en PAGE 4290 ; article 67 en page 4292, dont le § 4 fixe l'effet de l'article 54 « aux revenus et bénéfices réalisés à partir du 1er janvier 2019 ». Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. CORRECTION : le § 11.2 de la note documentaire plaçait les articles 54 et 55 tous deux en page 4289. Édition arabe : https://www.pist.tn/jort/2017/2017A/Ja1012017.pdf"
-    },
-    {
-      "id": "lf-2020",
-      "type": "legislation",
-      "title": "Loi n° 2019-78 du 23 décembre 2019, portant loi de finances pour l'année 2020",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "104",
-      "volume": 162,
-      "page": "4435",
-      "issued": {
-        "date-parts": [
-          [
-            2019,
-            12,
-            23
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2019/2019A/Ja1042019.pdf",
-      "note": "citation-key: lf-2020\nATTENTION, DEUX ÉDITIONS. L'édition FRANÇAISE du JORT n° 104 du 27 décembre 2019 n'est pas en ligne sur pist.tn : https://www.pist.tn/jort/2019/2019F/Jo1042019.pdf renvoie un 404 (text/html, 289 octets) et jort_cache.db ne porte pas de pdf_fr pour cet enregistrement. L'URL donnée est celle de l'ÉDITION ARABE, téléchargée et ouverte le 7 septembre 2026 (192 pages, couverture « السنة 162 — الجمعة 27 ديسمبر 2019 — عدد 104 », loi n° 2019-78 à partir de la page 4699 de la pagination arabe). LA PAGINATION DU CHAMP page EST CELLE DE L'ÉDITION FRANÇAISE : article 41 (plafond de la déduction pour parent à charge porté de 150 D à 450 D et condition de ressources portée au double du SMIG, article 40 § IV du code) en PAGE 4435 ; vérifiée sur l'extrait français du JORT conservé localement (PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_n_2019-78_du_23_décembre_2019_portant_loi_de_finances_pour_lannée_2020.pdf, pieds de page français, la loi y commence page 4425). NC 3/2020 : effet sur les revenus réalisés à partir du 1er janvier 2019. Ne pas « corriger » l'URL vers une adresse en 2019F, ni la pagination vers la pagination arabe."
-    },
-    {
-      "id": "lf-2021",
-      "type": "legislation",
-      "title": "Loi n° 2020-46 du 23 décembre 2020, portant loi de finances pour l'année 2021",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "128",
-      "volume": 163,
-      "page": "3129",
-      "issued": {
-        "date-parts": [
-          [
-            2020,
-            12,
-            23
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2020/2020F/Jo1282020.pdf",
-      "note": "citation-key: lf-2021\nJORT n° 128 du 25 décembre 2020, tome 163, ÉDITION FRANÇAISE (200 pages) ; la loi commence page 3124. Article 16 en PAGE 3129 : § 1 compte épargne en actions (50 000 → 100 000 D), § 2 contrats assurance-vie et de capitalisation (10 000 → 100 000 D), § 3 soumission de la déduction au minimum d'impôt de l'article 12 bis de la loi n° 89-114. La loi NE MODIFIE PAS le taux de l'article 12 bis. Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. CORRECTION : le § 11.2 de la note documentaire indiquait « 3128-3129 » ; l'article 16 est entièrement en page 3129 — l'article 15 le précède sur la même page, et la page 3130 s'ouvre sur l'intitulé « Révision du régime fiscal des revenus de capitaux mobiliers » suivi de l'article 17. Édition arabe : https://www.pist.tn/jort/2020/2020A/Ja1282020.pdf"
-    },
-    {
-      "id": "lf-2022",
-      "type": "legislation",
-      "title": "Décret-loi n° 2021-21 du 28 décembre 2021, portant loi de finances pour l'année 2022",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "119",
-      "volume": 164,
-      "page": "3086",
-      "issued": {
-        "date-parts": [
-          [
-            2021,
-            12,
-            28
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2021/2021F/Jo1192021.pdf",
-      "note": "citation-key: lf-2022\nJORT n° 119 du 28 décembre 2021, tome 164, ÉDITION FRANÇAISE (179 pages) ; le décret-loi commence page 3081. Article 24 (intérêts de l'épargne : « cinq mille dinars » → « dix mille dinars » et « trois mille dinars » → « six mille dinars », article 39 § II du code) en PAGE 3086. NC 1/2022 : effet sur les revenus réalisés à partir de l'année 2021. Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. Édition arabe : https://www.pist.tn/jort/2021/2021A/Ja1192021.pdf"
-    },
-    {
-      "id": "lf-2023",
-      "type": "legislation",
-      "title": "Décret-loi n° 2022-79 du 22 décembre 2022, portant loi de finances pour l'année 2023",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "141",
-      "volume": 165,
-      "issued": {
-        "date-parts": [
-          [
-            2022,
-            12,
-            22
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2022/2022A/Ja1412022.pdf",
-      "note": "citation-key: lf-2023\nJORT n° 141 du 23 décembre 2022, tome 165. Numéro et date du fascicule ÉTABLIS : la notice jort_cache.db rattache le « مرسوم عدد 79 لسنة 2022 مؤرخ في 22 ديسمبر 2022 و المتعلق بقانون المالية لسنة 2023 » au JORT n° 141 de 2022, date de publication 23 décembre 2022, tome 165, et le sommaire de l'ÉDITION ARABE téléchargée et ouverte le 7 septembre 2026 (168 pages, couverture « السنة 165 — الجمعة 23 ديسمبر 2022 — عدد 141 ») le confirme, le décret-loi commençant page 4059 de la pagination arabe. ATTENTION : l'édition FRANÇAISE n'est pas en ligne sur pist.tn — https://www.pist.tn/jort/2022/2022F/Jo1412022.pdf renvoie un 404 (text/html, 289 octets), bien que jort_cache.db porte un pdf_fr pour d'autres textes du même fascicule. TODO — LA PAGINATION FRANÇAISE N'EST PAS ÉTABLIE, d'où l'absence de champ page : le fascicule français est absent en ligne et la copie locale PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_de_Finances_2023.pdf est illisible (« Couldn't read xref table »). Ne pas y substituer la pagination arabe sans le dire. Articles intéressant l'assiette de l'IRPP : article 43 (revenus fonciers, refonte des exclusions de la plus-value et seuil de 500 000 D), article 41-2 (article 38 point 24), article 42-2 (abrogation du point 18 de l'article 38), article 22 (taux de la contribution sociale de solidarité)."
-    },
-    {
-      "id": "lf-2024",
-      "type": "legislation",
-      "title": "Loi n° 2023-13 du 11 décembre 2023, portant loi de finances pour l'année 2024",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "144",
-      "volume": 166,
-      "page": "3476",
-      "issued": {
-        "date-parts": [
-          [
-            2023,
-            12,
-            11
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2023/2023A/Ja1442023.pdf",
-      "note": "citation-key: lf-2024\nATTENTION, DEUX ÉDITIONS. L'édition FRANÇAISE du JORT n° 144 du 12 décembre 2023 n'est pas en ligne sur pist.tn : https://www.pist.tn/jort/2023/2023F/Jo1442023.pdf renvoie un 404 (text/html, 289 octets) et jort_cache.db ne porte pas de pdf_fr pour cet enregistrement. L'URL donnée est celle de l'ÉDITION ARABE, téléchargée et ouverte le 7 septembre 2026 (184 pages, couverture « السنة 166 — الثلاثاء 12 ديسمبر 2023 — عدد 144 », loi n° 2023-13 à partir de la page 6437 de la pagination arabe). LA PAGINATION DU CHAMP page EST CELLE DE L'ÉDITION FRANÇAISE : article 34 (ajout des bons du trésor assimilables aux supports d'épargne déductibles ; les montants ne sont pas modifiés) et article 35 (délai d'introduction en bourse) en PAGE 3476 ; vérifiée sur l'extrait français du JORT conservé localement (PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_de_Finances_2024.pdf, pieds de page français, la loi y commence page 3468). CORRECTION : le § 11.2 de la note documentaire indiquait « 3475 » ; la valeur exacte est 3476. Ne pas « corriger » l'URL vers une adresse en 2023F, ni la pagination vers la pagination arabe."
-    },
-    {
-      "id": "loi-avantages-fiscaux-2017",
-      "type": "legislation",
-      "title": "Loi n° 2017-8 du 14 février 2017, portant refonte du dispositif des avantages fiscaux",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "15",
-      "volume": 160,
-      "page": "778",
-      "issued": {
-        "date-parts": [
-          [
-            2017,
-            2,
-            14
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2017/2017F/Jo0152017.pdf",
-      "note": "citation-key: loi-avantages-fiscaux-2017\nJORT n° 15 du 21 février 2017, tome 160, ÉDITION FRANÇAISE (40 pages) ; la loi commence page 771. Article 2 § 6 (« Le taux “60%” prévu par l'article 12 bis de la loi n° 89-114 du 30 décembre 1989 […] est remplacé par le taux “45%” ») en PAGE 778. Article 23 : « les dispositions de la présente loi s'appliquent à partir du 1er avril 2017 ». Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. CORRECTION : le § 11.2 de la note documentaire indiquait « p. 777 » ; la valeur exacte est 778. Édition arabe : https://www.pist.tn/jort/2017/2017A/Ja0152017.pdf"
-    },
-    {
-      "id": "dgi-nc-33-2005",
-      "type": "report",
-      "title": "Note commune n° 33/2005 — Commentaire des dispositions de l'article 50 de la loi n° 2004-90 du 31 décembre 2004, portant loi de finances pour l'année 2005, relatives au relèvement du montant déductible de l'assiette de l'impôt sur le revenu au titre des enfants infirmes",
-      "author": [
-        {
-          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
-        }
-      ],
-      "publisher": "Ministère des finances",
-      "publisher-place": "Tunis",
-      "issued": {
-        "date-parts": [
-          [
-            2005
-          ]
-        ]
-      },
-      "URL": "https://jibaya.tn/docs/note-commune-numero-33-commentaire-des-dispositions-de-larticle-50-de-la-loi-n2004-90-du-31-decembre-2004-portant-loi-de-finances-pour-lannee-2005-relatives/",
-      "note": "citation-key: dgi-nc-33-2005\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-commune-n-33-1-1.pdf (3 pages, couche texte, en-tête « NOTE COMMUNE N° 33/2005 »). Atteste la valeur antérieure (500 D) et la date d'effet : « La déduction de 750 D s'applique sur les revenus de l'année 2004 à déclarer en 2005 et des années ultérieures (article 89) ». Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_numéro 33  Commentaire_des_dispositions_de_larticle_50_de_la_loi_n2004-90_du_31_décembre_2004_portant_loi_de_finances_pour_lannée_2005_re.pdf"
-    },
-    {
-      "id": "dgi-nc-18-2007",
-      "type": "report",
-      "title": "Note commune n° 18/2007 — Commentaire des dispositions des articles 35 et 36 de la loi n° 2006-85 du 25 décembre 2006 portant loi de finances pour l'année 2007 relatives à l'instauration d'un régime fiscal de faveur pour les pensions et les rentes viagères de source étrangère",
-      "author": [
-        {
-          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
-        }
-      ],
-      "publisher": "Ministère des finances",
-      "publisher-place": "Tunis",
-      "issued": {
-        "date-parts": [
-          [
-            2007
-          ]
-        ]
-      },
-      "URL": "https://jibaya.tn/docs/note-commune-numero-18-commentaire-des-dispositions-des-articles-35-et-36-de-la-loi-n2006-85-du-25-decembre-2006-portant-loi-de-finances-pour-lannee-2007-relatives-a-l/",
-      "note": "citation-key: dgi-nc-18-2007\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-commune-n-18-6.pdf (6 pages, couche texte ; publiée au Bulletin officiel des douanes et des impôts n° 2007/03/11, texte n° DGI 2007/29). Date d'effet de l'abattement de 80 % sur les pensions de source étrangère : « s'applique aux pensions et rentes perçues en 2006 et déclarées en 2007 ». Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_numéro 18  Commentaire_des_dispositions_des_articles_35_et_36_de_la_loi_n2006-85_du_25_décembre_2006_portant_loi_de_finances_pour_lannée_.pdf"
-    },
-    {
-      "id": "dgi-nc-14-2010",
-      "type": "report",
-      "title": "Note commune n° 14/2010 — Commentaire des dispositions de l'article 39 de la loi n° 2009-71 du 21 décembre 2009 portant loi de finances pour l'année 2010 relatives à la déduction des intérêts des prêts relatifs à l'acquisition ou la construction d'un logement social de l'assiette de l'impôt sur le revenu",
-      "author": [
-        {
-          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
-        }
-      ],
-      "publisher": "Ministère des finances",
-      "publisher-place": "Tunis",
-      "issued": {
-        "date-parts": [
-          [
-            2010
-          ]
-        ]
-      },
-      "URL": "https://jibaya.tn/docs/note-commune-numero-14-commentaire-des-dispositions-de-larticle-39-de-la-loi-n2009-71-du-21-decembre-2009-portant-loi-de-finances-pour-lannee-2010-relatives-a/",
-      "note": "citation-key: dgi-nc-14-2010\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-commune-n-14-4.pdf (3 pages, couche texte ; publiée au Bulletin officiel des douanes et des impôts n° 2010/03/12, texte n° DGI 2010/21, sous l'intitulé « Note commune n° 14 pour l'année 2010 »). Pièce de la règle de conversion : « Les dispositions de la loi de finances pour l'année 2010 s'appliquent à partir du 1er janvier 2010. Sur cette base, la déduction des intérêts s'applique à partir des intérêts payés au cours de l'année 2009. » Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_numéro 14  commentaire_des_dispositions_de_larticle_39_de_la_loi_n2009-71_du_21_décembre_2009_portant_loi_de_finances_pour_lannée_2010_re.pdf"
-    },
-    {
-      "id": "dgi-nc-16-2016",
-      "type": "report",
-      "title": "Note commune n° 16/2016 — Commentaire des dispositions des articles 21, 23 et 27 de la loi n° 2015-53 du 25 décembre 2015 portant loi de finances pour l'année 2016",
-      "author": [
-        {
-          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
-        }
-      ],
-      "publisher": "Ministère des finances",
-      "publisher-place": "Tunis",
-      "issued": {
-        "date-parts": [
-          [
-            2016
-          ]
-        ]
-      },
-      "URL": "https://jibaya.tn/docs/note-commune-numero-16-commentaire-des-dispositions-des-articles-21-23-et-27-de-la-loi-n2015-53-du-25-decembre-2015-portant-loi-de-finances-pour-lannee-2016/",
-      "note": "citation-key: dgi-nc-16-2016\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-commune-n-16.pdf (13 pages, couche texte, en-tête « NOTE COMMUNE N°16 /2016 »). Abattement forfaitaire des revenus fonciers bâtis ramené de 30 % à 20 % ; date d'application : « aux revenus et bénéfices réalisés au titre de l'exercice 2015 et au titre des exercices ultérieurs ». Comporte des exemples chiffrés en annexe. Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_numéro 16  Commentaire_des_dispositions_des_articles_21_23_et_27_de_la_loi_n2015-53_du_25_décembre_2015_portant_loi_de_finances_pour_lann.pdf"
-    },
-    {
-      "id": "dgi-nc-2-2017",
-      "type": "report",
-      "title": "Note commune n° 2/2017 — Commentaire des dispositions de l'article 13 de la loi n° 2016-78 du 17 décembre 2016 portant loi de finances pour l'année 2017 relatives au relèvement du montant des intérêts des comptes spéciaux d'épargne déductible de l'assiette de l'impôt",
-      "author": [
-        {
-          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
-        }
-      ],
-      "publisher": "Ministère des finances",
-      "publisher-place": "Tunis",
-      "issued": {
-        "date-parts": [
-          [
-            2017
-          ]
-        ]
-      },
-      "URL": "https://jibaya.tn/docs/note-commune-numero-2-commentaire-des-dispositions-de-larticle-13-de-la-loi-n2016-78-du-17-decembre-2016-portant-loi-de-finances-pour-lannee-2017-relatives-au/",
-      "note": "citation-key: dgi-nc-2-2017\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-Commune-n%C2%B002-4.pdf (2 pages, SANS couche texte : en-tête « NOTE COMMUNE N° 2/2017 » et objet lus à l'image ; cachet d'enregistrement du 19 janvier 2017). Atteste les valeurs antérieures (1 500 D et 1 000 D) et la date d'effet : « s'applique aux intérêts réalisés à partir du 1er janvier 2016 déductibles des revenus réalisés au cours de l'année 2016 à déclarer au cours de l'année 2017 ». Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_numéro 2  Commentaire_des_dispositions_de_larticle_13_de_la_loi_n2016-78_du_17_décembre_2016_portant_loi_de_finances_pour_lannée_2017_rel.pdf"
-    },
-    {
-      "id": "dgi-nc-7-2018",
-      "type": "report",
-      "title": "Note commune n° 7/2018 — Commentaire des dispositions des articles 54 et 55 de la loi n° 2017-66 du 18 décembre 2017 portant loi de finances pour l'année 2018 relatives au relèvement des abattements au titre des charges de famille et des enfants infirmes",
-      "author": [
-        {
-          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
-        }
-      ],
-      "publisher": "Ministère des finances",
-      "publisher-place": "Tunis",
-      "issued": {
-        "date-parts": [
-          [
-            2018
-          ]
-        ]
-      },
-      "URL": "https://jibaya.tn/docs/note-commune-numero-7-commentaire-des-dispositions-des-articles-54-et-55-de-la-loi-n-2017-66-du-18-decembre-2017-portant-loi-de-finances-pour-lannee-2018-relatives-au-r/",
-      "note": "citation-key: dgi-nc-7-2018\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-commune-N%C2%B007-3.pdf (3 pages, couche texte). Reproduit l'état du droit en vigueur jusqu'au 31 décembre 2017 (150 D chef de famille ; 90/75/60/45 D pour les quatre premiers enfants ; 1 200 D enfant infirme ; 1 000 D enfant étudiant) et fixe les dates d'application (article 55 : revenus à partir du 1er janvier 2017 ; article 54 : revenus à partir du 1er janvier 2019). L'en-tête du document porte une coquille : « NOTE COMMUNE N° 7/1028 » (vérifiée sur pièce). Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_numéro 7  Commentaire_des_dispositions_des_articles_54_et_55_de_la_loi_n_2017-66_du_18_décembre_2017_portant_loi_de_finances_pour_lannée_.pdf"
-    },
-    {
-      "id": "dgi-nc-3-2020",
-      "type": "report",
-      "title": "Note commune n° 3/2020 — Commentaire des dispositions des articles 40 et 41 de la loi n° 2019-78 du 23 décembre 2019, portant loi de finances pour l'année 2020 relatives à l'assouplissement et l'amélioration de l'abattement de certaines déductions communes",
-      "author": [
-        {
-          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
-        }
-      ],
-      "publisher": "Ministère des finances",
-      "publisher-place": "Tunis",
-      "issued": {
-        "date-parts": [
-          [
-            2020
-          ]
-        ]
-      },
-      "URL": "https://jibaya.tn/docs/note-commune-numero-note-commune-n03-commentaire-des-dispositions-des-articles-40-et-41-de-la-loi-n2019-78-du-23-decembre-2019-portant-loi-de-finances-pour-lannee-2020-rela/",
-      "note": "citation-key: dgi-nc-3-2020\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-Commune-n%C2%B03-1.pdf (7 pages, SANS couche texte : en-tête « Note commune N°3/2020 » et objet lus à l'image ; cachet d'enregistrement du 5 février 2020 ; annexe d'exemple d'illustration). Relèvement de la déduction pour parent à charge de 150 D à 450 D ; date d'application : « aux revenus réalisés à partir du 1er janvier 2019 à déclarer à partir du 1er janvier 2020 ». Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_N03_Commentaire_des_dispositions_des_articles_40_et_41_de_la_loi_n2019-78_du_23_décembre_2019_portant_loi_de_finances_pour_lannée_2020_re.pdf"
-    },
-    {
-      "id": "dgi-nc-1-2021",
-      "type": "report",
-      "title": "Note commune n° 1/2021 — Commentaire des dispositions de l'article 16 de la loi n° 2020-46 du 23 décembre 2020 portant loi de finances pour l'année 2021 relatives à l'encouragement de l'épargne à moyen et long terme via les comptes épargne en actions et les contrats assurance-vie et de capitalisation",
-      "author": [
-        {
-          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
-        }
-      ],
-      "publisher": "Ministère des finances",
-      "publisher-place": "Tunis",
-      "issued": {
-        "date-parts": [
-          [
-            2021
-          ]
-        ]
-      },
-      "URL": "https://jibaya.tn/docs/note-commune-n1-commentaire-des-dispositions-de-larticle-16-de-la-loi-n2020-46-du-23-decembre-2020-portant-loi-de-finances-pour-lannee-2021-relatives-a-lencouragement/",
-      "note": "citation-key: dgi-nc-1-2021\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-Commune-N%C2%B01.pdf (7 pages, SANS couche texte : en-tête « NOTE COMMUNE N°1/2021 » et objet lus à l'image ; cachet d'enregistrement du 13 janvier 2021 ; en-tête « Ministère de l'économie, des finances et de l'appui à l'investissement »). PIÈCE CLÉ pour le plafonnement : énonce le minimum d'impôt de l'article 12 bis de la loi n° 89-114 comme « fixé à 45 % de l'impôt dû sur le revenu global compte non tenu de cette déduction ». Documente aussi les relèvements du compte épargne en actions (50 000 → 100 000 D) et de l'assurance-vie (10 000 → 100 000 D). Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_N1_Commentaire_des_dispositions_de_larticle_16_de_la_loi_n2020-46_du_23_décembre_2020_portant_loi_de_finances_pour_lannée_2021_relatives_.pdf"
-    },
-    {
-      "id": "dgi-nc-1-2022",
-      "type": "report",
-      "title": "Note commune n° 1/2022 — Commentaire des dispositions des articles 24, 29 et 38 du décret-loi n° 2021-21 du 28 décembre 2021 portant loi de finances pour l'année 2022, relatives à l'instauration de mesures en faveur de l'épargne, l'appui au financement de l'économie verte et la réinstauration de la retenue à la source déductible due sur les revenus de capitaux mobiliers",
-      "author": [
-        {
-          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
-        }
-      ],
-      "publisher": "Ministère des finances",
-      "publisher-place": "Tunis",
-      "issued": {
-        "date-parts": [
-          [
-            2022
-          ]
-        ]
-      },
-      "URL": "https://jibaya.tn/docs/note-commune-numero-note-commune-n01-commentaire-des-dispositions-des-articles-24-29-et-38-du-decret-loi-n2021-21-du-28-decembre-2021-portant-loi-de-finances-pour-lannee-2/",
-      "note": "citation-key: dgi-nc-1-2022\nDocument consulté et ouvert le 7 septembre 2026 sur le portail de la Direction générale des impôts (jibaya.tn) ; en-tête et objet contrôlés sur pièce. PDF : https://jibaya.tn/wp-content/uploads/2024/02/Note-Commune-N%C2%B001-1.pdf (7 pages, couche texte, en-tête « Note commune N° 1/2022 »). Date d'application : « s'appliquent aux intérêts déductibles des revenus réalisés à partir de l'année 2021 à déclarer au cours de l'année 2022 et des années ultérieures ». Copie locale : PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_N01__Commentaire_des_dispositions_des_articles_24_29_et_38_du_décret-loi_n2021-21_du_28_décembre_2021_portant_loi_de_finances_pour_lannée.pdf"
-    },
-    {
-      "id": "lf-1998",
-      "type": "legislation",
-      "title": "Loi n° 97-88 du 29 décembre 1997, portant loi de finances pour la gestion 1998",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "104",
-      "page": "2435-2559",
-      "issued": {
-        "date-parts": [
-          [
-            1997,
-            12,
-            29
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1997/1997F/Jo10497.pdf",
-      "note": "citation-key: lf-1998\nJORT n° 104 des 30-31 décembre 1997. Article 62, p. 2441 : minimum d'impôt au titre des avantages fiscaux, fixé à 60 % de l'impôt dû, applicable à compter du 1er janvier 1999. Article 61 : abattement sur les pensions de source étrangère par renvoi à l'article 26 du code. Métadonnées vérifiées dans le corpus JORT local (jort_cache.db)."
     }
   ]
 }
