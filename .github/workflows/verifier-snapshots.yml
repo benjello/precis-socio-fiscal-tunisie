@@ -68,7 +68,12 @@ jobs:
 
       - name: Comparer au contenu versionné
         run: |
-          if git diff --quiet -- 'precis/*/*/tables'; then
+          # Le pathspec DOIT descendre jusqu'aux fichiers : `precis/*/*/tables` ne
+          # matche rien — git compare le motif au chemin complet du fichier, et un
+          # répertoire nommé sans son contenu ne correspond à aucun blob. Le contrôle
+          # passait donc au vert quoi qu'il arrive. Éprouvé par un test négatif : un
+          # snapshot volontairement périmé n'était pas détecté.
+          if git diff --quiet -- 'precis/*/*/tables/*'; then
             echo "✓ Les tableaux publiés correspondent aux paramètres d'openfisca-tunisia."
             exit 0
           fi
@@ -92,8 +97,8 @@ jobs:
             echo "un détail de mise en forme — et ouvrir une PR."
             echo
             echo '```diff'
-            git diff -- 'precis/*/*/tables'
+            git diff -- 'precis/*/*/tables/*'
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
-          git --no-pager diff --stat -- 'precis/*/*/tables'
+          git --no-pager diff --stat -- 'precis/*/*/tables/*'
           exit 1
