@@ -936,3 +936,20 @@ Points de forme pour la montée dans Zotero :
 - `loi85-16` — le libellé de la contribution de l'État reste à relire à l'image.
 - `loi73-71` — `issued` retenu au **19 novembre 1973** (fascicule, lu à l'image) contre le
   16 novembre de `jort_cache.db` ; divergence consignée dans la note de l'entrée.
+
+### Trois des cinq entrées « à vérifier avant citation » sont désormais citées
+
+Le versement des références du livre « Cotisations sociales » signalait cinq entrées dont le
+contenu n'avait pas été lu : `decretloi2011-48`, `loi59-45`, `loi2005-54`, `loi85-16` et
+`loi73-71`. La rédaction de la section du secteur public en cite trois. État exact :
+
+- `loi73-71` — **lue** au fascicule (JORT n° 43 de 1973, p. 1852, lecture à l'image) : l'article
+  premier remplace l'article 5 de la loi 59-18 en maintenant le taux à 7 %. Rien à vérifier.
+- `loi59-45` — **non ouverte**, mais le fait qu'elle porte (la création de la Caisse de prévoyance
+  sociale) est attesté par un texte lu : l'article 28 de la loi n° 75-83 la nomme expressément.
+  L'attestation est donc indirecte et suffisante pour ce que le chapitre en dit.
+- `loi85-16` — article 5 **partiellement lu** : la retenue de 10 % est établie, la mention de la
+  contribution de l'État de 15 % est illisible sur le fascicule océrisé. Le chapitre le dit
+  désormais explicitement plutôt que d'étendre aux trois lois ce qui n'est établi que pour deux.
+
+`decretloi2011-48` et `loi2005-54` ne sont pas citées ; elles restent à vérifier avant de l'être.
