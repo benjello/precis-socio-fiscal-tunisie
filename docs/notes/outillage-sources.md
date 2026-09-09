@@ -116,6 +116,23 @@ corpus local.
 **Convention d'URL** : `/jort/<année>/<année>{F|A}/{Jo|Ja}<n° sur 3 chiffres><année sur 2 chiffres
 jusqu'en 1999, 4 ensuite>.pdf`.
 
+### État au 9 septembre 2026 : le certificat est échu depuis le 25 août
+
+Ce n'est pas un défaut de chaîne de confiance mais une **expiration** : `curl` répond
+« certificate has expired ». Le certificat, émis par TunTrust Services CA pour
+`www.pist.tn`, couvrait du 25 août 2025 au **25 août 2026**.
+
+Trois conséquences, dans l'ordre de gravité :
+
+1. **Pour le lecteur du précis**, chaque lien vers le *Journal officiel* — plus de deux
+   cent soixante — déclenche un avertissement de sécurité du navigateur. Rien dans le
+   dépôt ne peut le corriger : cela dépend du renouvellement côté pist.tn.
+2. **`http://` n'est pas une échappatoire** : le site redirige en 301 vers `https://`.
+3. **Pour l'outillage**, toute vérification qui valide la chaîne TLS déclare mortes la
+   quasi-totalité des URL. `check_url` de `sync_biblio.py` et `verifier_urls_jort.py`
+   emploient donc un contexte permissif : ils vérifient que la ressource EXISTE, sans se
+   prononcer sur la confiance. En ligne de commande, `curl -k`.
+
 ## 3 bis. Les dates de `jort_cache` ne font pas foi contre le fascicule
 
 Sur 29 textes contrôlés lors du dossier « assistance sociale », **8 dates de publication de la
