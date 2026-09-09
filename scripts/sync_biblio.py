@@ -223,6 +223,29 @@ def contient_arabe(valeur):
     return False
 
 
+def preserve_urls_absentes(items, chemin_existant):
+    """Ne laisse jamais une URL disparaître au profit de rien.
+
+    Zotero peut ne pas porter d'URL là où le fichier local en a une : deux textes de 2018
+    étaient dans ce cas côté arabe. Sans ce garde-fou, la descente les aurait effacées en
+    silence — perdre une référence vers le texte est plus grave que de la garder
+    imparfaite, et rien dans le rendu ne l'aurait signalé.
+    """
+    if not os.path.exists(chemin_existant):
+        return items
+    with open(chemin_existant, encoding="utf-8") as f:
+        anciens = {e.get("id"): e for e in json.load(f).get("items", [])}
+    rendues = 0
+    for item in items:
+        ancien = anciens.get(item.get("id"))
+        if ancien and ancien.get("URL") and not item.get("URL"):
+            item["URL"] = ancien["URL"]
+            rendues += 1
+    if rendues:
+        print(f"    {rendues} URL absente(s) de Zotero, conservée(s) depuis le fichier local")
+    return items
+
+
 def preserve_traductions(items, chemin_existant):
     """Garde les champs déjà traduits en arabe, prend le reste de Zotero.
 
@@ -467,6 +490,7 @@ def main():
             # Chaque langue reçoit sa propre copie : `preserve_traductions` modifie les
             # items en place, et l'arabe ne doit pas contaminer le français.
             a_ecrire = applique_edition(copy.deepcopy(items), lang, exceptions)
+            a_ecrire = preserve_urls_absentes(a_ecrire, out_path)
             if lang == "ar":
                 a_ecrire = preserve_traductions(a_ecrire, out_path)
             write_csl_json(a_ecrire, out_path)
@@ -478,6 +502,7 @@ def main():
         for lang in LANGUAGES:
             out_path = os.path.join(precis_dir, lang, "references.json")
             a_ecrire = applique_edition(copy.deepcopy(shared_items), lang, exceptions)
+            a_ecrire = preserve_urls_absentes(a_ecrire, out_path)
             if lang == "ar":
                 a_ecrire = preserve_traductions(a_ecrire, out_path)
             write_csl_json(a_ecrire, out_path)
