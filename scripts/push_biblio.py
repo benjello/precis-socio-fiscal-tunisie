@@ -295,6 +295,7 @@ COLLECTIONS = {
     "retraites": "Retraites",
     "prestations_sociales": "Prestations sociales",
     "remunerations_publiques": "Rémunérations publiques",
+    "cotisations_sociales": "Cotisations sociales",
 }
 
 
