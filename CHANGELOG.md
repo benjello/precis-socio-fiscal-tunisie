@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.15.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.14.0...v1.15.0) (2026-09-09)
+
+
+### ✨ Nouveautés
+
+* **biblio:** donne à chaque langue le lien du JORT qu'elle peut lire ([6e41e01](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/6e41e0171be1c081533b3809d8e45e2f4ec3ae4a))
+
+
+### 🐛 Corrections de bugs
+
+* **biblio:** ne laisse jamais une URL disparaître ([8c112b9](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/8c112b940dd78ae15925608149ad0b498940fa83))
+* **ci:** refuse une traduction tronquée ([46769ce](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/46769ce661f66f37bbe24d5b0f6f01a77e8f8d78))
+* **precis:** source les notions du glossaire et corrige l'origine des caisses ([9881146](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/9881146a906528ec30134574b576bb2250249395))
+
 ## [1.14.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.13.1...v1.14.0) (2026-09-09)
 
 
