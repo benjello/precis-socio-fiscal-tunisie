@@ -588,15 +588,15 @@ ne rapporte que ce que les textes portent. -->
 
 L'article 12 de la loi organique prévoit un [soutien financier occasionnel](#g-appui-financier-occasionnel), dont les cas d'octroi et les montants sont fixés par arrêté conjoint. Deux arrêtés se sont succédé, le second abrogeant expressément le premier.
 
-| Occasion | Montant | Unité | Échéance de paiement |
-|---|---|---|---|
-| Mois de Ramadan | 60 D | individu ou famille | dans la première semaine du mois |
-| Aïd al-Fitr | 60 D | individu ou famille | avant la fin du mois de Ramadan |
-| Aïd al-Idha | 60 D | individu ou famille | avant la date de l'Aïd |
-| Rentrée scolaire | 50 D | par enfant scolarisé | début de l'année scolaire |
-| Rentrée universitaire | 120 D | par enfant dans le supérieur | début de l'année universitaire |
+```{python}
+#| echo: false
+#| output: asis
+table("aides_ponctuelles",
+      "Appui financier occasionnel de l'AMEN social : montants en vigueur depuis le 9 décembre 2022, identiques à ceux de 2020",
+      "tbl-aides-ponctuelles")
+```
 
-Sources : @arrete-2020-05-19-appui-occasionnel, art. 4, puis @arrete-2022-12-08-appui-occasionnel, qui reprend les cinq montants à l'identique.
+Chaque aide a son échéance de paiement, que l'arrêté fixe : dans la première semaine du mois pour le Ramadan, avant la fin de ce mois pour l'Aïd al-Fitr, avant la date de la fête pour l'Aïd al-Idha, au début de l'année scolaire ou universitaire pour les deux aides de rentrée. Les cinq montants sont ceux de l'arrêté de 2020 [@arrete-2020-05-19-appui-occasionnel, art. 4], repris à l'identique par celui de 2022.
 
 Le champ, lui, n'est pas identique dans les deux textes. En 2020, les aides liées aux fêtes et celles liées à la rentrée sont réservées aux catégories pauvres, à l'exception des aides de rentrée dont les catégories à revenu limité bénéficient également. En 2022, l'appui « fêtes » reste réservé aux catégories pauvres, tandis que les aides de rentrée sont ouvertes aux deux catégories et étendues aux établissements publics de formation et d'apprentissage professionnel ainsi qu'aux centres d'éducation spécialisée, publics et associatifs. L'arrêté de 2022 ajoute par ailleurs deux prestations : la prise en charge des **abonnements annuels de transport scolaire et universitaire**, à hauteur des tarifs des entreprises de transport public ; et un appui pour dépenses exceptionnelles nécessitées par des conditions sanitaires ou sociales d'urgence, ou pour la prise en charge d'enfants scolarisés exposés à l'inadaptation sociale et au décrochage, d'un montant **compris entre 60 et 200 dinars** selon la situation financière de la famille, **au plus quatre fois par an**, ces deux limites pouvant être dépassées à titre exceptionnel sur autorisation du comité général de la promotion sociale [@arrete-2022-12-08-appui-occasionnel, art. 2-4].
 
