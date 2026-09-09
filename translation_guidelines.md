@@ -57,8 +57,16 @@ n°83-112 par `القانون عدد 83 لسنة 1983` (numéro 83 au lieu de 11
 lois n°68-12, n°67-29, n°68-8, n°67-20 et n°72-40. Le résultat est plausible et cohérent
 avec la date affichée : l'erreur est invisible pour qui ne recoupe pas avec le français.
 
-Reproduire le numéro tel quel supprime ce risque. `scripts/check_translation_parity.py`
-accepte les deux écritures et ne signale que ce qui est réellement fautif.
+**N'inversez pas non plus les deux composantes sur place.** Une passe a rendu
+« décret n° 2007-1406 » par `الأمر عدد 1406-2007`, et « loi n° 60-30 » par
+`القانون عدد 30-60` : 142 occurrences sur 44 numéros dans un seul chapitre. L'inversion
+est sans doute suggérée par le sens d'écriture, mais un numéro de texte n'est pas une
+expression arabe : c'est une référence, et son ordre est celui du français. `2007-1406`
+reste `2007-1406`.
+
+Reproduire le numéro tel quel supprime ces deux risques. `scripts/check_translation_parity.py`
+accepte les deux écritures légitimes et ne signale que ce qui est réellement fautif — il a
+attrapé les 142 occurrences ci-dessus.
 
 ### Locateurs de citation
 
