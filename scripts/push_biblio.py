@@ -244,6 +244,25 @@ def charge_local() -> dict[str, tuple[dict, str]]:
     return entrees
 
 
+def zotero_tout(chemin: str, api_key: str, params: dict) -> list:
+    """GET paginé. Sans cela, l'inventaire des clés déjà présentes s'arrête à 100 et
+    tout ce qui suit serait recréé en double dans une bibliothèque partagée."""
+    resultats: list = []
+    debut = 0
+    while True:
+        query = "&".join(f"{k}={v}" for k, v in {**params, "limit": 100, "start": debut}.items())
+        req = urllib.request.Request(f"{BASE_URL}{chemin}?{query}")
+        req.add_header("Zotero-API-Key", api_key)
+        req.add_header("Zotero-API-Version", "3")
+        with urllib.request.urlopen(req) as resp:
+            lot = json.loads(resp.read().decode())
+            total = int(resp.headers.get("Total-Results", 0))
+        resultats.extend(lot if isinstance(lot, list) else [lot])
+        debut += 100
+        if debut >= total:
+            return resultats
+
+
 def zotero(path: str, api_key: str, methode: str = "GET", corps=None):
     url = f"{BASE_URL}{path}"
     donnees = json.dumps(corps).encode() if corps is not None else None
@@ -270,6 +289,8 @@ def main() -> int:
     p.add_argument("--limite", type=int, default=0, help="n'envoyer que N entrées")
     p.add_argument("--groupe", default=os.environ.get("ZOTERO_GROUP_ID", DEFAULT_GROUP_ID))
     p.add_argument("--rapport", default="", help="fichier où consigner les clés créées")
+    p.add_argument("--comparer", default="", help="relit une référence depuis Zotero et la "
+                                                  "compare à l'entrée locale")
     args = p.parse_args()
 
     schema = charge_schema()
@@ -317,18 +338,48 @@ def main() -> int:
         print(json.dumps(infos, ensure_ascii=False, indent=2))
         return 0
 
+    if args.comparer:
+        items = zotero_tout(f"/groups/{args.groupe}/items", api_key, {"format": "json"})
+        zkey = None
+        for item in items:
+            m = re.search(r"citation-key:\s*(\S+)", item.get("data", {}).get("extra", ""), re.I)
+            if m and m.group(1) == args.comparer:
+                zkey = item["key"]
+        if not zkey:
+            print(f"« {args.comparer} » introuvable dans le groupe.", file=sys.stderr)
+            return 1
+        redescendu = zotero(
+            f"/groups/{args.groupe}/items/{zkey}?format=csljson", api_key
+        )
+        redescendu = (redescendu.get("items") or [redescendu])[0]
+        redescendu["id"] = args.comparer
+        local = locales[args.comparer][0]
+        ecarts = 0
+        for champ in sorted(set(local) | set(redescendu)):
+            if champ == "note":
+                continue
+            a, b = local.get(champ), redescendu.get(champ)
+            if json.dumps(a, sort_keys=True, ensure_ascii=False) != json.dumps(
+                b, sort_keys=True, ensure_ascii=False
+            ):
+                print(f"  ✗ {champ}\n      local  : {a!r}\n      Zotero : {b!r}")
+                ecarts += 1
+        print(f"\n« {args.comparer} » : {ecarts} écart(s) après aller-retour réel.")
+        return 1 if ecarts else 0
+
     if not (args.dry_run or args.pousser):
         p.print_help()
         return 0
 
-    existantes: set[str] = set()
+    existantes: dict[str, str] = {}
     if args.pousser or api_key:
-        items = zotero(f"/groups/{args.groupe}/items?format=json&limit=100", api_key)
-        for item in items if isinstance(items, list) else []:
+        items = zotero_tout(f"/groups/{args.groupe}/items", api_key, {"format": "json"})
+        for item in items:
             m = re.search(r"citation-key:\s*(\S+)", item.get("data", {}).get("extra", ""), re.I)
             if m:
-                existantes.add(m.group(1))
-        print(f"{len(existantes)} clé(s) déjà dans le groupe {args.groupe}.")
+                existantes[m.group(1)] = item["key"]
+        print(f"{len(items)} article(s) dans le groupe {args.groupe}, "
+              f"dont {len(existantes)} portant une clé de citation.")
 
     a_pousser = [(c, e) for c, (e, _l) in sorted(locales.items()) if c not in existantes]
     if args.limite:
