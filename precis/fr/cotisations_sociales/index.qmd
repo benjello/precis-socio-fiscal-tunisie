@@ -26,7 +26,7 @@ Ce chapitre traite du **prélèvement** qui finance la sécurité sociale : qui 
 ::: {.callout-note title="Trois conventions de lecture, retenues dans tout ce qui suit"}
 **1. L'ossature est le partage entre secteur privé et secteur public.** Ce n'est pas une commodité : il commande la caisse compétente — la [Caisse nationale de sécurité sociale](#g-cnss) d'un côté, la [Caisse nationale de retraite et de prévoyance sociale](#g-cnrps) de l'autre —, le texte applicable et l'ampleur du prélèvement, qui va du simple au double d'un régime à l'autre.
 
-**2. Les taux présentés sont ceux en vigueur, et beaucoup ne sont pas datés.** Les paramètres du modèle `openfisca-tunisia` dont ces tableaux sont tirés portent, pour tout le secteur privé, la date du 1^er^ janvier 1960 — qui n'est la date d'aucun de ces taux. Leur valeur est exacte, leur histoire reste à établir. Quand un tableau ne porte pas de texte en regard d'une ligne, c'est ce silence-là qu'il faut lire, et non une stabilité de soixante-cinq ans.
+**2. Les taux présentés sont ceux en vigueur, et la date que porte le modèle n'est pas celle du texte.** Les paramètres d'`openfisca-tunisia` dont ces tableaux sont tirés portent, pour trente-sept valeurs du secteur privé, la date du 1^er^ janvier 1960. Le dépouillement des fascicules du *Journal officiel* établit que cette date ne peut être la leur : la structure qu'elles décrivent ne se met en place qu'à partir de 1997, et sa dernière pièce date de 2003. Chaque section indique désormais le texte qui fixe le taux, et, lorsque le texte ne l'énonce pas, le dit.
 
 **3. La part salariale et la part patronale sont distinguées, sans préjuger de qui supporte le prélèvement.** Le partage juridique entre l'une et l'autre ne dit rien de son incidence économique. Ce chapitre décrit le premier et ne se prononce pas sur la seconde.
 :::
@@ -47,25 +47,115 @@ Au privé : le régime des **salariés non agricoles** — le régime général,
 
 Au public : les **salariés affiliés à la CNRPS**, les **pensionnés** de cette même caisse — qui cotisent sur leur pension —, et un régime spécial pour les **membres du gouvernement, les députés et les gouverneurs**.
 
-<!-- TODO (documentaliste) : les textes fondateurs de chaque régime privé sont connus par
-le livre Prestations sociales (loi n° 60-30 pour le RSNA, loi n° 81-6 pour le RSA, loi
-n° 89-73 pour le RSAA, décret n° 95-1166 pour les non-salariés, loi n° 2002-104 pour les
-artistes, loi n° 2002-32 pour les bas revenus, décret n° 89-107 pour les Tunisiens à
-l'étranger). Ce qui manque ici, ce sont les textes qui fixent les TAUX, et eux seuls. -->
+### Une même architecture en deux étages
+
+Sept des huit régimes privés se lisent de la même façon, et ce constat commande la lecture de tout le chapitre. Chacun repose sur un **taux global** fixé par son texte fondateur et réparti par branches ; sur ce taux global vient s'ajouter, à partir du 1^er^ juillet 2007, le **supplément d'assurance maladie** que le décret n° 2007-1406 du 18 juin 2007 appelle par paliers pour porter la cotisation maladie de chaque régime au taux unique de 6,75 % institué par la loi n° 2004-71 du 2 août 2004 [@loi2004-71].
+
+| Régime | Taux global d'origine | Texte et année | Supplément d'assurance maladie | Perte d'emploi | Total en vigueur |
+|---|---:|---|---:|---:|---:|
+| Salariés non agricoles | 23,75 % | loi n° 97-4, décret n° 97-555, loi n° 74-101 (1975-1997) | +2,00 | +1,00 | **26,75 %** |
+| Salariés agricoles | 6,45 % | loi n° 81-6 (1981) | +5,84 | — | **12,29 %** |
+| Salariés agricoles, régime amélioré | 15,00 % | loi n° 89-73 (1989) | +4,47 | — | **19,47 %** |
+| Travailleurs non salariés | 11,00 % | décret n° 95-1166 (1995) | +3,71 | — | **14,71 %** |
+| Artistes, créateurs et intellectuels | 11,00 % | loi n° 2002-104 (2002) | +3,71 | — | **14,71 %** |
+| Travailleurs à faibles revenus | 7,50 % | loi n° 2002-32 (2002) | — | — | **7,50 %** |
+| Tunisiens à l'étranger | 10,65 % | décret n° 89-107 (1989) | +2,65 | — | **13,30 %** |
+
+: Décomposition du prélèvement de chaque régime privé entre son taux global d'origine et le supplément d'assurance maladie {#tbl-architecture}
+
+Le supplément se calcule dans tous les cas de la même manière : il est l'écart entre 6,75 % et la part maladie déjà prélevée **à l'intérieur** du taux global, que le décret n° 2007-1406 énonce régime par régime — 0,91 % pour les salariés agricoles, 2,28 % pour le régime amélioré, 3,04 % pour les travailleurs non salariés et pour les artistes, 4,10 % pour les Tunisiens à l'étranger, 4,75 % pour le régime général. Cette distinction est décisive pour lire les tableaux qui suivent : la part maladie attestée par les textes est **prélevée sur** le taux global et n'y ajoute rien, tandis que le supplément d'assurance maladie s'y ajoute. Le régime des travailleurs à faibles revenus est le seul que le décret n° 2007-1406 ne vise pas ; son taux n'a pas bougé.
+
+### L'âge réel des taux
+
+Le modèle `openfisca-tunisia` date de 1960 la plupart des paramètres du secteur privé. Le dépouillement des fascicules du *Journal officiel* permet d'y substituer, pour chaque régime, la date la plus ancienne que les textes autorisent.
+
+| Régime | Date portée par le modèle | Date la plus ancienne défendable | Texte |
+|---|---|---|---|
+| Salariés non agricoles (hors maladie et perte d'emploi) | 1960-01-01 | 4 février 1997 ; 1^er^ janvier 2003 pour la clé pensions/famille | loi n° 97-4 ; décret n° 2003-1212, art. 2 |
+| — fonds spécial de l'État | 1960-01-01 | 1^er^ janvier 1975 | loi n° 74-101, art. 57 |
+| — accidents du travail | 1960-01-01 | 1995 | décret n° 95-538, art. 2 |
+| — protection sociale des travailleurs | 1960-01-01 | 1996 | loi n° 96-101, art. 5 |
+| — perte d'emploi | 2025-01-01 | 2025 | loi n° 2024-48, art. 17 |
+| Paliers d'assurance maladie, tous régimes | 2007-2011 | exacts | décret n° 2007-1406, art. 6 à 11 |
+| Salariés agricoles | 1960-01-01 et 1981-01-01 | 1981 | loi n° 81-6, art. 18 ; décret n° 81-224 |
+| Salariés agricoles, régime amélioré | 1960, 1977 et 1990 | 1^er^ octobre 1989 | loi n° 89-73, art. 4 et art. 90 |
+| Travailleurs non salariés | 1960-01-01 | 1995 | décret n° 95-1166, art. 9 |
+| Artistes, créateurs et intellectuels | 2003-01-01 | 31 décembre 2002 (publication) | loi n° 2002-104, art. 7 |
+| Travailleurs à faibles revenus | 2002-03-12 | date d'effet non énoncée | loi n° 2002-32, art. 7 ; décret n° 2002-916 |
+| Étudiants | 2003-07-02 | date d'effet non énoncée ; valeur antérieure de 2 D absente | décrets n° 92-631 et n° 2003-1544 |
+| Tunisiens à l'étranger | 1960-01-01 | 1989 | décret n° 89-107, art. 7 |
+| Retraite complémentaire | 1960-01-01 | 1^er^ janvier 1974 ; le taux de 9 % n'est pas datable | arrêté du 18 novembre 1978 |
+
+: Date portée par les paramètres du modèle et date la plus ancienne que les textes autorisent {#tbl-datation}
+
+::: {.callout-warning title="Ce que les treize « dates d'effet non établies » signifient"}
+Une part importante des textes ci-dessus s'achève sur une simple clause d'exécution, sans article fixant leur entrée en vigueur : c'est le cas de la loi n° 60-30, du décret n° 74-499, du décret n° 97-555, du décret n° 95-538, de la loi n° 96-101, de la loi n° 81-6, du décret n° 95-1166, de la loi n° 2002-104, de la loi n° 2002-32, du décret n° 2002-916, du décret n° 2003-1544, du décret n° 89-107 et du décret n° 92-631. Ce chapitre ne date donc ces taux que de la publication ou de la signature du texte, en le disant. Les seules dates d'effet énoncées par un article sont mentionnées comme telles dans les sections qui suivent.
+:::
 
 ## L'assiette
 
-L'assiette des cotisations est constituée du **salaire de base et des primes**. Elle n'est **pas plafonnée**, à une exception près : le régime des travailleurs à faibles revenus, dont les seuils sont exprimés en multiples du [salaire minimum](#g-smig) et qui ne prélève rien au-delà de **0,66 SMIG** d'assiette.
+Deux assiettes coexistent, et la ligne de partage entre elles ne recoupe pas celle des taux.
 
-Cette absence de plafond est un trait structurant du système tunisien, et elle le distingue de beaucoup de systèmes comparables. Elle explique que le prélèvement soit strictement proportionnel au salaire dans presque tous les régimes.
+Dans le **régime général**, l'assiette est le **salaire réellement perçu** — salaire de base et primes — et elle n'est **pas plafonnée**. C'est un trait structurant du système tunisien, qui le distingue de beaucoup de systèmes comparables : le prélèvement y est strictement proportionnel au salaire, sans tranche ni butoir.
 
-<!-- TODO (documentaliste) : établir sur texte la définition de l'assiette (quelles primes
-sont incluses, quel traitement des avantages en nature) et l'assiette forfaitaire des
-travailleurs non salariés, que le modèle ne connaît pas. -->
+Dans les autres régimes du secteur privé, l'assiette est **forfaitaire** : elle n'est pas le revenu de l'assuré mais un montant conventionnel, exprimé en multiples du [salaire minimum](#g-smig) interprofessionnel garanti ou du salaire minimum agricole garanti (SMAG). Le mécanisme prend trois formes. Pour les salariés agricoles, le SMAG rapporté à quarante-cinq jours par trimestre, affecté d'un coefficient selon la spécialité de l'ouvrier (loi n° 81-6, art. 18). Pour les travailleurs non salariés, les artistes et les Tunisiens à l'étranger, un système de **classes de revenu** : l'assuré est réputé percevoir le revenu de la classe dans laquelle il est placé, sans pouvoir descendre en dessous de la classe minimale attachée à son activité, avec faculté d'opter pour une classe supérieure et changement possible au 1^er^ janvier suivant. Pour les travailleurs à faibles revenus enfin, une assiette unique égale aux **deux tiers** du SMIG ou du SMAG.
+
+Cette assiette forfaitaire n'est pas représentée dans `openfisca-tunisia`, qui applique les taux de ces régimes au revenu déclaré. Les taux du modèle sont exacts ; l'assiette à laquelle ils s'appliquent ne l'est pas pour les régimes concernés.
+
+<!-- TODO (documentaliste) : établir sur texte la définition de l'assiette du régime général
+(quelles primes sont incluses, quel traitement des avantages en nature) : l'article 42 de la loi
+n° 60-30, auquel renvoie le décret n° 95-538, n'a pas été lu. L'article 89 de la loi n° 81-6, qui
+fixe l'assiette du régime agricole amélioré, ne l'a pas été non plus. -->
 
 ## Le régime général : les salariés non agricoles
 
-Le régime général prélève **dix cotisations distinctes**, dont une facultative.
+### La création
+
+Le régime général naît de la **loi n° 60-30 du 14 décembre 1960, relative à l'organisation des régimes de sécurité sociale** [@loi60-30], publiée au *Journal officiel* des 13-16 décembre 1960. Elle institue à la fois les régimes de sécurité sociale du secteur non agricole et la caisse chargée de les servir.
+
+Son **article 34** fixe le champ d'affiliation, et le fait par énumération de secteurs plutôt que par une clause générale : salariés des établissements industriels et commerciaux, des professions libérales, des coopératives, des sociétés civiles, des syndicats et des associations ; personnels des transports ; salariés du commerce, y compris les voyageurs, représentants et placiers ; salariés du bâtiment [@loi60-30, art. 34]. Le régime couvre les assurances sociales — maladie, maternité, décès —, les prestations familiales et, par la loi n° 60-33 du même jour, les pensions de vieillesse, d'invalidité et de survivants.
+
+Une précision s'impose sur la caisse elle-même, parce que la confusion est courante : la loi n° 86-86 du 1^er^ septembre 1986 **ne crée pas** la Caisse nationale de sécurité sociale. Son article 2 prévoit que les organismes qu'elle institue « se substituent » à la caisse « instituée par la loi n° 60-30 du 14 décembre 1960 » — architecture qui n'est jamais entrée en vigueur. La caisse est bien celle de 1960.
+
+### Le taux, somme de trois textes
+
+Le taux du régime général ne figure dans aucun texte unique. Il est la **somme de trois cotisations d'origines distinctes**, et cette somme se vérifie à la décimale près.
+
+| Bloc | Texte | Total | Employeur | Salarié |
+|---|---|---:|---:|---:|
+| Taux global des régimes de la loi n° 60-30 | loi n° 97-4 du 3 février 1997, art. 41 nouveau | 18,00 % | 13,00 | 5,00 |
+| Fonds spécial de l'État | loi n° 74-101 du 25 décembre 1974, art. 57 | 0,50 % | 0,50 | — |
+| Cotisation propre du régime de pensions | décret n° 97-555 du 31 mars 1997, art. 9 nouveau | 5,25 % | 2,50 | 2,75 |
+| **Total** | | **23,75 %** | **16,00** | **7,75** |
+
+: Les trois textes dont la somme forme le taux du régime général avant assurance maladie {#tbl-somme-trois-textes}
+
+Les totaux de **16,00 % et 7,75 %** sont exactement ceux que porte le modèle avant l'assurance maladie universelle ; avec elle, ils deviennent **16,57 % et 9,18 %**, chiffres publiés par la CNSS. Le rapprochement arithmétique est le résultat le plus solide du dépouillement : chacun des trois taux a été lu dans le fascicule du *Journal officiel*, et leur somme referme exactement le taux en vigueur.
+
+L'histoire de chacun de ces blocs est connue.
+
+**Le taux global de l'article 41** est fixé à l'origine par la loi n° 60-30 elle-même à **15 % à la charge de l'employeur et 5 % à la charge du travailleur** [@loi60-30, art. 41]. Il passe à **13 % / 5 %** avec l'article 41 nouveau issu de la loi n° 97-4, publiée le 4 février 1997 ; la loi n'énonce pas de date d'effet pour ce taux de base, de sorte qu'il court à défaut de sa publication. Entre-temps, une **variante conventionnelle** a existé : le second paragraphe de l'article 41 nouveau ouvre une réduction de deux points aux employeurs assurant à leurs salariés une couverture de soins dans un régime conventionnel, applicable à compter du 1^er^ octobre 1996 et précisée par le décret n° 97-1645 du 25 août 1997. Les entreprises concernées acquittaient 11 % au lieu de 13 %, soit un total employeur de 14,00 % au lieu de 16,00 %, jusqu'à l'abrogation du décret n° 97-1645 au 1^er^ juillet 2007. Le modèle ne porte aucun paramètre pour cette variante.
+
+**Le fonds spécial de l'État** est un ajout de la loi de finances pour 1975 : la loi n° 74-101 majore la cotisation patronale de l'article 41 de 0,5 point « à compter du 1^er^ janvier 1975 », son produit étant affecté à des interventions dans les domaines économiques réparties par arrêté du Premier ministre.
+
+**La cotisation propre du régime de pensions** suit sa propre trajectoire, fixée par le décret n° 74-499 du 27 avril 1974 et ses modificatifs.
+
+| Depuis | Texte | Total | Employeur | Salarié |
+|---|---|---:|---:|---:|
+| 1974 | décret n° 74-499, art. 9 | 3,75 % | 2,50 | 1,25 |
+| 1^er^ juillet 1994 | décret n° 94-1429, art. 9 nouveau | 4,25 % | 2,50 | 1,75 |
+| 1^er^ juillet 1995 | idem, palier suivant | 4,75 % | 2,50 | 2,25 |
+| 1^er^ juillet 1996 | idem | 5,25 % | 2,50 | 2,75 |
+| 1^er^ juillet 1997 | palier programmé, non appliqué | 5,75 % | 2,50 | 3,25 |
+| 1997, date d'effet non énoncée | décret n° 97-555, art. 9 nouveau | 5,25 % | 2,50 | 2,75 |
+
+: Cotisation propre du régime de pensions du secteur non agricole, 1974-1997 {#tbl-pensions-rsna}
+
+Le décret n° 94-1429 du 30 juin 1994 programme donc une montée en charge par paliers annuels, qui devait porter la part salariale de 1,25 % à 3,25 % en quatre ans. Le décret n° 97-555, publié le 4 avril 1997, réécrit l'article 9 avant l'échéance du dernier palier et fixe la part salariale à 2,75 %, c'est-à-dire au niveau atteint en 1996 : le palier de juillet 1997 n'a donc jamais été appliqué. C'est le total de 5,25 % qui est encore en vigueur.
+
+À cette cotisation propre s'ajoute une **quote-part prélevée sur le taux global** de 18 %, dont le décret n° 74-499 fixe le principe à l'article 5 b) : elle vaut 1,25/20^e^ de la masse des cotisations à l'origine, et le décret n° 2003-1212 du 2 juin 2003 la porte à **7,25/20^e^**, « à partir du 1^er^ janvier 2003 » — l'une des rares dates d'effet expressément énoncées. Le régime de pensions cumule ainsi 7,25 points de quote-part et 5,25 points de cotisation propre, soit les **12,50 %** que porte le modèle.
+
+### La ventilation par branche
 
 ```{python}
 #| echo: false
@@ -75,13 +165,66 @@ table("branches_rsna",
       "tbl-rsna-branches")
 ```
 
-Trois observations.
+Ce tableau se lit avec une précaution : les branches financées par le taux global ne s'ajoutent pas aux 18 %, elles y sont **prélevées**. Les textes le disent en toutes lettres — la cotisation d'assurance maladie est « prélevée sur le taux global des cotisations prévu par la loi n° 60-30 » (décret n° 2007-1406, art. 6), la cotisation de protection sociale des travailleurs de 0,4 % — qui finance la prise en charge par la CNSS des indemnités dues aux travailleurs licenciés pour raisons économiques ou technologiques lorsque l'entreprise est en cessation de paiement, ainsi que le maintien des allocations familiales pendant les quatre trimestres suivant la cessation d'activité (loi n° 96-101, art. 2 à 4 et 7) — est « à prélever sur le taux global » (loi n° 96-101, art. 5), et le point d'accidents du travail résulte d'un « transfert d'un point des cotisations au régime général » au profit du régime institué par la loi n° 94-28 (décret n° 95-538, art. 2). Aucun de ces textes n'augmente le prélèvement : ils en réaffectent une fraction.
 
-**La retraite pèse près de la moitié du prélèvement**, 12,5 points sur les 26,75 points du régime, et la maladie près du quart. Les branches restantes — maternité, décès, prestations familiales, accidents du travail — pèsent ensemble moins de six points.
+| Branche | Part du taux global | Texte qui la fixe |
+|---|---:|---|
+| Quote-part versée au régime de pensions | 7,25/20^e^ | décret n° 2003-1212, art. 5 b) nouveau |
+| Assurance maladie (soins) | 4,75 % | décret n° 2007-1406, art. 6 |
+| Accidents du travail et maladies professionnelles | 1,00 point transféré | décret n° 95-538, art. 2 |
+| Protection sociale des travailleurs | 0,40 % | loi n° 96-101, art. 5 |
+| Prestations familiales | 3,10 % | aucun texte trouvé |
+| Indemnités de maladie et de maternité | 0,85 % | aucun texte trouvé |
+| Décès et capital-décès | 0,65 % | aucun texte trouvé |
+| **Total** | **18,00 %** | |
 
-**Hors retraite complémentaire, le total obligatoire est de 9,18 % pour le salarié et 16,57 % pour l'employeur** jusqu'en 2024. La cotisation pour perte d'emploi, créée au 1^er^ janvier 2025 à raison de 0,5 point de chaque côté, porte ces taux à 9,68 % et 17,07 %.
+: Ventilation du taux global de 18 % entre branches, et textes qui la fixent {#tbl-ventilation-rsna}
 
-**La retraite complémentaire est facultative** et n'entre donc pas dans le prélèvement obligatoire. Elle est loin d'être négligeable : à 3 points pour le salarié et 6 pour l'employeur, elle ajouterait un tiers au prélèvement du régime.
+::: {.callout-warning title="Le point « accidents du travail » n'est pas la cotisation d'accidents du travail"}
+La ligne « accidents du travail » du tableau ci-dessus vaut 1 point : c'est le point transféré du taux global de la loi n° 60-30 au régime de réparation institué par la loi n° 94-28, réparti selon la clé 13/5. Ce n'est **pas** le taux de la cotisation d'accidents du travail et de maladies professionnelles proprement dite, qui s'ajoute au prélèvement du tableau, est **entièrement patronale**, et varie selon l'activité de l'entreprise.
+
+L'article premier du décret n° 95-538 du 1^er^ avril 1995 fixe en effet ce taux par **dix-huit classes d'activité**, de 0,60 % pour les services de bureaux à 7,20 % pour les industries extractives ; l'article 2, opérant le transfert du point, ramène l'échelle à **0,50 % pour les services de bureaux et 5 % pour les industries extractives**. La réduction n'est pas uniforme d'une classe à l'autre — un dixième de point pour la première, plus de deux points pour la dernière : le « point » transféré est un agrégat, non un abattement appliqué classe par classe. Le total patronal du régime général est donc à majorer, selon l'activité, de 0,50 à 5 points. Ces taux ne figurent pas dans les paramètres du modèle.
+:::
+
+::: {.callout-warning title="Trois branches sans texte"}
+Les quatre premières lignes du tableau ci-dessus ont été lues dans le *Journal officiel*. Les trois dernières — prestations familiales, indemnités de maladie et de maternité, décès — ne sont fixées par aucun texte identifié. Leur somme, 4,60 points, est le **solde** du taux global une fois déduites les quatre premières lignes, et leur répartition entre les trois postes est celle que porte le modèle. Il existe vraisemblablement une décision du conseil d'administration de la caisse ou un arrêté non recensé ; elle n'a pas été retrouvée. C'est la principale lacune du dossier documentaire de ce chapitre.
+
+Le partage employeur/salarié suit par ailleurs, dans presque toutes les branches, la clé 13/5 de l'article 41 appliquée mécaniquement. Deux postes s'en écartent — la quote-part pensions et les prestations familiales —, d'un vingt-huitième de point chacun et en sens opposés, de sorte que leur agrégat respecte la clé et que les totaux de 16,00 % et 7,75 % sont inchangés. L'origine de ce déplacement n'est pas établie.
+:::
+
+### L'assurance maladie
+
+La loi n° 2004-71 du 2 août 2004 institue le régime de base d'assurance maladie [@loi2004-71] et fixe à 6,75 % la cotisation qui le finance. Le décret n° 2007-1406 du 18 juin 2007 organise sa montée en charge et, pour le régime général, la décompose en une part de 4,75 % prélevée sur le taux global de la loi n° 60-30 et un supplément appelé par paliers.
+
+| Depuis | Total maladie | Employeur | Salarié |
+|---|---:|---:|---:|
+| 1^er^ juillet 2007 | 5,32 % | 4,00 | 1,32 |
+| 1^er^ juillet 2008 | 6,04 % | 4,00 | 2,04 |
+| 1^er^ juillet 2009 | 6,75 % | 4,00 | 2,75 |
+
+: Montée en charge de la cotisation d'assurance maladie dans le régime général {#tbl-amu-rsna}
+
+Le décret entre en vigueur « à compter du premier juillet 2007 » (art. 16) : c'est l'une des séries dont la datation, dans le modèle, correspond exactement au texte. Le supplément de 0,57 point du premier palier est mis à la charge de l'employeur ; les deux paliers suivants sont, selon les termes du décret, « supportés en totalité par le salarié ».
+
+### La perte d'emploi
+
+L'article 17 de la loi n° 2024-48 du 9 décembre 2024, portant loi de finances pour l'année 2025 [@lf-2025], crée un fonds spécial d'assurance contre la perte d'emploi pour raisons économiques, destiné à financer un régime d'assurance contre la perte collective d'emploi pour des motifs étrangers aux deux parties de la relation de travail et un dispositif d'accompagnement des travailleurs licenciés. Parmi les ressources du fonds figure une cotisation de **0,5 % supportée par chacune des deux parties**, assise sur la masse salariale déclarée auprès de la CNSS ; le taux figure donc dans la loi elle-même, et non dans le décret d'application qu'elle annonce. Ce décret n'a pas été identifié à ce jour.
+
+L'article ne comporte pas de clause d'entrée en vigueur propre. La date du 1^er^ janvier 2025 retenue par le modèle relève de la règle générale d'application des lois de finances à l'année budgétaire.
+
+Hors retraite complémentaire, le total obligatoire du régime général était ainsi de **9,18 % pour le salarié et 16,57 % pour l'employeur** de 2009 à 2024 ; la cotisation de perte d'emploi porte ces taux à **9,68 % et 17,07 %**.
+
+### La retraite complémentaire
+
+Le régime complémentaire de pension de vieillesse, d'invalidité et de survivants a été agréé par un **arrêté du ministre des affaires sociales du 18 novembre 1978**, qui publie son règlement et dispose que celui-ci « entre en application à compter du 1^er^ janvier 1974 ». Trois traits le distinguent du régime légal.
+
+Il est **facultatif parce que conventionnel** : le règlement s'applique aux employeurs qui ont souscrit un contrat d'adhésion auprès de la Caisse d'assurance vieillesse, d'invalidité et de survivants (CAVIS), l'adhésion prenant effet au premier jour d'un trimestre civil (art. 3 et 4). Ce sont les entreprises qui adhèrent, non les salariés.
+
+Il repose sur une **assiette différentielle**. L'article 6 du règlement énonce que « l'assiette de cotisation est la fraction de salaire excédant la limite fixée par le régime légal pour le calcul des prestations » : le régime complémentaire ne double pas le régime légal, il prolonge au-delà de la limite que le décret n° 74-499 pose pour le **calcul des pensions**. Cette limite n'est pas un plafond de cotisation — le régime légal, lui, cotise sur la totalité du salaire —, mais un plafond de prise en compte du salaire dans la pension. Les 3 points salarié et 6 points patronaux ne s'ajoutent donc pas aux 26,75 % du régime général : ils portent sur une assiette différente et plus étroite, et les deux prélèvements ne sont pas sommables. Le modèle applique aujourd'hui ces taux à la totalité du salaire, ce qui ne correspond pas au règlement.
+
+Enfin, **le taux de 9 % n'a aucune source publiée**. Le règlement fixe un taux d'appel initial de **4,5 %** et prévoit que « pour les périodes postérieures, le taux d'appel sera fixé en fonction de l'évolution de l'équilibre financier du régime, par décision du comité de gestion de la CAVIS soumise à l'approbation des ministres des finances et des affaires sociales ». Ces décisions ne sont pas publiées au *Journal officiel* : le passage de 4,5 % à 9 % ne peut être ni sourcé ni daté. Seule la clé de répartition est attestée — deux tiers à la charge de l'employeur, un tiers à la charge du participant —, et les valeurs de 6 % et 3 % la respectent.
+
+Le droit que ce régime ouvre relève du livre « Retraites ».
 
 ## Les autres régimes du secteur privé
 
@@ -95,15 +238,21 @@ table("coin_par_regime",
       "tbl-coin-regimes")
 ```
 
-Le prélèvement va de **7,5 % pour les travailleurs à faibles revenus à 26,75 % pour les salariés non agricoles**, soit un rapport de plus de trois. Deux mécanismes différents produisent cet écart, et il faut les distinguer.
+Le prélèvement va de **7,5 % pour les travailleurs à faibles revenus à 26,75 % pour les salariés non agricoles**, soit un rapport de plus de trois. Trois mécanismes distincts produisent cet écart, et il faut les tenir séparés.
 
-Pour les **salariés agricoles**, le taux lui-même est plus bas — 12,29 %, moins de la moitié du régime général — et le régime dit « amélioré » constitue une position intermédiaire à 19,47 %. Pour les **travailleurs à faibles revenus**, ce n'est pas seulement le taux qui est réduit mais **l'assiette qui est plafonnée** à 0,66 SMIG : au-delà, le prélèvement est nul. Ce régime est le seul du système à fonctionner ainsi.
+Le premier est le **taux** lui-même, fixé par chaque texte fondateur : 6,45 % pour les salariés agricoles, 15 % pour le régime agricole amélioré, 11 % pour les travailleurs non salariés et les artistes, 10,65 % pour les Tunisiens à l'étranger, 7,5 % pour les travailleurs à faibles revenus, contre 23,75 % pour le régime général.
 
-Pour les **travailleurs non salariés**, les **artistes** et les **Tunisiens à l'étranger**, la colonne patronale est vide : n'ayant pas d'employeur, l'assuré supporte seul la totalité, entre 13,3 % et 14,71 %.
+Le deuxième est l'**assiette**. Le régime général cotise sur le salaire réellement perçu ; tous les autres cotisent sur une assiette forfaitaire, qui peut être très inférieure ou, pour les classes élevées, très supérieure au revenu effectif. Comparer les taux ne suffit donc pas à comparer les prélèvements. Le cas le plus net est celui des travailleurs à faibles revenus : leur assiette est fixée par l'article 7 de la loi n° 2002-32 aux **deux tiers du SMIG ou du SMAG**. Le paramètre `0,66` que porte le modèle traduit cette assiette forfaitaire, et non un plafond au-delà duquel le prélèvement cesserait.
 
-Les sections qui suivent prennent chaque régime pour lui-même : ce qu'il couvre, comment il se décompose, et — dans la mesure où les textes ont pu être établis — quand il a été créé et comment il a évolué.
+Le troisième est l'**absence d'employeur**. Pour les travailleurs non salariés, les artistes et les Tunisiens à l'étranger, la colonne patronale est vide : l'assuré supporte seul la totalité, entre 13,3 % et 14,71 %.
+
+Les sections qui suivent prennent chaque régime pour lui-même : son texte fondateur et ce qu'il institue, l'histoire de ses taux, et le renvoi au livre « Prestations sociales » pour les droits qu'il ouvre.
 
 ### Les salariés agricoles
+
+Le régime des salariés agricoles est institué par la **loi n° 81-6 du 12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole**. Son article premier crée « un régime de sécurité sociale au profit des travailleurs salariés et des coopérateurs de l'agriculture », couvrant les assurances sociales — maladie, maternité, décès — et les pensions de vieillesse, d'invalidité et de survivants. Les bénéficiaires sont les salariés et coopérateurs exerçant une activité considérée comme agricole au sens de l'article 3 du code du travail. La gestion revient à la CNSS, l'administration du régime de pensions étant déléguée à la CAVIS. La loi ne comporte pas de clause d'entrée en vigueur ; le décret d'application y renvoie sans la citer.
+
+L'article 18 de la loi fixe le taux global à **6,45 %** et l'assiette au SMAG rapporté à quarante-cinq jours par trimestre, affecté d'un coefficient de 1 pour l'ouvrier ordinaire, 1,5 pour l'ouvrier spécialisé et 2 pour l'ouvrier qualifié. Il renvoie la répartition à un décret : le **décret n° 81-224 du 24 février 1981** la fixe en deux blocs — 1,20 % au titre des assurances sociales, dont 0,9 point patronal et 0,3 point salarial, et 5,25 % au titre des pensions, dont 3,5 points patronaux et 1,75 point salarial. L'article 4 de ce décret cale son entrée en vigueur sur celle de la loi n° 81-6, que la loi n'énonce nulle part : la date d'effet reste donc indéterminée.
 
 ```{python}
 #| echo: false
@@ -113,7 +262,19 @@ table("branches_rsa",
       "tbl-branches-rsa")
 ```
 
+L'écart entre les 6,45 % de 1981 et les 12,29 % en vigueur tient entièrement au supplément d'assurance maladie. L'article 7 du décret n° 2007-1406 appelle celui-ci en cinq paliers annuels, de **1,58 % au 1^er^ juillet 2007** à 2,88 % en 2008, 4,17 % en 2009, 5,46 % en 2010 et **6,75 % au 1^er^ juillet 2011** — la part maladie initialement prélevée sur le taux global étant de 0,91 %. Les trois derniers paliers du modèle correspondent exactement au texte ; les deux premiers s'en écartent de cinq et de deux centièmes de point.
+
+::: {.callout-warning title="Le partage des assurances sociales n'est attesté que pour la maladie"}
+Le décret n° 81-224 s'arrête à une ligne unique, « assurances sociales maladie, maternité, décès : 1,20 % », sans la ventiler. Seule la part maladie, 0,91 %, est attestée, et par un texte de 2007. La répartition entre maternité (0,24 %) et décès (0,05 %) que présente le tableau ci-dessus vient du modèle et n'a été retrouvée dans aucun texte.
+:::
+
+Le régime des salariés agricoles ne comporte **pas de branche « prestations familiales »** : c'est la ligne de partage avec le régime amélioré. Pour l'ensemble des droits ouverts, voir le livre « Prestations sociales ».
+
 ### Les salariés agricoles, régime amélioré
+
+Le régime amélioré n'est pas un régime distinct mais un **titre III ajouté à la loi n° 81-6** par la **loi n° 89-73 du 2 septembre 1989**, intitulé « Dispositions particulières applicables aux salariés employés par certaines entreprises agricoles ». Son article 86 nouveau en fixe le champ : il s'applique obligatoirement aux coopérateurs salariés des entreprises agricoles constituées en société, des sociétés de mise en valeur, des coopératives agricoles et des personnes morales agricoles non assujetties à un régime couvrant les mêmes risques ; à tous les salariés des autres exploitants agricoles employant au moins trente salariés permanents ; ainsi qu'aux pêcheurs employés sur des bateaux de jauge brute inférieure à trente tonneaux, aux pêcheurs indépendants et aux petits armateurs. L'adhésion doit couvrir l'ensemble des salariés de l'entreprise, et la gestion financière est distincte de celle du régime de base. La loi énonce sa date d'effet : le **1^er^ octobre 1989**.
+
+L'article 90 fixe le taux global à **15 %**, réparti à raison de 10 points à la charge de l'employeur et de 5 points à la charge du salarié ou du coopérateur, les travailleurs non salariés couverts par ce régime en supportant la totalité. Comme dans le régime de base, la loi renvoie à un décret la répartition entre branches.
 
 ```{python}
 #| echo: false
@@ -123,7 +284,21 @@ table("branches_rsaa",
       "tbl-branches-rsaa")
 ```
 
+L'écart entre 15 % et les 19,47 % en vigueur tient là encore au supplément d'assurance maladie, appelé par l'article 8 du décret n° 2007-1406 en quatre paliers : **2,90 % au 1^er^ juillet 2007**, 4,19 % en 2008, 5,47 % en 2009 et **6,75 % au 1^er^ juillet 2010**, à partir d'une part maladie de 2,28 % prélevée sur le taux global. Les travailleurs exerçant pour leur propre compte supportent la totalité du supplément. Cette série du modèle correspond exactement au texte.
+
+::: {.callout-warning title="Le décret de répartition annoncé par l'article 90 n'a pas été identifié"}
+La ventilation des 15 % entre les cinq branches que présente le tableau ci-dessus vient des paramètres du modèle. L'article 90 de la loi n° 81-6 la renvoie expressément à un décret, et ce décret n'a pas été retrouvé. Seule la part maladie, 2,28 %, est attestée — par le décret n° 2007-1406, qui la vise pour calculer le supplément.
+:::
+
+Ce qui distingue ce régime du régime agricole de base, du côté des droits, est l'ouverture des **allocations familiales**, servies du chef de l'assuré pour les trois premiers enfants aux conditions et aux taux du régime général (articles 91 et 92). Le livre « Prestations sociales » les traite.
+
 ### Les travailleurs non salariés
+
+Le régime des travailleurs non salariés est institué par le **décret n° 95-1166 du 3 juillet 1995, relatif à la sécurité sociale des travailleurs non salariés dans les secteurs agricole et non agricole**. Il procède par extension : son article premier rend applicables aux non-salariés une partie des articles de la loi n° 60-30 et du décret n° 74-499. Est considérée comme travailleur non salarié « toute personne exerçant à titre principal une activité professionnelle, quelle que soit sa nature, pour son propre compte ou en qualité de mandataire », les artisans titulaires d'une carte professionnelle et les métayers étant expressément visés. L'affiliation est obligatoire dans le mois, et n'est plus admise au-delà de cinquante-cinq ans révolus sauf à justifier de quarante trimestres validés. Le décret abroge les deux régimes prédécesseurs, institués par les décrets n° 82-1359 et n° 82-1360 du 21 octobre 1982. Il ne comporte pas de clause d'entrée en vigueur.
+
+Les cotisations sont assises sur un **revenu forfaitaire** : le SMIG du régime de 48 heures rapporté à 2 400 heures par an dans le secteur non agricole, le SMAG rapporté à 300 jours par an dans le secteur agricole, affectés du coefficient de la classe où l'assuré est placé — dix classes, de 1 à 18 fois le revenu de référence. L'assuré ne peut être placé dans une classe inférieure à celle qui correspond à son activité, mais peut opter pour une classe supérieure ; le changement ne prend effet qu'au 1^er^ janvier suivant.
+
+L'article 9 fixe le taux à **11 %**, dont 7 points pour le régime des pensions et 4 points pour les assurances sociales. Le décret prévoit par ailleurs un réajustement du taux si l'analyse actuarielle quinquennale révèle un risque de déséquilibre.
 
 ```{python}
 #| echo: false
@@ -133,7 +308,19 @@ table("branches_rtns",
       "tbl-branches-rtns")
 ```
 
+Le passage de 11 % à 14,71 % tient au supplément d'assurance maladie, appelé par l'article 10 du décret n° 2007-1406 en quatre paliers — **3,97 % au 1^er^ juillet 2007**, 4,90 % en 2008, 5,83 % en 2009 et **6,75 % au 1^er^ juillet 2010** —, à partir d'une part maladie de 3,04 % prélevée sur le taux global. Le supplément est intégralement supporté par l'affilié. La série du modèle correspond exactement au texte.
+
+Le partage des 4 % d'assurances sociales entre maladie, maternité et décès n'est fixé par aucun texte lu : seule la part maladie de 3,04 % est attestée. La répartition du solde entre maternité et décès appelle la réserve exposée sous le tableau du régime des artistes, dont l'architecture est identique.
+
+Les droits ouverts par ce régime relèvent du livre « Prestations sociales ».
+
 ### Les artistes, créateurs et intellectuels
+
+Le régime des artistes est institué par la **loi n° 2002-104 du 30 décembre 2002, relative au régime de sécurité sociale des artistes, des créateurs et des intellectuels**, publiée le 31 décembre 2002. Son article premier crée « un régime spécial de sécurité sociale au profit des artistes, des créateurs et des intellectuels comportant les assurances sociales, les pensions de vieillesse, d'invalidité et de survivants et les actions sanitaires et sociales ». L'affiliation suppose trois conditions cumulatives : prouver son appartenance au secteur culturel ou l'exercice permanent d'une activité artistique ou culturelle, sur la base d'une pièce délivrée par les services du ministère chargé de la culture ; n'être assujetti à aucun autre régime légal ; ne bénéficier d'aucune indemnité permanente de l'État ni d'un revenu tiré d'une autre activité. La gestion revient à la CNSS et l'affiliation est obligatoire dans le mois suivant l'assujettissement. La loi ne comporte aucune clause d'entrée en vigueur ; la date du 1^er^ janvier 2003 que porte le modèle n'est donc attestée par aucun article.
+
+Le **décret n° 2003-894 du 21 avril 2003** en fixe les modalités : l'assiette est un revenu forfaitaire, produit d'un coefficient de classe par le SMIG de 48 heures rapporté à 2 400 heures par an, sans pouvoir être inférieur à deux fois ce SMIG. Les dix classes vont du coefficient 2 au coefficient 18. Les cotisations sont trimestrielles.
+
+L'article 7 de la loi fixe le taux à **11 %**, réparti entre 7 points pour les pensions et 4 points pour les assurances sociales — architecture strictement identique à celle des travailleurs non salariés.
 
 ```{python}
 #| echo: false
@@ -143,21 +330,64 @@ table("branches_raci",
       "tbl-branches-raci")
 ```
 
+L'article 11 du décret n° 2007-1406 appelle le supplément d'assurance maladie selon le même calendrier que pour les travailleurs non salariés : **3,97 % au 1^er^ juillet 2007**, 4,90 % en 2008, 5,83 % en 2009, **6,75 % au 1^er^ juillet 2010**, à partir d'une part maladie de 3,04 % prélevée sur le taux global. La série du modèle correspond exactement au texte.
+
+::: {.callout-warning title="Les branches maternité et décès de ce régime et du précédent"}
+Le partage des 4 % d'assurances sociales entre maladie, maternité et décès n'est fixé par aucun texte identifié, dans l'un comme dans l'autre régime ; seule la part maladie de 3,04 % est attestée. Or les deux tableaux publiés portent des valeurs **interverties** : 0,51 % de maternité et 0,45 % de décès pour les travailleurs non salariés, 0,45 % et 0,51 % pour les artistes. Les deux régimes ayant la même architecture — 11 % = 7 + 4 —, l'une au moins de ces deux répartitions ne peut être exacte, et rien dans les textes lus ne permet de dire laquelle.
+:::
+
+Les droits ouverts par ce régime relèvent du livre « Prestations sociales ».
+
 ### Les travailleurs à faibles revenus
+
+Le régime est institué par la **loi n° 2002-32 du 12 mars 2002, relative au régime de sécurité sociale pour certaines catégories de travailleurs dans les secteurs agricole et non agricole**. Son article premier crée « un régime spécifique de sécurité sociale comprenant l'octroi des prestations de soins, des pensions de vieillesse, d'invalidité et de survivants » et énumère cinq catégories de bénéficiaires : les employés de maison ; les personnes employées par l'État, les collectivités locales et les établissements publics à caractère administratif qui ne sont pas couvertes par un autre régime légal ; les pêcheurs sur bateaux de jauge brute inférieure ou égale à cinq tonneaux, les pêcheurs indépendants et les petits armateurs ; les agriculteurs travaillant pour leur propre compte et exploitant au plus cinq hectares en sec ou un hectare en irrigué ; les artisans travaillant à la pièce. Les trois dernières catégories disposent d'un droit d'option. Le champ peut être étendu par décret. Ni la loi ni son décret d'application, le **décret n° 2002-916 du 22 avril 2002**, n'énoncent de date d'effet.
+
+L'article 7 de la loi fixe en une seule phrase le taux, l'assiette et la clé de répartition : les cotisations « sont fixées au taux de **7,5 %** et calculées sur la base des **deux tiers du salaire minimum agricole garanti** » pour trois des catégories, « et sur la base des **deux tiers du salaire minimum interprofessionnel garanti** » pour les deux autres ; le taux est « réparti sur la base des deux tiers à la charge de l'employeur et d'un tiers à la charge du salarié », et supporté en totalité par les travailleurs exerçant pour leur propre compte. L'article 13 du décret précise la mensualisation de cette assiette — deux tiers du SMIG de 48 heures rapporté à 200 heures par mois, ou deux tiers du SMAG rapporté à 25 jours par mois. Ses articles 14 et 15 ventilent le taux : 2,5 points au titre des prestations de soins et 5 points au titre des pensions d'une part ; 5 points à la charge de l'employeur et 2,5 points à la charge de l'employé d'autre part.
 
 ```{python}
 #| echo: false
 #| output: asis
 table("branches_rtfr",
-      "Cotisations du régime des travailleurs à faibles revenus, par branche — assiette plafonnée à 0,66 SMIG",
+      "Cotisations du régime des travailleurs à faibles revenus, par branche — assiette forfaitaire des deux tiers du SMIG ou du SMAG",
       "tbl-branches-rtfr")
 ```
 
+::: {.callout-warning title="Le « 0,66 » n'est pas un plafond, et le croisement des deux répartitions n'est pas dans les textes"}
+Le paramètre `0,66` exprimé en SMIG que porte le modèle traduit l'**assiette forfaitaire des deux tiers** posée par l'article 7 de la loi et par l'article 13 du décret : elle vaut pour tous les affiliés, quel que soit leur revenu. Ce n'est pas un plafond au-delà duquel le prélèvement cesserait.
+
+Par ailleurs, les textes fixent deux répartitions à une dimension — par branche (5 / 2,5) et par payeur (5 / 2,5) — mais ne les croisent jamais. Les quatre valeurs du tableau ci-dessus résultent de ce croisement, opéré par le modèle et non par un texte.
+:::
+
+Ce régime est le seul du secteur privé que le décret n° 2007-1406 ne vise pas : les articles 4 à 11 de ce décret énumèrent limitativement les régimes basculant dans la progressivité de l'assurance maladie, et celui-ci n'y figure pas. Son taux de 7,5 % est donc inchangé depuis 2002.
+
+Le régime ne comporte **pas de branche « prestations familiales »** : il ne couvre que les soins et les pensions. Le livre « Prestations sociales » détaille ce périmètre.
+
 ### Les étudiants
 
-Le régime des étudiants n'a pas de tableau, parce qu'il ne relève pas d'un taux : il prend la forme d'une **cotisation forfaitaire de 5 dinars**, fixée par le décret n° 92-631 du 23 mars 1992 tel que modifié par le décret n° 2003-1544 du 2 juillet 2003.
+Le régime des étudiants est institué par la **loi n° 65-17 du 28 juin 1965**, qui étend aux étudiants les régimes de sécurité sociale et crée une **cotisation forfaitaire**, modifiée par la loi n° 88-40 du 6 mai 1988. Le **décret n° 92-631 du 23 mars 1992** en fixe les conditions de bénéfice : sont couverts les étudiants « régulièrement inscrits » et « poursuivant effectivement des études supérieures » dans l'un des établissements figurant sur la liste annexée au décret. La cotisation est payable au moment de l'inscription ou, à défaut, au dépôt de la demande d'affiliation.
+
+Le régime ne relève pas d'un taux mais d'un montant, dont l'évolution connue tient en deux valeurs.
+
+| Depuis | Texte | Montant annuel |
+|---|---|---:|
+| 1992, date d'effet non énoncée | décret n° 92-631, art. 2 | 2 D |
+| 2003, date d'effet non énoncée | décret n° 2003-1544, art. 2 nouveau | 5 D |
+
+: Cotisation forfaitaire annuelle du régime des étudiants {#tbl-cotisation-etudiants}
+
+Le décret n° 2003-1544 du 2 juillet 2003 abroge l'article 2 du décret de 1992 et fixe la cotisation « à cinq dinars par an ». Comme le décret qu'il remplace, il s'achève sur une clause d'exécution : la date du 2 juillet 2003 retenue par le modèle est celle de la **signature**, non d'une entrée en vigueur énoncée. Le modèle ne connaît que la seconde valeur ; la première n'y figure pas.
+
+::: {.callout-warning title="Les branches couvertes ne sont pas établies"}
+Ni le décret n° 92-631 ni le décret n° 2003-1544 n'énoncent les risques que le régime des étudiants couvre : ils renvoient à la loi n° 65-17, qui n'a pas été ouverte. L'intitulé retenu par le modèle est compatible avec une couverture limitée aux soins, mais ce point n'est pas attesté. Le livre « Prestations sociales » en traitera lorsque la loi aura été lue.
+:::
 
 ### Les Tunisiens à l'étranger
+
+Le régime est institué par le **décret n° 89-107 du 10 janvier 1989, étendant le régime de sécurité sociale aux travailleurs tunisiens à l'étranger**. Comme celui des travailleurs non salariés, il procède par extension d'articles de la loi n° 60-30 et du décret n° 74-499, au profit des « travailleurs tunisiens à l'étranger, qu'ils soient salariés ou non salariés, qui ne sont pas couverts par une convention bilatérale de sécurité sociale ou par une réglementation spéciale ». La gestion revient à la CNSS, l'administration du régime de pensions étant déléguée à la CAVIS. Le décret ne comporte pas de clause d'entrée en vigueur.
+
+Son article 3 combine deux règles qu'il faut lire ensemble : « l'adhésion au régime prévu par le présent décret est **volontaire** », mais elle « couvre **obligatoirement** la branche des assurances sociales et celle des pensions de vieillesse, d'invalidité et de survivants ». On adhère ou non ; on ne choisit pas la branche. L'assiette est forfaitaire, produit d'un coefficient de classe par le SMIG de 48 heures rapporté à 2 400 heures par an, l'assuré se plaçant à son choix dans l'une des quatre classes de coefficient 2, 4, 6 ou 9.
+
+L'article 7 fixe le taux à **10,65 %**, réparti entre 5,40 points pour les assurances sociales et 5,25 points pour les pensions. Les cotisations sont à la charge du travailleur, l'employeur pouvant les prendre en charge en tout ou partie.
 
 ```{python}
 #| echo: false
@@ -166,6 +396,14 @@ table("branches_rtte",
       "Cotisations du régime des Tunisiens à l'étranger, par branche",
       "tbl-branches-rtte")
 ```
+
+Le passage de 10,65 % à 13,30 % tient au supplément d'assurance maladie, appelé par l'article 9 du décret n° 2007-1406 en trois paliers — **4,99 % au 1^er^ juillet 2007**, 5,87 % en 2008 et **6,75 % au 1^er^ juillet 2009** —, à partir d'une part maladie de 4,10 % prélevée sur le taux global, et supporté par les affiliés. La série du modèle correspond exactement au texte.
+
+::: {.callout-warning title="Le partage des assurances sociales n'est attesté que pour la maladie"}
+Le décret n° 89-107 s'arrête au bloc « assurances sociales : 5,40 % ». Seule la part maladie, 4,10 %, est attestée, par le décret n° 2007-1406. La ventilation entre maternité (0,74 %) et décès (0,56 %) que présente le tableau ci-dessus vient du modèle et n'a été retrouvée dans aucun texte.
+:::
+
+Les droits ouverts par ce régime relèvent du livre « Prestations sociales ».
 
 ## Le secteur public
 
@@ -181,27 +419,32 @@ table("cnrps_retraite",
 
 La série se lit en trois temps. Le régime naît en **1959** avec une cotisation de 7 %, que la loi de finances pour 1975 **ramène à 5 %** — un mouvement à la baisse qu'on ne retrouvera plus ensuite. Suit un quart de siècle de stabilité, puis, **à partir de 1994, une remontée continue** : 6 %, puis une série de relèvements par paliers qui portent le taux à 9,2 % en 2020. En soixante ans, la cotisation retraite du secteur public a donc gagné un peu plus de deux points, mais l'essentiel de cette hausse tient aux vingt-cinq dernières années.
 
-Trois millésimes — 2003, 2004, 2008 et 2009 — ne portent pas de texte en regard. Ils s'inscrivent dans les relèvements programmés par les lois de 2001 et de 2007, mais le texte qui fixe chaque palier n'a pas été établi.
+Quatre millésimes — 2003, 2004, 2008 et 2009 — ne portent pas de texte en regard, et il n'y en a pas à trouver : ils sont **programmés d'avance** par deux échéanciers pluriannuels, l'article 85 de la loi de finances pour 2002 et l'article premier de la loi n° 2007-43, qui répartissent chacun un relèvement d'ensemble en marches successives.
 
-::: {.callout-warning title="Les références de cette série sont à reprendre"}
-Les textes cités dans ce tableau viennent des métadonnées des paramètres d'`openfisca-tunisia`, dont les liens pointent vers un dépôt personnel plutôt que vers le *Journal officiel*. Les intitulés et les dates sont vraisemblables, mais **aucun de ces textes n'a été lu à la source** pour ce chapitre. Les remplacer par des URL du JORT sur pist.tn est un préalable à toute citation.
+::: {.callout-warning title="Cette section est en cours de reprise"}
+Les textes de cette série ont désormais été lus sur les fascicules du *Journal officiel*, et deux des lignes affichées ci-dessus sont fausses — notamment le palier du 1^er^ juin 2019, que l'article 4 de la loi n° 2019-37 contredit : la part de l'agent est majorée d'un point « à partir du premier janvier 2020 », en une seule fois. La correction est portée par la *pull request* n° 397 d'`openfisca-tunisia` ; ce tableau, qui est engendré depuis le modèle, sera régénéré dès qu'elle sera intégrée, et la section réécrite avec lui.
 :::
 
 ## Le recouvrement
 
-Le recouvrement relève des caisses elles-mêmes : la CNSS pour les régimes du secteur privé, la CNRPS pour le secteur public. Le versement est **trimestriel** dans le régime général, ce dont le vocabulaire des textes garde la trace — les montants des prestations familiales sont eux-mêmes exprimés par trimestre, et les décomptes entre caisses et ministères se font « chaque trois mois ».
+Les deux secteurs ne recouvrent pas par le même instrument, et la dissymétrie vaut d'être écrite plutôt qu'aplanie : **au privé, une déclaration trimestrielle qui précède et justifie le versement ; au public, un précompte mensuel opéré par l'employeur sur le traitement.**
 
-<!-- TODO (documentaliste) : cette section doit rester brève, mais elle demande un
-minimum : le texte qui fixe la périodicité et les délais de déclaration, le régime des
-pénalités de retard, et l'articulation avec la déclaration employeur. Rien de tout cela
-n'est établi à ce jour. -->
+Au privé, tout procède des articles 45 et 46 de la loi n° 60-30. Les cotisations sont dues **à la fin de chaque trimestre** et versées « au plus tard le quinzième jour du mois suivant » ; à la même échéance, l'employeur adresse à la caisse une **déclaration trimestrielle de salaires justificative des cotisations dues**, réputée nulle si elle omet une partie des salaires payés ou mentionne des salaires inférieurs aux minima réglementaires. La carence ouvre la **taxation d'office**. C'est cette architecture qui explique que le vocabulaire des textes soit trimestriel jusque dans les prestations : les montants des prestations familiales sont eux-mêmes exprimés par trimestre.
+
+Le versement **mensuel** n'est devenu possible qu'en 2007, et seulement comme **faculté** : la loi n° 2007-51 ajoute à l'article 45 un paragraphe disposant que les cotisations « peuvent être versées mensuellement par les employeurs ». La périodicité de principe reste trimestrielle.
+
+La même loi de 2007 refait le régime des **pénalités**, et le déplacement mérite d'être noté. La rédaction de 1960 punissait le retard de 3 ‰ par jour, **plafonnés à quatre-vingt-dix jours** ; celle de 2007 retient 1 % par mois de retard, **sans plafond**, et y ajoute une pénalité distincte de 0,5 % par mois lorsque l'employeur n'a pas déclaré la totalité des salaires. C'est désormais la déclaration, autant que le paiement, qui est sanctionnée. Les remises gracieuses relèvent du ministre chargé des affaires sociales et sont accordées « pour motifs d'intérêt général » ; la pratique en est périodique, une dizaine de textes de remise s'échelonnant de 1985 à 2025.
+
+Au public, le mécanisme est plus simple et fut longtemps dépourvu de sanction. L'article 9 de la loi n° 85-12 charge l'employeur de « prélever mensuellement » la contribution et de la « verser sans délai » à la caisse, en lui interdisant de conserver ces montants ou de les employer à une autre fin — mais sans fixer ni délai chiffré ni pénalité. Ce vide n'a été comblé qu'en **2019** : l'article 9 bis, inséré par la loi n° 2019-37, impose le transfert « dans un délai n'excédant pas le cinquième jour du mois suivant » et frappe le retard d'une pénalité de **1,5 % par mois**. Deux traits en font un texte singulier — le débiteur de la pénalité est **l'État lui-même** et les autres personnes publiques employeuses, et le taux est supérieur de moitié à celui du secteur privé. La même loi impose enfin à la CNRPS un système d'échange de données mensuel avec les employeurs, rapprochant le public de la logique déclarative du privé.
 
 ## Vue d'ensemble
 
-Le système tunisien de cotisations présente trois traits que ce chapitre a établis sur les paramètres du modèle.
+Le système tunisien de cotisations présente quatre traits que ce chapitre a établis sur les textes et sur les paramètres du modèle.
 
-**Il est proportionnel et sans plafond.** Une seule exception, le régime des travailleurs à faibles revenus, dont l'assiette s'arrête à 0,66 SMIG.
+**Il est proportionnel et sans plafond, mais sur deux assiettes différentes.** Le régime général cotise sur le salaire réellement perçu, sans butoir ; les autres régimes du secteur privé cotisent sur une assiette forfaitaire, exprimée en multiples du SMIG ou du SMAG. Le régime général ne comporte aucun plafond de cotisation ; dans les régimes à assiette forfaitaire, la question ne se pose pas dans les mêmes termes, l'assiette y étant bornée par la classe la plus élevée — coefficient 18 pour les travailleurs non salariés et les artistes, coefficient 9 pour les Tunisiens à l'étranger. Le seul plafond que pose un texte est celui que le régime légal de pensions retient pour le **calcul des prestations**, au-delà duquel le régime complémentaire prend le relais.
 
 **Il est très inégal d'un régime à l'autre** : de 7,5 % à 26,75 %, sans que la contrepartie en prestations varie dans les mêmes proportions — la matrice du livre « Prestations sociales » montre que les régimes les moins taxés sont aussi ceux qui ouvrent le moins de branches, mais l'écart n'est pas proportionnel.
 
-**Son histoire est connue au public et inconnue au privé.** Soixante ans de relèvements documentés pour la CNRPS, un instantané sans date pour le régime qui couvre la majorité des salariés. Combler cet écart est le premier travail que ce livre appelle.
+**Il s'est unifié par la maladie, non par le taux.** Le décret n° 2007-1406 a porté la cotisation maladie de six régimes au même niveau de 6,75 %, par des calendriers différents étalés de 2007 à 2011 ; c'est ce mouvement, et non une réforme des taux globaux, qui explique la quasi-totalité de l'écart entre les taux d'origine des régimes et ceux en vigueur aujourd'hui.
+
+**Son histoire est mieux connue qu'il n'y paraissait, mais elle reste incomplète.** Les taux globaux des sept régimes privés sont désormais rattachés à leur texte, et le taux du régime général se lit comme la somme exacte de trois d'entre eux. Ce qui manque tient en trois points : la ventilation interne des taux globaux, qui n'est attestée que pour la part maladie dans presque tous les régimes ; treize dates d'effet qu'aucun article n'énonce ; et le taux de la retraite complémentaire, qui relève de décisions non publiées au *Journal officiel*.
