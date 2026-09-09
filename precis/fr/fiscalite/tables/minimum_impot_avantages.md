@@ -4,5 +4,5 @@
 | Années de revenus | Minimum d'impôt | Texte |
 |---|---:|---|
 | 1990 → 1998 | 0 % | — |
-| 1999 → 2016 | 60 % | [@lf-1998, art. 62] |
+| 2014 → 2016 | 60 % | [@lf-1998, art. 62] |
 | 2017 → 2026 | 45 % | [@loi-avantages-fiscaux-2017, art. 2] |
