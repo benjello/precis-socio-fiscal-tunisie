@@ -20,6 +20,7 @@ Citation keys are read from the "Extra" field in Zotero (citation-key: xxx).
 """
 
 import argparse
+import copy
 import json
 import os
 import re
@@ -148,6 +149,71 @@ def build_extra_map(group_id, api_key):
         if variables:
             extras[item["key"]] = variables
     return extras
+
+
+ARABE = re.compile(r"[\u0600-\u06FF]")
+
+# Champs dont la version arabe est une TRADUCTION et non une donnée : les préserver.
+# Le reste — URL, dates, pages, numéro de fascicule — est identique dans les deux
+# langues et doit suivre la source canonique.
+CHAMPS_TRADUITS = ("title", "title-short", "container-title", "publisher",
+                   "publisher-place", "authority", "author", "editor")
+
+
+def contient_arabe(valeur):
+    if isinstance(valeur, str):
+        return bool(ARABE.search(valeur))
+    if isinstance(valeur, list):
+        return any(contient_arabe(v) for v in valeur)
+    if isinstance(valeur, dict):
+        return any(contient_arabe(v) for v in valeur.values())
+    return False
+
+
+def preserve_traductions(items, chemin_existant):
+    """Garde les champs déjà traduits en arabe, prend le reste de Zotero.
+
+    La bibliothèque Zotero est en français : une descente brute remplacerait
+    « قرار من وزير الشؤون الاجتماعية… » par « Arrêté du ministre des affaires
+    sociales… », effaçant un travail de traduction que rien ne referait.
+
+    La règle est mécanique et ne préserve donc que ce qui est réellement traduit :
+    un champ n'est gardé que s'il est en caractères arabes localement et ne l'est pas
+    dans ce qui descend. Une correction faite côté Zotero — une URL réparée, une page
+    rectifiée — passe donc toujours.
+    """
+    if not os.path.exists(chemin_existant):
+        return items
+    with open(chemin_existant, encoding="utf-8") as f:
+        anciens = {e.get("id"): e for e in json.load(f).get("items", [])}
+    preserves = 0
+    for item in items:
+        ancien = anciens.get(item.get("id"))
+        if not ancien:
+            continue
+        for champ in CHAMPS_TRADUITS:
+            if champ in ancien and contient_arabe(ancien[champ]) and not contient_arabe(item.get(champ)):
+                item[champ] = ancien[champ]
+                preserves += 1
+    if preserves:
+        print(f"    {preserves} champ(s) arabes préservés dans {os.path.basename(os.path.dirname(chemin_existant))}")
+    return items
+
+
+def sans_cle_de_citation(items):
+    """Écarte les articles qui n'ont pas de clé de citation.
+
+    Leur identifiant reste celui de Zotero — « 23975222/K2B3EV4C » —, qui ne peut pas
+    s'écrire `[@…]` dans le texte. Ils ne sont donc citables par personne, et leur place
+    dans une bibliographie publiée est nulle : ce sont des pièces jointes ou des
+    résidus. On les écarte plutôt que de les supprimer côté Zotero, où ils peuvent
+    servir à autre chose.
+    """
+    gardes = [i for i in items if "/" not in str(i.get("id", ""))]
+    ecartes = len(items) - len(gardes)
+    if ecartes:
+        print(f"    {ecartes} article(s) sans clé de citation écarté(s)")
+    return gardes
 
 
 def normalise_auteurs(csl_items):
@@ -318,18 +384,28 @@ def main():
 
     written = 0
     for book, items in book_items.items():
+        items = sans_cle_de_citation(items)
         if not items:
             continue
         for lang in LANGUAGES:
             out_path = os.path.join(precis_dir, lang, book, "references.json")
-            write_csl_json(items, out_path)
+            # Chaque langue reçoit sa propre copie : `preserve_traductions` modifie les
+            # items en place, et l'arabe ne doit pas contaminer le français.
+            a_ecrire = copy.deepcopy(items)
+            if lang == "ar":
+                a_ecrire = preserve_traductions(a_ecrire, out_path)
+            write_csl_json(a_ecrire, out_path)
             print(f"  Wrote {out_path}")
             written += 1
 
+    shared_items = sans_cle_de_citation(shared_items)
     if shared_items:
         for lang in LANGUAGES:
             out_path = os.path.join(precis_dir, lang, "references.json")
-            write_csl_json(shared_items, out_path)
+            a_ecrire = copy.deepcopy(shared_items)
+            if lang == "ar":
+                a_ecrire = preserve_traductions(a_ecrire, out_path)
+            write_csl_json(a_ecrire, out_path)
             print(f"  Wrote {out_path}")
             written += 1
 
