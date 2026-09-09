@@ -69,7 +69,7 @@ def table(nom, legende, label):
 ```{python}
 #| echo: false
 #| output: asis
-table("rsna_branches",
+table("branches_rsna",
       "مساهمات نظام الأجراء غير الفلاحيين، حسب الفرع وحسب الحصّة",
       "tbl-rsna-branches")
 ```

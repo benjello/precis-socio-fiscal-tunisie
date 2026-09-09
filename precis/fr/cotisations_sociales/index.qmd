@@ -70,7 +70,7 @@ Le régime général prélève **dix cotisations distinctes**, dont une facultat
 ```{python}
 #| echo: false
 #| output: asis
-table("rsna_branches",
+table("branches_rsna",
       "Cotisations du régime des salariés non agricoles, par branche et par part",
       "tbl-rsna-branches")
 ```

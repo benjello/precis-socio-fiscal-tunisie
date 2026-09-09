@@ -37,12 +37,14 @@ MOTS = {
         "effet": "Effet", "texte": "Texte", "branche": "Branche",
         "salarie": "Part salariale", "employeur": "Part patronale",
         "total": "Total", "regime": "Régime", "taux": "Taux",
+        "total_obligatoire": "**Total obligatoire**",
         "tranche": "Tranche d'assiette (en SMIG)",
         "retraite": "Retraite", "maladie": "Maladie", "maternite": "Maternité",
         "deces": "Décès", "famille": "Prestations familiales",
         "at": "Accidents du travail", "perte_emploi": "Perte d'emploi",
         "fse": "Fonds spécial de l'État",
         "pst": "Protection sociale des travailleurs",
+        "soin": "Soins",
         "complementaire": "Retraite complémentaire (facultative)",
         "cnrps_retraite": "Cotisation retraite du salarié affilié à la CNRPS",
     },
@@ -50,24 +52,29 @@ MOTS = {
         "effet": "بداية السريان", "texte": "النصّ", "branche": "الفرع",
         "salarie": "الحصة الأجيرية", "employeur": "الحصة المشغِّلة",
         "total": "المجموع", "regime": "النظام", "taux": "النسبة",
+        "total_obligatoire": "**المجموع الوجوبي**",
         "tranche": "شريحة الوعاء (بالأجر الأدنى)",
         "retraite": "التقاعد", "maladie": "المرض", "maternite": "الولادة",
         "deces": "الوفاة", "famille": "المنح العائلية",
         "at": "حوادث الشغل", "perte_emploi": "فقدان الشغل",
         "fse": "الصندوق الخاص للدولة",
         "pst": "الحماية الاجتماعية للعملة",
+        "soin": "العلاج",
         "complementaire": "التقاعد التكميلي (اختياري)",
         "cnrps_retraite": "مساهمة التقاعد للأجير المنخرط بالصندوق الوطني للتقاعد",
     },
 }
 
-# (clé de libellé, chemin sous le régime) — l'ordre est celui de la lecture, des branches
-# les plus lourdes aux plus légères.
-BRANCHES_RSNA = [
+# Ordre de lecture commun à tous les régimes, des branches les plus lourdes aux plus
+# légères. Les régimes n'ont pas les mêmes branches — le RSNA en a dix, le RTFR deux — et
+# c'est l'arborescence du régime qui décide des lignes présentes ; cette table ne fixe que
+# l'ordre et le libellé.
+ORDRE_BRANCHES = [
     ("retraite", "retraite.yaml"),
     ("maladie", "assurances_sociales/maladie.yaml"),
     ("maternite", "assurances_sociales/maternite.yaml"),
     ("deces", "assurances_sociales/deces.yaml"),
+    ("soin", "soin.yaml"),
     ("famille", "famille.yaml"),
     ("at", "accident_du_travail.yaml"),
     ("perte_emploi", "perte_d_emploi.yaml"),
@@ -116,8 +123,6 @@ def _somme_cote(regime: str, cote: str) -> float | None:
     racine = ot._racine_paquet()
     if racine is None:
         return None
-    dossier = Path(str(racine)) / PRIVE.replace("parameters/", "parameters/") / regime
-    dossier = Path(str(racine)) / Path(PRIVE).relative_to("parameters") / regime
     dossier = Path(str(racine)) / "parameters" / Path(PRIVE).relative_to("parameters") / regime
     base = dossier / f"cotisations_{cote}"
     if not base.is_dir():
@@ -134,24 +139,48 @@ def _somme_cote(regime: str, cote: str) -> float | None:
     return somme if trouve else None
 
 
-def rsna_branches(langue):
-    """Le régime général branche par branche, part salariale et part patronale."""
-    import pandas as pd
+def branches(regime: str):
+    """Fabrique le tableau des branches d'un régime, part salariale et part patronale.
 
-    m = MOTS[langue]
-    lignes = []
-    for cle, relatif in BRANCHES_RSNA:
-        sal = _dernier(f"{PRIVE}/rsna/cotisations_salarie/{relatif}")
-        emp = _dernier(f"{PRIVE}/rsna/cotisations_employeur/{relatif}")
-        if sal is None and emp is None:
-            continue
+    Une ligne par branche effectivement présente dans l'arborescence du régime : une
+    branche que le régime ne connaît pas n'apparaît pas, et une branche qu'un seul des
+    deux côtés supporte affiche un tiret de l'autre.
+    """
+    def tableau(langue):
+        import pandas as pd
+
+        m = MOTS[langue]
+        lignes = []
+        cumul = {"salarie": 0.0, "employeur": 0.0}
+        for cle, relatif in ORDRE_BRANCHES:
+            sal = _dernier(f"{PRIVE}/{regime}/cotisations_salarie/{relatif}")
+            emp = _dernier(f"{PRIVE}/{regime}/cotisations_employeur/{relatif}")
+            if sal is None and emp is None:
+                continue
+            # La retraite complémentaire est affichée mais reste hors du total : elle est
+            # facultative, et c'est le total obligatoire qui doit coïncider au centième
+            # près avec celui du tableau de synthèse — d'où un cumul sur les valeurs
+            # brutes, jamais sur les pourcentages arrondis de la colonne.
+            if cle != "complementaire":
+                cumul["salarie"] += sal or 0
+                cumul["employeur"] += emp or 0
+            lignes.append({
+                m["branche"]: m[cle],
+                m["salarie"]: _taux(langue)(sal),
+                m["employeur"]: _taux(langue)(emp),
+                m["total"]: _taux(langue)((sal or 0) + (emp or 0)),
+            })
+        if not lignes:
+            return pd.DataFrame()
         lignes.append({
-            m["branche"]: m[cle],
-            m["salarie"]: _taux(langue)(sal),
-            m["employeur"]: _taux(langue)(emp),
-            m["total"]: _taux(langue)((sal or 0) + (emp or 0)),
+            m["branche"]: m["total_obligatoire"],
+            m["salarie"]: _taux(langue)(cumul["salarie"]),
+            m["employeur"]: _taux(langue)(cumul["employeur"]),
+            m["total"]: _taux(langue)(cumul["salarie"] + cumul["employeur"]),
         })
-    return pd.DataFrame(lignes)
+        return pd.DataFrame(lignes)
+
+    return tableau
 
 
 def coin_par_regime(langue):
@@ -186,10 +215,13 @@ def cnrps_retraite(langue):
 
 
 TABLEAUX = {
-    "rsna_branches.md": rsna_branches,
     "coin_par_regime.md": coin_par_regime,
     "cnrps_retraite.md": cnrps_retraite,
 }
+
+# Le régime des étudiants n'a pas de tableau : sa cotisation est un forfait, pas un taux.
+for _code, *_ in REGIMES:
+    TABLEAUX[f"branches_{_code}.md"] = branches(_code)
 
 
 def main() -> int:

@@ -10,3 +10,4 @@
 | Protection sociale des travailleurs | 0,11 % | 0,29 % | 0,4 % |
 | Fonds spécial de l'État | — | 0,5 % | 0,5 % |
 | Retraite complémentaire (facultative) | 3 % | 6 % | 9 % |
+| **Total obligatoire** | 9,68 % | 17,07 % | 26,75 % |
