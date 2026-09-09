@@ -220,14 +220,14 @@ def zotero_vers_csl(item: dict, schema: dict) -> dict:
     return entree
 
 
-def charge_local() -> dict[str, tuple[dict, str]]:
-    """{clé de citation: (entrée, livre)} — le français fait foi, dédoublonné.
+def charge_local() -> dict[str, tuple[dict, set[str]]]:
+    """{clé de citation: (entrée, livres)} — le français fait foi, dédoublonné.
 
     L'arabe est un miroir du français depuis la PR #108, et la même référence peut
     figurer à la fois dans un livre et dans la bibliographie partagée : compter les
     fichiers donnerait 173 entrées pour un nombre réel bien moindre.
     """
-    entrees: dict[str, tuple[dict, str]] = {}
+    entrees: dict[str, tuple[dict, set[str]]] = {}
     fichiers = sorted(glob.glob(os.path.join(RACINE, "precis", "fr", "*", "references.json")))
     fichiers.append(os.path.join(RACINE, "precis", "fr", "references.json"))
     for chemin in fichiers:
@@ -238,9 +238,17 @@ def charge_local() -> dict[str, tuple[dict, str]]:
         with open(chemin, encoding="utf-8") as f:
             for entree in json.load(f)["items"]:
                 cle = entree.get("id")
-                if not cle or cle in entrees:
+                if not cle:
                     continue
-                entrees[cle] = (entree, livre)
+                if cle in entrees:
+                    # Une même référence peut servir PLUSIEURS livres — lf-2018 est citée
+                    # par la fiscalité et par les rémunérations publiques. Un article
+                    # Zotero appartient à autant de collections qu'on veut : ne retenir
+                    # que le premier livre le ferait disparaître des autres à la descente.
+                    if livre:
+                        entrees[cle][1].add(livre)
+                    continue
+                entrees[cle] = (entree, {livre} if livre else set())
     return entrees
 
 
@@ -303,7 +311,7 @@ def ranger(groupe: str, api_key: str, locales: dict) -> int:
     for livre, nom in COLLECTIONS.items():
         if nom in par_nom:
             continue
-        if not any(l == livre for _e, l in locales.values()):
+        if not any(livre in livres for _e, livres in locales.values()):
             continue
         cree = zotero(f"/groups/{groupe}/collections", api_key, "POST", [{"name": nom}])
         par_nom[nom] = list((cree.get("successful") or {}).values())[0]["key"]
@@ -317,18 +325,20 @@ def ranger(groupe: str, api_key: str, locales: dict) -> int:
             par_cle[m.group(1)] = item
 
     a_ranger = []
-    for cle, (_entree, livre) in sorted(locales.items()):
+    for cle, (_entree, livres) in sorted(locales.items()):
         item = par_cle.get(cle)
-        if not item or not livre:
+        if not item or not livres:
             continue
-        voulue = par_nom.get(COLLECTIONS.get(livre, ""))
-        if not voulue or voulue in (item["data"].get("collections") or []):
+        voulues = {par_nom[COLLECTIONS[l]] for l in livres
+                   if l in COLLECTIONS and COLLECTIONS[l] in par_nom}
+        actuelles = set(item["data"].get("collections") or [])
+        if not voulues or voulues <= actuelles:
             continue
         donnees = item["data"]
         a_ranger.append({
             "key": donnees["key"],
             "version": donnees["version"],
-            "collections": sorted(set((donnees.get("collections") or []) + [voulue])),
+            "collections": sorted(actuelles | voulues),
         })
 
     print(f"{len(a_ranger)} article(s) à classer.")
@@ -456,7 +466,7 @@ def main() -> int:
         print(f"{len(items)} article(s) dans le groupe {args.groupe}, "
               f"dont {len(existantes)} portant une clé de citation.")
 
-    a_pousser = [(c, e) for c, (e, _l) in sorted(locales.items()) if c not in existantes]
+    a_pousser = [(c, e) for c, (e, _livres) in sorted(locales.items()) if c not in existantes]
     if args.limite:
         a_pousser = a_pousser[: args.limite]
     print(f"{len(locales)} référence(s) locales, {len(a_pousser)} à créer.")
