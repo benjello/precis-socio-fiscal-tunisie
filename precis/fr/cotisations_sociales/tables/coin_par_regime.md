@@ -5,5 +5,5 @@
 | Salariés agricoles, régime amélioré | 6,99 % | 12,48 % | 19,47 % |
 | Travailleurs non salariés | 14,71 % | — | 14,71 % |
 | Artistes, créateurs et intellectuels | 14,71 % | — | 14,71 % |
-| Travailleurs à faibles revenus (assiette plafonnée à 0,66 SMIG) | 2,5 % | 5 % | 7,5 % |
+| Travailleurs à faibles revenus (assiette forfaitaire des deux tiers du SMIG ou du SMAG) | 2,5 % | 5 % | 7,5 % |
 | Tunisiens à l'étranger | 13,3 % | — | 13,3 % |

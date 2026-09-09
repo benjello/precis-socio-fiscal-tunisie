@@ -89,15 +89,20 @@ REGIMES = [
     ("rsaa", "Salariés agricoles, régime amélioré", "الأجراء الفلاحيون، النظام المحسّن", ""),
     ("rtns", "Travailleurs non salariés", "العملة غير الأجراء", ""),
     ("raci", "Artistes, créateurs et intellectuels", "الفنانون والمبدعون والمثقفون", ""),
-    ("rtfr", "Travailleurs à faibles revenus", "العملة ذوو الدخل الضعيف", "plafond"),
+    ("rtfr", "Travailleurs à faibles revenus", "العملة ذوو الدخل الضعيف", "forfait"),
     ("rtte", "Tunisiens à l'étranger", "التونسيون بالخارج", ""),
 ]
 
 # Le régime des étudiants ne relève pas d'un taux : c'est un montant forfaitaire, et il
 # n'a donc pas sa place dans un tableau de pourcentages. Le chapitre le dit en prose.
-NOTE_PLAFOND = {
-    "fr": " (assiette plafonnée à 0,66 SMIG)",
-    "ar": " (وعاء محدود بـ 0,66 من الأجر الأدنى)",
+#
+# Le 0,66 du RTFR n'est PAS un plafond. L'article 7 de la loi n° 2002-32 et l'article 13
+# du décret n° 2002-916 assoient les cotisations de ce régime sur les deux tiers du SMIG
+# ou du SMAG selon la catégorie : c'est une assiette forfaitaire, et non un seuil au-delà
+# duquel on cesserait de prélever. Le modèle l'encode en seuil de barème faute de mieux.
+NOTE_FORFAIT = {
+    "fr": " (assiette forfaitaire des deux tiers du SMIG ou du SMAG)",
+    "ar": " (وعاء جزافي يساوي ثلثي الأجر الأدنى الصناعي أو الفلاحي)",
 }
 
 
@@ -200,8 +205,8 @@ def coin_par_regime(langue):
         if totaux["salarie"] is None and totaux["employeur"] is None:
             continue
         nom = nom_fr if langue == "fr" else nom_ar
-        if marque == "plafond":
-            nom += NOTE_PLAFOND[langue]
+        if marque == "forfait":
+            nom += NOTE_FORFAIT[langue]
         lignes.append({
             m["regime"]: nom,
             m["salarie"]: _taux(langue)(totaux["salarie"]),
