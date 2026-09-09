@@ -22,6 +22,7 @@ Citation keys are read from the "Extra" field in Zotero (citation-key: xxx).
 import argparse
 import copy
 import json
+import ssl
 import os
 import re
 import sys
@@ -351,12 +352,22 @@ def apply_citation_keys(csl_items, key_map, group_id):
     return csl_items
 
 
+# Le certificat de pist.tn expire régulièrement — au 9 septembre 2026 il est échu depuis
+# le 25 août, et curl répond « certificate has expired ». Sans ce contexte permissif, la
+# vérification déclarerait mortes les quelque 260 URL du Journal officiel, c'est-à-dire la
+# quasi-totalité de la bibliographie, pour une raison qui ne tient pas au lien. On vérifie
+# donc que la ressource EXISTE, sans se prononcer sur la chaîne de confiance.
+CONTEXTE_PERMISSIF = ssl.create_default_context()
+CONTEXTE_PERMISSIF.check_hostname = False
+CONTEXTE_PERMISSIF.verify_mode = ssl.CERT_NONE
+
+
 def check_url(url, timeout=10):
     """Check if a URL is reachable. Returns (status_code, error_msg)."""
     try:
         req = urllib.request.Request(url, method="HEAD")
         req.add_header("User-Agent", "Mozilla/5.0 (biblio-check)")
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
+        with urllib.request.urlopen(req, timeout=timeout, context=CONTEXTE_PERMISSIF) as resp:
             return resp.status, None
     except urllib.error.HTTPError as e:
         return e.code, None
