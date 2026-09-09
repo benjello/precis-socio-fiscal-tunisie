@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.14.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.13.1...v1.14.0) (2026-09-09)
+
+
+### ✨ Nouveautés
+
+* **biblio:** ajoute l'étape de synchronisation descendante ([a6a48a4](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/a6a48a4ade091c8360fa46a403aa7742c5ccfbb1))
+* **biblio:** préserve la bibliographie arabe et écarte les articles non citables ([c159acc](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/c159acc9ae020b74149c62f4f85889a6faa4f20d))
+* **biblio:** rapatrie vers Zotero les références écrites à la main ([31fbb4b](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/31fbb4b6b4182ba2d1f6bb8e282e87b5144c81f4))
+* **prestations:** génère le tableau des aides ponctuelles ([0ae3743](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/0ae3743c1cca1c0b82c1524a9615eab6b6df16f2))
+
+
+### 🐛 Corrections de bugs
+
+* **biblio:** classe les articles poussés dans la collection de leur livre ([48671ad](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/48671add89f702f0ea5b8163b6452fd53e7e4f70))
+* **biblio:** garde les URL de l'édition arabe du JORT ([d19f98c](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/d19f98ce33ac5973ae51c1a1fb1fc93760fe3e54))
+* **biblio:** l'export CSL de l'API perd les variables logées dans Extra ([4ca8bfd](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/4ca8bfd60b4784616136e6a3ea2cc1c46f3197b0))
+* **biblio:** pagine l'inventaire Zotero et vérifie un aller-retour réel ([2ed9290](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/2ed929045cb3b6f07133fbf2c63e20f31361710f))
+* **biblio:** rend leur forme literal aux auteurs institutionnels ([c34edbb](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/c34edbb9d1f7e554b3d21937be8086b64ca81ea8))
+* **biblio:** une référence peut appartenir à plusieurs livres ([1095b05](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/1095b05201b4787c94c1f7a754bef7fae15ed585))
+
 ## [1.13.1](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.13.0...v1.13.1) (2026-09-09)
 
 
