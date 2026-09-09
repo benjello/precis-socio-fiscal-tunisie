@@ -1,5 +1,11 @@
 """Figure « les plus gros dispositifs dérogatoires » du livre *Fiscalité*.
 
+PAS ENCORE APPELÉE PAR LE CHAPITRE. Le coût des régimes dérogatoires est très
+majoritairement porté par le droit de consommation, la TVA et les droits de douane :
+cette figure appartient donc aux sections sur les impôts indirects, encore à écrire, et
+non à la section sur l'impôt sur le revenu où elle avait d'abord été placée. Le module
+est prêt ; il attend son chapitre.
+
 Sélection : parmi les dispositifs chiffrés **les sept années** de 2017 à 2023, les huit dont
 le coût moyen est le plus élevé. Les plus gros et les plus longs, donc — ceux qu'on peut
 suivre sans trou et qui pèsent réellement.
