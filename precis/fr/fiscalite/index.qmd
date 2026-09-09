@@ -540,6 +540,37 @@ opéré par la LF 2025 ; et l'état du droit pour 2026, le régime temporaire ar
 références d'openfisca-tunisia pointent vers un dépôt privé et sont à remplacer par des URL
 pist.tn. Cf. Q10 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
+#### Ce que l'impôt rapporte
+
+Le barème et l'assiette décrits jusqu'ici produisent un rendement, et ce rendement se mesure. Le ministère des Finances publie les recettes fiscales par rubrique depuis 1986 ; rapportées au produit intérieur brut et aux dépenses de l'État, elles situent l'IRPP dans l'ensemble du prélèvement.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import irpp as fig_irpp
+import figtools
+figtools.figure_tabs(
+    fig_irpp.fig_rendement(), fig_irpp.table(), "irpp-ratios",
+    slug="fig_irpp_rendement",
+    caption="Rendement de l'impôt sur le revenu rapporté au PIB et aux dépenses de l'État, 1986-2025",
+    note_lecture=(
+        "**La zone grisée, à gauche de 1990, ne mesure pas l'IRPP.** La rubrique « impôts sur "
+        "le revenu » du ministère des Finances est continue depuis 1986, mais l'IRPP n'existe "
+        "qu'à compter des revenus de 1990 : avant, la même ligne agrège les impôts cédulaires "
+        "et la contribution personnelle d'État, dont la section précédente retrace l'histoire. "
+        "Les deux segments ne se comparent donc pas. La courbe **bleue** (échelle de gauche) "
+        "rapporte l'impôt au **PIB**, la courbe **rouge** (échelle de droite) aux **dépenses "
+        "totales** de l'État, qui ne sont publiées qu'à partir de 1990."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
+Deux traits ressortent. Le premier est la **discontinuité de 1990** elle-même : les recettes reculent de 231,9 à 201,7 millions de dinars entre 1989 et 1990, et la part des salaires dans l'impôt passe de 71 à 83 %. C'est la signature d'un changement de régime — la substitution d'un impôt général à des impôts cédulaires —, non une évolution économique.
+
+Le second est la **trajectoire longue**. De 1990 à 2016, le barème de l'article 44 § I n'a pas bougé : mêmes tranches, mêmes taux, pendant vingt-sept exercices. Dans le même temps, le rendement de l'impôt passe de 1,9 % à plus de 6 % du produit intérieur brut, et de 9 % à près de 30 % des recettes fiscales. Un barème nominalement figé dans une économie où les revenus nominaux progressent déplace mécaniquement les contribuables vers le haut du barème : c'est ce que la figure donne à voir.
+
 ## L'impôt sur les sociétés (IS)
 
 <!-- TODO: détailler -->

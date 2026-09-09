@@ -88,3 +88,23 @@
   caveats_ar: الأصناف القانونية أ1/أ2/أ3/ب/ج/د؛ المجال = الموظفون (جدول 8 للمعهد الوطني
     للإحصاء)
   fiche: sources/ins-fonction-publique-salaires-2010-2021.md
+- id: irpp-ratios
+  titre: 'Impôt sur le revenu : montant et ratios au budget et au PIB, 1986-2025'
+  sources:
+  - minfin-recettes-fiscales
+  - minfin-indicateurs-fp
+  build: tunisia_data.build.irpp:main
+  raw:
+  - data/raw/minfinances/recettes_fiscales.xls
+  - data/raw/minfinances/indicateurs_fp_LF2026.xls
+  output: data/processed/precis/irpp_ratios_1986_2025.csv
+  unite: millions de dinars (prix courants) et pourcentages
+  perimetre: recettes fiscales de l'État ; PIB déduit du déficit budgétaire publié
+    en dinars et en points de PIB
+  titre_ar: 'الضريبة على الدخل: المبلغ والنسب إلى الميزانية وإلى الناتج المحلي الإجمالي،
+    1986-2025'
+  unite_ar: بملايين الدنانير (أسعار جارية) ونسب مئوية
+  perimetre_ar: المداخيل الجبائية للدولة؛ الناتج المحلي الإجمالي مستنتج من عجز الميزانية
+    المنشور بالدينار وبنقاط من الناتج
+  caveats: sources/minfinances-recettes-fiscales.md
+  fiche: sources/minfinances-recettes-fiscales.md
