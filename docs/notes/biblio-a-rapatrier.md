@@ -953,3 +953,34 @@ contenu n'avait pas été lu : `decretloi2011-48`, `loi59-45`, `loi2005-54`, `lo
   désormais explicitement plutôt que d'étendre aux trois lois ce qui n'est établi que pour deux.
 
 `decretloi2011-48` et `loi2005-54` ne sont pas citées ; elles restent à vérifier avant de l'être.
+
+### ✅ Fait le 9 septembre 2026 — la montée est effectuée
+
+Les 41 références du livre « Cotisations sociales » sont dans Zotero, et la collection du
+même nom a été créée par `push_biblio.py --ranger`. Déroulé, par le workflow
+`biblio-zotero` :
+
+1. `verifier` — aller-retour de conversion hors ligne : 198 entrées, aucune perte de champ.
+2. `dry-run` — 198 références locales, 30 à créer.
+3. `pousser-un` puis `comparer` — une seule référence montée
+   (`arrete-1978-11-18-retraite-complementaire`, article `XNATUX5Z`), relue dans Zotero :
+   **0 écart après aller-retour réel**, champ Extra compris. C'est ce test à l'unité qui
+   avait révélé, à la montée précédente, que l'export CSL de l'API laisse tomber les
+   variables du champ Extra.
+4. `pousser-tout` — 29 créées, 0 en échec.
+5. `ranger` — collection « Cotisations sociales » créée, 41 articles classés, 0 en échec.
+6. `descendre` — et c'est là qu'un écart est apparu : **`loi85-12` perdait
+   `container-title`, `issue` et `page`**. L'entrée existait déjà dans Zotero au titre du
+   livre « Rémunérations publiques », et l'enrichissement fait en local n'était donc jamais
+   monté : la descente l'aurait écrasé. Réparé par `corriger loi85-12`.
+7. `descendre` à nouveau — **198 clés en local, 198 après descente, aucun champ perdu,
+   aucune valeur changée.**
+
+**La leçon, pour la prochaine fois.** `pousser` ne crée que les clés absentes : une entrée
+déjà présente dans Zotero mais **enrichie en local** passe entre les mailles, et seule la
+descente le révèle. Après toute montée, dérouler `descendre` et comparer clé par clé et
+champ par champ — un diff de lignes ne suffit pas, celui-ci comptait 1 062 suppressions
+pour 1 056 ajouts alors que six lignes seulement étaient en cause.
+
+Le diff que produit la descente est par ailleurs du réordonnancement : les fichiers locaux
+sont identiques en contenu et n'ont pas été récrits.
