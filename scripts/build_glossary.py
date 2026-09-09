@@ -220,8 +220,17 @@ def main():
         for err in errors:
             print(f"  - {err}")
         sys.exit(1)
-    if warnings:
-        print(f"⚠ {len(warnings)} entrée(s) « valide » sans source_definition : {', '.join(warnings)}")
+    rendues = set()
+    for book in BOOKS:
+        rendues |= ancres_utilisees(book)
+    visibles = [w for w in warnings if w in rendues]
+    dormantes = [w for w in warnings if w not in rendues]
+    if visibles:
+        print(f"⚠ {len(visibles)} notion(s) RENDUE(S) sans source_definition : "
+              f"{', '.join(visibles)}")
+    if dormantes:
+        print(f"  ({len(dormantes)} autre(s) sans source, qu'aucun livre n'ancre : "
+              f"{', '.join(dormantes)})")
 
     written = []
     ids_connus = {e["id"] for e in entries}

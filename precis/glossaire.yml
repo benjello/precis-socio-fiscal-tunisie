@@ -949,6 +949,7 @@ entries:
     acronyme: null
     statut: valide
     references: []
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 8"}
     voir_aussi: [irpp, taux-marginal]
     fr:
       terme: Assiette fiscale
@@ -967,6 +968,7 @@ entries:
     acronyme: null
     statut: valide
     references: []
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 44 § I"}
     voir_aussi: [irpp, assiette-fiscale, bareme-irpp, tranche-de-revenu, taux-effectif-limite-superieure]
     fr:
       terme: Taux marginal
@@ -985,6 +987,7 @@ entries:
     acronyme: SMIG
     statut: valide
     references: []
+    source_definition: {ref: decret-2017-668-smig}
     voir_aussi: [condition-de-ressources]
     fr:
       terme: Salaire minimum interprofessionnel garanti
@@ -1003,6 +1006,7 @@ entries:
     acronyme: CNSS
     statut: valide
     references: []
+    source_definition: {ref: loi60-30}
     voir_aussi: [cnrps, cnam, cotisations-sociales]
     fr:
       terme: Caisse nationale de sécurité sociale
@@ -1042,6 +1046,7 @@ entries:
     acronyme: CNAM
     statut: valide
     references: []
+    source_definition: {ref: loi2004-71, locator: "art. 7"}
     voir_aussi: [cnss, cnrps]
     fr:
       terme: Caisse nationale d'assurance maladie

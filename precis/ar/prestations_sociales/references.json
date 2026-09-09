@@ -175,7 +175,7 @@
       "id": "loi86-86",
       "type": "legislation",
       "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: loi86-86\nissue: 49\nJORT n° 49 du 9 septembre 1986, pp. 977-980. Texte de création de la CNSS et de la CNRPS. CONTENU NON LU ; métadonnées jort_cache. URL vérifiée (HTTP 200).",
+      "note": "citation-key: loi86-86\nJORT n° 49 du 9 septembre 1986, pp. 977-980. LU À L'IMAGE, ce qui corrige l'attribution portée jusqu'ici : ce texte ne crée PAS la CNSS et la CNRPS. Son article premier réorganise la sécurité sociale autour d'une Caisse centrale de sécurité sociale et de trois organismes spécialisés — CNAM, Caisse nationale des pensions, Caisse nationale des prestations sociales — et son article 2 énonce que ceux-ci « se substituent » à la CNSS, « instituée par la loi n° 60-30 du 14 décembre 1960 », et à la CNRPS, « instituée par la loi n° 75-83 du 30 décembre 1975 ». Cette architecture n'a jamais pris effet : la CNSS et la CNRPS existent toujours, et le sigle CNAM sera repris en 2004 pour un organisme sans lien avec celui de 1986.",
       "page": "977-980",
       "title": "Loi n° 86-86 du 1er septembre 1986, portant réforme des structures de la sécurité sociale",
       "URL": "https://www.pist.tn/jort/1986/1986A/Ja04986.pdf",
@@ -1449,6 +1449,25 @@
           ]
         ]
       }
+    },
+    {
+      "id": "loi75-83",
+      "type": "legislation",
+      "title": "Loi n° 75-83 du 30 décembre 1975, portant loi de finances pour la gestion 1976",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "87",
+      "page": "2852-2854",
+      "issued": {
+        "date-parts": [
+          [
+            1975,
+            12,
+            30
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1975/1975F/Jo08775.pdf",
+      "note": "citation-key: loi75-83\nJORT n° 87 des 30-31 décembre 1975, p. 2852-2854 — même fascicule que la loi n° 75-82 sur les allocations familiales. C'est cette loi de finances qui institue la Caisse nationale de retraite et de prévoyance sociale, fait attesté par l'article 2 de la loi n° 86-86, lu à l'image. Le contenu de l'article instituant la caisse n'a pas été lu."
     }
   ]
 }
