@@ -152,6 +152,10 @@ def branches(regime: str):
         m = MOTS[langue]
         lignes = []
         cumul = {"salarie": 0.0, "employeur": 0.0}
+        # Un régime sans employeur — non-salariés, artistes, Tunisiens à l'étranger —
+        # doit garder le tiret jusque dans sa ligne de total : y écrire « 0 % » ferait
+        # croire à une part patronale nulle là où il n'y a pas d'employeur.
+        vu = {"salarie": False, "employeur": False}
         for cle, relatif in ORDRE_BRANCHES:
             sal = _dernier(f"{PRIVE}/{regime}/cotisations_salarie/{relatif}")
             emp = _dernier(f"{PRIVE}/{regime}/cotisations_employeur/{relatif}")
@@ -164,6 +168,8 @@ def branches(regime: str):
             if cle != "complementaire":
                 cumul["salarie"] += sal or 0
                 cumul["employeur"] += emp or 0
+                vu["salarie"] |= sal is not None
+                vu["employeur"] |= emp is not None
             lignes.append({
                 m["branche"]: m[cle],
                 m["salarie"]: _taux(langue)(sal),
@@ -174,8 +180,8 @@ def branches(regime: str):
             return pd.DataFrame()
         lignes.append({
             m["branche"]: m["total_obligatoire"],
-            m["salarie"]: _taux(langue)(cumul["salarie"]),
-            m["employeur"]: _taux(langue)(cumul["employeur"]),
+            m["salarie"]: _taux(langue)(cumul["salarie"] if vu["salarie"] else None),
+            m["employeur"]: _taux(langue)(cumul["employeur"] if vu["employeur"] else None),
             m["total"]: _taux(langue)(cumul["salarie"] + cumul["employeur"]),
         })
         return pd.DataFrame(lignes)

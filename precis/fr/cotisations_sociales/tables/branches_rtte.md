@@ -4,4 +4,4 @@
 | Maladie | 6,75 % | — | 6,75 % |
 | Maternité | 0,74 % | — | 0,74 % |
 | Décès | 0,56 % | — | 0,56 % |
-| **Total obligatoire** | 13,3 % | 0 % | 13,3 % |
+| **Total obligatoire** | 13,3 % | — | 13,3 % |
