@@ -25,6 +25,7 @@ on:
           - pousser-tout     # le reste
           - ranger           # classe les articles créés dans la collection de leur livre
           - corriger         # écrase dans Zotero la référence indiquée par sa version locale
+          - verifier-urls    # recense les fascicules du JORT sans édition homologue
           - descendre        # relance sync_biblio.py et montre le diff, sans rien commiter
       reference:
         description: "Clé de citation à comparer (action « comparer »)"
@@ -57,6 +58,7 @@ jobs:
             ranger)       uv run python scripts/push_biblio.py --ranger ;;
             corriger)     uv run python scripts/push_biblio.py \
                             --corriger "${{ inputs.reference }}" ;;
+            verifier-urls) uv run python scripts/verifier_urls_jort.py ;;
             descendre)    uv run python scripts/sync_biblio.py --no-check ;;
             pousser-tout) uv run python scripts/push_biblio.py --pousser \
                             --rapport cles-creees.json ;;
@@ -76,6 +78,13 @@ jobs:
             git diff -- 'precis/*/references.json' 'precis/*/*/references.json' | head -400
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Conserver la liste des exceptions
+        if: always() && inputs.action == 'verifier-urls'
+        uses: actions/upload-artifact@v4
+        with:
+          name: urls-jort
+          path: precis/urls-jort.json
 
       - name: Conserver les fichiers descendus
         if: always() && inputs.action == 'descendre'
