@@ -364,6 +364,9 @@ def main() -> int:
     p.add_argument("--rapport", default="", help="fichier où consigner les clés créées")
     p.add_argument("--comparer", default="", help="relit une référence depuis Zotero et la "
                                                   "compare à l'entrée locale")
+    p.add_argument("--corriger", default="", help="écrase dans Zotero une référence par "
+                                                  "sa version locale (clés séparées par "
+                                                  "des virgules)")
     p.add_argument("--ranger", action="store_true",
                    help="classe les articles déjà créés dans la collection de leur livre")
     args = p.parse_args()
@@ -412,6 +415,33 @@ def main() -> int:
         infos.pop("key", None)  # ne jamais réafficher le secret
         print(json.dumps(infos, ensure_ascii=False, indent=2))
         return 0
+
+    if args.corriger:
+        items = zotero_tout(f"/groups/{args.groupe}/items", api_key, {"format": "json"})
+        par_cle = {}
+        for item in items:
+            m = re.search(r"citation-key:\s*(\S+)", item.get("data", {}).get("extra", ""), re.I)
+            if m:
+                par_cle[m.group(1)] = item
+        charges = []
+        for cle in [c.strip() for c in args.corriger.split(",") if c.strip()]:
+            if cle not in locales:
+                print(f"✗ {cle} : absente des fichiers locaux", file=sys.stderr)
+                return 1
+            if cle not in par_cle:
+                print(f"✗ {cle} : absente du groupe Zotero", file=sys.stderr)
+                return 1
+            item = csl_vers_zotero(locales[cle][0], schema)
+            item["key"] = par_cle[cle]["data"]["key"]
+            item["version"] = par_cle[cle]["data"]["version"]
+            item["collections"] = par_cle[cle]["data"].get("collections") or []
+            charges.append(item)
+        reponse = zotero(f"/groups/{args.groupe}/items", api_key, "POST", charges)
+        print(f"{len(reponse.get('successful') or {})} corrigée(s), "
+              f"{len(reponse.get('failed') or {})} en échec")
+        for indice, message in (reponse.get("failed") or {}).items():
+            print(f"  ✗ {charges[int(indice)]['key']} : {message}", file=sys.stderr)
+        return 1 if reponse.get("failed") else 0
 
     if args.ranger:
         return ranger(args.groupe, api_key, locales)
