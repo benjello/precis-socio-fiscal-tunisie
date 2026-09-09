@@ -280,6 +280,69 @@ def zotero(path: str, api_key: str, methode: str = "GET", corps=None):
         raise
 
 
+# Nom de la collection Zotero par livre. `sync_biblio.py` fait le chemin inverse avec
+# COLLECTION_TO_BOOK ; les deux doivent rester d'accord.
+COLLECTIONS = {
+    "fiscalite": "Fiscalité",
+    "retraites": "Retraites",
+    "prestations_sociales": "Prestations sociales",
+    "remunerations_publiques": "Rémunérations publiques",
+}
+
+
+def ranger(groupe: str, api_key: str, locales: dict) -> int:
+    """Classe dans la collection de son livre chaque article déjà créé.
+
+    Un article créé sans collection tombe, à la descente, dans la bibliographie
+    PARTAGÉE et non dans celle de son livre : les 153 références poussées d'un coup
+    l'ont toutes été ainsi, ce que seul le diff de la descente a montré.
+    """
+    collections = zotero_tout(f"/groups/{groupe}/collections", api_key, {"format": "json"})
+    par_nom = {c["data"]["name"]: c["key"] for c in collections}
+
+    for livre, nom in COLLECTIONS.items():
+        if nom in par_nom:
+            continue
+        if not any(l == livre for _e, l in locales.values()):
+            continue
+        cree = zotero(f"/groups/{groupe}/collections", api_key, "POST", [{"name": nom}])
+        par_nom[nom] = list((cree.get("successful") or {}).values())[0]["key"]
+        print(f"collection créée : {nom}")
+
+    items = zotero_tout(f"/groups/{groupe}/items", api_key, {"format": "json"})
+    par_cle = {}
+    for item in items:
+        m = re.search(r"citation-key:\s*(\S+)", item.get("data", {}).get("extra", ""), re.I)
+        if m:
+            par_cle[m.group(1)] = item
+
+    a_ranger = []
+    for cle, (_entree, livre) in sorted(locales.items()):
+        item = par_cle.get(cle)
+        if not item or not livre:
+            continue
+        voulue = par_nom.get(COLLECTIONS.get(livre, ""))
+        if not voulue or voulue in (item["data"].get("collections") or []):
+            continue
+        donnees = item["data"]
+        a_ranger.append({
+            "key": donnees["key"],
+            "version": donnees["version"],
+            "collections": sorted(set((donnees.get("collections") or []) + [voulue])),
+        })
+
+    print(f"{len(a_ranger)} article(s) à classer.")
+    for debut in range(0, len(a_ranger), 50):
+        lot = a_ranger[debut : debut + 50]
+        reponse = zotero(f"/groups/{groupe}/items", api_key, "POST", lot)
+        echecs = reponse.get("failed") or {}
+        print(f"lot {debut // 50 + 1} : {len(reponse.get('successful') or {})} classé(s), "
+              f"{len(echecs)} en échec")
+        for indice, message in echecs.items():
+            print(f"  ✗ {lot[int(indice)]['key']} : {message}", file=sys.stderr)
+    return 0
+
+
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--permissions", action="store_true", help="que permet la clé ?")
@@ -291,6 +354,8 @@ def main() -> int:
     p.add_argument("--rapport", default="", help="fichier où consigner les clés créées")
     p.add_argument("--comparer", default="", help="relit une référence depuis Zotero et la "
                                                   "compare à l'entrée locale")
+    p.add_argument("--ranger", action="store_true",
+                   help="classe les articles déjà créés dans la collection de leur livre")
     args = p.parse_args()
 
     schema = charge_schema()
@@ -337,6 +402,9 @@ def main() -> int:
         infos.pop("key", None)  # ne jamais réafficher le secret
         print(json.dumps(infos, ensure_ascii=False, indent=2))
         return 0
+
+    if args.ranger:
+        return ranger(args.groupe, api_key, locales)
 
     if args.comparer:
         items = zotero_tout(f"/groups/{args.groupe}/items", api_key, {"format": "json"})
