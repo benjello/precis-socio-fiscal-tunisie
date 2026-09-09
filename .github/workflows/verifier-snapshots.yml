@@ -1,0 +1,99 @@
+name: Fraîcheur des tableaux de paramètres
+
+# POURQUOI CE CONTRÔLE EXISTE
+#
+# Les tableaux de paramètres du précis sont des SNAPSHOTS versionnés : le build lit
+# `precis/{fr,ar}/*/tables/*.md`, il ne lance jamais les générateurs. C'est un choix
+# délibéré — le site se construit sans openfisca-tunisia, et le tableau publié est
+# celui qu'on a relu.
+#
+# Le revers est qu'un snapshot SURVIT À LA CORRECTION DU PARAMÈTRE qu'il est censé
+# refléter, et que rien ne le signale. Cas réel : la PR openfisca #386 a établi que le
+# minimum d'impôt au titre des avantages fiscaux passe à 60 % à partir des revenus de
+# 1999, et non de 2014. Le paramètre a été corrigé ; le tableau publié est resté sur
+# « 2014 → 2016 » pendant plusieurs jours, et n'a été rattrapé que parce qu'une autre
+# tâche a fait régénérer les snapshots par hasard.
+#
+# Ce job régénère les tableaux depuis openfisca-tunisia et échoue si le résultat diffère
+# de ce qui est versionné. Il ne corrige rien de lui-même : la régénération doit passer
+# par une PR relue, comme le reste.
+
+on:
+  pull_request:
+    paths:
+      - 'precis/**/tables/**'
+      - 'scripts/generate_*_tables.py'
+      - 'scripts/openfisca_tables.py'
+  push:
+    branches: [master]
+  # Le paramètre peut bouger sans que le précis change : c'est même le cas le plus
+  # fréquent, et celui que les déclencheurs ci-dessus ne voient pas. D'où le passage
+  # hebdomadaire, qui surveille la dérive du modèle plutôt que celle du dépôt.
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du précis
+        uses: actions/checkout@v5
+
+      - name: Checkout d'openfisca-tunisia
+        uses: actions/checkout@v5
+        with:
+          repository: openfisca/openfisca-tunisia
+          ref: master
+          path: .openfisca-tunisia
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+
+      - name: Install Python dependencies via uv
+        run: uv sync
+
+      - name: Régénérer les snapshots
+        # openfisca-tunisia n'est pas une dépendance du précis : le module le trouve par
+        # OPENFISCA_TUNISIA_PATH, qui désigne ici le checkout ci-dessus.
+        env:
+          OPENFISCA_TUNISIA_PATH: ${{ github.workspace }}/.openfisca-tunisia
+          PYTHONPATH: scripts
+        run: |
+          uv run python scripts/generate_bareme_tables.py
+          uv run python scripts/generate_prestations_tables.py
+
+      - name: Comparer au contenu versionné
+        run: |
+          if git diff --quiet -- 'precis/*/*/tables'; then
+            echo "✓ Les tableaux publiés correspondent aux paramètres d'openfisca-tunisia."
+            exit 0
+          fi
+          {
+            echo "## Tableaux de paramètres périmés"
+            echo
+            echo "Des snapshots versionnés ne correspondent plus aux paramètres"
+            echo "d'openfisca-tunisia. Le tableau publié affiche donc des valeurs ou des"
+            echo "dates que le modèle a corrigées depuis."
+            echo
+            echo "Pour corriger, en local :"
+            echo
+            echo '```'
+            echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'
+            echo '    uv run python scripts/generate_bareme_tables.py'
+            echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'
+            echo '    uv run python scripts/generate_prestations_tables.py'
+            echo '```'
+            echo
+            echo "puis relire le diff — une valeur qui change est un fait juridique, pas"
+            echo "un détail de mise en forme — et ouvrir une PR."
+            echo
+            echo '```diff'
+            git diff -- 'precis/*/*/tables'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          git --no-pager diff --stat -- 'precis/*/*/tables'
+          exit 1
