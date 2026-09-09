@@ -181,10 +181,34 @@ sync tant qu'elles ne sont pas montées dans Zotero. Inbox : `docs/notes/biblio-
 
 ## 8. openfisca-tunisia
 
-`master` est en **0.71**. Les PR #385 (0.72) et #386 (0.73) sont ouvertes et empilées.
-`scripts/openfisca_tables.py` porte `VERSION_MINIMALE = (0, 71)` : en deçà, les tableaux du précis
-sont lus depuis les snapshots versionnés et non depuis le paquet. Ce garde-fou existe parce que la
-0.67 publiée sur PyPI contient un barème 1990-2016 amputé.
+`master` est en **0.76** (9 septembre 2026). `scripts/openfisca_tables.py` porte
+`VERSION_MINIMALE = (0, 76)` : en deçà, les tableaux du précis sont lus depuis les snapshots
+versionnés et non depuis le paquet. Ce garde-fou existe parce que la 0.67 publiée sur PyPI
+contient un barème 1990-2016 amputé.
+
+### Le piège des snapshots : ils survivent à la correction du paramètre
+
+Le build ne lance **jamais** les générateurs : il lit `precis/{fr,ar}/*/tables/*.md`, versionnés.
+C'est délibéré — le site se construit sans openfisca-tunisia, et le tableau publié est celui qu'on
+a relu. Le revers est qu'un snapshot **survit à la correction du paramètre qu'il reflète**, sans
+que rien ne le signale.
+
+Cas réel, et il ne sera pas le dernier : la PR openfisca #386 a établi que le minimum d'impôt au
+titre des avantages fiscaux passe à 60 % à partir des **revenus de 1999**, et non de 2014. Le
+paramètre a été corrigé ; le tableau publié est resté sur « 2014 → 2016 » pendant plusieurs jours,
+et n'a été rattrapé que parce qu'une autre tâche a fait régénérer les snapshots par hasard.
+
+**Régénérer après toute PR de paramètres**, sans exception :
+
+    OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \
+        uv run python scripts/generate_bareme_tables.py
+    OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \
+        uv run python scripts/generate_prestations_tables.py
+
+Le workflow `verifier-snapshots.yml` monte la garde : il régénère depuis `openfisca-tunisia`
+master et échoue si le résultat diffère du contenu versionné — sur les PR qui touchent aux
+tableaux ou aux générateurs, et **chaque lundi**, parce que le cas le plus fréquent est celui où
+le paramètre bouge sans que le précis change.
 
 **Les paramètres ne font jamais autorité.** Sur l'IRPP seul, cette session a établi une douzaine
 de valeurs ou de dates fausses, dont trois fois le même motif : **une valeur juste rattachée à la
