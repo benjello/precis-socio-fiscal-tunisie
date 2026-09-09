@@ -23,6 +23,7 @@ on:
           - pousser-un       # une seule référence, pour éprouver le mapping en vrai
           - comparer         # relit dans Zotero la référence poussée et la compare
           - pousser-tout     # le reste
+          - ranger           # classe les articles créés dans la collection de leur livre
           - descendre        # relance sync_biblio.py et montre le diff, sans rien commiter
       reference:
         description: "Clé de citation à comparer (action « comparer »)"
@@ -52,6 +53,7 @@ jobs:
                             --rapport cles-creees.json ;;
             comparer)     uv run python scripts/push_biblio.py \
                             --comparer "${{ inputs.reference }}" ;;
+            ranger)       uv run python scripts/push_biblio.py --ranger ;;
             descendre)    uv run python scripts/sync_biblio.py --no-check ;;
             pousser-tout) uv run python scripts/push_biblio.py --pousser \
                             --rapport cles-creees.json ;;
