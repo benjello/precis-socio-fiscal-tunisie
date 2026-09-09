@@ -1,0 +1,368 @@
+"""Pousse vers Zotero les références créées à la main dans les fichiers CSL-JSON.
+
+`sync_biblio.py` ne va que dans un sens : Zotero (source canonique) → `references.json`.
+Les références établies au fil de la rédaction — dépouillement du JORT, lectures à l'image —
+ont donc été écrites directement dans les fichiers locaux, où elles sont hors de la source
+canonique : la prochaine synchronisation descendante les écraserait.
+
+Ce script fait le chemin inverse, une fois, pour les rapatrier.
+
+    # 1. Que permet la clé ? (rien d'autre n'a de sens si elle est en lecture seule)
+    python scripts/push_biblio.py --permissions
+
+    # 2. Conversion vérifiée hors ligne, sans clé : aucun champ ne doit se perdre
+    python scripts/push_biblio.py --verifier
+
+    # 3. Ce qui serait envoyé, sans rien envoyer
+    python scripts/push_biblio.py --dry-run
+
+    # 4. Un seul article d'abord, puis relire ce que sync_biblio.py redescend
+    python scripts/push_biblio.py --pousser --limite 1
+
+    # 5. Le reste
+    python scripts/push_biblio.py --pousser
+
+Variables d'environnement : ZOTERO_API_KEY, ZOTERO_GROUP_ID (défaut 6529669).
+"""
+
+from __future__ import annotations
+
+import argparse
+import glob
+import json
+import os
+import re
+import sys
+import urllib.error
+import urllib.request
+
+BASE_URL = "https://api.zotero.org"
+DEFAULT_GROUP_ID = "6529669"
+RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# CSL -> Zotero, établi sur https://api.zotero.org/schema (version 42) et non de mémoire.
+TYPES = {
+    "legislation": "statute",
+    "report": "report",
+    "dataset": "dataset",
+    "book": "book",
+    "webpage": "webpage",
+    "article-newspaper": "newspaperArticle",
+    "article-journal": "journalArticle",
+}
+
+# Champs communs. Les alias par type (statute.nameOfAct pour `title`, par exemple) sont
+# appliqués ensuite par ALIAS : Zotero refuse le champ de base quand le type a le sien.
+CHAMPS = {
+    "title": "title",
+    "container-title": "publicationTitle",
+    "page": "pages",
+    "volume": "volume",
+    "issue": "issue",
+    "publisher": "publisher",
+    "publisher-place": "place",
+    "number-of-pages": "numPages",
+    "title-short": "shortTitle",
+    "DOI": "DOI",
+    "URL": "url",
+}
+
+ALIAS = {
+    "statute": {"title": "nameOfAct", "date": "dateEnacted", "publicationTitle": "code",
+                "volume": "codeNumber"},
+    "report": {"publisher": "institution"},
+    "dataset": {"publisher": "repository", "place": "repositoryLocation"},
+    "webpage": {"publicationTitle": "websiteTitle"},
+}
+
+# Champs CSL qu'aucun champ Zotero ne peut accueillir pour le type visé. Zotero relit les
+# lignes « variable: valeur » du champ Extra comme des variables CSL et les réémet à
+# l'export : c'est le seul endroit où ces données survivent. Le numéro de fascicule du
+# JORT est dans ce cas pour les textes législatifs — et c'est une donnée de provenance,
+# pas un ornement.
+VARIABLES_EXTRA = ("issue", "authority", "event-date", "collection-title", "genre")
+
+
+def champs_du_type(type_zotero: str, schema: dict) -> set[str]:
+    for t in schema["itemTypes"]:
+        if t["itemType"] == type_zotero:
+            return {f["field"] for f in t["fields"]}
+    return set()
+
+
+def charge_schema() -> dict:
+    cache = os.path.join(RACINE, ".zotero-schema.json")
+    if os.path.exists(cache):
+        with open(cache, encoding="utf-8") as f:
+            return json.load(f)
+    with urllib.request.urlopen(f"{BASE_URL}/schema") as resp:
+        schema = json.loads(resp.read().decode())
+    with open(cache, "w", encoding="utf-8") as f:
+        json.dump(schema, f)
+    return schema
+
+
+def date_csl_vers_zotero(issued: dict) -> str:
+    parties = (issued or {}).get("date-parts") or [[]]
+    return "-".join(f"{p:02d}" if i else str(p) for i, p in enumerate(parties[0]))
+
+
+def date_zotero_vers_csl(texte: str) -> dict | None:
+    if not texte:
+        return None
+    morceaux = [int(x) for x in texte.split("-") if x.isdigit()]
+    return {"date-parts": [morceaux]} if morceaux else None
+
+
+def csl_vers_zotero(entree: dict, schema: dict) -> dict:
+    type_csl = entree.get("type", "document")
+    type_zotero = TYPES.get(type_csl)
+    if not type_zotero:
+        raise ValueError(f"{entree.get('id')} : type CSL non pris en charge « {type_csl} »")
+    disponibles = champs_du_type(type_zotero, schema)
+    alias = ALIAS.get(type_zotero, {})
+
+    item = {"itemType": type_zotero}
+    extra_variables = []
+
+    for csl_var, champ in CHAMPS.items():
+        if csl_var not in entree:
+            continue
+        cible = alias.get(champ, champ)
+        if cible in disponibles:
+            item[cible] = str(entree[csl_var])
+        elif csl_var in VARIABLES_EXTRA:
+            extra_variables.append(f"{csl_var}: {entree[csl_var]}")
+        else:
+            raise ValueError(
+                f"{entree.get('id')} : le champ « {csl_var} » n'a pas de place dans "
+                f"{type_zotero} et n'est pas prévu pour Extra"
+            )
+
+    for csl_var in VARIABLES_EXTRA:
+        if csl_var in entree and not any(v.startswith(f"{csl_var}:") for v in extra_variables):
+            valeur = entree[csl_var]
+            if csl_var.endswith("date") and isinstance(valeur, dict):
+                valeur = date_csl_vers_zotero(valeur)
+            extra_variables.append(f"{csl_var}: {valeur}")
+
+    if "issued" in entree:
+        champ_date = alias.get("date", "date")
+        if champ_date in disponibles:
+            item[champ_date] = date_csl_vers_zotero(entree["issued"])
+
+    if "author" in entree:
+        item["creators"] = [
+            {"creatorType": "author", "name": a["literal"]} if "literal" in a
+            else {"creatorType": "author",
+                  "firstName": a.get("given", ""), "lastName": a.get("family", "")}
+            for a in entree["author"]
+        ]
+
+    # `citation-key:` en minuscules : c'est ce que lit extract_citation_key de
+    # sync_biblio.py. La convention « Citation Key: » de Better BibTeX est une AUTRE
+    # chaîne, et les confondre casse la synchronisation descendante.
+    lignes_extra = [f"citation-key: {entree['id']}"] + extra_variables
+    note = (entree.get("note") or "").strip()
+    if note:
+        # La note locale porte déjà « citation-key: … » en première ligne : on ne la
+        # duplique pas.
+        note = "\n".join(l for l in note.splitlines()
+                         if not l.lower().startswith("citation-key:")).strip()
+    if note:
+        lignes_extra.append(note)
+    item["extra"] = "\n".join(lignes_extra)
+    return item
+
+
+def zotero_vers_csl(item: dict, schema: dict) -> dict:
+    """Inverse de `csl_vers_zotero`, pour éprouver la conversion sans rien envoyer."""
+    type_zotero = item["itemType"]
+    type_csl = next(k for k, v in TYPES.items() if v == type_zotero)
+    alias = ALIAS.get(type_zotero, {})
+    inverse_alias = {v: k for k, v in alias.items()}
+    entree: dict = {"type": type_csl}
+
+    for csl_var, champ in CHAMPS.items():
+        cible = alias.get(champ, champ)
+        if cible in item and item[cible] != "":
+            entree[csl_var] = item[cible]
+
+    champ_date = alias.get("date", "date")
+    if item.get(champ_date):
+        date = date_zotero_vers_csl(item[champ_date])
+        if date:
+            entree["issued"] = date
+
+    lignes, note = [], []
+    for ligne in (item.get("extra") or "").splitlines():
+        m = re.match(r"^([A-Za-z-]+):\s*(.+)$", ligne)
+        if m and m.group(1) == "citation-key":
+            entree["id"] = m.group(2).strip()
+        elif m and m.group(1) in VARIABLES_EXTRA:
+            valeur = m.group(2).strip()
+            if m.group(1).endswith("date"):
+                valeur = date_zotero_vers_csl(valeur)
+            entree[m.group(1)] = valeur
+        else:
+            note.append(ligne)
+        lignes.append(ligne)
+    if item.get("creators"):
+        entree["author"] = [
+            {"literal": c["name"]} if "name" in c
+            else {"given": c.get("firstName", ""), "family": c.get("lastName", "")}
+            for c in item["creators"] if c.get("creatorType") == "author"
+        ]
+    note_texte = "\n".join(note).strip()
+    if note_texte:
+        entree["note"] = f"citation-key: {entree.get('id','')}\n{note_texte}"
+    _ = inverse_alias
+    return entree
+
+
+def charge_local() -> dict[str, tuple[dict, str]]:
+    """{clé de citation: (entrée, livre)} — le français fait foi, dédoublonné.
+
+    L'arabe est un miroir du français depuis la PR #108, et la même référence peut
+    figurer à la fois dans un livre et dans la bibliographie partagée : compter les
+    fichiers donnerait 173 entrées pour un nombre réel bien moindre.
+    """
+    entrees: dict[str, tuple[dict, str]] = {}
+    fichiers = sorted(glob.glob(os.path.join(RACINE, "precis", "fr", "*", "references.json")))
+    fichiers.append(os.path.join(RACINE, "precis", "fr", "references.json"))
+    for chemin in fichiers:
+        if not os.path.exists(chemin):
+            continue
+        livre = os.path.basename(os.path.dirname(chemin))
+        livre = "" if livre == "fr" else livre
+        with open(chemin, encoding="utf-8") as f:
+            for entree in json.load(f)["items"]:
+                cle = entree.get("id")
+                if not cle or cle in entrees:
+                    continue
+                entrees[cle] = (entree, livre)
+    return entrees
+
+
+def zotero(path: str, api_key: str, methode: str = "GET", corps=None):
+    url = f"{BASE_URL}{path}"
+    donnees = json.dumps(corps).encode() if corps is not None else None
+    req = urllib.request.Request(url, data=donnees, method=methode)
+    req.add_header("Zotero-API-Key", api_key)
+    req.add_header("Zotero-API-Version", "3")
+    if donnees:
+        req.add_header("Content-Type", "application/json")
+    try:
+        with urllib.request.urlopen(req) as resp:
+            brut = resp.read().decode()
+            return json.loads(brut) if brut else {}
+    except urllib.error.HTTPError as e:
+        print(f"HTTP {e.code} sur {methode} {url} : {e.read().decode()[:300]}", file=sys.stderr)
+        raise
+
+
+def main() -> int:
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--permissions", action="store_true", help="que permet la clé ?")
+    p.add_argument("--verifier", action="store_true", help="aller-retour CSL, hors ligne")
+    p.add_argument("--dry-run", action="store_true", help="montre sans envoyer")
+    p.add_argument("--pousser", action="store_true", help="envoie réellement")
+    p.add_argument("--limite", type=int, default=0, help="n'envoyer que N entrées")
+    p.add_argument("--groupe", default=os.environ.get("ZOTERO_GROUP_ID", DEFAULT_GROUP_ID))
+    p.add_argument("--rapport", default="", help="fichier où consigner les clés créées")
+    args = p.parse_args()
+
+    schema = charge_schema()
+    locales = charge_local()
+
+    if args.verifier:
+        pertes = 0
+        for cle, (entree, _livre) in sorted(locales.items()):
+            try:
+                item = csl_vers_zotero(entree, schema)
+            except ValueError as e:
+                print(f"✗ {e}")
+                pertes += 1
+                continue
+            retour = zotero_vers_csl(item, schema)
+            for champ, valeur in entree.items():
+                if champ == "note":
+                    continue
+                obtenu = retour.get(champ)
+                # Comparaison structurelle : `str()` sur un dict compare aussi l'ordre
+                # des clés, ce qui signalerait une perte là où il n'y a qu'un
+                # {family, given} devenu {given, family}.
+                def normalise(v):
+                    if isinstance(v, dict):
+                        return {k: normalise(x) for k, x in sorted(v.items())}
+                    if isinstance(v, list):
+                        return [normalise(x) for x in v]
+                    return str(v)
+
+                egal = normalise(obtenu) == normalise(valeur)
+                if not egal:
+                    print(f"✗ {cle} : « {champ} » — envoyé {valeur!r}, relu {obtenu!r}")
+                    pertes += 1
+        print(f"\n{len(locales)} entrée(s) éprouvées, {pertes} perte(s) de champ.")
+        return 1 if pertes else 0
+
+    api_key = os.environ.get("ZOTERO_API_KEY", "")
+
+    if args.permissions:
+        if not api_key:
+            print("ZOTERO_API_KEY absente.", file=sys.stderr)
+            return 1
+        infos = zotero("/keys/current", api_key)
+        infos.pop("key", None)  # ne jamais réafficher le secret
+        print(json.dumps(infos, ensure_ascii=False, indent=2))
+        return 0
+
+    if not (args.dry_run or args.pousser):
+        p.print_help()
+        return 0
+
+    existantes: set[str] = set()
+    if args.pousser or api_key:
+        items = zotero(f"/groups/{args.groupe}/items?format=json&limit=100", api_key)
+        for item in items if isinstance(items, list) else []:
+            m = re.search(r"citation-key:\s*(\S+)", item.get("data", {}).get("extra", ""), re.I)
+            if m:
+                existantes.add(m.group(1))
+        print(f"{len(existantes)} clé(s) déjà dans le groupe {args.groupe}.")
+
+    a_pousser = [(c, e) for c, (e, _l) in sorted(locales.items()) if c not in existantes]
+    if args.limite:
+        a_pousser = a_pousser[: args.limite]
+    print(f"{len(locales)} référence(s) locales, {len(a_pousser)} à créer.")
+
+    charges = [csl_vers_zotero(e, schema) for _c, e in a_pousser]
+
+    if args.dry_run:
+        for cle, item in zip((c for c, _ in a_pousser), charges):
+            print(f"\n--- {cle} ---")
+            print(json.dumps(item, ensure_ascii=False, indent=2)[:900])
+        return 0
+
+    creees = {}
+    for debut in range(0, len(charges), 50):
+        lot = charges[debut : debut + 50]
+        cles_lot = [c for c, _ in a_pousser][debut : debut + 50]
+        reponse = zotero(f"/groups/{args.groupe}/items", api_key, "POST", lot)
+        # L'échec partiel est le cas normal : la réponse porte trois dictionnaires.
+        for indice, item in (reponse.get("successful") or {}).items():
+            creees[cles_lot[int(indice)]] = item["key"]
+        for indice, message in (reponse.get("failed") or {}).items():
+            print(f"✗ {cles_lot[int(indice)]} : {message}", file=sys.stderr)
+        print(f"lot {debut // 50 + 1} : {len(reponse.get('successful') or {})} créée(s), "
+              f"{len(reponse.get('failed') or {})} en échec, "
+              f"{len(reponse.get('unchanged') or {})} inchangée(s)")
+
+    if args.rapport and creees:
+        with open(args.rapport, "w", encoding="utf-8") as f:
+            json.dump(creees, f, ensure_ascii=False, indent=2)
+        print(f"Clés Zotero créées consignées dans {args.rapport} (permet un retour arrière).")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
