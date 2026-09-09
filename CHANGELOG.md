@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.1](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.13.0...v1.13.1) (2026-09-09)
+
+
+### 🐛 Corrections de bugs
+
+* **ci:** le contrôle de fraîcheur ne détectait rien ([4a68b8c](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/4a68b8c519bb90124b74fcd736a23fb5ced885b6))
+
 ## [1.13.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.12.0...v1.13.0) (2026-09-08)
 
 
