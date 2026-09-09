@@ -352,6 +352,13 @@ def main() -> int:
             f"/groups/{args.groupe}/items/{zkey}?format=csljson", api_key
         )
         redescendu = (redescendu.get("items") or [redescendu])[0]
+        # Même réinjection que la synchronisation descendante : comparer sans elle
+        # éprouverait un chemin que personne n'emprunte.
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import sync_biblio
+
+        extra_map = sync_biblio.build_extra_map(args.groupe, api_key)
+        sync_biblio.apply_extra_variables([redescendu], extra_map)
         redescendu["id"] = args.comparer
         local = locales[args.comparer][0]
         ecarts = 0
