@@ -7,6 +7,12 @@ from google import genai
 from google.genai import types
 
 CITATION_RE = re.compile(r"\[@([A-Za-z][A-Za-z0-9_-]*),\s*([^\]]+)\]")
+
+# En deçà de cette fraction du plus petit des deux fichiers — l'ancienne traduction et la
+# source —, la sortie est tenue pour tronquée et le fichier n'est pas écrit. Le seuil est
+# volontairement bas : il ne s'agit pas de juger la concision d'une traduction, mais
+# d'attraper une amputation.
+SEUIL_TRONCATURE = 0.6
 ARABIC_RE = re.compile(r"[\u0600-\u06FF]")
 
 
@@ -241,6 +247,29 @@ Fichier à traduire :
                 translated_text = translated_text[:-4]
                 
             translated_text = restore_locators(new_source_text, translated_text)
+
+            # GARDE-FOU CONTRE LA TRADUCTION TRONQUÉE.
+            #
+            # Le modèle renvoie parfois un fichier amputé au lieu de la mise à jour
+            # demandée : le 9 septembre 2026, un chapitre arabe de 636 lignes est
+            # revenu à 68, soit 89 % de perte, et la PR ouverte automatiquement
+            # ressemblait à n'importe quelle autre. Rien dans le rendu ne l'aurait
+            # signalé — un chapitre amputé reste un chapitre bien formé.
+            #
+            # Une traduction n'est jamais beaucoup plus courte que ce qu'elle met à
+            # jour, sauf si la SOURCE a elle-même raccourci. On compare donc les deux
+            # rapports : la cible ne doit pas fondre plus vite que sa source.
+            if old_target_text:
+                lignes_avant = len(old_target_text.splitlines())
+                lignes_apres = len(translated_text.splitlines())
+                lignes_source = len(new_source_text.splitlines())
+                seuil = max(1, int(min(lignes_avant, lignes_source) * SEUIL_TRONCATURE))
+                if lignes_apres < seuil:
+                    raise RuntimeError(
+                        f"traduction tronquée : {lignes_apres} lignes contre "
+                        f"{lignes_avant} auparavant et {lignes_source} à la source. "
+                        "Relancer, au besoin en retraduction complète."
+                    )
 
             os.makedirs(os.path.dirname(target_path), exist_ok=True)
             with open(target_path, "w", encoding="utf-8") as f:
