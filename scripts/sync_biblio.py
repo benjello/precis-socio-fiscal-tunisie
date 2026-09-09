@@ -159,6 +159,13 @@ ARABE = re.compile(r"[\u0600-\u06FF]")
 CHAMPS_TRADUITS = ("title", "title-short", "container-title", "publisher",
                    "publisher-place", "authority", "author", "editor")
 
+# Le JORT paraît en deux éditions, et pist.tn les sert sous deux chemins distincts :
+# /2014F/Jo0232014.pdf pour la française, /2014A/Ja0232014.pdf pour l'arabe. Une
+# bibliographie arabe qui renvoie à l'édition arabe ne se trompe pas : elle renvoie au
+# texte que son lecteur peut lire. Ces URL ne contiennent aucun caractère arabe et
+# échapperaient donc à la règle de préservation ci-dessus — d'où ce motif.
+URL_JORT_ARABE = re.compile(r"/\d{4}A/Ja\d+", re.I)
+
 
 def contient_arabe(valeur):
     if isinstance(valeur, str):
@@ -195,6 +202,9 @@ def preserve_traductions(items, chemin_existant):
             if champ in ancien and contient_arabe(ancien[champ]) and not contient_arabe(item.get(champ)):
                 item[champ] = ancien[champ]
                 preserves += 1
+        if URL_JORT_ARABE.search(ancien.get("URL", "")) and ancien.get("URL") != item.get("URL"):
+            item["URL"] = ancien["URL"]
+            preserves += 1
     if preserves:
         print(f"    {preserves} champ(s) arabes préservés dans {os.path.basename(os.path.dirname(chemin_existant))}")
     return items
