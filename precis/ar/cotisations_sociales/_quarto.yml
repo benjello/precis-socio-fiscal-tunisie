@@ -1,0 +1,48 @@
+project:
+  type: book
+  output-dir: public
+
+lang: ar
+dir: rtl
+
+book:
+  title: "المساهمات الاجتماعية"
+  author: "مهدي بن جلول"
+  repo-url: https://github.com/benjello/precis-socio-fiscal-tunisie/
+  repo-subdir: precis/ar/cotisations_sociales
+  repo-branch: master
+  repo-actions: [edit, issue]
+  downloads: [pdf]
+  chapters:
+    - index.qmd
+
+  appendices:
+    - _glossaire.qmd
+
+language:
+  toc-title-document: "المحتويات"
+  toc-title-website: "المحتويات"
+  title-block-author-single: "الكاتب"
+  repo-action-links-edit: "تعديل هذه الصفحة"
+  repo-action-links-issue: "الإبلاغ عن مشكلة"
+  search-clear-button-title: "مسح"
+  search-no-results-text: "لا توجد نتائج"
+  search-text-placeholder: "بحث"
+
+bibliography:
+  - references.json
+  - ../references.json
+  - ../references.bib
+
+format:
+  html:
+    theme: cosmo
+    number-depth: 4
+    toc: true
+    toc-depth: 4
+  pdf:
+    documentclass: scrreprt
+    toc: true
+    toc-depth: 4
+    number-sections: true
+    number-depth: 4

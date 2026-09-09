@@ -856,3 +856,100 @@ créée** : le chapitre cite `loi-amen-social-2019`.
 
 Les 63 clés ci-dessus (59 en collection « prestations sociales » à créer, 4 en « Commun »),
 champ « Extra » : `citation-key: <clé>`. Aucune écriture Zotero n'a été effectuée.
+
+## Livre « Cotisations sociales » — collection Zotero à créer
+
+Le cinquième livre a été ouvert sans collection Zotero. En conséquence,
+`scripts/sync_biblio.py` ne lui écrit rien, et les deux entrées que cite son annexe
+glossaire ont été **copiées à la main** dans `precis/{fr,ar}/cotisations_sociales/references.json`
+depuis les livres qui les portaient déjà :
+
+- `decret-2017-668-smig` — venait de la collection « Fiscalité » ;
+- `loi85-12` — venait de la collection « Rémunérations publiques ».
+
+Ces deux textes sont désormais cités par trois livres. **À faire dans Zotero** : créer la
+collection « Cotisations sociales » et y ajouter ces deux items — un item peut appartenir à
+plusieurs collections, il n'y a donc rien à déplacer. Le mapping
+`COLLECTION_TO_BOOK["cotisations sociales"]` est déjà en place côté script : la collection
+créée, la synchronisation reprendra la main sur ce fichier et la copie manuelle disparaîtra.
+
+Les références qu'ont rapportées les dossiers documentaires des régimes (privé et public)
+s'ajoutent à cette même collection : elles sont listées à la sous-section suivante.
+
+### Versement des dossiers documentaires (privé et public) — fait localement, à rapatrier
+
+Les deux dossiers `docs/notes/cotisations-dossier-prive.md` (§ 12) et
+`docs/notes/cotisations-dossier-public.md` (§ « Références candidates ») ont été versés dans
+`precis/{fr,ar}/cotisations_sociales/references.json`, qui compte désormais **41 entrées**.
+Toutes sont provisoires au sens du § *Rappel de procédure* : sans collection Zotero
+« Cotisations sociales », `scripts/sync_biblio.py` ne les gouverne pas.
+
+**30 clés créées** (aucune n'existait ailleurs dans le dépôt) :
+
+`arrete-1978-11-18-retraite-complementaire`, `decret2002-916`, `decret2003-894`,
+`decret2003-1212`, `decret2003-1544`, `decret2007-1406`, `decret2014-2919`, `decret73-91`,
+`decret74-499`, `decret81-224`, `decret92-631`, `decret94-1429`, `decret95-538`,
+`decret97-555`, `decret97-1645`, `decretloi2011-48`, `loi59-18`, `loi59-19`, `loi59-45`,
+`loi73-71`, `loi74-101-lf1975`, `loi83-31`, `loi85-16`, `loi88-16`, `loi94-71`, `loi97-4`,
+`loi2001-123-lf2002`, `loi2005-54`, `loi2007-43`, `loi2007-51`.
+
+**8 clés recopiées** depuis un autre livre, parce que sa bibliographie ne figure pas dans le
+`_quarto.yml` de celui-ci — l'item Zotero existe déjà, il suffira de l'ajouter à la collection
+« Cotisations sociales » : `loi75-83`, `loi81-6`, `loi89-73`, `loi96-101`, `loi2002-32`,
+`loi2002-104`, `decret89-107`, `decret95-1166` (collection « Prestations sociales ») et
+`loi2019-37` (collection « Rémunérations publiques »).
+
+**2 clés déjà présentes** : `decret-2017-668-smig` et `loi85-12` (voir ci-dessus). `loi85-12` a
+été **complétée** — `container-title`, `issue: 20`, `page: 359-365`, note enrichie (art. 9, 13
+et 76) : la correction est à reporter sur l'item Zotero, qui vient de « Rémunérations
+publiques ».
+
+**Non recopiées, et à laisser telles quelles** : `loi60-30`, `loi2004-71` et `lf-2025` vivent
+dans `precis/{fr,ar}/references.json` (« Commun »), qui **est** sur le chemin de bibliographie
+du livre. Les dupliquer localement créerait un `id` en double dans la bibliographie fusionnée.
+
+Points de forme pour la montée dans Zotero :
+
+- type d'item Zotero **Statute** (→ CSL `legislation`) ;
+- champ **Extra** : `citation-key: <clé>` **et** `issue: <n° de fascicule>` — le type Statute
+  n'a pas de champ Issue, et `apply_extra_variables()` le réinjecte à la descente ;
+- l'URL déposée dans Zotero est celle de l'**édition française** ; la descente dérive l'arabe.
+  Les 40 dérivations FR→AR de ce livre ont été contrôlées **par comparaison de taille** contre
+  pist.tn : toutes servent bien deux fichiers distincts.
+
+#### Deux corrections faites en marge, hors collection « Cotisations sociales »
+
+- `precis/urls-jort.json` : ajout de `https://www.pist.tn/jort/2017/2017F/Jo0452017.pdf`. Les
+  deux chemins de ce fascicule servent le **même** fichier de 1 217 842 octets (mesuré) ; sans
+  cette exception, la descente fabriquerait pour l'arabe un lien qui répond 200 en servant le
+  français. C'est le fascicule de `decret-2017-668-smig`, cité par trois livres.
+- `precis/{fr,ar}/references.json`, `loi60-30` (« Commun ») : la note portait « JORT n° 57 des
+  16-20 décembre 1960 ». Le fascicule porte en en-tête « 13-16 décembre 1960 » et
+  `jort_cache.db` donne `date_publication = 1960-12-13`. Corrigé en « fascicule daté 13-16
+  décembre 1960 ». **À reporter sur l'item Zotero de la collection « Commun ».**
+
+#### Restent à vérifier avant d'être cités dans le texte
+
+- `decretloi2011-48` — métadonnées `jort_cache.db` (recid 80629), **contenu non lu** ; porte le
+  palier employeur de juillet 2011 dans openfisca-tunisia.
+- `loi59-45` (recid 118145) et `loi2005-54` (recid 110642) — métadonnées seules, contenu non lu.
+- `loi85-16` — le libellé de la contribution de l'État reste à relire à l'image.
+- `loi73-71` — `issued` retenu au **19 novembre 1973** (fascicule, lu à l'image) contre le
+  16 novembre de `jort_cache.db` ; divergence consignée dans la note de l'entrée.
+
+### Trois des cinq entrées « à vérifier avant citation » sont désormais citées
+
+Le versement des références du livre « Cotisations sociales » signalait cinq entrées dont le
+contenu n'avait pas été lu : `decretloi2011-48`, `loi59-45`, `loi2005-54`, `loi85-16` et
+`loi73-71`. La rédaction de la section du secteur public en cite trois. État exact :
+
+- `loi73-71` — **lue** au fascicule (JORT n° 43 de 1973, p. 1852, lecture à l'image) : l'article
+  premier remplace l'article 5 de la loi 59-18 en maintenant le taux à 7 %. Rien à vérifier.
+- `loi59-45` — **non ouverte**, mais le fait qu'elle porte (la création de la Caisse de prévoyance
+  sociale) est attesté par un texte lu : l'article 28 de la loi n° 75-83 la nomme expressément.
+  L'attestation est donc indirecte et suffisante pour ce que le chapitre en dit.
+- `loi85-16` — article 5 **partiellement lu** : la retenue de 10 % est établie, la mention de la
+  contribution de l'État de 15 % est illisible sur le fascicule océrisé. Le chapitre le dit
+  désormais explicitement plutôt que d'étendre aux trois lois ce qui n'est établi que pour deux.
+
+`decretloi2011-48` et `loi2005-54` ne sont pas citées ; elles restent à vérifier avant de l'être.

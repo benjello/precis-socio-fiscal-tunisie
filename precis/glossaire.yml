@@ -892,6 +892,7 @@ entries:
     acronyme: null
     statut: valide
     references: []
+    source_definition: {ref: loi60-30}
     voir_aussi: [cnss, cnrps, cnam]
     fr:
       terme: Cotisations sociales

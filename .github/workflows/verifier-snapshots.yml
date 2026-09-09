@@ -65,15 +65,21 @@ jobs:
         run: |
           uv run python scripts/generate_bareme_tables.py
           uv run python scripts/generate_prestations_tables.py
+          uv run python scripts/generate_cotisations_tables.py
 
       - name: Comparer au contenu versionné
         run: |
+          # Deux pièges, tous deux éprouvés par un test négatif.
+          #
           # Le pathspec DOIT descendre jusqu'aux fichiers : `precis/*/*/tables` ne
           # matche rien — git compare le motif au chemin complet du fichier, et un
           # répertoire nommé sans son contenu ne correspond à aucun blob. Le contrôle
-          # passait donc au vert quoi qu'il arrive. Éprouvé par un test négatif : un
-          # snapshot volontairement périmé n'était pas détecté.
-          if git diff --quiet -- 'precis/*/*/tables/*'; then
+          # passait donc au vert quoi qu'il arrive.
+          #
+          # Et `git diff` ne voit QUE les fichiers suivis : un snapshot d'un nom
+          # nouveau, émis par un générateur mais jamais versionné, passait au vert
+          # lui aussi. D'où `git status --porcelain`, qui compte les non-suivis.
+          if [ -z "$(git status --porcelain -- 'precis/*/*/tables/*')" ]; then
             echo "✓ Les tableaux publiés correspondent aux paramètres d'openfisca-tunisia."
             exit 0
           fi
@@ -91,6 +97,8 @@ jobs:
             echo '    uv run python scripts/generate_bareme_tables.py'
             echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'
             echo '    uv run python scripts/generate_prestations_tables.py'
+            echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'
+            echo '    uv run python scripts/generate_cotisations_tables.py'
             echo '```'
             echo
             echo "puis relire le diff — une valeur qui change est un fait juridique, pas"
@@ -99,6 +107,12 @@ jobs:
             echo '```diff'
             git diff -- 'precis/*/*/tables/*'
             echo '```'
+            echo
+            echo "Snapshots non versionnés, s'il y en a :"
+            echo
+            echo '```'
+            git status --porcelain -- 'precis/*/*/tables/*' | grep '^??' || echo "(aucun)"
+            echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
-          git --no-pager diff --stat -- 'precis/*/*/tables/*'
+          git status --porcelain -- 'precis/*/*/tables/*'
           exit 1
