@@ -101,7 +101,71 @@ Pour les **salariés agricoles**, le taux lui-même est plus bas — 12,29 %, mo
 
 Pour les **travailleurs non salariés**, les **artistes** et les **Tunisiens à l'étranger**, la colonne patronale est vide : n'ayant pas d'employeur, l'assuré supporte seul la totalité, entre 13,3 % et 14,71 %.
 
-Le **régime des étudiants** n'apparaît pas dans ce tableau parce qu'il ne relève pas d'un taux : il prend la forme d'une **cotisation forfaitaire de 5 dinars**, fixée par le décret n° 92-631 du 23 mars 1992 tel que modifié par le décret n° 2003-1544 du 2 juillet 2003.
+Les sections qui suivent prennent chaque régime pour lui-même : ce qu'il couvre, comment il se décompose, et — dans la mesure où les textes ont pu être établis — quand il a été créé et comment il a évolué.
+
+### Les salariés agricoles
+
+```{python}
+#| echo: false
+#| output: asis
+table("branches_rsa",
+      "Cotisations du régime des salariés agricoles, par branche et par part",
+      "tbl-branches-rsa")
+```
+
+### Les salariés agricoles, régime amélioré
+
+```{python}
+#| echo: false
+#| output: asis
+table("branches_rsaa",
+      "Cotisations du régime amélioré des salariés agricoles, par branche et par part",
+      "tbl-branches-rsaa")
+```
+
+### Les travailleurs non salariés
+
+```{python}
+#| echo: false
+#| output: asis
+table("branches_rtns",
+      "Cotisations du régime des travailleurs non salariés, par branche",
+      "tbl-branches-rtns")
+```
+
+### Les artistes, créateurs et intellectuels
+
+```{python}
+#| echo: false
+#| output: asis
+table("branches_raci",
+      "Cotisations du régime des artistes, créateurs et intellectuels, par branche",
+      "tbl-branches-raci")
+```
+
+### Les travailleurs à faibles revenus
+
+```{python}
+#| echo: false
+#| output: asis
+table("branches_rtfr",
+      "Cotisations du régime des travailleurs à faibles revenus, par branche — assiette plafonnée à 0,66 SMIG",
+      "tbl-branches-rtfr")
+```
+
+### Les étudiants
+
+Le régime des étudiants n'a pas de tableau, parce qu'il ne relève pas d'un taux : il prend la forme d'une **cotisation forfaitaire de 5 dinars**, fixée par le décret n° 92-631 du 23 mars 1992 tel que modifié par le décret n° 2003-1544 du 2 juillet 2003.
+
+### Les Tunisiens à l'étranger
+
+```{python}
+#| echo: false
+#| output: asis
+table("branches_rtte",
+      "Cotisations du régime des Tunisiens à l'étranger, par branche",
+      "tbl-branches-rtte")
+```
 
 ## Le secteur public
 

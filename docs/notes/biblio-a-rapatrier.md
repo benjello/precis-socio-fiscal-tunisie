@@ -856,3 +856,22 @@ créée** : le chapitre cite `loi-amen-social-2019`.
 
 Les 63 clés ci-dessus (59 en collection « prestations sociales » à créer, 4 en « Commun »),
 champ « Extra » : `citation-key: <clé>`. Aucune écriture Zotero n'a été effectuée.
+
+## Livre « Cotisations sociales » — collection Zotero à créer
+
+Le cinquième livre a été ouvert sans collection Zotero. En conséquence,
+`scripts/sync_biblio.py` ne lui écrit rien, et les deux entrées que cite son annexe
+glossaire ont été **copiées à la main** dans `precis/{fr,ar}/cotisations_sociales/references.json`
+depuis les livres qui les portaient déjà :
+
+- `decret-2017-668-smig` — venait de la collection « Fiscalité » ;
+- `loi85-12` — venait de la collection « Rémunérations publiques ».
+
+Ces deux textes sont désormais cités par trois livres. **À faire dans Zotero** : créer la
+collection « Cotisations sociales » et y ajouter ces deux items — un item peut appartenir à
+plusieurs collections, il n'y a donc rien à déplacer. Le mapping
+`COLLECTION_TO_BOOK["cotisations sociales"]` est déjà en place côté script : la collection
+créée, la synchronisation reprendra la main sur ce fichier et la copie manuelle disparaîtra.
+
+Les références que rapporteront les dossiers documentaires des régimes (privé et public)
+viendront s'ajouter à cette même collection.

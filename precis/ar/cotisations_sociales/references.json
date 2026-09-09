@@ -1,1 +1,39 @@
-{"items": []}
+{
+  "items": [
+    {
+      "id": "decret-2017-668-smig",
+      "type": "legislation",
+      "title": "Décret gouvernemental n° 2017-668 du 5 juin 2017, fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "45",
+      "page": "2046",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            6,
+            5
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2017/2017F/Jo0452017.pdf",
+      "note": "citation-key: decret-2017-668-smig\nJORT n° 45 du 6 juin 2017, p. 2046. Exemple canonique du texte qui fixe le SMIG : un décret, révisé au fil des négociations salariales. Métadonnées vérifiées dans le corpus JORT local (jort_cache.db) ; contenu non lu."
+    },
+    {
+      "id": "loi85-12",
+      "type": "legislation",
+      "note": "citation-key: loi85-12",
+      "title": "القانون عدد 85-12 المؤرخ في 5 مارس 1985",
+      "URL": "https://www.pist.tn/jort/1985/1985A/Ja02085.pdf",
+      "issued": {
+        "date-parts": [
+          [
+            1985,
+            3,
+            5
+          ]
+        ]
+      }
+    }
+  ]
+}
