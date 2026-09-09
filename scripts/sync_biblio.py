@@ -117,6 +117,56 @@ def build_citation_key_map(group_id, api_key):
     return key_map
 
 
+# Variables CSL qu'aucun champ Zotero ne peut accueillir pour le type visé, et qui
+# vivent donc dans le champ Extra. Le numéro de fascicule du JORT est dans ce cas pour
+# les textes législatifs : le type `statute` n'a pas de champ `issue`.
+VARIABLES_EXTRA = ("issue", "authority", "event-date", "collection-title", "genre")
+
+
+def parse_date_extra(texte):
+    morceaux = [int(x) for x in str(texte).split("-") if x.strip().isdigit()]
+    return {"date-parts": [morceaux]} if morceaux else None
+
+
+def build_extra_map(group_id, api_key):
+    """{zotero_key: {variable CSL: valeur}} lues dans le champ Extra."""
+    items = zotero_get(
+        f"/groups/{group_id}/items",
+        api_key,
+        params={"format": "json"},
+    )
+    extras = {}
+    for item in items:
+        variables = {}
+        for ligne in (item.get("data", {}).get("extra", "") or "").splitlines():
+            m = re.match(r"^([A-Za-z-]+):\s*(.+)$", ligne)
+            if m and m.group(1) in VARIABLES_EXTRA:
+                valeur = m.group(2).strip()
+                variables[m.group(1)] = (
+                    parse_date_extra(valeur) if m.group(1).endswith("date") else valeur
+                )
+        if variables:
+            extras[item["key"]] = variables
+    return extras
+
+
+def apply_extra_variables(csl_items, extra_map):
+    """Réinjecte les variables CSL logées dans Extra.
+
+    L'export CSL-JSON de l'API **ne les rend pas** : vérifié sur pièce, un arrêté poussé
+    avec `issue: 4`, `authority: République tunisienne` et `event-date` en Extra redescend
+    sans aucun des trois. Le client Zotero, lui, les honore — la lacune est celle de
+    l'exportateur de l'API. Sans cette réinjection, chaque synchronisation descendante
+    amputerait les fichiers locaux de la provenance : numéro de fascicule du JORT en tête.
+    """
+    for item in csl_items:
+        zkey = item.get("id", "").split("/")[-1]
+        for variable, valeur in (extra_map.get(zkey) or {}).items():
+            if valeur is not None and variable not in item:
+                item[variable] = valeur
+    return csl_items
+
+
 def apply_citation_keys(csl_items, key_map, group_id):
     """Replace Zotero IDs with human-readable citation keys."""
     for item in csl_items:
@@ -202,6 +252,9 @@ def main():
     key_map = build_citation_key_map(group_id, api_key)
     print(f"  {len(key_map)} citation keys found")
 
+    extra_map = build_extra_map(group_id, api_key)
+    print(f"  {len(extra_map)} item(s) carrying CSL variables in Extra")
+
     collections = get_collections(group_id, api_key)
     print(f"Found {len(collections)} collections: {list(collections.values())}")
 
@@ -220,6 +273,7 @@ def main():
             api_key,
             params={"format": "csljson"},
         )
+        items = apply_extra_variables(items, extra_map)
         items = apply_citation_keys(items, key_map, group_id)
         book_items.setdefault(book, []).extend(items)
         print(f"  {collections[ckey]}: {len(items)} items → {book}")
@@ -229,6 +283,7 @@ def main():
         api_key,
         params={"format": "csljson"},
     )
+    all_items = apply_extra_variables(all_items, extra_map)
     all_items = apply_citation_keys(all_items, key_map, group_id)
 
     collected_ids = set()
