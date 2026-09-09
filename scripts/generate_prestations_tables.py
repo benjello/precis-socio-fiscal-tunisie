@@ -56,6 +56,13 @@ MOTS = {
         "creche_plaf": "Plafond de revenu de la mère",
         "pnafn": "Allocation mensuelle",
         "amen_base": "Allocation de base mensuelle",
+        "occasion": "Occasion", "montant": "Montant", "unite": "Unité",
+        "ramadan": "Mois de Ramadan", "fitr": "Aïd al-Fitr", "adha": "Aïd al-Idha",
+        "rentree_scolaire": "Rentrée scolaire",
+        "rentree_universitaire": "Rentrée universitaire",
+        "par_famille": "individu ou famille",
+        "par_enfant_scolarise": "par enfant scolarisé",
+        "par_enfant_superieur": "par enfant dans le supérieur",
         "supp": "Supplément mensuel", "handicap": "Carte de handicap",
         "age_min": "Âge minimal", "age_max": "Âge maximal",
         "age_etudiant": "Âge maximal en études, apprentissage ou formation",
@@ -76,6 +83,13 @@ MOTS = {
         "creche_plaf": "سقف دخل الأمّ",
         "pnafn": "المنحة الشهرية",
         "amen_base": "المنحة القاعدية الشهرية",
+        "occasion": "المناسبة", "montant": "المبلغ", "unite": "الوحدة",
+        "ramadan": "شهر رمضان", "fitr": "عيد الفطر", "adha": "عيد الأضحى",
+        "rentree_scolaire": "العودة المدرسية",
+        "rentree_universitaire": "العودة الجامعية",
+        "par_famille": "عن الفرد أو العائلة",
+        "par_enfant_scolarise": "عن كلّ طفل متمدرس",
+        "par_enfant_superieur": "عن كلّ طفل بالتعليم العالي",
         "supp": "الزيادة الشهرية", "handicap": "بطاقة إعاقة",
         "age_min": "السنّ الدنيا", "age_max": "السنّ القصوى",
         "age_etudiant": "السنّ القصوى في حالة الدراسة أو التمهين أو التكوين",
@@ -192,6 +206,17 @@ CLES_SUPPLEMENT = {
 }
 # L'allocation familiale non contributive naît le 8 avril 2022, entre deux revalorisations
 # du transfert : sa ligne a sa propre clé.
+CLE_APPUI = "arrete-2022-12-08-appui-occasionnel, art. 4"
+CLES_APPUI = dict.fromkeys(
+    (
+        f"{NC}/amen_social/aides_ponctuelles/fetes_religieuses/ramadan.yaml",
+        f"{NC}/amen_social/aides_ponctuelles/fetes_religieuses/aid_al_fitr.yaml",
+        f"{NC}/amen_social/aides_ponctuelles/fetes_religieuses/aid_al_adha.yaml",
+        f"{NC}/amen_social/aides_ponctuelles/scolarite/rentree_scolaire.yaml",
+        f"{NC}/amen_social/aides_ponctuelles/scolarite/rentree_universitaire.yaml",
+    ),
+    CLE_APPUI,
+)
 CLES_AMEN_ET_AFNC = dict(
     CLES_AMEN, **{"2022-04-08": "arrete-2022-04-01-allocation-familiale, art. 2-3"}
 )
@@ -230,8 +255,39 @@ def tableaux(langue):
         df.insert(len(df.columns) - 2, m["assiette"], assiette)
         return df
 
+    def aides_ponctuelles():
+        """Les cinq aides, avec l'unité à laquelle chacune se rapporte.
+
+        L'unité n'est pas dans les paramètres et ne peut pas y être : ce n'est pas une
+        valeur datée mais la définition du montant — 50 dinars « par enfant scolarisé »
+        n'est pas 50 dinars par famille. Elle est donc portée ici, en regard du
+        paramètre dont elle qualifie la valeur.
+        """
+        base = f"{NC}/amen_social/aides_ponctuelles"
+        df = ot.tableau_a_la_date(
+            [
+                (f"{base}/fetes_religieuses/ramadan.yaml", m["ramadan"], dinars),
+                (f"{base}/fetes_religieuses/aid_al_fitr.yaml", m["fitr"], dinars),
+                (f"{base}/fetes_religieuses/aid_al_adha.yaml", m["adha"], dinars),
+                (f"{base}/scolarite/rentree_scolaire.yaml", m["rentree_scolaire"], dinars),
+                (f"{base}/scolarite/rentree_universitaire.yaml",
+                 m["rentree_universitaire"], dinars),
+            ],
+            "2022-12-09",
+            cles=CLES_APPUI,
+            entetes=(m["occasion"], m["montant"], m["texte"]),
+        )
+        if df is None:
+            return None
+        df.insert(2, m["unite"], [
+            m["par_famille"], m["par_famille"], m["par_famille"],
+            m["par_enfant_scolarise"], m["par_enfant_superieur"],
+        ])
+        return df
+
     return {
         "af_evolution.md": af_evolution,
+        "aides_ponctuelles.md": aides_ponctuelles,
         "salaire_unique.md": lambda: ot.tableau_a_la_date(
             [
                 (f"{AF}/salaire_unique/enf1.yaml", m["su1"], dinars),
