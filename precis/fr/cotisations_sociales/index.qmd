@@ -1,0 +1,143 @@
+# Les cotisations sociales en Tunisie
+
+```{python}
+#| echo: false
+#| output: false
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+
+TABLES = Path.cwd() / "tables"
+
+
+def table(nom, legende, label):
+    """Tableau de paramètres : snapshot versionné, régénéré depuis openfisca-tunisia.
+
+    Les valeurs viennent des paramètres du modèle, la colonne « Texte » de leurs
+    références. Régénération : `scripts/generate_cotisations_tables.py`.
+    """
+    print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label))
+```
+
+Ce chapitre traite du **prélèvement** qui finance la sécurité sociale : qui cotise, sur quelle assiette, à quel taux, et pour financer quelle branche. C'est le premier maillon d'une chaîne dont les autres livres du précis prennent la suite — le livre « Retraites » traite la pension, le livre « Prestations sociales » ce que le régime ouvre en dehors de la vieillesse. Les mêmes régimes servent ainsi trois livres pour trois objets distincts, et celui-ci prend les régimes du côté de ce qu'ils prélèvent.
+
+::: {.callout-note title="Trois conventions de lecture, retenues dans tout ce qui suit"}
+**1. L'ossature est le partage entre secteur privé et secteur public.** Ce n'est pas une commodité : il commande la caisse compétente — la [Caisse nationale de sécurité sociale](#g-cnss) d'un côté, la [Caisse nationale de retraite et de prévoyance sociale](#g-cnrps) de l'autre —, le texte applicable et l'ampleur du prélèvement, qui va du simple au double d'un régime à l'autre.
+
+**2. Les taux présentés sont ceux en vigueur, et beaucoup ne sont pas datés.** Les paramètres du modèle `openfisca-tunisia` dont ces tableaux sont tirés portent, pour tout le secteur privé, la date du 1^er^ janvier 1960 — qui n'est la date d'aucun de ces taux. Leur valeur est exacte, leur histoire reste à établir. Quand un tableau ne porte pas de texte en regard d'une ligne, c'est ce silence-là qu'il faut lire, et non une stabilité de soixante-cinq ans.
+
+**3. La part salariale et la part patronale sont distinguées, sans préjuger de qui supporte le prélèvement.** Le partage juridique entre l'une et l'autre ne dit rien de son incidence économique. Ce chapitre décrit le premier et ne se prononce pas sur la seconde.
+:::
+
+## Présentation générale
+
+### Cotisation et impôt
+
+La [cotisation sociale](#g-cotisations-sociales) se distingue de l'impôt par sa **contrepartie** : elle ouvre des droits à l'[assuré social](#g-assure-social) pour lequel elle est versée, alors que l'impôt alimente le budget de l'État sans contrepartie individualisée. Cette distinction n'est pas absolue en Tunisie — le régime général comporte une cotisation au « fonds spécial de l'État » et une cotisation de « protection sociale des travailleurs » dont la contrepartie individuelle n'est pas évidente, et la contribution sociale de solidarité, assise sur l'assiette de l'impôt sur le revenu, finance les caisses tout en étant liquidée comme un impôt.
+
+Cette dernière est traitée dans le livre « Fiscalité », où son assiette la rattache ; elle est mentionnée ici parce qu'elle contribue au financement des régimes.
+
+### La carte des régimes
+
+Le système compte **huit régimes dans le secteur privé** et trois ensembles dans le secteur public.
+
+Au privé : le régime des **salariés non agricoles** — le régime général, celui qui couvre la majorité des salariés —, celui des **salariés agricoles** et sa variante **améliorée**, celui des **travailleurs non salariés**, celui des **artistes, créateurs et intellectuels**, celui des **travailleurs à faibles revenus**, celui des **étudiants**, et celui des **Tunisiens à l'étranger**.
+
+Au public : les **salariés affiliés à la CNRPS**, les **pensionnés** de cette même caisse — qui cotisent sur leur pension —, et un régime spécial pour les **membres du gouvernement, les députés et les gouverneurs**.
+
+<!-- TODO (documentaliste) : les textes fondateurs de chaque régime privé sont connus par
+le livre Prestations sociales (loi n° 60-30 pour le RSNA, loi n° 81-6 pour le RSA, loi
+n° 89-73 pour le RSAA, décret n° 95-1166 pour les non-salariés, loi n° 2002-104 pour les
+artistes, loi n° 2002-32 pour les bas revenus, décret n° 89-107 pour les Tunisiens à
+l'étranger). Ce qui manque ici, ce sont les textes qui fixent les TAUX, et eux seuls. -->
+
+## L'assiette
+
+L'assiette des cotisations est constituée du **salaire de base et des primes**. Elle n'est **pas plafonnée**, à une exception près : le régime des travailleurs à faibles revenus, dont les seuils sont exprimés en multiples du [salaire minimum](#g-smig) et qui ne prélève rien au-delà de **0,66 SMIG** d'assiette.
+
+Cette absence de plafond est un trait structurant du système tunisien, et elle le distingue de beaucoup de systèmes comparables. Elle explique que le prélèvement soit strictement proportionnel au salaire dans presque tous les régimes.
+
+<!-- TODO (documentaliste) : établir sur texte la définition de l'assiette (quelles primes
+sont incluses, quel traitement des avantages en nature) et l'assiette forfaitaire des
+travailleurs non salariés, que le modèle ne connaît pas. -->
+
+## Le régime général : les salariés non agricoles
+
+Le régime général prélève **dix cotisations distinctes**, dont une facultative.
+
+```{python}
+#| echo: false
+#| output: asis
+table("rsna_branches",
+      "Cotisations du régime des salariés non agricoles, par branche et par part",
+      "tbl-rsna-branches")
+```
+
+Trois observations.
+
+**La retraite pèse près de la moitié du prélèvement**, 12,5 points sur les 26,75 points du régime, et la maladie près du quart. Les branches restantes — maternité, décès, prestations familiales, accidents du travail — pèsent ensemble moins de six points.
+
+**Hors retraite complémentaire, le total obligatoire est de 9,18 % pour le salarié et 16,57 % pour l'employeur** jusqu'en 2024. La cotisation pour perte d'emploi, créée au 1^er^ janvier 2025 à raison de 0,5 point de chaque côté, porte ces taux à 9,68 % et 17,07 %.
+
+**La retraite complémentaire est facultative** et n'entre donc pas dans le prélèvement obligatoire. Elle est loin d'être négligeable : à 3 points pour le salarié et 6 pour l'employeur, elle ajouterait un tiers au prélèvement du régime.
+
+## Les autres régimes du secteur privé
+
+Le contraste avec le régime général est le fait le plus visible du système.
+
+```{python}
+#| echo: false
+#| output: asis
+table("coin_par_regime",
+      "Prélèvement obligatoire total par régime du secteur privé, hors retraite complémentaire",
+      "tbl-coin-regimes")
+```
+
+Le prélèvement va de **7,5 % pour les travailleurs à faibles revenus à 26,75 % pour les salariés non agricoles**, soit un rapport de plus de trois. Deux mécanismes différents produisent cet écart, et il faut les distinguer.
+
+Pour les **salariés agricoles**, le taux lui-même est plus bas — 12,29 %, moins de la moitié du régime général — et le régime dit « amélioré » constitue une position intermédiaire à 19,47 %. Pour les **travailleurs à faibles revenus**, ce n'est pas seulement le taux qui est réduit mais **l'assiette qui est plafonnée** à 0,66 SMIG : au-delà, le prélèvement est nul. Ce régime est le seul du système à fonctionner ainsi.
+
+Pour les **travailleurs non salariés**, les **artistes** et les **Tunisiens à l'étranger**, la colonne patronale est vide : n'ayant pas d'employeur, l'assuré supporte seul la totalité, entre 13,3 % et 14,71 %.
+
+Le **régime des étudiants** n'apparaît pas dans ce tableau parce qu'il ne relève pas d'un taux : il prend la forme d'une **cotisation forfaitaire de 5 dinars**, fixée par le décret n° 92-631 du 23 mars 1992 tel que modifié par le décret n° 2003-1544 du 2 juillet 2003.
+
+## Le secteur public
+
+C'est la partie du système dont l'histoire est le mieux établie.
+
+```{python}
+#| echo: false
+#| output: asis
+table("cnrps_retraite",
+      "Cotisation retraite du salarié affilié à la CNRPS, 1959-2020",
+      "tbl-cnrps-retraite")
+```
+
+La série se lit en trois temps. Le régime naît en **1959** avec une cotisation de 7 %, que la loi de finances pour 1975 **ramène à 5 %** — un mouvement à la baisse qu'on ne retrouvera plus ensuite. Suit un quart de siècle de stabilité, puis, **à partir de 1994, une remontée continue** : 6 %, puis une série de relèvements par paliers qui portent le taux à 9,2 % en 2020. En soixante ans, la cotisation retraite du secteur public a donc gagné un peu plus de deux points, mais l'essentiel de cette hausse tient aux vingt-cinq dernières années.
+
+Trois millésimes — 2003, 2004, 2008 et 2009 — ne portent pas de texte en regard. Ils s'inscrivent dans les relèvements programmés par les lois de 2001 et de 2007, mais le texte qui fixe chaque palier n'a pas été établi.
+
+::: {.callout-warning title="Les références de cette série sont à reprendre"}
+Les textes cités dans ce tableau viennent des métadonnées des paramètres d'`openfisca-tunisia`, dont les liens pointent vers un dépôt personnel plutôt que vers le *Journal officiel*. Les intitulés et les dates sont vraisemblables, mais **aucun de ces textes n'a été lu à la source** pour ce chapitre. Les remplacer par des URL du JORT sur pist.tn est un préalable à toute citation.
+:::
+
+## Le recouvrement
+
+Le recouvrement relève des caisses elles-mêmes : la CNSS pour les régimes du secteur privé, la CNRPS pour le secteur public. Le versement est **trimestriel** dans le régime général, ce dont le vocabulaire des textes garde la trace — les montants des prestations familiales sont eux-mêmes exprimés par trimestre, et les décomptes entre caisses et ministères se font « chaque trois mois ».
+
+<!-- TODO (documentaliste) : cette section doit rester brève, mais elle demande un
+minimum : le texte qui fixe la périodicité et les délais de déclaration, le régime des
+pénalités de retard, et l'articulation avec la déclaration employeur. Rien de tout cela
+n'est établi à ce jour. -->
+
+## Vue d'ensemble
+
+Le système tunisien de cotisations présente trois traits que ce chapitre a établis sur les paramètres du modèle.
+
+**Il est proportionnel et sans plafond.** Une seule exception, le régime des travailleurs à faibles revenus, dont l'assiette s'arrête à 0,66 SMIG.
+
+**Il est très inégal d'un régime à l'autre** : de 7,5 % à 26,75 %, sans que la contrepartie en prestations varie dans les mêmes proportions — la matrice du livre « Prestations sociales » montre que les régimes les moins taxés sont aussi ceux qui ouvrent le moins de branches, mais l'écart n'est pas proportionnel.
+
+**Son histoire est connue au public et inconnue au privé.** Soixante ans de relèvements documentés pour la CNRPS, un instantané sans date pour le régime qui couvre la majorité des salariés. Combler cet écart est le premier travail que ce livre appelle.

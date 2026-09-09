@@ -601,6 +601,70 @@ def tableau_a_la_date(
     return pd.DataFrame(lignes)
 
 
+def taux_datee(chemin_relatif: str) -> list[tuple[str, float | None, str, str]]:
+    """Série datée du taux d'un barème à UNE tranche : (date, taux, titre, lien).
+
+    Les cotisations sociales sont encodées en `brackets` et non en `values`, même quand
+    elles n'ont qu'un taux unique : `serie_datee` ne les voit donc pas. Ce lecteur prend
+    le taux de la première tranche, ce qui couvre tous les régimes sauf celui des
+    travailleurs à faibles revenus — le seul plafonné, qui relève de `tableau_bareme`.
+    """
+    donnees = charge_parametre(chemin_relatif)
+    if not donnees or not donnees.get("brackets"):
+        return []
+    taux = donnees["brackets"][0].get("rate") or {}
+    sortie = []
+    for cle in sorted(taux.keys(), key=lambda k: (_annee(k), str(k))):
+        brut = taux[cle]
+        valeur = brut.get("value") if isinstance(brut, dict) else brut
+        titre, lien = _reference_a_la_date(donnees, cle)
+        sortie.append((str(cle)[:10], None if valeur is None else float(valeur), titre, lien))
+    return sortie
+
+
+def tableau_taux_datee(
+    specs: list[tuple[str, str, Callable[[float | None], str]]],
+    cles: dict[str, str] | None = None,
+    colonne_periode: str = "Effet",
+    colonne_texte: str = "Texte",
+    langue: str = "fr",
+) -> "pd.DataFrame | None":
+    """Comme `tableau_evolution_datee`, mais pour des barèmes à une tranche."""
+    if pd is None:
+        return None
+    series = {chemin: taux_datee(chemin) for chemin, _e, _f in specs}
+    if not all(series.values()):
+        return None
+    dates = sorted({d for s in series.values() for d, *_ in s})
+
+    def valeur_a(chemin, date):
+        retenue = None
+        for d, v, _t, _h in series[chemin]:
+            if d <= date:
+                retenue = v
+        return retenue
+
+    lignes = []
+    for date in dates:
+        ligne = {colonne_periode: formate_date(date, langue)}
+        for chemin, entete, formateur in specs:
+            ligne[entete] = formateur(valeur_a(chemin, date))
+        titre = ""
+        for chemin, _e, _f in specs:
+            for d, _v, t, _h in series[chemin]:
+                if d == date and t:
+                    titre = t
+                    break
+            if titre:
+                break
+        if cles and date in cles:
+            ligne[colonne_texte] = f"[@{cles[date]}]"
+        else:
+            ligne[colonne_texte] = titre or "—"
+        lignes.append(ligne)
+    return pd.DataFrame(lignes)
+
+
 def markdown_avec_legende(
     chemin: str | Path, legende: str, label: str, colonnes: str = ""
 ) -> str:
