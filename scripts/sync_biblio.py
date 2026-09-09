@@ -150,6 +150,24 @@ def build_extra_map(group_id, api_key):
     return extras
 
 
+def normalise_auteurs(csl_items):
+    """Rend leur forme `literal` aux auteurs institutionnels.
+
+    Un auteur enregistré en un seul champ dans Zotero — « Institut national de la
+    statistique », « Tunisie. Ministère des finances… » — est un nom d'institution, pas
+    un patronyme. CSL a `literal` pour cela, mais l'export de l'API le rend en
+    `{family: "…", given: ""}`, ce qui ferait citer l'institution comme une personne.
+    Le `given` vide est la signature de ce cas.
+    """
+    for item in csl_items:
+        for role in ("author", "editor", "contributor", "translator"):
+            for nom in item.get(role) or []:
+                if isinstance(nom, dict) and nom.get("family") and not nom.get("given"):
+                    nom["literal"] = nom.pop("family")
+                    nom.pop("given", None)
+    return csl_items
+
+
 def apply_extra_variables(csl_items, extra_map):
     """Réinjecte les variables CSL logées dans Extra.
 
@@ -273,7 +291,7 @@ def main():
             api_key,
             params={"format": "csljson"},
         )
-        items = apply_extra_variables(items, extra_map)
+        items = normalise_auteurs(apply_extra_variables(items, extra_map))
         items = apply_citation_keys(items, key_map, group_id)
         book_items.setdefault(book, []).extend(items)
         print(f"  {collections[ckey]}: {len(items)} items → {book}")
@@ -283,7 +301,7 @@ def main():
         api_key,
         params={"format": "csljson"},
     )
-    all_items = apply_extra_variables(all_items, extra_map)
+    all_items = normalise_auteurs(apply_extra_variables(all_items, extra_map))
     all_items = apply_citation_keys(all_items, key_map, group_id)
 
     collected_ids = set()
