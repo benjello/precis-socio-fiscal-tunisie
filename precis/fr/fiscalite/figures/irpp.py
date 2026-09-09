@@ -30,6 +30,7 @@ import figtools  # noqa: E402
 HERE = Path(__file__).resolve().parent
 FIGDATA = HERE.parent / "figdata"
 SERIE = "irpp-ratios"
+SERIE_COMPOSITION = "recettes-fiscales-composition"
 
 # Première année d'application de l'IRPP : revenus réalisés à compter du 1er janvier 1990,
 # code annexé à la loi n° 89-114 du 30 décembre 1989.
@@ -58,6 +59,68 @@ _L = {
     "col_sal": {"fr": "Part des salaires dans l'impôt (%)",
                 "ar": "حصة الأجور في الضريبة (%)"},
 }
+
+
+_C = {
+    "irpp": {"fr": "Impôt sur le revenu", "ar": "الضريبة على الدخل"},
+    "is": {"fr": "Impôt sur les sociétés", "ar": "الضريبة على الشركات"},
+    "tva": {"fr": "TVA", "ar": "الأداء على القيمة المضافة"},
+    "consommation": {"fr": "Droits de consommation", "ar": "معاليم الاستهلاك"},
+    "douanes": {"fr": "Droits de douanes", "ar": "المعاليم الديوانية"},
+    "autres": {"fr": "Autres impôts indirects", "ar": "أداءات غير مباشرة أخرى"},
+    "y": {"fr": "Part des recettes fiscales (%)", "ar": "الحصة من المداخيل الجبائية (%)"},
+    "titre": {"fr": "Composition des recettes fiscales de l'État, 1986-2025",
+              "ar": "تركيبة المداخيل الجبائية للدولة، 1986-2025"},
+    "col_annee": {"fr": "Année", "ar": "السنة"},
+}
+
+
+def _labc(key: str) -> str:
+    return _C[key].get(figtools.lang(), _C[key]["fr"])
+
+
+def table_composition():
+    df = figtools.series(SERIE_COMPOSITION)
+    cols = ["annee", "irpp_pct", "is_pct", "tva_pct", "consommation_pct",
+            "douanes_pct", "autres_indirects_pct"]
+    w = df[[c for c in cols if c in df.columns]].copy()
+    return w.rename(columns={
+        "annee": _labc("col_annee"), "irpp_pct": _labc("irpp"), "is_pct": _labc("is"),
+        "tva_pct": _labc("tva"), "consommation_pct": _labc("consommation"),
+        "douanes_pct": _labc("douanes"), "autres_indirects_pct": _labc("autres"),
+    })
+
+
+def fig_composition():
+    """Aires empilées : ce que pèse chaque impôt dans le prélèvement, année par année.
+
+    L'ordre d'empilement va des impôts directs aux indirects, et place les droits de
+    douanes juste au-dessus : c'est là que se lit le basculement du prélèvement, de la
+    frontière vers la consommation intérieure et le revenu.
+    """
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    df = figtools.series(SERIE_COMPOSITION)
+    postes = [("irpp_pct", "irpp", "#1f6feb"), ("is_pct", "is", "#54aeff"),
+              ("douanes_pct", "douanes", "#d1242f"), ("tva_pct", "tva", "#2da44e"),
+              ("consommation_pct", "consommation", "#bf8700"),
+              ("autres_indirects_pct", "autres", "#8b949e")]
+    fig, ax = plt.subplots(figsize=(9.5, 5.2))
+    ax.stackplot(df["annee"], *[df[c] for c, _, _ in postes],
+                 labels=[ft(_labc(k)) for _, k, _ in postes],
+                 colors=[c for _, _, c in postes], alpha=0.92)
+    ax.set_xlim(df["annee"].min(), df["annee"].max())
+    ax.set_ylim(0, 100)
+    ax.set_ylabel(ft(_labc("y")))
+    ax.set_xlabel(ft(_lab("xlabel")))
+    ax.set_title(ft(_labc("titre")))
+    ax.grid(True, axis="y", alpha=0.25)
+    # Sous le cadre : à l'intérieur, la légende masque la bande de l'impôt sur le revenu,
+    # qui est précisément celle que le lecteur vient chercher.
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.12), ncol=3, fontsize=8.5,
+              frameon=False)
+    fig.tight_layout()
+    return fig
 
 
 def _lab(key: str) -> str:
