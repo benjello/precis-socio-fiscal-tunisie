@@ -125,3 +125,22 @@
     الخزينة الخاصة وصناديق المساهمة والباقي، كما يميّزها الجدول
   caveats: sources/minfinances-recettes-fiscales.md
   fiche: sources/minfinances-recettes-fiscales.md
+- id: depenses-fiscales-detail
+  titre: Dépenses fiscales, dispositif par dispositif, 2017-2023
+  sources:
+  - gbo-depenses-fiscales
+  build: tunisia_data.build.depenses_fiscales:main
+  raw:
+  - data/raw/gbo/depenses_fiscales_LF2021.pdf
+  - data/raw/gbo/depenses_fiscales_LF2024.pdf
+  - data/raw/gbo/depenses_fiscales_LF2025.pdf
+  output: data/processed/precis/depenses_fiscales_detail_2017_2023.csv
+  unite: millions de dinars (prix courants)
+  perimetre: dispositifs dérogatoires recensés par les rapports annexés aux lois de
+    finances ; tous ne sont pas chiffrés, cf. colonne valorise
+  titre_ar: النفقات الجبائية، إجراءً بإجراء، 2017-2023
+  unite_ar: بملايين الدنانير (أسعار جارية)
+  perimetre_ar: الإجراءات الاستثنائية التي أحصتها التقارير الملحقة بقوانين المالية؛
+    ليست كلّها مقدَّرة، انظر عمود valorise
+  caveats: sources/gbo-depenses-fiscales.md
+  fiche: sources/gbo-depenses-fiscales.md

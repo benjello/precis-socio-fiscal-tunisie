@@ -554,6 +554,33 @@ pist.tn de chacun des textes modificatifs. Manquent également le régime de la 
 libératoire (revenus de capitaux mobiliers notamment) : articles du code et série des taux.
 Cf. Q12 et Q6 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
+Le rapport annexé à chaque loi de finances chiffre ces régimes, dispositif par dispositif. En suivant ceux qui sont chiffrés sans interruption de 2017 à 2023, deux faits ressortent : le coût est **très concentré** — les dix premiers dispositifs font près de 80 % du total — et il est **massivement indirect**, la fiscalité du revenu n'y pesant presque rien.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import depenses_fiscales as df
+import figtools
+figtools.figure_tabs(
+    df.fig_top(), df.table(), "depenses-fiscales-detail",
+    slug="fig_depenses_fiscales",
+    caption="Les huit dispositifs dérogatoires les plus coûteux, suivis de 2017 à 2023",
+    note_lecture=(
+        "Sont retenus les dispositifs **chiffrés les sept années**, classés par coût moyen : "
+        "les plus gros et les plus longs. Les traits pointillés marquent un **changement de "
+        "rapport**, non une rupture économique — la série est cousue à partir de trois "
+        "annexes budgétaires qui se chevauchent, et l'on retient pour chaque exercice le "
+        "millésime le plus récent. Deux dispositifs tombent à zéro en cours de route : la "
+        "suspension de TVA sur les médicaments après 2019, et la déduction des bénéfices des "
+        "entreprises totalement exportatrices après 2021. L'intitulé complet de chaque "
+        "dispositif, qui atteint parfois six cents caractères, figure dans l'onglet "
+        "« Données »."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
 #### Les prélèvements adossés : la contribution sociale de solidarité
 
 La [contribution sociale de solidarité](#g-css) est un prélèvement distinct de l'IRPP mais assis sur la même assiette et liquidé avec lui : instituée par l'article 53 de la loi de finances pour 2018, elle est calculée comme la différence entre l'impôt résultant du barème majoré d'un point sur chaque taux de tranche et l'impôt résultant du barème non majoré.
