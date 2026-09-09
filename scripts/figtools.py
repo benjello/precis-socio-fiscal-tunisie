@@ -115,8 +115,27 @@ def _snapshot() -> dict:
     return {e["id"]: e for e in (yaml.safe_load(f.read_text(encoding="utf-8")) or [])}
 
 
+# Provenance déclarée par un module de figure, pour les séries qui ne viennent PAS de
+# l'entrepôt. Le précis a deux origines de données : `tunisia-data` pour les statistiques
+# publiées, et les paramètres d'`openfisca-tunisia` pour le droit codé. Les secondes n'ont
+# pas de place dans le catalogue de l'entrepôt — ce ne sont pas des observations — mais
+# elles doivent être sourcées comme les autres.
+_DECLAREES: dict[str, dict] = {}
+
+
+def register_provenance(series_id: str, **champs) -> None:
+    """Déclare la provenance d'une série locale (paramètres openfisca, notamment).
+
+    Mêmes champs que le catalogue de l'entrepôt : `titre`, `sources` (clés de citation),
+    `unite`, `perimetre`, `caveats`, et leurs variantes `_ar`.
+    """
+    _DECLAREES[series_id] = {"id": series_id, **champs}
+
+
 def meta(series_id: str) -> dict:
-    """Provenance d'une série : entrepôt si présent, sinon snapshot du précis."""
+    """Provenance d'une série : déclaration locale, sinon entrepôt, sinon snapshot."""
+    if series_id in _DECLAREES:
+        return _DECLAREES[series_id]
     td = _td()
     if td is not None:
         try:
@@ -130,7 +149,11 @@ def meta(series_id: str) -> dict:
 
 
 def series(series_id: str) -> pd.DataFrame:
-    """Données d'une série : entrepôt si présent, sinon CSV snapshoté du précis."""
+    """Données d'une série : entrepôt si présent, sinon CSV snapshoté du précis.
+
+    Les séries déclarées localement (`register_provenance`) portent leurs données dans le
+    module de figure : elles n'ont pas à passer par ici.
+    """
     td = _td()
     if td is not None:
         try:

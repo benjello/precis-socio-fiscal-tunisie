@@ -108,3 +108,20 @@
     المنشور بالدينار وبنقاط من الناتج
   caveats: sources/minfinances-recettes-fiscales.md
   fiche: sources/minfinances-recettes-fiscales.md
+- id: recettes-fiscales-composition
+  titre: Composition des recettes fiscales de l'État, 1986-2025
+  sources:
+  - minfin-recettes-fiscales
+  build: tunisia_data.build.irpp:main
+  raw:
+  - data/raw/minfinances/recettes_fiscales.xls
+  output: data/processed/precis/recettes_fiscales_composition_1986_2025.csv
+  unite: millions de dinars (prix courants) et part du total en %
+  perimetre: recettes fiscales de l'État ; « autres impôts indirects » regroupe fonds
+    spéciaux du trésor, fonds de concours et reliquat, tels que le classeur les distingue
+  titre_ar: تركيبة المداخيل الجبائية للدولة، 1986-2025
+  unite_ar: بملايين الدنانير (أسعار جارية) وحصة من المجموع بالنسبة المئوية
+  perimetre_ar: المداخيل الجبائية للدولة؛ يجمع باب «أداءات غير مباشرة أخرى» صناديق
+    الخزينة الخاصة وصناديق المساهمة والباقي، كما يميّزها الجدول
+  caveats: sources/minfinances-recettes-fiscales.md
+  fiche: sources/minfinances-recettes-fiscales.md

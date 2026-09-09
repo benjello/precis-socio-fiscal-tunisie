@@ -402,6 +402,32 @@ L'arrêté conjoint du 10 juillet 2024 est le premier texte publié à énoncer 
 
 L'arrêté de 2024 conserve enfin deux traces de l'architecture ancienne : le coût est imputé sur le budget de l'État, et les caisses adressent aux ministères des décomptes périodiques « chaque trois mois », rappel du versement trimestriel d'origine.
 
+Vue dans le temps, la série dit deux choses à la fois : une progression réelle de sept à cent quatre-vingts dinars en trente et un ans, et le fait que cette progression s'est faite **sans texte**.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import pnafn
+import figtools
+figtools.figure_tabs(
+    pnafn.fig_allocation(), pnafn.table(), "pnafn-allocation",
+    slug="fig_pnafn_allocation",
+    caption="Allocation mensuelle du programme national d'aide aux familles nécessiteuses, 1987-2018",
+    note_lecture=(
+        "**Les points gris ne sont pas des données publiées.** Dix des onze paliers ne "
+        "reposent sur aucun texte au *Journal officiel* : ce sont des décisions "
+        "administratives, reconstituées ici depuis les paramètres du modèle "
+        "`openfisca-tunisia`. Seul le point bleu est attesté — et par un arrêté de 2024 "
+        "qui **constate** un montant de 180 dinars sans le fixer. Le palier se prolonge "
+        "jusqu'en 2026 parce que la série s'arrête faute de montant publié, non parce que "
+        "l'allocation aurait cessé. Les valeurs de 2009 et 2010, décimales, trahissent une "
+        "conversion de montants trimestriels."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
 <!-- TODO (documentaliste) : les onze paliers de l'allocation entre 1987 et 2018 n'ont aucun
 fondement textuel publié. Pistes restantes, aucune explorée : les circulaires de la direction
 générale de la promotion sociale (hors JORT), les rapports annuels du ministère des Affaires

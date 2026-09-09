@@ -46,6 +46,33 @@ Ce document est une ébauche.
 
 Ce précis présente les impôts en Tunisie, principalement depuis l'indépendance (1956), après un rappel des antécédents beylicaux et coloniaux dont le système fiscal a hérité.
 
+Avant d'entrer dans chaque impôt, une vue d'ensemble situe ce que chacun pèse et comment ces poids se sont déplacés.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import irpp as fig_irpp
+import figtools
+figtools.figure_tabs(
+    fig_irpp.fig_composition(), fig_irpp.table_composition(), "recettes-fiscales-composition",
+    slug="fig_recettes_composition",
+    caption="Composition des recettes fiscales de l'État, 1986-2025",
+    note_lecture=(
+        "Chaque bande donne la part d'un impôt dans le total des recettes fiscales, et "
+        "l'ensemble fait 100 % chaque année. Les **droits de douanes**, en rouge, sont le "
+        "poste à lire en premier : ils fondent de près d'un quart du prélèvement au début "
+        "des années 1990 à environ un vingtième aujourd'hui. La bande grise « autres impôts "
+        "indirects » regroupe les fonds spéciaux du trésor, les fonds de concours et un "
+        "reliquat : c'est la distinction du classeur du ministère, conservée telle quelle "
+        "plutôt qu'une ventilation inventée."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
+Le mouvement d'ensemble tient en deux mouvements inverses. Les **droits de douanes** passent de 22,9 % des recettes fiscales en 1990 à 5,1 % en 2025 — l'effet du démantèlement tarifaire engagé avec l'accord d'association de 1995. L'**impôt sur le revenu** suit la trajectoire opposée, de 9,3 % à 28,9 %. La TVA, elle, reste remarquablement stable autour de 26 à 30 % sur toute la période : le prélèvement s'est déplacé de la frontière vers le revenu, non vers la consommation.
+
 ## L'impôt sur le revenu des personnes physiques (IRPP)
 
 L'[impôt sur le revenu des personnes physiques](#g-irpp) est régi par le code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés, promulgué par la loi n° 89-114 du 30 décembre 1989 [@loi-irpp-is-1989] et applicable aux revenus réalisés à compter du 1^er^ janvier 1990. Le barème progressif de cet impôt figure au paragraphe I de son article 44.
