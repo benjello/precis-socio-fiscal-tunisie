@@ -23,6 +23,7 @@ on:
           - pousser-un       # une seule référence, pour éprouver le mapping en vrai
           - comparer         # relit dans Zotero la référence poussée et la compare
           - pousser-tout     # le reste
+          - descendre        # relance sync_biblio.py et montre le diff, sans rien commiter
       reference:
         description: "Clé de citation à comparer (action « comparer »)"
         required: false
@@ -51,9 +52,32 @@ jobs:
                             --rapport cles-creees.json ;;
             comparer)     uv run python scripts/push_biblio.py \
                             --comparer "${{ inputs.reference }}" ;;
+            descendre)    uv run python scripts/sync_biblio.py --no-check ;;
             pousser-tout) uv run python scripts/push_biblio.py --pousser \
                             --rapport cles-creees.json ;;
           esac
+
+      # La descente réécrit les references.json : ce diff dit si la source canonique
+      # reproduit fidèlement ce qui a été poussé. Il n'est PAS commité ici — il mérite
+      # sa propre PR relue, une bibliographie étant du contenu et non un artefact.
+      - name: Diff de la descente
+        if: always() && inputs.action == 'descendre'
+        run: |
+          git --no-pager diff --stat -- 'precis/*/references.json' 'precis/*/*/references.json'
+          {
+            echo "## Diff de la synchronisation descendante"
+            echo
+            echo '```diff'
+            git diff -- 'precis/*/references.json' 'precis/*/*/references.json' | head -400
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Conserver les fichiers descendus
+        if: always() && inputs.action == 'descendre'
+        uses: actions/upload-artifact@v4
+        with:
+          name: references-descendues
+          path: precis/**/references.json
 
       # Les clés Zotero créées sont la seule voie de retour arrière : sans elles, défaire
       # un envoi suppose de retrouver les articles à la main dans la bibliothèque.
