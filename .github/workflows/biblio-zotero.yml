@@ -1,0 +1,58 @@
+name: Bibliographie — pousser vers Zotero
+
+# Zotero est la source canonique, et `sync_biblio.py` n'en descend que la lecture. Les
+# références établies au fil de la rédaction ont donc été écrites directement dans les
+# `references.json`, où elles sont hors de cette source : la prochaine synchronisation
+# descendante les écraserait. Ce workflow fait le chemin inverse.
+#
+# Rien ne part automatiquement : chaque étape est déclenchée à la main, dans l'ordre.
+# Écrire dans une bibliothèque partagée est irréversible sans ménage manuel.
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "Étape à exécuter"
+        required: true
+        type: choice
+        default: permissions
+        options:
+          - permissions      # que permet la clé ? à faire en premier
+          - verifier         # aller-retour de conversion, hors ligne, sans clé
+          - dry-run          # ce qui serait envoyé, sans rien envoyer
+          - pousser-un       # une seule référence, pour éprouver le mapping en vrai
+          - pousser-tout     # le reste
+
+permissions:
+  contents: read
+
+jobs:
+  biblio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+      - run: uv sync
+
+      - name: Exécuter
+        env:
+          ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
+        run: |
+          case "${{ inputs.action }}" in
+            permissions)  uv run python scripts/push_biblio.py --permissions ;;
+            verifier)     uv run python scripts/push_biblio.py --verifier ;;
+            dry-run)      uv run python scripts/push_biblio.py --dry-run ;;
+            pousser-un)   uv run python scripts/push_biblio.py --pousser --limite 1 \
+                            --rapport cles-creees.json ;;
+            pousser-tout) uv run python scripts/push_biblio.py --pousser \
+                            --rapport cles-creees.json ;;
+          esac
+
+      # Les clés Zotero créées sont la seule voie de retour arrière : sans elles, défaire
+      # un envoi suppose de retrouver les articles à la main dans la bibliothèque.
+      - name: Conserver les clés créées
+        if: always() && hashFiles('cles-creees.json') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: cles-zotero-creees
+          path: cles-creees.json
