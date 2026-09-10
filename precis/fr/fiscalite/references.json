@@ -799,6 +799,66 @@
       },
       "URL": "https://www.pist.tn/jort/2017/2017F/Jo0452017.pdf",
       "note": "citation-key: decret-2017-668-smig\nJORT n° 45 du 6 juin 2017, p. 2046. Exemple canonique du texte qui fixe le SMIG : un décret, révisé au fil des négociations salariales. Métadonnées vérifiées dans le corpus JORT local (jort_cache.db) ; contenu non lu."
+    },
+    {
+      "id": "minfin-recettes-fiscales",
+      "type": "dataset",
+      "title": "Série des recettes fiscales de l'État, 1986-2025",
+      "publisher": "Ministère des Finances, Tunisie",
+      "URL": "https://www.finances.gov.tn/fr/les-indicateurs/ressources",
+      "author": [
+        {
+          "literal": "Ministère des Finances, Tunisie"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "note": "citation-key: minfin-recettes-fiscales\nFichier « Série Recettes_fiscales_fr.xls », page « Les indicateurs → Ressources ». Recettes fiscales par rubrique, 1986-2025 en réalisations puis colonnes de prévision jusqu'à la loi de finances 2026. La ligne 1.1 « impôts sur le revenu » est ventilée entre impôts sur les salaires et autres. Consulté le 9 septembre 2026 ; classeur enregistré le 30 juin 2026."
+    },
+    {
+      "id": "minfin-indicateurs-fp",
+      "type": "dataset",
+      "note": "citation-key: minfin-indicateurs-fp",
+      "publisher": "Ministère des Finances, Tunisie",
+      "title": "Indicateurs des finances publiques",
+      "URL": "http://www.finances.gov.tn",
+      "author": [
+        {
+          "literal": "Ministère des Finances, Tunisie"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      }
+    },
+    {
+      "id": "gbo-depenses-fiscales",
+      "type": "report",
+      "title": "Rapport sur les dépenses fiscales et les avantages financiers, annexe au projet de loi de finances",
+      "publisher": "Ministère des Finances, Tunisie",
+      "URL": "http://www.gbo.tn/fr/Loi-de-Finance-et-rapports-annexes",
+      "author": [
+        {
+          "literal": "Ministère des Finances, Tunisie"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "note": "citation-key: gbo-depenses-fiscales\nTrois millésimes exploités : annexe n° 14 de la loi de finances 2021, en français, couvrant 2017-2019 ; annexe n° 12 de la loi de finances 2024, en arabe, couvrant 2020-2022 ; annexe n° 12 de la loi de finances 2025, en arabe, couvrant 2021-2023. Chaque rapport recense les dispositifs dérogatoires un par un — 347 en 2019, 349 en 2023 — avec un code à neuf chiffres, la forme de l'avantage, l'intitulé et le coût. Consulté le 9 septembre 2026."
     }
   ]
 }
