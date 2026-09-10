@@ -1,4 +1,4 @@
-"""Construction des tableaux de barèmes à partir des paramètres openfisca-tunisia.
+"""Construction des tableaux de barèmes à partir des paramètres openfisca.
 
 Pendant tunisien de `quarto/openfisca_tables/core.py` du dépôt `conversion_precis_ipp`,
 adapté à ce dont le précis a besoin : des **barèmes à tranches** (`brackets:`), là où le
@@ -10,6 +10,13 @@ proviennent de snapshots Markdown versionnés (`precis/fr/fiscalite/tables/`), r
 la demande par `scripts/generate_bareme_tables.py`. Quand une version suffisante
 d'openfisca-tunisia est installée, `get_table_or_static` bascule automatiquement sur la
 lecture directe des paramètres.
+
+DEUX PAQUETS, UN PROPRIÉTAIRE PAR SOUS-ARBRE. Les paramètres ne viennent pas tous du
+même dépôt : les retraites vivent chez `openfisca-tunisia-pension`, les cotisations,
+l'impôt et les prestations chez `openfisca-tunisia`. Un générateur qui lit les retraites
+appelle `utiliser_paquet("openfisca_tunisia_pension")` en tête ; les lecteurs acceptent
+aussi un argument `paquet` explicite. Chaque paquet a sa variable d'environnement et son
+garde-fou de version, car ils ne se suivent pas.
 
 Garde-fou de version. Les paramètres n'ont atteint leur état actuel qu'en 0.71 : le barème
 1990-2016 était amputé de sa tranche supérieure jusqu'en 0.68 (openfisca-tunisia#380), les
@@ -37,7 +44,43 @@ except ImportError:  # pragma: no cover
     pd = None
 
 
-VERSION_MINIMALE = (0, 76)
+# Les paramètres du précis proviennent de DEUX paquets, et un sous-arbre a un
+# propriétaire et un seul : les cotisations, l'impôt et les prestations chez
+# `openfisca_tunisia`, les retraites chez `openfisca_tunisia_pension`. Chacun a sa
+# variable d'environnement pour désigner une copie de travail, et son garde-fou de
+# version — ils ne se suivent pas.
+PAQUETS = {
+    "openfisca_tunisia": {
+        "variable": "OPENFISCA_TUNISIA_PATH",
+        "distribution": "openfisca-tunisia",
+        "version_minimale": (0, 76),
+    },
+    "openfisca_tunisia_pension": {
+        "variable": "OPENFISCA_TUNISIA_PENSION_PATH",
+        "distribution": "OpenFisca-Tunisia-Pension",
+        # 5.2 est la version où ce paquet cesse de porter une copie périmée du SMIG :
+        # avant elle, les pensions minimales sont fausses à partir de 2020.
+        "version_minimale": (5, 2),
+    },
+}
+
+PAQUET_DEFAUT = "openfisca_tunisia"
+_paquet_courant = PAQUET_DEFAUT
+
+VERSION_MINIMALE = PAQUETS[PAQUET_DEFAUT]["version_minimale"]
+
+
+def utiliser_paquet(nom: str) -> None:
+    """Désigne le paquet lu par défaut. Un générateur l'appelle une fois, en tête.
+
+    Les lecteurs acceptent aussi un argument `paquet` explicite ; ce réglage global
+    évite de le répéter à chaque appel dans un script qui ne lit qu'une source.
+    """
+    if nom not in PAQUETS:
+        msg = f"Paquet inconnu : {nom}. Connus : {', '.join(PAQUETS)}."
+        raise ValueError(msg)
+    global _paquet_courant
+    _paquet_courant = nom
 
 MESSAGE_INDISPONIBLE = (
     "*Tableau non disponible : ni openfisca-tunisia installé, ni snapshot statique.*"
@@ -47,36 +90,38 @@ MESSAGE_INDISPONIBLE = (
 # --------------------------------------------------------------------------- accès
 
 
-def _racine_paquet():
-    """Racine des sources openfisca-tunisia, ou None.
+def _racine_paquet(paquet: str | None = None):
+    """Racine des sources d'un paquet openfisca, ou None.
 
-    Cherche d'abord le paquet installé, puis un checkout désigné par la variable
-    d'environnement `OPENFISCA_TUNISIA_PATH` (utilisée pour régénérer les snapshots
-    depuis une copie de travail non publiée).
+    Cherche d'abord le paquet installé, puis un checkout désigné par sa variable
+    d'environnement (utilisée pour régénérer les snapshots depuis une copie de travail
+    non publiée).
     """
+    nom = paquet or _paquet_courant
     try:
         import importlib.resources
 
-        return importlib.resources.files("openfisca_tunisia")
+        return importlib.resources.files(nom)
     except Exception:
         pass
-    chemin = os.environ.get("OPENFISCA_TUNISIA_PATH")
+    chemin = os.environ.get(PAQUETS[nom]["variable"])
     if chemin:
-        racine = Path(chemin) / "openfisca_tunisia"
+        racine = Path(chemin) / nom
         if racine.is_dir():
             return racine
     return None
 
 
-def version_openfisca() -> tuple[int, ...] | None:
-    """Version d'openfisca-tunisia disponible, sous forme de tuple, ou None."""
+def version_openfisca(paquet: str | None = None) -> tuple[int, ...] | None:
+    """Version du paquet disponible, sous forme de tuple, ou None."""
+    nom = paquet or _paquet_courant
     try:
         from importlib.metadata import version
 
-        return tuple(int(x) for x in version("openfisca-tunisia").split(".")[:2])
+        return tuple(int(x) for x in version(PAQUETS[nom]["distribution"]).split(".")[:2])
     except Exception:
         pass
-    racine = _racine_paquet()
+    racine = _racine_paquet(nom)
     if racine is None:
         return None
     # Copie de travail : lire la version dans le pyproject.toml voisin.
@@ -91,22 +136,23 @@ def version_openfisca() -> tuple[int, ...] | None:
     return None
 
 
-def openfisca_utilisable() -> bool:
-    """Vrai si openfisca-tunisia est disponible ET assez récent pour être lu."""
-    if yaml is None or _racine_paquet() is None:
+def openfisca_utilisable(paquet: str | None = None) -> bool:
+    """Vrai si le paquet est disponible ET assez récent pour être lu."""
+    nom = paquet or _paquet_courant
+    if yaml is None or _racine_paquet(nom) is None:
         return False
-    version = version_openfisca()
-    return version is not None and version >= VERSION_MINIMALE
+    version = version_openfisca(nom)
+    return version is not None and version >= PAQUETS[nom]["version_minimale"]
 
 
-def charge_parametre(chemin_relatif: str) -> dict[str, Any] | None:
+def charge_parametre(chemin_relatif: str, paquet: str | None = None) -> dict[str, Any] | None:
     """Charge un YAML de paramètre, chemin relatif à la racine du paquet.
 
     Exemple : "parameters/impot_revenu/bareme.yaml".
     """
     if yaml is None:
         return None
-    racine = _racine_paquet()
+    racine = _racine_paquet(paquet)
     if racine is None:
         return None
     try:

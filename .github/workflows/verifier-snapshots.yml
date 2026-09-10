@@ -50,6 +50,16 @@ jobs:
           ref: master
           path: .openfisca-tunisia
 
+      # Les paramètres du précis viennent de DEUX paquets : les retraites vivent chez
+      # openfisca-tunisia-pension, les cotisations, l'impôt et les prestations chez
+      # openfisca-tunisia. Un sous-arbre a un propriétaire et un seul.
+      - name: Checkout d'openfisca-tunisia-pension
+        uses: actions/checkout@v5
+        with:
+          repository: openfisca/openfisca-tunisia-pension
+          ref: master
+          path: .openfisca-tunisia-pension
+
       - name: Install uv
         uses: astral-sh/setup-uv@v7
 
@@ -57,10 +67,12 @@ jobs:
         run: uv sync
 
       - name: Régénérer les snapshots
-        # openfisca-tunisia n'est pas une dépendance du précis : le module le trouve par
-        # OPENFISCA_TUNISIA_PATH, qui désigne ici le checkout ci-dessus.
+        # Aucun des deux paquets n'est une dépendance du précis : le module les trouve par
+        # OPENFISCA_TUNISIA_PATH et OPENFISCA_TUNISIA_PENSION_PATH, qui désignent ici les
+        # checkouts ci-dessus.
         env:
           OPENFISCA_TUNISIA_PATH: ${{ github.workspace }}/.openfisca-tunisia
+          OPENFISCA_TUNISIA_PENSION_PATH: ${{ github.workspace }}/.openfisca-tunisia-pension
           PYTHONPATH: scripts
         run: |
           uv run python scripts/generate_bareme_tables.py
