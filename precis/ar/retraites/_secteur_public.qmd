@@ -76,7 +76,7 @@ http://irmcmaghreb-bib.org/cgi-bin/koha/opac-detail.pl?biblionumber=9065&shelfbr
 - آخر تأجير خضع لاقتطاعات بعنوان التقاعد لمدة ثلاث سنوات على الأقل
 - أو التأجير المتعلق بأعلى خطة تمت ممارستها فعليا لمدة سنتين على الأقل خلال المسار المهني للعون.
 
-<!-- TODO quand il n'y a qu'une année ??? -->
+<!-- TODO quand il n'y a qu'اune année ??? -->
 
 #### الإحالة المبكرة على التقاعد
 
@@ -141,5 +141,3 @@ df = pd.DataFrame(
 
 show(df)
 ``` -->
-
-```
