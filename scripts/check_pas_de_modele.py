@@ -12,10 +12,26 @@ Le contrôle ne regarde donc que ce que le lecteur voit. Sont exclus :
 - les commentaires HTML `<!-- … -->` — c'est précisément la destination prévue ;
 - l'annexe `_glossaire.qmd`, engendrée par `build_glossary.py`.
 
-Le mot « modèle » a par ailleurs des emplois parfaitement légitimes en droit — « le modèle
-français de carrière », « le modèle de score de l'AMEN », « le modèle de la déclaration ».
-On ne signale donc `modèle` que lorsqu'il désigne l'outil : précédé d'un article défini et
-suivi ou précédé d'un mot du champ technique.
+Le mot « modèle » a par ailleurs des emplois parfaitement légitimes en droit. Vouloir les
+distinguer de l'outil par la grammaire produit surtout des faux positifs : la première
+version de ce contrôle signalait « le modèle français de carrière » et « le modèle de score
+de l'AMEN ». On s'en tient donc à des COLLOCATIONS sans ambiguïté, listées plus bas.
+
+L'ÉCART ENTRE CE CONTRÔLE ET UNE RECHERCHE NAÏVE a été inventorié le 10 septembre 2026, et
+il vaut d'être connu : chercher « modèle » ou « paramètre » dans le corpus rendu donne onze
+occurrences que ce contrôle laisse passer — et il a raison de les laisser passer, car toutes
+sont du droit :
+
+- « les paramètres d'assiette de l'IRPP », « le décret n° 95-114 en fixe les paramètres »,
+  « le paramètre décisif de l'aide médicale gratuite » — le mot au sens ordinaire ;
+- « le modèle de score » et « le modèle de *scoring* » de l'AMEN social, en arabe
+  « أنموذج التنقيط » — un objet juridique, institué par arrêté ;
+- « le modèle français de carrière », quatre fois, en arabe « النموذج الفرنسي » — du droit
+  comparé ;
+- « un paramètre multiplicateur », à propos du point d'indice.
+
+Inutile donc de reprendre cette recherche en croyant y trouver de la dette : elle a été
+faite, dans les deux langues, et elle ne donne rien.
 
     uv run python scripts/check_pas_de_modele.py [chemins...]
 
