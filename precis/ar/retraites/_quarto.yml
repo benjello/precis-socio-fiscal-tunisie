@@ -19,6 +19,9 @@ book:
     - _secteur_public.qmd
     - _secteur_prive.qmd
 
+  appendices:
+    - _glossaire.qmd
+
 language:
   toc-title-document: "المحتويات"
   toc-title-website: "المحتويات"
