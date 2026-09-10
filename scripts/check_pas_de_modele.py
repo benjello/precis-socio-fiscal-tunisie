@@ -118,7 +118,11 @@ def main(argv: list[str]) -> int:
     total = 0
     for chemin in fichiers:
         for numero, quoi, extrait in controle(chemin):
-            rel = chemin.relative_to(RACINE) if chemin.is_absolute() else chemin
+            try:
+                rel = chemin.relative_to(RACINE)
+            except ValueError:
+                # Un chemin hors du dépôt — on contrôle bien un fichier quelconque.
+                rel = chemin
             print(f"{rel}:{numero} : {quoi} dans le texte rendu — « {extrait} »")
             total += 1
 
