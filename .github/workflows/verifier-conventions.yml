@@ -1,0 +1,38 @@
+name: Conventions de rédaction
+
+# POURQUOI CE CONTRÔLE EXISTE
+#
+# Le précis documente la loi, jamais le modèle (`docs/conventions-redaction.md`, § 1).
+# La règle était suivie de fait dans quatre livres sur cinq — leurs mentions
+# d'`openfisca-tunisia` vivent toutes dans des blocs `python` ou des commentaires
+# `<!-- TODO -->` — mais le cinquième l'a enfreinte vingt-neuf fois sans que rien ne le
+# signale, parce qu'une convention non outillée ne tient que par l'attention de qui écrit.
+#
+# Le contrôle ne regarde que le texte RENDU : ni les blocs de code, ni les commentaires
+# HTML, qui sont la destination prévue pour ce qu'on ne publie pas.
+
+on:
+  pull_request:
+    paths:
+      - 'precis/**/*.qmd'
+      - 'scripts/check_pas_de_modele.py'
+  push:
+    branches:
+      - master
+    paths:
+      - 'precis/**/*.qmd'
+      - 'scripts/check_pas_de_modele.py'
+
+permissions:
+  contents: read
+
+jobs:
+  conventions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+      - run: uv sync
+
+      - name: Le précis ne parle pas du modèle
+        run: uv run python scripts/check_pas_de_modele.py
