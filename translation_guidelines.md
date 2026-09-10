@@ -68,6 +68,21 @@ Reproduire le numéro tel quel supprime ces deux risques. `scripts/check_transla
 accepte les deux écritures légitimes et ne signale que ce qui est réellement fautif — il a
 attrapé les 142 occurrences ci-dessus.
 
+### Identifiants de tableaux et de figures — ne se traduisent pas
+
+Un tableau ou une figure porte un identifiant entre accolades : `{#tbl-somme-trois-textes}`,
+`{#fig-rendement-irpp}`. **Cet identifiant est de la syntaxe, pas de la prose.** Il est la
+cible des renvois `@tbl-…` du texte, et les deux versions linguistiques doivent porter le
+même, sans quoi le renvoi arabe ne résout plus et Pandoc affiche `?@tbl-…` au lecteur.
+
+La légende qui le précède, elle, se traduit normalement :
+
+> `: Les trois textes dont la somme forme le taux {#tbl-somme-trois-textes}`
+> → `: النصوص الثلاثة التي يشكل مجموعها النسبة {#tbl-somme-trois-textes}`
+
+Une passe a rendu cet identifiant par `{#tbl-somme-ثلاثة-نصوص}` — la moitié traduite, la
+moitié non. Le contrôle de parité l'a vu, mais il vaut mieux ne pas le produire.
+
 ### Locateurs de citation
 
 Le contenu d'un locateur Pandoc — la partie qui suit la virgule dans `[@ref, art. 13]` —
