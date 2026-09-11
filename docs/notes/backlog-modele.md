@@ -29,6 +29,9 @@ fait et celui où quelqu'un le corrige, et qu'on ne le refasse pas deux fois.
 | Le rapport d'audit des sources rattache quatre textes à leur rectificatif ou à un homonyme | [pension#33](https://github.com/openfisca/openfisca-tunisia-pension/issues/33) | PR pension#25 |
 | Les indemnités spéciales de 1989-1991 sont comptées comme SMIG et SMAG (123,016 au lieu de 120,016 en 1990) ; SMIG 2026-2028 et SMAG depuis 2020 manquants ; dates de signature du SMAG | [#403](https://github.com/openfisca/openfisca-tunisia/issues/403) | note revalorisation § 11 |
 | La revalorisation des pensions est absente, paramètre comme formule, dans les trois régimes : montant forfaitaire indexé sur le SMIG (1981-2000), puis taux de variation du SMIG 48 h (2001) au RSNA ; SMAG au RSA ; péréquation au CNRPS | à ouvrir (complément de pension#25) | note revalorisation § 1 et § 5 |
+| Le taux global de 9 % du régime complémentaire (6 points employeur, 3 points salarié) n'est pas attesté par l'arrêté du 18 novembre 1978, qui fixe un taux d'appel initial de 4,5 % et confie ses révisions à l'organisme gestionnaire | à ouvrir (openfisca-tunisia) | note bibliographique `arrete-1978-11-18-retraite-complementaire` |
+| Le capital-décès est daté du 1er février 1993 (décret n° 93-308) ; selon la doctrine de la CNRPS, le décret n° 74-572 régit les affiliés décédés avant le 1er juillet 1993 : date de bascule à confronter | à ouvrir (openfisca-tunisia-pension) | note bibliographique `decret74-572` |
+| Le titre arabe de la référence à la loi n° 88-16 (retraite des gouverneurs) la date par erreur de 1983 | à ouvrir (openfisca-tunisia) | note bibliographique `loi88-16` |
 
 ## Réglé
 

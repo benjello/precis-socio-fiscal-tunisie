@@ -17,7 +17,7 @@
         ]
       },
       "URL": "https://www.pist.tn/jort/1978/1978F/Jo07978.pdf",
-      "note": "citation-key: arrete-1978-11-18-retraite-complementaire\nJORT n° 79 du vendredi 24 novembre 1978, pp. 3374-3379. Agrée le régime complémentaire de pension. Art. 2 : le règlement entre en application à compter du 1er janvier 1974. Règlement, art. 6 : « l'assiette de cotisation est la fraction de salaire excédant la limite fixée par le régime légal pour le calcul des prestations » — assiette différentielle, non sommable avec celle du régime général. L'arrêté fixe un taux d'appel initial de 4,5 % et confie ses révisions à l'organisme gestionnaire : le taux global de 9 % (6 points employeur / 3 points salarié) que porte le modèle n'est pas attesté par ce texte. Lu à l'image (pp. 3374-3375)."
+      "note": "citation-key: arrete-1978-11-18-retraite-complementaire\nJORT n° 79 du vendredi 24 novembre 1978, pp. 3374-3379. Agrée le régime complémentaire de pension. Art. 2 : le règlement entre en application à compter du 1er janvier 1974. Règlement, art. 6 : « l'assiette de cotisation est la fraction de salaire excédant la limite fixée par le régime légal pour le calcul des prestations » — assiette différentielle, non sommable avec celle du régime général. L'arrêté fixe un taux d'appel initial de 4,5 % et confie ses révisions à l'organisme gestionnaire. Lu à l'image (pp. 3374-3375)."
     },
     {
       "id": "arrete-1998-07-29-revalorisation-rtns",
@@ -77,7 +77,7 @@
       },
       "publisher": "Caisse nationale de retraite et de prévoyance sociale",
       "number-of-pages": "149",
-      "note": "citation-key: cnrps-manuel-liquidation-2013\nDocument administratif interne, non normatif ; antérieur à la réforme de 2019. Exemplaire local : openfisca-tunisia-pension/tmp/manuel pensions.pdf. Sections utilisées : cadre légal (pp. 5-13), taux de la pension (p. 69), coordination (pp. 78-82), rémunération de liquidation (pp. 83-86), rente d'invalidité (pp. 87-89), accessoires (pp. 90-95), capital-décès (pp. 96-111), révision et péréquation (pp. 139-140), ex-CREGT (pp. 142-145)."
+      "note": "citation-key: cnrps-manuel-liquidation-2013\nDocument administratif interne, non normatif ; antérieur à la réforme de 2019. Sections utilisées : cadre légal (pp. 5-13), taux de la pension (p. 69), coordination (pp. 78-82), rémunération de liquidation (pp. 83-86), rente d'invalidité (pp. 87-89), accessoires (pp. 90-95), capital-décès (pp. 96-111), révision et péréquation (pp. 139-140), ex-CREGT (pp. 142-145)."
     },
     {
       "id": "decret2001-779",
@@ -248,7 +248,7 @@
       "issue": "36",
       "page": "1108-1109",
       "URL": "https://www.pist.tn/jort/1974/1974F/Jo03674.pdf",
-      "note": "citation-key: decret74-572\nMétadonnées seules. Régime applicable aux affiliés décédés avant le 1er juillet 1993 selon la doctrine de la CNRPS ; à confronter à la date 1993-02-01 portée par les paramètres du modèle."
+      "note": "citation-key: decret74-572\nMétadonnées seules. Régime applicable aux affiliés décédés avant le 1er juillet 1993 selon la doctrine de la CNRPS."
     },
     {
       "id": "decret75-952",
@@ -1388,7 +1388,7 @@
         ]
       },
       "URL": "https://www.pist.tn/jort/1988/1988F/Jo02088.pdf",
-      "note": "citation-key: loi88-16\nJORT n° 20 du 22 mars 1988, p. 427. Art. 5 : retenue de 10 % sur les éléments permanents de la rémunération des gouverneurs, contribution de l'État de 15 %, au profit de la CNRPS. Texte lu (OCR relu). Attention : le modèle openfisca-tunisia la date par erreur de 1983 dans son titre arabe."
+      "note": "citation-key: loi88-16\nJORT n° 20 du 22 mars 1988, p. 427. Art. 5 : retenue de 10 % sur les éléments permanents de la rémunération des gouverneurs, contribution de l'État de 15 %, au profit de la CNRPS. Texte lu (OCR relu)."
     },
     {
       "id": "loi88-39",
@@ -3061,7 +3061,7 @@
         ]
       },
       "URL": "https://www.pist.tn/jort/2011/2011F/Jo0412011.pdf",
-      "note": "citation-key: decretloi2011-48\nJORT n° 41 du 7 juin 2011, p. 844. Porte le palier employeur de juillet 2011 dans le modèle openfisca-tunisia. Métadonnées jort_cache.db (recid 80629). Texte lu (couche texte). Article premier : contributions à la charge de l'employeur relevées d'un point à partir du 1er juillet 2011 ; modifie l'art. 13 de la loi n° 85-12, ainsi que les régimes des membres du gouvernement et des gouverneurs (pas celui des députés). Date d'effet : 1er juillet 2011."
+      "note": "citation-key: decretloi2011-48\nJORT n° 41 du 7 juin 2011, p. 844. Métadonnées jort_cache.db (recid 80629). Texte lu (couche texte). Article premier : contributions à la charge de l'employeur relevées d'un point à partir du 1er juillet 2011 ; modifie l'art. 13 de la loi n° 85-12, ainsi que les régimes des membres du gouvernement et des gouverneurs (pas celui des députés). Date d'effet : 1er juillet 2011."
     },
     {
       "id": "arrete-1994-11-17-bareme-actualisation",
@@ -3117,6 +3117,44 @@
         ]
       },
       "note": "citation-key: decret2026-66\nJORT n° 44 du 30 avril 2026, p. 837. Sans URL : texte postérieur à l'état de jort_cache.db (arrêtée au 10 avril 2026) ; intitulé et page relevés sur le fascicule français du corpus local (PDFs/JORT/2026/fr/Jo0442026.pdf). Visas : loi n° 66-27 (code du travail), notamment son article 3 ; loi n° 2025-17, notamment son article 15. Art. 1er : SMAG des travailleurs de 18 ans au moins, 21,336 D par journée de travail effectif à compter du 1er janvier 2026, 22,400 D au 1er janvier 2027, 23,520 D au 1er janvier 2028. Art. 2 : prime de technicité par journée, spécialisés 1,138 / 1,195 / 1,255 D, qualifiés 2,140 / 2,247 / 2,359 D aux mêmes dates. Art. 5 : « L'augmentation du salaire minimum agricole garanti s'applique aux pensions de retraite ainsi qu'au montant des pensions de retraite servies par la Caisse nationale de sécurité sociale. » Texte lu (couche texte)."
+    },
+    {
+      "id": "decret-1956-09-13-publication",
+      "type": "legislation",
+      "title": "Décret du 13 septembre 1956 (7 safar 1376), modifiant le décret du 27 janvier 1883 (18 rabia I 1300), relatif à la publication des décrets et arrêtés",
+      "container-title": "Journal officiel tunisien",
+      "issue": "74",
+      "page": "1247",
+      "issued": {
+        "date-parts": [
+          [
+            1956,
+            9,
+            13
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1956/1956F/Jo07456.pdf",
+      "note": "citation-key: decret-1956-09-13-publication\nJORT n° 74 du 14 septembre 1956, p. 1247. Métadonnées jort_cache.db (recid 108190). Texte lu (OCR du fascicule local, p. 1247). Article unique : l'art. 3 du décret du 27 janvier 1883 est remplacé. Art. 3 (nouveau), al. 1 : « Les décrets et arrêtés seront obligatoires à Tunis un jour franc après la publication au Journal Officiel Tunisien et, sur le reste du territoire, un jour franc après que ce journal sera parvenu au chef-lieu de la circonscription du Gouvernorat. » Al. 2 : « L'exécution immédiate d'un décret ou d'un arrêté pourra être ordonnée par disposition expresse. » Abrogé par la loi n° 93-64 du 5 juillet 1993 (art. 3). Intitulé retenu : celui du fascicule (décret beylical, rubrique « Présidence du Conseil », sans autorité dans l'intitulé) ; la notice porte « Decret du Chef du gouvernement du 13 Septembre 1956 »."
+    },
+    {
+      "id": "loi93-64",
+      "type": "legislation",
+      "title": "Loi n° 93-64 du 5 juillet 1993, relative à la publication des textes au Journal officiel de la République tunisienne et à leur exécution",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "50",
+      "page": "931",
+      "issued": {
+        "date-parts": [
+          [
+            1993,
+            7,
+            5
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1993/1993F/Jo05093.pdf",
+      "note": "citation-key: loi93-64\nJORT n° 50 du 6 juillet 1993, p. 931. Métadonnées jort_cache.db (recid 112971). Texte lu (OCR du fascicule local, p. 931). Art. 1er : lois, décrets-lois, décrets et arrêtés publiés au JORT en langue arabe, et dans une autre langue à titre d'information seulement. Art. 2 : « Les textes législatifs et réglementaires sont exécutoires cinq jours après le dépôt du journal officiel dans lequel ils sont insérés, au siège du gouvernorat de Tunis. Le jour du dépôt n'est pas pris en considération dans le décompte du délai. » Al. 3 : les textes peuvent prévoir une exécution immédiate ou un délai plus long. Art. 3 : abroge le décret du 27 janvier 1883 et les textes l'ayant complété ou modifié, notamment les décrets du 8 septembre 1955 et du 13 septembre 1956."
     }
   ]
 }

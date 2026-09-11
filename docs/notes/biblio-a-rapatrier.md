@@ -1510,3 +1510,83 @@ citation non résolue ; aucun `figdata` modifié par le rendu.
 - déranger : `decretloi2011-48`, s'il est rangé dans la collection « Cotisations sociales » (sinon il
   redescendra dans le fichier de livre, en doublon du partagé) ;
 - corriger (notes, passe précédente) : `decret90-1455`, `decret94-1429`.
+
+### Passe « Retraites — entrée en vigueur des textes » (11 septembre 2026)
+
+**Aucune écriture Zotero.** Partagé : 165 → 167 entrées par langue. Fichiers modifiés par cette
+passe, et eux seuls : `precis/fr/references.json`, `precis/ar/references.json` et la présente note.
+Les modifications de `precis/glossaire.yml`, `precis/{fr,ar}/retraites/_glossaire.qmd` et
+`precis/fr/retraites/_secteur_prive.qmd` présentes dans l'arbre sont antérieures ou concurrentes,
+et ne viennent pas de cette passe.
+
+#### a) 2 clés créées (partagé FR + AR), règles générales de computation des dates d'effet
+
+Contrôle d'unicité préalable (partagé, fichiers de livre, deux `.bib`) : aucun des deux textes
+n'avait de clé. URL : FR = `pdf_fr`, AR = `pdf_ar`, lues sur le **même** enregistrement ; notice
+assertée (date de signature, n° de fascicule, pages) avant écriture.
+
+- [x] `decret-1956-09-13-publication` — recid **108190**. Décret du 13 septembre 1956 (7 safar 1376)
+  modifiant le décret du 27 janvier 1883 relatif à la publication des décrets et arrêtés ; JORT
+  n° 74 du 14 septembre 1956, p. 1247 ; FR `1956F/Jo07456.pdf`, AR `1956A/Ja07456.pdf`. Article
+  unique (art. 3 nouveau, un jour franc) **lu** par OCR `tesseract -l fra` du fascicule local
+  (couche texte absente), al. 1 et al. 2 (exécution immédiate par disposition expresse) cités
+  séparément. **Écart de notice** : la notice titre « Decret du Chef du gouvernement du
+  13 Septembre 1956 » ; l'intitulé du fascicule (décret beylical, rubrique « Présidence du
+  Conseil ») ne nomme aucune autorité. Intitulé du fascicule retenu, écart porté en note.
+  `container-title` : « Journal officiel tunisien » (titre du fascicule en 1956) ; première entrée
+  `legislation` antérieure à 1957 à en porter un, convention à confirmer.
+- [x] `loi93-64` — recid **112971**. Loi n° 93-64 du 5 juillet 1993 ; JORT n° 50 du 6 juillet 1993,
+  p. 931 (notice « 0931 ») ; FR `1993F/Jo05093.pdf`, AR `1993A/Ja05093.pdf`. Art. 1er, art. 2
+  (cinq jours après le dépôt au siège du gouvernorat de Tunis, jour du dépôt exclu) et art. 3
+  (abroge le décret du 27 janvier 1883 et ses modificatifs, dont ceux du 8 septembre 1955 et du
+  13 septembre 1956) **lus** par OCR du fascicule local, p. 931.
+
+Aucun `.qmd` ne cite encore ces deux clés : résolution contrôlée hors livre (`quarto pandoc
+--citeproc` sur les deux fichiers, FR et AR).
+
+Les deux paires d'URL suivent exactement le motif `F/Jo` ↔ `A/Ja` : la descente `sync_biblio.py`
+les régénère à l'identique, aucune exception `sans_homologue` n'est nécessaire.
+
+#### b) Notes nettoyées de toute mention du modèle (FR et AR, champ `note` seul)
+
+Le précis ne parle pas du modèle. Faits de droit conservés ; remarques retirées, **à reporter dans
+`docs/notes/backlog-modele.md`** si elles doivent survivre (non fait dans cette passe) :
+- [x] `decretloi2011-48` : retiré « Porte le palier employeur de juillet 2011 dans le modèle
+  openfisca-tunisia. » (art. 13 de la loi n° 85-12, effet 1er juillet 2011, régimes concernés
+  conservés) ;
+- [x] `arrete-1978-11-18-retraite-complementaire` : retiré « le taux global de 9 % (6 points
+  employeur / 3 points salarié) que porte le modèle n'est pas attesté par ce texte » ;
+- [x] `decret74-572` : retiré « à confronter à la date 1993-02-01 portée par les paramètres du
+  modèle » ;
+- [x] `loi88-16` : retiré « Attention : le modèle openfisca-tunisia la date par erreur de 1983 dans
+  son titre arabe. » ;
+- [x] `cnrps-manuel-liquidation-2013` : retiré « Exemplaire local : openfisca-tunisia-pension/tmp/
+  manuel pensions.pdf. » (chemin de dépôt ; l'exemplaire reste à cet emplacement, cf. e) de la
+  passe « Livre Retraites »).
+
+Plus aucune occurrence de « openfisca » ni de « modèle » dans les deux `references.json` partagés.
+
+#### c) TODO
+
+- **TODO arabe** : les 2 entrées AR portent un `title` français ; intitulés arabes à relever sur
+  `Ja07456.pdf` et `Ja05093.pdf`, non traduits.
+- **Hors périmètre (partagé seulement), à décider** : notes de livre qui nomment encore le modèle,
+  FR et AR — `cotisations_sociales` : `decret2003-1544` (« la date du 2 juillet 2003 retenue par le
+  modèle openfisca-tunisia est celle de la signature… ») et `decret97-1645` (« Le modèle
+  openfisca-tunisia ne porte aucun paramètre pour cette variante. »). Le « modèle de scoring » du
+  titre de `arrete-2020-05-19-scoring` (`prestations_sociales`) est le mot du texte : rien à faire.
+- Ne pas calculer dans les notes la date d'effet propre de la loi n° 93-64 : articles consignés tels
+  que lus, computation laissée au rédacteur.
+
+#### d) Contrôles
+
+JSON valides ; aucun identifiant en double introduit (doublons connus `loi96-101` et `lf-2018`
+inchangés) ; rendu HTML de `precis/fr/retraites` sans citation non résolue ; aucun `figdata`
+modifié par le rendu.
+
+#### À pousser dans Zotero — NE PAS pousser sans feu vert
+
+- créer (hors collection, cf. conflit de rangement h) : `decret-1956-09-13-publication`,
+  `loi93-64` (Extra : `citation-key: <clé>` **et** `issue: <n°>`) ;
+- corriger la note : `decretloi2011-48`, `arrete-1978-11-18-retraite-complementaire`,
+  `decret74-572`, `loi88-16`, `cnrps-manuel-liquidation-2013`.
