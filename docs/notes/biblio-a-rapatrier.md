@@ -1253,3 +1253,182 @@ tels quels : URL arabe dans le fichier FR (édition française absente de pist.t
   `decret96-326`, `decret97-1927`, `loi2001-123-lf2002`, `decretloi2011-48`, `lf-2023` ;
 - déranger (sortir de « Fiscalité ») : `lf-2022`, `lf-2023`, si la première sortie du h) est
   retenue.
+
+### Passe « séries de revalorisation des pensions » — 11 septembre 2026
+
+Source : `docs/notes/retraites-revalorisation.md` (§ 9, § 10, tableaux § 12.1 et § 12.2).
+**Aucune écriture Zotero.** Script unique écrivant FR et AR ; URL : FR = `pdf_fr`, AR = `pdf_ar`,
+lus sur le **même** enregistrement de `jort_cache.db` (recid contrôlé : n° de fascicule et date de
+signature assertés contre la notice). Partagé : 90 → 161 entrées par langue.
+
+#### a) Clés : le § 9.2 de la note n'emploie PAS les clés retenues
+
+Les clés vont dans le partagé, donc au format `decretNN-NNN` / `decretAAAA-NNN`. Les clés
+`decret-2015-462`, `decret-2016-1`, `decret-2019-209`, `decret-2019-1133`, `decret-2020-767`,
+`decret-2026-63` proposées au § 9.2 **n'existent pas** : citer `decret2015-462`, `decret2016-1`,
+`decret2019-209`, `decret2019-1133`, `decret2020-767`, `decret2026-63`. Clés existantes
+conservées telles quelles : `decret-2017-668-smig`, `decret-2022-797`, `lf-2026`,
+`loi2001-123-lf2002`.
+
+#### b) 68 clés créées (partagé FR + AR)
+
+- **SMIG et indemnités assimilées (§ 12.1)**, recid entre parenthèses : `decret80-75` (98968),
+  `decret80-609` (98803), `decret81-437` (98252), `decret82-501` (97577), `decret83-509` (96960),
+  `decret86-689` (95334), `decret87-1277` (94685), `decret88-889` (94420), `decret89-1551`
+  (93676), `decret90-246` (93499), `decret91-1316` (92750), `decret92-1299` (92354),
+  `decret92-1630` (92265), `decret93-1256` (91936), `decret93-1838` (91810), `decret94-1804`
+  (91240), `decret95-900` (90925), `decret96-1013` (90470), `decret96-1547` (90337),
+  `decret97-1521` (89854), `decret97-2148` (89746), `decret98-1674` (89295), `decret99-994`
+  (88956), `decret99-1866` (88726), `decret2000-949` (88208), `decret2001-1746` (87333),
+  `decret2002-1790` (86750), `decret2003-1691` (86068), `decret2004-1803` (85440),
+  `decret2005-2320` (84800), `decret2006-2098` (84093), `decret2007-2079` (83303),
+  `decret2008-2072` (82740), `decret2009-2257` (81794), `decret2010-1746` (81088),
+  `decret2011-679` (80623), `decret2012-1981` (79866), `decret2014-2907` (78875),
+  `decret2015-1762` (78338), `decret2018-672` (76805), `decret2019-454` (118538),
+  `decret2020-1069` (148614), `decret2022-769` (—), `decret2024-419` (186713), `decret2026-67` (—).
+- **Secteur public (§ 12.2, § 5.1)** : `decret82-972` (97404), `decret88-1888` (94141),
+  `decret96-1907` (90242), `decret2015-462` (78509), `decret2016-1` (78276), `decret2019-209`
+  (76498), `decret2019-1133` (129070), `decret2020-767` (148111), `decret2026-63` (—).
+- **Treize décrets de tranches de l'IGE 1999-2012** (la note donne leur notice, § 6.2 ; créés au
+  niveau [M], titre de la notice accents restitués, « montants et date d'effet non lus » en note) :
+  `decret99-2015` (88704), `decret2000-1199` (88093), `decret2001-1557` (87377),
+  `decret2002-2672` (86641), `decret2003-1568` (86136), `decret2004-1538` (85490),
+  `decret2005-3137` (84663), `decret2006-2182` (84048), `decret2007-1671` (83390),
+  `decret2008-4047` (82262, [T]), `decret2009-2145` (81826), `decret2010-1973` (81029),
+  `decret2012-2959` (79693).
+- **§ 10.2** : `arrete-1997-03-29-bareme-actualisation` (60518) — [T°].
+
+Niveau de lecture de chaque entrée porté dans son `note` (lu à l'image / couche texte / OCR /
+métadonnées seules) ; les montants [V] de la note (repris d'un inventaire, non lus) n'ont **pas**
+été reportés dans les notes.
+
+#### c) 3 clés promues d'un livre vers le partagé (retirées du fichier de livre, FR et AR)
+
+- `decret-2022-797` (depuis `remunerations_publiques`) — **complétée** : titre FR tronqué complété
+  sur le fascicule local (« … au titre des années 2023-2024-2025 ») ; ajout `container-title`,
+  `issue: 120`, `page: 2959-2966` et note de contenu. Titre arabe de l'entrée AR conservé.
+- `lf-2026` (depuis `fiscalite`) — note complétée de l'art. 15 (édition arabe, p. 4233).
+- `loi2001-123-lf2002` (depuis `cotisations_sociales`) — à l'identique.
+
+#### d) Entrées existantes du partagé modifiées — À REPORTER DANS ZOTERO
+
+- `decret79-510`, `decret81-939`, `decret82-971`, `decret83-737` : « Métadonnées seules ; texte non
+  lu » remplacé par le contenu lu à l'image (§ 1.2, § 5.1), date d'effet comprise.
+- `decret94-1429` : note complétée des art. 18 et 19 (nouveaux) (§ 10.1).
+- `decret-2017-668-smig` : note complétée (effet 1er août 2016, montants, lecture sur l'édition
+  arabe) ; **URL de l'entrée AR corrigée** : elle portait l'URL française `2017F/Jo0452017.pdf`,
+  elle porte désormais `pdf_ar` = `2017A/Ja0452017.pdf` (recid 77455).
+
+#### e) URL pist.tn qui servent l'édition arabe (§ Conventions de la note)
+
+- `2017F/Jo0452017.pdf` : URL de l'entrée **FR** `decret-2017-668-smig` (c'est le `pdf_fr` de la
+  notice). Laissée en place, faute d'autre URL française ; la note le dit. Aucune édition française
+  vue.
+- `2019F/Jo0202019.pdf` : **aucune entrée ne la porte**. `decret2019-209` : `pdf_fr` vide dans la
+  notice → URL arabe `2019A/Ja0202019.pdf` dans les deux langues (précédent des « cinq éditions
+  françaises absentes »), sans `page` (pagination française non établie ; p. 727 de l'édition arabe).
+- `2025F/Jo1482025.pdf` : **aucune entrée ne la porte**. L'entrée FR `lf-2026` pointe déjà, à
+  dessein, sur `2025A/Ja1482025.pdf` : ne pas la « corriger ».
+
+#### f) Écarts de notice (§ 10.7) et de pagination — signalés, non tranchés
+
+- `decret86-689` : notice signée le 20 juillet 1986, « publiée » le 18 juillet. Entrée créée avec la
+  date de signature de la notice ; incohérence en note. Fascicule (image non océrisée) à ouvrir.
+- `decret88-889` : notice signée le 5 juin 1988 (titre compris), publiée le 6 mai 1988 ; le visa du
+  décret n° 90-246, lu à l'image, porte **5 mai 1988**. Entrée créée au **5 juin** (notice), doute en
+  note. **TODO** : lire l'intitulé au fascicule `1988F/Jo03188.pdf`, p. 715, puis corriger `issued`
+  et `title` si le 5 mai se confirme.
+- `decret2020-767` : notice pp. 1072-1078 ; entrée à **2072-2079** (pagination française lue).
+- **Pagination de notice = pagination arabe** (défaut documenté, `outillage-sources.md` § 4 ;
+  vérifié ici encore) : `decret2019-454`, notice
+  pp. 1681-1682 (numéro vide, intitulé arabe) ; le sommaire du fascicule français local
+  (`PDFs/JORT/2019/fr/Jo0432019.pdf`) donne **p. 1585**, retenue. La note de revalorisation (§ 2.2)
+  donne à tort 1681-1682 comme pages françaises. Les pages [M] de cette passe (86-689, 88-889,
+  99-994, 99-1866, 2002-1790 à 2005-2320, les douze tranches non lues) sont donc **provisoires** ;
+  chaque note le dit.
+- `decret2018-672` : notice sans pages, intitulé arabe ; p. 2684 et intitulé (« code **de**
+  travail ») relevés sur le sommaire et le texte du fascicule français local.
+- `decret2019-1133` : l'intitulé du § 9.2 omet « et la fixation de ses montants » ; intitulé complet
+  relevé sur le fascicule.
+- `decret2015-462` : intitulé FR « au titre de l'année 2014 » (fascicule), notice arabe « 2015 ».
+- `decret92-1299` : deux notices (n° 49, pp. 935-936, retenue ; n° 55, p. 1067, « rectificatif »,
+  recid 92316, non lu, porté en note).
+- `decret2000-949` (`Ja03800.pdf`) et `decret2000-1199` (`Ja04700.pdf`) : `pdf_ar` hors convention
+  de nommage. Écrits tels quels ; tous deux répondent `200 application/pdf` (10,3 Mo et 0,65 Mo),
+  contenu non ouvert.
+- Doublons **de texte** antérieurs, non introduits ici, relevés en contrôle : `loi2017-66-lf2018` et
+  `lf-2018` (même loi, `remunerations_publiques`) ; `lf-1991` (`fiscalite`) et
+  `loi-90-111-lf-1991` (`prestations_sociales`).
+
+#### g) Sans URL — TODO
+
+Texte sans enregistrement dans `jort_cache.db` → pas d'URL. Fascicule vérifié en local, URL
+candidate (curl 200 selon la note, 11 septembre 2026) à valider par un humain ou par une mise à jour
+de la base :
+- `decret2026-63` et `decret2026-67` : base arrêtée au 10 avril 2026 ; fascicule
+  `PDFs/JORT/2026/fr/Jo0442026.pdf` (candidate `2026/2026F/Jo0442026.pdf`, AR `Ja0442026.pdf`
+  présent en local).
+- `decret2022-769` : aucune notice (seul le décret SMAG n° 2022-768 du même fascicule en a une) ;
+  fascicule `PDFs/JORT/2022/fr/Jo1142022.pdf` (candidate `2022/2022F/Jo1142022.pdf`).
+- `decret2019-454` : **a** une URL (arabe, `pdf_ar`), `pdf_fr` vide ; une édition française existe
+  en local (`Jo0432019.pdf`) : URL française candidate à vérifier (ouvrir le fichier servi, cf.
+  `outillage-sources.md` § 3).
+
+#### h) Restent sans clé
+
+- Cités par la note hors du périmètre de la passe (§ 12 et § 10) : décrets n° 2026-64, 2026-65
+  (magistrats), 2026-66 (SMAG), arrêté du 10 juillet 2020 (prime exceptionnelle aux pensions),
+  *Lettre CRES* n° 3 (2014). JSON prêt au § 9.2 ; à créer si le livre les cite (2026-* : sans URL,
+  même motif qu'au g).
+- Série SMAG (§ 3.2), décrets IGE non lus de 1990-1998 (90-1001, 91-803, 93-2062, 97-1174,
+  98-1292), décrets n° 81-444, 82-504, 82-505, 84-424, 85-980 (déjà clé `decret85-980`) : pas de clé
+  nouvelle.
+- Les autres arrêtés annuels de barème d'actualisation (1994-2024) : seul celui du 29 mars 1997 a
+  une clé.
+
+#### i) TODO arabe
+
+Les 68 entrées AR créées portent un `title` français (même réserve qu'au g) de la passe du
+11 septembre). Plusieurs notices portent un intitulé arabe (2015-462, 2016-1, 2018-672, 2019-209,
+2019-454) : à reprendre du fascicule `pdf_ar`, non de la notice (troncatures connues).
+
+#### j) Ce que la descente `sync_biblio.py` fera de ces URL — à trancher avant la montée
+
+La descente **dérive** l'URL d'une langue depuis l'autre (`url_jort` : `F/Jo` ↔ `A/Ja`), sauf pour
+les URL listées dans `precis/urls-jort.json` (`sans_homologue`). Contrôle `curl -k` du
+11 septembre 2026 :
+- `decret-2017-668-smig` : `2017F/Jo0452017.pdf` figure dans `sans_homologue` ; la descente
+  remettra l'entrée AR sur l'URL « F ». Sans conséquence pour le lecteur : `Jo0452017.pdf` et
+  `Ja0452017.pdf` sont **identiques à l'octet** (md5 `523cfa73…`).
+- `decret2000-949` et `decret2000-1199` : l'URL AR dérivée (`2000A/Ja0382000.pdf`,
+  `2000A/Ja0472000.pdf`) répond **404** ; les URL AR de la notice (`Ja03800.pdf`, `Ja04700.pdf`)
+  répondent 200. La descente produirait deux liens AR morts : ajouter ces deux URL à un mécanisme
+  d'exception, ou corriger le motif de dérivation.
+- `decret2019-454` : l'entrée FR porte l'URL arabe (`pdf_fr` vide). La descente la dériverait vers
+  `2019F/Jo0432019.pdf`, qui répond 200 et sert bien l'**édition française** (« Traduction
+  française pour information », md5 identique au fichier du corpus local). URL française
+  candidate **vérifiée** : peut remplacer l'URL arabe de l'entrée FR sur décision.
+- `decret2019-209` : la descente dériverait l'entrée FR vers `2019F/Jo0202019.pdf`, qui sert
+  l'**édition arabe** (note, § Conventions) : l'ajouter à `sans_homologue`, ou accepter le lien.
+- `lf-2026` : `2025A/Ja1482025.pdf` déjà dans `sans_homologue`, rien à faire.
+
+`urls-jort.json` n'a pas été modifié (fichier régénéré par `scripts/verifier_urls_jort.py`).
+
+#### k) Zotero
+
+Même conflit de rangement qu'au h) de la passe « Retraites » : les 68 clés à monter **hors
+collection** ; `decret-2022-797` (collection « Rémunérations publiques »), `lf-2026`
+(« Fiscalité ») et `loi2001-123-lf2002` (« Cotisations sociales ») redescendront dans leurs
+fichiers de livre, en doublon du partagé, tant que le point h) n'est pas tranché.
+
+#### À pousser dans Zotero — NE PAS pousser sans feu vert
+
+- créer (hors collection) : les 68 clés du b) (Extra : `citation-key: <clé>` **et** `issue: <n°>` —
+  le type `legislation` de Zotero n'a pas de champ pour le n° du JORT ; sans cette ligne, la
+  descente effacerait `issue` des 68 entrées) ;
+- corriger : `decret-2022-797` (titre, issue, page, note), `lf-2026` (note), `decret79-510`,
+  `decret81-939`, `decret82-971`, `decret83-737`, `decret94-1429`, `decret-2017-668-smig` (notes ;
+  pour ce dernier, l'URL arabe n'est pas un champ Zotero partagé : vérifier comment
+  `sync_biblio.py` produit l'URL AR avant la montée) ;
+- déranger (sortir de leurs collections de livre) : `decret-2022-797`, `lf-2026`,
+  `loi2001-123-lf2002`, si la première sortie du h) est retenue.
