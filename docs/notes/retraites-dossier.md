@@ -56,7 +56,7 @@ constante muette, et livre l'article de **revalorisation** que le modèle ignore
 |---|---|---|---|
 | Limite de prise en compte du salaire (assiette de la retraite complémentaire) | **six fois le SMIG**, rapporté à 2 400 heures par an, **dès 1974** ; reconduite à l'identique en 1990 | 74-499 art. 18, puis art. 18 (nouveau) du décret n° 90-1455 | **[T]** |
 | Plafond du taux de liquidation RSNA | **80 %** du salaire moyen de référence | 74-499 art. 17 in fine | **[T]** |
-| Fenêtre du salaire de référence RSNA | **3 ou 5 dernières années**, la plus avantageuse (1974) → **10 dernières années** (1990) | 74-499 art. 18, puis 90-1455 | **[T]** |
+| Fenêtre du salaire de référence RSNA | **3 ou 5 dernières années**, la plus avantageuse (1974) → **10 dernières années** (1990) → remplacé en 1994 : **5, 7 puis 10 dernières années** aux 1er juillet 1994, 1995, 1996 (voir § 12) | 74-499 art. 18, puis 90-1455, puis 94-1429 | **[T]** |
 | Pension minimale RSNA | 2/3 du SMIG (1974) ; **1/2 du SMIG** pour les retraites anticipées et les pensions proportionnelles (1982) | 74-499 art. 45, puis 82-1030 art. 5 | **[T]** |
 | Âge de départ anticipé RSNA (50 ans) | créé en **1982**, pas en 1974 | 82-1030, art. 15 bis | **[T]** |
 | Revalorisation RSNA | « révisé en cas de hausse sensible du niveau général des salaires » (1974) → **indexation automatique sur le SMIG** (1981, puis 2001) | 74-499 art. 53, puis 81-187 et 2001-779 | **[T]** |
@@ -420,6 +420,8 @@ du 8 juin 1944**, instituant en Tunisie un régime d'allocations familiales **[D
 
 ## 2.0 La chaîne du décret n° 74-499, texte par texte
 
+> **Mise à jour du 11 septembre 2026** : le décret n° 94-1429 abroge et remplace les articles 18 et 19 dans leur rédaction de 1990 ; la série de la fenêtre du salaire de référence et les corrections à reporter dans cette section sont au **§ 12** (en particulier § 12.8).
+
 | Texte | Objet établi | Signature | JORT | Pages | Effet énoncé | URL | Niv. |
 |---|---|---|---|---|---|---|---|
 | **Loi n° 60-33** | Institue le régime d'invalidité, vieillesse et survie et le régime d'allocation dans le secteur non agricole | 1960-12-14 | n° 57 | 1616 | non énoncée | `/1960/1960F/Jo05760.pdf` | **[M]** |
@@ -449,6 +451,8 @@ liquidation. Les décrets 96-326, 97-291 et 94-1429 **n'ont pas été relus ici 
 neutralité sur l'article 18 et sur l'article 17 n'est pas établie (§ 8).
 
 ## 2.1 La limite de calcul des prestations — la série demandée
+
+> **Mise à jour du 11 septembre 2026** : le décret n° 94-1429 abroge et remplace les articles 18 et 19 dans leur rédaction de 1990 ; la série de la fenêtre du salaire de référence et les corrections à reporter dans cette section sont au **§ 12** (en particulier § 12.8).
 
 C'est la valeur dont dépend à la fois le plafond du salaire retenu pour la pension légale et,
 symétriquement, l'assiette du régime complémentaire (« la fraction de salaire excédant la limite
@@ -557,6 +561,8 @@ mères de trois enfants** du régime privé.
   (art. 2). Le tiret « d », relatif aux mères de trois enfants, n'est pas touché.
 
 ## 2.3 Calcul
+
+> **Mise à jour du 11 septembre 2026** : le décret n° 94-1429 abroge et remplace les articles 18 et 19 dans leur rédaction de 1990 ; la série de la fenêtre du salaire de référence et les corrections à reporter dans cette section sont au **§ 12** (en particulier § 12.8).
 
 **Taux et plafond — 74-499, art. 17 [T], p. 917** (relu à 500 dpi pour les chiffres) :
 
@@ -1177,7 +1183,7 @@ Les cinq premiers ne sont donc plus « une tranche terminale à taux zéro » : 
 | Régime | Fenêtre légale | Texte | Ce que fait le code |
 |---|---|---|---|
 | CNRPS | **dernière rémunération** ayant supporté des retenues **3 ans** ; ou rémunération de la **fonction la plus élevée exercée 2 ans**, sous condition de 3 ans de retenues | loi 85-12, **art. 36** | dernière rémunération, ou moyenne des **2 plus élevées consécutives** sur demande ; condition de 3 ans absente |
-| RSNA | **3 ou 5 dernières années**, la plus avantageuse (1974) → **10 dernières années** (1990) | 74-499 **art. 18-19** ; 90-1455 **art. 18 (nouveau)** | moyenne des **10 meilleures** années sur 40 |
+| RSNA | **3 ou 5 dernières années**, la plus avantageuse (1974) → **10 dernières années** (1990) → **5 / 7 / 10 dernières années** aux 1er juillet 1994 / 1995 / 1996 (§ 12) | 74-499 **art. 18-19** ; 90-1455 **art. 18 (nouveau)** ; 94-1429 **art. 18-19 (nouveaux)** | moyenne des **10 meilleures** années sur 40 |
 | RSA | **3 ou 5 dernières années**, la plus avantageuse, sur base SMAG × 300 j × coefficient | loi 81-6, **art. 50** | moyenne des **3 meilleures** années, × 300/180 |
 | RSAA | **3 ou 5 dernières années**, la plus avantageuse | loi 81-6, **art. 95** | non modélisé |
 
@@ -2123,3 +2129,354 @@ recadré à 300 dpi).
   publié au *Journal Officiel* de la République Tunisienne. »
 - **Date d'effet : 1er mai 1997** **[T]** — identique à celle de la loi n° 97-59 pour le secteur
   public : les deux régimes ont reçu la même extension des droits des orphelins à la même date.
+
+---
+
+# 12. La fenêtre du salaire de référence du RSNA : décrets n° 90-1455 et 94-1429
+
+> Section ajoutée le 11 septembre 2026. Question posée : le chapitre privé expose deux calendriers
+> de la fenêtre de dix ans (1990, puis 1994-1996) sans les concilier. Les deux décrets ont été relus
+> **en entier**, ainsi que l'article 19 initial, le rectificatif de 1974, le décret n° 97-291 et le
+> premier arrêté fixant le barème d'actualisation. Aucun `.qmd` n'a été modifié.
+
+## 12.1 Conclusion
+
+**Il n'y a pas de contradiction entre deux règles en vigueur au même moment, mais une succession.**
+Le décret n° 94-1429 **abroge et remplace** l'article 18 dans la rédaction que lui avait donnée le
+décret n° 90-1455, qu'il vise expressément. Aucun texte publié entre 1990 et 1994 n'a suspendu,
+reporté ni modifié la règle de 1990. Ce que le décret de 1994 corrige est lisible dans les textes :
+**le décret de 1990 avait réécrit l'article 18 (dix ans) sans toucher à l'article 19**, qui
+continuait de prescrire une moyenne sur **trente-six ou soixante mois** ; le décret de 1994 réécrit
+**les deux articles ensemble**, en paliers accordés (5, 7, 10 ans ; 60, 84, 120 mois).
+
+Ce que les textes ne disent pas : **comment la caisse a liquidé les pensions entre le
+23 septembre 1990 et le 30 juin 1994**, et pourquoi le décret de 1994 repart de cinq ans au lieu de
+constater une fenêtre de dix ans déjà acquise. L'hypothèse d'une règle de 1990 restée inappliquée
+est plausible — article 19 non adapté, aucun barème d'actualisation publié avant novembre 1994 —
+mais **elle n'est pas établie** (§ 12.7).
+
+## 12.2 Décret n° 90-1455 du 10 septembre 1990 — lecture intégrale
+
+JORT **n° 60 du 21 septembre 1990, p. 1358**, édition française, `/1990/1990F/Jo06090.pdf`
+(page 30 du fichier local, 32 pages ; fichier identique à l'octet à celui de pist.tn, 3 121 068
+octets, contrôlé le 11 septembre 2026). Fascicule sans couche texte : OCR `tesseract -l fra` à
+300 dpi, puis **relecture intégrale à l'image**. Pied de page lu à l'image : « 1358 — *Journal
+Officiel de la République Tunisienne* — 21 septembre 1990 — N° 60 » (l'OCR lisait « 1356 » ; la page
+précédente porte 1357). **[T]**
+
+Le décret tient **entièrement sur la page 1358** : il s'ouvre sous l'intertitre « MINISTERE DES
+AFFAIRES SOCIALES — REGIME DE VIEILLESSE » et se clôt par la signature, suivie de nominations
+(décrets n° 90-1456 et suivants). Il compte **deux articles**.
+
+**Intitulé** (fascicule) : « Décret N° 90-1455 du 10 septembre 1990 amendant le décret N° 74-499 du
+27 avril 1974 relatif au regime de vieillesse, d'invalidité et de survivants dans le secteur non
+agricole ». Le sommaire (p. 3 du fichier) porte « modifiant » et, par coquille, « 10 septembre
+1980 ».
+
+**Visas** **[T]** : loi n° 60-30 du 14 décembre 1960 (« ensemble les textes qui l'ont modifée ou
+complétée, notamment la loi n° 88-38 du 6 mai 1988 ») ; loi n° 60-33 du 14 décembre 1960 ;
+**décret n° 74-499 du 27 avril 1974**, visé sans mention d'aucun modificatif ; décret n° 76-981 du
+19 novembre 1976 organisant la CAVIS ; avis des ministres de l'économie et des finances et des
+affaires sociales ; avis du Tribunal administratif.
+
+**Article premier** **[T]** : « Les dispositions des articles **3, 14, 18, 30, 32, 43 et 54** du
+décret n° 74-499 du 27 avril 1974 sus-visé, sont abrogées et remplacées par les dispositions
+suivantes : ». **L'article 19 n'est pas dans la liste.**
+
+**Article 18 (nouveau), mot pour mot** **[T]** :
+
+> « La pension est basée sur les salaires soumis à cotisation que l'assuré a perçu au cours des
+> **dix dernières années** précédent l'âge d'ouverture du droit à pension. Au cas où la période
+> d'activité déclarée est inférieure à 10 ans, la moyenne est calculée sur la base des salaires
+> perçus au cours de cette période. Lesdits salaires ne sont pris en compte pour une durée
+> déterminée que dans la limite de 6 fois le SMIG rapporté à une durée d'occupation annuelle de
+> 2 400 heures. Ils sont actualisés selon un barème fixé par arrêté du ministre des affaires
+> sociales. »
+
+Coquilles du fascicule conservées (« perçu », « précédent »). Par rapport à 1974 : disparition du
+choix « trois ou cinq dernières années […] selon que l'une ou l'autre de ces périodes de référence
+est plus avantageuse », disparition de la mention « ou à allocation », « pour une année
+déterminée » devenu « pour une durée déterminée », et ajout de l'actualisation par barème.
+
+**Autres articles nouveaux** (lus, résumés) **[T]** : art. 3 (validation des périodes d'emploi non
+déclarées ; cotisations calculées sur les salaires des trois dernières années ; périodes antérieures
+au 1er avril 1961 validables dans un délai de trois ans « à compter de la date d'entrée en vigueur du
+présent décret ») ; art. 14 (cessation de la relation de travail à l'âge de l'art. 15 ; périodes
+postérieures prises en compte seulement après autorisation de l'inspection du travail et dans la
+limite du stage) ; art. 30 (pension de survivant due si les liens du mariage existent au décès) ;
+art. 32 (suspension en cas de remariage avant 55 ans, rétablissement revalorisé, cumul interdit,
+seule la pension la plus élevée servie) ; art. 43 (versement unique pour moins de 60 mois de
+cotisation) ; art. 54 (maintien des prestations de soins).
+
+**Dispositions transitoires** : **aucune**. Pas de montée en charge, pas de date de liquidation à
+partir de laquelle la règle s'applique, pas de report, pas de renvoi à un arrêté pour
+l'entrée en application de l'article 18 (le renvoi à un arrêté porte sur le **barème**
+d'actualisation seul).
+
+**Article 2 (final)** **[T]** : « Les ministres de l'économie et des finances et des affaires
+sociales sont chargés chacun en ce qui le concerne, de l'éxécution du présent décret qui sera publié
+au journal officiel de la république Tunisienne. » — **clause d'exécution, aucune date d'effet.**
+Le texte présuppose pourtant une date d'entrée en vigueur, qu'il nomme à l'article 3 (nouveau) sans
+la fixer.
+
+**Date d'effet — règle générale, calcul en clair** **[D]** : publication le **vendredi 21 septembre
+1990** (pied de page). Règle applicable avant 1993 : exécutoire « un jour franc après la publication
+au Journal Officiel » (art. 3 nouveau du décret du 27 janvier 1883, rédaction du décret du
+13 septembre 1956, JORT n° 74/1956, p. 1247 — référence donnée par la convention de l'auteur, non
+relue ici). Le jour de la publication ne compte pas ; le 22 septembre est le jour franc ; **le décret
+est exécutoire à compter du dimanche 23 septembre 1990.** Que ce jour soit un dimanche ne change rien au calcul : la règle compte un jour franc, non un jour ouvrable, et la convention retenue ne prévoit aucun report.
+
+**Édition arabe** **[T]** (lue à l'image, `/1990/1990A/Ja06090.pdf`, page 30 du fichier, 200
+`application/pdf` 2 462 826 octets ; pagination imprimée non relevée) : même structure, même liste
+d'articles. Art. 18 (جديد) : « تنبني الجراية على الأجور الخاضعة للمساهمة والتي قبضها المضمون أثناء
+**العشر أعوام الأخيرة** السابقة للسن الذي يفتح الحق في الجراية » ; limite « في حدود ست مرات قيمة
+الأجر الأدنى المهني المضمون قانونيا مرتبطا بمدة شغل سنوي تساوي 2400 ساعة » ; « ويعاد تقييم هذه
+الأجور بقرار من وزير الشؤون الاجتماعية ». Le « الفصل 2 » est la même clause d'exécution. **Les deux
+éditions concordent** : aucune clause propre à l'arabe.
+
+## 12.3 L'article 19 que le décret de 1990 a laissé en place
+
+Décret n° 74-499, **art. 19**, JORT n° 30/1974, **p. 917**, lu à l'image à 300 puis 500 dpi **[T]** :
+
+> « Pour le calcul du salaire mensuel moyen, sont pris en considération dans leur ordre
+> chronologique les **trente six ou soixante mois** écoulés à la date du 1er janvier de l'année au
+> cours de laquelle l'assuré remplit la condition d'âge pour l'ouverture du droit à pension ou à
+> allocation ou a cessé son activité professionnelle assujettie.
+> Le salaire mensuel moyen est égal au 1/[36] ou au 1/[60] du total des salaires visés à l'article
+> précédent, éventuellement augmentés du montant des salaires mensuels moyens ayant servi de base au
+> calcul des prestations allouées sur le fondement des périodes d'assimilation énumérées à l'article
+> 2 précédent. »
+
+Les **dénominateurs de la fraction sont illisibles** sur le scan, même à 500 dpi ; « trente six ou
+soixante mois », écrit en lettres au premier alinéa, est net. Les crochets signalent la lecture
+dérivée.
+
+**Rectificatif du décret n° 74-499** — JORT **n° 39 du 7 juin 1974, p. 1252**,
+`/1974/1974F/Jo03974.pdf`, page 12 du fichier, lu à l'image **[T]**. Il ne corrige que deux renvois :
+à l'**article 39** (p. 918), « la durée de stage minimum exigée à l'article **16** » se lit « à
+l'article **15** » ; à l'**article 62, alinéa b)** (p. 919), « du dernier alinéa de l'article **62** »
+se lit « de l'article **61** ». « (Le reste sans changement). » **Les articles 18 et 19 ne sont pas
+touchés** : le point 7 du § 8 est clos pour ce texte.
+
+**Conséquence** **[D]** : du 23 septembre 1990 au 30 juin 1994, la lettre du décret n° 74-499
+associe un **article 18 à dix ans** et un **article 19 à trente-six ou soixante mois** — deux
+règles qu'on ne peut pas exécuter ensemble à la lettre (dix années de salaires, divisées par 36 ou
+par 60).
+
+## 12.4 Décret n° 94-1429 du 30 juin 1994 — relecture intégrale
+
+JORT **n° 52 du 5 juillet 1994, pp. 1141-1142**, `/1994/1994F/Jo05294.pdf` (pages 25-26 du fichier ;
+couche texte à colonnes entremêlées, donc **relu à l'image**) **[T]**. Pieds de page : « N° 52 —
+*Journal Officiel de la République Tunisienne* — 5 Juillet 1994 — 1141 » et « 1142 — … — N° 52 ».
+
+**Intitulé** : « Décret n° 94-1429 du 30 juin 1994, portant amendement du décret n° 74-499 du
+27 avril 1974 relatif au régime de pensions de vieillesse d'invalidité et de survivants dans le
+secteur non agricole. »
+
+**Visas** **[T]** : « Sur proposition du ministre des affaires sociales » ; loi n° 60-30 (« notamment
+la loi n° 88-38 du 6 mai 1988 ») ; loi n° 60-33 ; **« Vu le décret n° 74-499 du 27 avril 1974
+relatif au régime de pensions de vieillesse, d'invalidité et de survivants dans le secteur non
+agricole tel que modifié par le décret n° 90-1455 du 10 septembre 1990 »** ; décret n° 76-981
+« tel que modifié par le décret n° 78-962 du 7 novembre 1978 » ; avis du ministre des finances ;
+avis du tribunal administratif.
+
+**Article premier** **[T]** : « Les dispositions des articles **5 (b), 9, 18 et 19** du décret susvisé
+n° 74-499 du 27 avril 1974 sont **abrogées et remplacées** par les dispositions suivantes : »
+- art. 5 (b) nouveau : quote-part de **6,25/20e** de la masse des cotisations ;
+- art. 9 nouveau : taux de **5,75 %** (2,5 % employeurs ; 3,25 % travailleurs, exigibles à 1,75 % au
+  1er juillet 1994, 2,25 % au 1er juillet 1995, 2,75 % au 1er juillet 1996, 3,25 % au 1er juillet
+  1997) ;
+- **art. 18 nouveau**, mot pour mot :
+
+> « La pension est basée sur les salaires soumis à cotisations que l'assuré a perçus au titre des
+> périodes définies ci-après précédant l'âge d'ouverture de droit à pension :
+> - les cinq dernières années à partir du 1er juillet 1994
+> - les sept dernières années à partir du 1er juillet 1995
+> - les dix dernières années à partir du 1er juillet 1996.
+>
+> Au cas où la période d'activité déclarée est inférieure aux périodes précitées, la moyenne est
+> calculée sur la base des salaires perçus au cours de cette période.
+> Lesdits salaires ne sont pris en compte pour une durée déterminée que dans la limite de 6 fois le
+> SMIG régime 48 heures rapporté à une durée d'occupation annuelle de 2400 heures.
+> Ils sont actualisés selon un barême fixé annuellement par arrêté du ministre des affaires
+> sociales. »
+
+- **art. 19 nouveau**, mot pour mot :
+
+> « Pour le calcul du salaire mensuel moyen, sont pris en considération dans leur ordre
+> chronologique, les soixante ou quatre vingt quatre ou cent vingt mois validiés au titre du régime
+> de pension, écoulés à la date du 1er janvier de l'année en cours de laquelle l'assuré remplit la
+> condition d'âge pour l'ouverture du droit à pension ou a cessé son activité professionnelle
+> assujettie.
+> Il n'est pas tenu compte pour le calcul du salaire moyen visé à l'alinéa précédent des périodes au
+> cours desquelles l'assuré n'a pas exercé d'activité assujettie au versement de cotisation en vertu
+> de la législation de sécurité sociale.
+> Sous réserve des dispositions de l'alinéa 2 de l'article 18 du présent décret, le salaire mensuel
+> moyen est égal au 1/60ème ou au 1/84ème ou au 1/120ème du total des salaires visés à l'article 18
+> précédent, éventuellement augmentés du montant des salaires mensuels moyens ayant servi de base au
+> calcul des prestations allouées sur le fondement des périodes d'assimilation énumérées à l'artricle
+> 2 précédent. »
+
+L'article 19 nouveau ne porte pas de dates : ses trois durées s'alignent **par construction** sur
+les trois paliers de l'article 18 **[D]**. Il introduit une règle absente de 1974 : les périodes sans
+activité assujettie sont neutralisées dans la moyenne.
+
+**Article 2** **[T]** : « Les dispositions de l'article 5 - b (nouveau) du décret susvisé n° 74-499 du
+27 avril 1974 prennent effet à compter du 1er janvier 1994. » — ne vise **que** l'art. 5 b).
+
+**Article 3 (final)** **[T]** : clause d'exécution (« Les ministres des finances et des affaires
+sociales sont chargés […] de l'exécution du présent décret qui sera publié au Journal Officiel »).
+
+**Dispositions transitoires** : les seules sont les **paliers énoncés** dans les articles 9 et 18
+nouveaux. **Rien sur les pensions liquidées entre 1990 et 1994**, rien sur la règle de 1990.
+
+**Remplace-t-il ou reporte-t-il l'article 18 de 1990 ?** **Il le remplace.** Trois éléments du
+texte : (1) le visa cite le décret n° 74-499 « tel que modifié par le décret n° 90-1455 », donc dans
+sa rédaction de 1990 ; (2) l'article premier dit « abrogées et remplacées », non « suspendues » ni
+« différées » ; (3) aucune disposition ne qualifie la règle de 1990 de non encore entrée en vigueur.
+Le décret ne dit pas **pourquoi** il repart de cinq ans.
+
+**Dates d'effet** :
+- **fenêtre du salaire de référence** : **1er juillet 1994, 1er juillet 1995, 1er juillet 1996,
+  énoncées** par l'art. 18 nouveau **[T]** ;
+- **art. 5 b)** : 1er janvier 1994, énoncée par l'art. 2 **[T]** ;
+- **pour le reste du décret, sans clause propre** **[D]** : règle de la loi n° 93-64, art. 2 — cinq
+  jours après le dépôt du JORT au siège du gouvernorat de Tunis. Date de dépôt non imprimée dans le
+  fascicule ; si le dépôt a eu lieu le 5 juillet 1994, date du fascicule, le décret est exécutoire
+  **au plus tôt le 10 juillet 1994**. Le premier palier (1er juillet 1994) est donc antérieur à la
+  date à laquelle le décret devient exécutoire : il est **rétroactif par ses propres termes**.
+
+**Sens de « à partir du 1er juillet 1994 »** **[T]/[D]** : l'arrêté du 17 novembre 1994 (§ 12.5)
+applique le barème « aux pensions pour lesquelles le droit est ouvert à compter du 1er juillet 1994 ».
+Lecture cohérente : les paliers visent la **date d'ouverture du droit**.
+
+## 12.5 Recherche des textes intermédiaires (1990-1994)
+
+**Élément positif, le plus fort** **[T]** : le visa du décret n° 94-1429 énumère la chaîne
+modificative du décret n° 74-499 et **s'arrête au décret n° 90-1455** ; le visa du décret n° 90-1455
+vise le décret n° 74-499 sans modificatif. Aucun texte ne s'intercale selon ses propres auteurs.
+
+**Corroboration par la base** **[M]** (`jort_cache.db`, `?immutable=1`, 11 septembre 2026) :
+- `titre like '%74-499%'`, sans filtre d'année (1974-2026) : 16 notices — 74-499, son rectificatif,
+  79-536, 81-188, 82-1030 et rectificatif, 88-1137, **90-1455**, **94-1429**, 96-326, 97-291, 97-555,
+  97-1927, 2001-779, 2003-1212, 2007-2148. **Rien entre le 21 septembre 1990 et le 5 juillet 1994
+  hormis ces deux décrets.**
+- FTS `"non agricole" OR "90-1455" OR actualisation OR "74-499" OR "60-33"`, `jort_annee` 1990-1996 :
+  90-1455, 93-357 (validation, travailleurs indépendants, sans rapport), 94-1429, puis les arrêtés
+  de barème à partir du 17 novembre 1994.
+- FTS `"74-499" OR ("non agricole" AND vieillesse) OR "salaire de reference" OR "salaire moyen"`,
+  1990-2026 : même chaîne ; aucun texte postérieur au décret n° 2007-2148.
+- `LIKE` non accentué, 1990-1996, sur `vieillesse`, `pension` + `non agricole`, `actualisation`,
+  `caisse nationale de securite sociale`, `60-30` : communiqués et avis de simplification des
+  formalités de la CNSS et de la CAVIS (1990-1991), décret n° 91-487 (commission médicale), loi
+  n° 90-70 (coordination), décret n° 94-1477 (abrogation du décret n° 76-981) — **aucun ne vise
+  l'article 18**. Titres seuls : le corps des communiqués de 1990-1991 n'a pas été lu.
+- `rectificatif` + `vieillesse`/`1455`, 1990-1994 : **aucun rectificatif** du décret n° 90-1455.
+
+**Barème d'actualisation** **[T]** : le premier arrêté identifié est l'**arrêté du ministre des
+affaires sociales du 17 novembre 1994**, JORT **n° 93 du 25 novembre 1994, p. 1898**,
+`/1994/1994F/Jo09394.pdf` (page 10 du fichier, lue à l'image). Visa : « le décret n° 74-499 du
+27 avril 1974 […] ensemble les textes qui l'ont modifié ou complété notamment le décret n° 94-1429 du
+30 juin 1994 et notamment son article 18 » — **aucune mention du décret n° 90-1455**. Tableau de
+coefficients 1961 (6,48469) à 1993 (1,00000). Art. 2 : « Ces dispositions s'appliquent aux pensions
+pour lesquelles le droit est ouvert à compter du 1er juillet 1994. » **Aucun arrêté de barème pris
+en application de l'article 18 dans sa rédaction de 1990 n'a été trouvé** (FTS `actualisation`,
+1990-1994).
+
+**Décret n° 97-291** (dernier décret de la chaîne dont la neutralité sur l'article 18 restait à
+établir) — JORT **n° 13 du 14 février 1997, pp. 203-204**, `/1997/1997F/Jo01397.pdf`, page 3 du
+fichier, lu à l'image **[T]**. Article premier : « Les articles **29, 38 et 53 alinéa 4** du décret
+n° 74-499 […] sont abrogés et remplacés » ; art. 2 : l'article **52** est abrogé ; art. 3 : clause
+d'exécution. **Ni l'article 18 ni l'article 19.** Le point 5 du § 8 est clos : 94-1429 modifie les
+articles 18 et 19, 96-326 et 97-291 n'y touchent pas. (Son visa cite « le décret n° **95**-326 du
+1er mars 1996 » : coquille pour 96-326.)
+
+Les autres modificatifs postérieurs ont été lus au § 2.0 (97-555 : art. 9 ; 97-1927 : art. 33 ;
+2001-779 : art. 53 ; 2003-1212 : art. 5 b) ; 2007-2148 : art. 15 bis, 15 ter, 17, 33, 42, 47) :
+**aucun ne touche les articles 18 ou 19**.
+
+## 12.6 La série
+
+| Du | Fenêtre | Diviseur (art. 19) | Limite de prise en compte | Texte | Date d'effet | Niv. |
+|---|---|---|---|---|---|---|
+| **1er janv. 1974** | 3 ou 5 dernières années, la plus avantageuse | 36 ou 60 mois | 6 × SMIG, 2 400 h/an, « pour une année déterminée » | 74-499, art. 18-19 (rectificatif sans objet) | énoncée, art. 64 | **[T]** |
+| **23 sept. 1990** | 10 dernières années ; moyenne sur la période d'activité si moins de 10 ans ; actualisation par barème d'arrêté | **inchangé : 36 ou 60 mois** | 6 × SMIG, 2 400 h/an | 90-1455, art. 1 (art. 18 nouveau) | non énoncée ; exécutoire un jour franc après publication (21 sept. 1990) | texte **[T]**, date **[D]** |
+| **1er juill. 1994** | 5 dernières années ; actualisation par barème annuel | 60 mois | 6 × SMIG régime 48 h, 2 400 h/an | 94-1429, art. 1 (art. 18-19 nouveaux) | énoncée, art. 18 nouveau | **[T]** |
+| **1er juill. 1995** | 7 dernières années | 84 mois | idem | idem | énoncée | **[T]** ; diviseur aligné **[D]** |
+| **1er juill. 1996** | 10 dernières années | 120 mois | idem | idem | énoncée | **[T]** ; diviseur aligné **[D]** |
+
+**Close à ce jour dans la limite du corpus** : aucun texte de `jort_cache.db` postérieur au décret
+n° 2007-2148 ne vise le décret n° 74-499.
+
+## 12.7 Ce qui manque pour aller plus loin
+
+- **La pratique de liquidation de la CNSS entre le 23 septembre 1990 et le 30 juin 1994** : les
+  textes publiés au JORT ne la renseignent pas. Sources à chercher : circulaires ou notes de
+  service de la CNSS (1990-1994), rapports annuels de la CNSS de ces années, travaux préparatoires
+  ou avis du Tribunal administratif sur le projet de décret n° 94-1429, doctrine ou jurisprudence
+  administrative sur des pensions liquidées dans cet intervalle. **TODO**.
+- **Le corps des communiqués et avis du Premier ministère de 1990-1991** sur la simplification des
+  formalités de la CNSS et de la CAVIS (JORT n° 70 et 71/1990, 79/1990, 2, 19, 27, 45/1991) : titres
+  seuls ; improbable qu'ils touchent au calcul, non vérifié.
+- **La date de dépôt du JORT n° 52/1994** au gouvernorat de Tunis : non imprimée ; la date exécutoire
+  du décret n° 94-1429 (hors dates énoncées) reste « au plus tôt le 10 juillet 1994 ».
+- **Les dénominateurs imprimés de l'article 19 de 1974** : illisibles ; restitués par le texte en
+  lettres du premier alinéa.
+- **L'édition arabe du décret n° 94-1429** n'a pas été relue.
+
+## 12.8 Corrections à reporter ailleurs dans ce dossier (non faites ici)
+
+- § 0 et § 6.3 : « 10 dernières années (1990) » → ajouter le remplacement de 1994 (5/7/10 ans au
+  1er juillet 1994, 1995, 1996).
+- § 2.0 : ligne 94-1429 — objet « art. 5 b), 9, 18 et 19 (nouveaux) », effet « art. 18 : paliers
+  énoncés 1er juill. 1994/1995/1996 ; art. 5 b) : 1er janv. 1994 (art. 2) » ; ligne 97-291 — « art. 29,
+  38, 53 al. 4 (nouveaux) ; art. 52 abrogé ; ni 18 ni 19 » ; ligne du rectificatif de 1974 — lu, art.
+  39 et 62 b) seulement.
+- § 2.1 : la limite de 6 × SMIG est reprise une **troisième** fois en 1994 (« SMIG régime 48 heures ») ;
+  la série n'est plus « non close » sur ce point ; le barème d'actualisation est identifié (arrêtés
+  annuels depuis le 17 novembre 1994).
+- § 2.3 : ajouter les trois paliers de 1994 et l'article 19 non modifié en 1990.
+- § 8 : points 5 et 6 clos ; point 7 clos pour le décret n° 74-499.
+
+## 12.9 Références
+
+**Clés existantes** : `decret74-499`, `decret90-1455`, `decret94-1429`, `decret97-291`,
+`arrete-1997-03-29-bareme-actualisation`. Notes de `decret90-1455` et `decret94-1429` mises à jour
+(FR et AR) le 11 septembre 2026.
+
+**Entrée à créer** (citée par le § 12.5, utile si le rédacteur mentionne l'origine du barème) :
+
+```json
+{"id":"arrete-1994-11-17-bareme-actualisation","type":"legislation","title":"Arrêté du ministre des affaires sociales du 17 novembre 1994, relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants","issued":{"date-parts":[[1994,11,17]]},"container-title":"Journal officiel de la République tunisienne","issue":"93","page":"1898","URL":"https://www.pist.tn/jort/1994/1994F/Jo09394.pdf","note":"citation-key: arrete-1994-11-17-bareme-actualisation\nJORT n° 93 du 25 novembre 1994, p. 1898. Premier barème pris en application de l'art. 18 (nouveau) du décret n° 74-499, issu du décret n° 94-1429 (visé). Coefficients 1961 (6,48469) à 1993 (1,00000). Art. 2 : s'applique aux pensions dont le droit est ouvert à compter du 1er juillet 1994. Lu à l'image."}
+```
+
+Vérification : `200 application/pdf 536 819` octets, identique au fichier local, 11 septembre 2026.
+
+## 12.10 Paragraphe prêt pour le rédacteur
+
+*Série à publier* (remplace les lignes 1990 et 1994-1996 de `tbl-rsna-reference`) :
+
+| Depuis | Fenêtre de référence | Moyenne | Texte |
+|---|---|---|---|
+| 1er janvier 1974 | trois ou cinq dernières années, la plus avantageuse pour l'assuré | total divisé par 36 ou 60 mois | décret n° 74-499, art. 18-19 |
+| 23 septembre 1990 | dix dernières années ; salaires actualisés selon un barème fixé par arrêté | article 19 non modifié : 36 ou 60 mois | décret n° 90-1455, art. 1 (art. 18 nouveau) |
+| 1er juillet 1994 | cinq dernières années ; salaires actualisés selon un barème annuel | 60 mois | décret n° 94-1429, art. 1 (art. 18-19 nouveaux) |
+| 1er juillet 1995 | sept dernières années | 84 mois | idem |
+| 1er juillet 1996 | dix dernières années | 120 mois | idem |
+
+La limite de prise en compte reste de six fois le SMIG rapporté à 2 400 heures par an sur toute la
+période ; le décret de 1994 précise qu'il s'agit du SMIG du régime de 48 heures. La date du
+23 septembre 1990 est celle à laquelle le décret n° 90-1455, qui n'énonce pas de date d'effet,
+devient exécutoire, un jour franc après sa publication au *Journal officiel* du 21 septembre 1990.
+
+*Articulation* : Le décret n° 90-1455 porte la fenêtre de référence à dix ans en réécrivant
+l'article 18, mais laisse inchangé l'article 19, qui continue de calculer la moyenne sur trente-six
+ou soixante mois ; le décret n° 94-1429, qui vise le décret de 1974 dans sa rédaction de 1990,
+abroge et remplace ensemble ces deux articles et substitue à la règle de 1990 une montée
+progressive, de cinq ans en 1994 à dix ans en 1996. Aucun texte publié entre ces deux décrets ne
+suspend ni ne reporte la règle de 1990, et aucun n'indique comment les pensions ont été calculées
+dans l'intervalle.
+
+*Pour l'encadré « Deux décrets, deux calendriers »* : il peut céder la place à cette phrase
+d'articulation ; le TODO « établir comment la règle de 1990 a été appliquée entre 1990 et 1994 »
+reste ouvert (§ 12.7).
