@@ -2921,7 +2921,7 @@ entries:
   - id: limite-calcul-prestations
     acronyme: null
     statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
-    references: [decret90-1455, loi89-73, arrete-1978-11-18-retraite-complementaire]
+    references: [decret90-1455, decret94-1429, loi89-73, arrete-1978-11-18-retraite-complementaire]
     source_definition: {ref: decret74-499, locator: "art. 18"}
     voir_aussi: [salaire-moyen-reference, salaire-differentiel, smig, smag]
     fr:
@@ -2929,9 +2929,11 @@ entries:
       definition: >
         Montant au-delà duquel les salaires ne sont pas pris en compte pour le calcul
         du salaire de référence et des prestations. Dans le régime des salariés non
-        agricoles, elle est de six fois le SMIG rapporté à 2 400 heures par an
-        (décret n° 74-499, art. 18, repris à l'identique par le décret n° 90-1455) ;
-        le régime agricole amélioré la fixe à six fois le SMAG rapporté à 300 jours.
+        agricoles, elle est de six fois le SMIG rapporté à 2 400 heures par an : fixée
+        par le décret n° 74-499 (art. 18), reprise à l'identique par le décret
+        n° 90-1455, puis de nouveau par le décret n° 94-1429 (art. 1^er^), qui précise
+        qu'il s'agit du SMIG du régime de 48 heures ; le régime agricole amélioré la
+        fixe à six fois le SMAG rapporté à 300 jours.
         Ce n'est pas un plafond de cotisation : la fraction du salaire qui l'excède
         forme l'assiette du régime complémentaire.
       synonymes: [Limite de prise en compte des salaires]
@@ -2940,8 +2942,10 @@ entries:
       definition: >
         مبلغ لا تُعتمد الأجور في ما يتجاوزه لاحتساب الأجر المتوسط المرجعي والمنافع. في
         نظام الأجراء غير الفلاحيين، يساوي ستّة أضعاف الأجر الأدنى المضمون لمختلف المهن
-        محتسبًا على أساس 2400 ساعة في السنة (الأمر عدد 499 لسنة 1974، الفصل 18، وقد
-        أعاده الأمر عدد 1455 لسنة 1990 دون تغيير)؛ ويضبطه النظام الفلاحي المحسَّن بستّة
+        محتسبًا على أساس 2400 ساعة في السنة: ضبطه الأمر عدد 499 لسنة 1974 (الفصل 18)،
+        وأعاده الأمر عدد 1455 لسنة 1990 دون تغيير، ثمّ أعاده الأمر عدد 1429 لسنة 1994
+        (الفصل الأوّل) مع التنصيص على أنّ المقصود هو الأجر الأدنى المضمون لمختلف المهن
+        في نظام 48 ساعة في الأسبوع؛ ويضبطه النظام الفلاحي المحسَّن بستّة
         أضعاف الأجر الأدنى الفلاحي المضمون محتسبًا على أساس 300 يوم. وليس سقفًا للمساهمة:
         فالجزء من الأجر الذي يتجاوزه يمثّل قاعدة النظام التكميلي.
       synonymes: []
@@ -3039,7 +3043,7 @@ entries:
   - id: salaire-moyen-reference
     acronyme: null
     statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
-    references: [decret90-1455, loi81-6, loi89-73]
+    references: [decret90-1455, decret94-1429, arrete-1994-11-17-bareme-actualisation, loi81-6, loi89-73]
     source_definition: {ref: decret74-499, locator: "art. 18-19"}
     voir_aussi: [limite-calcul-prestations, taux-de-liquidation, smag]
     fr:
@@ -3047,11 +3051,19 @@ entries:
       definition: >
         Assiette de la pension dans les régimes du secteur privé, calculée comme une
         moyenne de salaires sur une période qui précède l'ouverture du droit. Dans le
-        régime des salariés non agricoles, il est établi sur les trois ou cinq
-        dernières années, la période la plus avantageuse étant retenue (décret
-        n° 74-499, art. 18-19), puis, depuis le décret n° 90-1455, sur les dix
-        dernières années, avec des salaires actualisés selon un barème fixé par
-        arrêté ; il est borné par la limite de calcul des prestations. Dans le régime
+        régime des salariés non agricoles, il est établi, à compter du 1^er^ janvier
+        1974, sur les trois ou cinq dernières années, la période la plus avantageuse
+        étant retenue, et la moyenne porte sur 36 ou 60 mois (décret n° 74-499,
+        art. 18-19). Le décret n° 90-1455 porte la période aux dix dernières années à
+        compter du 23 septembre 1990, sans modifier l'article 19, qui maintient la
+        moyenne sur 36 ou 60 mois ; il prévoit l'actualisation des salaires selon un
+        barème fixé par arrêté. Le décret n° 94-1429 abroge et remplace ces deux
+        articles : la période est de cinq, sept puis dix dernières années, et la
+        moyenne porte sur 60, 84 puis 120 mois, à compter respectivement des
+        1^er^ juillet 1994, 1995 et 1996 ; le barème d'actualisation est fixé chaque
+        année par arrêté, le premier arrêté retrouvé datant du 17 novembre 1994. Le
+        salaire de référence est borné par la limite de calcul des
+        prestations. Dans le régime
         des salariés agricoles, il est forfaitaire : le SMAG rapporté à 300 jours,
         affecté du coefficient de qualification, sur les trois ou cinq dernières
         années (loi n° 81-6, art. 50).
@@ -3060,10 +3072,16 @@ entries:
       terme: الأجر المتوسط المرجعي
       definition: >
         قاعدة احتساب الجراية في أنظمة القطاع الخاص، وتُحتسب معدّلًا للأجور على فترة سابقة
-        لفتح الحقّ. في نظام الأجراء غير الفلاحيين، يُضبط على أساس السنوات الثلاث أو الخمس
-        الأخيرة، مع اعتماد الفترة الأفضل (الأمر عدد 499 لسنة 1974، الفصلان 18 و19)، ثمّ،
-        منذ الأمر عدد 1455 لسنة 1990، على أساس السنوات العشر الأخيرة، مع تحيين الأجور
-        وفق جدول يُضبط بقرار؛ ويحدّه سقف احتساب المنافع. وفي نظام الأجراء الفلاحيين، هو
+        لفتح الحقّ. في نظام الأجراء غير الفلاحيين، يُضبط، ابتداءً من غرّة جانفي 1974، على
+        أساس السنوات الثلاث أو الخمس الأخيرة، مع اعتماد الفترة الأفضل، ويُحتسب المعدّل على
+        36 أو 60 شهرًا (الأمر عدد 499 لسنة 1974، الفصلان 18 و19). ورفع الأمر عدد 1455
+        لسنة 1990 الفترة إلى السنوات العشر الأخيرة ابتداءً من 23 سبتمبر 1990، دون تنقيح
+        الفصل 19 الذي أبقى المعدّل على 36 أو 60 شهرًا؛ ونصّ على تحيين الأجور وفق جدول
+        يُضبط بقرار. ثمّ ألغى الأمر عدد 1429 لسنة 1994 هذين الفصلين وعوّضهما: تكون الفترة
+        السنوات الخمس ثمّ السبع ثمّ العشر الأخيرة، ويُحتسب المعدّل على 60 ثمّ 84 ثمّ 120
+        شهرًا، ابتداءً على التوالي من غرّة جويلية 1994 و1995 و1996؛ ويُضبط جدول التحيين
+        سنويًا بقرار، وأوّل قرار عُثر عليه مؤرّخ في 17 نوفمبر 1994. ويحدّه سقف احتساب
+        المنافع. وفي نظام الأجراء الفلاحيين، هو
         أجر جزافي: الأجر الأدنى الفلاحي المضمون محتسبًا على أساس 300 يوم ومضروبًا في
         ضارب التأهيل، على السنوات الثلاث أو الخمس الأخيرة (القانون عدد 6 لسنة 1981،
         الفصل 50).
