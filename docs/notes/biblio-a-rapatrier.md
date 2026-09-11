@@ -1432,3 +1432,81 @@ fichiers de livre, en doublon du partagé, tant que le point h) n'est pas tranch
   `sync_biblio.py` produit l'URL AR avant la montée) ;
 - déranger (sortir de leurs collections de livre) : `decret-2022-797`, `lf-2026`,
   `loi2001-123-lf2002`, si la première sortie du h) est retenue.
+
+### Passe « Retraites — fenêtre du salaire de référence » (11 septembre 2026) — À REPORTER DANS ZOTERO
+
+- `decret90-1455` et `decret94-1429` : champ `note` réécrit (FR et AR) — articles modifiés, art. 19
+  non touché en 1990, remplacement de l'art. 18 par le décret de 1994, dates d'effet (exécutoire le
+  23 septembre 1990 ; paliers énoncés 1er juillet 1994/1995/1996). Source : `retraites-dossier.md` § 12.
+- [x] ~~À créer : `arrete-1994-11-17-bareme-actualisation`~~ — créée le 11 septembre 2026 (passe
+  suivante).
+
+### Passe « Retraites — avant retouche du livre » (11 septembre 2026)
+
+**Aucune écriture Zotero.** Partagé : 161 → 165 entrées par langue ; `cotisations_sociales` :
+14 → 13. Aucun `.qmd` modifié.
+
+#### a) 3 clés créées (partagé FR + AR)
+
+- [x] `arrete-1994-11-17-bareme-actualisation` — recid **61474** (arrêté, signé le 17 novembre 1994,
+  JORT n° 93 du 25 novembre 1994, p. 1898 ; notice concordante). URL FR = `pdf_fr`
+  `1994F/Jo09394.pdf`, AR = `pdf_ar` `1994A/Ja09394.pdf`, lues sur la notice. Page contrôlée sur le
+  fascicule local : l'arrêté tient entièrement sur la p. 1898 (page 10 du fichier). Intitulé,
+  coefficients 1961 (6,48469) et 1993 (1,00000), art. 2 (droits ouverts à compter du
+  1er juillet 1994) recontrôlés sur la couche texte ; lecture à l'image : dossier § 12.
+- [x] `decret2026-65` — **sans URL** (JORT n° 44 du 30 avril 2026, postérieur à l'état de
+  `jort_cache.db`, arrêtée au 10 avril 2026 ; aucune notice). Intitulé et page (**835**) relevés sur
+  `PDFs/JORT/2026/fr/Jo0442026.pdf` (couche texte). **Magistrats** (ordre judiciaire, Tribunal
+  administratif, Cour des comptes) : 120 D aux 1er janvier 2026, 2027 et 2028 sur l'indemnité de
+  magistrature ; **art. 2** : applicable aux pensions des retraités. La demande de passe le désignait
+  comme « augmentation dans le secteur public » : c'est bien ce texte (clause pensions à l'art. 2 ;
+  2026-63 et 2026-64 la portent à l'art. 4), l'intitulé retenu est celui du fascicule.
+- [x] `decret2026-66` — **sans URL**, même motif. SMAG, p. **837** ; art. 1er (21,336 / 22,400 /
+  23,520 D par jour aux 1er janvier 2026/2027/2028), art. 2 (prime de technicité), **art. 5** :
+  « s'applique aux pensions de retraite ». Clé de la note § 9.2 `decret2026-66` conservée ; URL
+  proposée par la note (`2026F/Jo0442026.pdf`) **non reprise** (pas d'enregistrement dans la base).
+
+La clé `decret-2026-65` proposée au § 9.2 de `retraites-revalorisation.md` n'est pas retenue :
+citer `decret2026-65`.
+
+#### b) 1 clé promue (retirée du fichier de livre, FR et AR)
+
+- [x] `decretloi2011-48` — de `precis/{fr,ar}/cotisations_sociales/references.json` vers
+  `precis/{fr,ar}/references.json`, objet copié à l'identique ; URL déjà conformes à la notice
+  recid 80629 (FR `2011F/Jo0412011.pdf`, AR `2011A/Ja0412011.pdf`). Aucun `.qmd` ne la cite encore :
+  le TODO bibliographe de `precis/fr/retraites/_secteur_public.qmd` (l. 59) est levé côté
+  bibliographie, la citation reste à poser par le rédacteur.
+
+#### c) Notes vérifiées, non modifiées
+
+- `loi2001-123-lf2002` : la note porte déjà l'art. 86 (art. 37 réécrit, péréquation) et l'art. 97
+  (effet au 1er janvier 2002), FR et AR.
+- `decret97-1927` : la note porte déjà l'art. 2 (effet au 1er mai 1997), FR et AR.
+
+#### d) Sans URL — TODO
+
+- `decret2026-65`, `decret2026-66` : s'ajoutent à `decret2026-63` et `decret2026-67` (passe
+  « séries de revalorisation », g). URL candidates `2026/2026F/Jo0442026.pdf` et
+  `2026/2026A/Ja0442026.pdf` (fascicules présents en local) à reprendre de `pdf_fr` / `pdf_ar` quand
+  `jort_cache.db` couvrira le 30 avril 2026.
+
+#### e) TODO arabe
+
+Les 3 entrées AR créées portent un `title` français (même réserve que les passes précédentes) ;
+intitulés arabes à relever sur `Ja09394.pdf` et `Ja0442026.pdf`, non sur une notice.
+
+#### f) Contrôles
+
+JSON valides (4 fichiers) ; aucun identifiant en double dans un fichier ni entre le partagé et un
+fichier de livre ; doublons connus inchangés (`loi96-101` et `lf-2018`, en double entre deux
+fichiers de livre ; `loi2016`, présent dans `references.bib`, non touché : le contrôle par
+identifiant ne le fait pas apparaître en double). Rendu HTML de `precis/fr/retraites` et `precis/fr/cotisations_sociales` sans
+citation non résolue ; aucun `figdata` modifié par le rendu.
+
+#### À pousser dans Zotero — NE PAS pousser sans feu vert
+
+- créer (hors collection, cf. conflit de rangement h) : `arrete-1994-11-17-bareme-actualisation`,
+  `decret2026-65`, `decret2026-66` (Extra : `citation-key: <clé>` **et** `issue: <n°>`) ;
+- déranger : `decretloi2011-48`, s'il est rangé dans la collection « Cotisations sociales » (sinon il
+  redescendra dans le fichier de livre, en doublon du partagé) ;
+- corriger (notes, passe précédente) : `decret90-1455`, `decret94-1429`.
