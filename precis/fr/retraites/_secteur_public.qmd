@@ -1,146 +1,367 @@
-## Le secteur public
+# Le secteur public : la CNRPS {#sec-secteur-public}
 
-### Avant l'indépendance
+Les agents publics, civils et militaires, relèvent d'un régime unique de [pensions civiles et militaires](#g-pensions-civiles-militaires), servi par la [Caisse nationale de retraite et de prévoyance sociale](#g-cnrps). Trois régimes spéciaux, pour les membres du gouvernement, les députés et les gouverneurs, s'y adossent par renvoi. Ce chapitre suit la chaîne des maillons commune à tous les régimes de retraite, exposée dans la présentation générale (@sec-chaine-commune) : les textes, l'ouverture du droit, le calcul, les planchers, les accessoires, les droits dérivés, l'invalidité et la revalorisation, qui prend ici la forme de la péréquation ; puis les régimes spéciaux et les dispositions propres aux militaires.
 
-Le premier régime de sécurité sociale a été instauré en Tunisie en 1898 avec la création de la Société de prévoyance des fonctionnaires et employés tunisiens (SPFET).
+La pension du secteur public a une logique propre, qu'il faut avoir à l'esprit en lisant ce qui suit : elle est liquidée sur la **dernière rémunération** de l'agent, et non sur une moyenne de carrière, puis réajustée à chaque augmentation de la rémunération des actifs du même grade. Elle prolonge ainsi la rémunération statutaire, que décrit le livre « Les rémunérations dans le secteur public ».
 
+## Les textes et le champ
 
-<!--
-TODO: Trouver décret.
-Il y a auss la Caisse des retraites des ouvriers de l’État tunisien (CROET)
+### De la loi de 1959 à la loi de 1985
 
-http://irmcmaghreb-bib.org/cgi-bin/koha/opac-detail.pl?biblionumber=28033&shelfbrowse_itemnumber=27974#holdings
+Le régime est d'abord celui de la **loi n° 59-18 du 5 février 1959**, qui fixe le régime des pensions civiles et militaires de retraite et s'applique aux droits à pension qui s'ouvrent à compter du 1^er^ avril 1959 [@loi59-18, art. 52]. Ce texte a été profondément réécrit en 1981 : l'article 4 de la **loi n° 81-70 du 1^er^ août 1981**, loi de finances complémentaire pour 1981, en remplace huit articles — ceux qui fixent le plafond et le plancher de la pension, la réversion, la rente d'invalidité et les accessoires —, et l'article 5 fait prendre effet à cette réécriture le **1^er^ mai 1981** [@loi81-70, art. 4-5]. Plusieurs règles décrites plus bas ont donc un état de 1981 et un état de 1985.
 
-http://irmcmaghreb-bib.org/cgi-bin/koha/opac-detail.pl?biblionumber=9065&shelfbrowse_itemnumber=9037#shelfbrowser
--->
+La **loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public**, publiée au *Journal officiel* du 12 mars 1985, refond le régime avec effet au 12 septembre 1985 [@loi85-12, art. 75]. Son article 76 abroge la loi de 1959 « à l'exception des dispositions relatives à l'invalidité » [@loi85-12, art. 76] : l'invalidité des agents publics reste régie par la loi de 1959, et la loi de 1985 renvoie à deux reprises à « la commission de réforme prévue à l'article 29 de la loi n° 59-18 » (art. 41 et 47).
 
-En 1948, un régime de retraite pour les personnels des compagnies d'électricité, de gaz et des transports a été crée (Décret du 26 août 1948).
+<!-- TODO (documentaliste) : le texte de la loi n° 59-18 antérieur à sa réécriture du
+1er mai 1981 n'a pas été lu pour ses règles de liquidation (plafond, plancher, réversion) : les
+séries de ce chapitre commencent donc en 1981. -->
 
-<!-- Sources SDIRI page 168 -->
+### Les modifications de la loi n° 85-12
 
-### Les pensions civiles et militaires
+La loi de 1985 a été modifiée par une douzaine de textes. Trois ont été lus pour leurs règles de pension, ceux de 2007, de 2009 et de 2019 ; la loi n° 94-71 l'a été pour les taux de contribution ; les autres ne sont connus que par leur objet.
 
-<!-- TODO avant 1985 -->
+| Texte | Signature | Publication | Objet | Lecture |
+|---|---|---|---|---|
+| loi n° 87-8 [@loi87-8] | 6 mars 1987 | 10 mars 1987 | travail des retraités | objet seul |
+| loi n° 88-71 [@loi88-71] | 27 juin 1988 | 1^er^ juillet 1988 | modifie et complète la loi n° 85-12 | objet seul |
+| loi n° 90-6 [@loi90-6] | 12 février 1990 | 20 février 1990 | modifie la loi n° 85-12 | objet seul |
+| loi n° 94-71 [@loi94-71] | 27 juin 1994 | 28 juin 1994 | taux de contribution | voir « Cotisations sociales » |
+| loi n° 95-105 [@loi95-105] | 14 décembre 1995 | 19 décembre 1995 | système unique de validation des services | objet seul |
+| loi n° 96-67 [@loi96-67] | 22 juillet 1996 | 26 juillet 1996 | modifie la loi n° 85-12 | objet seul |
+| loi n° 97-74 [@loi97-74] | 18 novembre 1997 | 21 novembre 1997 | amende la loi n° 85-12 | objet seul |
+| loi n° 2002-61 [@loi2002-61] | 9 juillet 2002 | 12 juillet 2002 | protection sociale de certains agents des entreprises publiques | objet seul |
+| loi n° 2007-43 [@loi2007-43] | 25 juin 2007 | 26 juin 2007 | art. 30, 37, 46 et 47 ; taux de contribution | lue ; aucune clause d'entrée en vigueur |
+| loi n° 2009-20 [@loi2009-20] | 13 avril 2009 | 14 avril 2009 | article 29 bis : enseignants du supérieur | lue ; aucune clause d'entrée en vigueur |
+| loi n° 2019-37 [@loi2019-37] | 30 avril 2019 | 30 avril 2019 | âges, option de prolongation, taux de contribution | lue ; aucune clause d'entrée en vigueur |
 
-Depuis 1985 le texte de référence est la Loi 85-12 du 5 Mars 1985 portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public[^1].
+: Textes modifiant la loi n° 85-12 {#tbl-cnrps-textes}
 
-[^1]: L'ouvrage de [@sdiri2014] est une bonne référence pour le fonctionnement du sstème de retraite en vigueur en 2012 soit avec l'essentiel des disposition de la loi de 1985.
+Les règles présentées dans ce chapitre sont donc celles de la loi de 1985 telles que les lois de 2007, 2009 et 2019 les ont modifiées. Elles ne tiennent pas compte d'éventuelles modifications apportées par les textes que le tableau signale comme non lus, ni par des textes postérieurs à 2019.
 
+<!-- TODO (documentaliste) : ouvrir les lois n° 87-8, 88-71, 90-6, 96-67, 97-74 et 2002-61 (URL
+pist.tn au § 10.2 du dossier retraites) et vérifier, article par article, si elles touchent aux
+règles exposées dans ce chapitre ; puis rechercher les modifications de la loi n° 85-12
+postérieures au 30 avril 2019. La loi de finances pour 2002 (loi n° 2001-123), citée par le
+manuel de la CNRPS parmi les modificatifs, est à ouvrir sous le même angle. -->
 
-Elle couvre tous les agents du secteur public quels que soient leur situation administrative, les modalités de paiement de leur rémunération, leux sexe, leur nationalité. Sont concernés, les agents de l'État, des collectivités publiques locales, les établissements publics à caractère administratif, les établissements publics à caractère industriel et commercial et les sociétés nationales.
+### Le champ
 
-<!-- TODO Lister les sociétés nationales au moins les plus grandes -->
+Le régime couvre le secteur public selon deux cercles que dessinent les textes d'application de 1985. Le premier réunit les agents de l'État, des collectivités publiques locales et des [établissements publics à caractère administratif](#g-epa), pour lesquels le décret n° 85-980 du 11 août 1985 fixe la liste des éléments de rémunération soumis à retenue pour la retraite [@decret85-980]. Le second réunit les agents des [établissements publics à caractère industriel et commercial](#g-epic) et des sociétés nationales affiliés à la caisse, dont le décret n° 85-1025 du 29 août 1985 dresse la liste [@decret85-1025] et pour lesquels le décret n° 85-1176 du 24 septembre 1985 fixe la même liste d'éléments de rémunération [@decret85-1176]. Le champ s'est élargi en 1998, lorsque la loi n° 98-37 a transféré à la CNRPS la caisse de retraite du personnel des services publics de l'électricité, du gaz et des transports [@loi98-37].
 
-<!-- Lister les grandes lois et les grandes réformes -->
+<!-- TODO (documentaliste) : les décrets n° 85-980, 85-1025 et 85-1176 et la loi n° 98-37 ne sont
+connus que par leurs intitulés. Lire le décret n° 85-1025 pour nommer au moins les principales
+sociétés nationales affiliées, et la loi n° 98-37 pour les conditions du transfert. La version
+antérieure de ce chapitre précisait que le régime couvre les agents « quels que soient leur
+situation administrative, les modalités de paiement de leur rémunération, leur sexe, leur
+nationalité » : formule à retrouver dans un article de la loi n° 85-12 avant de la reprendre. -->
 
+## L'ouverture du droit
 
-#### Les conditions du droit à pension
+### L'âge de mise à la retraite
 
-##### Conditions d'âge
+L'âge de mise à la retraite est fixé par la loi pour chaque catégorie d'agents. La loi n° 85-12 le fixe à **60 ans** pour le cadre commun [@loi85-12, art. 24] ; la loi n° 2019-37 le porte à **62 ans**, et relève de deux ans les âges dérogatoires des articles 27 à 29 [@loi2019-37, art. 1].
 
-L'âge légal de départ à la retraite a été fixé à 60 ans.
-<!-- TODO: Quand ? Loi 85-12 ou même avant -->
+| Catégorie | Avant la loi n° 2019-37 | Depuis la loi n° 2019-37 | Articles de la loi n° 85-12 |
+|---|---|---|---|
+| Cadre commun | 60 ans (loi n° 85-12, 12 septembre 1985) | 62 ans | art. 24 |
+| [Ouvriers accomplissant des tâches pénibles et insalubres](#g-travaux-penibles-insalubres) | 55 ans | 57 ans | art. 27 |
+| Agents exerçant des [fonctions astreignantes](#g-fonctions-astreignantes) | 55 ans et 35 ans de services | 57 ans et 35 ans de services | art. 28 |
+| Agents des [cadres actifs](#g-cadres-actifs) | 55 ans | 57 ans | art. 29 |
+| Professeurs et maîtres de conférences de l'enseignement supérieur, hospitalo-universitaires | 65 ans (loi n° 2009-20) | 65 ans | art. 29 bis |
 
-Il est abaissé à 55 ans pour les agents des cadres actifs ainsi que pou les ouvriers accomplissant des tâches pénibles, dans des conditions insalbubres ou astreignantes.
+: Âge de mise à la retraite des agents civils, par catégorie {#tbl-cnrps-ages}
 
-Il peut être prorogé jusqu'à 65 ans par décret.
+Sources : @loi85-12, art. 24 et 27 à 29 ; @loi2009-20, art. 2 ; @loi2019-37, art. 1.
 
-La  loi n° 2009-20 du 13 avril 2009, portant dispositions exceptionnelles relatives à la retraite de certains professeurs de l’enseignement supérieur porte l'âge de mise à la retraite à 65 ans. Les enseignants concernés sont:
+Le passage de 60 à 62 ans n'a pas été immédiat. À titre transitoire, et « contrairement aux dispositions des articles 24, 27, 28, 29 et 61 (nouveaux) », l'article 5 de la loi n° 2019-37 relève l'âge d'**un an à partir du 1^er^ juillet 2019** pour les agents atteignant l'âge de la retraite entre cette date et le 31 décembre 2019, puis de **deux ans à partir du 1^er^ janvier 2020** [@loi2019-37, art. 5]. Pour le cadre commun, l'âge est ainsi passé de 60 ans à 61 ans au second semestre de 2019, puis à 62 ans au 1^er^ janvier 2020. La loi n'ayant pas de clause d'entrée en vigueur, c'est ce calendrier qui date le relèvement. Son article 7 en exclut les programmes de mise à la retraite avant l'âge légal et de départ volontaire, « qui demeurent régis, concernant l'âge légal de la mise à la retraite, aux textes juridiques en vigueur à leur date » [@loi2019-37, art. 7].
 
-- les professeurs de l’enseignement supérieur et les maîtres de conférences de l’enseignement supérieur rattachés aux établissements universitaires et aux établissements de recherche scientifique civils et militaires
+La loi de 1985 prévoyait par ailleurs deux assouplissements à la hausse. Les agents exerçant des fonctions astreignantes et ceux des cadres actifs pouvaient être maintenus en activité jusqu'à 60 ans [@loi85-12, art. 28-29]. Et l'âge de certains cadres supérieurs pouvait être prorogé : jusqu'à **70 ans** pour le Premier Président de la Cour de cassation et le Procureur général, jusqu'à **65 ans** pour les autres cadres supérieurs dont la liste est fixée par décret et pour les chefs de secteur [@loi85-12, art. 25-26].
 
-- les professeurs hospitalo-universitaires et les maîtres de conférences agrégés hospitalo-universitaires
+<!-- TODO (documentaliste) : vérifier si la loi n° 2019-37 modifie les articles 25 et 26 de la loi
+n° 85-12 (prorogation des cadres supérieurs) et la faculté de maintien jusqu'à 60 ans des
+articles 28 et 29 : le dossier ne documente que les âges des articles 24, 27, 28, 29 et 61
+nouveaux. Identifier le décret fixant la liste des cadres supérieurs de l'article 25. -->
 
-Il peut être prorogé jusqu'à 70 ans par décret.
+**L'augmentation optionnelle de l'âge.** La loi n° 2019-37 insère dans la loi de 1985 un titre II bis qui ouvre à l'agent une [augmentation optionnelle de l'âge de mise à la retraite](#g-augmentation-optionnelle-age) : il peut demander par écrit, six mois avant l'âge légal, à rester en activité d'**un à trois ans** ; pour les agents de l'article 29 bis, la prolongation peut atteindre cinq ans et l'âge de 70 ans. L'option est « définitive et irrévocable » [@loi2019-37, art. 3 (art. 71 bis)]. Chaque année supplémentaire rapporte **2 %**, et chaque trimestre 0,50 %, « sous réserve des dispositions du deuxième tiret de l'article 38 » [@loi2019-37, art. 3 (art. 71 ter)].
 
-<!-- TODO: précisez de quoi il s'agit -->
+### Les enseignants du supérieur : l'article 29 bis
 
-L'âge légal  été modifé par la loi du 30 avril 2019 pour être porté à 62 ans.
-Cette augmentation est graduelle. Elle est portée à 61 au 1er juiller 2019 et à 62 ans au 1er janvier 2020.
+Le cas des enseignants du supérieur illustre le passage d'un maintien en activité décidé par l'administration à une option ouverte à l'agent. La **loi n° 2009-20 du 13 avril 2009, portant dispositions exceptionnelles relatives à la retraite des professeurs de l'enseignement supérieur**, ajoute à la loi n° 85-12 un article 29 bis qui fixe à **65 ans** l'âge de mise à la retraite des professeurs et maîtres de conférences de l'enseignement supérieur des établissements universitaires et de recherche scientifique civils et militaires, ainsi que des professeurs hospitalo-universitaires et des maîtres de conférences agrégés hospitalo-universitaires. Le texte ajoute qu'« ils peuvent être maintenus en activité par décret jusqu'à l'âge de soixante-dix (70) ans au maximum », sur rapport motivé du ministre concerné [@loi2009-20, art. 1-2]. La loi ne comporte pas de clause d'entrée en vigueur ; elle est publiée le 14 avril 2009.
 
+Dix ans plus tard, l'article premier de la loi n° 2019-37 abroge les paragraphes 2 et 3 de l'article 29 bis, c'est-à-dire le maintien par décret, et ses articles 5 et 6 permettent aux agents concernés de repousser leur mise à la retraite « dans la limite de la période qui les sépare de l'âge de soixante-dix (70) ans » [@loi2019-37, art. 1, 5 et 6]. L'âge de 65 ans est conservé ; ce qui change est l'auteur de la décision de prolonger.
 
-##### Condition de stage
+### Les travaux pénibles, les fonctions astreignantes et les cadres actifs
 
-La durée de stage minimale qui doit être effectuée pour l'ouverture des droits est de 15 ans de service.
+Les trois âges dérogatoires de 55 ans, puis de 57 ans, visent des catégories que la loi définit par renvoi à une liste réglementaire.
 
-Cette durée est réduite à 10 ans pour les ouvriers.
+- Les **ouvriers accomplissant des tâches pénibles et insalubres** (art. 27) sont désignés par le décret n° 85-1177 du 24 septembre 1985, qui en dresse la liste en dix-sept catégories [@decret85-1177].
+- Les **agents exerçant des fonctions astreignantes** (art. 28) sont désignés par le décret n° 85-1178 du même jour [@decret85-1178]. Pour eux, l'âge est une condition cumulée avec une durée : la mise à la retraite intervient après 35 ans de services et à 55 ans, puis 57 ans.
+- Les **agents des cadres actifs** (art. 29) sont désignés par des décrets de classement propres à chaque corps, que la loi ne nomme pas.
 
-#### Le taux de liquidation
+Les deux décrets de 1985, publiés le 1^er^ octobre 1985, prennent effet le **1^er^ juillet 1986** (art. 2 de chacun), soit près de dix mois après l'entrée en vigueur de la loi dont ils fixent les listes.
 
-#### Le salaire de référence
+<!-- TODO (documentaliste) : les décrets de classement « en partie active » visés par
+l'article 29 sont nommés par le manuel de la CNRPS (§ 10.3 du dossier) mais n'ont ni lecture
+ni clé bibliographique : décrets n° 67-282 du 26 août 1967, 69-167 du 8 mai 1969, 81-1600 du
+24 novembre 1981, 84-748, 84-750, 84-753 et 84-755 du 30 avril 1984, 88-2131 du 21 décembre 1988.
+TODO (bibliographe) : créer les entrées correspondantes une fois les fascicules localisés. -->
 
-L'assiette de cotisation comprend l'ensemble des éléments permanents de la rémunération de l'agent.
+### La durée de services
 
-Le ssalaire de référence correspond à :
+Le droit à pension suppose une durée minimale de services effectifs de **15 ans**, ramenée à **10 ans pour les ouvriers occasionnels** [@loi85-12, art. 22]. Les agents recrutés avant l'entrée en vigueur de la loi de 1985 sont dispensés de cette condition d'ancienneté à titre transitoire [@loi85-12, art. 72]. Les services non cotisés peuvent être pris en compte par [validation](#g-validation-des-services) : l'agent en fait la demande écrite dans un délai maximum d'un an à partir de l'âge légal, les contributions dues sont assises sur la moyenne entre sa rémunération à la date d'adhésion et sa rémunération à la date de la demande, et elles sont à sa charge, payables par tranches n'excédant pas 20 % de sa rémunération [@loi85-12, art. 14-21]. La loi n° 95-105 du 14 décembre 1995 institue ensuite un système unique de validation commun aux régimes légaux [@loi95-105].
 
-- la dernière rémunération ayant l'objet de retenues pour pension pendant au moins trois ans
-- ou la rémunération afférente à la fonction la plus élevée effectivement exercée pendant au moins deux ans au cours de la carrière de l'agent.
+<!-- TODO (documentaliste) : établir la durée minimale de services de la loi n° 59-18 pour donner
+la série antérieure à 1985 ; lire la loi n° 95-105 et son décret d'application n° 96-1015 du
+27 mai 1996 (JORT n° 45 de 1996, pp. 1109-1110, sans clé bibliographique). -->
 
-<!-- TODO quand il n'y a qu'une année ??? -->
+### Les départs anticipés et la jouissance différée
 
-#### Les départs anticipés
+La loi de 1985 énumère les cas dans lesquels l'agent peut être admis à la retraite avant l'âge légal : l'invalidité ; la demande de l'agent, après accord de l'employeur ; la démission ; l'initiative de l'employeur, pour suppression d'emplois, insuffisance professionnelle ou révocation ; et, sur leur demande, les **mères de trois enfants** dont l'âge n'a pas dépassé 15 ans [@loi85-12, art. 5]. La loi n° 88-71 du 27 juin 1988 modifie cet article [@loi88-71] ; la teneur de cette modification n'est pas connue ici.
 
-Le droit à pension de retraite peut s'acquérir avant d'atteindre l'âge légal dans les cas suivants :
+<!-- TODO (documentaliste) : lire la loi n° 88-71 (JORT n° 45 du 1er juillet 1988,
+pp. 967-968). Elle porterait de 15 à 20 ans l'âge des enfants ouvrant droit au départ anticipé
+des mères de trois enfants : non vérifié, à ne pas publier avant lecture. La version antérieure
+de ce chapitre mentionnait aussi un départ « par arrêté du Premier ministre après avis de la
+commission d'assainissement et de restructuration des entreprises à participation publique
+(CAREP) » et un visa du Premier ministre sur les départs à la demande : sans texte identifié. -->
 
-- En cas d'invalidité
+À côté de ces cas, la loi ouvre un **droit général au départ anticipé**, quelle que soit la fonction. Il supposait **35 ans de services et 55 ans d'âge** dans la rédaction de 1985 [@loi85-12, art. 30] ; la loi n° 2007-43 porte ces deux conditions à **37 ans de services et 57 ans** dans l'article 30 (nouveau) qu'elle insère [@loi2007-43].
 
-- Sur demande de l'assuré et après accord de l'employeur soumis au visa du Premier ministre (vu l'accroissement des demandes et des répercussions financières)
+<!-- TODO (documentaliste) : vérifier si la loi n° 2019-37 modifie l'article 30. -->
 
-- En cas de démission
+Le droit acquis de manière anticipée n'ouvre pas toujours une pension immédiate. L'article 41 organise une [jouissance différée](#g-jouissance-differee) selon le motif du départ.
 
-- En cas de révocation par l'employeur pour insuffisance professionelle
+| Motif de la cessation de fonctions | Entrée en jouissance de la pension |
+|---|---|
+| Âge légal atteint ; invalidité ; licenciement pour suppression d'emplois | immédiate |
+| Mise à la retraite sur demande de l'agent ; licenciement pour insuffisance professionnelle | différée jusqu'à 50 ans |
+| Révocation ; démission | différée jusqu'à l'âge légal |
 
-- Sur demande des mères ayant 3 enfants de moins de 20 ans ou comprenant un enfant ayant un handicap lourd (sans limite d'âge) après accord du Premier ministre
+: Entrée en jouissance de la pension selon le motif de la cessation de fonctions {#tbl-cnrps-jouissance}
 
-- En cas de mise à la retraite d'office après 15 nas de service civils et militaires effectifs
-<!-- mise à la retraite d'office : par l'employeur sans accord du salarié -->
+Source : @loi85-12, art. 41.
 
-- Par arrêté de premier ministre après avis de commission d'assainissement et de restructuration des entreprises à participation publiques (CAREP)
+Deux dispositifs de départ anticipé ont par ailleurs été créés hors de la loi de 1985 : un système de [retraite anticipée volontaire](#g-retraite-anticipee-volontaire) par la loi n° 87-7 du 6 mars 1987 [@loi87-7], et une mise à la retraite avant l'âge légal par la loi n° 2009-39 du 8 juillet 2009 [@loi2009-39], que l'article 7 de la loi n° 2019-37 maintient sous l'empire des textes antérieurs. Leur contenu n'est pas exposé ici.
 
-Cependant la date jouissance de la pension ne correspond pas forcément à la date de départ à la retraite.
-La joussiance de la pension n'intervient
+<!-- TODO (documentaliste) : lire les lois n° 87-7 (et son décret n° 87-337) et n° 2009-39 (et
+son décret n° 2009-2085) pour exposer les conditions de ces deux dispositifs. -->
 
+## Le calcul de la pension
 
-#### La pension minimale
+### La rémunération de liquidation
 
-La pension minimale s'établit à 2/3 du Smig.
+La pension est calculée sur la **dernière rémunération**, et non sur une moyenne. L'article 36 de la loi de 1985 le dit en deux temps :
 
-#### L'allocation vieillesse
+> « La pension est liquidée sur la base de la dernière rémunération perçue par l'agent mis à la retraite et ayant fait l'objet de retenues au titre des contributions […] pendant une période minimum de trois ans. […] Toutefois, la liquidation de la pension de retraite est effectuée sur la base de la rémunération afférente à la fonction la plus élevée que l'agent a effectivement exercé pendant une période minimum de deux (2) années entières au cours de sa carrière, à condition que les contributions au titre de cette fonction portent sur une période minimum de trois (3) ans. » [@loi85-12, art. 36]
 
-Les agents ayant une durée d'assurance supérieure ou égale à 5 ans et strictement inférieure à la durée de stage requise par leur statut peuvent opter pour le remboursement de leurs cotisations retraites ou demander à jouir d'une allocation vieillesse.
+La règle est donc double. En principe, la rémunération de liquidation est la dernière, à condition qu'elle ait supporté des retenues pendant trois ans. Par exception, elle est celle de la **fonction la plus élevée** exercée pendant deux années entières au cours de la carrière, sous la même condition de trois ans de contributions. La rémunération retenue est constituée des [éléments permanents](#g-elements-permanents-remuneration) de la rémunération, en espèces ou en nature, qui forment aussi l'assiette de la contribution [@loi85-12, art. 10] et dont les décrets n° 85-980 et 85-1176 fixent la liste [@decret85-980 ; @decret85-1176].
 
-L'allocation vieillesse 50% du Smig du régime de 2400 heures par an.
+La caisse a publié un *Manuel de liquidation des pensions et accessoires*, document administratif interne daté du 19 décembre 2013, donc antérieur à la loi n° 2019-37 [@cnrps-manuel-liquidation-2013]. Ce document n'est pas une norme : ce que ce chapitre en tire est présenté comme la pratique de la caisse à cette date, non comme la règle légale. Le manuel précise l'application qu'elle fait de cet article : la règle vaut aussi pour l'agent **décédé en activité**, et la seconde branche, qu'il désigne comme « la situation la plus avantageuse », n'est mise en œuvre que **sur demande** [@cnrps-manuel-liquidation-2013, p. 83].
 
-<!-- de 2400 heures par an est-ce 48 heures ? -->
+### Les annuités liquidables
 
-#### Droits annexes
+Le [taux de liquidation](#g-taux-de-liquidation) s'acquiert par [annuités liquidables](#g-annuite-liquidable), selon un barème progressif puis dégressif.
 
-#### Rente d'invalidité
+| Tranche de services | Par année | Par trimestre | Taux cumulé en fin de tranche |
+|---|---:|---:|---:|
+| Les dix premières années | 2 % | 0,5 % | 20 % |
+| Les dix années suivantes | 3 % | 0,75 % | 50 % |
+| Les années au-delà de vingt | 2 % | 0,5 % | 90 % à quarante années |
 
-La pension maximale servie comprise comme la somme de la rente d'invalidité et  de la pension de retraite ne saurait être à 100 % du traitement ayant servi de référence pour la liquidation de la pension.
+: Barème des annuités du régime des pensions civiles et militaires, depuis le 12 septembre 1985 {#tbl-cnrps-annuites}
 
-#### Les militaires
+Source : @loi85-12, art. 38. La dernière colonne est le cumul arithmétique du barème.
 
+Le décompte se fait au trimestre : toute période inférieure à une année est comptée par trimestres, toute période égale ou supérieure à 45 jours vaut un trimestre, et toute période inférieure à 45 jours est ignorée [@loi85-12, art. 35]. Le barème antérieur à 1985 n'a pas été établi.
 
+### Les bonifications
 
-<!-- ```{python}
-#| label: tbl-ohe_example
-#| tbl-cap: 'One-hot vectorization example'
-#| tbl-column: body
-#| output: asis
-from itables import show
-import pandas as pd
+La [bonification](#g-bonification) est une période ajoutée à la durée des services effectifs pour le calcul de la pension. La loi de 1985 en fait bénéficier trois catégories d'agents dont la carrière est écourtée par un âge de départ inférieur au droit commun [@loi85-12, art. 32].
 
-df = pd.DataFrame(
-    data = {
-        'Sentence': ['I like to eat apples', 'I like to eat bananas'],
-        'Tokens' : [['I', 'like', 'to', 'eat', 'apples'], ['I', 'like', 'to', 'eat', 'bananas']],
-        'Vector' : [[1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 0, 1]],
-        }
-    )
+| Services accomplis | Ouvriers des travaux pénibles et insalubres | Cadres actifs | Fonctions astreignantes |
+|---|---|---|---|
+| 35 ans | 5 ans | période restant à courir jusqu'à 60 ans, dans la limite de 5 ans | période restant à courir jusqu'à 60 ans |
+| 25 ans | 4 ans | idem, dans la limite de 4 ans | idem |
+| 20 ans | 3 ans | idem, dans la limite de 3 ans | idem |
+| 15 ans | 2 ans | idem, dans la limite de 2 ans | idem |
 
-show(df)
-``` -->
+: Bonifications de la loi n° 85-12, selon la catégorie et la durée des services {#tbl-cnrps-bonifications}
 
-```
-   
+Source : @loi85-12, art. 32-33.
+
+L'article 33 accorde en outre une bonification égale à la période restant à courir jusqu'à 60 ans aux militaires et agents des [forces de sécurité intérieure](#g-forces-de-securite-interieure) blessés en service, aux agents atteints d'une invalidité de 80 % au moins et aux agents mis à la retraite pour suppression d'emplois [@loi85-12, art. 33]. L'article 33 (nouveau), issu de la loi n° 2019-37, porte ce repère à **62 ans** et plafonne à un rendement de **20 %** de la rémunération de liquidation la bonification des agents [mis à la retraite d'office](#g-mise-a-la-retraite-d-office) [@loi2019-37].
+
+<!-- TODO (documentaliste) : vérifier si la loi n° 2019-37 porte aussi à 62 ans le repère de
+l'article 32 (fonctions astreignantes, cadres actifs) ; le dossier ne l'établit que pour
+l'article 33. -->
+
+### Le plafond
+
+Le montant de la pension de retraite « ne doit pas dépasser **90 %** de la rémunération sur la base de laquelle a été liquidée la pension » [@loi85-12, art. 38]. Ce plafond est posé en pourcentage : le barème l'atteint au terme de quarante années de services, et il borne ensuite l'effet des bonifications.
+
+Il a remplacé un plafond plus bas. L'article 22 § II de la loi de 1959, dans sa rédaction issue de la loi n° 81-70, limitait « la rémunération de l'ensemble des annuités liquidées » à **80 %** de la rémunération globale, à compter du 1^er^ mai 1981 [@loi81-70, art. 4]. L'évolution de ce plafond est présentée avec celle des planchers dans le tableau @tbl-cnrps-plafond-plancher.
+
+## Les planchers
+
+Deux mécanismes protègent les agents dont la pension serait trop faible ou dont la carrière est trop courte pour ouvrir un droit.
+
+La **[pension minimale garantie](#g-pension-minimale-garantie)** porte la pension au niveau des **deux tiers du [SMIG](#g-smig)** du régime de 2 400 heures par an [@loi85-12, art. 39]. Le même niveau de deux tiers du SMIG figurait déjà, pour la pension d'ancienneté ou proportionnelle, dans la réécriture de 1981 de la loi de 1959 [@loi81-70, art. 4].
+
+L'**[allocation de vieillesse](#g-allocation-de-vieillesse)** s'adresse aux agents qui comptent **au moins cinq années** d'ancienneté sans atteindre la durée de services de l'article 22. Ils ont le choix entre le remboursement de leurs contributions et une allocation égale à **la moitié du SMIG** du régime de 2 400 heures par an [@loi85-12, art. 42].
+
+| Depuis | Plafond de la pension | Pension minimale | Carrière courte | Texte |
+|---|---|---|---|---|
+| 1^er^ mai 1981 | 80 % de la rémunération globale | 2/3 du SMIG (pension d'ancienneté ou proportionnelle) | règle non connue pour cette période | loi n° 59-18, art. 22 § II, rédaction de la loi n° 81-70, art. 4 |
+| 12 septembre 1985 | 90 % de la rémunération de liquidation | 2/3 du SMIG, régime de 2 400 heures | à partir de 5 ans : allocation de 1/2 SMIG ou remboursement des contributions | loi n° 85-12, art. 38, 39 et 42 |
+
+: Plafond, pension minimale et allocation de vieillesse du régime des pensions civiles et militaires {#tbl-cnrps-plafond-plancher}
+
+Sources : @loi81-70, art. 4-5 ; @loi85-12, art. 38, 39 et 42.
+
+Exprimés en fraction du salaire minimum, les deux planchers en suivent l'évolution. Le manuel de liquidation de la caisse précise un effet de qualification : lorsque le produit du taux par la rémunération de liquidation est inférieur ou égal au minimum garanti, « ce produit n'est pas considéré comme une pension de retraite mais comme un minimum garanti », distinction qui, selon le manuel, emporte des conséquences sur les accessoires et sur les retenues [@cnrps-manuel-liquidation-2013, p. 85].
+
+## Les accessoires de la pension
+
+Deux indemnités s'ajoutent à la pension de l'agent chargé de famille : « L'indemnité familiale et l'indemnité pour revenu unique s'ajoutent le cas échéant à la pension de retraite. Ces deux indemnités sont attribuées dans les mêmes conditions applicables aux agents en activité » [@loi85-12, art. 40]. La règle date de 1981 : la réécriture de la loi de 1959 ajoutait déjà à la pension de retraite et à la pension de veuve « l'indemnité familiale et une majoration pour revenu unique », selon les mêmes taux et modalités que pour les agents en activité, avec effet au 1^er^ mai 1981 [@loi81-70, art. 4-5].
+
+**L'[indemnité à caractère familial](#g-indemnite-caractere-familial)** suit les taux fixés par décret pour les agents en activité, que le livre « Prestations sociales » décrit. Leur évolution est connue depuis 1986.
+
+| Depuis | Texte | 1^er^ enfant | 2^e^ enfant | 3^e^ enfant | 4^e^ enfant |
+|---|---|---:|---:|---:|---:|
+| 1^er^ mai 1986 | décret n° 86-611, art. 1 et 3 [@decret86-611] | 7,600 D | 6,500 D | 5,600 D | 4,700 D |
+| 1^er^ janvier 1989 | décret n° 88-1136, art. 1 et 2 [@decret88-1136] | 7,600 D | 6,500 D | 5,600 D | — |
+| 1^er^ novembre 1996 | décret n° 96-1906, art. 1 à 5 [@decret96-1906] | 7,320 D | 6,507 D | 5,693 D | 4,880 D (droit acquis avant 1989) |
+
+: Taux mensuels des indemnités à caractère familial du secteur public {#tbl-indemnites-familiales}
+
+Ces trois décrets ont été précédés par le décret n° 75-952 du 30 décembre 1975, que celui de 1986 abroge et dont les taux ne sont pas connus ici [@decret75-952 ; @decret86-611, art. 2]. La disparition du quatrième rang en 1989 procède de la loi n° 88-39 du 6 mai 1988, qui limite le droit aux trois premiers enfants [@loi88-39] ; le décret de 1996 fixe à 4,880 dinars l'indemnité due au titre du quatrième enfant ayant acquis ce droit avant le 1^er^ janvier 1989 et celle de l'enfant handicapé venant après le troisième rang [@decret96-1906, art. 2-3]. Les taux de 1996 sont nominalement inférieurs à ceux de 1986 pour les trois premiers rangs ; le décret n'en expose pas le motif.
+
+**L'[indemnité de revenu unique](#g-indemnite-revenu-unique)** n'a pas de barème identifié. La loi n° 81-70 ouvre le droit des retraités et en fixe l'effet au 1^er^ mai 1981, mais renvoie aux taux servis aux agents en activité sans en énoncer aucun ; aucun texte publié au *Journal officiel* fixant ces taux n'a été retrouvé. Le manuel de liquidation de la caisse rattache le dispositif, en amont, à deux décrets de 1944 — celui du 2 février 1944, portant création de l'indemnité familiale et de l'indemnité de revenu unique au profit des agents du secteur public, et celui du 8 juin 1944, instituant un régime d'allocations familiales [@cnrps-manuel-liquidation-2013, pp. 90-94].
+
+<!-- TODO (documentaliste) : identifier le texte fixant les montants de l'indemnité de revenu
+unique servie aux agents publics et aux retraités (le manuel de la CNRPS, p. 94, publie un
+barème sans en citer la source ; les décrets de 1944 sont antérieurs à la couverture de
+jort_cache.db). Aucun montant n'est à publier avant cette identification. Lire aussi le décret
+n° 75-952 pour compléter la série des indemnités familiales, et la circulaire n° 42 du
+25 octobre 1996 [@circulaire-42-1996], texte de gestion de ces indemnités. -->
+
+Selon le manuel de liquidation, la caisse applique à ces accessoires plusieurs règles d'attribution : l'âge limite des enfants est de 16 ans, reculé à 18 ans en apprentissage et à 21 ans en cas d'études, sans limite pour les enfants handicapés ; l'indemnité de revenu unique suppose au moins un enfant ouvrant droit à l'indemnité familiale et un seul revenu dans le ménage ; et sont exclus des deux indemnités les chefs de secteur, les députés et les membres de la chambre des conseillers, les membres du gouvernement, les gouverneurs et les titulaires d'une seule solde de réforme [@cnrps-manuel-liquidation-2013, pp. 90-95].
+
+## Les droits dérivés
+
+### Le conjoint survivant
+
+Au décès de l'agent, le conjoint survivant perçoit une [pension de réversion](#g-pension-de-reversion) égale à **75 %** de la pension de retraite dont l'agent avait bénéficié ou aurait pu bénéficier. Pendant la période où une pension temporaire d'orphelin est servie, ce taux est réduit de 5 % au titre du troisième enfant et de 10 % au titre de chacun des enfants suivants, sans pouvoir descendre au-dessous de **50 %** [@loi85-12, art. 43]. La même mécanique figurait déjà dans la loi de 1959 réécrite en 1981, qui ajoutait à la pension de veuve 75 % de la rente d'invalidité dont bénéficiait le mari [@loi81-70, art. 4].
+
+La pension est suspendue en cas de remariage avant 55 ans, et rétablie, revalorisée, en cas de décès du nouveau conjoint ou de dissolution du mariage ; en cas de pluralité de veuves, elle est répartie à parts égales, sans que chacune puisse percevoir moins que le minimum légal de la pension du conjoint [@loi85-12, art. 44]. Le conjoint et les enfants d'un agent absent depuis six mois peuvent obtenir une pension provisoire [@loi85-12, art. 50].
+
+### Les orphelins
+
+Chaque orphelin perçoit une [pension temporaire d'orphelin](#g-pension-temporaire-orphelin) égale à **10 %** de la pension de retraite, jusqu'à 21 ans [@loi85-12, art. 45]. Trois règles encadrent le cumul des pensions de survivants. Leur total « ne doit pas dépasser le montant de la pension de l'agent », la pension du conjoint étant réduite en cas de dépassement ; lorsque les orphelins sont au nombre de cinq ou plus, le conjoint perçoit 50 % et les 50 % restants sont partagés à parts égales entre les orphelins [@loi85-12, art. 45] ; et les pensions d'orphelins ne peuvent au total être inférieures aux indemnités familiales dont aurait bénéficié l'agent [@loi85-12, art. 48].
+
+La loi n° 2007-43 a élargi les conditions de la pension d'orphelin.
+
+| Règle | Loi n° 85-12 (12 septembre 1985) | Loi n° 2007-43 |
+|---|---|---|
+| Âge limite de droit commun | 21 ans | 21 ans |
+| Études supérieures | — | jusqu'à 25 ans, à condition de ne pas être boursier |
+| Fille sans ressources | — | sans condition d'âge ; paiement définitivement suspendu si l'une des conditions vient à manquer |
+| Maladie incurable ou invalidité permanente | sans condition d'âge | sans condition d'âge |
+| Pension du conjoint non attribuée | répartie à parts égales entre les orphelins | idem, plafonnée à 50 % pour la fille sans ressources |
+
+: Conditions de la pension d'orphelin du secteur public, 1985 et 2007 {#tbl-cnrps-orphelins}
+
+Sources : @loi85-12, art. 45-47 ; @loi2007-43, qui remplace les articles 46 et 47. La loi n° 2007-43 ne comporte pas de clause d'entrée en vigueur ; elle est publiée le 26 juin 2007.
+
+### Les cumuls
+
+Le cumul de deux pensions est interdit au titre des mêmes services et admis au titre de services successifs [@loi85-12, art. 56]. Le titulaire d'une pension propre peut la cumuler avec une pension de réversion du chef de son conjoint [@loi85-12, art. 58], et une pension avec une rente viagère pour invalidité [@loi85-12, art. 59].
+
+### Le capital-décès
+
+Le décès d'un agent en activité ou d'un retraité de la caisse ouvre en outre à ses ayants droit un [capital-décès](#g-capital-deces), régi par le décret n° 93-308 du 1^er^ février 1993 [@decret93-308]. C'est une prestation distincte de la pension, financée par une cotisation propre ; le livre « Prestations sociales » en expose le champ, le calcul et la répartition.
+
+## L'invalidité
+
+L'invalidité des agents publics relève encore de la loi n° 59-18, que la loi de 1985 a maintenue en vigueur sur ce point [@loi85-12, art. 76], et à la commission de réforme de laquelle elle renvoie. L'invalidité est l'un des cas d'admission à la retraite avant l'âge légal [@loi85-12, art. 5] et ouvre une pension à jouissance immédiate [@loi85-12, art. 41]. S'y ajoute une **[rente viagère d'invalidité](#g-rente-viagere-invalidite)**, dont le montant, dans la rédaction de l'article 26 § II issue de la loi n° 81-70, « est égal au produit de la rémunération soumise à retenue pour pension par le taux de l'invalidité » [@loi81-70, art. 4]. L'agent atteint d'une invalidité de 80 % au moins bénéficie en outre de la bonification décrite plus haut [@loi85-12, art. 33].
+
+::: {.callout-warning title="Le plafond de 100 % est une règle de la caisse, et la formule de la rente diffère entre la loi et la caisse"}
+Le manuel de liquidation de la caisse écrit que « le montant de la rente viagère d'invalidité et de la pension de retraite ne peut dépasser la limite de 100 % de la rémunération d'activité servie de base pour le calcul de la pension », que le total de la pension et de la rente ne peut être inférieur au minimum garanti, et que le taux d'invalidité ouvrant droit à la rente est compris entre 66 % et 100 % [@cnrps-manuel-liquidation-2013, p. 87]. **Aucun texte identifié ne pose ce plafond** : la loi n° 85-12 n'en parle pas, et, parmi les articles de la loi n° 59-18 relatifs à l'invalidité, maintenus en vigueur, seul l'article 26 § II a pu être consulté. Il est présenté ici comme la pratique de la caisse en 2013, non comme une règle légale.
+
+**La formule de la rente n'est pas la même dans les deux sources.** La loi, dans sa rédaction de 1981, multiplie le taux d'invalidité par la **rémunération** soumise à retenue ; le manuel le multiplie par la **pension** de retraite. Les deux calculs ne donnent le même résultat que si le taux de liquidation atteint 100 %, ce que les plafonds de 80 % puis de 90 % excluent. Aucun texte identifié ne permet de dire si une disposition postérieure à 1981 a modifié la formule légale.
+:::
+
+<!-- TODO (documentaliste) : ouvrir les articles 25 à 30 de la loi n° 59-18 (JORT n° 8 de 1959,
+pp. 93-100) et toute modification postérieure à 1981 de l'article 26, pour établir le
+fondement du plafond de 100 % et trancher entre les deux formules de la rente. -->
+
+Selon le même manuel, la rente viagère d'invalidité est réversible au conjoint survivant et aux orphelins dans les mêmes conditions et aux mêmes taux que la pension, et elle bénéficie de la péréquation. Le manuel décrit aussi une **[rente compensatrice](#g-rente-compensatrice)**, servie depuis janvier 1996 au titre de la loi n° 95-56 du 28 juin 1995 aux agents victimes d'un accident du travail ou d'une maladie professionnelle, à la charge de l'employeur et payée par la caisse, avec une formule et des bornes identiques à celles de la rente viagère ; la période de service de la rente y est réputée période d'activité cotisée lorsque l'incapacité permanente dépasse 66 % [@cnrps-manuel-liquidation-2013, pp. 88-89]. La loi n° 95-56 exclut les militaires et les agents des forces de sécurité intérieure [@loi95-56, art. 2] ; le livre « Prestations sociales » en expose le régime.
+
+## La revalorisation : la péréquation
+
+La pension du secteur public n'est indexée ni sur les prix ni sur le salaire minimum. Elle suit la rémunération des agents en activité du même grade, par un mécanisme que la loi appelle **[péréquation](#g-perequation)** :
+
+> « La péréquation de la pension est effectuée lors de toute augmentation de l'un quelconque des éléments permanents de la rémunération correspondante au grade ou à la fonction sur la base de laquelle a été liquidée la pension. La péréquation de la pension est également effectuée lors de l'institution d'une indemnité permanente concernant le grade ou la fonction sur la base de laquelle a été liquidée la pension. » [@loi85-12, art. 37]
+
+La péréquation n'est pas gratuite pour le retraité. L'article 37 (nouveau) issu de la loi n° 2007-43 reprend la règle mot pour mot et ajoute que « la totalité des contributions au titre de cette péréquation durant la période de paiement de la pension et de ses accessoires, à l'exception de la quote-part des contributions mises à la charge de l'employeur durant 36 mois, est à la charge du bénéficiaire de la pension » [@loi2007-43, art. 37 (nouveau)].
+
+Le mécanisme a donc connu trois états. Avant 1985, trois décrets relatifs à la revalorisation des pensions servies par la caisse sont repérés au *Journal officiel*, dont seul l'intitulé est connu ici : le décret n° 81-939 du 4 juillet 1981 [@decret81-939], le décret n° 82-971 du 30 juin 1982 [@decret82-971] et le décret n° 83-737 du 10 août 1983 [@decret83-737] ; aucun décret de même objet postérieur à 1983 n'a été repéré. Depuis le 12 septembre 1985, la pension suit la rémunération d'activité du grade ou de la fonction de liquidation. Depuis 2007, les contributions afférentes à cette revalorisation sont, passé 36 mois, supportées par le retraité.
+
+<!-- TODO (documentaliste) : les trois décrets de revalorisation de 1981, 1982 et 1983 ne sont
+connus que par leurs intitulés ; les lire pour dater et chiffrer les revalorisations
+antérieures à la péréquation, et rechercher les textes antérieurs à 1981. -->
+
+Le manuel de liquidation de la caisse décrit la mise en œuvre de la péréquation, en la distinguant de la **révision** de la pension prévue par l'article 54 de la loi, qui est une reliquidation destinée à redresser une erreur ou à intégrer un élément nouveau de carrière. Selon le manuel, la péréquation consiste à « faire bénéficier les pensionnés des mêmes avantages de rémunération accordés à leurs homologues en activité » ; elle est automatique pour les indemnités à montant fixe, et subordonnée, pour les indemnités à montant variable, à la production par le pensionné d'une fiche individuelle de péréquation [@cnrps-manuel-liquidation-2013, pp. 139-140].
+
+## Les régimes spéciaux
+
+Les membres du gouvernement, les députés et les gouverneurs relèvent de trois régimes distincts, construits sur le même patron : un renvoi général à la législation des pensions des fonctionnaires, puis des conditions particulières d'ouverture, de calcul et de jouissance. Leurs taux de contribution sont exposés dans le livre « Cotisations sociales ».
+
+| Maillon | Membres du gouvernement : loi n° 83-31 | Députés : loi n° 85-16 | Gouverneurs : loi n° 88-16 |
+|---|---|---|---|
+| Signature ; publication | 17 mars 1983 ; 25 mars 1983 | 8 mars 1985 ; 15 mars 1985 | 17 mars 1988 ; 22 mars 1988 |
+| Ouverture du droit | deux années de fonctions | une législature complète ; à défaut, deux années et paiement des contributions sur la période restante | deux années successives de fonctions |
+| Assiette | rémunération d'activité à la date de début de jouissance | indemnités parlementaires permanentes | éléments permanents de la rémunération de gouverneur |
+| Taux | 35 % pour deux ans, puis 5 % par période de six mois | 30 % pour une législature, 60 % pour deux, 90 % pour trois et plus | 6 % par année, 1,5 % par trimestre |
+| Plafond | pourcentage maximum du régime des fonctionnaires, soit 80 % à la date de la loi puis 90 % depuis le 12 septembre 1985 | 90 %, y compris en cas de cumul avec d'autres pensions | 90 %, au titre du cumul des pensions |
+| Jouissance | à la cessation des fonctions ; suspendue en cas de fonction publique ou d'activité privée lucrative, reportée dans ce dernier cas à 50 ans | à l'expiration de la législature ; suspendue en cas de réélection, de fonction publique ou d'activité professionnelle rétribuée, reportée dans ce dernier cas à 50 ans | à la cessation des fonctions ; mêmes suspensions, report à 50 ans |
+| Durée insuffisante | remboursement des retenues | remboursement des retenues et application du régime des fonctionnaires | — |
+| Revalorisation | — | péréquation, dans les conditions des pensions des fonctionnaires | péréquation, dans les conditions des pensions des fonctionnaires |
+
+: Les trois régimes spéciaux du secteur public {#tbl-regimes-speciaux}
+
+Sources : @loi83-31, art. 1 à 6 ; @loi85-16, art. 1 à 8 ; @loi88-16, art. 1 à 8. Les deux tirets signalent des règles qui ne sont pas exposées ici : les articles 1 à 6 de la loi n° 83-31 ne traitent pas de la revalorisation, et la règle de la loi n° 88-16 pour une durée de fonctions insuffisante n'est pas connue.
+
+Trois points appellent un commentaire.
+
+**Le plafond des membres du gouvernement est défini par renvoi.** La pension ne peut dépasser, « par rapport à la rémunération d'activité, le pourcentage maximum prévu dans le régime de retraite des fonctionnaires de l'État » [@loi83-31, art. 3]. Par le jeu de ce renvoi, le plafond est de 80 % à la date de la loi, puis de 90 % depuis le 12 septembre 1985 ; cette conclusion se déduit du rapprochement des textes, aucun ne l'énonce.
+
+**Le plafond des gouverneurs est un plafond de cumul.** L'article 3 de la loi de 1988 ne borne pas le taux de liquidation, qui atteint 90 % au terme de quinze années de fonctions ; c'est l'article 7 qui dispose que « le montant total de ces pensions ne peut dépasser 90 % des éléments permanents de la rémunération de gouverneur » lorsque la pension de gouverneur se cumule avec d'autres pensions [@loi88-16, art. 3 et 7]. La loi des députés pose, elle, les deux plafonds au même niveau de 90 % [@loi85-16, art. 3 et 7].
+
+**Les validations et les extensions.** La loi de 1985 valide les législatures antérieures, depuis l'Assemblée constituante, et abroge le décret-loi n° 74-22 du 2 novembre 1974 et la loi n° 77-57 du 3 août 1977 [@loi85-16, art. 10 et 14] ; celle de 1988 valide les fonctions de gouverneur exercées depuis le 21 juin 1956 [@loi88-16, art. 9]. Deux textes, dont seul l'intitulé est connu ici, complètent cet ensemble : la loi n° 88-101 du 18 août 1988, relative à la retraite des membres de la chambre des députés [@loi88-101], et la loi n° 2005-54 du 18 juillet 2005, étendant les régimes spéciaux des députés aux membres de la chambre des conseillers [@loi2005-54]. La loi n° 2007-43 a relevé les taux de contribution des trois régimes sans toucher à leurs règles de liquidation [@loi2007-43, art. 1].
+
+Selon le manuel de liquidation de la caisse, les pensions des régimes spéciaux sont servies sans accessoires — ni indemnités familiales, ni indemnité de revenu unique, ni rente d'invalidité — et le cumul de pensions y est admis dans la limite de 90 % de la rémunération la plus élevée [@cnrps-manuel-liquidation-2013, p. 86].
+
+<!-- TODO (documentaliste) : lire la dernière page de la loi n° 83-31 (JORT n° 23 de 1983, p. 809)
+pour sa date d'effet et une éventuelle clause de revalorisation ; lire les lois n° 88-101 et
+2005-54 ; vérifier l'article 6 de la loi n° 88-16 (durée insuffisante). La loi de finances pour
+1989 (loi n° 88-145, art. 72 à 74), citée par le manuel au titre des régimes spéciaux, est à
+ouvrir et n'a pas de clé bibliographique. Les régimes spéciaux créés après 2011 (Assemblée
+nationale constituante, Assemblée des représentants du peuple) ne sont pas documentés. -->
+
+## Les militaires
+
+Les militaires relèvent du régime des pensions civiles et militaires, dont la loi de 1985 comporte un volet propre (art. 61 à 71). Trois de ses règles sont établies.
+
+**L'âge de mise à la retraite dépend du grade.** La loi de 1985 le fixe à 50 ans pour les hommes de troupe, quartiers-maîtres et matelots, 55 ans pour les sous-officiers et officiers mariniers, 58 ans pour les officiers subalternes, 60 ans pour les officiers supérieurs et 62 ans pour les officiers généraux [@loi85-12, art. 61]. L'article 61 § 1 (nouveau) issu de la loi n° 2019-37 retient les âges de 52, 57, 60 et 62 ans [@loi2019-37, art. 1], selon une répartition entre grades qui n'est pas établie ici ; le calendrier transitoire de 2019 décrit plus haut s'applique aussi à cet article.
+
+**La bonification** est égale à la période restant à courir jusqu'à 60 ans pour les militaires mis à la retraite d'office ou ayant atteint l'âge limite de leur grade [@loi85-12, art. 67] ; l'article 67 (nouveau), issu de la loi n° 2019-37, porte ce repère à 62 ans [@loi2019-37]. Les militaires blessés en service bénéficient en outre de la bonification de l'article 33.
+
+**La [solde de réforme](#g-solde-de-reforme)**, organisée par les articles 69 à 71, ne peut jamais être inférieure à la pension minimum garantie [@loi85-12, art. 70].
+
+<!-- TODO (documentaliste) : établir sur la loi n° 85-12 (art. 61 à 71) et la loi n° 2019-37 les
+durées de services exigées des militaires selon le grade, la correspondance entre grades et
+âges de l'article 61 § 1 (nouveau), l'objet et les conditions de la solde de réforme, et le
+régime des agents des forces de sécurité intérieure. Le livre « Les rémunérations dans le
+secteur public » (régime statutaire autonome) renvoie à ce chapitre pour les durées de services
+et les âges des militaires : seuls les âges sont aujourd'hui traités. -->
