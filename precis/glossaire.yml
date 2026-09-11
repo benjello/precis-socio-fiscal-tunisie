@@ -2229,7 +2229,7 @@ entries:
   - id: allocation-de-vieillesse
     acronyme: null
     statut: valide
-    references: [loi81-6, decret74-499]
+    references: [loi97-74, loi81-6, decret74-499]
     source_definition: {ref: loi85-12, locator: "art. 42"}
     voir_aussi: [pension-proportionnelle, pension-minimale-garantie, smig]
     fr:
@@ -2239,7 +2239,9 @@ entries:
         droit à pension. Dans le secteur public, l'agent qui compte au moins cinq
         années d'ancienneté sans atteindre la durée de services requise choisit entre
         le remboursement de ses contributions et une allocation égale à la moitié du
-        SMIG du régime de 2 400 heures par an (loi n° 85-12, art. 42). Dans le régime
+        SMIG du régime de 2 400 heures par an (loi n° 85-12, art. 42) ; depuis la loi
+        n° 97-74, cette allocation est réversible au profit du conjoint survivant et
+        des orphelins, dans les conditions applicables aux pensions. Dans le régime
         des salariés non agricoles, elle était versée en capital à partir de 60 mois
         de cotisations, jusqu'à son remplacement par la pension proportionnelle en
         1982 ; le régime des salariés agricoles la conserve en capital à partir de
@@ -2252,7 +2254,9 @@ entries:
         جراية. في القطاع العمومي، يختار العون الذي يعدّ خمس سنوات أقدمية على الأقلّ
         دون بلوغ مدّة الخدمات المطلوبة بين استرجاع مساهماته ومنحة تساوي نصف الأجر
         الأدنى المضمون لمختلف المهن في نظام 2400 ساعة في السنة (القانون عدد 12 لسنة
-        1985، الفصل 42). وفي نظام الأجراء غير الفلاحيين، كانت تُصرف في شكل رأس مال
+        1985، الفصل 42)؛ ومنذ القانون عدد 74 لسنة 1997، أصبحت هذه المنحة قابلة
+        للانتقال إلى القرين الباقي على قيد الحياة والأيتام، وفق الشروط المنطبقة على
+        الجرايات. وفي نظام الأجراء غير الفلاحيين، كانت تُصرف في شكل رأس مال
         ابتداءً من 60 شهرًا من المساهمات، إلى أن عُوِّضت بالجراية النسبية سنة 1982؛
         ويحتفظ بها نظام الأجراء الفلاحيين في شكل رأس مال ابتداءً من 20 ثلاثية
         (القانون عدد 6 لسنة 1981، الفصول 70-73).
@@ -2512,30 +2516,41 @@ entries:
   - id: mise-a-la-retraite-d-office
     acronyme: null
     statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
-    references: [loi2019-37]
-    source_definition: {ref: loi85-12, locator: "art. 33 et 67"}
+    references: [loi88-71, loi90-6, loi2019-37]
+    source_definition: {ref: loi85-12, locator: "art. 5, 6, 33 et 67"}
     voir_aussi: [bonification, solde-de-reforme]
     fr:
       terme: Mise à la retraite d'office
       definition: >
         Mise à la retraite prononcée par l'administration, et non à la demande de
-        l'agent. La loi n° 85-12 en tire des effets sur le calcul de la pension : les
-        militaires mis à la retraite d'office ou atteints par la limite d'âge de leur
-        grade bénéficient d'une bonification égale à la période restant à courir
-        jusqu'à 60 ans, repère porté à 62 ans par la loi n° 2019-37 (art. 67), et
-        l'article 33 (nouveau) issu de la même loi plafonne à un rendement de 20 % de
-        la rémunération de liquidation la bonification des agents mis à la retraite
-        d'office.
+        l'agent. Dans le secteur public, la loi n° 88-71 l'ajoute, à compter du
+        1^er^ janvier 1989, aux cas d'admission à la retraite avant l'âge légal, après
+        quinze ans de services effectifs ; hors militaires et agents des forces de
+        sécurité intérieure, elle est décidée par décret au vu d'un rapport de
+        l'employeur et des observations de l'agent. Elle ouvre une pension à
+        jouissance immédiate. La même loi fait bénéficier les agents mis à la retraite
+        d'office de la bonification de l'article 33, égale à la période restant à
+        courir jusqu'à l'âge légal, à condition que son rendement ne dépasse pas 20 %
+        de la rémunération de liquidation ; la loi n° 2019-37, qui réécrit
+        l'article 33, maintient ce plafond. Les militaires mis à la retraite d'office
+        ou atteints par la limite d'âge de leur grade bénéficient d'une bonification
+        égale à la période restant à courir jusqu'à 60 ans (loi n° 85-12, art. 67),
+        repère porté à 62 ans par la loi n° 2019-37.
       synonymes: []
     ar:
       terme: الإحالة الوجوبية على التقاعد
       definition: >
-        إحالة على التقاعد تقرّرها الإدارة لا بطلب من العون. ويرتّب عليها القانون عدد 12
-        لسنة 1985 آثارًا في احتساب الجراية: ينتفع العسكريون المحالون وجوبًا على التقاعد
-        أو البالغون السنّ القصوى لرتبتهم بترفيع في مدّة الخدمات يساوي الفترة المتبقّية
-        إلى سنّ الستين، وقد رفع القانون عدد 37 لسنة 2019 هذا الحدّ إلى سنّ الثانية
-        والستين (الفصل 67)، ويحدّد الفصل 33 (جديد) المنبثق عن نفس القانون مردود الترفيع
-        في مدّة خدمات الأعوان المحالين وجوبًا على التقاعد بـ20 % من أجر التصفية.
+        إحالة على التقاعد تقرّرها الإدارة لا بطلب من العون. في القطاع العمومي، أضافها
+        القانون عدد 71 لسنة 1988، ابتداءً من غرّة جانفي 1989، إلى حالات الإحالة على
+        التقاعد قبل السنّ القانونية، بعد خمس عشرة سنة من الخدمات الفعلية؛ وباستثناء
+        العسكريين وأعوان قوّات الأمن الداخلي، تُقرَّر بأمر بناءً على تقرير المؤجّر
+        وملاحظات العون. وتفتح الحقّ في جراية فورية الانتفاع. وقد مكّن نفس القانون الأعوان
+        المحالين وجوبًا على التقاعد من الترفيع في مدّة الخدمات المنصوص عليه بالفصل 33،
+        والمساوي للفترة المتبقّية إلى السنّ القانونية، شريطة ألّا يتجاوز مردوده 20 % من
+        أجر التصفية؛ وأبقى القانون عدد 37 لسنة 2019، الذي أعاد صياغة الفصل 33، على هذا
+        السقف. وينتفع العسكريون المحالون وجوبًا على التقاعد أو البالغون السنّ القصوى
+        لرتبتهم بترفيع يساوي الفترة المتبقّية إلى سنّ الستين (القانون عدد 12 لسنة 1985،
+        الفصل 67)، وقد رفع القانون عدد 37 لسنة 2019 هذا الحدّ إلى سنّ الثانية والستين.
       synonymes: []
 
   - id: pension-de-reversion
@@ -2633,7 +2648,7 @@ entries:
   - id: perequation
     acronyme: null
     statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
-    references: [loi2007-43, cnrps-manuel-liquidation-2013]
+    references: [loi2001-123-lf2002, loi2007-43, cnrps-manuel-liquidation-2013]
     source_definition: {ref: loi85-12, locator: "art. 37"}
     voir_aussi: [elements-permanents-remuneration, revalorisation-pensions, pensions-civiles-militaires]
     fr:
@@ -2643,9 +2658,13 @@ entries:
         réajustée lors de toute augmentation de l'un des éléments permanents de la
         rémunération du grade ou de la fonction sur la base desquels elle a été
         liquidée, ainsi que lors de l'institution d'une indemnité permanente attachée
-        à ce grade ou à cette fonction (loi n° 85-12, art. 37). Depuis la loi
-        n° 2007-43, les contributions afférentes à la péréquation sont à la charge du
-        retraité, à l'exception de la quote-part de l'employeur pendant 36 mois. Elle
+        à ce grade ou à cette fonction (loi n° 85-12, art. 37). Depuis le
+        1^er^ janvier 2002, la péréquation donne lieu à contribution : la loi de
+        finances pour 2002 (art. 86) rend la contribution du retraité due pendant toute
+        la période de service de la pension et de ses accessoires, et celle de
+        l'employeur sur une période de 36 mois ; la loi n° 2007-43 reformule la règle,
+        en mettant à la charge du retraité la totalité des contributions, à
+        l'exception de la quote-part de l'employeur pendant 36 mois. Elle
         se distingue de la révision de la pension, qui est une reliquidation
         (art. 54), et de la revalorisation par référence au salaire minimum du
         secteur privé.
@@ -2656,8 +2675,11 @@ entries:
         آلية لتعديل جرايات القطاع العمومي، تُراجَع بمقتضاها الجراية عند كلّ زيادة في أحد
         العناصر القارّة للأجر المطابق للرتبة أو الخطّة التي صُفّيت الجراية على أساسها،
         وكذلك عند إحداث منحة قارّة مرتبطة بتلك الرتبة أو الخطّة (القانون عدد 12 لسنة
-        1985، الفصل 37). ومنذ القانون عدد 43 لسنة 2007، يتحمّل المتقاعد المساهمات
-        المستوجبة بعنوان التنظير، باستثناء منابات المؤجّر خلال 36 شهرًا. ويتميّز التنظير
+        1985، الفصل 37). ومنذ غرّة جانفي 2002، يخضع التنظير للمساهمة: جعل قانون المالية
+        لسنة 2002 (الفصل 86) مساهمة المنتفع بالجراية مستوجبة طيلة فترة صرف الجراية
+        وتوابعها، ومساهمة المؤجّر مستوجبة على مدى 36 شهرًا؛ ثمّ أعاد القانون عدد 43
+        لسنة 2007 صياغة هذه القاعدة، فحمّل المتقاعد كامل المساهمات، باستثناء منابات
+        المؤجّر خلال 36 شهرًا. ويتميّز التنظير
         عن مراجعة الجراية، وهي إعادة تصفية لها (الفصل 54)، وعن تعديل الجرايات بالرجوع
         إلى الأجر الأدنى في القطاع الخاص.
       synonymes: [تسوية الجرايات, إحالة الجرايات]
@@ -2965,9 +2987,11 @@ entries:
         salaire minimum. Dans le régime des salariés non agricoles, la révision
         discrétionnaire de 1974 (décret n° 74-499, art. 53) devient automatique à
         chaque augmentation du SMIG, avec effet au 1^er^ mai 1980, sous la forme d'une
-        somme égale à la hausse du SMIG horaire rapportée à 200 heures et affectée du
-        taux de la pension (décret n° 81-187) ; depuis le 1^er^ janvier 2001, la
-        pension est augmentée du taux de variation du SMIG (décret n° 2001-779). Les
+        somme égale à la hausse du SMIG horaire rapportée à 200 heures par mois et
+        affectée du taux de la pension (décret n° 81-187), règle appliquée jusqu'au
+        31 décembre 2000 ; depuis le 1^er^ janvier 2001, la majoration est un taux : la
+        pension est augmentée du taux de variation du SMIG horaire rapporté à 48 heures
+        par semaine, soit le SMIG du régime de 48 heures (décret n° 2001-779). Les
         régimes agricoles la rattachent au SMAG (loi n° 81-6, art. 80). Son
         équivalent dans le secteur public est la péréquation.
       synonymes: [Revalorisation]
@@ -2978,9 +3002,11 @@ entries:
         الأجراء غير الفلاحيين، تحوّلت المراجعة التقديرية لسنة 1974 (الأمر عدد 499 لسنة
         1974، الفصل 53) إلى تعديل آلي عند كلّ زيادة في الأجر الأدنى المضمون لمختلف المهن،
         ابتداءً من غرّة ماي 1980، في شكل مبلغ يساوي الزيادة في الأجر الأدنى بالساعة محتسبة
-        على أساس 200 ساعة ومضروبة في نسبة الجراية (الأمر عدد 187 لسنة 1981)؛ ومنذ غرّة
-        جانفي 2001، تُرفَع الجراية بنسبة تطوّر الأجر الأدنى المضمون (الأمر عدد 779 لسنة
-        2001). وتربطه الأنظمة الفلاحية بالأجر الأدنى الفلاحي المضمون (القانون عدد 6 لسنة
+        على أساس 200 ساعة في الشهر ومضروبة في نسبة الجراية (الأمر عدد 187 لسنة 1981)،
+        وهي قاعدة طُبّقت إلى غاية 31 ديسمبر 2000؛ ومنذ غرّة جانفي 2001، أصبحت الزيادة
+        نسبةً: تُرفَع الجراية بنسبة تطوّر الأجر الأدنى المضمون لمختلف المهن بالساعة
+        محتسبًا على أساس 48 ساعة في الأسبوع، أي الأجر الأدنى في نظام 48 ساعة في الأسبوع
+        (الأمر عدد 779 لسنة 2001). وتربطه الأنظمة الفلاحية بالأجر الأدنى الفلاحي المضمون (القانون عدد 6 لسنة
         1981، الفصل 80). ويقابله في القطاع العمومي تنظير الجرايات.
       synonymes: [الترفيع في الجرايات, التعديل الآلي للجرايات]
 
