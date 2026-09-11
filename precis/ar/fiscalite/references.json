@@ -81,25 +81,6 @@
       "issue": "144"
     },
     {
-      "id": "lf-2023",
-      "type": "legislation",
-      "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: lf-2023\nissue: 141\nJORT n° 141 du 23 décembre 2022, tome 165. Numéro et date du fascicule ÉTABLIS : la notice jort_cache.db rattache le « مرسوم عدد 79 لسنة 2022 مؤرخ في 22 ديسمبر 2022 و المتعلق بقانون المالية لسنة 2023 » au JORT n° 141 de 2022, date de publication 23 décembre 2022, tome 165, et le sommaire de l'ÉDITION ARABE téléchargée et ouverte le 7 septembre 2026 (168 pages, couverture « السنة 165 — الجمعة 23 ديسمبر 2022 — عدد 141 ») le confirme, le décret-loi commençant page 4059 de la pagination arabe. ATTENTION : l'édition FRANÇAISE n'est pas en ligne sur pist.tn — https://www.pist.tn/jort/2022/2022F/Jo1412022.pdf renvoie un 404 (text/html, 289 octets), bien que jort_cache.db porte un pdf_fr pour d'autres textes du même fascicule. TODO — LA PAGINATION FRANÇAISE N'EST PAS ÉTABLIE, d'où l'absence de champ page : le fascicule français est absent en ligne et la copie locale PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_de_Finances_2023.pdf est illisible (« Couldn't read xref table »). Ne pas y substituer la pagination arabe sans le dire. Articles intéressant l'assiette de l'IRPP : article 43 (revenus fonciers, refonte des exclusions de la plus-value et seuil de 500 000 D), article 41-2 (article 38 point 24), article 42-2 (abrogation du point 18 de l'article 38), article 22 (taux de la contribution sociale de solidarité).",
-      "title": "Décret-loi n° 2022-79 du 22 décembre 2022, portant loi de finances pour l'année 2023",
-      "URL": "https://www.pist.tn/jort/2022/2022A/Ja1412022.pdf",
-      "volume": "165",
-      "issued": {
-        "date-parts": [
-          [
-            2022,
-            12,
-            22
-          ]
-        ]
-      },
-      "issue": "141"
-    },
-    {
       "id": "lf-2018",
       "type": "legislation",
       "container-title": "Journal officiel de la République tunisienne",
@@ -118,26 +99,6 @@
         ]
       },
       "issue": "101"
-    },
-    {
-      "id": "lf-2022",
-      "type": "legislation",
-      "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: lf-2022\nissue: 119\nJORT n° 119 du 28 décembre 2021, tome 164, ÉDITION FRANÇAISE (179 pages) ; le décret-loi commence page 3081. Article 24 (intérêts de l'épargne : « cinq mille dinars » → « dix mille dinars » et « trois mille dinars » → « six mille dinars », article 39 § II du code) en PAGE 3086. NC 1/2022 : effet sur les revenus réalisés à partir de l'année 2021. Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. Édition arabe : https://www.pist.tn/jort/2021/2021A/Ja1192021.pdf",
-      "page": "3086",
-      "title": "Décret-loi n° 2021-21 du 28 décembre 2021, portant loi de finances pour l'année 2022",
-      "URL": "https://www.pist.tn/jort/2021/2021A/Ja1192021.pdf",
-      "volume": "164",
-      "issued": {
-        "date-parts": [
-          [
-            2021,
-            12,
-            28
-          ]
-        ]
-      },
-      "issue": "119"
     },
     {
       "id": "lf-2021",
@@ -780,25 +741,6 @@
           ]
         ]
       }
-    },
-    {
-      "id": "decret-2017-668-smig",
-      "type": "legislation",
-      "title": "Décret gouvernemental n° 2017-668 du 5 juin 2017, fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "45",
-      "page": "2046",
-      "issued": {
-        "date-parts": [
-          [
-            2017,
-            6,
-            5
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2017/2017F/Jo0452017.pdf",
-      "note": "citation-key: decret-2017-668-smig\nJORT n° 45 du 6 juin 2017, p. 2046. Exemple canonique du texte qui fixe le SMIG : un décret, révisé au fil des négociations salariales. Métadonnées vérifiées dans le corpus JORT local (jort_cache.db) ; contenu non lu."
     }
   ]
 }
