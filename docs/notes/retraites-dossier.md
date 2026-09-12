@@ -86,7 +86,7 @@ du décret initial (§ 8).
 | **Décret n° 85-1177** | Liste des ouvriers accomplissant des tâches pénibles et insalubres (art. 27) | 1985-09-24 | n° 68 du 1er oct. 1985 | 1255-1256 | **art. 2 : « prend effet à compter du 1er juillet 1986 »** | `/1985/1985F/Jo06885.pdf` | **[T]** |
 | **Décret n° 85-1178** | Liste des agents exerçant des fonctions astreignantes (art. 28) | 1985-09-24 | n° 68 du 1er oct. 1985 | 1256 | **art. 2 : « prend effet à compter du 1er juillet 1986 »** | `/1985/1985F/Jo06885.pdf` | **[T]** |
 | **Loi n° 88-71** | Modifie l'art. 5 de la loi 85-12 (âge des enfants) | 1988-06-27 | n° 45 | — | non lue | `/1988/1988F/Jo04588.pdf` | **[M]** |
-| **Décret n° 93-308** | Régime du capital-décès | 1993-02-01 | n° 13 | 246-247 | non lue | `/1993/1993F/Jo01393.pdf` | **[M]** (art. 5-6 cités par le modèle) |
+| **Décret n° 93-308** | Régime du capital-décès | 1993-02-01 | n° 13 du 16 févr. 1993 | 246-247 | **art. 15 : « entre en vigueur à compter du 1er juillet 1993 »** ; art. 14 : abroge le décret n° 74-572 | `/1993/1993F/Jo01393.pdf` | **[T]** (lu, § 13.5) |
 | **Loi n° 2007-43** | Modifie les art. 30, 37, 46, 47 de la loi 85-12 | 2007-06-25 | n° 51 | 2198-2199 | **aucune clause d'entrée en vigueur** ; le texte s'achève sur « La présente loi sera publiée… » | `/2007/2007F/Jo0512007.pdf` | **[T]** (texte intégral FR versionné dans `openfisca-tunisia-pension/tmp/JORTs/`) |
 | **Loi n° 2009-20** | Dispositions exceptionnelles, retraite des professeurs de l'enseignement supérieur | 2009-04-13 | n° 30 du 14 avril 2009 | 1036 | non lue | `/2009/2009F/Jo0302009.pdf` | **[M]** |
 | **Loi n° 2019-37** | Modifie et complète la loi 85-12 (âges, option, comptes individuels, taux) | 2019-04-30 | n° 35 du 30 avril 2019 | 1312-1315 | **aucune clause d'entrée en vigueur** ; l'art. 5 fixe le calendrier de l'âge | `/2019/2019F/Jo0352019.pdf` | **[T]** |
@@ -2480,3 +2480,270 @@ dans l'intervalle.
 *Pour l'encadré « Deux décrets, deux calendriers »* : il peut céder la place à cette phrase
 d'articulation ; le TODO « établir comment la règle de 1990 a été appliquée entre 1990 et 1994 »
 reste ouvert (§ 12.7).
+
+---
+
+# 13. Survivants et capital-décès : lectures pour le modèle
+
+> Section ajoutée le 12 septembre 2026. Trois textes ouverts à l'image : la loi n° 2007-43
+> (JORT n° 51 de 2007, pp. 2198-2199), le décret n° 74-572 (JORT n° 36 de 1974, pp. 1108-1109) et
+> le décret n° 93-308 (JORT n° 13 de 1993, pp. 246-247). Les trois fascicules ont été téléchargés
+> de pist.tn avec `curl -k` le 12 septembre 2026 : `200 application/pdf`, et des tailles
+> identiques à l'octet près aux fichiers du corpus local (3 614 425, 1 701 557 et 619 110 octets).
+
+## 13.0 Les quatre dates
+
+| Texte | Signature | Publication (éd. française) | Effet énoncé | URL | Niv. |
+|---|---|---|---|---|---|
+| **Décret n° 74-572**, relatif au capital-décès | 1974-05-22 | JORT **n° 36**, vendredi 24 mai 1974, **pp. 1108-1109** | **aucune clause** ; le texte s'achève sur « … sera publié au *Journal officiel* » | `/1974/1974F/Jo03674.pdf` | **[T]** |
+| **Décret n° 93-308**, relatif au régime du capital-décès | 1993-02-01 | JORT **n° 13**, mardi 16 février 1993, **pp. 246-247** | **art. 15 : « … qui entre en vigueur à compter du 1er juillet 1993 »** | `/1993/1993F/Jo01393.pdf` | **[T]** |
+| **Loi n° 2007-43** | 2007-06-25 | JORT **n° 51**, mardi 26 juin 2007 ; art. 1er, 2 et 30 (nouveau) **p. 2198**, art. 37, 46 et 47 (nouveaux) et art. 3 à 5 **p. 2199** | **aucune clause** | `/2007/2007F/Jo0512007.pdf` | **[T]** |
+
+**Dates exécutoires dérivées, pour les deux textes muets** **[D]** :
+
+- décret n° 74-572 : règle antérieure à 1993 — un jour franc après la publication (décret du
+  13 septembre 1956) —, soit le **26 mai 1974** ;
+- loi n° 2007-43 : règle de la **loi n° 93-64, art. 2** — cinq jours après le dépôt au siège du
+  gouvernorat. **La date de dépôt n'est pas attestée** ; en prenant la publication du 26 juin 2007
+  comme substitut, l'entrée en vigueur ne peut être antérieure au **1er juillet 2007**. Ce n'est pas
+  un détail décoratif : l'article 5 de la loi fait dépendre de cette date le sort des pensions
+  d'orphelin interrompues.
+
+**Correction à porter au § 1.0** : la ligne du décret n° 93-308 y porte « effet : non lue », niveau
+**[M]**. Le décret est désormais lu : art. 15, effet au **1er juillet 1993**, **[T]**.
+
+## 13.1 Loi n° 2007-43, article 46 (nouveau) — texte intégral, p. 2199 **[T]**
+
+> « **Article 46 (nouveau)**. - En cas de non attribution de la pension du conjoint pour n'importe
+> quel motif légal, cette pension est répartie à parts égales entre les orphelins **en sus de leurs
+> pensions**.
+>
+> Toutefois, en ce qui concerne la fille dont il est établi, à la date de décès de l'agent, qu'elle
+> ne dispose pas de ressources ou dont l'obligation alimentaire n'incombe pas à son époux, **le taux
+> de sa pension ne peut dépasser cinquante pour cent (50%) de la pension de retraite dont a
+> bénéficié l'agent ou aurait pu en bénéficier à la date de son décès**, »
+
+*(La phrase s'achève sur une virgule dans l'édition française.)*
+
+**Ce que 2007 change, et ce qu'il ne change pas.** Le premier alinéa n'est pas une nouveauté de
+2007 : l'article 46 de la loi n° 85-12, lu à l'image p. 363 **[T]**, dit déjà mot pour mot :
+
+> « **Art. 46**. — En cas de non attribution de la pension du conjoint pour n'importe quel motif
+> légal, cette pension est répartie à parts égales entre les orphelins **en sus de leurs
+> pensions**. »
+
+L'apport de la loi n° 2007-43 à l'article 46 se réduit donc au **second alinéa**, le plafond
+individuel de la fille sans ressources. Le § 1.4 de ce dossier, qui présente les deux règles comme
+issues ensemble de 2007, doit être lu avec cette nuance.
+
+**Réponse à la question du plafond.** L'article 46 **ne pose aucun plafond au total des pensions
+d'orphelins**. La répartition se fait « **en sus de leurs pensions** », c'est-à-dire qu'elle
+s'ajoute à la pension d'orphelin de 10 % de l'article 45 sans l'absorber. Les deux seuls plafonds
+en jeu sont ailleurs : le plafond **individuel** de 50 % du second alinéa, et le plafond **global**
+de l'article 45.
+
+**Le plafond de 50 %, exactement.** Il porte sur *la pension de la fille elle-même*, exprimée en
+part de *la pension de l'agent* — et non sur le total des pensions d'orphelins, ni sur la part du
+conjoint redistribuée. Conditions, appréciées **à la date de décès de l'agent** : ne pas disposer de
+ressources **ou** que l'obligation alimentaire n'incombe pas à son époux.
+
+## 13.2 Loi n° 2007-43, article 47 (nouveau) — texte intégral, p. 2199 **[T]**
+
+> « **Article 47 (nouveau)**. - Les dispositions des articles 45 et 46 de la présente loi
+> s'appliquent :
+>
+> - aux orphelins à la date de décès de l'agent atteints d'une maladie incurable ou d'une invalidité
+> permanente les rendant incapables d'exercer une activité rémunérée, et ce, sans tenir compte de la
+> condition de vingt et un (21) ans.
+>
+> La maladie ou l'invalidité sus citées sont appréciées par la commission de réforme visée à
+> l'article 29 de la loi n° 59-18 du 5 février 1959.
+>
+> - aux orphelins justifiant la poursuite de leurs études de l'enseignement supérieur jusqu'à l'âge
+> de *vint cinq* (25) ans, à condition qu'ils ne soient pas bénéficiaires d'une bourse
+> universitaire.
+>
+> - à la fille, sans tenir compte de la condition d'âge de vingt et un (21) ans, qui à la date de
+> décès de l'agent ne dispose de ressources ou dont l'obligation alimentaire n'incombe à son époux ;
+> toutefois, le paiement de la pension qui lui est attribuée est définitivement suspendu au cas où
+> l'une de ces deux conditions fait défaut. »
+
+**Deux défauts de l'édition française, relevés à l'image et non corrigés ici** :
+
+1. « jusqu'à l'âge de **vint cinq** (25) ans » — coquille manifeste pour « vingt-cinq » ;
+2. au troisième tiret, la négation « **pas** » est tombée deux fois : « ne dispose de ressources ou
+   dont l'obligation alimentaire n'incombe à son époux ». La lettre inverse le sens voulu. La
+   rédaction correcte est établie **par le texte lui-même**, sans recours à l'édition arabe :
+   l'article 46 (nouveau) alinéa 2, à la colonne voisine de la même page, écrit « ne dispose **pas**
+   de ressources ou dont l'obligation alimentaire **n'incombe pas** à son époux », et l'article 3 de
+   la même loi, p. 2199, reprend la même formule pour le secteur privé.
+
+**Disposition transitoire à ne pas perdre** — art. 5 de la loi, p. 2199 **[T]** : la pension
+temporaire d'orphelin visée notamment par l'article 47 de la loi n° 85-12 « **ne peut être
+reprise** » lorsque son paiement a été interrompu à l'égard de la fille **avant l'entrée en vigueur
+de la présente loi** pour défaut de l'une des deux conditions. L'ouverture de 2007 ne rétroagit
+donc pas sur les pensions déjà éteintes.
+
+## 13.3 L'article 45 n'a pas été modifié — et son articulation avec l'article 46
+
+L'article 2 de la loi n° 2007-43 abroge et remplace **les articles 30, 37, 46 et 47** de la loi
+n° 85-12, et eux seuls **[T]**, p. 2198. **L'article 45 est donc resté dans sa rédaction de 1985**,
+lue à l'image p. 363 **[T]** :
+
+> « **Art. 45**. — L'orphelin bénéficie jusqu'à l'âge de vingt et un (21) an[s] d'une pension égale
+> à **dix pour cent (10 %)** de la pension de retraite dont l'agent avait bénéficié ou dont il
+> aurait pu bénéficier à la date de son décès.
+>
+> **Le total des pensions d'orphelins et la pension du conjoint survivant ne doit pas dépasser le
+> montant de la pension de l'agent.** Dans le cas où ce total dépasse le montant de la pension de
+> l'agent, il est procédé à la réduction de la pension du conjoint survivant conformément aux
+> dispositions de l'article 43 de la présente loi.
+>
+> Si le nombre des orphelins est égal ou supérieur à **cinq (5)**, le conjoint survivant bénéficie
+> de **50 %** de la pension que l'agent avait bénéficié ou dont il aurait pu bénéficier à la date de
+> son décès. Les cinquante pour cent (50 %) restants sont répartis à parts égales entre les
+> orphelins. »
+
+Et l'article 48, immédiatement après **[T]**, p. 363, pose un **plancher** et non un plafond : « Les
+pensions des orphelins ne peuvent, au total, être inférieures au montant des indemnités familiales
+dont aurait pu bénéficier l'agent. »
+
+**Comment les deux règles s'articulent.** Le plafond de l'article 45 est global — total des pensions
+d'orphelins **plus** pension du conjoint ≤ pension de l'agent — et son unique remède en cas de
+dépassement est la **réduction de la pension du conjoint**. Or, dans l'hypothèse de l'article 46, il
+n'y a précisément **pas** de pension de conjoint à réduire : le remède est sans objet. Il n'a
+cependant jamais à jouer, parce que ce qui est redistribué est exactement la part qui aurait été
+celle du conjoint. En prenant le montant du conjoint tel que l'article 43 le calcule (75 %, minoré
+de 5 % au titre du 3e enfant et de 10 % par enfant suivant, sans descendre au-dessous de 50 %), le
+total redistribué vaut **[D]** :
+
+L'article 43, relu à l'image p. 362 **[T]**, rattache expressément ces minorations aux orphelins qui perçoivent la pension de l'article 45 : « **pendant la période de payement de la pension temporaire d'orphelin prévue à l'article 45 de la présente loi**, la pension du conjoint survivant est réduite de : — 5 % au titre du 3ème enfant ; — 10 % au titre de chacun des enfants suivants, sans que le montant de la pension du conjoint survivant ne soit inférieur à cinquante pour cent (50 %) de la pension dont l'agent avait bénéficié ou dont il aurait pu bénéficier à la date de son décès. » Le compte des minorations suit donc le nombre d'orphelins pensionnés, ce qui est bien l'entrée du tableau ci-dessous.
+
+| Orphelins | Pensions d'orphelins (art. 45) | Part du conjoint redistribuée (art. 46) | Total |
+|---:|---:|---:|---:|
+| 1 | 10 % | 75 % | **85 %** |
+| 2 | 20 % | 75 % | **95 %** |
+| 3 | 30 % | 70 % | **100 %** |
+| 4 | 40 % | 60 % | **100 %** |
+| 5 et plus | 50 % (art. 45 al. 3) | 50 % | **100 %** |
+
+Le plafond de l'article 45 est donc **saturé mais jamais franchi**. Une seconde lecture serait
+concevable — redistribuer 75 % sans les minorations de l'article 43, puisque la pension du conjoint
+n'est pas attribuée —, mais elle conduirait dès quatre orphelins à 115 % de la pension de l'agent,
+c'est-à-dire à un dépassement du plafond de l'article 45 auquel ce même article n'offre aucun
+remède applicable. C'est un argument de cohérence, non une disposition écrite : aucun texte lu ne
+tranche explicitement.
+
+## 13.4 Décret n° 74-572 du 22 mai 1974, relatif au capital-décès — lu, pp. 1108-1109 **[T]**
+
+Le décret est pris au **ministère des Finances** et vise la loi n° 59-19 du 5 février 1959 (Caisse
+nationale des retraites), la loi n° 68-12 du 3 juin 1968, la loi n° 72-2 du 15 février 1972 (réforme
+du régime de prévoyance sociale), le décret du 12 avril 1951 et les arrêtés des 25 août 1951 et
+5 juin 1962.
+
+| Article | Contenu |
+|---|---|
+| **Art. 1er** | Champ, par six catégories d'ayants droit : 1° fonctionnaires et employés, ouvriers titulaires et temporaires affiliés à la CNR ; 2° personnels militaires titulaires du régime de la loi n° 59-18, décédés en activité **autrement que par faits de guerre** ; 3° a) agents contractuels des administrations, collectivités et EPA à emploi rémunéré à traitement fixe, b) agents contractuels des EPIC dont les personnels statutaires sont affiliés à la CNR ; 4° membres du gouvernement, jusqu'à cessation de paiement de leurs émoluments ; 5° membres de l'Assemblée nationale, jusqu'à cessation de l'indemnité parlementaire ; 6° **retraités** de l'État, des établissements publics et des collectivités titulaires d'une pension servie par la CNR |
+| **Art. 2** | Base : **dernière rémunération annuelle** servant de base à la liquidation de la pension (§ 1 et 2) ; rémunération annuelle effectivement perçue pour les agents en activité à l'étranger ; dernière rémunération annuelle pour les contractuels du § 3 ; émoluments ou indemnité parlementaire pour les § 4 et 5 |
+| **Art. 3** | Majoration de **1/12 par année de service ou d'activité**, plafonnée à **18 mois** de rémunération (fraction supérieure à 6 mois arrondie à l'année, inférieure négligée) ; majoration supplémentaire de **10 % par enfant** ; capital **doublé** en cas de décès accidentel dans l'exercice des fonctions ou par accident de la circulation — disposition **non applicable aux personnels en activité à l'étranger** |
+| **Art. 4** | Retraités du § 6 : capital égal à **50 %** de la rémunération annuelle servant de base à la liquidation, majorée selon l'art. 3 ; taux réduit à **40 %** après 70 ans révolus, **30 %** après 75 ans, **20 %** après 80 ans, **10 %** après 85 ans ; **plancher de 100 dinars** |
+| **Art. 5** | Dévolution : **un tiers au conjoint non divorcé**, **deux tiers aux enfants** au sens de l'art. 5 du décret du 12 avril 1951 ; pluralité de conjoints non divorcés → partage par parts égales ; à défaut d'enfants, totalité au conjoint ; à défaut de conjoint, totalité aux enfants ; à défaut des deux, aux **père et mère**, à la double condition d'avoir été à charge et d'avoir **au moins 60 ans** sans être titulaires d'une pension de retraite — limite ramenée à **55 ans pour la mère** veuve ou divorcée, et écartée pour les ascendants infirmes ou gravement malades |
+| **Art. 6** | Maintien du bénéfice dans quatre positions : maintien en activité après l'âge de la retraite (décret n° 59-78 du 17 mars 1959), disponibilité pour maladie ou congé de longue durée, sous les drapeaux (sauf décès en service ouvrant droit à pension militaire), suspension par mesure disciplinaire |
+| **Art. 7** | Cotisation : **1 %** des émoluments soumis à retenue pour pension (§ 1 et 2) ; **3 %** du traitement soumis à retenue pour les agents en activité à l'étranger ; **1 %** assis sur les **trois quarts** des rémunérations pour les contractuels du § 3, comme pour les émoluments et l'indemnité parlementaire des § 4 et 5 ; **0,50 %** du montant de la pension en principal pour les retraités |
+| **Art. 8** | « Sont abrogées toutes dispositions antérieures contraires au présent décret et **notamment les dispositions de l'arrêté du 17 juillet 1971** » |
+| **Art. 9** | Exécution par le ministre des Finances ; publication au *Journal officiel* — **aucune date d'effet** |
+
+**Ce qu'il advient de lui** : il est **expressément abrogé** par l'article 14 du décret n° 93-308
+(§ 13.5).
+
+## 13.5 Décret n° 93-308 du 1er février 1993 — l'article final et la date du 1er juillet 1993 **[T]**
+
+Le décret est pris **sur proposition du ministre des affaires sociales** et vise la loi n° 85-12
+telle que modifiée par la loi n° 88-71, **et le décret n° 74-572 du 22 mai 1974 relatif au
+capital-décès**. Ses deux derniers articles, lus à l'image p. 247 :
+
+> « **Art. 14**. - Sont abrogées toutes dispositions antérieures contraires au présent décret et
+> **notamment le décret n° 74-572 du 22 mai 1974**.
+>
+> **Art. 15**. - Le Premier ministre, le ministre d'État, ministre de l'intérieur, les ministres et
+> les secrétaires d'État sont chargés, chacun en ce qui le concerne, de l'exécution du présent
+> décret **qui entre en vigueur à compter du 1er juillet 1993**. »
+
+**Réponse à la question posée** : oui. La date du **1er juillet 1993**, que le *Manuel de
+liquidation* de la CNRPS (2013) donne comme frontière entre les deux régimes, **figure bien dans un
+texte** — l'article 15 du décret lui-même. La formule du manuel (« affiliés décédés avant le
+1er juillet 1993 ») est une lecture fidèle de la combinaison des articles 14 et 15, et non une
+source indépendante : le décret dit qu'il entre en vigueur à cette date et qu'il abroge celui de
+1974, non qu'il faut se placer à la date du décès. Ce dernier pas est un raisonnement de droit
+commun — le fait générateur du capital-décès est le décès — que le manuel explicite **[D]**.
+
+**Deux articles transitoires que le modèle ne peut pas ignorer** **[T]**, p. 247 :
+
+> « **Art. 12**. - À titre exceptionnel, les agents visés aux paragraphes 1, 2 et 3 de l'article
+> premier ci-dessus et recrutés avant l'entrée en vigueur du présent décret, peuvent continuer à
+> cotiser au titre du capital-décès **sur la base du traitement de base** à condition de formuler
+> une demande écrite trois mois avant l'entrée en vigueur du présent décret. La liquidation du
+> capital-décès au profit des ayants droit s'effectue dans ce cas sur la base du traitement de
+> base. »
+>
+> « **Art. 13**. - Les agents ayant demandé la cotisation au titre du capital-décès sur le
+> traitement de base, peuvent demander la cotisation sur la base de tous les éléments de la
+> rémunération soumise à retenue pour pension à condition de payer toutes les cotisations au titre
+> du capital-décès pour les périodes de travail postérieures à la date d'entrée en vigueur du
+> présent décret. […] Dans ce cas il est attribué aux ayants droit un capital-décès conformément aux
+> dispositions de l'article 5 du présent décret. »
+
+Pour le reste — champ (art. 1er), cotisation de 1 % et 0,50 % (art. 2), assiette et majorations
+(art. 5), dévolution par tiers (art. 7) —, la note de la clé `decret93-308` était déjà exacte et est
+confirmée par la lecture.
+
+**Continuités et ruptures entre les deux décrets** **[T]** :
+
+| | 74-572 | 93-308 |
+|---|---|---|
+| Autorité | ministre des Finances | ministre des affaires sociales |
+| Assiette | dernière rémunération annuelle de liquidation | rémunération annuelle servant de base à la liquidation, avec l'option « traitement de base » des art. 12-13 |
+| Majorations | 1/12 par année, plafond 18 mois ; +10 % par enfant ; doublement en cas de décès accidentel, **dont sont exclus les personnels en activité à l'étranger** | mêmes 1/12, plafond, +10 % et doublement ; **l'exclusion des personnels à l'étranger n'est pas reprise** |
+| Retraités | 50 %, réduit à 40/30/20/10 % selon l'âge ; plancher **100 dinars** | 50 %, mêmes réductions ; plancher **SMIG annuel** |
+| Cotisation | 1 % ; 3 % à l'étranger ; 0,50 % sur les pensions | 1 % ; 0,50 % sur le produit brut de la pension |
+| Dévolution | 1/3 conjoint, 2/3 enfants | **identique** |
+
+## 13.6 Ce que ces lectures impliquent pour la correction
+
+**Pour les pensions de survivants.** Quand la pension du conjoint n'est pas attribuée, sa part se
+partage à parts égales entre les orphelins et **s'ajoute** à la pension de 10 % de chacun : le texte
+ne pose aucun plafond au total des pensions d'orphelins. Le seul plafond individuel est celui de la
+fille sans ressources, qui ne peut pas recevoir plus de la moitié de la pension de l'agent. Le
+plafond global — la somme versée aux survivants ne dépasse pas la pension de l'agent — n'a pas
+changé depuis 1985 et continue de s'appliquer, mais il se trouve déjà respecté par construction :
+la part redistribuée est celle du conjoint, pas une part supplémentaire. Un modèle qui ajouterait
+un plafonnement au total des pensions d'orphelins introduirait une règle que la loi ne contient
+pas ; un modèle qui oublierait le plafond de moitié applicable à la fille sans ressources
+surestimerait sa pension dans les familles peu nombreuses. Enfin, la règle de partage n'est pas une
+nouveauté de 2007 : elle existe depuis 1985, et seul le plafond de moitié doit être daté de 2007.
+
+**Pour le capital-décès.** Deux régimes se succèdent sans recouvrement : celui de 1974 jusqu'au
+30 juin 1993, celui de 1993 à partir du 1er juillet. La bascule se fait sur la **date du décès**,
+puisque c'est le décès qui ouvre le droit, et la date de bascule est écrite dans le décret de 1993
+lui-même. Les deux régimes calculent le capital de la même façon — une rémunération annuelle
+majorée d'un douzième par année de service, plafonnée à dix-huit mois, augmentée de dix pour cent
+par enfant et doublée en cas de décès accidentel — et le partagent de la même façon, un tiers au
+conjoint et deux tiers aux enfants. Ce qui change est le plancher servi aux ayants droit d'un
+retraité : cent dinars jusqu'en 1993, le salaire minimum annuel ensuite. Reste un point que le
+modèle traite rarement : les agents recrutés avant juillet 1993 ont pu opter pour continuer à
+cotiser sur le seul traitement de base, auquel cas leur capital-décès est liquidé sur cette base
+plus étroite.
+
+## 13.7 Ce qui n'a pas pu être établi
+
+- **Le sort de la fraction écrêtée par le plafond de 50 %.** Quand la fille sans ressources se voit
+  appliquer le plafond, aucun texte lu ne dit si la part qu'elle ne reçoit pas s'éteint ou se
+  redistribue entre les autres orphelins. TODO, à chercher dans une circulaire de la CNRPS.
+- **La date de dépôt de la loi n° 2007-43**, seule base d'une date d'entrée en vigueur certaine au
+  sens de la loi n° 93-64. Non attestée.
+- **Le montant redistribué de l'article 46** : minorations de l'article 43 appliquées ou non. La
+  cohérence avec le plafond de l'article 45 tranche en faveur de l'application, mais aucun texte ne
+  le dit.
+- **L'arrêté du 17 juillet 1971**, abrogé par l'art. 8 du décret n° 74-572, n'a pas été recherché.
+- Les **éditions arabes** des trois textes n'ont pas été ouvertes ; les deux défauts relevés dans
+  l'édition française de la loi n° 2007-43 (§ 13.2) ont été résolus sur le texte français lui-même.
