@@ -36,6 +36,7 @@ fait et celui où quelqu'un le corrige, et qu'on ne le refasse pas deux fois.
 | Les paramètres « astreignants » portent l'âge de mise à la retraite de l'article 28, non un départ anticipé sur demande ; le même âge existe en double sous `age_legal.civil` | [pension#37](https://github.com/openfisca/openfisca-tunisia-pension/issues/37) | PR pension#35 |
 | Les indemnités spéciales de 1989-1992 ne sont lues par aucune formule : une rémunération minimale simulée est inférieure à celle qui était servie | [#406](https://github.com/openfisca/openfisca-tunisia/issues/406) | note revalorisation § 1.5 |
 | Neuf valeurs du SMAG (1991-2008), le palier de décembre 2012 et la date d'effet du décret n° 2022-768 ne sont pas lus au fascicule | [#407](https://github.com/openfisca/openfisca-tunisia/issues/407) | note revalorisation § 3.2 |
+| Les âges de mise à la retraite du cadre commun et des cadres actifs portent une valeur au 1er février 1959 dont la référence ne cite aucun article, et dont la date est celle de la signature de la loi n° 59-18 quand son article 52 n'ouvre les droits qu'au 1er avril 1959. Le tableau des âges du livre est plafonné au 12 septembre 1985 tant que cette ligne n'est pas établie | à ouvrir | tableaux engendrés du livre « Retraites » |
 
 ## Réglé
 

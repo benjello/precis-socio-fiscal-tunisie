@@ -71,6 +71,8 @@ ot.utiliser_paquet("openfisca_tunisia_pension")
 
 PAQUET = "openfisca_tunisia_pension"
 CNRPS = "parameters/retraite/cnrps"
+# Entrée en vigueur de la loi n° 85-12, plancher du tableau des âges : voir `ages`.
+PLANCHER_AGES = "1985-09-12"
 RSNA = "parameters/retraite/rsna"
 RACINE = Path(__file__).parent.parent / "precis"
 LANGUES = ("fr", "ar")
@@ -192,7 +194,6 @@ def formateurs(langue):
 # lu doit y figurer — à défaut, la colonne « Texte » reprendrait le titre du paramètre, long
 # de cent cinquante caractères. `verifie_texte` le contrôle avant d'écrire le snapshot.
 CLES_AGES = {
-    "1959-02-01": "loi59-18",
     "1985-09-12": "loi85-12, art. 24 et 27 à 29",
     "2009-04-19": "loi2009-20, art. 2",
     "2019-07-01": "loi2019-37, art. 5",
@@ -217,6 +218,40 @@ def tableaux(langue):
     m = MOTS[langue]
     age, taux, dinars, part_smig = formateurs(langue)
     datee = dict(langue=langue, colonne_periode=m["effet"], colonne_texte=m["texte"])
+
+    def ages():
+        """L'âge de mise à la retraite par catégorie, à partir du 12 septembre 1985.
+
+        POURQUOI UN PLANCHER. Deux de ces paramètres — le cadre commun et les cadres
+        actifs — portent une valeur au 1er février 1959 dont la référence ne cite aucun
+        article : elle renvoie au fascicule de la loi n° 59-18 sans la disposition qui
+        fixerait ces âges. Cette date est en outre celle de la **signature** de la loi,
+        quand son article 52 n'ouvre les droits à pension qu'à compter du 1er avril 1959 —
+        date que le livre retient partout ailleurs. Publier cette ligne ferait dire au
+        tableau plus que ce que le chapitre a lu, et le contredirait sur une date. Le
+        tableau commence donc à l'entrée en vigueur de la loi n° 85-12, comme le reste du
+        chapitre. Le constat est porté à `docs/notes/backlog-modele.md`.
+        """
+        specs = [
+            (f"{CNRPS}/age_legal/civil/cadre_commun.yaml", m["cadre_commun"], age),
+            (f"{CNRPS}/age_legal/civil/ouvriers_travaux_penibles.yaml", m["penibles"], age),
+            (f"{CNRPS}/age_legal/civil/fonctions_astreignantes.yaml", m["astreignantes"], age),
+            (f"{CNRPS}/age_legal/civil/cadres_actifs.yaml", m["cadres_actifs"], age),
+            (f"{CNRPS}/age_legal/civil/enseignants_du_superieur.yaml", m["superieur"], age),
+        ]
+        df = ot.tableau_evolution_datee(specs, cles=CLES_AGES, **datee)
+        if df is None:
+            return None
+        # La valeur en vigueur au 12 septembre 1985 est celle que reporte la première ligne
+        # conservée : écarter les lignes antérieures ne perd aucun niveau, seulement des
+        # dates que le chapitre n'établit pas.
+        ecartees = {
+            ot.formate_date(date, langue)
+            for chemin, _entete, _formateur in specs
+            for date, *_ in ot.serie_datee(chemin)
+            if date < PLANCHER_AGES
+        }
+        return df[~df[m["effet"]].isin(ecartees)].reset_index(drop=True)
 
     def annuites():
         """Le barème des annuités de l'article 38, lu comme un barème à tranches.
@@ -255,19 +290,7 @@ def tableaux(langue):
         return pd.DataFrame(lignes)
 
     return {
-        "cnrps_ages.md": lambda: ot.tableau_evolution_datee(
-            [
-                (f"{CNRPS}/age_legal/civil/cadre_commun.yaml", m["cadre_commun"], age),
-                (f"{CNRPS}/age_legal/civil/ouvriers_travaux_penibles.yaml",
-                 m["penibles"], age),
-                (f"{CNRPS}/age_legal/civil/fonctions_astreignantes.yaml",
-                 m["astreignantes"], age),
-                (f"{CNRPS}/age_legal/civil/cadres_actifs.yaml", m["cadres_actifs"], age),
-                (f"{CNRPS}/age_legal/civil/enseignants_du_superieur.yaml",
-                 m["superieur"], age),
-            ],
-            cles=CLES_AGES, **datee,
-        ),
+        "cnrps_ages.md": ages,
         "cnrps_annuites.md": annuites,
         "cnrps_plafond_plancher.md": lambda: ot.tableau_evolution_datee(
             [
