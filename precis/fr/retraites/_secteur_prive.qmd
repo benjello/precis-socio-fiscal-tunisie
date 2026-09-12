@@ -1,5 +1,30 @@
 # Le secteur privé : la CNSS {#sec-secteur-prive}
 
+```{python}
+#| echo: false
+#| output: false
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+
+TABLES = Path.cwd() / "tables"
+
+
+def table(nom, legende, label):
+    """Tableau de paramètres : snapshot versionné, régénéré depuis les paramètres de retraite.
+
+    Les valeurs et les dates d'effet viennent des paramètres, la colonne « Texte » de leurs
+    références au Journal officiel : corriger la source corrige le tableau.
+    Régénération : `scripts/generate_retraites_tables.py`.
+
+    Le rendu est du Markdown, et non un DataFrame stylé, afin que Pandoc voie les citations
+    qu'il contient et les résolve.
+    """
+    print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label))
+```
+
 Les pensions du secteur privé sont servies par la [Caisse nationale de sécurité sociale](#g-cnss) au titre de plusieurs régimes. Deux textes en portent l'essentiel : le **décret n° 74-499 du 27 avril 1974** pour les salariés non agricoles, et la **loi n° 81-6 du 12 février 1981** pour les salariés agricoles. Les autres régimes — travailleurs non salariés, Tunisiens à l'étranger, artistes, certaines catégories de travailleurs à faibles revenus — ont leur texte propre ; les deux premiers sont construits par renvoi à des articles numérotés du décret de 1974.
 
 Ce chapitre expose d'abord le régime des salariés non agricoles, maillon par maillon ; puis les régimes agricoles, en disant ce qui les distingue du précédent ; puis le régime complémentaire ; puis, plus brièvement, les régimes des non-salariés et les régimes particuliers. Il se clôt par une vue d'ensemble qui compare les deux secteurs.
@@ -88,7 +113,10 @@ En dehors de l'âge abaissé des travaux pénibles, le décret de 1974 ne compor
 
 Sources : @decret82-1030, art. 1 ; @decret2007-2148, art. 1 à 3.
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres de retraite, après fusion de la PR de datation -->
+<!-- Tableau tenu à la main, et non engendré : le seul paramètre du sujet porte l'âge de
+jouissance de 50 ans de 1982. Ni les quatre cas de l'article 15 bis, ni leurs conditions, ni
+la jouissance à 55 ans de l'article 15 ter ne sont dans l'arbre des paramètres. Voir
+l'en-tête de scripts/generate_retraites_tables.py. -->
 
 Dans les textes cités, le départ pour convenance personnelle est le seul qui soit pénalisé par une décote, en 1982 comme en 2007 ; ce qui change en 2007 est l'âge à partir duquel la pension est servie, porté de 50 à 55 ans. Le décret n° 2007-2148 réécrit aussi le cas a) ; sa nouvelle rédaction n'est pas exposée ici. Le départ anticipé des mères de trois enfants existe dans le régime non agricole depuis 1982.
 
@@ -113,7 +141,9 @@ par l'article 2 du décret n° 2007-2148, et le mode de constatation de l'usure 
 
 Sources : @decret74-499, art. 18-19 ; @decret90-1455, art. 1 ; @decret94-1429, art. 1. Le décret n° 90-1455 n'énonce pas de date d'effet : le 23 septembre 1990 est la date à laquelle il devient exécutoire, un jour franc après sa publication au *Journal officiel* du 21 septembre 1990.
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres de retraite, après fusion de la PR de datation -->
+<!-- Tableau tenu à la main, et non engendré : aucun paramètre ne porte la fenêtre du salaire
+moyen de référence du régime non agricole. Voir l'en-tête de
+scripts/generate_retraites_tables.py. -->
 
 Les deux décrets se succèdent. Le décret n° 90-1455 porte la fenêtre de référence à dix ans en réécrivant l'article 18, mais laisse inchangé l'article 19, qui continue de calculer la moyenne sur trente-six ou soixante mois [@decret90-1455, art. 1]. Le décret n° 94-1429, qui vise le décret de 1974 « tel que modifié par le décret n° 90-1455 », abroge et remplace ensemble ces deux articles et substitue à la règle de 1990 une montée progressive, de cinq ans en 1994 à dix ans en 1996, la durée de la moyenne suivant celle de la fenêtre [@decret94-1429, art. 1]. Aucun texte publié au *Journal officiel* entre ces deux décrets qui suspende ou reporte la règle de 1990 n'a été retrouvé, et aucun n'indique comment les pensions ont été calculées entre septembre 1990 et juin 1994, alors que les articles 18 et 19 prescrivaient l'un dix années de salaires, l'autre une moyenne sur trente-six ou soixante mois.
 
@@ -135,18 +165,15 @@ arrêtés de la série. -->
 
 La [pension minimale garantie](#g-pension-minimale-garantie) du régime est exprimée en fraction du SMIG rapporté à 2 400 heures par an, et sa structure a changé en 1982 en même temps que le traitement des carrières courtes.
 
-| Depuis | Pension de vieillesse ou d'invalidité | Retraite anticipée (art. 15 bis a et b) et pension proportionnelle | Carrière inférieure au stage | Texte |
-|---|---|---|---|---|
-| 1^er^ janvier 1974 | 2/3 du SMIG | sans objet : ni retraite anticipée ni pension proportionnelle | [allocation de vieillesse](#g-allocation-de-vieillesse) versée en capital, à partir de 60 mois de cotisations, exclue de la pension minimale | décret n° 74-499, art. 39-45 |
-| 1^er^ janvier 1979 | 2/3 du SMIG, étendu aux pensions des régimes conventionnels antérieurs lorsque l'assuré n'a pas de pension au titre du décret | sans objet | inchangé | décret n° 79-536, art. 1 |
-| 1982, date d'effet non énoncée | 2/3 du SMIG | **1/2 du SMIG** | [pension proportionnelle](#g-pension-proportionnelle) à partir de 60 mois ; en deçà, versement unique égal aux retenues salariales | décret n° 82-1030, art. 3 et 5 |
-| 23 septembre 1990 | inchangé | inchangé | versement unique reformulé ; en cas de décès, versé au conjoint et aux enfants mineurs | décret n° 90-1455, art. 1 |
+```{python}
+#| echo: false
+#| output: asis
+table("rsna_planchers",
+      "Pension minimale du régime des salariés non agricoles",
+      "tbl-rsna-planchers")
+```
 
-: Pension minimale et carrières courtes du régime des salariés non agricoles {#tbl-rsna-planchers}
-
-Sources : @decret74-499, art. 39-45 ; @decret79-536, art. 1 ; @decret82-1030, art. 3 et 5 ; @decret90-1455, art. 1.
-
-<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres de retraite, après fusion de la PR de datation -->
+Sources : @decret74-499, art. 45 ; @decret82-1030, art. 3 et 5. Le décret n° 82-1030 n'énonce pas de date d'effet : le 22 juillet 1982 est le jour où il devient obligatoire, un jour franc après la publication du fascicule daté des 20, 21, 22 et 23 juillet 1982. Ce tableau ne donne que le niveau du plancher. Deux textes en ont modifié la portée sans en changer le niveau, et figurent au tableau @tbl-rsna-textes : le décret n° 79-536, qui l'étend en 1979 aux pensions des régimes conventionnels antérieurs lorsque l'assuré n'a pas de pension au titre du décret [@decret79-536, art. 1], et le décret n° 90-1455, qui reformule en 1990 le versement unique des carrières les plus courtes [@decret90-1455, art. 1]. Le sort des carrières inférieures au stage est exposé ci-dessous.
 
 Le changement de 1982 est plus qu'un ajustement. Dans le décret de 1974, l'assuré qui atteignait l'âge sans remplir la condition de stage recevait, s'il comptait 60 mois de cotisations, une allocation de vieillesse **en capital**, égale à une mensualité de la pension théorique par période de six mois de cotisations, et convertible en rente [@decret74-499, art. 39-43]. Le décret n° 82-1030 remplace cette section par une section « de la pension proportionnelle » : le même assuré reçoit désormais une **pension**, calculée sur la base de celle à laquelle il aurait eu droit s'il avait accompli le stage, au prorata des mois cotisés, et réversible [@decret82-1030, art. 3]. Le même décret distingue deux niveaux de pension minimale — les deux tiers du SMIG pour les pensions de vieillesse et d'invalidité, la moitié pour les retraites anticipées des tirets a) et b) de l'article 15 bis et pour les pensions proportionnelles [@decret82-1030, art. 5]. Depuis 2007, l'article 42 (nouveau) rend réversibles, dans les conditions de la section relative aux survivants, les pensions proportionnelles et les pensions des articles 15 bis et 15 ter [@decret2007-2148].
 
@@ -167,7 +194,9 @@ Au décès de l'assuré, sa veuve perçoit une [pension de réversion](#g-pensio
 
 Sources : @decret74-499, art. 29-38 et 52 ; @decret81-188, art. 1-2 ; @decret90-1455, art. 1 ; @decret97-291, art. 1-2 ; @decret97-1927, art. 1-2 ; @decret2007-2148. Le décret n° 81-188 a aussi réécrit l'article 33, dans une rédaction qui n'est pas exposée ici. Le décret n° 97-291 n'énonce pas de date d'effet ; le décret n° 97-1927 prend effet au 1^er^ mai 1997.
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres de retraite, après fusion de la PR de datation -->
+<!-- Tableau tenu à la main, et non engendré : l'arbre des paramètres du régime des salariés
+non agricoles n'a pas de branche « survivants ». Voir l'en-tête de
+scripts/generate_retraites_tables.py. -->
 
 La [pension temporaire d'orphelin](#g-pension-temporaire-orphelin) est collective et se réduit à mesure que chaque orphelin cesse de remplir les conditions ; elle est suspendue lorsque l'orphelin est pris en charge par une institution bénéficiant de l'aide de l'État [@decret74-499, art. 35-36]. L'article 33 issu du décret de 1997 ouvre le même droit aux orphelins d'un titulaire de pension d'invalidité ou d'un assuré remplissant les conditions de la pension d'invalidité [@decret97-1927, art. 1]. Lorsque la pension est suspendue pour abandon de famille, une pension temporaire de 80 % est allouée à l'épouse et aux enfants mineurs pendant la suspension [@decret74-499, art. 50]. L'extension de 1997 aux orphelins en études supérieures et à la fille sans ressources prend effet le même jour, le 1^er^ mai 1997, que l'extension équivalente dans le secteur public (@sec-secteur-public).
 
@@ -222,7 +251,12 @@ Les deux tableaux suivants donnent la série des hausses du SMIG qui ont déclen
 
 † Date ou montant de ces lignes non vérifiés sur le *Journal officiel*. Les lignes en italique ne sont pas des hausses du SMIG.
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres de retraite, après fusion de la PR de datation -->
+<!-- Tableau tenu à la main, et non engendré : la série du SMIG est bien datée et sourcée,
+mais l'objet de ce tableau est la revalorisation des pensions, et non le SMIG. Ne sont
+portées par aucun paramètre : la distinction entre la majoration en somme et la majoration
+en taux, les dates d'effet propres aux pensions, les hausses assimilées de 1981 et 1982, les
+indemnités spéciales de 1989 et 1991 — qui ne sont pas des hausses du SMIG — et les lignes
+non vérifiées au Journal officiel. Voir l'en-tête de scripts/generate_retraites_tables.py. -->
 
 | Date d'effet pour les pensions | Décret | SMIG mensuel, régime de 48 heures (D) : ancien → nouveau | Variation du SMIG, appliquée aux pensions |
 |---|---|---|---:|
@@ -256,7 +290,10 @@ Les deux tableaux suivants donnent la série des hausses du SMIG qui ont déclen
 
 † Date ou montant de ces lignes non vérifiés sur le *Journal officiel*. La variation est calculée à partir des montants du SMIG ; les décrets n'énoncent pas de pourcentage.
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres de retraite, après fusion de la PR de datation -->
+<!-- Tableau tenu à la main, et non engendré, pour les mêmes raisons que le précédent : la
+première ligne en donne la plus nette, puisque la hausse du SMIG du 1er mai 2000 ne
+revalorise les pensions qu'au 1er janvier 2001, date que le paramètre du SMIG ne porte pas.
+Voir l'en-tête de scripts/generate_retraites_tables.py. -->
 
 ::: {.callout-warning title="Ce que les textes ne disent pas de la série de 1981 à 2000"}
 **Le régime horaire de référence.** Jusqu'en 2000, l'article 53 se réfère au « SMIG horaire rapporté à 200 heures par mois » sans désigner le régime de 40 heures ou celui de 48 heures, alors que les deux SMIG horaires diffèrent à partir d'avril 1981. Les tableaux retiennent le régime de 48 heures, que le texte ne désigne qu'à partir du 1^er^ janvier 2001 ; pour les années antérieures, ce choix n'est pas imposé par les textes, sauf en 1981 et en 1982, où la somme de référence est fixée directement.

@@ -59,8 +59,11 @@ PAQUETS = {
         "variable": "OPENFISCA_TUNISIA_PENSION_PATH",
         "distribution": "OpenFisca-Tunisia-Pension",
         # 5.2 est la version où ce paquet cesse de porter une copie périmée du SMIG :
-        # avant elle, les pensions minimales sont fausses à partir de 2020.
-        "version_minimale": (5, 2),
+        # avant elle, les pensions minimales sont fausses à partir de 2020. 5.7 est celle
+        # où les paramètres de retraite sont datés sur leur texte et sourcés : en deçà,
+        # les tableaux du livre « Retraites » sortiraient avec une colonne « Texte » vide
+        # et des dates d'effet fausses — impossibles à distinguer d'un tableau correct.
+        "version_minimale": (5, 7),
     },
 }
 

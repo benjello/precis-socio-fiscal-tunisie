@@ -1,5 +1,30 @@
 # Le secteur public : la CNRPS {#sec-secteur-public}
 
+```{python}
+#| echo: false
+#| output: false
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+
+TABLES = Path.cwd() / "tables"
+
+
+def table(nom, legende, label):
+    """Tableau de paramètres : snapshot versionné, régénéré depuis les paramètres de retraite.
+
+    Les valeurs et les dates d'effet viennent des paramètres, la colonne « Texte » de leurs
+    références au Journal officiel : corriger la source corrige le tableau.
+    Régénération : `scripts/generate_retraites_tables.py`.
+
+    Le rendu est du Markdown, et non un DataFrame stylé, afin que Pandoc voie les citations
+    qu'il contient et les résolve.
+    """
+    print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label))
+```
+
 Les agents publics, civils et militaires, relèvent d'un régime unique de [pensions civiles et militaires](#g-pensions-civiles-militaires), servi par la [Caisse nationale de retraite et de prévoyance sociale](#g-cnrps). Trois régimes spéciaux, pour les membres du gouvernement, les députés et les gouverneurs, s'y adossent par renvoi. Ce chapitre suit la chaîne des maillons commune à tous les régimes de retraite, exposée dans la présentation générale (@sec-chaine-commune) : les textes, l'ouverture du droit, le calcul, les planchers, les accessoires, les droits dérivés, l'invalidité et la revalorisation, qui prend ici la forme de la péréquation ; puis les régimes spéciaux et les dispositions propres aux militaires.
 
 La pension du secteur public a une logique propre, qu'il faut avoir à l'esprit en lisant ce qui suit : elle est liquidée sur la **dernière rémunération** de l'agent, et non sur une moyenne de carrière, puis réajustée à chaque augmentation de la rémunération des actifs du même grade. Elle prolonge ainsi la rémunération statutaire, que décrit le livre « Les rémunérations dans le secteur public ».
@@ -78,19 +103,15 @@ nationalité » : formule à retrouver dans un article de la loi n° 85-12 avant
 
 L'âge de mise à la retraite est fixé par la loi pour chaque catégorie d'agents. La loi n° 85-12 le fixe à **60 ans** pour le cadre commun [@loi85-12, art. 24] ; la loi n° 2019-37 le porte à **62 ans**, et relève de deux ans les âges dérogatoires des articles 27 à 29 [@loi2019-37, art. 1].
 
-| Catégorie | Avant la loi n° 2019-37 | Depuis la loi n° 2019-37 | Articles de la loi n° 85-12 |
-|---|---|---|---|
-| Cadre commun | 60 ans (loi n° 85-12, 12 septembre 1985) | 62 ans | art. 24 |
-| [Ouvriers accomplissant des tâches pénibles et insalubres](#g-travaux-penibles-insalubres) | 55 ans | 57 ans | art. 27 |
-| Agents exerçant des [fonctions astreignantes](#g-fonctions-astreignantes) | 55 ans et 35 ans de services | 57 ans et 35 ans de services | art. 28 |
-| Agents des [cadres actifs](#g-cadres-actifs) | 55 ans | 57 ans | art. 29 |
-| Professeurs et maîtres de conférences de l'enseignement supérieur, hospitalo-universitaires | 65 ans (loi n° 2009-20) | 65 ans | art. 29 bis |
+```{python}
+#| echo: false
+#| output: asis
+table("cnrps_ages",
+      "Âge de mise à la retraite des agents civils, par catégorie et par date d'effet",
+      "tbl-cnrps-ages")
+```
 
-: Âge de mise à la retraite des agents civils, par catégorie {#tbl-cnrps-ages}
-
-Sources : @loi85-12, art. 24 et 27 à 29 ; @loi2009-20, art. 2 ; @loi2019-37, art. 1.
-
-<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres de retraite, après fusion de la PR de datation -->
+Sources : @loi59-18 ; @loi85-12, art. 24 et 27 à 29 ; @loi2009-20, art. 2 ; @loi2019-37, art. 1 et 5. Trois réserves accompagnent ce tableau. La ligne de 1959 est celle de la loi n° 59-18, dont ce chapitre n'a pas lu les règles de liquidation : elle donne l'âge, non l'état complet du droit antérieur à 1985. Les deux dernières lignes sont les deux paliers du calendrier transitoire de l'article 5 de la loi n° 2019-37, et non deux réformes successives. Et l'âge des fonctions astreignantes se cumule avec une durée de 35 ans de services, que le tableau ne porte pas.
 
 Le passage de 60 à 62 ans n'a pas été immédiat. À titre transitoire, et « contrairement aux dispositions des articles 24, 27, 28, 29 et 61 (nouveaux) », l'article 5 de la loi n° 2019-37 relève l'âge d'**un an à partir du 1^er^ juillet 2019** pour les agents atteignant l'âge de la retraite entre cette date et le 31 décembre 2019, puis de **deux ans à partir du 1^er^ janvier 2020** [@loi2019-37, art. 5]. Pour le cadre commun, l'âge est ainsi passé de 60 ans à 61 ans au second semestre de 2019, puis à 62 ans au 1^er^ janvier 2020. La loi n'ayant pas de clause d'entrée en vigueur, c'est ce calendrier qui date le relèvement. Son article 7 en exclut les programmes de mise à la retraite avant l'âge légal et de départ volontaire, « qui demeurent régis, concernant l'âge légal de la mise à la retraite, aux textes juridiques en vigueur à leur date » [@loi2019-37, art. 7].
 
@@ -201,17 +222,15 @@ La caisse a publié un *Manuel de liquidation des pensions et accessoires*, docu
 
 Le [taux de liquidation](#g-taux-de-liquidation) s'acquiert par [annuités liquidables](#g-annuite-liquidable), selon un barème progressif puis dégressif, inchangé depuis 1985.
 
-| Tranche de services | Par année | Par trimestre | Taux cumulé en fin de tranche |
-|---|---:|---:|---:|
-| Les dix premières années | 2 % | 0,5 % | 20 % |
-| Les dix années suivantes | 3 % | 0,75 % | 50 % |
-| Les années au-delà de vingt | 2 % | 0,5 % | 90 % à quarante années |
+```{python}
+#| echo: false
+#| output: asis
+table("cnrps_annuites",
+      "Barème des annuités du régime des pensions civiles et militaires, depuis le 12 septembre 1985",
+      "tbl-cnrps-annuites")
+```
 
-: Barème des annuités du régime des pensions civiles et militaires, depuis le 12 septembre 1985 {#tbl-cnrps-annuites}
-
-Source : @loi85-12, art. 38. La dernière colonne est le cumul arithmétique du barème.
-
-<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres de retraite, après fusion de la PR de datation -->
+Source : @loi85-12, art. 38. Le texte compte en trimestres : le taux annuel en est le quadruple, et la dernière colonne le cumul des tranches parcourues. La dernière ligne, de taux nul, n'est pas une omission : c'est ainsi que le barème rencontre le plafond de 90 % au terme de quarante années. Le barème antérieur à 1985 n'est pas exposé ici.
 
 Le décompte se fait au trimestre : toute période inférieure à une année est comptée par trimestres, toute période égale ou supérieure à 45 jours vaut un trimestre, et toute période inférieure à 45 jours est ignorée [@loi85-12, art. 35]. Le barème antérieur à 1985 n'a pas été établi.
 
@@ -230,7 +249,12 @@ La [bonification](#g-bonification) est une période ajoutée à la durée des se
 
 Source : @loi85-12, art. 32. Depuis la loi n° 2019-37, le repère de 60 ans est remplacé par 62 ans aux paragraphes 2 et 3 de l'article [@loi2019-37, art. 2].
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres de retraite, après fusion de la PR de datation -->
+<!-- Tableau tenu à la main, et non engendré : les paramètres de retraite portent bien le
+barème 5 / 4 / 3 / 2, mais non la distinction des trois colonnes de l'article 32 —
+bonification fixe pour les ouvriers, période restant à courir plafonnée par ce barème pour
+les cadres actifs, période restant à courir sans plafond pour les fonctions astreignantes.
+L'engendrer perdrait les deux dernières colonnes. Voir l'en-tête de
+scripts/generate_retraites_tables.py. -->
 
 L'article 33 accorde en outre une bonification égale à la période restant à courir jusqu'à l'âge légal à d'autres agents. La liste de ces agents et le repère ont changé trois fois :
 
@@ -251,17 +275,15 @@ Deux mécanismes protègent les agents dont la pension serait trop faible ou don
 
 La **[pension minimale garantie](#g-pension-minimale-garantie)** porte la pension au niveau des **deux tiers du [SMIG](#g-smig)** du régime de 2 400 heures par an [@loi85-12, art. 39]. Ce plancher existait avant 1985 : la réécriture de 1981 de la loi de 1959 le fixait déjà aux deux tiers du SMIG pour la pension d'ancienneté ou proportionnelle [@loi81-70, art. 4], et le décret n° 82-972 du 30 juin 1982 en a précisé le calcul — le SMIG horaire rapporté à 2 400 heures par an — et prévu que la pension minimale garantie « est révalorisée automatiquement chaque fois qu'une augmentation du salaire minimum interprofessionnel garanti est décidée » [@decret82-972, art. 1-2].
 
-| Depuis | Plafond de la pension | Pension minimale | Texte |
-|---|---|---|---|
-| 1^er^ mai 1981 | 80 % de la rémunération globale | 2/3 du SMIG (pension d'ancienneté ou proportionnelle) | loi n° 59-18, art. 22 § II, rédaction de la loi n° 81-70, art. 4 |
-| 1982 (décret du 30 juin 1982, sans date d'effet énoncée) | 80 % de la rémunération globale | 2/3 du SMIG horaire rapporté à 2 400 heures, revalorisée à chaque hausse du SMIG | décret n° 82-972, art. 1-2 |
-| 12 septembre 1985 | 90 % de la rémunération de liquidation | 2/3 du SMIG, régime de 2 400 heures | loi n° 85-12, art. 38 et 39 |
+```{python}
+#| echo: false
+#| output: asis
+table("cnrps_plafond_plancher",
+      "Plafond et pension minimale du régime des pensions civiles et militaires",
+      "tbl-cnrps-plafond-plancher")
+```
 
-: Plafond et pension minimale du régime des pensions civiles et militaires {#tbl-cnrps-plafond-plancher}
-
-Sources : @loi81-70, art. 4-5 ; @decret82-972, art. 1-2 ; @loi85-12, art. 38 et 39.
-
-<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres de retraite, après fusion de la PR de datation -->
+Sources : @loi81-70, art. 4-5 ; @loi85-12, art. 38 et 39. Les deux plafonds ne portent pas sur la même base : celui de 1981 sur la rémunération globale de l'article 21 de la loi de 1959, celui de 1985 sur la rémunération de liquidation. Le décret n° 82-972 du 30 juin 1982, exposé ci-dessus, précise le calcul du plancher — le SMIG horaire rapporté à 2 400 heures par an — et sa revalorisation automatique, sans en changer le niveau [@decret82-972, art. 1-2] ; il n'a donc pas de ligne propre.
 
 Exprimés en fraction du salaire minimum, les planchers en suivent l'évolution. Le manuel de liquidation de la caisse précise un effet de qualification : lorsque le produit du taux par la rémunération de liquidation est inférieur ou égal au minimum garanti, « ce produit n'est pas considéré comme une pension de retraite mais comme un minimum garanti », distinction qui, selon le manuel, emporte des conséquences sur les accessoires et sur les retenues [@cnrps-manuel-liquidation-2013, p. 85].
 
@@ -273,15 +295,15 @@ Deux indemnités s'ajoutent à la pension de l'agent chargé de famille : « L'i
 
 **L'[indemnité à caractère familial](#g-indemnite-caractere-familial)** suit les taux fixés par décret pour les agents en activité, que le livre « Prestations sociales » décrit. Leur évolution est connue depuis 1986.
 
-| Depuis | Texte | 1^er^ enfant | 2^e^ enfant | 3^e^ enfant | 4^e^ enfant |
-|---|---|---:|---:|---:|---:|
-| 1^er^ mai 1986 | décret n° 86-611, art. 1 et 3 [@decret86-611] | 7,600 D | 6,500 D | 5,600 D | 4,700 D |
-| 1^er^ janvier 1989 | décret n° 88-1136, art. 1 et 2 [@decret88-1136] | 7,600 D | 6,500 D | 5,600 D | 4,700 D (droits acquis avant 1989) |
-| 1^er^ novembre 1996 | décret n° 96-1906, art. 1 à 5 [@decret96-1906] | 7,320 D | 6,507 D | 5,693 D | 4,880 D (droits acquis avant 1989) |
+```{python}
+#| echo: false
+#| output: asis
+table("cnrps_indemnites_familiales",
+      "Taux mensuels des indemnités à caractère familial du secteur public",
+      "tbl-indemnites-familiales")
+```
 
-: Taux mensuels des indemnités à caractère familial du secteur public {#tbl-indemnites-familiales}
-
-<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres de retraite, après fusion de la PR de datation -->
+Sources : @decret86-611, art. 1 et 3 ; @decret88-1136, art. 1-2 ; @loi88-39 ; @decret96-1906, art. 1 à 5. Depuis le 1^er^ janvier 1989, le taux du quatrième rang n'est plus servi qu'aux droits acquis avant cette date, et à l'enfant handicapé venant après le troisième rang.
 
 Ces trois décrets ont été précédés par le décret n° 75-952 du 30 décembre 1975, que celui de 1986 abroge et dont les taux ne sont pas connus ici [@decret75-952 ; @decret86-611, art. 2]. La loi n° 88-39 du 6 mai 1988, en un article unique, limite le droit « aux trois premiers enfants », mais précise que ses dispositions « ne s'appliquent pas aux droits acquis antérieurement au 1^er^ janvier 1989 » [@loi88-39]. Le décret n° 88-1136 ne fixe donc que trois taux, sans abroger le décret de 1986 : le quatrième enfant dont le droit était acquis avant 1989 conserve le taux de 4,700 dinars, jusqu'à ce que le décret de 1996 le porte à 4,880 dinars, taux qu'il applique aussi à l'enfant handicapé venant après le troisième rang [@decret88-1136, art. 1 ; @decret96-1906, art. 2-3]. Les taux de 1996 sont nominalement inférieurs à ceux de 1986 pour les trois premiers rangs ; le décret n'en expose pas le motif.
 
@@ -323,7 +345,10 @@ Les conditions de la pension d'orphelin ont été élargies en deux temps, en 19
 
 Sources : @loi85-12, art. 45-48 ; @loi96-67 ; @loi97-59, art. 1-2 ; @loi2007-43, qui remplace les articles 46 et 47. La loi n° 96-67 et la loi n° 2007-43 ne comportent pas de clause d'entrée en vigueur ; elles sont publiées le 26 juillet 1996 et le 26 juin 2007. La loi n° 97-59 prend effet au 1^er^ mai 1997, la même date que l'extension équivalente dans le secteur privé (@sec-secteur-prive).
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres de retraite, après fusion de la PR de datation -->
+<!-- Tableau tenu à la main, et non engendré : les conditions d'âge, d'études et de
+ressources de la pension d'orphelin ne sont pas des valeurs datées. Le seul paramètre du
+sujet porte le taux de 10 %, que ce tableau ne donne pas, et ces conditions dans sa
+documentation. Voir l'en-tête de scripts/generate_retraites_tables.py. -->
 
 ### Les cumuls
 
@@ -457,7 +482,9 @@ Les militaires relèvent du régime des pensions civiles et militaires, dont la 
 
 Sources : @loi85-12, art. 61 ; @loi88-71, art. 1 (art. 61, 1°).
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres de retraite, après fusion de la PR de datation -->
+<!-- Tableau tenu à la main, et non engendré : aucun paramètre de retraite ne porte les âges
+de mise à la retraite par grade militaire. Voir l'en-tête de
+scripts/generate_retraites_tables.py. -->
 
 La loi n° 88-71 aligne ainsi les officiers généraux sur les officiers supérieurs. L'article 61 § 1 (nouveau) issu de la loi n° 2019-37 retient ensuite quatre âges — 52, 57, 60 et 62 ans —, les officiers généraux étant portés à 62 ans [@loi2019-37, art. 1] ; la répartition des trois autres âges entre les grades n'est pas exposée ici. Le calendrier transitoire de 2019 décrit plus haut s'applique aussi à cet article. La loi de 1988 reproduit à l'identique les durées de services qui permettent aux militaires de partir avant l'âge de leur grade [@loi88-71, art. 1].
 
