@@ -98,6 +98,18 @@ Mais le portail promet « le système fiscal tunisien », et trois impôts n'ont
   openfisca par un générateur. Retraites et Prestations sociales y dérogent provisoirement.
 - **Version arabe** : produite par la CI ; rendre l'arabe en local avant de fusionner la PR
   de traduction.
+- **Garde-fou de troncature inopérant en retraduction complète** : dans
+  `scripts/translate_sync.py`, le contrôle de longueur est enveloppé dans `if old_target_text:`.
+  En mode complet l'ancienne traduction est ignorée, la variable est vide, et le contrôle ne
+  s'exécute pas — c'est-à-dire précisément dans le mode où la troncature est la plus probable.
+  Constaté le 12 septembre 2026 : `prestations_sociales/index.qmd` est revenu à 102 lignes pour
+  une source de 780, sans que rien ne l'arrête (PR #159, fermée). Comparer alors la sortie à la
+  SOURCE, et non à l'ancienne cible.
+- **`prestations_sociales/index.qmd` résiste aux deux modes de traduction** : 780 lignes,
+  171 clés de citation, 9 cellules de code — le chapitre le plus lourd du corpus. Mise à jour :
+  13 divergences de parité avant, 68 après (PR #157, fermée). Retraduction complète : 102 lignes
+  sur 780 (PR #159, fermée). L'arabe est resté à son meilleur état connu, 636 lignes et
+  13 divergences. Ne pas relancer en l'état : découper le fichier ou traduire par sections.
 
 ## Suite proposée
 
