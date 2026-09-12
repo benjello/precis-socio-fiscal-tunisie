@@ -1,5 +1,59 @@
 # Changelog
 
+## [1.16.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.15.0...v1.16.0) (2026-09-12)
+
+
+### ✨ Nouveautés
+
+* **cotisations:** crée le cinquième livre, sur le prélèvement social ([ef9c4d6](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/ef9c4d629cb9cb5b5e0051a1cf40ae11f96af1d9))
+* **cotisations:** documenter chaque régime privé, sa création et ses taux ([be179fa](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/be179fa9d85accd00a1a82f64a338fa51196da46))
+* **cotisations:** réécrire le secteur public sur les textes, et verser 41 références ([7a4c0e1](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/7a4c0e1fd2e243b2c2df69643c6dac04ff9bf9b8))
+* **cotisations:** un tableau de branches par régime, et un contrôle qui les voit ([acad9dc](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/acad9dc25d54a3b76da963e4cda87cef3b60e2ea))
+* **glossaire:** trente-sept notions du livre « Retraites » ([9c18378](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/9c1837810e4321fc869357083ace19a7f9ad1081))
+* **retraites:** corriger le public sur la chaîne de la loi n° 85-12, et publier les séries de revalorisation ([6de767b](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/6de767b47443839455c4bfe9ef698aa6c3bb6d7d))
+* **retraites:** engendrer cinq tableaux de paramètres, et dire pourquoi huit restent à la main ([333ea66](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/333ea66cb8029c56d2ba5bc25cd7c3a91d5ac871))
+* **retraites:** rédiger le livre, du secteur public au secteur privé ([88877c8](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/88877c8a36cb9af80fc4ad0936197659060bbf3f))
+* **tables:** apprendre au générateur à lire un second paquet de paramètres ([e75fbea](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e75fbea27be632d7c99a5565aa9e0e39f71df08f))
+
+
+### 🐛 Corrections de bugs
+
+* **ar:** reprendre les trois chapitres que la synchro a réparés, sans le quatrième ([8c4d226](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/8c4d226ec9153cda7bcdeee21f65e8e4373eae0b))
+* **biblio:** dérive le lien arabe de la loi n° 75-83 ([14f373c](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/14f373cf6513cfa4674066f51b0d5680d9b0a290))
+* **biblio:** donner au livre des cotisations sa collection Zotero ([e1b3e4d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e1b3e4d037963d395a53602e0b67bce8067a1ee3))
+* **biblio:** tolère le certificat expiré de pist.tn dans la vérification d'URL ([a39084e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/a39084e8553d69487020a89f491e8b9f51d291c5))
+* **conventions:** le contrôle acceptait mal un chemin hors du dépôt ([3987d99](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/3987d99dfadf432104203e3a248730a5f1dae071))
+* **cotisations:** garder le tiret dans le total des régimes sans employeur ([0c41685](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/0c4168588d95a76e5b7b3d9c5fbe57639b10d89b))
+* **cotisations:** le modèle applique bien l'assiette différentielle de la complémentaire ([4064ba9](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/4064ba962802e2cc4172a5eca90afac734db8c2c))
+* **cotisations:** ne pas étendre à trois lois ce qui n'est lu que pour deux ([193669d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/193669ddeae708cfdad3fab51b6731ebba3472d2))
+* **cotisations:** résoudre les deux citations orphelines de l'annexe glossaire ([874f66f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/874f66f19c4c48b66a856e45e5dae3e539a2f0a4))
+* **glossaire:** aligner quatre définitions sur la chaîne de la loi n° 85-12 ([c7c0720](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/c7c0720d7f7f5c2c09d7cec47d94132815add12e))
+* **glossaire:** salaire moyen de référence et limite de calcul, jusqu'au décret de 1994 ([e1e66ed](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e1e66edb07b24f10e5fd47a6396962e9fbae2513))
+* **retraites:** la fenêtre du salaire de référence, de 1974 à 1996, en une seule série ([d457939](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/d457939a6d5a4b7436a251581915aeabf3d9bc96))
+* **retraites:** ne pas faire commencer le tableau des âges en 1959 ([641d8d8](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/641d8d8bd89beb827b58a0b13d540d236a7d750a))
+* **traduction:** remettre à l'endroit 142 numéros de textes inversés ([a97fa48](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/a97fa48df9f29df465e02c63fea0579ba2dbbce1))
+* **traduction:** un identifiant de tableau à moitié traduit, et la règle qui l'interdit ([ed4f88f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/ed4f88fe303a7cc2674a29a6f55b56c78e825a00))
+
+
+### 📝 Documentation
+
+* AGENTS.md, et un agent modéliste pour les dépôts openfisca ([2c2ccf3](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/2c2ccf3879fd9d2ac155f3e6e55d7fd90dea5621))
+* **backlog:** les numéros des issues ouvertes après les PR du modèle ([4543c1e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/4543c1ef4ccc4612f9a60a0c9bd19c074582c7fb))
+* **backlog:** les trois derniers constats ont leur issue ([7f4f509](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/7f4f509c1b816530e93a0304e3123368687eee4b))
+* **biblio:** consigner la montée des 41 références vers Zotero ([b6da365](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/b6da3659217495fbbd370ee06f908bb45bd6605b))
+* consigner deux défauts de la chaîne de traduction, établis le 12 septembre ([4be59b4](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/4be59b4b7fa538e53ed50d914e807cf4b5f90222))
+* **conventions:** il n'y a pas de dette, et la docstring décrivait l'ancienne règle ([9e72408](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/9e72408994f50b4b3bbcd2cc3c5ea3261c833fe2))
+* **cotisations:** les deux dossiers documentaires, et le RTFR n'est pas plafonné ([fb9af8a](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/fb9af8af17e4f679a80242fbdeee209778c46745))
+* la série du SMAG au fascicule, et le taux du régime complémentaire ([cf8b593](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/cf8b593270e7579fbf4adfe35c4d916c412eadd8))
+* le backlog des cinq livres du précis ([55bc8a8](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/55bc8a86c8e5bf9df556833b48fce0670b807cb0))
+* rendre justice au livre de la fiscalité ([ade0fab](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/ade0fab3ed8c8d9440c36a7931bed93d29b5eb6d))
+* **retraites:** le CNRPS avant 1985, la loi n° 59-18 article par article ([ec05ea2](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/ec05ea26bd16ab6096923fe17580505e9f12eefd))
+* **retraites:** le dossier documentaire, et ce qu'il corrige ([750e86f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/750e86f9833e6ad93161fa7d550429613945995c))
+* **retraites:** les décrets n° 90-1455 et 94-1429 se succèdent, ils ne se contredisent pas ([b0d8571](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/b0d85718a9637f1d589bd58680bd9a046efad76e))
+* **retraites:** les séries de revalorisation des pensions, et le backlog du modèle ([1a574ba](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/1a574ba53c7add68b371997b57b083a4f2427134))
+* **retraites:** lire la chaîne modificative de la loi n° 85-12 ([2396025](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/23960254d752ebeaecf499f11d9ed898400411cf))
+* **retraites:** survivants et capital-décès, lus sur pièce ([4774746](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/4774746689f19b6263d1e77d0d3dbab901ca28d8))
+
 ## [1.15.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.14.0...v1.15.0) (2026-09-09)
 
 
