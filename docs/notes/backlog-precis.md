@@ -15,16 +15,21 @@ Les constats portant sur le modèle de microsimulation ont leur propre fichier,
 |---|---:|---:|---|
 | Retraites | 1 042 | 55 | rédigé sur le *Journal officiel*, tableaux de paramètres provisoires |
 | Prestations sociales | 780 | 12 | rédigé, plusieurs séries sans fondement publié |
-| Fiscalité | 580 | 22 | **trois sections promises sont vides** |
+| Fiscalité | 580 | 22 | l'impôt sur le revenu est abouti ; **trois autres impôts ne sont pas commencés** |
 | Rémunérations publiques | 593 | 34 | un chapitre abouti, trois chapitres brefs |
 | Cotisations sociales | 463 | 3 | le plus complet |
 
-## Fiscalité — le plus en retard
+## Fiscalité — un impôt traité à fond, trois à ouvrir
 
-Le portail promet « le système fiscal tunisien » ; seul l'impôt sur le revenu est traité.
+L'impôt sur le revenu occupe **490 des 580 lignes** du livre, avec 84 citations, quinze
+tableaux engendrés depuis les paramètres et deux sous-sections historiques : les impôts
+cédulaires et la contribution personnelle d'État jusqu'aux réformes, puis l'IRPP depuis les
+revenus de 1990. C'est, avec Retraites, la partie la plus sourcée du corpus.
 
-- **Sections vides** : impôt sur les sociétés, taxe sur la valeur ajoutée, droits de
-  consommation. Elles ne portent qu'un « TODO: détailler ».
+Mais le portail promet « le système fiscal tunisien », et trois impôts n'ont pas commencé.
+
+- **Sections à ouvrir** : impôt sur les sociétés, taxe sur la valeur ajoutée, droits de
+  consommation. Elles font quatre lignes chacune et ne portent qu'un « TODO: détailler ».
 - **Sections à écrire dans l'IRPP** : le minimum d'impôt (art. 44 § II) et la contribution
   au budget de l'État ; le régime forfaitaire depuis 1990, avec ses seuils et ses tarifs.
 - **Séries à construire** : le seuil de la tranche à 0 % et les déductions pour charges de
@@ -34,6 +39,8 @@ Le portail promet « le système fiscal tunisien » ; seul l'impôt sur le reven
   taux de 60 % de l'article 12 bis ; notes communes de la DGI sur la réforme de 2025 ;
   articles 56 et 91 de la loi de finances 2026, lus en arabe, à confirmer en français.
 - **Ton** : exposer en regard au moins deux lectures attribuées de la dérive du barème.
+- **TODO périmé** : celui du terminologue affirme que le `_quarto.yml` du livre ne déclare pas
+  d'annexe de glossaire ; il la déclare depuis. Restent les entrées de glossaire à créer.
 
 ## Retraites
 
@@ -97,5 +104,6 @@ Le portail promet « le système fiscal tunisien » ; seul l'impôt sur le reven
 1. Terminer la série en cours sur les retraites : rejouer et fusionner les PR du modèle,
    publier, puis remplacer les treize tableaux faits main.
 2. Débloquer Zotero, qui conditionne toute la tenue de la bibliographie.
-3. Ouvrir le chantier de la fiscalité, seul livre dont des sections promises sont vides.
+3. Ouvrir, dans le livre de la fiscalité, les trois impôts que le portail promet et qui
+   n'ont pas commencé : impôt sur les sociétés, TVA, droits de consommation.
 4. Étoffer les trois chapitres brefs des rémunérations publiques.
