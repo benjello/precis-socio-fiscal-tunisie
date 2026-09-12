@@ -824,10 +824,10 @@ créée** : le chapitre cite `loi-amen-social-2019`.
   **mêmes** enregistrements de `jort_cache.db` — ne jamais déduire l'URL AR en transformant la
   chaîne FR. Cas particulier : `lf-2025` pointe déjà l'édition arabe (`Ja1492024`), l'édition
   française du JORT n° 149/2024 étant absente en ligne.
-- **`circulaire-42-1996` non créée.** Circulaire n° 42 du 25 octobre 1996 sur la gestion des
-  indemnités à caractère familial dans le secteur public (JORT n° 94 du 22 novembre 1996,
-  pp. 2349-2364) : repérée et proposée au §12.2 du dossier contributif, mais **non lue** et
-  **non citée** par le chapitre. À créer seulement si le texte est établi et cité.
+- ~~**`circulaire-42-1996` non créée.**~~ **Créée le 11 septembre 2026** dans la bibliographie
+  partagée, sur l'entrée CSL du § 9 du dossier retraites (voir « Livre « Retraites » — passe
+  bibliographe du 11 septembre 2026 »). Elle reste **non lue** et **non citée** : métadonnées
+  seules (JORT n° 94 du 22 novembre 1996, pp. 2349-2364, recid 46979).
 - **`loi2017-66-lf2018` non résolue dans le livre « fiscalité »** — anomalie **préexistante**,
   sans rapport avec la promotion des quatre clés : la clé est citée par
   `precis/fr/fiscalite/_glossaire.qmd` (fichier **généré**, non modifiable à la main) et
@@ -933,7 +933,9 @@ Points de forme pour la montée dans Zotero :
 - `decretloi2011-48` — métadonnées `jort_cache.db` (recid 80629), **contenu non lu** ; porte le
   palier employeur de juillet 2011 dans openfisca-tunisia.
 - `loi59-45` (recid 118145) et `loi2005-54` (recid 110642) — métadonnées seules, contenu non lu.
-- `loi85-16` — le libellé de la contribution de l'État reste à relire à l'image.
+- ~~`loi85-16` — le libellé de la contribution de l'État reste à relire à l'image.~~ **Levé le
+  11 septembre 2026** : art. 5 relu à 400 dpi, contribution de l'État de 15 % lisible (voir la
+  section « Retraites » ci-dessous).
 - `loi73-71` — `issued` retenu au **19 novembre 1973** (fascicule, lu à l'image) contre le
   16 novembre de `jort_cache.db` ; divergence consignée dans la note de l'entrée.
 
@@ -951,6 +953,10 @@ contenu n'avait pas été lu : `decretloi2011-48`, `loi59-45`, `loi2005-54`, `lo
 - `loi85-16` — article 5 **partiellement lu** : la retenue de 10 % est établie, la mention de la
   contribution de l'État de 15 % est illisible sur le fascicule océrisé. Le chapitre le dit
   désormais explicitement plutôt que d'étendre aux trois lois ce qui n'est établi que pour deux.
+  **Mise à jour du 11 septembre 2026** : la mention est lisible à 400 dpi — « une contribution de
+  l'Etat égale à 15 % de ces mêmes indemnités prélevée sur le budget de la Chambre des Députés ».
+  La phrase de `precis/fr/cotisations_sociales/index.qmd` (l. 433) qui la dit illisible est donc
+  **dépassée** : à reprendre par le rédacteur (pas par le bibliographe).
 
 `decretloi2011-48` et `loi2005-54` ne sont pas citées ; elles restent à vérifier avant de l'être.
 
@@ -984,3 +990,603 @@ pour 1 056 ajouts alors que six lignes seulement étaient en cause.
 
 Le diff que produit la descente est par ailleurs du réordonnancement : les fichiers locaux
 sont identiques en contenu et n'ont pas été récrits.
+
+## Livre « Retraites » — passe bibliographe du 11 septembre 2026
+
+Source : `docs/notes/retraites-dossier.md` (10 septembre 2026), entrées CSL-JSON des § 9 et
+§ 10.4, plus les textes que le corps du dossier cite sans leur donner d'entrée. Tout est versé
+dans la bibliographie **partagée** `precis/{fr,ar}/references.json` (80 entrées par langue,
+contre 14), sur instruction : ces textes servent le livre « Retraites » et, pour beaucoup, les
+livres « Cotisations sociales », « Prestations sociales » et « Rémunérations publiques ».
+**Aucune écriture Zotero n'a été effectuée.**
+
+URL : FR = `pdf_fr`, AR = `pdf_ar`, lus sur le **même** enregistrement de `jort_cache.db`
+(recid ci-dessous) par un script unique qui écrit les deux langues. Tous les enregistrements
+portent les deux champs. Les 47 URL `legislation` du dossier concordent avec `pdf_fr`, et ses
+n° de fascicule et dates de signature avec la notice.
+
+### a) 42 clés créées (partagé FR + AR)
+
+Clés du dossier renommées à la convention du dépôt (`tn-decret-1979-536` → `decret79-536`,
+`tn-loi-2009-20` → `loi2009-20`…). **Les identifiants `tn-…` du dossier ne sont pas des clés :
+ne pas les citer.**
+
+| Clé | recid | Niveau (dossier) |
+|---|---|---|
+| `decret79-536` | 99253 | [T] |
+| `decret79-510` | 99274 | [M] |
+| `decret81-187` | 98356 | [T] |
+| `decret81-188` | 98357 | [T] |
+| `loi81-70` | 115268 | [T] art. 4-5 |
+| `decret82-1030` | 97385 | [T] |
+| `decret85-1177` | 95684 | [T] |
+| `decret85-1178` | 95685 | [T] |
+| `decret86-611` | 95353 | [T] |
+| `decret88-1136` | 94346 | [T] |
+| `decret88-1137` | 94347 | [T] |
+| `decret90-1455` | 93242 | [T] |
+| `decret96-326` | 90575 | [T] (dossier cotisations) — hors § 9, créée ici |
+| `decret97-291` | 90103 | [T] (dossier cotisations) — hors § 9, créée ici |
+| `decret97-1927` | 89803 | [T] art. 33 nouveau |
+| `decret2001-779` | 87591 | [T] |
+| `decret2007-2148` | 83291 | [T] |
+| `decret81-939` | 98073 | [M] |
+| `decret82-971` | 97403 | [M] |
+| `decret83-737` | 96876 | [M] |
+| `decret75-952` | 101344 | [M] |
+| `arrete-1998-07-29-revalorisation-rtns` | 59879 | [M] |
+| `circulaire-42-1996` | 46979 | [M] (clé déjà proposée § « Prestations sociales ») |
+| `loi2009-20` | 109760 | [T] |
+| `loi60-33` | 117856 | [M] — hors § 9, créée ici (voir d) |
+| `loi88-71` | 113976 | [M] |
+| `loi90-6` | 113646 | [M] |
+| `loi96-67` | 112417 | [M] (homonyme du 29 juillet 1996 : ne pas confondre) |
+| `loi97-74` | 112234 | [M] |
+| `loi2002-61` | 111264 | [M] |
+| `loi87-7` | 114257 | [M] |
+| `loi87-8` | 114258 | [M] |
+| `loi2009-39` | 109727 | [M] |
+| `loi88-84` | 113960 | [M] |
+| `loi2003-8` | 111156 | [M] |
+| `decret2003-1128` | 86249 | [M] |
+| `loi95-105` | 112519 | [M] |
+| `loi88-101` | 113942 | [M] |
+| `decret85-980` | 95742 | [M] |
+| `decret85-1176` | 95683 | [M] |
+| `decret74-572` | 102263 | [M] |
+| `cnrps-manuel-liquidation-2013` | — | document interne non normatif, type `report` |
+
+### b) 24 clés promues d'un livre vers le partagé (retirées du fichier de livre, FR et AR)
+
+Copies FR et AR vérifiées identiques entre livres avant fusion ; contenu inchangé.
+
+- depuis `cotisations_sociales` : `loi81-6`, `loi89-73`, `loi2002-32`, `decret89-107`,
+  `decret95-1166`, `loi2002-104` (ces six aussi depuis `prestations_sociales`), `loi83-31`,
+  `loi85-16`, `loi88-16`, `decret81-224`, `decret94-1429`, `decret97-555`, `decret2003-1212`,
+  `decret2003-894`, `arrete-1978-11-18-retraite-complementaire`, `loi94-71`, `loi2005-54` ;
+- depuis `prestations_sociales` : `decret93-308`, `decret96-1906`, `loi88-39`, `loi94-28` ;
+- depuis `remunerations_publiques` : `decret85-1025`, `loi98-37`, `decret98-1981` (titres
+  arabes conservés côté AR).
+
+Entrées du dossier absorbées par une clé existante (pas de doublon) : `tn-loi-1981-6`,
+`tn-loi-1989-73`, `tn-loi-2002-32`, `tn-decret-1981-224`, `tn-decret-1996-1906`,
+`tn-loi-1988-39`, `tn-loi-2005-54`, `tn-decret-1985-1025`, `tn-loi-1998-37`.
+
+Non promues, faute d'usage par le dossier : `loi2001-123-lf2002` (ligne § 10.2 sans données
+JORT) et `loi96-101`.
+
+### c) Entrées existantes corrigées — À REPORTER DANS ZOTERO (la montée ne crée que les absentes)
+
+- `decret74-499` : la note affirmait « sans article d'entrée en vigueur » — **faux** : l'art. 64
+  (lu à l'image) le fait prendre effet au **1er janvier 1974**. Fascicule corrigé en « n° 30,
+  30 avril - 3-4 mai 1974 » (publication 1974-04-30 selon `jort_cache.db`, et non « 3 mai ») ;
+  articles lus et rectificatif (JORT n° 39 du 7 juin 1974, p. 1252, recid 102251, non lu) ajoutés.
+- `loi2019-37` : entrée nue complétée — `container-title`, `issue: 35`, `page: 1312-1315`, note
+  (art. 1, 3, 5, 7 ; aucune clause d'entrée en vigueur).
+- `loi85-12` : note complétée de l'art. 75 (effet au 12 septembre 1985).
+- `precis/{fr,ar}/references.bib` : définition `@book{sdiri2014}` **supprimée** ; la clé reste
+  définie une seule fois, dans `precis/{fr,ar}/retraites/references.json` (collection
+  « Retraites »). Reste dans les deux `.bib` l'entrée `loi2016` (loi française « République
+  numérique », gabarit), citée par aucun `.qmd` : à supprimer sur décision.
+
+### d) Écarts entre le dossier, `jort_cache.db` et les fascicules
+
+- `loi60-33` : créée parce que le dossier la documente (§ 2.0 : n° 57, p. 1616, objet) et que la
+  notice le confirme. Métadonnées seules. La note précise qu'elle **ne porte pas** le barème du
+  RSNA (décret n° 74-499, art. 17).
+- `loi81-70` : `page` = étendue de la loi (1789-1798, notices article par article) ; les art. 4-5
+  lus sont aux pp. 1789-1790 (§ 1.0), ce que dit la note. Convention retenue : étendue du texte
+  en `page`, articles en note.
+- `decret90-1455` : la notice JORT (« relatif au régime de vieillesse… ») omet la mention
+  « amendant le décret n° 74-499 ». Tranché sur le fascicule (OCR `tesseract -l fra`) : l'intitulé
+  du texte, p. 1358, porte « **amendant** le décret N° 74-499 » (intitulé du § 9 du dossier,
+  retenu) ; le sommaire porte « modifiant ». C'est la notice qui est fautive.
+- `loi85-16` : note corrigée — l'art. 5 a été relu à 400 dpi, la contribution de l'État de 15 %
+  est lisible ; la réserve « à relire à l'image » est levée (conforme au § 4.2 du dossier).
+- `loi60-33` : note alignée sur `loi60-30` (« fascicule daté 13-16 décembre 1960 »). Les visas du
+  décret n° 90-1455 la citent avec « régime d'allocations » (pluriel), la notice avec
+  « allocation » : intitulé de la notice conservé.
+- `loi83-31` : dossier pp. 807-809, notice et entrée 808-809. Non modifié ; dernière page non lue.
+- `loi2007-43` : entrée 2197-2199 ; notice et dossier 2198-2199 ; sommaire du fascicule 2198.
+  Le pied de page du fascicule local (`2007/fr/Jo0512007.pdf`) montre que l'intitulé commence
+  **en bas de la p. 2197** : l'entrée est juste, la notice et le sommaire donnent la page de
+  l'article premier.
+- `loi75-83` : entrée 2852-2854, notices 2852-2853. Non modifié.
+- `circulaire-42-1996` : date de publication (22 novembre 1996) ajoutée depuis la notice.
+
+### e) Sans URL
+
+- `cnrps-manuel-liquidation-2013` : document interne de la CNRPS, aucune URL publique connue ;
+  exemplaire local seulement. **TODO** : chercher une diffusion publique (cnrps.nat.tn) avant de
+  lui en donner une.
+
+Toutes les autres entrées créées ou promues ont une URL pist.tn en FR et en AR.
+
+### f) Textes nommés par le dossier, volontairement sans clé
+
+Rectificatifs du décret n° 74-499, du décret n° 82-1030 (JORT n° 66/1982, p. 2197) et de la loi
+n° 81-6 (JORT n° 26/1981, p. 844) : portés en note de l'entrée principale. Décret n° 71-432
+(abrogé, sans données JORT), décrets du 2 février et du 8 juin 1944 (hors `jort_cache.db`), loi
+n° 81-46, décrets n° 87-337, 91-604, 96-1015 (clé créée depuis, voir la passe « chaîne 85-12 » ci-dessous), 2003-1656, 2009-2085, loi n° 88-145, décret-loi
+n° 74-22, loi n° 77-57, décrets de classement des cadres actifs (67-282, 69-167, 81-1600, 84-748,
+84-750, 84-753, 84-755, 88-2131) : simplement mentionnés, sans lecture. À créer si le texte du
+livre les cite.
+
+### g) TODO arabe
+
+Les 42 nouvelles entrées AR, et les 21 promues depuis `cotisations_sociales` et
+`prestations_sociales`, portent un `title` **français**. Dénomination arabe à reprendre du JORT
+arabe (fascicule `pdf_ar`), jamais traduite à la machine.
+
+### h) Zotero — conflit de rangement à trancher AVANT toute montée
+
+`scripts/sync_biblio.py` écrit dans un livre tout article rangé dans une collection mappée, et
+dans le partagé **seulement** les articles rangés dans **aucune** collection mappée (« Commun »
+= hors collection, pas une collection nommée Commun). Conséquences :
+
+1. Les 42 clés créées doivent être montées **hors collection** pour rester dans le partagé ; les
+   ranger dans la collection « Retraites » les ferait descendre dans
+   `precis/{fr,ar}/retraites/references.json`, en doublon du partagé.
+2. Les 24 clés promues sont déjà dans Zotero **dans** leurs collections de livre (« Cotisations
+   sociales », « Prestations sociales », « Rémunérations publiques ») : la prochaine descente
+   les recréera dans les fichiers de livre, en doublon du partagé. Même défaut latent pour les
+   huit clés promues le 10 septembre (commit 0e819f4).
+3. Deux sorties : retirer ces articles de leurs collections de livre dans Zotero, ou modifier
+   `sync_biblio.py` pour qu'un article présent dans plusieurs collections, ou marqué commun,
+   descende dans le partagé.
+
+#### À pousser dans Zotero — NE PAS pousser sans feu vert
+
+- créer : les 42 clés du a) (Extra : `citation-key: <clé>` et `issue: <n°>`), hors collection
+  sauf décision contraire au point h ;
+- corriger : `decret74-499`, `loi2019-37`, `loi85-12` (point c) et `loi85-16` (point d) ;
+- vérifier : `sdiri2014` doit exister dans Zotero, collection « Retraites », Extra
+  `citation-key: sdiri2014` — depuis la suppression de sa copie `.bib`, la seule définition du
+  dépôt est dans `precis/{fr,ar}/retraites/references.json`, fichier que la descente récrit ;
+- déranger (sortir de leurs collections de livre) : les 24 clés du b), si la première sortie
+  du point h est retenue.
+
+### Passe « chaîne modificative de la loi n° 85-12 » — 11 septembre 2026
+
+Source : `docs/notes/retraites-dossier.md`, § 11 à 11.6 et § 11 bis. **Aucune écriture Zotero.**
+Contrôle d'unicité refait sur les `references.json` (partagé et livres) et les deux `.bib` : aucune
+des quatre clés, ni aucun des quatre textes, n'existait sous une autre clé (le décret n° 96-1015
+n'était cité qu'en note de `loi95-105`).
+
+#### a) 4 clés créées (partagé FR + AR)
+
+URL lues sur le **même** enregistrement de `jort_cache.db` : FR = `pdf_fr`, AR = `pdf_ar`. Les
+quatre enregistrements portent les deux champs.
+
+| Clé | Texte | recid | Niveau |
+|---|---|---|---|
+| `loi97-59` | Loi n° 97-59 du 28 juillet 1997 (art. 47 al. 3 ; effet 1er mai 1997) | 112253 | [T] |
+| `decret96-1015` | Décret n° 96-1015 du 27 mai 1996 (validation des services) | 90472 | [T] |
+| `decretloi2022-49` | Décret-loi n° 2022-49 du 16 août 2022 (dérogation à l'art. 37 al. 4) | 169123 | [T] |
+| `decret2023-741` | Décret n° 2023-741 du 1er décembre 2023 (augmentation optionnelle de l'âge) | 183576 | [T] |
+
+Écarts par rapport au JSON proposé au § 11.6 du dossier :
+- `decret96-1015` : « Art. 8 : délais » **retiré** — le § 11.1 attribue les délais (art. 8-9) à la
+  **loi n° 95-105**, non au décret ; « Art. 5 : périodes validables » réduit à l'art. 5-1 cité.
+- `decretloi2022-49` : l'objet est reformulé sur le corps du § 11.2 (différentiel complémentaire,
+  retenue suspendue de février 2022 à l'entrée en vigueur) ; les écarts de notice (signature
+  5 août, publication 8 août, p. 2793) restent en note.
+- `decret2023-741` : notice fautive (`numero` = « 2023-138 », n° du fascicule) — enregistrement
+  identifié par le titre et la date.
+
+**Pagination arabe non établie** : les entrées AR reprennent la pagination de l'édition française
+(convention du dépôt : FR et AR ne diffèrent que par l'URL). Pour `decretloi2022-49`, la notice
+donne p. 2793 (probablement l'édition arabe) ; pour `decret2023-741`, 3240 seule. TODO : relever
+la pagination sur les fascicules `pdf_ar` si l'édition arabe doit être paginée.
+
+#### b) Notes mises à jour (champ `note` seul, FR et AR)
+
+Articles de la loi n° 85-12 touchés et date d'effet établie, d'après le § 11 ; « Métadonnées
+seules » levé :
+- partagé : `loi87-8` (art. 72 abrogé ; effet non énoncé), `loi88-71` (art. 5, 6, 16, 24, 25-26,
+  33, 41, 61 ; effet 1er janvier 1989 [D] ; réserve « selon la référence du modèle ; à vérifier »
+  **supprimée**), `loi90-6` (art. 6 dernier alinéa ; non énoncé), `loi96-67` (art. 48 ; non
+  énoncé), `loi97-74` (art. 42 al. 3 ; non énoncé), `loi2002-61` (art. 5 2° d, 6 § 2, 33 § 3,
+  41 1° c ; non énoncé), `decret96-326` (**décret n° 74-499**, art. 46 al. 1er ; non énoncé ;
+  la question de la neutralité sur l'art. 18 est **tranchée**), `decret97-1927` (**décret
+  n° 74-499**, art. 33 ; « Date d'effet non lue » → **1er mai 1997**, art. 2) ;
+- `cotisations_sociales` : `loi2001-123-lf2002` (art. 85 → art. 9 et 13 ; **art. 86** → art. 37 ;
+  **art. 97**, effet 1er janvier 2002), `decretloi2011-48` (art. 13 ; effet 1er juillet 2011 ;
+  « contenu NON LU » **levé**) ;
+- promue : `lf-2023` (**art. 12, édition arabe seulement**, p. 4060 de la pagination arabe →
+  art. 71 bis ; effet 1er janvier 2023, art. 76).
+
+#### c) 2 clés promues de `fiscalite` vers le partagé (retirées du fichier de livre, FR et AR)
+
+`lf-2022` et `lf-2023`, pour la rédaction du livre « Retraites ». `lf-2022` promue **à
+l'identique** ; `lf-2023` avec le seul ajout de note du point b). Champs de `lf-2023` conservés
+tels quels : URL arabe dans le fichier FR (édition française absente de pist.tn) et pas de `page`.
+
+#### d) Reste à faire
+
+- `lf-2022` : son `page` (3086) vise l'art. 24 ; l'**art. 14** (départ anticipé dès 57 ans,
+  2022-2024, « contrairement aux dispositions de la loi n° 85-12 ») est **p. 3082**. Note non
+  modifiée dans cette passe : à compléter si le livre cite l'art. 14.
+- Notes que le § 11 éclaire aussi, **non modifiées** (hors liste de la passe) : `loi95-105`
+  (abrogation implicite des art. 14-21, barème 23-32 %, 36 mensualités ; « Métadonnées seules »
+  à lever), `loi94-71` (art. 9 et 13, effets 1er juillet 1994 et 1995), `loi2007-43` (art. 1er,
+  taux ; art. 9 et 13), `loi2019-37` (art. 2, art. 32 § 2 et 3).
+- `lf-2025` (loi n° 2024-48, art. 14, prolongation) : [M] au dossier, pagination arabe seule.
+- Textes du § 11 sans clé, à créer si le livre les cite : loi n° 88-8, décret n° 2003-1656 (non
+  lu), arrêtés du Chef du Gouvernement sur les délais du programme de départ anticipé.
+- **TODO arabe** : les quatre nouvelles entrées AR portent un `title` français (même réserve que
+  le g) ci-dessus) ; `lf-2022` et `lf-2023` aussi.
+
+#### e) Zotero — même conflit de rangement que le h)
+
+- Les 4 clés créées : à monter **hors collection** (sinon descente dans le fichier du livre
+  « Retraites », en doublon du partagé).
+- `lf-2022` et `lf-2023` sont très probablement rangées dans la collection « Fiscalité » : la
+  prochaine descente les recréera dans `precis/{fr,ar}/fiscalite/references.json`, en doublon du
+  partagé. Sortie identique au h) (déranger, ou adapter `sync_biblio.py`).
+
+#### À pousser dans Zotero — NE PAS pousser sans feu vert
+
+- créer (hors collection) : `loi97-59`, `decret96-1015`, `decretloi2022-49`, `decret2023-741`
+  (Extra : `citation-key: <clé>`) ;
+- corriger la note : `loi87-8`, `loi88-71`, `loi90-6`, `loi96-67`, `loi97-74`, `loi2002-61`,
+  `decret96-326`, `decret97-1927`, `loi2001-123-lf2002`, `decretloi2011-48`, `lf-2023` ;
+- déranger (sortir de « Fiscalité ») : `lf-2022`, `lf-2023`, si la première sortie du h) est
+  retenue.
+
+### Passe « séries de revalorisation des pensions » — 11 septembre 2026
+
+Source : `docs/notes/retraites-revalorisation.md` (§ 9, § 10, tableaux § 12.1 et § 12.2).
+**Aucune écriture Zotero.** Script unique écrivant FR et AR ; URL : FR = `pdf_fr`, AR = `pdf_ar`,
+lus sur le **même** enregistrement de `jort_cache.db` (recid contrôlé : n° de fascicule et date de
+signature assertés contre la notice). Partagé : 90 → 161 entrées par langue.
+
+#### a) Clés : le § 9.2 de la note n'emploie PAS les clés retenues
+
+Les clés vont dans le partagé, donc au format `decretNN-NNN` / `decretAAAA-NNN`. Les clés
+`decret-2015-462`, `decret-2016-1`, `decret-2019-209`, `decret-2019-1133`, `decret-2020-767`,
+`decret-2026-63` proposées au § 9.2 **n'existent pas** : citer `decret2015-462`, `decret2016-1`,
+`decret2019-209`, `decret2019-1133`, `decret2020-767`, `decret2026-63`. Clés existantes
+conservées telles quelles : `decret-2017-668-smig`, `decret-2022-797`, `lf-2026`,
+`loi2001-123-lf2002`.
+
+#### b) 68 clés créées (partagé FR + AR)
+
+- **SMIG et indemnités assimilées (§ 12.1)**, recid entre parenthèses : `decret80-75` (98968),
+  `decret80-609` (98803), `decret81-437` (98252), `decret82-501` (97577), `decret83-509` (96960),
+  `decret86-689` (95334), `decret87-1277` (94685), `decret88-889` (94420), `decret89-1551`
+  (93676), `decret90-246` (93499), `decret91-1316` (92750), `decret92-1299` (92354),
+  `decret92-1630` (92265), `decret93-1256` (91936), `decret93-1838` (91810), `decret94-1804`
+  (91240), `decret95-900` (90925), `decret96-1013` (90470), `decret96-1547` (90337),
+  `decret97-1521` (89854), `decret97-2148` (89746), `decret98-1674` (89295), `decret99-994`
+  (88956), `decret99-1866` (88726), `decret2000-949` (88208), `decret2001-1746` (87333),
+  `decret2002-1790` (86750), `decret2003-1691` (86068), `decret2004-1803` (85440),
+  `decret2005-2320` (84800), `decret2006-2098` (84093), `decret2007-2079` (83303),
+  `decret2008-2072` (82740), `decret2009-2257` (81794), `decret2010-1746` (81088),
+  `decret2011-679` (80623), `decret2012-1981` (79866), `decret2014-2907` (78875),
+  `decret2015-1762` (78338), `decret2018-672` (76805), `decret2019-454` (118538),
+  `decret2020-1069` (148614), `decret2022-769` (—), `decret2024-419` (186713), `decret2026-67` (—).
+- **Secteur public (§ 12.2, § 5.1)** : `decret82-972` (97404), `decret88-1888` (94141),
+  `decret96-1907` (90242), `decret2015-462` (78509), `decret2016-1` (78276), `decret2019-209`
+  (76498), `decret2019-1133` (129070), `decret2020-767` (148111), `decret2026-63` (—).
+- **Treize décrets de tranches de l'IGE 1999-2012** (la note donne leur notice, § 6.2 ; créés au
+  niveau [M], titre de la notice accents restitués, « montants et date d'effet non lus » en note) :
+  `decret99-2015` (88704), `decret2000-1199` (88093), `decret2001-1557` (87377),
+  `decret2002-2672` (86641), `decret2003-1568` (86136), `decret2004-1538` (85490),
+  `decret2005-3137` (84663), `decret2006-2182` (84048), `decret2007-1671` (83390),
+  `decret2008-4047` (82262, [T]), `decret2009-2145` (81826), `decret2010-1973` (81029),
+  `decret2012-2959` (79693).
+- **§ 10.2** : `arrete-1997-03-29-bareme-actualisation` (60518) — [T°].
+
+Niveau de lecture de chaque entrée porté dans son `note` (lu à l'image / couche texte / OCR /
+métadonnées seules) ; les montants [V] de la note (repris d'un inventaire, non lus) n'ont **pas**
+été reportés dans les notes.
+
+#### c) 3 clés promues d'un livre vers le partagé (retirées du fichier de livre, FR et AR)
+
+- `decret-2022-797` (depuis `remunerations_publiques`) — **complétée** : titre FR tronqué complété
+  sur le fascicule local (« … au titre des années 2023-2024-2025 ») ; ajout `container-title`,
+  `issue: 120`, `page: 2959-2966` et note de contenu. Titre arabe de l'entrée AR conservé.
+- `lf-2026` (depuis `fiscalite`) — note complétée de l'art. 15 (édition arabe, p. 4233).
+- `loi2001-123-lf2002` (depuis `cotisations_sociales`) — à l'identique.
+
+#### d) Entrées existantes du partagé modifiées — À REPORTER DANS ZOTERO
+
+- `decret79-510`, `decret81-939`, `decret82-971`, `decret83-737` : « Métadonnées seules ; texte non
+  lu » remplacé par le contenu lu à l'image (§ 1.2, § 5.1), date d'effet comprise.
+- `decret94-1429` : note complétée des art. 18 et 19 (nouveaux) (§ 10.1).
+- `decret-2017-668-smig` : note complétée (effet 1er août 2016, montants, lecture sur l'édition
+  arabe) ; **URL de l'entrée AR corrigée** : elle portait l'URL française `2017F/Jo0452017.pdf`,
+  elle porte désormais `pdf_ar` = `2017A/Ja0452017.pdf` (recid 77455).
+
+#### e) URL pist.tn qui servent l'édition arabe (§ Conventions de la note)
+
+- `2017F/Jo0452017.pdf` : URL de l'entrée **FR** `decret-2017-668-smig` (c'est le `pdf_fr` de la
+  notice). Laissée en place, faute d'autre URL française ; la note le dit. Aucune édition française
+  vue.
+- `2019F/Jo0202019.pdf` : **aucune entrée ne la porte**. `decret2019-209` : `pdf_fr` vide dans la
+  notice → URL arabe `2019A/Ja0202019.pdf` dans les deux langues (précédent des « cinq éditions
+  françaises absentes »), sans `page` (pagination française non établie ; p. 727 de l'édition arabe).
+- `2025F/Jo1482025.pdf` : **aucune entrée ne la porte**. L'entrée FR `lf-2026` pointe déjà, à
+  dessein, sur `2025A/Ja1482025.pdf` : ne pas la « corriger ».
+
+#### f) Écarts de notice (§ 10.7) et de pagination — signalés, non tranchés
+
+- `decret86-689` : notice signée le 20 juillet 1986, « publiée » le 18 juillet. Entrée créée avec la
+  date de signature de la notice ; incohérence en note. Fascicule (image non océrisée) à ouvrir.
+- `decret88-889` : notice signée le 5 juin 1988 (titre compris), publiée le 6 mai 1988 ; le visa du
+  décret n° 90-246, lu à l'image, porte **5 mai 1988**. Entrée créée au **5 juin** (notice), doute en
+  note. **TODO** : lire l'intitulé au fascicule `1988F/Jo03188.pdf`, p. 715, puis corriger `issued`
+  et `title` si le 5 mai se confirme.
+- `decret2020-767` : notice pp. 1072-1078 ; entrée à **2072-2079** (pagination française lue).
+- **Pagination de notice = pagination arabe** (défaut documenté, `outillage-sources.md` § 4 ;
+  vérifié ici encore) : `decret2019-454`, notice
+  pp. 1681-1682 (numéro vide, intitulé arabe) ; le sommaire du fascicule français local
+  (`PDFs/JORT/2019/fr/Jo0432019.pdf`) donne **p. 1585**, retenue. La note de revalorisation (§ 2.2)
+  donne à tort 1681-1682 comme pages françaises. Les pages [M] de cette passe (86-689, 88-889,
+  99-994, 99-1866, 2002-1790 à 2005-2320, les douze tranches non lues) sont donc **provisoires** ;
+  chaque note le dit.
+- `decret2018-672` : notice sans pages, intitulé arabe ; p. 2684 et intitulé (« code **de**
+  travail ») relevés sur le sommaire et le texte du fascicule français local.
+- `decret2019-1133` : l'intitulé du § 9.2 omet « et la fixation de ses montants » ; intitulé complet
+  relevé sur le fascicule.
+- `decret2015-462` : intitulé FR « au titre de l'année 2014 » (fascicule), notice arabe « 2015 ».
+- `decret92-1299` : deux notices (n° 49, pp. 935-936, retenue ; n° 55, p. 1067, « rectificatif »,
+  recid 92316, non lu, porté en note).
+- `decret2000-949` (`Ja03800.pdf`) et `decret2000-1199` (`Ja04700.pdf`) : `pdf_ar` hors convention
+  de nommage. Écrits tels quels ; tous deux répondent `200 application/pdf` (10,3 Mo et 0,65 Mo),
+  contenu non ouvert.
+- Doublons **de texte** antérieurs, non introduits ici, relevés en contrôle : `loi2017-66-lf2018` et
+  `lf-2018` (même loi, `remunerations_publiques`) ; `lf-1991` (`fiscalite`) et
+  `loi-90-111-lf-1991` (`prestations_sociales`).
+
+#### g) Sans URL — TODO
+
+Texte sans enregistrement dans `jort_cache.db` → pas d'URL. Fascicule vérifié en local, URL
+candidate (curl 200 selon la note, 11 septembre 2026) à valider par un humain ou par une mise à jour
+de la base :
+- `decret2026-63` et `decret2026-67` : base arrêtée au 10 avril 2026 ; fascicule
+  `PDFs/JORT/2026/fr/Jo0442026.pdf` (candidate `2026/2026F/Jo0442026.pdf`, AR `Ja0442026.pdf`
+  présent en local).
+- `decret2022-769` : aucune notice (seul le décret SMAG n° 2022-768 du même fascicule en a une) ;
+  fascicule `PDFs/JORT/2022/fr/Jo1142022.pdf` (candidate `2022/2022F/Jo1142022.pdf`).
+- `decret2019-454` : **a** une URL (arabe, `pdf_ar`), `pdf_fr` vide ; une édition française existe
+  en local (`Jo0432019.pdf`) : URL française candidate à vérifier (ouvrir le fichier servi, cf.
+  `outillage-sources.md` § 3).
+
+#### h) Restent sans clé
+
+- Cités par la note hors du périmètre de la passe (§ 12 et § 10) : décrets n° 2026-64, 2026-65
+  (magistrats), 2026-66 (SMAG), arrêté du 10 juillet 2020 (prime exceptionnelle aux pensions),
+  *Lettre CRES* n° 3 (2014). JSON prêt au § 9.2 ; à créer si le livre les cite (2026-* : sans URL,
+  même motif qu'au g).
+- Série SMAG (§ 3.2), décrets IGE non lus de 1990-1998 (90-1001, 91-803, 93-2062, 97-1174,
+  98-1292), décrets n° 81-444, 82-504, 82-505, 84-424, 85-980 (déjà clé `decret85-980`) : pas de clé
+  nouvelle.
+- Les autres arrêtés annuels de barème d'actualisation (1994-2024) : seul celui du 29 mars 1997 a
+  une clé.
+
+#### i) TODO arabe
+
+Les 68 entrées AR créées portent un `title` français (même réserve qu'au g) de la passe du
+11 septembre). Plusieurs notices portent un intitulé arabe (2015-462, 2016-1, 2018-672, 2019-209,
+2019-454) : à reprendre du fascicule `pdf_ar`, non de la notice (troncatures connues).
+
+#### j) Ce que la descente `sync_biblio.py` fera de ces URL — à trancher avant la montée
+
+La descente **dérive** l'URL d'une langue depuis l'autre (`url_jort` : `F/Jo` ↔ `A/Ja`), sauf pour
+les URL listées dans `precis/urls-jort.json` (`sans_homologue`). Contrôle `curl -k` du
+11 septembre 2026 :
+- `decret-2017-668-smig` : `2017F/Jo0452017.pdf` figure dans `sans_homologue` ; la descente
+  remettra l'entrée AR sur l'URL « F ». Sans conséquence pour le lecteur : `Jo0452017.pdf` et
+  `Ja0452017.pdf` sont **identiques à l'octet** (md5 `523cfa73…`).
+- `decret2000-949` et `decret2000-1199` : l'URL AR dérivée (`2000A/Ja0382000.pdf`,
+  `2000A/Ja0472000.pdf`) répond **404** ; les URL AR de la notice (`Ja03800.pdf`, `Ja04700.pdf`)
+  répondent 200. La descente produirait deux liens AR morts : ajouter ces deux URL à un mécanisme
+  d'exception, ou corriger le motif de dérivation.
+- `decret2019-454` : l'entrée FR porte l'URL arabe (`pdf_fr` vide). La descente la dériverait vers
+  `2019F/Jo0432019.pdf`, qui répond 200 et sert bien l'**édition française** (« Traduction
+  française pour information », md5 identique au fichier du corpus local). URL française
+  candidate **vérifiée** : peut remplacer l'URL arabe de l'entrée FR sur décision.
+- `decret2019-209` : la descente dériverait l'entrée FR vers `2019F/Jo0202019.pdf`, qui sert
+  l'**édition arabe** (note, § Conventions) : l'ajouter à `sans_homologue`, ou accepter le lien.
+- `lf-2026` : `2025A/Ja1482025.pdf` déjà dans `sans_homologue`, rien à faire.
+
+`urls-jort.json` n'a pas été modifié (fichier régénéré par `scripts/verifier_urls_jort.py`).
+
+#### k) Zotero
+
+Même conflit de rangement qu'au h) de la passe « Retraites » : les 68 clés à monter **hors
+collection** ; `decret-2022-797` (collection « Rémunérations publiques »), `lf-2026`
+(« Fiscalité ») et `loi2001-123-lf2002` (« Cotisations sociales ») redescendront dans leurs
+fichiers de livre, en doublon du partagé, tant que le point h) n'est pas tranché.
+
+#### À pousser dans Zotero — NE PAS pousser sans feu vert
+
+- créer (hors collection) : les 68 clés du b) (Extra : `citation-key: <clé>` **et** `issue: <n°>` —
+  le type `legislation` de Zotero n'a pas de champ pour le n° du JORT ; sans cette ligne, la
+  descente effacerait `issue` des 68 entrées) ;
+- corriger : `decret-2022-797` (titre, issue, page, note), `lf-2026` (note), `decret79-510`,
+  `decret81-939`, `decret82-971`, `decret83-737`, `decret94-1429`, `decret-2017-668-smig` (notes ;
+  pour ce dernier, l'URL arabe n'est pas un champ Zotero partagé : vérifier comment
+  `sync_biblio.py` produit l'URL AR avant la montée) ;
+- déranger (sortir de leurs collections de livre) : `decret-2022-797`, `lf-2026`,
+  `loi2001-123-lf2002`, si la première sortie du h) est retenue.
+
+### Passe « Retraites — fenêtre du salaire de référence » (11 septembre 2026) — À REPORTER DANS ZOTERO
+
+- `decret90-1455` et `decret94-1429` : champ `note` réécrit (FR et AR) — articles modifiés, art. 19
+  non touché en 1990, remplacement de l'art. 18 par le décret de 1994, dates d'effet (exécutoire le
+  23 septembre 1990 ; paliers énoncés 1er juillet 1994/1995/1996). Source : `retraites-dossier.md` § 12.
+- [x] ~~À créer : `arrete-1994-11-17-bareme-actualisation`~~ — créée le 11 septembre 2026 (passe
+  suivante).
+
+### Passe « Retraites — avant retouche du livre » (11 septembre 2026)
+
+**Aucune écriture Zotero.** Partagé : 161 → 165 entrées par langue ; `cotisations_sociales` :
+14 → 13. Aucun `.qmd` modifié.
+
+#### a) 3 clés créées (partagé FR + AR)
+
+- [x] `arrete-1994-11-17-bareme-actualisation` — recid **61474** (arrêté, signé le 17 novembre 1994,
+  JORT n° 93 du 25 novembre 1994, p. 1898 ; notice concordante). URL FR = `pdf_fr`
+  `1994F/Jo09394.pdf`, AR = `pdf_ar` `1994A/Ja09394.pdf`, lues sur la notice. Page contrôlée sur le
+  fascicule local : l'arrêté tient entièrement sur la p. 1898 (page 10 du fichier). Intitulé,
+  coefficients 1961 (6,48469) et 1993 (1,00000), art. 2 (droits ouverts à compter du
+  1er juillet 1994) recontrôlés sur la couche texte ; lecture à l'image : dossier § 12.
+- [x] `decret2026-65` — **sans URL** (JORT n° 44 du 30 avril 2026, postérieur à l'état de
+  `jort_cache.db`, arrêtée au 10 avril 2026 ; aucune notice). Intitulé et page (**835**) relevés sur
+  `PDFs/JORT/2026/fr/Jo0442026.pdf` (couche texte). **Magistrats** (ordre judiciaire, Tribunal
+  administratif, Cour des comptes) : 120 D aux 1er janvier 2026, 2027 et 2028 sur l'indemnité de
+  magistrature ; **art. 2** : applicable aux pensions des retraités. La demande de passe le désignait
+  comme « augmentation dans le secteur public » : c'est bien ce texte (clause pensions à l'art. 2 ;
+  2026-63 et 2026-64 la portent à l'art. 4), l'intitulé retenu est celui du fascicule.
+- [x] `decret2026-66` — **sans URL**, même motif. SMAG, p. **837** ; art. 1er (21,336 / 22,400 /
+  23,520 D par jour aux 1er janvier 2026/2027/2028), art. 2 (prime de technicité), **art. 5** :
+  « s'applique aux pensions de retraite ». Clé de la note § 9.2 `decret2026-66` conservée ; URL
+  proposée par la note (`2026F/Jo0442026.pdf`) **non reprise** (pas d'enregistrement dans la base).
+
+La clé `decret-2026-65` proposée au § 9.2 de `retraites-revalorisation.md` n'est pas retenue :
+citer `decret2026-65`.
+
+#### b) 1 clé promue (retirée du fichier de livre, FR et AR)
+
+- [x] `decretloi2011-48` — de `precis/{fr,ar}/cotisations_sociales/references.json` vers
+  `precis/{fr,ar}/references.json`, objet copié à l'identique ; URL déjà conformes à la notice
+  recid 80629 (FR `2011F/Jo0412011.pdf`, AR `2011A/Ja0412011.pdf`). Aucun `.qmd` ne la cite encore :
+  le TODO bibliographe de `precis/fr/retraites/_secteur_public.qmd` (l. 59) est levé côté
+  bibliographie, la citation reste à poser par le rédacteur.
+
+#### c) Notes vérifiées, non modifiées
+
+- `loi2001-123-lf2002` : la note porte déjà l'art. 86 (art. 37 réécrit, péréquation) et l'art. 97
+  (effet au 1er janvier 2002), FR et AR.
+- `decret97-1927` : la note porte déjà l'art. 2 (effet au 1er mai 1997), FR et AR.
+
+#### d) Sans URL — TODO
+
+- `decret2026-65`, `decret2026-66` : s'ajoutent à `decret2026-63` et `decret2026-67` (passe
+  « séries de revalorisation », g). URL candidates `2026/2026F/Jo0442026.pdf` et
+  `2026/2026A/Ja0442026.pdf` (fascicules présents en local) à reprendre de `pdf_fr` / `pdf_ar` quand
+  `jort_cache.db` couvrira le 30 avril 2026.
+
+#### e) TODO arabe
+
+Les 3 entrées AR créées portent un `title` français (même réserve que les passes précédentes) ;
+intitulés arabes à relever sur `Ja09394.pdf` et `Ja0442026.pdf`, non sur une notice.
+
+#### f) Contrôles
+
+JSON valides (4 fichiers) ; aucun identifiant en double dans un fichier ni entre le partagé et un
+fichier de livre ; doublons connus inchangés (`loi96-101` et `lf-2018`, en double entre deux
+fichiers de livre ; `loi2016`, présent dans `references.bib`, non touché : le contrôle par
+identifiant ne le fait pas apparaître en double). Rendu HTML de `precis/fr/retraites` et `precis/fr/cotisations_sociales` sans
+citation non résolue ; aucun `figdata` modifié par le rendu.
+
+#### À pousser dans Zotero — NE PAS pousser sans feu vert
+
+- créer (hors collection, cf. conflit de rangement h) : `arrete-1994-11-17-bareme-actualisation`,
+  `decret2026-65`, `decret2026-66` (Extra : `citation-key: <clé>` **et** `issue: <n°>`) ;
+- déranger : `decretloi2011-48`, s'il est rangé dans la collection « Cotisations sociales » (sinon il
+  redescendra dans le fichier de livre, en doublon du partagé) ;
+- corriger (notes, passe précédente) : `decret90-1455`, `decret94-1429`.
+
+### Passe « Retraites — entrée en vigueur des textes » (11 septembre 2026)
+
+**Aucune écriture Zotero.** Partagé : 165 → 167 entrées par langue. Fichiers modifiés par cette
+passe, et eux seuls : `precis/fr/references.json`, `precis/ar/references.json` et la présente note.
+Les modifications de `precis/glossaire.yml`, `precis/{fr,ar}/retraites/_glossaire.qmd` et
+`precis/fr/retraites/_secteur_prive.qmd` présentes dans l'arbre sont antérieures ou concurrentes,
+et ne viennent pas de cette passe.
+
+#### a) 2 clés créées (partagé FR + AR), règles générales de computation des dates d'effet
+
+Contrôle d'unicité préalable (partagé, fichiers de livre, deux `.bib`) : aucun des deux textes
+n'avait de clé. URL : FR = `pdf_fr`, AR = `pdf_ar`, lues sur le **même** enregistrement ; notice
+assertée (date de signature, n° de fascicule, pages) avant écriture.
+
+- [x] `decret-1956-09-13-publication` — recid **108190**. Décret du 13 septembre 1956 (7 safar 1376)
+  modifiant le décret du 27 janvier 1883 relatif à la publication des décrets et arrêtés ; JORT
+  n° 74 du 14 septembre 1956, p. 1247 ; FR `1956F/Jo07456.pdf`, AR `1956A/Ja07456.pdf`. Article
+  unique (art. 3 nouveau, un jour franc) **lu** par OCR `tesseract -l fra` du fascicule local
+  (couche texte absente), al. 1 et al. 2 (exécution immédiate par disposition expresse) cités
+  séparément. **Écart de notice** : la notice titre « Decret du Chef du gouvernement du
+  13 Septembre 1956 » ; l'intitulé du fascicule (décret beylical, rubrique « Présidence du
+  Conseil ») ne nomme aucune autorité. Intitulé du fascicule retenu, écart porté en note.
+  `container-title` : « Journal officiel tunisien » (titre du fascicule en 1956) ; première entrée
+  `legislation` antérieure à 1957 à en porter un, convention à confirmer.
+- [x] `loi93-64` — recid **112971**. Loi n° 93-64 du 5 juillet 1993 ; JORT n° 50 du 6 juillet 1993,
+  p. 931 (notice « 0931 ») ; FR `1993F/Jo05093.pdf`, AR `1993A/Ja05093.pdf`. Art. 1er, art. 2
+  (cinq jours après le dépôt au siège du gouvernorat de Tunis, jour du dépôt exclu) et art. 3
+  (abroge le décret du 27 janvier 1883 et ses modificatifs, dont ceux du 8 septembre 1955 et du
+  13 septembre 1956) **lus** par OCR du fascicule local, p. 931.
+
+Aucun `.qmd` ne cite encore ces deux clés : résolution contrôlée hors livre (`quarto pandoc
+--citeproc` sur les deux fichiers, FR et AR).
+
+Les deux paires d'URL suivent exactement le motif `F/Jo` ↔ `A/Ja` : la descente `sync_biblio.py`
+les régénère à l'identique, aucune exception `sans_homologue` n'est nécessaire.
+
+#### b) Notes nettoyées de toute mention du modèle (FR et AR, champ `note` seul)
+
+Le précis ne parle pas du modèle. Faits de droit conservés ; remarques retirées, **à reporter dans
+`docs/notes/backlog-modele.md`** si elles doivent survivre (non fait dans cette passe) :
+- [x] `decretloi2011-48` : retiré « Porte le palier employeur de juillet 2011 dans le modèle
+  openfisca-tunisia. » (art. 13 de la loi n° 85-12, effet 1er juillet 2011, régimes concernés
+  conservés) ;
+- [x] `arrete-1978-11-18-retraite-complementaire` : retiré « le taux global de 9 % (6 points
+  employeur / 3 points salarié) que porte le modèle n'est pas attesté par ce texte » ;
+- [x] `decret74-572` : retiré « à confronter à la date 1993-02-01 portée par les paramètres du
+  modèle » ;
+- [x] `loi88-16` : retiré « Attention : le modèle openfisca-tunisia la date par erreur de 1983 dans
+  son titre arabe. » ;
+- [x] `cnrps-manuel-liquidation-2013` : retiré « Exemplaire local : openfisca-tunisia-pension/tmp/
+  manuel pensions.pdf. » (chemin de dépôt ; l'exemplaire reste à cet emplacement, cf. e) de la
+  passe « Livre Retraites »).
+
+Plus aucune occurrence de « openfisca » ni de « modèle » dans les deux `references.json` partagés.
+
+#### c) TODO
+
+- **TODO arabe** : les 2 entrées AR portent un `title` français ; intitulés arabes à relever sur
+  `Ja07456.pdf` et `Ja05093.pdf`, non traduits.
+- **Hors périmètre (partagé seulement), à décider** : notes de livre qui nomment encore le modèle,
+  FR et AR — `cotisations_sociales` : `decret2003-1544` (« la date du 2 juillet 2003 retenue par le
+  modèle openfisca-tunisia est celle de la signature… ») et `decret97-1645` (« Le modèle
+  openfisca-tunisia ne porte aucun paramètre pour cette variante. »). Le « modèle de scoring » du
+  titre de `arrete-2020-05-19-scoring` (`prestations_sociales`) est le mot du texte : rien à faire.
+- Ne pas calculer dans les notes la date d'effet propre de la loi n° 93-64 : articles consignés tels
+  que lus, computation laissée au rédacteur.
+
+#### d) Contrôles
+
+JSON valides ; aucun identifiant en double introduit (doublons connus `loi96-101` et `lf-2018`
+inchangés) ; rendu HTML de `precis/fr/retraites` sans citation non résolue ; aucun `figdata`
+modifié par le rendu.
+
+#### À pousser dans Zotero — NE PAS pousser sans feu vert
+
+- créer (hors collection, cf. conflit de rangement h) : `decret-1956-09-13-publication`,
+  `loi93-64` (Extra : `citation-key: <clé>` **et** `issue: <n°>`) ;
+- corriger la note : `decretloi2011-48`, `arrete-1978-11-18-retraite-complementaire`,
+  `decret74-572`, `loi88-16`, `cnrps-manuel-liquidation-2013`.

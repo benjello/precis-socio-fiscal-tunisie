@@ -2216,3 +2216,1118 @@ entries:
         طروحات تُجرى على الدخل الجملي بعد ضبط المداخيل الصنفية وقبل تطبيق الجدول: فوائد
         الادّخار وأقساط التأمين على الحياة والحالة والأعباء العائلية. ولا ترتبط بأيّ صنف بعينه.
       synonymes: []
+
+  # -------------------------------------------------------------------- retraites
+  # Notions du livre « Retraites ». Termes arabes repris du § 7 de
+  # docs/notes/retraites-dossier.md (et du § 13 de docs/notes/prestations-contributif.md
+  # pour les sigles de régimes), où chacun est rattaché à son texte. Les termes
+  # dont l'équivalent arabe n'est pas attesté sur le JORT arabe restent
+  # « provisoire » et renvoient à l'issue de validation.
+
+  # --- Secteur public
+
+  - id: allocation-de-vieillesse
+    acronyme: null
+    statut: valide
+    references: [loi97-74, loi81-6, decret74-499]
+    source_definition: {ref: loi85-12, locator: "art. 42"}
+    voir_aussi: [pension-proportionnelle, pension-minimale-garantie, smig]
+    fr:
+      terme: Allocation de vieillesse
+      definition: >
+        Prestation servie à l'assuré dont la carrière est trop courte pour ouvrir
+        droit à pension. Dans le secteur public, l'agent qui compte au moins cinq
+        années d'ancienneté sans atteindre la durée de services requise choisit entre
+        le remboursement de ses contributions et une allocation égale à la moitié du
+        SMIG du régime de 2 400 heures par an (loi n° 85-12, art. 42) ; depuis la loi
+        n° 97-74, cette allocation est réversible au profit du conjoint survivant et
+        des orphelins, dans les conditions applicables aux pensions. Dans le régime
+        des salariés non agricoles, elle était versée en capital à partir de 60 mois
+        de cotisations, jusqu'à son remplacement par la pension proportionnelle en
+        1982 ; le régime des salariés agricoles la conserve en capital à partir de
+        20 trimestres (loi n° 81-6, art. 70-73).
+      synonymes: []
+    ar:
+      terme: منحة الشيخوخة
+      definition: >
+        منحة تُسند إلى المضمون الذي تكون مسيرته المهنية أقصر من أن تفتح له الحقّ في
+        جراية. في القطاع العمومي، يختار العون الذي يعدّ خمس سنوات أقدمية على الأقلّ
+        دون بلوغ مدّة الخدمات المطلوبة بين استرجاع مساهماته ومنحة تساوي نصف الأجر
+        الأدنى المضمون لمختلف المهن في نظام 2400 ساعة في السنة (القانون عدد 12 لسنة
+        1985، الفصل 42)؛ ومنذ القانون عدد 74 لسنة 1997، أصبحت هذه المنحة قابلة
+        للانتقال إلى القرين الباقي على قيد الحياة والأيتام، وفق الشروط المنطبقة على
+        الجرايات. وفي نظام الأجراء غير الفلاحيين، كانت تُصرف في شكل رأس مال
+        ابتداءً من 60 شهرًا من المساهمات، إلى أن عُوِّضت بالجراية النسبية سنة 1982؛
+        ويحتفظ بها نظام الأجراء الفلاحيين في شكل رأس مال ابتداءً من 20 ثلاثية
+        (القانون عدد 6 لسنة 1981، الفصول 70-73).
+      synonymes: []
+
+  - id: annuite-liquidable
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: []
+    source_definition: {ref: loi85-12, locator: "art. 35 et 38"}
+    voir_aussi: [taux-de-liquidation, bonification]
+    fr:
+      terme: Annuité liquidable
+      definition: >
+        Année de services prise en compte pour la liquidation de la pension, qui
+        rapporte un pourcentage de la rémunération de liquidation. Dans le régime des
+        pensions civiles et militaires, chacune rapporte 2 % pour les dix premières
+        années, 3 % pour les dix suivantes et 2 % au-delà de vingt, dans la limite de
+        90 % ; toute période inférieure à une année est comptée par trimestres
+        (loi n° 85-12, art. 35 et 38).
+      synonymes: [Annuité]
+    ar:
+      terme: السنة القابلة للتصفية
+      definition: >
+        سنة خدمة تُعتمد في تصفية الجراية وتُكسب نسبة مئوية من أجر التصفية. في نظام
+        الجرايات المدنية والعسكرية، تُكسب كلّ سنة 2 % عن السنوات العشر الأولى، و3 % عن
+        السنوات العشر الموالية، و2 % عمّا زاد على عشرين سنة، في حدود 90 %؛ وتُحتسب كلّ
+        فترة تقلّ عن سنة بالثلاثيات (القانون عدد 12 لسنة 1985، الفصلان 35 و38).
+      synonymes: []
+
+  - id: augmentation-optionnelle-age
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [loi85-12, loi2009-20]
+    source_definition: {ref: loi2019-37, locator: "art. 3 (art. 71 bis et 71 ter)"}
+    voir_aussi: [taux-de-liquidation, pensions-civiles-militaires]
+    fr:
+      terme: Augmentation optionnelle de l'âge de mise à la retraite
+      definition: >
+        Faculté ouverte à l'agent public, par le titre II bis que la loi n° 2019-37
+        insère dans la loi n° 85-12, de rester en activité d'un à trois ans au-delà
+        de l'âge légal, sur demande écrite présentée six mois avant cet âge ; pour
+        les enseignants du supérieur de l'article 29 bis, la prolongation peut
+        atteindre cinq ans et l'âge de 70 ans. L'option est définitive et
+        irrévocable. Chaque année supplémentaire rapporte 2 % au taux de
+        liquidation, et chaque trimestre 0,50 %.
+      synonymes: []
+    ar:
+      terme: الترفيع الاختياري في سنّ الإحالة على التقاعد
+      definition: >
+        إمكانية مخوَّلة للعون العمومي، بمقتضى العنوان الثاني مكرّر الذي أدرجه القانون
+        عدد 37 لسنة 2019 في القانون عدد 12 لسنة 1985، للبقاء في حالة مباشرة من سنة
+        إلى ثلاث سنوات بعد السنّ القانونية، بطلب كتابي يُقدَّم ستّة أشهر قبل بلوغها؛
+        ويمكن أن يبلغ التمديد خمس سنوات وسنّ السبعين بالنسبة إلى مدرّسي التعليم العالي
+        المشمولين بالفصل 29 مكرّر. والاختيار نهائي ولا رجوع فيه. وتُكسب كلّ سنة
+        إضافية 2 % من نسبة التصفية، وكلّ ثلاثية 0,50 %.
+      synonymes: [الترفيع الاختياري في سنّ التقاعد]
+
+  - id: bonification
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [loi2019-37]
+    source_definition: {ref: loi85-12, locator: "art. 32-33"}
+    voir_aussi: [annuite-liquidable, travaux-penibles-insalubres, cadres-actifs, fonctions-astreignantes, mise-a-la-retraite-d-office]
+    fr:
+      terme: Bonification
+      definition: >
+        Période ajoutée à la durée des services effectifs pour le calcul de la
+        pension. La loi n° 85-12 en accorde, selon la durée des services, aux
+        ouvriers des travaux pénibles et insalubres, aux agents des cadres actifs et
+        à ceux qui exercent des fonctions astreignantes (art. 32), ainsi qu'aux
+        militaires et agents des forces de sécurité intérieure blessés en service,
+        aux agents atteints d'une invalidité de 80 % au moins et aux agents mis à la
+        retraite pour suppression d'emplois (art. 33). Son effet reste borné par le
+        plafond du taux de liquidation.
+      synonymes: []
+    ar:
+      terme: الترفيع في مدّة الخدمات
+      definition: >
+        فترة تُضاف إلى مدّة الخدمات الفعلية لاحتساب الجراية. يمنحها القانون عدد 12 لسنة
+        1985، حسب مدّة الخدمات، للعملة القائمين بالأشغال الشاقّة وغير الصحّية ولأعوان
+        الأسلاك النشيطة وللأعوان المباشرين لوظائف مرهقة (الفصل 32)، وكذلك للعسكريين
+        وأعوان قوات الأمن الداخلي المصابين أثناء الخدمة، وللأعوان المصابين بعجز لا
+        تقلّ نسبته عن 80 %، وللأعوان المحالين على التقاعد بسبب حذف الخطط (الفصل 33).
+        ويبقى أثره محدودًا بسقف نسبة التصفية.
+      synonymes: [التمتيع الاستثنائي]
+
+  - id: cadres-actifs
+    acronyme: null
+    statut: valide
+    references: [loi2019-37]
+    source_definition: {ref: loi85-12, locator: "art. 29"}
+    voir_aussi: [bonification, fonctions-astreignantes, travaux-penibles-insalubres, forces-de-securite-interieure]
+    fr:
+      terme: Cadres actifs
+      definition: >
+        Agents publics classés en partie active par des décrets propres à chaque
+        corps, qui bénéficient d'un âge de mise à la retraite dérogatoire : 55 ans
+        dans la loi n° 85-12, 57 ans depuis la loi n° 2019-37 (art. 29). Ils
+        bénéficient d'une bonification égale à la période restant à courir jusqu'à
+        60 ans, dans la limite de deux à cinq ans selon la durée des services
+        (art. 32).
+      synonymes: []
+    ar:
+      terme: الأسلاك النشيطة
+      definition: >
+        أعوان عموميون مصنَّفون ضمن الأسلاك النشيطة بمقتضى أوامر خاصّة بكلّ سلك،
+        ينتفعون بسنّ استثنائية للإحالة على التقاعد: 55 سنة في القانون عدد 12 لسنة
+        1985، و57 سنة منذ القانون عدد 37 لسنة 2019 (الفصل 29). وينتفعون بترفيع في مدّة
+        الخدمات يساوي الفترة المتبقّية إلى سنّ الستين، في حدود سنتين إلى خمس سنوات حسب
+        مدّة الخدمات (الفصل 32).
+      synonymes: []
+
+  - id: elements-permanents-remuneration
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [decret85-980, decret85-1176]
+    source_definition: {ref: loi85-12, locator: "art. 10"}
+    voir_aussi: [perequation, pensions-civiles-militaires, traitement-de-base]
+    fr:
+      terme: Éléments permanents de la rémunération
+      definition: >
+        Éléments de la rémunération, en espèces ou en nature, qui forment à la fois
+        l'assiette de la contribution au régime des pensions civiles et militaires et
+        la rémunération sur laquelle la pension est liquidée (loi n° 85-12, art. 10).
+        Leur liste est fixée par le décret n° 85-980 pour les agents de l'État, des
+        collectivités locales et des établissements publics à caractère
+        administratif, et par le décret n° 85-1176 pour ceux des établissements
+        publics à caractère industriel et commercial et des sociétés nationales.
+        Toute augmentation de l'un d'eux entraîne la péréquation des pensions
+        (art. 37).
+      synonymes: []
+    ar:
+      terme: العناصر القارّة للأجر
+      definition: >
+        عناصر التأجير، نقدًا أو عينًا، التي تمثّل في الآن نفسه قاعدة المساهمة في نظام
+        الجرايات المدنية والعسكرية والأجرَ الذي تُصفّى على أساسه الجراية (القانون عدد
+        12 لسنة 1985، الفصل 10). ويضبط قائمتها الأمر عدد 980 لسنة 1985 بالنسبة إلى
+        أعوان الدولة والجماعات المحلية والمؤسسات العمومية ذات الصبغة الإدارية، والأمر
+        عدد 1176 لسنة 1985 بالنسبة إلى أعوان المؤسسات العمومية ذات الصبغة الصناعية
+        والتجارية والشركات الوطنية. وتُفضي كلّ زيادة في أحدها إلى تنظير الجرايات
+        (الفصل 37).
+      synonymes: [العناصر القارّة للتأجير]
+
+  - id: fonctions-astreignantes
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [decret85-1178, loi2019-37]
+    source_definition: {ref: loi85-12, locator: "art. 28"}
+    voir_aussi: [bonification, cadres-actifs, travaux-penibles-insalubres]
+    fr:
+      terme: Fonctions astreignantes
+      definition: >
+        Fonctions dont la liste est fixée par le décret n° 85-1178 du 24 septembre
+        1985 et dont l'exercice ouvre un âge de mise à la retraite dérogatoire,
+        cumulé avec une durée de 35 ans de services : 55 ans dans la loi n° 85-12,
+        57 ans depuis la loi n° 2019-37 (art. 28). Les agents concernés bénéficient
+        d'une bonification égale à la période restant à courir jusqu'à 60 ans
+        (art. 32).
+      synonymes: []
+    ar:
+      terme: الوظائف المرهقة
+      definition: >
+        وظائف يضبط قائمتها الأمر عدد 1178 لسنة 1985 المؤرّخ في 24 سبتمبر 1985، تفتح
+        مباشرتها سنًّا استثنائية للإحالة على التقاعد مقترنة بمدّة خدمات بـ35 سنة: 55 سنة
+        في القانون عدد 12 لسنة 1985، و57 سنة منذ القانون عدد 37 لسنة 2019 (الفصل 28).
+        وينتفع الأعوان المعنيّون بترفيع في مدّة الخدمات يساوي الفترة المتبقّية إلى سنّ
+        الستين (الفصل 32).
+      synonymes: []
+
+  - id: indemnite-caractere-familial
+    acronyme: null
+    statut: valide
+    references: [loi88-39, decret96-1906, loi81-70]
+    source_definition: {ref: loi85-12, locator: "art. 40"}
+    voir_aussi: [indemnite-revenu-unique, allocation-familiale, pensions-civiles-militaires]
+    fr:
+      terme: Indemnité à caractère familial
+      definition: >
+        Indemnité servie par rang d'enfant aux agents publics chargés de famille,
+        selon des taux mensuels fixés par décret, et qui s'ajoute dans les mêmes
+        conditions à la pension de retraite (loi n° 85-12, art. 40), comme elle
+        s'ajoutait déjà depuis le 1^er^ mai 1981 (loi n° 81-70, art. 4). La loi
+        n° 88-39 en limite le droit aux trois premiers enfants ; le décret
+        n° 96-1906 en fixe les taux depuis le 1^er^ novembre 1996.
+      synonymes: [Indemnité familiale]
+    ar:
+      terme: المنحة ذات الصبغة العائلية
+      definition: >
+        منحة تُسند حسب رتبة الطفل إلى الأعوان العموميين الذين لهم أبناء في الكفالة، وفق
+        نسب شهرية يضبطها أمر، وتُضاف بنفس الشروط إلى جراية التقاعد (القانون عدد 12 لسنة
+        1985، الفصل 40)، كما كانت تُضاف إليها منذ غرّة ماي 1981 (القانون عدد 70 لسنة
+        1981، الفصل 4). ويقصر القانون عدد 39 لسنة 1988 الحقّ فيها على الأبناء الثلاثة
+        الأوائل؛ ويضبط الأمر عدد 1906 لسنة 1996 نسبها منذ غرّة نوفمبر 1996.
+      synonymes: [المنحة العائلية]
+
+  - id: indemnite-revenu-unique
+    acronyme: null
+    statut: valide
+    references: [loi81-70, cnrps-manuel-liquidation-2013]
+    source_definition: {ref: loi85-12, locator: "art. 40"}
+    voir_aussi: [indemnite-caractere-familial, majoration-salaire-unique]
+    fr:
+      terme: Indemnité de revenu unique
+      definition: >
+        Indemnité servie à l'agent public chargé de famille dont le ménage ne dispose
+        que d'un seul revenu, et qui s'ajoute à la pension de retraite dans les mêmes
+        conditions que pour les agents en activité (loi n° 85-12, art. 40) ; le
+        droit des retraités date du 1^er^ mai 1981 (loi n° 81-70, art. 4-5). Selon le
+        manuel de liquidation de la CNRPS (2013), elle suppose au moins un enfant
+        ouvrant droit à l'indemnité familiale. Elle est distincte de la majoration
+        pour salaire unique du secteur privé.
+      synonymes: [Indemnité pour revenu unique]
+    ar:
+      terme: منحة الدخل الوحيد
+      definition: >
+        منحة تُسند إلى العون العمومي الذي له أبناء في الكفالة ولا يتوفّر لأسرته إلّا دخل
+        واحد، وتُضاف إلى جراية التقاعد بنفس الشروط المطبّقة على الأعوان المباشرين
+        (القانون عدد 12 لسنة 1985، الفصل 40)؛ ويعود حقّ المتقاعدين فيها إلى غرّة ماي
+        1981 (القانون عدد 70 لسنة 1981، الفصلان 4 و5). وحسب دليل تصفية الجرايات للصندوق
+        الوطني للتقاعد والحيطة الاجتماعية (2013)، يُشترط فيها وجود طفل واحد على الأقلّ
+        يفتح الحقّ في المنحة العائلية. وهي متميّزة عن منحة الأجر الوحيد في القطاع الخاص.
+      synonymes: []
+
+  - id: jouissance-differee
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [decret82-1030, decret2007-2148]
+    source_definition: {ref: loi85-12, locator: "art. 41"}
+    voir_aussi: [retraite-anticipee-volontaire, decote]
+    fr:
+      terme: Jouissance différée
+      definition: >
+        Report, jusqu'à un âge fixé par le texte, du service d'une pension dont le
+        droit est acquis. Dans le secteur public, la pension de l'agent mis à la
+        retraite sur sa demande ou licencié pour insuffisance professionnelle est
+        différée jusqu'à 50 ans, celle de l'agent révoqué ou démissionnaire jusqu'à
+        l'âge légal (loi n° 85-12, art. 41). Dans le régime des salariés non
+        agricoles, les départs anticipés de l'article 15 bis ouvrent le droit sans
+        condition d'âge, mais la pension n'est servie qu'à 50 ans (décret
+        n° 82-1030) ; depuis le décret n° 2007-2148, le départ pour convenance
+        personnelle n'est servi qu'à 55 ans.
+      synonymes: []
+    ar:
+      terme: الانتفاع المؤجَّل بالجراية
+      definition: >
+        تأجيل صرف جراية مكتسَب الحقّ فيها إلى سنّ يضبطها النصّ. في القطاع العمومي،
+        يُؤجَّل الانتفاع بجراية العون المحال على التقاعد بطلب منه أو المسرَّح لعدم
+        الكفاءة المهنية إلى سنّ الخمسين، وبجراية العون المعزول أو المستقيل إلى السنّ
+        القانونية (القانون عدد 12 لسنة 1985، الفصل 41). وفي نظام الأجراء غير
+        الفلاحيين، تفتح حالات الخروج المبكّر المنصوص عليها بالفصل 15 مكرّر الحقّ دون شرط
+        سنّ، لكنّ الجراية لا تُصرف إلّا في سنّ الخمسين (الأمر عدد 1030 لسنة 1982)؛ ومنذ
+        الأمر عدد 2148 لسنة 2007، لا تُصرف جراية الخروج لأسباب شخصية إلّا في سنّ الخامسة
+        والخمسين.
+      synonymes: [التمتّع المؤجَّل]
+
+  - id: mise-a-la-retraite-d-office
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [loi88-71, loi90-6, loi2019-37]
+    source_definition: {ref: loi85-12, locator: "art. 5, 6, 33 et 67"}
+    voir_aussi: [bonification, solde-de-reforme]
+    fr:
+      terme: Mise à la retraite d'office
+      definition: >
+        Mise à la retraite prononcée par l'administration, et non à la demande de
+        l'agent. Dans le secteur public, la loi n° 88-71 l'ajoute, à compter du
+        1^er^ janvier 1989, aux cas d'admission à la retraite avant l'âge légal, après
+        quinze ans de services effectifs ; hors militaires et agents des forces de
+        sécurité intérieure, elle est décidée par décret au vu d'un rapport de
+        l'employeur et des observations de l'agent. Elle ouvre une pension à
+        jouissance immédiate. La même loi fait bénéficier les agents mis à la retraite
+        d'office de la bonification de l'article 33, égale à la période restant à
+        courir jusqu'à l'âge légal, à condition que son rendement ne dépasse pas 20 %
+        de la rémunération de liquidation ; la loi n° 2019-37, qui réécrit
+        l'article 33, maintient ce plafond. Les militaires mis à la retraite d'office
+        ou atteints par la limite d'âge de leur grade bénéficient d'une bonification
+        égale à la période restant à courir jusqu'à 60 ans (loi n° 85-12, art. 67),
+        repère porté à 62 ans par la loi n° 2019-37.
+      synonymes: []
+    ar:
+      terme: الإحالة الوجوبية على التقاعد
+      definition: >
+        إحالة على التقاعد تقرّرها الإدارة لا بطلب من العون. في القطاع العمومي، أضافها
+        القانون عدد 71 لسنة 1988، ابتداءً من غرّة جانفي 1989، إلى حالات الإحالة على
+        التقاعد قبل السنّ القانونية، بعد خمس عشرة سنة من الخدمات الفعلية؛ وباستثناء
+        العسكريين وأعوان قوّات الأمن الداخلي، تُقرَّر بأمر بناءً على تقرير المؤجّر
+        وملاحظات العون. وتفتح الحقّ في جراية فورية الانتفاع. وقد مكّن نفس القانون الأعوان
+        المحالين وجوبًا على التقاعد من الترفيع في مدّة الخدمات المنصوص عليه بالفصل 33،
+        والمساوي للفترة المتبقّية إلى السنّ القانونية، شريطة ألّا يتجاوز مردوده 20 % من
+        أجر التصفية؛ وأبقى القانون عدد 37 لسنة 2019، الذي أعاد صياغة الفصل 33، على هذا
+        السقف. وينتفع العسكريون المحالون وجوبًا على التقاعد أو البالغون السنّ القصوى
+        لرتبتهم بترفيع يساوي الفترة المتبقّية إلى سنّ الستين (القانون عدد 12 لسنة 1985،
+        الفصل 67)، وقد رفع القانون عدد 37 لسنة 2019 هذا الحدّ إلى سنّ الثانية والستين.
+      synonymes: []
+
+  - id: pension-de-reversion
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [decret74-499, decret81-188, loi81-6, loi81-70]
+    source_definition: {ref: loi85-12, locator: "art. 43"}
+    voir_aussi: [pension-temporaire-orphelin, capital-deces]
+    fr:
+      terme: Pension de réversion
+      definition: >
+        Pension servie au conjoint survivant, calculée en pourcentage de la pension
+        dont bénéficiait ou aurait pu bénéficier l'assuré décédé. Elle est de 75 %
+        dans le secteur public, réduite pendant le service de pensions d'orphelins
+        sans descendre au-dessous de 50 % (loi n° 85-12, art. 43) ; de 50 % dans le
+        régime des salariés non agricoles (décret n° 74-499, art. 31), majorable
+        jusqu'à 75 % sous condition depuis le décret n° 81-188 ; et de 50 % dans le
+        régime des salariés agricoles (loi n° 81-6, art. 61-63).
+      synonymes: [Pension de conjoint survivant, Pension de veuve]
+    ar:
+      terme: جراية القرين الباقي على قيد الحياة
+      definition: >
+        جراية تُسند إلى القرين الباقي على قيد الحياة، تُحتسب بنسبة مئوية من الجراية التي
+        كان ينتفع بها المضمون المتوفّى أو كان بإمكانه الانتفاع بها. وتبلغ 75 % في القطاع
+        العمومي، وتُخفَّض خلال فترة صرف جرايات الأيتام دون أن تنزل عن 50 % (القانون عدد
+        12 لسنة 1985، الفصل 43)؛ و50 % في نظام الأجراء غير الفلاحيين (الأمر عدد 499
+        لسنة 1974، الفصل 31)، قابلة للترفيع إلى 75 % بشروط منذ الأمر عدد 188 لسنة 1981؛
+        و50 % في نظام الأجراء الفلاحيين (القانون عدد 6 لسنة 1981، الفصول 61-63).
+      synonymes: [جراية البقاء, جراية الأرملة]
+
+  - id: pension-minimale-garantie
+    acronyme: null
+    statut: valide
+    references: [loi81-70, decret74-499, decret82-1030, loi89-73]
+    source_definition: {ref: loi85-12, locator: "art. 39"}
+    voir_aussi: [smig, smag, allocation-de-vieillesse, pension-proportionnelle, solde-de-reforme]
+    fr:
+      terme: Pension minimale garantie
+      definition: >
+        Montant, exprimé en fraction du salaire minimum, auquel la pension est portée
+        lorsque son calcul donne un résultat inférieur. Il est des deux tiers du SMIG
+        du régime de 2 400 heures par an dans le secteur public (loi n° 85-12,
+        art. 39 ; déjà dans la rédaction de 1981 de la loi n° 59-18) et, pour les
+        pensions de vieillesse et d'invalidité, dans le régime des salariés non
+        agricoles ; depuis 1982, la moitié du SMIG s'applique dans ce régime aux
+        retraites anticipées des tirets a) et b) de l'article 15 bis et aux pensions
+        proportionnelles (décret n° 82-1030, art. 5). Le régime agricole amélioré le
+        fixe à la moitié du SMAG rapporté à 300 jours.
+      synonymes: [Pension minimum garantie, Minimum garanti]
+    ar:
+      terme: الجراية الدنيا المضمونة
+      definition: >
+        مبلغ يُعبَّر عنه بجزء من الأجر الأدنى، تُرفَع إليه الجراية إذا أفضى احتسابها إلى
+        مبلغ أدنى منه. ويساوي ثلثي الأجر الأدنى المضمون لمختلف المهن في نظام 2400 ساعة في
+        السنة في القطاع العمومي (القانون عدد 12 لسنة 1985، الفصل 39؛ وقد ورد بنفس المستوى
+        في صيغة 1981 من القانون عدد 18 لسنة 1959)، وكذلك بالنسبة إلى جرايات الشيخوخة
+        والعجز في نظام الأجراء غير الفلاحيين؛ ومنذ 1982، يُطبَّق في هذا النظام نصف الأجر
+        الأدنى المضمون على جرايات التقاعد المبكّر المنصوص عليها بالمطّتين أ) وب) من الفصل
+        15 مكرّر وعلى الجرايات النسبية (الأمر عدد 1030 لسنة 1982، الفصل 5). ويضبطه النظام
+        الفلاحي المحسَّن بنصف الأجر الأدنى الفلاحي المضمون محتسبًا على أساس 300 يوم.
+      synonymes: []
+
+  - id: pension-temporaire-orphelin
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [loi2007-43, decret74-499, decret81-188, decret97-1927, loi81-6]
+    source_definition: {ref: loi85-12, locator: "art. 45"}
+    voir_aussi: [pension-de-reversion]
+    fr:
+      terme: Pension temporaire d'orphelin
+      definition: >
+        Pension servie à l'orphelin de l'assuré décédé jusqu'à un âge limite. Dans le
+        secteur public, elle est de 10 % de la pension de retraite par orphelin
+        jusqu'à 21 ans, sans condition d'âge en cas de maladie incurable ou
+        d'invalidité permanente ; la loi n° 2007-43 la prolonge jusqu'à 25 ans pour
+        les études supérieures sans bourse et l'ouvre sans condition d'âge à la fille
+        sans ressources (loi n° 85-12, art. 45-47). Dans le régime des salariés non
+        agricoles, elle est collective et fixée à 30 % depuis le décret n° 81-188 ;
+        dans le régime des salariés agricoles, elle est de 20 %, ou de 30 % pour
+        l'orphelin de père et de mère (loi n° 81-6, art. 64-65).
+      synonymes: [Pension d'orphelin]
+    ar:
+      terme: الجراية الوقتية لليتيم
+      definition: >
+        جراية تُسند إلى يتيم المضمون المتوفّى إلى حدّ سنّ معيّنة. في القطاع العمومي، تبلغ
+        10 % من جراية التقاعد عن كلّ يتيم إلى سنّ الحادية والعشرين، ودون شرط سنّ في حالة
+        المرض العضال أو العجز الدائم؛ ويمدّدها القانون عدد 43 لسنة 2007 إلى سنّ الخامسة
+        والعشرين بالنسبة إلى مزاولي التعليم العالي غير المنتفعين بمنحة، ويفتحها دون شرط
+        سنّ للبنت التي لا موارد لها (القانون عدد 12 لسنة 1985، الفصول 45-47). وفي نظام
+        الأجراء غير الفلاحيين، هي جراية جماعية حُدّدت بـ30 % منذ الأمر عدد 188 لسنة
+        1981؛ وفي نظام الأجراء الفلاحيين، تبلغ 20 %، و30 % لليتيم من الأب والأم (القانون
+        عدد 6 لسنة 1981، الفصلان 64 و65).
+      synonymes: [جراية الأيتام]
+
+  - id: perequation
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [loi2001-123-lf2002, loi2007-43, cnrps-manuel-liquidation-2013]
+    source_definition: {ref: loi85-12, locator: "art. 37"}
+    voir_aussi: [elements-permanents-remuneration, revalorisation-pensions, pensions-civiles-militaires]
+    fr:
+      terme: Péréquation des pensions
+      definition: >
+        Mécanisme de revalorisation des pensions du secteur public : la pension est
+        réajustée lors de toute augmentation de l'un des éléments permanents de la
+        rémunération du grade ou de la fonction sur la base desquels elle a été
+        liquidée, ainsi que lors de l'institution d'une indemnité permanente attachée
+        à ce grade ou à cette fonction (loi n° 85-12, art. 37). Depuis le
+        1^er^ janvier 2002, la péréquation donne lieu à contribution : la loi de
+        finances pour 2002 (art. 86) rend la contribution du retraité due pendant toute
+        la période de service de la pension et de ses accessoires, et celle de
+        l'employeur sur une période de 36 mois ; la loi n° 2007-43 reformule la règle,
+        en mettant à la charge du retraité la totalité des contributions, à
+        l'exception de la quote-part de l'employeur pendant 36 mois. Elle
+        se distingue de la révision de la pension, qui est une reliquidation
+        (art. 54), et de la revalorisation par référence au salaire minimum du
+        secteur privé.
+      synonymes: [Péréquation]
+    ar:
+      terme: تنظير الجرايات
+      definition: >
+        آلية لتعديل جرايات القطاع العمومي، تُراجَع بمقتضاها الجراية عند كلّ زيادة في أحد
+        العناصر القارّة للأجر المطابق للرتبة أو الخطّة التي صُفّيت الجراية على أساسها،
+        وكذلك عند إحداث منحة قارّة مرتبطة بتلك الرتبة أو الخطّة (القانون عدد 12 لسنة
+        1985، الفصل 37). ومنذ غرّة جانفي 2002، يخضع التنظير للمساهمة: جعل قانون المالية
+        لسنة 2002 (الفصل 86) مساهمة المنتفع بالجراية مستوجبة طيلة فترة صرف الجراية
+        وتوابعها، ومساهمة المؤجّر مستوجبة على مدى 36 شهرًا؛ ثمّ أعاد القانون عدد 43
+        لسنة 2007 صياغة هذه القاعدة، فحمّل المتقاعد كامل المساهمات، باستثناء منابات
+        المؤجّر خلال 36 شهرًا. ويتميّز التنظير
+        عن مراجعة الجراية، وهي إعادة تصفية لها (الفصل 54)، وعن تعديل الجرايات بالرجوع
+        إلى الأجر الأدنى في القطاع الخاص.
+      synonymes: [تسوية الجرايات, إحالة الجرايات]
+
+  - id: rente-compensatrice
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [loi95-56]
+    source_definition: {ref: cnrps-manuel-liquidation-2013, locator: "p. 88-89"}
+    voir_aussi: [rente-viagere-invalidite, rente-accident-travail, accident-du-travail]
+    fr:
+      terme: Rente compensatrice
+      definition: >
+        Rente servie par la CNRPS, à la charge de l'employeur, aux agents publics
+        victimes d'un accident du travail ou d'une maladie professionnelle, au titre
+        de la loi n° 95-56 du 28 juin 1995, dont les militaires et les agents des
+        forces de sécurité intérieure sont exclus (art. 2). Selon le manuel de
+        liquidation de la caisse (2013), elle est servie depuis janvier 1996 avec une
+        formule et des bornes identiques à celles de la rente viagère d'invalidité.
+      synonymes: []
+    ar:
+      terme: الإيراد التعويضي
+      definition: >
+        إيراد يصرفه الصندوق الوطني للتقاعد والحيطة الاجتماعية، على كاهل المؤجّر، للأعوان
+        العموميين ضحايا حوادث الشغل أو الأمراض المهنية، بعنوان القانون عدد 56 لسنة 1995
+        المؤرّخ في 28 جوان 1995، الذي يستثني العسكريين وأعوان قوات الأمن الداخلي
+        (الفصل 2). وحسب دليل تصفية الجرايات للصندوق (2013)، يُصرف منذ جانفي 1996 وفق صيغة
+        وحدود مماثلة لصيغة الإيراد العمري للعجز وحدوده.
+      synonymes: []
+
+  - id: rente-viagere-invalidite
+    acronyme: null
+    statut: valide
+    references: [loi59-18, loi85-12, cnrps-manuel-liquidation-2013]
+    source_definition: {ref: loi81-70, locator: "art. 4 (art. 26 § II de la loi n° 59-18)"}
+    voir_aussi: [rente-compensatrice, bonification, pension-de-reversion]
+    fr:
+      terme: Rente viagère d'invalidité
+      definition: >
+        Rente qui s'ajoute à la pension de l'agent public admis à la retraite pour
+        invalidité. L'invalidité des agents publics reste régie par la loi n° 59-18,
+        maintenue sur ce point par l'article 76 de la loi n° 85-12 ; dans la
+        rédaction de l'article 26 § II issue de la loi n° 81-70, le montant de la
+        rente est égal au produit de la rémunération soumise à retenue pour pension
+        par le taux de l'invalidité. Le manuel de liquidation de la CNRPS (2013) la
+        calcule, lui, sur la pension de retraite, et plafonne le total de la pension
+        et de la rente à 100 % de la rémunération de base.
+      synonymes: [Rente viagère pour invalidité]
+    ar:
+      terme: الإيراد العمري للعجز
+      definition: >
+        إيراد يُضاف إلى جراية العون العمومي المحال على التقاعد بسبب العجز. ولا يزال عجز
+        الأعوان العموميين خاضعًا للقانون عدد 18 لسنة 1959، الذي أبقى الفصل 76 من القانون
+        عدد 12 لسنة 1985 على العمل به في هذا الشأن؛ وحسب صيغة الفقرة II من الفصل 26
+        المنبثقة عن القانون عدد 70 لسنة 1981، يساوي مبلغ الإيراد حاصل ضرب الأجر الخاضع
+        للحجز بعنوان الجراية في نسبة العجز. أمّا دليل تصفية الجرايات للصندوق الوطني
+        للتقاعد والحيطة الاجتماعية (2013)، فيحتسبه على أساس جراية التقاعد ويحدّد مجموع
+        الجراية والإيراد بـ100 % من الأجر المعتمد.
+      synonymes: []
+
+  - id: retraite-anticipee-volontaire
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [loi85-12, loi2009-39]
+    source_definition: {ref: loi87-7}
+    voir_aussi: [jouissance-differee, pensions-civiles-militaires]
+    fr:
+      terme: Retraite anticipée volontaire
+      definition: >
+        Système de départ anticipé des agents publics institué, hors de la loi
+        n° 85-12, par la loi n° 87-7 du 6 mars 1987. Il est distinct du droit général
+        au départ anticipé de l'article 30 de la loi n° 85-12 et de la mise à la
+        retraite avant l'âge légal instituée par la loi n° 2009-39 du 8 juillet 2009,
+        que l'article 7 de la loi n° 2019-37 maintient l'un et l'autre sous l'empire
+        des textes antérieurs pour l'âge légal.
+      synonymes: []
+    ar:
+      terme: التقاعد المبكّر الاختياري
+      definition: >
+        نظام للخروج المبكّر للأعوان العموميين أُحدث، خارج القانون عدد 12 لسنة 1985،
+        بمقتضى القانون عدد 7 لسنة 1987 المؤرّخ في 6 مارس 1987. وهو متميّز عن الحقّ العامّ
+        في الخروج المبكّر المنصوص عليه بالفصل 30 من القانون عدد 12 لسنة 1985، وعن الإحالة
+        على التقاعد قبل السنّ القانونية التي أحدثها القانون عدد 39 لسنة 2009 المؤرّخ في 8
+        جويلية 2009، وقد أبقى الفصل 7 من القانون عدد 37 لسنة 2019 كليهما خاضعَين، في ما
+        يتعلّق بالسنّ القانونية، للنصوص السابقة.
+      synonymes: []
+
+  - id: solde-de-reforme
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [cnrps-manuel-liquidation-2013]
+    source_definition: {ref: loi85-12, locator: "art. 69-71"}
+    voir_aussi: [pension-minimale-garantie, solde-militaire, pensions-civiles-militaires]
+    fr:
+      terme: Solde de réforme
+      definition: >
+        Prestation propre au volet militaire du régime des pensions civiles et
+        militaires, organisée par les articles 69 à 71 de la loi n° 85-12, dont le
+        montant ne peut jamais être inférieur à la pension minimale garantie
+        (art. 70). Selon le manuel de liquidation de la CNRPS (2013), le titulaire
+        d'une seule solde de réforme est exclu des indemnités à caractère familial et
+        de l'indemnité de revenu unique.
+      synonymes: []
+    ar:
+      terme: منحة الإصلاح
+      definition: >
+        منفعة خاصّة بالشقّ العسكري من نظام الجرايات المدنية والعسكرية، تنظّمها الفصول 69
+        إلى 71 من القانون عدد 12 لسنة 1985، ولا يمكن أن يقلّ مبلغها في أيّ حال عن الجراية
+        الدنيا المضمونة (الفصل 70). وحسب دليل تصفية الجرايات للصندوق الوطني للتقاعد
+        والحيطة الاجتماعية (2013)، يُستثنى صاحب منحة إصلاح وحيدة من المنح ذات الصبغة
+        العائلية ومن منحة الدخل الوحيد.
+      synonymes: []
+
+  - id: taux-de-liquidation
+    acronyme: null
+    statut: valide
+    references: [decret74-499, loi81-6, loi2002-32]
+    source_definition: {ref: loi85-12, locator: "art. 38"}
+    voir_aussi: [annuite-liquidable, bonification, salaire-moyen-reference, decote]
+    fr:
+      terme: Taux de liquidation
+      definition: >
+        Pourcentage appliqué à la rémunération de liquidation ou au salaire de
+        référence pour obtenir le montant de la pension, acquis en fonction de la
+        durée de services ou de cotisation et borné par un plafond. Dans le secteur
+        public, il s'acquiert par annuités jusqu'à 90 % (loi n° 85-12, art. 38) ; dans
+        le régime des salariés non agricoles, il est de 40 % pour 120 mois de
+        cotisations, majoré de 2 % par année supplémentaire jusqu'à 80 % (décret
+        n° 74-499, art. 17) ; le régime des salariés agricoles applique le même
+        barème exprimé en trimestres (loi n° 81-6, art. 49).
+      synonymes: []
+    ar:
+      terme: نسبة تصفية الجراية
+      definition: >
+        نسبة مئوية تُطبَّق على أجر التصفية أو على الأجر المتوسط المرجعي لضبط مبلغ
+        الجراية، تُكتسب حسب مدّة الخدمات أو المساهمة وتحدّها نسبة قصوى. في القطاع
+        العمومي، تُكتسب بحسب السنوات القابلة للتصفية إلى حدود 90 % (القانون عدد 12 لسنة
+        1985، الفصل 38)؛ وفي نظام الأجراء غير الفلاحيين، تبلغ 40 % مقابل 120 شهرًا من
+        المساهمات، وتُضاف إليها 2 % عن كلّ سنة إضافية إلى حدود 80 % (الأمر عدد 499 لسنة
+        1974، الفصل 17)؛ ويطبّق نظام الأجراء الفلاحيين نفس الجدول محتسبًا بالثلاثيات
+        (القانون عدد 6 لسنة 1981، الفصل 49).
+      synonymes: [نسبة التصفية]
+
+  - id: travaux-penibles-insalubres
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [decret85-1177, loi2019-37, decret74-499]
+    source_definition: {ref: loi85-12, locator: "art. 27"}
+    voir_aussi: [bonification, fonctions-astreignantes, cadres-actifs]
+    fr:
+      terme: Travaux pénibles et insalubres
+      definition: >
+        Tâches dont l'accomplissement ouvre un âge de mise à la retraite abaissé. Dans
+        le secteur public, les ouvriers qui les accomplissent, désignés par le décret
+        n° 85-1177 du 24 septembre 1985 en dix-sept catégories, partent à 55 ans, puis
+        à 57 ans depuis la loi n° 2019-37 (loi n° 85-12, art. 27), et bénéficient
+        d'une bonification de deux à cinq ans selon la durée des services (art. 32).
+        Dans le régime des salariés non agricoles, les travaux pénibles ou insalubres
+        dont les catégories sont fixées par arrêté ouvrent la retraite à 55 ans,
+        moyennant une majoration du stage (décret n° 74-499, art. 15-16).
+      synonymes: [Tâches pénibles et insalubres]
+    ar:
+      terme: الأشغال الشاقّة وغير الصحّية
+      definition: >
+        مهامّ تفتح مباشرتها سنًّا مخفَّضة للإحالة على التقاعد. في القطاع العمومي، يُحال
+        العملة القائمون بها، الذين يضبطهم الأمر عدد 1177 لسنة 1985 المؤرّخ في 24 سبتمبر
+        1985 في سبعة عشر صنفًا، على التقاعد في سنّ الخامسة والخمسين، ثمّ في سنّ السابعة
+        والخمسين منذ القانون عدد 37 لسنة 2019 (القانون عدد 12 لسنة 1985، الفصل 27)،
+        وينتفعون بترفيع في مدّة الخدمات من سنتين إلى خمس سنوات حسب مدّة الخدمات (الفصل
+        32). وفي نظام الأجراء غير الفلاحيين، تفتح الأشغال الشاقّة أو غير الصحّية التي
+        تُضبط أصنافها بقرار الحقَّ في التقاعد في سنّ الخامسة والخمسين، مقابل الترفيع في
+        مدّة الانخراط الدنيا (الأمر عدد 499 لسنة 1974، الفصلان 15 و16).
+      synonymes: []
+
+  - id: validation-des-services
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [loi95-105, loi89-73]
+    source_definition: {ref: loi85-12, locator: "art. 14-21"}
+    voir_aussi: [coordination-des-regimes, pensions-civiles-militaires, rsaa]
+    fr:
+      terme: Validation des services
+      definition: >
+        Prise en compte, pour le droit à pension et son calcul, de périodes qui n'ont
+        pas donné lieu à cotisation, moyennant le versement des contributions
+        correspondantes. Dans le secteur public, l'agent la demande par écrit dans un
+        délai maximum d'un an à partir de l'âge légal ; les contributions, à sa
+        charge, sont assises sur la moyenne entre sa rémunération à la date
+        d'adhésion et celle à la date de la demande, et payables par tranches
+        n'excédant pas 20 % de sa rémunération (loi n° 85-12, art. 14-21). La loi
+        n° 95-105 du 14 décembre 1995 institue un système unique de validation commun
+        aux régimes légaux. Le régime agricole amélioré admet la validation des
+        périodes d'emploi agricole accomplies depuis le 1^er^ janvier 1981, moyennant
+        cotisations arriérées.
+      synonymes: [Validation]
+    ar:
+      terme: إدماج الخدمات
+      definition: >
+        احتساب فترات لم تُدفع بعنوانها مساهمات، لفتح الحقّ في الجراية ولاحتسابها، مقابل
+        دفع المساهمات المطابقة. في القطاع العمومي، يطلبه العون كتابيًّا في أجل أقصاه سنة
+        من بلوغ السنّ القانونية؛ وتُحتسب المساهمات، المحمولة عليه، على أساس معدّل أجره في
+        تاريخ الانخراط وأجره في تاريخ الطلب، وتُدفع بأقساط لا تتجاوز 20 % من أجره (القانون
+        عدد 12 لسنة 1985، الفصول 14-21). ويُحدث القانون عدد 105 لسنة 1995 المؤرّخ في 14
+        ديسمبر 1995 نظامًا موحّدًا لإدماج الخدمات مشتركًا بين الأنظمة القانونية. ويقبل
+        النظام الفلاحي المحسَّن إدماج فترات العمل الفلاحي المقضّاة منذ غرّة جانفي 1981،
+        مقابل دفع المساهمات المتخلّدة.
+      synonymes: []
+
+  # --- Secteur privé
+
+  - id: decote
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [decret2007-2148]
+    source_definition: {ref: decret82-1030, locator: "art. 1 (art. 15 bis et 17, al. 3)"}
+    voir_aussi: [jouissance-differee, taux-de-liquidation]
+    fr:
+      terme: Décote
+      definition: >
+        Réduction appliquée à la pension en cas de départ anticipé, proportionnelle
+        au temps restant à courir jusqu'à l'âge de droit commun. Dans le régime des
+        salariés non agricoles, le départ pour convenance personnelle ouvert par le
+        décret n° 82-1030 après 360 mois de cotisations supporte une décote de 0,5 %
+        par trimestre restant à courir jusqu'à 60 ans ; le décret n° 2007-2148
+        maintient ce taux, par trimestre restant à courir jusqu'à l'âge normal de la
+        retraite, et porte à 55 ans l'entrée en jouissance (art. 15 ter).
+      synonymes: []
+    ar:
+      terme: التخفيض في الجراية
+      definition: >
+        تخفيض يُطبَّق على الجراية في حالة الخروج المبكّر، بحسب المدّة المتبقّية إلى سنّ
+        التقاعد العادية. في نظام الأجراء غير الفلاحيين، يُطبَّق على الخروج لأسباب شخصية،
+        الذي فتحه الأمر عدد 1030 لسنة 1982 بعد 360 شهرًا من المساهمات، تخفيض بـ0,5 % عن
+        كلّ ثلاثية متبقّية إلى سنّ الستين؛ ويحافظ الأمر عدد 2148 لسنة 2007 على هذه النسبة
+        عن كلّ ثلاثية متبقّية إلى السنّ العادية للتقاعد، ويؤجّل الانتفاع بالجراية إلى سنّ
+        الخامسة والخمسين (الفصل 15 ثالثًا).
+      synonymes: []
+
+  - id: limite-calcul-prestations
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [decret90-1455, decret94-1429, loi89-73, arrete-1978-11-18-retraite-complementaire]
+    source_definition: {ref: decret74-499, locator: "art. 18"}
+    voir_aussi: [salaire-moyen-reference, salaire-differentiel, smig, smag]
+    fr:
+      terme: Limite de calcul des prestations
+      definition: >
+        Montant au-delà duquel les salaires ne sont pas pris en compte pour le calcul
+        du salaire de référence et des prestations. Dans le régime des salariés non
+        agricoles, elle est de six fois le SMIG rapporté à 2 400 heures par an : fixée
+        par le décret n° 74-499 (art. 18), reprise à l'identique par le décret
+        n° 90-1455, puis de nouveau par le décret n° 94-1429 (art. 1^er^), qui précise
+        qu'il s'agit du SMIG du régime de 48 heures ; le régime agricole amélioré la
+        fixe à six fois le SMAG rapporté à 300 jours.
+        Ce n'est pas un plafond de cotisation : la fraction du salaire qui l'excède
+        forme l'assiette du régime complémentaire.
+      synonymes: [Limite de prise en compte des salaires]
+    ar:
+      terme: سقف احتساب المنافع
+      definition: >
+        مبلغ لا تُعتمد الأجور في ما يتجاوزه لاحتساب الأجر المتوسط المرجعي والمنافع. في
+        نظام الأجراء غير الفلاحيين، يساوي ستّة أضعاف الأجر الأدنى المضمون لمختلف المهن
+        محتسبًا على أساس 2400 ساعة في السنة: ضبطه الأمر عدد 499 لسنة 1974 (الفصل 18)،
+        وأعاده الأمر عدد 1455 لسنة 1990 دون تغيير، ثمّ أعاده الأمر عدد 1429 لسنة 1994
+        (الفصل الأوّل) مع التنصيص على أنّ المقصود هو الأجر الأدنى المضمون لمختلف المهن
+        في نظام 48 ساعة في الأسبوع؛ ويضبطه النظام الفلاحي المحسَّن بستّة
+        أضعاف الأجر الأدنى الفلاحي المضمون محتسبًا على أساس 300 يوم. وليس سقفًا للمساهمة:
+        فالجزء من الأجر الذي يتجاوزه يمثّل قاعدة النظام التكميلي.
+      synonymes: []
+
+  - id: pension-proportionnelle
+    acronyme: null
+    statut: valide
+    references: [decret74-499, decret2007-2148]
+    source_definition: {ref: decret82-1030, locator: "art. 3"}
+    voir_aussi: [allocation-de-vieillesse, pension-minimale-garantie, stage-cotisation]
+    fr:
+      terme: Pension proportionnelle
+      definition: >
+        Pension servie, dans le régime des salariés non agricoles, à l'assuré qui
+        atteint l'âge requis sans remplir la condition de stage mais compte au moins
+        60 mois de cotisations. Instituée par le décret n° 82-1030 en remplacement de
+        l'allocation de vieillesse en capital, elle est calculée sur la base de la
+        pension à laquelle l'assuré aurait eu droit s'il avait accompli le stage, au
+        prorata des mois cotisés. Son minimum est la moitié du SMIG, et elle est
+        réversible.
+      synonymes: []
+    ar:
+      terme: الجراية النسبية
+      definition: >
+        جراية تُسند، في نظام الأجراء غير الفلاحيين، إلى المضمون الذي يبلغ السنّ المطلوبة
+        دون استيفاء شرط مدّة الانخراط الدنيا، ويعدّ مع ذلك 60 شهرًا من المساهمات على
+        الأقلّ. أحدثها الأمر عدد 1030 لسنة 1982 عوضًا عن منحة الشيخوخة المصروفة في شكل
+        رأس مال، وتُحتسب على أساس الجراية التي كان المضمون سيستحقّها لو استوفى مدّة
+        الانخراط الدنيا، بنسبة الأشهر التي دفع بعنوانها مساهمات. وحدّها الأدنى نصف الأجر
+        الأدنى المضمون لمختلف المهن، وهي قابلة للتحويل إلى القرين الباقي على قيد الحياة.
+      synonymes: []
+
+  - id: revalorisation-pensions
+    acronyme: null
+    statut: valide
+    references: [decret74-499, decret2001-779, loi81-6, loi89-73]
+    source_definition: {ref: decret81-187, locator: "art. 1 (art. 53 nouveau)"}
+    voir_aussi: [perequation, smig, smag]
+    fr:
+      terme: Revalorisation des pensions
+      definition: >
+        Ajustement du montant des pensions liquidées du secteur privé par référence au
+        salaire minimum. Dans le régime des salariés non agricoles, la révision
+        discrétionnaire de 1974 (décret n° 74-499, art. 53) devient automatique à
+        chaque augmentation du SMIG, avec effet au 1^er^ mai 1980, sous la forme d'une
+        somme égale à la hausse du SMIG horaire rapportée à 200 heures par mois et
+        affectée du taux de la pension (décret n° 81-187), règle appliquée jusqu'au
+        31 décembre 2000 ; depuis le 1^er^ janvier 2001, la majoration est un taux : la
+        pension est augmentée du taux de variation du SMIG horaire rapporté à 48 heures
+        par semaine, soit le SMIG du régime de 48 heures (décret n° 2001-779). Les
+        régimes agricoles la rattachent au SMAG (loi n° 81-6, art. 80). Son
+        équivalent dans le secteur public est la péréquation.
+      synonymes: [Revalorisation]
+    ar:
+      terme: تعديل الجرايات
+      definition: >
+        تعديل مبلغ الجرايات المصفّاة في القطاع الخاص بالرجوع إلى الأجر الأدنى. في نظام
+        الأجراء غير الفلاحيين، تحوّلت المراجعة التقديرية لسنة 1974 (الأمر عدد 499 لسنة
+        1974، الفصل 53) إلى تعديل آلي عند كلّ زيادة في الأجر الأدنى المضمون لمختلف المهن،
+        ابتداءً من غرّة ماي 1980، في شكل مبلغ يساوي الزيادة في الأجر الأدنى بالساعة محتسبة
+        على أساس 200 ساعة في الشهر ومضروبة في نسبة الجراية (الأمر عدد 187 لسنة 1981)،
+        وهي قاعدة طُبّقت إلى غاية 31 ديسمبر 2000؛ ومنذ غرّة جانفي 2001، أصبحت الزيادة
+        نسبةً: تُرفَع الجراية بنسبة تطوّر الأجر الأدنى المضمون لمختلف المهن بالساعة
+        محتسبًا على أساس 48 ساعة في الأسبوع، أي الأجر الأدنى في نظام 48 ساعة في الأسبوع
+        (الأمر عدد 779 لسنة 2001). وتربطه الأنظمة الفلاحية بالأجر الأدنى الفلاحي المضمون (القانون عدد 6 لسنة
+        1981، الفصل 80). ويقابله في القطاع العمومي تنظير الجرايات.
+      synonymes: [الترفيع في الجرايات, التعديل الآلي للجرايات]
+
+  - id: salaire-differentiel
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: []
+    source_definition: {ref: arrete-1978-11-18-retraite-complementaire, locator: "règlement, art. 1 et 6"}
+    voir_aussi: [limite-calcul-prestations]
+    fr:
+      terme: Salaire différentiel
+      definition: >
+        Fraction du salaire qui excède la limite fixée par le régime légal pour le
+        calcul des prestations, et qui forme l'assiette du régime complémentaire de
+        pension de vieillesse, d'invalidité et de survivants organisé par l'arrêté du
+        ministre des affaires sociales du 18 novembre 1978 (règlement, art. 1 et 6).
+        Il commence là où s'arrête la limite de six fois le SMIG et se déplace avec
+        elle.
+      synonymes: []
+    ar:
+      terme: الأجر التفاضلي
+      definition: >
+        الجزء من الأجر الذي يتجاوز السقف الذي يضبطه النظام القانوني لاحتساب المنافع،
+        ويمثّل قاعدة النظام التكميلي لجرايات الشيخوخة والعجز والباقين على قيد الحياة الذي
+        ينظّمه قرار وزير الشؤون الاجتماعية المؤرّخ في 18 نوفمبر 1978 (الترتيب، الفصلان 1
+        و6). ويبدأ حيث ينتهي سقف ستّة أضعاف الأجر الأدنى المضمون لمختلف المهن، ويتحرّك
+        بتحرّكه.
+      synonymes: []
+
+  - id: salaire-moyen-reference
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [decret90-1455, decret94-1429, arrete-1994-11-17-bareme-actualisation, loi81-6, loi89-73]
+    source_definition: {ref: decret74-499, locator: "art. 18-19"}
+    voir_aussi: [limite-calcul-prestations, taux-de-liquidation, smag]
+    fr:
+      terme: Salaire moyen de référence
+      definition: >
+        Assiette de la pension dans les régimes du secteur privé, calculée comme une
+        moyenne de salaires sur une période qui précède l'ouverture du droit. Dans le
+        régime des salariés non agricoles, il est établi, à compter du 1^er^ janvier
+        1974, sur les trois ou cinq dernières années, la période la plus avantageuse
+        étant retenue, et la moyenne porte sur 36 ou 60 mois (décret n° 74-499,
+        art. 18-19). Le décret n° 90-1455 porte la période aux dix dernières années à
+        compter du 23 septembre 1990, sans modifier l'article 19, qui maintient la
+        moyenne sur 36 ou 60 mois ; il prévoit l'actualisation des salaires selon un
+        barème fixé par arrêté. Le décret n° 94-1429 abroge et remplace ces deux
+        articles : la période est de cinq, sept puis dix dernières années, et la
+        moyenne porte sur 60, 84 puis 120 mois, à compter respectivement des
+        1^er^ juillet 1994, 1995 et 1996 ; le barème d'actualisation est fixé chaque
+        année par arrêté, le premier arrêté retrouvé datant du 17 novembre 1994. Le
+        salaire de référence est borné par la limite de calcul des
+        prestations. Dans le régime
+        des salariés agricoles, il est forfaitaire : le SMAG rapporté à 300 jours,
+        affecté du coefficient de qualification, sur les trois ou cinq dernières
+        années (loi n° 81-6, art. 50).
+      synonymes: [Salaire de référence]
+    ar:
+      terme: الأجر المتوسط المرجعي
+      definition: >
+        قاعدة احتساب الجراية في أنظمة القطاع الخاص، وتُحتسب معدّلًا للأجور على فترة سابقة
+        لفتح الحقّ. في نظام الأجراء غير الفلاحيين، يُضبط، ابتداءً من غرّة جانفي 1974، على
+        أساس السنوات الثلاث أو الخمس الأخيرة، مع اعتماد الفترة الأفضل، ويُحتسب المعدّل على
+        36 أو 60 شهرًا (الأمر عدد 499 لسنة 1974، الفصلان 18 و19). ورفع الأمر عدد 1455
+        لسنة 1990 الفترة إلى السنوات العشر الأخيرة ابتداءً من 23 سبتمبر 1990، دون تنقيح
+        الفصل 19 الذي أبقى المعدّل على 36 أو 60 شهرًا؛ ونصّ على تحيين الأجور وفق جدول
+        يُضبط بقرار. ثمّ ألغى الأمر عدد 1429 لسنة 1994 هذين الفصلين وعوّضهما: تكون الفترة
+        السنوات الخمس ثمّ السبع ثمّ العشر الأخيرة، ويُحتسب المعدّل على 60 ثمّ 84 ثمّ 120
+        شهرًا، ابتداءً على التوالي من غرّة جويلية 1994 و1995 و1996؛ ويُضبط جدول التحيين
+        سنويًا بقرار، وأوّل قرار عُثر عليه مؤرّخ في 17 نوفمبر 1994. ويحدّه سقف احتساب
+        المنافع. وفي نظام الأجراء الفلاحيين، هو
+        أجر جزافي: الأجر الأدنى الفلاحي المضمون محتسبًا على أساس 300 يوم ومضروبًا في
+        ضارب التأهيل، على السنوات الثلاث أو الخمس الأخيرة (القانون عدد 6 لسنة 1981،
+        الفصل 50).
+      synonymes: [الأجر المرجعي]
+
+  - id: smag
+    acronyme: SMAG
+    statut: valide
+    references: []
+    source_definition: {ref: loi81-6, locator: "art. 18 et 50"}
+    voir_aussi: [smig, rsa, rsaa]
+    fr:
+      terme: Salaire minimum agricole garanti
+      definition: >
+        Salaire minimum légal applicable aux salariés du secteur agricole, exprimé
+        par journée de travail. Il sert de référence aux régimes agricoles de
+        sécurité sociale : le salaire de référence du régime des salariés agricoles
+        en est un multiple (loi n° 81-6, art. 18 et 50), et la pension minimale, la
+        limite de calcul et la revalorisation du régime agricole amélioré
+        s'expriment par rapport à lui.
+      synonymes: [SMAG]
+    ar:
+      terme: الأجر الأدنى الفلاحي المضمون
+      definition: >
+        الحدّ الأدنى القانوني للأجر المطبَّق على أجراء القطاع الفلاحي، ويُعبَّر عنه
+        باليوم. ويُعتمد مرجعًا لأنظمة الضمان الاجتماعي في القطاع الفلاحي: فالأجر
+        المرجعي لنظام الأجراء الفلاحيين مضاعف له (القانون عدد 6 لسنة 1981، الفصلان 18
+        و50)، وتُضبط الجراية الدنيا وسقف الاحتساب وتعديل الجرايات في النظام الفلاحي
+        المحسَّن بالرجوع إليه.
+      synonymes: []
+
+  - id: rsna
+    acronyme: RSNA
+    statut: valide
+    references: [decret74-499, loi60-33]
+    source_definition: {ref: loi60-30}
+    voir_aussi: [cnss, rsa, rtns, rtte]
+    fr:
+      terme: Régime des salariés non agricoles
+      definition: >
+        Régime de sécurité sociale des salariés du secteur non agricole, institué par
+        la loi n° 60-30 du 14 décembre 1960 et géré par la CNSS. Sa branche des
+        pensions de vieillesse, d'invalidité et de survivants est régie par le décret
+        n° 74-499 du 27 avril 1974, en vigueur au 1^er^ janvier 1974, auquel
+        renvoient les régimes des travailleurs non salariés et des Tunisiens à
+        l'étranger.
+      synonymes: []
+    ar:
+      terme: نظام الأجراء غير الفلاحيين
+      definition: >
+        نظام الضمان الاجتماعي لأجراء القطاع غير الفلاحي، أحدثه القانون عدد 30 لسنة 1960
+        المؤرّخ في 14 ديسمبر 1960 ويديره الصندوق الوطني للضمان الاجتماعي. ويخضع فرعه
+        الخاصّ بجرايات الشيخوخة والعجز والباقين على قيد الحياة للأمر عدد 499 لسنة 1974
+        المؤرّخ في 27 أفريل 1974، النافذ منذ غرّة جانفي 1974، والذي تحيل إليه أنظمة
+        العملة غير الأجراء والعملة التونسيين بالخارج.
+      synonymes: []
+
+  - id: rsa
+    acronyme: RSA
+    statut: valide
+    references: []
+    source_definition: {ref: loi81-6, locator: "titres I et II"}
+    voir_aussi: [rsaa, smag, cnss]
+    fr:
+      terme: Régime des salariés agricoles
+      definition: >
+        Régime de sécurité sociale des salariés agricoles, organisé par les titres I
+        et II de la loi n° 81-6 du 12 février 1981, en vigueur au 1^er^ janvier 1981,
+        et géré par la CNSS. Sa pension repose sur un salaire de référence
+        forfaitaire, multiple du SMAG, et elle est révisée à chaque paiement
+        proportionnellement à la variation du SMAG.
+      synonymes: []
+    ar:
+      terme: نظام الأجراء الفلاحيين
+      definition: >
+        نظام الضمان الاجتماعي للأجراء الفلاحيين، ينظّمه العنوانان الأوّل والثاني من
+        القانون عدد 6 لسنة 1981 المؤرّخ في 12 فيفري 1981، النافذ منذ غرّة جانفي 1981،
+        ويديره الصندوق الوطني للضمان الاجتماعي. وتقوم جرايته على أجر مرجعي جزافي مضاعف
+        للأجر الأدنى الفلاحي المضمون، وتُراجَع عند كلّ صرف بنسبة تطوّر هذا الأجر.
+      synonymes: []
+
+  - id: rsaa
+    acronyme: RSAA
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [loi81-6]
+    source_definition: {ref: loi89-73}
+    voir_aussi: [rsa, smag, limite-calcul-prestations]
+    fr:
+      terme: Régime agricole amélioré
+      definition: >
+        Régime ajouté à la loi n° 81-6 sous la forme d'un titre III par la loi
+        n° 89-73 du 2 septembre 1989, en vigueur au 1^er^ octobre 1989. Il s'applique
+        aux coopérateurs salariés des sociétés et coopératives agricoles, aux
+        salariés des exploitants employant au moins trente salariés permanents et à
+        certains pêcheurs et petits armateurs. Il renvoie aux règles du régime des
+        salariés agricoles dans la mesure où il n'y déroge pas, mais retient des
+        salaires réels, bornés à six fois le SMAG, et fixe une pension minimale égale
+        à la moitié du SMAG rapporté à 300 jours.
+      synonymes: [Régime des salariés agricoles amélioré]
+    ar:
+      terme: النظام الفلاحي المحسَّن
+      definition: >
+        نظام أُضيف إلى القانون عدد 6 لسنة 1981 في شكل عنوان ثالث بمقتضى القانون عدد 73
+        لسنة 1989 المؤرّخ في 2 سبتمبر 1989، النافذ منذ غرّة أكتوبر 1989. ويشمل الأجراء
+        المتعاضدين في الشركات والتعاضديات الفلاحية، وأجراء المستغلّين الذين يشغّلون ثلاثين
+        أجيرًا قارًّا على الأقلّ، وبعض البحّارة وصغار المجهّزين. ويحيل إلى قواعد نظام
+        الأجراء الفلاحيين في ما لم يُخالفها، لكنّه يعتمد الأجور الفعلية في حدود ستّة أضعاف
+        الأجر الأدنى الفلاحي المضمون، ويضبط جراية دنيا تساوي نصف هذا الأجر محتسبًا على
+        أساس 300 يوم.
+      synonymes: []
+
+  - id: rtns
+    acronyme: RTNS
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [decret74-499]
+    source_definition: {ref: decret95-1166, locator: "art. 1"}
+    voir_aussi: [rsna, rtte, cnss]
+    fr:
+      terme: Régime des travailleurs non salariés
+      definition: >
+        Régime de sécurité sociale des travailleurs non salariés des secteurs
+        agricole et non agricole, institué par le décret n° 95-1166 du 3 juillet 1995
+        et géré par la CNSS. Il procède par extension : son article premier rend
+        applicables aux non-salariés des articles de la loi n° 60-30 et les articles
+        du décret n° 74-499 relatifs à l'invalidité, aux survivants et à la
+        liquidation des pensions.
+      synonymes: []
+    ar:
+      terme: نظام العملة غير الأجراء
+      definition: >
+        نظام الضمان الاجتماعي للعملة غير الأجراء في القطاعين الفلاحي وغير الفلاحي، أحدثه
+        الأمر عدد 1166 لسنة 1995 المؤرّخ في 3 جويلية 1995 ويديره الصندوق الوطني للضمان
+        الاجتماعي. ويقوم على التمديد: إذ يجعل فصله الأوّل فصولًا من القانون عدد 30 لسنة
+        1960 وفصول الأمر عدد 499 لسنة 1974 المتعلّقة بالعجز والباقين على قيد الحياة
+        وتصفية الجرايات منطبقةً على غير الأجراء.
+      synonymes: []
+
+  - id: rtte
+    acronyme: RTTE
+    statut: valide
+    references: [decret74-499]
+    source_definition: {ref: decret89-107, locator: "art. 1"}
+    voir_aussi: [rsna, rtns, cnss]
+    fr:
+      terme: Régime des travailleurs tunisiens à l'étranger
+      definition: >
+        Régime de sécurité sociale des travailleurs tunisiens à l'étranger, salariés
+        ou non, qui ne sont pas couverts par une convention bilatérale, institué par
+        le décret n° 89-107 du 10 janvier 1989. L'adhésion y est volontaire, mais
+        couvre obligatoirement les pensions en même temps que les assurances
+        sociales. Il étend à ces travailleurs les articles du décret n° 74-499
+        relatifs à l'invalidité, aux survivants et à la liquidation, et la gestion
+        des pensions en est déléguée à la Caisse d'assurance vieillesse, d'invalidité
+        et de survivants (CAVIS).
+      synonymes: []
+    ar:
+      terme: نظام الضمان الاجتماعي للعملة التونسيين بالخارج
+      definition: >
+        نظام الضمان الاجتماعي للعملة التونسيين بالخارج، أجراء كانوا أو غير أجراء، غير
+        المشمولين باتّفاقية ثنائية، أحدثه الأمر عدد 107 لسنة 1989 المؤرّخ في 10 جانفي
+        1989. والانخراط فيه اختياري، لكنّه يشمل وجوبًا الجرايات والتأمينات الاجتماعية
+        معًا. ويمدّد إلى هؤلاء العملة فصول الأمر عدد 499 لسنة 1974 المتعلّقة بالعجز
+        والباقين على قيد الحياة وتصفية الجرايات، وتُفوَّض إدارة الجرايات فيه إلى صندوق
+        التأمين على الشيخوخة والعجز والباقين على قيد الحياة.
+      synonymes: [نظام العملة التونسيين بالخارج]
+
+  - id: regime-artistes
+    acronyme: null
+    statut: valide
+    references: [decret2003-894, loi2007-43]
+    source_definition: {ref: loi2002-104, locator: "art. 1"}
+    voir_aussi: [cnss, rtns]
+    fr:
+      terme: Régime des artistes, créateurs et intellectuels
+      definition: >
+        Régime de sécurité sociale des artistes, créateurs et intellectuels, créé par
+        la loi n° 2002-104 du 30 décembre 2002 et géré par la CNSS ; il comprend
+        notamment les pensions de vieillesse, d'invalidité et de survivants (art. 1).
+        Le décret n° 2003-894 du 21 avril 2003 en fixe les modalités d'application.
+      synonymes: []
+    ar:
+      terme: نظام الضمان الاجتماعي للفنانين والمبدعين والمثقفين
+      definition: >
+        نظام الضمان الاجتماعي للفنانين والمبدعين والمثقفين، أحدثه القانون عدد 104 لسنة
+        2002 المؤرّخ في 30 ديسمبر 2002 ويديره الصندوق الوطني للضمان الاجتماعي؛ ويشمل
+        خاصّةً جرايات الشيخوخة والعجز والباقين على قيد الحياة (الفصل 1). ويضبط الأمر عدد
+        894 لسنة 2003 المؤرّخ في 21 أفريل 2003 صيغ تطبيقه.
+      synonymes: [نظام الفنانين والمبدعين والمثقفين]
+
+  - id: regime-bas-revenus
+    acronyme: null
+    statut: valide  # correspondance avec la loi n° 2002-32 attestée ; terme AR à confirmer — cf. issue #151
+    references: []
+    source_definition: {ref: loi2002-32, locator: "art. 1"}
+    voir_aussi: [cnss, rsna, rsa]
+    fr:
+      terme: Régime des travailleurs à faibles revenus
+      definition: >
+        Régime de sécurité sociale institué par la loi n° 2002-32 du 12 mars 2002 pour
+        certaines catégories de travailleurs des secteurs agricole et non agricole :
+        les employés de maison ; les personnes employées par l'État, les collectivités
+        locales et les établissements publics administratifs qui ne sont couvertes par
+        aucun autre régime ; les petits pêcheurs et petits armateurs ; les
+        agriculteurs exploitant au plus cinq hectares en sec ou un hectare en irrigué ;
+        les artisans travaillant à la pièce (art. 1). La loi ne lui donne pas de nom
+        abrégé. La pension de vieillesse y est ouverte à 65 ans après 120 mois de
+        cotisations, pour un montant minimum de 30 % du salaire minimum garanti du
+        secteur, dans la limite de 80 % (art. 13-14).
+      synonymes: [Régime des bas revenus]
+    ar:
+      terme: نظام العملة ذوي الدخل الضعيف
+      definition: >
+        نظام الضمان الاجتماعي الذي أحدثه القانون عدد 32 لسنة 2002 المؤرّخ في 12 مارس 2002
+        لبعض أصناف العملة في القطاعين الفلاحي وغير الفلاحي: عملة المنازل؛ والأشخاص الذين
+        تشغّلهم الدولة والجماعات المحلية والمؤسسات العمومية الإدارية غير المشمولين بأيّ
+        نظام آخر؛ وصغار البحّارة وصغار المجهّزين؛ والفلاحون الذين يستغلّون خمس هكتارات على
+        الأكثر في البعل أو هكتارًا واحدًا في السقوي؛ والحرفيون العاملون بالقطعة (الفصل 1).
+        ولا يمنحه القانون تسمية مختصرة. وتُفتح فيه جراية الشيخوخة في سنّ الخامسة والستين بعد
+        120 شهرًا من المساهمات، بمبلغ أدنى يساوي 30 % من الأجر الأدنى المضمون لقطاع
+        انتماء المضمون، في حدود 80 % (الفصلان 13 و14).
+      synonymes: [نظام ذوي الدخل الضعيف]
+
+  # --- Index
+
+  - id: coordination-des-regimes
+    acronyme: null
+    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    references: [loi2003-8, decret2003-1128, cnrps-manuel-liquidation-2013]
+    source_definition: {ref: loi88-84}
+    voir_aussi: [validation-des-services, cnrps, cnss]
+    fr:
+      terme: Coordination des régimes
+      definition: >
+        Ensemble des règles qui fixent les droits à pension de la personne ayant
+        relevé de plusieurs régimes légaux d'assurance vieillesse, d'invalidité et de
+        survivants. Elle fait l'objet de la loi n° 88-84 du 16 juillet 1988, puis de
+        la loi n° 2003-8 du 21 janvier 2003, portant liquidation des droits des
+        personnes bénéficiant de la couverture de plusieurs régimes légaux, et du
+        décret n° 2003-1128 du 19 mai 2003.
+      synonymes: []
+    ar:
+      terme: التنسيق بين أنظمة الضمان الاجتماعي
+      definition: >
+        مجموع القواعد التي تضبط حقوق الشخص الذي انتمى إلى عدّة أنظمة قانونية للتأمين على
+        الشيخوخة والعجز والباقين على قيد الحياة في الجراية. وهو موضوع القانون عدد 84 لسنة
+        1988 المؤرّخ في 16 جويلية 1988، ثمّ القانون عدد 8 لسنة 2003 المؤرّخ في 21 جانفي
+        2003 المتعلّق بتصفية حقوق الأشخاص المنتفعين بتغطية عدّة أنظمة قانونية، والأمر عدد
+        1128 لسنة 2003 المؤرّخ في 19 ماي 2003.
+      synonymes: [التنسيق بين الأنظمة]

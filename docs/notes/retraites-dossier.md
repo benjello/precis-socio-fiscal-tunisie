@@ -56,7 +56,7 @@ constante muette, et livre l'article de **revalorisation** que le modèle ignore
 |---|---|---|---|
 | Limite de prise en compte du salaire (assiette de la retraite complémentaire) | **six fois le SMIG**, rapporté à 2 400 heures par an, **dès 1974** ; reconduite à l'identique en 1990 | 74-499 art. 18, puis art. 18 (nouveau) du décret n° 90-1455 | **[T]** |
 | Plafond du taux de liquidation RSNA | **80 %** du salaire moyen de référence | 74-499 art. 17 in fine | **[T]** |
-| Fenêtre du salaire de référence RSNA | **3 ou 5 dernières années**, la plus avantageuse (1974) → **10 dernières années** (1990) | 74-499 art. 18, puis 90-1455 | **[T]** |
+| Fenêtre du salaire de référence RSNA | **3 ou 5 dernières années**, la plus avantageuse (1974) → **10 dernières années** (1990) → remplacé en 1994 : **5, 7 puis 10 dernières années** aux 1er juillet 1994, 1995, 1996 (voir § 12) | 74-499 art. 18, puis 90-1455, puis 94-1429 | **[T]** |
 | Pension minimale RSNA | 2/3 du SMIG (1974) ; **1/2 du SMIG** pour les retraites anticipées et les pensions proportionnelles (1982) | 74-499 art. 45, puis 82-1030 art. 5 | **[T]** |
 | Âge de départ anticipé RSNA (50 ans) | créé en **1982**, pas en 1974 | 82-1030, art. 15 bis | **[T]** |
 | Revalorisation RSNA | « révisé en cas de hausse sensible du niveau général des salaires » (1974) → **indexation automatique sur le SMIG** (1981, puis 2001) | 74-499 art. 53, puis 81-187 et 2001-779 | **[T]** |
@@ -86,7 +86,7 @@ du décret initial (§ 8).
 | **Décret n° 85-1177** | Liste des ouvriers accomplissant des tâches pénibles et insalubres (art. 27) | 1985-09-24 | n° 68 du 1er oct. 1985 | 1255-1256 | **art. 2 : « prend effet à compter du 1er juillet 1986 »** | `/1985/1985F/Jo06885.pdf` | **[T]** |
 | **Décret n° 85-1178** | Liste des agents exerçant des fonctions astreignantes (art. 28) | 1985-09-24 | n° 68 du 1er oct. 1985 | 1256 | **art. 2 : « prend effet à compter du 1er juillet 1986 »** | `/1985/1985F/Jo06885.pdf` | **[T]** |
 | **Loi n° 88-71** | Modifie l'art. 5 de la loi 85-12 (âge des enfants) | 1988-06-27 | n° 45 | — | non lue | `/1988/1988F/Jo04588.pdf` | **[M]** |
-| **Décret n° 93-308** | Régime du capital-décès | 1993-02-01 | n° 13 | 246-247 | non lue | `/1993/1993F/Jo01393.pdf` | **[M]** (art. 5-6 cités par le modèle) |
+| **Décret n° 93-308** | Régime du capital-décès | 1993-02-01 | n° 13 du 16 févr. 1993 | 246-247 | **art. 15 : « entre en vigueur à compter du 1er juillet 1993 »** ; art. 14 : abroge le décret n° 74-572 | `/1993/1993F/Jo01393.pdf` | **[T]** (lu, § 13.5) |
 | **Loi n° 2007-43** | Modifie les art. 30, 37, 46, 47 de la loi 85-12 | 2007-06-25 | n° 51 | 2198-2199 | **aucune clause d'entrée en vigueur** ; le texte s'achève sur « La présente loi sera publiée… » | `/2007/2007F/Jo0512007.pdf` | **[T]** (texte intégral FR versionné dans `openfisca-tunisia-pension/tmp/JORTs/`) |
 | **Loi n° 2009-20** | Dispositions exceptionnelles, retraite des professeurs de l'enseignement supérieur | 2009-04-13 | n° 30 du 14 avril 2009 | 1036 | non lue | `/2009/2009F/Jo0302009.pdf` | **[M]** |
 | **Loi n° 2019-37** | Modifie et complète la loi 85-12 (âges, option, comptes individuels, taux) | 2019-04-30 | n° 35 du 30 avril 2019 | 1312-1315 | **aucune clause d'entrée en vigueur** ; l'art. 5 fixe le calendrier de l'âge | `/2019/2019F/Jo0352019.pdf` | **[T]** |
@@ -420,6 +420,8 @@ du 8 juin 1944**, instituant en Tunisie un régime d'allocations familiales **[D
 
 ## 2.0 La chaîne du décret n° 74-499, texte par texte
 
+> **Mise à jour du 11 septembre 2026** : le décret n° 94-1429 abroge et remplace les articles 18 et 19 dans leur rédaction de 1990 ; la série de la fenêtre du salaire de référence et les corrections à reporter dans cette section sont au **§ 12** (en particulier § 12.8).
+
 | Texte | Objet établi | Signature | JORT | Pages | Effet énoncé | URL | Niv. |
 |---|---|---|---|---|---|---|---|
 | **Loi n° 60-33** | Institue le régime d'invalidité, vieillesse et survie et le régime d'allocation dans le secteur non agricole | 1960-12-14 | n° 57 | 1616 | non énoncée | `/1960/1960F/Jo05760.pdf` | **[M]** |
@@ -449,6 +451,8 @@ liquidation. Les décrets 96-326, 97-291 et 94-1429 **n'ont pas été relus ici 
 neutralité sur l'article 18 et sur l'article 17 n'est pas établie (§ 8).
 
 ## 2.1 La limite de calcul des prestations — la série demandée
+
+> **Mise à jour du 11 septembre 2026** : le décret n° 94-1429 abroge et remplace les articles 18 et 19 dans leur rédaction de 1990 ; la série de la fenêtre du salaire de référence et les corrections à reporter dans cette section sont au **§ 12** (en particulier § 12.8).
 
 C'est la valeur dont dépend à la fois le plafond du salaire retenu pour la pension légale et,
 symétriquement, l'assiette du régime complémentaire (« la fraction de salaire excédant la limite
@@ -557,6 +561,8 @@ mères de trois enfants** du régime privé.
   (art. 2). Le tiret « d », relatif aux mères de trois enfants, n'est pas touché.
 
 ## 2.3 Calcul
+
+> **Mise à jour du 11 septembre 2026** : le décret n° 94-1429 abroge et remplace les articles 18 et 19 dans leur rédaction de 1990 ; la série de la fenêtre du salaire de référence et les corrections à reporter dans cette section sont au **§ 12** (en particulier § 12.8).
 
 **Taux et plafond — 74-499, art. 17 [T], p. 917** (relu à 500 dpi pour les chiffres) :
 
@@ -1177,7 +1183,7 @@ Les cinq premiers ne sont donc plus « une tranche terminale à taux zéro » : 
 | Régime | Fenêtre légale | Texte | Ce que fait le code |
 |---|---|---|---|
 | CNRPS | **dernière rémunération** ayant supporté des retenues **3 ans** ; ou rémunération de la **fonction la plus élevée exercée 2 ans**, sous condition de 3 ans de retenues | loi 85-12, **art. 36** | dernière rémunération, ou moyenne des **2 plus élevées consécutives** sur demande ; condition de 3 ans absente |
-| RSNA | **3 ou 5 dernières années**, la plus avantageuse (1974) → **10 dernières années** (1990) | 74-499 **art. 18-19** ; 90-1455 **art. 18 (nouveau)** | moyenne des **10 meilleures** années sur 40 |
+| RSNA | **3 ou 5 dernières années**, la plus avantageuse (1974) → **10 dernières années** (1990) → **5 / 7 / 10 dernières années** aux 1er juillet 1994 / 1995 / 1996 (§ 12) | 74-499 **art. 18-19** ; 90-1455 **art. 18 (nouveau)** ; 94-1429 **art. 18-19 (nouveaux)** | moyenne des **10 meilleures** années sur 40 |
 | RSA | **3 ou 5 dernières années**, la plus avantageuse, sur base SMAG × 300 j × coefficient | loi 81-6, **art. 50** | moyenne des **3 meilleures** années, × 300/180 |
 | RSAA | **3 ou 5 dernières années**, la plus avantageuse | loi 81-6, **art. 95** | non modélisé |
 
@@ -1293,6 +1299,8 @@ Onze points, dans l'ordre de gravité.
    prestations et fenêtre du salaire de référence) **n'est pas établie**. Le dossier des cotisations
    les avait vérifiés sur les taux de cotisation seulement. La série de la limite de six fois le
    SMIG est établie sur deux points d'appui (1974 et 1990) mais n'est pas close.
+   *(Le décret n° 96-326 est hors de cause : il ne remplace que l'alinéa premier de l'article 46,
+   délai de demande de pension — § 11 bis.)*
 
 6. **Le barème d'actualisation des salaires annoncé par l'article 18 (nouveau) du décret n° 90-1455
    n'a pas été identifié.** Le texte renvoie à « un barème fixé par arrêté du ministre des affaires
@@ -1310,25 +1318,28 @@ Onze points, dans l'ordre de gravité.
    litige** : le manuel écrit rente = pension × taux d'invalidité, l'article 26 § II (nouveau) de la
    loi 59-18 écrit rente = rémunération × taux d'invalidité.
 
-11 bis. **Les onze lois de la chaîne modificative de la loi n° 85-12 n'ont pas été ouvertes**, à
-   l'exception des lois n° 2007-43 et 2019-37 : lois n° 87-8, 88-71, 90-6, 94-71, 95-105, 96-67,
-   97-74, 2001-123, 2002-61 et 2009-20. Leurs notices sont établies au § 10.2 ; leur contenu ne
-   l'est pas. Il en va de même des textes de la coordination (lois n° 88-84 et 2003-8, décret
-   n° 2003-1128), des textes de départ anticipé (loi n° 87-7, loi n° 2009-39, décret n° 2009-2085) et
+11 bis. ~~Les onze lois de la chaîne modificative de la loi n° 85-12 n'ont pas été ouvertes.~~
+   **Résolu le 11 septembre 2026** : les lois n° 87-8, 88-71, 90-6, 94-71, 95-105 (et le décret
+   n° 96-1015), 96-67, 97-74, 2001-123 (art. 85-86) et 2002-61 ont été lues, ainsi que trois
+   modificatifs absents du manuel (loi n° 97-59, décret-loi n° 2011-48, décret-loi n° 2022-79 art. 12)
+   et le décret n° 2023-741 (§ 11). Restent non tranchés : la portée de la loi 95-105 sur l'art. 16
+   (nouveau) de 1988 et le décret n° 2003-1656 (§ 11.7). En revanche, restent non ouverts les textes
+   de la coordination (lois n° 88-84 et 2003-8, décret
+   n° 2003-1128), des textes de départ anticipé (loi n° 2009-39, décret n° 2009-2085 ; la loi
+   n° 87-7 a été lue pour sa clause de dérogation, § 11.0) et
    des deux décrets d'assiette (n° 85-980 et n° 85-1176).
 
-9. **Deux dates d'effet manquent au dossier de la loi n° 83-31** (dernière page, p. 809, non ouverte)
-   et **du décret n° 97-1927** (second article non isolable du découpage en colonnes du fascicule
-   n° 80 de 1997 ; lecture à l'image nécessaire).
+9. **Une date d'effet manque au dossier de la loi n° 83-31** (dernière page, p. 809, non ouverte).
+   *(Celle du décret n° 97-1927 est établie : art. 2, « prendra effet du 1er mai 1997 », lu à
+   l'image — § 11 bis.)*
 
 10. **Le décret n° 81-224 du 24 février 1981** — celui dont la date sert de date conventionnelle à
     tout le bloc RSA du modèle — **n'a pas été lu**. Son intitulé porte sur la répartition des
     cotisations, non sur les prestations ; la vérification reste à faire.
 
-11. **La loi n° 88-71 du 27 juin 1988**, qui porterait de 15 à 20 ans l'âge des enfants ouvrant
-    droit au départ anticipé des mères de trois enfants au CNRPS, **n'a pas été lue** ; seule sa
-    notice (JORT n° 45 du 1er juillet 1988, pp. 967-968) est établie. C'est le dernier maillon
-    non vérifié du § 1.1. *(La loi n° 2009-20, en revanche, a été lue : voir § 6.1 bis.)*
+11. ~~La loi n° 88-71 du 27 juin 1988 n'a pas été lue.~~ **Résolu** : elle porte bien de 15 à
+    20 ans l'âge des enfants, ajoute la mère d'un enfant handicapé d'un handicap profond et
+    subordonne le départ à l'accord du Premier ministre ; effet 1er janvier 1989 (§ 11.1, § 11.3). *(La loi n° 2009-20, en revanche, a été lue : voir § 6.1 bis.)*
 
 ---
 
@@ -1482,26 +1493,31 @@ rémunération la plus élevée ».
 
 ## 10.2 La chaîne modificative de la loi n° 85-12, nommée par le manuel et résolue dans `jort_cache`
 
-Onze textes. Aucun n'a été ouvert : **[M]** dans tous les cas, sauf les lois 2007-43 et 2019-37,
-lues au § 1.
+Onze textes nommés par le manuel. **Tous ont été ouverts le 11 septembre 2026** (§ 11, **[T]**) ; la
+recherche d'exhaustivité du § 11.0 en ajoute trois que le manuel ignore — **loi n° 97-59** (art. 47),
+**décret-loi n° 2011-48** (art. 13) et **décret-loi n° 2022-79, art. 12** (art. 71 bis) — portés en
+fin de tableau.
 
 | Texte | Objet (intitulé du JORT) | Signature | JORT | Pages | URL |
 |---|---|---|---|---|---|
-| **Loi n° 87-8** | Institue des dispositions relatives au **travail des retraités** | 1987-03-06 | n° 18 du 10 mars 1987 | 364 | `/1987/1987F/Jo01887.pdf` |
-| **Loi n° 88-71** | Modifie et complète la loi n° 85-12 | 1988-06-27 | n° 45 du 1er juill. 1988 | 967-968 | `/1988/1988F/Jo04588.pdf` |
-| **Loi n° 90-6** | Modifie la loi n° 85-12 | 1990-02-12 | n° 14 du 20 févr. 1990 | 264 | `/1990/1990F/Jo01490.pdf` |
-| **Loi n° 94-71** | Révision des taux de contribution aux régimes de retraite du secteur public | 1994-06-27 | n° 50 du 28 juin 1994 | 1086 | `/1994/1994F/Jo05094.pdf` |
-| **Loi n° 95-105** | Institue un **système unique de validation des services** au titre des régimes légaux de vieillesse, d'invalidité et de survivants | 1995-12-14 | n° 101 du 19 déc. 1995 | 2308 | `/1995/1995F/Jo10195.pdf` |
-| **Loi n° 96-67** | Modifie la loi n° 85-12 | 1996-07-22 | n° 60 du 26 juill. 1996 | 1604 | `/1996/1996F/Jo06096.pdf` |
-| **Loi n° 97-74** | Amende la loi n° 85-12 | 1997-11-18 | n° 93 du 21 nov. 1997 | 2080 | `/1997/1997F/Jo09397.pdf` |
-| **Loi n° 2001-123** | Loi de finances pour 2002 | 2001-12-28 | — | — | — |
-| **Loi n° 2002-61** | Dispositions relatives à la protection sociale au profit de certains agents des entreprises et établissements publics à caractère non administratif | 2002-07-09 | n° 57 du 12 juill. 2002 | 1584-1585 | `/2002/2002F/Jo0572002.pdf` |
+| **Loi n° 87-8** | Institue des dispositions relatives au **travail des retraités** — **lue** : abroge l'art. 72 (§ 11.1) | 1987-03-06 | n° 18 du 10 mars 1987 | 364 | `/1987/1987F/Jo01887.pdf` |
+| **Loi n° 88-71** | Modifie et complète la loi n° 85-12 — **lue** : art. 5, 6, 16, 24, 33, 41, 61 remplacés ou complétés, 25-26 abrogés ; effet 1er janv. 1989 (§ 11.1) | 1988-06-27 | n° 45 du 1er juill. 1988 | 967-968 | `/1988/1988F/Jo04588.pdf` |
+| **Loi n° 90-6** | Modifie la loi n° 85-12 — **lue** : art. 6, dernier alinéa (§ 11.1) | 1990-02-12 | n° 14 des 20-23 févr. 1990 | 264 | `/1990/1990F/Jo01490.pdf` |
+| **Loi n° 94-71** | Révision des taux de contribution aux régimes de retraite du secteur public — **lue** : art. 9 et 13 (§ 11.1) | 1994-06-27 | n° 50 du 28 juin 1994 | 1086 | `/1994/1994F/Jo05094.pdf` |
+| **Loi n° 95-105** | Institue un **système unique de validation des services** au titre des régimes légaux de vieillesse, d'invalidité et de survivants — **lue** : aucun article de la loi 85-12 visé ; abrogation implicite des art. 14-21 (§ 11.1) | 1995-12-14 | n° 101 du 19 déc. 1995 | 2308 | `/1995/1995F/Jo10195.pdf` |
+| **Loi n° 96-67** | Modifie la loi n° 85-12 — **lue** : art. 48 (§ 11.1) | 1996-07-22 | n° 60 du 26 juill. 1996 | 1604 | `/1996/1996F/Jo06096.pdf` |
+| **Loi n° 97-74** | Amende la loi n° 85-12 — **lue** : art. 42, al. 3 (§ 11.1) | 1997-11-18 | n° 93 du 21 nov. 1997 | 2080 | `/1997/1997F/Jo09397.pdf` |
+| **Loi n° 2001-123** | Loi de finances pour 2002 — **lue** : art. 85 (art. 9 et 13) et art. 86 (art. 37) ; art. 97, effet 1er janv. 2002 (§ 11.1) | 2001-12-28 | n° 104 du 28 déc. 2001 | 4260-4261 | `/2001/2001F/Jo1042001.pdf` |
+| **Loi n° 2002-61** | Dispositions relatives à la protection sociale au profit de certains agents des entreprises et établissements publics à caractère non administratif — **lue** : art. 5 (2° d), 6 (§ 2), 33 (§ 3), 41 (1° c) (§ 11.1) | 2002-07-09 | n° 57 du 12 juill. 2002 | 1584-1585 | `/2002/2002F/Jo0572002.pdf` |
 | **Loi n° 2007-43** | Voir § 1.0 — **lue** | 2007-06-25 | n° 51 | 2198-2199 | `/2007/2007F/Jo0512007.pdf` |
-| **Loi n° 2009-20** | Dispositions exceptionnelles, retraite des professeurs de l'enseignement supérieur | 2009-04-13 | n° 30 du 14 avril 2009 | 1036 | `/2009/2009F/Jo0302009.pdf` |
+| **Loi n° 2009-20** | Dispositions exceptionnelles, retraite des professeurs de l'enseignement supérieur — lue (§ 6.1 bis) | 2009-04-13 | n° 30 du 14 avril 2009 | 1036 | `/2009/2009F/Jo0302009.pdf` |
+| **Loi n° 97-59** *(absente du manuel)* | Amende la loi n° 85-12 — **lue** : art. 47, al. 3 ; effet 1er mai 1997 (§ 11.1) | 1997-07-28 | n° 61 du 1er août 1997 | 1359 | `/1997/1997F/Jo06197.pdf` |
+| **Décret-loi n° 2011-48** *(absent du manuel)* | Relève la contribution employeur — **lu** : art. 13, + 1 % au 1er juill. 2011 (§ 11.1) | 2011-06-04 | n° 41 du 7 juin 2011 | 844 | `/2011/2011F/Jo0412011.pdf` |
+| **Décret-loi n° 2022-79**, art. 12 *(postérieur au manuel)* | LF 2023 — **lu** : art. 71 bis remplacé ; effet 1er janv. 2023 (§ 11.2) | 2022-12-22 | n° 141 du 23 déc. 2022, **édition arabe seule** | 4060 (arabe) | `/2022/2022A/Ja1412022.pdf` |
 
 **Deux textes de la loi n° 95-105 forment un couple** : la loi et son **décret n° 96-1015 du 27 mai
 1996, fixant les modalités de la validation des services au titre des régimes de retraite,
-d'invalidité et de survivants**, JORT n° 45 du 4 juin 1996, pp. 1109-1110 **[M]**. La validation est
+d'invalidité et de survivants**, JORT n° 45 du 4 juin 1996, pp. 1109-1110 — **lu** (§ 11.1) **[T]**. La validation est
 traitée par les articles 14 à 21 de la loi 85-12 (**[T]**, p. 360) : validation sur demande écrite
 dans un délai maximum d'un an à partir de l'âge légal ; assiette constituée de la moyenne entre ce
 que percevait l'agent à la date d'adhésion et ce qu'il percevait à la date de la demande ;
@@ -1598,3 +1614,1136 @@ plafond de 90 % à quarante annuités et ses taux de contribution décrivent l'�
 19 décembre 2013. Il ne connaît ni l'augmentation optionnelle de l'âge (article 71 bis), ni les
 comptes individuels (articles 71 quinquies et sexies), ni le relèvement transitoire de l'article 5.
 Toute règle qu'on lui emprunte doit être confrontée à la loi de 2019 avant d'être portée au précis.
+
+---
+
+# 11. La chaîne modificative de la loi n° 85-12, lue
+
+> Section ajoutée le 11 septembre 2026. Tous les textes ci-dessous ont été **ouverts** : fascicules
+> scannés lus à l'image (1987, 1988, 1990 ; chiffres et numéros d'articles relus sur recadrage à
+> 300 dpi), fascicules à couche texte lus sur la couche texte puis contrôlés à l'image pour les
+> chiffres (2001, 2002 — couche à police décalée, décodée puis relue à l'image — 1996, 1997, 2019,
+> 2021, 2022, 2023). La loi 85-12 d'origine a été relue intégralement à l'image (JORT n° 20 du
+> 12 mars 1985, pp. 359-365) pour établir chaque « ancien contenu ». Les pieds de page ont été
+> contrôlés pour chaque fascicule cité.
+
+## 11.0 Périmètre et exhaustivité de la chaîne
+
+**La liste du manuel de la CNRPS est incomplète.** Une recherche dans `jort_cache.db` (notice la
+plus récente de la base : 10 avril 2026) a été menée sur 1985-2026 :
+
+- `LIKE` non accentué sur `titre` et `objet` : `%85-12%`, `%pensions civiles%`, `%12 لسنة 1985%`,
+  `%الجرايات المدنية%` ;
+- doublée d'une requête FTS : `"85-12" OR "pensions civiles" OR (perequation AND pensions) OR
+  (contribution AND retraite AND public)`, puis `retraite OR pensions OR perequation` restreinte
+  aux lois et décrets-lois, dépouillée à la main.
+
+Elle fait apparaître **trois modificatifs que le manuel ne nomme pas** — la **loi n° 97-59 du
+28 juillet 1997** (art. 47), le **décret-loi n° 2011-48 du 4 juin 2011** (art. 13, taux) et, après
+le manuel, le **décret-loi n° 2022-79 du 22 décembre 2022, loi de finances pour 2023, art. 12**
+(art. 71 bis) — ainsi que plusieurs textes **dérogatoires** qui écartent la loi 85-12 sans en
+modifier la lettre (§ 11.2). Elle ne fait apparaître **aucun autre** modificatif textuel entre 1985
+et le 10 avril 2026. Résultat négatif **[M]**, borné à l'indexation de la base : un article de loi
+de finances dont la notice ne nommerait ni la loi 85-12 ni les pensions échapperait à ces requêtes.
+
+**Textes voisins, non modificatifs** (écartés après lecture ou sur notice) : loi n° 87-7 du 6 mars
+1987, retraite anticipée volontaire, « par dérogation aux dispositions législatives et
+réglementaires » (JORT n° 18/1987, p. 363) **[T]** ; loi n° 88-8 du 23 février 1988, contribution
+des agents détachés auprès de l'ATCT, « nonobstant toutes les dispositions antérieures contraires »
+(JORT n° 15/1988, p. 322) **[T]** ; loi n° 2009-39 (retraite avant l'âge légal), loi n° 2014-48
+(Tunisie Télécom), loi n° 2018-5 (départ volontaire) **[M]**.
+
+## 11.1 Texte par texte
+
+### Loi n° 87-8 du 6 mars 1987, instituant des dispositions relatives au travail des retraités
+
+JORT **n° 18 du 10 mars 1987, p. 364**, `/1987/1987F/Jo01887.pdf` **[T]** (lu à l'image).
+
+- **Art. 5** : « Sont abrogées toutes les dispositions contraires à la présente loi et notamment
+  **l'article 72 de la loi n° 85-12** du 5 mars 1985. » Ancien art. 72 (p. 365) : « La condition
+  d'ancienneté minimum prévue par l'article 22 de la présente loi pour obtention de la pension de
+  retraite n'est pas exigée des agents recrutés avant l'entrée en vigueur de la présente loi. »
+  → **la dispense transitoire des 15 ans de services disparaît.**
+- **Art. 3** (transitoire), qui en tient lieu : les salariés ayant atteint l'âge légal sans remplir
+  la condition de stage « peuvent être autorisés à poursuivre l'exercice de leur activité, sans être
+  mis à la retraite », pour la durée nécessaire à remplir la condition ; lorsque, à l'entrée en
+  vigueur de la loi, la durée de stage restant à courir ne dépasse pas une année, l'intéressé est
+  admis à la retraite avec prise en compte de cette période dans l'ancienneté.
+- **Art. 1-2** (hors lettre de la loi 85-12, mais sur son terrain — art. 55) : interdiction
+  d'employer des retraités titulaires de pension dans l'État, les collectivités publiques locales,
+  les EPA et les établissements publics régis par la loi n° 85-72, sauf dérogations individuelles
+  annuelles par décret et travaux occasionnels ; **interdiction du cumul** d'une pension « quelle
+  que soit son origine » et d'un revenu permanent **dans le secteur privé**, sanctionnée par la
+  suspension de la pension et le remboursement des arrérages, et par une amende portée à
+  1 500 dinars ; exception pour les retraités propriétaires ou promoteurs de projets qui en assurent
+  la direction.
+- **Maillon** : ouverture du droit (durée de services) ; cumul.
+- **Date d'effet** : **non énoncée**. L'art. 4 fixe au **30 juin 1987** un délai de mise en
+  conformité pour les employeurs et salariés — ce n'est pas une clause d'entrée en vigueur.
+
+### Loi n° 88-71 du 27 juin 1988, modifiant et complétant la loi n° 85-12
+
+JORT **n° 45 du 1er juillet 1988, pp. 967-968**, `/1988/1988F/Jo04588.pdf` **[T]** (lu à l'image,
+recadrages à 300 dpi sur les art. 5 et 61).
+
+Art. 1er : « Les dispositions des articles **5, 16, 24, 33, 41 et 61** […] sont abrogées et
+remplacées ». Art. 2 : complète l'**art. 6**. Art. 3 : abroge les **art. 25 et 26**.
+
+| Article | Ancien (1985) | Nouveau (1988) | Maillon |
+|---|---|---|---|
+| **5, 2° e)** | « sur la demande des mères ayant trois enfants dont l'âge n'a pas dépassé **15 ans** » | « sur la demande des mères ayant **au moins** trois enfants dont l'âge n'a pas dépassé **20 ans** **ou un enfant handicapé d'un handicap profond** et **après accord du Premier ministre** » | ouverture du droit (départ anticipé) |
+| **5, 2° f)** (ajout) | — | « **d'office** après 15 ans de services civils et militaires effectifs » | ouverture du droit |
+| **6** (dernier alinéa ajouté, art. 2) | — | hors militaires et FSI, la **mise à la retraite d'office** est décidée **par décret** au vu d'un rapport de l'employeur et des observations de l'agent, notifié **six mois au moins** avant | ouverture du droit (procédure) |
+| **16** | validation de la période de disponibilité ou de congé sans solde | ajoute « la période normale d'études et le cycle de formation poursuivie par l'agent avec succès en Tunisie ou à l'étranger à partir de l'année qui suit la quatrième année après le baccalauréat ou diplôme équivalent » ; modalités par décret | validation des services |
+| **24** | 60 ans « à l'exception des catégories des personnels visés aux articles 25, 26, 27, 28 et 29 » | « Sous réserve des dispositions des articles 27, 28 et 29 […] fixé à soixante (60) ans ; ils peuvent toutefois être **maintenus en activité, jusqu'à l'âge de soixante cinq (65) ans au maximum par décret** », pris « sur la base d'un rapport motivé du ministre concerné » | ouverture du droit (âge) |
+| **25-26** (abrogés, art. 3) | 70 ans Premier Président et Procureur général de la Cour de cassation ; 65 ans autres cadres supérieurs (liste par décret) ; 65 ans chef de secteur | — | ouverture du droit (âge) |
+| **33** | bonification jusqu'à 60 ans : 1° FSI et militaires blessés en service ; 2° invalides à 80 % ; 3° suppression d'emplois | ajoute aux blessés « les personnels des **services actifs des douanes** » ; ajoute un **4)** : « des agents mis à la retraite **d'office** à condition que le rendement de la bonification **ne dépasse pas 20 %** de la rémunération sur la base de laquelle est liquidée la pension de retraite » | bonifications |
+| **41** | jouissance immédiate : âge légal, invalidité, suppression d'emplois ; différée à 50 ans (demande, insuffisance professionnelle) ou à l'âge légal (révocation, démission) | jouissance immédiate étendue à « d) la mise à la retraite sur la demande des mères […] » et « e) la mise à la retraite d'office » ; différés inchangés | ouverture du droit (jouissance) |
+| **61, 1°** | 50 / 55 / 58 ans ; **60 ans officiers supérieurs ; 62 ans officiers généraux** | 50 / 55 / 58 ans ; « **60 ans pour le cadre des officiers généraux et des officiers supérieurs** » | militaires |
+| **61, 2°** | départs avant l'âge après 30 / 25 / 20 / 15 / 15 ans de services | reproduit à l'identique | militaires |
+
+- **Date d'effet** : art. 4, « La présente loi entre en vigueur à l'expiration d'un délai de six (6)
+  mois à compter de la date de sa publication au *Journal officiel* » **[T]**. Publication au pied
+  de page : 1er juillet 1988 → effet le **1er janvier 1989** **[D]** (dérivé de la clause et du pied
+  de page).
+
+### Loi n° 90-6 du 12 février 1990, modifiant la loi n° 85-12
+
+JORT **n° 14 des 20-23 février 1990, p. 264**, `/1990/1990F/Jo01490.pdf` **[T]** (lu à l'image).
+
+- **Article unique** : remplace l'**alinéa dernier de l'art. 6** « tel qu'il a été modifié et
+  complété par la loi n° 88-71 ». Nouveau : hors militaires et agents des forces de sécurité
+  intérieure, la mise à la retraite d'office est décidée par décret au vu d'un rapport de
+  l'employeur et des observations de l'agent ; « Celles-ci doivent être consignées par écrit et
+  adressées à l'employeur dans **un délai d'un mois** à compter de la date de communication du
+  rapport » ; le décret est notifié à l'agent et à la CNRPS « **deux mois** avant la date de mise à
+  la retraite » (**six mois** en 1988).
+- **Maillon** : ouverture du droit (procédure de la retraite d'office).
+- **Date d'effet** : **non énoncée**.
+
+### Loi n° 94-71 du 27 juin 1994, révision des taux de contribution
+
+JORT **n° 50 du 28 juin 1994, p. 1086**, `/1994/1994F/Jo05094.pdf` **[T]** (couche texte).
+
+- **Article unique** : taux relevés de **1 %** à la charge de l'assuré social **à partir du
+  1er juillet 1994**, et de **1,2 %** à la charge de l'employeur **à partir du 1er juillet 1995** ;
+  « En conséquence, sont modifiés […] **les articles 9 et 13** de la loi n° 85-12 » (et les régimes
+  des membres du gouvernement, des députés et des gouverneurs).
+- **Maillon** : financement (hors prestations). **Date d'effet** : énoncée par tranche.
+
+### Loi n° 95-105 du 14 décembre 1995 et décret n° 96-1015 du 27 mai 1996 — validation des services
+
+Loi : JORT **n° 101 du 19 décembre 1995, p. 2308**, `/1995/1995F/Jo10195.pdf` **[T]** (couche texte ;
+barème de l'art. 4 relu à l'image). Décret :
+JORT **n° 45 du 4 juin 1996, pp. 1109-1110**, `/1996/1996F/Jo04596.pdf` **[T]** (extraction par
+colonne).
+
+- **Aucun article de la loi 85-12 n'est visé nommément.** La loi institue un « système unifié de
+  validation des services applicable à tous les assurés sociaux relevant d'un régime légal de
+  sécurité sociale » (art. 1er) et « Toutes les dispositions antérieures contraires à la présente
+  loi sont abrogées » (art. 10). Elle entre donc en conflit, **par abrogation implicite**, avec les
+  articles 14 à 21 de la loi 85-12 **[D]** :
+  - périodes validables (art. 2) : activité effective rémunérée assujettie non déclarée ; services
+    à l'étranger en coopération technique ; mise en disponibilité spéciale ;
+  - **cotisation selon l'âge du postulant** (art. 4) : **23 %** jusqu'à 24 ans, **24 %** de 25 à 29,
+    **25 %** de 30 à 34, **27 %** de 35 à 39, **28 %** de 40 à 44, **29 %** de 45 à 49, **31 %** de
+    50 à 54, **32 %** à 55 ans et plus — sur le salaire de référence de la pension « comme si le
+    demandeur ouvrait droit à pension à la date de sa demande » (art. 5), et non plus sur la
+    moyenne de l'art. 18 de la loi 85-12 ;
+  - paiement échelonné en **36 mensualités au plus** (art. 7), contre des retenues « ne dépassant
+    pas 20 % de la rémunération » à l'art. 21 de la loi 85-12 ;
+  - demande **dans les 2 ans suivant la fin des périodes** et au plus tard un an après l'âge légal
+    (art. 8) ; délai transitoire d'un an pour les périodes de la législation antérieure (art. 9).
+- Le décret n° 96-1015, art. 5-1 : « Les **périodes d'étude et de formation** qui ne sont pas soumis
+  à cotisation au titre des régimes de retraite, **ne sont pas validables** ». **Tension non
+  résolue** avec l'art. 16 (nouveau) issu de la loi 88-71, qui ouvrait la validation des études
+  au-delà de bac + 4 **[D]** — à trancher (doctrine de la caisse, jurisprudence).
+- Art. 10 du décret : les demandes antérieures à la loi 95-105 sont liquidées selon l'ancienne
+  législation.
+- **Maillon** : validation des services. **Date d'effet** : **non énoncée** (ni loi, ni décret).
+
+### Loi n° 96-67 du 22 juillet 1996, modifiant la loi n° 85-12
+
+JORT **n° 60 du 26 juillet 1996, p. 1604**, `/1996/1996F/Jo06096.pdf` **[T]**.
+
+- **Article unique** : remplace l'**art. 48**. Ancien : « Les pensions des orphelins ne peuvent, au
+  total, être inférieures au montant des indemnités familiales dont aurait bénéficié l'agent »
+  — un **plancher**. Nouveau : « A la pension des orphelins **s'ajoutent** le cas échéant, les
+  indemnités familiales attribuées selon les mêmes modalités et les mêmes taux qui s'appliquent à
+  l'agent décédé comme s'il les percevait effectivement » — un **accessoire additionnel**.
+- **Maillon** : droits dérivés / accessoires. **Date d'effet** : **non énoncée**.
+- Homonymie : ne pas confondre avec la loi n° 96-67 du 29 juillet 1996 (accord d'investissement).
+
+### Loi n° 97-59 du 28 juillet 1997, amendant la loi n° 85-12 — absente du manuel
+
+JORT **n° 61 du 1er août 1997, p. 1359**, `/1997/1997F/Jo06197.pdf` **[T]** (couche texte, relue à
+l'image).
+
+- **Article premier** : ajoute un **alinéa 3 à l'art. 47** : « Les dispositions des articles 45 et
+  46 s'appliquent également **jusqu'à l'âge de vingt et cinq (25) ans** aux orphelins, justifiant de
+  la poursuite des études supérieures, à condition qu'ils ne soient pas bénéficiaires d'une bourse
+  universitaire, ainsi qu'**à la fille tant qu'elle ne dispose pas des ressources** ou que
+  l'obligation alimentaire n'incombe pas à son époux. »
+- **Date d'effet** : art. 2, « La présente loi prend effet à compter du **1er mai 1997** » **[T]** —
+  la même date que le décret n° 97-1927 pour le régime privé (§ 11 bis).
+- **Maillon** : droits dérivés (orphelins).
+- **Conséquence** : l'âge de 25 ans et la fille sans ressources datent de **1997**, non de la loi
+  n° 2007-43, qui réécrit l'art. 47 en reprenant et en précisant ces conditions (suspension
+  définitive du paiement si l'une d'elles vient à manquer ; appréciation à la date du décès).
+
+### Loi n° 97-74 du 18 novembre 1997, amendant la loi n° 85-12
+
+JORT **n° 93 du 21 novembre 1997, p. 2080**, `/1997/1997F/Jo09397.pdf` **[T]**.
+
+- **Article unique** : ajoute un **alinéa 3 à l'art. 42** : « L'allocation de vieillesse est
+  **reversible au profit du conjoint survivant et des orphelins**, selon les conditions et modalités
+  applicables en matière des pensions, prévues aux articles 43 à 48 de la présente loi. »
+- **Maillon** : planchers (allocation de vieillesse) / droits dérivés. **Date d'effet** : **non
+  énoncée**.
+
+### Loi n° 2001-123 du 28 décembre 2001, loi de finances pour 2002 — art. 85 et 86
+
+JORT **n° 104 du 28 décembre 2001, p. 4260** (art. 97 : p. 4261), `/2001/2001F/Jo1042001.pdf`
+**[T]** (couche à police décalée, décodée puis relue à l'image). Aucun autre article de la loi ne
+vise la loi 85-12 ni les pensions du secteur public (dépouillement des pp. 4251-4261).
+
+- **Art. 85** : taux relevés de **1 %** à la charge de l'assuré (**0,50 %** au 1er juillet 2002,
+  **0,25 %** au 1er juillet 2003, **0,25 %** au 1er juillet 2004) et de **1,5 %** à la charge de
+  l'employeur (**0,50 %** au 1er juillet 2002, puis **0,25 %** chaque 1er juillet de 2003 à 2006) ;
+  modifie « les **articles 9 et 13** de la loi n° 85-12 ». Maillon : financement.
+- **Art. 86** : « L'article 37 de la loi n° 85-12 […] est modifié comme suit » — les deux premiers
+  alinéas reprennent le texte de 1985 ; le troisième devient : « Cette péréquation est soumise aux
+  dispositions des articles **9, 10, 11 et 13** de la présente loi. **La contribution du bénéficiaire
+  de la pension au titre de cette péréquation est due durant toute la période de service de la
+  pension et ses accessoires. La contribution de l'employeur au titre de cette même péréquation est
+  due sur une période de 36 mois.** »
+  - Deux changements : (i) la **péréquation devient cotisée** par le retraité pendant tout le
+    service de la pension, l'employeur ne cotisant que 36 mois ; (ii) **l'art. 36 disparaît** de la
+    liste des renvois.
+  - Maillon : revalorisation.
+- **Date d'effet** : art. 97, « Sans préjudice des dispositions des articles 39, 70, 76 et 77 les
+  dispositions de la présente loi sont applicables à compter du **1er janvier 2002** » **[T]** ; les
+  art. 85-86 n'y dérogent pas.
+- **Rapprochement avec la loi n° 2007-43** (texte lu, § 1.6) : l'art. 37 (nouveau) de 2007
+  **rétablit l'art. 36** dans les renvois (« articles 9, 10, 11, 13 et 36 ») et reformule la règle
+  de 2002 : « La totalité des contributions au titre de cette péréquation durant la période de
+  paiement de la pension et de ses accessoires, à l'exception de la quote-part des contributions
+  mises à la charge de l'employeur durant 36 mois, est à la charge du bénéficiaire de la pension. »
+  **La mise à la charge du retraité date donc de 2002, non de 2007** ; la loi de 2007 précise que
+  c'est « la totalité » des contributions, parts salariale et patronale, hors les 36 mois de
+  l'employeur **[D]** (lecture comparée des deux libellés).
+
+### Loi n° 2002-61 du 9 juillet 2002, protection sociale de certains agents des EPNA
+
+JORT **n° 57 du 12 juillet 2002, pp. 1584-1585**, `/2002/2002F/Jo0572002.pdf` **[T]** (couche à
+police décalée, relue à l'image).
+
+- **Art. 1er-6** (régime propre) : agents des entreprises et établissements publics à caractère non
+  administratif affiliés à la CNRPS, **licenciés dans le cadre de l'assainissement et de la
+  restructuration** des entreprises à participations publiques (loi n° 89-9) ; ceux qui remplissent
+  la condition d'ancienneté de l'art. 22 sont **mis à la retraite proportionnelle** par arrêté du
+  Premier ministre (art. 2) et « bénéficient d'une pension de retraite **à l'âge de 50 ans** tout en
+  continuant à être assujettis aux dispositions de la loi n° 85-12 » (art. 3) ; soins et indemnités
+  familiales maintenus un an pour ceux de moins de 50 ans (art. 4) ; charge de l'entreprise ou du
+  fonds de restructuration jusqu'à l'âge de la retraite (art. 5) ; modalités par décret (art. 6 —
+  décret n° 2003-1656, non lu).
+- **Art. 7** : remplace l'**art. 5, 2° d)** : « à l'initiative de l'employeur pour insuffisance
+  professionnelle de l'agent ou révocation » — **la suppression d'emploi est retirée**.
+- **Art. 8** : abroge « les dispositions du **paragraphe 2 de l'article 6**, du **paragraphe 3 de
+  l'article 33** et de l'**alinéa "C" du 1er paragraphe de l'article 41** ».
+  - Désignations vérifiées sur les versions en vigueur en 2002 **[D]** : art. 6 § 2 = texte de 1985,
+    « Toutefois, la mise à la retraite pour suppression d'emploi est décidée par arrêté du Premier
+    Ministre » ; art. 33 § 3 = texte de 1988, « des agents mis à la retraite pour suppression
+    d'emplois » ; art. 41 1° c) = texte de 1988, « la mise à la retraite pour suppression
+    d'emplois ». Contrôle indirect : l'art. 33 (nouveau) de 2019 ne compte plus que trois cas, sans
+    la suppression d'emplois.
+- **Effet d'ensemble** : **la voie « suppression d'emplois » est retirée de la loi 85-12** (cause
+  de départ, procédure, bonification, jouissance immédiate) et remplacée par le régime spécial de
+  2002.
+- **Maillon** : ouverture du droit ; bonifications. **Date d'effet** : **non énoncée**.
+
+### Loi n° 2007-43 du 25 juin 2007 (rappel, déjà lue)
+
+Outre les art. 30, 37, 46 et 47 (§ 1.1, 1.4, 1.6), son **article premier** relève les taux : **1,8 %**
+à la charge de l'employeur (0,60 % au 1er janvier 2007, 2008, 2009) et **1,2 %** à la charge de
+l'assuré (0,40 % au 1er juillet 2007, 2008, 2009), modifiant les **art. 9 et 13** **[T]** (texte
+intégral versionné dans `openfisca-tunisia-pension/tmp/JORTs/`).
+
+### Décret-loi n° 2011-48 du 4 juin 2011 — absent du manuel
+
+JORT **n° 41 du 7 juin 2011, p. 844**, `/2011/2011F/Jo0412011.pdf` **[T]** (couche texte).
+
+- **Article premier** : taux à la charge de l'**employeur** relevés d'**un pour cent** « à partir du
+  **1er juillet 2011** » ; modifie « l'**article 13** de la loi n° 85-12 » (et les régimes des
+  membres du gouvernement et des gouverneurs — **pas celui des députés**).
+- **Maillon** : financement.
+
+### Loi n° 2009-20 et loi n° 2019-37 (rappel, déjà lues)
+
+- 2009-20 : art. 24 et art. 29 bis (professeurs de l'enseignement supérieur) — § 6.1 bis.
+- 2019-37 **[T]** : art. 1er, remplace l'art. 3, l'art. 8 § 2, les **art. 24, 27, 28, 29**, les § 2
+  et 3 de l'art. 29 bis, l'**art. 33** (trois cas ; repère 62 ans ; le plafond de 20 % pour la
+  retraite d'office **y est reconduit**, il date de 1988), l'art. 61 § 1, les art. 64 et 67 ;
+  **art. 2**, remplace « l'âge de soixante ans » par « l'âge de soixante-deux ans » aux **§ 2 et 3 de
+  l'art. 32** ; art. 3, ajoute l'art. 1er c), l'art. 9 bis et les art. 71 bis à 71 septies ; art. 4,
+  taux + 3 %.
+
+## 11.2 Après la loi n° 2019-37
+
+### Décret-loi n° 2022-79 du 22 décembre 2022, loi de finances pour 2023 — art. 12
+
+JORT **n° 141 du 23 décembre 2022**, **édition arabe seulement** : l'URL française
+`/2022/2022F/Jo1412022.pdf` répond `404` (289 octets), conformément à `outillage-sources.md` ;
+**p. 4060** de l'édition arabe, `/2022/2022A/Ja1412022.pdf` **[T]** (couche texte arabe, relue à
+l'image). **Aucune pagination française n'existe.**
+
+- **Art. 12** (intitulé « ترشيد الترفيع في سن الإحالة على التقاعد », rationalisation de
+  l'augmentation de l'âge de mise à la retraite) : « تلغى أحكام الفصل 71 مكرّر […] وتعوّض
+  بالأحكام التالية » — **abroge et remplace l'art. 71 bis**. Traduction de travail, non officielle :
+  - les agents régis par les art. 24, 27, 28, 29 (nouveaux) **et 61 (premier paragraphe nouveau)**
+    peuvent opter pour l'augmentation de l'âge d'un, deux ou trois ans ;
+  - demande écrite à l'employeur « pour qu'il statue par **l'approbation ou le rejet** » (للبتّ فيه
+    بالموافقة أو الرفض), **six mois au moins** avant l'âge ;
+  - seules les demandes approuvées sont transmises à la CNRPS ;
+  - « les agents dont l'augmentation optionnelle a été approuvée **peuvent présenter des demandes de
+    renonciation** » (مطالب تراجع) ;
+  - les personnes de l'art. 29 bis : un à cinq ans, jusqu'à 70 ans, selon la même procédure
+    « **à l'exception de la condition d'approbation de l'employeur** » ;
+  - modalités par décret.
+- **Ce qui change par rapport à 2019** (art. 71 bis lu, JORT n° 35/2019, p. 1313) : en 2019 l'option
+  était de droit pour les civils — l'employeur transmettait les demandes — et « considérée comme
+  étant **définitive et irrévocable** », l'accord de l'employeur n'étant requis que pour les
+  militaires. Depuis 2023, **l'option est subordonnée à l'accord de l'employeur** pour tous les
+  agents sauf ceux de l'art. 29 bis, et elle **devient révocable**.
+- **Date d'effet** : art. 76, « مع مراعاة الأحكام المخالفة الواردة بهذا المرسوم، تطبّق أحكام هذا
+  المرسوم بداية من غرّة جانفي 2023 » — **1er janvier 2023** **[T]** ; l'art. 12 ne comporte pas de
+  disposition contraire.
+- **Maillon** : ouverture du droit (âge).
+- Notice `jort_cache` : type `Decret-Loi`, `numero` vide, pages 4060, `pdf_fr` vide.
+
+### Décret n° 2023-741 du 1er décembre 2023, modalités de l'augmentation optionnelle de l'âge
+
+JORT **n° 138 du 1er décembre 2023, pp. 3240-3242**, `/2023/2023F/Jo1382023.pdf` **[T]** (couche
+texte ; édition française vérifiée au pied de page). Pris en application de l'art. 71 bis
+(nouveau) ; vise expressément l'art. 12 du décret-loi n° 2022-79.
+
+- Champ : agents dont l'âge légal est atteint **à compter du 1er décembre 2023** (art. 2) ; un, deux
+  ou trois ans pour les agents des art. 24, 27, 28, 29 et 61 al. 1er (art. 3).
+- Procédure : demande écrite **entre un an et six mois** avant l'âge légal, rejet d'office hors
+  délai (art. 4) ; décision du chef de l'administration **sous 30 jours**, notification à l'agent
+  sous 10 jours (art. 5) ; arrêté notifié à la CNRPS par le système d'échange automatisé (art. 6).
+- **Renonciation** possible, « réputée définitive et irrévocable », y compris pour les agents ayant
+  bénéficié de l'augmentation au titre de l'art. 5 de la loi 2019-37 (art. 7-8).
+- Art. 29 bis : un à cinq ans jusqu'à 70 ans, sans approbation du chef de l'administration (art. 9).
+- **Transitoire** (art. 10) : les agents ayant atteint l'âge légal entre le **1er janvier et le
+  30 novembre 2023** et dont la demande déposée dans les délais n'a pas été tranchée bénéficient de
+  « l'augmentation **systématique d'une année** » ; au-delà d'un an, l'employeur statue sous trois
+  mois.
+- **Date d'effet** : **non énoncée** (art. 11, clause de publication) ; le champ temporel est fixé
+  par l'art. 2.
+- Notice `jort_cache` fautive : `numero` = « 2023-138 » (numéro du fascicule), page 3240 seule.
+
+### Textes dérogatoires, sans modification de la lettre de la loi 85-12
+
+| Texte | JORT | Contenu | Effet | Niv. |
+|---|---|---|---|---|
+| **Décret-loi n° 2021-21 du 28 décembre 2021**, LF 2022, **art. 14** | n° 119 du 28 déc. 2021, **p. 3082**, `/2021/2021F/Jo1192021.pdf` | « Contrairement aux dispositions de la loi n° 85-12 », départ anticipé avant 62 ans pour les agents âgés d'**au moins 57 ans** entre le 1er janvier 2022 et le 31 décembre 2024, ayant la durée minimale de services ; pension immédiate avec **bonification** jusqu'à l'âge légal ; pensions et contributions de la période à la charge de l'employeur ; catégories et modalités par décret présidentiel | art. 73 : 1er janvier 2022 | **[T]** |
+| Loi n° 2024-48 du 9 décembre 2024, LF 2025, art. 14 | n° 149/2024, p. 6420 (**pagination arabe** ; édition française absente) | prolonge l'art. 14 de la LF 2022 | — | **[M]** |
+| Arrêtés du Chef du Gouvernement fixant les délais d'application du programme (16 juin 2022, 9 janvier 2023, 12 décembre 2023, 30 décembre 2024) | n° 69/2022, 4/2023, 145/2023, 159/2024 | délais annuels | — | **[M]** |
+| **Décret-loi n° 2022-49 du 16 août 2022** | n° 93 du **19 août 2022**, **p. 2494** (édition française), `/2022/2022F/Jo0932022.pdf` | « à titre dérogatoire et conjoncturel, et contrairement aux dispositions du quatrième alinéa de l'article 37 » : **différentiel complémentaire** de pension égal au manque résultant de la retenue de la part patronale sur la péréquation des augmentations de 2019, jusqu'au 31 décembre 2022 ; retenue **suspendue** de février 2022 à l'entrée en vigueur ; coût à la charge du budget de l'État (art. 71 septies) | non énoncée | **[T]** |
+
+Divergence de notice sur le décret-loi n° 2022-49 : `jort_cache` donne signature 5 août, publication
+8 août 2022, p. 2793 (pagination arabe) ; le titre porte « du 16 août 2022 » et le pied de page de
+l'édition française « 19 août 2022 », p. 2494. Le pied de page fait foi (§ 3 bis et § 4 de
+`outillage-sources.md`).
+
+Hors champ mais signalé : la **loi de finances pour 2026** (loi n° 2025-17, art. 102, JORT
+n° 148/2025, notice arabe **[M]**) abroge les art. 3 et 5 de la **loi n° 85-16** (députés), non de la
+loi 85-12.
+
+## 11.3 Réponses aux trois questions du chapitre
+
+1. **La loi 88-71 porte-t-elle de 15 à 20 ans l'âge des enfants (art. 5) ? — Oui** **[T]**. Elle
+   ajoute en outre deux éléments : la mère d'**un enfant handicapé d'un handicap profond**, et la
+   condition d'**accord du Premier ministre** ; « trois enfants » devient « au moins trois
+   enfants ». La jouissance devient immédiate (art. 41 nouveau, 1° d). Effet : 1er janvier 1989
+   **[D]**.
+2. **Art. 25-26, 28-29, 30, 32 ?**
+   - **25-26 : oui** — abrogés par la loi 88-71 (art. 3) ; la prorogation est reversée dans
+     l'art. 24 (nouveau) sous forme de maintien en activité **par décret jusqu'à 65 ans**, sur
+     rapport motivé du ministre, sans catégorie nommée **[T]**.
+   - **28-29 : non** dans la chaîne 1987-2011 ; seule la loi 2019-37 les remplace (déjà lue).
+   - **30 : non** ; seule la loi 2007-43 le modifie (déjà lue).
+   - **32 : non** dans la chaîne 1987-2011 ; la loi 2019-37, art. 2, y substitue 62 à 60 ans aux § 2
+     et 3 **[T]**. **33 : oui** — réécrit en 1988 (douanes, retraite d'office plafonnée à 20 %), § 3
+     abrogé en 2002 (suppression d'emplois), réécrit en 2019.
+3. **Art. 36 à 42 ?**
+   - **36, 38, 39 et 40 : aucun texte de la chaîne ne les modifie**, de 1985 au 10 avril 2026
+     (limite de la base, sous la réserve d'indexation du § 11.0). **La fenêtre de la rémunération de liquidation (dernière rémunération,
+     trois ans de retenues, fonction la plus élevée exercée deux ans), le barème 2 / 3 / 2 %, le
+     plafond de 90 %, la pension minimale des deux tiers du SMIG et l'article sur les indemnités
+     familiale et de revenu unique sont ceux de 1985.** L'art. 38 n'est que visé par l'art. 71 ter
+     (2019).
+   - **37 : oui, deux fois** — LF 2002 art. 86 (effet 1er janvier 2002), loi 2007-43 ; plus la
+     dérogation temporaire du décret-loi 2022-49.
+   - **41 : oui, deux fois** — loi 88-71 (mères, retraite d'office), loi 2002-61 (suppression
+     d'emplois retirée).
+   - **42 : oui** — loi 97-74, réversibilité de l'allocation de vieillesse.
+
+## 11.4 Corrections à reporter ailleurs (non faites ici)
+
+Dans ce dossier (§ 1) et dans `precis/fr/retraites/_secteur_public.qmd` :
+
+- **§ 1.0 et § 1.1** : la loi 88-71 est lue — passer les lignes de **[M]** à **[T]**, effet
+  1er janvier 1989 **[D]** ; ajouter la branche « enfant handicapé profond » et l'accord du Premier
+  ministre.
+- **§ 1.1, prorogation** : les valeurs 70 / 65 / 65 ans (art. 25-26) ne valent que du 12 septembre
+  1985 au 31 décembre 1988 ; ensuite, maintien par décret jusqu'à 65 ans (art. 24 nouveau).
+- **§ 1.1, militaires** : officiers généraux **62 → 60 ans au 1er janvier 1989** (loi 88-71), avant
+  le passage à 62 ans en 2019 ; la ligne actuelle ne montre pas cette étape.
+- **§ 1.1, art. 72** : la dispense transitoire de la condition d'ancienneté est **abrogée par la loi
+  87-8** (art. 5), date d'effet non énoncée.
+- **§ 1.1, bonifications** : le **plafond de 20 %** pour la retraite d'office date de la **loi 88-71**
+  (art. 33 nouveau), reconduit en 2019 ; la « suppression d'emplois » disparaît de l'art. 33 en 2002.
+- **§ 1.1, départs anticipés et § 1.1 jouissance** : ajouter la retraite d'office (art. 5 2° f,
+  1988 ; procédure art. 6, 1988 puis 1990) et le retrait de la suppression d'emploi (2002, régime
+  des EPNA à 50 ans).
+- **§ 1.3, « plancher des pensions d'orphelins »** : ne décrit plus le droit après la loi 96-67 ;
+  depuis, les indemnités familiales **s'ajoutent** à la pension d'orphelin.
+- **§ 1.3, allocation de vieillesse** : **réversible** depuis la loi 97-74.
+- **§ 1.4 et « point de vigilance » sous le tableau** : les conditions « 25 ans, études supérieures
+  sans bourse » et « fille sans ressources » sont introduites par la **loi 97-59, effet 1er mai
+  1997**, et non par la loi 2007-43, qui les réécrit. Le rattachement du paramètre à la loi 85-12
+  reste inexact, mais la bonne référence est **97-59** (puis 2007-43).
+- **§ 1.6** : la mise à la charge du retraité des contributions de péréquation date de la **LF 2002,
+  art. 86** (effet 1er janvier 2002) ; la loi 2007-43 la reformule et rétablit le renvoi à l'art. 36.
+- **§ 1.1, augmentation optionnelle** : l'option « définitive et irrévocable » de 2019 est remplacée
+  au **1er janvier 2023** par une option soumise à l'accord de l'employeur et révocable
+  (décret-loi 2022-79, art. 12 ; décret 2023-741).
+- **Validation des services** (§ 10.2) : le régime des art. 14-21 de la loi 85-12 est supplanté par
+  la loi 95-105 ; tension ouverte sur la validation des études (art. 16 nouveau de 1988 contre
+  art. 5 du décret 96-1015).
+- **Glossaire** (`precis/glossaire.yml`, à ne modifier que par le rédacteur) : l'entrée
+  `mise-a-la-retraite-d-office` attribue le plafond de 20 % à la loi 2019-37 (il date de 1988) ;
+  l'entrée `perequation` attribue à la loi 2007-43 la mise à la charge du retraité (elle date de
+  2002) ; l'entrée `allocation-de-vieillesse` ne mentionne pas la réversibilité (1997).
+- **Notes CSL-JSON à mettre à jour** (§ 9 et § 10.4 portent « Métadonnées seules ») : `tn-loi-1987-8`,
+  `tn-loi-1988-71` (retirer « selon la référence du modèle ; à vérifier »), `tn-loi-1990-6`,
+  `tn-loi-1995-105`, `tn-loi-1996-67`, `tn-loi-1997-74`, `tn-loi-2002-61`, `tn-loi-1987-7` — et leurs
+  homologues déjà présents dans les `references.json` (`loi87-8`, `loi88-71`, etc.). Clés existantes
+  et entrées à créer : § 11.6.
+
+## 11.5 Tableau de synthèse pour le rédacteur
+
+| Texte | Date d'effet | Articles de la loi 85-12 touchés | Maillon | Ce qui change | Niv. |
+|---|---|---|---|---|---|
+| Loi n° 87-8 du 6 mars 1987 | non énoncée | 72 (abrogé) | ouverture du droit ; cumul | Fin de la dispense des 15 ans de services pour les agents recrutés avant 1985, remplacée par un maintien en activité jusqu'à la durée requise ; cumul pension-revenu permanent interdit dans le privé. | [T] |
+| Loi n° 88-71 du 27 juin 1988 | 1er janv. 1989 (six mois après publication) | 5, 6, 16, 24, 25-26 (abrogés), 33, 41, 61 | ouverture du droit ; validation ; bonifications ; militaires | Mères de trois enfants de moins de 20 ans (au lieu de 15) ou d'un enfant lourdement handicapé ; retraite d'office créée, bonifiée dans la limite de 20 % ; prorogations remplacées par un maintien jusqu'à 65 ans par décret ; officiers généraux à 60 ans ; validation des études au-delà de bac + 4. | [T] (date [D]) |
+| Loi n° 90-6 du 12 février 1990 | non énoncée | 6 (dernier alinéa) | ouverture du droit | Retraite d'office : observations de l'agent sous un mois, notification deux mois (et non plus six) avant la mise à la retraite. | [T] |
+| Loi n° 94-71 du 27 juin 1994 | 1er juill. 1994 (agent), 1er juill. 1995 (employeur) | 9, 13 | financement | Contributions + 1 % agent, + 1,2 % employeur. | [T] |
+| Loi n° 95-105 du 14 décembre 1995 et décret n° 96-1015 | non énoncée | 14-21 (abrogation implicite) | validation des services | Système unifié : cotisation de 23 à 32 % selon l'âge sur le salaire de référence, 36 mensualités, demande sous deux ans ; études non validables selon le décret. | [T] (portée [D]) |
+| Loi n° 96-67 du 22 juillet 1996 | non énoncée | 48 | droits dérivés ; accessoires | Les indemnités familiales s'ajoutent à la pension des orphelins, au lieu d'en constituer le plancher. | [T] |
+| Loi n° 97-59 du 28 juillet 1997 | 1er mai 1997 | 47 (al. 3 ajouté) | droits dérivés | Pension d'orphelin jusqu'à 25 ans pour les études supérieures sans bourse ; sans limite d'âge pour la fille sans ressources. | [T] |
+| Loi n° 97-74 du 18 novembre 1997 | non énoncée | 42 (al. 3 ajouté) | planchers ; droits dérivés | L'allocation de vieillesse devient réversible au conjoint survivant et aux orphelins. | [T] |
+| Loi n° 2001-123 (LF 2002), art. 85-86 | 1er janv. 2002 ; taux par tranches 2002-2006 | 9, 13, 37 | financement ; revalorisation | Contributions + 1 % agent et + 1,5 % employeur ; la péréquation est cotisée par le retraité pendant tout le service de la pension, par l'employeur pendant 36 mois. | [T] |
+| Loi n° 2002-61 du 9 juillet 2002 | non énoncée | 5 (2° d), 6 (§ 2), 33 (§ 3), 41 (1° c) | ouverture du droit ; bonifications | La suppression d'emplois disparaît de la loi 85-12 ; les agents d'EPNA licenciés en restructuration relèvent d'une retraite proportionnelle servie à 50 ans. | [T] (désignations [D]) |
+| Loi n° 2007-43 du 25 juin 2007 | non énoncée (taux par tranches 2007-2009) | 9, 13, 30, 37, 46, 47 | financement ; ouverture du droit ; revalorisation ; droits dérivés | Départ anticipé à 57 ans et 37 ans de services ; totalité des contributions de péréquation au retraité hors 36 mois employeur ; fille sans ressources plafonnée à 50 % ; contributions + 1,8 % employeur et + 1,2 % agent. | [T] |
+| Loi n° 2009-20 du 13 avril 2009 | non énoncée | 24, 29 bis (créé) | ouverture du droit | Professeurs et maîtres de conférences du supérieur à 65 ans, maintien possible jusqu'à 70 ans. | [T] |
+| Décret-loi n° 2011-48 du 4 juin 2011 | 1er juill. 2011 | 13 | financement | Contribution employeur + 1 %. | [T] |
+| Loi n° 2019-37 du 30 avril 2019 | non énoncée (calendrier transitoire, art. 5) | 1, 3, 8, 9, 9 bis, 13, 24, 27-29, 29 bis, 32, 33, 61, 64, 67, 71 bis-septies | ouverture du droit ; bonifications ; militaires ; financement | Âges relevés de deux ans ; augmentation optionnelle de l'âge ; comptes individuels ; contributions + 3 %. | [T] |
+| Décret-loi n° 2022-79 (LF 2023), art. 12 | 1er janv. 2023 | 71 bis | ouverture du droit | L'augmentation optionnelle de l'âge exige l'accord de l'employeur (sauf art. 29 bis) et devient révocable. | [T] (édition arabe) |
+| Décret n° 2023-741 du 1er décembre 2023 | non énoncée ; agents atteignant l'âge dès le 1er déc. 2023 | — (application de l'art. 71 bis) | ouverture du droit | Procédure : demande entre un an et six mois avant l'âge, décision sous 30 jours, renonciation irrévocable ; une année accordée d'office aux demandes 2023 restées sans réponse. | [T] |
+
+Textes dérogatoires, sans modification de la lettre : LF 2022 (décret-loi n° 2021-21), art. 14,
+départ anticipé dès 57 ans en 2022-2024, prolongé par la LF 2025 **[T]/[M]** ; décret-loi n° 2022-49,
+neutralisation temporaire de la part patronale de péréquation retenue sur les pensions **[T]**.
+
+## 11.6 Références : clés existantes et entrées à créer
+
+**Déjà présentes** dans `precis/fr/references.json` ou un `references.json` de livre (contrôle du
+11 septembre 2026 ; ne pas dupliquer) : `loi85-12`, `loi87-8`, `loi88-71`, `loi90-6`, `loi94-71`,
+`loi95-105`, `loi96-67`, `loi97-74`, `loi2002-61`, `loi2001-123-lf2002` (cotisations sociales ; sa
+note décrit l'art. 85 — **y ajouter l'art. 86 et l'art. 97**), `decretloi2011-48` (cotisations
+sociales), `lf-2022` (fiscalité, décret-loi n° 2021-21 — sa page 3086 ne couvre pas l'art. 14, p. 3082),
+`lf-2023` (fiscalité, décret-loi n° 2022-79 — ajouter l'art. 12, p. 4060 de l'édition arabe),
+`lf-2025`, `decret96-326`, `decret97-1927` (note à compléter : art. 2, effet 1er mai 1997). Les clés
+proposées aux § 9 et § 10.4 sous la forme `tn-loi-AAAA-NN` sont donc à rapprocher de ces clés
+existantes avant tout ajout.
+
+**À créer** (convention de clés du dépôt) :
+
+```json
+[
+  {"id":"loi97-59","type":"legislation","title":"Loi n° 97-59 du 28 juillet 1997, amendant la loi n° 85-12 du 5 mars 1985, portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public","issued":{"date-parts":[[1997,7,28]]},"container-title":"Journal officiel de la République tunisienne","issue":"61","page":"1359","URL":"https://www.pist.tn/jort/1997/1997F/Jo06197.pdf","note":"citation-key: loi97-59\nJORT n° 61 du 1er août 1997. Art. 1 : art. 47 al. 3 nouveau — orphelins jusqu'à 25 ans (études supérieures sans bourse), fille sans ressources. Art. 2 : prend effet à compter du 1er mai 1997. Absente du manuel de la CNRPS. Texte lu, contrôlé à l'image."},
+  {"id":"decret96-1015","type":"legislation","title":"Décret n° 96-1015 du 27 mai 1996, fixant les modalités de la validation des services au titre des régimes de retraite, d'invalidité et de survivants","issued":{"date-parts":[[1996,5,27]]},"container-title":"Journal officiel de la République tunisienne","issue":"45","page":"1109-1110","URL":"https://www.pist.tn/jort/1996/1996F/Jo04596.pdf","note":"citation-key: decret96-1015\nJORT n° 45 du 4 juin 1996. Art. 5 : périodes validables ; études et formation non soumises à cotisation non validables. Art. 8 : délais. Art. 10 : demandes antérieures à la loi 95-105 liquidées selon l'ancienne législation. Aucune date d'effet. Texte lu."},
+  {"id":"decretloi2022-49","type":"legislation","title":"Décret-loi n° 2022-49 du 16 août 2022, fixant des dispositions dérogatoires et conjoncturelles au profit des titulaires des pensions versées par la Caisse nationale de retraite et de prévoyance sociale","issued":{"date-parts":[[2022,8,16]]},"container-title":"Journal officiel de la République tunisienne","issue":"93","page":"2494","URL":"https://www.pist.tn/jort/2022/2022F/Jo0932022.pdf","note":"citation-key: decretloi2022-49\nJORT n° 93 du 19 août 2022 (pied de page), p. 2494 de l'édition française ; jort_cache donne 5/8 août et p. 2793 (arabe). Déroge à l'art. 37 al. 4 de la loi 85-12 : différentiel complémentaire jusqu'au 31 décembre 2022, suspension de la retenue de la part patronale de péréquation (augmentations 2019). Aucune date d'effet. Texte lu (couche texte)."},
+  {"id":"decret2023-741","type":"legislation","title":"Décret n° 2023-741 du 1er décembre 2023, fixant les modalités et les procédures de l'augmentation optionnelle de l'âge de mise à la retraite","issued":{"date-parts":[[2023,12,1]]},"container-title":"Journal officiel de la République tunisienne","issue":"138","page":"3240-3242","URL":"https://www.pist.tn/jort/2023/2023F/Jo1382023.pdf","note":"citation-key: decret2023-741\nJORT n° 138 du 1er décembre 2023. Art. 2 : agents atteignant l'âge légal à compter du 1er décembre 2023. Art. 4-8 : demande entre un an et six mois avant, décision sous 30 jours, renonciation irrévocable. Art. 9 : art. 29 bis. Art. 10 : transitoire 2023, une année d'office. Aucune date d'effet. Notice jort_cache fautive (numero 2023-138). Texte lu (couche texte)."}
+]
+```
+
+Ces entrées sont à porter d'abord dans `docs/notes/biblio-a-rapatrier.md` (§ 9, rappel d'outillage).
+
+## 11.7 Ce qui reste non établi
+
+- **Portée de la loi 95-105 sur l'art. 16 (nouveau) de 1988** (validation des études) : abrogation
+  implicite ou coexistence — non tranchée.
+- **Décret n° 2003-1656** (application de la loi 2002-61) : non lu.
+- **Jouissance de la pension des mères avant 1989** : l'art. 41 de 1985 ne les range pas parmi les
+  jouissances immédiates ; le régime applicable (différé à 50 ans comme départ sur demande ?) n'est
+  écrit nulle part **[D]**.
+- **Complétude** : bornée par l'indexation de `jort_cache.db` (§ 11.0). Les lois de finances
+  antérieures à 2001 n'ont été examinées que sur leurs notices.
+- **Traduction de l'art. 12 du décret-loi 2022-79** : de travail ; aucune version française
+  officielle n'existe.
+
+## 11 bis. Deux décrets de la chaîne du décret n° 74-499 (régime privé), lus
+
+### Décret n° 96-326 du 1er mars 1996
+
+JORT **n° 21 du 12 mars 1996, p. 530**, `/1996/1996F/Jo02196.pdf` **[T]** (lu à l'image ; page 78
+du fichier local, pied de page « Page 530 — 12 mars 1996 — N° 21 »).
+
+- **Article modifié** : **art. 46, alinéa premier**, du décret n° 74-499, abrogé et remplacé :
+  « Toute demande de pension doit être formulée auprès de la caisse nationale de sécurité sociale
+  dans un **délai maximum de cinq ans** à partir du jour où le bénéficiaire a atteint l'âge
+  d'ouverture du droit à pension et a cessé son activité professionnelle assujettie, a été déclaré
+  invalide ou est décédé ». C'est le seul article du décret touché.
+- **Date d'effet** : **non énoncée** — l'art. 2 est une clause d'exécution et de publication.
+- **Maillon** : ouverture du droit (procédure). L'ancien alinéa de 1974 n'a pas été relu pour cette
+  note ; aucun effet sur les articles 17, 18, 29, 38 ou 53.
+
+### Décret n° 97-1927 du 29 septembre 1997
+
+JORT **n° 80 du 7 octobre 1997, p. 1851**, `/1997/1997F/Jo08097.pdf` **[T]** (lu à l'image, art. 2
+recadré à 300 dpi).
+
+- **Article modifié** : **art. 33** du décret n° 74-499, abrogé et remplacé (article premier) —
+  pension temporaire d'orphelin jusqu'à 16 ans sans condition, 21 ans (études secondaires,
+  techniques ou professionnelles), **25 ans** (études supérieures sans bourse universitaire),
+  **la fille tant qu'elle ne dispose pas de ressources ou n'est pas à la charge de son mari**, sans
+  limite d'âge en cas d'affection incurable ou d'infirmité ; même droit aux orphelins d'un
+  bénéficiaire de pension d'invalidité ou d'un assuré remplissant les conditions de l'art. 21.
+- **Le second article, qui n'avait pas pu être isolé, se trouve en tête de la colonne droite de la
+  page** : « Art. 2. - Les ministres des affaires sociales et des finances sont chargés, chacun en ce
+  qui le concerne, de l'exécution du présent décret **qui prendra effet du 1er mai 1997** et qui sera
+  publié au *Journal Officiel* de la République Tunisienne. »
+- **Date d'effet : 1er mai 1997** **[T]** — identique à celle de la loi n° 97-59 pour le secteur
+  public : les deux régimes ont reçu la même extension des droits des orphelins à la même date.
+
+---
+
+# 12. La fenêtre du salaire de référence du RSNA : décrets n° 90-1455 et 94-1429
+
+> Section ajoutée le 11 septembre 2026. Question posée : le chapitre privé expose deux calendriers
+> de la fenêtre de dix ans (1990, puis 1994-1996) sans les concilier. Les deux décrets ont été relus
+> **en entier**, ainsi que l'article 19 initial, le rectificatif de 1974, le décret n° 97-291 et le
+> premier arrêté fixant le barème d'actualisation. Aucun `.qmd` n'a été modifié.
+
+## 12.1 Conclusion
+
+**Il n'y a pas de contradiction entre deux règles en vigueur au même moment, mais une succession.**
+Le décret n° 94-1429 **abroge et remplace** l'article 18 dans la rédaction que lui avait donnée le
+décret n° 90-1455, qu'il vise expressément. Aucun texte publié entre 1990 et 1994 n'a suspendu,
+reporté ni modifié la règle de 1990. Ce que le décret de 1994 corrige est lisible dans les textes :
+**le décret de 1990 avait réécrit l'article 18 (dix ans) sans toucher à l'article 19**, qui
+continuait de prescrire une moyenne sur **trente-six ou soixante mois** ; le décret de 1994 réécrit
+**les deux articles ensemble**, en paliers accordés (5, 7, 10 ans ; 60, 84, 120 mois).
+
+Ce que les textes ne disent pas : **comment la caisse a liquidé les pensions entre le
+23 septembre 1990 et le 30 juin 1994**, et pourquoi le décret de 1994 repart de cinq ans au lieu de
+constater une fenêtre de dix ans déjà acquise. L'hypothèse d'une règle de 1990 restée inappliquée
+est plausible — article 19 non adapté, aucun barème d'actualisation publié avant novembre 1994 —
+mais **elle n'est pas établie** (§ 12.7).
+
+## 12.2 Décret n° 90-1455 du 10 septembre 1990 — lecture intégrale
+
+JORT **n° 60 du 21 septembre 1990, p. 1358**, édition française, `/1990/1990F/Jo06090.pdf`
+(page 30 du fichier local, 32 pages ; fichier identique à l'octet à celui de pist.tn, 3 121 068
+octets, contrôlé le 11 septembre 2026). Fascicule sans couche texte : OCR `tesseract -l fra` à
+300 dpi, puis **relecture intégrale à l'image**. Pied de page lu à l'image : « 1358 — *Journal
+Officiel de la République Tunisienne* — 21 septembre 1990 — N° 60 » (l'OCR lisait « 1356 » ; la page
+précédente porte 1357). **[T]**
+
+Le décret tient **entièrement sur la page 1358** : il s'ouvre sous l'intertitre « MINISTERE DES
+AFFAIRES SOCIALES — REGIME DE VIEILLESSE » et se clôt par la signature, suivie de nominations
+(décrets n° 90-1456 et suivants). Il compte **deux articles**.
+
+**Intitulé** (fascicule) : « Décret N° 90-1455 du 10 septembre 1990 amendant le décret N° 74-499 du
+27 avril 1974 relatif au regime de vieillesse, d'invalidité et de survivants dans le secteur non
+agricole ». Le sommaire (p. 3 du fichier) porte « modifiant » et, par coquille, « 10 septembre
+1980 ».
+
+**Visas** **[T]** : loi n° 60-30 du 14 décembre 1960 (« ensemble les textes qui l'ont modifée ou
+complétée, notamment la loi n° 88-38 du 6 mai 1988 ») ; loi n° 60-33 du 14 décembre 1960 ;
+**décret n° 74-499 du 27 avril 1974**, visé sans mention d'aucun modificatif ; décret n° 76-981 du
+19 novembre 1976 organisant la CAVIS ; avis des ministres de l'économie et des finances et des
+affaires sociales ; avis du Tribunal administratif.
+
+**Article premier** **[T]** : « Les dispositions des articles **3, 14, 18, 30, 32, 43 et 54** du
+décret n° 74-499 du 27 avril 1974 sus-visé, sont abrogées et remplacées par les dispositions
+suivantes : ». **L'article 19 n'est pas dans la liste.**
+
+**Article 18 (nouveau), mot pour mot** **[T]** :
+
+> « La pension est basée sur les salaires soumis à cotisation que l'assuré a perçu au cours des
+> **dix dernières années** précédent l'âge d'ouverture du droit à pension. Au cas où la période
+> d'activité déclarée est inférieure à 10 ans, la moyenne est calculée sur la base des salaires
+> perçus au cours de cette période. Lesdits salaires ne sont pris en compte pour une durée
+> déterminée que dans la limite de 6 fois le SMIG rapporté à une durée d'occupation annuelle de
+> 2 400 heures. Ils sont actualisés selon un barème fixé par arrêté du ministre des affaires
+> sociales. »
+
+Coquilles du fascicule conservées (« perçu », « précédent »). Par rapport à 1974 : disparition du
+choix « trois ou cinq dernières années […] selon que l'une ou l'autre de ces périodes de référence
+est plus avantageuse », disparition de la mention « ou à allocation », « pour une année
+déterminée » devenu « pour une durée déterminée », et ajout de l'actualisation par barème.
+
+**Autres articles nouveaux** (lus, résumés) **[T]** : art. 3 (validation des périodes d'emploi non
+déclarées ; cotisations calculées sur les salaires des trois dernières années ; périodes antérieures
+au 1er avril 1961 validables dans un délai de trois ans « à compter de la date d'entrée en vigueur du
+présent décret ») ; art. 14 (cessation de la relation de travail à l'âge de l'art. 15 ; périodes
+postérieures prises en compte seulement après autorisation de l'inspection du travail et dans la
+limite du stage) ; art. 30 (pension de survivant due si les liens du mariage existent au décès) ;
+art. 32 (suspension en cas de remariage avant 55 ans, rétablissement revalorisé, cumul interdit,
+seule la pension la plus élevée servie) ; art. 43 (versement unique pour moins de 60 mois de
+cotisation) ; art. 54 (maintien des prestations de soins).
+
+**Dispositions transitoires** : **aucune**. Pas de montée en charge, pas de date de liquidation à
+partir de laquelle la règle s'applique, pas de report, pas de renvoi à un arrêté pour
+l'entrée en application de l'article 18 (le renvoi à un arrêté porte sur le **barème**
+d'actualisation seul).
+
+**Article 2 (final)** **[T]** : « Les ministres de l'économie et des finances et des affaires
+sociales sont chargés chacun en ce qui le concerne, de l'éxécution du présent décret qui sera publié
+au journal officiel de la république Tunisienne. » — **clause d'exécution, aucune date d'effet.**
+Le texte présuppose pourtant une date d'entrée en vigueur, qu'il nomme à l'article 3 (nouveau) sans
+la fixer.
+
+**Date d'effet — règle générale, calcul en clair** **[D]** : publication le **vendredi 21 septembre
+1990** (pied de page). Règle applicable avant 1993 : exécutoire « un jour franc après la publication
+au Journal Officiel » (art. 3 nouveau du décret du 27 janvier 1883, rédaction du décret du
+13 septembre 1956, JORT n° 74/1956, p. 1247 — référence donnée par la convention de l'auteur, non
+relue ici). Le jour de la publication ne compte pas ; le 22 septembre est le jour franc ; **le décret
+est exécutoire à compter du dimanche 23 septembre 1990.** Que ce jour soit un dimanche ne change rien au calcul : la règle compte un jour franc, non un jour ouvrable, et la convention retenue ne prévoit aucun report.
+
+**Édition arabe** **[T]** (lue à l'image, `/1990/1990A/Ja06090.pdf`, page 30 du fichier, 200
+`application/pdf` 2 462 826 octets ; pagination imprimée non relevée) : même structure, même liste
+d'articles. Art. 18 (جديد) : « تنبني الجراية على الأجور الخاضعة للمساهمة والتي قبضها المضمون أثناء
+**العشر أعوام الأخيرة** السابقة للسن الذي يفتح الحق في الجراية » ; limite « في حدود ست مرات قيمة
+الأجر الأدنى المهني المضمون قانونيا مرتبطا بمدة شغل سنوي تساوي 2400 ساعة » ; « ويعاد تقييم هذه
+الأجور بقرار من وزير الشؤون الاجتماعية ». Le « الفصل 2 » est la même clause d'exécution. **Les deux
+éditions concordent** : aucune clause propre à l'arabe.
+
+## 12.3 L'article 19 que le décret de 1990 a laissé en place
+
+Décret n° 74-499, **art. 19**, JORT n° 30/1974, **p. 917**, lu à l'image à 300 puis 500 dpi **[T]** :
+
+> « Pour le calcul du salaire mensuel moyen, sont pris en considération dans leur ordre
+> chronologique les **trente six ou soixante mois** écoulés à la date du 1er janvier de l'année au
+> cours de laquelle l'assuré remplit la condition d'âge pour l'ouverture du droit à pension ou à
+> allocation ou a cessé son activité professionnelle assujettie.
+> Le salaire mensuel moyen est égal au 1/[36] ou au 1/[60] du total des salaires visés à l'article
+> précédent, éventuellement augmentés du montant des salaires mensuels moyens ayant servi de base au
+> calcul des prestations allouées sur le fondement des périodes d'assimilation énumérées à l'article
+> 2 précédent. »
+
+Les **dénominateurs de la fraction sont illisibles** sur le scan, même à 500 dpi ; « trente six ou
+soixante mois », écrit en lettres au premier alinéa, est net. Les crochets signalent la lecture
+dérivée.
+
+**Rectificatif du décret n° 74-499** — JORT **n° 39 du 7 juin 1974, p. 1252**,
+`/1974/1974F/Jo03974.pdf`, page 12 du fichier, lu à l'image **[T]**. Il ne corrige que deux renvois :
+à l'**article 39** (p. 918), « la durée de stage minimum exigée à l'article **16** » se lit « à
+l'article **15** » ; à l'**article 62, alinéa b)** (p. 919), « du dernier alinéa de l'article **62** »
+se lit « de l'article **61** ». « (Le reste sans changement). » **Les articles 18 et 19 ne sont pas
+touchés** : le point 7 du § 8 est clos pour ce texte.
+
+**Conséquence** **[D]** : du 23 septembre 1990 au 30 juin 1994, la lettre du décret n° 74-499
+associe un **article 18 à dix ans** et un **article 19 à trente-six ou soixante mois** — deux
+règles qu'on ne peut pas exécuter ensemble à la lettre (dix années de salaires, divisées par 36 ou
+par 60).
+
+## 12.4 Décret n° 94-1429 du 30 juin 1994 — relecture intégrale
+
+JORT **n° 52 du 5 juillet 1994, pp. 1141-1142**, `/1994/1994F/Jo05294.pdf` (pages 25-26 du fichier ;
+couche texte à colonnes entremêlées, donc **relu à l'image**) **[T]**. Pieds de page : « N° 52 —
+*Journal Officiel de la République Tunisienne* — 5 Juillet 1994 — 1141 » et « 1142 — … — N° 52 ».
+
+**Intitulé** : « Décret n° 94-1429 du 30 juin 1994, portant amendement du décret n° 74-499 du
+27 avril 1974 relatif au régime de pensions de vieillesse d'invalidité et de survivants dans le
+secteur non agricole. »
+
+**Visas** **[T]** : « Sur proposition du ministre des affaires sociales » ; loi n° 60-30 (« notamment
+la loi n° 88-38 du 6 mai 1988 ») ; loi n° 60-33 ; **« Vu le décret n° 74-499 du 27 avril 1974
+relatif au régime de pensions de vieillesse, d'invalidité et de survivants dans le secteur non
+agricole tel que modifié par le décret n° 90-1455 du 10 septembre 1990 »** ; décret n° 76-981
+« tel que modifié par le décret n° 78-962 du 7 novembre 1978 » ; avis du ministre des finances ;
+avis du tribunal administratif.
+
+**Article premier** **[T]** : « Les dispositions des articles **5 (b), 9, 18 et 19** du décret susvisé
+n° 74-499 du 27 avril 1974 sont **abrogées et remplacées** par les dispositions suivantes : »
+- art. 5 (b) nouveau : quote-part de **6,25/20e** de la masse des cotisations ;
+- art. 9 nouveau : taux de **5,75 %** (2,5 % employeurs ; 3,25 % travailleurs, exigibles à 1,75 % au
+  1er juillet 1994, 2,25 % au 1er juillet 1995, 2,75 % au 1er juillet 1996, 3,25 % au 1er juillet
+  1997) ;
+- **art. 18 nouveau**, mot pour mot :
+
+> « La pension est basée sur les salaires soumis à cotisations que l'assuré a perçus au titre des
+> périodes définies ci-après précédant l'âge d'ouverture de droit à pension :
+> - les cinq dernières années à partir du 1er juillet 1994
+> - les sept dernières années à partir du 1er juillet 1995
+> - les dix dernières années à partir du 1er juillet 1996.
+>
+> Au cas où la période d'activité déclarée est inférieure aux périodes précitées, la moyenne est
+> calculée sur la base des salaires perçus au cours de cette période.
+> Lesdits salaires ne sont pris en compte pour une durée déterminée que dans la limite de 6 fois le
+> SMIG régime 48 heures rapporté à une durée d'occupation annuelle de 2400 heures.
+> Ils sont actualisés selon un barême fixé annuellement par arrêté du ministre des affaires
+> sociales. »
+
+- **art. 19 nouveau**, mot pour mot :
+
+> « Pour le calcul du salaire mensuel moyen, sont pris en considération dans leur ordre
+> chronologique, les soixante ou quatre vingt quatre ou cent vingt mois validiés au titre du régime
+> de pension, écoulés à la date du 1er janvier de l'année en cours de laquelle l'assuré remplit la
+> condition d'âge pour l'ouverture du droit à pension ou a cessé son activité professionnelle
+> assujettie.
+> Il n'est pas tenu compte pour le calcul du salaire moyen visé à l'alinéa précédent des périodes au
+> cours desquelles l'assuré n'a pas exercé d'activité assujettie au versement de cotisation en vertu
+> de la législation de sécurité sociale.
+> Sous réserve des dispositions de l'alinéa 2 de l'article 18 du présent décret, le salaire mensuel
+> moyen est égal au 1/60ème ou au 1/84ème ou au 1/120ème du total des salaires visés à l'article 18
+> précédent, éventuellement augmentés du montant des salaires mensuels moyens ayant servi de base au
+> calcul des prestations allouées sur le fondement des périodes d'assimilation énumérées à l'artricle
+> 2 précédent. »
+
+L'article 19 nouveau ne porte pas de dates : ses trois durées s'alignent **par construction** sur
+les trois paliers de l'article 18 **[D]**. Il introduit une règle absente de 1974 : les périodes sans
+activité assujettie sont neutralisées dans la moyenne.
+
+**Article 2** **[T]** : « Les dispositions de l'article 5 - b (nouveau) du décret susvisé n° 74-499 du
+27 avril 1974 prennent effet à compter du 1er janvier 1994. » — ne vise **que** l'art. 5 b).
+
+**Article 3 (final)** **[T]** : clause d'exécution (« Les ministres des finances et des affaires
+sociales sont chargés […] de l'exécution du présent décret qui sera publié au Journal Officiel »).
+
+**Dispositions transitoires** : les seules sont les **paliers énoncés** dans les articles 9 et 18
+nouveaux. **Rien sur les pensions liquidées entre 1990 et 1994**, rien sur la règle de 1990.
+
+**Remplace-t-il ou reporte-t-il l'article 18 de 1990 ?** **Il le remplace.** Trois éléments du
+texte : (1) le visa cite le décret n° 74-499 « tel que modifié par le décret n° 90-1455 », donc dans
+sa rédaction de 1990 ; (2) l'article premier dit « abrogées et remplacées », non « suspendues » ni
+« différées » ; (3) aucune disposition ne qualifie la règle de 1990 de non encore entrée en vigueur.
+Le décret ne dit pas **pourquoi** il repart de cinq ans.
+
+**Dates d'effet** :
+- **fenêtre du salaire de référence** : **1er juillet 1994, 1er juillet 1995, 1er juillet 1996,
+  énoncées** par l'art. 18 nouveau **[T]** ;
+- **art. 5 b)** : 1er janvier 1994, énoncée par l'art. 2 **[T]** ;
+- **pour le reste du décret, sans clause propre** **[D]** : règle de la loi n° 93-64, art. 2 — cinq
+  jours après le dépôt du JORT au siège du gouvernorat de Tunis. Date de dépôt non imprimée dans le
+  fascicule ; si le dépôt a eu lieu le 5 juillet 1994, date du fascicule, le décret est exécutoire
+  **au plus tôt le 10 juillet 1994**. Le premier palier (1er juillet 1994) est donc antérieur à la
+  date à laquelle le décret devient exécutoire : il est **rétroactif par ses propres termes**.
+
+**Sens de « à partir du 1er juillet 1994 »** **[T]/[D]** : l'arrêté du 17 novembre 1994 (§ 12.5)
+applique le barème « aux pensions pour lesquelles le droit est ouvert à compter du 1er juillet 1994 ».
+Lecture cohérente : les paliers visent la **date d'ouverture du droit**.
+
+## 12.5 Recherche des textes intermédiaires (1990-1994)
+
+**Élément positif, le plus fort** **[T]** : le visa du décret n° 94-1429 énumère la chaîne
+modificative du décret n° 74-499 et **s'arrête au décret n° 90-1455** ; le visa du décret n° 90-1455
+vise le décret n° 74-499 sans modificatif. Aucun texte ne s'intercale selon ses propres auteurs.
+
+**Corroboration par la base** **[M]** (`jort_cache.db`, `?immutable=1`, 11 septembre 2026) :
+- `titre like '%74-499%'`, sans filtre d'année (1974-2026) : 16 notices — 74-499, son rectificatif,
+  79-536, 81-188, 82-1030 et rectificatif, 88-1137, **90-1455**, **94-1429**, 96-326, 97-291, 97-555,
+  97-1927, 2001-779, 2003-1212, 2007-2148. **Rien entre le 21 septembre 1990 et le 5 juillet 1994
+  hormis ces deux décrets.**
+- FTS `"non agricole" OR "90-1455" OR actualisation OR "74-499" OR "60-33"`, `jort_annee` 1990-1996 :
+  90-1455, 93-357 (validation, travailleurs indépendants, sans rapport), 94-1429, puis les arrêtés
+  de barème à partir du 17 novembre 1994.
+- FTS `"74-499" OR ("non agricole" AND vieillesse) OR "salaire de reference" OR "salaire moyen"`,
+  1990-2026 : même chaîne ; aucun texte postérieur au décret n° 2007-2148.
+- `LIKE` non accentué, 1990-1996, sur `vieillesse`, `pension` + `non agricole`, `actualisation`,
+  `caisse nationale de securite sociale`, `60-30` : communiqués et avis de simplification des
+  formalités de la CNSS et de la CAVIS (1990-1991), décret n° 91-487 (commission médicale), loi
+  n° 90-70 (coordination), décret n° 94-1477 (abrogation du décret n° 76-981) — **aucun ne vise
+  l'article 18**. Titres seuls : le corps des communiqués de 1990-1991 n'a pas été lu.
+- `rectificatif` + `vieillesse`/`1455`, 1990-1994 : **aucun rectificatif** du décret n° 90-1455.
+
+**Barème d'actualisation** **[T]** : le premier arrêté identifié est l'**arrêté du ministre des
+affaires sociales du 17 novembre 1994**, JORT **n° 93 du 25 novembre 1994, p. 1898**,
+`/1994/1994F/Jo09394.pdf` (page 10 du fichier, lue à l'image). Visa : « le décret n° 74-499 du
+27 avril 1974 […] ensemble les textes qui l'ont modifié ou complété notamment le décret n° 94-1429 du
+30 juin 1994 et notamment son article 18 » — **aucune mention du décret n° 90-1455**. Tableau de
+coefficients 1961 (6,48469) à 1993 (1,00000). Art. 2 : « Ces dispositions s'appliquent aux pensions
+pour lesquelles le droit est ouvert à compter du 1er juillet 1994. » **Aucun arrêté de barème pris
+en application de l'article 18 dans sa rédaction de 1990 n'a été trouvé** (FTS `actualisation`,
+1990-1994).
+
+**Décret n° 97-291** (dernier décret de la chaîne dont la neutralité sur l'article 18 restait à
+établir) — JORT **n° 13 du 14 février 1997, pp. 203-204**, `/1997/1997F/Jo01397.pdf`, page 3 du
+fichier, lu à l'image **[T]**. Article premier : « Les articles **29, 38 et 53 alinéa 4** du décret
+n° 74-499 […] sont abrogés et remplacés » ; art. 2 : l'article **52** est abrogé ; art. 3 : clause
+d'exécution. **Ni l'article 18 ni l'article 19.** Le point 5 du § 8 est clos : 94-1429 modifie les
+articles 18 et 19, 96-326 et 97-291 n'y touchent pas. (Son visa cite « le décret n° **95**-326 du
+1er mars 1996 » : coquille pour 96-326.)
+
+Les autres modificatifs postérieurs ont été lus au § 2.0 (97-555 : art. 9 ; 97-1927 : art. 33 ;
+2001-779 : art. 53 ; 2003-1212 : art. 5 b) ; 2007-2148 : art. 15 bis, 15 ter, 17, 33, 42, 47) :
+**aucun ne touche les articles 18 ou 19**.
+
+## 12.6 La série
+
+| Du | Fenêtre | Diviseur (art. 19) | Limite de prise en compte | Texte | Date d'effet | Niv. |
+|---|---|---|---|---|---|---|
+| **1er janv. 1974** | 3 ou 5 dernières années, la plus avantageuse | 36 ou 60 mois | 6 × SMIG, 2 400 h/an, « pour une année déterminée » | 74-499, art. 18-19 (rectificatif sans objet) | énoncée, art. 64 | **[T]** |
+| **23 sept. 1990** | 10 dernières années ; moyenne sur la période d'activité si moins de 10 ans ; actualisation par barème d'arrêté | **inchangé : 36 ou 60 mois** | 6 × SMIG, 2 400 h/an | 90-1455, art. 1 (art. 18 nouveau) | non énoncée ; exécutoire un jour franc après publication (21 sept. 1990) | texte **[T]**, date **[D]** |
+| **1er juill. 1994** | 5 dernières années ; actualisation par barème annuel | 60 mois | 6 × SMIG régime 48 h, 2 400 h/an | 94-1429, art. 1 (art. 18-19 nouveaux) | énoncée, art. 18 nouveau | **[T]** |
+| **1er juill. 1995** | 7 dernières années | 84 mois | idem | idem | énoncée | **[T]** ; diviseur aligné **[D]** |
+| **1er juill. 1996** | 10 dernières années | 120 mois | idem | idem | énoncée | **[T]** ; diviseur aligné **[D]** |
+
+**Close à ce jour dans la limite du corpus** : aucun texte de `jort_cache.db` postérieur au décret
+n° 2007-2148 ne vise le décret n° 74-499.
+
+## 12.7 Ce qui manque pour aller plus loin
+
+- **La pratique de liquidation de la CNSS entre le 23 septembre 1990 et le 30 juin 1994** : les
+  textes publiés au JORT ne la renseignent pas. Sources à chercher : circulaires ou notes de
+  service de la CNSS (1990-1994), rapports annuels de la CNSS de ces années, travaux préparatoires
+  ou avis du Tribunal administratif sur le projet de décret n° 94-1429, doctrine ou jurisprudence
+  administrative sur des pensions liquidées dans cet intervalle. **TODO**.
+- **Le corps des communiqués et avis du Premier ministère de 1990-1991** sur la simplification des
+  formalités de la CNSS et de la CAVIS (JORT n° 70 et 71/1990, 79/1990, 2, 19, 27, 45/1991) : titres
+  seuls ; improbable qu'ils touchent au calcul, non vérifié.
+- **La date de dépôt du JORT n° 52/1994** au gouvernorat de Tunis : non imprimée ; la date exécutoire
+  du décret n° 94-1429 (hors dates énoncées) reste « au plus tôt le 10 juillet 1994 ».
+- **Les dénominateurs imprimés de l'article 19 de 1974** : illisibles ; restitués par le texte en
+  lettres du premier alinéa.
+- **L'édition arabe du décret n° 94-1429** n'a pas été relue.
+
+## 12.8 Corrections à reporter ailleurs dans ce dossier (non faites ici)
+
+- § 0 et § 6.3 : « 10 dernières années (1990) » → ajouter le remplacement de 1994 (5/7/10 ans au
+  1er juillet 1994, 1995, 1996).
+- § 2.0 : ligne 94-1429 — objet « art. 5 b), 9, 18 et 19 (nouveaux) », effet « art. 18 : paliers
+  énoncés 1er juill. 1994/1995/1996 ; art. 5 b) : 1er janv. 1994 (art. 2) » ; ligne 97-291 — « art. 29,
+  38, 53 al. 4 (nouveaux) ; art. 52 abrogé ; ni 18 ni 19 » ; ligne du rectificatif de 1974 — lu, art.
+  39 et 62 b) seulement.
+- § 2.1 : la limite de 6 × SMIG est reprise une **troisième** fois en 1994 (« SMIG régime 48 heures ») ;
+  la série n'est plus « non close » sur ce point ; le barème d'actualisation est identifié (arrêtés
+  annuels depuis le 17 novembre 1994).
+- § 2.3 : ajouter les trois paliers de 1994 et l'article 19 non modifié en 1990.
+- § 8 : points 5 et 6 clos ; point 7 clos pour le décret n° 74-499.
+
+## 12.9 Références
+
+**Clés existantes** : `decret74-499`, `decret90-1455`, `decret94-1429`, `decret97-291`,
+`arrete-1997-03-29-bareme-actualisation`. Notes de `decret90-1455` et `decret94-1429` mises à jour
+(FR et AR) le 11 septembre 2026.
+
+**Entrée à créer** (citée par le § 12.5, utile si le rédacteur mentionne l'origine du barème) :
+
+```json
+{"id":"arrete-1994-11-17-bareme-actualisation","type":"legislation","title":"Arrêté du ministre des affaires sociales du 17 novembre 1994, relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants","issued":{"date-parts":[[1994,11,17]]},"container-title":"Journal officiel de la République tunisienne","issue":"93","page":"1898","URL":"https://www.pist.tn/jort/1994/1994F/Jo09394.pdf","note":"citation-key: arrete-1994-11-17-bareme-actualisation\nJORT n° 93 du 25 novembre 1994, p. 1898. Premier barème pris en application de l'art. 18 (nouveau) du décret n° 74-499, issu du décret n° 94-1429 (visé). Coefficients 1961 (6,48469) à 1993 (1,00000). Art. 2 : s'applique aux pensions dont le droit est ouvert à compter du 1er juillet 1994. Lu à l'image."}
+```
+
+Vérification : `200 application/pdf 536 819` octets, identique au fichier local, 11 septembre 2026.
+
+## 12.10 Paragraphe prêt pour le rédacteur
+
+*Série à publier* (remplace les lignes 1990 et 1994-1996 de `tbl-rsna-reference`) :
+
+| Depuis | Fenêtre de référence | Moyenne | Texte |
+|---|---|---|---|
+| 1er janvier 1974 | trois ou cinq dernières années, la plus avantageuse pour l'assuré | total divisé par 36 ou 60 mois | décret n° 74-499, art. 18-19 |
+| 23 septembre 1990 | dix dernières années ; salaires actualisés selon un barème fixé par arrêté | article 19 non modifié : 36 ou 60 mois | décret n° 90-1455, art. 1 (art. 18 nouveau) |
+| 1er juillet 1994 | cinq dernières années ; salaires actualisés selon un barème annuel | 60 mois | décret n° 94-1429, art. 1 (art. 18-19 nouveaux) |
+| 1er juillet 1995 | sept dernières années | 84 mois | idem |
+| 1er juillet 1996 | dix dernières années | 120 mois | idem |
+
+La limite de prise en compte reste de six fois le SMIG rapporté à 2 400 heures par an sur toute la
+période ; le décret de 1994 précise qu'il s'agit du SMIG du régime de 48 heures. La date du
+23 septembre 1990 est celle à laquelle le décret n° 90-1455, qui n'énonce pas de date d'effet,
+devient exécutoire, un jour franc après sa publication au *Journal officiel* du 21 septembre 1990.
+
+*Articulation* : Le décret n° 90-1455 porte la fenêtre de référence à dix ans en réécrivant
+l'article 18, mais laisse inchangé l'article 19, qui continue de calculer la moyenne sur trente-six
+ou soixante mois ; le décret n° 94-1429, qui vise le décret de 1974 dans sa rédaction de 1990,
+abroge et remplace ensemble ces deux articles et substitue à la règle de 1990 une montée
+progressive, de cinq ans en 1994 à dix ans en 1996. Aucun texte publié entre ces deux décrets ne
+suspend ni ne reporte la règle de 1990, et aucun n'indique comment les pensions ont été calculées
+dans l'intervalle.
+
+*Pour l'encadré « Deux décrets, deux calendriers »* : il peut céder la place à cette phrase
+d'articulation ; le TODO « établir comment la règle de 1990 a été appliquée entre 1990 et 1994 »
+reste ouvert (§ 12.7).
+
+---
+
+# 13. Survivants et capital-décès : lectures pour le modèle
+
+> Section ajoutée le 12 septembre 2026. Trois textes ouverts à l'image : la loi n° 2007-43
+> (JORT n° 51 de 2007, pp. 2198-2199), le décret n° 74-572 (JORT n° 36 de 1974, pp. 1108-1109) et
+> le décret n° 93-308 (JORT n° 13 de 1993, pp. 246-247). Les trois fascicules ont été téléchargés
+> de pist.tn avec `curl -k` le 12 septembre 2026 : `200 application/pdf`, et des tailles
+> identiques à l'octet près aux fichiers du corpus local (3 614 425, 1 701 557 et 619 110 octets).
+
+## 13.0 Les quatre dates
+
+| Texte | Signature | Publication (éd. française) | Effet énoncé | URL | Niv. |
+|---|---|---|---|---|---|
+| **Décret n° 74-572**, relatif au capital-décès | 1974-05-22 | JORT **n° 36**, vendredi 24 mai 1974, **pp. 1108-1109** | **aucune clause** ; le texte s'achève sur « … sera publié au *Journal officiel* » | `/1974/1974F/Jo03674.pdf` | **[T]** |
+| **Décret n° 93-308**, relatif au régime du capital-décès | 1993-02-01 | JORT **n° 13**, mardi 16 février 1993, **pp. 246-247** | **art. 15 : « … qui entre en vigueur à compter du 1er juillet 1993 »** | `/1993/1993F/Jo01393.pdf` | **[T]** |
+| **Loi n° 2007-43** | 2007-06-25 | JORT **n° 51**, mardi 26 juin 2007 ; art. 1er, 2 et 30 (nouveau) **p. 2198**, art. 37, 46 et 47 (nouveaux) et art. 3 à 5 **p. 2199** | **aucune clause** | `/2007/2007F/Jo0512007.pdf` | **[T]** |
+
+**Dates exécutoires dérivées, pour les deux textes muets** **[D]** :
+
+- décret n° 74-572 : règle antérieure à 1993 — un jour franc après la publication (décret du
+  13 septembre 1956) —, soit le **26 mai 1974** ;
+- loi n° 2007-43 : règle de la **loi n° 93-64, art. 2** — cinq jours après le dépôt au siège du
+  gouvernorat. **La date de dépôt n'est pas attestée** ; en prenant la publication du 26 juin 2007
+  comme substitut, l'entrée en vigueur ne peut être antérieure au **1er juillet 2007**. Ce n'est pas
+  un détail décoratif : l'article 5 de la loi fait dépendre de cette date le sort des pensions
+  d'orphelin interrompues.
+
+**Correction à porter au § 1.0** : la ligne du décret n° 93-308 y porte « effet : non lue », niveau
+**[M]**. Le décret est désormais lu : art. 15, effet au **1er juillet 1993**, **[T]**.
+
+## 13.1 Loi n° 2007-43, article 46 (nouveau) — texte intégral, p. 2199 **[T]**
+
+> « **Article 46 (nouveau)**. - En cas de non attribution de la pension du conjoint pour n'importe
+> quel motif légal, cette pension est répartie à parts égales entre les orphelins **en sus de leurs
+> pensions**.
+>
+> Toutefois, en ce qui concerne la fille dont il est établi, à la date de décès de l'agent, qu'elle
+> ne dispose pas de ressources ou dont l'obligation alimentaire n'incombe pas à son époux, **le taux
+> de sa pension ne peut dépasser cinquante pour cent (50%) de la pension de retraite dont a
+> bénéficié l'agent ou aurait pu en bénéficier à la date de son décès**, »
+
+*(La phrase s'achève sur une virgule dans l'édition française.)*
+
+**Ce que 2007 change, et ce qu'il ne change pas.** Le premier alinéa n'est pas une nouveauté de
+2007 : l'article 46 de la loi n° 85-12, lu à l'image p. 363 **[T]**, dit déjà mot pour mot :
+
+> « **Art. 46**. — En cas de non attribution de la pension du conjoint pour n'importe quel motif
+> légal, cette pension est répartie à parts égales entre les orphelins **en sus de leurs
+> pensions**. »
+
+L'apport de la loi n° 2007-43 à l'article 46 se réduit donc au **second alinéa**, le plafond
+individuel de la fille sans ressources. Le § 1.4 de ce dossier, qui présente les deux règles comme
+issues ensemble de 2007, doit être lu avec cette nuance.
+
+**Réponse à la question du plafond.** L'article 46 **ne pose aucun plafond au total des pensions
+d'orphelins**. La répartition se fait « **en sus de leurs pensions** », c'est-à-dire qu'elle
+s'ajoute à la pension d'orphelin de 10 % de l'article 45 sans l'absorber. Les deux seuls plafonds
+en jeu sont ailleurs : le plafond **individuel** de 50 % du second alinéa, et le plafond **global**
+de l'article 45.
+
+**Le plafond de 50 %, exactement.** Il porte sur *la pension de la fille elle-même*, exprimée en
+part de *la pension de l'agent* — et non sur le total des pensions d'orphelins, ni sur la part du
+conjoint redistribuée. Conditions, appréciées **à la date de décès de l'agent** : ne pas disposer de
+ressources **ou** que l'obligation alimentaire n'incombe pas à son époux.
+
+## 13.2 Loi n° 2007-43, article 47 (nouveau) — texte intégral, p. 2199 **[T]**
+
+> « **Article 47 (nouveau)**. - Les dispositions des articles 45 et 46 de la présente loi
+> s'appliquent :
+>
+> - aux orphelins à la date de décès de l'agent atteints d'une maladie incurable ou d'une invalidité
+> permanente les rendant incapables d'exercer une activité rémunérée, et ce, sans tenir compte de la
+> condition de vingt et un (21) ans.
+>
+> La maladie ou l'invalidité sus citées sont appréciées par la commission de réforme visée à
+> l'article 29 de la loi n° 59-18 du 5 février 1959.
+>
+> - aux orphelins justifiant la poursuite de leurs études de l'enseignement supérieur jusqu'à l'âge
+> de *vint cinq* (25) ans, à condition qu'ils ne soient pas bénéficiaires d'une bourse
+> universitaire.
+>
+> - à la fille, sans tenir compte de la condition d'âge de vingt et un (21) ans, qui à la date de
+> décès de l'agent ne dispose de ressources ou dont l'obligation alimentaire n'incombe à son époux ;
+> toutefois, le paiement de la pension qui lui est attribuée est définitivement suspendu au cas où
+> l'une de ces deux conditions fait défaut. »
+
+**Deux défauts de l'édition française, relevés à l'image et non corrigés ici** :
+
+1. « jusqu'à l'âge de **vint cinq** (25) ans » — coquille manifeste pour « vingt-cinq » ;
+2. au troisième tiret, la négation « **pas** » est tombée deux fois : « ne dispose de ressources ou
+   dont l'obligation alimentaire n'incombe à son époux ». La lettre inverse le sens voulu. La
+   rédaction correcte est établie **par le texte lui-même**, sans recours à l'édition arabe :
+   l'article 46 (nouveau) alinéa 2, à la colonne voisine de la même page, écrit « ne dispose **pas**
+   de ressources ou dont l'obligation alimentaire **n'incombe pas** à son époux », et l'article 3 de
+   la même loi, p. 2199, reprend la même formule pour le secteur privé.
+
+**Disposition transitoire à ne pas perdre** — art. 5 de la loi, p. 2199 **[T]** : la pension
+temporaire d'orphelin visée notamment par l'article 47 de la loi n° 85-12 « **ne peut être
+reprise** » lorsque son paiement a été interrompu à l'égard de la fille **avant l'entrée en vigueur
+de la présente loi** pour défaut de l'une des deux conditions. L'ouverture de 2007 ne rétroagit
+donc pas sur les pensions déjà éteintes.
+
+## 13.3 L'article 45 n'a pas été modifié — et son articulation avec l'article 46
+
+L'article 2 de la loi n° 2007-43 abroge et remplace **les articles 30, 37, 46 et 47** de la loi
+n° 85-12, et eux seuls **[T]**, p. 2198. **L'article 45 est donc resté dans sa rédaction de 1985**,
+lue à l'image p. 363 **[T]** :
+
+> « **Art. 45**. — L'orphelin bénéficie jusqu'à l'âge de vingt et un (21) an[s] d'une pension égale
+> à **dix pour cent (10 %)** de la pension de retraite dont l'agent avait bénéficié ou dont il
+> aurait pu bénéficier à la date de son décès.
+>
+> **Le total des pensions d'orphelins et la pension du conjoint survivant ne doit pas dépasser le
+> montant de la pension de l'agent.** Dans le cas où ce total dépasse le montant de la pension de
+> l'agent, il est procédé à la réduction de la pension du conjoint survivant conformément aux
+> dispositions de l'article 43 de la présente loi.
+>
+> Si le nombre des orphelins est égal ou supérieur à **cinq (5)**, le conjoint survivant bénéficie
+> de **50 %** de la pension que l'agent avait bénéficié ou dont il aurait pu bénéficier à la date de
+> son décès. Les cinquante pour cent (50 %) restants sont répartis à parts égales entre les
+> orphelins. »
+
+Et l'article 48, immédiatement après **[T]**, p. 363, pose un **plancher** et non un plafond : « Les
+pensions des orphelins ne peuvent, au total, être inférieures au montant des indemnités familiales
+dont aurait pu bénéficier l'agent. »
+
+**Comment les deux règles s'articulent.** Le plafond de l'article 45 est global — total des pensions
+d'orphelins **plus** pension du conjoint ≤ pension de l'agent — et son unique remède en cas de
+dépassement est la **réduction de la pension du conjoint**. Or, dans l'hypothèse de l'article 46, il
+n'y a précisément **pas** de pension de conjoint à réduire : le remède est sans objet. Il n'a
+cependant jamais à jouer, parce que ce qui est redistribué est exactement la part qui aurait été
+celle du conjoint. En prenant le montant du conjoint tel que l'article 43 le calcule (75 %, minoré
+de 5 % au titre du 3e enfant et de 10 % par enfant suivant, sans descendre au-dessous de 50 %), le
+total redistribué vaut **[D]** :
+
+L'article 43, relu à l'image p. 362 **[T]**, rattache expressément ces minorations aux orphelins qui perçoivent la pension de l'article 45 : « **pendant la période de payement de la pension temporaire d'orphelin prévue à l'article 45 de la présente loi**, la pension du conjoint survivant est réduite de : — 5 % au titre du 3ème enfant ; — 10 % au titre de chacun des enfants suivants, sans que le montant de la pension du conjoint survivant ne soit inférieur à cinquante pour cent (50 %) de la pension dont l'agent avait bénéficié ou dont il aurait pu bénéficier à la date de son décès. » Le compte des minorations suit donc le nombre d'orphelins pensionnés, ce qui est bien l'entrée du tableau ci-dessous.
+
+| Orphelins | Pensions d'orphelins (art. 45) | Part du conjoint redistribuée (art. 46) | Total |
+|---:|---:|---:|---:|
+| 1 | 10 % | 75 % | **85 %** |
+| 2 | 20 % | 75 % | **95 %** |
+| 3 | 30 % | 70 % | **100 %** |
+| 4 | 40 % | 60 % | **100 %** |
+| 5 et plus | 50 % (art. 45 al. 3) | 50 % | **100 %** |
+
+Le plafond de l'article 45 est donc **saturé mais jamais franchi**. Une seconde lecture serait
+concevable — redistribuer 75 % sans les minorations de l'article 43, puisque la pension du conjoint
+n'est pas attribuée —, mais elle conduirait dès quatre orphelins à 115 % de la pension de l'agent,
+c'est-à-dire à un dépassement du plafond de l'article 45 auquel ce même article n'offre aucun
+remède applicable. C'est un argument de cohérence, non une disposition écrite : aucun texte lu ne
+tranche explicitement.
+
+## 13.4 Décret n° 74-572 du 22 mai 1974, relatif au capital-décès — lu, pp. 1108-1109 **[T]**
+
+Le décret est pris au **ministère des Finances** et vise la loi n° 59-19 du 5 février 1959 (Caisse
+nationale des retraites), la loi n° 68-12 du 3 juin 1968, la loi n° 72-2 du 15 février 1972 (réforme
+du régime de prévoyance sociale), le décret du 12 avril 1951 et les arrêtés des 25 août 1951 et
+5 juin 1962.
+
+| Article | Contenu |
+|---|---|
+| **Art. 1er** | Champ, par six catégories d'ayants droit : 1° fonctionnaires et employés, ouvriers titulaires et temporaires affiliés à la CNR ; 2° personnels militaires titulaires du régime de la loi n° 59-18, décédés en activité **autrement que par faits de guerre** ; 3° a) agents contractuels des administrations, collectivités et EPA à emploi rémunéré à traitement fixe, b) agents contractuels des EPIC dont les personnels statutaires sont affiliés à la CNR ; 4° membres du gouvernement, jusqu'à cessation de paiement de leurs émoluments ; 5° membres de l'Assemblée nationale, jusqu'à cessation de l'indemnité parlementaire ; 6° **retraités** de l'État, des établissements publics et des collectivités titulaires d'une pension servie par la CNR |
+| **Art. 2** | Base : **dernière rémunération annuelle** servant de base à la liquidation de la pension (§ 1 et 2) ; rémunération annuelle effectivement perçue pour les agents en activité à l'étranger ; dernière rémunération annuelle pour les contractuels du § 3 ; émoluments ou indemnité parlementaire pour les § 4 et 5 |
+| **Art. 3** | Majoration de **1/12 par année de service ou d'activité**, plafonnée à **18 mois** de rémunération (fraction supérieure à 6 mois arrondie à l'année, inférieure négligée) ; majoration supplémentaire de **10 % par enfant** ; capital **doublé** en cas de décès accidentel dans l'exercice des fonctions ou par accident de la circulation — disposition **non applicable aux personnels en activité à l'étranger** |
+| **Art. 4** | Retraités du § 6 : capital égal à **50 %** de la rémunération annuelle servant de base à la liquidation, majorée selon l'art. 3 ; taux réduit à **40 %** après 70 ans révolus, **30 %** après 75 ans, **20 %** après 80 ans, **10 %** après 85 ans ; **plancher de 100 dinars** |
+| **Art. 5** | Dévolution : **un tiers au conjoint non divorcé**, **deux tiers aux enfants** au sens de l'art. 5 du décret du 12 avril 1951 ; pluralité de conjoints non divorcés → partage par parts égales ; à défaut d'enfants, totalité au conjoint ; à défaut de conjoint, totalité aux enfants ; à défaut des deux, aux **père et mère**, à la double condition d'avoir été à charge et d'avoir **au moins 60 ans** sans être titulaires d'une pension de retraite — limite ramenée à **55 ans pour la mère** veuve ou divorcée, et écartée pour les ascendants infirmes ou gravement malades |
+| **Art. 6** | Maintien du bénéfice dans quatre positions : maintien en activité après l'âge de la retraite (décret n° 59-78 du 17 mars 1959), disponibilité pour maladie ou congé de longue durée, sous les drapeaux (sauf décès en service ouvrant droit à pension militaire), suspension par mesure disciplinaire |
+| **Art. 7** | Cotisation : **1 %** des émoluments soumis à retenue pour pension (§ 1 et 2) ; **3 %** du traitement soumis à retenue pour les agents en activité à l'étranger ; **1 %** assis sur les **trois quarts** des rémunérations pour les contractuels du § 3, comme pour les émoluments et l'indemnité parlementaire des § 4 et 5 ; **0,50 %** du montant de la pension en principal pour les retraités |
+| **Art. 8** | « Sont abrogées toutes dispositions antérieures contraires au présent décret et **notamment les dispositions de l'arrêté du 17 juillet 1971** » |
+| **Art. 9** | Exécution par le ministre des Finances ; publication au *Journal officiel* — **aucune date d'effet** |
+
+**Ce qu'il advient de lui** : il est **expressément abrogé** par l'article 14 du décret n° 93-308
+(§ 13.5).
+
+## 13.5 Décret n° 93-308 du 1er février 1993 — l'article final et la date du 1er juillet 1993 **[T]**
+
+Le décret est pris **sur proposition du ministre des affaires sociales** et vise la loi n° 85-12
+telle que modifiée par la loi n° 88-71, **et le décret n° 74-572 du 22 mai 1974 relatif au
+capital-décès**. Ses deux derniers articles, lus à l'image p. 247 :
+
+> « **Art. 14**. - Sont abrogées toutes dispositions antérieures contraires au présent décret et
+> **notamment le décret n° 74-572 du 22 mai 1974**.
+>
+> **Art. 15**. - Le Premier ministre, le ministre d'État, ministre de l'intérieur, les ministres et
+> les secrétaires d'État sont chargés, chacun en ce qui le concerne, de l'exécution du présent
+> décret **qui entre en vigueur à compter du 1er juillet 1993**. »
+
+**Réponse à la question posée** : oui. La date du **1er juillet 1993**, que le *Manuel de
+liquidation* de la CNRPS (2013) donne comme frontière entre les deux régimes, **figure bien dans un
+texte** — l'article 15 du décret lui-même. La formule du manuel (« affiliés décédés avant le
+1er juillet 1993 ») est une lecture fidèle de la combinaison des articles 14 et 15, et non une
+source indépendante : le décret dit qu'il entre en vigueur à cette date et qu'il abroge celui de
+1974, non qu'il faut se placer à la date du décès. Ce dernier pas est un raisonnement de droit
+commun — le fait générateur du capital-décès est le décès — que le manuel explicite **[D]**.
+
+**Deux articles transitoires que le modèle ne peut pas ignorer** **[T]**, p. 247 :
+
+> « **Art. 12**. - À titre exceptionnel, les agents visés aux paragraphes 1, 2 et 3 de l'article
+> premier ci-dessus et recrutés avant l'entrée en vigueur du présent décret, peuvent continuer à
+> cotiser au titre du capital-décès **sur la base du traitement de base** à condition de formuler
+> une demande écrite trois mois avant l'entrée en vigueur du présent décret. La liquidation du
+> capital-décès au profit des ayants droit s'effectue dans ce cas sur la base du traitement de
+> base. »
+>
+> « **Art. 13**. - Les agents ayant demandé la cotisation au titre du capital-décès sur le
+> traitement de base, peuvent demander la cotisation sur la base de tous les éléments de la
+> rémunération soumise à retenue pour pension à condition de payer toutes les cotisations au titre
+> du capital-décès pour les périodes de travail postérieures à la date d'entrée en vigueur du
+> présent décret. […] Dans ce cas il est attribué aux ayants droit un capital-décès conformément aux
+> dispositions de l'article 5 du présent décret. »
+
+Pour le reste — champ (art. 1er), cotisation de 1 % et 0,50 % (art. 2), assiette et majorations
+(art. 5), dévolution par tiers (art. 7) —, la note de la clé `decret93-308` était déjà exacte et est
+confirmée par la lecture.
+
+**Continuités et ruptures entre les deux décrets** **[T]** :
+
+| | 74-572 | 93-308 |
+|---|---|---|
+| Autorité | ministre des Finances | ministre des affaires sociales |
+| Assiette | dernière rémunération annuelle de liquidation | rémunération annuelle servant de base à la liquidation, avec l'option « traitement de base » des art. 12-13 |
+| Majorations | 1/12 par année, plafond 18 mois ; +10 % par enfant ; doublement en cas de décès accidentel, **dont sont exclus les personnels en activité à l'étranger** | mêmes 1/12, plafond, +10 % et doublement ; **l'exclusion des personnels à l'étranger n'est pas reprise** |
+| Retraités | 50 %, réduit à 40/30/20/10 % selon l'âge ; plancher **100 dinars** | 50 %, mêmes réductions ; plancher **SMIG annuel** |
+| Cotisation | 1 % ; 3 % à l'étranger ; 0,50 % sur les pensions | 1 % ; 0,50 % sur le produit brut de la pension |
+| Dévolution | 1/3 conjoint, 2/3 enfants | **identique** |
+
+## 13.6 Ce que ces lectures impliquent pour la correction
+
+**Pour les pensions de survivants.** Quand la pension du conjoint n'est pas attribuée, sa part se
+partage à parts égales entre les orphelins et **s'ajoute** à la pension de 10 % de chacun : le texte
+ne pose aucun plafond au total des pensions d'orphelins. Le seul plafond individuel est celui de la
+fille sans ressources, qui ne peut pas recevoir plus de la moitié de la pension de l'agent. Le
+plafond global — la somme versée aux survivants ne dépasse pas la pension de l'agent — n'a pas
+changé depuis 1985 et continue de s'appliquer, mais il se trouve déjà respecté par construction :
+la part redistribuée est celle du conjoint, pas une part supplémentaire. Un modèle qui ajouterait
+un plafonnement au total des pensions d'orphelins introduirait une règle que la loi ne contient
+pas ; un modèle qui oublierait le plafond de moitié applicable à la fille sans ressources
+surestimerait sa pension dans les familles peu nombreuses. Enfin, la règle de partage n'est pas une
+nouveauté de 2007 : elle existe depuis 1985, et seul le plafond de moitié doit être daté de 2007.
+
+**Pour le capital-décès.** Deux régimes se succèdent sans recouvrement : celui de 1974 jusqu'au
+30 juin 1993, celui de 1993 à partir du 1er juillet. La bascule se fait sur la **date du décès**,
+puisque c'est le décès qui ouvre le droit, et la date de bascule est écrite dans le décret de 1993
+lui-même. Les deux régimes calculent le capital de la même façon — une rémunération annuelle
+majorée d'un douzième par année de service, plafonnée à dix-huit mois, augmentée de dix pour cent
+par enfant et doublée en cas de décès accidentel — et le partagent de la même façon, un tiers au
+conjoint et deux tiers aux enfants. Ce qui change est le plancher servi aux ayants droit d'un
+retraité : cent dinars jusqu'en 1993, le salaire minimum annuel ensuite. Reste un point que le
+modèle traite rarement : les agents recrutés avant juillet 1993 ont pu opter pour continuer à
+cotiser sur le seul traitement de base, auquel cas leur capital-décès est liquidé sur cette base
+plus étroite.
+
+## 13.7 Ce qui n'a pas pu être établi
+
+- **Le sort de la fraction écrêtée par le plafond de 50 %.** Quand la fille sans ressources se voit
+  appliquer le plafond, aucun texte lu ne dit si la part qu'elle ne reçoit pas s'éteint ou se
+  redistribue entre les autres orphelins. TODO, à chercher dans une circulaire de la CNRPS.
+- **La date de dépôt de la loi n° 2007-43**, seule base d'une date d'entrée en vigueur certaine au
+  sens de la loi n° 93-64. Non attestée.
+- **Le montant redistribué de l'article 46** : minorations de l'article 43 appliquées ou non. La
+  cohérence avec le plafond de l'article 45 tranche en faveur de l'application, mais aucun texte ne
+  le dit.
+- **L'arrêté du 17 juillet 1971**, abrogé par l'art. 8 du décret n° 74-572, n'a pas été recherché.
+- Les **éditions arabes** des trois textes n'ont pas été ouvertes ; les deux défauts relevés dans
+  l'édition française de la loi n° 2007-43 (§ 13.2) ont été résolus sur le texte français lui-même.

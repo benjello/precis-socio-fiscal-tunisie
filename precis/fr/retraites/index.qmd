@@ -1,12 +1,146 @@
-# Le système de retraite tunisien
+# Les retraites en Tunisie
 
-## Présentation générale
+Ce livre traite de la **pension** : qui y a droit, à quel âge et après quelle durée, comment elle se calcule, quels planchers la protègent, ce qu'elle devient au décès de son titulaire et comment elle évolue une fois liquidée. Il prend les régimes du côté du droit qu'ils ouvrent. Le livre « Cotisations sociales » les prend du côté du prélèvement qui les finance, le livre « Prestations sociales » du côté des autres risques qu'ils couvrent ; les mêmes textes servent ainsi trois livres pour trois objets distincts.
 
-Il existe deux caisses nationales gérant les régimes dispensant une retraite à leurs affiliés.
+::: {.callout-note title="Trois conventions de lecture, retenues dans tout ce qui suit"}
+**1. L'ossature est le partage entre secteur public et secteur privé.** Il commande la caisse compétente, le texte applicable et la logique même de la pension : liquidée sur la dernière rémunération et réajustée sur la rémunération des actifs dans le secteur public (@sec-secteur-public), calculée sur un salaire de référence et revalorisée par référence au salaire minimum dans le secteur privé (@sec-secteur-prive). Les deux chapitres suivent la même chaîne de maillons, exposée plus bas (@sec-chaine-commune).
 
-La Caisse nationale de retraite et de prévoyance sociale (CNRPS) gère les régimes de la fonction publique civile et militaire, des régimes spéciaux des députés, des gouverneurs et celui des membres du gouvernement.
+**2. Chaque texte est daté de trois façons quand les sources le permettent** : sa signature, sa publication au *Journal officiel* et sa date d'effet. Lorsque l'article final d'un texte n'énonce pas de date d'effet, le livre le dit et ne la déduit pas de la publication. Une convention est retenue pour le texte central du secteur public : la loi n° 85-12 du 5 mars 1985, publiée le 12 mars, entre en vigueur « à l'expiration d'un délai de six mois à compter de la date de sa publication » [@loi85-12, art. 75], soit le **12 septembre 1985**, date que le livre retient pour ses dispositions.
 
-<!-- Elle gère aussi le régime du capital décès et le régime subventionné entièrement financé par l'état ??? quesaco -->
+**3. La loi et la pratique de la caisse sont distinguées.** La Caisse nationale de retraite et de prévoyance sociale a établi un *Manuel de liquidation des pensions et accessoires*, document administratif interne daté du 19 décembre 2013, antérieur à la loi n° 2019-37 [@cnrps-manuel-liquidation-2013]. Ce document n'est pas une norme : ce qui en est tiré est présenté comme la pratique de la caisse à cette date, jamais comme la règle légale, et lorsque la loi et le manuel divergent, les deux versions sont exposées en regard.
+:::
 
-La Caisse nationale de sécurité sociale (CNSS) gère les régimes assurant une etraite aux travailleurs du secteur privé.
-   
+## Présentation générale {#sec-presentation-generale}
+
+### La pension, une formule fixée par le texte du régime
+
+Dans les régimes dont ce livre expose les règles de calcul, la pension est déterminée par une **formule** que fixe le texte du régime : un [taux de liquidation](#g-taux-de-liquidation), qui dépend de la durée de services ou de cotisation, appliqué à une rémunération ou à un [salaire de référence](#g-salaire-moyen-reference). Elle est servie par une caisse que financent les [cotisations](#g-cotisations-sociales) prélevées sur les rémunérations des actifs, et, pour les régimes spéciaux du secteur public, une contribution de l'État, que le livre « Cotisations sociales » décrit. C'est cette architecture — une pension définie par une formule légale et financée par les cotisations des actifs — que l'on désigne comme un régime par répartition à prestations définies.
+
+La loi n° 2019-37 du 30 avril 2019 insère toutefois dans la loi n° 85-12 des articles 71 quinquies et 71 sexies relatifs à des comptes individuels [@loi2019-37]. Leur contenu n'est pas exposé dans ce livre.
+
+<!-- TODO (documentaliste) : lire les articles 71 quinquies et 71 sexies de la loi n° 85-12,
+insérés par la loi n° 2019-37 (JORT n° 35 de 2019, pp. 1312-1315), et établir la nature de ces
+« comptes individuels » : simple relevé de droits ou mécanisme de financement. La phrase de
+présentation sur la répartition devra être revue à la lumière de cette lecture. -->
+
+### Deux caisses
+
+**La [Caisse nationale de retraite et de prévoyance sociale](#g-cnrps) (CNRPS)** sert les pensions du secteur public. La loi n° 59-18 du 5 février 1959, qui fixe le régime des [pensions civiles et militaires](#g-pensions-civiles-militaires), dispose en son article premier que la Société de prévoyance des fonctionnaires et employés tunisiens « prend l'appellation de Caisse nationale de retraites » [@loi59-18, art. 1] ; la loi n° 59-19 du même jour en fait un établissement public doté de la personnalité civile et de l'autonomie financière [@loi59-19, art. 1]. La CNRPS procède de la loi de finances pour la gestion 1976, qui la forme à partir de cette caisse et de la Caisse de prévoyance sociale [@loi75-83] ; le livre « Cotisations sociales » retrace cette filiation.
+
+**La [Caisse nationale de sécurité sociale](#g-cnss) (CNSS)** sert les pensions du secteur privé. Elle est instituée par la loi n° 60-30 du 14 décembre 1960 [@loi60-30] ; la loi n° 60-33 du même jour porte, selon son intitulé, institution d'« un régime de pension d'invalidité, de vieillesse et de survie » dans le secteur non agricole [@loi60-33]. Pour certains régimes, la gestion des pensions passe par la Caisse d'assurance vieillesse, d'invalidité et de survivants (CAVIS) : le régime de pensions des Tunisiens à l'étranger lui est délégué [@decret89-107, art. 2], et les employeurs adhèrent auprès d'elle au régime complémentaire [@arrete-1978-11-18-retraite-complementaire, règlement, art. 3-4].
+
+<!-- TODO (documentaliste) : la loi n° 60-33 n'a pas été lue (métadonnées seules) ; son contenu
+et sa date d'effet restent à établir. L'article de la loi n° 75-83 qui institue la CNRPS n'a pas
+été lu (la note bibliographique de la clé l'indique) : à lire avant d'en citer la lettre. -->
+
+### La carte des régimes
+
+Le livre distingue quatre régimes de pension dans le secteur public — le régime des pensions civiles et militaires et trois régimes spéciaux — et huit dans le secteur privé, dont un régime complémentaire facultatif.
+
+| Secteur | Régime | Texte des pensions | Date d'effet, ou à défaut signature | Chapitre |
+|---|---|---|---|---|
+| Public | [Pensions civiles et militaires](#g-pensions-civiles-militaires) | loi n° 59-18, puis loi n° 85-12 | 1^er^ avril 1959 (art. 52) ; 12 septembre 1985 (art. 75) | @sec-secteur-public |
+| Public | Membres du gouvernement | loi n° 83-31 | signée le 17 mars 1983 ; date d'effet non connue | @sec-secteur-public |
+| Public | Députés | loi n° 85-16 | signée le 8 mars 1985 | @sec-secteur-public |
+| Public | Gouverneurs | loi n° 88-16 | signée le 17 mars 1988 | @sec-secteur-public |
+| Privé | [Salariés non agricoles](#g-rsna) | décret n° 74-499 | 1^er^ janvier 1974 (art. 64) | @sec-rsna |
+| Privé | [Salariés agricoles](#g-rsa) | loi n° 81-6, titres I et II | 1^er^ janvier 1981 (art. 88) | @sec-agricoles |
+| Privé | [Régime agricole amélioré](#g-rsaa) | loi n° 81-6, titre III, issu de la loi n° 89-73 | 1^er^ octobre 1989 (art. 4) | @sec-agricoles |
+| Privé | Régime complémentaire | arrêté du 18 novembre 1978 | 1^er^ janvier 1974 (art. 2) | @sec-regime-complementaire |
+| Privé | [Tunisiens à l'étranger](#g-rtte) | décret n° 89-107 | signé le 10 janvier 1989 | @sec-regimes-particuliers |
+| Privé | [Travailleurs non salariés](#g-rtns) | décret n° 95-1166 | signé le 3 juillet 1995 | @sec-regimes-particuliers |
+| Privé | [Artistes, créateurs et intellectuels](#g-regime-artistes) | loi n° 2002-104 | signée le 30 décembre 2002 ; aucune clause d'entrée en vigueur | @sec-regimes-particuliers |
+| Privé | [Travailleurs à faibles revenus](#g-regime-bas-revenus) | loi n° 2002-32 | signée le 12 mars 2002 ; date d'effet non connue | @sec-regimes-particuliers |
+
+: Les régimes de pension, leur texte et le chapitre qui les traite {#tbl-carte-regimes}
+
+Sources : @loi59-18 ; @loi85-12 ; @loi83-31 ; @loi85-16 ; @loi88-16 ; @decret74-499 ; @loi81-6 ; @loi89-73 ; @arrete-1978-11-18-retraite-complementaire ; @decret89-107 ; @decret95-1166 ; @loi2002-104 ; @loi2002-32.
+
+Les régimes du secteur public relèvent de la CNRPS, ceux du secteur privé de la CNSS. Le degré de connaissance de ces régimes n'est pas le même : les règles de pension du régime des pensions civiles et militaires, des trois régimes spéciaux, des deux régimes salariés du privé et du régime des travailleurs à faibles revenus sont établies sur texte ; celles des travailleurs non salariés, des Tunisiens à l'étranger, des artistes et du régime complémentaire ne le sont qu'en partie, ce que le chapitre du secteur privé signale régime par régime.
+
+Le livre « Cotisations sociales » décrit en outre un régime des étudiants, par sa cotisation forfaitaire ; les textes réunis pour ce livre ne permettent pas de dire s'il ouvre des droits à pension, et il n'est pas traité ici.
+
+<!-- TODO (documentaliste) : régime des étudiants et des stagiaires. La version antérieure du
+chapitre du secteur privé lui consacrait un titre (« Le régime des étudiants et des stagiaires »)
+avec la question « Dispense-t-il une retraite ? ». Lire la loi n° 65-17 du 28 juin 1965 et ses
+modifications (loi n° 88-40 du 6 mai 1988) pour établir si ce régime comporte une branche de
+pensions et s'il vise aussi les stagiaires ; en l'état, seuls les décrets n° 92-631 et 2003-1544
+(cotisation) sont lus. -->
+
+### La chaîne commune à tous les régimes {#sec-chaine-commune}
+
+Les deux chapitres lisent chaque régime selon la même chaîne de six maillons. C'est la variation de ces maillons d'un régime à l'autre qui fait l'essentiel du droit des retraites.
+
+1. **L'ouverture du droit.** Elle réunit une condition d'âge et une condition de durée — durée de services dans le secteur public, [stage](#g-stage-cotisation) de cotisation dans le secteur privé, où s'y ajoute la cessation de l'activité assujettie. Des **départs anticipés** permettent d'acquérir le droit avant l'âge légal ; ils s'accompagnent souvent d'une [jouissance différée](#g-jouissance-differee), la pension n'étant servie qu'à un âge fixé.
+2. **Le calcul.** La pension est le produit d'un taux de liquidation et d'une assiette. Le taux s'acquiert par [annuités](#g-annuite-liquidable) ou par trimestres, parfois augmentés de [bonifications](#g-bonification), dans la limite d'un **plafond**. L'assiette est, dans le secteur public, la dernière rémunération ou celle de la fonction la plus élevée ; dans le secteur privé, un salaire de référence calculé sur plusieurs années, borné dans le régime non agricole et le régime agricole amélioré par une [limite de calcul des prestations](#g-limite-calcul-prestations).
+3. **Les planchers.** Une [pension minimale garantie](#g-pension-minimale-garantie), exprimée en fraction du [salaire minimum](#g-smig), protège les petites pensions dans le secteur public, le régime non agricole et le régime agricole amélioré ; aucune n'est établie pour le régime des salariés agricoles. Pour les carrières trop courtes, une [allocation de vieillesse](#g-allocation-de-vieillesse), une [pension proportionnelle](#g-pension-proportionnelle) ou le remboursement des contributions prend le relais.
+4. **Les droits dérivés.** Au décès du titulaire, une [pension de réversion](#g-pension-de-reversion) est servie au conjoint survivant et une [pension temporaire d'orphelin](#g-pension-temporaire-orphelin) aux enfants, dans la limite d'un plafond de cumul.
+5. **L'invalidité.** Une incapacité de travail ouvre des droits avant l'âge de la retraite, selon des règles propres : dans le secteur public, une rente viagère d'invalidité s'ajoute à la pension ; dans le secteur privé, la pension d'invalidité est convertie en pension de vieillesse à l'âge requis.
+6. **La revalorisation.** La pension liquidée évolue ensuite selon deux références différentes : la [péréquation](#g-perequation), qui la réajuste sur la rémunération des actifs du même grade dans le secteur public, et la [revalorisation](#g-revalorisation-pensions) par référence au SMIG ou au SMAG dans le secteur privé.
+
+Le chapitre du secteur privé se clôt sur une comparaison des deux secteurs, maillon par maillon (@sec-vue-ensemble).
+
+Deux mécanismes relient enfin les régimes entre eux. La [validation des services](#g-validation-des-services) permet de faire compter des périodes non cotisées ; le chapitre du secteur public expose les deux systèmes qui se sont succédé, celui de la loi n° 85-12 et le système unifié de la loi n° 95-105 du 14 décembre 1995 [@loi95-105]. La [coordination des régimes](#g-coordination-des-regimes), qui règle les droits de l'assuré ayant relevé de plusieurs régimes, fait l'objet de la loi n° 88-84 du 16 juillet 1988 [@loi88-84], puis de la loi n° 2003-8 du 21 janvier 2003 [@loi2003-8] et du décret n° 2003-1128 du 19 mai 2003 [@decret2003-1128] ; ces textes ne sont connus que par leur intitulé, et la coordination n'est pas exposée dans ce livre.
+
+<!-- TODO (documentaliste) : lire les lois n° 88-84 et 2003-8 et le décret n° 2003-1128 ; leur
+contenu (totalisation, proratisation, variantes de liquidation, abrogation de la loi de 1988)
+n'est aujourd'hui décrit que par le manuel de la CNRPS, pp. 78-82. TODO (rédacteur) : une fois
+ces textes lus, rédiger une section sur la coordination. -->
+
+### La frontière avec les autres livres
+
+Le livre « Cotisations sociales » traite le financement des régimes : les taux de cotisation retraite, leur partage entre employeur et salarié, leur assiette et leur histoire. Ce livre-ci n'en reprend aucun taux. Il ne touche au prélèvement que là où celui-ci commande le droit à pension : l'assiette du régime complémentaire, définie comme la fraction du salaire qui excède la limite de calcul des prestations du régime légal ; les contributions afférentes à la péréquation, que la loi de finances pour 2002 met à la charge du retraité, l'employeur ne cotisant que pendant 36 mois ; ou encore la cotisation qui frappe la majoration de revalorisation dans le régime non agricole.
+
+Le livre « Prestations sociales » traite les autres risques couverts par les mêmes caisses. La frontière passe à l'intérieur de plusieurs dispositifs voisins de la pension. Le capital-décès du secteur public, versé au décès d'un agent ou d'un retraité, est une prestation distincte de la pension de réversion : ce livre-ci le signale, « Prestations sociales » l'expose. Les indemnités à caractère familial s'ajoutent à la pension de l'agent chargé de famille, dans les mêmes conditions que pour les agents en activité : ce livre-ci en donne les taux au titre des accessoires de la pension, « Prestations sociales » les décrit pour les actifs. La réparation des accidents du travail des agents publics, enfin, donne lieu à une rente compensatrice servie par la caisse, dont ce livre-ci ne dit que ce que la caisse en écrit et dont « Prestations sociales » expose le régime. Les primes complémentaires aux faibles pensions, que « Prestations sociales » mentionne parmi les dispositifs adjacents à l'assistance, ne sont pas traitées ici.
+
+Le livre « Les rémunérations dans le secteur public » décrit enfin la rémunération dont procède la pension des agents publics : c'est sur les éléments permanents de cette rémunération que la pension est liquidée, puis réajustée par la péréquation.
+
+## Synthèse historique {#sec-synthese-historique}
+
+Le droit tunisien des retraites s'est construit par une succession de textes plutôt que par une codification. Sept moments le structurent. Le tableau les situe et indique où les chapitres en exposent le contenu ; les paragraphes qui suivent disent seulement ce que chacun a changé dans l'architecture du système.
+
+| Année | Textes | Secteur | Ce qui change | Où le lire |
+|---|---|---|---|---|
+| 1959 | loi n° 59-18 | public | régime des pensions civiles et militaires, pour les droits ouverts à compter du 1^er^ avril 1959 ; la Société de prévoyance des fonctionnaires et employés tunisiens devient la Caisse nationale de retraites | @sec-secteur-public, « Les textes et le champ » |
+| 1974 | décret n° 74-499 | privé | salariés non agricoles, au 1^er^ janvier 1974 : 60 ans ; stage de 120 mois ; taux de 40 %, + 2 % par année supplémentaire, plafond de 80 % ; pension minimale de 2/3 du SMIG ; limite de calcul de 6 fois le SMIG | @sec-rsna |
+| 1981 | loi n° 81-6 ; loi n° 81-70 ; décrets n° 81-187 et 81-188 ; puis décret n° 82-1030 | les deux | salariés agricoles, au 1^er^ janvier 1981 : 60 ans, 40 trimestres, 40 % à 80 % ; secteur public, au 1^er^ mai 1981 : plafond de 80 %, pension minimale de 2/3 du SMIG, réversion de 75 % ; non agricole : revalorisation automatique à chaque hausse du SMIG (1^er^ mai 1980), pension d'invalidité 40 → 50 %, orphelin 30 % ; 1982 : départs anticipés avec jouissance à 50 ans, allocation en capital → pension proportionnelle | @sec-secteur-public, « Le plafond » et « Les planchers » ; @sec-agricoles ; @sec-rsna-revalorisation |
+| 1985 | loi n° 85-12 | public | au 12 septembre 1985 : 60 ans ; 15 ans de services ; annuités de 2 %, 3 % puis 2 % ; plafond 80 → 90 % ; pension minimale de 2/3 du SMIG ; péréquation des pensions sur la rémunération des actifs | @sec-secteur-public |
+| 1990 | décret n° 90-1455 ; puis décret n° 94-1429 | privé | salaire de référence : 3 ou 5 dernières années → 10 dernières années au 23 septembre 1990, la moyenne restant calculée sur 36 ou 60 mois ; le décret de 1994 remplace les deux articles : 5 ans et 60 mois au 1^er^ juillet 1994, 7 ans et 84 mois en 1995, 10 ans et 120 mois en 1996 ; limite de 6 fois le SMIG maintenue, SMIG du « régime 48 heures » en 1994 | @sec-rsna-calcul |
+| 2007 | loi n° 2007-43 ; décret n° 2007-2148 | les deux | droit général au départ anticipé : 55 ans et 35 ans de services → 57 ans et 37 ans ; contributions de péréquation, à la charge du retraité depuis 2002, étendues à la totalité hors les 36 mois de l'employeur ; part de la fille sans ressources plafonnée à 50 % ; non agricole : départ pour convenance personnelle, jouissance 50 → 55 ans | @sec-secteur-public, « Les départs anticipés » et « La revalorisation » ; @sec-rsna-anticipes |
+| 2019 | loi n° 2019-37 | public | âge de mise à la retraite 60 → 62 ans (cadre commun) et 55 → 57 ans (art. 27 à 29), par étapes au 1^er^ juillet 2019 et au 1^er^ janvier 2020 ; option de prolongation d'un à trois ans, soumise à l'accord de l'employeur depuis le 1^er^ janvier 2023 ; relèvement des taux de contribution | @sec-secteur-public, « L'ouverture du droit » |
+
+: Les sept moments de la législation des retraites {#tbl-reformes}
+
+Sources : @loi59-18 ; @decret74-499 ; @loi81-6 ; @loi81-70 ; @decret81-187 ; @decret81-188 ; @decret82-1030 ; @loi85-12 ; @decret90-1455 ; @decret94-1429 ; @loi2001-123-lf2002 ; @loi2007-43 ; @lf-2023 ; @decret2007-2148 ; @loi2019-37.
+
+**1959 : le régime des fonctionnaires.** La loi n° 59-18 organise les pensions civiles et militaires ; elle s'applique aux droits à pension qui s'ouvrent à compter du 1^er^ avril 1959 [@loi59-18, art. 52]. Le secteur privé suit l'année suivante, avec les lois n° 60-30 et 60-33 du 14 décembre 1960.
+
+<!-- TODO (documentaliste) : l'histoire antérieure à 1959 n'est établie sur aucun texte lu. La
+version antérieure de ce livre, s'appuyant sur Sdiri (2014, p. 168, non consulté), datait de
+1898 la Société de prévoyance des fonctionnaires et employés tunisiens, mentionnait une Caisse
+des retraites des ouvriers de l'État tunisien et un décret du 26 août 1948 créant un régime pour
+les personnels des compagnies d'électricité, de gaz et de transport. Ces trois faits sont à
+établir au Journal officiel avant toute publication. Ce dernier régime a été transféré à la
+CNRPS par la loi n° 98-37 du 25 mai 1998 [@loi98-37] et le décret n° 98-1981 [@decret98-1981],
+connus par leurs seules métadonnées. -->
+
+**1974 : le régime des salariés du privé.** Le décret n° 74-499, qui prend effet au 1^er^ janvier 1974 [@decret74-499, art. 64], fixe l'âge, le stage, le taux, la pension minimale et la limite de prise en compte des salaires du régime non agricole. Le régime complémentaire s'adosse à cette limite par un arrêté de 1978 qui s'applique à compter de la même date [@arrete-1978-11-18-retraite-complementaire, art. 2].
+
+**1981 : trois chantiers la même année.** La loi n° 81-6 crée le régime des salariés agricoles, avec effet au 1^er^ janvier 1981 [@loi81-6, art. 88]. Dans le secteur public, la loi de finances complémentaire pour 1981 réécrit, avec effet au 1^er^ mai 1981, les articles de la loi de 1959 qui fixent le plafond, le plancher et la réversion [@loi81-70, art. 4-5]. Dans le régime non agricole, le décret n° 81-187 remplace la révision discrétionnaire des pensions par une revalorisation automatique, avec effet au 1^er^ mai 1980 [@decret81-187, art. 3], et le décret n° 82-1030 ouvre l'année suivante les départs anticipés de l'article 15 bis [@decret82-1030, art. 1].
+
+**1985 : la refonte du secteur public.** La loi n° 85-12 abroge la loi de 1959, à l'exception de ses dispositions relatives à l'invalidité [@loi85-12, art. 76], et fixe le cadre que les textes de 1987 à 2023 modifient sans le remplacer, dont la péréquation des pensions. Les régimes spéciaux des membres du gouvernement (1983), des députés (1985) et des gouverneurs (1988) renvoient à la législation des pensions des fonctionnaires.
+
+**1990 : l'allongement de la fenêtre de référence dans le privé.** Le décret n° 90-1455, exécutoire le 23 septembre 1990, fonde le salaire de référence du régime non agricole sur les dix dernières années précédant l'âge d'ouverture du droit, sans modifier l'article qui calcule la moyenne sur trente-six ou soixante mois [@decret90-1455, art. 1]. Le décret n° 94-1429 abroge et remplace quatre ans plus tard ces deux articles et leur substitue une montée progressive de cinq à dix ans entre le 1^er^ juillet 1994 et le 1^er^ juillet 1996 [@decret94-1429, art. 1] ; le chapitre du secteur privé expose cette succession.
+
+**2007 : une réforme paramétrique des deux secteurs.** La loi n° 2007-43 relève les taux de contribution des régimes du secteur public, relève les conditions d'âge et de durée du droit général au départ anticipé et met à la charge du retraité la totalité des contributions afférentes à la péréquation, sauf la part de l'employeur pendant 36 mois [@loi2007-43] ; elle ne comporte pas de clause d'entrée en vigueur. La charge de ces contributions sur le retraité date elle-même de la loi de finances pour 2002, applicable au 1^er^ janvier 2002 [@loi2001-123-lf2002, art. 86]. Le décret n° 2007-2148 réaménage la même année les départs anticipés du régime non agricole [@decret2007-2148].
+
+**2019 : le relèvement de l'âge dans le secteur public.** La loi n° 2019-37 relève l'âge de mise à la retraite du cadre commun et les âges dérogatoires des articles 27 à 29, selon un calendrier transitoire qui s'achève au 1^er^ janvier 2020 [@loi2019-37, art. 1 et 5], et ouvre à l'agent une option de prolongation, définitive et irrévocable [@loi2019-37, art. 3]. Depuis le 1^er^ janvier 2023, cette option est soumise à l'accord de l'employeur, sauf pour les enseignants du supérieur, et elle est révocable [@lf-2023, art. 12].
+
+Les textes cités n'exposent pas les motifs de ces réformes.
+
+<!-- TODO (documentaliste) : réunir des sources citables sur le contexte de chaque réforme
+(exposés des motifs, débats de la Chambre des députés puis de l'Assemblée des représentants du
+peuple, rapports publics sur l'équilibre des caisses, notamment pour 2007 et 2019), afin que le
+contexte historique et politique puisse être présenté en attribuant chaque appréciation à
+l'acteur qui la porte. Aucune série financière des caisses n'a encore été réunie pour situer ces
+réformes. -->

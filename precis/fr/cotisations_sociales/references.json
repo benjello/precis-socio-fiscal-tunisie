@@ -1,44 +1,6 @@
 {
   "items": [
     {
-      "id": "arrete-1978-11-18-retraite-complementaire",
-      "type": "legislation",
-      "title": "Arrêté du ministre des affaires sociales du 18 novembre 1978, portant publication du règlement d'un régime complémentaire de pension de vieillesse, d'invalidité et de survivants",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "79",
-      "page": "3374-3379",
-      "issued": {
-        "date-parts": [
-          [
-            1978,
-            11,
-            18
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1978/1978F/Jo07978.pdf",
-      "note": "citation-key: arrete-1978-11-18-retraite-complementaire\nJORT n° 79 du vendredi 24 novembre 1978, pp. 3374-3379. Agrée le régime complémentaire de pension. Art. 2 : le règlement entre en application à compter du 1er janvier 1974. Règlement, art. 6 : « l'assiette de cotisation est la fraction de salaire excédant la limite fixée par le régime légal pour le calcul des prestations » — assiette différentielle, non sommable avec celle du régime général. L'arrêté fixe un taux d'appel initial de 4,5 % et confie ses révisions à l'organisme gestionnaire : le taux global de 9 % (6 points employeur / 3 points salarié) que porte le modèle n'est pas attesté par ce texte. Lu à l'image (pp. 3374-3375)."
-    },
-    {
-      "id": "decret-2017-668-smig",
-      "type": "legislation",
-      "title": "Décret gouvernemental n° 2017-668 du 5 juin 2017, fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "45",
-      "page": "2046",
-      "issued": {
-        "date-parts": [
-          [
-            2017,
-            6,
-            5
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2017/2017F/Jo0452017.pdf",
-      "note": "citation-key: decret-2017-668-smig\nJORT n° 45 du 6 juin 2017, p. 2046. Exemple canonique du texte qui fixe le SMIG : un décret, révisé au fil des négociations salariales. Métadonnées vérifiées dans le corpus JORT local (jort_cache.db) ; contenu non lu."
-    },
-    {
       "id": "decret2002-916",
       "type": "legislation",
       "title": "Décret n° 2002-916 du 22 avril 2002, fixant les modalités d'application de la loi n° 2002-32 du 12 mars 2002, relative au régime de sécurité sociale pour certaines catégories de travailleurs dans les secteurs agricole et non agricole",
@@ -58,25 +20,6 @@
       "note": "citation-key: decret2002-916\nJORT n° 35 du 30 avril 2002, pp. 1058-1061. Décret d'application du régime des travailleurs à faibles revenus. N'énonce pas de date d'effet, pas plus que la loi qu'il applique. Texte lu."
     },
     {
-      "id": "decret2003-1212",
-      "type": "legislation",
-      "title": "Décret n° 2003-1212 du 2 juin 2003, modifiant le décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "46",
-      "page": "1834-1835",
-      "issued": {
-        "date-parts": [
-          [
-            2003,
-            6,
-            2
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2003/2003F/Jo0462003.pdf",
-      "note": "citation-key: decret2003-1212\nJORT n° 46 du 10 juin 2003, pp. 1834-1835. Article 5 b) nouveau : porte de 1,25/20e à 7,25/20e la quote-part de la masse des cotisations du taux global affectée au régime de pensions, « à partir du 1er janvier 2003 » — l'une des rares dates d'effet expressément énoncées. Texte lu."
-    },
-    {
       "id": "decret2003-1544",
       "type": "legislation",
       "title": "Décret n° 2003-1544 du 2 juillet 2003, modifiant le décret n° 92-631 du 23 mars 1992, fixant les conditions de bénéfice du régime de sécurité sociale des étudiants",
@@ -94,25 +37,6 @@
       },
       "URL": "https://www.pist.tn/jort/2003/2003F/Jo0552003.pdf",
       "note": "citation-key: decret2003-1544\nJORT n° 55 du 11 juillet 2003, p. 2132. Abroge l'art. 2 du décret n° 92-631 et fixe la cotisation forfaitaire des étudiants « à cinq dinars par an ». S'achève sur une clause d'exécution : la date du 2 juillet 2003 retenue par le modèle openfisca-tunisia est celle de la signature, non d'une entrée en vigueur énoncée. Texte lu."
-    },
-    {
-      "id": "decret2003-894",
-      "type": "legislation",
-      "title": "Décret n° 2003-894 du 21 avril 2003, fixant les procédures et modalités d'application de la loi n° 2002-104 du 30 décembre 2002, relative au régime de sécurité sociale des artistes, des créateurs et des intellectuels",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "34",
-      "page": "1291-1294",
-      "issued": {
-        "date-parts": [
-          [
-            2003,
-            4,
-            21
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2003/2003F/Jo0342003.pdf",
-      "note": "citation-key: decret2003-894\nJORT n° 34 du 29 avril 2003, pp. 1291-1294. Assiette forfaitaire : produit d'un coefficient de classe par le SMIG de 48 heures rapporté à 2 400 heures par an, sans pouvoir être inférieur à deux fois ce SMIG ; dix classes, du coefficient 2 au coefficient 18. Cotisations trimestrielles. Texte lu."
     },
     {
       "id": "decret2014-2919",
@@ -153,44 +77,6 @@
       "note": "citation-key: decret73-91\nJORT n° 10, fascicule daté 9-13-16 mars 1973. Art. 14 : cotisation de l'assuré 1 % sur les éléments soumis à retenue pour pension. Art. 15 : cotisation supplémentaire du régime facultatif 3 % ; « la cotisation due par le retraité et la veuve de retraité titulaire d'une pension directe ou de réversion est fixée à 2 % de leur pension en principal ». Art. 16 : contribution de l'État 1 %. Art. 18 : prend effet à compter du 1er avril 1973. Texte lu à l'image (p. 356)."
     },
     {
-      "id": "decret81-224",
-      "type": "legislation",
-      "title": "Décret n° 81-224 du 24 février 1981, fixant la répartition des cotisations de sécurité sociale dans le secteur agricole et réglant les modalités de leur versement",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "13",
-      "page": "425-426",
-      "issued": {
-        "date-parts": [
-          [
-            1981,
-            2,
-            24
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1981/1981F/Jo01381.pdf",
-      "note": "citation-key: decret81-224\nJORT n° 13 du 27 février 1981, pp. 425-426. Répartit le taux global de 6,45 % de l'art. 18 de la loi n° 81-6 en deux blocs : 1,20 % au titre des assurances sociales (0,9 point patronal, 0,3 point salarial) et 5,25 % au titre des pensions (3,5 points patronaux, 1,75 point salarial). Le bloc « assurances sociales » n'est pas ventilé entre maladie, maternité et décès. Art. 4 : entrée en vigueur calée sur celle de la loi n° 81-6, que la loi n'énonce nulle part — la date d'effet reste indéterminée. Lu à l'image."
-    },
-    {
-      "id": "decret89-107",
-      "type": "legislation",
-      "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: decret89-107\nissue: 4\nJORT n° 4 du 17 janvier 1989, pp. 98-99. Article premier : étend les articles 68 à 96 et 100 à 120 de la loi n° 60-30 — sans les prestations familiales. Art. 3 : adhésion VOLONTAIRE, couvrant obligatoirement assurances sociales et pensions. Art. 6-7 : quatre classes, coefficients 2/4/6/9 du SMIG ; taux 10,65 %. Lu à l'image ; date d'effet non établie. URL vérifiée (HTTP 200).",
-      "page": "98-99",
-      "title": "Décret n° 89-107 du 10 janvier 1989, étendant le régime de sécurité sociale aux travailleurs tunisiens à l'étranger",
-      "URL": "https://www.pist.tn/jort/1989/1989F/Jo00489.pdf",
-      "issued": {
-        "date-parts": [
-          [
-            1989,
-            1,
-            10
-          ]
-        ]
-      },
-      "issue": "4"
-    },
-    {
       "id": "decret92-631",
       "type": "legislation",
       "title": "Décret n° 92-631 du 23 mars 1992, fixant les conditions de bénéfice du régime de sécurité sociale des étudiants",
@@ -208,44 +94,6 @@
       },
       "URL": "https://www.pist.tn/jort/1992/1992F/Jo02192.pdf",
       "note": "citation-key: decret92-631\nJORT n° 21 du 31 mars 1992, pp. 426-427. Pris pour l'application de la loi n° 65-17 du 28 juin 1965. Couvre les étudiants régulièrement inscrits et poursuivant effectivement des études supérieures dans un établissement de la liste annexée. Cotisation forfaitaire payable à l'inscription. S'achève sur une clause d'exécution, sans article d'entrée en vigueur. Le décret n'énonce pas les risques couverts : il renvoie à la loi n° 65-17, qui n'a pas été ouverte. Lu à l'image."
-    },
-    {
-      "id": "decret94-1429",
-      "type": "legislation",
-      "title": "Décret n° 94-1429 du 30 juin 1994, portant amendement du décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "52",
-      "page": "1141-1142",
-      "issued": {
-        "date-parts": [
-          [
-            1994,
-            6,
-            30
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1994/1994F/Jo05294.pdf",
-      "note": "citation-key: decret94-1429\nJORT n° 52 du 5 juillet 1994, pp. 1141-1142. Programme une montée en charge par paliers annuels devant porter la part salariale du régime de pensions de 1,25 % à 3,25 % en quatre ans. Le dernier palier, celui de juillet 1997, n'a jamais été appliqué : le décret n° 97-555 réécrit l'art. 9 avant son échéance. Lu à l'image."
-    },
-    {
-      "id": "decret95-1166",
-      "type": "legislation",
-      "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: decret95-1166\nissue: 55\nJORT n° 55 du 11 juillet 1995, pp. 1486-1489. Article premier : étend les articles 68 à 98, 100 à 107 et 109 à 120 de la loi n° 60-30 — l'énumération commence à 68, donc SANS les prestations familiales (art. 51-67). Art. 9 cotisation 11 % (7 % pensions, 4 % assurances sociales) ; art. 17 stage de deux trimestres (quatre pour l'indemnité de couche). Modifié par le décret n° 2004-167 du 20 janvier 2004. Lu à l'image ; date d'effet non établie. URL vérifiée (HTTP 200).",
-      "page": "1486-1489",
-      "title": "Décret n° 95-1166 du 3 juillet 1995, relatif à la sécurité sociale des travailleurs non salariés dans les secteurs agricole et non agricole",
-      "URL": "https://www.pist.tn/jort/1995/1995F/Jo05595.pdf",
-      "issued": {
-        "date-parts": [
-          [
-            1995,
-            7,
-            3
-          ]
-        ]
-      },
-      "issue": "55"
     },
     {
       "id": "decret95-538",
@@ -284,120 +132,6 @@
       },
       "URL": "https://www.pist.tn/jort/1997/1997F/Jo07197.pdf",
       "note": "citation-key: decret97-1645\nJORT n° 71 du 5 septembre 1997, pp. 1676-1677. Précise la réduction de deux points ouverte par le second paragraphe de l'art. 41 nouveau de la loi n° 60-30 (loi n° 97-4) : les entreprises concernées acquittaient 11 % au lieu de 13 %. Abrogé au 1er juillet 2007. Le modèle openfisca-tunisia ne porte aucun paramètre pour cette variante. Texte lu."
-    },
-    {
-      "id": "decret97-555",
-      "type": "legislation",
-      "title": "Décret n° 97-555 du 31 mars 1997, modifiant le décret n° 74-499 du 27 avril 1974, relatif au régime de pension de vieillesse, d'invalidité et de survivants dans le secteur non agricole",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "27",
-      "page": "553",
-      "issued": {
-        "date-parts": [
-          [
-            1997,
-            3,
-            31
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1997/1997F/Jo02797.pdf",
-      "note": "citation-key: decret97-555\nJORT n° 27 du 4 avril 1997, p. 553. Article 9 nouveau : cotisation propre du régime de pensions fixée à 5,25 %, dont 2,75 % à la charge du salarié — c'est-à-dire au niveau atteint en 1996, le palier de juillet 1997 programmé par le décret n° 94-1429 n'étant jamais entré en vigueur. S'achève sur une clause d'exécution, sans article d'entrée en vigueur. Texte lu."
-    },
-    {
-      "id": "decretloi2011-48",
-      "type": "legislation",
-      "title": "Décret-loi n° 2011-48 du 4 juin 2011, modifiant les lois régissant les pensions civiles et militaires de retraite et des survivants dans le secteur public, le régime de retraite des membres du gouvernement et le régime de retraite des gouverneurs",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "41",
-      "page": "844",
-      "issued": {
-        "date-parts": [
-          [
-            2011,
-            6,
-            4
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2011/2011F/Jo0412011.pdf",
-      "note": "citation-key: decretloi2011-48\nJORT n° 41 du 7 juin 2011, p. 844. Porte le palier employeur de juillet 2011 dans le modèle openfisca-tunisia. Métadonnées jort_cache.db (recid 80629) ; contenu NON LU — à vérifier avant citation."
-    },
-    {
-      "id": "loi2001-123-lf2002",
-      "type": "legislation",
-      "title": "Loi n° 2001-123 du 28 décembre 2001, portant loi de finances pour l'année 2002",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "104",
-      "page": "4260",
-      "issued": {
-        "date-parts": [
-          [
-            2001,
-            12,
-            28
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf",
-      "note": "citation-key: loi2001-123-lf2002\nJORT n° 104 du 28 décembre 2001. Art. 85, p. 4260 (édition française) : échéancier pluriannuel — assuré social +1 point (0,50 au 1/7/2002, 0,25 au 1/7/2003, 0,25 au 1/7/2004) ; employeur +1,5 point en cinq marches de 2002 à 2006. C'est l'article qui porte les paliers 2003 et 2004 de la série CNRPS. Texte lu (couche texte à encodage décalé de -29 ; décodage vérifié contre la pagination du fascicule)."
-    },
-    {
-      "id": "loi2002-104",
-      "type": "legislation",
-      "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: loi2002-104\nissue: 106\nJORT n° 106 du 31 décembre 2002, pp. 3187-3190. Article premier : assurances sociales, pensions et actions sanitaires et sociales — pas de prestations familiales. Art. 2 : trois conditions cumulatives, dont l'absence de tout autre régime légal et d'indemnité permanente de l'État. Art. 7 cotisation 11 % sur un revenu au moins égal à deux fois le SMIG. Art. 10 : stage de deux trimestres (quatre pour l'indemnité de couche). Texte français intégral sur le miroir iort.tn. URL vérifiée (HTTP 200).",
-      "page": "3187-3190",
-      "title": "Loi n° 2002-104 du 30 décembre 2002, relative au régime de sécurité sociale des artistes, des créateurs et des intellectuels",
-      "URL": "https://www.pist.tn/jort/2002/2002F/Jo1062002.pdf",
-      "issued": {
-        "date-parts": [
-          [
-            2002,
-            12,
-            30
-          ]
-        ]
-      },
-      "issue": "106"
-    },
-    {
-      "id": "loi2002-32",
-      "type": "legislation",
-      "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: loi2002-32\nissue: 22\nJORT n° 22 du 15 mars 2002, pp. 603-606. Article premier : régime limité aux prestations de SOINS et aux pensions — ni indemnités en espèces ni prestations familiales. Cinq catégories : employés de maison, agents publics non couverts, pêcheurs ≤ 5 tonneaux, agriculteurs ≤ 5 ha en sec ou 1 ha en irrigué, artisans à la pièce. Art. 7 cotisation 7,5 % sur 2/3 du SMAG ou du SMIG. Texte français intégral sur le miroir iort.tn. Correspond probablement au « régime des travailleurs à bas revenu » du livre Retraites — correspondance non attestée. URL vérifiée (HTTP 200).",
-      "page": "603-606",
-      "title": "Loi n° 2002-32 du 12 mars 2002, relative au régime de sécurité sociale pour certaines catégories de travailleurs dans les secteurs agricole et non agricole",
-      "URL": "https://www.pist.tn/jort/2002/2002F/Jo0222002.pdf",
-      "issued": {
-        "date-parts": [
-          [
-            2002,
-            3,
-            12
-          ]
-        ]
-      },
-      "issue": "22"
-    },
-    {
-      "id": "loi2005-54",
-      "type": "legislation",
-      "title": "Loi n° 2005-54 du 18 juillet 2005, étendant les régimes spéciaux applicables aux membres de la chambre des députés aux membres de la chambre des conseillers",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "57",
-      "page": "1749",
-      "issued": {
-        "date-parts": [
-          [
-            2005,
-            7,
-            18
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2005/2005F/Jo0572005.pdf",
-      "note": "citation-key: loi2005-54\nJORT n° 57 du 19 juillet 2005, p. 1749. Explique la mention de la chambre des conseillers dans la loi n° 2007-43. Métadonnées jort_cache.db (recid 110642) ; contenu non lu."
     },
     {
       "id": "loi2007-51",
@@ -474,120 +208,6 @@
       },
       "URL": "https://www.pist.tn/jort/1974/1974F/Jo08074.pdf",
       "note": "citation-key: loi74-101-lf1975\nJORT n° 80 du 31 décembre 1974. Secteur public — art. 38, p. 2917 : remplace l'art. 5 de la loi n° 59-18 ; prélèvement ramené à 5 % mais assiette élargie aux émoluments globaux indiciaires, primes et indemnités. Art. 39, p. 2918 : subvention de l'employeur ramenée de 10 % à 7 %. Aucune date d'effet énoncée ; le 1er janvier 1975 est dérivé du rattachement à la gestion. Secteur privé — art. 57 et 58, p. 2919 : majoration de 0,5 point de la cotisation patronale de l'art. 41 de la loi n° 60-30 « à compter du 1er janvier 1975 », au profit d'un fonds spécial de l'État. Articles 38, 39, 57 et 58 lus à l'image."
-    },
-    {
-      "id": "loi81-6",
-      "type": "legislation",
-      "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: loi81-6\nissue: 9\nJORT n° 9 du 13 février 1981, pp. 265-273 ; rectificatif au JORT n° 26 du 17 avril 1981, p. 844. Article premier : le régime couvre les assurances sociales (maladie, maternité, décès) et les pensions — PAS les prestations familiales, qui ne sont ouvertes qu'au titre III ajouté par la loi n° 89-73. Article premier lu à l'image ; date d'effet non établie. URL vérifiée (HTTP 200).",
-      "page": "265-273",
-      "title": "Loi n° 81-6 du 12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole",
-      "URL": "https://www.pist.tn/jort/1981/1981F/Jo00981.pdf",
-      "issued": {
-        "date-parts": [
-          [
-            1981,
-            2,
-            12
-          ]
-        ]
-      },
-      "issue": "9"
-    },
-    {
-      "id": "loi83-31",
-      "type": "legislation",
-      "title": "Loi n° 83-31 du 17 mars 1983, fixant le régime de retraite des membres du gouvernement",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "23",
-      "page": "808-809",
-      "issued": {
-        "date-parts": [
-          [
-            1983,
-            3,
-            17
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1983/1983F/Jo02383.pdf",
-      "note": "citation-key: loi83-31\nJORT n° 23 du 25 mars 1983. Art. 5 : retenue pour pension de 10 % sur la rémunération, contribution de l'État de 15 %, au profit de la CNRPS. Texte lu (OCR relu)."
-    },
-    {
-      "id": "loi85-16",
-      "type": "legislation",
-      "title": "Loi n° 85-16 du 8 mars 1985, fixant le régime de retraite des députés",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "21",
-      "page": "375-377",
-      "issued": {
-        "date-parts": [
-          [
-            1985,
-            3,
-            8
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1985/1985F/Jo02185.pdf",
-      "note": "citation-key: loi85-16\nJORT n° 21 du 15 mars 1985. Art. 5 : les indemnités parlementaires permanentes sont soumises à une retenue de 10 % au profit de la CNRPS. Texte lu (OCR) ; le libellé de la contribution de l'État reste à relire à l'image."
-    },
-    {
-      "id": "loi88-16",
-      "type": "legislation",
-      "title": "Loi n° 88-16 du 17 mars 1988, fixant le régime de retraite des gouverneurs",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "20",
-      "page": "427",
-      "issued": {
-        "date-parts": [
-          [
-            1988,
-            3,
-            17
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1988/1988F/Jo02088.pdf",
-      "note": "citation-key: loi88-16\nJORT n° 20 du 22 mars 1988, p. 427. Art. 5 : retenue de 10 % sur les éléments permanents de la rémunération des gouverneurs, contribution de l'État de 15 %, au profit de la CNRPS. Texte lu (OCR relu). Attention : le modèle openfisca-tunisia la date par erreur de 1983 dans son titre arabe."
-    },
-    {
-      "id": "loi89-73",
-      "type": "legislation",
-      "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: loi89-73\nissue: 60\nJORT n° 60 des 5-8 septembre 1989, pp. 1338-1339. Ajoute à la loi n° 81-6 un titre III « Dispositions particulières applicables aux salariés employés par certaines entreprises agricoles », articles 86 à 101 : c'est le régime agricole amélioré (RSAA). Art. 86 champ (≥ 30 salariés permanents, coopérateurs, pêcheurs) ; art. 90 cotisation 15 % ; art. 91-92 allocations familiales pour les trois premiers enfants aux taux des articles 52 à 65 de la loi n° 60-30 ; art. 4 entrée en vigueur le 1er octobre 1989. Lu à l'image. URL vérifiée (HTTP 200).",
-      "page": "1338-1339",
-      "title": "Loi n° 89-73 du 2 septembre 1989, modifiant et complétant la loi n° 81-6 du 12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole",
-      "URL": "https://www.pist.tn/jort/1989/1989F/Jo06089.pdf",
-      "issued": {
-        "date-parts": [
-          [
-            1989,
-            9,
-            2
-          ]
-        ]
-      },
-      "issue": "60"
-    },
-    {
-      "id": "loi94-71",
-      "type": "legislation",
-      "title": "Loi n° 94-71 du 27 juin 1994, relative à la révision des taux de la contribution aux régimes de retraite dans le secteur public",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "50",
-      "page": "1086",
-      "issued": {
-        "date-parts": [
-          [
-            1994,
-            6,
-            27
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1994/1994F/Jo05094.pdf",
-      "note": "citation-key: loi94-71\nJORT n° 50 du 28 juin 1994, p. 1086. Article unique : +1 point à la charge de l'assuré social à partir du 1er juillet 1994, +1,2 point à la charge de l'employeur à partir du 1er juillet 1995 ; modifie en conséquence l'art. 5 de la loi n° 83-31, les art. 9 et 13 de la loi n° 85-12, l'art. 5 de la loi n° 85-16 et l'art. 5 de la loi n° 88-16. Texte lu."
     },
     {
       "id": "loi96-101",
