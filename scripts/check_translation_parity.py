@@ -23,7 +23,14 @@ ou une conversion qui prend l'ANNÉE pour le numéro d'ordre — l'erreur observ
 la seule qui soit indétectable à la lecture de l'arabe seul.
 
 Usage :
-    python scripts/check_translation_parity.py [chemins...]
+    python scripts/check_translation_parity.py [--compare-to DOSSIER] [chemins...]
+
+`--compare-to` désigne un arbre de travail de l'état ANTÉRIEUR (typiquement un
+`git worktree` du commit de base). Le contrôle mesure alors les divergences des
+deux côtés et n'échoue que sur les NOUVELLES. C'est le seul critère qui sépare
+« ce changement a cassé quelque chose » de « ce livre porte une dette » : sans
+lui, un livre endetté échoue toujours, et le rouge permanent masque la seule
+chose à voir, l'apparition d'une divergence inédite.
 
 Sans argument, contrôle toutes les paires FR/AR du dépôt. Les chemins donnés
 peuvent être FR ou AR ; l'homologue est déduit. Sortie 1 si une divergence est
@@ -170,11 +177,17 @@ def check_locators(text, path, problems):
             )
 
 
-def compare(fr_path, ar_path):
+def compare(fr_path, ar_path, root=""):
+    """Compare une paire. `root` préfixe la LECTURE, jamais les messages.
+
+    Les messages doivent rester relatifs au dépôt pour être comparables d'un arbre
+    à l'autre : un message portant `/tmp/base/precis/...` ne correspondrait à aucun
+    message de l'arbre courant, et toute divergence héritée passerait pour neuve.
+    """
     problems = []
-    with open(fr_path, encoding="utf-8") as f:
+    with open(os.path.join(root, fr_path), encoding="utf-8") as f:
         fr_text = f.read()
-    with open(ar_path, encoding="utf-8") as f:
+    with open(os.path.join(root, ar_path), encoding="utf-8") as f:
         ar_text = f.read()
 
     fr, ar = extract(fr_text), extract(ar_text)
@@ -196,12 +209,16 @@ def compare(fr_path, ar_path):
     return problems
 
 
-def pairs_for(paths: list[str]) -> list[tuple[str, str]]:
+def pairs_for(paths: list[str], root: str = "") -> list[tuple[str, str]]:
     """Normalise une liste de chemins (FR ou AR) en paires (fr, ar) existantes.
 
     Deux façons d'apparier. Sous `precis/`, la paire se déduit du chemin. Ailleurs,
     elle est déclarée dans `PAIRES_HORS_PRECIS` : une cible à la racine du dépôt n'a
     pas de dossier de langue d'où la déduire.
+
+    `root` préfixe le test d'existence. Une paire absente de l'arbre de base — un
+    chapitre neuf — n'y est simplement pas contrôlée, et ses divergences comptent
+    donc toutes comme nouvelles : c'est le comportement prudent.
     """
     seen, out = set(), []
     envers = {ar: fr for fr, ar in PAIRES_HORS_PRECIS.items()}
@@ -215,15 +232,33 @@ def pairs_for(paths: list[str]) -> list[tuple[str, str]]:
                 continue
             fr = p.replace("precis/ar/", "precis/fr/")
             ar = p.replace("precis/fr/", "precis/ar/")
-        if fr in seen or not (os.path.exists(fr) and os.path.exists(ar)):
+        if fr in seen or not (os.path.exists(os.path.join(root, fr))
+                              and os.path.exists(os.path.join(root, ar))):
             continue
         seen.add(fr)
         out.append((fr, ar))
     return out
 
 
+def divergences(paths, root=""):
+    """Divergences d'un arbre, dans l'ordre, messages relatifs au dépôt."""
+    problems = []
+    for fr_path, ar_path in sorted(pairs_for(paths, root)):
+        problems.extend(compare(fr_path, ar_path, root))
+    return problems
+
+
 def main():
     args = sys.argv[1:]
+    base_dir = ""
+    if "--compare-to" in args:
+        i = args.index("--compare-to")
+        if i + 1 >= len(args):
+            print("--compare-to attend un dossier.")
+            return 2
+        base_dir = args[i + 1]
+        del args[i:i + 2]
+
     paths = args if args else glob.glob("precis/fr/**/*.qmd", recursive=True)
     pairs = pairs_for(paths)
 
@@ -231,18 +266,38 @@ def main():
         print("Aucune paire FR/AR à contrôler.")
         return 0
 
-    problems = []
-    for fr_path, ar_path in sorted(pairs):
-        problems.extend(compare(fr_path, ar_path))
-
+    problems = divergences(paths)
     print(f"{len(pairs)} paire(s) FR/AR contrôlée(s).")
-    if problems:
-        print(f"\n{len(problems)} divergence(s) :\n")
-        for p in problems:
-            print(f"  - {p}")
-        return 1
-    print("Parité mécanique vérifiée : citations, ancres, liens, numéros de textes, labels.")
-    return 0
+
+    if not base_dir:
+        if problems:
+            print(f"\n{len(problems)} divergence(s) :\n")
+            for p in problems:
+                print(f"  - {p}")
+            return 1
+        print("Parité mécanique vérifiée : citations, ancres, liens, numéros de textes, labels.")
+        return 0
+
+    # Mode différentiel : la dette héritée est constatée, non reprochée.
+    heritees = set(divergences(paths, base_dir))
+    nouvelles = [p for p in problems if p not in heritees]
+    print(f"{len(problems)} divergence(s) au total, dont {len(heritees & set(problems))} "
+          f"héritée(s) de l'état antérieur.")
+
+    if not nouvelles:
+        if problems:
+            print("\nAucune divergence NOUVELLE : ce changement n'a rien cassé.")
+            print("La dette antérieure subsiste et se traite à part :\n")
+            for p in problems:
+                print(f"  - (héritée) {p}")
+        else:
+            print("Parité mécanique vérifiée : citations, ancres, liens, numéros de textes, labels.")
+        return 0
+
+    print(f"\n{len(nouvelles)} divergence(s) NOUVELLE(S) — introduite(s) par ce changement :\n")
+    for p in nouvelles:
+        print(f"  - {p}")
+    return 1
 
 
 if __name__ == "__main__":
