@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.18.4](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.3...v1.18.4) (2026-09-14)
+
+
+### 🐛 Corrections de bugs
+
+* **ci:** cesser d'éteindre master avec le [skip ci] des traductions ([#208](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/208)) ([21ac558](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/21ac5587ff4e972c4837f48032b6a9ca8c116797)), closes [#205](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/205)
+
+
+### 📝 Documentation
+
+* **agents:** ne pas écrire le drapeau de saut de CI dans un titre ([#209](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/209)) ([72288cd](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/72288cd4e42a6a959219a43d94e7692780a29a82))
+
 ## [1.18.3](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.2...v1.18.3) (2026-09-14)
 
 
