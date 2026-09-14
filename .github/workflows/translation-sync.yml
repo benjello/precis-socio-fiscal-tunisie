@@ -50,6 +50,12 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v7
 
+      # Pour l'étape de rendu ci-dessous. Les PR `auto-translate/*` étant ouvertes
+      # avec le GITHUB_TOKEN, aucun `pull_request` ne les écoute : le rendu doit
+      # donc avoir lieu ICI, dans le job qui produit l'arabe.
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
       - name: Get changed files
         id: changed-files
         run: |
@@ -161,6 +167,58 @@ jobs:
             echo "head=$(git rev-parse HEAD)"
           } >> $GITHUB_OUTPUT
 
+      # Le rendu des livres arabes touchés. Sans lui, rien ne construit jamais
+      # l'arabe avant sa fusion : `rendre-les-livres.yml` écoute `pull_request`,
+      # que les PR ouvertes avec le GITHUB_TOKEN ne déclenchent pas.
+      #
+      # Cas réel (#188) : la traduction a porté dans un chapitre arabe une cellule
+      # de figure appelant `from figures import pnafn`, alors que ce livre n'avait
+      # pas encore le lien symbolique vers les modules français. La PR était
+      # fusionnable, verte, et cassait le rendu du livre arabe. Elle n'a été vue
+      # que parce qu'un rendu a été lancé à la main.
+      #
+      # Seuls les livres TOUCHÉS sont rendus : rendre les dix à chaque
+      # synchronisation coûterait plusieurs minutes et noierait l'origine d'un
+      # échec. `uv sync` est nécessaire ici — les figures sont du Python.
+      - name: Render the touched Arabic books
+        id: rendu
+        if: steps.open-pr.outputs.pr != ''
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ steps.open-pr.outputs.pr }}
+        run: |
+          set +e
+          uv sync
+          LIVRES=$(for f in ${{ steps.changed-files.outputs.files }}; do
+                     case "$f" in precis/fr/*/*) echo "$f" | cut -d/ -f3 ;; esac
+                   done | sort -u)
+          if [ -z "$LIVRES" ]; then
+            echo "Aucun livre touché (CHANGELOG seul, par exemple) : rien à rendre."
+            exit 0
+          fi
+          echec=""
+          for livre in $LIVRES; do
+            [ -d "precis/ar/$livre" ] || continue
+            echo "── rendu de precis/ar/$livre ──"
+            if ! (cd "precis/ar/$livre" && uv run quarto render --to html 2>&1 | tail -40); then
+              echec="$echec $livre"
+            fi
+          done
+          if [ -n "$echec" ]; then
+            { echo "❌ **Rendu des livres arabes**"
+              echo
+              echo "Ces livres ne se construisent pas avec la traduction proposée :"
+              echo '```'
+              echo "$echec"
+              echo '```'
+              echo "Fusionner cette PR casserait le déploiement. Voir le journal du job."
+            } > rendu_comment.md
+            gh pr comment "$PR_NUMBER" -F rendu_comment.md || echo "Commentaire non posté."
+            exit 1
+          fi
+          echo "✓ Les livres arabes touchés se construisent."
+
       # Contrôle mécanique, sans appel réseau : citations, ancres, cibles de
       # liens, numéros de textes juridiques, labels de figures, locateurs. Il
       # attrape avec certitude ce que le checker IA peut laisser passer — un
@@ -177,13 +235,25 @@ jobs:
           PR_NUMBER: ${{ steps.open-pr.outputs.pr }}
         run: |
           set +e
-          # Restreint aux fichiers qui viennent d'être traduits. Sans cela, le
-          # contrôle échouerait sur la dette préexistante d'autres chapitres —
-          # le corpus arabe mélange aujourd'hui deux conventions de numérotation
-          # selon les livres — et bloquerait toute PR de traduction pour des
-          # raisons étrangères à son contenu. Pour un audit d'ensemble, lancer
-          # le script sans argument en local.
-          python3 scripts/check_translation_parity.py ${{ steps.changed-files.outputs.files }} | tee parity.log
+          # Restreint aux fichiers qui viennent d'être traduits, ET comparé à
+          # l'état ANTÉRIEUR.
+          #
+          # Restreindre ne suffisait pas (#189) : un livre peut porter sa propre
+          # dette. `prestations_sociales` comptait 13 divergences avant comme après
+          # le changement du 14/09/2026 — clés de citation, numéros de textes, une
+          # ancre de tableau. Le job échouait donc à chaque synchronisation de ce
+          # livre, pour des divergences que personne n'avait introduites, et ce
+          # rouge permanent masquait le seul signal utile : une divergence NEUVE.
+          #
+          # La base est `github.event.before`, l'état d'avant le changement
+          # français — et non le commit de traduction, qui contiendrait déjà la
+          # régression qu'on cherche. Le worktree vit dans RUNNER_TEMP pour ne pas
+          # salir la copie de travail que la PR vient de committer.
+          BASE_TREE="$RUNNER_TEMP/parite-base"
+          git worktree add --detach "$BASE_TREE" "${{ steps.open-pr.outputs.base }}" >/dev/null 2>&1 \
+            && COMPARE="--compare-to $BASE_TREE" \
+            || { echo "Arbre de base indisponible : contrôle en absolu."; COMPARE=""; }
+          python3 scripts/check_translation_parity.py $COMPARE ${{ steps.changed-files.outputs.files }} | tee parity.log
           rc=${PIPESTATUS[0]}
           if [ "$rc" -ne 0 ]; then
             { echo "⚠️ **Contrôle de parité FR/AR (déterministe)**"
@@ -222,9 +292,14 @@ jobs:
       # `continue-on-error` sur l'étape de parité laisse le job vert même quand
       # elle échoue : sans ce verdict final, une divergence de numéro de loi
       # passerait inaperçue.
-      - name: Gate on the parity check
-        if: always() && steps.parity.outcome == 'failure'
+      - name: Gate on the parity check and the render
+        if: always() && (steps.parity.outcome == 'failure' || steps.rendu.outcome == 'failure')
         run: |
-          echo "Le contrôle de parité FR/AR a échoué : voir son rapport ci-dessus" \
-               "et le commentaire posté sur la PR de traduction."
+          if [ "${{ steps.rendu.outcome }}" = "failure" ]; then
+            echo "Le rendu d'un livre arabe a échoué : cette traduction casserait le site."
+          fi
+          if [ "${{ steps.parity.outcome }}" = "failure" ]; then
+            echo "Le contrôle de parité FR/AR a signalé une divergence NOUVELLE :" \
+                 "voir son rapport ci-dessus et le commentaire posté sur la PR."
+          fi
           exit 1
