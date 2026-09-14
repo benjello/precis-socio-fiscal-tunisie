@@ -271,7 +271,13 @@ Fichier à traduire :
                         "Relancer, au besoin en retraduction complète."
                     )
 
-            os.makedirs(os.path.dirname(target_path), exist_ok=True)
+            # `dirname` rend la chaîne VIDE pour une cible à la racine du dépôt —
+            # `CHANGELOG_ar.md` est la seule dans ce cas —, et `os.makedirs('')` lève
+            # FileNotFoundError. La synchro échouait donc à chaque publication de version,
+            # et le CHANGELOG arabe n'a jamais pu être écrit une seule fois.
+            dossier = os.path.dirname(target_path)
+            if dossier:
+                os.makedirs(dossier, exist_ok=True)
             with open(target_path, "w", encoding="utf-8") as f:
                 f.write(translated_text)
             print(f"Succès : {target_path} mis à jour.")
