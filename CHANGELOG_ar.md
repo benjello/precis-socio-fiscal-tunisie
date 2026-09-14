@@ -17,7 +17,7 @@
 *   **المساهمات الاجتماعية:** إعادة صياغة القطاع العام بناءً على النصوص، وإضافة 41 مرجعًا ([7a4c0e1](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/7a4c0e1fd2e243b2c2df69643c6dac04ff9bf9b8))
 *   **المساهمات الاجتماعية:** جدول فروع لكل نظام، وآلية تحقق تراقبها ([acad9dc](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/acad9dc25d54a3b76da963e4cda87cef3b60e2ea))
 *   **الأشكال:** تركيبة الإيرادات الجبائية وتخصيص البرنامج الوطني لمساعدة العائلات المعوزة ([45754e3](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/45754e38003df02d73165f0288158369771f27b4))
-*   **الجباية:** شكل يوضح الآليات الاستثنائية الأكثر تكلفة ([666e063](https://github.Bcom/benjello/precis-socio-fiscal-tunisie/commit/666e0637da6bd72f7ee5b5bc742424c31078ac7f))
+*   **الجباية:** شكل يوضح الآليات الاستثنائية الأكثر تكلفة ([666e063](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/666e0637da6bd72f7ee5b5bc742424c31078ac7f))
 *   **الجباية:** شكل يوضح مردودية الضريبة على دخل الأشخاص الطبيعيين، مع انقطاع سلسلتها ([834d8ee](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/834d8eedda8dbe76233561a4a8c9e7f7eabb3dbd))
 *   **المسرد:** سبع وثلاثون مفهومًا من كتاب «الجرايات» ([9c18378](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/9c1837810e4321fc869357083ace19a7f9ad1081))
 *   **الجرايات:** تصحيح القطاع العام بشأن سلسلة القانون عدد 85-12، ونشر سلاسل تعديل الجرايات ([6de767b](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/6de767b47443839455c4bfe9ef698aa6c3bb6d7d))
