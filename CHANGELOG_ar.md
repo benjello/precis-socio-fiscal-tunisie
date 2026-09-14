@@ -1,5 +1,13 @@
 # سجل التغييرات
 
+## [1.17.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.16.4...v1.17.0) (2026-09-14)
+
+
+### ✨ جديد
+
+* **التكامل المستمر:** عرض الكتب الخمسة في كل طلب سحب ([#184](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/184)) ([707816f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/707816faa027b825edadb518ad664a83ad43ee03)), يغلق [#165](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/165)
+* **الأشكال:** عرض شكل البرنامج الوطني لمساعدة العائلات المعوزة دون قراءة المعايير عند البناء ([#186](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/186)) ([4886c40](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/4886c403b1c0a5bc5671b18b2133e1db0d7cc068)), يغلق [#165](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/165)
+
 ## [1.16.4](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.16.3...v1.16.4) (2026-09-14)
 
 
