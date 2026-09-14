@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.3](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.2...v1.18.3) (2026-09-14)
+
+
+### 🐛 Corrections de bugs
+
+* **traduction:** rendre restore_urls observable ([#203](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/203)) ([3f55e40](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/3f55e40bab7ac693f2ed867ae0ff65f634a38afd)), closes [#192](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/192)
+
 ## [1.18.2](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.1...v1.18.2) (2026-09-14)
 
 
