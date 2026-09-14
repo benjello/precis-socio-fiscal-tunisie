@@ -86,6 +86,16 @@ Dépôts concernés : `openfisca-tunisia` (fiscalité, cotisations, prestations)
   livré passe pour du travail en souffrance. Six tickets d'`openfisca-tunisia-pension` ont traîné
   ainsi (#27, #29, #30, #37, #40, #46) avant d'être fermés à la main, plusieurs jours après leur
   correction.
+- **N'écris jamais le drapeau de saut d'intégration continue dans un titre de PR ni dans un message
+  de commit**, même pour en parler. La fusion en squash fait du titre le sujet du commit ; GitHub y
+  lit le drapeau et supprime **toutes** les exécutions sur `master` — déploiement et release-please
+  compris. Les variantes comptent aussi : `[ci skip]`, `[no ci]`, `***NO_CI***`.
+  Le 14/09/2026, la PR #208 du précis corrigeait précisément la propagation de ce drapeau aux commits
+  de squash. Son titre le citait ; le commit de fusion `21ac558` n'a déclenché aucun workflow. Le
+  correctif contre le drapeau a été éteint par le drapeau, et la release qui devait suivre n'a jamais
+  été proposée.
+  Le symptôme est une **absence**, jamais un échec : quand une pousse sur `master` ne produit aucune
+  exécution, soupçonne le sujet du commit avant de soupçonner GitHub.
 
 ### Tester
 
