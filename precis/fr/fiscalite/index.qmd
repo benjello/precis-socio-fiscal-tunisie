@@ -46,6 +46,33 @@ Ce document est une ébauche.
 
 Ce précis présente les impôts en Tunisie, principalement depuis l'indépendance (1956), après un rappel des antécédents beylicaux et coloniaux dont le système fiscal a hérité.
 
+Avant d'entrer dans chaque impôt, une vue d'ensemble situe ce que chacun pèse et comment ces poids se sont déplacés.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import irpp as fig_irpp
+import figtools
+figtools.figure_tabs(
+    fig_irpp.fig_composition(), fig_irpp.table_composition(), "recettes-fiscales-composition",
+    slug="fig_recettes_composition",
+    caption="Composition des recettes fiscales de l'État, 1986-2025",
+    note_lecture=(
+        "Chaque bande donne la part d'un impôt dans le total des recettes fiscales, et "
+        "l'ensemble fait 100 % chaque année. Les **droits de douanes**, en rouge, sont le "
+        "poste à lire en premier : ils fondent de près d'un quart du prélèvement au début "
+        "des années 1990 à environ un vingtième aujourd'hui. La bande grise « autres impôts "
+        "indirects » regroupe les fonds spéciaux du trésor, les fonds de concours et un "
+        "reliquat : c'est la distinction du classeur du ministère, conservée telle quelle "
+        "plutôt qu'une ventilation inventée."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
+Le mouvement d'ensemble tient en deux mouvements inverses. Les **droits de douanes** passent de 22,9 % des recettes fiscales en 1990 à 5,1 % en 2025 — l'effet du démantèlement tarifaire engagé avec l'accord d'association de 1995. L'**impôt sur le revenu** suit la trajectoire opposée, de 9,3 % à 28,9 %. La TVA, elle, reste remarquablement stable autour de 26 à 30 % sur toute la période : le prélèvement s'est déplacé de la frontière vers le revenu, non vers la consommation.
+
 ## L'impôt sur le revenu des personnes physiques (IRPP)
 
 L'[impôt sur le revenu des personnes physiques](#g-irpp) est régi par le code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés, promulgué par la loi n° 89-114 du 30 décembre 1989 [@loi-irpp-is-1989] et applicable aux revenus réalisés à compter du 1^er^ janvier 1990. Le barème progressif de cet impôt figure au paragraphe I de son article 44.
@@ -539,6 +566,37 @@ l'article 22 du décret-loi n° 2022-79 (LF 2023), à titre temporaire pour 2023
 opéré par la LF 2025 ; et l'état du droit pour 2026, le régime temporaire arrivant à échéance. Les
 références d'openfisca-tunisia pointent vers un dépôt privé et sont à remplacer par des URL
 pist.tn. Cf. Q10 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
+
+#### Ce que l'impôt rapporte
+
+Le barème et l'assiette décrits jusqu'ici produisent un rendement, et ce rendement se mesure. Le ministère des Finances publie les recettes fiscales par rubrique depuis 1986 ; rapportées au produit intérieur brut et aux dépenses de l'État, elles situent l'IRPP dans l'ensemble du prélèvement.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import irpp as fig_irpp
+import figtools
+figtools.figure_tabs(
+    fig_irpp.fig_rendement(), fig_irpp.table(), "irpp-ratios",
+    slug="fig_irpp_rendement",
+    caption="Rendement de l'impôt sur le revenu rapporté au PIB et aux dépenses de l'État, 1986-2025",
+    note_lecture=(
+        "**La zone grisée, à gauche de 1990, ne mesure pas l'IRPP.** La rubrique « impôts sur "
+        "le revenu » du ministère des Finances est continue depuis 1986, mais l'IRPP n'existe "
+        "qu'à compter des revenus de 1990 : avant, la même ligne agrège les impôts cédulaires "
+        "et la contribution personnelle d'État, dont la section précédente retrace l'histoire. "
+        "Les deux segments ne se comparent donc pas. La courbe **bleue** (échelle de gauche) "
+        "rapporte l'impôt au **PIB**, la courbe **rouge** (échelle de droite) aux **dépenses "
+        "totales** de l'État, qui ne sont publiées qu'à partir de 1990."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
+Deux traits ressortent. Le premier est la **discontinuité de 1990** elle-même : les recettes reculent de 231,9 à 201,7 millions de dinars entre 1989 et 1990, et la part des salaires dans l'impôt passe de 71 à 83 %. C'est la signature d'un changement de régime — la substitution d'un impôt général à des impôts cédulaires —, non une évolution économique.
+
+Le second est la **trajectoire longue**. De 1990 à 2016, le barème de l'article 44 § I n'a pas bougé : mêmes tranches, mêmes taux, pendant vingt-sept exercices. Dans le même temps, le rendement de l'impôt passe de 1,9 % à plus de 6 % du produit intérieur brut, et de 9 % à près de 30 % des recettes fiscales. Un barème nominalement figé dans une économie où les revenus nominaux progressent déplace mécaniquement les contribuables vers le haut du barème : c'est ce que la figure donne à voir.
 
 ## L'impôt sur les sociétés (IS)
 
