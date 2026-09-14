@@ -174,6 +174,7 @@
 
 ### ✨ جديد
 
+*   **التكامل المستمر:** تحقق حتمي من التكافؤ بين الفرنسية والعربية ([38aef8e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/38aef8e506f888a65016f2d4a68d4e8e4a9f3fe3))
 *   **الأجور:** ب.1 الخدمة المنجزة، النظام الاستدلالي القديم، تحول 1997-98 ([21c7856](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/21c785685f5c9b83a58dc15b8f3ca8adee57e057))
 
 
