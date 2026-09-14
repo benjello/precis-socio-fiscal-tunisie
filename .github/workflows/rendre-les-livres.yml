@@ -1,0 +1,90 @@
+name: Rendu des livres
+
+# POURQUOI CE CONTRÔLE EXISTE
+#
+# Jusqu'ici, AUCUN job de CI ne rendait les livres. Le rendu n'existait que dans
+# `deploy.yml`, c'est-à-dire APRÈS la fusion : une PR pouvait casser un livre et
+# passer au vert, l'échec n'apparaissant qu'au déploiement de `master`.
+#
+# Cas réel (issue #165) : la figure du PNAFN levait un `IndexError` à la
+# construction du livre « Prestations sociales », parce qu'elle lisait
+# directement un paramètre openfisca absent de l'environnement de build. Le
+# défaut n'a été vu que parce qu'un rendu a été lancé à la main.
+#
+# CE QUE CE JOB ATTRAPE, ET CE QU'IL N'ATTRAPE PAS
+#
+# Il attrape ce qui fait ÉCHOUER un rendu : exception dans un module de figure,
+# chunk Python en erreur, `_quarto.yml` malformé, fichier de chapitre absent.
+#
+# Il n'attrape PAS ce que Quarto rend sans broncher — une citation non résolue
+# (« [?] ») ou un lien mort n'interrompent pas le rendu. Un vert ici ne vaut donc
+# pas relecture : il dit que les livres se construisent, pas qu'ils sont justes.
+#
+# POURQUOI `./build.sh --no-pdf`
+#
+# C'est le même script que le déploiement, donc la même boucle de rendu : un
+# livre qui passe ici passera là. `--no-pdf` évite d'installer TinyTeX, qui ne
+# sert qu'au PDF et coûte plusieurs minutes ; le HTML suffit à prouver que le
+# livre se construit. Le script sort en 1 dès qu'un livre échoue (`FAILED_BOOKS`),
+# ce job hérite donc de son code de retour sans avoir à l'interpréter.
+#
+# PORTÉE : les deux langues et les cinq livres, comme le déploiement. L'arabe est
+# inclus délibérément — la dérive des chapitres de `_quarto.yml` est un mode de
+# défaillance propre à l'arabe, que le français ne peut pas révéler.
+
+on:
+  pull_request:
+    paths:
+      - 'precis/**'
+      - 'scripts/**'
+      - 'build.sh'
+      - 'pyproject.toml'
+      # Le job doit rejouer quand on le modifie LUI — sans quoi la PR qui
+      # l'introduit ne le déclenche pas, et il serait fusionné sans avoir
+      # jamais tourné.
+      - '.github/workflows/rendre-les-livres.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rendu-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  rendre:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du précis
+        uses: actions/checkout@v5
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+
+      - name: Install Python dependencies via uv
+        run: uv sync
+
+      # Le build doit être AUTONOME : ni openfisca-tunisia ni tunisia-data ne sont
+      # installés ici, pas plus qu'au déploiement. Les tableaux de paramètres et les
+      # séries statistiques sont des snapshots versionnés, relus par le build. Si ce
+      # job échoue faute d'un de ces paquets, c'est qu'un module a recommencé à lire
+      # une source vive — ce que ce contrôle est précisément là pour interdire.
+      - name: Rendre les cinq livres, dans les deux langues
+        run: ./build.sh --no-pdf
+
+      - name: Ce qui a été produit
+        if: always()
+        run: |
+          {
+            echo "## Livres rendus"
+            echo
+            if [ -d local_site ]; then
+              find local_site -name index.html | sort | sed 's|^|- |'
+            else
+              echo "Aucun site assemblé : le rendu a échoué avant l'assemblage."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
