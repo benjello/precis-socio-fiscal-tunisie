@@ -1,5 +1,12 @@
 # سجل التغييرات
 
+## [1.16.4](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.16.3...v1.16.4) (2026-09-14)
+
+
+### 🐛 إصلاحات الأخطاء
+
+* **التكامل المستمر:** إظهار سجل التغييرات لآلية التحقق من التكافؤ ([e6e567c](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e6e567c0d698e32a2406c1365a5b01534902db14)), يغلق [#172](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/172)
+
 ## [1.16.3](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.16.2...v1.16.3) (2026-09-14)
 
 
