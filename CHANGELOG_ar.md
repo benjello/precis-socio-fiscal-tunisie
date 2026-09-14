@@ -1,5 +1,12 @@
 # سجل التغييرات
 
+## [1.16.3](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.16.2...v1.16.3) (2026-09-14)
+
+
+### 🐛 إصلاحات الأخطاء
+
+* **العربية:** ترجمة موحدة للناتج المحلي الإجمالي والمداخيل الجبائية ([42414ad](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/42414ad393d252d33fccdc565c7b652b31e80152))
+
 ## [1.16.2](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.16.1...v1.16.2) (2026-09-14)
 
 
