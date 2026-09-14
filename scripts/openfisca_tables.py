@@ -63,7 +63,12 @@ PAQUETS = {
         # où les paramètres de retraite sont datés sur leur texte et sourcés : en deçà,
         # les tableaux du livre « Retraites » sortiraient avec une colonne « Texte » vide
         # et des dates d'effet fausses — impossibles à distinguer d'un tableau correct.
-        "version_minimale": (5, 7),
+        # 7.0 déplace deux paramètres que ce dépôt lit par leur chemin : l'indemnité du
+        # quatrième rang (`rang_4_et_plus` -> `rang_4`, 6.0) et l'âge des fonctions
+        # astreignantes, dont la feuille devient un nœud (`fonctions_astreignantes` ->
+        # `fonctions_astreignantes/age`, 7.0). En deçà, la génération échoue franchement
+        # — « paramètre introuvable ou vide » — au lieu de produire un tableau faux.
+        "version_minimale": (7, 0),
     },
 }
 

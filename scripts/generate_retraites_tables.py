@@ -235,7 +235,7 @@ def tableaux(langue):
         specs = [
             (f"{CNRPS}/age_legal/civil/cadre_commun.yaml", m["cadre_commun"], age),
             (f"{CNRPS}/age_legal/civil/ouvriers_travaux_penibles.yaml", m["penibles"], age),
-            (f"{CNRPS}/age_legal/civil/fonctions_astreignantes.yaml", m["astreignantes"], age),
+            (f"{CNRPS}/age_legal/civil/fonctions_astreignantes/age.yaml", m["astreignantes"], age),
             (f"{CNRPS}/age_legal/civil/cadres_actifs.yaml", m["cadres_actifs"], age),
             (f"{CNRPS}/age_legal/civil/enseignants_du_superieur.yaml", m["superieur"], age),
         ]
@@ -307,7 +307,7 @@ def tableaux(langue):
                  m["enfant2"], dinars),
                 (f"{CNRPS}/accessoires/indemnites_familiales/rang_3.yaml",
                  m["enfant3"], dinars),
-                (f"{CNRPS}/accessoires/indemnites_familiales/rang_4_et_plus.yaml",
+                (f"{CNRPS}/accessoires/indemnites_familiales/rang_4.yaml",
                  m["enfant4"], dinars),
             ],
             cles=CLES_INDEMNITES, **datee,
