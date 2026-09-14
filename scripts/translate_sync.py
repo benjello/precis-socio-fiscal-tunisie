@@ -45,6 +45,41 @@ def restore_locators(source_text, translated_text):
     return CITATION_RE.sub(swap, translated_text)
 
 
+URL_RE = re.compile(r"https?://[^\s)\]<>\"']+")
+
+
+def restore_urls(source_text, translated_text):
+    """Rétablit les URL dans leur forme d'origine.
+
+    Une URL n'est pas de la prose : elle doit traverser la traduction intacte. Le
+    modèle l'abîme pourtant régulièrement, et toujours de façon plausible — le
+    14 septembre 2026, cinq passes sur le seul CHANGELOG ont produit
+    « github.enjello », « github.Bcom », un domaine remplacé par la date du jour,
+    le segment « benjello/ » disparu, et une passe où ~150 URL sur 195 étaient
+    réécrites d'un coup. Chacune a dû être réparée à la main.
+
+    Comme pour `restore_locators`, la restauration est positionnelle et PRUDENTE :
+    on ne recopie que si les deux textes portent le même NOMBRE d'URL. Sinon la
+    correspondance un-à-un n'est pas établie, on ne touche à rien, et le contrôle
+    de parité signalera l'écart — mieux vaut une divergence visible qu'une URL
+    restaurée au mauvais endroit.
+
+    LIMITE CONNUE, vérifiée par un test : le contrôle porte sur le nombre, pas sur
+    l'identité. Si la traduction REORDONNAIT les URL sans en changer le nombre,
+    cette fonction leur réimposerait silencieusement l'ordre de la source. C'est
+    accepté ici parce que l'ordre des URL suit celui de la prose, que le modèle
+    met à jour sans réorganiser — mais c'est le point à regarder en premier si une
+    URL se retrouve un jour attachée au mauvais texte.
+    """
+    src = URL_RE.findall(source_text)
+    dst = URL_RE.findall(translated_text)
+    if len(src) != len(dst) or src == dst:
+        return translated_text
+
+    urls = iter(src)
+    return URL_RE.sub(lambda _m: next(urls), translated_text)
+
+
 def get_git_diff(base_sha, head_sha, file_path):
     try:
         cmd = ["git", "diff", base_sha, head_sha, "--", file_path]
@@ -247,6 +282,7 @@ Fichier à traduire :
                 translated_text = translated_text[:-4]
                 
             translated_text = restore_locators(new_source_text, translated_text)
+            translated_text = restore_urls(new_source_text, translated_text)
 
             # GARDE-FOU CONTRE LA TRADUCTION TRONQUÉE.
             #
