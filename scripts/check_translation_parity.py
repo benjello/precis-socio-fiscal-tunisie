@@ -37,11 +37,21 @@ peuvent être FR ou AR ; l'homologue est déduit. Sortie 1 si une divergence est
 trouvée, 0 sinon. Aucune dépendance hors bibliothèque standard.
 
 En CI, `translation-sync.yml` ne lui passe QUE les fichiers qu'il vient de
-traduire : lancé sur tout le dépôt, il remonte aussi la dette préexistante
-— notamment le fait que le corpus arabe mélange deux conventions de
-numérotation selon les livres (« الأمر عدد 85-1025 » ici, « الأمر عدد 1025
-لسنة 1985 » là) —, ce qui bloquerait toute PR pour des raisons étrangères à
-son contenu. Le mode sans argument est fait pour l'audit, à lancer en local.
+traduire, et les compare à l'état antérieur (`--compare-to`) : une PR n'est
+bloquée que par ce qu'elle introduit. Le mode sans argument est fait pour
+l'audit, à lancer en local.
+
+État du corpus, mesuré le 14/09/2026 : **zéro divergence sur les 14 paires**.
+La dette que ce module documentait — fiscalite, retraites, prestations_sociales
+et _regime_conventionnel au 27/08/2026 — a été résorbée par les synchronisations
+successives.
+
+Les deux écritures de numéros, elles, coexistent toujours, mais très
+inégalement : 728 occurrences de la forme littérale contre 16 de la forme
+développée, ces dernières concentrées sur trois fichiers dont un seul
+(`_regime_conventionnel.qmd`) l'emploie exclusivement. Cela ne produit aucune
+divergence — `check_law_numbers` accepte les deux formes par construction — et
+n'a donc pas à être « corrigé » : c'est une variante légitime, pas une dette.
 """
 
 import glob
