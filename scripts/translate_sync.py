@@ -70,14 +70,34 @@ def restore_urls(source_text, translated_text):
     accepté ici parce que l'ordre des URL suit celui de la prose, que le modèle
     met à jour sans réorganiser — mais c'est le point à regarder en premier si une
     URL se retrouve un jour attachée au mauvais texte.
+
+    ELLE SE JOURNALISE, et c'est nécessaire : muette quand il n'y a rien à faire,
+    elle annonce ses restaurations ET ses abstentions. Sans cela son effet est
+    inattribuable — le 14/09/2026, la sixième passe du CHANGELOG est revenue
+    intacte après cinq corrompues, et rien dans le journal ne permettait de dire
+    si cette fonction avait restauré des URL ou si le modèle n'avait simplement
+    rien abîmé cette fois-là.
     """
     src = URL_RE.findall(source_text)
     dst = URL_RE.findall(translated_text)
-    if len(src) != len(dst) or src == dst:
+
+    # ABSTENTION — le cas le plus important à dire. La fonction laisse alors
+    # passer une corruption éventuelle, et c'est le contrôle de parité qui devra
+    # trancher : un silence ici serait trompeur.
+    if len(src) != len(dst):
+        print(f"  URL : {len(src)} à la source, {len(dst)} dans la traduction — "
+              f"correspondance non établie, aucune restauration "
+              f"(le contrôle de parité tranchera).")
         return translated_text
 
+    if src == dst:
+        return translated_text  # rien à faire : muette
+
+    abimees = sum(1 for a, b in zip(src, dst) if a != b)
     urls = iter(src)
-    return URL_RE.sub(lambda _m: next(urls), translated_text)
+    restaure = URL_RE.sub(lambda _m: next(urls), translated_text)
+    print(f"  URL restaurées depuis la source : {abimees} sur {len(src)}.")
+    return restaure
 
 
 def get_git_diff(base_sha, head_sha, file_path):
