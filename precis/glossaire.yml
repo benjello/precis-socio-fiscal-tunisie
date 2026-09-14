@@ -3331,3 +3331,44 @@ entries:
         2003 المتعلّق بتصفية حقوق الأشخاص المنتفعين بتغطية عدّة أنظمة قانونية، والأمر عدد
         1128 لسنة 2003 المؤرّخ في 19 ماي 2003.
       synonymes: [التنسيق بين الأنظمة]
+
+  - id: pib
+    acronyme: PIB
+    statut: valide
+    references: []
+    voir_aussi: [masse-salariale, recettes-fiscales, administrations-publiques]
+    fr:
+      terme: Produit intérieur brut
+      definition: >
+        Valeur totale des biens et services produits sur le territoire au cours
+        d'une période. Sert de dénominateur aux ratios de finances publiques du
+        précis : masse salariale, rendement de l'impôt, recettes fiscales.
+      synonymes: [PIB]
+    ar:
+      terme: الناتج المحلي الإجمالي
+      definition: >
+        القيمة الجملية للسلع والخدمات المنتَجة داخل التراب الوطني خلال فترة
+        معيّنة. ويُتّخذ مقامًا لنسب المالية العمومية في هذا الملخّص: كتلة الأجور
+        ومردود الضريبة والمداخيل الجبائية.
+      synonymes: []
+
+  - id: recettes-fiscales
+    acronyme: null
+    statut: valide
+    references: []
+    voir_aussi: [pib, irpp, css, cotisations-sociales]
+    fr:
+      terme: Recettes fiscales
+      definition: >
+        Ensemble des impôts, droits et taxes perçus par l'État, à l'exclusion
+        des recettes non fiscales. Les documents budgétaires tunisiens les
+        distinguent des recettes non fiscales, qui proviennent notamment de la
+        redevance de transit du gaz.
+      synonymes: []
+    ar:
+      terme: المداخيل الجبائية
+      definition: >
+        مجموع الضرائب والمعاليم والأداءات التي تستخلصها الدولة، باستثناء
+        المداخيل غير الجبائية. وتميّزها وثائق الميزانية التونسية عن المداخيل غير
+        الجبائية، المتأتّية خاصّةً من أتاوة عبور الغاز.
+      synonymes: []

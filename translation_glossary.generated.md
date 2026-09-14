@@ -90,9 +90,11 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Précis socio-fiscal | الملخّص الاجتماعي والجبائي |  |
 | Prestations familiales | المنح العائلية |  |
 | Prime de rendement | منحة المردودية |  |
+| Produit intérieur brut | الناتج المحلي الإجمالي | PIB |
 | Programme national d'aide aux familles nécessiteuses | البرنامج الوطني لمساعدة العائلات المعوزة | PNAFN |
 | Promotion | الترقية |  |
 | Quota régional | الحصّة الجهوية |  |
+| Recettes fiscales | المداخيل الجبائية |  |
 | Régime agricole amélioré | النظام الفلاحي المحسَّن | RSAA |
 | Régime conventionnel public | النظام الاتفاقي العمومي |  |
 | Régime de marché contrôlé | نظام السوق الموجَّه |  |
