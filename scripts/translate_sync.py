@@ -3,8 +3,11 @@ import os
 import re
 import sys
 import subprocess
-from google import genai
-from google.genai import types
+# `google-genai` n'est PAS importé ici, mais dans `main()`. Ce module porte des
+# fonctions purement textuelles — `restore_locators`, `restore_urls` — qui
+# réécrivent du contenu publié et doivent donc être testables SANS le client du
+# modèle. Un import de tête les rendait inatteignables hors environnement CI, où
+# le paquet n'est installé qu'à la volée (`uv run --with google-genai`).
 
 CITATION_RE = re.compile(r"\[@([A-Za-z][A-Za-z0-9_-]*),\s*([^\]]+)\]")
 
@@ -109,6 +112,10 @@ def get_git_diff(base_sha, head_sha, file_path):
         return ""
 
 def main():
+    # Import local : voir la note en tête de module. Seul `main()` parle au modèle.
+    from google import genai
+    from google.genai import types
+
     if len(sys.argv) < 4:
         print("Usage: python translate_sync.py <base_sha> <head_sha> <file1> <file2> ...")
         sys.exit(0)

@@ -1,0 +1,50 @@
+name: Tests
+
+# POURQUOI CE JOB EXISTE
+#
+# Le dépôt n'avait AUCUN test versionné : ni fichier de test, ni configuration,
+# ni job. Or plusieurs scripts ne se contentent pas de lire — ils réécrivent du
+# contenu publié, ou décident si du contenu sera publié :
+#
+#   - `translate_sync.py` réécrit les fichiers arabes, et `restore_urls()` y
+#     SUBSTITUE des URL. Une erreur attache silencieusement une URL au mauvais
+#     texte ;
+#   - `check_translation_parity.py` décide si une traduction est fusionnable.
+#
+# Tous les contrôles écrits le 14/09/2026 ont été éprouvés à la main, dans des
+# fichiers temporaires de session — donc non rejouables. Cinq défauts n'ont été
+# trouvés que parce qu'un test négatif a été tenté délibérément, dont un garde
+# qui affichait « ✗ » en renvoyant pourtant 0.
+#
+# `unittest` de la bibliothèque standard : AUCUNE dépendance nouvelle. Le point
+# n'est pas l'outil, c'est qu'un test existe et soit rejoué.
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/workflows/tests.yml'
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tester:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du précis
+        uses: actions/checkout@v5
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+
+      # Aucune dépendance n'est installée à dessein : ces tests portent sur des
+      # fonctions purement textuelles, et doivent tourner sans le client du
+      # modèle ni openfisca. Si l'un d'eux réclame un jour un paquet, c'est le
+      # signe qu'il teste autre chose que ce qu'il annonce.
+      - name: Lancer les tests
+        run: uv run --no-project python -m unittest discover -s tests -v
