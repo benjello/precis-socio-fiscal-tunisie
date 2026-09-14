@@ -1,5 +1,12 @@
 # سجل التغييرات
 
+## [1.16.2](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.16.1...v1.16.2) (2026-09-14)
+
+
+### 🐛 إصلاحات الأخطاء
+
+* **العربية:** إصلاح رابط URL تالف بسبب الترجمة ([281d86c](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/281d86c56e7d02226352bf67926acf41928e5400))
+
 ## [1.16.1](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.16.0...v1.16.1) (2026-09-14)
 
 
