@@ -81,6 +81,11 @@ Dépôts concernés : `openfisca-tunisia` (fiscalité, cotisations, prestations)
 - Le corps de chaque PR porte une section **« Questions ouvertes »** pour ce que la revue doit
   trancher.
 - **Ne fusionne jamais**, et attends la CI.
+- **Ferme les tickets avec un mot-clé que GitHub reconnaît** : `Closes #30`, `Fixes #30`, `Resolves #30`.
+  « Ferme l'issue #30 » n'en est pas un — le ticket reste ouvert après la fusion, et le correctif
+  livré passe pour du travail en souffrance. Six tickets d'`openfisca-tunisia-pension` ont traîné
+  ainsi (#27, #29, #30, #37, #40, #46) avant d'être fermés à la main, plusieurs jours après leur
+  correction.
 
 ### Tester
 
@@ -114,6 +119,21 @@ en attendant que les paramètres soient datés et sourcés en amont, et porte al
 `<!-- TODO (rédacteur) : remplacer par un tableau engendré -->`. On ne régénère jamais un tableau
 qui dépend d'une PR openfisca non fusionnée : la CI régénère depuis `master`.
 
+**Déplacer un paramètre casse le précis, qui le lit par son chemin.** Un renommage ou un passage de
+feuille à nœud rend le générateur muet — « paramètre introuvable ou vide » — et le contrôle
+hebdomadaire de fraîcheur échoue sans qu'aucun commit du précis soit en cause. L'ordre n'est donc
+jamais indifférent :
+
+1. la PR du modèle annonce la dépendance dans son corps, et un ticket la consigne côté précis ;
+2. la version est **publiée** ;
+3. la borne de version du paquet est relevée dans `scripts/openfisca_tables.py`, avec son motif ;
+4. les chemins sont corrigés, les snapshots régénérés, et l'on vérifie qu'ils sortent **identiques** —
+   seul le chemin a changé, pas la valeur.
+
+Corriger le précis avant la publication casse ses tableaux ; corriger après la publication, mais
+trop tard, casse sa CI. Le 14 septembre 2026, deux paramètres déplacés le même jour ont produit les
+deux cas.
+
 ## Vérifier avant de rendre la main
 
 ```
@@ -122,6 +142,16 @@ cd precis/fr/<livre> && uv run quarto render --to html     # zéro citation [?] 
 uv run python scripts/check_pas_de_modele.py               # le précis ne parle pas du modèle
 ./build.sh                                                  # les cinq livres, FR et AR
 ```
+
+**Rends TOUS les livres que la PR touche, pas seulement celui qui l'occupe.** Aucun job de CI ne
+rend les livres : un chapitre qui ne compile plus passe la revue sans que rien ne le signale. Le
+14 septembre 2026, une figure a cassé le rendu des « Prestations sociales » — `IndexError` sur une
+série vide — parce qu'elle lisait un paramètre openfisca absent du build ; le livre de la fiscalité,
+lui, rendait parfaitement. Un seul rendu aurait laissé passer l'autre.
+
+Un module de figure lit **`figtools.series()`** — l'entrepôt ou son snapshot — et jamais directement
+les paramètres du modèle : le build du site est autonome, `openfisca-tunisia` n'y est ni installé ni
+déclaré.
 
 Et restaure les `figdata` dont seule la date de génération a changé :
 `git checkout -- precis/<langue>/<livre>/figdata`.
