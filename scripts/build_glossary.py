@@ -132,6 +132,18 @@ def ancres_utilisees(book):
 
     Le français fait foi : l'arabe en est la traduction et doit porter la même
     annexe, sans quoi les deux versions divergeraient.
+
+    Deux sources, et non une seule. La prose du livre vit dans ses `.qmd`, mais les
+    tableaux de paramètres sont des **snapshots engendrés** (`tables/*.md`) que le
+    chapitre insère à la lecture : leurs en-têtes portent des ancres de glossaire, et
+    ces ancres sont rendues comme les autres.
+
+    Ne lire que les `.qmd` a coûté trois notions au livre « Retraites » : « Cadres
+    actifs », « Fonctions astreignantes » et « Travaux pénibles et insalubres » ont
+    quitté la prose pour l'en-tête du tableau des âges lorsque celui-ci est devenu
+    engendré, et l'annexe a cessé de les définir — pendant que le chapitre continuait
+    d'y renvoyer. Trois liens morts sont ainsi partis en production sans que rien ne le
+    signale.
     """
     source = os.path.join(ROOT, "precis", "fr", book)
     trouvees = set()
@@ -142,6 +154,13 @@ def ancres_utilisees(book):
             continue
         with open(os.path.join(source, nom), encoding="utf-8") as f:
             trouvees |= set(re.findall(r"#g-([a-z0-9-]+)", f.read()))
+    tableaux = os.path.join(source, "tables")
+    if os.path.isdir(tableaux):
+        for nom in sorted(os.listdir(tableaux)):
+            if not nom.endswith(".md"):
+                continue
+            with open(os.path.join(tableaux, nom), encoding="utf-8") as f:
+                trouvees |= set(re.findall(r"#g-([a-z0-9-]+)", f.read()))
     return trouvees
 
 
@@ -240,11 +259,13 @@ def main():
 
     written = []
     ids_connus = {e["id"] for e in entries}
+    orphelines = {}
     for book in BOOKS:
         retenues = ancres_utilisees(book)
         inconnues = sorted(retenues - ids_connus)
         if inconnues:
-            print(f"⚠ {book} : ancres sans entrée au glossaire : {', '.join(inconnues)}")
+            orphelines[book] = inconnues
+            print(f"✗ {book} : ancres sans entrée au glossaire : {', '.join(inconnues)}")
         retenues &= ids_connus
         print(f"  {book} : {len(retenues)} notion(s) sur {len(entries)}")
         for lang in LANGS:
@@ -264,6 +285,22 @@ def main():
     print(f"{len(entries)} entrées. Fichiers générés :")
     for w in written:
         print(f"  - {w}")
+
+    # Une ancre rendue sans entrée au glossaire est un LIEN MORT dans le livre publié,
+    # et rien ne le signalait : le lecteur clique et n'arrive nulle part. Le cas s'est
+    # produit autrement — trois notions du livre « Retraites » ont disparu de l'annexe
+    # parce que leurs ancres avaient quitté la prose pour les tableaux engendrés, que
+    # cette fonction ne lisait pas. La cause est corrigée ; ce garde-fou attrape l'autre
+    # chemin vers le même symptôme, celui d'une ancre qui ne correspond à aucune notion.
+    #
+    # L'échec est en fin de course, une fois les fichiers écrits : le rapport reste
+    # lisible, et une régénération partielle vaut mieux qu'un arrêt au milieu.
+    if orphelines:
+        total = sum(len(v) for v in orphelines.values())
+        print(f"\n✗ {total} ancre(s) de glossaire sans notion correspondante.")
+        print("  Chacune est un lien mort dans le livre rendu. Deux issues : ajouter la")
+        print("  notion à precis/glossaire.yml, ou corriger l'ancre dans le texte.")
+        sys.exit(1)
 
 
 if __name__ == "__main__":

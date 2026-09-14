@@ -15,13 +15,19 @@ on:
   pull_request:
     paths:
       - 'precis/**/*.qmd'
+      - 'precis/**/tables/**'
+      - 'precis/glossaire.yml'
       - 'scripts/check_pas_de_modele.py'
+      - 'scripts/build_glossary.py'
   push:
     branches:
       - master
     paths:
       - 'precis/**/*.qmd'
+      - 'precis/**/tables/**'
+      - 'precis/glossaire.yml'
       - 'scripts/check_pas_de_modele.py'
+      - 'scripts/build_glossary.py'
 
 permissions:
   contents: read
@@ -36,3 +42,22 @@ jobs:
 
       - name: Le précis ne parle pas du modèle
         run: uv run python scripts/check_pas_de_modele.py
+
+      # Le glossaire est ENGENDRÉ à partir de `precis/glossaire.yml`, et l'annexe de
+      # chaque livre ne retient que les notions auxquelles il renvoie réellement — sa
+      # prose ET ses tableaux engendrés. Deux chemins mènent au même symptôme, un lien
+      # mort dans le livre publié : une ancre sans notion correspondante, que le script
+      # refuse désormais ; ou une notion que le balayage ne voit pas, ce qui est arrivé
+      # aux trois ancres portées par l'en-tête du tableau des âges du livre « Retraites ».
+      #
+      # Ce job vérifie aussi que les annexes VERSIONNÉES sont à jour : elles sont
+      # engendrées, donc un écart signifie qu'un commit les a laissées derrière lui.
+      - name: Le glossaire suit le texte rendu
+        run: |
+          uv run python scripts/build_glossary.py
+          if ! git diff --quiet -- 'precis/*/*/_glossaire.qmd' translation_glossary.generated.md; then
+            echo "✗ Les annexes de glossaire versionnées ne correspondent plus à leur source."
+            echo "  Relancer scripts/build_glossary.py et commiter le résultat."
+            git --no-pager diff --stat -- 'precis/*/*/_glossaire.qmd' translation_glossary.generated.md
+            exit 1
+          fi
