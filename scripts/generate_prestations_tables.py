@@ -357,6 +357,27 @@ def main() -> int:
                 return 1
             (sortie / nom).write_text(ot.tableau_vers_markdown(df), encoding="utf-8")
         print(f"✓ {langue} : {len(tableaux(langue))} tableaux")
+
+    # La figure du PNAFN a besoin des mêmes paliers, mais en valeurs BRUTES : un tableau
+    # markdown porte « 7,700 D » et « 1er janvier 1987 », bons à lire, impropres à tracer.
+    # Cette série est donc émise ici, hors du build — le site se construit sans openfisca
+    # (#165) —, une seule fois puisque des valeurs brutes n'ont pas de langue.
+    serie = [
+        (date, valeur, "oui" if titre else "non")
+        for date, valeur, titre, _lien in ot.serie_datee(f"{NC}/pnafn/allocation.yaml")
+        if valeur is not None
+    ]
+    if not serie:
+        print("✗ pnafn-allocation : série vide, snapshot conservé.")
+        return 1
+    cache = RACINE / "_seriescache"
+    cache.mkdir(parents=True, exist_ok=True)
+    (cache / "pnafn-allocation.csv").write_text(
+        "date,montant,atteste\n"
+        + "".join(f"{date},{valeur},{atteste}\n" for date, valeur, atteste in serie),
+        encoding="utf-8",
+    )
+    print(f"✓ série pnafn-allocation : {len(serie)} paliers")
     return 0
 
 
