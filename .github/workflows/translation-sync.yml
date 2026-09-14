@@ -4,11 +4,22 @@ on:
   push:
     branches:
       - master
+    # UNIQUEMENT les chemins FRANÇAIS. Le français est la source de vérité ;
+    # l'arabe est produit, jamais rédigé. Écouter `precis/ar/**` ne servait à
+    # rien — le filtre `PATTERN` plus bas ne retient de toute façon que le FR,
+    # de sorte qu'une modification purement arabe produisait une liste vide —,
+    # mais relançait le workflow à chaque fusion de PR de traduction. Un run à
+    # vide par fusion, c'est du bruit qui finit par masquer un vrai échec.
+    #
+    # La protection contre la boucle de rétro-traduction AR→FR est ainsi DOUBLE :
+    # les chemins ne correspondent plus, et le filtre resterait vide.
+    #
+    # Une correction faite à la main sur l'arabe seul ne déclenche donc plus rien
+    # ici : c'est voulu, et `verify-translation.yml` la couvre — il écoute les
+    # chemins arabes et y fait tourner le contrôle de parité.
     paths:
       - 'precis/fr/**/*.qmd'
       - 'precis/fr/**/_quarto.yml'
-      - 'precis/ar/**/*.qmd'
-      - 'precis/ar/**/_quarto.yml'
       - 'CHANGELOG.md'
   # PAS de déclencheur `pull_request`. Sur une PR, les filtres `paths` sont
   # évalués sur le diff ENTIER de la PR, pas sur le seul nouveau commit : tant
@@ -133,7 +144,16 @@ jobs:
           # (pas de boucle de traduction) ; le merge humain déploie la version AR.
           BRANCH="auto-translate/${{ github.sha }}"
           git checkout -b "$BRANCH"
-          git commit -m "Auto-translate sync (fr -> ar) [skip ci]"
+          # PAS de `[skip ci]`. Il visait la boucle de rétro-traduction, mais le
+          # filtre `PATTERN` et les `paths` ci-dessus s'en chargent déjà — et il
+          # se propageait au commit de SQUASH lors de la fusion, éteignant alors
+          # TOUT sur master : ni déploiement, ni release-please, ni fraîcheur.
+          #
+          # Le symptôme n'était pas un échec mais un silence. Le 14/09/2026, la
+          # figure arabe du PNAFN est ainsi restée non publiée après une fusion
+          # d'apparence normale, et deux `fix(ar)` sont restés invisibles de
+          # release-please. Quatre occurrences en une journée.
+          git commit -m "Auto-translate sync (fr -> ar)"
           git push -f origin "$BRANCH"
 
           if gh pr view "$BRANCH" --json number >/dev/null 2>&1; then
