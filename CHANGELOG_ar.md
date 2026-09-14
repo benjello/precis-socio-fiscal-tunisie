@@ -5,6 +5,7 @@
 
 ### 🐛 إصلاحات الأخطاء
 
+* **العربية:** استعادة إدخال السجل الذي أغفلته الترجمة ([fbeeecf](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/fbeeecfc9fb428da916aa3e0810910fa7c2fdd4b))
 * **الترجمة:** فشلت المزامنة عند كل إصدار جديد ([341fee0](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/341fee07a4e8911dcea72e164629784ef63d9496))
 
 ## [1.16.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.15.0...v1.16.0) (2026-09-14)
