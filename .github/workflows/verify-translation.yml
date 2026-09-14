@@ -49,11 +49,24 @@ jobs:
       #
       # CONSULTATIF ici, bloquant dans `translation-sync`. La différence est
       # voulue : là-bas l'arabe vient d'être généré en bloc et la parité doit
-      # tenir ; ici la PR est humaine et les fichiers touchés peuvent porter de
-      # la dette antérieure (au 27/08/2026 : fiscalite, retraites,
-      # prestations_sociales et _regime_conventionnel en ont). Faire échouer la
-      # PR de quelqu'un pour une divergence qu'il n'a pas introduite serait
-      # punir la mauvaise personne. Le rapport est là, à lire.
+      # tenir ; ici la PR est humaine, et faire échouer la PR de quelqu'un pour
+      # une divergence qu'il n'a pas introduite serait punir la mauvaise
+      # personne. Le rapport est là, à lire.
+      #
+      # ÉTAT DE LA DETTE. Au 27/08/2026, fiscalite, retraites,
+      # prestations_sociales et _regime_conventionnel portaient des divergences
+      # antérieures. Mesuré le 14/09/2026 : **plus aucune** — 14 paires FR/AR,
+      # zéro divergence sur tout le corpus (vérifié aussi par les codes de
+      # retour, pas seulement par la sortie). Les synchronisations successives
+      # les ont résorbées, la dernière étant la retraduction complète du chapitre
+      # des prestations sociales, qui a restitué trois clés de citation et une
+      # ancre d'un coup.
+      #
+      # Le `continue-on-error` est conservé : une dette éteinte peut renaître, et
+      # ce job doit rester lisible plutôt que bloquant sur une PR humaine. Si la
+      # dette reste nulle durablement, le rendre bloquant deviendra tentant — ou
+      # lui donner le `--compare-to` de `translation-sync`, qui ne reproche que
+      # les régressions.
       - name: Check FR/AR parity (deterministic)
         continue-on-error: true
         run: |
