@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.4](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.16.3...v1.16.4) (2026-09-14)
+
+
+### 🐛 Corrections de bugs
+
+* **ci:** faire voir le CHANGELOG au contrôle de parité ([e6e567c](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e6e567c0d698e32a2406c1365a5b01534902db14)), closes [#172](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/172)
+
 ## [1.16.3](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.16.2...v1.16.3) (2026-09-14)
 
 
