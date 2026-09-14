@@ -398,6 +398,31 @@ table("pnafn_allocation",
       "tbl-pnafn-allocation")
 ```
 
+Portés sur trente ans, ces paliers se lisent autrement : ce qui ressemble à une série est une suite de décisions, dont une seule laisse une trace publiée.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import pnafn as fig_pnafn
+import figtools
+figtools.figure_tabs(
+    fig_pnafn.fig_allocation(), fig_pnafn.table(), "pnafn-allocation",
+    slug="fig_pnafn_allocation",
+    caption="Allocation mensuelle du PNAFN, 1987-2018",
+    note_lecture=(
+        "**Les points gris ne sont pas des observations statistiques.** Ce sont des "
+        "montants administratifs, relevés dans les paramètres du modèle faute de texte "
+        "publié : dix des onze paliers ne reposent sur aucun arrêté au *Journal "
+        "officiel*. Seul le point **bleu** — 180 dinars — est attesté, et par un arrêté "
+        "de 2024 qui le **constate** sans le fixer. Le trait pointillé prolonge le "
+        "dernier palier jusqu'à aujourd'hui : la série s'arrête faute de montant "
+        "nouveau, non parce que l'allocation aurait cessé."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
 L'arrêté conjoint du 10 juillet 2024 est le premier texte publié à énoncer le montant de l'allocation. Il faut le lire avec précision : il ne fixe pas un nouveau montant, il **autorise un relèvement plafonné** au niveau du [transfert monétaire](#g-transfert-monetaire) de l'AMEN social. Sa rédaction énonce que l'allocation « fixée à 180 dinars à la date de la publication du présent arrêté conjoint, est augmentée sans que le montant de cette allocation ne dépasse le montant des transferts monétaires mensuels directs attribués dans le cadre du programme "AMEN SOCIAL", fixée à 240 dinars ». Écrire que l'allocation vaut 240 dinars depuis juillet 2024 serait une sur-interprétation ; la formulation exacte est celle d'un alignement par le haut, dans une limite. L'arrêté conjoint du 29 août 2025 reprend la même mécanique de 240 vers 260 dinars, avec **effet rétroactif au 1^er^ janvier 2025** [@arrete-2025-08-29-allocation-pauvres, art. 2].
 
 L'arrêté de 2024 conserve enfin deux traces de l'architecture ancienne : le coût est imputé sur le budget de l'État, et les caisses adressent aux ministères des décomptes périodiques « chaque trois mois », rappel du versement trimestriel d'origine.

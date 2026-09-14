@@ -17,11 +17,20 @@ name: Fraîcheur des tableaux de paramètres
 # Ce job régénère les tableaux depuis openfisca-tunisia et échoue si le résultat diffère
 # de ce qui est versionné. Il ne corrige rien de lui-même : la régénération doit passer
 # par une PR relue, comme le reste.
+#
+# Il couvre aussi `precis/_seriescache/*`, où les générateurs déposent les séries BRUTES
+# que lisent les FIGURES. Même contrat que les tableaux, pour la même raison : le build du
+# site n'importe pas openfisca, et une figure qui lisait le paramètre en direct a cassé le
+# rendu d'un livre entier (#165). Le pathspec descend jusqu'aux fichiers dans les deux
+# arbres — un répertoire nommé sans son contenu ne correspond à aucun blob.
 
 on:
   pull_request:
     paths:
       - 'precis/**/tables/**'
+      # Les séries BRUTES tirées des paramètres vivent ici, et servent les figures : même
+      # contrat, même risque de survivre à la correction du paramètre (#165).
+      - 'precis/_seriescache/**'
       - 'scripts/generate_*_tables.py'
       - 'scripts/openfisca_tables.py'
   push:
@@ -91,7 +100,7 @@ jobs:
           # Et `git diff` ne voit QUE les fichiers suivis : un snapshot d'un nom
           # nouveau, émis par un générateur mais jamais versionné, passait au vert
           # lui aussi. D'où `git status --porcelain`, qui compte les non-suivis.
-          if [ -z "$(git status --porcelain -- 'precis/*/*/tables/*')" ]; then
+          if [ -z "$(git status --porcelain -- 'precis/*/*/tables/*' 'precis/_seriescache/*')" ]; then
             echo "✓ Les tableaux publiés correspondent aux paramètres d'openfisca-tunisia."
             exit 0
           fi
@@ -117,14 +126,14 @@ jobs:
             echo "un détail de mise en forme — et ouvrir une PR."
             echo
             echo '```diff'
-            git diff -- 'precis/*/*/tables/*'
+            git diff -- 'precis/*/*/tables/*' 'precis/_seriescache/*'
             echo '```'
             echo
             echo "Snapshots non versionnés, s'il y en a :"
             echo
             echo '```'
-            git status --porcelain -- 'precis/*/*/tables/*' | grep '^??' || echo "(aucun)"
+            git status --porcelain -- 'precis/*/*/tables/*' 'precis/_seriescache/*' | grep '^??' || echo "(aucun)"
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
-          git status --porcelain -- 'precis/*/*/tables/*'
+          git status --porcelain -- 'precis/*/*/tables/*' 'precis/_seriescache/*'
           exit 1

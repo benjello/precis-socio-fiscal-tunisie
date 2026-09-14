@@ -151,8 +151,14 @@ def meta(series_id: str) -> dict:
 def series(series_id: str) -> pd.DataFrame:
     """Données d'une série : entrepôt si présent, sinon CSV snapshoté du précis.
 
-    Les séries déclarées localement (`register_provenance`) portent leurs données dans le
-    module de figure : elles n'ont pas à passer par ici.
+    Vaut pour les DEUX origines du précis. Les séries de `tunisia-data` sont snapshotées
+    par `refresh_cache()` ; celles qui viennent des paramètres d'openfisca — du droit codé,
+    non des observations — sont snapshotées par les générateurs de tableaux, qui lisent
+    déjà ces paramètres. Dans les deux cas le build ne voit qu'un CSV versionné, et une
+    figure n'a jamais à lire une source vive (#165).
+
+    `register_provenance` reste le moyen de déclarer la provenance d'une série absente du
+    catalogue de l'entrepôt ; il ne dit rien de l'endroit où vivent ses données.
     """
     td = _td()
     if td is not None:
