@@ -1,5 +1,12 @@
 # سجل التغييرات
 
+## [1.16.4](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.16.3...v1.16.4) (2026-09-14)
+
+
+### 🐛 إصلاحات الأخطاء
+
+* **التكامل المستمر:** إظهار سجل التغييرات لآلية التحقق من التكافؤ ([e6e567c](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e6e567c0d698e32a2406c1365a5b01534902db14)), يغلق [#172](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/172)
+
 ## [1.16.3](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.16.2...v1.16.3) (2026-09-14)
 
 
@@ -49,7 +56,7 @@
 *   **المراجع:** منح كتاب المساهمات الاجتماعية مجموعته في زوتيرو ([e1b3e4d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e1b3e4d037963d395a53602e0b67bce8067a1ee3))
 *   **المراجع:** يتسامح مع الشهادة منتهية الصلاحية لموقع pist.tn في التحقق من الروابط ([a39084e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/a39084e8553d69487020a89f491e8b9f51d291c5))
 *   **الاتفاقيات:** لم تقبل آلية التحقق مسارًا خارج المستودع بشكل جيد ([3987d99](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/3987d99dfadf432104203e3a248730a5f1dae071))
-*   **المساهمات الاجتماعية:** الحفاظ على الشرطة في إجمالي الأنظمة بدون صاحب عمل ([0c41685](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/0c4168588d95a76e5b7b3d9c5fbe57639b10d89b))
+*   **المساهمات الاجتماعية:** الحفاظ على الشرطة في إجمالي الأنظمة بدون صاحب عمل ([0c41685](https://github.enjello/precis-socio-fiscal-tunisie/commit/0c4168588d95a76e5b7b3d9c5fbe57639b10d89b))
 *   **المساهمات الاجتماعية:** يطبق النموذج بشكل صحيح الوعاء الضريبي التفاضلي للتأمين التكميلي ([4064ba9](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/4064ba962802e2cc4172a5eca90afac734db8c2c))
 *   **المساهمات الاجتماعية:** عدم توسيع ما يُقرأ لقانونين فقط ليشمل ثلاثة قوانين ([193669d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/193669ddeae708cfdad3fab51b6731ebba3472d2))
 *   **المساهمات الاجتماعية:** حل الاقتباسين اليتيمين في ملحق المسرد ([874f66f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/874f66f19c4c48b66a856e45e5dae3e539a2f0a4))
