@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.2](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.1...v1.18.2) (2026-09-14)
+
+
+### 🐛 Corrections de bugs
+
+* **traduction:** restaurer les URL que le modèle abîme ([#199](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/199)) ([003e214](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/003e21420775ed744e2f09cab82a93696e8052ec)), closes [#192](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/192)
+
 ## [1.18.1](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.0...v1.18.1) (2026-09-14)
 
 
