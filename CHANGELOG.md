@@ -5,6 +5,7 @@
 
 ### 🐛 Corrections de bugs
 
+* **ar:** rétablir l'entrée de journal que la traduction avait escamotée ([fbeeecf](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/fbeeecfc9fb428da916aa3e0810910fa7c2fdd4b))
 * **traduction:** la synchro échouait à chaque publication de version ([341fee0](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/341fee07a4e8911dcea72e164629784ef63d9496))
 
 ## [1.16.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.15.0...v1.16.0) (2026-09-14)
