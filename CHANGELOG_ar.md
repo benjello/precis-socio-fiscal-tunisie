@@ -1,5 +1,12 @@
 # سجل التغييرات
 
+## [1.18.1](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.0...v1.18.1) (2026-09-14)
+
+
+### 📝 التوثيق
+
+* **التكامل المستمر:** تم تسوية دين التكافؤ — تصحيح ما يؤكده تعليقان ([#196](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/196)) ([3d51b84](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/3d51b84b93fa25d945fa6d7be415a60dc0766ea0))
+
 ## [1.18.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.17.0...v1.18.0) (2026-09-14)
 
 
