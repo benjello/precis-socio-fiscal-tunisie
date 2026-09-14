@@ -1,5 +1,12 @@
 # سجل التغييرات
 
+## [1.18.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.17.0...v1.18.0) (2026-09-14)
+
+
+### ✨ جديد
+
+* **التكامل المستمر:** الحفاظ على طلبات سحب الترجمة، وعدم الحظر إلا عند حدوث تراجعات ([#191](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/191)) ([cc36a1e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/cc36a1e1fd68a723c7f2eac34758e637f22d0f15)), يغلق [#188](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/188) [#189](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/189)
+
 ## [1.17.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.16.4...v1.17.0) (2026-09-14)
 
 
@@ -64,7 +71,7 @@
 *   **المراجع:** منح كتاب المساهمات الاجتماعية مجموعته في زوتيرو ([e1b3e4d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e1b3e4d037963d395a53602e0b67bce8067a1ee3))
 *   **المراجع:** يتسامح مع الشهادة منتهية الصلاحية لموقع pist.tn في التحقق من الروابط ([a39084e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/a39084e8553d69487020a89f491e8b9f51d291c5))
 *   **الاتفاقيات:** لم تقبل آلية التحقق مسارًا خارج المستودع بشكل جيد ([3987d99](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/3987d99dfadf432104203e3a248730a5f1dae071))
-*   **المساهمات الاجتماعية:** الحفاظ على الشرطة في إجمالي الأنظمة بدون صاحب عمل ([0c41685](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/0c4168588d95a76e5b7b3d9c5fbe57639b10d89b))
+*   **المساهمات الاجتماعية:** الحفاظ على الشرطة في إجمالي الأنظمة بدون صاحب عمل ([0c41685](https://github.enjello/precis-socio-fiscal-tunisie/commit/0c4168588d95a76e5b7b3d9c5fbe57639b10d89b))
 *   **المساهمات الاجتماعية:** يطبق النموذج بشكل صحيح الوعاء الضريبي التفاضلي للتأمين التكميلي ([4064ba9](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/4064ba962802e2cc4172a5eca90afac734db8c2c))
 *   **المساهمات الاجتماعية:** عدم توسيع ما يُقرأ لقانونين فقط ليشمل ثلاثة قوانين ([193669d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/193669ddeae708cfdad3fab51b6731ebba3472d2))
 *   **المساهمات الاجتماعية:** حل الاقتباسين اليتيمين في ملحق المسرد ([874f66f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/874f66f19c4c48b66a856e45e5dae3e539a2f0a4))
