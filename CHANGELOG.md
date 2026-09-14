@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.17.0...v1.18.0) (2026-09-14)
+
+
+### ✨ Nouveautés
+
+* **ci:** garder les PR de traduction, et ne bloquer que sur les régressions ([#191](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/191)) ([cc36a1e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/cc36a1e1fd68a723c7f2eac34758e637f22d0f15)), closes [#188](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/188) [#189](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/189)
+
 ## [1.17.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.16.4...v1.17.0) (2026-09-14)
 
 
