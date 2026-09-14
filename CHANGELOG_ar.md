@@ -1,5 +1,12 @@
 # سجل التغييرات
 
+## [1.18.1](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.0...v1.18.1) (2026-09-14)
+
+
+### 📝 التوثيق
+
+* **التكامل المستمر:** تم تسوية دين التكافؤ — تصحيح ما يؤكده تعليقان ([#196](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/196)) ([3d51b84](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/3d51b84b93fa25d945fa6d7be415a60dc0766ea0))
+
 ## [1.18.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.17.0...v1.18.0) (2026-09-14)
 
 
@@ -51,7 +58,7 @@
 
 *   **المساهمات الاجتماعية:** ينشئ الكتاب الخامس حول الاقتطاع الاجتماعي ([ef9c4d6](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/ef9c4d629cb9cb5b5e0051a1cf40ae11f96af1d9))
 *   **المساهمات الاجتماعية:** توثيق كل نظام خاص، إنشائه ومعدلاته ([be179fa](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/be179fa9d85accd00a1a82f64a338fa51196da46))
-*   **المساهمات الاجتماعية:** إعادة صياغة القطاع العام بناءً على النصوص، وإضافة 41 مرجعًا ([7a4c0e1](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/7a4c0e1fd2e243b2c2df69643c6dac04ff9bf9b8))
+*   **المساهمات الاجتماعية:** إعادة صياغة القطاع العام بناءً على النصوص، وإضافة 41 مرجعًا ([7a4c0e1](https://github.enjello/precis-socio-fiscal-tunisie/commit/7a4c0e1fd2e243b2c2df69643c6dac04ff9bf9b8))
 *   **المساهمات الاجتماعية:** جدول فروع لكل نظام، وآلية تحقق تراقبها ([acad9dc](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/acad9dc25d54a3b76da963e4cda87cef3b60e2ea))
 *   **الأشكال:** تركيبة الإيرادات الجبائية وتخصيص البرنامج الوطني لمساعدة العائلات المعوزة ([45754e3](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/45754e38003df02d73165f0288158369771f27b4))
 *   **الجباية:** شكل يوضح الآليات الاستثنائية الأكثر تكلفة ([666e063](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/666e0637da6bd72f7ee5b5bc742424c31078ac7f))
