@@ -46,6 +46,23 @@ import sys
 # sont produites ensemble, ce ne sont pas des traductions.
 EXCLUDED = ("_glossaire.qmd",)
 
+# Paires FR/AR qui ne vivent PAS sous `precis/`, et que la substitution de chemin
+# `precis/fr/` -> `precis/ar/` ne peut donc pas déduire. Une cible à la racine du
+# dépôt n'a pas de dossier de langue : il faut la nommer.
+#
+# Le CHANGELOG est traduit — `CHANGELOG.md` figure dans les chemins déclencheurs de
+# `translation-sync.yml` —, mais il échappait à ce contrôle : le filtre sur `.qmd`
+# puis la substitution de chemin l'écartaient tous deux, et le script annonçait
+# « Aucune paire FR/AR à contrôler » avant de rendre 0. Quatre corruptions y sont
+# ainsi passées en une journée, toutes dans du texte non traduisible — « qu'اune
+# année », « étabلى » pour « établis », « github.Bcom », et une URL dont le domaine
+# avait été remplacé par la date du jour. Les compteurs restant égaux, seul un
+# rapprochement des jetons pouvait les voir : c'est exactement ce que fait
+# `compare`, qu'il suffisait de laisser atteindre ce fichier.
+PAIRES_HORS_PRECIS = {
+    "CHANGELOG.md": "CHANGELOG_ar.md",
+}
+
 ARABIC = re.compile(r"[؀-ۿ]")
 
 
@@ -179,14 +196,25 @@ def compare(fr_path, ar_path):
     return problems
 
 
-def pairs_for(paths):
-    """Normalise une liste de chemins (FR ou AR) en paires (fr, ar) existantes."""
+def pairs_for(paths: list[str]) -> list[tuple[str, str]]:
+    """Normalise une liste de chemins (FR ou AR) en paires (fr, ar) existantes.
+
+    Deux façons d'apparier. Sous `precis/`, la paire se déduit du chemin. Ailleurs,
+    elle est déclarée dans `PAIRES_HORS_PRECIS` : une cible à la racine du dépôt n'a
+    pas de dossier de langue d'où la déduire.
+    """
     seen, out = set(), []
+    envers = {ar: fr for fr, ar in PAIRES_HORS_PRECIS.items()}
+
     for p in paths:
-        if not p.endswith(".qmd") or os.path.basename(p) in EXCLUDED:
-            continue
-        fr = p.replace("precis/ar/", "precis/fr/")
-        ar = p.replace("precis/fr/", "precis/ar/")
+        if p in PAIRES_HORS_PRECIS or p in envers:
+            fr = envers.get(p, p)
+            ar = PAIRES_HORS_PRECIS[fr]
+        else:
+            if not p.endswith(".qmd") or os.path.basename(p) in EXCLUDED:
+                continue
+            fr = p.replace("precis/ar/", "precis/fr/")
+            ar = p.replace("precis/fr/", "precis/ar/")
         if fr in seen or not (os.path.exists(fr) and os.path.exists(ar)):
             continue
         seen.add(fr)

@@ -57,11 +57,13 @@ jobs:
       - name: Check FR/AR parity (deterministic)
         continue-on-error: true
         run: |
+          # Le CHANGELOG est traduit lui aussi, et sa cible vit à la racine : sans
+          # lui, quatre corruptions d'URL y sont passées inaperçues en une journée.
           FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} \
                                        ${{ github.event.pull_request.head.sha }} \
-                  | grep -E '^precis/(fr|ar)/.*\.qmd$' | tr '\n' ' ' || true)
+                  | grep -E '^precis/(fr|ar)/.*\.qmd$|^CHANGELOG(_ar)?\.md$' | tr '\n' ' ' || true)
           if [ -z "$FILES" ]; then
-            echo "Aucun .qmd de précis dans cette PR."
+            echo "Aucun fichier traduit dans cette PR."
             exit 0
           fi
           echo "Rapport consultatif — une divergence ici peut être antérieure à cette PR."
