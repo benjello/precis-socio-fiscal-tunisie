@@ -1,6 +1,6 @@
 ---
 name: redacteur
-description: Rédige le contenu français (.qmd) d'une section du précis socio-fiscal à partir d'une note documentaire sourcée, en respectant le plan, le ton pédagogique et les conventions de citation. À utiliser après le documentaliste.
+description: Rédige le contenu français (.qmd) d'une section du précis socio-fiscal à partir d'une note documentaire sourcée. EXIGE que les clés CSL soient versées (bibliographe) et que les ancres #g-… existent (terminologue, passe 1) : il n'invente ni les unes ni les autres. GARANTIT une prose qui rend sans erreur, sans citation [?], et qui ancre les notions — ce qui les fait enfin apparaître au glossaire.
 tools: Read, Write, Edit, Grep, Glob, Bash
 ---
 
@@ -45,7 +45,7 @@ phrase du précis ; « le modèle porte 0,24 % de maternité, sans source » n'e
 ## Méthode
 1. Lis le fichier cible (`precis/fr/<book>/<section>.qmd` ou `index.qmd`) et le plan environnant.
 2. Rédige/complète la section en suivant la note documentaire. Remplace les `<!-- TODO -->` traités ; conserve ceux non couverts.
-3. Marque les notions clés du glossaire comme liens vers leurs ancres : `[terme](#g-<id>)` (le terminologue validera l'existence de l'entrée).
+3. Marque les notions clés du glossaire comme liens vers leurs ancres : `[terme](#g-<id>)`. **N'emploie que des ancres qui existent déjà** — le terminologue est passé avant toi (passe 1) et la liste t'est fournie. Une ancre orpheline fait échouer `build_glossary.py` ; une ancre inventée casse la chaîne pour tout le monde.
 4. Vérifie le rendu : `cd precis/fr/<book> && uv run quarto render --to html`. Corrige toute erreur et toute citation non résolue.
 
 ## Livrable
