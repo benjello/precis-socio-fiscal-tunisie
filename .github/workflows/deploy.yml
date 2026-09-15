@@ -28,10 +28,13 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      # `continue-on-error` — voir #216. Cette étape interroge l'API GitHub SANS JETON
-      # pour connaître la dernière version de TinyTeX, et se fait refuser (403) dès que
-      # la limitation de débit s'applique. Mesuré le 15/09/2026 : deux échecs sur quatre
-      # tentatives en une demi-heure, à quelques minutes d'intervalle.
+      # Voir #216. Cette étape interroge l'API GitHub pour connaître la dernière version
+      # de TinyTeX. Sans jeton, l'appel est anonyme et se fait refuser (403) dès que la
+      # limitation de débit s'applique : deux échecs sur quatre tentatives en une
+      # demi-heure, le 15/09/2026.
+      #
+      # `GH_TOKEN` traite la CAUSE — la limitation ne frappe que les appels anonymes.
+      # `continue-on-error` couvre le cas résiduel. Les deux ne font pas double emploi.
       #
       # Le PDF est un SUPPLÉMENT ; le site, lui, est en HTML. Sans cette ligne, l'échec
       # de l'installation saute tout ce qui suit — construction et publication comprises
@@ -43,6 +46,15 @@ jobs:
       # accessoire empêchait donc la publication de l'ensemble.
       - name: Install TinyTeX for PDF rendering
         continue-on-error: true
+        env:
+          # Quarto ne lit QUE `GH_TOKEN` — vérifié dans son bundle (quarto 1.6.39) :
+          #     const headers = Deno.env.get("GH_TOKEN")
+          #       ? { headers: { Authorization: "Bearer " + Deno.env.get("GH_TOKEN") } }
+          #       : undefined;
+          # `GITHUB_TOKEN`, le nom que l'on écrirait d'instinct, n'apparaît nulle part
+          # dans le bundle : le poser n'aurait aucun effet, et l'étape étant tolérante,
+          # l'erreur serait passée inaperçue.
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: quarto install tinytex
 
       - name: Install uv
