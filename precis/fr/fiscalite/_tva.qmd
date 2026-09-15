@@ -1,8 +1,142 @@
 # La taxe sur la valeur ajoutée (TVA)
 
-<!-- TODO: détailler — champ d'application, assujettis, fait générateur, chronologie des
-taux et exonérations. La matière est rassemblée et sourcée dans
-docs/notes/fiscalite-tva-documentation.md. -->
+La [taxe sur la valeur ajoutée](#g-tva) est instituée par la loi n° 88-61 du 2 juin 1988, dont l'article 1^er^ réunit « en un seul corps », sous le titre de *code de la taxe sur la valeur ajoutée*, les textes relatifs à l'imposition du chiffre d'affaires [@loi-88-61-tva, art. 1]. Elle succède à un dispositif hérité de la période du protectorat : le décret du 29 décembre 1955, qui avait institué une [taxe à la production](#g-taxe-a-la-production), une taxe de consommation et une [taxe sur les prestations de service](#g-taxe-prestations-de-service), est abrogé à compter de la mise en application du code [@loi-88-61-tva, art. 2] et, dans tous les textes en vigueur, ces trois dénominations sont remplacées par celle de taxe sur la valeur ajoutée [@loi-88-61-tva, art. 5]. Le passage d'un régime à l'autre n'est pas instantané : les travaux immobiliers relevant de marchés définitivement conclus avant le 1^er^ juillet 1988 demeurent soumis à la taxe à la production, sous réserve du dépôt d'une liste nominative avant le 30 septembre 1988 [@loi-88-61-tva, art. 4].
+
+Le même fascicule du *Journal officiel de la République tunisienne* (JORT) porte la loi n° 88-62 du 2 juin 1988, qui refond au même moment la réglementation du [droit de consommation](#g-droit-de-consommation). Les deux textes forment un ensemble, et plusieurs des mouvements décrits plus bas consistent à faire passer un produit de l'un à l'autre plutôt qu'à l'exonérer.
+
+::: {.callout-note title="Conventions de datation, propres à la taxe sur la valeur ajoutée"}
+**1. La TVA se date en opérations, non en années de revenus.** Le barème du revenu s'énonce « applicable aux revenus réalisés à compter du 1^er^ janvier … » [@loi-irpp-is-1989, art. 3] ; la TVA, elle, frappe des opérations. Un taux s'applique donc aux opérations dont le fait générateur intervient à compter de sa date d'effet, et un changement en cours d'année coupe l'exercice en deux. L'exercice 1988 n'est ainsi taxé qu'à compter du 1^er^ juillet, et l'année 1998 se lit en deux périodes séparées par le 6 mai.
+
+**2. Trois dates ne se confondent pas** : la signature du texte, sa publication au JORT — fascicule et page — et sa date d'effet. Pour la TVA, cette dernière n'est jamais implicite : le code de 1988 n'est pas entré en vigueur le jour de sa publication, son article 6 renvoyant à un décret pour en fixer le calendrier d'application [@loi-88-61-tva, art. 6].
+
+**3. À défaut de date énoncée par le texte lui-même**, le droit commun de la publication s'applique : depuis la loi n° 93-64 du 5 juillet 1993, relative à la publication des textes au *Journal officiel*, un texte prend effet dans le gouvernorat de Tunis cinq jours après le dépôt du Journal officiel au siège de ce gouvernorat (art. 2).
+
+**4. Les réductions de taux prises par décret expirent avec l'année civile**, par construction. L'article 8 du code n'autorise de telles mesures que « pour l'année civile au cours de laquelle elles sont prises » [@loi-88-61-tva, art. 8] : c'est cette clause, et elle seule, qui explique la répétition annuelle des décrets examinés plus bas.
+:::
+
+## Le champ d'application
+
+L'article 1^er^ du code pose d'abord un principe, puis une énumération. Le principe : sont soumises à la taxe, « quels qu'en soient les buts ou les résultats », les affaires faites en Tunisie au sens de l'article 3 — la règle de [territorialité](#g-territorialite-tva) — et revêtant un caractère industriel, artisanal ou relevant d'une profession libérale, ainsi que les opérations commerciales autres que les ventes. La taxe s'applique quels que soient le statut juridique des personnes et leur situation au regard de tous autres impôts, la forme ou la nature de leur intervention, et le caractère habituel ou occasionnel de celle-ci [@loi-88-61-tva, art. 1].
+
+La rédaction mérite d'être lue de près, car elle commande toute l'histoire qui suit : **le commerce — les ventes — n'est dans le champ que par les cas que la loi énumère**. Ces cas sont au nombre de dix : les importations ; les reventes en l'état par les concessionnaires de biens d'équipements industriels et de travaux publics, et par les [commerçants grossistes](#g-commercant-grossiste) en matériaux de construction ; les reventes en l'état par les commerçants grossistes des autres secteurs qui approvisionnent d'autres commerçants revendeurs ; la présentation commerciale des produits autres qu'agricoles ou de la pêche ; la vente de lots par les lotisseurs immobiliers ; les travaux immobiliers ; la vente d'immeubles ou de fonds de commerce par ceux qui les achètent habituellement en vue de la revente ; les affaires portant sur la consommation sur place ; enfin les deux cas de [livraison à soi-même](#g-livraison-a-soi-meme), celle d'immobilisations et celle de biens autres qu'immobilisations affectés aux besoins propres de l'exploitation lorsqu'ils ne concourent pas à des opérations passibles de la taxe ou ouvrant droit à déduction [@loi-88-61-tva, art. 1].
+
+Le commerce de détail ne figure pas dans cette liste. Il n'y entre qu'avec l'article 43 de la loi de finances pour 1996, qui ajoute à l'énumération « la vente des produits en l'état par les commerçants détaillants » réalisant un [chiffre d'affaires](#g-chiffre-affaires-imposable) annuel global égal ou supérieur à 100 000 dinars, le seuil s'appréciant sur l'exercice 1995 pour les commerçants déjà en activité ; l'article 46 de la même loi en fixe l'effet au 1^er^ juillet 1996 [@lf-1996, art. 43 et 46].
+
+### Le calendrier d'application
+
+L'article 6 de la loi de promulgation renvoyait à un décret le soin de fixer le [calendrier d'application](#g-calendrier-application-tva) du code. Il y en eut deux, et deux seulement. Le premier applique le code au 1^er^ juillet 1988, à l'exception des dispositions relatives aux grossistes des autres secteurs et de celles relatives aux régimes forfaitaires, et applique à la même date la loi refondant le droit de consommation [@decret-88-1109-calendrier-tva, art. 1 et 2]. Le second fait entrer le commerce de gros au 1^er^ octobre 1989, « à l'exception de celles relatives aux commerçants grossistes en alimentation générale » [@decret-89-1222-calendrier-tva-gros, art. 1]. Avec l'extension au commerce de détail en 1996, la construction du champ s'étale donc sur huit ans.
+
+: Entrée échelonnée dans le champ de la taxe sur la valeur ajoutée {#tbl-tva-calendrier}
+
+| Date d'effet | Ce qui entre dans le champ | Texte | JORT |
+|---|---|---|---|
+| 1^er^ juillet 1988 | le code, sauf l'article 1^er^ II-3 et les articles 16 et 17 (régimes forfaitaires) | décret n° 88-1109, art. 1^er^ | n° 42 du 21 juin 1988, p. 923 |
+| 1^er^ juillet 1988 | le droit de consommation (loi n° 88-62) | décret n° 88-1109, art. 2 | n° 42 du 21 juin 1988, p. 923 |
+| 1^er^ octobre 1989 | le commerce de gros des autres secteurs, sauf l'alimentation générale | décret n° 89-1222, art. 1^er^ | n° 61 du 12 septembre 1989, p. 1395 |
+| 1^er^ juillet 1996 | le commerce de détail au-delà de 100 000 dinars de chiffre d'affaires annuel | loi n° 95-109, art. 43 et 46 | n° 104 des 29-31 décembre 1995, p. 2371-2372 |
+
+Sources : @decret-88-1109-calendrier-tva ; @decret-89-1222-calendrier-tva-gros ; @lf-1996.
+
+Deux dates manquent à ce tableau, et il est préférable de le dire que de les supposer : **celle de l'entrée dans le champ des grossistes en alimentation générale** et **celle de l'entrée en vigueur des articles 16 et 17 du code**, relatifs aux régimes forfaitaires, n'ont été établies par aucun texte identifié. Aucun décret de mise en application postérieur à celui de 1989 n'a été retrouvé.
+
+## Les assujettis
+
+Sont [assujettis](#g-assujetti) les personnes physiques ou morales qui réalisent les opérations entrant dans le champ, celles qui mentionnent la taxe sur leurs factures — « et ce, du seul fait de sa facturation », ces personnes n'étant alors redevables que de la taxe ayant fait l'objet d'une mention —, et celles qui [optent](#g-option-assujettissement) pour la qualité d'assujetti, pour tout ou partie de leurs activités [@loi-88-61-tva, art. 2].
+
+Le régime de l'option figure tout entier dans le texte de 1988 : la déclaration est souscrite auprès du centre ou bureau de contrôle des impôts ; l'option prend effet le premier jour du mois suivant celui de son acceptation ; elle est irrévocable jusqu'au 31 décembre de la quatrième année qui suit celle de la prise d'effet ; elle est reconduite tacitement par périodes de quatre ans, sauf dénonciation trois mois avant l'expiration ; et l'abandon de la qualité d'assujetti est subordonné au paiement de la taxe sur les stocks ainsi qu'au reversement de la taxe déduite sur les biens d'équipement et les bâtiments [@loi-88-61-tva, art. 2].
+
+Deux extensions complètent la liste. Les **entreprises dépendantes** d'entreprises assujetties le sont également, quelle que soit leur forme juridique, le code définissant la dépendance par le pouvoir de décision exercé en fait, par une part prépondérante dans le capital ou la majorité absolue des suffrages, ou par personnes interposées, et réglant le cas du siège situé hors de Tunisie. Sont enfin assujettis les **entrepositaires et marchands en gros de boissons alcoolisées, de vins et de bières** [@loi-88-61-tva, art. 2].
+
+## Le fait générateur
+
+Le [fait générateur](#g-fait-generateur-tva) détermine le moment où la taxe devient exigible et, par voie de conséquence, le taux qui lui est applicable. L'article 5 du code le fixe opération par opération.
+
+: Fait générateur de la taxe selon la nature de l'opération (article 5 du code, rédaction de 1988) {#tbl-tva-fait-generateur}
+
+| Opération | Fait générateur |
+|---|---|
+| Importations | le dédouanement de la marchandise |
+| Ventes | la livraison ; pour les immeubles et les échanges, l'acte qui constate l'opération ou, à défaut, le transfert de propriété |
+| Prestations de service | la réalisation du service, ou l'encaissement du prix ou des acomptes s'il intervient antérieurement |
+| Biens que les redevables se livrent à eux-mêmes | la première utilisation des biens |
+| Travaux immobiliers | l'exécution partielle ou totale |
+
+Source : @loi-88-61-tva, art. 5.
+
+Les travaux immobiliers appellent deux précisions, que le texte porte lui-même. D'une part, le fait générateur ne peut être postérieur à la facturation totale, et l'établissement de décomptes provisoires, de mémoires ou de factures partiels rend la taxe exigible. D'autre part, les entreprises de travaux publics et de bâtiment travaillant pour l'État, les collectivités publiques locales et les établissements publics à caractère administratif acquittent la taxe **sur leurs encaissements**, le fait générateur de droit commun continuant néanmoins de déterminer le **taux** applicable [@loi-88-61-tva, art. 5].
+
+## Les taux et leur chronologie
+
+### Les taux d'origine (1988)
+
+L'article 7 du code, dans sa rédaction de 1988, construit la grille en trois degrés : un [taux normal](#g-taux-normal-tva) de 17 % pour « les opérations portant sur les biens et les services non soumis à un autre taux », un [taux réduit](#g-taux-reduit-tva) de 6 % pour les opérations reprises au [tableau B](#g-tableau-b-tva) annexé au code, et un [taux majoré](#g-taux-majore-tva) de 29 % pour les biens repris au [tableau C](#g-tableau-c-tva) [@loi-88-61-tva, art. 7].
+
+Le **tableau B** de 1988 range au taux réduit trois ensembles. Des professions, d'abord : architectes et ingénieurs-conseils, dessinateurs, géomètres et topographes, avocats, huissiers-notaires, notaires et interprètes, conseils juridiques et fiscaux, entrepreneurs de tenue de comptabilité, exploitants de laboratoire d'analyse, infirmiers et masseurs, médecins et médecins spécialistes, dentistes, sages-femmes et vétérinaires, experts quelle que soit leur spécialisation. Des produits, ensuite, à l'importation, à la production et à la vente : engrais, **électricité et gaz**, aliments composés pour bétail, produits destinés à l'industrie pharmaceutique et produits pharmaceutiques finis, machines pour le traitement de l'information, récepteurs de télévision, conserves de tomate, de harissa et de sardines, savon ordinaire. Des activités, enfin : hôtellerie, artisanat local, transport de personnes et de marchandises, **vente des huiles de pétrole par les entreprises de distribution**, hébergement et restauration des cliniques, intérêts débiteurs et services informatiques [@loi-88-61-tva, tableau B].
+
+Les deux rubriques mises en évidence — l'électricité et le gaz d'une part, les huiles de pétrole d'autre part — sont exactement celles dont le sort commande toute la section suivante.
+
+Le **tableau C**, qui porte le taux majoré, est une liste douanière : viandes et abats, poissons séchés ou fumés, beurre, fleurs coupées, champignons et truffes, fruits exotiques et fruits à coques, café, thé, poivre et épices, conserves de viande et de poisson, sucreries et cacao sous toutes ses formes. Ce sont, pour l'essentiel, des denrées largement importées, que la présentation administrative de l'époque range parmi les consommations de luxe.
+
+Deux mouvements ultérieurs déplacent des professions et des produits hors de cette grille d'origine. D'une part, les professions libérales quittent le taux de 6 % dès le **1^er^ avril 1996** : la loi de finances pour 1996 les soumet au taux de 10 % et réduit la liste du tableau B aux seules professions de santé, aux dessinateurs, géomètres et topographes intervenant en matière d'immatriculation foncière des terres agricoles [@lf-1996, art. 37 à 39]. C'est une précision qui évite un contresens fréquent : leur déclassement date de 1996, non de 2017. D'autre part, le taux majoré est supprimé à compter du 1^er^ janvier 2007 [@loi-2006-80-reduction-taux, art. 13] ; les produits concernés ne sont pas pour autant détaxés, la même loi les transférant au droit de consommation [@loi-2006-80-reduction-taux, art. 14]. Le taux majoré aura donc existé du 1^er^ juillet 1988 au 31 décembre 2006.
+
+### Le taux réduit et sa reconduction annuelle
+
+De 1998 à 2014, un ou deux décrets paraissent chaque année pour réduire le taux de la taxe applicable à l'électricité et, par intermittence, aux produits pétroliers. Cette répétition n'est ni un accident ni une faveur renouvelée par bienveillance : elle est la conséquence mécanique de deux dispositions.
+
+La première est l'article 40 de la loi de finances pour 1996, qui supprime du tableau B, « à compter d'une date qui sera fixée par décret », les rubriques relatives à l'électricité et au gaz et à la vente des huiles de pétrole par les entreprises de distribution [@lf-1996, art. 40]. Ces produits, qui figuraient au taux réduit **dans le code lui-même** depuis 1988, retombent ainsi au taux normal. La seconde est l'article 8 du code, qui autorise le gouvernement à prévoir par décret des suspensions ou des réductions de la taxe, mais précise que « ces mesures ne sont valables que pour l'année civile au cours de laquelle elles sont prises » [@loi-88-61-tva, art. 8]. Un avantage retiré du code ne peut dès lors être rétabli que pour douze mois, et doit être repris chaque année.
+
+Une pièce de ce mécanisme manque, et il est plus honnête de l'écrire que de la reconstituer : le **décret n° 97-1339 du 14 juillet 1997**, qui fixe la date de mise en application de l'article 40, est nommément visé par les décrets de la série, mais **sa référence de publication n'a pas été établie et son texte n'a pas été consulté**. Rien de ce qui suit ne présume donc de la date exacte à laquelle l'électricité et les carburants ont quitté le taux de 6 %.
+
+Le premier décret de la série, en février 1998, est asymétrique : il réduit à 10 % le taux applicable à l'essence super, à l'essence normale, au gasoil, au fuel-oil domestique et au gaz de pétrole, et à 6 % celui applicable à l'électricité basse tension destinée à la consommation domestique, pour la seule année 1998 [@decret-98-384-tva-reduite, art. 1 à 3]. Il ne vit que trois mois. Le **décret n° 98-952 du 27 avril 1998**, applicable à compter du 6 mai 1998, l'abroge, porte à 10 % le taux applicable à l'électricité et **transfère les produits pétroliers au droit de consommation**, dont il fixe le tarif par hectolitre et par tonne [@decret-98-952-fiscalite-petrole-electricite, art. 1 à 4].
+
+Cette bifurcation est décisive pour la lecture de la chronologie : à partir du 6 mai 1998, les carburants ne relèvent plus d'un taux réduit de TVA, mais d'un droit de consommation à tarif spécifique. La série « produits pétroliers » est donc **interrompue de mai 1998 à l'été 2004** et ne reprend qu'avec le décret n° 2004-1773 du 2 août 2004, qui rétablit le taux de 10 % sur ces produits — sa rédaction est d'ailleurs singulière dans la série, en ce que son article 2 ne borne pas expressément l'effet du décret au 31 décembre [@decret-2004-1773-tva-petroliers, art. 1 et 2]. L'électricité, elle, conserve sans interruption un taux réduit reconduit d'année en année. L'incorporation du taux de 10 % au code par la loi de finances pour 2002 ne change rien à cette situation : le [tableau B bis](#g-tableau-b-bis-tva) alors créé ne comprend ni les produits pétroliers ni l'électricité [@loi2001-123-lf2002, art. 82 à 84].
+
+Le taux de ces décrets passe de 10 % à 12 % à compter du 1^er^ janvier 2007, mais **ce ne sont pas les décrets qui en décident** : la loi n° 2006-80 substitue le taux de 12 % au taux de 10 % dans le code et « partout où il est prévu par les textes législatifs et réglementaires en vigueur » [@loi-2006-80-reduction-taux, art. 17], et les décrets annuels, qui la visent expressément, se bornent à en tirer les conséquences [@decret-2007-1-tva-petroliers ; @decret-2007-2-tva-electricite]. La série se poursuit sur ce modèle jusqu'à sa dernière année d'application, 2014 — les décrets couvrant l'année 2013, par exemple, ont été signés le 31 décembre 2012 et publiés au premier fascicule de 2013 [@decret-2012-3413-tva-petroliers ; @decret-2012-3414-tva-electricite].
+
+<!-- TODO (bibliographe) : la série complète des décrets de 1998 à 2014 est recensée année par
+année au § 4.3 de docs/notes/fiscalite-tva-documentation.md ; sept d'entre eux n'y ont leur
+clause de durée que par la notice du JORT, non par lecture du texte. Verser les entrées
+manquantes dans references.json permettrait de publier ici un tableau annuel complet. -->
+
+La reconduction cesse avec la loi de finances pour 2015, dont l'article 36 inscrit l'électricité basse tension domestique, l'électricité moyenne et basse tension d'irrigation agricole et les produits pétroliers au tableau B bis annexé au code [@lf-2015, art. 36]. Le changement de véhicule est un changement de nature juridique : tant que la réduction reposait sur l'article 8, elle était conjoncturelle et annuelle par construction ; inscrite à une annexe du code, elle devient permanente, et la reconduction par décret perd son objet. La loi de finances pour 2017 supprime ensuite le tableau B bis et réécrit son contenu directement à l'article 7 du code, à taux inchangé [@lf-2017, art. 27]. La loi de finances pour 2018 relève enfin les trois taux d'un point au 1^er^ janvier 2018 [@lf-2018, art. 43]. Le taux réduit subsiste donc aujourd'hui, à 13 %, sur les produits pétroliers et sur l'électricité basse tension domestique, cette dernière au-delà de 300 kilowattheures par mois, la consommation inférieure à ce seuil relevant du tableau B depuis la loi de finances pour 2025 [@lf-2025, art. 31 ; @dgelf-code-tva-2023].
+
+### Vue d'ensemble
+
+: Générations successives de la grille des taux de la taxe sur la valeur ajoutée, 1988-2026 {#tbl-tva-taux}
+
+| Période (dates d'effet) | Taux normal | Taux réduits | Taux majoré | Texte | JORT |
+|---|---|---|---|---|---|
+| 1^er^ juillet 1988 → 31 déc. 1997 | 17 % | 6 % (tableau B) | 29 % (tableau C) | art. 7 du code annexé à la loi n° 88-61 du 02/06/1988 | n° 39 du 10 juin 1988, p. 829 |
+| 1^er^ janv. 1998 → 31 déc. 2001 | 18 % | 6 % ; 10 % épars, hors code | 29 % | art. 25 de la loi n° 97-88 du 29/12/1997 | n° 104 des 30-31 déc. 1997, p. 2437 |
+| 1^er^ janv. 2002 → 31 déc. 2006 | 18 % | 6 % ; 10 % (tableau B bis) | 29 % | art. 82 à 84 de la loi n° 2001-123 du 28/12/2001 | n° 104 du 28 déc. 2001, p. 4260 |
+| 1^er^ janv. 2007 → 31 déc. 2017 | 18 % | 6 % ; 12 % | supprimé | art. 13 et 17 de la loi n° 2006-80 du 18/12/2006 | n° 101 du 19 déc. 2006, p. 4302-4303 |
+| 1^er^ janv. 2018 → aujourd'hui | 19 % | 7 % ; 13 % | — | art. 43 de la loi n° 2017-66 du 18/12/2017 | n° 101 du 19 déc. 2017, p. 4280-4281 |
+
+Sources : @loi-88-61-tva ; @lf-1998 ; @loi2001-123-lf2002 ; @loi-2006-80-reduction-taux ; @lf-2018 ; @dgelf-code-tva-2023.
+
+La pagination de la ligne de 2006 provient de la notice du fascicule et non d'un pied de page relevé sur le texte ; celle des quatre autres lignes a été relevée sur le texte lui-même.
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré quand les paramètres seront datés
+et sourcés. -->
+
+Deux traits ressortent de ce tableau. Le premier est la **stabilité de l'architecture** : trois degrés en 1988, deux depuis 2007, et des taux dont aucun n'a varié de plus de deux points en trente-huit ans. Le second est le **rythme des révisions**, qui se concentre sur deux moments — la fin des années 1990 et la période 2006-2018 — et qui procède chaque fois d'une loi de finances ou d'une loi fiscale d'ensemble, jamais d'un décret.
+
+## Les exonérations
+
+L'article 4 du code ne définit pas les [exonérations](#g-exoneration-tva) : il renvoie. « Sont exonérées de la taxe sur la valeur ajoutée les opérations reprises au tableau "A" figurant en annexe » [@loi-88-61-tva, art. 4]. Toute la matière tient donc dans ce [tableau A](#g-tableau-a-tva), qui comptait quarante-six numéros dans sa rédaction d'origine.
+
+Ces numéros dessinent quatre grands ensembles. Les **produits alimentaires de base** en forment le premier : farines, semoules, pain, couscous et pâtes alimentaires de qualité ordinaire, lait frais et laits conservés pour nourrissons et malades, huile d'olive et sous-produits de la trituration, sucre non additionné d'aromatisants. L'**agriculture** en forme le deuxième : plants et semences, engrais potassiques, éléments des stations d'irrigation par goutte à goutte, biens d'équipement agricoles, travaux agricoles effectués par des tiers et transport de produits agricoles. Les **services sociaux et culturels** en forment le troisième : établissements d'enseignement de tous les degrés et établissements de garderie, enlèvement des ordures ménagères, exploitation des douches, appareils pour handicapés physiques et matériels d'hémodialyse, œuvres reconnues d'intérêt humanitaire et social agréées, livres, brochures, journaux et publications périodiques. Un quatrième ensemble, plus hétérogène, réunit la vente d'eau, les timbres postaux et fiscaux, les billets de banque et valeurs mobilières, les dons reçus dans le cadre de la coopération internationale, l'exploration et la production des hydrocarbures, les articles de sport et les importations de matériels militaires et de sécurité réalisées par l'État [@loi-88-61-tva, tableau A].
+
+Ce tableau a depuis été entièrement refondu. La loi de finances pour 2016 abroge une quinzaine de numéros et substitue au tableau A un « tableau A nouveau » annexé à la loi [@lf-2016, art. 31] ; la loi de finances pour 2017 poursuit la réduction du champ des exonérations [@lf-2017, art. 16 à 23]. L'état en vigueur ne se lit donc plus dans le texte de 1988 mais dans la version consolidée du code [@dgelf-code-tva-2023]. Le contenu poste par poste du tableau A actuel n'a pas été dépouillé ici ; la présente section établit celui de 1988 et le sens général des refontes qui l'ont suivi.
+
+<!-- TODO (rédacteur) : le régime des déductions (articles 9 à 11 du code) reste à rédiger —
+droit à déduction, prorata, régularisations. -->
+
+<!-- TODO (rédacteur) : le régime suspensif et les achats en suspension de taxe restent à
+rédiger. -->
+
+<!-- TODO (rédacteur) : les obligations déclaratives et de facturation (articles 18 et
+suivants) restent à rédiger. -->
 
 ## Ce que la TVA rapporte
 
@@ -44,14 +178,4 @@ Le rendement de la taxe est **remarquablement stable**. Passé la montée initia
 Rapportée aux **dépenses de l'État**, elle en couvre entre un cinquième et un peu plus d'un quart : 19,8 % en 1990, un sommet à 27,0 % en 2000, 22,3 % en 2025. Les deux rapports ne varient pas ensemble, et l'écart se lit surtout en 2020, où la part du PIB se maintient à 6,0 % tandis que la part des dépenses tombe à son plus bas de la série, 19,1 %. Arithmétiquement, c'est le dénominateur qui bouge : ce sont les dépenses qui augmentent, non la taxe qui s'effondre.
 
 Cette stabilité mérite d'être relevée pour elle-même, car elle contraste avec les deux mouvements inverses que décrit la présentation générale du chapitre : l'effacement des droits de douanes et la montée de l'impôt sur le revenu. Le prélèvement s'est déplacé de la frontière vers le revenu ; il ne s'est pas déplacé vers la consommation.
-
-<!-- TODO (bibliographe) : cette sous-section nomme la loi n° 88-61 du 2 juin 1988 en clair,
-sans clé de citation. L'annexe A de docs/notes/fiscalite-tva-documentation.md tient dix-neuf
-entrées CSL-JSON prêtes, dont celle de cette loi (JORT n° 39 du 10 juin 1988, p. 827-846) ;
-elles restent à verser dans precis/fr/fiscalite/references.json et dans son homologue arabe,
-et à rapatrier dans Zotero. Citer formellement une fois fait. -->
-
-<!-- TODO (terminologue) : la sous-section n'ancre aucune notion de glossaire, aucune entrée
-sur la fiscalité indirecte n'existant encore dans precis/glossaire.yml. L'annexe B du dossier
-documentaire en propose dix-neuf. Les ancrer une fois créées. -->
 

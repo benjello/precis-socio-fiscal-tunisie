@@ -26,6 +26,18 @@ Base de calcul de l'impôt, c'est-à-dire le montant sur lequel s'applique le ta
 
 *Voir aussi :* [Impôt sur le revenu des personnes physiques](#g-irpp), [Taux marginal](#g-taux-marginal)
 
+## Assujetti {#g-assujetti}
+
+[العربية → الخاضع للأداء](../../ar/fiscalite/_glossaire.html#g-assujetti)
+
+Personne qui réalise des opérations soumises à la taxe sur la valeur ajoutée et qui est, à ce titre, redevable de la taxe et titulaire du droit à déduction. L'article 2 du code en fixe la liste.
+
+*Source de la définition :* [@loi-88-61-tva, art. 2]
+
+*Voir aussi :* [Taxe sur la valeur ajoutée](#g-tva), [Option pour la qualité d'assujetti](#g-option-assujettissement), [Chiffre d'affaires imposable](#g-chiffre-affaires-imposable)
+
+*Références :* [@loi-88-61-tva]
+
 ## Bénéfices des professions non commerciales (BNC) {#g-bnc}
 
 [العربية → الأرباح غير التجارية](../../ar/fiscalite/_glossaire.html#g-bnc)
@@ -49,6 +61,42 @@ Catégorie de revenus définie par renvoi aux professions commerciales, industri
 *Voir aussi :* [Bénéfices des professions non commerciales](#g-bnc), [Assiette fiscale](#g-assiette-fiscale)
 
 *Références :* [@code-irpp-is-1990]
+
+## Calendrier d'application de la TVA {#g-calendrier-application-tva}
+
+[العربية → روزنامة تطبيق الأداء على القيمة المضافة](../../ar/fiscalite/_glossaire.html#g-calendrier-application-tva)
+
+Entrée en vigueur échelonnée du code de 1988 : application au 1er juillet 1988, extension au commerce de gros en 1989, au commerce de détail en 1996. Deux décrets l'organisent.
+
+*Source de la définition :* [@decret-88-1109-calendrier-tva]
+
+*Voir aussi :* [Taxe sur la valeur ajoutée](#g-tva), [Commerçant grossiste](#g-commercant-grossiste)
+
+*Références :* [@decret-88-1109-calendrier-tva] [@decret-89-1222-calendrier-tva-gros]
+
+## Chiffre d'affaires imposable {#g-chiffre-affaires-imposable}
+
+[العربية → رقم المعاملات الخاضع](../../ar/fiscalite/_glossaire.html#g-chiffre-affaires-imposable)
+
+Assiette de la taxe : montant des opérations imposables, tous frais et droits compris, à l'exclusion de la taxe elle-même.
+
+*Source de la définition :* [@loi-88-61-tva, art. 6]
+
+*Voir aussi :* [Taxe sur la valeur ajoutée](#g-tva), [Assujetti](#g-assujetti), [Fait générateur de la TVA](#g-fait-generateur-tva)
+
+*Références :* [@loi-88-61-tva]
+
+## Commerçant grossiste {#g-commercant-grossiste}
+
+[العربية → تاجر جملة](../../ar/fiscalite/_glossaire.html#g-commercant-grossiste)
+
+Commerçant vendant à d'autres commerçants pour la revente. Le commerce de gros entre dans le champ de la taxe en 1989, le commerce de détail en 1996 seulement.
+
+*Source de la définition :* [@loi-88-61-tva, art. 1er § II-3]
+
+*Voir aussi :* [Taxe sur la valeur ajoutée](#g-tva), [Assujetti](#g-assujetti), [Calendrier d'application de la TVA](#g-calendrier-application-tva)
+
+*Références :* [@loi-88-61-tva] [@lf-1996] [@decret-89-1222-calendrier-tva-gros]
 
 ## Contribution sociale de solidarité (CSS) {#g-css}
 
@@ -74,6 +122,42 @@ Déductions opérées sur le revenu global, après détermination des revenus ca
 
 *Références :* [@code-irpp-is-1990]
 
+## Droit de consommation {#g-droit-de-consommation}
+
+[العربية → معلوم الاستهلاك](../../ar/fiscalite/_glossaire.html#g-droit-de-consommation)
+
+Impôt indirect frappant des produits déterminés — carburants, alcools, tabacs, véhicules — en sus de la taxe sur la valeur ajoutée. Institué par la loi n° 88-62 du 2 juin 1988, le même jour que le code de la TVA.
+
+*Source de la définition :* [@dgelf-code-tva-2023]
+
+*Voir aussi :* [Taxe sur la valeur ajoutée](#g-tva), [Taux réduit de la TVA](#g-taux-reduit-tva)
+
+*Références :* [@dgelf-code-tva-2023] [@decret-98-952-fiscalite-petrole-electricite]
+
+## Exonération de TVA {#g-exoneration-tva}
+
+[العربية → الإعفاء](../../ar/fiscalite/_glossaire.html#g-exoneration-tva)
+
+Dispense de taxe accordée à une opération qui entre pourtant dans le champ d'application. Elle se distingue du hors-champ, qui n'y entre pas, et prive en principe du droit à déduction.
+
+*Source de la définition :* [@loi-88-61-tva, art. 4]
+
+*Voir aussi :* [Taxe sur la valeur ajoutée](#g-tva), [Tableau A du code de la TVA](#g-tableau-a-tva), [Assujetti](#g-assujetti)
+
+*Références :* [@loi-88-61-tva]
+
+## Fait générateur de la TVA {#g-fait-generateur-tva}
+
+[العربية → الحدث المنشئ للأداء](../../ar/fiscalite/_glossaire.html#g-fait-generateur-tva)
+
+Événement qui rend la taxe exigible : la livraison pour les biens, l'encaissement du prix pour les services, le dédouanement à l'importation. À distinguer de la date à laquelle la taxe est payée.
+
+*Source de la définition :* [@loi-88-61-tva, art. 5]
+
+*Voir aussi :* [Taxe sur la valeur ajoutée](#g-tva), [Livraison à soi-même](#g-livraison-a-soi-meme), [Chiffre d'affaires imposable](#g-chiffre-affaires-imposable)
+
+*Références :* [@loi-88-61-tva]
+
 ## Frais professionnels {#g-frais-professionnels}
 
 [العربية → المصاريف المهنية](../../ar/fiscalite/_glossaire.html#g-frais-professionnels)
@@ -97,6 +181,30 @@ Impôt direct et progressif frappant le revenu net global des personnes physique
 *Voir aussi :* [Taux marginal](#g-taux-marginal), [Assiette fiscale](#g-assiette-fiscale), [Contribution sociale de solidarité](#g-css), [Retenue à la source](#g-retenue-a-la-source)
 
 *Références :* [@loi-irpp-is-1989]
+
+## Livraison à soi-même {#g-livraison-a-soi-meme}
+
+[العربية → التسليم للنفس](../../ar/fiscalite/_glossaire.html#g-livraison-a-soi-meme)
+
+Opération par laquelle un assujetti utilise pour ses propres besoins un bien qu'il a produit. Elle est imposable, afin de ne pas avantager celui qui produit sur celui qui achète.
+
+*Source de la définition :* [@loi-88-61-tva, art. 1er § II-9 et 10 ; art. 5 § 4]
+
+*Voir aussi :* [Fait générateur de la TVA](#g-fait-generateur-tva), [Taxe sur la valeur ajoutée](#g-tva)
+
+*Références :* [@loi-88-61-tva]
+
+## Option pour la qualité d'assujetti {#g-option-assujettissement}
+
+[العربية → الاختيار للخضوع للأداء](../../ar/fiscalite/_glossaire.html#g-option-assujettissement)
+
+Faculté ouverte à certaines personnes placées hors du champ de la taxe de s'y soumettre volontairement, afin notamment d'exercer le droit à déduction.
+
+*Source de la définition :* [@loi-88-61-tva, art. 2 § I-3]
+
+*Voir aussi :* [Assujetti](#g-assujetti), [Taxe sur la valeur ajoutée](#g-tva)
+
+*Références :* [@loi-88-61-tva]
 
 ## Retenue à la source {#g-retenue-a-la-source}
 
@@ -130,6 +238,66 @@ Rémunération horaire ou mensuelle minimale légale applicable aux salariés de
 
 *Source de la définition :* [@decret-2017-668-smig]
 
+## Tableau A du code de la TVA {#g-tableau-a-tva}
+
+[العربية → الجدول « أ »](../../ar/fiscalite/_glossaire.html#g-tableau-a-tva)
+
+Annexe du code énumérant les produits et opérations exonérés de la taxe. Toute modification passe par une loi, le plus souvent une loi de finances.
+
+*Source de la définition :* [@loi-88-61-tva, tableau A]
+
+*Voir aussi :* [Exonération de TVA](#g-exoneration-tva), [Taxe sur la valeur ajoutée](#g-tva)
+
+*Références :* [@loi-88-61-tva]
+
+## Tableau B bis du code de la TVA {#g-tableau-b-bis-tva}
+
+[العربية → الجدول « ب مكرر »](../../ar/fiscalite/_glossaire.html#g-tableau-b-bis-tva)
+
+Annexe créée par la loi de finances pour 2002, qui portait un taux intermédiaire, et abrogée par la loi de finances pour 2017. Dispositif historique : il ne s'applique plus.
+
+*Source de la définition :* [@loi2001-123-lf2002, art. 82 à 84]
+
+*Voir aussi :* [Tableau B du code de la TVA](#g-tableau-b-tva), [Taux réduit de la TVA](#g-taux-reduit-tva)
+
+*Références :* [@loi2001-123-lf2002] [@lf-2017]
+
+## Tableau B du code de la TVA {#g-tableau-b-tva}
+
+[العربية → الجدول « ب »](../../ar/fiscalite/_glossaire.html#g-tableau-b-tva)
+
+Annexe du code énumérant les produits et services soumis au taux réduit. L'électricité et les carburants y figuraient en 1988 ; ils en sont sortis par l'article 40 de la loi n° 95-109.
+
+*Source de la définition :* [@loi-88-61-tva, tableau B ; art. 7 § 1]
+
+*Voir aussi :* [Taux réduit de la TVA](#g-taux-reduit-tva), [Taxe sur la valeur ajoutée](#g-tva), [Tableau B bis du code de la TVA](#g-tableau-b-bis-tva)
+
+*Références :* [@loi-88-61-tva]
+
+## Tableau C du code de la TVA {#g-tableau-c-tva}
+
+[العربية → الجدول « ج »](../../ar/fiscalite/_glossaire.html#g-tableau-c-tva)
+
+Annexe du code énumérant les produits soumis au taux majoré. Supprimée au 1er janvier 2007 par l'article 13 de la loi n° 2006-80. Dispositif historique.
+
+*Source de la définition :* [@loi-88-61-tva, tableau C]
+
+*Voir aussi :* [Taux majoré de la TVA](#g-taux-majore-tva), [Taxe sur la valeur ajoutée](#g-tva)
+
+*Références :* [@loi-88-61-tva] [@loi-2006-80-reduction-taux]
+
+## Taux majoré de la TVA {#g-taux-majore-tva}
+
+[العربية → النسبة المرتفعة](../../ar/fiscalite/_glossaire.html#g-taux-majore-tva)
+
+Taux supérieur au taux normal, appliqué aux produits du tableau C de 1988 à 2006. Supprimé au 1er janvier 2007. Dispositif historique.
+
+*Source de la définition :* [@loi-88-61-tva, art. 7]
+
+*Voir aussi :* [Tableau C du code de la TVA](#g-tableau-c-tva), [Taux normal de la TVA](#g-taux-normal-tva)
+
+*Références :* [@loi-88-61-tva] [@loi-2006-80-reduction-taux]
+
 ## Taux marginal {#g-taux-marginal}
 
 [العربية → النسبة الحدية](../../ar/fiscalite/_glossaire.html#g-taux-marginal)
@@ -139,3 +307,75 @@ Taux d'imposition applicable à la dernière tranche de revenu ; dans un barème
 *Source de la définition :* [@code-irpp-is-1990, art. 44 § I]
 
 *Voir aussi :* [Impôt sur le revenu des personnes physiques](#g-irpp), [Assiette fiscale](#g-assiette-fiscale)
+
+## Taux normal de la TVA {#g-taux-normal-tva}
+
+[العربية → النسبة العادية](../../ar/fiscalite/_glossaire.html#g-taux-normal-tva)
+
+Taux de droit commun, applicable à toute opération imposable qu'un texte ne range pas ailleurs. Fixé à 17 % en 1988, porté à 18 % puis à 19 %.
+
+*Source de la définition :* [@loi-88-61-tva, art. 7 § 1]
+
+*Voir aussi :* [Taxe sur la valeur ajoutée](#g-tva), [Taux réduit de la TVA](#g-taux-reduit-tva), [Taux majoré de la TVA](#g-taux-majore-tva)
+
+*Références :* [@loi-88-61-tva]
+
+## Taux réduit de la TVA {#g-taux-reduit-tva}
+
+[العربية → النسبة المخفضة](../../ar/fiscalite/_glossaire.html#g-taux-reduit-tva)
+
+Taux inférieur au taux normal, applicable aux produits et services que le tableau B énumère. L'article 8 du code borne à l'année civile toute réduction accordée par décret, d'où des reconductions annuelles.
+
+*Source de la définition :* [@loi-88-61-tva, art. 7 § 2]
+
+*Voir aussi :* [Tableau B du code de la TVA](#g-tableau-b-tva), [Taux normal de la TVA](#g-taux-normal-tva), [Taxe sur la valeur ajoutée](#g-tva)
+
+*Références :* [@loi-88-61-tva] [@decret-98-952-fiscalite-petrole-electricite]
+
+## Taxe à la production {#g-taxe-a-la-production}
+
+[العربية → الأداء على الإنتاج](../../ar/fiscalite/_glossaire.html#g-taxe-a-la-production)
+
+Taxe sur le chiffre d'affaires antérieure à la TVA, abrogée par l'article 2 de la loi n° 88-61. Les recettes qu'elle produisait figurent avant 1988 sous la rubrique « TVA » des statistiques du ministère des Finances. Dispositif historique.
+
+*Source de la définition :* [@loi-88-61-tva, art. 2]
+
+*Voir aussi :* [Taxe sur la valeur ajoutée](#g-tva), [Taxe sur les prestations de service](#g-taxe-prestations-de-service)
+
+*Références :* [@loi-88-61-tva]
+
+## Taxe sur la valeur ajoutée (TVA) {#g-tva}
+
+[العربية → الأداء على القيمة المضافة](../../ar/fiscalite/_glossaire.html#g-tva)
+
+Impôt indirect général sur la dépense, institué par la loi n° 88-61 du 2 juin 1988 portant promulgation du code de la taxe sur la valeur ajoutée, applicable à compter du 1er juillet 1988. Il frappe les opérations et non les personnes, et se substitue aux taxes sur le chiffre d'affaires antérieures.
+
+*Source de la définition :* [@loi-88-61-tva]
+
+*Voir aussi :* [Assujetti](#g-assujetti), [Fait générateur de la TVA](#g-fait-generateur-tva), [Exonération de TVA](#g-exoneration-tva), [Taux normal de la TVA](#g-taux-normal-tva), [Taux réduit de la TVA](#g-taux-reduit-tva), [Droit de consommation](#g-droit-de-consommation)
+
+*Références :* [@loi-88-61-tva] [@dgelf-code-tva-2023]
+
+## Taxe sur les prestations de service {#g-taxe-prestations-de-service}
+
+[العربية → الأداء على الخدمات](../../ar/fiscalite/_glossaire.html#g-taxe-prestations-de-service)
+
+Taxe sur le chiffre d'affaires antérieure à la TVA, frappant les services, abrogée par l'article 2 de la loi n° 88-61. Dispositif historique.
+
+*Source de la définition :* [@loi-88-61-tva, art. 2]
+
+*Voir aussi :* [Taxe sur la valeur ajoutée](#g-tva), [Taxe à la production](#g-taxe-a-la-production)
+
+*Références :* [@loi-88-61-tva]
+
+## Territorialité de la TVA {#g-territorialite-tva}
+
+[العربية → مبدأ الإقليمية](../../ar/fiscalite/_glossaire.html#g-territorialite-tva)
+
+Règle qui soumet à la taxe les affaires faites en Tunisie. Une vente y est réputée faite lorsque la livraison y a lieu ; un service, lorsqu'il y est exploité ou utilisé.
+
+*Source de la définition :* [@loi-88-61-tva, art. 3]
+
+*Voir aussi :* [Taxe sur la valeur ajoutée](#g-tva), [Fait générateur de la TVA](#g-fait-generateur-tva)
+
+*Références :* [@loi-88-61-tva]
