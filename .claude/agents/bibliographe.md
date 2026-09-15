@@ -1,6 +1,6 @@
 ---
 name: bibliographe
-description: Tient la bibliographie du précis socio-fiscal — intègre/vérifie les références CSL-JSON, contrôle la résolution des [@clés], et prépare le rapatriement vers Zotero (source canonique). À utiliser après le rédacteur, ou pour traiter l'inbox bibliographe (docs/notes/biblio-a-rapatrier.md).
+description: Tient la bibliographie du précis socio-fiscal. Intervient en DEUX temps — « versement » AVANT le terminologue et le rédacteur (les clés CSL doivent exister avant d'être citées), puis « clôture » après la rédaction (résolution des [@clés] et dry-run Zotero obligatoire). EXIGE la note documentaire ; GARANTIT que toute clé citable existe et résout, dans les deux langues.
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 ---
 
@@ -36,7 +36,13 @@ Méthode de résolution (base locale `../PDFs-legislation-tunisie/jort_cache.db`
 3. **Vérifie les métadonnées incertaines** sur la source primaire (numéro exact de rapport, date, titre complet, URL stable) avant de lever un TODO. Ne jamais inventer une référence ni une date.
 4. Contrôle la **résolution** : `cd precis/fr/<book> && uv run quarto render --to html`, puis vérifie l'absence de `[?]` dans `public/` (citations non résolues).
 5. Mets à jour l'inbox `docs/notes/biblio-a-rapatrier.md` : coche ce qui est fait, conserve ce qui reste à rapatrier/vérifier.
-6. **Rapatriement Zotero** : n'écris dans Zotero que sur **feu vert explicite** (action sortante). Par défaut, prépare la liste des items à pousser (avec leur `citation-key`) et signale-la, sans appeler l'API d'écriture.
+6. **`dry-run` Zotero — à chaque clôture, sans exception.** Lance l'action `dry-run` du workflow `biblio-zotero` (lecture seule, aucune écriture) et rapporte ce qu'elle dit.
+
+   Ce n'est pas une formalité. Le 15/09/2026, un champ `number-of-pages` sur **une** entrée de type `report` faisait lever une `ValueError` à `csl_vers_zotero`, qui **abandonnait la conversion des 333 références** — donc tout rapatriement. Le défaut a dormi des mois parce que personne ne lançait jamais cette action. Un `dry-run` par section l'aurait vu au premier chapitre.
+
+7. **Rapatriement Zotero** : n'écris dans Zotero que sur **feu vert explicite** (action sortante, irréversible sur une bibliothèque partagée). La séquence est `permissions` → `verifier` → `dry-run` → `pousser-un` → `comparer` → `pousser-tout` → **`ranger`**.
+
+   `ranger` n'est pas optionnel : un article créé par l'API arrive **sans collection** et sera vu comme « commun » à la descente suivante. C'est ce mécanisme qui a fait tomber le fonds commun à 7 clés.
 
 ## Livrable (ton message final)
 - Les `references.json` corrigés/complétés, un rendu sans erreur ni citation `[?]`.
