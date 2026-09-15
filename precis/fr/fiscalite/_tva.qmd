@@ -1,0 +1,57 @@
+# La taxe sur la valeur ajoutée (TVA)
+
+<!-- TODO: détailler — champ d'application, assujettis, fait générateur, chronologie des
+taux et exonérations. La matière est rassemblée et sourcée dans
+docs/notes/fiscalite-tva-documentation.md. -->
+
+## Ce que la TVA rapporte
+
+La taxe sur la valeur ajoutée est instituée par la loi n° 88-61 du 2 juin 1988, qui promulgue le code de la taxe sur la valeur ajoutée, et s'applique à compter du 1^er^ juillet 1988. Son assujettissement ne s'étend toutefois pas d'un coup : le commerce de gros n'y entre qu'en 1989, le commerce de détail en 1996 seulement.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tva as fig_tva
+import figtools
+figtools.figure_tabs(
+    fig_tva.fig_rendement(), fig_tva.table(),
+    "recettes-fiscales-composition", "irpp-ratios",
+    slug="fig_tva_rendement",
+    caption="Rendement de la taxe sur la valeur ajoutée rapporté au PIB et aux dépenses de l'État, 1986-2025",
+    note_lecture=(
+        "**La zone grisée, à gauche de 1988, ne mesure pas la TVA.** La rubrique « TVA » du "
+        "ministère des Finances est continue depuis 1986 — l'intitulé est le sien —, mais la "
+        "taxe n'existe qu'à compter du 1^er^ juillet 1988 : les deux premiers exercices "
+        "portent les taxes sur le chiffre d'affaires que le code de 1988 remplace. Les deux "
+        "segments ne se comparent donc pas. Les années suivantes elles-mêmes ne sont pas "
+        "homogènes : l'exercice 1988 n'est taxé qu'au second semestre, et le champ des "
+        "assujettis s'élargit jusqu'en 1996. "
+        "La courbe **verte** (échelle de gauche) rapporte la taxe au **PIB**, la courbe "
+        "**rouge** (échelle de droite) aux **dépenses totales de l'État**, qui ne sont "
+        "publiées qu'à partir de 1990 : les exercices 1988 et 1989 n'ont donc que le premier "
+        "des deux rapports. "
+        "**Le PIB retenu est celui du ministère des Finances**, celui sur lequel il calcule "
+        "lui-même ses ratios ; l'onglet « Données » donne à côté le PIB des comptes "
+        "nationaux, qui ne s'en écarte que pour 2012, 2013 et 2014."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
+Le rendement de la taxe est **remarquablement stable**. Passé la montée initiale, il oscille entre 5 et 7 points de produit intérieur brut pendant près de quarante exercices : 6,5 % en 1988, un creux à 5,1 % en 1997, un sommet à 7,3 % en 2022, et 6,8 % en 2025. Rapportée aux recettes fiscales, la TVA se tient de même entre 26 et 32 % sur toute la période.
+
+Rapportée aux **dépenses de l'État**, elle en couvre entre un cinquième et un peu plus d'un quart : 19,8 % en 1990, un sommet à 27,0 % en 2000, 22,3 % en 2025. Les deux rapports ne varient pas ensemble, et l'écart se lit surtout en 2020, où la part du PIB se maintient à 6,0 % tandis que la part des dépenses tombe à son plus bas de la série, 19,1 %. Arithmétiquement, c'est le dénominateur qui bouge : ce sont les dépenses qui augmentent, non la taxe qui s'effondre.
+
+Cette stabilité mérite d'être relevée pour elle-même, car elle contraste avec les deux mouvements inverses que décrit la présentation générale du chapitre : l'effacement des droits de douanes et la montée de l'impôt sur le revenu. Le prélèvement s'est déplacé de la frontière vers le revenu ; il ne s'est pas déplacé vers la consommation.
+
+<!-- TODO (bibliographe) : cette sous-section nomme la loi n° 88-61 du 2 juin 1988 en clair,
+sans clé de citation. L'annexe A de docs/notes/fiscalite-tva-documentation.md tient dix-neuf
+entrées CSL-JSON prêtes, dont celle de cette loi (JORT n° 39 du 10 juin 1988, p. 827-846) ;
+elles restent à verser dans precis/fr/fiscalite/references.json et dans son homologue arabe,
+et à rapatrier dans Zotero. Citer formellement une fois fait. -->
+
+<!-- TODO (terminologue) : la sous-section n'ancre aucune notion de glossaire, aucune entrée
+sur la fiscalité indirecte n'existant encore dans precis/glossaire.yml. L'annexe B du dossier
+documentaire en propose dix-neuf. Les ancrer une fois créées. -->
+

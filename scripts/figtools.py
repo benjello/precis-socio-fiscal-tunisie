@@ -240,6 +240,13 @@ def write_figdata(df: pd.DataFrame, out_csv: Path, *series_ids: str,
             fiches.append(m["fiche"])
         if m.get("caveats"):
             caveats.append(m["caveats"])
+    # Deux séries peuvent partager la même fiche de source : c'est le cas dès qu'une figure
+    # joint un montant et son dénominateur, tirés du même classeur du ministère. Les clés de
+    # citation étaient déjà dédoublonnées ; les fiches et les réserves ne l'étaient pas, et
+    # l'en-tête de provenance répétait alors deux fois le même fichier — dans un CSV publié
+    # et téléchargeable, où il tient lieu de source.
+    fiches = list(dict.fromkeys(fiches))
+    caveats = list(dict.fromkeys(caveats))
     # un shortcode Quarto non résolu (passé tel quel depuis un chunk) → date du jour
     if not generated or "{{" in generated:
         generated = _dt.date.today().isoformat()
