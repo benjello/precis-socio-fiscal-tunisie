@@ -14,8 +14,14 @@ book:
   downloads: [pdf]
   chapters:
     - index.qmd
-    - _impot_revenu.qmd
-    - _autres_impots.qmd
+    - part: "L'imposition directe"
+      chapters:
+        - _impot_revenu.qmd
+        - _impot_societes.qmd
+    - part: "L'imposition indirecte"
+      chapters:
+        - _tva.qmd
+        - _droits_consommation.qmd
   appendices:
     - _glossaire.qmd
 
