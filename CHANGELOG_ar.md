@@ -1,5 +1,19 @@
 # سجل التغييرات
 
+## [1.18.7](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.6...v1.18.7) (2026-09-15)
+
+
+### 🐛 إصلاحات الأخطاء
+
+* **التكامل المستمر:** توثيق الاستدعاء الذي يقوم بتثبيت TinyTeX ([#224](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/224)) ([fa364dd](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/fa364dd75eb3b5d3b1ddaadecb485df89ffdaa07)), يغلق [#216](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/216)
+
+## [1.18.6](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.5...v1.18.6) (2026-09-15)
+
+
+### 🐛 إصلاحات الأخطاء
+
+* **tableaux:** دمج الحق في اليوم، وليس في السنة ([#222](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/222)) ([c2d5a3d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/c2d5a3dee53b7a9ac019fd54cc836c8aecb04632)), يغلق [#215](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/215)
+
 ## [1.18.5](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.4...v1.18.5) (2026-09-15)
 
 
