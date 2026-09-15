@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.5](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.4...v1.18.5) (2026-09-15)
+
+
+### 🐛 Corrections de bugs
+
+* **ci:** ne plus laisser TinyTeX empêcher la publication du site ([#219](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/219)) ([607e8bc](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/607e8bc9b1ff91f59c678fe1e0c04952e95680a1)), closes [#216](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/216)
+
 ## [1.18.4](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.3...v1.18.4) (2026-09-14)
 
 
