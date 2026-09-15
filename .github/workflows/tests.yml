@@ -46,5 +46,13 @@ jobs:
       # fonctions purement textuelles, et doivent tourner sans le client du
       # modèle ni openfisca. Si l'un d'eux réclame un jour un paquet, c'est le
       # signe qu'il teste autre chose que ce qu'il annonce.
+      #
+      # `--isolated` n'est PAS décoratif. Sans lui, la commande n'a pas le même
+      # sens ici et en local : sur un dépôt fraîchement cloné, `--no-project`
+      # donne un interpréteur nu — mais sur un poste de développement il récupère
+      # le `.venv` du projet, où pandas et le reste sont installés. Un test qui
+      # importerait pandas par mégarde passerait donc en local et échouerait ici.
+      # Avec `--isolated`, la commande est identique des deux côtés : la lancer
+      # chez soi reproduit exactement le runner.
       - name: Lancer les tests
-        run: uv run --no-project python -m unittest discover -s tests -v
+        run: uv run --isolated --no-project python -m unittest discover -s tests -v
