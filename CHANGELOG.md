@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.20.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.19.0...v1.20.0) (2026-09-15)
+
+
+### ✨ Nouveautés
+
+* **fiscalite:** références et notions de glossaire de la TVA ([#233](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/233)) ([0ba0ab4](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/0ba0ab40a58fbbd5f9a8ad3062db3d85c304524c))
+
+
+### 📝 Documentation
+
+* **fiscalite:** le dossier documentaire de la TVA ([#234](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/234)) ([197cba6](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/197cba6e54fc35dcb2f170d5d0d99c655742b156))
+
 ## [1.19.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.7...v1.19.0) (2026-09-15)
 
 
