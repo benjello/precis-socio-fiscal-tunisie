@@ -28,7 +28,21 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      # `continue-on-error` — voir #216. Cette étape interroge l'API GitHub SANS JETON
+      # pour connaître la dernière version de TinyTeX, et se fait refuser (403) dès que
+      # la limitation de débit s'applique. Mesuré le 15/09/2026 : deux échecs sur quatre
+      # tentatives en une demi-heure, à quelques minutes d'intervalle.
+      #
+      # Le PDF est un SUPPLÉMENT ; le site, lui, est en HTML. Sans cette ligne, l'échec
+      # de l'installation saute tout ce qui suit — construction et publication comprises
+      # — alors que `build.sh` sait déjà se rabattre, livre par livre :
+      #
+      #     [build] ⚠ $book: PDF failed, HTML OK — deploying HTML only
+      #
+      # Ce repli était inutilisable : le job mourait avant de l'atteindre. Une dépendance
+      # accessoire empêchait donc la publication de l'ensemble.
       - name: Install TinyTeX for PDF rendering
+        continue-on-error: true
         run: quarto install tinytex
 
       - name: Install uv
