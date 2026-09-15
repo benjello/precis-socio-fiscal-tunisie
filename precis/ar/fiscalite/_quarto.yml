@@ -20,6 +20,14 @@ book:
   downloads: [pdf]
   chapters:
     - index.qmd
+    - part: "الضرائب المباشرة"
+      chapters:
+        - _impot_revenu.qmd
+        - _impot_societes.qmd
+    - part: "الضرائب غير المباشرة"
+      chapters:
+        - _tva.qmd
+        - _droits_consommation.qmd
   appendices:
     - _glossaire.qmd
 
