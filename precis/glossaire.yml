@@ -3372,3 +3372,364 @@ entries:
         المداخيل غير الجبائية. وتميّزها وثائق الميزانية التونسية عن المداخيل غير
         الجبائية، المتأتّية خاصّةً من أتاوة عبور الغاز.
       synonymes: []
+
+  - id: tva
+    acronyme: TVA
+    statut: provisoire
+    references: [loi-88-61-tva, dgelf-code-tva-2023]
+    source_definition: {ref: loi-88-61-tva}
+    voir_aussi: [assujetti, fait-generateur-tva, exoneration-tva, taux-normal-tva, taux-reduit-tva, droit-de-consommation]
+    fr:
+      terme: Taxe sur la valeur ajoutée
+      definition: >
+        Impôt indirect général sur la dépense, institué par la loi n° 88-61 du
+        2 juin 1988 portant promulgation du code de la taxe sur la valeur
+        ajoutée, applicable à compter du 1er juillet 1988. Il frappe les
+        opérations et non les personnes, et se substitue aux taxes sur le
+        chiffre d'affaires antérieures.
+      synonymes: [TVA]
+    ar:
+      terme: الأداء على القيمة المضافة
+      definition: ""
+      synonymes: []
+
+  - id: assujetti
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-61-tva]
+    source_definition: {ref: loi-88-61-tva, locator: "art. 2"}
+    voir_aussi: [tva, option-assujettissement, chiffre-affaires-imposable]
+    fr:
+      terme: Assujetti
+      definition: >
+        Personne qui réalise des opérations soumises à la taxe sur la valeur
+        ajoutée et qui est, à ce titre, redevable de la taxe et titulaire du
+        droit à déduction. L'article 2 du code en fixe la liste.
+      synonymes: []
+    ar:
+      terme: الخاضع للأداء
+      definition: ""
+      synonymes: []
+
+  - id: option-assujettissement
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-61-tva]
+    source_definition: {ref: loi-88-61-tva, locator: "art. 2 § I-3"}
+    voir_aussi: [assujetti, tva]
+    fr:
+      terme: Option pour la qualité d'assujetti
+      definition: >
+        Faculté ouverte à certaines personnes placées hors du champ de la taxe
+        de s'y soumettre volontairement, afin notamment d'exercer le droit à
+        déduction.
+      synonymes: []
+    ar:
+      terme: الاختيار للخضوع للأداء
+      definition: ""
+      synonymes: []
+
+  - id: fait-generateur-tva
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-61-tva]
+    source_definition: {ref: loi-88-61-tva, locator: "art. 5"}
+    voir_aussi: [tva, livraison-a-soi-meme, chiffre-affaires-imposable]
+    fr:
+      terme: Fait générateur de la TVA
+      definition: >
+        Événement qui rend la taxe exigible : la livraison pour les biens,
+        l'encaissement du prix pour les services, le dédouanement à
+        l'importation. À distinguer de la date à laquelle la taxe est payée.
+      synonymes: []
+    ar:
+      terme: الحدث المنشئ للأداء
+      definition: ""
+      synonymes: []
+
+  - id: territorialite-tva
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-61-tva]
+    source_definition: {ref: loi-88-61-tva, locator: "art. 3"}
+    voir_aussi: [tva, fait-generateur-tva]
+    fr:
+      terme: Territorialité de la TVA
+      definition: >
+        Règle qui soumet à la taxe les affaires faites en Tunisie. Une vente y
+        est réputée faite lorsque la livraison y a lieu ; un service, lorsqu'il
+        y est exploité ou utilisé.
+      synonymes: []
+    ar:
+      terme: مبدأ الإقليمية
+      definition: ""
+      synonymes: []
+
+  - id: exoneration-tva
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-61-tva]
+    source_definition: {ref: loi-88-61-tva, locator: "art. 4"}
+    voir_aussi: [tva, tableau-a-tva, assujetti]
+    fr:
+      terme: Exonération de TVA
+      definition: >
+        Dispense de taxe accordée à une opération qui entre pourtant dans le
+        champ d'application. Elle se distingue du hors-champ, qui n'y entre
+        pas, et prive en principe du droit à déduction.
+      synonymes: []
+    ar:
+      terme: الإعفاء
+      definition: ""
+      synonymes: []
+
+  - id: tableau-a-tva
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-61-tva]
+    source_definition: {ref: loi-88-61-tva, locator: "tableau A"}
+    voir_aussi: [exoneration-tva, tva]
+    fr:
+      terme: Tableau A du code de la TVA
+      definition: >
+        Annexe du code énumérant les produits et opérations exonérés de la
+        taxe. Toute modification passe par une loi, le plus souvent une loi de
+        finances.
+      synonymes: []
+    ar:
+      terme: الجدول « أ »
+      definition: ""
+      synonymes: []
+
+  - id: tableau-b-tva
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-61-tva]
+    source_definition: {ref: loi-88-61-tva, locator: "tableau B ; art. 7 § 1"}
+    voir_aussi: [taux-reduit-tva, tva, tableau-b-bis-tva]
+    fr:
+      terme: Tableau B du code de la TVA
+      definition: >
+        Annexe du code énumérant les produits et services soumis au taux
+        réduit. L'électricité et les carburants y figuraient en 1988 ; ils en
+        sont sortis par l'article 40 de la loi n° 95-109.
+      synonymes: []
+    ar:
+      terme: الجدول « ب »
+      definition: ""
+      synonymes: []
+
+  - id: tableau-b-bis-tva
+    acronyme: null
+    statut: provisoire
+    references: [loi2001-123-lf2002, lf-2017]
+    source_definition: {ref: loi2001-123-lf2002, locator: "art. 82 à 84"}
+    voir_aussi: [tableau-b-tva, taux-reduit-tva]
+    fr:
+      terme: Tableau B bis du code de la TVA
+      definition: >
+        Annexe créée par la loi de finances pour 2002, qui portait un taux
+        intermédiaire, et abrogée par la loi de finances pour 2017. Dispositif
+        historique : il ne s'applique plus.
+      synonymes: []
+    ar:
+      terme: الجدول « ب مكرر »
+      definition: ""
+      synonymes: []
+
+  - id: tableau-c-tva
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-61-tva, loi-2006-80-reduction-taux]
+    source_definition: {ref: loi-88-61-tva, locator: "tableau C"}
+    voir_aussi: [taux-majore-tva, tva]
+    fr:
+      terme: Tableau C du code de la TVA
+      definition: >
+        Annexe du code énumérant les produits soumis au taux majoré. Supprimée
+        au 1er janvier 2007 par l'article 13 de la loi n° 2006-80. Dispositif
+        historique.
+      synonymes: []
+    ar:
+      terme: الجدول « ج »
+      definition: ""
+      synonymes: []
+
+  - id: taux-normal-tva
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-61-tva]
+    source_definition: {ref: loi-88-61-tva, locator: "art. 7 § 1"}
+    voir_aussi: [tva, taux-reduit-tva, taux-majore-tva]
+    fr:
+      terme: Taux normal de la TVA
+      definition: >
+        Taux de droit commun, applicable à toute opération imposable qu'un
+        texte ne range pas ailleurs. Fixé à 17 % en 1988, porté à 18 % puis à
+        19 %.
+      synonymes: []
+    ar:
+      terme: النسبة العادية
+      definition: ""
+      synonymes: []
+
+  - id: taux-reduit-tva
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-61-tva, decret-98-952-fiscalite-petrole-electricite]
+    source_definition: {ref: loi-88-61-tva, locator: "art. 7 § 2"}
+    voir_aussi: [tableau-b-tva, taux-normal-tva, tva]
+    fr:
+      terme: Taux réduit de la TVA
+      definition: >
+        Taux inférieur au taux normal, applicable aux produits et services que
+        le tableau B énumère. L'article 8 du code borne à l'année civile toute
+        réduction accordée par décret, d'où des reconductions annuelles.
+      synonymes: []
+    ar:
+      terme: النسبة المخفضة
+      definition: ""
+      synonymes: []
+
+  - id: taux-majore-tva
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-61-tva, loi-2006-80-reduction-taux]
+    source_definition: {ref: loi-88-61-tva, locator: "art. 7"}
+    voir_aussi: [tableau-c-tva, taux-normal-tva]
+    fr:
+      terme: Taux majoré de la TVA
+      definition: >
+        Taux supérieur au taux normal, appliqué aux produits du tableau C de
+        1988 à 2006. Supprimé au 1er janvier 2007. Dispositif historique.
+      synonymes: []
+    ar:
+      terme: النسبة المرتفعة
+      definition: ""
+      synonymes: []
+
+  - id: livraison-a-soi-meme
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-61-tva]
+    source_definition: {ref: loi-88-61-tva, locator: "art. 1er § II-9 et 10 ; art. 5 § 4"}
+    voir_aussi: [fait-generateur-tva, tva]
+    fr:
+      terme: Livraison à soi-même
+      definition: >
+        Opération par laquelle un assujetti utilise pour ses propres besoins un
+        bien qu'il a produit. Elle est imposable, afin de ne pas avantager
+        celui qui produit sur celui qui achète.
+      synonymes: []
+    ar:
+      terme: التسليم للنفس
+      definition: ""
+      synonymes: []
+
+  - id: commercant-grossiste
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-61-tva, lf-1996, decret-89-1222-calendrier-tva-gros]
+    source_definition: {ref: loi-88-61-tva, locator: "art. 1er § II-3"}
+    voir_aussi: [tva, assujetti, calendrier-application-tva]
+    fr:
+      terme: Commerçant grossiste
+      definition: >
+        Commerçant vendant à d'autres commerçants pour la revente. Le commerce
+        de gros entre dans le champ de la taxe en 1989, le commerce de détail
+        en 1996 seulement.
+      synonymes: [commerçant détaillant]
+    ar:
+      terme: تاجر جملة
+      definition: ""
+      synonymes: []
+
+  - id: chiffre-affaires-imposable
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-61-tva]
+    source_definition: {ref: loi-88-61-tva, locator: "art. 6"}
+    voir_aussi: [tva, assujetti, fait-generateur-tva]
+    fr:
+      terme: Chiffre d'affaires imposable
+      definition: >
+        Assiette de la taxe : montant des opérations imposables, tous frais et
+        droits compris, à l'exclusion de la taxe elle-même.
+      synonymes: []
+    ar:
+      terme: رقم المعاملات الخاضع
+      definition: ""
+      synonymes: []
+
+  - id: calendrier-application-tva
+    acronyme: null
+    statut: provisoire
+    references: [decret-88-1109-calendrier-tva, decret-89-1222-calendrier-tva-gros]
+    source_definition: {ref: decret-88-1109-calendrier-tva}
+    voir_aussi: [tva, commercant-grossiste]
+    fr:
+      terme: Calendrier d'application de la TVA
+      definition: >
+        Entrée en vigueur échelonnée du code de 1988 : application au
+        1er juillet 1988, extension au commerce de gros en 1989, au commerce
+        de détail en 1996. Deux décrets l'organisent.
+      synonymes: []
+    ar:
+      terme: روزنامة تطبيق الأداء على القيمة المضافة
+      definition: ""
+      synonymes: []
+
+  - id: droit-de-consommation
+    acronyme: null
+    statut: provisoire
+    references: [dgelf-code-tva-2023, decret-98-952-fiscalite-petrole-electricite]
+    source_definition: {ref: dgelf-code-tva-2023}
+    voir_aussi: [tva, taux-reduit-tva]
+    fr:
+      terme: Droit de consommation
+      definition: >
+        Impôt indirect frappant des produits déterminés — carburants, alcools,
+        tabacs, véhicules — en sus de la taxe sur la valeur ajoutée. Institué
+        par la loi n° 88-62 du 2 juin 1988, le même jour que le code de la TVA.
+      synonymes: []
+    ar:
+      terme: معلوم الاستهلاك
+      definition: ""
+      synonymes: []
+
+  - id: taxe-a-la-production
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-61-tva]
+    source_definition: {ref: loi-88-61-tva, locator: "art. 2"}
+    voir_aussi: [tva, taxe-prestations-de-service]
+    fr:
+      terme: Taxe à la production
+      definition: >
+        Taxe sur le chiffre d'affaires antérieure à la TVA, abrogée par
+        l'article 2 de la loi n° 88-61. Les recettes qu'elle produisait
+        figurent avant 1988 sous la rubrique « TVA » des statistiques du
+        ministère des Finances. Dispositif historique.
+      synonymes: []
+    ar:
+      terme: الأداء على الإنتاج
+      definition: ""
+      synonymes: []
+
+  - id: taxe-prestations-de-service
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-61-tva]
+    source_definition: {ref: loi-88-61-tva, locator: "art. 2"}
+    voir_aussi: [tva, taxe-a-la-production]
+    fr:
+      terme: Taxe sur les prestations de service
+      definition: >
+        Taxe sur le chiffre d'affaires antérieure à la TVA, frappant les
+        services, abrogée par l'article 2 de la loi n° 88-61. Dispositif
+        historique.
+      synonymes: []
+    ar:
+      terme: الأداء على الخدمات
+      definition: ""
+      synonymes: []

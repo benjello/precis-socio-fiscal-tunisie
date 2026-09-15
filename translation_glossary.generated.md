@@ -19,6 +19,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Annuité liquidable | السنة القابلة للتصفية |  |
 | Appui financier occasionnel | الدعم المادي الظرفي |  |
 | Assiette fiscale | الوعاء الضريبي |  |
+| Assujetti | الخاضع للأداء |  |
 | Assuré social | المضمون الاجتماعي |  |
 | Augmentation optionnelle de l'âge de mise à la retraite | الترفيع الاختياري في سنّ الإحالة على التقاعد |  |
 | Avancement d'échelon | الترقّي في الدرجة |  |
@@ -31,14 +32,17 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Caisse nationale d'assurance maladie | الصندوق الوطني للتأمين على المرض | CNAM |
 | Caisse nationale de retraite et de prévoyance sociale | الصندوق الوطني للتقاعد والحيطة الاجتماعية | CNRPS |
 | Caisse nationale de sécurité sociale | الصندوق الوطني للضمان الاجتماعي | CNSS |
+| Calendrier d'application de la TVA | روزنامة تطبيق الأداء على القيمة المضافة |  |
 | Capital-décès | رأس مال الوفاة |  |
 | Carte de soins à tarifs réduits | بطاقة العلاج بالتعريفة المنخفضة | AMG2 |
 | Carte de soins gratuits | بطاقة العلاج المجاني | AMG1 |
 | Catégorie de grade | صنف الرتبة |  |
 | Catégories à revenu limité | الفئات محدودة الدخل |  |
 | Catégories pauvres | الفئات الفقيرة |  |
+| Chiffre d'affaires imposable | رقم المعاملات الخاضع |  |
 | Chiffre indiciaire | الرقم القياسي |  |
 | Ciblage | الاستهداف |  |
+| Commerçant grossiste | تاجر جملة |  |
 | Condition de ressources | شرط الموارد |  |
 | Contribution aux frais de crèche | المساهمة في مصاريف رياض الأطفال |  |
 | Contribution sociale de solidarité | المساهمة الاجتماعية التضامنية | CSS |
@@ -49,6 +53,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Décote | التخفيض في الجراية |  |
 | Déductions communes | الطروحات المشتركة |  |
 | Délai de carence | فترة الانتظار |  |
+| Droit de consommation | معلوم الاستهلاك |  |
 | Échelon | الدرجة |  |
 | Échelonnement indiciaire | التدرّج القياسي |  |
 | Éléments permanents de la rémunération | العناصر القارّة للأجر |  |
@@ -58,6 +63,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Établissement public à caractère administratif | المؤسسة العمومية ذات الصبغة الإدارية | EPA |
 | Établissement public à caractère industriel et commercial | المؤسسة العمومية ذات الصبغة الصناعية والتجارية | EPIC |
 | Établissement public à caractère non administratif | المؤسسة العمومية التي لا تكتسي صبغة إدارية | EPNA |
+| Exonération de TVA | الإعفاء |  |
+| Fait générateur de la TVA | الحدث المنشئ للأداء |  |
 | Fonction publique | الوظيفة العمومية |  |
 | Fonctions astreignantes | الوظائف المرهقة |  |
 | Fonds de sécurité sociale | صناديق الضمان الاجتماعي |  |
@@ -75,11 +82,13 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Indemnité spécifique | المنحة الخصوصية |  |
 | Jouissance différée | الانتفاع المؤجَّل بالجراية |  |
 | Limite de calcul des prestations | سقف احتساب المنافع |  |
+| Livraison à soi-même | التسليم للنفس |  |
 | Magistrat | القاضي |  |
 | Majoration pour salaire unique | منحة الأجر الوحيد |  |
 | Masse salariale | كتلة الأجور |  |
 | Minimum d'impôt | الضريبة الدنيا |  |
 | Mise à la retraite d'office | الإحالة الوجوبية على التقاعد |  |
+| Option pour la qualité d'assujetti | الاختيار للخضوع للأداء |  |
 | Ouvrier de l'État | عامل الدولة |  |
 | Pension de réversion | جراية القرين الباقي على قيد الحياة |  |
 | Pension minimale garantie | الجراية الدنيا المضمونة |  |
@@ -130,9 +139,20 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Solde de réforme | منحة الإصلاح |  |
 | Stage de cotisation | مدة الانخراط الدنيا |  |
 | Statut particulier | النظام الأساسي الخصوصي |  |
+| Tableau A du code de la TVA | الجدول « أ » |  |
+| Tableau B bis du code de la TVA | الجدول « ب مكرر » |  |
+| Tableau B du code de la TVA | الجدول « ب » |  |
+| Tableau C du code de la TVA | الجدول « ج » |  |
 | Taux de liquidation | نسبة تصفية الجراية |  |
 | Taux effectif à la limite supérieure | النسبة الفعلية في الحدّ الأقصى |  |
+| Taux majoré de la TVA | النسبة المرتفعة |  |
 | Taux marginal | النسبة الحدية |  |
+| Taux normal de la TVA | النسبة العادية |  |
+| Taux réduit de la TVA | النسبة المخفضة |  |
+| Taxe à la production | الأداء على الإنتاج |  |
+| Taxe sur la valeur ajoutée | الأداء على القيمة المضافة | TVA |
+| Taxe sur les prestations de service | الأداء على الخدمات |  |
+| Territorialité de la TVA | مبدأ الإقليمية |  |
 | Traitement de base | المرتب الأساسي |  |
 | Tranche | شريحة |  |
 | Transfert monétaire direct | التحويل النقدي المباشر |  |
