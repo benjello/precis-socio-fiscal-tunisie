@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.6](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.5...v1.18.6) (2026-09-15)
+
+
+### 🐛 Corrections de bugs
+
+* **tableaux:** dater le droit à la journée, non à l'année ([#222](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/222)) ([c2d5a3d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/c2d5a3dee53b7a9ac019fd54cc836c8aecb04632)), closes [#215](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/215)
+
 ## [1.18.5](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.4...v1.18.5) (2026-09-15)
 
 
