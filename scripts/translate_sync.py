@@ -19,6 +19,33 @@ SEUIL_TRONCATURE = 0.6
 ARABIC_RE = re.compile(r"[\u0600-\u06FF]")
 
 
+def motif_de_troncature(lignes_avant, lignes_apres, lignes_source):
+    """Message expliquant en quoi la traduction est tronquée, ou None si elle ne l'est pas.
+
+    Le modèle renvoie parfois un fichier amputé au lieu de la mise à jour demandée : le
+    9 septembre 2026, un chapitre arabe de 636 lignes est revenu à 68 — 89 % de perte —,
+    et la PR ouverte automatiquement ressemblait à n'importe quelle autre. Rien dans le
+    rendu ne l'aurait signalé : un chapitre amputé reste un chapitre bien formé.
+
+    Une traduction n'est jamais beaucoup plus courte que ce qu'elle met à jour, SAUF si la
+    source a elle-même raccourci. D'où le `min` : on se règle sur le plus petit des deux
+    repères, faute de quoi une coupe légitime du français déclencherait l'alarme.
+
+    Le `max(1, …)` rend toute sortie vide fautive, y compris quand les repères sont nuls.
+
+    Rend le MESSAGE plutôt que de lever : la décision d'interrompre appartient à l'appelant,
+    et une fonction qui ne fait qu'un calcul se teste sans fichier ni réseau.
+    """
+    seuil = max(1, int(min(lignes_avant, lignes_source) * SEUIL_TRONCATURE))
+    if lignes_apres >= seuil:
+        return None
+    return (
+        f"traduction tronquée : {lignes_apres} lignes contre "
+        f"{lignes_avant} auparavant et {lignes_source} à la source. "
+        "Relancer, au besoin en retraduction complète."
+    )
+
+
 def restore_locators(source_text, translated_text):
     """Rétablit les locateurs de citation dans leur forme d'origine.
 
@@ -323,16 +350,13 @@ Fichier à traduire :
             # jour, sauf si la SOURCE a elle-même raccourci. On compare donc les deux
             # rapports : la cible ne doit pas fondre plus vite que sa source.
             if old_target_text:
-                lignes_avant = len(old_target_text.splitlines())
-                lignes_apres = len(translated_text.splitlines())
-                lignes_source = len(new_source_text.splitlines())
-                seuil = max(1, int(min(lignes_avant, lignes_source) * SEUIL_TRONCATURE))
-                if lignes_apres < seuil:
-                    raise RuntimeError(
-                        f"traduction tronquée : {lignes_apres} lignes contre "
-                        f"{lignes_avant} auparavant et {lignes_source} à la source. "
-                        "Relancer, au besoin en retraduction complète."
-                    )
+                motif = motif_de_troncature(
+                    len(old_target_text.splitlines()),
+                    len(translated_text.splitlines()),
+                    len(new_source_text.splitlines()),
+                )
+                if motif:
+                    raise RuntimeError(motif)
 
             # `dirname` rend la chaîne VIDE pour une cible à la racine du dépôt —
             # `CHANGELOG_ar.md` est la seule dans ce cas —, et `os.makedirs('')` lève
