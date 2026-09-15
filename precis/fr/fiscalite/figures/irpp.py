@@ -39,7 +39,10 @@ ANNEE_IRPP = 1990
 _L = {
     "lg_pib_avant": {
         "fr": "Impôts cédulaires et contribution personnelle d'État / PIB",
-        "ar": "الأداءات النوعية والمساهمة الشخصية للدولة / الناتج المحلي الإجمالي"},
+        # Même correction de substantif : les impôts cédulaires sont des IMPÔTS, donc
+        # ضرائب et non أداءات. L'adjectif النوعية est laissé tel quel, faute d'avoir pu
+        # vérifier qu'il rend bien « cédulaire ».
+        "ar": "الضرائب النوعية والمساهمة الشخصية للدولة / الناتج المحلي الإجمالي"},
     "lg_pib": {"fr": "IRPP / PIB (éch. gauche)",
                "ar": "الضريبة على دخل الأشخاص الطبيعيين / الناتج المحلي الإجمالي (يسار)"},
     "lg_dep": {"fr": "IRPP / dépenses de l'État (éch. droite)",
@@ -67,7 +70,12 @@ _C = {
     "tva": {"fr": "TVA", "ar": "الأداء على القيمة المضافة"},
     "consommation": {"fr": "Droits de consommation", "ar": "معاليم الاستهلاك"},
     "douanes": {"fr": "Droits de douanes", "ar": "المعاليم الديوانية"},
-    "autres": {"fr": "Autres impôts indirects", "ar": "أداءات غير مباشرة أخرى"},
+    # « impôts » se dit ضرائب ; أداءات rend « taxes, redevances ». La TVA est bien un
+    # أداء — c'est son nom officiel, الأداء على القيمة المضافة, conservé ci-dessus —, mais
+    # la CATÉGORIE qui la contient avec les droits de douanes et de consommation est celle
+    # des impôts indirects. La prose arabe du même livre écrivait déjà ضرائب غير مباشرة
+    # أخرى : l'étiquette de la figure la contredisait.
+    "autres": {"fr": "Autres impôts indirects", "ar": "ضرائب غير مباشرة أخرى"},
     "y": {"fr": "Part des recettes fiscales (%)", "ar": "الحصة من المداخيل الجبائية (%)"},
     "titre": {"fr": "Composition des recettes fiscales de l'État, 1986-2025",
               "ar": "تركيبة المداخيل الجبائية للدولة، 1986-2025"},
