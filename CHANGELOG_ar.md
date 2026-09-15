@@ -1,5 +1,24 @@
 # سجل التغييرات
 
+## [1.20.1](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.20.0...v1.20.1) (2026-09-15)
+
+
+### 🐛 إصلاحات الأخطاء
+
+* **المراجع:** نقل ما تستشهد به عدة كتب إلى الصندوق المشترك ([#236](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/236)) ([dc8d6b6](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/dc8d6b627f20c9177939cce07c19712987452373))
+
+## [1.20.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.19.0...v1.20.0) (2026-09-15)
+
+
+### ✨ جديد
+
+* **الجباية:** مراجع ومفاهيم مسرد الضريبة على القيمة المضافة ([#233](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/233)) ([0ba0ab4](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/0ba0ab40a58fbbd5f9a8ad3062db3d85c304524c))
+
+
+### 📝 التوثيق
+
+* **الجباية:** الملف الوثائقي للضريبة على القيمة المضافة ([#234](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/234)) ([197cba6](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/197cba6e54fc35dcb2f170d5d0d99c655742b156))
+
 ## [1.19.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.7...v1.19.0) (2026-09-15)
 
 
