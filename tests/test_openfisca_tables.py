@@ -85,23 +85,37 @@ class ParametreAbrogeTest(unittest.TestCase):
         self.assertIsNone(valeur_a_la_date(bloc, datetime.date(2020, 1, 1)))
 
 
-class ComparaisonParAnneeTest(unittest.TestCase):
-    """La comparaison porte sur l'ANNÉE seule, pas sur la date complète.
+class ComparaisonParDateTest(unittest.TestCase):
+    """La comparaison porte sur la DATE COMPLÈTE (#215).
 
-    Un palier daté du 1er juillet s'applique donc à une date de janvier de la même
-    année, alors qu'il n'était pas encore en vigueur. Ce dépôt indexe ses paramètres
-    par année de revenus, ce qui rend le raccourci défendable — mais rien ne le dit
-    dans le code, et ce test rend le comportement visible plutôt que subi.
+    Elle ne portait que sur l'année : un palier daté du 1er juillet s'appliquait dès
+    janvier, alors qu'il n'était pas encore en vigueur. Le cas du PNAFN — 53,333 D au
+    1er janvier 2009, 56,666 D au 1er juillet — en est l'illustration réelle.
+
+    Ces tests étaient écrits à l'envers ; ils figeaient l'ancien comportement pour
+    qu'on le change en connaissance de cause. C'est fait.
     """
 
-    def test_un_palier_de_juillet_vaut_des_janvier(self):
-        bloc = {"2009-01-01": {"value": 53.3}, "2009-07-01": {"value": 56.6}}
-        self.assertEqual(valeur_a_la_date(bloc, datetime.date(2009, 1, 1)), 56.6)
+    BLOC = {"2009-01-01": {"value": 53.3}, "2009-07-01": {"value": 56.6}}
 
-    def test_departage_par_la_chaine_a_annee_egale(self):
-        """À année égale, le tri secondaire sur la chaîne choisit la date la plus tardive."""
-        bloc = {"2009-01-01": {"value": 1.0}, "2009-12-01": {"value": 2.0}}
-        self.assertEqual(valeur_a_la_date(bloc, datetime.date(2009, 6, 1)), 2.0)
+    def test_un_palier_de_juillet_ne_vaut_pas_des_janvier(self):
+        self.assertEqual(valeur_a_la_date(self.BLOC, datetime.date(2009, 1, 1)), 53.3)
+
+    def test_la_veille_du_palier(self):
+        self.assertEqual(valeur_a_la_date(self.BLOC, datetime.date(2009, 6, 30)), 53.3)
+
+    def test_le_jour_meme_du_palier(self):
+        """La date d'effet est incluse : le palier vaut dès son premier jour."""
+        self.assertEqual(valeur_a_la_date(self.BLOC, datetime.date(2009, 7, 1)), 56.6)
+
+    def test_apres_le_palier(self):
+        self.assertEqual(valeur_a_la_date(self.BLOC, datetime.date(2009, 8, 1)), 56.6)
+
+    def test_cle_en_objet_date(self):
+        """PyYAML rend les dates en objets `date` : les deux formes doivent coïncider."""
+        bloc = {datetime.date(2009, 1, 1): {"value": 53.3},
+                datetime.date(2009, 7, 1): {"value": 56.6}}
+        self.assertEqual(valeur_a_la_date(bloc, datetime.date(2009, 1, 1)), 53.3)
 
 
 class TauxEffectifsTest(unittest.TestCase):
