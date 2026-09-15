@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.19.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.7...v1.19.0) (2026-09-15)
+
+
+### ✨ Nouveautés
+
+* **fiscalite:** un chapitre par impôt, deux parties, et ce que rapporte la TVA ([#228](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/228)) ([b8346b8](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/b8346b8082651746bf10a1da0821d58ccf99c392))
+
+
+### 🐛 Corrections de bugs
+
+* **ar:** « impôts » se dit ضرائب, non أداءات, dans les étiquettes de catégorie ([#229](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/229)) ([e5e664f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e5e664fd4f56ded7c8f6452afb9cdfb1d87375fd))
+* **traduction:** sortir les _quarto.yml de la synchronisation ([#227](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/227)) ([ae6b414](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/ae6b414bf5bd7012f53c8988d75b164bb295e5bf))
+
 ## [1.18.7](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.6...v1.18.7) (2026-09-15)
 
 
