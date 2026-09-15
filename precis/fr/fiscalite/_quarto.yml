@@ -14,6 +14,8 @@ book:
   downloads: [pdf]
   chapters:
     - index.qmd
+    - _impot_revenu.qmd
+    - _autres_impots.qmd
   appendices:
     - _glossaire.qmd
 
