@@ -179,8 +179,36 @@ def _annee(cle: Any) -> int:
     return cle.year if hasattr(cle, "year") else int(str(cle)[:4])
 
 
+def _date_de_cle(cle: Any) -> datetime.date:
+    """Date d'effet d'une clé de paramètre, à la JOURNÉE près.
+
+    Les clés arrivent tantôt en objets `date` (PyYAML convertit `2014-01-01`), tantôt
+    en chaînes. `datetime` étant une sous-classe de `date`, il se teste en premier.
+    """
+    if isinstance(cle, datetime.datetime):
+        return cle.date()
+    if isinstance(cle, datetime.date):
+        return cle
+    texte = str(cle)[:10]
+    annee = int(texte[:4])
+    mois = int(texte[5:7]) if len(texte) >= 7 else 1
+    jour = int(texte[8:10]) if len(texte) >= 10 else 1
+    return datetime.date(annee, mois, jour)
+
+
 def valeur_a_la_date(bloc: dict[str, Any] | None, date: datetime.date) -> float | None:
     """Valeur en vigueur à `date` dans un bloc daté {date: {value: x}}.
+
+    La comparaison porte sur la DATE COMPLÈTE. Elle ne portait que sur l'année (#215) :
+    un palier daté du 1er juillet s'appliquait alors dès janvier, alors qu'il n'était pas
+    encore en vigueur.
+
+    Le changement est sans effet là où la convention « année de revenus » a du sens — les
+    paramètres fiscaux sont datés au 1er janvier, et les deux lectures y coïncident. Il ne
+    modifie que les six blocs porteurs de paliers infra-annuels : les cinq du SMIG/SMAG,
+    révisés deux fois en 1980, 1992, 1993, 1996, 1997, 1999 et 2012, et l'allocation du
+    PNAFN en 2009 — 53,333 D au 1er janvier, 56,666 D au 1er juillet. C'est là, et là
+    seulement, que l'ancienne lecture renvoyait un montant qui n'était pas en vigueur.
 
     Renvoie None si la valeur en vigueur est nulle : dans openfisca, `value: null`
     signifie que le paramètre cesse d'exister à cette date. On ne remonte alors pas
@@ -188,8 +216,8 @@ def valeur_a_la_date(bloc: dict[str, Any] | None, date: datetime.date) -> float 
     """
     if not bloc:
         return None
-    for cle in sorted(bloc.keys(), key=lambda k: (_annee(k), str(k)), reverse=True):
-        if _annee(cle) > date.year:
+    for cle in sorted(bloc.keys(), key=lambda k: (_date_de_cle(k), str(k)), reverse=True):
+        if _date_de_cle(cle) > date:
             continue
         brut = bloc[cle]
         if brut is None:
