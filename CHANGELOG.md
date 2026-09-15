@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.20.1](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.20.0...v1.20.1) (2026-09-15)
+
+
+### 🐛 Corrections de bugs
+
+* **biblio:** ranger au fonds commun ce que plusieurs livres citent ([#236](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/236)) ([dc8d6b6](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/dc8d6b627f20c9177939cce07c19712987452373))
+
 ## [1.20.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.19.0...v1.20.0) (2026-09-15)
 
 
