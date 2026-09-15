@@ -21,11 +21,12 @@ import re
 import sys
 import unicodedata
 
-try:
-    import yaml
-except ImportError:
-    print("PyYAML requis : `uv pip install pyyaml` ou `uv run python scripts/build_glossary.py`.")
-    sys.exit(1)
+# `yaml` n'est PAS importé ici, mais dans `load_entries()`, seule fonction qui en a
+# besoin. Un garde en tête du module appelait `sys.exit(1)` dès l'import : `cite`,
+# `clean`, `validate` et `ancres_utilisees` — qui ne lisent aucun YAML — étaient donc
+# inatteignables sans PyYAML, et avec elles le verrou de synchro FR/AR et le refus
+# d'ancre orpheline. Un validateur de texte publié doit pouvoir être vérifié sans
+# analyseur YAML.
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GLOSSARY = os.path.join(ROOT, "precis", "glossaire.yml")
@@ -69,6 +70,13 @@ DO_NOT_EDIT = {
 
 
 def load_entries():
+    # Import local : voir la note en tête de module. Le message reste identique, et
+    # s'adresse à qui lance le script — c'est-à-dire exactement là où le besoin naît.
+    try:
+        import yaml
+    except ImportError:
+        print("PyYAML requis : `uv pip install pyyaml` ou `uv run python scripts/build_glossary.py`.")
+        sys.exit(1)
     with open(GLOSSARY, "r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
     return data.get("entries", [])
