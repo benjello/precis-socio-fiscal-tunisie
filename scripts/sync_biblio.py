@@ -124,7 +124,12 @@ def build_citation_key_map(group_id, api_key):
 # Variables CSL qu'aucun champ Zotero ne peut accueillir pour le type visé, et qui
 # vivent donc dans le champ Extra. Le numéro de fascicule du JORT est dans ce cas pour
 # les textes législatifs : le type `statute` n'a pas de champ `issue`.
-VARIABLES_EXTRA = ("issue", "authority", "event-date", "collection-title", "genre")
+# `number-of-pages` s'y ajoute : Zotero le porte nativement (`numPages`) pour le livre,
+# mais PAS pour le rapport — et le Manuel de liquidation de la CNRPS, 149 pages, est un
+# rapport. Sans cet échappement, une seule entrée faisait échouer la conversion ENTIÈRE,
+# et donc le rapatriement des 119 références absentes de Zotero.
+VARIABLES_EXTRA = ("issue", "authority", "event-date", "collection-title", "genre",
+                   "number-of-pages")
 
 
 def parse_date_extra(texte):
