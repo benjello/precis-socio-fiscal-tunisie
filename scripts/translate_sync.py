@@ -19,6 +19,32 @@ SEUIL_TRONCATURE = 0.6
 ARABIC_RE = re.compile(r"[\u0600-\u06FF]")
 
 
+def fichier_a_traduire(chemin):
+    """Dit si un fichier relève de la traduction automatique.
+
+    `_quarto.yml` en est EXCLU. Le fichier arabe porte des éléments qui n'ont aucun
+    original français — `dir: rtl`, un bloc `language:` aux libellés d'interface
+    arabes, et les titres des parties du livre — que le traducteur ne peut pas
+    déduire du fichier français, et qu'il écrase donc à chaque passage. Faire
+    transiter par un traducteur un fichier dont une part n'a pas de source est
+    structurellement fautif : l'arabe se tient à la main sous `precis/ar/`.
+
+    Le garde est ici ET dans le filtre du workflow. Ce n'est pas un doublon : le
+    workflow évite d'ouvrir une PR de traduction vide, cette fonction protège la
+    re-synchro manuelle, où les fichiers sont fournis à la main et échappent au
+    filtre.
+
+    Les `_glossaire.qmd` restent exclus au niveau du workflow seulement : ils sont
+    engendrés depuis `precis/glossaire.yml`, et leur cas ne relève pas de la même
+    règle.
+    """
+    if chemin == "CHANGELOG.md":
+        return True
+    if chemin.endswith("_quarto.yml"):
+        return False
+    return chemin.endswith(".qmd")
+
+
 def motif_de_troncature(lignes_avant, lignes_apres, lignes_source):
     """Message expliquant en quoi la traduction est tronquée, ou None si elle ne l'est pas.
 
@@ -177,7 +203,7 @@ def main():
     failures = []
 
     for file_path in files_to_process:
-        if not file_path.endswith(".qmd") and not file_path.endswith("_quarto.yml") and file_path != "CHANGELOG.md":
+        if not fichier_a_traduire(file_path):
             continue
 
         if not os.path.exists(file_path):

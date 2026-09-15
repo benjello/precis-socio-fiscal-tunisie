@@ -17,9 +17,19 @@ on:
     # Une correction faite à la main sur l'arabe seul ne déclenche donc plus rien
     # ici : c'est voulu, et `verify-translation.yml` la couvre — il écoute les
     # chemins arabes et y fait tourner le contrôle de parité.
+    #
+    # `_quarto.yml` N'EST PLUS ÉCOUTÉ, ni traduit. Le fichier arabe porte des
+    # éléments qui n'ont aucun original français — `dir: rtl`, et un bloc
+    # `language:` aux libellés d'interface arabes — que le traducteur ne peut pas
+    # deviner à partir du fichier français et qu'il efface donc à chaque passage.
+    # Faire transiter par un traducteur un fichier dont une part n'a pas de source
+    # est structurellement fautif : l'arabe est tenu à la main sous `precis/ar/`.
+    # C'est d'ailleurs ce qui se passait en fait — aucun commit du robot n'a jamais
+    # écrit ces fichiers, tous viennent de rattrapages manuels (voir e00d102,
+    # « câble les chapitres de régime dans le livre AR ») — mais après incident,
+    # la page arabe rendant 404 dans l'intervalle.
     paths:
       - 'precis/fr/**/*.qmd'
-      - 'precis/fr/**/_quarto.yml'
       - 'CHANGELOG.md'
   # PAS de déclencheur `pull_request`. Sur une PR, les filtres `paths` sont
   # évalués sur le diff ENTIER de la PR, pas sur le seul nouveau commit : tant
@@ -76,9 +86,10 @@ jobs:
               # Re-synchro ciblée sur les fichiers fournis.
               CHANGED="$INPUT_FILES"
             else
-              # Re-synchro totale : tous les .qmd / _quarto.yml FR, SAUF les
-              # _glossaire.qmd (générés par build_glossary.py, pas traduits).
-              CHANGED=$(git ls-files | grep -E '^precis/fr/.*\.(qmd|yml)$' | grep -v '_glossaire\.qmd' | tr '\n' ' ' || true)
+              # Re-synchro totale : tous les .qmd FR, SAUF les _glossaire.qmd
+              # (générés par build_glossary.py, pas traduits). Les `_quarto.yml`
+              # ne sont plus traduits du tout — voir le commentaire des `paths`.
+              CHANGED=$(git ls-files | grep -E '^precis/fr/.*\.qmd$' | grep -v '_glossaire\.qmd' | tr '\n' ' ' || true)
             fi
           else
             BASE_SHA=${{ github.event.before }}
@@ -89,7 +100,11 @@ jobs:
             # merge d'une PR auto-translate) y déclencherait une rétro-traduction
             # AR→FR ouvrant une PR parasite qui corromprait la source FR
             # (boucle observée : #31, #35, #37, #44). On filtre le diff au FR.
-            PATTERN='precis/fr/.*\.(qmd|yml)$|^CHANGELOG\.md$'
+            # `.qmd` seulement : les `_quarto.yml` sont hors traduction (voir les
+            # `paths`). Le script refuse de toute façon de les traiter, mais le
+            # filtre évite d'ouvrir une PR de traduction vide quand un commit ne
+            # touche qu'à la configuration d'un livre.
+            PATTERN='precis/fr/.*\.qmd$|^CHANGELOG\.md$'
             # Les `_glossaire.qmd` sont GÉNÉRÉS par build_glossary.py à partir de
             # precis/glossaire.yml, qui porte déjà les deux langues. Les traduire
             # est au mieux inutile — la prochaine exécution du générateur écrase
