@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.7](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.6...v1.18.7) (2026-09-15)
+
+
+### 🐛 Corrections de bugs
+
+* **ci:** authentifier l'appel qui installe TinyTeX ([#224](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/224)) ([fa364dd](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/fa364dd75eb3b5d3b1ddaadecb485df89ffdaa07)), closes [#216](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/216)
+
 ## [1.18.6](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.18.5...v1.18.6) (2026-09-15)
 
 
