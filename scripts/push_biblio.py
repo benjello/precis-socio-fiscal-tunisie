@@ -80,7 +80,12 @@ ALIAS = {
 # l'export : c'est le seul endroit où ces données survivent. Le numéro de fascicule du
 # JORT est dans ce cas pour les textes législatifs — et c'est une donnée de provenance,
 # pas un ornement.
-VARIABLES_EXTRA = ("issue", "authority", "event-date", "collection-title", "genre")
+# `number-of-pages` s'y ajoute : Zotero le porte nativement (`numPages`) pour le livre,
+# mais PAS pour le rapport — et le Manuel de liquidation de la CNRPS, 149 pages, est un
+# rapport. Sans cet échappement, une seule entrée faisait échouer la conversion ENTIÈRE,
+# et donc le rapatriement des 119 références absentes de Zotero.
+VARIABLES_EXTRA = ("issue", "authority", "event-date", "collection-title", "genre",
+                   "number-of-pages")
 
 
 def champs_du_type(type_zotero: str, schema: dict) -> set[str]:
