@@ -19,13 +19,18 @@ name: Verify Translation (Checker AI)
 # vert ne vaut alors PAS validation de la traduction — c'est le contrôle de
 # parité qui aura fait le travail.
 
+# Les `_quarto.yml` NE SONT PLUS ÉCOUTÉS ici. Ils ne sont plus traduits : le fichier
+# arabe porte des éléments sans original français — `dir: rtl`, le bloc `language:` des
+# libellés d'interface, les titres des parties — et se tient à la main. Ni le Checker AI
+# ni le contrôle de parité n'ont donc de paire à comparer, et les garder ici ne
+# produirait que du bruit. Le mode de défaillance réel — chapitres qui dérivent, fichier
+# malformé — est couvert par `rendre-les-livres.yml`, qui écoute `precis/**` et rend les
+# dix livres, l'arabe compris et pour cette raison même.
 on:
   pull_request:
     paths:
       - 'precis/fr/**/*.qmd'
-      - 'precis/fr/**/_quarto.yml'
       - 'precis/ar/**/*.qmd'
-      - 'precis/ar/**/_quarto.yml'
 
 jobs:
   verify:

@@ -12,7 +12,7 @@ Toute traduction automatique doit obéir strictement aux règles ci-dessous.
 - Si le texte source est en français, traduisez-le en arabe standard (Fusha) adapté au vocabulaire administratif tunisien.
 - Si le texte source est en arabe, traduisez-le en français académique et juridique.
 - Les acronymes (ex: CNSS, CNRPS, IRPP) peuvent être conservés en alphabet latin s'il n'y a pas d'équivalent officiel strict, ou traduits en toutes lettres.
-- **RÈGLE CRITIQUE POUR LES FICHIERS `_quarto.yml`** : Si vous traduisez un fichier `_quarto.yml` vers l'arabe, vous devez OBLIGATOIREMENT changer la ligne `lang: fr` en `lang: ar` et ajouter `dir: rtl`. À l'inverse, vers le français, mettez `lang: fr` et retirez `dir: rtl`. Vous devez aussi traduire les valeurs des champs `title:` (le nom du livre).
+- **LES FICHIERS `_quarto.yml` NE SONT PLUS TRADUITS.** Ils sont exclus de la synchronisation, à la fois par le filtre du workflow et par `scripts/translate_sync.py`. Si l'un d'eux vous parvient malgré tout, ne le traduisez pas : rendez-le inchangé. Motif : le fichier arabe porte des éléments qui n'ont **aucun original français** — `dir: rtl`, un bloc `language:` aux libellés d'interface arabes, et les titres des parties du livre. Le traducteur ne peut pas les déduire du fichier français ; il les effaçait donc à chaque passage, et la page arabe rendait 404 jusqu'au rattrapage manuel. La configuration des livres arabes se tient **à la main** sous `precis/ar/`.
 
 ## 3. Glossaire Officiel (À respecter scrupuleusement)
 

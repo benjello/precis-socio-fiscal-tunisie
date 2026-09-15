@@ -20,7 +20,16 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
 - **Toujours `uv run`** pour Python — jamais `python3` ni `.venv/bin/python3`.
 - **Le français est la source de vérité.** N'écris jamais un `.qmd` sous `precis/ar/` : la version
   arabe est produite par la CI. Les `references.json`, eux, se tiennent à la main dans les deux
-  langues.
+  langues — et les **`_quarto.yml` aussi**.
+- **Ne remets jamais les `_quarto.yml` dans la synchronisation de traduction.** Ils en sont exclus
+  par le filtre du workflow *et* par `translate_sync.fichier_a_traduire()`. Motif : le fichier arabe
+  porte des éléments qui n'ont **aucun original français** — `dir: rtl`, le bloc `language:` des
+  libellés d'interface, les titres des parties du livre. Le traducteur ne peut pas les déduire du
+  fichier français et les effaçait à chaque passage ; le livre arabe rendait alors 404 jusqu'au
+  rattrapage à la main. Conséquence pratique : **quand tu ajoutes un chapitre côté français, ajoute-le
+  toi-même au `_quarto.yml` arabe**, une fois sa traduction livrée — sans quoi il ne sera servi dans
+  aucune des deux langues. Un fichier malformé ou des chapitres qui dérivent sont attrapés par
+  `rendre-les-livres.yml`, qui rend les dix livres sur chaque PR.
 - **Ne modifie pas les fichiers engendrés** : `_glossaire.qmd`, `translation_glossary.generated.md`,
   `precis/*/*/tables/*`.
 - **Aucune valeur, aucune date, aucune URL sans source vérifiée.** Une case vide honnête vaut mieux

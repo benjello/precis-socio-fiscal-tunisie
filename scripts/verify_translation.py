@@ -47,7 +47,15 @@ def main():
     skipped = []
 
     for file_path in changed_files:
-        if not file_path.endswith(".qmd") and not file_path.endswith("_quarto.yml"):
+        # `.qmd` SEULEMENT. Les `_quarto.yml` ne sont plus traduits : le fichier arabe
+        # porte des éléments sans original français — `dir: rtl`, le bloc `language:`
+        # des libellés d'interface, les titres des parties — et se tient à la main.
+        # Les comparer comme une paire source/cible reviendrait à signaler une
+        # divergence permanente et attendue, c'est-à-dire un rouge qui finit par
+        # masquer le seul signal utile : une divergence neuve. Un `_quarto.yml`
+        # malformé ou dont les chapitres ont dérivé est attrapé ailleurs, par le rendu
+        # des dix livres (`rendre-les-livres.yml`).
+        if not file_path.endswith(".qmd"):
             continue
 
         # Les _glossaire.qmd sont GÉNÉRÉS par build_glossary.py depuis la source
