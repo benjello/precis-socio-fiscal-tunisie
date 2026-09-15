@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.21.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.20.1...v1.21.0) (2026-09-15)
+
+
+### ✨ Nouveautés
+
+* **fiscalite:** écrire le cœur du régime de la TVA ([#240](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/240)) ([7a45f42](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/7a45f42cef117ea2c0aa8131c3b2dd4523507b34))
+
+
+### 🐛 Corrections de bugs
+
+* **biblio:** loger « number-of-pages » dans Extra, et débloquer le rapatriement ([#239](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/239)) ([eab8a72](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/eab8a72403a66b6211090ea51ec92e27ca270700))
+
 ## [1.20.1](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.20.0...v1.20.1) (2026-09-15)
 
 
