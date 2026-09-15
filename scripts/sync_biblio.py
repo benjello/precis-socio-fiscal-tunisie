@@ -226,21 +226,68 @@ def contient_arabe(valeur):
     return False
 
 
-def preserve_urls_absentes(items, chemin_existant):
+def items_par_cle(chemin):
+    """Les items d'un fichier CSL-JSON, indexés par clé de citation."""
+    if not os.path.exists(chemin):
+        return {}
+    with open(chemin, encoding="utf-8") as f:
+        return {e.get("id"): e for e in json.load(f).get("items", [])}
+
+
+def index_local(precis_dir, langue):
+    """Tout ce que le dépôt porte déjà pour cette langue, par clé de citation.
+
+    Sert de SECOURS aux deux fonctions de préservation, qui ne consultaient que le
+    fichier de destination. Une référence qui change de côté — d'un livre vers le fonds
+    commun, cf. `repartit_references` — n'est pas encore dans sa destination : sans ce
+    secours, tout ce que le fichier local portait et que Zotero ignore — une URL absente
+    de la source, un champ traduit en arabe — disparaîtrait à la première descente qui
+    la déplace, en silence et sans que le rendu le signale.
+
+    À construire AVANT la première écriture : passé ce point, le fichier qui portait la
+    clé déplacée a déjà été réécrit sans elle.
+
+    PRÉCÉDENCE : le fichier partagé est lu en premier, et `setdefault` lui donne donc le
+    dessus sur les fichiers de livre. L'ordre est délibéré, mais sa justification n'est
+    pas lisible ici, car le fichier de DESTINATION prime de toute façon sur ce secours.
+    Pour une clé promue vers le fonds commun, la destination est le partagé : ou bien il
+    la porte, et le secours n'est pas consulté, ou bien il ne la porte pas, et le livre
+    l'emporte faute de concurrent. L'ordre y est donc inerte. Pour le mouvement inverse
+    — une clé citée par deux livres puis par un seul, qui redescend dans un livre —, la
+    destination est le fichier de livre, et c'est bien l'entrée du partagé qui doit
+    servir de secours. D'où le partagé en premier.
+    """
+    index = {}
+    racine = os.path.join(precis_dir, langue)
+    if not os.path.isdir(racine):
+        return index
+    chemins = [os.path.join(racine, "references.json")]
+    for nom in sorted(os.listdir(racine)):
+        sous = os.path.join(racine, nom, "references.json")
+        if os.path.exists(sous):
+            chemins.append(sous)
+    for chemin in chemins:
+        for cle, item in items_par_cle(chemin).items():
+            index.setdefault(cle, item)
+    return index
+
+
+def preserve_urls_absentes(items, chemin_existant, secours=None):
     """Ne laisse jamais une URL disparaître au profit de rien.
 
     Zotero peut ne pas porter d'URL là où le fichier local en a une : deux textes de 2018
     étaient dans ce cas côté arabe. Sans ce garde-fou, la descente les aurait effacées en
     silence — perdre une référence vers le texte est plus grave que de la garder
     imparfaite, et rien dans le rendu ne l'aurait signalé.
+
+    `secours` couvre les clés absentes du fichier de destination parce qu'elles viennent
+    d'en changer ; le fichier de destination reste prioritaire.
     """
-    if not os.path.exists(chemin_existant):
-        return items
-    with open(chemin_existant, encoding="utf-8") as f:
-        anciens = {e.get("id"): e for e in json.load(f).get("items", [])}
+    anciens = items_par_cle(chemin_existant)
+    secours = secours or {}
     rendues = 0
     for item in items:
-        ancien = anciens.get(item.get("id"))
+        ancien = anciens.get(item.get("id")) or secours.get(item.get("id"))
         if ancien and ancien.get("URL") and not item.get("URL"):
             item["URL"] = ancien["URL"]
             rendues += 1
@@ -249,7 +296,7 @@ def preserve_urls_absentes(items, chemin_existant):
     return items
 
 
-def preserve_traductions(items, chemin_existant):
+def preserve_traductions(items, chemin_existant, secours=None):
     """Garde les champs déjà traduits en arabe, prend le reste de Zotero.
 
     La bibliothèque Zotero est en français : une descente brute remplacerait
@@ -260,14 +307,15 @@ def preserve_traductions(items, chemin_existant):
     un champ n'est gardé que s'il est en caractères arabes localement et ne l'est pas
     dans ce qui descend. Une correction faite côté Zotero — une URL réparée, une page
     rectifiée — passe donc toujours.
+
+    `secours` joue le même rôle qu'au-dessus : une référence promue au fonds commun
+    emporte sa traduction, au lieu de la perdre en changeant de fichier.
     """
-    if not os.path.exists(chemin_existant):
-        return items
-    with open(chemin_existant, encoding="utf-8") as f:
-        anciens = {e.get("id"): e for e in json.load(f).get("items", [])}
+    anciens = items_par_cle(chemin_existant)
+    secours = secours or {}
     preserves = 0
     for item in items:
-        ancien = anciens.get(item.get("id"))
+        ancien = anciens.get(item.get("id")) or secours.get(item.get("id"))
         if not ancien:
             continue
         for champ in CHAMPS_TRADUITS:
@@ -420,6 +468,51 @@ def write_csl_json(items, path):
         json.dump({"items": items}, f, ensure_ascii=False, indent=2)
 
 
+def repartit_references(book_items, all_items):
+    """Sépare ce qui appartient à un livre de ce qui relève du fonds commun.
+
+    Une référence citée par PLUSIEURS livres n'appartient à aucun en propre : une loi
+    de finances lue par la fiscalité, les cotisations et les retraites est du fonds
+    commun. Elle est donc versée dans `precis/{lang}/references.json` — et RETIRÉE des
+    fichiers de livre, faute de quoi la même clé serait écrite deux fois et le rendu
+    la citerait en double.
+
+    L'ancienne règle ne versait au commun que ce qui n'appartenait à AUCUN livre. Une
+    descente Zotero réinjectait donc dans les fichiers de livre des clés qui relèvent du
+    partagé, et `push_biblio.ranger` ne peut pas les rattraper : il n'ajoute que des
+    collections, il n'en retire aucune.
+
+    Rend `(livres, partage)`. L'ordre d'origine est conservé de part et d'autre : les
+    fichiers sont écrits tels quels, et un réordonnancement produirait sur des
+    centaines de clés un diff illisible qui masquerait le changement réel.
+    """
+    livres_par_id = {}
+    for livre, items in book_items.items():
+        for item in items:
+            # Un item sans clé de citation est ignoré : sinon tous les items sans clé
+            # se rassemblent sous le même `None`, deux livres suffisent à le « promouvoir »
+            # et ils disparaissent alors de TOUS les fichiers de livre d'un coup.
+            # `sans_cle_de_citation` les écarte plus loin (l. 528 et 543), mais après
+            # nous : le tri doit donc les laisser à leur livre.
+            if item.get("id") is None:
+                continue
+            livres_par_id.setdefault(item["id"], set()).add(livre)
+
+    promus = {ident for ident, livres in livres_par_id.items() if len(livres) > 1}
+
+    livres = {}
+    for livre, items in book_items.items():
+        retenus = [item for item in items if item.get("id") not in promus]
+        if retenus:
+            livres[livre] = retenus
+
+    partage = [
+        item for item in all_items
+        if item.get("id") not in livres_par_id or item.get("id") in promus
+    ]
+    return livres, partage
+
+
 def main():
     parser = argparse.ArgumentParser(description="Sync Zotero → CSL-JSON")
     parser.add_argument("--key", default=os.environ.get("ZOTERO_API_KEY"))
@@ -450,7 +543,6 @@ def main():
     print(f"Found {len(collections)} collections: {list(collections.values())}")
 
     book_items = {}
-    shared_items = []
 
     collection_key_to_book = {}
     for ckey, cname in collections.items():
@@ -481,17 +573,15 @@ def main():
     )
     all_items = apply_citation_keys(all_items, key_map, group_id)
 
-    collected_ids = set()
-    for items in book_items.values():
-        for item in items:
-            collected_ids.add(item.get("id"))
-
-    for item in all_items:
-        if item.get("id") not in collected_ids:
-            shared_items.append(item)
+    book_items, shared_items = repartit_references(book_items, all_items)
 
     if shared_items:
         print(f"  Shared/Commun: {len(shared_items)} items")
+
+    # Construit AVANT la première écriture : une clé qui passe d'un livre au fonds commun
+    # n'est pas encore dans sa destination, et le fichier qui la portait sera réécrit
+    # sans elle au premier tour de boucle. Le lire après, c'est ne plus rien trouver.
+    secours = {lang: index_local(precis_dir, lang) for lang in LANGUAGES}
 
     written = 0
     for book, items in book_items.items():
@@ -503,9 +593,9 @@ def main():
             # Chaque langue reçoit sa propre copie : `preserve_traductions` modifie les
             # items en place, et l'arabe ne doit pas contaminer le français.
             a_ecrire = applique_edition(copy.deepcopy(items), lang, exceptions)
-            a_ecrire = preserve_urls_absentes(a_ecrire, out_path)
+            a_ecrire = preserve_urls_absentes(a_ecrire, out_path, secours[lang])
             if lang == "ar":
-                a_ecrire = preserve_traductions(a_ecrire, out_path)
+                a_ecrire = preserve_traductions(a_ecrire, out_path, secours[lang])
             write_csl_json(a_ecrire, out_path)
             print(f"  Wrote {out_path}")
             written += 1
@@ -515,9 +605,9 @@ def main():
         for lang in LANGUAGES:
             out_path = os.path.join(precis_dir, lang, "references.json")
             a_ecrire = applique_edition(copy.deepcopy(shared_items), lang, exceptions)
-            a_ecrire = preserve_urls_absentes(a_ecrire, out_path)
+            a_ecrire = preserve_urls_absentes(a_ecrire, out_path, secours[lang])
             if lang == "ar":
-                a_ecrire = preserve_traductions(a_ecrire, out_path)
+                a_ecrire = preserve_traductions(a_ecrire, out_path, secours[lang])
             write_csl_json(a_ecrire, out_path)
             print(f"  Wrote {out_path}")
             written += 1
