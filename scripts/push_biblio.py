@@ -306,6 +306,19 @@ COLLECTIONS = {
 
 CITATION_CLE = re.compile(r"@([a-zA-Z][a-zA-Z0-9_-]*)")
 
+# Quarto emploie la MÊME syntaxe `@nom` pour deux choses sans rapport : citer une
+# référence bibliographique, et renvoyer à un élément numéroté du document — section,
+# tableau, figure, équation. Les seconds ne sont pas des clés : ils ne sont ni dans
+# `references.json`, ni dans Zotero, et les compter fait croire à des références
+# manquantes qui n'existent pas.
+#
+# Mesuré le 16/09/2026 sur le corpus : 359 `@nom` relevés, dont **24 renvois**
+# (11 `sec-`, 10 `tbl-`, 3 `fig-`) pour 335 citations réelles. Le contrôle de rangement
+# annonçait donc 38 clés « absentes de Zotero » là où il n'y en avait que 14.
+RENVOIS_QUARTO = ("sec-", "tbl-", "fig-", "eq-", "lst-",
+                  "thm-", "lem-", "cor-", "prp-", "cnj-",
+                  "def-", "exm-", "exr-")
+
 
 def cles_citees(livre: str, racine: str | None = None) -> set[str]:
     """Clés de citation auxquelles le texte FRANÇAIS d'un livre renvoie réellement.
@@ -351,7 +364,7 @@ def cles_citees(livre: str, racine: str | None = None) -> set[str]:
         for nom in sorted(os.listdir(tableaux)):
             if nom.endswith(".md"):
                 lire(os.path.join(tableaux, nom))
-    return trouvees
+    return {cle for cle in trouvees if not cle.startswith(RENVOIS_QUARTO)}
 
 
 def classe_rangement(citations_par_livre: dict, collections_par_cle: dict) -> dict:
@@ -461,9 +474,26 @@ def controle_rangement(groupe: str, api_key: str) -> int:
     citations = {livre: cles_citees(livre) for livre in COLLECTIONS}
     rapport = classe_rangement(citations, collections_par_cle)
 
+    # Les deux listes de défaut SE CHEVAUCHENT : une clé rangée dans la collection d'un
+    # mauvais livre doit à la fois perdre celle-là et gagner la sienne, donc elle figure
+    # dans les deux. Additionner les quatre catégories dépasse alors le total annoncé.
+    #
+    # Première exécution réelle, 16/09/2026 : 175 + 40 + 108 + 12 = 335 pour 333 clés.
+    # L'écart n'était pas une erreur de classement — il disait que deux clés étaient
+    # rangées dans le mauvais livre. Mais rien ne le disait, et un rapport qui ne
+    # s'additionne pas se fait soupçonner tout entier. On compte donc les clés
+    # DISTINCTES en défaut, et on nomme le chevauchement.
+    en_defaut = ({cle for cle, _ in rapport["a_declasser"]}
+                 | {cle for cle, _ in rapport["a_ranger"]})
+    doublement = len(rapport["a_declasser"]) + len(rapport["a_ranger"]) - len(en_defaut)
+
     print(f"{len(collections_par_cle)} référence(s) dans Zotero, "
           f"{sum(len(c) for c in citations.values())} citation(s) relevées dans le texte.\n")
     print(f"✓ bien rangées      : {len(rapport['bien_rangee'])}")
+    print(f"⚠ en défaut         : {len(en_defaut)} clé(s) distinctes")
+    if doublement:
+        print(f"    dont {doublement} rangée(s) dans le mauvais livre : elles figurent "
+              f"ci-dessous DEUX fois, une par correction à apporter")
     print(f"⚠ à déclasser       : {len(rapport['a_declasser'])} "
           f"(citées par plusieurs livres, mais rattachées à un livre)")
     for cle, en_trop in rapport["a_declasser"]:
