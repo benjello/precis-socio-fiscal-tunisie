@@ -19,14 +19,13 @@ livre arabe y déposerait du français non traduit, en contournant la chaîne de
 et la terminologie arabe n'appartient pas à ce script. Le livre arabe garde donc son
 tableau traduit, et cet instantané ne le remplace pas.
 
-PAS ENCORE ENREGISTRÉ EN INTÉGRATION CONTINUE, ET C'EST VOULU. `verifier-snapshots.yml`
-régénère les tableaux depuis openfisca-tunisia sur `ref: master`, et échoue si le résultat
-diffère du versionné. Tant que les paramètres `produits_petroliers` ne sont pas fusionnés
-dans `master`, inscrire ce script dans sa liste d'exécution ferait échouer la CI, et
-committer l'instantané sans l'y inscrire le laisserait NON GARDÉ — le pourrissement
-silencieux que ce job existe pour empêcher. Les deux gestes vont donc ensemble, après la
-fusion côté modèle : ajouter `generate_droit_consommation_tables.py` à la liste du
-workflow, et versionner `precis/fr/fiscalite/tables/droit_consommation_petroliers.md`.
+ENREGISTRÉ EN INTÉGRATION CONTINUE. `verifier-snapshots.yml` régénère les tableaux depuis
+openfisca-tunisia sur `ref: master` et échoue si le résultat diffère du versionné ; ce
+script figure dans sa liste d'exécution. Les deux gestes — l'inscription et le versionnement
+de l'instantané — ont attendu ensemble la fusion d'openfisca/openfisca-tunisia#427, qui a
+porté les paramètres `produits_petroliers` dans `master`. Les poser plus tôt aurait soit
+fait échouer la CI, soit laissé l'instantané NON GARDÉ, c'est-à-dire libre de survivre à la
+correction du paramètre qu'il reflète — le pourrissement silencieux que ce job combat.
 
 CE QUE LE TABLEAU NE PORTE PAS. Trois colonnes datées, quand le chapitre en publie quatre :
 l'état consolidé de 2023 n'a pas de date d'effet établie et n'est donc pas versé dans

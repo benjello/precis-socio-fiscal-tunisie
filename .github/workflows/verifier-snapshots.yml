@@ -87,6 +87,7 @@ jobs:
           uv run python scripts/generate_bareme_tables.py
           uv run python scripts/generate_prestations_tables.py
           uv run python scripts/generate_cotisations_tables.py
+          uv run python scripts/generate_droit_consommation_tables.py
 
       - name: Comparer au contenu versionné
         run: |
