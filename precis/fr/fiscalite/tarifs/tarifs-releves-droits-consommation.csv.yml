@@ -1,0 +1,101 @@
+# Manifeste des tarifs relevés du droit de consommation.
+#
+# Fichier TENU À LA MAIN — il n'est produit par aucun générateur. Il accompagne
+# tarifs-releves-droits-consommation.csv, dont il énonce la provenance et, surtout,
+# les LIMITES DE COUVERTURE. Le titre dit « tarifs relevés » et non « produits taxés » :
+# le relevé est partiel, et le manifeste dit où il s'arrête.
+#
+# Le CSV est en FORMAT LONG : une ligne par (tableau, produit, colonne). Les quatre
+# états que le chapitre écrivait en prose dans ses cellules — ligne inexistante,
+# ligne scindée, non établi, sans objet — sont portés par le champ `statut`, la
+# cellule `valeur` restant vide. Le rendu les restitue à l'identique.
+
+format: long
+cle_de_ligne: [tableau, ordre, colonne]
+statuts:
+  lu: valeur lue dans le texte cité
+  consolidé: valeur lue dans un état consolidé du code, non dans le texte d'origine
+  ligne inexistante: le produit ne figurait pas au tarif à cette date
+  ligne scindée: la ligne a été remplacée par plusieurs lignes à cette date
+  non établi: la valeur n'a pas été vérifiée sur pièce
+  sans objet: ligne née d'une scission postérieure, sans antécédent à cette date
+
+tableaux:
+
+  advalorem-1988:
+    titre: Taux ad valorem du tableau annexé de 1988 — exemples relevés
+    ancre: tbl-dc-advalorem-1988
+    lignes: 18
+    sources: [loi-88-62-droit-consommation]
+    couverture: PARTIELLE
+    couverture_detail: >-
+      Relevé sur les pages 847-849 et 855-856 du fascicule, seules pages relues sur le
+      fac-similé. Les pages 850-854, qui concernent notamment les textiles et divers
+      ouvrages manufacturés, ne sont pas établies : aucun taux n'en est cité.
+
+  specifiques-1988:
+    titre: Tarifs spécifiques du tableau annexé de 1988
+    ancre: tbl-dc-specifiques-1988
+    lignes: 18
+    sources: [loi-88-62-droit-consommation]
+    couverture: COMPLÈTE pour les positions relevées
+    couverture_detail: >-
+      Tableau annexé, p. 848-849. Les explosifs préparés (position 36-02) sont hors
+      relevé : ils relèvent d'une formule particulière exposée au renvoi (3) du tableau,
+      non d'un tarif.
+
+  transfert-2007:
+    titre: Les cinq positions ajoutées au tableau annexé au 1er janvier 2007
+    ancre: tbl-dc-transfert-2007
+    lignes: 5
+    sources: [loi-2006-80-reduction-taux, dgi-nc-24-2007]
+    couverture: COMPLÈTE
+    couverture_detail: >-
+      Les cinq lignes ajoutées par l'article 14, toutes au taux de 10 %. Effet au
+      1er janvier 2007, énoncé par l'article 19 de la loi — seule date d'effet de loi de
+      finances lue dans le texte pour ce chapitre.
+
+  petroliers:
+    titre: Tarif du droit de consommation sur les produits pétroliers, 1988-2023
+    ancre: tbl-dc-petroliers
+    lignes: 19
+    colonnes: [1988, 1991, 1999, Consolidé 2023]
+    sources:
+      - loi-88-62-droit-consommation
+      - decret-91-550-tarif-petroliers
+      - decret-99-894-tarif-petroliers
+      - dgelf-code-tva-2023
+      - loi-2007-70-lf-2008
+    couverture: COMPLÈTE sauf une cellule
+    couverture_detail: >-
+      La colonne 1991 porte les tarifs applicables à compter du 5 février 1991 ; la
+      colonne 1999, ceux applicables à compter du 22 avril 1999 ; la colonne 2023 décrit
+      un état consolidé et non une entrée en vigueur, d'où une date d'effet vide. Le
+      pétrole lampant 2023 est « non établi » : la ligne ne figure ni parmi les tarifs
+      inchangés ni parmi les tarifs relevés de l'état consolidé. La ligne « gaz naturel
+      carburant » vient de loi-2007-70-lf-2008, art. 58.
+
+# La désignation des positions varie selon les textes : le tableau de 1988 porte la
+# position entière « 27-10 », tandis que les décrets de 1991 et de 1999 désignent les
+# mêmes produits par la position extraite « Ex 27-10 ». Le CSV retient la position entière.
+#
+# Les positions 27-09 à 27-11 apparaissent dans DEUX tableaux (specifiques-1988 et la
+# colonne 1988 de petroliers). C'est voulu : les deux tableaux servent deux propos
+# distincts dans le chapitre, et leurs quatorze valeurs 1988 coïncident.
+#
+# DEUX GRAPHIES, TOUTES DEUX AUTHENTIQUES — À NE PAS UNIFIER.
+# Le même produit est orthographié « gas-oil » dans specifiques-1988 et « gaz-oil » dans
+# petroliers. Ce n'est PAS une erreur de transcription : les deux tableaux sont fidèles à
+# deux textes qui écrivent différemment.
+#   - Loi n° 88-62, tableau annexé, position 27-10 : « — Gas-oil », avec le tarif
+#     2d,887/hl. VÉRIFIÉ SUR L'IMAGE du fac-similé, JORT n° 39 du 10 juin 1988, folio 849
+#     (et non 848 : le bloc pétrolier commence à la page suivante ; le folio se lit en
+#     pied de page).
+#   - Décret n° 91-550, tableau de l'article premier : « Gaz-oil 4,7456D/hl », lu dans le
+#     JORT n° 29 du 30 avril 1991. Les valeurs voisines corroborent le relevé (essence
+#     super 18,9456 D/hl, pétrole lampant 2,9839 D/hl).
+# Unifier les deux graphies ferait dire à l'un des deux textes ce qu'il n'écrit pas.
+#
+# NON VÉRIFIÉ : la graphie du décret n° 99-894 et celle du code consolidé de 2023. La
+# ligne « petroliers » n'ayant qu'un seul libellé pour quatre colonnes issues de quatre
+# textes, son libellé suit aujourd'hui la graphie de 1991.
