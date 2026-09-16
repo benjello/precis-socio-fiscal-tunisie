@@ -14,11 +14,13 @@ Conséquence : **les chapitres arrivent sans être déclarés**. Ils existent su
 
 ## Ta méthode
 
-1. **Lis les ÉTAPES du job, jamais sa conclusion.** `verify_translation.py` fait échouer dès que la réponse du Checker n'est pas exactement `OK` — or le modèle rédige des pages d'analyse et finit par `OK`. Les gardes qui comptent sont l'étape **8, « Render the touched Arabic books »**, et l'étape **9, « Check FR/AR parity »**.
+1. **Lis les ÉTAPES du job, jamais sa conclusion.** `verify_translation.py` fait échouer dès que la réponse du Checker n'est pas exactement `OK` — or le modèle rédige des pages d'analyse et finit par `OK`.
 
-       gh run view <id> --json jobs --jq '.jobs[] | (.steps[] | "\(.number). \(.name) : \(.conclusion)")'
+   **Désigne une étape par son NOM, jamais par son numéro.** Les numéros suivent le workflow et changent avec lui : cette consigne a longtemps dit « les étapes 8 et 9 », et le 16/09/2026 la garde déterministe était l'étape **4**. Un agent qui cherche « l'étape 9 » lit alors une autre étape, ou rien, et conclut de travers dans les deux cas.
 
-   Si 8 et 9 sont vertes et que seule 10 échoue, la traduction est saine.
+       gh run view <id> --json jobs --jq '.jobs[] | (.steps[] | "\(.name) : \(.conclusion)")'
+
+   Les gardes déterministes sont **« Check FR/AR parity »** et **« Render the touched Arabic books »**. Le Checker AI est **« Run verification script »** : son échec, à lui seul, ne prouve rien.
 
 2. **Distingue les vraies pannes.** Un `429 RESOURCE_EXHAUSTED` peut être une limitation de débit (transitoire, les relances la lèvent) ou le **plafond de dépense mensuel** — que rien ne lève et qui fait échouer toute exécution ultérieure. **Lis le message, pas le code.**
 
@@ -33,6 +35,33 @@ Conséquence : **les chapitres arrivent sans être déclarés**. Ils existent su
        cd precis/ar/<book> && uv run quarto render --to html
 
    C'est le **seul** contrôle qui attrape un chapitre non déclaré. Vérifie aussi l'absence de `[?]`.
+
+## Une divergence de parité a TROIS issues, pas une
+
+Le réflexe est de tenir l'arabe pour fautif : la PR s'intitule « traduction », le contrôle nomme le fichier arabe, et tout invite à relancer une passe. C'est souvent faux. Examine les trois avant de relancer quoi que ce soit :
+
+1. **L'arabe est fautif** — tu ne le corriges jamais à la main : tu relances la traduction, ou tu signales au terminologue.
+2. **Le FRANÇAIS est fautif** — issue recevable, et parfois la bonne. Le traducteur ancre ou lie une notion que la source laisse nue, et il a raison de le faire.
+3. **La divergence est légitime** — les deux langues disent la même chose autrement ; c'est alors le contrôle qu'il faut amender, pas le texte.
+
+Le 16/09/2026, `#g-calendrier-application-tva` apparaissait 1× en français et 2× en arabe. Diagnostic initial : « infidélité structurelle du traducteur ». Faux. L'encadré français **nommait** la notion sans la lier, et ne l'ancrait que plus bas ; l'arabe l'avait ancrée aux deux endroits, conformément à la pratique du fichier — dont la première ligne lie les premières mentions et laisse nues les répétitions. Le correctif tenait en une ligne **de français**, et il a amélioré la source au lieu de rogner la traduction.
+
+Une relance de traduction n'aurait rien réparé : elle aurait retraduit un texte déjà juste.
+
+## Ce que tu n'appliques JAMAIS du Checker
+
+Le Checker AI compare le diff français au diff arabe. Quand le français était déjà complet sur `master` et que l'arabe n'y était qu'une amorce, l'asymétrie est **structurelle** : diff français d'une ligne contre un arabe qui passe de 0 à 21 citations. Il conclut alors au « débordement majeur » et au « contenu ajouté non justifié ».
+
+Le 16/09/2026, sa « suggestion de correction prête à l'emploi » était de **ramener le fichier arabe à son état d'origine** — c'est-à-dire de supprimer la traduction que la PR existait pour livrer. Un agent obéissant l'aurait fait.
+
+- **Avant de le croire, mesure l'état des deux fichiers à `BASE_SHA`** (que le log du job affiche) : `git cat-file -e <base>:<fichier>`, et compte les lignes. Si l'arabe y était une amorce, l'alerte est un artefact.
+- **N'applique jamais une suggestion qui RETIRE du contenu traduit.** Signale-la, et laisse l'humain trancher.
+
+## Une PR de traduction à `+1/-1` n'est pas forcément une correction
+
+Jusqu'au correctif du 16/09/2026, la passe écrivait les fichiers arabes **sans saut de ligne final**. Toute modification française régénérait alors une PR dont le diff se réduisait à la dernière ligne, avec la marque « No newline at end of file » — contenu identique octet pour octet.
+
+Devant un diff `+1/-1` sur une dernière ligne, **compare-la octet à octet** avant de conclure : `git show <ref>:<fichier> | tail -1`, puis les longueurs. Si le contenu est identique, ferme la PR en disant pourquoi. Neuf fichiers arabes restaient dans cet état au moment du correctif : ils produiront chacun un diff d'une ligne à leur prochaine traduction, une fois, légitimement.
 
 ## Terminologie
 
