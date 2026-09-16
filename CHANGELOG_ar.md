@@ -1,5 +1,22 @@
 # سجل التغييرات
 
+## [1.22.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.21.0...v1.22.0) (2026-09-16)
+
+
+### ✨ جديد
+
+* **المراجع:** اكتشاف المراجع غير المرتبة بشكل صحيح في زوتيرو ([#251](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/251)) ([843909c](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/843909c90116d7eb383ed60799ebfe08f662f628))
+
+
+### 🐛 إصلاحات الأخطاء
+
+* **الأدوات:** التوقف عن إعادة تأريخ بيانات الأشكال وإعادة فتح طلبات سحب ترجمة فارغة ([#248](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/248)) ([f094ef1](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/f094ef1b819f266c20d76c220fd01686d086ac36))
+
+
+### 📝 التوثيق
+
+* **العملاء:** تسمية الخطوات، وفتح التصحيح من الجانب الفرنسي ([#249](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/249)) ([3d0e02c](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/3d0e02c283ae9190234b81511474c014a7e150dc))
+
 ## [1.21.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.20.1...v1.21.0) (2026-09-16)
 
 
