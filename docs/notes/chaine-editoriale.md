@@ -61,6 +61,7 @@ cinquante-deux. Après la rédaction qui les ancre, il en retient trente-deux.
 | Une définition est juste et bilingue | terminologue (passe 2) | entrée `provisoire` sans contenu |
 | La conversion vers Zotero fonctionne | bibliographe (clôture, `dry-run`) | un champ bloque 333 références, des mois durant |
 | Un article poussé a sa collection | bibliographe (`ranger`) | il devient « commun » et la descente le déplace |
+| Une clé devenue **commune** n'a plus de collection de livre | bibliographe (`controle-rangement`) | `ranger` n'ajoute que des collections : la clé reste rattachée au livre où elle est née, et chaque descente la redescend dans ce livre au lieu du fonds commun |
 | Un chapitre arabe est déclaré | relecteur-ar | 404 silencieux |
 | Un échec de traduction est lu | relecteur-ar | on croit cassé ce qui est sain, ou l'inverse |
 

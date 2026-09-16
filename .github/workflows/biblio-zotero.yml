@@ -24,6 +24,7 @@ on:
           - comparer         # relit dans Zotero la référence poussée et la compare
           - pousser-tout     # le reste
           - ranger           # classe les articles créés dans la collection de leur livre
+          - controle-rangement  # compare l'usage réel au rangement Zotero (lecture seule)
           - corriger         # écrase dans Zotero la référence indiquée par sa version locale
           - verifier-urls    # recense les fascicules du JORT sans édition homologue
           - descendre        # relance sync_biblio.py et montre le diff, sans rien commiter
@@ -56,6 +57,7 @@ jobs:
             comparer)     uv run python scripts/push_biblio.py \
                             --comparer "${{ inputs.reference }}" ;;
             ranger)       uv run python scripts/push_biblio.py --ranger ;;
+            controle-rangement) uv run python scripts/push_biblio.py --controle-rangement ;;
             corriger)     uv run python scripts/push_biblio.py \
                             --corriger "${{ inputs.reference }}" ;;
             verifier-urls) uv run python scripts/verifier_urls_jort.py ;;

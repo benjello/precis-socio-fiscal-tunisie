@@ -304,6 +304,181 @@ COLLECTIONS = {
 }
 
 
+CITATION_CLE = re.compile(r"@([a-zA-Z][a-zA-Z0-9_-]*)")
+
+
+def cles_citees(livre: str, racine: str | None = None) -> set[str]:
+    """Clés de citation auxquelles le texte FRANÇAIS d'un livre renvoie réellement.
+
+    TROIS sources, et aucune n'est facultative. Mesuré le 16/09/2026 :
+
+      - la prose (`*.qmd`) ;
+      - les tableaux engendrés (`tables/*.md`) — **36 clés distinctes** ne vivent que
+        là, dont tous les arrêtés de transferts sociaux ;
+      - l'annexe de glossaire (`_glossaire.qmd`), que `build_glossary.render_book`
+        remplit de vraies `[@clé]`, résolues contre la bibliographie du livre.
+
+    Le glossaire n'est PAS exclu, contrairement à ce que fait `ancres_utilisees`. Son
+    exclusion se justifie là-bas pour les *ancres* — l'annexe se définirait elle-même,
+    chaque notion y portant la sienne —, et ce motif ne vaut pas pour les *citations*.
+
+    L'exclure ferait passer cinq clés de « partagée » à « propre à un livre » :
+    `decret-2017-668-smig` (trois livres), `lf-2018`, `loi82-70`, `loi83-112`,
+    `loi85-78` — le statut général de la fonction publique, le SMIG, des textes
+    transversaux. Toutes dans le même sens, et le pire : le contrôle CONSERVERAIT la
+    collection qui doit partir, perpétuant en silence la dérive qu'il existe pour
+    détecter.
+
+    On lit le français seul : il fait foi, l'arabe en est le miroir.
+    """
+    base = os.path.join(racine or RACINE, "precis", "fr", livre)
+    trouvees: set[str] = set()
+    if not os.path.isdir(base):
+        return trouvees
+
+    def lire(chemin: str) -> None:
+        try:
+            with open(chemin, encoding="utf-8") as f:
+                trouvees.update(CITATION_CLE.findall(f.read()))
+        except OSError:
+            pass
+
+    for nom in sorted(os.listdir(base)):
+        if nom.endswith(".qmd"):
+            lire(os.path.join(base, nom))
+    tableaux = os.path.join(base, "tables")
+    if os.path.isdir(tableaux):
+        for nom in sorted(os.listdir(tableaux)):
+            if nom.endswith(".md"):
+                lire(os.path.join(tableaux, nom))
+    return trouvees
+
+
+def classe_rangement(citations_par_livre: dict, collections_par_cle: dict) -> dict:
+    """Compare l'usage RÉEL d'une référence au rangement que porte Zotero.
+
+    Fonction pure, sur données nues : `{livre: {clés citées}}` d'un côté,
+    `{clé: {livres}}` de l'autre — les collections Zotero étant déjà traduites en
+    identifiants de livres par l'appelant. Aucune empreinte Zotero ne remonte ici, et
+    le contrôle se teste donc sans réseau ni clé d'API.
+
+    La comparaison doit être INDÉPENDANTE. Déduire « quels livres citent cette clé »
+    des `references.json` serait circulaire : c'est précisément ce que la descente y
+    écrit, et le contrôle ne ferait que se confirmer lui-même. D'où `cles_citees`, qui
+    lit la prose.
+
+    Le contrat :
+
+      - citée par **exactement 1 livre** → elle veut la collection de ce livre ;
+      - citée par **2 livres ou plus**   → elle ne veut **aucune** collection, afin que
+        la descente la verse dans `precis/fr/references.json` ;
+      - citée par **aucun** livre         → signalée, jamais agie. Retirer une
+        collection sur la foi d'une absence changerait l'état d'une bibliothèque
+        partagée à partir d'une preuve qu'on n'a pas su trouver ;
+      - citée mais absente de Zotero      → relève du versement, pas du rangement.
+
+    Ce que cela répare : `ranger` fait `sorted(actuelles | voulues)` — il ajoute des
+    collections et n'en retire aucune. Une référence devenue commune garde donc la
+    collection du livre où elle est née, et chaque descente la redescend dans ce livre
+    au lieu du fonds commun. C'est ce mécanisme qui a fait tomber le fonds commun à
+    sept clés.
+
+    Ne décide rien et n'écrit rien : rend un rapport, que l'humain lit.
+    """
+    cites: dict[str, set[str]] = {}
+    for livre, cles in citations_par_livre.items():
+        for cle in cles:
+            cites.setdefault(cle, set()).add(livre)
+
+    rapport: dict[str, list] = {
+        "a_declasser": [], "a_ranger": [], "bien_rangee": [],
+        "sans_citation": [], "absente_de_zotero": [],
+    }
+
+    for cle in sorted(set(cites) | set(collections_par_cle)):
+        if cle not in collections_par_cle:
+            rapport["absente_de_zotero"].append(cle)
+            continue
+        livres = cites.get(cle, set())
+        if not livres:
+            rapport["sans_citation"].append(cle)
+            continue
+        actuelles = set(collections_par_cle[cle])
+        voulues = set(livres) if len(livres) == 1 else set()
+        en_trop = actuelles - voulues
+        manquantes = voulues - actuelles
+        if not en_trop and not manquantes:
+            rapport["bien_rangee"].append(cle)
+            continue
+        if en_trop:
+            rapport["a_declasser"].append((cle, sorted(en_trop)))
+        if manquantes:
+            rapport["a_ranger"].append((cle, sorted(manquantes)))
+    return rapport
+
+
+def controle_rangement(groupe: str, api_key: str) -> int:
+    """Rapporte l'écart entre l'usage réel des références et leur rangement Zotero.
+
+    LECTURE SEULE : n'écrit ni dans Zotero, ni dans le dépôt. Le déclassement lui-même
+    est une action sortante et irréversible sur une bibliothèque partagée ; il demande
+    un feu vert humain, et n'est pas ici.
+
+    C'est ici, et nulle part ailleurs, que les noms de collections Zotero deviennent des
+    identifiants de livres. Deux règles y vivent :
+
+      - on passe par `sync_biblio.COLLECTION_TO_BOOK`, qui porte les variantes
+        accentuées (« fiscalité » ET « fiscalite ») ; l'inverse de `COLLECTIONS` ne
+        connaîtrait que l'orthographe canonique et manquerait une collection
+        préexistante accentuée ;
+      - une collection absente de ce mapping n'est **pas** une collection de trop. Un
+        article rangé dans une collection thématique ou dans une boîte de réception
+        n'a rien à se voir reprocher : on l'ignore en silence.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import sync_biblio
+
+    collections = zotero_tout(f"/groups/{groupe}/collections", api_key, {"format": "json"})
+    livre_par_collection = {}
+    for c in collections:
+        nom = c["data"]["name"]
+        livre = sync_biblio.COLLECTION_TO_BOOK.get(nom.strip().lower())
+        if livre:
+            livre_par_collection[c["key"]] = livre
+
+    items = zotero_tout(f"/groups/{groupe}/items", api_key, {"format": "json"})
+    collections_par_cle: dict[str, set[str]] = {}
+    for item in items:
+        donnees = item.get("data", {})
+        m = re.search(r"citation-key:\s*(\S+)", donnees.get("extra", ""), re.I)
+        if not m:
+            continue
+        collections_par_cle[m.group(1)] = {
+            livre_par_collection[k] for k in (donnees.get("collections") or [])
+            if k in livre_par_collection
+        }
+
+    citations = {livre: cles_citees(livre) for livre in COLLECTIONS}
+    rapport = classe_rangement(citations, collections_par_cle)
+
+    print(f"{len(collections_par_cle)} référence(s) dans Zotero, "
+          f"{sum(len(c) for c in citations.values())} citation(s) relevées dans le texte.\n")
+    print(f"✓ bien rangées      : {len(rapport['bien_rangee'])}")
+    print(f"⚠ à déclasser       : {len(rapport['a_declasser'])} "
+          f"(citées par plusieurs livres, mais rattachées à un livre)")
+    for cle, en_trop in rapport["a_declasser"]:
+        print(f"    {cle} — retirer : {', '.join(en_trop)}")
+    print(f"⚠ à ranger          : {len(rapport['a_ranger'])} "
+          f"(citées par un seul livre, sans sa collection)")
+    for cle, manquantes in rapport["a_ranger"]:
+        print(f"    {cle} — ajouter : {', '.join(manquantes)}")
+    print(f"  sans citation     : {len(rapport['sans_citation'])} "
+          f"(aucune position prise — une absence n'est pas une preuve)")
+    print(f"  absentes de Zotero: {len(rapport['absente_de_zotero'])} "
+          f"(relève du versement, pas du rangement)")
+    return 0
+
+
 def ranger(groupe: str, api_key: str, locales: dict) -> int:
     """Classe dans la collection de son livre chaque article déjà créé.
 
@@ -375,6 +550,9 @@ def main() -> int:
                                                   "des virgules)")
     p.add_argument("--ranger", action="store_true",
                    help="classe les articles déjà créés dans la collection de leur livre")
+    p.add_argument("--controle-rangement", action="store_true",
+                   help="compare l'usage réel des références au rangement Zotero "
+                        "(LECTURE SEULE, n'écrit rien)")
     args = p.parse_args()
 
     schema = charge_schema()
@@ -448,6 +626,9 @@ def main() -> int:
         for indice, message in (reponse.get("failed") or {}).items():
             print(f"  ✗ {charges[int(indice)]['key']} : {message}", file=sys.stderr)
         return 1 if reponse.get("failed") else 0
+
+    if args.controle_rangement:
+        return controle_rangement(args.groupe, api_key)
 
     if args.ranger:
         return ranger(args.groupe, api_key, locales)
