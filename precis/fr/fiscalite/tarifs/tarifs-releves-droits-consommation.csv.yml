@@ -96,6 +96,19 @@ tableaux:
 #     super 18,9456 D/hl, pétrole lampant 2,9839 D/hl).
 # Unifier les deux graphies ferait dire à l'un des deux textes ce qu'il n'écrit pas.
 #
-# NON VÉRIFIÉ : la graphie du décret n° 99-894 et celle du code consolidé de 2023. La
-# ligne « petroliers » n'ayant qu'un seul libellé pour quatre colonnes issues de quatre
-# textes, son libellé suit aujourd'hui la graphie de 1991.
+#   - Décret n° 99-894, tarif complet : « gaz-oil », lu à l'image du JORT n° 33 du
+#     23 avril 1999, p. 624-625 (la couche texte de ce fascicule est corrompue : le
+#     relevé ne peut pas se faire par recherche, seulement à l'image).
+#   - Code consolidé 2023 : « Gaz-oil », et « Gaz-oil d'une teneur en poids de soufre
+#     réduite » pour la ligne née après 1999. Contexte tarifaire vérifié — l'unique
+#     « gas-oil » du même code désigne des appareils de filtration pour matériel de
+#     chemins de fer, et non un poste du tarif.
+#
+# Les quatre colonnes sont donc établies : 1988 écrit « Gas-oil », les trois autres
+# « Gaz-oil ». Le libellé de la ligne « petroliers » suit la graphie majoritaire de ses
+# sources, et c'est « specifiques-1988 » qui porte celle de 1988.
+#
+# CORROBORATION INDÉPENDANTE des valeurs : la note commune n° 7 de 2015 (commentaire des
+# articles 44, 45 et 57 de la loi n° 2015-53) donne « Gaz-oil normal … 5,8309 D/HL
+# 12,116 D/HL », soit à la fois le tarif de 1999 et celui de l'état consolidé, dans un
+# document étranger aux deux textes cités.
