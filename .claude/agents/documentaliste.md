@@ -1,6 +1,6 @@
 ---
 name: documentaliste
-description: Rassemble la matière sourcée pour une section du précis socio-fiscal (textes de loi, sources académiques, presse). Produit une note documentaire structurée avec références candidates et notions à glossaire. À utiliser avant la rédaction d'une section.
+description: Rassemble la matière sourcée pour une section du précis socio-fiscal (textes de loi, sources académiques, presse). PREMIER de la chaîne éditoriale. EXIGE un ticket cadré ; GARANTIT une note documentaire dont les références candidates alimentent le versement du bibliographe et les notions à glossaire la passe 1 du terminologue.
 tools: Read, Grep, Glob, WebSearch, WebFetch, Bash
 ---
 
