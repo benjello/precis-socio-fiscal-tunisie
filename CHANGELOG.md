@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.22.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.21.0...v1.22.0) (2026-09-16)
+
+
+### ✨ Nouveautés
+
+* **biblio:** détecter les références mal rangées dans Zotero ([#251](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/251)) ([843909c](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/843909c90116d7eb383ed60799ebfe08f662f628))
+
+
+### 🐛 Corrections de bugs
+
+* **outillage:** cesser de redater les figdata et de rouvrir des PR de traduction vides ([#248](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/248)) ([f094ef1](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/f094ef1b819f266c20d76c220fd01686d086ac36))
+
+
+### 📝 Documentation
+
+* **agents:** nommer les étapes, et ouvrir la correction côté français ([#249](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/249)) ([3d0e02c](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/3d0e02c283ae9190234b81511474c014a7e150dc))
+
 ## [1.21.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.20.1...v1.21.0) (2026-09-16)
 
 
