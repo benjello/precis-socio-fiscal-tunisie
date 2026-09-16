@@ -45,6 +45,26 @@ def fichier_a_traduire(chemin):
     return chemin.endswith(".qmd")
 
 
+def texte_a_ecrire(texte):
+    """Garantit exactement un saut de ligne final, comme en portent les sources.
+
+    La passe écrivait la réponse du modèle telle quelle. Or celle-ci ne se termine pas
+    par un saut de ligne, alors que le fichier français en porte un : toute modification
+    du chapitre français régénérait donc une PR de traduction dont le diff se réduisait à
+    « +1/-1 » sur la dernière ligne, avec la marque « No newline at end of file ».
+
+    Le 16/09/2026, #246 : la dernière ligne faisait 217 caractères des deux côtés,
+    contenu identique octet pour octet. La PR ne retirait qu'un caractère, mais elle
+    ressemblait à une vraie mise à jour et invitait à être fusionnée.
+
+    Rend le TEXTE plutôt que d'écrire : une fonction qui ne fait qu'un calcul se teste
+    sans fichier ni réseau.
+    """
+    if not texte:
+        return texte
+    return texte.rstrip("\n") + "\n"
+
+
 def motif_de_troncature(lignes_avant, lignes_apres, lignes_source):
     """Message expliquant en quoi la traduction est tronquée, ou None si elle ne l'est pas.
 
@@ -392,7 +412,7 @@ Fichier à traduire :
             if dossier:
                 os.makedirs(dossier, exist_ok=True)
             with open(target_path, "w", encoding="utf-8") as f:
-                f.write(translated_text)
+                f.write(texte_a_ecrire(translated_text))
             print(f"Succès : {target_path} mis à jour.")
             time.sleep(5) # Éviter le Rate Limit (15 RPM)
             
