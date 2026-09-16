@@ -119,7 +119,7 @@ Voici le GLOSSAIRE TERMINOLOGIQUE CANONIQUE (bijection FR↔AR à respecter stri
 {glossary_table}
 
 VÉRIFICATIONS À EFFECTUER IMPÉRATIVEMENT :
-1. Les dates, données chiffrées, et citations bibliographiques `[@ref]` doivent être rigoureusement identiques entre la source et la cible.
+1. Les dates, données chiffrées, et citations bibliographiques `[@ref]` doivent être rigoureusement identiques entre la source et la cible. Il en va de même des CIBLES DE LIENS et des ANCRES — `](#g-entrepositaire)`, `{{#tbl-dc-petroliers}}` —, des URL, des numéros de textes juridiques (« loi n° 88-62 ») et du contenu des commentaires HTML `<!-- ... -->` : ce sont de la syntaxe, pas de la prose. Une ancre fléchie ou mise au pluriel ne pointe plus sur rien : c'est une alerte.
 2. La traduction cible ne doit modifier QUE les paragraphes qui ont été modifiés dans le fichier source. S'il y a des lignes modifiées dans la cible qui ne correspondent à aucune modification conceptuelle dans la source (un "débordement"), c'est une alerte grave.
 3. Le sens historique et pédagogique doit être préservé.
 4. Les notions figurant dans le GLOSSAIRE TERMINOLOGIQUE CANONIQUE doivent être traduites EXACTEMENT par l'équivalent indiqué. Toute divergence de terme par rapport au glossaire est une alerte.

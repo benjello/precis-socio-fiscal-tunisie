@@ -323,6 +323,13 @@ Voici l'ANCIENNE TRADUCTION CIBLE ({target_lang}) (avant tes modifications) :
 {old_target_text}
 ```
 {diff_section}
+RECOPIE VERBATIM, JAMAIS TRADUITE NI FLÉCHIE : les cibles de liens et les ancres
+(`](#g-entrepositaire)`, `{{#tbl-dc-petroliers}}`), les clés de citation `[@loi-88-62]` et
+leurs locateurs, les URL, les numéros de textes juridiques (« loi n° 88-62 », « décret
+n° 91-550 ») et le contenu des commentaires HTML `<!-- ... -->`. Ce ne sont pas de la
+prose : une cible de lien mise au pluriel ne pointe plus sur rien, et un commentaire
+corrompu se lit dans la source.
+
 Renvoie UNIQUEMENT le nouveau fichier cible mis à jour, sans aucun commentaire avant ou après.
 """
         else:
@@ -330,6 +337,13 @@ Renvoie UNIQUEMENT le nouveau fichier cible mis à jour, sans aucun commentaire 
 Voici le fichier source en {source_lang} à traduire en {target_lang}.
 S'il te plaît, traduis-le entièrement et renvoie UNIQUEMENT le code source traduit, sans aucun commentaire.
 Préserve TOUTES les balises Markdown, les blocs de code et la structure exacte.
+
+RECOPIE VERBATIM, JAMAIS TRADUITE NI FLÉCHIE : les cibles de liens et les ancres
+(`](#g-entrepositaire)`, `{{#tbl-dc-petroliers}}`), les clés de citation `[@loi-88-62]` et
+leurs locateurs, les URL, les numéros de textes juridiques (« loi n° 88-62 », « décret
+n° 91-550 ») et le contenu des commentaires HTML `<!-- ... -->`. Ce ne sont pas de la
+prose : une cible de lien mise au pluriel ne pointe plus sur rien, et un commentaire
+corrompu se lit dans la source.
 
 Fichier à traduire :
 ```markdown
