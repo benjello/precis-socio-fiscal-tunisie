@@ -1590,3 +1590,295 @@ modifié par le rendu.
   `loi93-64` (Extra : `citation-key: <clé>` **et** `issue: <n°>`) ;
 - corriger la note : `decretloi2011-48`, `arrete-1978-11-18-retraite-complementaire`,
   `decret74-572`, `loi88-16`, `cnrps-manuel-liquidation-2013`.
+
+### Livre « Fiscalité », section « Les droits de consommation » — passe bibliographe 16/09/2026
+
+Source : `docs/notes/fiscalite-droits-consommation-documentation.md`, annexe A. **15 clés créées** et
+**4 clés existantes complétées**, dans `precis/fr/fiscalite/references.json` ET
+`precis/ar/fiscalite/references.json` (URL FR = `pdf_fr`, URL AR = `pdf_ar`, lues sur
+l'enregistrement de `jort_cache.db`, jamais dérivées l'une de l'autre).
+
+#### Créées — type CSL `legislation` (11)
+
+- [ ] `loi-88-62-droit-consommation` — JORT n° 39 de 1988, t. 131, p. 847-856 ; FR `Jo03988`, AR `Ja03988`.
+- [ ] `loi-88-145-lf-1989` — n° 87, t. 131, p. 1793-1805 ; FR `Jo08788`, AR `Ja08788`.
+- [ ] `loi-89-115-lf-1990` — n° 88, t. 132, p. 2144-2155 ; FR `Jo08889`, AR `Ja08889`.
+- [ ] `decret-91-550-tarif-petroliers` — n° 29 de 1991, t. 134, p. 936 ; FR `Jo02991`, AR `Ja02991`.
+- [ ] `decret-91-551-tarif-boissons` — même fascicule, p. 936-937.
+- [ ] `decret-94-816-hydrocarbures` — n° 30, t. 137, p. 628-629 ; FR `Jo03094`, AR `Ja03094`.
+- [ ] `decret-97-1368-regime-alcools` — n° 59, t. 140, p. 1301-1316 ; FR `Jo05997`, AR `Ja05997`.
+- [ ] `decret-99-894-tarif-petroliers` — n° 33, t. 142, p. 624-625 ; FR `Jo03399`, AR `Ja03399`.
+- [ ] `decret-gouv-2015-1768-annexes-alcools` — n° 92 de 2015 ; FR `Jo0922015`, AR `Ja0922015`.
+      Pagination et tome **vides** dans la notice : champs omis, pas devinés.
+- [ ] `loi-2007-70-lf-2008` — n° 104, t. 150, p. 4367 ; FR `Jo1042007`, AR `Ja1042007`.
+- [ ] `loi-2018-56-lf-2019` — n° 104 de 2018, p. 4548-4553 ; **entrée FR SANS URL** (voir ci-dessous),
+      AR `Ja1042018`.
+
+Les 21 champs URL versés portent 19 adresses distinctes (10 FR + 11 AR ; le fascicule 1991 n° 29 sert les décrets 91-550 et 91-551), toutes re-vérifiées le 16/09/2026 (HTTP 200).
+
+#### Créées — doctrine administrative, type CSL `report` (4)
+
+`dgi-nc-24-2007`, `dgi-nc-29-2007`, `dgi-nc-7-2016`, `dgi-nc-17-2018`. En-têtes et objets **lus sur
+les copies locales** (`PDFs-legislation-tunisie/markdown_output/Notes_Communes/`) : les bulletins
+« Texte n° DGI 2007/35 » et « n° DGI 2007/64 » sont confirmés, ainsi que l'exemple chiffré de la
+NC 29/2007 (500 D HT, DC 50 D, FODEC 5 D, assiette TVA **555 D**).
+
+#### Doublons ÉVITÉS — 4 entrées existantes complétées, aucune clé nouvelle
+
+L'annexe A en signalait deux ; il y en avait **quatre**. Dans les quatre cas, seul le champ `note` a
+reçu un paragraphe « DROIT DE CONSOMMATION » ; **le champ `page` n'a pas été touché**, car il porte
+la pagination des articles IRPP déjà cités par le chapitre correspondant.
+
+- [ ] `lf-1991` = loi n° 90-111 → l'annexe A proposait `loi-90-111-lf-1991` (art. 38, tableau « N »).
+- [ ] `lf-2014` = loi n° 2013-54 → l'annexe A proposait `loi-2013-54-lf-2014` (art. 70).
+- [ ] `lf-2016` = loi n° 2015-53 → l'annexe A proposait `loi-2015-53-lf-2016-dc` (art. 44, 45, 57).
+- [ ] `lf-2018` = loi n° 2017-66 → l'annexe A proposait `loi-2017-66-lf-2018-dc` (art. 45 et 22).
+
+#### Fascicules français non servis par pist.tn — TODO
+
+**Méthode, car elle a été mise en doute et elle est reproductible.** Vérification par requête HTTP
+réellement aboutie : `curl -ksI <url>`. **Le `-k` n'est pas optionnel** — le certificat TLS de
+pist.tn est expiré (convention déjà consignée dans ce dépôt). Sans lui, `curl` sort en **code 60**
+et Python lève `SSL: CERTIFICATE_VERIFY_FAILED` : on croit alors le site injoignable, alors qu'il
+répond. Les réponses reçues portent des en-têtes serveur complets (`Server: Apache`, `ETag`,
+`Last-Modified`, `Content-Length`) : ce sont des requêtes abouties, non des déductions. L'absence de
+`pdf_fr` dans `jort_cache.db` n'a servi que de **seconde** voie concordante.
+
+Les deux éditions **françaises** ci-dessous rendent **404** ; seule l'édition arabe répond 200 :
+
+- **JORT 2015 n° 104** (`Jo1042015.pdf`) — entrée `lf-2016` ;
+- **JORT 2018 n° 104** (`Jo1042018.pdf`) — entrée `loi-2018-56-lf-2019`.
+
+Conformément à la convention, **l'entrée FR reste sans URL** plutôt que de porter celle de l'édition
+arabe. **`lf-2016` portait justement l'URL arabe dans le fichier FR : elle a été RETIRÉE.** À
+surveiller : si une descente `sync_biblio.py` la réintroduit, c'est Zotero qu'il faut corriger.
+
+- [ ] **TODO** : retrouver une édition française de ces deux fascicules (autre source que pist.tn),
+      ou acter durablement l'absence d'URL.
+- [ ] **TODO — hors périmètre de cette passe, à trancher** : `lf-2020` et `lf-2024`
+      (`precis/fr/fiscalite/references.json`) portent **le même défaut** — une URL arabe dans le
+      fichier français. La convention est donc enfreinte à deux autres endroits, non corrigés ici.
+
+#### TODO de vérification restants
+
+- [ ] `dgi-nc-24-2007`, `dgi-nc-29-2007`, `dgi-nc-7-2016`, `dgi-nc-17-2018` : **aucune URL pérenne**
+      identifiée (non recherchées sur jibaya.tn). Entrées sans URL, à compléter.
+- [ ] `dgi-nc-7-2016` : le numéro « 7/2016 » n'est attesté que par le **nom de fichier** de la copie
+      locale — ni en-tête de bulletin ni numéro dans le corps du document. À confirmer sur l'original.
+- [ ] `decret-94-816-hydrocarbures`, `decret-97-1368-regime-alcools`,
+      `decret-gouv-2015-1768-annexes-alcools`, `loi-2007-70-lf-2008` : **non lus sur pièce**
+      (métadonnées de notice). Date d'effet **non établie** pour les trois décrets. Leurs tarifs ne
+      doivent pas être cités d'après ces entrées.
+- [ ] `loi-2007-70-lf-2008`, `lf-2014` : date d'effet au 1er janvier **déduite**, clause non lue.
+- [ ] `decret-91-550-tarif-petroliers` : anomalie de visa (art. 35 de la loi 88-145 au lieu de la loi
+      89-115) et divergence « 91-111 » / « 90-111 » — consignées en note, **non résolues**.
+- [ ] **TODO arabe** : les 15 entrées AR portent un `title` et une `note` en français — c'est le
+      motif établi du fichier, mais les intitulés arabes restent à relever sur les fascicules `Ja…`.
+
+#### Contrôles
+
+JSON valides, 67 entrées par fichier, FR et AR strictement alignés sur les `id`. Résolution des
+24 clés (15 créées, 4 complétées, 5 réutilisées) contrôlée **hors livre** par
+`quarto pandoc --citeproc` sur les deux bibliographies : **zéro `[?]`** — la section
+`_droits_consommation.qmd` ne comptant que 3 lignes et ne citant encore aucune clé, le rendu du
+livre seul n'aurait rien éprouvé. Conversion Zotero éprouvée hors ligne sur l'arbre de travail
+(`push_biblio.py --verifier`) : **348 entrées, 0 perte de champ** (333 avant la passe).
+
+#### À pousser dans Zotero — NE PAS pousser sans feu vert
+
+- créer : les **15 clés** ci-dessus (Extra : `citation-key: <clé>` **et** `issue: <n°>`) ;
+- corriger la note : `lf-1991`, `lf-2014`, `lf-2018` ;
+- corriger la note **et retirer l'URL** : `lf-2016`.
+
+Collection Zotero visée : « Fiscalité » (présente dans `COLLECTION_TO_BOOK`). Rappel : un article
+créé par l'API arrive **sans collection** — l'action `ranger` est indispensable après un envoi.
+
+### Correctif de la même passe (16/09/2026) — doublon inter-livres et URL arabes en fichier français
+
+#### a) Doublon inter-livres créé par cette passe — RÉSOLU
+
+`loi-2018-56-lf-2019`, que j'avais créée dans le livre Fiscalité, faisait double emploi avec
+**`loi2018-56-lf2019`**, déjà sur `master` dans « Rémunérations publiques » (même loi, même date).
+
+- [x] **Ma clé a été supprimée** des deux fichiers du livre Fiscalité. C'est elle qui devait céder :
+      elle n'était citée nulle part, tandis que `loi2018-56-lf2019` est citée par
+      `_regime_marche_controle.qmd` (FR **et** AR). Renommer l'ancienne aurait cassé de la prose.
+- [x] La clé survivante a été **enrichie** (issue 104, p. 4548-4553, articles 62, 69 et 80) puis
+      **remontée au fonds commun** (`precis/{fr,ar}/references.json`) et retirée du livre
+      « Rémunérations publiques » : elle est désormais citée par **deux** livres.
+- [x] **`lf-2018`** : même situation, ancienne et non de mon fait — citée par Fiscalité **et**
+      Rémunérations publiques, et présente **en double** dans les deux fichiers de livre. Remontée au
+      fonds commun, retirée des deux. C'est aussi ce que réclamait `controle-rangement`
+      (« lf-2018 — retirer : fiscalite, remunerations_publiques »).
+
+#### b) Neuf URL arabes dans des fichiers français — traitées une par une
+
+Le contrôle inverse est propre : **aucune** URL française dans un fichier arabe. Après traitement,
+l'invariant est vérifié par assertion sur les **six** fichiers : toute URL `/jort/` d'un fichier FR
+est en `F/Jo`, toute URL d'un fichier AR est en `A/Ja`.
+
+**Le piège à connaître : un `200` sur un chemin en `F/Jo` ne prouve PAS qu'une édition française
+existe.** pist.tn sert parfois le fascicule **arabe** sous une adresse en `…F/Jo…`. Vérifié deux fois
+plutôt qu'une, en ouvrant les fichiers :
+
+- `lf-2026` — `2025F/Jo1482025.pdf` répond 200 ; téléchargé en entier (8 775 232 o), sa page 1 est
+  **arabe** (« السنـة 168 — عـدد 148 »). URL retirée. *L'ancienne note disait déjà vrai.*
+- `decret2019-209` — `2019F/Jo0202019.pdf` répond 200 ; l'exemplaire local de même taille
+  (1 921 747 o) s'ouvre sur un **sommaire arabe**. URL retirée. *Il avait été signalé comme
+  corrigeable : il ne l'est pas.*
+
+**Une seule correction était démontrable**, et elle a été faite :
+
+- [x] `decret2019-454` → `https://www.pist.tn/jort/2019/2019F/Jo0432019.pdf` : 200,
+      `Content-Length` 1 399 936 = taille exacte de l'exemplaire local, dont la page 1 porte
+      « TRADUCTION FRANÇAISE POUR INFORMATION — … 28 mai 2019 — N° 43 ». Le `pdf_fr` vide de
+      `jort_cache.db` était une **lacune de la base**, pas une absence de fascicule.
+
+**URL arabes retirées des entrées françaises** (candidat FR testé et 404, ou servant l'arabe) —
+l'adresse arabe est conservée **dans la note**, et l'entrée arabe homologue la garde en `URL` :
+
+- [x] `lf-2020`, `lf-2024` (`precis/fr/fiscalite/`) ;
+- [x] `lf-2023`, `lf-2025`, `lf-2026`, `decret2019-209` (`precis/fr/references.json`, fonds commun) ;
+- [x] `loi-org-2018-29-ccl`, `loi2018-56-lf2019` (`precis/fr/remunerations_publiques/`).
+
+Soit **8 retraits + 1 correction**. Ces entrées viennent de Zotero : la correction doit y remonter,
+sans quoi la prochaine descente réinstallera les URL arabes. **C'est la cause mécanique** du fait que
+l'entorse soit à sens unique.
+
+- [ ] **TODO** : si une édition française de ces fascicules existe hors pist.tn, la référencer ;
+      sinon, acter durablement l'absence d'URL.
+
+### Clôture de la section « Droits de consommation » (16/09/2026) — 14 clés versées
+
+Le chapitre `_droits_consommation.qmd` portait un `<!-- TODO (bibliographe) -->` réclamant
+18 textes. **Quatre existaient déjà** et n'ont pas été recréés : `lf-1993` (loi 92-122),
+`lf-1998` (loi 97-88), `lf-2005` (loi 2004-90), `lf-2007` (loi 2006-85). Leur note a été
+**complétée** d'un paragraphe « DROIT DE CONSOMMATION » ; le TODO du chapitre sur-comptait donc
+de quatre. Restaient **14 créations**, faites dans `precis/{fr,ar}/fiscalite/references.json`.
+
+Méthode : URL FR lue dans `pdf_fr`, URL AR dans `pdf_ar` du **même enregistrement** de
+`jort_cache.db` (jamais dérivée par transformation de chaîne). **Édition française établie sur
+pièce** pour les 14 : taille distante (`curl -ksI`, `content-length` — le certificat TLS de
+pist.tn est expiré, `-k` est obligatoire) **égale à l'octet près** au fascicule du corpus local
+`PDFs-legislation-tunisie`, dont la première page porte « traduction française » (couche texte
+ou page 1 relue à l'image). Un `200` sur un chemin `…F/Jo…` ne prouve rien par lui-même.
+
+| Clé | Texte | Degré établi |
+|---|---|---|
+| `lf-1995` | Loi n° 94-127 (LF 1995), **art. 64** | **lu sur pièce** (couche texte) |
+| `lf-1997` | Loi n° 96-113 (LF 1997), **art. 51** | **lu sur pièce** |
+| `lf-1999` | Loi n° 98-111 (LF 1999), **art. 50** | **lu sur pièce** |
+| `lf-2013` | Loi n° 2012-27 (LF 2013), **art. 43** | **lu sur pièce, en entier** |
+| `decret-89-479-tableau` | Décret n° 89-479, modif. du tableau annexé | titre + pagination **lus à l'image** (sommaire FR) |
+| `decret-89-1348-tableau` | Décret n° 89-1348, modif. du tableau annexé | titre + pagination **lus à l'image** (sommaire FR) |
+| `decret-2007-1977-alcools` | Décret n° 2007-1977, modif. du décret 97-1368 | **visas lus sur pièce** |
+| `decret-2013-929-alcools` | Décret n° 2013-929, modif. du décret 97-1368 | **visas et intitulés de tableaux lus sur pièce** |
+| `decret-2002-627-alcools` | Décret n° 2002-627, modif. du décret 97-1368 | substance lue (encodage décalé), **chiffres perdus** |
+| `lf-1994` | Loi n° 93-125 (LF 1994), art. 50 | notice ; **numéro corroboré** par l'art. 64 de la LF 1995, lu sur pièce |
+| `lf-1992` | Loi n° 91-98 (LF 1992) | notice seule (titre 4, p. 2085-2086) |
+| `lf-2003` | Loi n° 2002-101 (LF 2003) | substance lue, **n° d'article non établi** |
+| `lf-2004` | Loi n° 2003-80 (LF 2004) | substance lue, **n° d'article non établi** |
+| `decret-88-2002-suppressions` | Décret n° 88-2002 | **notice seule** |
+
+#### Ce qui reste NON ÉTABLI — à ne pas écrire dans le précis
+
+- [ ] **Numéros d'article de `lf-2003` et `lf-2004`** (art. 65 et 37 selon la liste DGELF). La
+      couche texte de ces deux fascicules porte un encodage de police décalé : déchiffrée, elle
+      rend les **lettres** mais **efface les chiffres**. Les intitulés et le corps des articles
+      ont été lus, les numéros non. À relire à l'image avant toute citation « art. n ».
+- [ ] **`lf-1992` art. 44** : fascicule sans couche texte, seule la page 1 relue à l'image.
+      Contenu inconnu.
+- [ ] **Contenu** (positions, taux) des décrets **88-2002, 89-479, 89-1348** : jamais ouverts
+      au-delà du sommaire. Comme pour `94-816`, `97-1368`, `2015-1768` et `loi-2007-70-lf-2008`,
+      **aucun tarif ne doit être tiré de ces entrées** ; leur note le dit explicitement.
+- [ ] **Dates d'effet** : déduites (1er janvier) pour les huit lois de finances, clause non lue ;
+      **non établies** pour les six décrets.
+- [ ] **Pages imprimées** des articles lus sur pièce (`lf-1995`, `lf-1997`, `lf-1999`, `lf-2013`) :
+      non relevées ; le champ `page` porte le début de la loi.
+- [ ] **TODO arabe — le compte passe de 15 à 29.** Les 14 entrées AR de cette passe portent, comme
+      les 15 précédentes, un `title` et une `note` **en français** : c'est le motif établi du
+      fichier, mais les intitulés arabes restent à relever sur les fascicules `Ja…`.
+
+**Un titre à ne pas « corriger »** : `decret-2013-929-alcools` est intitulé **verbatim** comme le
+JORT l'imprime — « numéros **22.3 à 22.8** du tarif des droits de **douanes** » — alors que les
+autres textes de la série (décrets 97-1368, 2002-627, 2007-1977) écrivent « 22-03 à 22-08 ». La
+divergence est celle du Journal officiel ; elle est consignée en note et n'est pas normalisée.
+
+#### Handoff rédacteur
+
+Les 14 clés sont **disponibles mais citées par personne** : le chapitre n'a pas été modifié
+(interdit par la commande de clôture). Publier la chronologie complète du § 4.1 à la place des
+« principales étapes » suppose une **passe rédacteur** qui insère les `@clé` et retire le
+`<!-- TODO (bibliographe) -->` des lignes 197-202 de `_droits_consommation.qmd`.
+
+#### Contrôles de clôture (16/09/2026)
+
+- **Résolution hors livre** — c'est le seul test qui éprouve des clés non encore citées :
+  `quarto pandoc --citeproc` sur les deux bibliographies de chaque langue, document `nocite`
+  de **248 clés** FR et 248 AR → **zéro `[?]`, zéro `?@`**.
+- **Rendu du livre** (`precis/fr/fiscalite`, `quarto render --to html`) : sortie créée,
+  **0 `[?]`**. L'unique `?@` de `public/` est dans `site_libs/quarto-html/anchor.min.js`
+  (bibliothèque de Quarto, pas une citation) — à savoir pour ne pas s'en alarmer.
+- **`--verifier`** (hors ligne) : **361 entrées éprouvées, 0 perte de champ**.
+- **`dry-run` local** (`env -u ZOTERO_API_KEY … --dry-run`) : **361 références, 361 à créer**,
+  aucune `ValueError` de `csl_vers_zotero`. Il tourne **sans clé** : la récupération Zotero est
+  gardée par `if args.pousser or api_key`. *Le lancer en local, et non par le workflow, est ici
+  le seul choix utile : le workflow tourne sur `master` et ne verrait aucune des 14 clés.*
+- **`controle-rangement` local** : il tourne lui aussi **sans clé** (le groupe 6529669 se lit en
+  anonyme). Résultat : **333 références dans Zotero, 430 citations relevées** ; bien rangées 174 ;
+  en défaut 147 clés distinctes ; **à déclasser 41**, **à ranger 108**, sans citation 12,
+  **absentes de Zotero 38**. Rappel du défaut d'affichage **non commité** : `174+41+108+12`
+  ne s'additionne pas à 333 parce que « à déclasser » et « à ranger » **se chevauchent**
+  (2 clés rangées dans le mauvais livre y figurent deux fois) — ce n'est pas un défaut de
+  classement.
+- **Où tombent mes 14 clés : nulle part, et c'est normal.** Le contrôle ne voit que les clés
+  **citées** ; les miennes ne le sont par personne (le chapitre n'a pas été modifié). Elles ne
+  sont donc ni dans « sans citation » — ce panier ne parle que d'articles **présents dans
+  Zotero** — ni dans « absentes de Zotero », qui ne parle que de clés **citées**. Elles
+  n'apparaîtront qu'après la passe rédacteur.
+- **Le panier « absentes de Zotero : 38 » décomposé** (recalculé clé par clé, pas déduit) :
+  **14** sont les clés de la passe précédente, citées, avec entrée locale, en attente de
+  rapatriement ; les **24 autres ne sont pas des références** mais des **étiquettes de renvoi
+  Quarto** — `sec-rsna`, `tbl-bareme-irpp-2025`, `fig-effectifs-fp`… `cles_citees()` ramasse
+  tout `@clé` sans distinguer un renvoi interne d'une citation bibliographique, ce qui **gonfle
+  ce panier de 24**. Aucune de ces 24 n'est une citation morte : le rendu est à 0 `[?]`.
+  *Piste de correction du script : écarter les préfixes `sec-`, `tbl-`, `fig-`, `eq-`.*
+  Le diff local/Zotero, lui, donne **28 clés locales absentes de Zotero** = mes 14 + les 14
+  d'hier (les 15 moins `loi-2018-56-lf-2019`, supprimée comme doublon). Les deux nombres
+  comptent des univers différents ; aucun des deux ne signale de manque.
+
+#### À pousser dans Zotero — NE PAS pousser sans feu vert (liste consolidée)
+
+Toute clé ajoutée à la main est **provisoire** : la prochaine descente de `sync_biblio.py`
+l'écrasera tant qu'elle n'est pas dans Zotero. **28 clés** sont dans ce cas :
+
+- les **14 de cette passe** (tableau ci-dessus) ;
+- les **14 de la passe précédente** : `loi-88-62-droit-consommation`, `loi-88-145-lf-1989`,
+  `loi-89-115-lf-1990`, `loi-2007-70-lf-2008`, `decret-91-550-tarif-petroliers`,
+  `decret-91-551-tarif-boissons`, `decret-94-816-hydrocarbures`, `decret-97-1368-regime-alcools`,
+  `decret-99-894-tarif-petroliers`, `decret-gouv-2015-1768-annexes-alcools`, `dgi-nc-24-2007`,
+  `dgi-nc-29-2007`, `dgi-nc-7-2016`, `dgi-nc-17-2018` ;
+- **plus** les corrections de note/URL déjà listées plus haut (`lf-1991`, `lf-2014`, `lf-2016`,
+  `lf-2018`, les 8 retraits d'URL arabes, `decret2019-454`).
+
+Collection visée : « Fiscalité ». **`ranger` reste indispensable après tout envoi** : un article
+créé par l'API arrive **sans collection**, et serait donc vu comme « commun » à la descente
+suivante — c'est le mécanisme qui avait fait tomber le fonds commun à sept clés.
+
+#### Observation à verser au dossier (défaut préexistant, cosmétique)
+
+Le `dry-run` montre **96 entrées** dont l'`extra` porte **deux fois** la ligne `issue: <n>` : une
+fois ajoutée par `csl_vers_zotero` (le type Zotero `statute` n'a pas de champ « issue », la
+variable passe donc en Extra), une fois parce que la **note descendue de Zotero commence déjà**
+par `citation-key: …` / `issue: …`. `csl_vers_zotero` déduplique `citation-key:` mais **pas**
+`issue:`. **90 de ces 96 sont préexistantes** ; les entrées créées à la main reprennent le même
+motif par cohérence.
+
+**Ce n'est pas purement cosmétique : la duplication croît d'un cran à chaque cycle.** La descente
+lit Zotero en `format=csljson`, export qui verse le champ **Extra dans le champ `note`** de
+l'entrée CSL ; la note locale porte donc l'Extra complet, `issue:` compris. À la remontée
+suivante, `csl_vers_zotero` retire les lignes `citation-key:` de la note mais **pas** les lignes
+`issue:`, et en rajoute une. Chaque aller-retour pousse → descend → pousse ajoute donc une ligne
+`issue:` de plus, sur 96 entrées. *Établi par lecture du code (`apply_extra_variables`,
+`csl_vers_zotero`), non par un aller-retour réel — aucune écriture Zotero n'a été faite.*
+Correctif suggéré : dédupliquer `issue:` comme `citation-key:` l'est déjà.

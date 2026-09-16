@@ -18,6 +18,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | AMEN social | برنامج الأمان الاجتماعي |  |
 | Annuité liquidable | السنة القابلة للتصفية |  |
 | Appui financier occasionnel | الدعم المادي الظرفي |  |
+| Assiette du droit de consommation | قاعدة المعلوم على الاستهلاك |  |
 | Assiette fiscale | الوعاء الضريبي |  |
 | Assujetti | الخاضع للأداء |  |
 | Assuré social | المضمون الاجتماعي |  |
@@ -53,18 +54,21 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Décote | التخفيض في الجراية |  |
 | Déductions communes | الطروحات المشتركة |  |
 | Délai de carence | فترة الانتظار |  |
-| Droit de consommation | معلوم الاستهلاك |  |
+| Droit de consommation | المعلوم على الاستهلاك |  |
 | Échelon | الدرجة |  |
 | Échelonnement indiciaire | التدرّج القياسي |  |
 | Éléments permanents de la rémunération | العناصر القارّة للأجر |  |
 | Emploi public | التشغيل العمومي |  |
 | Enfant à charge | الطفل المتكفَّل به |  |
+| Entrepositaire | أرباب المخازن |  |
 | Entreprises publiques | المنشآت العمومية |  |
 | Établissement public à caractère administratif | المؤسسة العمومية ذات الصبغة الإدارية | EPA |
 | Établissement public à caractère industriel et commercial | المؤسسة العمومية ذات الصبغة الصناعية والتجارية | EPIC |
 | Établissement public à caractère non administratif | المؤسسة العمومية التي لا تكتسي صبغة إدارية | EPNA |
 | Exonération de TVA | الإعفاء |  |
+| Facturation à l'identique | الفوترة بنفس المبلغ |  |
 | Fait générateur de la TVA | الحدث المنشئ للأداء |  |
+| Fait générateur du droit de consommation | الحدث المتولد عنه المعلوم على الاستهلاك |  |
 | Fonction publique | الوظيفة العمومية |  |
 | Fonctions astreignantes | الوظائف المرهقة |  |
 | Fonds de sécurité sociale | صناديق الضمان الاجتماعي |  |
@@ -73,6 +77,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Grade | الرتبة |  |
 | Grille des salaires | شبكة الأجور |  |
 | Impôt sur le revenu des personnes physiques | الضريبة على دخل الأشخاص الطبيعيين | IRPP |
+| Imputation du droit de consommation | خصم المعلوم على الاستهلاك |  |
 | Indemnité à caractère familial | المنحة ذات الصبغة العائلية |  |
 | Indemnité compensatrice | المنحة التعويضية |  |
 | Indemnité de décès | منحة الوفاة |  |
@@ -96,6 +101,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Pension temporaire d'orphelin | الجراية الوقتية لليتيم |  |
 | Pensions civiles et militaires | الجرايات المدنية والعسكرية |  |
 | Péréquation des pensions | تنظير الجرايات |  |
+| Position tarifaire | البند التعريفي |  |
 | Précis socio-fiscal | الملخّص الاجتماعي والجبائي |  |
 | Prestations familiales | المنح العائلية |  |
 | Prime de rendement | منحة المردودية |  |
@@ -139,23 +145,30 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Solde de réforme | منحة الإصلاح |  |
 | Stage de cotisation | مدة الانخراط الدنيا |  |
 | Statut particulier | النظام الأساسي الخصوصي |  |
+| Suspension du droit de consommation | توقيف العمل بالمعلوم على الاستهلاك |  |
 | Tableau A du code de la TVA | الجدول « أ » |  |
+| Tableau annexé à la loi n° 88-62 | الجدول المدرج بملحق القانون عدد 62 لسنة 1988 |  |
 | Tableau B bis du code de la TVA | الجدول « ب مكرر » |  |
 | Tableau B du code de la TVA | الجدول « ب » |  |
 | Tableau C du code de la TVA | الجدول « ج » |  |
+| Taux ad valorem | نسبة من القيمة |  |
 | Taux de liquidation | نسبة تصفية الجراية |  |
 | Taux effectif à la limite supérieure | النسبة الفعلية في الحدّ الأقصى |  |
 | Taux majoré de la TVA | النسبة المرتفعة |  |
 | Taux marginal | النسبة الحدية |  |
 | Taux normal de la TVA | النسبة العادية |  |
 | Taux réduit de la TVA | النسبة المخفضة |  |
+| Taux spécifique | نسبة نوعية |  |
 | Taxe à la production | الأداء على الإنتاج |  |
 | Taxe sur la valeur ajoutée | الأداء على القيمة المضافة | TVA |
+| Taxe sur les bières, vins et autres boissons alcoolisées | الأداء على الجعة والخمور والمشروبات الكحولية الأخرى |  |
 | Taxe sur les prestations de service | الأداء على الخدمات |  |
+| Taxe unique de compensation sur les carburants | الأداء الوحيد للتعويض على المحروقات |  |
 | Territorialité de la TVA | مبدأ الإقليمية |  |
 | Traitement de base | المرتب الأساسي |  |
 | Tranche | شريحة |  |
 | Transfert monétaire direct | التحويل النقدي المباشر |  |
 | Travaux pénibles et insalubres | الأشغال الشاقّة وغير الصحّية |  |
 | Valeur du point d'indice | قيمة النقطة الاستدلالية |  |
+| Valeur en douane | القيمة المصرح بها لدى الديوانة |  |
 | Validation des services | إدماج الخدمات |  |

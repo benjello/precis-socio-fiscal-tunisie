@@ -3681,20 +3681,31 @@ entries:
 
   - id: droit-de-consommation
     acronyme: null
-    statut: provisoire
-    references: [dgelf-code-tva-2023, decret-98-952-fiscalite-petrole-electricite]
-    source_definition: {ref: dgelf-code-tva-2023}
-    voir_aussi: [tva, taux-reduit-tva]
+    statut: valide
+    references: [dgelf-code-tva-2023, decret-98-952-fiscalite-petrole-electricite, dgi-nc-29-2007, loi-88-61-tva]
+    source_definition: {ref: loi-88-62-droit-consommation, locator: "art. 1er"}
+    source_traduction: {ref: loi-88-62-droit-consommation, locator: "art. 1er"}
+    voir_aussi: [tva, taux-reduit-tva, tableau-annexe-loi-88-62, position-tarifaire, assiette-droit-consommation, fait-generateur-droit-consommation, suspension-droit-consommation]
     fr:
       terme: Droit de consommation
       definition: >
-        Impôt indirect frappant des produits déterminés — carburants, alcools,
-        tabacs, véhicules — en sus de la taxe sur la valeur ajoutée. Institué
-        par la loi n° 88-62 du 2 juin 1988, le même jour que le code de la TVA.
+        Impôt indirect frappant, à l'importation comme à la fabrication locale,
+        des produits que la loi ne définit pas par leur nature mais désigne un
+        à un par leur position tarifaire, dans un tableau qui lui est annexé.
+        Institué par la loi n° 88-62 du 2 juin 1988, le même jour que le code
+        de la TVA. Il ne se superpose pas simplement à la taxe sur la valeur
+        ajoutée : il entre dans l'assiette de celle-ci, la TVA se liquidant sur
+        un prix droit de consommation compris.
       synonymes: []
     ar:
-      terme: معلوم الاستهلاك
-      definition: ""
+      terme: المعلوم على الاستهلاك
+      definition: >
+        أداء غير مباشر يوظَّف عند التوريد كما عند الصنع محليا على منتوجات لا
+        يعرّفها القانون بطبيعتها بل يعيّنها واحدا واحدا بعدد تعريفتها
+        الديوانية في جدول مدرج بملحقه. أحدثه القانون عدد 62 لسنة 1988 المؤرخ
+        في 2 جوان 1988، في نفس يوم إصدار مجلة الأداء على القيمة المضافة. وهو
+        لا يُضاف إلى الأداء على القيمة المضافة فحسب، بل يدخل في قاعدته، إذ
+        يُحتسب هذا الأخير على ثمن يشمل المعلوم على الاستهلاك.
       synonymes: []
 
   - id: taxe-a-la-production
@@ -3733,3 +3744,388 @@ entries:
       terme: الأداء على الخدمات
       definition: ""
       synonymes: []
+
+  - id: tableau-annexe-loi-88-62
+    acronyme: null
+    statut: valide
+    references: [loi-88-62-droit-consommation, lf-2016, lf-2018, dgi-nc-7-2016, dgi-nc-17-2018]
+    source_definition: {ref: loi-88-62-droit-consommation, locator: "tableau annexé"}
+    source_traduction: {ref: lf-2016}
+    voir_aussi: [droit-de-consommation, position-tarifaire]
+    fr:
+      terme: Tableau annexé à la loi n° 88-62
+      definition: >
+        Liste des produits soumis au droit de consommation, annexée à la loi
+        n° 88-62 du 2 juin 1988. Elle porte à la fois le champ d'application et
+        les taux : trois colonnes — numéro du tarif douanier, désignation des
+        produits, droit applicable — et des renvois qui ajoutent des règles de
+        fond. Modifier le tableau, c'est donc modifier le champ. Celui de 1988
+        a été abrogé et remplacé en entier deux fois, par l'article 44 de la
+        loi de finances pour 2016 puis par l'article 45 de la loi de finances
+        pour 2018 : pour l'état en vigueur, la source est la version
+        consolidée du code, et non le texte de 1988.
+      synonymes: []
+    ar:
+      terme: الجدول المدرج بملحق القانون عدد 62 لسنة 1988
+      definition: >
+        قائمة المنتوجات الخاضعة للمعلوم على الاستهلاك، مدرجة بملحق القانون
+        عدد 62 لسنة 1988 المؤرخ في 2 جوان 1988. وهي تحمل في الآن نفسه ميدان
+        التطبيق والنسب: ثلاثة أعمدة — عدد التعريفة الديوانية وبيان المنتوجات
+        ونسبة المعلوم — إضافة إلى إحالات تتضمّن قواعد أصلية. فتنقيح الجدول هو
+        في ذاته تنقيح لميدان التطبيق. وقد أُلغي جدول 1988 وعُوّض بكامله
+        مرّتين، بالفصل 44 من قانون المالية لسنة 2016 ثم بالفصل 45 من قانون
+        المالية لسنة 2018: ولمعرفة الوضع الجاري به العمل تُعتمد النسخة
+        المنقّحة للمجلة لا نصّ 1988.
+      synonymes: []
+
+  - id: position-tarifaire
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-62-droit-consommation]
+    source_definition: {ref: loi-88-62-droit-consommation, locator: "tableau annexé, colonne « NT »"}
+    voir_aussi: [tableau-annexe-loi-88-62, droit-de-consommation]
+    fr:
+      terme: Position tarifaire
+      definition: >
+        Numéro du tarif douanier par lequel le tableau annexé désigne les
+        produits soumis au droit de consommation ; le tableau de 1988 en fait
+        le titre de sa première colonne, « NT ». La position est soit entière
+        (02-03), soit extraite et préfixée « Ex », le libellé précisant alors
+        quelle partie de la position est retenue et quelles exclusions s'y
+        attachent. Le champ du droit de consommation est ainsi défini par une
+        liste douanière, et non par une catégorie économique.
+      synonymes: [NT, numéro du tarif douanier]
+    ar:
+      terme: البند التعريفي
+      definition: >
+        عدد التعريفة الديوانية الذي يعيّن به الجدول الملحق المنتوجات الخاضعة
+        للمعلوم على الاستهلاك؛ وقد جعله جدول 1988 عنوانا لعموده الأول. ويكون
+        البند كاملا (02-03) أو مستخرَجا يسبقه الرمز «م»، فيحدّد البيان عندئذ
+        الجزء المعنيّ منه وما يُستثنى فيه. وبذلك يُضبط ميدان المعلوم على
+        الاستهلاك بقائمة ديوانية لا بصنف اقتصادي.
+      synonymes: [عدد التعريفة]
+
+  - id: taux-ad-valorem
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-62-droit-consommation, dgi-nc-29-2007]
+    source_definition: {ref: loi-88-62-droit-consommation, locator: "art. 4-a"}
+    voir_aussi: [assiette-droit-consommation, taux-specifique, valeur-en-douane]
+    fr:
+      terme: Taux ad valorem
+      definition: >
+        Taux exprimé en pourcentage d'une valeur, par opposition au taux
+        spécifique. Lorsque le tableau annexé soumet un produit à un taux ad
+        valorem, l'assiette du droit de consommation est, à l'importation, la
+        valeur en douane et, en régime intérieur, le prix de vente tous frais,
+        droits et taxes compris, à l'exclusion du droit de consommation
+        lui-même et de la taxe sur la valeur ajoutée.
+      synonymes: []
+    ar:
+      terme: نسبة من القيمة
+      definition: >
+        نسبة تُحتسب مئويا من قيمة، خلافا للنسبة النوعية. فإذا أخضع الجدول
+        الملحق منتوجا لنسبة من القيمة، تكوّنت قاعدة المعلوم على الاستهلاك عند
+        التوريد من القيمة المصرح بها لدى الديوانة، وفي النظام الداخلي من ثمن
+        البيع باعتبار كل المصاريف والمعاليم والأداءات باستثناء المعلوم على
+        الاستهلاك والأداء على القيمة المضافة.
+      synonymes: []
+
+  - id: taux-specifique
+    acronyme: null
+    statut: valide
+    references: [loi-88-62-droit-consommation]
+    source_definition: {ref: loi-88-62-droit-consommation, locator: "art. 4-b"}
+    source_traduction: {ref: loi-88-62-droit-consommation, locator: "art. 4-b"}
+    voir_aussi: [assiette-droit-consommation, taux-ad-valorem]
+    fr:
+      terme: Taux spécifique
+      definition: >
+        Taux assis non sur une valeur mais sur une quantité — volume ou poids
+        —, par opposition au taux ad valorem. Le tableau annexé mêle les deux
+        techniques dès 1988 : le droit de consommation n'est donc ni une taxe
+        ad valorem ni une accise spécifique, mais mixte dès l'origine. Un
+        tarif spécifique ne suit pas les prix ; il ne varie qu'à chaque
+        révision du tableau, de sorte qu'une longue stabilité nominale y
+        équivaut à une érosion réelle.
+      synonymes: []
+    ar:
+      terme: نسبة نوعية
+      definition: >
+        نسبة لا تُحتسب من قيمة بل من كمّية — حجم أو وزن —، خلافا للنسبة من
+        القيمة. ويجمع الجدول الملحق بين الأسلوبين منذ 1988: فالمعلوم على
+        الاستهلاك ليس أداء على القيمة ولا معلوما نوعيا خالصا، بل هو مختلط منذ
+        نشأته. والتعريفة النوعية لا تتبع الأسعار، إذ لا تتغيّر إلا بمراجعة
+        الجدول، فيعادل ثباتها الاسمي الطويل تآكلا حقيقيا.
+      synonymes: []
+
+  - id: fait-generateur-droit-consommation
+    acronyme: null
+    statut: valide
+    references: [loi-88-62-droit-consommation]
+    source_definition: {ref: loi-88-62-droit-consommation, locator: "art. 3"}
+    source_traduction: {ref: loi-88-62-droit-consommation, locator: "art. 3"}
+    voir_aussi: [droit-de-consommation, fait-generateur-tva, entrepositaire]
+    fr:
+      terme: Fait générateur du droit de consommation
+      definition: >
+        Événement qui rend le droit de consommation exigible. L'article 3 de
+        la loi n° 88-62 n'en retient que deux : le dédouanement du produit à
+        l'importation, la livraison du produit en régime intérieur. La
+        rédaction est plus étroite que celle du code de la taxe sur la valeur
+        ajoutée — ni livraison à soi-même, ni prestation de service, ni
+        travaux immobiliers —, l'impôt étant assis sur des produits et non sur
+        des opérations de toute nature.
+      synonymes: []
+    ar:
+      terme: الحدث المتولد عنه المعلوم على الاستهلاك
+      definition: >
+        الواقعة التي يصبح بها المعلوم على الاستهلاك مستوجبا. ولم يحتفظ الفصل 3
+        من القانون عدد 62 لسنة 1988 إلا بحالتين: استخراج المنتوج من الديوانة
+        عند التوريد، وتسليم المنتوج في النظام الداخلي. وهي صياغة أضيق من
+        صياغة مجلة الأداء على القيمة المضافة — فلا تسليم للنفس ولا إسداء
+        خدمات ولا أشغال عقارية — لأنّ الأداء موظّف على منتوجات لا على عمليات
+        من كلّ نوع.
+      synonymes: []
+
+  - id: assiette-droit-consommation
+    acronyme: null
+    statut: valide
+    references: [loi-88-62-droit-consommation, dgi-nc-29-2007]
+    source_definition: {ref: loi-88-62-droit-consommation, locator: "art. 4"}
+    source_traduction: {ref: loi-88-62-droit-consommation, locator: "art. 4"}
+    voir_aussi: [droit-de-consommation, taux-ad-valorem, taux-specifique, valeur-en-douane]
+    fr:
+      terme: Assiette du droit de consommation
+      definition: >
+        Base sur laquelle le droit de consommation est liquidé. Elle se
+        dédouble selon la technique retenue par le tableau annexé : pour les
+        produits soumis à un taux ad valorem, la valeur en douane à
+        l'importation, ou le prix de vente tous frais, droits et taxes
+        compris — droit de consommation et taxe sur la valeur ajoutée exclus —
+        en régime intérieur ; pour les produits soumis à un taux spécifique,
+        le volume ou le poids. Cette assiette n'inclut pas la taxe sur la
+        valeur ajoutée, alors que celle de la taxe inclut le droit de
+        consommation : le cumul est une cascade asymétrique.
+      synonymes: []
+    ar:
+      terme: قاعدة المعلوم على الاستهلاك
+      definition: >
+        القاعدة التي يُحتسب عليها المعلوم على الاستهلاك. وهي تنقسم بحسب
+        الأسلوب الذي يعتمده الجدول الملحق: بالنسبة إلى المنتوجات الخاضعة
+        لنسبة من القيمة، القيمة المصرح بها لدى الديوانة عند التوريد، أو ثمن
+        البيع باعتبار كل المصاريف والمعاليم والأداءات باستثناء المعلوم على
+        الاستهلاك والأداء على القيمة المضافة في النظام الداخلي؛ وبالنسبة إلى
+        الخاضعة لنسبة نوعية، الحجم أو الوزن. ولا تشمل هذه القاعدة الأداء على
+        القيمة المضافة، في حين تشمل قاعدة هذا الأخير المعلوم على الاستهلاك.
+      synonymes: []
+
+  - id: imputation-droit-consommation
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-62-droit-consommation, loi-89-115-lf-1990]
+    source_definition: {ref: loi-88-62-droit-consommation, locator: "art. 5"}
+    voir_aussi: [droit-de-consommation, facturation-identique]
+    fr:
+      terme: Imputation du droit de consommation
+      definition: >
+        Faculté reconnue aux assujettis d'imputer sur le droit de
+        consommation dû celui qui a grevé leurs acquisitions auprès d'autres
+        assujettis et leurs propres importations de matières ou produits
+        entrant intégralement dans la composition du produit final soumis ; le
+        reliquat non imputé sur un mois est reporté sur les mois suivants. Le
+        mécanisme est voisin de la déduction de taxe sur la valeur ajoutée,
+        mais plus étroit, puisqu'il suppose l'incorporation intégrale de la
+        matière au produit final. C'est par lui que le droit de consommation
+        se distingue d'une accise ordinaire.
+      synonymes: []
+    ar:
+      terme: خصم المعلوم على الاستهلاك
+      definition: >
+        رخصة تُخوَّل للخاضعين في خصم المعلوم على الاستهلاك الذي أثقل فعلا
+        شراءاتهم لدى خاضعين آخرين ووارداتهم من المواد والمنتوجات التي تدخل
+        كليا في تركيب المنتوج النهائي الخاضع للمعلوم، على أن يؤجَّل طرح
+        المبلغ المتبقّي إلى الأشهر الموالية. وهي آلية قريبة من الطرح في مادة
+        الأداء على القيمة المضافة غير أنّها أضيق منه، إذ تشترط دخول المادة
+        كليا في المنتوج النهائي. وبها يفترق المعلوم على الاستهلاك عن المعاليم
+        النوعية العادية.
+      synonymes: [طرح المعلوم على الاستهلاك]
+
+  - id: facturation-identique
+    acronyme: null
+    statut: provisoire
+    references: [loi-89-115-lf-1990, loi-88-62-droit-consommation]
+    source_definition: {ref: loi-89-115-lf-1990, locator: "art. 34"}
+    voir_aussi: [imputation-droit-consommation, droit-de-consommation]
+    fr:
+      terme: Facturation à l'identique
+      definition: >
+        Obligation faite aux commerçants assujettis à la taxe sur la valeur
+        ajoutée qui commercialisent des produits soumis au droit de
+        consommation de facturer à leurs clients le droit supporté lors de
+        l'acquisition des mêmes produits, ce droit étant alors déductible.
+        Ajoutée à l'article 5 de la loi n° 88-62 par l'article 34 de la loi de
+        finances pour 1990, elle prolonge en aval le mécanisme d'imputation.
+        L'article 4 de la loi de 1988 posait déjà une règle voisine pour les
+        boissons alcoolisées, retransmises aux clients pour les mêmes montants
+        supportés.
+      synonymes: []
+    ar:
+      terme: الفوترة بنفس المبلغ
+      definition: >
+        واجب محمول على التجار الخاضعين للأداء على القيمة المضافة الذين
+        يروّجون منتوجات خاضعة للمعلوم على الاستهلاك، وهو أن يفوتروا لحرفائهم
+        بنفس المبلغ المعلوم الذي تحمّلوه عند اقتناء نفس المنتوجات، ويكون هذا
+        المعلوم عندئذ قابلا للطرح. أُضيف هذا الواجب إلى الفصل 5 من القانون
+        عدد 62 لسنة 1988 بالفصل 34 من قانون المالية لسنة 1990، فمدّ آلية
+        الخصم إلى ما بعد مرحلة الصنع. وكان الفصل 4 من قانون 1988 قد وضع قاعدة
+        قريبة منها في خصوص المشروبات الكحولية التي تُحال إلى الحرفاء بنفس
+        المبالغ التي وُظّفت عليها.
+      synonymes: []
+
+  - id: entrepositaire
+    acronyme: null
+    statut: valide
+    references: [loi-88-62-droit-consommation, loi-2007-70-lf-2008]
+    source_definition: {ref: loi-88-62-droit-consommation, locator: "art. 2-4"}
+    source_traduction: {ref: loi-88-62-droit-consommation, locator: "art. 2-4"}
+    voir_aussi: [droit-de-consommation, fait-generateur-droit-consommation, suspension-droit-consommation]
+    fr:
+      terme: Entrepositaire
+      definition: >
+        Personne qui détient en entrepôt des boissons alcoolisées, des vins ou
+        des bières. L'article 2 de la loi n° 88-62 range les entrepositaires
+        et les commerçants de gros de ces produits parmi les assujettis au
+        droit de consommation, aux côtés des fabricants de bière, des
+        embouteilleurs de vin et des fabricants de tout autre produit soumis ;
+        une cinquième catégorie a été ajoutée en 2008, la Société tunisienne
+        de l'électricité et du gaz, au titre du gaz naturel carburant.
+        L'importateur ne figure pas dans cette énumération, alors même que le
+        dédouanement est un fait générateur : à l'importation, le dispositif
+        tient par la liquidation en douane plutôt que par la qualité
+        d'assujetti, et aucun des textes lus ne commente cette articulation.
+        L'article 4 neutralise par ailleurs l'effet du droit sur les marges
+        des entrepositaires, qui le retransmettent à leurs clients pour les
+        mêmes montants.
+      synonymes: []
+    ar:
+      terme: أرباب المخازن
+      definition: >
+        من يمسكون في مخازنهم المشروبات الكحولية والخمور والجعة. وقد أدرج
+        الفصل 2 من القانون عدد 62 لسنة 1988 أرباب المخازن وتجار الجملة لهذه
+        المنتوجات ضمن الخاضعين للمعلوم على الاستهلاك، إلى جانب صانعي الجعة
+        ومعبّئي الخمور وصانعي كلّ المواد الأخرى الخاضعة للمعلوم؛ ثم أُضيف صنف
+        خامس سنة 2008 هو الشركة التونسية للكهرباء والغاز بعنوان الغاز الطبيعي
+        المستعمل وقودا للعربات. ولا يرد المورّد في هذا التعداد مع أنّ استخراج
+        المنتوج من الديوانة يكوّن الحدث المتولد عنه المعلوم: فالأمر يقوم عند
+        التوريد على الاستخلاص لدى الديوانة لا على صفة الخاضع، ولم يعلّق أيّ
+        من النصوص المطَّلع عليها على هذه المسألة. كما نصّ الفصل 4 على أنّ
+        المعلوم لا تأثير له على حساب ربح أرباب المخازن، إذ يُحال إلى حرفائهم
+        بنفس المبلغ الذي وُظّف عليه.
+      synonymes: []
+
+  - id: suspension-droit-consommation
+    acronyme: null
+    statut: valide
+    references: [loi-88-62-droit-consommation, lf-2018]
+    source_definition: {ref: loi-88-62-droit-consommation, locator: "art. 6 bis"}
+    source_traduction: {ref: lf-2018, locator: "art. 22"}
+    voir_aussi: [droit-de-consommation, entrepositaire]
+    fr:
+      terme: Suspension du droit de consommation
+      definition: >
+        Régime par lequel le droit de consommation n'est pas exigé lors d'une
+        opération qui, sans lui, y serait soumise. L'article 6 bis de la loi
+        n° 88-62, ajouté par l'article 22 de la loi de finances pour 2018, en
+        institue un cas : les véhicules tout terrain importés par les
+        concessionnaires au profit des agences de voyages.
+      synonymes: []
+    ar:
+      terme: توقيف العمل بالمعلوم على الاستهلاك
+      definition: >
+        نظام لا يُطلب بمقتضاه المعلوم على الاستهلاك عند عملية كانت لولاه
+        خاضعة له. وقد أحدث الفصل 6 مكرر من القانون عدد 62 لسنة 1988، المضاف
+        بالفصل 22 من قانون المالية لسنة 2018، حالة من حالاته: العربات الصالحة
+        لكل المسالك الموردة من قبل الوكلاء المعتمدين لفائدة وكالات الأسفار.
+      synonymes: []
+
+  - id: valeur-en-douane
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-62-droit-consommation]
+    source_definition: {ref: loi-88-62-droit-consommation, locator: "art. 4-a"}
+    voir_aussi: [assiette-droit-consommation, taux-ad-valorem]
+    fr:
+      terme: Valeur en douane
+      definition: >
+        Valeur retenue au dédouanement, qui sert d'assiette au droit de
+        consommation à l'importation pour les produits soumis à un taux ad
+        valorem. L'article 4 de la loi n° 88-62 la désigne comme la valeur
+        déclarée en douane ; en régime intérieur lui répond le prix de vente
+        tous frais, droits et taxes compris.
+      synonymes: []
+    ar:
+      terme: القيمة المصرح بها لدى الديوانة
+      definition: >
+        القيمة المعتمدة عند الإخراج من الديوانة، وهي قاعدة المعلوم على
+        الاستهلاك عند التوريد بالنسبة إلى المنتوجات الخاضعة لنسبة من القيمة.
+        وهذه هي العبارة التي استعملها الفصل 4 من القانون عدد 62 لسنة 1988،
+        ويقابلها في النظام الداخلي ثمن البيع باعتبار كل المصاريف والمعاليم
+        والأداءات.
+      synonymes: []
+
+  - id: taxe-unique-compensation-carburants
+    acronyme: null
+    statut: provisoire
+    references: [loi-88-62-droit-consommation]
+    source_definition: {ref: loi-88-62-droit-consommation, locator: "tableau annexé, renvoi (2)"}
+    voir_aussi: [droit-de-consommation, taxe-bieres-vins-boissons-alcoolisees]
+    fr:
+      terme: Taxe unique de compensation sur les carburants
+      definition: >
+        Prélèvement antérieur sur les carburants, auquel le tableau annexé à
+        la loi n° 88-62 du 2 juin 1988 renvoie en note (2) lors de
+        l'institution du droit de consommation : les personnes qui ne
+        supportaient jusque-là que cette taxe restent soumises à elle. Les
+        premiers exercices de la série des recettes de « droits de
+        consommation » la portent encore, avec la taxe sur les bières, vins et
+        autres boissons alcoolisées. Dispositif historique.
+      synonymes: []
+    ar:
+      terme: الأداء الوحيد للتعويض على المحروقات
+      definition: >
+        معلوم سابق على المحروقات، أحال إليه الجدول المدرج بملحق القانون عدد 62
+        لسنة 1988 المؤرخ في 2 جوان 1988 في إحالته عدد (2) عند إحداث المعلوم
+        على الاستهلاك: فالأشخاص الذين لم يكونوا يتحمّلون قبل ذلك سوى هذا
+        المعلوم يبقون خاضعين له. نظام تاريخي. (التسمية العربية هنا وصفية غير
+        مثبتة في نصّ مقروء، وهي في انتظار قراءة الصفحة 856 من العدد العربي
+        للرائد الرسمي.)
+      synonymes: []
+
+  - id: taxe-bieres-vins-boissons-alcoolisees
+    acronyme: null
+    statut: valide
+    references: [loi-88-62-droit-consommation]
+    source_definition: {ref: loi-88-62-droit-consommation, locator: "art. 7"}
+    source_traduction: {ref: loi-88-62-droit-consommation, locator: "art. 7"}
+    voir_aussi: [droit-de-consommation, taxe-unique-compensation-carburants]
+    fr:
+      terme: Taxe sur les bières, vins et autres boissons alcoolisées
+      definition: >
+        Taxe instituée par les articles 4 à 11 de la loi n° 84-2 du 21 mars
+        1984, portant loi de finances complémentaire pour la gestion 1984, en
+        remplacement de la taxe parafiscale unique sur les vins, bières et
+        boissons alcoolisées. Ces articles ont été abrogés par l'article 7 de
+        la loi n° 88-62 du 2 juin 1988, qui lui substitue le droit de
+        consommation. Dispositif historique.
+      synonymes: []
+    ar:
+      terme: الأداء على الجعة والخمور والمشروبات الكحولية الأخرى
+      definition: >
+        أداء أحدثته الفصول من 4 إلى 11 من القانون عدد 2 لسنة 1984 المؤرخ في 21
+        مارس 1984 والمتعلق بقانون المالية التكميلي لتصرّف سنة 1984، عوضا عن
+        الأداء شبه الجبائي الوحيد على الخمور والجعة والمشروبات الكحولية. وقد
+        ألغى هذه الفصولَ الفصلُ 7 من القانون عدد 62 لسنة 1988 المؤرخ في 2
+        جوان 1988، فحلّ محلّها المعلوم على الاستهلاك. نظام تاريخي.
+      synonymes: []
+
