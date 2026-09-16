@@ -16,6 +16,20 @@ Fraction du revenu brut retranchée de l'assiette sans justification de dépense
 
 *Références :* [@code-irpp-is-1990]
 
+## Assiette du droit de consommation {#g-assiette-droit-consommation}
+
+[العربية → قاعدة المعلوم على الاستهلاك](../../ar/fiscalite/_glossaire.html#g-assiette-droit-consommation)
+
+Base sur laquelle le droit de consommation est liquidé. Elle se dédouble selon la technique retenue par le tableau annexé : pour les produits soumis à un taux ad valorem, la valeur en douane à l'importation, ou le prix de vente tous frais, droits et taxes compris — droit de consommation et taxe sur la valeur ajoutée exclus — en régime intérieur ; pour les produits soumis à un taux spécifique, le volume ou le poids. Cette assiette n'inclut pas la taxe sur la valeur ajoutée, alors que celle de la taxe inclut le droit de consommation : le cumul est une cascade asymétrique.
+
+*Source de la définition :* [@loi-88-62-droit-consommation, art. 4]
+
+*Terme officiel :* [@loi-88-62-droit-consommation, art. 4]
+
+*Voir aussi :* [Droit de consommation](#g-droit-de-consommation), [Taux ad valorem](#g-taux-ad-valorem), [Taux spécifique](#g-taux-specifique), [Valeur en douane](#g-valeur-en-douane)
+
+*Références :* [@loi-88-62-droit-consommation] [@dgi-nc-29-2007]
+
 ## Assiette fiscale {#g-assiette-fiscale}
 
 [العربية → الوعاء الضريبي](../../ar/fiscalite/_glossaire.html#g-assiette-fiscale)
@@ -124,15 +138,31 @@ Déductions opérées sur le revenu global, après détermination des revenus ca
 
 ## Droit de consommation {#g-droit-de-consommation}
 
-[العربية → معلوم الاستهلاك](../../ar/fiscalite/_glossaire.html#g-droit-de-consommation)
+[العربية → المعلوم على الاستهلاك](../../ar/fiscalite/_glossaire.html#g-droit-de-consommation)
 
-Impôt indirect frappant des produits déterminés — carburants, alcools, tabacs, véhicules — en sus de la taxe sur la valeur ajoutée. Institué par la loi n° 88-62 du 2 juin 1988, le même jour que le code de la TVA.
+Impôt indirect frappant, à l'importation comme à la fabrication locale, des produits que la loi ne définit pas par leur nature mais désigne un à un par leur position tarifaire, dans un tableau qui lui est annexé. Institué par la loi n° 88-62 du 2 juin 1988, le même jour que le code de la TVA. Il ne se superpose pas simplement à la taxe sur la valeur ajoutée : il entre dans l'assiette de celle-ci, la TVA se liquidant sur un prix droit de consommation compris.
 
-*Source de la définition :* [@dgelf-code-tva-2023]
+*Source de la définition :* [@loi-88-62-droit-consommation, art. 1er]
 
-*Voir aussi :* [Taxe sur la valeur ajoutée](#g-tva), [Taux réduit de la TVA](#g-taux-reduit-tva)
+*Terme officiel :* [@loi-88-62-droit-consommation, art. 1er]
 
-*Références :* [@dgelf-code-tva-2023] [@decret-98-952-fiscalite-petrole-electricite]
+*Voir aussi :* [Taxe sur la valeur ajoutée](#g-tva), [Taux réduit de la TVA](#g-taux-reduit-tva), [Tableau annexé à la loi n° 88-62](#g-tableau-annexe-loi-88-62), [Position tarifaire](#g-position-tarifaire), [Assiette du droit de consommation](#g-assiette-droit-consommation), [Fait générateur du droit de consommation](#g-fait-generateur-droit-consommation), [Suspension du droit de consommation](#g-suspension-droit-consommation)
+
+*Références :* [@dgelf-code-tva-2023] [@decret-98-952-fiscalite-petrole-electricite] [@dgi-nc-29-2007] [@loi-88-61-tva]
+
+## Entrepositaire {#g-entrepositaire}
+
+[العربية → أرباب المخازن](../../ar/fiscalite/_glossaire.html#g-entrepositaire)
+
+Personne qui détient en entrepôt des boissons alcoolisées, des vins ou des bières. L'article 2 de la loi n° 88-62 range les entrepositaires et les commerçants de gros de ces produits parmi les assujettis au droit de consommation, aux côtés des fabricants de bière, des embouteilleurs de vin et des fabricants de tout autre produit soumis ; une cinquième catégorie a été ajoutée en 2008, la Société tunisienne de l'électricité et du gaz, au titre du gaz naturel carburant. L'importateur ne figure pas dans cette énumération, alors même que le dédouanement est un fait générateur : à l'importation, le dispositif tient par la liquidation en douane plutôt que par la qualité d'assujetti, et aucun des textes lus ne commente cette articulation. L'article 4 neutralise par ailleurs l'effet du droit sur les marges des entrepositaires, qui le retransmettent à leurs clients pour les mêmes montants.
+
+*Source de la définition :* [@loi-88-62-droit-consommation, art. 2-4]
+
+*Terme officiel :* [@loi-88-62-droit-consommation, art. 2-4]
+
+*Voir aussi :* [Droit de consommation](#g-droit-de-consommation), [Fait générateur du droit de consommation](#g-fait-generateur-droit-consommation), [Suspension du droit de consommation](#g-suspension-droit-consommation)
+
+*Références :* [@loi-88-62-droit-consommation] [@loi-2007-70-lf-2008]
 
 ## Exonération de TVA {#g-exoneration-tva}
 
@@ -146,6 +176,18 @@ Dispense de taxe accordée à une opération qui entre pourtant dans le champ d'
 
 *Références :* [@loi-88-61-tva]
 
+## Facturation à l'identique {#g-facturation-identique}
+
+[العربية → الفوترة بنفس المبلغ](../../ar/fiscalite/_glossaire.html#g-facturation-identique)
+
+Obligation faite aux commerçants assujettis à la taxe sur la valeur ajoutée qui commercialisent des produits soumis au droit de consommation de facturer à leurs clients le droit supporté lors de l'acquisition des mêmes produits, ce droit étant alors déductible. Ajoutée à l'article 5 de la loi n° 88-62 par l'article 34 de la loi de finances pour 1990, elle prolonge en aval le mécanisme d'imputation. L'article 4 de la loi de 1988 posait déjà une règle voisine pour les boissons alcoolisées, retransmises aux clients pour les mêmes montants supportés.
+
+*Source de la définition :* [@loi-89-115-lf-1990, art. 34]
+
+*Voir aussi :* [Imputation du droit de consommation](#g-imputation-droit-consommation), [Droit de consommation](#g-droit-de-consommation)
+
+*Références :* [@loi-89-115-lf-1990] [@loi-88-62-droit-consommation]
+
 ## Fait générateur de la TVA {#g-fait-generateur-tva}
 
 [العربية → الحدث المنشئ للأداء](../../ar/fiscalite/_glossaire.html#g-fait-generateur-tva)
@@ -157,6 +199,20 @@ Dispense de taxe accordée à une opération qui entre pourtant dans le champ d'
 *Voir aussi :* [Taxe sur la valeur ajoutée](#g-tva), [Livraison à soi-même](#g-livraison-a-soi-meme), [Chiffre d'affaires imposable](#g-chiffre-affaires-imposable)
 
 *Références :* [@loi-88-61-tva]
+
+## Fait générateur du droit de consommation {#g-fait-generateur-droit-consommation}
+
+[العربية → الحدث المتولد عنه المعلوم على الاستهلاك](../../ar/fiscalite/_glossaire.html#g-fait-generateur-droit-consommation)
+
+Événement qui rend le droit de consommation exigible. L'article 3 de la loi n° 88-62 n'en retient que deux : le dédouanement du produit à l'importation, la livraison du produit en régime intérieur. La rédaction est plus étroite que celle du code de la taxe sur la valeur ajoutée — ni livraison à soi-même, ni prestation de service, ni travaux immobiliers —, l'impôt étant assis sur des produits et non sur des opérations de toute nature.
+
+*Source de la définition :* [@loi-88-62-droit-consommation, art. 3]
+
+*Terme officiel :* [@loi-88-62-droit-consommation, art. 3]
+
+*Voir aussi :* [Droit de consommation](#g-droit-de-consommation), [Fait générateur de la TVA](#g-fait-generateur-tva), [Entrepositaire](#g-entrepositaire)
+
+*Références :* [@loi-88-62-droit-consommation]
 
 ## Frais professionnels {#g-frais-professionnels}
 
@@ -182,6 +238,18 @@ Impôt direct et progressif frappant le revenu net global des personnes physique
 
 *Références :* [@loi-irpp-is-1989]
 
+## Imputation du droit de consommation {#g-imputation-droit-consommation}
+
+[العربية → خصم المعلوم على الاستهلاك](../../ar/fiscalite/_glossaire.html#g-imputation-droit-consommation)
+
+Faculté reconnue aux assujettis d'imputer sur le droit de consommation dû celui qui a grevé leurs acquisitions auprès d'autres assujettis et leurs propres importations de matières ou produits entrant intégralement dans la composition du produit final soumis ; le reliquat non imputé sur un mois est reporté sur les mois suivants. Le mécanisme est voisin de la déduction de taxe sur la valeur ajoutée, mais plus étroit, puisqu'il suppose l'incorporation intégrale de la matière au produit final. C'est par lui que le droit de consommation se distingue d'une accise ordinaire.
+
+*Source de la définition :* [@loi-88-62-droit-consommation, art. 5]
+
+*Voir aussi :* [Droit de consommation](#g-droit-de-consommation), [Facturation à l'identique](#g-facturation-identique)
+
+*Références :* [@loi-88-62-droit-consommation] [@loi-89-115-lf-1990]
+
 ## Livraison à soi-même {#g-livraison-a-soi-meme}
 
 [العربية → التسليم للنفس](../../ar/fiscalite/_glossaire.html#g-livraison-a-soi-meme)
@@ -205,6 +273,18 @@ Faculté ouverte à certaines personnes placées hors du champ de la taxe de s'y
 *Voir aussi :* [Assujetti](#g-assujetti), [Taxe sur la valeur ajoutée](#g-tva)
 
 *Références :* [@loi-88-61-tva]
+
+## Position tarifaire {#g-position-tarifaire}
+
+[العربية → البند التعريفي](../../ar/fiscalite/_glossaire.html#g-position-tarifaire)
+
+Numéro du tarif douanier par lequel le tableau annexé désigne les produits soumis au droit de consommation ; le tableau de 1988 en fait le titre de sa première colonne, « NT ». La position est soit entière (02-03), soit extraite et préfixée « Ex », le libellé précisant alors quelle partie de la position est retenue et quelles exclusions s'y attachent. Le champ du droit de consommation est ainsi défini par une liste douanière, et non par une catégorie économique.
+
+*Source de la définition :* [@loi-88-62-droit-consommation, tableau annexé, colonne « NT »]
+
+*Voir aussi :* [Tableau annexé à la loi n° 88-62](#g-tableau-annexe-loi-88-62), [Droit de consommation](#g-droit-de-consommation)
+
+*Références :* [@loi-88-62-droit-consommation]
 
 ## Retenue à la source {#g-retenue-a-la-source}
 
@@ -238,6 +318,20 @@ Rémunération horaire ou mensuelle minimale légale applicable aux salariés de
 
 *Source de la définition :* [@decret-2017-668-smig]
 
+## Suspension du droit de consommation {#g-suspension-droit-consommation}
+
+[العربية → توقيف العمل بالمعلوم على الاستهلاك](../../ar/fiscalite/_glossaire.html#g-suspension-droit-consommation)
+
+Régime par lequel le droit de consommation n'est pas exigé lors d'une opération qui, sans lui, y serait soumise. L'article 6 bis de la loi n° 88-62, ajouté par l'article 22 de la loi de finances pour 2018, en institue un cas : les véhicules tout terrain importés par les concessionnaires au profit des agences de voyages.
+
+*Source de la définition :* [@loi-88-62-droit-consommation, art. 6 bis]
+
+*Terme officiel :* [@lf-2018, art. 22]
+
+*Voir aussi :* [Droit de consommation](#g-droit-de-consommation), [Entrepositaire](#g-entrepositaire)
+
+*Références :* [@loi-88-62-droit-consommation] [@lf-2018]
+
 ## Tableau A du code de la TVA {#g-tableau-a-tva}
 
 [العربية → الجدول « أ »](../../ar/fiscalite/_glossaire.html#g-tableau-a-tva)
@@ -249,6 +343,20 @@ Annexe du code énumérant les produits et opérations exonérés de la taxe. To
 *Voir aussi :* [Exonération de TVA](#g-exoneration-tva), [Taxe sur la valeur ajoutée](#g-tva)
 
 *Références :* [@loi-88-61-tva]
+
+## Tableau annexé à la loi n° 88-62 {#g-tableau-annexe-loi-88-62}
+
+[العربية → الجدول المدرج بملحق القانون عدد 62 لسنة 1988](../../ar/fiscalite/_glossaire.html#g-tableau-annexe-loi-88-62)
+
+Liste des produits soumis au droit de consommation, annexée à la loi n° 88-62 du 2 juin 1988. Elle porte à la fois le champ d'application et les taux : trois colonnes — numéro du tarif douanier, désignation des produits, droit applicable — et des renvois qui ajoutent des règles de fond. Modifier le tableau, c'est donc modifier le champ. Celui de 1988 a été abrogé et remplacé en entier deux fois, par l'article 44 de la loi de finances pour 2016 puis par l'article 45 de la loi de finances pour 2018 : pour l'état en vigueur, la source est la version consolidée du code, et non le texte de 1988.
+
+*Source de la définition :* [@loi-88-62-droit-consommation, tableau annexé]
+
+*Terme officiel :* [@lf-2016]
+
+*Voir aussi :* [Droit de consommation](#g-droit-de-consommation), [Position tarifaire](#g-position-tarifaire)
+
+*Références :* [@loi-88-62-droit-consommation] [@lf-2016] [@lf-2018] [@dgi-nc-7-2016] [@dgi-nc-17-2018]
 
 ## Tableau B bis du code de la TVA {#g-tableau-b-bis-tva}
 
@@ -285,6 +393,18 @@ Annexe du code énumérant les produits soumis au taux majoré. Supprimée au 1e
 *Voir aussi :* [Taux majoré de la TVA](#g-taux-majore-tva), [Taxe sur la valeur ajoutée](#g-tva)
 
 *Références :* [@loi-88-61-tva] [@loi-2006-80-reduction-taux]
+
+## Taux ad valorem {#g-taux-ad-valorem}
+
+[العربية → نسبة من القيمة](../../ar/fiscalite/_glossaire.html#g-taux-ad-valorem)
+
+Taux exprimé en pourcentage d'une valeur, par opposition au taux spécifique. Lorsque le tableau annexé soumet un produit à un taux ad valorem, l'assiette du droit de consommation est, à l'importation, la valeur en douane et, en régime intérieur, le prix de vente tous frais, droits et taxes compris, à l'exclusion du droit de consommation lui-même et de la taxe sur la valeur ajoutée.
+
+*Source de la définition :* [@loi-88-62-droit-consommation, art. 4-a]
+
+*Voir aussi :* [Assiette du droit de consommation](#g-assiette-droit-consommation), [Taux spécifique](#g-taux-specifique), [Valeur en douane](#g-valeur-en-douane)
+
+*Références :* [@loi-88-62-droit-consommation] [@dgi-nc-29-2007]
 
 ## Taux majoré de la TVA {#g-taux-majore-tva}
 
@@ -332,6 +452,20 @@ Taux inférieur au taux normal, applicable aux produits et services que le table
 
 *Références :* [@loi-88-61-tva] [@decret-98-952-fiscalite-petrole-electricite]
 
+## Taux spécifique {#g-taux-specifique}
+
+[العربية → نسبة نوعية](../../ar/fiscalite/_glossaire.html#g-taux-specifique)
+
+Taux assis non sur une valeur mais sur une quantité — volume ou poids —, par opposition au taux ad valorem. Le tableau annexé mêle les deux techniques dès 1988 : le droit de consommation n'est donc ni une taxe ad valorem ni une accise spécifique, mais mixte dès l'origine. Un tarif spécifique ne suit pas les prix ; il ne varie qu'à chaque révision du tableau, de sorte qu'une longue stabilité nominale y équivaut à une érosion réelle.
+
+*Source de la définition :* [@loi-88-62-droit-consommation, art. 4-b]
+
+*Terme officiel :* [@loi-88-62-droit-consommation, art. 4-b]
+
+*Voir aussi :* [Assiette du droit de consommation](#g-assiette-droit-consommation), [Taux ad valorem](#g-taux-ad-valorem)
+
+*Références :* [@loi-88-62-droit-consommation]
+
 ## Taxe à la production {#g-taxe-a-la-production}
 
 [العربية → الأداء على الإنتاج](../../ar/fiscalite/_glossaire.html#g-taxe-a-la-production)
@@ -356,6 +490,20 @@ Impôt indirect général sur la dépense, institué par la loi n° 88-61 du 2 j
 
 *Références :* [@loi-88-61-tva] [@dgelf-code-tva-2023]
 
+## Taxe sur les bières, vins et autres boissons alcoolisées {#g-taxe-bieres-vins-boissons-alcoolisees}
+
+[العربية → الأداء على الجعة والخمور والمشروبات الكحولية الأخرى](../../ar/fiscalite/_glossaire.html#g-taxe-bieres-vins-boissons-alcoolisees)
+
+Taxe instituée par les articles 4 à 11 de la loi n° 84-2 du 21 mars 1984, portant loi de finances complémentaire pour la gestion 1984, en remplacement de la taxe parafiscale unique sur les vins, bières et boissons alcoolisées. Ces articles ont été abrogés par l'article 7 de la loi n° 88-62 du 2 juin 1988, qui lui substitue le droit de consommation. Dispositif historique.
+
+*Source de la définition :* [@loi-88-62-droit-consommation, art. 7]
+
+*Terme officiel :* [@loi-88-62-droit-consommation, art. 7]
+
+*Voir aussi :* [Droit de consommation](#g-droit-de-consommation), [Taxe unique de compensation sur les carburants](#g-taxe-unique-compensation-carburants)
+
+*Références :* [@loi-88-62-droit-consommation]
+
 ## Taxe sur les prestations de service {#g-taxe-prestations-de-service}
 
 [العربية → الأداء على الخدمات](../../ar/fiscalite/_glossaire.html#g-taxe-prestations-de-service)
@@ -368,6 +516,18 @@ Taxe sur le chiffre d'affaires antérieure à la TVA, frappant les services, abr
 
 *Références :* [@loi-88-61-tva]
 
+## Taxe unique de compensation sur les carburants {#g-taxe-unique-compensation-carburants}
+
+[العربية → الأداء الوحيد للتعويض على المحروقات](../../ar/fiscalite/_glossaire.html#g-taxe-unique-compensation-carburants)
+
+Prélèvement antérieur sur les carburants, auquel le tableau annexé à la loi n° 88-62 du 2 juin 1988 renvoie en note (2) lors de l'institution du droit de consommation : les personnes qui ne supportaient jusque-là que cette taxe restent soumises à elle. Les premiers exercices de la série des recettes de « droits de consommation » la portent encore, avec la taxe sur les bières, vins et autres boissons alcoolisées. Dispositif historique.
+
+*Source de la définition :* [@loi-88-62-droit-consommation, tableau annexé, renvoi (2)]
+
+*Voir aussi :* [Droit de consommation](#g-droit-de-consommation), [Taxe sur les bières, vins et autres boissons alcoolisées](#g-taxe-bieres-vins-boissons-alcoolisees)
+
+*Références :* [@loi-88-62-droit-consommation]
+
 ## Territorialité de la TVA {#g-territorialite-tva}
 
 [العربية → مبدأ الإقليمية](../../ar/fiscalite/_glossaire.html#g-territorialite-tva)
@@ -379,3 +539,15 @@ Règle qui soumet à la taxe les affaires faites en Tunisie. Une vente y est ré
 *Voir aussi :* [Taxe sur la valeur ajoutée](#g-tva), [Fait générateur de la TVA](#g-fait-generateur-tva)
 
 *Références :* [@loi-88-61-tva]
+
+## Valeur en douane {#g-valeur-en-douane}
+
+[العربية → القيمة المصرح بها لدى الديوانة](../../ar/fiscalite/_glossaire.html#g-valeur-en-douane)
+
+Valeur retenue au dédouanement, qui sert d'assiette au droit de consommation à l'importation pour les produits soumis à un taux ad valorem. L'article 4 de la loi n° 88-62 la désigne comme la valeur déclarée en douane ; en régime intérieur lui répond le prix de vente tous frais, droits et taxes compris.
+
+*Source de la définition :* [@loi-88-62-droit-consommation, art. 4-a]
+
+*Voir aussi :* [Assiette du droit de consommation](#g-assiette-droit-consommation), [Taux ad valorem](#g-taux-ad-valorem)
+
+*Références :* [@loi-88-62-droit-consommation]

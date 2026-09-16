@@ -857,9 +857,8 @@
       "id": "lf-2023",
       "type": "legislation",
       "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: lf-2023\nissue: 141\nJORT n° 141 du 23 décembre 2022, tome 165. Numéro et date du fascicule ÉTABLIS : la notice jort_cache.db rattache le « مرسوم عدد 79 لسنة 2022 مؤرخ في 22 ديسمبر 2022 و المتعلق بقانون المالية لسنة 2023 » au JORT n° 141 de 2022, date de publication 23 décembre 2022, tome 165, et le sommaire de l'ÉDITION ARABE téléchargée et ouverte le 7 septembre 2026 (168 pages, couverture « السنة 165 — الجمعة 23 ديسمبر 2022 — عدد 141 ») le confirme, le décret-loi commençant page 4059 de la pagination arabe. ATTENTION : l'édition FRANÇAISE n'est pas en ligne sur pist.tn — https://www.pist.tn/jort/2022/2022F/Jo1412022.pdf renvoie un 404 (text/html, 289 octets), bien que jort_cache.db porte un pdf_fr pour d'autres textes du même fascicule. TODO — LA PAGINATION FRANÇAISE N'EST PAS ÉTABLIE, d'où l'absence de champ page : le fascicule français est absent en ligne et la copie locale PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_de_Finances_2023.pdf est illisible (« Couldn't read xref table »). Ne pas y substituer la pagination arabe sans le dire. Articles intéressant l'assiette de l'IRPP : article 43 (revenus fonciers, refonte des exclusions de la plus-value et seuil de 500 000 D), article 41-2 (article 38 point 24), article 42-2 (abrogation du point 18 de l'article 38), article 22 (taux de la contribution sociale de solidarité). Article 12, p. 4060 de la pagination arabe — ÉDITION ARABE SEULEMENT, aucune version française officielle : abroge et remplace l'art. 71 bis de la loi n° 85-12 — l'augmentation optionnelle de l'âge de mise à la retraite est subordonnée à l'accord de l'employeur (sauf personnels de l'art. 29 bis) et devient révocable. Date d'effet : art. 76, 1er janvier 2023, l'art. 12 n'y dérogeant pas. Texte lu (couche texte arabe, relue à l'image).",
+      "note": "citation-key: lf-2023\nissue: 141\nJORT n° 141 du 23 décembre 2022, tome 165. Numéro et date du fascicule ÉTABLIS : la notice jort_cache.db rattache le « مرسوم عدد 79 لسنة 2022 مؤرخ في 22 ديسمبر 2022 و المتعلق بقانون المالية لسنة 2023 » au JORT n° 141 de 2022, date de publication 23 décembre 2022, tome 165, et le sommaire de l'ÉDITION ARABE téléchargée et ouverte le 7 septembre 2026 (168 pages, couverture « السنة 165 — الجمعة 23 ديسمبر 2022 — عدد 141 ») le confirme, le décret-loi commençant page 4059 de la pagination arabe. ATTENTION : l'édition FRANÇAISE n'est pas en ligne sur pist.tn — https://www.pist.tn/jort/2022/2022F/Jo1412022.pdf renvoie un 404 (text/html, 289 octets), bien que jort_cache.db porte un pdf_fr pour d'autres textes du même fascicule. TODO — LA PAGINATION FRANÇAISE N'EST PAS ÉTABLIE, d'où l'absence de champ page : le fascicule français est absent en ligne et la copie locale PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_de_Finances_2023.pdf est illisible (« Couldn't read xref table »). Ne pas y substituer la pagination arabe sans le dire. Articles intéressant l'assiette de l'IRPP : article 43 (revenus fonciers, refonte des exclusions de la plus-value et seuil de 500 000 D), article 41-2 (article 38 point 24), article 42-2 (abrogation du point 18 de l'article 38), article 22 (taux de la contribution sociale de solidarité). Article 12, p. 4060 de la pagination arabe — ÉDITION ARABE SEULEMENT, aucune version française officielle : abroge et remplace l'art. 71 bis de la loi n° 85-12 — l'augmentation optionnelle de l'âge de mise à la retraite est subordonnée à l'accord de l'employeur (sauf personnels de l'art. 29 bis) et devient révocable. Date d'effet : art. 76, 1er janvier 2023, l'art. 12 n'y dérogeant pas. Texte lu (couche texte arabe, relue à l'image).\nURL ARABE RETIRÉE DU FICHIER FRANÇAIS le 16/09/2026 : elle pointait https://www.pist.tn/jort/2022/2022A/Ja1412022.pdf, c'est-à-dire l'édition ARABE, ce que la convention interdit dans un references.json français (URL FR = champ pdf_fr). Le candidat https://www.pist.tn/jort/2022/2022F/Jo1412022.pdf rend 404 (re-vérifié curl -k, 16/09/2026). L'entrée française reste donc SANS URL ; l'entrée arabe homologue conserve l'adresse arabe.",
       "title": "Décret-loi n° 2022-79 du 22 décembre 2022, portant loi de finances pour l'année 2023",
-      "URL": "https://www.pist.tn/jort/2022/2022A/Ja1412022.pdf",
       "volume": "165",
       "issued": {
         "date-parts": [
@@ -876,10 +875,9 @@
       "id": "lf-2025",
       "type": "legislation",
       "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: lf-2025\nissue: 149\nJORT n° 149 du 10 décembre 2024, tome 167. ATTENTION, DEUX PAGINATIONS COEXISTENT et les deux sont exactes : l'article 36 (barème applicable aux revenus réalisés à compter du 1er janvier 2025) est en PAGE 3429-3430 DE L'ÉDITION FRANÇAISE et en PAGE 6429 DE L'ÉDITION ARABE. Toute citation doit préciser l'édition. La notice de jort_cache.db, qui donne 6429, décrit l'édition arabe. URL pointée sur l'édition arabe faute d'édition française référencée ; ne pas « corriger » vers une URL en 2024F. URL vérifiée (HTTP 200).\nArticle 17, pp. 6420-6421 de l'édition arabe : création du fonds d'assurance contre la perte de postes de travail (cité par le livre « Prestations sociales »).",
+      "note": "citation-key: lf-2025\nissue: 149\nJORT n° 149 du 10 décembre 2024, tome 167. ATTENTION, DEUX PAGINATIONS COEXISTENT et les deux sont exactes : l'article 36 (barème applicable aux revenus réalisés à compter du 1er janvier 2025) est en PAGE 3429-3430 DE L'ÉDITION FRANÇAISE et en PAGE 6429 DE L'ÉDITION ARABE. Toute citation doit préciser l'édition. La notice de jort_cache.db, qui donne 6429, décrit l'édition arabe. URL pointée sur l'édition arabe faute d'édition française référencée ; ne pas « corriger » vers une URL en 2024F. URL vérifiée (HTTP 200).\nArticle 17, pp. 6420-6421 de l'édition arabe : création du fonds d'assurance contre la perte de postes de travail (cité par le livre « Prestations sociales »).\nURL ARABE RETIRÉE DU FICHIER FRANÇAIS le 16/09/2026 : elle pointait https://www.pist.tn/jort/2024/2024A/Ja1492024.pdf, c'est-à-dire l'édition ARABE, ce que la convention interdit dans un references.json français (URL FR = champ pdf_fr). Le candidat https://www.pist.tn/jort/2024/2024F/Jo1492024.pdf rend 404 (re-vérifié curl -k, 16/09/2026). L'entrée française reste donc SANS URL ; l'entrée arabe homologue conserve l'adresse arabe.",
       "page": "6418",
       "title": "Loi n° 2024-48 du 9 décembre 2024, portant loi de finances pour l'année 2025",
-      "URL": "https://www.pist.tn/jort/2024/2024A/Ja1492024.pdf",
       "volume": "167",
       "issued": {
         "date-parts": [
@@ -1721,10 +1719,9 @@
       "id": "lf-2026",
       "type": "legislation",
       "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: lf-2026\nissue: 148\nJORT n° 148 du 12 décembre 2025, tome 168, pages 4231-4331 ; article 56 (abattement sur les pensions et rentes viagères) page 4243 ; article 91 (régime estimatif) pages 4254-4255. URL volontairement pointée sur l'ÉDITION ARABE : l'édition française n'est pas parue au 7 septembre 2026. jort_cache.db porte pourtant un pdf_fr (/jort/2025/2025F/Jo1482025.pdf) ; ce fichier a été téléchargé et vérifié le 7 septembre 2026 : il sert le fascicule ARABE. Ne pas « corriger » l'URL vers l'adresse en 2025F. URL vérifiée (HTTP 200).\nArt. 15 (édition arabe, p. 4233) : augmentation des salaires et traitements des secteurs public et privé au titre de 2026, 2027 et 2028 ; « l'augmentation s'étend aux pensions des retraités » ; fixation par décret. Visé, notamment cet article, par le décret n° 2026-67. Lu.",
+      "note": "citation-key: lf-2026\nissue: 148\nJORT n° 148 du 12 décembre 2025, tome 168, pages 4231-4331 ; article 56 (abattement sur les pensions et rentes viagères) page 4243 ; article 91 (régime estimatif) pages 4254-4255. URL volontairement pointée sur l'ÉDITION ARABE : l'édition française n'est pas parue au 7 septembre 2026. jort_cache.db porte pourtant un pdf_fr (/jort/2025/2025F/Jo1482025.pdf) ; ce fichier a été téléchargé et vérifié le 7 septembre 2026 : il sert le fascicule ARABE. Ne pas « corriger » l'URL vers l'adresse en 2025F. URL vérifiée (HTTP 200).\nArt. 15 (édition arabe, p. 4233) : augmentation des salaires et traitements des secteurs public et privé au titre de 2026, 2027 et 2028 ; « l'augmentation s'étend aux pensions des retraités » ; fixation par décret. Visé, notamment cet article, par le décret n° 2026-67. Lu.\nURL ARABE RETIRÉE DU FICHIER FRANÇAIS le 16/09/2026 : elle pointait https://www.pist.tn/jort/2025/2025A/Ja1482025.pdf, c'est-à-dire l'édition ARABE, ce que la convention interdit dans un references.json français (URL FR = champ pdf_fr). ATTENTION, PIÈGE : https://www.pist.tn/jort/2025/2025F/Jo1482025.pdf répond bien 200, mais le fichier servi est le fascicule ARABE — téléchargé en entier le 16/09/2026 (8 775 232 o) et ouvert : page 1 « السنـة 168 — عـدد 148 », « قانون عدد 17 لسنة 2025 … قانون المالية لسنة 2026 ». Un 200 sur un chemin en F/Jo ne prouve pas l'existence d'une édition française. L'entrée française reste donc SANS URL ; l'entrée arabe homologue conserve l'adresse arabe.",
       "page": "4231-4331",
       "title": "Loi n° 2025-17 du 12 décembre 2025, portant loi de finances pour l'année 2026",
-      "URL": "https://www.pist.tn/jort/2025/2025A/Ja1482025.pdf",
       "volume": "168",
       "issued": {
         "date-parts": [
@@ -2532,8 +2529,8 @@
           ]
         ]
       },
-      "URL": "https://www.pist.tn/jort/2019/2019A/Ja0432019.pdf",
-      "note": "citation-key: decret2019-454\nJORT n° 43 du 28 mai 2019. Page 1585 : sommaire de l'édition française (fascicule du corpus local PDFs/JORT/2019/fr/Jo0432019.pdf) ; la notice (numéro vide, intitulé arabe) porte pp. 1681-1682, vraisemblablement la pagination arabe. Intitulé relevé sur ce sommaire. URL : édition arabe, seule renseignée par la notice (pdf_fr vide). Date d'effet : 1er mai 2019. SMIG 48 heures : 378,560 → 403,104 D par mois. Texte lu."
+      "URL": "https://www.pist.tn/jort/2019/2019F/Jo0432019.pdf",
+      "note": "citation-key: decret2019-454\nJORT n° 43 du 28 mai 2019. Page 1585 : sommaire de l'édition française (fascicule du corpus local PDFs/JORT/2019/fr/Jo0432019.pdf) ; la notice (numéro vide, intitulé arabe) porte pp. 1681-1682, vraisemblablement la pagination arabe. Intitulé relevé sur ce sommaire. URL : édition arabe, seule renseignée par la notice (pdf_fr vide). Date d'effet : 1er mai 2019. SMIG 48 heures : 378,560 → 403,104 D par mois. Texte lu.\nURL FRANÇAISE ÉTABLIE le 16/09/2026 (l'entrée portait jusque-là l'édition arabe) : https://www.pist.tn/jort/2019/2019F/Jo0432019.pdf répond 200 avec Content-Length 1 399 936, exactement la taille de l'exemplaire local PDFs/JORT/2019/fr/Jo0432019.pdf, dont la page 1 porte « TRADUCTION FRANÇAISE POUR INFORMATION — Mardi 23 ramadan 1440 – 28 mai 2019 — N° 43 ». C'est donc bien l'édition française, malgré un pdf_fr vide dans jort_cache.db (lacune de la base, non absence du fascicule)."
     },
     {
       "id": "decret2020-1069",
@@ -2966,8 +2963,7 @@
           ]
         ]
       },
-      "URL": "https://www.pist.tn/jort/2019/2019A/Ja0202019.pdf",
-      "note": "citation-key: decret2019-209\nJORT n° 20 du 8 mars 2019 ; p. 727 de l'édition arabe (sommaire), pagination française non établie. Intitulé français repris du visa du décret gouvernemental n° 2019-1133 (la notice porte un intitulé arabe). URL : édition arabe, seule renseignée par la notice (pdf_fr vide) ; le fichier 2019F/Jo0202019.pdf de pist.tn sert lui aussi l'édition arabe. Date d'effet : 1er mars 2019. Montants par catégorie : A1 et A2 90 D ; A3 80 D ; B et ouvriers de 3e unité 75 D ; C, D et ouvriers des 1re et 2e unités 70 D. Texte lu sur l'édition arabe."
+      "note": "citation-key: decret2019-209\nJORT n° 20 du 8 mars 2019 ; p. 727 de l'édition arabe (sommaire), pagination française non établie. Intitulé français repris du visa du décret gouvernemental n° 2019-1133 (la notice porte un intitulé arabe). URL : édition arabe, seule renseignée par la notice (pdf_fr vide) ; le fichier 2019F/Jo0202019.pdf de pist.tn sert lui aussi l'édition arabe. Date d'effet : 1er mars 2019. Montants par catégorie : A1 et A2 90 D ; A3 80 D ; B et ouvriers de 3e unité 75 D ; C, D et ouvriers des 1re et 2e unités 70 D. Texte lu sur l'édition arabe.\nURL ARABE RETIRÉE DU FICHIER FRANÇAIS le 16/09/2026 : elle pointait https://www.pist.tn/jort/2019/2019A/Ja0202019.pdf, c'est-à-dire l'édition ARABE, ce que la convention interdit dans un references.json français (URL FR = champ pdf_fr). ATTENTION, MÊME PIÈGE : https://www.pist.tn/jort/2019/2019F/Jo0202019.pdf répond 200, mais sert l'édition ARABE — l'exemplaire local du corpus (PDFs/JORT/2019/fr/Jo0202019.pdf, 1 921 747 o, taille identique à celle servie en ligne) s'ouvre sur un sommaire en arabe. L'entrée française reste donc SANS URL ; l'entrée arabe homologue conserve l'adresse arabe."
     },
     {
       "id": "decret2019-1133",
@@ -3155,6 +3151,43 @@
       },
       "URL": "https://www.pist.tn/jort/1993/1993F/Jo05093.pdf",
       "note": "citation-key: loi93-64\nJORT n° 50 du 6 juillet 1993, p. 931. Métadonnées jort_cache.db (recid 112971). Texte lu (OCR du fascicule local, p. 931). Art. 1er : lois, décrets-lois, décrets et arrêtés publiés au JORT en langue arabe, et dans une autre langue à titre d'information seulement. Art. 2 : « Les textes législatifs et réglementaires sont exécutoires cinq jours après le dépôt du journal officiel dans lequel ils sont insérés, au siège du gouvernorat de Tunis. Le jour du dépôt n'est pas pris en considération dans le décompte du délai. » Al. 3 : les textes peuvent prévoir une exécution immédiate ou un délai plus long. Art. 3 : abroge le décret du 27 janvier 1883 et les textes l'ayant complété ou modifié, notamment les décrets du 8 septembre 1955 et du 13 septembre 1956."
+    },
+    {
+      "id": "loi2018-56-lf2019",
+      "type": "legislation",
+      "note": "citation-key: loi2018-56-lf2019\nDROIT DE CONSOMMATION (versement « droits de consommation », 16/09/2026) : JORT n° 104, p. 4548-4553 ; art. 62 p. 4548 (véhicules 8-9 places pour handicapés, tableau annexé à la loi n° 88-62), art. 69 p. 4550 (champ du droit pour les mélanges odoriférants Ex 33.02 ; suppression pour certains produits alimentaires), art. 80 p. 4553 (motocycles). Texte français lu dans PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_n_2018-56….pdf, pieds de page lus dans la couche texte ; LA PAGINATION EST CELLE DE L'ÉDITION FRANÇAISE — ne pas la « corriger » vers la pagination arabe. SANS URL CÔTÉ FRANÇAIS, ET C'EST VOULU : https://www.pist.tn/jort/2018/2018F/Jo1042018.pdf rend 404 (curl -k, en-tête serveur reçu, 16/09/2026) et jort_cache.db n'a pas de pdf_fr. Édition arabe, seule en ligne : https://www.pist.tn/jort/2018/2018A/Ja1042018.pdf. RÉFÉRENCE COMMUNE : citée par les livres « Rémunérations publiques » et « Fiscalité » — d'où son rangement au fonds commun. La clé loi-2018-56-lf-2019, créée par erreur le 16/09/2026 dans le livre Fiscalité, a été SUPPRIMÉE au profit de celle-ci.",
+      "title": "Loi n°2018-56 du 27 décembre 2018, portant loi de finances pour l'année 2019",
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            12,
+            27
+          ]
+        ]
+      },
+      "issue": "104",
+      "page": "4548-4553"
+    },
+    {
+      "id": "lf-2018",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-2018\nissue: 101\nJORT n° 101 du 19 décembre 2017, tome 160, ÉDITION FRANÇAISE ; la loi commence page 4268. Article 53 (institution de la contribution sociale de solidarité) et article 54 (déduction au titre du chef de famille portée à 300 D) en PAGE 4289 ; article 55 (enfant infirme, 1 200 → 2 000 D) en PAGE 4290 ; article 67 en page 4292, dont le § 4 fixe l'effet de l'article 54 « aux revenus et bénéfices réalisés à partir du 1er janvier 2019 ». Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. CORRECTION : le § 11.2 de la note documentaire plaçait les articles 54 et 55 tous deux en page 4289. Édition arabe : https://www.pist.tn/jort/2017/2017A/Ja1012017.pdf\nDROIT DE CONSOMMATION : art. 45, « Révision du droit de consommation », à partir de la p. 4281 (pied de page lu) : abroge et remplace EN ENTIER le tableau annexé à la loi n° 88-62 — deuxième refonte intégrale après celle de 2016. Art. 22 : ajoute un article 6 bis à la loi n° 88-62 (suspension du droit de consommation pour les véhicules tout terrain importés au profit des agences de voyages) ; PAGE NON ÉTABLIE (antérieure à la p. 4280). Commenté par la note commune n° 17/2018. Le champ « page » de cette entrée porte la pagination des art. 54-55 (IRPP) et n'est pas modifié.\nRÉFÉRENCE COMMUNE (16/09/2026) : citée par les livres « Fiscalité » et « Rémunérations publiques » ; remontée au fonds commun et retirée des deux bibliographies de livre. Elle figurait à l'identique dans les deux.",
+      "page": "4289-4290",
+      "title": "Loi n° 2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018",
+      "URL": "https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf",
+      "volume": "160",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            12,
+            18
+          ]
+        ]
+      },
+      "issue": "101"
     }
   ]
 }
