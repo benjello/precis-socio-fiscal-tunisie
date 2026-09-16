@@ -40,7 +40,15 @@ Méthode de résolution (base locale `../PDFs-legislation-tunisie/jort_cache.db`
 
    Ce n'est pas une formalité. Le 15/09/2026, un champ `number-of-pages` sur **une** entrée de type `report` faisait lever une `ValueError` à `csl_vers_zotero`, qui **abandonnait la conversion des 333 références** — donc tout rapatriement. Le défaut a dormi des mois parce que personne ne lançait jamais cette action. Un `dry-run` par section l'aurait vu au premier chapitre.
 
-7. **Rapatriement Zotero** : n'écris dans Zotero que sur **feu vert explicite** (action sortante, irréversible sur une bibliothèque partagée). La séquence est `permissions` → `verifier` → `dry-run` → `pousser-un` → `comparer` → `pousser-tout` → **`ranger`**.
+7. **Contrôle de rangement — à chaque clôture, en lecture seule.** Lance l'action `controle-rangement` du workflow `biblio-zotero`.
+
+   Ce n'est pas un doublon du `dry-run`. Celui-ci vérifie que la **conversion** vers Zotero fonctionne ; il ne dit rien du **rangement**. Ce sont deux défauts distincts, et le second a dérivé des mois sans que le premier ne le voie.
+
+   `ranger` fait `sorted(actuelles | voulues)` : il **ajoute** des collections et n'en retire aucune. Une référence devenue commune à plusieurs livres garde donc la collection du livre où elle est née, et chaque descente la redescend dans ce livre au lieu du fonds commun — le mécanisme qui a fait tomber le fonds commun à sept clés.
+
+   Le contrôle compare l'usage **réel** (les `@clé` de la prose, des tableaux engendrés et de l'annexe de glossaire) au rangement que porte Zotero, et rend quatre catégories : à déclasser, à ranger, sans citation, absente de Zotero. **Il n'écrit rien.** Rapporte ses chiffres ; le déclassement lui-même est une action sortante, qui demande un feu vert humain.
+
+8. **Rapatriement Zotero** : n'écris dans Zotero que sur **feu vert explicite** (action sortante, irréversible sur une bibliothèque partagée). La séquence est `permissions` → `verifier` → `dry-run` → `pousser-un` → `comparer` → `pousser-tout` → **`ranger`**.
 
    `ranger` n'est pas optionnel : un article créé par l'API arrive **sans collection** et sera vu comme « commun » à la descente suivante. C'est ce mécanisme qui a fait tomber le fonds commun à 7 clés.
 
