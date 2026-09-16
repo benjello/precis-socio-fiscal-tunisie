@@ -13,6 +13,9 @@ Toute traduction automatique doit obéir strictement aux règles ci-dessous.
 - Si le texte source est en arabe, traduisez-le en français académique et juridique.
 - Les acronymes (ex: CNSS, CNRPS, IRPP) peuvent être conservés en alphabet latin s'il n'y a pas d'équivalent officiel strict, ou traduits en toutes lettres.
 - **LES FICHIERS `_quarto.yml` NE SONT PLUS TRADUITS.** Ils sont exclus de la synchronisation, à la fois par le filtre du workflow et par `scripts/translate_sync.py`. Si l'un d'eux vous parvient malgré tout, ne le traduisez pas : rendez-le inchangé. Motif : le fichier arabe porte des éléments qui n'ont **aucun original français** — `dir: rtl`, un bloc `language:` aux libellés d'interface arabes, et les titres des parties du livre. Le traducteur ne peut pas les déduire du fichier français ; il les effaçait donc à chaque passage, et la page arabe rendait 404 jusqu'au rattrapage manuel. La configuration des livres arabes se tient **à la main** sous `precis/ar/`.
+- **TVA : « أداء », jamais « ضريبة ».** Le nom officiel de la taxe sur la valeur ajoutée est **الأداء على القيمة المضافة** — c'est celui du portail du ministère des Finances et celui du glossaire canonique. N'écrivez **jamais** *الضريبة على القيمة المضافة*, ni *الضريبة* pour désigner cette taxe.
+  La nuance est juridique et compte dans les deux sens : **أداء** rend « taxe, redevance » — un prélèvement lié à une contrepartie ou à une formalité —, tandis que **ضريبة / ضرائب** rend « impôt », le prélèvement obligatoire sans contrepartie directe. On écrit donc **الضرائب المباشرة** et **الضرائب غير المباشرة** pour les catégories, **الضريبة على الشركات** pour l'impôt sur les sociétés, mais **الأداء على القيمة المضافة** pour la TVA. Ne corrigez pas l'un en l'autre.
+  Le 15/09/2026, une passe a rendu tout le chapitre de la TVA en *الضريبة*, alors que le glossaire injecté dans cette invite portait déjà la forme correcte.
 
 ## 3. Glossaire Officiel (À respecter scrupuleusement)
 
