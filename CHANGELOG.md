@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.23.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.22.0...v1.23.0) (2026-09-16)
+
+
+### ✨ Nouveautés
+
+* **fiscalite:** ouvrir le chapitre des droits de consommation ([#253](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/253)) ([b6568ab](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/b6568ab2740353cd1ef697dcb9359aa3e390abb3))
+
+
+### 🐛 Corrections de bugs
+
+* **traduction:** imposer la recopie verbatim des ancres et des cibles de liens ([#256](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/256)) ([3d6062d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/3d6062d87be3d890efdac71ef92b765af7beb329))
+* **traduction:** rendre au droit de consommation son terme canonique en arabe ([#257](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/257)) ([8e179b3](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/8e179b3dcbf0c1e9df21104af626ef86c4b812f3))
+
 ## [1.22.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.21.0...v1.22.0) (2026-09-16)
 
 
