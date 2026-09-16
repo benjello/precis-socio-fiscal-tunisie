@@ -16,7 +16,7 @@ récit. Les données vont dans l'autre sens.
 | Circularité **ancre ↔ notion** | Le gate échoue si la prose ancre `#g-x` sans entrée (terminologue **avant**), mais ne rend que les notions qu'un livre ancre (terminologue **après**). Aucun ordre simple ne marche. |
 | Zotero **sans propriétaire** | Le bibliographe écrivait dans `references.json`, rien ne remontait, la descente écrasait. Mesuré : **119 clés** absentes de Zotero, une inbox de 1 592 lignes jamais vidée. |
 | `_quarto.yml` arabe **orphelin** | Chapitre FR ajouté → l'arabe est livré → personne ne le déclare → **404** silencieux. |
-| Des **rouges muets** | Le Checker AI échoue sur un format de réponse quand rendu et parité sont verts deux étapes plus haut. |
+| Des **rouges muets** | Le Checker AI échoue sur un format de réponse quand rendu et parité sont verts plus haut. Pire : sur une PR où l'arabe remplace une amorce, il lit l'asymétrie des diffs comme un « débordement » et **suggère de supprimer la traduction livrée**. |
 | La traduction **n'appartenait à personne** | Plafond de dépense, troncature, terminologie : aucun agent désigné pour lire un échec et le rattraper. |
 
 ## La chaîne
@@ -64,11 +64,20 @@ cinquante-deux. Après la rédaction qui les ancre, il en retient trente-deux.
 | Un chapitre arabe est déclaré | relecteur-ar | 404 silencieux |
 | Un échec de traduction est lu | relecteur-ar | on croit cassé ce qui est sain, ou l'inverse |
 
-## Deux règles de lecture, apprises à leurs dépens
+## Quatre règles de lecture, apprises à leurs dépens
 
 **Ne lis pas la conclusion d'un job, lis ses étapes.** `verify_translation.py` fait échouer
-dès que la réponse du Checker n'est pas exactement `OK` ; les gardes déterministes sont les
-étapes 8 (rendu) et 9 (parité).
+dès que la réponse du Checker n'est pas exactement `OK` ; les gardes déterministes sont
+**« Check FR/AR parity »** et **« Render the touched Arabic books »**.
+
+**Nomme les étapes, ne les numérote pas.** Cette note a elle-même dit « étapes 8 et 9 »
+jusqu'au 16/09/2026, jour où la garde déterministe se trouvait à l'étape **4**. Les numéros
+suivent le workflow ; les noms, non. Un agent qui cherche un numéro lit autre chose, ou rien.
+
+**Une divergence de parité peut se corriger côté FRANÇAIS.** Le 16/09/2026, une ancre
+apparaissait 1× en français et 2× en arabe : le traducteur avait lié une notion que la source
+laissait nue, et il avait raison. Le correctif tenait en une ligne de français. Tenir l'arabe
+pour fautif par défaut, c'est relancer une traduction déjà juste.
 
 **Mesure les codes de retour hors d'un tube.** `$?` après un tube mesure le dernier élément.
 Un gate déclaré vert sur cette base n'a jamais tourné.

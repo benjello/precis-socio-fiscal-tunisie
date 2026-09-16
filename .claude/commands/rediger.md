@@ -57,5 +57,5 @@ La fusion déclenche `translation-sync`, qui livre les `.qmd` arabes — mais **
 
 ## Rappels
 - Toujours `uv run` pour Python (jamais `python3` / `.venv` directement).
-- **Ne lis jamais la conclusion d'un job de traduction : lis ses étapes.** Le Checker AI échoue dès que sa réponse n'est pas exactement « OK », alors que le rendu et la parité sont verts deux étapes plus haut.
+- **Ne lis jamais la conclusion d'un job de traduction : lis ses étapes, et désigne-les par leur NOM.** Le Checker AI — étape « Run verification script » — échoue dès que sa réponse n'est pas exactement « OK », alors que les gardes déterministes, « Check FR/AR parity » et « Render the touched Arabic books », sont vertes. Ne compte pas les étapes : leurs numéros suivent le workflow, et cette consigne a elle-même dit « deux étapes plus haut » jusqu'au 16/09/2026, jour où la garde se trouvait à l'étape 4.
 - Si le ticket est mal cadré ou ambigu, signale-le et demande une précision avant de lancer la chaîne.
