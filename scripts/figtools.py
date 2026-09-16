@@ -22,8 +22,23 @@ from __future__ import annotations
 import datetime as _dt
 import functools
 from pathlib import Path
+from typing import TYPE_CHECKING
 
-import pandas as pd
+# `pandas` n'est PAS importé à l'exécution, à dessein — comme `matplotlib`,
+# `arabic_reshaper`, `itables` et `tunisia_data` plus bas, il l'est dans la seule
+# fonction qui s'en sert, `series()`.
+#
+# Sans cela le module entier est inimportable sans pandas, et les fonctions purement
+# textuelles qu'il porte — `date_deja_inscrite` — deviennent intestables : le job de
+# tests n'installe aucune dépendance, précisément pour qu'un test qui réclame un
+# paquet signale qu'il teste autre chose que ce qu'il annonce.
+#
+# La garde ci-dessous lie tout de même `pd` pour les annotations. `from __future__
+# import annotations` suffirait à l'exécution, les annotations n'étant alors jamais
+# évaluées ; mais le nom resterait non lié pour les vérificateurs de types et pour
+# tout ce qui appelle `typing.get_type_hints()`.
+if TYPE_CHECKING:  # pragma: no cover - jamais vrai à l'exécution
+    import pandas as pd
 
 # Cache versionné sous precis/ (jamais à la racine du repo) : autonomie de build.
 _CACHE = Path(__file__).resolve().parent.parent / "precis" / "_seriescache"
@@ -168,6 +183,8 @@ def series(series_id: str) -> pd.DataFrame:
             pass
     p = _CACHE / f"{series_id}.csv"
     if p.exists():
+        import pandas as pd  # import différé : voir l'en-tête du module
+
         return pd.read_csv(p)
     raise FileNotFoundError(
         f"série {series_id!r} absente du cache {p} — lancer figtools.refresh_cache()")
@@ -222,6 +239,42 @@ def source_line(*series_ids: str) -> str:
     return " — ".join(parts)
 
 
+def date_deja_inscrite(ancien_texte: str | None, entete_sans_date: list[str],
+                       corps: str) -> str | None:
+    """Rend la date du figdata existant si RIEN d'autre n'a changé, sinon `None`.
+
+    Fonction pure : elle reçoit le texte déjà écrit, et ne lit aucun fichier.
+
+    `None` — donc une date neuve — dès que le fichier est absent, que sa provenance
+    diffère (séries, sources, fiches, réserves, note) ou que ses données diffèrent.
+    La date ne survit qu'à un rendu strictement identique.
+    """
+    if not ancien_texte:
+        return None
+    lignes = ancien_texte.split("\n")
+    entete = []
+    for ligne in lignes:
+        if not ligne.startswith("#"):
+            break
+        entete.append(ligne)
+    if not entete:
+        return None
+    if entete[1:] != entete_sans_date:
+        return None
+    if "\n".join(lignes[len(entete):]) != corps:
+        return None
+    date = entete[0].rsplit(" ", 1)[-1].strip()
+    # Une date doit ressembler à une date. Sur un en-tête tronqué, `rsplit` rend le mot
+    # qui précède : « … généré le » donne « le », valeur non vide qui serait réécrite
+    # telle quelle dans le fichier — l'en-tête de provenance afficherait « généré le le ».
+    # Vérifier la forme couvre du même coup l'en-tête corrompu.
+    try:
+        _dt.date.fromisoformat(date)
+    except ValueError:
+        return None
+    return date
+
+
 def write_figdata(df: pd.DataFrame, out_csv: Path, *series_ids: str,
                   note: str | None = None, generated: str | None = None) -> Path:
     """Écrit le figdata téléchargeable, avec en-tête de provenance commenté + sidecar .yml.
@@ -250,19 +303,34 @@ def write_figdata(df: pd.DataFrame, out_csv: Path, *series_ids: str,
     # un shortcode Quarto non résolu (passé tel quel depuis un chunk) → date du jour
     if not generated or "{{" in generated:
         generated = _dt.date.today().isoformat()
-    stamp = generated
-    header = [
-        f"# Figure-data du précis socio-fiscal tunisien — généré le {stamp}",
+    entete_sans_date = [
         f"# séries (tunisia_data) : {', '.join(series_ids)}",
         f"# sources (citation) : {', '.join('@'+k for k in dict.fromkeys(keys))}",
         f"# fiches : {', '.join(fiches)}",
         f"# méthode/hypothèses : {', '.join(caveats)}",
     ]
     if note:
-        header.append(f"# note : {note}")
+        entete_sans_date.append(f"# note : {note}")
+    corps = df.to_csv(index=False)
+    # Un rendu qui ne change ni les données ni la provenance ne doit pas redater le
+    # fichier : sinon chaque `quarto render` salit le dépôt d'une vingtaine de figdata
+    # dont SEULE la date bouge, qu'il faut ensuite restaurer à la main avant tout
+    # commit. Le 16/09/2026, quatre restaurations en une matinée.
+    #
+    # La date n'est conservée que si l'en-tête HORS date est lui aussi inchangé. Une
+    # légende, une source ou une réserve modifiée doit redater : à défaut, l'en-tête
+    # de provenance — qui tient lieu de source dans un CSV publié et téléchargeable —
+    # mentirait sur la date de ce qu'il décrit.
+    try:
+        ancien = out_csv.read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError):
+        ancien = None
+    stamp = date_deja_inscrite(ancien, entete_sans_date, corps) or generated
+    header = [f"# Figure-data du précis socio-fiscal tunisien — généré le {stamp}"]
+    header += entete_sans_date
     with out_csv.open("w", encoding="utf-8", newline="") as f:
         f.write("\n".join(header) + "\n")
-        df.to_csv(f, index=False)
+        f.write(corps)
     # sidecar yaml (lisible machine)
     side = out_csv.with_suffix(out_csv.suffix + ".yml")
     side.write_text(
