@@ -176,6 +176,67 @@ def restore_urls(source_text, translated_text):
     return restaure
 
 
+ANCHOR_RE = re.compile(r"(\]\(#|\{#)([A-Za-z][A-Za-z0-9_-]*)")
+
+
+def restore_anchors(source_text, translated_text):
+    """Rétablit les ancres et cibles de liens dans leur forme d'origine.
+
+    Une ancre n'est pas de la prose : `](#g-entrepositaire)` et `{#tbl-dc-petroliers}`
+    doivent être identiques dans les deux langues par construction, puisque la cible
+    est définie une seule fois. Le modèle les FLÉCHIT pourtant : le 16 septembre 2026,
+    la passe du chapitre des droits de consommation a mis `#g-entrepositaire` au
+    pluriel — `#g-entrepositaires`, qui n'est ancré nulle part. Le renvoi arabe ne
+    pointait plus sur rien, le contrôle de parité a bloqué la PR #255, et le correctif
+    manuel était éphémère : la régénération suivante pouvait refléchir la même ancre.
+
+    ON RESTAURE LE NOM, ON GARDE LE PRÉFIXE DE LA CIBLE. `restore_urls` réémet l'URL
+    entière depuis la source ; ici ce serait dangereux, car le préfixe distingue un
+    LIEN (`](#…)`) d'une DÉFINITION (`{#…}`). Réimposer celui de la source
+    convertirait l'un en l'autre et casserait la syntaxe. Le nom seul suffit à défaire
+    le fléchissement, et ne peut pas produire de Markdown invalide.
+
+    DEUX ABSTENTIONS, et ce sont les cas qui comptent :
+      - les comptes diffèrent : la correspondance un-à-un n'est pas établie ;
+      - les préfixes diffèrent à position égale : la structure a changé, et une
+        restauration positionnelle attacherait un nom à la mauvaise forme.
+    Dans les deux cas on ne touche à rien et le contrôle de parité tranchera — mieux
+    vaut une divergence visible qu'une ancre restaurée au mauvais endroit.
+
+    ELLE SE JOURNALISE, comme `restore_urls` : muette quand il n'y a rien à faire,
+    elle annonce ses restaurations ET ses abstentions. Sans cela son effet serait
+    inattribuable, et l'on ne saurait pas dire si une passe est revenue saine parce
+    que cette fonction a réparé ou parce que le modèle n'avait rien abîmé.
+    """
+    src = ANCHOR_RE.findall(source_text)
+    dst = ANCHOR_RE.findall(translated_text)
+
+    if len(src) != len(dst):
+        print(f"  ancres : {len(src)} à la source, {len(dst)} dans la traduction — "
+              f"correspondance non établie, aucune restauration "
+              f"(le contrôle de parité tranchera).")
+        return translated_text
+
+    if [p for p, _ in src] != [p for p, _ in dst]:
+        print(f"  ancres : {len(src)} des deux côtés, mais les formes (lien / "
+              f"définition) ne correspondent pas — aucune restauration "
+              f"(le contrôle de parité tranchera).")
+        return translated_text
+
+    if src == dst:
+        return translated_text  # rien à faire : muette
+
+    abimees = sum(1 for (_, a), (_, b) in zip(src, dst) if a != b)
+    noms = iter(nom for _, nom in src)
+
+    def swap(match):
+        return f"{match.group(1)}{next(noms)}"
+
+    restaure = ANCHOR_RE.sub(swap, translated_text)
+    print(f"  ancres restaurées depuis la source : {abimees} sur {len(src)}.")
+    return restaure
+
+
 def get_git_diff(base_sha, head_sha, file_path):
     try:
         cmd = ["git", "diff", base_sha, head_sha, "--", file_path]
@@ -323,6 +384,13 @@ Voici l'ANCIENNE TRADUCTION CIBLE ({target_lang}) (avant tes modifications) :
 {old_target_text}
 ```
 {diff_section}
+RECOPIE VERBATIM, JAMAIS TRADUITE NI FLÉCHIE : les cibles de liens et les ancres
+(`](#g-entrepositaire)`, `{{#tbl-dc-petroliers}}`), les clés de citation `[@loi-88-62]` et
+leurs locateurs, les URL, les numéros de textes juridiques (« loi n° 88-62 », « décret
+n° 91-550 ») et le contenu des commentaires HTML `<!-- ... -->`. Ce ne sont pas de la
+prose : une cible de lien mise au pluriel ne pointe plus sur rien, et un commentaire
+corrompu se lit dans la source.
+
 Renvoie UNIQUEMENT le nouveau fichier cible mis à jour, sans aucun commentaire avant ou après.
 """
         else:
@@ -330,6 +398,13 @@ Renvoie UNIQUEMENT le nouveau fichier cible mis à jour, sans aucun commentaire 
 Voici le fichier source en {source_lang} à traduire en {target_lang}.
 S'il te plaît, traduis-le entièrement et renvoie UNIQUEMENT le code source traduit, sans aucun commentaire.
 Préserve TOUTES les balises Markdown, les blocs de code et la structure exacte.
+
+RECOPIE VERBATIM, JAMAIS TRADUITE NI FLÉCHIE : les cibles de liens et les ancres
+(`](#g-entrepositaire)`, `{{#tbl-dc-petroliers}}`), les clés de citation `[@loi-88-62]` et
+leurs locateurs, les URL, les numéros de textes juridiques (« loi n° 88-62 », « décret
+n° 91-550 ») et le contenu des commentaires HTML `<!-- ... -->`. Ce ne sont pas de la
+prose : une cible de lien mise au pluriel ne pointe plus sur rien, et un commentaire
+corrompu se lit dans la source.
 
 Fichier à traduire :
 ```markdown
@@ -383,6 +458,7 @@ Fichier à traduire :
                 
             translated_text = restore_locators(new_source_text, translated_text)
             translated_text = restore_urls(new_source_text, translated_text)
+            translated_text = restore_anchors(new_source_text, translated_text)
 
             # GARDE-FOU CONTRE LA TRADUCTION TRONQUÉE.
             #
