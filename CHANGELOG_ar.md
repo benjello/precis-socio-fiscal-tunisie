@@ -1,5 +1,18 @@
 # سجل التغييرات
 
+## [1.21.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.20.1...v1.21.0) (2026-09-16)
+
+
+### ✨ جديد
+
+* **الجباية:** كتابة جوهر نظام الأداء على القيمة المضافة ([#240](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/240)) ([7a45f42](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/7a45f42cef117ea2c0aa8131c3b2dd4523507b34))
+
+
+### 🐛 إصلاحات الأخطاء
+
+* **المراجع:** تسجيل « number-of-pages » في Extra، وفتح استعادة المراجع ([#239](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/239)) ([eab8a72](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/eab8a72403a66b6211090ea51ec92e27ca270700))
+* **الترجمة:** فرض « أداء » للأداء على القيمة المضافة، و « ضريبة » للضريبة ([#244](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/244)) ([13413b0](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/13413b04de9528d1e45f11ccc0809dca01a5638f))
+
 ## [1.20.1](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.20.0...v1.20.1) (2026-09-15)
 
 
