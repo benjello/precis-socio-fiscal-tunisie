@@ -55,6 +55,25 @@ tableaux:
       1er janvier 2007, énoncé par l'article 19 de la loi — seule date d'effet de loi de
       finances lue dans le texte pour ce chapitre.
 
+  en-vigueur-2023:
+    titre: Tableau des produits soumis au droit de consommation, état consolidé de 2023
+    ancre: tbl-dc-en-vigueur
+    lignes: 81
+    postes: 40
+    sources: [dgelf-code-tva-2023]
+    couverture: COMPLÈTE
+    couverture_detail: >-
+      Les quarante postes du tableau annexé, pages 92 à 96 du code consolidé de la TVA et
+      du droit de consommation, édition 2023, et les quatre-vingt-un tarifs qu'ils portent.
+      Relevé par extraction géométrique des coordonnées du PDF, puis CONTRÔLÉ POSTE PAR
+      POSTE contre une table de référence établie à la lecture des cinq images : quarante
+      postes, quatre-vingt-un tarifs, zéro écart. Les comptes seuls ne suffisaient pas —
+      une première extraction en rendait exactement quatre-vingt-un en rattachant des
+      tarifs au mauvais poste, faute d'avoir vu trois postes en tête de page.
+      AUCUNE DATE D'EFFET n'est portée : c'est un état consolidé, non une entrée en
+      vigueur. Les notes de bas de page rattachent chaque modification à sa loi de
+      finances ; elles ne sont pas dépouillées ici.
+
   petroliers:
     titre: Tarif du droit de consommation sur les produits pétroliers, 1988-2023
     ancre: tbl-dc-petroliers

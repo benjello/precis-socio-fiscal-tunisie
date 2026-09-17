@@ -284,11 +284,27 @@ Le troisième trait est d'ordre institutionnel, et il reste ouvert. Depuis les r
 
 ## Le tableau en vigueur, dans ses grandes masses
 
-L'état actuel se lit dans la version consolidée du code, non dans la loi de 1988 [@dgelf-code-tva-2023]. Sa physionomie diffère profondément de celle de 1988. Les produits alimentaires transformés et les boissons non alcoolisées y portent des taux modérés, de 10 à 40 % ; les boissons alcoolisées relèvent, selon les postes, d'un tarif spécifique ou d'un taux *ad valorem* ; le tabac reste taxé à un niveau élevé ; les matériaux de construction, la parfumerie et divers appareils ménagers y figurent à des taux échelonnés. La part la plus importante du tableau actuel, en volume budgétaire comme en visibilité publique, est un **barème applicable aux véhicules**, établi par cylindrée et distinguant les véhicules importés par les concessionnaires agréés de ceux importés par les autres personnes [@dgi-nc-17-2018].
+L'état actuel se lit dans la version consolidée du code, non dans la loi de 1988 [@dgelf-code-tva-2023]. Sa physionomie diffère profondément de celle de 1988. Les produits alimentaires transformés et les boissons non alcoolisées y portent des taux modérés, de 10 à 40 % ; les boissons alcoolisées relèvent, selon les postes, d'un tarif spécifique ou d'un taux *ad valorem* ; le tabac reste taxé à un niveau élevé ; les matériaux de construction, la parfumerie et divers appareils ménagers y figurent à des taux échelonnés. La part la plus importante du tableau actuel, en volume budgétaire comme en visibilité publique, est un **barème applicable aux véhicules**. Le tableau consolidé l'établit selon deux critères, le **mode d'allumage** et la **cylindrée** : six tranches pour l'allumage commandé, de 63 à 250 %, et sept pour l'allumage par compression, de 94 à 334 % [@dgelf-code-tva-2023]. La doctrine administrative de 2018 y ajoute une distinction selon l'importateur — concessionnaires agréés ou autres personnes — que le tableau consolidé ne porte pas en tant que telle [@dgi-nc-17-2018].
 
-<!-- TODO (rédacteur) : le contenu poste par poste du tableau en vigueur n'est pas dépouillé
-ici. Sa publication sous forme de tableau daté suppose la lecture systématique de la version
-consolidée et des lois de finances postérieures à 2018. -->
+Le tableau qui suit en donne le contenu **poste par poste**, tel que le porte la version consolidée. Il compte **quarante postes et quatre-vingt-un tarifs** : un poste peut en porter plusieurs, et deux d'entre eux à eux seuls en portent vingt-sept — les produits pétroliers et le barème des véhicules.
+
+: Tableau des produits soumis au droit de consommation, état consolidé de 2023 {#tbl-dc-en-vigueur}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../../scripts")
+import tarifs
+tarifs.imprime("tarifs/tarifs-releves-droits-consommation.csv", "en-vigueur-2023")
+```
+
+Source : @dgelf-code-tva-2023, tableau annexé, p. 92-96. **Aucune date d'effet n'est portée** : c'est un état consolidé, non une entrée en vigueur. Les désignations sont reproduites telles que le code les écrit, y compris ses inégalités de casse et de ponctuation.
+
+<!-- TODO (rédacteur) : le rattachement de chaque poste à la loi de finances qui l'a
+modifié depuis 2018 n'est pas fait. La version consolidée le donne en notes de bas de
+page — articles 69 de la LF 2019, 20, 21 et 22 de la LF 2021, 30, 62 et 65 de la LF 2022 —
+et ces notes n'ont pas été dépouillées. Le tableau ci-dessus est donc daté de son
+ÉTAT, non de ses composantes. -->
 
 ## Ce que rapportent les droits de consommation
 
