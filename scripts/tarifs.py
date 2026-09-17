@@ -46,6 +46,10 @@ TABLEAUX = {
         "champs": ["position", "produit", "1988", "1991", "1999", "Consolidé 2023"],
         "entetes": ["Position", "Produit", "1988", "1991", "1999", "Consolidé 2023"],
     },
+    "en-vigueur-2023": {
+        "champs": ["position", "produit", "Droit de consommation"],
+        "entetes": ["Position", "Désignation des produits", "Droit de consommation"],
+    },
 }
 
 
