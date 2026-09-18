@@ -3193,6 +3193,72 @@
         ]
       },
       "issue": "101"
+    },
+    {
+      "id": "cnss-chiffres",
+      "type": "report",
+      "note": "citation-key: cnss-chiffres",
+      "title": "La CNSS en chiffres — données statistiques",
+      "publisher": "Caisse nationale de sécurité sociale (CNSS), Tunisie",
+      "URL": "https://www.cnss.tn/fr/qui_sommes_nous/-/asset_publisher/PTz2/content/la-cnss-en-chiffres",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "id": "minfin-ep-2020",
+      "type": "report",
+      "note": "citation-key: minfin-ep-2020",
+      "publisher": "وزارة الاقتصاد والمالية ودعم الاستثمار، تونس",
+      "publisher-place": "تونس",
+      "title": "التقرير حول المنشآت العمومية (الملحق 9 لمشروع قانون المالية لسنة 2020)",
+      "URL": "http://www.gbo.tn/sites/default/files/2021-02/Annexe_9_LF2020-Entreprises_publiques.pdf",
+      "author": [
+        {
+          "literal": "وزارة الاقتصاد والمالية ودعم الاستثمار، تونس"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      }
+    },
+    {
+      "id": "minfin-ep",
+      "type": "report",
+      "note": "citation-key: minfin-ep",
+      "publisher": "وزارة الاقتصاد والمالية ودعم الاستثمار، تونس",
+      "publisher-place": "تونس",
+      "title": "التقرير حول المنشآت العمومية (الملحق 9 لمشروع قانون المالية لسنة 2021)",
+      "URL": "http://www.gbo.tn/sites/default/files/2021-04/Annexe%209%20LF2021%20Entreprises%20Publiques.pdf",
+      "author": [
+        {
+          "literal": "وزارة الاقتصاد والمالية ودعم الاستثمار، تونس"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
     }
   ]
 }
