@@ -234,6 +234,39 @@ figtools.figure_tabs(
 )
 ```
 
+Ces montants étant nominaux, ils ne disent pas ce qu'ils valent. Rapportés à l'indice des prix, ils racontent une autre histoire.
+
+```{python}
+#| label: fig-augmentations-reel
+#| fig-cap: "Augmentations cumulées par catégorie, en dinars constants de 2015 (sources JORT et BCT)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import augmentations as fa
+import figtools
+figtools.figure_tabs(
+    fa.fig_augmentations_reel(), fa.table_reel(),
+    "augmentations-fonction-publique", "bct-ipc-base2015",
+    slug="fig_augmentations_reel",
+    caption="Augmentations générales cumulées par catégorie, en dinars constants de 2015",
+    note_lecture=(
+        "**La même chose que @fig-augmentations, déflatée.** En dinars courants le cumul "
+        "ne fait que monter ; en pouvoir d'achat il **plafonne puis recule**. Pour la "
+        "catégorie A1, le cumul atteint **423,6 dinars constants au 1^er^ octobre 2022**, "
+        "puis retombe à **418,6 au 1^er^ janvier 2024** — alors que le cumul nominal, lui, "
+        "passe de 640 à 740 dinars. L'inflation de l'intervalle a mangé davantage que la "
+        "tranche servie, et toutes les catégories reculent entre ces deux dates.\n\n"
+        "**Trois réserves.** La courbe **s'arrête en 2024** : l'indice des prix n'existe "
+        "pas pour les années à venir, si bien que les tranches programmées jusqu'en 2028 "
+        "n'ont pas d'équivalent réel — elles ne sont pas omises, elles sont "
+        "**indéterminées**. Les dates en cours d'année sont déflatées par l'indice "
+        "**annuel moyen**, ce qui est une approximation. Enfin l'année 2015 vaut 100 "
+        "**par définition** de la base de l'indice, aucune publication ne la tabulant."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
 Les montants sont ceux que fixent les décrets, en dinars par mois et par catégorie ; aucun des décrets consultés n'exprime l'augmentation en pourcentage. Le décret n°2019-209 a été consulté dans l'édition arabe du *Journal officiel*, de même que l'article 15 de la loi de finances pour 2026. Le décret n°2026-63 est le premier de la série à déclarer son augmentation « applicable aux pensions des retraités conformément à la législation en vigueur » [@decret2026-63, art. 4] ; le livre « Retraites » expose la péréquation qui transmet ces augmentations aux pensions. Avant 2015, les augmentations étaient accordées par corps, sur l'indemnité propre à chacun, en tranches annuelles de cycles triennaux.
 
 Pour ce seul cycle 2023-2025, le procès-verbal d'accord publié par l'UGTT éclaire la ventilation de l'augmentation par sous-catégorie statutaire. Ces montants sont rassemblés dans l'encadré ci-dessous.
@@ -296,6 +329,41 @@ figtools.figure_tabs(
         "sont en **dinars courants**, non déflatés : le rapport entre catégories se lit, "
         "l'évolution de niveau exige un indice de prix. Enfin chaque catégorie est une "
         "**moyenne** recouvrant des corps très hétérogènes."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
+Ces montants sont nominaux. Déflatés par l'indice des prix, ils renversent la lecture.
+
+```{python}
+#| label: fig-salaires-categories-reel
+#| fig-cap: "Salaire brut par catégorie statutaire, en dinars constants de 2015 (sources INS et BCT)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import salaires_categories as sc
+import figtools
+figtools.figure_tabs(
+    sc.fig_salaires_reel(), sc.salaires_reel_table(),
+    "ins-salaire-par-categorie", "bct-ipc-base2015",
+    slug="fig_salaires_categories_reel",
+    caption="Salaire mensuel brut par catégorie statutaire, en dinars constants de 2015",
+    note_lecture=(
+        "**La même grille que @fig-salaires-categories, déflatée** — et le sens s'inverse "
+        "pour le haut de l'échelle. En dinars courants toutes les catégories progressent ; "
+        "en pouvoir d'achat, entre 2015 et 2020 :\n\n"
+        "- **A1 : −3,2 %** — la catégorie de conception **perd** du pouvoir d'achat, après "
+        "un creux marqué en 2018 ;\n"
+        "- **A2 +13,6 %**, **A3 +18,4 %**, **D +19,4 %**, **C +25,2 %** ;\n"
+        "- **B : +30,7 %**, la plus forte progression réelle.\n\n"
+        "Le resserrement de la grille n'est donc pas un simple rattrapage nominal du bas : "
+        "c'est un **déclassement réel du haut**, mécanique dès lors que les augmentations "
+        "sont servies en dinars et non en pourcentage (@tbl-augmentations-montants).\n\n"
+        "**Réserves.** Déflateur : indice des prix à la consommation familiale, base 100 "
+        "en 2015, publié par la Banque centrale ; l'année de base vaut 100 **par "
+        "définition**, aucune publication ne la tabulant. Les salaires restent des "
+        "**moyennes** par catégorie, recouvrant des corps hétérogènes."
     ),
     generated="{{< meta date >}}",
 )

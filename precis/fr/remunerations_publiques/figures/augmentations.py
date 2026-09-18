@@ -29,6 +29,7 @@ import augmentations as aug  # noqa: E402
 HERE = Path(__file__).resolve().parent
 CSV = HERE.parent / "augmentations" / "augmentations-fonction-publique.csv"
 SERIE = "augmentations-fonction-publique"
+SERIE_IPC = "bct-ipc-base2015"   # indice des prix, base 100 = 2015
 
 # Les six catégories statutaires. Les postes d'ouvriers sont écartés du graphique : leur
 # découpage change d'un décret à l'autre (tantôt en bloc, tantôt la 3e unité à part), si
@@ -75,6 +76,10 @@ _L = {
     "y": {"fr": "Cumul des augmentations (dinars par mois)",
           "ar": "تراكم الزيادات (دينار في الشهر)"},
     "col_date": {"fr": "Date d'effet", "ar": "تاريخ السريان"},
+    "titre_reel": {"fr": "Augmentations cumulées par catégorie, en dinars constants de 2015",
+                   "ar": "الزيادات المتراكمة حسب الصنف، بالدينار الثابت لسنة 2015"},
+    "y_reel": {"fr": "Cumul en dinars constants de 2015 (par mois)",
+               "ar": "التراكم بالدينار الثابت لسنة 2015 (في الشهر)"},
 }
 
 
@@ -96,6 +101,63 @@ def table():
         {_lab("col_date"): aug.formate_date(d).replace("^er^", "er"),
          **{c: cumuls[c][d] for c in CATEGORIES}}
         for d in dates])
+
+
+def _ipc():
+    """{année: indice base 100 = 2015}."""
+    return {int(r.annee): float(r.valeur) for r in figtools.series(SERIE_IPC).itertuples()}
+
+
+def _serie_reelle(rangs, categorie, ipc):
+    """(date, cumul en dinars constants de 2015) — les années sans indice sont ÉCARTÉES.
+
+    L'indice s'arrête en 2024 : les tranches programmées jusqu'en 2028 n'ont pas de prix,
+    et il n'est pas question d'en supposer. La courbe réelle s'arrête donc avant la
+    nominale, et c'est un fait à montrer, non un trou à combler.
+    """
+    return [(d, c * 100 / ipc[int(d[:4])])
+            for d, c in aug.serie_cumulee(rangs, categorie) if int(d[:4]) in ipc]
+
+
+def table_reel():
+    """Tableau (onglet Données) : cumul en dinars constants de 2015, par catégorie."""
+    import pandas as pd
+    rangs, ipc = _rangs(), _ipc()
+    dates = [d for d in aug.dates_presentes(rangs) if int(d[:4]) in ipc]
+    cum = {c: dict(_serie_reelle(rangs, c, ipc)) for c in CATEGORIES}
+    return pd.DataFrame([
+        {_lab("col_date"): aug.formate_date(d).replace("^er^", "er"),
+         **{c: round(cum[c][d], 1) for c in CATEGORIES}}
+        for d in dates])
+
+
+def fig_augmentations_reel():
+    """Le cumul déflaté — ce que la courbe nominale ne peut pas dire.
+
+    En dinars courants le cumul ne fait que monter. Déflaté, il PLAFONNE puis RECULE :
+    pour A1, 423,6 D constants en octobre 2022 puis 418,6 D en janvier 2024, alors que le
+    cumul nominal passe de 640 à 740 D. L'inflation a mangé davantage que la tranche.
+    """
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    rangs, ipc = _rangs(), _ipc()
+    fig, ax = plt.subplots(figsize=(9.5, 5.5))
+    for libelle, cat in _TRACEES:
+        serie = _serie_reelle(rangs, cat, ipc)
+        if not serie:
+            continue
+        x = [int(d[:4]) + (int(d[5:7]) - 1) / 12 for d, _ in serie]
+        y = [v for _, v in serie]
+        ax.step(x, y, where="post", color=_COULEURS[libelle], lw=2, label=ft(libelle))
+        ax.scatter(x, y, color=_COULEURS[libelle], s=22, zorder=4)
+    ax.set_xlabel(ft(_lab("x")))
+    ax.set_ylabel(ft(_lab("y_reel")))
+    ax.set_title(ft(_lab("titre_reel")))
+    ax.set_ylim(bottom=0)
+    ax.grid(True, alpha=0.3)
+    ax.legend(loc="upper left", fontsize=9, title="")
+    fig.tight_layout()
+    return fig
 
 
 def fig_augmentations():

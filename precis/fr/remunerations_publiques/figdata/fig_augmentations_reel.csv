@@ -1,0 +1,18 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-18
+# séries (tunisia_data) : augmentations-fonction-publique, bct-ipc-base2015
+# sources (citation) : @decret2015-462, @decret2016-1, @decret2019-209, @decret2019-1133, @decret2020-767, @decret-2022-797, @decret2026-63, @bct-ra
+# fiches : sources/bct-archives.md
+# méthode/hypothèses : Les décrets fixent des montants en dinars, jamais des pourcentages. Le cumul tracé additionne les tranches acquises : il est calculé, et ne figure comme tel dans aucun texte. Le décret n° 2015-462 n'énonce aucune date d'effet et reste hors de la série. Avant 2015, les augmentations étaient accordées par corps et ne se rangent pas par catégorie., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant six rapports, chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. S'ARRÊTE EN 2024 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Augmentations générales cumulées par catégorie, en dinars constants de 2015
+Date d'effet,A1,A2,A3,B,C,D
+1er janvier 2016,57.9,57.9,53.1,48.3,48.3,48.3
+1er juillet 2016,106.2,106.2,96.5,91.7,82.0,82.0
+1er janvier 2017,155.8,155.8,142.1,132.9,123.7,123.7
+1er avril 2017,201.6,201.6,183.3,174.2,155.8,155.8
+1er avril 2018,230.6,230.6,209.2,200.7,175.1,175.1
+1er mars 2019,288.0,288.0,260.0,248.0,220.0,220.0
+1er juillet 2019,320.0,320.0,292.0,276.0,244.0,244.0
+1er janvier 2020,340.9,340.9,314.4,295.5,257.6,257.6
+1er août 2020,409.1,409.1,371.2,348.5,310.6,310.6
+1er octobre 2022,423.6,416.9,372.6,350.8,314.4,314.4
+1er janvier 2024,418.6,407.2,359.7,339.4,305.4,305.4

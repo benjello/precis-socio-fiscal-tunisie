@@ -239,3 +239,35 @@
     بين الأصناف. متوسّطات حسب الصنف تُخفي أسلاكاً شديدة التباين. المجال: الموظفون
     وحدهم، ومن ثمّ عدد أقلّ من مجموع الوظيفة العمومية. تنتهي السلسلة سنة 2020 لا 2021.'
   fiche: sources/ins-fonction-publique-salaires-2010-2021.md
+- id: bct-ipc-base2015
+  titre: Indice des prix à la consommation, base 100 = 2015, 2015-2024
+  sources:
+  - bct-ra
+  build: scripts/extract_bct_ipc.py:main
+  raw:
+  - data/raw/bct-archives/109
+  output: data/processed/bct-archives/ipc_base2015.csv
+  unite: indice base 100 = 2015
+  perimetre: prix à la consommation familiale, ensemble des ménages tunisiens
+  caveats: 'EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l''intitulé du BSF («
+    base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir
+    docs/tables-a-extraire-pdf.md §1. L''ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION,
+    non lue : aucun rapport ne tabule son année de base, tous ne publiant que les
+    millésimes récents. Série RECONSTITUÉE en recollant six rapports, chacun n''en
+    publiant que trois millésimes ; toutes les années communes concordent, et le script
+    LÈVE en cas de divergence — un indice de prix ne se révise pas d''une publication
+    à l''autre, contrairement aux effectifs. S''ARRÊTE EN 2024 : aucune déflation
+    n''est possible au-delà, ce qui laisse sans équivalent réel les tranches d''augmentation
+    programmées jusqu''en 2028. Déflater une date en cours d''année par l''indice
+    ANNUEL MOYEN est une approximation.'
+  titre_ar: مؤشر أسعار الاستهلاك، أساس 100 = 2015، 2015-2024
+  unite_ar: مؤشر أساس 100 = 2015
+  perimetre_ar: أسعار الاستهلاك العائلي، مجموع الأسر التونسية
+  caveats_ar: 'مستخرج من التقرير السنوي لا من النشرة: عنوان النشرة («أساس 100 سنة
+    2010») متقادم وقيمها الحديثة على أساس 2015. سنة الأساس 2015 = 100 موضوعة بالتعريف
+    لا مقروءة، إذ لا يورد أيّ تقرير سنة أساسه. سلسلة معاد تركيبها من ستة تقارير، ينشر
+    كلّ منها ثلاث سنوات فقط؛ وتتطابق كلّ السنوات المشتركة، ويتوقّف النصّ البرمجي عند
+    أيّ اختلاف لأنّ مؤشّر الأسعار لا يُراجَع بين نشرة وأخرى. تنتهي السلسلة سنة 2024،
+    فلا إمكان لأيّ تصحيح للأسعار بعدها. وتصحيح تاريخ داخل السنة بالمؤشّر السنوي المتوسّط
+    تقريبٌ.'
+  fiche: sources/bct-archives.md

@@ -1,0 +1,13 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-18
+# séries (tunisia_data) : ins-salaire-par-categorie, bct-ipc-base2015
+# sources (citation) : @ins-fonction-publique-2021, @bct-ra
+# fiches : sources/ins-fonction-publique-salaires-2010-2021.md, sources/bct-archives.md
+# méthode/hypothèses : ÉTIQUETTE CORRIGÉE : le tableau publié nomme sa troisième ligne « Catégorie A2 » en français alors que l'arabe y écrit « أ3 » ; le libellé A2 y paraît deux fois et A3 jamais. Les lignes sont rapprochées par position et l'étiquette rétablie — le CSV s'écarte donc sciemment du libellé publié. Montants en dinars COURANTS, non déflatés : une évolution de niveau ne se lit pas sans indice de prix, un rapport entre catégories se lit. Moyennes par catégorie, qui recouvrent des corps très hétérogènes. Champ : fonctionnaires seuls, d'où un effectif inférieur à celui de la fonction publique. La série s'arrête en 2020, non en 2021 comme celles des effectifs., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant six rapports, chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. S'ARRÊTE EN 2024 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Salaire mensuel brut par catégorie statutaire, en dinars constants de 2015
+Année,A1,A2,A3,B,C,D
+2015,2446.6,1655.2,1368.9,1237.5,1141.9,1144.1
+2016,2373.1,1780.7,1463.9,1415.2,1350.3,1135.2
+2017,2327.2,1678.7,1376.4,1328.0,1277.9,1078.6
+2018,2187.4,1621.3,1349.7,1350.9,1244.9,1107.2
+2019,2263.4,1818.2,1535.8,1541.0,1383.7,1316.1
+2020,2368.2,1879.8,1620.7,1617.2,1430.0,1366.4
