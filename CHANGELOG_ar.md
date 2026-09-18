@@ -1,5 +1,15 @@
 # سجل التغييرات
 
+## [1.25.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.24.0...v1.25.0) (2026-09-18)
+
+
+### ✨ جديد
+
+* **الأجور:** الأجر حسب الفئة ووزن التشغيل العمومي ([f5fb0f9](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/f5fb0f9d240a9abb4049a8c6f79f38e5b1001fee))
+* **الأجور:** الشكلان بالدينار الثابت، وما يقلبانه ([620e16d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/620e16d6bf652ac30ce036f2f71c8db110b19204))
+* **الأجور:** إظهار التوزيع حسب الوزارة، وما لا يقوله ([ee46784](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/ee46784cdcbc90270763c8f55d472aa9b8a8a29e))
+* **الأجور:** إخراج الزيادات من النص، وتقصير عناوينها ([c85a730](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/c85a7308a14f985af417bab8c9623846262bfd22))
+
 ## [1.24.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.23.0...v1.24.0) (2026-09-18)
 
 
