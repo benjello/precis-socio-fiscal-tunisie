@@ -18,6 +18,41 @@ CITATION_RE = re.compile(r"\[@([A-Za-z][A-Za-z0-9_-]*),\s*([^\]]+)\]")
 SEUIL_TRONCATURE = 0.6
 ARABIC_RE = re.compile(r"[\u0600-\u06FF]")
 
+# Codes et mentions que l'API renvoie sur des pannes PASSAG\u00C8RES, o\u00F9 r\u00E9essayer a un sens.
+ERREURS_PASSAGERES = (
+    "503", "UNAVAILABLE", "429", "RESOURCE_EXHAUSTED", "overloaded",
+    "500", "INTERNAL", "502", "504", "DEADLINE_EXCEEDED",
+)
+
+# Mentions d'une limite DURE, qu'aucune attente ne l\u00E8vera. Le mot \u00AB quota \u00BB seul en est
+# volontairement ABSENT : un quota par minute est bel et bien passager, et l'inclure
+# ferait abandonner des appels qu'il fallait r\u00E9essayer \u2014 le rem\u00E8de serait pire que le mal.
+ERREURS_DURES = (
+    "spending cap", "spend cap", "billing", "exceeded its monthly",
+)
+
+
+def est_transitoire(msg: str) -> bool:
+    """Dit si r\u00E9essayer cet appel a une chance d'aboutir.
+
+    POURQUOI CETTE FONCTION EXISTE. Gemini renvoie `429 RESOURCE_EXHAUSTED` pour DEUX
+    situations oppos\u00E9es, sans les distinguer : un d\u00E9passement de d\u00E9bit, qui se r\u00E9sorbe en
+    quelques secondes, et un PLAFOND DE D\u00C9PENSE mensuel, qu'aucune attente ne l\u00E8vera.
+
+    Le 18 septembre 2026, le plafond a \u00E9t\u00E9 pris pour un d\u00E9bit. Le script a r\u00E9essay\u00E9
+    quatre fois par fichier sur six fichiers \u2014 vingt-quatre appels vou\u00E9s \u00E0 l'\u00E9chec \u2014 et,
+    plus grave, il a noy\u00E9 la vraie cause sous quatre lignes \u00AB erreur transitoire \u00BB par
+    fichier. Le journal annon\u00E7ait une attente ; il fallait lire la derni\u00E8re ligne pour
+    d\u00E9couvrir un plafond atteint. Le diagnostic en a \u00E9t\u00E9 retard\u00E9 d'autant.
+
+    La limite dure l'emporte donc sur le code de statut : un message qui parle de
+    plafond ou de facturation n'est pas transitoire, quel que soit le 429 qui l'escorte.
+    """
+    bas = msg.lower()
+    if any(s in bas for s in ERREURS_DURES):
+        return False
+    return any(s in msg for s in ERREURS_PASSAGERES)
+
 
 def fichier_a_traduire(chemin):
     """Dit si un fichier relève de la traduction automatique.
@@ -436,11 +471,13 @@ Fichier à traduire :
                     break
                 except Exception as api_err:
                     msg = str(api_err)
-                    transient = any(s in msg for s in (
-                        "503", "UNAVAILABLE", "429", "RESOURCE_EXHAUSTED", "overloaded",
-                        "500", "INTERNAL", "502", "504", "DEADLINE_EXCEEDED",
-                    ))
-                    if not transient or attempt == max_attempts:
+                    if not est_transitoire(msg):
+                        # Limite dure : on abandonne SANS attendre, et on dit pourquoi
+                        # en clair — c'est la ligne que le journal doit donner d'emblée.
+                        if any(s in msg.lower() for s in ERREURS_DURES):
+                            print(f"  {file_path}: LIMITE DURE, aucun réessai — {msg[:200]}")
+                        raise
+                    if attempt == max_attempts:
                         raise
                     wait = min(60, 5 * (2 ** (attempt - 1)))  # 5,10,20,40,60s
                     print(f"  {file_path}: erreur transitoire ({msg[:60]}…), retry {attempt}/{max_attempts - 1} dans {wait}s")
