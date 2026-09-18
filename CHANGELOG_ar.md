@@ -1,5 +1,17 @@
 # سجل التغييرات
 
+## [1.24.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.23.0...v1.24.0) (2026-09-18)
+
+
+### ✨ جديد
+
+* **الجباية:** استعراض الجدول الساري المفعول للمعلوم على الاستهلاك ([#261](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/261)) ([f64016f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/f64016f6507a0ab7577fb737c5e72d7804bd6644))
+
+
+### 🐛 إصلاحات الأخطاء
+
+* **الأشكال:** مواءمة بيانات الأشكال العربية مع مصادرها ([#259](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/259)) ([ae069f5](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/ae069f5fdbe8005b988595b568dd988c496423d5))
+
 ## [1.23.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.22.0...v1.23.0) (2026-09-16)
 
 
