@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.25.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.24.0...v1.25.0) (2026-09-18)
+
+
+### ✨ Nouveautés
+
+* **remunerations:** le salaire par catégorie et le poids de l'emploi public ([f5fb0f9](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/f5fb0f9d240a9abb4049a8c6f79f38e5b1001fee))
+* **remunerations:** les deux figures en dinars constants, et ce qu'elles renversent ([620e16d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/620e16d6bf652ac30ce036f2f71c8db110b19204))
+* **remunerations:** montrer la ventilation par ministère, et ce qu'elle ne dit pas ([ee46784](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/ee46784cdcbc90270763c8f55d472aa9b8a8a29e))
+* **remunerations:** sortir les augmentations de la prose, et raccourcir leurs titres ([c85a730](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/c85a7308a14f985af417bab8c9623846262bfd22))
+
 ## [1.24.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.23.0...v1.24.0) (2026-09-18)
 
 
