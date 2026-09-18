@@ -229,6 +229,37 @@ Pour situer le poids de ce régime, on renvoie aux agrégats présentés en intr
 
 L'enquête de l'INS sur les agents de la fonction publique [@ins-fonction-publique-2021] propose une ventilation des effectifs par ministère, sur la période 2015-2021, ainsi que des salaires moyens par ministère. Cette ventilation porte sur la fonction publique civile : les agents y sont entièrement répartis dans les catégories statutaires A1 à D, c'est-à-dire selon la grille du statut général, ce qui en fait une statistique du **régime indiciaire**. À ce titre, elle éclaire la répartition des agents indiciaires entre les administrations, mais elle appelle une réserve importante dès lors qu'on s'intéresse à certains ministères.
 
+```{python}
+#| label: fig-ministeres
+#| fig-cap: "Effectifs de la fonction publique par ministère, 2015-2021 (source INS)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import ministeres as mi
+import figtools
+figtools.figure_tabs(
+    mi.fig_ministeres(), mi.ministeres_table(), "ins-ministere-effectifs",
+    slug="fig_ministeres",
+    caption="Effectifs de la fonction publique par ministère, 2015-2021",
+    note_lecture=(
+        "Sept courbes seulement sur quatorze entités : l'Éducation pèse 196,7 milliers "
+        "d'agents contre 2,3 à la Présidence du gouvernement, et tracer les quatorze "
+        "écraserait les plus petites sur l'axe. **Les quatorze figurent dans l'onglet "
+        "Données.** La bande grisée signale la **rupture de périmètre** des collectivités "
+        "locales entre 2016 et 2017 : le saut n'y traduit pas un recrutement réel. Enfin, "
+        "la source ne donne qu'**une décimale** de 2015 à 2020 et **trois** en 2021 : les "
+        "très petits mouvements entre ces deux dernières années sont des artefacts "
+        "d'arrondi, non des évolutions."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
 Plusieurs ministères emploient en effet, **à côté de leurs agents indiciaires, des corps relevant d'un régime statutaire autonome** : les ministères de la Défense, de l'Intérieur et de la Justice comptent respectivement des militaires, des agents des forces de sécurité intérieure et des magistrats, qui sont régis par des statuts propres et des grilles distinctes de la grille indiciaire (voir [le régime statutaire autonome](_regime_statutaire_autonome.qmd)). Or ces corps n'entrent dans aucune des catégories A1 à D et n'apparaissent donc pas dans cette statistique. Le recoupement le confirme : pour le ministère de la Défense, la somme des agents classés de A1 à D coïncide avec le total des fonctionnaires que l'enquête lui rattache, ce qui établit que la population recensée est celle du personnel civil indiciaire, à l'exclusion des militaires de carrière. Les effectifs ministériels de l'INS recensent ainsi, pour ces ministères, leur personnel civil indiciaire — et non l'ensemble de leurs agents. Ils ne permettent donc pas d'évaluer le poids des corps à statut autonome, dont la documentation chiffrée fait défaut (voir [le régime statutaire autonome](_regime_statutaire_autonome.qmd)).
 
+Une seconde réserve tient à la **construction même de la série**. Les annexes annuelles de l'enquête ne retiennent pas d'une année sur l'autre la même nomenclature ministérielle : celle de 2017 ne compte que douze postes et regroupe la Défense, l'Intérieur et les collectivités locales dans une rubrique « autres ministères », tandis que celle de 2018 désigne les collectivités locales sous le nom de « communes » et que les intitulés composites — agriculture et ressources hydrauliques, équipement et habitat — apparaissent puis disparaissent au gré des remaniements. La série 2015-2021 présentée ici est la **reconstitution que l'INS établit par-dessus ces variations**, et non la juxtaposition des décomptes annuels tels qu'ils ont été publiés. Elle se recoupe avec les annexes partout où les deux se laissent comparer, mais elle ne doit pas être lue comme une suite de relevés homogènes : la ventilation par ministère supporte mal la comparaison fine d'une année à l'autre, et c'est sur les ordres de grandeur et les tendances longues qu'elle est fiable.
+
+Une dernière observation reste **sans explication documentée**. Les effectifs rattachés au ministère de la Défense progressent de près de 35 % entre 2015 et 2018, passant d'environ 63 000 à près de 85 000 agents — une progression corroborée par deux publications distinctes de l'INS, les annexes annuelles et la série d'ensemble [@ins-fonction-publique-2021]. Or le champ de l'enquête exclut les militaires de carrière : cette croissance porte donc sur le personnel **civil** du ministère. Aucune des sources consultées n'en rend compte, et le présent précis ne la commente pas au-delà de ce constat.
+
 <!-- TODO : construire, si des données ventilées par régime deviennent disponibles, une série propre au régime indiciaire (effectifs, masse salariale). -->
+<!-- TODO (documentaliste) : chercher ce qui explique la hausse des effectifs civils de la Défense entre 2015 et 2018 (+35 %) — rapports d'activité du ministère, lois de finances, transferts de personnel depuis un autre ministère. Réserve écrite en attendant. -->

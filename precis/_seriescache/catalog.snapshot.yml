@@ -144,3 +144,32 @@
     ليست كلّها مقدَّرة، انظر عمود valorise
   caveats: sources/gbo-depenses-fiscales.md
   fiche: sources/gbo-depenses-fiscales.md
+- id: ins-ministere-effectifs
+  titre: Effectifs de la fonction publique par ministère, 2015-2021
+  sources:
+  - ins-fonction-publique-2021
+  build: scripts/clean_ins_fonction_publique.py:clean_ministere_effectifs
+  raw:
+  - data/raw/ins-fonction-publique-salaires-2010-2021/tab11.xlsx
+  output: data/processed/ins-fonction-publique-salaires-2010-2021/ministere_effectifs.csv
+  unite: milliers d'agents
+  perimetre: 'fonction publique civile — quatorze entités : onze ministères, Présidence
+    du gouvernement, collectivités locales, autres établissements'
+  caveats: série reconstituée par l'INS par-dessus une nomenclature annuelle mouvante
+    (l'annexe 2017 replie Défense, Intérieur et collectivités locales dans « Autres
+    ministères » ; l'annexe 2018 les renomme « Communes ») ; rupture de périmètre
+    des collectivités locales 2016→2017 ; la colonne 2021 porte trois décimales contre
+    une pour 2015-2020, d'où de faux petits mouvements 2020→2021 ; hausse de la Défense
+    de +35 % entre 2015 et 2018, corroborée mais inexpliquée, sur un champ qui exclut
+    les militaires de carrière
+  titre_ar: أعداد أعوان الوظيفة العمومية حسب الوزارة، 2015-2021
+  unite_ar: بآلاف الأعوان
+  perimetre_ar: 'الوظيفة العمومية المدنية — أربع عشرة وحدة: إحدى عشرة وزارة، ورئاسة
+    الحكومة، والجماعات المحلية، وهياكل أخرى'
+  caveats_ar: سلسلة أعاد المعهد الوطني للإحصاء بناءها فوق تسمية سنوية متغيّرة (ملحق
+    2017 يدمج الدفاع والداخلية والجماعات المحلية في «وزارات أخرى»، وملحق 2018 يسمّيها
+    «البلديات»)؛ انقطاع نطاق الجماعات المحلية 2016→2017؛ عمود 2021 بثلاث منازل عشرية
+    مقابل منزلة واحدة لـ2015-2020، ممّا يُحدث تحرّكات طفيفة وهمية بين 2020 و2021؛
+    ارتفاع الدفاع بنسبة 35٪ بين 2015 و2018، مؤكَّد لكن دون تفسير، في مجال يستثني العسكريين
+    المهنيين
+  fiche: sources/ins-fonction-publique-salaires-2010-2021.md
