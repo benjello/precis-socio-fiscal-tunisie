@@ -1,0 +1,83 @@
+# Manifeste du relevé des augmentations générales des salaires de la fonction publique.
+#
+# Fichier TENU À LA MAIN — il n'est produit par aucun générateur. Il accompagne
+# augmentations-fonction-publique.csv, dont il énonce la provenance et les limites.
+#
+# D'OÙ VIENNENT LES VALEURS. Des décrets eux-mêmes, lus au Journal officiel et cités un
+# par un. Rien n'est tiré d'une base de paramètres : aucun paramétrage d'augmentation
+# générale n'existe ailleurs, et l'arborescence des rémunérations publiques est organisée
+# par corps et par grade, non par catégorie statutaire.
+#
+# CE QUE LE CSV A CHANGÉ. Ces montants vivaient dans les cellules d'un tableau tapé à la
+# main, en prose, jusqu'à 330 caractères par cellule : « 2016-1, augmentation générale, à
+# chaque date : 60 D (A1, A2), 55 D (A3), 50 D (B, C, D, ouvriers) ». Le relevé déplie
+# cette prose en une ligne par (décret, date d'effet, catégorie), sans rien y ajouter.
+
+format: long
+cle_de_ligne: [texte, date_effet, categorie]
+
+colonnes:
+  cycle: cycle de négociation auquel le décret se rattache
+  texte: clé de citation du décret (résout dans precis/fr/references.json)
+  nature: augmentation générale, spécifique, ou majoration d'indemnités
+  date_effet: date d'effet énoncée par le décret ; vide si le texte n'en énonce aucune
+  categorie: catégorie statutaire (A1 à D), poste d'ouvriers, ou « tous »
+  montant: montant mensuel en dinars, tel que le décret le fixe
+  statut: lu (valeur lue dans le texte) ou « date non établie »
+
+sources:
+  - decret2015-462
+  - decret2016-1
+  - decret2019-209
+  - decret2019-1133
+  - decret2020-767
+  - decret-2022-797
+  - decret2026-63
+
+couverture: COMPLÈTE pour les décrets relevés, PARTIELLE dans le temps
+couverture_detail: >-
+  Les sept décrets couvrent les cycles de 2015 à 2028. AVANT 2015, le relevé s'arrête :
+  les augmentations étaient alors accordées par corps, sur l'indemnité propre à chacun,
+  en tranches annuelles de cycles triennaux — elles ne se laissent pas ranger par
+  catégorie statutaire et ne figurent donc pas ici. Le tableau ne doit pas être lu comme
+  une série continue depuis l'origine du régime indiciaire.
+
+reserves:
+
+  montants_et_non_taux: >-
+    Les décrets fixent des montants en dinars par mois et par catégorie ; AUCUN des
+    décrets consultés n'exprime l'augmentation en pourcentage. Un taux ne peut donc pas
+    être calculé sans lui adjoindre un traitement de référence, qui n'est pas dans ces
+    textes.
+
+  date_non_etablie: >-
+    Le décret n° 2015-462 n'énonce aucune date d'effet : sa ligne porte le statut
+    « date non établie », date_effet reste vide, et elle est écartée de toute série
+    datée plutôt que rattachée à une date supposée.
+
+  cumul_et_tranche: >-
+    Un même décret sert souvent plusieurs tranches à des dates successives, et le
+    montant porté est celui de LA TRANCHE, non le cumul. La série cumulée est calculée,
+    non lue : elle additionne les tranches acquises et ne figure comme telle dans aucun
+    texte.
+
+  ouvriers: >-
+    Le découpage des ouvriers varie d'un décret à l'autre : certains les visent en bloc
+    (« ouvriers »), d'autres distinguent la 3e unité du reste. Les deux formes sont
+    conservées telles que les textes les emploient, sans harmonisation — les réunir
+    ferait dire à un texte ce qu'il n'écrit pas.
+
+  2019_1133_deux_tranches: >-
+    Le décret n° 2019-1133 porte deux tranches de montants différents (40 D puis 50 D
+    pour A1, A2 et A3, par exemple) ; les deux dates sont distinguées, et la mention
+    « versées à compter du 1er janvier 2020 » concerne le versement, non la date d'effet.
+
+  2019_209_edition_arabe: >-
+    Le décret n° 2019-209 a été consulté dans l'édition arabe du Journal officiel, de
+    même que l'article 15 de la loi de finances pour 2026.
+
+titres_en_infobulle: >-
+  Les intitulés officiels de ces décrets font de 234 à 383 caractères. Ils ne sont pas
+  portés dans les cellules mais en infobulle, par un span Pandoc, la cellule n'affichant
+  que la forme courte (« Décret 2020-767 »). Les intitulés complets sont recopiés
+  verbatim depuis precis/fr/references.json dans scripts/augmentations.py.
