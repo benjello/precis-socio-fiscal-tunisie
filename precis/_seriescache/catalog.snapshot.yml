@@ -271,3 +271,221 @@
     فلا إمكان لأيّ تصحيح للأسعار بعدها. وتصحيح تاريخ داخل السنة بالمؤشّر السنوي المتوسّط
     تقريبٌ.'
   fiche: sources/bct-archives.md
+- id: cnss-effectifs
+  titre: 'CNSS : assurés sociaux actifs et pensionnés, tous régimes, 2000-2020'
+  sources:
+  - cnss-chiffres
+  build: scripts/extract_cnss_effectifs.py:evolution
+  raw:
+  - data/raw/caisses/cnss/2020/04_Évolution_des_assurés_sociaux_ensemble_des_régim.pdf
+  - data/raw/caisses/cnss/2018/Tab1-fr.pdf
+  output: data/processed/caisses/cnss_effectifs_2000_2020.csv
+  unite: personnes
+  perimetre: régimes gérés par la CNSS — hors fonction publique (CNRPS) et hors assurance
+    maladie (CNAM)
+  caveats: 'Valeurs lues sur des ÉTIQUETTES DE GRAPHIQUE, non dans un tableau : elles
+    sont réassemblées fragment par fragment, et deux ancres (2020 et 2000) contrôlent
+    le réassemblage. NE JAMAIS TRIER la série : les actifs BAISSENT en 2020 (2 353
+    743 après 2 402 269), un tri intervertirait les deux dernières années. Deux millésimes
+    ont été lus (2019 et 2020) : ils donnent les mêmes valeurs sur les vingt années
+    communes, aucune révision. Contrôle externe par le rapport du ministère des Finances
+    (2 345 / 2 364 / 2 401 milliers en 2017-2019).'
+  titre_ar: 'الصندوق الوطني للضمان الاجتماعي: المضمونون الاجتماعيون النشطون وأصحاب
+    الجرايات، كلّ الأنظمة، 2000-2020'
+  unite_ar: أشخاص
+  perimetre_ar: الأنظمة التي يديرها الصندوق الوطني للضمان الاجتماعي — باستثناء الوظيفة
+    العمومية (الصندوق الوطني للتقاعد والحيطة الاجتماعية) والتأمين على المرض
+  caveats_ar: 'القيم مقروءة من بطاقات رسم بياني لا من جدول: أُعيد تركيبها جزءاً جزءاً،
+    وتضبط ذلك مرساتان (2020 و2000). لا تُرتَّب السلسلة أبداً: يتراجع عدد النشطين سنة
+    2020 (2 353 743 بعد 2 402 269)، والترتيب يقلب السنتين الأخيرتين. قُرئت نسختان
+    (2019 و2020) فأعطتا القيم نفسها في السنوات العشرين المشتركة، دون أيّ مراجعة. ويؤكّدها
+    من خارج المصدر تقرير وزارة المالية (2 345 و2 364 و2 401 ألفاً بين 2017 و2019).'
+  fiche: sources/cnss-donnees-statistiques.md
+- id: caisses-effectifs-minfin
+  titre: 'CNRPS, CNSS et CNAM : affiliés, pensionnés, employeurs et agents d''après
+    le rapport sur les entreprises publiques, 2016-2021'
+  sources:
+  - minfin-ep
+  - minfin-ep-2020
+  build: scripts/extract_caisses_minfin.py:lire
+  raw:
+  - data/raw/caisses/minfin/annexe9_2022.pdf
+  - data/raw/caisses/minfin/rapport_ep_2023.pdf
+  output: data/processed/caisses/cnrps_cnss_effectifs_minfin.csv
+  unite: milliers de personnes
+  perimetre: CNRPS (agents de l'État et des collectivités publiques) et CNSS ; saisie
+    manuelle du texte du rapport
+  caveats: 'SEULE SOURCE IDENTIFIÉE POUR LES EFFECTIFS DE LA CNRPS : la caisse ne
+    publie aucune statistique. Valeurs ARRONDIES AU MILLIER dans le texte du rapport.
+    Prévisions et réalisations coexistent : la colonne statut les distingue, la colonne
+    millesime_source dit de quelle édition vient chaque valeur, et l''arbitrage retient
+    la plus récente — l''édition LF 2020 annonçait 779 milliers d''affiliés CNRPS
+    pour 2018, l''édition LF 2021 en constate 766. Les éditions à partir de la LF
+    2022 sont en arabe et n''ont pas été dépouillées.'
+  titre_ar: 'الصندوق الوطني للتقاعد والحيطة الاجتماعية والصندوق الوطني للضمان الاجتماعي:
+    المنخرطون وأصحاب الجرايات والمؤجّرون حسب التقرير حول المنشآت العمومية، 2016-2019'
+  unite_ar: بآلاف الأشخاص
+  perimetre_ar: الصندوق الوطني للتقاعد والحيطة الاجتماعية (أعوان الدولة والجماعات
+    العمومية) والصندوق الوطني للضمان الاجتماعي
+  caveats_ar: 'المصدر الوحيد المعروف لأعداد منخرطي الصندوق الوطني للتقاعد والحيطة
+    الاجتماعية، إذ لا ينشر الصندوق أيّ إحصائيات. القيم مقرَّبة إلى الألف. وتتجاور
+    التقديرات والإنجازات: يميّزها عمود الوضع، ويذكر عمود النسخة التقرير الذي جاءت
+    منه، ويُعتمد الأحدث — فقد أعلنت نسخة قانون المالية 2020 عدد 779 ألف منخرط لسنة
+    2018 بينما تُثبت نسخة 2021 عدد 766 ألفاً. النسختان العربيتان (2022 و2023) تعرضان
+    الفصل في الجدول عدد 23، ويُقرأ بالهندسة لا بترتيب التدفّق. ولا ترد أرقام الصندوق
+    الوطني للضمان الاجتماعي لسنة 2021: العمود فارغ، وتوضّح حاشية التقرير أنّ الصندوق
+    لم يمدّ الوزارة بمعطيات تلك السنة.'
+  fiche: sources/minfin-entreprises-publiques-caisses.md
+- id: cnss-effectifs-par-regime
+  titre: 'CNSS : assurés actifs et pensionnés par régime, 2000 et 2020'
+  sources:
+  - cnss-chiffres
+  build: scripts/extract_cnss_effectifs.py:par_regime
+  raw:
+  - data/raw/caisses/cnss/2020/05_Répartition_des_assurés_sociaux_par_régime.pdf
+  - data/raw/caisses/cnss/2020/06_Répartition_des_pensionnés_par_régime.pdf
+  output: data/processed/caisses/cnss_effectifs_par_regime.csv
+  unite: personnes
+  perimetre: huit régimes de la CNSS en 2020, six en 2000 (les régimes des artistes
+    et des travailleurs à faible revenu n'existaient pas)
+  caveats: 'DEUX DATES, PAS UNE SÉRIE : la caisse ne publie la ventilation par régime
+    qu''aux deux extrémités de la période ; le millésime 2019 n''en donne que les
+    pourcentages. L''attribution d''une légende à son année se fait par l''ABSCISSE,
+    jamais par la valeur — un régime peut décroître (salariés agricoles : 8 235 en
+    2000, 7 484 en 2020). Les libellés diffèrent d''une planche à l''autre dans la
+    source (« travailleurs à faible revenu » côté actifs, « faibles revenus » côté
+    pensionnés) et sont canonisés. ANOMALIE DE LA SOURCE en 2000 : les six légendes
+    totalisent 1 012 220 quand le total publié est 1 013 483 (écart 0,125 %), et une
+    part de 0,32 % du camembert n''a pas de légende. Le bouclage de 2020 est exact.'
+  titre_ar: 'الصندوق الوطني للضمان الاجتماعي: المضمونون النشطون وأصحاب الجرايات حسب
+    النظام، 2000 و2020'
+  unite_ar: أشخاص
+  perimetre_ar: ثمانية أنظمة سنة 2020، وستّة سنة 2000
+  caveats_ar: 'تاريخان لا سلسلة: لا ينشر الصندوق التوزيع حسب النظام إلّا لسنتَي 2000
+    و2020، ولا تعطي نسخة 2019 سوى النسب المائوية. تُنسب كلّ بطاقة إلى سنتها بالإحداثي
+    الأفقي لا بقيمتها، إذ يمكن لنظام أن يتراجع (الأجراء الفلاحيون: 8 235 سنة 2000
+    و7 484 سنة 2020). وتختلف التسميات بين اللوحتين في المصدر نفسه، فوُحِّدت. خلل داخل
+    المصدر سنة 2000: تبلغ الأنظمة الستّة 1 012 220 بينما المجموع المنشور 1 013 483
+    (فارق 0,125 %)، وتظهر حصّة 0,32 % من الرسم دون تسمية. أمّا سنة 2020 فالمجموع مطابق.'
+  fiche: sources/cnss-donnees-statistiques.md
+- id: cnss-cotisations
+  titre: 'CNSS : cotisations encaissées, tous régimes, 2000-2020'
+  sources:
+  - cnss-chiffres
+  build: scripts/extract_cnss_cotisations.py:main
+  raw:
+  - data/raw/caisses/cnss/2020/11_Evolution_des_recettes.pdf
+  - data/raw/caisses/cnss/2018/tab8-ar.pdf
+  output: data/processed/caisses/cnss_cotisations_2000_2020.csv
+  unite: millions de dinars courants (MD)
+  perimetre: cotisations encaissées par la CNSS, tous régimes — hors CNRPS et, depuis
+    2006, hors branches maladie et accidents du travail
+  caveats: 'RUPTURE DE CHAMP EN 2006 : à cette date les recettes des branches de l''assurance
+    maladie et de la réparation des accidents du travail et des maladies professionnelles
+    reviennent à la CNAM, et les cotisations encaissées tombent de 1 351 à 993 MD
+    sans qu''aucun taux ait baissé. La série n''est pas homogène de part et d''autre,
+    et la note figure sur la planche elle-même. MONTANTS COURANTS, non déflatés :
+    une évolution de niveau ne se lit pas sans indice de prix. Les valeurs sont des
+    étiquettes de graphique en TEXTE PIVOTÉ, qui se lisent de bas en haut : assemblées
+    à l''envers elles rendent des nombres crédibles mais absents du document (1 134
+    devient 1 341). Le contrôle est que les 21 valeurs assemblées reconstituent exactement
+    l''ensemble lu par le flux, qui ne dépend d''aucun ordre. La datation vient de
+    l''abscisse, et 2020 est confirmée par différence entre millésimes : le montant
+    présent dans la planche de 2020 et absent de celle de 2019 est celui de 2020.
+    NE JAMAIS TRIER : la série recule DEUX fois, en 2006 et en 2020 (3 430 MD après
+    3 445) ; un tri croissant effacerait les deux retournements. Le millésime 2019
+    n''existe qu''en arabe, la série française du site sautant du tableau 7 au tableau
+    9.'
+  titre_ar: 'الصندوق الوطني للضمان الاجتماعي: الاشتراكات المستخلصة، كلّ الأنظمة، 2000-2020'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: الاشتراكات التي يستخلصها الصندوق الوطني للضمان الاجتماعي، كلّ الأنظمة
+    — باستثناء الصندوق الوطني للتقاعد والحيطة الاجتماعية، وباستثناء فرعَي التأمين
+    على المرض وحوادث الشغل منذ 2006
+  caveats_ar: 'انقطاع في المجال سنة 2006: تنتقل موارد فرعَي التأمين على المرض وجبر
+    أضرار حوادث الشغل والأمراض المهنية إلى الصندوق الوطني للتأمين على المرض، فتهبط
+    الاشتراكات المستخلصة من 1 351 إلى 993 مليون دينار دون أن تنخفض أيّ نسبة. فالسلسلة
+    غير متجانسة على طرفَي هذا التاريخ، والملاحظة مدوّنة على اللوحة نفسها. المبالغ
+    بالدينار الجاري دون تصحيح للأسعار. القيم بطاقات رسم بياني بنصّ مُدار تُقرأ من
+    الأسفل إلى الأعلى: تركيبها معكوساً يعطي أعداداً معقولة لكنّها غائبة عن الوثيقة.
+    والضابط أنّ القيم الإحدى والعشرين المركّبة تُعيد تماماً المجموعة المقروءة من التدفّق،
+    وهي لا تتوقّف على أيّ ترتيب. لا تُرتَّب السلسلة أبداً: تتراجع مرّتين، سنة 2006
+    وسنة 2020 (3 430 بعد 3 445). ولا توجد نسخة 2019 إلّا بالعربية.'
+  fiche: sources/cnss-donnees-statistiques.md
+- id: cnss-pensionnes-par-nature
+  titre: 'CNSS : titulaires de pensions par nature de pension, 2000 et 2020'
+  sources:
+  - cnss-chiffres
+  build: scripts/extract_cnss_pensionnes_par_nature.py:main
+  raw:
+  - data/raw/caisses/cnss/2020/07_Répartition_des_pensionnés_selon_la_nature_de_la.pdf
+  - data/raw/caisses/cnss/2018/Tab4-fr.pdf
+  output: data/processed/caisses/cnss_pensionnes_par_nature.csv
+  unite: personnes
+  perimetre: titulaires de pensions de la CNSS, quatre natures (retraite, conjoints
+    survivants, orphelins, invalidité) — hors CNRPS
+  caveats: 'DEUX DATES, PAS UNE SÉRIE : la caisse ne publie cette ventilation qu''aux
+    deux extrémités de la période. PIÈGE D''ATTRIBUTION : la planche affiche « Année
+    2020 » AVANT « Année 2000 » dans le flux alors que les huit étiquettes d''effectifs
+    sortent dans l''ordre inverse ; se fier à l''ordre du flux intervertit les deux
+    années et montre les pensions de survie en recul quand elles progressent. L''attribution
+    se fait donc par BOUCLAGE : le bloc qui somme à 287 700 est celui de 2000, celui
+    qui somme à 904 621 est celui de 2020. Ces deux totaux viennent d''une AUTRE planche
+    (série cnss-effectifs) : le contrôle est externe, et il est exact à l''unité.
+    Les huit pourcentages recalculés concordent avec les huit pourcentages publiés
+    à 0,00 point. Le millésime 2018 redonne la colonne 2000 à l''identique.'
+  titre_ar: 'الصندوق الوطني للضمان الاجتماعي: أصحاب الجرايات حسب نوع الجراية، 2000
+    و2020'
+  unite_ar: أشخاص
+  perimetre_ar: أصحاب الجرايات لدى الصندوق الوطني للضمان الاجتماعي، أربعة أنواع (التقاعد
+    والبقاء والأيتام والعجز) — باستثناء الصندوق الوطني للتقاعد والحيطة الاجتماعية
+  caveats_ar: 'تاريخان لا سلسلة: لا ينشر الصندوق هذا التوزيع إلّا لسنتَي 2000 و2020.
+    ومكمن الخطأ في نسبة كلّ كتلة إلى سنتها: تعرض اللوحة «سنة 2020» قبل «سنة 2000»
+    في تدفّق النصّ بينما تخرج البطاقات الثماني بالترتيب المعاكس، فالاعتماد على ترتيب
+    التدفّق يقلب السنتين ويُظهر جرايات البقاء متراجعةً وهي في ارتفاع. لذلك تُنسب الكتل
+    بالمجموع لا بالترتيب: الكتلة التي مجموعها 287 700 هي كتلة سنة 2000، والتي مجموعها
+    904 621 هي كتلة سنة 2020. وهذان المجموعان مأخوذان من لوحة أخرى، فالضبط خارجي ومطابق
+    إلى الوحدة. كما تطابق النسب الثماني المحتسبة النسب المنشورة بفارق 0,00 نقطة. وتُعيد
+    نسخة 2018 عمود سنة 2000 حرفياً.'
+  fiche: sources/cnss-donnees-statistiques.md
+- id: cnss-pensions-versees
+  titre: 'CNSS : pensions versées, 2000-2020'
+  sources:
+  - cnss-chiffres
+  build: scripts/extract_cnss_pensions_versees.py:main
+  raw:
+  - data/raw/caisses/cnss/2020/12_Évolution_des_dépenses_des_régimes_de_sécurité_s.pdf
+  - data/raw/caisses/cnss/2018/Tab9-fr.pdf
+  output: data/processed/caisses/cnss_pensions_versees.csv
+  unite: millions de dinars courants (MD)
+  perimetre: composante « Pensions » des prestations servies par la CNSS — UNE BRANCHE
+    DE DÉPENSES, et non le total des dépenses
+  caveats: 'CE N''EST PAS LE TOTAL DES DÉPENSES. La planche est un histogramme empilé
+    à six composantes dont le total n''est étiqueté que sur quelques colonnes et ne
+    boucle pas partout : en 2015 l''étiquette haute affiche 2 250,7 alors que la seule
+    composante Pensions de cette colonne vaut déjà 2 346,8. Un total inférieur à l''une
+    de ses parts n''est pas un total ; la série des dépenses totales n''est donc pas
+    extraite de cette planche. La composante Pensions, elle, est étiquetée sur les
+    vingt et une colonnes. PIÈGE DE LECTURE : le chiffre des mille est détaché et
+    rendu AU-DESSOUS du reste de l''étiquette (« 079,2 » puis « 1 ») ; assemblé naïvement
+    il produit « 11 » ou « 22 », nombres absurdes qui ne lèvent aucune exception.
+    Le millésime 2018 redonne les vingt premières années avec ZÉRO désaccord, et 2020
+    est exactement l''année qu''il ne porte pas. La croissance monotone est CONSTATÉE,
+    jamais imposée : aucun tri n''est appliqué. MONTANTS COURANTS, non déflatés. Comparer
+    cette branche aux cotisations tous régimes n''est pas un solde : c''est un taux
+    de couverture.'
+  titre_ar: 'الصندوق الوطني للضمان الاجتماعي: الجرايات المدفوعة، 2000-2020'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: مكوّن «الجرايات» من المنافع التي يصرفها الصندوق الوطني للضمان الاجتماعي
+    — فرع إنفاق واحد لا مجموع النفقات
+  caveats_ar: 'ليس مجموع النفقات. اللوحة رسم بياني مركَّب من ستّة مكوّنات، ولا يُكتب
+    مجموعها إلّا على بعض الأعمدة ولا يستقيم في كلّها: ففي سنة 2015 تُظهر البطاقة العليا
+    2 250,7 بينما يبلغ مكوّن الجرايات وحده في العمود نفسه 2 346,8. والمجموع الذي يقلّ
+    عن أحد أجزائه ليس مجموعاً، فلم تُستخرج سلسلة النفقات الجملية من هذه اللوحة. أمّا
+    مكوّن الجرايات فمكتوب على الأعمدة الواحد والعشرين جميعها. ومكمن الخطأ في القراءة
+    أنّ رقم الآلاف منفصل ومرسوم تحت بقيّة البطاقة («079,2» ثمّ «1»)، فتركيبه على البداهة
+    يعطي «11» أو «22»، وهي أعداد لا معنى لها ولا تثير أيّ خطأ برمجي. وتُعيد نسخة 2018
+    السنوات العشرين الأولى دون أيّ اختلاف، وسنة 2020 هي بالضبط السنة التي لا تحملها.
+    والتزايد المطّرد ملاحَظ لا مفروض: لا يُطبَّق أيّ ترتيب. المبالغ بالدينار الجاري
+    دون تصحيح للأسعار. ومقابلة هذا الفرع بالاشتراكات في كلّ الأنظمة ليست موازنة بل
+    نسبة تغطية.'
+  fiche: sources/cnss-donnees-statistiques.md

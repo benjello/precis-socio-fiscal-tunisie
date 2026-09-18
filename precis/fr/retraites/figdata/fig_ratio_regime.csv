@@ -1,0 +1,15 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-18
+# séries (tunisia_data) : cnss-effectifs-par-regime
+# sources (citation) : @cnss-chiffres
+# fiches : sources/cnss-donnees-statistiques.md
+# méthode/hypothèses : DEUX DATES, PAS UNE SÉRIE : la caisse ne publie la ventilation par régime qu'aux deux extrémités de la période ; le millésime 2019 n'en donne que les pourcentages. L'attribution d'une légende à son année se fait par l'ABSCISSE, jamais par la valeur — un régime peut décroître (salariés agricoles : 8 235 en 2000, 7 484 en 2020). Les libellés diffèrent d'une planche à l'autre dans la source (« travailleurs à faible revenu » côté actifs, « faibles revenus » côté pensionnés) et sont canonisés. ANOMALIE DE LA SOURCE en 2000 : les six légendes totalisent 1 012 220 quand le total publié est 1 013 483 (écart 0,125 %), et une part de 0,32 % du camembert n'a pas de légende. Le bouclage de 2020 est exact.
+# note : CNSS : nombre d'assurés actifs par pensionné, par régime, 2020
+Régime (sigle),Actifs,Pensionnés,Actifs par pensionné
+RSA,7484,20531,0.36
+TNS.A,139229,80428,1.73
+TTE,1632,856,1.91
+RSNA,1266818,632962,2.0
+RACI,386,173,2.23
+TNSN.A,431316,117916,3.66
+RSAA,192881,19866,9.71
+RTFR,313152,31889,9.82

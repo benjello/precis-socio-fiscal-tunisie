@@ -1,0 +1,13 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-18
+# séries (tunisia_data) : caisses-effectifs-minfin
+# sources (citation) : @minfin-ep, @minfin-ep-2020
+# fiches : sources/minfin-entreprises-publiques-caisses.md
+# méthode/hypothèses : SEULE SOURCE IDENTIFIÉE POUR LES EFFECTIFS DE LA CNRPS : la caisse ne publie aucune statistique. Valeurs ARRONDIES AU MILLIER dans le texte du rapport. Prévisions et réalisations coexistent : la colonne statut les distingue, la colonne millesime_source dit de quelle édition vient chaque valeur, et l'arbitrage retient la plus récente — l'édition LF 2020 annonçait 779 milliers d'affiliés CNRPS pour 2018, l'édition LF 2021 en constate 766. Les éditions à partir de la LF 2022 sont en arabe et n'ont pas été dépouillées.
+# note : CNRPS : affiliés et titulaires de pensions, 2016-2021
+Année,Affiliés (milliers),Pensionnés (milliers),Actifs par pensionné
+2016,780.0,343.0,2.27
+2017,782.0,359.0,2.18
+2018,766.0,382.0,2.01
+2019,764.4,393.0,1.95
+2020,776.5,398.6,1.95
+2021,773.8,407.4,1.9

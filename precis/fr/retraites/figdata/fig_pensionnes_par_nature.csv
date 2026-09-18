@@ -1,0 +1,11 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-18
+# séries (tunisia_data) : cnss-pensionnes-par-nature
+# sources (citation) : @cnss-chiffres
+# fiches : sources/cnss-donnees-statistiques.md
+# méthode/hypothèses : DEUX DATES, PAS UNE SÉRIE : la caisse ne publie cette ventilation qu'aux deux extrémités de la période. PIÈGE D'ATTRIBUTION : la planche affiche « Année 2020 » AVANT « Année 2000 » dans le flux alors que les huit étiquettes d'effectifs sortent dans l'ordre inverse ; se fier à l'ordre du flux intervertit les deux années et montre les pensions de survie en recul quand elles progressent. L'attribution se fait donc par BOUCLAGE : le bloc qui somme à 287 700 est celui de 2000, celui qui somme à 904 621 est celui de 2020. Ces deux totaux viennent d'une AUTRE planche (série cnss-effectifs) : le contrôle est externe, et il est exact à l'unité. Les huit pourcentages recalculés concordent avec les huit pourcentages publiés à 0,00 point. Le millésime 2018 redonne la colonne 2000 à l'identique.
+# note : CNSS : part de chaque nature de pension parmi les titulaires, 2000 et 2020
+Nature de la pension,Titulaires 2000,Titulaires 2020,Part 2000 (%),Part 2020 (%)
+Retraite,172162,573636,59.84,63.41
+Conjoints survivants,63919,216987,22.22,23.99
+Orphelins,43984,95847,15.29,10.6
+Invalidité,7635,18151,2.65,2.01

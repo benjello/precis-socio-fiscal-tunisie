@@ -1,0 +1,5 @@
+series: [cnss-effectifs]
+sources: [cnss-chiffres]
+fiches: [sources/cnss-donnees-statistiques.md]
+caveats: [Valeurs lues sur des ÉTIQUETTES DE GRAPHIQUE, non dans un tableau : elles sont réassemblées fragment par fragment, et deux ancres (2020 et 2000) contrôlent le réassemblage. NE JAMAIS TRIER la série : les actifs BAISSENT en 2020 (2 353 743 après 2 402 269), un tri intervertirait les deux dernières années. Deux millésimes ont été lus (2019 et 2020) : ils donnent les mêmes valeurs sur les vingt années communes, aucune révision. Contrôle externe par le rapport du ministère des Finances (2 345 / 2 364 / 2 401 milliers en 2017-2019).]
+generated: 2026-09-18

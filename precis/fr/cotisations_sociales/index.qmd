@@ -450,6 +450,91 @@ La même loi de 2007 refait le régime des **pénalités**, et le déplacement m
 
 Au public, le mécanisme est plus simple et fut longtemps dépourvu de sanction. L'article 9 de la loi n° 85-12 [@loi85-12] charge l'employeur de « prélever mensuellement » la contribution et de la « verser sans délai » à la caisse, en lui interdisant de conserver ces montants ou de les employer à une autre fin — mais sans fixer ni délai chiffré ni pénalité. Ce vide n'a été comblé qu'en **2019** : l'article 9 bis, inséré par la loi n° 2019-37, impose le transfert « dans un délai n'excédant pas le cinquième jour du mois suivant » et frappe le retard d'une pénalité de **1,5 % par mois**. Deux traits en font un texte singulier — le débiteur de la pénalité est **l'État lui-même** et les autres personnes publiques employeuses, et le taux est supérieur de moitié à celui du secteur privé. La même loi impose enfin à la CNRPS un système d'échange de données mensuel avec les employeurs, rapprochant le public de la logique déclarative du privé.
 
+## Ce que les cotisations rapportent
+
+Les taux décrits jusqu'ici fixent ce qui est dû ; ils ne disent pas ce qui est encaissé. La CNSS publie le montant de ses cotisations sur vingt et un ans, et cette série porte un enseignement que la lecture des barèmes ne donne pas.
+
+```{python}
+#| label: fig-cotisations-cnss
+#| fig-cap: "Cotisations encaissées par la CNSS, tous régimes, 2000-2020 (source CNSS)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotisations_encaissees as ce
+import figtools
+figtools.figure_tabs(
+    ce.fig_cotisations(), ce.table(), "cnss-cotisations",
+    slug="fig_cotisations_cnss",
+    caption="Cotisations encaissées par la CNSS, tous régimes, 2000-2020",
+    note_lecture=(
+        "La courbe porte deux retournements. Le premier, en **2006**, n'est pas "
+        "conjoncturel : cette année-là les recettes des branches de l'assurance maladie "
+        "et de la réparation des accidents du travail passent à la CNAM, et les "
+        "cotisations encaissées par la CNSS tombent de 1 351 à 993 millions de dinars "
+        "sans qu'aucun taux ait baissé. La série n'est donc pas homogène de part et "
+        "d'autre de cette date. Le second, en **2020**, est un vrai recul — 3 445 puis "
+        "3 430 millions — le premier depuis le transfert. Les montants sont en dinars "
+        "**courants** : c'est la forme de la courbe, non son niveau, qui s'interprète."),
+)
+```
+
+Les taux décrits plus haut ne pèsent pas d'un poids comparable, et le partage entre régimes s'est déformé en vingt ans.
+
+```{python}
+#| label: fig-effectifs-par-regime
+#| fig-cap: "CNSS : part de chaque régime dans les assurés sociaux actifs, 2000 et 2020 (source CNSS)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import effectifs_par_regime as epr
+import figtools
+figtools.figure_tabs(
+    epr.fig_parts(), epr.table(), "cnss-effectifs-par-regime",
+    slug="fig_effectifs_par_regime",
+    caption="CNSS : part de chaque régime dans les assurés sociaux actifs, 2000 et 2020",
+    note_lecture=(
+        "Le régime des salariés non agricoles passe de **76,3 % à 53,8 %** des assurés "
+        "actifs sans avoir reculé : ses effectifs sont multipliés par 1,6 sur la période. "
+        "Ce sont les autres régimes qui croissent plus vite. Le régime des travailleurs à "
+        "faible revenu, **inexistant en 2000**, rassemble 313 152 actifs en 2020, soit "
+        "davantage que les deux régimes agricoles réunis ; les travailleurs non salariés "
+        "du secteur non agricole passent de 117 270 à 431 316. Les barèmes de cotisation "
+        "s'appliquent donc à une population dont la composition a changé de nature. Les "
+        "parts de 2000 sont rapportées à la somme des régimes (1 012 220), inférieure de "
+        "0,125 % au total publié par la caisse ; celles de 2020 bouclent exactement sur "
+        "les 2 353 743 assurés actifs publiés."),
+)
+```
+
+Reste à rapprocher ce que les cotisations rapportent de ce que la caisse verse au titre des seules pensions.
+
+```{python}
+#| label: fig-pensions-vs-cotisations
+#| fig-cap: "CNSS : pensions versées et cotisations encaissées, 2000-2020 (source CNSS)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import pensions_vs_cotisations as pvc
+import figtools
+figtools.figure_tabs(
+    pvc.fig_couverture(), pvc.table(), "cnss-cotisations", "cnss-pensions-versees",
+    slug="fig_pensions_vs_cotisations",
+    caption="CNSS : pensions versées et cotisations encaissées, 2000-2020",
+    note_lecture=(
+        "**À partir de 2015, et sans interruption, les pensions versées dépassent "
+        "l'ensemble des cotisations encaissées** : 2 346,8 contre 2 308 millions de "
+        "dinars cette année-là, puis 4 013,6 contre 3 430 en 2020. En 2014 encore les "
+        "cotisations menaient. Deux précautions de lecture s'imposent. D'abord, **ceci "
+        "n'est pas un solde** : les pensions sont une branche de dépenses parmi six, "
+        "les cotisations sont l'ensemble des recettes de cotisation ; le rapport des "
+        "deux est un taux de couverture, donné dans l'onglet Données, non une balance "
+        "de la caisse. Ensuite, la rupture de 2006 n'affecte qu'une des deux courbes — "
+        "celle des cotisations, amputée cette année-là des recettes maladie et "
+        "accidents du travail — de sorte que l'écart antérieur tient pour partie à une "
+        "différence de champ. Les deux séries sont en dinars courants."),
+)
+```
+
 ## Vue d'ensemble
 
 Le système tunisien de cotisations présente quatre traits que ce chapitre a établis sur les textes.

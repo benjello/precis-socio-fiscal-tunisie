@@ -1,0 +1,28 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-18
+# séries (tunisia_data) : cnss-effectifs
+# sources (citation) : @cnss-chiffres
+# fiches : sources/cnss-donnees-statistiques.md
+# méthode/hypothèses : Valeurs lues sur des ÉTIQUETTES DE GRAPHIQUE, non dans un tableau : elles sont réassemblées fragment par fragment, et deux ancres (2020 et 2000) contrôlent le réassemblage. NE JAMAIS TRIER la série : les actifs BAISSENT en 2020 (2 353 743 après 2 402 269), un tri intervertirait les deux dernières années. Deux millésimes ont été lus (2019 et 2020) : ils donnent les mêmes valeurs sur les vingt années communes, aucune révision. Contrôle externe par le rapport du ministère des Finances (2 345 / 2 364 / 2 401 milliers en 2017-2019).
+# note : CNSS : assurés sociaux actifs et titulaires de pensions, 2000-2020
+Année,Actifs,Pensionnés,Actifs par pensionné
+2000,1013483,287700,3.52
+2001,1096825,316899,3.46
+2002,1162446,338936,3.43
+2003,1230628,362038,3.4
+2004,1320067,385875,3.42
+2005,1409477,410862,3.43
+2006,1533471,428989,3.57
+2007,1673047,454605,3.68
+2008,1828995,478666,3.82
+2009,1963413,502442,3.91
+2010,2087439,516986,4.04
+2011,2114016,531028,3.98
+2012,2139289,574713,3.72
+2013,2185994,602602,3.63
+2014,2213734,637663,3.47
+2015,2229114,665178,3.35
+2016,2280372,727802,3.13
+2017,2345464,787012,2.98
+2018,2364623,821688,2.88
+2019,2402269,871152,2.76
+2020,2353743,904621,2.6

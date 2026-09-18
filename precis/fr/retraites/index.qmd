@@ -33,6 +33,145 @@ présentation sur la répartition devra être revue à la lumière de cette lect
 et sa date d'effet restent à établir. L'article de la loi n° 75-83 qui institue la CNRPS n'a pas
 été lu (la note bibliographique de la clé l'indique) : à lire avant d'en citer la lettre. -->
 
+### Ce que pèsent les deux caisses
+
+Les textes disent qui relève de quelle caisse ; ils ne disent pas combien de personnes cela représente, ni comment le rapport entre cotisants et pensionnés s'est déformé. La CNSS publie ses effectifs sur vingt et un ans.
+
+```{python}
+#| label: fig-effectifs-cnss
+#| fig-cap: "CNSS : assurés sociaux actifs et titulaires de pensions, 2000-2020 (source CNSS)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import effectifs_caisses as ec
+import figtools
+figtools.figure_tabs(
+    ec.fig_cnss(), ec.cnss_table(), "cnss-effectifs",
+    slug="fig_effectifs_cnss",
+    caption="CNSS : assurés sociaux actifs et titulaires de pensions, 2000-2020",
+    note_lecture=(
+        "Les deux courbes ne progressent pas au même rythme : sur la période, les "
+        "titulaires de pensions sont multipliés par 3,1 quand les assurés actifs le sont "
+        "par 2,3. Le rapport entre les deux, donné dans l'onglet Données, passe ainsi de "
+        "3,5 actifs par pensionné en 2000 à 2,6 en 2020. **2020 est la première année où "
+        "les actifs reculent** — de 2 402 269 à 2 353 743 — tandis que les pensionnés "
+        "continuent de croître. La caisse publie par ailleurs son propre « rapport "
+        "démographique », sur une définition qu'elle énonce — le nombre d'actifs pour un "
+        "seul *bénéficiaire* de pension —, dont les valeurs ne se retrouvent pas en "
+        "divisant ces deux séries : le rapport donné ici est calculé à partir des "
+        "effectifs publiés, et de ceux-là seuls."),
+)
+```
+
+La CNRPS, elle, ne publie aucune statistique. Ses effectifs ne sont connus que par le rapport du ministère des Finances sur les entreprises publiques, en milliers et sur six ans — d'où une seconde figure, et non une superposition que les sources n'autorisent pas.
+
+```{python}
+#| label: fig-effectifs-cnrps
+#| fig-cap: "CNRPS : affiliés et titulaires de pensions, 2016-2021 (source : rapport sur les entreprises publiques)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import effectifs_caisses as ec
+import figtools
+figtools.figure_tabs(
+    ec.fig_cnrps(), ec.cnrps_table(), "caisses-effectifs-minfin",
+    slug="fig_effectifs_cnrps",
+    caption="CNRPS : affiliés et titulaires de pensions, 2016-2021",
+    note_lecture=(
+        "Les affiliés stagnent autour de 770 000 quand les pensionnés passent de 343 000 "
+        "à 407 000 : le rapport entre les deux tombe de 2,3 à 1,9 en six ans. Ce rapport "
+        "ne se compare pas à celui de la figure précédente — les deux caisses n'ont ni le "
+        "même champ, ni la même source, ni la même précision. Les valeurs sont "
+        "**arrondies au millier** par leur source, et une édition du rapport corrige "
+        "parfois la précédente — seules les valeurs constatées sont tracées, les "
+        "prévisions écartées. Le champ des deux caisses est disjoint : agents de l'État "
+        "et des collectivités publiques d'un côté, salariés du privé et non-salariés de "
+        "l'autre."),
+)
+```
+
+Le rapport entre ces deux courbes se lit mieux seul — et il ne décline pas continûment, contrairement à ce que l'on attendrait.
+
+```{python}
+#| label: fig-ratio-demographique
+#| fig-cap: "CNSS : nombre d'assurés actifs par pensionné, 2000-2020 (calculé à partir des effectifs publiés)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import effectifs_caisses as ec
+import figtools
+figtools.figure_tabs(
+    ec.fig_ratio(), ec.cnss_table(), "cnss-effectifs",
+    slug="fig_ratio_demographique",
+    caption="CNSS : nombre d'assurés actifs par pensionné, 2000-2020",
+    note_lecture=(
+        "La courbe n'est pas une pente descendante mais une cloche. Le rapport "
+        "**s'améliore** d'abord, de 3,5 actifs par pensionné en 2000 à **4,0 en 2010** : "
+        "l'affiliation croît alors plus vite que le stock de pensionnés. Puis il se "
+        "dégrade d'un tiers en dix ans, jusqu'à **2,6 en 2020**. Lire la seule valeur de "
+        "2020 comme l'aboutissement d'un déclin continu serait donc inexact : la "
+        "dégradation est récente et rapide. Ce rapport est calculé à partir des "
+        "effectifs publiés par la caisse, et de ceux-là seuls ; la caisse publie de son "
+        "côté un « rapport démographique » défini sur les *bénéficiaires* de pension, "
+        "dont les valeurs ne se reconstituent pas à partir de ces effectifs."),
+)
+```
+
+Ce rapport d'ensemble recouvre des situations sans commune mesure d'un régime à l'autre.
+
+```{python}
+#| label: fig-ratio-regime
+#| fig-cap: "CNSS : nombre d'assurés actifs par pensionné, par régime, 2020 (calculé à partir des effectifs publiés)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import effectifs_caisses as ec
+import figtools
+figtools.figure_tabs(
+    ec.fig_ratio_regime(), ec.ratio_regime_table(), "cnss-effectifs-par-regime",
+    slug="fig_ratio_regime",
+    caption="CNSS : nombre d'assurés actifs par pensionné, par régime, 2020",
+    note_lecture=(
+        "L'écart va de **0,36** à **9,8** actifs par pensionné : parler du rapport "
+        "démographique « de la CNSS » recouvre des régimes sans commune mesure. Le "
+        "régime des salariés agricoles compte **moins d'un actif par pensionné** — 7 484 "
+        "contre 20 531 — quand le régime des salariés agricoles amélioré en compte près "
+        "de dix. Le régime général, qui rassemble à lui seul plus de la moitié des "
+        "assurés, est à 2,0. Les sigles sont ceux qu'emploie la caisse sur ses propres "
+        "planches. Les rapports publiés par celle-ci, régime par régime, sont "
+        "systématiquement supérieurs à ceux calculés ici à partir de ses effectifs ; "
+        "deux d'entre eux divergent fortement et sans explication documentée."),
+)
+```
+
+Ces titulaires de pensions ne relèvent pas tous d'un droit à la retraite, et leur composition s'est déformée.
+
+```{python}
+#| label: fig-pensionnes-par-nature
+#| fig-cap: "CNSS : part de chaque nature de pension parmi les titulaires, 2000 et 2020 (source CNSS)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import pensionnes_par_nature as pn
+import figtools
+figtools.figure_tabs(
+    pn.fig_nature(), pn.table(), "cnss-pensionnes-par-nature",
+    slug="fig_pensionnes_par_nature",
+    caption="CNSS : part de chaque nature de pension parmi les titulaires, 2000 et 2020",
+    note_lecture=(
+        "**Plus d'un titulaire de pension sur trois ne perçoit pas une pension de "
+        "retraite.** Les pensions de survie — conjoints survivants et orphelins — "
+        "rassemblent 37,51 % des titulaires en 2000 et 34,59 % en 2020. Les deux "
+        "composantes évoluent en sens contraire : les conjoints survivants gagnent en "
+        "part (22,22 % à 23,99 %) et passent de 63 919 à 216 987 personnes, tandis que "
+        "les orphelins perdent en part (15,29 % à 10,60 %) tout en doublant en nombre "
+        "— l'ensemble croît simplement plus vite qu'eux. La part de l'invalidité, la "
+        "plus petite, se réduit encore. Les quatre natures de chaque année somment "
+        "exactement au total de titulaires de pensions donné plus haut : 287 700 en "
+        "2000, 904 621 en 2020."),
+)
+```
+
 ### La carte des régimes
 
 Le livre distingue quatre régimes de pension dans le secteur public — le régime des pensions civiles et militaires et trois régimes spéciaux — et huit dans le secteur privé, dont un régime complémentaire facultatif.

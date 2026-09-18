@@ -1,0 +1,5 @@
+series: [caisses-effectifs-minfin]
+sources: [minfin-ep, minfin-ep-2020]
+fiches: [sources/minfin-entreprises-publiques-caisses.md]
+caveats: [SEULE SOURCE IDENTIFIÉE POUR LES EFFECTIFS DE LA CNRPS : la caisse ne publie aucune statistique. Valeurs ARRONDIES AU MILLIER dans le texte du rapport. Prévisions et réalisations coexistent : la colonne statut les distingue, la colonne millesime_source dit de quelle édition vient chaque valeur, et l'arbitrage retient la plus récente — l'édition LF 2020 annonçait 779 milliers d'affiliés CNRPS pour 2018, l'édition LF 2021 en constate 766. Les éditions à partir de la LF 2022 sont en arabe et n'ont pas été dépouillées.]
+generated: 2026-09-18

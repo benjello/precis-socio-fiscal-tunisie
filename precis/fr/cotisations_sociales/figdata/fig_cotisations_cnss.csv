@@ -1,0 +1,28 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-18
+# séries (tunisia_data) : cnss-cotisations
+# sources (citation) : @cnss-chiffres
+# fiches : sources/cnss-donnees-statistiques.md
+# méthode/hypothèses : RUPTURE DE CHAMP EN 2006 : à cette date les recettes des branches de l'assurance maladie et de la réparation des accidents du travail et des maladies professionnelles reviennent à la CNAM, et les cotisations encaissées tombent de 1 351 à 993 MD sans qu'aucun taux ait baissé. La série n'est pas homogène de part et d'autre, et la note figure sur la planche elle-même. MONTANTS COURANTS, non déflatés : une évolution de niveau ne se lit pas sans indice de prix. Les valeurs sont des étiquettes de graphique en TEXTE PIVOTÉ, qui se lisent de bas en haut : assemblées à l'envers elles rendent des nombres crédibles mais absents du document (1 134 devient 1 341). Le contrôle est que les 21 valeurs assemblées reconstituent exactement l'ensemble lu par le flux, qui ne dépend d'aucun ordre. La datation vient de l'abscisse, et 2020 est confirmée par différence entre millésimes : le montant présent dans la planche de 2020 et absent de celle de 2019 est celui de 2020. NE JAMAIS TRIER : la série recule DEUX fois, en 2006 et en 2020 (3 430 MD après 3 445) ; un tri croissant effacerait les deux retournements. Le millésime 2019 n'existe qu'en arabe, la série française du site sautant du tableau 7 au tableau 9.
+# note : Cotisations encaissées par la CNSS, tous régimes, 2000-2020
+Année,Cotisations (MD),Variation annuelle (%)
+2000,984,
+2001,1085,10.3
+2002,1134,4.5
+2003,1196,5.5
+2004,1277,6.8
+2005,1351,5.8
+2006,993,-26.5
+2007,1112,12.0
+2008,1242,11.7
+2009,1376,10.8
+2010,1499,8.9
+2011,1665,11.1
+2012,1844,10.8
+2013,2070,12.3
+2014,2159,4.3
+2015,2308,6.9
+2016,2520,9.2
+2017,2794,10.9
+2018,3080,10.2
+2019,3445,11.9
+2020,3430,-0.4

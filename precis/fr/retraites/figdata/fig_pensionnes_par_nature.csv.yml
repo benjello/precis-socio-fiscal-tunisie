@@ -1,0 +1,5 @@
+series: [cnss-pensionnes-par-nature]
+sources: [cnss-chiffres]
+fiches: [sources/cnss-donnees-statistiques.md]
+caveats: [DEUX DATES, PAS UNE SÉRIE : la caisse ne publie cette ventilation qu'aux deux extrémités de la période. PIÈGE D'ATTRIBUTION : la planche affiche « Année 2020 » AVANT « Année 2000 » dans le flux alors que les huit étiquettes d'effectifs sortent dans l'ordre inverse ; se fier à l'ordre du flux intervertit les deux années et montre les pensions de survie en recul quand elles progressent. L'attribution se fait donc par BOUCLAGE : le bloc qui somme à 287 700 est celui de 2000, celui qui somme à 904 621 est celui de 2020. Ces deux totaux viennent d'une AUTRE planche (série cnss-effectifs) : le contrôle est externe, et il est exact à l'unité. Les huit pourcentages recalculés concordent avec les huit pourcentages publiés à 0,00 point. Le millésime 2018 redonne la colonne 2000 à l'identique.]
+generated: 2026-09-18
