@@ -173,3 +173,69 @@
     ارتفاع الدفاع بنسبة 35٪ بين 2015 و2018، مؤكَّد لكن دون تفسير، في مجال يستثني العسكريين
     المهنيين
   fiche: sources/ins-fonction-publique-salaires-2010-2021.md
+- id: bct-emploi-occupe
+  titre: Population active occupée, 2007-2024
+  sources:
+  - bct-ra
+  build: scripts/extract_bct_emploi.py:main
+  raw:
+  - data/raw/bct-archives/109
+  output: data/processed/bct-archives/emploi_occupe.csv
+  unite: milliers d'actifs occupés
+  perimetre: emploi total en Tunisie, salariés ET non-salariés, tous secteurs — dans
+    une économie où l'emploi informel est important
+  caveats: 'SÉRIE RECONSTITUÉE : aucun rapport ne la publie d''un seul tenant, chacun
+    n''en donnant que quatre à sept millésimes ; elle est recollée à travers 14 rapports.
+    ARBITRAGE : le millésime le plus récent fait foi, les valeurs écartées étant consignées
+    dans emploi_occupe_conflits.csv plutôt qu''effacées — l''écart entre publications
+    est lui-même un fait. Les révisions sont parfois massives : 2015 a été publié
+    3.822, puis 3.516, puis 3.401 et 3.402 ; la première valeur est contredite par
+    la prose du rapport qui la porte (« la population active occupée a diminué de
+    0,4 % »). PAS D''EXTENSION AVANT 2007 : 52 des 66 rapports ne portent pas ce tableau,
+    qui n''apparaît pas dans les millésimes anciens. Le repérage se fait PAR LE TITRE
+    : la numérotation n''est pas stable (n° 2-6 en 2024, 2-7 en 2011, 2015 et 2017).
+    ANNÉE 2020 : le dénominateur s''effondre de 3.566 à 3.433 ; tout ratio bâti dessus
+    monte mécaniquement sans qu''aucun numérateur ait bougé.'
+  titre_ar: السكان النشيطون المشتغلون، 2007-2024
+  unite_ar: بآلاف المشتغلين
+  perimetre_ar: التشغيل الإجمالي في تونس، الأجراء وغير الأجراء، كلّ القطاعات — في
+    اقتصاد يمثّل فيه التشغيل غير المنظّم حصّة معتبرة
+  caveats_ar: 'سلسلة معاد تركيبها: لا ينشرها أيّ تقرير دفعة واحدة، إذ لا يعطي كلّ
+    تقرير سوى أربع إلى سبع سنوات؛ وقد جُمعت عبر 14 تقريراً. الترجيح: يُعتمد أحدث تقرير،
+    وتُدوَّن القيم المستبعدة في ملفّ الاختلافات بدل محوها. والمراجعات كبيرة أحياناً:
+    نُشرت سنة 2015 بقيم 3.822 ثمّ 3.516 ثمّ 3.401 و3.402، والقيمة الأولى يكذّبها نصّ
+    التقرير نفسه. لا امتداد قبل 2007: 52 تقريراً من 66 لا تتضمّن هذا الجدول. ويتمّ
+    التعرّف بالعنوان لا بالرقم، إذ الترقيم غير ثابت. وفي 2020 ينهار المقام من 3.566
+    إلى 3.433، فترتفع كلّ نسبة مبنيّة عليه آلياً دون تغيّر البسط.'
+  fiche: sources/bct-archives.md
+- id: ins-salaire-par-categorie
+  titre: Salaire mensuel brut des fonctionnaires par catégorie statutaire, 2015-2020
+  sources:
+  - ins-fonction-publique-2021
+  build: scripts/clean_ins_fonction_publique.py:clean_salaire_par_categorie
+  raw:
+  - data/raw/ins-fonction-publique-salaires-2010-2021/tab20_0.xlsx
+  output: data/processed/ins-fonction-publique-salaires-2010-2021/salaire_par_categorie.csv
+  unite: dinars courants / mois
+  perimetre: fonctionnaires de l'État (hors ouvriers et contractuels), six catégories
+    statutaires A1 à D
+  caveats: 'ÉTIQUETTE CORRIGÉE : le tableau publié nomme sa troisième ligne « Catégorie
+    A2 » en français alors que l''arabe y écrit « أ3 » ; le libellé A2 y paraît deux
+    fois et A3 jamais. Les lignes sont rapprochées par position et l''étiquette rétablie
+    — le CSV s''écarte donc sciemment du libellé publié. Montants en dinars COURANTS,
+    non déflatés : une évolution de niveau ne se lit pas sans indice de prix, un rapport
+    entre catégories se lit. Moyennes par catégorie, qui recouvrent des corps très
+    hétérogènes. Champ : fonctionnaires seuls, d''où un effectif inférieur à celui
+    de la fonction publique. La série s''arrête en 2020, non en 2021 comme celles
+    des effectifs.'
+  titre_ar: الأجر الشهري الخام للموظفين حسب الصنف القانوني، 2015-2020
+  unite_ar: دينار جاري / شهر
+  perimetre_ar: موظفو الدولة (باستثناء العملة والمتعاقدين)، ستة أصناف قانونية من أ1
+    إلى د
+  caveats_ar: 'تصحيح تسمية: الجدول المنشور يسمّي سطره الثالث «الصنف أ2» بالفرنسية
+    بينما يكتب بالعربية «أ3»؛ فيرد أ2 مرّتين ولا يرد أ3 أبداً. تُقابَل الأسطر بالموضع
+    وتُصحَّح التسمية، فيبتعد الملفّ عمداً عن التسمية المنشورة. المبالغ بالدينار الجاري
+    دون تصحيح للأسعار: لا يُقرأ تطوّر المستوى دون مؤشّر أسعار، بينما تُقرأ النسبة
+    بين الأصناف. متوسّطات حسب الصنف تُخفي أسلاكاً شديدة التباين. المجال: الموظفون
+    وحدهم، ومن ثمّ عدد أقلّ من مجموع الوظيفة العمومية. تنتهي السلسلة سنة 2020 لا 2021.'
+  fiche: sources/ins-fonction-publique-salaires-2010-2021.md

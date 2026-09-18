@@ -843,6 +843,26 @@
           ]
         ]
       }
+    },
+    {
+      "id": "bct-ra",
+      "type": "dataset",
+      "note": "citation-key: bct-ra\nTitre relevé en couverture des fascicules (« Rapport Annuel 2024 ») et confirmé sur bct.gov.tn ; les métadonnées PDF portent un code de service interne, inutilisable. Publication annuelle depuis 1959. Le tableau « Principaux indicateurs de l'emploi » ne figure toutefois que dans 14 rapports sur 66, d'où une série d'emploi limitée à 2007-2024.",
+      "publisher": "Banque Centrale de Tunisie",
+      "title": "Rapport Annuel",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/page.jsp?id=77",
+      "author": [
+        {
+          "literal": "Banque Centrale de Tunisie (BCT)"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      }
     }
   ]
 }

@@ -19,6 +19,7 @@ pour que les figures du précis soient citées et tracées :
 | `ins-cnat-2015` | INS — Comptes de la Nation, base 2015 | dataset |
 | `ins-fonction-publique-2021` | INS — Caractéristiques des agents de la fonction publique et leurs salaires 2010-2021 | dataset |
 | `bct-bsf` | BCT — Bulletin des Statistiques Financières (et archives) | dataset |
+| `bct-ra` | BCT — **Rapport Annuel** (annuel depuis 1959 ; source de la série `bct-emploi-occupe`, population active occupée 2007-2024) | dataset |
 
 Fiches de provenance correspondantes : `tunisia-data/sources/*.md`.
 

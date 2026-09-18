@@ -1,0 +1,5 @@
+series: [ins-salaire-par-categorie]
+sources: [ins-fonction-publique-2021]
+fiches: [sources/ins-fonction-publique-salaires-2010-2021.md]
+caveats: [ÉTIQUETTE CORRIGÉE : le tableau publié nomme sa troisième ligne « Catégorie A2 » en français alors que l'arabe y écrit « أ3 » ; le libellé A2 y paraît deux fois et A3 jamais. Les lignes sont rapprochées par position et l'étiquette rétablie — le CSV s'écarte donc sciemment du libellé publié. Montants en dinars COURANTS, non déflatés : une évolution de niveau ne se lit pas sans indice de prix, un rapport entre catégories se lit. Moyennes par catégorie, qui recouvrent des corps très hétérogènes. Champ : fonctionnaires seuls, d'où un effectif inférieur à celui de la fonction publique. La série s'arrête en 2020, non en 2021 comme celles des effectifs.]
+generated: 2026-09-18

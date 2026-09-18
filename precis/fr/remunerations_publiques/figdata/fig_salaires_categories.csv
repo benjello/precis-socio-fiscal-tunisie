@@ -1,0 +1,13 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-18
+# séries (tunisia_data) : ins-salaire-par-categorie
+# sources (citation) : @ins-fonction-publique-2021
+# fiches : sources/ins-fonction-publique-salaires-2010-2021.md
+# méthode/hypothèses : ÉTIQUETTE CORRIGÉE : le tableau publié nomme sa troisième ligne « Catégorie A2 » en français alors que l'arabe y écrit « أ3 » ; le libellé A2 y paraît deux fois et A3 jamais. Les lignes sont rapprochées par position et l'étiquette rétablie — le CSV s'écarte donc sciemment du libellé publié. Montants en dinars COURANTS, non déflatés : une évolution de niveau ne se lit pas sans indice de prix, un rapport entre catégories se lit. Moyennes par catégorie, qui recouvrent des corps très hétérogènes. Champ : fonctionnaires seuls, d'où un effectif inférieur à celui de la fonction publique. La série s'arrête en 2020, non en 2021 comme celles des effectifs.
+# note : Salaire mensuel brut des fonctionnaires par catégorie statutaire, 2015-2020
+Année,A1,A2,A3,B,C,D
+2015,2446.6,1655.2,1368.9,1237.5,1141.9,1144.1
+2016,2458.5,1844.8,1516.6,1466.1,1398.9,1176.1
+2017,2539.0,1831.5,1501.6,1448.8,1394.2,1176.7
+2018,2561.4,1898.6,1580.5,1581.9,1457.8,1296.5
+2019,2829.2,2272.7,1919.7,1926.2,1729.6,1645.1
+2020,3126.0,2481.4,2139.3,2134.7,1887.6,1803.7
