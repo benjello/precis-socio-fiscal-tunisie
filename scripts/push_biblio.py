@@ -430,6 +430,90 @@ def classe_rangement(citations_par_livre: dict, collections_par_cle: dict) -> di
     return rapport
 
 
+def appliquer_rangement(groupe: str, api_key: str, ecrire: bool) -> int:
+    """Applique le diagnostic de `controle_rangement` : range ET déclasse.
+
+    `ranger` ne sait qu'AJOUTER, et il déduit le livre d'une référence de l'emplacement
+    de son fichier — information vide pour le fonds commun, d'où les 113 qu'il laisse
+    en plan. Ici le livre vient de l'usage RÉEL dans la prose, via `cles_citees`, et la
+    collection de trop est retirée.
+
+    RÈGLE DE SÛRETÉ, héritée de `controle_rangement` : une collection absente du
+    mapping n'est pas une collection de trop. Un article rangé dans une collection
+    thématique ou une boîte de réception la conserve — on ne touche qu'aux collections
+    de livres, jamais aux autres.
+
+    À blanc par défaut : `ecrire=False` montre et n'envoie rien.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import sync_biblio
+
+    collections = zotero_tout(f"/groups/{groupe}/collections", api_key, {"format": "json"})
+    livre_par_collection, cle_par_livre = {}, {}
+    for c in collections:
+        nom = c["data"]["name"]
+        livre = sync_biblio.COLLECTION_TO_BOOK.get(nom.strip().lower())
+        if livre:
+            livre_par_collection[c["key"]] = livre
+            cle_par_livre.setdefault(livre, c["key"])
+
+    items = zotero_tout(f"/groups/{groupe}/items", api_key, {"format": "json"})
+    item_par_cle, collections_par_cle = {}, {}
+    for item in items:
+        donnees = item.get("data", {})
+        m = re.search(r"citation-key:\s*(\S+)", donnees.get("extra", ""), re.I)
+        if not m:
+            continue
+        item_par_cle[m.group(1)] = donnees
+        collections_par_cle[m.group(1)] = {
+            livre_par_collection[k] for k in (donnees.get("collections") or [])
+            if k in livre_par_collection
+        }
+
+    citations = {livre: cles_citees(livre) for livre in COLLECTIONS}
+    rapport = classe_rangement(citations, collections_par_cle)
+
+    voulu: dict[str, set[str]] = {}
+    for cle, manquantes in rapport["a_ranger"]:
+        voulu.setdefault(cle, set(collections_par_cle.get(cle, set()))).update(manquantes)
+    for cle, en_trop in rapport["a_declasser"]:
+        voulu.setdefault(cle, set(collections_par_cle.get(cle, set()))).difference_update(en_trop)
+
+    charges = []
+    for cle, livres in sorted(voulu.items()):
+        donnees = item_par_cle.get(cle)
+        if donnees is None:
+            continue
+        actuelles = set(donnees.get("collections") or [])
+        # Les collections HORS mapping sont preservees telles quelles.
+        hors_mapping = {k for k in actuelles if k not in livre_par_collection}
+        nouvelles = hors_mapping | {cle_par_livre[l] for l in livres if l in cle_par_livre}
+        if nouvelles == actuelles:
+            continue
+        charges.append({"key": donnees["key"], "version": donnees["version"],
+                        "collections": sorted(nouvelles)})
+        if not ecrire:
+            avant = sorted(livre_par_collection.get(k, "(hors mapping)") for k in actuelles)
+            apres = sorted(livre_par_collection.get(k, "(hors mapping)") for k in nouvelles)
+            print(f"    {cle} : {avant} -> {apres}")
+
+    print(f"{len(charges)} article(s) a reclasser.")
+    if not ecrire:
+        print("(a blanc : rien n'a ete envoye ; --appliquer-rangement --pousser pour ecrire)")
+        return 0
+
+    modifies = echecs = 0
+    for debut in range(0, len(charges), 50):
+        lot = charges[debut : debut + 50]
+        reponse = zotero(f"/groups/{groupe}/items", api_key, "POST", lot)
+        modifies += len(reponse.get("successful") or {})
+        for indice, message in (reponse.get("failed") or {}).items():
+            echecs += 1
+            print(f"  X {lot[int(indice)]['key']} : {message}", file=sys.stderr)
+    print(f"{modifies} reclasse(s), {echecs} en echec")
+    return 1 if echecs else 0
+
+
 def controle_rangement(groupe: str, api_key: str) -> int:
     """Rapporte l'écart entre l'usage réel des références et leur rangement Zotero.
 
@@ -580,6 +664,9 @@ def main() -> int:
                                                   "des virgules)")
     p.add_argument("--ranger", action="store_true",
                    help="classe les articles déjà créés dans la collection de leur livre")
+    p.add_argument("--appliquer-rangement", action="store_true",
+                   help="applique le diagnostic du controle : range ET declasse "
+                        "(a blanc sans --pousser)")
     p.add_argument("--controle-rangement", action="store_true",
                    help="compare l'usage réel des références au rangement Zotero "
                         "(LECTURE SEULE, n'écrit rien)")
@@ -666,6 +753,9 @@ def main() -> int:
         # identique. Le taire ferait lire un déficit là où il n'y a rien à écrire.
         print(f"{corrigees} corrigée(s), {inchangees} inchangée(s), {echecs} en échec")
         return 1 if echecs else 0
+
+    if args.appliquer_rangement:
+        return appliquer_rangement(args.groupe, api_key, ecrire=args.pousser)
 
     if args.controle_rangement:
         return controle_rangement(args.groupe, api_key)

@@ -25,6 +25,8 @@ on:
           - pousser-tout     # le reste
           - ranger           # classe les articles créés dans la collection de leur livre
           - controle-rangement  # compare l'usage réel au rangement Zotero (lecture seule)
+          - appliquer-rangement-blanc  # ce que le reclassement ferait, sans rien envoyer
+          - appliquer-rangement        # range ET déclasse, d'après l'usage réel
           - corriger         # écrase dans Zotero la référence indiquée par sa version locale
           - verifier-urls    # recense les fascicules du JORT sans édition homologue
           - descendre        # relance sync_biblio.py et montre le diff, sans rien commiter
@@ -58,6 +60,10 @@ jobs:
                             --comparer "${{ inputs.reference }}" ;;
             ranger)       uv run python scripts/push_biblio.py --ranger ;;
             controle-rangement) uv run python scripts/push_biblio.py --controle-rangement ;;
+            appliquer-rangement-blanc) uv run python scripts/push_biblio.py \
+                            --appliquer-rangement ;;
+            appliquer-rangement) uv run python scripts/push_biblio.py \
+                            --appliquer-rangement --pousser ;;
             corriger)     uv run python scripts/push_biblio.py \
                             --corriger "${{ inputs.reference }}" ;;
             verifier-urls) uv run python scripts/verifier_urls_jort.py ;;
