@@ -41,6 +41,21 @@ on:
   # La traduction part donc APRÈS le merge sur master, une fois, sur le texte
   # définitif, dans une PR unique. Contrepartie assumée : le site a brièvement
   # un français plus récent que son arabe.
+  # PASSAGE HEBDOMADAIRE, pour que le rattrapage ne dépende plus d'un geste humain.
+  # Motif : la passe déclenchée par un push échoue quand le crédit Gemini est épuisé,
+  # et RIEN ne la relance — ni cron, ni retry. La traduction restait donc en plan
+  # jusqu'à ce qu'on y repense.
+  #
+  # Ce passage ne coûte RIEN quand il n'y a rien à faire : il commence par
+  # `traduction_en_retard.py`, qui compare les dates de commit FR et AR sans réseau
+  # ni clé, et l'étape de traduction est sautée si la liste est vide. Compte épuisé,
+  # il ne coûte qu'UN appel : le script abandonne toute la passe sur une limite dure,
+  # sans réessayer.
+  #
+  # GitHub n'exécute les `schedule` que sur la branche par défaut : ce passage ne voit
+  # donc que `master`, jamais le travail en cours sur une branche.
+  schedule:
+    - cron: '41 6 * * 1'
   workflow_dispatch:
     # Re-synchro manuelle, utile quand un sync a échoué (ex. 503 Gemini) sans
     # nouveau commit FR.
@@ -80,7 +95,13 @@ jobs:
       - name: Get changed files
         id: changed-files
         run: |
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+          if [ "${{ github.event_name }}" == "schedule" ]; then
+            # Détection SANS réseau ni clé : les fichiers FR dont le dernier commit
+            # est plus récent que celui de leur homologue AR. Liste vide = arabe à
+            # jour = aucune étape suivante, donc zéro appel au modèle.
+            CHANGED=$(python3 scripts/traduction_en_retard.py)
+            echo "En retard : ${CHANGED:-aucun}"
+          elif [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
             INPUT_FILES="${{ github.event.inputs.files }}"
             if [ -n "$INPUT_FILES" ]; then
               # Re-synchro ciblée sur les fichiers fournis.
@@ -122,8 +143,11 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TRADUCTION_COMPLETE: ${{ github.event.inputs.traduction_complete == 'true' && '1' || '0' }}
         run: |
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            # base == head → diff vide. Le script part alors de la traduction
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ] \
+             || [ "${{ github.event_name }}" == "schedule" ]; then
+            # base == head → diff vide. Un événement `schedule` n'a de toute façon
+            # PAS de `github.event.before` : le chemin « push » y produirait un SHA
+            # vide et un diff illisible. Le script part alors de la traduction
             # existante et la met à jour, sans repartir de zéro : c'est ce qui
             # protège les corrections faites à la main sur l'arabe seul.
             BASE_SHA=${{ github.sha }}

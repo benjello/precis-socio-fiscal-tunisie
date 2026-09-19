@@ -87,8 +87,20 @@ jobs:
           echo "Rapport consultatif — une divergence ici peut être antérieure à cette PR."
           python3 scripts/check_translation_parity.py $FILES
 
+      # GARDE-FOU DE CRÉDIT. Le Checker IA appelle Gemini, et les crédits sont
+      # comptés : une PR ordinaire — correction de CI, note, figure — n'a aucune
+      # raison de les consommer. Il ne part donc que si la PR porte l'étiquette
+      # `traduction`, à poser le jour où l'on veut son avis.
+      #
+      # Le contrôle de parité ci-dessus, lui, reste INCONDITIONNEL : il est gratuit,
+      # déterministe, et attrape la classe d'erreurs la plus dangereuse — une clé de
+      # citation ou un numéro de loi cassés, qu'aucune relecture de l'arabe seul ne
+      # révèle. Le supprimer pour économiser serait économiser sur le mauvais poste.
+      #
+      # `always()` est conservé : le Checker doit pouvoir parler même si l'étape de
+      # parité a échoué, sans quoi une divergence antérieure le ferait taire.
       - name: Run verification script
-        if: always()
+        if: always() && contains(github.event.pull_request.labels.*.name, 'traduction')
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
