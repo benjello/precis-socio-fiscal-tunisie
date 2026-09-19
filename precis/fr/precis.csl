@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" default-locale="fr-FR">
+  <info>
+    <title>Précis socio-fiscal tunisien</title>
+    <id>https://github.com/benjello/precis-socio-fiscal-tunisie/precis.csl</id>
+    <category citation-format="author-date"/>
+    <updated>2026-09-19T00:00:00+00:00</updated>
+  </info>
+  <macro name="designation">
+    <choose>
+      <!-- Une forme courte explicite prime TOUJOURS, quel que soit le type : elle a été
+           écrite ou dérivée pour être lue dans le fil de la phrase. -->
+      <if variable="title-short">
+        <text variable="title-short"/>
+      </if>
+      <!-- Sinon un auteur, qui donne la forme usuelle « Auteur année ». -->
+      <else-if variable="author">
+        <names variable="author"><name form="short" and="text"/></names>
+        <date variable="issued" prefix=" "><date-part name="year"/></date>
+      </else-if>
+      <!-- En dernier recours le titre entier : long, mais jamais faux. -->
+      <else>
+        <text variable="title"/>
+      </else>
+    </choose>
+  </macro>
+  <citation disambiguate-add-year-suffix="false" disambiguate-add-names="false">
+    <layout prefix="(" suffix=")" delimiter="&#160;; ">
+      <group delimiter=", ">
+        <text macro="designation"/>
+        <text variable="locator"/>
+      </group>
+    </layout>
+  </citation>
+  <bibliography>
+    <sort><key variable="title"/></sort>
+    <layout suffix=".">
+      <group delimiter=", ">
+        <text variable="title"/>
+        <text variable="container-title"/>
+        <text variable="issue" prefix="n° "/>
+        <text variable="page" prefix="p. "/>
+      </group>
+      <text variable="URL" prefix=" "/>
+    </layout>
+  </bibliography>
+</style>
