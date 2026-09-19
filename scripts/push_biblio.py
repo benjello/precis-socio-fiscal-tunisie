@@ -650,12 +650,22 @@ def main() -> int:
             item["version"] = par_cle[cle]["data"]["version"]
             item["collections"] = par_cle[cle]["data"].get("collections") or []
             charges.append(item)
-        reponse = zotero(f"/groups/{args.groupe}/items", api_key, "POST", charges)
-        print(f"{len(reponse.get('successful') or {})} corrigée(s), "
-              f"{len(reponse.get('failed') or {})} en échec")
-        for indice, message in (reponse.get("failed") or {}).items():
-            print(f"  ✗ {charges[int(indice)]['key']} : {message}", file=sys.stderr)
-        return 1 if reponse.get("failed") else 0
+        # L'API refuse au-delà de cinquante articles par requête (HTTP 413), et le
+        # refus porte sur le lot ENTIER : corriger trois cents références d'un bloc
+        # n'en écrit aucune. Même découpage que le versement, plus bas.
+        corrigees = inchangees = echecs = 0
+        for debut in range(0, len(charges), 50):
+            lot = charges[debut : debut + 50]
+            reponse = zotero(f"/groups/{args.groupe}/items", api_key, "POST", lot)
+            corrigees += len(reponse.get("successful") or {})
+            inchangees += len(reponse.get("unchanged") or {})
+            for indice, message in (reponse.get("failed") or {}).items():
+                echecs += 1
+                print(f"  ✗ {lot[int(indice)]['key']} : {message}", file=sys.stderr)
+        # « inchangée » n'est pas un échec : Zotero range ainsi un article déjà
+        # identique. Le taire ferait lire un déficit là où il n'y a rien à écrire.
+        print(f"{corrigees} corrigée(s), {inchangees} inchangée(s), {echecs} en échec")
+        return 1 if echecs else 0
 
     if args.controle_rangement:
         return controle_rangement(args.groupe, api_key)
