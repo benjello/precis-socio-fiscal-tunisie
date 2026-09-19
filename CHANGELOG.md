@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.26.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.25.0...v1.26.0) (2026-09-19)
+
+
+### ✨ Nouveautés
+
+* **biblio:** appliquer le diagnostic de rangement, au lieu de le constater ([687bbaf](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/687bbafe1e8b61bf0060906c1010a6553aaa4317))
+* **citations:** un style de citation, et des formes courtes pour les textes ([fed5d3a](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/fed5d3a1e77b964ca2da755482126429e533c970))
+* **figures:** huit figures sur les caisses sociales, sur des séries vérifiées ([3351107](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/335110754c3f8bb0ac6a3ce70e238751476bf39d))
+* **traduction:** rattraper toute seule quand le crédit revient ([e041320](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e041320a695ec2746a84ab95139184b09d8a4ca8))
+
+
+### 🐛 Corrections de bugs
+
+* **ar:** le livre arabe n'avait pas accès au relevé des augmentations ([edc387a](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/edc387a0b79d20560be50398cd629b109fd0523e))
+* **biblio:** découper les corrections Zotero par cinquante ([13f18f9](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/13f18f9c3c9a048f70eb272a84609e0f6e105dcc))
+* **biblio:** trois clés au fonds commun, faute de quoi les figures ne citent pas ([e7a3225](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e7a3225f38ac1237cb9a4b58d113385345a6d88d))
+* **traduction:** cesser de réessayer un plafond de dépense ([35d046e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/35d046ea5a6c9574f6879a88969e0b39ceaf293d))
+
 ## [1.25.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.24.0...v1.25.0) (2026-09-18)
 
 
