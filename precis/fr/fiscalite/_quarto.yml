@@ -30,6 +30,10 @@ bibliography:
   - ../references.json
   - ../references.bib
 
+# Sans style déclaré, citeproc met le titre intégral en position d'auteur, faute d'`author`
+# sur les entrées `legislation`. Ce style emploie `title-short`.
+csl: ../precis.csl
+
 format:
   html:
     theme: cosmo

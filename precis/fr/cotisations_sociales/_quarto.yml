@@ -23,6 +23,13 @@ bibliography:
   - ../references.json
   - ../references.bib
 
+# Sans style déclaré, Pandoc applique Chicago author-date. Les entrées `legislation`
+# n'ayant pas d'`author`, citeproc met alors le TITRE INTÉGRAL en position d'auteur : un
+# simple [@loi60-30, art. 34] rend une parenthèse de plus de cent caractères. Ce style
+# emploie `title-short` — « loi n° 60-30 du 14 décembre 1960 » — et garde l'intitulé
+# complet dans la bibliographie.
+csl: ../precis.csl
+
 format:
   html:
     theme: cosmo
