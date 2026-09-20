@@ -156,20 +156,36 @@ jurisprudence). -->
 
 **Le barème d'actualisation.** Les salaires anciens de la fenêtre de référence ne sont pas pris pour leur valeur nominale : ils sont actualisés. Le barème annoncé en 1990, puis fixé « annuellement » depuis 1994, a été publié par une série d'arrêtés du ministre des affaires sociales « relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants », une trentaine d'arrêtés annuels du 17 novembre 1994 au 16 juillet 2024. Le premier, l'arrêté du 17 novembre 1994, vise le décret n° 94-1429, fixe un coefficient pour chaque année de salaire de 1961 à 1993 et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ juillet 1994 [@arrete-1994-11-17-bareme-actualisation, art. 1-2] ; aucun arrêté pris en application de la rédaction de 1990 n'a été retrouvé. L'arrêté du 29 mars 1997, donne pour chaque année de salaire un coefficient multiplicateur et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ janvier 1997 [@arrete-1997-03-29-bareme-actualisation]. Les coefficients de ces barèmes ne sont pas reproduits ici.
 
-<!-- TODO (documentaliste) : dépouiller la série des arrêtés annuels du barème
-d'actualisation pour en donner l'évolution ; vérifier à l'image les coefficients de l'arrêté du
-29 mars 1997. TODO (bibliographe) : créer les clés des autres arrêtés de la série.
 
-Localisation faite le 20 septembre 2026 : la série entière est dans jort_cache.db, VINGT-HUIT
-arrêtés du 17 novembre 1994 au 16 juillet 2024, chacun avec son fascicule et sa pagination. La
-requête qui les donne :
 
-    SELECT date_signature, jort_annee, jort_numero, pages FROM textes
-    WHERE titre LIKE '%bar%me d%actualisation%' ORDER BY date_signature;
+**Le rythme de la série, et ses trous.** Les vingt-huit arrêtés retrouvés ne couvrent pas les trente et une années qui séparent 1994 de 2024 : **aucun arrêté n'a été retrouvé pour 2016, 2017 et 2019**. L'adjectif « annuel » que porte le dispositif décrit donc une intention, non une pratique constante.
 
-Ce n'est donc plus une recherche mais une lecture : les fascicules de 1995 et au-delà ont une
-couche texte, directe ou décalée de 29 (cf. docs/notes/outillage-sources.md, § 5). Seul celui de
-1994 est un scan. -->
+Leur calendrier, en revanche, est régulier. L'arrêté est signé dans les premiers mois de l'année — février le plus souvent, exceptionnellement mars, avril ou juillet — et **s'applique rétroactivement aux pensions dont le droit est ouvert à compter du 1^er^ janvier de cette même année**. Une pension liquidée en janvier est donc calculée avec un barème qui n'est pas encore publié. La règle vaut pour les vingt arrêtés dont l'article 2 a été lu, de 1997 à 2024.
+
+Le premier arrêté fait exception, et pour une raison de fond : celui du 17 novembre 1994 s'applique à compter du **1^er^ juillet 1994** [@arrete-1994-11-17-bareme-actualisation, art. 2], c'est-à-dire à la date d'effet du décret n° 94-1429 qui l'appelle, et non au 1^er^ janvier. Le barème naît avec la fenêtre de cinq ans qu'il sert à actualiser.
+
+**Chaque barème ajoute une ligne à son prédécesseur**, celle de l'année qui vient de s'écouler, et conserve 1961 comme première année de salaire. Le décompte des coefficients le confirme d'un arrêté à l'autre : trente-trois lignes en 1994 pour les salaires de 1961 à 1993, trente-quatre en 1995, quarante-cinq en 2006, soixante-deux en 2023. Le barème n'est donc pas rebasé : il est prolongé.
+
+<!-- TODO (documentaliste) : les COEFFICIENTS eux-mêmes restent à relever, et le précis ne les
+publiera qu'une fois relus à l'image — la règle des valeurs chiffrées. Ce qui est établi au
+20 septembre 2026, et qui borne le travail restant :
+
+- les vingt-huit arrêtés ont leur clé CSL dans les deux langues, URL pist.tn vérifiée en ligne ;
+- DIX-HUIT fascicules exposent le tableau dans leur couche texte, directement exploitable ;
+- DEUX fascicules (1997 et 2024) sont textuels MAIS leur tableau est une image : entre « barème
+  suivant : » et l'article 2, la couche texte ne porte que des en-têtes courants. Ne pas conclure
+  du caractère textuel d'un fascicule que son tableau l'est ;
+- SIX fascicules (2000 à 2005) ont un encodage décalé de 29 : lisibles après décodage, mais
+  l'ancre « barème suivant » n'y a pas été retrouvée, à revoir ;
+- UN fascicule est un scan (1996) et UN est absent du corpus (2020, JORT n° 61), à télécharger ;
+- PIÈGE DE MISE EN PAGE : deux sérialisations coexistent. Certains fascicules alternent année et
+  coefficient, d'autres donnent toutes les années puis tous les coefficients. Apparier en
+  supposant l'alternance produit des séries fausses mais plausibles. Collecter les deux suites
+  séparément, puis les apparier, et contrôler que les années sont contiguës et les coefficients
+  décroissants.
+
+L'arrêté du 30 avril 2014 rend 53 années pour 52 coefficients : anomalie à trancher à l'image,
+pas à corriger au jugé. -->
 
 ### Les planchers
 
