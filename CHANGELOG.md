@@ -1,5 +1,37 @@
 # Changelog
 
+## [1.26.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.25.0...v1.26.0) (2026-09-20)
+
+
+### ✨ Nouveautés
+
+* **biblio:** appliquer le diagnostic de rangement, au lieu de le constater ([687bbaf](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/687bbafe1e8b61bf0060906c1010a6553aaa4317))
+* **citations:** un style de citation, et des formes courtes pour les textes ([fed5d3a](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/fed5d3a1e77b964ca2da755482126429e533c970))
+* **figures:** huit figures sur les caisses sociales, sur des séries vérifiées ([3351107](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/335110754c3f8bb0ac6a3ce70e238751476bf39d))
+* **fiscalité:** l'impôt sur les sociétés, de son origine à son rendement ([e8a5835](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e8a583532575b0190c0c5e37da1510178298429c))
+* **rémunérations:** la chaîne de la loi 95-56, et qui paie l'indemnité familiale ([082c7b7](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/082c7b7d7f744fac118da0bbf3850e4ecc779b95))
+* **retraites:** ce que le décret de 1994 fait, et ce qu'il ne fait pas ([c76cd5e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/c76cd5e0e2083431fe5981774a9c3f6b9bd9637f))
+* **retraites:** la pension de vieillesse des travailleurs non salariés ([e8ec58f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e8ec58fecc3fe612716a02b823361bf66a87a2a6))
+* **retraites:** le rythme du barème d'actualisation, et ses trois trous ([56c946a](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/56c946ae586adcb0373bedd1b2821d2d76a9e3fe))
+* **traduction:** rattraper toute seule quand le crédit revient ([e041320](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e041320a695ec2746a84ab95139184b09d8a4ca8))
+
+
+### 🐛 Corrections de bugs
+
+* **ar:** le livre arabe n'avait pas accès au relevé des augmentations ([edc387a](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/edc387a0b79d20560be50398cd629b109fd0523e))
+* **biblio:** découper les corrections Zotero par cinquante ([13f18f9](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/13f18f9c3c9a048f70eb272a84609e0f6e105dcc))
+* **biblio:** trois clés au fonds commun, faute de quoi les figures ne citent pas ([e7a3225](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e7a3225f38ac1237cb9a4b58d113385345a6d88d))
+* **traduction:** cesser de réessayer un plafond de dépense ([35d046e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/35d046ea5a6c9574f6879a88969e0b39ceaf293d))
+
+
+### 📝 Documentation
+
+* où sont les textes que les consignes demandent de lire ([b0dcedc](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/b0dcedc96154d305ff6b536dabe5bf54d069a6d5))
+* **outillage:** le décalage d'encodage se décode, l'OCR n'est pas la réponse ([8c67ef2](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/8c67ef27f94b6f426c592e62b81f0bb52c426993))
+* **prestations:** dire ce qui reste, au lieu de prescrire ce qui est fait ([5581a5f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/5581a5f8b4e3b300ac39dcd481193aaa63800082))
+* quatre TODO qui décrivaient un dépôt périmé ([2309324](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/23093242c9b8c16612e96f8675759966b75bb124))
+* **rémunérations:** quatre consignes ramenées à leur obstacle réel ([ef50ba3](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/ef50ba38fe749279e29275a3b6c52af28d349925))
+
 ## [1.25.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.24.0...v1.25.0) (2026-09-18)
 
 
