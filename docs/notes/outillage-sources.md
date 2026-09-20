@@ -133,6 +133,22 @@ Trois conséquences, dans l'ordre de gravité :
    emploient donc un contexte permissif : ils vérifient que la ressource EXISTE, sans se
    prononcer sur la confiance. En ligne de commande, `curl -k`.
 
+### L'édition ARABE de l'an 2000 ne suit pas la règle de nommage
+
+`sync_biblio.url_jort` dérive l'adresse arabe de l'adresse française en changeant `F/Jo` en
+`A/Ja`. La dérivation est bonne **sauf pour l'année 2000**, où l'édition arabe est servie sous
+`Ja<numéro><aa>` — deux chiffres d'année — alors que le français est en `Jo<numéro><aaaa>` :
+
+| | français | arabe |
+|---|---|---|
+| JORT n° 39 de **2000** | `Jo0392000.pdf` ✅ | `Ja0392000.pdf` ❌ → `Ja03900.pdf` ✅ |
+| JORT n° 1 de **2001** | `Jo0012001.pdf` ✅ | `Ja0012001.pdf` ✅ |
+
+Mesuré le 20 septembre 2026 sur quatre adresses ; 2001 suit déjà la règle générale, 2000 est donc
+l'année de bascule côté arabe. Rencontré deux fois dans la même séance, sur le JORT n° 14 et le
+n° 39 de 2000. **Une entrée arabe dont l'URL est en `Ja<numéro>2000.pdf` est fausse** : corriger
+à la main, la dérivation ne le fait pas.
+
 ## 3 bis. Les dates de `jort_cache` ne font pas foi contre le fascicule
 
 Sur 29 textes contrôlés lors du dossier « assistance sociale », **8 dates de publication de la
