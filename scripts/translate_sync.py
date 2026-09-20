@@ -18,32 +18,41 @@ CITATION_RE = re.compile(r"\[@([A-Za-z][A-Za-z0-9_-]*),\s*([^\]]+)\]")
 SEUIL_TRONCATURE = 0.6
 ARABIC_RE = re.compile(r"[\u0600-\u06FF]")
 
-# Codes et mentions que l'API renvoie sur des pannes PASSAG\u00C8RES, o\u00F9 r\u00E9essayer a un sens.
+# Codes et mentions que l'API renvoie sur des pannes PASSAGÈRES, où réessayer a un sens.
 ERREURS_PASSAGERES = (
     "503", "UNAVAILABLE", "429", "RESOURCE_EXHAUSTED", "overloaded",
     "500", "INTERNAL", "502", "504", "DEADLINE_EXCEEDED",
 )
 
-# Mentions d'une limite DURE, qu'aucune attente ne l\u00E8vera. Le mot \u00AB quota \u00BB seul en est
+# Mentions d'une limite DURE, qu'aucune attente ne lèvera. Le mot « quota » seul en est
 # volontairement ABSENT : un quota par minute est bel et bien passager, et l'inclure
-# ferait abandonner des appels qu'il fallait r\u00E9essayer \u2014 le rem\u00E8de serait pire que le mal.
+# ferait abandonner des appels qu'il fallait réessayer — le remède serait pire que le mal.
 ERREURS_DURES = (
     "spending cap", "spend cap", "billing", "exceeded its monthly",
 )
 
 
+class LimiteDure(RuntimeError):
+    """Refus que l'attente ne lèvera pas : plafond de dépense, facturation.
+
+    Distinguée des autres échecs pour deux raisons. Elle arrête la passe entière,
+    puisqu'elle vaut pour tous les fichiers ; et, lorsqu'elle n'a laissé passer
+    aucune traduction, elle vaut attente et non échec.
+    """
+
+
 def est_transitoire(msg: str) -> bool:
-    """Dit si r\u00E9essayer cet appel a une chance d'aboutir.
+    """Dit si réessayer cet appel a une chance d'aboutir.
 
     POURQUOI CETTE FONCTION EXISTE. Gemini renvoie `429 RESOURCE_EXHAUSTED` pour DEUX
-    situations oppos\u00E9es, sans les distinguer : un d\u00E9passement de d\u00E9bit, qui se r\u00E9sorbe en
-    quelques secondes, et un PLAFOND DE D\u00C9PENSE mensuel, qu'aucune attente ne l\u00E8vera.
+    situations opposées, sans les distinguer : un dépassement de débit, qui se résorbe en
+    quelques secondes, et un PLAFOND DE DÉPENSE mensuel, qu'aucune attente ne lèvera.
 
-    Le 18 septembre 2026, le plafond a \u00E9t\u00E9 pris pour un d\u00E9bit. Le script a r\u00E9essay\u00E9
-    quatre fois par fichier sur six fichiers \u2014 vingt-quatre appels vou\u00E9s \u00E0 l'\u00E9chec \u2014 et,
-    plus grave, il a noy\u00E9 la vraie cause sous quatre lignes \u00AB erreur transitoire \u00BB par
-    fichier. Le journal annon\u00E7ait une attente ; il fallait lire la derni\u00E8re ligne pour
-    d\u00E9couvrir un plafond atteint. Le diagnostic en a \u00E9t\u00E9 retard\u00E9 d'autant.
+    Le 18 septembre 2026, le plafond a été pris pour un débit. Le script a réessayé
+    quatre fois par fichier sur six fichiers — vingt-quatre appels voués à l'échec — et,
+    plus grave, il a noyé la vraie cause sous quatre lignes « erreur transitoire » par
+    fichier. Le journal annonçait une attente ; il fallait lire la dernière ligne pour
+    découvrir un plafond atteint. Le diagnostic en a été retardé d'autant.
 
     La limite dure l'emporte donc sur le code de statut : un message qui parle de
     plafond ou de facturation n'est pas transitoire, quel que soit le 429 qui l'escorte.
@@ -317,6 +326,8 @@ def main():
 
     fr_files = {f for f in files_to_process if "precis/fr/" in f}
     failures = []
+    traduits = 0          # fichiers effectivement écrits
+    echecs_plafond = 0    # échecs imputables au plafond, et à lui seul
 
     for file_path in files_to_process:
         if not fichier_a_traduire(file_path):
@@ -476,6 +487,13 @@ Fichier à traduire :
                         # en clair — c'est la ligne que le journal doit donner d'emblée.
                         if any(s in msg.lower() for s in ERREURS_DURES):
                             print(f"  {file_path}: LIMITE DURE, aucun réessai — {msg[:200]}")
+                            # Le plafond vaut pour TOUTE la passe, pas pour ce
+                            # fichier seul : continuer la boucle ne ferait que
+                            # rejouer le même refus, une fois par fichier. Le
+                            # 20 septembre 2026, onze fichiers en retard ont
+                            # produit onze appels voués à l'échec là où un seul
+                            # suffisait à établir la cause.
+                            raise LimiteDure(msg) from api_err
                         raise
                     if attempt == max_attempts:
                         raise
@@ -527,8 +545,23 @@ Fichier à traduire :
             with open(target_path, "w", encoding="utf-8") as f:
                 f.write(texte_a_ecrire(translated_text))
             print(f"Succès : {target_path} mis à jour.")
+            traduits += 1
             time.sleep(5) # Éviter le Rate Limit (15 RPM)
             
+        except LimiteDure as e:
+            print(f"Erreur lors de la traduction de {file_path}: {e}")
+            failures.append(f"{file_path} : {e}")
+            echecs_plafond += 1
+            restants = [
+                f for f in files_to_process[files_to_process.index(file_path) + 1:]
+                if fichier_a_traduire(f) and os.path.exists(f)
+            ]
+            if restants:
+                print(f"Passe interrompue : {len(restants)} fichier(s) non tentés, "
+                      "le plafond vaut pour tous.")
+                failures.extend(f"{f} : non tenté (plafond atteint)" for f in restants)
+                echecs_plafond += len(restants)
+            break
         except Exception as e:
             print(f"Erreur lors de la traduction de {file_path}: {e}")
             failures.append(f"{file_path} : {e}")
@@ -543,6 +576,36 @@ Fichier à traduire :
         print(f"\n{len(failures)} fichier(s) NON traduit(s) :")
         for line in failures:
             print(f"  - {line}")
+
+        # PLAFOND MENSUEL SANS AUCUNE TRADUCTION : ce n'est pas un échec, c'est une
+        # attente. Rien n'a été écrit, donc l'étape d'ouverture de PR ne trouvera
+        # rien à committer et s'arrêtera d'elle-même : la garde contre la PR
+        # partielle reste entière. Faire rougir la CI à chaque poussée pendant les
+        # jours qui restent avant la remise à zéro du plafond n'apprendrait rien
+        # après la première fois, et apprendrait surtout à ignorer le rouge.
+        #
+        # Dès qu'UN SEUL fichier a été traduit, l'état est partiel et l'échec
+        # reprend ses droits : c'est exactement le cas que cette garde existe pour
+        # empêcher.
+        # Neutre SEULEMENT si le plafond explique TOUT. Une seule panne d'une autre
+        # nature — une troncature, par exemple — et l'échec reprend ses droits :
+        # sans quoi le silence du plafond couvrirait une vraie régression.
+        if traduits == 0 and echecs_plafond == len(failures) and echecs_plafond:
+            avis = (
+                "PLAFOND DE DÉPENSE MENSUEL ATTEINT — aucun fichier traduit, "
+                "aucune PR ouverte, rien de cassé.\n"
+                "L'arabe reste en retard sur le français jusqu'à la remise à zéro "
+                "du plafond ; scripts/traduction_en_retard.py dit lesquels.\n"
+                "Aucune relance ne servira d'ici là : ce n'est pas un débit, c'est "
+                "un plafond."
+            )
+            print("\n" + avis)
+            resume = os.environ.get("GITHUB_STEP_SUMMARY")
+            if resume:
+                with open(resume, "a", encoding="utf-8") as f:
+                    f.write("### Traduction en attente\n\n" + avis.replace("\n", "\n\n") + "\n")
+            return
+
         print("\nSynchro incomplète : aucune PR ne doit être ouverte sur cet état. "
               "Relancer le workflow (workflow_dispatch) sur les fichiers concernés.")
         sys.exit(1)
