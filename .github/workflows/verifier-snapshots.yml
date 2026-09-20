@@ -33,6 +33,11 @@ on:
       - 'precis/_seriescache/**'
       - 'scripts/generate_*_tables.py'
       - 'scripts/openfisca_tables.py'
+      # Le relevé de tarifs de l'impôt sur les sociétés est tenu à la main, mais ses
+      # valeurs doivent concorder avec le modèle : le contrôle rejoue quand l'un ou
+      # l'autre bouge.
+      - 'precis/fr/fiscalite/tarifs/**'
+      - 'scripts/check_tarifs_openfisca.py'
   push:
     branches: [master]
   # Le paramètre peut bouger sans que le précis change : c'est même le cas le plus
@@ -88,6 +93,19 @@ jobs:
           uv run python scripts/generate_prestations_tables.py
           uv run python scripts/generate_cotisations_tables.py
           uv run python scripts/generate_droit_consommation_tables.py
+
+      # POURQUOI UN CONTRÔLE ET NON UN GÉNÉRATEUR ICI. Le relevé de l'impôt sur les
+      # sociétés porte des lignes qu'un paramètre ne peut pas porter — la NATURE du
+      # minimum, plafond jusqu'en 2005 puis plancher — et des colonnes que le modèle
+      # n'a pas, ses paramètres de minimum commençant à ce retournement. Un générateur
+      # rendrait un tableau amputé de ses deux premières colonnes. Le contrôle laisse au
+      # relevé sa liberté et lui retire son risque : aucune valeur publiée ne peut
+      # diverger du modèle sans qu'on le sache.
+      - name: Le relevé de tarifs concorde avec openfisca
+        env:
+          OPENFISCA_TUNISIA_PATH: ${{ github.workspace }}/.openfisca-tunisia
+          PYTHONPATH: scripts
+        run: uv run python scripts/check_tarifs_openfisca.py
 
       - name: Comparer au contenu versionné
         run: |
