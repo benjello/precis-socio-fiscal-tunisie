@@ -1,5 +1,30 @@
 # Changelog
 
+## [1.27.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.26.0...v1.27.0) (2026-09-20)
+
+
+### ✨ Nouveautés
+
+* **fiscalité:** ce que les sections par paramètre ne pouvaient pas voir ([e4d39eb](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e4d39ebb951d885bcb2e0b6d39d9f887eab9627f))
+* **fiscalité:** le minimum d'impôt de l'article 44 § II, et son retournement ([83e7eea](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/83e7eea8c5e0beadc005508f48b97e6b9eb5fc8a))
+* **fiscalité:** le régime forfaitaire, refondu en 2011 ([8dfc0b4](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/8dfc0b41c423e1fcd53ffa90ef73eaac9caa8cd8))
+* **tarifs:** garantir que le relevé publié ne diverge pas d'openfisca ([cc9a5fe](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/cc9a5fe7e64f936310f615f63b3f83f671d1fbc9))
+
+
+### 🐛 Corrections de bugs
+
+* **traduction:** le garde-fou de troncature servait partout sauf où il fallait ([20f829a](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/20f829a0ed64bb7e1f02fea4477081b9fd0d86a6))
+* **traduction:** le plafond mensuel arrête la passe, sans faire rougir la CI ([c0f7080](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/c0f7080ce3a5924eab55f9bbfdd75ccedbae24fa))
+
+
+### 📝 Documentation
+
+* **backlog:** huit jours de retard, et trois impôts déclarés à tort inexistants ([3e04fbf](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/3e04fbf67ac6638089298c936338de7be263b86b))
+* **backlog:** huit tableaux, dont trois qui doivent rester à la main ([f79f2f7](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/f79f2f72a466ae8551eb7b3482aab0806fbbf5ac))
+* **backlog:** le diagnostic de l'impôt sur le revenu, corrigé par la lecture ([8565fd8](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/8565fd8f8ed472efbcee82f6bc51a03263b7a996))
+* **backlog:** le livre de la fiscalité n'a plus de section vide ([5324cda](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/5324cda30d147ed3f6a0e469b4c809b639b4f570))
+* **retraites:** le tableau du salaire de référence change de motif ([1e72cb2](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/1e72cb2541ebf96ce5f160afb97f5557667a23ed))
+
 ## [1.26.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.25.0...v1.26.0) (2026-09-20)
 
 
