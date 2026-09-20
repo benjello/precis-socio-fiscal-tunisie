@@ -109,9 +109,7 @@ L'inventaire le plus sûr de ce système est donné par le texte qui l'abroge. L
 
 Une conséquence de cette abrogation mérite d'être signalée dès l'abord, parce qu'elle est à l'origine d'une confusion fréquente : le seuil de 80 000 dinars parfois présenté comme l'ancien plafond du taux marginal de l'IRPP n'a jamais été un seuil de cet impôt. C'est le seuil d'entrée dans la tranche à 68 % de la contribution personnelle d'État (@tbl-bareme-cpe-1986), supprimée pour les revenus réalisés à compter du 1^er^ janvier 1990.
 
-## L'IRPP depuis les revenus de 1990
-
-### Comment se calcule l'IRPP
+## Comment se calcule l'IRPP
 
 Avant de suivre l'histoire de chacun de ses paramètres, il est utile de décrire la mécanique d'ensemble de l'impôt, restée dans ses grandes lignes celle que le code de 1989 a mise en place [@code-irpp-is-1990]. L'IRPP est un impôt **synthétique** : il ne frappe pas séparément chaque source de revenu, mais le revenu net global annuel d'un même contribuable, les catégories de revenus n'étant maintenues que pour déterminer l'[assiette](#g-assiette-fiscale) de chacune d'elles. Le calcul se déroule ensuite selon une chaîne dont l'ordre importe, chaque opération s'appliquant au résultat de la précédente.
 
@@ -142,7 +140,7 @@ Les deux autres points de ce TODO sont clos : la liste et l'ordre des catégorie
 et l'article porteur du plafonnement (article 12 bis de la loi n° 89-114), sont désormais
 documentés — cf. docs/notes/fiscalite-irpp-assiette-abattements.md, § 1 et § 9.3. -->
 
-### L'institution de 1989-1990
+## L'institution de 1989-1990
 
 Dans le cadre du programme d'ajustement structurel engagé à la fin des années 1980, la Tunisie a entrepris un vaste programme de réformes économiques et administratives, dont la refonte de la fiscalité directe [@touaiti2026]. La loi n° 89-114 du 30 décembre 1989 promulgue le code de l'IRPP et de l'IS [@loi-irpp-is-1989] ; le texte du code, annexé à la loi, est publié séparément au JORT n° 1 des 2-5 janvier 1990 [@code-irpp-is-1990]. Le nouvel impôt est **synthétique** : il frappe le revenu net global du contribuable, les catégories de revenus étant maintenues pour la seule détermination de l'[assiette](#g-assiette-fiscale).
 
@@ -159,9 +157,9 @@ Source : @code-irpp-is-1990, art. 44 § I (JORT n° 1 des 2-5 janvier 1990, p. 9
 
 La comparaison des deux tableaux donne la mesure de la rupture. Le nombre de tranches passe de dix-huit à six et le taux marginal supérieur de 68 % à 35 %, **en une seule fois et par le code lui-même**. La simplification du barème est donc l'œuvre de la réforme de 1989-1990, et non d'un texte ultérieur : le récit d'une « simplification de 1991 », que l'on rencontre parfois, ne correspond à aucun véhicule législatif — la loi de finances pour la gestion 1991 ne comporte pas une seule occurrence du mot « barème » et ses dispositions relatives au code de l'IRPP et de l'IS visent les articles 45, 52, 54 et 63 [@lf-1991]. Le terme de « simplification » a bien un référent dans la décennie, mais il porte sur d'autres objets : le **régime forfaitaire** du § IV de l'article 44, refondu par l'article 101 de la loi de finances pour 1993 sous l'intitulé « Unification et simplification du régime forfaitaire » [@lf-1993, art. 101], et les **procédures fiscales**, avec la loi n° 98-73 du 4 août 1998 portant simplification des procédures fiscales et réduction des taux de l'impôt, dont le dispositif concerne la plus-value immobilière et les droits d'enregistrement [@loi-98-73].
 
-### L'évolution du barème
+## L'évolution du barème
 
-#### Revenus 1990 à 2016
+### Revenus 1990 à 2016
 
 Le barème de l'article 44 § I (@tbl-bareme-irpp-1990) n'a pas été modifié entre son entrée en vigueur et la loi de finances pour 2017, soit **vingt-sept années de revenus**. Ce constat repose sur trois vérifications convergentes.
 
@@ -173,7 +171,7 @@ Une conséquence mécanique de cette stabilité mérite d'être relevée : les s
 
 <!-- TODO: construire la série du seuil de la tranche à 0 % rapporté au SMIG et à l'indice des prix à la consommation, 1990-2026 (figure), pour documenter cet effet de dérive sans l'apprécier. Source pressentie : dépôt tunisia-data (INS, BCT). -->
 
-#### Revenus 2017 à 2024
+### Revenus 2017 à 2024
 
 L'article 14 § 1 de la loi n° 2016-78 du 17 décembre 2016 portant loi de finances pour 2017 modifie le § I de l'article 44, sous l'intitulé officiel « Allégement de la charge fiscale des personnes physiques à faible revenu et renforcement de l'équité fiscale » ; les nouvelles dispositions s'appliquent aux revenus réalisés à partir du 1^er^ janvier 2017 [@lf-2017, art. 14].
 
@@ -188,7 +186,7 @@ Source : @lf-2017, art. 14 § 1 (JORT n° 105 du 27 décembre 2016, p. 3831).
 
 La réforme relève la limite de la tranche exonérée de 1 500 à 5 000 dinars, supprime les tranches à 15 % et 20 %, et rehausse les taux intermédiaires. Elle ne déplace pas le seuil du taux marginal supérieur, qui reste fixé à 50 000 dinars comme depuis 1990.
 
-#### Revenus 2025 et 2026
+### Revenus 2025 et 2026
 
 L'article 36 § 1 de la loi n° 2024-48 du 9 décembre 2024 portant loi de finances pour 2025 modifie de nouveau le § I de l'article 44, pour les revenus réalisés à compter du 1^er^ janvier 2025, sous l'intitulé officiel « Allégement de la charge fiscale des individus et renforcement de l'équité fiscale » [@lf-2025, art. 36]. Le nombre de tranches passe de cinq à huit et le taux marginal supérieur de 35 % à **40 %, applicable au-delà de 70 000 dinars** — et non au-delà de 50 000 dinars, seuil qui correspond désormais à la tranche imposée à 38 %.
 
@@ -203,7 +201,7 @@ Source : @lf-2025, art. 36 § 1 (JORT n° 149 du 10 décembre 2024, tome 167, p.
 
 La loi n° 2025-17 du 12 décembre 2025 portant loi de finances pour 2026 ne modifie pas ce barème : aucune de ses dispositions ne vise le § I de l'article 44 [@lf-2026]. Le barème du tableau @tbl-bareme-irpp-2025 demeure donc applicable aux revenus de 2026.
 
-#### Vue d'ensemble des générations de barème
+### Vue d'ensemble des générations de barème
 
 : Générations successives du barème progressif sur le revenu global — contribution personnelle d'État jusqu'aux revenus de 1989, puis IRPP à partir des revenus de 1990 {#tbl-bareme-irpp-generations}
 
@@ -230,14 +228,14 @@ explicite du déflateur retenu. -->
 
 <!-- TODO : rechercher les notes communes de la DGI commentant l'article 36 de la loi de finances pour 2025, qui fourniraient la justification officielle détaillée de la réforme (cf. Q15). -->
 
-### L'évolution de l'assiette et des abattements
+## L'évolution de l'assiette et des abattements
 
 Le barème ne s'applique pas au revenu perçu mais au **revenu net global**. Or ce revenu net n'est pas obtenu par une franchise unique appliquée à l'ensemble des ressources du foyer : l'article 8 du code impose de calculer sept revenus nets **distincts**, « suivant les règles propres à chacune des catégories », avant de les additionner [@code-irpp-is-1990, art. 8]. Ce que l'usage nomme « abattements » recouvre donc, pour l'essentiel, des **règles de détermination du revenu net catégoriel** : forfaits de frais, taux d'évaluation, exonérations. Elles diffèrent d'une catégorie à l'autre par leur nature autant que par leur montant, et une même réforme peut alléger l'une pendant qu'elle resserre l'autre.
 
 Les développements qui suivent parcourent les sept catégories dans l'ordre de l'article 8, en donnant pour chacune sa définition légale, la règle de détermination du revenu net qui lui est propre et, lorsqu'une série existe, l'évolution datée de ses paramètres. Une dernière partie traite de ce qui ne relève d'aucune catégorie : les déductions communes des articles 39 à 41 du code et le plafonnement des avantages fiscaux.
 
 ::: {.callout-important title="Convention de datation : une réserve à porter sur la moitié des séries qui suivent"}
-Les tableaux de cette sous-section sont datés **en années de revenus**, conformément à la première convention de lecture énoncée plus haut. La conversion obéit à deux cas distincts.
+Les tableaux de cette section sont datés **en années de revenus**, conformément à la première convention de lecture énoncée plus haut. La conversion obéit à deux cas distincts.
 
 - **L'article modificatif énonce lui-même sa date d'effet** (« les dispositions du présent article s'appliquent aux revenus réalisés à partir du 1^er^ janvier N ») : l'effet porte alors sur les revenus de l'année N. C'est le cas, par exemple, de l'article 14 de la loi de finances pour 2017 [@lf-2017, art. 14] et de l'article 73 de la loi de finances pour 2014 [@lf-2014, art. 73].
 - **L'article est muet** et seul joue l'article final de la loi (« les dispositions de la présente loi s'appliquent à compter du 1^er^ janvier N »). La direction générale des impôts lit alors cette formule, pour les paramètres d'assiette de l'IRPP, comme visant **l'exercice déclaré au cours de l'année N, c'est-à-dire les revenus de l'année N−1**. Cette lecture est attestée par plusieurs notes communes commentant des textes différents [@dgi-nc-33-2005; @dgi-nc-14-2010; @dgi-nc-16-2016; @dgi-nc-2-2017; @dgi-nc-3-2020; @dgi-nc-1-2022].
@@ -245,7 +243,7 @@ Les tableaux de cette sous-section sont datés **en années de revenus**, confor
 Une lecture naïve — « loi de finances pour N, donc revenus de N » — décale d'un an les valeurs relevant du second cas. Dans les tableaux ci-dessous, les années de revenus **suivies d'un astérisque (\*)** sont **dérivées** de cette règle sans qu'une note commune porte sur l'article en cause : elles sont cohérentes avec la doctrine administrative constatée, mais elles ne sont pas attestées et ne doivent pas être citées comme telles. Les autres années sont établies soit par la clause propre de l'article, soit par une note commune.
 :::
 
-#### Bénéfices industriels et commerciaux (catégorie I)
+### Bénéfices industriels et commerciaux (catégorie I)
 
 L'article 9 définit la catégorie **par renvoi** : sont des [bénéfices industriels et commerciaux](#g-bic) « les bénéfices réalisés dans des entreprises exerçant une activité commerciale au sens du code de commerce » [@code-irpp-is-1990, art. 9]. Le périmètre de la catégorie est donc fixé hors du droit fiscal, et cette définition n'a pas été modifiée depuis 1990.
 
@@ -253,7 +251,7 @@ La détermination du bénéfice net (articles 10 à 15 du code) relève de la co
 
 La principale de ces déductions est celle des **deux tiers** des revenus provenant des activités visées à l'article 49 § I du code, lorsque le bénéfice est déterminé sur la base d'une comptabilité conforme à la législation comptable des entreprises (article 39 § V). Sa rédaction illustre une distinction qui commande tout le régime des avantages fiscaux : elle s'applique « **nonobstant** les dispositions de l'article 12 *bis* de la loi n° 89-114 », c'est-à-dire hors plafonnement, là où la plupart des autres déductions sont accordées « **sous réserve** » de ce même article — donc dans sa limite. La série des valeurs antérieures aux deux tiers n'est pas établie : le régime antérieur relevait du code d'incitation aux investissements de 1993, abrogé et remplacé par la loi n° 2017-8 du 14 février 2017 portant refonte du dispositif des avantages fiscaux [@loi-avantages-fiscaux-2017].
 
-#### Bénéfices des professions non commerciales (catégorie II)
+### Bénéfices des professions non commerciales (catégorie II)
 
 L'article 21 définit les [bénéfices des professions non commerciales](#g-bnc) comme « les bénéfices réalisés par les professions libérales, par les charges et offices dont les titulaires n'ont pas la qualité de commerçant, et par toutes les occupations ou exploitations non commerciales à but lucratif » [@code-irpp-is-1990, art. 21]. La définition est inchangée depuis 1990.
 
@@ -271,7 +269,7 @@ L'article 46 de la loi de finances pour 2014, intitulé « Rationalisation de l'
 
 Deux règles encadrent l'option. Les titulaires de bénéfices non commerciaux qui justifient d'une comptabilité conforme relèvent des articles 10 à 20, comme les entreprises commerciales. Et le passage au réel est **irréversible** : « dans le cas où les intéressés ont été soumis au titre d'une année donnée à l'impôt sur le revenu selon le régime réel, ledit régime demeure définitif et ne peut faire l'objet de renonciation » (article 22 § III, ajouté par l'article 71 de la loi de finances pour 2002).
 
-#### Bénéfices de l'exploitation agricole et de pêche (catégorie III)
+### Bénéfices de l'exploitation agricole et de pêche (catégorie III)
 
 L'article 23 range dans cette catégorie « les revenus que l'exploitation de biens ruraux procure soit aux propriétaires exploitant eux-mêmes, soit aux métayers ou autres, ainsi que les revenus provenant de la pêche », et énumère les productions concernées — céréaliculture, viticulture, agrumiculture, oléiculture, arboriculture, aviculture, apiculture, horticulture, cultures maraîchères, forêts, élevage du bétail, élevage des produits de la mer, concession du droit de pacage [@code-irpp-is-1990, art. 23]. La définition n'a pas été modifiée depuis 1990.
 
@@ -284,7 +282,7 @@ l'article 24 sont susceptibles de figurer dans des arrêtés du ministre des fin
 identifié à ce jour. Point d'entrée : PDFs-legislation-tunisie/data/iort/textes/md/. Tant qu'aucun
 arrêté n'est produit, l'absence de paramètre chiffré est énoncée telle quelle. -->
 
-#### Traitements, salaires, indemnités, pensions et rentes viagères (catégorie IV)
+### Traitements, salaires, indemnités, pensions et rentes viagères (catégorie IV)
 
 C'est la catégorie qui concerne le plus grand nombre de contribuables, et la plus stable du code : deux modifications de fond en trente-six exercices.
 
@@ -355,7 +353,7 @@ Il en résulte, pour l'imposition des bas salaires, un récit en **quatre temps*
 
 **Exonérations propres à la catégorie.** L'article 38 du code n'énonce pas des abattements mais délimite l'assiette salariale par une liste d'exonérations, dont plusieurs remontent à 1990 : rentes viagères servies aux victimes d'accidents du travail et rentes en réparation d'un préjudice corporel ; traitements servis par des États étrangers au personnel détaché au titre de la coopération technique ; allocations et prestations d'assistance, d'assurance et de sécurité sociale ; **gratification de fin de service** dans les limites de la législation du travail ou des montants approuvés en cas de licenciement économique ; allocations spéciales couvrant les frais inhérents à la fonction, « dans la mesure où elles sont justifiées ». S'y sont ajoutées, notamment, l'indemnité d'expatriation (loi de finances pour 1998), les primes du fonds national de l'emploi (loi de finances pour 2011), la valeur de l'avantage « transport domicile-travail » offert par les entreprises des zones de développement régional [@lf-2020, art. 44], les revenus des travailleuses agricoles affiliées au fonds de protection sociale correspondant, pendant dix ans, et les **pensions d'orphelins et pensions d'invalidité d'origine non professionnelle**, pour les pensions payées à partir du 1^er^ janvier 2025 [@lf-2025, art. 20].
 
-#### Revenus fonciers (catégorie V)
+### Revenus fonciers (catégorie V)
 
 L'article 27 définit la catégorie par une formule de **subsidiarité**, inchangée depuis 1990 : sont des [revenus fonciers](#g-revenus-fonciers), « lorsqu'ils ne sont pas inclus dans les autres catégories de revenus », le loyer des propriétés bâties et non bâties — y compris celui des terrains occupés par les carrières —, la plus-value de cession de droits sociaux dans les sociétés immobilières, d'immeubles ou parties d'immeubles bâtis et de terrains, ainsi que la plus-value de cession de lots provenant de terres domaniales à vocation agricole ayant perdu cette vocation [@code-irpp-is-1990, art. 27].
 
@@ -387,7 +385,7 @@ Trois observations s'imposent à la lecture de ce tableau.
 
 Le § IV de l'article 28 fixe enfin la plus-value imposable comme la différence entre le prix de cession déclaré et le prix de revient d'acquisition, de donation ou de construction, « majoré des montants justifiés des impenses et de **10 % par année de détention** ». Cette majoration forfaitaire figure dès 1990 [@code-irpp-is-1990, art. 28] : c'est le seul mécanisme d'atténuation de l'effet de l'inflation encore présent dans le code.
 
-#### Revenus de valeurs mobilières et de capitaux mobiliers (catégorie VI)
+### Revenus de valeurs mobilières et de capitaux mobiliers (catégorie VI)
 
 Les articles 29 à 32 définissent les **revenus de valeurs mobilières** : bénéfices distribués par les sociétés passibles de l'impôt sur les sociétés, les coopératives et leurs unions, les associations en participation revêtant en fait une forme juridique les rendant imposables à l'IS, et les établissements tunisiens de sociétés étrangères. Sont regardés comme distribués tous les bénéfices ou produits qui ne sont ni mis en réserve ni incorporés au capital, ainsi que les sommes ou valeurs mises à la disposition des associés et non prélevées sur les bénéfices [@code-irpp-is-1990, art. 29]. L'article 30 y assimile les avances, prêts et acomptes aux associés, les rémunérations, avantages et bénéfices occultes, ainsi que les rémunérations des membres des organes de direction. L'article 31 *bis*, ajouté par la loi de finances pour 2004, y a fait entrer la **plus-value de cession d'actions et de parts sociales**, pour les opérations effectuées à partir du 1^er^ janvier 2004.
 
@@ -399,13 +397,13 @@ Ce qui tient lieu d'abattement, ce sont donc des **exonérations** — celles de
 
 Le mouvement structurant de la période est cependant en sens inverse : c'est la **fin de l'exonération générale des dividendes**. Le point 10 de l'article 38, qui exonérait les revenus de valeurs mobilières des articles 29 à 31, figurait dans le code depuis 1990 ; il a été abrogé par l'article 19 § 2 de la loi de finances pour 2014 [@lf-2014, art. 19], l'abrogation prenant effet pour les **opérations de distribution de bénéfices réalisées à partir du 1^er^ janvier 2015**, les distributions prélevées sur les fonds propres figurant au bilan au 31 décembre 2013 demeurant exonérées sous condition de mention dans les notes aux états financiers. C'est, sur la période documentée, la principale extension d'assiette de l'impôt.
 
-#### Autres revenus (catégorie VII)
+### Autres revenus (catégorie VII)
 
 Cette catégorie a changé de nature en cours de route. Dans le code de 1990, elle est **résiduelle et géographique** : « les autres revenus sont constitués des revenus de source étrangère n'ayant pas été soumis au paiement de l'impôt dans le pays d'origine » [@code-irpp-is-1990, art. 36], le revenu net étant constitué des « sommes effectivement perçues de l'étranger » (article 37). L'article 61 de la loi de finances pour 1998 y a ajouté un renvoi à l'article 26 pour les traitements, salaires, pensions et rentes viagères, et l'article 35 de la loi de finances pour 2007 la déduction de 80 % sur les pensions de source étrangère (@tbl-pensions-etrangeres).
 
 L'article 19 § 1 de la loi de finances pour 2016 lui donne un second visage [@lf-2016, art. 19] : y sont désormais rangés les revenus des **jeux de pari, de hasard et de loterie**, et les revenus déterminés selon les **dépenses personnelles ostensibles et notoires** et selon l'**accroissement du patrimoine**, conformément à l'article 43 du code, lorsque le contribuable ne réalise pas de revenus dans les catégories des bénéfices industriels et commerciaux, non commerciaux ou agricoles. Cette seconde branche est le **rattachement catégoriel de l'évaluation forfaitaire** : avant 2016, l'accroissement de fortune non justifié était réintégré sans catégorie de rattachement explicite. Elle se lit avec l'article 42, qui autorise l'évaluation d'après les éléments de train de vie selon le barème de l'annexe I du code, avec majoration lorsque plusieurs éléments sont réunis et sous condition d'une disproportion marquée avec le revenu net global déclaré — dispositions d'origine, jamais modifiées. L'article 19 n'énonçant pas de date d'effet propre, son application aux revenus de 2015 est **dérivée** de la règle générale de conversion.
 
-#### Ce qui ne relève d'aucune catégorie : charges déductibles et plafonnement
+### Ce qui ne relève d'aucune catégorie : charges déductibles et plafonnement
 
 Le code range sous l'intitulé « [Déductions communes](#g-deductions-communes) » les articles 39 à 41. Il faut y ajouter un texte qui n'est pas dans le code et dont la localisation explique qu'il ait longtemps été difficile à retrouver : l'article 12 *bis* de la loi n° 89-114 elle-même.
 
@@ -462,7 +460,7 @@ docs/notes/fiscalite-irpp-assiette-abattements.md. -->
 salaire) paramétrée dans openfisca-tunisia à partir de 2014 sans aucune référence : texte
 instituteur, durée d'application, abrogation. Cf. Q13 de la même note. -->
 
-### L'évolution des déductions pour charges de famille
+## L'évolution des déductions pour charges de famille
 
 Ce sont des montants forfaitaires en dinars, retranchés du revenu net global. Leur série est complète et intégralement adossée aux textes, chaque texte modificatif citant la valeur qu'il remplace, et la note commune n° 7/2018 reproduisant l'état du droit en vigueur jusqu'au 31 décembre 2017 [@dgi-nc-7-2018].
 
@@ -491,7 +489,7 @@ Ensuite, **un basculement de logique aux revenus de 2019** : le barème dégress
 
 Enfin, **la déduction pour parent à charge a été modifiée dans ses deux paramètres à la fois** par l'article 41 de la loi de finances pour 2020 : son plafond passe de 150 à 450 dinars par parent, et la condition de ressources du parent — dont le revenu, augmenté du montant de la déduction, ne doit pas excéder un seuil — passe du SMIG au **double** du SMIG [@lf-2020, art. 41; @dgi-nc-3-2020]. Lorsque la charge est assurée par plusieurs enfants, le montant est réparti entre eux.
 
-### L'évolution du minimum d'impôt
+## L'évolution du minimum d'impôt
 
 <!-- TODO : section à écrire. Deux dispositifs distincts, à ne pas confondre, sont à documenter en
 série datée.
@@ -505,7 +503,7 @@ modification et les références JORT pist.tn de chacun de ces textes.
 figure pas à l'article 44. À établir sur le code consolidé, puis à sourcer sur le JORT.
 Cf. Q9 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
-### L'évolution des régimes dérogatoires
+## L'évolution des régimes dérogatoires
 
 Le régime réel n'est pas le seul mode d'imposition des personnes physiques. Trois sous-secteurs juridiques coexistent aujourd'hui : le **régime réel**, le **régime forfaitaire** des bénéfices industriels et commerciaux — porté par les articles 44 *bis* à 44 *sexies* du code, issus du transfert opéré par l'article 37 de la loi de finances pour 2011 depuis le § IV de l'article 44 —, et le **régime estimatif optionnel** que l'article 91 de la loi de finances pour 2026 ajoute à l'article 44 *ter* pour les contribuables dont le chiffre d'affaires n'excède pas 100 000 dinars [@lf-2026, art. 91].
 
@@ -519,7 +517,7 @@ pist.tn de chacun des textes modificatifs. Manquent également le régime de la 
 libératoire (revenus de capitaux mobiliers notamment) : articles du code et série des taux.
 Cf. Q12 et Q6 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
-### Les prélèvements adossés : la contribution sociale de solidarité
+## Les prélèvements adossés : la contribution sociale de solidarité
 
 La [contribution sociale de solidarité](#g-css) est un prélèvement distinct de l'IRPP mais assis sur la même assiette et liquidé avec lui : instituée par l'article 53 de la loi de finances pour 2018, elle est calculée comme la différence entre l'impôt résultant du barème majoré d'un point sur chaque taux de tranche et l'impôt résultant du barème non majoré.
 
@@ -532,7 +530,7 @@ opéré par la LF 2025 ; et l'état du droit pour 2026, le régime temporaire ar
 références d'openfisca-tunisia pointent vers un dépôt privé et sont à remplacer par des URL
 pist.tn. Cf. Q10 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
-### Ce que l'impôt rapporte
+## Ce que l'impôt rapporte
 
 Le barème et l'assiette décrits jusqu'ici produisent un rendement, et ce rendement se mesure. Le ministère des Finances publie les recettes fiscales par rubrique depuis 1986 ; rapportées au produit intérieur brut et aux dépenses de l'État, elles situent l'IRPP dans l'ensemble du prélèvement.
 
@@ -580,7 +578,7 @@ retribution-provisoire-accidentelle, abattement-pensions), et l'annexe _glossair
 déclarée dans les _quarto.yml des DEUX langues : les ancres résolvent. La consigne d'ajouter
 cette annexe au livre est donc sans objet. -->
 
-<!-- TODO (bibliographe) : les vingt clés citées par la sous-section « L'évolution de
+<!-- TODO (bibliographe) : les vingt clés citées par la section « L'évolution de
 l'assiette et des abattements » restent PROVISOIRES tant qu'elles ne sont pas versées dans
 Zotero (groupe 6529669), scripts/sync_biblio.py faisant autorité en sens Zotero →
 references.json : la liste à rapatrier est tenue dans docs/notes/biblio-a-rapatrier.md.
