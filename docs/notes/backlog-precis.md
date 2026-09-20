@@ -42,9 +42,10 @@ et taxe sur la valeur ajoutée (185). Les trois derniers ont été ouverts entre
 Ce qui reste porte sur la FORME d'un chapitre et sur des lectures, non sur des sections
 absentes.
 
-- **Réorganiser `_impot_revenu.qmd`** — le seul chapitre encore rangé par paramètre plutôt
-  que par réforme. Voir « Forme des chapitres » plus bas ; c'est le plus gros chantier
-  ouvert du livre.
+- **Forme de `_impot_revenu.qmd` : rien à reprendre.** Ses titres ont été remontés d'un cran
+  et il a reçu sa section « La longue période ». La réorganisation par réforme, un temps
+  envisagée, a été écartée après lecture — voir « Forme des chapitres » plus bas, qui en
+  consigne le motif et la leçon.
 - **Sections à écrire dans l'IRPP** : le minimum d'impôt (art. 44 § II) et la contribution
   au budget de l'État ; le régime forfaitaire depuis 1990, avec ses seuils et ses tarifs.
 - **Séries à construire** : le seuil de la tranche à 0 % et les déductions pour charges de
@@ -150,15 +151,41 @@ l'information.
 | `_impot_societes.qmd` | conforme | — |
 | `_droits_consommation.qmd` | historique remonté en tête | la chronologie du périmètre reste un tableau sans récit texte par texte — signalé, non confirmé |
 | `_tva.qmd` | historique sorti de l'attaque | — |
-| `_impot_revenu.qmd` | **non conforme** | évolution rangée en cinq chronologies parallèles ; tout niché d'un cran de trop ; rendement en `###` au lieu de `##` ; pas de synthèse de longue période |
+| `_impot_revenu.qmd` | conforme, à sa manière | rien sur la forme ; restent deux sections à ÉCRIRE, voir plus bas |
 | `retraites/_secteur_*.qmd` | **rangés par mécanisme, et c'est bien** | ne pas y appliquer le plan type |
 | `_regime_indiciaire.qmd` | fait le travail sous d'autres noms | ne rien reprendre sur la forme |
 
-La réorganisation de `_impot_revenu.qmd` se mène en trois passes : les niveaux de titre
-d'abord, dont le diff se vérifie seul ; la colonne chronologique ensuite ; la description et
-la longue période enfin. Sur 596 lignes et 109 citations, le **balayage phrase à phrase** de
-l'original contre le résultat n'est pas optionnel : sur un chapitre deux fois plus court, il
-avait rattrapé deux pertes sans citation, donc invisibles au décompte.
+### Ce que `_impot_revenu.qmd` a appris sur les limites du plan type
+
+Ce chapitre devait être réorganisé en trois passes. La première a remonté ses titres d'un
+cran — le régime moderne vivait sous un titre nu qui coûtait un niveau à tout ce qu'il
+abritait. **La deuxième a été abandonnée après lecture, et c'est un résultat à conserver.**
+
+Le diagnostic initial — « cinq chronologies parallèles à fondre en une colonne par réforme »
+— reposait sur cinq titres `## L'évolution de…`, non sur leur contenu. À la lecture, les cinq
+ne sont pas comparables : « L'évolution du minimum d'impôt » ne contient AUCUNE prose, c'est
+un TODO seul ; « L'évolution des régimes dérogatoires » est une description assortie de deux
+TODO ; et « L'évolution de l'assiette », qui pèse 232 des 380 lignes en cause, parcourt les
+sept catégories **dans l'ordre de l'article 8**. Cette structure est imposée par la loi, non
+choisie : la disperser dans une colonne chronologique y détruirait la même information que le
+plan par réforme détruirait dans les retraites.
+
+**La leçon, qui vaut pour toute réorganisation à venir : compter les titres ne diagnostique
+rien, il faut lire ce qu'ils portent.** Un chapitre peut sembler mal rangé et suivre en
+réalité une structure que la loi lui impose.
+
+Le défaut réel, une fois mesuré, était plus étroit : cinq lois de finances racontées à deux
+endroits sans qu'on dise jamais qu'il s'agit d'un seul geste. Il s'est corrigé en AJOUTANT la
+couche qui manquait — une section « La longue période », qui rapproche notamment deux
+immobilités que les sections par paramètre ne pouvaient pas voir : le barème gelé
+vingt-sept exercices et les charges de famille vingt-neuf, à partir des mêmes revenus de
+1990. Non en démontant la structure.
+
+Ce qui reste sur ce chapitre ne relève plus de la forme mais du documentaliste.
+
+Pour toute passe qui DÉPLACE de la prose, le **balayage phrase à phrase** de l'original
+contre le résultat n'est pas optionnel : sur l'impôt sur les sociétés, deux fois plus court,
+il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
 
 ## Ce qui traverse les cinq livres
 
@@ -191,10 +218,12 @@ avait rattrapé deux pertes sans citation, donc invisibles au décompte.
 
 ## Suite proposée
 
-1. **Réorganiser `_impot_revenu.qmd`**, en trois passes (voir « Forme des chapitres »).
-   C'est le dernier chapitre de la fiscalité qui ne suit pas le plan type.
-2. **Au 1er octobre, rattraper la traduction** : `workflow_dispatch` sans argument, puis
+1. **Au 1er octobre, rattraper la traduction** : `workflow_dispatch` sans argument, puis
    relecture arabe. Onze fichiers, dont le chapitre entier de l'impôt sur les sociétés.
+2. **Écrire les deux sections manquantes de l'impôt sur le revenu** : le minimum d'impôt de
+   l'article 44 § II, dont la chaîne des modifications est déjà reconstituée, et la
+   chronologie datée du régime forfaitaire depuis 1990. Ce sont les deux dernières sections
+   vides du livre de la fiscalité.
 3. **Terminer la série en cours sur les retraites** : rejouer et fusionner les PR du modèle,
    publier, puis remplacer les treize tableaux faits main.
 4. **Débloquer Zotero**, qui conditionne toute la tenue de la bibliographie.
