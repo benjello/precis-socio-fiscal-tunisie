@@ -141,8 +141,10 @@ par l'article 2 du décret n° 2007-2148, et le mode de constatation de l'usure 
 
 Sources : @decret74-499, art. 18-19 ; @decret90-1455, art. 1 ; @decret94-1429, art. 1. Le décret n° 90-1455 n'énonce pas de date d'effet : le 23 septembre 1990 est la date à laquelle il devient exécutoire, un jour franc après sa publication au *Journal officiel* du 21 septembre 1990.
 
-<!-- Tableau tenu à la main, et non engendré : aucun paramètre ne porte la fenêtre du salaire
-moyen de référence du régime non agricole. Voir l'en-tête de
+<!-- Tableau tenu à la main, et non engendré. Le paramètre `rsna/salaire_reference/duree_mois`
+porte bien la fenêtre depuis septembre 2026, mais seulement pour ses trois dernières lignes :
+celle de 1974 offre un choix entre deux périodes, celle de 1990 énonce une non-modification, et
+ni l'un ni l'autre n'est une valeur datée. Voir l'en-tête de
 scripts/generate_retraites_tables.py. -->
 
 Les deux décrets se succèdent. Le décret n° 90-1455 porte la fenêtre de référence à dix ans en réécrivant l'article 18, mais laisse inchangé l'article 19, qui continue de calculer la moyenne sur trente-six ou soixante mois [@decret90-1455, art. 1]. Le décret n° 94-1429, qui vise le décret de 1974 « tel que modifié par le décret n° 90-1455 », abroge et remplace ensemble ces deux articles et substitue à la règle de 1990 une montée progressive, de cinq ans en 1994 à dix ans en 1996, la durée de la moyenne suivant celle de la fenêtre [@decret94-1429, art. 1]. Aucun texte publié au *Journal officiel* entre ces deux décrets qui suspende ou reporte la règle de 1990 n'a été retrouvé, et aucun n'indique comment les pensions ont été calculées entre septembre 1990 et juin 1994, alors que les articles 18 et 19 prescrivaient l'un dix années de salaires, l'autre une moyenne sur trente-six ou soixante mois.

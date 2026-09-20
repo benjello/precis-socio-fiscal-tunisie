@@ -42,9 +42,14 @@ ne portent pas la distinction que leurs colonnes affirment.
 - `tbl-rsna-anticipes` : le seul paramètre du sujet, `rsna/age_dep_anticip`, porte l'âge de
   jouissance de 50 ans de 1982. Ni les quatre cas de l'article 15 bis, ni leurs conditions,
   ni la jouissance à 55 ans de l'article 15 ter ne sont dans l'arbre.
-- `tbl-rsna-reference` : aucun paramètre ne porte la fenêtre du salaire moyen de référence
-  du régime non agricole. `rsa/periode_remplacement_base` en porte une pour le régime
-  agricole, que sa documentation déclare non fondée sur un texte lu.
+- `tbl-rsna-reference` : `rsna/salaire_reference/duree_mois` porte désormais la fenêtre du
+  régime non agricole — 60, 84 puis 120 mois en 1994, 1995 et 1996 (PR openfisca-tunisia-pension
+  #51, fusionnée le 20 septembre 2026). Elle ne couvre que TROIS des cinq lignes du tableau.
+  Les deux premières ne sont pas des valeurs datées : celle de 1974 offre un CHOIX entre
+  trente-six et soixante mois, « selon que l'une ou l'autre de ces périodes de référence est
+  plus avantageuse », et celle de 1990 énonce une NON-MODIFICATION — le décret n° 90-1455
+  récrit l'article 18 et laisse l'article 19 intact. Engendrer les trois dernières lignes
+  amputerait le tableau de ce qui en fait la démonstration.
 - `tbl-rsna-survivants` : l'arbre `rsna` n'a pas de branche « survivants ».
 - `tbl-rsna-revalo-montant` et `tbl-rsna-revalo-taux` : la série du SMIG est datée et sourcée
   chez `openfisca-tunisia`, et le cœur chiffré de ces deux tableaux en sortirait. Mais leur
