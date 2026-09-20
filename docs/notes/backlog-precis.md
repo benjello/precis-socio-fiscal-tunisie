@@ -99,19 +99,20 @@ absentes.
   ouverte, et aucune de ses quatre branches non fusionnées ne crée les paramètres qui
   manquent.
 
-  **Cinq appellent un versement de paramètres qui n'a jamais été fait** — c'est là qu'une PR
-  au modèle a un sens :
+  **Quatre appellent un versement de paramètres qui n'a jamais été fait** — c'est là qu'une PR
+  au modèle a un sens. Le cinquième, la fenêtre du salaire moyen de référence, **a été versé
+  le 20 septembre 2026** (openfisca-tunisia-pension #51) ; son tableau reste néanmoins tenu à
+  la main, le paramètre ne couvrant que trois de ses cinq lignes :
 
   | Tableau | Ce qui manque à l'arbre |
   |---|---|
   | `_secteur_public.qmd:485` | les âges de mise à la retraite **par grade militaire** |
-  | `_secteur_prive.qmd:144` | la **fenêtre du salaire moyen de référence** du régime non agricole |
   | `_secteur_prive.qmd:238` | la branche **« survivants »** du régime non agricole |
   | `_secteur_prive.qmd:116` | les quatre cas de l'article 15 *bis* et la jouissance à 55 ans de l'article 15 *ter* ; seul l'âge de 50 ans de 1982 existe |
   | `_secteur_public.qmd:252` | la distinction des trois colonnes de l'article 32 ; le barème 5/4/3/2 est bien là |
 
-  Le plus net à verser est **la fenêtre du salaire moyen de référence** : elle est entièrement
-  établie dans le chapitre, avec ses décrets et ses dates d'effet.
+  Le plus net à verser est désormais **la branche « survivants »** du régime non agricole :
+  l'arbre `rsna` n'en a aucune, et le chapitre en expose les taux.
 
   **Trois resteront à la main, et c'est justifié.** Les conditions d'âge, d'études et de
   ressources de la pension d'orphelin ne sont pas des valeurs datées. Et les deux tableaux de
@@ -250,9 +251,10 @@ il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
 
 1. **Au 1er octobre, rattraper la traduction** : `workflow_dispatch` sans argument, puis
    relecture arabe. Onze fichiers, dont le chapitre entier de l'impôt sur les sociétés.
-2. **Verser au modèle les cinq jeux de paramètres qui manquent aux retraites**, en
-   commençant par la fenêtre du salaire moyen de référence, la mieux établie. Il ne s'agit
-   pas de fusionner des PR existantes : il n'y en a aucune.
+2. **Verser au modèle les quatre jeux de paramètres qui manquent encore aux retraites.** Le
+   cinquième — la fenêtre du salaire moyen de référence — est versé depuis le 20 septembre
+   2026. Restent les âges militaires par grade, la branche « survivants », les cas de
+   l'article 15 *bis* et les trois colonnes de l'article 32.
 3. **Débloquer Zotero**, qui conditionne toute la tenue de la bibliographie.
 4. **Étoffer les trois chapitres brefs des rémunérations publiques**.
 5. **Océriser les quelques fascicules qui bloquent plusieurs consignes à la fois** — le code
