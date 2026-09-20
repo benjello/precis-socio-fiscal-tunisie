@@ -770,36 +770,16 @@ scripts/sync_biblio.py : une collection Zotero dédiée est à créer, ou les it
 alimenté (hors périmètre de cette passe) : il demande les mêmes 63 entrées avec l'URL du champ
 pdf_ar du même enregistrement de jort_cache.db, jamais déduite de l'URL française. -->
 
-<!-- TODO (terminologue) : ce livre n'est pas dans le périmètre de scripts/build_glossary.py
-(BOOKS = ["remunerations_publiques", "fiscalite"]) et son _quarto.yml ne liste pas d'annexe de
-glossaire : aucune ancre #g-… n'a donc été posée dans ce chapitre, faute de pouvoir résoudre.
-Étapes : ajouter prestations_sociales à BOOKS, poser l'annexe dans les DEUX _quarto.yml (français
-et arabe — la pipeline de traduction ne synchronise pas ce fichier), puis poser les ancres.
+<!-- TODO (terminologue) : douze notions de ce livre restent à créer dans
+precis/glossaire.yml. Côté contributif : indemnite-de-couches, assurances-sociales,
+maladie-professionnelle. Côté assistance : pauvrete-multidimensionnelle, amg, livret-de-soins,
+registre-donnees-categories-pauvres, identifiant-social, unite-locale-promotion-sociale,
+enquete-sociale, autonomisation-economique, assistance-non-contributive. Les termes arabes
+proposés sont au §13 de docs/notes/prestations-contributif.md et au §9 de
+docs/notes/prestations-assistance.md.
 
-Entrées existantes à réutiliser : cnss, cnrps, cnam, cotisations-sociales,
-fonds-de-securite-sociale, smig (à qui il faut ajouter un voir_aussi vers condition-de-ressources,
-le SMIG étant la clé de voûte de toutes les conditions de ressources de l'assistance).
-
-Notions à créer, côté contributif (les termes arabes proposés sont au §13 de
-docs/notes/prestations-contributif.md) : prestations-familiales, allocation-familiale,
-indemnite-caractere-familial, majoration-salaire-unique, contribution-frais-creche,
-indemnite-journaliere, indemnite-de-couches, capital-deces, indemnite-de-deces,
-assurances-sociales, accident-du-travail, maladie-professionnelle, rente-accident-travail,
-stage-cotisation, ayant-droit, assure-social, rsna, rsa, rsaa, rtns, rtte, regime-bas-revenus,
-regime-artistes, carence, salaire-journalier-moyen.
-
-Point d'attention : capital-deces et indemnite-de-deces doivent faire DEUX entrées distinctes.
-Le corpus les confond sous des noms proches, mais il s'agit de deux dispositifs de natures
-différentes — le capital-décès du secteur public (décret n° 93-308), cotisé et calculé sur la
-rémunération de liquidation, et l'indemnité de décès du secteur privé (loi n° 60-30, arts 83-87),
-multiple de l'indemnité journalière de maladie. L'entrée regime-bas-revenus n'a plus à porter le statut
-« provisoire » : sa correspondance avec la loi n° 2002-32 est attestée (livre Retraites, chapitre du
-secteur privé, qui cite la loi, art. 1, 13 et 14).
-
-Notions à créer, côté assistance (§9 de docs/notes/prestations-assistance.md) : pnafn,
-amen-social, categories-pauvres, categories-revenu-limite, pauvrete-multidimensionnelle,
-score-eligibilite, condition-de-ressources, ciblage, transfert-monetaire,
-appui-financier-occasionnel, allocation-familiale-non-contributive, amg, amg1, amg2,
-livret-de-soins, quota-regional, registre-donnees-categories-pauvres, identifiant-social,
-unite-locale-promotion-sociale, enquete-sociale, autonomisation-economique,
-assistance-non-contributive. -->
+Ce qui était demandé ici et qui est FAIT au 20 septembre 2026, vérifié : le livre est dans le
+périmètre de scripts/build_glossary.py (BOOKS, l. 39), son annexe est déclarée dans les DEUX
+_quarto.yml, trente ancres #g-… sont posées, capital-deces et indemnite-de-deces forment bien
+deux entrées distinctes qui se renvoient l'une à l'autre, regime-bas-revenus n'est plus
+« provisoire », et smig porte son voir_aussi vers condition-de-ressources. -->
