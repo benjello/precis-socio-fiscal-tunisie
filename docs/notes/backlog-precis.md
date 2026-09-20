@@ -20,7 +20,7 @@ ce qu'il en coûte de l'ouvrir** : `todo-localisation.md`.
 | Livre | Écrit (lignes) | TODO | État |
 |---|---:|---:|---|
 | Fiscalité | 1 334 | 26 | **les quatre impôts sont écrits, et plus aucune section n'est vide** |
-| Retraites | 1 201 | 40 | rédigé sur le *Journal officiel*, tableaux de paramètres provisoires |
+| Retraites | 1 201 | 40 | rédigé sur le *Journal officiel* ; cinq jeux de paramètres à verser au modèle |
 | Rémunérations publiques | 751 | 33 | un chapitre abouti, trois chapitres brefs |
 | Prestations sociales | 708 | 12 | rédigé, plusieurs séries sans fondement publié |
 | Cotisations sociales | 401 | 3 | le plus complet |
@@ -92,8 +92,32 @@ absentes.
   quote-part de cotisations. Restent les circulaires et rapports de la CNSS, l'avis non publié
   du Tribunal administratif, la doctrine et la jurisprudence ; aucun n'est au corpus local.
   **Cette question se résoudra hors du *Journal officiel*, ou pas du tout.**
-- **Treize tableaux de paramètres** sont écrits à la main et attendent d'être engendrés,
-  après la fusion des PR qui datent et sourcent les paramètres en amont.
+- **Huit tableaux sont tenus à la main, et ils n'attendent pas tous la même chose.** Compté
+  et trié le 20 septembre 2026, sur les commentaires qui accompagnent chacun d'eux. Le
+  chiffre de treize, porté ici jusque-là, et l'idée qu'il suffirait de « fusionner les PR du
+  modèle » étaient l'un et l'autre inexacts : `openfisca-tunisia-pension` n'a AUCUNE PR
+  ouverte, et aucune de ses quatre branches non fusionnées ne crée les paramètres qui
+  manquent.
+
+  **Cinq appellent un versement de paramètres qui n'a jamais été fait** — c'est là qu'une PR
+  au modèle a un sens :
+
+  | Tableau | Ce qui manque à l'arbre |
+  |---|---|
+  | `_secteur_public.qmd:485` | les âges de mise à la retraite **par grade militaire** |
+  | `_secteur_prive.qmd:144` | la **fenêtre du salaire moyen de référence** du régime non agricole |
+  | `_secteur_prive.qmd:238` | la branche **« survivants »** du régime non agricole |
+  | `_secteur_prive.qmd:116` | les quatre cas de l'article 15 *bis* et la jouissance à 55 ans de l'article 15 *ter* ; seul l'âge de 50 ans de 1982 existe |
+  | `_secteur_public.qmd:252` | la distinction des trois colonnes de l'article 32 ; le barème 5/4/3/2 est bien là |
+
+  Le plus net à verser est **la fenêtre du salaire moyen de référence** : elle est entièrement
+  établie dans le chapitre, avec ses décrets et ses dates d'effet.
+
+  **Trois resteront à la main, et c'est justifié.** Les conditions d'âge, d'études et de
+  ressources de la pension d'orphelin ne sont pas des valeurs datées. Et les deux tableaux de
+  revalorisation ont pour objet la revalorisation des pensions, non le SMIG : la hausse du
+  SMIG du 1^er^ mai 2000 ne revalorise les pensions qu'au 1^er^ janvier 2001, date qu'aucun
+  paramètre de SMIG ne porte. **Les engendrer depuis le modèle produirait un tableau faux.**
 - **Régimes spéciaux** : le décret-loi n° 2011-48 relève aussi la contribution de
   l'employeur pour les membres du gouvernement et les gouverneurs ; le chapitre ne le dit pas.
 
@@ -226,8 +250,9 @@ il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
 
 1. **Au 1er octobre, rattraper la traduction** : `workflow_dispatch` sans argument, puis
    relecture arabe. Onze fichiers, dont le chapitre entier de l'impôt sur les sociétés.
-2. **Terminer la série en cours sur les retraites** : rejouer et fusionner les PR du modèle,
-   publier, puis remplacer les treize tableaux faits main.
+2. **Verser au modèle les cinq jeux de paramètres qui manquent aux retraites**, en
+   commençant par la fenêtre du salaire moyen de référence, la mieux établie. Il ne s'agit
+   pas de fusionner des PR existantes : il n'y en a aucune.
 3. **Débloquer Zotero**, qui conditionne toute la tenue de la bibliographie.
 4. **Étoffer les trois chapitres brefs des rémunérations publiques**.
 5. **Océriser les quelques fascicules qui bloquent plusieurs consignes à la fois** — le code
