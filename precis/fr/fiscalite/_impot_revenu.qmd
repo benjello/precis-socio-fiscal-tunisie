@@ -491,17 +491,43 @@ Enfin, **la déduction pour parent à charge a été modifiée dans ses deux par
 
 ## L'évolution du minimum d'impôt
 
-<!-- TODO : section à écrire. Deux dispositifs distincts, à ne pas confondre, sont à documenter en
-série datée.
-(a) Le minimum d'impôt de l'article 44 § II du code. La chaîne des modifications est déjà
-reconstituée — art. 42 de la LF 2006, art. 48 de la LF 2014, art. 10 de la LFC 2014 (loi
-n° 2014-54 du 19 août 2014), art. 16 de la LF 2019 (loi n° 2018-56 du 27 décembre 2018) — et le
-texte consolidé est disponible ; restent à établir les valeurs en vigueur avant chaque
-modification et les références JORT pist.tn de chacun de ces textes.
-(b) Le plafonnement des déductions et avantages fiscaux (openfisca-tunisia : 60 % à partir de 2014,
-45 % à partir de 2020, sans aucune référence). L'article qui le porte n'est pas identifié : il ne
-figure pas à l'article 44. À établir sur le code consolidé, puis à sourcer sur le JORT.
-Cf. Q9 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
+Le paragraphe II de l'article 44 assoit sur le chiffre d'affaires un montant dont l'impôt annuel ne peut s'écarter. Il ne faut le confondre ni avec le [minimum d'impôt](#g-minimum-impot-chiffre-affaires) de l'article 49 § II, qui en est l'équivalent du côté de l'impôt sur les sociétés, ni avec celui de l'article 12 *bis* de la loi n° 89-114, qui plafonne les avantages fiscaux et s'assied sur l'impôt théorique et non sur le chiffre d'affaires.
+
+**Ce minimum a changé de sens en 2006, et c'est le fait majeur de sa série.** Le code de 1990 le rédige en termes qui bornent la charge **par le haut** : l'impôt ne peut être inférieur à 0,5 % du chiffre d'affaires brut, mais « *ce minimum ne peut excéder 500 dinars* » [@loi-irpp-is-1989, art. 44]. C'est un plafond. L'article 45 de la loi de finances pour 1998 le double, sans toucher à sa nature [@lf-1998, art. 45].
+
+L'article 42 de la loi de finances pour 2006 le retourne. Le minimum devient égal à **0,1 % du chiffre d'affaires brut**, exportation exclue, « *avec un minimum égal à 100 dinars exigible même en cas de non réalisation de chiffre d'affaires* » [@lf-2006, art. 42]. Les mêmes lignes changent de fonction : elles n'empêchent plus l'impôt de monter, elles l'empêchent de descendre. Le même article pose les exceptions qui tiennent encore — les entreprises nouvelles en sont exonérées pendant la réalisation du projet, dans la limite de trois ans à compter du dépôt de la déclaration d'existence, et les entreprises des zones de développement régional le sont également ; en sens inverse, le montant de 100 dinars est dû par les entreprises en cessation d'activité qui n'ont pas déposé leur déclaration, les totalement exportatrices exceptées.
+
+**Lire la suite 500 → 1 000 → 100 dinars comme une baisse serait donc un contresens**, exactement comme du côté de l'impôt sur les sociétés : les deux premiers chiffres bornent, le troisième impose.
+
+Trois textes règlent ensuite le curseur sans toucher au mécanisme.
+
+L'article 38 de la loi de finances pour 2011 porte le montant de 100 à **200 dinars**, par le membre de phrase qui vise d'un seul geste l'article 44 § II et l'article 49 § II [@lf-2011, art. 38] — c'est l'exemple de frontière déjà relevé plus haut.
+
+L'article 48 de la loi de finances pour 2014 **dédouble le taux** selon l'origine du chiffre d'affaires. Le chiffre d'affaires local supporte 0,2 %, avec un minimum de **300 dinars** ; celui qui provient de l'exportation, des établissements de santé travaillant pour les non-résidents et des produits à prix homologué dont la marge brute n'excède pas 6 % reste à 0,1 %, avec un minimum de **200 dinars** [@lf-2014, art. 48]. Les deux montants sont exigibles même sans chiffre d'affaires.
+
+L'article 10 de la loi de finances complémentaire pour 2014 ajoute enfin un **plancher d'une autre nature**, qui ne s'assied pas sur le chiffre d'affaires mais sur une comparaison. Pour les personnes visées au paragraphe II de l'article 22 qui exercent une activité ayant un équivalent dans le secteur public, l'impôt annuel ne peut être inférieur à celui qu'acquitte, pour la même activité et au même grade, un agent de ce secteur. La règle vaut à compter de la quatrième année d'activité suivant le dépôt de la déclaration d'existence, et à compter du 1^er^ janvier 2015 pour ceux qui dépassaient déjà quatre ans à cette date [@lfc-2014, art. 10].
+
+::: {.callout-note title="Deux articles de la même loi, à ne pas confondre"}
+La loi de finances complémentaire pour 2014 porte aussi une **contribution conjoncturelle**, instituée par son article 29 pour la seule année 2014 et assise notamment sur 50 % du minimum d'impôt de l'article 44 § II [@lfc-2014, art. 29]. Ce n'est pas un modificatif du minimum : celui-ci y sert d'assiette à un prélèvement temporaire. Un relevé qui rangerait les deux articles sur la même ligne ferait croire à une modification du minimum en 2014 alors qu'il n'en est rien.
+:::
+
+<!-- TODO (documentaliste) : deux points restent ouverts sur cette section.
+
+1. L'article 16 de la loi de finances pour 2019 appartient à la chaîne — il propage le taux de
+13,5 % dans le minimum d'impôt et dans les retenues à la source [@loi2018-56-lf2019, art. 16].
+Reste à établir s'il touche le paragraphe II de l'article 44 ou seulement celui de l'article 49.
+Le fait est sans portée pratique, ce palier de 13,5 % ayant été abrogé avant d'avoir régi un
+exercice, mais la chaîne doit être exacte. OBSTACLE : l'édition FRANÇAISE du JORT n° 104 de 2018
+n'existe ni au corpus local ni sur pist.tn, qui rend un 404 (vérifié le 20 septembre 2026, 289
+octets de page d'erreur). L'édition ARABE est au corpus et porte une couche texte de 1,3 Mo, mais
+son extraction ne rend pas les formes Unicode standard : « الحد الأدنى » n'y est pas trouvable
+par recherche. Lire à l'image, ou attendre la mise en ligne de l'édition française.
+
+2. Le plafonnement des déductions et avantages fiscaux — 60 % à partir de 2014, 45 % à partir de
+2020 selon les paramètres du modèle, sans référence. L'article qui le porte EST identifié : c'est
+l'article 12 bis de la loi n° 89-114, ce que le chapitre de l'impôt sur les sociétés établit de
+son côté. Restent à établir la série datée de ses taux et la référence JORT de chaque
+modificatif. Cf. Q9 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
 ## L'évolution des régimes dérogatoires
 
