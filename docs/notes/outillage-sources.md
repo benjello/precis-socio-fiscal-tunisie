@@ -133,6 +133,22 @@ Trois conséquences, dans l'ordre de gravité :
    emploient donc un contexte permissif : ils vérifient que la ressource EXISTE, sans se
    prononcer sur la confiance. En ligne de commande, `curl -k`.
 
+### L'édition ARABE de l'an 2000 ne suit pas la règle de nommage
+
+`sync_biblio.url_jort` dérive l'adresse arabe de l'adresse française en changeant `F/Jo` en
+`A/Ja`. La dérivation est bonne **sauf pour l'année 2000**, où l'édition arabe est servie sous
+`Ja<numéro><aa>` — deux chiffres d'année — alors que le français est en `Jo<numéro><aaaa>` :
+
+| | français | arabe |
+|---|---|---|
+| JORT n° 39 de **2000** | `Jo0392000.pdf` ✅ | `Ja0392000.pdf` ❌ → `Ja03900.pdf` ✅ |
+| JORT n° 1 de **2001** | `Jo0012001.pdf` ✅ | `Ja0012001.pdf` ✅ |
+
+Mesuré le 20 septembre 2026 sur quatre adresses ; 2001 suit déjà la règle générale, 2000 est donc
+l'année de bascule côté arabe. Rencontré deux fois dans la même séance, sur le JORT n° 14 et le
+n° 39 de 2000. **Une entrée arabe dont l'URL est en `Ja<numéro>2000.pdf` est fausse** : corriger
+à la main, la dérivation ne le fait pas.
+
 ## 3 bis. Les dates de `jort_cache` ne font pas foi contre le fascicule
 
 Sur 29 textes contrôlés lors du dossier « assistance sociale », **8 dates de publication de la
@@ -161,8 +177,26 @@ ocrmypdf -l fra --skip-text --jobs 4 in.pdf out.pdf && pdftotext out.pdf out.txt
 1983, 1986 et 1990.
 
 Cas particulier rencontré : certains fascicules (années 2000-2006, JORT n° 105/2004) ont une
-**couche texte à police décalée qui n'expose pas les chiffres**. Un `grep` y est structurellement
-incapable d'aboutir et un résultat nul n'y a **aucune valeur probante**. Lire à l'image.
+**couche texte à police décalée**. Un `grep` y est structurellement incapable d'aboutir et un
+résultat nul n'y a **aucune valeur probante**.
+
+**Ce décalage se décode, et l'océrisation n'est alors pas nécessaire.** Vérifié le 20 septembre
+2026 sur le JORT n° 97 de 2002 et le n° 8 de 2004 : l'encodage est décalé d'une constante de 29,
+lettres ET chiffres. Le fascicule paraît illisible — `pdftotext` rend
+`75$'8&7,21)5$1d$,6(` — et se relit intégralement en ajoutant 29 à chaque code :
+« TRADUCTION FRANÇAISE ». Les accents sortent corrects ; ne pas leur appliquer de substitution
+supplémentaire, qui les détruirait.
+
+```python
+def decode(s):  # sur la sortie de `pdftotext fascicule.pdf -`
+    return "".join(chr(ord(c) + 0x1D) if 0x20 <= ord(c) + 0x1D < 0x7F else c for c in s)
+```
+
+**Conséquence de méthode** : avant de déclarer un fascicule « sans couche texte » et de lancer une
+océrisation, tester le décalage. Deux des cinq décrets modifiant le décret n° 95-1166 auraient été
+déclarés illisibles à tort, dont celui qui récrit son article 30. Un test de lisibilité fondé sur
+la seule longueur du texte extrait classe ces fascicules parmi les scans, à tort — le test doit
+décoder avant de mesurer. Si le décalage ne donne rien, alors seulement lire à l'image.
 
 ## 6. Chaîne de rendu
 
