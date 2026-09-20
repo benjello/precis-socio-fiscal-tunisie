@@ -19,7 +19,7 @@ ce qu'il en coûte de l'ouvrir** : `todo-localisation.md`.
 
 | Livre | Écrit (lignes) | TODO | État |
 |---|---:|---:|---|
-| Fiscalité | 1 300 | 26 | **les quatre impôts sont écrits** ; l'impôt sur le revenu reste à réorganiser |
+| Fiscalité | 1 334 | 26 | **les quatre impôts sont écrits, et plus aucune section n'est vide** |
 | Retraites | 1 201 | 40 | rédigé sur le *Journal officiel*, tableaux de paramètres provisoires |
 | Rémunérations publiques | 751 | 33 | un chapitre abouti, trois chapitres brefs |
 | Prestations sociales | 708 | 12 | rédigé, plusieurs séries sans fondement publié |
@@ -46,8 +46,14 @@ absentes.
   et il a reçu sa section « La longue période ». La réorganisation par réforme, un temps
   envisagée, a été écartée après lecture — voir « Forme des chapitres » plus bas, qui en
   consigne le motif et la leçon.
-- **Sections à écrire dans l'IRPP** : le minimum d'impôt (art. 44 § II) et la contribution
-  au budget de l'État ; le régime forfaitaire depuis 1990, avec ses seuils et ses tarifs.
+- **Le livre n'a plus de section vide.** Le minimum d'impôt de l'article 44 § II et le régime
+  forfaitaire ont été écrits le 20 septembre, sur les textes. Ce qui y reste est du
+  dépouillement, et chaque obstacle est nommé dans la consigne correspondante : le tarif de
+  l'annexe II abrogée est dans le code de 1990, un SCAN ; les lois de finances pour 2016 et
+  2021 sont ABSENTES du corpus ; et l'article 16 de la loi de finances pour 2019 n'est
+  atteignable dans aucune des deux éditions — le français rend 404 sur pist.tn, et
+  l'extraction de l'arabe ne donne pas les formes Unicode standard.
+- **Reste à écrire** : la contribution au budget de l'État.
 - **Séries à construire** : le seuil de la tranche à 0 % et les déductions pour charges de
   famille, rapportés au SMIG et à l'indice des prix, 1990-2026 ; les tarifs successifs de la
   contribution des patentes ; le plafond de déduction des primes d'assurance-vie.
@@ -220,14 +226,13 @@ il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
 
 1. **Au 1er octobre, rattraper la traduction** : `workflow_dispatch` sans argument, puis
    relecture arabe. Onze fichiers, dont le chapitre entier de l'impôt sur les sociétés.
-2. **Écrire les deux sections manquantes de l'impôt sur le revenu** : le minimum d'impôt de
-   l'article 44 § II, dont la chaîne des modifications est déjà reconstituée, et la
-   chronologie datée du régime forfaitaire depuis 1990. Ce sont les deux dernières sections
-   vides du livre de la fiscalité.
-3. **Terminer la série en cours sur les retraites** : rejouer et fusionner les PR du modèle,
+2. **Terminer la série en cours sur les retraites** : rejouer et fusionner les PR du modèle,
    publier, puis remplacer les treize tableaux faits main.
-4. **Débloquer Zotero**, qui conditionne toute la tenue de la bibliographie.
-5. **Étoffer les trois chapitres brefs des rémunérations publiques**.
+3. **Débloquer Zotero**, qui conditionne toute la tenue de la bibliographie.
+4. **Étoffer les trois chapitres brefs des rémunérations publiques**.
+5. **Océriser les quelques fascicules qui bloquent plusieurs consignes à la fois** — le code
+   de 1990 en tête, qui porte à la fois l'annexe II du forfait et l'état d'origine de
+   plusieurs paramètres.
 
 Pour toute consigne qui demande de lire un texte, commencer par `todo-localisation.md` : sur
 les cent-quatorze fascicules recensés, **cinquante-deux se lisent aujourd'hui**, cinquante-
