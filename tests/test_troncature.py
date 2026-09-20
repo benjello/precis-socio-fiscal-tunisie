@@ -18,7 +18,8 @@ import sys
 import unittest
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
+RACINE = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(RACINE / "scripts"))
 
 from translate_sync import SEUIL_TRONCATURE, motif_de_troncature  # noqa: E402
 
@@ -94,3 +95,27 @@ class CasDegeneresTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TroncatureSansAncienneCible(unittest.TestCase):
+    """Le garde-fou doit servir AUSSI quand il n'y a pas d'ancienne traduction.
+
+    C'est le cas de la première traduction d'un fichier et, surtout, de la
+    RETRADUCTION COMPLÈTE, où l'ancienne cible est volontairement ignorée. Le
+    contrôle y était sauté — donc absent précisément là où la troncature est la
+    plus probable. Mesuré le 20 septembre 2026 sur le vrai script : une réponse de
+    trois lignes écrasait un chapitre arabe de 175 lignes, et la passe sortait en 0.
+    """
+
+    def test_la_source_sert_de_repere_a_defaut_de_cible(self):
+        # C'est la substitution que fait l'appelant : `avant` vaut la source.
+        self.assertIsNotNone(motif_de_troncature(185, 3, 185))
+
+    def test_une_traduction_complete_de_bonne_taille_passe(self):
+        self.assertIsNone(motif_de_troncature(185, 180, 185))
+
+    def test_l_appelant_ne_saute_plus_le_controle(self):
+        source = (RACINE / "scripts" / "translate_sync.py").read_text(encoding="utf-8")
+        self.assertNotIn("            if old_target_text:\n                motif =", source,
+                         "le contrôle ne doit plus dépendre de l'existence d'une cible")
+        self.assertIn("or len(new_source_text.splitlines())", source)

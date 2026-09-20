@@ -526,14 +526,23 @@ Fichier à traduire :
             # Une traduction n'est jamais beaucoup plus courte que ce qu'elle met à
             # jour, sauf si la SOURCE a elle-même raccourci. On compare donc les deux
             # rapports : la cible ne doit pas fondre plus vite que sa source.
-            if old_target_text:
-                motif = motif_de_troncature(
-                    len(old_target_text.splitlines()),
-                    len(translated_text.splitlines()),
-                    len(new_source_text.splitlines()),
-                )
-                if motif:
-                    raise RuntimeError(motif)
+            # LE REPÈRE « AVANT » MANQUE DANS DEUX CAS, et ce sont ceux où la
+            # troncature est la plus probable : la première traduction d'un fichier,
+            # et la RETRADUCTION COMPLÈTE, où l'ancienne cible est volontairement
+            # ignorée (voir plus haut). Le contrôle était alors sauté — il ne
+            # s'exécutait pas précisément quand il servait le plus. On se règle donc
+            # sur la SOURCE à défaut d'ancienne cible ; `motif_de_troncature` prend
+            # déjà le plus petit des deux repères, la substitution est sans effet
+            # quand les deux existent.
+            reference = (len(old_target_text.splitlines())
+                         or len(new_source_text.splitlines()))
+            motif = motif_de_troncature(
+                reference,
+                len(translated_text.splitlines()),
+                len(new_source_text.splitlines()),
+            )
+            if motif:
+                raise RuntimeError(motif)
 
             # `dirname` rend la chaîne VIDE pour une cible à la racine du dépôt —
             # `CHANGELOG_ar.md` est la seule dans ce cas —, et `os.makedirs('')` lève
