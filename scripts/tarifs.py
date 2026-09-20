@@ -50,6 +50,26 @@ TABLEAUX = {
         "champs": ["position", "produit", "Droit de consommation"],
         "entetes": ["Position", "Désignation des produits", "Droit de consommation"],
     },
+    # SIX COLONNES DE PÉRIODE, ET NON CINQ. Le taux de droit commun ne change que quatre
+    # fois, ce qui suffirait à cinq colonnes ; mais le taux des petites et moyennes
+    # sociétés naît en 2018, au milieu de la période où le droit commun vaut 25 %.
+    # Fondre 2014-2020 en une colonne ferait croire que ce taux a existé dès 2014.
+    "taux-chronologie": {
+        "champs": ["produit", "1990-2006", "2007-2013", "2014-2017", "2018-2020",
+                   "2021-2023", "Depuis 2024"],
+        "entetes": ["Taux", "1990-2006", "2007-2013", "2014-2017", "2018-2020",
+                    "2021-2023", "Depuis 2024"],
+    },
+    # LA PREMIÈRE LIGNE N'EST PAS UNE VALEUR MAIS UNE NATURE. De 1990 à 2005 les montants
+    # sont des PLAFONDS — le minimum « ne peut excéder » — et depuis 2006 des PLANCHERS.
+    # Un tableau qui les alignerait sans le dire ferait lire une baisse là où le
+    # mécanisme s'est inversé.
+    "minimum-impot": {
+        "champs": ["produit", "1990-1997", "1998-2005", "2006-2010", "2011-2013",
+                   "Depuis 2014"],
+        "entetes": ["Élément", "1990-1997", "1998-2005", "2006-2010", "2011-2013",
+                    "Depuis 2014"],
+    },
 }
 
 

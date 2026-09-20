@@ -1,0 +1,56 @@
+tableau,ordre,position,produit,colonne,valeur,unite,date_effet,date_fin,texte,article,statut
+taux-chronologie,0,,Droit commun,1990-2006,35,%,1990-01-01,2006-12-31,loi-irpp-is-1989,art. 49 § I,lu
+taux-chronologie,0,,Droit commun,2007-2013,30,%,2007-01-01,2013-12-31,loi-2006-80-reduction-taux,art. 1er § 1,lu
+taux-chronologie,0,,Droit commun,2014-2017,25,%,2014-01-01,2017-12-31,lf-2014,art. 18 § 1,lu
+taux-chronologie,0,,Droit commun,2018-2020,25,%,2018-01-01,2020-12-31,lf-2014,art. 18 § 1,lu
+taux-chronologie,0,,Droit commun,2021-2023,15,%,2021-01-01,2023-12-31,lf-2021,art. 14 § 1,lu
+taux-chronologie,0,,Droit commun,Depuis 2024,20,%,2024-01-01,,lf-2025,art. 37 § 1,lu
+taux-chronologie,1,,"Taux réduit — artisanat, agriculture, pêche, zones de développement régional, coopératives",1990-2006,10,%,1990-01-01,2006-12-31,loi-irpp-is-1989,art. 49 § I,lu
+taux-chronologie,1,,"Taux réduit — artisanat, agriculture, pêche, zones de développement régional, coopératives",2007-2013,10,%,2007-01-01,2013-12-31,loi-irpp-is-1989,art. 49 § I,lu
+taux-chronologie,1,,"Taux réduit — artisanat, agriculture, pêche, zones de développement régional, coopératives",2014-2017,10,%,2014-01-01,2017-12-31,loi-irpp-is-1989,art. 49 § I,lu
+taux-chronologie,1,,"Taux réduit — artisanat, agriculture, pêche, zones de développement régional, coopératives",2018-2020,10,%,2018-01-01,2020-12-31,loi-irpp-is-1989,art. 49 § I,lu
+taux-chronologie,1,,"Taux réduit — artisanat, agriculture, pêche, zones de développement régional, coopératives",2021-2023,10,%,2021-01-01,2023-12-31,loi-irpp-is-1989,art. 49 § I,lu
+taux-chronologie,1,,"Taux réduit — artisanat, agriculture, pêche, zones de développement régional, coopératives",Depuis 2024,10,%,2024-01-01,,lf-2025,art. 37 § 1,lu
+taux-chronologie,2,,Petites et moyennes sociétés — chiffre d'affaires au plus égal à 1 MD ou 500 mD,1990-2006,,,,,,,ligne inexistante
+taux-chronologie,2,,Petites et moyennes sociétés — chiffre d'affaires au plus égal à 1 MD ou 500 mD,2007-2013,,,,,,,ligne inexistante
+taux-chronologie,2,,Petites et moyennes sociétés — chiffre d'affaires au plus égal à 1 MD ou 500 mD,2014-2017,,,,,,,ligne inexistante
+taux-chronologie,2,,Petites et moyennes sociétés — chiffre d'affaires au plus égal à 1 MD ou 500 mD,2018-2020,20,%,2018-01-01,2020-12-31,lf-2018,art. 15,lu
+taux-chronologie,2,,Petites et moyennes sociétés — chiffre d'affaires au plus égal à 1 MD ou 500 mD,2021-2023,,,,,lf-2021,art. 14 § 2,ligne inexistante
+taux-chronologie,2,,Petites et moyennes sociétés — chiffre d'affaires au plus égal à 1 MD ou 500 mD,Depuis 2024,,,,,lf-2021,art. 14 § 2,ligne inexistante
+taux-chronologie,3,,"Secteurs majorés — finance, télécommunications, hydrocarbures, grande distribution",1990-2006,,,,,,,sans objet
+taux-chronologie,3,,"Secteurs majorés — finance, télécommunications, hydrocarbures, grande distribution",2007-2013,35,%,2007-01-01,2013-12-31,loi-2006-80-reduction-taux,art. 1er § 2,lu
+taux-chronologie,3,,"Secteurs majorés — finance, télécommunications, hydrocarbures, grande distribution",2014-2017,35,%,2014-01-01,2017-12-31,loi-2006-80-reduction-taux,art. 1er § 2,lu
+taux-chronologie,3,,"Secteurs majorés — finance, télécommunications, hydrocarbures, grande distribution",2018-2020,35,%,2018-01-01,2020-12-31,lf-2018,art. 29,lu
+taux-chronologie,3,,"Secteurs majorés — finance, télécommunications, hydrocarbures, grande distribution",2021-2023,35,%,2021-01-01,2023-12-31,loi2018-56-lf2019,art. 14,lu
+taux-chronologie,3,,"Secteurs majorés — finance, télécommunications, hydrocarbures, grande distribution",Depuis 2024,35,%,2024-01-01,,lf-2025,art. 37 §§ 3 et 4,lu
+taux-chronologie,4,,Banques et entreprises d'assurance,1990-2006,,,,,,,sans objet
+taux-chronologie,4,,Banques et entreprises d'assurance,2007-2013,35,%,2007-01-01,2013-12-31,loi-2006-80-reduction-taux,art. 1er § 2,lu
+taux-chronologie,4,,Banques et entreprises d'assurance,2014-2017,35,%,2014-01-01,2017-12-31,loi-2006-80-reduction-taux,art. 1er § 2,lu
+taux-chronologie,4,,Banques et entreprises d'assurance,2018-2020,35,%,2018-01-01,2020-12-31,loi-2006-80-reduction-taux,art. 1er § 2,lu
+taux-chronologie,4,,Banques et entreprises d'assurance,2021-2023,35,%,2021-01-01,2023-12-31,loi2018-56-lf2019,art. 14,lu
+taux-chronologie,4,,Banques et entreprises d'assurance,Depuis 2024,40,%,2024-01-01,,lf-2025,art. 37 § 2,lu
+minimum-impot,0,,Nature du minimum,1990-1997,plafond,,1990-01-01,1997-12-31,loi-irpp-is-1989,art. 49 § II,lu
+minimum-impot,0,,Nature du minimum,1998-2005,plafond,,1998-01-01,2005-12-31,lf-1998,art. 46,lu
+minimum-impot,0,,Nature du minimum,2006-2010,plancher,,2006-01-01,2010-12-31,lf-2006,art. 43 § 1,lu
+minimum-impot,0,,Nature du minimum,2011-2013,plancher,,2011-01-01,2013-12-31,lf-2011,art. 38,lu
+minimum-impot,0,,Nature du minimum,Depuis 2014,plancher,,2014-01-01,,lf-2014,art. 48 § 2,lu
+minimum-impot,1,,Taux — sociétés non soumises au taux de 10 %,1990-1997,"0,5",%,1990-01-01,1997-12-31,loi-irpp-is-1989,art. 49 § II,lu
+minimum-impot,1,,Taux — sociétés non soumises au taux de 10 %,1998-2005,"0,5",%,1998-01-01,2005-12-31,lf-1998,art. 46,lu
+minimum-impot,1,,Taux — sociétés non soumises au taux de 10 %,2006-2010,"0,1",%,2006-01-01,2010-12-31,lf-2006,art. 43 § 1,lu
+minimum-impot,1,,Taux — sociétés non soumises au taux de 10 %,2011-2013,"0,1",%,2011-01-01,2013-12-31,lf-2011,art. 38,lu
+minimum-impot,1,,Taux — sociétés non soumises au taux de 10 %,Depuis 2014,"0,2",%,2014-01-01,,lf-2014,art. 48 § 2,lu
+minimum-impot,2,,Taux — sociétés soumises au taux de 10 %,1990-1997,"0,5",%,1990-01-01,1997-12-31,loi-irpp-is-1989,art. 49 § II,lu
+minimum-impot,2,,Taux — sociétés soumises au taux de 10 %,1998-2005,"0,5",%,1998-01-01,2005-12-31,lf-1998,art. 46,lu
+minimum-impot,2,,Taux — sociétés soumises au taux de 10 %,2006-2010,"0,1",%,2006-01-01,2010-12-31,lf-2006,art. 43 § 1,lu
+minimum-impot,2,,Taux — sociétés soumises au taux de 10 %,2011-2013,"0,1",%,2011-01-01,2013-12-31,lf-2011,art. 38,lu
+minimum-impot,2,,Taux — sociétés soumises au taux de 10 %,Depuis 2014,"0,1",%,2014-01-01,,lf-2014,art. 48 § 2,lu
+minimum-impot,3,,Montant — sociétés non soumises au taux de 10 %,1990-1997,1 000,D,1990-01-01,1997-12-31,loi-irpp-is-1989,art. 49 § II,lu
+minimum-impot,3,,Montant — sociétés non soumises au taux de 10 %,1998-2005,2 000,D,1998-01-01,2005-12-31,lf-1998,art. 46,lu
+minimum-impot,3,,Montant — sociétés non soumises au taux de 10 %,2006-2010,250,D,2006-01-01,2010-12-31,lf-2006,art. 43 § 1,lu
+minimum-impot,3,,Montant — sociétés non soumises au taux de 10 %,2011-2013,350,D,2011-01-01,2013-12-31,lf-2011,art. 38,lu
+minimum-impot,3,,Montant — sociétés non soumises au taux de 10 %,Depuis 2014,500,D,2014-01-01,,lf-2014,art. 48 § 2,lu
+minimum-impot,4,,Montant — sociétés soumises au taux de 10 %,1990-1997,500,D,1990-01-01,1997-12-31,loi-irpp-is-1989,art. 49 § II,lu
+minimum-impot,4,,Montant — sociétés soumises au taux de 10 %,1998-2005,1 000,D,1998-01-01,2005-12-31,lf-1998,art. 46,lu
+minimum-impot,4,,Montant — sociétés soumises au taux de 10 %,2006-2010,100,D,2006-01-01,2010-12-31,lf-2006,art. 43 § 1,lu
+minimum-impot,4,,Montant — sociétés soumises au taux de 10 %,2011-2013,200,D,2011-01-01,2013-12-31,lf-2011,art. 38,lu
+minimum-impot,4,,Montant — sociétés soumises au taux de 10 %,Depuis 2014,300,D,2014-01-01,,lf-2014,art. 48 § 2,lu

@@ -26,6 +26,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Avancement d'échelon | الترقّي في الدرجة |  |
 | Ayant droit | ذو الحقّ |  |
 | Barème de l'impôt sur le revenu | جدول الضريبة على الدخل |  |
+| Bénéfice imposable | الربح الخاضع للضريبة |  |
 | Bénéfices des professions non commerciales | الأرباح غير التجارية | BNC |
 | Bénéfices industriels et commerciaux | الأرباح الصناعية والتجارية | BIC |
 | Bonification | الترفيع في مدّة الخدمات |  |
@@ -77,6 +78,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Grade | الرتبة |  |
 | Grille des salaires | شبكة الأجور |  |
 | Impôt sur le revenu des personnes physiques | الضريبة على دخل الأشخاص الطبيعيين | IRPP |
+| Impôt sur les sociétés | الضريبة على الشركات | IS |
 | Imputation du droit de consommation | خصم المعلوم على الاستهلاك |  |
 | Indemnité à caractère familial | المنحة ذات الصبغة العائلية |  |
 | Indemnité compensatrice | المنحة التعويضية |  |
@@ -92,6 +94,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Majoration pour salaire unique | منحة الأجر الوحيد |  |
 | Masse salariale | كتلة الأجور |  |
 | Minimum d'impôt | الضريبة الدنيا |  |
+| Minimum d'impôt sur le chiffre d'affaires | الضريبة الدنيا |  |
 | Mise à la retraite d'office | الإحالة الوجوبية على التقاعد |  |
 | Option pour la qualité d'assujetti | الاختيار للخضوع للأداء |  |
 | Ouvrier de l'État | عامل الدولة |  |

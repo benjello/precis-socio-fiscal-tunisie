@@ -1,4 +1,329 @@
-# L'impôt sur les sociétés (IS)
+# L'impôt sur les sociétés
 
-<!-- TODO: détailler -->
+L'[impôt sur les sociétés](#g-impot-societes) ne possède pas de code à lui. Il est régi par le code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés, promulgué par la loi n° 89-114 du 30 décembre 1989 et applicable aux bénéfices réalisés à compter du 1^er^ janvier 1990 [@loi-irpp-is-1989]. Le titre du code nomme les deux impôts ; le texte les traite ensemble, et cette cohabitation commande une bonne part du régime — à commencer par la question de savoir **où passe la frontière** entre les deux.
 
+::: {.callout-note title="Conventions de datation, propres à l'impôt sur les sociétés"}
+**1. Les dates sont des années de bénéfices, non de publication.** Les lois de finances disposent « applicable aux bénéfices réalisés à compter du 1^er^ janvier … ». Une loi publiée en décembre 2013 régit donc les bénéfices de 2014, et un tableau qui la daterait de 2013 serait décalé d'un exercice.
+
+**2. Une date d'effet peut être très éloignée de la publication.** L'article 18 de la loi de finances pour 2019 diffère l'application de ses propres articles 14 à 17 aux bénéfices réalisés à partir du 1^er^ janvier **2021** [@loi2018-56-lf2019, art. 18]. Trois ans séparent le vote de l'effet — et, on le verra, la disposition n'a pas survécu à cet intervalle.
+
+**3. Toutes les dates d'effet n'ont pas été lues.** Celles de 2007, 2014 et 2021 sont énoncées dans le texte même des lois et citées comme telles. Celles de 2006 et de 2011 résultent du régime de droit commun des lois de finances, les clauses d'application n'ayant pas été consultées : elles sont signalées comme **déduites** dans le manifeste du tableau du minimum d'impôt.
+
+**4. L'état consolidé du code ne montre que la dernière rédaction.** Un taux abrogé par un texte postérieur y devient invisible. Deux faits de ce chapitre ne s'établissent que par la lecture des lois de finances elles-mêmes, et seraient manqués par quiconque reconstituerait la chronologie à partir du seul code en vigueur.
+:::
+
+## Avant l'impôt sur les sociétés
+
+La séparation entre l'imposition des personnes physiques et celle des sociétés **n'est pas née du code de 1989** : celui-ci en a hérité.
+
+L'inventaire le plus sûr du système remplacé est donné par le texte qui l'abroge. L'article 2 de la loi n° 89-114 supprime, pour les bénéfices réalisés à compter du 1^er^ janvier 1990, l'**impôt sur les bénéfices des sociétés**, en le rattachant à l'article 9 de la loi n° 85-109 du 31 décembre 1985 [@loi-irpp-is-1989, art. 2]. Le chapitre consacré à l'impôt sur le revenu reproduit cet inventaire en entier ; il n'est pas repris ici.
+
+Un détail de cet article mérite en revanche d'être relevé, parce qu'il déplace l'origine. Le **même** article 9 de la loi de 1985 fonde aussi l'impôt sur les bénéfices industriels et commerciaux, celui des personnes physiques [@lf-1986, art. 9]. Un article unique portait donc les deux impôts. Et la loi de 1985 elle-même ne les crée pas : elle **modifie un code préexistant**, qu'elle désigne en toutes lettres comme « le code de l'impôt sur les bénéfices industriels et commerciaux, de l'impôt sur les bénéfices des sociétés et de l'impôt sur les bénéfices des professions non commerciales ».
+
+La lignée remonte donc plus haut que 1985, et plus haut que ce chapitre ne peut l'établir sur pièce. Les textes que cette rédaction de 1985 vise au passage — la loi n° 62-72 du 31 décembre 1962, un arrêté du 29 mars 1954, le décret du 31 mars 1932 pour la contribution personnelle d'État — n'ont pas été consultés, et rien n'en est affirmé ici. Ce qui est acquis suffit pourtant à corriger une idée reçue : **le code de 1989 a réuni dans un même texte deux impôts qui étaient déjà distincts, et déjà réunis dans un code commun**. Sa nouveauté est ailleurs — dans le barème, dans les catégories de revenus, dans la suppression de l'imposition cédulaire —, non dans la séparation des personnes physiques et des personnes morales.
+
+C'est donc un impôt déjà ancien que le code de 1990 reprend, renomme et reparamètre.
+
+## L'impôt institué en 1990
+
+### La frontière avec l'impôt sur le revenu
+
+La frontière n'a pas à être devinée : **le code l'énonce lui-même**. Son article 48, paragraphe I, dispose que « *les dispositions des articles 10 à 20 du présent code sont applicables à l'impôt sur les sociétés* » [@loi-irpp-is-1989, art. 48]. Une phrase délimite ainsi le tronc commun — celui des règles de détermination du résultat — et tout ce qui n'y figure pas relève de règles propres à chaque impôt.
+
+Mais le même article, dans ses huit autres paragraphes, énumère aussitôt ce que les sociétés ne partagent avec personne. Dès la phrase suivante, la provision déductible de l'article 12 est portée à **20 % du bénéfice imposable pour les entreprises bancaires**. Le paragraphe II admet en déduction les **réserves techniques** des compagnies d'assurance et de réassurance — risques en cours, sinistres à payer, réserves mathématiques-vie, rentes d'accidents du travail. Le paragraphe V refuse la déduction des rémunérations allouées aux **associés gérants** lorsque la majorité des parts est détenue par l'ensemble des gérants, en ajoutant à leurs parts celles de leur conjoint et de leurs enfants non émancipés. Le paragraphe VII plafonne la déduction des **intérêts servis aux comptes d'associés** à 12 % l'an, sous la double condition que les sommes productives d'intérêt n'excèdent pas en moyenne la moitié du capital social et que celui-ci soit entièrement libéré. Le paragraphe VIII pose que **l'impôt sur les sociétés n'est pas lui-même une charge déductible**. Le paragraphe IX organise enfin le **report du déficit sur trois exercices** [@loi-irpp-is-1989, art. 48].
+
+Le tronc commun tient donc en une phrase, et les règles propres en huit paragraphes. La proportion dit l'essentiel : l'assiette est partagée, les correctifs ne le sont pas.
+
+Trois conséquences en découlent, et elles sont plus instructives que la règle elle-même.
+
+D'abord, **l'assiette est largement commune**, quand les taux ne le sont pas. Les réintégrations, les amortissements, les charges déductibles se lisent aux mêmes articles pour une société et pour un commerçant individuel. Ce qui sépare les deux impôts n'est pas la manière de mesurer le bénéfice, mais ce qu'on lui applique ensuite : un barème progressif d'un côté, un taux proportionnel de l'autre.
+
+Ensuite, **la frontière est poreuse dans les deux sens**. Le code définit la sixième catégorie de revenus des personnes physiques — les revenus de valeurs mobilières — *par renvoi* à l'impôt sur les sociétés : sont visés les bénéfices distribués par les sociétés qui y sont passibles [@code-irpp-is-1990, art. 29]. L'impôt sur le revenu a donc besoin de la notion de société soumise à l'impôt sur les sociétés pour définir l'une de ses propres catégories.
+
+Enfin — et c'est le fait de frontière le plus net —, **certaines règles sont modifiées des deux côtés par un même article, le même jour**. Le [minimum d'impôt](#g-minimum-impot-chiffre-affaires) en offre l'exemple le plus littéral. L'article 38 de la loi de finances pour 2011 relève de 100 à 200 dinars « le montant prévu au paragraphe II de l'article 44 **et** au premier tiret de l'alinéa premier du paragraphe II de l'article 49 » du code [@lf-2011, art. 38]. Un seul membre de phrase règle simultanément le minimum de l'impôt sur le revenu et celui de l'impôt sur les sociétés. Ici, la frontière ne sépare pas deux règles : elle sépare deux réglages d'une même règle.
+
+### Le champ : quelles personnes morales
+
+L'article 45 du code désigne les assujettis par une **liste**, non par une définition. Sous réserve de l'article 4, l'impôt s'applique « *aux sociétés et autres personnes morales ci-après désignées, quel que soit leur objet, exerçant leur activité en Tunisie* » [@loi-irpp-is-1989, art. 45] :
+
+- les **sociétés visées à l'article 15 du code de commerce** ;
+- les **coopératives** de production, de consommation ou de services, et leurs unions ;
+- les **établissements publics et organismes** de l'État, des gouvernorats et des communes **à caractère industriel et commercial** jouissant de l'autonomie financière ;
+- les **sociétés civiles** s'il est établi qu'elles présentent en fait les caractéristiques des sociétés de capitaux ;
+- les **coparticipants d'associations en participation** lorsqu'ils ont la forme de personnes morales soumises à l'impôt sur les sociétés.
+
+Trois traits méritent d'être relevés. D'abord, la mention « *quel que soit leur objet* » : le champ suit la **forme juridique**, non l'activité — une société commerciale par la forme y entre même si son objet ne l'est pas. Ensuite, le quatrième tiret raisonne à l'inverse : une société civile y entre par ce qu'elle est **en fait**, non par ce qu'elle déclare. La forme commande, sauf lorsque les faits la démentent. Enfin, le cinquième tiret est un renvoi circulaire assumé — sont visés les coparticipants qui sont eux-mêmes des personnes morales soumises à l'impôt sur les sociétés.
+
+Le paragraphe II ajoute les personnes morales **non établies ni domiciliées en Tunisie** qui perçoivent les rémunérations de l'article 3-6 du code, ou qui y effectuent des opérations temporaires de montage ou de surveillance s'y rattachant.
+
+L'article 46 pose ensuite les **exonérations**, toutes « *dans la limite de leur objet social* » : les groupements interprofessionnels sans activité lucrative principale et à ressources fiscales ou parafiscales ; les assurances mutuelles régulièrement constituées ; les caisses d'épargne et de prévoyance administrées gratuitement ; les établissements publics et organismes de l'État ou des collectivités locales sans but lucratif ; les coopératives de services concourant à la commercialisation des produits agricoles ou de pêche et opérant dans l'enceinte des marchés de gros ; les coopératives de services agricoles et de pêche ; les coopératives ouvrières de production [@loi-irpp-is-1989, art. 46].
+
+Une remarque s'impose sur les **assurances mutuelles**, qui traversent ce chapitre de part en part. Exonérées en 1990, elles sont assujetties par l'article 28 de la loi de finances pour 2018 [@lf-2018, art. 28], entrent dans la liste des secteurs à 35 %, puis rejoignent le niveau à 40 % en 2024 [@lf-2025, art. 37]. En trente-quatre ans, une même catégorie de contribuables est donc passée de l'exonération au taux le plus élevé de la grille.
+
+### Comment se calcule l'impôt
+
+Le code ne donne nulle part une formule d'ensemble. Il procède par étapes successives, et l'ordre dans lequel il les dispose **est** la méthode. On peut la résumer ainsi :
+
+: Les sept étapes du calcul, et les articles qui les portent {#tbl-is-calcul}
+
+| Étape | Question | Article |
+|---|---|---|
+| 1 | Quels bénéfices sont imposables en Tunisie ? | art. 47 |
+| 2 | Sur quel exercice ? | art. 10 |
+| 3 | Quel est le résultat net ? | art. 11 |
+| 4 | Quelles charges viennent en déduction, et lesquelles sont exclues ? | art. 12 à 15 |
+| 5 | Quels correctifs propres aux sociétés s'y ajoutent ? | art. 48 |
+| 6 | Quel taux, et quel montant minimal ? | art. 49 |
+| 7 | Qu'a-t-on déjà versé, et que reste-t-il à payer ? | art. 51, 52 et 54 |
+
+**1. Le territoire avant tout.** Sont imposables « *les bénéfices réalisés dans le cadre d'établissements situés en Tunisie et ceux dont l'imposition est attribuée à la Tunisie par une convention fiscale de non double imposition* » [@loi-irpp-is-1989, art. 47]. Le critère n'est donc pas la nationalité de la société mais la localisation de l'établissement — et une convention internationale peut y ajouter ce que le seul droit interne n'y mettrait pas.
+
+**2. L'exercice, et le bilan qui le clôt.** L'impôt frappe le bénéfice net réalisé pendant l'année précédente, « *ou pendant la période de douze mois dont les résultats ont servi à l'établissement du dernier bilan, lorsque cette période ne coïncide pas avec l'année civile* » [@loi-irpp-is-1989, art. 10]. Le même article règle les cas de figure moins réguliers : exercice de plus ou de moins de douze mois, absence de bilan, ou pluralité de bilans dressés la même année.
+
+**3. Le résultat net, par comparaison de deux bilans.** C'est le cœur de la méthode, et il mérite d'être cité. Le résultat net est déterminé « *d'après les résultats d'ensemble des opérations de toute nature effectuées par l'entreprise, y compris notamment la cession de tout élément d'actif* », puis défini comme « *la différence entre les valeurs de l'actif net à la clôture et à l'ouverture de la période […] diminuée des suppléments d'apports et augmentée des prélèvements effectués au cours de cette période par l'exploitant ou par les associés* », l'actif net s'entendant de l'excédent des valeurs d'actif sur les créances des tiers, les amortissements et les provisions admises en déduction [@loi-irpp-is-1989, art. 11].
+
+Deux corollaires figurent au même article : les stocks et travaux en cours sont évalués **au prix de revient**, et les **subventions d'équipement** échappent au résultat de l'année de leur encaissement — elles y sont rapportées au rythme des amortissements, ou par dixièmes sur dix ans lorsqu'elles financent des immobilisations non amortissables. Les subventions d'exploitation et d'équilibre, au contraire, entrent dans le résultat de l'exercice où elles sont encaissées.
+
+**4. Les charges, et ce que la loi refuse d'y voir.** Le résultat net s'établit « *après déduction de toutes charges nécessitées par l'exploitation* » — frais de personnel, de main-d'œuvre, de loyer, et amortissements régulièrement comptabilisés [@loi-irpp-is-1989, art. 12]. Deux articles retranchent ensuite de cette générosité. L'article 14 exclut notamment les cadeaux et frais de réception au-delà d'un centième du chiffre d'affaires brut, les commissions et honoraires non déclarés, les charges des résidences secondaires, avions et bateaux de plaisance, les intérêts servis à l'exploitant, son salaire, et toutes les amendes et pénalités. L'article 15 interdit d'amortir les terrains, les fonds de commerce, les brevets et marques de fabrique.
+
+Ces deux listes disent une intention constante : **la charge doit servir l'exploitation, et l'impôt ne subventionne ni l'agrément ni l'infraction.**
+
+**5. Les correctifs propres aux sociétés.** Tout ce qui précède est commun aux bénéfices industriels et commerciaux des personnes physiques. C'est l'article 48 qui ajoute ce que les sociétés seules connaissent — provision bancaire, réserves techniques des assureurs, régime des gérants, plafond des intérêts d'associés, non-déductibilité de l'impôt lui-même, report du déficit sur trois exercices. On les a détaillés plus haut.
+
+**6. Le taux, et le plancher.** Le taux s'applique au bénéfice imposable « *arrondi au dinar inférieur* » [@loi-irpp-is-1989, art. 49]. Mais le résultat de cette multiplication n'est pas encore l'impôt dû : le paragraphe II du même article impose de le comparer au minimum assis sur le chiffre d'affaires, et de retenir le plus élevé des deux.
+
+**7. Ce qui a déjà été versé.** L'impôt ne se paie pas en une fois à la clôture. Les personnes morales acquittent **trois acomptes provisionnels**, égaux chacun à 30 % de l'impôt dû au titre de l'année précédente, dans les quinze derniers jours des sixième, neuvième et douzième mois suivant la clôture [@loi-irpp-is-1989, art. 51]. Une précision de ce texte mérite d'être relevée, parce qu'elle décide du sort des sociétés naissantes : les acomptes ne sont dus qu'« *à compter de la deuxième année d'activité* ». Leur assiette étant l'impôt de l'année précédente, une entreprise qui n'en a pas encore n'a rien à verser d'avance — et c'est le minimum d'impôt, non l'acompte, qui prend alors le relais.
+
+S'y ajoutent les **retenues à la source** opérées par leurs débiteurs [@loi-irpp-is-1989, art. 52]. Acomptes et retenues s'imputent sur l'impôt dû ; l'excédent est reportable, et peut être restitué sur demande après trois ans ou en cas de cessation d'activité [@loi-irpp-is-1989, art. 54].
+
+::: {.callout-note title="Ce qui a tenu, et ce qui a bougé"}
+Cette architecture **a tenu** : l'ordre des étapes, la comparaison des bilans, la logique des exclusions n'ont pas changé depuis 1990. Les **valeurs chiffrées** citées en exemple — le centième du chiffre d'affaires pour les frais de réception, le seuil de puissance fiscale des véhicules, le plafond des intérêts d'associés — sont en revanche celles du texte d'origine, et plusieurs ont été modifiées depuis par des lois de finances successives. Elles sont données pour illustrer la méthode, non pour servir de barème en vigueur.
+:::
+
+### Les paramètres d'origine
+
+Trois valeurs suffisent à décrire l'impôt tel qu'il naît.
+
+**Le taux de droit commun est de 35 %.** La rédaction d'origine de l'article 49 dispose que « *le taux de l'impôt sur les sociétés, appliqué au [bénéfice imposable](#g-benefice-imposable) arrondi au dinar inférieur, est fixé à 35 %* », et réserve aussitôt un taux de 10 % à une liste d'activités [@loi-irpp-is-1989, art. 49]. Il tiendra dix-sept exercices.
+
+**Un taux réduit de 10 % vise cinq catégories, et cinq seulement.** Le même article poursuit : « *Toutefois, ce taux est fixé à 10 % pour* », suivi de **cinq** catégories seulement — les entreprises exerçant une activité artisanale, agricole, de pêche ou d'armement de bateaux de pêche ; les centrales d'achat des entreprises de vente au détail organisées en coopératives de services ; les coopératives de services constituées entre producteurs pour la vente en gros de leur production ; les coopératives de consommation ; et les bénéfices de projets industriels ou commerciaux relevant du programme de l'emploi des jeunes ou du fonds national de promotion de l'artisanat et des petits métiers [@loi-irpp-is-1989, art. 49].
+
+La liste d'aujourd'hui en compte davantage : les investissements en zones de développement régional et dans les activités de lutte contre la pollution, ou les bénéfices agricoles après expiration de la période de déduction totale, **n'y étaient pas en 1990** — ce sont des ajouts postérieurs. Le taux, lui, n'a pas bougé d'un point en trente-cinq ans, pendant que le droit commun changeait quatre fois.
+
+**Le minimum d'impôt est un plafond, non un plancher.** Le paragraphe II du même article assoit sur le chiffre d'affaires un montant dont l'impôt annuel ne peut s'écarter — et cette formulation prudente n'est pas une coquetterie, car le mécanisme changera de sens en cours de route. Le code de 1990 dispose : « *L'impôt annuel ne peut être inférieur à un minimum de 0,5 % du chiffre d'affaires. Ce minimum **ne peut excéder** : 500 dinars pour les entreprises soumises au taux de 10 % ; 1 000 dinars pour les entreprises soumises au taux de 35 %* » [@loi-irpp-is-1989, art. 49]. Les montants **bornent la charge par le haut** : ce sont des plafonds.
+
+Ce minimum mérite d'être distingué de deux homonymes : il n'est ni le minimum d'impôt de l'article 12 *bis* de la loi n° 89-114, qui plafonne les avantages fiscaux et s'assied sur l'impôt théorique, ni celui de l'article 44 § II, qui en est l'équivalent du côté de l'impôt sur le revenu.
+
+## L'évolution, réforme par réforme
+
+C'est ici que l'état courant du code trompe le plus. Trente-cinq ans d'histoire tiennent en une douzaine de textes, et plusieurs des états qu'ils ont établis ont disparu de la rédaction consolidée.
+
+### 1998 — doubler les plafonds du minimum
+
+L'article 46 de la loi de finances pour 1998 double les deux montants — 1 000 et 2 000 dinars — sans toucher à leur nature, sous un intitulé qui la nomme d'ailleurs sans ambiguïté, « relèvement du **plafond** de l'impôt minimum » [@lf-1998, art. 46].
+
+Le geste a son jumeau de l'autre côté de la frontière, et c'est ce qui en fait plus qu'un réglage. Le minimum de l'impôt sur le revenu, à l'article 44 § II, était rédigé en 1990 dans les **mêmes termes inversés** — « 0,5 % du montant brut du chiffre d'affaires […] Ce minimum ne peut excéder 500 dinars » —, et l'article 45 de la loi de finances pour 1998 l'a relevé par le même mouvement que son jumeau [@lf-1998, art. 45]. Les deux minima sont nés ensemble, plafonnés ensemble, et seront retournés ensemble.
+
+### 2006 — retourner le minimum
+
+L'article 43 de la loi de finances pour 2006 récrit le paragraphe entier et le retourne : le minimum devient « *exigible même en cas de non réalisation de chiffre d'affaires* », égal à 100 dinars pour les entreprises au taux de 10 % et à 250 dinars pour celles au taux de 35 % [@lf-2006, art. 43]. Les mêmes lignes changent de sens : elles n'empêchent plus l'impôt de monter, elles l'empêchent de descendre. Le taux est divisé par cinq dans le même geste, de 0,5 % à 0,1 % — ce qui est logique, un plafond et un plancher n'ayant pas à être calibrés de la même façon.
+
+**Lire la suite 1 000 → 2 000 → 250 dinars comme une baisse serait donc un contresens.** Les deux premiers chiffres bornent, le troisième impose. C'est pour rendre ce renversement impossible à manquer que le tableau du minimum porte une ligne « nature du minimum » au-dessus des valeurs.
+
+Le minimum ne s'applique pas aux entreprises nouvelles durant la réalisation du projet, dans la limite de trois ans à compter du dépôt de la déclaration d'existence, ni aux entreprises des zones de développement régional et des secteurs de développement agricole pendant la période de déduction totale de leurs bénéfices [@lf-2006, art. 43]. Il est majoré de 50 % en cas de paiement plus d'un mois après l'expiration des délais légaux [@code-irpp-is-1990, art. 49].
+
+### 2007 — abaisser le droit commun, en exceptant neuf secteurs
+
+La loi n° 2006-80 annonce son objet dans son titre même : « *relative à la réduction des taux de l'impôt et à l'allègement de la pression fiscale sur les entreprises* ». Son article premier ramène le droit commun de 35 % à **30 %**, et l'article 19 de la même loi fixe son application au 1^er^ janvier 2007 [@loi-2006-80-reduction-taux, art. 1 et 19].
+
+Mais son paragraphe 2 **excepte aussitôt neuf secteurs**, qui demeurent à 35 % — établissements de crédit, organismes financiers travaillant avec les non-résidents, sociétés d'investissement, assurance et réassurance, recouvrement de créances, opérateurs de télécommunications, services dans le secteur des hydrocarbures, production et transport d'hydrocarbures, raffinage et vente en gros de produits pétroliers [@loi-2006-80-reduction-taux, art. 1]. Le même nombre devient un taux **sectoriel majoré**.
+
+**Il change ainsi de nature sans changer de valeur** : de 1990 à 2006 il était le droit commun. Et les neuf secteurs exceptés ont un trait commun — tous sont des activités réglementées et exercées sur le marché intérieur. L'allègement est donc général dans son principe et borné dans son champ.
+
+La mesure ne s'arrête d'ailleurs pas au taux, et c'est à cela qu'on la reconnaît comme une réforme. L'article 2 montre qu'abaisser le droit commun obligeait à récrire le minimum d'impôt, qui visait « les entreprises soumises au taux de 35 % » et vise désormais « le taux de 30 % **ou** le taux de 35 % » — sans que le montant bouge d'un dinar [@loi-2006-80-reduction-taux, art. 2].
+
+### 2011 — relever les planchers, des deux côtés de la frontière
+
+L'article 38 de la loi de finances pour 2011, intitulé « *Harmonisation du montant du minimum d'impôt avec l'impôt forfaitaire sur le revenu* », relève de 100 à 200 dinars le montant du premier tiret du paragraphe II de l'article 49, et de 250 à 350 dinars celui du deuxième tiret [@lf-2011, art. 38].
+
+Un seul membre de phrase règle ainsi les deux minima à la fois : la frontière ne sépare pas ici deux règles, mais deux réglages d'une même règle. Par sa portée, c'est le **réglage** type, et non la réforme — deux dispositions récrites, là où les textes de 2021 et de 2024 en réécriront chacun une vingtaine.
+
+### 2014 — abaisser à 25 %, et dédoubler le minimum
+
+L'article 18 de la loi de finances pour 2014 ramène le droit commun à **25 %** pour les bénéfices réalisés à compter du 1^er^ janvier 2014 [@lf-2014, art. 18].
+
+Son article 48 travaille au même moment sur le minimum, et y introduit une distinction qui n'existait pas. Jusque-là un taux unique s'appliquait, les deux régimes ne se distinguant que par leur montant ; l'article 48 de la loi de finances pour 2014 porte le régime normal à 0,2 % et maintient 0,1 % pour les sociétés imposées au taux de 10 % [@lf-2014, art. 48]. Le rapprochement des deux articles donne alors un fait que ni l'un ni l'autre ne montre seul — **le plancher a doublé en huit ans pendant que le taux nominal baissait** : de 250 dinars en 2006 à 350 en 2011 puis 500 en 2014, quand le taux nominal descendait de 35 % à 25 %. Pour une société sans bénéfice, la charge a augmenté au moment même où le taux affiché diminuait.
+
+### 2016 — resserrer le champ du taux réduit
+
+Ce qui bouge en 2016 n'est pas la valeur du taux réduit mais son **champ** : l'article 23 de la loi de finances pour 2016 le limite aux bénéfices provenant de l'activité principale [@lf-2016, art. 23]. Un périmètre qui se resserre à taux constant ne peut pas apparaître dans un tableau de taux ; il se dit ici.
+
+Aucun chiffre ne change, et c'est ce qui rend la mesure instructive. Le taux de 10 % n'aura pas bougé d'un point en trente-cinq ans — mais ce qu'il couvre, si.
+
+### 2018 — alléger le bas, élargir le haut
+
+La loi de finances pour 2018 agit aux deux extrémités de la grille, en sens inverse.
+
+**En bas**, l'article 15, intitulé « *soutien de la pérennité des petites et moyennes sociétés* », ajoute au premier paragraphe de l'article 49 un **palier à 20 %**, pour les bénéfices de l'activité principale des sociétés dont le chiffre d'affaires annuel hors taxes ne dépasse pas un million de dinars pour la transformation et l'achat-revente, ou cinq cent mille dinars pour les services et les professions non commerciales [@lf-2018, art. 15]. Il vit trois exercices — 2018, 2019 et 2020 — et meurt avec l'article 14 de la loi de finances pour 2021, qui abroge ce paragraphe [@lf-2021, art. 14]. C'est le second des deux faits qu'une lecture du seul code en vigueur manquerait.
+
+**En haut**, la liste des secteurs majorés s'allonge. L'article 29 de la loi de finances pour 2018, intitulé « *élargissement du champ d'application du taux de l'impôt sur les sociétés fixé à 35 %* », y ajoute les grandes surfaces commerciales, les concessionnaires automobiles et les franchisés d'une enseigne étrangère — sauf taux d'intégration d'au moins 30 % [@lf-2018, art. 29] ; son article 28 y avait ajouté les assurances mutuelles. Ces ajouts ont eux-mêmes été différés, puis rééchelonnés : l'article 89 de la loi de finances pour 2019 reporte aux bénéfices de 2020 l'entrée des grandes surfaces, en laissant les deux autres tirets à 2019 [@loi2018-56-lf2019, art. 89].
+
+Ce n'est pas une baisse nette mais une **redistribution à l'intérieur de la grille**. Le calendrier le confirme : l'allègement du bas s'applique immédiatement, tandis que l'article 67 § 4 échelonne l'entrée des nouveaux secteurs majorés [@lf-2018, art. 15, 28, 29 et 67].
+
+### 2019 — une politique industrielle votée, jamais appliquée
+
+L'article 14 de la loi de finances pour 2019 abroge et remplace le paragraphe I de l'article 49 tout entier, et y installe une grille à quatre niveaux dont un palier de **13,5 %**, visant une douzaine d'industries — électronique, mécanique, automobile, câbles, pharmacie, textile, agroalimentaire, centres d'appel, services informatiques, commerce international, conditionnement, logistique, plasturgie [@loi2018-56-lf2019, art. 14]. L'article 26 de la loi de finances pour 2020 y ajoute les services de conseil et d'études à forte valeur ajoutée [@lf-2020, art. 26].
+
+La cohérence est complète : l'article 16 insère « ou 13,5 % » dans le minimum d'impôt et dans les retenues à la source, l'article 17 aligne le code des hydrocarbures sur le même taux. Rien n'est laissé de côté [@loi2018-56-lf2019, art. 16 et 17].
+
+C'est précisément ce qui rend son sort remarquable. L'article 18 de la loi de finances pour 2019 différait l'application de cette grille aux bénéfices réalisés à partir du 1^er^ janvier 2021 [@loi2018-56-lf2019, art. 18]. Et avant que cette date ne fût atteinte, l'article 14 de la loi de finances pour 2021 a abrogé ce niveau et supprimé l'expression « ou 13,5 % » partout dans le code, pour ces mêmes bénéfices de 2021 [@lf-2021, art. 14].
+
+Institué en décembre 2018, étendu en décembre 2019, abrogé en décembre 2020, applicable en janvier 2021 : **ce taux n'a régi aucun exercice**. Il ne figure donc pas au tableau des taux, qui ne publie que des taux ayant produit effet. Ce n'est pas une omission mais une distinction : un taux voté et un taux appliqué ne sont pas la même chose, et le second seul se lit dans un tableau de taux.
+
+### 2021 — aplatir
+
+C'est le cas le plus net, et son intitulé le dit sans détour : « *révision des taux de l'impôt sur les sociétés et leur fixation au taux de 15 %* ».
+
+L'article 14 de la loi de finances pour 2021 dispose que « le taux de l'impôt sur les sociétés fixé à 25 % est réduit à **15 %** là où il se trouve dans les textes en vigueur », et son paragraphe 28 en fixe l'effet aux bénéfices réalisés à partir du 1^er^ janvier 2021 [@lf-2021, art. 14]. Le droit commun vaut donc 15 % pour les exercices 2021, 2022 et 2023.
+
+L'article compte **vingt-huit paragraphes, dont un seul change le taux** — celui qu'on vient de lire. Les vingt-sept autres propagent ce niveau unique à travers tout le code : abrogation du palier des petites et moyennes sociétés (§ 2) et du palier à 13,5 % (§ 3) ; réalignement des retenues à la source et des avances (§§ 4 à 10) ; option sur plus-value ramenée de 15 % à 10 % (§ 11) ; suppression de l'expression « ou 13,5 % » partout où elle figure (§ 16) ; minimum de l'article 12 de la loi n° 89-114 ramené de 15 % à 10 % (§ 20) ; reparamétrage du régime boursier (§§ 24 à 26) ; code des hydrocarbures porté de 13,5 % à 15 % (§ 27) [@lf-2021, art. 14].
+
+Lues isolément, les deux abrogations de paliers ressembleraient à des durcissements. Lues dans l'ensemble, ce sont des **conséquences arithmétiques** : à un droit commun de 15 %, un palier « réduit » à 20 % serait devenu une surtaxe, et un palier à 13,5 % ne se distinguerait plus de rien. La réforme ne supprime pas des avantages, elle **dissout la grille** dans un taux unique et bas.
+
+**Ce palier de 15 % a depuis disparu du code.** Une valeur postérieure l'a recouvert, et l'état consolidé n'en garde aucune trace. C'est l'un des deux faits annoncés en tête de chapitre : il ne s'établit que par la lecture des lois de finances elles-mêmes.
+
+### 2024 — remonter, en creusant l'écart
+
+L'article 37 de la loi de finances pour 2025 procède en sens inverse, et son intitulé annonce lui aussi son dessein : « *appui à l'équité fiscale par l'adoption de taux progressifs de l'impôt sur les sociétés* ». Il porte le droit commun à **20 %**, pour les bénéfices réalisés à partir du 1^er^ janvier 2024 [@lf-2025, art. 37] — l'écart entre le nom de la loi et l'année de bénéfices régie est ici maximal.
+
+Le même article crée surtout un **quatrième palier, à 40 %** (§ 2). Il vise les banques et les établissements financiers — à l'exception des établissements de paiement —, ainsi que les entreprises d'assurance et de réassurance, y compris les assurances mutuelles et les entreprises takaful [@lf-2025, art. 37]. Jusque-là, ces établissements relevaient du taux de 35 % : la grille de 2019 les y maintenait expressément, banques et compagnies d'assurance formant le premier et le quatrième tiret de ce niveau [@loi2018-56-lf2019, art. 14]. Ce quatrième palier est donc une **scission** de la liste majorée, non une création à partir de rien.
+
+Le reste de l'article suit. Les établissements de paiement sont versés au palier de 35 % (§ 3) tandis que deux de ses tirets sont abrogés (§ 4). Et la propagation est la même qu'en 2021, en miroir : retenues à la source relevées (§§ 5 à 8), minimum de l'article 12 porté à 25 % et réduit à 10 % pour les sociétés au taux de 20 % (§ 9), contribution sociale de solidarité étendue au nouveau palier (§§ 10 et 11), régime boursier réajusté (§§ 12 et 13) [@lf-2025, art. 37].
+
+### Ce qu'on reconnaît à une réforme
+
+Une loi de finances ne procède presque jamais par ajustement isolé : elle déplace plusieurs pièces d'un même mouvement, et c'est l'agencement qui porte l'intention. Un indice matériel permet de reconnaître une réforme d'un simple réglage — **le nombre de dispositions satellites qu'elle réaligne**. Changer un taux tient en une phrase ; le changer *vraiment* oblige à le suivre partout où le code le cite.
+
+Deux enseignements se dégagent de cette série, et ils valent au-delà de l'impôt sur les sociétés.
+
+Le premier est **un critère de lecture** : on reconnaît une réforme à sa portée collatérale. Les mesures de 2021 et de 2024 réécrivent chacune une vingtaine de dispositions ; celle de 2011 sur les planchers du minimum en réécrit deux. Les premières redessinent un système, la seconde en règle un curseur — et un tableau qui les alignerait sur une même ligne le masquerait.
+
+Le second est que **le même instrument a servi des desseins opposés en trois ans**. La loi de finances pour 2021 dissout la grille au nom de la simplicité et de l'attractivité ; celle pour 2025 la reconstruit au nom de l'équité. Aucun des deux textes n'est un ajustement de l'autre : ce sont deux conceptions successives de ce que l'impôt sur les sociétés doit faire, et les paramètres n'en sont que la trace chiffrée.
+
+## Un régime hors du code : l'admission en bourse
+
+Le taux que supporte effectivement une société ne se lit pas toujours dans le seul article 49. Pendant onze ans, un texte extérieur au code a pu s'y substituer.
+
+La loi n° 2010-29 réduit à **20 %** le taux de l'impôt sur les sociétés prévu aux premier et quatrième alinéas de l'article 49 § I, pour les sociétés qui admettent leurs actions ordinaires à la cote de la bourse des valeurs mobilières de Tunis, à condition que le taux d'ouverture du capital au public soit d'au moins 30 %, et ce **pendant cinq ans** à compter de l'année de l'admission. La fenêtre d'origine court du 1^er^ janvier 2010 au 31 décembre 2014, et l'avantage ne bénéficie pas aux entreprises visées aux sixième à neuvième tirets du quatrième alinéa — celles des hydrocarbures et du raffinage. La radiation de la cote pendant ces cinq années entraîne la déchéance de l'avantage et le paiement du différentiel, majoré des pénalités de retard [@loi-2010-29, art. 1 et 2].
+
+L'article 14 de la loi de finances pour 2021 en abroge plusieurs expressions de taux, ainsi que le quatrième paragraphe de son article premier, pour les bénéfices réalisés à partir du 1^er^ janvier 2021 [@lf-2021, art. 14]. Il serait tentant d'en conclure que le régime est mort — et ce serait faux.
+
+**Il a été reparamétré, non supprimé.** L'article 37 de la loi de finances pour 2025 modifie de nouveau la loi n° 2010-29 : son paragraphe 12 ajoute « ou 40 % » après le taux de 35 % aux articles premier et 2, et son paragraphe 13 remplace le taux de 15 % par celui de 20 % à l'article 3 [@lf-2025, art. 37]. On ne modifie pas un texte abrogé. Le régime survit donc, ajusté à la grille de taux en vigueur, et il commande la lecture de tout taux effectif d'une société admise à la cote.
+
+## La longue période
+
+### Les paramètres, en vue d'ensemble
+
+: Les taux de l'impôt sur les sociétés, par période de bénéfices {#tbl-is-taux}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../../scripts")
+import tarifs
+tarifs.imprime("tarifs/tarifs-releves-impot-societes.csv", "taux-chronologie")
+```
+
+Sources et couverture : voir le manifeste du relevé. **Les six colonnes ont été lues dans le texte de la loi qui les porte**, au *Journal officiel*, dans son édition française — y compris la dernière, que l'article 37 de la loi de finances pour 2025 fixe aux pages 3429-3431 du fascicule n° 149 du 10 décembre 2024. Le tiret des deux premières cellules de la colonne 1990-2006 signale qu'il n'existait alors aucun taux sectoriel distinct : le 35 % y était le droit commun, et non un taux majoré.
+
+Le tableau porte six colonnes là où le seul droit commun en appellerait cinq. La coupure de 2018 n'est pas commandée par lui, mais par le taux des petites et moyennes sociétés, qui naît au milieu de la période à 25 % : fondre 2014-2020 en une seule colonne ferait croire que ce taux existait dès 2014.
+
+**Ce que la série révèle, et qu'une lecture rapide manque.** Le taux n'a pas baissé continûment. Il a chuté de trente-cinq à quinze points en trente ans, puis **remonté** de cinq points. Or le palier de 15 % a disparu du code : une valeur postérieure l'a recouvert, et l'état consolidé n'en garde aucune trace. Reconstituer la chronologie à partir du seul code en vigueur donne « 25 % puis 20 % » — une baisse continue qui n'a jamais eu lieu.
+
+: Le minimum d'impôt de l'article 49 § II, assis sur le chiffre d'affaires {#tbl-is-minimum}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../../scripts")
+import tarifs
+tarifs.imprime("tarifs/tarifs-releves-impot-societes.csv", "minimum-impot")
+```
+
+Sources : @loi-irpp-is-1989, art. 49 § II ; @lf-1998, art. 46 ; @lf-2006, art. 43 § 1 ; @lf-2011, art. 38 ; @lf-2014, art. 48 § 2. Les montants sont en dinars. La série couvre toute la vie de l'impôt, l'état de 1990 ayant été lu par reconnaissance optique du fascicule des 2-5 janvier 1990, qui est un scan sans couche texte.
+
+Les jalons, enfin, rangés par **année de bénéfices**.
+
+: Les jalons de l'impôt sur les sociétés depuis 1990 {#tbl-is-jalons}
+
+| Bénéfices | Texte | Ce qu'il fait |
+|---|---|---|
+| 1990 | loi n° 89-114, art. 49 | institue l'impôt : **35 %**, taux réduit de **10 %** pour cinq catégories, minimum d'impôt de 0,5 % **plafonné** à 500 et 1 000 dinars |
+| 1998 | loi n° 97-88, art. 46 | **double les plafonds** du minimum d'impôt, à 1 000 et 2 000 dinars |
+| 2006 | loi n° 2005-106, art. 43 | **retourne le minimum d'impôt** : le plafond devient plancher, le taux tombe de 0,5 % à 0,1 % |
+| 2007 | loi n° 2006-80, art. 1^er^ | ramène le droit commun à **30 %** et fait du 35 % un **taux sectoriel** pour neuf activités |
+| 2011 | loi n° 2010-58, art. 38 | relève les planchers du minimum à 200 et 350 dinars, des deux côtés de la frontière |
+| 2014 | loi n° 2013-54, art. 18 et 48 | ramène le droit commun à **25 %** ; dédouble le taux du minimum en 0,2 % / 0,1 % et porte les planchers à 500 et 300 dinars |
+| 2016 | loi n° 2015-53, art. 23 | restreint le taux réduit aux bénéfices de l'**activité principale** — le champ bouge, le taux non |
+| 2018 | loi n° 2017-66, art. 15, 28 et 29 | crée un palier **PME à 20 %** sous seuils de chiffre d'affaires ; fait entrer les assurances mutuelles, la grande distribution, les concessionnaires et les franchisés dans le champ du 35 % |
+| *(2021, voté en 2018)* | loi n° 2018-56, art. 14 à 18 | refond l'article 49 § I tout entier, avec un palier à **13,5 %** — **différé à 2021, et abrogé avant d'y parvenir** |
+| 2021 | loi n° 2020-46, art. 14 | ramène le droit commun à **15 %** ; abroge le palier PME et celui de 13,5 % ; reparamètre le régime boursier |
+| 2024 | loi n° 2024-48, art. 37 | porte le droit commun à **20 %** ; crée un palier à **40 %** pour les banques et les assurances ; ajuste de nouveau le régime boursier |
+
+Sources : @loi-irpp-is-1989, art. 49 ; @lf-1998, art. 46 ; @lf-2006, art. 43 ; @loi-2006-80-reduction-taux, art. 1 ; @lf-2011, art. 38 ; @lf-2014, art. 18 et 48 ; @lf-2016, art. 23 ; @lf-2018, art. 15, 28 et 29 ; @loi2018-56-lf2019, art. 14 à 18 ; @lf-2021, art. 14 ; @lf-2025, art. 37.
+
+### Quatre mouvements de fond
+
+Quatre mouvements de fond s'en dégagent, et aucun ne se lit dans l'état courant du code.
+
+**Le taux nominal a baissé, puis remonté.** De 35 % à 15 % en trente et un ans, par quatre paliers, puis un retour à 20 %. Ce n'est pas la décrue continue qu'on décrit d'ordinaire : le point bas est en 2021, et le mouvement s'est inversé depuis.
+
+**La grille s'est compliquée, puis resserrée.** Un seul taux réduit en 1990, face à un droit commun unique. Puis les paliers se multiplient — sectoriel en 2007, PME en 2018, 13,5 % voté en 2019 — avant que la loi de finances pour 2021 n'en supprime deux d'un coup. Aujourd'hui la grille compte quatre niveaux, contre deux à l'origine et six au sommet de son extension théorique.
+
+**Le minimum d'impôt a changé de sens.** Conçu en 1990 comme un **plafond** qui bornait la charge par le haut, il est devenu en 2006 un **plancher** qui l'empêche de descendre. C'est le seul mécanisme du chapitre dont l'intention s'est inversée, et un lecteur qui suivrait la seule suite des montants — 500, 1 000, 2 000, puis 250 — n'y verrait qu'une baisse.
+
+**Le champ s'est élargi par le haut.** Les assurances mutuelles offrent le trajet le plus spectaculaire : **exonérées** par l'article 46 du code de 1990, assujetties en 2018, rangées dans le champ du 35 %, puis portées au taux de **40 %** en 2024. En trente-quatre ans, une même catégorie passe de l'exemption au taux le plus élevé de la grille.
+
+Un cinquième enseignement n'est pas un mouvement mais une mise en garde de méthode. **Un texte voté n'est pas un texte appliqué.** La refonte de 2018, différée de trois ans par son propre article 18, a été vidée par la loi de finances pour 2021 avant d'avoir régi un seul exercice. Une chronologie bâtie sur les dates de publication la compterait comme une réforme ; elle n'en fut jamais une.
+
+## Ce que l'impôt rapporte
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import impot_societes as fig_is
+import figtools
+figtools.figure_tabs(
+    fig_is.fig_rendement(), fig_is.table(),
+    "recettes-fiscales-composition", "irpp-ratios",
+    slug="fig_impot_societes_rendement",
+    caption="Ce que rapporte l'impôt sur les sociétés, 1986-2025",
+    note_lecture=(
+        "La bande grise couvre les exercices 1986 à 1989, que la rubrique du ministère "
+        "intitule déjà « impôts sur les sociétés » alors que l'impôt sur les sociétés "
+        "n'existe pas encore : ces années portent l'impôt sur les bénéfices des sociétés "
+        "de la loi n° 85-109, abrogé par le code de 1989. La courbe de droite ne commence "
+        "qu'en 1990, les dépenses totales de l'État n'étant pas publiées avant cette date. "
+        "Dans l'onglet « Données », les deux colonnes de produit intérieur brut portent le "
+        "même chiffre sur la plus grande partie de la période : les deux sources ne "
+        "divergent que pour sept exercices, dont 2012 à 2014 où l'écart atteint 5 %. Cette "
+        "égalité est un fait des sources, non un doublon."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
+Trois traits s'en dégagent.
+
+**Le rendement a doublé en points de produit intérieur brut**, de 1,86 % pour les bénéfices de 1990 à 3,77 % en 2025. Rapporté aux dépenses de l'État, le mouvement est du même ordre : de 6,3 % à 12,4 %. L'impôt sur les sociétés finance aujourd'hui près d'un huitième de la dépense publique, contre un seizième à sa création.
+
+**Mais sa part dans les recettes fiscales progresse beaucoup plus lentement.** Elle passe de 9,3 % en 1990 à 14,6 % en 2025 — une progression de moitié, quand l'impôt sur le revenu, sur la même période, triple la sienne. Les deux impôts partagent un code ; ils ne partagent pas une trajectoire.
+
+**Le taux nominal et le rendement ont évolué en sens inverse — sur la longue période.** Pendant que le taux de droit commun passait de 35 % à 20 %, la part de l'impôt dans les recettes fiscales montait de 9,3 % à 14,6 %.
+
+**Mais la coupe de 2021 fait exception, et c'est l'épisode le plus instructif de la série.** Les trois exercices imposés à 15 % sont précisément ceux où la part recule : 13,27 % des recettes fiscales en 2019, alors que le taux était de 25 %, puis 11,50 % en 2020, **10,51 % en 2021** — le point bas de la décennie —, 12,17 % en 2022 et 12,24 % en 2023. La part ne retrouve son niveau d'avant la coupe qu'en 2024, à 13,00 %, une fois le taux relevé à 20 %, et le dépasse en 2025 à 14,55 %. Sur ces cinq années, le rendement relatif de l'impôt suit donc le taux plutôt qu'il ne s'y oppose.
+
+Deux précautions s'imposent avant d'en tirer quoi que ce soit. La première est que 2020 et 2021 sont aussi les exercices de la crise sanitaire, dont les effets sur l'assiette ne peuvent pas être séparés ici de ceux du taux. La seconde est que les bénéfices d'un exercice sont déclarés l'année suivante : le décalage entre la décision fiscale et son empreinte budgétaire n'est pas mesuré par cette série. Ce chapitre ne propose donc pas d'explication de ces mouvements : l'élargissement de l'assiette, la croissance du nombre de sociétés soumises au régime réel, le rendement propre des secteurs majorés et la conjoncture des hydrocarbures y contribuent vraisemblablement, mais aucune des sources citées ici ne permet d'en mesurer les parts respectives.
+
+Une limite doit enfin être signalée, parce qu'elle borne ce que la figure autorise à dire. Le classeur du ministère distingue les impôts sur les sociétés **pétrolières** et **non pétrolières** ; la série reprise ici n'en conserve que l'agrégat. Aucun commentaire de cette figure ne peut donc porter sur la part pétrolière du rendement, alors même que c'est l'une des questions que la chronologie des taux majorés appellerait naturellement.
