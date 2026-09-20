@@ -99,20 +99,22 @@ absentes.
   ouverte, et aucune de ses quatre branches non fusionnées ne crée les paramètres qui
   manquent.
 
-  **Quatre appellent un versement de paramètres qui n'a jamais été fait** — c'est là qu'une PR
-  au modèle a un sens. Le cinquième, la fenêtre du salaire moyen de référence, **a été versé
-  le 20 septembre 2026** (openfisca-tunisia-pension #51) ; son tableau reste néanmoins tenu à
-  la main, le paramètre ne couvrant que trois de ses cinq lignes :
+  **Le versement est fait, le 20 septembre 2026** — PR openfisca-tunisia-pension #51 pour la
+  fenêtre du salaire moyen de référence, puis #52 pour les trois autres jeux. Ce qui en
+  résulte n'est pas ce qu'on attendait : **un seul tableau devient engendrable**, les autres
+  changent de motif sans changer de statut.
 
-  | Tableau | Ce qui manque à l'arbre |
+  | Tableau | Ce que le versement a changé |
   |---|---|
-  | `_secteur_public.qmd:485` | les âges de mise à la retraite **par grade militaire** |
-  | `_secteur_prive.qmd:238` | la branche **« survivants »** du régime non agricole |
-  | `_secteur_prive.qmd:116` | les quatre cas de l'article 15 *bis* et la jouissance à 55 ans de l'article 15 *ter* ; seul l'âge de 50 ans de 1982 existe |
-  | `_secteur_public.qmd:252` | la distinction des trois colonnes de l'article 32 ; le barème 5/4/3/2 est bien là |
+  | âges militaires | **engendré depuis le 20 septembre 2026.** Cinq grades, deux dates, tout est dans l'arbre |
+  | survivants du RSNA | la branche existe, mais trois des six lignes sont des **règles** — remariage, plafond de cumul, cumul invalidité/survivant |
+  | départs anticipés du RSNA | les durées et les taux sont versés ; les **conditions** de chaque cas ne sont pas des valeurs datées |
+  | article 32 de la loi n° 85-12 | seul le repère d'âge serait versable, et sa date d'effet de 2019 n'est pas établie |
 
-  Le plus net à verser est désormais **la branche « survivants »** du régime non agricole :
-  l'arbre `rsna` n'en a aucune, et le chapitre en expose les taux.
+  **Ce qui reste à verser au modèle est donc très peu de chose** : le repère d'âge de
+  l'article 32, qui attend qu'on lise la clause d'entrée en vigueur de l'article 2 de la loi
+  n° 2019-37. Tout le reste de ce que les tableaux affirment est hors de portée d'un arbre de
+  paramètres, et le dire une fois évite d'y revenir.
 
   **Trois resteront à la main, et c'est justifié.** Les conditions d'âge, d'études et de
   ressources de la pension d'orphelin ne sont pas des valeurs datées. Et les deux tableaux de
@@ -251,10 +253,9 @@ il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
 
 1. **Au 1er octobre, rattraper la traduction** : `workflow_dispatch` sans argument, puis
    relecture arabe. Onze fichiers, dont le chapitre entier de l'impôt sur les sociétés.
-2. **Verser au modèle les quatre jeux de paramètres qui manquent encore aux retraites.** Le
-   cinquième — la fenêtre du salaire moyen de référence — est versé depuis le 20 septembre
-   2026. Restent les âges militaires par grade, la branche « survivants », les cas de
-   l'article 15 *bis* et les trois colonnes de l'article 32.
+2. **Le versement des paramètres de retraite est fait** (PR openfisca-tunisia-pension #51
+   et #52). Ne reste que le repère d'âge de l'article 32, suspendu à la lecture de la clause
+   d'entrée en vigueur de l'article 2 de la loi n° 2019-37.
 3. **Débloquer Zotero**, qui conditionne toute la tenue de la bibliographie.
 4. **Étoffer les trois chapitres brefs des rémunérations publiques**.
 5. **Océriser les quelques fascicules qui bloquent plusieurs consignes à la fois** — le code

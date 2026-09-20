@@ -470,21 +470,15 @@ Les militaires relèvent du régime des pensions civiles et militaires, dont la 
 
 **L'âge de mise à la retraite dépend du grade.**
 
-| Grade | Loi n° 85-12 (12 septembre 1985) | Loi n° 88-71 (1^er^ janvier 1989) |
-|---|---|---|
-| Hommes de troupe, quartiers-maîtres et matelots | 50 ans | 50 ans |
-| Sous-officiers et officiers mariniers | 55 ans | 55 ans |
-| Officiers subalternes | 58 ans | 58 ans |
-| Officiers supérieurs | 60 ans | 60 ans |
-| Officiers généraux | 62 ans | 60 ans |
+```{python}
+#| echo: false
+#| output: asis
+table("cnrps_militaires_ages",
+      "Âge de mise à la retraite des militaires, par grade et par date d'effet",
+      "tbl-militaires-ages")
+```
 
-: Âge de mise à la retraite des militaires, 1985 et 1989 {#tbl-militaires-ages}
-
-Sources : @loi85-12, art. 61 ; @loi88-71, art. 1 (art. 61, 1°).
-
-<!-- Tableau tenu à la main, et non engendré : aucun paramètre de retraite ne porte les âges
-de mise à la retraite par grade militaire. Voir l'en-tête de
-scripts/generate_retraites_tables.py. -->
+Sources : @loi85-12, art. 61 ; @loi88-71, art. 1 (art. 61, 1°). La loi de 1988 réécrit l'article 61 en entier, mais ne change qu'un seul de ces âges : les quatre autres sont reconduits.
 
 La loi n° 88-71 aligne ainsi les officiers généraux sur les officiers supérieurs. L'article 61 § 1 (nouveau) issu de la loi n° 2019-37 retient ensuite quatre âges — 52, 57, 60 et 62 ans —, les officiers généraux étant portés à 62 ans [@loi2019-37, art. 1] ; la répartition des trois autres âges entre les grades n'est pas exposée ici. Le calendrier transitoire de 2019 décrit plus haut s'applique aussi à cet article. La loi de 1988 reproduit à l'identique les durées de services qui permettent aux militaires de partir avant l'âge de leur grade [@loi88-71, art. 1].
 
