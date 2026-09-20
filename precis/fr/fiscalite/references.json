@@ -430,7 +430,7 @@
       "id": "lf-1998",
       "type": "legislation",
       "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: lf-1998\nissue: 104\nJORT n° 104 des 30-31 décembre 1997. Article 62, p. 2441 : minimum d'impôt au titre des avantages fiscaux, fixé à 60 % de l'impôt dû, applicable à compter du 1er janvier 1999. Article 61 : abattement sur les pensions de source étrangère par renvoi à l'article 26 du code. Métadonnées vérifiées dans le corpus JORT local (jort_cache.db).\nDROIT DE CONSOMMATION : la liste DGELF porte l'article 47 comme modifiant la liste annexée à la loi n° 88-62. Ce NUMÉRO est corroboré sur pièce : l'article 50 de la loi n° 98-111 (LF 1999), lu à la lettre, vise « l'article 47 de la loi n° 97-88 du 29 décembre 1997 portant loi de finances pour l'année 1998 ». Le CONTENU de l'article 47 n'a pas été lu.",
+      "note": "citation-key: lf-1998\nissue: 104\nJORT n° 104 des 30-31 décembre 1997. Article 62, p. 2441 : minimum d'impôt au titre des avantages fiscaux, fixé à 60 % de l'impôt dû, applicable à compter du 1er janvier 1999. Article 61 : abattement sur les pensions de source étrangère par renvoi à l'article 26 du code. Métadonnées vérifiées dans le corpus JORT local (jort_cache.db).\nDROIT DE CONSOMMATION : la liste DGELF porte l'article 47 comme modifiant la liste annexée à la loi n° 88-62. Ce NUMÉRO est corroboré sur pièce : l'article 50 de la loi n° 98-111 (LF 1999), lu à la lettre, vise « l'article 47 de la loi n° 97-88 du 29 décembre 1997 portant loi de finances pour l'année 1998 ». Le CONTENU de l'article 47 n'a pas été lu.\nJORT n° 104 des 30-31 décembre 1997, tome 140. ARTICLE 46 LU SUR PIÈCE, PAGE 2439, sous l'intitulé « Relèvement du plafond de l'impôt minimum sur le revenu et sur les sociétés » : « L'impôt annuel ne peut être inférieur à un minimum égal à 0,5 % du chiffre d'affaires SANS QUE CE MINIMUM EXCÈDE : 1 000 dinars pour les entreprises soumises au taux de 10 % ; 2 000 dinars pour les entreprises soumises au taux de 35 % » — les montants sont alors des PLAFONDS, et le resteront jusqu'à la loi de finances pour 2006 qui retourne le mécanisme. L'article 45, qui le précède, fait le même travail sur l'article 44 § II, côté impôt sur le revenu. Les deux articles posent en outre un montant de 100 dinars pour les entreprises sans chiffre d'affaires ou en cessation d'activité n'ayant pas déposé la déclaration de l'article 58.",
       "page": "2435-2559",
       "title": "Loi n° 97-88 du 29 décembre 1997, portant loi de finances pour la gestion 1998",
       "URL": "https://www.pist.tn/jort/1997/1997F/Jo10497.pdf",
@@ -444,7 +444,8 @@
         ]
       },
       "issue": "104",
-      "title-short": "Loi n° 97-88 du 29 décembre 1997"
+      "title-short": "Loi n° 97-88 du 29 décembre 1997",
+      "volume": "140"
     },
     {
       "id": "lf-2005",
@@ -932,13 +933,76 @@
       "title-short": "Décret n° 2004-1773 du 2 août 2004"
     },
     {
+      "id": "lf-2006",
+      "type": "legislation",
+      "title": "Loi n° 2005-106 du 19 décembre 2005, portant loi de finances pour l'année 2006",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "101",
+      "volume": "148",
+      "page": "3596-3702",
+      "issued": {
+        "date-parts": [
+          [
+            2005,
+            12,
+            19
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2005/2005F/Jo1012005.pdf",
+      "note": "citation-key: lf-2006\nPublié le 20 décembre 2005. Art. 43, p. 3601-3602 : révise le minimum d'impôt de l'article 49 § II du code — « L'impôt annuel ne peut être inférieur à un montant égal à 0,1 % du chiffre d'affaires brut autre que celui provenant de l'exportation », avec un minimum exigible même en l'absence de chiffre d'affaires de 100 dinars pour les entreprises soumises au taux de 10 % et de 250 dinars pour celles soumises au taux de 35 %. L'art. 42, qui le précède immédiatement, fait le même travail sur l'article 44 § II, côté impôt sur le revenu : les deux minima sont réglés par deux articles consécutifs. Art. 43 § 3 : le minimum ne s'applique pas aux entreprises des zones de développement régional ni des secteurs de développement agricole pendant la période de déduction totale. Texte lu sur pièce dans l'édition française du fascicule.",
+      "title-short": "Loi n° 2005-106 du 19 décembre 2005"
+    },
+    {
+      "id": "lf-2011",
+      "type": "legislation",
+      "title": "Loi n° 2010-58 du 17 décembre 2010, portant loi de finances pour l'année 2011",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "102",
+      "volume": "153",
+      "page": "3460-3674",
+      "issued": {
+        "date-parts": [
+          [
+            2010,
+            12,
+            17
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2010/2010F/Jo1022010.pdf",
+      "note": "citation-key: lf-2011\nPublié le 21 décembre 2010. Art. 38, p. 3474, intitulé « Harmonisation du montant du minimum d'impôt avec l'impôt forfaitaire sur le revenu » : son § 1 relève de 100 à 200 dinars « le montant prévu au paragraphe II de l'article 44 ET au premier tiret de l'alinéa premier du paragraphe II de l'article 49 » du code — un seul membre de phrase modifiant le minimum de l'impôt sur le revenu et celui de l'impôt sur les sociétés ; son § 2 relève de 250 à 350 dinars le montant du deuxième tiret de l'article 49 § II. Texte lu sur pièce dans l'édition française du fascicule.",
+      "title-short": "Loi n° 2010-58 du 17 décembre 2010"
+    },
+    {
+      "id": "loi-2010-29",
+      "type": "legislation",
+      "title": "Loi n° 2010-29 du 7 juin 2010, relative à l'encouragement des entreprises à l'admission de leurs actions à la bourse",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "47",
+      "volume": "153",
+      "page": "1620",
+      "issued": {
+        "date-parts": [
+          [
+            2010,
+            6,
+            7
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2010/2010F/Jo0472010.pdf",
+      "note": "citation-key: loi-2010-29\nPublié le 11 juin 2010. Article premier : le taux de l'impôt sur les sociétés prévu aux premier et quatrième alinéas de l'article 49 § I du code est réduit à 20 % pour les sociétés qui admettent leurs actions ordinaires à la cote de la bourse des valeurs mobilières de Tunis, à condition que le taux d'ouverture du capital au public soit d'au moins 30 %, et ce pendant cinq ans à compter de l'année de l'admission. La fenêtre d'origine court du 1er janvier 2010 au 31 décembre 2014, et le régime ne s'applique pas aux entreprises visées aux sixième à neuvième tirets du quatrième alinéa. Art. 2 : la radiation de la cote pendant les cinq années entraîne la déchéance de l'avantage et le paiement du différentiel, majoré des pénalités de retard. Texte lu sur pièce dans l'édition française du fascicule.",
+      "title-short": "Loi n° 2010-29 du 7 juin 2010"
+    },
+    {
       "id": "loi-2006-80-reduction-taux",
       "type": "legislation",
       "title": "Loi n° 2006-80 du 18 décembre 2006, relative à la réduction des taux de l'impôt et à l'allègement de la pression fiscale sur les entreprises",
       "container-title": "Journal Officiel de la République Tunisienne",
       "issue": "101",
       "volume": "149",
-      "page": "4302-4303",
+      "page": "4298-4303",
       "issued": {
         "date-parts": [
           [
@@ -949,7 +1013,7 @@
         ]
       },
       "URL": "https://www.pist.tn/jort/2006/2006F/Jo1012006.pdf",
-      "note": "Publié le 19 décembre 2006. Art. 13 : suppression du taux de 29 %. Art. 17 : remplacement du taux de 10 % par 12 %, dans le code et partout ailleurs. Effet au 1er janvier 2007.",
+      "note": "Publié le 19 décembre 2006. La loi s'étend des pages 4298 à 4303. Article premier § 1, page 4300 : le taux de 35 % prévu au paragraphe I de l'article 49 du code de l'IRPP et de l'IS est remplacé par le taux de 30 %. Article premier § 2 : le taux de 35 % est maintenu pour neuf secteurs (établissements de crédit ; organismes financiers travaillant avec les non-résidents, pour leurs opérations avec les résidents ; sociétés d'investissement ; assurance et réassurance ; recouvrement de créances ; opérateurs de télécommunications ; services dans le secteur des hydrocarbures ; production et transport d'hydrocarbures ; raffinage et vente en gros de produits pétroliers). Art. 2 : harmonisation de la rédaction du minimum d'impôt — 250 dinars pour les entreprises soumises au taux de 30 % ou au taux de 35 % — sans changement de montant. Art. 13 et 17 : taux de la TVA (suppression du taux de 29 % ; remplacement du taux de 10 % par 12 %, dans le code de la TVA et partout ailleurs) — ce sont des taux de TVA, et non d'impôt sur les sociétés ; le taux réduit de 10 % de l'impôt sur les sociétés n'a pas bougé en 2006. Art. 19 : application à compter du 1er janvier 2007, sous réserve des articles 5 à 12. Texte lu sur pièce.",
       "title-short": "Loi n° 2006-80 du 18 décembre 2006"
     },
     {

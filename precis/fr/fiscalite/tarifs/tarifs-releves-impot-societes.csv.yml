@@ -1,0 +1,120 @@
+# Manifeste des taux relevés de l'impôt sur les sociétés.
+#
+# Fichier TENU À LA MAIN — il n'est produit par aucun générateur. Il accompagne
+# tarifs-releves-impot-societes.csv, dont il énonce la provenance et les LIMITES DE
+# COUVERTURE.
+#
+# Le CSV est en FORMAT LONG : une ligne par (tableau, produit, colonne). Les états qui
+# ne sont pas des valeurs — un taux qui n'existait pas encore, un taux abrogé — sont
+# portés par le champ `statut`, la cellule `valeur` restant vide.
+#
+# POURQUOI SIX COLONNES DE PÉRIODE ET NON CINQ. Le taux de droit commun ne change que
+# quatre fois, ce qui donnerait cinq colonnes. Mais le taux des petites et moyennes
+# sociétés naît en 2018, au milieu de la période où le droit commun vaut 25 %. Fondre
+# 2014-2020 en une seule colonne ferait croire que ce taux a existé dès 2014. La
+# coupure 2014-2017 / 2018-2020 est donc imposée par un autre taux que celui de la
+# première ligne.
+
+format: long
+cle_de_ligne: [tableau, ordre, colonne]
+statuts:
+  lu: valeur lue dans le texte cité
+  consolidé: valeur lue dans un état consolidé du code, non dans le texte d'origine
+  ligne inexistante: le taux n'existait pas à cette date, ou avait été abrogé
+  ligne scindée: la ligne a été remplacée par plusieurs lignes à cette date
+  non établi: la valeur n'a pas été vérifiée sur pièce
+  sans objet: ligne née d'une scission postérieure, sans antécédent à cette date
+
+tableaux:
+
+  taux-chronologie:
+    titre: Les taux de l'impôt sur les sociétés, par période de bénéfices
+    ancre: tbl-is-taux
+    lignes: 5
+    sources:
+      - loi-irpp-is-1989
+      - loi-2006-80-reduction-taux
+      - lf-2014
+      - lf-2018
+      - loi2018-56-lf2019
+      - lf-2021
+      - code-irpp-is-1990
+    couverture: COMPLÈTE
+    couverture_detail: >-
+      Les trente valeurs et états du tableau ont été lus dans le texte de la loi qui les
+      porte, au Journal officiel, dans son édition française. Aucune ne provient d'un
+      état consolidé du code. La colonne « Depuis 2024 » repose sur l'article 37 de la
+      loi n° 2024-48, pages 3429-3431 du fascicule n° 149 du 10 décembre 2024 : l'édition
+      française de ce fascicule n'est pas en ligne sur pist.tn, mais son texte français
+      est conservé dans le corpus local, et c'est lui qui a été lu. Les valeurs de 1990
+      proviennent du fascicule n° 1 des 2-5 janvier 1990, scan sans couche texte, lu par
+      reconnaissance optique à la page 10.
+    # DEUX PIÈGES QUE CE TABLEAU NE DOIT PAS PROPAGER.
+    #
+    # 1. LE TAUX DE 15 % EST INVISIBLE DANS LE CODE. Une valeur postérieure l'a
+    #    recouvert : reconstituer la série depuis l'état consolidé donne « 25 % puis
+    #    20 % » et fait croire à une baisse continue, alors que le taux a chuté de dix
+    #    points avant de remonter de cinq. Seule la loi de finances pour 2021, lue au
+    #    Journal officiel, l'atteste.
+    #
+    # 2. UN TAUX DE 13,5 % NE FIGURE PAS DANS CE TABLEAU, ET C'EST VOULU. L'article 14
+    #    de la loi n° 2018-56 crée un niveau à 13,5 % pour une douzaine d'industries, et
+    #    l'article 26 de la loi n° 2019-78 y ajoute les services de conseil et d'études
+    #    à forte valeur ajoutée. Mais l'article 18 de la loi n° 2018-56 en différait
+    #    l'effet aux bénéfices réalisés à partir du 1er janvier 2021 — et, avant cette
+    #    date, l'article 14 de la loi n° 2020-46 l'a abrogé (§ 3) et a supprimé
+    #    l'expression « ou 13,5 % » partout dans le code (§ 16), pour ces mêmes
+    #    bénéfices de 2021. Institué, étendu, abrogé, puis applicable : ce taux n'a régi
+    #    AUCUN exercice. Le porter au tableau ferait croire à un droit qui n'a jamais
+    #    produit d'effet ; le chapitre le raconte en prose.
+    #
+    # LA LIGNE « BANQUES ET ENTREPRISES D'ASSURANCE » DOUBLE VOLONTAIREMENT celle des
+    # secteurs majorés de 2007 à 2023 : ces établissements figuraient alors dans la même
+    # liste à 35 %, et l'intérêt de la ligne est précisément de montrer le moment où ils
+    # s'en détachent. Ce n'est pas une redondance mais une scission.
+    #
+    # LE CHAMP DU TAUX RÉDUIT SE RESSERRE À VALEUR CONSTANTE : l'article 23 de la loi
+    # n° 2015-53 le limite aux bénéfices de l'activité principale. La valeur ne bougeant
+    # pas, ce mouvement ne peut pas apparaître dans un tableau de taux ; il est dit dans
+    # le texte du chapitre.
+
+  minimum-impot:
+    titre: Le minimum d'impôt de l'article 49 § II, assis sur le chiffre d'affaires
+    ancre: tbl-is-minimum
+    lignes: 5
+    sources:
+      - loi-irpp-is-1989
+      - lf-1998
+      - lf-2006
+      - lf-2011
+      - lf-2014
+    couverture: COMPLÈTE
+    couverture_detail: >-
+      Les vingt-cinq cellules ont été lues dans le texte de la loi qui les porte, au
+      Journal officiel, dans son édition française — celles de 1990 par reconnaissance
+      optique du fascicule n° 1 des 2-5 janvier 1990, qui est un scan sans couche texte.
+      La série couvre donc toute la vie de l'impôt, de 1990 à aujourd'hui.
+    # LE MÉCANISME S'EST INVERSÉ, ET C'EST LE FAIT PRINCIPAL DE CE TABLEAU.
+    # De 1990 à 2005, l'article 49 § II dispose que le minimum « NE PEUT EXCÉDER » les
+    # montants indiqués : ce sont des PLAFONDS, qui bornent la charge par le haut. À
+    # partir de 2006, l'article 43 de la loi de finances pour 2006 récrit le paragraphe
+    # entier et le retourne : « avec un minimum exigible même en cas de non réalisation
+    # de chiffre d'affaires égal à » — ce sont désormais des PLANCHERS. Le taux est
+    # divisé par cinq dans le même mouvement, de 0,5 % à 0,1 %. Lire la suite
+    # 1 000 → 2 000 → 250 dinars comme une baisse serait un contresens : les deux
+    # premiers chiffres bornent, le troisième impose. La ligne « Nature du minimum »
+    # est là pour que le tableau ne puisse pas se lire de travers.
+    #
+    # AUCUN TEXTE INTERMÉDIAIRE ENTRE 1998 ET 2006. La filiation que le code consolidé
+    # donne lui-même pour l'article 49 § II ne nomme, sur cet intervalle, aucun véhicule
+    # entre l'article 46 de la loi de finances 1998 et l'article 43 de celle de 2006 ; une
+    # recherche par deux voies distinctes dans la base des textes n'en fait apparaître
+    # aucun non plus. La loi n° 98-73, que son intitulé « suppression de l'impôt
+    # minimum » désigne comme candidate, ne concerne en réalité que le minimum au titre
+    # de la PLUS-VALUE IMMOBILIÈRE de l'article 52 — vérifié sur le texte, JORT n° 64 du
+    # 11 août 1998, p. 1736.
+    #
+    # LES DATES D'EFFET DE 1998, 2006 ET 2011 SONT DÉDUITES, non lues : les clauses
+    # d'application des lois n° 97-88, n° 2005-106 et n° 2010-58 n'ont pas été
+    # consultées, et le 1er janvier retenu résulte du régime de droit commun des lois de
+    # finances. Celle de 2014 est lue dans le texte.
