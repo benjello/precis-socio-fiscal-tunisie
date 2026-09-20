@@ -563,29 +563,34 @@ Deux traits ressortent. Le premier est la **discontinuité de 1990** elle-même 
 
 Le second est la **trajectoire longue**. De 1990 à 2016, le barème de l'article 44 § I n'a pas bougé : mêmes tranches, mêmes taux, pendant vingt-sept exercices. Dans le même temps, le rendement de l'impôt passe de 1,9 % à plus de 6 % du produit intérieur brut, et de 9 % à près de 30 % des recettes fiscales. Un barème nominalement figé dans une économie où les revenus nominaux progressent déplace mécaniquement les contribuables vers le haut du barème : c'est ce que la figure donne à voir.
 
-<!-- TODO (terminologue) : la section renvoie aux entrées de glossaire #g-irpp, #g-taux-marginal,
-#g-assiette-fiscale, #g-smig, #g-retenue-a-la-source et #g-css, présentes dans
-precis/glossaire.yml, ainsi qu'à #g-frais-professionnels, #g-bic, #g-bnc, #g-revenus-fonciers,
-#g-abattement-forfaitaire et #g-deductions-communes, qui restent à créer (cf. § 12 de
-docs/notes/fiscalite-irpp-assiette-abattements.md, qui propose une trentaine d'entrées). Ces ancres ne résolvent pas encore dans ce livre : à la différence du livre
-« rémunérations publiques », le _quarto.yml de « fiscalité » ne liste pas de chapitre
-_glossaire.qmd. Ajouter la page de glossaire générée aux chapitres du livre. Entrées à créer par
-ailleurs, d'après l'annexe B de docs/notes/fiscalite-irpp-bloc-a-documentation.md : barème de
-l'impôt sur le revenu, tranche, revenu annuel global net, minimum d'impôt, régime forfaitaire,
-régime estimatif optionnel, rétribution provisoire ou accidentelle, frais professionnels,
-abattement sur les pensions et rentes viagères. -->
+<!-- TODO (terminologue) : un seul arbitrage reste à rendre sur cette section. Le
+« revenu annuel global net » réclamé ici n'a pas d'entrée sous ce nom, mais deux voisines
+existent ou sont proposées : l'entrée « revenu-annuel-net » (Revenu annuel net / الدخل السنوي
+الصافي, statut valide) est au glossaire, et le § 12 de
+docs/notes/fiscalite-irpp-assiette-abattements.md propose « Revenu net global / الدخل الجملي
+الصافي », sourcé sur l'article 8, alinéa 1er du code. Une notion ou deux ? Le trancher, puis
+créer la seconde entrée s'il y a lieu.
 
-<!-- TODO (bibliographe) : les vingt clés citées par la sous-section « L'évolution de l'assiette
-et des abattements » ont été créées dans precis/fr/fiscalite/references.json ; le livre rend sans
-citation non résolue. Elles restent PROVISOIRES tant qu'elles ne sont pas versées dans Zotero
-(groupe 6529669), scripts/sync_biblio.py faisant autorité en sens Zotero → references.json : la
-liste à rapatrier est tenue dans docs/notes/biblio-a-rapatrier.md. Les entrées arabes
-correspondantes (precis/ar/fiscalite/references.json) restent à créer.
+Vérifié le 20 septembre 2026 : les vingt autres notions réclamées ici existent
+(#g-irpp, #g-taux-marginal, #g-assiette-fiscale, #g-smig, #g-retenue-a-la-source, #g-css,
+#g-frais-professionnels, #g-bic, #g-bnc, #g-revenus-fonciers, #g-abattement-forfaitaire,
+#g-deductions-communes, puis bareme-irpp, tranche-de-revenu, minimum-impot,
+regime-forfaitaire-d-imposition, regime-estimatif-optionnel,
+retribution-provisoire-accidentelle, abattement-pensions), et l'annexe _glossaire.qmd est
+déclarée dans les _quarto.yml des DEUX langues : les ancres résolvent. La consigne d'ajouter
+cette annexe au livre est donc sans objet. -->
 
-Textes cités en prose sans clé, faute de référence disponible — à créer si le précis doit les
-citer formellement : loi n° 91-98 du 31 décembre 1991 (LF 1992, art. 30, intérêts de l'épargne) ;
-loi n° 97-88 du 29 décembre 1997 (LF 1998, art. 61 et 76) ; loi n° 98-111 du 28 décembre 1998
-(LF 1999) ; loi n° 2001-123 du 28 décembre 2001 (LF 2002, art. 71) ; loi n° 2002-101 du 17
-décembre 2002 (LF 2003, art. 22 et 31) ; loi n° 2003-80 du 29 décembre 2003 (LF 2004, art. 61) ;
-loi n° 2007-70 du 27 décembre 2007 (LF 2008, art. 41, article 12 bis du code) ; loi n° 2010-58 du
-17 décembre 2010 (LF 2011, art. 42, gérants de SARL). -->
+<!-- TODO (bibliographe) : les vingt clés citées par la sous-section « L'évolution de
+l'assiette et des abattements » restent PROVISOIRES tant qu'elles ne sont pas versées dans
+Zotero (groupe 6529669), scripts/sync_biblio.py faisant autorité en sens Zotero →
+references.json : la liste à rapatrier est tenue dans docs/notes/biblio-a-rapatrier.md.
+
+Textes encore cités en prose sans clé, à créer si le précis doit les citer formellement :
+loi n° 2001-123 du 28 décembre 2001 (LF 2002, art. 71) ; loi n° 2007-70 du 27 décembre 2007
+(LF 2008, art. 41, article 12 bis du code).
+
+Vérifié le 20 septembre 2026 : la parité FR/AR des references.json de « fiscalité » est
+complète — soixante-dix-neuf entrées de part et d'autre —, la consigne de créer les entrées
+arabes est donc close. Cinq des huit textes réputés sans clé en ont désormais une
+(lf-1992, lf-1998, lf-1999, lf-2003, lf-2004) ; un sixième, la loi n° 2010-58 (LF 2011,
+art. 42), reçoit la sienne avec la branche de l'impôt sur les sociétés. -->
