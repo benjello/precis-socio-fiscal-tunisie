@@ -147,10 +147,25 @@ scripts/generate_retraites_tables.py. -->
 
 Les deux décrets se succèdent. Le décret n° 90-1455 porte la fenêtre de référence à dix ans en réécrivant l'article 18, mais laisse inchangé l'article 19, qui continue de calculer la moyenne sur trente-six ou soixante mois [@decret90-1455, art. 1]. Le décret n° 94-1429, qui vise le décret de 1974 « tel que modifié par le décret n° 90-1455 », abroge et remplace ensemble ces deux articles et substitue à la règle de 1990 une montée progressive, de cinq ans en 1994 à dix ans en 1996, la durée de la moyenne suivant celle de la fenêtre [@decret94-1429, art. 1]. Aucun texte publié au *Journal officiel* entre ces deux décrets qui suspende ou reporte la règle de 1990 n'a été retrouvé, et aucun n'indique comment les pensions ont été calculées entre septembre 1990 et juin 1994, alors que les articles 18 et 19 prescrivaient l'un dix années de salaires, l'autre une moyenne sur trente-six ou soixante mois.
 
+**Le décret de 1994 ne régularise pas l'intervalle, et il faut le dire précisément.** Il porte une seule clause de rétroactivité, et elle ne concerne pas le calcul de la pension : son article 2 fait prendre effet au 1^er^ janvier 1994 les dispositions du seul **article 5 (b) nouveau**, c'est-à-dire la quote-part de cotisations affectée au régime [@decret94-1429, art. 2]. Les articles 18 et 19 nouveaux, eux, valent pour l'avenir, selon le calendrier qu'ils portent. Le législateur n'a donc ni validé ni mentionné les liquidations intervenues sous la rédaction de 1990 — silence qui ne s'explique par aucun texte publié.
+
+Un dernier trait du même décret éclaire l'intention de la réforme. Son article premier ne récrit pas seulement les articles 18 et 19 : il récrit aussi l'article 9, qui porte le taux de cotisation du régime à 5,75 % des salaires, dont la part à la charge des travailleurs monte par paliers — 1,75 % au 1^er^ juillet 1994, 2,25 % en 1995, 2,75 % en 1996, 3,25 % en 1997 [@decret94-1429, art. 1]. **L'allongement de la fenêtre de référence et la montée de la cotisation sont échelonnés ensemble**, sur des calendriers parallèles. La réforme de 1994 n'est pas un ajustement de la formule de calcul : c'est un rééquilibrage du régime, qui demande davantage aux cotisants au rythme où il élargit l'assiette de leur pension.
+
 <!-- TODO (documentaliste) : établir comment la règle de 1990 a été appliquée entre le
-23 septembre 1990 et le 30 juin 1994 (circulaires ou notes de service de la CNSS, rapports
-annuels de la CNSS, avis du Tribunal administratif sur le projet de décret n° 94-1429, doctrine,
-jurisprudence). -->
+23 septembre 1990 et le 30 juin 1994.
+
+LA VOIE DU JOURNAL OFFICIEL EST ÉPUISÉE, vérifié le 20 septembre 2026 et à ne pas refaire :
+jort_cache.db ne porte, entre le 1er septembre 1990 et le 31 juillet 1994, AUCUN texte visant le
+décret n° 74-499 ni portant sur les pensions de vieillesse, hors le décret n° 94-1429 lui-même.
+Celui-ci a été lu en entier : ses visas reconnaissent le décret n° 90-1455 comme en vigueur, son
+article premier récrit les articles 5 (b), 9, 18 et 19, et son article 2 ne rétroagit que pour
+l'article 5 (b). Aucune clause transitoire, aucune validation des liquidations passées.
+
+RESTENT, et elles seules : les circulaires et notes de service de la CNSS, ses rapports annuels,
+l'avis du Tribunal administratif sur le projet de décret (non publié), la doctrine et la
+jurisprudence. Aucune n'est dans le corpus local — data/iort/circulaire_download ne contient que
+deux circulaires, de 1998 et 2007 — ni dans la bibliographie, qui ne porte qu'une seule entrée
+CNSS, « cnss-chiffres ». Cette question se résoudra hors du Journal officiel, ou pas du tout. -->
 
 **La limite de calcul.** La [limite de calcul des prestations](#g-limite-calcul-prestations) n'est pas un plafond de cotisation : le régime cotise sur la totalité du salaire, comme l'expose le livre « Cotisations sociales ». Elle borne la part du salaire que la pension prend en compte, et c'est au-delà d'elle que commence l'assiette du régime complémentaire. Fixée à six fois le [SMIG](#g-smig) rapporté à 2 400 heures par an en 1974, reprise telle quelle en 1990, elle est précisée en 1994 par la référence au SMIG du régime de 48 heures. Aucun autre modificatif du décret qui la touche n'a été retrouvé jusqu'en avril 2026. Exprimée en multiple du SMIG, elle en suit l'évolution sans qu'aucun texte propre ait à la modifier.
 
