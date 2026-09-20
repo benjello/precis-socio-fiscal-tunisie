@@ -161,8 +161,26 @@ ocrmypdf -l fra --skip-text --jobs 4 in.pdf out.pdf && pdftotext out.pdf out.txt
 1983, 1986 et 1990.
 
 Cas particulier rencontré : certains fascicules (années 2000-2006, JORT n° 105/2004) ont une
-**couche texte à police décalée qui n'expose pas les chiffres**. Un `grep` y est structurellement
-incapable d'aboutir et un résultat nul n'y a **aucune valeur probante**. Lire à l'image.
+**couche texte à police décalée**. Un `grep` y est structurellement incapable d'aboutir et un
+résultat nul n'y a **aucune valeur probante**.
+
+**Ce décalage se décode, et l'océrisation n'est alors pas nécessaire.** Vérifié le 20 septembre
+2026 sur le JORT n° 97 de 2002 et le n° 8 de 2004 : l'encodage est décalé d'une constante de 29,
+lettres ET chiffres. Le fascicule paraît illisible — `pdftotext` rend
+`75$'8&7,21)5$1d$,6(` — et se relit intégralement en ajoutant 29 à chaque code :
+« TRADUCTION FRANÇAISE ». Les accents sortent corrects ; ne pas leur appliquer de substitution
+supplémentaire, qui les détruirait.
+
+```python
+def decode(s):  # sur la sortie de `pdftotext fascicule.pdf -`
+    return "".join(chr(ord(c) + 0x1D) if 0x20 <= ord(c) + 0x1D < 0x7F else c for c in s)
+```
+
+**Conséquence de méthode** : avant de déclarer un fascicule « sans couche texte » et de lancer une
+océrisation, tester le décalage. Deux des cinq décrets modifiant le décret n° 95-1166 auraient été
+déclarés illisibles à tort, dont celui qui récrit son article 30. Un test de lisibilité fondé sur
+la seule longueur du texte extrait classe ces fascicules parmi les scans, à tort — le test doit
+décoder avant de mesurer. Si le décalage ne donne rien, alors seulement lire à l'image.
 
 ## 6. Chaîne de rendu
 
