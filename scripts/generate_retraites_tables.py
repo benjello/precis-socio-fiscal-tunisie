@@ -25,23 +25,27 @@ le caractère facultatif du maintien en activité, la nature de la prestation se
 carrières courtes. Ces règles sont dans la prose du chapitre, à l'endroit où le tableau
 paraît, et le tableau ne s'y substitue pas.
 
-HUIT TABLEAUX DU LIVRE RESTENT ÉCRITS À LA MAIN, et ce n'est pas un retard : les paramètres
-ne portent pas la distinction que leurs colonnes affirment.
+SEPT TABLEAUX DU LIVRE RESTENT ÉCRITS À LA MAIN, et ce n'est pas un retard : les paramètres
+ne portent pas la distinction que leurs colonnes affirment. Le huitième, celui des âges
+militaires, est engendré depuis le 20 septembre 2026.
 
 - `tbl-cnrps-bonifications` : les paramètres `bonifications/cadre_actif/service_*` portent
   bien le barème 5 / 4 / 3 / 2, mais non la distinction des trois catégories de l'article 32
   — bonification fixe pour les ouvriers, période restant à courir **plafonnée par ce barème**
   pour les cadres actifs, période restant à courir **sans plafond** pour les fonctions
-  astreignantes. Engendrer la seule colonne des ouvriers perdrait les deux autres.
+  astreignantes. Engendrer la seule colonne des ouvriers perdrait les deux autres. Le seul
+  élément versable de cet article est le repère d'âge — soixante ans, porté à soixante-deux
+  par la loi n° 2019-37 —, dont la date d'effet n'est pas établie : l'article premier de
+  cette loi fixe un calendrier propre aux âges civils qui ne vaut pas pour son article 2.
 - `tbl-cnrps-orphelins` : les conditions d'âge et d'études de la pension d'orphelin ne sont
   pas des valeurs. Le seul paramètre du sujet, `survivants/taux_orphelin`, porte le taux de
   10 % — que ce tableau ne donne pas — et ces conditions dans sa `documentation`.
-- `tbl-militaires-ages` : aucun paramètre ne porte les âges de mise à la retraite par grade
-  militaire. `bonifications/militaire/bonus` porte une bonification de cinq ans dont sa
-  propre documentation dit qu'aucun texte lu ne la fonde.
-- `tbl-rsna-anticipes` : le seul paramètre du sujet, `rsna/age_dep_anticip`, porte l'âge de
-  jouissance de 50 ans de 1982. Ni les quatre cas de l'article 15 bis, ni leurs conditions,
-  ni la jouissance à 55 ans de l'article 15 ter ne sont dans l'arbre.
+- `tbl-rsna-anticipes` : l'arbre porte désormais les DURÉES et les TAUX des départs
+  anticipés — stages de 360 et 180 mois, décote par trimestre, jouissance à 55 ans de
+  l'article 15 ter (PR openfisca-tunisia-pension#52). Ce que ses colonnes affirment reste
+  hors de portée : les CONDITIONS de chaque cas — approbation du licenciement par la
+  commission de contrôle, inscription au bureau de l'emploi, constat de l'usure, nombre
+  d'enfants vivants — sont des faits de situation, non des valeurs datées.
 - `tbl-rsna-reference` : `rsna/salaire_reference/duree_mois` porte désormais la fenêtre du
   régime non agricole — 60, 84 puis 120 mois en 1994, 1995 et 1996 (PR openfisca-tunisia-pension
   #51, fusionnée le 20 septembre 2026). Elle ne couvre que TROIS des cinq lignes du tableau.
@@ -50,7 +54,11 @@ ne portent pas la distinction que leurs colonnes affirment.
   plus avantageuse », et celle de 1990 énonce une NON-MODIFICATION — le décret n° 90-1455
   récrit l'article 18 et laisse l'article 19 intact. Engendrer les trois dernières lignes
   amputerait le tableau de ce qui en fait la démonstration.
-- `tbl-rsna-survivants` : l'arbre `rsna` n'a pas de branche « survivants ».
+- `tbl-rsna-survivants` : l'arbre a désormais sa branche « survivants » (PR
+  openfisca-tunisia-pension#52), mais elle n'en porte que la moitié. Trois des six lignes
+  du tableau sont des RÈGLES et non des valeurs : le sort de la réversion en cas de
+  remariage, le plafond de cumul de l'article 38, qui borne un total par un autre montant,
+  et l'interdiction de cumuler invalidité et survivant, levée en 1997.
 - `tbl-rsna-revalo-montant` et `tbl-rsna-revalo-taux` : la série du SMIG est datée et sourcée
   chez `openfisca-tunisia`, et le cœur chiffré de ces deux tableaux en sortirait. Mais leur
   objet n'est pas le SMIG : c'est la **revalorisation des pensions**, et le paramètre ne
@@ -95,6 +103,11 @@ MOTS = {
         "astreignantes": "[Fonctions astreignantes](#g-fonctions-astreignantes) (art. 28)",
         "cadres_actifs": "[Cadres actifs](#g-cadres-actifs) (art. 29)",
         "superieur": "Enseignants du supérieur (art. 29 bis)",
+        "mil_troupe": "Hommes de troupe, quartiers-maîtres et matelots",
+        "mil_sous_officiers": "Sous-officiers et officiers mariniers",
+        "mil_subalternes": "Officiers subalternes",
+        "mil_superieurs": "Officiers supérieurs",
+        "mil_generaux": "Officiers généraux",
         "tranche_services": "Tranche de services",
         "par_an": "Par année",
         "par_trimestre": "Par trimestre",
@@ -121,6 +134,11 @@ MOTS = {
         "astreignantes": "[الوظائف المرهقة](#g-fonctions-astreignantes) (الفصل 28)",
         "cadres_actifs": "[الأسلاك النشيطة](#g-cadres-actifs) (الفصل 29)",
         "superieur": "أساتذة التعليم العالي (الفصل 29 مكرّر)",
+        "mil_troupe": "رجال الجيش، رؤساء عرفاء وبحارة",
+        "mil_sous_officiers": "ضباط الصف وضباط البحرية",
+        "mil_subalternes": "الضباط الأعوان",
+        "mil_superieurs": "الضباط السامون",
+        "mil_generaux": "الضباط العامون",
         "tranche_services": "شريحة الخدمات",
         "par_an": "عن كلّ سنة",
         "par_trimestre": "عن كلّ ثلاثية",
@@ -203,6 +221,10 @@ CLES_AGES = {
     "2009-04-19": "loi2009-20, art. 2",
     "2019-07-01": "loi2019-37, art. 5",
     "2020-01-01": "loi2019-37, art. 1 et 5",
+}
+CLES_MILITAIRES = {
+    "1985-09-12": "loi85-12, art. 61",
+    "1989-01-01": "loi88-71, art. 1",
 }
 CLES_PLAFOND_PLANCHER = {
     "1981-05-01": "loi81-70, art. 4-5",
@@ -296,6 +318,20 @@ def tableaux(langue):
 
     return {
         "cnrps_ages.md": ages,
+        # Cinq valeurs attachées à cinq positions statutaires, et deux dates. Le tableau
+        # est orienté comme celui des âges civils — une ligne par date d'effet — plutôt que
+        # comme la version tenue à la main, qui mettait les grades en lignes : deux
+        # tableaux voisins qui disent la même sorte de chose doivent se lire pareil.
+        "cnrps_militaires_ages.md": lambda: ot.tableau_evolution_datee(
+            [
+                (f"{CNRPS}/age_legal/militaire/hommes_de_troupe.yaml", m["mil_troupe"], age),
+                (f"{CNRPS}/age_legal/militaire/sous_officiers.yaml", m["mil_sous_officiers"], age),
+                (f"{CNRPS}/age_legal/militaire/officiers_subalternes.yaml", m["mil_subalternes"], age),
+                (f"{CNRPS}/age_legal/militaire/officiers_superieurs.yaml", m["mil_superieurs"], age),
+                (f"{CNRPS}/age_legal/militaire/officiers_generaux.yaml", m["mil_generaux"], age),
+            ],
+            cles=CLES_MILITAIRES, **datee,
+        ),
         "cnrps_annuites.md": annuites,
         "cnrps_plafond_plancher.md": lambda: ot.tableau_evolution_datee(
             [

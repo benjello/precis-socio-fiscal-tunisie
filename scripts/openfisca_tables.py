@@ -68,7 +68,10 @@ PAQUETS = {
         # astreignantes, dont la feuille devient un nœud (`fonctions_astreignantes` ->
         # `fonctions_astreignantes/age`, 7.0). En deçà, la génération échoue franchement
         # — « paramètre introuvable ou vide » — au lieu de produire un tableau faux.
-        "version_minimale": (7, 0),
+        # 7.2 verse les âges militaires par grade, dont le tableau `cnrps_militaires_ages`
+        # est engendré : en deçà, ce tableau n'a aucune source et sa génération échoue sans
+        # dire pourquoi. Le contrôle de version le dit, lui.
+        "version_minimale": (7, 2),
     },
 }
 
