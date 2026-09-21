@@ -11,12 +11,11 @@ la demande par `scripts/generate_bareme_tables.py`. Quand une version suffisante
 d'openfisca-tunisia est installée, `get_table_or_static` bascule automatiquement sur la
 lecture directe des paramètres.
 
-DEUX PAQUETS, UN PROPRIÉTAIRE PAR SOUS-ARBRE. Les paramètres ne viennent pas tous du
-même dépôt : les retraites vivent chez `openfisca-tunisia-pension`, les cotisations,
-l'impôt et les prestations chez `openfisca-tunisia`. Un générateur qui lit les retraites
-appelle `utiliser_paquet("openfisca_tunisia_pension")` en tête ; les lecteurs acceptent
-aussi un argument `paquet` explicite. Chaque paquet a sa variable d'environnement et son
-garde-fou de version, car ils ne se suivent pas.
+UNE SEULE SOURCE DE PARAMÈTRES. Depuis la version 0.93, openfisca-tunisia porte l'arbre
+entier, retraites comprises : openfisca-tunisia-pension y a été fusionné. Les deux systèmes
+socio-fiscaux qu'il livre n'en lisent chacun qu'une partie, mais le précis, qui lit les
+fichiers YAML et non les systèmes, n'a plus qu'un paquet, une variable d'environnement et un
+garde-fou de version. Avant la fusion, il en tenait deux, qui ne se suivaient pas.
 
 Garde-fou de version. Les paramètres n'ont atteint leur état actuel qu'en 0.71 : le barème
 1990-2016 était amputé de sa tranche supérieure jusqu'en 0.68 (openfisca-tunisia#380), les
@@ -44,34 +43,20 @@ except ImportError:  # pragma: no cover
     pd = None
 
 
-# Les paramètres du précis proviennent de DEUX paquets, et un sous-arbre a un
-# propriétaire et un seul : les cotisations, l'impôt et les prestations chez
-# `openfisca_tunisia`, les retraites chez `openfisca_tunisia_pension`. Chacun a sa
-# variable d'environnement pour désigner une copie de travail, et son garde-fou de
-# version — ils ne se suivent pas.
+# Les paramètres du précis proviennent d'un seul paquet depuis la fusion des dépôts : voir
+# l'en-tête. Le dictionnaire est gardé pour que les lecteurs acceptent toujours un argument
+# `paquet` explicite.
 PAQUETS = {
     "openfisca_tunisia": {
         "variable": "OPENFISCA_TUNISIA_PATH",
         "distribution": "openfisca-tunisia",
-        "version_minimale": (0, 76),
-    },
-    "openfisca_tunisia_pension": {
-        "variable": "OPENFISCA_TUNISIA_PENSION_PATH",
-        "distribution": "OpenFisca-Tunisia-Pension",
-        # 5.2 est la version où ce paquet cesse de porter une copie périmée du SMIG :
-        # avant elle, les pensions minimales sont fausses à partir de 2020. 5.7 est celle
-        # où les paramètres de retraite sont datés sur leur texte et sourcés : en deçà,
-        # les tableaux du livre « Retraites » sortiraient avec une colonne « Texte » vide
-        # et des dates d'effet fausses — impossibles à distinguer d'un tableau correct.
-        # 7.0 déplace deux paramètres que ce dépôt lit par leur chemin : l'indemnité du
-        # quatrième rang (`rang_4_et_plus` -> `rang_4`, 6.0) et l'âge des fonctions
-        # astreignantes, dont la feuille devient un nœud (`fonctions_astreignantes` ->
-        # `fonctions_astreignantes/age`, 7.0). En deçà, la génération échoue franchement
-        # — « paramètre introuvable ou vide » — au lieu de produire un tableau faux.
-        # 7.2 verse les âges militaires par grade, dont le tableau `cnrps_militaires_ages`
-        # est engendré : en deçà, ce tableau n'a aucune source et sa génération échoue sans
-        # dire pourquoi. Le contrôle de version le dit, lui.
-        "version_minimale": (7, 2),
+        # 0.93 est la version de la fusion : `parameters/retraite/` n'existe pas en deçà, et
+        # le livre « Retraites » ne pourrait pas être engendré. L'arbre de retraite qu'elle
+        # apporte est celui d'openfisca-tunisia-pension 7.3.0, qui avait lui-même son
+        # histoire de garde-fous — daté et sourcé sur le Journal officiel depuis 5.7, deux
+        # chemins déplacés en 6.0 et 7.0, les âges militaires versés en 7.2. La 0.93 les
+        # porte tous.
+        "version_minimale": (0, 93),
     },
 }
 
