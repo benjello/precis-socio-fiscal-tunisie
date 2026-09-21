@@ -415,9 +415,14 @@ Le régime complémentaire de pension de vieillesse, d'invalidité et de surviva
 
 Son objet se définit par rapport au régime légal. Il permet « d'acquérir des droits sur la tranche de salaire dépassant la limite fixée par ce régime pour le calcul des prestations », et son assiette est « la fraction de salaire excédant la limite fixée par le régime légal pour le calcul des prestations » [@arrete-1978-11-18-retraite-complementaire, règlement, art. 1 et 6]. C'est un [salaire différentiel](#g-salaire-differentiel) : le régime complémentaire commence exactement où s'arrête la limite de six fois le SMIG décrite plus haut, et se déplace avec elle. Ses taux d'appel sont exposés dans le livre « Cotisations sociales ».
 
-<!-- TODO (documentaliste) : établir sur le règlement du 18 novembre 1978 les règles d'ouverture,
-de calcul, de réversion et de revalorisation de la pension complémentaire, qui ne sont pas
-documentées. -->
+**C'est un régime par points.** Chaque période de cotisation acquiert des points, égaux à la cotisation contractuelle — **18 %** du salaire de base — divisée par le salaire de référence de la période [@arrete-1978-11-18-retraite-complementaire, règlement, art. 10]. Une cotisation minimale, calculée sur la moitié du SMIG, évite qu'une baisse de salaire sous la limite du régime légal n'interrompe l'acquisition de points [@arrete-1978-11-18-retraite-complementaire, règlement, art. 14]. La pension est le nombre de points multiplié par la **valeur du point**, à la liquidation puis à chaque échéance [@arrete-1978-11-18-retraite-complementaire, règlement, art. 17]. Le droit s'ouvre aux conditions d'âge et de cessation d'activité du régime légal [@arrete-1978-11-18-retraite-complementaire, règlement, art. 15], et l'invalidité suit les conditions du décret n° 74-499, pour une pension calculée de la même façon [@arrete-1978-11-18-retraite-complementaire, règlement, art. 19-20].
+
+**La revalorisation passe par la valeur du point.** Le salaire de référence est donné par le règlement pour les années antérieures à 1977, puis fixé chaque année par le directeur général de la CAVIS [@arrete-1978-11-18-retraite-complementaire, règlement, art. 11]. La valeur du point l'est au 1^er^ juillet de chaque année, « *en fonction de l'évolution du salaire de référence, de manière à maintenir, autant que faire se peut, une valeur stable au rendement du régime* », et sous une contrainte d'équilibre : tant que la réserve de prévoyance n'a pas atteint son niveau cible, la charge des pensions ne peut dépasser les trois quarts des ressources attendues [@arrete-1978-11-18-retraite-complementaire, règlement, art. 18]. Ces décisions ne paraissent pas au Journal officiel : le rendement du régime, rapport de la valeur du point au salaire de référence, ne peut donc pas être suivi ici dans le temps.
+
+**Les survivants ont leurs taux propres.** Le conjoint survivant reçoit une pension de réversion de **50 %** de la pension du défunt, supprimée en cas de remariage [@arrete-1978-11-18-retraite-complementaire, règlement, art. 23-24]. Chaque orphelin reçoit **20 %**, porté à **30 %** pour l'orphelin de père et de mère ; ces pensions sont collectives et se réduisent à mesure que chaque orphelin cesse d'y avoir droit [@arrete-1978-11-18-retraite-complementaire, règlement, art. 26-27].
+
+<!-- TODO (documentaliste) : rechercher la série du salaire de référence et de la valeur du point
+(rapports annuels de la CAVIS puis de la CNSS) et lire l'annexe I du règlement à l'image. -->
 
 ## Les régimes des non-salariés et les régimes particuliers {#sec-regimes-particuliers}
 
@@ -443,30 +448,44 @@ Les pensions de ce régime ont été revalorisées une fois par un texte propre.
 
 Le [régime des travailleurs tunisiens à l'étranger](#g-rtte), institué par le **décret n° 89-107 du 10 janvier 1989** [@decret89-107], suit la même technique : il étend aux travailleurs tunisiens à l'étranger, salariés ou non, qui ne sont pas couverts par une convention bilatérale, les mêmes articles 20 à 38, 46 à 52, 54 et 57 du décret n° 74-499 [@decret89-107, art. 1]. L'adhésion est volontaire, mais elle couvre obligatoirement les pensions en même temps que les assurances sociales [@decret89-107, art. 3], et la gestion du régime de pensions est déléguée à la CAVIS [@decret89-107, art. 2].
 
-<!-- TODO (documentaliste) : établir les règles de la pension de vieillesse de ce régime (âge,
-stage, taux), non couvertes par le renvoi, et lire le décret n° 91-604 du 30 avril 1991
-(prorogation du délai de validation), sans clé bibliographique. -->
+**La pension de vieillesse a ses règles propres, que le renvoi ne couvre pas**, et ce sont celles que le régime des non-salariés reprendra six ans plus tard. L'âge est fixé à **65 ans**, avec une faculté de départ dès **60 ans**, la pension étant alors réduite de 0,5 % par trimestre restant à courir jusqu'à 65 ans [@decret89-107, art. 18]. Le taux est de **30 %** du revenu de référence après **120 mois** de cotisations, majoré de 0,5 % par trimestre supplémentaire, dans la limite de **80 %** [@decret89-107, art. 20]. La pension d'invalidité est de 30 % du même revenu, après 60 mois de cotisations, avec la même majoration et le même plafond [@decret89-107, art. 21].
+
+**Le calcul part, ici aussi, d'une classe.** L'assuré choisit l'une de **quatre classes**, de coefficient **2, 4, 6 et 9** du [SMIG](#g-smig) du régime de 48 heures rapporté à 2 400 heures par an [@decret89-107, art. 6]. Le revenu de référence est la moyenne pondérée des coefficients des classes auxquelles il a adhéré, appliquée au SMIG en vigueur à l'ouverture du droit [@decret89-107, art. 19]. La cotisation est de 10,65 % du revenu forfaitaire de la classe, dont 5,25 % pour les pensions, et elle est à la charge du travailleur, que son employeur peut prendre en charge en tout ou partie [@decret89-107, art. 7-8].
+
+**Le plancher est la moitié du SMIG annuel** — plus haut que celui des non-salariés, fixé à 30 % [@decret89-107, art. 22]. La revalorisation n'est pas automatique : le montant des pensions en cours « *sera révisé en cas de hausse sensible du niveau de vie* », la date et les modalités de cette révision étant renvoyées à un décret [@decret89-107, art. 23].
+
+**Les périodes d'emploi à l'étranger antérieures au régime peuvent être validées**, si aucun autre régime ne les a couvertes, moyennant le versement des cotisations correspondantes au taux global de l'article 7 ; la demande devait être présentée dans les deux ans suivant l'entrée en vigueur du décret [@decret89-107, art. 24]. Une fois validées, les périodes accomplies à l'étranger comptent comme des périodes accomplies en Tunisie [@decret89-107, art. 17].
+
+<!-- TODO (documentaliste) : verser la clé du décret n° 91-604 du 30 avril 1991 (JORT n° 31/1991),
+qui proroge d'un an, à compter du 10 janvier 1991, le délai de validation de l'article 24, et
+rechercher les décrets de révision prévus à l'article 23 du décret n° 89-107. -->
 
 ### Les artistes, créateurs et intellectuels
 
 Le [régime des artistes, créateurs et intellectuels](#g-regime-artistes), créé par la **loi n° 2002-104 du 30 décembre 2002**, comprend « les pensions de vieillesse, d'invalidité et de survivants » [@loi2002-104, art. 1] ; ce texte ne comporte pas de clause d'entrée en vigueur. La loi n° 2007-43 a modifié les conditions de sa pension temporaire d'orphelin [@loi2002-104, art. 22 ; @loi2007-43]. Le décret n° 2003-894 du 21 avril 2003 en fixe les modalités d'application [@decret2003-894].
 
-<!-- TODO (documentaliste) : établir sur la loi n° 2002-104 et le décret n° 2003-894 les règles
-de la pension de vieillesse de ce régime (âge, stage, taux, plancher, revalorisation). -->
+**L'ouverture du droit tient à l'âge et au stage, que fixe la loi.** La pension de vieillesse est ouverte à **65 ans**, après **40 trimestres** de cotisations effectives [@loi2002-104, art. 12]. La pension d'invalidité l'est, avant cet âge, à l'assuré dont la capacité de travail ou de gain est réduite des deux tiers au moins, après **20 trimestres** — sans stage pour la victime d'un accident non professionnel ; à 65 ans, elle est remplacée par une pension de vieillesse [@loi2002-104, art. 14-15].
+
+**Le calcul vient du décret, et part d'une classe.** La loi renvoie le revenu de référence à un texte d'application [@loi2002-104, art. 13]. Le décret n° 2003-894 définit dix classes de revenus, de coefficient **2 à 18** du SMIG [@decret2003-894, art. 5], et fait du revenu de référence la moyenne pondérée des coefficients des classes de l'assuré, appliquée au SMIG du régime de 48 heures rapporté à 2 400 heures par an [@decret2003-894, art. 16]. La pension de vieillesse est de **30 %** de ce revenu à 40 trimestres, majorée de 0,5 % par trimestre supplémentaire, dans la limite de **80 %** [@decret2003-894, art. 17]. Ces classes ne sont pas celles des non-salariés, dont la première vaut une fois le salaire minimum. Publié le 29 avril 2003, le décret ne porte pas de clause d'entrée en vigueur : de la loi à lui, le régime a son âge, son stage et son minimum, mais pas encore de taux.
+
+**Le plancher est un montant en dinars, et non une part du salaire minimum.** Les pensions de vieillesse, d'invalidité et de survivants ne peuvent être inférieures à **200 dinars par mois** [@loi2002-104, art. 13 et 15 ; @decret2003-894, art. 17]. C'est le seul plancher du secteur privé exprimé en dinars : les autres sont une part du SMIG ou du SMAG, et montent avec lui. Aucun texte qui relève ce montant n'a été relevé ici.
+
+**Les survivants ont leurs règles propres.** Le conjoint reçoit 50 % de la pension du défunt, suspendus s'il se remarie avant 55 ans ; les orphelins reçoivent collectivement 30 %, jusqu'à 16 ans, 21 ans en études secondaires ou professionnelles, 25 ans en études supérieures sans bourse [@loi2002-104, art. 20 à 23]. L'article 20 ajoute que « ce taux est majoré de 75 % de la pension de vieillesse ou d'invalidité en cas d'existence d'enfants bénéficiaires d'une pension » : la phrase admet deux lectures, dont aucune n'est retenue ici.
+
+**La revalorisation est automatique** : les pensions en cours suivent chaque hausse du SMIG du régime de 48 heures, dans la proportion de son augmentation [@loi2002-104, art. 31].
 
 ### Les travailleurs à faibles revenus : la loi n° 2002-32
 
 La **loi n° 2002-32 du 12 mars 2002, relative au régime de sécurité sociale pour certaines catégories de travailleurs dans les secteurs agricole et non agricole** [@loi2002-32], vise cinq catégories : les employés de maison ; les personnes employées par l'État, les collectivités locales et les établissements publics administratifs qui ne sont couvertes par aucun autre régime ; les petits pêcheurs et petits armateurs ; les agriculteurs exploitant au plus cinq hectares en sec ou un hectare en irrigué ; les artisans travaillant à la pièce [@loi2002-32, art. 1]. La loi ne lui donne pas de nom abrégé : ce livre, comme le livre « Cotisations sociales », le désigne comme le [régime des travailleurs à faibles revenus](#g-regime-bas-revenus), que le livre « Prestations sociales » appelle régime des « bas revenus ».
 
-C'est le seul des quatre régimes de cette section dont les règles de la pension de vieillesse sont établies ici. Elles sont celles de la loi de 2002, dont la date d'effet n'est pas établie ; seul l'article 25 est connu pour avoir été modifié, en 2007.
+La loi fixe elle-même toutes les règles de la pension, sans renvoi au régime non agricole. Elle ne porte pas de clause d'entrée en vigueur : publiée le 15 mars 2002, elle devient exécutoire le 17. Seul son article 25 a été modifié, en 2007.
 
 - **Ouverture du droit** : **65 ans** au moins, 120 mois de cotisations effectives et validées, absence d'activité rémunérée assujettie [@loi2002-32, art. 13].
 - **Calcul** : « le montant minimum de la pension de vieillesse est fixé à **30 %** du salaire minimum garanti du secteur d'appartenance de l'assuré, en cas de réalisation de la condition de 120 mois » ; chaque trimestre supplémentaire ouvre une majoration de 0,5 % du salaire ayant servi au calcul des cotisations, « sans que le montant total de la pension puisse excéder un maximum de **80 %** dudit salaire » [@loi2002-32, art. 14].
 - **Invalidité** : 60 mois de cotisations effectives au moins ; pension de 30 % du salaire minimum garanti du secteur, avec la même majoration et le même plafond, et une bonification de 20 % pour tierce personne [@loi2002-32, art. 16-18].
-- **Survivants** : la loi organise une pension de survivants, dont la pension temporaire d'orphelin a été modifiée par la loi n° 2007-43 [@loi2002-32, art. 21 et 25 ; @loi2007-43].
-
-<!-- TODO (documentaliste) : lire les articles de la loi n° 2002-32 postérieurs à l'article 21
-(taux de réversion, revalorisation, date d'effet). -->
+- **Deux bases distinctes** : le taux de 30 % porte sur le salaire minimum entier du secteur, mais la majoration et le plafond portent sur le salaire ayant servi au calcul des cotisations, qui n'en est que les deux tiers [@loi2002-32, art. 7 et 14].
+- **Survivants** : 50 % de la pension du défunt au conjoint, suspendus s'il se remarie avant 55 ans ; 30 % collectivement aux orphelins, jusqu'à 16, 21 ou 25 ans selon les études ; le cumul ne peut dépasser la pension du défunt [@loi2002-32, art. 23 à 28]. La loi n° 2007-43 supprime le mot « mineur » en tête de l'article 25 et prévoit que la pension de la fille sans ressources est définitivement suspendue dès qu'une condition fait défaut ; elle ne change aucun des âges [@loi2007-43, art. 3-4].
+- **Revalorisation** : automatique, à chaque hausse du SMIG ou du SMAG selon le secteur [@loi2002-32, art. 32].
 
 ## Vue d'ensemble : les deux secteurs, maillon par maillon {#sec-vue-ensemble}
 
