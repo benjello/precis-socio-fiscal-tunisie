@@ -3,14 +3,12 @@
 Même contrat que les trois générateurs qui précèdent : le build du site n'exécute PAS ce
 script, il lit les fichiers qu'il produit, versionnés dans `precis/{fr,ar}/retraites/tables/`.
 
-    OPENFISCA_TUNISIA_PENSION_PATH=../openfisca-tunisia-pension PYTHONPATH=scripts \
+    OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \
         uv run python scripts/generate_retraites_tables.py
 
-Les paramètres de retraite vivent chez `openfisca-tunisia-pension`, et non chez
-`openfisca-tunisia` : d'où l'appel à `utiliser_paquet` en tête. Exige la version 5.7, celle
-où ces paramètres sont datés sur leur texte et sourcés (titre, lien JORT, note de lecture).
-En deçà, la colonne « Texte » sortirait vide et les dates d'effet seraient celles de
-l'ancien encodage — un tableau d'apparence correcte, et faux.
+Les paramètres de retraite vivent dans l'arbre unique d'openfisca-tunisia depuis sa version
+0.93, qui y a fusionné openfisca-tunisia-pension. En deçà, `parameters/retraite/` n'existe
+pas et le garde-fou de version refuse la génération.
 
 Les deux langues sont produites ici, et non par la pipeline de traduction : ces tableaux
 sont des données, pas de la prose. Seuls les en-têtes et les libellés changent d'une langue
@@ -80,9 +78,9 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 import openfisca_tables as ot  # noqa: E402
 
-ot.utiliser_paquet("openfisca_tunisia_pension")
+ot.utiliser_paquet("openfisca_tunisia")
 
-PAQUET = "openfisca_tunisia_pension"
+PAQUET = "openfisca_tunisia"
 CNRPS = "parameters/retraite/cnrps"
 # Entrée en vigueur de la loi n° 85-12, plancher du tableau des âges : voir `ages`.
 PLANCHER_AGES = "1985-09-12"
@@ -225,6 +223,10 @@ CLES_AGES = {
 CLES_MILITAIRES = {
     "1985-09-12": "loi85-12, art. 61",
     "1989-01-01": "loi88-71, art. 1",
+    # Les deux paliers du calendrier transitoire de 2019, comme pour les âges civils : un an
+    # de plus au 1er juillet 2019 (art. 5), puis les âges de l'article 61 nouveau (art. 1).
+    "2019-07-01": "loi2019-37, art. 5",
+    "2020-01-01": "loi2019-37, art. 1 et 5",
 }
 CLES_PLAFOND_PLANCHER = {
     "1981-05-01": "loi81-70, art. 4-5",
@@ -383,7 +385,7 @@ def main() -> int:
     minimum = ot.PAQUETS[PAQUET]["version_minimale"]
     if not ot.openfisca_utilisable():
         print(
-            f"openfisca-tunisia-pension indisponible ou trop ancien "
+            f"openfisca-tunisia indisponible ou trop ancien "
             f"(version {ot.version_openfisca()}, minimum {minimum}). "
             f"Les snapshots existants sont conservés."
         )

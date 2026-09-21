@@ -9,7 +9,7 @@ versionné : c'est ici que les conventions vivent, pas dans la mémoire d'un ass
 Cinq livres Quarto bilingues (`precis/fr/<livre>/`, `precis/ar/<livre>/`) — retraites, cotisations
 sociales, prestations sociales, rémunérations publiques, fiscalité —, un glossaire bilingue
 engendré depuis `precis/glossaire.yml`, une bibliographie CSL-JSON, et des tableaux de paramètres
-engendrés depuis les dépôts `openfisca-tunisia` et `openfisca-tunisia-pension`.
+engendrés depuis le dépôt `openfisca-tunisia`, qui porte aussi les retraites depuis sa version 0.93.
 
 Le travail documentaire s'appuie sur le *Journal officiel* : métadonnées dans
 `~/projets/PDFs-legislation-tunisie/jort_cache.db`, fascicules dans le corpus local du même dépôt,
@@ -61,8 +61,12 @@ bibliographe. La chaîne va du premier au dernier, et s'arrête pour revue humai
 
 ## Travailler sur les dépôts de modèle (rôle « modéliste »)
 
-Dépôts concernés : `openfisca-tunisia` (fiscalité, cotisations, prestations) et
-`openfisca-tunisia-pension` (retraites). Ces conventions valent pour toute PR qu'un agent y prépare.
+Dépôt concerné : `openfisca-tunisia`. Depuis sa version 0.93, il livre deux systèmes socio-fiscaux
+qui lisent le même arbre de paramètres : le système fiscal (`openfisca_tunisia` — fiscalité,
+cotisations, prestations) et celui des pensions (`openfisca_tunisia_pension`, extra `[pension]`),
+qui n'en lit que `retraite/` et `marche_travail/`. Ce que chacun lit est déclaré dans
+`openfisca_tunisia/sous_ensembles.py`. L'ancien dépôt `openfisca-tunisia-pension` n'est plus le
+lieu des corrections. Ces conventions valent pour toute PR qu'un agent y prépare.
 
 ### Dater
 
@@ -108,8 +112,9 @@ Dépôts concernés : `openfisca-tunisia` (fiscalité, cotisations, prestations)
 
 ### Tester
 
-- **Les tests s'écrivent en YAML OpenFisca dans `tests/formulas/`**, dans la convention déjà en place
-  (`tests/formulas/cnrps/pension.yaml`, `test_depart_anticipe.yaml`, `test_accessoires.yaml`). Les
+- **Les tests s'écrivent en YAML OpenFisca**, dans `tests/formulas/` pour le système fiscal et dans
+  `tests_pension/formulas/` pour celui des pensions, selon la convention déjà en place
+  (`tests_pension/formulas/cnrps/pension.yaml`, `test_depart_anticipe.yaml`, `test_accessoires.yaml`). Les
   valeurs attendues y sont écrites en clair, tirées du droit et des paramètres.
 - Une démonstration « à résultats inchangés » se rend par **une table de cas explicite**, avec les
   bornes de chaque seuil, et non en reconstruisant en Python l'arithmétique que la PR supprime.

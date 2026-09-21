@@ -64,16 +64,6 @@ jobs:
           ref: master
           path: .openfisca-tunisia
 
-      # Les paramètres du précis viennent de DEUX paquets : les retraites vivent chez
-      # openfisca-tunisia-pension, les cotisations, l'impôt et les prestations chez
-      # openfisca-tunisia. Un sous-arbre a un propriétaire et un seul.
-      - name: Checkout d'openfisca-tunisia-pension
-        uses: actions/checkout@v5
-        with:
-          repository: openfisca/openfisca-tunisia-pension
-          ref: master
-          path: .openfisca-tunisia-pension
-
       - name: Install uv
         uses: astral-sh/setup-uv@v7
 
@@ -81,18 +71,20 @@ jobs:
         run: uv sync
 
       - name: Régénérer les snapshots
-        # Aucun des deux paquets n'est une dépendance du précis : le module les trouve par
-        # OPENFISCA_TUNISIA_PATH et OPENFISCA_TUNISIA_PENSION_PATH, qui désignent ici les
-        # checkouts ci-dessus.
+        # openfisca-tunisia n'est pas une dépendance du précis : le module le trouve par
+        # OPENFISCA_TUNISIA_PATH, qui désigne ici le checkout ci-dessus. Depuis sa 0.93, il
+        # porte aussi les paramètres de retraite, qu'un second dépôt fournissait avant.
         env:
           OPENFISCA_TUNISIA_PATH: ${{ github.workspace }}/.openfisca-tunisia
-          OPENFISCA_TUNISIA_PENSION_PATH: ${{ github.workspace }}/.openfisca-tunisia-pension
           PYTHONPATH: scripts
         run: |
           uv run python scripts/generate_bareme_tables.py
           uv run python scripts/generate_prestations_tables.py
           uv run python scripts/generate_cotisations_tables.py
           uv run python scripts/generate_droit_consommation_tables.py
+          # Le livre « Retraites » n'était pas régénéré ici : ses tableaux n'ont jamais été
+          # gardés contre une dérive du modèle. Ils le sont depuis la fusion des dépôts.
+          uv run python scripts/generate_retraites_tables.py
 
       # POURQUOI UN CONTRÔLE ET NON UN GÉNÉRATEUR ICI. Le relevé de l'impôt sur les
       # sociétés porte des lignes qu'un paramètre ne peut pas porter — la NATURE du
@@ -139,6 +131,10 @@ jobs:
             echo '    uv run python scripts/generate_prestations_tables.py'
             echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'
             echo '    uv run python scripts/generate_cotisations_tables.py'
+            echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'
+            echo '    uv run python scripts/generate_droit_consommation_tables.py'
+            echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'
+            echo '    uv run python scripts/generate_retraites_tables.py'
             echo '```'
             echo
             echo "puis relire le diff — une valeur qui change est un fait juridique, pas"
