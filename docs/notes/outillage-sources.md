@@ -184,12 +184,30 @@ résultat nul n'y a **aucune valeur probante**.
 2026 sur le JORT n° 97 de 2002 et le n° 8 de 2004 : l'encodage est décalé d'une constante de 29,
 lettres ET chiffres. Le fascicule paraît illisible — `pdftotext` rend
 `75$'8&7,21)5$1d$,6(` — et se relit intégralement en ajoutant 29 à chaque code :
-« TRADUCTION FRANÇAISE ». Les accents sortent corrects ; ne pas leur appliquer de substitution
-supplémentaire, qui les détruirait.
+« TRADUCTION FRANÇAISE ».
+
+**Les accents ne sortent pas toujours corrects.** Sur le JORT n° 22 de 2002 (21 septembre 2026),
+ils sont codés hors de la plage décalée, sur des lettres minuscules qu'il faut rétablir par une
+table ; le « ° » est codé `\x83`. Les espaces et sauts de ligne réels ne sont pas décalés et
+doivent être laissés tels quels, faute de quoi le texte se colle. La table ci-dessous est établie
+sur ce seul fascicule ; sur un autre, relire quelques accents à l'image
+avant de faire confiance à la table.
 
 ```python
+AUTRES = {"p": "é", "j": "à", "k": "â", "q": "è", "r": "ê", "d": "ç", "l": "î",
+          "x": "ô", "u": "ù", "\x83": "°"}
+
 def decode(s):  # sur la sortie de `pdftotext fascicule.pdf -`
-    return "".join(chr(ord(c) + 0x1D) if 0x20 <= ord(c) + 0x1D < 0x7F else c for c in s)
+    sortie = []
+    for c in s:
+        o = ord(c)
+        if c in " \n":
+            sortie.append(c)                      # espaces réels : non décalés
+        elif o < 0x62 and 0x20 <= o + 0x1D < 0x7F:
+            sortie.append(chr(o + 0x1D))          # seuls les codes < 0x62 sont décalés
+        else:
+            sortie.append(AUTRES.get(c, c))       # accents et « ° »
+    return "".join(sortie)
 ```
 
 **Conséquence de méthode** : avant de déclarer un fascicule « sans couche texte » et de lancer une
