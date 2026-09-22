@@ -24,6 +24,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Assuré social | المضمون الاجتماعي |  |
 | Augmentation optionnelle de l'âge de mise à la retraite | الترفيع الاختياري في سنّ الإحالة على التقاعد |  |
 | Avancement d'échelon | الترقّي في الدرجة |  |
+| Avantage en nature | الامتياز العيني |  |
 | Ayant droit | ذو الحقّ |  |
 | Barème de l'impôt sur le revenu | جدول الضريبة على الدخل |  |
 | Bénéfice imposable | الربح الخاضع للضريبة |  |
@@ -58,7 +59,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Droit de consommation | المعلوم على الاستهلاك |  |
 | Échelon | الدرجة |  |
 | Échelonnement indiciaire | التدرّج القياسي |  |
-| Éléments permanents de la rémunération | العناصر القارّة للأجر |  |
+| Éléments permanents de la rémunération | العناصر القارة للمرتب |  |
+| Emploi fonctionnel | الخطة الوظيفية |  |
 | Emploi public | التشغيل العمومي |  |
 | Enfant à charge | الطفل المتكفَّل به |  |
 | Entrepositaire | أرباب المخازن |  |
