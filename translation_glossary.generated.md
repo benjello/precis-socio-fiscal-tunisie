@@ -60,6 +60,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Échelon | الدرجة |  |
 | Échelonnement indiciaire | التدرّج القياسي |  |
 | Éléments permanents de la rémunération | العناصر القارة للمرتب |  |
+| Émoluments de base | المرتبات الأساسية |  |
+| Émoluments globaux indiciaires | المرتبات الجملية التابعة للرقم القياسي المعين |  |
 | Emploi fonctionnel | الخطة الوظيفية |  |
 | Emploi public | التشغيل العمومي |  |
 | Enfant à charge | الطفل المتكفَّل به |  |
@@ -100,9 +102,11 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Mise à la retraite d'office | الإحالة الوجوبية على التقاعد |  |
 | Option pour la qualité d'assujetti | الاختيار للخضوع للأداء |  |
 | Ouvrier de l'État | عامل الدولة |  |
+| Pension d'ancienneté | جراية التقاعد بالأقدمية |  |
 | Pension de réversion | جراية القرين الباقي على قيد الحياة |  |
 | Pension minimale garantie | الجراية الدنيا المضمونة |  |
 | Pension proportionnelle | الجراية النسبية |  |
+| Pension proportionnelle (loi n° 59-18) | جراية التقاعد النسبي |  |
 | Pension temporaire d'orphelin | الجراية الوقتية لليتيم |  |
 | Pensions civiles et militaires | الجرايات المدنية والعسكرية |  |
 | Péréquation des pensions | تنظير الجرايات |  |

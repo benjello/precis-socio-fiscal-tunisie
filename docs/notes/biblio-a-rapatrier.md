@@ -20,6 +20,117 @@ Zotero** ; documents tirés des archives du web (convention du bibliographe : `a
 | `cnrps-etats-financiers` | CNRPS, états financiers 2015, 2016 et 2018 (provisoires) | captures du 01/03/2021, 25/02/2021, 01/03/2021 (CDX lu le 22/09/2026) |
 | `minfin-remunerations` | copie à l'identique de l'entrée du livre « Rémunérations publiques » | désormais citée dans deux livres : à ranger en « Commun » |
 
+**Bloquant pour le rapatriement (clôture du 23/09/2026)** : `push_biblio.py --verifier` rend
+rc=1, **7 pertes de champ** sur trois entrées — `archive`, `archive_location` et `accessed` de
+`cnrps-etats-financiers` et `cnrps-guides-rapports`, `accessed` de `cnss-chiffres`. La
+conversion CSL → Zotero ne porte pas ces champs, alors que Zotero les a (`archive`,
+`archiveLocation`, `accessDate`). Défaut du convertisseur, préexistant (entrées committées en
+40510bd), non corrigé dans cette passe. **Ne pas pousser ces deux clés avant la correction** :
+l'emplacement d'archive, qui est toute la source, se perdrait.
+
+### Livre « Retraites » — CNRPS avant 1985, chaîne de la loi n° 59-18 (versement du 22/09/2026)
+
+Ajoutées à la main dans `precis/{fr,ar}/references.json` (fonds commun, comme `loi59-18` et
+`loi81-70`), **pas encore dans Zotero**. Collection Zotero cible : **`retraites`** (seul livre
+qui les cite ; à poser par `ranger` d'après l'usage réel, une fois la section 1 du chapitre CNRPS
+rédigée). Le fichier commun suit l'usage local : `loi81-70` et `decret81-939`, cités par le seul
+livre « Retraites », y sont déjà ; le rendu résout dans les deux cas. Source :
+`docs/notes/cnrps-avant-1985.md`, § 1 (textes lus au fascicule) ; métadonnées recoupées dans
+`jort_cache.db` ; URL = `pdf_fr` / `pdf_ar` du même enregistrement, toutes vérifiées
+(HTTP 206, `application/pdf`, `curl -k` : le certificat de pist.tn est expiré au 22/09/2026).
+
+| Clé | Texte | recid |
+|---|---|---|
+| `decret59-78` | Décret n° 59-78 du 17 mars 1959 (limites d'âge, 60 ans) | 107383 |
+| `decret59-80` | Décret n° 59-80 du 19 mars 1959 (65 ans pour des magistrats listés) | 107381 |
+| `loi59-37` | Loi n° 59-37 du 28 mars 1959 (ouvriers, SNCFT) | 118149 |
+| `loi59-100` | Loi n° 59-100 du 20 août 1959 (art. 52 nouveau) | 118092 |
+| `decretloi61-4` | Décret-loi n° 61-4 du 30 janvier 1961 (art. 11) | 106630 |
+| `loi64-45` | Loi n° 64-45 du 3 novembre 1964 (art. 45) | 117478 |
+| `loi68-2` | Loi n° 68-2 du 8 mars 1968 (art. 26 § V) ; rectificatif dans la note | 117109 (+ 117107) |
+| `decretloi70-1` | Décret-loi n° 70-1 du 14 septembre 1970 ; rectificatif dans la note | 103656 (+ 103490) |
+| `decretloi70-3` | Décret-loi n° 70-3 du 14 septembre 1970 (loi 59-37) | 103658 |
+| `decretloi74-9` | Décret-loi n° 74-9 du 2 octobre 1974 (militaires) | 116312 |
+| `loi76-61` | Loi n° 76-61 du 12 juillet 1976 (art. 4) | 115961 |
+| `loi77-36` | Loi n° 77-36 du 25 mai 1977 (art. 52 bis) | 115808 |
+| `loi79-66-lf1980` | Loi n° 79-66 du 31 décembre 1979, LF 1980, art. 43-45 | 115521 |
+| `loi80-24` | Loi n° 80-24 du 23 mai 1980 | 115454 |
+
+Clés de la note renommées selon la convention du dépôt (`decretloiAAAA-N`, cf.
+`decretloi2011-48`) : `dl61-4` → `decretloi61-4`, `dl70-1` → `decretloi70-1`, `dl70-3` →
+`decretloi70-3`, `dl74-9` → `decretloi74-9`. Pas de clé `-rect` (`loi68-2-rect`,
+`dl70-1-rect`, `loi73-71-rect`) : les rectificatifs sont décrits dans la note de l'entrée
+principale, comme l'était déjà celui de `loi73-71` (note complétée : contenu et URL du rectificatif). À scinder si la prose en cite un comme
+source distincte.
+
+**Déplacées** du fichier du livre « Cotisations sociales » vers le fonds commun (FR et AR,
+entrées inchangées) : `loi73-71`, `loi74-101-lf1975` — elles seront citées aussi par le livre
+« Retraites », qui ne lit pas le fichier de « Cotisations sociales ». **Dans Zotero**, si elles y
+portent la collection `cotisations_sociales`, il faudra la leur retirer (déclassement vers
+Commun) une fois la section 1 du chapitre CNRPS rédigée — sans quoi `sync_biblio.py` les
+redescendrait dans le seul livre « Cotisations sociales » et le livre « Retraites » rendrait
+`?@`. Action sortante : feu vert humain requis.
+
+Défauts de `jort_cache.db` relevés (consignés dans les notes des entrées) :
+- recid 103490 (rectificatif du DL 70-1) : `jort_annee` = 1970, alors que le fascicule est le
+  n° 19 de **1971** ; les champs `pdf_fr` / `pdf_ar` pointent bien 1971.
+- recid 116312 (DL 74-9) : typé « Loi » et loi modifiée datée du « 2 février 1959 » ; le
+  fascicule (OCR de la p. 2158 relu) porte « Décret-loi » et « 5 février 1959 ».
+- recid 115961 (loi 76-61) : fascicule daté du 9 juillet 1976, avant la signature du 12 juillet
+  — écart relevé, non résolu.
+
+Reste à faire :
+- [ ] Rapatrier les 14 entrées dans Zotero (collection `retraites`), puis `ranger` — feu vert humain.
+- [x] Relancer `--controle-rangement` après rédaction : fait le 23/09/2026 (voir la clôture
+      ci-dessous).
+- [ ] Titres : repris de `jort_cache.db`, accents et ponctuation rétablis (« retraites » →
+      « retraite » pour `loi76-61`, « Regime des Pensions » → minuscules pour `loi80-24`) ; seul
+      celui du DL 74-9 a été confronté au fascicule.
+- [ ] Titres arabes des 14 entrées AR : titre français conservé, comme pour `loi59-18`,
+      `loi81-70`, `loi73-71` ; à remplacer par le titre du JORT arabe lorsqu'il aura été lu
+      (aucune traduction machine).
+- [ ] `loi59-100` : numérotation de l'article additionnel (« 15 bis » ou « 52 bis ») à relire à
+      l'image.
+
+#### Clôture du 23/09/2026 — chapitre CNRPS réorganisé (section 1 rédigée)
+
+Fait :
+- [x] Résolution : les 195 clés de `_secteur_public.qmd` et `index.qmd` résolvent contre les
+      bibliographies déclarées des deux `_quarto.yml` (FR et AR) ; livres « Retraites » FR et AR
+      rendus, aucun `?@` ni `[?]`.
+- [x] `loi59-19`, art. premier relu à l'image (JORT n° 8 de 1959, p. 100, page 18 du PDF) :
+      « La Caisse Nationale des Retraites constitue un Établissement public doté de la
+      personnalité civile et de l'autonomie financière, rattaché au Secrétariat d'État aux
+      Finances et au Commerce » ; même date que la loi n° 59-18 (5 février 1959). Les phrases
+      qui la citent (`_secteur_public.qmd`, section 1 ; `index.qmd`, « Deux caisses ») sont
+      exactes.
+- [x] Locators précisés d'après `cnrps-avant-1985.md` (§ 1, 4.3, 4.5, 6) :
+      `[@decretloi70-1, art. 1-2]` → `art. 1 (art. 21 et 22) et art. 2` (refontes, et sources du
+      tableau 1959-1985), `art. 1 (art. 22 § II) et art. 2` (plafond),
+      `art. 1 (art. 26 § II) et art. 2` (rente d'invalidité) ; `[@loi68-2, art. 1-2]` →
+      `art. 1 (art. 26 § V) et art. 2`.
+
+Usage réel et Zotero (lecture seule, 23/09/2026) :
+
+| Clé | Citée par | Dans Zotero |
+|---|---|---|
+| `decret59-78`, `decret59-80`, `loi59-100`, `loi68-2`, `decretloi70-1`, `decretloi74-9`, `loi79-66-lf1980`, `loi80-24` | Retraites | non |
+| `loi59-37`, `decretloi61-4`, `loi64-45`, `decretloi70-3`, `loi76-61`, `loi77-36` | aucun livre | non |
+| `loi73-71` | Retraites et Cotisations sociales | oui, collection `cotisations_sociales` |
+| `loi59-19` | Retraites et Cotisations sociales | oui |
+| `loi74-101-lf1975` | Cotisations sociales seul (pas le livre « Retraites ») | oui |
+
+Reste à faire (feu vert humain requis pour toute écriture Zotero) :
+- [ ] Pousser les **8 clés citées** (1re ligne du tableau), puis `ranger` : collection `retraites`.
+- [ ] Les **6 clés non citées** : les pousser aussi, pour qu'elles ne se perdent pas au prochain
+      `sync_biblio.py`. Sans citation, `ranger` ne leur donne aucune collection, et elles
+      descendent alors en « Commun » : c'est attendu, et c'est là qu'elles sont déjà.
+- [ ] Déclasser `loi73-71` (retirer `cotisations_sociales`) : `--controle-rangement` la signale.
+- [ ] `loi74-101-lf1975` : citée par le seul livre « Cotisations sociales », elle y redescendra
+      au prochain sync, alors qu'elle se trouve aujourd'hui dans le fonds commun. C'est sans
+      effet tant que le livre « Retraites » ne la cite pas. S'il vient à la citer, il faudra la
+      déclasser.
+
 ### Sources de données (catalog.yml de tunisia-data) — type CSL `dataset`
 Clés référencées par les séries de données (`tunisia_data.meta()`), à créer dans Zotero
 pour que les figures du précis soient citées et tracées :
@@ -2381,3 +2492,10 @@ absentes de Zotero 55.
   poussées et citées par ce seul livre), la descente les écrira dans
   `precis/{lang}/retraites/references.json` ; les retirer alors du fichier commun, sans quoi l'`id`
   sera en double.
+
+## Pagination arabe (23/09/2026)
+
+- [x] `loi59-18` (AR) : 93-100 → 132-143 (édition arabe, JORT n° 8/1959, lue à l'image par le terminologue).
+- [x] `decretloi70-1` (AR) : 1186-1187 → 1300-1301 (édition arabe, JORT n° 43/1970).
+- [ ] `loi81-70` (AR) : porte encore la pagination française (1789-1798) sur l'URL du fascicule arabe. Seules les pp. 1889-1890 de l'édition arabe (art. 4) ont été lues : établir l'étendue complète de la loi dans l'édition arabe avant de corriger.
+- [ ] Même défaut probable pour d'autres entrées AR du fonds commun dont la pagination vient de `jort_cache` (qui donne la pagination française).
