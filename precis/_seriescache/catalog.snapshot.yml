@@ -683,3 +683,83 @@
     تُراجَع، ونسبة 2006 مأخوذة من تقرير 2007، ولا تذكر التقارير مصدر هذه المعدّلات
     ولا طريقتها.'
   fiche: docs/croissances-revenus-prix.md
+- id: cnrps-taux-equilibre
+  titre: 'CNRPS : taux de cotisation d''équilibre du régime de retraite et sa décomposition,
+    2000-2020'
+  sources:
+  - cnrps-guides-rapports
+  - cnrps-etats-financiers
+  - minfin-remunerations
+  build: scripts/build_cnrps_taux_equilibre.py:main
+  raw:
+  - data/processed/caisses/cnrps_pensions.csv
+  - data/processed/caisses/cnrps_regime_general_finances.csv
+  - data/processed/precis/masse_salariale_ratios_longs_1990_2025.csv
+  - data/processed/caisses/cnrps_actifs_tranches_salaire_2010.csv
+  output: data/processed/caisses/cnrps_taux_equilibre.csv
+  unite: taux, millions de dinars, dinars par mois, pensions, personnes
+  perimetre: 'taux d''équilibre = dépenses de l''ensemble des régimes de retraite
+    gérés par la caisse (pensions de toutes natures) ÷ masse des salaires soumis à
+    cotisation = taux de remplacement apparent (pension moyenne ÷ salaire moyen) ×
+    ratio pensions / cotisants (pensions de toutes natures ÷ affiliés actifs, effectifs
+    de fin d''année) ; comparé au taux légal global du régime général (agent + employeur,
+    moyenne des douze taux mensuels). Colonne `denominateur` : « cotisations » (2014-2018),
+    « cotisations reconstituées » (2019-2020), « masse salariale de l''État (approximation)
+    » (2000-2013). Contrôles de 2014-2020 : rapport de l''assiette tirée des cotisations
+    à la masse salariale de l''État, et taux d''équilibre du seul régime général'
+  caveats: 'SÉRIE CALCULÉE. DÉNOMINATEUR APPROCHÉ DE 2000 À 2013 : aucune source lue
+    ne donne les cotisations seules avant 2014 ; la masse salariale de l''État (ministère
+    des finances, « Rémunérations publiques ») en tient lieu. Sur 2014-2020, l''assiette
+    tirée des cotisations vaut 0,997 ; 0,992 ; 1,009 ; 0,977 ; 0,974 ; 0,994 ; 0,952
+    fois cette masse, mais par compensation de périmètres, non par identité : la masse
+    de l''État comprend les contributions patronales, les primes et les rappels, et
+    exclut les collectivités locales et les établissements publics hors budget de
+    l''État, affiliés à la caisse ; le taux employeur passant de 8,2 % à 12,5 % entre
+    2000 et 2013, rien n''assure que la compensation ait été stable avant 2014. BIAIS
+    CHIFFRÉ EN 2010 : l''approximation donne un salaire moyen de 875,2 D par mois,
+    quand la caisse publie 979,158 D de salaire brut moyen pour ses actifs (guide
+    2000-2010, p. 49, périmètre non précisé, 423 032 personnes), soit −10,6 % ; appliqué
+    à tous les affiliés, le chiffre publié donnerait un taux d''équilibre de 22,1
+    % au lieu de 24,8 %. Rien n''est corrigé. Le ratio pensions / cotisants ne dépend
+    pas du dénominateur ; seuls le taux de remplacement apparent et le taux d''équilibre
+    portent l''approximation. 2019-2020 : cotisations RECONSTITUÉES (niveau 2018 +
+    hausses publiées arrondies au million) ; 2020 cumule cette reconstitution et le
+    plus faible recouvrement (0,952). PÉRIMÈTRES : le numérateur couvre l''ensemble
+    des régimes de retraite (régime général, régimes spéciaux, retraites anticipées
+    financées par l''État), seule série continue ; le dénominateur de 2014-2020 ne
+    couvre que le régime général ; la variante de même périmètre (« taux d''équilibre,
+    régime général seul ») est plus basse de 0,9 % (2015) à 2,6 % (2018) selon les
+    années de 2014 à 2020. Le numérateur comprend de petites charges autres que des
+    pensions : allocations familiales, confondues avec les pensions temporaires d''orphelins
+    (1,7 à 2,0 % des dépenses en 2014-2018, borne haute), et remboursements de cotisations
+    (0,01 %). Les effectifs comptent des PENSIONS, non des personnes, en fin d''année,
+    rapportées à des dépenses annuelles. 2016 atypique : des primes spécifiques créées
+    ou revalorisées ont ajouté plus de 110 millions de dinars de cotisations. Le taux
+    d''équilibre est une grandeur comptable instantanée : il ne tient compte ni des
+    autres recettes du régime (péréquation, bonification, rachats, contributions de
+    l''État) ni des réserves.'
+  titre_ar: 'الصندوق الوطني للتقاعد والحيطة الاجتماعية: نسبة المساهمة المحقّقة للتوازن
+    في نظام التقاعد ومكوّناتها، 2000-2020'
+  unite_ar: نسب، ملايين الدنانير، دنانير شهرياً، جرايات، أشخاص
+  perimetre_ar: 'نسبة التوازن = نفقات جميع أنظمة التقاعد التي يتصرّف فيها الصندوق
+    (الجرايات بجميع أصنافها) ÷ كتلة الأجور الخاضعة للمساهمة = نسبة التعويض الظاهرة
+    (معدّل الجراية ÷ معدّل الأجر) × نسبة الجرايات إلى المساهمين (الجرايات بجميع أصنافها
+    ÷ المنخرطين النشيطين، في آخر السنة)؛ تُقارن بالنسبة القانونية الجملية للنظام العام
+    (العون + المؤجّر، معدّل النسب الشهرية الاثنتي عشرة). عمود المقام: المساهمات (2014-2018)،
+    مساهمات معاد تركيبها (2019-2020)، كتلة أجور الدولة على وجه التقريب (2000-2013)'
+  caveats_ar: 'سلسلة محسوبة. المقام تقريبي من 2000 إلى 2013: لا يتوفّر أيّ مصدر للمساهمات
+    وحدها قبل 2014، فتُعتمد كتلة أجور الدولة (وزارة المالية، «الأجور العمومية»). في
+    الفترة 2014-2020 تساوي قاعدة المساهمات 0,997 و0,992 و1,009 و0,977 و0,974 و0,994
+    و0,952 مرّة هذه الكتلة، لكن بتعادل الفوارق لا بتطابق المجال: تشمل كتلة أجور الدولة
+    المساهمات المحمولة على المؤجّر والمنح والمتخلّدات، ولا تشمل الجماعات المحلية والمؤسسات
+    العمومية خارج ميزانية الدولة المنخرطة في الصندوق، وقد ارتفعت نسبة مساهمة المؤجّر
+    من 8,2 % إلى 12,5 % بين 2000 و2013. سنة 2010: يعطي التقريب معدّل أجر شهري قدره
+    875,2 دينارا، في حين ينشر الصندوق 979,158 دينارا لنشيطيه (مجال غير محدّد، 423
+    032 شخصا)، أي −10,6 %؛ ولو طُبّق الرقم المنشور على جميع المنخرطين لكانت نسبة التوازن
+    22,1 % بدل 24,8 %. لا يُصحَّح شيء. نسبة الجرايات إلى المساهمين لا تتأثّر بالمقام.
+    سنتا 2019 و2020: مساهمات معاد تركيبها. البسط يشمل جميع أنظمة التقاعد والمقام النظام
+    العام وحده (2014-2020)، والصيغة ذات المجال الواحد أدنى بـ 0,9 % إلى 2,6 %. يشمل
+    البسط أعباء صغيرة غير الجرايات (المنح العائلية مع منح الأيتام: 1,7 إلى 2,0 %).
+    تُعدّ الجرايات لا الأشخاص. سنة 2016 استثنائية. نسبة التوازن مقدار محاسبي آني لا
+    يأخذ في الاعتبار الموارد الأخرى للنظام ولا احتياطياته.'
+  fiche: sources/cnrps-publications.md

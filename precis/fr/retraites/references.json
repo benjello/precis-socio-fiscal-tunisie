@@ -1139,6 +1139,58 @@
       "URL": "https://webapps.ilo.org/public/libdoc/ilo/P/09615/09615(1999).pdf",
       "title-short": "BIT, Yearbook of Labour Statistics 1999",
       "note": "citation-key: bit-yearbook-1999\nÉdition de 1999, « 58th issue / 58e édition » ; titre trilingue lu sur la couverture du PDF (1 368 pages, scan) : « 1999 Yearbook of Labour Statistics. Annuaire des statistiques du travail. Anuario de estadísticas del trabajo » (la couverture écrit « Yearbook » en un mot, contre « Year Book » en 1985), « International Labour Office Geneva / Bureau international du Travail Genève ». Verso de la page de titre : « Copyright © International Labour Organization 1999 », « The set of 2 volumes / Le jeu de 2 volumes », ISBN 92-2-007358-7, « Printed in France ». L'ISSN y est imprimé « 0084-5857 », dont la clé de contrôle est fausse ; celui de l'édition de 1985 est 0084-3857 : l'ISSN n'est pas repris ici. Utilisé pour le tableau 6A « Labour cost in manufacturing » (chapitre 6, page 1003 imprimée) — même série que le tableau 22A de l'édition de 1985 (bit-yearbook-1985), sous une numérotation refondue. URL vérifiée le 22 septembre 2026 (HTTP 200, PDF de 71 280 029 octets, même taille que la copie locale de tunisia-data). Consulté le 22 septembre 2026."
+    },
+    {
+      "id": "cnrps-guides-rapports",
+      "type": "report",
+      "title": "Guides statistiques (2000-2010, 2010-2014) et rapports d'activité (2016, 2017, 2018, 2020)",
+      "title-short": "CNRPS, guides statistiques et rapports d'activité",
+      "author": [
+        {
+          "literal": "Caisse nationale de retraite et de prévoyance sociale"
+        }
+      ],
+      "publisher": "Caisse nationale de retraite et de prévoyance sociale",
+      "publisher-place": "Tunis",
+      "URL": "https://web.archive.org/web/20150106002250/http://www.cnrps.nat.tn:80/upload/acces_docs/Rapports/gstat_2000-2010.pdf",
+      "note": "citation-key: cnrps-guides-rapports\nSite de la Caisse nationale de retraite et de prévoyance sociale inaccessible (pare-feu applicatif, y compris depuis un navigateur) ; consulté dans la capture des archives du web du 06/01/2015 (guide 2000-2010 ; captures des autres documents ci-dessous).\nEnsemble de publications de la caisse, en arabe, couvrant 2000-2020. Intitulés lus sur les couvertures : « الدليل الإحصائي 2000 - 2010 » (guide statistique, « إدارة مراقبة التصرف - مصلحة الإحصائيات وجداول القيادة », daté « أكتوبر 2011 ») ; « الدليل الإحصائي » 2010-2014 (« إدارة مراقبة التصرف », sans date imprimée en couverture) ; « تقرير النشاط » 2017 (daté « نوفمبر 2018 »), 2018 (daté « نوفمبر 2019 ») et 2020 (sans date en couverture ; l'en-tête des pages porte « التقرير السنوي للنشاط 2020 ») ; le fichier du rapport 2016 ne porte pas de couverture, sa première page est la composition du conseil d'administration. Couvertures sous l'en-tête « وزارة الشؤون الاجتماعية » et « الصندوق الوطني للتقاعد والحيطة الاجتماعية » (Caisse Nationale de Retraite et de Prévoyance Sociale, 6 avenue Mohamed V, Tunis). Le site de la caisse (cnrps.nat.tn) étant bloqué par un pare-feu applicatif, les documents ont été récupérés dans les archives du web (Wayback Machine). L'URL donnée est celle du guide 2000-2010 (capture du 6 janvier 2015, PDF de 1 099 829 octets, vérifiée le 21 septembre 2026). Rapport d'activité 2020 : https://web.archive.org/web/20220709005355/http://www.cnrps.nat.tn/upload/acces_docs/Rapports/ra_2020.pdf (vérifiée le 21 septembre 2026). Guide 2010-2014 : https://web.archive.org/web/20190214182033/http://www.cnrps.nat.tn:80/upload/acces_docs/Rapports/gstat_2010-2014.pdf. Rapports 2016, 2017 et 2018 : captures de juillet 2022 de http://www.cnrps.nat.tn/upload/acces_docs/Rapports/ra_AAAA.pdf (taille des fichiers archivés conforme aux copies locales, vérifiée le 21 septembre 2026). Liste complète des fichiers, avec adresses d'origine et d'archive : dépôt tunisia-data, sources/cnrps-urls.csv. Le guide 2010-2019 et les rapports 2014 et 2015 sont tronqués à 1 Mio dans les archives.",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.cnrps.nat.tn:80/upload/acces_docs/Rapports/gstat_2000-2010.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cnrps-etats-financiers",
+      "type": "report",
+      "title": "États financiers 2015, 2016 et 2018 (provisoires)",
+      "title-short": "CNRPS, états financiers",
+      "author": [
+        {
+          "literal": "Caisse nationale de retraite et de prévoyance sociale"
+        }
+      ],
+      "publisher": "Caisse nationale de retraite et de prévoyance sociale",
+      "publisher-place": "Tunis",
+      "URL": "https://web.archive.org/web/20210301165446/http://cnrps.nat.tn/upload/acces_docs/Rapports/bilan2015.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://cnrps.nat.tn/upload/acces_docs/Rapports/bilan2015.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            22
+          ]
+        ]
+      },
+      "note": "citation-key: cnrps-etats-financiers\nSite de la Caisse nationale de retraite et de prévoyance sociale inaccessible (pare-feu applicatif, y compris depuis un navigateur) ; états financiers consultés dans les captures des archives du web du 01/03/2021 (2015), du 25/02/2021 (2016) et du 01/03/2021 (2018), captures vérifiées le 22/09/2026 (HTTP 200, tailles conformes aux copies lues).\nDocuments en arabe : « القوائم المالية لسنة 2015 », « القوائم المالية لسنة 2016 » et « القوائم المالية الوقتية لسنة 2018 » (états financiers provisoires pour 2018). Notes n° 5 et 6 : recettes et dépenses du régime général de retraite et de l'ensemble des régimes, 2014-2018 (2017 comme colonne de comparaison des états 2018). L'URL donnée est celle des états 2015. États 2016 : https://web.archive.org/web/20210225194724/http://cnrps.nat.tn/upload/acces_docs/Rapports/bilan2016.pdf. États 2018 : https://web.archive.org/web/20210301165636/http://cnrps.nat.tn/upload/acces_docs/Rapports/bilan2018.pdf. Les états 2017 et 2019 sont tronqués à 1 Mio dans les archives, seule capture, et illisibles. Liste des fichiers : dépôt tunisia-data, sources/cnrps-urls.csv."
     }
   ]
 }
