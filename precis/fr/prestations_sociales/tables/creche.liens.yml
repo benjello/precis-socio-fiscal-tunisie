@@ -1,0 +1,15 @@
+- libelle: Montant, par enfant et par mois
+  parametre: parameters/prestations/contributives/prestations_familiales/creche/montant.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.creche.montant/table/
+- libelle: Durée de service, par an
+  parametre: parameters/prestations/contributives/prestations_familiales/creche/duree.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.creche.duree/table/
+- libelle: Âge minimal de l'enfant
+  parametre: parameters/prestations/contributives/prestations_familiales/creche/age_min.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.creche.age_min/table/
+- libelle: Âge maximal de l'enfant
+  parametre: parameters/prestations/contributives/prestations_familiales/creche/age_max.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.creche.age_max/table/
+- libelle: Plafond de revenu de la mère
+  parametre: parameters/prestations/contributives/prestations_familiales/creche/plaf.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.creche.plaf/table/

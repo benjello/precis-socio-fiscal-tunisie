@@ -1,0 +1,15 @@
+- libelle: شهر رمضان
+  parametre: parameters/prestations/non_contributives/amen_social/aides_ponctuelles/fetes_religieuses/ramadan.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.non_contributives.amen_social.aides_ponctuelles.fetes_religieuses.ramadan/table/
+- libelle: عيد الفطر
+  parametre: parameters/prestations/non_contributives/amen_social/aides_ponctuelles/fetes_religieuses/aid_al_fitr.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.non_contributives.amen_social.aides_ponctuelles.fetes_religieuses.aid_al_fitr/table/
+- libelle: عيد الأضحى
+  parametre: parameters/prestations/non_contributives/amen_social/aides_ponctuelles/fetes_religieuses/aid_al_adha.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.non_contributives.amen_social.aides_ponctuelles.fetes_religieuses.aid_al_adha/table/
+- libelle: العودة المدرسية
+  parametre: parameters/prestations/non_contributives/amen_social/aides_ponctuelles/scolarite/rentree_scolaire.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.non_contributives.amen_social.aides_ponctuelles.scolarite.rentree_scolaire/table/
+- libelle: العودة الجامعية
+  parametre: parameters/prestations/non_contributives/amen_social/aides_ponctuelles/scolarite/rentree_universitaire.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.non_contributives.amen_social.aides_ponctuelles.scolarite.rentree_universitaire/table/

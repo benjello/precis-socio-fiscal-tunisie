@@ -154,6 +154,11 @@ def openfisca_utilisable(paquet: str | None = None) -> bool:
 # les fonctions qui lisent une série y notent le chemin et l'en-tête de colonne ; le relevé
 # est écrit à côté du tableau (`<nom>.liens.yml`) et `markdown_avec_legende` en fait un
 # onglet. Le lien est engendré comme la valeur : jamais écrit à la main.
+#
+# Un générateur n'appelle que deux fonctions : `avec_liens(fabrique)`, qui fabrique le
+# tableau sous relevé, puis `ecrire_tableau(...)`, qui écrit le snapshot et ses liens. Une
+# lecture qui ne passe pas par un tableau à en-têtes — un barème, un total parcourant une
+# arborescence — se note à la main par `releve_note(chemin, libellé)`.
 BASE_LEGISLATIVE = "https://parameters.tn.tax-benefit.org"
 _releve: dict[str, str | None] | None = None
 
@@ -196,6 +201,34 @@ def ecrire_liens(chemin_tableau: str | Path, liens: list[tuple[str, str | None]]
     fichier.write_text(yaml.safe_dump(
         [{"libelle": l, "parametre": c, "url": url_parametre(c, langue)} for c, l in liens],
         allow_unicode=True, sort_keys=False), encoding="utf-8")
+
+
+def avec_liens(fabrique: Callable[[], Any]) -> tuple[Any, list[tuple[str, str | None]]]:
+    """Fabrique un tableau sous relevé : rend le tableau et les paramètres qu'il a lus.
+
+    Le relevé est refermé même si la fabrique lève : un relevé resté ouvert capterait
+    les lectures du tableau suivant.
+    """
+    releve_debut()
+    try:
+        tableau = fabrique()
+    finally:
+        liens = releve_fin()
+    return tableau, liens
+
+
+def ecrire_tableau(chemin_tableau: str | Path, df: "pd.DataFrame",
+                   liens: list[tuple[str, str | None]], langue: str,
+                   entete: str = "") -> None:
+    """Écrit le snapshot Markdown d'un tableau, puis ses liens (`<nom>.liens.yml`).
+
+    `entete` : commentaire HTML placé avant le tableau ; un snapshot qui en porte un se
+    termine par une ligne vide, comme les générateurs l'ont toujours écrit.
+    """
+    corps = tableau_vers_markdown(df)
+    Path(chemin_tableau).write_text(
+        f"{entete}{corps}\n" if entete else corps, encoding="utf-8")
+    ecrire_liens(chemin_tableau, liens, langue)
 
 
 def charge_parametre(chemin_relatif: str, paquet: str | None = None) -> dict[str, Any] | None:
@@ -424,6 +457,7 @@ def tableau_serie(
     serie = serie_datee(chemin_relatif)
     if not serie:
         return None
+    releve_note(chemin_relatif, colonne_valeur)
     if formateur is None:
         formateur = lambda v: "—" if v is None else formate_dinars(v)
     lignes = []
@@ -718,6 +752,7 @@ def tableau_a_la_date(
         serie = serie_datee(chemin)
         if not serie:
             return None
+        releve_note(chemin, libelle)
         retenue, titre_retenu = None, ""
         for d, v, titre, _h in serie:
             if d <= date:
@@ -764,6 +799,8 @@ def tableau_taux_datee(
     series = {chemin: taux_datee(chemin) for chemin, _e, _f in specs}
     if not all(series.values()):
         return None
+    for chemin, entete, _f in specs:
+        releve_note(chemin, entete)
     dates = sorted({d for s in series.values() for d, *_ in s})
 
     def valeur_a(chemin, date):

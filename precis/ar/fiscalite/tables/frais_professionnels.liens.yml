@@ -1,0 +1,6 @@
+- libelle: النسبة
+  parametre: parameters/impot_revenu/tspr/abat_sal.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.tspr.abat_sal/table/
+- libelle: السقف السنوي
+  parametre: parameters/impot_revenu/tspr/max_abat_sal.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.tspr.max_abat_sal/table/

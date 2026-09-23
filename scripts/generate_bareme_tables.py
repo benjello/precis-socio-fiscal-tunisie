@@ -54,6 +54,9 @@ MOTS = {
         "enfant4": "4\u1d49 enfant",
         "enfant_infirme": "Enfant infirme",
         "parent": "Parent à charge",
+        # Libellés des liens vers la base législative des barèmes.
+        "bareme_ir": "Barème de l\u2019impôt sur le revenu",
+        "bareme_cpe": "Barème de la contribution personnelle d\u2019État",
     },
     "ar": {
         "tranche_net": "شريحة الدخل السنوي الصافي (بالدينار)",
@@ -74,6 +77,8 @@ MOTS = {
         "enfant4": "الطفل الرابع",
         "enfant_infirme": "الطفل المعوق",
         "parent": "الوالد المتكفَّل به",
+        "bareme_ir": "جدول الضريبة على الدخل",
+        "bareme_cpe": "جدول المساهمة الشخصية للدولة",
     },
 }
 
@@ -192,6 +197,21 @@ TABLEAUX = [
 CONTROLE_1990 = ["0 %", "10,50 %", "15,25 %", "20,12 %", "26,05 %", "—"]
 
 
+def bareme(chemin, annee, libelle, langue, colonne_tranche, avec_taux_effectif):
+    """Barème en vigueur au 1er janvier de `annee`, noté au relevé sous `libelle`."""
+    m = MOTS[langue]
+    ot.releve_note(chemin, libelle)
+    return ot.tableau_bareme(
+        chemin,
+        datetime.date(annee, 1, 1),
+        colonne_tranche=colonne_tranche,
+        avec_taux_effectif=avec_taux_effectif,
+        langue=langue,
+        colonne_taux=m["taux_tranche"],
+        colonne_taux_effectif=m["taux_effectif"],
+    )
+
+
 def main() -> int:
     if not ot.openfisca_utilisable():
         version = ot.version_openfisca()
@@ -208,52 +228,38 @@ def main() -> int:
         sortie.mkdir(parents=True, exist_ok=True)
 
         for fichier, annee in TABLEAUX_CPE:
-            df = ot.tableau_bareme(
-                BAREME_CPE,
-                datetime.date(annee, 1, 1),
-                colonne_tranche=m["tranche_imposable"],
-                avec_taux_effectif=True,
-                langue=langue,
-                colonne_taux=m["taux_tranche"],
-                colonne_taux_effectif=m["taux_effectif"],
-            )
+            df, liens = ot.avec_liens(lambda: bareme(
+                BAREME_CPE, annee, m["bareme_cpe"], langue,
+                colonne_tranche=m["tranche_imposable"], avec_taux_effectif=True))
             if df is None:
                 print(f"échec : {langue}/{fichier}", file=sys.stderr)
                 return 1
-            (sortie / fichier).write_text(
-                "<!-- Généré par scripts/generate_bareme_tables.py — ne pas éditer à la main.\n"
+            ot.ecrire_tableau(
+                sortie / fichier, df, liens, langue,
+                entete="<!-- Généré par scripts/generate_bareme_tables.py — ne pas éditer à la main.\n"
                 f"     Tarif de la contribution personnelle d'État applicable aux revenus de {annee}.\n"
                 "     Source : voir les métadonnées du paramètre\n"
-                "     impot_revenu/contribution_personnelle_etat/bareme.yaml -->\n\n"
-                + ot.tableau_vers_markdown(df) + "\n",
-                encoding="utf-8",
+                "     impot_revenu/contribution_personnelle_etat/bareme.yaml -->\n\n",
             )
 
         for fichier, specs, cles in evolutions(langue):
-            df = ot.tableau_evolution(
+            df, liens = ot.avec_liens(lambda: ot.tableau_evolution(
                 specs, cles=cles, colonne_periode=m["periode"], colonne_texte=m["texte"]
-            )
+            ))
             if df is None:
                 print(f"échec : {langue}/{fichier}", file=sys.stderr)
                 return 1
             origines = ", ".join(c for c, _e, _f in specs)
-            (sortie / fichier).write_text(
-                "<!-- Généré par scripts/generate_bareme_tables.py — ne pas éditer à la main.\n"
-                f"     Paramètres : {origines} -->\n\n"
-                + ot.tableau_vers_markdown(df) + "\n",
-                encoding="utf-8",
+            ot.ecrire_tableau(
+                sortie / fichier, df, liens, langue,
+                entete="<!-- Généré par scripts/generate_bareme_tables.py — ne pas éditer à la main.\n"
+                f"     Paramètres : {origines} -->\n\n",
             )
 
         for fichier, annee, taux_effectif, entete, source in TABLEAUX:
-            df = ot.tableau_bareme(
-                BAREME,
-                datetime.date(annee, 1, 1),
-                colonne_tranche=m[entete],
-                avec_taux_effectif=taux_effectif,
-                langue=langue,
-                colonne_taux=m["taux_tranche"],
-                colonne_taux_effectif=m["taux_effectif"],
-            )
+            df, liens = ot.avec_liens(lambda: bareme(
+                BAREME, annee, m["bareme_ir"], langue,
+                colonne_tranche=m[entete], avec_taux_effectif=taux_effectif))
             if df is None:
                 print(f"échec : {langue}/{fichier}", file=sys.stderr)
                 return 1
@@ -263,11 +269,10 @@ def main() -> int:
                     "Les taux effectifs calculés ne correspondent plus au barème publié au "
                     f"JORT de 1990.\n  attendu : {CONTROLE_1990}\n  obtenu  : {obtenu}"
                 )
-            (sortie / fichier).write_text(
-                "<!-- Généré par scripts/generate_bareme_tables.py — ne pas éditer à la main.\n"
-                f"     Source : {source} -->\n\n"
-                + ot.tableau_vers_markdown(df) + "\n",
-                encoding="utf-8",
+            ot.ecrire_tableau(
+                sortie / fichier, df, liens, langue,
+                entete="<!-- Généré par scripts/generate_bareme_tables.py — ne pas éditer à la main.\n"
+                f"     Source : {source} -->\n\n",
             )
 
         total = len(TABLEAUX_CPE) + len(evolutions(langue)) + len(TABLEAUX)

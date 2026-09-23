@@ -1,0 +1,15 @@
+- libelle: Déduction
+  parametre: parameters/impot_revenu/deductions/famille/chef_de_famille.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.deductions.famille.chef_de_famille/table/
+- libelle: 1ᵉʳ enfant
+  parametre: parameters/impot_revenu/deductions/famille/enf1.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.deductions.famille.enf1/table/
+- libelle: 4ᵉ enfant
+  parametre: parameters/impot_revenu/deductions/famille/enf4.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.deductions.famille.enf4/table/
+- libelle: Enfant infirme
+  parametre: parameters/impot_revenu/deductions/famille/infirme.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.deductions.famille.infirme/table/
+- libelle: Parent à charge
+  parametre: parameters/impot_revenu/deductions/famille/parent_max.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.deductions.famille.parent_max/table/

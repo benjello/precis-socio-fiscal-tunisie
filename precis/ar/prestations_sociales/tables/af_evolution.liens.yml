@@ -1,0 +1,21 @@
+- libelle: النسبة، الترتيب الأوّل
+  parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf1.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.taux.enf1/table/
+- libelle: النسبة، الترتيب الثاني
+  parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf2.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.taux.enf2/table/
+- libelle: النسبة، الترتيب الثالث
+  parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf3.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.taux.enf3/table/
+- libelle: النسبة، الترتيب الرابع
+  parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf4.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.taux.enf4/table/
+- libelle: الوعاء الثلاثي، الحدّ الأدنى
+  parametre: parameters/prestations/contributives/prestations_familiales/af/plancher_trim.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.plancher_trim/table/
+- libelle: الوعاء الثلاثي، السقف
+  parametre: parameters/prestations/contributives/prestations_familiales/af/plaf_trim.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.plaf_trim/table/
+- libelle: الترتيبات المصروفة
+  parametre: parameters/prestations/contributives/prestations_familiales/af/nb_enfants_max.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.nb_enfants_max/table/

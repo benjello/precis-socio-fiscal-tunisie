@@ -383,9 +383,7 @@ def main() -> int:
         sortie.mkdir(parents=True, exist_ok=True)
         fabriques = tableaux(langue)
         for nom, fabrique in fabriques.items():
-            ot.releve_debut()
-            df = fabrique()
-            liens = ot.releve_fin()
+            df, liens = ot.avec_liens(fabrique)
             if df is None or df.empty:
                 print(f"✗ {langue}/{nom} : paramètre introuvable ou vide.")
                 return 1
@@ -393,8 +391,7 @@ def main() -> int:
             if manquante is not None:
                 print(f"✗ {langue}/{nom} : date d'effet sans clé de citation — {manquante}")
                 return 1
-            (sortie / nom).write_text(ot.tableau_vers_markdown(df), encoding="utf-8")
-            ot.ecrire_liens(sortie / nom, liens, langue)
+            ot.ecrire_tableau(sortie / nom, df, liens, langue)
         print(f"✓ {langue} : {len(fabriques)} tableaux")
     # Chaque série est émise quoi qu'il arrive aux autres, et le code de retour les
     # combine : une série vide ne doit pas en masquer une autre.

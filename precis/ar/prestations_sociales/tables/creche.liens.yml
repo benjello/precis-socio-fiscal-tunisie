@@ -1,0 +1,15 @@
+- libelle: المبلغ عن كلّ طفل وكلّ شهر
+  parametre: parameters/prestations/contributives/prestations_familiales/creche/montant.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.creche.montant/table/
+- libelle: مدّة الصرف في السنة
+  parametre: parameters/prestations/contributives/prestations_familiales/creche/duree.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.creche.duree/table/
+- libelle: السنّ الدنيا للطفل
+  parametre: parameters/prestations/contributives/prestations_familiales/creche/age_min.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.creche.age_min/table/
+- libelle: السنّ القصوى للطفل
+  parametre: parameters/prestations/contributives/prestations_familiales/creche/age_max.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.creche.age_max/table/
+- libelle: سقف دخل الأمّ
+  parametre: parameters/prestations/contributives/prestations_familiales/creche/plaf.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.creche.plaf/table/

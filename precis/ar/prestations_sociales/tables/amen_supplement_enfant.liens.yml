@@ -1,0 +1,15 @@
+- libelle: الزيادة الشهرية
+  parametre: parameters/prestations/non_contributives/amen_social/supplements/enfant_a_charge.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.non_contributives.amen_social.supplements.enfant_a_charge/table/
+- libelle: بطاقة إعاقة
+  parametre: parameters/prestations/non_contributives/amen_social/supplements/handicap.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.non_contributives.amen_social.supplements.handicap/table/
+- libelle: السنّ الدنيا
+  parametre: parameters/prestations/non_contributives/amen_social/supplements/age_min_enfant.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.non_contributives.amen_social.supplements.age_min_enfant/table/
+- libelle: السنّ القصوى
+  parametre: parameters/prestations/non_contributives/amen_social/supplements/limite_age_enfant.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.non_contributives.amen_social.supplements.limite_age_enfant/table/
+- libelle: السنّ القصوى في حالة الدراسة أو التمهين أو التكوين
+  parametre: parameters/prestations/non_contributives/amen_social/supplements/limite_age_etudiant.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.non_contributives.amen_social.supplements.limite_age_etudiant/table/

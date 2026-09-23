@@ -97,18 +97,13 @@ def releve() -> dict[int, dict[str, dict]]:
     return par_ordre
 
 
-def main() -> int:
-    if not ot.openfisca_utilisable():
-        print(
-            f"openfisca-tunisia indisponible ou trop ancien (version "
-            f"{ot.version_openfisca()}). Définir OPENFISCA_TUNISIA_PATH.",
-            file=sys.stderr,
-        )
-        return 1
+def tarifs(par_ordre: dict[int, dict[str, dict]]) -> tuple[list | None, list[str], int]:
+    """Lignes du tableau, écarts avec le relevé, nombre de valeurs lues.
 
-    par_ordre = releve()
+    Chaque paramètre lu est noté au relevé sous le nom du produit : c'est le libellé de
+    son lien vers la base législative. `None` en tête signale un paramètre inutilisable.
+    """
     lignes, ecarts, lus = [], [], 0
-
     for ordre in sorted(par_ordre):
         cols = par_ordre[ordre]
         base = cols["1988"]
@@ -117,11 +112,13 @@ def main() -> int:
         if nom is None:  # ligne née après 1999, non versée dans openfisca
             continue
 
-        serie = {d: v for d, v, _t, _h in ot.serie_datee(f"{BRANCHE}/{nom}.yaml")}
+        chemin = f"{BRANCHE}/{nom}.yaml"
+        serie = {d: v for d, v, _t, _h in ot.serie_datee(chemin)}
         if not serie:
             print(f"paramètre introuvable ou vide : {nom}", file=sys.stderr)
-            return 1
+            return None, ecarts, lus
 
+        ot.releve_note(chemin, produit)
         ligne = {"Position": position, "Produit": produit}
         for entete, date in COLONNES:
             attendu = cols.get(entete)
@@ -133,7 +130,7 @@ def main() -> int:
                 continue
             if valeur is None:
                 print(f"paramètre {nom} : valeur nulle au {date}", file=sys.stderr)
-                return 1
+                return None, ecarts, lus
             ligne[entete] = f"{formate_tarif(valeur)} {attendu['unite']}"
             lus += 1
             # garde-fou : openfisca et le relevé du précis doivent dire la même chose
@@ -141,6 +138,21 @@ def main() -> int:
             if abs(valeur - cible) > 1e-9:
                 ecarts.append(f"{nom} @{date} : openfisca={valeur} relevé={cible}")
         lignes.append(ligne)
+    return lignes, ecarts, lus
+
+
+def main() -> int:
+    if not ot.openfisca_utilisable():
+        print(
+            f"openfisca-tunisia indisponible ou trop ancien (version "
+            f"{ot.version_openfisca()}). Définir OPENFISCA_TUNISIA_PATH.",
+            file=sys.stderr,
+        )
+        return 1
+
+    (lignes, ecarts, lus), liens = ot.avec_liens(lambda: tarifs(releve()))
+    if lignes is None:
+        return 1
 
     if ecarts:
         print("Les paramètres openfisca ne correspondent plus au relevé du précis :",
@@ -153,15 +165,14 @@ def main() -> int:
 
     df = pd.DataFrame(lignes, columns=["Position", "Produit"] + [c for c, _ in COLONNES])
     SORTIE.parent.mkdir(parents=True, exist_ok=True)
-    SORTIE.write_text(
-        "<!-- Généré par scripts/generate_droit_consommation_tables.py — ne pas éditer "
-        "à la main.\n"
+    ot.ecrire_tableau(
+        SORTIE, df, liens, "fr",
+        entete="<!-- Généré par scripts/generate_droit_consommation_tables.py — ne pas "
+        "éditer à la main.\n"
         f"     Paramètres : {BRANCHE}\n"
         "     Garde-fou : precis/fr/fiscalite/tarifs/"
         "tarifs-releves-droits-consommation.csv\n"
-        "     Français seul : les noms de produits ne sont pas traduits ici. -->\n\n"
-        + ot.tableau_vers_markdown(df) + "\n",
-        encoding="utf-8",
+        "     Français seul : les noms de produits ne sont pas traduits ici. -->\n\n",
     )
     print(f"  {SORTIE.relative_to(RACINE)}")
     print(f"  lignes : {len(lignes)}   valeurs lues depuis openfisca : {lus}")

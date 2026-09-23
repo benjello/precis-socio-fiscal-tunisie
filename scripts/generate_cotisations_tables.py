@@ -166,6 +166,10 @@ def branches(regime: str):
             emp = _dernier(f"{PRIVE}/{regime}/cotisations_employeur/{relatif}")
             if sal is None and emp is None:
                 continue
+            for cote, taux in (("salarie", sal), ("employeur", emp)):
+                if taux is not None:
+                    ot.releve_note(f"{PRIVE}/{regime}/cotisations_{cote}/{relatif}",
+                                   f"{m[cle]} — {m[cote]}")
             # La retraite complémentaire est affichée mais reste hors du total : elle est
             # facultative, et c'est le total obligatoire qui doit coïncider au centième
             # près avec celui du tableau de synthèse — d'où un cumul sur les valeurs
@@ -205,6 +209,11 @@ def coin_par_regime(langue):
         if totaux["salarie"] is None and totaux["employeur"] is None:
             continue
         nom = nom_fr if langue == "fr" else nom_ar
+        # Un total parcourt toute l'arborescence d'un côté du régime : le lien mène au
+        # nœud, dont la page publique aligne chaque branche avec ses dates et ses textes.
+        for cote, total in totaux.items():
+            if total is not None:
+                ot.releve_note(f"{PRIVE}/{code}/cotisations_{cote}", f"{nom} — {m[cote]}")
         if marque == "forfait":
             nom += NOTE_FORFAIT[langue]
         lignes.append({
@@ -244,11 +253,11 @@ def main() -> int:
         sortie = RACINE / langue / "cotisations_sociales" / "tables"
         sortie.mkdir(parents=True, exist_ok=True)
         for nom, fabrique in TABLEAUX.items():
-            df = fabrique(langue)
+            df, liens = ot.avec_liens(lambda: fabrique(langue))
             if df is None or df.empty:
                 print(f"✗ {langue}/{nom} : paramètre introuvable ou vide.")
                 return 1
-            (sortie / nom).write_text(ot.tableau_vers_markdown(df), encoding="utf-8")
+            ot.ecrire_tableau(sortie / nom, df, liens, langue)
         print(f"✓ {langue} : {len(TABLEAUX)} tableaux")
     return 0
 
