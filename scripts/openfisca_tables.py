@@ -146,6 +146,58 @@ def openfisca_utilisable(paquet: str | None = None) -> bool:
     return version is not None and version >= PAQUETS[nom]["version_minimale"]
 
 
+# ------------------------------------------------ base législative en ligne des tableaux
+
+# LE LECTEUR REMONTE DE LA VALEUR À SA SOURCE. Chaque tableau engendré est accompagné d'une
+# liste de liens, un par grandeur, vers la page publique qui en donne toutes les valeurs
+# datées et leurs références. Le générateur ouvre un relevé avant de fabriquer un tableau ;
+# les fonctions qui lisent une série y notent le chemin et l'en-tête de colonne ; le relevé
+# est écrit à côté du tableau (`<nom>.liens.yml`) et `markdown_avec_legende` en fait un
+# onglet. Le lien est engendré comme la valeur : jamais écrit à la main.
+BASE_LEGISLATIVE = "https://parameters.tn.tax-benefit.org"
+_releve: dict[str, str | None] | None = None
+
+
+def url_parametre(chemin_relatif: str, langue: str = "fr") -> str:
+    """Vue en tableau d'un paramètre : `parameters/a/b.yaml` -> `…/parameters/a.b/table/`."""
+    nom = chemin_relatif.removeprefix("parameters/").removesuffix(".yaml").replace("/", ".")
+    prefixe = "/ar" if langue == "ar" else ""
+    return f"{BASE_LEGISLATIVE}{prefixe}/parameters/{nom}/table/"
+
+
+def releve_debut() -> None:
+    global _releve
+    _releve = {}
+
+
+def releve_note(chemin_relatif: str, libelle: str | None = None) -> None:
+    """Note un paramètre lu par le tableau en cours ; un libellé explicite l'emporte."""
+    if _releve is None:
+        return
+    if libelle:
+        libelle = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", libelle).strip()
+    if libelle or chemin_relatif not in _releve:
+        _releve[chemin_relatif] = libelle or _releve.get(chemin_relatif)
+
+
+def releve_fin() -> list[tuple[str, str | None]]:
+    global _releve
+    liens, _releve = list((_releve or {}).items()), None
+    return liens
+
+
+def ecrire_liens(chemin_tableau: str | Path, liens: list[tuple[str, str | None]],
+                 langue: str) -> None:
+    """Écrit `<nom>.liens.yml` à côté du tableau. Tout lien doit porter un libellé."""
+    sans = [c for c, l in liens if not l]
+    if sans:
+        raise ValueError(f"paramètre lu sans libellé : {sans}")
+    fichier = Path(chemin_tableau).with_suffix(".liens.yml")
+    fichier.write_text(yaml.safe_dump(
+        [{"libelle": l, "parametre": c, "url": url_parametre(c, langue)} for c, l in liens],
+        allow_unicode=True, sort_keys=False), encoding="utf-8")
+
+
 def charge_parametre(chemin_relatif: str, paquet: str | None = None) -> dict[str, Any] | None:
     """Charge un YAML de paramètre, chemin relatif à la racine du paquet.
 
@@ -407,11 +459,12 @@ def tableau_evolution(
     if pd is None:
         return None
     series = {}
-    for chemin, _entete, _f in specs:
+    for chemin, entete, _f in specs:
         s = serie_datee(chemin)
         if not s:
             return None
         series[chemin] = s
+        releve_note(chemin, entete)
     dates = sorted({d for s in series.values() for d, *_ in s})
     if not dates:
         return None
@@ -603,11 +656,12 @@ def tableau_evolution_datee(
     if pd is None:
         return None
     series = {}
-    for chemin, _entete, _f in specs:
+    for chemin, entete, _f in specs:
         s = serie_datee(chemin)
         if not s:
             return None
         series[chemin] = s
+        releve_note(chemin, entete)
     dates = sorted({d for s in series.values() for d, *_ in s})
     if not dates:
         return None
@@ -758,7 +812,26 @@ def markdown_avec_legende(
         return MESSAGE_INDISPONIBLE
     corps = fichier.read_text(encoding="utf-8").rstrip()
     attributs = f"{{#{label}}}" if not colonnes else f"{{#{label} {colonnes}}}"
-    return f"{corps}\n\n: {legende} {attributs}\n"
+    tableau = f"{corps}\n\n: {legende} {attributs}\n"
+    liens = fichier.with_suffix(".liens.yml")
+    if not liens.is_file() or yaml is None:
+        return tableau
+    langue = "ar" if "ar" in fichier.resolve().parts[-4:-2] else "fr"
+    m = ONGLETS[langue]
+    items = "\n".join(f"- [{e['libelle']}]({e['url']})"
+                       for e in yaml.safe_load(liens.read_text(encoding="utf-8")) or [])
+    return (f"::: {{.panel-tabset}}\n\n## {m['tableau']}\n\n{tableau}\n"
+            f"## {m['base']}\n\n{m['intro']}\n\n{items}\n\n:::\n")
+
+
+# Intitulés des onglets d'un tableau engendré, dans la langue du livre.
+ONGLETS = {
+    "fr": {"tableau": "📋 Tableau", "base": "⚖️ Base législative",
+           "intro": "Chaque grandeur du tableau, avec toutes ses valeurs datées et leurs "
+                    "références :"},
+    "ar": {"tableau": "📋 الجدول", "base": "⚖️ القاعدة التشريعية",
+           "intro": "كلّ مقدار في الجدول، بجميع قيمه المؤرّخة ومراجعها:"},
+}
 
 
 def get_table_or_static(

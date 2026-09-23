@@ -1,0 +1,15 @@
+- libelle: الإطار العام (الفصل 24)
+  parametre: parameters/retraite/cnrps/age_legal/civil/cadre_commun.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.age_legal.civil.cadre_commun/table/
+- libelle: الأشغال الشاقّة وغير الصحّية (الفصل 27)
+  parametre: parameters/retraite/cnrps/age_legal/civil/ouvriers_travaux_penibles.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.age_legal.civil.ouvriers_travaux_penibles/table/
+- libelle: الوظائف المرهقة (الفصل 28)
+  parametre: parameters/retraite/cnrps/age_legal/civil/fonctions_astreignantes/age.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.age_legal.civil.fonctions_astreignantes.age/table/
+- libelle: الأسلاك النشيطة (الفصل 29)
+  parametre: parameters/retraite/cnrps/age_legal/civil/cadres_actifs.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.age_legal.civil.cadres_actifs/table/
+- libelle: أساتذة التعليم العالي (الفصل 29 مكرّر)
+  parametre: parameters/retraite/cnrps/age_legal/civil/enseignants_du_superieur.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.age_legal.civil.enseignants_du_superieur/table/

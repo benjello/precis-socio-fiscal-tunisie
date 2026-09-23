@@ -1,0 +1,15 @@
+- libelle: رجال الجيش، رؤساء عرفاء وبحارة
+  parametre: parameters/retraite/cnrps/age_legal/militaire/hommes_de_troupe.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.age_legal.militaire.hommes_de_troupe/table/
+- libelle: ضباط الصف وضباط البحرية
+  parametre: parameters/retraite/cnrps/age_legal/militaire/sous_officiers.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.age_legal.militaire.sous_officiers/table/
+- libelle: الضباط الأعوان
+  parametre: parameters/retraite/cnrps/age_legal/militaire/officiers_subalternes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.age_legal.militaire.officiers_subalternes/table/
+- libelle: الضباط السامون
+  parametre: parameters/retraite/cnrps/age_legal/militaire/officiers_superieurs.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.age_legal.militaire.officiers_superieurs/table/
+- libelle: الضباط العامون
+  parametre: parameters/retraite/cnrps/age_legal/militaire/officiers_generaux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.age_legal.militaire.officiers_generaux/table/

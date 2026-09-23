@@ -1,0 +1,6 @@
+- libelle: Pension de vieillesse ou d'invalidité
+  parametre: parameters/retraite/rsna/pension_minimale/sup.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.pension_minimale.sup/table/
+- libelle: Retraite anticipée (art. 15 bis a et b) et pension proportionnelle
+  parametre: parameters/retraite/rsna/pension_minimale/inf.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.pension_minimale.inf/table/
