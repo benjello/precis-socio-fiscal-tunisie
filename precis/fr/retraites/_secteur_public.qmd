@@ -36,7 +36,21 @@ Le régime est d'abord celui de la **loi n° 59-18 du 5 février 1959**, qui fix
 
 La loi de 1959 ne pose pas de durée minimale générale comparable aux quinze ans de la loi de 1985. Hors de la pension d'ancienneté, elle ouvre une [pension proportionnelle](#g-pension-proportionnelle-1959) dans des cas énumérés : sans condition de durée en cas d'invalidité, après quinze ans de services en cas de suppression d'emplois ou d'insuffisance professionnelle et pour les femmes mères de trois enfants vivants de moins de 16 ans [@loi59-18, art. 9]. Le départ sur demande ou d'office, à 50 ans et après 20 ans de services, est ouvert dans la limite d'un nombre de pensions « déterminé annuellement par la loi de Finances » [@loi59-18, art. 9] : c'est un contingent, non un droit. La loi n° 73-71 regroupe ces cas sous une même condition de quinze ans, abaisse à 15 ans l'âge des enfants des mères de famille, et fait du seuil de 50 ans une condition de jouissance de la pension, et non plus d'ouverture du droit, pour les agents partis sur leur demande ; la loi de finances pour 1980 ne mentionne plus le contingent [@loi73-71, art. 2 et 7 ; @loi79-66-lf1980, art. 43 et 45]. La loi n° 80-24 du 23 mai 1980 étend enfin aux personnels de la Sûreté nationale, de la Garde nationale et de la Protection civile la pension ouverte sans condition d'âge ni de durée, l'invalidité étant appréciée par la commission de réforme, avec effet au 27 janvier 1980 [@loi80-24, art. 1 et 6].
 
-**Le calcul.** La pension est fixée à **2 % des [émoluments de base](#g-emoluments-de-base) par annuité liquidable** [@loi59-18, art. 22], dans la limite de 40 annuités ; les annuités se décomptent par semestre, la fraction de semestre égale ou supérieure à trois mois comptant pour six mois et la fraction inférieure étant négligée [@loi59-18, art. 20]. Elle est liquidée sur les derniers émoluments soumis à retenue afférents à l'emploi occupé depuis six mois au moins [@loi59-18, art. 21]. Son montant ne peut dépasser **60 %** de la rémunération indiciaire globale : à 2 % par annuité, ce plafond est atteint dès trente annuités, la durée même qu'exige la pension d'ancienneté. Un plancher la porte au moins au traitement afférent à l'indice 100 pour une pension de trente annuités et, pour une pension de moins de trente annuités, à 4 % du traitement par annuité, dans la même limite de l'indice 100 [@loi59-18, art. 22]. L'agent qui quitte le service sans droit à pension obtient le remboursement de ses retenues [@loi59-18, art. 49]. Les taux de la retenue et de la contribution de l'État relèvent du livre « Cotisations sociales ».
+**Le calcul.** La pension de 1959 a déjà la structure de celle de 1985. Elle s'écrit :
+
+$$
+P = \max\big(\min(\tau(n),\ \bar\tau)\cdot R,\ P_{\min}\big), \qquad \tau(n) = \alpha\,n, \qquad n \le n_{\max}
+$$
+
+où $P$ est la pension de retraite, $R$ l'assiette de liquidation, $n$ la durée liquidable, $\tau(n)$ le taux de liquidation acquis pour cette durée, $\bar\tau$ le plafond de ce taux, $P_{\min}$ la pension minimale garantie, $\alpha$ le taux par annuité et $n_{\max}$ le maximum d'annuités liquidables. Ces notations valent pour tout le chapitre ; elles sont rassemblées en annexe (@sec-cnrps-notations).
+
+Ce qui diffère de la loi de 1985 (@sec-cnrps-formule) tient en quatre points. Le barème n'a qu'une tranche, de taux $\alpha$, la pension étant fixée à « 2 % des [émoluments de base](#g-emoluments-de-base) par annuité liquidable » [@loi59-18, art. 22]. La durée liquidable $n$ se décompte par semestre, la fraction de semestre égale ou supérieure à trois mois comptant pour six mois et la fraction inférieure étant négligée, et elle est bornée par $n_{\max}$ [@loi59-18, art. 20]. L'assiette $R$ est formée des derniers émoluments soumis à retenue afférents à l'emploi occupé depuis six mois au moins [@loi59-18, art. 21]. Le plafond $\bar\tau$ et le plancher $P_{\min}$, enfin, ont leurs propres valeurs :
+
+$$
+\alpha = 2\,\%, \qquad n_{\max} = 40, \qquad \bar\tau = 60\,\%
+$$
+
+Ces valeurs sont celles du texte de 1959 [@loi59-18, art. 20 et 22] ; $\bar\tau$ passe à 80 % au 1^er^ juillet 1970, et $\alpha$ ne change pas jusqu'en 1985 (@tbl-cnrps-1959-1985). À 2 % par annuité, le plafond de 60 % est atteint dès trente annuités, la durée même qu'exige la pension d'ancienneté. La formule donne au plafond et au barème la même assiette $R$ ; le texte de 1959 rapporte pourtant le plafond à la « rémunération indiciaire globale » et le barème aux émoluments de base, sans dire que les deux coïncident ; le rattachement exprès du plafond à la rémunération de l'article 21, assiette de la pension, se lit dans la réécriture de 1981 [@loi81-70, art. 4]. Le plancher dépend en 1959 de la durée : il porte la pension au moins au traitement afférent à l'indice 100 pour une pension de trente annuités et, pour une pension de moins de trente annuités, à 4 % du traitement par annuité, dans la même limite de l'indice 100 [@loi59-18, art. 22] ; il ne devient unique qu'en 1970. L'agent qui quitte le service sans droit à pension obtient le remboursement de ses retenues [@loi59-18, art. 49]. Les taux de la retenue et de la contribution de l'État relèvent du livre « Cotisations sociales ».
 
 **Les refontes.** Trois textes ont modifié ce calcul sans toucher au taux de 2 % par annuité ni à l'âge. Le **décret-loi n° 70-1 du 14 septembre 1970**, qui remplace treize articles de la loi, porte le plafond de 60 % à **80 %** et fixe un plancher unique de 60 % des émoluments afférents à l'indice 100, qui ne dépend plus du nombre d'annuités ; il substitue aux émoluments de base les « [émoluments globaux indiciaires](#g-emoluments-globaux-indiciaires) » et procède à une nouvelle liquidation des pensions à compter du 1^er^ juillet 1970 [@decretloi70-1, art. 1 (art. 21 et 22) et art. 2]. La **loi n° 73-71** élargit l'assiette de la pension aux indemnités ayant le caractère d'un complément de salaire — indemnité de vie chère, indemnités de sujétions spéciales, prime de rendement, indemnités différentielles —, dont un décret fixe les modalités [@loi73-71, art. 5 et 8]. Enfin, l'article 4 de la **loi n° 81-70 du 1^er^ août 1981**, loi de finances complémentaire pour 1981, réécrit neuf dispositions de la loi, réparties entre sept articles — celles qui fixent le plafond et le plancher de la pension, la réversion, la rente d'invalidité et les accessoires —, et l'article 5 fait prendre effet à cette réécriture le **1^er^ mai 1981** [@loi81-70, art. 4-5]. Elle reconduit le plafond de 80 % en en changeant la base, fixe le plancher aux deux tiers du SMIG et porte la pension de veuve de 50 % à 75 % [@loi81-70, art. 4]. Plusieurs règles décrites dans ce chapitre ont donc un état de 1981 et un état de 1985. Les pensions en cours sont par ailleurs revalorisées par décret de 1981 à 1983 (@sec-cnrps-perequation).
 
@@ -99,14 +113,38 @@ Le droit à pension suppose en outre **15 ans** de services effectifs, 10 ans po
 ### La formule de la pension {#sec-cnrps-formule}
 
 ::: {.callout-note title="La formule de la pension"}
-**Pension = taux de liquidation × rémunération de liquidation**, dans la limite de 90 % de cette rémunération, et sans pouvoir être inférieure à la pension minimale garantie.
+La pension est le produit d'un taux de liquidation par une rémunération de liquidation, dans la limite d'un plafond, et sans pouvoir être inférieure à la pension minimale garantie :
 
-- **La rémunération de liquidation** est la dernière rémunération, à condition qu'elle ait supporté les retenues pendant trois ans ; par exception, celle de la fonction la plus élevée que l'agent a exercée pendant deux années entières, sous la même condition [@loi85-12, art. 36]. Elle ne comprend que les éléments permanents de la rémunération, dont un décret fixe la liste [@loi85-12, art. 10] (@sec-cnrps-remuneration-liquidation).
-- **Le taux de liquidation** s'acquiert par annuités : 2 % par année de services jusqu'à dix ans, 3 % de dix à vingt ans, 2 % de vingt à quarante ans, soit 20 %, 50 % puis 90 % en fin de tranche [@loi85-12, art. 38] (@tbl-cnrps-annuites). Les services se comptent au trimestre [@loi85-12, art. 35], et des bonifications s'y ajoutent pour certaines catégories d'agents [@loi85-12, art. 32-33] (@sec-cnrps-bonifications).
-- **Le plafond** est de **90 %** de la rémunération de liquidation ; le barème l'atteint au terme de quarante années [@loi85-12, art. 38].
-- **La pension minimale garantie** est égale aux deux tiers du SMIG du régime de 2 400 heures par an [@loi85-12, art. 39] (@tbl-cnrps-plafond-plancher).
-- **Les accessoires** — indemnité familiale et indemnité pour revenu unique — s'ajoutent à la pension de l'agent chargé de famille [@loi85-12, art. 40] (@sec-cnrps-accessoires).
+$$
+P = \max\big(\min(\tau(n),\ \bar\tau)\cdot R,\ P_{\min}\big), \qquad \tau(n) = \sum_i \alpha_i\,\Delta_i(n), \qquad n = d + b
+$$
+
+où $P$, $R$, $n$, $\tau(n)$, $\bar\tau$ et $P_{\min}$ gardent le sens qu'ils ont sous la loi de 1959 (@sec-cnrps-loi-1959), $R$ étant désormais la rémunération de liquidation. Deux choses sont nouvelles. Le barème compte plusieurs tranches : $\alpha_i$ est le taux par annuité de la tranche $i$, et $\Delta_i(n)$ la part de la durée $n$ comprise dans cette tranche. Et la durée liquidable $n$ est la somme de la durée des services effectifs $d$ et de la bonification $b$.
+
+Le barème de 1985 compte trois tranches — les dix premières années, les dix suivantes et « les autres années » — et le montant de la pension « ne doit pas dépasser 90 % de la rémunération sur la base de laquelle a été liquidée la pension » [@loi85-12, art. 38] :
+
+$$
+\alpha_1 = 2\,\%, \qquad \alpha_2 = 3\,\%, \qquad \alpha_3 = 2\,\%, \qquad \bar\tau = 90\,\%
+$$
+
+Ces valeurs, données à titre indicatif, sont celles du texte depuis le 12 septembre 1985 ; aucun texte ne les a modifiées depuis [@loi85-12, art. 38] (@tbl-cnrps-annuites ; @tbl-cnrps-plafond-plancher ; @sec-cnrps-textes-modificatifs). Le taux cumulé atteint 20 % à dix ans, 50 % à vingt ans, et le plafond au terme de quarante années. Le plafond était de 60 % en 1959, puis de 80 % de 1970 à 1985 (@tbl-cnrps-1959-1985).
+
+- **La rémunération de liquidation** $R$ est la dernière rémunération, à condition qu'elle ait supporté les retenues pendant trois ans ; par exception, celle de la fonction la plus élevée que l'agent a exercée pendant deux années entières, sous la même condition [@loi85-12, art. 36]. Elle ne comprend que les éléments permanents de la rémunération, dont un décret fixe la liste [@loi85-12, art. 10] (@sec-cnrps-remuneration-liquidation).
+- **La durée liquidable** $n$ se compte au trimestre [@loi85-12, art. 35] ; la bonification $b$ s'ajoute aux services effectifs $d$ pour certaines catégories d'agents [@loi85-12, art. 32-33] (@sec-cnrps-bonifications). Depuis le 1^er^ janvier 1989, le rendement de la bonification des agents mis à la retraite d'office est en outre plafonné [@loi88-71, art. 1 (art. 33)].
+- **La pension minimale garantie** $P_{\min}$ est égale aux deux tiers du SMIG du régime de 2 400 heures par an [@loi85-12, art. 39] (@tbl-cnrps-plafond-plancher).
+- **Les accessoires** — indemnité familiale et indemnité pour revenu unique — s'ajoutent à la pension de l'agent chargé de famille [@loi85-12, art. 40] (@sec-cnrps-accessoires) ; ils ne relèvent pas de la formule.
 :::
+
+<!-- TODO (rédacteur) : l'article 38 lu au JORT n° 20 du 12 mars 1985, p. 362, ne borne pas la
+troisième tranche (« pour les autres années ») : c'est le plafond de 90 % qui arrête le taux. Le
+tableau engendré tbl-cnrps-annuites porte pourtant une dernière ligne de taux nul au-delà de
+quarante ans, que le paragraphe qui le suit présente comme voulue. Vérifier que cette ligne est
+une conséquence du plafond et non une tranche du texte, et reformuler ce paragraphe au besoin
+(ne pas modifier le tableau ni son générateur ici). -->
+<!-- TODO (rédacteur) : les formules de ce chapitre ne sont pas protégées par la synchronisation
+de traduction (scripts/translate_sync.py) : vérifier après son passage que les formules d'affichage et les formules en
+ligne de la version arabe sont restées identiques à celles du français. -->
+
 
 Le [taux de liquidation](#g-taux-de-liquidation) s'acquiert par [annuités liquidables](#g-annuite-liquidable), selon un barème progressif puis dégressif, inchangé depuis 1985.
 
@@ -184,7 +222,21 @@ Le passage de 60 à 62 ans n'a pas été immédiat. À titre transitoire, et « 
 la faculté de maintien en activité par décret jusqu'à 65 ans, et si les articles 28 et 29
 (nouveaux) conservent le maintien jusqu'à 60 ans. -->
 
-**L'augmentation optionnelle de l'âge.** La loi n° 2019-37 insère dans la loi de 1985 un titre II bis qui ouvre à l'agent une [augmentation optionnelle de l'âge de mise à la retraite](#g-augmentation-optionnelle-age) : il peut demander par écrit, six mois avant l'âge légal, à rester en activité d'**un à trois ans** ; pour les agents de l'article 29 bis, la prolongation peut atteindre cinq ans et l'âge de 70 ans. Dans cette rédaction, l'option est « définitive et irrévocable » [@loi2019-37, art. 3]. Chaque année supplémentaire rapporte **2 %**, et chaque trimestre 0,50 %, « sous réserve des dispositions du deuxième tiret de l'article 38 » [@loi2019-37, art. 3].
+**L'augmentation optionnelle de l'âge.** La loi n° 2019-37 insère dans la loi de 1985 un titre II bis qui ouvre à l'agent une [augmentation optionnelle de l'âge de mise à la retraite](#g-augmentation-optionnelle-age) : il peut demander par écrit, six mois avant l'âge légal, à rester en activité d'**un à trois ans** ; pour les agents de l'article 29 bis, la prolongation peut atteindre cinq ans et l'âge de 70 ans. Dans cette rédaction, l'option est « définitive et irrévocable » [@loi2019-37, art. 3]. Les années ajoutées ont un rendement propre : « sous réserve des dispositions du deuxième tiret de l'article 38 », le rendement des annuités au titre de l'augmentation optionnelle est fixé par année et par trimestre, « calculé en se référant au salaire sur la base duquel est liquidée la pension » [@loi2019-37, art. 3]. Le taux de liquidation $\tau(n)$ étant celui du barème de 1985 (@sec-cnrps-formule), le taux de l'agent qui a exercé l'option s'écrit :
+
+$$
+\tau(n, a) = \tau(n) + \beta\,a
+$$
+
+où $n$ est la durée liquidable hors les annuités de l'augmentation optionnelle, $a$ la durée de cette augmentation, en années, et $\beta$ le rendement de chacune d'elles, soit $\beta = 2\,\%$ par année — 0,50 % par trimestre — depuis la loi de 2019 [@loi2019-37, art. 3]. Le taux ainsi obtenu s'applique à la rémunération de liquidation $R$. La portée de la réserve relative au « deuxième tiret de l'article 38 » n'est pas établie ici : en particulier, il n'est pas établi que le plafond $\bar\tau$ borne le taux majoré, et la formule ne l'écrit pas.
+
+<!-- TODO (documentaliste) : établir la portée du « deuxième tiret de l'article 38 » visé par
+l'article 71 ter (loi n° 2019-37, art. 3, JORT n° 35 de 2019, p. 1313). Dans l'édition française
+de la loi n° 85-12 (JORT n° 20 du 12 mars 1985, p. 362), l'article 38 énumère ses trois tranches
+sous « 1) — », « 2) — », « 3) — », et le plafond de 90 % forme un alinéa distinct, sans tiret :
+le renvoi ne désigne donc pas le plafond de façon évidente. Lire l'édition arabe de 1985 et de
+2019, et toute doctrine de la caisse, avant d'écrire le plafond dans la formule. -->
+
 
 La loi transpose le nouvel âge dans les autres règles qui s'y réfèrent. Le repère des bonifications passe de 60 à 62 ans aux articles 32 et 33 [@loi2019-37, art. 1 et 2] (@sec-cnrps-bonifications) ; les âges des militaires sont relevés, et le repère de leur bonification porté à 62 ans (@sec-cnrps-militaires) ; pour les enseignants du supérieur, le maintien par décret devient une option de l'agent (@sec-cnrps-reforme-2009). La loi n° 2019-37 modifie aussi les articles 1, 3, 8 et 64 et ajoute les articles 9 bis et 71 quater à 71 septies, dont les comptes individuels ; ces dispositions ne sont pas exposées ici. Elle relève enfin les taux de contribution de trois points (voir « Cotisations sociales »).
 
@@ -563,6 +615,14 @@ La pension est suspendue en cas de remariage avant 55 ans, et rétablie, revalor
 
 Chaque orphelin perçoit une [pension temporaire d'orphelin](#g-pension-temporaire-orphelin) égale à **10 %** de la pension de retraite, jusqu'à 21 ans [@loi85-12, art. 45]. Le total des pensions d'orphelins et de la pension du conjoint « ne doit pas dépasser le montant de la pension de l'agent », la pension du conjoint étant réduite en cas de dépassement ; lorsque les orphelins sont au nombre de cinq ou plus, le conjoint perçoit 50 % et les 50 % restants sont partagés à parts égales entre les orphelins [@loi85-12, art. 45].
 
+La pension de retraite $P$ étant celle que donne la formule de la pension (@sec-cnrps-formule), les deux articles s'écrivent :
+
+$$
+P_c = \theta_c(k)\cdot P, \qquad P_o = \theta_o\cdot P, \qquad P_c + k\,P_o \le P
+$$
+
+où $P_c$ est la pension du conjoint survivant, $P_o$ la pension de chaque orphelin, $k$ le nombre d'orphelins, et $\theta_c(k)$ et $\theta_o$ les taux de ces deux pensions, en fraction de $P$, pension de retraite dont l'agent avait bénéficié ou aurait pu bénéficier [@loi85-12, art. 43 et 45]. Les taux sont, à titre indicatif, $\theta_o = 10\,\%$ depuis 1959, et $\theta_c(k) = 75\,\%$ tant qu'aucune réduction ne joue, depuis le 1^er^ mai 1981 — 50 % pour la veuve auparavant (@tbl-cnrps-1959-1985). Le taux du conjoint $\theta_c(k)$ décroît avec $k$ pendant le service des pensions d'orphelins : il est réduit au titre du troisième enfant, puis de chacun des suivants, sans descendre au-dessous de 50 % [@loi85-12, art. 43]. La formule vaut tant que les orphelins sont moins de cinq ; à partir de cinq, la pension du conjoint est de 50 % de $P$, et $P_o$ devient la part égale de chaque orphelin dans les 50 % restants [@loi85-12, art. 45].
+
 Les conditions de la pension d'orphelin ont été élargies en deux temps, en 1997 puis en 2007, et la place des indemnités familiales a changé en 1996.
 
 | Règle | Loi n° 85-12 (12 septembre 1985) | Lois n° 96-67 et 97-59 (1996 ; 1^er^ mai 1997) | Loi n° 2007-43 |
@@ -602,7 +662,13 @@ L'article 26 § V de la loi de 1959, lui aussi maintenu en vigueur, élève le t
 ::: {.callout-warning title="Le plafond de la pension et de la rente, et la formule de la rente, dans la loi et dans la pratique de la caisse"}
 Le manuel de liquidation de la caisse écrit que « le montant de la rente viagère d'invalidité et de la pension de retraite ne peut dépasser la limite de 100 % de la rémunération d'activité servie de base pour le calcul de la pension », que le total de la pension et de la rente ne peut être inférieur au minimum garanti, et que le taux d'invalidité ouvrant droit à la rente est compris entre 66 % et 100 % [@cnrps-manuel-liquidation-2013, p. 87]. La loi n° 85-12 n'en parle pas. La loi n° 59-18, dont les dispositions relatives à l'invalidité restent en vigueur, pose un plafond voisin, qui a connu deux rédactions. En 1959, « la rente d'invalidité ajoutée à la pension cumulable ne peut faire bénéficier le titulaire d'émoluments totaux supérieurs aux émoluments de base visés à l'article 21 » [@loi59-18, art. 26]. À compter du 1^er^ juillet 1970, le décret-loi n° 70-1 réécrit ce paragraphe et substitue aux émoluments de base « les émoluments globaux indiciaires visés à l'article 21 » [@decretloi70-1, art. 1 (art. 26 § III) et art. 2] ; ni la loi n° 73-71 ni la loi n° 81-70 ne le modifient ensuite. Dans l'une et l'autre rédaction, ce plafond est rapporté à l'article 21 de la loi de 1959, qui définissait l'assiette de la pension et que la loi de 1985 a abrogé : aucun texte identifié ne dit sur quelle rémunération il s'apprécie depuis 1985. Le plancher et les bornes de 66 % et 100 % du taux d'invalidité ne sont établis, eux, que par le manuel. Ces règles sont présentées ici comme la pratique de la caisse en 2013.
 
-**La formule de la rente n'est pas la même dans les deux sources.** La loi en a connu trois rédactions : la rente est égale à la fraction du traitement afférent à l'indice 100 correspondant au taux d'invalidité en 1959 [@loi59-18, art. 26], à la même fraction des émoluments globaux de cet indice à compter du 1^er^ juillet 1970 [@decretloi70-1, art. 1 (art. 26 § II) et art. 2], et, depuis le 1^er^ mai 1981, au produit du taux d'invalidité par la **rémunération** soumise à retenue [@loi81-70, art. 4]. Aucune de ces rédactions ne prend la pension pour base ; le manuel, lui, multiplie le taux d'invalidité par la **pension** de retraite. Les deux calculs ne donnent le même résultat que si le taux de liquidation atteint 100 %, ce que les plafonds de 80 % puis de 90 % excluent. Aucun texte identifié ne permet de dire si une disposition postérieure à 1981 a modifié la formule légale.
+**La formule de la rente n'est pas la même dans les deux sources.** Dans toutes ses rédactions, la rente est le produit du taux d'invalidité par une assiette :
+
+$$
+\rho = t\cdot B
+$$
+
+où $\rho$ est la rente viagère d'invalidité, $t$ le taux d'invalidité et $B$ l'assiette, qui change selon la date et selon la source. La loi en a connu trois rédactions : $B$ est le traitement afférent à l'indice 100 en 1959, la rente étant « la fraction » de ce traitement correspondant au taux d'invalidité [@loi59-18, art. 26] ; les émoluments globaux de cet indice à compter du 1^er^ juillet 1970 [@decretloi70-1, art. 1 (art. 26 § II) et art. 2] ; et, depuis le 1^er^ mai 1981, la **rémunération** soumise à retenue [@loi81-70, art. 4]. Aucune de ces rédactions ne prend la pension pour base ; le manuel, lui, multiplie le taux d'invalidité par la **pension** de retraite, soit $B = P$. Les deux calculs ne donnent le même résultat que si la pension égale la rémunération, c'est-à-dire si le taux de liquidation atteint 100 %, ce que les plafonds de 80 % puis de 90 % excluent. Aucun texte identifié ne permet de dire si une disposition postérieure à 1981 a modifié la formule légale.
 :::
 
 <!-- TODO (documentaliste) : reste ouvert le plafond de l'article 26 § III depuis 1985. La loi
@@ -738,7 +804,13 @@ et les âges des militaires : seuls les âges sont aujourd'hui traités. -->
 
 ## L'équilibre du régime {#sec-cnrps-equilibre}
 
-Le **taux de cotisation d'équilibre** rapporte les dépenses de pensions d'une année à la masse des salaires soumis à cotisation la même année : c'est le taux qui, appliqué à ces salaires, paierait exactement les pensions de l'année par la seule cotisation. Il se décompose en deux facteurs : le **taux de remplacement apparent**, rapport de la pension moyenne au salaire moyen des affiliés, et le **rapport entre le nombre de pensions et le nombre de cotisants**, qui mesure la charge démographique. On le compare au taux légal global, part de l'agent et part de l'employeur réunies, dont l'évolution est exposée dans le livre « Cotisations sociales ».
+Le **taux de cotisation d'équilibre** rapporte les dépenses de pensions d'une année à la masse des salaires soumis à cotisation la même année : c'est le taux qui, appliqué à ces salaires, paierait exactement les pensions de l'année par la seule cotisation. Il se décompose en deux facteurs :
+
+$$
+\tau^* = \frac{N_p\,\bar p}{N_c\,\bar w} = \frac{\bar p}{\bar w}\times\frac{N_p}{N_c}
+$$
+
+où $N_p$ est le nombre de pensions, toutes natures, $\bar p$ la pension moyenne, $N_c$ le nombre de cotisants, c'est-à-dire d'affiliés actifs, et $\bar w$ leur salaire moyen : $N_p\,\bar p$ est la dépense de pensions, $N_c\,\bar w$ la masse des salaires soumis à cotisation. Le premier facteur, $\bar p / \bar w$, est le **taux de remplacement apparent** (« pension moyenne ÷ salaire moyen » dans les figures qui suivent) ; le second, $N_p / N_c$, est le **rapport entre le nombre de pensions et le nombre de cotisants** (« pensions ÷ cotisants »), qui mesure la charge démographique. La seconde figure suit les trois grandeurs en indices (@fig-cnrps-taux-equilibre-decomposition). On compare $\tau^*$ au taux légal global, part de l'agent et part de l'employeur réunies, dont l'évolution est exposée dans le livre « Cotisations sociales ».
 
 ```{python}
 #| label: fig-cnrps-taux-equilibre
@@ -801,6 +873,42 @@ Ces chiffres sont calculés à partir des publications de la caisse et appellent
 - **Les effectifs comptent des pensions, non des personnes**, au 31 décembre, rapportées à des dépenses de toute l'année ; une veuve et un retraité comptent chacun pour une pension.
 
 Le taux d'équilibre est enfin une grandeur instantanée, qui ne rapporte les pensions qu'aux seules cotisations : il ne tient compte ni des autres recettes du régime — contributions au titre de la péréquation exposées plus haut, bonification, rachats de services —, ni des ressources que la caisse reçoit en dehors du régime, comme la contribution sociale de solidarité et les contributions du budget de l'État.
+
+## Annexe : les notations du chapitre {#sec-cnrps-notations}
+
+Les formules du chapitre emploient une notation unique. Chaque symbole est défini à sa première apparition, dans la formule où il est introduit ou dans la phrase qui la suit ; le tableau les rassemble dans cet ordre.
+
+| Symbole | Grandeur | Introduit en |
+|---|---|---|
+| $P$ | pension de retraite | @sec-cnrps-loi-1959 |
+| $R$ | assiette de liquidation : émoluments de base, puis émoluments globaux indiciaires sous la loi de 1959 ; rémunération de liquidation depuis 1985 | @sec-cnrps-loi-1959 |
+| $n$ | durée liquidable | @sec-cnrps-loi-1959 |
+| $\tau(n)$ | taux de liquidation acquis pour la durée $n$ | @sec-cnrps-loi-1959 |
+| $\bar\tau$ | plafond du taux de liquidation | @sec-cnrps-loi-1959 |
+| $P_{\min}$ | pension minimale garantie | @sec-cnrps-loi-1959 |
+| $\alpha$ | taux par annuité du barème à une tranche de la loi de 1959 | @sec-cnrps-loi-1959 |
+| $n_{\max}$ | maximum d'annuités liquidables de la loi de 1959 | @sec-cnrps-loi-1959 |
+| $\alpha_i$ | taux par annuité de la tranche $i$ du barème de 1985 | @sec-cnrps-formule |
+| $\Delta_i(n)$ | part de la durée $n$ comprise dans la tranche $i$ | @sec-cnrps-formule |
+| $d$ | durée des services effectifs | @sec-cnrps-formule |
+| $b$ | bonification | @sec-cnrps-formule |
+| $a$ | durée de l'augmentation optionnelle de l'âge, en années | @sec-cnrps-reforme-2019 |
+| $\beta$ | rendement par année de l'augmentation optionnelle | @sec-cnrps-reforme-2019 |
+| $P_c$ | pension du conjoint survivant | @sec-cnrps-droits-derives |
+| $P_o$ | pension de chaque orphelin | @sec-cnrps-droits-derives |
+| $k$ | nombre d'orphelins | @sec-cnrps-droits-derives |
+| $\theta_c(k)$ | taux de la pension du conjoint survivant, en fraction de $P$ | @sec-cnrps-droits-derives |
+| $\theta_o$ | taux de la pension d'un orphelin, en fraction de $P$ | @sec-cnrps-droits-derives |
+| $\rho$ | rente viagère d'invalidité | @sec-cnrps-invalidite |
+| $t$ | taux d'invalidité | @sec-cnrps-invalidite |
+| $B$ | assiette de la rente d'invalidité | @sec-cnrps-invalidite |
+| $\tau^*$ | taux de cotisation d'équilibre | @sec-cnrps-equilibre |
+| $N_p$ | nombre de pensions, toutes natures | @sec-cnrps-equilibre |
+| $\bar p$ | pension moyenne | @sec-cnrps-equilibre |
+| $N_c$ | nombre de cotisants, c'est-à-dire d'affiliés actifs | @sec-cnrps-equilibre |
+| $\bar w$ | salaire moyen des cotisants | @sec-cnrps-equilibre |
+
+: Notations du chapitre, dans l'ordre de leur introduction {#tbl-cnrps-notations}
 
 ## Annexe : les textes modificatifs de la loi n° 85-12 {#sec-cnrps-textes-modificatifs}
 
