@@ -1191,6 +1191,30 @@
         ]
       },
       "note": "citation-key: cnrps-etats-financiers\nSite de la Caisse nationale de retraite et de prévoyance sociale inaccessible (pare-feu applicatif, y compris depuis un navigateur) ; états financiers consultés dans les captures des archives du web du 01/03/2021 (2015), du 25/02/2021 (2016) et du 01/03/2021 (2018), captures vérifiées le 22/09/2026 (HTTP 200, tailles conformes aux copies lues).\nDocuments en arabe : « القوائم المالية لسنة 2015 », « القوائم المالية لسنة 2016 » et « القوائم المالية الوقتية لسنة 2018 » (états financiers provisoires pour 2018). Notes n° 5 et 6 : recettes et dépenses du régime général de retraite et de l'ensemble des régimes, 2014-2018 (2017 comme colonne de comparaison des états 2018). L'URL donnée est celle des états 2015. États 2016 : https://web.archive.org/web/20210225194724/http://cnrps.nat.tn/upload/acces_docs/Rapports/bilan2016.pdf. États 2018 : https://web.archive.org/web/20210301165636/http://cnrps.nat.tn/upload/acces_docs/Rapports/bilan2018.pdf. Les états 2017 et 2019 sont tronqués à 1 Mio dans les archives, seule capture, et illisibles. Liste des fichiers : dépôt tunisia-data, sources/cnrps-urls.csv."
+    },
+    {
+      "id": "cnss-annuaires-statistiques",
+      "type": "report",
+      "title": "الدليل الإحصائي 2017 ; Annuaire statistique 2013",
+      "title-short": "CNSS, annuaires statistiques",
+      "author": [
+        {
+          "literal": "Caisse nationale de sécurité sociale"
+        }
+      ],
+      "publisher": "Caisse nationale de sécurité sociale",
+      "publisher-place": "Tunis",
+      "URL": "https://www.cnss.tn/c/document_library/get_file?uuid=026b72cb-a0a4-47d7-868a-b2d067dca9ad&groupId=10156",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            23
+          ]
+        ]
+      },
+      "note": "citation-key: cnss-annuaires-statistiques\nDeux éditions de l'annuaire statistique de la CNSS, dans cet ordre : « الدليل الإحصائي 2017 » (annuaire statistique 2017, édition arabe, 402 pages, séries 2000-2017 ; page de titre : إدارة الدراسات ومراقبة التصرف، الإدارة الفرعية للإحصائيات), dont l'URL est donnée ; « Annuaire statistique 2013 » (édition française, 397 pages, séries 2000-2013 ; page de titre : Direction des études et du contrôle de gestion, service des statistiques) : https://www.cnss.tn/documents/10156/25253/annuaire2013fr.pdf. Pages lues (page du fichier PDF), 2017 / 2013 : tableau 1, employeurs, salariés déclarés et masse salariale du régime des salariés non agricoles, p. 23 / p. 26 ; tableaux 29 et 30, pensionnés et pensions par nature, avec et sans régime complémentaire, p. 51-52 / p. 54-55 ; taux de cotisation par régime et par branche, p. 346 / p. 340 ; pensions de l'ensemble des régimes en 2013, p. 367 de l'édition 2013. Documents d'abord tirés des archives du web ; le site de la CNSS les sert toujours, identiques octet pour octet (même taille, même empreinte SHA-1, vérifié le 23/09/2026). Copies de vérification : capture du 04/03/2022 de l'édition 2017, https://web.archive.org/web/20220304034917/https://www.cnss.tn/c/document_library/get_file?uuid=026b72cb-a0a4-47d7-868a-b2d067dca9ad&groupId=10156 ; capture du 16/07/2019 de l'édition 2013, https://web.archive.org/web/20190716124119/http://www.cnss.tn:80/documents/10156/25253/annuaire2013fr.pdf (les captures de 2022 et 2024 de l'adresse https de l'édition 2013 portent une autre empreinte et n'ont pas été utilisées). Liste des fichiers : dépôt tunisia-data, sources/cnss-urls.csv et sources/cnss-annuaires.md."
     }
   ]
 }

@@ -1191,6 +1191,30 @@
         ]
       },
       "note": "citation-key: cnrps-etats-financiers\nموقع الصندوق الوطني للتقاعد والحيطة الاجتماعية غير متاح (جدار حماية تطبيقي، حتى من متصفّح)؛ اطُّلع على القوائم المالية في النسخ المحفوظة في أرشيف الإنترنت بتاريخ 01/03/2021 (2015) و25/02/2021 (2016) و01/03/2021 (2018)، وتم التحقق من النسخ في 22/09/2026.\n« القوائم المالية لسنة 2015 »، « القوائم المالية لسنة 2016 »، « القوائم المالية الوقتية لسنة 2018 ». الإيضاحان عدد 5 و6: إيرادات ونفقات النظام العام للتقاعد وجميع أنظمة التقاعد، 2014-2018. الرابط المذكور هو رابط قوائم 2015. قوائم 2016: https://web.archive.org/web/20210225194724/http://cnrps.nat.tn/upload/acces_docs/Rapports/bilan2016.pdf. قوائم 2018: https://web.archive.org/web/20210301165636/http://cnrps.nat.tn/upload/acces_docs/Rapports/bilan2018.pdf. قوائم 2017 و2019 مبتورة في الأرشيف. قائمة الملفات: مستودع tunisia-data، sources/cnrps-urls.csv."
+    },
+    {
+      "id": "cnss-annuaires-statistiques",
+      "type": "report",
+      "title": "الدليل الإحصائي 2017 ; Annuaire statistique 2013",
+      "title-short": "CNSS, annuaires statistiques",
+      "author": [
+        {
+          "literal": "Caisse nationale de sécurité sociale"
+        }
+      ],
+      "publisher": "Caisse nationale de sécurité sociale",
+      "publisher-place": "Tunis",
+      "URL": "https://www.cnss.tn/c/document_library/get_file?uuid=026b72cb-a0a4-47d7-868a-b2d067dca9ad&groupId=10156",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            23
+          ]
+        ]
+      },
+      "note": "citation-key: cnss-annuaires-statistiques\nطبعتان من الدليل الإحصائي للصندوق الوطني للضمان الاجتماعي، بهذا الترتيب: « الدليل الإحصائي 2017 » (الطبعة العربية، 402 صفحة، سلاسل 2000-2017؛ صفحة العنوان: إدارة الدراسات ومراقبة التصرف، الإدارة الفرعية للإحصائيات)، وهو الرابط المذكور؛ و« Annuaire statistique 2013 » (الطبعة الفرنسية، 397 صفحة، سلاسل 2000-2013؛ صفحة العنوان: Direction des Etudes et du Contrôle de Gestion، Service des Statistiques): https://www.cnss.tn/documents/10156/25253/annuaire2013fr.pdf. الصفحات المقروءة (صفحة ملف PDF)، 2017 / 2013: الجدول 1، المؤجرون والأجراء المصرح بهم وكتلة الأجور في نظام الأجراء في القطاع غير الفلاحي، ص. 23 / ص. 26؛ الجدولان 29 و30، المنتفعون بالجرايات والجرايات حسب الصنف، مع النظام التكميلي وبدونه، ص. 51-52 / ص. 54-55؛ نسب الاشتراكات حسب النظام والفرع، ص. 346 / ص. 340؛ جرايات جميع الأنظمة سنة 2013، ص. 367 من طبعة 2013. أُخذت الوثيقتان أولًا من أرشيف الإنترنت، ولا يزال موقع الصندوق يوفّرهما مطابقتين بايتًا ببايت (الحجم نفسه والبصمة SHA-1 نفسها، تم التحقق في 23/09/2026). نسخ للتحقق: نسخة 04/03/2022 من طبعة 2017، https://web.archive.org/web/20220304034917/https://www.cnss.tn/c/document_library/get_file?uuid=026b72cb-a0a4-47d7-868a-b2d067dca9ad&groupId=10156؛ نسخة 16/07/2019 من طبعة 2013، https://web.archive.org/web/20190716124119/http://www.cnss.tn:80/documents/10156/25253/annuaire2013fr.pdf (نسخ 2022 و2024 من عنوان https لطبعة 2013 تحمل بصمة مختلفة ولم تُستعمل). قائمة الملفات: مستودع tunisia-data، sources/cnss-urls.csv وsources/cnss-annuaires.md."
     }
   ]
 }
