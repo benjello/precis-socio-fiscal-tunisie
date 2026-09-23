@@ -1,0 +1,34 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-23
+# séries (tunisia_data) : retraites-smig-planchers, cnss-rsna-taux-equilibre
+# sources (citation) : @loi81-70, @decret82-972, @loi85-12, @decret74-499, @decret82-1030, @decret94-1429, @cnss-annuaires-statistiques, @bm-1993-social-protection
+# fiches : sources/cnss-annuaires.md
+# méthode/hypothèses : SMIG horaire du régime de 48 heures ; celui du régime de 40 heures, plus élevé à l'heure depuis le 1er avril 1981, donnerait des montants supérieurs. Plusieurs dates ou montants du SMIG ne sont pas vérifiés sur le Journal officiel : voir les tableaux de la revalorisation des pensions du régime non agricole., SÉRIE CALCULÉE. TAUX LÉGAL AMBIGU, EXPOSÉ EN DEUX COLONNES : la quote-part du taux global est fixée en vingtièmes (6,25/20e depuis le 1er janvier 1994, décret n° 94-1429 ; 7,25/20e depuis le 1er janvier 2003, décret n° 2003-1212) alors que le taux global est de 18 % depuis la loi n° 97-4. Lecture « en points » (celle de la caisse, qui publie 12,5 %) : 11,50 % puis 12,50 % ; lecture littérale (X/20 × 18 %) : 10,875 % puis 11,775 %, cotisation propre de 5,25 % comprise. POUR 2000-2002 AUCUN DOCUMENT DE LA CAISSE LU NE PUBLIE LE TAUX : 11,50 % est déduit du texte. DÉCLARÉ ≠ ENCAISSÉ : le dénominateur est la masse déclarée, non les cotisations recouvrées. NUMÉRATEUR COMPTABLE (« bilans »), DÉNOMINATEUR DÉCLARATIF. Le travail non déclaré est hors champ. La variante avec régime complémentaire ajoute des pensions financées par une cotisation facultative sur la tranche au-delà de six SMIG. RUPTURE DE 2003 (taxis et louages, décret n° 2002-3018). Le salaire moyen, rapporté aux actifs non-assujettis compris, est un peu plus bas que le salaire moyen publié. Pensions de l'année rapportées à des effectifs de fin d'année. 1980 ET 1985-1991 : AUTRE SOURCE, AUTRE PÉRIMÈTRE, SANS RACCORD. Banque mondiale, rapport n° 11376-TUN (1993), annexe statistique, tableaux 3 et 5, série bm1993-caisses ; rien pour 1981-1984 ni pour 1992-1999. Les grandeurs sont celles de la CAVIS, qui servait les pensions de tout le secteur privé (RSNA et régimes conventionnels fusionnés ; salariés agricoles depuis 1981 ; régime agricole amélioré et Tunisiens à l'étranger depuis 1989 ; indépendants agricoles, date non établie), non du seul RSNA. Taux légal du RSNA : 3,75 % (décret n° 74-499, art. 9) + 1,25/20e (art. 5 b), puis 4,25/20e à compter du 1er janvier 1988 (décret n° 88-1137) ; le taux global de la loi n° 60-30 étant de 20 %, les deux lectures coïncident : 5,00 % puis 8,00 % (8,00 % publiés au tableau 6 pour 1991). Masse = cotisations de pension de la CAVIS ÷ taux du RSNA, « équivalent RSNA », non déclarée : les autres régimes cotisant moins (5,25 % ; 7,5 %), τ* est un MAJORANT de 1988 à 1991 ; de 1981 à 1987 les salariés agricoles cotisent 5,25 % contre 5 % (biais inverse, faible). Contrôle codé : la masse tirée des cotisations de la CNSS hors CAVIS (÷ 18,75 %, puis 15,75 %) vaut 0,83 à 0,97 fois celle-ci, sans saut en 1988 (il valide la date et le niveau de la quote-part, non la lecture de la fraction). Régime complémentaire : la CAVIS le gérait aussi ; son inclusion dans les montants n'est pas connue, et le sens de l'erreur non plus. τ* : 3,2 % (1980), 6,0 % (1985), 8,7 % (1987), 7,9 % (1991).
+# note : Limite de calcul des prestations (2000-2026) et salaire moyen déclaré (2000-2017), régime des salariés non agricoles
+Année,"Limite de calcul, moyenne de l'année (D/mois)",Salaire moyen déclaré (D/mois),Limite ÷ salaire moyen,Salaire moyen ÷ limite (%)
+2000,1067.2,288.58,3.7,27.0
+2001,1103.4,305.63,3.61,27.7
+2002,1148.4,320.89,3.58,27.9
+2003,1193.4,344.72,3.46,28.9
+2004,1238.4,363.52,3.41,29.4
+2005,1270.4,379.49,3.35,29.9
+2006,1314.0,412.3,3.19,31.4
+2007,1359.0,432.0,3.15,31.8
+2008,1418.4,453.79,3.13,32.0
+2009,1474.2,488.29,3.02,33.1
+2010,1537.8,519.12,2.96,33.8
+2011,1624.0,573.91,2.83,35.3
+2012,1695.6,638.91,2.65,37.7
+2013,1741.2,707.26,2.46,40.6
+2014,1810.8,749.18,2.42,41.4
+2015,1915.2,798.61,2.4,41.7
+2016,1996.0,861.83,2.32,43.2
+2017,2060.4,921.11,2.24,44.7
+2018,2142.8,,,
+2019,2278.4,,,
+2020,2363.4,,,
+2021,2476.8,,,
+2022,2520.0,,,
+2023,2649.6,,,
+2024,2773.6,,,
+2025,3048.0,,,
+2026,3200.4,,,

@@ -95,6 +95,34 @@ français. -->
 
 **La limite de calcul.** La limite $L$ n'est pas un plafond de cotisation : le régime cotise sur la totalité du salaire, comme l'expose le livre « Cotisations sociales ». Elle borne la part du salaire que la pension prend en compte, et c'est au-delà d'elle que commence l'assiette du régime complémentaire (@sec-regime-complementaire). Fixée à six fois le SMIG rapporté à 2 400 heures par an en 1974, reprise telle quelle en 1990, elle est précisée en 1994 par la référence au SMIG du régime de 48 heures. Aucun autre modificatif du décret qui la touche n'a été retrouvé jusqu'au *Journal officiel* du 18 septembre 2026 (@sec-rsna-depuis-2007). Exprimée en multiple du SMIG, elle en suit l'évolution sans qu'aucun texte propre ait à la modifier.
 
+```{python}
+#| label: fig-limite-calcul
+#| fig-cap: "Limite de calcul des prestations (2000-2026) et salaire moyen déclaré (2000-2017) du régime des salariés non agricoles, dinars courants par mois."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import bareme_planchers as bp
+import figtools
+figtools.figure_tabs(
+    bp.fig_limite(), bp.table_limite(), "retraites-smig-planchers", "cnss-rsna-taux-equilibre",
+    slug="fig_limite_calcul",
+    caption="Limite de calcul des prestations (2000-2026) et salaire moyen déclaré (2000-2017), régime des salariés non agricoles",
+    note_lecture=(
+        r"**La limite $L = \ell\,S$, avec $\ell = 6$, suit le SMIG ; le salaire moyen déclaré "
+        r"a crû plus vite.** Rapportée au mois, la limite vaut en moyenne 1 067 dinars en "
+        r"2000 et 2 060 dinars en 2017, le salaire moyen déclaré 289 et 921 dinars : la limite "
+        r"représente 3,70 fois le salaire moyen en 2000 et 2,24 fois en 2017, et le salaire "
+        r"moyen en est passé de 27 % à 45 %. La limite continue de suivre le SMIG : 3 200 "
+        r"dinars par mois en moyenne en 2026 ; le salaire moyen déclaré n'est pas publié "
+        r"après 2017. $S$ est le SMIG horaire du régime de 48 heures rapporté à "
+        r"2 400 heures par an ; la limite d'une année est la moyenne de ses douze mois. Le "
+        r"salaire moyen est la masse salariale déclarée rapportée aux actifs, non-assujettis "
+        r"compris. La figure compare deux moyennes : elle ne dit pas quelle part des salariés "
+        r"dépasse la limite."),
+)
+```
+
+
 #### La revalorisation, les droits dérivés, l'invalidité et les carrières courtes {#sec-rsna-derives-1974}
 
 **La revalorisation.** Dans sa rédaction de 1974, l'article 53 ne comporte aucune indexation : le montant des pensions en cours « sera révisé en cas de hausse sensible du niveau général des salaires », la date et les modalités de cette révision étant fixées par décret [@decret74-499, art. 53] (@sec-rsna-revalorisation).
@@ -441,6 +469,43 @@ table("rsna_planchers",
 Sources : @decret74-499, art. 45 ; @decret82-1030, art. 3 et 5. Le décret n° 82-1030 n'énonce pas de date d'effet : le 22 juillet 1982 est le jour où il devient obligatoire, un jour franc après la publication du fascicule daté des 20, 21, 22 et 23 juillet 1982. Ce tableau ne donne que le niveau du plancher. Deux textes en ont modifié la portée sans en changer le niveau, et figurent au tableau @tbl-rsna-textes : le décret n° 79-536, qui l'étend en 1979 aux pensions des régimes conventionnels antérieurs lorsque l'assuré n'a pas de pension au titre du décret [@decret79-536, art. 1], et le décret n° 90-1455, qui reformule en 1990 le versement unique des carrières les plus courtes [@decret90-1455, art. 1]. Le sort des carrières inférieures au stage est exposé avec la réforme de 1982 (@sec-rsna-reforme-1982).
 
 En 1982, la pension minimale est ramenée à la moitié du SMIG pour les retraites anticipées des tirets a) et b) de l'article 15 bis et pour les pensions proportionnelles, qui remplacent l'allocation de vieillesse en capital [@decret82-1030, art. 3 et 5]. Depuis 2007, l'article 42 (nouveau) rend réversibles, dans les conditions de la section relative aux survivants, les pensions proportionnelles et les pensions des articles 15 bis et 15 ter [@decret2007-2148].
+
+```{python}
+#| label: fig-pension-minimale
+#| fig-cap: "Pension minimale des deux caisses et pension moyenne, dinars courants par mois, 1980-2026."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import bareme_planchers as bp
+import figtools
+figtools.figure_tabs(
+    bp.fig_planchers(), bp.table_planchers(),
+    "retraites-smig-planchers", "cnrps-taux-equilibre", "cnss-rsna-taux-equilibre",
+    slug="fig_pension_minimale",
+    caption="Pension minimale des deux caisses et pension moyenne, dinars courants par mois, 1980-2026",
+    note_lecture=(
+        r"**Exprimés en fraction $\pi$ du SMIG, les planchers en suivent chaque hausse.** La "
+        r"pension minimale $P_{\min} = \tfrac{2}{3}\,S$, celle du régime non agricole depuis "
+        r"1974 et de la CNRPS depuis le 1^er^ mai 1981, passe, rapportée au mois, de 60,9 "
+        r"dinars à l'entrée en vigueur de la loi n° 85-12, le 12 septembre 1985, à 355,6 "
+        r"dinars au 1^er^ janvier 2026. La moitié du SMIG — plancher des pensions "
+        r"proportionnelles et des départs anticipés des cas a) et b) du régime non agricole "
+        r"depuis le 22 juillet 1982, montant de l'allocation de vieillesse de la CNRPS depuis "
+        r"le 12 septembre 1985 — passe dans le même temps de 45,7 à 266,7 dinars. $S$ est le SMIG "
+        r"horaire du régime de 48 heures rapporté à 2 400 heures par an, soit 200 heures par "
+        r"mois. **La pension moyenne s'éloigne du plancher.** Rapportée à la moyenne annuelle "
+        r"de la pension minimale, elle en vaut 1,5 fois à la CNRPS en 1985, 2,4 fois en 2000 "
+        r"et 4,7 fois en 2020 ; 1,2 fois au régime non agricole en 2000 et 1,6 fois en 2017. "
+        r"En 1980 et de 1985 à 1991, la pension moyenne de la CAVIS, qui servait tout le secteur privé, "
+        r"est inférieure aux deux tiers du SMIG. Les pensions moyennes sont de toutes natures, "
+        r"réversions comprises, qui sont des fractions de la pension de l'assuré : elles ne se "
+        r"comparent pas terme à terme au plancher d'une pension de vieillesse. L'échelle est "
+        r"logarithmique, et les dinars sont courants. Les hausses du SMIG dont la date ou le "
+        r"montant n'est pas vérifié sur le *Journal officiel* sont signalées dans les tableaux "
+        r"de la revalorisation (@tbl-rsna-revalo-montant ; @tbl-rsna-revalo-taux)."),
+)
+```
+
 
 #### Les droits dérivés {#sec-rsna-derives}
 
@@ -861,6 +926,38 @@ Quatre différences de construction ressortent de cette comparaison.
 **L'assiette.** Le secteur public liquide sur un point d'arrivée — la dernière rémunération ou celle de la fonction la plus élevée —, le secteur privé sur une moyenne, dont la fenêtre s'est allongée à dix ans dans le régime non agricole, en 1990 puis, par une nouvelle rédaction, de 1994 à 1996. Le secteur privé borne en outre l'assiette par une limite de calcul, que le secteur public ne connaît pas ; le plafond du secteur public porte sur le taux, non sur la rémunération.
 
 **Le taux et son plafond.** Le secteur public acquiert son taux plus lentement au départ et plus vite au milieu de carrière, jusqu'à 90 % ; le secteur privé accorde 40 % dès la fin du stage puis plafonne à 80 %. Le plafond de 80 % est commun à tous les régimes privés dont les règles de calcul sont connues, y compris celui de la loi n° 2002-32 ; il était aussi celui du secteur public entre 1981 et 1985.
+
+```{python}
+#| label: fig-taux-liquidation
+#| fig-cap: "Taux de liquidation selon la durée : pensions civiles et militaires (barèmes de 1959 et de 1985) et régime des salariés non agricoles (barèmes de 1974 et de 1982)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import bareme_planchers as bp
+import figtools
+figtools.figure_tabs(
+    bp.fig_taux_liquidation(), bp.table_taux_liquidation(), "retraites-taux-liquidation",
+    slug="fig_taux_liquidation",
+    caption="Taux de liquidation selon la durée : CNRPS (1959, 1985) et régime des salariés non agricoles (1974, 1982)",
+    note_lecture=(
+        r"**Le secteur public acquiert son taux plus lentement au départ, plus vite ensuite ; "
+        r"les deux courbes se croisent à trente-cinq ans, à 80 %.** Sous la loi n° 85-12, "
+        r"$\tau(n)$ vaut 20 % à dix ans, 35 % à la durée minimale de quinze ans (point plein), "
+        r"50 % à vingt ans, et atteint le plafond $\bar\tau = 90\,\%$ à quarante ans ; en deçà "
+        r"de quinze ans, le pointillé n'ouvre pas de pension. Le régime des salariés non "
+        r"agricoles accorde $\tau_0 = 40\,\%$ au terme du stage de dix ans, puis 2 % par an, et "
+        r"atteint $\bar\tau = 80\,\%$ à trente ans. Ses barèmes de 1974 et de 1982 donnent le "
+        r"même taux d'une année entière à l'autre : le décret n° 82-1030 ne change que le pas "
+        r"de la majoration, le trimestre au lieu de l'année. Entre cinq et dix ans, le tireté "
+        r"est la pension proportionnelle créée en 1982, $\frac{n}{n_0}\,\tau_0$, soit 20 % à "
+        r"cinq ans ; en 1974, ces carrières recevaient une allocation en capital, qui n'est "
+        r"pas un taux. Le barème de 1959, 2 % par annuité dans la limite de quarante annuités, "
+        r"est tracé sans son plafond : le plafond de 1959, 60 %, atteint dès trente annuités, "
+        r"n'est pas représenté ; celui de 80 %, en vigueur du 1^er^ juillet 1970 à 1985, "
+        r"coïncide avec le terme du barème."),
+)
+```
+
 
 **Les droits des survivants.** La réversion est de 75 % dans le secteur public depuis 1981, de 50 % dans les deux régimes salariés du privé, majorable à 75 % sous condition dans le régime non agricole ; à l'inverse, la pension d'orphelin est de 10 % dans le secteur public et de 20 à 30 % dans le secteur privé. Les deux secteurs ont reçu le même jour, le 1^er^ mai 1997, l'extension de la pension d'orphelin aux études supérieures jusqu'à 25 ans et à la fille sans ressources.
 

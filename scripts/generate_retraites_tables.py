@@ -405,7 +405,10 @@ def main() -> int:
                 return 1
             (sortie / nom).write_text(ot.tableau_vers_markdown(df), encoding="utf-8")
         print(f"✓ {langue} : {len(fabriques)} tableaux")
-    return serie_actualisation()
+    # Chaque série est émise quoi qu'il arrive aux autres, et le code de retour les
+    # combine : une série vide ne doit pas en masquer une autre.
+    codes = [serie_actualisation(), serie_taux_liquidation(), serie_smig_planchers()]
+    return max(codes)
 
 
 def serie_actualisation() -> int:
@@ -435,6 +438,180 @@ def serie_actualisation() -> int:
                  ).to_csv(cache / "rsna-actualisation-salaires.csv", index=False)
     print(f"✓ série rsna-actualisation-salaires : {len(lignes)} coefficients, "
           f"{len({l[0] for l in lignes})} barèmes")
+    return 0
+
+
+
+# --------------------------------------------------- séries des figures « paramètres »
+
+MARCHE = "parameters/marche_travail"
+CACHE = RACINE / "_seriescache"
+
+# Les salaires minimums des pensions sont exprimés en fraction du SMIG « rapporté à une
+# durée d'occupation annuelle de 2 400 heures » — 200 heures par mois. Le SMIG mensuel du
+# régime de 48 heures (`smig_48h_mensuel`) compte, lui, 208 heures : il n'est pas la base
+# de ces montants, qui se calculent sur le SMIG HORAIRE.
+HEURES_PAR_MOIS = 2400 / 12
+
+# LE MULTIPLE DE LA LIMITE DE CALCUL N'EST PAS UN PARAMÈTRE. Six fois le SMIG rapporté à
+# 2 400 heures, depuis le 1er janvier 1974 [decret74-499, art. 18], précisé « régime
+# 48 heures » au 1er juillet 1994 [decret94-1429, art. 1 (art. 18 nouveau)] ; aucun autre
+# texte ne le modifie jusqu'au JORT du 18 septembre 2026 (chapitre, @sec-rsna-calcul).
+# L'arbre de retraite n'en porte pas de valeur datée : c'est le constat de l'issue
+# openfisca-tunisia#399, reporté à docs/notes/backlog-modele.md. La constante est donc
+# écrite ici, avec sa date et son texte, en attendant que le paramètre existe : elle
+# disparaîtra au profit d'une lecture datée le jour où il sera versé.
+LIMITE_MULTIPLE_RSNA = 6.0
+LIMITE_DEPUIS = datetime.date(1974, 1, 1)
+
+# Une ligne par barème : (régime, chemin du barème, du plafond, de la durée minimale, de
+# la durée des carrières courtes ou None). La durée minimale est celle qui ouvre la
+# pension au taux du barème ; la figure en tire le tracé plein.
+BAREMES = (
+    ("cnrps", f"{CNRPS}/bareme_annuite.yaml", f"{CNRPS}/plaf_taux_pension.yaml",
+     f"{CNRPS}/duree_de_service_minimale.yaml", None),
+    ("rsna", f"{RSNA}/bareme_annuite.yaml", f"{RSNA}/plaf_taux_pension.yaml",
+     f"{RSNA}/stage_requis.yaml", f"{RSNA}/stage_derog.yaml"),
+)
+DUREE_MAX_ANNEES = 45
+
+
+def _lien_pist(lien: str) -> str:
+    """Le lien au Journal officiel, s'il est sur pist.tn ; sinon rien."""
+    return lien if lien.startswith("https://www.pist.tn/") else ""
+
+
+def _valeur(chemin: str, date: datetime.date) -> float | None:
+    donnees = ot.charge_parametre(chemin)
+    if not donnees or "values" not in donnees:
+        return None
+    return ot.valeur_a_la_date(donnees["values"], date)
+
+
+def _taux_cumule(tranches, trimestres: float) -> float:
+    """Taux acquis au terme de `trimestres`, somme des tranches parcourues."""
+    total = 0.0
+    for indice, (seuil, taux) in enumerate(tranches):
+        haut = tranches[indice + 1][0] if indice + 1 < len(tranches) else None
+        borne = trimestres if haut is None else min(trimestres, haut)
+        if borne > seuil:
+            total += (borne - seuil) * taux
+    return total
+
+
+def serie_taux_liquidation() -> int:
+    """Émet τ(n), le taux de liquidation selon la durée, pour chaque barème daté.
+
+    Une ligne par (régime, barème, durée en années entières de 0 à 45). Le barème est lu
+    à sa date d'effet, en trimestres ; le taux est plafonné par le plafond EN VIGUEUR À
+    CETTE DATE s'il en existe un, et reste celui du barème sinon — c'est le cas du barème
+    de 1959, dont le plafond de 60 % n'a pas de valeur datée : la figure le dit.
+
+    L'année seule du barème est émise, et non sa date : celle du barème de 1959 est la
+    date de signature de la loi n° 59-18, quand le chapitre retient partout le 1er avril
+    1959 (voir `ages` plus haut, qui écarte la même date pour la même raison).
+    """
+    import pandas as pd
+
+    lignes = []
+    for regime, bareme, plafond, minimum, courte in BAREMES:
+        donnees = ot.charge_parametre(bareme) or {}
+        references = (donnees.get("metadata") or {}).get("reference") or {}
+        dates = sorted({ot._date_de_cle(cle) for cle in references})
+        for date in dates:
+            tranches = ot.bareme_a_la_date(bareme, date)
+            if not tranches:
+                continue
+            titre, lien = ot._reference_a_la_date(donnees, date.isoformat())
+            p = _valeur(plafond, date)
+            n0 = _valeur(minimum, date)
+            n1 = _valeur(courte, date) if courte else None
+            for annees in range(DUREE_MAX_ANNEES + 1):
+                brut = _taux_cumule(tranches, 4 * annees)
+                lignes.append({
+                    "regime": regime,
+                    "annee_bareme": date.year,
+                    "duree_annees": annees,
+                    "taux_bareme": round(brut, 6),
+                    "plafond": None if p is None else round(p, 6),
+                    "taux": round(brut if p is None else min(brut, p), 6),
+                    "duree_minimale": n0,
+                    "duree_carriere_courte": n1,
+                    "texte": titre,
+                    "lien": _lien_pist(lien),
+                })
+    if not lignes:
+        print("✗ retraites-taux-liquidation : série vide, snapshot conservé.")
+        return 1
+    CACHE.mkdir(parents=True, exist_ok=True)
+    df = pd.DataFrame(lignes)
+    df.to_csv(CACHE / "retraites-taux-liquidation.csv", index=False)
+    print(f"✓ série retraites-taux-liquidation : "
+          f"{df.groupby(['regime', 'annee_bareme']).ngroups} barèmes")
+    return 0
+
+
+# Les fractions du SMIG, colonne par colonne : (colonne de la fraction, colonne du montant,
+# chemin). Les montants sont mensuels : fraction × SMIG horaire × 200 heures.
+FRACTIONS = (
+    ("pi_cnrps", "minimum_cnrps", f"{CNRPS}/pension_minimale/minimum_garanti.yaml"),
+    ("pi_cnrps_allocation", "allocation_cnrps",
+     f"{CNRPS}/pension_minimale/allocation_vieillesse.yaml"),
+    ("pi_rsna", "minimum_rsna", f"{RSNA}/pension_minimale/sup.yaml"),
+    ("pi_rsna_reduit", "minimum_rsna_reduit", f"{RSNA}/pension_minimale/inf.yaml"),
+)
+SMIG_HORAIRE = f"{MARCHE}/smig_48h_horaire.yaml"
+
+
+def serie_smig_planchers() -> int:
+    """Émet, date par date, le SMIG horaire et les montants mensuels qui en dépendent.
+
+    Une ligne par date à laquelle l'un d'eux change, depuis le 1er janvier 1974 : hausse
+    du SMIG, ou création d'une fraction. Chaque montant est la fraction EN VIGUEUR à la
+    date appliquée au SMIG horaire du régime de 48 heures, rapporté à 200 heures par mois ;
+    il est vide avant le texte qui crée la fraction. Toutes les dates d'effet sont émises,
+    paliers déjà publiés des années à venir compris : une série coupée au jour du calcul
+    changerait d'une semaine à l'autre sans que rien n'ait bougé.
+
+    La ligne porte le décret qui fixe le SMIG en vigueur, et son lien au Journal officiel
+    lorsqu'il est sur pist.tn.
+    """
+    import pandas as pd
+
+    smig = ot.serie_datee(SMIG_HORAIRE)
+    if not smig:
+        print("✗ retraites-smig-planchers : SMIG introuvable, snapshot conservé.")
+        return 1
+    dates = {datetime.date.fromisoformat(d) for d, *_ in smig}
+    for _, _, chemin in FRACTIONS:
+        dates |= {datetime.date.fromisoformat(d) for d, *_ in ot.serie_datee(chemin)}
+    dates = sorted(d for d in dates | {LIMITE_DEPUIS} if d >= LIMITE_DEPUIS)
+
+    lignes = []
+    for date in dates:
+        horaire = _valeur(SMIG_HORAIRE, date)
+        if horaire is None:
+            continue
+        mensuel = horaire * HEURES_PAR_MOIS
+        _d, _v, titre, lien = max(
+            (s for s in smig if datetime.date.fromisoformat(s[0]) <= date),
+            key=lambda s: s[0])
+        ligne = {"date": date.isoformat(), "smig_horaire": round(horaire, 5),
+                 "smig_200h": round(mensuel, 3)}
+        for col_pi, col_montant, chemin in FRACTIONS:
+            pi = _valeur(chemin, date)
+            ligne[col_pi] = None if pi is None else round(pi, 6)
+            ligne[col_montant] = None if pi is None else round(pi * mensuel, 3)
+        ligne["ell_rsna"] = LIMITE_MULTIPLE_RSNA
+        ligne["limite_calcul_rsna"] = round(LIMITE_MULTIPLE_RSNA * mensuel, 3)
+        ligne["texte_smig"] = titre
+        ligne["lien_smig"] = _lien_pist(lien)
+        lignes.append(ligne)
+    CACHE.mkdir(parents=True, exist_ok=True)
+    df = pd.DataFrame(lignes)
+    df.to_csv(CACHE / "retraites-smig-planchers.csv", index=False)
+    print(f"✓ série retraites-smig-planchers : {len(df)} dates, "
+          f"{df['date'].iloc[0]} → {df['date'].iloc[-1]}")
     return 0
 
 
