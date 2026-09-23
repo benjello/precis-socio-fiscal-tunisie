@@ -700,17 +700,22 @@
   fiche: docs/croissances-revenus-prix.md
 - id: cnrps-taux-equilibre
   titre: 'CNRPS : taux de cotisation d''équilibre du régime de retraite et sa décomposition,
-    2000-2020'
+    2000-2023 (2021-2023 estimés)'
   sources:
   - cnrps-guides-rapports
   - cnrps-etats-financiers
   - minfin-remunerations
+  - minfin-ep-2023
+  - minfin-ep-2024
+  - minfin-ep-2025
   build: scripts/build_cnrps_taux_equilibre.py:main
   raw:
   - data/processed/caisses/cnrps_pensions.csv
   - data/processed/caisses/cnrps_regime_general_finances.csv
   - data/processed/precis/masse_salariale_ratios_longs_1990_2025.csv
   - data/processed/caisses/cnrps_actifs_tranches_salaire_2010.csv
+  - data/processed/caisses/cnrps_minfin_entreprises_publiques.csv
+  - data/processed/caisses/cnrps_ratios_charges_produits.csv
   output: data/processed/caisses/cnrps_taux_equilibre.csv
   unite: taux, millions de dinars, dinars par mois, pensions, personnes
   perimetre: 'taux d''équilibre = dépenses de l''ensemble des régimes de retraite
@@ -720,8 +725,10 @@
     de fin d''année) ; comparé au taux légal global du régime général (agent + employeur,
     moyenne des douze taux mensuels). Colonne `denominateur` : « cotisations » (2014-2018),
     « cotisations reconstituées » (2019-2020), « masse salariale de l''État (approximation)
-    » (2000-2013). Contrôles de 2014-2020 : rapport de l''assiette tirée des cotisations
-    à la masse salariale de l''État, et taux d''équilibre du seul régime général'
+    » (2000-2013), « estimation : … » (2021-2023, libellé complet dans la colonne
+    ; 2022-2023 sans affiliés actifs, donc sans décomposition). Contrôles de 2014-2020
+    : rapport de l''assiette tirée des cotisations à la masse salariale de l''État,
+    et taux d''équilibre du seul régime général'
   caveats: 'SÉRIE CALCULÉE. DÉNOMINATEUR APPROCHÉ DE 2000 À 2013 : aucune source lue
     ne donne les cotisations seules avant 2014 ; la masse salariale de l''État (ministère
     des finances, « Rémunérations publiques ») en tient lieu. Sur 2014-2020, l''assiette
@@ -752,16 +759,32 @@
     ou revalorisées ont ajouté plus de 110 millions de dinars de cotisations. Le taux
     d''équilibre est une grandeur comptable instantanée : il ne tient compte ni des
     autres recettes du régime (péréquation, bonification, rachats, contributions de
-    l''État) ni des réserves.'
+    l''État) ni des réserves. 2021-2023 : ESTIMATIONS, aucune publication de la caisse
+    postérieure à 2020 n''ayant été trouvée. Numérateur = total des charges d''exploitation
+    de la CAISSE ENTIÈRE (ministère des finances, rapport sur les entreprises publiques,
+    LF 2025 ; 2023 provisoire) × part des dépenses du régime de retraite dans ce total,
+    moyenne 2019-2020 (0,951 et 0,958) ; recoupé à 1,5 % près par les ratios charges/produits
+    de la branche des pensions (ministère des affaires sociales), hors le 120,5 %
+    « sans CSS » de 2022, qui contredit les comptes du ministère des finances (+7,4
+    %). Dénominateur = masse salariale de l''État × 0,952 (rapport de 2020) ; la variante
+    indexée sur les recettes techniques de la caisse, écrite à part, donne 33,9 ;
+    32,6 ; 33,4 % contre 33,9 ; 33,3 ; 35,7 % : l''écart de 2023 (2,3 points) est
+    la vraie marge d''incertitude, et les deux indexations, rétro-projetées sur 2016-2020,
+    se trompent autant. Effectifs : bénéficiaires de pension et affiliés du ministère,
+    égaux à ceux de la caisse en 2020 ; affiliés trouvés jusqu''en 2021 seulement
+    dans les documents lus. Statut (exécution ou non) des masses salariales 2021-2023
+    non établi par la source. La pension moyenne implicite baisse de 2021 à 2022 (1
+    333 à 1 328 D), signe de la fragilité de l''estimation.'
   titre_ar: 'الصندوق الوطني للتقاعد والحيطة الاجتماعية: نسبة المساهمة المحقّقة للتوازن
-    في نظام التقاعد ومكوّناتها، 2000-2020'
+    في نظام التقاعد ومكوّناتها، 2000-2023 (2021-2023 تقديرات)'
   unite_ar: نسب، ملايين الدنانير، دنانير شهرياً، جرايات، أشخاص
   perimetre_ar: 'نسبة التوازن = نفقات جميع أنظمة التقاعد التي يتصرّف فيها الصندوق
     (الجرايات بجميع أصنافها) ÷ كتلة الأجور الخاضعة للمساهمة = نسبة التعويض الظاهرة
     (معدّل الجراية ÷ معدّل الأجر) × نسبة الجرايات إلى المساهمين (الجرايات بجميع أصنافها
     ÷ المنخرطين النشيطين، في آخر السنة)؛ تُقارن بالنسبة القانونية الجملية للنظام العام
     (العون + المؤجّر، معدّل النسب الشهرية الاثنتي عشرة). عمود المقام: المساهمات (2014-2018)،
-    مساهمات معاد تركيبها (2019-2020)، كتلة أجور الدولة على وجه التقريب (2000-2013)'
+    مساهمات معاد تركيبها (2019-2020)، كتلة أجور الدولة على وجه التقريب (2000-2013)،
+    تقدير (2021-2023، دون تفكيك لسنتي 2022 و2023)'
   caveats_ar: 'سلسلة محسوبة. المقام تقريبي من 2000 إلى 2013: لا يتوفّر أيّ مصدر للمساهمات
     وحدها قبل 2014، فتُعتمد كتلة أجور الدولة (وزارة المالية، «الأجور العمومية»). في
     الفترة 2014-2020 تساوي قاعدة المساهمات 0,997 و0,992 و1,009 و0,977 و0,974 و0,994
@@ -776,7 +799,17 @@
     العام وحده (2014-2020)، والصيغة ذات المجال الواحد أدنى بـ 0,9 % إلى 2,6 %. يشمل
     البسط أعباء صغيرة غير الجرايات (المنح العائلية مع منح الأيتام: 1,7 إلى 2,0 %).
     تُعدّ الجرايات لا الأشخاص. سنة 2016 استثنائية. نسبة التوازن مقدار محاسبي آني لا
-    يأخذ في الاعتبار الموارد الأخرى للنظام ولا احتياطياته.'
+    يأخذ في الاعتبار الموارد الأخرى للنظام ولا احتياطياته. السنوات 2021-2023 تقديرات،
+    إذ لم يُعثر على أيّ منشور للصندوق بعد 2020: البسط = مجموع أعباء الاستغلال للصندوق
+    بأكمله (وزارة المالية، التقرير حول المنشآت العمومية؛ 2023 وقتية) × حصّة نفقات
+    نظام التقاعد من هذه الأعباء، معدّل 2019-2020 (0,951 و0,958)؛ ويتطابق مع نسب الأعباء
+    إلى المداخيل لفرع الجرايات (وزارة الشؤون الاجتماعية) في حدود 1,5 %، باستثناء نسبة
+    120,5 % «دون المساهمة الاجتماعية التضامنية» لسنة 2022. المقام = كتلة أجور الدولة
+    × 0,952 (نسبة 2020)؛ والصيغة البديلة المرتبطة بالإيرادات الفنية للصندوق تعطي 33,9
+    و32,6 و33,4 % مقابل 33,9 و33,3 و35,7 %: فارق 2023 (2,3 نقطة) هو الهامش الحقيقي
+    لعدم اليقين. لم يُعثر على عدد المنخرطين النشيطين بعد سنة 2021 في الوثائق المطّلع
+    عليها. انخفاض معدّل الجراية الضمني بين 2021 و2022 (من 1 333 إلى 1 328 دينارا)
+    علامة على هشاشة التقدير.'
   fiche: sources/cnrps-publications.md
 - id: fonction-publique-effectifs-2018-2025
   titre: Effectifs de la fonction publique, 2018-2025

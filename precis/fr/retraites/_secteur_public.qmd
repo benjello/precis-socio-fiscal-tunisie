@@ -814,7 +814,7 @@ où $N_p$ est le nombre de pensions, toutes natures, $\bar p$ la pension moyenne
 
 ```{python}
 #| label: fig-cnrps-taux-equilibre
-#| fig-cap: "CNRPS : taux de cotisation d'équilibre et taux légal global, 2000-2020."
+#| fig-cap: "CNRPS : taux de cotisation d'équilibre et taux légal global, 2000-2023."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
@@ -823,26 +823,30 @@ import figtools
 figtools.figure_tabs(
     te.fig_taux(), te.table(), "cnrps-taux-equilibre",
     slug="fig_cnrps_taux_equilibre",
-    caption="CNRPS : taux de cotisation d'équilibre et taux légal global, 2000-2020",
+    caption="CNRPS : taux de cotisation d'équilibre et taux légal global, 2000-2023",
     note_lecture=(
         "**Le taux d'équilibre passe de 17,1 % des salaires soumis à cotisation en 2000 "
         "à 25,8 % en 2014, puis à 33,7 % en 2019 et 32,4 % en 2020.** Le taux légal "
         "global passe de 14,2 % à 20,7 % entre 2000 et 2012, puis à 23,7 % en 2020. "
         "L'écart entre les deux est de 2,9 points en 2000, 5,1 points en 2014, "
-        "12,4 points en 2018 et 8,7 points en 2020. Les marques creuses et le trait "
+        "12,4 points en 2018 et 8,7 points en 2020. Pour 2021, 2022 et 2023, le taux "
+        "d'équilibre est estimé à 33,9 %, 33,3 % et 35,7 %, pour un taux légal resté à "
+        "23,7 % : l'écart serait de 10,2, 9,6 et 12,0 points. Les marques creuses et le trait "
         "tireté signalent les années 2000-2013, où la masse des salaires soumis à "
         "cotisation est approchée par la masse salariale de l'État ; les losanges, "
         "les années 2019-2020, où la masse des salaires est déduite de cotisations "
-        "elles-mêmes reconstituées. De 2014 à 2018, elle est déduite des cotisations "
-        "publiées dans les états financiers."),
+        "elles-mêmes reconstituées ; les carrés creux, le trait mixte et le fond orangé, "
+        "les années 2021-2023, où les dépenses et la masse des salaires sont estimées. "
+        "De 2014 à 2018, la masse des salaires est déduite des cotisations publiées dans "
+        "les états financiers."),
 )
 ```
 
-La hausse tient d'abord à la démographie du régime. Le nombre de pensions de toutes natures rapporté au nombre d'affiliés actifs passe de 29,4 % en 2000 à 40,7 % en 2014 et à 51,3 % en 2020 : il y a en 2020 un peu plus d'une pension pour deux cotisants, contre moins d'une pour trois en 2000. Le taux de remplacement apparent varie beaucoup moins : 58,2 % en 2000, 63,3 % en 2014, 63,1 % en 2020. Sur 2014-2020, années pour lesquelles les cotisations sont connues, il oscille entre 62,6 % et 66,5 % et finit à son niveau de départ : la hausse du taux d'équilibre sur ces années vient tout entière du rapport démographique. Sur l'ensemble de la période, ce rapport est multiplié par 1,75, le remplacement apparent par 1,08, et le taux d'équilibre par 1,89.
+La hausse tient d'abord à la démographie du régime. Le nombre de pensions de toutes natures rapporté au nombre d'affiliés actifs passe de 29,4 % en 2000 à 40,7 % en 2014 et à 51,3 % en 2020 : il y a en 2020 un peu plus d'une pension pour deux cotisants, contre moins d'une pour trois en 2000. Le taux de remplacement apparent varie beaucoup moins : 58,2 % en 2000, 63,3 % en 2014, 63,1 % en 2020. Sur 2014-2020, années pour lesquelles les cotisations sont connues, il oscille entre 62,6 % et 66,5 % et finit à son niveau de départ : la hausse du taux d'équilibre sur ces années vient tout entière du rapport démographique. Sur l'ensemble de la période, ce rapport est multiplié par 1,75, le remplacement apparent par 1,08, et le taux d'équilibre par 1,89. L'estimation de 2021, dernière année pour laquelle les documents consultés donnent le nombre d'affiliés actifs, prolonge le mouvement : $N_p / N_c = 52{,}6\,\%$ et $\bar p / \bar w = 64{,}4\,\%$, soit $\tau^* = 33{,}9\,\%$ en 2021.
 
 ```{python}
 #| label: fig-cnrps-taux-equilibre-decomposition
-#| fig-cap: "CNRPS : décomposition du taux d'équilibre, indices base 100 en 2000."
+#| fig-cap: "CNRPS : décomposition du taux d'équilibre, indices base 100 en 2000, 2000-2021."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
@@ -851,22 +855,26 @@ import figtools
 figtools.figure_tabs(
     te.fig_decomposition(), te.table_indices(), "cnrps-taux-equilibre",
     slug="fig_cnrps_taux_equilibre_decomposition",
-    caption="CNRPS : décomposition du taux d'équilibre, indices base 100 en 2000",
+    caption="CNRPS : décomposition du taux d'équilibre, indices base 100 en 2000, 2000-2021",
     note_lecture=(
         "**Le taux d'équilibre est le produit du taux de remplacement apparent et du "
         "rapport entre pensions et cotisants.** Sur une échelle logarithmique, la courbe "
         "du taux d'équilibre se situe, au-dessus de la ligne 100, à une hauteur égale à la "
         "somme des hauteurs des deux autres : les indices se multiplient. En 2020, "
         "l'indice du taux d'équilibre vaut 189, celui du rapport entre pensions et "
-        "cotisants 175, celui du remplacement apparent 108 : 1,75 × 1,08 ≈ 1,89. Le rapport entre pensions "
+        "cotisants 175, celui du remplacement apparent 108 : 1,75 × 1,08 ≈ 1,89. En 2021, "
+        "année estimée, marquée d'un carré creux, ils valent 198, 179 et 111. La figure "
+        "s'arrête en 2021 : les documents consultés ne donnent pas le nombre d'affiliés "
+        "actifs des années suivantes. Le rapport entre pensions "
         "et cotisants ne dépend pas de la masse des salaires : il est tracé d'un trait "
         "plein sur toute la période. Les deux autres courbes portent l'approximation des "
         "années 2000-2013, signalée par des marques creuses."),
 )
 ```
 
-Ces chiffres sont calculés à partir des publications de la caisse et appellent quatre réserves [@cnrps-guides-rapports ; @cnrps-etats-financiers ; @minfin-remunerations].
+Ces chiffres sont calculés à partir des publications de la caisse et, pour 2021-2023, de celles du ministère des finances ; ils appellent cinq réserves [@cnrps-guides-rapports ; @cnrps-etats-financiers ; @minfin-remunerations].
 
+- **De 2021 à 2023, le taux d'équilibre est estimé.** Aucun rapport d'activité de la caisse postérieur à celui de 2020 n'a été trouvé. Le ministère des finances publie, dans son rapport sur les entreprises publiques, les comptes de la caisse entière, retraite et prévoyance sociale confondues [@minfin-ep-2023 ; @minfin-ep-2024 ; @minfin-ep-2025]. Les dépenses de pensions représentaient 95,1 % du total de ses charges d'exploitation en 2019 et 95,8 % en 2020 ; la moyenne des deux parts est appliquée aux charges de 2021 à 2023, celles de 2023 étant encore provisoires. La masse des salaires soumis à cotisation est approchée par la masse salariale de l'État, multipliée par le rapport observé en 2020 entre la masse tirée des cotisations et cette masse salariale, soit 0,952. Une autre estimation, qui fait évoluer la masse des salaires de 2020 comme les recettes techniques de la caisse, donne le même taux en 2021 (33,9 %), mais 32,6 % en 2022 et 33,4 % en 2023, soit 2,3 points de moins que l'estimation retenue cette année-là : c'est l'ordre de grandeur de l'incertitude. Le ministère publie le nombre de bénéficiaires de pension, égal en 2020 au nombre de pensions de toutes natures de la caisse, mais, dans les documents consultés, le nombre d'affiliés actifs jusqu'en 2021 seulement : pour 2022 et 2023, le taux d'équilibre n'est pas décomposé.
 - **De 2000 à 2013, la masse des salaires soumis à cotisation est approchée.** Les cotisations de l'agent et de l'employeur ne sont connues, séparément des autres recettes du régime, qu'à partir de 2014, par les états financiers de la caisse ; aucun document antérieur consulté ne les isole, et la masse salariale de l'État en tient lieu. De 2014 à 2020, la masse tirée des cotisations vaut entre 0,95 et 1,01 fois la masse salariale de l'État. Cette proximité résulte d'une compensation plutôt que d'une identité : la masse salariale de l'État comprend les contributions de l'employeur, les primes et les rappels, et ne couvre que les agents payés sur le budget de l'État, alors que la caisse affilie aussi les agents des collectivités locales et des établissements publics. Rien n'assure que cette compensation ait été la même avant 2014. En 2010, l'approximation donne un salaire moyen de 875 D par mois, quand la caisse publie un salaire brut moyen de 979 D pour ses actifs, sur un effectif de 423 032 personnes dont le périmètre n'est pas précisé ; appliqué à tous les affiliés, ce second chiffre ramènerait le taux d'équilibre de 2010 de 24,8 % à 22,1 %.
 - **En 2019 et 2020, la masse des salaires est déduite de cotisations elles-mêmes reconstituées.** Aucun document ne publie le montant des cotisations de ces deux années ; il est reconstitué à partir du niveau de 2018 et des hausses publiées dans les rapports d'activité, puis divisé par le taux légal comme pour 2014-2018. La baisse de 2020 coïncide avec cette reconstitution et avec l'écart le plus grand, sur 2014-2020, entre la masse tirée des cotisations et la masse salariale de l'État.
 - **Les dépenses couvrent l'ensemble des régimes gérés par la caisse**, régimes spéciaux et retraites anticipées financées par l'État compris, seule série disponible depuis 2000, alors que les cotisations sont celles du seul régime général. Calculé sur les dépenses du seul régime général, le taux d'équilibre est plus bas de 0,9 % à 2,6 % selon les années de 2014 à 2020. Les dépenses comprennent aussi de petites charges qui ne sont pas des pensions : les allocations familiales, confondues avec les pensions temporaires d'orphelins, représentent au plus 1,7 à 2,0 % des dépenses de 2014 à 2018, et les remboursements de cotisations environ 0,01 %.
