@@ -825,9 +825,16 @@ Aucun texte modifiant le cœur du régime n'a été retrouvé au *Journal offici
 
 Sources : @loi81-6, art. 60-69 et 74 ; @loi95-102 ; @loi96-66 ; @loi97-61, art. 1-2 ; @loi2007-43, art. 3-5 ; @decret2026-66, art. 5. Les lois n° 95-102 et 96-66 n'énoncent pas de date d'effet : les 10 décembre 1995 et 4 août 1996 sont les dates auxquelles elles deviennent exécutoires, cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis, les 5 décembre 1995 et 30 juillet 1996. La loi n° 97-61 prend effet au 1^er^ mai 1997 (art. 2). La loi n° 2007-43, sans clause d'effet, devient exécutoire le 2 juillet 2007, cinq jours après le dépôt du *Journal officiel* du 26 juin 2007, le 27 juin.
 
-<!-- Tableau tenu à la main, et non engendré : l'arbre des paramètres du régime des salariés
-agricoles n'a pas de branche « survivants ». TODO (rédacteur) : remplacer par un tableau engendré
-une fois ces valeurs versées. -->
+<!-- Tableau tenu à la main, et non engendré (réexaminé le 23/09/2026, openfisca-tunisia 0.106).
+La branche `retraite/rsa/survivants/` existe, mais elle ne porte que les grandeurs chiffrées de
+deux lignes sur six : les âges limites de l'orphelin (16, 21, puis 25 ans en 1997) et l'âge de 55
+ans du remariage suspensif (1996). Les quatre autres lignes sont des règles, non des valeurs — délai
+de présentation de la demande (aucun paramètre), bénéficiaire et condition de mariage, plafond de
+cumul rapporté à une autre pension, revalorisation proportionnelle au SMAG —, et les deux lignes
+chiffrées elles-mêmes portent des conditions qui ne se datent pas en valeur (fille sans ressources,
+infirmité, suspension définitive en 2007). Engendrer ces deux lignes seules amputerait le tableau.
+TODO (rédacteur) : ne remplacer que si ces règles trouvent une forme datée, ce qui n'est pas
+attendu ; au mieux, un tableau engendré des seuls âges pourrait compléter celui-ci. -->
 
 La loi n° 2007-43 précise enfin que les pensions d'orphelins interrompues avant son entrée en vigueur ne sont pas reprises [@loi2007-43, art. 5]. L'extension de 1997 aux orphelins en études supérieures et à la fille sans ressources prend effet le 1^er^ mai 1997, le même jour que dans le régime non agricole (@sec-rsna-derives). La revalorisation, inchangée, est réaffirmée en 2026 : le décret qui fixe le SMAG énonce, comme celui du SMIG, que son augmentation s'applique aux pensions de retraite [@decret2026-66, art. 5].
 
@@ -1064,9 +1071,16 @@ Trois textes ont touché le cœur du régime : le décret n° 89-1611 en 1989, p
 
 Sources : @decret82-1359, art. 7, 18-24 ; @decret82-1360, art. 1, 5, 7-8 et 17 ; @decret89-1611 ; @decret95-1166, art. 7, 23-30 ; @decret-2002-3018, art. 1.
 
-<!-- Tableau tenu à la main, et non engendré : aucune branche des paramètres de retraite ne porte
-le régime des non-salariés. TODO (rédacteur) : remplacer par un tableau engendré une fois ses
-valeurs datées et sourcées de 1982 à 2002. -->
+<!-- Tableau tenu à la main, et non engendré (réexaminé le 23/09/2026, openfisca-tunisia 0.106).
+La branche `retraite/rtns/` existe, mais elle ne commence qu'au 19 juillet 1995 (décret
+n° 95-1166) : âge, âge de départ anticipé et décote, stage, taux de base, majoration et plafond,
+pension minimale, dix classes. Il lui manque les états de 1982 (décrets n° 82-1359 et 82-1360,
+distincts pour les secteurs non agricole et agricole) et de 1989 (décret n° 89-1611, neuf
+classes) ; et quatre des sept lignes du tableau sont, en tout ou partie, des règles — mode de
+calcul du revenu de référence, sort des carrières inférieures au stage, mode de revalorisation
+(par décret, par arrêté, puis automatique en 2002). TODO (rédacteur) : remplacer par un tableau
+engendré des seules lignes chiffrées (âge, stage, taux, plafond, pension minimale, classes) une
+fois les états de 1982 et de 1989 datés et sourcés, et garder les règles dans la prose. -->
 
 ##### 1989 : les classes en multiples du SMIG {#sec-rtns-reforme-1989}
 
