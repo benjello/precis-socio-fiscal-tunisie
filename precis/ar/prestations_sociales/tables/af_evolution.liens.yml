@@ -1,19 +1,19 @@
-- libelle: النسبة، الترتيب الأوّل
+- libelle: النسبة للطفل الأوّل
   parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf1.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.taux.enf1/table/
-- libelle: النسبة، الترتيب الثاني
+- libelle: النسبة للطفل الثاني
   parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf2.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.taux.enf2/table/
-- libelle: النسبة، الترتيب الثالث
+- libelle: النسبة للطفل الثالث
   parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf3.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.taux.enf3/table/
-- libelle: النسبة، الترتيب الرابع
+- libelle: النسبة للطفل الرابع
   parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf4.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.taux.enf4/table/
 - libelle: الوعاء الثلاثي، الحدّ الأدنى
   parametre: parameters/prestations/contributives/prestations_familiales/af/plancher_trim.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.plancher_trim/table/
-- libelle: الوعاء الثلاثي، السقف
+- libelle: الوعاء الثلاثي، الحدّ الأقصى
   parametre: parameters/prestations/contributives/prestations_familiales/af/plaf_trim.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.plaf_trim/table/
 - libelle: الترتيبات المصروفة

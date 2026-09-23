@@ -16,10 +16,10 @@
 - libelle: Salariés agricoles, régime amélioré — Part patronale
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsaa/cotisations_employeur
   url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsaa.cotisations_employeur/table/
-- libelle: Travailleurs non salariés — Part salariale
+- libelle: Travailleurs non salariés — Cotisation de l'assuré
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtns/cotisations_salarie
   url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtns.cotisations_salarie/table/
-- libelle: Artistes, créateurs et intellectuels — Part salariale
+- libelle: Artistes, créateurs et intellectuels — Cotisation de l'assuré
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/raci/cotisations_salarie
   url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.raci.cotisations_salarie/table/
 - libelle: Travailleurs à faibles revenus — Part salariale
@@ -28,6 +28,6 @@
 - libelle: Travailleurs à faibles revenus — Part patronale
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtfr/cotisations_employeur
   url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtfr.cotisations_employeur/table/
-- libelle: Tunisiens à l'étranger — Part salariale
+- libelle: Tunisiens à l'étranger — Cotisation de l'assuré
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtte/cotisations_salarie
   url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtte.cotisations_salarie/table/

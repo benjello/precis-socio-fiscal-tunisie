@@ -1,12 +1,12 @@
-- libelle: التقاعد — الحصة الأجيرية
+- libelle: التقاعد — اشتراك المضمون
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/raci/cotisations_salarie/retraite.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.raci.cotisations_salarie.retraite/table/
-- libelle: المرض — الحصة الأجيرية
+- libelle: المرض — اشتراك المضمون
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/raci/cotisations_salarie/assurances_sociales/maladie.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.raci.cotisations_salarie.assurances_sociales.maladie/table/
-- libelle: الولادة — الحصة الأجيرية
+- libelle: الولادة — اشتراك المضمون
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/raci/cotisations_salarie/assurances_sociales/maternite.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.raci.cotisations_salarie.assurances_sociales.maternite/table/
-- libelle: الوفاة — الحصة الأجيرية
+- libelle: الوفاة — اشتراك المضمون
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/raci/cotisations_salarie/assurances_sociales/deces.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.raci.cotisations_salarie.assurances_sociales.deces/table/

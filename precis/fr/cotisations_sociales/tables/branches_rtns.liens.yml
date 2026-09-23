@@ -1,12 +1,12 @@
-- libelle: Retraite — Part salariale
+- libelle: Retraite — Cotisation de l'assuré
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtns/cotisations_salarie/retraite.yaml
   url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtns.cotisations_salarie.retraite/table/
-- libelle: Maladie — Part salariale
+- libelle: Maladie — Cotisation de l'assuré
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtns/cotisations_salarie/assurances_sociales/maladie.yaml
   url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtns.cotisations_salarie.assurances_sociales.maladie/table/
-- libelle: Maternité — Part salariale
+- libelle: Maternité — Cotisation de l'assuré
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtns/cotisations_salarie/assurances_sociales/maternite.yaml
   url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtns.cotisations_salarie.assurances_sociales.maternite/table/
-- libelle: Décès — Part salariale
+- libelle: Décès — Cotisation de l'assuré
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtns/cotisations_salarie/assurances_sociales/deces.yaml
   url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtns.cotisations_salarie.assurances_sociales.deces/table/
