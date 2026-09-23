@@ -1,14 +1,18 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-09
-# séries (tunisia_data) : fonction-publique-effectifs
-# sources (citation) : @ins-fonction-publique-2021
-# fiches : sources/ins-fonction-publique-salaires-2010-2021.md
-# méthode/hypothèses : rupture de série collectivités locales 2016→2017 (changement de périmètre/comptage)
-# note : Effectifs de la fonction publique tunisienne, 2015-2021
-Année,Hors collectivités locales,Collectivités locales,Total fonction publique
-2015,595.0,6.9,601.9
-2016,615.7,6.7,622.4
-2017,625.2,17.7,642.9
-2018,630.7,21.5,652.2
-2019,633.7,25.2,658.9
-2020,637.1,27.1,664.2
-2021,641.87,27.42,669.29
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-22
+# séries (tunisia_data) : fonction-publique-effectifs, fonction-publique-effectifs-2018-2025
+# sources (citation) : @ins-fonction-publique-2021, @ins-fonction-publique-2025
+# fiches : sources/ins-fonction-publique-salaires-2010-2021.md, sources/ins-fonction-publique-2018-2025.md
+# méthode/hypothèses : rupture de série collectivités locales 2016→2017 (changement de périmètre/comptage), EN AGENTS, et non en milliers comme `fonction-publique-effectifs` (2015-2021), qu'elle recoupe à l'arrondi près sur 2018-2021 (652 225 contre 652,2 milliers en 2018). COUVERTURE CROISSANTE DES COLLECTIVITÉS LOCALES : le rapport avertit que leur évolution « doit être interprétée en tenant compte de l'évolution du champ de couverture de la base INSAF », l'intégration progressive de nouvelles collectivités ayant amélioré l'exhaustivité du fichier ; la hausse de 21 483 (2018) à 26 697 agents (2025) mêle donc recrutements et extension du champ. Source administrative (base INSAF) ; effectif en décembre, précisé par le rapport pour 2025.
+# note : Effectifs de la fonction publique tunisienne, 2015-2025
+Année,Hors collectivités locales,Collectivités locales,Total fonction publique,Source
+2015,595.0,6.9,601.9,"INS, enquête 2010-2021"
+2016,615.7,6.7,622.4,"INS, enquête 2010-2021"
+2017,625.2,17.7,642.9,"INS, enquête 2010-2021"
+2018,630.742,21.483,652.225,"INS, rapport 2018-2025"
+2019,633.665,25.216,658.881,"INS, rapport 2018-2025"
+2020,637.112,27.083,664.195,"INS, rapport 2018-2025"
+2021,641.87,27.42,669.29,"INS, rapport 2018-2025"
+2022,637.03,27.697,664.727,"INS, rapport 2018-2025"
+2023,632.083,26.925,659.008,"INS, rapport 2018-2025"
+2024,620.687,26.468,647.155,"INS, rapport 2018-2025"
+2025,625.801,26.697,652.498,"INS, rapport 2018-2025"

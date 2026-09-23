@@ -1,14 +1,18 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-09
-# séries (tunisia_data) : fonction-publique-categories
-# sources (citation) : @ins-fonction-publique-2021
-# fiches : sources/ins-fonction-publique-salaires-2010-2021.md
-# méthode/hypothèses : catégories statutaires A1/A2/A3/B/C/D ; champ = fonctionnaires (tab8 INS)
-# note : Fonctionnaires de l'État par catégorie statutaire, 2015-2021
-Année,A1,A2,A3,B,C,D
-2015,98.7,166.3,78.0,59.5,48.5,23.1
-2016,139.5,150.9,67.8,54.8,50.2,22.6
-2017,143.5,163.2,55.6,57.4,50.7,26.0
-2018,151.3,154.4,53.1,59.7,55.1,29.5
-2019,166.3,145.1,51.3,61.5,50.6,29.0
-2020,177.4,158.8,39.1,65.8,41.1,29.6
-2021,198.342,155.271,36.367,67.433,31.848,29.079
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-22
+# séries (tunisia_data) : fonction-publique-categories, fonction-publique-categories-2018-2025, fonction-publique-ouvriers-unite-2018-2025
+# sources (citation) : @ins-fonction-publique-2021, @ins-fonction-publique-2025
+# fiches : sources/ins-fonction-publique-salaires-2010-2021.md, sources/ins-fonction-publique-2018-2025.md
+# méthode/hypothèses : catégories statutaires A1/A2/A3/B/C/D ; champ = fonctionnaires (tab8 INS), Prolonge `fonction-publique-categories` (2015-2021), qu'elle reproduit à l'identique sur 2018-2020 et à l'arrondi en 2021 ; même libellés. Écarts d'arrondi de 0,1 millier entre la somme des catégories et le total (2019, 2023), et entre ce total et les fonctionnaires du tableau 5 en 2024 (518,2 contre 518,1). La catégorie D passe de 28,4 (2023) à 39,8 milliers (2024) sans que le rapport l'explique ; le mouvement est contemporain de la baisse de l'unité 1 des ouvriers (48,9 → 35,4 milliers), rapprochement qui n'est qu'une hypothèse., Le total publié s'écarte de 0,1 millier de la somme des unités en 2018, 2022 et 2023, et de l'effectif des ouvriers du tableau 5 en 2023 (116,4 contre 116,3) et 2024 (103,2 contre 103,3) : arrondis. Recul de l'unité 1 de 48,9 à 35,4 milliers entre 2023 et 2024, non expliqué par le rapport.
+# note : Fonctionnaires de l'État par catégorie statutaire, 2015-2025
+Année,A1,A2,A3,B,C,D,"Ouvriers, unité 1 (pour comparaison)",Source
+2015,98.7,166.3,78.0,59.5,48.5,23.1,,"INS, enquête 2010-2021"
+2016,139.5,150.9,67.8,54.8,50.2,22.6,,"INS, enquête 2010-2021"
+2017,143.5,163.2,55.6,57.4,50.7,26.0,,"INS, enquête 2010-2021"
+2018,151.3,154.4,53.1,59.7,55.1,29.5,63.8,"INS, rapport 2018-2025"
+2019,166.3,145.1,51.3,61.5,50.6,29.0,63.3,"INS, rapport 2018-2025"
+2020,177.4,158.8,39.1,65.8,41.1,29.6,58.7,"INS, rapport 2018-2025"
+2021,198.3,155.3,36.4,67.4,31.8,29.1,55.8,"INS, rapport 2018-2025"
+2022,199.6,158.4,34.5,64.5,33.5,29.0,50.9,"INS, rapport 2018-2025"
+2023,196.9,161.0,33.1,62.7,33.9,28.4,48.9,"INS, rapport 2018-2025"
+2024,192.7,156.8,32.5,62.5,33.9,39.8,35.4,"INS, rapport 2018-2025"
+2025,194.2,163.2,32.8,61.5,31.2,40.0,36.9,"INS, rapport 2018-2025"

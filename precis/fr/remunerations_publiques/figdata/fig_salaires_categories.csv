@@ -1,13 +1,21 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-18
-# séries (tunisia_data) : ins-salaire-par-categorie
-# sources (citation) : @ins-fonction-publique-2021
-# fiches : sources/ins-fonction-publique-salaires-2010-2021.md
-# méthode/hypothèses : ÉTIQUETTE CORRIGÉE : le tableau publié nomme sa troisième ligne « Catégorie A2 » en français alors que l'arabe y écrit « أ3 » ; le libellé A2 y paraît deux fois et A3 jamais. Les lignes sont rapprochées par position et l'étiquette rétablie — le CSV s'écarte donc sciemment du libellé publié. Montants en dinars COURANTS, non déflatés : une évolution de niveau ne se lit pas sans indice de prix, un rapport entre catégories se lit. Moyennes par catégorie, qui recouvrent des corps très hétérogènes. Champ : fonctionnaires seuls, d'où un effectif inférieur à celui de la fonction publique. La série s'arrête en 2020, non en 2021 comme celles des effectifs.
-# note : Salaire mensuel brut des fonctionnaires par catégorie statutaire, 2015-2020
-Année,A1,A2,A3,B,C,D
-2015,2446.6,1655.2,1368.9,1237.5,1141.9,1144.1
-2016,2458.5,1844.8,1516.6,1466.1,1398.9,1176.1
-2017,2539.0,1831.5,1501.6,1448.8,1394.2,1176.7
-2018,2561.4,1898.6,1580.5,1581.9,1457.8,1296.5
-2019,2829.2,2272.7,1919.7,1926.2,1729.6,1645.1
-2020,3126.0,2481.4,2139.3,2134.7,1887.6,1803.7
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-22
+# séries (tunisia_data) : ins-salaire-par-categorie-hors-contributions-2018-2025, ins-salaire-par-categorie
+# sources (citation) : @ins-fonction-publique-2025, @ins-fonction-publique-2021
+# fiches : sources/ins-fonction-publique-2018-2025.md, sources/ins-fonction-publique-salaires-2010-2021.md
+# méthode/hypothèses : BRUT HORS CONTRIBUTIONS — INFÉRENCE, l'INS ne le dit pas : le tableau est étiqueté « salaire mensuel brut moyen ». Chaîne de preuve : pondérée par les effectifs du tableau 6, la série redonne les fonctionnaires du tableau 11 à 0,2 dinar près les huit années, et le tableau 11 pondéré redonne le brut SANS contributions du tableau 10. NON RACCORDABLE à `ins-salaire-par-categorie` (tab20 de l'enquête 2010-2021), qui est le brut AVEC contributions, pour des effectifs par catégorie pourtant identiques sur 2018-2020 : A1 2018 = 2 561,4 là-bas, 2 175,3 ici. Le rapport tab20/tab12 varie selon la catégorie (2018 : A1 et A2 1,177 ; A3 1,163 ; B 1,164 ; C 1,178 ; D 1,141) et selon l'année (1,16 à 1,20) : aucun coefficient ne raccorde les deux séries. Dinars courants ; moyennes de corps hétérogènes., ÉTIQUETTE CORRIGÉE : le tableau publié nomme sa troisième ligne « Catégorie A2 » en français alors que l'arabe y écrit « أ3 » ; le libellé A2 y paraît deux fois et A3 jamais. Les lignes sont rapprochées par position et l'étiquette rétablie — le CSV s'écarte donc sciemment du libellé publié. Montants en dinars COURANTS, non déflatés : une évolution de niveau ne se lit pas sans indice de prix, un rapport entre catégories se lit. Moyennes par catégorie, qui recouvrent des corps très hétérogènes. Champ : fonctionnaires seuls, d'où un effectif inférieur à celui de la fonction publique. La série s'arrête en 2020, non en 2021 comme celles des effectifs. BRUT AVEC CONTRIBUTIONS — INFÉRENCE, l'INS ne le dit pas (le tableau est étiqueté « salaire mensuel brut ») : pondérée par les effectifs de tab8, la série redonne les fonctionnaires de tab19 à 0,05 dinar près (2018 : 1 943,2), et tab19 pondéré par tab6 redonne le brut AVEC contributions de tab18 (1 716,5 contre 1 716,6). NE SE PROLONGE PAS par `ins-salaire-par-categorie-hors-contributions-2018-2025` (rapport INS 2018-2025, tableau 12), qui est le brut SANS contributions : A1 2018 = 2 561,4 ici, 2 175,3 là, pour des effectifs identiques ; le rapport entre les deux varie de 1,14 à 1,20 selon la catégorie et l'année, et aucun coefficient ne raccorde les deux séries.
+# note : Salaire mensuel brut hors contributions des fonctionnaires par catégorie statutaire, 2018-2025, et pour mémoire brut avec contributions, 2015-2020
+Année,Concept (source),A1,A2,A3,B,C,D,Rapport A1/D
+2015,"Brut avec contributions (INS, enquête 2010-2021)",2446.6,1655.2,1368.9,1237.5,1141.9,1144.1,2.14
+2016,"Brut avec contributions (INS, enquête 2010-2021)",2458.5,1844.8,1516.6,1466.1,1398.9,1176.1,2.09
+2017,"Brut avec contributions (INS, enquête 2010-2021)",2539.0,1831.5,1501.6,1448.8,1394.2,1176.7,2.16
+2018,"Brut avec contributions (INS, enquête 2010-2021)",2561.4,1898.6,1580.5,1581.9,1457.8,1296.5,1.98
+2019,"Brut avec contributions (INS, enquête 2010-2021)",2829.2,2272.7,1919.7,1926.2,1729.6,1645.1,1.72
+2020,"Brut avec contributions (INS, enquête 2010-2021)",3126.0,2481.4,2139.3,2134.7,1887.6,1803.7,1.73
+2018,"Brut hors contributions (INS, rapport 2018-2025)",2175.3,1612.7,1359.2,1359.4,1237.8,1135.8,1.92
+2019,"Brut hors contributions (INS, rapport 2018-2025)",2367.2,1897.8,1622.8,1626.7,1445.7,1416.9,1.67
+2020,"Brut hors contributions (INS, rapport 2018-2025)",2614.4,2078.4,1814.2,1805.2,1579.4,1540.7,1.7
+2021,"Brut hors contributions (INS, rapport 2018-2025)",2710.3,2109.0,1860.1,1788.7,1519.1,1558.5,1.74
+2022,"Brut hors contributions (INS, rapport 2018-2025)",2838.0,2208.3,1924.5,1878.0,1625.4,1615.3,1.76
+2023,"Brut hors contributions (INS, rapport 2018-2025)",2866.4,2203.4,1931.2,1877.1,1630.7,1617.1,1.77
+2024,"Brut hors contributions (INS, rapport 2018-2025)",2980.4,2309.6,2007.9,1963.8,1715.9,1685.8,1.77
+2025,"Brut hors contributions (INS, rapport 2018-2025)",3106.7,2387.5,2099.8,2031.4,1760.4,1758.3,1.77

@@ -1,5 +1,5 @@
-series: [fonction-publique-categories]
-sources: [ins-fonction-publique-2021]
-fiches: [sources/ins-fonction-publique-salaires-2010-2021.md]
-caveats: [catégories statutaires A1/A2/A3/B/C/D ; champ = fonctionnaires (tab8 INS)]
-generated: 2026-09-09
+series: [fonction-publique-categories, fonction-publique-categories-2018-2025, fonction-publique-ouvriers-unite-2018-2025]
+sources: [ins-fonction-publique-2021, ins-fonction-publique-2025]
+fiches: [sources/ins-fonction-publique-salaires-2010-2021.md, sources/ins-fonction-publique-2018-2025.md]
+caveats: [catégories statutaires A1/A2/A3/B/C/D ; champ = fonctionnaires (tab8 INS), Prolonge `fonction-publique-categories` (2015-2021), qu'elle reproduit à l'identique sur 2018-2020 et à l'arrondi en 2021 ; même libellés. Écarts d'arrondi de 0,1 millier entre la somme des catégories et le total (2019, 2023), et entre ce total et les fonctionnaires du tableau 5 en 2024 (518,2 contre 518,1). La catégorie D passe de 28,4 (2023) à 39,8 milliers (2024) sans que le rapport l'explique ; le mouvement est contemporain de la baisse de l'unité 1 des ouvriers (48,9 → 35,4 milliers), rapprochement qui n'est qu'une hypothèse., Le total publié s'écarte de 0,1 millier de la somme des unités en 2018, 2022 et 2023, et de l'effectif des ouvriers du tableau 5 en 2023 (116,4 contre 116,3) et 2024 (103,2 contre 103,3) : arrondis. Recul de l'unité 1 de 48,9 à 35,4 milliers entre 2023 et 2024, non expliqué par le rapport.]
+generated: 2026-09-22
