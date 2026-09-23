@@ -46,6 +46,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Chiffre d'affaires imposable | رقم المعاملات الخاضع |  |
 | Chiffre indiciaire | الرقم القياسي |  |
 | Ciblage | الاستهداف |  |
+| Classe de revenus | شريحة الدخل |  |
 | Commerçant grossiste | تاجر جملة |  |
 | Condition de ressources | شرط الموارد |  |
 | Contribution aux frais de crèche | المساهمة في مصاريف رياض الأطفال |  |
@@ -121,13 +122,15 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Quota régional | الحصّة الجهوية |  |
 | Recettes fiscales | المداخيل الجبائية |  |
 | Régime agricole amélioré | النظام الفلاحي المحسَّن | RSAA |
+| Régime complémentaire | النظام التكميلي |  |
 | Régime conventionnel de retraite | النظام التعاقدي |  |
 | Régime conventionnel public | النظام الاتفاقي العمومي |  |
 | Régime de marché contrôlé | نظام السوق الموجَّه |  |
+| Régime de sécurité sociale des travailleuses agricoles | نظام الضمان الاجتماعي للعاملات الفلاحيات |  |
 | Régime des artistes, créateurs et intellectuels | نظام الضمان الاجتماعي للفنانين والمبدعين والمثقفين |  |
 | Régime des salariés agricoles | نظام الأجراء الفلاحيين | RSA |
 | Régime des salariés non agricoles | نظام الأجراء غير الفلاحيين | RSNA |
-| Régime des travailleurs à faibles revenus | نظام العملة ذوي الدخل الضعيف |  |
+| Régime des travailleurs à faibles revenus | نظام العملة ذوي الدخل المحدود |  |
 | Régime des travailleurs non salariés | نظام العملة غير الأجراء | RTNS |
 | Régime des travailleurs tunisiens à l'étranger | نظام الضمان الاجتماعي للعملة التونسيين بالخارج | RTTE |
 | Régime estimatif optionnel | النظام التقديري الاختياري |  |
@@ -143,6 +146,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Rétribution provisoire ou accidentelle | الأجر الوقتي أو العرضي |  |
 | Revalorisation des pensions | تعديل الجرايات |  |
 | Revenu annuel net | الدخل السنوي الصافي |  |
+| Revenu forfaitaire | الدخل التقديري |  |
 | Revenus fonciers | المداخيل العقارية |  |
 | Salaire différentiel | الأجر التفاضلي |  |
 | Salaire journalier moyen | الأجر اليومي المتوسّط |  |
@@ -151,6 +155,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Salaire moyen de référence | الأجر المتوسط المرجعي |  |
 | Score d'éligibilité | أنموذج التنقيط |  |
 | Secteur public | القطاع العام |  |
+| Sécurité sociale des pêcheurs | الضمان الاجتماعي للصيادين البحريين |  |
 | Service fait | قاعدة الخدمة المنجزة |  |
 | Solde (militaire) | المرتّب العسكري |  |
 | Solde de réforme | منحة الإصلاح |  |
