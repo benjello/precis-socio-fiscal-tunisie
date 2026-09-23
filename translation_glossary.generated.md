@@ -50,10 +50,12 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Commerçant grossiste | تاجر جملة |  |
 | Condition de ressources | شرط الموارد |  |
 | Contribution aux frais de crèche | المساهمة في مصاريف رياض الأطفال |  |
+| Contribution personnelle d'État | الضريبة الشخصية للدولة | CPE |
 | Contribution sociale de solidarité | المساهمة الاجتماعية التضامنية | CSS |
 | Convention collective sectorielle | الاتفاقية المشتركة القطاعية |  |
 | Convention collective sectorielle des banques et établissements financiers | الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية |  |
 | Coordination des régimes | التنسيق بين أنظمة الضمان الاجتماعي |  |
+| Cotisation de l'assuré | اشتراك المضمون |  |
 | Cotisations sociales | المساهمات الاجتماعية |  |
 | Décote | التخفيض في الجراية |  |
 | Déductions communes | الطروحات المشتركة |  |
@@ -94,7 +96,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Indemnité pour perte d'emploi | منحة فقدان الشغل |  |
 | Indemnité spécifique | المنحة الخصوصية |  |
 | Jouissance différée | الانتفاع المؤجَّل بالجراية |  |
-| Limite de calcul des prestations | سقف احتساب المنافع |  |
+| Limite de calcul des prestations | الحدّ الأقصى لاحتساب المنافع |  |
 | Livraison à soi-même | التسليم للنفس |  |
 | Magistrat | القاضي |  |
 | Majoration pour salaire unique | منحة الأجر الوحيد |  |

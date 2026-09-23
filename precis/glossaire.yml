@@ -946,6 +946,38 @@ entries:
         المورد على الأجور.
       synonymes: []
 
+  - id: contribution-personnelle-etat
+    acronyme: CPE
+    statut: valide
+    references: [lf-1986, decret86-1188, loi-irpp-is-1989]
+    source_definition: {ref: loi-irpp-is-1989, locator: "art. 2"}
+    source_traduction: {ref: decret86-1188, locator: "art. 1er"}
+    voir_aussi: [irpp, bareme-irpp, taux-marginal]
+    fr:
+      terme: Contribution personnelle d'État
+      definition: >
+        Impôt progressif sur le revenu global des personnes physiques, qui
+        surmontait les impôts distincts frappant chaque catégorie de revenu, dits
+        cédulaires. Elle procédait du décret du 31 mars 1932 ; son dernier barème,
+        fixé par l'article 8 de la loi de finances pour 1986, a été détaillé en
+        table de cotes d'impôt par le décret n° 86-1188 du 12 novembre 1986.
+        L'article 2 de la loi n° 89-114 du 30 décembre 1989 la supprime, avec les
+        impôts cédulaires, pour les revenus réalisés à compter du 1^er^ janvier
+        1990, que frappe désormais l'impôt sur le revenu des personnes physiques.
+      synonymes: [CPE]
+    ar:
+      terme: الضريبة الشخصية للدولة
+      definition: >
+        ضريبة تصاعدية على الدخل الجملي للأشخاص الطبيعيين، كانت تعلو الضرائب
+        المستقلّة المفروضة على كلّ صنف من أصناف الدخل. وكانت تستند إلى الأمر
+        المؤرّخ في 31 مارس 1932؛ وقد ضبط الفصل 8 من قانون المالية لسنة 1986 آخر
+        جدول لها، وفصّله الأمر عدد 1188 لسنة 1986 المؤرّخ في 12 نوفمبر 1986 في
+        جدول لمبالغ الضريبة. وألغاها الفصل 2 من القانون عدد 114 لسنة 1989 المؤرّخ
+        في 30 ديسمبر 1989، مع الضرائب المفروضة على أصناف الدخل، بالنسبة إلى
+        المداخيل المحقّقة ابتداءً من غرّة جانفي 1990، التي أصبحت تخضع للضريبة على
+        دخل الأشخاص الطبيعيين.
+      synonymes: []
+
   - id: assiette-fiscale
     acronyme: null
     statut: valide
@@ -1518,7 +1550,7 @@ entries:
     ar:
       terme: المنحة العائلية
       definition: >
-        منحة ثلاثية تُسند حسب رتبة الطفل وتُحتسب بنسبة مئوية من أجر ثلاثي محدود بسقف.
+        منحة ثلاثية تُسند حسب رتبة الطفل وتُحتسب بنسبة مئوية من الأجر الثلاثي مع حدّ أقصى لذلك الأجر.
         تحوّلت النسبة الموحّدة البالغة 15 % سنة 1960 إلى جدول تنازلي حسب الرتبة سنة
         1976، وانخفض عدد الرتب المشمولة من أربع إلى ثلاث سنة 1989.
       synonymes: []
@@ -1765,6 +1797,34 @@ entries:
         الشخص المنخرط في أحد أنظمة الضمان الاجتماعي بحكم نشاطه، والذي يفتح بذلك حقوقًا
         لنفسه ولذوي حقّه.
       synonymes: []
+
+  - id: cotisation-assure
+    acronyme: null
+    statut: valide  # AR : le singulier est dérivé du pluriel attesté « اشتراكات المضمونين »
+    references: [decret95-1166, decret89-107, loi2002-104]
+    source_definition: {ref: decret95-1166, locator: "art. 10"}
+    source_traduction: {ref: decret95-1166, locator: "art. 10"}
+    voir_aussi: [assure-social, cotisations-sociales]
+    fr:
+      terme: Cotisation de l'assuré
+      definition: >
+        Cotisation due par l'assuré social lui-même, dans les régimes qui ne
+        connaissent pas d'employeur : travailleurs non salariés (décret n° 95-1166,
+        art. 10), Tunisiens à l'étranger (décret n° 89-107, art. 9), artistes,
+        créateurs et intellectuels (loi n° 2002-104, art. 4). Le texte de chacun
+        de ces régimes range les « cotisations des assurés » en tête de ses
+        ressources, sans part patronale : l'assuré en supporte seul la totalité.
+      synonymes: [cotisations des assurés]
+    ar:
+      terme: اشتراك المضمون
+      definition: >
+        اشتراك يتحمّله المضمون الاجتماعي نفسه في الأنظمة التي لا يوجد فيها مؤجّر:
+        العمّال غير الأجراء (الأمر عدد 1166 لسنة 1995، الفصل 10)، والتونسيون
+        بالخارج (الأمر عدد 107 لسنة 1989، الفصل 9)، والفنّانون والمبدعون
+        والمثقّفون (القانون عدد 104 لسنة 2002، الفصل 4). ويضع نصّ كلّ نظام من هذه
+        الأنظمة «اشتراكات المضمونين» في مقدّمة موارده، دون مساهمة للأعراف: فيتحمّل
+        المضمون وحده كامل الاشتراك.
+      synonymes: [اشتراكات المضمونين]
 
   - id: enfant-a-charge
     acronyme: null
@@ -3011,7 +3071,7 @@ entries:
 
   - id: limite-calcul-prestations
     acronyme: null
-    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    statut: provisoire  # AR à valider (issue #151) : « الحدّ الأقصى » est attesté pour le plafond des allocations familiales (loi n° 86-75, art. 61 nouveau), non pour cette notion ; le décret n° 95-1166 (art. 19) dit « في حدود »
     references: [decret90-1455, decret94-1429, loi89-73, arrete-1978-11-18-retraite-complementaire]
     source_definition: {ref: decret74-499, locator: "art. 18"}
     voir_aussi: [salaire-moyen-reference, salaire-differentiel, smig, smag]
@@ -3029,7 +3089,7 @@ entries:
         forme l'assiette du régime complémentaire.
       synonymes: [Limite de prise en compte des salaires]
     ar:
-      terme: سقف احتساب المنافع
+      terme: الحدّ الأقصى لاحتساب المنافع
       definition: >
         مبلغ لا تُعتمد الأجور في ما يتجاوزه لاحتساب الأجر المتوسط المرجعي والمنافع. في
         نظام الأجراء غير الفلاحيين، يساوي ستّة أضعاف الأجر الأدنى المضمون لمختلف المهن
@@ -3037,7 +3097,7 @@ entries:
         وأعاده الأمر عدد 1455 لسنة 1990 دون تغيير، ثمّ أعاده الأمر عدد 1429 لسنة 1994
         (الفصل الأوّل) مع التنصيص على أنّ المقصود هو الأجر الأدنى المضمون لمختلف المهن
         في نظام 48 ساعة في الأسبوع؛ ويضبطه النظام الفلاحي المحسَّن بستّة
-        أضعاف الأجر الأدنى الفلاحي المضمون محتسبًا على أساس 300 يوم. وليس سقفًا للمساهمة:
+        أضعاف الأجر الأدنى الفلاحي المضمون محتسبًا على أساس 300 يوم. وليس حدًّا أقصى للمساهمة:
         فالجزء من الأجر الذي يتجاوزه يمثّل قاعدة النظام التكميلي.
       synonymes: []
 
