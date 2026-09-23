@@ -1,10 +1,13 @@
 """Figure « poids de l'emploi public dans l'emploi total » (sources INS et BCT).
 
-Numérateurs : l'enquête INS sur la fonction publique — d'une part l'ensemble des **agents**
-(tab1, ouvriers et contractuels compris), d'autre part les seuls **fonctionnaires**
-(tab8, somme des catégories A1 à D).
+Numérateurs : les deux publications de l'INS sur la fonction publique — d'une part
+l'ensemble des **agents** (ouvriers et contractuels compris), d'autre part les seuls
+**fonctionnaires** (somme des catégories A1 à D). L'enquête 2010-2021 (tab1, tab8) fournit
+2015-2017, le rapport 2018-2025 (tableaux 1 et 6) les années suivantes : les deux
+concordent à l'arrondi sur les années communes, et le millésime le plus récent fait foi.
 Dénominateur : la **population active occupée** publiée par la Banque centrale, recollée à
-travers quatorze rapports annuels.
+travers quatorze rapports annuels. Elle s'arrête en **2024** : le ratio aussi, bien que
+les numérateurs aillent jusqu'en 2025.
 
     from figures import emploi_public as ep
     ep.fig_part()      # les deux ratios
@@ -23,7 +26,8 @@ RÉSERVES QUE LA FIGURE DOIT PORTER :
     les forces de sécurité intérieure et les magistrats ; le dénominateur est l'emploi
     total, salarié **et non salarié**, dans une économie à forte informalité ;
   - en **2020**, le dénominateur s'effondre (3 566 → 3 433 milliers). Le ratio monte alors
-    sans qu'aucun recrutement ait eu lieu ;
+    sans qu'aucun recrutement ait eu lieu ; même mouvement, plus faible, en 2023
+    (3 500 → 3 416) ;
   - le dénominateur est **révisé** d'un rapport à l'autre : avec la valeur d'époque, 2015
     donne 18,5 % ; avec la valeur révisée, 17,7 %. L'effet de millésime vaut 0,8 point.
 """
@@ -39,16 +43,21 @@ import matplotlib.pyplot as plt
 sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "scripts"))
 import figtools  # noqa: E402
 
-SERIE_AGENTS = "fonction-publique-effectifs"     # tab1, ligne « Total »
-SERIE_FONC = "fonction-publique-categories"      # tab8, catégories A1 à D
+SERIE_AGENTS = "fonction-publique-effectifs"     # tab1, ligne « Total » (milliers)
+SERIE_FONC = "fonction-publique-categories"      # tab8, catégories A1 à D (milliers)
+SERIE_AGENTS_2025 = "fonction-publique-effectifs-2018-2025"  # tableau 1 (agents)
+SERIE_FONC_2025 = "fonction-publique-categories-2018-2025"   # tableau 6 (milliers)
 SERIE_EMPLOI = "bct-emploi-occupe"               # BCT, population active occupée
+
+# Première année que fournit le rapport 2018-2025 : il fait foi à partir d'elle.
+_DEBUT_2025 = 2018
 
 _CATS = ["Catégorie A1", "Catégorie A2", "Catégorie A3",
          "Catégorie B", "Catégorie C", "Catégorie D"]
 
 _L = {
-    "titre": {"fr": "Poids de l'emploi public dans l'emploi total, 2015-2021",
-              "ar": "وزن التشغيل العمومي في التشغيل الإجمالي، 2015-2021"},
+    "titre": {"fr": "Poids de l'emploi public dans l'emploi total, 2015-2024",
+              "ar": "وزن التشغيل العمومي في التشغيل الإجمالي، 2015-2024"},
     "x": {"fr": "Année", "ar": "السنة"},
     "y": {"fr": "Part de la population active occupée (%)",
           "ar": "الحصة من السكان النشيطين المشتغلين (٪)"},
@@ -71,15 +80,30 @@ def _lab(key: str) -> str:
     return _L[key].get(figtools.lang(), _L[key]["fr"])
 
 
-def _donnees():
-    """(année, agents, fonctionnaires, occupés) sur les années communes aux trois séries."""
-    ag = {int(r.annee): float(r.valeur)
-          for r in figtools.series(SERIE_AGENTS).itertuples()
-          if str(r.indicateur).strip() == "Total"}
+def _total_agents(serie: str, diviseur: float) -> dict[int, float]:
+    return {int(r.annee): float(r.valeur) / diviseur
+            for r in figtools.series(serie).itertuples()
+            if str(r.indicateur).strip() == "Total"}
+
+
+def _fonctionnaires(serie: str) -> dict[int, float]:
     fo: dict[int, float] = {}
-    for r in figtools.series(SERIE_FONC).itertuples():
+    for r in figtools.series(serie).itertuples():
         if str(r.categorie).strip() in _CATS:
             fo[int(r.annee)] = fo.get(int(r.annee), 0.0) + float(r.valeur)
+    return fo
+
+
+def _raccord(ancien: dict[int, float], recent: dict[int, float]) -> dict[int, float]:
+    """Enquête 2010-2021 avant 2018, rapport 2018-2025 ensuite (le plus récent fait foi)."""
+    return {**{a: v for a, v in ancien.items() if a < _DEBUT_2025}, **recent}
+
+
+def _donnees():
+    """(année, agents, fonctionnaires, occupés) sur les années communes aux trois séries."""
+    ag = _raccord(_total_agents(SERIE_AGENTS, 1.0),
+                  _total_agents(SERIE_AGENTS_2025, 1000.0))   # rapport 2025 : en agents
+    fo = _raccord(_fonctionnaires(SERIE_FONC), _fonctionnaires(SERIE_FONC_2025))
     em = {int(r.annee): float(r.valeur) for r in figtools.series(SERIE_EMPLOI).itertuples()}
     communes = sorted(set(ag) & set(fo) & set(em))
     return [(a, ag[a], fo[a], em[a]) for a in communes]

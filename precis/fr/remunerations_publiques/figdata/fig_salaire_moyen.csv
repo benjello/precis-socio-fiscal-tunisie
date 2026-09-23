@@ -1,0 +1,18 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-22
+# séries (tunisia_data) : fonction-publique-salaires-2015-2025
+# sources (citation) : @ins-fonction-publique-2021, @ins-fonction-publique-2025
+# fiches : sources/ins-fonction-publique-2018-2025.md
+# méthode/hypothèses : SÉRIE RACCORDÉE. ARBITRAGE : le millésime le plus récent fait foi sur 2018-2020 ; les valeurs de tab18 écartées sont listées dans la fiche. Chaque indicateur est raccordé à lui-même — jamais un brut avec contributions à un brut sans. Le raccord laisse une marche d'environ un dinar entre 2017 et 2018 (révision du millésime 2025 non reportée sur 2015-2017) : le taux 2017→2018 recalculé sur la série vaut 2,8 % pour le brut avec contributions et 2,9 % sans, contre 2,9 % et 3,0 % publiés ; pour le net il vaut 3,4 %, comme publié. Les taux d'accroissement ne sont PAS repris : les lire dans les séries homogènes `fonction-publique-salaires` et `fonction-publique-salaires-2018-2025`.
+# note : Salaire mensuel moyen dans la fonction publique, 2015-2025
+Année,Brut (avec contributions),Brut (sans contributions),Net,Source
+2015,1461.8,1248.7,916.7,"INS, enquête 2010-2021"
+2016,1644.6,1405.1,1019.8,"INS, enquête 2010-2021"
+2017,1668.3,1427.4,1096.0,"INS, enquête 2010-2021"
+2018,1715.6,1468.5,1133.3,"INS, rapport 2018-2025"
+2019,2017.9,1699.8,1197.9,"INS, rapport 2018-2025"
+2020,2260.4,1904.1,1309.4,"INS, rapport 2018-2025"
+2021,2341.2,1969.5,1314.9,"INS, rapport 2018-2025"
+2022,2467.2,2075.7,1387.9,"INS, rapport 2018-2025"
+2023,2476.1,2080.4,1396.3,"INS, rapport 2018-2025"
+2024,2606.4,2186.7,1474.3,"INS, rapport 2018-2025"
+2025,2698.1,2265.4,1556.9,"INS, rapport 2018-2025"

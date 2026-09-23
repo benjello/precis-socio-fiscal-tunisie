@@ -1,5 +1,5 @@
-series: [fonction-publique-effectifs]
-sources: [ins-fonction-publique-2021]
-fiches: [sources/ins-fonction-publique-salaires-2010-2021.md]
-caveats: [rupture de série collectivités locales 2016→2017 (changement de périmètre/comptage)]
-generated: 2026-09-09
+series: [fonction-publique-effectifs, fonction-publique-effectifs-2018-2025]
+sources: [ins-fonction-publique-2021, ins-fonction-publique-2025]
+fiches: [sources/ins-fonction-publique-salaires-2010-2021.md, sources/ins-fonction-publique-2018-2025.md]
+caveats: [rupture de série collectivités locales 2016→2017 (changement de périmètre/comptage), EN AGENTS, et non en milliers comme `fonction-publique-effectifs` (2015-2021), qu'elle recoupe à l'arrondi près sur 2018-2021 (652 225 contre 652,2 milliers en 2018). COUVERTURE CROISSANTE DES COLLECTIVITÉS LOCALES : le rapport avertit que leur évolution « doit être interprétée en tenant compte de l'évolution du champ de couverture de la base INSAF », l'intégration progressive de nouvelles collectivités ayant amélioré l'exhaustivité du fichier ; la hausse de 21 483 (2018) à 26 697 agents (2025) mêle donc recrutements et extension du champ. Source administrative (base INSAF) ; effectif en décembre, précisé par le rapport pour 2025.]
+generated: 2026-09-22

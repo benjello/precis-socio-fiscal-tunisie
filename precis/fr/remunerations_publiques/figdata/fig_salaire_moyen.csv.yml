@@ -1,0 +1,5 @@
+series: [fonction-publique-salaires-2015-2025]
+sources: [ins-fonction-publique-2021, ins-fonction-publique-2025]
+fiches: [sources/ins-fonction-publique-2018-2025.md]
+caveats: [SÉRIE RACCORDÉE. ARBITRAGE : le millésime le plus récent fait foi sur 2018-2020 ; les valeurs de tab18 écartées sont listées dans la fiche. Chaque indicateur est raccordé à lui-même — jamais un brut avec contributions à un brut sans. Le raccord laisse une marche d'environ un dinar entre 2017 et 2018 (révision du millésime 2025 non reportée sur 2015-2017) : le taux 2017→2018 recalculé sur la série vaut 2,8 % pour le brut avec contributions et 2,9 % sans, contre 2,9 % et 3,0 % publiés ; pour le net il vaut 3,4 %, comme publié. Les taux d'accroissement ne sont PAS repris : les lire dans les séries homogènes `fonction-publique-salaires` et `fonction-publique-salaires-2018-2025`.]
+generated: 2026-09-22

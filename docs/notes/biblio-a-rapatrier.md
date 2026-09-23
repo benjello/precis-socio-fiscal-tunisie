@@ -141,6 +141,7 @@ pour que les figures du précis soient citées et tracées :
 | `minfin-indicateurs-fp` | Min. Finances — Indicateurs des finances publiques (déficit, dette, pression fiscale) | dataset |
 | `ins-cnat-2015` | INS — Comptes de la Nation, base 2015 | dataset |
 | `ins-fonction-publique-2021` | INS — Caractéristiques des agents de la fonction publique et leurs salaires 2010-2021 | dataset |
+| `ins-fonction-publique-2025` | INS — Évolution des effectifs et des rémunérations des agents de la fonction publique tunisienne 2018-2025 (août 2026). Versée à la main dans `precis/{fr,ar}/remunerations_publiques/references.json`, comme la clé 2021. PDF : <https://www.ins.tn/sites/default/files-ftp3/files/publication/pdf/La%20fonction%20publique%20-%202018-2025.pdf> | dataset |
 | `bct-bsf` | BCT — Bulletin des Statistiques Financières (et archives) | dataset |
 | `bct-ra` | BCT — **Rapport Annuel** (annuel depuis 1959 ; source de la série `bct-emploi-occupe`, population active occupée 2007-2024) | dataset |
 

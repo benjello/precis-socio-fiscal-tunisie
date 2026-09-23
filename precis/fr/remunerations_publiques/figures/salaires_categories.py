@@ -1,18 +1,35 @@
 """Figure « salaire brut des fonctionnaires par catégorie statutaire » (source INS).
 
-Série tab20 de l'enquête INS : salaire mensuel brut des fonctionnaires par catégorie
-A1 à D, de 2015 à 2020, en dinars courants.
+Deux séries de l'INS, dans DEUX CONCEPTS DIFFÉRENTS, qui ne se raccordent pas :
+
+  - `ins-salaire-par-categorie-hors-contributions-2018-2025` — rapport 2018-2025,
+    tableau 12 : salaire mensuel brut **hors contributions**, 2018-2025. C'est la série
+    principale de la figure.
+  - `ins-salaire-par-categorie` — enquête 2010-2021, tab20 : salaire mensuel brut **avec
+    contributions**, 2015-2020. Elle reste présentée, pour mémoire, dans un panneau à part.
+
+L'INS intitule les deux tableaux « salaire mensuel brut » sans préciser le concept. Il
+est établi par recoupement : pondéré par les effectifs par catégorie, le tableau 12
+redonne le brut **sans** contributions du rapport, et tab20 le brut **avec** contributions
+de l'enquête. Les effectifs par catégorie étant identiques dans les deux publications sur
+2018-2020, l'écart ne vient pas du champ ; le rapport entre les deux séries varie de 1,14
+à 1,20 selon la catégorie et l'année, et aucun coefficient ne passe de l'une à l'autre.
+Les deux panneaux ne sont donc JAMAIS joints, et chaque rapport entre catégories se
+calcule dans son propre concept.
 
     from figures import salaires_categories as sc
-    sc.fig_salaires()      # les six catégories, en courbes
-    sc.salaires_table()    # tableau (onglet Données)
+    sc.fig_salaires()          # deux panneaux, dinars courants
+    sc.salaires_table()        # les deux séries, étiquetées (onglet Données)
+    sc.fig_salaires_reel()     # la même chose en dinars constants de 2015
+    sc.salaires_reel_table()
 
-CE QUE LA FIGURE MONTRE, ET QUE LE CHAPITRE ÉNONÇAIT SANS LE CHIFFRER : le resserrement
-de la hiérarchie indiciaire. Le rapport entre le haut et le bas de la grille revient de
-2,14 à 1,73 en six ans — non parce que le haut recule, mais parce que le bas progresse
-plus vite, les augmentations générales étant servies en dinars et non en pourcentage.
+CE QUE LA FIGURE MONTRE : le resserrement de la hiérarchie, mesuré par le rapport entre
+A1 et D. Brut avec contributions : 2,14 en 2015, 1,73 en 2020. Brut hors contributions :
+1,92 en 2018, 1,67 en 2019, puis une lente remontée à 1,77 en 2023-2025. Les deux séries
+situent l'essentiel du resserrement en 2018-2019 ; aucune ne le montre se poursuivre
+après 2020.
 
-RÉSERVE PORTÉE PAR LA SÉRIE ELLE-MÊME : l'INS étiquette « Catégorie A2 » la ligne que
+RÉSERVE PORTÉE PAR LA SÉRIE 2015-2020 : l'INS étiquette « Catégorie A2 » la ligne que
 l'arabe nomme « أ3 ». Le versement corrige l'étiquette — sans quoi deux courbes
 porteraient le même nom et A3 disparaîtrait du graphique.
 """
@@ -28,7 +45,8 @@ import matplotlib.pyplot as plt
 sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "scripts"))
 import figtools  # noqa: E402
 
-SERIE = "ins-salaire-par-categorie"
+SERIE = "ins-salaire-par-categorie-hors-contributions-2018-2025"   # principale
+SERIE_AVEC = "ins-salaire-par-categorie"   # 2015-2020, brut avec contributions
 SERIE_IPC = "bct-ipc-base2015"   # indice des prix, base 100 = 2015
 
 # Année de référence de la déflation : celle de la base de l'indice, pour que les dinars
@@ -42,13 +60,31 @@ _COULEURS = {"A1": "#08519c", "A2": "#3182bd", "A3": "#9ecae1",
              "B": "#fd8d3c", "C": "#d1242f", "D": "#6e7781"}
 
 _L = {
-    "titre": {"fr": "Salaire mensuel brut des fonctionnaires par catégorie, 2015-2020",
-              "ar": "الأجر الشهري الخام للموظفين حسب الصنف، 2015-2020"},
+    "titre": {"fr": "Salaire mensuel brut hors contributions des fonctionnaires "
+                    "par catégorie, 2018-2025",
+              "ar": "الأجر الشهري الخام دون المساهمات للموظفين حسب الصنف، 2018-2025"},
+    "p_sans": {"fr": "Brut hors contributions, 2018-2025\n(INS, rapport 2018-2025)",
+               "ar": "خام دون المساهمات، 2018-2025\n(المعهد الوطني للإحصاء، تقرير 2018-2025)"},
+    "p_avec": {"fr": "Pour mémoire : brut avec contributions,\n2015-2020 (INS, enquête "
+                     "2010-2021)\nautre concept — non raccordable",
+               "ar": "للتذكير: خام مع المساهمات،\n2015-2020 (المعهد الوطني للإحصاء، "
+                     "مسح 2010-2021)\nمفهوم آخر — لا يُوصَل"},
     "x": {"fr": "Année", "ar": "السنة"},
     "y": {"fr": "Dinars courants par mois", "ar": "دينار جارٍ في الشهر"},
     "col_annee": {"fr": "Année", "ar": "السنة"},
-    "titre_reel": {"fr": "Salaire brut par catégorie, en dinars constants de 2015",
-                   "ar": "الأجر الخام حسب الصنف، بالدينار الثابت لسنة 2015"},
+    "col_concept": {"fr": "Concept (source)", "ar": "المفهوم (المصدر)"},
+    "col_ratio": {"fr": "Rapport A1/D", "ar": "النسبة أ1/د"},
+    "c_sans": {"fr": "Brut hors contributions (INS, rapport 2018-2025)",
+               "ar": "خام دون المساهمات (المعهد الوطني للإحصاء، تقرير 2018-2025)"},
+    "c_avec": {"fr": "Brut avec contributions (INS, enquête 2010-2021)",
+               "ar": "خام مع المساهمات (المعهد الوطني للإحصاء، مسح 2010-2021)"},
+    "titre_reel": {"fr": "Salaire brut hors contributions par catégorie, en dinars "
+                         "constants de 2015, 2018-2024",
+                   "ar": "الأجر الخام دون المساهمات حسب الصنف، بالدينار الثابت لسنة 2015، "
+                         "2018-2024"},
+    "p_sans_reel": {"fr": "Brut hors contributions, 2018-2024\n(indice des prix "
+                          "publié jusqu'en 2024)",
+                    "ar": "خام دون المساهمات، 2018-2024\n(مؤشّر الأسعار منشور حتى 2024)"},
     "y_reel": {"fr": "Dinars constants de 2015 par mois",
                "ar": "دينار ثابت لسنة 2015 في الشهر"},
 }
@@ -58,16 +94,12 @@ def _lab(key: str) -> str:
     return _L[key].get(figtools.lang(), _L[key]["fr"])
 
 
-def _wide():
-    df = figtools.series(SERIE)
+def _wide(serie: str = SERIE):
+    df = figtools.series(serie)
     w = (df.pivot(index="annee", columns="categorie", values="valeur").reset_index())
     w.columns.name = None
+    w["annee"] = w["annee"].astype(int)
     return w[["annee", *[c for c in _CATS if c in w.columns]]]
-
-
-def salaires_table():
-    """Tableau (onglet Données) : les six catégories, dinars courants par mois."""
-    return _wide().rename(columns={"annee": _lab("col_annee")})
 
 
 def _ipc():
@@ -75,67 +107,94 @@ def _ipc():
     return {int(r.annee): float(r.valeur) for r in figtools.series(SERIE_IPC).itertuples()}
 
 
-def _wide_reel():
+def _reel(w):
     """La même grille, en dinars constants de l'année de base.
 
     Une année sans indice est ÉCARTÉE, non extrapolée : l'indice s'arrête à 2024 et il
     n'existe pas de prix pour les années à venir.
     """
-    w, ipc = _wide().copy(), _ipc()
+    w, ipc = w.copy(), _ipc()
     w = w[w["annee"].isin(ipc)]
     for c in [c for c in _CATS if c in w.columns]:
         w[c] = [v * 100 / ipc[int(a)] for a, v in zip(w["annee"], w[c])]
     return w
 
 
+def _table(avec, sans, decimales: int | None = None):
+    """Les deux séries l'une sous l'autre, chacune étiquetée de son concept.
+
+    Les années 2018-2020 figurent deux fois, une par concept : c'est voulu. Le lecteur y
+    voit l'écart entre les deux notions, et qu'aucune ligne n'est un raccord.
+    """
+    import pandas as pd
+    parts = []
+    for w, cle in ((avec, "c_avec"), (sans, "c_sans")):
+        w = w.copy()
+        w.insert(1, "concept", _lab(cle))
+        w["ratio"] = (w["A1"] / w["D"]).round(2)
+        parts.append(w)
+    t = pd.concat(parts, ignore_index=True)
+    if decimales is not None:
+        t[_CATS] = t[_CATS].round(decimales)
+    return t.rename(columns={"annee": _lab("col_annee"), "concept": _lab("col_concept"),
+                             "ratio": _lab("col_ratio")})
+
+
+def salaires_table():
+    """Tableau (onglet Données) : les deux séries, dinars courants, et le rapport A1/D."""
+    return _table(_wide(SERIE_AVEC), _wide(SERIE))
+
+
 def salaires_reel_table():
-    """Tableau (onglet Données) : dinars constants de 2015."""
-    w = _wide_reel().round(1)
-    return w.rename(columns={"annee": _lab("col_annee")})
+    """Tableau (onglet Données) : les deux séries en dinars constants de 2015."""
+    return _table(_reel(_wide(SERIE_AVEC)), _reel(_wide(SERIE)), decimales=1)
+
+
+def _deux_panneaux(avec, sans, titre: str, titre_sans: str, ylabel: str):
+    """Panneau étroit « pour mémoire » à gauche, série principale à droite ; même échelle.
+
+    Deux axes distincts, et non deux courbes sur un même axe : rien ne doit suggérer que
+    2020 (avec contributions) se prolonge en 2021 (hors contributions).
+    """
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    fig, (ax0, ax1) = plt.subplots(
+        1, 2, figsize=(11, 5.6), sharey=True, layout="constrained",
+        gridspec_kw={"width_ratios": [len(avec), len(sans)]})
+    for ax, w, style in ((ax0, avec, dict(lw=1.4, ms=3.5, alpha=0.75)),
+                         (ax1, sans, dict(lw=2.2, ms=4.5))):
+        for cat in _CATS:
+            if cat not in w.columns:
+                continue
+            ax.plot(w["annee"], w[cat], "o-", color=_COULEURS[cat], label=ft(cat), **style)
+        ax.set_xticks(list(w["annee"]))
+        ax.tick_params(axis="x", labelsize=8)
+        ax.grid(True, alpha=0.3)
+        ax.set_xlabel(ft(_lab("x")))
+    ax0.set_facecolor("#f6f8fa")
+    ax0.set_title("\n".join(ft(l) for l in _lab("p_avec").split("\n")),
+                  fontsize=8.5, color="#57606a")
+    ax1.set_title("\n".join(ft(l) for l in titre_sans.split("\n")), fontsize=9.5)
+    ax0.set_ylabel(ft(ylabel))
+    ax0.set_ylim(bottom=0)
+    ax1.legend(loc="upper left", bbox_to_anchor=(1.01, 1.0), fontsize=9)
+    fig.suptitle(ft(titre), fontsize=11.5)
+    return fig
+
+
+def fig_salaires():
+    return _deux_panneaux(_wide(SERIE_AVEC), _wide(SERIE),
+                          _lab("titre"), _lab("p_sans"), _lab("y"))
 
 
 def fig_salaires_reel():
     """Le pendant déflaté : ce que la figure nominale ne peut pas montrer.
 
-    En euros courants la grille monte partout ; déflatée, elle révèle que la catégorie
-    A1 PERD du pouvoir d'achat sur 2015-2020 tandis que la catégorie B en gagne près
-    d'un tiers. Le resserrement n'est pas un rattrapage nominal : c'est un déclassement
-    réel du haut de la grille.
+    En dinars courants la grille monte partout. Déflatée, la série hors contributions
+    (2018-2024, l'indice s'arrêtant en 2024) progresse jusqu'en 2020 puis recule dans
+    toutes les catégories : en 2024, toutes sont sous leur niveau réel de 2018, A1 et C
+    le plus nettement. Le panneau « pour mémoire » garde la lecture 2015-2020 du concept
+    avec contributions, où A1 perd du pouvoir d'achat quand B en gagne près d'un tiers.
     """
-    figtools.apply_lang_font()
-    ft = figtools.fig_text
-    w = _wide_reel()
-    y = w["annee"]
-    fig, ax = plt.subplots(figsize=(9, 5.5))
-    for cat in _CATS:
-        if cat not in w.columns:
-            continue
-        ax.plot(y, w[cat], "o-", color=_COULEURS[cat], lw=2, ms=4.5, label=ft(cat))
-    ax.set_xlabel(ft(_lab("x")))
-    ax.set_ylabel(ft(_lab("y_reel")))
-    ax.set_title(ft(_lab("titre_reel")))
-    ax.set_ylim(bottom=0)
-    ax.grid(True, alpha=0.3)
-    ax.legend(loc="upper left", bbox_to_anchor=(1.01, 1.0), fontsize=9)
-    fig.tight_layout()
-    return fig
-
-
-def fig_salaires():
-    figtools.apply_lang_font()
-    ft = figtools.fig_text
-    w = _wide()
-    y = w["annee"]
-    fig, ax = plt.subplots(figsize=(9, 5.5))
-    for cat in _CATS:
-        if cat not in w.columns:
-            continue
-        ax.plot(y, w[cat], "o-", color=_COULEURS[cat], lw=2, ms=4.5, label=ft(cat))
-    ax.set_xlabel(ft(_lab("x")))
-    ax.set_ylabel(ft(_lab("y")))
-    ax.set_title(ft(_lab("titre")))
-    ax.set_ylim(bottom=0)
-    ax.grid(True, alpha=0.3)
-    ax.legend(loc="upper left", bbox_to_anchor=(1.01, 1.0), fontsize=9)
-    fig.tight_layout()
-    return fig
+    return _deux_panneaux(_reel(_wide(SERIE_AVEC)), _reel(_wide(SERIE)),
+                          _lab("titre_reel"), _lab("p_sans_reel"), _lab("y_reel"))

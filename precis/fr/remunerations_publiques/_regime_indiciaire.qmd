@@ -29,11 +29,11 @@ Le niveau de recrutement de la sous-catégorie A1 a été **réécrit par le dé
 
 Pour chaque catégorie, le recrutement est également ouvert, en alternative au diplôme académique, aux titulaires d'un **diplôme de formation homologué** au niveau correspondant [@decret-99-12]. Les grades non accessibles par concours externe sont répartis entre ces catégories par les statuts particuliers [@decret-99-12, art. 6], la liste des grades de chaque catégorie étant arrêtée par le Premier ministre [@decret-99-12, art. 7]. Les libellés de la dernière colonne — conception, encadrement, maîtrise, exécution — sont la désignation usuelle des niveaux de fonction ; le décret, lui, ne fixe que le niveau de diplôme requis.
 
-Cette population n'est pas homogène : la statistique de la fonction publique ventile les fonctionnaires de l'État par **catégorie statutaire**, de la catégorie A1 (cadres supérieurs et conception) à la catégorie D (exécution). La hiérarchie des qualifications y pèse lourd : en 2021, la catégorie **A** (A1, A2 et A3) regroupe à elle seule près des **trois quarts** des fonctionnaires, la seule catégorie **A1** en représentant environ **38 %**. La période 2015-2021 est en outre marquée par une recomposition : les effectifs de catégorie **A1** progressent fortement (d'environ 99 000 à 198 000), tandis que la catégorie **A3** recule (d'environ 78 000 à 36 000), sous l'effet conjugué des recrutements de cadres et des reclassements.
+Cette population n'est pas homogène : la statistique de la fonction publique ventile les fonctionnaires de l'État par **catégorie statutaire**, de la catégorie A1 (cadres supérieurs et conception) à la catégorie D (exécution). La hiérarchie des qualifications y pèse lourd : en 2025, la catégorie **A** (A1, A2 et A3) regroupe à elle seule près des **trois quarts** des fonctionnaires, la seule catégorie **A1** en représentant environ **37 %** [@ins-fonction-publique-2025]. La période 2015-2025 est en outre marquée par une recomposition : les effectifs de catégorie **A1** doublent entre 2015 et 2021 (d'environ 99 000 à 198 000) puis se stabilisent autour de 195 000, tandis que la catégorie **A3** recule d'environ 78 000 à 33 000, sous l'effet conjugué des recrutements de cadres et des reclassements. En 2024, la catégorie **D** passe brusquement d'environ 28 400 à 39 800 agents, l'année même où la première des trois unités d'ouvriers recule d'environ 48 900 à 35 400 agents ; la source n'explique ni l'un ni l'autre mouvement, et un reclassement d'ouvriers en catégorie D n'est qu'une hypothèse.
 
 ```{python}
 #| label: fig-categories-statutaires
-#| fig-cap: "Fonctionnaires de l'État par catégorie statutaire, 2015-2021 (source INS)."
+#| fig-cap: "Fonctionnaires de l'État par catégorie statutaire, 2015-2025 (source INS)."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
@@ -41,8 +41,9 @@ from figures import categories_statutaires as cs
 import figtools
 figtools.figure_tabs(
     cs.fig_structure(), cs.structure_table(), "fonction-publique-categories",
+    "fonction-publique-categories-2018-2025", "fonction-publique-ouvriers-unite-2018-2025",
     slug="fig_categories_statutaires",
-    caption="Fonctionnaires de l'État par catégorie statutaire, 2015-2021",
+    caption="Fonctionnaires de l'État par catégorie statutaire, 2015-2025",
     note_lecture=(
         "Chaque barre empile les effectifs des six catégories statutaires pour une "
         "année donnée : la hauteur totale donne l'effectif des fonctionnaires, et "
@@ -50,7 +51,13 @@ figtools.figure_tabs(
         "A3** correspondent aux agents de conception et d'encadrement, **B** à la "
         "maîtrise, **C** et **D** à l'exécution. Le champ couvre les seuls "
         "fonctionnaires (hors ouvriers et contractuels), d'où un total inférieur à "
-        "l'effectif global de la fonction publique."
+        "l'effectif global de la fonction publique.\n\n"
+        "**Deux publications raccordées.** Les années 2015-2017 viennent de l'enquête "
+        "2010-2021, les années 2018-2025 du rapport 2018-2025 ; les deux sont identiques "
+        "au dixième de millier sur 2018-2020, et la plus récente fait foi sur les années "
+        "communes. L'onglet Données indique la source de chaque ligne et porte, en "
+        "regard, l'effectif de la première unité d'ouvriers, dont le recul de 2024 est "
+        "contemporain du saut de la catégorie **D**."
     ),
     generated="{{< meta date >}}",
 )
@@ -323,24 +330,57 @@ L'UGTT, **partie à la négociation**, a publié le procès-verbal d'accord fixa
 
 Le régime indiciaire concentre l'essentiel des effectifs et de la masse salariale de la fonction publique. Il n'existe toutefois pas, à ce jour, de masse salariale ni d'effectifs **ventilés par régime de rémunération** : les sources statistiques disponibles agrègent la fonction publique sans distinguer le régime indiciaire des autres régimes (cf. introduction du présent livre). Aucune série propre au seul régime indiciaire ne peut donc être construite à partir des données sourcées.
 
-Pour situer le poids de ce régime, on renvoie aux agrégats présentés en introduction, avec leurs réserves de périmètre : l'évolution des effectifs de la fonction publique (@fig-effectifs-fp), leur répartition par catégorie statutaire (@fig-categories-statutaires) et la trajectoire de la masse salariale rapportée au PIB et aux dépenses de l'État (@fig-masse-salariale-ratios). Ces ordres de grandeur, documentés par l'INS, le ministère des Finances, le FMI et la Banque mondiale [@ins-fonction-publique-2021; @minfin-remunerations; @minfin-indicateurs-fp; @imf-tunisia-art4-2020; @wb-tunisia-per-2020], portent sur la fonction publique dans son ensemble et non sur le seul régime indiciaire.
+Pour situer le poids de ce régime, on renvoie aux agrégats présentés en introduction, avec leurs réserves de périmètre : l'évolution des effectifs de la fonction publique (@fig-effectifs-fp), leur répartition par catégorie statutaire (@fig-categories-statutaires) et la trajectoire de la masse salariale rapportée au PIB et aux dépenses de l'État (@fig-masse-salariale-ratios). Ces ordres de grandeur, documentés par l'INS, le ministère des Finances, le FMI et la Banque mondiale [@ins-fonction-publique-2021; @ins-fonction-publique-2025; @minfin-remunerations; @minfin-indicateurs-fp; @imf-tunisia-art4-2020; @wb-tunisia-per-2020], portent sur la fonction publique dans son ensemble et non sur le seul régime indiciaire.
 
 Deux éclairages complémentaires peuvent toutefois être apportés, l'un sur la hiérarchie des rémunérations, l'autre sur le poids de l'emploi public dans l'emploi total.
 
-La grille décrite plus haut classe les grades en six catégories selon le niveau de diplôme exigé au recrutement (@tbl-categories-grades). L'enquête de l'INS permet de suivre, sur cette même nomenclature, le salaire brut effectivement perçu.
+Le salaire moyen de l'ensemble des agents en donne d'abord le niveau. L'INS le publie sous trois notions — brut avec contributions, brut sans contributions et net —, que ses deux publications successives permettent de suivre de 2015 à 2025 [@ins-fonction-publique-2021; @ins-fonction-publique-2025].
+
+```{python}
+#| label: fig-salaire-moyen
+#| fig-cap: "Salaire mensuel moyen dans la fonction publique, 2015-2025 (source INS)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import effectifs_fonction_publique as efp
+import figtools
+figtools.figure_tabs(
+    efp.fig_salaire(), efp.salaire_table(), "fonction-publique-salaires-2015-2025",
+    slug="fig_salaire_moyen",
+    caption="Salaire mensuel moyen dans la fonction publique, 2015-2025",
+    note_lecture=(
+        "**Trois notions de salaire**, telles que l'INS les publie : le brut **avec** "
+        "contributions, le brut **sans** contributions et le **net**. La source ne "
+        "définit pas les contributions. Montants en **dinars courants**, non déflatés.\n\n"
+        "**Une série raccordée.** Les années 2015-2017 viennent de l'enquête 2010-2021, "
+        "les années 2018-2025 du rapport 2018-2025, qui fait foi sur les années communes. "
+        "Sur 2018-2020, les deux publications diffèrent d'environ un dinar sur les deux "
+        "bruts ; le net de 2018 passe de 1 130,3 à 1 133,3 dinars, valeur que corrobore "
+        "le taux d'accroissement publié par l'enquête elle-même. Chaque notion n'est "
+        "raccordée qu'à elle-même, et il reste entre 2017 et 2018 une marche d'environ "
+        "un dinar, sans portée sur la lecture. L'onglet Données indique la source de "
+        "chaque ligne."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
+La grille décrite plus haut classe les grades en six catégories selon le niveau de diplôme exigé au recrutement (@tbl-categories-grades). Les deux publications de l'INS permettent de suivre, sur cette même nomenclature, le salaire brut effectivement perçu — mais chacune dans une notion différente. Elles intitulent leurs tableaux « salaire mensuel brut » sans préciser laquelle ; le recoupement la rétablit. Pondérés par les effectifs de chaque catégorie, les montants de l'enquête 2010-2021 redonnent, de proche en proche, le brut **avec** contributions qu'elle publie pour l'ensemble des agents ; ceux du rapport 2018-2025 redonnent le brut **sans** contributions, d'où l'intitulé « brut hors contributions » retenu ci-dessous. Pour des effectifs par catégorie identiques dans les deux publications sur 2018-2020, les montants de la première dépassent ceux de la seconde de 14 à 20 % selon la catégorie et l'année : aucun coefficient ne passe de l'une à l'autre, et les deux séries ne se raccordent pas. Elles sont donc présentées côte à côte, chacune dans sa notion.
 
 ```{python}
 #| label: fig-salaires-categories
-#| fig-cap: "Salaire mensuel brut des fonctionnaires par catégorie statutaire, 2015-2020 (source INS)."
+#| fig-cap: "Salaire mensuel brut hors contributions des fonctionnaires par catégorie statutaire, 2018-2025, et pour mémoire brut avec contributions, 2015-2020 (source INS)."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import salaires_categories as sc
 import figtools
 figtools.figure_tabs(
-    sc.fig_salaires(), sc.salaires_table(), "ins-salaire-par-categorie",
+    sc.fig_salaires(), sc.salaires_table(),
+    "ins-salaire-par-categorie-hors-contributions-2018-2025", "ins-salaire-par-categorie",
     slug="fig_salaires_categories",
-    caption="Salaire mensuel brut des fonctionnaires par catégorie statutaire, 2015-2020",
+    caption=("Salaire mensuel brut hors contributions des fonctionnaires par catégorie "
+             "statutaire, 2018-2025, et pour mémoire brut avec contributions, 2015-2020"),
     note_lecture=(
         "**Les six catégories** sont celles du décret n°99-12, définies par le diplôme "
         "exigé au concours externe (@tbl-categories-grades) : **A1** conception — mastère "
@@ -348,10 +388,21 @@ figtools.figure_tabs(
         "premier cycle de l'enseignement supérieur ; **B** maîtrise — baccalauréat ; "
         "**C** exécution qualifiée ; **D** exécution. Elles ordonnent la grille du haut "
         "vers le bas.\n\n"
-        "La figure montre le **resserrement** de cette hiérarchie : le rapport entre A1 "
-        "et D revient de **2,14 en 2015 à 1,73 en 2020**, non parce que le haut recule, "
-        "mais parce que le bas progresse plus vite — les augmentations générales étant "
-        "servies en **dinars** et non en pourcentage (@tbl-augmentations-montants).\n\n"
+        "**Deux panneaux, deux notions.** Le panneau principal, à droite, donne le "
+        "salaire brut **hors contributions** (rapport 2018-2025) ; celui de gauche, pour "
+        "mémoire, le brut **avec contributions** de l'enquête précédente (2015-2020). "
+        "Leurs niveaux ne se comparent pas : sur les années communes, le second dépasse "
+        "le premier de 14 à 20 % selon la catégorie. Le rapport entre catégories, lui, "
+        "se lit dans chaque panneau.\n\n"
+        "La figure montre le **resserrement** de la hiérarchie, mesuré dans chaque "
+        "notion séparément. Brut avec contributions, le rapport entre A1 et D revient de "
+        "**2,14 en 2015 à 1,73 en 2020** ; brut hors contributions, de **1,92 en 2018 à "
+        "1,67 en 2019**, avant de remonter lentement jusqu'à **1,77 de 2023 à 2025**. "
+        "L'essentiel du resserrement se situe en 2018-2019, non parce que le haut "
+        "recule, mais parce que le bas progresse plus vite — les augmentations générales "
+        "étant servies en **dinars** et non en pourcentage (@tbl-augmentations-montants). "
+        "Aucune des deux séries ne le montre se poursuivre après 2020. L'onglet Données "
+        "donne le rapport A1/D de chaque année, dans chaque notion.\n\n"
         "**Trois réserves.** Ce sont des salaires bruts **constatés**, indemnités "
         "comprises, et non le traitement de base que fixent les décrets. Les montants "
         "sont en **dinars courants**, non déflatés : le rapport entre catégories se lit, "
@@ -362,11 +413,11 @@ figtools.figure_tabs(
 )
 ```
 
-Ces montants sont nominaux. Déflatés par l'indice des prix, ils renversent la lecture.
+Ces montants sont nominaux. Déflatés par l'indice des prix, publié jusqu'en 2024, ils changent la lecture.
 
 ```{python}
 #| label: fig-salaires-categories-reel
-#| fig-cap: "Salaire brut par catégorie statutaire, en dinars constants de 2015 (sources INS et BCT)."
+#| fig-cap: "Salaire brut par catégorie statutaire, en dinars constants de 2015 : hors contributions 2018-2024, et pour mémoire avec contributions 2015-2020 (sources INS et BCT)."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
@@ -374,24 +425,32 @@ from figures import salaires_categories as sc
 import figtools
 figtools.figure_tabs(
     sc.fig_salaires_reel(), sc.salaires_reel_table(),
-    "ins-salaire-par-categorie", "bct-ipc-base2015",
+    "ins-salaire-par-categorie-hors-contributions-2018-2025", "ins-salaire-par-categorie",
+    "bct-ipc-base2015",
     slug="fig_salaires_categories_reel",
-    caption="Salaire mensuel brut par catégorie statutaire, en dinars constants de 2015",
+    caption=("Salaire mensuel brut par catégorie statutaire, en dinars constants de 2015 : "
+             "hors contributions 2018-2024, et pour mémoire avec contributions 2015-2020"),
     note_lecture=(
-        "**La même grille que @fig-salaires-categories, déflatée** — et le sens s'inverse "
-        "pour le haut de l'échelle. En dinars courants toutes les catégories progressent ; "
-        "en pouvoir d'achat, entre 2015 et 2020 :\n\n"
-        "- **A1 : −3,2 %** — la catégorie de conception **perd** du pouvoir d'achat, après "
-        "un creux marqué en 2018 ;\n"
-        "- **A2 +13,6 %**, **A3 +18,4 %**, **D +19,4 %**, **C +25,2 %** ;\n"
-        "- **B : +30,7 %**, la plus forte progression réelle.\n\n"
-        "Le resserrement de la grille n'est donc pas un simple rattrapage nominal du bas : "
-        "c'est un **déclassement réel du haut**, mécanique dès lors que les augmentations "
-        "sont servies en dinars et non en pourcentage (@tbl-augmentations-montants).\n\n"
+        "**La même grille que @fig-salaires-categories, déflatée.** En dinars courants "
+        "toutes les catégories progressent ; en pouvoir d'achat, la série hors "
+        "contributions dessine deux temps :\n\n"
+        "- de **2018 à 2020**, toutes les catégories gagnent, le bas davantage que le "
+        "haut : **D +20,3 %**, A3 +18,4 %, B +17,8 %, A2 +14,3 %, C +13,2 %, "
+        "**A1 +6,6 %** ;\n"
+        "- de **2020 à 2024**, toutes reculent, de **−14,9 % (A1)** à **−18,9 % (C)**.\n\n"
+        "Sur l'ensemble de la période 2018-2024, toutes finissent **sous** leur pouvoir "
+        "d'achat de 2018, de **−1,7 % (D)** à **−9,3 % (A1)**.\n\n"
+        "Le panneau de gauche garde, pour mémoire, la lecture de l'enquête précédente, "
+        "dans la notion avec contributions : entre 2015 et 2020, **A1 −3,2 %** quand "
+        "**B +30,7 %**. Le resserrement de la grille n'y est pas un simple rattrapage "
+        "nominal du bas : c'est un **déclassement réel du haut**, mécanique dès lors que "
+        "les augmentations sont servies en dinars et non en pourcentage "
+        "(@tbl-augmentations-montants).\n\n"
         "**Réserves.** Déflateur : indice des prix à la consommation familiale, base 100 "
         "en 2015, publié par la Banque centrale ; l'année de base vaut 100 **par "
-        "définition**, aucune publication ne la tabulant. Les salaires restent des "
-        "**moyennes** par catégorie, recouvrant des corps hétérogènes."
+        "définition**, aucune publication ne la tabulant. L'indice s'arrête en **2024** : "
+        "la série déflatée s'arrête un an avant la série nominale. Les salaires restent "
+        "des **moyennes** par catégorie, recouvrant des corps hétérogènes."
     ),
     generated="{{< meta date >}}",
 )
@@ -401,7 +460,7 @@ Rapportés à l'emploi total, ces effectifs donnent enfin la mesure du poids de 
 
 ```{python}
 #| label: fig-emploi-public
-#| fig-cap: "Poids de l'emploi public dans la population active occupée, 2015-2021 (sources INS et BCT)."
+#| fig-cap: "Poids de l'emploi public dans la population active occupée, 2015-2024 (sources INS et BCT)."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
@@ -409,16 +468,18 @@ from figures import emploi_public as ep
 import figtools
 figtools.figure_tabs(
     ep.fig_part(), ep.part_table(), "fonction-publique-effectifs",
-    "fonction-publique-categories", "bct-emploi-occupe",
+    "fonction-publique-categories", "fonction-publique-effectifs-2018-2025",
+    "fonction-publique-categories-2018-2025", "bct-emploi-occupe",
     slug="fig_emploi_public",
-    caption="Poids de l'emploi public dans la population active occupée, 2015-2021",
+    caption="Poids de l'emploi public dans la population active occupée, 2015-2024",
     note_lecture=(
         "**Deux numérateurs, et l'écart entre eux est le sujet.** La courbe bleue compte "
         "tous les **agents** de la fonction publique — fonctionnaires, **ouvriers** et "
         "**contractuels** ; la courbe ambrée les seuls **fonctionnaires**, c'est-à-dire "
         "les agents titulaires classés dans les six catégories **A1 à D** du statut "
         "général (@tbl-categories-grades), à l'exclusion des ouvriers et des "
-        "contractuels. Les fonctionnaires forment environ **77 %** des agents.\n\n"
+        "contractuels. Les fonctionnaires forment de 76 à 79 % des agents de 2015 à "
+        "2023, puis **80 %** en 2024.\n\n"
         "Le dénominateur est la **population active occupée** publiée par la Banque "
         "centrale : l'emploi total, salarié **et non salarié**, dans une économie où "
         "l'emploi informel pèse lourd.\n\n"
@@ -427,10 +488,14 @@ figtools.figure_tabs(
         "la population active occupée » : ce chiffre s'obtient avec le numérateur "
         "**large**, quand les fonctionnaires au sens strict donnent 14,6 %. Le mot y est "
         "employé dans son acception large.\n\n"
-        "**Deux réserves de lecture.** Le numérateur exclut les militaires, les agents "
-        "des forces de sécurité intérieure et les magistrats. Et en **2020**, la hausse "
+        "**Trois réserves de lecture.** Le numérateur exclut les militaires, les agents "
+        "des forces de sécurité intérieure et les magistrats. En **2020**, la hausse "
         "du ratio vient du dénominateur, qui recule de 3 566 à 3 433 milliers : aucun "
-        "recrutement n'y correspond."
+        "recrutement n'y correspond ; il en va de même, en moindre ampleur, en 2023 "
+        "(3 500 → 3 416 milliers). Enfin, la population active occupée n'est publiée "
+        "que jusqu'en **2024** : le ratio s'arrête un an avant les effectifs, qui "
+        "proviennent de l'enquête 2010-2021 pour 2015-2017 et du rapport 2018-2025 "
+        "ensuite, les deux concordant sur les années communes."
     ),
     generated="{{< meta date >}}",
 )
@@ -438,11 +503,11 @@ figtools.figure_tabs(
 
 ### La ventilation par ministère et ses limites {#sec-ventilation-ministere}
 
-L'enquête de l'INS sur les agents de la fonction publique [@ins-fonction-publique-2021] propose une ventilation des effectifs par ministère, sur la période 2015-2021, ainsi que des salaires moyens par ministère. Cette ventilation porte sur la fonction publique civile : les agents y sont entièrement répartis dans les catégories statutaires A1 à D, c'est-à-dire selon la grille du statut général, ce qui en fait une statistique du **régime indiciaire**. À ce titre, elle éclaire la répartition des agents indiciaires entre les administrations, mais elle appelle une réserve importante dès lors qu'on s'intéresse à certains ministères.
+L'enquête de l'INS sur les agents de la fonction publique [@ins-fonction-publique-2021] propose une ventilation des effectifs par ministère, sur la période 2015-2021, ainsi que des salaires moyens par ministère ; le rapport qui la prolonge en donne une nouvelle pour 2018-2025 [@ins-fonction-publique-2025]. Cette ventilation porte sur la fonction publique civile : les agents y sont entièrement répartis dans les catégories statutaires A1 à D, c'est-à-dire selon la grille du statut général, ce qui en fait une statistique du **régime indiciaire**. À ce titre, elle éclaire la répartition des agents indiciaires entre les administrations, mais elle appelle une réserve importante dès lors qu'on s'intéresse à certains ministères.
 
 ```{python}
 #| label: fig-ministeres
-#| fig-cap: "Effectifs de la fonction publique par ministère, 2015-2021 (source INS)."
+#| fig-cap: "Effectifs de la fonction publique par ministère, 2015-2021 et 2018-2025 : deux publications non raccordées (source INS)."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
@@ -450,17 +515,25 @@ from figures import ministeres as mi
 import figtools
 figtools.figure_tabs(
     mi.fig_ministeres(), mi.ministeres_table(), "ins-ministere-effectifs",
+    "ins-ministere-effectifs-2018-2025",
     slug="fig_ministeres",
-    caption="Effectifs de la fonction publique par ministère, 2015-2021",
+    caption=("Effectifs de la fonction publique par ministère, 2015-2021 et 2018-2025 : "
+             "deux publications non raccordées"),
     note_lecture=(
-        "Sept courbes seulement sur quatorze entités : l'Éducation pèse 196,7 milliers "
-        "d'agents contre 2,3 à la Présidence du gouvernement, et tracer les quatorze "
-        "écraserait les plus petites sur l'axe. **Les quatorze figurent dans l'onglet "
-        "Données.** La bande grisée signale la **rupture de périmètre** des collectivités "
-        "locales entre 2016 et 2017 : le saut n'y traduit pas un recrutement réel. Enfin, "
-        "la source ne donne qu'**une décimale** de 2015 à 2020 et **trois** en 2021 : les "
-        "très petits mouvements entre ces deux dernières années sont des artefacts "
-        "d'arrondi, non des évolutions."
+        "Sept courbes seulement sur quatorze entités : l'Éducation compte près de 200 "
+        "milliers d'agents, la Présidence du gouvernement moins de 2, et tracer les "
+        "quatorze écraserait les plus petites sur l'axe. **Les quatorze figurent dans "
+        "l'onglet Données**, pour les deux publications.\n\n"
+        "**Les tirets et le trait plein ne se prolongent pas.** Les tirets donnent "
+        "l'enquête 2010-2021, le trait plein le rapport 2018-2025, qui répartit autrement "
+        "le même total : l'écart entre les deux sur 2018-2021, net pour l'Intérieur et "
+        "les autres établissements, est une révision de la source, non une évolution.\n\n"
+        "La bande grisée signale la **rupture de périmètre** des collectivités locales "
+        "entre 2016 et 2017 : le saut n'y traduit pas un recrutement réel ; au-delà, leur "
+        "progression mêle recrutements et extension de la couverture de la base "
+        "administrative. Enfin, l'enquête 2010-2021 ne donne qu'**une décimale** de 2015 "
+        "à 2020 et **trois** en 2021 : les très petits mouvements des tirets entre ces "
+        "deux années sont des artefacts d'arrondi, non des évolutions."
     ),
     generated="{{< meta date >}}",
 )
@@ -468,9 +541,11 @@ figtools.figure_tabs(
 
 Plusieurs ministères emploient en effet, **à côté de leurs agents indiciaires, des corps relevant d'un régime statutaire autonome** : les ministères de la Défense, de l'Intérieur et de la Justice comptent respectivement des militaires, des agents des forces de sécurité intérieure et des magistrats, qui sont régis par des statuts propres et des grilles distinctes de la grille indiciaire (voir [le régime statutaire autonome](_regime_statutaire_autonome.qmd)). Or ces corps n'entrent dans aucune des catégories A1 à D et n'apparaissent donc pas dans cette statistique. Le recoupement le confirme : pour le ministère de la Défense, la somme des agents classés de A1 à D coïncide avec le total des fonctionnaires que l'enquête lui rattache, ce qui établit que la population recensée est celle du personnel civil indiciaire, à l'exclusion des militaires de carrière. Les effectifs ministériels de l'INS recensent ainsi, pour ces ministères, leur personnel civil indiciaire — et non l'ensemble de leurs agents. Ils ne permettent donc pas d'évaluer le poids des corps à statut autonome, dont la documentation chiffrée fait défaut (voir [le régime statutaire autonome](_regime_statutaire_autonome.qmd)).
 
-Une seconde réserve tient à la **construction même de la série**. Les annexes annuelles de l'enquête ne retiennent pas d'une année sur l'autre la même nomenclature ministérielle : celle de 2017 ne compte que douze postes et regroupe la Défense, l'Intérieur et les collectivités locales dans une rubrique « autres ministères », tandis que celle de 2018 désigne les collectivités locales sous le nom de « communes » et que les intitulés composites — agriculture et ressources hydrauliques, équipement et habitat — apparaissent puis disparaissent au gré des remaniements. La série 2015-2021 présentée ici est la **reconstitution que l'INS établit par-dessus ces variations**, et non la juxtaposition des décomptes annuels tels qu'ils ont été publiés. Elle se recoupe avec les annexes partout où les deux se laissent comparer, mais elle ne doit pas être lue comme une suite de relevés homogènes : la ventilation par ministère supporte mal la comparaison fine d'une année à l'autre, et c'est sur les ordres de grandeur et les tendances longues qu'elle est fiable.
+Une seconde réserve tient à la **construction même de la série**. Les annexes annuelles de l'enquête ne retiennent pas d'une année sur l'autre la même nomenclature ministérielle : celle de 2017 ne compte que douze postes et regroupe la Défense, l'Intérieur et les collectivités locales dans une rubrique « autres ministères », tandis que celle de 2018 désigne les collectivités locales sous le nom de « communes » et que les intitulés composites — agriculture et ressources hydrauliques, équipement et habitat — apparaissent puis disparaissent au gré des remaniements. La série 2015-2021 de l'enquête est la **reconstitution que l'INS établit par-dessus ces variations**, et non la juxtaposition des décomptes annuels tels qu'ils ont été publiés. Elle se recoupe avec les annexes partout où les deux se laissent comparer, mais elle ne doit pas être lue comme une suite de relevés homogènes : la ventilation par ministère supporte mal la comparaison fine d'une année à l'autre, et c'est sur les ordres de grandeur et les tendances longues qu'elle est fiable.
 
-Une dernière observation reste **sans explication documentée**. Les effectifs rattachés au ministère de la Défense progressent de près de 35 % entre 2015 et 2018, passant d'environ 63 000 à près de 85 000 agents — une progression corroborée par deux publications distinctes de l'INS, les annexes annuelles et la série d'ensemble [@ins-fonction-publique-2021]. Or le champ de l'enquête exclut les militaires de carrière : cette croissance porte donc sur le personnel **civil** du ministère. Aucune des sources consultées n'en rend compte, et le présent précis ne la commente pas au-delà de ce constat.
+Une troisième réserve interdit de joindre les deux publications. Sur les années qu'elles ont en commun, 2018-2021, le rapport 2018-2025 répartit autrement un total inchangé : environ 9 000 agents que l'enquête rangeait parmi les « autres établissements » y sont rattachés au ministère de l'Intérieur — en 2018, 96 286 agents à l'Intérieur au lieu d'environ 87 300, et 46 892 dans les autres établissements au lieu d'environ 55 600 —, tandis que de moindres déplacements touchent la Présidence du gouvernement, la Justice, les Finances et la Santé [@ins-fonction-publique-2021; @ins-fonction-publique-2025]. La Défense, l'Éducation, l'Agriculture et les collectivités locales concordent. Ce reclassement ressort de la comparaison des deux publications ; aucune ne l'explique. Les deux séries sont donc présentées l'une et l'autre, sans être jointes, et l'évolution d'un ministère ne se lit qu'à l'intérieur de chacune.
+
+Une dernière observation reste **sans explication documentée**. Les effectifs rattachés au ministère de la Défense progressent de près de 35 % entre 2015 et 2018, passant d'environ 63 000 à près de 85 000 agents — une progression corroborée par deux publications distinctes de l'INS, les annexes annuelles et la série d'ensemble [@ins-fonction-publique-2021], et dont le rapport 2018-2025 retrouve le point d'arrivée (84 971 agents en 2018), suivi d'une quasi-stabilité jusqu'en 2025 (87 765 agents) [@ins-fonction-publique-2025]. Or le champ de l'enquête exclut les militaires de carrière : cette croissance porte donc sur le personnel **civil** du ministère. Aucune des sources consultées n'en rend compte, et le présent précis ne la commente pas au-delà de ce constat.
 
 <!-- TODO : construire, si des données ventilées par régime deviennent disponibles, une série propre au régime indiciaire (effectifs, masse salariale). -->
 <!-- TODO (documentaliste) : chercher ce qui explique la hausse des effectifs civils de la Défense entre 2015 et 2018 (+35 %) — rapports d'activité du ministère, lois de finances, transferts de personnel depuis un autre ministère. Réserve écrite en attendant. -->
