@@ -401,6 +401,7 @@ table("pnafn_allocation",
 Portés sur trente ans, ces paliers se lisent autrement : ce qui ressemble à une série est une suite de décisions, dont une seule laisse une trace publiée.
 
 ```{python}
+#| label: fig-pnafn-allocation
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")

@@ -23,8 +23,3 @@ figure.quarto-float figcaption .legende-num {
   color: $primary;
 }
 
-// Une figure en onglets porte son titre dans une sous-figure (« (a) … ») : le script
-// `legendes.html` le reporte dans la légende numérotée, et la sous-légende disparaît.
-figcaption.quarto-subfloat-caption.legende-reportee {
-  display: none;
-}

@@ -395,8 +395,84 @@ def main() -> int:
         print(f"✓ {langue} : {len(fabriques)} tableaux")
     # Chaque série est émise quoi qu'il arrive aux autres, et le code de retour les
     # combine : une série vide ne doit pas en masquer une autre.
-    codes = [serie_actualisation(), serie_taux_liquidation(), serie_smig_planchers()]
+    codes = [
+        serie_avec_liens("rsna-actualisation-salaires", serie_actualisation),
+        serie_avec_liens("retraites-taux-liquidation", serie_taux_liquidation),
+        serie_avec_liens("retraites-smig-planchers", serie_smig_planchers),
+    ]
     return max(codes)
+
+
+# Libellés des liens « Base législative » des figures, par clé notée à la lecture. La série
+# brute n'a pas de langue ; ses liens en ont une, comme ceux des tableaux. Les équivalents
+# arabes des notions sont ceux du glossaire bilingue.
+LIBELLES_SERIES = {
+    "fr": {
+        "actualisation": "Barème d'actualisation des salaires retenus pour le salaire moyen "
+                         "de référence, régime des salariés non agricoles",
+        "cnrps_bareme": "CNRPS — barème des annuités",
+        "cnrps_plafond": "CNRPS — plafond du taux de la pension",
+        "cnrps_duree_minimale": "CNRPS — durée de services minimale",
+        "rsna_bareme": "Régime des salariés non agricoles — barème des annuités",
+        "rsna_plafond": "Régime des salariés non agricoles — plafond du taux de la pension",
+        "rsna_stage": "Régime des salariés non agricoles — stage de cotisation",
+        "rsna_stage_derog": "Régime des salariés non agricoles — stage dérogatoire",
+        "smig_horaire": "SMIG horaire, régime de 48 heures",
+        "cnrps_minimum": "CNRPS — pension minimale garantie, en fraction du SMIG",
+        "cnrps_allocation": "CNRPS — allocation de vieillesse, en fraction du SMIG",
+        "rsna_minimum": "Régime des salariés non agricoles — pension minimale de vieillesse "
+                        "ou d'invalidité, en fraction du SMIG",
+        "rsna_minimum_reduit": "Régime des salariés non agricoles — pension minimale de la "
+                               "retraite anticipée et de la pension proportionnelle, en "
+                               "fraction du SMIG",
+        "rsna_limite": "Régime des salariés non agricoles — limite de calcul des "
+                       "prestations, en multiple du SMIG",
+    },
+    "ar": {
+        "actualisation": "جدول تحيين الأجور المعتمدة في احتساب الأجر المرجعي، "
+                         "نظام الأجراء غير الفلاحيين",
+        "cnrps_bareme": "الصندوق الوطني للتقاعد والحيطة الاجتماعية — "
+                        "جدول نسب السنوات القابلة للتصفية",
+        "cnrps_plafond": "الصندوق الوطني للتقاعد والحيطة الاجتماعية — سقف نسبة تصفية الجراية",
+        "cnrps_duree_minimale": "الصندوق الوطني للتقاعد والحيطة الاجتماعية — "
+                                "المدة الدنيا للخدمات",
+        "rsna_bareme": "نظام الأجراء غير الفلاحيين — جدول نسب السنوات القابلة للتصفية",
+        "rsna_plafond": "نظام الأجراء غير الفلاحيين — سقف نسبة تصفية الجراية",
+        "rsna_stage": "نظام الأجراء غير الفلاحيين — مدة الانخراط الدنيا",
+        "rsna_stage_derog": "نظام الأجراء غير الفلاحيين — مدة الانخراط الدنيا الاستثنائية",
+        "smig_horaire": "الأجر الأدنى المضمون لمختلف المهن بحساب الساعة، نظام 48 ساعة",
+        "cnrps_minimum": "الصندوق الوطني للتقاعد والحيطة الاجتماعية — "
+                         "الجراية الدنيا المضمونة، كسرًا من الأجر الأدنى المضمون",
+        "cnrps_allocation": "الصندوق الوطني للتقاعد والحيطة الاجتماعية — "
+                            "منحة الشيخوخة، كسرًا من الأجر الأدنى المضمون",
+        "rsna_minimum": "نظام الأجراء غير الفلاحيين — الجراية الدنيا للشيخوخة أو العجز، "
+                        "كسرًا من الأجر الأدنى المضمون",
+        "rsna_minimum_reduit": "نظام الأجراء غير الفلاحيين — الجراية الدنيا للتقاعد المبكّر "
+                               "والجراية النسبية، كسرًا من الأجر الأدنى المضمون",
+        "rsna_limite": "نظام الأجراء غير الفلاحيين — الحدّ الأقصى لاحتساب المنافع، "
+                       "مضاعفًا للأجر الأدنى المضمون",
+    },
+}
+
+
+def serie_avec_liens(nom: str, fabrique) -> int:
+    """Émet une série sous relevé, puis ses liens `_seriescache/<nom>.liens.<langue>.yml`.
+
+    Même esprit que `tables/<nom>.liens.yml` : chaque grandeur lue par la série est notée
+    à la lecture (`ot.releve_note(chemin, clé)`), et la figure en tire son onglet « Base
+    législative » sans jamais importer openfisca. Un relevé vide est une erreur : la
+    série aurait été lue sans rien noter, et la figure perdrait ses liens en silence.
+    """
+    code, releve = ot.avec_liens(fabrique)
+    if code:
+        return code
+    if not releve:
+        print(f"✗ {nom} : aucune grandeur relevée, liens non écrits.")
+        return 1
+    for langue in LANGUES:
+        liens = [(chemin, LIBELLES_SERIES[langue][cle]) for chemin, cle in releve]
+        ot.ecrire_fichier_liens(CACHE / f"{nom}.liens.{langue}.yml", liens, langue)
+    return 0
 
 
 def serie_actualisation() -> int:
@@ -408,6 +484,9 @@ def serie_actualisation() -> int:
     puisque des valeurs brutes n'ont pas de langue. Chaque ligne porte l'arrêté qui fixe
     le coefficient et son lien au Journal officiel.
     """
+    # Un lien vers le barème entier, et non un par année : le nœud se lit en un tableau,
+    # une colonne par année de salaires, avec l'arrêté de chaque barème.
+    ot.releve_note(f"{RSNA}/salaire_reference/actualisation", "actualisation")
     lignes = []
     for annee in range(1961, datetime.date.today().year):
         chemin = f"{RSNA}/salaire_reference/actualisation/annee_{annee}.yaml"
@@ -451,6 +530,11 @@ BAREMES = (
     ("rsna", f"{RSNA}/bareme_annuite.yaml", f"{RSNA}/plaf_taux_pension.yaml",
      f"{RSNA}/stage_requis.yaml", f"{RSNA}/stage_derog.yaml"),
 )
+# Clés des libellés de ces chemins (`LIBELLES_SERIES`), dans le même ordre.
+CLES_BAREMES = {
+    "cnrps": ("cnrps_bareme", "cnrps_plafond", "cnrps_duree_minimale", None),
+    "rsna": ("rsna_bareme", "rsna_plafond", "rsna_stage", "rsna_stage_derog"),
+}
 DUREE_MAX_ANNEES = 45
 
 
@@ -493,6 +577,9 @@ def serie_taux_liquidation() -> int:
 
     lignes = []
     for regime, bareme, plafond, minimum, courte in BAREMES:
+        for chemin, cle in zip((bareme, plafond, minimum, courte), CLES_BAREMES[regime]):
+            if chemin:
+                ot.releve_note(chemin, cle)
         donnees = ot.charge_parametre(bareme) or {}
         references = (donnees.get("metadata") or {}).get("reference") or {}
         dates = sorted({ot._date_de_cle(cle) for cle in references})
@@ -538,6 +625,8 @@ FRACTIONS = (
     ("pi_rsna", "minimum_rsna", f"{RSNA}/pension_minimale/sup.yaml"),
     ("pi_rsna_reduit", "minimum_rsna_reduit", f"{RSNA}/pension_minimale/inf.yaml"),
 )
+# Clés des libellés des fractions (`LIBELLES_SERIES`), dans le même ordre.
+CLES_FRACTIONS = ("cnrps_minimum", "cnrps_allocation", "rsna_minimum", "rsna_minimum_reduit")
 SMIG_HORAIRE = f"{MARCHE}/smig_48h_horaire.yaml"
 # Le multiple ℓ de la limite de calcul du RSNA : six SMIG rapportés à 2 400 heures depuis le
 # 1er janvier 1974, trois rédactions de l'article 18 du décret n° 74-499 (1974, 1990, 1994),
@@ -560,6 +649,10 @@ def serie_smig_planchers() -> int:
     """
     import pandas as pd
 
+    ot.releve_note(SMIG_HORAIRE, "smig_horaire")
+    for (_, _, chemin), cle in zip(FRACTIONS, CLES_FRACTIONS):
+        ot.releve_note(chemin, cle)
+    ot.releve_note(LIMITE_MULTIPLE, "rsna_limite")
     smig = ot.serie_datee(SMIG_HORAIRE)
     if not smig:
         print("✗ retraites-smig-planchers : SMIG introuvable, snapshot conservé.")

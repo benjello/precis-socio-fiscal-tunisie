@@ -313,6 +313,7 @@ et ces notes n'ont pas été dépouillées. Le tableau ci-dessus est donc daté 
 ## Ce que rapportent les droits de consommation
 
 ```{python}
+#| label: fig-droits-consommation-rendement
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")

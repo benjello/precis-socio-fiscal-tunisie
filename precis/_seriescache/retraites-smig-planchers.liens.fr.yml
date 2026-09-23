@@ -1,0 +1,21 @@
+- libelle: SMIG horaire, régime de 48 heures
+  parametre: parameters/marche_travail/smig_48h_horaire.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.smig_48h_horaire/table/
+- libelle: CNRPS — pension minimale garantie, en fraction du SMIG
+  parametre: parameters/retraite/cnrps/pension_minimale/minimum_garanti.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.pension_minimale.minimum_garanti/table/
+- libelle: CNRPS — allocation de vieillesse, en fraction du SMIG
+  parametre: parameters/retraite/cnrps/pension_minimale/allocation_vieillesse.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.pension_minimale.allocation_vieillesse/table/
+- libelle: Régime des salariés non agricoles — pension minimale de vieillesse ou d'invalidité,
+    en fraction du SMIG
+  parametre: parameters/retraite/rsna/pension_minimale/sup.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.pension_minimale.sup/table/
+- libelle: Régime des salariés non agricoles — pension minimale de la retraite anticipée
+    et de la pension proportionnelle, en fraction du SMIG
+  parametre: parameters/retraite/rsna/pension_minimale/inf.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.pension_minimale.inf/table/
+- libelle: Régime des salariés non agricoles — limite de calcul des prestations, en
+    multiple du SMIG
+  parametre: parameters/retraite/rsna/salaire_reference/limite_multiple_smig.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.salaire_reference.limite_multiple_smig/table/
