@@ -65,6 +65,12 @@ CHAMPS = {
     "title-short": "shortTitle",
     "DOI": "DOI",
     "URL": "url",
+    # Provenance d'un document tiré des archives du web : `URL` porte la capture,
+    # `archive_location` l'adresse d'origine. Le rapport et le livre ont ces champs ;
+    # la page web et le texte législatif ne les ont pas, d'où leur place dans
+    # VARIABLES_EXTRA ci-dessous.
+    "archive": "archive",
+    "archive_location": "archiveLocation",
 }
 
 ALIAS = {
@@ -84,8 +90,10 @@ ALIAS = {
 # mais PAS pour le rapport — et le Manuel de liquidation de la CNRPS, 149 pages, est un
 # rapport. Sans cet échappement, une seule entrée faisait échouer la conversion ENTIÈRE,
 # et donc le rapatriement des 119 références absentes de Zotero.
+# `archive` et `archive_location` suivent le même chemin pour la page web, qui ne les a
+# pas : sans cela, la provenance d'une page disparue se perdait en silence à l'envoi.
 VARIABLES_EXTRA = ("issue", "authority", "event-date", "collection-title", "genre",
-                   "number-of-pages")
+                   "number-of-pages", "archive", "archive_location")
 
 
 def champs_du_type(type_zotero: str, schema: dict) -> set[str]:
@@ -129,6 +137,7 @@ def csl_vers_zotero(entree: dict, schema: dict) -> dict:
 
     item = {"itemType": type_zotero}
     extra_variables = []
+    natifs = set()  # variables déjà logées dans un champ propre : pas de doublon en Extra
 
     for csl_var, champ in CHAMPS.items():
         if csl_var not in entree:
@@ -136,6 +145,7 @@ def csl_vers_zotero(entree: dict, schema: dict) -> dict:
         cible = alias.get(champ, champ)
         if cible in disponibles:
             item[cible] = str(entree[csl_var])
+            natifs.add(csl_var)
         elif csl_var in VARIABLES_EXTRA:
             extra_variables.append(f"{csl_var}: {entree[csl_var]}")
         else:
@@ -145,6 +155,8 @@ def csl_vers_zotero(entree: dict, schema: dict) -> dict:
             )
 
     for csl_var in VARIABLES_EXTRA:
+        if csl_var in natifs:
+            continue
         if csl_var in entree and not any(v.startswith(f"{csl_var}:") for v in extra_variables):
             valeur = entree[csl_var]
             if csl_var.endswith("date") and isinstance(valeur, dict):
@@ -155,6 +167,11 @@ def csl_vers_zotero(entree: dict, schema: dict) -> dict:
         champ_date = alias.get("date", "date")
         if champ_date in disponibles:
             item[champ_date] = date_csl_vers_zotero(entree["issued"])
+
+    # Date de consultation : `accessDate` existe pour tous les types visés. Elle était
+    # perdue à l'envoi (cnss-chiffres), et c'est elle qui date la lecture d'une capture.
+    if "accessed" in entree and "accessDate" in disponibles:
+        item["accessDate"] = date_csl_vers_zotero(entree["accessed"])
 
     if "author" in entree:
         item["creators"] = [
@@ -171,9 +188,16 @@ def csl_vers_zotero(entree: dict, schema: dict) -> dict:
     note = (entree.get("note") or "").strip()
     if note:
         # La note locale porte déjà « citation-key: … » en première ligne : on ne la
-        # duplique pas.
-        note = "\n".join(l for l in note.splitlines()
-                         if not l.lower().startswith("citation-key:")).strip()
+        # duplique pas. Idem des variables que l'on vient d'écrire en Extra : la descente
+        # verse l'Extra dans `note`, et sans ce filtre chaque aller-retour ajoutait une
+        # ligne `issue:` (ou `archive_location:`) de plus.
+        emises = {v.split(":", 1)[0] for v in extra_variables}
+        note = "\n".join(
+            l for l in note.splitlines()
+            if not l.lower().startswith("citation-key:")
+            and not (re.match(r"^([A-Za-z_-]+):", l)
+                     and re.match(r"^([A-Za-z_-]+):", l).group(1) in emises)
+        ).strip()
     if note:
         lignes_extra.append(note)
     item["extra"] = "\n".join(lignes_extra)
@@ -198,10 +222,15 @@ def zotero_vers_csl(item: dict, schema: dict) -> dict:
         date = date_zotero_vers_csl(item[champ_date])
         if date:
             entree["issued"] = date
+    if item.get("accessDate"):
+        # Zotero peut rendre un horodatage complet (« 2026-09-22T00:00:00Z »).
+        date = date_zotero_vers_csl(item["accessDate"][:10])
+        if date:
+            entree["accessed"] = date
 
     lignes, note = [], []
     for ligne in (item.get("extra") or "").splitlines():
-        m = re.match(r"^([A-Za-z-]+):\s*(.+)$", ligne)
+        m = re.match(r"^([A-Za-z_-]+):\s*(.+)$", ligne)
         if m and m.group(1) == "citation-key":
             entree["id"] = m.group(2).strip()
         elif m and m.group(1) in VARIABLES_EXTRA:

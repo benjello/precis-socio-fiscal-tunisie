@@ -128,8 +128,10 @@ def build_citation_key_map(group_id, api_key):
 # mais PAS pour le rapport — et le Manuel de liquidation de la CNRPS, 149 pages, est un
 # rapport. Sans cet échappement, une seule entrée faisait échouer la conversion ENTIÈRE,
 # et donc le rapatriement des 119 références absentes de Zotero.
+# `archive` et `archive_location` : provenance d'une page tirée des archives du web, que
+# le type « page web » de Zotero ne sait pas porter (voir push_biblio.py).
 VARIABLES_EXTRA = ("issue", "authority", "event-date", "collection-title", "genre",
-                   "number-of-pages")
+                   "number-of-pages", "archive", "archive_location")
 
 
 def parse_date_extra(texte):
@@ -148,7 +150,7 @@ def build_extra_map(group_id, api_key):
     for item in items:
         variables = {}
         for ligne in (item.get("data", {}).get("extra", "") or "").splitlines():
-            m = re.match(r"^([A-Za-z-]+):\s*(.+)$", ligne)
+            m = re.match(r"^([A-Za-z_-]+):\s*(.+)$", ligne)
             if m and m.group(1) in VARIABLES_EXTRA:
                 valeur = m.group(2).strip()
                 variables[m.group(1)] = (
@@ -165,7 +167,7 @@ ARABE = re.compile(r"[\u0600-\u06FF]")
 # Le reste — URL, dates, pages, numéro de fascicule — est identique dans les deux
 # langues et doit suivre la source canonique.
 CHAMPS_TRADUITS = ("title", "title-short", "container-title", "publisher",
-                   "publisher-place", "authority", "author", "editor")
+                   "publisher-place", "authority", "author", "editor", "archive")
 
 # Le JORT paraît en deux éditions, et pist.tn les sert sous deux chemins qui ne diffèrent
 # que par une lettre de répertoire et un préfixe de fichier, les chiffres étant identiques :

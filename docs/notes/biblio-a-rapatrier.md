@@ -1883,3 +1883,40 @@ suivante, `csl_vers_zotero` retire les lignes `citation-key:` de la note mais **
 `issue:` de plus, sur 96 entrées. *Établi par lecture du code (`apply_extra_variables`,
 `csl_vers_zotero`), non par un aller-retour réel — aucune écriture Zotero n'a été faite.*
 Correctif suggéré : dédupliquer `issue:` comme `citation-key:` l'est déjà.
+
+### Documents tirés des archives du web — convention et audit (22/09/2026)
+
+Convention : `.claude/agents/bibliographe.md`, section « Documents tirés des archives du web ».
+Champs `archive`, `archive_location`, `accessed` ; `push_biblio.py --verifier` : 403 entrées, 0 perte
+(la perte `cnss-chiffres/accessed` est corrigée du même coup).
+
+- [x] `eset2016` (fiscalité, FR et AR) : convention appliquée ; capture 20170109185021 vérifiée au CDX
+  et consultée le 22/09/2026 ; domaine `eset.com.tn` inexistant. **Non cité** dans le livre.
+- [ ] **Après fusion de `feat/retraites-pension-salaire`** (entrées absentes de `master`) :
+  `cnrps-guides-rapports`, `ins-portail-2006-salaires-prive`, `ins-portail-2009-salaires-prive`
+  (fichier `retraites`, FR et AR). Pour chacune : `URL` passe en `https://web.archive.org/web/…` ;
+  `archive` = libellé de la langue du fichier ; `archive_location` = ce qui suit l'horodatage dans
+  l'URL ; `accessed` = la date de consultation déjà portée par la note (21/09/2026 pour la CNRPS,
+  22/09/2026 pour l'INS) ; une phrase de motif ajoutée à la note. Captures vérifiées au CDX le
+  22/09/2026 : 20150106002250 (guide 2000-2010), 20190214182033 (guide 2010-2014),
+  20220709151214, 20220709102723, 20220709000059, 20220709005355 (rapports 2016, 2017, 2018, 2020),
+  20061129142926 et 20061129142343 (INS, FR), 20090713025533 (INS, AR).
+- [ ] `fmi-1996-red`, `fmi-1997-selected-issues` : **hors convention** (page de l'éditeur servie aux
+  lecteurs, 403 aux seuls robots) ; URL de l'éditeur conservée, capture citée en note.
+- [ ] `cnrps-manuel-liquidation-2013` : **provenance non établie**. Aucune capture sur `cnrps.nat.tn`
+  (CDX du domaine, avec et sans filtre de type) ; copie locale seulement. Pas d'URL tant que la
+  source n'est pas retrouvée.
+- [ ] À pousser dans Zotero, **sur feu vert** et une fois les scripts sur `master` : `corriger
+  eset2016` (déjà dans Zotero : absent des 40 « à créer » du dry-run du 22/09/2026) et `corriger
+  cnss-chiffres` (son `accessed` n'avait jamais atteint Zotero), puis les trois entrées retraites
+  une fois fusionnées. Vérifier par `comparer` que l'API accepte `accessDate` au format
+  `AAAA-MM-JJ` et que l'export csljson rend `archive_location` et `accessed`.
+- [x] Le défaut « une ligne `issue:` de plus à chaque cycle » décrit plus haut (passe du 16/09/2026)
+  est corrigé dans `csl_vers_zotero` : les lignes de la note déjà émises en Extra sont retirées
+  (95 entrées dédoublonnées au prochain `corriger`/`pousser`).
+- [ ] Limite connue : la phrase arabe ajoutée à la `note` des fichiers AR sera **écrasée** par la
+  prochaine descente (`note` n'est pas dans `CHAMPS_TRADUITS`, et Zotero porte la note française).
+  Le libellé visible `archive`, lui, est préservé (ajouté à `CHAMPS_TRADUITS`).
+- [ ] Signalé à tunisia-data (non modifié) : `sources/cnrps-urls.csv` note `20220708232111` pour
+  `ra_2016`, `ra_2017`, `ra_2019`, `ra_2020` ; ce n'est pas une capture mais l'horodatage demandé,
+  que la Wayback redirige vers 20220709151214, 20220709102723, 20220709061458 et 20220709005355.

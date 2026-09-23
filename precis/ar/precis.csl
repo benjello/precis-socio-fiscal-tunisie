@@ -4,8 +4,16 @@
     <title>Précis socio-fiscal tunisien</title>
     <id>https://github.com/benjello/precis-socio-fiscal-tunisie/precis.csl</id>
     <category citation-format="author-date"/>
-    <updated>2026-09-19T00:00:00+00:00</updated>
+    <updated>2026-09-22T00:00:00+00:00</updated>
   </info>
+  <!-- Terme propre au précis, décliné par langue : le même style sert les deux éditions,
+       et CSL n'a pas de terme standard pour « adresse d'origine ». -->
+  <locale xml:lang="fr">
+    <terms><term name="archive-original">adresse d’origine</term></terms>
+  </locale>
+  <locale xml:lang="ar">
+    <terms><term name="archive-original">العنوان الأصلي</term></terms>
+  </locale>
   <macro name="designation">
     <choose>
       <!-- Une forme courte explicite prime TOUJOURS, quel que soit le type : elle a été
@@ -42,6 +50,15 @@
         <text variable="page" prefix="p. "/>
       </group>
       <text variable="URL" prefix=" "/>
+      <!-- Document tiré des archives du web : `URL` est la capture ; on dit où elle a été
+           prise et quelle était l'adresse d'origine. Rien ne s'affiche sans `archive`. -->
+      <group prefix=" [" suffix="]" delimiter=", ">
+        <text variable="archive"/>
+        <group delimiter=" : ">
+          <text term="archive-original"/>
+          <text variable="archive_location"/>
+        </group>
+      </group>
     </layout>
   </bibliography>
 </style>
