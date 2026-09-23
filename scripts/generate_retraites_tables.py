@@ -566,12 +566,11 @@ def serie_taux_liquidation() -> int:
 
     Une ligne par (régime, barème, durée en années entières de 0 à 45). Le barème est lu
     à sa date d'effet, en trimestres ; le taux est plafonné par le plafond EN VIGUEUR À
-    CETTE DATE s'il en existe un, et reste celui du barème sinon — c'est le cas du barème
-    de 1959, dont le plafond de 60 % n'a pas de valeur datée : la figure le dit.
+    CETTE DATE s'il en existe un, et reste celui du barème sinon. Depuis la version 0.107
+    d'openfisca-tunisia, le barème de 1959 est daté du 1er avril 1959, date à laquelle le
+    plafond de 60 % existe : sa courbe plafonne donc à 60 % dès trente annuités.
 
-    L'année seule du barème est émise, et non sa date : celle du barème de 1959 est la
-    date de signature de la loi n° 59-18, quand le chapitre retient partout le 1er avril
-    1959 (voir `ages` plus haut, qui écarte la même date pour la même raison).
+    L'année seule du barème est émise, et non sa date.
     """
     import pandas as pd
 
