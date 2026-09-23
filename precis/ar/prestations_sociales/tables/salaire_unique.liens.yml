@@ -1,0 +1,9 @@
+- libelle: طفل واحد متكفَّل به
+  parametre: parameters/prestations/contributives/prestations_familiales/salaire_unique/enf1.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.salaire_unique.enf1/table/
+- libelle: طفلان متكفَّل بهما
+  parametre: parameters/prestations/contributives/prestations_familiales/salaire_unique/enf2.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.salaire_unique.enf2/table/
+- libelle: ثلاثة أطفال متكفَّل بهم أو أكثر
+  parametre: parameters/prestations/contributives/prestations_familiales/salaire_unique/enf3.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.salaire_unique.enf3/table/

@@ -1,0 +1,51 @@
+- libelle: huiles brutes de pétrole ou de minéraux bitumineux
+  parametre: parameters/fiscalite_indirecte/accises/produits_petroliers/huiles_brutes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.accises.produits_petroliers.huiles_brutes/table/
+- libelle: essence super
+  parametre: parameters/fiscalite_indirecte/accises/produits_petroliers/essence_super.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.accises.produits_petroliers.essence_super/table/
+- libelle: essence super sans plomb
+  parametre: parameters/fiscalite_indirecte/accises/produits_petroliers/essence_super_sans_plomb.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.accises.produits_petroliers.essence_super_sans_plomb/table/
+- libelle: essence normale
+  parametre: parameters/fiscalite_indirecte/accises/produits_petroliers/essence_normale.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.accises.produits_petroliers.essence_normale/table/
+- libelle: essence avion (kérosène, y compris carburéacteur)
+  parametre: parameters/fiscalite_indirecte/accises/produits_petroliers/essence_avion.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.accises.produits_petroliers.essence_avion/table/
+- libelle: white spirit non dénaturé
+  parametre: parameters/fiscalite_indirecte/accises/produits_petroliers/white_spirit.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.accises.produits_petroliers.white_spirit/table/
+- libelle: pétrole lampant
+  parametre: parameters/fiscalite_indirecte/accises/produits_petroliers/petrole_lampant.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.accises.produits_petroliers.petrole_lampant/table/
+- libelle: gaz-oil
+  parametre: parameters/fiscalite_indirecte/accises/produits_petroliers/gaz_oil.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.accises.produits_petroliers.gaz_oil/table/
+- libelle: fuel-oil domestique
+  parametre: parameters/fiscalite_indirecte/accises/produits_petroliers/fuel_oil_domestique.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.accises.produits_petroliers.fuel_oil_domestique/table/
+- libelle: fuel-oil léger
+  parametre: parameters/fiscalite_indirecte/accises/produits_petroliers/fuel_oil_leger.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.accises.produits_petroliers.fuel_oil_leger/table/
+- libelle: fuel-oil lourd
+  parametre: parameters/fiscalite_indirecte/accises/produits_petroliers/fuel_oil_lourd.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.accises.produits_petroliers.fuel_oil_lourd/table/
+- libelle: huiles de graissage et lubrifiants
+  parametre: parameters/fiscalite_indirecte/accises/produits_petroliers/huiles_graissage_lubrifiants.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.accises.produits_petroliers.huiles_graissage_lubrifiants/table/
+- libelle: huiles de vaseline et de paraffine
+  parametre: parameters/fiscalite_indirecte/accises/produits_petroliers/huiles_vaseline_paraffine.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.accises.produits_petroliers.huiles_vaseline_paraffine/table/
+- libelle: autres
+  parametre: parameters/fiscalite_indirecte/accises/produits_petroliers/autres_position_27_10.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.accises.produits_petroliers.autres_position_27_10/table/
+- libelle: propane et butane
+  parametre: parameters/fiscalite_indirecte/accises/produits_petroliers/propane_butane.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.accises.produits_petroliers.propane_butane/table/
+- libelle: propane et butane, bouteilles ≤ 13 kg
+  parametre: parameters/fiscalite_indirecte/accises/produits_petroliers/propane_butane_bouteilles_13kg_ou_moins.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.accises.produits_petroliers.propane_butane_bouteilles_13kg_ou_moins/table/
+- libelle: propane et butane, en vrac ou bouteilles > 13 kg
+  parametre: parameters/fiscalite_indirecte/accises/produits_petroliers/propane_butane_vrac_ou_bouteilles_plus_13kg.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.accises.produits_petroliers.propane_butane_vrac_ou_bouteilles_plus_13kg/table/

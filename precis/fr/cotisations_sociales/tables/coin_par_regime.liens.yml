@@ -1,0 +1,33 @@
+- libelle: Salariés non agricoles — Part salariale
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsna/cotisations_salarie
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsna.cotisations_salarie/table/
+- libelle: Salariés non agricoles — Part patronale
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsna/cotisations_employeur
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsna.cotisations_employeur/table/
+- libelle: Salariés agricoles — Part salariale
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsa/cotisations_salarie
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsa.cotisations_salarie/table/
+- libelle: Salariés agricoles — Part patronale
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsa/cotisations_employeur
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsa.cotisations_employeur/table/
+- libelle: Salariés agricoles, régime amélioré — Part salariale
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsaa/cotisations_salarie
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsaa.cotisations_salarie/table/
+- libelle: Salariés agricoles, régime amélioré — Part patronale
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsaa/cotisations_employeur
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsaa.cotisations_employeur/table/
+- libelle: Travailleurs non salariés — Part salariale
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtns/cotisations_salarie
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtns.cotisations_salarie/table/
+- libelle: Artistes, créateurs et intellectuels — Part salariale
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/raci/cotisations_salarie
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.raci.cotisations_salarie/table/
+- libelle: Travailleurs à faibles revenus — Part salariale
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtfr/cotisations_salarie
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtfr.cotisations_salarie/table/
+- libelle: Travailleurs à faibles revenus — Part patronale
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtfr/cotisations_employeur
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtfr.cotisations_employeur/table/
+- libelle: Tunisiens à l'étranger — Part salariale
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtte/cotisations_salarie
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtte.cotisations_salarie/table/

@@ -1,0 +1,15 @@
+- libelle: Supplément mensuel
+  parametre: parameters/prestations/non_contributives/amen_social/supplements/enfant_a_charge.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.non_contributives.amen_social.supplements.enfant_a_charge/table/
+- libelle: Carte de handicap
+  parametre: parameters/prestations/non_contributives/amen_social/supplements/handicap.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.non_contributives.amen_social.supplements.handicap/table/
+- libelle: Âge minimal
+  parametre: parameters/prestations/non_contributives/amen_social/supplements/age_min_enfant.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.non_contributives.amen_social.supplements.age_min_enfant/table/
+- libelle: Âge maximal
+  parametre: parameters/prestations/non_contributives/amen_social/supplements/limite_age_enfant.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.non_contributives.amen_social.supplements.limite_age_enfant/table/
+- libelle: Âge maximal en études, apprentissage ou formation
+  parametre: parameters/prestations/non_contributives/amen_social/supplements/limite_age_etudiant.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.non_contributives.amen_social.supplements.limite_age_etudiant/table/

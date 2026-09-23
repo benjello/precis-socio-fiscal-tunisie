@@ -1,0 +1,21 @@
+- libelle: Taux, 1^er^ rang
+  parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf1.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.af.taux.enf1/table/
+- libelle: Taux, 2^e^ rang
+  parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf2.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.af.taux.enf2/table/
+- libelle: Taux, 3^e^ rang
+  parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf3.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.af.taux.enf3/table/
+- libelle: Taux, 4^e^ rang
+  parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf4.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.af.taux.enf4/table/
+- libelle: Assiette trimestrielle, plancher
+  parametre: parameters/prestations/contributives/prestations_familiales/af/plancher_trim.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.af.plancher_trim/table/
+- libelle: Assiette trimestrielle, plafond
+  parametre: parameters/prestations/contributives/prestations_familiales/af/plaf_trim.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.af.plaf_trim/table/
+- libelle: Rangs servis
+  parametre: parameters/prestations/contributives/prestations_familiales/af/nb_enfants_max.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.af.nb_enfants_max/table/

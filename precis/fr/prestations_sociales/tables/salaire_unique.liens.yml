@@ -1,0 +1,9 @@
+- libelle: Un enfant à charge
+  parametre: parameters/prestations/contributives/prestations_familiales/salaire_unique/enf1.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.salaire_unique.enf1/table/
+- libelle: Deux enfants à charge
+  parametre: parameters/prestations/contributives/prestations_familiales/salaire_unique/enf2.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.salaire_unique.enf2/table/
+- libelle: Trois enfants à charge ou plus
+  parametre: parameters/prestations/contributives/prestations_familiales/salaire_unique/enf3.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.salaire_unique.enf3/table/

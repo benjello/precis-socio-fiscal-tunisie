@@ -1,0 +1,12 @@
+- libelle: التقاعد — الحصة الأجيرية
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtfr/cotisations_salarie/retraite.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtfr.cotisations_salarie.retraite/table/
+- libelle: التقاعد — الحصة المشغِّلة
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtfr/cotisations_employeur/retraite.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtfr.cotisations_employeur.retraite/table/
+- libelle: العلاج — الحصة الأجيرية
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtfr/cotisations_salarie/soin.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtfr.cotisations_salarie.soin/table/
+- libelle: العلاج — الحصة المشغِّلة
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtfr/cotisations_employeur/soin.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtfr.cotisations_employeur.soin/table/

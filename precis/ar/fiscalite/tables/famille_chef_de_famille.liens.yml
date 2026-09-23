@@ -1,0 +1,15 @@
+- libelle: الطرح
+  parametre: parameters/impot_revenu/deductions/famille/chef_de_famille.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.deductions.famille.chef_de_famille/table/
+- libelle: الطفل الأوّل
+  parametre: parameters/impot_revenu/deductions/famille/enf1.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.deductions.famille.enf1/table/
+- libelle: الطفل الرابع
+  parametre: parameters/impot_revenu/deductions/famille/enf4.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.deductions.famille.enf4/table/
+- libelle: الطفل المعوق
+  parametre: parameters/impot_revenu/deductions/famille/infirme.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.deductions.famille.infirme/table/
+- libelle: الوالد المتكفَّل به
+  parametre: parameters/impot_revenu/deductions/famille/parent_max.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.deductions.famille.parent_max/table/

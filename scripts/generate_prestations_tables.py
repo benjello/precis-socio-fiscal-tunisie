@@ -47,6 +47,10 @@ MOTS = {
         "parametre": "Paramètre", "valeur": "Valeur",
         "rang1": "1^er^", "rang2": "2^e^", "rang3": "3^e^", "rang4": "4^e^",
         "assiette": "Assiette trimestrielle", "rangs_servis": "Rangs servis",
+        # Libellés des liens vers la base législative, où l'en-tête seul ne dit rien.
+        "taux_rang": "Taux, {rang} rang",
+        "assiette_plancher": "Assiette trimestrielle, plancher",
+        "assiette_plafond": "Assiette trimestrielle, plafond",
         "su1": "Un enfant à charge", "su2": "Deux enfants à charge",
         "su3": "Trois enfants à charge ou plus",
         "creche_montant": "Montant, par enfant et par mois",
@@ -74,6 +78,9 @@ MOTS = {
         "parametre": "المعيار", "valeur": "القيمة",
         "rang1": "الأوّل", "rang2": "الثاني", "rang3": "الثالث", "rang4": "الرابع",
         "assiette": "الوعاء الثلاثي", "rangs_servis": "الترتيبات المصروفة",
+        "taux_rang": "النسبة، الترتيب {rang}",
+        "assiette_plancher": "الوعاء الثلاثي، الحدّ الأدنى",
+        "assiette_plafond": "الوعاء الثلاثي، السقف",
         "su1": "طفل واحد متكفَّل به", "su2": "طفلان متكفَّل بهما",
         "su3": "ثلاثة أطفال متكفَّل بهم أو أكثر",
         "creche_montant": "المبلغ عن كلّ طفل وكلّ شهر",
@@ -242,6 +249,13 @@ def tableaux(langue):
             cles=CLES_AF, langue=langue,
             colonne_periode=m["effet"], colonne_texte=m["texte"],
         )
+        # Les en-têtes de rang et les colonnes provisoires ne nomment pas seuls la
+        # grandeur : le lien vers la base législative reçoit un libellé explicite.
+        for i in (1, 2, 3, 4):
+            ot.releve_note(f"{AF}/af/taux/enf{i}.yaml",
+                           m["taux_rang"].format(rang=m[f"rang{i}"]))
+        ot.releve_note(f"{AF}/af/plancher_trim.yaml", m["assiette_plancher"])
+        ot.releve_note(f"{AF}/af/plaf_trim.yaml", m["assiette_plafond"])
         if df is None:
             return None
         # Plancher et plafond décrivent une seule chose — la bande d'assiette — et se
@@ -351,11 +365,11 @@ def main() -> int:
         sortie = RACINE / langue / "prestations_sociales" / "tables"
         sortie.mkdir(parents=True, exist_ok=True)
         for nom, fabrique in tableaux(langue).items():
-            df = fabrique()
+            df, liens = ot.avec_liens(fabrique)
             if df is None or df.empty:
                 print(f"✗ {langue}/{nom} : paramètre introuvable ou vide.")
                 return 1
-            (sortie / nom).write_text(ot.tableau_vers_markdown(df), encoding="utf-8")
+            ot.ecrire_tableau(sortie / nom, df, liens, langue)
         print(f"✓ {langue} : {len(tableaux(langue))} tableaux")
 
     # La figure du PNAFN a besoin des mêmes paliers, mais en valeurs BRUTES : un tableau
