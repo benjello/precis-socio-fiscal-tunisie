@@ -584,15 +584,23 @@ $$
 \tau^* = \frac{N_p\,\bar p}{N_c\,\bar w} = \frac{\bar p}{\bar w}\times\frac{N_p}{N_c}
 $$
 
-où $\tau^*$ est le taux d'équilibre, $N_p$ le nombre de pensionnés, $\bar p$ la pension moyenne, $N_c$ le nombre de cotisants et $\bar w$ leur salaire moyen ; $\bar p / \bar w$ est le taux de remplacement apparent, et $N_p / N_c$ le rapport entre pensionnés et cotisants. Le calcul diffère de celui du secteur public sur trois points.
+où $\tau^*$ est le taux d'équilibre, $N_p$ le nombre de pensionnés, $\bar p$ la pension moyenne, $N_c$ le nombre de cotisants et $\bar w$ leur salaire moyen ; $\bar p / \bar w$ est le taux de remplacement apparent, et $N_p / N_c$ le rapport entre pensionnés et cotisants. De 2000 à 2017, le calcul diffère de celui du secteur public sur trois points.
 
 - **La masse des salaires est lue directement.** Les annuaires statistiques de la caisse publient chaque année la masse salariale déclarée par les employeurs au régime : elle n'a à être ni déduite des cotisations ni approchée par une autre masse [@cnss-annuaires-statistiques].
 - **Le numérateur ne comprend que les pensions du régime légal.** Les pensions servies sont celles du régime des salariés non agricoles, de toutes natures, orphelins compris, **hors régime complémentaire** : celui-ci, facultatif, est assis sur la seule tranche de salaire au-delà de la limite de calcul (@sec-regime-complementaire). Les effectifs ne permettent pas la même séparation : $N_p$ compte les pensionnés de toutes natures, orphelins et bénéficiaires du régime complémentaire compris, et les cotisants $N_c$ sont les actifs du régime, y compris les non-assujettis que les annuaires comptent à part [@cnss-annuaires-statistiques]. Avec les pensions du régime complémentaire, le taux d'équilibre serait de 14,43 % en 2000 et de 18,88 % en 2017, soit 0,4 à 0,9 point de plus selon les années.
 - **Le taux légal de la branche se lit de deux façons.** Il est la somme d'une cotisation propre de 5,25 % des salaires depuis 1997 [@decret97-555] et d'une quote-part de la masse des cotisations des régimes de la loi n° 60-30, de « 6,25/20ème » depuis le 1^er^ janvier 1994, puis de « 7,25/20ème » depuis le 1^er^ janvier 2003 [@decret94-1429, art. 1-2 ; @decret2003-1212, art. 1-2]. Exprimée en vingtièmes, cette fraction date d'un temps où le taux global de la loi n° 60-30 était de 20 % : un vingtième valait alors un point de salaire. Depuis que la loi n° 97-4 a ramené ce taux global à 18 % [@loi97-4], les deux lectures divergent. Lue « en points », la quote-part donne à la branche un taux légal de 11,50 % de 2000 à 2002 et de 12,50 % depuis 2003 ; c'est la lecture de la caisse, qui publie un taux de 12,5 % en renvoyant au décret n° 2003-1212 [@cnss-annuaires-statistiques]. Lue littéralement, comme une fraction des 18 %, elle donne 10,875 % puis 11,775 %. Pour 2000-2002, aucun document de la caisse consulté ne publie ce taux : le chiffre de 11,50 % est déduit du texte par la même lecture. La figure porte les deux lectures.
 
+Pour 1980 et 1985-1991, l'annexe statistique d'un rapport de la Banque mondiale, qui reprend des données du ministère du Plan, donne les pensions versées, les cotisations de pension, les actifs et les pensionnés [@bm-1993-social-protection, annexe statistique, tableaux 3 et 5]. Aucune donnée n'a été retrouvée pour 1981-1984 ni pour 1992-1999, et ces années ne sont pas raccordées à la série de la caisse, dont elles diffèrent par le champ et par le dénominateur. Le champ est celui de la [CAVIS](#g-cavis), qui servait les pensions de tout le secteur privé : le régime des salariés non agricoles et les régimes conventionnels fusionnés avec lui, puis le régime des salariés agricoles à compter de 1981 [@loi81-6] et, à la fin des années 1980, d'autres régimes, dont celui des Tunisiens à l'étranger [@decret89-107, art. 2] ; le rapport ne les distingue pas. La CAVIS gérait aussi le régime complémentaire (@sec-regime-complementaire) : le rapport ne dit pas si ses pensions et ses cotisations sont comprises dans les montants. La masse des salaires n'est pas publiée ; elle se déduit des cotisations, comme pour le secteur public (@sec-cnrps-equilibre) :
+
+$$
+N_c\,\bar w = \frac{C}{\kappa}
+$$
+
+où $C$ est le montant des cotisations de pension de l'année et $\kappa$ le taux légal de la branche pensions du régime des salariés non agricoles. Ce taux est la somme de la cotisation propre du régime, de 3,75 % [@decret74-499, art. 9], et d'une quote-part de « 1,25/20ème » de la masse des cotisations des régimes de la loi n° 60-30 [@decret74-499, art. 5 b], portée à « 4,25 %/20ème » à compter du 1^er^ janvier 1988 [@decret88-1137, art. 1 et 2]. Le taux global de ces régimes était alors de 20 %, 15 % à la charge de l'employeur et 5 % à celle du travailleur [@loi60-30, art. 41] ; la majoration patronale de 0,5 point décidée pour 1975 alimente un fonds de l'État et n'entre pas dans cette masse [@loi74-101-lf1975, art. 57 et 58]. Un vingtième valant alors un point, les deux lectures coïncident : $\kappa = 5\,\%$ jusqu'en 1987 et $\kappa = 8\,\%$ de 1988 à 1991. Le rapport publie ces 8 % pour 1991, dont 4,25 points versés par la caisse nationale à la CAVIS [@bm-1993-social-protection, annexe statistique, tableau 6]. Les autres régimes cotisaient à d'autres taux — 5,25 % pour les salariés agricoles, sur un salaire forfaitaire [@decret81-224, art. 1] — : la masse ainsi obtenue est une masse « au taux des salariés non agricoles », non une masse déclarée.
+
 ```{python}
 #| label: fig-rsna-taux-equilibre
-#| fig-cap: "Régime des salariés non agricoles : taux de cotisation d'équilibre et taux légal de la branche pensions, 2000-2017."
+#| fig-cap: "Régime des salariés non agricoles : taux de cotisation d'équilibre et taux légal de la branche pensions, 1980-2017."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
@@ -601,9 +609,16 @@ import figtools
 figtools.figure_tabs(
     ter.fig_taux(), ter.table(), "cnss-rsna-taux-equilibre",
     slug="fig_rsna_taux_equilibre",
-    caption="Régime des salariés non agricoles : taux de cotisation d'équilibre et taux légal de la branche pensions, 2000-2017",
+    caption="Régime des salariés non agricoles : taux de cotisation d'équilibre et taux légal de la branche pensions, 1980-2017",
     note_lecture=(
-        "**Le « Taux d'équilibre (pensions ÷ masse salariale déclarée) » passe de 14,05 % "
+        "**Pour l'ensemble des régimes gérés par la CAVIS, le taux d'équilibre passe de 3,2 % "
+        "en 1980 et 6,0 % en 1985 à 8,7 % en 1987, pour un taux légal de 5 % ; porté à 8 % "
+        "au 1er janvier 1988, le taux légal le rejoint : le taux d'équilibre est de 8,6 % en "
+        "1988 et de 7,9 % en 1991.** L'écart passe de +3,7 points en 1987 à −0,1 point en 1991. "
+        "Ces années, marquées de triangles creux, portent sur un champ plus large que la suite "
+        "et viennent d'une autre source ; elles ne lui sont pas raccordées, et le fond hachuré "
+        "signale les années 1992-1999, pour lesquelles aucune donnée n'a été retrouvée. "
+        "**Le « Taux d'équilibre (pensions ÷ masse salariale déclarée) » passe ensuite de 14,05 % "
         "des salaires déclarés en 2000 à 17,99 % en 2017.** Il monte jusqu'en 2005 (16,38 %), reste entre 15,7 % et 16,4 % de "
         "2005 à 2013, puis remonte à 18,10 % en 2016. Avec les pensions du régime "
         "complémentaire (« Taux d'équilibre, avec le régime complémentaire », trait fin), "
@@ -622,9 +637,11 @@ figtools.figure_tabs(
 
 La hausse tient à la démographie du régime. Le nombre de pensionnés rapporté au nombre de cotisants passe de 28,0 % en 2000 à 32,8 % en 2008, 37,6 % en 2013 et 45,3 % en 2017. Le taux de remplacement apparent recule dans le même temps de 50,1 % à 39,7 % : à peu près stable jusqu'en 2011, où il vaut encore 48,6 %, il baisse ensuite, à 42,5 % en 2013. Le taux d'équilibre étant le produit des deux, leurs mouvements se compensent en partie : de 2000 à 2017, le rapport entre pensionnés et cotisants est multiplié par 1,62, le remplacement apparent par 0,79, et le taux d'équilibre par 1,28. En logarithme, la hausse de 0,247 du taux d'équilibre se décompose en + 0,480 pour le rapport entre pensionnés et cotisants et − 0,233 pour le remplacement apparent ; la contribution du remplacement est presque nulle de 2000 à 2008 (− 0,012), et vaut − 0,220 de 2008 à 2017.
 
+De 1985 à 1991, pour l'ensemble des régimes gérés par la CAVIS, le rapport entre pensionnés et cotisants passe de 13,7 % à 20,5 %, et le remplacement apparent de 43,9 % à 38,8 %. En logarithme, la hausse de 0,277 du taux d'équilibre se décompose en + 0,401 pour le rapport entre pensionnés et cotisants et − 0,124 pour le remplacement apparent. En 1980, le rapport entre pensionnés et cotisants est de 8,7 % : 32 420 pensionnés pour 372 850 actifs.
+
 ```{python}
 #| label: fig-rsna-taux-equilibre-decomposition
-#| fig-cap: "Régime des salariés non agricoles : décomposition du taux d'équilibre, indices base 100 en 2000, 2000-2017."
+#| fig-cap: "Régime des salariés non agricoles : décomposition du taux d'équilibre, en indices, 1980-2017."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
@@ -633,12 +650,18 @@ import figtools
 figtools.figure_tabs(
     ter.fig_decomposition(), ter.table_indices(), "cnss-rsna-taux-equilibre",
     slug="fig_rsna_taux_equilibre_decomposition",
-    caption="Régime des salariés non agricoles : décomposition du taux d'équilibre, indices base 100 en 2000, 2000-2017",
+    caption="Régime des salariés non agricoles : décomposition du taux d'équilibre, en indices, 1980-2017",
     note_lecture=(
         "**Le taux d'équilibre est le produit du taux de remplacement apparent et du "
         "rapport entre pensionnés et cotisants.** Sur une échelle logarithmique, la courbe "
         "du taux d'équilibre se situe, par rapport à la ligne 100, à une hauteur égale à "
-        "la somme des hauteurs des deux autres : les indices se multiplient. En 2008, "
+        "la somme des hauteurs des deux autres : les indices se multiplient. Les deux "
+        "périodes sont tracées dans deux panneaux, chacune sur sa propre base : 100 en 1985 "
+        "pour la CAVIS en 1980 et 1985-1991, 100 en 2000 pour le régime des salariés non "
+        "agricoles en 2000-2017. Un indice commun ferait lire le passage de 1991 à 2000 comme "
+        "une évolution mesurée, alors que ni le champ ni la source ne sont les mêmes. En "
+        "1991, les indices du taux d'équilibre, du rapport entre pensionnés et cotisants et "
+        "du remplacement apparent valent 132, 149 et 88 ; en 1980, 53, 63 et 84. En 2008, "
         "l'indice du taux d'équilibre vaut 115,5, celui du rapport « Pensionnés ÷ "
         "cotisants » 117,0, celui du « Taux de remplacement apparent (pension moyenne ÷ "
         "salaire moyen) » 98,8. En 2017, ils valent 128,0, 161,5 et 79,2 : "
@@ -661,14 +684,16 @@ Ces chiffres sont calculés à partir des annuaires statistiques de la caisse [@
 - **La limite de calcul abaisse le remplacement apparent.** Les pensions sont calculées sur des salaires retenus dans la limite de six fois le SMIG, alors que la masse déclarée n'est pas plafonnée : le taux de remplacement apparent en est abaissé d'autant que des salaires dépassent cette limite.
 - **La série rompt en 2003.** Le nombre d'employeurs du régime baisse de 12,3 % en 2003, du fait du changement de régime des professionnels du transport — taxis et louages — par le décret n° 2002-3018 [@decret-2002-3018] ; le nombre de salariés déclarés, lui, continue de croître.
 - **Les effectifs sont des stocks de fin d'année, les montants des flux annuels.** Lorsque le nombre de pensionnés augmente fortement, comme en 2012 et en 2016, la pension moyenne de l'année en est sous-estimée.
-- **Le taux légal a deux lectures**, exposées plus haut ; l'écart entre le taux d'équilibre et le taux légal en dépend, de 0,6 à 0,7 point selon les années.
-- **La série commence en 2000 et s'arrête en 2017.** Les annuaires statistiques de la caisse postérieurs à 2017 n'ont pas été retrouvés, et ses autres publications consultées ne donnent pas la masse salariale déclarée du régime.
+- **Le taux légal a deux lectures**, exposées plus haut ; l'écart entre le taux d'équilibre et le taux légal en dépend, de 0,6 à 0,7 point selon les années de 2000 à 2017. De 1980 à 1991, les deux lectures coïncident.
+- **De 1980 à 1991, le champ et le dénominateur diffèrent.** Les pensions, les cotisations et les effectifs sont ceux de tous les régimes gérés par la CAVIS, non du seul régime des salariés non agricoles, et la masse des salaires est déduite des cotisations au taux de ce régime [@bm-1993-social-protection]. De 1988 à 1991, ce taux est le plus élevé des régimes : la masse est sous-estimée et le taux d'équilibre est un maximum pour l'ensemble. De 1981 à 1987, les salariés agricoles cotisent à 5,25 % contre 5 % : l'erreur est de sens inverse et faible. Le rapport entre les pensions et les cotisations de la CAVIS ne dépend, lui, d'aucun taux : il passe de 1,20 en 1985 à 1,75 en 1987, puis de 1,07 en 1988 à 0,99 en 1991. Rapportées à la part du taux global qui revenait à la caisse nationale, 18,75 % jusqu'en 1987 puis 15,75 %, les autres cotisations de celle-ci donnent une seconde masse des salaires, que la première dépasse de 3 % à 21 % selon les années, sans rupture en 1988 : la date et le niveau de la quote-part sont cohérents avec les montants encaissés. Rien n'établit, enfin, si les montants comprennent ou non le régime complémentaire, que gérait aussi la CAVIS : ses pensions et ses cotisations entreraient au numérateur comme au dénominateur, et le sens de l'erreur n'est pas connu.
+- **La série de la caisse commence en 2000 et s'arrête en 2017.** Les annuaires statistiques de la caisse postérieurs à 2017 n'ont pas été retrouvés, et ses autres publications consultées ne donnent pas la masse salariale déclarée du régime.
 
 Le taux d'équilibre est enfin une grandeur instantanée, qui rapporte les seules pensions aux seuls salaires déclarés : il ne tient compte ni des réserves du régime ni de ses autres ressources.
 
-<!-- TODO (documentaliste) : rechercher les annuaires statistiques de la CNSS de 2018 à 2024
-(domaines cnss.tn, cnss.nat.tn, www.cnss.nat.tn, archives du web) pour prolonger la série au-delà
-de 2017. -->
+<!-- TODO (documentaliste) : aucun annuaire statistique de la CNSS postérieur à 2017 n'existe en
+ligne ni dans les archives du web (recherche complète du 23 septembre 2026, consignée dans la fiche
+sources/cnss-annuaires.md de tunisia-data). Pistes restantes pour prolonger la série au-delà de
+2017 : demande d'accès à l'information auprès de la CNSS ; éditions imprimées. -->
 
 ## Les salariés agricoles {#sec-agricoles}
 
@@ -886,6 +911,8 @@ Les formules du chapitre emploient une notation unique, qui reprend celle du cha
 | $\bar p$ | pension moyenne | @sec-rsna-equilibre |
 | $N_c$ | nombre de cotisants, c'est-à-dire d'actifs, non-assujettis compris | @sec-rsna-equilibre |
 | $\bar w$ | salaire moyen des cotisants | @sec-rsna-equilibre |
+| $C$ | cotisations de pension de l'année | @sec-rsna-equilibre |
+| $\kappa$ | taux légal de la branche pensions du régime des salariés non agricoles | @sec-rsna-equilibre |
 
 : Notations du chapitre, dans l'ordre de leur introduction {#tbl-cnss-notations}
 

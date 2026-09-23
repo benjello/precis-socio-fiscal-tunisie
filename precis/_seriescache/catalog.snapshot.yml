@@ -563,87 +563,88 @@
     homogène, avec son entrée du catalogue, et l''inventaire indicateur → source →
     série homogène est dans docs/croissances-revenus-prix.md, section « Séries homogènes
     sous-jacentes ». Elle sert à comparer au barème d''actualisation des salaires
-    des pensions, qui n''est pas ici (il vient d''openfisca-tunisia, comme le SMIG).
-    Chaque taux vient d''une seule série, édition ou rapport ; les années où la mesure
-    change sont omises (salariés 2004-2005 : recensement) ou marquées (2011 : passage
-    de l''enquête de mai à la moyenne des trimestres ; 1970 : raccord des bases de
-    l''indice des prix). La rémunération hors État par salarié hors fonction publique
-    retranche la seule masse salariale de l''État (les entreprises publiques restent
-    dedans) et s''appuie sur la part des salariés MODÉLISÉE par le BIT. BRUT ET SUPERBRUT
-    : les salaires et traitements bruts (D.11) excluent les charges sociales des employeurs
-    que la rémunération des salariés (D.1) comprend ; ils ne commencent qu''en 2002,
-    UNdata ne les portant pas. Le ministère des finances ne publie pas sa masse salariale
-    hors contributions patronales : les indicateurs bruts « hors » retranchent donc
-    l''administration centrale des comptes de la nation (État et établissements publics
-    à compétence nationale, hôpitaux compris), lue dans la même édition, et non la
-    masse salariale du ministère ; leur pendant superbrut sur ce périmètre est fourni
-    pour la comparaison. PIB NOMINAL, RUPTURES DE BASE CORRIGÉES : la série de la
-    Banque mondiale (WDI NY.GDP.MKTP.CN) accole les bases des comptes de l''INS sans
-    les raccorder, d''où « +20,33 % » en 1997 (1996 en base 1983, 1997 en base 1997)
-    et « +12,72 % » en 2010 (2009 en base 1997, 2010 dans une valeur rétropolée, 2010-2014
-    plus hauts de 4,9 à 5,5 % que la base 1997 des éditions INS). Le taux vient donc
-    de la Banque mondiale de 1962 à 1992 seulement ; de 1993 à 2001, d''UNdata (données
-    INS transmises à l''ONU, tableau 4.1, compte de production), dans la plus récente
-    série SCN qui porte l''année et la précédente (1993-1997 : série 30, base 1983
-    ; 1998-2001 : série 100, base 1997) ; de 2002 à 2025, des éditions INS des comptes
-    de la nation, la plus récente qui porte l''année et la précédente (2002-2005 :
-    base 1983 ; 2006-2015 : base 1997 ; 2016-2025 : base 2015 ; 2025 provisoire).
-    1997 passe à +9,61 %, 2010 à +7,46 % ; la colonne `note` donne le taux d''origine.
-    DEUX INDICATEURS « TELS QUE PUBLIÉS » : « PIB nominal, Banque mondiale (WDI, tel
-    que publié) » et « PIB nominal par habitant, Banque mondiale (WDI, tel que publié)
-    » donnent, pour comparaison, les taux de la série de la Banque mondiale sur 1962-2025
-    sans aucune correction ; ils contiennent les ruptures de base de 1997 et 2010
-    et ne doivent pas servir de mesure de la croissance ces années-là. Les révisions
-    entre éditions déplacent aussi d''autres années de quelques dixièmes (2025 : +7,38
-    % au lieu de +7,86 %, la Banque mondiale portant pour 2025 un niveau que l''édition
-    2021-2025 n''imprime pas). Avant 1993, les bases de la série de la Banque mondiale
-    n''ont pas été vérifiées sur une source de même base. Le PIB par habitant divise
-    le taux du PIB par la croissance de la population, seule à venir de la Banque
-    mondiale (SP.POP.TOTL) avec la part des salariés. SALAIRES DÉCLARÉS À LA CNSS,
-    DEUX MESURES QUI NE SE RACCORDENT PAS : le taux de l''INS (2008-2025) suit un
-    PANEL de salariés permanents, déclarés sans interruption sur cinq trimestres,
-    avec le quatrième trimestre ajusté pour les primes et les évolutions individuelles
-    hors de [-5 % ; +10 %] exclues : c''est la progression du salaire de ceux qui
-    restent en place, qui ignore les effets d''entrée, de sortie et de composition,
-    contrairement à un salaire moyen ; son taux annuel chaîne les quatre taux trimestriels
-    (quatrième trimestre sur quatrième trimestre), définition que les taux annuels
-    publiés par l''INS en 2010-2021 confirment à 0,22 point près, et chaque trimestre
-    est pris dans l''édition la plus récente (valeurs révisées, 2025 provisoire).
-    Le salaire annuel moyen de la Banque mondiale (1995-2000) est une moyenne sur
-    TOUS les salariés déclarés dans l''année, années incomplètes et temps partiel
-    compris : son niveau est inutilisable (moins que le SMIG), seule sa croissance,
-    imprimée par le rapport, l''est. PÉRIODE T1 2001 - T1 2007, PREMIER PORTAIL DE
-    L''INS (www.ins.nat.tn, indicateur 0402040, pages mises à jour le 06/10/2006 et
-    le 30/06/2009, seules captures des archives du web) : (a) ces pages ne nomment
-    pas la CNSS (« Source : Institut National de la Statistique (INS) ») : l''appui
-    sur les salaires déclarés à la CNSS pour 2001-2006 est DÉDUIT de la continuité
-    de l''indicateur (même code, mêmes valeurs que le BMS sur T2 2007 - T1 2009, redressement
-    de 2009 compris), non affirmé par la source ; (b) la méthode de la période ancienne
-    n''est pas documentée : le panel de salariés permanents et les seuils viennent
-    du guide de 2026 et ne peuvent être remontés à 2001 ; le libellé de 2006 dit «
-    salaire moyen » ; (c) on ignore si l''indicateur commence en 2001 ou si l''affichage
-    était tronqué ; (d) aucune autre version archivée (recherche CDX sur le code 0402040
-    et les familles de pages conjoncturelles) ; les URL d''origine ne répondent plus.
-    T2 2006 vaut 1,69 dans la mise à jour de 2006, 1,45 dans celle de 2009, retenue
-    ; T1 2007 (1,11) n''est dans aucun BMS en ligne. SALAIRES DES ANNÉES 1960 À 2007,
-    SOURCES ANCIENNES, AUCUNE RACCORDÉE À UNE AUTRE : chaque taux est pris entre deux
-    années d''un même rapport. MASSE DÉCLARÉE À LA CNSS (BCT) : tous les salariés
-    déclarés, sa croissance mêle salaires et affiliation ; RUPTURE D''ASSIETTE EN
-    1961, le plafond de 500 D par an et par salarié en deçà duquel les salaires étaient
-    déclarés jusqu''en 1960 étant supprimé (1960 : Caisse centrale des prestations
-    sociales) ; le RA 1969 imprime des taux (14,1 % et 14,8 %) que ses niveaux contredisent
-    (14,48 % et 14,34 %), taux des niveaux retenus ; 1965 et 1970 révisés par le rapport
-    suivant ; pas de taux en 1962, 1972 et 1973 (rubrique absente des RA 1962, 1972
-    et 1973) ni après 1975. SALAIRE MOYEN DÉCLARÉ (BCT) : l''effectif change quatre
-    fois de libellé, et de définition en 1971 (moyenne trimestrielle des effectifs
-    déclarés) ; c''est le salaire moyen d''une population qui s''élargit, non celui
-    d''une carrière. SALAIRE MOYEN HORS AGRICULTURE ET HORS ADMINISTRATION : deux
-    millésimes des données du Plan, Banque mondiale 1995 (salariés estimés et lissés
-    ; en 1992 et 1993, masse imprimée supérieure de 0,3 et 3,7 MD à ses composantes)
-    et FMI 97/57 (années discontinues, 1994 provisoire), divergents dès 1986, non
-    raccordés. SECTEURS PRODUCTIFS NON AGRICOLES (BCT, 1999-2007) : taux imprimés
-    seuls, les niveaux étant révisés d''un rapport à l''autre ; taux de 2006 imprimé
-    par le RA 2007 ; les rapports ne disent ni la source ni la méthode.'
+    des pensions, qui n''est pas ici (il est fixé par arrêté et publié au Journal
+    officiel, comme le SMIG). Chaque taux vient d''une seule série, édition ou rapport
+    ; les années où la mesure change sont omises (salariés 2004-2005 : recensement)
+    ou marquées (2011 : passage de l''enquête de mai à la moyenne des trimestres ;
+    1970 : raccord des bases de l''indice des prix). La rémunération hors État par
+    salarié hors fonction publique retranche la seule masse salariale de l''État (les
+    entreprises publiques restent dedans) et s''appuie sur la part des salariés MODÉLISÉE
+    par le BIT. BRUT ET SUPERBRUT : les salaires et traitements bruts (D.11) excluent
+    les charges sociales des employeurs que la rémunération des salariés (D.1) comprend
+    ; ils ne commencent qu''en 2002, UNdata ne les portant pas. Le ministère des finances
+    ne publie pas sa masse salariale hors contributions patronales : les indicateurs
+    bruts « hors » retranchent donc l''administration centrale des comptes de la nation
+    (État et établissements publics à compétence nationale, hôpitaux compris), lue
+    dans la même édition, et non la masse salariale du ministère ; leur pendant superbrut
+    sur ce périmètre est fourni pour la comparaison. PIB NOMINAL, RUPTURES DE BASE
+    CORRIGÉES : la série de la Banque mondiale (WDI NY.GDP.MKTP.CN) accole les bases
+    des comptes de l''INS sans les raccorder, d''où « +20,33 % » en 1997 (1996 en
+    base 1983, 1997 en base 1997) et « +12,72 % » en 2010 (2009 en base 1997, 2010
+    dans une valeur rétropolée, 2010-2014 plus hauts de 4,9 à 5,5 % que la base 1997
+    des éditions INS). Le taux vient donc de la Banque mondiale de 1962 à 1992 seulement
+    ; de 1993 à 2001, d''UNdata (données INS transmises à l''ONU, tableau 4.1, compte
+    de production), dans la plus récente série SCN qui porte l''année et la précédente
+    (1993-1997 : série 30, base 1983 ; 1998-2001 : série 100, base 1997) ; de 2002
+    à 2025, des éditions INS des comptes de la nation, la plus récente qui porte l''année
+    et la précédente (2002-2005 : base 1983 ; 2006-2015 : base 1997 ; 2016-2025 :
+    base 2015 ; 2025 provisoire). 1997 passe à +9,61 %, 2010 à +7,46 % ; la colonne
+    `note` donne le taux d''origine. DEUX INDICATEURS « TELS QUE PUBLIÉS » : « PIB
+    nominal, Banque mondiale (WDI, tel que publié) » et « PIB nominal par habitant,
+    Banque mondiale (WDI, tel que publié) » donnent, pour comparaison, les taux de
+    la série de la Banque mondiale sur 1962-2025 sans aucune correction ; ils contiennent
+    les ruptures de base de 1997 et 2010 et ne doivent pas servir de mesure de la
+    croissance ces années-là. Les révisions entre éditions déplacent aussi d''autres
+    années de quelques dixièmes (2025 : +7,38 % au lieu de +7,86 %, la Banque mondiale
+    portant pour 2025 un niveau que l''édition 2021-2025 n''imprime pas). Avant 1993,
+    les bases de la série de la Banque mondiale n''ont pas été vérifiées sur une source
+    de même base. Le PIB par habitant divise le taux du PIB par la croissance de la
+    population, seule à venir de la Banque mondiale (SP.POP.TOTL) avec la part des
+    salariés. SALAIRES DÉCLARÉS À LA CNSS, DEUX MESURES QUI NE SE RACCORDENT PAS :
+    le taux de l''INS (2008-2025) suit un PANEL de salariés permanents, déclarés sans
+    interruption sur cinq trimestres, avec le quatrième trimestre ajusté pour les
+    primes et les évolutions individuelles hors de [-5 % ; +10 %] exclues : c''est
+    la progression du salaire de ceux qui restent en place, qui ignore les effets
+    d''entrée, de sortie et de composition, contrairement à un salaire moyen ; son
+    taux annuel chaîne les quatre taux trimestriels (quatrième trimestre sur quatrième
+    trimestre), définition que les taux annuels publiés par l''INS en 2010-2021 confirment
+    à 0,22 point près, et chaque trimestre est pris dans l''édition la plus récente
+    (valeurs révisées, 2025 provisoire). Le salaire annuel moyen de la Banque mondiale
+    (1995-2000) est une moyenne sur TOUS les salariés déclarés dans l''année, années
+    incomplètes et temps partiel compris : son niveau est inutilisable (moins que
+    le SMIG), seule sa croissance, imprimée par le rapport, l''est. PÉRIODE T1 2001
+    - T1 2007, PREMIER PORTAIL DE L''INS (www.ins.nat.tn, indicateur 0402040, pages
+    mises à jour le 06/10/2006 et le 30/06/2009, seules captures des archives du web)
+    : (a) ces pages ne nomment pas la CNSS (« Source : Institut National de la Statistique
+    (INS) ») : l''appui sur les salaires déclarés à la CNSS pour 2001-2006 est DÉDUIT
+    de la continuité de l''indicateur (même code, mêmes valeurs que le BMS sur T2
+    2007 - T1 2009, redressement de 2009 compris), non affirmé par la source ; (b)
+    la méthode de la période ancienne n''est pas documentée : le panel de salariés
+    permanents et les seuils viennent du guide de 2026 et ne peuvent être remontés
+    à 2001 ; le libellé de 2006 dit « salaire moyen » ; (c) on ignore si l''indicateur
+    commence en 2001 ou si l''affichage était tronqué ; (d) aucune autre version archivée
+    (recherche CDX sur le code 0402040 et les familles de pages conjoncturelles) ;
+    les URL d''origine ne répondent plus. T2 2006 vaut 1,69 dans la mise à jour de
+    2006, 1,45 dans celle de 2009, retenue ; T1 2007 (1,11) n''est dans aucun BMS
+    en ligne. SALAIRES DES ANNÉES 1960 À 2007, SOURCES ANCIENNES, AUCUNE RACCORDÉE
+    À UNE AUTRE : chaque taux est pris entre deux années d''un même rapport. MASSE
+    DÉCLARÉE À LA CNSS (BCT) : tous les salariés déclarés, sa croissance mêle salaires
+    et affiliation ; RUPTURE D''ASSIETTE EN 1961, le plafond de 500 D par an et par
+    salarié en deçà duquel les salaires étaient déclarés jusqu''en 1960 étant supprimé
+    (1960 : Caisse centrale des prestations sociales) ; le RA 1969 imprime des taux
+    (14,1 % et 14,8 %) que ses niveaux contredisent (14,48 % et 14,34 %), taux des
+    niveaux retenus ; 1965 et 1970 révisés par le rapport suivant ; pas de taux en
+    1962, 1972 et 1973 (rubrique absente des RA 1962, 1972 et 1973) ni après 1975.
+    SALAIRE MOYEN DÉCLARÉ (BCT) : l''effectif change quatre fois de libellé, et de
+    définition en 1971 (moyenne trimestrielle des effectifs déclarés) ; c''est le
+    salaire moyen d''une population qui s''élargit, non celui d''une carrière. SALAIRE
+    MOYEN HORS AGRICULTURE ET HORS ADMINISTRATION : deux millésimes des données du
+    Plan, Banque mondiale 1995 (salariés estimés et lissés ; en 1992 et 1993, masse
+    imprimée supérieure de 0,3 et 3,7 MD à ses composantes) et FMI 97/57 (années discontinues,
+    1994 provisoire), divergents dès 1986, non raccordés. SECTEURS PRODUCTIFS NON
+    AGRICOLES (BCT, 1999-2007) : taux imprimés seuls, les niveaux étant révisés d''un
+    rapport à l''autre ; taux de 2006 imprimé par le RA 2007 ; les rapports ne disent
+    ni la source ni la méthode.'
   titre_ar: النموّ السنوي للأسعار وللدخل الوطني ولمداخيل العمل، 1963-2025
   unite_ar: '% سنوياً'
   perimetre_ar: 'ثلاثة وعشرون مؤشراً: الأسعار، الناتج المحلي الإجمالي الاسمي (مصحَّحاً،
@@ -661,29 +662,29 @@
   caveats_ar: 'سلسلة مركّبة مشتقّة: لكلّ مصدر من مصادرها سلسلة متجانسة خاصّة به ومدخل
     في الفهرس، وجرد المؤشرات ومصادرها وسلاسلها المتجانسة في docs/croissances-revenus-prix.md
     (قسم «السلاسل المتجانسة»). وهي للمقارنة مع جدول تحيين الأجور في حساب الجرايات،
-    وهو غير موجود هنا (مصدره openfisca-tunisia، مثل الأجر الأدنى). تُحسب كلّ نسبة
-    من سلسلة أو إصدار أو تقرير واحد، وتُحذف السنوات التي يتغيّر فيها القيس أو يُشار
-    إليها. الناتج المحلي الإجمالي الاسمي: تصل سلسلة البنك الدولي بين سنوات أساس مختلفة
-    للحسابات القومية دون ربطها، فتُظهر +20,33 % سنة 1997 (1996 بأساس 1983 و1997 بأساس
-    1997) و+12,72 % سنة 2010 (2009 بأساس 1997 و2010 بقيمة مُعاد تقديرها). لذلك لا
-    تؤخذ النسبة من البنك الدولي إلا من 1962 إلى 1992؛ ومن 1993 إلى 2001 من قاعدة بيانات
-    الأمم المتحدة (معطيات المعهد الوطني للإحصاء، سلسلة واحدة لكلّ نسبة)؛ ومن 2002
-    إلى 2025 من إصدارات الحسابات القومية للمعهد، أحدث إصدار يتضمّن السنة والسنة السابقة.
-    فتصبح نسبة 1997 +9,61 % ونسبة 2010 +7,46 %. ويُضاف مؤشران «كما نُشرا»: الناتج
-    المحلي الإجمالي الاسمي والناتج للفرد حسب البنك الدولي دون أيّ تصحيح (1962-2025)،
-    للمقارنة فقط، وفيهما انقطاعا الأساس سنتي 1997 و2010. الناتج للفرد: نموّ الناتج
-    مقسوماً على نموّ السكان (البنك الدولي). الأجور والمرتّبات الخامّ لا تشمل الأعباء
-    الاجتماعية على المؤجّرين، ولا تتوفّر قبل 2002. لا تنشر وزارة المالية كتلة الأجور
-    دون المساهمات المحمولة على المؤجّر، فتُطرح الإدارة المركزية كما في الحسابات القومية،
-    من الإصدار نفسه. الأجور المصرّح بها لدى الصندوق الوطني للضمان الاجتماعي: قيسان
-    لا يُربطان. نسبة المعهد الوطني للإحصاء (2008-2025) تتبع عيّنة قارّة من الأجراء
-    المصرّح بهم دون انقطاع طيلة خمسة ثلاثيات، فهي تطوّر أجر من يبقون في مواطن شغلهم
-    لا تطوّر معدّل الأجر؛ ونسبتها السنوية جداء النسب الثلاثية الأربع، وهو ما تؤكّده
-    النسب السنوية المنشورة. أمّا معدّل الأجر السنوي لدى البنك الدولي (1995-2000) فمحسوب
-    على كلّ المصرّح بهم بما في ذلك السنوات غير الكاملة، فلا يُستعمل مستواه بل نموّه
-    فقط. الفترة من الثلاثي الأول 2001 إلى الثلاثي الأول 2007، البوابة الأولى للمعهد
-    (www.ins.nat.tn، المؤشر 0402040، صفحتان حُيّنتا في 06/10/2006 و30/06/2009، وهما
-    النسختان الوحيدتان في أرشيف الواب): (أ) لا تذكر هاتان الصفحتان الصندوق الوطني
+    وهو غير موجود هنا (يُضبط بقرار ويُنشر بالرائد الرسمي، مثل الأجر الأدنى). تُحسب
+    كلّ نسبة من سلسلة أو إصدار أو تقرير واحد، وتُحذف السنوات التي يتغيّر فيها القيس
+    أو يُشار إليها. الناتج المحلي الإجمالي الاسمي: تصل سلسلة البنك الدولي بين سنوات
+    أساس مختلفة للحسابات القومية دون ربطها، فتُظهر +20,33 % سنة 1997 (1996 بأساس 1983
+    و1997 بأساس 1997) و+12,72 % سنة 2010 (2009 بأساس 1997 و2010 بقيمة مُعاد تقديرها).
+    لذلك لا تؤخذ النسبة من البنك الدولي إلا من 1962 إلى 1992؛ ومن 1993 إلى 2001 من
+    قاعدة بيانات الأمم المتحدة (معطيات المعهد الوطني للإحصاء، سلسلة واحدة لكلّ نسبة)؛
+    ومن 2002 إلى 2025 من إصدارات الحسابات القومية للمعهد، أحدث إصدار يتضمّن السنة
+    والسنة السابقة. فتصبح نسبة 1997 +9,61 % ونسبة 2010 +7,46 %. ويُضاف مؤشران «كما
+    نُشرا»: الناتج المحلي الإجمالي الاسمي والناتج للفرد حسب البنك الدولي دون أيّ تصحيح
+    (1962-2025)، للمقارنة فقط، وفيهما انقطاعا الأساس سنتي 1997 و2010. الناتج للفرد:
+    نموّ الناتج مقسوماً على نموّ السكان (البنك الدولي). الأجور والمرتّبات الخامّ لا
+    تشمل الأعباء الاجتماعية على المؤجّرين، ولا تتوفّر قبل 2002. لا تنشر وزارة المالية
+    كتلة الأجور دون المساهمات المحمولة على المؤجّر، فتُطرح الإدارة المركزية كما في
+    الحسابات القومية، من الإصدار نفسه. الأجور المصرّح بها لدى الصندوق الوطني للضمان
+    الاجتماعي: قيسان لا يُربطان. نسبة المعهد الوطني للإحصاء (2008-2025) تتبع عيّنة
+    قارّة من الأجراء المصرّح بهم دون انقطاع طيلة خمسة ثلاثيات، فهي تطوّر أجر من يبقون
+    في مواطن شغلهم لا تطوّر معدّل الأجر؛ ونسبتها السنوية جداء النسب الثلاثية الأربع،
+    وهو ما تؤكّده النسب السنوية المنشورة. أمّا معدّل الأجر السنوي لدى البنك الدولي
+    (1995-2000) فمحسوب على كلّ المصرّح بهم بما في ذلك السنوات غير الكاملة، فلا يُستعمل
+    مستواه بل نموّه فقط. الفترة من الثلاثي الأول 2001 إلى الثلاثي الأول 2007، البوابة
+    الأولى للمعهد (www.ins.nat.tn، المؤشر 0402040، صفحتان حُيّنتا في 06/10/2006 و30/06/2009،
+    وهما النسختان الوحيدتان في أرشيف الواب): (أ) لا تذكر هاتان الصفحتان الصندوق الوطني
     للضمان الاجتماعي («المصدر: المعهد الوطني للإحصاء»)، فاستناد سنوات 2001-2006 إلى
     الأجور المصرّح بها لدى الصندوق مستنتَج من استمرارية المؤشر (الرمز نفسه والقيم
     نفسها في النشرية الشهرية من الثلاثي الثاني 2007 إلى الثلاثي الأول 2009، بما في
@@ -709,7 +710,7 @@
   fiche: docs/croissances-revenus-prix.md
 - id: cnrps-taux-equilibre
   titre: 'CNRPS : taux de cotisation d''équilibre du régime de retraite et sa décomposition,
-    2000-2023 (2021-2023 estimés)'
+    1980, 1985-1991 et 2000-2023 (2021-2023 estimés ; 1980-1991 sans raccord)'
   sources:
   - cnrps-guides-rapports
   - cnrps-etats-financiers
@@ -717,8 +718,10 @@
   - minfin-ep-2023
   - minfin-ep-2024
   - minfin-ep-2025
+  - bm-1993-social-protection
   build: scripts/build_cnrps_taux_equilibre.py:main
   raw:
+  - data/processed/caisses/bm1993_caisses.csv
   - data/processed/caisses/cnrps_pensions.csv
   - data/processed/caisses/cnrps_regime_general_finances.csv
   - data/processed/precis/masse_salariale_ratios_longs_1990_2025.csv
@@ -735,9 +738,10 @@
     moyenne des douze taux mensuels). Colonne `denominateur` : « cotisations » (2014-2018),
     « cotisations reconstituées » (2019-2020), « masse salariale de l''État (approximation)
     » (2000-2013), « estimation : … » (2021-2023, libellé complet dans la colonne
-    ; 2022-2023 sans affiliés actifs, donc sans décomposition). Contrôles de 2014-2020
-    : rapport de l''assiette tirée des cotisations à la masse salariale de l''État,
-    et taux d''équilibre du seul régime général'
+    ; 2022-2023 sans affiliés actifs, donc sans décomposition), « Banque mondiale
+    1993 : cotisations de pension ÷ taux légal (12 %) » (1980 et 1985-1991). Contrôles
+    de 2014-2020 : rapport de l''assiette tirée des cotisations à la masse salariale
+    de l''État, et taux d''équilibre du seul régime général'
   caveats: 'SÉRIE CALCULÉE. DÉNOMINATEUR APPROCHÉ DE 2000 À 2013 : aucune source lue
     ne donne les cotisations seules avant 2014 ; la masse salariale de l''État (ministère
     des finances, « Rémunérations publiques ») en tient lieu. Sur 2014-2020, l''assiette
@@ -783,9 +787,24 @@
     égaux à ceux de la caisse en 2020 ; affiliés trouvés jusqu''en 2021 seulement
     dans les documents lus. Statut (exécution ou non) des masses salariales 2021-2023
     non établi par la source. La pension moyenne implicite baisse de 2021 à 2022 (1
-    333 à 1 328 D), signe de la fragilité de l''estimation.'
+    333 à 1 328 D), signe de la fragilité de l''estimation. 1980 ET 1985-1991 : AUTRE
+    SOURCE, SANS RACCORD. Banque mondiale, rapport n° 11376-TUN (1993), annexe statistique,
+    tableaux 3 et 5 (ministère du Plan), série bm1993-caisses ; rien pour 1981-1984
+    ni pour 1992-1999. Numérateur = pensions versées, prestations familiales servies
+    aux pensionnés comprises (part non publiée : τ* surestimé d''autant, non chiffrable
+    ; le numérateur de 2000-2023 les comprend aussi). Dénominateur = cotisations de
+    pension ÷ 12 % (5 % agent + 7 % employeur, loi n° 74-101, art. 38-39, puis loi
+    n° 85-12, art. 9 et 13 ; 12 % publiés au tableau 6 pour 1991). Jusqu''au 12 septembre
+    1985, la retenue de l''agent était plafonnée jusqu''à l''indice 250 au montant
+    d''avant 1975 : pour 1980 et 1985, assiette plancher, τ* majorant, salaire moyen
+    minorant. Contrôle : en 1990 et 1991, l''assiette vaut 1,020 et 1,000 fois la
+    masse salariale de l''État, comme en 2014-2020. Effectifs du tableau 5 (pensions
+    ou personnes, non précisé) ; les affiliés actifs bondissent de 61 % de 1980 à
+    1985 sans explication de la source. τ* : 8,4 % (1980), 9,9 % (1985) à 12,6 % (1991),
+    pour un taux légal de 12 %.'
   titre_ar: 'الصندوق الوطني للتقاعد والحيطة الاجتماعية: نسبة المساهمة المحقّقة للتوازن
-    في نظام التقاعد ومكوّناتها، 2000-2023 (2021-2023 تقديرات)'
+    في نظام التقاعد ومكوّناتها، 1980 و1985-1991 و2000-2023 (2021-2023 تقديرات؛ 1980-1991
+    دون ربط)'
   unite_ar: نسب، ملايين الدنانير، دنانير شهرياً، جرايات، أشخاص
   perimetre_ar: 'نسبة التوازن = نفقات جميع أنظمة التقاعد التي يتصرّف فيها الصندوق
     (الجرايات بجميع أصنافها) ÷ كتلة الأجور الخاضعة للمساهمة = نسبة التعويض الظاهرة
@@ -793,7 +812,8 @@
     ÷ المنخرطين النشيطين، في آخر السنة)؛ تُقارن بالنسبة القانونية الجملية للنظام العام
     (العون + المؤجّر، معدّل النسب الشهرية الاثنتي عشرة). عمود المقام: المساهمات (2014-2018)،
     مساهمات معاد تركيبها (2019-2020)، كتلة أجور الدولة على وجه التقريب (2000-2013)،
-    تقدير (2021-2023، دون تفكيك لسنتي 2022 و2023)'
+    تقدير (2021-2023، دون تفكيك لسنتي 2022 و2023)، البنك الدولي 1993: مساهمات التقاعد
+    ÷ النسبة القانونية 12 % (1980 و1985-1991)'
   caveats_ar: 'سلسلة محسوبة. المقام تقريبي من 2000 إلى 2013: لا يتوفّر أيّ مصدر للمساهمات
     وحدها قبل 2014، فتُعتمد كتلة أجور الدولة (وزارة المالية، «الأجور العمومية»). في
     الفترة 2014-2020 تساوي قاعدة المساهمات 0,997 و0,992 و1,009 و0,977 و0,974 و0,994
@@ -818,7 +838,15 @@
     و32,6 و33,4 % مقابل 33,9 و33,3 و35,7 %: فارق 2023 (2,3 نقطة) هو الهامش الحقيقي
     لعدم اليقين. لم يُعثر على عدد المنخرطين النشيطين بعد سنة 2021 في الوثائق المطّلع
     عليها. انخفاض معدّل الجراية الضمني بين 2021 و2022 (من 1 333 إلى 1 328 دينارا)
-    علامة على هشاشة التقدير.'
+    علامة على هشاشة التقدير. سنوات 1980 و1985-1991: مصدر آخر ودون ربط مع سنة 2000
+    (البنك الدولي، التقرير عدد 11376-TUN لسنة 1993، الملحق الإحصائي، الجدولان 3 و5)؛
+    لا معطيات للفترتين 1981-1984 و1992-1999. البسط يشمل المنح العائلية المسندة إلى
+    المتقاعدين (حصّتها غير منشورة، فنسبة التوازن مضخّمة بقدرها). المقام = مساهمات
+    التقاعد ÷ 12 % (5 % العون و7 % المؤجّر، القانون عدد 101 لسنة 1974 ثمّ القانون
+    عدد 12 لسنة 1985). قبل 12 سبتمبر 1985 كانت مساهمة العون مسقّفة إلى حدود المؤشر
+    250: القاعدة حدّ أدنى لسنتي 1980 و1985. مراقبة: قاعدة 1990 و1991 تساوي 1,020 و1,000
+    مرّة كتلة أجور الدولة. ارتفع عدد المنخرطين النشيطين بـ 61 % بين 1980 و1985 دون
+    تفسير من المصدر.'
   fiche: sources/cnrps-publications.md
 - id: fonction-publique-effectifs-2018-2025
   titre: Effectifs de la fonction publique, 2018-2025
@@ -1010,20 +1038,27 @@
   fiche: sources/ins-fonction-publique-2018-2025.md
 - id: cnss-rsna-taux-equilibre
   titre: 'CNSS, régime des salariés non agricoles : taux de cotisation d''équilibre
-    de la branche pensions et sa décomposition, 2000-2017'
+    de la branche pensions et sa décomposition, 2000-2017 ; CAVIS (tout le privé),
+    1980 et 1985-1991, sans raccord'
   sources:
   - cnss-annuaires-statistiques
+  - bm-1993-social-protection
   build: scripts/build_cnss_rsna_taux_equilibre.py:main
   raw:
   - data/processed/caisses/cnss_rsna_annuaires.csv
+  - data/processed/caisses/bm1993_caisses.csv
   output: data/processed/caisses/cnss_rsna_taux_equilibre.csv
   unite: taux, millions de dinars, dinars par mois, personnes
-  perimetre: taux d'équilibre = pensions servies par le RSNA sans régime complémentaire,
+  perimetre: 'taux d''équilibre = pensions servies par le RSNA sans régime complémentaire,
     toutes natures ÷ masse salariale déclarée = taux de remplacement apparent (pension
     moyenne ÷ salaire moyen) × ratio pensionnés / cotisants (pensionnés de toutes
     natures, orphelins compris ÷ actifs, non-assujettis compris) ; variante avec régime
     complémentaire à part ; comparé au taux légal de la branche pensions selon deux
-    lectures de l'article 5 b) du décret n° 74-499
+    lectures de l''article 5 b) du décret n° 74-499. Colonne `denominateur` : « annuaire
+    CNSS : masse salariale déclarée au RSNA » (2000-2017) ; « Banque mondiale 1993
+    : CAVIS, ensemble des régimes du privé ; cotisations de pension ÷ taux légal du
+    RSNA » (1980 et 1985-1991), avec l''indicateur « pensions ÷ cotisations de pension
+    », indépendant de tout taux'
   caveats: 'SÉRIE CALCULÉE. TAUX LÉGAL AMBIGU, EXPOSÉ EN DEUX COLONNES : la quote-part
     du taux global est fixée en vingtièmes (6,25/20e depuis le 1er janvier 1994, décret
     n° 94-1429 ; 7,25/20e depuis le 1er janvier 2003, décret n° 2003-1212) alors que
@@ -1037,15 +1072,41 @@
     pensions financées par une cotisation facultative sur la tranche au-delà de six
     SMIG. RUPTURE DE 2003 (taxis et louages, décret n° 2002-3018). Le salaire moyen,
     rapporté aux actifs non-assujettis compris, est un peu plus bas que le salaire
-    moyen publié. Pensions de l''année rapportées à des effectifs de fin d''année.'
+    moyen publié. Pensions de l''année rapportées à des effectifs de fin d''année.
+    1980 ET 1985-1991 : AUTRE SOURCE, AUTRE PÉRIMÈTRE, SANS RACCORD. Banque mondiale,
+    rapport n° 11376-TUN (1993), annexe statistique, tableaux 3 et 5, série bm1993-caisses
+    ; rien pour 1981-1984 ni pour 1992-1999. Les grandeurs sont celles de la CAVIS,
+    qui servait les pensions de tout le secteur privé (RSNA et régimes conventionnels
+    fusionnés ; salariés agricoles depuis 1981 ; régime agricole amélioré et Tunisiens
+    à l''étranger depuis 1989 ; indépendants agricoles, date non établie), non du
+    seul RSNA. Taux légal du RSNA : 3,75 % (décret n° 74-499, art. 9) + 1,25/20e (art.
+    5 b), puis 4,25/20e à compter du 1er janvier 1988 (décret n° 88-1137) ; le taux
+    global de la loi n° 60-30 étant de 20 %, les deux lectures coïncident : 5,00 %
+    puis 8,00 % (8,00 % publiés au tableau 6 pour 1991). Masse = cotisations de pension
+    de la CAVIS ÷ taux du RSNA, « équivalent RSNA », non déclarée : les autres régimes
+    cotisant moins (5,25 % ; 7,5 %), τ* est un MAJORANT de 1988 à 1991 ; de 1981 à
+    1987 les salariés agricoles cotisent 5,25 % contre 5 % (biais inverse, faible).
+    Contrôle codé : la masse tirée des cotisations de la CNSS hors CAVIS (÷ 18,75
+    %, puis 15,75 %) vaut 0,83 à 0,97 fois celle-ci, sans saut en 1988 (il valide
+    la date et le niveau de la quote-part, non la lecture de la fraction). Régime
+    complémentaire : la CAVIS le gérait aussi ; son inclusion dans les montants n''est
+    pas connue, et le sens de l''erreur non plus. τ* : 3,2 % (1980), 6,0 % (1985),
+    8,7 % (1987), 7,9 % (1991).'
   titre_ar: 'الصندوق الوطني للضمان الاجتماعي، نظام الأجراء في القطاع غير الفلاحي:
-    نسبة المساهمة المحقّقة للتوازن في فرع الجرايات ومكوّناتها، 2000-2017'
+    نسبة المساهمة المحقّقة للتوازن في فرع الجرايات ومكوّناتها، 2000-2017؛ وصندوق تأمين
+    الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع بجراية (كامل القطاع الخاص)،
+    1980 و1985-1991، دون ربط'
   unite_ar: نسب، ملايين الدنانير، دنانير شهرياً، أشخاص
-  perimetre_ar: نسبة التوازن = الجرايات المدفوعة دون النظام التكميلي، بجميع أصنافها
+  perimetre_ar: 'نسبة التوازن = الجرايات المدفوعة دون النظام التكميلي، بجميع أصنافها
     ÷ كتلة الأجور المصرّح بها = نسبة التعويض الظاهرة (معدّل الجراية ÷ معدّل الأجر)
     × نسبة المنتفعين إلى المساهمين (المنتفعون بجميع الأصناف بمن فيهم الأيتام ÷ النشيطون
     بمن فيهم غير الخاضعين)؛ مع صيغة تشمل النظام التكميلي على حدة؛ وتُقارن بالنسبة
-    القانونية لفرع الجرايات حسب قراءتين للفصل 5 (ب) من الأمر عدد 499 لسنة 1974
+    القانونية لفرع الجرايات حسب قراءتين للفصل 5 (ب) من الأمر عدد 499 لسنة 1974؛ عمود
+    المقام: «الكتاب الإحصائي للصندوق: كتلة الأجور المصرّح بها» (2000-2017)، و«البنك
+    الدولي 1993: صندوق تأمين الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع
+    بجراية، كامل القطاع الخاص؛ مساهمات التقاعد ÷ النسبة القانونية لنظام الأجراء غير
+    الفلاحيين» (1980 و1985-1991)، مع مؤشّر «الجرايات ÷ مساهمات التقاعد» الذي لا يتوقّف
+    على أيّ نسبة'
   caveats_ar: 'سلسلة محسوبة. النسبة القانونية ملتبسة وتُعرض في عمودين: الحصّة من النسبة
     الجملية محدّدة بأجزاء من عشرين (6,25/20 منذ غرّة جانفي 1994، الأمر عدد 1429 لسنة
     1994؛ 7,25/20 منذ غرّة جانفي 2003، الأمر عدد 1212 لسنة 2003)، في حين أنّ النسبة
@@ -1058,5 +1119,14 @@
     التي تشمل النظام التكميلي تضيف جرايات تموّلها مساهمة اختيارية على شريحة الأجر
     التي تتجاوز ستّة أضعاف الأجر الأدنى. انقطاع سنة 2003 (سيارات الأجرة واللواج، الأمر
     عدد 3018 لسنة 2002). معدّل الأجر، محسوباً على النشيطين بمن فيهم غير الخاضعين،
-    أدنى بقليل من المعدّل المنشور. جرايات السنة مقسومة على أعداد آخر السنة.'
+    أدنى بقليل من المعدّل المنشور. جرايات السنة مقسومة على أعداد آخر السنة. سنوات
+    1980 و1985-1991: مصدر آخر ومجال أوسع ودون ربط (البنك الدولي، التقرير عدد 11376-TUN
+    لسنة 1993)؛ لا معطيات للفترتين 1981-1984 و1992-1999. المعطيات هي معطيات صندوق
+    تأمين الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع بجراية الذي كان يصرف
+    جرايات كامل القطاع الخاص، لا نظام الأجراء غير الفلاحيين وحده، ولا يُعرف إن كانت
+    تشمل النظام التكميلي الذي كان يتصرّف فيه أيضاً. النسبة القانونية لهذا النظام:
+    3,75 % + 1,25/20 ثمّ 4,25/20 بداية من غرّة جانفي 1988 (الأمر عدد 1137 لسنة 1988)؛
+    والنسبة الجملية 20 % فتتطابق القراءتان: 5,00 % ثمّ 8,00 %. الكتلة = مساهمات التقاعد
+    ÷ نسبة هذا النظام، وهي كتلة مكافئة لا مصرّح بها؛ نسبة التوازن حدّ أعلى من 1988
+    إلى 1991.'
   fiche: sources/cnss-annuaires.md
