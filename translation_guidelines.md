@@ -92,3 +92,13 @@ Le contenu d'un locateur Pandoc — la partie qui suit la virgule dans `[@ref, a
 **ne se traduit pas** et reste tel quel en français, y compris les mots de liaison :
 `[@ref, art. 11 et 12]`, `[@ref, art. 5 à 7]`, `[@ref, art. 1er]`. Ne pas écrire
 `art. 5 إلى 7`. C'est de la syntaxe de citation, pas de la prose.
+
+### Formules mathématiques — jetons `⟦MATHn⟧`
+
+Les formules LaTeX du précis (`$$ … $$` en bloc, `$…$` dans la prose) ne vous parviennent
+pas : chacune est remplacée, avant l'envoi, par un jeton `⟦MATH0⟧`, `⟦MATH1⟧`… que le script
+remplace à son tour par la formule d'origine. **Recopiez chaque jeton tel quel** — chiffres
+latins, sans espace, sans `$` autour —, à sa place dans la phrase traduite, et autant de fois
+qu'il figure dans la source ; un jeton seul sur sa ligne reste seul sur sa ligne. N'écrivez
+jamais de formule vous-même. Un jeton perdu, dupliqué ou inventé fait échouer la traduction
+du fichier entier.

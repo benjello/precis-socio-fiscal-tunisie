@@ -281,6 +281,255 @@ def restore_anchors(source_text, translated_text):
     return restaure
 
 
+# ---------------------------------------------------------------------------
+# FORMULES MATHÉMATIQUES : masquage avant envoi, réinjection après.
+#
+# Les formules LaTeX (`$$ … $$` en bloc, `$…$` dans la prose) ne sont pas de la
+# prose : elles doivent traverser la traduction à l'octet près. Or tout ce que le
+# modèle voit, il peut l'abîmer — chiffres passés en indo-arabes, `\%` devenu `٪`,
+# backslashs perdus, symboles « traduits », `$` désappariés.
+#
+# POURQUOI MASQUER PLUTÔT QUE RESTAURER APRÈS COUP. `restore_urls` et
+# `restore_anchors` réparent par POSITION : ils supposent que le modèle garde
+# l'ordre des éléments. Une formule en ligne, elle, vit dans une phrase que la
+# traduction réordonne (« où $P$ est la pension, $R$ l'assiette » peut revenir
+# dans un autre ordre en arabe), et une restauration positionnelle attacherait
+# alors la mauvaise formule au mauvais symbole — silencieusement. Le masquage
+# remplace chaque formule par un jeton opaque NOMMÉ (`⟦MATH3⟧`) : l'identité
+# voyage avec le jeton, l'ordre peut changer sans dommage, et le modèle ne voit
+# jamais le LaTeX.
+#
+# LE CONTRAT EST STRICT : un jeton perdu, dupliqué, inventé ou abîmé fait ÉCHOUER
+# le fichier (`FormulesAlterees`), comme une troncature. Mieux vaut un fichier
+# non traduit qu'une formule fausse dans un livre publié.
+#
+# Ne sont PAS masqués : le contenu des blocs de code (```…```, ~~~…~~~) et des
+# spans de code en ligne (`…`), où un `$` est littéral (`$BASE_SHA` dans le
+# CHANGELOG). Le précis n'écrit aucun montant avec `$` — les dinars s'écrivent
+# « D » —, de sorte que tout `$` apparié hors code est une formule.
+# ---------------------------------------------------------------------------
+
+JETON_FORMULE = "⟦MATH{}⟧"
+JETON_FORMULE_RE = re.compile(r"⟦MATH(\d+)⟧")
+# Forme TOLÉRANTE : espaces parasites, chiffres indo-arabes (U+0660-0669) ou
+# persans (U+06F0-06F9). La réparation est sans ambiguïté — le numéro reste le
+# même nombre —, elle est donc faite, et journalisée.
+JETON_FORMULE_LACHE_RE = re.compile(r"⟦\s*MATH\s*([0-9٠-٩۰-۹]+)\s*⟧")
+JETON_SEUL_RE = re.compile(r"(?m)^[ \t]*⟦MATH(\d+)⟧[ \t]*$")
+RESIDU_JETON_RE = re.compile(r"⟦|⟧|MATH\s*[0-9٠-٩۰-۹]")
+
+# Zones où un `$` est littéral. Une clôture manquante protège jusqu'à la fin.
+CODE_CLOTURE_RE = re.compile(
+    r"^[ \t]*(`{3,}|~{3,})[^\n]*\n.*?(?:^[ \t]*\1[ \t]*$|\Z)", re.MULTILINE | re.DOTALL)
+CODE_EN_LIGNE_RE = re.compile(r"(`+)(?!`)[^\n]*?(?<!`)\1(?!`)")
+
+# Bloc d'affichage d'abord : à une même position, `$$` l'emporte sur `$`.
+# Règles de Pandoc pour la formule en ligne : le `$` ouvrant est suivi d'un
+# non-blanc, le `$` fermant est précédé d'un non-blanc et n'est pas suivi d'un
+# chiffre ; une seule ligne ; `\$` n'est pas un délimiteur.
+FORMULE_RE = re.compile(
+    r"\$\$(?:[^$]|\$(?!\$))+?\$\$"
+    r"|(?<![\\$])\$(?![\s$])(?:[^$\n\\]|\\.)+?(?<![\s\\])\$(?![\d$])"
+)
+LIGNE_BLANCHE_RE = re.compile(r"\n[ \t]*\n")
+
+
+class FormulesAlterees(RuntimeError):
+    """La traduction n'a pas rendu les jetons de formule tels qu'ils étaient envoyés."""
+
+
+def _zones_de_code(texte):
+    zones = [m.span() for m in CODE_CLOTURE_RE.finditer(texte)]
+
+    def dans_bloc(pos):
+        return any(a <= pos < b for a, b in zones)
+
+    zones += [m.span() for m in CODE_EN_LIGNE_RE.finditer(texte)
+              if not dans_bloc(m.start())]
+    return zones
+
+
+def trouver_formules(texte):
+    """Rend les positions `(début, fin)` des formules du texte, hors code.
+
+    Une formule qui chevauche une zone de code est écartée, ainsi qu'un bloc
+    `$$…$$` qui franchirait une ligne blanche : c'est alors un `$$` isolé, pas une
+    équation. Un faux négatif ne fait que retomber sur le comportement antérieur
+    (formule envoyée en clair) ; un faux positif est inoffensif, puisque
+    l'aller-retour est exact.
+    """
+    zones = _zones_de_code(texte)
+    formules = []
+    for m in FORMULE_RE.finditer(texte):
+        a, b = m.span()
+        if any(a < zb and za < b for za, zb in zones):
+            continue
+        if m.group(0).startswith("$$") and LIGNE_BLANCHE_RE.search(m.group(0)):
+            continue
+        formules.append((a, b))
+    return formules
+
+
+def formules_de(texte):
+    """Multiensemble des formules d'un texte, délimiteurs compris."""
+    compte = {}
+    for a, b in trouver_formules(texte):
+        f = texte[a:b]
+        compte[f] = compte.get(f, 0) + 1
+    return compte
+
+
+class TableFormules:
+    """Correspondance formule ↔ jeton, partagée par tous les textes d'un même envoi.
+
+    Une même formule reçoit toujours le même jeton, où qu'elle figure — source,
+    ancienne traduction, diff : c'est ce qui permet au modèle de reconnaître dans
+    l'ancienne traduction la formule que la source porte encore. La clé est la
+    formule ENTIÈRE, délimiteurs compris : `$x$` et `$$x$$` sont deux formules.
+    """
+
+    def __init__(self):
+        self.par_formule = {}
+        self.par_numero = {}
+
+    def __len__(self):
+        return len(self.par_formule)
+
+    def numero(self, formule):
+        if formule not in self.par_formule:
+            n = len(self.par_formule)
+            self.par_formule[formule] = n
+            self.par_numero[n] = formule
+        return self.par_formule[formule]
+
+
+def masquer_formules(texte, table):
+    """Remplace chaque formule par son jeton `⟦MATHn⟧`, en enrichissant `table`.
+
+    Les numéros suivent l'ordre de première rencontre : masquer la source EN
+    PREMIER lui donne des numéros qui se lisent dans l'ordre du texte.
+    """
+    morceaux, fin = [], 0
+    for a, b in trouver_formules(texte):
+        morceaux.append(texte[fin:a])
+        morceaux.append(JETON_FORMULE.format(table.numero(texte[a:b])))
+        fin = b
+    morceaux.append(texte[fin:])
+    return "".join(morceaux)
+
+
+def _compte(iterable):
+    compte = {}
+    for x in iterable:
+        compte[x] = compte.get(x, 0) + 1
+    return compte
+
+
+def reinjecter_formules(source, traduction, table):
+    """Remet les formules à la place de leurs jetons, ou lève `FormulesAlterees`.
+
+    `source` est le texte source NON masqué : les jetons attendus en sont
+    redéduits avec la même table. Échecs, tous explicites :
+      - jeton inconnu de la table, ou attendu en nombre différent (perdu, dupliqué,
+        ou recopié depuis une formule que la source n'a plus) ;
+      - jeton seul sur sa ligne dans la source (formule en bloc) qui ne l'est plus ;
+      - résidu de jeton après réinjection (`⟦`, `⟧`, `MATH3` sans crochets…) ;
+      - multiensemble des formules du résultat différent de celui de la source —
+        ce qui attrape aussi une formule que le modèle aurait écrite lui-même, ou
+        un jeton qu'il aurait entouré de `$`.
+    Seule réparation tolérée, et journalisée : les chiffres indo-arabes ou les
+    espaces parasites À L'INTÉRIEUR d'un jeton par ailleurs bien formé.
+    """
+    if not len(table):
+        return traduction
+
+    source_masquee = masquer_formules(source, table)
+    attendus = _compte(int(n) for n in JETON_FORMULE_RE.findall(source_masquee))
+
+    normalises = 0
+
+    def normaliser(m):
+        nonlocal normalises
+        n = int(m.group(1))  # int() lit aussi les chiffres indo-arabes
+        canon = JETON_FORMULE.format(n)
+        if m.group(0) != canon:
+            normalises += 1
+        return canon
+
+    traduction = JETON_FORMULE_LACHE_RE.sub(normaliser, traduction)
+    if normalises:
+        print(f"  formules : {normalises} jeton(s) mal recopié(s) (chiffres ou "
+              f"espaces), normalisé(s).")
+
+    trouves = _compte(int(n) for n in JETON_FORMULE_RE.findall(traduction))
+    problemes = []
+    for n in sorted(set(attendus) | set(trouves)):
+        if n not in table.par_numero:
+            problemes.append(f"⟦MATH{n}⟧ inconnu")
+        elif attendus.get(n, 0) != trouves.get(n, 0):
+            problemes.append(f"⟦MATH{n}⟧ attendu {attendus.get(n, 0)} fois, "
+                             f"trouvé {trouves.get(n, 0)} fois "
+                             f"({table.par_numero[n][:60]!r})")
+
+    seuls_src = _compte(int(n) for n in JETON_SEUL_RE.findall(source_masquee))
+    seuls_trad = _compte(int(n) for n in JETON_SEUL_RE.findall(traduction))
+    for n, k in sorted(seuls_src.items()):
+        if seuls_trad.get(n, 0) != k:
+            problemes.append(f"⟦MATH{n}⟧ n'est plus seul sur sa ligne "
+                             f"(formule en bloc)")
+
+    if problemes:
+        raise FormulesAlterees(
+            "formules altérées par la traduction : " + " ; ".join(problemes))
+
+    restitue = JETON_FORMULE_RE.sub(
+        lambda m: table.par_numero[int(m.group(1))], traduction)
+
+    # Un résidu n'est cherché que HORS des formules restituées, qui ne portent
+    # jamais de jeton mais pourraient, en théorie, contenir « MATH ».
+    hors_formules = masquer_formules(restitue, TableFormules())
+    hors_formules = JETON_FORMULE_RE.sub("", hors_formules)
+    if RESIDU_JETON_RE.search(hors_formules):
+        m = RESIDU_JETON_RE.search(hors_formules)
+        raise FormulesAlterees(
+            f"formules altérées par la traduction : résidu de jeton "
+            f"{hors_formules[max(0, m.start() - 20):m.end() + 20]!r}")
+
+    if formules_de(restitue) != formules_de(source):
+        raise FormulesAlterees(
+            "formules altérées par la traduction : les formules restituées ne "
+            "sont pas celles de la source (formule écrite en clair par le "
+            "modèle, ou jeton entouré de `$`).")
+
+    print(f"  formules : {sum(attendus.values())} restituée(s) depuis "
+          f"{len(attendus)} jeton(s).")
+    return restitue
+
+
+def diff_masque(ancienne_source, nouvelle_source, chemin, table):
+    """Diff unifié entre deux états de la source, formules masquées.
+
+    Le diff de git porte le LaTeX en clair, sur des lignes préfixées de `+`/`-`
+    où un bloc `$$…$$` n'est plus reconnaissable : le modèle y verrait les
+    formules que l'on masque partout ailleurs, et serait tenté de les recopier.
+    On le recalcule donc dans l'espace masqué, avec la même table.
+    """
+    import difflib
+    ancien = masquer_formules(ancienne_source, table).splitlines(keepends=True)
+    nouveau = masquer_formules(nouvelle_source, table).splitlines(keepends=True)
+    return "".join(difflib.unified_diff(
+        ancien, nouveau, fromfile=f"a/{chemin}", tofile=f"b/{chemin}"))
+
+
+CONSIGNE_FORMULES = """
+JETONS DE FORMULE : les jetons de la forme ⟦MATH0⟧, ⟦MATH1⟧… remplacent des formules
+mathématiques. Recopie chaque jeton TEL QUEL — chiffres latins, sans espace, sans `$`
+autour —, à sa place dans la phrase traduite, et autant de fois qu'il figure dans le
+FICHIER SOURCE. Un jeton seul sur sa ligne reste seul sur sa ligne. N'écris jamais
+toi-même de formule, et ne recopie pas un jeton que le FICHIER SOURCE ne porte plus.
+"""
+
+
 def get_git_diff(base_sha, head_sha, file_path):
     try:
         cmd = ["git", "diff", base_sha, head_sha, "--", file_path]
@@ -288,6 +537,17 @@ def get_git_diff(base_sha, head_sha, file_path):
         return result.stdout
     except subprocess.CalledProcessError:
         return ""
+
+
+def get_git_show(sha, file_path):
+    """Contenu du fichier à un commit donné, ou chaîne vide s'il n'y existait pas."""
+    try:
+        cmd = ["git", "show", f"{sha}:{file_path}"]
+        result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        return result.stdout
+    except subprocess.CalledProcessError:
+        return ""
+
 
 def main():
     # Import local : voir la note en tête de module. Seul `main()` parle au modèle.
@@ -387,6 +647,25 @@ def main():
                       "est ignorée.")
             old_target_text = ""
 
+        # MASQUAGE DES FORMULES (voir `masquer_formules`). Les trois textes envoyés —
+        # source, ancienne traduction, diff — sont masqués avec UNE table : une même
+        # formule y porte le même jeton. La source d'abord, pour que ses numéros
+        # suivent l'ordre du texte. Les variables non masquées restent intactes :
+        # `restore_*`, la troncature et le repère de longueur les lisent.
+        table_formules = TableFormules()
+        prompt_source = masquer_formules(new_source_text, table_formules)
+        prompt_old_target = masquer_formules(old_target_text, table_formules)
+        prompt_diff = diff_text
+        consigne_formules = ""
+        if len(table_formules):
+            if diff_text:
+                ancienne_source = get_git_show(base_sha, file_path)
+                prompt_diff = diff_masque(ancienne_source, new_source_text,
+                                          file_path, table_formules)
+            consigne_formules = CONSIGNE_FORMULES
+            print(f"  formules : {len(table_formules)} formule(s) distincte(s) "
+                  f"masquée(s) avant envoi.")
+
         # Dès qu'une traduction existe, on part d'elle — même sans diff.
         # Retraduire de zéro un fichier déjà traduit EFFACE les corrections faites
         # à la main sur la seule langue cible, qui sont légitimes et courantes
@@ -399,7 +678,7 @@ def main():
                 diff_section = f"""
 Voici le DIFF (les modifications) qui viennent d'être faites sur le fichier source :
 ```diff
-{diff_text}
+{prompt_diff}
 ```
 
 TA TÂCHE :
@@ -422,12 +701,12 @@ Langue cible : {target_lang}
 
 Voici le FICHIER SOURCE MIS À JOUR ({source_lang}) :
 ```markdown
-{new_source_text}
+{prompt_source}
 ```
 
 Voici l'ANCIENNE TRADUCTION CIBLE ({target_lang}) (avant tes modifications) :
 ```markdown
-{old_target_text}
+{prompt_old_target}
 ```
 {diff_section}
 RECOPIE VERBATIM, JAMAIS TRADUITE NI FLÉCHIE : les cibles de liens et les ancres
@@ -436,7 +715,7 @@ leurs locateurs, les URL, les numéros de textes juridiques (« loi n° 88-62 »
 n° 91-550 ») et le contenu des commentaires HTML `<!-- ... -->`. Ce ne sont pas de la
 prose : une cible de lien mise au pluriel ne pointe plus sur rien, et un commentaire
 corrompu se lit dans la source.
-
+{consigne_formules}
 Renvoie UNIQUEMENT le nouveau fichier cible mis à jour, sans aucun commentaire avant ou après.
 """
         else:
@@ -451,10 +730,10 @@ leurs locateurs, les URL, les numéros de textes juridiques (« loi n° 88-62 »
 n° 91-550 ») et le contenu des commentaires HTML `<!-- ... -->`. Ce ne sont pas de la
 prose : une cible de lien mise au pluriel ne pointe plus sur rien, et un commentaire
 corrompu se lit dans la source.
-
+{consigne_formules}
 Fichier à traduire :
 ```markdown
-{new_source_text}
+{prompt_source}
 ```
 """
 
@@ -510,7 +789,13 @@ Fichier à traduire :
                 translated_text = translated_text[:-5]
             elif translated_text.endswith("\n```"):
                 translated_text = translated_text[:-4]
-                
+
+            # Les formules d'abord : `restore_*` et la troncature comparent à la
+            # source NON masquée, et un jeton altéré doit faire échouer le fichier
+            # avant toute autre réparation (`FormulesAlterees` est rattrapée plus
+            # bas comme tout échec : fichier non écrit, sortie en code 1).
+            translated_text = reinjecter_formules(new_source_text, translated_text,
+                                                  table_formules)
             translated_text = restore_locators(new_source_text, translated_text)
             translated_text = restore_urls(new_source_text, translated_text)
             translated_text = restore_anchors(new_source_text, translated_text)
