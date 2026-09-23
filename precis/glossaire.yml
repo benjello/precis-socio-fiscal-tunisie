@@ -2789,9 +2789,9 @@ entries:
   - id: rente-viagere-invalidite
     acronyme: null
     statut: valide
-    references: [loi59-18, loi85-12, cnrps-manuel-liquidation-2013]
+    references: [loi59-18, decretloi70-1, loi85-12, cnrps-manuel-liquidation-2013]
     source_definition: {ref: loi81-70, locator: "art. 4 (art. 26 § II de la loi n° 59-18)"}
-    voir_aussi: [rente-compensatrice, bonification, pension-de-reversion]
+    voir_aussi: [rente-compensatrice, bonification, pension-de-reversion, emoluments-globaux-indiciaires]
     fr:
       terme: Rente viagère d'invalidité
       definition: >
@@ -2800,9 +2800,13 @@ entries:
         maintenue sur ce point par l'article 76 de la loi n° 85-12 ; dans la
         rédaction de l'article 26 § II issue de la loi n° 81-70, le montant de la
         rente est égal au produit de la rémunération soumise à retenue pour pension
-        par le taux de l'invalidité. Le manuel de liquidation de la CNRPS (2013) la
-        calcule, lui, sur la pension de retraite, et plafonne le total de la pension
-        et de la rente à 100 % de la rémunération de base.
+        par le taux de l'invalidité. L'article 26 § III de la loi n° 59-18 plafonne
+        le total de la rente et de la pension cumulable : aux émoluments de base de
+        l'article 21 dans la rédaction de 1959, aux émoluments globaux indiciaires
+        visés à l'article 21 dans la rédaction issue du décret-loi n° 70-1. Le manuel
+        de liquidation de la CNRPS (2013) calcule la rente, lui, sur la pension de
+        retraite, et plafonne le total de la pension et de la rente à 100 % de la
+        rémunération de base.
       synonymes: [Rente viagère pour invalidité]
     ar:
       terme: الإيراد العمري للعجز
@@ -2811,10 +2815,14 @@ entries:
         الأعوان العموميين خاضعًا للقانون عدد 18 لسنة 1959، الذي أبقى الفصل 76 من القانون
         عدد 12 لسنة 1985 على العمل به في هذا الشأن؛ وحسب صيغة الفقرة II من الفصل 26
         المنبثقة عن القانون عدد 70 لسنة 1981، يساوي مبلغ الإيراد حاصل ضرب الأجر الخاضع
-        للحجز بعنوان الجراية في نسبة العجز. أمّا دليل تصفية الجرايات للصندوق الوطني
-        للتقاعد والحيطة الاجتماعية (2013)، فيحتسبه على أساس جراية التقاعد ويحدّد مجموع
-        الجراية والإيراد بـ100 % من الأجر المعتمد.
-      synonymes: []
+        للحجز بعنوان الجراية في نسبة العجز. وتحدّ الفقرة III من الفصل 26 من القانون عدد
+        18 لسنة 1959 مجموع الإيراد والجراية القابلة للجمع معه: بالمرتبات الأساسية
+        المنصوص عليها بالفصل 21 في صيغة 1959، وبالمرتبات الجملية التابعة للرقم القياسي
+        المعين المبيّنة بالفصل 21 في الصيغة المنبثقة عن المرسوم عدد 1 لسنة 1970. أمّا
+        دليل تصفية الجرايات للصندوق الوطني للتقاعد والحيطة الاجتماعية (2013)، فيحتسب
+        الإيراد على أساس جراية التقاعد ويحدّد مجموع الجراية والإيراد بـ100 % من الأجر
+        المعتمد.
+      synonymes: [الإيراد العمري من أجل السقوط البدني]
 
   - id: retraite-anticipee-volontaire
     acronyme: null
@@ -3031,7 +3039,7 @@ entries:
     statut: valide
     references: [decret74-499, decret2007-2148]
     source_definition: {ref: decret82-1030, locator: "art. 3"}
-    voir_aussi: [allocation-de-vieillesse, pension-minimale-garantie, stage-cotisation]
+    voir_aussi: [allocation-de-vieillesse, pension-minimale-garantie, stage-cotisation, pension-proportionnelle-1959]
     fr:
       terme: Pension proportionnelle
       definition: >
@@ -3053,6 +3061,151 @@ entries:
         الانخراط الدنيا، بنسبة الأشهر التي دفع بعنوانها مساهمات. وحدّها الأدنى نصف الأجر
         الأدنى المضمون لمختلف المهن، وهي قابلة للتحويل إلى القرين الباقي على قيد الحياة.
       synonymes: []
+
+  - id: pension-anciennete
+    acronyme: null
+    statut: valide
+    references: [loi73-71, loi79-66-lf1980, decretloi74-9]
+    source_definition: {ref: loi59-18, locator: "art. 9 § I"}
+    source_traduction: {ref: loi59-18, locator: "art. 9, 10 et 22"}
+    voir_aussi: [pension-proportionnelle-1959, emoluments-de-base, annuite-liquidable, cadres-actifs, pensions-civiles-militaires]
+    fr:
+      terme: Pension d'ancienneté
+      definition: >
+        Pension du régime des pensions civiles et militaires institué par la loi
+        n° 59-18. L'agent civil y a droit à la double condition de soixante ans d'âge et
+        de trente années accomplies de services effectifs, civils ou militaires
+        (art. 9 § I) ; l'âge peut être réduit de cinq ans au maximum pour les emplois
+        classés dans la partie active, désignés par décret (art. 10). Les militaires
+        l'acquièrent sans condition d'âge, après trente ans de services pour les
+        officiers, vingt-cinq ans pour les sous-officiers et vingt ans pour les caporaux
+        et soldats (art. 12). Elle est fixée à 2 % des émoluments de base par annuité
+        liquidable (art. 22). La double condition d'âge et de durée est reprise mot pour
+        mot par la loi n° 73-71, puis par la loi de finances pour 1980.
+      synonymes: []
+    ar:
+      terme: جراية التقاعد بالأقدمية
+      definition: >
+        جراية من نظام جرايات التقاعد المدني والعسكري الذي أحدثه القانون عدد 18 لسنة
+        1959. يستحقّها الموظّف المدني بشرط مزدوج هو بلوغ ستّين عامًا من العمر وقضاء
+        ثلاثين عامًا من الخدمات الفعلية، مدنيةً كانت أو عسكرية (الفصل 9، الفقرة 1)؛
+        ويمكن الحطّ من السنّ بخمسة أعوام على الأكثر بالنسبة إلى الخطط الداخلة ضمن قسم
+        التجوّل، التي تُضبط بأمر (الفصل 10). ويحصل عليها العسكريون دون شرط يتعلّق
+        بالسنّ، بعد ثلاثين عامًا من الخدمات بالنسبة إلى الضبّاط، وخمسة وعشرين عامًا
+        بالنسبة إلى ضبّاط الصفّ، وعشرين عامًا بالنسبة إلى الأنباشية والجنود (الفصل 12).
+        وتُضبط بـ2 % من المرتبات الأساسية عن كلّ سنة قابلة للتصفية (الفصل 22). وقد أعاد
+        القانون عدد 73 لسنة 1973، ثمّ قانون المالية لسنة 1980، الشرط المزدوج المتعلّق
+        بالسنّ والمدّة بنصّه.
+      synonymes: [جراية التقاعد بحسب الأقدمية, جراية الأقدمية]
+
+  - id: pension-proportionnelle-1959
+    acronyme: null
+    statut: valide
+    references: [loi73-71, loi79-66-lf1980]
+    source_definition: {ref: loi59-18, locator: "art. 9 § II"}
+    source_traduction: {ref: loi59-18, locator: "art. 9 § II et 22"}
+    voir_aussi: [pension-anciennete, emoluments-de-base, pension-proportionnelle, pensions-civiles-militaires]
+    fr:
+      terme: Pension proportionnelle (loi n° 59-18)
+      definition: >
+        Pension que la loi n° 59-18, dans sa rédaction initiale, ouvre à l'agent public,
+        hors de la pension d'ancienneté, dans des cas qu'elle énumère (art. 9 § II) : sans condition d'âge
+        ni de durée en cas d'invalidité ; sans condition de durée pour l'agent qui
+        atteint la limite d'âge de son emploi, ou soixante ans, sans droit à la pension
+        d'ancienneté ; après quinze ans de services en cas de licenciement pour
+        suppression d'emplois ou pour insuffisance professionnelle, et pour les femmes
+        mères de trois enfants vivants de moins de seize ans ; à cinquante ans et après
+        vingt ans de services, sur demande ou d'office, dans la limite d'un nombre de
+        pensions fixé chaque année par la loi de finances. Elle est calculée comme la
+        pension d'ancienneté, à 2 % des émoluments de base par annuité liquidable
+        (art. 22). La loi n° 73-71 regroupe ensuite ces cas sous une même condition de
+        quinze ans, et la loi de finances pour 1980 ne mentionne plus le contingent.
+        Elle ne se confond pas avec la pension proportionnelle du régime des
+        salariés non agricoles, instituée par le décret n° 82-1030.
+      synonymes: []
+    ar:
+      terme: جراية التقاعد النسبي
+      definition: >
+        جراية يفتحها القانون عدد 18 لسنة 1959، في صيغته الأصلية، للعون العمومي، خارج جراية التقاعد
+        بالأقدمية، في حالات يعدّدها (الفصل 9، الفقرة 2): دون اشتراط السنّ ولا مدّة
+        الخدمة في حالة السقوط البدني؛ ودون اشتراط مدّة الخدمة للعون الذي يبلغ الحدّ
+        العمري لوظيفه، أو ستّين عامًا من العمر، دون أن يكون له الحقّ في جراية التقاعد
+        بالأقدمية؛ وبعد خمسة عشر عامًا من الخدمات في حالة الفصل من أجل حذف الوظائف أو
+        من أجل القصور المهني، وللموظّفات الأمّهات لثلاثة أولاد أحياء لم يتجاوز سنّهم
+        ستّة عشر عامًا؛ وفي سنّ الخمسين وبعد عشرين عامًا من الخدمات، بطلب من العون أو
+        وجوبًا، في حدود عدد من الجرايات يضبطه قانون المالية كلّ سنة. وتُحتسب كجراية
+        التقاعد بالأقدمية، بـ2 % من المرتبات الأساسية عن كلّ سنة قابلة للتصفية
+        (الفصل 22). ثمّ جمع القانون عدد 73 لسنة 1973 هذه الحالات تحت شرط واحد هو
+        خمسة عشر عامًا من الخدمات، ولم يعد قانون المالية لسنة 1980 يذكر العدد المحدّد
+        سنويًا. ولا تختلط بالجراية النسبية في نظام الأجراء غير الفلاحيين، التي
+        أحدثها الأمر عدد 1030 لسنة 1982.
+      synonymes: [التقاعد النسبي]
+
+  - id: emoluments-de-base
+    acronyme: null
+    statut: valide
+    references: [decretloi70-1]
+    source_definition: {ref: loi59-18, locator: "art. 21 et 22"}
+    source_traduction: {ref: loi59-18, locator: "art. 21 et 22"}
+    voir_aussi: [emoluments-globaux-indiciaires, pension-anciennete, pension-proportionnelle-1959, traitement-de-base]
+    fr:
+      terme: Émoluments de base
+      definition: >
+        Assiette de la pension dans la rédaction initiale de la loi n° 59-18 : les
+        derniers émoluments soumis à retenue afférents à l'emploi et classe, ou au grade
+        et échelon, occupés effectivement depuis six mois au moins (art. 21). La pension
+        d'ancienneté ou proportionnelle est fixée à 2 % des émoluments de base par
+        annuité liquidable (art. 22). Le décret-loi n° 70-1 leur substitue les
+        émoluments globaux indiciaires, avec une nouvelle liquidation des pensions à
+        compter du 1er juillet 1970. La notion ne se confond pas avec le traitement de
+        base des grilles de rémunération publique actuelles.
+      synonymes: []
+    ar:
+      terme: المرتبات الأساسية
+      definition: >
+        أساس احتساب الجراية في الصيغة الأصلية للقانون عدد 18 لسنة 1959: آخر مرتب خاضع
+        للحجز تابع للوظيف والرتبة أو للخطة والدرجة التي شغلها العون فعلًا منذ ستّة أشهر
+        على الأقلّ (الفصل 21). وتُضبط جراية التقاعد بالأقدمية أو جراية التقاعد النسبي
+        بـ2 % من المرتبات الأساسية عن كلّ سنة قابلة للتصفية (الفصل 22). وقد عوّضها
+        المرسوم عدد 1 لسنة 1970 بالمرتبات الجملية التابعة للرقم القياسي، مع تصفية جديدة
+        للجرايات ابتداءً من غرّة جويلية 1970. ولا يختلط هذا المفهوم بالمرتب الأساسي في
+        شبكات التأجير العمومي الحالية.
+      synonymes: []
+
+  - id: emoluments-globaux-indiciaires
+    acronyme: null
+    statut: valide
+    references: [loi59-18, loi73-71]
+    source_definition: {ref: decretloi70-1, locator: "art. 1 (art. 21 et 22 nouveaux) et art. 2"}
+    source_traduction: {ref: decretloi70-1, locator: "art. 1"}
+    voir_aussi: [emoluments-de-base, pension-anciennete, rente-viagere-invalidite]
+    fr:
+      terme: Émoluments globaux indiciaires
+      definition: >
+        Assiette de la pension que le décret-loi n° 70-1 substitue aux émoluments de
+        base de la loi n° 59-18, avec une nouvelle liquidation des pensions à compter du
+        1er juillet 1970 : les derniers émoluments globaux indiciaires afférents à
+        l'emploi et classe, ou au grade et échelon, occupés effectivement depuis six mois
+        au moins (art. 21 nouveau). La pension d'ancienneté ou proportionnelle en est
+        fixée à 2 % par annuité liquidable, dans la limite de 80 %, avec un plancher de
+        60 % des émoluments globaux indiciaires afférents à l'indice 100 (art. 22
+        nouveau) ; ils bornent aussi le total de la pension et de la rente d'invalidité
+        (art. 26 § III nouveau). La loi n° 73-71 ajoute à l'assiette les indemnités
+        ayant le caractère d'un complément de salaire.
+      synonymes: []
+    ar:
+      terme: المرتبات الجملية التابعة للرقم القياسي المعين
+      definition: >
+        أساس احتساب الجراية الذي عوّض به المرسوم عدد 1 لسنة 1970 المرتبات الأساسية
+        الواردة بالقانون عدد 18 لسنة 1959، مع تصفية جديدة للجرايات ابتداءً من غرّة
+        جويلية 1970: آخر مرتب جملي منطبق على الرقم القياسي التابع للوظيف والرتبة أو
+        للخطة والدرجة التي شغلها العون فعلًا منذ ستّة أشهر على الأقلّ (الفصل 21 الجديد).
+        وتُضبط منها جراية التقاعد بالأقدمية أو جراية التقاعد النسبي باثنين في المائة عن
+        كلّ سنة قابلة للتصفية، في حدود 80 %، ولا يمكن أن تقلّ عن 60 % من المرتبات
+        الجملية التابعة للرقم القياسي 100 (الفصل 22 الجديد)؛ وهي كذلك حدّ أقصى لمجموع
+        الجراية والإيراد من أجل السقوط البدني (الفقرة 3 الجديدة من الفصل 26). وأضاف
+        القانون عدد 73 لسنة 1973 إلى هذا الأساس المنح التي لها صبغة تكملة للأجر.
+      synonymes: [المرتب الجملي التابع للرقم القياسي المعين]
 
   - id: revalorisation-pensions
     acronyme: null

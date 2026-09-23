@@ -64,3 +64,11 @@ se constate ; il ne s'indigne pas.
 
 **Jamais un chiffre ponctuel sans sa vue d'évolution** — un graphique ou un tableau daté.
 Un taux en vigueur sans son histoire ne dit pas ce qu'il vaut.
+
+**Des formules en symboles, des valeurs en égalités.** Une formule `$$ … $$` ne porte que des
+symboles, ni valeur ni mot (pas de `\text{}` : seule la prose se traduit), et écrit `\%`, jamais
+`%` nu. Les valeurs vont à part, en égalités datées et indicatives (« $\bar\tau = 90\,\%$ depuis
+1985 »), en légende ou sur une ligne qui suit, avec les mêmes citations et le renvoi au tableau
+daté. Notation unique par chapitre (un symbole, une grandeur) : chaque symbole est défini à sa
+première formule, ou juste après sa mention, jamais avant ; la liste complète va en annexe de
+chapitre, non à la première formule.
