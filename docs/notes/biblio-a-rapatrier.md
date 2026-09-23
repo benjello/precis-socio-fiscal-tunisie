@@ -8,6 +8,37 @@
 
 ## En attente
 
+### Glossaire — contribution personnelle d'État, quote-part de l'assuré (versement du 23/09/2026)
+
+Branche `feat/glossaire-cpe-cotisation-assure`. Deux textes cités par `precis/glossaire.yml`
+(entrées de fiscalité et de cotisations), ajoutés à la main, FR et AR, dans le **fonds commun**
+`precis/{fr,ar}/references.json`, **pas encore dans Zotero**. Motif du fonds commun : l'annexe
+de glossaire est filtrée par livre (`build_glossary.ancres_utilisees`), et ces notions peuvent
+être ancrées par plusieurs livres ; précédent `decret2002-916`. Le `controle-rangement` devra
+confirmer, une fois la branche fusionnée, que l'usage réel est bien multi-livres ; s'il n'est
+cité que par un livre, il le signalera « à ranger » dans la collection de ce livre.
+
+URL = `pdf_fr` / `pdf_ar` de l'enregistrement `jort_cache.db` du texte lui-même, contrôlées le
+23/09/2026 (`curl -k`, HTTP 206, `application/pdf`). Titres des entrées AR : **titres arabes**,
+lus au fascicule arabe (à la différence du lot « Retraites » ci-dessous, qui garde les titres
+français) ; pagination : celle de l'édition française dans les deux fichiers, pagination arabe
+en note.
+
+| Clé | Texte | recid | Remarque |
+|---|---|---|---|
+| `decret86-1188` | Décret n° 86-1188 du 12 novembre 1986 (barème de la contribution personnelle d'État par tranches de 20 dinars) | 95172 | JORT n° 71 du 5/12/1986, pp. 1426-1431 (éd. fr., lue à l'image) ; titre AR lu au sommaire et à la p. 1426 de l'éd. ar. ; exécutoire le 7/12/1986 (un jour franc) |
+| `decret2017-358` | Décret gouvernemental n° 2017-358 du 9 mars 2017 (complète le décret n° 2012-2369 : art. 26 quater à 26 decies, « contrat-dignité ») | 77614 | JORT n° 21 du 14/03/2017, **pp. 996-998** (éd. fr.), pp. 819-820 (éd. ar.) ; art. 26 sexies p. 997 (fr.), pp. 819-820 (ar.) ; `page` vide dans `jort_cache.db` |
+
+- [ ] `decret86-1188` : fin du texte dans l'édition arabe non vérifiée page à page (seuls le
+      sommaire et la p. 1426 ont été lus) ; le sommaire place le texte suivant à la p. 1431.
+- [ ] `decret2017-358` : date de dépôt du fascicule au siège du gouvernorat de Tunis non établie,
+      donc date d'exécution non calculée (loi n° 93-64, art. 2) ; le décret n'a pas de clause d'effet.
+- [ ] Rapatriement Zotero **après fusion**, sur feu vert humain : `permissions` → `verifier` →
+      `dry-run` → `pousser-un` → `comparer` → `pousser-tout` → `ranger` (collection : aucune,
+      c'est-à-dire « Commun », sauf si le contrôle dit autrement) → `controle-rangement`. Ni le
+      `dry-run` ni le `controle-rangement` n'ont été lancés lors du versement (consigne : aucun
+      workflow).
+
 ### Livre « Retraites » — autres régimes de pension de la CNSS (versement du 23/09/2026)
 
 Source : `docs/notes/cnss-autres-regimes.md` (§ 1, 15 ; textes lus au fascicule). Ajoutées à la
