@@ -19,6 +19,17 @@ Pour toute entrée CSL type `legislation` (loi, décret, code), l'URL doit point
 
 Méthode de résolution (base locale `../PDFs-legislation-tunisie/jort_cache.db`, table `textes`, colonnes `numero`, `type`, `date_signature`, `jort_numero`, `pdf_fr`, `pdf_ar`) : identifie l'enregistrement par le texte (numéro + type + date), puis lis `pdf_fr` pour le FR et `pdf_ar` pour l'AR sur **cet enregistrement**. Ne déduis JAMAIS l'URL AR en transformant la chaîne FR (`Jo`→`Ja`, `F`→`A`) : lis le champ. Si `pdf_ar` est vide/absent, laisse l'entrée AR sans URL et consigne un TODO dans `docs/notes/biblio-a-rapatrier.md`.
 
+## Documents tirés des archives du web (Wayback Machine)
+Quand un document n'a pu être lu que dans une capture d'Internet Archive, parce que le site d'origine l'a **retiré** ou est **inaccessible au lecteur** (site disparu, pare-feu), la référence le dit par des champs structurés, en FR **et** en AR :
+- `URL` : la capture horodatée, `https://web.archive.org/web/<AAAAMMJJhhmmss>/<adresse d'origine>`, horodatage **lu dans le CDX** (`http://web.archive.org/cdx/search/cdx?url=<adresse>&output=txt&fl=timestamp,original,statuscode,length`), jamais recopié d'un inventaire ni deviné. Pas de suffixe `id_` (réservé aux téléchargements bruts).
+- `archive` : `Internet Archive (Wayback Machine)` en FR, `أرشيف الإنترنت (Wayback Machine)` en AR.
+- `archive_location` : l'adresse d'origine, telle que la capture l'enregistre (colonne `original` du CDX).
+- `accessed` : la date à laquelle la capture a été **effectivement consultée** (pas la date de capture, qui est dans l'URL).
+- `note`, après `citation-key:` : une phrase qui donne le motif et la date de capture — « Document retiré du site de <organisme> ; consulté dans la capture du JJ/MM/AAAA. » ou « Site de <organisme> inaccessible (<motif>) ; … ». Entrée composite (plusieurs documents, plusieurs captures) : `URL` et `archive_location` décrivent le premier document, la note liste les autres captures.
+- Ne relève **pas** de cette convention un document dont l'éditeur sert toujours la page à un lecteur humain (403 aux seuls robots, DOI actif) : l'URL reste celle de l'éditeur ou le DOI, la capture n'est citée qu'en note comme copie de vérification.
+
+Ces champs survivent à l'aller-retour Zotero (`archive`/`archiveLocation` natifs pour le rapport et le livre, ligne d'Extra pour la page web ; `accessed` ↔ `accessDate`) : `push_biblio.py --verifier` doit rendre 0 perte. `precis.csl` les affiche après l'URL : `[Internet Archive (Wayback Machine), adresse d’origine : …]`.
+
 ## Source canonique = Zotero (point central)
 - La bibliographie est, à terme, **tirée de Zotero** (groupe `6529669`) par `scripts/sync_biblio.py` (Zotero → `references.json`). Une clé Zotero en **écriture** existe côté projet (issue #17).
 - Conséquence : toute référence ajoutée à la main dans un `references.json` est **provisoire** et risque d'être écrasée par un sync. Elle doit être **remontée dans Zotero** (champ « Extra » : `citation-key: <clé>`) pour devenir pérenne.
