@@ -1214,7 +1214,31 @@
           ]
         ]
       },
-      "note": "citation-key: cnss-annuaires-statistiques\nDeux éditions de l'annuaire statistique de la CNSS, dans cet ordre : « الدليل الإحصائي 2017 » (annuaire statistique 2017, édition arabe, 402 pages, séries 2000-2017 ; page de titre : إدارة الدراسات ومراقبة التصرف، الإدارة الفرعية للإحصائيات), dont l'URL est donnée ; « Annuaire statistique 2013 » (édition française, 397 pages, séries 2000-2013 ; page de titre : Direction des études et du contrôle de gestion, service des statistiques) : https://www.cnss.tn/documents/10156/25253/annuaire2013fr.pdf. Pages lues (page du fichier PDF), 2017 / 2013 : tableau 1, employeurs, salariés déclarés et masse salariale du régime des salariés non agricoles, p. 23 / p. 26 ; tableaux 29 et 30, pensionnés et pensions par nature, avec et sans régime complémentaire, p. 51-52 / p. 54-55 ; taux de cotisation par régime et par branche, p. 346 / p. 340 ; pensions de l'ensemble des régimes en 2013, p. 367 de l'édition 2013. Documents d'abord tirés des archives du web ; le site de la CNSS les sert toujours, identiques octet pour octet (même taille, même empreinte SHA-1, vérifié le 23/09/2026). Copies de vérification : capture du 04/03/2022 de l'édition 2017, https://web.archive.org/web/20220304034917/https://www.cnss.tn/c/document_library/get_file?uuid=026b72cb-a0a4-47d7-868a-b2d067dca9ad&groupId=10156 ; capture du 16/07/2019 de l'édition 2013, https://web.archive.org/web/20190716124119/http://www.cnss.tn:80/documents/10156/25253/annuaire2013fr.pdf (les captures de 2022 et 2024 de l'adresse https de l'édition 2013 portent une autre empreinte et n'ont pas été utilisées). Liste des fichiers : dépôt tunisia-data, sources/cnss-urls.csv et sources/cnss-annuaires.md."
+      "note": "citation-key: cnss-annuaires-statistiques\nDeux éditions de l'annuaire statistique de la CNSS, dans cet ordre : « الدليل الإحصائي 2017 » (annuaire statistique 2017, édition arabe, 402 pages, séries 2000-2017 ; page de titre : إدارة الدراسات ومراقبة التصرف، الإدارة الفرعية للإحصائيات), dont l'URL est donnée ; « Annuaire statistique 2013 » (édition française, 397 pages, séries 2000-2013 ; page de titre : Direction des études et du contrôle de gestion, service des statistiques) : https://www.cnss.tn/documents/10156/25253/annuaire2013fr.pdf. Pages lues (page du fichier PDF), 2017 / 2013 : tableau 1, employeurs, salariés déclarés et masse salariale du régime des salariés non agricoles, p. 23 / p. 26 ; tableaux 29 et 30, pensionnés et pensions par nature, avec et sans régime complémentaire, p. 51-52 / p. 54-55 ; taux de cotisation par régime et par branche, p. 346 / p. 340 ; pensions de l'ensemble des régimes en 2013, p. 367 de l'édition 2013. Parties consacrées aux autres régimes, 2017 / 2013 : régime complémentaire, actifs et pensionnés p. 72 / p. 75, pensions p. 78 / p. 81 ; salariés agricoles, employeurs et salariés p. 103 / p. 106, catégories p. 106 / p. 109, pensions p. 111 / p. 114 ; régime agricole amélioré, employeurs, salariés et masse salariale p. 127 / p. 130, pensions p. 138 / p. 141 ; travailleurs non salariés (non agricoles, agricoles, ensemble), assurés p. 154, 190, 226 / p. 157, 193, 229, classes de revenus p. 158, 194, 230 / p. 161, 197, 233, pensions p. 174, 210, 246 / p. 177, 213, 249 ; Tunisiens à l'étranger, assurés p. 262 / p. 265, classes de revenus p. 265 / p. 268, pensions p. 279 / p. 273 ; artistes, créateurs et intellectuels, assurés p. 321 / p. 315, classes de revenus p. 323 / p. 317, pensions p. 328 / p. 322 ; travailleurs à faibles revenus, immatriculés par type d'activité p. 296 / p. 290, pensions p. 306 de l'édition 2017, travailleurs de chantiers p. 300 de l'édition 2013. Les répartitions par classe de revenus de 2000 à 2004 sont tirées de l'annuaire statistique 2010, cité à part (cnss-annuaire-2010). Documents d'abord tirés des archives du web ; le site de la CNSS les sert toujours, identiques octet pour octet (même taille, même empreinte SHA-1, vérifié le 23/09/2026). Copies de vérification : capture du 04/03/2022 de l'édition 2017, https://web.archive.org/web/20220304034917/https://www.cnss.tn/c/document_library/get_file?uuid=026b72cb-a0a4-47d7-868a-b2d067dca9ad&groupId=10156 ; capture du 16/07/2019 de l'édition 2013, https://web.archive.org/web/20190716124119/http://www.cnss.tn:80/documents/10156/25253/annuaire2013fr.pdf (les captures de 2022 et 2024 de l'adresse https de l'édition 2013 portent une autre empreinte et n'ont pas été utilisées). Liste des fichiers : dépôt tunisia-data, sources/cnss-urls.csv et sources/cnss-annuaires.md."
+    },
+    {
+      "id": "cnss-annuaire-2010",
+      "type": "report",
+      "title": "الدليل الإحصائي 2010",
+      "title-short": "CNSS, annuaire statistique 2010",
+      "author": [
+        {
+          "literal": "Caisse nationale de sécurité sociale"
+        }
+      ],
+      "publisher": "Caisse nationale de sécurité sociale",
+      "publisher-place": "Tunis",
+      "URL": "https://www.cnss.tn/documents/10156/30862/annuaire2010.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            23
+          ]
+        ]
+      },
+      "note": "citation-key: cnss-annuaire-2010\n« الدليل الإحصائي 2010 » (annuaire statistique 2010 de la CNSS, édition arabe, 292 pages, séries 2000-2010 ; page de titre : إدارة الدراسات و مراقبة التصرف، مصلحة الإحصائيات). Des éditions consultées, la seule qui publie la répartition des assurés entre les classes de revenus pour 2000-2004 ; l'édition 2013 ne la donne qu'à partir de 2005. Pages lues (page du fichier PDF) : travailleurs non salariés, ensemble, répartition des assurés par classe de revenus, p. 141 ; Tunisiens à l'étranger, assurés p. 170, répartition des assurés par classe de revenus p. 173. Sur 2005-2010, ces répartitions coïncident avec celles des éditions 2013 et 2017. Document d'abord tiré des archives du web ; le site de la CNSS le sert toujours, identique octet pour octet à la capture du 16/07/2019 (même taille, même empreinte SHA-1, vérifié le 23/09/2026). Copie de vérification : capture du 16/07/2019, https://web.archive.org/web/20190716125415/http://www.cnss.tn:80/documents/10156/30862/annuaire2010.pdf (les captures de 2022 et 2024 de l'adresse https portent une autre empreinte et n'ont pas été utilisées). Liste des fichiers : dépôt tunisia-data, sources/cnss-urls.csv et sources/cnss-annuaires.md."
     }
   ]
 }

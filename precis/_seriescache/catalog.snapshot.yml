@@ -1130,3 +1130,92 @@
     ÷ نسبة هذا النظام، وهي كتلة مكافئة لا مصرّح بها؛ نسبة التوازن حدّ أعلى من 1988
     إلى 1991.'
   fiche: sources/cnss-annuaires.md
+- id: cnss-regimes-taux-equilibre
+  titre: 'CNSS, régimes de pension autres que le RSNA : taux de cotisation d''équilibre
+    de la branche pensions et sa décomposition (RSAA, RTNS, RTTE, RACI ; borne inférieure
+    pour le RSA), 2000-2017'
+  sources:
+  - cnss-annuaires-statistiques
+  build: scripts/build_cnss_regimes_taux_equilibre.py:main
+  raw:
+  - data/processed/caisses/cnss_regimes_annuaires.csv
+  output: data/processed/caisses/cnss_regimes_taux_equilibre.csv
+  unite: taux, millions de dinars, dinars par mois, personnes
+  perimetre: 'taux d''équilibre = pensions servies par le régime, toutes natures ÷
+    assiette = taux de remplacement apparent (pension moyenne ÷ revenu d''assiette
+    moyen) × ratio pensionnés / cotisants ; comparé au taux légal de la branche pensions.
+    Assiette : masse salariale déclarée (RSAA, 2000-2017) ; Σ assurés par classe ×
+    coefficient × SMIG 48 h × 2 400 h (RTNS non agricole 2005-2017, RTTE 2000-2017,
+    RACI 2004-2017) ou × SMAG × 300 j (RTNS agricole 2005-2017) ; RTNS ensemble :
+    somme des secteurs (2005-2017), encadrement entre les deux bases (2000-2004) ;
+    RSA : borne inférieure sur l''assiette maximale de quatre trimestres de 45 jours
+    au SMAG (2000-2017). Aucun taux pour le régime complémentaire, le RTFR ni les
+    travailleurs de chantiers.'
+  caveats: 'SÉRIE CALCULÉE. ASSIETTES FORFAITAIRES RECONSTITUÉES (RTNS, RTTE, RACI)
+    : les classes déclarées ne sont pas des revenus ; l''annuaire ne dit pas si l''effectif
+    d''une classe est celui du 31 décembre ou celui des affiliés de l''année ; l''assiette
+    suppose quatre trimestres cotisés par assuré compté : elle majore l''assiette
+    due si le décompte porte sur les affiliés de l''année, et plus encore l''assiette
+    encaissée — τ* est alors sous-estimé. SMIG DU RÉGIME DE 48 HEURES × 2 400 HEURES,
+    nommé par les textes : pas d''ambiguïté avec le régime de 40 heures. SMIG OU SMAG
+    EN VIGUEUR AU 1er JANVIER (règle écrite pour le RACI, supposée pour le RTNS et
+    le RTTE), variante au SMIG moyen de l''année à part : elle abaisse τ* de 3,9 %
+    au plus en valeur relative, sauf pour le RTNS agricole (4,7 % en 2011 ; 9,0 %
+    en 2012, année des deux paliers du SMAG). SMIG ET SMAG DU 1er AOÛT 2016 FIXÉS
+    RÉTROACTIVEMENT PAR DES DÉCRETS DU 5 JUIN 2017. RTNS 2000-2004 : CLASSES DE L''ENSEMBLE
+    SEULEMENT, τ* ENCADRÉ (5,9-7,3 % en 2000). RSA : BORNE INFÉRIEURE SEULEMENT (le
+    nombre de trimestres déclarés n''est pas publié), valable si chaque salarié a
+    au plus un employeur déclarant par trimestre (loi n° 81-6, art. 18) ; elle dépasse
+    60 % chaque année, parce que la cotisation porte sur 45 jours de SMAG par trimestre
+    au plus quand la pension se calcule sur 300 jours. RSAA : TAUX LÉGAL DE 7,5 %
+    PUBLIÉ PAR LA CAISSE, SANS DÉCRET DE RÉPARTITION IDENTIFIÉ ; salaire moyen déclaré
+    très bas (666 D par an en 2000) : en 2013, 83,6 % des salariés déclarent un salaire
+    mensuel de deux tiers du SMAG ou moins (annuaire 2013, pyramide en SMAG) — déclarations
+    partielles ou saisonnières, par déduction ; le remplacement apparent dépasse 100
+    % en 2016-2017. RACI : pensionnés plus nombreux que les cotisants jusqu''en 2009
+    (pensions transitoires sans cotisation de la loi n° 2002-104, art. 33-34, par
+    déduction) : τ* de 168 % en 2004, sans portée actuarielle. RTTE : régime jeune,
+    τ* de 0,2 % (2000) à 7,9 % (2017). TAUX LÉGAUX DATÉS (RSA 1er janvier 1981, RSAA
+    1er octobre 1989, RTTE 19 janvier 1989, RTNS 19 juillet 1995, RACI 5 janvier 2003
+    — le livre « Cotisations sociales » date ce dernier du 31 décembre 2002, jour
+    de la publication) ; la caisse ne les publie que pour 2013 et 2017, leur constance
+    sur 2000-2012 repose sur les textes. S''ARRÊTE EN 2017.'
+  titre_ar: 'الصندوق الوطني للضمان الاجتماعي، أنظمة الجرايات غير نظام الأجراء في القطاع
+    غير الفلاحي: نسبة المساهمة المحقّقة للتوازن في فرع الجرايات ومكوّناتها (النظام
+    الفلاحي المحسّن، العملة غير الأجراء، العملة بالخارج، الفنانون؛ حدّ أدنى لنظام
+    الأجراء الفلاحيين)، 2000-2017'
+  unite_ar: نسب، ملايين الدنانير، دنانير شهرياً، أشخاص
+  perimetre_ar: 'نسبة التوازن = الجرايات المدفوعة بجميع أنواعها ÷ قاعدة الاشتراك =
+    نسبة التعويض الظاهرة (معدّل الجراية ÷ معدّل دخل القاعدة) × نسبة المنتفعين إلى
+    المساهمين؛ وتُقارن بالنسبة القانونية لفرع الجرايات. القاعدة: كتلة الأجور المصرّح
+    بها (النظام المحسّن، 2000-2017)؛ مجموع المضمونين حسب الصنف × الضارب × الأجر الأدنى
+    المهني لنظام 48 ساعة × 2 400 ساعة (العملة غير الأجراء في القطاع غير الفلاحي 2005-2017،
+    والعملة بالخارج 2000-2017، والفنانون 2004-2017) أو × الأجر الأدنى الفلاحي × 300
+    يوم (القطاع الفلاحي 2005-2017)؛ مجموع القطاعين: جمع القاعدتين (2005-2017) وحصر
+    بين القاعدتين (2000-2004)؛ الأجراء الفلاحيون: حدّ أدنى على القاعدة القصوى (أربع
+    ثلاثيات من 45 يوماً بالأجر الأدنى الفلاحي). لا نسبة للنظام التكميلي ولا لنظام
+    الدخل المحدود ولا لعملة الحضائر.'
+  caveats_ar: 'سلسلة محسوبة. القواعد الجزافية معاد تكوينها: الأصناف المصرّح بها ليست
+    مداخيل، ولا يذكر الكتاب إن كان عدد الصنف عدد 31 ديسمبر أم عدد المنخرطين خلال السنة؛
+    والقاعدة تفترض أربع ثلاثيات لكلّ مضمون، فتزيد على القاعدة المستحقّة إن كان العدّ
+    للمنخرطين خلال السنة، وأكثر على المستخلصة، فتكون النسبة أدنى من حقيقتها. الأجر
+    الأدنى المعتمد هو أجر نظام 48 ساعة × 2 400 ساعة كما تسمّيه النصوص، فلا لبس مع
+    نظام 40 ساعة. الأجر الأدنى المعتمد هو النافذ في غرّة جانفي (قاعدة مكتوبة لنظام
+    الفنانين، ومفترضة للعملة غير الأجراء والعملة بالخارج)، مع صيغة على معدّل السنة
+    تخفّض النسبة بـ3,9 % على الأكثر، باستثناء القطاع الفلاحي (4,7 % سنة 2011 و9,0
+    % سنة 2012). الأجران الأدنيان لغرّة أوت 2016 حُدّدا بأمرين مؤرّخين في 5 جوان 2017
+    بمفعول رجعي. العملة غير الأجراء 2000-2004: أصناف المجموع فقط، فالنسبة محصورة (5,9-7,3
+    % سنة 2000). الأجراء الفلاحيون: حدّ أدنى فقط، صالح إن كان لكلّ أجير مؤجّر واحد
+    مصرّح في الثلاثية، يفوق 60 % كلّ سنة، لأنّ الاشتراك على 45 يوماً في الثلاثية على
+    الأكثر والجراية على 300 يوم. النظام المحسّن: نسبة 7,5 % ينشرها الصندوق دون أمر
+    توزيع معروف؛ معدّل الأجر المصرّح به ضعيف جدّاً (666 د سنة 2000؛ وفي 2013 يصرّح
+    83,6 % من الأجراء بأجر شهري لا يتجاوز ثلثي الأجر الأدنى الفلاحي، أي تصاريح جزئية
+    أو موسمية استنتاجاً)، فنسبة التعويض الظاهرة تتجاوز 100 % في 2016-2017. الفنانون:
+    المنتفعون أكثر من المساهمين حتّى 2009 (جرايات انتقالية دون اشتراك، استنتاجاً)،
+    فالنسبة 168 % سنة 2004 بلا دلالة اكتوارية. العملة بالخارج: نظام فتيّ، من 0,2 %
+    (2000) إلى 7,9 % (2017). النسب القانونية مؤرّخة (الأجراء الفلاحيون غرّة جانفي
+    1981، النظام المحسّن غرّة أكتوبر 1989، العملة بالخارج 19 جانفي 1989، العملة غير
+    الأجراء 19 جويلية 1995، الفنانون 5 جانفي 2003 — ويؤرّخها كتاب «الاشتراكات الاجتماعية»
+    بيوم النشر 31 ديسمبر 2002)؛ ولا ينشرها الصندوق إلّا لسنتَي 2013 و2017. تتوقّف
+    السلسلة سنة 2017.'
+  fiche: sources/cnss-annuaires.md

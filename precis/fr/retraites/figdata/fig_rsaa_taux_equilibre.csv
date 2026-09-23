@@ -1,0 +1,25 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-23
+# séries (tunisia_data) : cnss-regimes-taux-equilibre
+# sources (citation) : @cnss-annuaires-statistiques
+# fiches : sources/cnss-annuaires.md
+# méthode/hypothèses : SÉRIE CALCULÉE. ASSIETTES FORFAITAIRES RECONSTITUÉES (RTNS, RTTE, RACI) : les classes déclarées ne sont pas des revenus ; l'annuaire ne dit pas si l'effectif d'une classe est celui du 31 décembre ou celui des affiliés de l'année ; l'assiette suppose quatre trimestres cotisés par assuré compté : elle majore l'assiette due si le décompte porte sur les affiliés de l'année, et plus encore l'assiette encaissée — τ* est alors sous-estimé. SMIG DU RÉGIME DE 48 HEURES × 2 400 HEURES, nommé par les textes : pas d'ambiguïté avec le régime de 40 heures. SMIG OU SMAG EN VIGUEUR AU 1er JANVIER (règle écrite pour le RACI, supposée pour le RTNS et le RTTE), variante au SMIG moyen de l'année à part : elle abaisse τ* de 3,9 % au plus en valeur relative, sauf pour le RTNS agricole (4,7 % en 2011 ; 9,0 % en 2012, année des deux paliers du SMAG). SMIG ET SMAG DU 1er AOÛT 2016 FIXÉS RÉTROACTIVEMENT PAR DES DÉCRETS DU 5 JUIN 2017. RTNS 2000-2004 : CLASSES DE L'ENSEMBLE SEULEMENT, τ* ENCADRÉ (5,9-7,3 % en 2000). RSA : BORNE INFÉRIEURE SEULEMENT (le nombre de trimestres déclarés n'est pas publié), valable si chaque salarié a au plus un employeur déclarant par trimestre (loi n° 81-6, art. 18) ; elle dépasse 60 % chaque année, parce que la cotisation porte sur 45 jours de SMAG par trimestre au plus quand la pension se calcule sur 300 jours. RSAA : TAUX LÉGAL DE 7,5 % PUBLIÉ PAR LA CAISSE, SANS DÉCRET DE RÉPARTITION IDENTIFIÉ ; salaire moyen déclaré très bas (666 D par an en 2000) : en 2013, 83,6 % des salariés déclarent un salaire mensuel de deux tiers du SMAG ou moins (annuaire 2013, pyramide en SMAG) — déclarations partielles ou saisonnières, par déduction ; le remplacement apparent dépasse 100 % en 2016-2017. RACI : pensionnés plus nombreux que les cotisants jusqu'en 2009 (pensions transitoires sans cotisation de la loi n° 2002-104, art. 33-34, par déduction) : τ* de 168 % en 2004, sans portée actuarielle. RTTE : régime jeune, τ* de 0,2 % (2000) à 7,9 % (2017). TAUX LÉGAUX DATÉS (RSA 1er janvier 1981, RSAA 1er octobre 1989, RTTE 19 janvier 1989, RTNS 19 juillet 1995, RACI 5 janvier 2003 — le livre « Cotisations sociales » date ce dernier du 31 décembre 2002, jour de la publication) ; la caisse ne les publie que pour 2013 et 2017, leur constance sur 2000-2012 repose sur les textes. S'ARRÊTE EN 2017.
+# note : Régime agricole amélioré : taux de cotisation d'équilibre, taux légal de la branche pensions et décomposition du taux d'équilibre, 2000-2017
+Année,Taux d'équilibre (%),Taux légal de la branche pensions (%),Écart taux d'équilibre − taux légal (points),Remplacement apparent (%),Pensionnés ÷ cotisants (%),Pension moyenne (D/mois),Revenu d'assiette moyen (D/mois),"Pensions servies, toutes natures (MD)",Assiette (MD),"Pensionnés, toutes natures",Cotisants (actifs),Assiette retenue
+2000,2.5,7.5,-5.0,35.6,7.0,19.78,55.5,1.122,44.92,4727,67451,masse salariale déclarée
+2001,3.97,7.5,-3.53,49.3,8.1,27.03,54.84,1.869,47.026,5762,71460,masse salariale déclarée
+2002,4.36,7.5,-3.14,51.8,8.4,27.44,53.0,2.083,47.742,6325,75073,masse salariale déclarée
+2003,4.47,7.5,-3.03,53.3,8.4,28.15,52.81,2.292,51.281,6786,80928,masse salariale déclarée
+2004,4.51,7.5,-2.99,54.1,8.3,30.33,56.05,2.631,58.321,7228,86709,masse salariale déclarée
+2005,5.07,7.5,-2.43,61.1,8.3,33.98,55.61,3.128,61.735,7672,92512,masse salariale déclarée
+2006,5.48,7.5,-2.02,66.5,8.2,36.58,55.01,3.589,65.548,8177,99304,masse salariale déclarée
+2007,5.76,7.5,-1.74,71.8,8.0,39.49,54.99,4.125,71.568,8704,108464,masse salariale déclarée
+2008,5.84,7.5,-1.66,74.7,7.8,42.39,56.71,4.678,80.133,9197,117752,masse salariale déclarée
+2009,6.12,7.5,-1.38,78.1,7.8,45.79,58.62,5.362,87.583,9758,124502,masse salariale déclarée
+2010,6.36,7.5,-1.14,84.3,7.5,50.5,59.94,6.091,95.788,10051,133174,masse salariale déclarée
+2011,6.32,7.5,-1.18,84.1,7.5,56.42,67.09,7.13,112.756,10531,140065,masse salariale déclarée
+2012,6.97,7.5,-0.53,88.6,7.9,63.41,71.53,8.676,124.488,11402,145025,masse salariale déclarée
+2013,7.59,7.5,0.09,95.0,8.0,73.91,77.84,10.677,140.589,12038,150513,masse salariale déclarée
+2014,8.33,7.5,0.83,100.6,8.3,79.39,78.94,12.257,147.21,12866,155397,masse salariale déclarée
+2015,8.87,7.5,1.37,108.0,8.2,86.43,80.05,14.132,159.382,13625,165923,masse salariale déclarée
+2016,10.09,7.5,2.59,112.8,8.9,90.11,79.87,16.46,163.13,15222,170199,masse salariale déclarée
+2017,10.57,7.5,3.07,109.5,9.7,92.54,84.49,18.771,177.504,16903,175078,masse salariale déclarée

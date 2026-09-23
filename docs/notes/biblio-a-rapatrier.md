@@ -99,28 +99,38 @@ Reste à faire — **dans cet ordre**, feu vert humain requis pour toute écritu
 livres, hors de portée de « Retraites » (rendu `[?]`), et écraserait les 12 corrections.
 
 - [ ] 1. `--permissions` → `--verifier` → `--dry-run`, avec la clé d'écriture.
-- [ ] 2. **`--corriger`** (Zotero ignore ces corrections ; `--pousser` ne crée que les absentes
+- [x] 2. **Fait le 23/09/2026** : `--corriger` sur les 12 clés — 12 corrigées, 0 échec.
+      Pour mémoire, **`--corriger`** (Zotero ignore ces corrections ; `--pousser` ne crée que les absentes
       et `--comparer` ne compare pas la note) :
       `loi81-6,loi2007-43,arrete-1998-07-29-revalorisation-rtns,loi2002-32,decret95-1166,decret89-107,decret2002-916,decret-loi2024-4,loi2002-104,decret2003-894,arrete-1978-11-18-retraite-complementaire,loi89-73`.
       `--corriger` abandonne tout le lot à la première clé absente de Zotero : n'y ajouter
       **aucune** des 19 nouvelles avant leur création. Si la chaîne de la section RSNA
       (`decret2003-1212,decret74-499,loi60-33,decret82-1030`) est toujours en attente, la joindre
       à celle-ci en un seul appel.
-- [ ] 3. **Déclassement** : `--appliquer-rangement` à blanc, vérifier qu'il ne touche que
+- [x] 3. **Fait le 23/09/2026** : `--appliquer-rangement` — 3 déclassements, `decret2002-916`
+      hors `cotisations_sociales`, `decret-loi2024-4` et `arrete-2025-08-29-allocation-pauvres`
+      hors `prestations_sociales` ; contrôle à blanc suivant : 0 à reclasser.
+      Pour mémoire, **déclassement** : `--appliquer-rangement` à blanc, vérifier qu'il ne touche que
       `decret2002-916` (− `cotisations_sociales`), `decret-loi2024-4` et
       `arrete-2025-08-29-allocation-pauvres` (− `prestations_sociales`) — plus ce qui reste
       pendant de la section RSNA —, puis `--appliquer-rangement --pousser`. À faire **avant**
       l'étape 4 : ensuite, `--appliquer-rangement` rangerait aussi les 19 dans `retraites`.
-- [ ] 4. Pousser les 19 clés : `pousser-un` → `comparer` → `pousser-tout` :
+- [x] 4. **Fait le 23/09/2026** : `pousser-un` puis `pousser-tout` — 19 créées, 0 échec ;
+      restées sans collection, donc au fonds commun (décision humaine : on les classera plus
+      tard). `--comparer` signale un **faux écart `shortTitle`** : Zotero rend `shortTitle`, que
+      la descente renomme en `title-short` (`RENOMMAGES` de `sync_biblio.py`), mais `--comparer`
+      n'applique pas ce renommage. À corriger plus tard dans `push_biblio.py` (non corrigé).
+      Pour mémoire, pousser les 19 clés : `pousser-un` → `comparer` → `pousser-tout` :
       `arrete-1997-01-27-retraite-complementaire`, `arrete-2020-07-10-prime-pensions`,
       `arrete-2026-08-05-allocation-pauvres`, `decret2019-379`, `decret77-546`, `decret80-103`,
       `decret82-1028`, `decret82-1359`, `decret82-1360`, `decret89-1611`, `decret90-548`,
       `decret91-604`, `decret93-357`, `decretloi2020-33`, `loi2021-37`, `loi81-6-rect`,
       `loi95-102`, `loi96-66`, `loi97-61`.
-- [ ] 5. `--ranger` : sans effet attendu sur les 19 (leur fichier est le fonds commun, sans
+- [ ] 5. **Non lancé** (23/09/2026). `--ranger` : sans effet attendu sur les 19 (leur fichier est le fonds commun, sans
       livre) ; elles restent sans collection et redescendent dans le fonds commun, conformément
       à la convention « chaîne d'un régime au fonds commun ».
-- [ ] 6. **Conflit de convention à trancher** (même question que la section RSNA ci-dessous) :
+- [ ] 6. **Décision humaine du 23/09/2026 : on classera plus tard** ; d'ici là, les 19 restent
+      sans collection. **Conflit de convention à trancher** (même question que la section RSNA ci-dessous) :
       citées par le seul livre « Retraites », les 19 apparaîtront au contrôle comme « à ranger :
       retraites », et tout `--appliquer-rangement` ultérieur les rangerait dans `retraites`, donc
       dans `precis/{fr,ar}/retraites/references.json`. Ne pas lancer `--appliquer-rangement`
@@ -138,6 +148,34 @@ Vérifications de métadonnées en attente (sans écriture Zotero) :
 - [ ] `arrete-2026-08-05-allocation-pauvres` : URL à poser quand `jort_cache.db` couvrira août 2026
       (candidats `Jo0802026` / `Ja0802026`, HTTP 200 le 23/09/2026).
 - [ ] `decret80-103` : chiffre illisible (« au cours des … premières années ») à lire sur l'éd. ar.
+
+Annuaire statistique 2010 de la CNSS (passe du 23/09/2026, TODO du bibliographe de
+`_secteur_prive.qmd`, § non-salariés et § Tunisiens à l'étranger) :
+- [x] **Clé distincte `cnss-annuaire-2010`** versée dans `precis/{fr,ar}/retraites/references.json`,
+      et non une troisième édition dans la note de `cnss-annuaires-statistiques` : les pages
+      citées n'appartiennent qu'au fichier 2010, et un locateur sur l'entrée composite ne dirait
+      pas de quelle édition il s'agit. « الدليل الإحصائي 2010 » (couverture lue à l'image ; page
+      de titre : إدارة الدراسات و مراقبة التصرف، مصلحة الإحصائيات), éd. arabe, 292 pages
+      (en note, pas de `number-of-pages`), séries 2000-2010 ; `issued` laissé vide (2010 est
+      l'année des données ; le PDF est créé en avril 2012, métadonnée de fichier). Pages lues
+      (page du fichier ; p. 170 imprimée « 143 ») : RTNS ensemble, classes, p. 141 ; RTTE,
+      assurés p. 170, classes p. 173. L'édition 2013 ne publie les classes qu'à partir de 2005
+      (p. 233 et 268 lues). **Hors convention « archives du web »** : `cnss.tn` sert toujours le
+      fichier, identique octet pour octet (7 462 383 octets, SHA-1 `0df636ea…`, téléchargé le
+      23/09/2026) ; URL = adresse de l'éditeur ; capture du 16/07/2019 en note (horodatage lu au
+      CDX, empreinte CDX décodée = SHA-1 du fichier) ; captures 2022 et 2024 d'une autre empreinte.
+      Citée l. 1144 (`p. 141`) et l. 1246 (`p. 170 et 173`) ; les deux TODO sont retirés.
+- [x] Note de `cnss-annuaires-statistiques` (FR et AR) complétée des pages lues des parties
+      consacrées aux autres régimes, 2017 / 2013 (d'après `tunisia-data/sources/cnss-annuaires.md` ;
+      pages 2013 recoupées sur le fichier le 23/09/2026), et d'un renvoi à `cnss-annuaire-2010`.
+- [ ] Zotero (feu vert humain) : **pousser `cnss-annuaire-2010`**, puis la ranger dans
+      `retraites` (citée par ce seul livre, comme `cnss-annuaires-statistiques`) ; **`--corriger
+      cnss-annuaires-statistiques`** si elle est déjà dans Zotero, sans quoi la prochaine descente
+      effacera les pages ajoutées à sa note. `push_biblio.py --verifier` (hors ligne) : 515 entrées,
+      0 perte. Rendus FR et AR de « Retraites » : 0 `[?]`, 0 `?@`. `dry-run` et `controle-rangement` non lancés dans
+      cette passe (workflows interdits par la consigne) : à lancer à la clôture.
+- [ ] Hors du dépôt, à signaler : `tunisia-data/sources/cnss-urls.csv` dit l'annuaire 2010
+      « non exploité », quand `cnss-annuaires.md` l'exploite pour les classes du RTNS et du RTTE.
 
 ### Livre « Retraites » — RSNA avant 1974 et réformes du cœur du régime (versement du 23/09/2026)
 

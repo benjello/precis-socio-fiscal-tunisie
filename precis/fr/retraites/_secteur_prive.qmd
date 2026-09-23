@@ -835,11 +835,38 @@ La loi n° 2007-43 précise enfin que les pensions d'orphelins interrompues avan
 officiel, pour donner la vue d'évolution de la revalorisation des pensions agricoles ; la série
 n'est aujourd'hui établie qu'en quelques points. -->
 
-<!-- TODO (rédacteur) : figure du taux d'équilibre du régime des salariés agricoles, sur le modèle
-de fig-rsna-taux-equilibre, quand la série par régime sera extraite des annuaires de la CNSS
-(annuaire 2013, 6e partie ; annuaire 2017, الباب السادس). L'assiette est forfaitaire : effectifs par
-catégorie × coefficient × SMAG × 300 jours ; vérifier sur l'art. 18 de la loi n° 81-6 si la
-cotisation est due sur les jours travaillés plutôt que sur 300 jours. -->
+#### L'équilibre du régime {#sec-rsa-equilibre}
+
+Le taux de cotisation d'équilibre $\tau^*$, défini pour le régime des salariés non agricoles (@sec-rsna-equilibre), ne peut être calculé exactement pour ce régime. Les annuaires statistiques de la caisse publient, de 2000 à 2017, ses salariés déclarés par catégorie, ses pensionnés et ses pensions servies, mais non le nombre de trimestres déclarés [@cnss-annuaires-statistiques]. Or l'assiette en dépend : la cotisation est assise sur « un salaire forfaitaire calculé sur la base du salaire minimum agricole garanti rapporté à une durée de travail de 45 jours par trimestre », affecté du coefficient de la catégorie, et « toute période de travail égale ou supérieure à 45 jours chez le même employeur est comptée pour un trimestre » [@loi81-6, art. 18]. En retenant pour chaque salarié déclaré quatre trimestres de 45 jours au SMAG moyen de l'année, soit l'assiette la plus haute que permet l'article 18, on obtient une **borne inférieure** du taux d'équilibre : le taux véritable lui est supérieur, pourvu que chaque salarié n'ait qu'un employeur déclarant par trimestre, deux employeurs dans le même trimestre en faisant deux. Cette borne est comparée au taux légal $\kappa$ de la branche pensions, 5,25 % depuis le 1^er^ janvier 1981 [@decret81-224, art. 1 et 4 ; @loi81-6, art. 88].
+
+```{python}
+#| label: fig-rsa-taux-equilibre
+#| fig-cap: "Régime des salariés agricoles : borne inférieure du taux de cotisation d'équilibre, taux légal de la branche pensions et rapport entre pensionnés et cotisants, 2000-2017."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import taux_equilibre_cnss_regimes as tr
+import figtools
+figtools.figure_tabs(
+    tr.fig_rsa(), tr.table("rsa"), "cnss-regimes-taux-equilibre",
+    slug="fig_rsa_taux_equilibre",
+    caption="Régime des salariés agricoles : borne inférieure du taux de cotisation d'équilibre, taux légal de la branche pensions et rapport entre pensionnés et cotisants, 2000-2017",
+    note_lecture=(
+        "**La borne inférieure du taux d'équilibre dépasse 60 % toutes les années, pour un "
+        "taux légal de 5,25 %.** Elle descend de 78,1 % en 2000 à 60,6 % en 2009, puis "
+        "remonte à 87,9 % en 2017 (panneau de gauche, triangles creux). Le taux véritable est "
+        "au-dessus de la courbe : l'assiette retenue est la plus haute que la loi permette, "
+        "quatre trimestres de 45 jours de SMAG par salarié déclaré, affectés du coefficient "
+        "de sa catégorie. Le panneau de droite rapporte le nombre de pensionnés, toutes "
+        "natures, à celui des salariés déclarés : 183 % en 2000, 152 % en 2009, 224 % en "
+        "2017 ; la ligne de 100 % marque l'égalité des deux effectifs. Le taux de "
+        "remplacement apparent ne peut être calculé sans le nombre de trimestres déclarés, "
+        "que les annuaires ne publient pas : le taux d'équilibre n'est donc pas décomposé. "
+        "La série s'arrête en 2017, dernier annuaire statistique retrouvé."),
+)
+```
+
+La borne évolue comme le rapport entre pensionnés et cotisants : rapportée à ce rapport, elle reste entre 39 % et 43 % toutes les années, 43 % en 2000 et 39 % en 2017. Le nombre de salariés déclarés passe de 8 235 en 2000 à 11 670 en 2009, puis revient à 9 019 en 2017, quand celui des pensionnés croît de 15 088 à 20 192 : le régime compte plus de pensionnés que de salariés déclarés toutes les années de la série. L'autre facteur tient aux textes : la cotisation porte au plus sur quatre trimestres de 45 jours de SMAG par an, quand la pension se calcule sur un salaire de référence de 300 jours, affecté du coefficient moyen de la carrière [@loi81-6, art. 18 et 50]. Le taux d'équilibre rapporte les seules pensions aux seuls salaires forfaitaires déclarés ; il ne tient compte ni des réserves de la caisse ni de ses autres ressources.
 
 ### Le régime agricole amélioré {#sec-rsaa}
 
@@ -888,9 +915,41 @@ Pour les pêcheurs indépendants et les petits armateurs qui relèvent du régim
 
 **Aucune réforme du cœur du régime.** Aucun modificatif du titre III n'a été retrouvé au *Journal officiel* jusqu'au 18 septembre 2026. Les lois n° 96-66 et 97-61, qui réécrivent les articles 60 à 69 de la loi n° 81-6 (@sec-rsa-evolution), s'appliquent au régime amélioré par le renvoi de l'article 101.
 
-<!-- TODO (rédacteur) : figure du taux d'équilibre du régime agricole amélioré, directement
-calculable : masse salariale déclarée et pensions servies, annuaires de la CNSS 2013 (7e partie,
-p. 101 et 112 imprimées) et 2017 (الباب السابع), 2000-2017. Séries en cours d'extraction. -->
+**L'équilibre du régime.** Hors le régime des salariés non agricoles, c'est le seul régime de la caisse dont les annuaires statistiques publient la masse salariale déclarée, de 2000 à 2017 [@cnss-annuaires-statistiques]. Le taux d'équilibre $\tau^*$ s'y calcule donc comme pour le régime non agricole (@sec-rsna-equilibre) : les pensions servies, de toutes natures, rapportées à la masse déclarée, produit du taux de remplacement apparent $\bar p / \bar w$ et du rapport $N_p / N_c$ entre pensionnés et cotisants, ceux-ci étant les salariés déclarés. Il est comparé à un taux légal $\kappa$ de 7,5 %, celui que la caisse publie pour la branche pensions du régime [@cnss-annuaires-statistiques]. La loi fixe le taux global de cotisation du régime à 15 %, en vigueur depuis le 1^er^ octobre 1989 [@loi89-73, art. 4] ; aucun texte identifié ne répartit ces 15 % entre les branches pour l'ensemble du régime, et les 7,5 % pour les pensions ne sont fixés par un texte que pour les pêcheurs indépendants et les petits armateurs [@decret90-548, art. 1-2].
+
+```{python}
+#| label: fig-rsaa-taux-equilibre
+#| fig-cap: "Régime agricole amélioré : taux de cotisation d'équilibre, taux légal de la branche pensions et décomposition du taux d'équilibre, 2000-2017."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import taux_equilibre_cnss_regimes as tr
+import figtools
+figtools.figure_tabs(
+    tr.fig_regime("rsaa"), tr.table("rsaa"), "cnss-regimes-taux-equilibre",
+    slug="fig_rsaa_taux_equilibre",
+    caption="Régime agricole amélioré : taux de cotisation d'équilibre, taux légal de la branche pensions et décomposition du taux d'équilibre, 2000-2017",
+    note_lecture=(
+        "**Le taux d'équilibre passe de 2,50 % de la masse salariale déclarée en 2000 à "
+        "10,57 % en 2017 ; inférieur au taux de 7,5 % publié par la caisse jusqu'en 2012, il "
+        "le dépasse depuis 2013.** Il vaut 5,07 % en 2005 et 6,97 % en 2012 ; l'écart au "
+        "taux légal passe de −5,00 points en 2000 à +0,09 point en 2013 et +3,07 points en "
+        "2017. Le panneau de droite trace, sur une échelle logarithmique, le taux "
+        "d'équilibre et ses deux facteurs : la distance du taux d'équilibre à la ligne de "
+        "100 % y est la somme de celles des deux facteurs, comptées positivement au-dessus "
+        "de la ligne et négativement au-dessous. Le « Taux de remplacement apparent (pension "
+        "moyenne ÷ revenu d'assiette moyen) » monte de 35,6 % en 2000 à 84,3 % en 2010, et "
+        "dépasse 100 % de 2014 à 2017 (109,5 % en 2017) ; le rapport « Pensionnés ÷ "
+        "cotisants » reste entre 7,5 % et 8,9 % de 2001 à 2016, et atteint 9,7 % en 2017. "
+        "La série s'arrête en 2017, dernier annuaire statistique retrouvé."),
+)
+```
+
+La hausse du taux d'équilibre tient presque entièrement au remplacement apparent. En logarithme, sa hausse de 1,443 de 2000 à 2017 se décompose en + 1,123 pour le remplacement apparent et + 0,320 pour le rapport entre pensionnés et cotisants. Ce rapport reste bas parce que les salariés déclarés augmentent aussi vite que les pensionnés : 67 451 salariés et 4 727 pensionnés en 2000, 175 078 et 16 903 en 2017.
+
+Un remplacement apparent supérieur à 100 % ne signifie pas que chaque pension dépasse le salaire sur lequel elle a été calculée. Il rapporte la pension moyenne, toutes natures, au salaire moyen déclaré par salarié, qui est très bas : 55,50 dinars par mois en 2000 et 84,49 en 2017, pour une pension moyenne de 19,78 puis 92,54 dinars [@cnss-annuaires-statistiques]. Les annuaires n'en donnent pas la raison ; des déclarations partielles ou saisonnières l'expliqueraient.
+
+<!-- TODO (documentaliste) : construire la série de la répartition des salariés du régime agricole amélioré par tranche de salaire déclaré (pyramides des salaires des annuaires 2010, 2013 et 2017 ; en 2013, 83,6 % des salariés déclarent au plus les deux tiers du SMAG mensuel, d'après tunisia-data, sources/cnss-annuaires.md), pour étayer par une vue datée la faiblesse du salaire moyen déclaré. --> La masse déclarée étant ainsi réduite, le taux d'équilibre du régime se lit comme un ordre de grandeur, et ses réserves sont celles du régime non agricole : la masse est déclarée et non encaissée, les pensions sont comptables et les salaires déclaratifs (@sec-rsna-equilibre).
 
 ## Le régime complémentaire {#sec-regime-complementaire}
 
@@ -930,9 +989,7 @@ L'arrêté ne porte pas de clause d'effet : le *Journal officiel* n° 11 du 7 f�
 <!-- TODO (documentaliste) : rechercher la série du salaire de référence et de la valeur du point
 (rapports annuels de la CAVIS puis de la CNSS) et lire l'annexe I du règlement à l'image. -->
 
-<!-- TODO (rédacteur) : pas de figure du taux d'équilibre du régime complémentaire tant que son
-assiette (salaire différentiel) n'est pas publiée ; les annuaires de la CNSS n'en donnent que les
-effectifs (annuaire 2013, 4e partie ; annuaire 2017, الباب الرابع). -->
+**Pas de taux d'équilibre.** Les annuaires statistiques de la caisse publient, de 2000 à 2017, les effectifs du régime complémentaire et les pensions qu'il sert, mais non son assiette, la fraction des salaires qui excède la limite de calcul du régime légal [@cnss-annuaires-statistiques] : son taux d'équilibre ne peut être calculé. Ses pensions entrent dans la variante « avec le régime complémentaire » du taux d'équilibre du régime des salariés non agricoles (@sec-rsna-equilibre).
 
 ## Les non-salariés et les régimes particuliers {#sec-regimes-particuliers}
 
@@ -1082,11 +1139,77 @@ vigueur du décret n° 2002-3018. -->
 
 **Depuis 2008.** Aucun texte modifiant le décret n° 95-1166 après le décret n° 2008-172 n'a été retrouvé au *Journal officiel* jusqu'au numéro du 18 septembre 2026 ; les visas des arrêtés conjoints du 10 juillet 2020, du 29 août 2025 et du 5 août 2026 le citent encore comme son dernier modificatif [@arrete-2020-07-10-prime-pensions ; @arrete-2025-08-29-allocation-pauvres ; @arrete-2026-08-05-allocation-pauvres]. L'âge, le taux et le plafond de la pension de vieillesse sont donc, pour le secteur non agricole, ceux de 1982, et, pour le secteur agricole, ceux de 1995 ; les classes de 1 à 18 et la pension minimale de 30 % datent de 1995, et la revalorisation automatique de 2002.
 
-<!-- TODO (rédacteur) : figure du taux d'équilibre du régime des travailleurs non salariés, volets
-non agricole et agricole, quand la série par régime sera extraite des annuaires de la CNSS
-(annuaire 2013, 8e à 10e parties : classes de revenus et pensions ; annuaire 2017, الباب الثامن à
-العاشر). L'assiette se reconstruit : effectifs par classe × coefficient × SMIG ou SMAG annuel ;
-arbitrage à documenter entre classe moyenne annuelle et classe de fin d'année. -->
+#### L'équilibre du régime {#sec-rtns-equilibre}
+
+Les annuaires statistiques de la caisse publient, pour chaque secteur et pour l'ensemble, les assurés, les pensionnés et les pensions servies de 2000 à 2017, et la répartition des assurés entre les classes de revenus : par secteur depuis 2005, pour l'ensemble seulement de 2000 à 2004 [@cnss-annuaires-statistiques ; @cnss-annuaire-2010, p. 141]. L'assiette du taux d'équilibre $\tau^*$ (@sec-rsna-equilibre) n'y est pas publiée ; elle se reconstitue. C'est la somme, sur les classes, du nombre d'assurés de la classe multiplié par son coefficient et par le salaire minimum annuel du secteur $S_s$ — le SMIG du régime de 48 heures rapporté à 2 400 heures, ou le SMAG rapporté à 300 jours [@decret95-1166, art. 7 et 25]. Le salaire minimum retenu est celui qui est en vigueur au 1^er^ janvier de l'année ; une variante au salaire minimum moyen de l'année, au prorata des jours de vigueur, est tracée en trait fin. Le revenu d'assiette moyen $\bar w$ est cette assiette divisée par le nombre d'assurés $N_c$. De 2000 à 2004, faute de répartition des classes entre les deux secteurs, le taux d'équilibre de l'ensemble n'est qu'encadré : une assiette toute au SMIG en donne la borne basse, une assiette toute au SMAG la borne haute. Le taux d'équilibre est comparé au taux légal $\kappa$ de la branche pensions, 7 % depuis le 19 juillet 1995 [@decret95-1166, art. 9], après 5,25 % dans les deux régimes de 1982 [@decret82-1359, art. 8 ; @decret82-1360, art. 5].
+
+```{python}
+#| label: fig-rtns-taux-equilibre
+#| fig-cap: "Travailleurs non salariés : taux de cotisation d'équilibre par secteur et pour l'ensemble, et taux légal de la branche pensions, 2000-2017."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import taux_equilibre_cnss_regimes as tr
+import figtools
+figtools.figure_tabs(
+    tr.fig_rtns_taux(), tr.table_rtns(), "cnss-regimes-taux-equilibre",
+    slug="fig_rtns_taux_equilibre",
+    caption="Travailleurs non salariés : taux de cotisation d'équilibre par secteur et pour l'ensemble, et taux légal de la branche pensions, 2000-2017",
+    note_lecture=(
+        "**Les deux secteurs n'ont pas le même équilibre : de 2005 à 2017, le taux "
+        "d'équilibre du secteur non agricole reste sous le taux légal de 7 %, celui du "
+        "secteur agricole en vaut de 2,3 à 3,1 fois.** Dans le secteur non agricole, il passe "
+        "de 2,59 % de l'assiette en 2005 à 4,30 % en 2013 et 6,65 % en 2017. Dans le secteur "
+        "agricole, il recule de 21,45 % en 2005 à 16,22 % en 2013, puis se tient entre 16,9 % "
+        "et 17,7 % jusqu'en 2017 (17,56 %). Pour l'ensemble, il reste entre 5,36 % et 5,49 % "
+        "de 2005 à 2010, dépasse le taux légal depuis 2014 (7,22 %) et atteint 8,63 % en "
+        "2017. De 2000 à 2004, les segments verticaux encadrent le taux de l'ensemble, entre "
+        "5,85 % et 7,26 % en 2000 et entre 5,35 % et 6,67 % en 2004 ; aucun trait ne les "
+        "relie à la suite, calculée autrement. Les traits fins donnent le taux au salaire "
+        "minimum moyen de l'année : ils sont au-dessous des traits pleins les années où le "
+        "salaire minimum est relevé, et s'en écartent le plus pour le secteur agricole en "
+        "2012 (16,40 % contre 18,03 %). La série s'arrête en 2017, dernier annuaire "
+        "statistique retrouvé."),
+)
+```
+
+La décomposition du taux d'équilibre montre des évolutions opposées (@fig-rtns-taux-equilibre-decomposition). Dans le secteur agricole, le rapport entre pensionnés et assurés recule de 79,7 % en 2005 à 53,4 % en 2014, puis remonte à 57,4 % en 2017, et le remplacement apparent passe de 26,9 % à 30,6 % : en logarithme, la baisse de 0,200 du taux d'équilibre de 2005 à 2017 se décompose en − 0,328 pour le rapport entre pensionnés et assurés et + 0,128 pour le remplacement apparent. Dans le secteur non agricole, les deux facteurs montent, le rapport de 12,1 % à 19,8 % et le remplacement de 21,5 % à 33,5 % ; la hausse de 0,943 se décompose en + 0,497 et + 0,446. Pour l'ensemble, la hausse de 0,471 se partage entre + 0,389 pour le remplacement apparent et + 0,082 pour le rapport entre pensionnés et assurés.
+
+```{python}
+#| label: fig-rtns-taux-equilibre-decomposition
+#| fig-cap: "Travailleurs non salariés : décomposition du taux de cotisation d'équilibre par secteur et pour l'ensemble, 2005-2017."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import taux_equilibre_cnss_regimes as tr
+import figtools
+figtools.figure_tabs(
+    tr.fig_rtns_decomposition(), tr.table_rtns(), "cnss-regimes-taux-equilibre",
+    slug="fig_rtns_taux_equilibre_decomposition",
+    caption="Travailleurs non salariés : décomposition du taux de cotisation d'équilibre par secteur et pour l'ensemble, 2005-2017",
+    note_lecture=(
+        "**Le taux d'équilibre est le produit du taux de remplacement apparent et du "
+        "rapport entre pensionnés et cotisants.** Les trois grandeurs sont tracées en "
+        "niveaux, sur une échelle logarithmique : la distance du taux d'équilibre à la "
+        "ligne de 100 % y est la somme de celles des deux facteurs. Dans le secteur non "
+        "agricole, le rapport « Pensionnés ÷ cotisants » passe de 12,1 % en 2005 à 19,8 % en "
+        "2017 et le « Taux de remplacement apparent (pension moyenne ÷ revenu d'assiette "
+        "moyen) » de 21,5 % à 33,5 % ; le taux d'équilibre, de 2,6 % à 6,6 %. Dans le "
+        "secteur agricole, le rapport recule de 79,7 % à 57,4 %, le remplacement passe de "
+        "26,9 % à 30,6 %, et le taux d'équilibre baisse de 21,4 % à 17,6 %. Pour l'ensemble, "
+        "le rapport passe de 25,7 % à 27,9 %, le remplacement de 20,9 % à 30,9 %, le taux "
+        "d'équilibre de 5,4 % à 8,6 %. La décomposition commence en 2005, première année où "
+        "les classes de revenus sont publiées par secteur ; les cotisants sont les assurés "
+        "publiés par la caisse."),
+)
+```
+
+Ces chiffres appellent quatre réserves, qui valent aussi pour les deux autres régimes à classes de revenus (@sec-rtte ; @sec-raci).
+
+- **Les classes ne sont pas des revenus.** L'assiette reconstituée est celle des revenus forfaitaires des classes auxquelles les assurés ont adhéré, non celle de leurs revenus d'activité.
+- **L'assiette suppose quatre trimestres cotisés par assuré.** Les annuaires ne disent pas si l'effectif d'une classe est celui du 31 décembre ou celui de tous les affiliés de l'année. Dans le second cas, l'assiette reconstituée dépasse l'assiette due, et plus encore les cotisations encaissées : le taux d'équilibre est alors sous-estimé.
+- **Le salaire minimum de l'année.** Retenir le salaire minimum moyen de l'année plutôt que celui du 1^er^ janvier abaisse le taux d'équilibre de 3,9 % au plus en valeur relative, sauf pour le secteur agricole : 4,7 % en 2011 et 9,0 % en 2012, année où le SMAG est relevé deux fois. Il ne le change pas en 2013 ni en 2017, années sans relèvement du salaire minimum.
+- **Le champ du régime change en 2002.** Le décret n° 2002-3018 étend le régime à de nouvelles catégories, dont les chauffeurs de véhicules de transport public de personnes (@sec-rtns-autres-elements) [@decret-2002-3018, art. 1], et les annuaires signalent la même année qu'une partie des artisans à la pièce, des petits agriculteurs et des éleveurs a opté pour le régime des travailleurs à faibles revenus [@cnss-annuaires-statistiques]. L'encadrement de 2000-2004 chevauche ce changement : les années 2000 à 2002 le précèdent.
 
 ### Les Tunisiens à l'étranger {#sec-rtte}
 
@@ -1120,9 +1243,35 @@ Le départ entre 60 et 65 ans est réduit de $\delta = 0{,}5\,\%$ par trimestre 
 Tunisiens à l'étranger, faute de décret d'application de l'article 23 du décret n° 89-107
 retrouvé au JORT (circulaires, rapports annuels). -->
 
-<!-- TODO (rédacteur) : figure du taux d'équilibre du régime des Tunisiens à l'étranger, quand la
-série par régime sera extraite des annuaires de la CNSS (annuaire 2013, 11e partie, p. 235 et
-240 imprimées ; annuaire 2017, الباب الحادي عشر) ; assiette reconstruite par les classes. -->
+**L'équilibre du régime.** Son assiette se reconstitue comme celle des non-salariés (@sec-rtns-equilibre) : c'est la somme, sur les quatre classes, du nombre d'assurés de la classe multiplié par son coefficient et par $S$, le SMIG en vigueur au 1^er^ janvier de l'année [@decret89-107, art. 6 ; @cnss-annuaires-statistiques ; @cnss-annuaire-2010, p. 170 et 173]. Le taux d'équilibre $\tau^*$ (@sec-rsna-equilibre) est comparé au taux légal $\kappa$ de la branche pensions, 5,25 % depuis le 19 janvier 1989 [@decret89-107, art. 7].
+
+```{python}
+#| label: fig-rtte-taux-equilibre
+#| fig-cap: "Régime des Tunisiens à l'étranger : taux de cotisation d'équilibre, taux légal de la branche pensions et décomposition du taux d'équilibre, 2000-2017."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import taux_equilibre_cnss_regimes as tr
+import figtools
+figtools.figure_tabs(
+    tr.fig_regime("rtte"), tr.table("rtte"), "cnss-regimes-taux-equilibre",
+    slug="fig_rtte_taux_equilibre",
+    caption="Régime des Tunisiens à l'étranger : taux de cotisation d'équilibre, taux légal de la branche pensions et décomposition du taux d'équilibre, 2000-2017",
+    note_lecture=(
+        "**Le taux d'équilibre passe de 0,17 % de l'assiette en 2000 à 7,90 % en 2017 ; il "
+        "dépasse le taux légal de 5,25 % depuis 2015.** Il vaut 1,36 % en 2010 et 5,36 % en "
+        "2015. Le panneau de droite trace, sur une échelle logarithmique, le taux "
+        "d'équilibre et ses deux facteurs ; la distance du taux d'équilibre à la ligne de "
+        "100 % y est la somme de celles des deux facteurs. Le rapport « Pensionnés ÷ "
+        "cotisants » passe de 1,1 % en 2000 à 6,3 % en 2010 et 34,4 % en 2017 ; le « Taux "
+        "de remplacement apparent (pension moyenne ÷ revenu d'assiette moyen) » reste entre "
+        "9,8 % et 27,2 %, à 22,9 % en 2017. Jusqu'en 2007, le régime compte moins de cent "
+        "pensionnés (8 en 2000) : les variations d'une année à l'autre du remplacement "
+        "apparent n'ont alors pas de portée. La série s'arrête en 2017, dernier annuaire statistique retrouvé."),
+)
+```
+
+Le régime est jeune : il compte 8 pensionnés pour 749 assurés en 2000, 140 pour 2 207 en 2010 et 600 pour 1 742 en 2017, le nombre d'assurés baissant depuis 2010. Le taux d'équilibre suit le rapport entre pensionnés et assurés : en logarithme, sa hausse de 3,813 de 2000 à 2017 se décompose en + 3,473 pour ce rapport et + 0,339 pour le remplacement apparent. Les réserves exposées pour les non-salariés valent ici : les classes ne sont pas des revenus, et l'assiette suppose quatre trimestres cotisés par assuré (@sec-rtns-equilibre).
 
 ### Les travailleurs à faibles revenus {#sec-rtfr}
 
@@ -1173,9 +1322,7 @@ n° 2002-32 ?) avant d'en parler dans le texte. Lire aussi l'arrêté du 19 juin
 d'affiliation des récoltantes de coquillages et des saisonniers ruraux, JORT n° 52/2019, éd. ar.),
 dont seul l'intitulé est connu. -->
 
-<!-- TODO (rédacteur) : figure du taux d'équilibre du régime des travailleurs à faibles revenus,
-quand la série sera extraite des annuaires de la CNSS (annuaire 2013, 12e partie ; annuaire 2017,
-الباب الثاني عشر) ; assiette : effectifs × 2/3 du SMIG ou du SMAG × 12, catégories mêlées. -->
+**Pas de taux d'équilibre.** Les annuaires statistiques de la caisse publient le nombre d'immatriculés au régime de 2002 à 2017, mais un immatriculé n'est pas nécessairement un cotisant, et aucune assiette ne peut être rapportée à ces effectifs. Les montants de pensions publiés pour le régime ne sont pas non plus homogènes d'une année à l'autre : de 2011 à 2016, le total imprimé n'est pas la somme des pensions par nature [@cnss-annuaires-statistiques]. Le taux d'équilibre du régime ne peut donc être calculé.
 
 ### Les artistes, créateurs et intellectuels {#sec-raci}
 
@@ -1214,9 +1361,37 @@ pas dans les visas des arrêtés conjoints de 2020 et de 2026 qui énumèrent le
 de la CNSS ; confirmer par une autre voie l'absence de modificatif postérieur à la loi
 n° 2007-43, et de texte relevant le minimum de 200 dinars. -->
 
-<!-- TODO (rédacteur) : figure du taux d'équilibre du régime des artistes, créateurs et
-intellectuels, quand la série sera extraite des annuaires de la CNSS (annuaire 2013, 13e partie,
-p. 282 et 287 imprimées ; annuaire 2017, الباب الثالث عشر) ; assiette reconstruite par les classes. -->
+**L'équilibre du régime.** Son assiette se reconstitue comme celle des non-salariés (@sec-rtns-equilibre), par les dix classes et $S$, le SMIG du régime de 48 heures rapporté à 2 400 heures [@decret2003-894, art. 5 ; @cnss-annuaires-statistiques]. Le SMIG retenu est celui du 1^er^ janvier : c'est ici la règle du décret, qui ne prend en compte une majoration du SMIG qu'au 1^er^ janvier suivant [@decret2003-894, art. 9]. Les annuaires publient les pensions du régime depuis 2003, ses assurés et leurs classes depuis 2004 : le taux d'équilibre $\tau^*$ (@sec-rsna-equilibre) commence en 2004. Il est comparé au taux légal $\kappa$ de la branche pensions, 7 % depuis le 5 janvier 2003 [@loi2002-104, art. 7].
+
+```{python}
+#| label: fig-raci-taux-equilibre
+#| fig-cap: "Régime des artistes, créateurs et intellectuels : taux de cotisation d'équilibre, taux légal de la branche pensions et décomposition du taux d'équilibre, 2004-2017."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import taux_equilibre_cnss_regimes as tr
+import figtools
+figtools.figure_tabs(
+    tr.fig_regime("raci"), tr.table("raci"), "cnss-regimes-taux-equilibre",
+    slug="fig_raci_taux_equilibre",
+    caption="Régime des artistes, créateurs et intellectuels : taux de cotisation d'équilibre, taux légal de la branche pensions et décomposition du taux d'équilibre, 2004-2017",
+    note_lecture=(
+        "**Jusqu'en 2009, le régime compte plus de pensionnés que d'assurés (années "
+        "grisées) : le taux d'équilibre de ces années, 168,1 % de l'assiette en 2004 et "
+        "96,2 % en 2005, n'a pas de portée actuarielle.** Il baisse ensuite à 30,6 % en "
+        "2010, 24,2 % en 2013 et 21,4 % en 2017, trois fois le taux légal de 7 %. Les deux "
+        "panneaux sont sur une échelle logarithmique ; dans celui de droite, la distance du "
+        "taux d'équilibre à la ligne de 100 % est la somme de celles des deux facteurs, "
+        "comptées positivement au-dessus de la ligne et négativement au-dessous. Le rapport "
+        "« Pensionnés ÷ cotisants » passe de 477,8 % en 2004 à 92,5 % en 2010 et 62,5 % en "
+        "2017 ; le « Taux de remplacement apparent (pension moyenne ÷ revenu d'assiette "
+        "moyen) » reste entre 28,8 % et 37,5 %, à 34,3 % en 2017. Les effectifs sont "
+        "faibles : 27 assurés en 2004, 309 en 2017. La série s'arrête en 2017, dernier "
+        "annuaire statistique retrouvé."),
+)
+```
+
+Les annuaires ne publient pas d'assurés pour 2003, année où le régime sert déjà des pensions : 100 pensionnés en 2003, 129 en 2004, pour 27 assurés, puis 190 pour 168 assurés en 2009 et 193 pour 309 en 2017 [@cnss-annuaires-statistiques]. Les premiers pensionnés ne peuvent guère avoir acquis des droits par leurs cotisations ; ils relèvent vraisemblablement des pensions transitoires que la loi ouvre sans cotisation aux personnes de plus de 55 ans (@sec-raci) [@loi2002-104, art. 33-34], ce que les annuaires ne précisent pas. La baisse du taux d'équilibre tient à celle du rapport entre pensionnés et assurés : en logarithme, sa baisse de 2,060 de 2004 à 2017 se décompose en − 2,035 pour ce rapport et − 0,025 pour le remplacement apparent. Les réserves exposées pour les non-salariés valent ici (@sec-rtns-equilibre).
 
 ### Les travailleuses agricoles {#sec-travailleuses-agricoles}
 
@@ -1341,10 +1516,10 @@ Les formules du chapitre emploient une notation unique, qui reprend celle du cha
 | $\tau^*$ | taux de cotisation d'équilibre | @sec-rsna-equilibre |
 | $N_p$ | nombre de pensionnés, toutes natures | @sec-rsna-equilibre |
 | $\bar p$ | pension moyenne | @sec-rsna-equilibre |
-| $N_c$ | nombre de cotisants, c'est-à-dire d'actifs, non-assujettis compris | @sec-rsna-equilibre |
-| $\bar w$ | salaire moyen des cotisants | @sec-rsna-equilibre |
+| $N_c$ | nombre de cotisants : actifs, non-assujettis compris, au régime des salariés non agricoles ; salariés déclarés ou assurés publiés par la caisse, aux autres régimes | @sec-rsna-equilibre |
+| $\bar w$ | salaire moyen des cotisants ; aux régimes à classes de revenus, revenu d'assiette moyen | @sec-rsna-equilibre |
 | $C$ | cotisations de pension de l'année | @sec-rsna-equilibre |
-| $\kappa$ | taux légal de la branche pensions du régime des salariés non agricoles | @sec-rsna-equilibre |
+| $\kappa$ | taux légal de la branche pensions du régime considéré | @sec-rsna-equilibre |
 | $S_A$ | SMAG rapporté à une durée de travail de 300 jours par an | @sec-rsa-loi-1981 |
 | $\bar c$, $\bar c_T$ | coefficient multiplicateur moyen, sur la période que fixe chaque régime ; $\bar c_T$, sur les $T$ dernières années | @sec-rsa-loi-1981 |
 | $P'$, $S_A'$ | pension servie et valeur de $S_A$ à une échéance postérieure à la liquidation | @sec-rsa-loi-1981 |
