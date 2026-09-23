@@ -489,3 +489,197 @@
     دون تصحيح للأسعار. ومقابلة هذا الفرع بالاشتراكات في كلّ الأنظمة ليست موازنة بل
     نسبة تغطية.'
   fiche: sources/cnss-donnees-statistiques.md
+- id: croissances-revenus-prix
+  titre: Croissances annuelles des prix, du revenu national et des revenus du travail,
+    1963-2025
+  sources:
+  - bct-ra
+  - ins-annuaire
+  - ins-cnat-2015
+  - undata-sna
+  - ins-enpe
+  - ins-fonction-publique-2021
+  - minfin-remunerations
+  - wb-wdi
+  - ins-bms
+  - ins-guide-salaires-prive-2026
+  - ins-portail-2006-salaires-prive
+  - ins-portail-2009-salaires-prive
+  - wb-2004-employment-strategy-annexes
+  - bm-1995-pauvrete-annexes
+  - fmi-1997-selected-issues
+  build: scripts/build_croissances_revenus.py:main
+  raw:
+  - data/raw/banque-mondiale
+  output: data/processed/precis/croissances_revenus_prix.csv
+  unite: '% par an'
+  perimetre: 'vingt-trois indicateurs, chacun avec la source exacte de chaque taux
+    : prix (1963-2023), PIB nominal total et par habitant (1962-2025 : Banque mondiale
+    jusqu''en 1992, UNdata 1993-2001, éditions INS des comptes de la nation 2002-2025,
+    chaque taux dans une seule base ; par habitant : divisé par la croissance de la
+    population de la Banque mondiale), les mêmes tels que publiés par la Banque mondiale,
+    sans correction (1962-2025), rémunération des salariés, dite superbrute, charges
+    des employeurs comprises (1993-2025 ; par salarié 2000-2012 ; hors État par salarié
+    hors fonction publique 2013-2021 ; hors administration centrale par salarié hors
+    fonction publique 2013-2021), salaires et traitements bruts, hors charges des
+    employeurs (2002-2025 ; par salarié 2002-2003 et 2006-2012 ; hors administration
+    centrale par salarié hors fonction publique 2013-2021), salariés (2000-2012),
+    emploi total (2008-2024), masse salariale de l''État (1991-2025), salaire moyen
+    de la fonction publique (2016-2020), salaire déclaré à la CNSS dans le secteur
+    privé non agricole pour un panel de salariés permanents (INS, 2008-2025 ; 2001-2007
+    d''après le premier portail de l''INS) et salaire annuel moyen déclaré à la CNSS
+    (Banque mondiale, 1995-2000) ; et, pour les années anciennes : masse des salaires
+    déclarés à la CNSS (BCT, rapports annuels, 1960-1971 et 1974-1975) et salaire
+    moyen déclaré à la CNSS (masse / effectif du même rapport, 1964-1971 et 1974),
+    salaire moyen hors agriculture et hors administration d''après le ministère du
+    Plan, en deux millésimes non raccordés (Banque mondiale, rapport 13993-TUN, 1984-1993
+    ; FMI, rapport 97/57, 1989 et 1994), salaire annuel moyen des secteurs productifs
+    non agricoles (BCT, taux imprimés, 1999-2007)'
+  caveats: 'SÉRIE COMPOSITE DÉRIVÉE : chacune de ses sources existe aussi comme série
+    homogène, avec son entrée du catalogue, et l''inventaire indicateur → source →
+    série homogène est dans docs/croissances-revenus-prix.md, section « Séries homogènes
+    sous-jacentes ». Elle sert à comparer au barème d''actualisation des salaires
+    des pensions, qui n''est pas ici (il vient d''openfisca-tunisia, comme le SMIG).
+    Chaque taux vient d''une seule série, édition ou rapport ; les années où la mesure
+    change sont omises (salariés 2004-2005 : recensement) ou marquées (2011 : passage
+    de l''enquête de mai à la moyenne des trimestres ; 1970 : raccord des bases de
+    l''indice des prix). La rémunération hors État par salarié hors fonction publique
+    retranche la seule masse salariale de l''État (les entreprises publiques restent
+    dedans) et s''appuie sur la part des salariés MODÉLISÉE par le BIT. BRUT ET SUPERBRUT
+    : les salaires et traitements bruts (D.11) excluent les charges sociales des employeurs
+    que la rémunération des salariés (D.1) comprend ; ils ne commencent qu''en 2002,
+    UNdata ne les portant pas. Le ministère des finances ne publie pas sa masse salariale
+    hors contributions patronales : les indicateurs bruts « hors » retranchent donc
+    l''administration centrale des comptes de la nation (État et établissements publics
+    à compétence nationale, hôpitaux compris), lue dans la même édition, et non la
+    masse salariale du ministère ; leur pendant superbrut sur ce périmètre est fourni
+    pour la comparaison. PIB NOMINAL, RUPTURES DE BASE CORRIGÉES : la série de la
+    Banque mondiale (WDI NY.GDP.MKTP.CN) accole les bases des comptes de l''INS sans
+    les raccorder, d''où « +20,33 % » en 1997 (1996 en base 1983, 1997 en base 1997)
+    et « +12,72 % » en 2010 (2009 en base 1997, 2010 dans une valeur rétropolée, 2010-2014
+    plus hauts de 4,9 à 5,5 % que la base 1997 des éditions INS). Le taux vient donc
+    de la Banque mondiale de 1962 à 1992 seulement ; de 1993 à 2001, d''UNdata (données
+    INS transmises à l''ONU, tableau 4.1, compte de production), dans la plus récente
+    série SCN qui porte l''année et la précédente (1993-1997 : série 30, base 1983
+    ; 1998-2001 : série 100, base 1997) ; de 2002 à 2025, des éditions INS des comptes
+    de la nation, la plus récente qui porte l''année et la précédente (2002-2005 :
+    base 1983 ; 2006-2015 : base 1997 ; 2016-2025 : base 2015 ; 2025 provisoire).
+    1997 passe à +9,61 %, 2010 à +7,46 % ; la colonne `note` donne le taux d''origine.
+    DEUX INDICATEURS « TELS QUE PUBLIÉS » : « PIB nominal, Banque mondiale (WDI, tel
+    que publié) » et « PIB nominal par habitant, Banque mondiale (WDI, tel que publié)
+    » donnent, pour comparaison, les taux de la série de la Banque mondiale sur 1962-2025
+    sans aucune correction ; ils contiennent les ruptures de base de 1997 et 2010
+    et ne doivent pas servir de mesure de la croissance ces années-là. Les révisions
+    entre éditions déplacent aussi d''autres années de quelques dixièmes (2025 : +7,38
+    % au lieu de +7,86 %, la Banque mondiale portant pour 2025 un niveau que l''édition
+    2021-2025 n''imprime pas). Avant 1993, les bases de la série de la Banque mondiale
+    n''ont pas été vérifiées sur une source de même base. Le PIB par habitant divise
+    le taux du PIB par la croissance de la population, seule à venir de la Banque
+    mondiale (SP.POP.TOTL) avec la part des salariés. SALAIRES DÉCLARÉS À LA CNSS,
+    DEUX MESURES QUI NE SE RACCORDENT PAS : le taux de l''INS (2008-2025) suit un
+    PANEL de salariés permanents, déclarés sans interruption sur cinq trimestres,
+    avec le quatrième trimestre ajusté pour les primes et les évolutions individuelles
+    hors de [-5 % ; +10 %] exclues : c''est la progression du salaire de ceux qui
+    restent en place, qui ignore les effets d''entrée, de sortie et de composition,
+    contrairement à un salaire moyen ; son taux annuel chaîne les quatre taux trimestriels
+    (quatrième trimestre sur quatrième trimestre), définition que les taux annuels
+    publiés par l''INS en 2010-2021 confirment à 0,22 point près, et chaque trimestre
+    est pris dans l''édition la plus récente (valeurs révisées, 2025 provisoire).
+    Le salaire annuel moyen de la Banque mondiale (1995-2000) est une moyenne sur
+    TOUS les salariés déclarés dans l''année, années incomplètes et temps partiel
+    compris : son niveau est inutilisable (moins que le SMIG), seule sa croissance,
+    imprimée par le rapport, l''est. PÉRIODE T1 2001 - T1 2007, PREMIER PORTAIL DE
+    L''INS (www.ins.nat.tn, indicateur 0402040, pages mises à jour le 06/10/2006 et
+    le 30/06/2009, seules captures des archives du web) : (a) ces pages ne nomment
+    pas la CNSS (« Source : Institut National de la Statistique (INS) ») : l''appui
+    sur les salaires déclarés à la CNSS pour 2001-2006 est DÉDUIT de la continuité
+    de l''indicateur (même code, mêmes valeurs que le BMS sur T2 2007 - T1 2009, redressement
+    de 2009 compris), non affirmé par la source ; (b) la méthode de la période ancienne
+    n''est pas documentée : le panel de salariés permanents et les seuils viennent
+    du guide de 2026 et ne peuvent être remontés à 2001 ; le libellé de 2006 dit «
+    salaire moyen » ; (c) on ignore si l''indicateur commence en 2001 ou si l''affichage
+    était tronqué ; (d) aucune autre version archivée (recherche CDX sur le code 0402040
+    et les familles de pages conjoncturelles) ; les URL d''origine ne répondent plus.
+    T2 2006 vaut 1,69 dans la mise à jour de 2006, 1,45 dans celle de 2009, retenue
+    ; T1 2007 (1,11) n''est dans aucun BMS en ligne. SALAIRES DES ANNÉES 1960 À 2007,
+    SOURCES ANCIENNES, AUCUNE RACCORDÉE À UNE AUTRE : chaque taux est pris entre deux
+    années d''un même rapport. MASSE DÉCLARÉE À LA CNSS (BCT) : tous les salariés
+    déclarés, sa croissance mêle salaires et affiliation ; RUPTURE D''ASSIETTE EN
+    1961, le plafond de 500 D par an et par salarié en deçà duquel les salaires étaient
+    déclarés jusqu''en 1960 étant supprimé (1960 : Caisse centrale des prestations
+    sociales) ; le RA 1969 imprime des taux (14,1 % et 14,8 %) que ses niveaux contredisent
+    (14,48 % et 14,34 %), taux des niveaux retenus ; 1965 et 1970 révisés par le rapport
+    suivant ; pas de taux en 1962, 1972 et 1973 (rubrique absente des RA 1962, 1972
+    et 1973) ni après 1975. SALAIRE MOYEN DÉCLARÉ (BCT) : l''effectif change quatre
+    fois de libellé, et de définition en 1971 (moyenne trimestrielle des effectifs
+    déclarés) ; c''est le salaire moyen d''une population qui s''élargit, non celui
+    d''une carrière. SALAIRE MOYEN HORS AGRICULTURE ET HORS ADMINISTRATION : deux
+    millésimes des données du Plan, Banque mondiale 1995 (salariés estimés et lissés
+    ; en 1992 et 1993, masse imprimée supérieure de 0,3 et 3,7 MD à ses composantes)
+    et FMI 97/57 (années discontinues, 1994 provisoire), divergents dès 1986, non
+    raccordés. SECTEURS PRODUCTIFS NON AGRICOLES (BCT, 1999-2007) : taux imprimés
+    seuls, les niveaux étant révisés d''un rapport à l''autre ; taux de 2006 imprimé
+    par le RA 2007 ; les rapports ne disent ni la source ni la méthode.'
+  titre_ar: النموّ السنوي للأسعار وللدخل الوطني ولمداخيل العمل، 1963-2025
+  unite_ar: '% سنوياً'
+  perimetre_ar: 'ثلاثة وعشرون مؤشراً: الأسعار، الناتج المحلي الإجمالي الاسمي (مصحَّحاً،
+    وكما نشره البنك الدولي دون تصحيح)، أجور الأجراء (بما فيها الأعباء الاجتماعية على
+    المؤجّرين)، الأجور والمرتّبات الخامّ (دون تلك الأعباء، منذ 2002)، عدد الأجراء،
+    التشغيل، كتلة أجور الدولة، معدّل أجر الوظيفة العمومية، الأجر المصرّح به لدى الصندوق
+    الوطني للضمان الاجتماعي في القطاع الخاص غير الفلاحي لعيّنة من الأجراء القارّين
+    (2008-2025؛ 2001-2007 من البوابة الأولى للمعهد)، معدّل الأجر السنوي المصرّح به
+    (1995-2000)؛ وللسنوات القديمة: كتلة الأجور المصرّح بها لدى الصندوق الوطني للضمان
+    الاجتماعي (التقارير السنوية للبنك المركزي، 1960-1971 و1974-1975) ومعدّل الأجر
+    المصرّح به (1964-1971 و1974)، ومعدّل الأجر خارج الفلاحة وخارج الإدارة حسب وزارة
+    التخطيط في إصدارين غير مترابطين (البنك الدولي 1995: 1984-1993؛ صندوق النقد الدولي
+    97/57: 1989 و1994)، ومعدّل الأجر السنوي في القطاعات المنتجة غير الفلاحية (البنك
+    المركزي، النسب المطبوعة، 1999-2007)'
+  caveats_ar: 'سلسلة مركّبة مشتقّة: لكلّ مصدر من مصادرها سلسلة متجانسة خاصّة به ومدخل
+    في الفهرس، وجرد المؤشرات ومصادرها وسلاسلها المتجانسة في docs/croissances-revenus-prix.md
+    (قسم «السلاسل المتجانسة»). وهي للمقارنة مع جدول تحيين الأجور في حساب الجرايات،
+    وهو غير موجود هنا (مصدره openfisca-tunisia، مثل الأجر الأدنى). تُحسب كلّ نسبة
+    من سلسلة أو إصدار أو تقرير واحد، وتُحذف السنوات التي يتغيّر فيها القيس أو يُشار
+    إليها. الناتج المحلي الإجمالي الاسمي: تصل سلسلة البنك الدولي بين سنوات أساس مختلفة
+    للحسابات القومية دون ربطها، فتُظهر +20,33 % سنة 1997 (1996 بأساس 1983 و1997 بأساس
+    1997) و+12,72 % سنة 2010 (2009 بأساس 1997 و2010 بقيمة مُعاد تقديرها). لذلك لا
+    تؤخذ النسبة من البنك الدولي إلا من 1962 إلى 1992؛ ومن 1993 إلى 2001 من قاعدة بيانات
+    الأمم المتحدة (معطيات المعهد الوطني للإحصاء، سلسلة واحدة لكلّ نسبة)؛ ومن 2002
+    إلى 2025 من إصدارات الحسابات القومية للمعهد، أحدث إصدار يتضمّن السنة والسنة السابقة.
+    فتصبح نسبة 1997 +9,61 % ونسبة 2010 +7,46 %. ويُضاف مؤشران «كما نُشرا»: الناتج
+    المحلي الإجمالي الاسمي والناتج للفرد حسب البنك الدولي دون أيّ تصحيح (1962-2025)،
+    للمقارنة فقط، وفيهما انقطاعا الأساس سنتي 1997 و2010. الناتج للفرد: نموّ الناتج
+    مقسوماً على نموّ السكان (البنك الدولي). الأجور والمرتّبات الخامّ لا تشمل الأعباء
+    الاجتماعية على المؤجّرين، ولا تتوفّر قبل 2002. لا تنشر وزارة المالية كتلة الأجور
+    دون المساهمات المحمولة على المؤجّر، فتُطرح الإدارة المركزية كما في الحسابات القومية،
+    من الإصدار نفسه. الأجور المصرّح بها لدى الصندوق الوطني للضمان الاجتماعي: قيسان
+    لا يُربطان. نسبة المعهد الوطني للإحصاء (2008-2025) تتبع عيّنة قارّة من الأجراء
+    المصرّح بهم دون انقطاع طيلة خمسة ثلاثيات، فهي تطوّر أجر من يبقون في مواطن شغلهم
+    لا تطوّر معدّل الأجر؛ ونسبتها السنوية جداء النسب الثلاثية الأربع، وهو ما تؤكّده
+    النسب السنوية المنشورة. أمّا معدّل الأجر السنوي لدى البنك الدولي (1995-2000) فمحسوب
+    على كلّ المصرّح بهم بما في ذلك السنوات غير الكاملة، فلا يُستعمل مستواه بل نموّه
+    فقط. الفترة من الثلاثي الأول 2001 إلى الثلاثي الأول 2007، البوابة الأولى للمعهد
+    (www.ins.nat.tn، المؤشر 0402040، صفحتان حُيّنتا في 06/10/2006 و30/06/2009، وهما
+    النسختان الوحيدتان في أرشيف الواب): (أ) لا تذكر هاتان الصفحتان الصندوق الوطني
+    للضمان الاجتماعي («المصدر: المعهد الوطني للإحصاء»)، فاستناد سنوات 2001-2006 إلى
+    الأجور المصرّح بها لدى الصندوق مستنتَج من استمرارية المؤشر (الرمز نفسه والقيم
+    نفسها في النشرية الشهرية من الثلاثي الثاني 2007 إلى الثلاثي الأول 2009، بما في
+    ذلك تعديل 2009)، لا مصرّح به في المصدر؛ (ب) طريقة الفترة القديمة غير موثّقة: عيّنة
+    الأجراء القارّين وعتباتها مأخوذة من دليل 2026 ولا يمكن إرجاعها إلى 2001، وعنوان
+    صفحة 2006 يذكر «معدّل الأجر»؛ (ج) لا يُعرف هل يبدأ المؤشر سنة 2001 أم كان العرض
+    مبتوراً؛ (د) لا توجد نسخة مؤرشفة أخرى (بحث CDX عن الرمز 0402040 وعن عائلات صفحات
+    المعطيات الظرفية)، والعناوين الأصلية لم تعد تستجيب. الثلاثي الثاني 2006: 1,69
+    في تحيين 2006، و1,45 في تحيين 2009 وهي المعتمدة؛ الثلاثي الأول 2007 (1,11) غير
+    موجود في أيّ عدد متاح من النشرية. أجور الستينات إلى 2007 من مصادر قديمة لا تُربط
+    ببعضها: تُحسب كلّ نسبة بين سنتين من التقرير نفسه. كتلة الأجور المصرّح بها لدى
+    الصندوق تشمل كلّ المصرّح بهم، فنموّها يمزج الأجور بالانخراط؛ وفي سنة 1961 انقطاع
+    في الأساس بإلغاء سقف 500 دينار سنوياً للأجير الذي كانت الأجور تُصرَّح في حدوده
+    إلى غاية 1960. في تقرير 1969 نسبتان مطبوعتان تناقضان المستويات، فاعتُمدت نسب المستويات.
+    رُوجعت أرقام 1965 و1970 في التقرير اللاحق، ولا نسبة لسنوات 1962 و1972 و1973 ولا
+    بعد 1975. تغيّر تعريف عدد الأجراء سنة 1971 (معدّل ثلاثي)، ومعدّل الأجر المصرّح
+    به معدّل فئة تتّسع لا أجر مسيرة مهنية. معدّل الأجر خارج الفلاحة والإدارة في إصدارين
+    من معطيات وزارة التخطيط (البنك الدولي 1995 بعدد أجراء تقديري، وصندوق النقد الدولي
+    97/57 بسنوات متقطّعة و1994 أوّلية) يختلفان منذ 1986 ولا يُربطان. أمّا القطاعات
+    المنتجة غير الفلاحية (1999-2007) فلا تُعتمد إلا نسبها المطبوعة لأنّ المستويات
+    تُراجَع، ونسبة 2006 مأخوذة من تقرير 2007، ولا تذكر التقارير مصدر هذه المعدّلات
+    ولا طريقتها.'
+  fiche: docs/croissances-revenus-prix.md

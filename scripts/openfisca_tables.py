@@ -55,8 +55,10 @@ PAQUETS = {
         # apporte est celui d'openfisca-tunisia-pension 7.3.0, qui avait lui-même son
         # histoire de garde-fous — daté et sourcé sur le Journal officiel depuis 5.7, deux
         # chemins déplacés en 6.0 et 7.0, les âges militaires versés en 7.2. La 0.93 les
-        # porte tous.
-        "version_minimale": (0, 93),
+        # porte tous. La 0.95 verse le barème d'actualisation des salaires du régime non
+        # agricole (openfisca-tunisia#438), dont le livre « Retraites » tire une figure : en
+        # deçà, `retraite/rsna/salaire_reference/actualisation/` n'existe pas.
+        "version_minimale": (0, 95),
     },
 }
 

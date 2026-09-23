@@ -22,6 +22,7 @@ Ces notes ne se valent pas. Elles relèvent de quatre espèces, dont **deux seul
 | Note | Objet | État |
 |---|---|---|
 | [`biblio-a-rapatrier.md`](biblio-a-rapatrier.md) | Références à remonter dans Zotero, source canonique. **Tant qu'elles n'y sont pas, `sync_biblio.py` les écrasera.** | en cours — 30 clés en attente |
+| [`series-pensions-salaires-bilan.md`](series-pensions-salaires-bilan.md) | Séries des figures « pensions, salaires et barème » du livre « Retraites » : source exacte, spécificités, ruptures, contrôles et **questions ouvertes pour le bilan global**. | en cours — ouverte le 22/09/2026 |
 
 ## Dossiers documentaires — closes
 

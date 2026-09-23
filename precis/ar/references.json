@@ -3421,6 +3421,21 @@
           ]
         ]
       }
+    },
+    {
+      "id": "ins-cnat-2015",
+      "type": "report",
+      "title": "Les comptes de la nation (éditions successives, 2001-2005 à 2021-2025)",
+      "title-short": "INS, Les comptes de la nation, éditions successives",
+      "author": [
+        {
+          "literal": "Institut National de la Statistique (INS)"
+        }
+      ],
+      "publisher": "Institut National de la Statistique, Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.ins.tn/publication/les-comptes-de-la-nation-2021-2025",
+      "note": "citation-key: ins-cnat-2015\nEnsemble de dix-neuf éditions glissantes sur cinq ans de la publication annuelle de l'INS, de 2001-2005 (couverture : « Les comptes de la nation. Agrégats et tableaux d'ensemble, 2001 - 2005 ») à 2021-2025 (couverture : « Les comptes de la nation, base 2015, comptes nationaux 2021-2025, édition 2026 »). Utilisées pour la rémunération des salariés et les salaires et traitements bruts de 2002 à 2025 — chaque taux est tiré d'une seule édition, la plus récente qui porte l'année et la précédente — et, pour les éditions en base 2015 (à partir de 2015-2020), pour le PIB et ses emplois en base 2015, dénominateur de la masse salariale rapportée au PIB. L'URL donnée est la page de l'édition 2021-2025 sur le portail de l'INS (vérifiée le 21 septembre 2026) ; les autres éditions sont sous https://www.ins.tn/publication/les-comptes-de-la-nation-AAAA-AAAA (page 2001-2005 vérifiée le 21 septembre 2026). Liste des fichiers : dépôt tunisia-data, sources/ins-publications-urls.csv et sources/ins-comptes-nationaux-publications.md. Les séries en base 2015 sont aussi publiées sur la page statistique de l'INS https://www.ins.tn/statistiques/153. Entrée fusionnée le 21 septembre 2026 avec l'ancienne clé ins-cnat-editions, qui désignait le même ensemble d'éditions."
     }
   ]
 }

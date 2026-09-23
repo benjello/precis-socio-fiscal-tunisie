@@ -63,7 +63,12 @@ figtools.figure_tabs(
 )
 ```
 
-La CNRPS, elle, ne publie aucune statistique. Ses effectifs ne sont connus que par le rapport du ministère des Finances sur les entreprises publiques, en milliers et sur six ans — d'où une seconde figure, et non une superposition que les sources n'autorisent pas.
+Pour la CNRPS, la figure suivante reprend les effectifs que donne le rapport du ministère des Finances sur les entreprises publiques, en milliers et sur six ans — d'où une seconde figure, et non une superposition que les sources n'autorisent pas.
+
+<!-- TODO (rédacteur) : la phrase disait « la CNRPS ne publie aucune statistique ». Ses
+guides statistiques et rapports d'activité, retrouvés dans les archives du web, donnent
+pourtant les affiliés de 2000 à 2020 (série cnrps-pensions de l'entrepôt) : envisager de
+refaire cette figure sur vingt et un ans à partir d'eux. -->
 
 ```{python}
 #| label: fig-effectifs-cnrps

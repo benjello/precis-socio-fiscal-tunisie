@@ -1920,3 +1920,345 @@ Champs `archive`, `archive_location`, `accessed` ; `push_biblio.py --verifier` :
 - [ ] Signalé à tunisia-data (non modifié) : `sources/cnrps-urls.csv` note `20220708232111` pour
   `ra_2016`, `ra_2017`, `ra_2019`, `ra_2020` ; ce n'est pas une capture mais l'horodatage demandé,
   que la Wayback redirige vers 20220709151214, 20220709102723, 20220709061458 et 20220709005355.
+### Passe « Retraites — pension moyenne et salaire moyen des cotisants de la CNRPS » (21/09/2026) — À REPORTER DANS ZOTERO
+
+Deux clés citées par le catalogue de `tunisia-data` (branche `feat/cnrps-pensions`, séries
+`cnrps-pensions` et `bm1993-caisses`) et par `precis/fr/retraites/index.qmd`, **versées à la
+main, identiques, dans `precis/fr/retraites/references.json` et `precis/ar/retraites/references.json`**.
+Pas encore dans Zotero.
+
+| Clé | Référence | Type | Collection Zotero cible |
+|---|---|---|---|
+| `cnrps-guides-rapports` | CNRPS, guides statistiques 2000-2010 et 2010-2014, rapports d'activité 2016, 2017, 2018, 2020 (en arabe) | report | Retraites |
+| `bm-1993-social-protection` | Banque mondiale, *Republic of Tunisia. The Social Protection System*, rapport n° 11376-TUN, avril 1993 | report | Retraites — **candidate au fonds commun** : l'annexe couvre aussi la CNSS/CAVIS, les cotisations ou les prestations la citeront vraisemblablement |
+
+Vérifié :
+
+- [x] `bm-1993-social-protection` : titre, numéro, « April 1993 » et division lus sur la couverture
+  du PDF ; recoupés par l'API du catalogue de la Banque mondiale (`search.worldbank.org/api/v2/wds`,
+  guid 558471468337768900 : repnb 11376, docdt 1993-04-30, « Pre-2003 Economic or Sector Report »).
+  URL du PDF : HTTP 200 le 21/09/2026. `issued` = 1993-04 (date imprimée), pas le jour du catalogue.
+- [x] `cnrps-guides-rapports` : intitulés arabes lus sur les couvertures (« الدليل الإحصائي »,
+  « تقرير النشاط » ; en-tête courant du rapport 2020 « التقرير السنوي للنشاط ») ; nom de la caisse
+  en arabe et en français lu sur les couvertures ; six URL d'archive testées (HTTP 200, taille égale
+  aux copies locales).
+
+Reste :
+
+- [ ] `cnrps-guides-rapports` n'a **pas d'`issued`** : ensemble de documents publiés de 2011
+  (guide 2000-2010, « أكتوبر 2011 ») à une date non imprimée (rapport 2020). Le convertisseur ne
+  porte que la première partie d'une plage de dates ; la période couverte est dans le titre.
+- [ ] Le rapport 2016 archivé n'a pas de couverture ; le guide 2010-2014 et le rapport 2020 n'ont
+  pas de date imprimée en couverture.
+- [ ] `bm-1993-social-protection` porte le numéro de rapport en `genre` (passe en Extra) : même
+  risque de duplication à chaque aller-retour que la ligne `issue:` décrite plus haut.
+- [ ] Rapatriement Zotero (feu vert humain) puis `ranger` vers « Retraites ».
+
+### Passe « Retraites — barème d'actualisation, prix et revenus » (21/09/2026) — À REPORTER DANS ZOTERO
+
+Huit clés citées par l'entrée `croissances-revenus-prix` du catalogue de `tunisia-data` (branche
+`main`), que `figtools.source_line()` rendra en `[@clé]` sous la figure du livre « Retraites » qui
+compare le barème d'actualisation des salaires aux croissances des prix et des revenus. **Versées à
+la main, identiques, dans `precis/fr/retraites/references.json` et `precis/ar/retraites/references.json`**
+(aucune n'est un texte juridique : pas d'édition du JORT à distinguer).
+
+| Clé | Référence | Type | Origine | Collection Zotero cible |
+|---|---|---|---|---|
+| `bct-ra` | BCT, *Rapport annuel* | dataset | copiée à l'identique du livre « Rémunérations publiques » | Retraites + Rémunérations publiques → **fonds commun** |
+| `ins-fonction-publique-2021` | INS, *Caractéristiques des agents de la fonction publique et leurs salaires 2010-2021* | dataset | idem | idem |
+| `minfin-remunerations` | Ministère des finances, répartition économique des dépenses (rémunérations publiques) | dataset | idem | idem |
+| `ins-annuaire` | INS, *Annuaire statistique de la Tunisie*, éditions 1995-2001, 1998-2002, 1999-2003, 2019-2023 | report | nouvelle | Retraites |
+| `ins-cnat-editions` | INS, *Les comptes de la nation*, 19 éditions 2001-2005 à 2021-2025 | report | nouvelle | Retraites |
+| `undata-sna` | UNSD, *National Accounts Official Country Data*, tableau 4.1, Tunisie | dataset | nouvelle | Retraites |
+| `ins-enpe` | INS, *Enquête nationale sur la population et l'emploi*, rapports 2005, 2010, 2012 | report | nouvelle | Retraites |
+| `wb-wdi` | Banque mondiale, *World Development Indicators* | dataset | nouvelle | Retraites |
+
+Vérifié (21/09/2026) :
+
+- [x] Titres des publications de l'INS lus en couverture sur les PDF locaux de `tunisia-data`
+  (`data/raw/…`) : annuaire 1995-2001 (« 2001, N° 44 », ISSN 0066-3689) et 2019-2023
+  (« نشرية 65 », « Edition 2024 ») ; comptes de la nation 2001-2005 et 2021-2025 (« Base 2015,
+  Edition 2026 ») ; enquête population-emploi 2005 (« أكتوبر 2006 »), 2010 (« جوان 2011 »), 2012
+  (bilingue, « Décembre 2013 »). Éditions, tableaux et années d'emploi repris de
+  `docs/croissances-revenus-prix.md` et de la colonne `source` du CSV traité.
+- [x] URL : pages INS des éditions 2019-2023 (annuaire), 2021-2025 (comptes), 2012 (enquête) en
+  HTTP 200 — ainsi que 1995-2001, 1998-2002, 1999-2003, 2001-2005, enquêtes 2005 et 2010, citées
+  dans les notes ; page UNdata filtrée (année 1995) en 200 ; fiche du catalogue de données de la
+  Banque mondiale en 200 (une fiche inexistante y rend 404 : ce n'est pas un 200 de complaisance).
+- [x] UNdata : éditeur (« Statistics Division (UNSD) ») et « Last update in UNdata: 2025/10/14 »
+  lus sur les pages conservées ; l'adresse de la base sans filtre répond 404.
+- [x] WDI : libellés des indicateurs et « lastupdated »: « 2026-07-13 » lus dans les réponses de
+  l'API conservées (`data/raw/banque-mondiale/`) ; téléchargement du 21/09/2026.
+- [x] Résolution des huit clés contre `retraites/references.json` + `../references.json`, FR et AR,
+  par `quarto pandoc --citeproc` : aucun avertissement (le même test signale bien une clé absente).
+- [x] `push_biblio.py --verifier` : 410 entrées éprouvées (405 avant), 1 perte, **inchangée**
+  (`cnss-chiffres`, `accessed`). Aucun `accessed` ni `number-of-pages` dans les nouvelles entrées :
+  dates de consultation en `note`.
+
+Reste :
+
+- [ ] **Fonds commun.** `bct-ra`, `ins-fonction-publique-2021` et `minfin-remunerations` sont
+  désormais dans deux fichiers de livre (Retraites, Rémunérations publiques). À la prochaine descente,
+  `repartit_references` les promouvra au fonds commun (`precis/{fr,ar}/references.json`) et les
+  retirera des deux livres, **à condition** que Zotero les porte dans les deux collections ; sinon la
+  descente les laissera au seul livre « Rémunérations publiques » et la figure des retraites perdra
+  ses sources. Laissées dans les fichiers de livre plutôt que déplacées à la main : les mettre au
+  commun sans les retirer des « Rémunérations publiques » dupliquerait la clé sur le chemin de ce
+  livre. Décision humaine : déplacement local maintenant, ou attente du rapatriement + `ranger`.
+  Deux précédents de la même situation : `loi96-101`, `minfin-indicateurs-fp`.
+- [ ] **Doublon possible** `ins-cnat-editions` / `ins-cnat-2015` (« Les Comptes de la Nation (base
+  2015) », livre « Rémunérations publiques », URL `ins.tn/statistiques/153`). Même famille de
+  publications, périmètres différents (dix-neuf éditions successives contre la seule base 2015) ; la
+  note de `ins-cnat-editions` le dit. Fusion à trancher avant rapatriement.
+- [ ] Pas d'`issued` sur les huit nouvelles (trois ensembles INS pluriannuels, deux bases mises à
+  jour en continu) : les dates connues — parution de chaque édition, mise à jour des bases — sont
+  en `note`. Même arbitrage que `cnrps-guides-rapports`.
+- [ ] L'URL de `undata-sna` est une page filtrée sur une seule année (1995) : la base n'a plus
+  d'adresse stable sans filtre.
+- [ ] `wb-wdi` couvre aussi `SL.EMP.WORK.ZS`, que la colonne `source` du CSV cite mais qui n'est pas
+  une des deux séries du PIB : dit dans la note.
+- [ ] `dry-run` et `controle-rangement` non lancés localement (pas de `ZOTERO_API_KEY` dans cet
+  environnement) ; à déclencher dans le workflow `biblio-zotero` une fois la branche poussée — sur
+  `master`, ils ne verraient pas ces entrées.
+- [ ] Rapatriement Zotero (feu vert humain) puis `ranger` : cinq nouvelles vers « Retraites », les
+  trois partagées à ajouter à « Retraites » (elles restent dans « Rémunérations publiques »).
+
+## Fusion `ins-cnat-editions` → `ins-cnat-2015` (21/09/2026)
+
+Les deux clés désignaient les éditions successives des *Comptes de la nation* de l'INS. La clé
+conservée est `ins-cnat-2015`, déjà citée dans le texte du livre « Rémunérations publiques », en
+français et en arabe ; elle prend le contenu, plus complet, de l'ancienne `ins-cnat-editions`
+(dix-neuf éditions, 2001-2005 à 2021-2025, toutes bases). Citée par deux livres, elle est
+versée au fonds commun (`precis/{fr,ar}/references.json`) et retirée des fichiers de livre. Le
+catalogue de tunisia-data a suivi (PR #8). À rapatrier dans Zotero : une seule entrée, dans les
+collections « Rémunérations publiques » et « Retraites » ; supprimer `ins-cnat-editions` si elle
+y a été créée.
+
+## Passe « Retraites — salaires du secteur privé (INS, CNSS) » (22/09/2026) — À REPORTER DANS ZOTERO
+
+Trois clés nouvelles de la série `croissances-revenus-prix` de tunisia-data, rendues en `[@clé]`
+par `figtools.source_line()` dans une figure du livre « Retraites ». Versées dans
+`precis/{fr,ar}/retraites/references.json`, identiques en FR et en AR (aucune n'est un texte
+juridique) :
+
+- [x] `ins-bms` — INS, *Bulletin mensuel de la statistique*, collection des 213 numéros en ligne
+  (novembre 2008 à juillet 2026), tableau 2.2, renvoi « Salaire dans le secteur privé non
+  agricole ». Type `report`, **sans `issued`** (collection ; même arbitrage que `ins-annuaire`,
+  `ins-enpe`). URL : page du numéro de juillet 2026 ; page du portail `ins.tn/statistiques/99`,
+  liste des captures d'archive et `sources/ins-bms-urls.csv` en `note`. Pages des numéros de
+  novembre 2008 et juillet 2026, leurs PDF, `ins.tn/publication`, `ins.tn/statistiques/99` et la
+  capture du 18/06/2025 : HTTP 200 le 22/09/2026.
+- [x] `ins-guide-salaires-prive-2026` — titre lu en tête du document, sur trois lignes (« Taux
+  d'évolution trimestriel des salaires » / « Guide méthodologique pour le calcul du taux
+  d'évolution trimestriel des salaires » / « Secteur privé non agricole »), 4 pages. `issued`
+  2026-08-10.
+- [x] `wb-2004-employment-strategy-annexes` — sur le modèle de `bm-1993-social-protection` :
+  `genre` « Report No. 25456-TUN », `issued` 2004-05-28 (couverture « May 28, 2004 », confirmée
+  par le catalogue de la Banque mondiale : « Tunisia - Employment strategy (Vol. 2 of 2) :
+  Annexes », rapport 25456). Tableau 8.1 relu à l'image, page 39 du PDF (90 p.).
+
+Reste :
+
+- [ ] **Date du guide non imprimée.** `2026-08-10` vient des métadonnées du PDF (création le
+  10/08/2026), concordantes avec le répertoire `2026-08` de l'URL et la mise à jour du 10/08/2026
+  affichée sur `ins.tn/statistiques/99` ; dit dans la `note`. À ramener à `2026-08` si l'on
+  n'admet que les dates imprimées.
+- [ ] Le tableau 8.1 de la Banque mondiale s'intitule « 1994-2001 » mais s'arrête à 2000 ; la couche
+  texte du scan est fautive (750 363 lu 150 363) : dit dans la `note`.
+- [ ] **Clés invisibles au `controle-rangement`.** `push_biblio.cles_citees` ne lit que les `.qmd` et
+  `tables/*.md` ; les clés rendues par `figtools.source_line()` n'y figurent pas. Les trois clés de
+  cette passe, et `bct-ra`, `ins-annuaire`, `undata-sna`, `ins-enpe`, `wb-wdi`, sont donc classées
+  « sans citation » ou « absentes de Zotero », jamais « à ranger ». Le contrôle ne dira pas si leur
+  rangement dérive. Correction de l'outil à décider (lire les `sources` du catalogue des séries
+  citées par les figures du livre).
+- [ ] Rapatriement Zotero (feu vert humain) puis `ranger` : les trois clés vers « Retraites ».
+
+Contrôles (22/09/2026) : `push_biblio.py --verifier` : 412 entrées, 1 perte, la même qu'avant
+(`cnss-chiffres`, `accessed`) : aucune perte nouvelle. `quarto pandoc --citeproc` contre
+livre + fonds commun, FR et AR : les trois clés résolvent. `--dry-run` (sans clé : ne compare
+pas à Zotero, annonce 412 à créer) : conversion des 412 sans erreur, les trois en `report`.
+`--controle-rangement` : 363 références dans Zotero, 347 bien rangées, 2 à déclasser
+(`loi96-101` : retirer cotisations_sociales, prestations_sociales ; `minfin-indicateurs-fp` :
+retirer fiscalite), 0 à ranger, 14 sans citation, 16 absentes de Zotero.
+
+## Passe « Retraites — premier portail de l'INS, salaires du privé 2001-2009 » (22/09/2026) — À REPORTER DANS ZOTERO
+
+Deux clés citées par la série `croissances-revenus-prix` de tunisia-data (fiche
+`sources/ins-bms-salaires-prive.md`), rendues en `[@clé]` par `figtools` dans les figures
+`fig-bareme-taux` et `fig-bareme-recent` du livre « retraites ». Versées dans
+`precis/{fr,ar}/retraites/references.json`, après `ins-guide-salaires-prive-2026` (livre seul
+utilisateur : pas de fonds commun).
+
+- [x] `ins-portail-2006-salaires-prive` — page française du premier portail (www.ins.nat.tn),
+  « Données Conjoncturelles » > « Données sur les Salaires », indicateur 0402040, intitulé lu sur la
+  page brute (windows-1256) : « Taux d’évolution trimestriel du salaire moyen dans le secteur privé
+  non agricole ». Type `webpage` ; `container-title` « Institut National de la Statistique -
+  Tunisie (www.ins.nat.tn) » ; `issued` 2006-10-06 (« Date de mise à jour : 06-10-2006 ») ; URL :
+  capture du 29/11/2006. Identique en FR et en AR.
+- [x] `ins-portail-2009-salaires-prive` — page arabe, même indicateur, « تاريخ آخر تحيين:
+  30-06-2009 » → `issued` 2009-06-30 ; URL : capture du 13/07/2009.
+  **Arbitrage de présentation** (page qui n'existe qu'en arabe) : on suit les précédents du livre
+  (`ins-enpe`, `cnrps-guides-rapports`) et `cherif-kammoun-tajir` (suffixe « [en arabe] ») :
+  - fichier **FR** : `title` = traduction littérale, « Taux d'évolution trimestriel des salaires
+    dans le secteur privé non agricole [en arabe] » ; la `note` cite l'intitulé original
+    « نسبة التطور الثلاثي للأجور في القطاع الخاص الغير الفلاحي », dit que le titre français en est
+    la traduction, et rappelle l'intitulé officiel français du même indicateur en 2006 ;
+  - fichier **AR** : `title` = l'intitulé original arabe, `container-title` « المعهد الوطني
+    للإحصاء - تونس (www.ins.nat.tn) » ; le reste (auteur, `title-short`, note, URL, date) est le
+    miroir du FR. Ces deux champs sont dans `CHAMPS_TRADUITS` de `sync_biblio.py` : contenant de
+    l'arabe, ils survivent à la descente depuis Zotero, qui recevra le titre français (la montée ne
+    lit que le FR).
+- Pas d'`accessed` : consultation (22/09/2026) et vérification HTTP dans la `note`.
+
+Contrôles (22/09/2026) : les deux URL d'archive répondent HTTP 200 sans redirection (19 990 et
+21 494 octets) ; la liste CDX
+(`http://web.archive.org/cdx/search/cdx?url=ins.nat.tn&matchType=domain&filter=original:.*0402040.*`)
+ne compte que ces deux captures. `push_biblio.py --verifier` : 414 entrées, 1 perte, la même
+qu'avant (`cnss-chiffres`, `accessed`) : aucune perte nouvelle. `quarto pandoc --citeproc` contre
+livre + fonds commun, FR (`precis.csl`) et AR : les deux clés résolvent. `--dry-run` (sans clé :
+annonce 414 à créer) : conversion sans erreur, les deux en `webpage` (`websiteTitle`, `date`).
+`--controle-rangement` : inchangé — 363 dans Zotero, 347 bien rangées, 2 à déclasser (`loi96-101`,
+`minfin-indicateurs-fp`), 0 à ranger, 14 sans citation, 16 absentes de Zotero ; les deux clés
+neuves n'y apparaissent pas (clés de figure invisibles à `cles_citees`, voir la passe précédente).
+
+Reste :
+
+- [ ] Rapatriement Zotero (feu vert humain) puis `ranger` : les deux clés vers « Retraites ».
+- [ ] Traduction du titre de 2009 faite ici, non publiée par l'INS : à revoir par le terminologue si
+  l'on préfère reprendre l'intitulé français de 2006 (« du salaire moyen »), qui n'est pas celui
+  de la page arabe (« للأجور », des salaires).
+
+## Passe « Retraites — salaires par secteur 1981-1996 et couverture 1989-1999 » (22/09/2026) — À REPORTER DANS ZOTERO
+
+Trois clés de tunisia-data (`main` à 5036761). Les deux premières sont citées par la série
+`croissances-revenus-prix`, rendue en `[@clé]` par `figtools` dans une figure du livre
+« retraites » ; la troisième (`bit2002_couverture_1989_1999`) n'est lue par aucune figure du livre
+à ce jour : **versée par avance**, pour une figure à venir — ce n'est pas une entrée orpheline.
+Versées dans `precis/{fr,ar}/retraites/references.json`, après
+`wb-2004-employment-strategy-annexes` (livre seul utilisateur : pas de fonds commun). Entrées
+identiques en FR et en AR (aucun texte du JORT, aucune source en arabe). Champs calqués sur
+`bm-1993-social-protection` : ni `DOI`, ni ISBN, ni `number-of-pages`, ni `accessed` — ces
+données sont dans la `note`.
+
+- [x] `bm-1995-pauvrete-annexes` — Banque mondiale, rapport n° 13993-TUN, vol. II : Annexes,
+  août 1995 (mois seul : la couverture ne donne pas de jour, et le catalogue en donne deux, le 1er et le 31).
+  Titre relu sur la couverture à 300 dpi : **« Allégement »**, et non « Allègement » (la fiche
+  `sources/bm-1995-pauvrete-annexes.md` de tunisia-data et la commande disaient « Allègement »).
+  Tableaux 39-41, p. 117-119 du PDF. URL : HTTP 200, 11 961 326 octets, identique au PDF local.
+- [x] `fmi-1997-selected-issues` — `citation_title` « Tunisia: Selected Issues »,
+  `citation_publication_date` 1997/07/25, `citation_author` « International Monetary Fund »,
+  DOI 10.5089/9781451837742.002.A001 (relus dans le HTML local). **Réserve** : la chaîne « 97/57 »
+  n'apparaît ni sur la page ni dans la capture d'archive, et Crossref ne donne ni volume ni numéro ;
+  la page de titre du PDF, `cr9757.pdf` de l'ancien site du FMI et l'aperçu `previewpdf` rendent
+  HTTP 403 : non lus. Le `genre` reprend donc la forme lue, « IMF Staff Country Reports, vol. 1997,
+  n° 057 », et « No. 97/57 » ne figure que dans la `note`, comme forme usuelle de citation. La page d'origine
+  rend 403 elle aussi, y compris par le DOI. **Capture d'archive vérifiée** (contrairement à ce
+  que dit la fiche de tunisia-data, « Internet Archive hors ligne ») : HTTP 200 sans redirection,
+  3 404 920 octets, mêmes `citation_title` et DOI, tableau 5 présent. Elle est citée dans la `note` ;
+  l'`URL` reste la page d'origine.
+- [x] `chaabane-2002-ess4` — BIT, Mohamed Chaabane, page de titre « ESS Paper No 4 » (notice
+  catalographique : « Working Paper No.4 », ISBN 92-2-113067-3, ISSN 1020-9581), Genève,
+  « First published 2002 ». Annexe III p. 32 du PDF (p. 28 imprimée). URL : HTTP 200,
+  247 085 octets, identique au PDF local.
+
+Contrôles (22/09/2026) : `push_biblio.py --verifier` : 417 entrées, 1 perte, la même qu'avant
+(`cnss-chiffres`, `accessed`) : aucune perte nouvelle. `quarto pandoc --citeproc` contre
+livre + fonds commun, FR (`precis.csl`) et AR : les trois clés résolvent. `--dry-run` (sans clé :
+annonce 417 à créer) : conversion des 417 sans erreur, les trois en `report`.
+`--controle-rangement` : inchangé — 363 dans Zotero, 347 bien rangées, 2 à déclasser (`loi96-101`,
+`minfin-indicateurs-fp`), 0 à ranger, 14 sans citation, 16 absentes de Zotero. **Ces chiffres ne
+couvrent pas les trois clés neuves** : des clés portées par les figures, `cles_citees` ne voit rien
+(voir plus haut). « 0 à ranger » ne dit donc rien de leur rangement.
+
+Reste :
+
+- [ ] Rapatriement Zotero (feu vert humain) puis `ranger` : les trois clés vers « Retraites ».
+- [ ] `fmi-1997-selected-issues` : lire la page de titre du PDF (navigateur) ; si elle porte
+  « IMF Staff Country Report No. 97/57 », passer le `genre` à cette forme (FR et AR) ; corriger la fiche de tunisia-data (capture d'archive
+  vérifiée le 22/09/2026) — hors du périmètre de cette passe.
+- [ ] `bm-1995-pauvrete-annexes` : aligner la fiche de tunisia-data sur « Allégement ».
+
+## Passe « Retraites — pension et salaire : sources anciennes » (22/09/2026) — À REPORTER DANS ZOTERO
+
+Six clés pour la figure `precis/fr/retraites/figures/pension_salaire.py` et la note
+`docs/notes/series-pensions-salaires-bilan.md`. **Aucune n'est encore citée** (ni prose, ni
+tableau, ni catalogue de tunisia-data) : versées par avance, pour des séries à venir — ce ne sont
+pas des entrées orphelines. Aucune n'existait sous une autre clé (recherche par id, titre, auteur
+et éditeur dans tous les `references.json` ; la seule entrée du BIT est `chaabane-2002-ess4`,
+autre ouvrage). Versées dans `precis/{fr,ar}/retraites/references.json`, après
+`chaabane-2002-ess4`, identiques en FR et en AR (aucun texte du JORT, aucune source en arabe).
+Champs calqués sur `bm-1993-social-protection` et `fmi-1997-selected-issues` : ni ISBN, ni
+ISSN, ni édition, ni `number-of-pages`, ni `accessed` — `csl_vers_zotero` ne porte que les
+champs de `CHAMPS` et laisserait tomber les autres sans rien dire ; ces données sont dans la `note`.
+
+| Clé | Référence | Type | Collection Zotero cible |
+|---|---|---|---|
+| `bm-1990-cem-8044-vol1` | Banque mondiale, *Country Economic Memorandum: The Road to an Outward-Oriented Economy*, rapport n° 8044-TUN, vol. I : Main Report, mars 1990 | report | Retraites |
+| `bm-1990-cem-8044-vol5` | idem, vol. V : Annex 4, Statistical Annexes, mars 1990 | report | Retraites |
+| `fmi-1996-red` | FMI, *Tunisia: Recent Economic Developments*, IMF Staff Country Reports, vol. 1996, n° 027, 7 mai 1996 | report | Retraites |
+| `vittas-1993-wps1154` | Dimitri Vittas, *Options for Pension Reform in Tunisia*, Policy Research Working Paper WPS 1154, juillet 1993 | report | Retraites — **candidate au fonds commun** si les cotisations le citent |
+| `bit-yearbook-1985` | BIT, *Year Book of Labour Statistics / Annuaire des statistiques du travail*, 45e édition, 1985 | book | Retraites |
+| `bit-yearbook-1999` | BIT, *Yearbook of Labour Statistics / Annuaire des statistiques du travail*, 58e édition, 1999 | book | Retraites |
+
+**Une clé par volume, et non `bm-1990-cem-8044` pour l'ensemble** (écart avec la commande) : la
+Banque mondiale catalogue chaque volume sous un identifiant, un rang (« Vol. 1 of 5 », « Vol. 5 of
+5 ») et un PDF propres ; une entrée CSL ne porte qu'une `URL`, et une clé unique aurait renvoyé
+l'un des deux volumes en note. Même forme que `bm-1995-pauvrete-annexes`, clé du seul volume II.
+
+Vérifié (22/09/2026) :
+
+- [x] `bm-1990-cem-8044-vol5` : titre, « Report No. 8044-TUN », « March 1990 », « Country
+  Operations Division, Country Department II, Europe, Middle East and North Africa Region » lus à
+  l'image sur la couverture (la commande disait « EMENA » : forme développée de la couverture
+  retenue). Catalogue (API `search.worldbank.org/api/v3/wds`, guid 919691468337762945) : rapport
+  8044, vol. 5 de 5, daté du 31/03/1990 ; `issued` = 1990-03. Tableaux 2.4 (p. 25 du PDF) et 10.2
+  (p. 91). PDF : HTTP 200, 3 289 753 octets, sha1 identique à `wb_1990_8044_cem_c.pdf`.
+- [x] `bm-1990-cem-8044-vol1` : **le PDF du volume I s'ouvre sur la couverture du volume III**
+  (vu à l'image). Identification par le catalogue (guid 162381468313479177, « Vol. 1 of 5 : Main
+  report ») et par le contenu (paragraphe de mission, « author of the main report » ; tableaux 1 à
+  19). Tableau 6 « Wages and Prices: 1980-84 » lu à l'image (p. 7 imprimée, p. 26 du PDF ; l'OCR
+  de la table des tableaux écrit « 1985-1984 »). PDF : HTTP 200, 6 409 044 octets, sha1 identique
+  à `wb_1990_8044_cem_a.pdf` — que le nom de fichier de tunisia-data ne rattache à aucun volume ; la
+  couverture trompeuse est dite dans la `note`, pour que personne ne « corrige » le titre.
+- [x] `fmi-1996-red` : `citation_title`, `citation_publication_date` 1996/05/07,
+  `citation_author`, DOI 10.5089/9781451837735.002.A001, eISBN 9781451837735, relus dans le HTML
+  local de tunisia-data (copie de la page, sans marque d'archive) **et** dans la capture d'archive
+  du 15/06/2025 (HTTP 200, 2 264 273 octets, mêmes métadonnées, tableau 21 « Wage and Employment
+  Indicators, 1990–95 » présent). Page d'origine : HTTP 403 aux accès automatisés. **DOI en champ**
+  (le type Zotero `report` a un champ `DOI`, vérifié sur le schéma ; l'aller-retour ne le perd pas),
+  alors que `fmi-1997-selected-issues` ne le porte qu'en `note`. « No. 96/27 » seulement en `note`.
+- [x] `vittas-1993-wps1154` : titre, auteur, collection, « Financial Sector Development
+  Department », « July 1993 », « WPS 1154 » lus à l'image sur la couverture. Catalogue (guid
+  297941468781762735) : WPS1154, 31/07/1993 ; `issued` = 1993-07. PDF : HTTP 200, 2 343 945 octets,
+  sha1 identique à la copie locale.
+- [x] `bit-yearbook-1985` / `-1999` : couvertures et versos lus à l'image. 1985 : « 45th issue »,
+  « Year Book » en deux mots, ISBN 92-2-005297-0 (relié) et 92-2-005298-9 (broché), ISSN
+  0084-3857, « Printed in Switzerland ». 1999 : « 58th issue », « Yearbook » en un mot, « The set of
+  2 volumes », ISBN 92-2-007358-7, « Printed in France ». Tableaux : 1985, tableau 22 partie A
+  « Labour cost in manufacturing — All industries », p. 737 ; 1999, tableau 6A « Labour cost in
+  manufacturing », p. 1003 — la même série, renumérotée. URL : HTTP 200, tailles égales aux PDF
+  locaux (75 970 741 et 71 280 029 octets).
+
+Contrôles (22/09/2026) : `push_biblio.py --verifier` : 423 entrées, 1 perte, la même qu'avant
+(`cnss-chiffres`, `accessed`). `quarto pandoc --citeproc` contre livre + fonds commun, FR
+(`precis.csl`) et AR : les six clés résolvent (une clé témoin inexistante est bien signalée).
+`--dry-run` (sans clé : annonce 423 à créer) : conversion des 423 sans erreur, quatre `report` et
+deux `book`, DOI porté sur `fmi-1996-red`. `--controle-rangement` : inchangé — 363 dans Zotero,
+347 bien rangées, 2 à déclasser (`loi96-101`, `minfin-indicateurs-fp`), 0 à ranger, 14 sans
+citation, 16 absentes de Zotero. Ces chiffres ne disent rien des six clés : aucune n'est citée.
+
+Reste :
+
+- [ ] Rapatriement Zotero (feu vert humain) puis `ranger` : les six clés vers « Retraites ».
+- [ ] ISSN de l'édition de 1999 imprimé « 0084-5857 », clé de contrôle fausse (celle de 1985,
+  0084-3857, est juste) : non repris ; à confirmer au catalogue du BIT si l'on veut l'ajouter.
+- [ ] `fmi-1996-red` : lire la page de titre du PDF (navigateur) ; si elle porte « IMF Staff Country
+  Report No. 96/27 », passer le `genre` à cette forme (FR et AR), comme pour
+  `fmi-1997-selected-issues`. Aligner les deux entrées du FMI sur le DOI : en champ ici, en `note`
+  seulement pour 1997 — à trancher.
+- [ ] Usage à préciser dans les `note` quand les séries seront écrites : la commande ne dit pas
+  quels tableaux de `fmi-1996-red` et `vittas-1993-wps1154` seront lus (le tableau 21 du FMI est
+  signalé comme pertinent, sans plus).
+- [ ] tunisia-data : les fichiers `wb_1990_8044_cem_{a..e}.pdf` ne disent pas quel volume ils
+  portent (a = vol. I sous couverture du vol. III, c = vol. V, e = vol. III ; b = vol. IV,
+  d = vol. II d'après leurs couvertures) — à consigner dans la fiche source.
