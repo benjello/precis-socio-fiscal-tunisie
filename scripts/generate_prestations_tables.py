@@ -46,10 +46,9 @@ MOTS = {
         "effet": "Effet", "texte": "Texte", "attestation": "Attestation",
         "parametre": "Paramètre", "valeur": "Valeur",
         "rang1": "1^er^", "rang2": "2^e^", "rang3": "3^e^", "rang4": "4^e^",
-        "assiette": "Assiette trimestrielle", "rangs_servis": "Rangs servis",
+        "rangs_servis": "Rangs servis",
         # Libellés des liens vers la base législative, où l'en-tête seul ne dit rien.
         "taux_rang": "Taux pour le {rang} enfant",
-        "assiette_plancher": "Assiette trimestrielle, plancher",
         "assiette_plafond": "Assiette trimestrielle, plafond",
         "su1": "Un enfant à charge", "su2": "Deux enfants à charge",
         "su3": "Trois enfants à charge ou plus",
@@ -77,9 +76,8 @@ MOTS = {
         "effet": "بداية السريان", "texte": "النصّ", "attestation": "الإثبات",
         "parametre": "المعيار", "valeur": "القيمة",
         "rang1": "الأوّل", "rang2": "الثاني", "rang3": "الثالث", "rang4": "الرابع",
-        "assiette": "الوعاء الثلاثي", "rangs_servis": "الترتيبات المصروفة",
+        "rangs_servis": "الترتيبات المصروفة",
         "taux_rang": "النسبة للطفل {rang}",
-        "assiette_plancher": "الوعاء الثلاثي، الحدّ الأدنى",
         "assiette_plafond": "الوعاء الثلاثي، الحدّ الأقصى",
         "su1": "طفل واحد متكفَّل به", "su2": "طفلان متكفَّل بهما",
         "su3": "ثلاثة أطفال متكفَّل بهم أو أكثر",
@@ -184,7 +182,7 @@ def formateurs(langue):
 # bibliographie du livre, identique dans les deux langues. À défaut, la colonne « Texte »
 # reprend le titre porté par le paramètre lui-même — en français, faute de mieux.
 CLES_AF = {
-    "1960-01-01": "loi60-30, art. 52 et 61",
+    "1961-04-01": "loi60-30, art. 52, 61 et 130",
     "1976-01-01": "loi75-82, art. 1-2",
     "1986-05-01": "loi86-75, art. 1-2",
     "1989-01-01": "loi88-38, art. 1 et 5",
@@ -235,38 +233,26 @@ def tableaux(langue):
     entetes_verticales = (m["parametre"], m["valeur"], m["texte"])
 
     def af_evolution():
-        """Taux par rang, assiette trimestrielle et rangs servis, de 1960 à nos jours."""
+        """Taux par rang, plafond de l'assiette trimestrielle et rangs servis, depuis 1961."""
         df = ot.tableau_evolution_datee(
             [
                 (f"{AF}/af/taux/enf1.yaml", m["rang1"], taux),
                 (f"{AF}/af/taux/enf2.yaml", m["rang2"], taux),
                 (f"{AF}/af/taux/enf3.yaml", m["rang3"], taux),
                 (f"{AF}/af/taux/enf4.yaml", m["rang4"], taux),
-                (f"{AF}/af/plancher_trim.yaml", "_plancher_", dinars),
-                (f"{AF}/af/plaf_trim.yaml", "_plafond_", dinars),
+                (f"{AF}/af/plaf_trim.yaml", m["assiette_plafond"], dinars),
                 (f"{AF}/af/nb_enfants_max.yaml", m["rangs_servis"], entier),
             ],
             cles=CLES_AF, langue=langue,
             colonne_periode=m["effet"], colonne_texte=m["texte"],
         )
-        # Les en-têtes de rang et les colonnes provisoires ne nomment pas seuls la
-        # grandeur : le lien vers la base législative reçoit un libellé explicite.
+        # Les en-têtes de rang ne nomment pas seuls la grandeur : le lien vers la base
+        # législative reçoit un libellé explicite.
         for i in (1, 2, 3, 4):
             ot.releve_note(f"{AF}/af/taux/enf{i}.yaml",
                            m["taux_rang"].format(rang=m[f"rang{i}"]))
-        ot.releve_note(f"{AF}/af/plancher_trim.yaml", m["assiette_plancher"])
-        ot.releve_note(f"{AF}/af/plaf_trim.yaml", m["assiette_plafond"])
-        if df is None:
-            return None
-        # Plancher et plafond décrivent une seule chose — la bande d'assiette — et se
-        # lisent ensemble : « 52 D – 500 D » à l'origine, un plafond simple après 1976.
-        assiette = [
-            ligne["_plafond_"] if ligne["_plancher_"] == UNITES[langue]["vide"]
-            else f"{ligne['_plancher_']} – {ligne['_plafond_']}"
-            for _, ligne in df.iterrows()
-        ]
-        df = df.drop(columns=["_plancher_", "_plafond_"])
-        df.insert(len(df.columns) - 2, m["assiette"], assiette)
+        # L'assiette n'a qu'un plafond : la loi n° 60-30 écarte la part des gains qui
+        # dépasse 52 D, 500 par trimestre (art. 61), il n'y a pas de plancher.
         return df
 
     def aides_ponctuelles():

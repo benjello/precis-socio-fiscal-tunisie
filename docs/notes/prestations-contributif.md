@@ -31,7 +31,7 @@ La série de l'article 61 alinéa 2 de la loi n° 60-30, **établie texte par te
 
 | Depuis | Texte | Taux par rang | Plafond trimestriel |
 |---|---|---|---|
-| origine (1960) | loi n° 60-30, art. 61 | **15 %** pour chaque enfant | bande **52 D – 500 D** |
+| **1er avril 1961** (art. 130) | loi n° 60-30, art. 61 | **15 %** pour chaque enfant | **52,500 D** (« 52 D, 500 » / « 500ر52 ») |
 | **1er janvier 1976** | **loi n° 75-82** du 30 déc. 1975, art. 2 | **18 / 16 / 14 / 12 %** (1er au 4e enfant) | **72,000 D** |
 | **1er mai 1986** | **loi n° 86-75** du 28 juill. 1986, art. 2 | **18 / 16 / 14 / 12 %**, inchangés | **122,000 D** |
 | **1er janvier 1989** | **loi n° 88-38** du 6 mai 1988, art. 5 | **18 / 16 / 14 %** — le 4e rang est supprimé | **122,000 D**, inchangé |
@@ -43,10 +43,12 @@ paramètres openfisca sont **justes en valeur et faux en date de trois manières
 datent de `1960-01-01` des taux de 1976 et un plafond de 1986, et ils ignorent le rang 4 à 12 %
 ouvert de 1976 à 1988.
 
-Cela résout aussi l'anomalie apparente entre le **plafond de 500 D** de 1960 et celui de **122 D**
-de 1989, qui aurait pu se lire comme une coupe brutale : le passage se fait **par le bas**, la
-bande 52-500 D à 15 % ayant été remplacée en 1976 par un plafond unique de **72 D** à des taux plus
-élevés, relevé à 122 D en 1986. La rupture est celle de **1976**, pas celle de 1988.
+**Correction du 23/09/2026.** Il n'y a pas d'anomalie entre 1960 et 1989 : la loi n° 60-30 fixe
+un **plafond unique de 52,500 D** par trimestre (« 52 D, 500 » en français, « 500ر52 » en arabe,
+p. 1607 FR / p. 1945 AR, lu à l'image), et non une bande 52-500 D. Le plafond monte donc à
+**72 D** en 1976, puis à 122 D en 1986. La loi n° 60-30 n'est en vigueur, pour ces articles, qu'au
+**1er avril 1961** (art. 130). Corrigé dans openfisca-tunisia#450. La rupture de méthode reste
+celle de **1976** (taux dégressifs par rang), pas celle de 1988.
 
 **R2 — La chaîne modificative de la loi n° 60-30 a été dépouillée intégralement, sur les seize
 lois de 1961 à 2007** que `jort_cache.db` recense, chacune ouverte et lue :
@@ -310,12 +312,10 @@ entièrement attestée à l'image :
 1976-01-01: 0.12   # loi n° 75-82
 1989-01-01: 0      # loi n° 88-38 : le 4e rang cesse d'ouvrir droit
 # af/plaf_trim.yaml
-1960-01-01: 500    # loi n° 60-30, art. 61 — plafond de la bande
+1961-04-01: 52.5   # loi n° 60-30, art. 61 et 130 (corrigé, openfisca-tunisia#450)
 1976-01-01: 72     # loi n° 75-82, art. 2
 1986-05-01: 122    # loi n° 86-75, art. 2
-# af/plancher_trim.yaml — paramètre à CRÉER
-1960-01-01: 52     # loi n° 60-30, art. 61
-1976-01-01: 0      # supprimé par la loi n° 75-82 (plafond unique)
+# af/plancher_trim.yaml — SANS OBJET : aucun plancher (supprimé par openfisca-tunisia#450)
 # af/nb_enfants_max — paramètre à CRÉER
 1960-01-01: 4      # loi n° 60-30, art. 52
 1989-01-01: 3      # loi n° 88-38, art. 1er
