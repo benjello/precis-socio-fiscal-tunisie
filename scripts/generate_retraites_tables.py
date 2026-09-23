@@ -405,6 +405,36 @@ def main() -> int:
                 return 1
             (sortie / nom).write_text(ot.tableau_vers_markdown(df), encoding="utf-8")
         print(f"✓ {langue} : {len(fabriques)} tableaux")
+    return serie_actualisation()
+
+
+def serie_actualisation() -> int:
+    """Émet la série brute du barème d'actualisation des salaires, pour la figure.
+
+    Un paramètre par année de salaire, dont chaque valeur est celle d'un arrêté. La figure
+    en tire des taux, qui ne se lisent pas dans un tableau markdown : la série est donc
+    émise ici, hors du build — le site se construit sans openfisca (#165) —, une seule fois
+    puisque des valeurs brutes n'ont pas de langue. Chaque ligne porte l'arrêté qui fixe
+    le coefficient et son lien au Journal officiel.
+    """
+    lignes = []
+    for annee in range(1961, datetime.date.today().year):
+        chemin = f"{RSNA}/salaire_reference/actualisation/annee_{annee}.yaml"
+        for date, valeur, titre, lien in ot.serie_datee(chemin):
+            if valeur is not None:
+                lignes.append((date, annee, valeur, titre, lien))
+    if not lignes:
+        print("✗ rsna-actualisation-salaires : série vide, snapshot conservé.")
+        return 1
+    lignes.sort()
+    cache = RACINE / "_seriescache"
+    cache.mkdir(parents=True, exist_ok=True)
+    import pandas as pd
+
+    pd.DataFrame(lignes, columns=["bareme", "annee_salaires", "coefficient", "arrete", "lien"]
+                 ).to_csv(cache / "rsna-actualisation-salaires.csv", index=False)
+    print(f"✓ série rsna-actualisation-salaires : {len(lignes)} coefficients, "
+          f"{len({l[0] for l in lignes})} barèmes")
     return 0
 
 

@@ -171,7 +171,7 @@ CNSS, « cnss-chiffres ». Cette question se résoudra hors du Journal officiel,
 
 **La limite de calcul.** La [limite de calcul des prestations](#g-limite-calcul-prestations) n'est pas un plafond de cotisation : le régime cotise sur la totalité du salaire, comme l'expose le livre « Cotisations sociales ». Elle borne la part du salaire que la pension prend en compte, et c'est au-delà d'elle que commence l'assiette du régime complémentaire. Fixée à six fois le [SMIG](#g-smig) rapporté à 2 400 heures par an en 1974, reprise telle quelle en 1990, elle est précisée en 1994 par la référence au SMIG du régime de 48 heures. Aucun autre modificatif du décret qui la touche n'a été retrouvé jusqu'en avril 2026. Exprimée en multiple du SMIG, elle en suit l'évolution sans qu'aucun texte propre ait à la modifier.
 
-**Le barème d'actualisation.** Les salaires anciens de la fenêtre de référence ne sont pas pris pour leur valeur nominale : ils sont actualisés. Le barème annoncé en 1990, puis fixé « annuellement » depuis 1994, a été publié par une série d'arrêtés du ministre des affaires sociales « relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants », une trentaine d'arrêtés annuels du 17 novembre 1994 au 16 juillet 2024. Le premier, l'arrêté du 17 novembre 1994, vise le décret n° 94-1429, fixe un coefficient pour chaque année de salaire de 1961 à 1993 et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ juillet 1994 [@arrete-1994-11-17-bareme-actualisation, art. 1-2] ; aucun arrêté pris en application de la rédaction de 1990 n'a été retrouvé. L'arrêté du 29 mars 1997, donne pour chaque année de salaire un coefficient multiplicateur et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ janvier 1997 [@arrete-1997-03-29-bareme-actualisation]. Les coefficients de ces barèmes ne sont pas reproduits ici.
+**Le barème d'actualisation.** Les salaires anciens de la fenêtre de référence ne sont pas pris pour leur valeur nominale : ils sont actualisés. Le barème annoncé en 1990, puis fixé « annuellement » depuis 1994, a été publié par une série d'arrêtés du ministre des affaires sociales « relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants », une trentaine d'arrêtés annuels du 17 novembre 1994 au 16 juillet 2024. Le premier, l'arrêté du 17 novembre 1994, vise le décret n° 94-1429, fixe un coefficient pour chaque année de salaire de 1961 à 1993 et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ juillet 1994 [@arrete-1994-11-17-bareme-actualisation, art. 1-2] ; aucun arrêté pris en application de la rédaction de 1990 n'a été retrouvé. L'arrêté du 29 mars 1997, donne pour chaque année de salaire un coefficient multiplicateur et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ janvier 1997 [@arrete-1997-03-29-bareme-actualisation]. Les coefficients du barème de 2024 sont donnés dans l'onglet Données de la @fig-bareme-taux.
 
 
 
@@ -183,26 +183,102 @@ Le premier arrêté fait exception, et pour une raison de fond : celui du 17 nov
 
 **Chaque barème ajoute une ligne à son prédécesseur**, celle de l'année qui vient de s'écouler, et conserve 1961 comme première année de salaire. Le décompte des coefficients le confirme d'un arrêté à l'autre : trente-trois lignes en 1994 pour les salaires de 1961 à 1993, trente-quatre en 1995, quarante-cinq en 2006, soixante-deux en 2023. Le barème n'est donc pas rebasé : il est prolongé.
 
-<!-- TODO (documentaliste) : les COEFFICIENTS eux-mêmes restent à relever, et le précis ne les
-publiera qu'une fois relus à l'image — la règle des valeurs chiffrées. Ce qui est établi au
-20 septembre 2026, et qui borne le travail restant :
+**Ce que reproduisent les coefficients.** Aucun texte ne dit sur quoi ils sont établis : le décret n° 94-1429 prévoit un barème fixé annuellement par arrêté [@decret94-1429, art. 1], et chaque arrêté se borne à ses visas et à la liste des coefficients. Confrontés à l'indice des prix à la consommation, ces coefficients en reproduisent pourtant l'évolution. Le rapport des coefficients de deux années voisines donne le taux dont le barème revalorise une année de salaire par rapport à la suivante : dans le barème de 2024, ce taux est, chaque année, le taux d'inflation.
 
-- les vingt-huit arrêtés ont leur clé CSL dans les deux langues, URL pist.tn vérifiée en ligne ;
-- DIX-HUIT fascicules exposent le tableau dans leur couche texte, directement exploitable ;
-- DEUX fascicules (1997 et 2024) sont textuels MAIS leur tableau est une image : entre « barème
-  suivant : » et l'article 2, la couche texte ne porte que des en-têtes courants. Ne pas conclure
-  du caractère textuel d'un fascicule que son tableau l'est ;
-- SIX fascicules (2000 à 2005) ont un encodage décalé de 29 : lisibles après décodage, mais
-  l'ancre « barème suivant » n'y a pas été retrouvée, à revoir ;
-- UN fascicule est un scan (1996) et UN est absent du corpus (2020, JORT n° 61), à télécharger ;
-- PIÈGE DE MISE EN PAGE : deux sérialisations coexistent. Certains fascicules alternent année et
-  coefficient, d'autres donnent toutes les années puis tous les coefficients. Apparier en
-  supposant l'alternance produit des séries fausses mais plausibles. Collecter les deux suites
-  séparément, puis les apparier, et contrôler que les années sont contiguës et les coefficients
-  décroissants.
+```{python}
+#| label: fig-bareme-taux
+#| fig-cap: "Taux d'actualisation implicite du barème de 2024, inflation, croissance du PIB nominal, du salaire brut par salarié et du salaire déclaré à la CNSS, d'une année sur l'autre, 1962-2023."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import bareme_actualisation as ba
+import figtools
+figtools.figure_tabs(
+    ba.fig_taux(), ba.taux_table(),
+    "rsna-actualisation-salaires", "croissances-revenus-prix",
+    slug="fig_bareme_taux",
+    caption="Barème d'actualisation de 2024, inflation, PIB nominal et salaires, 1962-2023",
+    note_lecture=(
+        "Le taux implicite du barème d'une année est le rapport entre le coefficient de "
+        "l'année précédente et celui de l'année, moins un. **Il se confond avec "
+        "l'inflation** : de 1963 à 2023, l'écart ne dépasse jamais 0,23 point et vaut "
+        "0,03 point en moyenne. La croissance du PIB nominal est au-dessus de l'inflation "
+        "toutes les années sauf cinq — 1986, 2011, 2020, 2022 et 2023 : 13,0 % par an en "
+        "moyenne de 1963 à 1990 contre 6,2 % pour les prix, 8,7 % contre 3,9 % de 1991 à "
+        "2010, 6,5 % contre 6,0 % de 2011 à 2023 ; elle comprend aussi celle de la "
+        "population et de l'emploi. **Les salaires se lisent en sept séries**, chacune "
+        "d'une seule source, qu'aucun trait ne relie. Trois familles se distinguent par la "
+        "couleur. Le **salaire déclaré à la CNSS** (verts et violet) : salaire moyen "
+        "déclaré d'après les rapports de la BCT, 6,7 % par an de 1964 à 1974 contre 4,0 % "
+        "pour les prix ; salaire annuel moyen déclaré d'après la Banque mondiale, 5,2 % "
+        "contre 3,7 % de 1995 à 2000 ; salaire des mêmes salariés permanents du privé "
+        "non agricole d'après l'INS, 5,6 % contre 3,6 % de 2001 à 2012, puis 5,7 % "
+        "contre 6,2 % de 2013 à 2023 — ce dernier n'est pas un salaire moyen, et, pour "
+        "2001-2007, le premier portail de l'INS ne nomme pas la CNSS. Le **salaire moyen "
+        "des secteurs non agricoles hors administration**, d'après les données du "
+        "ministère du Plan (orangés) : 5,6 % par an contre 7,0 % pour les prix de 1984 à "
+        "1993 (Banque mondiale, 1995), sous l'inflation sept années sur dix ; un autre "
+        "millésime des mêmes données (FMI, 1997) diverge dès 1986 ; 5,4 % contre 2,9 % "
+        "de 1999 à 2007 (BCT, taux imprimés). Le **salaire brut par salarié** des "
+        "comptes nationaux (rouge) : 6,1 % contre 3,9 % sur les années connues de 2002 "
+        "à 2012. Un salaire ancien entre donc dans le salaire de référence revalorisé "
+        "comme les prix : moins que les salaires dans les années 1960-1970 et de 1995 à "
+        "2012, plus qu'eux de 1984 à 1993 et depuis 2018. "
+        "**Les pointillés marquent les ruptures de série** : l'indice des prix raccorde "
+        "deux bases en 1970 ; l'effectif des salariés déclarés à la CNSS est redéfini en "
+        "1971 (moyenne trimestrielle) ; la mesure de l'emploi, donc du salaire brut par "
+        "salarié, change en 2011. Le PIB nominal ne porte pas de rupture : depuis 1993, "
+        "chaque taux compare deux années d'une même base des comptes nationaux ; avant "
+        "1993, il reste celui de la Banque mondiale, qui n'a pu être vérifié dans une "
+        "même base. L'indice des prix commence en 1962, année qui n'a donc pas de taux "
+        "d'inflation."),
+)
+```
 
-L'arrêté du 30 avril 2014 rend 53 années pour 52 coefficients : anomalie à trancher à l'image,
-pas à corriger au jugé. -->
+Depuis 1995, période où les salaires sont connus, les mêmes courbes se lisent mieux de près.
+
+```{python}
+#| label: fig-bareme-recent
+#| fig-cap: "Taux d'actualisation implicite du barème de 2024, inflation, croissance du PIB nominal, du salaire brut par salarié et du salaire déclaré à la CNSS, d'une année sur l'autre, 1995-2023."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import bareme_actualisation as ba
+import figtools
+figtools.figure_tabs(
+    ba.fig_taux_recent(), ba.taux_recent_table(),
+    "rsna-actualisation-salaires", "croissances-revenus-prix",
+    slug="fig_bareme_recent",
+    caption="Barème d'actualisation de 2024, inflation, PIB nominal et salaires, 1995-2023",
+    note_lecture=(
+        "De 1995 à 2023, le taux implicite du barème et l'inflation valent tous deux "
+        "4,6 % par an en moyenne, le PIB nominal 7,5 %. Les salaires se lisent en quatre "
+        "séries qui ne se raccordent pas. Le salaire annuel moyen déclaré à la CNSS "
+        "(Banque mondiale) croît de 5,2 % par an de 1995 à 2000, contre 3,7 % pour les "
+        "prix ; le salaire moyen des secteurs productifs non agricoles (BCT), de 5,4 % "
+        "contre 2,9 % de 1999 à 2007 ; le salaire brut par salarié des comptes nationaux, de 6,1 % sur les "
+        "années connues de 2002 à 2012, contre 3,9 %. Le salaire déclaré des salariés "
+        "permanents du privé non agricole (INS) croît plus vite que les prix de 2001 à "
+        "2017 — à égalité en 2013 —, puis **moins vite chaque année de 2018 à 2023** : l'écart "
+        "atteint 1,8 point en 2021 (3,9 % contre 5,7 %) et 2,7 points en 2022 (5,6 % "
+        "contre 8,3 %). Cumulés de 2015 à 2023, les taux du barème multiplient un salaire "
+        "de 2014 par 1,74, ceux de ce salaire déclaré par 1,65. Il suit les mêmes "
+        "salariés d'un trimestre à l'autre : ce n'est pas l'évolution du salaire moyen, "
+        "et son taux annuel enchaîne les quatre trimestres de l'année, quand le barème "
+        "compare des moyennes annuelles. "
+        "**Les pointillés marquent les ruptures de série** : l'indice des prix raccorde "
+        "deux bases en 1970, et la mesure de l'emploi, donc du salaire brut par salarié, "
+        "change en 2011. Le PIB nominal ne porte pas de rupture : depuis 1993, chaque taux "
+        "compare deux années d'une même base des comptes nationaux ; avant 1993, il reste "
+        "celui de la Banque mondiale, qui n'a pu être vérifié dans une même base."),
+)
+```
+
+<!-- TODO (documentaliste) : les coefficients des vingt-huit arrêtés sont désormais relevés
+(1 319 valeurs, contrôle croisé d'un arrêté au suivant, 1996 et 2024 lus à l'image ; voir
+openfisca-tunisia#438). Leur coïncidence avec l'indice des prix en est un second contrôle,
+indépendant. Reste à établir, hors du Journal officiel, si le ministère publie la méthode
+du barème : aucun des textes lus ne la donne. -->
 
 ### Les planchers
 
