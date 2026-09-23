@@ -21,10 +21,10 @@ Les deux autres sont des observations, déjà snapshotées : `cnrps-taux-equilib
 `cnss-rsna-taux-equilibre`, dont on ne lit que la pension moyenne et le salaire moyen.
 
 CE QUI EST TRACÉ, ET CE QUI NE L'EST PAS.
-  - Le barème de 1959 n'a pas de plafond daté à sa date : sa courbe est celle du barème seul,
-    2 % par annuité dans la limite de 40 annuités. Le plafond de 60 % de la loi n° 59-18,
-    atteint à trente annuités, et celui de 80 % du 1er juillet 1970 ne sont pas tracés ; la
-    note de lecture les donne. L'année seule du barème est affichée (voir le générateur).
+  - Le barème de 1959, 2 % par annuité, est lu au 1er avril 1959 avec le plafond de 60 %
+    en vigueur à cette date : sa courbe plafonne à 60 % dès trente annuités. Le plafond de
+    80 % du 1er juillet 1970 n'est pas tracé ; la note de lecture le donne. L'année seule du
+    barème est affichée (voir le générateur).
   - Les barèmes du régime non agricole de 1974 et de 1982 donnent le même taux à chaque
     année entière : le décret n° 82-1030 ne change que le pas de la majoration, le trimestre
     au lieu de l'année (art. 4). Une seule courbe les porte, et le module vérifie qu'ils
@@ -88,12 +88,11 @@ figtools.register_provenance(
                "ouvre la pension au taux du barème"),
     perimetre_ar=("النسبة المكتسبة عند كلّ سنة كاملة من 0 إلى 45 سنة، في حدود السقف النافذ "
                   "في تاريخ الجدول؛ والمدّة الدنيا التي تفتح الحقّ في الجراية"),
-    caveats=("Le plafond de 1959, 60 %, et celui de 1970, 80 %, ne sont pas représentés : la "
-             "courbe de 1959 est celle du barème seul, 2 % par annuité dans la limite de 40 "
-             "annuités. En 1959, la durée se décompte par semestre ; en 1974, la majoration "
+    caveats=("La courbe de 1959 porte le plafond de 60 % en vigueur au 1er avril 1959 ; celui "
+             "de 80 %, en vigueur du 1er juillet 1970 à 1985, n'est pas représenté. En 1959, la durée se décompte par semestre ; en 1974, la majoration "
              "par année complète : la courbe, tracée par année entière, ne porte pas ces pas."),
-    caveats_ar=("سقف 1959 (60 %) وسقف 1970 (80 %) غير ممثّلين: منحنى 1959 هو منحنى الجدول وحده، "
-                "2 % عن كلّ سنة في حدود 40 سنة."),
+    caveats_ar=("منحنى 1959 يحمل سقف 60 % النافذ في غرّة أفريل 1959؛ أمّا سقف 80 %، النافذ من "
+                "غرّة جويلية 1970 إلى 1985، فغير ممثّل."),
 )
 
 figtools.register_provenance(
@@ -125,10 +124,8 @@ _L = {
                    "ar": "نسبة تصفية الجراية حسب مدّة الخدمات أو الانخراط"},
     "x_duree": {"fr": "Durée (années)", "ar": "المدّة (سنوات)"},
     "y_taux": {"fr": "Taux de liquidation τ(n) (%)", "ar": "نسبة التصفية (%)"},
-    "lg_c1959": {"fr": "CNRPS, barème de 1959 : 2 % par annuité, 40 annuités au plus "
-                       "(plafond de 60 % non tracé)",
-                 "ar": "الصندوق الوطني للتقاعد، جدول 1959: 2 % عن كلّ سنة، 40 سنة على الأكثر "
-                       "(سقف 60 % غير ممثّل)"},
+    "lg_c1959": {"fr": "CNRPS, barème de 1959 : 2 % par annuité ; plafond 60 %",
+                 "ar": "الصندوق الوطني للتقاعد، جدول 1959: 2 % عن كلّ سنة؛ السقف 60 %"},
     "lg_c1985": {"fr": "CNRPS, barème de 1985 : 2 %, 3 %, puis 2 % ; plafond 90 %",
                  "ar": "الصندوق الوطني للتقاعد، جدول 1985: 2 % ثمّ 3 % ثمّ 2 %؛ السقف 90 %"},
     "lg_c1985_min": {"fr": "CNRPS 1985, en deçà de la durée minimale de 15 ans",

@@ -1475,10 +1475,9 @@ figtools.figure_tabs(
         r"de la majoration, le trimestre au lieu de l'année. Entre cinq et dix ans, le tireté "
         r"est la pension proportionnelle créée en 1982, $\frac{n}{n_0}\,\tau_0$, soit 20 % à "
         r"cinq ans ; en 1974, ces carrières recevaient une allocation en capital, qui n'est "
-        r"pas un taux. Le barème de 1959, 2 % par annuité dans la limite de quarante annuités, "
-        r"est tracé sans son plafond : le plafond de 1959, 60 %, atteint dès trente annuités, "
-        r"n'est pas représenté ; celui de 80 %, en vigueur du 1^er^ juillet 1970 à 1985, "
-        r"coïncide avec le terme du barème."),
+        r"pas un taux. Le barème de 1959, 2 % par annuité, atteint son plafond de 60 % dès "
+        r"trente annuités ; le plafond de 80 %, en vigueur du 1^er^ juillet 1970 à 1985, "
+        r"n'est pas représenté : il coïncide avec le terme du barème, quarante annuités."),
 )
 ```
 

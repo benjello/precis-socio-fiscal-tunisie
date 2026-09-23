@@ -64,7 +64,10 @@ PAQUETS = {
         # le plafond d'origine des allocations familiales (52,500 D au 1er avril 1961) et
         # supprime `af/plancher_trim`, qu'aucun texte ne fonde (openfisca-tunisia#450) : en
         # deçà, le tableau des allocations familiales publierait une bande 52-500 D fausse.
-        "version_minimale": (0, 106),
+        # La 0.107 date le barème d'annuités de la CNRPS de 1959 au 1er avril 1959, et non
+        # de la signature (openfisca-tunisia#452) : en deçà, la courbe de 1959 de la figure
+        # des taux de liquidation perd son plafond de 60 %.
+        "version_minimale": (0, 107),
     },
 }
 
