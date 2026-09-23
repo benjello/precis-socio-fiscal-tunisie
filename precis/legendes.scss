@@ -1,0 +1,30 @@
+/*-- scss:rules --*/
+
+// TITRES DES TABLEAUX ET DES FIGURES. Le thème les écrivait en 0,9 rem et en gris clair,
+// plus petits et plus pâles que les cellules qu'ils annoncent. Style retenu (« A2 ») :
+// demi-gras, un peu plus grand que le texte, presque noir, aligné sur le début de ligne
+// (à gauche en français, à droite en arabe), numéro en couleur d'accent, filet fin
+// dessous. Même style pour les tableaux et les figures ; le PDF n'est pas concerné.
+
+figure.quarto-float > figcaption.quarto-float-caption,
+figure.quarto-float > figcaption.quarto-float-caption-top {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #212529;
+  text-align: start;
+  margin: 1.2rem 0 .45rem;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid #adb5bd;
+}
+
+figure.quarto-float figcaption .legende-num {
+  font-weight: 700;
+  color: $primary;
+}
+
+// Une figure en onglets porte son titre dans une sous-figure (« (a) … ») : le script
+// `legendes.html` le reporte dans la légende numérotée, et la sous-légende disparaît.
+figcaption.quarto-subfloat-caption.legende-reportee {
+  display: none;
+}
