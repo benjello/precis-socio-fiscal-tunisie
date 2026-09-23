@@ -810,11 +810,19 @@ $$
 \tau^* = \frac{N_p\,\bar p}{N_c\,\bar w} = \frac{\bar p}{\bar w}\times\frac{N_p}{N_c}
 $$
 
-où $N_p$ est le nombre de pensions, toutes natures, $\bar p$ la pension moyenne, $N_c$ le nombre de cotisants, c'est-à-dire d'affiliés actifs, et $\bar w$ leur salaire moyen : $N_p\,\bar p$ est la dépense de pensions, $N_c\,\bar w$ la masse des salaires soumis à cotisation. Le premier facteur, $\bar p / \bar w$, est le **taux de remplacement apparent** (« pension moyenne ÷ salaire moyen » dans les figures qui suivent) ; le second, $N_p / N_c$, est le **rapport entre le nombre de pensions et le nombre de cotisants** (« pensions ÷ cotisants »), qui mesure la charge démographique. La seconde figure suit les trois grandeurs en indices (@fig-cnrps-taux-equilibre-decomposition). On compare $\tau^*$ au taux légal global, part de l'agent et part de l'employeur réunies, dont l'évolution est exposée dans le livre « Cotisations sociales ».
+où $N_p$ est le nombre de pensions, toutes natures, $\bar p$ la pension moyenne, $N_c$ le nombre de cotisants, c'est-à-dire d'affiliés actifs, et $\bar w$ leur salaire moyen : $N_p\,\bar p$ est la dépense de pensions, $N_c\,\bar w$ la masse des salaires soumis à cotisation. Le premier facteur, $\bar p / \bar w$, est le **taux de remplacement apparent** (« pension moyenne ÷ salaire moyen » dans les figures qui suivent) ; le second, $N_p / N_c$, est le **rapport entre le nombre de pensions et le nombre de cotisants** (« pensions ÷ cotisants »), qui mesure la charge démographique. La seconde figure suit les trois grandeurs en indices (@fig-cnrps-taux-equilibre-decomposition), la troisième les niveaux de $\bar p$ et de $\bar w$ (@fig-cnrps-pension-salaire-niveaux). On compare $\tau^*$ au taux légal global, part de l'agent et part de l'employeur réunies, dont l'évolution est exposée dans le livre « Cotisations sociales ».
+
+Les chiffres couvrent deux périodes que rien ne relie. Pour 2000-2023, ils sont calculés à partir des publications de la caisse et, pour 2021-2023, de celles du ministère des finances. Pour 1980 et 1985-1991, ils le sont à partir de l'annexe statistique d'un rapport de la Banque mondiale, qui reprend des données du ministère du Plan [@bm-1993-social-protection, annexe statistique, tableaux 3 et 5]. Aucune donnée n'a été retrouvée pour 1981-1984 ni pour 1992-1999 : les figures ne tracent aucun trait à travers ces années. Le rapport de la Banque mondiale donne les pensions versées, les cotisations de pension, les affiliés actifs et les pensionnés, mais non la masse des salaires. Celle-ci se déduit des cotisations :
+
+$$
+N_c\,\bar w = \frac{C}{\kappa}
+$$
+
+où $C$ est le montant des cotisations de pension de l'année et $\kappa$ le taux légal global. De 1980 à 1991, $\kappa = 12\,\%$ : 5 % à la charge de l'agent et 7 % à celle de l'employeur, taux fixés pour la gestion 1975 [@loi74-101-lf1975, art. 38 et 39] et repris par la loi de 1985 [@loi85-12, art. 9 et 13] ; le rapport publie ce taux de 12 % pour 1991 [@bm-1993-social-protection, annexe statistique, tableau 6].
 
 ```{python}
 #| label: fig-cnrps-taux-equilibre
-#| fig-cap: "CNRPS : taux de cotisation d'équilibre et taux légal global, 2000-2023."
+#| fig-cap: "CNRPS : taux de cotisation d'équilibre et taux légal global, 1980-2023."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
@@ -823,9 +831,15 @@ import figtools
 figtools.figure_tabs(
     te.fig_taux(), te.table(), "cnrps-taux-equilibre",
     slug="fig_cnrps_taux_equilibre",
-    caption="CNRPS : taux de cotisation d'équilibre et taux légal global, 2000-2023",
+    caption="CNRPS : taux de cotisation d'équilibre et taux légal global, 1980-2023",
     note_lecture=(
-        "**Le taux d'équilibre passe de 17,1 % des salaires soumis à cotisation en 2000 "
+        "**De 1985 à 1991, le taux d'équilibre passe de 9,9 % à 12,6 % des salaires soumis "
+        "à cotisation, pour un taux légal global resté à 12 %.** Il était de 8,4 % en 1980. "
+        "L'écart avec le taux légal passe de −3,6 points en 1980 et −2,1 points en 1985 à "
+        "+0,2 point en 1988 et +0,6 point en 1991. Ces années, marquées de triangles creux, "
+        "viennent d'une autre source que les suivantes et ne leur sont pas raccordées ; le fond "
+        "hachuré signale les années 1992-1999, pour lesquelles aucune donnée n'a été retrouvée. "
+        "**Le taux d'équilibre passe ensuite de 17,1 % des salaires soumis à cotisation en 2000 "
         "à 25,8 % en 2014, puis à 33,7 % en 2019 et 32,4 % en 2020.** Le taux légal "
         "global passe de 14,2 % à 20,7 % entre 2000 et 2012, puis à 23,7 % en 2020. "
         "L'écart entre les deux est de 2,9 points en 2000, 5,1 points en 2014, "
@@ -844,9 +858,11 @@ figtools.figure_tabs(
 
 La hausse tient d'abord à la démographie du régime. Le nombre de pensions de toutes natures rapporté au nombre d'affiliés actifs passe de 29,4 % en 2000 à 40,7 % en 2014 et à 51,3 % en 2020 : il y a en 2020 un peu plus d'une pension pour deux cotisants, contre moins d'une pour trois en 2000. Le taux de remplacement apparent varie beaucoup moins : 58,2 % en 2000, 63,3 % en 2014, 63,1 % en 2020. Sur 2014-2020, années pour lesquelles les cotisations sont connues, il oscille entre 62,6 % et 66,5 % et finit à son niveau de départ : la hausse du taux d'équilibre sur ces années vient tout entière du rapport démographique. Sur l'ensemble de la période, ce rapport est multiplié par 1,75, le remplacement apparent par 1,08, et le taux d'équilibre par 1,89. L'estimation de 2021, dernière année pour laquelle les documents consultés donnent le nombre d'affiliés actifs, prolonge le mouvement : $N_p / N_c = 52{,}6\,\%$ et $\bar p / \bar w = 64{,}4\,\%$, soit $\tau^* = 33{,}9\,\%$ en 2021.
 
+De 1985 à 1991, la hausse du taux d'équilibre tient de même au rapport démographique. Le nombre de pensionnés rapporté au nombre d'affiliés actifs passe de 15,9 % en 1985 à 20,1 % en 1991, et le taux de remplacement apparent reste entre 60,4 % et 64,8 %, à 62,3 % en 1985 et à 62,4 % en 1991 : le taux d'équilibre est multiplié par 1,27, le rapport démographique aussi. L'année 1980 ne s'inscrit pas dans ce mouvement : le rapport entre pensionnés et affiliés actifs y est de 18,7 %, plus haut qu'en 1985, et le remplacement apparent de 45,1 %. Le nombre d'affiliés actifs publié passe en effet de 223 000 en 1980 à 359 680 en 1985, soit 61 % de plus, sans que la source commente cette hausse. Les niveaux de 1991 et de 2000 ne se comparent pas terme à terme, faute de données entre les deux et parce que les deux sources ne mesurent pas tout à fait les mêmes grandeurs (voir les réserves ci-dessous) ; ils situent toutefois le taux d'équilibre à 12,6 % en 1991 et à 17,1 % en 2000, le rapport démographique à 20,1 % et à 29,4 %.
+
 ```{python}
 #| label: fig-cnrps-taux-equilibre-decomposition
-#| fig-cap: "CNRPS : décomposition du taux d'équilibre, indices base 100 en 2000, 2000-2021."
+#| fig-cap: "CNRPS : décomposition du taux d'équilibre, en indices, 1980-2021."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
@@ -855,12 +871,18 @@ import figtools
 figtools.figure_tabs(
     te.fig_decomposition(), te.table_indices(), "cnrps-taux-equilibre",
     slug="fig_cnrps_taux_equilibre_decomposition",
-    caption="CNRPS : décomposition du taux d'équilibre, indices base 100 en 2000, 2000-2021",
+    caption="CNRPS : décomposition du taux d'équilibre, en indices, 1980-2021",
     note_lecture=(
         "**Le taux d'équilibre est le produit du taux de remplacement apparent et du "
         "rapport entre pensions et cotisants.** Sur une échelle logarithmique, la courbe "
         "du taux d'équilibre se situe, au-dessus de la ligne 100, à une hauteur égale à la "
-        "somme des hauteurs des deux autres : les indices se multiplient. En 2020, "
+        "somme des hauteurs des deux autres : les indices se multiplient. Les deux périodes "
+        "sont tracées dans deux panneaux, chacune sur sa propre base : 100 en 1985 pour "
+        "1980 et 1985-1991, 100 en 2000 pour 2000-2021. Un indice commun ferait lire le "
+        "passage de 1991 à 2000 comme une évolution mesurée, alors qu'aucune donnée ne couvre "
+        "ces années et que les sources diffèrent. En 1991, les trois indices valent 127, 127 "
+        "et 100 : sur 1985-1991, toute la hausse vient du rapport démographique. En 1980, "
+        "ils valent 85, 117 et 72. En 2020, "
         "l'indice du taux d'équilibre vaut 189, celui du rapport entre pensions et "
         "cotisants 175, celui du remplacement apparent 108 : 1,75 × 1,08 ≈ 1,89. En 2021, "
         "année estimée, marquée d'un carré creux, ils valent 198, 179 et 111. La figure "
@@ -872,7 +894,42 @@ figtools.figure_tabs(
 )
 ```
 
-Ces chiffres sont calculés à partir des publications de la caisse et, pour 2021-2023, de celles du ministère des finances ; ils appellent cinq réserves [@cnrps-guides-rapports ; @cnrps-etats-financiers ; @minfin-remunerations].
+Les deux facteurs du remplacement apparent, la pension moyenne $\bar p$ et le salaire moyen $\bar w$, se suivent aussi en niveau, en dinars courants par mois. Ce sont les grandeurs de la décomposition : $\bar p$ rapporte les dépenses de pensions au nombre de pensions, toutes natures, et $\bar w$ la masse des salaires soumis à cotisation au nombre d'affiliés actifs.
+
+```{python}
+#| label: fig-cnrps-pension-salaire-niveaux
+#| fig-cap: "CNRPS : pension moyenne et salaire moyen des affiliés actifs, dinars courants par mois, 1980-2021."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import taux_equilibre as te
+import figtools
+figtools.figure_tabs(
+    te.fig_niveaux(), te.table_niveaux(), "cnrps-taux-equilibre",
+    slug="fig_cnrps_pension_salaire_niveaux",
+    caption="CNRPS : pension moyenne et salaire moyen des affiliés actifs, dinars courants par mois, 1980-2021",
+    note_lecture=(
+        "**La pension moyenne passe de 94 dinars par mois en 1985 à 167 dinars en 1991, "
+        "puis de 287 dinars en 2000 à 1 239 dinars en 2020 ; le salaire moyen des affiliés "
+        "actifs, de 151 à 268 dinars, puis de 493 à 1 962 dinars.** En 1980, ils valent 59 et "
+        "130 dinars ; en 2021, année estimée, 1 333 et 2 069 dinars. L'échelle est "
+        "logarithmique : deux courbes parallèles croissent au même rythme, et l'écart vertical "
+        "entre elles mesure le taux de remplacement apparent, qui varie peu à partir de 1985. "
+        "Les dinars sont "
+        "courants : les courbes comprennent la hausse des prix. Les marques suivent la nature "
+        "de la masse des salaires, comme dans les deux figures précédentes : triangles creux "
+        "pour 1980-1991, où elle est déduite des cotisations au taux de 12 % ; ronds creux et "
+        "trait tireté pour 2000-2013, où elle est approchée par la masse salariale de l'État. "
+        "Aucun trait ne relie 1991 à 2000. Le salaire moyen n'est pas publié par la caisse : "
+        "il est calculé à partir des seules cotisations, ou de leur approximation, et non des "
+        "recettes totales du régime, qui comprennent notamment les contributions au titre de "
+        "la péréquation."),
+)
+```
+
+Ces chiffres appellent six réserves [@cnrps-guides-rapports ; @cnrps-etats-financiers ; @minfin-remunerations ; @bm-1993-social-protection].
+
+- **De 1980 à 1991, la source et les définitions diffèrent.** Les chiffres viennent de l'annexe statistique d'un rapport de la Banque mondiale, qui cite le ministère du Plan, non de la caisse. Les pensions versées y comprennent les prestations familiales servies aux pensionnés, dont la part n'est pas publiée : le taux d'équilibre en est surestimé d'autant. Les dépenses de 2000-2023 comprennent aussi des allocations familiales, dans une part de 1,7 à 2,0 % en 2014-2018 (réserve ci-dessous), mais rien ne permet de dire que la part était la même dans les années 1980. Jusqu'à l'entrée en vigueur de la loi de 1985, le 12 septembre 1985, la retenue de l'agent était en outre plafonnée, pour les rémunérations ne dépassant pas celles de l'indice 250, au montant pratiqué avant 1975 [@loi74-101-lf1975, art. 38] : le taux effectif a pu être inférieur à 12 %, et la masse des salaires déduite des cotisations est alors un minimum. Pour 1980 et, en partie, pour 1985, le taux d'équilibre est donc un maximum et le salaire moyen un minimum. Le tableau des effectifs ne dit pas s'il compte des pensions ou des personnes, et le nombre d'affiliés actifs y augmente de 61 % de 1980 à 1985 sans explication. En 1990 et en 1991, la masse ainsi déduite des cotisations vaut 1,02 et 1,00 fois la masse salariale de l'État, un rapport du même ordre que de 2014 à 2020 (0,95 à 1,01) : la conversion au taux de 12 % est cohérente pour ces deux années.
 
 - **De 2021 à 2023, le taux d'équilibre est estimé.** Aucun rapport d'activité de la caisse postérieur à celui de 2020 n'a été trouvé. Le ministère des finances publie, dans son rapport sur les entreprises publiques, les comptes de la caisse entière, retraite et prévoyance sociale confondues [@minfin-ep-2023 ; @minfin-ep-2024 ; @minfin-ep-2025]. Les dépenses de pensions représentaient 95,1 % du total de ses charges d'exploitation en 2019 et 95,8 % en 2020 ; la moyenne des deux parts est appliquée aux charges de 2021 à 2023, celles de 2023 étant encore provisoires. La masse des salaires soumis à cotisation est approchée par la masse salariale de l'État, multipliée par le rapport observé en 2020 entre la masse tirée des cotisations et cette masse salariale, soit 0,952. Une autre estimation, qui fait évoluer la masse des salaires de 2020 comme les recettes techniques de la caisse, donne le même taux en 2021 (33,9 %), mais 32,6 % en 2022 et 33,4 % en 2023, soit 2,3 points de moins que l'estimation retenue cette année-là : c'est l'ordre de grandeur de l'incertitude. Le ministère publie le nombre de bénéficiaires de pension, égal en 2020 au nombre de pensions de toutes natures de la caisse, mais, dans les documents consultés, le nombre d'affiliés actifs jusqu'en 2021 seulement : pour 2022 et 2023, le taux d'équilibre n'est pas décomposé.
 - **De 2000 à 2013, la masse des salaires soumis à cotisation est approchée.** Les cotisations de l'agent et de l'employeur ne sont connues, séparément des autres recettes du régime, qu'à partir de 2014, par les états financiers de la caisse ; aucun document antérieur consulté ne les isole, et la masse salariale de l'État en tient lieu. De 2014 à 2020, la masse tirée des cotisations vaut entre 0,95 et 1,01 fois la masse salariale de l'État. Cette proximité résulte d'une compensation plutôt que d'une identité : la masse salariale de l'État comprend les contributions de l'employeur, les primes et les rappels, et ne couvre que les agents payés sur le budget de l'État, alors que la caisse affilie aussi les agents des collectivités locales et des établissements publics. Rien n'assure que cette compensation ait été la même avant 2014. En 2010, l'approximation donne un salaire moyen de 875 D par mois, quand la caisse publie un salaire brut moyen de 979 D pour ses actifs, sur un effectif de 423 032 personnes dont le périmètre n'est pas précisé ; appliqué à tous les affiliés, ce second chiffre ramènerait le taux d'équilibre de 2010 de 24,8 % à 22,1 %.
@@ -915,6 +972,8 @@ Les formules du chapitre emploient une notation unique. Chaque symbole est défi
 | $\bar p$ | pension moyenne | @sec-cnrps-equilibre |
 | $N_c$ | nombre de cotisants, c'est-à-dire d'affiliés actifs | @sec-cnrps-equilibre |
 | $\bar w$ | salaire moyen des cotisants | @sec-cnrps-equilibre |
+| $C$ | cotisations de pension de l'année | @sec-cnrps-equilibre |
+| $\kappa$ | taux légal global de cotisation, part de l'agent et part de l'employeur réunies | @sec-cnrps-equilibre |
 
 : Notations du chapitre, dans l'ordre de leur introduction {#tbl-cnrps-notations}
 

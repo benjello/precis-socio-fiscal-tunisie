@@ -1,10 +1,13 @@
-"""Figures « taux de cotisation d'équilibre de la CNRPS », 2000-2023 (2021-2023 estimés).
+"""Figures « taux de cotisation d'équilibre de la CNRPS », 1980, 1985-1991 et 2000-2023
+(2021-2023 estimés ; 1980-1991 d'une autre source, sans raccord).
 
     from figures import taux_equilibre as te
     te.fig_taux()             # taux d'équilibre et taux légal global
     te.table()                # toutes les grandeurs, avec la nature du dénominateur (onglet Données)
-    te.fig_decomposition()    # indices base 100 en 2000 : taux, remplacement, ratio démographique
+    te.fig_decomposition()    # indices : taux, remplacement, ratio démographique (deux panneaux)
     te.table_indices()        # les indices de la seconde figure (onglet Données)
+    te.fig_niveaux()          # pension moyenne et salaire moyen, dinars courants par mois
+    te.table_niveaux()        # les niveaux de la troisième figure (onglet Données)
 
 CE QUI EST TRACÉ. Le taux d'équilibre τ* est le taux de cotisation qui, appliqué à la masse
 des salaires soumis à cotisation, paierait exactement les dépenses de pensions de l'année :
@@ -22,8 +25,31 @@ style du trait et des marques (colonne `denominateur` de la série) :
   - 2021-2023 : ESTIMATION — dépenses tirées des charges de la caisse entière, masse salariale de
     l'État × rapport de 2020. Sans affiliés actifs publiés après 2021, 2022 et 2023 n'ont pas de
     décomposition : la seconde figure s'arrête en 2021.
+  - 1980 et 1985-1991 : Banque mondiale (rapport 11376-TUN, 1993) — cotisations de pension ÷ 12 %,
+    pensions versées prestations familiales des pensionnés comprises.
 Le raccord 2013-2014 est tracé dans le style de l'approximation, le raccord 2020-2021 dans celui
 de l'estimation.
+
+LE TROU 1992-1999 ET LE TROU 1981-1984 NE SONT JAMAIS FRANCHIS. Aucune donnée n'a été retrouvée
+pour ces années : les courbes sont tracées par suites d'années consécutives (`_suites`), 1980 est
+un point isolé, et un fond hachuré signale 1992-1999. Les deux sources ne mesurent ni tout à fait
+la même dépense (prestations familiales des pensionnés comprises avant 1992, dans une part
+inconnue) ni la même assiette (taux effectif possiblement inférieur à 12 % avant le 12 septembre
+1985) : une courbe qui les relierait ferait lire une évolution que rien ne mesure.
+
+DEUX PANNEAUX POUR LA DÉCOMPOSITION. Un indice raccorde par construction : un seul indice de
+1980 à 2021 ferait lire 1991 → 2000 comme une évolution mesurée. Le panneau de gauche porte
+1980 et 1985-1991 en base 100 en 1985 — première année d'une suite continue ; 1980 est douteux
+(affiliés actifs en hausse de 61 % de 1980 à 1985, sans explication de la source) —, celui de
+droite 2000-2021 en base 100 en 2000. Même échelle logarithmique, mêmes graduations : les pentes
+se comparent, les niveaux non.
+
+LES NIVEAUX (`fig_niveaux`), eux, se tracent sur un seul axe : pension moyenne et salaire moyen
+sont des dinars courants, sans base. Ce sont les mêmes grandeurs que la décomposition (p̄ =
+dépenses ÷ pensions ÷ 12, w̄ = masse soumise à cotisation ÷ affiliés ÷ 12) : leur rapport est le
+remplacement apparent de la seconde figure. Le salaire de 2000-2020 n'est PAS le « salaire
+reconstitué » des recettes totales de la caisse (série cnrps-pensions), qui dépasse l'assiette
+tirée des seules cotisations de 12 à 27 % en 2014-2018.
 
 POURQUOI LA BASE 100 EN 2000, et non en 2014. Le ratio pensions / cotisants ne dépend pas du
 dénominateur : il est exact sur toute la période. Seuls le taux d'équilibre et le taux de
@@ -72,22 +98,37 @@ APP, COT, REC = ("masse salariale de l'État (approximation)", "cotisations",
                  "cotisations reconstituées")
 EST = ("estimation : charges de la caisse × part des pensions 2019-2020 ; "
        "masse salariale de l'État × rapport assiette / masse de 2020")
+BM = "Banque mondiale 1993 : cotisations de pension ÷ taux légal (12 %)"
 _STYLE = {APP: ("--", "o", False), COT: ("-", "o", True), REC: (":", "D", True),
-          EST: ("-.", "s", False)}
-_ORDRE = (APP, COT, REC, EST)
-_LG = {APP: "lg_app", COT: "lg_cot", REC: "lg_rec", EST: "lg_est"}
+          EST: ("-.", "s", False), BM: ("-", "^", False)}
+_ORDRE = (BM, APP, COT, REC, EST)
+_LG = {BM: "lg_bm", APP: "lg_app", COT: "lg_cot", REC: "lg_rec", EST: "lg_est"}
+TROU = (1992, 1999)   # aucune donnée
+BASE_BM, BASE = 1985, 2000
 
 _L = {
     "titre_taux": {
-        "fr": "CNRPS : taux de cotisation d'équilibre et taux légal, 2000-2023",
-        "ar": "الصندوق الوطني للتقاعد والحيطة الاجتماعية: نسبة المساهمة المحقّقة للتوازن والنسبة القانونية، 2000-2023"},
+        "fr": "CNRPS : taux de cotisation d'équilibre et taux légal, 1980-2023",
+        "ar": "الصندوق الوطني للتقاعد والحيطة الاجتماعية: نسبة المساهمة المحقّقة للتوازن والنسبة القانونية، 1980-2023"},
     "titre_decomp": {
-        "fr": "CNRPS : décomposition du taux d'équilibre, indices base 100 en 2000, 2000-2021",
-        "ar": "الصندوق الوطني للتقاعد والحيطة الاجتماعية: تفكيك نسبة التوازن، مؤشرات (أساس 100 سنة 2000)، 2000-2021"},
+        "fr": "CNRPS : décomposition du taux d'équilibre, en indices, 1980-2021",
+        "ar": "الصندوق الوطني للتقاعد والحيطة الاجتماعية: تفكيك نسبة التوازن، مؤشرات، 1980-2021"},
+    "titre_niveaux": {
+        "fr": "CNRPS : pension moyenne et salaire moyen des affiliés actifs, 1980-2021",
+        "ar": "الصندوق الوطني للتقاعد والحيطة الاجتماعية: معدّل الجراية ومعدّل أجر المنخرطين النشيطين، 1980-2021"},
+    "panneau_bm": {"fr": "1980, 1985-1991 : base 100 en 1985", "ar": "1980، 1985-1991: أساس 100 سنة 1985"},
+    "panneau_rec": {"fr": "2000-2021 : base 100 en 2000", "ar": "2000-2021: أساس 100 سنة 2000"},
+    "y_niveaux": {"fr": "Dinars courants par mois (échelle logarithmique)",
+                  "ar": "دنانير جارية شهرياً (سلّم لوغاريتمي)"},
+    "lg_pm": {"fr": "Pension moyenne, toutes natures (p̄)", "ar": "معدّل الجراية، بجميع الأصناف (p̄)"},
+    "lg_sm": {"fr": "Salaire moyen des affiliés actifs (w̄)", "ar": "معدّل أجر المنخرطين النشيطين (w̄)"},
+    "trou": {"fr": "1992-1999 :\naucune donnée", "ar": "1992-1999:\nلا معطيات"},
+    "lg_bm": {"fr": "1980, 1985-1991 : Banque mondiale (1993), cotisations ÷ 12 %,\nsans raccord avec 2000",
+              "ar": "1980، 1985-1991: البنك الدولي (1993)، المساهمات ÷ 12 %،\nدون ربط مع سنة 2000"},
     "x": {"fr": "Année", "ar": "السنة"},
     "y_taux": {"fr": "% des salaires soumis à cotisation", "ar": "% من الأجور الخاضعة للمساهمة"},
-    "y_indice": {"fr": "Indice, 2000 = 100 (échelle logarithmique)",
-                 "ar": "مؤشر، 2000 = 100 (سلّم لوغاريتمي)"},
+    "y_indice": {"fr": "Indice (échelle logarithmique)",
+                 "ar": "مؤشر (سلّم لوغاريتمي)"},
     "lg_tau": {"fr": "Taux d'équilibre (dépenses ÷ masse cotisée)",
                "ar": "نسبة التوازن (النفقات ÷ الأجور الخاضعة للمساهمة)"},
     "lg_t": {"fr": "Taux légal global (agent + employeur)",
@@ -129,12 +170,17 @@ _L = {
                 "ar": "قاعدة المساهمات ÷ كتلة أجور الدولة"},
     "col_src_num": {"fr": "Source des dépenses", "ar": "مصدر النفقات"},
     "col_src_den": {"fr": "Source du dénominateur", "ar": "مصدر المقام"},
-    "col_i_tau": {"fr": "Taux d'équilibre (2000 = 100)", "ar": "نسبة التوازن (2000 = 100)"},
-    "col_i_R": {"fr": "Remplacement apparent (2000 = 100)", "ar": "نسبة التعويض الظاهرة (2000 = 100)"},
-    "col_i_D": {"fr": "Pensions ÷ cotisants (2000 = 100)", "ar": "الجرايات ÷ المساهمون (2000 = 100)"},
+    "col_base": {"fr": "Année de base (= 100)", "ar": "سنة الأساس (= 100)"},
+    "col_i_tau": {"fr": "Taux d'équilibre (indice)", "ar": "نسبة التوازن (مؤشر)"},
+    "col_i_R": {"fr": "Remplacement apparent (indice)", "ar": "نسبة التعويض الظاهرة (مؤشر)"},
+    "col_i_D": {"fr": "Pensions ÷ cotisants (indice)", "ar": "الجرايات ÷ المساهمون (مؤشر)"},
 }
 
-_DEN = {APP: {"fr": APP, "ar": "كتلة أجور الدولة (تقريب)"},
+_DEN = {BM: {"fr": "Banque mondiale (1993) : cotisations de pension ÷ 12 % ; pensions versées, prestations "
+                  "familiales des pensionnés comprises ; sans raccord avec 2000",
+              "ar": "البنك الدولي (1993): مساهمات التقاعد ÷ 12 %؛ الجرايات المدفوعة بما فيها المنح العائلية "
+                    "للمتقاعدين؛ دون ربط مع سنة 2000"},
+        APP: {"fr": APP, "ar": "كتلة أجور الدولة (تقريب)"},
         COT: {"fr": "salaires déduits des cotisations publiées",
               "ar": "أجور مستنتجة من المساهمات المنشورة"},
         REC: {"fr": "salaires déduits de cotisations reconstituées (niveau 2018 + hausses publiées)",
@@ -156,7 +202,7 @@ def _den(nature: str) -> str:
 
 
 def _donnees():
-    """{année: {clé: valeur, 'nature': …, 'src_num': …, 'src_den': …}}, 2000-2023.
+    """{année: {clé: valeur, 'nature': …, 'src_num': …, 'src_den': …}}, 1980, 1985-1991, 2000-2023.
 
     Les années 2022-2023 n'ont ni `naff`, ni `pm`, `sm`, `R`, `D` : les lire par `.get`."""
     df = figtools.series(SERIE)
@@ -213,11 +259,16 @@ def table():
 
 
 def _indices():
-    """Indices base 100 en 2000, pour les seules années décomposables (affiliés publiés)."""
+    """Indices des seules années décomposables (affiliés publiés), chaque période sur sa base :
+    1980 et 1985-1991 en base 100 en 1985, 2000-2021 en base 100 en 2000. Aucun indice ne
+    traverse 1992-1999."""
     d = {a: v for a, v in _donnees().items() if "R" in v and "D" in v}
-    b = d[min(d)]
-    return {a: {k: 100 * v[k] / b[k] for k in ("tau", "R", "D")} | {"nature": v["nature"]}
-            for a, v in d.items()}
+    out = {}
+    for a, v in d.items():
+        base = BASE_BM if a < TROU[0] else BASE
+        out[a] = ({k: 100 * v[k] / d[base][k] for k in ("tau", "R", "D")}
+                  | {"nature": v["nature"], "base": base})
+    return out
 
 
 def table_indices():
@@ -225,10 +276,33 @@ def table_indices():
     return pd.DataFrame([{
         _lab("col_annee"): a,
         _lab("col_den_nature"): _den(v["nature"]),
+        _lab("col_base"): v["base"],
         _lab("col_i_tau"): round(v["tau"], 1),
         _lab("col_i_R"): round(v["R"], 1),
         _lab("col_i_D"): round(v["D"], 1),
     } for a, v in _indices().items()])
+
+
+def table_niveaux():
+    import pandas as pd
+    return pd.DataFrame([{
+        _lab("col_annee"): a,
+        _lab("col_den_nature"): _den(v["nature"]),
+        _lab("col_pm"): round(v["pm"], 1),
+        _lab("col_sm"): round(v["sm"], 1),
+        _lab("col_R"): round(100 * v["R"], 1),
+    } for a, v in _donnees().items() if "pm" in v and "sm" in v])
+
+
+def _suites(annees):
+    """Découpe une liste d'années croissantes en suites d'années consécutives."""
+    out = []
+    for a in annees:
+        if out and a == out[-1][-1] + 1:
+            out[-1].append(a)
+        else:
+            out.append([a])
+    return out
 
 
 def _trace_par_nature(ax, annees, valeurs, natures, couleur, lw=2.2, ms=5.5):
@@ -237,9 +311,12 @@ def _trace_par_nature(ax, annees, valeurs, natures, couleur, lw=2.2, ms=5.5):
     Chaque segment [a, a+1] prend le style de l'année a : le raccord 2013-2014 est donc
     tiret (approximation), celui de 2018-2019 plein. Exception : le segment qui mène à une
     année estimée prend le style de l'estimation, qui commence donc dès le raccord 2020-2021.
-    Les marques suivent l'année elle-même.
+    Les marques suivent l'année elle-même. Deux années non consécutives (1980 et 1985, 1991
+    et 2000) ne sont jamais reliées.
     """
     for i in range(len(annees) - 1):
+        if annees[i + 1] != annees[i] + 1:
+            continue
         ls, _, _ = _STYLE[EST if natures[i + 1] == EST else natures[i]]
         ax.plot(annees[i:i + 2], valeurs[i:i + 2], ls, color=couleur, lw=lw)
     for a, v, n in zip(annees, valeurs, natures):
@@ -247,26 +324,40 @@ def _trace_par_nature(ax, annees, valeurs, natures, couleur, lw=2.2, ms=5.5):
         ax.plot([a], [v], mk, color=couleur, ms=ms, mfc=couleur if plein else "white", mew=1.4)
 
 
-def _legende_denominateur(ax, ft, loc, natures, lg=None):
+def _poignees_denominateur(ft, natures, lg=None):
     lg = _LG | (lg or {})
-    poignees = [Line2D([], [], ls=_STYLE[n][0], marker=_STYLE[n][1], color=GRIS, lw=1.6, ms=5,
-                       mfc=GRIS if _STYLE[n][2] else "white", mew=1.3, label=ft(_lab(lg[n])))
-                for n in _ORDRE if n in set(natures)]
-    return ax.legend(handles=poignees, loc=loc, fontsize=8, title=ft(_lab("titre_lg_den")),
-                     title_fontsize=8)
+    return [Line2D([], [], ls=_STYLE[n][0], marker=_STYLE[n][1], color=GRIS, lw=1.6, ms=5,
+                   mfc=GRIS if _STYLE[n][2] else "white", mew=1.3, label=ft(_lab(lg[n])))
+            for n in _ORDRE if n in set(natures)]
+
+
+def _legende_denominateur(ax, ft, loc, natures, lg=None):
+    return ax.legend(handles=_poignees_denominateur(ft, natures, lg), loc=loc, fontsize=8,
+                     title=ft(_lab("titre_lg_den")), title_fontsize=8)
 
 
 def _fonds(ax, an, nat):
     """Fonds grisés : approximation (2000-2013) et estimation (années marquées EST)."""
-    ax.axvspan(1999.3, 2013.5, color=GRIS, alpha=0.06, lw=0)
+    app = [a for a, n in zip(an, nat) if n == APP]
+    if app:
+        ax.axvspan(min(app) - 0.5, max(app) + 0.5, color=GRIS, alpha=0.06, lw=0)
     est = [a for a, n in zip(an, nat) if n == EST]
     if est:
         ax.axvspan(min(est) - 0.5, max(est) + 0.7, color=ORANGE, alpha=0.07, lw=0)
 
 
-def _axe_annees(ax, fin):
-    ax.set_xlim(1999.3, fin + 0.7)
-    ax.set_xticks(range(2000, fin + 1, 2))
+def _trou(ax, ft, y):
+    """Hachure et cartouche sur 1992-1999, que rien ne documente."""
+    ax.axvspan(TROU[0] - 0.5, TROU[1] + 0.5, facecolor="none", edgecolor=GRIS, hatch="///",
+               alpha=0.25, lw=0)
+    ax.text((TROU[0] + TROU[1]) / 2, y, "\n".join(ft(l) for l in _lab("trou").split("\n")),
+            fontsize=7.5, color=GRIS, ha="center", va="center",
+            bbox=dict(facecolor="white", edgecolor="none", alpha=0.85, pad=1.5))
+
+
+def _axe_annees(ax, fin, debut=2000, pas=2):
+    ax.set_xlim(debut - 0.7, fin + 0.7)
+    ax.set_xticks(range(debut, fin + 1, pas))
 
 
 def fig_taux():
@@ -276,14 +367,22 @@ def fig_taux():
     an = list(d)
     nat = [d[a]["nature"] for a in an]
 
-    fig, ax = plt.subplots(figsize=(9.5, 5.6))
+    fig, ax = plt.subplots(figsize=(10.5, 5.8))
     _fonds(ax, an, nat)
+    _trou(ax, ft, 30)
     _trace_par_nature(ax, an, [100 * d[a]["tau"] for a in an], nat, BLEU)
-    ax.step(an, [100 * d[a]["t"] for a in an], where="mid", color=GRIS, lw=2)
+    for suite in _suites(an):
+        if len(suite) == 1:   # 1980 : un palier court, centré sur l'année
+            a = suite[0]
+            ax.plot([a - 0.5, a + 0.5], [100 * d[a]["t"]] * 2, color=GRIS, lw=2)
+        else:
+            ax.step(suite, [100 * d[a]["t"] for a in suite], where="mid", color=GRIS, lw=2)
     dernier_observe = max(a for a in an if d[a]["nature"] != EST)
-    for a in sorted({an[0], dernier_observe, an[-1]}):
+    dernier_bm = max(a for a in an if a < TROU[0])
+    for a in sorted({an[0], dernier_bm, BASE, dernier_observe, an[-1]}):
         ax.annotate(f"{100 * d[a]['tau']:.1f}".replace(".", ","), (a, 100 * d[a]["tau"]),
-                    textcoords="offset points", xytext=(0, 8), ha="center", fontsize=8, color=BLEU)
+                    textcoords="offset points", xytext=(0, -14 if a == an[0] else 8), ha="center",
+                    fontsize=8, color=BLEU)
         ax.annotate(f"{100 * d[a]['t']:.1f}".replace(".", ","), (a, 100 * d[a]["t"]),
                     textcoords="offset points", xytext=(0, -13), ha="center", fontsize=8, color=GRIS)
     principale = ax.legend(handles=[
@@ -292,7 +391,7 @@ def fig_taux():
         loc="upper left", fontsize=8.5)
     ax.add_artist(principale)
     _legende_denominateur(ax, ft, "lower right", nat)
-    _axe_annees(ax, an[-1])
+    _axe_annees(ax, an[-1], debut=1980, pas=5)
     ax.set_ylim(0, 40)
     ax.set_xlabel(ft(_lab("x")))
     ax.set_ylabel(ft(_lab("y_taux")))
@@ -302,39 +401,94 @@ def fig_taux():
     return fig
 
 
-def fig_decomposition():
-    figtools.apply_lang_font()
-    ft = figtools.fig_text
-    ix = _indices()
-    an = list(ix)
+def _panneau_indices(ax, ix, an, ft, annoter):
     nat = [ix[a]["nature"] for a in an]
-
-    fig, ax = plt.subplots(figsize=(9.5, 5.6))
     _fonds(ax, an, nat)
+    ax.axhline(100, color=GRIS, lw=0.8, alpha=0.6)
     _trace_par_nature(ax, an, [ix[a]["tau"] for a in an], nat, BLEU)
     _trace_par_nature(ax, an, [ix[a]["R"] for a in an], nat, ORANGE, lw=1.8, ms=4.5)
-    # Le ratio démographique ne dépend pas du dénominateur : trait plein sur toute la période.
-    ax.plot(an, [ix[a]["D"] for a in an], "s-", color=VERT, lw=1.8, ms=4.5)
-    for a in (an[-1],):
+    # Le ratio démographique ne dépend pas du dénominateur : trait plein, par suites d'années.
+    for suite in _suites(an):
+        ax.plot(suite, [ix[a]["D"] for a in suite], "s-", color=VERT, lw=1.8, ms=4.5)
+    for a in annoter:
         for k, c, dy in (("tau", BLEU, 6), ("D", VERT, -12), ("R", ORANGE, -12)):
             ax.annotate(f"{ix[a][k]:.0f}", (a, ix[a][k]), textcoords="offset points",
                         xytext=(0, dy), ha="center", fontsize=8, color=c)
     ax.set_yscale("log")
-    ax.set_yticks([90, 100, 125, 150, 175, 200])
+    ax.set_yticks([70, 80, 90, 100, 125, 150, 175, 200])
     ax.get_yaxis().set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, _: f"{v:.0f}"))
     ax.yaxis.set_minor_formatter(matplotlib.ticker.NullFormatter())
-    ax.set_ylim(58, 215)  # sous 90 : place de la légende, sous toutes les courbes
-    principale = ax.legend(handles=[
+    ax.set_ylim(64, 215)
+    ax.grid(True, which="major", alpha=0.3)
+    return nat
+
+
+def fig_decomposition():
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    ix = _indices()
+    an_bm = [a for a in ix if a < TROU[0]]
+    an = [a for a in ix if a > TROU[1]]
+
+    fig, (ax0, ax) = plt.subplots(1, 2, figsize=(10.5, 7.2), sharey=True,
+                                  gridspec_kw={"width_ratios": [12, 22]})
+    _panneau_indices(ax0, ix, an_bm, ft, (an_bm[0], an_bm[-1]))
+    nat = _panneau_indices(ax, ix, an, ft, (an[-1],))
+    _axe_annees(ax0, an_bm[-1], debut=an_bm[0], pas=2)
+    _axe_annees(ax, an[-1], debut=an[0], pas=4)
+    ax0.set_title(ft(_lab("panneau_bm")), fontsize=9)
+    ax.set_title(ft(_lab("panneau_rec")), fontsize=9)
+    ax0.set_ylabel(ft(_lab("y_indice")))
+    ax0.set_xlabel(ft(_lab("x")))
+    ax.set_xlabel(ft(_lab("x")))
+    fig.suptitle(ft(_lab("titre_decomp")))
+    # Légendes sous les deux panneaux : dans les axes, elles masqueraient des points.
+    fig.tight_layout(rect=(0, 0.25, 1, 1))
+    fig.legend(handles=[
         Line2D([], [], color=BLEU, lw=2.2, label=ft(_lab("lg_tau"))),
         Line2D([], [], color=VERT, lw=1.8, marker="s", ms=4.5, label=ft(_lab("lg_D"))),
         Line2D([], [], color=ORANGE, lw=1.8, label=ft(_lab("lg_R")))],
+        loc="upper left", bbox_to_anchor=(0.01, 0.235), fontsize=8, frameon=False)
+    fig.legend(handles=_poignees_denominateur(ft, [ix[a]["nature"] for a in ix],
+                                              {EST: "lg_est_2021"} if an[-1] == 2021 else None),
+               loc="upper right", bbox_to_anchor=(0.99, 0.235), fontsize=8, frameon=False,
+               title=ft(_lab("titre_lg_den")), title_fontsize=8)
+    return fig
+
+
+def fig_niveaux():
+    """Pension moyenne et salaire moyen, dinars courants par mois, échelle logarithmique."""
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    d = {a: v for a, v in _donnees().items() if "pm" in v and "sm" in v}
+    an = list(d)
+    nat = [d[a]["nature"] for a in an]
+
+    fig, ax = plt.subplots(figsize=(10.5, 5.8))
+    _fonds(ax, an, nat)
+    _trou(ax, ft, 600)
+    _trace_par_nature(ax, an, [d[a]["sm"] for a in an], nat, BLEU)
+    _trace_par_nature(ax, an, [d[a]["pm"] for a in an], nat, ORANGE)
+    for a in (an[0], max(a for a in an if a < TROU[0]), BASE, an[-1]):
+        for k, c, dy in (("sm", BLEU, 7), ("pm", ORANGE, -13)):
+            ax.annotate(f"{d[a][k]:,.0f}".replace(",", "\u202f"), (a, d[a][k]),
+                        textcoords="offset points", xytext=(0, dy), ha="center", fontsize=8, color=c)
+    ax.set_yscale("log")
+    ax.set_yticks([50, 100, 200, 500, 1000, 2000])
+    ax.get_yaxis().set_major_formatter(matplotlib.ticker.FuncFormatter(
+        lambda v, _: f"{v:,.0f}".replace(",", "\u202f")))
+    ax.yaxis.set_minor_formatter(matplotlib.ticker.NullFormatter())
+    ax.set_ylim(40, 3000)
+    principale = ax.legend(handles=[
+        Line2D([], [], color=BLEU, lw=2.2, label=ft(_lab("lg_sm"))),
+        Line2D([], [], color=ORANGE, lw=2.2, label=ft(_lab("lg_pm")))],
         loc="upper left", fontsize=8.5)
     ax.add_artist(principale)
     _legende_denominateur(ax, ft, "lower right", nat, {EST: "lg_est_2021"} if an[-1] == 2021 else None)
-    _axe_annees(ax, an[-1])
+    _axe_annees(ax, an[-1], debut=1980, pas=5)
     ax.set_xlabel(ft(_lab("x")))
-    ax.set_ylabel(ft(_lab("y_indice")))
-    ax.set_title(ft(_lab("titre_decomp")))
+    ax.set_ylabel(ft(_lab("y_niveaux")))
+    ax.set_title(ft(_lab("titre_niveaux")))
     ax.grid(True, which="major", alpha=0.3)
     fig.tight_layout()
     return fig
