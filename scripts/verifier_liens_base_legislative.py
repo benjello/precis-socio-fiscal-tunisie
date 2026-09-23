@@ -1,7 +1,8 @@
 """Vérifie que chaque lien de l'onglet « Base législative » des tableaux répond.
 
 Les listes `precis/<langue>/<livre>/tables/<nom>.liens.yml` sont engendrées avec les
-tableaux. Un paramètre renommé ou déplacé dans l'arbre de paramètres rendrait son lien mort
+tableaux, et `precis/_seriescache/<série>.liens.<langue>.yml` avec les séries brutes des
+figures tirées du droit codé. Un paramètre renommé ou déplacé dans l'arbre de paramètres rendrait son lien mort
 sans que rien ne le signale : ce contrôle interroge chaque adresse et sort en 1 dès qu'une
 page ne répond pas.
 
@@ -33,6 +34,7 @@ def statut(url: str) -> int:
 
 def main() -> int:
     fichiers = sorted(RACINE.glob("*/*/tables/*.liens.yml"))
+    fichiers += sorted(RACINE.glob("_seriescache/*.liens.*.yml"))
     urls = {}
     for fichier in fichiers:
         for entree in yaml.safe_load(fichier.read_text(encoding="utf-8")) or []:

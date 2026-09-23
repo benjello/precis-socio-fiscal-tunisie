@@ -582,6 +582,7 @@ Une quatrième observation serait tentante et n'est pas faite ici : rapporter ce
 Le barème et l'assiette décrits jusqu'ici produisent un rendement, et ce rendement se mesure. Le ministère des Finances publie les recettes fiscales par rubrique depuis 1986 ; rapportées au produit intérieur brut et aux dépenses de l'État, elles situent l'IRPP dans l'ensemble du prélèvement.
 
 ```{python}
+#| label: fig-irpp-rendement
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")

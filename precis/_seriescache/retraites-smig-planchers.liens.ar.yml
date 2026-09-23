@@ -1,0 +1,23 @@
+- libelle: الأجر الأدنى المضمون لمختلف المهن بحساب الساعة، نظام 48 ساعة
+  parametre: parameters/marche_travail/smig_48h_horaire.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.smig_48h_horaire/table/
+- libelle: الصندوق الوطني للتقاعد والحيطة الاجتماعية — الجراية الدنيا المضمونة، كسرًا
+    من الأجر الأدنى المضمون
+  parametre: parameters/retraite/cnrps/pension_minimale/minimum_garanti.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.pension_minimale.minimum_garanti/table/
+- libelle: الصندوق الوطني للتقاعد والحيطة الاجتماعية — منحة الشيخوخة، كسرًا من الأجر
+    الأدنى المضمون
+  parametre: parameters/retraite/cnrps/pension_minimale/allocation_vieillesse.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.pension_minimale.allocation_vieillesse/table/
+- libelle: نظام الأجراء غير الفلاحيين — الجراية الدنيا للشيخوخة أو العجز، كسرًا من
+    الأجر الأدنى المضمون
+  parametre: parameters/retraite/rsna/pension_minimale/sup.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.pension_minimale.sup/table/
+- libelle: نظام الأجراء غير الفلاحيين — الجراية الدنيا للتقاعد المبكّر والجراية النسبية،
+    كسرًا من الأجر الأدنى المضمون
+  parametre: parameters/retraite/rsna/pension_minimale/inf.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.pension_minimale.inf/table/
+- libelle: نظام الأجراء غير الفلاحيين — الحدّ الأقصى لاحتساب المنافع، مضاعفًا للأجر
+    الأدنى المضمون
+  parametre: parameters/retraite/rsna/salaire_reference/limite_multiple_smig.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.salaire_reference.limite_multiple_smig/table/

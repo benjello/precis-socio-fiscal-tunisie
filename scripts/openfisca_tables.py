@@ -197,11 +197,20 @@ def releve_fin() -> list[tuple[str, str | None]]:
 def ecrire_liens(chemin_tableau: str | Path, liens: list[tuple[str, str | None]],
                  langue: str) -> None:
     """Écrit `<nom>.liens.yml` à côté du tableau. Tout lien doit porter un libellé."""
+    ecrire_fichier_liens(Path(chemin_tableau).with_suffix(".liens.yml"), liens, langue)
+
+
+def ecrire_fichier_liens(fichier: str | Path, liens: list[tuple[str, str | None]],
+                         langue: str) -> None:
+    """Écrit une liste de liens « Base législative » dans `fichier`, nommé tel quel.
+
+    Sert aux séries brutes des figures (`_seriescache/<série>.liens.<langue>.yml`), dont
+    le nom porte la langue : `with_suffix` l'effacerait.
+    """
     sans = [c for c, l in liens if not l]
     if sans:
         raise ValueError(f"paramètre lu sans libellé : {sans}")
-    fichier = Path(chemin_tableau).with_suffix(".liens.yml")
-    fichier.write_text(yaml.safe_dump(
+    Path(fichier).write_text(yaml.safe_dump(
         [{"libelle": l, "parametre": c, "url": url_parametre(c, langue)} for c, l in liens],
         allow_unicode=True, sort_keys=False), encoding="utf-8")
 

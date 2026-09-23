@@ -1,17 +1,8 @@
 <script>
-// Met en forme les légendes des tableaux et des figures (voir legendes.scss).
-// 1. Une figure en onglets a une légende numérotée vide (« Figure 2.1 ») et son titre
-//    dans une sous-figure (« (a) titre ») : on réunit les deux, « Figure 2.1 — titre ».
-// 2. Le numéro (« Tableau 2.3 », « جدول 2.3 ») est isolé dans un <span> stylable.
+// Met en forme les légendes des tableaux et des figures (voir legendes.scss) : le numéro
+// (« Tableau 2.3 », « جدول 2.3 ») est isolé dans un <span> stylable.
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("figure.quarto-float > figcaption.quarto-float-caption").forEach(cap => {
-    const figure = cap.parentElement;
-    const sous = figure.querySelector("figcaption.quarto-subfloat-caption");
-    if (cap.classList.contains("quarto-uncaptioned") && sous) {
-      const titre = sous.textContent.trim().replace(/^\([a-z]\)\s*/, "");
-      cap.textContent = cap.textContent.trim() + " — " + titre;
-      sous.classList.add("legende-reportee");
-    }
     const m = cap.innerHTML.match(/^\s*([^\s<]+(?:&nbsp;|\s)[\d.]+)/);
     if (m) cap.innerHTML = cap.innerHTML.replace(m[1], `<span class="legende-num">${m[1]}</span>`);
   });

@@ -10,6 +10,7 @@ Composant générique `figtools.figure_tabs` : onglet **Graphique** (figure + so
 onglet **Données** (table scrollable, export CSV/Excel, téléchargement du figdata sourcé).
 
 ```{python}
+#| label: fig-masse-salariale-demo
 #| output: asis
 import sys
 sys.path.insert(0, ".")

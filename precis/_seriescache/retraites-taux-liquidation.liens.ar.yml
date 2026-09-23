@@ -1,0 +1,21 @@
+- libelle: الصندوق الوطني للتقاعد والحيطة الاجتماعية — جدول نسب السنوات القابلة للتصفية
+  parametre: parameters/retraite/cnrps/bareme_annuite.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.bareme_annuite/table/
+- libelle: الصندوق الوطني للتقاعد والحيطة الاجتماعية — سقف نسبة تصفية الجراية
+  parametre: parameters/retraite/cnrps/plaf_taux_pension.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.plaf_taux_pension/table/
+- libelle: الصندوق الوطني للتقاعد والحيطة الاجتماعية — المدة الدنيا للخدمات
+  parametre: parameters/retraite/cnrps/duree_de_service_minimale.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.duree_de_service_minimale/table/
+- libelle: نظام الأجراء غير الفلاحيين — جدول نسب السنوات القابلة للتصفية
+  parametre: parameters/retraite/rsna/bareme_annuite.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.bareme_annuite/table/
+- libelle: نظام الأجراء غير الفلاحيين — سقف نسبة تصفية الجراية
+  parametre: parameters/retraite/rsna/plaf_taux_pension.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.plaf_taux_pension/table/
+- libelle: نظام الأجراء غير الفلاحيين — مدة الانخراط الدنيا
+  parametre: parameters/retraite/rsna/stage_requis.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.stage_requis/table/
+- libelle: نظام الأجراء غير الفلاحيين — مدة الانخراط الدنيا الاستثنائية
+  parametre: parameters/retraite/rsna/stage_derog.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.stage_derog/table/

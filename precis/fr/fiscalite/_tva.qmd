@@ -147,6 +147,7 @@ suivants) restent à rédiger. -->
 La taxe sur la valeur ajoutée est instituée par la loi n° 88-61 du 2 juin 1988, qui promulgue le code de la taxe sur la valeur ajoutée, et s'applique à compter du 1^er^ juillet 1988. Son assujettissement ne s'étend toutefois pas d'un coup : le commerce de gros n'y entre qu'en 1989, le commerce de détail en 1996 seulement.
 
 ```{python}
+#| label: fig-tva-rendement
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")

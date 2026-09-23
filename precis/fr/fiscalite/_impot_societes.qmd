@@ -289,6 +289,7 @@ Un cinquième enseignement n'est pas un mouvement mais une mise en garde de mét
 ## Ce que l'impôt rapporte
 
 ```{python}
+#| label: fig-impot-societes-rendement
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")

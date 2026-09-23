@@ -1,0 +1,21 @@
+- libelle: CNRPS — barème des annuités
+  parametre: parameters/retraite/cnrps/bareme_annuite.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.bareme_annuite/table/
+- libelle: CNRPS — plafond du taux de la pension
+  parametre: parameters/retraite/cnrps/plaf_taux_pension.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.plaf_taux_pension/table/
+- libelle: CNRPS — durée de services minimale
+  parametre: parameters/retraite/cnrps/duree_de_service_minimale.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.duree_de_service_minimale/table/
+- libelle: Régime des salariés non agricoles — barème des annuités
+  parametre: parameters/retraite/rsna/bareme_annuite.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.bareme_annuite/table/
+- libelle: Régime des salariés non agricoles — plafond du taux de la pension
+  parametre: parameters/retraite/rsna/plaf_taux_pension.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.plaf_taux_pension/table/
+- libelle: Régime des salariés non agricoles — stage de cotisation
+  parametre: parameters/retraite/rsna/stage_requis.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.stage_requis/table/
+- libelle: Régime des salariés non agricoles — stage dérogatoire
+  parametre: parameters/retraite/rsna/stage_derog.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.stage_derog/table/

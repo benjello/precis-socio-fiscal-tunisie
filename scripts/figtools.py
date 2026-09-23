@@ -59,6 +59,10 @@ _UI = {
     "tab_graph":  {"fr": "📈 Graphique",  "ar": "📈 الرسم البياني"},
     "tab_data":   {"fr": "📊 Données",    "ar": "📊 البيانات"},
     "tab_src":    {"fr": "🔗 Sources",    "ar": "🔗 المصادر"},
+    "tab_base":   {"fr": "⚖️ Base législative", "ar": "⚖️ القاعدة التشريعية"},
+    "base_intro": {"fr": "Chaque grandeur de la figure, avec toutes ses valeurs datées et "
+                         "leurs références :",
+                   "ar": "كلّ مقدار في الرسم البياني، بجميع قيمه المؤرّخة ومراجعها:"},
     "source":     {"fr": "Source",        "ar": "المصدر"},
     "nominal":    {"fr": "valeurs courantes (nominal)", "ar": "قيم جارية (اسمية)"},
     "pib_base":   {"fr": "PIB base",      "ar": "الناتج المحلي الإجمالي، أساس"},
@@ -417,6 +421,32 @@ def source_details(*series_ids: str) -> str:
     return "\n\n".join(blocks)
 
 
+def base_legislative(*series_ids: str) -> str:
+    """Liste Markdown des liens « Base législative » des séries, vide s'il n'y en a pas.
+
+    Une série tirée du droit codé — et non d'une statistique publiée — est émise dans
+    `_seriescache/` par un générateur de tableaux, qui écrit à côté d'elle la liste des
+    grandeurs qu'il a lues : `<série>.liens.<langue>.yml`, même schéma que les
+    `tables/<nom>.liens.yml` (`libelle`, `parametre`, `url`). Les liens sont donc
+    engendrés, jamais écrits à la main ; on ne fait ici que les lire — le build du site
+    n'importe pas le générateur.
+    """
+    import yaml
+
+    vus, items = set(), []
+    for sid in series_ids:
+        f = _CACHE / f"{sid}.liens.{lang()}.yml"
+        if not f.exists():
+            continue
+        for e in yaml.safe_load(f.read_text(encoding="utf-8")) or []:
+            if e["url"] not in vus:
+                vus.add(e["url"])
+                items.append(f"- [{e['libelle']}]({e['url']})")
+    if not items:
+        return ""
+    return f"{t('base_intro')}\n\n" + "\n".join(items)
+
+
 def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
                 caption: str = "", note_lecture: str | None = None,
                 fig_id: str | None = None, figdata_dir: str = "figdata",
@@ -424,13 +454,24 @@ def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
                 generated: str | None = None) -> None:
     """Composant générique : figure en **onglets** Graphique / Données / Sources.
 
-    À appeler dans un chunk Quarto `#| output: asis`. Produit :
-      - onglet « Graphique » : figure **numérotée** (crossref Quarto « Figure N : … »),
-        ligne « Source » courte, et — si fournie — une **note de lecture** ;
+    À appeler dans un chunk Quarto `#| output: asis`, **étiqueté** `#| label: fig-…`,
+    dont c'est la dernière instruction. Produit :
+      - onglet « Graphique » : l'image, la ligne « Source » courte, et — si fournie —
+        une **note de lecture** ;
       - onglet « Données » : table **itables** scrollable + export CSV/Excel
         + téléchargement du **figdata sourcé** ;
       - onglet « Sources » : provenance détaillée (citation, **lien web** vers la
-        source d'origine, fiche, fichiers bruts, périmètre, réserves).
+        source d'origine, fiche, fichiers bruts, périmètre, réserves) ;
+      - onglet « Base législative », si une série tracée vient du droit codé : un lien
+        par grandeur, lu dans `_seriescache/<série>.liens.<langue>.yml` (voir
+        `base_legislative`).
+
+    UNE SEULE FIGURE NUMÉROTÉE, CELLE DU CHUNK. L'étiquette du chunk fait de toute sa
+    sortie — les onglets — une figure Quarto, et c'est elle que vise `@fig-…`. Sa légende
+    est le DERNIER PARAGRAPHE de la sortie : Quarto la prend pour titre (« Figure N — … »).
+    L'option `#| fig-cap:` n'est, elle, pas lue sur une sortie `asis` : la légende affichée
+    est `caption`. L'image ne porte donc ni identifiant ni légende — elle en portait,
+    et Quarto en faisait une sous-figure « (a) … » dans une figure à la légende vide.
 
     `fig`          : figure matplotlib (déjà rendue).
     `df`           : données de la figure (deviennent le figdata téléchargeable).
@@ -438,11 +479,12 @@ def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
     `slug`         : identifiant de fichier (png + csv).
     `caption`      : **titre** de la figure (légende numérotée par Quarto).
     `note_lecture` : texte « Comment lire cette figure » (callout). Optionnel.
-    `fig_id`       : ancre de référence croisée (défaut `fig-<slug>`).
+    `fig_id`       : pour un chunk NON étiqueté seulement — la sortie est alors enveloppée
+                     dans sa propre figure `::: {#fig_id}`. Ne jamais le combiner avec
+                     `#| label:` : on retomberait sur la figure dans la figure.
     """
     from itables import to_html_datatable
 
-    fig_id = fig_id or f"fig-{slug.replace('_', '-')}"
     png = Path(png_dir)
     png.mkdir(parents=True, exist_ok=True)
     png_path = png / f"{slug}.png"
@@ -464,11 +506,14 @@ def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
         lecture = (f'\n::: {{.callout-note appearance="simple" '
                    f'icon=true title="{t("how_to_read")}"}}\n'
                    f'{note_lecture}\n:::\n')
-    print(f"""::: {{.panel-tabset}}
+    base = base_legislative(*series_ids)
+    onglet_base = f"## {t('tab_base')}\n\n{base}\n\n" if base else ""
+    alt = caption.replace('"', "&quot;")
+    sortie = f"""::: {{.panel-tabset}}
 
 ## {t('tab_graph')}
 
-![{caption}]({png_path}){{#{fig_id} fig-alt="{caption}"}}
+![]({png_path}){{fig-alt="{alt}"}}
 
 ::: {{.figure-source}}
 {src}
@@ -486,5 +531,10 @@ def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
 {details}
 :::
 
-:::
-""")
+{onglet_base}:::
+
+{caption}
+"""
+    if fig_id:
+        sortie = f"::: {{#{fig_id}}}\n\n{sortie}\n:::\n"
+    print(sortie)

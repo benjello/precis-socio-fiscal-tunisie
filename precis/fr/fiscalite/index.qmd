@@ -9,6 +9,7 @@ Ce précis présente les impôts en Tunisie, principalement depuis l'indépendan
 Avant d'entrer dans chaque impôt, une vue d'ensemble situe ce que chacun pèse et comment ces poids se sont déplacés.
 
 ```{python}
+#| label: fig-recettes-composition
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
