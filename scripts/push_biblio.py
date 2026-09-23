@@ -35,6 +35,7 @@ import re
 import sys
 import urllib.error
 import urllib.request
+from pathlib import Path
 
 BASE_URL = "https://api.zotero.org"
 DEFAULT_GROUP_ID = "6529669"
@@ -396,7 +397,14 @@ def cles_citees(livre: str, racine: str | None = None) -> set[str]:
     return {cle for cle in trouvees if not cle.startswith(RENVOIS_QUARTO)}
 
 
-def classe_rangement(citations_par_livre: dict, collections_par_cle: dict) -> dict:
+def cles_du_fonds_commun() -> set[str]:
+    """Les clés versées au fonds commun (`precis/fr/references.json`), qui fait foi."""
+    chemin = Path(__file__).parent.parent / "precis" / "fr" / "references.json"
+    return {e["id"] for e in json.loads(chemin.read_text(encoding="utf-8"))["items"]}
+
+
+def classe_rangement(citations_par_livre: dict, collections_par_cle: dict,
+                     communes: set | frozenset = frozenset()) -> dict:
     """Compare l'usage RÉEL d'une référence au rangement que porte Zotero.
 
     Fonction pure, sur données nues : `{livre: {clés citées}}` d'un côté,
@@ -417,7 +425,13 @@ def classe_rangement(citations_par_livre: dict, collections_par_cle: dict) -> di
       - citée par **aucun** livre         → signalée, jamais agie. Retirer une
         collection sur la foi d'une absence changerait l'état d'une bibliothèque
         partagée à partir d'une preuve qu'on n'a pas su trouver ;
-      - citée mais absente de Zotero      → relève du versement, pas du rangement.
+      - citée mais absente de Zotero      → relève du versement, pas du rangement ;
+      - **versée au fonds commun** (`communes`, les clés de `precis/fr/references.json`)
+        et citée par un seul livre → **jamais rangée** dans la collection de ce livre ;
+        une collection qu'elle a déjà lui reste. Décision du 23/09/2026 : les textes
+        versés au fonds commun y restent, le classement fin viendra plus tard. Sans
+        cette règle, le contrôle les disait « à ranger » et tout `appliquer-rangement`
+        les aurait fait descendre dans le fichier d'un livre.
 
     Ce que cela répare : `ranger` fait `sorted(actuelles | voulues)` — il ajoute des
     collections et n'en retire aucune. Une référence devenue commune garde donc la
@@ -447,6 +461,10 @@ def classe_rangement(citations_par_livre: dict, collections_par_cle: dict) -> di
             continue
         actuelles = set(collections_par_cle[cle])
         voulues = set(livres) if len(livres) == 1 else set()
+        if cle in communes and len(livres) == 1:
+            # Au fonds commun : on ne l'ajoute à aucune collection, on ne retire pas
+            # non plus celle qu'elle a déjà.
+            voulues &= actuelles
         en_trop = actuelles - voulues
         manquantes = voulues - actuelles
         if not en_trop and not manquantes:
@@ -500,7 +518,7 @@ def appliquer_rangement(groupe: str, api_key: str, ecrire: bool) -> int:
         }
 
     citations = {livre: cles_citees(livre) for livre in COLLECTIONS}
-    rapport = classe_rangement(citations, collections_par_cle)
+    rapport = classe_rangement(citations, collections_par_cle, cles_du_fonds_commun())
 
     voulu: dict[str, set[str]] = {}
     for cle, manquantes in rapport["a_ranger"]:
@@ -585,7 +603,7 @@ def controle_rangement(groupe: str, api_key: str) -> int:
         }
 
     citations = {livre: cles_citees(livre) for livre in COLLECTIONS}
-    rapport = classe_rangement(citations, collections_par_cle)
+    rapport = classe_rangement(citations, collections_par_cle, cles_du_fonds_commun())
 
     # Les deux listes de défaut SE CHEVAUCHENT : une clé rangée dans la collection d'un
     # mauvais livre doit à la fois perdre celle-là et gagner la sienne, donc elle figure
@@ -813,6 +831,9 @@ def main() -> int:
 
         extra_map = sync_biblio.build_extra_map(args.groupe, api_key)
         sync_biblio.apply_extra_variables([redescendu], extra_map)
+        # Zotero rend le titre court sous `shortTitle` ; la descente le renomme en
+        # `title-short`. Sans ce renommage, chaque titre court passait pour un écart.
+        sync_biblio.normalise_noms_de_champs([redescendu])
         redescendu["id"] = args.comparer
         local = locales[args.comparer][0]
         ecarts = 0
