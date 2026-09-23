@@ -159,10 +159,10 @@ _releve: dict[str, str | None] | None = None
 
 
 def url_parametre(chemin_relatif: str, langue: str = "fr") -> str:
-    """Page publique d'un paramètre : `parameters/a/b.yaml` -> `…/parameters/a.b/`."""
+    """Vue en tableau d'un paramètre : `parameters/a/b.yaml` -> `…/parameters/a.b/table/`."""
     nom = chemin_relatif.removeprefix("parameters/").removesuffix(".yaml").replace("/", ".")
     prefixe = "/ar" if langue == "ar" else ""
-    return f"{BASE_LEGISLATIVE}{prefixe}/parameters/{nom}/"
+    return f"{BASE_LEGISLATIVE}{prefixe}/parameters/{nom}/table/"
 
 
 def releve_debut() -> None:
