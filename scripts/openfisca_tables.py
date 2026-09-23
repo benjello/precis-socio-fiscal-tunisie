@@ -60,8 +60,11 @@ PAQUETS = {
         # deçà, `retraite/rsna/salaire_reference/actualisation/` n'existe pas. La 0.99 verse
         # la limite de six SMIG du salaire de référence du RSNA (openfisca-tunisia#442), que
         # le générateur des retraites lit pour la figure de la limite de calcul : en deçà,
-        # `retraite/rsna/salaire_reference/limite_multiple_smig` n'existe pas.
-        "version_minimale": (0, 99),
+        # `retraite/rsna/salaire_reference/limite_multiple_smig` n'existe pas. La 0.106 corrige
+        # le plafond d'origine des allocations familiales (52,500 D au 1er avril 1961) et
+        # supprime `af/plancher_trim`, qu'aucun texte ne fonde (openfisca-tunisia#450) : en
+        # deçà, le tableau des allocations familiales publierait une bande 52-500 D fausse.
+        "version_minimale": (0, 106),
     },
 }
 

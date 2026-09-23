@@ -10,9 +10,6 @@
 - libelle: Taux pour le 4^e^ enfant
   parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf4.yaml
   url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.af.taux.enf4/table/
-- libelle: Assiette trimestrielle, plancher
-  parametre: parameters/prestations/contributives/prestations_familiales/af/plancher_trim.yaml
-  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.af.plancher_trim/table/
 - libelle: Assiette trimestrielle, plafond
   parametre: parameters/prestations/contributives/prestations_familiales/af/plaf_trim.yaml
   url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.af.plaf_trim/table/

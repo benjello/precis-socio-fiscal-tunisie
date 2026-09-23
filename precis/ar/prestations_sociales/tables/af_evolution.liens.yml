@@ -10,9 +10,6 @@
 - libelle: النسبة للطفل الرابع
   parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf4.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.taux.enf4/table/
-- libelle: الوعاء الثلاثي، الحدّ الأدنى
-  parametre: parameters/prestations/contributives/prestations_familiales/af/plancher_trim.yaml
-  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.plancher_trim/table/
 - libelle: الوعاء الثلاثي، الحدّ الأقصى
   parametre: parameters/prestations/contributives/prestations_familiales/af/plaf_trim.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.plaf_trim/table/
