@@ -105,6 +105,7 @@ MOTS = {
         "mil_superieurs": "Officiers supérieurs",
         "mil_generaux": "Officiers généraux",
         "tranche_services": "Tranche de services",
+        "bareme_annuites": "Barème des annuités",
         "par_an": "Par année",
         "par_trimestre": "Par trimestre",
         "cumul": "Taux cumulé en fin de tranche",
@@ -136,6 +137,7 @@ MOTS = {
         "mil_superieurs": "الضباط السامون",
         "mil_generaux": "الضباط العامون",
         "tranche_services": "شريحة الخدمات",
+        "bareme_annuites": "جدول نسب السنوات القابلة للتصفية",
         "par_an": "عن كلّ سنة",
         "par_trimestre": "عن كلّ ثلاثية",
         "cumul": "النسبة المتراكمة في نهاية الشريحة",
@@ -281,6 +283,7 @@ def tableaux(langue):
         tranches = ot.bareme_a_la_date(
             f"{CNRPS}/bareme_annuite.yaml", datetime.date(1985, 9, 12)
         )
+        ot.releve_note(f"{CNRPS}/bareme_annuite.yaml", m["bareme_annuites"])
         if not tranches:
             return None
         lignes, cumul = [], 0.0
@@ -380,7 +383,9 @@ def main() -> int:
         sortie.mkdir(parents=True, exist_ok=True)
         fabriques = tableaux(langue)
         for nom, fabrique in fabriques.items():
+            ot.releve_debut()
             df = fabrique()
+            liens = ot.releve_fin()
             if df is None or df.empty:
                 print(f"✗ {langue}/{nom} : paramètre introuvable ou vide.")
                 return 1
@@ -389,6 +394,7 @@ def main() -> int:
                 print(f"✗ {langue}/{nom} : date d'effet sans clé de citation — {manquante}")
                 return 1
             (sortie / nom).write_text(ot.tableau_vers_markdown(df), encoding="utf-8")
+            ot.ecrire_liens(sortie / nom, liens, langue)
         print(f"✓ {langue} : {len(fabriques)} tableaux")
     # Chaque série est émise quoi qu'il arrive aux autres, et le code de retour les
     # combine : une série vide ne doit pas en masquer une autre.

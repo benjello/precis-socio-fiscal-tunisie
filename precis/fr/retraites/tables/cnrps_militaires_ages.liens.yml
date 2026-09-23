@@ -1,0 +1,15 @@
+- libelle: Hommes de troupe, quartiers-maîtres et matelots
+  parametre: parameters/retraite/cnrps/age_legal/militaire/hommes_de_troupe.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.age_legal.militaire.hommes_de_troupe/
+- libelle: Sous-officiers et officiers mariniers
+  parametre: parameters/retraite/cnrps/age_legal/militaire/sous_officiers.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.age_legal.militaire.sous_officiers/
+- libelle: Officiers subalternes
+  parametre: parameters/retraite/cnrps/age_legal/militaire/officiers_subalternes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.age_legal.militaire.officiers_subalternes/
+- libelle: Officiers supérieurs
+  parametre: parameters/retraite/cnrps/age_legal/militaire/officiers_superieurs.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.age_legal.militaire.officiers_superieurs/
+- libelle: Officiers généraux
+  parametre: parameters/retraite/cnrps/age_legal/militaire/officiers_generaux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.age_legal.militaire.officiers_generaux/

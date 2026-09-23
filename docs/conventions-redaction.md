@@ -17,6 +17,14 @@ comprendre ce qu'on fait dans le modèle — pas l'inverse. Un tableau engendré
 base présente donc des **faits de droit**, appuyés sur le texte cité dans le tableau
 lui-même, et non « ce que porte le modèle ».
 
+**Une seule porte vers cette base : l'onglet « Base législative » des tableaux engendrés**
+(« القاعدة التشريعية » en arabe). Il donne, pour chaque grandeur du tableau, un lien vers sa
+page publique sur `parameters.tn.tax-benefit.org`, qui en montre toutes les valeurs datées
+et leurs références. C'est la seule exception à la règle : l'onglet ne nomme pas le modèle,
+ses liens sont engendrés avec le tableau (`tables/<nom>.liens.yml`) et jamais écrits à la
+main, et la prose n'y renvoie pas. `scripts/verifier_liens_base_legislative.py` contrôle
+que chaque lien répond.
+
 ### Ce qui en découle, cas par cas
 
 **Un fait vrai du seul modèle ne se publie pas.** Une date qu'un paramètre porte à tort,

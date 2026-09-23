@@ -1,0 +1,6 @@
+- libelle: سقف نسبة تصفية الجراية
+  parametre: parameters/retraite/cnrps/plaf_taux_pension.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.plaf_taux_pension/
+- libelle: الجراية الدنيا المضمونة
+  parametre: parameters/retraite/cnrps/pension_minimale/minimum_garanti.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.pension_minimale.minimum_garanti/

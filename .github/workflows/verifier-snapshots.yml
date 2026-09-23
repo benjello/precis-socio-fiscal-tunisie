@@ -99,6 +99,12 @@ jobs:
           PYTHONPATH: scripts
         run: uv run python scripts/check_tarifs_openfisca.py
 
+      # Chaque tableau engendré porte, dans `<nom>.liens.yml`, un lien par paramètre vers
+      # sa page publique (onglet « Base législative »). Un paramètre renommé dans le modèle
+      # rendrait le lien mort sans que le tableau change : le passage hebdomadaire le voit.
+      - name: Les liens de la base législative répondent
+        run: uv run python scripts/verifier_liens_base_legislative.py
+
       - name: Comparer au contenu versionné
         run: |
           # Deux pièges, tous deux éprouvés par un test négatif.

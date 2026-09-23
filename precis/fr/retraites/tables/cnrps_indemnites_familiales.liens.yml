@@ -1,0 +1,12 @@
+- libelle: 1^er^ enfant
+  parametre: parameters/retraite/cnrps/accessoires/indemnites_familiales/rang_1.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.accessoires.indemnites_familiales.rang_1/
+- libelle: 2^e^ enfant
+  parametre: parameters/retraite/cnrps/accessoires/indemnites_familiales/rang_2.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.accessoires.indemnites_familiales.rang_2/
+- libelle: 3^e^ enfant
+  parametre: parameters/retraite/cnrps/accessoires/indemnites_familiales/rang_3.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.accessoires.indemnites_familiales.rang_3/
+- libelle: 4^e^ enfant (droits acquis avant 1989)
+  parametre: parameters/retraite/cnrps/accessoires/indemnites_familiales/rang_4.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.accessoires.indemnites_familiales.rang_4/

@@ -1,0 +1,6 @@
+- libelle: Plafond du taux de la pension
+  parametre: parameters/retraite/cnrps/plaf_taux_pension.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.plaf_taux_pension/
+- libelle: Pension minimale garantie
+  parametre: parameters/retraite/cnrps/pension_minimale/minimum_garanti.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.pension_minimale.minimum_garanti/

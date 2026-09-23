@@ -49,6 +49,9 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   paramètres » dans le texte rendu. Un constat sur le modèle va dans un `<!-- TODO (rôle) : … -->`,
   dans une *issue*, ou dans `docs/notes/backlog-modele.md`. `scripts/check_pas_de_modele.py` le
   vérifie.
+  Seule exception : l'onglet « Base législative » des tableaux engendrés, qui lie chaque
+  grandeur à sa page sur `parameters.tn.tax-benefit.org`. Ses liens sont engendrés avec le
+  tableau (`tables/<nom>.liens.yml`), jamais écrits à la main.
 - **Pas de jargon de dépouillement dans le texte visible** : ni « objet seul », ni « non lu », ni
   « métadonnées seules », ni `[T]`/`[M]`/`[D]`. On dit en clair ce qui est connu — « seul l'intitulé
   de ce texte est connu ici » —, ou on lit le texte.
