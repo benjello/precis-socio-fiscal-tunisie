@@ -57,8 +57,11 @@ PAQUETS = {
         # chemins déplacés en 6.0 et 7.0, les âges militaires versés en 7.2. La 0.93 les
         # porte tous. La 0.95 verse le barème d'actualisation des salaires du régime non
         # agricole (openfisca-tunisia#438), dont le livre « Retraites » tire une figure : en
-        # deçà, `retraite/rsna/salaire_reference/actualisation/` n'existe pas.
-        "version_minimale": (0, 95),
+        # deçà, `retraite/rsna/salaire_reference/actualisation/` n'existe pas. La 0.99 verse
+        # la limite de six SMIG du salaire de référence du RSNA (openfisca-tunisia#442), que
+        # le générateur des retraites lit pour la figure de la limite de calcul : en deçà,
+        # `retraite/rsna/salaire_reference/limite_multiple_smig` n'existe pas.
+        "version_minimale": (0, 99),
     },
 }
 

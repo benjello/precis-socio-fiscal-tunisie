@@ -229,6 +229,8 @@ CLES_MILITAIRES = {
     "2020-01-01": "loi2019-37, art. 1 et 5",
 }
 CLES_PLAFOND_PLANCHER = {
+    "1959-04-01": "loi59-18, art. 22, § II, et 52",
+    "1970-07-01": "decretloi70-1, art. 1 et 2",
     "1981-05-01": "loi81-70, art. 4-5",
     "1985-09-12": "loi85-12, art. 38 et 39",
 }
@@ -453,16 +455,6 @@ CACHE = RACINE / "_seriescache"
 # de ces montants, qui se calculent sur le SMIG HORAIRE.
 HEURES_PAR_MOIS = 2400 / 12
 
-# LE MULTIPLE DE LA LIMITE DE CALCUL N'EST PAS UN PARAMÈTRE. Six fois le SMIG rapporté à
-# 2 400 heures, depuis le 1er janvier 1974 [decret74-499, art. 18], précisé « régime
-# 48 heures » au 1er juillet 1994 [decret94-1429, art. 1 (art. 18 nouveau)] ; aucun autre
-# texte ne le modifie jusqu'au JORT du 18 septembre 2026 (chapitre, @sec-rsna-calcul).
-# L'arbre de retraite n'en porte pas de valeur datée : c'est le constat de l'issue
-# openfisca-tunisia#399, reporté à docs/notes/backlog-modele.md. La constante est donc
-# écrite ici, avec sa date et son texte, en attendant que le paramètre existe : elle
-# disparaîtra au profit d'une lecture datée le jour où il sera versé.
-LIMITE_MULTIPLE_RSNA = 6.0
-LIMITE_DEPUIS = datetime.date(1974, 1, 1)
 
 # Une ligne par barème : (régime, chemin du barème, du plafond, de la durée minimale, de
 # la durée des carrières courtes ou None). La durée minimale est celle qui ouvre la
@@ -561,6 +553,10 @@ FRACTIONS = (
     ("pi_rsna_reduit", "minimum_rsna_reduit", f"{RSNA}/pension_minimale/inf.yaml"),
 )
 SMIG_HORAIRE = f"{MARCHE}/smig_48h_horaire.yaml"
+# Le multiple ℓ de la limite de calcul du RSNA : six SMIG rapportés à 2 400 heures depuis le
+# 1er janvier 1974, trois rédactions de l'article 18 du décret n° 74-499 (1974, 1990, 1994),
+# versé et daté par openfisca-tunisia#442 (version 0.99).
+LIMITE_MULTIPLE = f"{RSNA}/salaire_reference/limite_multiple_smig.yaml"
 
 
 def serie_smig_planchers() -> int:
@@ -585,7 +581,14 @@ def serie_smig_planchers() -> int:
     dates = {datetime.date.fromisoformat(d) for d, *_ in smig}
     for _, _, chemin in FRACTIONS:
         dates |= {datetime.date.fromisoformat(d) for d, *_ in ot.serie_datee(chemin)}
-    dates = sorted(d for d in dates | {LIMITE_DEPUIS} if d >= LIMITE_DEPUIS)
+    limite = ot.serie_datee(LIMITE_MULTIPLE)
+    if not limite:
+        print("✗ retraites-smig-planchers : limite de calcul du RSNA introuvable, "
+              "snapshot conservé.")
+        return 1
+    limite_depuis = min(datetime.date.fromisoformat(d) for d, *_ in limite)
+    dates |= {datetime.date.fromisoformat(d) for d, *_ in limite}
+    dates = sorted(d for d in dates if d >= limite_depuis)
 
     lignes = []
     for date in dates:
@@ -602,8 +605,9 @@ def serie_smig_planchers() -> int:
             pi = _valeur(chemin, date)
             ligne[col_pi] = None if pi is None else round(pi, 6)
             ligne[col_montant] = None if pi is None else round(pi * mensuel, 3)
-        ligne["ell_rsna"] = LIMITE_MULTIPLE_RSNA
-        ligne["limite_calcul_rsna"] = round(LIMITE_MULTIPLE_RSNA * mensuel, 3)
+        ell = _valeur(LIMITE_MULTIPLE, date)
+        ligne["ell_rsna"] = None if ell is None else float(ell)
+        ligne["limite_calcul_rsna"] = None if ell is None else round(ell * mensuel, 3)
         ligne["texte_smig"] = titre
         ligne["lien_smig"] = _lien_pist(lien)
         lignes.append(ligne)
