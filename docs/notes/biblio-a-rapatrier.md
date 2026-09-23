@@ -8,6 +8,137 @@
 
 ## En attente
 
+### Livre « Retraites » — autres régimes de pension de la CNSS (versement du 23/09/2026)
+
+Source : `docs/notes/cnss-autres-regimes.md` (§ 1, 15 ; textes lus au fascicule). Ajoutées à la
+main, FR et AR, dans le fonds commun `precis/{fr,ar}/references.json` (convention « textes de la
+chaîne d'un régime au fonds commun »), **pas encore dans Zotero**. URL = `pdf_fr` / `pdf_ar` de
+l'enregistrement `jort_cache.db` du texte lui-même, toutes contrôlées le 23/09/2026 (`curl -k`,
+HTTP 206, `application/pdf`). Titres des entrées AR : titres français (usage des autres entrées de
+la chaîne), sauf `decretloi2020-33`, dont l'original est arabe. Pagination : celle de l'édition
+française, dans les deux fichiers ; l'éventuelle pagination arabe est dite en note.
+
+| Clé | Texte | recid | Remarque |
+|---|---|---|---|
+| `decret77-546` | Décret n° 77-546 du 15 juin 1977 (pêcheurs) | 100411 | |
+| `decret80-103` | Décret n° 80-103 du 23 janvier 1980 (art. 11 bis) | 98958 | un chiffre illisible (éd. fr.) |
+| `loi81-6-rect` | Rectificatif à la loi n° 81-6 (JORT n° 26/1981, p. 844) | 115311 | clé propre (précédent `decret82-1030-rect`) ; `issued` = publication |
+| `decret82-1028` | Décret n° 82-1028 du 8 juillet 1982 (art. 3 bis) | 97393 | rectificatif (recid 97255) décrit en note |
+| `decret82-1359` | Décret n° 82-1359 du 21 octobre 1982 (indépendants non agricoles) | 97252 | |
+| `decret82-1360` | Décret n° 82-1360 du 21 octobre 1982 (indépendants agricoles) | 97253 | |
+| `decret89-1611` | Décret n° 89-1611 du 10 octobre 1989 | 93663 | |
+| `decret90-548` | Décret n° 90-548 du 27 mars 1990 (pêcheurs indépendants, RSAA) | 93467 | |
+| `decret91-604` | Décret n° 91-604 du 30 avril 1991 (prorogation, RTTE) | 92912 | |
+| `decret93-357` | Décret n° 93-357 du 8 février 1993 (prorogation, non agricoles) | 92063 | |
+| `loi95-102` | Loi n° 95-102 du 27 novembre 1995 (art. 74) | 112524 | |
+| `loi96-66` | Loi n° 96-66 du 22 juillet 1996 (art. 60, 61, 63, 69) | 112416 | **pp. 1603-1604**, et non « 1603 » comme dit la note (signature en tête de la p. 1604) |
+| `loi97-61` | Loi n° 97-61 du 28 juillet 1997 (art. 41, 64) | 112255 | |
+| `arrete-1997-01-27-retraite-complementaire` | Arrêté du 27 janvier 1997 (règlement complémentaire) | 60565 | |
+| `decret2019-379` | Décret gouvernemental n° 2019-379 du 22 avril 2019 | — | **sans URL** (voir TODO) |
+| `decretloi2020-33` | Décret-loi n° 2020-33 du 10 juin 2020 (auto-entrepreneur) | 144377 | clé renommée (note : `decret-loi2020-33`) selon la convention `decretloiAAAA-N` ; FR sans URL (`pdf_fr` vide) ; AR `Ja0542020` |
+| `loi2021-37` | Loi n° 2021-37 du 16 juillet 2021 (travail domestique) | 162301 | |
+| `arrete-2020-07-10-prime-pensions` | Arrêté conjoint du 10 juillet 2020 (visas) | 147599 | **pp. 1515-1517** (note : 1515-1516) ; « attribuées » (note : « servies ») |
+| `arrete-2026-08-05-allocation-pauvres` | Arrêté conjoint du 5 août 2026 (visas) | — | **sans URL** (postérieur à `jort_cache.db`) ; **pp. 1611-1612** (note : 1610-1611) ; fascicules FR et AR téléchargés de pist.tn le 23/09/2026 |
+
+**Promues au fonds commun** (FR et AR), retirées du fichier de leur livre, comme `loi97-4` :
+- `decret2002-916` (de `cotisations_sociales`) : désormais cité par le glossaire du livre
+  « Retraites » (`regime-bas-revenus`) et par le chapitre à venir. Intitulé corrigé : « relatif aux
+  modalités d'application » (fascicule décodé, `jort_cache.db`, visas de 2019 et 2026), et non
+  « fixant » ; note complétée (art. 13-15, 22-25 ; dépôt 2 mai 2002 → exécutoire 7 mai 2002).
+- `decret-loi2024-4` (de `prestations_sociales`) : `page` renseigné, **2897-2901** (pieds de page
+  du fascicule français `Jo1292024`), à la place de « pagination non établie » ; 5293 est la
+  pagination arabe. Note complétée (art. 26-33, dépôt 23 octobre 2024 → 28 octobre 2024).
+- `arrete-2025-08-29-allocation-pauvres` (de `prestations_sociales`), entrée inchangée : la note
+  documentaire (§ 12) s'appuie sur ses visas, et l'arrêté du 5 août 2026 modifie l'arrêté de 2024
+  « tel que modifié par l'arrêté du 29 août 2025 ».
+
+**Notes corrigées** (FR et AR) : `loi81-6` (rectificatif lu, modificatifs listés, « coefficient
+multiplicateur moyen ») ; `loi2007-43` (dépôt le **27 juin 2007** → exécutoire le 2 juillet 2007 ;
+`page` 2197-2199 → **2198-2199**, vérifié au sommaire) ; `arrete-1998-07-29-revalorisation-rtns`
+(« texte non lu » → art. 1-3 lus, effet 1er mai 1998) ; `loi2002-32` (correspondance avec le RTFR
+attestée par l'annuaire 2013 ; dépôt 16 mars 2002 → 21 mars 2002) ; `decret95-1166` (fusion des
+régimes de 1982 ; dépôt 14 juillet 1995 → 19 juillet 1995) ; `decret89-107` (exécutoire le
+19 janvier 1989 ; prorogation par le décret n° 91-604) ; compléments sans contradiction :
+`loi2002-104` (art. 20 lu sur l'éd. ar. ; exécutoire le 5 janvier 2003), `decret2003-894`
+(exécutoire le 5 mai 2003), `arrete-1978-11-18-retraite-complementaire` (modificatif de 1997),
+`loi89-73` (art. 3, 93-97). Dates de dépôt relues le 23/09/2026 dans la mention imprimée des
+fascicules (couche texte ou décodée) : n° 55 et 96/1995, 60/1996, 11/1997, 63/1998, 22, 35 et
+106/2002, 34/2003, 51/2007, 34/2019, 54/2020 (éd. ar.), 68/2021, 129/2024, 80/2026. Aucune date de
+dépôt n'est citée pour la loi n° 97-61 (effet fixé par son art. 2).
+
+**Écartées** :
+- `arrete-2019-06-19-affiliation-ruraux` : métadonnées seules ([M]), texte non lu.
+
+Clôture, seconde passe (23/09/2026, après la réorganisation de `_secteur_prive.qmd` et le
+tableau `tbl-carte-regimes` de `index.qmd`, qui cite désormais `decret77-546`, `decret82-1359`,
+`decret82-1360` et `decret-loi2024-4`) — **état de la worktree, glossaire en cours de révision** :
+- les 257 clés citées par `precis/fr/retraites/*.qmd` résolvent, FR et AR (fichier du livre +
+  fonds commun + `references.bib`) ; ids identiques FR/AR dans les quatre fichiers touchés
+  (retraites 57, commun 267, cotisations 9, prestations 48).
+- URL des 19 nouvelles clés, des quatre clés du tableau et des trois promues comparées champ à
+  champ à `pdf_fr` / `pdf_ar` de leur recid dans `jort_cache.db` : toutes conformes ; sans URL,
+  comme prévu, `decret2019-379`, `arrete-2026-08-05-allocation-pauvres` (FR et AR) et
+  `decretloi2020-33` (FR seul).
+- rendus FR et AR de « Retraites », « Cotisations sociales » et « Prestations sociales » :
+  0 `[?]`, 0 `?@`, aucun `figdata` modifié.
+- `push_biblio.py --verifier` : 514 entrées, 0 perte. `--dry-run` (sans clé) : conversion des
+  514 entrées sans erreur.
+- `--controle-rangement` (lecture seule, API publique) : 495 références dans Zotero,
+  531 citations ; 430 bien rangées ; **3 à déclasser** : `decret2002-916` (retirer
+  `cotisations_sociales`), `decret-loi2024-4` et `arrete-2025-08-29-allocation-pauvres` (retirer
+  `prestations_sociales`) — toutes trois citées désormais par « Retraites » et par leur livre
+  d'origine ; 0 à ranger ; 62 sans citation ; **19 absentes de Zotero**, liste identique, clé à
+  clé, aux 19 du tableau ci-dessus. Rien poussé. **À relancer sur `master` après la fusion** (le
+  glossaire, lu par `cles_citees`, bouge encore).
+
+Reste à faire — **dans cet ordre**, feu vert humain requis pour toute écriture Zotero :
+
+**Aucune descente `sync_biblio` avant les étapes 2 et 3.** Zotero range encore
+`decret-loi2024-4` et `arrete-2025-08-29-allocation-pauvres` dans `prestations_sociales`, et
+`decret2002-916` dans `cotisations_sociales` : une descente les renverrait dans le fichier de ces
+livres, hors de portée de « Retraites » (rendu `[?]`), et écraserait les 12 corrections.
+
+- [ ] 1. `--permissions` → `--verifier` → `--dry-run`, avec la clé d'écriture.
+- [ ] 2. **`--corriger`** (Zotero ignore ces corrections ; `--pousser` ne crée que les absentes
+      et `--comparer` ne compare pas la note) :
+      `loi81-6,loi2007-43,arrete-1998-07-29-revalorisation-rtns,loi2002-32,decret95-1166,decret89-107,decret2002-916,decret-loi2024-4,loi2002-104,decret2003-894,arrete-1978-11-18-retraite-complementaire,loi89-73`.
+      `--corriger` abandonne tout le lot à la première clé absente de Zotero : n'y ajouter
+      **aucune** des 19 nouvelles avant leur création. Si la chaîne de la section RSNA
+      (`decret2003-1212,decret74-499,loi60-33,decret82-1030`) est toujours en attente, la joindre
+      à celle-ci en un seul appel.
+- [ ] 3. **Déclassement** : `--appliquer-rangement` à blanc, vérifier qu'il ne touche que
+      `decret2002-916` (− `cotisations_sociales`), `decret-loi2024-4` et
+      `arrete-2025-08-29-allocation-pauvres` (− `prestations_sociales`) — plus ce qui reste
+      pendant de la section RSNA —, puis `--appliquer-rangement --pousser`. À faire **avant**
+      l'étape 4 : ensuite, `--appliquer-rangement` rangerait aussi les 19 dans `retraites`.
+- [ ] 4. Pousser les 19 clés : `pousser-un` → `comparer` → `pousser-tout` :
+      `arrete-1997-01-27-retraite-complementaire`, `arrete-2020-07-10-prime-pensions`,
+      `arrete-2026-08-05-allocation-pauvres`, `decret2019-379`, `decret77-546`, `decret80-103`,
+      `decret82-1028`, `decret82-1359`, `decret82-1360`, `decret89-1611`, `decret90-548`,
+      `decret91-604`, `decret93-357`, `decretloi2020-33`, `loi2021-37`, `loi81-6-rect`,
+      `loi95-102`, `loi96-66`, `loi97-61`.
+- [ ] 5. `--ranger` : sans effet attendu sur les 19 (leur fichier est le fonds commun, sans
+      livre) ; elles restent sans collection et redescendent dans le fonds commun, conformément
+      à la convention « chaîne d'un régime au fonds commun ».
+- [ ] 6. **Conflit de convention à trancher** (même question que la section RSNA ci-dessous) :
+      citées par le seul livre « Retraites », les 19 apparaîtront au contrôle comme « à ranger :
+      retraites », et tout `--appliquer-rangement` ultérieur les rangerait dans `retraites`, donc
+      dans `precis/{fr,ar}/retraites/references.json`. Ne pas lancer `--appliquer-rangement`
+      sans exclure ces clés tant que la règle n'est pas fixée.
+
+Vérifications de métadonnées en attente (sans écriture Zotero) :
+- [ ] `decret2019-379` : **absent de `jort_cache.db`** (le fascicule n° 34/2019 n'y porte que deux
+      notices, recid 169836 et 169837). Candidats vérifiés le 23/09/2026 (HTTP 206, décret lu
+      pp. 1277-1278 dans `Jo0342019`) : `https://www.pist.tn/jort/2019/2019F/Jo0342019.pdf` et
+      `https://www.pist.tn/jort/2019/2019A/Ja0342019.pdf`. À poser une fois la notice présente
+      dans `jort_cache.db`. Défaut connexe : le recid 169837 (arrêté du 22 avril 2019, espadon)
+      porte `date_signature` 2022-10-12 et `pdf_ar` `Ja1132019`, incohérents avec son fascicule.
+- [ ] `decretloi2020-33`, entrée FR : pas d'édition française (`pdf_fr` vide, 404) ; l'intitulé
+      français vient de la note commune n° 3 de la DGI (art. 36 de la loi n° 2024-48).
+- [ ] `arrete-2026-08-05-allocation-pauvres` : URL à poser quand `jort_cache.db` couvrira août 2026
+      (candidats `Jo0802026` / `Ja0802026`, HTTP 200 le 23/09/2026).
+- [ ] `decret80-103` : chiffre illisible (« au cours des … premières années ») à lire sur l'éd. ar.
+
 ### Livre « Retraites » — RSNA avant 1974 et réformes du cœur du régime (versement du 23/09/2026)
 
 Source : `docs/notes/rsna-histoire-reformes.md` (§ 1, 2, 5 et 7.2 ; textes lus au fascicule).

@@ -25,9 +25,9 @@ def table(nom, legende, label):
     print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label))
 ```
 
-Les pensions du secteur privé sont servies par la [Caisse nationale de sécurité sociale](#g-cnss) au titre de plusieurs régimes. Deux textes en portent l'essentiel : le **décret n° 74-499 du 27 avril 1974** pour les salariés non agricoles, et la **loi n° 81-6 du 12 février 1981** pour les salariés agricoles. Les autres régimes — travailleurs non salariés, Tunisiens à l'étranger, artistes, certaines catégories de travailleurs à faibles revenus — ont leur texte propre ; les deux premiers sont construits par renvoi à des articles numérotés du décret de 1974.
+Les pensions du secteur privé sont servies par la [Caisse nationale de sécurité sociale](#g-cnss) au titre de plusieurs régimes. Deux textes en portent l'essentiel : le **décret n° 74-499 du 27 avril 1974** pour les salariés non agricoles, et la **loi n° 81-6 du 12 février 1981** pour les salariés agricoles. Les autres régimes — régime complémentaire, travailleurs non salariés depuis 1982, Tunisiens à l'étranger, travailleurs à faibles revenus, artistes, créateurs et intellectuels, travailleuses agricoles depuis 2024 — ont leur texte propre ; ceux des non-salariés et des Tunisiens à l'étranger sont construits par renvoi à des articles numérotés du décret de 1974, et les pêcheurs relèvent, par extension, du régime de ce décret.
 
-Ce chapitre expose d'abord le régime des salariés non agricoles, selon le plan suivi pour le secteur public : ses origines, le régime du décret de 1974 d'un seul tenant, les réformes de son cœur, l'évolution de ses autres éléments et son équilibre financier (@sec-rsna). Viennent ensuite les régimes agricoles, en disant ce qui les distingue du précédent ; puis le régime complémentaire ; puis, plus brièvement, les régimes des non-salariés et les régimes particuliers. Une vue d'ensemble compare les deux secteurs. Les notations du chapitre et les textes modificatifs du décret n° 74-499 sont rassemblés en annexe.
+Ce chapitre expose d'abord le régime des salariés non agricoles, selon le plan suivi pour le secteur public : ses origines, le régime du décret de 1974 d'un seul tenant, les réformes de son cœur, l'évolution de ses autres éléments et son équilibre financier (@sec-rsna). Les autres régimes suivent le même plan, plus brièvement — un rappel de leurs origines, le régime dans son état initial avec sa formule, ses réformes s'il en a connu, l'évolution de ses autres éléments : les régimes agricoles, en disant ce qui les distingue du précédent (@sec-agricoles) ; puis le régime complémentaire (@sec-regime-complementaire) ; puis les régimes des non-salariés et les régimes particuliers (@sec-regimes-particuliers). Une vue d'ensemble compare les deux secteurs. Les notations du chapitre et les textes modificatifs du décret n° 74-499 sont rassemblés en annexe.
 
 La logique de la pension y diffère de celle du secteur public : elle repose sur un [salaire moyen de référence](#g-salaire-moyen-reference) calculé sur plusieurs années et borné par une [limite de calcul](#g-limite-calcul-prestations), et elle est revalorisée par référence au salaire minimum, non à la rémunération des actifs.
 
@@ -762,142 +762,477 @@ sources/cnss-annuaires.md de tunisia-data). Pistes restantes pour prolonger la s
 
 ## Les salariés agricoles {#sec-agricoles}
 
-### La loi n° 81-6
+**Les origines.** Les salariés agricoles relèvent de la **loi n° 81-6 du 12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole**, publiée au *Journal officiel* du 13 février 1981. Son article 88 — devenu l'article 104 en 1989 — dispose qu'elle « entrera en vigueur le 1^er^ janvier 1981 » [@loi81-6, art. 88], soit six semaines avant sa signature. Elle abroge les dispositions du titre I bis de la loi n° 60-30 [@loi81-6, art. 87], cadre agricole antérieur dont la teneur n'est pas établie ici : rien n'indique qu'il ait comporté des pensions. Elle comporte deux régimes : le [régime des salariés agricoles](#g-rsa) (titres I et II), et le [régime agricole amélioré](#g-rsaa), ajouté sous forme d'un titre III par la loi n° 89-73 du 2 septembre 1989, qui renumérote en 102 à 104 les anciens articles 86 à 88 [@loi89-73, art. 2]. Elle se coordonne avec le régime non agricole : les conditions d'âge et de stage « sont supposées remplies si elles le sont dans l'ensemble des deux régimes », chaque régime servant, au prorata des périodes qu'il retient, une pension théorique calculée selon ses propres règles [@loi81-6, art. 85]. Un rectificatif publié au *Journal officiel* n° 26 du 17 avril 1981, p. 844, corrige neuf points de la loi — notamment les renvois des articles 45 d) et 57, et la mention des allocations aux articles 74 à 76 —, sans toucher aux articles 48 à 50, 53, 60 à 73 et 80 à 82 ni à l'article 88 : les chiffres et la date d'effet qui suivent sont ceux du texte initial [@loi81-6-rect].
 
-Les salariés agricoles relèvent de la **loi n° 81-6 du 12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole**, publiée au *Journal officiel* du 13 février 1981. Son article 88 — devenu l'article 104 en 1989 — dispose qu'elle « entrera en vigueur le 1^er^ janvier 1981 » [@loi81-6, art. 88], soit six semaines avant sa signature. Elle comporte deux régimes : le [régime des salariés agricoles](#g-rsa) (titres I et II), et le [régime agricole amélioré](#g-rsaa), ajouté sous forme d'un titre III par la loi n° 89-73 du 2 septembre 1989, qui renumérote en 102 à 104 les anciens articles 86 à 88 [@loi89-73, art. 2].
+<!-- TODO (documentaliste) : lire le titre I bis de la loi n° 60-30, abrogé par l'article 87 de
+la loi n° 81-6 (texte et date d'insertion), pour établir s'il comportait des pensions agricoles
+avant 1981. -->
 
-::: {.callout-warning title="Un rectificatif reste à confronter"}
-La loi n° 81-6 a fait l'objet d'un rectificatif publié au *Journal officiel* n° 26 du 17 avril 1981, p. 844, **dont le contenu n'a pas été confronté au texte initial**. Les chiffres que cette section tire de la loi, comme sa date d'entrée en vigueur, sont ceux du texte initial ; ils sont exacts sous réserve de ce que ce rectificatif aurait corrigé.
+### Le régime des salariés agricoles {#sec-rsa}
+
+Le régime suit une architecture proche de celle du décret de 1974 — plusieurs articles en reprennent la rédaction —, avec des durées exprimées en trimestres et un salaire de référence forfaitaire. Il est exposé d'abord d'un seul tenant, dans son état du 1^er^ janvier 1981 (@sec-rsa-loi-1981), puis dans son évolution, qui n'a pas touché son cœur (@sec-rsa-evolution).
+
+#### Le régime de la loi n° 81-6 {#sec-rsa-loi-1981}
+
+**L'ouverture du droit** suppose 60 ans au moins, **40 trimestres** de cotisations effectives ou assimilées et l'absence d'activité assujettie [@loi81-6, art. 48]. Sont notamment assimilées les périodes d'incapacité temporaire indemnisée, d'incapacité permanente d'au moins 66,66 %, d'indemnités journalières de maladie ou de maternité et d'invalidité [@loi81-6, art. 45]. Le droit oblige à mettre fin à la relation de travail [@loi81-6, art. 47], et la pension est servie à compter du premier jour du mois suivant la cessation d'activité [@loi81-6, art. 75]. Les articles 45 à 88 de la loi ne comportent **aucun dispositif de départ anticipé** — ni pour les mères de trois enfants, ni pour les travaux pénibles, ni pour convenance personnelle — et **aucune pension minimale**.
+
+::: {.callout-note title="La formule de la pension des salariés agricoles"}
+La pension de vieillesse reprend la formule du régime non agricole (@sec-rsna-calcul), sans pension minimale, et la calcule sur un salaire de référence forfaitaire :
+
+$$
+P = \min(\tau(n),\ \bar\tau)\cdot R, \qquad \tau(n) = \tau_0 + \alpha\left\lfloor \frac{n - n_0}{u} \right\rfloor, \qquad R = S_A\,\max_{T \in \mathcal{T}}\ \bar c_T
+$$
+
+où $S_A$ est le [SMAG](#g-smag) rapporté à une durée de travail de 300 jours par an et $\bar c_T$ le coefficient multiplicateur moyen ayant servi de base au calcul des cotisations au cours des $T$ dernières années précédant l'âge d'ouverture du droit ; les autres symboles sont ceux du régime non agricole, la durée $n$ étant toujours comptée en mois, quand la loi la compte en trimestres. Le salaire de référence est, selon la loi, « le salaire minimum agricole garanti rapporté à une durée de travail de 300 jours par an affecté du coefficient multiplicateur moyen ayant servi de base au calcul des cotisations au cours des trois ou cinq dernières années précédant l'âge d'ouverture du droit », la période la plus avantageuse étant retenue [@loi81-6, art. 50]. Le coefficient est celui de la qualification de l'ouvrier : 1 pour l'ouvrier ordinaire, 1,5 pour l'ouvrier spécialisé, 2 pour l'ouvrier qualifié [@loi81-6, art. 18].
+
+Au 1^er^ janvier 1981, ces grandeurs valent [@loi81-6, art. 48 à 50] :
+
+$$
+n_0 = 120, \qquad \tau_0 = 40\,\%, \qquad \alpha = 0{,}5\,\%, \qquad u = 3, \qquad \bar\tau = 80\,\%, \qquad \mathcal{T} = \{3,\ 5\}
+$$
+
+Le stage de 120 mois est celui de 40 trimestres ; le taux est de 40 % à 40 trimestres, majoré de 0,5 % par trimestre supplémentaire, dans la limite de 80 % [@loi81-6, art. 49]. Par le calcul, le taux atteint son plafond au terme de 120 trimestres de cotisation, soit 360 mois, comme dans le régime non agricole. Aucun texte modifiant ces valeurs n'a été retrouvé au *Journal officiel* jusqu'au 18 septembre 2026 (@sec-rsa-evolution).
 :::
 
-<!-- TODO (documentaliste) : ouvrir le rectificatif de la loi n° 81-6 (JORT n° 26/1981, p. 844). -->
+**La revalorisation** est législative et automatique dès l'origine : les pensions « sont révisées lors de chaque paiement proportionnellement à la variation du SMAG par rapport à celui qui a servi au calcul du salaire de référence de l'assuré lors de la liquidation initiale de la pension » [@loi81-6, art. 80] :
 
-### Le régime des salariés agricoles
+$$
+P' = P\,\frac{S_A'}{S_A}
+$$
 
-Le régime suit une architecture proche de celle du décret de 1974 — plusieurs articles en reprennent la rédaction —, avec des paramètres exprimés en trimestres et un salaire de référence forfaitaire.
+où $P'$ est la pension servie à une échéance postérieure à la liquidation, $S_A'$ la valeur de $S_A$ à cette échéance, $P$ et $S_A$ celles de la liquidation. À la différence du régime non agricole avant 2001 (@sec-rsna-revalorisation), la règle est donc proportionnelle depuis 1981.
 
-**L'ouverture du droit** suppose 60 ans au moins, **40 trimestres** de cotisations effectives ou assimilées et l'absence d'activité assujettie [@loi81-6, art. 48]. Sont notamment assimilées les périodes d'incapacité temporaire indemnisée, d'incapacité permanente d'au moins 66,66 %, d'indemnités journalières de maladie ou de maternité et d'invalidité [@loi81-6, art. 45]. Le droit oblige à mettre fin à la relation de travail [@loi81-6, art. 47], et la pension est servie à compter du premier jour du mois suivant la cessation d'activité [@loi81-6, art. 75]. Les articles 45 à 88 de la loi ne comportent **aucun dispositif de départ anticipé** — ni pour les mères de trois enfants, ni pour les travaux pénibles, ni pour convenance personnelle.
-
-<!-- TODO (documentaliste) : rechercher d'éventuels textes postérieurs à 1981 ouvrant un départ
-anticipé dans le régime des salariés agricoles. -->
-
-**Le calcul** reprend le barème du régime non agricole sous sa forme trimestrielle : 40 % du salaire moyen de référence pour 40 trimestres, majorés de 0,5 % par trimestre supplémentaire, dans la limite de **80 %** [@loi81-6, art. 49]. Le salaire de référence n'est pas le salaire réellement perçu : c'est « le salaire minimum agricole garanti rapporté à une durée de travail de 300 jours par an, affecté du coefficient multiplicateur ayant servi de base au calcul des cotisations au cours des trois ou cinq dernières années précédant l'âge d'ouverture du droit », la période la plus avantageuse étant retenue [@loi81-6, art. 50]. Le coefficient est celui de la qualification de l'ouvrier : 1 pour l'ouvrier ordinaire, 1,5 pour l'ouvrier spécialisé, 2 pour l'ouvrier qualifié [@loi81-6, art. 18].
-
-**Les carrières courtes** ouvrent une allocation de vieillesse en capital, à partir de **20 trimestres** de cotisations, égale à une mensualité de la pension théorique par période de deux trimestres ; la demande se prescrit par un an [@loi81-6, art. 70-73]. Une disposition transitoire l'ouvrait dès 10 trimestres aux assurés cotisant en moyenne entre un et deux trimestres par an [@loi81-6, art. 82]. À la différence du régime non agricole, qui l'a remplacée en 1982 par une pension proportionnelle, le régime agricole conserve donc l'allocation en capital dans les textes cités.
-
-::: {.callout-warning title="Aucune pension minimale dans les articles 45 à 88 de la loi n° 81-6"}
-Les articles 45 à 88 de la loi n° 81-6 ne comportent **aucune pension minimale** pour le régime des salariés agricoles. La seule pension minimale agricole établie sur texte est celle du régime amélioré, fixée en 1989 à la moitié du [SMAG](#g-smag). L'absence d'un plancher dans ces articles ne permet pas d'exclure qu'un texte ultérieur en ait institué un ; aucun n'a été identifié.
-:::
-
-<!-- TODO (documentaliste) : rechercher un éventuel texte instituant une pension minimale du
-régime des salariés agricoles (loi n° 81-6, titres I et II) postérieurement à 1981. -->
-
-**Les droits dérivés** suivent le patron de 1974 : réversion de **50 %** au conjoint dont le mariage précède l'ouverture du droit, répartie à parts égales en cas de pluralité de conjoints et supprimée en cas de remariage [@loi81-6, art. 61-63] ; pension d'orphelin de **20 %**, portée à **30 %** pour l'orphelin de père et de mère, jusqu'à 16 ans, 21 ans en cas d'études, sans limite en cas d'affection incurable [@loi81-6, art. 64-65] ; pensions d'orphelins collectives [@loi81-6, art. 66] ; plafond de cumul égal à « la pension de référence du mari » [@loi81-6, art. 69]. La loi n° 2007-43 réécrit la condition relative à la fille — pension servie sans limite d'âge à la fille sans ressources ou dont l'obligation alimentaire n'incombe pas à son époux — et supprime le terme « mineur » [@loi2007-43, art. 3-4].
+**Les carrières courtes** ouvrent une allocation de vieillesse en capital, à partir de **20 trimestres** de cotisations, égale à une mensualité de la pension théorique par période de deux trimestres ; la demande se prescrit par un an [@loi81-6, art. 70-73]. Deux dispositions transitoires accompagnent l'entrée en vigueur du régime. L'article 81 valide forfaitairement un trimestre par année entre 40 ans et l'âge de départ, dans la limite de 18 trimestres, et, pendant la période transitoire, sert une pension au prorata des trimestres réunis lorsque leur total ne dépasse pas 40 [@loi81-6, art. 81]. L'article 82 ouvre l'allocation dès 10 trimestres aux assurés cotisant en moyenne entre un et deux trimestres par an [@loi81-6, art. 82]. À la différence du régime non agricole, qui l'a remplacée en 1982 par une pension proportionnelle (@sec-rsna-reforme-1982), le régime agricole conserve l'allocation en capital.
 
 **L'invalidité** ouvre une pension à l'assuré dont la capacité de travail ou de gain est réduite des deux tiers au moins, sous condition de 20 trimestres de cotisations dont deux au cours des douze mois précédant la première constatation ; son taux est de 40 % du salaire de référence, majoré de 0,5 % par trimestre au-delà de 40 trimestres dans la limite de 80 %, bonifié de 20 % en cas de recours à une tierce personne [@loi81-6, art. 51-54].
 
-**La revalorisation** est législative et automatique dès l'origine : les pensions « sont révisées lors de chaque paiement proportionnellement à la variation du SMAG par rapport à celui qui a servi au calcul du salaire de référence de l'assuré lors de la liquidation initiale de la pension » [@loi81-6, art. 80]. À la différence du régime non agricole avant 2001, la règle est donc proportionnelle depuis 1981. En 2026, le décret qui fixe le SMAG énonce, comme celui du SMIG, que son augmentation s'applique aux pensions de retraite [@decret2026-66, art. 5].
+**Les droits dérivés** suivent, en 1981, le patron du régime non agricole de 1974 (@sec-rsna-derives-1974). Le droit à pension de survivant est ouvert à « la veuve » d'un pensionné ou d'un assuré remplissant le stage, et au « veuf invalide », à condition que le mariage ait été contracté antérieurement à l'ouverture du droit à pension ; la pension de réversion est de 50 %, répartie à parts égales entre les veuves et supprimée en cas de remariage [@loi81-6, art. 60 à 63]. L'orphelin mineur a droit à une pension jusqu'à 16 ans, 21 ans en cas d'études, sans limite d'âge en cas d'affection incurable ; elle est de 20 %, portée à 30 % pour l'orphelin de père et de mère [@loi81-6, art. 64-65], et les pensions d'orphelins sont collectives [@loi81-6, art. 66]. Avec les notations du régime non agricole, $\theta_c = 50\,\%$ et $\theta_o = 20\,\%$ en 1981. Le total ne peut dépasser « la pension de référence du mari » [@loi81-6, art. 69], et une pension d'invalidité ne se cumule pas avec une pension de survivant [@loi81-6, art. 79].
+
+#### Pas de réforme du cœur du régime ; l'évolution des autres éléments {#sec-rsa-evolution}
+
+Aucun texte modifiant le cœur du régime n'a été retrouvé au *Journal officiel* de 1981 au 18 septembre 2026 : l'âge de 60 ans, le stage de 40 trimestres, le taux de 40 % et sa majoration de 0,5 % par trimestre, le plafond de 80 %, le salaire de référence forfaitaire et la revalorisation proportionnelle au SMAG sont ceux de la loi n° 81-6. Aucun texte instituant un départ anticipé ou une pension minimale n'a été retrouvé au *Journal officiel* jusqu'au numéro du 18 septembre 2026. Les visas des textes récents confirment ce recensement : l'arrêté conjoint du 10 juillet 2020 et l'édition arabe de celui du 5 août 2026 visent la loi n° 81-6 modifiée en dernier lieu par la loi n° 2007-43 [@arrete-2020-07-10-prime-pensions ; @arrete-2026-08-05-allocation-pauvres]. Quatre lois ont touché la procédure et les droits dérivés.
+
+| Élément | Loi n° 81-6 (1^er^ janvier 1981) | Modifications |
+|---|---|---|
+| Délai de présentation de la demande | un an | 10 décembre 1995 : cinq ans (loi n° 95-102, art. 74 al. 1) |
+| Bénéficiaire de la réversion | la veuve, et le veuf invalide ; mariage contracté antérieurement à l'ouverture du droit à pension | 4 août 1996 : le conjoint survivant ; liens de mariage existant au moment du décès (loi n° 96-66, art. 60 et 61) |
+| Remariage | suppression de la pension | 4 août 1996 : suspension seulement en cas de remariage avant 55 ans ; rétablissement, revalorisé, au décès du nouveau conjoint ou à la dissolution du mariage ; cumul de pensions de conjoint survivant interdit, la plus élevée étant servie (loi n° 96-66, art. 63) |
+| Plafond de cumul | pension de référence du mari | 4 août 1996 : pension dont bénéficiait ou aurait pu bénéficier le défunt (loi n° 96-66, art. 69) |
+| Âge limite de l'orphelin | orphelin mineur : 16 ans ; 21 ans en cas d'études ; sans limite en cas d'infirmité | 1^er^ mai 1997 : 16 ans ; 21 ans en études secondaires, techniques ou professionnelles ; 25 ans en études supérieures sans bourse ; la fille, tant qu'elle ne dispose pas de ressources ou que l'obligation alimentaire n'incombe pas à son époux ; sans limite en cas d'infirmité (loi n° 97-61, art. 64) ; 2 juillet 2007 : fille sans limite d'âge, conditions appréciées au décès, paiement définitivement suspendu si l'une d'elles fait défaut ; le mot « mineur » est supprimé (loi n° 2007-43) |
+| Revalorisation | à chaque paiement, proportionnellement à la variation du SMAG | aucune ; en 2026, le décret qui fixe le SMAG énonce que son augmentation s'applique aux pensions de retraite (décret n° 2026-66, art. 5) |
+
+: Évolution des autres éléments du régime des salariés agricoles, 1981-2026 {#tbl-rsa-evolution}
+
+Sources : @loi81-6, art. 60-69 et 74 ; @loi95-102 ; @loi96-66 ; @loi97-61, art. 1-2 ; @loi2007-43, art. 3-5 ; @decret2026-66, art. 5. Les lois n° 95-102 et 96-66 n'énoncent pas de date d'effet : les 10 décembre 1995 et 4 août 1996 sont les dates auxquelles elles deviennent exécutoires, cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis, les 5 décembre 1995 et 30 juillet 1996. La loi n° 97-61 prend effet au 1^er^ mai 1997 (art. 2). La loi n° 2007-43, sans clause d'effet, devient exécutoire le 2 juillet 2007, cinq jours après le dépôt du *Journal officiel* du 26 juin 2007, le 27 juin.
+
+<!-- Tableau tenu à la main, et non engendré : l'arbre des paramètres du régime des salariés
+agricoles n'a pas de branche « survivants ». TODO (rédacteur) : remplacer par un tableau engendré
+une fois ces valeurs versées. -->
+
+La loi n° 2007-43 précise enfin que les pensions d'orphelins interrompues avant son entrée en vigueur ne sont pas reprises [@loi2007-43, art. 5]. L'extension de 1997 aux orphelins en études supérieures et à la fille sans ressources prend effet le 1^er^ mai 1997, le même jour que dans le régime non agricole (@sec-rsna-derives). La revalorisation, inchangée, est réaffirmée en 2026 : le décret qui fixe le SMAG énonce, comme celui du SMIG, que son augmentation s'applique aux pensions de retraite [@decret2026-66, art. 5].
 
 <!-- TODO (documentaliste) : établir la série du SMAG journalier (1980-2028) sur le Journal
 officiel, pour donner la vue d'évolution de la revalorisation des pensions agricoles ; la série
 n'est aujourd'hui établie qu'en quelques points. -->
 
-### Le régime agricole amélioré
+<!-- TODO (rédacteur) : figure du taux d'équilibre du régime des salariés agricoles, sur le modèle
+de fig-rsna-taux-equilibre, quand la série par régime sera extraite des annuaires de la CNSS
+(annuaire 2013, 6e partie ; annuaire 2017, الباب السادس). L'assiette est forfaitaire : effectifs par
+catégorie × coefficient × SMAG × 300 jours ; vérifier sur l'art. 18 de la loi n° 81-6 si la
+cotisation est due sur les jours travaillés plutôt que sur 300 jours. -->
 
-Le titre III de la loi n° 81-6, issu de la **loi n° 89-73 du 2 septembre 1989** et entré en vigueur le **1^er^ octobre 1989** [@loi89-73, art. 4], s'applique aux coopérateurs salariés des sociétés et coopératives agricoles, à tous les salariés des exploitants employant au moins trente salariés permanents, ainsi qu'à certains pêcheurs et petits armateurs. Il renvoie aux règles des titres I et II « dans la mesure où il n'y est pas dérogé » (art. 101) [@loi89-73]. Il y déroge sur plusieurs maillons.
+### Le régime agricole amélioré {#sec-rsaa}
+
+Le titre III de la loi n° 81-6, issu de la **loi n° 89-73 du 2 septembre 1989** et entré en vigueur le **1^er^ octobre 1989** [@loi89-73, art. 4], s'applique aux coopérateurs salariés des sociétés et coopératives agricoles, à tous les salariés des exploitants employant au moins trente salariés permanents, ainsi qu'à certains pêcheurs et petits armateurs, que la même loi retire du régime des pêcheurs de 1977 (@sec-pecheurs) [@loi89-73, art. 3]. Il renvoie aux règles des titres I et II « dans la mesure où il n'y est pas dérogé » (art. 101) [@loi89-73]. Il y déroge sur plusieurs maillons.
+
+::: {.callout-note title="La formule de la pension du régime agricole amélioré"}
+Le régime amélioré calcule la pension sur les salaires déclarés, et non sur un forfait, et la borne par une limite de calcul et une pension minimale, comme le régime non agricole :
+
+$$
+P = \max\big(\min(\tau(n),\ \bar\tau)\cdot R,\ P_{\min}\big), \qquad R = \max_{T \in \mathcal{T}}\ \frac{1}{T}\sum_{j=1}^{T} \min(s_j,\ L), \qquad L = \ell\,S_A, \qquad P_{\min} = \pi\,S_A
+$$
+
+où $\tau(n)$ est le taux du régime des salariés agricoles, et $s_j$ le salaire de la $j$-ième des $T$ années précédant l'année d'ouverture du droit. La durée $n$ ne compte que les trimestres ayant donné lieu à la déclaration d'un salaire au moins égal à 50 fois le SMAG journalier. Au 1^er^ octobre 1989, en application des articles 93, 95 et 96 de la loi n° 81-6 [@loi89-73] :
+
+$$
+n_0 = 120, \qquad \tau_0 = 40\,\%, \qquad \alpha = 0{,}5\,\%, \qquad u = 3, \qquad \bar\tau = 80\,\%, \qquad \mathcal{T} = \{3,\ 5\}, \qquad \ell = 6, \qquad \pi = \tfrac{1}{2}
+$$
+
+L'âge, le stage et le taux sont ceux des titres I et II, par le renvoi de l'article 101. Aucun texte modifiant ces valeurs n'a été retrouvé au *Journal officiel* jusqu'au 18 septembre 2026.
+:::
+
+**La revalorisation** est automatique à chaque augmentation du SMAG, d'une majoration égale à la hausse du SMAG journalier rapportée à 25 jours par mois, affectée du taux de la pension, soit, en base annuelle :
+
+$$
+\Delta P = \tau_P\,\Delta S_A
+$$
+
+où $\Delta S_A$ est la hausse de $S_A$, 25 jours par mois faisant les 300 jours de l'année ; l'article 97 en règle aussi le calcul pour les veuves et les orphelins, et la majoration ne se cumule pas avec le relèvement au niveau de la pension minimale [@loi89-73]. C'est la règle en somme que le régime non agricole a appliquée de 1980 à 2000 (@sec-rsna-reforme-1981), et non la règle proportionnelle des titres I et II. Les périodes d'emploi agricole accomplies depuis le 1^er^ janvier 1981 peuvent être validées moyennant le versement des cotisations arriérées (art. 99).
 
 | Maillon | Régime des salariés agricoles : loi n° 81-6, titres I et II (1^er^ janvier 1981) | Régime amélioré : titre III, loi n° 89-73 (1^er^ octobre 1989) |
 |---|---|---|
 | Âge, stage, taux | 60 ans ; 40 trimestres ; 40 % + 0,5 % par trimestre, plafond 80 % | identiques par le renvoi de l'article 101 ; seuls comptent les trimestres ayant donné lieu à déclaration d'un salaire au moins égal à 50 fois le SMAG |
-| Salaire de référence | SMAG × 300 jours × coefficient de qualification, sur les 3 ou 5 dernières années | salaires des 3 ou 5 années précédant l'année d'ouverture du droit, la période la plus avantageuse étant retenue |
+| Salaire de référence | SMAG × 300 jours × coefficient multiplicateur moyen, sur les 3 ou 5 dernières années | salaires des 3 ou 5 années précédant l'année d'ouverture du droit, la période la plus avantageuse étant retenue |
 | Limite de calcul | sans objet (salaire forfaitaire) | 6 fois le SMAG rapporté à 300 jours |
-| Pension minimale | aucune dans les articles 45 à 88 de la loi | 1/2 du SMAG rapporté à 300 jours |
+| Pension minimale | aucune | 1/2 du SMAG rapporté à 300 jours |
 | Revalorisation | à chaque paiement, proportionnellement à la variation du SMAG | automatique à chaque augmentation du SMAG ; majoration égale à la hausse du SMAG journalier rapportée à 25 jours, affectée du taux de la pension ; non cumulable avec le relèvement au minimum |
-| Validation des périodes antérieures | aucune disposition dans les articles 45 à 88 | périodes d'emploi agricole accomplies depuis le 1^er^ janvier 1981, moyennant cotisations arriérées |
+| Validation des périodes antérieures | validation forfaitaire transitoire d'un trimestre par année entre 40 ans et l'âge de départ, dans la limite de 18 trimestres (art. 81) | périodes d'emploi agricole accomplies depuis le 1^er^ janvier 1981, moyennant cotisations arriérées |
 
 : Le régime des salariés agricoles et le régime amélioré, maillon par maillon {#tbl-rsa-rsaa}
 
-Sources : @loi81-6, art. 48-50 et 80 ; @loi89-73 (articles 86, 93 et 95 à 101 de la loi n° 81-6).
+Sources : @loi81-6, art. 48-50, 80 et 81 ; @loi89-73 (articles 86, 93 et 95 à 101 de la loi n° 81-6).
 
 Le régime amélioré se rapproche ainsi du régime non agricole : il retient des salaires et non un forfait, bornés par une limite de six fois le salaire minimum, et l'article 97 organise la revalorisation dans une rédaction très proche de celle de l'article 53 issu du décret n° 81-187.
 
+Pour les pêcheurs indépendants et les petits armateurs qui relèvent du régime amélioré, le salaire n'est pourtant pas déclaré : le décret n° 90-548 fixe leur assiette au SMAG de 75 jours par trimestre, et répartit leur taux de cotisation de 15 % en 7,5 % pour les pensions, 4,5 % pour les allocations familiales et 3 % pour les assurances sociales [@decret90-548, art. 1-2]. Par le calcul, leur salaire annuel vaut $S_A$ : leur pension repose sur un salaire forfaitaire.
+
+**Aucune réforme du cœur du régime.** Aucun modificatif du titre III n'a été retrouvé au *Journal officiel* jusqu'au 18 septembre 2026. Les lois n° 96-66 et 97-61, qui réécrivent les articles 60 à 69 de la loi n° 81-6 (@sec-rsa-evolution), s'appliquent au régime amélioré par le renvoi de l'article 101.
+
+<!-- TODO (rédacteur) : figure du taux d'équilibre du régime agricole amélioré, directement
+calculable : masse salariale déclarée et pensions servies, annuaires de la CNSS 2013 (7e partie,
+p. 101 et 112 imprimées) et 2017 (الباب السابع), 2000-2017. Séries en cours d'extraction. -->
+
 ## Le régime complémentaire {#sec-regime-complementaire}
 
-Le régime complémentaire de pension de vieillesse, d'invalidité et de survivants est organisé par un règlement publié par **arrêté du ministre des affaires sociales du 18 novembre 1978**, qui « entre en application à compter du 1^er^ janvier 1974 » [@arrete-1978-11-18-retraite-complementaire, art. 2] — la date d'effet du décret n° 74-499. Il est facultatif : ce sont les employeurs qui y adhèrent, par contrat auprès de la CAVIS [@arrete-1978-11-18-retraite-complementaire, règlement, art. 3-4].
+**Les origines.** Le [régime complémentaire](#g-regime-complementaire) de pension de vieillesse, d'invalidité et de survivants est organisé par un règlement publié par **arrêté du ministre des affaires sociales du 18 novembre 1978**, qui « entre en application à compter du 1^er^ janvier 1974 » [@arrete-1978-11-18-retraite-complementaire, art. 2] — la date d'effet du décret n° 74-499. Il est facultatif : ce sont les employeurs qui y adhèrent, par contrat auprès de la CAVIS [@arrete-1978-11-18-retraite-complementaire, règlement, art. 3-4], dont les régimes ont été transférés à la caisse nationale en 1994 (@sec-rsna).
 
-Son objet se définit par rapport au régime légal. Il permet « d'acquérir des droits sur la tranche de salaire dépassant la limite fixée par ce régime pour le calcul des prestations », et son assiette est « la fraction de salaire excédant la limite fixée par le régime légal pour le calcul des prestations » [@arrete-1978-11-18-retraite-complementaire, règlement, art. 1 et 6]. C'est un [salaire différentiel](#g-salaire-differentiel) : le régime complémentaire commence exactement où s'arrête la limite de six fois le SMIG décrite plus haut, et se déplace avec elle. Ses taux d'appel sont exposés dans le livre « Cotisations sociales ».
+### Le règlement de 1978 {#sec-complementaire-1978}
 
-**C'est un régime par points.** Chaque période de cotisation acquiert des points, égaux à la cotisation contractuelle — **18 %** du salaire de base — divisée par le salaire de référence de la période [@arrete-1978-11-18-retraite-complementaire, règlement, art. 10]. Une cotisation minimale, calculée sur la moitié du SMIG, évite qu'une baisse de salaire sous la limite du régime légal n'interrompe l'acquisition de points [@arrete-1978-11-18-retraite-complementaire, règlement, art. 14]. La pension est le nombre de points multiplié par la **valeur du point**, à la liquidation puis à chaque échéance [@arrete-1978-11-18-retraite-complementaire, règlement, art. 17]. Le droit s'ouvre aux conditions d'âge et de cessation d'activité du régime légal [@arrete-1978-11-18-retraite-complementaire, règlement, art. 15], et l'invalidité suit les conditions du décret n° 74-499, pour une pension calculée de la même façon [@arrete-1978-11-18-retraite-complementaire, règlement, art. 19-20].
+Son objet se définit par rapport au régime légal. Il permet « d'acquérir des droits sur la tranche de salaire dépassant la limite fixée par ce régime pour le calcul des prestations », et son assiette est « la fraction de salaire excédant la limite fixée par le régime légal pour le calcul des prestations » [@arrete-1978-11-18-retraite-complementaire, règlement, art. 1 et 6]. C'est un [salaire différentiel](#g-salaire-differentiel) : le régime complémentaire commence exactement où s'arrête la limite de six fois le SMIG décrite plus haut (@sec-rsna-calcul), et se déplace avec elle. Ses taux d'appel sont exposés dans le livre « Cotisations sociales ».
 
-**La revalorisation passe par la valeur du point.** Le salaire de référence est donné par le règlement pour les années antérieures à 1977, puis fixé chaque année par le directeur général de la CAVIS [@arrete-1978-11-18-retraite-complementaire, règlement, art. 11]. La valeur du point l'est au 1^er^ juillet de chaque année, « *en fonction de l'évolution du salaire de référence, de manière à maintenir, autant que faire se peut, une valeur stable au rendement du régime* », et sous une contrainte d'équilibre : tant que la réserve de prévoyance n'a pas atteint son niveau cible, la charge des pensions ne peut dépasser les trois quarts des ressources attendues [@arrete-1978-11-18-retraite-complementaire, règlement, art. 18]. Ces décisions ne paraissent pas au Journal officiel : le rendement du régime, rapport de la valeur du point au salaire de référence, ne peut donc pas être suivi ici dans le temps.
+::: {.callout-note title="La formule de la pension du régime complémentaire"}
+**C'est un régime par points.** Chaque période de cotisation acquiert des points, égaux à la cotisation contractuelle divisée par le salaire de référence de la période [@arrete-1978-11-18-retraite-complementaire, règlement, art. 10] ; la pension est le nombre de points multiplié par la **valeur du point**, à la liquidation puis à chaque échéance [@arrete-1978-11-18-retraite-complementaire, règlement, art. 17] :
 
-**Les survivants ont leurs taux propres.** Le conjoint survivant reçoit une pension de réversion de **50 %** de la pension du défunt, supprimée en cas de remariage [@arrete-1978-11-18-retraite-complementaire, règlement, art. 23-24]. Chaque orphelin reçoit **20 %**, porté à **30 %** pour l'orphelin de père et de mère ; ces pensions sont collectives et se réduisent à mesure que chaque orphelin cesse d'y avoir droit [@arrete-1978-11-18-retraite-complementaire, règlement, art. 26-27].
+$$
+P = \nu\,v, \qquad \nu = \sum_{t} \frac{\gamma\,b_t}{\rho_t}
+$$
+
+où $\nu$ est le nombre de points acquis, la somme portant sur les périodes de cotisation $t$, $\gamma$ le taux de la cotisation contractuelle, $b_t$ le salaire de base de la période au sens du règlement, $\rho_t$ le salaire de référence de la période et $v$ la valeur du point à l'échéance. Depuis le 1^er^ janvier 1974, $\gamma = 18\,\%$ [@arrete-1978-11-18-retraite-complementaire, règlement, art. 10]. Le rapport $v / \rho_t$ est le rendement du régime.
+:::
+
+Une cotisation minimale, calculée sur la moitié du SMIG, évite qu'une baisse de salaire sous la limite du régime légal n'interrompe l'acquisition de points [@arrete-1978-11-18-retraite-complementaire, règlement, art. 14]. Le droit s'ouvre aux conditions d'âge et de cessation d'activité du régime légal [@arrete-1978-11-18-retraite-complementaire, règlement, art. 15], et l'invalidité suit les conditions du décret n° 74-499, pour une pension calculée de la même façon [@arrete-1978-11-18-retraite-complementaire, règlement, art. 19-20].
+
+**La revalorisation passe par la valeur du point.** Le salaire de référence $\rho_t$ est donné par le règlement pour les années antérieures à 1977, puis fixé chaque année par le directeur général de la CAVIS [@arrete-1978-11-18-retraite-complementaire, règlement, art. 11]. La valeur du point $v$ l'est au 1^er^ juillet de chaque année, « *en fonction de l'évolution du salaire de référence, de manière à maintenir, autant que faire se peut, une valeur stable au rendement du régime* », et sous une contrainte d'équilibre : tant que la réserve de prévoyance n'a pas atteint son niveau cible, la charge des pensions ne peut dépasser les trois quarts des ressources attendues [@arrete-1978-11-18-retraite-complementaire, règlement, art. 18]. Ces décisions ne paraissent pas au Journal officiel : le rendement du régime ne peut donc pas être suivi ici dans le temps.
+
+**Les survivants ont leurs taux propres.** En 1978, le règlement ouvre une pension aux veuves et aux veufs [@arrete-1978-11-18-retraite-complementaire, règlement, art. 21] ; elle est de **50 %** de la pension du défunt, et le remariage de la veuve en entraîne la suppression [@arrete-1978-11-18-retraite-complementaire, règlement, art. 23-24]. Chaque orphelin reçoit **20 %**, porté à **30 %** pour l'orphelin de père et de mère ; ces pensions sont collectives et se réduisent à mesure que chaque orphelin cesse d'y avoir droit [@arrete-1978-11-18-retraite-complementaire, règlement, art. 26-27].
+
+### Pas de réforme de la formule ; les survivants en 1997 {#sec-complementaire-evolution}
+
+Aucun texte modifiant la formule du régime — l'acquisition des points, le salaire de référence, la valeur du point — n'a été retrouvé au *Journal officiel* : ces grandeurs relèvent de décisions du directeur général de la CAVIS, puis de la caisse nationale, qui n'y sont pas publiées. Le seul modificatif du règlement retrouvé est l'**arrêté du 27 janvier 1997**, qui abroge et remplace ses articles 21, 22, 24 et 30 [@arrete-1997-01-27-retraite-complementaire] :
+
+- le droit à pension de réversion est ouvert au « conjoint survivant » d'un pensionné ou d'un participant remplissant le stage (art. 21) ;
+- il est dû « lorsque les liens de mariage existent au moment du décès » (art. 22) ;
+- le remariage n'entraîne plus la suppression de la pension, mais sa suspension, et seulement s'il intervient avant 55 ans ; la pension est rétablie, revalorisée, et le cumul de pensions de conjoint survivant est interdit, la plus élevée étant servie (art. 24) ;
+- le total des pensions de survivants est plafonné à la pension dont bénéficiait ou aurait pu bénéficier le défunt (art. 30).
+
+L'arrêté ne porte pas de clause d'effet : le *Journal officiel* n° 11 du 7 février 1997 ayant été déposé au siège du gouvernorat de Tunis le 11 février, il devient exécutoire le 16 février 1997. Ses règles sont voisines de celles que le régime non agricole a reçues en 1990 et en 1997 (@sec-rsna-derives) et le régime agricole en 1996 (@sec-rsa-evolution).
 
 <!-- TODO (documentaliste) : rechercher la série du salaire de référence et de la valeur du point
 (rapports annuels de la CAVIS puis de la CNSS) et lire l'annexe I du règlement à l'image. -->
 
-## Les régimes des non-salariés et les régimes particuliers {#sec-regimes-particuliers}
+<!-- TODO (rédacteur) : pas de figure du taux d'équilibre du régime complémentaire tant que son
+assiette (salaire différentiel) n'est pas publiée ; les annuaires de la CNSS n'en donnent que les
+effectifs (annuaire 2013, 4e partie ; annuaire 2017, الباب الرابع). -->
 
-Quatre régimes ouvrent des droits à pension à des personnes qui ne relèvent ni du régime non agricole ni du régime agricole. Leurs règles de pension sont moins documentées que les précédentes ; cette section dit ce que les textes établissent, sans plus.
+## Les non-salariés et les régimes particuliers {#sec-regimes-particuliers}
 
-### Les travailleurs non salariés
+Six régimes ouvrent des droits à pension à des personnes qui ne relèvent ni du régime non agricole ni des régimes agricoles salariés. Ils sont présentés dans l'ordre de leur création : les pêcheurs, par extension du régime de 1974, en 1977 ; les travailleurs non salariés en 1982 ; les Tunisiens à l'étranger en 1989 ; les travailleurs à faibles revenus et les artistes, créateurs et intellectuels en 2002 ; les travailleuses agricoles en 2024. Chacun est exposé selon le plan des régimes précédents, plus brièvement : ses origines, le régime dans son état initial et sa formule, ses réformes s'il en a connu, l'évolution de ses autres éléments. Seul le régime des non-salariés a connu des réformes de son cœur.
 
-Le [régime des travailleurs non salariés](#g-rtns) est institué par le **décret n° 95-1166 du 3 juillet 1995** [@decret95-1166]. Il procède par extension : son article premier rend applicables aux non-salariés, outre des articles de la loi n° 60-30, les **articles 20 à 38, 46 à 52, 54 et 57 du décret n° 74-499** [@decret95-1166, art. 1]. Les règles de l'invalidité (art. 20 à 28), des survivants (art. 29 à 38) et de la liquidation (art. 46 à 52) sont donc celles du régime non agricole. Le renvoi ne vise pas, en revanche, les articles 14 à 19 (conditions et taux de la pension de vieillesse), 39 à 45 (pension proportionnelle et pension minimale) ni 53 (revalorisation).
+### Les pêcheurs : une extension du régime de 1974 {#sec-pecheurs}
+
+Le **décret n° 77-546 du 15 juin 1977**, qui organise la [sécurité sociale des pêcheurs](#g-securite-sociale-pecheurs), étend « l'ensemble des régimes de Sécurité Sociale découlant des lois […] N° 60-30 et 60-33 du 14 décembre 1960, et du décret […] N° 74-499 du 27 avril 1974 » aux pêcheurs, aux patrons pêcheurs même propriétaires de leur barque, aux armateurs travaillant sur un bateau de pêche dont ils assurent l'équipement, et aux petits armateurs [@decret77-546, art. 1]. Publié au *Journal officiel* du 21 juin 1977, il ne porte pas de clause d'effet et devient obligatoire le 23 juin 1977, un jour franc après sa publication.
+
+**Ce n'est pas un régime de pension distinct.** Le décret ne fixe ni âge, ni taux, ni pension minimale propres : la pension des pêcheurs est celle du régime des salariés non agricoles, dont elle suit la formule (@sec-rsna-calcul) et les réformes. Sa particularité est l'assiette. Pour les pêcheurs à la part embarqués sur des bateaux de moins de 30 tonneaux, les pêcheurs indépendants et les petits armateurs, les cotisations sont assises sur un [revenu forfaitaire](#g-revenu-forfaitaire) égal au SMIG mensuel affecté d'un coefficient qui dépend de la fonction à bord : 3 pour le patron de pêche ; 2 pour son second, le mécanicien et le ramandeur ; 1,5 pour le second mécanicien et le pêcheur spécialisé ; 1 pour le pêcheur et le petit armateur ; il est ajusté à chaque variation du SMIG [@decret77-546, art. 3]. Sur les bateaux de 30 tonneaux et plus, la cotisation porte sur le salaire réel [@decret77-546, art. 4], aux taux du régime général et du décret de 1974 [@decret77-546, art. 5]. Dans la formule de la pension, les salaires $s_j$ des pêcheurs de la première catégorie sont donc ces revenus forfaitaires, et leur pension dépend de la fonction exercée.
+
+**Les autres éléments ont évolué par trois textes.** Le décret n° 80-103 ajoute un article 11 bis, qui valide forfaitairement huit mois par année entre 45 ans et l'âge atteint à la publication, dans la limite de 102 mois, pour les assurés d'au moins 45 ans justifiant de 18 mois de cotisations au cours d'un nombre de premières années que l'édition française ne permet pas de lire [@decret80-103]. Le décret n° 82-1028 insère un article 3 bis qui, à titre transitoire, pendant deux ans à compter du premier jour du trimestre suivant sa promulgation, assied uniformément les cotisations sur les deux tiers du SMIG mensuel, et compte les cotisations par périodes de quinze jours pour l'ouverture des droits à pension [@decret82-1028]. La loi n° 89-73, enfin, retire du champ du décret les pêcheurs des bateaux de moins de 30 tonneaux, les pêcheurs indépendants et les petits armateurs, qui passent au régime agricole amélioré au 1^er^ octobre 1989 (@sec-rsaa) [@loi89-73, art. 3] ; depuis 2002, les pêcheurs des bateaux de cinq tonneaux au plus relèvent du régime des travailleurs à faibles revenus (@sec-rtfr) [@loi2002-32, art. 1]. Pour les autres, le décret de 1977 n'a pas été abrogé : l'arrêté conjoint du 10 juillet 2020 le vise encore, modifié en dernier lieu par le décret n° 82-1028 [@arrete-2020-07-10-prime-pensions].
+
+<!-- TODO (documentaliste) : lire sur l'édition arabe du JORT n° 6/1980 le nombre d'années
+illisible dans l'article 11 bis du décret n° 77-546 (décret n° 80-103). -->
+
+### Les travailleurs non salariés {#sec-rtns}
+
+**Les origines.** Le décret de 1974 prévoyait l'extension ultérieure du régime, par décret, aux travailleurs indépendants [@decret74-499, art. 4] (@sec-rsna-champ-1974). Elle intervient en 1982 : les non-salariés sont couverts depuis le **1^er^ juillet 1982** par deux décrets du 21 octobre 1982, l'un pour le secteur non agricole, l'autre pour le secteur agricole. Le décret n° 95-1166 du 3 juillet 1995 les fusionne en un seul [régime des travailleurs non salariés](#g-rtns), dont il conserve les affiliés et auquel il transfère les réserves, et les abroge [@decret95-1166, art. 34 à 39]. Le décret n° 94-1477 les nomme parmi les régimes gérés par la caisse nationale [@decret94-1477, art. 3]. Le régime est exposé dans son état de 1982 (@sec-rtns-1982), puis réforme par réforme (@sec-rtns-reformes) ; l'évolution de ses autres éléments vient ensuite (@sec-rtns-autres-elements).
+
+#### Les deux régimes de 1982 {#sec-rtns-1982}
+
+**Le secteur non agricole.** Le **décret n° 82-1359 du 21 octobre 1982**, publié au *Journal officiel* daté des 19 à 22 octobre 1982, « prend effet à compter du 1^er^ juillet 1982 » [@decret82-1359, art. 26]. Il couvre les artisans, les commerçants, les industriels, les médecins et pharmaciens non affiliés à un autre régime, et toute catégorie qui demande une adhésion collective [@decret82-1359, art. 1]. Il procède par extension : il rend applicables aux non-salariés des articles de la loi n° 60-30 et les articles 20 à 38, 46 à 52, 54 et 57 du décret n° 74-499 — invalidité, survivants, liquidation [@decret82-1359, art. 2]. Le régime est géré par la caisse nationale, qui en délègue les pensions à la CAVIS [@decret82-1359, art. 3]. Les cotisations sont assises sur six [classes de revenus](#g-classe-de-revenus) forfaitaires fixées en dinars — 660, 2 000, 4 000, 6 000, 8 500 et 15 000 dinars —, « révisé[es] en cas de hausse sensible du niveau de vie » [@decret82-1359, art. 7], au taux de 10,65 %, dont 5,25 % pour les pensions [@decret82-1359, art. 8].
+
+::: {.callout-note title="La formule de la pension des non-salariés non agricoles en 1982"}
+La pension de vieillesse reprend la forme de celle du régime non agricole, avec un taux de départ plus bas, un âge plus élevé et un revenu de référence forfaitaire :
+
+$$
+P = \max\big(\min(\tau(n),\ \bar\tau)\cdot R,\ P_{\min}\big), \qquad R = \bar F, \qquad P_{\min} = \pi\,S
+$$
+
+où $\tau(n)$ a la forme du régime non agricole (@sec-rsna-calcul) et $\bar F$ est « la moyenne pondérée des revenus forfaitaires auxquels l'assuré a cotisé au cours de l'ensemble de sa carrière » [@decret82-1359, art. 19]. Au 1^er^ juillet 1982 [@decret82-1359, art. 20 et 22] :
+
+$$
+n_0 = 120, \qquad \tau_0 = 30\,\%, \qquad \alpha = 0{,}5\,\%, \qquad u = 3, \qquad \bar\tau = 80\,\%, \qquad \pi = \tfrac{1}{2}
+$$
+
+L'âge est de **65 ans**. Le départ est possible dès **60 ans**, la pension étant alors « réduite de 0,5 % par trimestre restant à courir » jusqu'à 65 ans [@decret82-1359, art. 18] :
+
+$$
+P = (1 - \delta\,q)\cdot\min(\tau(n),\ \bar\tau)\cdot R
+$$
+
+où $q$ et $\delta$ sont ceux du régime non agricole (@sec-rsna-anticipes), l'âge normal étant ici de 65 ans, et $\delta = 0{,}5\,\%$. Comme pour le régime non agricole, l'articulation de la réduction avec la pension minimale n'est pas établie ici. Par le calcul, le taux atteint son plafond au terme de 100 trimestres au-delà du stage, soit 420 mois de cotisation.
+:::
+
+La pension d'invalidité est de 30 % du revenu de référence après 60 mois de cotisations, avec la même majoration au-delà de 120 mois et le même plafond [@decret82-1359, art. 21]. Le montant des pensions « sera révisé en cas de hausse sensible du niveau de vie », par décret [@decret82-1359, art. 23]. À titre transitoire, un trimestre par année écoulée entre 45 ans et l'âge de la retraite est validé forfaitairement, dans la limite de 18 trimestres ; lorsque le total ne dépasse pas 40 trimestres, la pension est servie au prorata, sans pension minimale [@decret82-1359, art. 24]. Les régimes conventionnels des non-salariés sont transférés à la CAVIS [@decret82-1359, art. 25].
+
+**Le secteur agricole.** Le **décret n° 82-1360 du 21 octobre 1982**, publié dans le même fascicule, étend la loi n° 81-6 « aux travailleurs indépendants, métayers et tous exploitants » du secteur agricole [@decret82-1360, art. 1], avec effet lui aussi au 1^er^ juillet 1982 [@decret82-1360, art. 18]. La cotisation trimestrielle est de 6,45 % d'un forfait égal au SMAG de 45 jours par trimestre, affecté d'un coefficient de 1, 1,5 ou 2 au choix de l'assuré, dont 5,25 % pour les pensions [@decret82-1360, art. 5]. L'âge est de **65 ans**, et le salaire de référence est le SMAG rapporté à 300 jours, affecté de la moyenne des coefficients de toute la carrière [@decret82-1360, art. 8] :
+
+$$
+P = \min(\tau(n),\ \bar\tau)\cdot \bar c\,S_A
+$$
+
+où $\bar c$ est ici la moyenne des coefficients de la carrière. Le décret ne fixe pas lui-même le taux : par le renvoi à la loi n° 81-6 [@decret82-1360, art. 1 et 7], le taux de 40 % au terme du stage, sa majoration de 0,5 % par trimestre, le plafond de 80 %, l'absence de pension minimale et la revalorisation sur le SMAG sont, sauf dérogation, ceux du régime des salariés agricoles (@sec-rsa-loi-1981) — le décret ne les énonce pas en toutes lettres. Une réserve initiale de 35 millions de dinars est constituée [@decret82-1360, art. 12] ; les dispositions transitoires sont celles du secteur non agricole [@decret82-1360, art. 16], et une allocation de vieillesse est ouverte dès 10 trimestres [@decret82-1360, art. 17].
+
+#### Les réformes du cœur du régime {#sec-rtns-reformes}
+
+Trois textes ont touché le cœur du régime : le décret n° 89-1611 en 1989, pour le seul secteur non agricole ; le décret n° 95-1166 en 1995, qui fusionne les deux régimes ; le décret n° 2002-3018 en 2002, pour la revalorisation. Le tableau suivant en donne la vue d'ensemble.
+
+| Élément | 1982 : décrets n° 82-1359 (non agricole) et 82-1360 (agricole) | 1989 : décret n° 89-1611 (non agricole) | 1995 : décret n° 95-1166 | 2002 : décret n° 2002-3018 |
+|---|---|---|---|---|
+| Âge | non agricole : 65 ans, dès 60 ans avec réduction de 0,5 % par trimestre ; agricole : 65 ans | inchangé | 65 ans, dès 60 ans avec réduction de 0,5 % par trimestre, pour les deux secteurs (art. 24) | inchangé |
+| Stage | non agricole : 120 mois ; agricole : 40 trimestres | inchangé | 40 trimestres de cotisations effectives (art. 23) | inchangé |
+| Taux | non agricole : 30 % + 0,5 % par période de 3 mois, plafond 80 % ; agricole : 40 % + 0,5 % par trimestre, plafond 80 %, par renvoi à la loi n° 81-6 | inchangé | 30 % + 0,5 % par trimestre, plafond 80 %, pour les deux secteurs (art. 26) | inchangé |
+| Assiette et revenu de référence | non agricole : six classes en dinars ; moyenne pondérée des revenus forfaitaires de la carrière ; agricole : SMAG × 300 jours × moyenne des coefficients de carrière (1, 1,5 ou 2) | neuf classes, de 2/3 à 15 fois le SMIG ; moyenne pondérée des coefficients rapportée au SMIG en vigueur à la liquidation | dix classes, de 1 à 18 fois le SMIG ou le SMAG ; salaire minimum en vigueur à l'ouverture du droit (art. 7 et 25) | inchangé |
+| Pension minimale | non agricole : 1/2 du SMIG × 2 400 heures ; agricole : aucune | inchangé | 30 % du SMIG × 2 400 heures ou du SMAG × 300 jours (art. 29) | inchangé |
+| Carrière inférieure au stage | pension au prorata en période transitoire ; agricole : allocation de vieillesse dès 10 trimestres | inchangé | versement unique égal aux cotisations (art. 28) | inchangé |
+| Revalorisation | non agricole : révision par décret en cas de hausse sensible du niveau de vie ; agricole : sur le SMAG, par renvoi à la loi n° 81-6 | révision par arrêté en cas de majoration du SMIG | révision par arrêté en cas de majoration du SMIG ou du SMAG (art. 30) | automatique, au taux de variation du SMIG ou du SMAG |
+
+: Le cœur du régime des travailleurs non salariés, de 1982 à septembre 2026 {#tbl-rtns-coeur}
+
+Sources : @decret82-1359, art. 7, 18-24 ; @decret82-1360, art. 1, 5, 7-8 et 17 ; @decret89-1611 ; @decret95-1166, art. 7, 23-30 ; @decret-2002-3018, art. 1.
+
+<!-- Tableau tenu à la main, et non engendré : aucune branche des paramètres de retraite ne porte
+le régime des non-salariés. TODO (rédacteur) : remplacer par un tableau engendré une fois ses
+valeurs datées et sourcées de 1982 à 2002. -->
+
+##### 1989 : les classes en multiples du SMIG {#sec-rtns-reforme-1989}
+
+Le **décret n° 89-1611 du 10 octobre 1989**, publié au *Journal officiel* du 20 octobre 1989, réécrit les articles 1^er^, 4, 7, 17, 19, 23 et 24 du décret n° 82-1359 [@decret89-1611]. Il n'énonce pas de date d'effet : il devient obligatoire le 22 octobre 1989, un jour franc après sa publication ; le décret n° 93-357, qui proroge d'un an « à compter du 22 octobre 1992 » le délai de validation de trois ans ouvert par l'article 24, retient le même point de départ [@decret93-357, art. 1]. Il ne touche que le secteur non agricole, sur trois points.
+
+**Les classes.** Le champ s'étend aux membres des professions libérales et à toute autre catégorie de travailleurs indépendants non affiliés. Les six classes en dinars font place à neuf classes exprimées en multiples du SMIG du régime de 48 heures rapporté à 2 400 heures par an : 2/3, 1, 1,5, 2, 4, 6, 9, 12 et 15 [@decret89-1611]. Les cotisations versées de 1982 à 1988 sont converties en coefficients du SMIG — 0,672 pour la première classe de 1982.
+
+**Le revenu de référence.** Il devient la moyenne pondérée des coefficients des classes de l'assuré, « rapportée à la valeur du SMIG […] en vigueur au moment de la liquidation » [@decret89-1611] :
+
+$$
+R = \bar c\,S
+$$
+
+où $\bar c$ est ici la moyenne pondérée des coefficients des classes de la carrière. Le revenu de référence suit désormais le SMIG jusqu'à la liquidation, quand celui de 1982 restait fixé en dinars.
+
+**La revalorisation.** Le montant des pensions en cours est « révisé en cas de majoration du SMIG », la date et les modalités de la révision étant « fixées par arrêté du ministre des affaires sociales » [@decret89-1611].
+
+Le décret ouvre enfin la validation des services antérieurs, dans les trois ans, contre une cotisation de 13 % à 20 % selon l'âge [@decret89-1611].
+
+##### 1995 : la fusion des deux régimes {#sec-rtns-reforme-1995}
+
+Le **décret n° 95-1166 du 3 juillet 1995** [@decret95-1166], publié au *Journal officiel* du 11 juillet 1995, n'énonce pas de date d'effet ; le fascicule ayant été déposé au siège du gouvernorat de Tunis le 14 juillet, il devient exécutoire le 19 juillet 1995. Il procède, comme les décrets de 1982, par extension : son article premier rend applicables aux non-salariés, outre des articles de la loi n° 60-30, les **articles 20 à 38, 46 à 52, 54 et 57 du décret n° 74-499** [@decret95-1166, art. 1]. Les règles de l'invalidité (art. 20 à 28), des survivants (art. 29 à 38) et de la liquidation (art. 46 à 52) sont donc celles du régime non agricole. Le renvoi ne vise pas, en revanche, les articles 14 à 19 (conditions et taux de la pension de vieillesse), 39 à 45 (pension proportionnelle et pension minimale) ni 53 (revalorisation) : le décret fixe lui-même ces règles, les mêmes pour les deux secteurs.
+
+::: {.callout-note title="La formule de la pension des non-salariés depuis 1995"}
+$$
+P = \max\big(\min(\tau(n),\ \bar\tau)\cdot R,\ P_{\min}\big), \qquad R = \bar c\,S_s, \qquad P_{\min} = \pi\,S_s
+$$
+
+où $S_s$ est le salaire minimum annuel du secteur de l'assuré — $S$, le SMIG du régime de 48 heures rapporté à 2 400 heures, pour le secteur non agricole, $S_A$, le SMAG rapporté à 300 jours, pour le secteur agricole —, dans sa valeur en vigueur à l'ouverture du droit, et $\bar c$ la moyenne pondérée des coefficients multiplicateurs des classes auxquelles l'assuré a adhéré [@decret95-1166, art. 25]. La durée $n$ ne compte que les cotisations effectives. Depuis le 19 juillet 1995 [@decret95-1166, art. 23, 26 et 29] :
+
+$$
+n_0 = 120, \qquad \tau_0 = 30\,\%, \qquad \alpha = 0{,}5\,\%, \qquad u = 3, \qquad \bar\tau = 80\,\%, \qquad \pi = 30\,\%
+$$
+
+Le départ reste possible dès 60 ans, avec la réduction $\delta = 0{,}5\,\%$ par trimestre restant à courir jusqu'à 65 ans [@decret95-1166, art. 24].
+:::
 
 **L'ouverture du droit tient à deux conditions, l'une de durée, l'autre d'âge.** Le stage est de **quarante trimestres de cotisations effectives** [@decret95-1166, art. 23]. L'âge est fixé à **65 ans**, avec une faculté de départ dès **60 ans** : la pension est alors réduite de 0,5 % par trimestre restant à courir jusqu'à 65 ans [@decret95-1166, art. 24]. Une période de cotisation inférieure au stage n'ouvre pas de pension mais un **versement unique**, égal aux cotisations réglées, qui revient au conjoint et aux enfants mineurs en cas de décès [@decret95-1166, art. 28].
 
-**Le calcul ne part pas d'un salaire mais d'une classe.** Le revenu de référence est la moyenne pondérée des coefficients multiplicateurs des classes auxquelles l'assuré a adhéré, rapportée au [SMIG](#g-smig) du régime de 48 heures pour 2 400 heures par an, ou au SMAG pour 300 jours par an, dans la valeur en vigueur à l'ouverture du droit [@decret95-1166, art. 25]. Le taux est de **30 %** de ce revenu lorsque les quarante trimestres sont réunis, majoré de **0,5 % par trimestre supplémentaire**, sans que le total puisse excéder **80 %** [@decret95-1166, art. 26].
+**Le calcul ne part pas d'un salaire mais d'une classe.** Le revenu de référence est la moyenne pondérée des coefficients multiplicateurs des classes auxquelles l'assuré a adhéré — dix classes, de 1 à 18 fois le salaire minimum [@decret95-1166, art. 7] —, rapportée au [SMIG](#g-smig) du régime de 48 heures pour 2 400 heures par an, ou au SMAG pour 300 jours par an, dans la valeur en vigueur à l'ouverture du droit [@decret95-1166, art. 25]. Le taux est de **30 %** de ce revenu lorsque les quarante trimestres sont réunis, majoré de **0,5 % par trimestre supplémentaire**, sans que le total puisse excéder **80 %** [@decret95-1166, art. 26]. À la date d'ouverture du droit, la pension annuelle ne peut être inférieure à 30 % du SMIG rapporté à 2 400 heures, ou à 30 % du SMAG rapporté à 300 jours, selon le secteur d'activité [@decret95-1166, art. 29].
 
-**Un plancher borne le résultat par le bas.** À la date d'ouverture du droit, la pension annuelle ne peut être inférieure à 30 % du SMIG rapporté à 2 400 heures, ou à 30 % du SMAG rapporté à 300 jours, selon le secteur d'activité [@decret95-1166, art. 29]. Ce plancher est la seule indexation qu'ait connue le régime avant 2002 : étant exprimé en pourcentage du salaire minimum, il monte avec lui, et relève mécaniquement les pensions qui s'y trouvent posées.
+**Ce que la fusion change dépend du secteur.**
 
-**La revalorisation a changé de nature en 2002, et c'est le seul mouvement de fond de ce régime.** Dans la rédaction de 1995, l'article 30 disposait que le montant des pensions en cours « *sera révisé* » en cas de majoration du SMIG ou du SMAG, mais renvoyait la date et les modalités de cette révision à un arrêté du ministre des affaires sociales : la revalorisation était donc suspendue à un texte d'application. L'article premier du décret n° 2002-3018 abroge cette rédaction et la remplace. La pension est désormais **revalorisée automatiquement** à chaque augmentation du salaire minimum, proportionnellement au taux de variation du SMIG rapporté à 200 heures par mois ou du SMAG rapporté à 25 jours par mois, la majoration s'appliquant au montant de la pension antérieur à l'augmentation ; elle est elle-même soumise à cotisation, aux taux de l'article 9 [@decret-2002-3018, art. 1]. Le texte ne porte aucune clause d'effet.
+- **Pour le secteur non agricole**, l'âge, le taux de 30 %, sa majoration et le plafond de 80 % sont ceux de 1982, et le revenu de référence en multiples du SMIG celui de 1989. La fusion porte la pension minimale de la moitié du SMIG à 30 %, étend les classes jusqu'à 18 fois le SMIG et prévoit, en deçà du stage, un versement unique des cotisations.
+- **Pour le secteur agricole, 1995 est une réforme du cœur du régime.** Le taux au terme du stage passe de 40 % à 30 % ; une pension minimale est créée, là où il n'y en avait pas ; le départ devient possible dès 60 ans, avec réduction, là où l'âge était de 65 ans seulement ; les coefficients de 1, 1,5 ou 2 font place aux classes de 1 à 18 fois le SMAG.
 
-**Les cinq textes qui ont modifié le décret de 1995 n'ont touché ni l'âge, ni le stage, ni le taux.** Le décret n° 96-1797 échelonne, à titre transitoire, la durée de travail de référence du secteur agricole — 180 jours par an jusqu'à la fin de 1996, 260 en 1997, 300 à compter du 1^er^ décembre 1998 [@decret-96-1797, art. 1]. Le décret n° 96-2145 dispense de la taxation d'office ceux qui demandent volontairement leur affiliation avant le 30 juin 1997 [@decret-96-2145, art. 1]. Le décret n° 2002-3018, outre la réécriture de l'article 30, étend le champ du régime aux métayers, aux masseurs de bain, aux artisans titulaires d'une carte professionnelle ou d'un certificat d'aptitude et aux chauffeurs de véhicules de transport public de personnes n'exerçant pas pour le compte d'une personne morale [@decret-2002-3018, art. 1]. Les décrets n° 2004-167 et n° 2008-172 ne portent que sur le report du paiement des cotisations des nouveaux promoteurs, d'un an d'abord, de deux ans ensuite [@decret-2004-167, art. 1; @decret-2008-172, art. 1]. **Les paramètres de la pension de vieillesse sont donc ceux de 1995, inchangés depuis trente ans.**
+Les dispositions finales organisent la transition. Les affiliés des régimes de 1982 conservent leur affiliation, les réserves des deux régimes sont transférées et leurs droits transitoires préservés ; les cotisations non agricoles antérieures à 1990 sont converties en coefficients du SMIG selon un tableau, et les trois catégories agricoles en coefficients de 1,333, 2 et 2,666 pour les dix premières années, de 1, 1,5 et 2 au-delà [@decret95-1166, art. 34 à 38]. Par le calcul, les coefficients des dix premières années valent les quatre tiers de ceux de 1982, et quatre tiers est le rapport de l'ancien taux de 40 % au nouveau de 30 % ; le décret n'énonce pas de lien entre les deux. L'article 39 abroge les décrets n° 82-1359 et 82-1360 [@decret95-1166, art. 39].
 
-Les pensions de ce régime ont été revalorisées une fois par un texte propre. L'arrêté du ministre des affaires sociales du 29 juillet 1998, pris sur le fondement de l'article 30 du décret n° 95-1166, leur applique, avec effet au 1^er^ mai 1998, un coefficient multiplicateur qui dépend de l'année d'ouverture du droit : pour le secteur non agricole, de 2,33600 pour une pension ouverte en 1984 à 1,07551 pour une pension ouverte en 1996, 1,03684 en 1997 et 1 en 1998 ; pour le secteur agricole, 1,07551 jusqu'en 1996, puis 1,03684 et 1. Son article 2 interdit de cumuler ce coefficient avec les augmentations qui découlent de l'article 29, et ne l'accorde que si son « *rendement financier est meilleur pour l'allocataire* » [@arrete-1998-07-29-revalorisation-rtns, art. 1 à 3]. La règle de non-cumul confirme le mécanisme : les deux voies mènent au même endroit, l'une par le plancher, l'autre par le barème, et l'assuré reçoit la plus favorable. C'est un rattrapage ponctuel, non une indexation. Aucun texte de revalorisation propre à ce régime n'a été retrouvé après 1998, et la réécriture de 2002 en donne la raison : la revalorisation étant devenue automatique et générale, elle n'appelle plus ni arrêté ni règle de non-cumul.
+**La pension minimale et l'indexation.** Exprimé en pourcentage du salaire minimum, le plancher de l'article 29 monte avec lui et relève les pensions qui s'y trouvent posées. Il n'est pas la seule voie d'indexation : le revenu de référence est un multiple du salaire minimum depuis 1982 dans le secteur agricole, et depuis 1989 dans le secteur non agricole, où il suit le SMIG jusqu'à la liquidation ; et, depuis 1989 dans le secteur non agricole, la pension en cours est révisable par arrêté à chaque majoration du SMIG [@decret89-1611 ; @decret95-1166, art. 30].
 
-### Les Tunisiens à l'étranger
+##### 2002 : la revalorisation automatique {#sec-rtns-reforme-2002}
 
-Le [régime des travailleurs tunisiens à l'étranger](#g-rtte), institué par le **décret n° 89-107 du 10 janvier 1989** [@decret89-107], suit la même technique : il étend aux travailleurs tunisiens à l'étranger, salariés ou non, qui ne sont pas couverts par une convention bilatérale, les mêmes articles 20 à 38, 46 à 52, 54 et 57 du décret n° 74-499 [@decret89-107, art. 1]. L'adhésion est volontaire, mais elle couvre obligatoirement les pensions en même temps que les assurances sociales [@decret89-107, art. 3], et la gestion du régime de pensions est déléguée à la CAVIS [@decret89-107, art. 2]. Le décret ne porte pas de clause d'entrée en vigueur : publié le 17 janvier 1989, il devient exécutoire le 19.
+Dans la rédaction de 1995, l'article 30 disposait que le montant des pensions en cours « *sera révisé* » en cas de majoration du SMIG ou du SMAG, mais renvoyait la date et les modalités de cette révision à un arrêté du ministre des affaires sociales : la revalorisation était donc suspendue à un texte d'application. L'article premier du **décret n° 2002-3018**, publié le 29 novembre 2002, abroge cette rédaction et la remplace. La pension est désormais **revalorisée automatiquement** à chaque augmentation du salaire minimum, proportionnellement au taux de variation du SMIG rapporté à 200 heures par mois ou du SMAG rapporté à 25 jours par mois, la majoration s'appliquant au montant de la pension antérieur à l'augmentation ; elle est elle-même soumise à cotisation, aux taux de l'article 9 [@decret-2002-3018, art. 1]. Avec les notations du régime non agricole (@sec-rsna-reforme-2001) :
 
-**La pension de vieillesse a ses règles propres, que le renvoi ne couvre pas**, et ce sont celles que le régime des non-salariés reprendra six ans plus tard. L'âge est fixé à **65 ans**, avec une faculté de départ dès **60 ans**, la pension étant alors réduite de 0,5 % par trimestre restant à courir jusqu'à 65 ans [@decret89-107, art. 18]. Le taux est de **30 %** du revenu de référence après **120 mois** de cotisations, majoré de 0,5 % par trimestre supplémentaire, dans la limite de **80 %** [@decret89-107, art. 20]. La pension d'invalidité est de 30 % du même revenu, après 60 mois de cotisations, avec la même majoration et le même plafond [@decret89-107, art. 21].
+$$
+\Delta P = \frac{\Delta S_s}{S_s}\,P
+$$
 
-**Le calcul part, ici aussi, d'une classe.** L'assuré choisit l'une de **quatre classes**, de coefficient **2, 4, 6 et 9** du [SMIG](#g-smig) du régime de 48 heures rapporté à 2 400 heures par an [@decret89-107, art. 6]. Le revenu de référence est la moyenne pondérée des coefficients des classes auxquelles il a adhéré, appliquée au SMIG en vigueur à l'ouverture du droit [@decret89-107, art. 19]. La cotisation est de 10,65 % du revenu forfaitaire de la classe, dont 5,25 % pour les pensions, et elle est à la charge du travailleur, que son employeur peut prendre en charge en tout ou partie [@decret89-107, art. 7-8].
+où $\Delta S_s$ est la hausse du salaire minimum du secteur. C'est la règle que le régime non agricole applique depuis le 1^er^ janvier 2001. Le texte ne porte aucune clause d'effet, et la date à laquelle il devient exécutoire n'est pas établie ici.
 
-**Le plancher est la moitié du SMIG annuel** — plus haut que celui des non-salariés, fixé à 30 % [@decret89-107, art. 22]. La revalorisation n'est pas automatique : le montant des pensions en cours « *sera révisé en cas de hausse sensible du niveau de vie* », la date et les modalités de cette révision étant renvoyées à un décret [@decret89-107, art. 23].
+<!-- TODO (documentaliste) : relever la date de dépôt du JORT du 29 novembre 2002 au siège du
+gouvernorat de Tunis (mention imprimée en dernière page du fascicule), pour dater l'entrée en
+vigueur du décret n° 2002-3018. -->
+
+#### L'évolution des autres éléments {#sec-rtns-autres-elements}
+
+**Les pensions ont été revalorisées une fois par un texte propre.** L'arrêté du ministre des affaires sociales du 29 juillet 1998, pris sur le fondement de l'article 30 du décret n° 95-1166, leur applique, avec effet au 1^er^ mai 1998, un coefficient multiplicateur qui dépend de l'année d'ouverture du droit : pour le secteur non agricole, de 2,33600 pour une pension ouverte en 1984 à 1,07551 pour une pension ouverte en 1996, 1,03684 en 1997 et 1 en 1998 ; pour le secteur agricole, 1,07551 jusqu'en 1996, puis 1,03684 et 1. Son article 2 interdit de cumuler ce coefficient avec les augmentations qui découlent de l'article 29, et ne l'accorde que si son « *rendement financier est meilleur pour l'allocataire* » [@arrete-1998-07-29-revalorisation-rtns, art. 1 à 3]. Les coefficients commencent en 1984 : ils s'appliquent à des pensions ouvertes sous les décrets de 1982. La règle de non-cumul confirme le mécanisme : les deux voies mènent au même endroit, l'une par le plancher, l'autre par le barème, et l'assuré reçoit la plus favorable. C'est un rattrapage ponctuel, non une indexation. Aucun autre arrêté de revalorisation propre à ce régime n'a été retrouvé, ni entre 1989 et 1998 ni après 1998 ; depuis 2002, la revalorisation étant devenue automatique, elle n'appelle plus ni arrêté ni règle de non-cumul.
+
+**Les autres textes modificatifs n'ont touché ni l'âge, ni le stage, ni le taux.** Le décret n° 96-1797 échelonne, à titre transitoire, la durée de travail de référence du secteur agricole — 180 jours par an jusqu'à la fin de 1996, 260 en 1997, 300 à compter du 1^er^ décembre 1998 [@decret-96-1797, art. 1]. Le décret n° 96-2145 dispense de la taxation d'office ceux qui demandent volontairement leur affiliation avant le 30 juin 1997 [@decret-96-2145, art. 1]. Le décret n° 2002-3018, outre la réécriture de l'article 30, étend le champ du régime aux métayers, aux masseurs de bain, aux artisans titulaires d'une carte professionnelle ou d'un certificat d'aptitude et aux chauffeurs de véhicules de transport public de personnes n'exerçant pas pour le compte d'une personne morale [@decret-2002-3018, art. 1]. Les décrets n° 2004-167 et n° 2008-172 ne portent que sur le report du paiement des cotisations des nouveaux promoteurs, d'un an d'abord, de deux ans ensuite [@decret-2004-167, art. 1; @decret-2008-172, art. 1]. Depuis 2020, l'auto-entrepreneur peut adhérer au régime, moyennant une cotisation de 11 % du SMAG ou du SMIG, 4 % pour les retraités, une classe supérieure restant possible [@decretloi2020-33, art. 7].
+
+**Depuis 2008.** Aucun texte modifiant le décret n° 95-1166 après le décret n° 2008-172 n'a été retrouvé au *Journal officiel* jusqu'au numéro du 18 septembre 2026 ; les visas des arrêtés conjoints du 10 juillet 2020, du 29 août 2025 et du 5 août 2026 le citent encore comme son dernier modificatif [@arrete-2020-07-10-prime-pensions ; @arrete-2025-08-29-allocation-pauvres ; @arrete-2026-08-05-allocation-pauvres]. L'âge, le taux et le plafond de la pension de vieillesse sont donc, pour le secteur non agricole, ceux de 1982, et, pour le secteur agricole, ceux de 1995 ; les classes de 1 à 18 et la pension minimale de 30 % datent de 1995, et la revalorisation automatique de 2002.
+
+<!-- TODO (rédacteur) : figure du taux d'équilibre du régime des travailleurs non salariés, volets
+non agricole et agricole, quand la série par régime sera extraite des annuaires de la CNSS
+(annuaire 2013, 8e à 10e parties : classes de revenus et pensions ; annuaire 2017, الباب الثامن à
+العاشر). L'assiette se reconstruit : effectifs par classe × coefficient × SMIG ou SMAG annuel ;
+arbitrage à documenter entre classe moyenne annuelle et classe de fin d'année. -->
+
+### Les Tunisiens à l'étranger {#sec-rtte}
+
+**Les origines.** Le [régime des travailleurs tunisiens à l'étranger](#g-rtte), institué par le **décret n° 89-107 du 10 janvier 1989** [@decret89-107], suit la technique des régimes des non-salariés : il étend aux travailleurs tunisiens à l'étranger, salariés ou non, qui ne sont pas couverts par une convention bilatérale, les mêmes articles 20 à 38, 46 à 52, 54 et 57 du décret n° 74-499 [@decret89-107, art. 1]. L'adhésion est volontaire, mais elle couvre obligatoirement les pensions en même temps que les assurances sociales [@decret89-107, art. 3], et la gestion du régime de pensions est déléguée à la CAVIS [@decret89-107, art. 2]. Le décret ne porte pas de clause d'entrée en vigueur : publié le 17 janvier 1989, il devient obligatoire le 19, un jour franc après sa publication.
+
+**La pension de vieillesse a ses règles propres, que le renvoi ne couvre pas**, et ce sont celles du décret n° 82-1359 des non-salariés non agricoles (@sec-rtns-1982). L'âge est fixé à **65 ans**, avec une faculté de départ dès **60 ans**, la pension étant alors réduite de 0,5 % par trimestre restant à courir jusqu'à 65 ans [@decret89-107, art. 18]. Le taux est de **30 %** du revenu de référence après **120 mois** de cotisations, majoré de 0,5 % par trimestre supplémentaire, dans la limite de **80 %** [@decret89-107, art. 20]. La pension d'invalidité est de 30 % du même revenu, après 60 mois de cotisations, avec la même majoration et le même plafond [@decret89-107, art. 21]. Le plancher et la révision sont aussi ceux de 1982. Seule l'assiette est nouvelle : les classes exprimées en multiples du SMIG et appliquées au SMIG de l'ouverture du droit précèdent de neuf mois la réforme que le décret n° 89-1611 donne aux non-salariés non agricoles (@sec-rtns-reforme-1989).
+
+::: {.callout-note title="La formule de la pension des Tunisiens à l'étranger"}
+$$
+P = \max\big(\min(\tau(n),\ \bar\tau)\cdot R,\ P_{\min}\big), \qquad R = \bar c\,S, \qquad P_{\min} = \pi\,S
+$$
+
+où $\bar c$ est la moyenne pondérée des coefficients des classes auxquelles l'assuré a adhéré, et $S$ le SMIG du régime de 48 heures rapporté à 2 400 heures par an, en vigueur à l'ouverture du droit [@decret89-107, art. 6 et 19]. Depuis le 19 janvier 1989 [@decret89-107, art. 20 et 22] :
+
+$$
+n_0 = 120, \qquad \tau_0 = 30\,\%, \qquad \alpha = 0{,}5\,\%, \qquad u = 3, \qquad \bar\tau = 80\,\%, \qquad \pi = \tfrac{1}{2}
+$$
+
+Le départ entre 60 et 65 ans est réduit de $\delta = 0{,}5\,\%$ par trimestre restant à courir jusqu'à 65 ans [@decret89-107, art. 18].
+:::
+
+**Le calcul part d'une classe.** L'assuré choisit l'une de **quatre classes**, de coefficient **2, 4, 6 et 9** du [SMIG](#g-smig) du régime de 48 heures rapporté à 2 400 heures par an [@decret89-107, art. 6]. Le revenu de référence est la moyenne pondérée des coefficients des classes auxquelles il a adhéré, appliquée au SMIG en vigueur à l'ouverture du droit [@decret89-107, art. 19]. La cotisation est de 10,65 % du revenu forfaitaire de la classe, dont 5,25 % pour les pensions, et elle est à la charge du travailleur, que son employeur peut prendre en charge en tout ou partie [@decret89-107, art. 7-8].
+
+**Le plancher est la moitié du SMIG annuel** — plus haut que celui des non-salariés, ramené à 30 % en 1995 [@decret89-107, art. 22]. La revalorisation n'est pas automatique : le montant des pensions en cours « *sera révisé en cas de hausse sensible du niveau de vie* », la date et les modalités de cette révision étant renvoyées à un décret [@decret89-107, art. 23].
 
 **Les périodes d'emploi à l'étranger antérieures au régime peuvent être validées**, si aucun autre régime ne les a couvertes, moyennant le versement des cotisations correspondantes au taux global de l'article 7 ; la demande devait être présentée dans les deux ans suivant l'entrée en vigueur du décret [@decret89-107, art. 24]. Une fois validées, les périodes accomplies à l'étranger comptent comme des périodes accomplies en Tunisie [@decret89-107, art. 17].
 
-<!-- TODO (documentaliste) : verser la clé du décret n° 91-604 du 30 avril 1991 (JORT n° 31/1991),
-qui proroge d'un an, à compter du 10 janvier 1991, le délai de validation de l'article 24, et
-rechercher les décrets de révision prévus à l'article 23 du décret n° 89-107. -->
+**Aucune réforme depuis 1989.** Le seul modificatif retrouvé, le décret n° 91-604 du 30 avril 1991, proroge d'un an, « à compter du 10 janvier 1991 », le délai de validation de l'article 24 [@decret91-604, art. 1] : le point de départ retenu est donc la date de signature du décret de 1989, deux ans plus tôt. Les visas de l'arrêté conjoint du 10 juillet 2020 citent le décret n° 89-107 « tel que modifié et complété par le décret n° 91-604 » [@arrete-2020-07-10-prime-pensions]. Aucun décret de révision pris en application de l'article 23 n'a été retrouvé au *Journal officiel* jusqu'au 18 septembre 2026 : la manière dont ces pensions sont revalorisées n'est pas établie ici.
 
-### Les artistes, créateurs et intellectuels
+<!-- TODO (documentaliste) : établir comment la CNSS revalorise les pensions du régime des
+Tunisiens à l'étranger, faute de décret d'application de l'article 23 du décret n° 89-107
+retrouvé au JORT (circulaires, rapports annuels). -->
 
-Le [régime des artistes, créateurs et intellectuels](#g-regime-artistes), créé par la **loi n° 2002-104 du 30 décembre 2002**, comprend « les pensions de vieillesse, d'invalidité et de survivants » [@loi2002-104, art. 1] ; ce texte ne comporte pas de clause d'entrée en vigueur. La loi n° 2007-43 a modifié les conditions de sa pension temporaire d'orphelin [@loi2002-104, art. 22 ; @loi2007-43]. Le décret n° 2003-894 du 21 avril 2003 en fixe les modalités d'application [@decret2003-894].
+<!-- TODO (rédacteur) : figure du taux d'équilibre du régime des Tunisiens à l'étranger, quand la
+série par régime sera extraite des annuaires de la CNSS (annuaire 2013, 11e partie, p. 235 et
+240 imprimées ; annuaire 2017, الباب الحادي عشر) ; assiette reconstruite par les classes. -->
+
+### Les travailleurs à faibles revenus {#sec-rtfr}
+
+**Les origines.** La **loi n° 2002-32 du 12 mars 2002, relative au régime de sécurité sociale pour certaines catégories de travailleurs dans les secteurs agricole et non agricole** [@loi2002-32], vise cinq catégories : les employés de maison ; les personnes employées par l'État, les collectivités locales et les établissements publics administratifs qui ne sont couvertes par aucun autre régime ; les petits pêcheurs et petits armateurs ; les agriculteurs exploitant au plus cinq hectares en sec ou un hectare en irrigué ; les artisans travaillant à la pièce [@loi2002-32, art. 1]. La loi ne lui donne pas de nom abrégé : ce livre, comme le livre « Cotisations sociales », le désigne comme le [régime des travailleurs à faibles revenus](#g-regime-bas-revenus), que le livre « Prestations sociales » appelle régime des « bas revenus ». Elle ne porte pas de clause d'entrée en vigueur : publiée au *Journal officiel* du 15 mars 2002, déposé au siège du gouvernorat de Tunis le 16 mars, elle devient exécutoire le **21 mars 2002**. Le **décret n° 2002-916 du 22 avril 2002** en fixe les modalités d'application ; il devient exécutoire le 7 mai 2002, cinq jours après le dépôt du *Journal officiel* du 30 avril, le 2 mai [@decret2002-916].
+
+La loi fixe elle-même les règles de la pension, sans renvoi au régime non agricole, et le décret en précise l'assiette.
+
+- **Ouverture du droit** : **65 ans** au moins, 120 mois de cotisations effectives et validées, absence d'activité rémunérée assujettie [@loi2002-32, art. 13]. L'assuré qui atteint l'âge sans avoir accompli le stage peut rester en activité pour l'achever ; s'il décède avant, les retenues pour pension sont reversées en une fois [@loi2002-32, art. 37].
+- **Calcul** : « le montant minimum de la pension de vieillesse est fixé à **30 %** du salaire minimum garanti du secteur d'appartenance de l'assuré, en cas de réalisation de la condition de 120 mois » ; chaque trimestre supplémentaire ouvre une majoration de 0,5 % du salaire ayant servi au calcul des cotisations, « sans que le montant total de la pension puisse excéder un maximum de **80 %** dudit salaire » [@loi2002-32, art. 14].
+- **Deux bases distinctes** : le taux de 30 % porte sur le salaire minimum entier du secteur, mais la majoration et le plafond portent sur le salaire ayant servi au calcul des cotisations, qui n'en est que les deux tiers [@loi2002-32, art. 7 et 14]. Le décret le confirme : le salaire minimum en vigueur à la date d'ouverture du droit « n'est pris en compte qu'à concurrence des deux tiers lors de la fixation de la fraction de la pension résultant des périodes de cotisations qui dépassent les 120 mois » [@decret2002-916, art. 22].
+
+::: {.callout-note title="La formule de la pension des travailleurs à faibles revenus"}
+$$
+P = \min\Big(\tau_0\,S_s + \alpha\left\lfloor \frac{n - n_0}{u} \right\rfloor \beta\,S_s,\ \ \bar\tau\,\beta\,S_s\Big)
+$$
+
+où $S_s$ est le salaire minimum annuel du secteur de l'assuré en vigueur à la date d'ouverture du droit — le décret l'exprime par mois, SMIG de 200 heures ou SMAG de 25 jours, soit le douzième de $S$ ou de $S_A$ [@decret2002-916, art. 22] — et $\beta$ la fraction de ce salaire minimum qui sert d'assiette aux cotisations. Depuis le 21 mars 2002 [@loi2002-32, art. 7, 13 et 14 ; @decret2002-916, art. 13 et 22 à 24] :
+
+$$
+n_0 = 120, \qquad \tau_0 = 30\,\%, \qquad \alpha = 0{,}5\,\%, \qquad u = 3, \qquad \bar\tau = 80\,\%, \qquad \beta = \tfrac{2}{3}
+$$
+
+Par le calcul, chaque trimestre au-delà du stage ajoute un tiers de point de $S_s$, et le plafond, $\bar\tau\,\beta = 53{,}33\,\%$ de $S_s$, est atteint au terme de 70 trimestres au-delà du stage, soit 330 mois de cotisation. Le calcul lit « ledit salaire » de l'article 14 comme le salaire qui a servi au calcul des cotisations, auquel renvoie la phrase précédente.
+:::
+
+- **Invalidité** : 60 mois de cotisations effectives au moins ; pension de 30 % du salaire minimum garanti du secteur, avec la même majoration et le même plafond, et une bonification de 20 % pour tierce personne [@loi2002-32, art. 16-18].
+- **Survivants** : 50 % de la pension du défunt au conjoint, suspendus s'il se remarie avant 55 ans ; 30 % collectivement aux orphelins, jusqu'à 16, 21 ou 25 ans selon les études ; le cumul ne peut dépasser la pension du défunt [@loi2002-32, art. 23 à 28].
+- **Revalorisation** : automatique, à chaque hausse du SMIG ou du SMAG selon le secteur [@loi2002-32, art. 32] ; une majoration du salaire minimum n'est prise en compte qu'à partir du premier jour de l'année civile qui suit [@decret2002-916, art. 25].
+
+**Aucune réforme du cœur du régime ; son champ s'est étendu.** Seul l'article 25 de la loi a été modifié : la loi n° 2007-43, exécutoire le 2 juillet 2007, supprime le mot « mineur » en tête de l'article et prévoit que la pension de la fille sans ressources est définitivement suspendue dès qu'une condition fait défaut ; elle ne change aucun des âges [@loi2007-43, art. 3-4]. Le champ du régime, lui, a été étendu, et deux textes y rattachent d'autres catégories.
+
+| Texte | Date | Changement |
+|---|---|---|
+| Décret gouvernemental n° 2019-379 | exécutoire le 4 mai 2019 | ajoute à l'article 2 du décret n° 2002-916 un paragraphe f) : « les femmes récoltant les huîtres et les ouvriers saisonniers et mobiles appartenant au milieu rural et travaillant dans le secteur agricole y compris la femme employée dans ce secteur » ; cotisations et pension calculées sur le SMAG, cotisations à leur charge |
+| Décret-loi n° 2020-33, art. 7 | signé et déposé le 10 juin 2020 ; date d'effet non établie ici | l'auto-entrepreneur verse une contribution unique, dont 7,5 % sur les deux tiers du SMAG ou du SMIG, et relève des prestations du titre II de la loi n° 2002-32 ; il peut en outre adhérer au régime des non-salariés |
+
+: Extensions et rattachements du régime des travailleurs à faibles revenus, 2019-2020 {#tbl-rtfr-extensions}
+
+Sources : @decret2019-379, art. 1-2 ; @decretloi2020-33, art. 7. Le décret gouvernemental n° 2019-379 n'énonce pas de date d'effet : le *Journal officiel* du 26 avril 2019 ayant été déposé le 29 avril, il devient exécutoire le 4 mai 2019. « Huîtres » est le mot de l'édition française ; l'édition arabe dit « coquillages ». Aucune édition française du décret-loi n° 2020-33 n'a été retrouvée.
+
+La loi n° 2021-37 sur le travail domestique, entrée en vigueur six mois après sa publication, confirme que les travailleurs domestiques « demeurent régis » par la loi n° 2002-32 [@loi2021-37, art. 4 et 29]. Il n'y a donc pas de régime de pension propre à l'auto-entrepreneur : ses droits sont ceux du régime des travailleurs à faibles revenus et, s'il y adhère, du régime des non-salariés (@sec-rtns).
+
+<!-- TODO (documentaliste) : les séries de la CNSS publient une ligne de pensions « travailleurs de
+chantiers (convention) » (annuaire 2013, partie du régime des travailleurs à faibles revenus,
+p. 266 imprimée, sigle RTC), sans texte fondateur identifié au JORT. Rattacher cette ligne à un
+texte (régime conventionnel géré au titre du décret n° 94-1477, art. 4 ? catégorie b de la loi
+n° 2002-32 ?) avant d'en parler dans le texte. Lire aussi l'arrêté du 19 juin 2019 (pièces
+d'affiliation des récoltantes de coquillages et des saisonniers ruraux, JORT n° 52/2019, éd. ar.),
+dont seul l'intitulé est connu. -->
+
+<!-- TODO (rédacteur) : figure du taux d'équilibre du régime des travailleurs à faibles revenus,
+quand la série sera extraite des annuaires de la CNSS (annuaire 2013, 12e partie ; annuaire 2017,
+الباب الثاني عشر) ; assiette : effectifs × 2/3 du SMIG ou du SMAG × 12, catégories mêlées. -->
+
+### Les artistes, créateurs et intellectuels {#sec-raci}
+
+**Les origines.** Le [régime des artistes, créateurs et intellectuels](#g-regime-artistes), créé par la **loi n° 2002-104 du 30 décembre 2002**, comprend « les pensions de vieillesse, d'invalidité et de survivants » [@loi2002-104, art. 1]. La loi ne comporte pas de clause d'entrée en vigueur : publiée et déposée au siège du gouvernorat de Tunis le 31 décembre 2002, elle devient exécutoire le 5 janvier 2003. Le décret n° 2003-894 du 21 avril 2003 en fixe les modalités d'application [@decret2003-894] ; publié le 29 avril 2003, il devient exécutoire le 5 mai 2003. Entre ces deux dates, le régime a son âge, son stage et son minimum, mais pas encore de taux.
 
 **L'ouverture du droit tient à l'âge et au stage, que fixe la loi.** La pension de vieillesse est ouverte à **65 ans**, après **40 trimestres** de cotisations effectives [@loi2002-104, art. 12]. La pension d'invalidité l'est, avant cet âge, à l'assuré dont la capacité de travail ou de gain est réduite des deux tiers au moins, après **20 trimestres** — sans stage pour la victime d'un accident non professionnel ; à 65 ans, elle est remplacée par une pension de vieillesse [@loi2002-104, art. 14-15].
 
-**Le calcul vient du décret, et part d'une classe.** La loi renvoie le revenu de référence à un texte d'application [@loi2002-104, art. 13]. Le décret n° 2003-894 définit dix classes de revenus, de coefficient **2 à 18** du SMIG [@decret2003-894, art. 5], et fait du revenu de référence la moyenne pondérée des coefficients des classes de l'assuré, appliquée au SMIG du régime de 48 heures rapporté à 2 400 heures par an [@decret2003-894, art. 16]. La pension de vieillesse est de **30 %** de ce revenu à 40 trimestres, majorée de 0,5 % par trimestre supplémentaire, dans la limite de **80 %** [@decret2003-894, art. 17]. Ces classes ne sont pas celles des non-salariés, dont la première vaut une fois le salaire minimum. Publié le 29 avril 2003, le décret ne porte pas de clause d'entrée en vigueur : de la loi à lui, le régime a son âge, son stage et son minimum, mais pas encore de taux.
+**Le calcul vient du décret, et part d'une classe.** La loi renvoie le revenu de référence à un texte d'application [@loi2002-104, art. 13]. Le décret n° 2003-894 définit dix classes de revenus, de coefficient **2 à 18** du SMIG [@decret2003-894, art. 5], et fait du revenu de référence la moyenne pondérée des coefficients des classes de l'assuré, appliquée au SMIG du régime de 48 heures rapporté à 2 400 heures par an [@decret2003-894, art. 16]. Ces classes ne sont pas celles des non-salariés, dont la première vaut une fois le salaire minimum.
 
-**Le plancher est un montant en dinars, et non une part du salaire minimum.** Les pensions de vieillesse, d'invalidité et de survivants ne peuvent être inférieures à **200 dinars par mois** [@loi2002-104, art. 13 et 15 ; @decret2003-894, art. 17]. C'est le seul plancher du secteur privé exprimé en dinars : les autres sont une part du SMIG ou du SMAG, et montent avec lui. Aucun texte qui relève ce montant n'a été relevé ici.
+::: {.callout-note title="La formule de la pension des artistes, créateurs et intellectuels"}
+$$
+P = \max\big(\min(\tau(n),\ \bar\tau)\cdot R,\ P_{\min}\big), \qquad R = \bar c\,S
+$$
 
-**Les survivants ont leurs règles propres.** Le conjoint reçoit 50 % de la pension du défunt, suspendus s'il se remarie avant 55 ans ; les orphelins reçoivent collectivement 30 %, jusqu'à 16 ans, 21 ans en études secondaires ou professionnelles, 25 ans en études supérieures sans bourse [@loi2002-104, art. 20 à 23]. L'article 20 ajoute que « ce taux est majoré de 75 % de la pension de vieillesse ou d'invalidité en cas d'existence d'enfants bénéficiaires d'une pension » : la phrase admet deux lectures, dont aucune n'est retenue ici.
+où $\bar c$ est la moyenne pondérée des coefficients des classes de l'assuré [@decret2003-894, art. 16]. Depuis le 5 mai 2003 [@loi2002-104, art. 12-13 ; @decret2003-894, art. 17] :
+
+$$
+n_0 = 120, \qquad \tau_0 = 30\,\%, \qquad \alpha = 0{,}5\,\%, \qquad u = 3, \qquad \bar\tau = 80\,\%
+$$
+
+La pension minimale $P_{\min}$ n'est pas une fraction de $S$ : elle est de 200 dinars par mois, soit 2 400 dinars par an.
+:::
+
+**Le plancher est un montant en dinars, et non une part du salaire minimum.** Les pensions de vieillesse, d'invalidité et de survivants ne peuvent être inférieures à **200 dinars par mois** [@loi2002-104, art. 13 et 15 ; @decret2003-894, art. 17]. C'est le seul plancher du secteur privé exprimé en dinars : les autres sont une part du SMIG ou du SMAG, et montent avec lui. Aucun texte qui relève ce montant n'a été retrouvé au *Journal officiel* jusqu'au 18 septembre 2026. Rapporté au SMIG mensuel du régime de 48 heures, il en représentait 79 % au 1^er^ juillet 2008 et 36 % au 1^er^ janvier 2026 (@tbl-rsna-revalo-taux).
+
+**Les survivants ont leurs règles propres.** Le conjoint reçoit 50 % de la pension du défunt, suspendus s'il se remarie avant 55 ans ; les orphelins reçoivent collectivement 30 %, jusqu'à 16 ans, 21 ans en études secondaires ou professionnelles, 25 ans en études supérieures sans bourse [@loi2002-104, art. 20 à 23]. L'article 20 ajoute, dans l'édition française, que « ce taux est majoré de 75 % de la pension de vieillesse ou d'invalidité en cas d'existence d'enfants bénéficiaires d'une pension » ; l'édition arabe dit que ce taux est relevé « jusqu'à » 75 % de cette pension [@loi2002-104, art. 20]. Le texte ne dit pas si la pension de survivants ainsi portée à 75 % est celle du seul conjoint ou celle de l'ensemble des survivants ; le cumul des pensions de survivants reste plafonné à la pension du défunt [@loi2002-104, art. 25].
 
 **La revalorisation est automatique** : les pensions en cours suivent chaque hausse du SMIG du régime de 48 heures, dans la proportion de son augmentation [@loi2002-104, art. 31].
 
-### Les travailleurs à faibles revenus : la loi n° 2002-32
+**Des dispositions transitoires** ouvrent, sans cotisation, une pension d'au moins 200 dinars aux personnes de plus de 55 ans titulaires d'une indemnité permanente de l'État, ou dépourvues de revenu permanent [@loi2002-104, art. 33-34], et laissent un an aux intéressés pour opter entre le régime des non-salariés et ce régime [@loi2002-104, art. 37-38].
 
-La **loi n° 2002-32 du 12 mars 2002, relative au régime de sécurité sociale pour certaines catégories de travailleurs dans les secteurs agricole et non agricole** [@loi2002-32], vise cinq catégories : les employés de maison ; les personnes employées par l'État, les collectivités locales et les établissements publics administratifs qui ne sont couvertes par aucun autre régime ; les petits pêcheurs et petits armateurs ; les agriculteurs exploitant au plus cinq hectares en sec ou un hectare en irrigué ; les artisans travaillant à la pièce [@loi2002-32, art. 1]. La loi ne lui donne pas de nom abrégé : ce livre, comme le livre « Cotisations sociales », le désigne comme le [régime des travailleurs à faibles revenus](#g-regime-bas-revenus), que le livre « Prestations sociales » appelle régime des « bas revenus ».
+**Aucune réforme du cœur du régime.** Le seul modificatif retrouvé est la loi n° 2007-43, exécutoire le 2 juillet 2007, qui touche les conditions de la pension temporaire d'orphelin [@loi2002-104, art. 22 ; @loi2007-43].
 
-La loi fixe elle-même toutes les règles de la pension, sans renvoi au régime non agricole. Elle ne porte pas de clause d'entrée en vigueur : publiée le 15 mars 2002, elle devient exécutoire le 17. Seul son article 25 a été modifié, en 2007.
+<!-- TODO (documentaliste) : seconde voie incomplète pour ce régime — la loi n° 2002-104 ne figure
+pas dans les visas des arrêtés conjoints de 2020 et de 2026 qui énumèrent les régimes de pension
+de la CNSS ; confirmer par une autre voie l'absence de modificatif postérieur à la loi
+n° 2007-43, et de texte relevant le minimum de 200 dinars. -->
 
-- **Ouverture du droit** : **65 ans** au moins, 120 mois de cotisations effectives et validées, absence d'activité rémunérée assujettie [@loi2002-32, art. 13].
-- **Calcul** : « le montant minimum de la pension de vieillesse est fixé à **30 %** du salaire minimum garanti du secteur d'appartenance de l'assuré, en cas de réalisation de la condition de 120 mois » ; chaque trimestre supplémentaire ouvre une majoration de 0,5 % du salaire ayant servi au calcul des cotisations, « sans que le montant total de la pension puisse excéder un maximum de **80 %** dudit salaire » [@loi2002-32, art. 14].
-- **Invalidité** : 60 mois de cotisations effectives au moins ; pension de 30 % du salaire minimum garanti du secteur, avec la même majoration et le même plafond, et une bonification de 20 % pour tierce personne [@loi2002-32, art. 16-18].
-- **Deux bases distinctes** : le taux de 30 % porte sur le salaire minimum entier du secteur, mais la majoration et le plafond portent sur le salaire ayant servi au calcul des cotisations, qui n'en est que les deux tiers [@loi2002-32, art. 7 et 14].
-- **Survivants** : 50 % de la pension du défunt au conjoint, suspendus s'il se remarie avant 55 ans ; 30 % collectivement aux orphelins, jusqu'à 16, 21 ou 25 ans selon les études ; le cumul ne peut dépasser la pension du défunt [@loi2002-32, art. 23 à 28]. La loi n° 2007-43 supprime le mot « mineur » en tête de l'article 25 et prévoit que la pension de la fille sans ressources est définitivement suspendue dès qu'une condition fait défaut ; elle ne change aucun des âges [@loi2007-43, art. 3-4].
-- **Revalorisation** : automatique, à chaque hausse du SMIG ou du SMAG selon le secteur [@loi2002-32, art. 32].
+<!-- TODO (rédacteur) : figure du taux d'équilibre du régime des artistes, créateurs et
+intellectuels, quand la série sera extraite des annuaires de la CNSS (annuaire 2013, 13e partie,
+p. 282 et 287 imprimées ; annuaire 2017, الباب الثالث عشر) ; assiette reconstruite par les classes. -->
+
+### Les travailleuses agricoles {#sec-travailleuses-agricoles}
+
+**Les origines.** Le **décret-loi n° 2024-4 du 22 octobre 2024, relatif au régime de protection sociale des travailleuses agricoles**, institue « un régime spécifique de sécurité sociale des travailleuses agricoles comportant l'octroi des prestations de l'assurance maladie et les pensions de vieillesse, d'invalidité et des survivants », géré par la caisse nationale [@decret-loi2024-4, art. 1, 17 et 18] : c'est le [régime de sécurité sociale des travailleuses agricoles](#g-regime-travailleuses-agricoles). Publié au *Journal officiel* n° 129 du 23 octobre 2024 et déposé le même jour au siège du gouvernorat de Tunis, sans clause d'effet, il devient exécutoire le 28 octobre 2024. Il couvre la travailleuse agricole non salariée, à titre principal et pour son propre compte, et la salariée qui travaille au moins 15 jours par mois, en moyenne au moins 45 jours par trimestre ou 180 jours par an, sauf si son employeur est affilié à un régime légal couvrant les mêmes risques pour tous ses employés [@decret-loi2024-4, art. 17]. L'État prend en charge ses cotisations pendant les trois premières années d'activité [@decret-loi2024-4, art. 20 et 23].
+
+**Le régime a un âge et un stage.** La pension de vieillesse est ouverte à **65 ans**, après **120 mois** de cotisations effectives et validées, en l'absence d'activité assujettie ; elle peut l'être **dès 60 ans** avec la même durée, sans que le décret-loi énonce de réduction [@decret-loi2024-4, art. 26-27]. Une allocation de vieillesse est servie lorsque la durée de cotisation ne dépasse pas 60 mois [@decret-loi2024-4, art. 28]. Entre 61 et 119 mois, le décret-loi ne prévoit rien : ni pension, ni allocation ; les deux éditions du texte concordent sur ce point. La pension d'invalidité suppose une réduction d'au moins la moitié de la capacité de travail — et non des deux tiers comme dans les autres régimes — et 60 mois de cotisations [@decret-loi2024-4, art. 29-30]. Le conjoint survivant, lié au défunt au moment du décès, et les orphelins — jusqu'à 16, 21 ou 25 ans, la fille sans ressources et les infirmes sans limite d'âge — ont droit à une pension [@decret-loi2024-4, art. 31-32].
+
+::: {.callout-warning title="Le décret qui doit fixer les taux n'a pas été retrouvé"}
+Le décret-loi renvoie à un décret « les taux, les modalités et les procédures de bénéfice de la pension de vieillesse, de l'allocation de vieillesse, de la pension d'invalidité et des pensions octroyées au conjoint et aux orphelins » [@decret-loi2024-4, art. 33]. Ce décret n'a pas été retrouvé au *Journal officiel* jusqu'au numéro du 18 septembre 2026, sous deux réserves : le numéro 58 de 2026 n'a pu être consulté, et le dépouillement des numéros de 2025 est incomplet. Le régime n'a donc, en l'état des textes retrouvés, ni taux ni formule de pension, et aucune ne peut être écrite ici.
+:::
+
+<!-- TODO (documentaliste) : rechercher le décret d'application de l'article 33 du décret-loi
+n° 2024-4 fascicule par fascicule sur pist.tn pour 2025 (couverture partielle du corpus local :
+117 fascicules FR) et dans le JORT n° 58 de 2026, avant d'écrire qu'il n'a pas été publié. La loi
+de finances pour 2025 (loi n° 2024-48) crée un fonds de protection sociale des travailleuses
+agricoles, dont seul l'intitulé est connu ici (financement). -->
 
 ## Vue d'ensemble : les deux secteurs, maillon par maillon {#sec-vue-ensemble}
 
@@ -908,13 +1243,13 @@ Le tableau suivant compare, pour chaque maillon, le régime général du secteur
 | Âge légal | 60 ans (1985) ; 62 ans (2020) | 60 ans (1974) | 60 ans (1981) |
 | Durée minimale | 15 ans de services | 120 mois de cotisations | 40 trimestres de cotisations |
 | Départ anticipé sans motif particulier | 55 ans et 35 ans de services (1985) ; 57 ans et 37 ans (2007) | 360 mois, jouissance à 50 ans avec décote (1982) ; à 55 ans (2007) | aucun dans la loi n° 81-6 (art. 45 à 88) |
-| Assiette | dernière rémunération, ou rémunération de la fonction la plus élevée exercée deux ans | 3 ou 5 dernières années (1974) ; 10 dernières années, moyenne sur 36 ou 60 mois inchangée (1990) ; remplacées par 5, 7 puis 10 années, moyenne sur 60, 84 puis 120 mois (1994-1996) ; dans la limite de six fois le SMIG | SMAG × 300 jours × coefficient, 3 ou 5 dernières années |
+| Assiette | dernière rémunération, ou rémunération de la fonction la plus élevée exercée deux ans | 3 ou 5 dernières années (1974) ; 10 dernières années, moyenne sur 36 ou 60 mois inchangée (1990) ; remplacées par 5, 7 puis 10 années, moyenne sur 60, 84 puis 120 mois (1994-1996) ; dans la limite de six fois le SMIG | SMAG × 300 jours × coefficient multiplicateur moyen, 3 ou 5 dernières années |
 | Acquisition du taux | 2 % par an, 3 % de la 11^e^ à la 20^e^ année | 40 % à 120 mois, puis 2 % par période de 12 mois (1974) ; 0,5 % par trimestre (1982) | 40 % à 40 trimestres, puis 0,5 % par trimestre |
 | Plafond | 80 % (1981) ; 90 % (1985) | 80 % (1974) | 80 % (1981) |
 | Pension minimale | 2/3 du SMIG (1981), revalorisée à chaque hausse du SMIG (1982) ; 2/3 du SMIG (1985) | 2/3 du SMIG (1974) ; 1/2 pour les départs anticipés des cas a) et b) et les pensions proportionnelles (1982) | aucune dans la loi n° 81-6 (art. 45 à 88) |
-| Carrière courte | depuis 1985, à partir de 5 ans : allocation de 1/2 SMIG, réversible depuis 1997, ou remboursement | allocation en capital à partir de 60 mois (1974) ; pension proportionnelle à partir de 60 mois (1982) | allocation en capital à partir de 20 trimestres |
-| Conjoint survivant | 75 % (1981, 1985) | 50 %, majorable à 75 % (1981) | 50 % |
-| Orphelin | 10 % ; jusqu'à 25 ans en études supérieures (1997) | 20 % ou 30 % (1974) ; 30 % (1981) ; jusqu'à 25 ans en études supérieures (1997) | 20 % ou 30 % |
+| Carrière courte | depuis 1985, à partir de 5 ans : allocation de 1/2 SMIG, réversible depuis 1997, ou remboursement | allocation en capital à partir de 60 mois (1974) ; pension proportionnelle à partir de 60 mois (1982) | allocation en capital à partir de 20 trimestres ; pension au prorata pendant la période transitoire (art. 81) |
+| Conjoint survivant | 75 % (1981, 1985) | 50 %, majorable à 75 % (1981) | 50 % à la veuve et au veuf invalide (1981) ; au conjoint survivant, suspendu seulement en cas de remariage avant 55 ans (1996) |
+| Orphelin | 10 % ; jusqu'à 25 ans en études supérieures (1997) | 20 % ou 30 % (1974) ; 30 % (1981) ; jusqu'à 25 ans en études supérieures (1997) | 20 % ou 30 % ; 16 ans, 21 ans en cas d'études (1981) ; jusqu'à 25 ans en études supérieures (1997) |
 | Revalorisation | décrets de revalorisation (1981-1983) ; péréquation sur la rémunération d'activité (1985), cotisée par le retraité (2002) | révision discrétionnaire (1974) ; somme indexée sur la hausse du SMIG (1980) ; taux de variation du SMIG (2001) | à chaque paiement, proportionnellement au SMAG (1981) |
 
 : Comparaison des régimes salariés des deux secteurs, maillon par maillon {#tbl-comparaison-secteurs}
@@ -959,7 +1294,7 @@ figtools.figure_tabs(
 ```
 
 
-**Les droits des survivants.** La réversion est de 75 % dans le secteur public depuis 1981, de 50 % dans les deux régimes salariés du privé, majorable à 75 % sous condition dans le régime non agricole ; à l'inverse, la pension d'orphelin est de 10 % dans le secteur public et de 20 à 30 % dans le secteur privé. Les deux secteurs ont reçu le même jour, le 1^er^ mai 1997, l'extension de la pension d'orphelin aux études supérieures jusqu'à 25 ans et à la fille sans ressources.
+**Les droits des survivants.** La réversion est de 75 % dans le secteur public depuis 1981, de 50 % dans les deux régimes salariés du privé, majorable à 75 % sous condition dans le régime non agricole ; à l'inverse, la pension d'orphelin est de 10 % dans le secteur public et de 20 à 30 % dans le secteur privé. Les trois régimes du tableau ont reçu le même jour, le 1^er^ mai 1997, l'extension de la pension d'orphelin aux études supérieures jusqu'à 25 ans et à la fille sans ressources — par le décret n° 97-1927 dans le régime non agricole, par la loi n° 97-61 dans le régime agricole [@decret97-1927, art. 2 ; @loi97-61, art. 2].
 
 **La revalorisation.** Les deux secteurs revalorisent selon deux références différentes : la rémunération d'activité du grade dans le secteur public, le salaire minimum dans le secteur privé. La première suit les augmentations fixées en dinars pour chaque catégorie d'agents, la seconde les hausses du SMIG ou du SMAG. Ce livre ne dispose pas encore de série de l'évolution comparée des pensions servies par les deux caisses qui permettrait de mesurer l'effet de cette différence.
 
@@ -1010,6 +1345,19 @@ Les formules du chapitre emploient une notation unique, qui reprend celle du cha
 | $\bar w$ | salaire moyen des cotisants | @sec-rsna-equilibre |
 | $C$ | cotisations de pension de l'année | @sec-rsna-equilibre |
 | $\kappa$ | taux légal de la branche pensions du régime des salariés non agricoles | @sec-rsna-equilibre |
+| $S_A$ | SMAG rapporté à une durée de travail de 300 jours par an | @sec-rsa-loi-1981 |
+| $\bar c$, $\bar c_T$ | coefficient multiplicateur moyen, sur la période que fixe chaque régime ; $\bar c_T$, sur les $T$ dernières années | @sec-rsa-loi-1981 |
+| $P'$, $S_A'$ | pension servie et valeur de $S_A$ à une échéance postérieure à la liquidation | @sec-rsa-loi-1981 |
+| $\Delta S_A$ | hausse de $S_A$ | @sec-rsaa |
+| $\nu$ | nombre de points acquis dans le régime complémentaire | @sec-complementaire-1978 |
+| $\gamma$ | taux de la cotisation contractuelle du régime complémentaire | @sec-complementaire-1978 |
+| $b_t$ | salaire de base de la période $t$, au sens du règlement du régime complémentaire | @sec-complementaire-1978 |
+| $\rho_t$ | salaire de référence de la période $t$ du régime complémentaire | @sec-complementaire-1978 |
+| $v$ | valeur du point du régime complémentaire | @sec-complementaire-1978 |
+| $\bar F$ | moyenne pondérée des revenus forfaitaires de la carrière (non-salariés non agricoles, 1982) | @sec-rtns-1982 |
+| $S_s$ | salaire minimum annuel du secteur de l'assuré : $S$ ou $S_A$ | @sec-rtns-reforme-1995 |
+| $\Delta S_s$ | hausse de $S_s$ | @sec-rtns-reforme-2002 |
+| $\beta$ | fraction du salaire minimum qui sert d'assiette aux cotisations | @sec-rtfr |
 
 : Notations du chapitre, dans l'ordre de leur introduction {#tbl-cnss-notations}
 

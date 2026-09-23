@@ -3301,8 +3301,9 @@ entries:
         salaire de référence est borné par la limite de calcul des
         prestations. Dans le régime
         des salariés agricoles, il est forfaitaire : le SMAG rapporté à 300 jours,
-        affecté du coefficient de qualification, sur les trois ou cinq dernières
-        années (loi n° 81-6, art. 50).
+        affecté du coefficient multiplicateur moyen ayant servi de base au calcul
+        des cotisations au cours des trois ou cinq dernières années précédant l'âge
+        d'ouverture du droit (loi n° 81-6, art. 50).
       synonymes: [Salaire de référence]
     ar:
       terme: الأجر المتوسط المرجعي
@@ -3319,8 +3320,9 @@ entries:
         سنويًا بقرار، وأوّل قرار عُثر عليه مؤرّخ في 17 نوفمبر 1994. ويحدّه سقف احتساب
         المنافع. وفي نظام الأجراء الفلاحيين، هو
         أجر جزافي: الأجر الأدنى الفلاحي المضمون محتسبًا على أساس 300 يوم ومضروبًا في
-        ضارب التأهيل، على السنوات الثلاث أو الخمس الأخيرة (القانون عدد 6 لسنة 1981،
-        الفصل 50).
+        الضارب المتوسط الذي اعتُمد أساسًا لحساب الاشتراكات خلال السنوات الثلاث أو
+        الخمس الأخيرة التي سبقت سنّ استحقاق الجراية (القانون عدد 6 لسنة 1981، الفصل
+        50).
       synonymes: [الأجر المرجعي]
 
   - id: smag
@@ -3378,7 +3380,7 @@ entries:
   - id: rsa
     acronyme: RSA
     statut: valide
-    references: []
+    references: [loi96-66, loi97-61, loi2007-43]
     source_definition: {ref: loi81-6, locator: "titres I et II"}
     voir_aussi: [rsaa, smag, cnss]
     fr:
@@ -3388,7 +3390,11 @@ entries:
         et II de la loi n° 81-6 du 12 février 1981, en vigueur au 1^er^ janvier 1981,
         et géré par la CNSS. Sa pension repose sur un salaire de référence
         forfaitaire, multiple du SMAG, et elle est révisée à chaque paiement
-        proportionnellement à la variation du SMAG.
+        proportionnellement à la variation du SMAG. En 1981, la pension de
+        survivant va à la veuve et au veuf invalide (art. 60) ; la loi n° 96-66,
+        exécutoire le 4 août 1996, l'ouvre au conjoint survivant, et la loi n° 97-61
+        réécrit les droits des orphelins avec effet au 1^er^ mai 1997 ; la loi
+        n° 2007-43, exécutoire le 2 juillet 2007, révise ceux de la fille.
       synonymes: []
     ar:
       terme: نظام الأجراء الفلاحيين
@@ -3396,12 +3402,25 @@ entries:
         نظام الضمان الاجتماعي للأجراء الفلاحيين، ينظّمه العنوانان الأوّل والثاني من
         القانون عدد 6 لسنة 1981 المؤرّخ في 12 فيفري 1981، النافذ منذ غرّة جانفي 1981،
         ويديره الصندوق الوطني للضمان الاجتماعي. وتقوم جرايته على أجر مرجعي جزافي مضاعف
-        للأجر الأدنى الفلاحي المضمون، وتُراجَع عند كلّ صرف بنسبة تطوّر هذا الأجر.
-      synonymes: []
+        للأجر الأدنى الفلاحي المضمون، وتُراجَع عند كلّ صرف بنسبة تطوّر هذا الأجر. وفي
+        سنة 1981، تُسند جراية الباقين على قيد الحياة إلى الأرملة وإلى الأرمل العاجز
+        (الفصل 60)؛ ثمّ فتحها القانون عدد 66 لسنة 1996، النافذ منذ 4 أوت 1996، للقرين
+        الباقي على قيد الحياة، وأعاد القانون عدد 61 لسنة 1997 صياغة حقوق الأيتام بداية من
+        غرّة ماي 1997؛ وراجع القانون عدد 43 لسنة 2007، النافذ منذ 2 جويلية 2007، حقوق
+        البنت.
+      # « نظام الأجراء في القطاع الفلاحي » : intitulé de la 6e partie de
+      # l'annuaire statistique de la CNSS 2017 (vérifié le 23/09/2026).
+      synonymes: [نظام الأجراء في القطاع الفلاحي]
 
   - id: rsaa
     acronyme: RSAA
-    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    # La loi n° 89-73 (éd. ar., JORT n° 60/1989, lue à l'OCR le 23/09/2026) ne nomme
+    # pas le régime : le titre III s'intitule « أحكام خاصة تنطبق على الأجراء العاملين
+    # لدى بعض المؤسسات الفلاحية ». La forme d'usage de la CNSS (annuaire statistique
+    # 2017, 7e partie) est portée en synonyme ; le terme principal « النظام الفلاحي
+    # المحسَّن », non attesté, est conservé parce que la prose arabe l'emploie. Choix
+    # du terme à trancher en revue humaine. Reste provisoire.
+    statut: provisoire  # terme AR non attesté par un texte officiel — cf. issue #151
     references: [loi81-6]
     source_definition: {ref: loi89-73}
     voir_aussi: [rsa, smag, limite-calcul-prestations]
@@ -3423,37 +3442,56 @@ entries:
         نظام أُضيف إلى القانون عدد 6 لسنة 1981 في شكل عنوان ثالث بمقتضى القانون عدد 73
         لسنة 1989 المؤرّخ في 2 سبتمبر 1989، النافذ منذ غرّة أكتوبر 1989. ويشمل الأجراء
         المتعاضدين في الشركات والتعاضديات الفلاحية، وأجراء المستغلّين الذين يشغّلون ثلاثين
-        أجيرًا قارًّا على الأقلّ، وبعض البحّارة وصغار المجهّزين. ويحيل إلى قواعد نظام
+        أجيرًا قارًّا على الأقلّ، وبعض الصيادين البحريين وصغار المجهّزين. ويحيل إلى قواعد نظام
         الأجراء الفلاحيين في ما لم يُخالفها، لكنّه يعتمد الأجور الفعلية في حدود ستّة أضعاف
         الأجر الأدنى الفلاحي المضمون، ويضبط جراية دنيا تساوي نصف هذا الأجر محتسبًا على
         أساس 300 يوم.
-      synonymes: []
+      synonymes: [نظام الأجراء في القطاع الفلاحي المحسن]
 
   - id: rtns
     acronyme: RTNS
-    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
-    references: [decret74-499]
-    source_definition: {ref: decret95-1166, locator: "art. 1"}
-    voir_aussi: [rsna, rtte, cnss]
+    # Terme AR : intitulé du décret n° 95-1166 dans l'édition arabe du JORT
+    # (n° 55/1995, « أمر عدد 1166 لسنة 1995 … يتعلق بنظام الضمان الاجتماعي للعملة
+    # غير الأجراء في القطاعين الفلاحي وغير الفلاحي », lu à l'OCR le 23/09/2026) ;
+    # forme courte identique à l'intitulé de la 10e partie de l'annuaire CNSS 2017.
+    statut: valide
+    references: [decret82-1359, decret82-1360, decret89-1611, decret74-499]
+    source_definition: {ref: decret95-1166, locator: "art. 1 et 34-39"}
+    source_traduction: {ref: decret95-1166}
+    voir_aussi: [rsna, rtte, cnss, classe-de-revenus]
     fr:
       terme: Régime des travailleurs non salariés
       definition: >
         Régime de sécurité sociale des travailleurs non salariés des secteurs
-        agricole et non agricole, institué par le décret n° 95-1166 du 3 juillet 1995
-        et géré par la CNSS. Il procède par extension : son article premier rend
-        applicables aux non-salariés des articles de la loi n° 60-30 et les articles
-        du décret n° 74-499 relatifs à l'invalidité, aux survivants et à la
-        liquidation des pensions.
+        agricole et non agricole, géré par la CNSS. Les non-salariés sont couverts
+        depuis le 1^er^ juillet 1982 par deux décrets du 21 octobre 1982 : le décret
+        n° 82-1359, pour les travailleurs indépendants du secteur non agricole, et
+        le décret n° 82-1360, pour les exploitants et travailleurs indépendants de
+        l'agriculture. Le décret n° 95-1166 du 3 juillet 1995, exécutoire le
+        19 juillet 1995, les fusionne en un régime unique et les abroge, en conservant leurs affiliés et en transférant
+        leurs réserves (art. 34-39). Le régime procède par extension : l'article
+        premier de ce décret rend applicables aux non-salariés des articles de la
+        loi n° 60-30 et les articles du décret n° 74-499 relatifs à l'invalidité,
+        aux survivants et à la liquidation des pensions. Les cotisations et les
+        pensions reposent sur un revenu forfaitaire fixé par classes de revenus, dans
+        le secteur non agricole depuis 1982 et dans les deux secteurs depuis 1995.
       synonymes: []
     ar:
       terme: نظام العملة غير الأجراء
       definition: >
-        نظام الضمان الاجتماعي للعملة غير الأجراء في القطاعين الفلاحي وغير الفلاحي، أحدثه
-        الأمر عدد 1166 لسنة 1995 المؤرّخ في 3 جويلية 1995 ويديره الصندوق الوطني للضمان
-        الاجتماعي. ويقوم على التمديد: إذ يجعل فصله الأوّل فصولًا من القانون عدد 30 لسنة
-        1960 وفصول الأمر عدد 499 لسنة 1974 المتعلّقة بالعجز والباقين على قيد الحياة
-        وتصفية الجرايات منطبقةً على غير الأجراء.
-      synonymes: []
+        نظام الضمان الاجتماعي للعملة غير الأجراء في القطاعين الفلاحي وغير الفلاحي،
+        ويديره الصندوق الوطني للضمان الاجتماعي. ويتمتّع غير الأجراء بالتغطية منذ غرّة
+        جويلية 1982 بمقتضى أمرين مؤرّخين في 21 أكتوبر 1982: الأمر عدد 1359 لسنة 1982
+        المتعلّق بسحب نظام الضمان الاجتماعي على العمّال المستقلّين في القطاع غير
+        الفلاحي، والأمر عدد 1360 لسنة 1982 المتعلّق بنظام الضمان الاجتماعي للمنتجين
+        والعملة المستقلّين في الفلاحة. ثمّ دمجهما الأمر عدد 1166 لسنة 1995 المؤرّخ في 3
+        جويلية 1995، النافذ منذ 19 جويلية 1995، في نظام واحد وألغاهما، مع المحافظة على انخراط المنخرطين فيهما
+        وتحويل مدّخراتهما (الفصول 34-39). ويقوم النظام على التمديد: إذ يجعل الفصل
+        الأوّل من هذا الأمر فصولًا من القانون عدد 30 لسنة 1960 وفصول الأمر عدد 499 لسنة
+        1974 المتعلّقة بالعجز والباقين على قيد الحياة وتصفية الجرايات منطبقةً على غير
+        الأجراء. وتقوم الاشتراكات والجرايات على دخل تقديري يُضبط حسب شرائح الدخل، في
+        القطاع غير الفلاحي منذ سنة 1982 وفي القطاعين منذ سنة 1995.
+      synonymes: [نظام الضمان الاجتماعي للعملة غير الأجراء في القطاعين الفلاحي وغير الفلاحي]
 
   - id: cavis
     acronyme: CAVIS
@@ -3543,30 +3581,36 @@ entries:
   - id: rtte
     acronyme: RTTE
     statut: valide
-    references: [decret74-499]
-    source_definition: {ref: decret89-107, locator: "art. 1"}
-    voir_aussi: [rsna, rtns, cnss]
+    references: [decret74-499, decret82-1359]
+    source_definition: {ref: decret89-107, locator: "art. 1-3, 6 et 18-23"}
+    voir_aussi: [rsna, rtns, cnss, classe-de-revenus]
     fr:
       terme: Régime des travailleurs tunisiens à l'étranger
       definition: >
         Régime de sécurité sociale des travailleurs tunisiens à l'étranger, salariés
         ou non, qui ne sont pas couverts par une convention bilatérale, institué par
-        le décret n° 89-107 du 10 janvier 1989. L'adhésion y est volontaire, mais
-        couvre obligatoirement les pensions en même temps que les assurances
-        sociales. Il étend à ces travailleurs les articles du décret n° 74-499
-        relatifs à l'invalidité, aux survivants et à la liquidation, et la gestion
-        des pensions en est déléguée à la Caisse d'assurance vieillesse, d'invalidité
-        et de survivants (CAVIS).
+        le décret n° 89-107 du 10 janvier 1989, obligatoire le 19 janvier 1989.
+        L'adhésion y est volontaire, mais couvre obligatoirement les pensions en même
+        temps que les assurances sociales. Il étend à ces travailleurs les articles du
+        décret n° 74-499 relatifs à l'invalidité, aux survivants et à la liquidation,
+        et la gestion des pensions en est déléguée à la Caisse d'assurance vieillesse,
+        d'invalidité et de survivants (CAVIS). Il fixe lui-même les règles de la
+        pension de vieillesse, reprises du décret n° 82-1359 des non-salariés non
+        agricoles, sur une assiette de classes de revenus exprimées en multiples du
+        SMIG.
       synonymes: []
     ar:
       terme: نظام الضمان الاجتماعي للعملة التونسيين بالخارج
       definition: >
         نظام الضمان الاجتماعي للعملة التونسيين بالخارج، أجراء كانوا أو غير أجراء، غير
         المشمولين باتّفاقية ثنائية، أحدثه الأمر عدد 107 لسنة 1989 المؤرّخ في 10 جانفي
-        1989. والانخراط فيه اختياري، لكنّه يشمل وجوبًا الجرايات والتأمينات الاجتماعية
-        معًا. ويمدّد إلى هؤلاء العملة فصول الأمر عدد 499 لسنة 1974 المتعلّقة بالعجز
-        والباقين على قيد الحياة وتصفية الجرايات، وتُفوَّض إدارة الجرايات فيه إلى صندوق
-        التأمين على الشيخوخة والعجز والباقين على قيد الحياة.
+        1989، النافذ منذ 19 جانفي 1989. والانخراط فيه اختياري، لكنّه يشمل وجوبًا الجرايات
+        والتأمينات الاجتماعية معًا. ويمدّد إلى هؤلاء العملة فصول الأمر عدد 499 لسنة 1974
+        المتعلّقة بالعجز والباقين على قيد الحياة وتصفية الجرايات، وتُفوَّض إدارة الجرايات
+        فيه إلى صندوق التأمين على الشيخوخة والعجز والباقين على قيد الحياة. ويضبط بنفسه
+        قواعد جراية الشيخوخة، المأخوذة عن الأمر عدد 1359 لسنة 1982 الخاصّ بالعملة غير
+        الأجراء في القطاع غير الفلاحي، على أساس شرائح دخل محدّدة بمضاعفات الأجر الأدنى
+        المضمون لمختلف المهن.
       synonymes: [نظام العملة التونسيين بالخارج]
 
   - id: regime-artistes
@@ -3579,51 +3623,318 @@ entries:
       terme: Régime des artistes, créateurs et intellectuels
       definition: >
         Régime de sécurité sociale des artistes, créateurs et intellectuels, créé par
-        la loi n° 2002-104 du 30 décembre 2002 et géré par la CNSS ; il comprend
-        notamment les pensions de vieillesse, d'invalidité et de survivants (art. 1).
-        Le décret n° 2003-894 du 21 avril 2003 en fixe les modalités d'application.
+        la loi n° 2002-104 du 30 décembre 2002, exécutoire le 5 janvier 2003, et géré
+        par la CNSS ; il comprend notamment les pensions de vieillesse, d'invalidité et
+        de survivants (art. 1). Le décret n° 2003-894 du 21 avril 2003, exécutoire le
+        5 mai 2003, en fixe les modalités d'application.
       synonymes: []
     ar:
       terme: نظام الضمان الاجتماعي للفنانين والمبدعين والمثقفين
       definition: >
         نظام الضمان الاجتماعي للفنانين والمبدعين والمثقفين، أحدثه القانون عدد 104 لسنة
-        2002 المؤرّخ في 30 ديسمبر 2002 ويديره الصندوق الوطني للضمان الاجتماعي؛ ويشمل
-        خاصّةً جرايات الشيخوخة والعجز والباقين على قيد الحياة (الفصل 1). ويضبط الأمر عدد
-        894 لسنة 2003 المؤرّخ في 21 أفريل 2003 صيغ تطبيقه.
+        2002 المؤرّخ في 30 ديسمبر 2002، النافذ منذ 5 جانفي 2003، ويديره الصندوق الوطني
+        للضمان الاجتماعي؛ ويشمل خاصّةً جرايات الشيخوخة والعجز والباقين على قيد الحياة
+        (الفصل 1). ويضبط الأمر عدد 894 لسنة 2003 المؤرّخ في 21 أفريل 2003، النافذ منذ 5
+        ماي 2003، صيغ تطبيقه.
       synonymes: [نظام الفنانين والمبدعين والمثقفين]
 
   - id: regime-bas-revenus
     acronyme: null
-    statut: valide  # correspondance avec la loi n° 2002-32 attestée ; terme AR à confirmer — cf. issue #151
-    references: []
-    source_definition: {ref: loi2002-32, locator: "art. 1"}
+    # Correspondance avec la loi n° 2002-32 attestée. La loi ne nomme pas le régime
+    # (éd. ar. : « نظام الضمان الاجتماعي لبعض الأصناف من العملة في القطاعين الفلاحي
+    # وغير الفلاحي ») ; le terme AR est celui de l'usage de la CNSS (annuaire
+    # statistique 2017, 12e partie, vérifié le 23/09/2026). Il remplace « نظام العملة
+    # ذوي الدخل الضعيف », non attesté. Pas de source_traduction officielle — cf. issue #151.
+    statut: valide
+    references: [decret2002-916, decret2019-379]
+    source_definition: {ref: loi2002-32, locator: "art. 1, 7, 13 et 14"}
     voir_aussi: [cnss, rsna, rsa]
     fr:
       terme: Régime des travailleurs à faibles revenus
       definition: >
-        Régime de sécurité sociale institué par la loi n° 2002-32 du 12 mars 2002 pour
-        certaines catégories de travailleurs des secteurs agricole et non agricole :
+        Régime de sécurité sociale institué par la loi n° 2002-32 du 12 mars 2002,
+        exécutoire le 21 mars 2002, pour certaines catégories de travailleurs des secteurs agricole et non agricole :
         les employés de maison ; les personnes employées par l'État, les collectivités
         locales et les établissements publics administratifs qui ne sont couvertes par
         aucun autre régime ; les petits pêcheurs et petits armateurs ; les
         agriculteurs exploitant au plus cinq hectares en sec ou un hectare en irrigué ;
         les artisans travaillant à la pièce (art. 1). La loi ne lui donne pas de nom
         abrégé. La pension de vieillesse y est ouverte à 65 ans après 120 mois de
-        cotisations, pour un montant minimum de 30 % du salaire minimum garanti du
-        secteur, dans la limite de 80 % (art. 13-14).
+        cotisations ; son montant minimum est de 30 % du salaire minimum garanti du
+        secteur, majoré, par trimestre supplémentaire, de 0,5 % du salaire ayant servi
+        au calcul des cotisations — les deux tiers de ce salaire minimum —, dans la
+        limite de 80 % de ce salaire (art. 7, 13 et 14). Le décret n° 2002-916 du
+        22 avril 2002, exécutoire le 7 mai 2002, en fixe les modalités d'application ;
+        le décret gouvernemental n° 2019-379 du 22 avril 2019, exécutoire le 4 mai
+        2019, l'étend aux femmes récoltant les huîtres et aux
+        ouvriers saisonniers et mobiles du milieu rural travaillant dans le secteur
+        agricole, y compris la femme employée dans ce secteur.
       synonymes: [Régime des bas revenus]
     ar:
-      terme: نظام العملة ذوي الدخل الضعيف
+      terme: نظام العملة ذوي الدخل المحدود
       definition: >
-        نظام الضمان الاجتماعي الذي أحدثه القانون عدد 32 لسنة 2002 المؤرّخ في 12 مارس 2002
-        لبعض أصناف العملة في القطاعين الفلاحي وغير الفلاحي: عملة المنازل؛ والأشخاص الذين
+        نظام الضمان الاجتماعي الذي أحدثه القانون عدد 32 لسنة 2002 المؤرّخ في 12 مارس 2002،
+        النافذ منذ 21 مارس 2002، لبعض أصناف العملة في القطاعين الفلاحي وغير الفلاحي: عملة المنازل؛ والأشخاص الذين
         تشغّلهم الدولة والجماعات المحلية والمؤسسات العمومية الإدارية غير المشمولين بأيّ
         نظام آخر؛ وصغار البحّارة وصغار المجهّزين؛ والفلاحون الذين يستغلّون خمس هكتارات على
         الأكثر في البعل أو هكتارًا واحدًا في السقوي؛ والحرفيون العاملون بالقطعة (الفصل 1).
         ولا يمنحه القانون تسمية مختصرة. وتُفتح فيه جراية الشيخوخة في سنّ الخامسة والستين بعد
-        120 شهرًا من المساهمات، بمبلغ أدنى يساوي 30 % من الأجر الأدنى المضمون لقطاع
-        انتماء المضمون، في حدود 80 % (الفصلان 13 و14).
-      synonymes: [نظام ذوي الدخل الضعيف]
+        120 شهرًا من المساهمات؛ ويساوي مبلغها الأدنى 30 % من الأجر الأدنى المضمون لقطاع
+        انتماء المضمون، ويُضاف إليه، عن كلّ ثلاثية إضافية، 0,5 % من الأجر المعتمد لاحتساب
+        الاشتراكات — أي ثلثي هذا الأجر الأدنى —، في حدود 80 % من هذا الأجر (الفصول 7 و13
+        و14). ويضبط الأمر عدد 916 لسنة 2002 المؤرّخ في 22 أفريل 2002، النافذ منذ 7 ماي
+        2002، أساليب تطبيقه؛ ووسّعه الأمر الحكومي عدد 379 لسنة 2019 المؤرّخ في 22 أفريل
+        2019، النافذ منذ 4 ماي 2019، إلى النساء الجامعات للمحار والعملة الموسميين والمتنقّلين
+        المنتمين إلى الوسط الريفي والعاملين في القطاع الفلاحي، بمن في ذلك المرأة
+        المستخدمة في هذا القطاع.
+      synonymes: []
+
+  # --- Autres régimes de la CNSS (passe 1 du 23/09/2026 : termes et sources ;
+  #     définitions rédigées en passe 2 le même jour, après ancrage dans la prose)
+
+  - id: regime-complementaire
+    acronyme: null
+    # FR : intitulé de l'arrêté du 18 novembre 1978 (« règlement d'un régime
+    # complémentaire de pension de vieillesse, d'invalidité et de survivants »).
+    # AR : édition arabe du JORT n° 79/1978, lue à l'OCR le 23/09/2026 (« ترتيب النظام
+    # التكميلي لجراية الشيخوخة والعجز والبقاء بقيد الحياة بعد وفاة منتفع بجراية ») ;
+    # « النظام التكميلي للجرايات » est l'intitulé de la 4e partie de l'annuaire CNSS 2017.
+    # Terme attesté ; passé `valide` en passe 2 (23/09/2026). Dans la définition AR,
+    # « قيمة النقطة » (valeur du point) et « الأجر المرجعي للفترة » (salaire de référence
+    # de la période) sont des rendus du terminologue : le texte arabe du règlement n'a
+    # pas été relu sur ces deux mots.
+    statut: valide
+    references: [arrete-1997-01-27-retraite-complementaire, decret94-1477]
+    source_definition: {ref: arrete-1978-11-18-retraite-complementaire, locator: "art. 2 et règlement, art. 1, 3-4, 6, 10 et 17"}
+    source_traduction: {ref: arrete-1978-11-18-retraite-complementaire}
+    voir_aussi: [salaire-differentiel, rsna, cavis, regime-conventionnel-retraite]
+    fr:
+      terme: Régime complémentaire
+      definition: >
+        Régime facultatif de pension de vieillesse, d'invalidité et de survivants du
+        secteur privé, organisé par un règlement publié par arrêté du ministre des
+        affaires sociales du 18 novembre 1978, applicable à compter du 1^er^ janvier
+        1974 (art. 2). Les employeurs y adhèrent par contrat auprès de la CAVIS
+        (règlement, art. 3-4), dont les régimes ont été transférés à la CNSS en 1994.
+        Il porte sur la fraction du salaire qui excède la limite de calcul des
+        prestations du régime légal, c'est-à-dire sur le salaire différentiel
+        (règlement, art. 1 et 6). C'est un régime par points : chaque période de
+        cotisation acquiert des points égaux à la cotisation contractuelle divisée par
+        le salaire de référence de la période, et la pension est le nombre de points
+        multiplié par la valeur du point (règlement, art. 10 et 17). L'arrêté du
+        27 janvier 1997, exécutoire le 16 février 1997, ouvre la pension de réversion
+        au conjoint survivant et ne suspend plus la pension qu'en cas de remariage
+        avant 55 ans.
+      synonymes: ["Régime complémentaire de pension de vieillesse, d'invalidité et de survivants"]
+    ar:
+      terme: النظام التكميلي
+      definition: >
+        نظام اختياري لجرايات الشيخوخة والعجز والباقين على قيد الحياة في القطاع الخاصّ،
+        ينظّمه ترتيب صدر بقرار من وزير الشؤون الاجتماعية مؤرّخ في 18 نوفمبر 1978، ينطبق
+        بداية من غرّة جانفي 1974 (الفصل 2). وينخرط فيه المؤجّرون بعقد لدى صندوق تأمين
+        الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع بجراية (الترتيب، الفصلان 3
+        و4)، الذي أُحيلت أنظمته إلى الصندوق الوطني للضمان الاجتماعي سنة 1994. ويقوم على
+        جزء الأجر الذي يتجاوز سقف احتساب المنافع في النظام القانوني، أي على الأجر
+        التفاضلي (الترتيب، الفصلان 1 و6). وهو نظام بالنقاط: تكتسب كلّ فترة اشتراك نقاطًا
+        تساوي المساهمة التعاقدية مقسومةً على الأجر المرجعي للفترة، والجراية هي عدد
+        النقاط مضروبًا في قيمة النقطة (الترتيب، الفصلان 10 و17). وفتح القرار المؤرّخ في
+        27 جانفي 1997، النافذ منذ 16 فيفري 1997، جراية الباقين على قيد الحياة للقرين
+        الباقي على قيد الحياة، ولم يعد يعلّق الجراية إلّا في حالة الزواج من جديد قبل سنّ
+        55 سنة.
+      synonymes: [النظام التكميلي لجراية الشيخوخة والعجز والبقاء بقيد الحياة بعد وفاة منتفع بجراية, النظام التكميلي للجرايات]
+
+  - id: classe-de-revenus
+    acronyme: null
+    # FR et AR : décret n° 95-1166, art. 7 (« classe de revenus » / « شريحة الدخل »),
+    # édition arabe du JORT n° 55/1995 lue à l'OCR le 23/09/2026. Le même terme arabe
+    # figure au décret-loi n° 2020-33, art. 7 (« الانخراط بشريحة دخل »).
+    # À ne pas confondre avec `tranche-de-revenu` (barème de l'IRPP, AR « شريحة »).
+    statut: valide
+    references: [decret82-1359, decret89-1611, decret89-107, decret2003-894]
+    source_definition: {ref: decret95-1166, locator: "art. 7"}
+    source_traduction: {ref: decret95-1166, locator: "art. 7"}
+    voir_aussi: [revenu-forfaitaire, rtns, rtte, regime-artistes, smig, smag]
+    fr:
+      terme: Classe de revenus
+      definition: >
+        Dans les régimes de la CNSS dont l'assiette n'est pas un revenu déclaré, niveau
+        de revenu forfaitaire auquel l'assuré choisit d'adhérer, qui fixe ses
+        cotisations et entre dans le calcul de sa pension. Les travailleurs non
+        salariés non agricoles cotisent en 1982 sur six classes fixées en dinars
+        (décret n° 82-1359, art. 7), puis, en 1989, sur neuf classes de 2/3 à 15 fois
+        le SMIG (décret n° 89-1611) ; depuis le décret n° 95-1166, les non-salariés des
+        deux secteurs choisissent entre dix classes, de 1 à 18 fois le SMIG ou le SMAG
+        (art. 7). Les travailleurs tunisiens à l'étranger disposent de quatre classes,
+        de 2, 4, 6 et 9 fois le SMIG (décret n° 89-107, art. 6), et les artistes,
+        créateurs et intellectuels de dix classes, de 2 à 18 fois le SMIG (décret
+        n° 2003-894, art. 5). Depuis 1989, le revenu de référence de la pension est la
+        moyenne pondérée des coefficients des classes auxquelles l'assuré a adhéré,
+        appliquée au salaire minimum. Ne se confond pas avec la tranche du barème de
+        l'impôt sur le revenu.
+      synonymes: [Classe de revenu]
+    ar:
+      terme: شريحة الدخل
+      definition: >
+        في أنظمة الصندوق الوطني للضمان الاجتماعي التي لا تقوم فيها الاشتراكات على دخل
+        مصرّح به، مستوى من الدخل التقديري يختار المضمون الانخراط فيه، تُضبط على أساسه
+        اشتراكاته ويدخل في احتساب جرايته. ففي سنة 1982، كان العملة غير الأجراء في القطاع
+        غير الفلاحي يساهمون على أساس ستّ شرائح محدّدة بالدينار (الأمر عدد 1359 لسنة 1982،
+        الفصل 7)، ثمّ، سنة 1989، على أساس تسع شرائح من ثلثي الأجر الأدنى المضمون لمختلف
+        المهن إلى 15 مرّة منه (الأمر عدد 1611 لسنة 1989)؛ ومنذ الأمر عدد 1166 لسنة 1995،
+        يختار العملة غير الأجراء في القطاعين بين عشر شرائح، من مرّة واحدة إلى 18 مرّة
+        الأجر الأدنى المضمون لمختلف المهن أو الأجر الأدنى الفلاحي المضمون (الفصل 7).
+        وللعملة التونسيين بالخارج أربع شرائح تساوي 2 و4 و6 و9 مرّات الأجر الأدنى المضمون
+        لمختلف المهن (الأمر عدد 107 لسنة 1989، الفصل 6)، وللفنانين والمبدعين والمثقفين
+        عشر شرائح، من 2 إلى 18 مرّة هذا الأجر (الأمر عدد 894 لسنة 2003، الفصل 5). ومنذ
+        سنة 1989، يساوي الدخل المرجعي للجراية المعدّلَ المرجّح لمعاملات الشرائح التي انخرط
+        فيها المضمون، مطبّقًا على الأجر الأدنى. ولا تُخلط بشريحة جدول الضريبة على الدخل.
+      synonymes: []
+
+  - id: revenu-forfaitaire
+    acronyme: null
+    # FR et AR : décret n° 95-1166, art. 7 (« revenu forfaitaire » / « دخل تقديري »),
+    # édition arabe du JORT n° 55/1995 lue à l'OCR le 23/09/2026. Cohérent avec
+    # `regime-forfaitaire` (fiscalité), où « forfaitaire » se rend par « تقديري ».
+    # Définition AR (passe 2) : « بالمناب » (à la part) et « طنًّا » (tonneaux) sont des
+    # rendus du terminologue, non relus sur l'édition arabe du décret n° 77-546.
+    statut: valide
+    references: [decret82-1359, decret89-107, decret77-546, loi89-73]
+    source_definition: {ref: decret95-1166, locator: "art. 7"}
+    source_traduction: {ref: decret95-1166, locator: "art. 7"}
+    voir_aussi: [classe-de-revenus, rtns, smig, smag]
+    fr:
+      terme: Revenu forfaitaire
+      definition: >
+        Revenu conventionnel, et non constaté, sur lequel reposent les cotisations, et
+        par suite la pension, des assurés dont le revenu réel n'est pas déclaré. Dans
+        le régime des travailleurs non salariés, c'est le revenu de la classe de
+        revenus choisie par l'assuré : la pension de 1982 se calcule sur la moyenne
+        pondérée des revenus forfaitaires de la carrière (décret n° 82-1359, art. 19),
+        et, depuis 1995, les classes sont des multiples du SMIG ou du SMAG (décret
+        n° 95-1166, art. 7). Les travailleurs tunisiens à l'étranger cotisent de même
+        sur le revenu forfaitaire de leur classe (décret n° 89-107, art. 7). Pour les
+        pêcheurs à la part embarqués sur des bateaux de moins de 30 tonneaux, les
+        pêcheurs indépendants et les petits armateurs, l'assiette était égale au SMIG
+        mensuel affecté d'un coefficient de 1 à 3 selon la fonction à bord (décret
+        n° 77-546, art. 3), de 1977 à leur passage au régime agricole amélioré au
+        1^er^ octobre 1989 (loi n° 89-73).
+      synonymes: []
+    ar:
+      terme: الدخل التقديري
+      definition: >
+        دخل اصطلاحي، لا دخل فعلي، تقوم عليه الاشتراكات، ومن ثَمّ الجراية، بالنسبة إلى
+        المضمونين الذين لا يُصرَّح بدخلهم الحقيقي. ففي نظام العملة غير الأجراء، هو دخل
+        شريحة الدخل التي يختارها المضمون: تُحتسب جراية سنة 1982 على أساس المعدّل المرجّح
+        للمداخيل التقديرية طيلة الحياة المهنية (الأمر عدد 1359 لسنة 1982، الفصل 19)، ومنذ
+        سنة 1995 تُضبط الشرائح بمضاعفات الأجر الأدنى المضمون لمختلف المهن أو الأجر الأدنى
+        الفلاحي المضمون (الأمر عدد 1166 لسنة 1995، الفصل 7). ويساهم العملة التونسيون
+        بالخارج كذلك على أساس الدخل التقديري لشريحتهم (الأمر عدد 107 لسنة 1989، الفصل 7).
+        وبالنسبة إلى الصيادين البحريين العاملين بالمناب على متن مراكب تقلّ حمولتها عن 30
+        طنًّا، والصيادين المستقلّين وصغار المجهّزين، كانت قاعدة الاشتراك تساوي الأجر الأدنى
+        المضمون لمختلف المهن الشهري مضروبًا في معامل من 1 إلى 3 حسب الوظيفة على متن
+        المركب (الأمر عدد 546 لسنة 1977، الفصل 3)، من سنة 1977 إلى إحالتهم، بداية من غرّة
+        أكتوبر 1989، إلى النظام المنصوص عليه بالعنوان الثالث من القانون عدد 6 لسنة 1981
+        (القانون عدد 73 لسنة 1989).
+      synonymes: []
+
+  - id: regime-travailleuses-agricoles
+    acronyme: null
+    # FR et AR : intitulé du titre III, chapitre premier, du décret-loi n° 2024-4 du
+    # 22 octobre 2024 (« Le régime de sécurité sociale des travailleuses agricoles » /
+    # « نظام الضمان الاجتماعي للعاملات الفلاحيات », JORT n° 129/2024, couche texte des
+    # deux éditions, lue le 23/09/2026). Plus étroit que l'intitulé du décret-loi
+    # (« régime de protection sociale » / « نظام الحماية الاجتماعية »).
+    statut: valide
+    references: []
+    source_definition: {ref: decret-loi2024-4, locator: "art. 1, 17-18, 20, 23, 26-27 et 33"}
+    source_traduction: {ref: decret-loi2024-4, locator: "titre III, chap. 1"}
+    voir_aussi: [cnss, rsa, regime-bas-revenus]
+    fr:
+      terme: Régime de sécurité sociale des travailleuses agricoles
+      definition: >
+        Régime spécifique de sécurité sociale des travailleuses agricoles, institué par
+        le décret-loi n° 2024-4 du 22 octobre 2024, relatif au régime de protection
+        sociale des travailleuses agricoles, exécutoire le 28 octobre 2024, et géré par
+        la CNSS ; il comporte les prestations de l'assurance maladie et les pensions de
+        vieillesse, d'invalidité et de survivants (art. 1, 17 et 18). Il couvre la
+        travailleuse agricole non salariée, à titre principal et pour son propre
+        compte, et la salariée qui travaille au moins 15 jours par mois, en moyenne au
+        moins 45 jours par trimestre ou 180 jours par an, sauf si son employeur est
+        affilié à un régime légal couvrant les mêmes risques pour tous ses employés
+        (art. 17). L'État prend en charge ses cotisations pendant les trois premières
+        années d'activité (art. 20 et 23). La pension de vieillesse est ouverte à
+        65 ans, ou dès 60 ans, après 120 mois de cotisations effectives et validées
+        (art. 26-27) ; ses taux et ses modalités sont renvoyés à un décret (art. 33).
+      synonymes: [Régime spécifique de sécurité sociale des travailleuses agricoles]
+    ar:
+      terme: نظام الضمان الاجتماعي للعاملات الفلاحيات
+      definition: >
+        نظام خاصّ للضمان الاجتماعي للعاملات الفلاحيات، أحدثه المرسوم عدد 4 لسنة 2024
+        المؤرّخ في 22 أكتوبر 2024 المتعلّق بنظام الحماية الاجتماعية للعاملات الفلاحيات،
+        النافذ منذ 28 أكتوبر 2024، ويديره الصندوق الوطني للضمان الاجتماعي؛ ويشمل منافع
+        التأمين على المرض وجرايات الشيخوخة والعجز والباقين على قيد الحياة (الفصول 1 و17
+        و18). ويغطّي العاملة الفلاحية غير الأجيرة التي تعمل بصفة أساسية ولحسابها الخاصّ،
+        والأجيرة التي تعمل 15 يومًا على الأقلّ في الشهر، بمعدّل 45 يومًا على الأقلّ في
+        الثلاثية أو 180 يومًا في السنة، ما لم يكن مؤجّرها منخرطًا في نظام قانوني يغطّي
+        نفس المخاطر لفائدة جميع أجرائه (الفصل 17). وتتكفّل الدولة باشتراكاتها خلال
+        السنوات الثلاث الأولى من النشاط (الفصلان 20 و23). وتُفتح جراية الشيخوخة في سنّ 65
+        سنة، أو ابتداءً من 60 سنة، بعد 120 شهرًا من الاشتراكات الفعلية والمصادق عليها
+        (الفصلان 26 و27)؛ ويُحيل المرسوم ضبط نسبها وصيغها إلى أمر (الفصل 33).
+      synonymes: [النظام الخاص للضمان الاجتماعي للعاملات الفلاحيات]
+
+  - id: securite-sociale-pecheurs
+    acronyme: null
+    # Extension aux pêcheurs du régime de 1974, sans règle de pension propre : ce
+    # n'est pas un régime à part entière, d'où l'intitulé du décret plutôt que
+    # « régime des pêcheurs ». FR : décret n° 77-546 du 15 juin 1977 « organisant la
+    # sécurité sociale des pêcheurs » ; AR : « يتعلق بالضمان الاجتماعي للصيادين
+    # البحريين » (JORT ar. n° 43/1977, p. 1783, lu à l'OCR le 23/09/2026).
+    # Définition AR (passe 2) : le régime agricole amélioré y est désigné par une
+    # périphrase (« النظام المنصوص عليه بالعنوان الثالث من القانون عدد 6 لسنة 1981 »)
+    # tant que son terme arabe principal n'est pas tranché ; « بالمناب » et « طنًّا »
+    # sont des rendus du terminologue, non relus sur l'édition arabe du décret.
+    statut: valide
+    references: [decret80-103, decret82-1028, loi89-73, loi2002-32]
+    source_definition: {ref: decret77-546, locator: "art. 1, 3 et 4"}
+    source_traduction: {ref: decret77-546}
+    voir_aussi: [rsna, rsaa, regime-bas-revenus, revenu-forfaitaire]
+    fr:
+      terme: Sécurité sociale des pêcheurs
+      definition: >
+        Extension aux pêcheurs, par le décret n° 77-546 du 15 juin 1977, obligatoire
+        le 23 juin 1977, des régimes de sécurité sociale issus des lois n° 60-30 et
+        60-33 et du décret n° 74-499 : elle vise les pêcheurs, les patrons pêcheurs même
+        propriétaires de leur barque, les armateurs travaillant sur un bateau de pêche
+        dont ils assurent l'équipement, et les petits armateurs (art. 1). Ce n'est pas
+        un régime de pension distinct : la pension des pêcheurs est celle du régime des
+        salariés non agricoles. Sa particularité est l'assiette : pour les pêcheurs à
+        la part embarqués sur des bateaux de moins de 30 tonneaux, les pêcheurs
+        indépendants et les petits armateurs, les cotisations reposent sur un revenu
+        forfaitaire égal au SMIG mensuel affecté d'un coefficient de 1 à 3 selon la
+        fonction à bord (art. 3) ; sur les bateaux de 30 tonneaux et plus, sur le
+        salaire réel (art. 4). La loi n° 89-73 fait passer les premiers au régime
+        agricole amélioré au 1^er^ octobre 1989 et, depuis la loi n° 2002-32, les
+        pêcheurs des bateaux de cinq tonneaux au plus relèvent du régime des
+        travailleurs à faibles revenus.
+      synonymes: []
+    ar:
+      terme: الضمان الاجتماعي للصيادين البحريين
+      definition: >
+        تمديد أنظمة الضمان الاجتماعي المترتّبة عن القانونين عدد 30 وعدد 33 لسنة 1960 وعن
+        الأمر عدد 499 لسنة 1974 إلى الصيادين البحريين، بمقتضى الأمر عدد 546 لسنة 1977
+        المؤرّخ في 15 جوان 1977، النافذ منذ 23 جوان 1977؛ ويشمل الصيادين، وأرباب الصيد
+        ولو كانوا مالكين لمراكبهم، والمجهّزين الذين يعملون على متن مركب صيد يتولّون
+        تجهيزه، وصغار المجهّزين (الفصل 1). وليس نظامًا مستقلًّا للجرايات: فجراية الصيادين
+        البحريين هي جراية نظام الأجراء غير الفلاحيين. وتكمن خصوصيته في قاعدة الاشتراك:
+        فبالنسبة إلى الصيادين العاملين بالمناب على متن مراكب تقلّ حمولتها عن 30 طنًّا،
+        والصيادين المستقلّين وصغار المجهّزين، تقوم الاشتراكات على دخل تقديري يساوي الأجر
+        الأدنى المضمون لمختلف المهن الشهري مضروبًا في معامل من 1 إلى 3 حسب الوظيفة على
+        متن المركب (الفصل 3)؛ وعلى متن المراكب التي تبلغ حمولتها 30 طنًّا فأكثر، تقوم على
+        الأجر الفعلي (الفصل 4). وأحال القانون عدد 73 لسنة 1989 الفئة الأولى، بداية من غرّة
+        أكتوبر 1989، إلى النظام المنصوص عليه بالعنوان الثالث من القانون عدد 6 لسنة 1981؛
+        ومنذ القانون عدد 32 لسنة 2002، يخضع الصيادون العاملون على مراكب لا تتجاوز حمولتها
+        خمسة أطنان لنظام العملة ذوي الدخل المحدود.
+      synonymes: []
 
   # --- Index
 
