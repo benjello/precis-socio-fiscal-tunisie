@@ -1,30 +1,30 @@
-- libelle: التقاعد — الحصة الأجيرية
+- libelle: التقاعد — مساهمة الأجراء
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsaa/cotisations_salarie/retraite.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsaa.cotisations_salarie.retraite/table/
-- libelle: التقاعد — الحصة المشغِّلة
+- libelle: التقاعد — مساهمة الأعراف
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsaa/cotisations_employeur/retraite.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsaa.cotisations_employeur.retraite/table/
-- libelle: المرض — الحصة الأجيرية
+- libelle: المرض — مساهمة الأجراء
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsaa/cotisations_salarie/assurances_sociales/maladie.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsaa.cotisations_salarie.assurances_sociales.maladie/table/
-- libelle: المرض — الحصة المشغِّلة
+- libelle: المرض — مساهمة الأعراف
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsaa/cotisations_employeur/assurances_sociales/maladie.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsaa.cotisations_employeur.assurances_sociales.maladie/table/
-- libelle: الولادة — الحصة الأجيرية
+- libelle: الولادة — مساهمة الأجراء
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsaa/cotisations_salarie/assurances_sociales/maternite.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsaa.cotisations_salarie.assurances_sociales.maternite/table/
-- libelle: الولادة — الحصة المشغِّلة
+- libelle: الولادة — مساهمة الأعراف
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsaa/cotisations_employeur/assurances_sociales/maternite.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsaa.cotisations_employeur.assurances_sociales.maternite/table/
-- libelle: الوفاة — الحصة الأجيرية
+- libelle: الوفاة — مساهمة الأجراء
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsaa/cotisations_salarie/assurances_sociales/deces.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsaa.cotisations_salarie.assurances_sociales.deces/table/
-- libelle: الوفاة — الحصة المشغِّلة
+- libelle: الوفاة — مساهمة الأعراف
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsaa/cotisations_employeur/assurances_sociales/deces.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsaa.cotisations_employeur.assurances_sociales.deces/table/
-- libelle: المنح العائلية — الحصة الأجيرية
+- libelle: المنح العائلية — مساهمة الأجراء
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsaa/cotisations_salarie/famille.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsaa.cotisations_salarie.famille/table/
-- libelle: المنح العائلية — الحصة المشغِّلة
+- libelle: المنح العائلية — مساهمة الأعراف
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsaa/cotisations_employeur/famille.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsaa.cotisations_employeur.famille/table/

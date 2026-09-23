@@ -1,4 +1,4 @@
-| Branche | Part salariale | Part patronale | Total |
+| Branche | Cotisation de l'assuré | Part patronale | Total |
 |---|---:|---:|---:|
 | Retraite | 5,25 % | — | 5,25 % |
 | Maladie | 6,75 % | — | 6,75 % |

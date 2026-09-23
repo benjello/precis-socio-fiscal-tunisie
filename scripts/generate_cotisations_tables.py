@@ -36,6 +36,7 @@ MOTS = {
     "fr": {
         "effet": "Effet", "texte": "Texte", "branche": "Branche",
         "salarie": "Part salariale", "employeur": "Part patronale",
+        "assure": "Cotisation de l'assuré",
         "total": "Total", "regime": "Régime", "taux": "Taux",
         "total_obligatoire": "**Total obligatoire**",
         "tranche": "Tranche d'assiette (en SMIG)",
@@ -50,7 +51,8 @@ MOTS = {
     },
     "ar": {
         "effet": "بداية السريان", "texte": "النصّ", "branche": "الفرع",
-        "salarie": "الحصة الأجيرية", "employeur": "الحصة المشغِّلة",
+        "salarie": "مساهمة الأجراء", "employeur": "مساهمة الأعراف",
+        "assure": "اشتراك المضمون",
         "total": "المجموع", "regime": "النظام", "taux": "النسبة",
         "total_obligatoire": "**المجموع الوجوبي**",
         "tranche": "شريحة الوعاء (بالأجر الأدنى)",
@@ -161,6 +163,13 @@ def branches(regime: str):
         # doit garder le tiret jusque dans sa ligne de total : y écrire « 0 % » ferait
         # croire à une part patronale nulle là où il n'y a pas d'employeur.
         vu = {"salarie": False, "employeur": False}
+        # Sans employeur, la cotisation est celle de l'assuré lui-même : les textes disent
+        # « les cotisations des assurés » / « اشتراكات المضمونين » (décret n° 89-107, art. 9 ;
+        # décret n° 95-1166, art. 10), jamais « part salariale ».
+        sans_employeur = all(
+            _dernier(f"{PRIVE}/{regime}/cotisations_employeur/{r}") is None
+            for _c, r in ORDRE_BRANCHES)
+        col_sal = m["assure"] if sans_employeur else m["salarie"]
         for cle, relatif in ORDRE_BRANCHES:
             sal = _dernier(f"{PRIVE}/{regime}/cotisations_salarie/{relatif}")
             emp = _dernier(f"{PRIVE}/{regime}/cotisations_employeur/{relatif}")
@@ -169,7 +178,7 @@ def branches(regime: str):
             for cote, taux in (("salarie", sal), ("employeur", emp)):
                 if taux is not None:
                     ot.releve_note(f"{PRIVE}/{regime}/cotisations_{cote}/{relatif}",
-                                   f"{m[cle]} — {m[cote]}")
+                                   f"{m[cle]} — {col_sal if cote == 'salarie' else m[cote]}")
             # La retraite complémentaire est affichée mais reste hors du total : elle est
             # facultative, et c'est le total obligatoire qui doit coïncider au centième
             # près avec celui du tableau de synthèse — d'où un cumul sur les valeurs
@@ -181,7 +190,7 @@ def branches(regime: str):
                 vu["employeur"] |= emp is not None
             lignes.append({
                 m["branche"]: m[cle],
-                m["salarie"]: _taux(langue)(sal),
+                col_sal: _taux(langue)(sal),
                 m["employeur"]: _taux(langue)(emp),
                 m["total"]: _taux(langue)((sal or 0) + (emp or 0)),
             })
@@ -189,7 +198,7 @@ def branches(regime: str):
             return pd.DataFrame()
         lignes.append({
             m["branche"]: m["total_obligatoire"],
-            m["salarie"]: _taux(langue)(cumul["salarie"] if vu["salarie"] else None),
+            col_sal: _taux(langue)(cumul["salarie"] if vu["salarie"] else None),
             m["employeur"]: _taux(langue)(cumul["employeur"] if vu["employeur"] else None),
             m["total"]: _taux(langue)(cumul["salarie"] + cumul["employeur"]),
         })
@@ -213,7 +222,9 @@ def coin_par_regime(langue):
         # nœud, dont la page publique aligne chaque branche avec ses dates et ses textes.
         for cote, total in totaux.items():
             if total is not None:
-                ot.releve_note(f"{PRIVE}/{code}/cotisations_{cote}", f"{nom} — {m[cote]}")
+                libelle = m["assure"] if cote == "salarie" and totaux["employeur"] is None \
+                    else m[cote]
+                ot.releve_note(f"{PRIVE}/{code}/cotisations_{cote}", f"{nom} — {libelle}")
         if marque == "forfait":
             nom += NOTE_FORFAIT[langue]
         lignes.append({

@@ -1,33 +1,33 @@
-- libelle: الأجراء غير الفلاحيين — الحصة الأجيرية
+- libelle: الأجراء غير الفلاحيين — مساهمة الأجراء
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsna/cotisations_salarie
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsna.cotisations_salarie/table/
-- libelle: الأجراء غير الفلاحيين — الحصة المشغِّلة
+- libelle: الأجراء غير الفلاحيين — مساهمة الأعراف
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsna/cotisations_employeur
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsna.cotisations_employeur/table/
-- libelle: الأجراء الفلاحيون — الحصة الأجيرية
+- libelle: الأجراء الفلاحيون — مساهمة الأجراء
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsa/cotisations_salarie
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsa.cotisations_salarie/table/
-- libelle: الأجراء الفلاحيون — الحصة المشغِّلة
+- libelle: الأجراء الفلاحيون — مساهمة الأعراف
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsa/cotisations_employeur
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsa.cotisations_employeur/table/
-- libelle: الأجراء الفلاحيون، النظام المحسّن — الحصة الأجيرية
+- libelle: الأجراء الفلاحيون، النظام المحسّن — مساهمة الأجراء
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsaa/cotisations_salarie
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsaa.cotisations_salarie/table/
-- libelle: الأجراء الفلاحيون، النظام المحسّن — الحصة المشغِّلة
+- libelle: الأجراء الفلاحيون، النظام المحسّن — مساهمة الأعراف
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsaa/cotisations_employeur
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsaa.cotisations_employeur/table/
-- libelle: العملة غير الأجراء — الحصة الأجيرية
+- libelle: العملة غير الأجراء — اشتراك المضمون
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtns/cotisations_salarie
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtns.cotisations_salarie/table/
-- libelle: الفنانون والمبدعون والمثقفون — الحصة الأجيرية
+- libelle: الفنانون والمبدعون والمثقفون — اشتراك المضمون
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/raci/cotisations_salarie
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.raci.cotisations_salarie/table/
-- libelle: العملة ذوو الدخل الضعيف — الحصة الأجيرية
+- libelle: العملة ذوو الدخل الضعيف — مساهمة الأجراء
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtfr/cotisations_salarie
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtfr.cotisations_salarie/table/
-- libelle: العملة ذوو الدخل الضعيف — الحصة المشغِّلة
+- libelle: العملة ذوو الدخل الضعيف — مساهمة الأعراف
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtfr/cotisations_employeur
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtfr.cotisations_employeur/table/
-- libelle: التونسيون بالخارج — الحصة الأجيرية
+- libelle: التونسيون بالخارج — اشتراك المضمون
   parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rtte/cotisations_salarie
   url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rtte.cotisations_salarie/table/

@@ -6,27 +6,9 @@
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
-import datetime
 import openfisca_tables as ot
 
-BAREME = "parameters/impot_revenu/bareme.yaml"
 TABLES = Path.cwd() / "tables"
-
-
-def bareme(annee, entete, taux_effectif=False):
-    """Barème d'une année de revenus : openfisca-tunisia si disponible, sinon snapshot."""
-    return ot.get_table_or_static(
-        lambda: ot.tableau_bareme(
-            BAREME,
-            datetime.date(annee, 1, 1),
-            colonne_tranche=entete,
-            avec_taux_effectif=taux_effectif,
-        ),
-        TABLES / f"bareme_{annee}.md",
-    )
-
-
-COL_IRPP = "Tranche de revenu annuel net (dinars)"
 
 
 def table(nom, legende, label):
@@ -70,11 +52,11 @@ Les impôts cédulaires eux-mêmes procédaient de textes échelonnés sur plusi
 Le dernier barème de la contribution personnelle d'État avant la réforme résulte de l'article 8 de la loi n° 85-109 du 31 décembre 1985 portant loi de finances pour la gestion 1986, qui abroge et remplace l'article 8 du décret du 31 mars 1932 [@lf-1986, art. 8]. Il comportait **dix-huit tranches** et un [taux marginal](#g-taux-marginal) supérieur de **68 % au-delà de 80 000 dinars**. Le texte légal publiait, à côté du taux de chaque tranche, le taux d'imposition du revenu global atteint à la limite supérieure de celle-ci — une présentation rare, qui permet de lire directement la charge effective.
 
 ```{python}
-#| label: tbl-bareme-cpe-1986
-#| tbl-cap: "Barème de la contribution personnelle d'État applicable aux revenus de 1986 (art. 8 de la loi n° 85-109 du 31 décembre 1985)"
 #| echo: false
-# Barème antérieur au code de 1989 : non modélisé dans openfisca-tunisia, snapshot seul.
-ot.get_table_or_static(lambda: None, TABLES / "bareme_cpe_1986.md").style.hide(axis="index")
+#| output: asis
+table("bareme_cpe_1986",
+      "Barème de la contribution personnelle d'État applicable aux revenus de 1986 (art. 8 de la loi n° 85-109 du 31 décembre 1985)",
+      "tbl-bareme-cpe-1986")
 ```
 
 Source : @lf-1986, art. 8 (JORT n° 91 du 31 décembre 1985, p. 1731).
@@ -147,10 +129,11 @@ Dans le cadre du programme d'ajustement structurel engagé à la fin des années
 Le barème d'origine de l'article 44 § I comporte **six tranches** et un taux marginal supérieur de **35 % au-delà de 50 000 dinars** [@code-irpp-is-1990, art. 44]. Comme celui de la contribution personnelle d'État, il est publié avec la colonne des taux d'imposition à la limite supérieure de chaque tranche.
 
 ```{python}
-#| label: tbl-bareme-irpp-1990
-#| tbl-cap: "Barème de l'IRPP applicable aux revenus réalisés à compter du 1^er^ janvier 1990 (art. 44 § I du code)"
 #| echo: false
-bareme(1990, COL_IRPP, taux_effectif=True).style.hide(axis="index")
+#| output: asis
+table("bareme_1990",
+      "Barème de l'IRPP applicable aux revenus réalisés à compter du 1^er^ janvier 1990 (art. 44 § I du code)",
+      "tbl-bareme-irpp-1990")
 ```
 
 Source : @code-irpp-is-1990, art. 44 § I (JORT n° 1 des 2-5 janvier 1990, p. 9).
@@ -176,10 +159,11 @@ Une conséquence mécanique de cette stabilité mérite d'être relevée : les s
 L'article 14 § 1 de la loi n° 2016-78 du 17 décembre 2016 portant loi de finances pour 2017 modifie le § I de l'article 44, sous l'intitulé officiel « Allégement de la charge fiscale des personnes physiques à faible revenu et renforcement de l'équité fiscale » ; les nouvelles dispositions s'appliquent aux revenus réalisés à partir du 1^er^ janvier 2017 [@lf-2017, art. 14].
 
 ```{python}
-#| label: tbl-bareme-irpp-2017
-#| tbl-cap: "Barème de l'IRPP applicable aux revenus réalisés de 2017 à 2024 (art. 14 § 1 de la loi n° 2016-78)"
 #| echo: false
-bareme(2017, COL_IRPP).style.hide(axis="index")
+#| output: asis
+table("bareme_2017",
+      "Barème de l'IRPP applicable aux revenus réalisés de 2017 à 2024 (art. 14 § 1 de la loi n° 2016-78)",
+      "tbl-bareme-irpp-2017")
 ```
 
 Source : @lf-2017, art. 14 § 1 (JORT n° 105 du 27 décembre 2016, p. 3831).
@@ -191,10 +175,11 @@ La réforme relève la limite de la tranche exonérée de 1 500 à 5 000 dinars,
 L'article 36 § 1 de la loi n° 2024-48 du 9 décembre 2024 portant loi de finances pour 2025 modifie de nouveau le § I de l'article 44, pour les revenus réalisés à compter du 1^er^ janvier 2025, sous l'intitulé officiel « Allégement de la charge fiscale des individus et renforcement de l'équité fiscale » [@lf-2025, art. 36]. Le nombre de tranches passe de cinq à huit et le taux marginal supérieur de 35 % à **40 %, applicable au-delà de 70 000 dinars** — et non au-delà de 50 000 dinars, seuil qui correspond désormais à la tranche imposée à 38 %.
 
 ```{python}
-#| label: tbl-bareme-irpp-2025
-#| tbl-cap: "Barème de l'IRPP applicable aux revenus réalisés à compter du 1^er^ janvier 2025 (art. 36 § 1 de la loi n° 2024-48)"
 #| echo: false
-bareme(2025, COL_IRPP).style.hide(axis="index")
+#| output: asis
+table("bareme_2025",
+      "Barème de l'IRPP applicable aux revenus réalisés à compter du 1^er^ janvier 2025 (art. 36 § 1 de la loi n° 2024-48)",
+      "tbl-bareme-irpp-2025")
 ```
 
 Source : @lf-2025, art. 36 § 1 (JORT n° 149 du 10 décembre 2024, tome 167, p. 3429-3430 de l'édition française, p. 6429 de l'édition arabe).
