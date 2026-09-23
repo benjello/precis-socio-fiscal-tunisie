@@ -999,3 +999,55 @@
     فوارق تقريب. تراجع الوحدة الأولى من 48,9 إلى 35,4 ألفاً بين 2023 و2024 دون تفسير
     في التقرير.'
   fiche: sources/ins-fonction-publique-2018-2025.md
+- id: cnss-rsna-taux-equilibre
+  titre: 'CNSS, régime des salariés non agricoles : taux de cotisation d''équilibre
+    de la branche pensions et sa décomposition, 2000-2017'
+  sources:
+  - cnss-annuaires-statistiques
+  build: scripts/build_cnss_rsna_taux_equilibre.py:main
+  raw:
+  - data/processed/caisses/cnss_rsna_annuaires.csv
+  output: data/processed/caisses/cnss_rsna_taux_equilibre.csv
+  unite: taux, millions de dinars, dinars par mois, personnes
+  perimetre: taux d'équilibre = pensions servies par le RSNA sans régime complémentaire,
+    toutes natures ÷ masse salariale déclarée = taux de remplacement apparent (pension
+    moyenne ÷ salaire moyen) × ratio pensionnés / cotisants (pensionnés de toutes
+    natures, orphelins compris ÷ actifs, non-assujettis compris) ; variante avec régime
+    complémentaire à part ; comparé au taux légal de la branche pensions selon deux
+    lectures de l'article 5 b) du décret n° 74-499
+  caveats: 'SÉRIE CALCULÉE. TAUX LÉGAL AMBIGU, EXPOSÉ EN DEUX COLONNES : la quote-part
+    du taux global est fixée en vingtièmes (6,25/20e depuis le 1er janvier 1994, décret
+    n° 94-1429 ; 7,25/20e depuis le 1er janvier 2003, décret n° 2003-1212) alors que
+    le taux global est de 18 % depuis la loi n° 97-4. Lecture « en points » (celle
+    de la caisse, qui publie 12,5 %) : 11,50 % puis 12,50 % ; lecture littérale (X/20
+    × 18 %) : 10,875 % puis 11,775 %, cotisation propre de 5,25 % comprise. POUR 2000-2002
+    AUCUN DOCUMENT DE LA CAISSE LU NE PUBLIE LE TAUX : 11,50 % est déduit du texte.
+    DÉCLARÉ ≠ ENCAISSÉ : le dénominateur est la masse déclarée, non les cotisations
+    recouvrées. NUMÉRATEUR COMPTABLE (« bilans »), DÉNOMINATEUR DÉCLARATIF. Le travail
+    non déclaré est hors champ. La variante avec régime complémentaire ajoute des
+    pensions financées par une cotisation facultative sur la tranche au-delà de six
+    SMIG. RUPTURE DE 2003 (taxis et louages, décret n° 2002-3018). Le salaire moyen,
+    rapporté aux actifs non-assujettis compris, est un peu plus bas que le salaire
+    moyen publié. Pensions de l''année rapportées à des effectifs de fin d''année.'
+  titre_ar: 'الصندوق الوطني للضمان الاجتماعي، نظام الأجراء في القطاع غير الفلاحي:
+    نسبة المساهمة المحقّقة للتوازن في فرع الجرايات ومكوّناتها، 2000-2017'
+  unite_ar: نسب، ملايين الدنانير، دنانير شهرياً، أشخاص
+  perimetre_ar: نسبة التوازن = الجرايات المدفوعة دون النظام التكميلي، بجميع أصنافها
+    ÷ كتلة الأجور المصرّح بها = نسبة التعويض الظاهرة (معدّل الجراية ÷ معدّل الأجر)
+    × نسبة المنتفعين إلى المساهمين (المنتفعون بجميع الأصناف بمن فيهم الأيتام ÷ النشيطون
+    بمن فيهم غير الخاضعين)؛ مع صيغة تشمل النظام التكميلي على حدة؛ وتُقارن بالنسبة
+    القانونية لفرع الجرايات حسب قراءتين للفصل 5 (ب) من الأمر عدد 499 لسنة 1974
+  caveats_ar: 'سلسلة محسوبة. النسبة القانونية ملتبسة وتُعرض في عمودين: الحصّة من النسبة
+    الجملية محدّدة بأجزاء من عشرين (6,25/20 منذ غرّة جانفي 1994، الأمر عدد 1429 لسنة
+    1994؛ 7,25/20 منذ غرّة جانفي 2003، الأمر عدد 1212 لسنة 2003)، في حين أنّ النسبة
+    الجملية 18 % منذ القانون عدد 4 لسنة 1997. القراءة «بالنقاط» (قراءة الصندوق الذي
+    ينشر 12,5 %): 11,50 % ثمّ 12,50 %؛ والقراءة الحرفية (س/20 × 18 %): 10,875 % ثمّ
+    11,775 %، بما في ذلك المساهمة الخاصّة بالنظام وقدرها 5,25 %. لسنوات 2000-2002
+    لا تنشر أيّ وثيقة مقروءة من وثائق الصندوق هذه النسبة: 11,50 % مستنتجة من النصّ.
+    المصرّح به ليس المستخلص: المقام كتلة الأجور المصرّح بها لا الاشتراكات المستخلصة.
+    البسط محاسبي (الموازنة) والمقام تصريحي. العمل غير المصرّح به خارج المجال. الصيغة
+    التي تشمل النظام التكميلي تضيف جرايات تموّلها مساهمة اختيارية على شريحة الأجر
+    التي تتجاوز ستّة أضعاف الأجر الأدنى. انقطاع سنة 2003 (سيارات الأجرة واللواج، الأمر
+    عدد 3018 لسنة 2002). معدّل الأجر، محسوباً على النشيطين بمن فيهم غير الخاضعين،
+    أدنى بقليل من المعدّل المنشور. جرايات السنة مقسومة على أعداد آخر السنة.'
+  fiche: sources/cnss-annuaires.md

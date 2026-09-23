@@ -32,6 +32,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Bénéfices industriels et commerciaux | الأرباح الصناعية والتجارية | BIC |
 | Bonification | الترفيع في مدّة الخدمات |  |
 | Cadres actifs | الأسلاك النشيطة |  |
+| Caisse d'assurance vieillesse, invalidité et survivants | صندوق تأمين الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع بجراية | CAVIS |
 | Caisse nationale d'assurance maladie | الصندوق الوطني للتأمين على المرض | CNAM |
 | Caisse nationale de retraite et de prévoyance sociale | الصندوق الوطني للتقاعد والحيطة الاجتماعية | CNRPS |
 | Caisse nationale de sécurité sociale | الصندوق الوطني للضمان الاجتماعي | CNSS |
@@ -120,6 +121,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Quota régional | الحصّة الجهوية |  |
 | Recettes fiscales | المداخيل الجبائية |  |
 | Régime agricole amélioré | النظام الفلاحي المحسَّن | RSAA |
+| Régime conventionnel de retraite | النظام التعاقدي |  |
 | Régime conventionnel public | النظام الاتفاقي العمومي |  |
 | Régime de marché contrôlé | نظام السوق الموجَّه |  |
 | Régime des artistes, créateurs et intellectuels | نظام الضمان الاجتماعي للفنانين والمبدعين والمثقفين |  |

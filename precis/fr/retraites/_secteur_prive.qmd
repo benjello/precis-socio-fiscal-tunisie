@@ -27,107 +27,185 @@ def table(nom, legende, label):
 
 Les pensions du secteur privé sont servies par la [Caisse nationale de sécurité sociale](#g-cnss) au titre de plusieurs régimes. Deux textes en portent l'essentiel : le **décret n° 74-499 du 27 avril 1974** pour les salariés non agricoles, et la **loi n° 81-6 du 12 février 1981** pour les salariés agricoles. Les autres régimes — travailleurs non salariés, Tunisiens à l'étranger, artistes, certaines catégories de travailleurs à faibles revenus — ont leur texte propre ; les deux premiers sont construits par renvoi à des articles numérotés du décret de 1974.
 
-Ce chapitre expose d'abord le régime des salariés non agricoles, maillon par maillon ; puis les régimes agricoles, en disant ce qui les distingue du précédent ; puis le régime complémentaire ; puis, plus brièvement, les régimes des non-salariés et les régimes particuliers. Il se clôt par une vue d'ensemble qui compare les deux secteurs.
+Ce chapitre expose d'abord le régime des salariés non agricoles, selon le plan suivi pour le secteur public : ses origines, le régime du décret de 1974 d'un seul tenant, les réformes de son cœur, l'évolution de ses autres éléments et son équilibre financier (@sec-rsna). Viennent ensuite les régimes agricoles, en disant ce qui les distingue du précédent ; puis le régime complémentaire ; puis, plus brièvement, les régimes des non-salariés et les régimes particuliers. Une vue d'ensemble compare les deux secteurs. Les notations du chapitre et les textes modificatifs du décret n° 74-499 sont rassemblés en annexe.
 
 La logique de la pension y diffère de celle du secteur public : elle repose sur un [salaire moyen de référence](#g-salaire-moyen-reference) calculé sur plusieurs années et borné par une [limite de calcul](#g-limite-calcul-prestations), et elle est revalorisée par référence au salaire minimum, non à la rémunération des actifs.
 
 ## Le régime des salariés non agricoles {#sec-rsna}
 
-### Le décret n° 74-499 et ses modifications
+Le [régime des salariés non agricoles](#g-rsna) est le régime général du secteur privé. Il est régi depuis le 1^er^ janvier 1974 par le **décret n° 74-499 du 27 avril 1974**, et ses règles de pension ont toujours été fixées par décret : la loi qui l'institue renvoie au pouvoir réglementaire l'âge, le stage, le mode de calcul et le montant des prestations. Cette partie suit le plan du chapitre consacré au secteur public. Après un rappel des origines, elle présente le régime de ce décret, exposé d'un seul tenant dans son état d'origine (@sec-rsna-decret-1974). Elle suit ensuite, réforme par réforme, les textes qui ont touché le cœur du régime — l'âge et les conditions de départ, la formule de la pension, sa revalorisation (@sec-rsna-reformes) —, puis l'évolution de ses autres éléments (@sec-rsna-autres-elements), et se clôt sur son équilibre financier (@sec-rsna-equilibre). Les textes qui ont modifié le décret de 1974 sont recensés, article par article, en annexe du chapitre (@sec-rsna-textes-modificatifs).
 
-Le [régime des salariés non agricoles](#g-rsna) est régi par le **décret n° 74-499 du 27 avril 1974, relatif au régime de pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole**, publié au *Journal officiel* n° 30 daté des 30 avril, 3 et 4 mai 1974. Il abroge le décret n° 71-432 du 17 décembre 1971 qui l'avait précédé et prend effet au **1^er^ janvier 1974** [@decret74-499, art. 63-64]. Il a été modifié à de nombreuses reprises ; le tableau suivant donne, article par article, les modifications de ses règles de pension.
+**Les origines.** Les premières retraites des salariés du secteur privé sont servies par des [régimes conventionnels](#g-regime-conventionnel-retraite), institués par convention hors de tout régime légal, notamment sous la forme de contrats de groupe souscrits par des employeurs ; leur liste n'est pas connue ici. La loi n° 60-30 du 14 décembre 1960, qui organise les régimes de sécurité sociale gérés par la [Caisse nationale de sécurité sociale](#g-cnss), ne couvre pas la vieillesse dans sa rédaction d'origine : elle permet à la caisse de gérer des régimes conventionnels de retraite et oblige les organismes qui en servent à les déclarer [@loi60-30, art. 2, 5, 68 et 119]. La loi n° 60-33 du même jour institue le régime de pensions de vieillesse, d'invalidité et de survie du secteur non agricole, mais ne fixe aucun paramètre : les conditions, le mode de calcul et le montant des prestations sont renvoyés au décret [@loi60-33, art. 1 à 3]. Un premier régime, provisoire et forfaitaire, est servi à compter du 1^er^ janvier 1972 : le décret n° 71-452 accorde à 60 ans, après 120 mois de cotisations, une prestation égale pour tous à 60 % de la rémunération annuelle d'un manœuvre du bâtiment et des travaux publics, sans salaire de référence [@decret71-452, art. 1, 3, 5 et 24]. Le décret n° 74-499 le remplace au 1^er^ janvier 1974 et fait liquider à nouveau les prestations servies, sans porter atteinte aux droits acquis [@decret74-499, art. 58 et 63]. Il laisse subsister à titre provisoire les régimes conventionnels gérés en contrat groupe qui offrent des avantages au moins équivalents [@decret74-499, art. 59 à 62] ; le décret n° 76-981 les fusionne en 1976 avec le régime légal, dont la gestion est confiée à une caisse autonome créée dans le cadre de la caisse nationale, la [Caisse d'assurance vieillesse, invalidité et survivants](#g-cavis) (CAVIS) [@decret76-981, art. 1-2 et 25] ; en 1994, le décret n° 94-1477 abroge ce dispositif et transfère à la caisse nationale les régimes légaux et conventionnels que gérait la CAVIS [@decret94-1477, art. 1-2].
 
-| Texte et date d'effet | Article du décret n° 74-499 | Ce qui change |
-|---|---|---|
-| **décret n° 79-536** [@decret79-536], signé le 30 mai 1979 ; effet au 1^er^ janvier 1979 (art. 4) | art. 45, al. 2 (ajouté) | la pension minimale de 2/3 du SMIG s'applique aussi aux pensions liquidées par les régimes conventionnels antérieurs au décret n° 76-981, lorsque le titulaire n'a pas de pension au titre du décret |
-| | art. 54 et art. 55, al. 1 (nouveaux) | gratuité des soins (art. 54) ; maintien des allocations familiales (art. 55) |
-| **décret n° 81-187** [@decret81-187], signé le 14 février 1981 ; effet au 1^er^ mai 1980 (art. 3) | art. 53 (nouveau) | révision « en cas de hausse sensible du niveau général des salaires », par décret → revalorisation automatique à chaque augmentation du SMIG : hausse du SMIG horaire rapportée à 200 heures par mois, affectée du taux de la pension |
-| | art. 53 bis et 53 ter (ajoutés) | pas de cumul avec le relèvement au niveau de la pension minimale, le plus favorable s'appliquant ; extension aux régimes conventionnels transférés à la CAVIS |
-| | art. 2 du décret | pensions liquidées avant son entrée en vigueur revalorisées sur un salaire mensuel de base de 9,750 D, 6,200 D ou 4,808 D selon la date d'ouverture du droit |
-| **décret n° 81-188** [@decret81-188], signé le 14 février 1981 ; aucune date d'effet énoncée | art. 21 b) (nouveau) | stage de la pension d'invalidité : 60 mois de cotisations, dont 6 au cours des 12 mois précédant la première constatation |
-| | art. 22, al. 1 (nouveau) | taux de la pension d'invalidité : 40 % → 50 % du salaire moyen de référence |
-| | art. 31, al. 2 (ajouté) | réversion à la veuve : 50 % → jusqu'à 75 %, s'il n'y a pas d'enfant bénéficiaire ou si le total veuve et orphelins ne dépasse pas la pension de l'assuré |
-| | art. 34 (nouveau) | pension d'orphelin : 20 % (30 % pour l'orphelin de père et de mère) → 30 % dans tous les cas |
-| **décret n° 82-1030** [@decret82-1030], signé le 15 juillet 1982 ; aucune date d'effet énoncée | art. 15 bis (ajouté) | droit à la retraite sans condition d'âge, jouissance différée à 50 ans : a) licenciement économique ; b) usure due aux conditions de travail ; c) convenance personnelle après 360 mois ; d) mères de trois enfants après 180 mois |
-| | art. 17, al. 2 et 3 (nouveaux) | majoration du taux : 2 % par 12 mois → 0,5 % par trimestre, plafond de 80 % inchangé ; décote de 0,5 % par trimestre manquant jusqu'à 60 ans pour le cas c) |
-| | art. 22, al. 2 (nouveau) | pension d'invalidité : + 0,5 % par trimestre au-delà de 180 mois, dans la limite de 80 % |
-| | art. 39 à 43 (section 6 remplacée) | allocation de vieillesse en capital → pension proportionnelle à partir de 60 mois, au prorata des mois cotisés, réversible ; en deçà de 60 mois, versement unique égal aux retenues salariales |
-| | art. 45, al. 1 (nouveau) | pension minimale de 2/3 du SMIG maintenue ; 1/2 du SMIG pour les retraites anticipées de l'art. 15 bis a) et b) et les pensions proportionnelles |
-| **décret n° 90-1455** [@decret90-1455], signé le 10 septembre 1990 ; aucune date d'effet énoncée, exécutoire le 23 septembre 1990 | art. 18 (nouveau) | salaire de référence : 3 ou 5 dernières années, la plus avantageuse → 10 dernières années, salaires actualisés par barème ministériel ; limite de 6 fois le SMIG maintenue ; l'article 19, qui calcule la moyenne sur 36 ou 60 mois, n'est pas modifié |
-| | art. 32 (nouveau) | remariage : suppression de la réversion → rétablissement, revalorisé, au décès du nouveau conjoint ; cumul de pensions de conjoint survivant au titre de mariages successifs interdit |
-| | art. 43 (nouveau) | versement unique en deçà de 60 mois, égal aux retenues salariales, reformulé ; en cas de décès, versé au conjoint et aux enfants mineurs |
-| **décret n° 94-1429** [@decret94-1429], signé le 30 juin 1994 ; dates fixées par l'article 18 (nouveau) | art. 18 (nouveau) | abroge et remplace l'article 18 dans sa rédaction de 1990 ; salaire de référence : 10 dernières années → 5 dernières années au 1^er^ juillet 1994, 7 au 1^er^ juillet 1995, 10 au 1^er^ juillet 1996 ; limite de 6 fois le SMIG « régime 48 heures » rapporté à 2 400 heures ; salaires actualisés par un barème fixé annuellement par arrêté |
-| | art. 19 (nouveau) | abroge et remplace l'article 19 de 1974 ; salaire mensuel moyen : total divisé par 36 ou 60 mois → 60, 84 ou 120 mois selon la fenêtre ; les périodes sans activité assujettie ne sont pas comptées |
-| **décret n° 96-326** [@decret96-326], signé le 1^er^ mars 1996 ; aucune date d'effet énoncée | art. 46, al. 1 (nouveau) | la demande de pension doit être présentée à la caisse dans un délai maximum de cinq ans à partir de l'ouverture du droit, de la déclaration d'invalidité ou du décès |
-| **décret n° 97-291** [@decret97-291], signé le 3 février 1997 ; aucune date d'effet énoncée | art. 29 (nouveau) | pension de survivant ouverte au « conjoint survivant » d'un titulaire de pension de vieillesse ou d'un assuré remplissant la condition de stage |
-| | art. 38 (nouveau) | plafond de cumul : pensions de veuves et d'orphelins limitées à la pension de référence du mari → pensions de conjoint survivant et d'orphelins limitées à la pension dont bénéficiait ou aurait pu bénéficier le défunt |
-| | art. 53, al. 4 (nouveau) | calcul des majorations de revalorisation des pensions de survivants : « veuves » → « conjoint survivant » ; règle de calcul inchangée |
-| | art. 52 (abrogé, art. 2 du décret) | fin de l'interdiction de cumuler une pension d'invalidité et une pension de survivant |
-| **décret n° 97-1927** [@decret97-1927], signé le 29 septembre 1997 ; effet au 1^er^ mai 1997 (art. 2) | art. 33 (nouveau) | pension d'orphelin : 16 ans sans condition ; 21 ans en études secondaires, techniques ou professionnelles ; 25 ans en études supérieures sans bourse ; sans limite d'âge pour la fille sans ressources ou qui n'est pas à la charge de son mari, et en cas d'affection incurable ou d'infirmité |
-| **décret n° 2001-779** [@decret2001-779], signé le 29 mars 2001 ; application au 1^er^ janvier 2001 (art. 2) | art. 53 (nouveau) | majoration en somme (hausse du SMIG × taux de la pension) → majoration en pourcentage : taux de variation du SMIG horaire du régime de 48 heures appliqué à la pension |
-| | art. 3 du décret | la majoration est soumise à cotisation, aux taux salariaux de l'article 9 |
-| **décret n° 2007-2148** [@decret2007-2148], signé le 21 août 2007 ; aucune date d'effet énoncée | art. 15 bis c) (abrogé) et art. 15 ter (ajouté) | départ pour convenance personnelle après 360 mois : jouissance à 50 ans → 55 ans |
-| | art. 17, § 3 (nouveau) | décote de 0,5 % par trimestre mesurée jusqu'à « l'âge normal » de la retraite, et non plus jusqu'à 60 ans |
-| | art. 33 (nouveau) | pension d'orphelin de la fille : paiement définitivement suspendu dès que l'une des conditions fait défaut |
-| | art. 42 (nouveau) | réversibilité des pensions proportionnelles étendue aux pensions des art. 15 bis et 15 ter |
+<!-- TODO (documentaliste) : décrets n° 78-962 et 89-268, modificatifs du décret n° 76-981, dont
+seul l'intitulé est connu (clés à verser s'ils sont cités) ; liste nominative des régimes
+conventionnels déclarés en application de l'art. 119 de la loi n° 60-30, et éventuelles caisses
+antérieures à 1960 (la note documentaire n'en cite aucune) ; date de dépôt du JORT
+n° 55/1994 au gouvernorat de Tunis. Relire les articles 2 à 4 de la loi n° 88-38 (JORT n° 33/1988,
+p. 735) avant d'étendre au-delà de 1988 le constat que la loi n° 60-30 ne couvre pas la vieillesse. -->
 
-: Modifications des règles de pension du décret n° 74-499, article par article {#tbl-rsna-textes}
+### Le régime du décret n° 74-499 {#sec-rsna-decret-1974}
 
-Les textes du tableau ont aussi modifié d'autres articles dont la nouvelle rédaction n'est pas exposée ici : les articles 29 et 33 (décret n° 81-188), l'alinéa 3 de l'article 48 et l'article 55 (décret n° 82-1030), les articles 3, 14, 30 et 54 (décret n° 90-1455), le tiret a) de l'article 15 bis et l'article 47 (décret n° 2007-2148). Pour les articles 14 et 47, la rédaction nouvelle, décrite dans les sections qui suivent, est connue, mais non ce qu'elle change à celle de 1974. Les textes qui fixent les taux et la répartition des cotisations — dont l'article 9 du décret n° 94-1429 — relèvent du livre « Cotisations sociales ». Depuis le 1^er^ janvier 2001, l'article 53 n'a plus été modifié, et aucun modificatif du décret postérieur au décret n° 2007-2148 n'a été retrouvé jusqu'en avril 2026.
+Le **décret n° 74-499 du 27 avril 1974, relatif au régime de pensions de vieillesse, d'invalidité et de survivants dans le secteur non agricole**, publié au *Journal officiel* n° 30 daté des 30 avril, 3 et 4 mai 1974, est pris « en application de la loi n° 60-33 » et prend effet au **1^er^ janvier 1974** [@decret74-499, art. 1 et 64]. Il abroge le décret n° 71-452 [@decret74-499, art. 63]. Un rectificatif publié au *Journal officiel* n° 39 du 7 juin 1974, p. 1252, n'en corrige que deux renvois : à l'article 39, la durée de stage est celle de l'article 15, et non 16 ; à l'article 62, alinéa b), le renvoi vise l'article 61, et non 62. Ce qui suit expose le régime dans son état du 1^er^ janvier 1974 ; les sections suivantes en retracent les modifications.
 
-<!-- TODO (documentaliste) : établir la nouvelle rédaction des articles cités sous le tableau
-(81-188 : art. 29 et 33 ; 82-1030 : art. 48 al. 3 et 55 ; 90-1455 : art. 3, 14, 30 et 54 ;
-2007-2148 : tiret a) de l'art. 15 bis, art. 47), et l'ancienne rédaction de l'article 46, alinéa 1,
-remplacée en 1996. -->
+#### Le champ et le financement {#sec-rsna-champ-1974}
 
-::: {.callout-warning title="Un rectificatif reste à confronter"}
-Le décret n° 74-499 et le décret n° 82-1030 ont chacun fait l'objet d'un rectificatif publié au *Journal officiel*. Celui du décret de 1974 (n° 39 du 7 juin 1974, p. 1252) ne corrige que deux renvois : à l'article 39, la durée de stage est celle de l'article 15, et non 16 ; à l'article 62, alinéa b), le renvoi vise l'article 61, et non 62. Celui du décret n° 82-1030 (n° 66 du 19 octobre 1982, p. 2197) **n'a pas été confronté au texte initial** : les chiffres que ce chapitre tire de ce décret sont ceux du texte initial, exacts sous réserve de ce que le rectificatif aurait corrigé. Pour l'article 34 du décret de 1974, le second taux (30 %) est en outre à la limite de la lisibilité au fascicule ; sa rédaction est toutefois identique, mot pour mot, à celle de l'article 65 de la loi n° 81-6, où il est net.
+Le régime couvre les travailleurs salariés du secteur non agricole visés par la loi n° 60-30 [@loi60-33, art. 1] ; son article 4 en prévoit l'extension ultérieure, par décret, aux travailleurs indépendants [@decret74-499, art. 4]. Il est financé par une cotisation propre de **3,75 %** des salaires, dont 2,5 % à la charge de l'employeur et 1,25 % à celle du travailleur, et par une quote-part de **1,25/20^e^** de la masse des cotisations des régimes de la loi n° 60-30 [@decret74-499, art. 5 et 9] ; l'évolution de ces taux est exposée dans le livre « Cotisations sociales ». Le taux de cotisation est déterminé sur la base d'une étude actuarielle, par rapport à une période d'équilibre fixée à dix ans à l'origine et qui ne peut être inférieure à cinq ans. Une réserve technique, constituée par la différence entre les recettes et les dépenses du régime et dotée à l'origine d'un transfert de 15 millions de dinars des autres régimes gérés par la caisse, est placée à moyen ou à long terme. La caisse doit faire au moins tous les cinq ans une analyse actuarielle et financière du régime, et le taux de cotisation est réajusté si elle révèle un danger de déséquilibre [@decret74-499, art. 8, 10, 11 et 13].
+
+#### Le trimestre validé
+
+Les périodes de cotisation se comptent depuis le 1^er^ avril 1961, date d'entrée en vigueur de la loi n° 60-30. Un trimestre est validé si le salaire soumis à cotisation au cours de ce trimestre atteint au moins les deux tiers de la rémunération d'un salarié payé au [SMIG](#g-smig) et occupé 600 heures ; en 1971, la référence était la rémunération d'un manœuvre du bâtiment et des travaux publics [@decret74-499, art. 2 ; @decret71-452, art. 2]. Le chiffre de 600 heures, peu lisible dans l'édition française du *Journal officiel*, est net dans son édition arabe, et c'est celui du décret de 1971. Sont assimilées à des périodes de cotisation les périodes d'incapacité temporaire indemnisée au titre des accidents du travail, celles de rente d'incapacité permanente d'au moins 66,66 %, celles d'indemnités journalières de maladie, de longue maladie ou de maternité, et celles de pension d'invalidité [@decret74-499, art. 2]. Les périodes d'activité non déclarées depuis le 1^er^ avril 1961 peuvent être validées contre le versement des cotisations arriérées [@decret74-499, art. 3].
+
+#### L'âge et le stage {#sec-rsna-age-stage}
+
+Le droit à la pension de vieillesse suppose trois conditions : avoir **60 ans au moins**, justifier d'un [stage](#g-stage-cotisation) de **120 mois** de cotisations effectives ou assimilées, et ne pas exercer d'activité professionnelle assujettie [@decret74-499, art. 15]. L'acquisition du droit oblige à mettre fin à la relation de travail, l'accord des parties homologué par l'inspection du travail pouvant en différer l'acquisition [@decret74-499, art. 14]. La pension est servie à compter du premier jour du mois qui suit la cessation d'activité [@decret74-499, art. 47], à condition de résider en Tunisie à la date de la demande, condition écartée par les traités de réciprocité [@decret74-499, art. 49]. La demande doit être présentée dans le délai d'un an à partir du jour où l'assuré a atteint l'âge et cessé son activité ; présentée plus tard, elle fait perdre les arrérages antérieurs [@decret74-499, art. 46].
+
+Deux aménagements datent de l'origine. L'âge peut être abaissé à **55 ans** pour les travaux pénibles ou insalubres dont les catégories sont fixées par arrêté du ministre des affaires sociales ; les périodes de cotisation de l'assuré qui bénéficie de cette dérogation sont alors majorées, à 55 ans, des deux tiers du nombre de mois restant à courir jusqu'à 60 ans, le point de départ de la majoration étant reporté s'il continue de travailler après 55 ans [@decret74-499, art. 15-16] (@sec-rsna-ages-derogatoires). Et, à titre transitoire, les assurés justifiant de **96 mois** de cotisations depuis le 1^er^ avril 1961 sont réputés remplir la condition de stage, cette durée étant majorée de **huit mois** par an à partir du 1^er^ janvier 1975 jusqu'à atteindre 120 mois [@decret74-499, art. 44] ; par le calcul, les 120 mois sont exigés à partir du 1^er^ janvier 1977. Le chiffre de huit mois, ambigu dans l'édition française, est net dans l'édition arabe, et prolonge le rythme du décret de 1971.
+
+#### La formule de la pension {#sec-rsna-calcul}
+
+::: {.callout-note title="La formule de la pension"}
+La pension de vieillesse est le produit d'un taux de liquidation par un salaire moyen de référence, dans la limite d'un plafond, et sans pouvoir être inférieure à la pension minimale garantie :
+
+$$
+P = \max\big(\min(\tau(n),\ \bar\tau)\cdot R,\ P_{\min}\big), \qquad \tau(n) = \tau_0 + \alpha\left\lfloor \frac{n - n_0}{u} \right\rfloor, \qquad n \ge n_0
+$$
+
+où $P$ est la pension de vieillesse annuelle, $n$ est la durée de cotisation, effective ou assimilée, **comptée en mois**, $n_0$ le stage, $\tau(n)$ le [taux de liquidation](#g-taux-de-liquidation) acquis pour la durée $n$, $\tau_0$ le taux acquis au terme du stage, $\alpha$ la majoration accordée par période complète de $u$ mois de cotisation au-delà du stage, $\bar\tau$ le plafond du taux, $R$ le [salaire moyen de référence](#g-salaire-moyen-reference), annuel, et $P_{\min}$ la [pension minimale garantie](#g-pension-minimale-garantie), annuelle. Le salaire moyen de référence est la moyenne des salaires annuels des dernières années, chacun pris dans une limite :
+
+$$
+R = \max_{T \in \mathcal{T}}\ \frac{1}{T}\sum_{j=1}^{T} \min(s_j,\ L), \qquad L = \ell\,S, \qquad P_{\min} = \pi\,S
+$$
+
+où $s_j$ est le salaire soumis à cotisation de la $j$-ième des $T$ années retenues, $\mathcal{T}$ l'ensemble des durées de référence, en années, entre lesquelles la plus avantageuse pour l'assuré est retenue, $L$ la [limite de calcul des prestations](#g-limite-calcul-prestations), $S$ le SMIG rapporté à une durée d'occupation annuelle de 2 400 heures, $\ell$ le multiple de $S$ qui fixe la limite et $\pi$ la fraction de $S$ qui fixe la pension minimale.
+
+Au 1^er^ janvier 1974, ces grandeurs valent [@decret74-499, art. 15, 17 à 19 et 45] :
+
+$$
+n_0 = 120, \qquad \tau_0 = 40\,\%, \qquad \alpha = 2\,\%, \qquad u = 12, \qquad \bar\tau = 80\,\%, \qquad \mathcal{T} = \{3,\ 5\}, \qquad \ell = 6, \qquad \pi = \tfrac{2}{3}
+$$
+
+Le taux atteint son plafond au terme de 360 mois de cotisation. Les années retenues sont celles des 36 ou 60 mois écoulés au 1^er^ janvier de l'année au cours de laquelle l'assuré remplit la condition d'âge, ou cesse son activité ; leurs salaires sont augmentés des salaires moyens ayant servi au calcul des prestations des périodes assimilées [@decret74-499, art. 19]. Plusieurs de ces valeurs ont changé depuis : $u$ et $\alpha$ en 1982, $\pi$ la même année pour certaines pensions, $\mathcal{T}$ en 1990 puis de 1994 à 1996 (@tbl-rsna-coeur).
 :::
 
-<!-- TODO (documentaliste) : ouvrir le rectificatif du décret n° 82-1030 (JORT n° 66/1982,
-p. 2197), puis lever ou préciser la réserve du callout. -->
+<!-- TODO (rédacteur) : les formules de ce chapitre ne sont pas protégées par la synchronisation
+de traduction (scripts/translate_sync.py) : vérifier après son passage que les formules
+d'affichage et les formules en ligne de la version arabe sont restées identiques à celles du
+français. -->
 
-### L'ouverture du droit
+**La limite de calcul.** La limite $L$ n'est pas un plafond de cotisation : le régime cotise sur la totalité du salaire, comme l'expose le livre « Cotisations sociales ». Elle borne la part du salaire que la pension prend en compte, et c'est au-delà d'elle que commence l'assiette du régime complémentaire (@sec-regime-complementaire). Fixée à six fois le SMIG rapporté à 2 400 heures par an en 1974, reprise telle quelle en 1990, elle est précisée en 1994 par la référence au SMIG du régime de 48 heures. Aucun autre modificatif du décret qui la touche n'a été retrouvé jusqu'en avril 2026. Exprimée en multiple du SMIG, elle en suit l'évolution sans qu'aucun texte propre ait à la modifier.
 
-Le droit à la pension de vieillesse suppose trois conditions : avoir **60 ans au moins**, justifier d'un [stage](#g-stage-cotisation) de **120 mois** de cotisations effectives ou assimilées, et ne pas exercer d'activité professionnelle assujettie [@decret74-499, art. 15]. L'acquisition du droit oblige à mettre fin à la relation de travail, l'accord des parties homologué par l'inspection du travail pouvant en différer l'acquisition [@decret74-499, art. 14 ; @decret90-1455, art. 1]. La pension est servie à compter du premier jour du mois qui suit la cessation d'activité [@decret74-499, art. 47 ; @decret2007-2148], à condition de résider en Tunisie à la date de la demande, condition écartée par les traités de réciprocité [@decret74-499, art. 49]. Depuis 1996, la demande doit être présentée dans un délai maximum de cinq ans [@decret96-326, art. 1].
+#### La revalorisation, les droits dérivés, l'invalidité et les carrières courtes {#sec-rsna-derives-1974}
 
-Deux aménagements datent de l'origine. L'âge est abaissé à **55 ans** pour les travaux pénibles ou insalubres dont les catégories sont fixées par arrêté du ministre des affaires sociales, le stage requis étant alors majoré des deux tiers du nombre de mois restant à courir jusqu'à 60 ans [@decret74-499, art. 15-16]. Et, à titre transitoire, les assurés justifiant de **96 mois** de cotisations depuis le 1^er^ avril 1961 étaient réputés remplir la condition de stage, cette durée étant majorée de six mois par an à partir du 1^er^ janvier 1975 jusqu'à atteindre 120 mois [@decret74-499, art. 44].
+**La revalorisation.** Dans sa rédaction de 1974, l'article 53 ne comporte aucune indexation : le montant des pensions en cours « sera révisé en cas de hausse sensible du niveau général des salaires », la date et les modalités de cette révision étant fixées par décret [@decret74-499, art. 53] (@sec-rsna-revalorisation).
 
-<!-- TODO (documentaliste) : identifier l'arrêté du ministre des affaires sociales fixant les
-catégories de travaux pénibles ou insalubres ouvrant la retraite à 55 ans (art. 15 du décret
-n° 74-499). -->
+**Les droits dérivés.** Au décès de l'assuré, la veuve d'un titulaire de pension de vieillesse ou d'invalidité, ou d'un assuré qui remplissait la condition de stage, ainsi que le veuf invalide, ont droit à une [pension de réversion](#g-pension-de-reversion), à condition que le mariage ait été contracté « antérieurement à la réalisation de l'éventualité » ; chaque orphelin a droit à une [pension temporaire d'orphelin](#g-pension-temporaire-orphelin) jusqu'à 16 ans, 21 ans s'il poursuit des études, sans limite d'âge en cas d'infirmité [@decret74-499, art. 29, 30 et 33]. Les deux pensions sont des fractions de celle de l'assuré, et leur total ne peut la dépasser :
 
-### Les départs anticipés {#sec-rsna-anticipes}
+$$
+P_c = \theta_c\,P, \qquad P_o = \theta_o\,P, \qquad P_c + k\,P_o \le P
+$$
 
-En dehors de l'âge abaissé des travaux pénibles, le décret de 1974 ne comportait pas de départ anticipé. C'est le **décret n° 82-1030** qui insère un article 15 bis ouvrant le droit à la retraite « sans conditions d'âge », mais avec une [jouissance différée](#g-jouissance-differee) « jusqu'à ce que l'intéressé ait atteint l'âge de cinquante ans », dans quatre cas [@decret82-1030, art. 1]. Le décret n° 2007-2148 remplace l'un d'eux par un article 15 ter.
+où $P$ est ici la pension dont l'assuré bénéficiait ou aurait bénéficié, $P_c$ la pension du conjoint survivant, $\theta_c$ son taux, $P_o$ la pension de chaque orphelin, $\theta_o$ son taux et $k$ le nombre d'orphelins bénéficiaires. En 1974, $\theta_c = 50\,\%$, partagé également entre les veuves, et $\theta_o = 20\,\%$, porté à 30 % pour l'orphelin de père et de mère ; le plafond est respecté par une réduction temporaire des pensions d'orphelins [@decret74-499, art. 31, 34 et 38]. La pension de réversion est supprimée en cas de remariage, et une pension d'invalidité ne se cumule pas avec une pension de survivant, seule la plus élevée étant servie [@decret74-499, art. 32 et 52] (@sec-rsna-derives).
+
+**L'invalidité.** L'assuré qui n'a pas atteint l'âge de la vieillesse et dont une invalidité d'origine non professionnelle réduit des deux tiers au moins la capacité de travail ou de gain a droit à une pension d'invalidité, s'il compte 60 mois de cotisations, dont six au cours des douze mois qui précèdent la première constatation de l'invalidité ; aucun stage n'est exigé en cas d'accident d'origine non professionnelle, si l'immatriculation lui est antérieure [@decret74-499, art. 20-21]. La pension est de **40 %** du salaire moyen de référence ; chaque période de 12 mois de cotisation au-delà de 120 mois y ajoute **2 %**, dans la limite de **80 %** [@decret74-499, art. 22]. Elle est bonifiée de 20 % en cas de recours à une tierce personne, convertie en pension de vieillesse à l'âge requis, contrôlée chaque année mais non révisable après 55 ans, et réduite en cas de cumul avec une rente d'accident du travail [@decret74-499, art. 23-25 et 28] (@sec-rsna-invalidite).
+
+**Les carrières courtes.** L'assuré qui atteint l'âge et cesse son activité sans remplir la condition de stage reçoit, s'il compte au moins 60 mois de cotisations effectives, une allocation de vieillesse **en capital**, égale à une mensualité de la pension théorique par période de six mois de cotisations ; la demande se prescrit par un an, et l'allocation peut être convertie en rente viagère. En deçà de 60 mois, le texte de 1974 ne prévoit rien [@decret74-499, art. 39 à 43].
+
+### Les réformes du cœur du régime {#sec-rsna-reformes}
+
+Six textes ont touché le cœur du régime — l'âge et les conditions de départ, la formule de la pension et sa revalorisation : le décret n° 81-187 en 1981, le décret n° 82-1030 en 1982, les décrets n° 90-1455 et 94-1429 de 1990 à 1996, le décret n° 2001-779 en 2001 et le décret n° 2007-2148 en 2007. Aucun n'a modifié l'âge légal de 60 ans, le stage de 120 mois, le taux de 40 % acquis au terme du stage ni le plafond de 80 % (@sec-rsna-depuis-2007). Le tableau suivant en donne la vue d'ensemble.
+
+| Élément | Décret n° 74-499 (1^er^ janvier 1974) | Modifications |
+|---|---|---|
+| Âge légal | 60 ans ; 55 ans pour les travaux pénibles ou insalubres | aucune ; catégories à 55 ans fixées par arrêté en 1975, 2015 et 2023 |
+| Stage | 120 mois | aucune |
+| Taux au terme du stage ; plafond | 40 % ; 80 % | aucune |
+| Majoration du taux | 2 % par période de 12 mois | 22 juillet 1982 : 0,5 % par trimestre |
+| Départ anticipé | aucun, hors travaux pénibles | 22 juillet 1982 : quatre cas, jouissance à 50 ans ; départ pour convenance personnelle réduit de 0,5 % par trimestre jusqu'à l'âge normal de la retraite ; 2007 : convenance personnelle servie à 55 ans |
+| Salaire de référence | 3 ou 5 dernières années, la plus avantageuse | 23 septembre 1990 : 10 dernières années, salaires actualisés ; 1^er^ juillet 1994, 1995 et 1996 : 5, 7 puis 10 dernières années |
+| Limite de calcul | 6 fois le SMIG pour 2 400 heures | 1^er^ juillet 1994 : SMIG du régime de 48 heures |
+| Pension minimale | 2/3 du SMIG | 22 juillet 1982 : 1/2 du SMIG pour les départs anticipés des cas a) et b) et pour les pensions proportionnelles |
+| Carrière courte, à partir de 60 mois | allocation en capital | 22 juillet 1982 : pension proportionnelle |
+| Revalorisation | révision par décret en cas de hausse sensible des salaires | 1^er^ mai 1980 : somme indexée sur la hausse du SMIG ; 1^er^ janvier 2001 : taux de variation du SMIG |
+
+: Le cœur du régime des salariés non agricoles, de 1974 à avril 2026 {#tbl-rsna-coeur}
+
+Sources : @decret74-499, art. 15 à 19, 39 à 45 et 53 ; @decret81-187, art. 1 et 3 ; @decret82-1030, art. 1 et 3 à 5 ; @decret82-1030-rect ; @decret90-1455, art. 1 ; @decret94-1429, art. 1 ; @decret2001-779, art. 1-2 ; @decret2007-2148, art. 1 à 3 ; @arrete-1975-07-04-age-mineurs ; @arrete-2015-09-11-age-mineurs ; @arrete-2023-05-22-age-assainissement. Le décret n° 2007-2148 n'énonce pas de date d'effet, et la date à laquelle il est devenu exécutoire n'est pas établie ici.
+
+<!-- Tableau tenu à la main, et non engendré : il résume les tableaux détaillés des sections qui
+suivent. TODO (rédacteur) : remplacer par un tableau engendré une fois les paramètres du régime
+datés et sourcés de 1974 à 2007. -->
+
+Les textes qui ne touchent qu'au financement — décrets n° 88-1137, 97-555 et 2003-1212, article 9 du décret n° 94-1429 — relèvent du livre « Cotisations sociales » (@sec-rsna-financement). Les retouches des droits dérivés, de l'invalidité et de la procédure — décrets n° 79-536, 81-188, 96-326, 97-291 et 97-1927 — sont exposées avec l'élément qu'elles concernent (@sec-rsna-autres-elements). Tous figurent dans le tableau de l'annexe (@tbl-rsna-textes).
+
+#### 1981 : la revalorisation automatique sur le SMIG {#sec-rsna-reforme-1981}
+
+Le **décret n° 81-187 du 14 février 1981** réécrit l'article 53 avec effet au 1^er^ mai 1980 : la révision discrétionnaire de 1974 fait place à une revalorisation des pensions « automatiquement à chaque augmentation du SMIG » [@decret81-187, art. 1 et 3]. La majoration est une somme : la hausse du SMIG horaire, rapportée à 200 heures par mois, affectée du taux de la pension. En base annuelle, elle s'écrit :
+
+$$
+\Delta P = \tau_P\,\Delta S
+$$
+
+où $\Delta P$ est la majoration annuelle de la pension, $\tau_P$ le taux de la pension — pour une pension de vieillesse, $\min(\tau(n), \bar\tau)$ — et $\Delta S$ la hausse du SMIG annuel $S$, 200 heures par mois faisant les 2 400 heures de l'année ; pour les pensions de survivants, la majoration est en outre affectée du taux de réversion [@decret81-187, art. 1]. Deux pensions liquidées au même taux reçoivent donc la même majoration, quel que soit leur montant. La majoration ne se cumule pas avec le relèvement au niveau de la pension minimale, le plus favorable s'appliquant, et la règle s'étend aux régimes conventionnels transférés à la CAVIS [@decret81-187, art. 1 (art. 53 bis et 53 ter)]. Les pensions liquidées avant son entrée en vigueur sont revalorisées sur un salaire mensuel de base de 9,750 D, 6,200 D ou 4,808 D selon la date d'ouverture du droit [@decret81-187, art. 2]. La série des hausses du SMIG qui ont déclenché la revalorisation est donnée avec la revalorisation (@sec-rsna-revalorisation).
+
+#### 1982 : les départs anticipés, le trimestre et la pension proportionnelle {#sec-rsna-reforme-1982}
+
+Le **décret n° 82-1030 du 15 juillet 1982** est la réforme la plus étendue qu'ait connue le régime. Il n'énonce pas de date d'effet : publié au *Journal officiel* daté des 20, 21, 22 et 23 juillet 1982, il devient obligatoire le 22 juillet 1982, un jour franc après sa publication. Un rectificatif publié au *Journal officiel* n° 66 du 19 octobre 1982, p. 2197, en corrige un seul point : au troisième alinéa de l'article 17, la réduction de la pension court jusqu'à « l'âge normal » de la retraite, et non jusqu'à « l'âge de 60 ans » [@decret82-1030-rect]. Le décret touche le cœur du régime sur quatre points.
+
+**Le trimestre.** La majoration du taux s'exprime désormais par trimestre : 0,5 % par période de trois mois de cotisation au-delà du stage, le plafond de 80 % restant inchangé [@decret82-1030, art. 4]. Dans la formule de 1974 (@sec-rsna-calcul), seuls $u$ et $\alpha$ changent :
+
+$$
+u = 3, \qquad \alpha = 0{,}5\,\%
+$$
+
+Le rythme annuel de la majoration, $12\,\alpha / u$, reste de 2 % ; ce qui change, c'est que chaque trimestre complet compte, et non plus seulement chaque année complète.
+
+##### Les départs anticipés {#sec-rsna-anticipes}
+
+En dehors de l'âge abaissé des travaux pénibles, le décret de 1974 ne comportait pas de départ anticipé. Le décret n° 82-1030 insère un article 15 bis qui ouvre le droit à la retraite « sans conditions d'âge », mais avec une [jouissance différée](#g-jouissance-differee) « jusqu'à ce que l'intéressé ait atteint l'âge de cinquante ans », dans quatre cas [@decret82-1030, art. 1]. Le décret n° 2007-2148 remplace l'un d'eux par un article 15 ter (@sec-rsna-reforme-2007).
 
 | Cas de départ anticipé | Conditions | Jouissance de la pension | Texte |
 |---|---|---|---|
-| a) Licenciement pour raisons économiques | licenciement approuvé par la commission de contrôle des licenciements ; inscription au bureau de l'emploi pendant six mois au moins sans offre de travail | à 50 ans | décret n° 82-1030, art. 15 bis |
+| a) Licenciement pour raisons économiques | licenciement approuvé par la commission de contrôle des licenciements ; inscription au bureau de l'emploi pendant six mois au moins sans offre de travail | à 50 ans | décret n° 82-1030, art. 15 bis ; rédaction reformulée en 2007, conditions reprises |
 | b) Cessation prématurée pour usure due aux conditions de travail | usure constatée | à 50 ans | décret n° 82-1030, art. 15 bis |
-| c) Convenance personnelle, de 1982 à 2007 | stage de 360 mois ; [décote](#g-decote) de 0,5 % par trimestre restant à courir jusqu'à 60 ans | à 50 ans | décret n° 82-1030, art. 15 bis et 17 |
-| Convenance personnelle, depuis 2007 | stage de 360 mois ; décote de 0,5 % par trimestre restant à courir jusqu'à « l'âge normal » de la retraite | à **55 ans** | décret n° 2007-2148, art. 15 ter et 17 |
+| c) Convenance personnelle, de 1982 à 2007 | stage de 360 mois ; [décote](#g-decote) de 0,5 % par trimestre restant à courir jusqu'à « l'âge normal » de la retraite | à 50 ans | décret n° 82-1030 et son rectificatif, art. 15 bis et 17 |
+| Convenance personnelle, depuis 2007 | stage de 360 mois ; même décote | à **55 ans** | décret n° 2007-2148, art. 15 ter et 17 |
 | d) Mères de trois enfants vivants au moins | stage de 180 mois | à 50 ans | décret n° 82-1030, art. 15 bis |
 
 : Les départs anticipés du régime des salariés non agricoles {#tbl-rsna-anticipes}
 
-Sources : @decret82-1030, art. 1 ; @decret2007-2148, art. 1 à 3.
+Sources : @decret82-1030, art. 1 ; @decret82-1030-rect ; @decret2007-2148, art. 1 à 3.
 
 <!-- Tableau tenu à la main, et non engendré : le seul paramètre du sujet porte l'âge de
 jouissance de 50 ans de 1982. Ni les quatre cas de l'article 15 bis, ni leurs conditions, ni
 la jouissance à 55 ans de l'article 15 ter ne sont dans l'arbre des paramètres. Voir
 l'en-tête de scripts/generate_retraites_tables.py. -->
 
-Dans les textes cités, le départ pour convenance personnelle est le seul qui soit pénalisé par une décote, en 1982 comme en 2007 ; ce qui change en 2007 est l'âge à partir duquel la pension est servie, porté de 50 à 55 ans. Le décret n° 2007-2148 réécrit aussi le cas a) ; sa nouvelle rédaction n'est pas exposée ici. Le départ anticipé des mères de trois enfants existe dans le régime non agricole depuis 1982.
+Le départ pour convenance personnelle est le seul qui soit pénalisé. Le montant de la pension, calculé selon les deux premiers alinéas de l'article 17, « est réduit de 0,5 % par trimestre restant à courir entre [l']âge lors du départ à la retraite et l'âge normal de celle-ci » — c'est la rédaction de 2007, qui ne diffère de celle de 1982 rectifiée que par l'article auquel elle renvoie [@decret2007-2148, art. 2 ; @decret82-1030-rect]. La réduction porte sur le montant, non sur le taux :
 
-<!-- TODO (documentaliste) : établir le contenu du tiret a) de l'article 15 bis tel que réécrit
-par l'article 2 du décret n° 2007-2148, et le mode de constatation de l'usure (tiret b). -->
+$$
+P = (1 - \delta\,q)\cdot\min(\tau(n),\ \bar\tau)\cdot R
+$$
 
-### Le calcul de la pension {#sec-rsna-calcul}
+où $q$ est le nombre de trimestres qui séparent l'âge de départ de l'âge normal de la retraite et $\delta$ la réduction par trimestre, $\delta = 0{,}5\,\%$ depuis 1982. Le décret ne définit pas autrement l'« âge normal » ; dans le cas général, l'âge d'ouverture du droit fixé par l'article 15 est de 60 ans. La formule n'écrit pas la pension minimale, dont l'articulation avec la réduction n'est pas établie ici. Le départ anticipé des mères de trois enfants existe dans le régime non agricole depuis 1982.
 
-**Le taux.** Le [taux de liquidation](#g-taux-de-liquidation) est de **40 %** du salaire moyen de référence lorsque la condition de 120 mois est remplie. Chaque période supplémentaire de 12 mois de cotisation y ajoute **2 %**, « sans que le montant total de la pension puisse excéder un maximum de **80 %** dudit salaire » [@decret74-499, art. 17]. Le décret n° 82-1030 exprime la majoration par trimestre — **0,5 %** par période de trois mois — sans changer ni son rythme annuel ni le plafond de 80 % [@decret82-1030, art. 4]. Par le calcul, le taux atteint 80 % après 360 mois de cotisations.
+<!-- TODO (documentaliste) : établir le mode de constatation de l'usure (tiret b de l'article
+15 bis) et la pension minimale applicable aux départs pour convenance personnelle (art. 45 dans
+la rédaction du décret n° 82-1030). -->
 
-**Le salaire moyen de référence.** Sa fenêtre s'est allongée de trois ou cinq ans à dix ans, par deux décrets successifs : le second remplace la rédaction du premier.
+##### La pension proportionnelle et les deux minimums
+
+Le décret n° 82-1030 remplace la section de l'allocation de vieillesse en capital (@sec-rsna-derives-1974) par une section « de la pension proportionnelle ». L'assuré qui atteint l'âge sans remplir la condition de stage, mais compte au moins 60 mois de cotisations, reçoit désormais une [pension proportionnelle](#g-pension-proportionnelle), calculée sur la base de celle à laquelle il aurait eu droit s'il avait accompli le stage, au prorata des mois cotisés, et réversible [@decret82-1030, art. 3] :
+
+$$
+P = \frac{n}{n_0}\,\tau_0\,R, \qquad n_1 \le n < n_0
+$$
+
+où $n_1$ est la durée de cotisation qui ouvre la pension proportionnelle, $n_1 = 60$ mois depuis 1982. En deçà, l'assuré reçoit un versement unique égal aux retenues opérées sur ses salaires [@decret82-1030, art. 3]. Le même décret distingue deux niveaux de pension minimale : $\pi = 2/3$ pour les pensions de vieillesse et d'invalidité, $\pi = 1/2$ pour les retraites anticipées des tirets a) et b) de l'article 15 bis et pour les pensions proportionnelles [@decret82-1030, art. 5] (@tbl-rsna-planchers). Il porte enfin à 180 mois le seuil de la majoration de la pension d'invalidité (@sec-rsna-invalidite).
+
+#### 1990 et 1994 : le salaire de référence sur dix ans {#sec-rsna-reforme-1990}
+
+Deux décrets successifs ont allongé la fenêtre du salaire moyen de référence de trois ou cinq ans à dix ans, le second remplaçant la rédaction du premier ; les salaires anciens y sont désormais actualisés. Dans la formule (@sec-rsna-calcul), c'est l'ensemble $\mathcal{T}$ des durées de référence qui change : $\mathcal{T} = \{10\}$ au 23 septembre 1990 ; puis $\mathcal{T} = \{5\}$ au 1^er^ juillet 1994, $\{7\}$ au 1^er^ juillet 1995 et $\{10\}$ au 1^er^ juillet 1996. La formule de 1974 ne porte pas l'actualisation, exposée plus bas. Elle ne vaut pas non plus telle quelle entre 1990 et 1994 : l'article 19, que le décret n° 90-1455 ne modifie pas, divise encore le total des salaires par 36 ou 60 mois, alors que l'article 18 en retient dix années.
 
 | Depuis | Fenêtre de référence | Moyenne (article 19) | Limite de prise en compte des salaires | Texte |
 |---|---|---|---|---|
@@ -151,7 +229,11 @@ Les deux décrets se succèdent. Le décret n° 90-1455 porte la fenêtre de ré
 
 **Le décret de 1994 ne régularise pas l'intervalle, et il faut le dire précisément.** Il porte une seule clause de rétroactivité, et elle ne concerne pas le calcul de la pension : son article 2 fait prendre effet au 1^er^ janvier 1994 les dispositions du seul **article 5 (b) nouveau**, c'est-à-dire la quote-part de cotisations affectée au régime [@decret94-1429, art. 2]. Les articles 18 et 19 nouveaux, eux, valent pour l'avenir, selon le calendrier qu'ils portent. Le législateur n'a donc ni validé ni mentionné les liquidations intervenues sous la rédaction de 1990 — silence qui ne s'explique par aucun texte publié.
 
-Un dernier trait du même décret éclaire l'intention de la réforme. Son article premier ne récrit pas seulement les articles 18 et 19 : il récrit aussi l'article 9, qui porte le taux de cotisation du régime à 5,75 % des salaires, dont la part à la charge des travailleurs monte par paliers — 1,75 % au 1^er^ juillet 1994, 2,25 % en 1995, 2,75 % en 1996, 3,25 % en 1997 [@decret94-1429, art. 1]. **L'allongement de la fenêtre de référence et la montée de la cotisation sont échelonnés ensemble**, sur des calendriers parallèles. La réforme de 1994 n'est pas un ajustement de la formule de calcul : c'est un rééquilibrage du régime, qui demande davantage aux cotisants au rythme où il élargit l'assiette de leur pension.
+Un dernier trait du même décret situe la réforme. Son article premier ne récrit pas seulement les articles 18 et 19 : il récrit aussi l'article 9, qui porte le taux de cotisation propre du régime à 5,75 % des salaires, dont la part à la charge des travailleurs devait monter par paliers — 1,75 % au 1^er^ juillet 1994, 2,25 % en 1995, 2,75 % en 1996, 3,25 % au 1^er^ juillet 1997 [@decret94-1429, art. 1]. **L'allongement de la fenêtre de référence et la montée de la cotisation sont ainsi échelonnés ensemble**, sur des calendriers parallèles : le même texte récrit la formule de la pension et le financement du régime. Le calendrier de la cotisation n'a pas été mené à son terme : le décret n° 97-555 du 31 mars 1997 abroge et remplace l'article 9 et fixe la cotisation à 5,25 %, dont 2,50 % à la charge des employeurs et 2,75 % à celle des travailleurs, niveau atteint en 1996 ; le palier de 3,25 % prévu au 1^er^ juillet 1997 n'est pas entré en vigueur [@decret97-555].
+
+<!-- TODO (documentaliste) : confronter la série du taux de l'article 9 (3,75 % en 1974 ;
+calendrier du décret n° 94-1429 ; 5,25 % par le décret n° 97-555) à celle du livre « Cotisations
+sociales » avant d'en écrire le détail ici. -->
 
 <!-- TODO (documentaliste) : établir comment la règle de 1990 a été appliquée entre le
 23 septembre 1990 et le 30 juin 1994.
@@ -169,11 +251,9 @@ jurisprudence. Aucune n'est dans le corpus local — data/iort/circulaire_downlo
 deux circulaires, de 1998 et 2007 — ni dans la bibliographie, qui ne porte qu'une seule entrée
 CNSS, « cnss-chiffres ». Cette question se résoudra hors du Journal officiel, ou pas du tout. -->
 
-**La limite de calcul.** La [limite de calcul des prestations](#g-limite-calcul-prestations) n'est pas un plafond de cotisation : le régime cotise sur la totalité du salaire, comme l'expose le livre « Cotisations sociales ». Elle borne la part du salaire que la pension prend en compte, et c'est au-delà d'elle que commence l'assiette du régime complémentaire. Fixée à six fois le [SMIG](#g-smig) rapporté à 2 400 heures par an en 1974, reprise telle quelle en 1990, elle est précisée en 1994 par la référence au SMIG du régime de 48 heures. Aucun autre modificatif du décret qui la touche n'a été retrouvé jusqu'en avril 2026. Exprimée en multiple du SMIG, elle en suit l'évolution sans qu'aucun texte propre ait à la modifier.
+##### Le barème d'actualisation {#sec-rsna-bareme}
 
-**Le barème d'actualisation.** Les salaires anciens de la fenêtre de référence ne sont pas pris pour leur valeur nominale : ils sont actualisés. Le barème annoncé en 1990, puis fixé « annuellement » depuis 1994, a été publié par une série d'arrêtés du ministre des affaires sociales « relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants », une trentaine d'arrêtés annuels du 17 novembre 1994 au 16 juillet 2024. Le premier, l'arrêté du 17 novembre 1994, vise le décret n° 94-1429, fixe un coefficient pour chaque année de salaire de 1961 à 1993 et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ juillet 1994 [@arrete-1994-11-17-bareme-actualisation, art. 1-2] ; aucun arrêté pris en application de la rédaction de 1990 n'a été retrouvé. L'arrêté du 29 mars 1997, donne pour chaque année de salaire un coefficient multiplicateur et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ janvier 1997 [@arrete-1997-03-29-bareme-actualisation]. Les coefficients du barème de 2024 sont donnés dans l'onglet Données de la @fig-bareme-taux.
-
-
+Les salaires anciens de la fenêtre de référence ne sont pas pris pour leur valeur nominale : ils sont actualisés. Le barème annoncé en 1990, puis fixé « annuellement » depuis 1994, a été publié par une série d'arrêtés du ministre des affaires sociales « relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants », une trentaine d'arrêtés annuels du 17 novembre 1994 au 16 juillet 2024. Le premier, l'arrêté du 17 novembre 1994, vise le décret n° 94-1429, fixe un coefficient pour chaque année de salaire de 1961 à 1993 et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ juillet 1994 [@arrete-1994-11-17-bareme-actualisation, art. 1-2] ; aucun arrêté pris en application de la rédaction de 1990 n'a été retrouvé. L'arrêté du 29 mars 1997 donne pour chaque année de salaire un coefficient multiplicateur et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ janvier 1997 [@arrete-1997-03-29-bareme-actualisation]. Les coefficients du barème de 2024 sont donnés dans l'onglet Données de la @fig-bareme-taux.
 
 **Le rythme de la série, et ses trous.** Les vingt-huit arrêtés retrouvés ne couvrent pas les trente et une années qui séparent 1994 de 2024 : **aucun arrêté n'a été retrouvé pour 2016, 2017 et 2019**. L'adjectif « annuel » que porte le dispositif décrit donc une intention, non une pratique constante.
 
@@ -280,9 +360,70 @@ openfisca-tunisia#438). Leur coïncidence avec l'indice des prix en est un secon
 indépendant. Reste à établir, hors du Journal officiel, si le ministère publie la méthode
 du barème : aucun des textes lus ne la donne. -->
 
-### Les planchers
+#### 2001 : la revalorisation au taux de la hausse du SMIG {#sec-rsna-reforme-2001}
 
-La [pension minimale garantie](#g-pension-minimale-garantie) du régime est exprimée en fraction du SMIG rapporté à 2 400 heures par an, et sa structure a changé en 1982 en même temps que le traitement des carrières courtes.
+Le **décret n° 2001-779 du 29 mars 2001** remplace la majoration en somme par une majoration en pourcentage : elle est calculée « en multipliant le taux de la variation du SMIG par le montant de la pension avant l'augmentation », le SMIG horaire étant celui du régime de 48 heures [@decret2001-779, art. 1]. Avec les notations de 1981 (@sec-rsna-reforme-1981) :
+
+$$
+\Delta P = \frac{\Delta S}{S}\,P
+$$
+
+La majoration de 1981 était la même pour deux pensions liquidées au même taux ; celle de 2001 est proportionnelle à la pension elle-même. Le décret applique la nouvelle règle, à titre transitoire, à la hausse du SMIG du 1^er^ mai 2000, mais à partir du 1^er^ janvier 2001 seulement, et soumet la majoration à cotisation, aux taux salariaux de l'article 9 [@decret2001-779, art. 2-3]. L'article 53 n'a plus été modifié depuis (@tbl-rsna-revalo-taux).
+
+#### 2007 : la convenance personnelle servie à 55 ans {#sec-rsna-reforme-2007}
+
+Le **décret n° 2007-2148 du 21 août 2007**, publié au *Journal officiel* du 28 août 2007, n'énonce pas de date d'effet. Il touche le cœur du régime sur deux points.
+
+- **Le départ pour convenance personnelle.** Le décret abroge le tiret c) de l'article 15 bis et le remplace par un article 15 ter : le droit à la retraite reste ouvert « sans condition d'âge », après 360 mois de cotisations validées, mais la jouissance de la pension est différée « jusqu'à l'âge de cinquante cinq ans », au lieu de cinquante [@decret2007-2148, art. 1 et 3] (@tbl-rsna-anticipes). La réduction de 0,5 % par trimestre jusqu'à l'âge normal de la retraite est inchangée : le troisième alinéa de l'article 17, réécrit, ne diffère de celui de 1982 rectifié que par son renvoi à l'article 15 ter au lieu du tiret c) de l'article 15 bis [@decret2007-2148, art. 2 ; @decret82-1030-rect].
+- **L'entrée en jouissance.** L'article 47 fixe désormais l'entrée en jouissance des pensions au premier jour du mois qui suit celui au cours duquel l'assuré a rempli les conditions d'ouverture du droit, et non plus au premier jour du mois qui suit la cessation d'activité, la reconnaissance de l'invalidité ou le décès ; le droit s'éteint à l'expiration du mois au cours duquel le titulaire cesse de remplir les conditions exigées, ou décède [@decret2007-2148, art. 2].
+
+Le même décret reformule le tiret a) de l'article 15 bis, sans en changer les conditions — licenciement pour raisons économiques approuvé par la commission de contrôle des licenciements prévue à l'article 21 du code du travail, inscription au bureau de l'emploi pendant six mois au moins sans offre de travail —, et réécrit les articles 33 et 42, relatifs aux orphelins et à la réversibilité des pensions anticipées et proportionnelles (@sec-rsna-derives ; @sec-rsna-planchers) [@decret2007-2148, art. 2].
+
+#### Depuis 2007 {#sec-rsna-depuis-2007}
+
+Aucun texte publié au *Journal officiel* jusqu'en avril 2026 n'a modifié le décret n° 74-499 après le décret n° 2007-2148. L'âge légal de 60 ans, le stage de 120 mois, le taux de 40 % acquis au terme du stage et sa majoration de 0,5 % par trimestre, le plafond de 80 %, le salaire de référence sur dix ans et la pension minimale sont donc ceux qu'ont fixés les textes de 1974 à 2007. La loi n° 2019-37, qui porte l'âge légal à 62 ans dans le secteur public, modifie la loi n° 85-12 et non le décret de 1974 [@loi2019-37, art. 1] (@sec-cnrps-reforme-2019). Un relèvement de l'âge de la retraite dans le secteur privé a été évoqué publiquement en 2023 et en 2024 ; aucun texte en ce sens n'a été trouvé publié au *Journal officiel* jusqu'en avril 2026. Les seules règles d'âge prises depuis 2007 sont des arrêtés d'application de l'article 15, qui fixent à 55 ans l'âge de certaines catégories (@sec-rsna-ages-derogatoires).
+
+<!-- TODO (documentaliste) : le recensement des modificatifs s'arrête au 10 avril 2026 (dernière
+publication indexée dans jort_cache.db). Contrôler directement sur pist.tn les JORT d'avril à
+septembre 2026, notamment pour un éventuel décret relatif à l'âge de la retraite dans le secteur
+privé (projet évoqué en 2023-2024 : relèvement optionnel à 62 ans, prolongation jusqu'à 65 ans sur
+accord de l'employeur), avant d'écrire que l'âge légal du régime est toujours de 60 ans. -->
+
+### L'évolution des autres éléments {#sec-rsna-autres-elements}
+
+Les autres éléments de la pension sont présentés maillon par maillon. Pour chacun, la règle de 1974 est celle qu'expose la section consacrée au décret (@sec-rsna-decret-1974) : on n'en rappelle ici que ce qu'il faut pour lire son évolution.
+
+#### Les âges dérogatoires {#sec-rsna-ages-derogatoires}
+
+L'article 15 permet d'abaisser à 55 ans l'âge de la retraite pour les travaux pénibles ou insalubres, par arrêté du ministre des affaires sociales (@sec-rsna-age-stage). Trois arrêtés en ont fait usage.
+
+| Arrêté | Catégorie | Condition de durée | Effet |
+|---|---|---|---|
+| 4 juillet 1975 [@arrete-1975-07-04-age-mineurs] | mineurs | aucune | 1^er^ janvier 1974 (art. 2) |
+| 11 septembre 2015 [@arrete-2015-09-11-age-mineurs] | agents mineurs en rapport direct avec l'activité minière, figurant sur une liste annexée ; cadres supérieurs techniques exclus | 5 ans dans les mines, carrières ou laveries, ou 10 ans dans les services techniques qui les fréquentent | aucune date d'effet énoncée |
+| 22 mai 2023 [@arrete-2023-05-22-age-assainissement] | agents des entreprises affiliées à la CNSS dans l'assainissement, le nettoyage des voies, le traitement des ordures, la collecte, le transport et le traitement des déchets solides et liquides, figurant sur une liste annexée ; personnel des sièges sociaux exclu | 10 ans de service | aucune date d'effet énoncée |
+
+: Arrêtés abaissant de 60 à 55 ans l'âge de la retraite de catégories de salariés non agricoles {#tbl-rsna-ages-derogatoires}
+
+Sources : @arrete-1975-07-04-age-mineurs, art. 1-2 ; @arrete-2015-09-11-age-mineurs, art. 1-2 ; @arrete-2023-05-22-age-assainissement, art. 1.
+
+<!-- Tableau tenu à la main, et non engendré : aucun paramètre ne porte les âges dérogatoires du
+régime des salariés non agricoles. TODO (rédacteur) : remplacer par un tableau engendré une fois
+ces valeurs versées. -->
+
+L'arrêté de 1975 prend effet au 1^er^ janvier 1974, date d'effet du décret qu'il applique [@arrete-1975-07-04-age-mineurs, art. 2]. Celui de 2015, qui s'appuie sur les articles 15 et 16, ne vise que l'arrêté de 1975 parmi les arrêtés antérieurs ; aucun arrêté intermédiaire n'a été retrouvé. Pour le secteur public, les ouvriers accomplissant des travaux pénibles et insalubres relèvent d'une autre liste, fixée en application de la loi n° 85-12 (@sec-cnrps-categories-derogatoires).
+
+<!-- TODO (documentaliste) : rechercher d'éventuels arrêtés d'application de l'article 15 pris
+entre 1975 et 2015 (les requêtes « pénibles », « insalubres » et « admission à la retraite » n'en
+donnent aucun). -->
+
+#### La liquidation et le service
+
+Deux règles de procédure ont changé. Le délai de présentation de la demande, d'un an en 1974, est porté à cinq ans à partir de l'ouverture du droit, de la déclaration d'invalidité ou du décès par le décret n° 96-326 [@decret74-499, art. 46 ; @decret96-326, art. 1]. L'entrée en jouissance est fixée depuis 2007 au premier jour du mois qui suit l'ouverture du droit, et non plus la cessation d'activité (@sec-rsna-reforme-2007). Le décret n° 90-1455 a par ailleurs réécrit l'article 14, relatif à la fin de la relation de travail et à son homologation [@decret90-1455, art. 1] ; ce que sa rédaction change à celle de 1974 n'est pas établi ici.
+
+#### Les planchers {#sec-rsna-planchers}
+
+La [pension minimale garantie](#g-pension-minimale-garantie) du régime est exprimée en fraction $\pi$ du SMIG rapporté à 2 400 heures par an (@sec-rsna-calcul), et sa structure a changé en 1982 en même temps que le traitement des carrières courtes (@sec-rsna-reforme-1982).
 
 ```{python}
 #| echo: false
@@ -292,51 +433,53 @@ table("rsna_planchers",
       "tbl-rsna-planchers")
 ```
 
-Sources : @decret74-499, art. 45 ; @decret82-1030, art. 3 et 5. Le décret n° 82-1030 n'énonce pas de date d'effet : le 22 juillet 1982 est le jour où il devient obligatoire, un jour franc après la publication du fascicule daté des 20, 21, 22 et 23 juillet 1982. Ce tableau ne donne que le niveau du plancher. Deux textes en ont modifié la portée sans en changer le niveau, et figurent au tableau @tbl-rsna-textes : le décret n° 79-536, qui l'étend en 1979 aux pensions des régimes conventionnels antérieurs lorsque l'assuré n'a pas de pension au titre du décret [@decret79-536, art. 1], et le décret n° 90-1455, qui reformule en 1990 le versement unique des carrières les plus courtes [@decret90-1455, art. 1]. Le sort des carrières inférieures au stage est exposé ci-dessous.
+Sources : @decret74-499, art. 45 ; @decret82-1030, art. 3 et 5. Le décret n° 82-1030 n'énonce pas de date d'effet : le 22 juillet 1982 est le jour où il devient obligatoire, un jour franc après la publication du fascicule daté des 20, 21, 22 et 23 juillet 1982. Ce tableau ne donne que le niveau du plancher. Deux textes en ont modifié la portée sans en changer le niveau, et figurent au tableau @tbl-rsna-textes : le décret n° 79-536, qui l'étend en 1979 aux pensions des régimes conventionnels antérieurs lorsque l'assuré n'a pas de pension au titre du décret [@decret79-536, art. 1], et le décret n° 90-1455, qui reformule en 1990 le versement unique des carrières les plus courtes [@decret90-1455, art. 1]. Le sort des carrières inférieures au stage est exposé avec la réforme de 1982 (@sec-rsna-reforme-1982).
 
-Le changement de 1982 est plus qu'un ajustement. Dans le décret de 1974, l'assuré qui atteignait l'âge sans remplir la condition de stage recevait, s'il comptait 60 mois de cotisations, une allocation de vieillesse **en capital**, égale à une mensualité de la pension théorique par période de six mois de cotisations, et convertible en rente [@decret74-499, art. 39-43]. Le décret n° 82-1030 remplace cette section par une section « de la pension proportionnelle » : le même assuré reçoit désormais une **pension**, calculée sur la base de celle à laquelle il aurait eu droit s'il avait accompli le stage, au prorata des mois cotisés, et réversible [@decret82-1030, art. 3]. Le même décret distingue deux niveaux de pension minimale — les deux tiers du SMIG pour les pensions de vieillesse et d'invalidité, la moitié pour les retraites anticipées des tirets a) et b) de l'article 15 bis et pour les pensions proportionnelles [@decret82-1030, art. 5]. Depuis 2007, l'article 42 (nouveau) rend réversibles, dans les conditions de la section relative aux survivants, les pensions proportionnelles et les pensions des articles 15 bis et 15 ter [@decret2007-2148].
+En 1982, la pension minimale est ramenée à la moitié du SMIG pour les retraites anticipées des tirets a) et b) de l'article 15 bis et pour les pensions proportionnelles, qui remplacent l'allocation de vieillesse en capital [@decret82-1030, art. 3 et 5]. Depuis 2007, l'article 42 (nouveau) rend réversibles, dans les conditions de la section relative aux survivants, les pensions proportionnelles et les pensions des articles 15 bis et 15 ter [@decret2007-2148].
 
-### Les droits dérivés
+#### Les droits dérivés {#sec-rsna-derives}
 
-Au décès de l'assuré, sa veuve perçoit une [pension de réversion](#g-pension-de-reversion) de **50 %** de la pension dont il bénéficiait ou aurait dû bénéficier [@decret74-499, art. 31]. Le décret n° 81-188 majore ce taux jusqu'à **75 %** lorsqu'il n'y a pas d'enfant bénéficiaire ou que le total des pensions de veuve et d'orphelins ne dépasse pas la pension de l'assuré, la pension d'orphelin étant réduite d'autant en cas de dépassement [@decret81-188, art. 2]. Le droit est ouvert à l'origine à la veuve et au veuf invalide [@decret74-499, art. 29] ; depuis le décret n° 97-291, l'article 29 l'ouvre au « conjoint survivant » de l'assuré [@decret97-291, art. 1]. Dans sa rédaction de 1974, l'article 30 exige que le mariage ait été contracté antérieurement à la réalisation de l'invalidité [@decret74-499, art. 30] ; cet article a été modifié par le décret n° 90-1455, dont la nouvelle rédaction n'est pas établie ici.
+Au décès de l'assuré, sa veuve perçoit une [pension de réversion](#g-pension-de-reversion) de **50 %** de la pension dont il bénéficiait ou aurait dû bénéficier : c'est le taux $\theta_c$ de 1974 (@sec-rsna-derives-1974) [@decret74-499, art. 31]. Le décret n° 81-188 majore ce taux jusqu'à **75 %** lorsqu'il n'y a pas d'enfant bénéficiaire ou que le total des pensions de veuve et d'orphelins ne dépasse pas la pension de l'assuré, la pension d'orphelin étant réduite d'autant en cas de dépassement [@decret81-188, art. 2]. Le droit est ouvert à l'origine à la veuve et au veuf invalide [@decret74-499, art. 29] ; depuis le décret n° 97-291, l'article 29 l'ouvre au « conjoint survivant » de l'assuré [@decret97-291, art. 1]. Le décret n° 81-188 avait déjà réécrit l'article 29 : le droit y est ouvert à la veuve d'un titulaire de pension de vieillesse ou d'un assuré remplissant le stage de vieillesse, au veuf invalide, et à la veuve d'un titulaire de pension d'invalidité ou d'un assuré décédé avant l'âge normal de la retraite qui remplissait les conditions de la pension d'invalidité de l'article 21 [@decret81-188, art. 1]. Dans sa rédaction de 1974, l'article 30 exige que le mariage ait été contracté « antérieurement à la réalisation de l'éventualité » [@decret74-499, art. 30] ; cet article a été modifié par le décret n° 90-1455, dont la nouvelle rédaction n'est pas établie ici.
 
 | Règle | Décret n° 74-499 (1^er^ janvier 1974) | Modifications |
 |---|---|---|
-| Bénéficiaire et taux de la réversion | la veuve, et le veuf invalide : 50 % | 1981 : jusqu'à 75 % sous condition (décret n° 81-188) ; 1997 : droit ouvert au « conjoint survivant » (décret n° 97-291, art. 29) |
+| Bénéficiaire et taux de la réversion | la veuve, et le veuf invalide : 50 % | 1981 : jusqu'à 75 % sous condition ; droit rattaché, pour le décès avant l'âge normal de la retraite, aux conditions de la pension d'invalidité de l'article 21 (décret n° 81-188) ; 1997 : droit ouvert au « conjoint survivant » (décret n° 97-291, art. 29) |
 | Remariage | suppression au premier jour du trimestre civil suivant | 1990 : rétablissement, revalorisé, au décès du nouveau conjoint ; cumul de pensions de conjoint survivant au titre de mariages successifs interdit (décret n° 90-1455) |
-| Taux d'orphelin | 20 %, porté à 30 % pour l'orphelin de père et de mère | 1981 : 30 % dans tous les cas (décret n° 81-188, art. 34) |
+| Taux d'orphelin | 20 %, porté à 30 % pour l'orphelin de père et de mère | 1981 : 30 % dans tous les cas (décret n° 81-188, art. 34) ; droit étendu aux orphelins d'un titulaire de pension d'invalidité ou d'un assuré décédé avant l'âge normal qui remplissait les conditions de l'article 21 (décret n° 81-188, art. 33) |
 | Âge limite de l'orphelin | 16 ans ; 21 ans en cas d'études ; sans limite en cas d'affection incurable | 1^er^ mai 1997 : 21 ans en études secondaires, techniques ou professionnelles, 25 ans en études supérieures sans bourse, sans limite pour la fille sans ressources ou qui n'est pas à la charge de son mari et en cas d'infirmité (décret n° 97-1927) ; 2007 : paiement à la fille définitivement suspendu dès qu'une condition fait défaut (décret n° 2007-2148) |
 | Plafond de cumul | pensions de veuves et d'orphelins limitées à la pension de référence du mari, par réduction temporaire des pensions d'orphelins | 1997 : pensions de conjoint survivant et d'orphelins limitées à la pension dont bénéficiait ou aurait pu bénéficier le défunt (décret n° 97-291, art. 38) |
 | Cumul d'une pension d'invalidité et d'une pension de survivant | interdit, seule la plus élevée étant servie | 1997 : interdiction supprimée par l'abrogation de l'article 52 (décret n° 97-291, art. 2) |
 
 : Droits des survivants du régime des salariés non agricoles {#tbl-rsna-survivants}
 
-Sources : @decret74-499, art. 29-38 et 52 ; @decret81-188, art. 1-2 ; @decret90-1455, art. 1 ; @decret97-291, art. 1-2 ; @decret97-1927, art. 1-2 ; @decret2007-2148. Le décret n° 81-188 a aussi réécrit l'article 33, dans une rédaction qui n'est pas exposée ici. Le décret n° 97-291 n'énonce pas de date d'effet ; le décret n° 97-1927 prend effet au 1^er^ mai 1997.
+Sources : @decret74-499, art. 29-38 et 52 ; @decret81-188, art. 1-2 ; @decret90-1455, art. 1 ; @decret97-291, art. 1-2 ; @decret97-1927, art. 1-2 ; @decret2007-2148. Le décret n° 81-188 réécrit aussi l'article 33 : les limites d'âge de 1974 y sont reprises. Le décret n° 97-291 n'énonce pas de date d'effet ; le décret n° 97-1927 prend effet au 1^er^ mai 1997.
 
 <!-- Tableau tenu à la main, et non engendré : l'arbre des paramètres du régime des salariés
 non agricoles n'a pas de branche « survivants ». Voir l'en-tête de
 scripts/generate_retraites_tables.py. -->
 
-La [pension temporaire d'orphelin](#g-pension-temporaire-orphelin) est collective et se réduit à mesure que chaque orphelin cesse de remplir les conditions ; elle est suspendue lorsque l'orphelin est pris en charge par une institution bénéficiant de l'aide de l'État [@decret74-499, art. 35-36]. L'article 33 issu du décret de 1997 ouvre le même droit aux orphelins d'un titulaire de pension d'invalidité ou d'un assuré remplissant les conditions de la pension d'invalidité [@decret97-1927, art. 1]. Lorsque la pension est suspendue pour abandon de famille, une pension temporaire de 80 % est allouée à l'épouse et aux enfants mineurs pendant la suspension [@decret74-499, art. 50]. L'extension de 1997 aux orphelins en études supérieures et à la fille sans ressources prend effet le même jour, le 1^er^ mai 1997, que l'extension équivalente dans le secteur public (@sec-secteur-public).
+La [pension temporaire d'orphelin](#g-pension-temporaire-orphelin) est collective et se réduit à mesure que chaque orphelin cesse de remplir les conditions ; elle est suspendue lorsque l'orphelin est pris en charge par une institution bénéficiant de l'aide de l'État [@decret74-499, art. 35-36]. L'article 33 issu du décret de 1997 maintient ce droit, ouvert dès 1981, aux orphelins d'un titulaire de pension d'invalidité ou d'un assuré remplissant les conditions de la pension d'invalidité [@decret81-188, art. 1 ; @decret97-1927, art. 1]. Lorsque la pension est suspendue pour abandon de famille, une pension temporaire de 80 % est allouée à l'épouse et aux enfants mineurs pendant la suspension [@decret74-499, art. 50]. L'extension de 1997 aux orphelins en études supérieures et à la fille sans ressources prend effet le même jour, le 1^er^ mai 1997, que l'extension équivalente dans le secteur public (@sec-secteur-public).
 
-<!-- TODO (documentaliste) : établir le contenu de l'article 33 réécrit par le décret n° 81-188 et
-celui de l'article 30 modifié par le décret n° 90-1455. -->
+<!-- TODO (documentaliste) : établir le contenu de l'article 30 modifié par le décret n° 90-1455.
+L'article 33 réécrit par le décret n° 81-188 est lu (docs/notes/rsna-histoire-reformes.md, § 4.2). -->
 
-### L'invalidité
+#### L'invalidité {#sec-rsna-invalidite}
 
-L'assuré atteint d'une invalidité d'origine non professionnelle qui réduit des deux tiers au moins sa capacité de travail ou de gain a droit, avant l'âge de la vieillesse, à une pension d'invalidité [@decret74-499, art. 20-21]. Le stage exigé est de 60 mois de cotisations, dont six au cours des douze mois précédant la première constatation, dans la rédaction de l'article 21 b) issue du décret n° 81-188 [@decret81-188]. Le taux de la pension a connu trois états : **40 %** du salaire moyen de référence en 1974 [@decret74-499, art. 22], **50 %** avec le décret n° 81-188 [@decret81-188], puis 50 % majorés de **0,5 %** par trimestre de cotisation au-delà de 180 mois, dans la limite de **80 %**, avec le décret n° 82-1030 [@decret82-1030, art. 4].
+L'invalidité est ouverte dans les conditions de 1974 (@sec-rsna-derives-1974), à une exception près. Le décret n° 81-188 réécrit l'article 21 b) et ne retient plus que « un stage au moins égal à 60 mois de cotisations », sans la condition de six mois de cotisation au cours des douze mois précédant la première constatation qu'exigeait le texte de 1974 [@decret74-499, art. 21 ; @decret81-188, art. 1].
+
+Le taux de la pension a connu trois états. En 1974, il est de **40 %** du salaire moyen de référence, majoré de 2 % par période de 12 mois de cotisation au-delà de 120 mois, dans la limite de **80 %** [@decret74-499, art. 22]. Le décret n° 81-188 porte le taux de base à **50 %** [@decret81-188, art. 1]. Le décret n° 82-1030 réécrit la majoration : **0,5 %** par trimestre de cotisation au-delà de **180 mois**, dans la même limite de 80 % [@decret82-1030, art. 4]. Le seuil de la majoration passe ainsi de 120 à 180 mois au moment où le taux de base passe de 40 à 50 % ; par le calcul, 50 % est le taux que la règle de 1974 donnait à 180 mois.
 
 La pension est bonifiée de 20 % lorsque l'invalide doit recourir à l'assistance d'une tierce personne ; elle est convertie en pension de vieillesse à l'âge requis, la bonification étant maintenue ; elle fait l'objet d'un contrôle annuel, mais n'est plus révisable après 55 ans ; et, cumulée avec une rente d'accident du travail, elle est réduite de la moitié de la rente, sans que la réduction excède la moitié de la pension [@decret74-499, art. 23-25 et 28]. Son cumul avec une pension de survivant, interdit en 1974, est possible depuis l'abrogation de l'article 52 en 1997 [@decret97-291, art. 2].
 
-### La revalorisation {#sec-rsna-revalorisation}
+#### La revalorisation {#sec-rsna-revalorisation}
 
 La [revalorisation](#g-revalorisation-pensions) des pensions du régime a connu trois règles successives.
 
 **Une révision discrétionnaire (1974-1980).** Dans sa rédaction de 1974, l'article 53 prévoit que les pensions sont « révisé[es] en cas de hausse sensible du niveau général des salaires », la date et les modalités étant fixées par décret [@decret74-499, art. 53]. Le décret n° 79-510 du 23 mai 1979 en est le premier décret d'application : avec effet au 1^er^ mai 1978, il majore les pensions d'une somme fixée selon la date d'ouverture du droit — 16,850 D, 13,850 D ou 4,250 D — affectée du taux de la pension [@decret79-510, art. 2 et 5]. Chacune de ces sommes correspond, par le calcul, à la hausse du SMIG horaire intervenue depuis l'ouverture du droit, rapportée à 200 heures.
 
-**Un montant indexé sur le SMIG (1^er^ mai 1980 - 31 décembre 2000).** Le décret n° 81-187 rend cette formule permanente : les pensions sont revalorisées « automatiquement à chaque augmentation du SMIG », d'une majoration mensuelle égale à la hausse du SMIG horaire rapportée à 200 heures par mois, affectée du taux de la pension et, pour les survivants, du taux de réversion [@decret81-187, art. 1 et 3]. La majoration est donc une **somme**, qui ne se déduit pas du pourcentage de hausse du SMIG. Pour 1981 et 1982, les décrets qui augmentent le salaire minimum fixent eux-mêmes cette somme : l'indemnité complémentaire provisoire de 1981 est « assimilée à une augmentation mensuelle du salaire minimum interprofessionnel garanti égale à 10 dinars » pour l'application de l'article 53, et les majorations de 1982 à une augmentation de 20 dinars [@decret81-437, art. 7 ; @decret82-501, art. 10]. Le décret n° 97-291 ne touche à l'article 53 que pour remplacer « veuves » par « conjoint survivant » : la règle de calcul reste celle de 1981 jusqu'en 2000 [@decret97-291, art. 1].
+**Un montant indexé sur le SMIG (1^er^ mai 1980 - 31 décembre 2000).** Le décret n° 81-187 rend cette formule permanente (@sec-rsna-reforme-1981) : les pensions sont revalorisées « automatiquement à chaque augmentation du SMIG », d'une majoration mensuelle égale à la hausse du SMIG horaire rapportée à 200 heures par mois, affectée du taux de la pension et, pour les survivants, du taux de réversion [@decret81-187, art. 1 et 3]. La majoration est donc une **somme**, qui ne se déduit pas du pourcentage de hausse du SMIG. Pour 1981 et 1982, les décrets qui augmentent le salaire minimum fixent eux-mêmes cette somme : l'indemnité complémentaire provisoire de 1981 est « assimilée à une augmentation mensuelle du salaire minimum interprofessionnel garanti égale à 10 dinars » pour l'application de l'article 53, et les majorations de 1982 à une augmentation de 20 dinars [@decret81-437, art. 7 ; @decret82-501, art. 10]. Le décret n° 97-291 ne touche à l'article 53 que pour en réécrire l'alinéa 4, où les pensions « des veuves » deviennent celles « de conjoint survivant » : la règle de calcul reste celle de 1981 jusqu'en 2000 [@decret97-291, art. 1].
 
-**Un taux égal à la hausse du SMIG (depuis le 1^er^ janvier 2001).** Le décret n° 2001-779 dispose que la majoration est calculée « en multipliant le taux de la variation du SMIG par le montant de la pension avant l'augmentation », le SMIG horaire étant rapporté à 48 heures par semaine ; il applique cette règle, à titre transitoire, à la hausse du SMIG du 1^er^ mai 2000, mais seulement à partir du 1^er^ janvier 2001, et soumet la majoration à cotisation [@decret2001-779, art. 1 à 3]. L'article 53 n'a plus été modifié depuis. En 2026, pour la première fois, le décret qui fixe le SMIG énonce lui-même que son augmentation « s'applique aux pensions de retraite » [@decret2026-67, art. 6].
+**Un taux égal à la hausse du SMIG (depuis le 1^er^ janvier 2001).** Le décret n° 2001-779 (@sec-rsna-reforme-2001) dispose que la majoration est calculée « en multipliant le taux de la variation du SMIG par le montant de la pension avant l'augmentation », le SMIG horaire étant rapporté à 48 heures par semaine ; il applique cette règle, à titre transitoire, à la hausse du SMIG du 1^er^ mai 2000, mais seulement à partir du 1^er^ janvier 2001, et soumet la majoration à cotisation [@decret2001-779, art. 1 à 3]. L'article 53 n'a plus été modifié depuis. En 2026, pour la première fois, le décret qui fixe le SMIG énonce lui-même que son augmentation « s'applique aux pensions de retraite » [@decret2026-67, art. 6].
 
 Les deux tableaux suivants donnent la série des hausses du SMIG qui ont déclenché la revalorisation. Dans le premier, la dernière colonne mesure la hausse du SMIG, non celle des pensions : la majoration de chaque pension est alors une somme. Dans le second, le même taux s'applique directement aux pensions.
 
@@ -423,6 +566,104 @@ Voir l'en-tête de scripts/generate_retraites_tables.py. -->
 <!-- TODO (documentaliste) : établir le régime horaire retenu par la caisse pour la revalorisation
 de 1981 à 2000 (circulaire, doctrine) et le traitement des indemnités spéciales de 1989-1992 ;
 vérifier sur le Journal officiel les lignes marquées d'une croix. -->
+
+#### Le financement {#sec-rsna-financement}
+
+Les textes qui fixent les taux et la répartition des cotisations du régime relèvent du livre « Cotisations sociales ». Ils ont modifié deux articles du décret de 1974. L'article 5 b) fixe la quote-part de la masse des cotisations des régimes de la loi n° 60-30 affectée au régime : 1,25/20^e^ en 1974, 4,25/20^e^ au 1^er^ janvier 1988, 6,25/20^e^ au 1^er^ janvier 1994, 7,25/20^e^ au 1^er^ janvier 2003 [@decret74-499, art. 5 ; @decret88-1137, art. 1-2 ; @decret94-1429, art. 1-2 ; @decret2003-1212, art. 1-2]. L'article 9 fixe la cotisation propre du régime : 3,75 % en 1974 ; un calendrier de hausse de la part des travailleurs en 1994 ; 5,25 %, dont 2,75 % à la charge des travailleurs, depuis 1997 [@decret74-499, art. 9 ; @decret94-1429, art. 1 ; @decret97-555]. Le rapport entre ces ressources et les pensions servies est présenté avec l'équilibre du régime (@sec-rsna-equilibre).
+
+### L'équilibre du régime {#sec-rsna-equilibre}
+
+Le **taux de cotisation d'équilibre** rapporte les pensions servies une année à la masse des salaires de la même année : c'est le taux qui, appliqué à ces salaires, paierait exactement les pensions de l'année par la seule cotisation. Il se définit et se décompose comme pour le secteur public (@sec-cnrps-equilibre) :
+
+$$
+\tau^* = \frac{N_p\,\bar p}{N_c\,\bar w} = \frac{\bar p}{\bar w}\times\frac{N_p}{N_c}
+$$
+
+où $\tau^*$ est le taux d'équilibre, $N_p$ le nombre de pensionnés, $\bar p$ la pension moyenne, $N_c$ le nombre de cotisants et $\bar w$ leur salaire moyen ; $\bar p / \bar w$ est le taux de remplacement apparent, et $N_p / N_c$ le rapport entre pensionnés et cotisants. Le calcul diffère de celui du secteur public sur trois points.
+
+- **La masse des salaires est lue directement.** Les annuaires statistiques de la caisse publient chaque année la masse salariale déclarée par les employeurs au régime : elle n'a à être ni déduite des cotisations ni approchée par une autre masse [@cnss-annuaires-statistiques].
+- **Le numérateur ne comprend que les pensions du régime légal.** Les pensions servies sont celles du régime des salariés non agricoles, de toutes natures, orphelins compris, **hors régime complémentaire** : celui-ci, facultatif, est assis sur la seule tranche de salaire au-delà de la limite de calcul (@sec-regime-complementaire). Les effectifs ne permettent pas la même séparation : $N_p$ compte les pensionnés de toutes natures, orphelins et bénéficiaires du régime complémentaire compris, et les cotisants $N_c$ sont les actifs du régime, y compris les non-assujettis que les annuaires comptent à part [@cnss-annuaires-statistiques]. Avec les pensions du régime complémentaire, le taux d'équilibre serait de 14,43 % en 2000 et de 18,88 % en 2017, soit 0,4 à 0,9 point de plus selon les années.
+- **Le taux légal de la branche se lit de deux façons.** Il est la somme d'une cotisation propre de 5,25 % des salaires depuis 1997 [@decret97-555] et d'une quote-part de la masse des cotisations des régimes de la loi n° 60-30, de « 6,25/20ème » depuis le 1^er^ janvier 1994, puis de « 7,25/20ème » depuis le 1^er^ janvier 2003 [@decret94-1429, art. 1-2 ; @decret2003-1212, art. 1-2]. Exprimée en vingtièmes, cette fraction date d'un temps où le taux global de la loi n° 60-30 était de 20 % : un vingtième valait alors un point de salaire. Depuis que la loi n° 97-4 a ramené ce taux global à 18 % [@loi97-4], les deux lectures divergent. Lue « en points », la quote-part donne à la branche un taux légal de 11,50 % de 2000 à 2002 et de 12,50 % depuis 2003 ; c'est la lecture de la caisse, qui publie un taux de 12,5 % en renvoyant au décret n° 2003-1212 [@cnss-annuaires-statistiques]. Lue littéralement, comme une fraction des 18 %, elle donne 10,875 % puis 11,775 %. Pour 2000-2002, aucun document de la caisse consulté ne publie ce taux : le chiffre de 11,50 % est déduit du texte par la même lecture. La figure porte les deux lectures.
+
+```{python}
+#| label: fig-rsna-taux-equilibre
+#| fig-cap: "Régime des salariés non agricoles : taux de cotisation d'équilibre et taux légal de la branche pensions, 2000-2017."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import taux_equilibre_rsna as ter
+import figtools
+figtools.figure_tabs(
+    ter.fig_taux(), ter.table(), "cnss-rsna-taux-equilibre",
+    slug="fig_rsna_taux_equilibre",
+    caption="Régime des salariés non agricoles : taux de cotisation d'équilibre et taux légal de la branche pensions, 2000-2017",
+    note_lecture=(
+        "**Le « Taux d'équilibre (pensions ÷ masse salariale déclarée) » passe de 14,05 % "
+        "des salaires déclarés en 2000 à 17,99 % en 2017.** Il monte jusqu'en 2005 (16,38 %), reste entre 15,7 % et 16,4 % de "
+        "2005 à 2013, puis remonte à 18,10 % en 2016. Avec les pensions du régime "
+        "complémentaire (« Taux d'équilibre, avec le régime complémentaire », trait fin), "
+        "il est plus haut de 0,4 à 0,9 point. Le taux légal de la branche passe de 11,50 % "
+        "à 12,50 % au 1er janvier 2003 dans la lecture « en points » (« Taux légal, lecture "
+        "« en points » (celle de la caisse) », gris plein), de 10,875 % à 11,775 % dans la "
+        "lecture littérale (« Taux légal, lecture littérale (X/20 × 18 %) », gris pointillé). "
+        "L'écart entre le taux d'équilibre et le taux légal est positif toutes les années : "
+        "dans la lecture « en points », de 2,55 points en 2000 à 5,49 points en 2017, avec "
+        "un minimum de 2,38 points en 2001 et un maximum de 5,60 points en 2016 ; dans la "
+        "lecture littérale, de 3,17 à 6,21 points. La série s'arrête en 2017 : les "
+        "annuaires statistiques postérieurs n'ont pas été retrouvés, et les autres "
+        "publications de la caisse ne donnent pas la masse salariale déclarée du régime."),
+)
+```
+
+La hausse tient à la démographie du régime. Le nombre de pensionnés rapporté au nombre de cotisants passe de 28,0 % en 2000 à 32,8 % en 2008, 37,6 % en 2013 et 45,3 % en 2017. Le taux de remplacement apparent recule dans le même temps de 50,1 % à 39,7 % : à peu près stable jusqu'en 2011, où il vaut encore 48,6 %, il baisse ensuite, à 42,5 % en 2013. Le taux d'équilibre étant le produit des deux, leurs mouvements se compensent en partie : de 2000 à 2017, le rapport entre pensionnés et cotisants est multiplié par 1,62, le remplacement apparent par 0,79, et le taux d'équilibre par 1,28. En logarithme, la hausse de 0,247 du taux d'équilibre se décompose en + 0,480 pour le rapport entre pensionnés et cotisants et − 0,233 pour le remplacement apparent ; la contribution du remplacement est presque nulle de 2000 à 2008 (− 0,012), et vaut − 0,220 de 2008 à 2017.
+
+```{python}
+#| label: fig-rsna-taux-equilibre-decomposition
+#| fig-cap: "Régime des salariés non agricoles : décomposition du taux d'équilibre, indices base 100 en 2000, 2000-2017."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import taux_equilibre_rsna as ter
+import figtools
+figtools.figure_tabs(
+    ter.fig_decomposition(), ter.table_indices(), "cnss-rsna-taux-equilibre",
+    slug="fig_rsna_taux_equilibre_decomposition",
+    caption="Régime des salariés non agricoles : décomposition du taux d'équilibre, indices base 100 en 2000, 2000-2017",
+    note_lecture=(
+        "**Le taux d'équilibre est le produit du taux de remplacement apparent et du "
+        "rapport entre pensionnés et cotisants.** Sur une échelle logarithmique, la courbe "
+        "du taux d'équilibre se situe, par rapport à la ligne 100, à une hauteur égale à "
+        "la somme des hauteurs des deux autres : les indices se multiplient. En 2008, "
+        "l'indice du taux d'équilibre vaut 115,5, celui du rapport « Pensionnés ÷ "
+        "cotisants » 117,0, celui du « Taux de remplacement apparent (pension moyenne ÷ "
+        "salaire moyen) » 98,8. En 2017, ils valent 128,0, 161,5 et 79,2 : "
+        "1,615 × 0,792 ≈ 1,28. Le rapport entre pensionnés et cotisants monte par sauts "
+        "en 2012 et en 2016, années où le nombre de pensionnés augmente de 8,2 % et de "
+        "8,8 %, sans que les annuaires commentent ces hausses ; le remplacement apparent "
+        "reste entre 95 et 99 de 2001 à 2011, puis tombe à 89,5 en 2012 et à 79,2 en 2017. "
+        "Le filet de 2003 marque la sortie des taxis et louages du champ des employeurs "
+        "du régime : la série n'est pas homogène à cette date. Les cotisants sont les "
+        "actifs du régime, non-assujettis compris."),
+)
+```
+
+Ces chiffres sont calculés à partir des annuaires statistiques de la caisse [@cnss-annuaires-statistiques] ; ils appellent plusieurs réserves.
+
+- **Déclaré n'est pas encaissé.** La masse des salaires est celle que déclarent les employeurs ; les cotisations effectivement recouvrées peuvent être moindres, du fait des arriérés et des entreprises défaillantes. Le taux d'équilibre n'est donc pas le taux qui équilibrerait les encaissements.
+- **Les pensions sont comptables, les salaires déclaratifs.** Les montants de pensions viennent des bilans de la caisse, la masse des salaires de ses fichiers de déclarations : les deux n'ont ni le même producteur ni le même calendrier d'arrêté.
+- **Le travail non déclaré est hors champ.** La masse des salaires ne couvre que les salaires déclarés ; rapporté à une assiette plus large, le taux d'équilibre serait plus bas.
+- **Le régime complémentaire n'est séparé qu'au numérateur.** Ses pensions sont exclues des montants, non ses bénéficiaires des effectifs. La variante qui les inclut ajoute des pensions financées par une cotisation facultative assise sur la seule tranche de salaire au-delà de la limite de calcul : elle surestime la charge de la branche légale.
+- **La limite de calcul abaisse le remplacement apparent.** Les pensions sont calculées sur des salaires retenus dans la limite de six fois le SMIG, alors que la masse déclarée n'est pas plafonnée : le taux de remplacement apparent en est abaissé d'autant que des salaires dépassent cette limite.
+- **La série rompt en 2003.** Le nombre d'employeurs du régime baisse de 12,3 % en 2003, du fait du changement de régime des professionnels du transport — taxis et louages — par le décret n° 2002-3018 [@decret-2002-3018] ; le nombre de salariés déclarés, lui, continue de croître.
+- **Les effectifs sont des stocks de fin d'année, les montants des flux annuels.** Lorsque le nombre de pensionnés augmente fortement, comme en 2012 et en 2016, la pension moyenne de l'année en est sous-estimée.
+- **Le taux légal a deux lectures**, exposées plus haut ; l'écart entre le taux d'équilibre et le taux légal en dépend, de 0,6 à 0,7 point selon les années.
+- **La série commence en 2000 et s'arrête en 2017.** Les annuaires statistiques de la caisse postérieurs à 2017 n'ont pas été retrouvés, et ses autres publications consultées ne donnent pas la masse salariale déclarée du régime.
+
+Le taux d'équilibre est enfin une grandeur instantanée, qui rapporte les seules pensions aux seuls salaires déclarés : il ne tient compte ni des réserves du régime ni de ses autres ressources.
+
+<!-- TODO (documentaliste) : rechercher les annuaires statistiques de la CNSS de 2018 à 2024
+(domaines cnss.tn, cnss.nat.tn, www.cnss.nat.tn, archives du web) pour prolonger la série au-delà
+de 2017. -->
 
 ## Les salariés agricoles {#sec-agricoles}
 
@@ -573,9 +814,9 @@ Le tableau suivant compare, pour chaque maillon, le régime général du secteur
 | Durée minimale | 15 ans de services | 120 mois de cotisations | 40 trimestres de cotisations |
 | Départ anticipé sans motif particulier | 55 ans et 35 ans de services (1985) ; 57 ans et 37 ans (2007) | 360 mois, jouissance à 50 ans avec décote (1982) ; à 55 ans (2007) | aucun dans la loi n° 81-6 (art. 45 à 88) |
 | Assiette | dernière rémunération, ou rémunération de la fonction la plus élevée exercée deux ans | 3 ou 5 dernières années (1974) ; 10 dernières années, moyenne sur 36 ou 60 mois inchangée (1990) ; remplacées par 5, 7 puis 10 années, moyenne sur 60, 84 puis 120 mois (1994-1996) ; dans la limite de six fois le SMIG | SMAG × 300 jours × coefficient, 3 ou 5 dernières années |
-| Acquisition du taux | 2 % par an, 3 % de la 11^e^ à la 20^e^ année | 40 % à 120 mois, puis 2 % par an | 40 % à 40 trimestres, puis 0,5 % par trimestre |
+| Acquisition du taux | 2 % par an, 3 % de la 11^e^ à la 20^e^ année | 40 % à 120 mois, puis 2 % par période de 12 mois (1974) ; 0,5 % par trimestre (1982) | 40 % à 40 trimestres, puis 0,5 % par trimestre |
 | Plafond | 80 % (1981) ; 90 % (1985) | 80 % (1974) | 80 % (1981) |
-| Pension minimale | 2/3 du SMIG (1981), revalorisée à chaque hausse du SMIG (1982) ; 2/3 du SMIG (1985) | 2/3 du SMIG (1974) ; 1/2 pour les anticipées et proportionnelles (1982) | aucune dans la loi n° 81-6 (art. 45 à 88) |
+| Pension minimale | 2/3 du SMIG (1981), revalorisée à chaque hausse du SMIG (1982) ; 2/3 du SMIG (1985) | 2/3 du SMIG (1974) ; 1/2 pour les départs anticipés des cas a) et b) et les pensions proportionnelles (1982) | aucune dans la loi n° 81-6 (art. 45 à 88) |
 | Carrière courte | depuis 1985, à partir de 5 ans : allocation de 1/2 SMIG, réversible depuis 1997, ou remboursement | allocation en capital à partir de 60 mois (1974) ; pension proportionnelle à partir de 60 mois (1982) | allocation en capital à partir de 20 trimestres |
 | Conjoint survivant | 75 % (1981, 1985) | 50 %, majorable à 75 % (1981) | 50 % |
 | Orphelin | 10 % ; jusqu'à 25 ans en études supérieures (1997) | 20 % ou 30 % (1974) ; 30 % (1981) ; jusqu'à 25 ans en études supérieures (1997) | 20 % ou 30 % |
@@ -600,3 +841,108 @@ CNSS, statistiques de l'INS, Lettre CRES n° 3 de 2014) sur l'effectif des pensi
 moyenne et son évolution par caisse, pour donner à cette vue d'ensemble une dimension chiffrée.
 Toute appréciation sur la générosité relative des deux secteurs devra être attribuée à la source
 qui la porte. -->
+
+## Annexe : les notations du chapitre {#sec-cnss-notations}
+
+Les formules du chapitre emploient une notation unique, qui reprend celle du chapitre consacré au secteur public pour les grandeurs communes. Chaque symbole est défini à sa première apparition, dans la formule où il est introduit ou dans la phrase qui la suit ; le tableau les rassemble dans cet ordre.
+
+| Symbole | Grandeur | Introduit en |
+|---|---|---|
+| $P$ | pension de vieillesse annuelle ; pour les droits dérivés, pension dont l'assuré bénéficiait ou aurait bénéficié | @sec-rsna-calcul |
+| $n$ | durée de cotisation, effective ou assimilée, en mois | @sec-rsna-calcul |
+| $n_0$ | stage, en mois | @sec-rsna-calcul |
+| $\tau(n)$ | taux de liquidation acquis pour la durée $n$ | @sec-rsna-calcul |
+| $\tau_0$ | taux acquis au terme du stage | @sec-rsna-calcul |
+| $\alpha$ | majoration du taux par période complète de $u$ mois au-delà du stage | @sec-rsna-calcul |
+| $u$ | durée, en mois, de la période de cotisation qui ouvre la majoration | @sec-rsna-calcul |
+| $\bar\tau$ | plafond du taux de liquidation | @sec-rsna-calcul |
+| $R$ | salaire moyen de référence, annuel | @sec-rsna-calcul |
+| $P_{\min}$ | pension minimale garantie, annuelle | @sec-rsna-calcul |
+| $s_j$ | salaire soumis à cotisation de la $j$-ième année retenue | @sec-rsna-calcul |
+| $T$ | nombre d'années retenues pour le salaire moyen de référence | @sec-rsna-calcul |
+| $\mathcal{T}$ | ensemble des durées de référence entre lesquelles la plus avantageuse est retenue | @sec-rsna-calcul |
+| $L$ | limite de calcul des prestations | @sec-rsna-calcul |
+| $S$ | SMIG rapporté à une durée d'occupation annuelle de 2 400 heures | @sec-rsna-calcul |
+| $\ell$ | multiple de $S$ qui fixe la limite de calcul | @sec-rsna-calcul |
+| $\pi$ | fraction de $S$ qui fixe la pension minimale | @sec-rsna-calcul |
+| $P_c$ | pension du conjoint survivant | @sec-rsna-derives-1974 |
+| $\theta_c$ | taux de la pension du conjoint survivant, en fraction de $P$ | @sec-rsna-derives-1974 |
+| $P_o$ | pension de chaque orphelin | @sec-rsna-derives-1974 |
+| $\theta_o$ | taux de la pension d'un orphelin, en fraction de $P$ | @sec-rsna-derives-1974 |
+| $k$ | nombre d'orphelins bénéficiaires | @sec-rsna-derives-1974 |
+| $\Delta P$ | majoration annuelle de la pension à une hausse du SMIG | @sec-rsna-reforme-1981 |
+| $\tau_P$ | taux de la pension, appliqué au salaire moyen de référence pour la liquider | @sec-rsna-reforme-1981 |
+| $\Delta S$ | hausse du SMIG annuel $S$ | @sec-rsna-reforme-1981 |
+| $q$ | nombre de trimestres qui séparent l'âge de départ de l'âge normal de la retraite | @sec-rsna-reforme-1982 |
+| $\delta$ | réduction de la pension par trimestre d'anticipation | @sec-rsna-reforme-1982 |
+| $n_1$ | durée de cotisation qui ouvre la pension proportionnelle | @sec-rsna-reforme-1982 |
+| $\tau^*$ | taux de cotisation d'équilibre | @sec-rsna-equilibre |
+| $N_p$ | nombre de pensionnés, toutes natures | @sec-rsna-equilibre |
+| $\bar p$ | pension moyenne | @sec-rsna-equilibre |
+| $N_c$ | nombre de cotisants, c'est-à-dire d'actifs, non-assujettis compris | @sec-rsna-equilibre |
+| $\bar w$ | salaire moyen des cotisants | @sec-rsna-equilibre |
+
+: Notations du chapitre, dans l'ordre de leur introduction {#tbl-cnss-notations}
+
+## Annexe : les textes modificatifs du décret n° 74-499 {#sec-rsna-textes-modificatifs}
+
+Le décret de 1974 a été modifié par une quinzaine de textes, de 1976 à 2007. Le tableau suivant les donne article par article, avec le changement qu'ils apportent ; les textes qui ne touchent qu'au financement y figurent pour mémoire, leur détail relevant du livre « Cotisations sociales ».
+
+::: {.callout-note collapse="true" title="Tous les textes modificatifs du décret n° 74-499, article par article"}
+
+| Texte et date d'effet | Article du décret n° 74-499 | Ce qui change |
+|---|---|---|
+| **décret n° 76-981** [@decret76-981], signé le 19 novembre 1976 ; aucune date d'effet énoncée, exécutoire le 25 novembre 1976 | art. 59 à 62 (abrogés, art. 25) | maintien provisoire des régimes conventionnels gérés en contrat groupe et droit d'option → fusion avec le régime légal ; transfert des dossiers et de l'actif à la CAVIS |
+| **décret n° 79-536** [@decret79-536], signé le 30 mai 1979 ; effet au 1^er^ janvier 1979 (art. 4) | art. 45, al. 2 (ajouté) | la pension minimale de 2/3 du SMIG s'applique aussi aux pensions liquidées par les régimes conventionnels antérieurs au décret n° 76-981, lorsque le titulaire n'a pas de pension au titre du décret |
+| | art. 54 et art. 55, al. 1 (nouveaux) | gratuité des soins (art. 54) ; maintien des allocations familiales (art. 55) |
+| **décret n° 81-187** [@decret81-187], signé le 14 février 1981 ; effet au 1^er^ mai 1980 (art. 3) | art. 53 (nouveau) | révision « en cas de hausse sensible du niveau général des salaires », par décret → revalorisation automatique à chaque augmentation du SMIG : hausse du SMIG horaire rapportée à 200 heures par mois, affectée du taux de la pension |
+| | art. 53 bis et 53 ter (ajoutés) | pas de cumul avec le relèvement au niveau de la pension minimale, le plus favorable s'appliquant ; extension aux régimes conventionnels transférés à la CAVIS |
+| | art. 2 du décret | pensions liquidées avant son entrée en vigueur revalorisées sur un salaire mensuel de base de 9,750 D, 6,200 D ou 4,808 D selon la date d'ouverture du droit |
+| **décret n° 81-188** [@decret81-188], signé le 14 février 1981 ; aucune date d'effet énoncée, exécutoire le 19 février 1981 | art. 21 b) (nouveau) | stage de la pension d'invalidité : 60 mois de cotisations, dont 6 au cours des 12 mois précédant la première constatation → 60 mois de cotisations, sans autre condition |
+| | art. 22, al. 1 (nouveau) | taux de la pension d'invalidité : 40 % → 50 % du salaire moyen de référence |
+| | art. 29 (nouveau) | réversion : veuve d'un titulaire de pension de vieillesse ou d'invalidité ou d'un assuré remplissant le stage → même droit, rattaché, pour l'assuré décédé avant l'âge normal de la retraite, aux conditions de la pension d'invalidité de l'art. 21 |
+| | art. 31, al. 2 (ajouté) | réversion à la veuve : 50 % → jusqu'à 75 %, s'il n'y a pas d'enfant bénéficiaire ou si le total veuve et orphelins ne dépasse pas la pension de l'assuré |
+| | art. 33 (nouveau) | pension d'orphelin étendue aux orphelins d'un titulaire de pension d'invalidité ou d'un assuré décédé avant l'âge normal de la retraite qui remplissait les conditions de l'art. 21 ; limites d'âge de 1974 reprises |
+| | art. 34 (nouveau) | pension d'orphelin : 20 % (30 % pour l'orphelin de père et de mère) → 30 % dans tous les cas |
+| **décret n° 82-1030** [@decret82-1030], signé le 15 juillet 1982 ; aucune date d'effet énoncée, exécutoire le 22 juillet 1982 ; rectificatif publié le 19 octobre 1982 [@decret82-1030-rect] | art. 15 bis (ajouté) | droit à la retraite sans condition d'âge, jouissance différée à 50 ans : a) licenciement économique ; b) usure due aux conditions de travail ; c) convenance personnelle après 360 mois ; d) mères de trois enfants après 180 mois |
+| | art. 17, al. 2 et 3 (nouveaux) | majoration du taux : 2 % par 12 mois → 0,5 % par trimestre, plafond de 80 % inchangé ; pour le cas c), montant de la pension réduit de 0,5 % par trimestre restant à courir jusqu'à « l'âge normal » de la retraite, rédaction du rectificatif, qui remplace « l'âge de 60 ans » |
+| | art. 22, al. 2 (nouveau) | majoration de la pension d'invalidité : + 2 % par période de 12 mois au-delà de 120 mois → + 0,5 % par trimestre au-delà de 180 mois, dans la limite de 80 % |
+| | art. 39 à 43 (section 6 remplacée) | allocation de vieillesse en capital → pension proportionnelle à partir de 60 mois, au prorata des mois cotisés, réversible ; en deçà de 60 mois, versement unique égal aux retenues salariales |
+| | art. 45, al. 1 (nouveau) | pension minimale de 2/3 du SMIG maintenue ; 1/2 du SMIG pour les retraites anticipées de l'art. 15 bis a) et b) et les pensions proportionnelles |
+| **décret n° 88-1137** [@decret88-1137], signé le 11 juin 1988 ; effet au 1^er^ janvier 1988 (art. 2) | art. 5 b) (nouveau) | quote-part de la masse des cotisations de la loi n° 60-30 affectée au régime : 1,25/20^e^ dans la rédaction de 1974 → 4,25/20^e^ ; pour mémoire, voir « Cotisations sociales » |
+| **décret n° 90-1455** [@decret90-1455], signé le 10 septembre 1990 ; aucune date d'effet énoncée, exécutoire le 23 septembre 1990 | art. 18 (nouveau) | salaire de référence : 3 ou 5 dernières années, la plus avantageuse → 10 dernières années, salaires actualisés par barème ministériel ; limite de 6 fois le SMIG maintenue ; l'article 19, qui calcule la moyenne sur 36 ou 60 mois, n'est pas modifié |
+| | art. 32 (nouveau) | remariage : suppression de la réversion → rétablissement, revalorisé, au décès du nouveau conjoint ; cumul de pensions de conjoint survivant au titre de mariages successifs interdit |
+| | art. 43 (nouveau) | versement unique en deçà de 60 mois, égal aux retenues salariales, reformulé ; en cas de décès, versé au conjoint et aux enfants mineurs |
+| **décret n° 94-1429** [@decret94-1429], signé le 30 juin 1994 ; dates fixées par l'article 18 (nouveau) et par l'article 2 | art. 5 b) (nouveau) | quote-part : 4,25/20^e^ → 6,25/20^e^, au 1^er^ janvier 1994 (art. 2) ; pour mémoire, voir « Cotisations sociales » |
+| | art. 9 (nouveau) | cotisation propre : 3,75 % → 5,75 %, la part des travailleurs passant de 1,25 % à 3,25 % par paliers de juillet 1994 à juillet 1997 ; pour mémoire, voir « Cotisations sociales » |
+| | art. 18 (nouveau) | abroge et remplace l'article 18 dans sa rédaction de 1990 ; salaire de référence : 10 dernières années → 5 dernières années au 1^er^ juillet 1994, 7 au 1^er^ juillet 1995, 10 au 1^er^ juillet 1996 ; limite de 6 fois le SMIG « régime 48 heures » rapporté à 2 400 heures ; salaires actualisés par un barème fixé annuellement par arrêté |
+| | art. 19 (nouveau) | abroge et remplace l'article 19 de 1974 ; salaire mensuel moyen : total divisé par 36 ou 60 mois → 60, 84 ou 120 mois selon la fenêtre ; les périodes sans activité assujettie ne sont pas comptées |
+| **décret n° 96-326** [@decret96-326], signé le 1^er^ mars 1996 ; aucune date d'effet énoncée | art. 46, al. 1 (nouveau) | délai de présentation de la demande de pension : un an → cinq ans au plus, à partir de l'ouverture du droit, de la déclaration d'invalidité ou du décès |
+| **décret n° 97-291** [@decret97-291], signé le 3 février 1997 ; aucune date d'effet énoncée | art. 29 (nouveau) | pension de survivant ouverte au « conjoint survivant » d'un titulaire de pension de vieillesse ou d'un assuré remplissant la condition de stage |
+| | art. 38 (nouveau) | plafond de cumul : pensions de veuves et d'orphelins limitées à la pension de référence du mari → pensions de conjoint survivant et d'orphelins limitées à la pension dont bénéficiait ou aurait pu bénéficier le défunt |
+| | art. 53, al. 4 (nouveau) | calcul des majorations de revalorisation des pensions de survivants : « veuves » → « conjoint survivant » ; règle de calcul inchangée |
+| | art. 52 (abrogé, art. 2 du décret) | fin de l'interdiction de cumuler une pension d'invalidité et une pension de survivant |
+| **décret n° 97-555** [@decret97-555], signé le 31 mars 1997 ; aucune date d'effet énoncée | art. 9 (nouveau) | cotisation propre fixée à 5,25 %, dont 2,50 % à la charge des employeurs et 2,75 % à celle des travailleurs, niveau atteint en 1996 : le palier de 3,25 % prévu pour les travailleurs au 1^er^ juillet 1997 n'entre pas en vigueur ; pour mémoire, voir « Cotisations sociales » |
+| **décret n° 97-1927** [@decret97-1927], signé le 29 septembre 1997 ; effet au 1^er^ mai 1997 (art. 2) | art. 33 (nouveau) | pension d'orphelin : 16 ans sans condition ; 21 ans en études secondaires, techniques ou professionnelles ; 25 ans en études supérieures sans bourse ; sans limite d'âge pour la fille sans ressources ou qui n'est pas à la charge de son mari, et en cas d'affection incurable ou d'infirmité |
+| **décret n° 2001-779** [@decret2001-779], signé le 29 mars 2001 ; application au 1^er^ janvier 2001 (art. 2) | art. 53 (nouveau) | majoration en somme (hausse du SMIG × taux de la pension) → majoration en pourcentage : taux de variation du SMIG horaire du régime de 48 heures appliqué à la pension |
+| | art. 3 du décret | la majoration est soumise à cotisation, aux taux salariaux de l'article 9 |
+| **décret n° 2003-1212** [@decret2003-1212], signé le 2 juin 2003 ; effet au 1^er^ janvier 2003 (art. 2) | art. 5 b) (nouveau) | quote-part : 6,25/20^e^ → 7,25/20^e^ ; pour mémoire, voir « Cotisations sociales » |
+| **décret n° 2007-2148** [@decret2007-2148], signé le 21 août 2007 ; aucune date d'effet énoncée | art. 15 bis c) (abrogé) et art. 15 ter (ajouté) | départ pour convenance personnelle après 360 mois : jouissance à 50 ans → 55 ans |
+| | art. 15 bis a) (nouveau) | licenciement pour raisons économiques : rédaction reformulée, conditions de 1982 reprises (approbation de la commission de contrôle des licenciements, inscription de six mois au bureau de l'emploi sans offre de travail) |
+| | art. 17, § 3 (nouveau) | réduction de 0,5 % par trimestre jusqu'à « l'âge normal » de la retraite : renvoi au tiret c) de l'art. 15 bis → renvoi à l'art. 15 ter ; la règle est celle de 1982 rectifiée |
+| | art. 33 (nouveau) | pension d'orphelin de la fille : paiement définitivement suspendu dès que l'une des conditions fait défaut |
+| | art. 42 (nouveau) | réversibilité des pensions proportionnelles étendue aux pensions des art. 15 bis et 15 ter |
+| | art. 47 (nouveau) | entrée en jouissance : premier jour du mois qui suit la cessation d'activité, la reconnaissance de l'invalidité ou le décès → premier jour du mois qui suit celui où l'assuré a rempli les conditions d'ouverture du droit ; extinction du droit à la fin du mois où les conditions cessent d'être remplies ou du décès |
+
+: Modifications des règles de pension du décret n° 74-499, article par article {#tbl-rsna-textes}
+
+:::
+
+Les textes du tableau ont aussi modifié d'autres articles dont la nouvelle rédaction n'est pas exposée ici : l'alinéa 3 de l'article 48 et l'article 55 (décret n° 82-1030), les articles 3, 14, 30 et 54 (décret n° 90-1455). Depuis le 1^er^ janvier 2001, l'article 53 n'a plus été modifié, et aucun modificatif du décret postérieur au décret n° 2007-2148 n'a été retrouvé jusqu'en avril 2026. Pour l'article 34 du décret de 1974, le second taux (30 %) est à la limite de la lisibilité au fascicule ; sa rédaction est toutefois identique, mot pour mot, à celle de l'article 65 de la loi n° 81-6, où il est net.
+
+<!-- TODO (documentaliste) : établir la nouvelle rédaction des articles 3, 14, 30 et 54 (décret
+n° 90-1455) et des articles 48, al. 3, et 55 (décret n° 82-1030). Les autres articles de l'ancien
+TODO (81-188 : art. 29 et 33 ; 2007-2148 : tiret a) de l'art. 15 bis, art. 47 ; art. 46 de 1974) sont
+établis par docs/notes/rsna-histoire-reformes.md, § 3.8 et 4.2. Les rectificatifs des décrets
+n° 74-499 et 82-1030 sont lus (même note, § 4.2) : l'ancien callout « Un rectificatif reste à
+confronter » est levé. -->

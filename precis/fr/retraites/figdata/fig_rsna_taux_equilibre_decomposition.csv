@@ -1,0 +1,25 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-23
+# séries (tunisia_data) : cnss-rsna-taux-equilibre
+# sources (citation) : @cnss-annuaires-statistiques
+# fiches : sources/cnss-annuaires.md
+# méthode/hypothèses : SÉRIE CALCULÉE. TAUX LÉGAL AMBIGU, EXPOSÉ EN DEUX COLONNES : la quote-part du taux global est fixée en vingtièmes (6,25/20e depuis le 1er janvier 1994, décret n° 94-1429 ; 7,25/20e depuis le 1er janvier 2003, décret n° 2003-1212) alors que le taux global est de 18 % depuis la loi n° 97-4. Lecture « en points » (celle de la caisse, qui publie 12,5 %) : 11,50 % puis 12,50 % ; lecture littérale (X/20 × 18 %) : 10,875 % puis 11,775 %, cotisation propre de 5,25 % comprise. POUR 2000-2002 AUCUN DOCUMENT DE LA CAISSE LU NE PUBLIE LE TAUX : 11,50 % est déduit du texte. DÉCLARÉ ≠ ENCAISSÉ : le dénominateur est la masse déclarée, non les cotisations recouvrées. NUMÉRATEUR COMPTABLE (« bilans »), DÉNOMINATEUR DÉCLARATIF. Le travail non déclaré est hors champ. La variante avec régime complémentaire ajoute des pensions financées par une cotisation facultative sur la tranche au-delà de six SMIG. RUPTURE DE 2003 (taxis et louages, décret n° 2002-3018). Le salaire moyen, rapporté aux actifs non-assujettis compris, est un peu plus bas que le salaire moyen publié. Pensions de l'année rapportées à des effectifs de fin d'année.
+# note : Régime des salariés non agricoles : décomposition du taux d'équilibre, indices base 100 en 2000, 2000-2017
+Année,Taux d'équilibre (2000 = 100),Remplacement apparent (2000 = 100),Pensionnés ÷ cotisants (2000 = 100)
+2000,100.0,100.0,100.0
+2001,98.8,96.4,102.4
+2002,103.1,96.9,106.4
+2003,107.6,95.3,112.9
+2004,112.4,96.7,116.2
+2005,116.6,97.8,119.3
+2006,114.4,96.0,119.1
+2007,115.0,96.6,119.0
+2008,115.5,98.8,117.0
+2009,112.3,95.7,117.3
+2010,112.1,97.1,115.5
+2011,114.9,97.0,118.4
+2012,115.9,89.5,129.4
+2013,113.8,84.8,134.3
+2014,118.6,84.9,139.7
+2015,125.0,86.5,144.5
+2016,128.8,82.3,156.6
+2017,128.0,79.2,161.5

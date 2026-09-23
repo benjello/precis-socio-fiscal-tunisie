@@ -8,6 +8,127 @@
 
 ## En attente
 
+### Livre « Retraites » — RSNA avant 1974 et réformes du cœur du régime (versement du 23/09/2026)
+
+Source : `docs/notes/rsna-histoire-reformes.md` (§ 1, 2, 5 et 7.2 ; textes lus au fascicule).
+Ajoutées à la main, FR et AR, **pas encore dans Zotero**. Depuis la réorganisation du § RSNA
+de `_secteur_prive.qmd` (passe de clôture du 23/09/2026, ci-dessous), les huit sont citées par
+le seul livre « Retraites ».
+
+Textes juridiques, dans le fonds commun `precis/{fr,ar}/references.json` (convention du
+versement CNRPS du 22/09/2026 : textes de la chaîne d'un décret de régime au fonds commun, comme
+`decret74-499`, `decret82-1030`, `decret2007-2148`). URL = `pdf_fr` / `pdf_ar` du même
+enregistrement `jort_cache.db`, toutes contrôlées le 23/09/2026 (`curl -k`, HTTP 206,
+`application/pdf`). Les titres arabes restent les titres français, comme pour les autres entrées
+AR de la chaîne (aucune traduction machine).
+
+| Clé | Texte | recid |
+|---|---|---|
+| `decret71-452` | Décret n° 71-452 du 17 décembre 1971 (prestations *minima* transitoires) | 103269 |
+| `decret76-981` | Décret n° 76-981 du 19 novembre 1976 (CAVIS) | 100779 |
+| `decret82-1030-rect` | Rectificatif au décret n° 82-1030 (art. 17 al. 3, « l'âge normal ») | 97254 |
+| `decret94-1477` | Décret n° 94-1477 du 4 juillet 1994 (abroge le décret n° 76-981) | 91308 |
+| `arrete-1975-07-04-age-mineurs` | Arrêté du 4 juillet 1975 (55 ans, mineurs) | 69285 |
+| `arrete-2015-09-11-age-mineurs` | Arrêté du 11 septembre 2015 (55 ans, agents mineurs) | 50206 |
+| `arrete-2023-05-22-age-assainissement` | Arrêté du 22 mai 2023 (55 ans, assainissement et déchets) | 172137 |
+
+- Rectificatif du décret n° 82-1030 en **clé propre** : la décote « jusqu'à l'âge normal » en
+  procède (note, § 6, écart 4), la prose le citera comme source distincte. La note de
+  `decret82-1030` y renvoie. `issued` = date de publication (19/10/1982, `jort_cache.db`).
+- `decret94-1477` : pages **1193-1194** (`jort_cache.db` et fascicule : art. 6 et signature
+  p. 1194), et non « 1193 » comme l'écrit la note documentaire.
+- Corrigées (FR et AR) : `decret74-499` — « 71-432 » → « 71-452 » ; rectificatif du JORT n° 39
+  du 7 juin 1974, p. 1252, **lu à l'image** le 23/09/2026 (art. 39 : article 16 → 15 ; art. 62
+  al. b : article 62 → 61), URL `Jo03974` / `Ja03974` (`pdf_ar` du recid 102251, HTTP 206) ;
+  `loi60-33` — « Métadonnées seules ; texte non lu » remplacé par le contenu des art. 1 à 5 (1-4
+  lus à l'image, 5 par OCR) ; `decret82-1030` — renvoi à la clé du rectificatif.
+- Non versées : `decret78-962`, `decret89-268` (modificatifs de la CAVIS, intitulés seuls
+  connus) ; rectificatif du décret n° 74-499 (décrit dans la note de l'entrée principale, la
+  prose ne le cite pas à part).
+
+Source statistique, dans le livre `precis/{fr,ar}/retraites/references.json` (cité par ce seul
+livre, comme `cnrps-etats-financiers`) :
+
+| Clé | Référence | Remarque |
+|---|---|---|
+| `cnss-annuaires-statistiques` | CNSS, « الدليل الإحصائي 2017 » (éd. arabe, URL principale, titre en tête) et « Annuaire statistique 2013 » (éd. française, en note) | **hors convention « archives du web »** : `cnss.tn` sert toujours les deux fichiers, identiques octet pour octet aux copies exploitées (taille, SHA-1 et nombre de pages vérifiés le 23/09/2026). URL = adresse de l'éditeur ; captures en note comme copies de vérification (20220304034917 et 20190716124119, horodatages et empreintes lus au CDX le 23/09/2026) |
+
+Hors du dépôt, à signaler : `tunisia-data/sources/cnss-annuaires.md` et `cnss-urls.csv` disent
+l'empreinte de la capture de l'annuaire 2017 « non recoupée » ; elle l'est désormais (CDX :
+`2LOQYUHOYRWL2YVEIHC45VI73X2TSUMN`, identique au fichier).
+
+Clôture (23/09/2026) : rendus FR et AR du livre « Retraites » sans `?@` ; les 8 clés résolues
+par un document de test (citeproc, bibliographies des deux `_quarto.yml`) ;
+`push_biblio.py --verifier` : 492 entrées, 0 perte ; `--dry-run` : conversion des 492 entrées
+sans erreur (sans clé d'API, il ne retranche pas l'existant : « 492 à créer » n'est pas un
+décompte réel) ; `--controle-rangement` : 420 bien rangées, 0 à déclasser, 0 à ranger, 64 sans
+citation, 0 absente de Zotero (les 8 nouvelles clés, non citées, n'entrent pas dans le décompte).
+
+Seconde clôture (23/09/2026, après la réorganisation du § RSNA par le rédacteur) :
+
+- Résolution : toutes les clés citées par `_secteur_prive.qmd` et `index.qmd` (108 clés de
+  bibliographie, renvois `@sec-`/`@tbl-`/`@fig-` exclus) résolvent en
+  FR et en AR par `quarto pandoc --citeproc` sur un document de test, avec les bibliographies des
+  deux `_quarto.yml` ; de même les 42 clés du livre « Cotisations sociales » (FR et AR), touché
+  par le déplacement de `loi97-4`. Aucun rendu relancé (le rendu servi était en relecture).
+  Aucun identifiant en double entre fonds commun et fichiers de livre.
+- [x] `loi97-4` **promue au fonds commun** (FR et AR), retirée de
+      `precis/{fr,ar}/cotisations_sociales/references.json` : elle est désormais citée par deux
+      livres. URL AR = `pdf_ar` du recid 112333 (`Ja01097.pdf`, HTTP 200 le 23/09/2026 ; l'entrée
+      AR la portait déjà). Citation posée dans `_secteur_prive.qmd` (« … ramené ce taux global à
+      18 % [@loi97-4] »), TODO du bibliographe supprimé. **Provisoire** tant que Zotero la
+      range dans la collection `cotisations_sociales` : la prochaine descente la remettrait dans
+      le fichier du livre « Cotisations sociales », hors de portée du livre « Retraites ».
+- [x] `decret2003-1212` (FR et AR) : la note disait « porte de 1,25/20e à 7,25/20e » ; corrigé en
+      « de 6,25/20e (rédaction du décret n° 94-1429, en vigueur depuis le 1er janvier 1994) à
+      7,25/20e » (note documentaire § 4.1 ; `tunisia-data/sources/cnss-annuaires.md` ; note de
+      `decret94-1429`, art. 5 b) nouveau, effet art. 2). La note de `decret88-1137` décrit encore
+      la série du dossier des cotisations comme « 1,25/20e en 1974 → 7,25/20e en 2003 » : c'est
+      une remarque sur ce dossier, laissée telle quelle.
+- `loi60-33` : la note ne dit plus « non lu » (FR et AR). Le TODO de `index.qmd` (l. 32, « la
+  loi n° 60-33 n'a pas été lue (métadonnées seules) ») est devenu inexact : au rédacteur.
+- Locateurs contrôlés contre la note documentaire et les notes d'entrée ; conformes, sauf :
+  - `decret97-291` : art. 1 (l. 479 et 517 : « ne touche à l'article 53 que pour remplacer
+    “veuves” par “conjoint survivant” ») et art. 2 (l. 509 : abrogation de l'art. 52). La note
+    de l'entrée dit l'art. 53 nouveau « pas relu », la note documentaire dit le décret « pas
+    rouvert ». Affirmation et locateurs sans lecture attestée : au documentaliste ;
+  - `decret74-499`, art. 10, 11 (l. 90 : réserve technique, transfert de 15 millions de dinars)
+    et art. 35-36 (l. 498) : hors de la liste « lu à l'image » de la note d'entrée ; couverts
+    seulement par le « [T] (art. 1-64) » global de la note documentaire, qui n'en parle pas. Le
+    chiffre de 15 MD n'apparaît dans aucune des deux notes ;
+  - `decret81-188`, art. 2 (l. 479, réversion à 75 %) : partage entre art. 1 et 2 déduit de
+    l'intitulé ; l'art. 31 al. 2 n'a été lu que par OCR ;
+  - `loi60-30`, art. 2, 5, 68, 119-120 (l. 40) : lus par OCR, non confirmés à l'image.
+- `push_biblio.py --verifier` : 495 entrées, 0 perte. `--dry-run` : conversion des 495 entrées
+  sans erreur (sans clé d'API, « 495 à créer » n'est pas un décompte réel).
+  `--controle-rangement` : 484 références dans Zotero, 504 citations ; 417 bien rangées ;
+  **3 à déclasser** (`decret2003-1212`, `decret97-555`, `loi97-4` — retirer
+  `cotisations_sociales` : désormais citées aussi par « Retraites ») ; **1 à ranger**
+  (`decret88-1137` — ajouter `retraites`) ; 63 sans citation ; **11 absentes de Zotero** : les
+  8 clés RSNA ci-dessus et `minfin-ep-2023`, `minfin-ep-2024`, `minfin-ep-2025` (section CNRPS
+  ci-dessous), toutes citées par « Retraites » seul. Rien poussé.
+
+Reste à faire (feu vert humain requis pour toute écriture Zotero) :
+- [ ] Pousser les 8 clés, puis `ranger`. Selon le contrat du contrôle, citées par le seul livre
+      « Retraites », elles voudraient la collection `retraites` et descendraient dans
+      `precis/{fr,ar}/retraites/references.json` — à l'encontre de la convention « chaîne d'un
+      décret de régime au fonds commun » rappelée plus haut. Conflit à trancher avec celui de la
+      section h) du 11/09/2026, avant toute montée.
+- [ ] **Corrections locales que Zotero ignore encore** (lu le 23/09/2026 dans l'Extra des items
+      du groupe, API publique) : `decret2003-1212` porte toujours « de 1,25/20e à 7,25/20e » ;
+      `decret74-499` porte toujours « 71-432 » ; `loi60-33` porte toujours « non lu » ;
+      `decret82-1030` ne renvoie pas au rectificatif. `--pousser` ne crée que les absentes et
+      `--comparer` ne compare pas la note : sans `--corriger
+      decret2003-1212,decret74-499,loi60-33,decret82-1030`, la prochaine descente écrasera ces
+      quatre corrections, FR et AR.
+- [ ] Déclasser `decret2003-1212`, `decret97-555` et `loi97-4` (retirer `cotisations_sociales`)
+      et ranger `decret88-1137` dans `retraites` : `--appliquer-rangement`, à blanc puis
+      `--pousser`. Sans ce déclassement, la prochaine descente renverrait ces trois clés dans le
+      livre « Cotisations sociales » et le livre « Retraites » ne les résoudrait plus.
+- [ ] `decret76-981` : confirmer à l'image les art. 1-3, 23-24 et 26-27 (lus par OCR).
+- [ ] Dates exécutoires de `decret94-1477` et des arrêtés de 2015 et 2023 : date de dépôt au
+      gouvernorat de Tunis inconnue.
+
 ### Livre « Retraites » — taux de cotisation d'équilibre de la CNRPS
 
 Ajoutées à la main dans `precis/{fr,ar}/retraites/references.json`, **pas encore dans
@@ -1017,6 +1138,7 @@ Toutes sont provisoires au sens du § *Rappel de procédure* : sans collection Z
 `decret97-555`, `decret97-1645`, `decretloi2011-48`, `loi59-18`, `loi59-19`, `loi59-45`,
 `loi73-71`, `loi74-101-lf1975`, `loi83-31`, `loi85-16`, `loi88-16`, `loi94-71`, `loi97-4`,
 `loi2001-123-lf2002`, `loi2005-54`, `loi2007-43`, `loi2007-51`.
+(23/09/2026 : `loi97-4` a depuis été promue au fonds commun, citée aussi par « Retraites ».)
 
 **8 clés recopiées** depuis un autre livre, parce que sa bibliographie ne figure pas dans le
 `_quarto.yml` de celui-ci — l'item Zotero existe déjà, il suffira de l'ajouter à la collection

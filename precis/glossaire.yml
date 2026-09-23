@@ -2242,9 +2242,12 @@ entries:
         SMIG du régime de 2 400 heures par an (loi n° 85-12, art. 42) ; depuis la loi
         n° 97-74, cette allocation est réversible au profit du conjoint survivant et
         des orphelins, dans les conditions applicables aux pensions. Dans le régime
-        des salariés non agricoles, elle était versée en capital à partir de 60 mois
-        de cotisations, jusqu'à son remplacement par la pension proportionnelle en
-        1982 ; le régime des salariés agricoles la conserve en capital à partir de
+        des salariés non agricoles, le décret n° 74-499 la servait en capital à
+        l'assuré qui, ayant atteint l'âge et cessé son activité sans remplir la
+        condition de stage, comptait au moins 60 mois de cotisations : une mensualité
+        de la pension qu'il aurait perçue s'il avait accompli le stage, par période
+        de six mois cotisée, convertible sur demande en rente viagère (art. 39-43) ;
+        le décret n° 82-1030 l'y a remplacée par la pension proportionnelle ; le régime des salariés agricoles la conserve en capital à partir de
         20 trimestres (loi n° 81-6, art. 70-73).
       synonymes: []
     ar:
@@ -2256,8 +2259,12 @@ entries:
         الأدنى المضمون لمختلف المهن في نظام 2400 ساعة في السنة (القانون عدد 12 لسنة
         1985، الفصل 42)؛ ومنذ القانون عدد 74 لسنة 1997، أصبحت هذه المنحة قابلة
         للانتقال إلى القرين الباقي على قيد الحياة والأيتام، وفق الشروط المنطبقة على
-        الجرايات. وفي نظام الأجراء غير الفلاحيين، كانت تُصرف في شكل رأس مال
-        ابتداءً من 60 شهرًا من المساهمات، إلى أن عُوِّضت بالجراية النسبية سنة 1982؛
+        الجرايات. وفي نظام الأجراء غير الفلاحيين، كان الأمر عدد 499 لسنة 1974 يُسندها
+        في شكل رأس مال إلى المضمون الذي توفّر فيه شرط السنّ وانقطع عن النشاط دون أن
+        يستوفي مدّة التربّص الدنيا، إذا كان يعدّ 60 شهرًا من المساهمات على الأقلّ: ما
+        يعادل شهرية من الجراية التي كان سيستحقّها لو استوفى مدّة التربّص، عن كلّ فترة
+        ستّة أشهر من المساهمات، ويمكن تحويلها بطلب منه إلى جراية عمرية (الفصول 39-43)؛
+        ثمّ عوّضها الأمر عدد 1030 لسنة 1982 في هذا النظام بالجراية النسبية؛
         ويحتفظ بها نظام الأجراء الفلاحيين في شكل رأس مال ابتداءً من 20 ثلاثية
         (القانون عدد 6 لسنة 1981، الفصول 70-73).
       synonymes: []
@@ -3446,6 +3453,91 @@ entries:
         الاجتماعي. ويقوم على التمديد: إذ يجعل فصله الأوّل فصولًا من القانون عدد 30 لسنة
         1960 وفصول الأمر عدد 499 لسنة 1974 المتعلّقة بالعجز والباقين على قيد الحياة
         وتصفية الجرايات منطبقةً على غير الأجراء.
+      synonymes: []
+
+  - id: cavis
+    acronyme: CAVIS
+    statut: valide
+    references: [decret94-1477, decret74-499, decret89-107]
+    source_definition: {ref: decret76-981, locator: "art. 1-2"}
+    source_traduction: {ref: decret76-981, locator: "art. 1"}
+    voir_aussi: [cnss, rsna, regime-conventionnel-retraite, rtte]
+    fr:
+      terme: Caisse d'assurance vieillesse, invalidité et survivants
+      definition: >
+        Caisse autonome créée dans le cadre de la Caisse nationale de sécurité
+        sociale par le décret n° 76-981 du 19 novembre 1976 pour gérer le régime
+        unique issu de la fusion du régime légal de pensions de vieillesse,
+        d'invalidité et de survie des salariés non agricoles, institué par le
+        décret n° 74-499, avec les régimes conventionnels du même ordre (art. 1).
+        Seule chargée du régime légal, elle peut aussi gérer des régimes
+        conventionnels à titre principal ou complémentaire (art. 2) ; la CNSS
+        assure pour son compte le recouvrement, le contrôle et le service des
+        prestations (art. 24). Le décret n° 89-107 lui délègue la gestion des
+        pensions du régime des travailleurs tunisiens à l'étranger. Le décret
+        n° 94-1477 abroge le décret n° 76-981 et transfère à la CNSS les régimes
+        légaux et conventionnels qu'elle gérait (art. 1-2).
+      synonymes: [Caisse d'assurance vieillesse, invalidité et survie]
+    ar:
+      terme: صندوق تأمين الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع بجراية
+      definition: >
+        صندوق مستقلّ أحدثه الأمر عدد 981 لسنة 1976 المؤرّخ في 19 نوفمبر 1976 في إطار
+        الصندوق القومي للضمان الاجتماعي، ليتولّى التصرّف في النظام الموحّد الناتج عن
+        إدماج النظام القانوني لجرايات العجز والشيخوخة والبقاء بعد الوفاة في القطاع غير
+        الفلاحي، المحدث بالأمر عدد 499 لسنة 1974، مع الأنظمة التعاقدية من نفس الدرجة
+        (الفصل 1). وهو وحده المكلَّف بالتصرّف في النظام القانوني، ومؤهَّل أيضًا للتصرّف
+        في الأنظمة التعاقدية بصفة أساسية أو تكميلية (الفصل 2)؛ ويتولّى الصندوق القومي
+        للضمان الاجتماعي لحسابه الاستخلاص والمراقبة ودفع المنافع (الفصل 24). ويفوّض
+        إليه الأمر عدد 107 لسنة 1989 التصرّف في جرايات نظام الضمان الاجتماعي للعملة
+        التونسيين بالخارج. وألغى الأمر عدد 1477 لسنة 1994 الأمرَ عدد 981 لسنة 1976،
+        وأحال إلى الصندوق القومي للضمان الاجتماعي الأنظمة القانونية والتعاقدية التي كان
+        يتصرّف فيها (الفصلان 1 و2).
+      synonymes: [صندوق التأمين على الشيخوخة والعجز والباقين على قيد الحياة]
+
+  - id: regime-conventionnel-retraite
+    acronyme: null
+    statut: valide
+    references: [loi60-30, loi60-33, decret76-981, decret94-1477]
+    source_definition: {ref: decret74-499, locator: "art. 59-62"}
+    source_traduction: {ref: decret74-499, locator: "art. 59-62"}
+    voir_aussi: [cavis, rsna, cnss]
+    fr:
+      terme: Régime conventionnel de retraite
+      definition: >
+        Dans le secteur privé, régime de pensions de vieillesse, d'invalidité ou de
+        survie institué par convention hors du régime légal, notamment sous la forme
+        d'un contrat groupe souscrit par des employeurs. La loi n° 60-30 permet à la
+        CNSS d'en gérer selon des conventions particulières (art. 5) et oblige les
+        organismes qui couvrent la vieillesse à déclarer leurs régimes (art. 119) ;
+        la loi n° 60-33 renvoie à un décret le soin de dire s'ils subsistent hors du
+        régime général ou fusionnent avec lui (art. 5). À titre provisoire, le décret
+        n° 74-499 maintient ceux qui sont gérés en contrat groupe et dont les
+        avantages sont au moins équivalents à ceux du régime légal, et ouvre aux
+        employeurs et aux salariés un droit d'option de trois mois pour y rester,
+        avec dispense de la cotisation légale (art. 59-62). Le décret n° 76-981
+        réalise la fusion : les régimes qui font double emploi avec le régime légal
+        sont transférés à la CAVIS, la fraction qui l'excède y devenant régime
+        complémentaire, et les droits acquis sont maintenus (art. 1 et 25) ; le
+        décret n° 94-1477 les transfère à la CNSS (art. 2). Ne se confond pas avec le
+        régime conventionnel public de rémunération des entreprises publiques.
+      synonymes: []
+    ar:
+      terme: النظام التعاقدي
+      definition: >
+        في القطاع الخاصّ، نظام لجرايات الشيخوخة أو العجز أو البقاء بعد الوفاة يُحدث
+        بالتعاقد خارج النظام القانوني، ولا سيّما في شكل عقد جماعي يبرمه المؤجّرون.
+        ويجيز القانون عدد 30 لسنة 1960 للصندوق القومي للضمان الاجتماعي التصرّف فيه
+        وفق اتّفاقيات خاصّة (الفصل 5)، ويُلزم الهيئات التي تغطّي خطر الشيخوخة بالتصريح
+        بأنظمتها (الفصل 119)؛ ويُحيل القانون عدد 33 لسنة 1960 إلى أمر ضبطَ شروط بقاء
+        هذه الأنظمة خارج النظام العامّ أو إدماجها فيه (الفصل 5). وبصفة مؤقّتة، أبقى
+        الأمر عدد 499 لسنة 1974 على الأنظمة التعاقدية المعمول بها حسب عقد جماعي التي
+        تساوي منافعها على الأقلّ منافع النظام القانوني، ومنح المؤجّرين والأجراء حقّ
+        اختيار لمدّة ثلاثة أشهر للبقاء فيها مع الإعفاء من المساهمة القانونية (الفصول
+        59-62). وحقّق الأمر عدد 981 لسنة 1976 الإدماج: تُحال الأنظمة التي تمثّل ازدواجًا مع
+        النظام القانوني إلى صندوق تأمين الشيخوخة والعجز والباقين بقيد الحياة، ويصبح ما
+        زاد عليه نظامًا تكميليًا، مع المحافظة على الحقوق المكتسبة (الفصلان 1 و25)؛ ثمّ
+        أحالها الأمر عدد 1477 لسنة 1994 إلى الصندوق القومي للضمان الاجتماعي (الفصل 2).
+        ولا يُخلط بالنظام الاتفاقي العمومي لتأجير المنشآت العمومية.
       synonymes: []
 
   - id: rtte
