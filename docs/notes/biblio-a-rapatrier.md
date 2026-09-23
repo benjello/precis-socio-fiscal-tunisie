@@ -8,6 +8,26 @@
 
 ## En attente
 
+### Fiscalité — tarifs de la contribution personnelle d'État (versement du 23/09/2026)
+
+Branche `feat/tableaux-engendres-suite`. Trois lois citées par les tarifs de 1962, 1965 et 1983
+désormais affichés dans `_impot_revenu.qmd`, ajoutées à la main, FR et AR, dans
+`precis/{fr,ar}/fiscalite/references.json` (collection « Fiscalité »), **pas encore dans
+Zotero**. Le tarif de 1980 cite `loi79-66-lf1980`, déjà au fonds commun. Titres français dans
+les deux fichiers (précédent `lf-1986`) : les fascicules arabes n'ont pas été lus. URL =
+`pdf_fr` / `pdf_ar` de `jort_cache.db`, contrôlées le 23/09/2026 (`curl -k`, HTTP 206,
+`application/pdf`). Articles lus au fascicule français, océrisé.
+
+| Clé | Texte | recid | Remarque |
+|---|---|---|---|
+| `loi-62-73-cpe` | Loi n° 62-73 du 31 décembre 1962 (contribution personnelle d'État) | 117595 | JORT n° 64 des 28-31/12/1962, pp. 1647-1648 ; art. 2 p. 1647 |
+| `lf-1966` | Loi n° 65-46 du 31 décembre 1965, loi de finances pour 1966 | 117314 | JORT n° 66 du 31/12/1965 ; art. 10 pp. 1716-1717 ; rectificatif (recid 117310) sans objet pour l'art. 10 |
+| `lf-1983` | Loi n° 82-91 du 31 décembre 1982, loi de finances pour 1983 | 114966 | JORT n° 84 du 31/12/1982 ; art. 9 pp. 2877-2878 |
+
+- [ ] Titres arabes à lire aux fascicules arabes, si la convention du lot « glossaire » est retenue.
+- [ ] Rapatriement Zotero **après fusion**, sur feu vert humain (`dry-run` non lancé : consigne,
+      aucun workflow).
+
 ### Glossaire — contribution personnelle d'État, quote-part de l'assuré (versement du 23/09/2026)
 
 Branche `feat/glossaire-cpe-cotisation-assure`. Deux textes cités par `precis/glossaire.yml`
