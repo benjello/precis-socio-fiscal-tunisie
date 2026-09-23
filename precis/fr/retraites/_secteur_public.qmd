@@ -71,9 +71,19 @@ Ces valeurs sont celles du texte de 1959 [@loi59-18, art. 20 et 22] ; $\bar\tau$
 
 Sources : @loi59-18, art. 9, 20 à 22, 31 et 49 ; @loi81-70, art. 4-5 ; @loi85-12, art. 22, 24, 35, 36, 38, 39, 42, 43 et 45 ; @decretloi70-1, art. 1 (art. 21 et 22) et art. 2 ; @loi73-71, art. 2, 5 et 8 ; @loi80-24, art. 1 et 6. Le décompte semestriel et le maximum de 40 annuités de l'article 20 ne sont abrogés par aucun des textes modificatifs consultés : leur maintien jusqu'en 1985 se déduit de ce silence, aucun texte ne le reprend expressément.
 
-<!-- Tableau tenu à la main, et non engendré : les paramètres de retraite ne portent pas encore
-d'état antérieur au 12 septembre 1985 daté et sourcé. TODO (rédacteur) : remplacer par un
-tableau engendré une fois ces valeurs versées (docs/notes/cnrps-avant-1985.md, § 10). -->
+<!-- Tableau tenu à la main, et non engendré (réexaminé le 23/09/2026, openfisca-tunisia 0.106).
+Quatre lignes sur dix sont des règles, non des valeurs : durée minimale de services, décompte des
+services, rémunération de liquidation, carrière trop courte. Des six lignes chiffrées, deux
+seulement sont datées et sourcées depuis 1959 : l'âge du cadre commun (`age_legal/civil/
+cadre_commun`, 1er avril 1959) et le plafond du taux (`plaf_taux_pension` : 60 %, 80 % au 1er
+juillet 1970 et au 1er mai 1981, 90 %). Manquent : le taux par annuité de 1959, que
+`bareme_annuite` date du 1er février 1959 et non du 1er avril (effet de la loi n° 59-18, art. 52) ;
+le plancher avant 1981 (indice 100, 4 % par annuité, 60 % de l'indice 100 en 1970), que
+`pension_minimale/minimum_garanti` ne porte qu'à partir du 1er mai 1981 et ne peut porter tel
+quel, n'étant pas une fraction du SMIG ; la réversion de 50 % de 1959 (`survivants/taux_conjoint`
+commence en 1981) ; la pension d'orphelin de 10 % de 1959 (`survivants/taux_orphelin` commence
+en 1985). Engendrer la moitié chiffrée scinderait un tableau qui se lit d'un tenant. TODO
+(rédacteur) : n'y revenir qu'une fois ces états versés (docs/notes/cnrps-avant-1985.md, § 10). -->
 
 <!-- TODO (documentaliste) : la loi n° 59-18 et sa chaîne modificative sont lues
 (docs/notes/cnrps-avant-1985.md) ; les tableaux engendrés de ce chapitre commencent pourtant en

@@ -71,6 +71,23 @@ class UnSeulLivreTest(unittest.TestCase):
         self.assertEqual(cat(r, "a_declasser"), [("code-tva", ["retraites"])])
 
 
+class FondsCommunTest(unittest.TestCase):
+    """Versée au fonds commun et citée par un seul livre, une référence n'est jamais
+    rangée dans la collection de ce livre (décision du 23/09/2026)."""
+
+    def test_un_seul_livre_mais_commune(self):
+        r = classe_rangement({"retraites": {"decret82-1359"}}, {"decret82-1359": set()},
+                             communes={"decret82-1359"})
+        self.assertEqual(cat(r, "bien_rangee"), ["decret82-1359"])
+        self.assertEqual(cat(r, "a_ranger"), [])
+
+    def test_commune_deja_rangee_garde_sa_collection(self):
+        r = classe_rangement({"retraites": {"decret82-1359"}},
+                             {"decret82-1359": {"retraites"}}, communes={"decret82-1359"})
+        self.assertEqual(cat(r, "bien_rangee"), ["decret82-1359"])
+        self.assertEqual(cat(r, "a_declasser"), [])
+
+
 class PlusieursLivresTest(unittest.TestCase):
     """LE cas de la règle : citée par plusieurs livres, donc AUCUNE collection."""
 
