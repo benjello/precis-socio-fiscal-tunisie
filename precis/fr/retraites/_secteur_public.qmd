@@ -25,7 +25,7 @@ def table(nom, legende, label):
     print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label))
 ```
 
-Les agents publics, civils et militaires, relèvent d'un régime unique de [pensions civiles et militaires](#g-pensions-civiles-militaires), servi par la [Caisse nationale de retraite et de prévoyance sociale](#g-cnrps). Trois régimes spéciaux, pour les membres du gouvernement, les députés et les gouverneurs, s'y adossent par renvoi. Ce chapitre suit la chaîne des maillons commune à tous les régimes de retraite, exposée dans la présentation générale (@sec-chaine-commune) : les textes, l'ouverture du droit, le calcul, les planchers, les accessoires, les droits dérivés, l'invalidité et la revalorisation, qui prend ici la forme de la péréquation ; puis les régimes spéciaux et les dispositions propres aux militaires.
+Les agents publics, civils et militaires, relèvent d'un régime unique de [pensions civiles et militaires](#g-pensions-civiles-militaires), servi par la [Caisse nationale de retraite et de prévoyance sociale](#g-cnrps). Trois régimes spéciaux, pour les membres du gouvernement, les députés et les gouverneurs, s'y adossent par renvoi. Ce chapitre suit la chaîne des maillons commune à tous les régimes de retraite, exposée dans la présentation générale (@sec-chaine-commune) : les textes, l'ouverture du droit, le calcul, les planchers, les accessoires, les droits dérivés, l'invalidité et la revalorisation, qui prend ici la forme de la péréquation ; puis l'équilibre du régime, les régimes spéciaux et les dispositions propres aux militaires.
 
 La pension du secteur public a une logique propre, qu'il faut avoir à l'esprit en lisant ce qui suit : elle est liquidée sur la **dernière rémunération** de l'agent, et non sur une moyenne de carrière, puis réajustée à chaque augmentation de la rémunération des actifs du même grade. Elle prolonge ainsi la rémunération statutaire, que décrit le livre « Les rémunérations dans le secteur public ».
 
@@ -607,6 +607,72 @@ et d'exécution, les décrets de 1990, 1991 et 1993 (n° 90-1001, 91-803, 93-206
 les augmentations 1985-1988. -->
 
 Le manuel de liquidation de la caisse décrit la mise en œuvre de la péréquation, en la distinguant de la **révision** de la pension prévue par l'article 54 de la loi, qui est une reliquidation destinée à redresser une erreur ou à intégrer un élément nouveau de carrière. Selon le manuel, la péréquation consiste à « faire bénéficier les pensionnés des mêmes avantages de rémunération accordés à leurs homologues en activité » ; elle est automatique pour les indemnités à montant fixe, et subordonnée, pour les indemnités à montant variable, à la production par le pensionné d'une fiche individuelle de péréquation [@cnrps-manuel-liquidation-2013, pp. 139-140].
+
+## L'équilibre du régime
+
+Le **taux de cotisation d'équilibre** rapporte les dépenses de pensions d'une année à la masse des salaires soumis à cotisation la même année : c'est le taux qui, appliqué à ces salaires, paierait exactement les pensions de l'année par la seule cotisation. Il se décompose en deux facteurs : le **taux de remplacement apparent**, rapport de la pension moyenne au salaire moyen des affiliés, et le **rapport entre le nombre de pensions et le nombre de cotisants**, qui mesure la charge démographique. On le compare au taux légal global, part de l'agent et part de l'employeur réunies, dont l'évolution est exposée dans le livre « Cotisations sociales ».
+
+```{python}
+#| label: fig-cnrps-taux-equilibre
+#| fig-cap: "CNRPS : taux de cotisation d'équilibre et taux légal global, 2000-2020."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import taux_equilibre as te
+import figtools
+figtools.figure_tabs(
+    te.fig_taux(), te.table(), "cnrps-taux-equilibre",
+    slug="fig_cnrps_taux_equilibre",
+    caption="CNRPS : taux de cotisation d'équilibre et taux légal global, 2000-2020",
+    note_lecture=(
+        "**Le taux d'équilibre passe de 17,1 % des salaires soumis à cotisation en 2000 "
+        "à 25,8 % en 2014, puis à 33,7 % en 2019 et 32,4 % en 2020.** Le taux légal "
+        "global passe de 14,2 % à 20,7 % entre 2000 et 2012, puis à 23,7 % en 2020. "
+        "L'écart entre les deux est de 2,9 points en 2000, 5,1 points en 2014, "
+        "12,4 points en 2018 et 8,7 points en 2020. Les marques creuses et le trait "
+        "tireté signalent les années 2000-2013, où la masse des salaires soumis à "
+        "cotisation est approchée par la masse salariale de l'État ; les losanges, "
+        "les années 2019-2020, où la masse des salaires est déduite de cotisations "
+        "elles-mêmes reconstituées. De 2014 à 2018, elle est déduite des cotisations "
+        "publiées dans les états financiers."),
+)
+```
+
+La hausse tient d'abord à la démographie du régime. Le nombre de pensions de toutes natures rapporté au nombre d'affiliés actifs passe de 29,4 % en 2000 à 40,7 % en 2014 et à 51,3 % en 2020 : il y a en 2020 un peu plus d'une pension pour deux cotisants, contre moins d'une pour trois en 2000. Le taux de remplacement apparent varie beaucoup moins : 58,2 % en 2000, 63,3 % en 2014, 63,1 % en 2020. Sur 2014-2020, années pour lesquelles les cotisations sont connues, il oscille entre 62,6 % et 66,5 % et finit à son niveau de départ : la hausse du taux d'équilibre sur ces années vient tout entière du rapport démographique. Sur l'ensemble de la période, ce rapport est multiplié par 1,75, le remplacement apparent par 1,08, et le taux d'équilibre par 1,89.
+
+```{python}
+#| label: fig-cnrps-taux-equilibre-decomposition
+#| fig-cap: "CNRPS : décomposition du taux d'équilibre, indices base 100 en 2000."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import taux_equilibre as te
+import figtools
+figtools.figure_tabs(
+    te.fig_decomposition(), te.table_indices(), "cnrps-taux-equilibre",
+    slug="fig_cnrps_taux_equilibre_decomposition",
+    caption="CNRPS : décomposition du taux d'équilibre, indices base 100 en 2000",
+    note_lecture=(
+        "**Le taux d'équilibre est le produit du taux de remplacement apparent et du "
+        "rapport entre pensions et cotisants.** Sur une échelle logarithmique, la courbe "
+        "du taux d'équilibre se situe, au-dessus de la ligne 100, à une hauteur égale à la "
+        "somme des hauteurs des deux autres : les indices se multiplient. En 2020, "
+        "l'indice du taux d'équilibre vaut 189, celui du rapport entre pensions et "
+        "cotisants 175, celui du remplacement apparent 108 : 1,75 × 1,08 ≈ 1,89. Le rapport entre pensions "
+        "et cotisants ne dépend pas de la masse des salaires : il est tracé d'un trait "
+        "plein sur toute la période. Les deux autres courbes portent l'approximation des "
+        "années 2000-2013, signalée par des marques creuses."),
+)
+```
+
+Ces chiffres sont calculés à partir des publications de la caisse et appellent quatre réserves [@cnrps-guides-rapports ; @cnrps-etats-financiers ; @minfin-remunerations].
+
+- **De 2000 à 2013, la masse des salaires soumis à cotisation est approchée.** Les cotisations de l'agent et de l'employeur ne sont connues, séparément des autres recettes du régime, qu'à partir de 2014, par les états financiers de la caisse ; aucun document antérieur consulté ne les isole, et la masse salariale de l'État en tient lieu. De 2014 à 2020, la masse tirée des cotisations vaut entre 0,95 et 1,01 fois la masse salariale de l'État. Cette proximité résulte d'une compensation plutôt que d'une identité : la masse salariale de l'État comprend les contributions de l'employeur, les primes et les rappels, et ne couvre que les agents payés sur le budget de l'État, alors que la caisse affilie aussi les agents des collectivités locales et des établissements publics. Rien n'assure que cette compensation ait été la même avant 2014. En 2010, l'approximation donne un salaire moyen de 875 D par mois, quand la caisse publie un salaire brut moyen de 979 D pour ses actifs, sur un effectif de 423 032 personnes dont le périmètre n'est pas précisé ; appliqué à tous les affiliés, ce second chiffre ramènerait le taux d'équilibre de 2010 de 24,8 % à 22,1 %.
+- **En 2019 et 2020, la masse des salaires est déduite de cotisations elles-mêmes reconstituées.** Aucun document ne publie le montant des cotisations de ces deux années ; il est reconstitué à partir du niveau de 2018 et des hausses publiées dans les rapports d'activité, puis divisé par le taux légal comme pour 2014-2018. La baisse de 2020 coïncide avec cette reconstitution et avec l'écart le plus grand, sur 2014-2020, entre la masse tirée des cotisations et la masse salariale de l'État.
+- **Les dépenses couvrent l'ensemble des régimes gérés par la caisse**, régimes spéciaux et retraites anticipées financées par l'État compris, seule série disponible depuis 2000, alors que les cotisations sont celles du seul régime général. Calculé sur les dépenses du seul régime général, le taux d'équilibre est plus bas de 0,9 % à 2,6 % selon les années de 2014 à 2020. Les dépenses comprennent aussi de petites charges qui ne sont pas des pensions : les allocations familiales, confondues avec les pensions temporaires d'orphelins, représentent au plus 1,7 à 2,0 % des dépenses de 2014 à 2018, et les remboursements de cotisations environ 0,01 %.
+- **Les effectifs comptent des pensions, non des personnes**, au 31 décembre, rapportées à des dépenses de toute l'année ; une veuve et un retraité comptent chacun pour une pension.
+
+Le taux d'équilibre est enfin une grandeur instantanée, qui ne rapporte les pensions qu'aux seules cotisations : il ne tient compte ni des autres recettes du régime — contributions au titre de la péréquation exposées plus haut, bonification, rachats de services —, ni des ressources que la caisse reçoit en dehors du régime, comme la contribution sociale de solidarité et les contributions du budget de l'État.
 
 ## Les régimes spéciaux
 

@@ -8,6 +8,18 @@
 
 ## En attente
 
+### Livre « Retraites » — taux de cotisation d'équilibre de la CNRPS
+
+Ajoutées à la main dans `precis/{fr,ar}/retraites/references.json`, **pas encore dans
+Zotero** ; documents tirés des archives du web (convention du bibliographe : `archive`,
+`archive_location`, `accessed`) :
+
+| Clé | Référence | Remarque |
+|---|---|---|
+| `cnrps-guides-rapports` | CNRPS, guides statistiques 2000-2010 et 2010-2014, rapports d'activité 2016-2020 | entrée reprise d'une autre branche, où elle existe aussi : doublon d'`id` à fusionner |
+| `cnrps-etats-financiers` | CNRPS, états financiers 2015, 2016 et 2018 (provisoires) | captures du 01/03/2021, 25/02/2021, 01/03/2021 (CDX lu le 22/09/2026) |
+| `minfin-remunerations` | copie à l'identique de l'entrée du livre « Rémunérations publiques » | désormais citée dans deux livres : à ranger en « Commun » |
+
 ### Sources de données (catalog.yml de tunisia-data) — type CSL `dataset`
 Clés référencées par les séries de données (`tunisia_data.meta()`), à créer dans Zotero
 pour que les figures du précis soient citées et tracées :
