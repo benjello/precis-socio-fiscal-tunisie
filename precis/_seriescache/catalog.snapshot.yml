@@ -363,25 +363,34 @@
   unite: personnes
   perimetre: huit régimes de la CNSS en 2020, six en 2000 (les régimes des artistes
     et des travailleurs à faible revenu n'existaient pas)
-  caveats: 'DEUX DATES, PAS UNE SÉRIE : la caisse ne publie la ventilation par régime
-    qu''aux deux extrémités de la période ; le millésime 2019 n''en donne que les
-    pourcentages. L''attribution d''une légende à son année se fait par l''ABSCISSE,
-    jamais par la valeur — un régime peut décroître (salariés agricoles : 8 235 en
-    2000, 7 484 en 2020). Les libellés diffèrent d''une planche à l''autre dans la
-    source (« travailleurs à faible revenu » côté actifs, « faibles revenus » côté
-    pensionnés) et sont canonisés. ANOMALIE DE LA SOURCE en 2000 : les six légendes
-    totalisent 1 012 220 quand le total publié est 1 013 483 (écart 0,125 %), et une
-    part de 0,32 % du camembert n''a pas de légende. Le bouclage de 2020 est exact.'
+  caveats: 'DEUX DATES DANS CETTE SÉRIE : le millésime 2020 ne publie la ventilation
+    par régime qu''aux deux extrémités de la période. Le millésime 2019 en publie
+    les effectifs de 2019, lisibles à l''image dans les légendes (série cnss-pensions-par-regime),
+    et pas seulement les pourcentages. L''attribution d''une légende à son année se
+    fait par l''ABSCISSE, jamais par la valeur — un régime peut décroître (salariés
+    agricoles : 8 235 en 2000, 7 484 en 2020). Les libellés diffèrent d''une planche
+    à l''autre dans la source (« travailleurs à faible revenu » côté actifs, « faibles
+    revenus » côté pensionnés) et sont canonisés. ÉCART DE 2000 EXPLIQUÉ : les six
+    légendes totalisent 1 012 220 quand le total publié est 1 013 483 ; l''écart,
+    1 263, est exactement le nombre de non-assujettis de 2000 (annuaire statistique
+    2013, tableau 1), que la planche de 2000 ne légende pas, alors que celle de 2020
+    les porte (845). La part de 0,32 % qu''on croyait sans légende est celle des salariés
+    agricoles EN 2020 (7 484 / 2 353 743), étiquetée sur le camembert de 2020. Le
+    bouclage de 2020 est exact.'
   titre_ar: 'الصندوق الوطني للضمان الاجتماعي: المضمونون النشطون وأصحاب الجرايات حسب
     النظام، 2000 و2020'
   unite_ar: أشخاص
   perimetre_ar: ثمانية أنظمة سنة 2020، وستّة سنة 2000
-  caveats_ar: 'تاريخان لا سلسلة: لا ينشر الصندوق التوزيع حسب النظام إلّا لسنتَي 2000
-    و2020، ولا تعطي نسخة 2019 سوى النسب المائوية. تُنسب كلّ بطاقة إلى سنتها بالإحداثي
-    الأفقي لا بقيمتها، إذ يمكن لنظام أن يتراجع (الأجراء الفلاحيون: 8 235 سنة 2000
-    و7 484 سنة 2020). وتختلف التسميات بين اللوحتين في المصدر نفسه، فوُحِّدت. خلل داخل
-    المصدر سنة 2000: تبلغ الأنظمة الستّة 1 012 220 بينما المجموع المنشور 1 013 483
-    (فارق 0,125 %)، وتظهر حصّة 0,32 % من الرسم دون تسمية. أمّا سنة 2020 فالمجموع مطابق.'
+  caveats_ar: 'تاريخان في هذه السلسلة: لا تنشر نسخة 2020 التوزيع حسب النظام إلّا لسنتَي
+    2000 و2020. أمّا نسخة 2019 فتنشر أعداد سنة 2019، وهي مقروءة من الصورة في البطاقات
+    (سلسلة cnss-pensions-par-regime)، لا النسب المائوية وحدها. تُنسب كلّ بطاقة إلى
+    سنتها بالإحداثي الأفقي لا بقيمتها، إذ يمكن لنظام أن يتراجع (الأجراء الفلاحيون:
+    8 235 سنة 2000 و7 484 سنة 2020). وتختلف التسميات بين اللوحتين في المصدر نفسه،
+    فوُحِّدت. فارق سنة 2000 مفسَّر: تبلغ الأنظمة الستّة 1 012 220 بينما المجموع المنشور
+    1 013 483، والفارق (1 263) هو بالضبط عدد غير الخاضعين سنة 2000 (الكتاب الإحصائي
+    2013، الجدول 1)، ولا تذكرهم لوحة 2000 بينما تذكرهم لوحة 2020 (845). والحصّة 0,32
+    % التي ظُنّ أنّها دون تسمية هي حصّة الأجراء الفلاحيين سنة 2020 (7 484 / 2 353
+    743)، وهي مكتوبة على رسم سنة 2020. أمّا سنة 2020 فالمجموع مطابق.'
   fiche: sources/cnss-donnees-statistiques.md
 - id: cnss-cotisations
   titre: 'CNSS : cotisations encaissées, tous régimes, 2000-2020'

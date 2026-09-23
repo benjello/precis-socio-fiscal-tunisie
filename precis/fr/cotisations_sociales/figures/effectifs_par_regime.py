@@ -16,12 +16,16 @@ RÉSERVES QUE LA FIGURE DOIT PORTER :
   - les planches d'origine sont des **camemberts en pourcentages** assortis de quelques
     ancres absolues ; les effectifs se reconstituent par produit et souffrent donc des
     arrondis de la source ;
-  - **le bouclage de 2000 n'est pas exact** : les régimes somment à 1 012 220 quand la
-    caisse publie 1 013 483 assurés actifs, soit 0,125 % d'écart. Les parts de 2000 sont
-    donc rapportées à la somme des régimes, pas au total publié ;
+  - **l'écart de 2000 est expliqué** : les régimes somment à 1 012 220 quand la caisse
+    publie 1 013 483 assurés actifs ; la différence, 1 263, est exactement le nombre de
+    « non assujettis » de 2000 (annuaire statistique 2013, tableau 1), que la planche de
+    2000 ne légende pas. Faute de ce poste dans la série, les parts de 2000 sont
+    rapportées à la somme des régimes, pas au total publié ;
   - **2020 boucle exactement** (2 353 743), à condition d'y compter les 845 « non
     assujettis » que la planche isole et qui ne constituent pas un régime ;
-  - un secteur de 0,32 % de la planche de 2020 ne porte aucune étiquette.
+  - le secteur de 0,32 % du camembert de 2020, qu'on avait cru sans étiquette, est celui
+    des salariés agricoles EN 2020 (7 484 / 2 353 743) : il est étiqueté sur la planche
+    de 2020, et la série le porte déjà sous ce régime.
 """
 from __future__ import annotations
 
