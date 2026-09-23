@@ -1,5 +1,41 @@
 # Changelog
 
+## [1.28.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.27.0...v1.28.0) (2026-09-23)
+
+
+### ✨ Nouveautés
+
+* **biblio:** documents tirés des archives du web, et champs qui survivent à Zotero ([c150f6a](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/c150f6a07f720cd85e2dfe0dbfb0953ca69dcd10))
+* **glossaire:** contribution personnelle d'État, cotisation de l'assuré, et « الحدّ الأقصى » ([dd1df7d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/dd1df7dd6062f2ae5a1e0339f97b1cca01aa6876))
+* **remunerations-publiques:** prolonger les figures de la fonction publique jusqu'en 2025 ([35eb4a8](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/35eb4a825d4be6bd1cc4ce48684f7cb84de2bed3))
+* **retraites:** date d'effet du régime des Tunisiens à l'étranger ([d70f2b2](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/d70f2b2e18e8134ab045bd443a07960c0f180135))
+* **retraites:** des formules pour le calcul de la pension CNRPS ([b1d1061](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/b1d1061a61a477234d447d9e64e99f23fb6ed781))
+* **retraites:** le barème d'actualisation des salaires du régime non agricole ([46355b9](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/46355b9396ba7d9e1f32defbbd99408b81209204))
+* **retraites:** le tableau des âges CNRPS commence au 1er avril 1959 ([3b78c35](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/3b78c354e098dd14be062b428ad3043f3fa4d264))
+* **retraites:** le tableau des âges militaires vient désormais du modèle ([0a01416](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/0a014164ee76e3b282e3147a0fa8f5519fcac35a))
+* **retraites:** le taux de cotisation d'équilibre de la CNRPS, 2000-2020 ([a2c107b](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/a2c107ba7352a88aba4b67b72a37045eb954f5d5))
+* **retraites:** les autres régimes de la CNSS, réorganisés sur le modèle du RSNA ([8741e54](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/8741e54e5c5aefc65098620225b18b767d784844))
+* **retraites:** les éléments de rémunération soumis à retenue (CNRPS) ([99be0f3](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/99be0f3d507b9492edfd4376188aa2cbe9d244ed))
+* **retraites:** règles de pension des régimes RTTE, RACI, RTFR et complémentaire ([ee5ee61](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/ee5ee617536baebe560176ac8ce361ad23da5581))
+* **retraites:** réorganiser le chapitre CNRPS par l'histoire du régime ([f2e8e72](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/f2e8e72a977d1bca27e5e159280409ac218b3e26))
+* **retraites:** réorganiser le régime des salariés non agricoles par son histoire ([79b86cf](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/79b86cf388070eb26ad333d74168a9dfe428e70f))
+* **retraites:** taux d'équilibre dans les années 1980, et pension et salaire moyens de la CNRPS ([773fb31](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/773fb311bd9a5916c17e6b214a2c250beca31f9d))
+* **retraites:** taux d'équilibre de la CNRPS prolongé à 2023 par estimation ([7064561](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/7064561ee45e51a00c78a8df4a0ae33a86e0c6e2))
+* **retraites:** taux d'équilibre des autres régimes de la CNSS ([e7c2f36](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e7c2f364ffadc1bad759e7e5217f6b6458900a62))
+* **retraites:** trois figures tirées des paramètres de la législation ([2f4f1b0](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/2f4f1b038edb8d10cc292a4280405b025d2214af))
+* **retraites:** un paragraphe sur les origines au lieu d'une section « Avant 1974 » ([330266c](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/330266caf44e648a29e8a9e28410f3fc8bf482c8))
+* **tableaux:** barèmes de l'impôt sous onglets, et libellés attestés au Journal officiel ([55da849](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/55da849d0a29e9c4f8b3a3ce6e238478cb8f4ed0))
+* **tableaux:** onglet « Base législative » des tableaux engendrés, pilote sur les retraites ([0572ccd](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/0572ccd3c2406603789a73ace2ef22b556cfc520))
+* **tableaux:** onglet « Base législative » sur les tableaux de la fiscalité, des prestations et des cotisations ([fa0823d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/fa0823d73d3e64a9218219a53e59e19116b1d82b))
+* **traduction:** protéger les formules mathématiques de la synchronisation arabe ([2e53503](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/2e5350308c717e21ad9657769989846142c9d84c))
+
+
+### 🐛 Corrections de bugs
+
+* **cotisations:** quote-part et cotisation propre de la branche pensions du RSNA ([6290f52](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/6290f521c0bf2c0acfc9f6a2bfe9db71ad050c8d))
+* **prestations:** allocations familiales, un plafond de 52,500 D au 1er avril 1961 ([7bd267b](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/7bd267b696966212de82860b74afd8c01cc4b20e))
+* **tableaux:** liens vers la vue en tableau des paramètres (/table/) ([e63d142](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e63d142938fc800f164affdb0a69343c60043c6e))
+
 ## [1.27.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.26.0...v1.27.0) (2026-09-20)
 
 
