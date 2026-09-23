@@ -88,10 +88,11 @@ rechercher les modificatifs publiés après avril 2026. -->
 
 ### Le champ
 
-Le régime couvre le secteur public selon deux cercles que dessinent les textes d'application de 1985. Le premier réunit les agents de l'État, des collectivités publiques locales et des [établissements publics à caractère administratif](#g-epa), pour lesquels le décret n° 85-980 du 11 août 1985 fixe la liste des éléments de rémunération soumis à retenue pour la retraite [@decret85-980]. Le second réunit les agents des [établissements publics à caractère industriel et commercial](#g-epic) et des sociétés nationales affiliés à la caisse, dont le décret n° 85-1025 du 29 août 1985 dresse la liste [@decret85-1025] et pour lesquels le décret n° 85-1176 du 24 septembre 1985 fixe la même liste d'éléments de rémunération [@decret85-1176]. Le champ s'est élargi en 1998, lorsque la loi n° 98-37 a transféré à la CNRPS la caisse de retraite du personnel des services publics de l'électricité, du gaz et des transports [@loi98-37].
+Le régime couvre le secteur public selon deux cercles que dessinent les textes d'application de 1985. Le premier réunit les agents de l'État, des collectivités publiques locales et des [établissements publics à caractère administratif](#g-epa), pour lesquels le décret n° 85-980 du 11 août 1985 fixe la liste des éléments de rémunération soumis à retenue pour la retraite [@decret85-980]. Le second réunit les agents des [établissements publics à caractère industriel et commercial](#g-epic) et des sociétés nationales affiliés à la caisse, dont le décret n° 85-1025 du 29 août 1985 dresse la liste [@decret85-1025] et pour lesquels le décret n° 85-1176 du 24 septembre 1985 fixe une liste propre, qui reprend celle du décret n° 85-980 et la complète [@decret85-1176] ; son contenu est exposé avec le calcul de la pension (@sec-cnrps-elements-retenue). Le champ s'est élargi en 1998, lorsque la loi n° 98-37 a transféré à la CNRPS la caisse de retraite du personnel des services publics de l'électricité, du gaz et des transports [@loi98-37].
 
-<!-- TODO (documentaliste) : les décrets n° 85-980, 85-1025 et 85-1176 et la loi n° 98-37 ne sont
-connus que par leurs intitulés. Lire le décret n° 85-1025 pour nommer au moins les principales
+<!-- TODO (documentaliste) : les décrets n° 85-980 et 85-1176 sont lus (voir « Les éléments
+soumis à retenue ») ; le décret n° 85-1025 et la loi n° 98-37 ne sont connus que par leurs
+intitulés. Lire le décret n° 85-1025 pour nommer au moins les principales
 sociétés nationales affiliées, et la loi n° 98-37 pour les conditions du transfert. La version
 antérieure de ce chapitre précisait que le régime couvre les agents « quels que soient leur
 situation administrative, les modalités de paiement de leur rémunération, leur sexe, leur
@@ -214,9 +215,190 @@ La pension est calculée sur la **dernière rémunération**, et non sur une moy
 
 > « La pension est liquidée sur la base de la dernière rémunération perçue par l'agent mis à la retraite et ayant fait l'objet de retenues au titre des contributions […] pendant une période minimum de trois ans. […] Toutefois, la liquidation de la pension de retraite est effectuée sur la base de la rémunération afférente à la fonction la plus élevée que l'agent a effectivement exercé pendant une période minimum de deux (2) années entières au cours de sa carrière, à condition que les contributions au titre de cette fonction portent sur une période minimum de trois (3) ans. » [@loi85-12, art. 36]
 
-La règle est donc double. En principe, la rémunération de liquidation est la dernière, à condition qu'elle ait supporté des retenues pendant trois ans. Par exception, elle est celle de la **fonction la plus élevée** exercée pendant deux années entières au cours de la carrière, sous la même condition de trois ans de contributions. La rémunération retenue est constituée des [éléments permanents](#g-elements-permanents-remuneration) de la rémunération, en espèces ou en nature, qui forment aussi l'assiette de la contribution [@loi85-12, art. 10] et dont les décrets n° 85-980 et 85-1176 fixent la liste [@decret85-980 ; @decret85-1176]. L'article 36 n'a pas été modifié depuis 1985.
+La règle est donc double. En principe, la rémunération de liquidation est la dernière, à condition qu'elle ait supporté des retenues pendant trois ans. Par exception, elle est celle de la **fonction la plus élevée** exercée pendant deux années entières au cours de la carrière, sous la même condition de trois ans de contributions. La rémunération retenue est constituée des [éléments permanents](#g-elements-permanents-remuneration) de la rémunération, en espèces ou en nature, qui forment aussi l'assiette de la contribution [@loi85-12, art. 10] et dont les décrets n° 85-980 et 85-1176 fixent la liste [@decret85-980 ; @decret85-1176] ; leur contenu est exposé ci-dessous (@sec-cnrps-elements-retenue). L'article 36 n'a pas été modifié depuis 1985.
 
 La caisse a publié un *Manuel de liquidation des pensions et accessoires*, document administratif interne daté du 19 décembre 2013, donc antérieur à la loi n° 2019-37 [@cnrps-manuel-liquidation-2013]. Ce document n'est pas une norme : ce que ce chapitre en tire est présenté comme la pratique de la caisse à cette date, non comme la règle légale. Le manuel précise l'application qu'elle fait de cet article : la règle vaut aussi pour l'agent **décédé en activité**, et la seconde branche, qu'il désigne comme « la situation la plus avantageuse », n'est mise en œuvre que **sur demande** [@cnrps-manuel-liquidation-2013, p. 83].
+
+### Les éléments soumis à retenue {#sec-cnrps-elements-retenue}
+
+La rémunération de liquidation n'est pas toute la rémunération de l'agent. L'article 36 la rattache à la rémunération « ayant fait l'objet de retenues », et c'est l'assiette de ces retenues qui en fixe le contenu. Cette assiette est définie en deux temps : la loi pose un critère, des décrets dressent la liste.
+
+#### La règle : des éléments permanents, énumérés par décret
+
+L'article 10 de la loi n° 85-12 dispose que la contribution « est calculée sur la base des différents éléments permanents de la rémunération de l'agent qu'ils soient en espèces ou en nature », et que l'[avantage en nature](#g-avantage-en-nature) « est évalué par référence à son équivalent en espèces en vertu des règlements administratifs ». Pour les agents en exercice à l'étranger, la contribution est calculée sur les montants attribués à leurs homologues en Tunisie. L'article se clôt sur un renvoi : « La liste des éléments permanents de la rémunération est fixée par décret » [@loi85-12, art. 10]. L'article suivant précise que l'agent qui ne perçoit qu'une partie de sa rémunération cotise sur la rémunération entière, et l'agent à temps partiel sur la rémunération à plein temps [@loi85-12, art. 11].
+
+La loi ne pose donc qu'un critère, la permanence de l'élément, et n'énonce aucune exclusion. C'est la liste réglementaire qui dit ce qui est soumis à retenue, et, par l'article 36, ce qui entre dans la pension.
+
+<!-- TODO (documentaliste) : vérifier que l'article 10 de la loi n° 85-12 n'a été modifié par
+aucun des textes du tableau @tbl-cnrps-textes ni par un texte postérieur (lois n° 88-71, 90-6,
+94-71, 96-67, 97-59, 2007-43, décret-loi n° 2011-48, loi n° 2019-37…). -->
+
+#### Les deux listes de 1985
+
+Deux décrets, pris à six semaines d'intervalle, dressent la liste, chacun pour l'un des deux cercles du régime décrits plus haut.
+
+**Le décret n° 85-980 du 11 août 1985** vaut pour les agents de l'État, des collectivités publiques locales et des [établissements publics à caractère administratif](#g-epa) [@decret85-980]. Il abroge les dispositions contraires, « notamment celles du décret n° 74-549 du 16 mai 1974 » [@decret85-980, art. 10], et sa liste sert de base aux contributions « à compter du 1^er^ octobre 1985 », soit un peu moins de trois semaines après l'entrée en vigueur de la loi. Elle range les éléments en quatre groupes, qui n'entrent pas dans l'assiette au même rythme [@decret85-980, art. 1-2 et annexe].
+
+| Groupe | Contenu | Contribution de l'agent | Contribution de l'employeur |
+|---|---|---|---|
+| I. Éléments en espèces « continuant à être soumis à retenue » | traitement de base, indemnité complémentaire, indemnité de fonction, indemnité de logement, prime de rendement, indemnité de gestion et d'exécution, indemnités de sujétions spéciales, et de nombreuses indemnités propres à un corps (magistrats, greffiers, forces de sécurité intérieure, corps médical et paramédical, contrôle fiscal, militaires…) | maintenue | maintenue |
+| II. Indemnités complémentaires provisoires | celles qu'ont instituées les décrets n° 82-504 et 82-515 du 16 mars 1982 | 1^er^ octobre 1985 | 1^er^ octobre 1985 |
+| III. Nouveaux éléments en espèces | indemnité kilométrique, indemnité de cabinet, indemnité de représentation des chefs d'entreprises publiques, indemnités de sahara, de zone rurale et de risque, et de nombreuses indemnités des agents des P.T.T., des pilotes civils et des militaires | 1^er^ octobre 1985 | 1^er^ octobre 1988 |
+| IV. Éléments en nature | logement de fonction | maintenue | maintenue |
+| | voiture de fonction | 1^er^ octobre 1985 | 1^er^ octobre 1988 |
+
+: Les quatre groupes de la liste du décret n° 85-980 et leur entrée dans l'assiette {#tbl-cnrps-elements-groupes}
+
+Source : @decret85-980, art. 1-2 et annexe. Le groupe I réunit des éléments qui supportaient déjà la retenue avant la loi de 1985 ; les groupes II à IV sont ceux que la réforme y fait entrer. Pour les nouveaux éléments en espèces et pour la voiture de fonction, la contribution de l'employeur n'est due qu'après un délai de trois ans.
+
+Le même décret règle l'évaluation des éléments qui ne se lisent pas directement sur la fiche de paie. Les indemnités à taux variables sont retenues pour « les montants perçus par l'agent » [@decret85-980, art. 3]. La voiture de fonction est évaluée par référence à la rémunération d'un [emploi fonctionnel](#g-emploi-fonctionnel) : celle d'un directeur général d'administration centrale pour, notamment, un directeur de cabinet, un gouverneur ou un chef d'entreprise publique, celle d'un directeur pour un officier supérieur, d'un sous-directeur pour un premier délégué, d'un chef de service pour un délégué [@decret85-980, art. 5]. Les agents affectés à l'étranger cotisent sur les éléments permanents de leurs homologues de même grade et échelon de l'administration centrale, et les chefs de missions diplomatiques et consulaires sur la rémunération de l'emploi fonctionnel qui leur correspond [@decret85-980, art. 4]. L'agent détaché auprès d'un organisme affilié à la caisse cotise sur les éléments que lui sert l'organisme d'accueil, les autres sur ceux de leur grade et de leur emploi d'origine ; aucune contribution de l'employeur n'est due pour les agents détachés auprès de l'Agence tunisienne de coopération technique [@decret85-980, art. 6 à 8]. Enfin, les chefs d'entreprises publiques affiliés à la caisse cotisent sur leur traitement de base, leurs indemnités de logement et de représentation, leur voiture de fonction et, le cas échéant, leur indemnité différentielle [@decret85-980, art. 9].
+
+**Le décret n° 85-1176 du 24 septembre 1985** vaut pour les agents des [établissements publics à caractère industriel et commercial](#g-epic) et des sociétés nationales affiliés à la caisse [@decret85-1176]. Il soumet à retenue, à compter de la même date du 1^er^ octobre 1985, les éléments permanents « ainsi que l'équivalent du logement de fonction ou de la voiture de fonction », et accorde un délai aux entreprises publiques subventionnées par l'État : elles sont exonérées, jusqu'au 30 septembre 1988, de leur contribution sur les nouveaux éléments intégrés à l'assiette, sauf pour les indemnités complémentaires provisoires [@decret85-1176, art. 2]. Pour les indemnités à taux variables, le détachement et les agents détachés auprès de l'Agence tunisienne de coopération technique, il reprend des règles analogues à celles du décret n° 85-980 [@decret85-1176, art. 3 à 6].
+
+Sa liste compte trois paragraphes [@decret85-1176, annexe] :
+
+1. les « éléments fixés par le décret n° 85-980 du 11 août 1985 » ;
+2. les indemnités complémentaires provisoires, celles des décrets n° 82-504 et 82-515 du 16 mars 1982 et celles des décrets n° 81-437 du 7 avril 1981 et 82-501 du 16 mars 1982 [@decret81-437 ; @decret82-501] ;
+3. une quarantaine d'éléments propres aux entreprises : la **prime de fin d'année ou 13^e^ mois**, les primes à la production, de productivité, d'encouragement et de bilan, les indemnités de présence, de responsabilité, de représentation, « de voiture, kilométrique ou de transport », de caisse, et des primes de métier — conduite des trains, des bus et des engins de la voie ferrée, navigation aérienne, manutention, poussière, panier.
+
+Le premier paragraphe renvoie au décret n° 85-980 sans dire s'il vise la liste arrêtée en 1985 ou cette liste telle que la compléteront ses modificatifs ; aucun de ces modificatifs ne mentionne d'ailleurs le décret n° 85-1176. Les deux listes ont évolué chacune de son côté, comme le montrent les tableaux plus bas.
+
+<!-- TODO (documentaliste) : 1. établir si le renvoi du § 1 de l'annexe du décret n° 85-1176
+au décret n° 85-980 suit les modifications ultérieures de ce dernier (doctrine de la caisse,
+jurisprudence). 2. Les indemnités complémentaires provisoires du groupe II : les décrets
+n° 82-504 et 82-515 du 16 mars 1982 n'ont ni lecture ni clé.
+TODO (bibliographe) : créer ces deux entrées une fois les fascicules localisés.
+3. Piste à vérifier : le décret n° 97-1832 (livre « Rémunérations publiques », art. 3 et 6)
+reclasse les fonctionnaires et agents temporaires au 1er janvier 1998 sur un traitement de base
+égal à la somme du traitement indiciaire, de l'« indemnité complémentaire » et de
+l'« indemnité provisoire complémentaire ». Établir si cette dernière est l'« indemnité
+complémentaire provisoire » des décrets de 1982, et si l'indemnité complémentaire et les
+ICP ont disparu de l'assiette de la fonction publique à cette date — non pour les EPIC et
+sociétés nationales, hors du champ de ce décret. Ne rien affirmer avant. -->
+
+#### Ce que les listes comprennent, et ce qu'elles taisent
+
+Rapportées aux primes que perçoit couramment un agent public, les deux listes donnent le tableau suivant.
+
+| Élément | Place dans les listes | Texte |
+|---|---|---|
+| Traitement de base ; indemnité complémentaire | groupe I | @decret85-980 |
+| Prime de rendement ; prime de rendement et de recherche | groupe I | @decret85-980 |
+| Indemnité de gestion et d'exécution | groupe I | @decret85-980 |
+| Indemnités de sujétions spéciales | groupe I, sous cet intitulé générique | @decret85-980 |
+| Indemnité de fonction ; indemnité de logement | groupe I | @decret85-980 |
+| Indemnité de représentation | État, collectivités locales et EPA : pour des catégories nommées seulement — personnels supérieurs de l'administration régionale, chefs d'entreprises publiques, généraux ; entreprises : sous cet intitulé générique | @decret85-980, groupes I et III, art. 9 ; @decret85-1176, annexe |
+| Indemnités de représentation des présidents de communes, premiers adjoints, adjoints et vice-présidents | exclues expressément de la retenue par le décret qui en fixe le barème, hors des listes | @decret2007-2009, art. 8 |
+| Indemnité kilométrique | groupe III : contribution de l'agent depuis le 1^er^ octobre 1985, de l'employeur depuis le 1^er^ octobre 1988 ; pour les entreprises, « indemnité de voiture, kilométrique ou de transport » | @decret85-980, art. 2 ; @decret85-1176, annexe |
+| Logement de fonction ; voiture de fonction | groupe IV, en nature ; voiture évaluée par emploi fonctionnel | @decret85-980, art. 2 et 5 ; @decret85-1176, art. 2 |
+| Indemnités complémentaires provisoires | groupe II ; § 2 de la liste des entreprises | @decret85-980 ; @decret85-1176 |
+| Prime de fin d'année ou 13^e^ mois | liste des entreprises seulement ; absente de celle du décret n° 85-980 | @decret85-1176, annexe |
+| Heures supplémentaires ; indemnités familiales et de salaire unique ; frais de mission et de déplacement | ni l'une ni l'autre liste | — |
+
+: Les primes courantes dans les listes des éléments soumis à retenue {#tbl-cnrps-elements-primes}
+
+Les indemnités spécifiques propres à un corps n'ont pas de régime d'ensemble : chacune entre dans l'assiette par une mention nominative, dans la liste de 1985 ou dans l'un de ses modificatifs, ou par la clause du décret qui l'institue (voir ci-dessous).
+
+La dernière ligne du tableau appelle une précision. Les heures supplémentaires, les indemnités à caractère familial et les frais de mission ne figurent sur aucune des deux listes, mais aucun des textes identifiés ne les en exclut expressément. L'article 10 renvoie à une liste ; il ne dit pas que ce qui n'y figure pas échappe à la retenue. Le sort de ces éléments n'est donc pas tranché par les textes réunis ici.
+
+Les seules exclusions expresses identifiées se trouvent hors des deux listes, dans le décret n° 2007-2009 du 8 août 2007, qui fixe l'indemnité globale et les avantages en nature des présidents des communes exerçant leurs fonctions à plein temps, ainsi que le barème des indemnités de représentation des présidents des communes, des premiers adjoints, des adjoints et des vice-présidents [@decret2007-2009, art. 1er]. Il en compte trois :
+
+- l'indemnité globale des présidents à plein temps est soumise à la retenue « au titre de la cotisation au régime de la retraite, de la prévoyance sociale et du capital décès », « à l'exception du montant attribué au titre de remboursement des frais liés à la responsabilité » [@decret2007-2009, art. 2] ;
+- l'indemnité globale mensuelle servie aux présidents de communes retraités est « non soumise à la retenue au titre des régimes de sécurité sociale » [@decret2007-2009, art. 5] ;
+- les indemnités de représentation des présidents des communes, des premiers adjoints, des adjoints et des vice-présidents « ne sont pas soumises à la retenue au titre de la cotisation aux régimes de la sécurité sociale » [@decret2007-2009, art. 8].
+
+Le même décret soumet en revanche à la retenue pour la retraite l'avantage en nature de la voiture de fonction, évalué selon les règles applicables aux présidents des entreprises et établissements publics [@decret2007-2009, art. 4]. La liste du décret n° 85-980 comprenait déjà, depuis 1996, l'indemnité forfaitaire des présidents des communes exerçant à plein temps [@decret96-1].
+
+<!-- TODO (documentaliste) : confirmer que le décret n° 2011-2099 du 17 septembre 2011, qui
+complète le décret n° 2007-2009, ne revient pas sur ces exclusions (seul son texte arabe a été
+parcouru). -->
+
+#### Une seconde voie : la clause de retenue du décret qui crée l'indemnité
+
+Les deux listes ne font pas, à elles seules, toute l'assiette. Depuis 1988 au moins, des décrets qui instituent une indemnité la déclarent eux-mêmes soumise à retenue, sans compléter l'une ou l'autre liste. Le décret n° 88-1442 du 26 juillet 1988, qui institue une indemnité de sujétion spéciale au profit des personnels de l'inspection pédagogique, en est un exemple : « Elle est soumise aux retenues pour les côtisations [sic] aux régimes de la caisse nationale de retraite et de prévoyance sociale » [@decret88-1442, art. 3]. Il paraît dans le même fascicule que le décret n° 88-1443, qui complète, lui, la liste du décret n° 85-1176 [@decret88-1443]. Le procédé se retrouve ensuite, par exemple, pour l'indemnité spécifique des enseignants-chercheurs [@decret2000-241, art. 2] ou pour l'indemnité de sujétions spéciales des agents du ministère de l'équipement [@decret2021-476, art. 4].
+
+Aucun recensement de ces clauses n'a été fait. Les tableaux qui suivent retracent donc l'évolution des deux listes, non celle de toute l'assiette.
+
+<!-- TODO (documentaliste) : recenser les décrets qui déclarent une indemnité soumise à retenue
+sans compléter les listes (à partir des visas du décret n° 85-980 « et l'ensemble des textes
+qui l'ont modifié ou complété »). -->
+
+#### L'évolution des listes, 1986-2024
+
+De 1986 à 2024, quarante et un décrets ont modifié ou complété les deux listes : dix-sept celle du décret n° 85-980, vingt-quatre celle du décret n° 85-1176 ; aucun ne touche aux deux. Presque tous ajoutent des éléments, le plus souvent au profit d'un corps ou d'un organisme désigné. Deux seulement en retirent : en 1990, le décret n° 90-1250 retire de la liste de l'État deux indemnités des agents des P.T.T., que le décret n° 91-1333 y rétablit l'année suivante ; en 1993, le décret n° 93-1929 retire de la liste des entreprises la prime de sécurité de la navigation aérienne, qu'il remplace par trois primes [@decret90-1250 ; @decret91-1333 ; @decret93-1929].
+
+La série a un trait saillant : l'ajout prend souvent effet plusieurs années avant la signature du décret. Trois textes le disent « à titre de régularisation » — le décret n° 2002-3015, avec effet au 1^er^ juillet 1999, le décret n° 2008-3471, au 8 novembre 1999, et le décret n° 2011-1015, au 1^er^ janvier 2008 [@decret2002-3015, art. 2 ; @decret2008-3471, art. 2 ; @decret2011-1015, art. 2]. D'autres fixent simplement une date antérieure : le décret n° 2007-2590 soumet à retenue quatorze indemnités et primes de l'office national des postes à compter du 1^er^ juillet 1999 [@decret2007-2590, art. 2], et le décret n° 88-1102 fait remonter l'ajout de l'indemnité de conciliation au 1^er^ octobre 1985, date de la liste elle-même [@decret88-1102, art. 2].
+
+Dans les deux tableaux, les textes sont rangés par date de signature, et la date d'effet est donnée de deux façons. Suivie d'un astérisque, elle est fixée par le texte lui-même. Sinon, c'est la date à laquelle le texte devient exécutoire : jusqu'à la loi n° 93-64 du 5 juillet 1993, un jour franc après sa publication au *Journal officiel* ; depuis, cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis [@loi93-64, art. 2]. Lorsque la date de ce dépôt n'est pas connue, la date donnée, « au plus tôt », est calculée sur la date de publication. Plusieurs fascicules antérieurs à 1993 portent deux dates ; la date d'effet est alors calculée sur la première, et la seconde est indiquée entre parenthèses.
+
+| Date d'effet | Texte | Ce qui change dans la liste |
+|---|---|---|
+| 24 août 1986 (28 août sur la seconde date du fascicule) | [@decret86-784] | groupe III : **+** indemnité de frais de régie des agents des P.T.T. ; **+** indemnité de guichet de certains agents des P.T.T. |
+| 28 mai 1987 | [@decret87-771] | groupe III : **+** indemnité pour charges administratives des inspecteurs régionaux de l'archéologie et des directeurs d'établissement rattachés à l'Institut national d'archéologie et d'art |
+| 1^er^ octobre 1985\* | [@decret88-1102] | groupe I : **+** indemnité de conciliation (corps de conciliation du ministère des affaires sociales) |
+| 12 août 1990 | [@decret90-1250] | groupe III : **−** indemnité de recouvrement des agents des P.T.T. ; **−** indemnité de frais de régie des agents des P.T.T. ; **+** prime de résultat d'exploitation des agents du ministère des communications |
+| 6 décembre 1990 | [@decret90-1985] | **+** indemnité municipale de l'hygiène et de l'enlèvement des ordures ménagères |
+| 1^er^ janvier 1987\* | [@decret90-2007] | **+** indemnité pour charge de sécurité des forces de sécurité intérieure |
+| 1^er^ juin 1991 | [@decret91-812] | **+** indemnité forfaitaire de chargé de mission, « dans la limite de 150 dinars par mois » ; les contributions dues pour le passé peuvent être régularisées dans un délai de trois ans |
+| 22 septembre 1991 (26 septembre sur la seconde date du fascicule) | [@decret91-1333] | groupe III : **+** indemnité de recouvrement et **+** indemnité de frais de régie des agents des P.T.T. — les deux éléments retirés en 1990 |
+| 19 janvier 1992 (23 janvier sur la seconde date du fascicule) | [@decret92-2] | article 9 : chefs d'entreprises à majorité publique rémunérés selon le décret n° 90-1855, et non plus n° 84-865 ; **+** indemnité de gestion, à côté du traitement de base, des indemnités de logement et de représentation, de la voiture de fonction et, le cas échéant, de l'indemnité différentielle |
+| 9 mai 1993 | [@decret93-929] | **+** prime d'intéressement des décrets n° 91-807 et 91-808 (contrôle fiscal ; postes comptables du ministère des finances) |
+| au plus tôt le 26 décembre 1993 | [@decret93-2444] | **+** prime spéciale de forage (régie des sondages hydrauliques) |
+| au plus tôt le 17 janvier 1996 | [@decret96-1] | **+** indemnité forfaitaire des présidents des communes exerçant à plein temps |
+| au plus tôt le 2 octobre 1996 | [@decret96-1654] | groupe III : **+** indemnité spéciale d'affectation des professeurs agrégés des cycles préparatoires |
+| au plus tôt le 6 juillet 1997 | [@decret97-1207] | **+** indemnité spécifique des vice-présidents, membres, secrétaire permanent et rapporteurs non contractuels du conseil de la concurrence |
+| 1^er^ janvier 1997\* | [@decret98-1301] | **+** indemnité différentielle de certains agents de l'agence urbaine du grand Tunis |
+| 10 juillet 2006 | [@decret2006-1801] | groupe I : **+** indemnité spécifique permanente des cadres et agents de la haute inspection des forces de sûreté intérieure et de la douane |
+| « à compter de la date de leur institution »\* | [@decret2024-2] | groupe I : **+** indemnité de contrôle des dépenses publiques ; **+** indemnité spécifique des contrôleurs d'État ; **+** indemnité de contrôle et de révision de la commande publique — soumises aux retenues pour la retraite, l'assurance maladie et le capital-décès |
+
+: Modifications de la liste du décret n° 85-980 (État, collectivités publiques locales, établissements publics à caractère administratif) {#tbl-cnrps-elements-985}
+
+Le décret n° 87-771 ne fixe pas de date propre à l'ajout : il complète la liste qui sert de base aux contributions « à compter du 1^er^ octobre 1985 ». Le décret n° 2024-2 rattache la date d'effet de chaque ajout à celle de l'institution de l'indemnité, que le décret ne donne pas.
+
+<!-- TODO (documentaliste) : 1. lire les décrets n° 2012-1684, 2013-5095 et 2013-5098, qui
+instituent les trois indemnités ajoutées par le décret n° 2024-2, pour dater ces ajouts.
+2. Trouver la date de dépôt au siège du gouvernorat de Tunis des fascicules des décrets
+n° 93-2444, 96-1, 96-1654 et 97-1207 (et 93-1929, tableau suivant), pour remplacer les dates
+« au plus tôt ». 3. La règle retenue pour les décrets n° 93-929 et 93-1126, publiés en mai 1993,
+est celle du jour franc, antérieure à la loi n° 93-64 : date d'entrée en vigueur de cette loi à
+confirmer. 4. Revérifier l'absence de modificatif des deux listes publié en 2025-2026. -->
+
+::: {.callout-note collapse="true" title="Modifications de la liste du décret n° 85-1176 (établissements publics à caractère industriel et commercial, sociétés nationales), 1988-2019"}
+
+| Date d'effet | Texte | Ce qui change dans la liste |
+|---|---|---|
+| 14 août 1988 (18 août sur la seconde date du fascicule) | [@decret88-1443] | **+** indemnité spécifique administrative ; **+** indemnité spécifique technique ; **+** prime de sujétion dite « de Licence » — le décret ne nomme pas l'organisme bénéficiaire |
+| 24 août 1989 (27 août sur la seconde date du fascicule) | [@decret89-1082] | **+** prime de campagne (le décret vise le statut du personnel de l'office national de l'huile) |
+| 18 juillet 1991 | [@decret91-1028] | **+** indemnité de gestion et d'exécution du livre (le décret vise le statut du centre national pédagogique) |
+| 1^er^ janvier 1991\* | [@decret92-1629] | **+** indemnité de sécurité sociale — le décret ne nomme pas l'organisme bénéficiaire |
+| 23 mai 1993 | [@decret93-1126] | **+** prime de service des agents de la Société nationale des chemins de fer tunisiens |
+| au plus tôt le 10 octobre 1993 | [@decret93-1929] | **−** prime de sécurité de la navigation aérienne, remplacée par **+** la prime de sécurité et de responsabilité du contrôle du trafic aérien, **+** la prime de sécurité et de fiabilité des équipements de la navigation aérienne et **+** la prime d'exploitation de la navigation aérienne ; **+** prime sur le chiffre d'affaires des agents de vente sous douane ; **+** indemnité différentielle pour perte de licence des contrôleurs de la circulation aérienne ; **+** prime de sujétion d'encouragement |
+| 1^er^ novembre 1990\* | [@decret93-2170] | **+** indemnité d'intéressement des agents du centre d'études et de recherches des télécommunications |
+| 1^er^ janvier 1994\* | [@decret94-1392] | **+** indemnité d'astreinte des agents de l'office des Tunisiens à l'étranger |
+| 10 décembre 1994 | [@decret94-2409] | **+** prime de gestion des gestionnaires des agro-combinats et fermes pilotes de l'office des terres domaniales |
+| 1^er^ janvier 1994\* | [@decret94-2581] | **+** prime d'astreinte de certains agents de l'agence tunisienne de l'emploi et de l'agence tunisienne de la formation professionnelle |
+| 1^er^ août 1993\* | [@decret95-2432] | **+** indemnités spécifiques du personnel de l'agence foncière d'habitation et de l'agence de réhabilitation et de rénovation urbaine |
+| 26 septembre 2002 | [@decret2002-2084] | **+** indemnité d'impression des agents de l'Imprimerie officielle |
+| 1^er^ juillet 1999\*, « à titre de régularisation » | [@decret2002-3015] | **+** indemnité d'affectation des agents de l'office national des télécommunications |
+| 1^er^ juillet 1999\* | [@decret2007-2590] | **+** quatorze indemnités et primes de l'office national des postes : guichet ; distribution ; tri ; prestations financières ; prestations administratives ; casque ; exploitation postale ; indemnité spécifique au grade de conseiller ; responsabilité de chef de section ; responsabilité de gestion comptable ; responsabilité des emplois de métier ; imprimerie ; sécurité de fabrication des timbres-poste ; prime de recouvrement |
+| 8 novembre 1999\*, « à titre de régularisation » | [@decret2008-3471] | **+** indemnité de coordination des agents de l'Entreprise tunisienne d'activités pétrolières |
+| 1^er^ janvier 2008\*, « à titre de régularisation » | [@decret2011-1015] | **+** indemnité de développement des télécommunications (société nationale des télécommunications) |
+| 10 mai 2014 | [@decret2014-1386] | **+** indemnité des services permanents des agents de la Société tunisienne de l'électricité et du gaz |
+| 8 janvier 2016\*, date de publication | [@decret2015-2723] | **+** vingt-sept indemnités et primes d'organismes nommés un à un — agence nationale de la sécurité informatique, office du commerce, centre national de l'informatique, office national de la poste, office de l'aviation civile et des aéroports, comité général des assurances (dont une prime du quatorzième mois), office de la marine marchande et des ports, Imprimerie officielle, Entreprise tunisienne d'activités pétrolières, entre autres ; leur octroi doit être « d'une façon permanente et selon la réglementation en vigueur » |
+| 22 avril 2017 | [@decret2017-428] | **+** « indemnité de charges administratif ou technique » des agents de l'Imprimerie officielle |
+| 29 janvier 2007\* (charge technique) ; 1^er^ janvier 2015\* (indemnité spécifique) | [@decret2017-458] | **+** indemnité de charge technique ; **+** indemnité spécifique — agents du centre informatique du ministère de la santé |
+| 1^er^ décembre 1993\* (suggestion technique) ; 1^er^ novembre 2014\* (indemnité spécifique) | [@decret2017-459] | **+** indemnité de la suggestion technique ; **+** indemnité spécifique — agents du centre national de l'informatique |
+| 31 décembre 2017 | [@decret2017-1368] | **+** indemnité de réquisition et de mise à disposition des agents de l'agence nationale de gestion des déchets — texte publié en arabe seulement ; intitulé traduit, sans valeur officielle |
+| 29 décembre 2017\*, date de publication | [@decret2017-1374] | **+** indemnité d'astreinte des agents de l'agence municipale de gestion de Tunis |
+| 1^er^ janvier 2018\* | [@decret2019-482] | **+** prime de gardiennage des ouvriers agricoles permanents et **+** prime spécifique des agents administratifs de l'office des terres domaniales |
+
+: Modifications de la liste du décret n° 85-1176 {#tbl-cnrps-elements-1176}
+
+:::
+
+<!-- TODO (bibliographe) : l'intitulé français de la clé decret2017-1368 est une traduction de
+travail (l'édition française du JORT n° 103 de 2017 n'existe pas) : à valider ou à remplacer
+par l'intitulé arabe. -->
 
 ### Les annuités liquidables
 

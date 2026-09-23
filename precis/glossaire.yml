@@ -2372,34 +2372,110 @@ entries:
 
   - id: elements-permanents-remuneration
     acronyme: null
-    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
+    statut: valide  # terme AR attesté : loi n° 85-12, art. 10 (JORT AR n° 20/1985, p. 365) ; décret n° 85-980, art. 1er (JORT AR n° 59/1985, p. 1039)
     references: [decret85-980, decret85-1176]
     source_definition: {ref: loi85-12, locator: "art. 10"}
-    voir_aussi: [perequation, pensions-civiles-militaires, traitement-de-base]
+    source_traduction: {ref: loi85-12, locator: "art. 10"}
+    voir_aussi: [perequation, pensions-civiles-militaires, traitement-de-base, avantage-en-nature]
     fr:
       terme: Éléments permanents de la rémunération
       definition: >
-        Éléments de la rémunération, en espèces ou en nature, qui forment à la fois
-        l'assiette de la contribution au régime des pensions civiles et militaires et
-        la rémunération sur laquelle la pension est liquidée (loi n° 85-12, art. 10).
-        Leur liste est fixée par le décret n° 85-980 pour les agents de l'État, des
-        collectivités locales et des établissements publics à caractère
-        administratif, et par le décret n° 85-1176 pour ceux des établissements
-        publics à caractère industriel et commercial et des sociétés nationales.
-        Toute augmentation de l'un d'eux entraîne la péréquation des pensions
-        (art. 37).
+        Éléments de la rémunération, en espèces ou en nature, sur lesquels est
+        calculée la contribution au régime des pensions civiles et militaires (loi
+        n° 85-12, art. 10), et qui forment aussi la rémunération sur laquelle la
+        pension est liquidée, l'article 36 rattachant celle-ci à la rémunération
+        ayant fait l'objet de retenues. La loi pose le critère de la permanence,
+        n'énonce aucune exclusion et renvoie la liste au décret : deux décrets
+        l'énumèrent, le n° 85-980 pour les agents de l'État, des collectivités
+        publiques locales et des établissements publics à caractère administratif,
+        le n° 85-1176 pour ceux des établissements publics à caractère industriel et
+        commercial et des sociétés nationales. Ces deux listes nomment les éléments
+        un à un ; quarante et un décrets les ont modifiées de 1986 à 2024, presque
+        tous pour y ajouter des éléments. D'autres indemnités sont déclarées
+        soumises à retenue pour pension par le décret même qui les institue, sans
+        que les listes soient modifiées. Toute augmentation de l'un de ces éléments
+        entraîne la péréquation des pensions (art. 37).
       synonymes: []
     ar:
-      terme: العناصر القارّة للأجر
+      terme: العناصر القارة للمرتب
       definition: >
-        عناصر التأجير، نقدًا أو عينًا، التي تمثّل في الآن نفسه قاعدة المساهمة في نظام
-        الجرايات المدنية والعسكرية والأجرَ الذي تُصفّى على أساسه الجراية (القانون عدد
-        12 لسنة 1985، الفصل 10). ويضبط قائمتها الأمر عدد 980 لسنة 1985 بالنسبة إلى
-        أعوان الدولة والجماعات المحلية والمؤسسات العمومية ذات الصبغة الإدارية، والأمر
-        عدد 1176 لسنة 1985 بالنسبة إلى أعوان المؤسسات العمومية ذات الصبغة الصناعية
-        والتجارية والشركات الوطنية. وتُفضي كلّ زيادة في أحدها إلى تنظير الجرايات
-        (الفصل 37).
-      synonymes: [العناصر القارّة للتأجير]
+        عناصر المرتب، نقدية كانت أو عينية، التي تُحتسب على أساسها المساهمة في نظام
+        الجرايات المدنية والعسكرية (القانون عدد 12 لسنة 1985، الفصل 10)، والتي يتكوّن
+        منها كذلك المرتب الذي تُصفّى على أساسه الجراية، إذ يربط الفصل 36 هذا المرتب
+        بالمرتب الذي وقعت عليه الحجوزات. ويضع القانون معيار الديمومة دون أن ينصّ على
+        أيّ استثناء، ويُحيل ضبط القائمة إلى الأمر: فيضبطها الأمر عدد 980 لسنة 1985 بالنسبة إلى أعوان
+        الدولة والجماعات العمومية المحلية والمؤسسات العمومية ذات الصبغة الإدارية،
+        والأمر عدد 1176 لسنة 1985 بالنسبة إلى أعوان المؤسسات العمومية ذات الصبغة
+        الصناعية والتجارية والشركات القومية. وتُعدِّد هاتان القائمتان العناصر واحدًا
+        واحدًا، وقد نقّحهما واحد وأربعون أمرًا بين 1986 و2024، أغلبها لإضافة عناصر. وتُخضَع منح أخرى
+        للحجز بعنوان جراية التقاعد بمقتضى الأمر الذي يُحدثها نفسه، دون تنقيح
+        القائمتين. وتُفضي كلّ زيادة في أحد هذه العناصر إلى تنظير الجرايات (الفصل 37).
+      synonymes: [العناصر القارة لمرتبات]
+
+  - id: avantage-en-nature
+    acronyme: null
+    statut: valide  # terme AR attesté : loi n° 85-12, art. 10 (JORT AR n° 20/1985, p. 365) ; définition limitée au régime des pensions civiles et militaires
+    references: [decret85-980, decret85-1176]
+    source_definition: {ref: loi85-12, locator: "art. 10"}
+    source_traduction: {ref: loi85-12, locator: "art. 10"}
+    voir_aussi: [elements-permanents-remuneration, emploi-fonctionnel]
+    fr:
+      terme: Avantage en nature
+      definition: >
+        Élément de la rémunération servi autrement qu'en espèces. Dans le régime des
+        pensions civiles et militaires, la loi n° 85-12 le compte parmi les éléments
+        permanents sur lesquels est calculée la contribution, et dispose qu'il « est
+        évalué par référence à son équivalent en espèces en vertu des règlements
+        administratifs » (art. 10). Les décrets n° 85-980 et 85-1176 y rangent le
+        logement de fonction et la voiture de fonction ; le premier évalue la
+        voiture de fonction par référence à la rémunération d'un emploi fonctionnel
+        (art. 5). Cette définition ne vaut que pour ce régime : l'impôt sur le
+        revenu, notamment, évalue les avantages en nature selon ses propres règles.
+      synonymes: [Avantages en nature]
+    ar:
+      terme: الامتياز العيني
+      definition: >
+        عنصر من عناصر المرتب يُسنَد في غير شكل نقدي. وفي نظام الجرايات المدنية
+        والعسكرية، يعدّه القانون عدد 12 لسنة 1985 من العناصر القارة للمرتب التي
+        تُحتسب على أساسها المساهمة، وينصّ على أنّه «يتم تقييم الامتياز العيني
+        بالرجوع إلى ما يعادله نقدا بمقتضى التراتيب الإدارية» (الفصل 10). ويُدرج
+        الأمران عدد 980 وعدد 1176 لسنة 1985 ضمنه المسكن الوظيفي والسيارة
+        الوظيفية، ويُقيّم أوّلهما امتياز السيارة الوظيفية بالرجوع إلى مرتب خطة
+        وظيفية (الفصل 5). ولا يصحّ هذا التعريف إلّا في هذا النظام: فالضريبة على
+        الدخل، خاصّةً، تُقيّم الامتيازات العينية وفق قواعدها الخاصّة.
+      synonymes: [الامتيازات العينية]
+
+  - id: emploi-fonctionnel
+    acronyme: null
+    statut: provisoire  # terme AR attesté (décret n° 85-980, art. 4 et 5, JORT AR n° 59/1985, pp. 1039-1040) ; définition par l'usage du décret n° 85-980 : aucun texte définissant la notion n'est versé
+    references: [decret85-980]
+    source_definition: {ref: decret85-980, locator: "art. 4 et 5"}
+    source_traduction: {ref: decret85-980, locator: "art. 4 et 5"}
+    voir_aussi: [elements-permanents-remuneration, avantage-en-nature]
+    fr:
+      terme: Emploi fonctionnel
+      definition: >
+        Emploi de l'administration centrale — secrétaire général de département,
+        directeur général, directeur, sous-directeur, chef de service — que le
+        décret n° 85-980 prend pour référence dans le régime des pensions civiles et
+        militaires. La voiture de fonction y est évaluée, au titre de la retraite,
+        par référence à la rémunération de l'emploi fonctionnel que le décret fait
+        correspondre à chaque catégorie de bénéficiaires (art. 5), et les chefs de
+        missions diplomatiques et consulaires cotisent sur la rémunération de
+        l'emploi fonctionnel qui leur correspond (art. 4). Le décret emploie la
+        notion sans la définir.
+      synonymes: [Emplois fonctionnels]
+    ar:
+      terme: الخطة الوظيفية
+      definition: >
+        خطة من خطط الإدارة المركزية — كاتب عام لوزارة، مدير عام، مدير، كاهية مدير،
+        رئيس مصلحة — يتّخذها الأمر عدد 980 لسنة 1985 مرجعًا في نظام الجرايات المدنية
+        والعسكرية. إذ يقع تقييم امتياز السيارة الوظيفية، بعنوان التقاعد، بالرجوع إلى
+        مرتب الخطة الوظيفية التي يجعلها الأمر مماثلة لكلّ صنف من المنتفعين (الفصل 5)،
+        وتُحتسب مساهمات رؤساء البعثات الديبلوماسية والقنصلية على أساس مرتب الخطة
+        الوظيفية المماثلة لوظائفهم (الفصل 4). ويستعمل الأمر هذا المفهوم دون أن
+        يعرّفه.
+      synonymes: [الخطط الوظيفية]
 
   - id: fonctions-astreignantes
     acronyme: null
@@ -2673,7 +2749,7 @@ entries:
       terme: تنظير الجرايات
       definition: >
         آلية لتعديل جرايات القطاع العمومي، تُراجَع بمقتضاها الجراية عند كلّ زيادة في أحد
-        العناصر القارّة للأجر المطابق للرتبة أو الخطّة التي صُفّيت الجراية على أساسها،
+        العناصر القارة للمرتب المطابق للرتبة أو الخطّة التي صُفّيت الجراية على أساسها،
         وكذلك عند إحداث منحة قارّة مرتبطة بتلك الرتبة أو الخطّة (القانون عدد 12 لسنة
         1985، الفصل 37). ومنذ غرّة جانفي 2002، يخضع التنظير للمساهمة: جعل قانون المالية
         لسنة 2002 (الفصل 86) مساهمة المنتفع بالجراية مستوجبة طيلة فترة صرف الجراية

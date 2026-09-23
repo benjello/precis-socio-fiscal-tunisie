@@ -2262,3 +2262,110 @@ Reste :
 - [ ] tunisia-data : les fichiers `wb_1990_8044_cem_{a..e}.pdf` ne disent pas quel volume ils
   portent (a = vol. I sous couverture du vol. III, c = vol. V, e = vol. III ; b = vol. IV,
   d = vol. II d'après leurs couvertures) — à consigner dans la fiche source.
+## Livre « Retraites » — éléments permanents soumis à retenue (passe bibliographe du 22 septembre 2026)
+
+Source : `docs/notes/retraites-elements-permanents.md` (§ 2.2, § 3). Ajoutées à la main dans
+**`precis/fr/references.json` et `precis/ar/references.json`** (fichier commun, comme les
+décrets de base `decret85-980`, `decret85-1176` et les autres décrets de retraite
+`decret74-499`, `decret89-107`… ; la note proposait le fichier du livre, qui ne porte que cinq
+clés à tiret). **Pas encore dans Zotero.** Aucune n'est encore citée par un `.qmd`.
+
+Chaque URL vient de l'enregistrement `jort_cache.db` du texte (identifié par numéro exact et date
+de signature ; pour 2024-2, par date et intitulé) : `pdf_fr` pour le fichier FR, `pdf_ar` pour le
+fichier AR, confrontée au tableau § 3.1 de la note — concordance totale, sauf 2019-482 (ci-dessous).
+Les 76 URL distinctes répondent `200 application/pdf` (HEAD, 22/09/2026).
+
+- [x] **41 clés créées (FR et AR)** : `decret86-784`, `decret87-771`, `decret88-1102`,
+  `decret88-1443`, `decret89-1082`, `decret90-1250`, `decret90-1985`, `decret90-2007`,
+  `decret91-812`, `decret91-1028`, `decret91-1333`, `decret92-2`, `decret92-1629`,
+  `decret93-929`, `decret93-1126`, `decret93-1929`, `decret93-2170`, `decret93-2444`,
+  `decret94-1392`, `decret94-2409`, `decret94-2581`, `decret95-2432`, `decret96-1`,
+  `decret96-1654`, `decret97-1207`, `decret98-1301`, `decret2002-2084`, `decret2002-3015`,
+  `decret2006-1801`, `decret2007-2590`, `decret2008-3471`, `decret2011-1015`,
+  `decret2014-1386`, `decret2015-2723`, `decret2017-428`, `decret2017-458`, `decret2017-459`,
+  `decret2017-1368`, `decret2017-1374`, `decret2019-482`, `decret2024-2`.
+- [x] **Notes mises à jour** (FR et AR) : `decret85-980`, `decret85-1176` — « Métadonnées
+  seules » remplacé par le contenu lu à l'image (§ 3.3 de la note) ; pour `decret85-980`, la
+  mention « Assiette de liquidation de la pension (art. 10 et 36 de la loi 85-12) » est conservée.
+
+### TODO de vérification
+
+- [ ] **`decret2019-482`, URL française** : `jort_cache.db` n'a **aucun `pdf_fr`** pour le
+  JORT n° 45-46 de 2019 (seul `pdf_ar` = `/jort/2019/2019A/Ja0462019.pdf`). *Mise à jour : l'URL
+  ci-dessous a depuis été portée dans l'entrée FR, sur vérification du fichier servi ; reste à
+  compléter la notice `jort_cache` ou à entériner l'exception.* Or `https://www.pist.tn/jort/2019/2019F/Jo0462019.pdf` répond (200, PDF) et a la
+  taille exacte du fascicule français local lu par la documentaliste (916 541 octets ; revérifié le 22/09/2026). À lever par
+  l'humain : soit compléter la notice `jort_cache`, soit accepter l'URL vérifiée hors base.
+- [ ] **`decret2017-1368`, intitulé français** : l'édition française du JORT n° 103 de 2017
+  n'existe pas (404 ; `pdf_fr` vide en base). L'entrée FR est **sans URL** ; l'intitulé français
+  est une construction de la documentaliste sur le modèle des autres modificatifs (la note de
+  l'entrée le dit : « Intitulé français non publié : à valider »). Intitulé officiel arabe
+  (notice `jort_cache`) : « يتعلق بإتمام الأمر عدد 1176 لسنة 1985 … ». Pagination (p. 4553) de
+  l'édition arabe.
+- [ ] **Pagination arabe** : les entrées AR reprennent la pagination française (usage du fichier).
+  Elle coïncide avec les pages de la notice `jort_cache` pour 37 des 41 textes ; la notice n'a pas
+  de pages pour 2017-1368 et 2017-1374, donne pour 2019-482 une pagination arabe distincte, et
+  porte `0208-0208` pour 2024-2 là où le fascicule lu donne pp. 208-209 (lecture du fascicule
+  retenue).
+  Pagination arabe **relevée** seulement pour 2019-482 (`1737-1738`, notice `jort_cache` ; p. 1737
+  lue au sommaire) et 2017-1368 (4553). Non vérifiée ailleurs, en particulier pour 2002-2024.
+
+### Rapatriement Zotero (feu vert humain requis)
+
+Les 41 clés + les deux notes corrigées, par la séquence `permissions` → `verifier` → `dry-run` →
+`pousser-un` → `comparer` → `pousser-tout` → **`ranger`**. Rangement : aucune n'est citée à ce
+jour, donc `controle-rangement` ne prend pas position (« sans citation »). Dès que la
+sous-section « Les éléments soumis à retenue » les citera, `ranger` les rattachera à la
+collection du ou des livres citants — si le seul livre citant est « Retraites », elles
+descendront au prochain `sync` dans `precis/{lang}/retraites/references.json` et non plus dans
+le fichier commun. À garder en tête pour ne pas créer de doublon d'`id` entre les deux fichiers.
+
+### Passe « clôture » (22 septembre 2026) — textes nommés sans clé
+
+Contrôle d'unicité préalable (numéros cherchés dans tous les `references.json` et `.bib`) : aucune
+entrée préexistante. URL : `pdf_fr` / `pdf_ar` lus sur le même enregistrement `jort_cache.db`,
+servis par pist.tn (`curl -k`, `200 application/pdf`) avec la taille exacte des fascicules locaux.
+Intitulés arabes relevés **à l'image** des fascicules arabes (OCR `ara` pour localiser, lecture de
+l'image pour transcrire, orthographe du fascicule conservée).
+
+- [x] **4 clés créées (partagé FR + AR)** :
+  - `decret88-1442` — recid 94274 ; JORT n° 54/1988, FR p. 1140, AR pp. 1126-1127 ; art. 3 lu.
+  - `decret2000-241` — recid 88341 ; JORT n° 12/2000, FR p. 397, AR pp. 399-400 ; art. 2 lu.
+    **URL AR `2000A/Ja01200.pdf`** (valeur du champ `pdf_ar`, conforme à l'anomalie de nommage de
+    l'an 2000, `outillage-sources.md` § 3) : la dérivation `url_jort` de `sync_biblio.py`
+    produirait `Ja0122000.pdf`, qui répond **404**, et `sans_homologue` ne couvre pas ce cas.
+    **TODO outillage** : à la prochaine descente Zotero, l'URL AR de cette entrée sera fausse.
+  - `decret2007-2009` — recid 83316 ; JORT n° 65/2007, FR pp. 2764-2766, AR pp. 2932-2934 ;
+    **édition française lue** (couche texte) : art. 2, 4, 5 et **8** (voir ci-dessous).
+  - `decret2021-476` — recid 162129 ; JORT n° 55/2021, FR pp. 1667-1669, AR pp. 1742-1744 (la
+    notice donne « 1667-1667 ») ; art. 4 lu en français.
+- [x] **`decret81-437` (AR)** : intitulé arabe relevé (p. 882), pagination arabe 882-884.
+- [x] **`decret88-1443` (AR)** : pagination arabe p. 1127 (au lieu de la française). **Divergence de
+  date** : l'édition arabe date le décret du **14 juillet 1988** (intitulé et formule finale), la
+  française et `jort_cache` du 28 juillet. `issued` non modifié ; **à trancher par l'humain**.
+- [ ] **Non créés, faute de lecture** : décrets n° 82-504 et 82-515 (recid 97550, 97560 ; JORT
+  n° 20/1982, pp. 691 et 697) ; n° 81-444 (recid 98243), qui n'est d'ailleurs pas nommé dans la prose.
+- [ ] **TODO arabe restants** : `decret82-501`, `loi93-64`, `decret88-1443` et les 41 modificatifs
+  portent un intitulé français dans le fichier AR ; pagination arabe non relevée pour la plupart
+  (le cas 88-1443 montre qu'elle diffère).
+- **Pour le rédacteur/documentaliste** : l'art. 8 du décret n° 2007-2009 (édition française)
+  exclut aussi les **indemnités de représentation** des présidents de communes, premiers
+  adjoints, adjoints et vice-présidents de la retenue « au titre de la cotisation aux régimes de
+  la sécurité sociale » — troisième exclusion expresse, que la prose (« La seule exclusion expresse
+  identifiée… », « D'après son texte arabe ») ne mentionne pas.
+
+Rapatriement Zotero : ajouter ces 4 clés à la liste des 41 (même séquence, feu vert requis).
+
+Contrôles de clôture (local, sans clé Zotero, rien poussé) : `--dry-run` 448 entrées converties
+sans `ValueError` (sans clé, le groupe n'est pas lu : « à créer » n'est pas un décompte) ;
+`--controle-rangement` 363 références dans Zotero, 472 citations, 347 bien rangées, à déclasser 2
+(`loi96-101`, `minfin-indicateurs-fp`), à ranger 1 (`loi93-64` → retraites), sans citation 13,
+absentes de Zotero 55.
+
+- [ ] **`--verifier` : 1 perte de champ**, antérieure à cette passe — `cnss-chiffres`, champ
+  `accessed` envoyé (`2026-09-18`) mais non relu. N'interrompt pas la conversion ; à corriger avant
+  `pousser-tout`.
+- [ ] **Rangement et descente** : une fois `loi93-64` rangée dans « retraites » (et les 41 + 4 clés
+  poussées et citées par ce seul livre), la descente les écrira dans
+  `precis/{lang}/retraites/references.json` ; les retirer alors du fichier commun, sans quoi l'`id`
+  sera en double.
