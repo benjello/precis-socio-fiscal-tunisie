@@ -44,8 +44,8 @@
   ou: [precis/fr/retraites/_secteur_prive.qmd#sec-travailleuses-agricoles]
   requetes:
     titres_fts: ['"travailleuses agricoles"']
-    iort_ar: [العاملات الفلاحيات]
-    plein_texte: [2024-4, العاملات الفلاحيات, 4 لسنة 2024]
+    iort_ar: [العاملات الفلاحيات, عاملات الفلاحيات]
+    plein_texte: [2024-4, العاملات الفلاحيات, 4 لسنة 2024, عاملات الفلاحيات]
     depuis: 2024-10-23
   passes:
   - date: 2026-09-23
@@ -58,3 +58,484 @@
   - lire le JORT n° 58 de 2026 (pist.tn)
   - 'lire les fascicules absents du corpus local le 24 septembre 2026 (relancer --depuis 2024-10-23) : 2024, n° 129 à 159, FR et AR ; 2025, n° 121 à 156, FR et AR, et FR n° 29 et 77 ; 2026, FR n° 11 et 13, AR n° 3'
   - 'chercher aussi sans l''article (عاملات الفلاحيات) : après « ل », l''intitulé du décret-loi s''écrit للعاملات الفلاحيات'
+
+- id: r-dec74-499-modificatifs
+  objet: texte modifiant le décret n° 74-499 (régime des salariés non agricoles) postérieur au décret n° 2007-2148 ; pour les articles 5 b), 18 et 19, tout modificatif autre que ceux que cite le précis
+  ou:
+  - precis/fr/retraites/_secteur_prive.qmd#sec-rsna-calcul
+  - precis/fr/retraites/_secteur_prive.qmd#sec-rsna-depuis-2007
+  - precis/fr/retraites/_secteur_prive.qmd#sec-rsna-textes-modificatifs
+  - precis/fr/cotisations_sociales/index.qmd
+  requetes:
+    titres_fts:
+    - '"74-499" OR "74 499"'
+    - '"74-499" OR ("non agricole" AND vieillesse) OR "salaire de reference" OR "salaire moyen"'
+    titres_like: ['%74-499%', '%vieillesse%invalidite%', '%pensions de vieillesse%', '%secteur non agricole%']
+    iort_ar: [499 لسنة 1974]
+    plein_texte: [74-499, 499 لسنة 1974]
+    depuis: 2007-08-28
+  passes:
+  - date: 2026-09-11
+    role: documentaliste
+    sources: [jort_cache, visas]
+    couverture: 'jort_cache : LIKE « 74-499 » sur les titres, 1974-2026 (16 notices, la chaîne des modificatifs) ; FTS « "74-499" OR ("non agricole" AND vieillesse) OR "salaire de reference" OR "salaire moyen" », 1990-2026 : aucun texte postérieur au décret n° 2007-2148. Seconde voie : visas des décrets n° 90-1455 et 94-1429. Note : docs/notes/retraites-dossier.md, § 12.5.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  - date: 2026-09-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache (78 953 textes, dernière publication indexée le 10 avril 2026), trois voies : LIKE sans accents sur les titres (« 74-499 », « vieillesse,invalidite », « pension(s) de vieillesse », « secteur non agricole », « securite sociale ») ; FTS « "74-499" OR "74 499" », puis (retraite OR pension OR vieillesse) AND (securite OR sociale OR prive OR CNSS) après 2007 ; LIKE sur les intitulés arabes après 2007 (« التقاعد », « الشيخوخة », « الضمان الاجتماعي », « 499 … 1974 »). Note : docs/notes/rsna-histoire-reformes.md, § 4.1 et 4.3.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  - date: 2026-09-23
+    role: documentaliste
+    sources: [corpus_local, pist, visas]
+    couverture: 'éditions française et arabe des fascicules jusqu''au JORT n° 93 du 18 septembre 2026, sauf le n° 58 de 2026 (pp. 1073-1127), introuvable sur pist.tn (404) et absent du corpus local ; seconde voie : visas de l''arrêté conjoint du 5 août 2026 (JORT n° 80 du 7 août 2026, éd. fr. p. 1611, éd. ar. p. 1706), qui citent encore le décret n° 2007-2148 comme dernier modificatif. Même vérification pour la limite de calcul (art. 18 et 19). Termes cherchés et liste des fascicules lus non consignés. Trace : TODO du chapitre « Retraites » et du livre « Cotisations sociales », commit 6290f52.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire:
+  - lire le JORT n° 58 de 2026 (pp. 1073-1127)
+  - lire les numéros postérieurs au n° 93 de 2026
+  - consigner les termes et les fascicules de la lecture du 23 septembre 2026, ou la rejouer (relancer --depuis 2026-04-11)
+
+- id: r-rsna-age-relevement
+  objet: texte relevant l'âge légal de la retraite dans le secteur privé (projet de décret annoncé en 2023 et en 2024 — 62 ans, sur option et avec l'accord de l'employeur)
+  ou: [precis/fr/retraites/_secteur_prive.qmd#sec-rsna-depuis-2007]
+  requetes:
+    titres_fts: [(age OR retraite OR admission) AND (securite OR sociale OR prive OR CNSS)]
+    iort_ar: [التقاعد]
+    depuis: 2007-08-28
+  passes:
+  - date: 2026-09-23
+    role: documentaliste
+    sources: [jort_cache, presse]
+    couverture: 'jort_cache jusqu''au 10 avril 2026 : FTS (age OR retraite OR admission) AND (…) après 2007, LIKE sur les intitulés arabes (« التقاعد »), liste de tous les décrets du ministère des affaires sociales de 2023 à 2026. Presse (source secondaire) : Réalités, 5 décembre 2023 ; Webdo, 2 mai 2024 ; Business News, 11 novembre 2025 (âge légal toujours présenté comme 60 ans). Note : docs/notes/rsna-histoire-reformes.md, § 4.3 et 9.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  - date: 2026-09-23
+    role: documentaliste
+    sources: [corpus_local, pist]
+    couverture: 'fascicules FR et AR jusqu''au JORT n° 93 du 18 septembre 2026, sauf le n° 58 de 2026 ; termes cherchés non consignés. Trace : TODO du chapitre « Retraites », commit 6290f52 (« aucun modificatif de l''âge […] jusqu''au 18 septembre 2026 »).'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire:
+  - lire le JORT n° 58 de 2026 (pp. 1073-1127)
+  - lire les numéros postérieurs au n° 93 de 2026
+  - 'le même projet porterait de 50 à 55 ans l''âge minimum du départ pour raisons économiques ou techniques : source primaire non ouverte (rsna-histoire-reformes.md, § 4.3)'
+
+- id: r-rsna-textes-1990-1994
+  objet: texte publié entre le décret n° 90-1455 et le décret n° 94-1429 qui suspende, reporte ou modifie la règle de 1990 du salaire de référence (art. 18 et 19 du décret n° 74-499)
+  ou: [precis/fr/retraites/_secteur_prive.qmd#sec-rsna-reforme-1990]
+  requetes:
+    titres_fts: ['"non agricole" OR "90-1455" OR actualisation OR "74-499" OR "60-33"']
+    titres_like:
+    - '%74-499%'
+    - '%vieillesse%'
+    - '%pension%non agricole%'
+    - '%actualisation%'
+    - '%caisse nationale de securite sociale%'
+    - '%60-30%'
+    - '%rectificatif%1455%'
+    depuis: 1990-09-21
+  passes:
+  - date: 2026-09-11
+    role: documentaliste
+    sources: [jort_cache, visas]
+    couverture: 'jort_cache : LIKE « 74-499 » sans filtre d''année (rien entre le 21 septembre 1990 et le 5 juillet 1994 hormis les décrets n° 90-1455 et 94-1429) ; FTS et LIKE non accentués, 1990-1996 ; aucun rectificatif du décret n° 90-1455 (1990-1994). Titres seuls : le corps des communiqués de la CNSS et de la CAVIS de 1990-1991 n''a pas été lu. Seconde voie : le visa du décret n° 94-1429 s''arrête au décret n° 90-1455. Note : docs/notes/retraites-dossier.md, § 12.5.'
+    couvert_jusqu_au: 1996-12-31
+    resultat: aucun
+  a_faire: [lire le corps des communiqués et avis de la CNSS et de la CAVIS de 1990-1991]
+
+- id: r-rsna-bareme-1990
+  objet: arrêté fixant le barème d'actualisation des salaires en application de l'article 18 du décret n° 74-499 dans sa rédaction de 1990 (décret n° 90-1455)
+  ou: [precis/fr/retraites/_secteur_prive.qmd#sec-rsna-bareme]
+  requetes:
+    titres_fts: [actualisation]
+    titres_like: ['%actualisation%', '%bareme%salaire%']
+    depuis: 1990-09-21
+  passes:
+  - date: 2026-09-10
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache : LIKE non accentués et FTS sur « actualisation », « bareme » combiné à « salaire », 1988-2010, sans résultat exploitable. Ces requêtes n''ont pas non plus remonté les arrêtés de barème de 1994 et suivants, qui existent (docs/notes/retraites-revalorisation.md, § 10, point 2). Note : docs/notes/retraites-dossier.md, § 2.1 et 8.'
+    couvert_jusqu_au: 2010-12-31
+    resultat: aucun
+  - date: 2026-09-11
+    role: documentaliste
+    sources: [jort_cache, visas]
+    couverture: 'jort_cache : FTS « actualisation », 1990-1994 ; premier arrêté identifié, celui du 17 novembre 1994, dont le visa cite le décret n° 94-1429 et non le décret n° 90-1455. Note : docs/notes/retraites-dossier.md, § 12.5.'
+    couvert_jusqu_au: 1994-12-31
+    resultat: aucun
+
+- id: r-rsna-bareme-annees-manquantes
+  objet: arrêtés du ministre des affaires sociales fixant le barème d'actualisation des salaires pour 2016, 2017 et 2019 (et 2025)
+  ou: [precis/fr/retraites/_secteur_prive.qmd#sec-rsna-bareme]
+  requetes:
+    titres_fts: [(revalorisation OR majoration OR augmentation OR actualisation) AND (pension OR retraite)]
+    depuis: 2016-01-01
+  passes:
+  - date: 2026-09-11
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache, 1956-2026, FTS ci-dessus et LIKE non accentués sur les titres français et arabes : une série annuelle d''arrêtés « relatif à la fixation du barème d''actualisation des salaires », du 17 novembre 1994 au 16 juillet 2024, une trentaine (métadonnées). Note : docs/notes/retraites-revalorisation.md, § 1.12 et § 10, point 2.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  - date: 2026-09-23
+    role: documentaliste
+    sources: [jort_cache, pist]
+    couverture: '28 arrêtés lus sur pist.tn, du 17 novembre 1994 au 16 juillet 2024 ; aucun pour 2016, 2017 et 2019, ni pour 2025. Note : docs/notes/series-pensions-salaires-bilan.md, § 1.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  a_faire:
+  - consigner les requêtes par lesquelles la série des 28 arrêtés a été constituée (series-pensions-salaires-bilan.md ne les donne pas)
+  - lire les fascicules postérieurs au 10 avril 2026 pour l'arrêté de 2025 ou de 2026
+
+- id: r-rsna-arretes-art15
+  objet: arrêtés d'application de l'article 15 du décret n° 74-499 (âge de 55 ans pour certaines catégories) pris entre l'arrêté du 4 juillet 1975 et celui du 11 septembre 2015
+  ou: [precis/fr/retraites/_secteur_prive.qmd#sec-rsna-ages-derogatoires]
+  requetes:
+    titres_like: ['%penibles%', '%insalubres%', '%admission a la retraite%']
+    depuis: 1975-07-04
+  passes:
+  - date: 2026-09-23
+    role: documentaliste
+    sources: [jort_cache, visas]
+    couverture: 'jort_cache jusqu''au 10 avril 2026, requêtes « penibles », « insalubres », « admission a la retraite » : aucun arrêté entre 1975 et 2015. Seconde voie : l''arrêté du 11 septembre 2015 ne vise que celui de 1975 parmi les arrêtés antérieurs, ce qui plaide pour l''absence d''arrêté intermédiaire sans la prouver. Note : docs/notes/rsna-histoire-reformes.md, § 5 et 9.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+
+- id: r-loi81-6-modificatifs
+  objet: texte modifiant le cœur des régimes de la loi n° 81-6 — salariés agricoles (titres I et II) et régime agricole amélioré (titre III) — âge, stage, taux, plafond, salaire de référence, revalorisation, ou instituant un départ anticipé ou une pension minimale
+  ou:
+  - precis/fr/retraites/_secteur_prive.qmd#sec-rsa-loi-1981
+  - precis/fr/retraites/_secteur_prive.qmd#sec-rsa-evolution
+  - precis/fr/retraites/_secteur_prive.qmd#sec-rsaa
+  requetes:
+    titres_fts:
+    - '"81-6"'
+    - (agricole OR agricoles) AND (pension OR vieillesse OR retraite OR securite OR sociale OR cotisations)
+    iort_ar: [الضمان الاجتماعي, جرايات]
+    plein_texte: [6 لسنة 1981]
+    depuis: 1981-02-13
+  passes:
+  - date: 2026-09-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist, visas]
+    couverture: 'jort_cache (FTS sur titre et objet, LIKE sans accents, LIKE sur les intitulés arabes après 2008) jusqu''au 10 avril 2026 ; texte des fascicules FR et AR du corpus local de 2024 au n° 56 de 2026, 2025 en partie seulement ; n° 57 à 93 de 2026 téléchargés depuis pist.tn, sauf le n° 58, non consulté. Seconde voie : visas des arrêtés conjoints du 10 juillet 2020 et du 5 août 2026 (éd. ar.) — loi n° 81-6 modifiée en dernier lieu par la loi n° 2007-43. Modificatifs trouvés (1981-2007) : rectificatif, lois n° 89-73, 95-102, 96-66, 97-61 et 2007-43, aucun sur le cœur du régime. Note : docs/notes/cnss-autres-regimes.md, § 3.4, 4 et 12.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire:
+  - "les requêtes par intitulé ne remontent pas la loi n° 2007-43, dont l'intitulé ne cite ni la loi n° 81-6 ni le secteur agricole (relance du 24 septembre 2026) : elle a été trouvée par les visas ; ajouter une requête qui la couvre"
+  - lire le JORT n° 58 de 2026 (pist.tn)
+  - 'fascicules absents du corpus local : voir la fiche r-dl2024-4-art33 (2025 couvert en partie seulement)'
+
+- id: r-complementaire-modificatifs
+  objet: texte modifiant le règlement du régime complémentaire (arrêté du 18 novembre 1978) autre que l'arrêté du 27 janvier 1997, notamment sur l'acquisition des points, le salaire de référence ou la valeur du point
+  ou: [precis/fr/retraites/_secteur_prive.qmd#sec-complementaire-evolution]
+  requetes:
+    titres_like: ['%18 novembre 1978%', '%regime complementaire%']
+    depuis: 1978-11-24
+  passes:
+  - date: 2026-09-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache jusqu''au 10 avril 2026 : un seul modificatif, l''arrêté du 27 janvier 1997. Les révisions de la valeur du point relèvent de décisions du directeur général de la CAVIS puis de la CNSS (règlement, art. 11 et 18), non publiées au Journal officiel. Note : docs/notes/cnss-autres-regimes.md, § 5 et 12.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+
+- id: r-rtns-arretes-revalorisation
+  objet: arrêté de revalorisation propre aux pensions du régime des travailleurs non salariés (décret n° 89-1611 ; art. 30 du décret n° 95-1166) autre que l'arrêté du 29 juillet 1998
+  ou: [precis/fr/retraites/_secteur_prive.qmd#sec-rtns-autres-elements]
+  requetes:
+    titres_fts: [(revalorisation OR majoration OR augmentation OR actualisation) AND (pension OR retraite)]
+    titres_like: ['%revaloris%pension%', '%majoration%pension%', '%augmentation%pension%', '%relevement%pension%']
+    iort_ar: [الجرايات]
+    depuis: 1989-10-20
+  passes:
+  - date: 2026-09-11
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache, 1956-2026, LIKE non accentués doublés de FTS, titres français et arabes (« الجرايات » combiné à ترفيع, تعديل, زيادة, منحة, تحيين) : pour ce régime, le seul arrêté du 29 juillet 1998. Note : docs/notes/retraites-revalorisation.md, § 1.12.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  - date: 2026-09-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'revalorisations propres effectivement publiées : l''arrêté du 29 juillet 1998, seul trouvé. Note : docs/notes/cnss-autres-regimes.md, § 6.4.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+
+- id: r-dec95-1166-modificatifs
+  objet: texte modifiant le décret n° 95-1166 (travailleurs non salariés) postérieur au décret n° 2008-172
+  ou: [precis/fr/retraites/_secteur_prive.qmd#sec-rtns-autres-elements]
+  requetes:
+    titres_fts: ['"95-1166"']
+    iort_ar: [1166 لسنة 1995]
+    depuis: 2008-01-25
+  passes:
+  - date: 2026-09-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist, visas]
+    couverture: 'jort_cache (FTS et LIKE, intitulés arabes « 1166 لسنة 1995 », « غير الأجراء ») jusqu''au 10 avril 2026 ; texte des fascicules FR et AR du corpus local de 2024 au n° 56 de 2026, 2025 en partie seulement ; n° 57 à 93 de 2026 depuis pist.tn, sauf le n° 58. Seconde voie : visas des arrêtés conjoints du 10 juillet 2020, du 29 août 2025 et du 5 août 2026, qui citent le décret n° 2008-172 comme dernier modificatif. Note : docs/notes/cnss-autres-regimes.md, § 12.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire:
+  - lire le JORT n° 58 de 2026 (pist.tn)
+  - 'fascicules absents du corpus local : voir la fiche r-dl2024-4-art33'
+
+- id: r-rtte-decret-art23
+  objet: décret de révision des pensions du régime des Tunisiens à l'étranger pris en application de l'article 23 du décret n° 89-107
+  ou: [precis/fr/retraites/_secteur_prive.qmd#sec-rtte]
+  requetes:
+    titres_fts: ['"89-107"']
+    titres_like: ['%travailleurs tunisiens a l%etranger%']
+    depuis: 1989-01-17
+  passes:
+  - date: 2026-09-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist, visas]
+    couverture: 'jort_cache jusqu''au 10 avril 2026 (seul modificatif : décret n° 91-604) ; texte des fascicules FR et AR du corpus local de 2024 au n° 56 de 2026, 2025 en partie seulement ; n° 57 à 93 de 2026 depuis pist.tn, sauf le n° 58. Seconde voie : visas de l''arrêté conjoint du 10 juillet 2020 (« tel que modifié et complété par le décret n° 91-604 »). Note : docs/notes/cnss-autres-regimes.md, § 7 et 12.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire:
+  - lire le JORT n° 58 de 2026 (pist.tn)
+  - 'fascicules absents du corpus local : voir la fiche r-dl2024-4-art33'
+
+- id: r-raci-minimum-200
+  objet: texte relevant le montant minimal de 200 dinars par mois des pensions du régime des artistes, créateurs et intellectuels (loi n° 2002-104, art. 13 et 15 ; décret n° 2003-894, art. 17)
+  ou: [precis/fr/retraites/_secteur_prive.qmd#sec-raci]
+  requetes:
+    titres_fts: ['"2002-104" OR "2003-894"']
+    iort_ar: [الفنانين]
+    depuis: 2003-04-29
+  passes:
+  - date: 2026-09-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist, visas]
+    couverture: 'jort_cache jusqu''au 10 avril 2026 (seul modificatif du régime : loi n° 2007-43) ; rien dans les fascicules 2024-2026 du corpus local (2025 en partie seulement) ni dans les n° 57 à 93 de 2026, sauf le n° 58. Seconde voie par les visas incomplète : la loi n° 2002-104 n''est pas visée par les arrêtés conjoints de 2020 et de 2026. Note : docs/notes/cnss-autres-regimes.md, § 8 et 12.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire:
+  - lire le JORT n° 58 de 2026 (pist.tn)
+  - trouver un texte récent qui vise la loi n° 2002-104 (seconde voie)
+
+- id: r-cnrps-partie-active-avant-1967
+  objet: décret classant des emplois dans la partie active (loi n° 59-18, art. 10) antérieur au décret n° 67-282 ; pour les douanes, antérieur au décret n° 81-1600
+  ou: [precis/fr/retraites/_secteur_public.qmd#sec-cnrps-loi-1959]
+  requetes:
+    titres_fts:
+    - '"partie active"'
+    - (classant OR classement) AND emploi
+    - limite* AND age*
+    - actifs
+    - actif
+    - '"categorie active"'
+    - '"cadre actif"'
+    iort_ar: [قسم التجول, النشيط, الأسلاك النشيطة]
+    depuis: 1959-02-03
+  passes:
+  - date: 2026-09-24
+    role: documentaliste
+    sources: [jort_cache, iort, visas, corpus_local]
+    couverture: 'quatre voies. jort_cache : FTS « "partie active" » ; « classant OR classement » × emploi et « limite* AND age* », 1956-1990 ; « actifs », « actif », « "categorie active" », « "cadre actif" ». Miroir iort : intitulés arabes. Visas des décrets n° 70-173, 73-471 et 81-1600. Statuts particuliers antérieurs (décrets n° 57-194, 65-183, 72-230, 75-250 ; loi n° 82-70) lus par OCR seulement. La loi n° 59-18 ne maintient aucun classement antérieur (art. 52 à 55). Note : docs/notes/cnrps-partie-active.md, § 5.'
+    couvert_jusqu_au: 1990-12-31
+    resultat: aucun
+  a_faire:
+  - relire à l'image les statuts particuliers lus par OCR (résultat négatif d'OCR, non probant)
+  - tracer la piste du « décret du 10 mars 1937 modifié » (cnrps-avant-1985.md), absente de jort_cache
+
+- id: r-cnrps-revenu-unique
+  objet: texte publié au Journal officiel fixant les taux de l'indemnité de revenu unique (majoration pour salaire unique) des agents publics, auxquels renvoie la loi n° 81-70 pour les retraités
+  ou: [precis/fr/retraites/_secteur_public.qmd#sec-cnrps-accessoires]
+  requetes:
+    titres_like: ['%revenu unique%', '%salaire unique%']
+  passes:
+  - date: 2026-09-10
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache, 1956-2026, sans filtre d''année : un seul résultat, le décret n° 74-463 (personnels militaires). Les deux décrets que désigne le manuel de liquidation de la CNRPS (2 février et 8 juin 1944) sont antérieurs à la couverture de jort_cache. Note : docs/notes/retraites-dossier.md, § 8, point 1.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  a_faire:
+  - lire les décrets du 2 février 1944 et du 8 juin 1944 (Journal officiel tunisien de 1944, hors jort_cache)
+
+- id: r-cnrps-revalorisation-avant-1981
+  objet: texte revalorisant les pensions servies par la caisse (loi n° 59-18) antérieur au décret n° 81-939
+  ou: [precis/fr/retraites/_secteur_public.qmd#sec-cnrps-perequation]
+  requetes:
+    titres_like:
+    - '%revaloris%'
+    - '%majoration des pensions%'
+    - '%relevement des pensions%'
+    - '%augmentation des pensions%'
+    - '%perequation%'
+    - '%pensions de retraite%'
+    - '%pensions civiles%'
+    - '%CNRPS%'
+    - '%caisse nationale de retraite%'
+    depuis: 1959-02-03
+  passes:
+  - date: 2026-09-11
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache, 1956-1985, hors pensions des résistants ; relevé des lois modifiant la loi n° 59-18 (64-45, 68-2, décret-loi 70-1, 73-71, 74-9, 76-61, 77-36, 80-24, LF 1975, LF 1980, LF complémentaire 1981) : aucun texte de revalorisation avant 1981 (métadonnées). Note : docs/notes/retraites-revalorisation.md, § 5.2.'
+    couvert_jusqu_au: 1985-12-31
+    resultat: aucun
+  a_faire:
+  - ouvrir la circulaire n° 77-23 du 19 mai 1977 (JORT n° 38 de 1977, pp. 1443-1444) et la loi n° 77-60, repérées par leur intitulé seulement
+
+- id: r-cnrps-perequation-avant-1985
+  objet: fondement de la péréquation automatique des pensions au titre des indemnités soumises à retenue, antérieure à la loi n° 85-12, que mentionne l'article 4 du décret n° 82-971
+  ou: [precis/fr/retraites/_secteur_public.qmd#sec-cnrps-perequation]
+  requetes:
+    titres_like: ['%perequation%']
+    plein_texte: [péréquation]
+    depuis: 1959-02-03
+  passes:
+  - date: 2026-09-11
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache, LIKE « perequation » sur les titres, 1956-1985 ; OCR des fascicules de la loi n° 59-18 (JORT n° 8 de 1959, pp. 93-100) et des lois n° 73-71, 74-9, 77-36, 80-24 et 81-70 : aucune occurrence de « péréquation » (résultat d''OCR négatif, valeur indicative). Note : docs/notes/retraites-revalorisation.md, § 5.2 et 13, point 5.'
+    couvert_jusqu_au: 1985-12-31
+    resultat: aucun
+  a_faire: [relire à l'image les fascicules océrisés]
+
+- id: r-cotis-rsna-branches
+  objet: texte répartissant entre prestations familiales (3,10 %), indemnités de maladie et de maternité (0,85 %) et décès (0,65 %) le solde de 4,60 points du taux global de 18 % du régime des salariés non agricoles
+  ou: [precis/fr/cotisations_sociales/index.qmd]
+  requetes:
+    titres_like: ['%60-30%']
+  passes:
+  - date: 2026-09-09
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache : aucun texte trouvé ; seule requête consignée par la note, le recensement des lois modifiant la loi n° 60-30 (LIKE « 60-30 » doublé d''une requête FTS). Note : docs/notes/cotisations-dossier-prive.md, § 0.2, 1.2 et 10 A.1.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  a_faire:
+  - 'requêtes propres à cette recherche non consignées : les définir et les rejouer'
+  - 'hypothèse de la note, non vérifiée : une décision du conseil d''administration de la CNSS ou un arrêté non recensé dans jort_cache'
+
+- id: r-cotis-rsa-assurances-sociales
+  objet: texte ventilant entre maladie, maternité et décès les 1,20 % d'assurances sociales du régime des salariés agricoles (décret n° 81-224, art. 1er), au-delà de la part maladie de 0,91 % (décret n° 2007-1406)
+  ou: [precis/fr/cotisations_sociales/index.qmd]
+  requetes:
+    titres_fts: ['"81-224"']
+    depuis: 1981-02-27
+  passes:
+  - date: 2026-09-09
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'aucun texte lu ne fixe la répartition entre maternité (0,24) et décès (0,05). Requêtes non consignées par la note ; celle-ci est reconstruite depuis l''objet. Note : docs/notes/cotisations-dossier-prive.md, § 10 A.4 et 13.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  a_faire: ['requêtes de la passe d''origine non consignées : rejouer celle-ci et l''élargir']
+
+- id: r-cotis-rsaa-art90
+  objet: décret répartissant entre les branches le taux global de 15 % du régime agricole amélioré (loi n° 81-6, art. 90, ajouté par la loi n° 89-73), pour l'ensemble du régime
+  ou: [precis/fr/cotisations_sociales/index.qmd]
+  requetes:
+    titres_like: ['%agricole%cotisation%', '%cotisation%agricole%']
+    depuis: 1989-09-05
+  passes:
+  - date: 2026-09-09
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache : titres « agricole » et « cotisation », 1989-1996 : aucun résultat. Note : docs/notes/cotisations-dossier-prive.md, § 3.2 et 10 A.3.'
+    couvert_jusqu_au: 1996-12-31
+    resultat: aucun
+  a_faire:
+  - 'le décret n° 90-548 répartit les 15 % pour les pêcheurs indépendants et les petits armateurs (7,5 % pensions, 4,5 % allocations familiales, 3 % assurances sociales ; docs/notes/cnss-autres-regimes.md, § 4) : chercher le texte pour les autres catégories du régime'
+  - étendre la recherche au-delà de 1996
+
+- id: r-cotis-rtte-assurances-sociales
+  objet: texte ventilant entre maladie, maternité et décès les 5,40 % d'assurances sociales du régime des Tunisiens à l'étranger (décret n° 89-107, art. 7), au-delà de la part maladie de 4,10 % (décret n° 2007-1406)
+  ou: [precis/fr/cotisations_sociales/index.qmd]
+  requetes:
+    titres_fts: ['"89-107"']
+    depuis: 1989-01-17
+  passes:
+  - date: 2026-09-09
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'aucun texte lu ne fixe la ventilation entre maternité (0,74) et décès (0,56). Requêtes non consignées par la note. Note : docs/notes/cotisations-dossier-prive.md, § 10 A.6 et 13.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  - date: 2026-09-23
+    role: documentaliste
+    sources: [jort_cache, visas]
+    couverture: 'jort_cache, FTS « "89-107" » sur titre et objet : seul modificatif du décret, le décret n° 91-604 (prorogation du délai de validation). Visas de l''arrêté conjoint du 10 juillet 2020. Recherche faite pour la revalorisation du régime (docs/notes/cnss-autres-regimes.md, § 7).'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+
+- id: r-tva-mise-en-application-post-1989
+  objet: décret de mise en application de la TVA postérieur au décret n° 89-1222 — entrée dans le champ des grossistes en alimentation générale, entrée en vigueur des articles 16 et 17 du code (régimes forfaitaires)
+  ou: [precis/fr/fiscalite/_tva.qmd]
+  requetes:
+    titres_fts: ['"valeur ajoutee" AND (calendrier OR "mise en application")', '"alimentation generale"']
+    depuis: 1989-09-12
+  passes:
+  - date: 2026-09-15
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache : FTS « "valeur ajoutee" AND (calendrier OR "mise en application") » (les deux décrets de 1988 et 1989) ; FTS « "alimentation generale" » : aucun résultat. Note : docs/notes/fiscalite-tva-documentation.md, § 2.3.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  a_faire: ['dépouiller les lois de finances 1990-1996 sur la TVA, à commencer par la loi n° 95-109']
+
+- id: r-majoration-creche-revalorisation
+  objet: texte revalorisant les montants de la majoration pour salaire unique (loi n° 80-36, art. 65 bis — 9,375, 18,750 et 23,475 dinars) ou de la contribution aux frais de crèche (décret n° 95-114 — 15 dinars)
+  ou: [precis/fr/prestations_sociales/index.qmd]
+  requetes:
+    titres_fts: ['"80-36"', '"94-88" OR "95-114"']
+    depuis: 1980-05-27
+  passes:
+  - date: 2026-09-08
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'aucun texte modificatif repéré dans jort_cache. Requêtes non consignées par la note ; celles-ci sont reconstruites depuis l''objet. Note : docs/notes/prestations-contributif.md, § 2.1 (majoration pour salaire unique) et 10 (L2).'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  a_faire:
+  - 'requêtes de la passe d''origine non consignées : rejouer celles-ci et l''élargir'
+  - vérifier les décrets pris sur le fondement de l'article 65 bis de la loi n° 60-30 et de la loi n° 94-88
+  - interroger les rapports annuels de la CNSS et le ministère des affaires sociales
+
+- id: r-lf2025-art17-decret
+  objet: décret fixant les conditions et procédures de gestion du fonds d'assurance contre la perte de postes de travail pour raisons économiques (loi n° 2024-48, loi de finances pour 2025, art. 17)
+  ou: [precis/fr/prestations_sociales/index.qmd]
+  requetes:
+    titres_like: ['%perte%', '%licenci%', '%perte d%emploi%']
+    iort_ar: [فقدان]
+    depuis: 2024-12-10
+  passes:
+  - date: 2026-09-08
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache, années 2025 et 2026, titres contenant « perte », « licenci » et la racine arabe « فقدان » : aucun résultat. Note : docs/notes/prestations-contributif.md, § 7.2 et 10 (L8).'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  - date: 2026-09-09
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache, LIKE « perte d%emploi », 2024-2025 : aucun résultat. Note : docs/notes/cotisations-dossier-prive.md, § 1.7 et 10 D.'
+    couvert_jusqu_au: 2025-12-31
+    resultat: aucun
+  a_faire: ['lire les fascicules FR et AR postérieurs au 10 avril 2026 (corpus local, pist.tn)']
+
+- id: r-amg-cartes-quotas
+  objet: arrêtés conjoints des ministres des affaires sociales et de la santé publique fixant le nombre global des cartes de soins gratuits (décret n° 98-1812, art. 2) et à tarifs réduits, et les quotas régionaux
+  ou: [precis/fr/prestations_sociales/index.qmd]
+  requetes:
+    titres_like: ['%carte%soins gratuits%', '%quota%']
+    depuis: 1998-09-29
+  passes:
+  - date: 2026-09-08
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'aucun arrêté conjoint fixant le nombre global de cartes et les quotas régionaux trouvé dans jort_cache, pour la carte de soins gratuits (AMG1). Requêtes non consignées par la note ; celles-ci sont reconstruites depuis l''objet. Note : docs/notes/prestations-assistance.md, § 2.3.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  a_faire:
+  - 'requêtes de la passe d''origine non consignées : rejouer celles-ci et l''élargir'
+  - étendre la recherche à la carte de soins à tarifs réduits (décret n° 98-409, AMG2), que la note ne couvre pas
