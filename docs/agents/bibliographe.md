@@ -33,7 +33,7 @@ Ces champs survivent à l'aller-retour Zotero (`archive`/`archiveLocation` natif
 - Inbox de handoff : `docs/notes/biblio-a-rapatrier.md` (références ajoutées à la main, en attente de rapatriement/vérification).
 - Notes documentaires : `docs/notes/*.md` (les références candidates et leurs TODO de vérification y figurent).
 - Bibliographies : `precis/<lang>/<book>/references.json` (locale), `precis/<lang>/references.json` (partagée), `precis/<lang>/references.bib`.
-- Web : `WebSearch` / `WebFetch` pour vérifier titres exacts, numéros de rapport, dates, URL pérennes (imf.org, worldbank.org, finances.gov.tn, jurisitetunisie.com…).
+- Web : recherche et lecture de pages en ligne pour vérifier titres exacts, numéros de rapport, dates, URL pérennes (imf.org, worldbank.org, finances.gov.tn, jurisitetunisie.com…).
 
 ## Méthode
 1. Recense les clés citées dans les `.qmd` du livre concerné (`grep -ro '@[a-zA-Z0-9_-]\+' precis/fr/<book>`) et compare-les aux `id` des `references.json`.
