@@ -18,6 +18,14 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
+# La CI lance les tests sans dépendances (`uv run --isolated --no-project`) :
+# sans PyYAML, `sync_agents` ne s'importe pas, et le module entier est sauté.
+# L'étape `sync_agents.py --verifier` de verifier-conventions.yml couvre la CI.
+try:
+    import yaml  # noqa: F401
+except ImportError:
+    raise unittest.SkipTest("PyYAML absent : lancer par `uv run pytest`")
+
 import sync_agents  # noqa: E402
 
 
