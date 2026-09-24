@@ -64,8 +64,10 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   tableau de textes, la colonne de contenu donne le changement concret — article, avant → après —,
   sinon la ligne n'a rien à y faire.
 
-Les rôles éditoriaux sont décrits dans `.claude/agents/` : documentaliste, rédacteur, terminologue,
-bibliographe. La chaîne va du premier au dernier, et s'arrête pour revue humaine.
+Les rôles éditoriaux — documentaliste, rédacteur, terminologue, bibliographe, relecteur-ar,
+modeliste — sont décrits dans `docs/agents/<role>.md`, en texte neutre, indépendant de l'outil et
+du fournisseur de LLM. La chaîne éditoriale va du premier au dernier, et s'arrête pour revue
+humaine. Voir « Économiser » pour le lien vers `.claude/agents/`.
 
 ## Travailler sur les dépôts de modèle (rôle « modéliste »)
 
@@ -166,9 +168,42 @@ Corriger le précis avant la publication casse ses tableaux ; corriger après la
 trop tard, casse sa CI. Le 14 septembre 2026, deux paramètres déplacés le même jour ont produit les
 deux cas.
 
+## Économiser
+
+- **Un seul appel plutôt qu'une chaîne à la main** : `scripts/verifier.sh [livre…]` enchaîne le
+  glossaire, les contrôles de contenu, les liens, les tests et le rendu FR/AR des livres touchés,
+  et n'affiche qu'un bilan compact (une ligne par étape). N'enchaîne les commandes une à une que
+  pour diagnostiquer l'étape qui a échoué — le journal détaillé dont `verifier.sh` affiche le
+  chemin sert à ça.
+- **Le modèle suit la tâche.** Une tâche mécanique et bornée — fusion d'une branche, régénération
+  d'un tableau ou d'un snapshot, rendu d'un livre, renumérotation d'un CHANGELOG — va sur un modèle
+  léger : le résultat se vérifie par un contrôle (exit code, diff, test), pas par jugement. La
+  lecture d'un texte de loi et la rédaction restent sur le modèle principal : c'est là que le
+  jugement porte.
+- **Ne relis pas un fichier que tu viens de lire ou d'écrire toi-même, sans raison de le croire
+  changé.** Une Edit ou un Write réussis suffisent à savoir que le fichier est dans l'état voulu.
+  Ceci ne vaut que pour TES propres appels dans la même tâche : un script (`build_glossary.py`,
+  un rendu) ou un autre agent peut avoir réécrit le fichier entre-temps — relis-le si l'un des deux
+  a pu s'exécuter depuis.
+- **Les rôles éditoriaux sont indépendants de l'outil.** Le texte de chaque rôle vit dans
+  `docs/agents/<role>.md` — prose simple, sans en-tête ni syntaxe propre à un outil. Ses
+  métadonnées (`name`, `description`, `tools`) et un NIVEAU abstrait (`raisonnement` : la lecture
+  d'un texte de loi et la rédaction, où le jugement porte ; `standard` : une méthode réglée sans
+  arbitrage juridique ; `mecanique` : fusions, régénérations, rendus) vivent dans
+  `docs/agents/roles.yml`, avec une table `modeles` qui traduit chaque niveau en nom de modèle,
+  par outil. `.claude/agents/<role>.md` est **engendré** depuis les deux par
+  `uv run python scripts/sync_agents.py` (`--verifier` pour la CI et `scripts/verifier.sh`) : ne
+  l'édite jamais à la main, édite `docs/agents/<role>.md` ou `roles.yml` et régénère. Pour un
+  autre outil (Codex, Cursor…) : charge `docs/agents/<role>.md` comme consigne et choisis le
+  modèle dans `modeles.<outil>` de `roles.yml` selon le niveau du rôle — `sync_agents.py` ne
+  fournit aucun générateur pour ces outils tant que leur format de sous-agent n'y est pas
+  vérifié. Le lancement de sous-agents avec un modèle choisi par niveau est, lui, propre à Claude
+  Code.
+
 ## Vérifier avant de rendre la main
 
 ```
+scripts/verifier.sh [livre…]                                # glossaire, contrôles, liens, tests, rendu
 uv run python scripts/build_glossary.py                    # verrou de synchro du glossaire
 cd precis/fr/<livre> && uv run quarto render --to html     # zéro citation [?] non résolue
 uv run python scripts/check_pas_de_modele.py               # le précis ne parle pas du modèle
@@ -179,11 +214,14 @@ uv run python scripts/check_pas_de_modele.py               # le précis ne parle
 rend les livres : un chapitre qui ne compile plus passe la revue sans que rien ne le signale. Le
 14 septembre 2026, une figure a cassé le rendu des « Prestations sociales » — `IndexError` sur une
 série vide — parce qu'elle lisait un paramètre openfisca absent du build ; le livre de la fiscalité,
-lui, rendait parfaitement. Un seul rendu aurait laissé passer l'autre.
+lui, rendait parfaitement. Un seul rendu aurait laissé passer l'autre. `scripts/verifier.sh` sans
+argument déduit les livres touchés du diff avec `origin/master` et de l'arbre de travail ; passe-les
+en argument quand tu sais mieux que lui ce qu'il faut rendre.
 
 Un module de figure lit **`figtools.series()`** — l'entrepôt ou son snapshot — et jamais directement
 les paramètres du modèle : le build du site est autonome, `openfisca-tunisia` n'y est ni installé ni
 déclaré.
 
-Et restaure les `figdata` dont seule la date de génération a changé :
-`git checkout -- precis/<langue>/<livre>/figdata`.
+`scripts/verifier.sh` restaure lui-même, après rendu, les `figdata` dont seule la date de génération
+a changé. En dehors de lui — après un `./build.sh` ou un `quarto render` isolé — restaure-les à la
+main : `git checkout -- precis/<langue>/<livre>/figdata`.

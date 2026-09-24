@@ -2402,7 +2402,7 @@ Correctif suggéré : dédupliquer `issue:` comme `citation-key:` l'est déjà.
 
 ### Documents tirés des archives du web — convention et audit (22/09/2026)
 
-Convention : `.claude/agents/bibliographe.md`, section « Documents tirés des archives du web ».
+Convention : `docs/agents/bibliographe.md`, section « Documents tirés des archives du web ».
 Champs `archive`, `archive_location`, `accessed` ; `push_biblio.py --verifier` : 403 entrées, 0 perte
 (la perte `cnss-chiffres/accessed` est corrigée du même coup).
 

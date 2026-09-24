@@ -22,11 +22,16 @@ le glossaire et la bibliographie, puis laissent le CI faire l'AR.
 
 Unité de travail = **un ticket GitHub**. Chaîne FR :
 
-- `.claude/agents/documentaliste.md` — rassemble la matière sourcée (lois, académique, presse).
-- `.claude/agents/redacteur.md` — écrit le `.qmd` FR à partir de la note, avec citations.
-- `.claude/agents/terminologue.md` — met à jour `precis/glossaire.yml`, régénère le glossaire.
+- `docs/agents/documentaliste.md` — rassemble la matière sourcée (lois, académique, presse).
+- `docs/agents/redacteur.md` — écrit le `.qmd` FR à partir de la note, avec citations.
+- `docs/agents/terminologue.md` — met à jour `precis/glossaire.yml`, régénère le glossaire.
 - `.claude/commands/rediger.md` — commande `/rediger <issue#>` qui orchestre la chaîne
   depuis la session principale, exécute les **gates**, puis s'arrête pour revue humaine.
+
+Le texte de ces rôles est neutre, indépendant de l'outil et du fournisseur de LLM ; leurs
+métadonnées Claude Code (`name`, `description`, `tools`) et leur NIVEAU abstrait (dont se
+déduit le `model`) vivent dans `docs/agents/roles.yml`, et `.claude/agents/<role>.md` en
+est engendré par `scripts/sync_agents.py` (voir AGENTS.md, § « Économiser »).
 
 **Gates de qualité** (invariants du dépôt) : `uv run python scripts/build_glossary.py`
 (verrou de synchro FR/AR, exit 0), rendu `uv run quarto render --to html` sans erreur ni
