@@ -38,16 +38,18 @@ pour 2019-2025, la pagination **arabe**.
   (`pdftotext` : « Couldn't read xref table ») ; LF 2021 et 2022 ont été lues dans les fascicules
   du corpus (`PDFs/JORT/2020/fr/Jo1282020.pdf`, `PDFs/JORT/2021/fr/Jo1192021.pdf`).
 
-**Dates d'effet** (AGENTS.md, « Dater »). Depuis la LF 1994 au moins, **chaque loi de finances
-porte un article final** « Les dispositions de la présente loi sont applicables à compter du
-1^er^ janvier N », sous réserve de dates propres à certains articles. Clause **lue jusqu'à la
-date** pour les LF 1994 (art. 77), 1995 (art. 100), 1997, 1998 (art. 90), 1999, 2000 (art. 73),
-2002 (art. 97), 2003 (art. 87), 2004 (art. 105), 2005 (art. 89), 2006 (art. 62), 2007
+**Dates d'effet** (AGENTS.md, « Dater »). Les LF 1989 à 1993 ne portent **aucune clause spéciale
+d'application** : leur dernière page, lue à l'image, passe directement du dernier article à la
+formule de publication et d'exécution. Aucune date d'effet n'en est déduite ici. À partir de la
+LF 1994, les lois examinées portent un article final « Les dispositions de la présente loi sont
+applicables à compter du 1^er^ janvier N », sous réserve de dates propres à certains articles.
+Clause **lue jusqu'à la date** pour les LF 1994 (art. 77), 1995 (art. 100), 1996 (art. 68), 1997,
+1998 (art. 90), 1999, 2000 (art. 73),
+2001 (art. 68), 2002 (art. 97), 2003 (art. 87), 2004 (art. 105), 2005 (art. 89), 2006 (art. 62), 2007
 (loi 2006-80, art. 19), 2008 (art. 64), 2009 (art. 39), 2010 (art. 56), 2013 (art. 79),
 2014 (art. 95), 2015 (art. 46), 2016 (art. 92), 2017 (art. 79), 2018 (art. 67), 2019 (art. 90),
 2020 (art. 58), 2021 (article final, § 1), 2022 (décret-loi n° 2021-21, art. 73), 2023, 2024,
 2025 et 2026 (ces quatre dernières en arabe : « تطبق أحكام هذا القانون بداية من غرة جانفي »).
-**Non relevée** pour les LF 1989 à 1993, 1996 et 2001 : voir « Non établi ».
 Une date propre à l'article prime toujours (ex. LF 1996, art. 38, 39, 42, 46).
 
 ---
@@ -76,7 +78,8 @@ Une date propre à l'article prime toujours (ex. LF 1996, art. 38, 39, 42, 46).
    revenu « libératoire de la taxe sur la valeur ajoutée » (art. 103) [image]. Reste le forfait
    des transporteurs (art. 17 II) : aucun texte identifié ne le met en application entre 1988 et
    1997 ; la LF 1998 (art. 29) le réécrit et le rend imputable sur la TVA du régime réel [image].
-   La date d'effet de la LF 1990 n'est pas établie (« Non établi », 1). La fiche
+   La LF 1990 ne porte pas de clause spéciale d'application et sa date d'effet n'est pas établie
+   ici (« Non établi », 1). La fiche
    `r-tva-mise-en-application-post-1989` avance donc, sans être résolue (§ 9.1).
 4. **Les télécommunications, exonérées en 1995, sont taxées au taux normal depuis le
    1^er^ janvier 2003** (LF 1995 art. 85 ; LF 2002 art. 66 à 70 ; décret n° 2002-3356).
@@ -132,7 +135,7 @@ pétroliers et l'électricité domestique au-delà de 300 kWh par mois.
 | 1^er^ janv. 1995 | idem, p. 2051 | 100 | « Les dispositions de la présente loi sont applicables à compter du 1^er^ janvier 1995 » | [texte] |
 | **1^er^ avril 1996** | Loi n° 95-109 du 25/12/1995 (LF 1996), JORT n° 104 des 29-31/12/1995, p. 2371-2372 | 37 § 6, 38 | architectes, ingénieurs-conseils, avocats, notaires, huissiers-notaires, interprètes, conseils juridiques et fiscaux, comptables, experts : 6 % → **10 %** ; contrats enregistrés au plus tard le 31/03/1996 maintenus à 6 % jusqu'au 31/12/1996 ; tableau B § I réduit aux professions de santé et aux géomètres de l'immatriculation agricole | [texte] |
 | **1^er^ sept. 1996** | idem, p. 2371-2372 | 37 § 1-5, 39 | hôtellerie, excursions et hébergement des touristes non résidents par les agences, plongée et promenades en mer, restauration : 6 % → **10 %** ; suppression des n° 1, 8, 10, 12 et 13 du § III du tableau B | [texte] |
-| non relevée | idem, p. 2371 | 36 | équipements du tableau « P » soumis à 10 %, « sans préjudice du code d'incitations aux investissements » | [texte] ; clause finale de la LF 1996 non lue |
+| 1^er^ janv. 1996 | idem, p. 2371 | 36 | équipements du tableau « P » soumis à 10 %, « sans préjudice du code d'incitations aux investissements » | [texte] ; clause générale : art. 68, p. 2375 [image] |
 | date fixée par décret | idem, p. 2372 | 40 | électricité et gaz (B II-2), huiles de pétrole (B III-4) retirés du tableau B (6 %) — voir l'ancienne note, § 4 | [texte] |
 | 1^er^ janv. 1997 | Loi n° 96-113 du 30/12/1996 (LF 1997), JORT n° 105 du 31/12/1996, p. 2580 | 19 | équipements de l'article 18 de la même loi soumis à 10 %, sauf équipements agricoles et de pêche | [texte] |
 | 1^er^ janv. 1998 | Loi n° 97-88 du 29/12/1997 (LF 1998), JORT n° 104 des 30-31/12/1997, p. 2437 | 25 | taux normal 17 % → **18 %** | [image] |
@@ -140,8 +143,8 @@ pétroliers et l'électricité domestique au-delà de 300 kWh par mois.
 | 1^er^ janv. 1998 | idem, p. 2437 | 27 | produits du tableau « L » retirés du tableau C (29 %) | [image] ; liste non lue |
 | 1^er^ janv. 1998 | idem, p. 2437 | 28 | équipements fabriqués localement (code d'incitations, art. 9, 50 § 2 et 56) acquis après l'entrée en activité : 10 % | [image] |
 | 1^er^ janv. 1998 | idem | 90 | clause finale : « applicables à compter du 1^er^ janvier 1998 » (l'ancienne note écrivait « droit commun de la loi de finances ») | [texte] |
-| 1^er^ janv. 2000 | Loi n° 99-101 du 31/12/1999 (LF 2000), JORT n° 105 du 31/12/1999, p. 2741 | 19 | services de formation : 18 % → 10 % | [texte] ; page [notice] |
-| non relevée | Loi n° 2000-98 du 25/12/2000 (LF 2001), JORT n° 104 du 29/12/2000, p. 3178 | 40 | services Internet : 18 % → 10 % | [texte] ; page [notice] |
+| 1^er^ janv. 2000 | Loi n° 99-101 du 31/12/1999 (LF 2000), JORT n° 105 du 31/12/1999, p. 2741 | 19 | services de formation : 18 % → 10 % | [texte] |
+| 1^er^ janv. 2001 | Loi n° 2000-98 du 25/12/2000 (LF 2001), JORT n° 104 du 29/12/2000, p. 3178 | 40 | services Internet : 18 % → 10 % | [texte] |
 | 1^er^ janv. 2002 | Loi n° 2001-123 du 28/12/2001 (LF 2002), JORT n° 104 du 28/12/2001, p. 4255 | 41 | collecte des déchets de plastique : 18 % → 10 % | [notice] |
 | 1^er^ janv. 2002 | idem, p. 4260 | 82-84 | taux de 10 % incorporé à l'art. 7 (n° 3), tableau B bis ; abrogation des textes épars | [image] (ancienne note) |
 | 1^er^ janv. 2004 | Loi n° 2003-80 du 29/12/2003 (LF 2004), JORT n° 104 du 30/12/2003, p. 3726 | 36 | hébergement hôtelier vendu par les agences aux résidents : 10 % | [notice] |
@@ -207,11 +210,11 @@ pétroliers et l'électricité domestique au-delà de 300 kWh par mois.
 | Date d'effet | Texte | Art. | Contenu | Lecture |
 |---|---|---|---|---|
 | différé | décret n° 88-1109 | 1 | art. 16 et 17 I et II-1 du code non mis en application ; aucun décret ultérieur identifié | [image] (ancienne note) |
-| non relevée (LF pour 1990) | Loi n° 89-115 du 30/12/1989 (LF 1990), JORT n° 88 des 29-31/12/1989, p. 2146 | 24 | art. 16 I-II nouveaux : **taxe forfaitaire annuelle** pour les entreprises individuelles à établissement unique, non importatrices ni exportatrices, dont le chiffre d'affaires ne dépasse pas 15 000 D (services), 20 000 D (consommation sur place), 30 000 D (autres) ; barème en dinars par tranche (taux de 17 % et 29 %) | [image] |
+| date d'effet non établie (aucune clause spéciale dans la LF 1990) | Loi n° 89-115 du 30/12/1989 (LF 1990), JORT n° 88 des 29-31/12/1989, p. 2146 | 24 | art. 16 I-II nouveaux : **taxe forfaitaire annuelle** pour les entreprises individuelles à établissement unique, non importatrices ni exportatrices, dont le chiffre d'affaires ne dépasse pas 15 000 D (services), 20 000 D (consommation sur place), 30 000 D (autres) ; barème en dinars par tranche (taux de 17 % et 29 %) | [image] |
 | idem | idem, p. 2147 | 25 | art. 16 IV-VI : déclaration en mars, paiement en 1 à 4 échéances, option pour le réel | [image] |
 | idem | idem, p. 2147-2148 | 26 | art. 17 I nouveau : **droit forfaitaire simplifié** des petits professionnels et artisans, par nombre d'employés et zone ; barèmes des cafetiers de 1^re^ catégorie et des coiffeurs pour hommes | [image] |
 | idem | Loi n° 90-111 (LF 1991), JORT n° 86 des 28-31/12/1990, p. 2052 | 34 | art. 6 I-9 : TVA sur la marge pour les ventes de produits achetés aux forfaitaires | [OCR] |
-| non relevée (LF pour 1993) | Loi n° 92-122 du 29/12/1992 (LF 1993), JORT n° 88 du 31/12/1992, p. 1676-1677 | 100-103 | « unification et simplification du régime forfaitaire » dans le code de l'IRPP ; art. 103 : « L'impôt forfaitaire est libératoire de la taxe sur la valeur ajoutée » | [image] |
+| date d'effet non établie (aucune clause spéciale dans la LF 1993) | Loi n° 92-122 du 29/12/1992 (LF 1993), JORT n° 88 du 31/12/1992, p. 1676-1677 | 100-103 | « unification et simplification du régime forfaitaire » dans le code de l'IRPP ; art. 103 : « L'impôt forfaitaire est libératoire de la taxe sur la valeur ajoutée » | [image] |
 | idem | idem, p. 1677 | 104 | option (art. 2 I-3) ouverte aux forfaitaires de l'IRPP ; exclue pour les opérations exonérées sauf à l'exportation | [image] |
 | idem | idem, p. 1677 | 105 | **abrogation de l'art. 16 et de l'art. 17 § I** | [image] |
 | 1^er^ janv. 1998 | LF 1998, p. 2437 | 29 | art. 17 II : taxe forfaitaire mensuelle des transports terrestres (1 D/tonne, 1 D/place), sauf louage et taxi ; « assujettissement de toutes les catégories de transport terrestre au régime normal » | [image] |
@@ -244,7 +247,7 @@ connu ici** (voir les notices de `jort_cache`, requête de la § 7).
 
 | Date d'effet | Texte | Art. | Avant → après | Lecture |
 |---|---|---|---|---|
-| non relevée (LF 2001) | LF 2001, p. 3181 | 63 | tableau A, n° 50 : vente des immeubles bâtis à usage exclusif d'habitation par les promoteurs immobiliers, et dépendances : **exonérée** | [texte] ; page [notice] |
+| 1^er^ janv. 2001 | LF 2001, p. 3181 | 63 | tableau A, n° 50 : vente des immeubles bâtis à usage exclusif d'habitation par les promoteurs immobiliers, et dépendances : **exonérée** | [texte] |
 | 1^er^ janv. 2016 | LF 2016, annexe 1 | 31 § 3 | l'exonération devient le n° 53 du § I du tableau A nouveau | [texte] |
 | **1^er^ janv. 2018** | LF 2018, p. 4281 ; AR p. 4279 | 44 | n° 53 réduit aux logements sociaux financés par le FOPROLOS ; les autres ventes passent au taux de **13 %** (4^e^ tiret ajouté à l'art. 7 n° 3) ; 19 % prévu au **1^er^ janv. 2020** (§ 3) ; contrats et promesses conclus avant le 1^er^ janv. 2018 restent exonérés (§ 4) | [texte] |
 | — | LF 2019, p. 4553 ; AR p. 5466 | 79 | 19 % reporté au **1^er^ janv. 2021** ; déduction de la TVA sur stocks au 31/12/2017 (inventaire avant le 31/03/2019) | [texte] (PDF local) |
@@ -291,60 +294,18 @@ d'autres articles, et n'est pas à modifier pour autant) :
 - La note de l'entrée proposée `loi-2016-78-lf-2017` de l'ancienne note (« passage des
   professions libérales de 6 % à 12 % ») est fausse : à taux inchangé, voir résultat 5.
 
-**À créer** :
+**Créées dans `precis/{fr,ar}/fiscalite/references.json` le 24 septembre 2026** :
 
-```json
-[
-  {
-    "id": "lf-2000",
-    "type": "legislation",
-    "title": "Loi n° 99-101 du 31 décembre 1999, portant loi de finances pour l'année 2000",
-    "container-title": "Journal Officiel de la République Tunisienne",
-    "issue": "105",
-    "page": "2741",
-    "issued": {"date-parts": [[1999, 12, 31]]},
-    "URL": "https://www.pist.tn/jort/1999/1999F/Jo10599.pdf",
-    "note": "JORT n° 105 du 31 décembre 1999. Art. 19 : services de formation au taux de 10 %. Art. 73 : application au 1er janvier 2000. Page de l'art. 19 issue de la notice ; URL non testée."
-  },
-  {
-    "id": "lf-2001",
-    "type": "legislation",
-    "title": "Loi n° 2000-98 du 25 décembre 2000, portant loi de finances pour l'année 2001",
-    "container-title": "Journal Officiel de la République Tunisienne",
-    "issue": "104",
-    "page": "3178-3181",
-    "issued": {"date-parts": [[2000, 12, 25]]},
-    "URL": "https://www.pist.tn/jort/2000/2000F/Jo1042000.pdf",
-    "note": "JORT n° 104 du 29 décembre 2000. Art. 40 (p. 3178) : services Internet à 10 %. Art. 63 (p. 3181) : exonération de la vente de logements par les promoteurs (tableau A, n° 50). Pages issues des notices ; URL non testée ; édition arabe 2000 en Ja<n><aa>.pdf (outillage-sources § 3)."
-  },
-  {
-    "id": "decret-2002-3356-tva-telecom",
-    "type": "legislation",
-    "title": "Décret n° 2002-3356 du 30 décembre 2002, fixant la date d'application des dispositions des articles 66 à 69 de la loi n° 2001-123 du 28 décembre 2001 portant loi de finances pour l'année 2002",
-    "container-title": "Journal Officiel de la République Tunisienne",
-    "issue": "106",
-    "page": "3194",
-    "issued": {"date-parts": [[2002, 12, 30]]},
-    "URL": "https://www.pist.tn/jort/2002/2002F/Jo1062002.pdf",
-    "note": "JORT n° 106 du 31 décembre 2002. Art. 1er : articles 66 à 69 de la LF 2002 (taxation des télécommunications) en vigueur au 1er janvier 2003. URL non testée."
-  },
-  {
-    "id": "lfc-2016",
-    "type": "legislation",
-    "title": "Loi n° 2017-1 du 3 janvier 2017, portant loi de finances complémentaire pour l'année 2016",
-    "container-title": "Journal Officiel de la République Tunisienne",
-    "issue": "2",
-    "page": "60",
-    "issued": {"date-parts": [[2017, 1, 3]]},
-    "URL": "https://www.pist.tn/jort/2017/2017F/Jo0022017.pdf",
-    "note": "JORT n° 2 du 6 janvier 2017. Art. 3 : l'art. 31 § 4 de la LF 2016 (médicaments au détail) s'applique au 1er janvier 2017. URL non testée."
-  }
-]
-```
+| Clé | JORT français | Pages vérifiées | Contrôle |
+|---|---|---|---|
+| `lf-2000` | n° 105 du 31/12/1999, tome 142 | loi p. 2739 ; art. 19 p. 2741 ; art. 73 p. 2751 | couche texte décodée ; URL FR et AR testées |
+| `lf-2001` | n° 104 du 29/12/2000, tome 143 | loi p. 3171 ; art. 40 p. 3178 ; art. 63 p. 3181 ; art. 68 p. 3182 | couche texte décodée ; URL FR et AR testées |
+| `decret-2002-3356-tva-telecom` | n° 106 du 31/12/2002, tome 145 | p. 3194 | couche texte décodée ; URL FR et AR testées |
+| `lfc-2016` | n° 2 du 06/01/2017 | art. 3 p. 60 | couche texte saine |
 
-Les URL ci-dessus suivent la convention de nommage mais **n'ont pas été testées** par `curl -sk`
-(à faire par le bibliographe, en ouvrant le fichier : `outillage-sources.md` § 3). Les fascicules
-correspondants sont présents dans le corpus local.
+Les trois paires d'URL de 1999, 2000 et 2002 sont celles des champs `pdf_fr` et `pdf_ar` de
+`jort_cache.db` ; elles répondent en PDF. L'URL arabe de 2000 porte bien le nom exceptionnel
+`Ja10400.pdf` (et non `Ja1042000.pdf`).
 
 ---
 
@@ -378,79 +339,81 @@ Le terme arabe de la dernière colonne se vérifie sur le code consolidé arabe 
 
 ## 8. Non établi
 
-1. **Date d'effet des LF 1989 à 1993** : clause finale non lue (les OCR ne couvrent que les pages
-   TVA). Si elles sont muettes, la règle d'avant 1993 (« un jour franc après la publication »)
-   donne par exemple, pour la LF 1990 publiée au JORT des 29-31 décembre 1989, le
-   2 janvier 1990 — calcul à confirmer sur la date réelle de mise en distribution.
-2. **Date d'effet des LF 1996 et 2001** : clause finale non trouvée dans les fichiers locaux
-   (le fascicule 1995/104 local ne contient qu'une partie de la loi).
-3. **Grossistes en alimentation générale** : aucun texte ne les fait entrer dans le champ.
+1. **Date d'effet des LF 1989 à 1993** : les dernières pages ont été lues à l'image. Les cinq lois
+   sont muettes sur une date spéciale d'application et se terminent seulement par « La présente
+   loi sera publiée au Journal officiel de la République tunisienne et exécutée comme loi de
+   l'État ». Établir leur date d'effet exige donc la base factuelle nécessaire à l'application de
+   la règle générale alors en vigueur ; aucune date n'est calculée ici.
+2. **Grossistes en alimentation générale** : aucun texte ne les fait entrer dans le champ.
    Le code consolidé actuel ne mentionne plus leur exclusion (art. 1^er^ II-3, qui n'exclut que
    les médicaments depuis 2021) : l'exclusion ne vivait que dans le décret n° 89-1222.
-4. **Décret n° 97-1339 du 14 juillet 1997** (date d'effet de l'art. 40 de la LF 1996) : toujours
+3. **Décret n° 97-1339 du 14 juillet 1997** (date d'effet de l'art. 40 de la LF 1996) : toujours
    hors de `jort_cache` (ancienne note, § 5).
-5. **Contenu des listes** : tableaux « L » (LF 1998), « M » (LF 1994), « M bis » (LF 1995),
+4. **Contenu des listes** : tableaux « L » (LF 1998), « M » (LF 1994), « M bis » (LF 1995),
    « P » (LF 1996), annexe 5 (LF 2016) non lus ; numéros abrogés du tableau A par la LF 2017
    (art. 16) non rapprochés de leur contenu.
-6. **Retouches du taux de 13 % sans rapport avec les professions libérales** : l'art. 44 de la
+5. **Retouches du taux de 13 % sans rapport avec les professions libérales** : l'art. 44 de la
    LF 2023 supprime le « 3^e^ tiret » ; le rapprochement tiret par tiret avec l'art. 7 de 2022
    a été fait sur la version DGELF 2023 (« supprimé par l'article 44 de la LF 2023 »), non sur la
    rédaction arabe en vigueur au 31/12/2022.
-7. **LF 1989 (loi 88-145), art. 23 à 26** : OCR en colonnes entrelacées, contenu à relire à
+6. **LF 1989 (loi 88-145), art. 23 à 26** : OCR en colonnes entrelacées, contenu à relire à
    l'image avant toute publication.
-8. **Pages arabes avant 2014** : non mesurées.
-9. **Forfait des transporteurs (art. 17 II-1), 1988-1997** : différé par le décret n° 88-1109,
+7. **Pages arabes avant 2014** : non mesurées.
+8. **Forfait des transporteurs (art. 17 II-1), 1988-1997** : différé par le décret n° 88-1109,
    il n'a de mise en application identifiée qu'avec sa réécriture par la LF 1998 (art. 29).
    Qu'il ait été perçu entre-temps n'est ni établi ni exclu.
-10. **Décrets de l'article 8, 1988-1997** : 144 intitulés non triés ; certains réduisent le taux
+9. **Décrets de l'article 8, 1988-1997** : 144 intitulés non triés ; certains réduisent le taux
     (ex. décret n° 89-224, voitures montées localement, taux non lu).
 
 ---
 
-## 9. Recherches infructueuses
+## 9. Recherches et contrôles
 
-### 9.1 `r-tva-mise-en-application-post-1989` — passe proposée
+### 9.1 `r-tva-mise-en-application-post-1989` — fiche mise à jour
 
-`recherches.py relancer` rejoué ce jour : 0 candidat depuis le 2026-04-11 (jort_cache, dernière
-publication indexée le 2026-09-18) ; ni `iort_ar` ni `plein_texte` ne sont renseignés. La fiche
-n'a **pas** été modifiée (consigne : un seul fichier écrit). Proposition :
+La fiche a été précisée sans être scindée. Son objet exclut désormais les articles 16 et 17, I,
+dont le sort est établi : remplacement par la loi n° 89-115, art. 24 à 26, puis abrogation par la
+loi n° 92-122, art. 105. Restent recherchés l'entrée dans le champ des grossistes en alimentation
+générale et la mise en application du forfait des transporteurs de l'article 17, II-1, dans sa
+rédaction de 1988.
 
-- **Ne pas scinder.** Pour les articles 16 et 17 I, on sait désormais qu'ils ont été remplacés
-  par la loi n° 89-115, art. 24 à 26 (clé `loi-89-115-lf-1990`), puis abrogés par la loi
-  n° 92-122, art. 105 (clé `lf-1993`) ; mais la **date d'effet de la LF 1990** n'est pas établie,
-  et l'**article 17 II-1** (forfait des transporteurs) n'a de mise en application identifiée
-  qu'avec sa réécriture par la LF 1998, art. 29. Préciser l'objet en ce sens ; la partie
-  « grossistes en alimentation générale » reste entière.
-- Ajouter `plein_texte: ["alimentation générale", "17 II"]` (le second, bruité, à affiner).
-- Passe à consigner :
-  `passe r-tva-mise-en-application-post-1989 --resultat aucun --couvert-jusqu-au 2026-09-18
-  --sources jort_cache,corpus_local --couverture "relance jort_cache au 2026-09-18 (0 candidat) ;
-  lecture des LF 1990 à 1998, articles TVA seulement : OCR des pages TVA des LF 1990-1994
-  (fascicules 1989/88 p. 6-12, 1990/86 p. 5-12, 1991/90 p. 4-14, 1992/88 p. 5-18, 1993/100
-  p. 4-12), couche texte des LF 1995 à 1998 ; « alimentation générale » absent de tous ; lacunes :
-  LF 1989-1993 hors pages TVA, décrets 1989-1996 lus par l'intitulé seulement"`.
+`recherches.py` a été relancé depuis le 12 septembre 1989, puis élargi au plein texte par le terme
+« alimentation générale ». La FTS de `jort_cache` ne donne comme candidat pertinent que le décret
+n° 89-1222, point de départ de la recherche. Le plein texte donne trois homonymes sans rapport
+(JORT n° 46/2014, 25/2017 et 113/2020). La couche texte est inexploitable pour l'essentiel des
+fascicules scannés de 1989 à 1993 : la conclusion repose donc aussi sur la lecture ciblée des lois
+de finances, non sur le silence du balayage. Une passe `aucun`, couverte jusqu'au 18 septembre
+2026, est consignée dans `docs/recherches.yml`. Lacune maintenue : le corps des décrets relatifs à
+la TVA publiés de 1989 à 1996 n'a pas été dépouillé systématiquement.
 
-### 9.2 Fiche nouvelle proposée : `r-lf-1989-1993-clause-effet`
+### 9.2 LF 1989 à 1993 — absence de clause spéciale vérifiée
 
-- **objet** : clause fixant la date d'application des lois de finances pour 1989 à 1993 (lois
-  n° 88-145, 89-115, 90-111, 91-98, 92-122), à défaut de laquelle joue la règle du jour franc.
-- **ou** : `precis/fr/fiscalite/_tva.qmd` (et les autres chapitres qui datent ces LF).
-- **requêtes réellement lancées** : aucune dans `jort_cache` ; recherche de « présente loi sont
-  applicables » dans les OCR partiels (seule la LF 1994, art. 77, répond).
-- **passe** : 2026-09-24, documentaliste, sources `corpus_local`, résultat aucun,
-  couvert jusqu'au 1993-12-31, couverture « OCR des seules pages TVA ; derniers articles de ces
-  lois non océrisés ».
-- **à faire** : océriser la dernière page de chaque loi (fascicules 1988/87, 1989/88, 1990/86,
-  1991/90, 1992/88).
+La proposition de fiche `r-lf-1989-1993-clause-effet` n'est pas créée : les sources primaires ont
+été retrouvées et lues, de sorte qu'il ne subsiste pas de texte attendu à rechercher. Les cinq
+lois passent directement du dernier article à la formule de publication et d'exécution :
 
-### 9.3 Fiche nouvelle proposée : `r-lf-1996-clause-effet`
+| Loi | Dernier article | Page FR | Formule finale |
+|---|---:|---:|---|
+| n° 88-145, LF 1989 | 125 | 1805 | publication au JORT et exécution comme loi de l'État |
+| n° 89-115, LF 1990 | 73 | 2155 | idem |
+| n° 90-111, LF 1991 | 97 | 2061 | idem |
+| n° 91-98, LF 1992 | 102 | 2093 | idem |
+| n° 92-122, LF 1993 | 123 | 1679 | idem |
 
-- **objet** : article final de la loi n° 95-109 (LF 1996) et de la loi n° 2000-98 (LF 2001).
-- **passe** : 2026-09-24, `corpus_local`, résultat aucun ; le fichier
-  `PDFs/JORT/1995/fr/Jo10495.pdf` ne contient que les p. 2371-2373 de la LF 1996 environ ;
-  `Jo1042000.pdf` décodé sans trouver « 1er janvier 2001 » en clause finale.
-- **à faire** : lire l'édition arabe (`Ja10495.pdf`, `Ja1042000.pdf` → en 2000,
-  `Ja10400.pdf`) ou le fascicule complet.
+Cette lecture établit l'absence de clause spéciale ; elle n'établit pas, à elle seule, la date
+d'effet résultant de la règle générale alors applicable.
+
+### 9.3 LF 1996 — article 68 retrouvé
+
+La proposition de fiche `r-lf-1996-clause-effet` n'est pas créée : le fascicule français local
+`PDFs/JORT/1995/fr/Jo10495.pdf` est complet. À la page 2375, sous le titre « Fixation de la date
+d'application de la loi de finances pour la gestion 1996 », l'article 68 dispose : « Sans préjudice
+des dispositions spéciales prévues par les articles précédents, les dispositions de la présente
+loi sont applicables à compter du 1^er^ janvier 1996. » La page a été lue à l'image ; l'édition
+arabe n'est pas nécessaire pour combler cette lacune.
+
+La loi n° 2000-98 (LF 2001) reste hors de cette recherche : son article 68, lu page 3182 du
+fascicule français décodé `Jo1042000.pdf`, fixe l'application au 1^er^ janvier 2001.
 
 ---
 

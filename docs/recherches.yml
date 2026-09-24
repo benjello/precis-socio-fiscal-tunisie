@@ -561,10 +561,11 @@
     resultat: aucun
 
 - id: r-tva-mise-en-application-post-1989
-  objet: décret de mise en application de la TVA postérieur au décret n° 89-1222 — entrée dans le champ des grossistes en alimentation générale, entrée en vigueur des articles 16 et 17 du code (régimes forfaitaires)
+  objet: texte postérieur au décret n° 89-1222 mettant en application l'entrée dans le champ de la TVA des grossistes en alimentation générale ou le forfait des transporteurs de l'article 17, II-1, dans sa rédaction de 1988 ; les articles 16 et 17, I, ont été remplacés par la loi n° 89-115 puis abrogés par la loi n° 92-122
   ou: [precis/fr/fiscalite/_tva.qmd]
   requetes:
     titres_fts: ['"valeur ajoutee" AND (calendrier OR "mise en application")', '"alimentation generale"']
+    plein_texte: [alimentation générale]
     depuis: 1989-09-12
   passes:
   - date: 2026-09-15
@@ -573,7 +574,14 @@
     couverture: 'jort_cache : FTS « "valeur ajoutee" AND (calendrier OR "mise en application") » (les deux décrets de 1988 et 1989) ; FTS « "alimentation generale" » : aucun résultat. Note : docs/notes/fiscalite-tva-documentation.md, § 2.3.'
     couvert_jusqu_au: 2026-04-10
     resultat: aucun
-  a_faire: ['dépouiller les lois de finances 1990-1996 sur la TVA, à commencer par la loi n° 95-109']
+  - date: 2026-09-24
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Relance du 24 septembre 2026 depuis le 12 septembre 1989 : jort_cache à jour au 18 septembre 2026, FTS sur « valeur ajoutée » avec calendrier ou mise en application et sur « alimentation générale » ; seul candidat pertinent, le décret n° 89-1222, point de départ de la recherche. Balayage du plein texte du corpus local sur « alimentation générale » : trois occurrences sans rapport dans les JORT n° 46/2014, 25/2017 et 113/2020 ; résultat non probant pour les scans de 1989 à 1993, dépourvus de couche texte exploitable. Lecture des articles TVA des LF 1989 à 1998 : la loi n° 89-115 remplace les articles 16 et 17, I (art. 24 à 26), la loi n° 92-122 les abroge (art. 105), la loi n° 97-88 réécrit le forfait des transporteurs (art. 29) ; aucune de ces dispositions ne fait entrer les grossistes en alimentation générale dans le champ ni ne met en application l''article 17, II-1, dans sa rédaction de 1988. Lacunes : corps des décrets relatifs à la TVA publiés de 1989 à 1996 non dépouillé systématiquement ; balayage plein texte incomplet là où les fascicules sont absents, en arabe seulement ou sans texte exploitable.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire:
+  - dépouiller le corps des décrets relatifs à la TVA publiés de 1989 à 1996, connus ici par leur seul intitulé
 
 - id: r-majoration-creche-revalorisation
   objet: texte revalorisant les montants de la majoration pour salaire unique (loi n° 80-36, art. 65 bis — 9,375, 18,750 et 23,475 dinars) ou de la contribution aux frais de crèche (décret n° 95-114 — 15 dinars)

@@ -4330,7 +4330,7 @@ entries:
         Commerçant vendant à d'autres commerçants pour la revente. Le commerce
         de gros entre dans le champ de la taxe en 1989, le commerce de détail
         en 1996 seulement.
-      synonymes: [commerçant détaillant]
+      synonymes: []
     ar:
       terme: تاجر جملة
       definition: ""
@@ -4369,6 +4369,199 @@ entries:
     ar:
       terme: روزنامة تطبيق الأداء على القيمة المضافة
       definition: ""
+      synonymes: []
+
+  - id: taxe-forfaitaire-annuelle-tva
+    acronyme: null
+    statut: valide
+    references: [loi-89-115-lf-1990, lf-1993]
+    source_definition: {ref: loi-89-115-lf-1990, locator: "art. 24 et 25"}
+    source_traduction: {ref: loi-89-115-lf-1990, locator: "art. 24 et 25"}
+    voir_aussi: [tva, droit-forfaitaire-simplifie-tva, regime-forfaitaire]
+    fr:
+      terme: Taxe forfaitaire annuelle
+      definition: >
+        Régime historique institué par la loi de finances pour 1990 pour
+        certaines entreprises individuelles à établissement unique dont le
+        chiffre d'affaires ne dépassait pas les plafonds prévus. La taxe était
+        fixée annuellement par un barème selon l'activité et le chiffre
+        d'affaires. Elle a été abrogée par la loi de finances pour 1993.
+      synonymes: []
+    ar:
+      terme: الأداء السنوي التقديري
+      definition: >
+        نظام تاريخي أحدثه قانون المالية لسنة 1990 لبعض المؤسسات الفردية ذات
+        المحل الواحد التي لا يتجاوز رقم معاملاتها السقوف المنصوص عليها. وكان
+        الأداء يضبط سنويا حسب جدول يراعي نوع النشاط ورقم المعاملات. وألغاه
+        قانون المالية لسنة 1993.
+      synonymes: []
+
+  - id: droit-forfaitaire-simplifie-tva
+    acronyme: null
+    statut: valide
+    references: [loi-89-115-lf-1990, lf-1993]
+    source_definition: {ref: loi-89-115-lf-1990, locator: "art. 26"}
+    source_traduction: {ref: loi-89-115-lf-1990, locator: "art. 26"}
+    voir_aussi: [tva, taxe-forfaitaire-annuelle-tva, regime-forfaitaire]
+    fr:
+      terme: Droit forfaitaire simplifié
+      definition: >
+        Régime historique institué par la loi de finances pour 1990 pour
+        certains petits professionnels et artisans. Son montant dépendait du
+        nombre de salariés et de la zone d'activité, avec des barèmes propres
+        aux cafés de première catégorie et aux coiffeurs pour hommes. Il a été
+        abrogé par la loi de finances pour 1993.
+      synonymes: []
+    ar:
+      terme: الأداء التقديري المبسط
+      definition: >
+        نظام تاريخي أحدثه قانون المالية لسنة 1990 لبعض صغار المهنيين
+        والحرفيين. وكان مبلغه يحدد حسب عدد العملة ومنطقة النشاط، مع جداول خاصة
+        بمقاهي الصنف الأول وحلاقي الرجال. وألغاه قانون المالية لسنة 1993.
+      synonymes: []
+
+  - id: taxe-forfaitaire-mensuelle-transports
+    acronyme: null
+    statut: valide
+    references: [lf-1998]
+    source_definition: {ref: lf-1998, locator: "art. 29"}
+    source_traduction: {ref: lf-1998, locator: "art. 29"}
+    voir_aussi: [tva, regime-forfaitaire]
+    fr:
+      terme: Taxe forfaitaire mensuelle sur la valeur ajoutée
+      definition: >
+        Taxe mensuelle applicable aux opérations de transport terrestre, sauf
+        le transport de personnes par voiture de louage ou taxi. Elle est
+        calculée selon la charge utile ou le nombre de places offertes et
+        s'impute sur la TVA due par les assujettis relevant du régime réel.
+      synonymes: []
+    ar:
+      terme: أداء تقديري شهري على القيمة المضافة
+      definition: >
+        أداء شهري يوظف على عمليات النقل البري، باستثناء نقل الأشخاص بواسطة
+        سيارات الأجرة لواج وتاكسي. ويحدد حسب الحمولة النافعة أو عدد المقاعد
+        المعروضة، ويطرح من الأداء على القيمة المضافة المستوجب من قبل الخاضعين
+        حسب النظام الحقيقي.
+      synonymes: []
+
+  - id: commercant-detaillant-assujetti
+    acronyme: null
+    statut: valide
+    references: [lf-1996, loi-88-61-tva]
+    source_definition: {ref: lf-1996, locator: "art. 43"}
+    source_traduction: {ref: lf-1996, locator: "art. 43"}
+    voir_aussi: [tva, assujetti, commercant-grossiste, chiffre-affaires-imposable]
+    fr:
+      terme: Commerçant détaillant assujetti à la taxe sur la valeur ajoutée
+      definition: >
+        Commerçant qui vend des produits en l'état et dont le chiffre
+        d'affaires annuel global atteint le seuil prévu par le code. Ces ventes
+        sont entrées dans le champ de la TVA le 1er juillet 1996, sous réserve
+        des exonérations particulières au stade du détail.
+      synonymes: []
+    ar:
+      terme: تاجر التفصيل الخاضع للأداء على القيمة المضافة
+      definition: >
+        تاجر يبيع المنتوجات على حالتها ويبلغ رقم معاملاته السنوي الجملي الحد
+        المنصوص عليه بالمجلة. ودخلت هذه البيوعات في ميدان تطبيق الأداء على
+        القيمة المضافة في غرة جويلية 1996، مع مراعاة الإعفاءات الخاصة بمرحلة
+        البيع بالتفصيل.
+      synonymes: []
+
+  - id: tva-sur-marge
+    acronyme: null
+    statut: provisoire
+    references: [lf-1991, lf-2016, dgelf-code-tva-2023]
+    source_definition: {ref: lf-2016, locator: "art. 33"}
+    source_traduction: {ref: lf-1991, locator: "art. 34"}
+    voir_aussi: [tva, assujetti, chiffre-affaires-imposable]
+    fr:
+      terme: TVA sur la marge
+      definition: >
+        Mode de liquidation applicable aux ventes, par des commerçants
+        assujettis, de produits acquis auprès de personnes non assujetties : la
+        TVA est calculée sur la différence entre le prix de vente et le prix
+        d'achat. Introduit en 1991 pour les achats auprès des forfaitaires, son
+        champ a été étendu en 2016 à tout vendeur non assujetti.
+      synonymes: []
+    ar:
+      terme: احتساب الأداء على القيمة المضافة على الفارق بين ثمن البيع وثمن الشراء
+      definition: >
+        طريقة لاحتساب الأداء بالنسبة إلى بيوعات التجار الخاضعين للأداء على
+        القيمة المضافة والمتعلقة بمنتوجات اقتنوها من غير الخاضعين، إذ يحتسب
+        الأداء على الفارق بين ثمن البيع وثمن الشراء. أحدثت سنة 1991 للشراءات من
+        الخاضعين للنظام التقديري ووسع مجالها سنة 2016 إلى كل بائع غير خاضع.
+      synonymes: []
+
+  - id: regime-suspensif-tva
+    acronyme: null
+    statut: valide
+    references: [loi-88-61-tva, loi-avantages-fiscaux-2017]
+    source_definition: {ref: loi-88-61-tva, locator: "art. 11"}
+    source_traduction: {ref: loi-avantages-fiscaux-2017, locator: "art. 3"}
+    voir_aussi: [tva, assujetti, credit-tva]
+    fr:
+      terme: Régime suspensif de la taxe sur la valeur ajoutée
+      definition: >
+        Régime permettant, dans les cas et conditions prévus par le code,
+        d'importer ou d'acquérir localement des biens et services sans paiement
+        de la TVA lors de l'opération. Il bénéficie notamment à certaines
+        entreprises exportatrices pour leurs acquisitions ouvrant droit à
+        déduction.
+      synonymes: []
+    ar:
+      terme: نظام توقيف العمل بالأداء على القيمة المضافة
+      definition: >
+        نظام يتيح، في الحالات والشروط المنصوص عليها بالمجلة، توريد أموال وخدمات
+        أو اقتناءها محليا دون دفع الأداء على القيمة المضافة عند العملية. وينتفع
+        به خاصة بعض المؤسسات المصدرة بالنسبة إلى اقتناءاتها التي تمنح حق الطرح.
+      synonymes: []
+
+  - id: credit-tva
+    acronyme: null
+    statut: valide
+    references: [loi-88-61-tva, loi-2006-80-reduction-taux]
+    source_definition: {ref: loi-2006-80-reduction-taux, locator: "art. 15"}
+    source_traduction: {ref: loi-2006-80-reduction-taux, locator: "art. 15"}
+    voir_aussi: [tva, regime-suspensif-tva]
+    fr:
+      terme: Crédit de taxe sur la valeur ajoutée
+      definition: >
+        Excédent de TVA déductible qui n'a pas pu être entièrement imputé sur
+        la TVA due au titre des opérations taxables. Il est reportable ou
+        restituable dans les cas et selon les conditions prévus par l'article
+        15 du code.
+      synonymes: []
+    ar:
+      terme: فائض الأداء على القيمة المضافة
+      definition: >
+        مبلغ الأداء على القيمة المضافة القابل للطرح الذي لم يتسن طرحه بالكامل
+        من الأداء الموظف على العمليات الخاضعة. ويمكن تأجيل طرحه أو إرجاعه في
+        الحالات ووفق الشروط المنصوص عليها بالفصل 15 من المجلة.
+      synonymes: []
+
+  - id: promoteur-immobilier
+    acronyme: null
+    statut: valide
+    references: [lf-2017, lf-2018, lf-2025]
+    source_definition: {ref: lf-2017, locator: "art. 20"}
+    source_traduction: {ref: lf-2017, locator: "art. 20"}
+    voir_aussi: [tva, exoneration-tva, taux-reduit-tva]
+    fr:
+      terme: Promoteur immobilier
+      definition: >
+        Opérateur immobilier dont certaines ventes relèvent de règles propres
+        de TVA. Les ventes de lots de terrain par les promoteurs immobiliers
+        entrent dans le champ de la taxe en 2017 ; leurs ventes de logements
+        relèvent ensuite des exonérations ou des taux prévus par le code.
+      synonymes: []
+    ar:
+      terme: الباعث العقاري
+      definition: >
+        متدخل عقاري تخضع بعض بيوعاته لأحكام خاصة في مادة الأداء على القيمة
+        المضافة. فقد دخل بيع قطع الأراضي من قبل الباعثين العقاريين في ميدان
+        الأداء سنة 2017، ثم خضعت بيوعاتهم للمساكن للإعفاءات أو للنسب المنصوص
+        عليها بالمجلة.
       synonymes: []
 
   - id: droit-de-consommation
@@ -4903,4 +5096,3 @@ entries:
         وتُحتسب على الضريبة النظرية، ولا بتلك المنصوص عليها بالفقرة II من
         الفصل 44، وهي مقابلها في الضريبة على دخل الأشخاص الطبيعيين.
       synonymes: [الحد الأدنى للضريبة]
-

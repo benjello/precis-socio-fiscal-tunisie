@@ -47,6 +47,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Chiffre indiciaire | الرقم القياسي |  |
 | Ciblage | الاستهداف |  |
 | Classe de revenus | شريحة الدخل |  |
+| Commerçant détaillant assujetti à la taxe sur la valeur ajoutée | تاجر التفصيل الخاضع للأداء على القيمة المضافة |  |
 | Commerçant grossiste | تاجر جملة |  |
 | Condition de ressources | شرط الموارد |  |
 | Contribution aux frais de crèche | المساهمة في مصاريف رياض الأطفال |  |
@@ -57,10 +58,12 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Coordination des régimes | التنسيق بين أنظمة الضمان الاجتماعي |  |
 | Cotisation de l'assuré | اشتراك المضمون |  |
 | Cotisations sociales | المساهمات الاجتماعية |  |
+| Crédit de taxe sur la valeur ajoutée | فائض الأداء على القيمة المضافة |  |
 | Décote | التخفيض في الجراية |  |
 | Déductions communes | الطروحات المشتركة |  |
 | Délai de carence | فترة الانتظار |  |
 | Droit de consommation | المعلوم على الاستهلاك |  |
+| Droit forfaitaire simplifié | الأداء التقديري المبسط |  |
 | Échelon | الدرجة |  |
 | Échelonnement indiciaire | التدرّج القياسي |  |
 | Éléments permanents de la rémunération | العناصر القارة للمرتب |  |
@@ -120,6 +123,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prime de rendement | منحة المردودية |  |
 | Produit intérieur brut | الناتج المحلي الإجمالي | PIB |
 | Programme national d'aide aux familles nécessiteuses | البرنامج الوطني لمساعدة العائلات المعوزة | PNAFN |
+| Promoteur immobilier | الباعث العقاري |  |
 | Promotion | الترقية |  |
 | Quota régional | الحصّة الجهوية |  |
 | Recettes fiscales | المداخيل الجبائية |  |
@@ -139,6 +143,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Régime forfaitaire d'imposition | النظام التقديري |  |
 | Régime indiciaire | النظام الاستدلالي للتأجير |  |
 | Régime statutaire autonome | النظام الأساسي الخاص |  |
+| Régime suspensif de la taxe sur la valeur ajoutée | نظام توقيف العمل بالأداء على القيمة المضافة |  |
 | Rémunération des dirigeants d'entreprises publiques | تأجير رؤساء المؤسسات والمنشآت العمومية |  |
 | Rente compensatrice | الإيراد التعويضي |  |
 | Rente d'accident du travail | إيراد حادث الشغل |  |
@@ -178,6 +183,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Taux réduit de la TVA | النسبة المخفضة |  |
 | Taux spécifique | نسبة نوعية |  |
 | Taxe à la production | الأداء على الإنتاج |  |
+| Taxe forfaitaire annuelle | الأداء السنوي التقديري |  |
+| Taxe forfaitaire mensuelle sur la valeur ajoutée | أداء تقديري شهري على القيمة المضافة |  |
 | Taxe sur la valeur ajoutée | الأداء على القيمة المضافة | TVA |
 | Taxe sur les bières, vins et autres boissons alcoolisées | الأداء على الجعة والخمور والمشروبات الكحولية الأخرى |  |
 | Taxe sur les prestations de service | الأداء على الخدمات |  |
@@ -187,6 +194,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Tranche | شريحة |  |
 | Transfert monétaire direct | التحويل النقدي المباشر |  |
 | Travaux pénibles et insalubres | الأشغال الشاقّة وغير الصحّية |  |
+| TVA sur la marge | احتساب الأداء على القيمة المضافة على الفارق بين ثمن البيع وثمن الشراء |  |
 | Valeur du point d'indice | قيمة النقطة الاستدلالية |  |
 | Valeur en douane | القيمة المصرح بها لدى الديوانة |  |
 | Validation des services | إدماج الخدمات |  |

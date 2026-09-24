@@ -2898,19 +2898,19 @@ absentes de Zotero 55.
 Source : `docs/notes/fiscalite-tva-reformes.md` (§ 6). Quatre entrées créées, FR et AR (mêmes
 ids), dans `precis/{fr,ar}/fiscalite/references.json` (collection cible : `fiscalite`),
 **pas encore dans Zotero**. Métadonnées (numéro, date, JORT, tome, pagination par article)
-vérifiées dans `jort_cache.db` (table `textes`, notices par article) ; URL = `pdf_fr` / `pdf_ar`
-du même enregistrement. Trois des quatre fascicules (1999, 2000, 2002) relèvent du décalage de
-codage +29 décrit dans `outillage-sources.md` § 5, qui rend leurs numéros de page illisibles même
-décodés : la pagination retenue vient donc de `jort_cache.db` (recoupée par article), non du
-fascicule ; le contenu des articles cités a en revanche été confirmé sur la couche décodée. Le
+recoupées dans `jort_cache.db` (table `textes`, notices par article) et dans les fascicules locaux ;
+URL = `pdf_fr` / `pdf_ar` du même enregistrement. Trois des quatre fascicules (1999, 2000, 2002)
+relèvent du décalage de codage +29 décrit dans `outillage-sources.md` § 5. Après décodage, les
+chiffres, les pieds de page et les tomes sont lisibles : pagination et contenu ont donc été
+confirmés sur les fascicules eux-mêmes. Le
 quatrième (`lfc-2016`, JORT n° 2/2017) est lisible sans décalage et a été vérifié à la fois par
 `jort_cache.db` et sur la couche texte du fascicule (page, tome, contenu de l'article 3).
 
 | Clé | Texte | Remarque |
 |---|---|---|
-| `lf-2000` | Loi n° 99-101 du 31 décembre 1999 (LF 2000) | art. 19 p. 2741 (services de formation, 18 % → 10 %) |
-| `lf-2001` | Loi n° 2000-98 du 25 décembre 2000 (LF 2001) | art. 40 p. 3178 (internet, 18 % → 10 %) ; art. 63 p. 3181 (exonération des logements des promoteurs) |
-| `decret-2002-3356-tva-telecom` | Décret n° 2002-3356 du 30 décembre 2002 | fixe au 1er janvier 2003 l'entrée en vigueur des art. 66-69 de la LF 2002 (télécommunications taxées) |
+| `lf-2000` | Loi n° 99-101 du 31 décembre 1999 (LF 2000) | JORT n° 105, tome 142 ; loi p. 2739 ; art. 19 p. 2741 (services de formation, 18 % → 10 %) ; art. 73 p. 2751 (effet au 1er janvier 2000) |
+| `lf-2001` | Loi n° 2000-98 du 25 décembre 2000 (LF 2001) | JORT n° 104, tome 143 ; loi p. 3171 ; art. 40 p. 3178 (internet, 18 % → 10 %) ; art. 63 p. 3181 (exonération des logements des promoteurs) ; art. 68 p. 3182 (effet au 1er janvier 2001) |
+| `decret-2002-3356-tva-telecom` | Décret n° 2002-3356 du 30 décembre 2002 | JORT n° 106, tome 145, p. 3194 ; art. 1er : fixe au 1er janvier 2003 l'entrée en vigueur des art. 66-69 de la LF 2002 (télécommunications taxées) |
 | `lfc-2016` | Loi n° 2017-1 du 3 janvier 2017 (LFC 2016) | art. 3 p. 60 (médicaments au détail réintégrés à l'exonération à compter du 1er janvier 2017 — via la LF 2016 qu'elle corrige) ; tome 160 lu sur le fascicule (« 160ème année »), en désaccord avec `jort_cache.db` qui donne 161 pour d'autres notices du même numéro (incohérence non résolue, signalée en note de l'entrée) |
 
 Notes complétées, sans changer le champ `page` (conformément à la consigne du bibliographe.md) :
@@ -2923,9 +2923,11 @@ Notes complétées, sans changer le champ `page` (conformément à la consigne d
   et l'ancienne note documentaire ; la page 4280 se termine sur l'article 42.
 
 Contrôles (worktree, 24/09/2026) : les 21 clés citées par `_tva.qmd` résolvent (fichier du livre +
-fonds commun) ; rendus FR et AR de « Fiscalité » : 0 citation non résolue. `push_biblio.py
---verifier`, `--dry-run` et `--controle-rangement` **non lancés dans cette passe** (consigne :
-aucun workflow sans feu vert) — à lancer à la clôture par l'agent qui fusionnera.
+fonds commun) ; rendus FR et AR de « Fiscalité » : 0 citation non résolue. Contrôle complémentaire
+du 24/09/2026 : les trois fascicules français ont été décodés et relus page à page aux passages
+ci-dessus ; les six URL FR/AR répondent `206 application/pdf` ; `push_biblio.py --verifier` :
+537 entrées éprouvées, 0 perte de champ. Les workflows Zotero et le rendu complet n'ont pas été
+relancés, conformément à la consigne de reprise.
 
 - [ ] Rapatriement Zotero **après fusion**, sur feu vert humain : `permissions` → `verifier` →
       `dry-run` → `pousser-un` → `comparer` → `pousser-tout` → `ranger` (collection `fiscalite`,
