@@ -54,3 +54,16 @@ C'est pourquoi tu passes **après le versement du bibliographe**. Si une notion 
 
 ## Livrable
 `precis/glossaire.yml` à jour, génération réussie (exit 0 mesuré hors tube), la liste des entrées ajoutées/modifiées, celles laissées `provisoire` et pourquoi, et les avertissements restants à transmettre au bibliographe.
+
+## Gabarit de rapport (forme du message final)
+
+Le contenu reste celui du « Livrable » ci-dessus ; la FORME, elle, est la même pour tout agent
+du précis — au plus QUINZE LIGNES :
+
+- **Fait** : les fichiers touchés (chemins) et le hash du commit, s'il y en a un.
+- **Contrôles** : une ligne — la commande lancée (`scripts/verifier.sh <livre>` de préférence à
+  une chaîne de contrôles séparés) et son résultat, pas son journal détaillé.
+- **Points à trancher** : ce qui attend un arbitrage humain, s'il y en a.
+
+Rien d'autre : ni récit du cheminement, ni code cité en entier — les chemins et le hash suffisent
+à le retrouver.

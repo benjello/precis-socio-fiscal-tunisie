@@ -19,13 +19,16 @@ tests — « si l'un d'eux réclame un jour un paquet, c'est le signe qu'il test
 chose que ce qu'il annonce ».
 """
 
+import os
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
-from figtools import date_deja_inscrite  # noqa: E402
+import figtools  # noqa: E402
+from figtools import date_deja_inscrite, write_figdata  # noqa: E402
 
 ENTETE = [
     "# séries (tunisia_data) : recettes-fiscales-composition",
@@ -146,6 +149,89 @@ class DateLueTest(unittest.TestCase):
         for valeur in ("hier", "2026-13-45", "09/09/2026", "2026-09"):
             with self.subTest(valeur=valeur):
                 self.assertIsNone(date_deja_inscrite(figdata(valeur), ENTETE, CORPS))
+
+
+class FauxDataFrame:
+    """Tient lieu de `pandas.DataFrame` pour tester `write_figdata` sans pandas.
+
+    `write_figdata` n'appelle qu'une seule méthode du df qu'on lui passe :
+    `to_csv(index=False)`. Un test qui construirait un vrai DataFrame réclamerait
+    pandas, que le job de tests n'installe pas (voir l'en-tête de ce fichier).
+    """
+
+    def __init__(self, corps: str):
+        self._corps = corps
+
+    def to_csv(self, index=False):  # noqa: ARG002 - signature imposée par l'appelant
+        return self._corps
+
+
+class EcritureSansToucherTest(unittest.TestCase):
+    """`write_figdata` ne doit pas TOUCHER le fichier quand rien ne change.
+
+    Conserver la bonne date (`date_deja_inscrite`) ne suffit pas : si la fonction
+    réécrit quand même un contenu identique, le fichier change de date de
+    modification pour rien. On le vérifie ici au niveau de `write_figdata`
+    lui-même, pas seulement de la fonction pure qui calcule la date.
+    """
+
+    def setUp(self):
+        self._meta_original = figtools._meta
+        figtools._meta = lambda sid: {
+            "sources": ["une-source"], "fiche": "fiche.md", "caveats": "hypothèse",
+        }
+        self.addCleanup(setattr, figtools, "_meta", self._meta_original)
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.out_csv = Path(self._tmp.name) / "figure.csv"
+        self.side = self.out_csv.with_suffix(".csv.yml")
+
+    def _ecrire(self, corps, generated):
+        return write_figdata(FauxDataFrame(corps), self.out_csv, "une-serie",
+                              generated=generated)
+
+    def _vieillir(self):
+        """Recule le mtime des deux fichiers pour détecter une réécriture."""
+        vieux = 1_600_000_000
+        os.utime(self.out_csv, (vieux, vieux))
+        os.utime(self.side, (vieux, vieux))
+        return vieux
+
+    def test_rendu_identique_ne_touche_aucun_fichier(self):
+        self._ecrire("annee,valeur\n1990,19.8\n", generated="2026-09-09")
+        contenu_csv = self.out_csv.read_text(encoding="utf-8")
+        contenu_side = self.side.read_text(encoding="utf-8")
+        vieux = self._vieillir()
+
+        self._ecrire("annee,valeur\n1990,19.8\n", generated="2026-09-24")
+
+        self.assertEqual(self.out_csv.read_text(encoding="utf-8"), contenu_csv)
+        self.assertEqual(self.side.read_text(encoding="utf-8"), contenu_side)
+        self.assertEqual(os.stat(self.out_csv).st_mtime, vieux)
+        self.assertEqual(os.stat(self.side).st_mtime, vieux)
+
+    def test_donnee_modifiee_reecrit_et_redate(self):
+        self._ecrire("annee,valeur\n1990,19.8\n", generated="2026-09-09")
+        self._vieillir()
+
+        self._ecrire("annee,valeur\n1990,99.9\n", generated="2026-09-24")
+
+        self.assertIn("2026-09-24", self.out_csv.read_text(encoding="utf-8"))
+        self.assertIn("2026-09-24", self.side.read_text(encoding="utf-8"))
+        self.assertGreater(os.stat(self.out_csv).st_mtime, 1_600_000_000)
+
+    def test_sidecar_absent_est_ecrit_seul(self):
+        """Un CSV déjà présent mais sans sidecar : seul le sidecar doit s'écrire."""
+        self._ecrire("annee,valeur\n1990,19.8\n", generated="2026-09-09")
+        contenu_csv = self.out_csv.read_text(encoding="utf-8")
+        self.side.unlink()
+        os.utime(self.out_csv, (1_600_000_000, 1_600_000_000))
+
+        self._ecrire("annee,valeur\n1990,19.8\n", generated="2026-09-24")
+
+        self.assertEqual(self.out_csv.read_text(encoding="utf-8"), contenu_csv)
+        self.assertEqual(os.stat(self.out_csv).st_mtime, 1_600_000_000)
+        self.assertTrue(self.side.exists())
 
 
 if __name__ == "__main__":

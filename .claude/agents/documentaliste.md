@@ -50,3 +50,14 @@ transforme jamais son silence en « le texte n'existe pas ».
 - **Recherches infructueuses** : pour chacune, l'id de la fiche mise à jour, ou la fiche proposée.
 
 Ne modifie aucun fichier du précis : tu produis de la matière, pas du contenu rédigé.
+
+## Gabarit de rapport (forme du message final) — EXCEPTION
+
+Les autres rôles du précis rendent leur message en quinze lignes au plus, parce que leur
+substance vit dans des fichiers (`.qmd`, `glossaire.yml`, `references.json`) que le message se
+contente de résumer. **Ce n'est pas ton cas.** Tu ne modifies aucun fichier du précis (ci-dessus) :
+la note documentaire — faits sourcés, références candidates, notions à glossaire, lacunes,
+recherches infructueuses — EST ta livraison, lue telle quelle par `/rediger` et transmise aux
+rôles suivants. La comprimer à quinze lignes la viderait de sa matière.
+
+Rends donc la note complète, dans la forme du « Livrable » ci-dessus, sans plafond de lignes.

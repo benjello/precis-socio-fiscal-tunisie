@@ -166,9 +166,28 @@ Corriger le précis avant la publication casse ses tableaux ; corriger après la
 trop tard, casse sa CI. Le 14 septembre 2026, deux paramètres déplacés le même jour ont produit les
 deux cas.
 
+## Économiser
+
+- **Un seul appel plutôt qu'une chaîne à la main** : `scripts/verifier.sh [livre…]` enchaîne le
+  glossaire, les contrôles de contenu, les liens, les tests et le rendu FR/AR des livres touchés,
+  et n'affiche qu'un bilan compact (une ligne par étape). N'enchaîne les commandes une à une que
+  pour diagnostiquer l'étape qui a échoué — le journal détaillé dont `verifier.sh` affiche le
+  chemin sert à ça.
+- **Le modèle suit la tâche.** Une tâche mécanique et bornée — fusion d'une branche, régénération
+  d'un tableau ou d'un snapshot, rendu d'un livre, renumérotation d'un CHANGELOG — va sur un modèle
+  léger : le résultat se vérifie par un contrôle (exit code, diff, test), pas par jugement. La
+  lecture d'un texte de loi et la rédaction restent sur le modèle principal : c'est là que le
+  jugement porte.
+- **Ne relis pas un fichier que tu viens de lire ou d'écrire toi-même, sans raison de le croire
+  changé.** Une Edit ou un Write réussis suffisent à savoir que le fichier est dans l'état voulu.
+  Ceci ne vaut que pour TES propres appels dans la même tâche : un script (`build_glossary.py`,
+  un rendu) ou un autre agent peut avoir réécrit le fichier entre-temps — relis-le si l'un des deux
+  a pu s'exécuter depuis.
+
 ## Vérifier avant de rendre la main
 
 ```
+scripts/verifier.sh [livre…]                                # glossaire, contrôles, liens, tests, rendu
 uv run python scripts/build_glossary.py                    # verrou de synchro du glossaire
 cd precis/fr/<livre> && uv run quarto render --to html     # zéro citation [?] non résolue
 uv run python scripts/check_pas_de_modele.py               # le précis ne parle pas du modèle
@@ -179,11 +198,14 @@ uv run python scripts/check_pas_de_modele.py               # le précis ne parle
 rend les livres : un chapitre qui ne compile plus passe la revue sans que rien ne le signale. Le
 14 septembre 2026, une figure a cassé le rendu des « Prestations sociales » — `IndexError` sur une
 série vide — parce qu'elle lisait un paramètre openfisca absent du build ; le livre de la fiscalité,
-lui, rendait parfaitement. Un seul rendu aurait laissé passer l'autre.
+lui, rendait parfaitement. Un seul rendu aurait laissé passer l'autre. `scripts/verifier.sh` sans
+argument déduit les livres touchés du diff avec `origin/master` et de l'arbre de travail ; passe-les
+en argument quand tu sais mieux que lui ce qu'il faut rendre.
 
 Un module de figure lit **`figtools.series()`** — l'entrepôt ou son snapshot — et jamais directement
 les paramètres du modèle : le build du site est autonome, `openfisca-tunisia` n'y est ni installé ni
 déclaré.
 
-Et restaure les `figdata` dont seule la date de génération a changé :
-`git checkout -- precis/<langue>/<livre>/figdata`.
+`scripts/verifier.sh` restaure lui-même, après rendu, les `figdata` dont seule la date de génération
+a changé. En dehors de lui — après un `./build.sh` ou un `quarto render` isolé — restaure-les à la
+main : `git checkout -- precis/<langue>/<livre>/figdata`.

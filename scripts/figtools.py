@@ -332,16 +332,27 @@ def write_figdata(df: pd.DataFrame, out_csv: Path, *series_ids: str,
     stamp = date_deja_inscrite(ancien, entete_sans_date, corps) or generated
     header = [f"# Figure-data du précis socio-fiscal tunisien — généré le {stamp}"]
     header += entete_sans_date
-    with out_csv.open("w", encoding="utf-8", newline="") as f:
-        f.write("\n".join(header) + "\n")
-        f.write(corps)
+    nouveau_csv = "\n".join(header) + "\n" + corps
+    # `date_deja_inscrite` rend déjà l'ancienne date quand le contenu (hors date) n'a
+    # pas changé, ce qui suffit à ce que le CSV réécrit soit OCTET POUR OCTET identique
+    # à l'existant. Mais réécrire quand même touche le fichier : mtime modifié, et
+    # certains outils (rsync, un `make` qui dépend des horodatages) le voient comme
+    # changé alors que git ne le verrait pas. On compare donc le contenu produit à
+    # l'existant et on n'écrit que s'il diffère — ni le CSV, ni son sidecar.
+    if ancien != nouveau_csv:
+        with out_csv.open("w", encoding="utf-8", newline="") as f:
+            f.write(nouveau_csv)
     # sidecar yaml (lisible machine)
     side = out_csv.with_suffix(out_csv.suffix + ".yml")
-    side.write_text(
-        "series: [{}]\nsources: [{}]\nfiches: [{}]\ncaveats: [{}]\ngenerated: {}\n".format(
-            ", ".join(series_ids), ", ".join(dict.fromkeys(keys)),
-            ", ".join(fiches), ", ".join(caveats), stamp),
-        encoding="utf-8")
+    nouveau_side = "series: [{}]\nsources: [{}]\nfiches: [{}]\ncaveats: [{}]\ngenerated: {}\n".format(
+        ", ".join(series_ids), ", ".join(dict.fromkeys(keys)),
+        ", ".join(fiches), ", ".join(caveats), stamp)
+    try:
+        ancien_side = side.read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError):
+        ancien_side = None
+    if ancien_side != nouveau_side:
+        side.write_text(nouveau_side, encoding="utf-8")
     return out_csv
 
 

@@ -34,3 +34,16 @@ la documentation du paramètre plutôt que de l'invoquer comme source.
    section « Questions ouvertes » de la PR, pas dans un choix silencieux.
 
 Travaille dans un worktree séparé par PR, retire-le à la fin, ne fusionne rien, et attends la CI.
+
+## Gabarit de rapport (forme du message final)
+
+Le contenu reste celui décrit plus haut — PR, section « Questions ouvertes », état de la CI ; la
+FORME, elle, est la même pour tout agent du précis — au plus QUINZE LIGNES :
+
+- **Fait** : les fichiers touchés (chemins) et le hash du commit, s'il y en a un.
+- **Contrôles** : une ligne — la commande lancée (`scripts/verifier.sh <livre>` de préférence à
+  une chaîne de contrôles séparés) et son résultat, pas son journal détaillé.
+- **Points à trancher** : ce qui attend un arbitrage humain, s'il y en a.
+
+Rien d'autre : ni récit du cheminement, ni code cité en entier — les chemins et le hash suffisent
+à le retrouver.
