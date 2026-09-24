@@ -31,13 +31,16 @@ colonne `source`) ; `bct-ipc-base2015` non séparable rapport par rapport.
 
 - **Série** : `rsna-actualisation-salaires` (snapshot du précis, émis par
   `scripts/generate_retraites_tables.py` ; paramètres
-  `retraite/rsna/salaire_reference/actualisation/annee_AAAA`, openfisca-tunisia ≥ 0.95).
-- **Source** : 28 arrêtés du ministre des affaires sociales, 17/11/1994 → 16/07/2024, JORT sur
-  pist.tn (colonne `lien` de chaque coefficient). 1 319 coefficients.
-- **Spécificités** : aucun arrêté retrouvé pour 2016, 2017, 2019 (ni 2025) ; barèmes 2013-2015
-  recalculés, 2018 revient au calcul antérieur ; 1996 lu sur scan, 2024 sur l'image insérée.
+  `retraite/rsna/salaire_reference/actualisation/annee_AAAA`, openfisca-tunisia ≥ 0.95 ; 2016, 2017
+  et 2019 depuis la 0.112).
+- **Source** : 31 arrêtés du ministre des affaires sociales, un par année, 17/11/1994 → 16/07/2024,
+  JORT sur pist.tn (colonne `lien` de chaque coefficient ; 2019 : trouvé dans la seule édition arabe). 1 488
+  coefficients.
+- **Spécificités** : aucun arrêté retrouvé pour 2025 ni 2026 (ceux de 2016, 2017 et 2019, trouvés
+  le 24/09/2026, ne sont indexés par jort_cache que sous leur intitulé arabe) ; barème 2013
+  recalculé, repris en 2014-2016, 2017 revient au calcul antérieur ; 1996 lu sur scan, 2024 sur l'image insérée.
 - **Constat** (non énoncé par les textes) : chaque barème reproduit l'évolution de l'indice
-  des prix à moins de 0,4 % (2013-2015 : jusqu'à 1,1 %, sur les salaires de 1997) ; le taux
+  des prix à moins de 0,4 % (2013-2016 : jusqu'à 1,1 %, sur les salaires de 1997) ; le taux
   implicite du barème de 2024 s'écarte de l'inflation d'au plus 0,23 point (moyenne 0,03).
   Ni le décret n° 94-1429 ni l'arrêté de 2022 ne donnent de méthode.
 - **Question ouverte** : la méthode du ministère est-elle publiée hors JORT ?

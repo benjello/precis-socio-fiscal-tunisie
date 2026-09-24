@@ -198,10 +198,11 @@
     resultat: aucun
 
 - id: r-rsna-bareme-annees-manquantes
-  objet: arrêtés du ministre des affaires sociales fixant le barème d'actualisation des salaires pour 2016, 2017 et 2019 (et 2025)
+  objet: arrêtés du ministre des affaires sociales fixant le barème d'actualisation des salaires pour 2016, 2017 et 2019
   ou: [precis/fr/retraites/_secteur_prive.qmd#sec-rsna-bareme]
   requetes:
     titres_fts: [(revalorisation OR majoration OR augmentation OR actualisation) AND (pension OR retraite)]
+    iort_ar: [تحيين الأجور]
     depuis: 2016-01-01
   passes:
   - date: 2026-09-11
@@ -216,9 +217,46 @@
     couverture: '28 arrêtés lus sur pist.tn, du 17 novembre 1994 au 16 juillet 2024 ; aucun pour 2016, 2017 et 2019, ni pour 2025. Note : docs/notes/series-pensions-salaires-bilan.md, § 1.'
     couvert_jusqu_au: 2026-04-10
     resultat: aucun
+  - date: 2026-09-24
+    role: documentaliste
+    sources: [corpus_local, jort_cache, pist]
+    couverture: 'Trois arrêtés trouvés par recherche en plein texte des fascicules : arrêté du 1er mars 2016 (JORT n° 20/2016, p. 686, arrete-2016-03-01-bareme-actualisation), arrêté du 10 avril 2017 (JORT n° 32/2017, p. 1497-1498, arrete-2017-04-10-bareme-actualisation), arrêté du 5 mars 2019 (JORT n° 21/2019, édition arabe, p. 783, arrete-2019-03-05-bareme-actualisation ; aucune édition française trouvée, l''adresse française de pist.tn sert le fascicule arabe). jort_cache ne les indexe que sous leur intitulé arabe « يتعلق بضبط السلم التقييمي لتحيين الأجور » : les requêtes françaises des passes précédentes ne pouvaient pas les remonter. Barèmes versés par openfisca-tunisia#459 (version 0.112). Les années 2025 et 2026 passent à la fiche r-rsna-bareme-2025-2026.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: arrete-2016-03-01-bareme-actualisation
+  resolu: arrete-2016-03-01-bareme-actualisation
+
+- id: r-rsna-bareme-2025-2026
+  objet: arrêtés du ministre des affaires sociales fixant le barème d'actualisation des salaires pour 2025 et pour 2026
+  ou: [precis/fr/retraites/_secteur_prive.qmd#sec-rsna-bareme]
+  requetes:
+    titres_fts: [(revalorisation OR majoration OR augmentation OR actualisation) AND (pension OR retraite)]
+    titres_like: ['%actualisation des salaires%', '%bareme d''actualisation%']
+    iort_ar: [تحيين الأجور, السلم التقييمي]
+    plein_texte: [actualisation des salaires, السلم التقييمي]
+    depuis: 2025-01-01
+  passes:
+  - date: 2026-09-23
+    role: documentaliste
+    sources: [jort_cache, pist]
+    couverture: 'Reprise de la passe du 23 septembre 2026 de la fiche r-rsna-bareme-annees-manquantes : aucun arrêté pour 2025 dans jort_cache, requêtes françaises seules. Note : docs/notes/series-pensions-salaires-bilan.md, § 1.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  - date: 2026-09-24
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache jusqu''au 18 septembre 2026 (JORT n° 93 de 2026), titres et objets, LIKE sur « تحيين الأجور », « السلم التقييمي », « تحيين », « actualisation », depuis le 1er août 2024 : aucun arrêté de barème ; seuls les trois arrêtés de 2016, 2017 et 2019 portent l''intitulé arabe.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  - date: 2026-09-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Plein texte (pdftotext) des fascicules locaux : 2025, n° 1 à 156, édition française (sans les n° 29, 47 et 77) et arabe ; 2026, n° 1 à 93, édition française (sans les n° 11, 13 et 58) et arabe (sans les n° 3 et 58). Termes : « actualisation des salaires » (français), « لتحيين الأجور » et « السلم التقييمي » (arabe). Méthode française contrôlée sur les arrêtés de 2016 et 2023, retrouvés ; la recherche arabe retrouve l''arrêté de 2019 mais non celui de 2016 : la couche texte arabe (ligatures lam-alif) la rend peu sûre. Neuf fichiers de l''édition française sont en réalité des fascicules arabes (2025 : n° 4, 88, 90, 95, 96 et 148 ; 2026 : n° 10, 62 et 76) : ces numéros n''ont été parcourus qu''en arabe. Aucun arrêté de barème.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
   a_faire:
-  - consigner les requêtes par lesquelles la série des 28 arrêtés a été constituée (series-pensions-salaires-bilan.md ne les donne pas)
-  - lire les fascicules postérieurs au 10 avril 2026 pour l'arrêté de 2025 ou de 2026
+  - 'lire les fascicules manquants du corpus local : 2025 n° 29, 47 et 77 (français) ; 2026 n° 11, 13 et 58 (français), n° 3 et 58 (arabe)'
+  - 'relire en français, sur pist.tn, les numéros dont le fichier français local est arabe : 2025 n° 4, 88, 90, 95, 96 et 148 ; 2026 n° 10, 62 et 76'
+  - relancer sur les fascicules postérieurs au 18 septembre 2026 pour l'arrêté de 2026
 
 - id: r-rsna-arretes-art15
   objet: arrêtés d'application de l'article 15 du décret n° 74-499 (âge de 55 ans pour certaines catégories) pris entre l'arrêté du 4 juillet 1975 et celui du 11 septembre 2015

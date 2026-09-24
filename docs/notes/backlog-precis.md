@@ -74,10 +74,11 @@ absentes.
 - **Lectures restantes** : rectificatifs des décrets n° 82-1030 et de la loi n° 81-6 ;
   série du SMAG journalier ; règlement du régime complémentaire du 18 novembre 1978 ;
   articles propres du RACI et du RTTE ; textes de départ anticipé du régime agricole.
-- **Barème d'actualisation — chronologie faite, coefficients à relever.** Les vingt-huit
-  arrêtés ont leur clé dans les deux langues, et le chapitre donne leur rythme : signature en
-  février, effet rétroactif au 1er janvier, une ligne ajoutée par an, et **aucun arrêté pour
-  2016, 2017 ni 2019**. Les COEFFICIENTS ne sont pas publiés : ils doivent être relus à
+- **Barème d'actualisation — chronologie faite, coefficients à relever.** Les trente et un
+  arrêtés (un par année de 1994 à 2024 ; ceux de 2016, 2017 et 2019 trouvés le 24/09/2026)
+  ont leur clé dans les deux langues, et le chapitre donne leur rythme : signature en
+  février, effet rétroactif au 1er janvier, une ligne ajoutée par an ; **aucun arrêté
+  identifié pour 2025 ni 2026**. Les COEFFICIENTS ne sont pas publiés : ils doivent être relus à
   l'image. Deux pièges consignés dans la consigne du chapitre — un fascicule textuel dont le
   tableau est une image (1997, 2024), et deux sérialisations du tableau dont l'une, appariée
   au jugé, produit des séries fausses mais plausibles.

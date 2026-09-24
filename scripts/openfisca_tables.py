@@ -69,7 +69,10 @@ PAQUETS = {
         # des taux de liquidation perd son plafond de 60 %. La 0.111 retire le plafond de la
         # contribution personnelle d'État de 1983 à 1985, que la loi n° 82-91 ne fixe pas
         # (openfisca-tunisia#458) : en deçà, le tableau du plafond publierait 60 % dès 1983.
-        "version_minimale": (0, 111),
+        # La 0.112 verse les barèmes d'actualisation des salaires de 2016, 2017 et 2019
+        # (openfisca-tunisia#459) : en deçà, une lecture directe perdrait ces trois barèmes,
+        # que la série de la figure et le chapitre comptent désormais.
+        "version_minimale": (0, 112),
     },
 }
 

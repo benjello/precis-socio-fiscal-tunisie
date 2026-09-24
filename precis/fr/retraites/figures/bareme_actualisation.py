@@ -19,10 +19,11 @@ CE QUE LES FIGURES DOIVENT PORTER :
     par an en moyenne de 1963 à 1990 contre 6,2 % pour les prix, 8,7 % contre 3,9 % de
     1991 à 2010, 6,5 % contre 6,0 % de 2011 à 2023. Le salaire de référence est donc
     actualisé sur les prix, non sur la croissance des revenus ;
-  - le constat ne tient pas au seul barème de 2024. Contrôle fait le 21 septembre 2026,
-    sans figure : confronté à l'indice des prix de sa dernière année de salaire, chacun des
-    vingt-huit barèmes s'en écarte de moins de 0,4 %, sauf ceux de 2013, 2014 et 2015, qui
-    s'en éloignent jusqu'à 1,1 % sur les salaires de 1997 ; celui de 2018 retrouve l'écart
+  - le constat ne tient pas au seul barème de 2024. Contrôle fait le 21 septembre 2026 et
+    refait le 24 septembre sur les trente et un barèmes, sans figure : confronté à l'indice
+    des prix de sa dernière année de salaire (inflation de la série des croissances,
+    chaînée), chacun s'en écarte de moins de 0,4 %, sauf ceux de 2013 à 2016, qui s'en
+    éloignent jusqu'à 1,1 % sur les salaires de 1997 ; celui de 2017 retrouve l'écart
     antérieur.
 
 CE QUI N'EST PAS AFFIRMÉ :
@@ -59,8 +60,8 @@ et en 2010 (+12,7 %) ; tunisia-data calcule désormais chaque taux sur deux ann�
 base — UNdata pour 1993-2001, éditions des comptes de la nation ensuite —, soit +9,6 % et
 +7,5 %. Avant 1993, le taux reste celui de la Banque mondiale, sans contrôle possible.
 
-Les années sans arrêté retrouvé (2016, 2017, 2019) n'ont pas de barème propre : le barème
-suivant couvre leurs années de salaire.
+Chaque année de 1994 à 2024 a son barème. Aucun arrêté n'est retrouvé pour 2025 ni pour
+2026 : la série s'arrête au barème de 2024.
 """
 from __future__ import annotations
 
@@ -115,16 +116,19 @@ figtools.register_provenance(
     sources=["arrete-1994-11-17-bareme-actualisation", "arrete-2024-07-16-bareme-actualisation"],
     unite="coefficient multiplicateur",
     unite_ar="ضارب",
-    perimetre=("vingt-huit arrêtés du ministre des affaires sociales, du 17 novembre 1994 au "
+    perimetre=("trente et un arrêtés du ministre des affaires sociales, du 17 novembre 1994 au "
                "16 juillet 2024 : un coefficient par année de salaire depuis 1961 ; chaque ligne "
                "des données porte l'arrêté qui le fixe et son lien au Journal officiel"),
-    perimetre_ar=("ثمانية وعشرون قراراً لوزير الشؤون الاجتماعية، من 17 نوفمبر 1994 إلى 16 جويلية "
+    perimetre_ar=("واحد وثلاثون قراراً لوزير الشؤون الاجتماعية، من 17 نوفمبر 1994 إلى 16 جويلية "
                   "2024: ضارب لكلّ سنة أجر منذ 1961"),
-    caveats=("Aucun arrêté retrouvé pour 2016, 2017 et 2019. Les barèmes de 2013 à 2015 sont "
-             "recalculés, et celui de 2018 revient au calcul antérieur. Le barème de 1996 est lu "
-             "sur un scan, celui de 2024 sur l'image insérée dans le fascicule."),
-    caveats_ar=("لم يُعثر على قرار لسنوات 2016 و2017 و2019. أُعيد احتساب جداول 2013 إلى 2015، "
-                "وعاد جدول 2018 إلى الاحتساب السابق."),
+    caveats=("Aucun arrêté retrouvé pour 2025 ni pour 2026. Le barème de 2013 est recalculé, "
+             "ceux de 2014 à 2016 en reprennent le calcul, et celui de 2017 revient au calcul "
+             "antérieur pour les salaires d'avant 2011. L'arrêté de 2019 n'a été trouvé que "
+             "dans l'édition arabe du Journal officiel. Le barème de 1996 est lu sur un scan, celui "
+             "de 2024 sur l'image insérée dans le fascicule."),
+    caveats_ar=("لم يُعثر على قرار لسنتي 2025 و2026. أُعيد احتساب جدول 2013، وأخذت جداول 2014 "
+                "إلى 2016 بالاحتساب نفسه، وعاد جدول 2017 إلى الاحتساب السابق بالنسبة إلى أجور "
+                "ما قبل 2011."),
 )
 
 _L = {
