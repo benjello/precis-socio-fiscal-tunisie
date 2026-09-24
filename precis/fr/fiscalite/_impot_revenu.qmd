@@ -122,15 +122,29 @@ tableau tranches/taux. Sources : corpus JORT local ~/projets/PDFs-legislation-tu
 (fascicules sans couche texte → OCR requis) et pist.tn ; cf. Q18 de
 docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
-<!-- TODO (rédacteur) : les mêmes articles fixent le plafond de la cotisation effective — 40 %
-du revenu global imposable en 1962, 45 % en 1965, 55 % en 1980, 60 % en 1983 et en 1986 (lus au
-fascicule pour 1962, 1965 et 1980 ; 1983 non relu). Le paragraphe du plafonnement ci-dessous ne
-donne que le taux de 1986 : lui adjoindre un tableau daté engendré, le paramètre
-`impot_revenu/contribution_personnelle_etat/plafond_cotisation` portant déjà la série. -->
-
 ### Le plafonnement de la cotisation effective
 
-Le même article assortissait le barème de plusieurs correctifs, qui en bornaient la charge par le bas comme par le haut : les contribuables dont les revenus annuels ne dépassaient pas le [SMIG](#g-smig) en étaient exonérés, l'impôt ne pouvait excéder l'excédent des revenus par rapport au SMIG, et la cotisation effective ne pouvait dépasser **60 % du revenu global imposable** [@lf-1986, art. 8]. Un décret devait par ailleurs publier le barème par tranches de 20 dinars à partir de 900 dinars, sous forme de table de cotes d'impôt : c'est l'objet du décret n° 86-1188 du 12 novembre 1986.
+Le même article assortissait le barème de plusieurs correctifs, qui en bornaient la charge par le bas comme par le haut : les contribuables dont les revenus annuels ne dépassaient pas le [SMIG](#g-smig) en étaient exonérés, l'impôt ne pouvait excéder l'excédent des revenus par rapport au SMIG, et la cotisation effective ne pouvait dépasser **60 % du revenu global imposable** [@lf-1986, art. 8]. Ce plafond avait des précédents : les tarifs de 1962, 1965 et 1980 en fixaient chacun un, porté de 40 % à 55 % (@tbl-plafond-cpe). L'article 8 récrit pour les revenus de 1983, en revanche, n'en comporte aucun [@lf-1983, art. 9] — son barème affiche d'ailleurs des taux d'imposition du revenu global supérieurs à 60 % au-delà de 80 000 dinars (@tbl-bareme-cpe-1983) —, et c'est cette rédaction que la loi de 1985 abroge : le plafond à 60 % y est donc rétabli, non maintenu. Un décret devait par ailleurs publier le barème par tranches de 20 dinars à partir de 900 dinars, sous forme de table de cotes d'impôt : c'est l'objet du décret n° 86-1188 du 12 novembre 1986.
+
+```{python}
+#| echo: false
+#| output: asis
+table("plafond_cpe",
+      "Plafond de la cotisation effective de la contribution personnelle d'État, en part du revenu global imposable",
+      "tbl-plafond-cpe")
+```
+
+Source : @loi-62-73-cpe, art. 2 (JORT n° 64 des 28-31 décembre 1962, p. 1647) ; @lf-1966, art. 10 (JORT n° 66 du 31 décembre 1965, p. 1716) ; @loi79-66-lf1980, art. 8 (JORT n° 76 des 28-31 décembre 1979, p. 3540). Le tableau s'arrête au tarif de 1980 : celui de 1983 ne fixe pas de plafond [@lf-1983, art. 9] (JORT n° 84 du 31 décembre 1982, p. 2877-2878), et le plafond de 60 % rétabli par @lf-1986, art. 8 (JORT n° 91 du 31 décembre 1985, p. 1731) est exposé ci-dessus. Les plafonds qu'auraient pu fixer d'éventuels tarifs intermédiaires, entre 1966 et 1979, ne sont pas connus ici.
+
+<!-- TODO (modéliste) : le paramètre `impot_revenu/contribution_personnelle_etat/plafond_cotisation`
+porte 0,60 au 1er janvier 1983, rattaché à l'art. 9 de la loi n° 82-91 ; ce texte (JORT n° 84 du
+31 décembre 1982, p. 2877-2878, relu au fascicule) ne comporte aucun plafond, et son barème atteint
+62,29 % de taux d'imposition à 100 000 D. État à verser : aucun plafond du 1er janvier 1983 à la date
+d'effet du tarif de 1986 ; 0,60 à cette date, réf. loi n° 85-109, art. 8, 2) (JORT n° 91 du
+31 décembre 1985, p. 1731), qui abroge l'art. 8 « tel que modifié par l'article 9 de la loi n° 82-91 »
+— aucun texte intermédiaire. L'article ne porte pas de clause d'effet visible : dater selon les
+règles d'AGENTS.md. Une fois la version publiée et la borne relevée, retirer `DATES_ECARTEES` de
+scripts/generate_bareme_tables.py et régénérer ; la ligne de 1986 entrera alors au tableau. -->
 
 ### La suppression de 1990
 

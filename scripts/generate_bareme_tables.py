@@ -57,6 +57,8 @@ MOTS = {
         # Libellés des liens vers la base législative des barèmes.
         "bareme_ir": "Barème de l\u2019impôt sur le revenu",
         "bareme_cpe": "Barème de la contribution personnelle d\u2019État",
+        "revenus_depuis": "Revenus réalisés à compter du",
+        "plafond_cpe": "Plafond de la cotisation effective (part du revenu global imposable)",
     },
     "ar": {
         "tranche_net": "شريحة الدخل السنوي الصافي (بالدينار)",
@@ -79,6 +81,8 @@ MOTS = {
         "parent": "الوالد المتكفَّل به",
         "bareme_ir": "جدول الضريبة على الدخل",
         "bareme_cpe": "جدول الضريبة الشخصية للدولة",
+        "revenus_depuis": "المداخيل المحقّقة ابتداء من",
+        "plafond_cpe": "سقف الضريبة الشخصية للدولة (نسبة من الدخل الجملي الخاضع للضريبة)",
     },
 }
 
@@ -162,6 +166,37 @@ def evolutions(langue):
           "2009-01-01": "lf-2010, art. 40", "2013-01-01": "lf-2014, art. 94",
           "2017-01-01": "lf-2018, art. 55", "2019-01-01": "lf-2018, art. 54"}),
     ]
+
+
+# Tableaux d'évolution au JOUR près : (fichier, specs, clés de citation). Pour les
+# paramètres dont chaque rupture ne vaut que pour une date et non pour une période
+# connue jusqu'à la suivante — les tarifs intermédiaires de la contribution personnelle
+# d'État ne sont pas tous dépouillés, une plage « 1965 → 1979 » affirmerait trop.
+def evolutions_datees(langue):
+    m = MOTS[langue]
+    _dinars, taux, _plafond, _aucun = formateurs(langue)
+    cpe = "parameters/impot_revenu/contribution_personnelle_etat"
+    return [
+        ("plafond_cpe.md",
+         [(f"{cpe}/plafond_cotisation.yaml", m["plafond_cpe"], taux)],
+         {"1962-01-01": "loi-62-73-cpe, art. 2", "1965-01-01": "lf-1966, art. 10",
+          "1980-01-01": "loi79-66-lf1980, art. 8"}),
+    ]
+
+
+# Dates d'effet que le paramètre porte mais que le texte cité ne soutient pas : la ligne
+# est retirée du tableau publié. Le 60 % au 1er janvier 1983 est rattaché à l'article 9
+# de la loi n° 82-91, dont l'article 8 nouveau ne comporte aucun plafond (JORT n° 84 du
+# 31 décembre 1982, p. 2877-2878) ; le 60 % vient de l'article 8 de la loi n° 85-109.
+# À retirer dès que le paramètre corrigé est publié et la borne de version relevée.
+DATES_ECARTEES = {"plafond_cpe.md": ["1983-01-01"]}
+
+
+def sans_dates_ecartees(df, fichier, langue, colonne):
+    ecartees = [ot.formate_date(d, langue) for d in DATES_ECARTEES.get(fichier, [])]
+    if df is None or not ecartees:
+        return df
+    return df[~df[colonne].isin(ecartees)].reset_index(drop=True)
 
 
 TABLEAUX = [
@@ -256,6 +291,22 @@ def main() -> int:
                 f"     Paramètres : {origines} -->\n\n",
             )
 
+        for fichier, specs, cles in evolutions_datees(langue):
+            df, liens = ot.avec_liens(lambda: ot.tableau_evolution_datee(
+                specs, cles=cles, langue=langue,
+                colonne_periode=m["revenus_depuis"], colonne_texte=m["texte"]
+            ))
+            df = sans_dates_ecartees(df, fichier, langue, m["revenus_depuis"])
+            if df is None:
+                print(f"échec : {langue}/{fichier}", file=sys.stderr)
+                return 1
+            origines = ", ".join(c for c, _e, _f in specs)
+            ot.ecrire_tableau(
+                sortie / fichier, df, liens, langue,
+                entete="<!-- Généré par scripts/generate_bareme_tables.py — ne pas éditer à la main.\n"
+                f"     Paramètres : {origines} -->\n\n",
+            )
+
         for fichier, annee, taux_effectif, entete, source in TABLEAUX:
             df, liens = ot.avec_liens(lambda: bareme(
                 BAREME, annee, m["bareme_ir"], langue,
@@ -275,7 +326,8 @@ def main() -> int:
                 f"     Source : {source} -->\n\n",
             )
 
-        total = len(TABLEAUX_CPE) + len(evolutions(langue)) + len(TABLEAUX)
+        total = (len(TABLEAUX_CPE) + len(evolutions(langue))
+                 + len(evolutions_datees(langue)) + len(TABLEAUX))
         print(f"✓ {langue} : {total} tableaux")
     return 0
 
