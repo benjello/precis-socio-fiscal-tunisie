@@ -24,6 +24,22 @@ phrase du précis ; « le modèle porte 0,24 % de maternité, sans source » n'e
 
 `scripts/check_pas_de_modele.py` le vérifie, et la CI le fait échouer.
 
+## Une recherche infructueuse ne se raconte pas
+
+Quand la note documentaire établit qu'un texte attendu n'est pas identifié, le texte rendu dit
+le **constat**, court et neutre, et sa conséquence de droit — « Ce décret n'est pas identifié
+ici. Le régime n'a donc, en l'état des textes identifiés, ni taux ni formule de pension. » —
+jamais la recherche : ni « n'a pas été retrouvé », ni « au *Journal officiel* jusqu'au numéro
+du… », ni les fascicules lus ou manquants, ni un titre de callout du même ordre. Juste après,
+l'ancre cachée vers la fiche que le documentaliste tient dans `docs/recherches.yml` :
+
+    <!-- RECHERCHE r-dl2024-4-art33 : décret d'application de l'art. 33 du décret-loi n° 2024-4 (voir docs/recherches.yml) -->
+
+La fiche doit exister, et son champ `ou` désigner ce fichier et sa section :
+`uv run python scripts/recherches.py verifier` le contrôle (et la CI).
+`scripts/check_jargon_depouillement.py` refuse les tournures du récit de recherche. Quand une
+fiche devient `resolu`, remplace la réserve par la règle sourcée et retire l'ancre.
+
 ## Invariants du projet (à respecter absolument)
 - Exécute TOUJOURS les commandes Python via `uv run` (jamais `python3` ni `.venv/bin/python3`).
 - Le français est la **source de vérité**. N'écris JAMAIS de fichier sous `precis/ar/` : la version arabe est générée par le CI (translation-sync). Tu ne touches qu'à `precis/fr/`.
@@ -46,7 +62,8 @@ phrase du précis ; « le modèle porte 0,24 % de maternité, sans source » n'e
 1. Lis le fichier cible (`precis/fr/<book>/<section>.qmd` ou `index.qmd`) et le plan environnant.
 2. Rédige/complète la section en suivant la note documentaire. Remplace les `<!-- TODO -->` traités ; conserve ceux non couverts.
 3. Marque les notions clés du glossaire comme liens vers leurs ancres : `[terme](#g-<id>)`. **N'emploie que des ancres qui existent déjà** — le terminologue est passé avant toi (passe 1) et la liste t'est fournie. Une ancre orpheline fait échouer `build_glossary.py` ; une ancre inventée casse la chaîne pour tout le monde.
-4. Vérifie le rendu : `cd precis/fr/<book> && uv run quarto render --to html`. Corrige toute erreur et toute citation non résolue.
+4. Vérifie les ancres de recherche : `uv run python scripts/recherches.py verifier`.
+5. Vérifie le rendu : `cd precis/fr/<book> && uv run quarto render --to html`. Corrige toute erreur et toute citation non résolue.
 
 ## Livrable
 Le(s) fichier(s) `.qmd` FR écrits/modifiés, un rendu sans erreur, et un résumé des sources utilisées + des TODO restants (notamment références manquantes à transmettre au bibliographe).

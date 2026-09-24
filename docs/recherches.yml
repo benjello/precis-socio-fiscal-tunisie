@@ -1,0 +1,55 @@
+# Registre des recherches infructueuses — docs/conventions-redaction.md, § 2.
+#
+# Le texte du précis dit le constat, court et neutre (« ce décret n'est pas identifié
+# ici »), et porte une ancre cachée <!-- RECHERCHE r-… : … --> qui renvoie à une fiche
+# de ce registre. La fiche garde la trace EXÉCUTABLE de la recherche : ce qu'on a
+# cherché (requetes), et chaque passe — quand, sur quoi, jusqu'où, avec quel résultat.
+#
+# Schéma d'une fiche :
+#   id        r-… (minuscules, chiffres, points, tirets), unique
+#   objet     ce qui est cherché, en une phrase
+#   ou        [chemin.qmd#ancre-de-section, …] — là où se trouve l'ancre RECHERCHE
+#   requetes  titres_fts   expressions FTS5 sur titre et objet de jort_cache (accents indifférents)
+#             titres_like  motifs LIKE sur titre et objet ; accents et casse neutralisés par l'outil
+#             iort_ar      termes arabes : intitulés du miroir iort, et titres de jort_cache
+#                          (après « ل », l'article perd son alif : للعاملات ne contient pas
+#                          العاملات — pour couvrir cette forme, chercher sans l'article)
+#             plein_texte  termes cherchés dans le texte des fascicules du corpus local
+#             depuis       AAAA-MM-JJ : rien n'est examiné avant (naissance de l'objet)
+#   passes    liste de :
+#             date              AAAA-MM-JJ, jour de la passe
+#             role              documentaliste, rédacteur…
+#             sources           parmi jort_cache, iort, corpus_local, pist, mcp_jort, visas, presse
+#             couverture        texte libre : jusqu'où, et les LACUNES (fascicules non lus…)
+#             couvert_jusqu_au  AAAA-MM-JJ : date de publication jusqu'à laquelle la passe vaut ;
+#                               c'est ce champ que `lister --perimees` et `relancer` utilisent
+#             resultat          « aucun », ou la clé CSL du texte trouvé
+#   a_faire   (facultatif) ce qui reste à parcourir pour lever les lacunes
+#   resolu    (facultatif) clé CSL du texte trouvé ; la réserve et l'ancre quittent alors le .qmd
+#
+# PAS DE COMMENTAIRE DANS LES FICHES : `elargir` et `passe` réécrivent ce fichier sous
+# forme canonique et ne conservent que ce bloc d'en-tête.
+#
+#   uv run python scripts/recherches.py verifier                      # CI : ancres ⇔ fiches
+#   uv run python scripts/recherches.py lister [--perimees]
+#   uv run python scripts/recherches.py relancer <id> | --perimees [--depuis AAAA-MM-JJ]
+#   uv run python scripts/recherches.py elargir <id> --terme "…" [--source titres_like]
+#   uv run python scripts/recherches.py passe <id> --resultat aucun --couverture "…" \
+#       --couvert-jusqu-au AAAA-MM-JJ --sources jort_cache corpus_local
+
+- id: r-dl2024-4-art33
+  objet: décret fixant les taux, les modalités et les procédures de bénéfice des pensions du régime des travailleuses agricoles (décret-loi n° 2024-4, art. 33)
+  ou: [precis/fr/retraites/_secteur_prive.qmd#sec-travailleuses-agricoles]
+  requetes:
+    titres_fts: ['"travailleuses agricoles"']
+    iort_ar: [العاملات الفلاحيات]
+    plein_texte: [2024-4, العاملات الفلاحيات, 4 لسنة 2024]
+    depuis: 2024-10-23
+  passes:
+  - date: 2026-09-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist, presse]
+    couverture: 'jort_cache (FTS sur titre et objet, LIKE sur les intitulés arabes) jusqu''au 10 avril 2026 ; texte des fascicules FR et AR du corpus local de 2024 au n° 56 de 2026, 2025 en partie seulement (117 fascicules FR) ; n° 57 à 93 de 2026 téléchargés depuis pist.tn, sauf le n° 58, non consulté ; presse : Nawaat, 27 août 2026 (source secondaire). Note : docs/notes/cnss-autres-regimes.md, § 10 et 12.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [lire le JORT n° 58 de 2026, contrôler 2025 fascicule par fascicule sur pist.tn (le corpus local n'en a qu'une partie)]

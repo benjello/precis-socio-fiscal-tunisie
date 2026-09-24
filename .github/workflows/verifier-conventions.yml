@@ -19,6 +19,8 @@ on:
       - 'precis/glossaire.yml'
       - 'scripts/check_pas_de_modele.py'
       - 'scripts/check_jargon_depouillement.py'
+      - 'scripts/recherches.py'
+      - 'docs/recherches.yml'
       - 'scripts/build_glossary.py'
   push:
     branches:
@@ -29,6 +31,8 @@ on:
       - 'precis/glossaire.yml'
       - 'scripts/check_pas_de_modele.py'
       - 'scripts/check_jargon_depouillement.py'
+      - 'scripts/recherches.py'
+      - 'docs/recherches.yml'
       - 'scripts/build_glossary.py'
 
 permissions:
@@ -51,6 +55,13 @@ jobs:
       # Le constat de travail va dans un <!-- TODO (documentaliste) : … -->.
       - name: Le précis ne parle pas du dépouillement
         run: uv run python scripts/check_jargon_depouillement.py
+
+      # Une recherche infructueuse ne se raconte pas dans le texte : un constat neutre, et
+      # une ancre <!-- RECHERCHE r-… --> vers la fiche rejouable de docs/recherches.yml.
+      # Ce contrôle ne lit que le dépôt (ni jort_cache ni corpus, absents du runner) :
+      # chaque ancre a sa fiche et réciproquement, champs obligatoires, dates ISO.
+      - name: Chaque recherche infructueuse a sa fiche
+        run: uv run python scripts/recherches.py verifier
 
       # Le glossaire est ENGENDRÉ à partir de `precis/glossaire.yml`, et l'annexe de
       # chaque livre ne retient que les notions auxquelles il renvoie réellement — sa

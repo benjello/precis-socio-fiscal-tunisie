@@ -44,7 +44,7 @@ technique.
 
 ## 2. Où va ce qu'on ne publie pas
 
-Trois destinations, selon la nature de la remarque. C'est la seule voie : rien ne reste
+Quatre destinations, selon la nature de la remarque. C'est la seule voie : rien ne reste
 dans le texte rendu.
 
 | Nature | Destination |
@@ -52,6 +52,7 @@ dans le texte rendu.
 | Manque éditorial — un texte à lire, une section à écrire | `<!-- TODO (rôle) : … -->` dans le `.qmd`, à l'endroit concerné |
 | Défaut du modèle — valeur, date, assiette, formule | *Issue* sur `openfisca/openfisca-tunisia`, plus une ligne dans `docs/notes/backlog-modele.md` |
 | Référence à verser ou à corriger dans Zotero | `docs/notes/biblio-a-rapatrier.md` |
+| Recherche infructueuse — un texte attendu qu'on ne trouve pas | Constat neutre dans le texte (« ce décret n'est pas identifié ici »), ancre `<!-- RECHERCHE r-… : … -->` à côté, fiche rejouable dans `docs/recherches.yml` |
 
 Le commentaire `<!-- TODO (rôle) : … -->` est la forme déjà employée dans tout le corpus :
 le rôle entre parenthèses est celui qui doit reprendre le travail — `documentaliste`,
@@ -62,6 +63,64 @@ passes de traduction.
 modèle, chaque ligne renvoyant à son *issue*. Il existe pour que le constat ne se perde pas
 entre le moment où on le fait et celui où quelqu'un le corrige — et pour qu'on ne le refasse
 pas deux fois.
+
+### Les recherches infructueuses
+
+Le texte ne raconte pas la recherche : ni « n'a pas été retrouvé », ni « au *Journal
+officiel* jusqu'au numéro du… », ni la liste des fascicules lus. Il dit le constat, court et
+neutre, et en tire la conséquence de droit (« le régime n'a donc, en l'état des textes
+identifiés, ni taux ni formule »). À côté, une ancre cachée renvoie à la fiche :
+
+```
+Ce décret n'est pas identifié ici.
+
+<!-- RECHERCHE r-dl2024-4-art33 : décret d'application de l'art. 33 du décret-loi n° 2024-4 (voir docs/recherches.yml) -->
+```
+
+La fiche, dans `docs/recherches.yml`, garde la trace **exécutable** de la recherche : ce qu'on
+a cherché, et chaque passe — quand, sur quelles sources, jusqu'où, avec quelles lacunes, pour
+quel résultat. Elle permet de la relancer quand le *Journal officiel* a paru depuis, ou de
+l'élargir à un terme neuf. Schéma (détaillé en tête du registre) :
+
+```yaml
+- id: r-dl2024-4-art33
+  objet: décret fixant les taux … (décret-loi n° 2024-4, art. 33)
+  ou: [precis/fr/retraites/_secteur_prive.qmd#sec-travailleuses-agricoles]
+  requetes:
+    titres_fts: ['"travailleuses agricoles"']   # FTS5 sur titre et objet de jort_cache
+    titres_like: []                             # LIKE, accents et casse neutralisés
+    iort_ar: [العاملات الفلاحيات]               # intitulés arabes (iort, jort_cache)
+    plein_texte: [2024-4, 4 لسنة 2024]          # texte des fascicules du corpus local
+    depuis: 2024-10-23                          # rien n'est examiné avant
+  passes:
+  - date: 2026-09-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist]
+    couverture: "… jusqu'au n° 93 de 2026, sauf le n° 58 ; 2025 en partie seulement"
+    couvert_jusqu_au: 2026-09-18                # ce que l'outil compare
+    resultat: aucun                             # ou la clé CSL du texte trouvé
+  a_faire: [lire le JORT n° 58 de 2026]         # facultatif : les lacunes à combler
+```
+
+Les commentaires ci-dessus n'ont pas leur place dans le registre : l'outil le réécrit sous
+forme canonique et ne conserve que son en-tête.
+
+```
+uv run python scripts/recherches.py verifier            # ancres ⇔ fiches (lancé en CI)
+uv run python scripts/recherches.py lister --perimees   # couvertes moins loin que jort_cache
+uv run python scripts/recherches.py relancer <id> [--depuis AAAA-MM-JJ]
+uv run python scripts/recherches.py elargir <id> --terme "…" --source iort_ar
+uv run python scripts/recherches.py passe <id> --resultat aucun --couverture "…" \
+    --couvert-jusqu-au AAAA-MM-JJ --sources jort_cache corpus_local pist
+```
+
+`relancer` rend des **candidats** — texte, fascicule, pages, adresse pist.tn —, jamais une
+conclusion : chacun se lit au fascicule. Il dit aussi ce qu'il n'a pas pu parcourir
+(fascicules absents du corpus local, base arrêtée avant la période). Quand le texte est
+trouvé, la passe porte sa clé CSL, la fiche devient `resolu`, et la réserve du `.qmd` cède
+la place à la règle sourcée ; `verifier` refuse une ancre qui survit à sa fiche résolue.
+`check_jargon_depouillement.py` refuse, dans le texte rendu, les tournures du récit de
+recherche.
 
 ## 3. Ton et chiffres
 
