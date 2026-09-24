@@ -7,7 +7,7 @@ L'[impôt sur les sociétés](#g-impot-societes) ne possède pas de code à lui.
 
 **2. Une date d'effet peut être très éloignée de la publication.** L'article 18 de la loi de finances pour 2019 diffère l'application de ses propres articles 14 à 17 aux bénéfices réalisés à partir du 1^er^ janvier **2021** [@loi2018-56-lf2019, art. 18]. Trois ans séparent le vote de l'effet — et, on le verra, la disposition n'a pas survécu à cet intervalle.
 
-**3. Toutes les dates d'effet n'ont pas été lues.** Celles de 2007, 2014 et 2021 sont énoncées dans le texte même des lois et citées comme telles. Celles de 2006 et de 2011 résultent du régime de droit commun des lois de finances, les clauses d'application n'ayant pas été consultées : elles sont signalées comme **déduites** dans le manifeste du tableau du minimum d'impôt.
+**3. Toutes les dates d'effet ne sont pas établies au même degré.** Celles de 2007, 2014 et 2021 sont énoncées dans le texte même des lois et citées comme telles. Celles de 2006 et de 2011 résultent du régime de droit commun des lois de finances, les clauses d'application n'étant pas établies ici : elles sont signalées comme **déduites** dans le manifeste du tableau du minimum d'impôt.
 
 **4. L'état consolidé du code ne montre que la dernière rédaction.** Un taux abrogé par un texte postérieur y devient invisible. Deux faits de ce chapitre ne s'établissent que par la lecture des lois de finances elles-mêmes, et seraient manqués par quiconque reconstituerait la chronologie à partir du seul code en vigueur.
 :::
@@ -20,7 +20,9 @@ L'inventaire le plus sûr du système remplacé est donné par le texte qui l'ab
 
 Un détail de cet article mérite en revanche d'être relevé, parce qu'il déplace l'origine. Le **même** article 9 de la loi de 1985 fonde aussi l'impôt sur les bénéfices industriels et commerciaux, celui des personnes physiques [@lf-1986, art. 9]. Un article unique portait donc les deux impôts. Et la loi de 1985 elle-même ne les crée pas : elle **modifie un code préexistant**, qu'elle désigne en toutes lettres comme « le code de l'impôt sur les bénéfices industriels et commerciaux, de l'impôt sur les bénéfices des sociétés et de l'impôt sur les bénéfices des professions non commerciales ».
 
-La lignée remonte donc plus haut que 1985, et plus haut que ce chapitre ne peut l'établir sur pièce. Les textes que cette rédaction de 1985 vise au passage — la loi n° 62-72 du 31 décembre 1962, un arrêté du 29 mars 1954, le décret du 31 mars 1932 pour la contribution personnelle d'État — n'ont pas été consultés, et rien n'en est affirmé ici. Ce qui est acquis suffit pourtant à corriger une idée reçue : **le code de 1989 a réuni dans un même texte deux impôts qui étaient déjà distincts, et déjà réunis dans un code commun**. Sa nouveauté est ailleurs — dans le barème, dans les catégories de revenus, dans la suppression de l'imposition cédulaire —, non dans la séparation des personnes physiques et des personnes morales.
+La lignée remonte donc plus haut que 1985, et plus haut que ce chapitre ne peut l'établir. Les textes que cette rédaction de 1985 vise au passage — la loi n° 62-72 du 31 décembre 1962, un arrêté du 29 mars 1954, le décret du 31 mars 1932 pour la contribution personnelle d'État — ne sont pas établis dans ce chapitre, et rien n'en est affirmé ici. Ce qui est acquis suffit pourtant à corriger une idée reçue : **le code de 1989 a réuni dans un même texte deux impôts qui étaient déjà distincts, et déjà réunis dans un code commun**. Sa nouveauté est ailleurs — dans le barème, dans les catégories de revenus, dans la suppression de l'imposition cédulaire —, non dans la séparation des personnes physiques et des personnes morales.
+
+<!-- TODO (documentaliste) : loi n° 62-72, arrêté du 29 mars 1954 et décret du 31 mars 1932 non consultés. -->
 
 C'est donc un impôt déjà ancien que le code de 1990 reprend, renomme et reparamètre.
 
@@ -234,7 +236,7 @@ import tarifs
 tarifs.imprime("tarifs/tarifs-releves-impot-societes.csv", "taux-chronologie")
 ```
 
-Sources et couverture : voir le manifeste du relevé. **Les six colonnes ont été lues dans le texte de la loi qui les porte**, au *Journal officiel*, dans son édition française — y compris la dernière, que l'article 37 de la loi de finances pour 2025 fixe aux pages 3429-3431 du fascicule n° 149 du 10 décembre 2024. Le tiret des deux premières cellules de la colonne 1990-2006 signale qu'il n'existait alors aucun taux sectoriel distinct : le 35 % y était le droit commun, et non un taux majoré.
+Sources et couverture : voir le manifeste du relevé. **Les six colonnes sont établies par le texte de la loi qui les porte**, au *Journal officiel*, dans son édition française — y compris la dernière, que l'article 37 de la loi de finances pour 2025 fixe aux pages 3429-3431 du fascicule n° 149 du 10 décembre 2024. Le tiret des deux premières cellules de la colonne 1990-2006 signale qu'il n'existait alors aucun taux sectoriel distinct : le 35 % y était le droit commun, et non un taux majoré.
 
 Le tableau porte six colonnes là où le seul droit commun en appellerait cinq. La coupure de 2018 n'est pas commandée par lui, mais par le taux des petites et moyennes sociétés, qui naît au milieu de la période à 25 % : fondre 2014-2020 en une seule colonne ferait croire que ce taux existait dès 2014.
 
@@ -250,7 +252,9 @@ import tarifs
 tarifs.imprime("tarifs/tarifs-releves-impot-societes.csv", "minimum-impot")
 ```
 
-Sources : @loi-irpp-is-1989, art. 49 § II ; @lf-1998, art. 46 ; @lf-2006, art. 43 § 1 ; @lf-2011, art. 38 ; @lf-2014, art. 48 § 2. Les montants sont en dinars. La série couvre toute la vie de l'impôt, l'état de 1990 ayant été lu par reconnaissance optique du fascicule des 2-5 janvier 1990, qui est un scan sans couche texte.
+Sources : @loi-irpp-is-1989, art. 49 § II ; @lf-1998, art. 46 ; @lf-2006, art. 43 § 1 ; @lf-2011, art. 38 ; @lf-2014, art. 48 § 2. Les montants sont en dinars. La série couvre toute la vie de l'impôt, depuis l'état de 1990 publié au fascicule des 2-5 janvier 1990.
+
+<!-- TODO (documentaliste) : l'état de 1990 a été lu par OCR du fascicule des 2-5 janvier 1990, scan sans couche texte ; le confronter à une édition comportant une couche texte si elle se trouve. -->
 
 Les jalons, enfin, rangés par **année de bénéfices**.
 

@@ -18,6 +18,7 @@ on:
       - 'precis/**/tables/**'
       - 'precis/glossaire.yml'
       - 'scripts/check_pas_de_modele.py'
+      - 'scripts/check_jargon_depouillement.py'
       - 'scripts/build_glossary.py'
   push:
     branches:
@@ -27,6 +28,7 @@ on:
       - 'precis/**/tables/**'
       - 'precis/glossaire.yml'
       - 'scripts/check_pas_de_modele.py'
+      - 'scripts/check_jargon_depouillement.py'
       - 'scripts/build_glossary.py'
 
 permissions:
@@ -42,6 +44,13 @@ jobs:
 
       - name: Le précis ne parle pas du modèle
         run: uv run python scripts/check_pas_de_modele.py
+
+      # Même principe pour le travail de dépouillement : le texte rendu dit ce qui est
+      # connu (« seul l'intitulé est connu ici », « n'est pas établi ici »), jamais
+      # comment on l'a cherché (« consulté sur pièce », « lu à l'image », « OCR »).
+      # Le constat de travail va dans un <!-- TODO (documentaliste) : … -->.
+      - name: Le précis ne parle pas du dépouillement
+        run: uv run python scripts/check_jargon_depouillement.py
 
       # Le glossaire est ENGENDRÉ à partir de `precis/glossaire.yml`, et l'annexe de
       # chaque livre ne retient que les notions auxquelles il renvoie réellement — sa
