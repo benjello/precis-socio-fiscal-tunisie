@@ -1,0 +1,66 @@
+# Métadonnées des rôles éditoriaux du précis, indépendantes de l'outil et du
+# fournisseur de LLM.
+#
+# Le TEXTE de chaque rôle (sa consigne, en prose simple, sans syntaxe propre à
+# un outil) vit dans docs/agents/<role>.md — c'est la source neutre. Ce
+# fichier-ci porte ce qui varie selon l'outil : les métadonnées d'en-tête que
+# le format Claude Code attend (name, description, tools), et un NIVEAU
+# abstrait qui dit combien de jugement la tâche demande.
+#
+# scripts/sync_agents.py engendre .claude/agents/<role>.md à partir des deux :
+# en-tête YAML (name, description, tools, model tiré de `modeles.claude-code`
+# selon le niveau du rôle) + une ligne d'avertissement + le corps commun.
+# `--verifier` compare l'engendré au présent et sort en 1 s'ils divergent.
+#
+# Pour un autre outil (Codex, Cursor…) : charger docs/agents/<role>.md comme
+# consigne, choisir le modèle dans `modeles.<outil>` selon `roles.<role>.niveau`
+# (voir AGENTS.md, section « Économiser »). Aucun générateur n'est fourni pour
+# un autre outil tant que son format de sous-agent n'est pas vérifié ici.
+
+roles:
+  bibliographe:
+    description: "Tient la bibliographie du précis socio-fiscal. Intervient en DEUX temps — « versement » AVANT le terminologue et le rédacteur (les clés CSL doivent exister avant d'être citées), puis « clôture » après la rédaction (résolution des [@clés] et dry-run Zotero obligatoire). EXIGE la note documentaire ; GARANTIT que toute clé citable existe et résout, dans les deux langues."
+    tools: [Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch]
+    niveau: standard
+
+  documentaliste:
+    description: "Rassemble la matière sourcée pour une section du précis socio-fiscal (textes de loi, sources académiques, presse). PREMIER de la chaîne éditoriale. EXIGE un ticket cadré ; GARANTIT une note documentaire dont les références candidates alimentent le versement du bibliographe et les notions à glossaire la passe 1 du terminologue."
+    tools: [Read, Grep, Glob, WebSearch, WebFetch, Bash]
+    niveau: raisonnement
+
+  modeliste:
+    description: "Prépare les corrections du dépôt de modèle openfisca-tunisia, qui porte le système fiscal et celui des pensions — paramètres datés et sourcés sur le Journal officiel, formules, tests YAML, PR ciblées. À utiliser dès qu'un dépouillement du précis appelle une correction du modèle."
+    tools: [Read, Write, Edit, Grep, Glob, Bash]
+    niveau: raisonnement
+
+  redacteur:
+    description: "Rédige le contenu français (.qmd) d'une section du précis socio-fiscal à partir d'une note documentaire sourcée. EXIGE que les clés CSL soient versées (bibliographe) et que les ancres #g-… existent (terminologue, passe 1) : il n'invente ni les unes ni les autres. GARANTIT une prose qui rend sans erreur, sans citation [?], et qui ancre les notions — ce qui les fait enfin apparaître au glossaire."
+    tools: [Read, Write, Edit, Grep, Glob, Bash]
+    niveau: raisonnement
+
+  relecteur-ar:
+    description: "Propriétaire de l'arabe APRÈS la fusion — déclare les chapitres livrés par la traduction dans precis/ar/<book>/_quarto.yml, lit les ÉTAPES d'un job de traduction plutôt que sa conclusion, relance sur plafond ou troncature, et rend le livre arabe en local avant toute fusion. À lancer sur chaque PR `auto-translate/*`."
+    tools: [Read, Write, Edit, Grep, Glob, Bash]
+    niveau: standard
+
+  terminologue:
+    description: "Maintient le glossaire bilingue (precis/glossaire.yml). Intervient en DEUX passes — passe 1 « termes » avant le rédacteur (crée les ancres), passe 2 « définitions » après lui (les notions sont alors ancrées, donc rendues). EXIGE que les clés CSL soient déjà versées par le bibliographe ; GARANTIT que les ancres #g-… existent et que build_glossary.py sort en 0."
+    tools: [Read, Edit, Write, Grep, Glob, Bash]
+    niveau: raisonnement
+
+# Niveaux abstraits : « raisonnement » pour la lecture d'un texte de loi et la
+# rédaction (le jugement porte), « standard » pour un rôle qui applique une
+# méthode réglée sans arbitrage juridique, « mécanique » — réservé aux tâches
+# d'intégration (fusions, régénérations, rendus), aucun des six rôles
+# éditoriaux ci-dessus n'y est aujourd'hui rangé (voir AGENTS.md, « Économiser »).
+modeles:
+  claude-code:
+    raisonnement: opus
+    standard: sonnet
+    mecanique: haiku
+  openai:
+    # à renseigner par l'humain : noms des modèles de l'abonnement (aucun nom
+    # de modèle GPT n'est inventé ici)
+    raisonnement: null
+    standard: null
+    mecanique: null

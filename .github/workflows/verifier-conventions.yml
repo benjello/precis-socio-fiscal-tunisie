@@ -22,6 +22,9 @@ on:
       - 'scripts/recherches.py'
       - 'docs/recherches.yml'
       - 'scripts/build_glossary.py'
+      - 'docs/agents/**'
+      - '.claude/agents/**'
+      - 'scripts/sync_agents.py'
   push:
     branches:
       - master
@@ -34,6 +37,9 @@ on:
       - 'scripts/recherches.py'
       - 'docs/recherches.yml'
       - 'scripts/build_glossary.py'
+      - 'docs/agents/**'
+      - '.claude/agents/**'
+      - 'scripts/sync_agents.py'
 
 permissions:
   contents: read
@@ -81,3 +87,10 @@ jobs:
             git --no-pager diff --stat -- 'precis/*/*/_glossaire.qmd' translation_glossary.generated.md
             exit 1
           fi
+
+      # Les rôles éditoriaux sont neutres (docs/agents/<role>.md + roles.yml) ;
+      # .claude/agents/<role>.md en est ENGENDRÉ. Ce contrôle attrape un rôle
+      # édité sans régénération — le sous-agent Claude Code resterait périmé
+      # en silence, aucun autre gate ne le voit.
+      - name: Les sous-agents Claude Code sont à jour
+        run: uv run python scripts/sync_agents.py --verifier
