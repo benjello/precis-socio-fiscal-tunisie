@@ -96,15 +96,92 @@ Deux traits de méthode complètent ce schéma. D'abord, un même travailleur pe
 
 ### Les prestations familiales
 
-#### Le secteur privé : trois composantes, une seule connue
+Les prestations familiales du secteur privé sont exposées selon le plan suivi pour chaque dispositif de ce précis : leurs origines, antérieures à la loi n° 60-30 (@sec-pf-origines) ; le régime de cette loi dans son état du 1^er^ avril 1961, d'un seul tenant (@sec-pf-loi-1960) ; ses réformes, une par une (@sec-pf-reformes) ; les deux prestations qui lui ont été adjointes en 1980 et en 1994, la majoration pour salaire unique et la contribution aux frais de crèche ; enfin la vue de longue période (@sec-pf-longue-periode). Le secteur public, qui relève d'un dispositif distinct servi par l'employeur, est traité ensuite (@sec-pf-secteur-public) ; l'allocation familiale non contributive créée en 2022 l'est avec l'assistance sociale (@sec-af-non-contributive).
 
-L'article 51 de la loi n° 60-30 définit les prestations familiales comme comprenant trois choses : les **allocations familiales**, les **allocations pour congés de naissance** et les **allocations pour congés de jeunes travailleurs**. Les deux dernières sont des remboursements à l'employeur, qui a avancé les indemnités de congé supplémentaire prévues par les décrets du 27 mai 1948 et du 20 janvier 1949 [@loi60-30, art. 66-67]. Le terme légal est donc plus large que l'usage courant, qui ne retient que la première composante.
+#### Les origines {#sec-pf-origines}
 
-**Qui y a droit.** Les allocations familiales sont dues aux travailleurs salariés des établissements et professions énumérés à l'article 34 de la loi n° 60-30, dès le premier [enfant à charge](#g-enfant-a-charge), pour les enfants résidant en Tunisie ; le droit est maintenu au travailleur tunisien pour ses enfants résidant à l'étranger, et reconnu au travailleur étranger sous condition d'une convention de réciprocité [@loi60-30, art. 52]. L'allocataire est le père ou la mère, l'adoptant, le tuteur officieux salarié ou la personne ayant la garde de l'enfant au sens de l'article 57 du Code du statut personnel, à condition qu'elle assure effectivement logement, nourriture et habillement [@loi60-30, art. 53]. La loi n° 96-65 ajoute que la personne ayant la garde peut être attributaire même sans activité propre, si le droit est ouvert du chef du père ou de la mère [@loi96-65].
+La loi n° 60-30 ne crée pas les allocations familiales : elle succède à une législation antérieure, qu'elle abroge. Son article 131 abroge, sous réserve de ses dispositions transitoires, le **décret du 8 juin 1944** et les textes qui l'ont modifié ou complété, jusqu'à la loi n° 59-15 du 13 janvier 1959, ainsi que plusieurs textes qui s'y rattachent, dont un décret de 1945 étendant le bénéfice du décret de 1944 au personnel des usines à huile [@loi60-30, art. 131].
 
-Le droit est **maintenu** dans plusieurs situations de rupture : décès du salarié par accident du travail, y compris pour les enfants nés dans les trois cents jours suivants ; incapacité temporaire, et incapacité permanente d'au moins 40 % ; interruption de travail pour maladie dans la limite de 365 jours ; période légale de couches, prorogeable jusqu'à un an [@loi60-30, art. 56-58]. Il est également maintenu pendant quatre trimestres au travailleur licencié pour raisons économiques ou technologiques [@loi96-101, art. 7].
+Les dispositions transitoires de la loi dessinent les institutions de ce régime antérieur. Des **caisses d'allocations familiales** existaient, dont la Caisse nationale de sécurité sociale est chargée de liquider les obligations actives et passives, dans les conditions prévues par la loi n° 58-130 du 22 novembre 1958, et dont le patrimoine lui est dévolu [@loi60-30, art. 124]. Les employeurs affiliés à la **Caisse centrale des prestations sociales** sont dispensés de redemander leur affiliation à la Caisse nationale [@loi60-30, art. 125], et les bénéficiaires de prestations familiales qui y étaient immatriculés, d'une nouvelle immatriculation au titre des prestations familiales [@loi60-30, art. 126]. L'avoir net d'un « Compte de surcompensation des allocations familiales », ouvert dans les écritures du Trésor, est transféré à la Caisse nationale pour lui servir de fonds de réserve [@loi60-30, art. 122]. Les organismes qui, en vertu d'une disposition antérieure, étaient dispensés de l'affiliation à une caisse d'allocations familiales demeurent dispensés de l'affiliation à la Caisse nationale [@loi60-30, art. 121].
 
-**Limites d'âge des enfants.** Deux états successifs, le second issu de la loi n° 96-65.
+Le passage d'un régime à l'autre est ménagé par deux articles. La limitation aux quatre premiers enfants posée par la loi nouvelle ne s'applique pas aux travailleurs dont les droits sont nés avant son entrée en vigueur : ceux dont les droits sont déjà liquidés restent régis par la législation antérieure relative aux allocations familiales, sauf application des articles 54 et 64 de la loi nouvelle, et ceux dont les droits ne sont pas encore liquidés relèvent de la loi nouvelle [@loi60-30, art. 127]. Cette dérogation n'ouvre cependant pas droit aux allocations au titre d'un enfant né après le 1^er^ janvier 1961, sauf s'il vient en rang utile au sens de l'article 52 [@loi60-30, art. 128].
+
+Le contenu du régime de 1944 — son champ, ses taux, son assiette — n'est pas établi ici.
+
+<!-- TODO (documentaliste) : lire le décret du 8 juin 1944 (16 djoumada II 1363) et ses
+modificatifs énumérés par l'art. 131, 1°, de la loi n° 60-30 (décrets du 12 octobre 1944 au
+15 septembre 1955, loi n° 59-15 du 13 janvier 1959), au Journal officiel tunisien, hors de la
+couverture de jort_cache.db, pour donner le champ, les taux et l'assiette du régime antérieur à
+1961. -->
+
+#### Le régime de la loi n° 60-30 {#sec-pf-loi-1960}
+
+Les articles de la loi n° 60-30 relatifs aux allocations familiales entrent en vigueur le 1^er^ avril 1961 : ils ne sont pas au nombre des dispositions d'application immédiate [@loi60-30, art. 130].
+
+**Trois composantes.** L'article 51 de la loi n° 60-30 définit les prestations familiales comme comprenant trois choses : les **allocations familiales**, les **allocations pour congés de naissance** et les **allocations pour congés de jeunes travailleurs**. Les deux dernières sont des remboursements à l'employeur, qui a avancé les indemnités de congé supplémentaire prévues par les décrets du 27 mai 1948 et du 20 janvier 1949 [@loi60-30, art. 66-67]. Le terme légal est donc plus large que l'usage courant, qui ne retient que la première composante.
+
+**Qui y a droit.** Les allocations familiales sont dues aux travailleurs salariés des établissements et professions énumérés à l'article 34 de la loi n° 60-30, dès le premier [enfant à charge](#g-enfant-a-charge), pour les enfants résidant en Tunisie ; le droit est maintenu au travailleur tunisien pour ses enfants résidant à l'étranger, et reconnu au travailleur étranger sous condition d'une convention de réciprocité [@loi60-30, art. 52]. L'allocataire est le père ou la mère, l'adoptant, le tuteur officieux salarié ou la personne ayant la garde de l'enfant au sens de l'article 57 du Code du statut personnel, à condition qu'elle assure effectivement logement, nourriture et habillement [@loi60-30, art. 53].
+
+**Jusqu'à quel âge.** L'enfant ouvre droit sans condition jusqu'à 14 ans, jusqu'à 18 ans s'il est en apprentissage, jusqu'à 20 ans s'il poursuit des études ou si, fille, elle remplace la mère décédée, impotente, divorcée ou veuve, et au-delà en cas d'infirmité ou de maladie incurable [@loi60-30, art. 54]. Ces limites ont été relevées en 1996 : le tableau qui les met en regard est donné avec [la réforme de 1996](#sec-pf-reforme-1996).
+
+**Combien d'enfants.** Quatre au maximum : le cinquième enfant et les suivants, dans l'ordre de primogéniture ou d'adoption, n'ouvrent droit « en aucun cas » aux allocations [@loi60-30, art. 52].
+
+**Le maintien du droit.** Le droit est **maintenu** dans plusieurs situations de rupture : décès du salarié par accident du travail, y compris pour les enfants nés dans les trois cents jours suivants ; incapacité temporaire, et incapacité permanente d'au moins 40 % ; interruption de travail pour maladie dans la limite de 365 jours ; période légale de couches, prorogeable jusqu'à un an [@loi60-30, art. 56-58].
+
+**Le montant.** L'allocation afférente à chaque enfant est un pourcentage de la rémunération trimestrielle du travailleur, prise dans la limite d'un plafond ; le montant servi au foyer est la somme des allocations des enfants venant en rang utile [@loi60-30, art. 61].
+
+::: {.callout-note title="La formule des allocations familiales"}
+Le montant trimestriel des allocations familiales servies du chef d'un travailleur est la somme, sur les rangs servis, d'un taux propre à chaque rang appliqué à sa rémunération plafonnée :
+
+$$
+A = \sum_{r=1}^{\min(N,\ \bar n)} \tau_r \cdot \min(W,\ \bar W)
+$$
+
+où $A$ est le montant trimestriel des allocations familiales, $N$ le nombre d'enfants à charge ouvrant droit, $r$ le rang de l'enfant dans l'ordre de primogéniture ou d'adoption, $\bar n$ le nombre maximal de rangs servis, $\tau_r$ le taux de l'allocation afférente à l'enfant de rang $r$, $W$ la rémunération globale trimestrielle du travailleur et $\bar W$ le plafond de l'assiette trimestrielle.
+
+Au 1^er^ avril 1961, ces grandeurs valent, $\bar W$ en dinars [@loi60-30, art. 52, 61 et 130] :
+
+$$
+\tau_1 = \tau_2 = \tau_3 = \tau_4 = 15\,\%, \qquad \bar W = 52{,}500, \qquad \bar n = 4
+$$
+
+Trois réformes ont modifié ces valeurs : les taux $\tau_r$ et le plafond $\bar W$ en 1976, le plafond $\bar W$ en 1986, le nombre $\bar n$ en 1989 (@sec-pf-reformes). Leur série complète est donnée par le tableau de longue période (@tbl-af-evolution).
+:::
+
+<!-- TODO (rédacteur) : les formules de ce chapitre ne sont pas protégées par la synchronisation
+de traduction (scripts/translate_sync.py) : vérifier après son passage que les formules
+d'affichage et les formules en ligne de la version arabe sont restées identiques à celles du
+français. -->
+
+L'assiette n'a qu'un plafond : la loi de 1960 écarte la part des gains qui dépasse 52,500 dinars par trimestre, sans fixer de minimum [@loi60-30, art. 61]. Le montant servi aux orphelins ne peut être inférieur à 50 % du maximum de l'allocation lorsque les bénéficiaires sont les enfants de travailleurs décédés ou atteints d'une incapacité permanente d'au moins 40 % [@loi60-30, art. 63]. Les allocations sont versées par la caisse au moins une fois par trimestre, dans les quarante-cinq jours suivant le terme de la période [@loi60-30, art. 65].
+
+#### Les réformes des allocations familiales {#sec-pf-reformes}
+
+L'article 61, alinéa 2, de la loi n° 60-30, qui porte le montant, a été réécrit trois fois, et chaque réécriture ne touche pas les mêmes grandeurs ; une quatrième loi, en 1996, a modifié les conditions tenant à l'enfant et à l'allocataire. Les réformes sont présentées dans l'ordre de leur effet ; leurs valeurs sont rassemblées dans le tableau de longue période (@tbl-af-evolution).
+
+##### 1976 : des taux dégressifs par rang {#sec-pf-reforme-1976}
+
+La **loi n° 75-82 du 30 décembre 1975**, avec effet au 1^er^ janvier 1976, opère la rupture de méthode du dispositif : le taux unique de 15 % fait place à des taux dégressifs selon le rang de l'enfant, et le plafond de l'assiette passe de 52,500 à 72 dinars par trimestre [@loi75-82, art. 1-2]. Avec les notations de 1961 :
+
+$$
+\tau_1 = 18\,\%, \qquad \tau_2 = 16\,\%, \qquad \tau_3 = 14\,\%, \qquad \tau_4 = 12\,\%, \qquad \bar W = 72
+$$
+
+Le nombre de rangs servis reste de quatre.
+
+##### 1986 : le plafond porté à 122 dinars {#sec-pf-reforme-1986}
+
+La **loi n° 86-75 du 28 juillet 1986**, avec effet au 1^er^ mai 1986, reprend la rédaction de 1976 en ne changeant que le plafond, porté à $\bar W = 122$ dinars par trimestre ; les quatre taux sont inchangés [@loi86-75, art. 1-2].
+
+##### 1989 : les trois premiers enfants {#sec-pf-reforme-1989}
+
+La **loi n° 88-38 du 6 mai 1988**, avec effet au 1^er^ janvier 1989, limite le droit aux **trois premiers enfants** : $\bar n = 3$. L'enfant substituant, en cas de décès dans le groupe des trois premiers, vient en rang utile sans porter le nombre au-delà de trois [@loi88-38, art. 1 et 5]. La réécriture de l'article 61 qui l'accompagne ne fixe plus que trois taux : le quatrième rang disparaît, corollaire de cette limitation [@loi88-38]. Taux et plafond sont inchangés.
+
+La même année, le droit s'étend au-delà du régime des salariés non agricoles : à compter du 1^er^ octobre 1989, le régime agricole amélioré sert les allocations familiales pour les trois premiers enfants, aux mêmes conditions et aux mêmes taux que ceux de la loi n° 60-30 [@loi89-73]. La matrice de fin de chapitre en donne la portée, régime par régime (@sec-matrice-regimes).
+
+##### 1996 : l'âge des enfants et l'attributaire {#sec-pf-reforme-1996}
+
+La **loi n° 96-65 du 22 juillet 1996** réécrit l'article 54 : elle relève la plupart des limites d'âge et fait servir les enfants handicapés ou infirmes quel que soit leur rang, c'est-à-dire en dehors du nombre maximal de rangs $\bar n$ de la formule [@loi96-65]. Les deux états successifs sont les suivants.
 
 | Situation de l'enfant | Loi n° 60-30, art. 54 (origine) | Art. 54 nouveau, loi n° 96-65 |
 |---|---|---|
@@ -115,29 +192,15 @@ Le droit est **maintenu** dans plusieurs situations de rupture : décès du sala
 | Infirmité ou maladie incurable | au-delà de 20 ans | au-delà de **21 ans**, et titulaires d'une carte d'handicapé non pris en charge intégralement |
 | Rang de l'enfant | — | les enfants handicapés ou infirmes sont servis **quel que soit leur rang** |
 
-Sources : @loi60-30, art. 54 ; @loi96-65. La date d'effet de la loi n° 96-65 n'a pas été établie.
+Sources : @loi60-30, art. 54 ; @loi96-65. La date d'effet de la loi n° 96-65 n'est pas établie ici.
 
-**Le montant : quatre états, aucun n'est celui de 1960.** C'est le point sur lequel la lecture des textes corrige le plus nettement la présentation courante. L'article 61, alinéa 2, de la loi n° 60-30 a été réécrit trois fois, et chaque réécriture ne touche pas les mêmes paramètres.
+La même loi ajoute que la personne ayant la garde de l'enfant peut être attributaire même sans activité propre, si le droit est ouvert du chef du père ou de la mère [@loi96-65].
 
-```{python}
-#| echo: false
-#| output: asis
-table("af_evolution",
-      "Allocations familiales du régime contributif : taux par rang de l'enfant, plafond de l'assiette trimestrielle et nombre de rangs servis, depuis 1961",
-      "tbl-af-evolution")
-```
-
-Sources : les textes cités, dans leur édition du *Journal officiel* ; chaque ligne porte sa date d'effet telle que l'énonce l'article final du texte. Celle de la loi n° 60-30 est le 1^er^ avril 1961 : ses articles sur les allocations familiales ne sont pas au nombre des dispositions d'application immédiate [@loi60-30, art. 130].
-
-Trois conséquences. Les taux de 18, 16 et 14 % datent de **1976** et non de 1988 ; le plafond de 122 dinars date de **1986** et non de 1988 ; ce que la loi n° 88-38 apporte, c'est la suppression du quatrième rang, corollaire de la limitation du droit aux **trois premiers enfants** qu'elle opère au même article [@loi88-38, art. 1]. La rupture de méthode, elle, est celle de 1976 : le taux unique de 15 % fait place à des taux dégressifs par rang, et le plafond de l'assiette passe de 52,500 à 72 dinars par trimestre. L'assiette n'a qu'un plafond : la loi de 1960 écarte la part des gains qui dépasse 52,500 dinars par trimestre, sans fixer de minimum [@loi60-30, art. 61].
-
-Le nombre d'enfants ouvrant droit suit la même chronologie : quatre au maximum à l'origine, le cinquième enfant et les suivants n'ouvrant droit « en aucun cas » [@loi60-30, art. 52] ; **trois** à compter du 1^er^ janvier 1989, l'enfant substituant en cas de décès venant en rang utile sans porter le nombre au-delà de trois [@loi88-38, art. 1]. Les allocations sont versées par la caisse au moins une fois par trimestre, dans les quarante-cinq jours suivant le terme de la période [@loi60-30, art. 65].
-
-Enfin, le montant servi aux orphelins ne peut être inférieur à 50 % du maximum de l'allocation lorsque les bénéficiaires sont les enfants de travailleurs décédés ou atteints d'une incapacité permanente d'au moins 40 % [@loi60-30, art. 63].
+La loi n° 96-101 du 18 novembre 1996, enfin, maintient le droit pendant quatre trimestres au travailleur licencié pour raisons économiques ou technologiques [@loi96-101, art. 7] ; elle est exposée avec la protection contre la perte d'emploi (@sec-perte-emploi).
 
 #### La majoration pour salaire unique
 
-Le texte fondateur de ce dispositif est la **loi n° 80-36 du 28 mai 1980**, dont l'intitulé ne porte que « complétant la loi n° 60-30 » : aucune recherche par titre ne pouvait le trouver. Son article premier ajoute à la loi de 1960 une section I bis et un article 65 bis [@loi80-36].
+Le texte fondateur de ce dispositif est la **loi n° 80-36 du 28 mai 1980**, dont l'intitulé ne porte que « complétant la loi n° 60-30 ». Son article premier ajoute à la loi de 1960 une section I bis et un article 65 bis [@loi80-36].
 
 Trois conditions cumulatives ouvrent la majoration : des enfants à charge au sens de l'article 53, un **droit ouvert aux allocations familiales**, et un **conjoint n'exerçant aucune activité professionnelle** — c'est cette dernière qui donne au dispositif son nom. Les montants trimestriels énoncés par l'article 65 bis, avec effet au 1^er^ mai 1980, sont les suivants.
 
@@ -177,7 +240,31 @@ C'est le seul dispositif du bloc contributif dont le champ soit explicitement **
 
 <!-- RECHERCHE r-majoration-creche-revalorisation : revalorisation de la contribution aux frais de crèche (voir docs/recherches.yml) -->
 
-#### Le secteur public : les indemnités à caractère familial
+#### Longue période et données {#sec-pf-longue-periode}
+
+Le tableau suivant rassemble les quatre états de l'article 61, alinéa 2, de la loi n° 60-30 depuis son entrée en vigueur ; aucun n'est antérieur au 1^er^ avril 1961. C'est le point sur lequel la lecture des textes corrige le plus nettement la présentation courante, qui date de 1988 les taux et le plafond en vigueur.
+
+```{python}
+#| echo: false
+#| output: asis
+table("af_evolution",
+      "Allocations familiales du régime contributif : taux par rang de l'enfant, plafond de l'assiette trimestrielle et nombre de rangs servis, depuis 1961",
+      "tbl-af-evolution")
+```
+
+Sources : les textes cités, dans leur édition du *Journal officiel* ; chaque ligne porte sa date d'effet telle que l'énonce l'article final du texte. Celle de la loi n° 60-30 est le 1^er^ avril 1961 : ses articles sur les allocations familiales ne sont pas au nombre des dispositions d'application immédiate [@loi60-30, art. 130].
+
+Trois conséquences. Les taux de 18, 16 et 14 % datent de **1976** et non de 1988 ; le plafond de 122 dinars date de **1986** et non de 1988 ; ce que la loi n° 88-38 apporte, c'est la suppression du quatrième rang, corollaire de la limitation du droit aux **trois premiers enfants** qu'elle opère au même article [@loi88-38, art. 1]. La rupture de méthode, elle, est celle de 1976 : le taux unique de 15 % fait place à des taux dégressifs par rang, et le plafond de l'assiette passe de 52,500 à 72 dinars par trimestre.
+
+Le plafond de l'assiette est fixé en dinars par la loi, et non en multiple du salaire minimum : à la différence d'une limite indexée, il ne suit l'évolution des salaires que lorsqu'une loi le réécrit.
+
+<!-- TODO (documentaliste) : construire les séries de longue période des allocations familiales
+contributives — nombre d'allocataires et d'enfants bénéficiaires, dépenses de la branche,
+montant moyen servi — à partir des rapports annuels de la CNSS, et le plafond de l'assiette
+rapporté au SMIG trimestriel à chaque date du tableau ; aucune de ces séries n'est constituée à ce
+jour. -->
+
+#### Le secteur public : les indemnités à caractère familial {#sec-pf-secteur-public}
 
 Le secteur public a un dispositif **entièrement distinct**, qu'il ne faut pas confondre avec les allocations familiales. La loi n° 88-39, en un article unique, dispose que l'indemnité familiale est servie aux agents de l'État, des collectivités locales, des établissements publics, des offices et des sociétés nationales « autres que ceux soumis au régime de sécurité sociale institué par la loi n° 60-30 », dans les conditions prévues par le **décret du 22 novembre 1918** tel que modifié, et dans la limite des trois premiers enfants ; le montant est fixé par décret [@loi88-39].
 
@@ -316,7 +403,7 @@ Le trait propre à ce régime est la **gestion partagée** : l'employeur assure 
 
 Jusqu'en 2024, la couverture des risques professionnels supposait un lien d'emploi : la loi n° 94-28 vise les travailleurs « employés » et écarte les entreprises familiales sauf option. Le décret-loi n° 2024-4 est le premier texte à ouvrir cette couverture à des **non-salariées** : il l'étend à la travailleuse agricole salariée ou non salariée, en confie la gestion à la CNAM — ce qui est cohérent avec l'article 8 de la loi n° 2004-71 —, prévoit soins, appareillage, indemnité journalière en cas d'incapacité temporaire, [rente en cas d'incapacité permanente](#g-rente-accident-travail), indemnité de décès d'un mois de salaire et rente de décès, et fait prendre en charge par l'État les cotisations correspondantes pendant les trois premières années d'activité [@decret-loi2024-4, art. 38-48].
 
-### La protection contre la perte d'emploi
+### La protection contre la perte d'emploi {#sec-perte-emploi}
 
 L'intitulé de cette section n'est pas une prudence de style. **Il n'existe pas, en droit tunisien, de prestation nommée « [indemnité pour perte d'emploi](#g-indemnite-perte-emploi) »** : ce qui existe est, d'un côté, un dispositif de garantie de créances et de maintien de droits, et de l'autre, depuis fin 2024, un véhicule financier dont le régime n'est pas encore fixé.
 
@@ -588,7 +675,7 @@ Ce déplacement de borne est la clé de l'articulation avec l'[allocation famili
 
 Le décret n° 2022-715 crée un programme d'autonomisation économique au profit des bénéficiaires de l'AMEN social **et des personnes handicapées**, finançant des projets individuels ou collectifs sur des crédits annuels inscrits au budget du ministère, dont **30 % sont réservés aux personnes handicapées**. Une règle d'articulation importante y figure : le transfert monétaire mensuel est **maintenu pendant un an, renouvelable une fois**, à compter du lancement du projet [@decret-2022-715-autonomisation, art. 1-5]. Les conditions exigées du candidat ne sont pas établies ici.
 
-### Les allocations familiales non contributives (2022 →)
+### Les allocations familiales non contributives (2022 →) {#sec-af-non-contributive}
 
 Un point de vocabulaire d'abord, parce qu'il commande la chronologie. Ce que le dispositif AMEN comporte depuis 2020, c'est le **supplément de dix dinars par enfant** attaché au transfert monétaire ; ce n'est pas une allocation familiale. L'allocation familiale non contributive, comme prestation propre, **n'existe qu'à compter de 2022**.
 
@@ -675,7 +762,7 @@ Trois séries de textes ne relèvent pas du périmètre de ce chapitre mais en b
 forment deux séries datées exploitables, qui donneraient la vue d'évolution qui manque à ce
 paragraphe. -->
 
-## Qui reçoit quoi : la matrice régime × prestation
+## Qui reçoit quoi : la matrice régime × prestation {#sec-matrice-regimes}
 
 Cette matrice est le point d'arrivée du chapitre. Une prestation contributive n'est pas ouverte à tous les affiliés : elle l'est aux affiliés **de certains régimes**, sous des conditions de stage et d'assiette qui diffèrent. C'est l'inégalité de couverture entre régimes qui est le fait le plus documentable du système tunisien, et c'est elle que cette lecture croisée fait apparaître.
 
@@ -792,3 +879,19 @@ périmètre de scripts/build_glossary.py (BOOKS, l. 39), son annexe est déclar�
 _quarto.yml, trente ancres #g-… sont posées, capital-deces et indemnite-de-deces forment bien
 deux entrées distinctes qui se renvoient l'une à l'autre, regime-bas-revenus n'est plus
 « provisoire », et smig porte son voir_aussi vers condition-de-ressources. -->
+
+## Annexe : les notations du chapitre {#sec-prestations-notations}
+
+Les formules du chapitre emploient une notation unique. Chaque symbole est défini à sa première apparition, dans la phrase qui suit la formule où il est introduit ; le tableau les rassemble dans cet ordre.
+
+| Symbole | Grandeur | Première apparition |
+|---|---|---|
+| $A$ | Montant trimestriel des allocations familiales servies du chef d'un travailleur | @sec-pf-loi-1960 |
+| $N$ | Nombre d'enfants à charge ouvrant droit | @sec-pf-loi-1960 |
+| $r$ | Rang de l'enfant, dans l'ordre de primogéniture ou d'adoption | @sec-pf-loi-1960 |
+| $\bar n$ | Nombre maximal de rangs servis | @sec-pf-loi-1960 |
+| $\tau_r$ | Taux de l'allocation afférente à l'enfant de rang $r$ | @sec-pf-loi-1960 |
+| $W$ | Rémunération globale trimestrielle du travailleur | @sec-pf-loi-1960 |
+| $\bar W$ | Plafond de l'assiette trimestrielle | @sec-pf-loi-1960 |
+
+: Notations du chapitre, dans l'ordre de leur introduction {#tbl-prestations-notations}
