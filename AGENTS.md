@@ -55,6 +55,11 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
 - **Pas de jargon de dépouillement dans le texte visible** : ni « objet seul », ni « non lu », ni
   « métadonnées seules », ni `[T]`/`[M]`/`[D]`. On dit en clair ce qui est connu — « seul l'intitulé
   de ce texte est connu ici » —, ou on lit le texte.
+- **Une recherche infructueuse ne se raconte pas** : ni « n'a pas été retrouvé », ni « au
+  *Journal officiel* jusqu'au numéro du… ». Le texte dit le constat (« ce décret n'est pas
+  identifié ici ») et porte une ancre `<!-- RECHERCHE r-… : … -->` vers une fiche rejouable de
+  `docs/recherches.yml` — requêtes, sources, couverture datée, résultat. `scripts/recherches.py`
+  la vérifie (CI), la relance et l'élargit.
 - **Aucun chiffre ponctuel isolé** : toute valeur vient avec sa vue d'évolution datée. Et dans un
   tableau de textes, la colonne de contenu donne le changement concret — article, avant → après —,
   sinon la ligne n'a rien à y faire.

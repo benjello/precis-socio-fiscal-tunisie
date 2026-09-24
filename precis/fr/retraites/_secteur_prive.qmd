@@ -93,7 +93,9 @@ de traduction (scripts/translate_sync.py) : vérifier après son passage que les
 d'affichage et les formules en ligne de la version arabe sont restées identiques à celles du
 français. -->
 
-**La limite de calcul.** La limite $L$ n'est pas un plafond de cotisation : le régime cotise sur la totalité du salaire, comme l'expose le livre « Cotisations sociales ». Elle borne la part du salaire que la pension prend en compte, et c'est au-delà d'elle que commence l'assiette du régime complémentaire (@sec-regime-complementaire). Fixée à six fois le SMIG rapporté à 2 400 heures par an en 1974, reprise telle quelle en 1990, elle est précisée en 1994 par la référence au SMIG du régime de 48 heures. Aucun autre modificatif du décret qui la touche n'a été retrouvé jusqu'au *Journal officiel* du 18 septembre 2026 (@sec-rsna-depuis-2007). Exprimée en multiple du SMIG, elle en suit l'évolution sans qu'aucun texte propre ait à la modifier.
+**La limite de calcul.** La limite $L$ n'est pas un plafond de cotisation : le régime cotise sur la totalité du salaire, comme l'expose le livre « Cotisations sociales ». Elle borne la part du salaire que la pension prend en compte, et c'est au-delà d'elle que commence l'assiette du régime complémentaire (@sec-regime-complementaire). Fixée à six fois le SMIG rapporté à 2 400 heures par an en 1974, reprise telle quelle en 1990, elle est précisée en 1994 par la référence au SMIG du régime de 48 heures. Aucun autre modificatif du décret qui la touche n'est identifié ici (@sec-rsna-depuis-2007). Exprimée en multiple du SMIG, elle en suit l'évolution sans qu'aucun texte propre ait à la modifier.
+
+<!-- RECHERCHE r-dec74-499-modificatifs : modificatifs des art. 18 et 19 du décret n° 74-499 (voir docs/recherches.yml) -->
 
 ```{python}
 #| label: fig-limite-calcul
@@ -253,7 +255,9 @@ celle de 1974 offre un choix entre deux périodes, celle de 1990 énonce une non
 ni l'un ni l'autre n'est une valeur datée. Voir l'en-tête de
 scripts/generate_retraites_tables.py. -->
 
-Les deux décrets se succèdent. Le décret n° 90-1455 porte la fenêtre de référence à dix ans en réécrivant l'article 18, mais laisse inchangé l'article 19, qui continue de calculer la moyenne sur trente-six ou soixante mois [@decret90-1455, art. 1]. Le décret n° 94-1429, qui vise le décret de 1974 « tel que modifié par le décret n° 90-1455 », abroge et remplace ensemble ces deux articles et substitue à la règle de 1990 une montée progressive, de cinq ans en 1994 à dix ans en 1996, la durée de la moyenne suivant celle de la fenêtre [@decret94-1429, art. 1]. Aucun texte publié au *Journal officiel* entre ces deux décrets qui suspende ou reporte la règle de 1990 n'a été retrouvé, et aucun n'indique comment les pensions ont été calculées entre septembre 1990 et juin 1994, alors que les articles 18 et 19 prescrivaient l'un dix années de salaires, l'autre une moyenne sur trente-six ou soixante mois.
+Les deux décrets se succèdent. Le décret n° 90-1455 porte la fenêtre de référence à dix ans en réécrivant l'article 18, mais laisse inchangé l'article 19, qui continue de calculer la moyenne sur trente-six ou soixante mois [@decret90-1455, art. 1]. Le décret n° 94-1429, qui vise le décret de 1974 « tel que modifié par le décret n° 90-1455 », abroge et remplace ensemble ces deux articles et substitue à la règle de 1990 une montée progressive, de cinq ans en 1994 à dix ans en 1996, la durée de la moyenne suivant celle de la fenêtre [@decret94-1429, art. 1]. Aucun texte publié au *Journal officiel* entre ces deux décrets qui suspende ou reporte la règle de 1990 n'est identifié ici, et aucun n'indique comment les pensions ont été calculées entre septembre 1990 et juin 1994, alors que les articles 18 et 19 prescrivaient l'un dix années de salaires, l'autre une moyenne sur trente-six ou soixante mois.
+
+<!-- RECHERCHE r-rsna-textes-1990-1994 : texte intermédiaire entre les décrets n° 90-1455 et 94-1429 (voir docs/recherches.yml) -->
 
 **Le décret de 1994 ne régularise pas l'intervalle, et il faut le dire précisément.** Il porte une seule clause de rétroactivité, et elle ne concerne pas le calcul de la pension : son article 2 fait prendre effet au 1^er^ janvier 1994 les dispositions du seul **article 5 (b) nouveau**, c'est-à-dire la quote-part de cotisations affectée au régime [@decret94-1429, art. 2]. Les articles 18 et 19 nouveaux, eux, valent pour l'avenir, selon le calendrier qu'ils portent. Le législateur n'a donc ni validé ni mentionné les liquidations intervenues sous la rédaction de 1990 — silence qui ne s'explique par aucun texte publié.
 
@@ -284,9 +288,13 @@ CNSS, « cnss-chiffres ». Cette question se résoudra hors du Journal officiel,
 
 ##### Le barème d'actualisation {#sec-rsna-bareme}
 
-Les salaires anciens de la fenêtre de référence ne sont pas pris pour leur valeur nominale : ils sont actualisés. Le barème annoncé en 1990, puis fixé « annuellement » depuis 1994, a été publié par une série d'arrêtés du ministre des affaires sociales « relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants », une trentaine d'arrêtés annuels du 17 novembre 1994 au 16 juillet 2024. Le premier, l'arrêté du 17 novembre 1994, vise le décret n° 94-1429, fixe un coefficient pour chaque année de salaire de 1961 à 1993 et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ juillet 1994 [@arrete-1994-11-17-bareme-actualisation, art. 1-2] ; aucun arrêté pris en application de la rédaction de 1990 n'a été retrouvé. L'arrêté du 29 mars 1997 donne pour chaque année de salaire un coefficient multiplicateur et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ janvier 1997 [@arrete-1997-03-29-bareme-actualisation]. Les coefficients du barème de 2024 sont donnés dans l'onglet Données de la @fig-bareme-taux.
+Les salaires anciens de la fenêtre de référence ne sont pas pris pour leur valeur nominale : ils sont actualisés. Le barème annoncé en 1990, puis fixé « annuellement » depuis 1994, a été publié par une série d'arrêtés du ministre des affaires sociales « relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants », une trentaine d'arrêtés annuels du 17 novembre 1994 au 16 juillet 2024. Le premier, l'arrêté du 17 novembre 1994, vise le décret n° 94-1429, fixe un coefficient pour chaque année de salaire de 1961 à 1993 et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ juillet 1994 [@arrete-1994-11-17-bareme-actualisation, art. 1-2] ; aucun arrêté pris en application de la rédaction de 1990 n'est identifié ici. L'arrêté du 29 mars 1997 donne pour chaque année de salaire un coefficient multiplicateur et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ janvier 1997 [@arrete-1997-03-29-bareme-actualisation]. Les coefficients du barème de 2024 sont donnés dans l'onglet Données de la @fig-bareme-taux.
 
-**Le rythme de la série, et ses trous.** Les vingt-huit arrêtés retrouvés ne couvrent pas les trente et une années qui séparent 1994 de 2024 : **aucun arrêté n'a été retrouvé pour 2016, 2017 et 2019**. L'adjectif « annuel » que porte le dispositif décrit donc une intention, non une pratique constante.
+**Le rythme de la série, et ses trous.** Les vingt-huit arrêtés identifiés ne couvrent pas les trente et une années qui séparent 1994 de 2024 : **aucun arrêté n'est identifié pour 2016, 2017 et 2019**. L'adjectif « annuel » que porte le dispositif décrit donc une intention, non une pratique constante.
+
+<!-- RECHERCHE r-rsna-bareme-1990 : barème d'actualisation pris sous la rédaction de 1990 (voir docs/recherches.yml) -->
+
+<!-- RECHERCHE r-rsna-bareme-annees-manquantes : arrêtés de barème pour 2016, 2017 et 2019 (voir docs/recherches.yml) -->
 
 Leur calendrier, en revanche, est régulier. L'arrêté est signé dans les premiers mois de l'année — février le plus souvent, exceptionnellement mars, avril ou juillet — et **s'applique rétroactivement aux pensions dont le droit est ouvert à compter du 1^er^ janvier de cette même année**. Une pension liquidée en janvier est donc calculée avec un barème qui n'est pas encore publié. La règle est établie pour vingt arrêtés, de 1997 à 2024, dont l'article 2 l'énonce ; elle ne l'est pas ici pour les autres.
 
@@ -412,17 +420,13 @@ Le même décret reformule le tiret a) de l'article 15 bis, sans en changer les 
 
 #### Depuis 2007 {#sec-rsna-depuis-2007}
 
-Aucun texte modifiant le décret n° 74-499 après le décret n° 2007-2148 n'a été retrouvé au *Journal officiel* jusqu'au numéro du 18 septembre 2026, dans les éditions française et arabe, le contenu du seul numéro 58 de 2026 n'étant pas établi ici. Les visas des textes récents le confirment : un arrêté conjoint du 5 août 2026, publié au *Journal officiel* n° 80 du 7 août 2026, vise encore le décret n° 74-499 tel que modifié en dernier lieu par le décret n° 2007-2148. L'âge légal de 60 ans, le stage de 120 mois, le taux de 40 % acquis au terme du stage et sa majoration de 0,5 % par trimestre, le plafond de 80 %, le salaire de référence sur dix ans et la pension minimale sont donc ceux qu'ont fixés les textes de 1974 à 2007. La loi n° 2019-37, qui porte l'âge légal à 62 ans dans le secteur public, modifie la loi n° 85-12 et non le décret de 1974 [@loi2019-37, art. 1] (@sec-cnrps-reforme-2019). Un relèvement de l'âge de la retraite dans le secteur privé a été évoqué publiquement en 2023 et en 2024 ; aucun texte en ce sens n'a été retrouvé au *Journal officiel* jusqu'au 18 septembre 2026, sous la même réserve du numéro 58. Les seules règles d'âge prises depuis 2007 sont des arrêtés d'application de l'article 15, qui fixent à 55 ans l'âge de certaines catégories (@sec-rsna-ages-derogatoires).
+Aucun texte modifiant le décret n° 74-499 après le décret n° 2007-2148 n'est identifié ici. Les visas des textes récents le confirment : un arrêté conjoint du 5 août 2026, publié au *Journal officiel* n° 80 du 7 août 2026, vise encore le décret n° 74-499 tel que modifié en dernier lieu par le décret n° 2007-2148. L'âge légal de 60 ans, le stage de 120 mois, le taux de 40 % acquis au terme du stage et sa majoration de 0,5 % par trimestre, le plafond de 80 %, le salaire de référence sur dix ans et la pension minimale sont donc ceux qu'ont fixés les textes de 1974 à 2007. La loi n° 2019-37, qui porte l'âge légal à 62 ans dans le secteur public, modifie la loi n° 85-12 et non le décret de 1974 [@loi2019-37, art. 1] (@sec-cnrps-reforme-2019). Un relèvement de l'âge de la retraite dans le secteur privé a été évoqué publiquement en 2023 et en 2024 ; aucun texte en ce sens n'est identifié ici. Les seules règles d'âge prises depuis 2007 sont des arrêtés d'application de l'article 15, qui fixent à 55 ans l'âge de certaines catégories (@sec-rsna-ages-derogatoires).
 
-<!-- TODO (documentaliste) : le numéro 58 de 2026 du JORT n'a pu être consulté ; le dépouiller pour lever cette réserve et celle du décret d'application du décret-loi n° 2024-4. -->
+<!-- RECHERCHE r-dec74-499-modificatifs : modificatifs du décret n° 74-499 après le décret n° 2007-2148 (voir docs/recherches.yml) -->
 
-<!-- TODO (documentaliste) : recensement des modificatifs du décret n° 74-499 vérifié jusqu'au
-JORT n° 93 du 18 septembre 2026 (éditions FR et AR lues ; seconde voie : visa de l'arrêté conjoint
-du 5 août 2026, JORT n° 80 du 7 août 2026, éd. fr. p. 1611, éd. ar. p. 1706, qui cite encore le
-décret n° 2007-2148 comme dernier modificatif). Restent à contrôler : (1) le JORT n° 58 de 2026
-(pp. 1073-1127), introuvable sur pist.tn (404) et absent du corpus local ; (2) les numéros
-postérieurs au n° 93 de 2026 — notamment pour un éventuel décret relatif à l'âge de la retraite
-dans le secteur privé (relèvement à 62 ans évoqué en 2023-2024, non publié à ce jour). -->
+<!-- RECHERCHE r-rsna-age-relevement : relèvement de l'âge légal dans le secteur privé (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : lire le JORT n° 58 de 2026 et les numéros suivants — a_faire des fiches r-dec74-499-modificatifs, r-rsna-age-relevement et r-dl2024-4-art33 (décret d'application du décret-loi n° 2024-4) de docs/recherches.yml. -->
 
 ### L'évolution des autres éléments {#sec-rsna-autres-elements}
 
@@ -446,11 +450,9 @@ Sources : @arrete-1975-07-04-age-mineurs, art. 1-2 ; @arrete-2015-09-11-age-mine
 régime des salariés non agricoles. TODO (rédacteur) : remplacer par un tableau engendré une fois
 ces valeurs versées. -->
 
-L'arrêté de 1975 prend effet au 1^er^ janvier 1974, date d'effet du décret qu'il applique [@arrete-1975-07-04-age-mineurs, art. 2]. Celui de 2015, qui s'appuie sur les articles 15 et 16, ne vise que l'arrêté de 1975 parmi les arrêtés antérieurs ; aucun arrêté intermédiaire n'a été retrouvé. Pour le secteur public, les ouvriers accomplissant des travaux pénibles et insalubres relèvent d'une autre liste, fixée en application de la loi n° 85-12 (@sec-cnrps-categories-derogatoires).
+L'arrêté de 1975 prend effet au 1^er^ janvier 1974, date d'effet du décret qu'il applique [@arrete-1975-07-04-age-mineurs, art. 2]. Celui de 2015, qui s'appuie sur les articles 15 et 16, ne vise que l'arrêté de 1975 parmi les arrêtés antérieurs ; aucun arrêté intermédiaire n'est identifié ici. Pour le secteur public, les ouvriers accomplissant des travaux pénibles et insalubres relèvent d'une autre liste, fixée en application de la loi n° 85-12 (@sec-cnrps-categories-derogatoires).
 
-<!-- TODO (documentaliste) : rechercher d'éventuels arrêtés d'application de l'article 15 pris
-entre 1975 et 2015 (les requêtes « pénibles », « insalubres » et « admission à la retraite » n'en
-donnent aucun). -->
+<!-- RECHERCHE r-rsna-arretes-art15 : arrêtés d'application de l'art. 15 pris entre 1975 et 2015 (voir docs/recherches.yml) -->
 
 #### La liquidation et le service
 
@@ -657,7 +659,9 @@ où $\tau^*$ est le taux d'équilibre, $N_p$ le nombre de pensionnés, $\bar p$ 
 - **Le numérateur ne comprend que les pensions du régime légal.** Les pensions servies sont celles du régime des salariés non agricoles, de toutes natures, orphelins compris, **hors régime complémentaire** : celui-ci, facultatif, est assis sur la seule tranche de salaire au-delà de la limite de calcul (@sec-regime-complementaire). Les effectifs ne permettent pas la même séparation : $N_p$ compte les pensionnés de toutes natures, orphelins et bénéficiaires du régime complémentaire compris, et les cotisants $N_c$ sont les actifs du régime, y compris les non-assujettis que les annuaires comptent à part [@cnss-annuaires-statistiques]. Avec les pensions du régime complémentaire, le taux d'équilibre serait de 14,43 % en 2000 et de 18,88 % en 2017, soit 0,4 à 0,9 point de plus selon les années.
 - **Le taux légal de la branche se lit de deux façons.** Il est la somme d'une cotisation propre de 5,25 % des salaires depuis 1997 [@decret97-555] et d'une quote-part de la masse des cotisations des régimes de la loi n° 60-30, de « 6,25/20ème » depuis le 1^er^ janvier 1994, puis de « 7,25/20ème » depuis le 1^er^ janvier 2003 [@decret94-1429, art. 1-2 ; @decret2003-1212, art. 1-2]. Exprimée en vingtièmes, cette fraction date d'un temps où le taux global de la loi n° 60-30 était de 20 % : un vingtième valait alors un point de salaire. Depuis que la loi n° 97-4 a ramené ce taux global à 18 % [@loi97-4], les deux lectures divergent. Lue « en points », la quote-part donne à la branche un taux légal de 11,50 % de 2000 à 2002 et de 12,50 % depuis 2003 ; c'est la lecture de la caisse, qui publie un taux de 12,5 % en renvoyant au décret n° 2003-1212 [@cnss-annuaires-statistiques]. Lue littéralement, comme une fraction des 18 %, elle donne 10,875 % puis 11,775 %. Pour 2000-2002, aucune publication identifiée de la caisse ne donne ce taux : le chiffre de 11,50 % est déduit du texte par la même lecture. La figure porte les deux lectures.
 
-Pour 1980 et 1985-1991, l'annexe statistique d'un rapport de la Banque mondiale, qui reprend des données du ministère du Plan, donne les pensions versées, les cotisations de pension, les actifs et les pensionnés [@bm-1993-social-protection, annexe statistique, tableaux 3 et 5]. Aucune donnée n'a été retrouvée pour 1981-1984 ni pour 1992-1999, et ces années ne sont pas raccordées à la série de la caisse, dont elles diffèrent par le champ et par le dénominateur. Le champ est celui de la [CAVIS](#g-cavis), qui servait les pensions de tout le secteur privé : le régime des salariés non agricoles et les régimes conventionnels fusionnés avec lui, puis le régime des salariés agricoles à compter de 1981 [@loi81-6] et, à la fin des années 1980, d'autres régimes, dont celui des Tunisiens à l'étranger [@decret89-107, art. 2] ; le rapport ne les distingue pas. La CAVIS gérait aussi le régime complémentaire (@sec-regime-complementaire) : le rapport ne dit pas si ses pensions et ses cotisations sont comprises dans les montants. La masse des salaires n'est pas publiée ; elle se déduit des cotisations, comme pour le secteur public (@sec-cnrps-equilibre) :
+Pour 1980 et 1985-1991, l'annexe statistique d'un rapport de la Banque mondiale, qui reprend des données du ministère du Plan, donne les pensions versées, les cotisations de pension, les actifs et les pensionnés [@bm-1993-social-protection, annexe statistique, tableaux 3 et 5]. Aucune donnée n'est disponible ici pour 1981-1984 ni pour 1992-1999, et ces années ne sont pas raccordées à la série de la caisse, dont elles diffèrent par le champ et par le dénominateur. Le champ est celui de la [CAVIS](#g-cavis), qui servait les pensions de tout le secteur privé : le régime des salariés non agricoles et les régimes conventionnels fusionnés avec lui, puis le régime des salariés agricoles à compter de 1981 [@loi81-6] et, à la fin des années 1980, d'autres régimes, dont celui des Tunisiens à l'étranger [@decret89-107, art. 2] ; le rapport ne les distingue pas. La CAVIS gérait aussi le régime complémentaire (@sec-regime-complementaire) : le rapport ne dit pas si ses pensions et ses cotisations sont comprises dans les montants. La masse des salaires n'est pas publiée ; elle se déduit des cotisations, comme pour le secteur public (@sec-cnrps-equilibre) :
+
+<!-- TODO (documentaliste) : données de la CAVIS pour 1981-1984 et 1992-1999 (pensions, cotisations, effectifs) à chercher hors du rapport de la Banque mondiale ; pas de fiche RECHERCHE, faute de requête rejouable sur le Journal officiel. -->
 
 $$
 N_c\,\bar w = \frac{C}{\kappa}
@@ -753,7 +757,7 @@ Ces chiffres sont calculés à partir des annuaires statistiques de la caisse [@
 - **Les effectifs sont des stocks de fin d'année, les montants des flux annuels.** Lorsque le nombre de pensionnés augmente fortement, comme en 2012 et en 2016, la pension moyenne de l'année en est sous-estimée.
 - **Le taux légal a deux lectures**, exposées plus haut ; l'écart entre le taux d'équilibre et le taux légal en dépend, de 0,6 à 0,7 point selon les années de 2000 à 2017. De 1980 à 1991, les deux lectures coïncident.
 - **De 1980 à 1991, le champ et le dénominateur diffèrent.** Les pensions, les cotisations et les effectifs sont ceux de tous les régimes gérés par la CAVIS, non du seul régime des salariés non agricoles, et la masse des salaires est déduite des cotisations au taux de ce régime [@bm-1993-social-protection]. De 1988 à 1991, ce taux est le plus élevé des régimes : la masse est sous-estimée et le taux d'équilibre est un maximum pour l'ensemble. De 1981 à 1987, les salariés agricoles cotisent à 5,25 % contre 5 % : l'erreur est de sens inverse et faible. Le rapport entre les pensions et les cotisations de la CAVIS ne dépend, lui, d'aucun taux : il passe de 1,20 en 1985 à 1,75 en 1987, puis de 1,07 en 1988 à 0,99 en 1991. Rapportées à la part du taux global qui revenait à la caisse nationale, 18,75 % jusqu'en 1987 puis 15,75 %, les autres cotisations de celle-ci donnent une seconde masse des salaires, que la première dépasse de 3 % à 21 % selon les années, sans rupture en 1988 : la date et le niveau de la quote-part sont cohérents avec les montants encaissés. Rien n'établit, enfin, si les montants comprennent ou non le régime complémentaire, que gérait aussi la CAVIS : ses pensions et ses cotisations entreraient au numérateur comme au dénominateur, et le sens de l'erreur n'est pas connu.
-- **La série de la caisse commence en 2000 et s'arrête en 2017.** Les annuaires statistiques de la caisse postérieurs à 2017 n'ont pas été retrouvés, et ses autres publications identifiées ne donnent pas la masse salariale déclarée du régime.
+- **La série de la caisse commence en 2000 et s'arrête en 2017.** Les annuaires statistiques de la caisse postérieurs à 2017 ne sont pas disponibles ici, et ses autres publications identifiées ne donnent pas la masse salariale déclarée du régime.
 
 Le taux d'équilibre est enfin une grandeur instantanée, qui rapporte les seules pensions aux seuls salaires déclarés : il ne tient compte ni des réserves du régime ni de ses autres ressources.
 
@@ -793,7 +797,9 @@ $$
 n_0 = 120, \qquad \tau_0 = 40\,\%, \qquad \alpha = 0{,}5\,\%, \qquad u = 3, \qquad \bar\tau = 80\,\%, \qquad \mathcal{T} = \{3,\ 5\}
 $$
 
-Le stage de 120 mois est celui de 40 trimestres ; le taux est de 40 % à 40 trimestres, majoré de 0,5 % par trimestre supplémentaire, dans la limite de 80 % [@loi81-6, art. 49]. Par le calcul, le taux atteint son plafond au terme de 120 trimestres de cotisation, soit 360 mois, comme dans le régime non agricole. Aucun texte modifiant ces valeurs n'a été retrouvé au *Journal officiel* jusqu'au 18 septembre 2026 (@sec-rsa-evolution).
+Le stage de 120 mois est celui de 40 trimestres ; le taux est de 40 % à 40 trimestres, majoré de 0,5 % par trimestre supplémentaire, dans la limite de 80 % [@loi81-6, art. 49]. Par le calcul, le taux atteint son plafond au terme de 120 trimestres de cotisation, soit 360 mois, comme dans le régime non agricole. Aucun texte modifiant ces valeurs n'est identifié ici (@sec-rsa-evolution).
+
+<!-- RECHERCHE r-loi81-6-modificatifs : modificatifs du cœur des régimes de la loi n° 81-6 (voir docs/recherches.yml) -->
 :::
 
 **La revalorisation** est législative et automatique dès l'origine : les pensions « sont révisées lors de chaque paiement proportionnellement à la variation du SMAG par rapport à celui qui a servi au calcul du salaire de référence de l'assuré lors de la liquidation initiale de la pension » [@loi81-6, art. 80] :
@@ -812,7 +818,9 @@ où $P'$ est la pension servie à une échéance postérieure à la liquidation,
 
 #### Pas de réforme du cœur du régime ; l'évolution des autres éléments {#sec-rsa-evolution}
 
-Aucun texte modifiant le cœur du régime n'a été retrouvé au *Journal officiel* de 1981 au 18 septembre 2026 : l'âge de 60 ans, le stage de 40 trimestres, le taux de 40 % et sa majoration de 0,5 % par trimestre, le plafond de 80 %, le salaire de référence forfaitaire et la revalorisation proportionnelle au SMAG sont ceux de la loi n° 81-6. Aucun texte instituant un départ anticipé ou une pension minimale n'a été retrouvé au *Journal officiel* jusqu'au numéro du 18 septembre 2026. Les visas des textes récents confirment ce recensement : l'arrêté conjoint du 10 juillet 2020 et l'édition arabe de celui du 5 août 2026 visent la loi n° 81-6 modifiée en dernier lieu par la loi n° 2007-43 [@arrete-2020-07-10-prime-pensions ; @arrete-2026-08-05-allocation-pauvres]. Quatre lois ont touché la procédure et les droits dérivés.
+Aucun texte modifiant le cœur du régime n'est identifié ici : l'âge de 60 ans, le stage de 40 trimestres, le taux de 40 % et sa majoration de 0,5 % par trimestre, le plafond de 80 %, le salaire de référence forfaitaire et la revalorisation proportionnelle au SMAG sont ceux de la loi n° 81-6. Aucun texte instituant un départ anticipé ou une pension minimale n'est identifié ici. Les visas des textes récents confirment ce constat : l'arrêté conjoint du 10 juillet 2020 et l'édition arabe de celui du 5 août 2026 visent la loi n° 81-6 modifiée en dernier lieu par la loi n° 2007-43 [@arrete-2020-07-10-prime-pensions ; @arrete-2026-08-05-allocation-pauvres]. Quatre lois ont touché la procédure et les droits dérivés.
+
+<!-- RECHERCHE r-loi81-6-modificatifs : modificatifs du cœur du régime de la loi n° 81-6 (voir docs/recherches.yml) -->
 
 | Élément | Loi n° 81-6 (1^er^ janvier 1981) | Modifications |
 |---|---|---|
@@ -894,7 +902,9 @@ $$
 n_0 = 120, \qquad \tau_0 = 40\,\%, \qquad \alpha = 0{,}5\,\%, \qquad u = 3, \qquad \bar\tau = 80\,\%, \qquad \mathcal{T} = \{3,\ 5\}, \qquad \ell = 6, \qquad \pi = \tfrac{1}{2}
 $$
 
-L'âge, le stage et le taux sont ceux des titres I et II, par le renvoi de l'article 101. Aucun texte modifiant ces valeurs n'a été retrouvé au *Journal officiel* jusqu'au 18 septembre 2026.
+L'âge, le stage et le taux sont ceux des titres I et II, par le renvoi de l'article 101. Aucun texte modifiant ces valeurs n'est identifié ici.
+
+<!-- RECHERCHE r-loi81-6-modificatifs : modificatifs du titre III de la loi n° 81-6 (voir docs/recherches.yml) -->
 :::
 
 **La revalorisation** est automatique à chaque augmentation du SMAG, d'une majoration égale à la hausse du SMAG journalier rapportée à 25 jours par mois, affectée du taux de la pension, soit, en base annuelle :
@@ -922,7 +932,9 @@ Le régime amélioré se rapproche ainsi du régime non agricole : il retient de
 
 Pour les pêcheurs indépendants et les petits armateurs qui relèvent du régime amélioré, le salaire n'est pourtant pas déclaré : le décret n° 90-548 fixe leur assiette au SMAG de 75 jours par trimestre, et répartit leur taux de cotisation de 15 % en 7,5 % pour les pensions, 4,5 % pour les allocations familiales et 3 % pour les assurances sociales [@decret90-548, art. 1-2]. Par le calcul, leur salaire annuel vaut $S_A$ : leur pension repose sur un salaire forfaitaire.
 
-**Aucune réforme du cœur du régime.** Aucun modificatif du titre III n'a été retrouvé au *Journal officiel* jusqu'au 18 septembre 2026. Les lois n° 96-66 et 97-61, qui réécrivent les articles 60 à 69 de la loi n° 81-6 (@sec-rsa-evolution), s'appliquent au régime amélioré par le renvoi de l'article 101.
+**Aucune réforme du cœur du régime.** Aucun modificatif du titre III n'est identifié ici. Les lois n° 96-66 et 97-61, qui réécrivent les articles 60 à 69 de la loi n° 81-6 (@sec-rsa-evolution), s'appliquent au régime amélioré par le renvoi de l'article 101.
+
+<!-- RECHERCHE r-loi81-6-modificatifs : modificatifs du titre III de la loi n° 81-6 (voir docs/recherches.yml) -->
 
 **L'équilibre du régime.** Hors le régime des salariés non agricoles, c'est le seul régime de la caisse dont les annuaires statistiques publient la masse salariale déclarée, de 2000 à 2017 [@cnss-annuaires-statistiques]. Le taux d'équilibre $\tau^*$ s'y calcule donc comme pour le régime non agricole (@sec-rsna-equilibre) : les pensions servies, de toutes natures, rapportées à la masse déclarée, produit du taux de remplacement apparent $\bar p / \bar w$ et du rapport $N_p / N_c$ entre pensionnés et cotisants, ceux-ci étant les salariés déclarés. Il est comparé à un taux légal $\kappa$ de 7,5 %, celui que la caisse publie pour la branche pensions du régime [@cnss-annuaires-statistiques]. La loi fixe le taux global de cotisation du régime à 15 %, en vigueur depuis le 1^er^ octobre 1989 [@loi89-73, art. 4] ; aucun texte identifié ne répartit ces 15 % entre les branches pour l'ensemble du régime, et les 7,5 % pour les pensions ne sont fixés par un texte que pour les pêcheurs indépendants et les petits armateurs [@decret90-548, art. 1-2].
 
@@ -986,12 +998,14 @@ Une cotisation minimale, calculée sur la moitié du SMIG, évite qu'une baisse 
 
 ### Pas de réforme de la formule ; les survivants en 1997 {#sec-complementaire-evolution}
 
-Aucun texte modifiant la formule du régime — l'acquisition des points, le salaire de référence, la valeur du point — n'a été retrouvé au *Journal officiel* : ces grandeurs relèvent de décisions du directeur général de la CAVIS, puis de la caisse nationale, qui n'y sont pas publiées. Le seul modificatif du règlement retrouvé est l'**arrêté du 27 janvier 1997**, qui abroge et remplace ses articles 21, 22, 24 et 30 [@arrete-1997-01-27-retraite-complementaire] :
+Aucun texte modifiant la formule du régime — l'acquisition des points, le salaire de référence, la valeur du point — n'est identifié ici : ces grandeurs relèvent de décisions du directeur général de la CAVIS, puis de la caisse nationale, qui ne sont pas publiées au *Journal officiel*. Le seul modificatif du règlement identifié est l'**arrêté du 27 janvier 1997**, qui abroge et remplace ses articles 21, 22, 24 et 30 [@arrete-1997-01-27-retraite-complementaire] :
 
 - le droit à pension de réversion est ouvert au « conjoint survivant » d'un pensionné ou d'un participant remplissant le stage (art. 21) ;
 - il est dû « lorsque les liens de mariage existent au moment du décès » (art. 22) ;
 - le remariage n'entraîne plus la suppression de la pension, mais sa suspension, et seulement s'il intervient avant 55 ans ; la pension est rétablie, revalorisée, et le cumul de pensions de conjoint survivant est interdit, la plus élevée étant servie (art. 24) ;
 - le total des pensions de survivants est plafonné à la pension dont bénéficiait ou aurait pu bénéficier le défunt (art. 30).
+
+<!-- RECHERCHE r-complementaire-modificatifs : modificatifs du règlement du régime complémentaire (voir docs/recherches.yml) -->
 
 L'arrêté ne porte pas de clause d'effet : le *Journal officiel* n° 11 du 7 février 1997 ayant été déposé au siège du gouvernorat de Tunis le 11 février, il devient exécutoire le 16 février 1997. Ses règles sont voisines de celles que le régime non agricole a reçues en 1990 et en 1997 (@sec-rsna-derives) et le régime agricole en 1996 (@sec-rsa-evolution).
 
@@ -1149,11 +1163,15 @@ vigueur du décret n° 2002-3018. -->
 
 #### L'évolution des autres éléments {#sec-rtns-autres-elements}
 
-**Les pensions ont été revalorisées une fois par un texte propre.** L'arrêté du ministre des affaires sociales du 29 juillet 1998, pris sur le fondement de l'article 30 du décret n° 95-1166, leur applique, avec effet au 1^er^ mai 1998, un coefficient multiplicateur qui dépend de l'année d'ouverture du droit : pour le secteur non agricole, de 2,33600 pour une pension ouverte en 1984 à 1,07551 pour une pension ouverte en 1996, 1,03684 en 1997 et 1 en 1998 ; pour le secteur agricole, 1,07551 jusqu'en 1996, puis 1,03684 et 1. Son article 2 interdit de cumuler ce coefficient avec les augmentations qui découlent de l'article 29, et ne l'accorde que si son « *rendement financier est meilleur pour l'allocataire* » [@arrete-1998-07-29-revalorisation-rtns, art. 1 à 3]. Les coefficients commencent en 1984 : ils s'appliquent à des pensions ouvertes sous les décrets de 1982. La règle de non-cumul confirme le mécanisme : les deux voies mènent au même endroit, l'une par le plancher, l'autre par le barème, et l'assuré reçoit la plus favorable. C'est un rattrapage ponctuel, non une indexation. Aucun autre arrêté de revalorisation propre à ce régime n'a été retrouvé, ni entre 1989 et 1998 ni après 1998 ; depuis 2002, la revalorisation étant devenue automatique, elle n'appelle plus ni arrêté ni règle de non-cumul.
+**Les pensions ont été revalorisées une fois par un texte propre.** L'arrêté du ministre des affaires sociales du 29 juillet 1998, pris sur le fondement de l'article 30 du décret n° 95-1166, leur applique, avec effet au 1^er^ mai 1998, un coefficient multiplicateur qui dépend de l'année d'ouverture du droit : pour le secteur non agricole, de 2,33600 pour une pension ouverte en 1984 à 1,07551 pour une pension ouverte en 1996, 1,03684 en 1997 et 1 en 1998 ; pour le secteur agricole, 1,07551 jusqu'en 1996, puis 1,03684 et 1. Son article 2 interdit de cumuler ce coefficient avec les augmentations qui découlent de l'article 29, et ne l'accorde que si son « *rendement financier est meilleur pour l'allocataire* » [@arrete-1998-07-29-revalorisation-rtns, art. 1 à 3]. Les coefficients commencent en 1984 : ils s'appliquent à des pensions ouvertes sous les décrets de 1982. La règle de non-cumul confirme le mécanisme : les deux voies mènent au même endroit, l'une par le plancher, l'autre par le barème, et l'assuré reçoit la plus favorable. C'est un rattrapage ponctuel, non une indexation. Aucun autre arrêté de revalorisation propre à ce régime n'est identifié ici, ni entre 1989 et 1998 ni après 1998 ; depuis 2002, la revalorisation étant devenue automatique, elle n'appelle plus ni arrêté ni règle de non-cumul.
 
 **Les autres textes modificatifs n'ont touché ni l'âge, ni le stage, ni le taux.** Le décret n° 96-1797 échelonne, à titre transitoire, la durée de travail de référence du secteur agricole — 180 jours par an jusqu'à la fin de 1996, 260 en 1997, 300 à compter du 1^er^ décembre 1998 [@decret-96-1797, art. 1]. Le décret n° 96-2145 dispense de la taxation d'office ceux qui demandent volontairement leur affiliation avant le 30 juin 1997 [@decret-96-2145, art. 1]. Le décret n° 2002-3018, outre la réécriture de l'article 30, étend le champ du régime aux métayers, aux masseurs de bain, aux artisans titulaires d'une carte professionnelle ou d'un certificat d'aptitude et aux chauffeurs de véhicules de transport public de personnes n'exerçant pas pour le compte d'une personne morale [@decret-2002-3018, art. 1]. Les décrets n° 2004-167 et n° 2008-172 ne portent que sur le report du paiement des cotisations des nouveaux promoteurs, d'un an d'abord, de deux ans ensuite [@decret-2004-167, art. 1; @decret-2008-172, art. 1]. Depuis 2020, l'auto-entrepreneur peut adhérer au régime, moyennant une cotisation de 11 % du SMAG ou du SMIG, 4 % pour les retraités, une classe supérieure restant possible [@decretloi2020-33, art. 7].
 
-**Depuis 2008.** Aucun texte modifiant le décret n° 95-1166 après le décret n° 2008-172 n'a été retrouvé au *Journal officiel* jusqu'au numéro du 18 septembre 2026 ; les visas des arrêtés conjoints du 10 juillet 2020, du 29 août 2025 et du 5 août 2026 le citent encore comme son dernier modificatif [@arrete-2020-07-10-prime-pensions ; @arrete-2025-08-29-allocation-pauvres ; @arrete-2026-08-05-allocation-pauvres]. L'âge, le taux et le plafond de la pension de vieillesse sont donc, pour le secteur non agricole, ceux de 1982, et, pour le secteur agricole, ceux de 1995 ; les classes de 1 à 18 et la pension minimale de 30 % datent de 1995, et la revalorisation automatique de 2002.
+**Depuis 2008.** Aucun texte modifiant le décret n° 95-1166 après le décret n° 2008-172 n'est identifié ici ; les visas des arrêtés conjoints du 10 juillet 2020, du 29 août 2025 et du 5 août 2026 le citent encore comme son dernier modificatif [@arrete-2020-07-10-prime-pensions ; @arrete-2025-08-29-allocation-pauvres ; @arrete-2026-08-05-allocation-pauvres]. L'âge, le taux et le plafond de la pension de vieillesse sont donc, pour le secteur non agricole, ceux de 1982, et, pour le secteur agricole, ceux de 1995 ; les classes de 1 à 18 et la pension minimale de 30 % datent de 1995, et la revalorisation automatique de 2002.
+
+<!-- RECHERCHE r-rtns-arretes-revalorisation : arrêtés de revalorisation propres au régime des non-salariés (voir docs/recherches.yml) -->
+
+<!-- RECHERCHE r-dec95-1166-modificatifs : modificatifs du décret n° 95-1166 après le décret n° 2008-172 (voir docs/recherches.yml) -->
 
 #### L'équilibre du régime {#sec-rtns-equilibre}
 
@@ -1253,11 +1271,13 @@ Le départ entre 60 et 65 ans est réduit de $\delta = 0{,}5\,\%$ par trimestre 
 
 **Les périodes d'emploi à l'étranger antérieures au régime peuvent être validées**, si aucun autre régime ne les a couvertes, moyennant le versement des cotisations correspondantes au taux global de l'article 7 ; la demande devait être présentée dans les deux ans suivant l'entrée en vigueur du décret [@decret89-107, art. 24]. Une fois validées, les périodes accomplies à l'étranger comptent comme des périodes accomplies en Tunisie [@decret89-107, art. 17].
 
-**Aucune réforme depuis 1989.** Le seul modificatif retrouvé, le décret n° 91-604 du 30 avril 1991, proroge d'un an, « à compter du 10 janvier 1991 », le délai de validation de l'article 24 [@decret91-604, art. 1] : le point de départ retenu est donc la date de signature du décret de 1989, deux ans plus tôt. Les visas de l'arrêté conjoint du 10 juillet 2020 citent le décret n° 89-107 « tel que modifié et complété par le décret n° 91-604 » [@arrete-2020-07-10-prime-pensions]. Aucun décret de révision pris en application de l'article 23 n'a été retrouvé au *Journal officiel* jusqu'au 18 septembre 2026 : la manière dont ces pensions sont revalorisées n'est pas établie ici.
+**Aucune réforme depuis 1989.** Le seul modificatif identifié, le décret n° 91-604 du 30 avril 1991, proroge d'un an, « à compter du 10 janvier 1991 », le délai de validation de l'article 24 [@decret91-604, art. 1] : le point de départ retenu est donc la date de signature du décret de 1989, deux ans plus tôt. Les visas de l'arrêté conjoint du 10 juillet 2020 citent le décret n° 89-107 « tel que modifié et complété par le décret n° 91-604 » [@arrete-2020-07-10-prime-pensions]. Aucun décret de révision pris en application de l'article 23 n'est identifié ici : la manière dont ces pensions sont revalorisées n'est donc pas établie.
+
+<!-- RECHERCHE r-rtte-decret-art23 : décret de révision de l'art. 23 du décret n° 89-107 (voir docs/recherches.yml) -->
 
 <!-- TODO (documentaliste) : établir comment la CNSS revalorise les pensions du régime des
-Tunisiens à l'étranger, faute de décret d'application de l'article 23 du décret n° 89-107
-retrouvé au JORT (circulaires, rapports annuels). -->
+Tunisiens à l'étranger (circulaires, rapports annuels) ; le décret de l'article 23 du décret
+n° 89-107 relève de la fiche r-rtte-decret-art23. -->
 
 **L'équilibre du régime.** Son assiette se reconstitue comme celle des non-salariés (@sec-rtns-equilibre) : c'est la somme, sur les quatre classes, du nombre d'assurés de la classe multiplié par son coefficient et par $S$, le SMIG en vigueur au 1^er^ janvier de l'année [@decret89-107, art. 6 ; @cnss-annuaires-statistiques ; @cnss-annuaire-2010, p. 170 et 173]. Le taux d'équilibre $\tau^*$ (@sec-rsna-equilibre) est comparé au taux légal $\kappa$ de la branche pensions, 5,25 % depuis le 19 janvier 1989 [@decret89-107, art. 7].
 
@@ -1326,7 +1346,7 @@ Par le calcul, chaque trimestre au-delà du stage ajoute un tiers de point de $S
 
 : Extensions et rattachements du régime des travailleurs à faibles revenus, 2019-2020 {#tbl-rtfr-extensions}
 
-Sources : @decret2019-379, art. 1-2 ; @decretloi2020-33, art. 7. Le décret gouvernemental n° 2019-379 n'énonce pas de date d'effet : le *Journal officiel* du 26 avril 2019 ayant été déposé le 29 avril, il devient exécutoire le 4 mai 2019. « Huîtres » est le mot de l'édition française ; l'édition arabe dit « coquillages ». Aucune édition française du décret-loi n° 2020-33 n'a été retrouvée.
+Sources : @decret2019-379, art. 1-2 ; @decretloi2020-33, art. 7. Le décret gouvernemental n° 2019-379 n'énonce pas de date d'effet : le *Journal officiel* du 26 avril 2019 ayant été déposé le 29 avril, il devient exécutoire le 4 mai 2019. « Huîtres » est le mot de l'édition française ; l'édition arabe dit « coquillages ». Le décret-loi n° 2020-33 n'est connu ici que par son édition arabe.
 
 La loi n° 2021-37 sur le travail domestique, entrée en vigueur six mois après sa publication, confirme que les travailleurs domestiques « demeurent régis » par la loi n° 2002-32 [@loi2021-37, art. 4 et 29]. Il n'y a donc pas de régime de pension propre à l'auto-entrepreneur : ses droits sont ceux du régime des travailleurs à faibles revenus et, s'il y adhère, du régime des non-salariés (@sec-rtns).
 
@@ -1362,7 +1382,9 @@ $$
 La pension minimale $P_{\min}$ n'est pas une fraction de $S$ : elle est de 200 dinars par mois, soit 2 400 dinars par an.
 :::
 
-**Le plancher est un montant en dinars, et non une part du salaire minimum.** Les pensions de vieillesse, d'invalidité et de survivants ne peuvent être inférieures à **200 dinars par mois** [@loi2002-104, art. 13 et 15 ; @decret2003-894, art. 17]. C'est le seul plancher du secteur privé exprimé en dinars : les autres sont une part du SMIG ou du SMAG, et montent avec lui. Aucun texte qui relève ce montant n'a été retrouvé au *Journal officiel* jusqu'au 18 septembre 2026. Rapporté au SMIG mensuel du régime de 48 heures, il en représentait 79 % au 1^er^ juillet 2008 et 36 % au 1^er^ janvier 2026 (@tbl-rsna-revalo-taux).
+**Le plancher est un montant en dinars, et non une part du salaire minimum.** Les pensions de vieillesse, d'invalidité et de survivants ne peuvent être inférieures à **200 dinars par mois** [@loi2002-104, art. 13 et 15 ; @decret2003-894, art. 17]. C'est le seul plancher du secteur privé exprimé en dinars : les autres sont une part du SMIG ou du SMAG, et montent avec lui. Aucun texte qui relève ce montant n'est identifié ici. Rapporté au SMIG mensuel du régime de 48 heures, il en représentait 79 % au 1^er^ juillet 2008 et 36 % au 1^er^ janvier 2026 (@tbl-rsna-revalo-taux).
+
+<!-- RECHERCHE r-raci-minimum-200 : texte relevant le minimum de 200 dinars (voir docs/recherches.yml) -->
 
 **Les survivants ont leurs règles propres.** Le conjoint reçoit 50 % de la pension du défunt, suspendus s'il se remarie avant 55 ans ; les orphelins reçoivent collectivement 30 %, jusqu'à 16 ans, 21 ans en études secondaires ou professionnelles, 25 ans en études supérieures sans bourse [@loi2002-104, art. 20 à 23]. L'article 20 ajoute, dans l'édition française, que « ce taux est majoré de 75 % de la pension de vieillesse ou d'invalidité en cas d'existence d'enfants bénéficiaires d'une pension » ; l'édition arabe dit que ce taux est relevé « jusqu'à » 75 % de cette pension [@loi2002-104, art. 20]. Le texte ne dit pas si la pension de survivants ainsi portée à 75 % est celle du seul conjoint ou celle de l'ensemble des survivants ; le cumul des pensions de survivants reste plafonné à la pension du défunt [@loi2002-104, art. 25].
 
@@ -1415,17 +1437,14 @@ Les annuaires ne publient pas d'assurés pour 2003, année où le régime sert d
 
 **Le régime a un âge et un stage.** La pension de vieillesse est ouverte à **65 ans**, après **120 mois** de cotisations effectives et validées, en l'absence d'activité assujettie ; elle peut l'être **dès 60 ans** avec la même durée, sans que le décret-loi énonce de réduction [@decret-loi2024-4, art. 26-27]. Une allocation de vieillesse est servie lorsque la durée de cotisation ne dépasse pas 60 mois [@decret-loi2024-4, art. 28]. Entre 61 et 119 mois, le décret-loi ne prévoit rien : ni pension, ni allocation ; les deux éditions du texte concordent sur ce point. La pension d'invalidité suppose une réduction d'au moins la moitié de la capacité de travail — et non des deux tiers comme dans les autres régimes — et 60 mois de cotisations [@decret-loi2024-4, art. 29-30]. Le conjoint survivant, lié au défunt au moment du décès, et les orphelins — jusqu'à 16, 21 ou 25 ans, la fille sans ressources et les infirmes sans limite d'âge — ont droit à une pension [@decret-loi2024-4, art. 31-32].
 
-::: {.callout-warning title="Le décret qui doit fixer les taux n'a pas été retrouvé"}
-Le décret-loi renvoie à un décret « les taux, les modalités et les procédures de bénéfice de la pension de vieillesse, de l'allocation de vieillesse, de la pension d'invalidité et des pensions octroyées au conjoint et aux orphelins » [@decret-loi2024-4, art. 33]. Ce décret n'a pas été retrouvé au *Journal officiel* jusqu'au numéro du 18 septembre 2026, sous deux réserves : le contenu du numéro 58 de 2026 n'est pas établi ici, et celui des numéros de 2025 ne l'est qu'en partie. Le régime n'a donc, en l'état des textes retrouvés, ni taux ni formule de pension, et aucune ne peut être écrite ici.
+::: {.callout-warning title="Le décret qui doit fixer les taux n'est pas identifié"}
+Le décret-loi renvoie à un décret « les taux, les modalités et les procédures de bénéfice de la pension de vieillesse, de l'allocation de vieillesse, de la pension d'invalidité et des pensions octroyées au conjoint et aux orphelins » [@decret-loi2024-4, art. 33]. Ce décret n'est pas identifié ici. Le régime n'a donc, en l'état des textes identifiés, ni taux ni formule de pension, et aucune ne peut être écrite ici.
 
-<!-- TODO (documentaliste) : numéro 58 de 2026 non consulté ; dépouillement des numéros de 2025 incomplet. Compléter avant de lever la réserve. -->
+<!-- RECHERCHE r-dl2024-4-art33 : décret d'application de l'art. 33 du décret-loi n° 2024-4 (voir docs/recherches.yml) -->
 :::
 
-<!-- TODO (documentaliste) : rechercher le décret d'application de l'article 33 du décret-loi
-n° 2024-4 fascicule par fascicule sur pist.tn pour 2025 (couverture partielle du corpus local :
-117 fascicules FR) et dans le JORT n° 58 de 2026, avant d'écrire qu'il n'a pas été publié. La loi
-de finances pour 2025 (loi n° 2024-48) crée un fonds de protection sociale des travailleuses
-agricoles, dont seul l'intitulé est connu ici (financement). -->
+<!-- TODO (documentaliste) : la loi de finances pour 2025 (loi n° 2024-48) crée un fonds de
+protection sociale des travailleuses agricoles, dont seul l'intitulé est connu ici (financement). -->
 
 ## Vue d'ensemble : les deux secteurs, maillon par maillon {#sec-vue-ensemble}
 
@@ -1607,7 +1626,7 @@ Le décret de 1974 a été modifié par une quinzaine de textes, de 1976 à 2007
 
 :::
 
-Les textes du tableau ont aussi modifié d'autres articles dont la nouvelle rédaction n'est pas exposée ici : l'alinéa 3 de l'article 48 et l'article 55 (décret n° 82-1030), les articles 3, 14, 30 et 54 (décret n° 90-1455). Depuis le 1^er^ janvier 2001, l'article 53 n'a plus été modifié, et aucun modificatif du décret postérieur au décret n° 2007-2148 n'a été retrouvé jusqu'au *Journal officiel* du 18 septembre 2026 (@sec-rsna-depuis-2007). Pour l'article 34 du décret de 1974, le second taux (30 %) est à la limite de la lisibilité au fascicule ; sa rédaction est toutefois identique, mot pour mot, à celle de l'article 65 de la loi n° 81-6, où il est net.
+Les textes du tableau ont aussi modifié d'autres articles dont la nouvelle rédaction n'est pas exposée ici : l'alinéa 3 de l'article 48 et l'article 55 (décret n° 82-1030), les articles 3, 14, 30 et 54 (décret n° 90-1455). Depuis le 1^er^ janvier 2001, l'article 53 n'a plus été modifié, et aucun modificatif du décret postérieur au décret n° 2007-2148 n'est identifié ici (@sec-rsna-depuis-2007). Pour l'article 34 du décret de 1974, le second taux (30 %) est à la limite de la lisibilité au fascicule ; sa rédaction est toutefois identique, mot pour mot, à celle de l'article 65 de la loi n° 81-6, où il est net.
 
 <!-- TODO (documentaliste) : établir la nouvelle rédaction des articles 3, 14, 30 et 54 (décret
 n° 90-1455) et des articles 48, al. 3, et 55 (décret n° 82-1030). Les autres articles de l'ancien

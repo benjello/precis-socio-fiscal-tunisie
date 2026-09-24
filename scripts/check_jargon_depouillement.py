@@ -16,9 +16,14 @@ loi de 1960 », « le plafond n'a pas été relevé », « un organisme à but n
 tient donc à des COLLOCATIONS sans ambiguïté, quitte à laisser passer une tournure
 inédite, qu'on ajoutera ici.
 
-Deux tournures sont délibérément laissées au texte : « aucun texte n'a été retrouvé au
-*Journal officiel* jusqu'au… » et « n'a pas été trouvé », qui énoncent une borne de
-connaissance datée — une réserve, pas un récit de dépouillement.
+Les recherches infructueuses non plus ne se racontent pas : « n'a pas été retrouvé »,
+« aucun texte n'a été repéré », « au *Journal officiel* jusqu'au numéro du… »,
+« jusqu'au n° 93 » décrivent une recherche, sa période et ses sources. Le texte dit le
+constat (« ce décret n'est pas identifié ici ») et porte une ancre
+`<!-- RECHERCHE r-… -->` vers la fiche rejouable de `docs/recherches.yml`
+(`scripts/recherches.py`). « Jusqu'au 31 décembre 2026 », borne d'une date d'effet ou
+d'une période, reste du droit : seules les formes liées au *Journal officiel* ou à un
+numéro sont visées. « N'a pas été trouvé » reste admis.
 
     uv run python scripts/check_jargon_depouillement.py [chemins...]
 
@@ -67,6 +72,11 @@ COLLOCATIONS = [
     r"\bcouche\s+texte\b",
     r"\bOCR\b",
     r"\bocéris\w*",
+    # Recherches infructueuses : la recherche, sa période et ses sources.
+    rf"\bn{A}(?:a|ont|ayant)\s+(?:pas\s+|encore\s+|jamais\s+)*(?:été|pu\s+être)\s+"
+    r"(?:retrouvé|repéré)(?:e|s|es)?\b",
+    r"\b(?:au|du|dans\s+le)\s+[*_]?(?:JORT|Journal\s+officiel)[*_]?\s+jusqu" + A + r"au\b",
+    r"\bjusqu" + A + r"au\s+[*_]?(?:n°|n\s*o\b|numéro|JORT|Journal\s+officiel)",
 ]
 JARGON = re.compile("|".join(f"(?:{c})" for c in COLLOCATIONS), re.I)
 
@@ -106,6 +116,8 @@ def main(argv: list[str]) -> int:
         print(f"{total} tournure(s) de dépouillement dans le texte rendu.")
         print("Dire ce qui est connu (« seul l'intitulé est connu ici », « n'est pas établi ici »),")
         print("et reporter le constat de travail dans un <!-- TODO (documentaliste) : … -->.")
+        print("Recherche infructueuse : constat neutre (« n'est pas identifié ici ») et ancre")
+        print("<!-- RECHERCHE r-… --> vers sa fiche de docs/recherches.yml (scripts/recherches.py).")
         return 1
 
     print(f"{len(fichiers)} fichier(s) contrôlé(s) : aucun jargon de dépouillement dans le texte rendu.")

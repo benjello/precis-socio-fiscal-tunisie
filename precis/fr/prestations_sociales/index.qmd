@@ -155,7 +155,9 @@ Deux traits méritent d'être relevés. La majoration est liquidée dans les mê
 
 Une confusion de vocabulaire doit être écartée. Le seul texte du corpus dont l'*intitulé* porte l'expression « [majoration pour salaire unique](#g-majoration-salaire-unique) » est le décret n° 74-463, relatif à des catégories de personnels militaires ; or son dispositif ne contient pas cette expression et accorde aux intéressés « les indemnités à caractère familial dans les mêmes conditions que les fonctionnaires de l'État » [@decret74-463, art. 1]. Le vocable du titre de 1974 est un surnom de sommaire ; le dispositif réel est celui de 1980, dans le secteur privé.
 
-Aucun texte revalorisant les trois montants de 1980 n'a été trouvé. Ce résultat est **négatif et non vérifié auprès des caisses** : le chapitre ne peut affirmer que ces montants sont nominalement inchangés, seulement qu'aucun texte modificatif n'a été repéré.
+Aucun texte revalorisant les trois montants de 1980 n'est identifié ici. Il n'est donc pas établi que ces montants soient nominalement inchangés.
+
+<!-- RECHERCHE r-majoration-creche-revalorisation : revalorisation de la majoration pour salaire unique (voir docs/recherches.yml) -->
 
 #### La contribution aux frais de crèche
 
@@ -171,7 +173,9 @@ table("creche",
       "tbl-creche")
 ```
 
-C'est le seul dispositif du bloc contributif dont le champ soit explicitement **genré** : la loi vise « les assurées sociales » et « les affiliées », le décret « la mère bénéficiaire ». Comme pour la majoration pour salaire unique, aucun texte revalorisant le montant de 15 dinars n'a été repéré, sans que cette absence ait pu être confirmée auprès des caisses.
+C'est le seul dispositif du bloc contributif dont le champ soit explicitement **genré** : la loi vise « les assurées sociales » et « les affiliées », le décret « la mère bénéficiaire ». Comme pour la majoration pour salaire unique, aucun texte revalorisant le montant de 15 dinars n'est identifié ici.
+
+<!-- RECHERCHE r-majoration-creche-revalorisation : revalorisation de la contribution aux frais de crèche (voir docs/recherches.yml) -->
 
 #### Le secteur public : les indemnités à caractère familial
 
@@ -326,7 +330,9 @@ Employer le mot « indemnité pour perte d'emploi » à propos de ce texte serai
 
 **L'article 17 de la loi de finances pour 2025** crée un « fonds d'assurance contre la perte de postes de travail pour raisons économiques », dont l'objet est de financer un régime d'assurance contre la perte collective de postes pour des raisons non imputables aux parties de la relation de travail, et d'instaurer un régime d'encadrement social des travailleurs licenciés pour raisons économiques. Le fonds est alimenté par une dotation budgétaire plafonnée, une cotisation de 0,5 % à la charge de l'employeur et du salarié assise sur la masse salariale déclarée, une fraction du produit de la majoration spécifique sur le tabac, une taxe sur certains jeux, et des dons ; les articles 2 à 4 de la loi de finances complémentaire pour 2009 sont abrogés et le reliquat de leurs ressources transféré au fonds [@lf-2025, art. 17].
 
-Deux réserves accompagnent cette lecture. Le texte est cité d'après l'**édition arabe** du fascicule, l'édition française n'ayant pas été retrouvée en ligne. Et l'article renvoie à un décret pour les conditions et procédures de gestion du fonds : **ce décret n'a pas été trouvé** au *Journal officiel* de 2025 et de 2026, en français comme en arabe. En l'état des sources, la loi de finances crée le véhicule financier et non le droit à prestation.
+Deux réserves accompagnent cette lecture. Le texte est cité d'après l'**édition arabe** du fascicule, seule disponible ici. Et l'article renvoie à un décret pour les conditions et procédures de gestion du fonds : **ce décret n'est pas identifié ici**. En l'état des textes identifiés, la loi de finances crée le véhicule financier et non le droit à prestation.
+
+<!-- RECHERCHE r-lf2025-art17-decret : décret de gestion du fonds de l'art. 17 de la loi de finances pour 2025 (voir docs/recherches.yml) -->
 
 ### L'assurance maladie (CNAM)
 
@@ -350,7 +356,7 @@ La chaîne de l'assistance ne comporte pas les mêmes maillons que celle de la s
 
 1. **Le [ciblage](#g-ciblage).** Il désigne la population visée : « familles nécessiteuses » dans le vocabulaire des années 1980, « [catégories pauvres](#g-categories-pauvres) » et « [catégories à revenu limité](#g-categories-revenu-limite) » depuis 2019. Le ciblage a pris trois formes successives : la condition d'état sans barème (« tout tunisien indigent »), la condition de revenu chiffrée en multiples du salaire minimum, et depuis 2020 le score.
 2. **La condition de ressources.** Elle est exprimée en fractions ou multiples du salaire minimum, et modulée par la taille du ménage. C'est le seul maillon systématiquement publié depuis 1988.
-3. **Le contingentement.** Deux des dispositifs majeurs — les cartes de soins gratuits et à tarifs réduits — ne sont pas des droits ouverts sous condition de ressources mais des **prestations à enveloppe fermée**, attribuées dans la limite d'un nombre global de cartes et de quotas régionaux. Les arrêtés fixant ces quotas n'ont pas été retrouvés.
+3. **Le contingentement.** Deux des dispositifs majeurs — les cartes de soins gratuits et à tarifs réduits — ne sont pas des droits ouverts sous condition de ressources mais des **prestations à enveloppe fermée**, attribuées dans la limite d'un nombre global de cartes et de quotas régionaux. Les arrêtés fixant ces quotas ne sont pas identifiés ici. <!-- RECHERCHE r-amg-cartes-quotas : arrêtés fixant le nombre global de cartes et les quotas régionaux (voir docs/recherches.yml) -->
 4. **Le score.** Depuis 2020, un modèle de *scoring* fondé sur le « test des moyens approximé » (*proxy means test*) et sur une définition multidimensionnelle de la pauvreté classe les demandeurs. Ses dimensions sont publiées ; ses **pondérations et le seuil retenu ne le sont pas**.
 5. **Le montant et la durée.** Le montant du transfert AMEN est fixé par arrêté conjoint et sa série est intégralement publiée depuis 2020 ; le montant du PNAFN ne l'a été à aucun moment avant 2024.
 
