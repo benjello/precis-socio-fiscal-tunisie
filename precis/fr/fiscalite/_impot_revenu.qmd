@@ -205,11 +205,11 @@ La comparaison des deux tableaux donne la mesure de la rupture. Le nombre de tra
 
 ### Revenus 1990 à 2016
 
-Le barème de l'article 44 § I (@tbl-bareme-irpp-1990) n'a pas été modifié entre son entrée en vigueur et la loi de finances pour 2017, soit **vingt-sept années de revenus**. Ce constat repose sur trois vérifications convergentes.
+Le barème de l'article 44 § I (@tbl-bareme-irpp-1990) n'a pas été modifié entre son entrée en vigueur et la loi de finances pour 2017, soit **vingt-sept années de revenus**. Ce constat repose sur trois éléments convergents.
 
 1. **La chaîne d'annotation du code consolidé.** Le code de l'IRPP et de l'IS annote le § I de l'article 44 de deux modifications seulement (art. 14-1 de la loi de finances pour 2017 et art. 36-1 de la loi de finances pour 2025), alors que le § II du même article porte une chaîne d'annotations remontant à 1997 et que le document conserve ailleurs des mentions de textes de 1991 et 1993. Le silence sur le § I est donc significatif.
 2. **L'identité des barèmes aux deux extrémités de la période.** Le barème de 1990 et le barème « en vigueur jusqu'au 31 décembre 2016 » reproduit par la doctrine administrative sont identiques ligne pour ligne, taux d'imposition à la limite supérieure compris [@dgi-nc-3-2017].
-3. **Le dépouillement des textes de la décennie 1990-1999** — les dix lois de finances annuelles, la loi de finances complémentaire pour 1991 et la loi n° 98-73 — dont aucun ne modifie le § I. Les dispositions de ces lois qui visent l'article 44 portent sur le minimum d'impôt (§ II), la plus-value immobilière (§ III) ou le régime forfaitaire (§ IV).
+3. **Les textes de la décennie 1990-1999** — les dix lois de finances annuelles, la loi de finances complémentaire pour 1991 et la loi n° 98-73 — dont aucun ne modifie le § I. Les dispositions de ces lois qui visent l'article 44 portent sur le minimum d'impôt (§ II), la plus-value immobilière (§ III) ou le régime forfaitaire (§ IV).
 
 Une conséquence mécanique de cette stabilité mérite d'être relevée : les seuils du barème étant fixés en dinars courants et n'ayant jamais été indexés, la hausse des prix et des salaires nominaux a déplacé les contribuables vers le haut du barème à revenu réel inchangé. La limite de la tranche à taux nul est ainsi restée à 1 500 dinars pendant vingt-sept ans.
 
@@ -311,7 +311,7 @@ table("bnc_forfait",
       "tbl-bnc-forfait")
 ```
 
-L'article 46 de la loi de finances pour 2014, intitulé « Rationalisation de l'assiette forfaitaire des bénéfices non commerciaux », se borne à remplacer le taux de 70 % par celui de 80 % [@lf-2014, art. 46] : c'est ce mode de rédaction — le texte modificatif cite la valeur qu'il remplace — qui permet d'attester les valeurs antérieures sans dépouiller le JORT année par année. Il n'énonce en revanche aucune date d'effet propre, d'où l'astérisque porté sur l'année 2013.
+L'article 46 de la loi de finances pour 2014, intitulé « Rationalisation de l'assiette forfaitaire des bénéfices non commerciaux », se borne à remplacer le taux de 70 % par celui de 80 % [@lf-2014, art. 46] : c'est ce mode de rédaction — le texte modificatif cite la valeur qu'il remplace — qui permet d'attester les valeurs antérieures par le seul texte modificatif, sans reconstituer chaque année de la série. Il n'énonce en revanche aucune date d'effet propre, d'où l'astérisque porté sur l'année 2013.
 
 Deux règles encadrent l'option. Les titulaires de bénéfices non commerciaux qui justifient d'une comptabilité conforme relèvent des articles 10 à 20, comme les entreprises commerciales. Et le passage au réel est **irréversible** : « dans le cas où les intéressés ont été soumis au titre d'une année donnée à l'impôt sur le revenu selon le régime réel, ledit régime demeure définitif et ne peut faire l'objet de renonciation » (article 22 § III, ajouté par l'article 71 de la loi de finances pour 2002).
 
@@ -362,14 +362,16 @@ table("abattement_pensions",
       "tbl-abattement-pensions")
 ```
 
-L'intitulé officiel de l'article 56 de la loi de finances pour 2026 est « Allègement progressif de la charge fiscale sur les pensions de retraite » ; les trois dates sont énoncées par l'article lui-même. Sa lecture a été faite sur le fascicule arabe du JORT n° 148 du 12 décembre 2025, l'édition française n'étant pas encore parue au moment de la rédaction : elle reste à faire confirmer sur l'édition française.
+L'intitulé officiel de l'article 56 de la loi de finances pour 2026 est « Allègement progressif de la charge fiscale sur les pensions de retraite » ; les trois dates sont énoncées par l'article lui-même. L'article est cité d'après l'édition arabe du JORT n° 148 du 12 décembre 2025, l'édition française n'étant pas encore parue au moment de la rédaction.
+
+<!-- TODO (documentaliste) : article 56 de la LF 2026 lu sur le fascicule arabe du JORT n° 148 du 12 décembre 2025 ; confirmer sur l'édition française dès sa parution. -->
 
 Les **pensions et rentes viagères de source étrangère** obéissent à une règle distincte, logée à l'article 37 — c'est-à-dire dans la catégorie « autres revenus » — mais qui est bien une règle d'assiette des pensions.
 
 | Années de revenus | Déduction | Texte |
 |---|---|---|
 | 1990 → 1997 ? | aucune règle propre : imposition des « sommes effectivement perçues de l'étranger » | article 37 du code [@code-irpp-is-1990, art. 37] |
-| 1997 ou 1998 ? → 2005 | 25 %, par renvoi à l'article 26 | article 61 de la loi de finances pour 1998 (**l'année de bascule entre ces deux lignes n'est pas établie** : l'article 61 de la loi n° 97-88 du 29 décembre 1997 n'a pas été vérifié sur texte) |
+| 1997 ou 1998 ? → 2005 | 25 %, par renvoi à l'article 26 | article 61 de la loi de finances pour 1998 (**l'année de bascule entre ces deux lignes n'est pas établie** : le texte de l'article 61 de la loi n° 97-88 du 29 décembre 1997 n'est pas établi ici) |
 | 2006 → | 80 % du montant brut, sous conditions | article 35 de la loi de finances pour 2007 [@lf-2007, art. 35] ; date d'effet attestée par [@dgi-nc-18-2007] |
 
 : Traitement des pensions et rentes viagères de source étrangère (article 37 du code) {#tbl-pensions-etrangeres}
@@ -455,7 +457,9 @@ Le code range sous l'intitulé « [Déductions communes](#g-deductions-communes)
 
 **Les charges déductibles du revenu global (article 39 § I).** La formule d'attaque, inchangée depuis 1990, pose le principe organisateur de tout l'article : l'impôt est établi sur le total des revenus nets « sous déduction des charges ci-après **lorsqu'elles n'entrent pas en compte pour l'évaluation de l'une des catégories de revenus** » [@code-irpp-is-1990, art. 39]. Cinq charges y figurent aujourd'hui : les arrérages des rentes payées à titre obligatoire et gratuit ; les primes d'assurance-vie et de contrats de capitalisation ; le remboursement des prêts universitaires, en principal et intérêts (loi de finances pour 1999) ; les intérêts et commissions des prêts d'acquisition ou de construction d'une **seule** habitation, sous condition de coût maximal et à l'exclusion des personnes déjà propriétaires ; et les cotisations des travailleurs non salariés affiliés à l'un des régimes légaux de sécurité sociale [@lf-2010, art. 44].
 
-Le plafond de la déduction des **primes d'assurance-vie** n'a que ses deux bornes établies. Dans le code de 1990, il était de 200 dinars par an, majorés de 100 dinars au titre du conjoint et de 50 dinars au titre de chacun des quatre premiers enfants à charge. À compter des revenus de 2020, il est de 100 000 dinars, l'article 16 de la loi de finances pour 2021 l'ayant porté de 10 000 à 100 000 dinars [@lf-2021, art. 16] et, dans le même mouvement, ayant soumis pour la première fois cette déduction au minimum d'impôt de l'article 12 *bis* de la loi n° 89-114 [@dgi-nc-1-2021]. L'intitulé officiel de cet article est « Encouragement de l'épargne à moyen et long terme via les comptes épargne en actions et les contrats d'assurance-vie et de capitalisation ». Les valeurs et les dates intermédiaires entre ces deux bornes ne sont pas établies : sept textes modificatifs restent à dépouiller, et aucune série n'est publiée ici tant qu'elle n'est pas complète.
+Le plafond de la déduction des **primes d'assurance-vie** n'a que ses deux bornes établies. Dans le code de 1990, il était de 200 dinars par an, majorés de 100 dinars au titre du conjoint et de 50 dinars au titre de chacun des quatre premiers enfants à charge. À compter des revenus de 2020, il est de 100 000 dinars, l'article 16 de la loi de finances pour 2021 l'ayant porté de 10 000 à 100 000 dinars [@lf-2021, art. 16] et, dans le même mouvement, ayant soumis pour la première fois cette déduction au minimum d'impôt de l'article 12 *bis* de la loi n° 89-114 [@dgi-nc-1-2021]. L'intitulé officiel de cet article est « Encouragement de l'épargne à moyen et long terme via les comptes épargne en actions et les contrats d'assurance-vie et de capitalisation ». Les valeurs et les dates intermédiaires entre ces deux bornes ne sont pas établies : le contenu de sept textes modificatifs n'est pas encore établi ici, et aucune série n'est publiée ici tant qu'elle n'est pas complète.
+
+<!-- TODO (documentaliste) : dépouiller les sept textes modificatifs du plafond des primes d'assurance-vie. -->
 
 <!-- TODO (documentaliste) : établir la série intermédiaire du plafond de déduction des primes
 d'assurance-vie (art. 39 § I-2) entre 200 D (revenus 1990) et 10 000 D (avant les revenus 2020) :
@@ -469,7 +473,7 @@ point 15). Cf. § 10 de docs/notes/fiscalite-irpp-assiette-abattements.md. -->
 | Années de revenus | Plafond global | Dont comptes spéciaux d'épargne | Texte |
 |---|---|---|---|
 | 1990 → 1991 ? | 1 000 D (comptes spéciaux d'épargne seuls) | 1 000 D | article 39 § II du code [@code-irpp-is-1990, art. 39] |
-| 1992 ? → 2015 | 1 500 D | 1 000 D | article 30 de la loi de finances pour 1992 (**l'année de bascule entre ces deux lignes n'est pas établie** : l'article 30 de la loi n° 91-98 du 31 décembre 1991 n'a pas été vérifié sur texte) |
+| 1992 ? → 2015 | 1 500 D | 1 000 D | article 30 de la loi de finances pour 1992 (**l'année de bascule entre ces deux lignes n'est pas établie** : le texte de l'article 30 de la loi n° 91-98 du 31 décembre 1991 n'est pas établi ici) |
 | 2016 → 2020 | 5 000 D | 3 000 D | article 13 de la loi de finances pour 2017 [@lf-2017, art. 13] ; date d'effet attestée par [@dgi-nc-2-2017] |
 | 2021 → | 10 000 D | 6 000 D | article 24 de la loi de finances pour 2022 [@lf-2022, art. 24] ; date d'effet attestée par [@dgi-nc-1-2022] |
 
