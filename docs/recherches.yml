@@ -558,3 +558,20 @@
   a_faire:
   - 'requêtes de la passe d''origine non consignées : rejouer celles-ci et l''élargir'
   - étendre la recherche à la carte de soins à tarifs réduits (décret n° 98-409, AMG2), que la note ne couvre pas
+
+- id: r-lf2025-art15-decret
+  objet: décret fixant les modalités de fonctionnement et les conditions d'intervention du fonds de protection sociale des travailleuses agricoles (loi n° 2024-48, loi de finances pour 2025, art. 15)
+  ou: [precis/fr/retraites/_secteur_prive.qmd#sec-travailleuses-agricoles]
+  requetes:
+    titres_fts: ['"travailleuses agricoles"']
+    iort_ar: [العاملات الفلاحيات, عاملات الفلاحيات]
+    plein_texte: [العاملات الفلاحيات, عاملات الفلاحيات]
+    depuis: 2024-12-10
+  passes:
+  - date: 2026-09-24
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist, iort]
+    couverture: 'relance du 24/09/2026 : jort_cache jusqu''au 18/09/2026, corpus local jusqu''au n° 93/2026 ; n° 58/2026 introuvable'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [lire le JORT n° 58 de 2026, lire les numéros postérieurs au n° 93 de 2026]
