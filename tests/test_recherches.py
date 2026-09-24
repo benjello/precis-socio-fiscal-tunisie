@@ -390,6 +390,167 @@ class OutilsTest(unittest.TestCase):
         self.assertEqual(len(f["passes"]), 3)
 
 
+class PeriodeCloseTest(BaseTest):
+    """Un objet borné (« texte antérieur au décret n° 81-939 ») n'est pas périmé à jamais."""
+
+    def close(self, jusqu_au="2026-02-28", couvert="2026-02-28"):
+        f = fiche(periode={"jusqu_au": jusqu_au, "motif": "texte antérieur au décret n° 2026-13"})
+        f["passes"][0]["couvert_jusqu_au"] = couvert
+        return f
+
+    def test_couverte_jusqu_a_la_borne_n_est_plus_perimee(self):
+        self.assertFalse(r.est_perimee(self.close(), "2026-03-02"))
+
+    def test_perimee_tant_que_la_borne_n_est_pas_atteinte(self):
+        self.assertTrue(r.est_perimee(self.close(couvert="2026-01-31"), "2026-03-02"))
+
+    def test_borne_posterieure_a_la_base(self):
+        """La base s'arrête avant la borne : c'est elle qui fixe la limite."""
+        self.assertFalse(r.est_perimee(self.close(jusqu_au="2027-01-01", couvert="2026-03-02"),
+                                       "2026-03-02"))
+
+    def test_recherche_bornee(self):
+        f = self.close(couvert="2025-12-31")
+        trouves, _ = r.cherche_base(self.cnx, f["requetes"], r.seuil_de(f, None), r.fin_periode(f))
+        self.assertIn(2, trouves)       # 10 février 2026 : dans la période
+        self.assertNotIn(3, trouves)    # 1er mars 2026 : après la borne
+
+    def test_relance_d_une_periode_couverte(self):
+        sortie = io.StringIO()
+        with contextlib.redirect_stdout(sortie):
+            r.relance(self.close(), base=self.base, corpus=self.dossier / "absent")
+        self.assertIn("rien à relancer", sortie.getvalue())
+        self.assertNotIn("--- jort_cache", sortie.getvalue())
+
+    def test_verifier_exige_un_motif_et_une_date(self):
+        erreurs = r.erreurs_fiche(fiche(periode={"jusqu_au": "2026-02-28"}))
+        self.assertTrue(any("periode.motif" in e for e in erreurs), erreurs)
+        erreurs = r.erreurs_fiche(fiche(periode={"motif": "x", "fin": "2026-02-28"}))
+        self.assertTrue(any("periode.jusqu_au" in e for e in erreurs), erreurs)
+        self.assertTrue(any("clé(s) inconnue(s)" in e for e in erreurs), erreurs)
+
+    def test_verifier_borne_avant_la_naissance(self):
+        erreurs = r.erreurs_fiche(fiche(periode={"jusqu_au": "2020-01-01", "motif": "x"}))
+        self.assertTrue(any("précède requetes.depuis" in e for e in erreurs), erreurs)
+
+    def test_verifier_admet_une_periode_bien_formee(self):
+        self.assertEqual(r.erreurs_fiche(self.close()), [])
+
+
+TEXTE_ARABE = "الجمهورية التونسية الرائد الرسمي للجمهورية التونسية أمر عدد 4 لسنة 2024 " * 20
+TEXTE_FRANCAIS = "Journal officiel de la République tunisienne, décret-loi n° 2024-4. " * 20
+
+
+class FauxFasciculeFrancaisTest(unittest.TestCase):
+    """pist.tn sert parfois le fichier arabe à l'adresse de l'édition française."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.corpus = Path(self._tmp.name)
+
+    def tearDown(self):
+        self._tmp.cleanup()
+
+    def ecrit(self, sous, langue, nom, contenu):
+        d = self.corpus / sous / "JORT" / "2026" / langue
+        d.mkdir(parents=True, exist_ok=True)
+        (d / nom).write_bytes(contenu.encode("utf-8") if isinstance(contenu, str) else contenu)
+
+    def cherche(self):
+        return r.cherche_plein_texte(self.corpus, ["2024-4", "4 لسنة 2024"], "2026-01-01", {}, None)
+
+    def test_part_arabe(self):
+        self.assertGreater(r.part_arabe(TEXTE_ARABE), 0.9)
+        self.assertLess(r.part_arabe(TEXTE_FRANCAIS), 0.1)
+        self.assertIsNone(r.part_arabe("2024 — 12"))
+
+    def test_fr_arabe_compte_absent_sans_doublon(self):
+        self.ecrit("markdown_output", "fr", "Jo0102026.md", TEXTE_ARABE)
+        self.ecrit("markdown_output", "ar", "Ja0102026.md", TEXTE_ARABE)
+        self.ecrit("markdown_output", "fr", "Jo0112026.md", TEXTE_FRANCAIS)
+        trouves, bilan = self.cherche()
+        ligne_fr = next(b for b in bilan if b.startswith("plein texte 2026 fr"))
+        self.assertIn("1 fascicule(s) lu(s) (11)", ligne_fr)
+        self.assertIn("FR absent (fichier arabe) : 10", ligne_fr)
+        self.assertEqual(sorted((t[1], t[2]) for t in trouves), [("ar", 10), ("fr", 11)])
+
+    def test_fr_arabe_sans_edition_arabe_locale_vaut_lecture_de_l_arabe(self):
+        self.ecrit("markdown_output", "fr", "Jo0102026.md", TEXTE_ARABE)
+        trouves, bilan = self.cherche()
+        self.assertEqual({t[1] for t in trouves}, {"ar, fichier fr"})
+        ligne_ar = next(b for b in bilan if b.startswith("plein texte 2026 ar"))
+        self.assertIn("lus sur le fichier « fr », qui est l'arabe : 10", ligne_ar)
+
+    def test_empreinte_identique_au_pdf_arabe(self):
+        """Même si le texte extrait ne trahit rien (couche texte illisible), l'empreinte suffit."""
+        self.ecrit("PDFs", "fr", "Jo0122026.pdf", b"%PDF-1.4 meme fichier")
+        self.ecrit("PDFs", "ar", "Ja0122026.pdf", b"%PDF-1.4 meme fichier")
+        self.ecrit("markdown_output", "fr", "Jo0122026.md", TEXTE_FRANCAIS)
+        self.ecrit("markdown_output", "ar", "Ja0122026.md", TEXTE_ARABE)
+        trouves, bilan = self.cherche()
+        ligne_fr = next(b for b in bilan if b.startswith("plein texte 2026 fr"))
+        self.assertIn("FR absent (fichier arabe) : 12", ligne_fr)
+        self.assertNotIn("fr", {t[1] for t in trouves})
+
+
+class SonderPistTest(unittest.TestCase):
+    def test_numeros_a_sonder_ignore_le_numero_aberrant(self):
+        dates = {(2026, 1): "2026-01-02", (2026, 2): "2026-01-05", (2026, 4): "2026-01-12",
+                 (2026, 107): "2026-01-16", (2026, 5): "2026-01-20", (2026, 6): "2026-01-23"}
+        self.assertEqual(r.dernier_numero_coherent(dates, 2026), 6)
+        self.assertEqual(r.numeros_a_sonder(dates, 2026, au_dela=2), [3, 7, 8])
+        self.assertEqual(r.dernier_numero_coherent({}, 2026), 0)
+
+    def test_sonde_pist_liste_les_existants(self):
+        dates = {(2026, 1): "2026-01-02", (2026, 3): "2026-01-12"}
+        appels = []
+
+        def sonde(url):
+            appels.append(url)
+            return 200 if url.endswith(("Jo0022026.pdf", "Ja0022026.pdf", "Ja0052026.pdf")) else 404
+
+        lignes = r.sonde_pist(dates, range(2026, 2027), {(2026, "ar", 2): Path("x")},
+                              sonde=sonde, delai=0)
+        self.assertTrue(all(u.startswith("https://www.pist.tn/jort/2026/") for u in appels))
+        self.assertEqual(len(appels), 2 * 6)  # n° 2, 4 à 8, dans les deux éditions
+        self.assertIn("n° 2 (fr, ar ; local : ar)", lignes[0])
+        self.assertIn("n° 5 (ar ; absent du corpus local)", lignes[0])
+
+    def test_sonde_pist_signale_les_erreurs(self):
+        lignes = r.sonde_pist({(2026, 2): "2026-01-02"}, range(2026, 2027), {},
+                              sonde=lambda url: None, delai=0)
+        self.assertIn("sans réponse (à refaire) : 1 fr (erreur réseau), 1 ar (erreur réseau)", lignes[0])
+
+    def test_sonde_pist_ne_conclut_pas_d_un_statut_ambigu(self):
+        lignes = r.sonde_pist({(2026, 2): "2026-01-02"}, range(2026, 2027), {},
+                              sonde=lambda url: 429 if "Jo001" in url else 404, delai=0)
+        self.assertIn("sans réponse (à refaire) : 1 fr (429)", lignes[0])
+
+    def test_date_aberrante_ne_reduit_pas_l_annee(self):
+        """Un n° 1 daté de décembre ne fait pas de l'année une année d'un seul numéro."""
+        dates = {(1981, n): f"1981-{1 + n // 10:02d}-15" for n in range(2, 90)}
+        dates[(1981, 1)] = "1981-12-30"
+        self.assertEqual(r.dernier_numero_coherent(dates, 1981), 89)
+
+
+class PistTlsTest(unittest.TestCase):
+    """La vérification TLS ne tombe que pour https://www.pist.tn (certificat échu)."""
+
+    def test_hote_exact(self):
+        import pist_tls
+        self.assertTrue(pist_tls.hote_pist("https://www.pist.tn/jort/2026/2026F/Jo0012026.pdf"))
+        self.assertTrue(pist_tls.hote_pist("https://WWW.PIST.TN:443/x"))
+        for url in ("https://pist.tn/x", "https://www.pist.tn.evil.com/x", "http://www.pist.tn/x",
+                    "https://evil.com/?u=https://www.pist.tn/", "https://www.pist.tn:8443/x",
+                    "https://user@evil.com/www.pist.tn", "https://www.pist.tn@evil.com/"):
+            self.assertFalse(pist_tls.hote_pist(url), url)
+
+    def test_requete_refuse_un_autre_hote(self):
+        import pist_tls
+        with self.assertRaises(ValueError):
+            pist_tls.requete("https://www.example.org/")
+
+
 @unittest.skipUnless(AVEC_YAML, "PyYAML absent : lancer par `uv run pytest`")
 class RegistreTest(unittest.TestCase):
     def test_registre_versionne_sous_forme_canonique(self):
@@ -405,6 +566,16 @@ class RegistreTest(unittest.TestCase):
             self.assertEqual(entete, "# en-tête\n")
             self.assertEqual(fiches, [fiche()])
             self.assertIn("date: 2026-01-05\n", chemin.read_text(encoding="utf-8"))
+
+    def test_aller_retour_avec_periode(self):
+        f = fiche(periode={"jusqu_au": "1985-03-12", "motif": "antérieur à la loi n° 85-12"})
+        with tempfile.TemporaryDirectory() as d:
+            chemin = Path(d) / "recherches.yml"
+            r.ecrire("# en-tête\n", [f], chemin)
+            self.assertEqual(r.charger(chemin)[1], [f])
+            texte = chemin.read_text(encoding="utf-8")
+            self.assertIn("  periode:\n    jusqu_au: 1985-03-12\n", texte)
+            self.assertLess(texte.index("periode:"), texte.index("passes:"))
 
     def test_registre_versionne_coherent(self):
         _, fiches = r.charger()
