@@ -66,8 +66,10 @@ PAQUETS = {
         # deçà, le tableau des allocations familiales publierait une bande 52-500 D fausse.
         # La 0.107 date le barème d'annuités de la CNRPS de 1959 au 1er avril 1959, et non
         # de la signature (openfisca-tunisia#452) : en deçà, la courbe de 1959 de la figure
-        # des taux de liquidation perd son plafond de 60 %.
-        "version_minimale": (0, 107),
+        # des taux de liquidation perd son plafond de 60 %. La 0.111 retire le plafond de la
+        # contribution personnelle d'État de 1983 à 1985, que la loi n° 82-91 ne fixe pas
+        # (openfisca-tunisia#458) : en deçà, le tableau du plafond publierait 60 % dès 1983.
+        "version_minimale": (0, 111),
     },
 }
 

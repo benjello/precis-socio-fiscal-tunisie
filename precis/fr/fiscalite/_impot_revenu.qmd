@@ -134,17 +134,8 @@ table("plafond_cpe",
       "tbl-plafond-cpe")
 ```
 
-Source : @loi-62-73-cpe, art. 2 (JORT n° 64 des 28-31 décembre 1962, p. 1647) ; @lf-1966, art. 10 (JORT n° 66 du 31 décembre 1965, p. 1716) ; @loi79-66-lf1980, art. 8 (JORT n° 76 des 28-31 décembre 1979, p. 3540). Le tableau s'arrête au tarif de 1980 : celui de 1983 ne fixe pas de plafond [@lf-1983, art. 9] (JORT n° 84 du 31 décembre 1982, p. 2877-2878), et le plafond de 60 % rétabli par @lf-1986, art. 8 (JORT n° 91 du 31 décembre 1985, p. 1731) est exposé ci-dessus. Les plafonds qu'auraient pu fixer d'éventuels tarifs intermédiaires, entre 1966 et 1979, ne sont pas connus ici.
+Source : @loi-62-73-cpe, art. 2 (JORT n° 64 des 28-31 décembre 1962, p. 1647) ; @lf-1966, art. 10 (JORT n° 66 du 31 décembre 1965, p. 1716) ; @loi79-66-lf1980, art. 8 (JORT n° 76 des 28-31 décembre 1979, p. 3540). Le tarif de 1983 ne fixe pas de plafond [@lf-1983, art. 9] (JORT n° 84 du 31 décembre 1982, p. 2877-2878) ; celui de 60 % est rétabli pour les revenus de 1986 [@lf-1986, art. 8] (JORT n° 91 du 31 décembre 1985, p. 1731). Les plafonds qu'auraient pu fixer d'éventuels tarifs intermédiaires, entre 1966 et 1979, ne sont pas connus ici.
 
-<!-- TODO (modéliste) : le paramètre `impot_revenu/contribution_personnelle_etat/plafond_cotisation`
-porte 0,60 au 1er janvier 1983, rattaché à l'art. 9 de la loi n° 82-91 ; ce texte (JORT n° 84 du
-31 décembre 1982, p. 2877-2878, relu au fascicule) ne comporte aucun plafond, et son barème atteint
-62,29 % de taux d'imposition à 100 000 D. État à verser : aucun plafond du 1er janvier 1983 à la date
-d'effet du tarif de 1986 ; 0,60 à cette date, réf. loi n° 85-109, art. 8, 2) (JORT n° 91 du
-31 décembre 1985, p. 1731), qui abroge l'art. 8 « tel que modifié par l'article 9 de la loi n° 82-91 »
-— aucun texte intermédiaire. L'article ne porte pas de clause d'effet visible : dater selon les
-règles d'AGENTS.md. Une fois la version publiée et la borne relevée, retirer `DATES_ECARTEES` de
-scripts/generate_bareme_tables.py et régénérer ; la ligne de 1986 entrera alors au tableau. -->
 
 ### La suppression de 1990
 

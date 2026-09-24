@@ -174,29 +174,22 @@ def evolutions(langue):
 # d'État ne sont pas tous dépouillés, une plage « 1965 → 1979 » affirmerait trop.
 def evolutions_datees(langue):
     m = MOTS[langue]
-    _dinars, taux, _plafond, _aucun = formateurs(langue)
+    _dinars, _taux, _plafond, _aucun = formateurs(langue)
+    u = UNITES[langue]
+
+    def taux_ou_sans_plafond(v):
+        # De 1983 à 1985, l'article 8 réécrit par la loi n° 82-91 ne plafonne pas la
+        # cotisation : le paramètre n'a pas de valeur, le tableau dit « aucun plafond ».
+        return u["sans_plafond"] if v is None else ot.formate_taux(v)
+
     cpe = "parameters/impot_revenu/contribution_personnelle_etat"
     return [
         ("plafond_cpe.md",
-         [(f"{cpe}/plafond_cotisation.yaml", m["plafond_cpe"], taux)],
+         [(f"{cpe}/plafond_cotisation.yaml", m["plafond_cpe"], taux_ou_sans_plafond)],
          {"1962-01-01": "loi-62-73-cpe, art. 2", "1965-01-01": "lf-1966, art. 10",
-          "1980-01-01": "loi79-66-lf1980, art. 8"}),
+          "1980-01-01": "loi79-66-lf1980, art. 8", "1983-01-01": "lf-1983, art. 9",
+          "1986-01-01": "lf-1986, art. 8"}),
     ]
-
-
-# Dates d'effet que le paramètre porte mais que le texte cité ne soutient pas : la ligne
-# est retirée du tableau publié. Le 60 % au 1er janvier 1983 est rattaché à l'article 9
-# de la loi n° 82-91, dont l'article 8 nouveau ne comporte aucun plafond (JORT n° 84 du
-# 31 décembre 1982, p. 2877-2878) ; le 60 % vient de l'article 8 de la loi n° 85-109.
-# À retirer dès que le paramètre corrigé est publié et la borne de version relevée.
-DATES_ECARTEES = {"plafond_cpe.md": ["1983-01-01"]}
-
-
-def sans_dates_ecartees(df, fichier, langue, colonne):
-    ecartees = [ot.formate_date(d, langue) for d in DATES_ECARTEES.get(fichier, [])]
-    if df is None or not ecartees:
-        return df
-    return df[~df[colonne].isin(ecartees)].reset_index(drop=True)
 
 
 TABLEAUX = [
@@ -296,7 +289,6 @@ def main() -> int:
                 specs, cles=cles, langue=langue,
                 colonne_periode=m["revenus_depuis"], colonne_texte=m["texte"]
             ))
-            df = sans_dates_ecartees(df, fichier, langue, m["revenus_depuis"])
             if df is None:
                 print(f"échec : {langue}/{fichier}", file=sys.stderr)
                 return 1
