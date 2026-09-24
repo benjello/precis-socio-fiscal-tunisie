@@ -2892,3 +2892,43 @@ absentes de Zotero 55.
 - [x] `decretloi70-1` (AR) : 1186-1187 → 1300-1301 (édition arabe, JORT n° 43/1970).
 - [ ] `loi81-70` (AR) : porte encore la pagination française (1789-1798) sur l'URL du fascicule arabe. Seules les pp. 1889-1890 de l'édition arabe (art. 4) ont été lues : établir l'étendue complète de la loi dans l'édition arabe avant de corriger.
 - [ ] Même défaut probable pour d'autres entrées AR du fonds commun dont la pagination vient de `jort_cache` (qui donne la pagination française).
+
+### Livre « Fiscalité » — TVA, les réformes de 1988 à 2026 (versement du 24/09/2026)
+
+Source : `docs/notes/fiscalite-tva-reformes.md` (§ 6). Quatre entrées créées, FR et AR (mêmes
+ids), dans `precis/{fr,ar}/fiscalite/references.json` (collection cible : `fiscalite`),
+**pas encore dans Zotero**. Métadonnées (numéro, date, JORT, tome, pagination par article)
+vérifiées dans `jort_cache.db` (table `textes`, notices par article) ; URL = `pdf_fr` / `pdf_ar`
+du même enregistrement. Trois des quatre fascicules (1999, 2000, 2002) relèvent du décalage de
+codage +29 décrit dans `outillage-sources.md` § 5, qui rend leurs numéros de page illisibles même
+décodés : la pagination retenue vient donc de `jort_cache.db` (recoupée par article), non du
+fascicule ; le contenu des articles cités a en revanche été confirmé sur la couche décodée. Le
+quatrième (`lfc-2016`, JORT n° 2/2017) est lisible sans décalage et a été vérifié à la fois par
+`jort_cache.db` et sur la couche texte du fascicule (page, tome, contenu de l'article 3).
+
+| Clé | Texte | Remarque |
+|---|---|---|
+| `lf-2000` | Loi n° 99-101 du 31 décembre 1999 (LF 2000) | art. 19 p. 2741 (services de formation, 18 % → 10 %) |
+| `lf-2001` | Loi n° 2000-98 du 25 décembre 2000 (LF 2001) | art. 40 p. 3178 (internet, 18 % → 10 %) ; art. 63 p. 3181 (exonération des logements des promoteurs) |
+| `decret-2002-3356-tva-telecom` | Décret n° 2002-3356 du 30 décembre 2002 | fixe au 1er janvier 2003 l'entrée en vigueur des art. 66-69 de la LF 2002 (télécommunications taxées) |
+| `lfc-2016` | Loi n° 2017-1 du 3 janvier 2017 (LFC 2016) | art. 3 p. 60 (médicaments au détail réintégrés à l'exonération à compter du 1er janvier 2017 — via la LF 2016 qu'elle corrige) ; tome 160 lu sur le fascicule (« 160ème année »), en désaccord avec `jort_cache.db` qui donne 161 pour d'autres notices du même numéro (incohérence non résolue, signalée en note de l'entrée) |
+
+Notes complétées, sans changer le champ `page` (conformément à la consigne du bibliographe.md) :
+- `lf-1996` (fiscalité, FR et AR) : pagination détaillée par article ajoutée en note (art. 36-37
+  p. 2371 ; art. 38-45 p. 2372 ; art. 46 p. 2373), à partir d'une relecture du fascicule
+  (`Jo10495.pdf`, mise en page à deux colonnes — la note le signale, l'attribution page par page
+  y est de ce fait moins sûre qu'un texte à une colonne).
+- `lf-2018` (fonds commun, FR et AR) : note complétée sur les art. 43-44 (taux TVA), lus sur pièce
+  à la page 4281 du fascicule (`Jo1012017.pdf`) — et non 4280-4281 comme l'écrivaient le chapitre
+  et l'ancienne note documentaire ; la page 4280 se termine sur l'article 42.
+
+Contrôles (worktree, 24/09/2026) : les 21 clés citées par `_tva.qmd` résolvent (fichier du livre +
+fonds commun) ; rendus FR et AR de « Fiscalité » : 0 citation non résolue. `push_biblio.py
+--verifier`, `--dry-run` et `--controle-rangement` **non lancés dans cette passe** (consigne :
+aucun workflow sans feu vert) — à lancer à la clôture par l'agent qui fusionnera.
+
+- [ ] Rapatriement Zotero **après fusion**, sur feu vert humain : `permissions` → `verifier` →
+      `dry-run` → `pousser-un` → `comparer` → `pousser-tout` → `ranger` (collection `fiscalite`,
+      sauf si le contrôle dit autrement).
+- [ ] `lfc-2016` : trancher l'écart de tome (160 lu sur pièce vs 161 en base) avant de pousser, ou
+      pousser avec la note qui l'explique.
