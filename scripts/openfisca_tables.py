@@ -674,8 +674,8 @@ def formate_date_fr(date_iso: str) -> str:
 
 
 ATTESTATION = {
-    "fr": ("texte lu", "**non établie**"),
-    "ar": ("نصّ مقروء", "**غير ثابتة**"),
+    "fr": ("texte établi", "**non établie**"),
+    "ar": ("نصّ ثابت", "**غير ثابتة**"),
 }
 
 

@@ -34,9 +34,7 @@ Le partage avec les autres livres du précis est le suivant. Le livre « Retrait
 
 **2. Beaucoup de montants d'assistance ne sont pas fixés au *Journal officiel*.** C'est un trait de méthode, et non une lacune de la présente rédaction. Le montant de l'allocation du [programme national d'aide aux familles nécessiteuses](#g-pnafn) n'a été énoncé par aucun texte publié avant 2024 ; les [quotas régionaux](#g-quota-regional) qui contingentent les [cartes de soins](#g-amg1) n'ont pas d'arrêté retrouvé ; les pondérations du modèle de [score](#g-score-eligibilite) de l'[AMEN social](#g-amen-social) ne sont pas publiées. Quand un montant circule sans texte, ce chapitre le dit plutôt que de lui prêter un fondement.
 
-<!-- TODO (rédacteur) : l'étiquette « texte lu » des tableaux engendrés vient de ATTESTATION dans scripts/openfisca_tables.py ; la renommer (par exemple « texte établi ») puis régénérer les tableaux et ajuster cette légende. -->
-
-**3. Trois niveaux d'attestation, hérités des dossiers documentaires.** *Texte lu* : l'énoncé est celui de l'article tel que publié au JORT ; *référence* : seuls le numéro, les dates, le fascicule et la page du texte sont établis ; *dérivé* : l'énoncé est déduit d'un renvoi ou d'un intitulé, et non du texte de l'article. Les tableaux qui comportent des lignes dérivées portent une colonne d'attestation. Une donnée dérivée n'est jamais présentée ici comme attestée.
+**3. Trois niveaux d'attestation.** *Texte établi* : l'énoncé est celui de l'article tel que publié au JORT ; *référence* : seuls le numéro, les dates, le fascicule et la page du texte sont établis ; *dérivé* : l'énoncé est déduit d'un renvoi ou d'un intitulé, et non du texte de l'article. Les tableaux qui comportent des lignes dérivées portent une colonne d'attestation. Une donnée dérivée n'est jamais présentée ici comme attestée.
 :::
 
 ## Présentation générale
