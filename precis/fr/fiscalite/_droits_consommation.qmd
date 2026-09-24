@@ -148,9 +148,123 @@ La seconde habilitation vise les **produits pétroliers**. L'article 35 de la lo
 
 Hors de ces deux domaines, la modification passe par la loi. L'exemple type est l'article 38 de la loi de finances pour 1991, sous l'intitulé « Suppression et réduction du droit de consommation dû sur certains produits », qui modifie la liste annexée à la loi 88-62 conformément à un tableau « N » figurant dans la seconde partie de la loi [@lf-1991, art. 38]. Le contenu de ce tableau « N » n'est pas établi ici, non plus que le détail des suppressions et réductions de 1991.
 
-## La chronologie du périmètre
+## L'articulation avec la taxe sur la valeur ajoutée
 
-Le droit de consommation a commencé à refluer **six mois après son entrée en vigueur**. Dès la première loi de finances qui suit sa refonte, l'article 27 supprime le droit sur une longue liste de positions : viandes et abats salés ou séchés, poissons séchés ou fumés, saucisses et conserves de viande, préparations pour soupes, marbre local, ouvrages en matière plastique, vêtements en cuir, tulles et dentelles, parapluies, miroirs, verrerie de table, poêles et cuisinières, ustensiles en cuivre, couverts, appareils d'éclairage, réfrigérateurs et congélateurs à usage domestique, chauffe-eau non électriques, lunetterie [@loi-88-145-lf-1989, art. 27]. Ce premier reflux porte donc d'abord sur des biens d'équipement ménager et sur des produits alimentaires transformés. Le mouvement se poursuit l'année suivante, l'article 29 de la loi de finances pour 1990 supprimant le droit sur une autre série de positions, des épices aux appareils d'horlogerie [@loi-89-115-lf-1990, art. 29].
+Le droit de consommation et la taxe sur la valeur ajoutée se cumulent, et leur cumul est **asymétrique**. Les deux textes le disent, chacun de son côté.
+
+: Ce que chacun des deux prélèvements retient dans sa base {#tbl-dc-cascade}
+
+| Prélèvement | Ce qui entre dans l'assiette | Ce qui en est exclu |
+|---|---|---|
+| Droit de consommation | à l'importation, la valeur en douane ; en régime intérieur, le prix de vente tous frais, droits et taxes compris | le droit de consommation lui-même **et** la taxe sur la valeur ajoutée |
+| Taxe sur la valeur ajoutée | le prix des marchandises, travaux ou services tous frais, droits et taxes inclus | la taxe sur la valeur ajoutée, les subventions d'exploitation, les prélèvements conjoncturels et de compensation |
+
+Sources : @loi-88-62-droit-consommation, art. 4 ; @loi-88-61-tva, art. 6 ; @dgelf-code-tva-2023.
+
+Trois conséquences en découlent. D'abord, **le droit de consommation se cumule avec la taxe sur la valeur ajoutée** : rien dans la loi 88-62 ne l'en exonère. Ensuite, **il entre dans l'assiette de la taxe** : les exclusions de l'article 6 du code étant limitatives, et le droit de consommation n'y figurant pas, la taxe frappe un prix qui l'inclut déjà. C'est une cascade, non une juxtaposition. Enfin, **la réciproque est fausse** : la taxe sur la valeur ajoutée est expressément exclue de l'assiette du droit de consommation.
+
+La deuxième de ces conséquences procède d'une lecture *a contrario*. Elle est cependant confirmée en termes exprès par la doctrine administrative, qui énonce que « la liquidation de la TVA continue à être effectuée sur la base d'une assiette qui comprend lesdites taxes ainsi que le droit de consommation », et qui l'illustre par un exemple chiffré [@dgi-nc-29-2007].
+
+: Exemple de liquidation en cascade donné par la doctrine administrative {#tbl-dc-exemple-cascade}
+
+| Élément | Calcul | Montant |
+|---|---|---|
+| Prix de vente hors taxes | — | 500,000 D |
+| Droit de consommation (10 %) | 500 × 10 % | 50,000 D |
+| Taxe au profit du fonds de développement de la compétitivité industrielle (1 %) | 500 × 1 % | 5,000 D |
+| **Assiette de la taxe sur la valeur ajoutée** | 500 + 50 + 5 | **555,000 D** |
+| Taxe sur la valeur ajoutée (18 %) | 555 × 18 % | 99,900 D |
+| **Prix de vente toutes taxes comprises** | — | **654,900 D** |
+
+Source : @dgi-nc-29-2007. Une note commune est de la doctrine administrative, jamais une source du droit : elle est citée ici parce qu'elle confirme une lecture *a contrario*, non parce qu'elle la fonde.
+
+La même note apporte une nuance qui évite une double prise en compte : les taxes affectées au fonds de développement de la compétitivité industrielle et au fonds national de maîtrise de l'énergie sont liquidées sur une assiette qui ne comprend pas le droit de consommation, et réciproquement. Ces trois prélèvements sont donc **parallèles entre eux**, et tous trois **en amont** de la taxe sur la valeur ajoutée [@dgi-nc-29-2007].
+
+Deux tempéraments, enfin, figurent dans la loi elle-même : l'imputation ouverte par l'article 5 sur les matières entrant intégralement dans la composition du produit final, et la neutralisation, par l'article 4, de l'effet du droit sur les marges des entrepositaires et marchands de boissons alcoolisées.
+
+## L'évolution, réforme par réforme
+
+Le tableau de 1988 a été retouché par la plupart des lois de finances, et par une série de décrets pris sur les deux habilitations décrites plus haut. Les sous-sections qui suivent retiennent, année par année, les textes dont l'objet est établi ici ; le récapitulatif de tous les textes, y compris ceux dont seul l'intitulé est connu, figure plus loin (@tbl-dc-chronologie). Conformément aux conventions posées en tête du chapitre, l'année d'une loi de finances est celle de la gestion qu'elle régit : sa date d'effet au 1^er^ janvier est déduite du régime de droit commun des lois de finances — sauf pour la loi de 2006, dont l'article 19 l'énonce.
+
+### 1989 — refluer six mois après l'entrée en vigueur
+
+Le droit de consommation a commencé à refluer **six mois après son entrée en vigueur**. Dès la première loi de finances qui suit sa refonte, l'article 27 supprime le droit sur une longue liste de positions : viandes et abats salés ou séchés, poissons séchés ou fumés, saucisses et conserves de viande, préparations pour soupes, marbre local, ouvrages en matière plastique, vêtements en cuir, tulles et dentelles, parapluies, miroirs, verrerie de table, poêles et cuisinières, ustensiles en cuivre, couverts, appareils d'éclairage, réfrigérateurs et congélateurs à usage domestique, chauffe-eau non électriques, lunetterie [@loi-88-145-lf-1989, art. 27]. Ce premier reflux porte donc d'abord sur des biens d'équipement ménager et sur des produits alimentaires transformés.
+
+La même loi de finances ouvre, par son article 86, l'habilitation « boissons » décrite plus haut [@loi-88-145-lf-1989, art. 86]. Trois décrets, publiés entre décembre 1988 et septembre 1989, modifient eux aussi le tableau annexé — les décrets n^os^ 88-2002, 89-479 et 89-1348 ; seules leurs références sont connues ici, et ni les positions touchées, ni les taux, ni les dates d'effet n'en sont établis [@decret-88-2002-suppressions ; @decret-89-479-tableau ; @decret-89-1348-tableau].
+
+### 1990 — de nouvelles sorties, et la voie du décret pour le pétrole
+
+Le mouvement se poursuit l'année suivante : l'article 29 de la loi de finances pour 1990 supprime le droit sur une autre série de positions, des épices aux appareils d'horlogerie [@loi-89-115-lf-1990, art. 29].
+
+La même loi agit sur trois autres pièces du régime, chacune exposée plus haut avec l'article ou le renvoi qu'elle modifie : l'article 34 institue la facturation à l'identique [@loi-89-115-lf-1990, art. 34] ; l'article 35 renvoie au décret la fixation des taux des produits pétroliers [@loi-89-115-lf-1990, art. 35] ; l'article 36 abroge le renvoi (1) du tableau, relatif à la déduction ouverte aux hôteliers [@loi-89-115-lf-1990, art. 36].
+
+### 1991 — le tableau « N », et deux décrets rétroactifs
+
+La loi de finances pour 1991 modifie la liste annexée par un tableau « N », présenté plus haut comme l'exemple type de la modification par la loi ; son contenu n'est pas établi ici [@lf-1991, art. 38].
+
+<!-- TODO (rédacteur) : le tableau « N » de la loi de finances pour 1991 (loi n° 90-111,
+deuxième partie, p. 2062-2204) n'a pas été dépouillé ; le détail des suppressions et
+réductions de 1991 reste donc inconnu. -->
+
+Les décrets n^os^ 91-550 et 91-551, signés le 20 avril 1991 et publiés au JORT n° 29 du 30 avril 1991, appliquent l'un et l'autre leurs dispositions à compter du **5 février 1991** : leur effet précède donc leur publication de près de trois mois [@decret-91-550-tarif-petroliers, art. 2 ; @decret-91-551-tarif-boissons, art. 2]. Le premier relève les tarifs des produits pétroliers ; le second révise les taux applicables aux boissons et introduit, pour les vins, une tarification à l'unité selon la contenance de la bouteille — première occurrence, dans les textes cités, d'un tarif par bouteille.
+
+Deux incertitudes s'attachent à leurs visas, qu'il convient de signaler sans les trancher. D'une part, le décret n° 91-550 vise « la loi n° 88-145 du 31 décembre 1988 […] et notamment son article 35 », alors que l'article 35 de cette loi concerne la contribution au fonds de promotion des logements pour les salariés ; l'habilitation pertinente en matière pétrolière est l'article 35 de la loi n° 89-115. Le visa du décret n° 91-551, qui renvoie à l'article 86 de la loi n° 88-145, est en revanche cohérent. D'autre part, les deux décrets visent « la loi n° 91-111 du 31 décembre 1990, portant loi de finances pour la gestion 1991 », tandis que cette loi porte le numéro 90-111. Il n'est pas établi ici si la divergence tient au texte publié lui-même ou à une erreur de lecture de ce texte.
+
+<!-- TODO (documentaliste) : le fac-similé consulté ne permet pas de trancher entre « 91-111 » et « 90-111 » dans les visas des décrets n° 91-550 et 91-551 ; relire sur une meilleure image ou l'édition arabe. -->
+
+### 1994-2004 — la position 87-03, retouchée loi après loi
+
+La suite des lois de finances fait apparaître une régularité que le tableau de 1988 ne laissait pas prévoir : **la position 87-03, celle des véhicules de transport de personnes, est retouchée par loi de finances après loi de finances**. L'article 50 de la loi de finances pour 1994 la modifie ; l'article 64 de la loi de finances pour 1995 le vise expressément pour la modifier à son tour ; l'article 51 de la loi de finances pour 1997 en détache les voitures de petite cylindrée, exonérées de droits de douane et soumises au droit au taux de 10 % ; l'article 47 de la loi de finances pour 1998 y revient, puis l'article 50 de celle pour 1999, qui le vise à son tour ; la loi de finances pour 2003 y revient enfin, par une disposition relative au droit dû sur les véhicules de transport de personnes dont le numéro d'article n'est pas établi [@lf-1994, art. 50 ; @lf-1995, art. 64 ; @lf-1997, art. 51 ; @lf-1998, art. 47 ; @lf-1999, art. 50 ; @lf-2003].
+
+La loi de finances pour 2004 relève de la même matière, sans qu'il soit possible de la rattacher à cette position précise : ses intitulés visent les pneumatiques en caoutchouc, les véhicules aménagés à l'usage des personnes handicapées et les véhicules tout terrain, et la seule disposition déchiffrée concerne une position « Ex » de produits importés montés sur roues entières [@lf-2004].
+
+Deux de ces maillons se corroborent l'un l'autre : l'article 64 de 1995 et l'article 50 de 1999, les seuls dont la lettre est établie ici, nomment respectivement l'article 50 de 1994 et l'article 47 de 1998, et établissent ainsi leur objet sans en livrer le contenu. **Les taux successifs ne sont pas établis ici** : la série ne peut donc pas être chiffrée ici, et seule la suite des interventions est établie. Elle suffit à situer le barème par cylindrée qui occupe aujourd'hui la place la plus visible du tableau : la fiscalité automobile n'est pas un ajout récent au droit de consommation, elle en est un terrain d'ajustement dès la première décennie.
+
+### 1998 et 1999 — les produits pétroliers, un régime dans le régime
+
+Les produits pétroliers figurent au tableau dès 1988, avec des tarifs spécifiques. Mais ils s'en détachent partiellement à partir de 1990, lorsque l'article 35 de la loi de finances pour 1990 renvoie au décret la fixation de leurs taux [@loi-89-115-lf-1990, art. 35]. La chaîne des textes est alors la suivante : le décret n° 91-550 exerce l'habilitation pour la première fois [@decret-91-550-tarif-petroliers] ; le décret n° 94-816 fixe les taux applicables aux hydrocarbures [@decret-94-816-hydrocarbures] ; le décret n° 98-952 retire les produits pétroliers du taux réduit de la taxe sur la valeur ajoutée et fixe leur tarif au droit de consommation à compter du 6 mai 1998 [@decret-98-952-fiscalite-petrole-electricite, art. 2] ; le décret n° 99-894 fixe enfin le tarif complet, applicable à compter du 22 avril 1999 [@decret-99-894-tarif-petroliers, art. 1 et 2]. Ce dernier décret vise expressément l'article 35 de la loi n° 89-115, confirmant la chaîne d'habilitation.
+
+### 2007 — transférer cinq lignes depuis la taxe sur la valeur ajoutée
+
+La suppression du taux majoré de la taxe sur la valeur ajoutée, au 1^er^ janvier 2007, s'accompagne d'un transfert vers le droit de consommation. Ce transfert est **sélectif**, et sa portée mérite d'être énoncée précisément : la loi n° 2006-80 supprime le taux de 29 %, dont les produits relèvent désormais du taux normal de 18 %, et n'ajoute au tableau annexé que **cinq lignes**, toutes au taux de 10 % [@loi-2006-80-reduction-taux, art. 13 et 14].
+
+: Les cinq positions ajoutées au tableau annexé au 1^er^ janvier 2007 {#tbl-dc-transfert-2007}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../../scripts")
+import tarifs
+tarifs.imprime("tarifs/tarifs-releves-droits-consommation.csv", "transfert-2007")
+```
+
+Sources : @loi-2006-80-reduction-taux, art. 14 ; @dgi-nc-24-2007. Signature du 18 décembre 2006 ; publication au JORT n° 101 du 19 décembre 2006, p. 4302 ; effet au 1^er^ janvier 2007, énoncé par l'article 19 de la loi — seule date d'effet de loi de finances lue dans le texte pour ce chapitre.
+
+La doctrine administrative confirme cette lecture : elle décrit d'une part « la suppression du taux de la TVA de 29 % et l'imposition des produits concernés à ladite taxe au taux de 18 % », d'autre part « l'imposition de certains produits concernés par la réduction du taux de la TVA de 29 % à 18 % au droit de consommation au taux de 10 % » [@dgi-nc-24-2007]. Les autres produits de l'ancien tableau « C » ne sont donc pas transférés au droit de consommation : ils relèvent simplement du taux normal.
+
+### 2008 — un carburant et un redevable nouveaux
+
+La loi de finances pour 2008 soumet au droit le gaz naturel destiné à l'utilisation comme carburant pour les véhicules automobiles, et ajoute aux redevables de l'article 2 la Société tunisienne de l'électricité et du gaz, au titre de ces ventes [@loi-2007-70-lf-2008, art. 58]. La ligne « gaz naturel carburant » figure depuis au tarif des produits pétroliers (@tbl-dc-petroliers).
+
+### 2013 et 2014 — les prix entre entreprises liées, et deux postes
+
+L'article 43 de la loi de finances pour 2013 fait liquider le droit *ad valorem*, pour les entreprises liées aux entrepositaires et aux commerçants de gros de boissons alcoolisées et de vins, sur la base du prix de vente pratiqué par ces derniers ; la règle, exposée plus haut avec l'assiette, gagne les fabricants en 2016 [@lf-2013, art. 43]. L'article 70 de la loi de finances pour 2014 porte sur deux postes du tableau : la dolomie, et les bains et douches équipés de jacuzzi [@lf-2014, art. 70].
+
+### 2016 et 2018 — abroger et remplacer le tableau, deux fois
+
+Un point de méthode commande la lecture de toutes les étapes antérieures : **le tableau annexé a été abrogé et remplacé en entier, deux fois**. Une première fois par l'article 44 de la loi de finances pour 2016, une seconde par l'article 45 de la loi de finances pour 2018, tous deux rédigés dans la même forme — « est abrogé le tableau annexé à la loi n° 88-62 […] et remplacé par le tableau suivant » [@lf-2016, art. 44 ; @lf-2018, art. 45]. Le tableau en vigueur descend donc du texte de 2018, amendé depuis par les lois de finances pour 2019, 2021 et 2022 [@loi2018-56-lf2019 ; @lf-2021 ; @lf-2022]. Citer « le tableau annexé à la loi n° 88-62 » sans millésime est une source d'erreur : le tableau de 1988 et celui d'aujourd'hui n'ont presque aucun poste en commun. Pour l'état en vigueur, la source à consulter est la version consolidée du code, et non le texte de 1988 ni même celui de 2018 [@dgelf-code-tva-2023]. La doctrine administrative a commenté chacune des deux refontes [@dgi-nc-7-2016 ; @dgi-nc-17-2018].
+
+Chacune des deux lois agit aussi hors du tableau. Celle pour 2016 abroge les sous-paragraphes 3 et 4 de l'article 1^er^ et étend aux fabricants la règle de prix posée en 2013 [@lf-2016, art. 45 et 57] ; celle pour 2018 ajoute l'article 6 *bis*, qui suspend le droit sur les véhicules tout terrain importés par les concessionnaires au profit des agences de voyages [@lf-2018, art. 22].
+
+### 2019 à 2022 — retoucher le tableau refondu
+
+Le tableau de 2018 est amendé par les lois de finances qui suivent. Celle pour 2019 porte, par ses articles 62, 69 et 80, sur les véhicules de 8 à 9 places destinés aux personnes handicapées, sur les mélanges odoriférants et sur les motocycles [@loi2018-56-lf2019, art. 62, 69 et 80]. Celle pour 2021 révise, par ses articles 20 à 22, les taux applicables à la bière, aux vins, au tabac chauffé et au *maassil* [@lf-2021, art. 20 à 22]. Le décret-loi portant loi de finances pour 2022 remanie enfin, par ses articles 37 et 52, les renvois de l'article 6 au code de la taxe sur la valeur ajoutée ; son texte même n'est pas établi ici, et ces modifications sont connues par l'état consolidé du code [@lf-2022 ; @dgelf-code-tva-2023].
+
+## La longue période
+
+Les sous-sections qui précèdent suivent les textes un à un. Trois vues les rassemblent : la suite de tous les textes, la série des tarifs pétroliers — la seule série de tarifs établie ici de 1988 à nos jours —, et le tableau en vigueur, point d'arrivée de ces retouches successives.
+
+### Les jalons
 
 : Principales étapes du droit de consommation depuis 1988 {#tbl-dc-chronologie}
 
@@ -194,87 +308,9 @@ Sources : @loi-88-62-droit-consommation ; @loi-88-145-lf-1989 ; @decret-88-2002-
 
 <!-- TODO (documentaliste) : les décrets marqués « non établie » n'ont pas été consultés sur pièce ; les pages imprimées des articles des LF 1994-2004 n'ont pas été relevées. -->
 
-<!-- TODO (rédacteur) : le tableau « N » de la loi de finances pour 1991 (loi n° 90-111,
-deuxième partie, p. 2062-2204) n'a pas été dépouillé ; le détail des suppressions et
-réductions de 1991 reste donc inconnu. -->
+Ce récapitulatif n'est pour autant pas exhaustif. L'état consolidé du code recense parmi les textes modificatifs les lois de finances pour 1992, 1993, 2005 et 2007, dont les articles ne sont pas établis ici : ni leur contenu ni leurs taux ne sont connus, et elles ne sont pas portées au tableau ci-dessus [@dgelf-code-tva-2023 ; @lf-1992 ; @lf-1993 ; @lf-2005 ; @lf-2007].
 
-### Une ligne qui revient : les véhicules de transport de personnes
-
-Cette chronologie fait apparaître une régularité que le tableau de 1988 ne laissait pas prévoir : **la position 87-03, celle des véhicules de transport de personnes, est retouchée par loi de finances après loi de finances**. L'article 50 de la loi de finances pour 1994 la modifie ; l'article 64 de la loi de finances pour 1995 le vise expressément pour la modifier à son tour ; l'article 51 de la loi de finances pour 1997 en détache les voitures de petite cylindrée, exonérées de droits de douane et soumises au droit au taux de 10 % ; l'article 47 de la loi de finances pour 1998 y revient, puis l'article 50 de celle pour 1999, qui le vise à son tour ; la loi de finances pour 2003 y revient enfin, par une disposition relative au droit dû sur les véhicules de transport de personnes dont le numéro d'article n'est pas établi [@lf-1994, art. 50 ; @lf-1995, art. 64 ; @lf-1997, art. 51 ; @lf-1998, art. 47 ; @lf-1999, art. 50 ; @lf-2003].
-
-La loi de finances pour 2004 relève de la même matière, sans qu'il soit possible de la rattacher à cette position précise : ses intitulés visent les pneumatiques en caoutchouc, les véhicules aménagés à l'usage des personnes handicapées et les véhicules tout terrain, et la seule disposition déchiffrée concerne une position « Ex » de produits importés montés sur roues entières [@lf-2004].
-
-Deux de ces maillons se corroborent l'un l'autre : l'article 64 de 1995 et l'article 50 de 1999, les seuls dont la lettre est établie ici, nomment respectivement l'article 50 de 1994 et l'article 47 de 1998, et établissent ainsi leur objet sans en livrer le contenu. **Les taux successifs ne sont pas établis ici** : la série ne peut donc pas être chiffrée ici, et seule la suite des interventions est établie. Elle suffit à situer le barème par cylindrée qui occupe aujourd'hui la place la plus visible du tableau : la fiscalité automobile n'est pas un ajout récent au droit de consommation, elle en est un terrain d'ajustement dès la première décennie.
-
-La chronologie qui précède n'est pour autant pas exhaustive. L'état consolidé du code recense parmi les textes modificatifs les lois de finances pour 1992, 1993, 2005 et 2007, dont les articles ne sont pas établis ici : ni leur contenu ni leurs taux ne sont connus, et elles ne sont pas portées au tableau [@dgelf-code-tva-2023 ; @lf-1992 ; @lf-1993 ; @lf-2005 ; @lf-2007].
-
-### Deux décrets rétroactifs, et deux incertitudes de visa
-
-Les décrets n^os^ 91-550 et 91-551, signés le 20 avril 1991 et publiés au JORT n° 29 du 30 avril 1991, appliquent l'un et l'autre leurs dispositions à compter du **5 février 1991** : leur effet précède donc leur publication de près de trois mois [@decret-91-550-tarif-petroliers, art. 2 ; @decret-91-551-tarif-boissons, art. 2]. Le premier relève les tarifs des produits pétroliers ; le second révise les taux applicables aux boissons et introduit, pour les vins, une tarification à l'unité selon la contenance de la bouteille — première occurrence, dans les textes cités, d'un tarif par bouteille.
-
-Deux incertitudes s'attachent à leurs visas, qu'il convient de signaler sans les trancher. D'une part, le décret n° 91-550 vise « la loi n° 88-145 du 31 décembre 1988 […] et notamment son article 35 », alors que l'article 35 de cette loi concerne la contribution au fonds de promotion des logements pour les salariés ; l'habilitation pertinente en matière pétrolière est l'article 35 de la loi n° 89-115. Le visa du décret n° 91-551, qui renvoie à l'article 86 de la loi n° 88-145, est en revanche cohérent. D'autre part, les deux décrets visent « la loi n° 91-111 du 31 décembre 1990, portant loi de finances pour la gestion 1991 », tandis que cette loi porte le numéro 90-111. Il n'est pas établi ici si la divergence tient au texte publié lui-même ou à une erreur de lecture de ce texte.
-
-<!-- TODO (documentaliste) : le fac-similé consulté ne permet pas de trancher entre « 91-111 » et « 90-111 » dans les visas des décrets n° 91-550 et 91-551 ; relire sur une meilleure image ou l'édition arabe. -->
-
-### Le tableau de 1988 n'existe plus
-
-Un point de méthode commande la lecture de tout ce qui précède : **le tableau annexé a été abrogé et remplacé en entier, deux fois**. Une première fois par l'article 44 de la loi de finances pour 2016, une seconde par l'article 45 de la loi de finances pour 2018, tous deux rédigés dans la même forme — « est abrogé le tableau annexé à la loi n° 88-62 […] et remplacé par le tableau suivant » [@lf-2016, art. 44 ; @lf-2018, art. 45]. Le tableau en vigueur descend donc du texte de 2018, amendé depuis par les lois de finances pour 2019, 2021 et 2022 [@loi2018-56-lf2019 ; @lf-2021 ; @lf-2022]. Citer « le tableau annexé à la loi n° 88-62 » sans millésime est une source d'erreur : le tableau de 1988 et celui d'aujourd'hui n'ont presque aucun poste en commun. Pour l'état en vigueur, la source à consulter est la version consolidée du code, et non le texte de 1988 ni même celui de 2018 [@dgelf-code-tva-2023]. La doctrine administrative a commenté chacune des deux refontes [@dgi-nc-7-2016 ; @dgi-nc-17-2018].
-
-## L'articulation avec la taxe sur la valeur ajoutée
-
-Le droit de consommation et la taxe sur la valeur ajoutée se cumulent, et leur cumul est **asymétrique**. Les deux textes le disent, chacun de son côté.
-
-: Ce que chacun des deux prélèvements retient dans sa base {#tbl-dc-cascade}
-
-| Prélèvement | Ce qui entre dans l'assiette | Ce qui en est exclu |
-|---|---|---|
-| Droit de consommation | à l'importation, la valeur en douane ; en régime intérieur, le prix de vente tous frais, droits et taxes compris | le droit de consommation lui-même **et** la taxe sur la valeur ajoutée |
-| Taxe sur la valeur ajoutée | le prix des marchandises, travaux ou services tous frais, droits et taxes inclus | la taxe sur la valeur ajoutée, les subventions d'exploitation, les prélèvements conjoncturels et de compensation |
-
-Sources : @loi-88-62-droit-consommation, art. 4 ; @loi-88-61-tva, art. 6 ; @dgelf-code-tva-2023.
-
-Trois conséquences en découlent. D'abord, **le droit de consommation se cumule avec la taxe sur la valeur ajoutée** : rien dans la loi 88-62 ne l'en exonère. Ensuite, **il entre dans l'assiette de la taxe** : les exclusions de l'article 6 du code étant limitatives, et le droit de consommation n'y figurant pas, la taxe frappe un prix qui l'inclut déjà. C'est une cascade, non une juxtaposition. Enfin, **la réciproque est fausse** : la taxe sur la valeur ajoutée est expressément exclue de l'assiette du droit de consommation.
-
-La deuxième de ces conséquences procède d'une lecture *a contrario*. Elle est cependant confirmée en termes exprès par la doctrine administrative, qui énonce que « la liquidation de la TVA continue à être effectuée sur la base d'une assiette qui comprend lesdites taxes ainsi que le droit de consommation », et qui l'illustre par un exemple chiffré [@dgi-nc-29-2007].
-
-: Exemple de liquidation en cascade donné par la doctrine administrative {#tbl-dc-exemple-cascade}
-
-| Élément | Calcul | Montant |
-|---|---|---|
-| Prix de vente hors taxes | — | 500,000 D |
-| Droit de consommation (10 %) | 500 × 10 % | 50,000 D |
-| Taxe au profit du fonds de développement de la compétitivité industrielle (1 %) | 500 × 1 % | 5,000 D |
-| **Assiette de la taxe sur la valeur ajoutée** | 500 + 50 + 5 | **555,000 D** |
-| Taxe sur la valeur ajoutée (18 %) | 555 × 18 % | 99,900 D |
-| **Prix de vente toutes taxes comprises** | — | **654,900 D** |
-
-Source : @dgi-nc-29-2007. Une note commune est de la doctrine administrative, jamais une source du droit : elle est citée ici parce qu'elle confirme une lecture *a contrario*, non parce qu'elle la fonde.
-
-La même note apporte une nuance qui évite une double prise en compte : les taxes affectées au fonds de développement de la compétitivité industrielle et au fonds national de maîtrise de l'énergie sont liquidées sur une assiette qui ne comprend pas le droit de consommation, et réciproquement. Ces trois prélèvements sont donc **parallèles entre eux**, et tous trois **en amont** de la taxe sur la valeur ajoutée [@dgi-nc-29-2007].
-
-Deux tempéraments, enfin, figurent dans la loi elle-même : l'imputation ouverte par l'article 5 sur les matières entrant intégralement dans la composition du produit final, et la neutralisation, par l'article 4, de l'effet du droit sur les marges des entrepositaires et marchands de boissons alcoolisées.
-
-## Le transfert de 2007, et sa portée exacte
-
-La suppression du taux majoré de la taxe sur la valeur ajoutée, au 1^er^ janvier 2007, s'accompagne d'un transfert vers le droit de consommation. Ce transfert est **sélectif**, et sa portée mérite d'être énoncée précisément : la loi n° 2006-80 supprime le taux de 29 %, dont les produits relèvent désormais du taux normal de 18 %, et n'ajoute au tableau annexé que **cinq lignes**, toutes au taux de 10 % [@loi-2006-80-reduction-taux, art. 13 et 14].
-
-: Les cinq positions ajoutées au tableau annexé au 1^er^ janvier 2007 {#tbl-dc-transfert-2007}
-
-```{python}
-#| echo: false
-#| output: asis
-import sys; sys.path.insert(0, "../../../scripts")
-import tarifs
-tarifs.imprime("tarifs/tarifs-releves-droits-consommation.csv", "transfert-2007")
-```
-
-Sources : @loi-2006-80-reduction-taux, art. 14 ; @dgi-nc-24-2007. Signature du 18 décembre 2006 ; publication au JORT n° 101 du 19 décembre 2006, p. 4302 ; effet au 1^er^ janvier 2007, énoncé par l'article 19 de la loi — seule date d'effet de loi de finances lue dans le texte pour ce chapitre.
-
-La doctrine administrative confirme cette lecture : elle décrit d'une part « la suppression du taux de la TVA de 29 % et l'imposition des produits concernés à ladite taxe au taux de 18 % », d'autre part « l'imposition de certains produits concernés par la réduction du taux de la TVA de 29 % à 18 % au droit de consommation au taux de 10 % » [@dgi-nc-24-2007]. Les autres produits de l'ancien tableau « C » ne sont donc pas transférés au droit de consommation : ils relèvent simplement du taux normal.
-
-## Les produits pétroliers, un régime dans le régime
-
-Les produits pétroliers figurent au tableau dès 1988, avec des tarifs spécifiques. Mais ils s'en détachent partiellement à partir de 1990, lorsque l'article 35 de la loi de finances pour 1990 renvoie au décret la fixation de leurs taux [@loi-89-115-lf-1990, art. 35]. La chaîne des textes est alors la suivante : le décret n° 91-550 exerce l'habilitation pour la première fois [@decret-91-550-tarif-petroliers] ; le décret n° 94-816 fixe les taux applicables aux hydrocarbures [@decret-94-816-hydrocarbures] ; le décret n° 98-952 retire les produits pétroliers du taux réduit de la taxe sur la valeur ajoutée et fixe leur tarif au droit de consommation à compter du 6 mai 1998 [@decret-98-952-fiscalite-petrole-electricite, art. 2] ; le décret n° 99-894 fixe enfin le tarif complet, applicable à compter du 22 avril 1999 [@decret-99-894-tarif-petroliers, art. 1 et 2]. Ce dernier décret vise expressément l'article 35 de la loi n° 89-115, confirmant la chaîne d'habilitation.
+### Les produits pétroliers, un tarif figé depuis 1999
 
 : Tarif du droit de consommation sur les produits pétroliers, 1988-2023 {#tbl-dc-petroliers}
 
@@ -294,7 +330,7 @@ Le deuxième trait est que **le mouvement s'est concentré sur deux lignes**. L'
 
 Le troisième trait est d'ordre institutionnel, et il reste ouvert. Depuis les refontes de 2016 et de 2018, les tarifs pétroliers figurent de nouveau **dans le tableau annexé lui-même**, alors que l'habilitation de l'article 1^er^, alinéa 2, n'a pas été abrogée et figure toujours au code consolidé [@dgelf-code-tva-2023]. La loi et le décret peuvent donc, en l'état des textes, fixer les mêmes tarifs. Aucun des textes cités n'articule les deux voies, et le précis se borne à décrire la situation.
 
-## Le tableau en vigueur, dans ses grandes masses
+### Le tableau en vigueur, dans ses grandes masses
 
 L'état actuel se lit dans la version consolidée du code, non dans la loi de 1988 [@dgelf-code-tva-2023]. Sa physionomie diffère profondément de celle de 1988. Les produits alimentaires transformés et les boissons non alcoolisées y portent des taux modérés, de 10 à 40 % ; les boissons alcoolisées relèvent, selon les postes, d'un tarif spécifique ou d'un taux *ad valorem* ; le tabac reste taxé à un niveau élevé ; les matériaux de construction, la parfumerie et divers appareils ménagers y figurent à des taux échelonnés. La part la plus importante du tableau actuel, en volume budgétaire comme en visibilité publique, est un **barème applicable aux véhicules**. Le tableau consolidé l'établit selon deux critères, le **mode d'allumage** et la **cylindrée** : six tranches pour l'allumage commandé, de 63 à 250 %, et sept pour l'allumage par compression, de 94 à 334 % [@dgelf-code-tva-2023]. La doctrine administrative de 2018 y ajoute une distinction selon l'importateur — concessionnaires agréés ou autres personnes — que le tableau consolidé ne porte pas en tant que telle [@dgi-nc-17-2018].
 
@@ -317,6 +353,18 @@ modifié depuis 2018 n'est pas fait. La version consolidée le donne en notes de
 page — articles 69 de la LF 2019, 20, 21 et 22 de la LF 2021, 30, 62 et 65 de la LF 2022 —
 et ces notes n'ont pas été dépouillées. Le tableau ci-dessus est donc daté de son
 ÉTAT, non de ses composantes. -->
+
+### Quatre mouvements de fond
+
+Quatre mouvements se dégagent de ces vues, et aucun ne se lit dans le seul tableau en vigueur.
+
+**Le champ a reflué d'emblée, puis s'est recomposé.** Le premier geste des lois de finances n'est pas d'étendre le droit mais de le retirer : dès 1989 et 1990, des biens d'équipement ménager, des produits alimentaires transformés et d'autres séries de positions sortent du tableau [@loi-88-145-lf-1989, art. 27 ; @loi-89-115-lf-1990, art. 29]. Le tableau en vigueur n'a presque plus aucun poste en commun avec celui de 1988 [@dgelf-code-tva-2023].
+
+**L'automobile est le terrain d'ajustement le plus constant.** La position 87-03 est retouchée par six lois de finances entre 1994 et 2003 [@lf-1994, art. 50 ; @lf-1995, art. 64 ; @lf-1997, art. 51 ; @lf-1998, art. 47 ; @lf-1999, art. 50 ; @lf-2003], et son barème, établi par mode d'allumage et par cylindrée, occupe aujourd'hui la place la plus visible du tableau [@dgelf-code-tva-2023].
+
+**Le tarif pétrolier est resté figé en valeur nominale.** Sur la majorité des lignes pétrolières, le montant en vigueur est encore celui du décret de 1999, et le mouvement s'est concentré sur l'essence sans plomb et le gaz-oil (@tbl-dc-petroliers). La portée réelle de cette immobilité n'est pas chiffrée ici, faute d'une série de prix qui permettrait de la mesurer.
+
+**Le tableau se refait en entier, et par deux voies.** Deux refontes intégrales, en 2016 et en 2018, ont remplacé le tableau d'origine [@lf-2016, art. 44 ; @lf-2018, art. 45]. Pour les produits pétroliers, la loi et le décret peuvent, en l'état des textes, fixer les mêmes tarifs [@loi-89-115-lf-1990, art. 35 ; @dgelf-code-tva-2023] ; pour les boissons, des décrets pris sur l'habilitation de 1989 coexistent avec des révisions de taux votées en loi de finances [@loi-88-145-lf-1989, art. 86 ; @lf-2021, art. 20 à 22].
 
 ## Ce que rapportent les droits de consommation
 
