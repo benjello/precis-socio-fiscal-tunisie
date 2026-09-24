@@ -108,7 +108,7 @@ forme canonique et ne conserve que son en-tête.
 ```
 uv run python scripts/recherches.py verifier            # ancres ⇔ fiches (lancé en CI)
 uv run python scripts/recherches.py lister --perimees   # couvertes moins loin que jort_cache
-uv run python scripts/recherches.py relancer <id> [--depuis AAAA-MM-JJ]
+uv run python scripts/recherches.py relancer <id> [--depuis AAAA-MM-JJ] [--sonder-pist]
 uv run python scripts/recherches.py elargir <id> --terme "…" --source iort_ar
 uv run python scripts/recherches.py passe <id> --resultat aucun --couverture "…" \
     --couvert-jusqu-au AAAA-MM-JJ --sources jort_cache corpus_local pist
@@ -116,7 +116,11 @@ uv run python scripts/recherches.py passe <id> --resultat aucun --couverture "�
 
 `relancer` rend des **candidats** — texte, fascicule, pages, adresse pist.tn —, jamais une
 conclusion : chacun se lit au fascicule. Il dit aussi ce qu'il n'a pas pu parcourir
-(fascicules absents du corpus local, base arrêtée avant la période). Quand le texte est
+(fascicules absents du corpus local, fichiers « fr » qui sont en réalité l'arabe, base
+arrêtée avant la période ; avec `--sonder-pist`, fascicules parus que la base ignore). Un
+objet borné dans le temps — « texte antérieur au décret n° 81-939 » — porte une `periode`
+(`jusqu_au`, et le `motif` tiré de l'objet) : la fiche cesse d'être périmée quand sa dernière
+passe atteint la borne, et `relancer` ne cherche pas au-delà. Quand le texte est
 trouvé, la passe porte sa clé CSL, la fiche devient `resolu`, et la réserve du `.qmd` cède
 la place à la règle sourcée ; `verifier` refuse une ancre qui survit à sa fiche résolue.
 `check_jargon_depouillement.py` refuse, dans le texte rendu, les tournures du récit de
