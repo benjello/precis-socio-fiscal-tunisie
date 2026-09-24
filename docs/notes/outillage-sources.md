@@ -21,7 +21,7 @@ jort_annee, jort_numero, jort_tome, pages, pdf_fr, pdf_ar`. Plus `keywords` (ind
 C'est elle qui donne, pour chaque texte, **le fascicule et la page** — donc le ciblage exact
 d'une océrisation.
 
-### Quatre pièges, tous mesurés
+### Six pièges, tous mesurés
 
 **a) 42 % des textes ont un `numero` NULL.** 33 014 sur 78 953, dont **31 259 arrêtés**. Toute
 concaténation `||` non protégée par `coalesce()` les fait disparaître silencieusement. Or ce sont
@@ -56,6 +56,41 @@ PNAFN, aides aux personnes âgées, montants des subventions.
 
 **d) Quelques `jort_annee` aberrantes** : 150, 199, 201, 975, 1070, 1075, 1775, 1870. Filtrer par
 `jort_annee between 1956 and 2026`.
+
+**e) Quelques `jort_numero` erronés** (vérifié le 24 septembre 2026). Le n° **107 de 2026** est le
+n° 7 (même date, 16 janvier 2026) ; le n° **203 de 2025** est le n° 102 (12 août 2025). Un tel
+numéro se trahit par sa date, qui le fait sortir de la plus longue suite de numéros aux dates
+croissantes : c'est la règle de `recherches.dernier_numero_coherent`, qui l'écarte quand il faut
+connaître le dernier numéro d'une année. Une relance qui dit « absent du corpus » un de ces numéros ne signale pas un trou.
+
+**f) Des fascicules inconnus de la base** (sondé le 24 septembre 2026) : aucun texte de
+`jort_cache` ne renvoie à 9 fascicules de 2024 (n° 10, 24, 59, 65, 102, 106, 107, 123, 145), 25 de
+2025 (dont les n° 5, 6, 16, 19, 33 à 36, 47 — arabe seul —, 142 et 143) et 8 de 2026 (n° 4, 8, 20,
+32, 38, 66, 69, 85), qui existent tous sur pist.tn et sont tous dans le corpus local. Leurs textes
+échappent donc aux requêtes sur les titres ; seul le plein texte les parcourt.
+`recherches.py relancer <id> --sonder-pist` les repère : pour chaque année parcourue, il teste
+sur pist.tn (requête HEAD, sans télécharger) les numéros absents de la base entre 1 et le
+dernier numéro cohérent, plus cinq, et les liste comme « existants sur pist.tn, inconnus de
+jort_cache ».
+
+### Mettre la base à jour
+
+```
+uv run python scripts/corpus_jort.py crawl --from 2026 --to 2026 --a-blanc   # le plan
+uv run python scripts/corpus_jort.py crawl --from 2026 --to 2026 [--delai-max 3600]
+```
+
+Le dépôt `PDFs-legislation-tunisie` appartient à un autre utilisateur ; son répertoire n'est
+pas inscriptible, seuls `jort_cache.db` et `PDFs/JORT/` sont à nous. La commande en tient
+compte : sauvegarde datée dans `~/sauvegardes/jort_cache.db.<date>T<heure>` ; crawl, par
+`jort_api.crawl` du dépôt (`uv run --no-sync --project …`, qui ne touche ni à son `.venv` ni
+à son `uv.lock`), d'une **copie** de la base ; `pragma integrity_check` et contrôle que le
+nombre de textes ne baisse pas ; puis recopie du **contenu** de la copie par-dessus
+`jort_cache.db` — pas de renommage, faute de droit d'écriture sur le répertoire. Le crawler
+**boucle sans fin** sur une erreur réseau (il la réessaie sans limite), dont celle du
+certificat échu : la commande l'encadre d'un délai maximal et tue alors tout son groupe de
+processus, sans toucher à la base. **Relancer ensuite le serveur MCP `jort`** (`/mcp`), qui
+garde l'ancienne base ouverte.
 
 ## 2. Le miroir iort.tn — ce qu'il contient vraiment
 
@@ -132,6 +167,42 @@ Trois conséquences, dans l'ordre de gravité :
    quasi-totalité des URL. `check_url` de `sync_biblio.py` et `verifier_urls_jort.py`
    emploient donc un contexte permissif : ils vérifient que la ressource EXISTE, sans se
    prononcer sur la confiance. En ligne de commande, `curl -k`.
+
+### Compléter le corpus des fascicules
+
+```
+uv run python scripts/corpus_jort.py telecharger 2025 2026 --a-blanc   # ce qui manque
+uv run python scripts/corpus_jort.py telecharger 2025 2026
+```
+
+La commande télécharge de pist.tn les fascicules FR et AR que `jort_cache` connaît et que
+`PDFs/JORT/<année>/<fr|ar>/` n'a pas. Elle n'écrit que ce qui commence par `%PDF`, jamais
+par-dessus un fichier existant (fichier `.part`, puis lien qui échoue si la cible existe),
+à raison d'une requête toutes les 0,5 s, et finit par un bilan. À blanc, elle signale aussi
+les numéros erronés de la base (§ 1 e), auxquels pist.tn répondra 404.
+
+**Le certificat échu ne se contourne qu'ici, et que pour pist.tn.** L'humain a autorisé
+explicitement, le 24 septembre 2026, la désactivation de la vérification TLS pour
+`www.pist.tn` seulement — des documents publics, en lecture. `scripts/pist_tls.py` est le
+seul endroit où elle tombe : connexion à l'hôte écrit en dur, sans suivre de redirection, et,
+pour le crawler qui emploie `requests`, désactivation requête par requête d'après l'URL
+envoyée. Remettre `VERIFIER = True` quand le certificat sera renouvelé.
+
+**Pourquoi le corpus avait des trous** (constaté le 24 septembre 2026). `download_jort.py`, le
+téléchargeur du dépôt, teste les numéros de 1 à **120 au plus** (`MAX_NUM`) — or 2024 et 2025
+comptent chacune plus de 140 numéros — et **abandonne l'année après trois numéros absents
+consécutifs** (`MAX_CONSECUTIVE_MISSING`, au-delà du n° 10). Et il valide le certificat : depuis
+le 25 août 2026, chaque requête échoue et compte pour un numéro absent : l'année s'arrête trois
+numéros après le dernier fascicule déjà présent. Ni l'une ni l'autre limite ne concerne `corpus_jort.py telecharger`, qui part des
+numéros que la base connaît ; les numéros qu'elle ignore (§ 1 f) se repèrent par
+`relancer --sonder-pist`.
+
+**Faux fascicules français.** pist.tn sert parfois le fichier arabe à l'adresse française
+(ci-dessus). Au 24 septembre 2026, douze fichiers « fr » du corpus sont en fait l'arabe, octet
+pour octet : 2024 n° 8, 130, 145 ; 2025 n° 4, 88, 90, 95, 96, 148 ; 2026 n° 10, 62, 76. Le plein
+texte de `recherches.py relancer` les reconnaît (empreinte identique au PDF arabe du même
+numéro, ou texte extrait majoritairement arabe) et les compte « FR absent (fichier arabe) » :
+ils ne valent pas lecture de l'édition française.
 
 ### L'édition ARABE de l'an 2000 ne suit pas la règle de nommage
 

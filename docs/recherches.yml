@@ -16,6 +16,12 @@
 #                          العاملات — pour couvrir cette forme, chercher sans l'article)
 #             plein_texte  termes cherchés dans le texte des fascicules du corpus local
 #             depuis       AAAA-MM-JJ : rien n'est examiné avant (naissance de l'objet)
+#   periode   (facultatif) pour un objet BORNÉ dans le temps (« texte antérieur au décret… ») :
+#             jusqu_au     AAAA-MM-JJ : rien n'est examiné après ; `lister --perimees` ne
+#                          signale plus la fiche dès que sa dernière passe atteint cette date
+#             motif        obligatoire : ce qui, dans l'objet, ferme la période (texte, JORT)
+#             Pas de borne sans motif tiré de l'objet : un objet qui peut encore paraître
+#             (un décret d'application attendu) n'en a pas
 #   passes    liste de :
 #             date              AAAA-MM-JJ, jour de la passe
 #             role              documentaliste, rédacteur…
@@ -34,7 +40,8 @@
 #
 #   uv run python scripts/recherches.py verifier                      # CI : ancres ⇔ fiches
 #   uv run python scripts/recherches.py lister [--perimees]
-#   uv run python scripts/recherches.py relancer <id> | --perimees [--depuis AAAA-MM-JJ]
+#   uv run python scripts/recherches.py relancer <id> | --perimees [--depuis AAAA-MM-JJ] \
+#       [--sans-plein-texte] [--sonder-pist]
 #   uv run python scripts/recherches.py elargir <id> --terme "…" [--source titres_like]
 #   uv run python scripts/recherches.py passe <id> --resultat aucun --couverture "…" \
 #       --couvert-jusqu-au AAAA-MM-JJ --sources jort_cache corpus_local
@@ -148,6 +155,9 @@
     - '%60-30%'
     - '%rectificatif%1455%'
     depuis: 1990-09-21
+  periode:
+    jusqu_au: 1994-07-05
+    motif: l'objet s'arrête au décret n° 94-1429 (JORT n° 52 du 5 juillet 1994), qui abroge et remplace les articles 18 et 19 dans leur rédaction de 1990
   passes:
   - date: 2026-09-11
     role: documentaliste
@@ -164,6 +174,9 @@
     titres_fts: [actualisation]
     titres_like: ['%actualisation%', '%bareme%salaire%']
     depuis: 1990-09-21
+  periode:
+    jusqu_au: 1994-07-05
+    motif: la rédaction de 1990 de l'article 18 est abrogée et remplacée par le décret n° 94-1429 (JORT n° 52 du 5 juillet 1994) ; un barème ultérieur relève de la rédaction de 1994
   passes:
   - date: 2026-09-10
     role: documentaliste
@@ -352,6 +365,9 @@
     - '"cadre actif"'
     iort_ar: [قسم التجول, النشيط, الأسلاك النشيطة]
     depuis: 1959-02-03
+  periode:
+    jusqu_au: 1981-12-01
+    motif: texte antérieur au décret n° 67-282 et, pour les douanes, au décret n° 81-1600 (JORT n° 76 du 1er décembre 1981)
   passes:
   - date: 2026-09-24
     role: documentaliste
@@ -393,6 +409,9 @@
     - '%CNRPS%'
     - '%caisse nationale de retraite%'
     depuis: 1959-02-03
+  periode:
+    jusqu_au: 1981-07-10
+    motif: texte antérieur au décret n° 81-939 (JORT n° 47 du 10 juillet 1981)
   passes:
   - date: 2026-09-11
     role: documentaliste
@@ -410,6 +429,9 @@
     titres_like: ['%perequation%']
     plein_texte: [péréquation]
     depuis: 1959-02-03
+  periode:
+    jusqu_au: 1985-03-12
+    motif: fondement antérieur à la loi n° 85-12 (JORT n° 20 du 12 mars 1985)
   passes:
   - date: 2026-09-11
     role: documentaliste
