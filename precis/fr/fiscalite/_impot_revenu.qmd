@@ -24,7 +24,7 @@ def table(nom, legende, label):
 
 L'[impôt sur le revenu des personnes physiques](#g-irpp) est régi par le code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés, promulgué par la loi n° 89-114 du 30 décembre 1989 [@loi-irpp-is-1989] et applicable aux revenus réalisés à compter du 1^er^ janvier 1990. Le barème progressif de cet impôt figure au paragraphe I de son article 44.
 
-La section se lit en deux temps. Elle décrit d'abord l'état du droit **avant** l'IRPP — le système des impôts cédulaires surmontés de la contribution personnelle d'État, en vigueur jusqu'aux revenus de 1989 —, puis l'impôt synthétique institué par le code de 1989 et ses évolutions jusqu'aux revenus de 2026. Dans ce second temps, la mécanique générale du calcul est exposée d'abord, chacun de ses maillons faisant ensuite l'objet d'un développement historique propre.
+La section se lit en deux temps. Elle décrit d'abord l'état du droit **avant** l'IRPP — le système des impôts cédulaires surmontés de la contribution personnelle d'État, en vigueur jusqu'aux revenus de 1989 —, puis l'impôt synthétique institué par le code de 1989 et ses évolutions jusqu'aux revenus de 2026. Dans ce second temps, l'institution de 1989-1990 est présentée d'abord ; la mécanique générale du calcul est ensuite exposée et mise en formule, puis chacun de ses maillons fait l'objet d'un développement historique propre, avant un tableau qui reprend les réformes texte par texte.
 
 ::: {.callout-note title="Deux conventions de lecture, retenues dans tout ce qui suit"}
 **1. Les barèmes sont datés en années de revenus.** C'est la convention du législateur lui-même, qui énonce ses barèmes sous la forme « applicable aux revenus réalisés à compter du 1^er^ janvier … » — formule que l'on trouve aussi bien dans l'article 3 de la loi n° 89-114 [@loi-irpp-is-1989, art. 3] que dans l'article 36 de la loi de finances pour 2025 [@lf-2025, art. 36]. Il faut donc distinguer soigneusement trois dates qui ne coïncident pas : l'année des revenus imposés, l'année de publication du texte au *Journal officiel de la République tunisienne* (JORT), et le millésime de la loi de finances. Ainsi le barème « 2025 » s'applique aux revenus de l'année 2025, déclarés et liquidés en 2026, mais il a été publié au JORT en décembre 2024 par la loi de finances portant le millésime 2025.
@@ -152,7 +152,25 @@ L'inventaire le plus sûr de ce système est donné par le texte qui l'abroge. L
 
 Une conséquence de cette abrogation mérite d'être signalée dès l'abord, parce qu'elle est à l'origine d'une confusion fréquente : le seuil de 80 000 dinars parfois présenté comme l'ancien plafond du taux marginal de l'IRPP n'a jamais été un seuil de cet impôt. C'est le seuil d'entrée dans la tranche à 68 % de la contribution personnelle d'État (@tbl-bareme-cpe-1986), supprimée pour les revenus réalisés à compter du 1^er^ janvier 1990.
 
-## Comment se calcule l'IRPP
+## L'institution de 1989-1990 {#sec-irpp-institution}
+
+Dans le cadre du programme d'ajustement structurel engagé à la fin des années 1980, la Tunisie a entrepris un vaste programme de réformes économiques et administratives, dont la refonte de la fiscalité directe [@touaiti2026]. La loi n° 89-114 du 30 décembre 1989 promulgue le code de l'IRPP et de l'IS [@loi-irpp-is-1989] ; le texte du code, annexé à la loi, est publié séparément au JORT n° 1 des 2-5 janvier 1990 [@code-irpp-is-1990]. Le nouvel impôt est **synthétique** : il frappe le revenu net global du contribuable, les catégories de revenus étant maintenues pour la seule détermination de l'[assiette](#g-assiette-fiscale).
+
+Le barème d'origine de l'article 44 § I comporte **six tranches** et un taux marginal supérieur de **35 % au-delà de 50 000 dinars** [@code-irpp-is-1990, art. 44]. Comme celui de la contribution personnelle d'État, il est publié avec la colonne des taux d'imposition à la limite supérieure de chaque tranche.
+
+```{python}
+#| echo: false
+#| output: asis
+table("bareme_1990",
+      "Barème de l'IRPP applicable aux revenus réalisés à compter du 1^er^ janvier 1990 (art. 44 § I du code)",
+      "tbl-bareme-irpp-1990")
+```
+
+Source : @code-irpp-is-1990, art. 44 § I (JORT n° 1 des 2-5 janvier 1990, p. 9).
+
+La comparaison des deux tableaux donne la mesure de la rupture. Le nombre de tranches passe de dix-huit à six et le taux marginal supérieur de 68 % à 35 %, **en une seule fois et par le code lui-même**. La simplification du barème est donc l'œuvre de la réforme de 1989-1990, et non d'un texte ultérieur : le récit d'une « simplification de 1991 », que l'on rencontre parfois, ne correspond à aucun véhicule législatif — la loi de finances pour la gestion 1991 ne comporte pas une seule occurrence du mot « barème » et ses dispositions relatives au code de l'IRPP et de l'IS visent les articles 45, 52, 54 et 63 [@lf-1991]. Le terme de « simplification » a bien un référent dans la décennie, mais il porte sur d'autres objets : le **régime forfaitaire** du § IV de l'article 44, refondu par l'article 101 de la loi de finances pour 1993 sous l'intitulé « Unification et simplification du régime forfaitaire » [@lf-1993, art. 101], et les **procédures fiscales**, avec la loi n° 98-73 du 4 août 1998 portant simplification des procédures fiscales et réduction des taux de l'impôt, dont le dispositif concerne la plus-value immobilière et les droits d'enregistrement [@loi-98-73].
+
+## Comment se calcule l'IRPP {#sec-irpp-calcul}
 
 Avant de suivre l'histoire de chacun de ses paramètres, il est utile de décrire la mécanique d'ensemble de l'impôt, restée dans ses grandes lignes celle que le code de 1989 a mise en place [@code-irpp-is-1990]. L'IRPP est un impôt **synthétique** : il ne frappe pas séparément chaque source de revenu, mais le revenu net global annuel d'un même contribuable, les catégories de revenus n'étant maintenues que pour déterminer l'[assiette](#g-assiette-fiscale) de chacune d'elles. Le calcul se déroule ensuite selon une chaîne dont l'ordre importe, chaque opération s'appliquant au résultat de la précédente.
 
@@ -173,7 +191,70 @@ Cf. § 1 et TODO 12 de docs/notes/fiscalite-irpp-assiette-abattements.md. -->
 8. **Les prélèvements adossés.** À l'impôt proprement dit s'ajoutent des prélèvements assis sur la même assiette et liquidés avec lui, au premier rang desquels la [contribution sociale de solidarité](#g-css), qui n'entre pas dans le produit de l'IRPP mais pèse sur le même contribuable.
 9. **Les régimes dérogatoires.** Cette chaîne n'est pas suivie par tous les contribuables. Le **régime forfaitaire** des bénéfices industriels et commerciaux, aujourd'hui aux articles 44 *bis* à 44 *sexies* du code, substitue à la détermination du bénéfice réel un impôt calculé sur le chiffre d'affaires ; le **régime estimatif optionnel** ajouté à l'article 44 *ter* par l'article 91 de la loi de finances pour 2026 procède de la même logique [@lf-2026, art. 91] ; enfin, certains revenus de capitaux mobiliers supportent une retenue à la source **libératoire**, qui les fait sortir du revenu global.
 
+Les opérations 1 à 7 s'écrivent en quelques formules, pour un contribuable imposé au régime réel. Le revenu net imposable se forme d'abord :
+
+$$
+R = \sum_{c=1}^{7} r_c, \qquad Y = R - A - F
+$$
+
+où $c$ désigne l'une des sept catégories de l'article 8 dans l'ordre du code, $r_c$ le revenu net de la catégorie $c$, déterminé suivant ses règles propres et le cas échéant négatif dans les conditions d'imputation des déficits rappelées au point 1, $R$ le revenu net global, $A$ le total des charges déductibles du revenu global et des déductions accordées au titre des avantages fiscaux — article 39 du code et articles qui le prolongent —, $F$ le total des déductions pour situation et charges de famille de l'article 40, et $Y$ le revenu net imposable [@code-irpp-is-1990, art. 8, 39 et 40]. $F$ comprend, pour les revenus 2004 à 2013, l'abattement au titre du salaire minimum du § V de l'article 40 (@tbl-abattement-smig) ; ses autres composantes, forfaitaires et en dinars, sont données au tableau @tbl-charges-famille — ainsi la déduction du chef de famille vaut 150 dinars des revenus 1990 aux revenus 2018 [@code-irpp-is-1990, art. 40] et 300 dinars à compter des revenus 2019 [@lf-2018, art. 54].
+
+Pour la catégorie des traitements, salaires, pensions et rentes viagères, la plus répandue, la règle propre de l'article 26 s'écrit :
+
+$$
+r_4 = (W - K) - \min\big(\varphi\,(W - K),\ \bar\varphi\big) + (1 - \pi)\,P
+$$
+
+où $W$ est le montant brut des traitements, salaires, indemnités et avantages imposables, $K$ les retenues obligatoires pour la retraite et la sécurité sociale, $\varphi$ le taux de la déduction forfaitaire pour [frais professionnels](#g-frais-professionnels), $\bar\varphi$ son plafond annuel, $P$ le montant brut des pensions et rentes viagères, et $\pi$ le taux de l'[abattement sur les pensions](#g-abattement-pensions). La déduction forfaitaire porte sur le salaire après retenues sociales, l'abattement sur le montant brut de la pension [@code-irpp-is-1990, art. 26]. $\varphi = 10\,\%$ depuis les revenus de 1990, sans modification ; $\bar\varphi = 2\,000$ dinars à compter des revenus 2017, la déduction étant auparavant sans plafond, de sorte que le terme en $\min$ se réduit alors à $\varphi\,(W - K)$ [@lf-2017, art. 14] (@tbl-frais-professionnels). $\pi = 25\,\%$ depuis les revenus de 1990, relevé en trois marches jusqu'à $50\,\%$ par l'article 56 de la loi de finances pour 2026 [@lf-2026, art. 56] (@tbl-abattement-pensions). Les pensions de source étrangère relèvent d'une règle distincte (@tbl-pensions-etrangeres), et les éléments exonérés par l'article 38 n'entrent ni dans $W$ ni dans $P$.
+
+Le [barème](#g-bareme-irpp) s'applique ensuite par [tranches](#g-tranche-de-revenu) :
+
+$$
+T(Y) = \sum_{i=1}^{n} t_i\,\big(\min(Y,\ s_i) - s_{i-1}\big)^{+}, \qquad s_0 = 0, \qquad s_n = +\infty
+$$
+
+où $T(Y)$ est l'impôt résultant du barème, $n$ le nombre de tranches, tranche à taux nul comprise, $t_i$ le taux de la tranche $i$, $s_i$ sa limite supérieure, et $(x)^{+}$ la partie positive de $x$. La première tranche est à taux nul, $t_1 = 0$, dans les trois générations de barème de l'IRPP. $n = 6$, $s_1 = 1\,500$ dinars et $t_n = 35\,\%$ au-delà de $s_{n-1} = 50\,000$ dinars pour les revenus 1990 à 2016 [@code-irpp-is-1990, art. 44] ; $n = 5$, $s_1 = 5\,000$ dinars et $t_n = 35\,\%$ au-delà de $50\,000$ dinars pour les revenus 2017 à 2024 [@lf-2017, art. 14] ; $n = 8$, $s_1 = 5\,000$ dinars et $t_n = 40\,\%$ au-delà de $70\,000$ dinars à compter des revenus 2025 [@lf-2025, art. 36] (@tbl-bareme-irpp-1990 ; @tbl-bareme-irpp-2017 ; @tbl-bareme-irpp-2025 ; @tbl-bareme-irpp-generations).
+
+L'impôt dû, enfin, ne peut être inférieur ni au minimum de l'article 12 *bis* de la loi n° 89-114, ni au [minimum d'impôt](#g-minimum-impot) de l'article 44 § II du code :
+
+$$
+I = \max\big(T(Y),\ \mu\,T(Y + A^{*}),\ m\big)
+$$
+
+où $I$ est l'impôt dû, $A^{*}$ la part de $A$ formée des déductions accordées « sous réserve » de l'article 12 *bis* — celles qui y échappent, accordées « nonobstant » cet article, n'y entrent pas —, $\mu$ le taux de ce minimum, rapporté à l'impôt « dû sur le revenu global compte non tenu de cette déduction » [@dgi-nc-1-2021], et $m$ le minimum de l'article 44 § II, nul pour le contribuable que ce paragraphe ne vise pas. $\mu = 45\,\%$ à partir du 1^er^ avril 2017, date énoncée en jour calendaire et non en année de revenus [@loi-avantages-fiscaux-2017, art. 23] ; la valeur antérieure figure au tableau @tbl-plafonnement.
+
+Le minimum $m$ est assis sur le chiffre d'affaires brut $Q$, et sa formule a changé de sens. Dans le texte de 1990, c'est un minimum plafonné :
+
+$$
+m = \min\big(\lambda\,Q,\ \bar M\big)
+$$
+
+où $\lambda$ est le taux du minimum et $\bar M$ son plafond : $\lambda = 0{,}5\,\%$ et $\bar M = 500$ dinars à l'origine [@loi-irpp-is-1989, art. 44], $\bar M$ étant doublé, à $1\,000$ dinars, par la loi de finances pour 1998 [@lf-1998, art. 45]. Depuis la loi de finances pour 2006, c'est un plancher :
+
+$$
+m = \max\big(\lambda\,Q,\ \underline{M}\big)
+$$
+
+où $\underline{M}$ est le montant exigible même sans chiffre d'affaires, hors les exonérations que le même article prévoit : $\lambda = 0{,}1\,\%$ du chiffre d'affaires hors exportation et $\underline{M} = 100$ dinars [@lf-2006, art. 42] ; $\underline{M} = 200$ dinars par la loi de finances pour 2011 [@lf-2011, art. 38] ; depuis la loi de finances pour 2014, $\lambda$ et $\underline{M}$ dépendent de l'origine du chiffre d'affaires — $0{,}2\,\%$ et $300$ dinars pour le chiffre d'affaires local, $0{,}1\,\%$ et $200$ dinars pour l'exportation et les autres chiffres d'affaires qu'énumère l'article [@lf-2014, art. 48] (@sec-irpp-minimum). La combinaison des deux taux pour un contribuable dont le chiffre d'affaires a les deux origines n'est pas écrite ici.
+
+Reste le recouvrement :
+
+$$
+D = I - V
+$$
+
+où $V$ est le total des retenues à la source et des acomptes imputables, et $D$ le solde dû, ou restitué s'il est négatif.
+
+Cette écriture laisse de côté quatre règles décrites ailleurs dans le chapitre : le plancher de l'article 10 de la loi de finances complémentaire pour 2014, fondé sur l'impôt d'un agent public de même grade [@lfc-2014, art. 10] ; le régime forfaitaire et le régime estimatif optionnel, qui substituent à la chaîne un impôt assis sur le chiffre d'affaires ; les retenues à la source libératoires, qui font sortir certains revenus de $R$ ; et la contribution sociale de solidarité, distincte de l'impôt. Les notations sont rassemblées en annexe (@sec-irpp-notations).
+
+<!-- TODO (documentaliste) : la formule écrit les minima de l'article 12 bis de la loi n° 89-114 et
+de l'article 44 § II du code comme deux planchers simultanés. Établir sur texte ou note commune
+leur articulation (ordre d'appréciation, cumul éventuel), et la règle applicable au chiffre
+d'affaires d'origine mixte depuis l'article 48 de la loi de finances pour 2014. -->
+
 Chacun de ces maillons a sa propre histoire, et ces histoires ne sont pas synchrones : le barème a connu une longue immobilité entrecoupée de deux réformes récentes, tandis que les déductions, le minimum d'impôt ou les régimes forfaitaires ont été retouchés bien plus fréquemment. Les développements qui suivent reprennent donc la chaîne maillon par maillon, en datant les valeurs successives de chaque paramètre et le texte qui les a fixées.
+
+Un tableau les reprend ensuite texte par texte, pour montrer ce que chaque loi a changé d'un seul geste (@sec-irpp-reformes).
 
 <!-- TODO (rédaction, non bloquant pour la structure) : préciser, texte à l'appui, les articles
 régissant la retenue à la source et les acomptes provisionnels (articles 52 et 53 du code,
@@ -183,25 +264,7 @@ Les deux autres points de ce TODO sont clos : la liste et l'ordre des catégorie
 et l'article porteur du plafonnement (article 12 bis de la loi n° 89-114), sont désormais
 documentés — cf. docs/notes/fiscalite-irpp-assiette-abattements.md, § 1 et § 9.3. -->
 
-## L'institution de 1989-1990
-
-Dans le cadre du programme d'ajustement structurel engagé à la fin des années 1980, la Tunisie a entrepris un vaste programme de réformes économiques et administratives, dont la refonte de la fiscalité directe [@touaiti2026]. La loi n° 89-114 du 30 décembre 1989 promulgue le code de l'IRPP et de l'IS [@loi-irpp-is-1989] ; le texte du code, annexé à la loi, est publié séparément au JORT n° 1 des 2-5 janvier 1990 [@code-irpp-is-1990]. Le nouvel impôt est **synthétique** : il frappe le revenu net global du contribuable, les catégories de revenus étant maintenues pour la seule détermination de l'[assiette](#g-assiette-fiscale).
-
-Le barème d'origine de l'article 44 § I comporte **six tranches** et un taux marginal supérieur de **35 % au-delà de 50 000 dinars** [@code-irpp-is-1990, art. 44]. Comme celui de la contribution personnelle d'État, il est publié avec la colonne des taux d'imposition à la limite supérieure de chaque tranche.
-
-```{python}
-#| echo: false
-#| output: asis
-table("bareme_1990",
-      "Barème de l'IRPP applicable aux revenus réalisés à compter du 1^er^ janvier 1990 (art. 44 § I du code)",
-      "tbl-bareme-irpp-1990")
-```
-
-Source : @code-irpp-is-1990, art. 44 § I (JORT n° 1 des 2-5 janvier 1990, p. 9).
-
-La comparaison des deux tableaux donne la mesure de la rupture. Le nombre de tranches passe de dix-huit à six et le taux marginal supérieur de 68 % à 35 %, **en une seule fois et par le code lui-même**. La simplification du barème est donc l'œuvre de la réforme de 1989-1990, et non d'un texte ultérieur : le récit d'une « simplification de 1991 », que l'on rencontre parfois, ne correspond à aucun véhicule législatif — la loi de finances pour la gestion 1991 ne comporte pas une seule occurrence du mot « barème » et ses dispositions relatives au code de l'IRPP et de l'IS visent les articles 45, 52, 54 et 63 [@lf-1991]. Le terme de « simplification » a bien un référent dans la décennie, mais il porte sur d'autres objets : le **régime forfaitaire** du § IV de l'article 44, refondu par l'article 101 de la loi de finances pour 1993 sous l'intitulé « Unification et simplification du régime forfaitaire » [@lf-1993, art. 101], et les **procédures fiscales**, avec la loi n° 98-73 du 4 août 1998 portant simplification des procédures fiscales et réduction des taux de l'impôt, dont le dispositif concerne la plus-value immobilière et les droits d'enregistrement [@loi-98-73].
-
-## L'évolution du barème
+## L'évolution du barème {#sec-irpp-bareme}
 
 ### Revenus 1990 à 2016
 
@@ -274,7 +337,7 @@ explicite du déflateur retenu. -->
 
 <!-- TODO : rechercher les notes communes de la DGI commentant l'article 36 de la loi de finances pour 2025, qui fourniraient la justification officielle détaillée de la réforme (cf. Q15). -->
 
-## L'évolution de l'assiette et des abattements
+## L'évolution de l'assiette et des abattements {#sec-irpp-assiette}
 
 Le barème ne s'applique pas au revenu perçu mais au **revenu net global**. Or ce revenu net n'est pas obtenu par une franchise unique appliquée à l'ensemble des ressources du foyer : l'article 8 du code impose de calculer sept revenus nets **distincts**, « suivant les règles propres à chacune des catégories », avant de les additionner [@code-irpp-is-1990, art. 8]. Ce que l'usage nomme « abattements » recouvre donc, pour l'essentiel, des **règles de détermination du revenu net catégoriel** : forfaits de frais, taux d'évaluation, exonérations. Elles diffèrent d'une catégorie à l'autre par leur nature autant que par leur montant, et une même réforme peut alléger l'une pendant qu'elle resserre l'autre.
 
@@ -297,7 +360,7 @@ La détermination du bénéfice net (articles 10 à 15 du code) relève de la co
 
 La principale de ces déductions est celle des **deux tiers** des revenus provenant des activités visées à l'article 49 § I du code, lorsque le bénéfice est déterminé sur la base d'une comptabilité conforme à la législation comptable des entreprises (article 39 § V). Sa rédaction illustre une distinction qui commande tout le régime des avantages fiscaux : elle s'applique « **nonobstant** les dispositions de l'article 12 *bis* de la loi n° 89-114 », c'est-à-dire hors plafonnement, là où la plupart des autres déductions sont accordées « **sous réserve** » de ce même article — donc dans sa limite. La série des valeurs antérieures aux deux tiers n'est pas établie : le régime antérieur relevait du code d'incitation aux investissements de 1993, abrogé et remplacé par la loi n° 2017-8 du 14 février 2017 portant refonte du dispositif des avantages fiscaux [@loi-avantages-fiscaux-2017].
 
-### Bénéfices des professions non commerciales (catégorie II)
+### Bénéfices des professions non commerciales (catégorie II) {#sec-irpp-bnc}
 
 L'article 21 définit les [bénéfices des professions non commerciales](#g-bnc) comme « les bénéfices réalisés par les professions libérales, par les charges et offices dont les titulaires n'ont pas la qualité de commerçant, et par toutes les occupations ou exploitations non commerciales à but lucratif » [@code-irpp-is-1990, art. 21]. La définition est inchangée depuis 1990.
 
@@ -328,7 +391,7 @@ l'article 24 sont susceptibles de figurer dans des arrêtés du ministre des fin
 identifié à ce jour. Point d'entrée : PDFs-legislation-tunisie/data/iort/textes/md/. Tant qu'aucun
 arrêté n'est produit, l'absence de paramètre chiffré est énoncée telle quelle. -->
 
-### Traitements, salaires, indemnités, pensions et rentes viagères (catégorie IV)
+### Traitements, salaires, indemnités, pensions et rentes viagères (catégorie IV) {#sec-irpp-salaires}
 
 C'est la catégorie qui concerne le plus grand nombre de contribuables, et la plus stable du code : deux modifications de fond en trente-six exercices.
 
@@ -401,7 +464,7 @@ Il en résulte, pour l'imposition des bas salaires, un récit en **quatre temps*
 
 **Exonérations propres à la catégorie.** L'article 38 du code n'énonce pas des abattements mais délimite l'assiette salariale par une liste d'exonérations, dont plusieurs remontent à 1990 : rentes viagères servies aux victimes d'accidents du travail et rentes en réparation d'un préjudice corporel ; traitements servis par des États étrangers au personnel détaché au titre de la coopération technique ; allocations et prestations d'assistance, d'assurance et de sécurité sociale ; **gratification de fin de service** dans les limites de la législation du travail ou des montants approuvés en cas de licenciement économique ; allocations spéciales couvrant les frais inhérents à la fonction, « dans la mesure où elles sont justifiées ». S'y sont ajoutées, notamment, l'indemnité d'expatriation (loi de finances pour 1998), les primes du fonds national de l'emploi (loi de finances pour 2011), la valeur de l'avantage « transport domicile-travail » offert par les entreprises des zones de développement régional [@lf-2020, art. 44], les revenus des travailleuses agricoles affiliées au fonds de protection sociale correspondant, pendant dix ans, et les **pensions d'orphelins et pensions d'invalidité d'origine non professionnelle**, pour les pensions payées à partir du 1^er^ janvier 2025 [@lf-2025, art. 20].
 
-### Revenus fonciers (catégorie V)
+### Revenus fonciers (catégorie V) {#sec-irpp-foncier}
 
 L'article 27 définit la catégorie par une formule de **subsidiarité**, inchangée depuis 1990 : sont des [revenus fonciers](#g-revenus-fonciers), « lorsqu'ils ne sont pas inclus dans les autres catégories de revenus », le loyer des propriétés bâties et non bâties — y compris celui des terrains occupés par les carrières —, la plus-value de cession de droits sociaux dans les sociétés immobilières, d'immeubles ou parties d'immeubles bâtis et de terrains, ainsi que la plus-value de cession de lots provenant de terres domaniales à vocation agricole ayant perdu cette vocation [@code-irpp-is-1990, art. 27].
 
@@ -433,7 +496,7 @@ Trois observations s'imposent à la lecture de ce tableau.
 
 Le § IV de l'article 28 fixe enfin la plus-value imposable comme la différence entre le prix de cession déclaré et le prix de revient d'acquisition, de donation ou de construction, « majoré des montants justifiés des impenses et de **10 % par année de détention** ». Cette majoration forfaitaire figure dès 1990 [@code-irpp-is-1990, art. 28] : c'est le seul mécanisme d'atténuation de l'effet de l'inflation encore présent dans le code.
 
-### Revenus de valeurs mobilières et de capitaux mobiliers (catégorie VI)
+### Revenus de valeurs mobilières et de capitaux mobiliers (catégorie VI) {#sec-irpp-capitaux}
 
 Les articles 29 à 32 définissent les **revenus de valeurs mobilières** : bénéfices distribués par les sociétés passibles de l'impôt sur les sociétés, les coopératives et leurs unions, les associations en participation revêtant en fait une forme juridique les rendant imposables à l'IS, et les établissements tunisiens de sociétés étrangères. Sont regardés comme distribués tous les bénéfices ou produits qui ne sont ni mis en réserve ni incorporés au capital, ainsi que les sommes ou valeurs mises à la disposition des associés et non prélevées sur les bénéfices [@code-irpp-is-1990, art. 29]. L'article 30 y assimile les avances, prêts et acomptes aux associés, les rémunérations, avantages et bénéfices occultes, ainsi que les rémunérations des membres des organes de direction. L'article 31 *bis*, ajouté par la loi de finances pour 2004, y a fait entrer la **plus-value de cession d'actions et de parts sociales**, pour les opérations effectuées à partir du 1^er^ janvier 2004.
 
@@ -445,13 +508,13 @@ Ce qui tient lieu d'abattement, ce sont donc des **exonérations** — celles de
 
 Le mouvement structurant de la période est cependant en sens inverse : c'est la **fin de l'exonération générale des dividendes**. Le point 10 de l'article 38, qui exonérait les revenus de valeurs mobilières des articles 29 à 31, figurait dans le code depuis 1990 ; il a été abrogé par l'article 19 § 2 de la loi de finances pour 2014 [@lf-2014, art. 19], l'abrogation prenant effet pour les **opérations de distribution de bénéfices réalisées à partir du 1^er^ janvier 2015**, les distributions prélevées sur les fonds propres figurant au bilan au 31 décembre 2013 demeurant exonérées sous condition de mention dans les notes aux états financiers. C'est, sur la période documentée, la principale extension d'assiette de l'impôt.
 
-### Autres revenus (catégorie VII)
+### Autres revenus (catégorie VII) {#sec-irpp-autres}
 
 Cette catégorie a changé de nature en cours de route. Dans le code de 1990, elle est **résiduelle et géographique** : « les autres revenus sont constitués des revenus de source étrangère n'ayant pas été soumis au paiement de l'impôt dans le pays d'origine » [@code-irpp-is-1990, art. 36], le revenu net étant constitué des « sommes effectivement perçues de l'étranger » (article 37). L'article 61 de la loi de finances pour 1998 y a ajouté un renvoi à l'article 26 pour les traitements, salaires, pensions et rentes viagères, et l'article 35 de la loi de finances pour 2007 la déduction de 80 % sur les pensions de source étrangère (@tbl-pensions-etrangeres).
 
 L'article 19 § 1 de la loi de finances pour 2016 lui donne un second visage [@lf-2016, art. 19] : y sont désormais rangés les revenus des **jeux de pari, de hasard et de loterie**, et les revenus déterminés selon les **dépenses personnelles ostensibles et notoires** et selon l'**accroissement du patrimoine**, conformément à l'article 43 du code, lorsque le contribuable ne réalise pas de revenus dans les catégories des bénéfices industriels et commerciaux, non commerciaux ou agricoles. Cette seconde branche est le **rattachement catégoriel de l'évaluation forfaitaire** : avant 2016, l'accroissement de fortune non justifié était réintégré sans catégorie de rattachement explicite. Elle se lit avec l'article 42, qui autorise l'évaluation d'après les éléments de train de vie selon le barème de l'annexe I du code, avec majoration lorsque plusieurs éléments sont réunis et sous condition d'une disproportion marquée avec le revenu net global déclaré — dispositions d'origine, jamais modifiées. L'article 19 n'énonçant pas de date d'effet propre, son application aux revenus de 2015 est **dérivée** de la règle générale de conversion.
 
-### Ce qui ne relève d'aucune catégorie : charges déductibles et plafonnement
+### Ce qui ne relève d'aucune catégorie : charges déductibles et plafonnement {#sec-irpp-deductions}
 
 Le code range sous l'intitulé « [Déductions communes](#g-deductions-communes) » les articles 39 à 41. Il faut y ajouter un texte qui n'est pas dans le code et dont la localisation explique qu'il ait longtemps été difficile à retrouver : l'article 12 *bis* de la loi n° 89-114 elle-même.
 
@@ -510,7 +573,7 @@ docs/notes/fiscalite-irpp-assiette-abattements.md. -->
 salaire) paramétrée dans openfisca-tunisia à partir de 2014 sans aucune référence : texte
 instituteur, durée d'application, abrogation. Cf. Q13 de la même note. -->
 
-## L'évolution des déductions pour charges de famille
+## L'évolution des déductions pour charges de famille {#sec-irpp-famille}
 
 Ce sont des montants forfaitaires en dinars, retranchés du revenu net global. Leur série est complète et intégralement adossée aux textes, chaque texte modificatif citant la valeur qu'il remplace, et la note commune n° 7/2018 reproduisant l'état du droit en vigueur jusqu'au 31 décembre 2017 [@dgi-nc-7-2018].
 
@@ -539,7 +602,7 @@ Ensuite, **un basculement de logique aux revenus de 2019** : le barème dégress
 
 Enfin, **la déduction pour parent à charge a été modifiée dans ses deux paramètres à la fois** par l'article 41 de la loi de finances pour 2020 : son plafond passe de 150 à 450 dinars par parent, et la condition de ressources du parent — dont le revenu, augmenté du montant de la déduction, ne doit pas excéder un seuil — passe du SMIG au **double** du SMIG [@lf-2020, art. 41; @dgi-nc-3-2020]. Lorsque la charge est assurée par plusieurs enfants, le montant est réparti entre eux.
 
-## L'évolution du minimum d'impôt
+## L'évolution du minimum d'impôt {#sec-irpp-minimum}
 
 Le paragraphe II de l'article 44 assoit sur le chiffre d'affaires un montant dont l'impôt annuel ne peut s'écarter. Il ne faut le confondre ni avec le [minimum d'impôt](#g-minimum-impot-chiffre-affaires) de l'article 49 § II, qui en est l'équivalent du côté de l'impôt sur les sociétés, ni avec celui de l'article 12 *bis* de la loi n° 89-114, qui plafonne les avantages fiscaux et s'assied sur l'impôt théorique et non sur le chiffre d'affaires.
 
@@ -579,7 +642,7 @@ l'article 12 bis de la loi n° 89-114, ce que le chapitre de l'impôt sur les so
 son côté. Restent à établir la série datée de ses taux et la référence JORT de chaque
 modificatif. Cf. Q9 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
-## L'évolution des régimes dérogatoires
+## L'évolution des régimes dérogatoires {#sec-irpp-regimes}
 
 Le régime réel n'est pas le seul mode d'imposition des personnes physiques. Trois sous-secteurs juridiques coexistent aujourd'hui : le **régime réel**, le **régime forfaitaire** des bénéfices industriels et commerciaux — porté par les articles 44 *bis* à 44 *sexies* du code, issus du transfert opéré par l'article 37 de la loi de finances pour 2011 depuis le § IV de l'article 44 —, et le **régime estimatif optionnel** que l'article 91 de la loi de finances pour 2026 ajoute à l'article 44 *ter* pour les contribuables dont le chiffre d'affaires n'excède pas 100 000 dinars [@lf-2026, art. 91].
 
@@ -629,6 +692,69 @@ l'article 22 du décret-loi n° 2022-79 (LF 2023), à titre temporaire pour 2023
 opéré par la LF 2025 ; et l'état du droit pour 2026, le régime temporaire arrivant à échéance. Les
 références d'openfisca-tunisia pointent vers un dépôt privé et sont à remplacer par des URL
 pist.tn. Cf. Q10 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
+
+## Les réformes de l'IRPP, texte par texte {#sec-irpp-reformes}
+
+Les sections qui précèdent suivent chacune un élément de l'impôt. Le tableau suivant range les mêmes modifications par texte, dans l'ordre chronologique, pour montrer ce que chaque loi a changé d'un seul geste. Il ne reprend que les textes cités dans ce chapitre, et renvoie pour chacun à la section qui le détaille. La colonne « Effet » suit la convention de datation en années de revenus (@sec-irpp-assiette) : une année suivie d'un astérisque est dérivée de l'article final de la loi, et un tiret signale une date d'effet que le chapitre n'établit pas.
+
+: Les réformes de l'impôt sur le revenu des personnes physiques depuis 1990, texte par texte {#tbl-irpp-reformes}
+
+| Texte | Effet | Élément touché | Ce qui change (avant → après) | Détail |
+|---|---|---|---|---|
+| **Loi n° 89-114** et code annexé [@loi-irpp-is-1989; @code-irpp-is-1990] | revenus 1990 | institution de l'impôt | impôts cédulaires et contribution personnelle d'État → IRPP ; barème : 18 tranches et 68 % au-delà de 80 000 D → 6 tranches et 35 % au-delà de 50 000 D | @sec-irpp-institution |
+| **Loi de finances pour 1998** (loi n° 97-88), art. 45 [@lf-1998, art. 45] | — | minimum d'impôt (art. 44 § II) | plafond du minimum de 0,5 % du chiffre d'affaires : 500 → 1 000 D | @sec-irpp-minimum |
+| **Loi de finances pour 2005**, art. 49 [@lf-2005, art. 49] | revenus 2004\* | abattement pour salaire minimum (art. 40 § V) | créé : 500 D pour les salariés payés au SMIG | @sec-irpp-salaires |
+| art. 50 [@lf-2005, art. 50; @dgi-nc-33-2005] | revenus 2004 | charges de famille : enfant infirme | 500 → 750 D | @sec-irpp-famille |
+| **Loi de finances pour 2006**, art. 42 [@lf-2006, art. 42] | — | minimum d'impôt (art. 44 § II) | plafond (0,5 % du chiffre d'affaires, au plus 1 000 D) → plancher (0,1 % du chiffre d'affaires brut hors exportation, au moins 100 D, exigible même sans chiffre d'affaires) ; exonération des entreprises nouvelles et de celles des zones de développement régional | @sec-irpp-minimum |
+| **Loi de finances pour 2007**, art. 35 [@lf-2007, art. 35; @dgi-nc-18-2007] | revenus 2006 | pensions de source étrangère (art. 37) | 25 % → 80 % du montant brut, sous conditions de transfert et de justification | @sec-irpp-salaires |
+| **Loi de finances pour 2010**, art. 39 [@lf-2010, art. 39] | revenus 2009\* | abattement pour salaire minimum (art. 40 § V) | 500 → 1 000 D | @sec-irpp-salaires |
+| art. 40 [@lf-2010, art. 40] | revenus 2009\* | charges de famille : enfant infirme | 750 → 1 000 D | @sec-irpp-famille |
+| art. 44 [@lf-2010, art. 44] | — | charges déductibles (art. 39 § I) | aucune → déduction des cotisations des travailleurs non salariés affiliés à un régime légal de sécurité sociale, ajoutée | @sec-irpp-deductions |
+| **Loi de finances pour 2011**, art. 32 et 37 [@lf-2011, art. 32 et 37] | — | régime forfaitaire | § IV de l'art. 44 et tarif par tranches de l'annexe II → art. 44 *bis* à 44 *sexies* : 2 % ou 2,5 % du chiffre d'affaires, plancher de 50 ou 100 D, seuils de 100 000 et 50 000 D | @sec-irpp-regimes |
+| art. 38 [@lf-2011, art. 38] | — | minimum d'impôt (art. 44 § II) | plancher : 100 → 200 D | @sec-irpp-minimum |
+| **Loi de finances pour 2014**, art. 19 [@lf-2014, art. 19] | distributions à partir du 1^er^ janvier 2015 | revenus de valeurs mobilières (art. 38, point 10) | exonération générale des dividendes → abrogée, sauf distributions prélevées sur les fonds propres au 31 décembre 2013 | @sec-irpp-capitaux |
+| art. 46 [@lf-2014, art. 46] | revenus 2013\* | bénéfices non commerciaux au forfait (art. 22 § II) | 70 % → 80 % des recettes brutes | @sec-irpp-bnc |
+| art. 48 [@lf-2014, art. 48] | — | minimum d'impôt (art. 44 § II) | 0,1 % et 200 D → 0,2 % et 300 D pour le chiffre d'affaires local ; 0,1 % et 200 D pour l'exportation et les chiffres d'affaires assimilés | @sec-irpp-minimum |
+| art. 73 [@lf-2014, art. 73] | revenus 2014 | abattement pour salaire minimum ; exonération catégorielle | abattement de 1 000 D → abrogé ; exonération du revenu annuel net n'excédant pas 5 000 D, pour les seuls traitements, salaires, pensions et rentes viagères → créée | @sec-irpp-salaires |
+| art. 94 [@lf-2014, art. 94] | revenus 2013\* | charges de famille : enfant infirme, enfant étudiant | enfant infirme : 1 000 → 1 200 D ; déduction pour enfant étudiant relevée | @sec-irpp-famille |
+| **Loi de finances complémentaire pour 2014**, art. 10 [@lfc-2014, art. 10] | quatrième année d'activité ; 1^er^ janvier 2015 pour les activités plus anciennes | plancher d'impôt | aucun → impôt au moins égal à celui d'un agent public de même activité et de même grade, pour les personnes visées à l'art. 22 § II | @sec-irpp-minimum |
+| **Loi de finances pour 2016**, art. 19 § 1 [@lf-2016, art. 19] | revenus 2015\* | autres revenus (catégorie VII) | revenus de source étrangère seuls → s'y ajoutent les jeux de pari, de hasard et de loterie, et les revenus évalués d'après les dépenses ostensibles et l'accroissement du patrimoine | @sec-irpp-autres |
+| art. 21 [@lf-2016, art. 21; @dgi-nc-16-2016] | revenus 2015 | revenus des propriétés bâties (art. 28 § II) | déduction forfaitaire : 30 % → 20 %, frais de réparation et d'entretien justifiés déductibles en sus | @sec-irpp-foncier |
+| **Loi de finances pour 2017** (loi n° 2016-78), art. 13 [@lf-2017, art. 13; @dgi-nc-2-2017] | revenus 2016 | intérêts de l'épargne (art. 39 § II) | plafond : 1 500 D, dont 1 000 D de comptes spéciaux → 5 000 D, dont 3 000 D | @sec-irpp-deductions |
+| art. 14 § 1 [@lf-2017, art. 14] | revenus 2017 | barème (art. 44 § I) | 6 → 5 tranches ; tranche à taux nul : 1 500 → 5 000 D ; tranches à 15 % et 20 % supprimées, taux intermédiaires relevés ; 35 % au-delà de 50 000 D inchangé | @sec-irpp-bareme |
+| art. 14 [@lf-2017, art. 14] | revenus 2017 | frais professionnels (art. 26 § I) | 10 % sans plafond → 10 % dans la limite de 2 000 D | @sec-irpp-salaires |
+| art. 14 § 3 [@lf-2017, art. 14] | revenus 2017 | retenue à la source | dispense de retenue sur les rétributions provisoires ou accidentelles lorsque le salaire annuel global net ne dépasse pas 5 000 D | @sec-irpp-salaires |
+| art. 14 § 5 [@lf-2017, art. 14; @dgi-nc-3-2017] | revenus 2017 | exonération catégorielle | exonération des revenus n'excédant pas 5 000 D → abrogée | @sec-irpp-salaires |
+| **Loi n° 2017-8** [@loi-avantages-fiscaux-2017] | 1^er^ avril 2017 | minimum d'impôt au titre des avantages fiscaux (art. 12 *bis* de la loi n° 89-114) ; déductions de l'art. 39 | 60 % → 45 % de l'impôt dû compte non tenu des déductions ; § III, III *bis*, III *ter*, V *bis*, VI, VII, IX et XI de l'art. 39 abrogés | @sec-irpp-deductions |
+| **Loi de finances pour 2018** (loi n° 2017-66), art. 54 [@lf-2018, art. 54] | revenus 2019 | charges de famille : chef de famille, enfants | chef de famille : 150 → 300 D ; enfants : 90, 75, 60 et 45 D selon le rang → 100 D pour chacun des quatre premiers | @sec-irpp-famille |
+| art. 55 [@lf-2018, art. 55; @dgi-nc-7-2018] | revenus 2017 | charges de famille : enfant infirme | 1 200 → 2 000 D | @sec-irpp-famille |
+| art. 56 [@lf-2018, art. 56] | — | exonérations (art. 38) | ajout des sommes provenant des jeux de pari sur les courses de chevaux et des concours de pronostics sportifs organisés par des établissements publics | @sec-irpp-capitaux |
+| **Loi de finances pour 2020**, art. 41 [@lf-2020, art. 41; @dgi-nc-3-2020] | revenus 2019 | charges de famille : parent à charge | plafond : 150 → 450 D par parent ; condition de ressources : SMIG → double du SMIG | @sec-irpp-famille |
+| art. 44 [@lf-2020, art. 44] | — | exonérations (art. 38) | ajout de l'avantage « transport domicile-travail » offert par les entreprises des zones de développement régional | @sec-irpp-salaires |
+| **Loi de finances pour 2021**, art. 16 [@lf-2021, art. 16; @dgi-nc-1-2021] | revenus 2020 | primes d'assurance-vie (art. 39 § I) | plafond : 10 000 → 100 000 D ; déduction soumise pour la première fois au minimum de l'art. 12 *bis* de la loi n° 89-114 | @sec-irpp-deductions |
+| art. 16 [@lf-2021, art. 16] | — | comptes épargne en actions (art. 39 § VIII) | plafond : 50 000 → 100 000 D | @sec-irpp-deductions |
+| **Loi de finances pour 2022**, art. 24 [@lf-2022, art. 24; @dgi-nc-1-2022] | revenus 2021 | intérêts de l'épargne (art. 39 § II) | plafond : 5 000 D, dont 3 000 D de comptes spéciaux → 10 000 D, dont 6 000 D | @sec-irpp-deductions |
+| art. 29 [@lf-2022, art. 29] | — | intérêts des emprunts obligataires verts, socialement responsables et durables (art. 39 § II *bis*) | déduction créée, dans la limite de 10 000 D par an | @sec-irpp-deductions |
+| **Loi de finances pour 2023** (décret-loi n° 2022-79), art. 43 [@lf-2023, art. 43] | — | plus-value immobilière (art. 27) | exclusion du local d'habitation sans condition → réservée à la première cession d'un seul local, dans la limite de 1 000 m² et d'un prix de cession inférieur à 500 000 D | @sec-irpp-foncier |
+| **Loi de finances pour 2024**, art. 34 [@lf-2024, art. 34] | — | intérêts de l'épargne (art. 39 § II) | bons du trésor assimilables ajoutés aux supports éligibles ; plafonds inchangés | @sec-irpp-deductions |
+| **Loi de finances pour 2025** (loi n° 2024-48), art. 20 [@lf-2025, art. 20] | pensions payées à partir du 1^er^ janvier 2025 | exonérations (art. 38) | pensions d'orphelins et pensions d'invalidité d'origine non professionnelle → exonérées | @sec-irpp-salaires |
+| art. 36 § 1 [@lf-2025, art. 36] | revenus 2025 | barème (art. 44 § I) | 5 → 8 tranches ; 35 % au-delà de 50 000 D → 40 % au-delà de 70 000 D, la tranche de 50 000 à 70 000 D étant imposée à 38 % | @sec-irpp-bareme |
+| art. 39 [@lf-2025, art. 39] | revenus 2024, rétroactivement | revenus des propriétés bâties (art. 28 § II) | 20 % et frais de réparation et d'entretien en sus → 25 %, frais compris | @sec-irpp-foncier |
+| **Loi de finances pour 2026** (loi n° 2025-17), art. 56 [@lf-2026, art. 56] | trois dates énoncées par l'article (@tbl-abattement-pensions) | abattement sur les pensions (art. 26 § II) | 25 % → 30 %, 40 % puis 50 % | @sec-irpp-salaires |
+| art. 91 [@lf-2026, art. 91] | — | régimes dérogatoires | régime estimatif optionnel ajouté à l'art. 44 *ter*, pour un chiffre d'affaires n'excédant pas 100 000 D | @sec-irpp-regimes |
+
+Sources : celles de chaque ligne. Les montants sont en dinars.
+
+<!-- TODO (rédacteur) : le tableau ne retient que les textes cités avec leur référence dans le
+chapitre. En sont absents, faute de référence : l'art. 30 de la loi de finances pour 1992 (intérêts
+de l'épargne), les art. 61 et 76 de la loi de finances pour 1998 (pensions de source étrangère,
+bénéfices agricoles), l'art. 71 de la loi de finances pour 2002 (irréversibilité du réel des
+bénéfices non commerciaux), l'art. 42 de la loi de finances pour 2011 (gérants de SARL), et
+l'origine du taux de 60 % de l'art. 12 bis de la loi n° 89-114. Les revenus des travailleuses
+agricoles, exonérés en 2025, n'y figurent pas non plus : « La longue période » les rattache à
+l'art. 44 de la loi de finances pour 2025, la section sur les traitements et salaires ne cite que
+l'art. 20 pour les pensions — à trancher par le documentaliste. La contribution sociale de
+solidarité (loi de finances pour 2018, art. 53) en est exclue comme prélèvement distinct. -->
 
 ## La longue période
 
@@ -705,3 +831,38 @@ complète — soixante-dix-neuf entrées de part et d'autre —, la consigne de 
 arabes est donc close. Cinq des huit textes réputés sans clé en ont désormais une
 (lf-1992, lf-1998, lf-1999, lf-2003, lf-2004) ; un sixième, la loi n° 2010-58 (LF 2011,
 art. 42), reçoit la sienne avec la branche de l'impôt sur les sociétés. -->
+
+## Annexe : notations du chapitre {#sec-irpp-notations}
+
+Les symboles des formules de @sec-irpp-calcul, dans l'ordre de leur introduction, avec la disposition qui porte la grandeur.
+
+| Symbole | Grandeur | Disposition |
+|---|---|---|
+| $c$ | indice de catégorie de revenus, de 1 à 7 dans l'ordre de l'article 8 | code, art. 8 |
+| $r_c$ | revenu net de la catégorie $c$ | code, art. 8 et règles propres à chaque catégorie |
+| $R$ | revenu net global | code, art. 8 |
+| $A$ | charges déductibles du revenu global et déductions au titre des avantages fiscaux | code, art. 39 à 39 *quater* |
+| $F$ | déductions pour situation et charges de famille | code, art. 40 |
+| $Y$ | revenu net imposable | code, art. 44 § I |
+| $W$ | montant brut des traitements, salaires, indemnités et avantages imposables | code, art. 25 et 26 § I |
+| $K$ | retenues obligatoires pour la retraite et la sécurité sociale | code, art. 26 § I |
+| $\varphi$ | taux de la déduction forfaitaire pour frais professionnels | code, art. 26 § I |
+| $\bar\varphi$ | plafond annuel de cette déduction | code, art. 26 § I |
+| $P$ | montant brut des pensions et rentes viagères | code, art. 26 § II |
+| $\pi$ | taux de l'abattement sur les pensions et rentes viagères | code, art. 26 § II |
+| $T(Y)$ | impôt résultant du barème | code, art. 44 § I |
+| $n$ | nombre de tranches du barème, tranche à taux nul comprise | code, art. 44 § I |
+| $t_i$ | taux de la tranche $i$ | code, art. 44 § I |
+| $s_i$ | limite supérieure de la tranche $i$ | code, art. 44 § I |
+| $I$ | impôt dû | — |
+| $A^{*}$ | part de $A$ formée des déductions accordées sous réserve du minimum de l'article 12 *bis* | loi n° 89-114, art. 12 *bis* |
+| $\mu$ | taux du minimum d'impôt au titre des avantages fiscaux | loi n° 89-114, art. 12 *bis* |
+| $m$ | minimum d'impôt assis sur le chiffre d'affaires | code, art. 44 § II |
+| $Q$ | chiffre d'affaires brut | code, art. 44 § II |
+| $\lambda$ | taux du minimum d'impôt | code, art. 44 § II |
+| $\bar M$ | plafond du minimum d'impôt, jusqu'à la loi de finances pour 2006 | code, art. 44 § II |
+| $\underline{M}$ | montant plancher du minimum d'impôt, depuis la loi de finances pour 2006 | code, art. 44 § II |
+| $V$ | retenues à la source et acomptes imputables | — |
+| $D$ | solde dû, ou restitué s'il est négatif | — |
+
+: Notations du chapitre, dans l'ordre de leur introduction {#tbl-irpp-notations}
