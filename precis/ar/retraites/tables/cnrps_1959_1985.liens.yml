@@ -1,0 +1,30 @@
+- libelle: الصندوق الوطني للتقاعد والحيطة الاجتماعية — سقف نسبة تصفية الجراية
+  parametre: parameters/retraite/cnrps/plaf_taux_pension.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.plaf_taux_pension/table/
+- libelle: الصندوق الوطني للتقاعد والحيطة الاجتماعية — الحدّ الأقصى من السنوات القابلة
+    للتصفية
+  parametre: parameters/retraite/cnrps/maximum_annuites_liquidables.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.maximum_annuites_liquidables/table/
+- libelle: الصندوق الوطني للتقاعد والحيطة الاجتماعية — الجراية الدنيا، كسرًا من المرتب
+    التابع للرقم القياسي 100
+  parametre: parameters/retraite/cnrps/pension_minimale/indice_100/part_indice_100.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.pension_minimale.indice_100.part_indice_100/table/
+- libelle: الصندوق الوطني للتقاعد والحيطة الاجتماعية — عدد السنوات التي يكون حدّها
+    الأدنى المرتب التابع للرقم القياسي 100
+  parametre: parameters/retraite/cnrps/pension_minimale/indice_100/annuites_pension_pleine.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.pension_minimale.indice_100.annuites_pension_pleine/table/
+- libelle: الصندوق الوطني للتقاعد والحيطة الاجتماعية — الحدّ الأدنى للجرايات النسبية،
+    عن كلّ سنة قابلة للتصفية
+  parametre: parameters/retraite/cnrps/pension_minimale/indice_100/taux_par_annuite_proportionnelle.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.pension_minimale.indice_100.taux_par_annuite_proportionnelle/table/
+- libelle: الصندوق الوطني للتقاعد والحيطة الاجتماعية — الجراية الدنيا المضمونة، كسرًا
+    من الأجر الأدنى المضمون
+  parametre: parameters/retraite/cnrps/pension_minimale/minimum_garanti.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.pension_minimale.minimum_garanti/table/
+- libelle: الصندوق الوطني للتقاعد والحيطة الاجتماعية — نسبة جراية القرين الباقي على
+    قيد الحياة
+  parametre: parameters/retraite/cnrps/survivants/taux_conjoint.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.survivants.taux_conjoint/table/
+- libelle: الصندوق الوطني للتقاعد والحيطة الاجتماعية — نسبة الجراية الوقتية لليتيم
+  parametre: parameters/retraite/cnrps/survivants/taux_orphelin.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.survivants.taux_orphelin/table/

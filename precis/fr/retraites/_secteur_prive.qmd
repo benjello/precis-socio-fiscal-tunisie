@@ -1087,16 +1087,47 @@ Trois textes ont touché le cœur du régime : le décret n° 89-1611 en 1989, p
 
 Sources : @decret82-1359, art. 7, 18-24 ; @decret82-1360, art. 1, 5, 7-8 et 17 ; @decret89-1611 ; @decret95-1166, art. 7, 23-30 ; @decret-2002-3018, art. 1.
 
-<!-- Tableau tenu à la main, et non engendré (réexaminé le 23/09/2026, openfisca-tunisia 0.106).
-La branche `retraite/rtns/` existe, mais elle ne commence qu'au 19 juillet 1995 (décret
-n° 95-1166) : âge, âge de départ anticipé et décote, stage, taux de base, majoration et plafond,
-pension minimale, dix classes. Il lui manque les états de 1982 (décrets n° 82-1359 et 82-1360,
-distincts pour les secteurs non agricole et agricole) et de 1989 (décret n° 89-1611, neuf
-classes) ; et quatre des sept lignes du tableau sont, en tout ou partie, des règles — mode de
-calcul du revenu de référence, sort des carrières inférieures au stage, mode de revalorisation
-(par décret, par arrêté, puis automatique en 2002). TODO (rédacteur) : remplacer par un tableau
-engendré des seules lignes chiffrées (âge, stage, taux, plafond, pension minimale, classes) une
-fois les états de 1982 et de 1989 datés et sourcés, et garder les règles dans la prose. -->
+<!-- Tableau tenu à la main (réexaminé le 24/09/2026, openfisca-tunisia 0.111). Ses lignes
+chiffrées sont désormais engendrées, datées de 1982, 1989 et 1995, aux trois tableaux qui suivent
+(tbl-rtns-vieillesse, tbl-rtns-agricole, tbl-rtns-classes) : âge, départ avec décote, stage, taux,
+majoration, plafond, pension minimale, classes de revenus, et pour le secteur agricole l'âge et
+l'allocation de vieillesse. Il reste à la main pour ce que ceux-là ne disent pas : les règles —
+mode de calcul du revenu de référence, sort des carrières inférieures au stage, mode de
+revalorisation (par décret, par arrêté, puis automatique en 2002) — et les grandeurs du secteur
+agricole de 1982 qui viennent de la loi n° 81-6 par renvoi (taux de 40 %, majoration, plafond,
+stage), que le décret n° 82-1360 n'énonce pas lui-même. -->
+
+Les grandeurs chiffrées que fixent les décrets n° 82-1359, 82-1360, 89-1611 et 95-1166 se lisent, date par date, dans les trois tableaux suivants : la pension de vieillesse, du secteur non agricole puis des deux secteurs (@tbl-rtns-vieillesse) ; l'âge et l'allocation de vieillesse du secteur agricole (@tbl-rtns-agricole) ; les classes de revenus (@tbl-rtns-classes).
+
+```{python}
+#| echo: false
+#| output: asis
+table("rtns_vieillesse",
+      "Pension de vieillesse des travailleurs non salariés : secteur non agricole en 1982, deux secteurs depuis 1995",
+      "tbl-rtns-vieillesse")
+```
+
+Sources : @decret82-1359, art. 18, 20, 22 et 26 ; @decret95-1166, art. 23, 24, 26, 29 et 39. La ligne de 1982 est celle du seul secteur non agricole ; celle de 1995 vaut pour les deux secteurs. Le stage se compte en mois en 1982, en trimestres de cotisations effectives depuis 1995. La pension minimale est rapportée en 1982 au SMIG de 2 400 heures par an, depuis 1995 au salaire minimum annuel du secteur de l'assuré. Le décret n° 89-1611 n'a modifié aucune de ces grandeurs.
+
+```{python}
+#| echo: false
+#| output: asis
+table("rtns_agricole",
+      "Âge et allocation de vieillesse des non-salariés du secteur agricole",
+      "tbl-rtns-agricole")
+```
+
+Sources : @decret82-1360, art. 8, 17 et 18 ; @decret95-1166, art. 24 et 39. Avant 1995, le taux, le stage et le plafond du secteur agricole n'ont pas de colonne : le décret n° 82-1360 ne les énonce pas, ils viennent de la loi n° 81-6 par renvoi [@decret82-1360, art. 1 et 7] ; depuis 1995, ce sont ceux du @tbl-rtns-vieillesse. L'allocation de vieillesse, réservée aux assurés de la période transitoire [@decret82-1360, art. 16-17], disparaît avec l'abrogation du décret n° 82-1360 au 19 juillet 1995, d'où la case vide ; les carrières inférieures au stage reçoivent depuis un versement unique égal aux cotisations [@decret95-1166, art. 28 et 39].
+
+```{python}
+#| echo: false
+#| output: asis
+table("rtns_classes",
+      "Classes de revenus des travailleurs non salariés",
+      "tbl-rtns-classes")
+```
+
+Sources : @decret82-1359, art. 7 et 26 ; @decret89-1611, art. 1 ; @decret95-1166, art. 7. Jusqu'en 1995, ces classes sont celles du seul secteur non agricole ; le secteur agricole cotise alors sur le SMAG de 45 jours par trimestre, affecté d'un coefficient de 1, 1,5 ou 2 [@decret82-1360, art. 5]. Le SMIG des multiples de 1989 est celui du régime de 48 heures, rapporté à 2 400 heures par an. Une case vide signale une classe qui n'existe pas encore.
 
 ##### 1989 : les classes en multiples du SMIG {#sec-rtns-reforme-1989}
 

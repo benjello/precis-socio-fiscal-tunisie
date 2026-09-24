@@ -1,0 +1,25 @@
+- libelle: CNRPS — plafond du taux de la pension
+  parametre: parameters/retraite/cnrps/plaf_taux_pension.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.plaf_taux_pension/table/
+- libelle: CNRPS — maximum d'annuités liquidables
+  parametre: parameters/retraite/cnrps/maximum_annuites_liquidables.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.maximum_annuites_liquidables/table/
+- libelle: CNRPS — pension minimale, en part de la rémunération de l'indice 100
+  parametre: parameters/retraite/cnrps/pension_minimale/indice_100/part_indice_100.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.pension_minimale.indice_100.part_indice_100/table/
+- libelle: CNRPS — annuités de la pension dont le plancher est la rémunération de
+    l'indice 100
+  parametre: parameters/retraite/cnrps/pension_minimale/indice_100/annuites_pension_pleine.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.pension_minimale.indice_100.annuites_pension_pleine/table/
+- libelle: CNRPS — plancher des pensions proportionnelles, par annuité
+  parametre: parameters/retraite/cnrps/pension_minimale/indice_100/taux_par_annuite_proportionnelle.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.pension_minimale.indice_100.taux_par_annuite_proportionnelle/table/
+- libelle: CNRPS — pension minimale garantie, en fraction du SMIG
+  parametre: parameters/retraite/cnrps/pension_minimale/minimum_garanti.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.pension_minimale.minimum_garanti/table/
+- libelle: CNRPS — taux de la pension de réversion du conjoint
+  parametre: parameters/retraite/cnrps/survivants/taux_conjoint.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.survivants.taux_conjoint/table/
+- libelle: CNRPS — taux de la pension d'orphelin
+  parametre: parameters/retraite/cnrps/survivants/taux_orphelin.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.survivants.taux_orphelin/table/

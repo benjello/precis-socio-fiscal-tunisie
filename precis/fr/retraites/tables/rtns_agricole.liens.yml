@@ -1,0 +1,12 @@
+- libelle: Âge d'ouverture du droit à pension de vieillesse, secteur agricole, du
+    1er juillet 1982 au 18 juillet 1995
+  parametre: parameters/retraite/rtns/avant_1995/agricole/age_legal.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.avant_1995.agricole.age_legal/table/
+- libelle: Âge d'ouverture du droit à pension de vieillesse, deux secteurs, depuis
+    le 19 juillet 1995
+  parametre: parameters/retraite/rtns/age_legal.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.age_legal/table/
+- libelle: Durée de cotisation ouvrant l'allocation de vieillesse, secteur agricole,
+    du 1er juillet 1982 au 18 juillet 1995
+  parametre: parameters/retraite/rtns/avant_1995/agricole/allocation_vieillesse_trimestres.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.avant_1995.agricole.allocation_vieillesse_trimestres/table/
