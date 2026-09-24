@@ -8,6 +8,56 @@
 
 ## En attente
 
+### Livre « Retraites » — CNRPS, emplois de la partie active (versement du 24/09/2026)
+
+Branche `feat/cnrps-partie-active`. Source : `docs/notes/cnrps-partie-active.md` (§ 2.1, § 8).
+Dix décrets ajoutés à la main, FR et AR (mêmes ids), dans le **fonds commun**
+`precis/{fr,ar}/references.json`, à côté de `loi59-18` et `decret59-78` (convention « textes de
+la chaîne d'un régime au fonds commun »), **pas encore dans Zotero**, et **pas encore cités** par
+un `.qmd` (le rédacteur les introduira au chapitre CNRPS). URL = `pdf_fr` / `pdf_ar` du recid,
+comparées champ à champ et contrôlées le 24/09/2026 (`curl -k -r 0-0`, HTTP 206,
+`application/pdf`, 16 fascicules). Titres AR : **intitulés arabes lus au fascicule arabe, à
+l'image** (non au miroir iort). Hors `title`, `title-short` et `URL`, l'entrée AR est
+**identique** à l'entrée FR : `page` = pagination **française**, pagination arabe (relevée à
+l'image) dans la note, commune aux deux fichiers. Motif : la descente `sync_biblio` ne préserve
+côté AR que les champs en caractères arabes (`CHAMPS_TRADUITS`) et redérive l'URL `Ja…` ; une
+page ou une note propres à l'AR seraient écrasées au premier sync.
+
+| Clé | recid | Pages fr. | Pages ar. | Effet (note) |
+|---|---|---|---|---|
+| `decret67-282` | 104490 | 1092 | 1603 | exécutoire entre le 28 et le 31/08/1967 (fascicule multi-daté) |
+| `decret69-167` | 104005 | 592 | 611-612 | art. 5 : 1/01/1968 ; rectificatif FR n° 25/1969 p. 826 (recid 103958) en note |
+| `decret70-173` | 103737 | 648 | 710 | entre le 28 et le 31/05/1970 |
+| `decret73-471` | 102657 | 1547 | 1702 | entre le 11 et le 14/10/1973 |
+| `decret81-1600` | 97793 | 2807-2808 | 2997 | 3/12/1981 |
+| `decret84-748` | 96364 | 1758-1767 | 1898-1908 | entre le 16 et le 19/08/1984 |
+| `decret84-750` | 96366 | 1771-1776 | 1913-1918 | idem ; absence de clause d'effet lue à l'image (éd. ar., art. 55) |
+| `decret84-753` | 96369 | 1779-1786 | 1922-1928 | idem ; idem (éd. ar., art. 73) |
+| `decret84-755` | 96371 | 1788-1794 | 1931-1937 | idem ; l'éd. ar. numérote 62, 63, 64 (l'éd. fr. a deux art. 62) |
+| `decret88-2131` | 94078 | 27-37 | 27-33 | art. 79 : 2/06/1988 ; signé le **31** décembre 1988 |
+
+Constats de lecture (éd. ar.) à connaître :
+- `decret69-167` : l'en-tête du texte (p. 611) imprime « التابعة تقسم التجول » ; titre repris du
+  sommaire arabe (p. 598), « لقسم ». La liste arabe (p. 612) comprend **déjà**
+  « ميكانيكو المناورات » ; le sommaire de l'éd. ar. n° 25/1969 ne porte aucun rectificatif du
+  69-167 — le rectificatif est propre à l'édition française.
+- `decret84-750`, `decret84-753` : l'en-tête imprime « السنة 1984 » ; titre écrit « لسنة »,
+  comme au sommaire du fascicule. `decret84-755` : « أمر » avec hamza, tel qu'imprimé.
+- Fins de texte arabes des statuts de 1984 : page de signature et tableau annexé lus ; page
+  suivante donnée par le sommaire (749 p. 1909, lue ; 751 p. 1919 ; 754 p. 1929 ; 756 p. 1938).
+
+Contrôles (worktree, 24/09/2026) : ids identiques FR/AR (279 chacun) ; `push_biblio.py
+--verifier` : 530 entrées, 0 perte ; `--dry-run` sans clé : 530 converties, sans erreur ;
+rendus FR et AR de « Retraites » : 0 `[?]`, 0 `?@` (les clés n'étant pas encore citées, le
+rendu ne prouve ici que l'intégrité du JSON). `controle-rangement` **non lancé** (consigne :
+aucun workflow).
+
+- [ ] Relancer le rendu « Retraites » FR et AR une fois les clés citées par `_secteur_public.qmd`.
+- [ ] Rapatriement Zotero **après fusion**, sur feu vert humain : `permissions` → `verifier` →
+      `dry-run` → `pousser-un` → `comparer` → `pousser-tout` → `ranger` (collection : aucune,
+      « Commun », sauf si le contrôle dit autrement) → `controle-rangement` (si les clés ne sont
+      citées que par « Retraites », il les signalera « à ranger » dans cette collection).
+
 ### Fiscalité — tarifs de la contribution personnelle d'État (versement du 23/09/2026)
 
 Branche `feat/tableaux-engendres-suite`. Trois lois citées par les tarifs de 1962, 1965 et 1983
