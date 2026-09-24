@@ -154,6 +154,21 @@ class VerifierTest(Depot):
         erreurs = self.verifie([fiche()])
         self.assertTrue(any("pas dans le fichier désigné" in e for e in erreurs), erreurs)
 
+    def test_section_apres_une_classe(self):
+        self.chapitre(AVEC_ANCRE.replace("{#sec-regime}", "{.unnumbered #sec-regime}"))
+        self.assertEqual(self.verifie([fiche()]), [])
+
+    def test_section_prefixe_ne_suffit_pas(self):
+        self.chapitre(AVEC_ANCRE.replace("{#sec-regime}", "{#sec-regime-suite}"))
+        erreurs = self.verifie([fiche()])
+        self.assertTrue(any("#sec-regime " in e for e in erreurs), erreurs)
+
+    def test_id_prefixe_ne_vaut_pas_ancre(self):
+        """L'ancre « r-exemple-2 » ne tient pas lieu de « r-exemple »."""
+        self.chapitre(AVEC_ANCRE.replace("r-exemple", "r-exemple-2"))
+        erreurs = self.verifie([fiche(), fiche(id="r-exemple-2")])
+        self.assertTrue(any(e.startswith("r-exemple : fiche orpheline") for e in erreurs), erreurs)
+
     def test_section_absente(self):
         self.chapitre(AVEC_ANCRE.replace("{#sec-regime}", "{#sec-autre}"))
         erreurs = self.verifie([fiche()])

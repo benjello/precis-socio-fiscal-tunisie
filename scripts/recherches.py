@@ -177,8 +177,10 @@ def formate(entete: str, fiches: list[dict]) -> str:
         pass
 
     def liste(dumper, donnees):
-        # Listes de scalaires en ligne (termes, sources) ; listes d'objets en bloc.
-        en_ligne = all(not isinstance(x, (dict, list)) for x in donnees)
+        # Listes courtes de scalaires en ligne (termes, sources) ; listes d'objets, ou de
+        # phrases (a_faire), en bloc.
+        en_ligne = (all(not isinstance(x, (dict, list)) for x in donnees)
+                    and sum(len(str(x)) for x in donnees) <= 100)
         return dumper.represent_sequence("tag:yaml.org,2002:seq", donnees, flow_style=en_ligne)
 
     Dumper.add_representer(list, liste)
@@ -309,9 +311,11 @@ def verifie(fiches: list, racine: Path = RACINE, fichiers: list[Path] | None = N
                 erreurs.append(f"{id_} : « ou » désigne un fichier absent : {chemin}")
                 continue
             texte = fichier.read_text(encoding="utf-8")
-            if not re.search(rf"<!--\s*RECHERCHE\s+{re.escape(id_)}\b", texte):
+            if not re.search(rf"<!--\s*RECHERCHE\s+{re.escape(id_)}(?![\w.-])", texte):
                 erreurs.append(f"{id_} : l'ancre n'est pas dans le fichier désigné par « ou » ({chemin})")
-            if ancre and "{#" + ancre not in texte and "{" + "#" + ancre + " " not in texte:
+            # L'identifiant peut suivre une classe (« {.unnumbered #sec-x} ») ; « #sec-x » ne
+            # doit pas être satisfait par « #sec-x-suite ».
+            if ancre and not re.search(r"\{[^}]*#" + re.escape(ancre) + r"(?=[\s}])", texte):
                 erreurs.append(f"{id_} : l'ancre de section #{ancre} n'existe pas dans {chemin}")
     return erreurs
 

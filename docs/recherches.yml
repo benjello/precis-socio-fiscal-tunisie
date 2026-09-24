@@ -22,7 +22,9 @@
 #             sources           parmi jort_cache, iort, corpus_local, pist, mcp_jort, visas, presse
 #             couverture        texte libre : jusqu'où, et les LACUNES (fascicules non lus…)
 #             couvert_jusqu_au  AAAA-MM-JJ : date de publication jusqu'à laquelle la passe vaut ;
-#                               c'est ce champ que `lister --perimees` et `relancer` utilisent
+#                               c'est ce champ que `lister --perimees` et `relancer` utilisent.
+#                               Il ne dit rien des TROUS : un fascicule non lu en deçà de cette
+#                               date va dans `a_faire`, et `relancer --depuis` y revient
 #             resultat          « aucun », ou la clé CSL du texte trouvé
 #   a_faire   (facultatif) ce qui reste à parcourir pour lever les lacunes
 #   resolu    (facultatif) clé CSL du texte trouvé ; la réserve et l'ancre quittent alors le .qmd
@@ -52,4 +54,7 @@
     couverture: 'jort_cache (FTS sur titre et objet, LIKE sur les intitulés arabes) jusqu''au 10 avril 2026 ; texte des fascicules FR et AR du corpus local de 2024 au n° 56 de 2026, 2025 en partie seulement (117 fascicules FR) ; n° 57 à 93 de 2026 téléchargés depuis pist.tn, sauf le n° 58, non consulté ; presse : Nawaat, 27 août 2026 (source secondaire). Note : docs/notes/cnss-autres-regimes.md, § 10 et 12.'
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
-  a_faire: [lire le JORT n° 58 de 2026, contrôler 2025 fascicule par fascicule sur pist.tn (le corpus local n'en a qu'une partie)]
+  a_faire:
+  - lire le JORT n° 58 de 2026 (pist.tn)
+  - 'lire les fascicules absents du corpus local le 24 septembre 2026 (relancer --depuis 2024-10-23) : 2024, n° 129 à 159, FR et AR ; 2025, n° 121 à 156, FR et AR, et FR n° 29 et 77 ; 2026, FR n° 11 et 13, AR n° 3'
+  - 'chercher aussi sans l''article (عاملات الفلاحيات) : après « ل », l''intitulé du décret-loi s''écrit للعاملات الفلاحيات'
