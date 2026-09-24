@@ -65,6 +65,19 @@ militaires, est engendré depuis le 20 septembre 2026.
   hausse du SMIG du 1er mai 2000 —, ni les hausses assimilées de 1981 et 1982, ni les
   indemnités spéciales de 1989 et 1991, qui ne sont pas des hausses du SMIG, ni les lignes
   dont la source n'a pas été vérifiée au Journal officiel.
+
+DEUX TABLEAUX À LA MAIN ONT, DEPUIS LE 24 SEPTEMBRE 2026, DES COMPAGNONS ENGENDRÉS : ils
+mêlent des règles et des valeurs, et restent à la main pour les règles ; leurs seules lignes
+chiffrées sont engendrées à côté.
+
+- `tbl-cnrps-1959-1985` : `cnrps_1959_1985.md` — plafond, maximum d'annuités, plancher
+  (rédigé en règle : « traitement de l'indice 100 », « 60 % des émoluments de l'indice
+  100 »), réversion et pension d'orphelin, du 1er avril 1959 au 12 septembre 1985.
+- `tbl-rtns-coeur` : `rtns_vieillesse.md`, `rtns_agricole.md` et `rtns_classes.md` — les
+  états de 1982 et de 1989, qui prennent fin le 19 juillet 1995 par une valeur nulle,
+  enchaînés à ceux du décret n° 95-1166 (`enchaine`). Une case vide dit l'absence de
+  règle — classe pas encore créée, allocation de vieillesse agricole abrogée —, jamais un
+  zéro.
 """
 
 from __future__ import annotations
@@ -122,6 +135,33 @@ MOTS = {
         "au_dela": "au-delà de {bas}",
         "smig": "du SMIG",
         "vide": "—",
+        # Pensions civiles, de la loi n° 59-18 à la loi n° 85-12.
+        "max_annuites": "Maximum d'[annuités liquidables](#g-annuite-liquidable)",
+        "plancher": "Plancher de la pension",
+        "reversion": "[Réversion](#g-pension-de-reversion) au conjoint",
+        "orphelin": "[Pension d'orphelin](#g-pension-temporaire-orphelin), par orphelin",
+        "indice_100": {"traitement": "traitement de l'indice 100",
+                       "emoluments": "émoluments de l'indice 100"},
+        "des": "{taux} des {base}",
+        "plancher_1959": ("{pleine} ({n} annuités) ; {taux} du traitement par annuité, "
+                          "dans la même limite (moins de {n} annuités)"),
+        # Travailleurs non salariés.
+        "rtns_age": "Âge",
+        "rtns_anticipe": "Départ avec [décote](#g-decote)",
+        "rtns_anticipe_cellule": "dès {age}, {taux} par trimestre",
+        "rtns_stage": "[Stage](#g-stage-cotisation)",
+        "rtns_taux": "Taux au terme du stage",
+        "rtns_majoration": "Majoration par trimestre au-delà du stage",
+        "rtns_minimum": "Pension minimale",
+        "smig_ou_smag": "du SMIG ou du SMAG",
+        "rtns_allocation": "[Allocation de vieillesse](#g-allocation-de-vieillesse), ouverte dès",
+        "classe": "Classe {k}",
+        "assiette": "[Classes de revenus](#g-classe-de-revenus)",
+        "assiette_dinars": "[revenu forfaitaire](#g-revenu-forfaitaire) annuel, en dinars",
+        "assiette_smig": "multiple du SMIG",
+        "assiette_smig_smag": "multiple du SMIG ou du SMAG",
+        "mois": ("mois", "mois", "mois", "mois"),
+        "trimestres": ("trimestre", "trimestres", "trimestres", "trimestres"),
     },
     "ar": {
         "effet": "بداية السريان",
@@ -154,6 +194,32 @@ MOTS = {
         "au_dela": "ما يفوق {bas}",
         "smig": "من الأجر الأدنى المضمون",
         "vide": "—",
+        "max_annuites": "الحدّ الأقصى من [السنوات القابلة للتصفية](#g-annuite-liquidable)",
+        "plancher": "الحدّ الأدنى للجراية",
+        "reversion": "[جراية القرين الباقي على قيد الحياة](#g-pension-de-reversion)",
+        "orphelin": "[الجراية الوقتية لليتيم](#g-pension-temporaire-orphelin)، عن كلّ يتيم",
+        "indice_100": {"traitement": "المرتب التابع للرقم القياسي 100",
+                       "emoluments": "المرتبات التابعة للرقم القياسي 100"},
+        "des": "{taux} من {base}",
+        "plancher_1959": ("{pleine} ({n} سنة قابلة للتصفية)؛ {taux} من المرتب عن كلّ سنة "
+                          "قابلة للتصفية، في حدود المقدار نفسه (أقلّ من {n} سنة)"),
+        "rtns_age": "السنّ",
+        "rtns_anticipe": "التقاعد المبكّر مع [التخفيض في الجراية](#g-decote)",
+        "rtns_anticipe_cellule": "ابتداءً من {age}، {taux} عن كلّ ثلاثية",
+        "rtns_stage": "[مدة الانخراط الدنيا](#g-stage-cotisation)",
+        "rtns_taux": "النسبة عند استيفاء مدة الانخراط الدنيا",
+        "rtns_majoration": "الترفيع عن كلّ ثلاثية تفوق مدة الانخراط الدنيا",
+        "rtns_minimum": "الجراية الدنيا",
+        "smig_ou_smag": "من الأجر الأدنى المضمون أو من الأجر الأدنى الفلاحي المضمون",
+        "rtns_allocation": "[منحة الشيخوخة](#g-allocation-de-vieillesse)، ابتداءً من",
+        "classe": "الشريحة {k}",
+        "assiette": "[شرائح الدخل](#g-classe-de-revenus)",
+        "assiette_dinars": "[الدخل التقديري](#g-revenu-forfaitaire) السنوي، بالدينار",
+        "assiette_smig": "مضاعف الأجر الأدنى المضمون",
+        "assiette_smig_smag": "مضاعف الأجر الأدنى المضمون أو الأجر الأدنى الفلاحي المضمون",
+        # Formes du nom compté, comme COMPTE_AR : 1, 2, 3 à 10, au-delà.
+        "mois": ("شهر", "شهران", "أشهر", "شهرًا"),
+        "trimestres": ("ثلاثية", "ثلاثيتان", "ثلاثيات", "ثلاثية"),
     },
 }
 
@@ -244,6 +310,179 @@ CLES_RSNA_PLANCHERS = {
     "1974-01-01": "decret74-499, art. 45",
     "1982-07-22": "decret82-1030, art. 3 et 5",
 }
+# Pensions civiles, de la loi n° 59-18 à la loi n° 85-12 : les lignes chiffrées du tableau
+# `tbl-cnrps-1959-1985`, que ce tableau-ci accompagne sans le remplacer.
+CLES_CNRPS_1959_1985 = {
+    "1959-04-01": "loi59-18, art. 20, § III, 22, § II, 31 et 52 ; @loi59-100, art. 1",
+    "1970-07-01": "decretloi70-1, art. 1 et 2",
+    "1981-05-01": "loi81-70, art. 4-5",
+    "1985-09-12": "loi85-12, art. 35, 38, 39, 43 et 45",
+}
+# La rémunération de l'indice 100 à laquelle le plancher se rapporte change de nom avec le
+# décret-loi n° 70-1 : le traitement soumis à retenue, puis les émoluments globaux
+# indiciaires. La valeur ne le dit pas — 1 et 0,6 d'une même unité — : la base se lit donc
+# à la date, et une date d'effet inconnue ici arrête la génération plutôt que de recevoir
+# la base de la ligne précédente.
+BASE_INDICE_100 = {"1959-04-01": "traitement", "1970-07-01": "emoluments"}
+# Travailleurs non salariés : les lignes chiffrées du tableau `tbl-rtns-coeur`.
+CLES_RTNS_VIEILLESSE = {
+    "1982-07-01": "decret82-1359, art. 18, 20, 22 et 26",
+    "1995-07-19": "decret95-1166, art. 23, 24, 26, 29 et 39",
+}
+CLES_RTNS_AGRICOLE = {
+    "1982-07-01": "decret82-1360, art. 8, 17 et 18",
+    "1995-07-19": "decret95-1166, art. 24 et 39",
+}
+CLES_RTNS_CLASSES = {
+    "1982-07-01": "decret82-1359, art. 7 et 26",
+    "1989-10-22": "decret89-1611, art. 1",
+    "1995-07-19": "decret95-1166, art. 7",
+}
+RTNS = "parameters/retraite/rtns"
+RTNS_NA = f"{RTNS}/avant_1995/non_agricole"
+RTNS_AG = f"{RTNS}/avant_1995/agricole"
+
+
+# Libellés des liens « Base législative » des tableaux à séries enchaînées. Une même colonne
+# lit deux paramètres — l'état de 1982 et celui du régime fusionné de 1995 — : chacun a
+# son libellé, sans quoi l'onglet afficherait deux fois « Stage ».
+LIENS = {
+    "fr": {
+        "avant": "{grandeur}, secteur non agricole, du 1er juillet 1982 au 18 juillet 1995",
+        "avant_ag": "{grandeur}, secteur agricole, du 1er juillet 1982 au 18 juillet 1995",
+        "depuis": "{grandeur}, deux secteurs, depuis le 19 juillet 1995",
+        "age": "Âge d'ouverture du droit à pension de vieillesse",
+        "anticipe": "Âge du départ avec décote",
+        "decote": "Décote par trimestre d'anticipation",
+        "stage": "Stage",
+        "taux": "Taux de la pension au terme du stage",
+        "majoration": "Majoration par trimestre au-delà du stage",
+        "plafond": "Plafond du taux de la pension",
+        "minimum": "Pension minimale",
+        "allocation": "Durée de cotisation ouvrant l'allocation de vieillesse",
+        "classes_dinars": "Classes de revenus en dinars, du 1er juillet 1982 au 21 octobre 1989",
+        "classes_smig": "Classes de revenus en multiples du SMIG, du 22 octobre 1989 au "
+                        "18 juillet 1995",
+        "classes_1995": "Classes de revenus en multiples du SMIG ou du SMAG, depuis le "
+                        "19 juillet 1995",
+        "cnrps_max": "CNRPS — maximum d'annuités liquidables",
+        "cnrps_part": "CNRPS — pension minimale, en part de la rémunération de l'indice 100",
+        "cnrps_pleine": "CNRPS — annuités de la pension dont le plancher est la rémunération "
+                        "de l'indice 100",
+        "cnrps_prop": "CNRPS — plancher des pensions proportionnelles, par annuité",
+        "cnrps_minimum": "CNRPS — pension minimale garantie, en fraction du SMIG",
+        "cnrps_reversion": "CNRPS — taux de la pension de réversion du conjoint",
+        "cnrps_orphelin": "CNRPS — taux de la pension d'orphelin",
+    },
+    "ar": {
+        "avant": "{grandeur}، القطاع غير الفلاحي، من 1 جويلية 1982 إلى 18 جويلية 1995",
+        "avant_ag": "{grandeur}، القطاع الفلاحي، من 1 جويلية 1982 إلى 18 جويلية 1995",
+        "depuis": "{grandeur}، القطاعان، ابتداءً من 19 جويلية 1995",
+        "age": "سنّ استحقاق جراية الشيخوخة",
+        "anticipe": "سنّ التقاعد المبكّر مع التخفيض في الجراية",
+        "decote": "التخفيض في الجراية عن كلّ ثلاثية",
+        "stage": "مدة الانخراط الدنيا",
+        "taux": "نسبة الجراية عند استيفاء مدة الانخراط الدنيا",
+        "majoration": "الترفيع عن كلّ ثلاثية تفوق مدة الانخراط الدنيا",
+        "plafond": "سقف نسبة الجراية",
+        "minimum": "الجراية الدنيا",
+        "allocation": "مدة الاشتراك التي تفتح الحقّ في منحة الشيخوخة",
+        "classes_dinars": "شرائح الدخل بالدينار، من 1 جويلية 1982 إلى 21 أكتوبر 1989",
+        "classes_smig": "شرائح الدخل بمضاعفات الأجر الأدنى المضمون، من 22 أكتوبر 1989 "
+                        "إلى 18 جويلية 1995",
+        "classes_1995": "شرائح الدخل بمضاعفات الأجر الأدنى المضمون أو الأجر الأدنى الفلاحي "
+                        "المضمون، ابتداءً من 19 جويلية 1995",
+        "cnrps_max": "الصندوق الوطني للتقاعد والحيطة الاجتماعية — الحدّ الأقصى من السنوات "
+                     "القابلة للتصفية",
+        "cnrps_part": "الصندوق الوطني للتقاعد والحيطة الاجتماعية — الجراية الدنيا، كسرًا من "
+                      "المرتب التابع للرقم القياسي 100",
+        "cnrps_pleine": "الصندوق الوطني للتقاعد والحيطة الاجتماعية — عدد السنوات التي "
+                        "يكون حدّها الأدنى المرتب التابع للرقم القياسي 100",
+        "cnrps_prop": "الصندوق الوطني للتقاعد والحيطة الاجتماعية — الحدّ الأدنى للجرايات "
+                      "النسبية، عن كلّ سنة قابلة للتصفية",
+        "cnrps_minimum": "الصندوق الوطني للتقاعد والحيطة الاجتماعية — الجراية الدنيا "
+                         "المضمونة، كسرًا من الأجر الأدنى المضمون",
+        "cnrps_reversion": "الصندوق الوطني للتقاعد والحيطة الاجتماعية — نسبة جراية القرين "
+                           "الباقي على قيد الحياة",
+        "cnrps_orphelin": "الصندوق الوطني للتقاعد والحيطة الاجتماعية — نسبة الجراية الوقتية "
+                          "لليتيم",
+    },
+}
+
+
+def compte(n: int, formes: tuple[str, str, str, str], langue: str) -> str:
+    """Un nombre et son nom compté : « 120 mois », « 40 ثلاثية », « 10 ثلاثيات »."""
+    if langue != "ar":
+        return f"{n} {formes[0] if n == 1 else formes[1]}"
+    if n == 1:
+        return formes[0]
+    if n == 2:
+        return formes[1]
+    return f"{n} {formes[2]}" if 3 <= n <= 10 else f"{n} {formes[3]}"
+
+
+def en_vigueur(serie, date: str):
+    """(date d'effet, valeur) en vigueur à `date` dans une série de `ot.serie_datee`."""
+    retenue = None
+    for d, v, *_ in serie:
+        if d <= date:
+            retenue = (d, v)
+    return retenue
+
+
+def enchaine(segments, date: str):
+    """Valeur en vigueur à `date` le long de séries successives, et son formateur.
+
+    `segments` : [(série, formateur)], de la plus ancienne à la plus récente. Le régime des
+    non-salariés en est l'exemple : l'état de 1982 prend fin, par une valeur nulle, le jour
+    où commence celui du décret n° 95-1166. À date d'effet égale, la valeur non nulle
+    l'emporte — la fin d'un état n'efface pas le début du suivant. Rend (None, None) quand
+    aucune série n'a de valeur : la case restera vide, jamais à zéro.
+    """
+    meilleur = None
+    for serie, formateur in segments:
+        point = en_vigueur(serie, date)
+        if point is None:
+            continue
+        rang = (point[0], point[1] is not None)
+        if meilleur is None or rang >= meilleur[0]:
+            meilleur = (rang, point[1], formateur)
+    if meilleur is None or meilleur[1] is None:
+        return None, None
+    return meilleur[1], meilleur[2]
+
+
+def tableau_enchaine(lectures, colonnes, cles, langue, colonne_periode, colonne_texte):
+    """Tableau daté — une ligne par date d'effet — dont une cellule peut lire plusieurs séries.
+
+    Même forme que `ot.tableau_evolution_datee`, dont il est le complément : colonne
+    « Effet », une colonne par grandeur, colonne « Texte » tirée des clés de citation.
+    `lectures` : [(chemin, libellé du lien)] — chaque paramètre lu, noté au relevé.
+    `colonnes` : [(en-tête, cellule)] où `cellule(séries, date)` rend le texte de la case.
+    """
+    import pandas as pd
+
+    series = {}
+    for chemin, libelle in lectures:
+        serie = ot.serie_datee(chemin)
+        if not serie:
+            print(f"✗ paramètre introuvable ou vide : {chemin}")
+            return None
+        series[chemin] = serie
+        # Sans libellé, le paramètre n'a pas de lien propre : le nœud qui le contient est
+        # noté par la fabrique (les classes de revenus, un lien par barème).
+        if libelle:
+            ot.releve_note(chemin, libelle)
+    dates = sorted({d for serie in series.values() for d, *_ in serie})
+    lignes = []
+    for date in dates:
+        ligne = {colonne_periode: ot.formate_date(date, langue)}
+        for entete, cellule in colonnes:
+            ligne[entete] = cellule(series, date)
+        # Sans clé, le titre de la référence prend la case : `verifie_texte` l'arrête.
+        ligne[colonne_texte] = f"[@{cles[date]}]" if date in cles else date
+        lignes.append(ligne)
+    return pd.DataFrame(lignes)
 
 
 def tableaux(langue):
@@ -306,7 +545,189 @@ def tableaux(langue):
             })
         return pd.DataFrame(lignes)
 
+    lien = LIENS[langue]
+    enchainee = dict(langue=langue, colonne_periode=m["effet"], colonne_texte=m["texte"])
+
+    def coefficient(v):
+        """Un multiple du salaire minimum : « 2/3 », « 1 », « 1,5 », « 18 »."""
+        fraction = Fraction(v).limit_denominator(12)
+        if fraction.denominator == 1:
+            return str(fraction.numerator)
+        if fraction.denominator == 3:
+            return f"{fraction.numerator}/3"
+        return f"{v:g}".replace(".", ",")
+
+    def en_dinars(v):
+        return ot.formate_dinars(v) + (" D" if langue == "fr" else " د")
+
+    def cellule(*segments):
+        """Case d'une grandeur lue le long de séries successives : [(chemin, formateur)]."""
+        def rendre(series, date):
+            valeur, formateur = enchaine([(series[c], f) for c, f in segments], date)
+            return m["vide"] if valeur is None else formateur(valeur)
+        return rendre
+
+    def rtns_vieillesse():
+        """La pension de vieillesse des non-salariés : secteur non agricole, puis régime fusionné.
+
+        Chaque colonne lit deux paramètres : l'état du décret n° 82-1359, qui prend fin le
+        19 juillet 1995, et celui du décret n° 95-1166, qui commence ce jour-là. Le secteur
+        agricole n'a pas de colonne avant 1995 : son taux, son stage et son plafond viennent
+        de la loi n° 81-6 par renvoi, et ne sont pas des grandeurs du décret n° 82-1360.
+        """
+        fichiers = {  # grandeur : (état de 1982, état de 1995)
+            "age": ("age_legal", "age_legal"),
+            "anticipe": ("age_depart_anticipe", "age_depart_anticipe"),
+            "decote": ("decote_par_trimestre", "decote_par_trimestre"),
+            "stage": ("stage_mois", "stage_trimestres"),
+            "taux": ("taux_base", "taux_base"),
+            "majoration": ("majoration_par_trimestre", "majoration_par_trimestre"),
+            "plafond": ("plafond_taux", "plafond_taux"),
+            "minimum": ("plancher_taux", "plancher_taux"),
+        }
+        chemins = {g: (f"{RTNS_NA}/{a}.yaml", f"{RTNS}/{d}.yaml")
+                   for g, (a, d) in fichiers.items()}
+        lectures = []
+        for g, (avant, depuis) in chemins.items():
+            lectures += [(avant, lien["avant"].format(grandeur=lien[g])),
+                         (depuis, lien["depuis"].format(grandeur=lien[g]))]
+
+        def paire(g, formateur_avant, formateur_depuis=None):
+            avant, depuis = chemins[g]
+            return cellule((avant, formateur_avant), (depuis, formateur_depuis or formateur_avant))
+
+        def anticipe(series, date):
+            a = paire("anticipe", age)(series, date)
+            d = paire("decote", taux)(series, date)
+            if m["vide"] in (a, d):
+                return m["vide"]
+            return m["rtns_anticipe_cellule"].format(age=a, taux=d)
+
+        colonnes = [
+            (m["rtns_age"], paire("age", age)),
+            (m["rtns_anticipe"], anticipe),
+            (m["rtns_stage"], paire("stage", lambda v: compte(int(v), m["mois"], langue),
+                                    lambda v: compte(int(v), m["trimestres"], langue))),
+            (m["rtns_taux"], paire("taux", taux)),
+            (m["rtns_majoration"], paire("majoration", taux)),
+            (m["plafond"], paire("plafond", taux)),
+            # Moitié du SMIG en 1982, trente pour cent du salaire minimum du secteur depuis
+            # 1995 : le texte de 1995 ne l'écrit pas en fraction.
+            (m["rtns_minimum"], paire("minimum", part_smig,
+                                      lambda v: f"{ot.formate_taux(v)} {m['smig_ou_smag']}")),
+        ]
+        return tableau_enchaine(lectures, colonnes, CLES_RTNS_VIEILLESSE, **enchainee)
+
+    def rtns_agricole():
+        """Le secteur agricole : l'âge, puis l'allocation de vieillesse, abrogée en 1995.
+
+        L'allocation n'a pas de successeur dans le régime fusionné, qui sert aux carrières
+        inférieures au stage un versement unique (décret n° 95-1166, art. 28) : sa case de
+        1995 reste vide, et la ligne « Source : » du chapitre le dit.
+        """
+        age_ag, age_95 = f"{RTNS_AG}/age_legal.yaml", f"{RTNS}/age_legal.yaml"
+        allocation = f"{RTNS_AG}/allocation_vieillesse_trimestres.yaml"
+        lectures = [
+            (age_ag, lien["avant_ag"].format(grandeur=lien["age"])),
+            (age_95, lien["depuis"].format(grandeur=lien["age"])),
+            (allocation, lien["avant_ag"].format(grandeur=lien["allocation"])),
+        ]
+        colonnes = [
+            (m["rtns_age"], cellule((age_ag, age), (age_95, age))),
+            (m["rtns_allocation"],
+             cellule((allocation, lambda v: compte(int(v), m["trimestres"], langue)))),
+        ]
+        return tableau_enchaine(lectures, colonnes, CLES_RTNS_AGRICOLE, **enchainee)
+
+    def rtns_classes():
+        """Les classes de revenus : six en dinars (1982), neuf en SMIG (1989), dix (1995).
+
+        Une colonne par rang de classe, qui lit jusqu'à trois barèmes successifs ; la
+        colonne « Assiette » dit lequel est en vigueur. Une classe qui n'existe pas encore
+        reste vide. Un lien par barème, et non par classe : chaque nœud se lit en un
+        tableau.
+        """
+        noeuds = (
+            (f"{RTNS_NA}/classes_dinars", 6, en_dinars, "assiette_dinars", "classes_dinars"),
+            (f"{RTNS_NA}/classes_smig", 9, coefficient, "assiette_smig", "classes_smig"),
+            (f"{RTNS}/revenu_reference/classes", 10, coefficient, "assiette_smig_smag",
+             "classes_1995"),
+        )
+        lectures = []
+        for noeud, nombre, _f, _a, cle in noeuds:
+            ot.releve_note(noeud, lien[cle])
+            lectures += [(f"{noeud}/classe_{k}.yaml", None) for k in range(1, nombre + 1)]
+
+        def assiette(series, date):
+            valeur, cle = enchaine(
+                [(series[f"{n}/classe_1.yaml"], a) for n, _k, _f, a, _c in noeuds], date)
+            return m["vide"] if valeur is None else m[cle]
+
+        colonnes = [(m["assiette"], assiette)]
+        for k in range(1, 11):
+            segments = [(f"{n}/classe_{k}.yaml", f) for n, nombre, f, _a, _c in noeuds
+                        if k <= nombre]
+            colonnes.append((m["classe"].format(k=k), cellule(*segments)))
+        return tableau_enchaine(lectures, colonnes, CLES_RTNS_CLASSES, **enchainee)
+
+    def cnrps_1959_1985():
+        """Les lignes chiffrées du régime des pensions civiles, de 1959 à 1985.
+
+        Le plancher se dit en règle, non en montant : la rémunération de l'indice 100 dépend
+        de la grille des traitements, qui n'est pas ici. Il se compose de trois paramètres
+        jusqu'au 30 avril 1981 — la part de cette rémunération, le nombre d'annuités de la
+        pension pleine, le taux par annuité des pensions proportionnelles —, puis de la
+        fraction du SMIG.
+        """
+        plafond = f"{CNRPS}/plaf_taux_pension.yaml"
+        maximum = f"{CNRPS}/maximum_annuites_liquidables.yaml"
+        part = f"{CNRPS}/pension_minimale/indice_100/part_indice_100.yaml"
+        pleine = f"{CNRPS}/pension_minimale/indice_100/annuites_pension_pleine.yaml"
+        proportionnelle = (f"{CNRPS}/pension_minimale/indice_100/"
+                           "taux_par_annuite_proportionnelle.yaml")
+        minimum = f"{CNRPS}/pension_minimale/minimum_garanti.yaml"
+        conjoint = f"{CNRPS}/survivants/taux_conjoint.yaml"
+        orphelin = f"{CNRPS}/survivants/taux_orphelin.yaml"
+        lectures = [
+            (plafond, LIBELLES_SERIES[langue]["cnrps_plafond"]),
+            (maximum, lien["cnrps_max"]),
+            (part, lien["cnrps_part"]),
+            (pleine, lien["cnrps_pleine"]),
+            (proportionnelle, lien["cnrps_prop"]),
+            (minimum, lien["cnrps_minimum"]),
+            (conjoint, lien["cnrps_reversion"]),
+            (orphelin, lien["cnrps_orphelin"]),
+        ]
+
+        def plancher(series, date):
+            point = en_vigueur(series[part], date)
+            if point is None or point[1] is None:
+                return cellule((minimum, part_smig))(series, date)
+            if point[0] not in BASE_INDICE_100:
+                raise ValueError(f"{part} : date d'effet {point[0]} sans base connue "
+                                 f"(BASE_INDICE_100)")
+            base = m["indice_100"][BASE_INDICE_100[point[0]]]
+            texte = base if point[1] == 1 else m["des"].format(taux=taux(point[1]), base=base)
+            n, _ = enchaine([(series[pleine], None)], date)
+            t, _ = enchaine([(series[proportionnelle], None)], date)
+            if n is None or t is None:
+                return texte
+            return m["plancher_1959"].format(pleine=texte, n=int(n), taux=taux(t))
+
+        colonnes = [
+            (m["plafond"], cellule((plafond, taux))),
+            (m["max_annuites"], cellule((maximum, lambda v: str(int(v))))),
+            (m["plancher"], plancher),
+            (m["reversion"], cellule((conjoint, taux))),
+            (m["orphelin"], cellule((orphelin, taux))),
+        ]
+        return tableau_enchaine(lectures, colonnes, CLES_CNRPS_1959_1985, **enchainee)
+
     return {
+        "cnrps_1959_1985.md": cnrps_1959_1985,
+        "rtns_vieillesse.md": rtns_vieillesse,
+        "rtns_agricole.md": rtns_agricole,
+        "rtns_classes.md": rtns_classes,
         "cnrps_ages.md": ages,
         # Cinq valeurs attachées à cinq positions statutaires, et deux dates. Le tableau
         # est orienté comme celui des âges civils — une ligne par date d'effet — plutôt que

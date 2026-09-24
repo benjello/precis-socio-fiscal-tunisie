@@ -73,23 +73,30 @@ Ces valeurs sont celles du texte de 1959 [@loi59-18, art. 20 et 22] ; $\bar\tau$
 
 Sources : @loi59-18, art. 9, 20 à 22, 31 et 49 ; @loi81-70, art. 4-5 ; @loi85-12, art. 22, 24, 35, 36, 38, 39, 42, 43 et 45 ; @decretloi70-1, art. 1 (art. 21 et 22) et art. 2 ; @loi73-71, art. 2, 5 et 8 ; @loi80-24, art. 1 et 6. Le décompte semestriel et le maximum de 40 annuités de l'article 20 ne sont abrogés par aucun des textes modificatifs identifiés : leur maintien jusqu'en 1985 se déduit de ce silence, aucun texte ne le reprend expressément.
 
-<!-- Tableau tenu à la main, et non engendré (réexaminé le 23/09/2026, openfisca-tunisia 0.106).
-Quatre lignes sur dix sont des règles, non des valeurs : durée minimale de services, décompte des
-services, rémunération de liquidation, carrière trop courte. Des six lignes chiffrées, deux
-seulement sont datées et sourcées depuis 1959 : l'âge du cadre commun (`age_legal/civil/
-cadre_commun`, 1er avril 1959) et le plafond du taux (`plaf_taux_pension` : 60 %, 80 % au 1er
-juillet 1970 et au 1er mai 1981, 90 %). Manquent : le taux par annuité de 1959, que
-`bareme_annuite` date du 1er février 1959 et non du 1er avril (effet de la loi n° 59-18, art. 52) ;
-le plancher avant 1981 (indice 100, 4 % par annuité, 60 % de l'indice 100 en 1970), que
-`pension_minimale/minimum_garanti` ne porte qu'à partir du 1er mai 1981 et ne peut porter tel
-quel, n'étant pas une fraction du SMIG ; la réversion de 50 % de 1959 (`survivants/taux_conjoint`
-commence en 1981) ; la pension d'orphelin de 10 % de 1959 (`survivants/taux_orphelin` commence
-en 1985). Engendrer la moitié chiffrée scinderait un tableau qui se lit d'un tenant. TODO
-(rédacteur) : n'y revenir qu'une fois ces états versés (docs/notes/cnrps-avant-1985.md, § 10). -->
+<!-- Tableau tenu à la main (réexaminé le 24/09/2026, openfisca-tunisia 0.111). Ses lignes
+chiffrées — plafond du taux et maximum d'annuités, plancher, réversion, pension d'orphelin — sont
+désormais engendrées, datées depuis le 1er avril 1959, au tableau qui suit
+(tbl-cnrps-1959-1985-chiffres). Il reste à la main parce que quatre de ses dix lignes sont des
+règles et non des valeurs — durée minimale de services, décompte des services, rémunération de
+liquidation, carrière trop courte — et qu'il se lit d'un tenant, 1959, modifications, 1985. Deux
+lignes chiffrées ne sont pas reprises au tableau engendré, qui les laisserait en double : l'âge du
+cadre commun, engendré au tbl-cnrps-ages depuis 1959, et le taux de 2 % par annuité, que porte le
+barème des annuités depuis le 1er avril 1959 (fig-taux-liquidation). -->
+
+Le plafond et le maximum d'annuités, le plancher, la réversion et la pension d'orphelin se lisent, date par date, dans le @tbl-cnrps-1959-1985-chiffres ; l'âge du cadre commun figure au @tbl-cnrps-ages.
+
+```{python}
+#| echo: false
+#| output: asis
+table("cnrps_1959_1985",
+      "Plafond, plancher et pensions de survivants du régime des pensions civiles, de 1959 à 1985",
+      "tbl-cnrps-1959-1985-chiffres")
+```
+
+Sources : @loi59-18, art. 20, § III, 22, § II, 31 et 52 ; @loi59-100, art. 1 ; @decretloi70-1, art. 1 et 2 ; @loi81-70, art. 4-5 ; @loi85-12, art. 35, 38, 39, 43 et 45. Le plancher se rapporte, jusqu'en 1981, à la rémunération afférente à l'indice 100 : le traitement soumis à retenue en 1959, les émoluments globaux indiciaires à compter du 1^er^ juillet 1970. La loi n° 85-12 n'énonce plus de maximum d'annuités, d'où la case vide de 1985 : la pension n'est plus bornée que par le plafond de 90 %, atteint au terme de quarante années [@loi85-12, art. 38]. De 1959 à 1981, le taux de réversion est celui de la veuve ; le veuf n'y a droit qu'à des conditions propres d'incapacité et de ressources [@loi59-18, art. 31 et 37].
 
 <!-- TODO (documentaliste) : la loi n° 59-18 et sa chaîne modificative sont lues
-(docs/notes/cnrps-avant-1985.md) ; les tableaux engendrés de ce chapitre commencent pourtant en
-1981 ou en 1985. Les décrets de classement en partie active (art. 10) sont lus
+(docs/notes/cnrps-avant-1985.md). Les décrets de classement en partie active (art. 10) sont lus
 (docs/notes/cnrps-partie-active.md) ; reste à établir l'âge de ces emplois de 1959 à 1967, et
 celui des douanes jusqu'en 1981, aucun texte n'ayant été retrouvé ; et à dire si la bonification
 de l'art. 11 § II compte pour la condition de trente ans de services effectifs de l'art. 9, ce

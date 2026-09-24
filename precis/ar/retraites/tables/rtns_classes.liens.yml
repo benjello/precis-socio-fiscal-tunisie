@@ -1,0 +1,11 @@
+- libelle: شرائح الدخل بالدينار، من 1 جويلية 1982 إلى 21 أكتوبر 1989
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/classes_dinars
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.avant_1995.non_agricole.classes_dinars/table/
+- libelle: شرائح الدخل بمضاعفات الأجر الأدنى المضمون، من 22 أكتوبر 1989 إلى 18 جويلية
+    1995
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/classes_smig
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.avant_1995.non_agricole.classes_smig/table/
+- libelle: شرائح الدخل بمضاعفات الأجر الأدنى المضمون أو الأجر الأدنى الفلاحي المضمون،
+    ابتداءً من 19 جويلية 1995
+  parametre: parameters/retraite/rtns/revenu_reference/classes
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.revenu_reference.classes/table/

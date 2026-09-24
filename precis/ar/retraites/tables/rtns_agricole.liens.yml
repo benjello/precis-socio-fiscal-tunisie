@@ -1,0 +1,11 @@
+- libelle: سنّ استحقاق جراية الشيخوخة، القطاع الفلاحي، من 1 جويلية 1982 إلى 18 جويلية
+    1995
+  parametre: parameters/retraite/rtns/avant_1995/agricole/age_legal.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.avant_1995.agricole.age_legal/table/
+- libelle: سنّ استحقاق جراية الشيخوخة، القطاعان، ابتداءً من 19 جويلية 1995
+  parametre: parameters/retraite/rtns/age_legal.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.age_legal/table/
+- libelle: مدة الاشتراك التي تفتح الحقّ في منحة الشيخوخة، القطاع الفلاحي، من 1 جويلية
+    1982 إلى 18 جويلية 1995
+  parametre: parameters/retraite/rtns/avant_1995/agricole/allocation_vieillesse_trimestres.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.avant_1995.agricole.allocation_vieillesse_trimestres/table/

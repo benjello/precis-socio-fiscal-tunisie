@@ -1,0 +1,59 @@
+- libelle: Âge d'ouverture du droit à pension de vieillesse, secteur non agricole,
+    du 1er juillet 1982 au 18 juillet 1995
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/age_legal.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.avant_1995.non_agricole.age_legal/table/
+- libelle: Âge d'ouverture du droit à pension de vieillesse, deux secteurs, depuis
+    le 19 juillet 1995
+  parametre: parameters/retraite/rtns/age_legal.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.age_legal/table/
+- libelle: Âge du départ avec décote, secteur non agricole, du 1er juillet 1982 au
+    18 juillet 1995
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/age_depart_anticipe.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.avant_1995.non_agricole.age_depart_anticipe/table/
+- libelle: Âge du départ avec décote, deux secteurs, depuis le 19 juillet 1995
+  parametre: parameters/retraite/rtns/age_depart_anticipe.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.age_depart_anticipe/table/
+- libelle: Décote par trimestre d'anticipation, secteur non agricole, du 1er juillet
+    1982 au 18 juillet 1995
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/decote_par_trimestre.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.avant_1995.non_agricole.decote_par_trimestre/table/
+- libelle: Décote par trimestre d'anticipation, deux secteurs, depuis le 19 juillet
+    1995
+  parametre: parameters/retraite/rtns/decote_par_trimestre.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.decote_par_trimestre/table/
+- libelle: Stage, secteur non agricole, du 1er juillet 1982 au 18 juillet 1995
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/stage_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.avant_1995.non_agricole.stage_mois/table/
+- libelle: Stage, deux secteurs, depuis le 19 juillet 1995
+  parametre: parameters/retraite/rtns/stage_trimestres.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.stage_trimestres/table/
+- libelle: Taux de la pension au terme du stage, secteur non agricole, du 1er juillet
+    1982 au 18 juillet 1995
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/taux_base.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.avant_1995.non_agricole.taux_base/table/
+- libelle: Taux de la pension au terme du stage, deux secteurs, depuis le 19 juillet
+    1995
+  parametre: parameters/retraite/rtns/taux_base.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.taux_base/table/
+- libelle: Majoration par trimestre au-delà du stage, secteur non agricole, du 1er
+    juillet 1982 au 18 juillet 1995
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/majoration_par_trimestre.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.avant_1995.non_agricole.majoration_par_trimestre/table/
+- libelle: Majoration par trimestre au-delà du stage, deux secteurs, depuis le 19
+    juillet 1995
+  parametre: parameters/retraite/rtns/majoration_par_trimestre.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.majoration_par_trimestre/table/
+- libelle: Plafond du taux de la pension, secteur non agricole, du 1er juillet 1982
+    au 18 juillet 1995
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/plafond_taux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.avant_1995.non_agricole.plafond_taux/table/
+- libelle: Plafond du taux de la pension, deux secteurs, depuis le 19 juillet 1995
+  parametre: parameters/retraite/rtns/plafond_taux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.plafond_taux/table/
+- libelle: Pension minimale, secteur non agricole, du 1er juillet 1982 au 18 juillet
+    1995
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/plancher_taux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.avant_1995.non_agricole.plancher_taux/table/
+- libelle: Pension minimale, deux secteurs, depuis le 19 juillet 1995
+  parametre: parameters/retraite/rtns/plancher_taux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtns.plancher_taux/table/

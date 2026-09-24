@@ -1,0 +1,57 @@
+- libelle: سنّ استحقاق جراية الشيخوخة، القطاع غير الفلاحي، من 1 جويلية 1982 إلى 18
+    جويلية 1995
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/age_legal.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.avant_1995.non_agricole.age_legal/table/
+- libelle: سنّ استحقاق جراية الشيخوخة، القطاعان، ابتداءً من 19 جويلية 1995
+  parametre: parameters/retraite/rtns/age_legal.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.age_legal/table/
+- libelle: سنّ التقاعد المبكّر مع التخفيض في الجراية، القطاع غير الفلاحي، من 1 جويلية
+    1982 إلى 18 جويلية 1995
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/age_depart_anticipe.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.avant_1995.non_agricole.age_depart_anticipe/table/
+- libelle: سنّ التقاعد المبكّر مع التخفيض في الجراية، القطاعان، ابتداءً من 19 جويلية
+    1995
+  parametre: parameters/retraite/rtns/age_depart_anticipe.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.age_depart_anticipe/table/
+- libelle: التخفيض في الجراية عن كلّ ثلاثية، القطاع غير الفلاحي، من 1 جويلية 1982
+    إلى 18 جويلية 1995
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/decote_par_trimestre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.avant_1995.non_agricole.decote_par_trimestre/table/
+- libelle: التخفيض في الجراية عن كلّ ثلاثية، القطاعان، ابتداءً من 19 جويلية 1995
+  parametre: parameters/retraite/rtns/decote_par_trimestre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.decote_par_trimestre/table/
+- libelle: مدة الانخراط الدنيا، القطاع غير الفلاحي، من 1 جويلية 1982 إلى 18 جويلية
+    1995
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/stage_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.avant_1995.non_agricole.stage_mois/table/
+- libelle: مدة الانخراط الدنيا، القطاعان، ابتداءً من 19 جويلية 1995
+  parametre: parameters/retraite/rtns/stage_trimestres.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.stage_trimestres/table/
+- libelle: نسبة الجراية عند استيفاء مدة الانخراط الدنيا، القطاع غير الفلاحي، من 1
+    جويلية 1982 إلى 18 جويلية 1995
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/taux_base.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.avant_1995.non_agricole.taux_base/table/
+- libelle: نسبة الجراية عند استيفاء مدة الانخراط الدنيا، القطاعان، ابتداءً من 19 جويلية
+    1995
+  parametre: parameters/retraite/rtns/taux_base.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.taux_base/table/
+- libelle: الترفيع عن كلّ ثلاثية تفوق مدة الانخراط الدنيا، القطاع غير الفلاحي، من
+    1 جويلية 1982 إلى 18 جويلية 1995
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/majoration_par_trimestre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.avant_1995.non_agricole.majoration_par_trimestre/table/
+- libelle: الترفيع عن كلّ ثلاثية تفوق مدة الانخراط الدنيا، القطاعان، ابتداءً من 19
+    جويلية 1995
+  parametre: parameters/retraite/rtns/majoration_par_trimestre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.majoration_par_trimestre/table/
+- libelle: سقف نسبة الجراية، القطاع غير الفلاحي، من 1 جويلية 1982 إلى 18 جويلية 1995
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/plafond_taux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.avant_1995.non_agricole.plafond_taux/table/
+- libelle: سقف نسبة الجراية، القطاعان، ابتداءً من 19 جويلية 1995
+  parametre: parameters/retraite/rtns/plafond_taux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.plafond_taux/table/
+- libelle: الجراية الدنيا، القطاع غير الفلاحي، من 1 جويلية 1982 إلى 18 جويلية 1995
+  parametre: parameters/retraite/rtns/avant_1995/non_agricole/plancher_taux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.avant_1995.non_agricole.plancher_taux/table/
+- libelle: الجراية الدنيا، القطاعان، ابتداءً من 19 جويلية 1995
+  parametre: parameters/retraite/rtns/plancher_taux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.plancher_taux/table/
