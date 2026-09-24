@@ -21,7 +21,7 @@ def table(nom, legende, label):
     print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label))
 ```
 
-Ce livre traite du **prélèvement** qui finance la sécurité sociale : qui cotise, sur quelle assiette, à quel taux, et pour financer quelle branche. Il pose d'abord le cadre commun à tous les régimes — une présentation générale (@sec-cot-presentation), l'assiette (@sec-cot-assiette), le taux global et le coin social (@sec-cot-taux-global) —, puis le prend branche par branche, des origines à l'état actuel (@sec-cot-branches), avant d'exposer chaque régime pour lui-même.
+Ce livre traite du **prélèvement** qui finance la sécurité sociale : qui cotise, sur quelle assiette, à quel taux, et pour financer quelle branche. Il pose d'abord le cadre commun à tous les régimes — une présentation générale (@sec-cot-presentation), l'assiette (@sec-cot-assiette), le taux global et le coin social (@sec-cot-taux-global) —, puis le prend branche par branche, des origines à l'état actuel (@sec-cot-branches), avant de dire ce qui distingue les régimes (@sec-cot-regimes) ; le recouvrement, le rendement des cotisations et une vue d'ensemble concluent (@sec-cot-bilan).
 
 ::: {.callout-note title="Trois conventions de lecture, retenues dans tout ce qui suit"}
 **1. Le partage entre secteur privé et secteur public traverse tout le livre.** Ce n'est pas une commodité : il commande la caisse compétente — la [Caisse nationale de sécurité sociale](#g-cnss) d'un côté, la [Caisse nationale de retraite et de prévoyance sociale](#g-cnrps) de l'autre —, le texte applicable et l'ampleur du prélèvement, qui va du simple au double d'un régime à l'autre. Là où les deux secteurs sont traités ensemble, le secteur privé vient en premier.
@@ -43,11 +43,11 @@ Cette dernière est traitée dans le livre « Fiscalité », où son assiette la
 
 Le système compte **huit régimes dans le secteur privé** et trois ensembles dans le secteur public.
 
-Au privé : le régime des **salariés non agricoles** — le régime général, celui qui couvre la majorité des salariés —, celui des **salariés agricoles** et sa variante **améliorée**, celui des **travailleurs non salariés**, celui des **artistes, créateurs et intellectuels**, celui des **travailleurs à faibles revenus**, celui des **étudiants**, et celui des **Tunisiens à l'étranger**.
+Au privé : le régime des **salariés non agricoles** — le régime général, celui qui couvre la majorité des salariés —, celui des **salariés agricoles** et sa variante **améliorée**, celui des **travailleurs non salariés**, celui des **artistes, créateurs et intellectuels**, celui des **travailleurs à faibles revenus**, celui des **étudiants**, et celui des **Tunisiens à l'étranger**. S'y ajoute, depuis 2024, le régime des **travailleuses agricoles** (@sec-cot-travailleuses-agricoles).
 
 Au public : les **salariés affiliés à la CNRPS**, les **pensionnés** de cette même caisse — qui cotisent sur leur pension —, et un régime spécial pour les **membres du gouvernement, les députés et les gouverneurs**.
 
-Chacun de ces régimes est présenté pour lui-même plus loin : le régime général (@sec-cot-rsna), les autres régimes du secteur privé (@sec-cot-autres-prives), puis ceux du secteur public (@sec-cot-public).
+Chacun de ces régimes est présenté pour lui-même en fin de livre, ceux du secteur privé (@sec-cot-prive) puis ceux du secteur public (@sec-cot-public).
 
 ### Une architecture en deux étages {#sec-cot-deux-etages}
 
@@ -218,7 +218,7 @@ Les quatre premières lignes du tableau ci-dessus sont établies par des textes 
 Le partage employeur/salarié suit par ailleurs, dans presque toutes les branches, la clé 13/5 de l'article 41 appliquée mécaniquement. Deux postes s'en écartent — la quote-part pensions et les prestations familiales —, d'un vingt-huitième de point chacun et en sens opposés, de sorte que leur agrégat respecte la clé et que les totaux de 16,00 % et 7,75 % sont inchangés. L'origine de ce déplacement n'est pas établie.
 :::
 
-Les autres régimes du secteur privé répartissent leur taux global de la même façon, par leur texte fondateur ou par un décret d'application, et laissent comme le régime général une partie de la ventilation sans texte ; chaque régime est présenté avec la sienne (@sec-cot-autres-prives).
+Les autres régimes du secteur privé répartissent leur taux global de la même façon, par leur texte fondateur ou par un décret d'application, et laissent comme le régime général une partie de la ventilation sans texte ; chaque régime est présenté avec la sienne (@sec-cot-prive).
 
 ### Le coin social par régime {#sec-cot-coin}
 
@@ -399,7 +399,7 @@ La maladie entre dans le système avec les « assurances sociales » de la loi n
 
 : Part des assurances sociales dans le taux global de chaque régime privé, et part maladie qu'en retient le décret n° 2007-1406 {#tbl-assurances-sociales}
 
-Dans chaque régime, seule la part maladie est attestée par un texte, et elle ne l'est que depuis 2007 : le décret n° 2007-1406 l'énonce pour calculer le supplément qu'il appelle [@decret2007-1406, art. 6 à 11]. Le partage du reste du bloc entre maternité et décès n'est fixé par aucun texte identifié ; chaque régime le signale avec sa ventilation (@sec-cot-autres-prives). Dans le régime général, les indemnités de maladie et de maternité et le décès reçoivent 0,85 et 0,65 point du taux global, sans texte identifié non plus (@tbl-ventilation-rsna).
+Dans chaque régime, seule la part maladie est attestée par un texte, et elle ne l'est que depuis 2007 : le décret n° 2007-1406 l'énonce pour calculer le supplément qu'il appelle [@decret2007-1406, art. 6 à 11]. Le partage du reste du bloc entre maternité et décès n'est fixé par aucun texte identifié ; chaque régime le signale avec sa ventilation (@sec-cot-prive). Dans le régime général, les indemnités de maladie et de maternité et le décès reçoivent 0,85 et 0,65 point du taux global, sans texte identifié non plus (@tbl-ventilation-rsna).
 
 #### Le secteur public {#sec-cot-maladie-public}
 
@@ -522,9 +522,15 @@ Enfin, **le taux de 9 % n'a aucune source publiée**. Le règlement fixe un taux
 
 Le droit que ce régime ouvre relève du livre « Retraites ».
 
-## Le régime général : les salariés non agricoles {#sec-cot-rsna}
+## Ce qui distingue les régimes {#sec-cot-regimes}
 
-### La création
+Les branches ont été exposées une à une ; cette partie prend les régimes un à un, par des fiches courtes qui ne gardent que ce qui leur est propre — qui cotise, qui paie, sur quelle assiette, ce qui déroge. Les taux par branche de chaque régime figurent dans son tableau ; leur histoire, dans la partie consacrée à chaque branche (@sec-cot-branches), l'assiette dans la partie qui lui est consacrée (@sec-cot-assiette).
+
+### Le secteur privé (CNSS) {#sec-cot-prive}
+
+Le prélèvement total de chaque régime est comparé plus haut (@tbl-coin-regimes). Les fiches qui suivent prennent chaque régime pour lui-même : son texte fondateur et ce qu'il institue, qui paie, ce qui le distingue, le tableau de ses cotisations par branche, et le renvoi au livre « Prestations sociales » pour les droits qu'il ouvre.
+
+#### Les salariés non agricoles, régime de référence {#sec-cot-rsna}
 
 Le régime général naît de la **loi n° 60-30 du 14 décembre 1960, relative à l'organisation des régimes de sécurité sociale** [@loi60-30], publiée au *Journal officiel* des 13-16 décembre 1960. Elle institue à la fois les régimes de sécurité sociale du secteur non agricole et la caisse chargée de les servir.
 
@@ -533,8 +539,6 @@ Son **article 34** fixe le champ d'affiliation, et le fait par énumération de 
 Une précision s'impose sur la caisse elle-même, parce que la confusion est courante : la loi n° 86-86 du 1^er^ septembre 1986 **ne crée pas** la Caisse nationale de sécurité sociale. Son article 2 prévoit que les organismes qu'elle institue « se substituent » à la caisse « instituée par la loi n° 60-30 du 14 décembre 1960 » — architecture qui n'est jamais entrée en vigueur. La caisse est bien celle de 1960.
 
 Les trois blocs dont la somme forme son taux (@tbl-somme-trois-textes) ont chacun leur histoire : celle du taux global de l'article 41 est exposée plus haut (@sec-cot-taux-unique), celle de la cotisation propre et de la quote-part du régime de pensions avec cette branche (@sec-cot-pensions-prive), celle du fonds spécial de l'État avec les cotisations liées à l'emploi (@sec-cot-fonds-special). L'assurance maladie, la perte d'emploi et la retraite complémentaire, qui s'y ajoutent, sont exposées avec leur branche (@sec-cot-maladie-2004 ; @sec-cot-perte-emploi ; @sec-cot-complementaire).
-
-### La ventilation par branche
 
 ```{python}
 #| echo: false
@@ -557,11 +561,7 @@ le tableau engendré à la main. -->
 
 Sa lecture, et celle de la ventilation du taux global qui le sous-tend, sont exposées plus haut (@sec-cot-ventilation).
 
-## Les autres régimes du secteur privé {#sec-cot-autres-prives}
-
-Le prélèvement total de chacun est comparé à celui du régime général plus haut (@tbl-coin-regimes). Les sections qui suivent prennent chaque régime pour lui-même : son texte fondateur et ce qu'il institue, l'histoire de ses taux, et le renvoi au livre « Prestations sociales » pour les droits qu'il ouvre.
-
-### Les salariés agricoles {#sec-cot-rsa}
+#### Les salariés agricoles {#sec-cot-rsa}
 
 Le régime des salariés agricoles est institué par la **loi n° 81-6 du 12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole** [@loi81-6]. Son article premier crée « un régime de sécurité sociale au profit des travailleurs salariés et des coopérateurs de l'agriculture », couvrant les assurances sociales — maladie, maternité, décès — et les pensions de vieillesse, d'invalidité et de survivants. Les bénéficiaires sont les salariés et coopérateurs exerçant une activité considérée comme agricole au sens de l'article 3 du code du travail. La gestion revient à la CNSS, l'administration du régime de pensions étant déléguée à la CAVIS. La loi énonce sa date d'effet : elle « entrera en vigueur le 1^er^ janvier 1981 » [@loi81-6, art. 88], soit avant sa signature du 12 février et sa publication du 13 février 1981.
 
@@ -585,7 +585,7 @@ Le décret n° 81-224 s'arrête à une ligne unique, « assurances sociales mala
 
 Le régime des salariés agricoles ne comporte **pas de branche « prestations familiales »** : c'est la ligne de partage avec le régime amélioré. Pour l'ensemble des droits ouverts, voir le livre « Prestations sociales ».
 
-### Les salariés agricoles, régime amélioré {#sec-cot-rsaa}
+#### Les salariés agricoles, régime amélioré {#sec-cot-rsaa}
 
 Le régime amélioré n'est pas un régime distinct mais un **titre III ajouté à la loi n° 81-6** par la **loi n° 89-73 du 2 septembre 1989** [@loi89-73], intitulé « Dispositions particulières applicables aux salariés employés par certaines entreprises agricoles ». Son article 86 nouveau en fixe le champ : il s'applique obligatoirement aux coopérateurs salariés des entreprises agricoles constituées en société, des sociétés de mise en valeur, des coopératives agricoles et des personnes morales agricoles non assujetties à un régime couvrant les mêmes risques ; à tous les salariés des autres exploitants agricoles employant au moins trente salariés permanents ; ainsi qu'aux pêcheurs employés sur des bateaux de jauge brute inférieure à trente tonneaux, aux pêcheurs indépendants et aux petits armateurs. L'adhésion doit couvrir l'ensemble des salariés de l'entreprise, et la gestion financière est distincte de celle du régime de base. La loi énonce sa date d'effet : le **1^er^ octobre 1989**.
 
@@ -602,16 +602,14 @@ table("branches_rsaa",
 L'écart entre 15 % et les 19,47 % en vigueur tient là encore au supplément d'assurance maladie, appelé par l'article 8 du décret n° 2007-1406 en quatre paliers de 2007 à 2010, à partir d'une part maladie de 2,28 % prélevée sur le taux global (@tbl-amu-regimes). Les travailleurs exerçant pour leur propre compte supportent la totalité du supplément.
 
 ::: {.callout-warning title="La répartition des 15 % entre les branches n'est pas établie pour l'ensemble du régime"}
-La ventilation des 15 % entre les cinq branches que présente le tableau ci-dessus n'est établie par aucun texte identifié pour l'ensemble du régime : l'article 90 de la loi n° 81-6 la renvoie expressément à un décret, qui n'est pas identifié ici. Seule la part maladie, 2,28 %, est attestée — par le décret n° 2007-1406, qui la vise pour calculer le supplément.
+La ventilation des 15 % entre les cinq branches que présente le tableau ci-dessus n'est établie par aucun texte identifié pour l'ensemble du régime : l'article 90 de la loi n° 81-6 la renvoie expressément à un décret, qui n'est pas identifié ici. Seule la part maladie, 2,28 %, est attestée — par le décret n° 2007-1406, qui la vise pour calculer le supplément. Pour les pêcheurs indépendants et les petits armateurs, le décret n° 90-548 répartit les 15 % : 7,5 % pour les pensions, 4,5 % pour les allocations familiales, 3 % pour les assurances sociales [@decret90-548, art. 1-2].
 
 <!-- RECHERCHE r-cotis-rsaa-art90 : décret de répartition de l'art. 90 de la loi n° 81-6 (voir docs/recherches.yml) -->
-
-<!-- TODO (rédacteur) : le décret n° 90-548 répartit les 15 % pour les pêcheurs indépendants et les petits armateurs (7,5 % pensions, 4,5 % allocations familiales, 3 % assurances sociales ; docs/notes/cnss-autres-regimes.md, § 4 ; livre « Retraites », @sec-rsaa) : le mentionner ici. -->
 :::
 
 Ce qui distingue ce régime du régime agricole de base, du côté des droits, est l'ouverture des **allocations familiales**, servies du chef de l'assuré pour les trois premiers enfants aux conditions et aux taux du régime général (articles 91 et 92). Le livre « Prestations sociales » les traite.
 
-### Les travailleurs non salariés {#sec-cot-rtns}
+#### Les travailleurs non salariés {#sec-cot-rtns}
 
 Le régime des travailleurs non salariés est institué par le **décret n° 95-1166 du 3 juillet 1995, relatif à la sécurité sociale des travailleurs non salariés dans les secteurs agricole et non agricole** [@decret95-1166]. Il procède par extension : son article premier rend applicables aux non-salariés une partie des articles de la loi n° 60-30 et du décret n° 74-499. Est considérée comme travailleur non salarié « toute personne exerçant à titre principal une activité professionnelle, quelle que soit sa nature, pour son propre compte ou en qualité de mandataire », les artisans titulaires d'une carte professionnelle et les métayers étant expressément visés. L'affiliation est obligatoire dans le mois, et n'est plus admise au-delà de cinquante-cinq ans révolus sauf à justifier de quarante trimestres validés. Le décret abroge les deux régimes prédécesseurs, institués par les décrets n° 82-1359 et n° 82-1360 du 21 octobre 1982. Il ne comporte pas de clause d'entrée en vigueur.
 
@@ -633,7 +631,7 @@ Le partage des 4 % d'assurances sociales entre maladie, maternité et décès n'
 
 Les droits ouverts par ce régime relèvent du livre « Prestations sociales ».
 
-### Les artistes, créateurs et intellectuels {#sec-cot-raci}
+#### Les artistes, créateurs et intellectuels {#sec-cot-raci}
 
 Le régime des artistes est institué par la **loi n° 2002-104 du 30 décembre 2002, relative au régime de sécurité sociale des artistes, des créateurs et des intellectuels** [@loi2002-104], publiée le 31 décembre 2002. Son article premier crée « un régime spécial de sécurité sociale au profit des artistes, des créateurs et des intellectuels comportant les assurances sociales, les pensions de vieillesse, d'invalidité et de survivants et les actions sanitaires et sociales ». L'affiliation suppose trois conditions cumulatives : prouver son appartenance au secteur culturel ou l'exercice permanent d'une activité artistique ou culturelle, sur la base d'une pièce délivrée par les services du ministère chargé de la culture ; n'être assujetti à aucun autre régime légal ; ne bénéficier d'aucune indemnité permanente de l'État ni d'un revenu tiré d'une autre activité. La gestion revient à la CNSS et l'affiliation est obligatoire dans le mois suivant l'assujettissement. La loi ne comporte aucune clause d'entrée en vigueur : son taux ne peut être daté que de sa publication, le 31 décembre 2002.
 
@@ -657,9 +655,9 @@ Le partage des 4 % d'assurances sociales entre maladie, maternité et décès n'
 
 Les droits ouverts par ce régime relèvent du livre « Prestations sociales ».
 
-### Les travailleurs à faibles revenus {#sec-cot-rtfr}
+#### Les travailleurs à faibles revenus {#sec-cot-rtfr}
 
-Le régime est institué par la **loi n° 2002-32 du 12 mars 2002, relative au régime de sécurité sociale pour certaines catégories de travailleurs dans les secteurs agricole et non agricole** [@loi2002-32]. Son article premier crée « un régime spécifique de sécurité sociale comprenant l'octroi des prestations de soins, des pensions de vieillesse, d'invalidité et de survivants » et énumère cinq catégories de bénéficiaires : les employés de maison ; les personnes employées par l'État, les collectivités locales et les établissements publics à caractère administratif qui ne sont pas couvertes par un autre régime légal ; les pêcheurs sur bateaux de jauge brute inférieure ou égale à cinq tonneaux, les pêcheurs indépendants et les petits armateurs ; les agriculteurs travaillant pour leur propre compte et exploitant au plus cinq hectares en sec ou un hectare en irrigué ; les artisans travaillant à la pièce. Les trois dernières catégories disposent d'un droit d'option. Le champ peut être étendu par décret. Ni la loi ni son décret d'application, le **décret n° 2002-916 du 22 avril 2002** [@decret2002-916], n'énoncent de date d'effet.
+Le régime est institué par la **loi n° 2002-32 du 12 mars 2002, relative au régime de sécurité sociale pour certaines catégories de travailleurs dans les secteurs agricole et non agricole** [@loi2002-32]. Son article premier crée « un régime spécifique de sécurité sociale comprenant l'octroi des prestations de soins, des pensions de vieillesse, d'invalidité et de survivants » et énumère cinq catégories de bénéficiaires : les employés de maison ; les personnes employées par l'État, les collectivités locales et les établissements publics à caractère administratif qui ne sont pas couvertes par un autre régime légal ; les pêcheurs sur bateaux de jauge brute inférieure ou égale à cinq tonneaux, les pêcheurs indépendants et les petits armateurs ; les agriculteurs travaillant pour leur propre compte et exploitant au plus cinq hectares en sec ou un hectare en irrigué ; les artisans travaillant à la pièce. Les trois dernières catégories disposent d'un droit d'option. Le champ peut être étendu par décret : le décret gouvernemental n° 2019-379 l'étend aux femmes récoltant les huîtres et aux ouvriers saisonniers et mobiles du milieu rural travaillant dans le secteur agricole, dont les cotisations, calculées sur le SMAG, sont à leur charge [@decret2019-379]. Ni la loi ni son décret d'application, le **décret n° 2002-916 du 22 avril 2002** [@decret2002-916], n'énoncent de date d'effet.
 
 L'article 7 de la loi fixe en une seule phrase le taux, l'assiette et la clé de répartition : les cotisations « sont fixées au taux de **7,5 %** et calculées sur la base des **deux tiers du salaire minimum agricole garanti** » pour trois des catégories, « et sur la base des **deux tiers du salaire minimum interprofessionnel garanti** » pour les deux autres ; le taux est « réparti sur la base des deux tiers à la charge de l'employeur et d'un tiers à la charge du salarié », et supporté en totalité par les travailleurs exerçant pour leur propre compte. L'article 13 du décret en précise la mensualisation (@sec-cot-reduites). Ses articles 14 et 15 ventilent le taux : 2,5 points au titre des prestations de soins et 5 points au titre des pensions d'une part ; 5 points à la charge de l'employeur et 2,5 points à la charge de l'employé d'autre part.
 
@@ -681,30 +679,7 @@ Ce régime est le seul du secteur privé que le décret n° 2007-1406 ne vise pa
 
 Le régime ne comporte **pas de branche « prestations familiales »** : il ne couvre que les soins et les pensions. Le livre « Prestations sociales » détaille ce périmètre.
 
-### Les étudiants {#sec-cot-etudiants}
-
-Le régime des étudiants est institué par la **loi n° 65-17 du 28 juin 1965**, qui étend aux étudiants les régimes de sécurité sociale et crée une **cotisation forfaitaire**, modifiée par la loi n° 88-40 du 6 mai 1988. Le **décret n° 92-631 du 23 mars 1992** [@decret92-631] en fixe les conditions de bénéfice : sont couverts les étudiants « régulièrement inscrits » et « poursuivant effectivement des études supérieures » dans l'un des établissements figurant sur la liste annexée au décret. La cotisation est payable au moment de l'inscription ou, à défaut, au dépôt de la demande d'affiliation.
-
-Le régime ne relève pas d'un taux mais d'un montant, dont l'évolution connue tient en deux valeurs.
-
-| Depuis | Texte | Montant annuel |
-|---|---|---:|
-| 1992, date d'effet non énoncée | décret n° 92-631, art. 2 | 2 D |
-| 2003, date d'effet non énoncée | décret n° 2003-1544, art. 2 nouveau | 5 D |
-
-: Cotisation forfaitaire annuelle du régime des étudiants {#tbl-cotisation-etudiants}
-
-Le décret n° 2003-1544 du 2 juillet 2003 [@decret2003-1544] abroge l'article 2 du décret de 1992 et fixe la cotisation « à cinq dinars par an ». Comme le décret qu'il remplace, il s'achève sur une clause d'exécution : le 2 juillet 2003 est la date de **signature** du décret, et non une entrée en vigueur énoncée.
-
-::: {.callout-warning title="Les branches couvertes ne sont pas établies"}
-Ni le décret n° 92-631 ni le décret n° 2003-1544 n'énoncent les risques que le régime des étudiants couvre : ils renvoient à la loi n° 65-17, dont le contenu n'est pas établi ici.
-
-<!-- TODO (documentaliste) : la loi n° 65-17 n'a pas été lue ; le livre « Prestations sociales » traitera des risques couverts par le régime des étudiants une fois le texte établi. -->
-:::
-
-<!-- TODO (documentaliste) : lire la loi n° 65-17 du 28 juin 1965 pour établir les branches couvertes par le régime des étudiants. -->
-
-### Les Tunisiens à l'étranger {#sec-cot-rtte}
+#### Les Tunisiens à l'étranger {#sec-cot-rtte}
 
 Le régime est institué par le **décret n° 89-107 du 10 janvier 1989, étendant le régime de sécurité sociale aux travailleurs tunisiens à l'étranger** [@decret89-107]. Comme celui des travailleurs non salariés, il procède par extension d'articles de la loi n° 60-30 et du décret n° 74-499, au profit des « travailleurs tunisiens à l'étranger, qu'ils soient salariés ou non salariés, qui ne sont pas couverts par une convention bilatérale de sécurité sociale ou par une réglementation spéciale ». La gestion revient à la CNSS, l'administration du régime de pensions étant déléguée à la CAVIS. Le décret ne comporte pas de clause d'entrée en vigueur.
 
@@ -730,11 +705,42 @@ Le décret n° 89-107 s'arrête au bloc « assurances sociales : 5,40 % ». Seul
 
 Les droits ouverts par ce régime relèvent du livre « Prestations sociales ».
 
-## Le secteur public {#sec-cot-public}
+#### Les étudiants {#sec-cot-etudiants}
+
+Le régime des étudiants est institué par la **loi n° 65-17 du 28 juin 1965**, qui étend aux étudiants les régimes de sécurité sociale et crée une **cotisation forfaitaire**, modifiée par la loi n° 88-40 du 6 mai 1988. Le **décret n° 92-631 du 23 mars 1992** [@decret92-631] en fixe les conditions de bénéfice : sont couverts les étudiants « régulièrement inscrits » et « poursuivant effectivement des études supérieures » dans l'un des établissements figurant sur la liste annexée au décret. La cotisation est payable au moment de l'inscription ou, à défaut, au dépôt de la demande d'affiliation.
+
+Le régime ne relève pas d'un taux mais d'un montant, dont l'évolution connue tient en deux valeurs.
+
+| Depuis | Texte | Montant annuel |
+|---|---|---:|
+| 1992, date d'effet non énoncée | décret n° 92-631, art. 2 | 2 D |
+| 2003, date d'effet non énoncée | décret n° 2003-1544, art. 2 nouveau | 5 D |
+
+: Cotisation forfaitaire annuelle du régime des étudiants {#tbl-cotisation-etudiants}
+
+Le décret n° 2003-1544 du 2 juillet 2003 [@decret2003-1544] abroge l'article 2 du décret de 1992 et fixe la cotisation « à cinq dinars par an ». Comme le décret qu'il remplace, il s'achève sur une clause d'exécution : le 2 juillet 2003 est la date de **signature** du décret, et non une entrée en vigueur énoncée.
+
+::: {.callout-warning title="Les branches couvertes ne sont pas établies"}
+Ni le décret n° 92-631 ni le décret n° 2003-1544 n'énoncent les risques que le régime des étudiants couvre : ils renvoient à la loi n° 65-17, dont le contenu n'est pas établi ici.
+
+<!-- TODO (documentaliste) : la loi n° 65-17 n'a pas été lue ; le livre « Prestations sociales » traitera des risques couverts par le régime des étudiants une fois le texte établi. -->
+:::
+
+<!-- TODO (documentaliste) : lire la loi n° 65-17 du 28 juin 1965 pour établir les branches couvertes par le régime des étudiants. -->
+
+#### Les travailleuses agricoles {#sec-cot-travailleuses-agricoles}
+
+Le **décret-loi n° 2024-4 du 22 octobre 2024, relatif au régime de protection sociale des travailleuses agricoles**, institue un régime spécifique de sécurité sociale comportant les prestations de l'assurance maladie et les pensions de vieillesse, d'invalidité et de survivants, géré par la CNSS [@decret-loi2024-4, art. 1, 17 et 18]. Il couvre la travailleuse agricole non salariée, à titre principal et pour son propre compte, et la salariée qui travaille au moins 15 jours par mois, en moyenne au moins 45 jours par trimestre ou 180 jours par an, sauf si son employeur est affilié à un régime légal couvrant les mêmes risques pour tous ses employés [@decret-loi2024-4, art. 17].
+
+Ce qui distingue ce régime du côté du prélèvement est la prise en charge de ses cotisations par l'État pendant les trois premières années d'activité [@decret-loi2024-4, art. 20 et 23]. La loi de finances pour 2025 crée en outre un fonds de protection sociale des travailleuses agricoles, chargé « d'assurer la couverture sociale et d'aider à l'inclusion économique des travailleuses agricoles » dans le cadre de ce régime [@lf-2025, art. 15]. Le taux et l'assiette de la cotisation ne sont pas exposés ici ; le livre « Retraites » présente le régime, ses pensions et les ressources du fonds.
+
+<!-- TODO (documentaliste) : établir sur le décret-loi n° 2024-4 le taux et l'assiette de la cotisation du régime des travailleuses agricoles, et les dater. -->
+
+### Le secteur public (CNRPS) {#sec-cot-public}
+
+#### Les agents civils et militaires, régime de référence {#sec-cot-cnrps}
 
 C'est la partie du système dont l'histoire est la mieux établie — et la seule dont chaque palier de taux se rattache à un article de loi qu'on peut lire.
-
-### La création : deux caisses de 1959, fondues en 1975 {#sec-cot-cnrps}
 
 Le régime naît en **1959**, de deux lois du même jour. La **loi n° 59-18 du 5 février 1959** [@loi59-18] fixe le régime des pensions civiles et militaires de retraite ; son article premier dispose que « la Société de Prévoyance des Fonctionnaires et Employés Tunisiens prend l'appellation de Caisse Nationale de Retraites », et son article 5 institue au profit de cette caisse un prélèvement de 7 % sur le traitement de base. La **loi n° 59-19 du même 5 février** [@loi59-19] donne à la caisse sa personnalité d'établissement public. Une troisième, la **loi n° 59-45 du 15 avril 1959** [@loi59-45], crée à côté d'elle la Caisse de prévoyance sociale.
 
@@ -742,19 +748,25 @@ La **CNRPS** ne naît que seize ans plus tard, et par une voie inattendue : l'**
 
 Le régime est refondu en **1985** par la **loi n° 85-12 du 5 mars 1985** [@loi85-12], qui en confie la gestion à la CNRPS (article 4), le fait financer par une contribution partagée entre l'agent et l'employeur (article 8), et assied cette contribution sur « les différents éléments **permanents** de la rémunération de l'agent, qu'ils soient en espèces ou en nature » (article 10). Son article 76 abroge la loi de 1959 « à l'exception des dispositions relatives à l'invalidité » — des dispositions qui, vingt-deux ans plus tard, servaient toujours : l'article 47 (nouveau), tel qu'il résulte de la loi n° 2007-43 [@loi2007-43], renvoie encore à « la commission de réforme visée à l'article 29 de la loi n° 59-18 ».
 
-L'histoire des taux de la contribution de l'agent et de celle de l'employeur est exposée avec la branche des pensions (@sec-cot-pensions-public).
+L'histoire des taux de la contribution de l'agent et de celle de l'employeur est exposée avec la branche des pensions (@sec-cot-pensions-public), la cotisation d'assurance maladie des agents avec cette branche (@sec-cot-maladie-public).
 
-### Les régimes spéciaux {#sec-cot-regimes-speciaux}
+#### La part patronale {#sec-cot-cnrps-employeur}
+
+L'employeur public — l'État et les autres personnes publiques employeuses — verse une contribution distincte de la retenue opérée sur l'agent [@loi85-12, art. 9 et 13]. Sa trajectoire, parallèle à celle de la retenue mais décalée, est exposée avec la branche des pensions (@tbl-cnrps-employeur). C'est aussi lui qui précompte la retenue de l'agent et la verse à la caisse ; depuis 2019, tout retard l'expose à une pénalité (@sec-cot-recouvrement).
+
+#### Les membres du gouvernement, les députés et les gouverneurs {#sec-cot-regimes-speciaux}
 
 Les **membres du gouvernement, les députés et les gouverneurs** relèvent enfin non pas d'un régime spécial, mais de **trois** — la loi n° 83-31 du 17 mars 1983 [@loi83-31], la loi n° 85-16 du 8 mars 1985 [@loi85-16] et la loi n° 88-16 du 17 mars 1988 [@loi88-16] —, dont les articles 5 sont de rédaction quasi identique : retenue de 10 % au profit de la CNRPS, contribution de l'État de 15 %. Le texte publié des trois articles porte bien ces deux taux, y compris, pour la loi de 1985, la contribution de l'État de 15 %, prélevée sur le budget de la Chambre des députés [@loi85-16, art. 5]. Le point de départ est donc deux fois plus élevé que celui du régime général du secteur public. Ces trois articles sont ensuite modifiés **en bloc et par les mêmes textes** que la loi de 1985 : la loi de 1994, l'article 85 de la loi de finances 2002 et la loi de 2007 les visent tous nommément dans leur clause « en conséquence, sont modifiés les taux des contributions prévus par les lois ci-après ». Les régimes spéciaux suivent ainsi la même trajectoire que la CNRPS, à un niveau supérieur.
 
-### Les pensionnés, qui cotisent sur leur pension {#sec-cot-pensionnes}
+#### Les pensionnés {#sec-cot-pensionnes}
 
 Un prélèvement pèse enfin sur la pension elle-même, au titre de la prévoyance sociale. Son ancrage est le **décret n° 2007-1406 du 18 juin 2007** [@decret2007-1406], qui assied la cotisation sur « le montant brut de la pension » et échelonne son taux : 1 % au 1^er^ juillet 2007, 2 % en 2008, 3 % en 2009, 4 % en 2010.
 
 Avant 2007, la case est vide, et il faut le dire. Le seul texte antérieur retrouvé qui fasse cotiser un pensionné sur sa pension est le décret n° 73-91 du 12 mars 1973 [@decret73-91], dont l'article 15 fixe à 2 % la cotisation du retraité — mais cet article est par ailleurs entièrement consacré au régime **facultatif** d'assurance-maladie, et un taux qui baisserait de 2 % à 1 % en trente-quatre ans ne se lit pas comme une même série obligatoire. Le rattachement de ce 2 % à la branche facultative est l'hypothèse la plus plausible ; elle n'est pas établie.
 
-## Le recouvrement {#sec-cot-recouvrement}
+## Recouvrement, rendement, vue d'ensemble {#sec-cot-bilan}
+
+### Le recouvrement {#sec-cot-recouvrement}
 
 Les deux secteurs ne recouvrent pas par le même instrument, et la dissymétrie vaut d'être écrite plutôt qu'aplanie : **au privé, une déclaration trimestrielle qui précède et justifie le versement ; au public, un précompte mensuel opéré par l'employeur sur le traitement.**
 
@@ -766,7 +778,7 @@ La même loi de 2007 refait le régime des **pénalités**, et le déplacement m
 
 Au public, le mécanisme est plus simple et fut longtemps dépourvu de sanction. L'article 9 de la loi n° 85-12 [@loi85-12] charge l'employeur de « prélever mensuellement » la contribution et de la « verser sans délai » à la caisse, en lui interdisant de conserver ces montants ou de les employer à une autre fin — mais sans fixer ni délai chiffré ni pénalité. Ce vide n'a été comblé qu'en **2019** : l'article 9 bis, inséré par la loi n° 2019-37, impose le transfert « dans un délai n'excédant pas le cinquième jour du mois suivant » et frappe le retard d'une pénalité de **1,5 % par mois**. Deux traits en font un texte singulier — le débiteur de la pénalité est **l'État lui-même** et les autres personnes publiques employeuses, et le taux est supérieur de moitié à celui du secteur privé. La même loi impose enfin à la CNRPS un système d'échange de données mensuel avec les employeurs, rapprochant le public de la logique déclarative du privé.
 
-## Ce que les cotisations rapportent {#sec-cot-rendement}
+### Ce que les cotisations rapportent {#sec-cot-rendement}
 
 Les taux décrits jusqu'ici fixent ce qui est dû ; ils ne disent pas ce qui est encaissé. La CNSS publie le montant de ses cotisations sur vingt et un ans, et cette série porte un enseignement que la lecture des barèmes ne donne pas.
 
@@ -853,9 +865,9 @@ figtools.figure_tabs(
 )
 ```
 
-## Vue d'ensemble {#sec-cot-vue-ensemble}
+### Vue d'ensemble {#sec-cot-vue-ensemble}
 
-Le système tunisien de cotisations présente quatre traits que ce chapitre a établis sur les textes.
+Le système tunisien de cotisations présente quatre traits que ce livre a établis sur les textes.
 
 **Il est proportionnel et sans plafond, mais sur deux assiettes différentes.** Le régime général cotise sur le salaire réellement perçu, sans butoir ; les autres régimes du secteur privé cotisent sur une assiette forfaitaire, exprimée en multiples du SMIG ou du SMAG. Le régime général ne comporte aucun plafond de cotisation ; dans les régimes à assiette forfaitaire, la question ne se pose pas dans les mêmes termes, l'assiette y étant bornée par la classe la plus élevée — coefficient 18 pour les travailleurs non salariés et les artistes, coefficient 9 pour les Tunisiens à l'étranger. Le seul plafond que pose un texte est celui que le régime légal de pensions retient pour le **calcul des prestations**, au-delà duquel le régime complémentaire prend le relais.
 
@@ -864,3 +876,66 @@ Le système tunisien de cotisations présente quatre traits que ce chapitre a é
 **Il s'est unifié par la maladie, non par le taux.** Le décret n° 2007-1406 a porté la cotisation maladie de six régimes au même niveau de 6,75 %, par des calendriers différents étalés de 2007 à 2011 ; c'est ce mouvement, et non une réforme des taux globaux, qui explique la quasi-totalité de l'écart entre les taux d'origine des régimes et ceux en vigueur aujourd'hui.
 
 **Son histoire est mieux connue qu'il n'y paraissait, mais elle reste incomplète.** Les taux globaux des sept régimes privés sont désormais rattachés à leur texte, et le taux du régime général se lit comme la somme exacte de trois d'entre eux. Ce qui manque tient en trois points : la ventilation interne des taux globaux, qui n'est attestée que pour la part maladie dans presque tous les régimes ; douze dates d'effet qu'aucun article n'énonce ; et le taux de la retraite complémentaire, qui relève de décisions non publiées au *Journal officiel*.
+
+La matrice suivante résume, pour les régimes du secteur privé, les branches que finance le prélèvement.
+
+| Régime | Pensions | Assurances sociales et maladie | Prestations familiales | Protection sociale des travailleurs et perte d'emploi |
+|---|---|---|---|---|
+| Salariés non agricoles | oui | oui | oui | oui |
+| Salariés agricoles | oui | oui | non | non |
+| Salariés agricoles, régime amélioré | oui | oui | oui | non |
+| Travailleurs non salariés | oui | oui | non | non |
+| Artistes, créateurs et intellectuels | oui | oui | non | non |
+| Travailleurs à faibles revenus | oui | soins seulement | non | non |
+| Tunisiens à l'étranger | oui | oui | non | non |
+| Travailleuses agricoles | oui | maladie | non | non |
+| Étudiants | non établi | non établi | non établi | non établi |
+
+: Branches financées par le prélèvement de chaque régime du secteur privé {#tbl-matrice-branches}
+
+Chaque case se lit dans la fiche du régime (@sec-cot-prive) : elle reprend la décomposition de son taux global et, pour la perte d'emploi, le tableau des deux étages (@tbl-architecture). La cotisation d'accidents du travail n'y figure pas : due au titre de la loi n° 94-28, elle ne suit pas le découpage des régimes (@sec-cot-at).
+
+## Annexes {#sec-cot-annexes}
+
+### Notations et sigles {#sec-cot-notations}
+
+| Notation | Signification | Voir |
+|---|---|---|
+| $\kappa$ | taux légal de la branche des pensions d'un régime, part de l'employeur et part de l'assuré réunies | @sec-cot-pensions-longue-periode |
+| CAVIS | Caisse d'assurance vieillesse, d'invalidité et de survivants | @sec-cot-complementaire |
+| CNAM | Caisse nationale d'assurance maladie | @sec-cot-maladie-2004 |
+| CNRPS | Caisse nationale de retraite et de prévoyance sociale | @sec-cot-public |
+| CNSS | Caisse nationale de sécurité sociale | @sec-cot-prive |
+| SMAG | salaire minimum agricole garanti | @sec-cot-smag |
+| SMIG | salaire minimum interprofessionnel garanti | @sec-cot-classes |
+
+: Notations et sigles du livre {#tbl-notations}
+
+### Les textes modificatifs, par branche {#sec-cot-textes}
+
+Le tableau suivant donne, branche par branche, les textes qui ont modifié un taux ou une assiette, avec l'article touché et le changement qu'ils apportent. Les textes fondateurs de chaque régime sont présentés dans sa fiche (@sec-cot-regimes).
+
+| Branche | Texte | Article touché | Changement |
+|---|---|---|---|
+| Pensions, privé | décret n° 88-1137 [@decret88-1137, art. 1-2] | décret n° 74-499, art. 5 b) | quote-part du taux global : 1,25/20^e^ → 4,25/20^e^, au 1^er^ janvier 1988 |
+| | décret n° 94-1429 [@decret94-1429, art. 1-2] | décret n° 74-499, art. 5 b) | quote-part : 4,25/20^e^ → 6,25/20^e^, au 1^er^ janvier 1994 |
+| | décret n° 94-1429 [@decret94-1429, art. 1] | décret n° 74-499, art. 9 | cotisation propre : 3,75 % → 5,75 %, la part des travailleurs exigible par paliers de juillet 1994 à juillet 1997 |
+| | décret n° 97-555 [@decret97-555, art. 1] | décret n° 74-499, art. 9 | cotisation propre fixée à 5,25 % (2,50 employeur, 2,75 travailleur) ; le palier de juillet 1997 n'entre pas en vigueur |
+| | décret n° 2003-1212 [@decret2003-1212, art. 1-2] | décret n° 74-499, art. 5 b) | quote-part : 6,25/20^e^ → 7,25/20^e^, au 1^er^ janvier 2003 |
+| Taux global, privé | loi n° 97-4 [@loi97-4] | loi n° 60-30, art. 41 | taux global : 15 % employeur et 5 % travailleur → 13 % et 5 % |
+| Pensions, public | loi n° 73-71 [@loi73-71] | loi n° 59-18, art. 5 | retenue de 7 % maintenue ; assiette étendue aux indemnités et primes entrant dans le calcul de la pension |
+| | loi de finances pour 1975 [@loi74-101-lf1975, art. 38 et 39] | loi n° 59-18, art. 5 | retenue : 7 % → 5 %, assiette étendue aux émoluments globaux indiciaires ; subvention de l'État : 10 % → 7 % |
+| | loi n° 94-71 [@loi94-71] | loi n° 85-12, art. 9 et 13 | agent : 5 % → 6 %, au 1^er^ juillet 1994 ; employeur : + 1,2 point, au 1^er^ juillet 1995 |
+| | loi de finances pour 2002 [@loi2001-123-lf2002, art. 85] | loi n° 85-12, art. 9 et 13 | agent : + 1 point (0,50 au 1^er^ juillet 2002, 0,25 en 2003, 0,25 en 2004) ; employeur : + 1,5 point, en cinq paliers aux 1^ers^ juillet 2002 à 2006 |
+| | loi n° 2007-43 [@loi2007-43] | loi n° 85-12, art. 9 et 13 | agent : + 1,2 point (0,40 aux 1^ers^ juillet 2007, 2008 et 2009) ; employeur : + 1,8 point, par paliers de 0,60 aux 1^ers^ janvier 2007, 2008 et 2009 |
+| | décret-loi n° 2011-48 [@decretloi2011-48] | loi n° 85-12, art. 13 | employeur : + 1 point, au 1^er^ juillet 2011 |
+| | loi n° 2019-37 [@loi2019-37, art. 4] | loi n° 85-12, art. 9 et 13 | employeur : + 2 points, au premier jour du mois suivant l'entrée en vigueur de la loi ; agent : + 1 point, au 1^er^ janvier 2020 |
+| Maladie | loi n° 97-4 [@loi97-4] ; décret n° 97-1645 [@decret97-1645] | loi n° 60-30, art. 41, second paragraphe | part patronale du taux global réduite de 2 points (13 % → 11 %) pour les employeurs assurant à leurs salariés une couverture de soins dans un régime conventionnel, à compter du 1^er^ octobre 1996 ; modalités précisées par le décret n° 97-1645, abrogé au 1^er^ juillet 2007 |
+| | décret n° 2007-1406 [@decret2007-1406] | — | cotisation d'assurance maladie portée à 6,75 % par paliers annuels, de 2007 à 2011 selon le régime ; abroge le décret n° 97-1645 |
+| Accidents du travail | décret n° 95-538 [@decret95-538] | — | taux de 0,60 % à 7,20 % selon dix-huit classes ; après transfert d'un point du taux global, 0,50 % à 5 % |
+| Emploi | loi de finances pour 1975 [@loi74-101-lf1975, art. 57] | loi n° 60-30, art. 41 | cotisation patronale majorée de 0,5 point pour le fonds spécial de l'État, au 1^er^ janvier 1975 |
+| | loi n° 96-101 [@loi96-101, art. 5] | — | 0,4 % des salaires prélevés sur le taux global pour la protection sociale des travailleurs |
+| | loi de finances pour 2025 [@lf-2025] | — | cotisation de 0,5 % à la charge de chacune des deux parties pour le fonds d'assurance contre la perte d'emploi |
+| Étudiants | décret n° 2003-1544 [@decret2003-1544] | décret n° 92-631, art. 2 | cotisation forfaitaire annuelle : 2 D → 5 D |
+
+: Textes qui ont modifié un taux ou une assiette de cotisation, par branche {#tbl-textes-modificatifs}
