@@ -288,15 +288,15 @@ CNSS, « cnss-chiffres ». Cette question se résoudra hors du Journal officiel,
 
 ##### Le barème d'actualisation {#sec-rsna-bareme}
 
-Les salaires anciens de la fenêtre de référence ne sont pas pris pour leur valeur nominale : ils sont actualisés. Le barème annoncé en 1990, puis fixé « annuellement » depuis 1994, a été publié par une série d'arrêtés du ministre des affaires sociales « relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants », une trentaine d'arrêtés annuels du 17 novembre 1994 au 16 juillet 2024. Le premier, l'arrêté du 17 novembre 1994, vise le décret n° 94-1429, fixe un coefficient pour chaque année de salaire de 1961 à 1993 et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ juillet 1994 [@arrete-1994-11-17-bareme-actualisation, art. 1-2] ; aucun arrêté pris en application de la rédaction de 1990 n'est identifié ici. L'arrêté du 29 mars 1997 donne pour chaque année de salaire un coefficient multiplicateur et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ janvier 1997 [@arrete-1997-03-29-bareme-actualisation]. Les coefficients du barème de 2024 sont donnés dans l'onglet Données de la @fig-bareme-taux.
+Les salaires anciens de la fenêtre de référence ne sont pas pris pour leur valeur nominale : ils sont actualisés. Le barème annoncé en 1990, puis fixé « annuellement » depuis 1994, a été publié par une série d'arrêtés du ministre des affaires sociales « relatif à la fixation du barème d'actualisation des salaires pris en compte dans le calcul des pensions de vieillesse, d'invalidité et de survivants » : trente et un arrêtés, du 17 novembre 1994 au 16 juillet 2024. Le premier, l'arrêté du 17 novembre 1994, vise le décret n° 94-1429, fixe un coefficient pour chaque année de salaire de 1961 à 1993 et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ juillet 1994 [@arrete-1994-11-17-bareme-actualisation, art. 1-2] ; aucun arrêté pris en application de la rédaction de 1990 n'est identifié ici. L'arrêté du 29 mars 1997 donne pour chaque année de salaire un coefficient multiplicateur et s'applique aux pensions dont le droit est ouvert à compter du 1^er^ janvier 1997 [@arrete-1997-03-29-bareme-actualisation]. Les coefficients du barème de 2024 sont donnés dans l'onglet Données de la @fig-bareme-taux.
 
-**Le rythme de la série, et ses trous.** Les vingt-huit arrêtés identifiés ne couvrent pas les trente et une années qui séparent 1994 de 2024 : **aucun arrêté n'est identifié pour 2016, 2017 et 2019**. L'adjectif « annuel » que porte le dispositif décrit donc une intention, non une pratique constante.
+**Le rythme de la série.** De 1994 à 2024, chaque année a son arrêté : l'adjectif « annuel » que porte le dispositif décrit la pratique. Au-delà, **aucun arrêté n'est identifié ici pour 2025 ni pour 2026**.
 
 <!-- RECHERCHE r-rsna-bareme-1990 : barème d'actualisation pris sous la rédaction de 1990 (voir docs/recherches.yml) -->
 
-<!-- RECHERCHE r-rsna-bareme-annees-manquantes : arrêtés de barème pour 2016, 2017 et 2019 (voir docs/recherches.yml) -->
+<!-- RECHERCHE r-rsna-bareme-2025-2026 : arrêtés de barème pour 2025 et 2026 (voir docs/recherches.yml) -->
 
-Leur calendrier, en revanche, est régulier. L'arrêté est signé dans les premiers mois de l'année — février le plus souvent, exceptionnellement mars, avril ou juillet — et **s'applique rétroactivement aux pensions dont le droit est ouvert à compter du 1^er^ janvier de cette même année**. Une pension liquidée en janvier est donc calculée avec un barème qui n'est pas encore publié. La règle est établie pour vingt arrêtés, de 1997 à 2024, dont l'article 2 l'énonce ; elle ne l'est pas ici pour les autres.
+Leur calendrier est régulier lui aussi. L'arrêté est signé dans les premiers mois de l'année — février le plus souvent, sinon janvier, mars ou avril, exceptionnellement juin ou juillet — et **s'applique rétroactivement aux pensions dont le droit est ouvert à compter du 1^er^ janvier de cette même année**. Une pension liquidée en janvier est donc calculée avec un barème qui n'est pas encore publié. La règle est établie pour vingt-trois arrêtés, de 1995 à 2024, dont l'article 2 l'énonce ; elle ne l'est pas ici pour les sept autres, de 1996 et de 2000 à 2005.
 
 Le premier arrêté fait exception, et pour une raison de fond : celui du 17 novembre 1994 s'applique à compter du **1^er^ juillet 1994** [@arrete-1994-11-17-bareme-actualisation, art. 2], c'est-à-dire à la date d'effet du décret n° 94-1429 qui l'appelle, et non au 1^er^ janvier. Le barème naît avec la fenêtre de cinq ans qu'il sert à actualiser.
 
@@ -393,9 +393,9 @@ figtools.figure_tabs(
 )
 ```
 
-<!-- TODO (documentaliste) : les coefficients des vingt-huit arrêtés sont désormais relevés
-(1 319 valeurs, contrôle croisé d'un arrêté au suivant, 1996 et 2024 lus à l'image ; voir
-openfisca-tunisia#438). Leur coïncidence avec l'indice des prix en est un second contrôle,
+<!-- TODO (documentaliste) : les coefficients des trente et un arrêtés sont désormais relevés
+(1 488 valeurs, contrôle croisé d'un arrêté au suivant, 1996, 2016, 2017, 2019 et 2024 lus à
+l'image ; voir openfisca-tunisia#438 et #459). Leur coïncidence avec l'indice des prix en est un second contrôle,
 indépendant. Reste à établir, hors du Journal officiel, si le ministère publie la méthode
 du barème : aucun des textes lus ne la donne. -->
 
