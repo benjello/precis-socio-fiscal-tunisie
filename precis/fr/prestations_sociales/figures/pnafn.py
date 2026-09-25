@@ -1,25 +1,4 @@
-"""Figure « allocation du PNAFN » du livre *Prestations sociales*.
-
-Origine des données : les PARAMÈTRES d'openfisca-tunisia, non l'entrepôt statistique. Le
-montant de l'allocation aux familles nécessiteuses n'est pas une observation publiée mais
-du droit codé — et, ici, du droit largement non écrit : dix des onze paliers ne reposent
-sur aucun texte au Journal officiel.
-
-Mais la figure ne lit PAS le paramètre elle-même. Le build du site est autonome : ni
-openfisca-tunisia ni tunisia-data n'y sont installés. La série brute est produite hors
-build par `scripts/generate_prestations_tables.py` — qui lit déjà ce même paramètre pour
-en tirer le tableau publié —, versionnée dans `precis/_seriescache/`, et sa fraîcheur est
-contrôlée par `verifier-snapshots.yml`. C'est le contrat des tableaux de paramètres,
-étendu aux figures.
-
-Une première version lisait le paramètre directement : faute d'openfisca, la série était
-vide et le livre entier cessait de se rendre (#165). Un module de figure lit
-`figtools.series()`, jamais une source vive.
-
-La figure doit donc porter cette réserve, faute de quoi elle donnerait à onze décisions
-administratives l'apparence d'une série statistique. Les paliers attestés et non attestés
-sont distingués, et la légende le dit.
-"""
+"""Figure de la série historique de l'allocation mensuelle du PNAFN."""
 from __future__ import annotations
 
 import sys
@@ -37,39 +16,62 @@ import openfisca_tables as ot  # noqa: E402
 HERE = Path(__file__).resolve().parent
 FIGDATA = HERE.parent / "figdata"
 SERIE = "pnafn-allocation"
-
-# Seul palier attesté par un texte publié : l'arrêté conjoint du 10 juillet 2024 constate
-# que l'allocation « est fixée à 180 dinars à la date de la publication ».
-PREMIER_PALIER_ATTESTE = "2018-04-01"
+SERIE_PRIX_SOURCE = "croissances-revenus-prix"
+SERIE_PRIX = "ipc-pnafn-base1987"
+PRIX = "prix à la consommation"
+ANNEE_BASE = 1987
 
 figtools.register_provenance(
     SERIE,
     titre="Allocation mensuelle du programme national d'aide aux familles nécessiteuses",
     titre_ar="المنحة الشهرية للبرنامج الوطني لمساعدة العائلات المعوزة",
-    sources=["arrete-2024-07-10-allocation-pauvres", "loi-86-83-lfr-1986"],
-    unite="dinars par mois (prix courants)",
-    unite_ar="دينار في الشهر (أسعار جارية)",
-    perimetre="valeurs encodées dans openfisca-tunisia, paramètre pnafn/allocation",
-    perimetre_ar="القيم المدوّنة في openfisca-tunisia، معيار pnafn/allocation",
-    caveats=("Dix des onze paliers ne reposent sur aucun texte publié au Journal officiel : "
-             "ce sont des décisions administratives. Seul celui de 180 dinars est attesté, "
-             "et par un arrêté de 2024 qui le constate sans le fixer."),
-    caveats_ar=("عشرة من الأحد عشر مستوى لا تستند إلى أيّ نصّ منشور بالرائد الرسمي: فهي قرارات "
-                "إدارية. ولا يثبت إلّا مستوى 180 ديناراً، بقرار لسنة 2024 يعاينه دون أن يضبطه."),
+    sources=["arrete-2024-07-10-allocation-pauvres", "ins-annuaire"],
+    unite="dinars par mois (prix courants et constants de 1987)",
+    unite_ar="دينار في الشهر (بالأسعار الجارية والثابتة لسنة 1987)",
+    perimetre="montant mensuel de l'allocation du PNAFN",
+    perimetre_ar="المبلغ الشهري لمنحة البرنامج الوطني لمساعدة العائلات المعوزة",
+    caveats=("Les dates de tous les paliers et les montants antérieurs à 180 dinars "
+             "restent à fiabiliser. Le pouvoir d'achat est calculé avec l'indice annuel "
+             "moyen des prix à la consommation."),
+    caveats_ar=("لا تزال تواريخ جميع المستويات والمبالغ السابقة لمبلغ 180 دينارًا "
+                "بحاجة إلى توثيق. وتُحسب القوة الشرائية بمؤشر أسعار الاستهلاك السنوي المتوسط."),
+)
+
+figtools.register_provenance(
+    SERIE_PRIX,
+    titre="Indice des prix à la consommation chaîné, base 100 = 1987, 1987-2018",
+    titre_ar="مؤشر أسعار الاستهلاك المتسلسل، أساس 100 = 1987، 1987-2018",
+    sources=["ins-annuaire"],
+    unite="indice annuel moyen, base 100 = 1987",
+    unite_ar="مؤشر سنوي متوسط، أساس 100 = 1987",
+    perimetre="prix à la consommation familiale, ensemble des ménages tunisiens",
+    perimetre_ar="أسعار الاستهلاك العائلي، مجموع الأسر التونسية",
+    caveats=("Indice reconstitué par chaînage des taux annuels publiés par l'INS. "
+             "Une date en cours d'année est déflatée par l'indice annuel moyen."),
+    caveats_ar=("أُعيد تركيب المؤشر بتسلسل النسب السنوية التي نشرها المعهد الوطني "
+                "للإحصاء. وتُعدّل القيمة المؤرخة أثناء السنة بالمؤشر السنوي المتوسط."),
 )
 
 _L = {
-    "lg_non": {"fr": "Paliers sans texte publié (décisions administratives)",
-               "ar": "مستويات دون نصّ منشور (قرارات إدارية)"},
-    "lg_oui": {"fr": "Palier attesté par un texte (arrêté du 10 juillet 2024)",
-               "ar": "مستوى ثابت بنصّ (قرار 10 جويلية 2024)"},
-    "y": {"fr": "Dinars par mois", "ar": "دينار في الشهر"},
+    "lg_nominal": {"fr": "Montant courant (paliers à fiabiliser)",
+                    "ar": "المبلغ الجاري (مستويات تحتاج إلى توثيق)"},
+    "lg_reel": {"fr": "Pouvoir d'achat (dinars constants de 1987)",
+                 "ar": "القوة الشرائية (بالدينار الثابت لسنة 1987)"},
+    "y": {"fr": "Dinars par mois (courants et constants de 1987)",
+          "ar": "دينار في الشهر (جار وثابت لسنة 1987)"},
     "x": {"fr": "Année", "ar": "السنة"},
     "titre": {"fr": "Allocation mensuelle du PNAFN, 1987-2018",
-              "ar": "المنحة الشهرية للبرنامج الوطني لمساعدة العائلات المعوزة، 1987-2018"},
-    "col_date": {"fr": "Date d'effet", "ar": "تاريخ السريان"},
-    "col_montant": {"fr": "Allocation mensuelle (D)", "ar": "المنحة الشهرية (د)"},
+               "ar": "المنحة الشهرية للبرنامج الوطني لمساعدة العائلات المعوزة، 1987-2018"},
+    "col_date": {"fr": "Date de l'état", "ar": "تاريخ الحالة"},
+    "col_montant": {"fr": "Allocation mensuelle (D courants)",
+                    "ar": "المنحة الشهرية (بالدينار الجاري)"},
+    "col_reel": {"fr": "Pouvoir d'achat (D constants de 1987)",
+                 "ar": "القوة الشرائية (بالدينار الثابت لسنة 1987)"},
+    "col_type": {"fr": "Point de mesure", "ar": "نقطة القياس"},
+    "palier": {"fr": "Changement de palier", "ar": "تغيّر المستوى"},
+    "annuel": {"fr": "Repère annuel", "ar": "مرجع سنوي"},
     "col_att": {"fr": "Attestation", "ar": "الإثبات"},
+    "a_documenter": {"fr": "À fiabiliser", "ar": "يحتاج إلى توثيق"},
 }
 
 
@@ -78,30 +80,59 @@ def _lab(key: str) -> str:
 
 
 def _serie():
-    """(date ISO, montant, attesté) — lu dans la série brute snapshotée.
-
-    `atteste` vaut « oui » quand le palier repose sur un texte publié. Le snapshot porte
-    des valeurs BRUTES : la mise en forme appartient à la figure, la relecture appartient
-    au paramètre.
-    """
+    """Lit la série brute conservée dans le snapshot versionné."""
     df = figtools.series(SERIE)
     return [(str(date)[:10], float(valeur), str(atteste).strip().lower() == "oui")
             for date, valeur, atteste in zip(df["date"], df["montant"], df["atteste"])]
 
 
+def _indices_prix():
+    """Indice annuel chaîné des prix, base 100 en 1987."""
+    df = figtools.series(SERIE_PRIX_SOURCE)
+    taux = {int(r.annee): float(r.croissance_pct)
+            for r in df.itertuples() if r.indicateur == PRIX}
+    indices = {ANNEE_BASE: 100.0}
+    for annee in range(ANNEE_BASE, min(taux), -1):
+        indices[annee - 1] = indices[annee] / (1 + taux[annee] / 100)
+    for annee in range(ANNEE_BASE + 1, max(taux) + 1):
+        indices[annee] = indices[annee - 1] * (1 + taux[annee] / 100)
+    return indices
+
+
+def _serie_reelle():
+    """Montant applicable aux dates de palier et à chaque début d'année, en dinars de 1987."""
+    paliers = _serie()
+    dates_paliers = {date for date, _montant, _atteste in paliers}
+    debut, fin = int(paliers[0][0][:4]), int(paliers[-1][0][:4])
+    dates = sorted(dates_paliers | {f"{annee}-01-01" for annee in range(debut, fin + 1)})
+    indices = _indices_prix()
+    serie = []
+    for date in dates:
+        _date_palier, montant, atteste = next(
+            palier for palier in reversed(paliers) if palier[0] <= date)
+        serie.append((date, montant, montant * 100 / indices[int(date[:4])],
+                      date in dates_paliers, atteste))
+    return serie
+
+
 def table():
     import pandas as pd
-    lignes = [{_lab("col_date"): ot.formate_date(d, figtools.lang()),
-               _lab("col_montant"): ot.formate_dinars(v),
-               _lab("col_att"): ot.attestation("x" if a else "", figtools.lang())}
-              for d, v, a in _serie()]
+    lignes = [
+        {_lab("col_date"): ot.formate_date(d, figtools.lang()),
+         _lab("col_montant"): ot.formate_dinars(v),
+         _lab("col_reel"): ot.formate_dinars(round(reel, 1)),
+         _lab("col_type"): _lab("palier" if est_palier else "annuel"),
+         _lab("col_att"): _lab("a_documenter")}
+        for d, v, reel, est_palier, _a in _serie_reelle()
+    ]
     return pd.DataFrame(lignes)
 
 
 def prepare(generated: str | None = None):
     figtools.write_figdata(
-        table(), FIGDATA / "fig_pnafn_allocation.csv", SERIE,
-        note="allocation mensuelle du PNAFN, onze paliers de 1987 à 2018",
+        table(), FIGDATA / "fig_pnafn_allocation.csv", SERIE, SERIE_PRIX,
+        note=("allocation mensuelle du PNAFN, onze paliers de 1987 à 2018, en dinars "
+              "courants et en dinars constants de 1987"),
         generated=generated)
 
 
@@ -111,20 +142,24 @@ def fig_allocation():
     serie = _serie()
     annees = [int(d[:4]) + (int(d[5:7]) - 1) / 12 for d, _, _ in serie]
     montants = [v for _, v, _ in serie]
-    # Le palier courant se prolonge jusqu'à aujourd'hui : la série s'arrête faute de
-    # nouveau montant publié, non parce que l'allocation aurait cessé.
-    annees_tracees = annees + [2026.0]
-    montants_traces = montants + [montants[-1]]
-
-    fig, ax = plt.subplots(figsize=(9.5, 5))
-    ax.step(annees_tracees, montants_traces, where="post", color="#8b949e", lw=2,
-            ls=":", label=ft(_lab("lg_non")))
     non_att = [(a, m) for (a, m), (_, _, att) in zip(zip(annees, montants), serie) if not att]
-    att = [(a, m) for (a, m), (_, _, at) in zip(zip(annees, montants), serie) if at]
+    fig, ax = plt.subplots(figsize=(9.5, 5))
+    ax.step(annees, montants, where="post", color="#8b949e", lw=2,
+            ls=":", label=ft(_lab("lg_nominal")))
     ax.scatter([a for a, _ in non_att], [m for _, m in non_att], color="#8b949e",
                s=42, zorder=4)
-    ax.scatter([a for a, _ in att], [m for _, m in att], color="#1f6feb", s=90, zorder=5,
-               label=ft(_lab("lg_oui")))
+
+    serie_reelle = _serie_reelle()
+    annees_reelles = [int(d[:4]) + (int(d[5:7]) - 1) / 12
+                      for d, _v, _reel, _palier, _atteste in serie_reelle]
+    reels = [reel for _d, _v, reel, _palier, _atteste in serie_reelle]
+    ax.step(annees_reelles, reels, where="post", color="#b45309", lw=2, ls="--",
+            label=ft(_lab("lg_reel")))
+    points_paliers = [(annee, reel) for annee, (_d, _v, reel, palier, _atteste)
+                      in zip(annees_reelles, serie_reelle) if palier]
+    ax.scatter([annee for annee, _reel in points_paliers],
+               [reel for _annee, reel in points_paliers],
+               color="#b45309", marker="D", s=35, zorder=5)
 
     ax.set_ylabel(ft(_lab("y")))
     ax.set_xlabel(ft(_lab("x")))
