@@ -27,10 +27,11 @@ que chaque lien répond.
 
 ### Ce qui en découle, cas par cas
 
-**Un fait vrai du seul modèle ne se publie pas.** Une date qu'un paramètre porte à tort,
-une valeur que le modèle calcule d'une certaine façon, un croisement qu'il opère : rien de
-tout cela n'est un fait de droit. Ou bien l'assertion est établie sur le texte et se publie
-comme telle, ou bien elle ne se publie pas.
+**Un fait vrai du seul modèle ne se publie pas comme un état du droit.** Une date qu'un
+paramètre porte à tort, une valeur que le modèle calcule d'une certaine façon, un croisement
+qu'il opère : rien de tout cela n'est un fait de droit. L'unique exception est la conservation
+provisoire d'une série historique importante, encadrée au § 3 : elle est publiée pour rendre
+son évolution repérable, sans être qualifiée d'établie.
 
 **Ce que les textes n'établissent pas se dit sans nommer le modèle.** « Le partage des
 1,20 % entre maladie, maternité et décès n'est fixé par aucun texte identifié » est une
@@ -135,6 +136,14 @@ se constate ; il ne s'indigne pas.
 
 **Jamais un chiffre ponctuel sans sa vue d'évolution** — un graphique ou un tableau daté.
 Un taux en vigueur sans son histoire ne dit pas ce qu'il vaut.
+
+**Une série importante déjà portée par `openfisca-tunisia` ne disparaît pas faute de références.**
+Elle peut être publiée provisoirement pour rendre son évolution repérable, à trois conditions :
+la série entière est montrée plutôt qu'une valeur isolée ; la prose ne nomme pas le modèle et ne
+présente pas les états non sourcés comme du droit établi ; un commentaire invisible adjacent
+renvoie à une issue `openfisca-tunisia` qui énumère les valeurs et dates à fiabiliser. Le même
+signalement est inscrit dans `docs/notes/backlog-modele.md`. Une fois les sources retrouvées, elles
+sont versées au paramètre et le tableau est régénéré.
 
 **Des formules en symboles, des valeurs en égalités.** Une formule `$$ … $$` ne porte que des
 symboles, ni valeur ni mot (pas de `\text{}` : seule la prose se traduit), et écrit `\%`, jamais

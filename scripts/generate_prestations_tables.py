@@ -20,9 +20,8 @@ dont aucune valeur ne datait de 1960.
 
 Ne sont PAS générés, faute de contrepartie dans le modèle : les tableaux de structure
 juridique (conditions d'âge de l'enfant à charge, congés de maternité, multiplicateurs du
-capital décès, tarifs de l'aide médicale, matrice régime × prestation) et les aides
-ponctuelles de l'AMEN social, dont les cinq paramètres ne portent aucune référence et sont
-datés de 2019 alors que l'arrêté qui les fixe est de 2020.
+capital décès, tarifs de l'aide médicale, matrice régime × prestation). Les aides
+ponctuelles de l'AMEN social sont désormais générées avec leur référence à l'arrêté de 2022.
 """
 
 from __future__ import annotations
@@ -43,7 +42,7 @@ LANGUES = ("fr", "ar")
 # clés de citation — est identique dans les deux langues.
 MOTS = {
     "fr": {
-        "effet": "Effet", "texte": "Texte", "attestation": "Attestation",
+        "effet": "Effet", "date_etat": "Date de l'état", "texte": "Texte",
         "parametre": "Paramètre", "valeur": "Valeur",
         "rang1": "1^er^", "rang2": "2^e^", "rang3": "3^e^", "rang4": "4^e^",
         "rangs_servis": "Rangs servis",
@@ -73,7 +72,7 @@ MOTS = {
         "afnc": "Allocation familiale non contributive, par enfant",
     },
     "ar": {
-        "effet": "بداية السريان", "texte": "النصّ", "attestation": "الإثبات",
+        "effet": "بداية السريان", "date_etat": "تاريخ الحالة", "texte": "النصّ",
         "parametre": "المعيار", "valeur": "القيمة",
         "rang1": "الأوّل", "rang2": "الثاني", "rang3": "الثالث", "rang4": "الرابع",
         "rangs_servis": "الترتيبات المصروفة",
@@ -204,7 +203,6 @@ CLES_AMEN = {
     "2024-01-01": "arrete-2024-02-28-transferts, art. 1-2",
     "2025-01-01": "arrete-2025-01-29-transferts, art. 1-2",
 }
-CLES_PNAFN = {"2018-04-01": "arrete-2024-07-10-allocation-pauvres, art. 1"}
 CLES_SUPPLEMENT = {
     "2020-05-20": "arrete-2020-05-19-transferts, art. 2",
     "2022-02-01": "arrete-2022-04-01-transferts, art. 1",
@@ -285,6 +283,16 @@ def tableaux(langue):
         ])
         return df
 
+    def pnafn_allocation():
+        """Série importante conservée, sans attribuer aux dates une source qui ne les établit pas."""
+        df = ot.tableau_evolution_datee(
+            [(f"{NC}/pnafn/allocation.yaml", m["pnafn"], dinars)],
+            langue=langue, colonne_periode=m["date_etat"], colonne_texte=m["texte"],
+        )
+        if df is not None:
+            df[m["texte"]] = "—"
+        return df
+
     return {
         "af_evolution.md": af_evolution,
         "aides_ponctuelles.md": aides_ponctuelles,
@@ -306,16 +314,11 @@ def tableaux(langue):
             ],
             "1994-10-01", cles=CLES_CRECHE, entetes=entetes_verticales,
         ),
-        "pnafn_allocation.md": lambda: ot.tableau_evolution_datee(
-            [(f"{NC}/pnafn/allocation.yaml", m["pnafn"], dinars)],
-            cles=CLES_PNAFN, avec_attestation=True, langue=langue,
-            colonne_periode=m["effet"], colonne_texte=m["texte"],
-            colonne_attestation=m["attestation"],
-        ),
+        "pnafn_allocation.md": pnafn_allocation,
         "amen_base.md": lambda: ot.tableau_evolution_datee(
             [(f"{NC}/amen_social/allocation_base.yaml", m["amen_base"], dinars)],
             cles=CLES_AMEN, langue=langue,
-            colonne_periode=m["effet"], colonne_texte=m["texte"],
+            colonne_periode=m["date_etat"], colonne_texte=m["texte"],
         ),
         "amen_supplement_enfant.md": lambda: ot.tableau_evolution_datee(
             [
@@ -327,7 +330,7 @@ def tableaux(langue):
                  m["age_etudiant"], ans),
             ],
             cles=CLES_SUPPLEMENT, langue=langue,
-            colonne_periode=m["effet"], colonne_texte=m["texte"],
+            colonne_periode=m["date_etat"], colonne_texte=m["texte"],
         ),
         "amen_vs_afnc.md": lambda: ot.tableau_evolution_datee(
             [
@@ -335,7 +338,7 @@ def tableaux(langue):
                 (f"{NC}/allocation_familiale.yaml", m["afnc"], dinars),
             ],
             cles=CLES_AMEN_ET_AFNC, langue=langue,
-            colonne_periode=m["effet"], colonne_texte=m["texte"],
+            colonne_periode=m["date_etat"], colonne_texte=m["texte"],
         ),
     }
 
@@ -358,13 +361,10 @@ def main() -> int:
             ot.ecrire_tableau(sortie / nom, df, liens, langue)
         print(f"✓ {langue} : {len(tableaux(langue))} tableaux")
 
-    # La figure du PNAFN a besoin des mêmes paliers, mais en valeurs BRUTES : un tableau
-    # markdown porte « 7,700 D » et « 1er janvier 1987 », bons à lire, impropres à tracer.
-    # Cette série est donc émise ici, hors du build — le site se construit sans openfisca
-    # (#165) —, une seule fois puisque des valeurs brutes n'ont pas de langue.
+    # La figure lit un snapshot brut afin que le rendu du site reste autonome.
     serie = [
-        (date, valeur, "oui" if titre else "non")
-        for date, valeur, titre, _lien in ot.serie_datee(f"{NC}/pnafn/allocation.yaml")
+        (date, valeur, "non")
+        for date, valeur, _titre, _lien in ot.serie_datee(f"{NC}/pnafn/allocation.yaml")
         if valeur is not None
     ]
     if not serie:

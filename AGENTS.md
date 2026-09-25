@@ -32,9 +32,14 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   `rendre-les-livres.yml`, qui rend les dix livres sur chaque PR.
 - **Ne modifie pas les fichiers engendrés** : `_glossaire.qmd`, `translation_glossary.generated.md`,
   `precis/*/*/tables/*`.
-- **Aucune valeur, aucune date, aucune URL sans source vérifiée.** Une case vide honnête vaut mieux
-  qu'une valeur plausible. URL du JORT sur `pist.tn` uniquement, dans l'édition de la langue du
-  fichier.
+- **Aucune valeur isolée, aucune date, aucune URL sans source vérifiée.** Une case vide honnête vaut
+  mieux qu'une valeur plausible. Exception éditoriale : une **série historique importante déjà
+  portée par openfisca-tunisia** peut rester visible provisoirement pour que son évolution ne
+  disparaisse pas du précis. Elle est alors présentée dans son ensemble, jamais comme un état du
+  droit établi, sans mention du modèle dans le rendu ; un `<!-- TODO (documentaliste) : … -->`
+  adjacent renvoie à une issue ouverte sur `openfisca-tunisia` qui énumère les valeurs et dates à
+  sourcer, et le constat figure aussi dans `docs/notes/backlog-modele.md`. URL du JORT sur `pist.tn`
+  uniquement, dans l'édition de la langue du fichier.
 - **Ne committe pas** sans que l'humain ait relu, sauf consigne explicite. N'ouvre ni PR ni issue de
   ta propre initiative.
 - **OCR** : lance les océrisations au premier plan ou attends-les, et ne laisse aucun processus

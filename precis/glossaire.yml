@@ -1512,25 +1512,24 @@ entries:
   - id: prestations-familiales
     acronyme: null
     statut: valide
-    references: [loi60-30, loi88-38]
+    references: [loi60-30, loi80-36, loi94-88, loi88-38]
     source_definition: {ref: loi60-30, locator: "art. 51"}
     voir_aussi: [allocation-familiale, majoration-salaire-unique, contribution-frais-creche, cnss]
     fr:
       terme: Prestations familiales
       definition: >
-        Ensemble des trois prestations servies par les caisses au titre des enfants à
-        charge : l'allocation familiale, la majoration pour salaire unique et la
-        contribution aux frais de crèche. L'article 51 de la loi n° 60-30 en fixe la
-        liste ; leur ouverture suppose une affiliation et un droit ouvert, non une
-        condition de ressources.
+        Prestations servies au titre des enfants à charge. L'article 51 de la loi n° 60-30
+        comprend les allocations familiales, les allocations pour congés de naissance et
+        les allocations pour congés de jeunes travailleurs. La majoration pour salaire
+        unique et la contribution aux frais de crèche ont été ajoutées par des textes
+        ultérieurs.
       synonymes: []
     ar:
       terme: المنح العائلية
       definition: >
-        مجموع المنح الثلاث التي تسندها الصناديق بعنوان الأبناء المتكفَّل بهم: المنحة
-        العائلية ومنحة الأجر الوحيد والمساهمة في مصاريف رياض الأطفال. يضبط الفصل 51 من
-        القانون عدد 30 لسنة 1960 قائمتها، ويتوقّف فتح الحقّ فيها على الانخراط لا على شرط
-        الموارد.
+        منافع تُسند بعنوان الأبناء المتكفَّل بهم. ويشمل الفصل 51 من القانون عدد 30 لسنة
+        1960 المنح العائلية ومنح عطل الولادة ومنح عطل الشبان العاملين. وأضيفت منحة الأجر
+        الوحيد والمساهمة في مصاريف رياض الأطفال بنصوص لاحقة.
       synonymes: []
 
   - id: allocation-familiale
@@ -1590,17 +1589,16 @@ entries:
       definition: >
         Contribution mensuelle versée directement à la crèche au titre des enfants de
         deux à trente-six mois des assurées sociales dont le revenu ne dépasse pas un
-        plafond exprimé en multiples du salaire minimum. C'est le seul dispositif du
-        bloc contributif dont le champ soit explicitement genré : la loi vise « les
-        assurées sociales », le décret « la mère bénéficiaire ».
+        plafond exprimé en multiples du salaire minimum. La loi vise « les assurées
+        sociales » et le décret « la mère bénéficiaire ».
       synonymes: []
     ar:
       terme: المساهمة في مصاريف رياض الأطفال
       definition: >
         مساهمة شهرية تُدفع مباشرة إلى روضة الأطفال بعنوان أبناء المضمونات اجتماعيًّا
         الذين تتراوح أعمارهم بين شهرين وستّة وثلاثين شهرًا، شرط ألّا يتجاوز دخل الأمّ
-        سقفًا محدّدًا بمضاعفات الأجر الأدنى. وهي الترتيب الوحيد في الصنف المساهماتي الذي
-        يقتصر ميدانه صراحة على النساء.
+        سقفًا محدّدًا بمضاعفات الأجر الأدنى. ويذكر القانون «المضمونات اجتماعيا» والأمر
+        «الأم المنتفعة».
       synonymes: []
 
   - id: indemnite-journaliere
@@ -1798,6 +1796,58 @@ entries:
         لنفسه ولذوي حقّه.
       synonymes: []
 
+  - id: prestation-monetaire
+    acronyme: null
+    statut: provisoire  # équivalent AR moderne non attesté tel quel dans les textes vérifiés
+    references: [loi60-30, loi-amen-social-2019, arrete-2020-05-19-transferts]
+    source_definition: {ref: loi60-30, locator: "art. 68"}
+    voir_aussi: [prestation-non-monetaire, transfert-monetaire]
+    fr:
+      terme: Prestation monétaire
+      definition: >
+        Prestation qui procure directement une somme d'argent au bénéficiaire, par un
+        versement ponctuel ou périodique. Elle correspond souvent à ce que les textes
+        juridiques appellent une indemnité ou une prestation en espèces, sans remplacer
+        la dénomination propre de chaque indemnité, allocation ou transfert. La loi
+        n° 60-30 vise ainsi les « indemnités en espèces », tandis que la loi organique
+        n° 2019-10 distingue les transferts financiers directs et le soutien financier.
+      synonymes: []
+    ar:
+      terme: المنفعة النقدية
+      definition: >
+        منفعة تُسند إلى المنتفع في شكل مبلغ مالي، دفعة واحدة أو بصفة دورية. وهي تقابل
+        غالبًا ما تسمّيه النصوص القانونية منحة أو تعويضًا نقديًّا، دون أن تكون هذه
+        التسميات مترادفة في جميع السياقات. فالفصل 68 من القانون عدد 30 لسنة 1960 يذكر
+        «المنح النقدية»، بينما يميّز الفصلان 11 و12 من القانون الأساسي عدد 10 لسنة 2019
+        بين «التحويلات المالية المباشرة» و«الدعم المادي».
+      synonymes: []
+
+  - id: prestation-non-monetaire
+    acronyme: null
+    statut: provisoire  # équivalent AR moderne non attesté tel quel dans les textes vérifiés
+    references: [loi60-30, loi-amen-social-2019]
+    source_definition: {ref: loi60-30, locator: "art. 68"}
+    voir_aussi: [prestation-monetaire]
+    fr:
+      terme: Prestation non monétaire
+      definition: >
+        Prestation fournie sous forme de bien, de soin, de service ou d'accès à un
+        service, et non par le versement d'une somme. Elle correspond à la catégorie
+        traditionnellement appelée prestation en nature, sans que les deux expressions
+        soient toujours interchangeables. La loi n° 60-30 oppose aux indemnités en
+        espèces l'octroi des soins, et la loi organique n° 2019-10 distingue les
+        transferts et soutiens financiers des prestations de soins.
+      synonymes: []
+    ar:
+      terme: المنفعة غير النقدية
+      definition: >
+        منفعة تُسند في صورة سلعة أو علاج أو خدمة أو نفاذ إلى خدمة، لا في شكل مبلغ مالي.
+        وهي تقابل غالبًا ما يسمّى في المصطلح القانوني التقليدي منفعة عينية، دون تطابق
+        مطلق بين العبارتين. فالفصل 68 من القانون عدد 30 لسنة 1960 يقابل «المنح النقدية»
+        بالعلاج في صورة العيادات أو الإيواء، ويميّز الفصل 13 من القانون الأساسي عدد 10
+        لسنة 2019 «المنافع الصحية» من التحويلات والدعم المادي.
+      synonymes: []
+
   - id: cotisation-assure
     acronyme: null
     statut: valide  # AR : le singulier est dérivé du pluriel attesté « اشتراكات المضمونين »
@@ -1830,13 +1880,13 @@ entries:
     acronyme: null
     statut: valide
     references: [loi60-30, loi96-65]
-    source_definition: {ref: loi60-30, locator: "art. 53"}
+    source_definition: {ref: loi60-30, locator: "art. 54"}
     voir_aussi: [allocation-familiale, prestations-familiales]
     fr:
       terme: Enfant à charge
       definition: >
         Notion qui commande l'ouverture des prestations familiales. Les bornes d'âge de
-        l'article 53 de la loi n° 60-30 ont été relevées par la loi n° 96-65 : seize ans
+        l'article 54 de la loi n° 60-30 ont été relevées par la loi n° 96-65 : seize ans
         sans condition, vingt et un ans en cas de scolarité, sans limite en cas
         d'infirmité ou de maladie incurable.
       synonymes: []
@@ -1844,52 +1894,55 @@ entries:
       terme: الطفل المتكفَّل به
       definition: >
         مفهوم يتحكّم في فتح الحقّ في المنح العائلية. وقد رفع القانون عدد 65 لسنة 1996
-        حدود السنّ الواردة بالفصل 53 من القانون عدد 30 لسنة 1960: ستّة عشر عامًا دون
+        حدود السنّ الواردة بالفصل 54 من القانون عدد 30 لسنة 1960: ستّة عشر عامًا دون
         شرط، وواحد وعشرون عامًا في صورة الدراسة، ودون تحديد في صورة العجز أو المرض
         العضال.
       synonymes: []
 
   - id: indemnite-perte-emploi
     acronyme: null
-    statut: valide
+    statut: provisoire
     references: [loi96-101]
-    source_definition: {ref: loi96-101}
+    source_definition: {ref: loi96-101, locator: "art. 2-9"}
     voir_aussi: [assure-social, cnss]
     fr:
-      terme: Indemnité pour perte d'emploi
+      terme: Protection contre la perte d'emploi
       definition: >
-        Prestation servie au salarié privé de son emploi pour un motif économique ou
-        technique. Elle n'est ouverte qu'à une partie des régimes, ce qui en fait la
-        branche la plus inégalement distribuée du système contributif tunisien.
+        Mécanisme de la loi n° 96-101 qui garantit, en cas de cessation de paiement de
+        l'entreprise, les indemnités de licenciement et les droits légaux des travailleurs
+        ayant perdu leur emploi pour des raisons économiques ou technologiques. Il maintient
+        temporairement les prestations familiales et le droit aux soins, sans créer de revenu
+        de remplacement.
       synonymes: []
     ar:
-      terme: منحة فقدان الشغل
+      terme: الحماية الاجتماعية للعمال الذين يفقدون شغلهم لأسباب اقتصادية أو فنية
       definition: >
-        منفعة تُسند إلى الأجير الذي فقد شغله لسبب اقتصادي أو فنّي. ولا تُفتح إلّا في بعض
-        الأنظمة، ممّا يجعلها الفرع الأكثر تفاوتًا في التوزيع داخل المنظومة المساهماتية
-        التونسية.
+        آلية أقرّها القانون عدد 101 لسنة 1996 لضمان تعويضات الطرد والحقوق القانونية
+        للعمال الذين فقدوا شغلهم لأسباب اقتصادية أو فنية عند توقف المؤسسة عن الدفع.
+        وتُبقي مؤقتًا على المنح العائلية والحق في العلاج، دون أن تُحدث دخلًا بديلًا.
       synonymes: []
 
   - id: pnafn
     acronyme: PNAFN
     statut: valide
     references: [loi-86-83-lfr-1986, arrete-2024-07-10-allocation-pauvres]
-    source_definition: {ref: arrete-2024-07-10-allocation-pauvres, locator: "art. 1"}
+    source_definition: {ref: loi-86-83-lfr-1986, locator: "art. 13"}
     voir_aussi: [amen-social, amg1, condition-de-ressources]
     fr:
       terme: Programme national d'aide aux familles nécessiteuses
       definition: >
-        Programme d'assistance servant une allocation mensuelle aux familles sans
-        ressources, apparu en 1986. Aucun texte publié ne le crée, n'en fixe l'objet ni
-        l'éligibilité : il n'apparaît au *Journal officiel* qu'en qualité d'objet de
-        dépense, et son montant n'a été énoncé par un texte qu'en 2024.
+        Programme d'assistance dont la loi de finances rectificative de 1986 autorise le
+        financement par les organismes de sécurité sociale. L'arrêté conjoint du 10 juillet
+        2024 constate que son allocation mensuelle est alors fixée à 180 dinars et autorise
+        son relèvement dans la limite du transfert monétaire de l'AMEN social.
       synonymes: []
     ar:
       terme: البرنامج الوطني لمساعدة العائلات المعوزة
       definition: >
-        برنامج مساعدة يُسند منحة شهرية إلى العائلات المعوزة، ظهر سنة 1986. ولا يوجد نصّ
-        منشور يُحدثه أو يضبط موضوعه أو شروط الانتفاع به: إذ لا يرد بالرائد الرسمي إلّا
-        بوصفه بابًا من أبواب الإنفاق، ولم يُصرَّح بمقداره في نصّ إلّا سنة 2024.
+        برنامج مساعدة أجاز قانون المالية التعديلي لسنة 1986 تمويله من قبل هياكل الضمان
+        الاجتماعي. ويعاين القرار المشترك المؤرخ في 10 جويلية 2024 أن منحته الشهرية كانت
+        مضبوطة آنذاك بمائة وثمانين دينارًا، ويجيز الترفيع فيها في حدود التحويل النقدي
+        لبرنامج الأمان الاجتماعي.
       synonymes: []
 
   - id: amen-social
@@ -1903,15 +1956,13 @@ entries:
       definition: >
         Programme institué par la loi organique n° 2019-10, qui refonde l'assistance
         autour d'un ciblage par score, d'un transfert monétaire permanent et d'un accès
-        aux soins. Il se superpose au programme national d'aide aux familles
-        nécessiteuses sans l'abroger.
+        aux soins.
       synonymes: []
     ar:
       terme: برنامج الأمان الاجتماعي
       definition: >
         برنامج أحدثه القانون الأساسي عدد 10 لسنة 2019، أعاد بناء المساعدة الاجتماعية حول
-        الاستهداف بالتنقيط والتحويل النقدي القارّ والنفاذ إلى العلاج. وهو يتراكب مع
-        البرنامج الوطني لمساعدة العائلات المعوزة دون أن يلغيه.
+        الاستهداف بالتنقيط والتحويل النقدي القارّ والنفاذ إلى العلاج.
       synonymes: []
 
   - id: categories-pauvres
@@ -2009,8 +2060,7 @@ entries:
       definition: >
         Note calculée à partir de variables observables du ménage — le *proxy means
         test* — servant à départager les demandeurs de l'AMEN social. L'arrêté du 19 mai
-        2020 en énumère les dimensions mais **non les pondérations**, qui ne sont pas
-        publiées.
+        2020 en énumère les dimensions sans fixer les pondérations.
       synonymes: []
     ar:
       terme: أنموذج التنقيط
@@ -2031,15 +2081,15 @@ entries:
       definition: >
         Versement mensuel de l'AMEN social, composé d'une allocation de base et d'un
         supplément par enfant à charge, doublé pour l'enfant titulaire d'une carte de
-        handicap. La base est revalorisée chaque année, avec effet rétroactif au 1^er^
-        janvier.
+        handicap. La base a été revalorisée en 2022 puis chaque année jusqu'en 2025, avec
+        effet au 1^er^ janvier pour chacune de ces revalorisations.
       synonymes: []
     ar:
       terme: التحويل النقدي المباشر
       definition: >
         دفع شهري في إطار برنامج الأمان الاجتماعي يتكوّن من منحة قاعدية وزيادة عن كلّ طفل
         متكفَّل به، تُضاعَف بالنسبة إلى الطفل حامل بطاقة إعاقة. وتُراجَع المنحة القاعدية
-        سنويًّا بمفعول رجعي إلى غرّة جانفي.
+        في سنة 2022 ثم سنويًّا إلى سنة 2025، بمفعول يعود إلى غرّة جانفي لكلّ مراجعة.
       synonymes: []
 
   - id: allocation-familiale-non-contributive
@@ -2053,17 +2103,15 @@ entries:
       definition: >
         Allocation mensuelle servie au titre des enfants de moins de six ans des
         catégories pauvres et à revenu limité, créée en 2022. Elle est servie sans
-        plafonnement du nombre d'enfants, et exclut expressément les affiliés à un
-        régime de sécurité sociale : c'est la règle de non-cumul avec l'allocation
-        familiale contributive.
+        plafonnement du nombre d'enfants. Parmi les catégories à revenu limité, elle exclut
+        les personnes affiliées à un régime de sécurité sociale.
       synonymes: []
     ar:
       terme: المنحة العائلية غير المساهماتية
       definition: >
         منحة شهرية تُسند بعنوان الأبناء دون سنّ ستّ سنوات في الفئات الفقيرة ومحدودة
-        الدخل، أُحدثت سنة 2022. وتُسند دون تحديد لعدد الأبناء، وتستثني صراحة المنخرطين
-        في أحد أنظمة الضمان الاجتماعي، وهي قاعدة منع الجمع مع المنحة العائلية
-        المساهماتية.
+        الدخل، أُحدثت سنة 2022. وتُسند دون تحديد لعدد الأبناء، وتستثني من الفئات محدودة
+        الدخل المنخرطين في أحد أنظمة الضمان الاجتماعي.
       synonymes: []
 
   - id: amg1
@@ -2075,17 +2123,16 @@ entries:
     fr:
       terme: Carte de soins gratuits
       definition: >
-        Titre ouvrant la gratuité des soins dans les structures publiques, attribué aux
-        familles sans ressources et, de droit, aux bénéficiaires du programme national
-        d'aide aux familles nécessiteuses. Son attribution est contingentée par des
-        quotas régionaux non publiés.
+        Titre ouvrant la gratuité des soins dans les structures publiques, attribué à tout
+        Tunisien indigent, à son conjoint et à ses enfants légalement à charge, dans la
+        limite d'un nombre global de cartes et de quotas régionaux fixés par arrêté conjoint.
       synonymes: []
     ar:
       terme: بطاقة العلاج المجاني
       definition: >
-        سند يخوّل مجّانية العلاج بالهياكل الصحّية العمومية، ويُسند إلى العائلات المعوزة،
-        وبقوّة القانون إلى المنتفعين بالبرنامج الوطني لمساعدة العائلات المعوزة. ويخضع
-        إسناده إلى حصص جهوية غير منشورة.
+        سند يخوّل مجّانية العلاج بالهياكل الصحّية العمومية، ويُسند إلى كل تونسي معوز
+        وقرينه وأبنائه المتكفّل بهم قانونًا، في حدود عدد جملي من البطاقات وحصص جهوية
+        تُضبط بقرار مشترك.
       synonymes: []
 
   - id: amg2
@@ -2138,17 +2185,16 @@ entries:
     fr:
       terme: Quota régional
       definition: >
-        Contingent de cartes de soins réparti entre gouvernorats, qui borne le nombre de
-        bénéficiaires indépendamment du nombre de ménages éligibles. Aucun arrêté fixant
-        ces quotas n'a été retrouvé : c'est l'un des trois paramètres décisifs de
-        l'assistance tunisienne à ne pas être publié.
+        Contingentement prévu par les décrets relatifs aux cartes de soins gratuits et à
+        tarifs réduits. Ces décrets disposent que le nombre global de cartes et sa
+        répartition régionale sont fixés par arrêté conjoint.
       synonymes: []
     ar:
       terme: الحصّة الجهوية
       definition: >
-        حصّة من بطاقات العلاج تُوزَّع بين الولايات وتحدّ من عدد المنتفعين بصرف النظر عن
-        عدد الأسر المستوفية للشروط. ولم يُعثر على أيّ قرار يضبط هذه الحصص، وهي أحد ثلاثة
-        معايير حاسمة في المساعدة الاجتماعية التونسية لم تُنشر.
+        تحديد للحصص تنصّ عليه الأوامر المتعلقة ببطاقات العلاج المجاني وبالتعريفة
+        المنخفضة. وتقرّر هذه الأوامر أن يُضبط العدد الجملي للبطاقات وتوزيعها الجهوي
+        بقرار مشترك.
       synonymes: []
 
   - id: salaire-journalier-moyen
@@ -4903,4 +4949,3 @@ entries:
         وتُحتسب على الضريبة النظرية، ولا بتلك المنصوص عليها بالفقرة II من
         الفصل 44، وهي مقابلها في الضريبة على دخل الأشخاص الطبيعيين.
       synonymes: [الحد الأدنى للضريبة]
-

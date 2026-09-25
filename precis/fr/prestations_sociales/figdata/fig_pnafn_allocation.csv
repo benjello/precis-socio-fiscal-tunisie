@@ -1,18 +1,18 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-24
-# séries (tunisia_data) : pnafn-allocation
-# sources (citation) : @arrete-2024-07-10-allocation-pauvres, @loi-86-83-lfr-1986
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-25
+# séries (tunisia_data) : pnafn-allocation, ipc-pnafn-base2015
+# sources (citation) : @arrete-2024-07-10-allocation-pauvres, @ins-annuaire
 # fiches : 
-# méthode/hypothèses : Dix des onze paliers ne reposent sur aucun texte publié au Journal officiel : ce sont des décisions administratives. Seul celui de 180 dinars est attesté, et par un arrêté de 2024 qui le constate sans le fixer.
-# note : Allocation mensuelle du PNAFN, 1987-2018
-Date d'effet,Allocation mensuelle (D),Attestation
-1^er^ janvier 1987,"7,7",**non établie**
-1^er^ janvier 2000,"36,3",**non établie**
-1^er^ janvier 2009,"53,333",**non établie**
-1^er^ juillet 2009,"56,666",**non établie**
-1^er^ juillet 2010,"63,333",**non établie**
-1^er^ juillet 2011,70,**non établie**
-1^er^ avril 2012,100,**non établie**
-1^er^ juillet 2013,110,**non établie**
-1^er^ juillet 2014,120,**non établie**
-1^er^ janvier 2015,150,**non établie**
-1^er^ avril 2018,180,texte établi
+# méthode/hypothèses : Les dates de tous les paliers et les montants antérieurs à 180 dinars restent à fiabiliser., Indice reconstitué par chaînage des taux annuels publiés par l'INS. Une date en cours d'année est déflatée par l'indice annuel moyen.
+# note : Allocation mensuelle du PNAFN, en dinars courants et constants de 2015, 1987-2018
+Date de l'état,Allocation mensuelle (D courants),Valeur au changement de palier (D constants de 2015),Attestation
+1^er^ janvier 1987,"7,7","26,1",À fiabiliser
+1^er^ janvier 2000,"36,3","64,7",À fiabiliser
+1^er^ janvier 2009,"53,333","71,3",À fiabiliser
+1^er^ juillet 2009,"56,666","75,8",À fiabiliser
+1^er^ juillet 2010,"63,333","81,1",À fiabiliser
+1^er^ juillet 2011,70,"86,6",À fiabiliser
+1^er^ avril 2012,100,"117,2",À fiabiliser
+1^er^ juillet 2013,110,"121,5",À fiabiliser
+1^er^ juillet 2014,120,"125,7",À fiabiliser
+1^er^ janvier 2015,150,150,À fiabiliser
+1^er^ avril 2018,180,"153,3",À fiabiliser

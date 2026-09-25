@@ -93,7 +93,6 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Indemnité de décès | منحة الوفاة |  |
 | Indemnité de revenu unique | منحة الدخل الوحيد |  |
 | Indemnité journalière | التعويض اليومي |  |
-| Indemnité pour perte d'emploi | منحة فقدان الشغل |  |
 | Indemnité spécifique | المنحة الخصوصية |  |
 | Jouissance différée | الانتفاع المؤجَّل بالجراية |  |
 | Limite de calcul des prestations | الحدّ الأقصى لاحتساب المنافع |  |
@@ -116,11 +115,14 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Péréquation des pensions | تنظير الجرايات |  |
 | Position tarifaire | البند التعريفي |  |
 | Précis socio-fiscal | الملخّص الاجتماعي والجبائي |  |
+| Prestation monétaire | المنفعة النقدية |  |
+| Prestation non monétaire | المنفعة غير النقدية |  |
 | Prestations familiales | المنح العائلية |  |
 | Prime de rendement | منحة المردودية |  |
 | Produit intérieur brut | الناتج المحلي الإجمالي | PIB |
 | Programme national d'aide aux familles nécessiteuses | البرنامج الوطني لمساعدة العائلات المعوزة | PNAFN |
 | Promotion | الترقية |  |
+| Protection contre la perte d'emploi | الحماية الاجتماعية للعمال الذين يفقدون شغلهم لأسباب اقتصادية أو فنية |  |
 | Quota régional | الحصّة الجهوية |  |
 | Recettes fiscales | المداخيل الجبائية |  |
 | Régime agricole amélioré | النظام الفلاحي المحسَّن | RSAA |

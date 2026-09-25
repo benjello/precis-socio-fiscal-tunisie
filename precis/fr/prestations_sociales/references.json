@@ -1259,6 +1259,21 @@
           ]
         ]
       }
+    },
+    {
+      "id": "ins-annuaire",
+      "type": "report",
+      "title": "Annuaire statistique de la Tunisie (éditions 1995-2001, 1998-2002, 1999-2003 et 2019-2023)",
+      "title-short": "INS, Annuaire statistique de la Tunisie",
+      "author": [
+        {
+          "literal": "Institut National de la Statistique (INS)"
+        }
+      ],
+      "publisher": "Institut National de la Statistique, Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.ins.tn/publication/annuaire-statistique-de-la-tunisie-2019-2023",
+      "note": "citation-key: ins-annuaire\nEnsemble d'éditions d'une publication annuelle de l'INS, à édition glissante sur cinq ans ou plus. Éditions utilisées pour l'indice des prix à la consommation : 1995-2001, 1998-2002, 1999-2003 et 2019-2023."
     }
   ]
 }
