@@ -491,13 +491,15 @@ from figures import pnafn as fig_pnafn
 import figtools
 figtools.figure_tabs(
     fig_pnafn.fig_allocation(), fig_pnafn.table(),
-    "pnafn-allocation", "ipc-pnafn-base2015",
+    "pnafn-allocation", "ipc-pnafn-base1987",
     slug="fig_pnafn_allocation",
-    caption="Allocation mensuelle du PNAFN, en dinars courants et constants de 2015, 1987-2018",
+    caption="Allocation mensuelle du PNAFN, en dinars courants et constants de 1987, 1987-2018",
     note_lecture=(
         "La courbe grise retrace les paliers en dinars courants. La courbe orange indique "
-        "la valeur de chaque montant, au changement de palier, en dinars constants de 2015. "
-        "Les deux séries partagent la même échelle et coïncident donc en 2015. "
+        "le pouvoir d'achat du montant applicable, en dinars constants de 1987. Elle est "
+        "recalculée au début de chaque année afin de montrer l'érosion entre deux "
+        "revalorisations ; les losanges signalent les changements de palier. Les deux "
+        "séries partagent la même échelle et commencent donc ensemble à 7,7 dinars en 1987. "
         "La conversion utilise l'indice annuel moyen des prix à la consommation : pour "
         "les changements intervenus en cours d'année, elle ne mesure donc pas les prix du "
         "mois exact. Le palier de "

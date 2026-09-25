@@ -1,18 +1,46 @@
 # Figure-data du précis socio-fiscal tunisien — généré le 2026-09-25
-# séries (tunisia_data) : pnafn-allocation, ipc-pnafn-base2015
+# séries (tunisia_data) : pnafn-allocation, ipc-pnafn-base1987
 # sources (citation) : @arrete-2024-07-10-allocation-pauvres, @ins-annuaire
 # fiches : 
-# méthode/hypothèses : Les dates de tous les paliers et les montants antérieurs à 180 dinars restent à fiabiliser., Indice reconstitué par chaînage des taux annuels publiés par l'INS. Une date en cours d'année est déflatée par l'indice annuel moyen.
-# note : Allocation mensuelle du PNAFN, en dinars courants et constants de 2015, 1987-2018
-Date de l'état,Allocation mensuelle (D courants),Valeur au changement de palier (D constants de 2015),Attestation
-1^er^ janvier 1987,"7,7","26,1",À fiabiliser
-1^er^ janvier 2000,"36,3","64,7",À fiabiliser
-1^er^ janvier 2009,"53,333","71,3",À fiabiliser
-1^er^ juillet 2009,"56,666","75,8",À fiabiliser
-1^er^ juillet 2010,"63,333","81,1",À fiabiliser
-1^er^ juillet 2011,70,"86,6",À fiabiliser
-1^er^ avril 2012,100,"117,2",À fiabiliser
-1^er^ juillet 2013,110,"121,5",À fiabiliser
-1^er^ juillet 2014,120,"125,7",À fiabiliser
-1^er^ janvier 2015,150,150,À fiabiliser
-1^er^ avril 2018,180,"153,3",À fiabiliser
+# méthode/hypothèses : Les dates de tous les paliers et les montants antérieurs à 180 dinars restent à fiabiliser. Le pouvoir d'achat est calculé avec l'indice annuel moyen des prix à la consommation., Indice reconstitué par chaînage des taux annuels publiés par l'INS. Une date en cours d'année est déflatée par l'indice annuel moyen.
+# note : Allocation mensuelle du PNAFN, en dinars courants et constants de 1987, 1987-2018
+Date de l'état,Allocation mensuelle (D courants),Pouvoir d'achat (D constants de 1987),Point de mesure,Attestation
+1^er^ janvier 1987,"7,7","7,7",Changement de palier,À fiabiliser
+1^er^ janvier 1988,"7,7","7,2",Repère annuel,À fiabiliser
+1^er^ janvier 1989,"7,7","6,7",Repère annuel,À fiabiliser
+1^er^ janvier 1990,"7,7","6,3",Repère annuel,À fiabiliser
+1^er^ janvier 1991,"7,7","5,8",Repère annuel,À fiabiliser
+1^er^ janvier 1992,"7,7","5,5",Repère annuel,À fiabiliser
+1^er^ janvier 1993,"7,7","5,3",Repère annuel,À fiabiliser
+1^er^ janvier 1994,"7,7","5,1",Repère annuel,À fiabiliser
+1^er^ janvier 1995,"7,7","4,8",Repère annuel,À fiabiliser
+1^er^ janvier 1996,"7,7","4,6",Repère annuel,À fiabiliser
+1^er^ janvier 1997,"7,7","4,4",Repère annuel,À fiabiliser
+1^er^ janvier 1998,"7,7","4,3",Repère annuel,À fiabiliser
+1^er^ janvier 1999,"7,7","4,2",Repère annuel,À fiabiliser
+1^er^ janvier 2000,"36,3","19,1",Changement de palier,À fiabiliser
+1^er^ janvier 2001,"36,3","18,8",Repère annuel,À fiabiliser
+1^er^ janvier 2002,"36,3","18,2",Repère annuel,À fiabiliser
+1^er^ janvier 2003,"36,3","17,8",Repère annuel,À fiabiliser
+1^er^ janvier 2004,"36,3","17,1",Repère annuel,À fiabiliser
+1^er^ janvier 2005,"36,3","16,8",Repère annuel,À fiabiliser
+1^er^ janvier 2006,"36,3","16,1",Repère annuel,À fiabiliser
+1^er^ janvier 2007,"36,3","15,6",Repère annuel,À fiabiliser
+1^er^ janvier 2008,"36,3","14,9",Repère annuel,À fiabiliser
+1^er^ janvier 2009,"53,333","21,1",Changement de palier,À fiabiliser
+1^er^ juillet 2009,"56,666","22,4",Changement de palier,À fiabiliser
+1^er^ janvier 2010,"56,666","21,5",Repère annuel,À fiabiliser
+1^er^ juillet 2010,"63,333",24,Changement de palier,À fiabiliser
+1^er^ janvier 2011,"63,333","23,2",Repère annuel,À fiabiliser
+1^er^ juillet 2011,70,"25,6",Changement de palier,À fiabiliser
+1^er^ janvier 2012,70,"24,2",Repère annuel,À fiabiliser
+1^er^ avril 2012,100,"34,6",Changement de palier,À fiabiliser
+1^er^ janvier 2013,100,"32,6",Repère annuel,À fiabiliser
+1^er^ juillet 2013,110,"35,9",Changement de palier,À fiabiliser
+1^er^ janvier 2014,110,34,Repère annuel,À fiabiliser
+1^er^ juillet 2014,120,"37,1",Changement de palier,À fiabiliser
+1^er^ janvier 2015,150,"44,3",Changement de palier,À fiabiliser
+1^er^ janvier 2016,150,"42,7",Repère annuel,À fiabiliser
+1^er^ janvier 2017,150,"40,6",Repère annuel,À fiabiliser
+1^er^ janvier 2018,150,"37,8",Repère annuel,À fiabiliser
+1^er^ avril 2018,180,"45,3",Changement de palier,À fiabiliser
