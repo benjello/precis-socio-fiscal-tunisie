@@ -56,9 +56,8 @@ _L = {
                     "ar": "المبلغ الجاري (مستويات تحتاج إلى توثيق)"},
     "lg_reel": {"fr": "Valeur au changement de palier (dinars constants de 2015)",
                  "ar": "القيمة عند تغيّر المستوى (بالدينار الثابت لسنة 2015)"},
-    "y": {"fr": "Dinars courants par mois", "ar": "دينار جار في الشهر"},
-    "y_reel": {"fr": "Dinars constants de 2015 par mois",
-                "ar": "دينار ثابت لسنة 2015 في الشهر"},
+    "y": {"fr": "Dinars par mois (courants et constants de 2015)",
+          "ar": "دينار في الشهر (جار وثابت لسنة 2015)"},
     "x": {"fr": "Année", "ar": "السنة"},
     "titre": {"fr": "Allocation mensuelle du PNAFN, 1987-2018",
                "ar": "المنحة الشهرية للبرنامج الوطني لمساعدة العائلات المعوزة، 1987-2018"},
@@ -138,19 +137,13 @@ def fig_allocation():
                s=42, zorder=4)
 
     reels = [v for _, v, _ in _serie_reelle()]
-    ax_reel = ax.twinx()
-    ax_reel.plot(annees, reels, color="#b45309", lw=2, ls="--",
-                 marker="D", markersize=4.5, label=ft(_lab("lg_reel")))
+    ax.plot(annees, reels, color="#b45309", lw=2, ls="--",
+            marker="D", markersize=4.5, label=ft(_lab("lg_reel")))
 
     ax.set_ylabel(ft(_lab("y")))
-    ax_reel.set_ylabel(ft(_lab("y_reel")), color="#b45309")
-    ax_reel.tick_params(axis="y", colors="#b45309")
     ax.set_xlabel(ft(_lab("x")))
     ax.set_title(ft(_lab("titre")))
     ax.grid(True, alpha=0.3)
-    lignes, libelles = ax.get_legend_handles_labels()
-    lignes_reelles, libelles_reels = ax_reel.get_legend_handles_labels()
-    ax.legend(lignes + lignes_reelles, libelles + libelles_reels,
-              loc="upper left", fontsize=8.5)
+    ax.legend(loc="upper left", fontsize=8.5)
     fig.tight_layout()
     return fig

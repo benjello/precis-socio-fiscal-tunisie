@@ -495,8 +495,9 @@ figtools.figure_tabs(
     slug="fig_pnafn_allocation",
     caption="Allocation mensuelle du PNAFN, en dinars courants et constants de 2015, 1987-2018",
     note_lecture=(
-        "L'axe gauche retrace les paliers en dinars courants. L'axe droit indique la "
-        "valeur de chaque montant, au changement de palier, en dinars constants de 2015. "
+        "La courbe grise retrace les paliers en dinars courants. La courbe orange indique "
+        "la valeur de chaque montant, au changement de palier, en dinars constants de 2015. "
+        "Les deux séries partagent la même échelle et coïncident donc en 2015. "
         "La conversion utilise l'indice annuel moyen des prix à la consommation : pour "
         "les changements intervenus en cours d'année, elle ne mesure donc pas les prix du "
         "mois exact. Le palier de "
