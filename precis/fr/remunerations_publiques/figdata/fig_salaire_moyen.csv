@@ -1,18 +1,23 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-22
-# séries (tunisia_data) : fonction-publique-salaires-2015-2025
-# sources (citation) : @ins-fonction-publique-2021, @ins-fonction-publique-2025
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-25
+# séries (tunisia_data) : fonction-publique-brut-contributions-2010-2025, fonction-publique-salaires-2015-2025
+# sources (citation) : @ins-fonction-publique-2021, @ins-fonction-publique-2025, @ins-fonction-publique-historiques
 # fiches : sources/ins-fonction-publique-2018-2025.md
-# méthode/hypothèses : SÉRIE RACCORDÉE. ARBITRAGE : le millésime le plus récent fait foi sur 2018-2020 ; les valeurs de tab18 écartées sont listées dans la fiche. Chaque indicateur est raccordé à lui-même — jamais un brut avec contributions à un brut sans. Le raccord laisse une marche d'environ un dinar entre 2017 et 2018 (révision du millésime 2025 non reportée sur 2015-2017) : le taux 2017→2018 recalculé sur la série vaut 2,8 % pour le brut avec contributions et 2,9 % sans, contre 2,9 % et 3,0 % publiés ; pour le net il vaut 3,4 %, comme publié. Les taux d'accroissement ne sont PAS repris : les lire dans les séries homogènes `fonction-publique-salaires` et `fonction-publique-salaires-2018-2025`.
-# note : Salaire mensuel moyen dans la fonction publique, 2015-2025
-Année,Brut (avec contributions),Brut (sans contributions),Net,Source
-2015,1461.8,1248.7,916.7,"INS, enquête 2010-2021"
-2016,1644.6,1405.1,1019.8,"INS, enquête 2010-2021"
-2017,1668.3,1427.4,1096.0,"INS, enquête 2010-2021"
-2018,1715.6,1468.5,1133.3,"INS, rapport 2018-2025"
-2019,2017.9,1699.8,1197.9,"INS, rapport 2018-2025"
-2020,2260.4,1904.1,1309.4,"INS, rapport 2018-2025"
-2021,2341.2,1969.5,1314.9,"INS, rapport 2018-2025"
-2022,2467.2,2075.7,1387.9,"INS, rapport 2018-2025"
-2023,2476.1,2080.4,1396.3,"INS, rapport 2018-2025"
-2024,2606.4,2186.7,1474.3,"INS, rapport 2018-2025"
-2025,2698.1,2265.4,1556.9,"INS, rapport 2018-2025"
+# méthode/hypothèses : SÉRIE COMPOSITE PAR MILLÉSIME INS. Les rapports 2010-2014 à 2013-2017 publient un « salaire brut moyen mensuel » ; cette série est reprise comme brut avec contributions car elle se raccorde à la notion explicitement nommée dans tab18. À partir de 2015, la source nomme explicitement le brut avec contributions. Arbitrage : le millésime le plus récent fait foi pour chaque année ; les valeurs écartées sont conservées dans salaire_brut_contributions_2010_2025_conflits.csv. Révisions notables : 2013 (1287,3 → 1299,4), 2014 (1334,3 → 1326,6), 2015 (1388,9 puis 1461,8), 2016 (1580,7 puis 1644,6), 2017 (1653,5 puis 1668,3), et écarts d'environ un dinar entre tab18 et le rapport 2018-2025 sur 2018-2020. Montants en dinars courants, non déflatés., SÉRIE RACCORDÉE. ARBITRAGE : le millésime le plus récent fait foi sur 2018-2020 ; les valeurs de tab18 écartées sont listées dans la fiche. Chaque indicateur est raccordé à lui-même — jamais un brut avec contributions à un brut sans. Le raccord laisse une marche d'environ un dinar entre 2017 et 2018 (révision du millésime 2025 non reportée sur 2015-2017) : le taux 2017→2018 recalculé sur la série vaut 2,8 % pour le brut avec contributions et 2,9 % sans, contre 2,9 % et 3,0 % publiés ; pour le net il vaut 3,4 %, comme publié. Les taux d'accroissement ne sont PAS repris : les lire dans les séries homogènes `fonction-publique-salaires` et `fonction-publique-salaires-2018-2025`.
+# note : Salaire mensuel moyen dans la fonction publique, 2010-2025
+Année,Salaire brut + contributions,Salaire brut,Salaire net,Source — brut + contributions,Source — brut / net
+2010,1064.9,,,2010-2014,
+2011,1127.5,,,2011-2015,
+2012,1184.7,,,2012-2016,
+2013,1299.4,,,2013-2017,
+2014,1326.6,,,2013-2017,
+2015,1461.8,1248.7,916.7,"enquête 2010-2021, tab18","INS, enquête 2010-2021"
+2016,1644.6,1405.1,1019.8,"enquête 2010-2021, tab18","INS, enquête 2010-2021"
+2017,1668.3,1427.4,1096.0,"enquête 2010-2021, tab18","INS, enquête 2010-2021"
+2018,1715.6,1468.5,1133.3,"rapport 2018-2025, tableau 10","INS, rapport 2018-2025"
+2019,2017.9,1699.8,1197.9,"rapport 2018-2025, tableau 10","INS, rapport 2018-2025"
+2020,2260.4,1904.1,1309.4,"rapport 2018-2025, tableau 10","INS, rapport 2018-2025"
+2021,2341.2,1969.5,1314.9,"rapport 2018-2025, tableau 10","INS, rapport 2018-2025"
+2022,2467.2,2075.7,1387.9,"rapport 2018-2025, tableau 10","INS, rapport 2018-2025"
+2023,2476.1,2080.4,1396.3,"rapport 2018-2025, tableau 10","INS, rapport 2018-2025"
+2024,2606.4,2186.7,1474.3,"rapport 2018-2025, tableau 10","INS, rapport 2018-2025"
+2025,2698.1,2265.4,1556.9,"rapport 2018-2025, tableau 10","INS, rapport 2018-2025"

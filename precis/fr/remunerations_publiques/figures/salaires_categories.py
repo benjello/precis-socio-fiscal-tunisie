@@ -3,14 +3,14 @@
 Deux séries de l'INS, dans DEUX CONCEPTS DIFFÉRENTS, qui ne se raccordent pas :
 
   - `ins-salaire-par-categorie-hors-contributions-2018-2025` — rapport 2018-2025,
-    tableau 12 : salaire mensuel brut **hors contributions**, 2018-2025. C'est la série
+    tableau 12 : salaire mensuel brut **sans contributions**, 2018-2025. C'est la série
     principale de la figure.
   - `ins-salaire-par-categorie` — enquête 2010-2021, tab20 : salaire mensuel brut **avec
     contributions**, 2015-2020. Elle reste présentée, pour mémoire, dans un panneau à part.
 
 L'INS intitule les deux tableaux « salaire mensuel brut » sans préciser le concept. Il
 est établi par recoupement : pondéré par les effectifs par catégorie, le tableau 12
-redonne le brut **sans** contributions du rapport, et tab20 le brut **avec** contributions
+redonne le salaire brut **sans** contributions du rapport, et tab20 le brut **avec** contributions
 de l'enquête. Les effectifs par catégorie étant identiques dans les deux publications sur
 2018-2020, l'écart ne vient pas du champ ; le rapport entre les deux séries varie de 1,14
 à 1,20 selon la catégorie et l'année, et aucun coefficient ne passe de l'une à l'autre.
@@ -24,7 +24,7 @@ calcule dans son propre concept.
     sc.salaires_reel_table()
 
 CE QUE LA FIGURE MONTRE : le resserrement de la hiérarchie, mesuré par le rapport entre
-A1 et D. Brut avec contributions : 2,14 en 2015, 1,73 en 2020. Brut hors contributions :
+A1 et D. Brut avec contributions : 2,14 en 2015, 1,73 en 2020. Brut sans contributions :
 1,92 en 2018, 1,67 en 2019, puis une lente remontée à 1,77 en 2023-2025. Les deux séries
 situent l'essentiel du resserrement en 2018-2019 ; aucune ne le montre se poursuivre
 après 2020.
@@ -49,6 +49,53 @@ SERIE = "ins-salaire-par-categorie-hors-contributions-2018-2025"   # principale
 SERIE_AVEC = "ins-salaire-par-categorie"   # 2015-2020, brut avec contributions
 SERIE_IPC = "bct-ipc-base2015"   # indice des prix, base 100 = 2015
 
+figtools.register_provenance(
+    SERIE,
+    titre="Salaire mensuel brut sans contributions des fonctionnaires par catégorie statutaire, 2018-2025",
+    titre_ar="الأجر الشهري الخام دون المساهمات للموظفين حسب الصنف القانوني، 2018-2025",
+    sources=["ins-fonction-publique-2025"],
+    raw=["data/raw/ins-fonction-publique-2018-2025/La fonction publique - 2018-2025.pdf"],
+    output="data/processed/ins-fonction-publique-2018-2025/salaire_par_categorie_hors_contributions.csv",
+    unite="dinars courants / mois",
+    unite_ar="دينار جاري / شهر",
+    perimetre=("fonctionnaires, six catégories statutaires A1 à D ; le tableau 12 est "
+               "étiqueté salaire mensuel brut moyen"),
+    perimetre_ar="الموظفون، ستة أصناف قانونية من أ1 إلى د؛ عنوان الجدول 12 هو معدل الأجر الشهري الخام",
+    caveats=("Le tableau 12 ne précise pas à lui seul s'il s'agit du brut avec ou sans "
+             "contributions. La pondération par les effectifs du tableau 6 redonne le "
+             "salaire brut sans contributions du tableau 10, notion explicitement nommée "
+             "par l'INS. Non raccordable au tableau 20 de l'enquête 2010-2021, qui redonne "
+             "le brut avec contributions."),
+    caveats_ar=("لا يبيّن الجدول 12 وحده هل يتعلق الأمر بالأجر الخام مع المساهمات أو دونها. "
+                "وترجيحه بأعداد الجدول 6 يعطي الأجر الخام دون المساهمات في الجدول 10، وهي "
+                "تسمية يصرّح بها المعهد. ولا تُوصل هذه السلسلة بالجدول 20 من مسح 2010-2021 "
+                "الذي يعطي الأجر الخام مع المساهمات."),
+    fiche="sources/ins-fonction-publique-2018-2025.md",
+)
+
+figtools.register_provenance(
+    SERIE_AVEC,
+    titre="Salaire mensuel brut avec contributions des fonctionnaires par catégorie statutaire, 2015-2020",
+    titre_ar="الأجر الشهري الخام مع المساهمات للموظفين حسب الصنف القانوني، 2015-2020",
+    sources=["ins-fonction-publique-2021"],
+    raw=["data/raw/ins-fonction-publique-salaires-2010-2021/tab20_0.xlsx"],
+    output="data/processed/ins-fonction-publique-salaires-2010-2021/salaire_par_categorie.csv",
+    unite="dinars courants / mois",
+    unite_ar="دينار جاري / شهر",
+    perimetre="fonctionnaires de l'État, six catégories statutaires A1 à D",
+    perimetre_ar="موظفو الدولة، ستة أصناف قانونية من أ1 إلى د",
+    caveats=("Le tableau 20 est étiqueté salaire mensuel brut. La pondération par les "
+             "effectifs du tableau 8 redonne les fonctionnaires du tableau 19, puis le "
+             "tableau 19 pondéré redonne le salaire brut avec contributions du tableau 18, "
+             "notion explicitement nommée par l'INS. La troisième ligne est libellée A2 en "
+             "français mais A3 en arabe ; le libellé A3 est rétabli par position."),
+    caveats_ar=("عنوان الجدول 20 هو الأجر الشهري الخام. وترجيحه بأعداد الجدول 8 يعطي أجر "
+                "الموظفين في الجدول 19، ثم يعطي الجدول 19 مرجحًا الأجر الخام مع المساهمات "
+                "في الجدول 18، وهي تسمية يصرّح بها المعهد. والسطر الثالث موسوم أ2 بالفرنسية "
+                "وأ3 بالعربية؛ لذلك أُعيدت تسمية أ3 بحسب موضع السطر."),
+    fiche="sources/ins-fonction-publique-salaires-2010-2021.md",
+)
+
 # Année de référence de la déflation : celle de la base de l'indice, pour que les dinars
 # constants soient ceux d'une année réellement observée et non d'un point interpolé.
 ANNEE_BASE = 2015
@@ -60,10 +107,10 @@ _COULEURS = {"A1": "#08519c", "A2": "#3182bd", "A3": "#9ecae1",
              "B": "#fd8d3c", "C": "#d1242f", "D": "#6e7781"}
 
 _L = {
-    "titre": {"fr": "Salaire mensuel brut hors contributions des fonctionnaires "
+    "titre": {"fr": "Salaire mensuel brut sans contributions des fonctionnaires "
                     "par catégorie, 2018-2025",
               "ar": "الأجر الشهري الخام دون المساهمات للموظفين حسب الصنف، 2018-2025"},
-    "p_sans": {"fr": "Brut hors contributions, 2018-2025\n(INS, rapport 2018-2025)",
+    "p_sans": {"fr": "Brut sans contributions, 2018-2025\n(INS, rapport 2018-2025)",
                "ar": "خام دون المساهمات، 2018-2025\n(المعهد الوطني للإحصاء، تقرير 2018-2025)"},
     "p_avec": {"fr": "Pour mémoire : brut avec contributions,\n2015-2020 (INS, enquête "
                      "2010-2021)\nautre concept — non raccordable",
@@ -74,15 +121,15 @@ _L = {
     "col_annee": {"fr": "Année", "ar": "السنة"},
     "col_concept": {"fr": "Concept (source)", "ar": "المفهوم (المصدر)"},
     "col_ratio": {"fr": "Rapport A1/D", "ar": "النسبة أ1/د"},
-    "c_sans": {"fr": "Brut hors contributions (INS, rapport 2018-2025)",
+    "c_sans": {"fr": "Brut sans contributions (INS, rapport 2018-2025)",
                "ar": "خام دون المساهمات (المعهد الوطني للإحصاء، تقرير 2018-2025)"},
     "c_avec": {"fr": "Brut avec contributions (INS, enquête 2010-2021)",
                "ar": "خام مع المساهمات (المعهد الوطني للإحصاء، مسح 2010-2021)"},
-    "titre_reel": {"fr": "Salaire brut hors contributions par catégorie, en dinars "
+    "titre_reel": {"fr": "Salaire brut sans contributions par catégorie, en dinars "
                          "constants de 2015, 2018-2024",
                    "ar": "الأجر الخام دون المساهمات حسب الصنف، بالدينار الثابت لسنة 2015، "
                          "2018-2024"},
-    "p_sans_reel": {"fr": "Brut hors contributions, 2018-2024\n(indice des prix "
+    "p_sans_reel": {"fr": "Brut sans contributions, 2018-2024\n(indice des prix "
                           "publié jusqu'en 2024)",
                     "ar": "خام دون المساهمات، 2018-2024\n(مؤشّر الأسعار منشور حتى 2024)"},
     "y_reel": {"fr": "Dinars constants de 2015 par mois",
@@ -154,7 +201,7 @@ def _deux_panneaux(avec, sans, titre: str, titre_sans: str, ylabel: str):
     """Panneau étroit « pour mémoire » à gauche, série principale à droite ; même échelle.
 
     Deux axes distincts, et non deux courbes sur un même axe : rien ne doit suggérer que
-    2020 (avec contributions) se prolonge en 2021 (hors contributions).
+    2020 (avec contributions) se prolonge en 2021 (sans contributions).
     """
     figtools.apply_lang_font()
     ft = figtools.fig_text
@@ -190,7 +237,7 @@ def fig_salaires():
 def fig_salaires_reel():
     """Le pendant déflaté : ce que la figure nominale ne peut pas montrer.
 
-    En dinars courants la grille monte partout. Déflatée, la série hors contributions
+    En dinars courants la grille monte partout. Déflatée, la série sans contributions
     (2018-2024, l'indice s'arrêtant en 2024) progresse jusqu'en 2020 puis recule dans
     toutes les catégories : en 2024, toutes sont sous leur niveau réel de 2018, A1 et C
     le plus nettement. Le panneau « pour mémoire » garde la lecture 2015-2020 du concept

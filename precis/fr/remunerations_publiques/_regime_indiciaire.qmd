@@ -334,26 +334,31 @@ Pour situer le poids de ce régime, on renvoie aux agrégats présentés en intr
 
 Deux éclairages complémentaires peuvent toutefois être apportés, l'un sur la hiérarchie des rémunérations, l'autre sur le poids de l'emploi public dans l'emploi total.
 
-Le salaire moyen de l'ensemble des agents en donne d'abord le niveau. L'INS le publie sous trois notions — brut avec contributions, brut sans contributions et net —, que ses deux publications successives permettent de suivre de 2015 à 2025 [@ins-fonction-publique-2021; @ins-fonction-publique-2025].
+Le salaire moyen de l'ensemble des agents en donne d'abord le niveau. L'INS le publie sous trois notions, explicitement nommées dans les tableaux d'ensemble : le **salaire brut + contributions** (`Sal brut + contrib.` dans le tableau par ministère de 2020 ; « salaire mensuel brut avec contributions » dans les tableaux d'évolution), le **salaire brut** (`Sal brut`, ou « sans contributions » dans les tableaux d'évolution) et le **salaire net** (`Sal net`) [@ins-fonction-publique-2021; @ins-fonction-publique-2025]. La première notion peut être suivie depuis 2010 à travers les rapports successifs de l'INS ; les deux autres ne sont reprises ici qu'à partir de 2015. La source ne ventile pas ces contributions ; le précis conserve donc les trois libellés statistiques de l'INS sans les requalifier en cotisations salariales ou patronales.
 
 ```{python}
 #| label: fig-salaire-moyen
-#| fig-cap: "Salaire mensuel moyen dans la fonction publique, 2015-2025 (source INS)."
+#| fig-cap: "Salaire mensuel moyen dans la fonction publique, 2010-2025 (source INS)."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import effectifs_fonction_publique as efp
 import figtools
 figtools.figure_tabs(
-    efp.fig_salaire(), efp.salaire_table(), "fonction-publique-salaires-2015-2025",
+    efp.fig_salaire(), efp.salaire_table(),
+    "fonction-publique-brut-contributions-2010-2025", "fonction-publique-salaires-2015-2025",
     slug="fig_salaire_moyen",
-    caption="Salaire mensuel moyen dans la fonction publique, 2015-2025",
+    caption="Salaire mensuel moyen dans la fonction publique, 2010-2025",
     note_lecture=(
-        "**Trois notions de salaire**, telles que l'INS les publie : le brut **avec** "
-        "contributions, le brut **sans** contributions et le **net**. La source ne "
-        "définit pas les contributions. Montants en **dinars courants**, non déflatés.\n\n"
-        "**Une série raccordée.** Les années 2015-2017 viennent de l'enquête 2010-2021, "
-        "les années 2018-2025 du rapport 2018-2025, qui fait foi sur les années communes. "
+        "**Trois notions de salaire**, telles que l'INS les publie : le **salaire "
+        "brut + contributions**, le **salaire brut** et le **salaire net**. Les tableaux "
+        "d'évolution appellent aussi le salaire brut « sans contributions ». Le **brut + "
+        "contributions** est suivi depuis 2010 ; le brut et le net sont affichés à partir "
+        "de 2015 seulement. La source ne ventile pas ces contributions ; elles ne sont donc pas requalifiées ici. "
+        "Montants en **dinars courants**, non déflatés.\n\n"
+        "**Une série raccordée.** Pour le brut + contributions, les années 2010-2014 "
+        "viennent des anciens rapports INS, 2015-2017 de l'enquête 2010-2021, "
+        "et 2018-2025 du rapport 2018-2025, qui fait foi sur les années communes. "
         "Sur 2018-2020, les deux publications diffèrent d'environ un dinar sur les deux "
         "bruts ; le net de 2018 passe de 1 130,3 à 1 133,3 dinars, valeur que corrobore "
         "le taux d'accroissement publié par l'enquête elle-même. Chaque notion n'est "
@@ -365,11 +370,11 @@ figtools.figure_tabs(
 )
 ```
 
-La grille décrite plus haut classe les grades en six catégories selon le niveau de diplôme exigé au recrutement (@tbl-categories-grades). Les deux publications de l'INS permettent de suivre, sur cette même nomenclature, le salaire brut effectivement perçu — mais chacune dans une notion différente. Elles intitulent leurs tableaux « salaire mensuel brut » sans préciser laquelle ; le recoupement la rétablit. Pondérés par les effectifs de chaque catégorie, les montants de l'enquête 2010-2021 redonnent, de proche en proche, le brut **avec** contributions qu'elle publie pour l'ensemble des agents ; ceux du rapport 2018-2025 redonnent le brut **sans** contributions, d'où l'intitulé « brut hors contributions » retenu ci-dessous. Pour des effectifs par catégorie identiques dans les deux publications sur 2018-2020, les montants de la première dépassent ceux de la seconde de 14 à 20 % selon la catégorie et l'année : aucun coefficient ne passe de l'une à l'autre, et les deux séries ne se raccordent pas. Elles sont donc présentées côte à côte, chacune dans sa notion.
+La grille décrite plus haut classe les grades en six catégories selon le niveau de diplôme exigé au recrutement (@tbl-categories-grades). Les deux publications de l'INS permettent de suivre, sur cette même nomenclature, le salaire brut effectivement perçu — mais les tableaux par catégorie ne portent que l'intitulé général « salaire mensuel brut ». Le rapprochement avec les tableaux d'ensemble permet de préciser la notion : pondérés par les effectifs de chaque catégorie, les montants de l'enquête 2010-2021 redonnent, de proche en proche, le **salaire brut + contributions** qu'elle publie pour l'ensemble des agents ; ceux du rapport 2018-2025 redonnent le **salaire brut sans contributions** du tableau 10. Pour des effectifs par catégorie identiques dans les deux publications sur 2018-2020, les montants de la première dépassent ceux de la seconde de 14 à 20 % selon la catégorie et l'année : aucun coefficient ne passe de l'une à l'autre, et les deux séries ne se raccordent pas. Elles sont donc présentées côte à côte, chacune dans sa notion.
 
 ```{python}
 #| label: fig-salaires-categories
-#| fig-cap: "Salaire mensuel brut hors contributions des fonctionnaires par catégorie statutaire, 2018-2025, et pour mémoire brut avec contributions, 2015-2020 (source INS)."
+#| fig-cap: "Salaire mensuel brut sans contributions des fonctionnaires par catégorie statutaire, 2018-2025, et pour mémoire brut avec contributions, 2015-2020 (source INS)."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
@@ -379,7 +384,7 @@ figtools.figure_tabs(
     sc.fig_salaires(), sc.salaires_table(),
     "ins-salaire-par-categorie-hors-contributions-2018-2025", "ins-salaire-par-categorie",
     slug="fig_salaires_categories",
-    caption=("Salaire mensuel brut hors contributions des fonctionnaires par catégorie "
+    caption=("Salaire mensuel brut sans contributions des fonctionnaires par catégorie "
              "statutaire, 2018-2025, et pour mémoire brut avec contributions, 2015-2020"),
     note_lecture=(
         "**Les six catégories** sont celles du décret n°99-12, définies par le diplôme "
@@ -389,14 +394,14 @@ figtools.figure_tabs(
         "**C** exécution qualifiée ; **D** exécution. Elles ordonnent la grille du haut "
         "vers le bas.\n\n"
         "**Deux panneaux, deux notions.** Le panneau principal, à droite, donne le "
-        "salaire brut **hors contributions** (rapport 2018-2025) ; celui de gauche, pour "
+        "salaire brut **sans contributions** (rapport 2018-2025) ; celui de gauche, pour "
         "mémoire, le brut **avec contributions** de l'enquête précédente (2015-2020). "
         "Leurs niveaux ne se comparent pas : sur les années communes, le second dépasse "
         "le premier de 14 à 20 % selon la catégorie. Le rapport entre catégories, lui, "
         "se lit dans chaque panneau.\n\n"
         "La figure montre le **resserrement** de la hiérarchie, mesuré dans chaque "
         "notion séparément. Brut avec contributions, le rapport entre A1 et D revient de "
-        "**2,14 en 2015 à 1,73 en 2020** ; brut hors contributions, de **1,92 en 2018 à "
+        "**2,14 en 2015 à 1,73 en 2020** ; brut sans contributions, de **1,92 en 2018 à "
         "1,67 en 2019**, avant de remonter lentement jusqu'à **1,77 de 2023 à 2025**. "
         "L'essentiel du resserrement se situe en 2018-2019, non parce que le haut "
         "recule, mais parce que le bas progresse plus vite — les augmentations générales "
@@ -417,7 +422,7 @@ Ces montants sont nominaux. Déflatés par l'indice des prix, publié jusqu'en 2
 
 ```{python}
 #| label: fig-salaires-categories-reel
-#| fig-cap: "Salaire brut par catégorie statutaire, en dinars constants de 2015 : hors contributions 2018-2024, et pour mémoire avec contributions 2015-2020 (sources INS et BCT)."
+#| fig-cap: "Salaire brut par catégorie statutaire, en dinars constants de 2015 : sans contributions 2018-2024, et pour mémoire avec contributions 2015-2020 (sources INS et BCT)."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
@@ -429,10 +434,10 @@ figtools.figure_tabs(
     "bct-ipc-base2015",
     slug="fig_salaires_categories_reel",
     caption=("Salaire mensuel brut par catégorie statutaire, en dinars constants de 2015 : "
-             "hors contributions 2018-2024, et pour mémoire avec contributions 2015-2020"),
+             "sans contributions 2018-2024, et pour mémoire avec contributions 2015-2020"),
     note_lecture=(
         "**La même grille que @fig-salaires-categories, déflatée.** En dinars courants "
-        "toutes les catégories progressent ; en pouvoir d'achat, la série hors "
+        "toutes les catégories progressent ; en pouvoir d'achat, la série sans "
         "contributions dessine deux temps :\n\n"
         "- de **2018 à 2020**, toutes les catégories gagnent, le bas davantage que le "
         "haut : **D +20,3 %**, A3 +18,4 %, B +17,8 %, A2 +14,3 %, C +13,2 %, "

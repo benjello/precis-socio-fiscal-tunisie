@@ -44,7 +44,8 @@ import figtools  # noqa: E402
 
 SERIE_EFF = "fonction-publique-effectifs"                 # enquête 2010-2021, milliers
 SERIE_EFF_2025 = "fonction-publique-effectifs-2018-2025"  # rapport 2018-2025, agents
-SERIE_SAL = "fonction-publique-salaires-2015-2025"        # série raccordée des niveaux
+SERIE_SAL = "fonction-publique-salaires-2015-2025"        # trois notions, depuis 2015
+SERIE_SAL_LONG = "fonction-publique-brut-contributions-2010-2025"  # brut + contributions
 
 # Première année que fournit le millésime le plus récent : il fait foi à partir d'elle.
 _DEBUT_2025 = 2018
@@ -85,19 +86,19 @@ _L = {
                   "ar": "انقطاع السلسلة:\nتغيّر نطاق\nالجماعات المحلية"},
     "couverture": {"fr": "collectivités locales : couverture\ncroissante de la base administrative",
                    "ar": "الجماعات المحلية: تغطية\nمتزايدة للقاعدة الإدارية"},
-    "raccord":   {"fr": "2015-2017 : enquête 2010-2021\n2018-2025 : rapport 2018-2025",
-                  "ar": "سنوات 2015-2017: مسح 2010-2021\nسنوات 2018-2025: تقرير 2018-2025"},
+    "raccord":   {"fr": "brut + contributions : 2010-2014 rapports anciens\n2015-2017 enquête 2010-2021 ; 2018-2025 rapport 2018-2025",
+                  "ar": "الخام مع المساهمات: 2010-2014 تقارير قديمة\n2015-2017 مسح 2010-2021؛ 2018-2025 تقرير 2018-2025"},
     "xlabel":    {"fr": "Année", "ar": "السنة"},
     "ylabel":    {"fr": "Effectifs (milliers d’agents)", "ar": "الأعداد (بآلاف الأعوان)"},
     "title":     {"fr": "Effectifs de la fonction publique en Tunisie, 2015-2025",
                   "ar": "أعداد أعوان الوظيفة العمومية في تونس، 2015-2025"},
     # salaire moyen
-    "sal_avec":  {"fr": "Brut (avec contributions)", "ar": "خام (مع المساهمات)"},
-    "sal_sans":  {"fr": "Brut (sans contributions)", "ar": "خام (دون المساهمات)"},
-    "sal_net":   {"fr": "Net", "ar": "صافٍ"},
+    "sal_avec":  {"fr": "Salaire brut + contributions", "ar": "الأجر الخام + المساهمات"},
+    "sal_sans":  {"fr": "Salaire brut", "ar": "الأجر الخام"},
+    "sal_net":   {"fr": "Salaire net", "ar": "الأجر الصافي"},
     "sal_y":     {"fr": "Salaire mensuel (dinars courants)", "ar": "الأجر الشهري (دينار جارٍ)"},
-    "sal_title": {"fr": "Salaire mensuel moyen dans la fonction publique, 2015-2025",
-                  "ar": "متوسّط الأجر الشهري في الوظيفة العمومية، 2015-2025"},
+    "sal_title": {"fr": "Salaire mensuel moyen dans la fonction publique, 2010-2025",
+                  "ar": "متوسّط الأجر الشهري في الوظيفة العمومية، 2010-2025"},
 }
 
 
@@ -178,26 +179,35 @@ def fig_effectifs():
 
 
 def _salaires():
+    import pandas as pd
+
+    long = figtools.series(SERIE_SAL_LONG)
+    long = (long[["annee", "valeur", "source"]]
+            .rename(columns={"valeur": _BRUT_AVEC, "source": "source_brut_contributions"}))
     df = figtools.series(SERIE_SAL)
     keep = [_BRUT_AVEC, _BRUT_SANS, _NET]
     w = (df[df["indicateur"].isin(keep)]
          .pivot(index="annee", columns="indicateur", values="valeur")
          .reset_index())
     w.columns.name = None
+    w = w[["annee", _BRUT_SANS, _NET]]
+    w["source_brut_net"] = [_source(int(a)) for a in w["annee"]]
+    w = pd.merge(long, w, on="annee", how="outer").sort_values("annee")
     w["annee"] = w["annee"].astype(int)
-    return w[["annee", *keep]]
+    return w[["annee", _BRUT_AVEC, _BRUT_SANS, _NET,
+              "source_brut_contributions", "source_brut_net"]]
 
 
 def salaire_table():
     """Tableau (onglet Données) : trois indicateurs, dinars courants, et source par année."""
     w = _salaires()
-    w["source"] = [_source(a) for a in w["annee"]]
     return w.rename(columns={
         "annee": _lab("col_annee"),
         _BRUT_AVEC: _lab("sal_avec"),
         _BRUT_SANS: _lab("sal_sans"),
         _NET: _lab("sal_net"),
-        "source": _lab("col_source"),
+        "source_brut_contributions": _lab("col_source") + " — brut + contributions",
+        "source_brut_net": _lab("col_source") + " — brut / net",
     })
 
 
@@ -210,9 +220,10 @@ def fig_salaire():
     ax.plot(y, w[_BRUT_AVEC], "o-", color="#1f6feb", lw=2, ms=4, label=ft(_lab("sal_avec")))
     ax.plot(y, w[_BRUT_SANS], "s--", color="#8957e5", lw=1.6, ms=3, label=ft(_lab("sal_sans")))
     ax.plot(y, w[_NET], "^-.", color="#d1242f", lw=1.6, ms=3, label=ft(_lab("sal_net")))
+    ax.axvline(2014.5, color="#8b949e", lw=0.8, ls=":")
     ax.axvline(_DEBUT_2025 - 0.5, color="#8b949e", lw=0.8, ls=":")
     ax.annotate("\n".join(ft(line) for line in _lab("raccord").split("\n")),
-                xy=(_DEBUT_2025 - 0.4, 0.12), xycoords=("data", "axes fraction"),
+                xy=(2014.6, 0.12), xycoords=("data", "axes fraction"),
                 fontsize=7, color="#57606a", ha="left", va="center")
     ax.set_xlabel(ft(_lab("xlabel")))
     ax.set_ylabel(ft(_lab("sal_y")))
