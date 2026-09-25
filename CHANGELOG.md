@@ -1,5 +1,48 @@
 # Changelog
 
+## [1.29.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.28.0...v1.29.0) (2026-09-25)
+
+
+### ✨ Nouveautés
+
+* **fiscalite:** affiche les tarifs de la contribution personnelle d'État de 1962, 1965, 1980 et 1983 ([e121de8](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/e121de89a1eed3c4b617b3b9514287a025aef64d))
+* **fiscalite:** tableau daté du plafond de la contribution personnelle d'État ([53331af](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/53331af80a51d7812d8c925201a5e2fd05c043a3))
+* **outillage:** les recherches infructueuses, hors du texte et rejouables ([8f2af7f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/8f2af7f739cd7c855398f8672bc35fb0ce402167))
+* **recherches:** périodes closes, faux fascicules français, sondage de pist.tn, mise à jour du corpus ([1a92917](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/1a929175950cd2efbd449e7617300a376882e11c))
+* **retraites:** les emplois de la partie active, limite d'âge de 55 ans (1967, 1969, 1981, 1984) ([9c8922a](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/9c8922a3c35049a5d0f81577bfe8d47265f15104))
+* **retraites:** tableaux engendrés des lignes chiffrées des non-salariés et de la CNRPS 1959-1985 ([2dfbe40](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/2dfbe409ab09fcb2a4347b33f4e7c8ca4ced7eb3))
+
+
+### 🐛 Corrections de bugs
+
+* **biblio:** --comparer renomme shortTitle, et le rangement laisse le fonds commun en paix ([10dca5e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/10dca5e4aabdb3019f5b755a5d28fe239aca318f))
+* **figures:** une seule figure numérotée par appel à figure_tabs, et onglet « Base législative » pour les séries du droit codé ([b853f2d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/b853f2d1cf0dba63e8d78323c916c1b2b7236e4f))
+* **outillage:** ancres de section après une classe, lacunes mesurées de la fiche d'exemple ([779700f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/779700fb7c85131825eb30041f3b2d42a646f572))
+* **precis:** le texte rendu dit ce qui est connu, pas comment on l'a cherché ([6928f2e](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/6928f2edd1a684265c0eee22b908b57f61fcd7c5))
+* **precis:** les recherches infructueuses quittent le texte pour docs/recherches.yml ([a69f913](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/a69f913d0e0491a1729eb4e8c1d4664dcb152474))
+* **prestations:** aligne les séries PNAFN sur une échelle ([2552ee0](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/2552ee0e60df8d42d0dd07403759d5db7408fc21))
+* **prestations:** l'étiquette d'attestation « texte lu » devient « texte établi » ([1ebc774](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/1ebc774253176393bc239aadd304c4fc7e99e8a5))
+* **prestations:** rebascule le PNAFN en dinars de 1987 ([8260bb5](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/8260bb5ea7dc11f137a1484a3364601a43882621))
+* **retraites:** renvois aux séries 1959-1985, fonds des travailleuses agricoles, SMAG des non-salariés ([b46bf54](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/b46bf54fbeb297abe6749210abc31d47f29dd17c))
+* **tests:** test_sync_agents sauté sans PyYAML, comme les autres tests qui en dépendent ([c8725a2](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/c8725a208750260a7d288d1f29959bfb2dcca8c6))
+
+
+### 📝 Documentation
+
+* **backlog:** période de référence agricole des non-salariés réglée par openfisca-tunisia[#461](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/461) ([2619536](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/2619536c224b50dfcb7be2c1f84462a57321a44d))
+* **cotisations:** fiches des régimes, bilan et annexes ; renvois des Retraites ([3e758ab](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/3e758ab00e0fa43ab745f82e19daf830b00206c3))
+* **cotisations:** les branches une à une ([838990f](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/838990f5677dc7a47d75563e2fd0e839570ac195))
+* **cotisations:** présentation, assiette et taux global en tête du livre ([79f8e1a](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/79f8e1a043b867a1cfdbe5cc8a992a103c33b123))
+* **fiscalite:** droits de consommation, l'évolution réforme par réforme ([444b7de](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/444b7de24d6d37e7615364cc9dc2656095004bb4))
+* **fiscalite:** IRPP au plan type — institution avant le calcul, formule, tableau des réformes ([c2d23fe](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/c2d23fe36e319dffe5b8b6c6e707a638fd9141f1))
+* **fiscalite:** une présentation du livre ([70ba553](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/70ba553d08df085b6589bb3d1cb4a0c1f5e95513))
+* **prestations:** clarifie les formes et les sources ([4b1b8d9](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/4b1b8d9b5771e00b050c4b1accf114516ead2a8a))
+* **prestations:** prestations familiales selon le plan type d'un dispositif ([ad4fe01](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/ad4fe01af7c8700d5248c4a535b9b61284ac3698))
+* **recherches:** passe du 24 septembre 2026 sur trois fiches, corpus complété ([6655946](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/66559465daab0467b16667372c20a2c42e787b95))
+* **recherches:** passe du 24 septembre sur 74-499, 81-6 et le fonds des travailleuses agricoles ([d12cd99](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/d12cd990afad95237d131d0ad47d0d55409cdcc9))
+* **retraites:** article 2 des barèmes d'actualisation de 1996 et 2000 à 2005, lu au fascicule ([1bd88bd](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/1bd88bd83ad7cb2306e66fdb1cf6ce7a1ea898c4))
+* **retraites:** fonds de protection sociale des travailleuses agricoles (LF 2025, art. 15-16) ([02f145d](https://github.com/benjello/precis-socio-fiscal-tunisie/commit/02f145d54dd551dab91e38e857962d9641229582))
+
 ## [1.28.0](https://github.com/benjello/precis-socio-fiscal-tunisie/compare/v1.27.0...v1.28.0) (2026-09-23)
 
 
