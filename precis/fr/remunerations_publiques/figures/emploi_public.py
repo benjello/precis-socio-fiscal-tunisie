@@ -1,4 +1,4 @@
-"""Figure « poids de l'emploi public dans l'emploi total » (sources INS et BCT).
+"""Figure « poids de la fonction publique civile dans l'emploi total ».
 
 Numérateurs : les deux publications de l'INS sur la fonction publique — d'une part
 l'ensemble des **agents** (ouvriers et contractuels compris), d'autre part les seuls
@@ -56,12 +56,12 @@ _CATS = ["Catégorie A1", "Catégorie A2", "Catégorie A3",
          "Catégorie B", "Catégorie C", "Catégorie D"]
 
 _L = {
-    "titre": {"fr": "Poids de l'emploi public dans l'emploi total, 2015-2024",
-              "ar": "وزن التشغيل العمومي في التشغيل الإجمالي، 2015-2024"},
+    "titre": {"fr": "Poids de la fonction publique civile dans l'emploi total, 2015-2024",
+              "ar": "وزن الوظيفة العمومية المدنية في التشغيل الإجمالي، 2015-2024"},
     "x": {"fr": "Année", "ar": "السنة"},
     "y": {"fr": "Part de la population active occupée (%)",
           "ar": "الحصة من السكان النشيطين المشتغلين (٪)"},
-    "lg_agents": {"fr": "Agents de la fonction publique (y compris ouvriers et contractuels)",
+    "lg_agents": {"fr": "Agents civils de la fonction publique (y compris ouvriers et contractuels)",
                   "ar": "أعوان الوظيفة العمومية (بما في ذلك العملة والمتعاقدون)"},
     "lg_fonc": {"fr": "Fonctionnaires seuls (catégories A1 à D)",
                 "ar": "الموظفون وحدهم (الأصناف أ1 إلى د)"},
@@ -134,7 +134,7 @@ def fig_part():
     ax.plot(annees, r_ag, "o-", color="#08519c", lw=2.2, ms=5, label=ft(_lab("lg_agents")))
     ax.plot(annees, r_fo, "s--", color="#bf8700", lw=1.8, ms=4, label=ft(_lab("lg_fonc")))
 
-    # 2020 : c'est le dénominateur qui recule, pas l'emploi public qui bondit.
+    # 2020 : c'est le dénominateur qui recule, pas l'effectif public civil qui bondit.
     # Le cartouche va dans la bande HAUTE, vide, et une flèche le rattache au point de
     # 2020 : placé entre les deux courbes il tenait à l'étroit, et rien ne disait ce
     # qu'il commentait.

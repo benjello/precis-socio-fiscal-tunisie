@@ -1,4 +1,4 @@
-"""Figures « masse salariale publique » du livre *Rémunérations publiques*.
+"""Figures « masse salariale du budget de l'État ».
 
 Frontière : les séries viennent de `tunisia_data` (entrepôt) ; ici on prépare le
 figdata téléchargeable (sourcé) et on rend les figures. À appeler depuis un chunk
@@ -53,8 +53,8 @@ _L = {
                 "ar": "كتلة الأجور / الناتج المحلي الإجمالي (%)"},
     "y_dep":   {"fr": "Masse salariale / dépenses (%)", "ar": "كتلة الأجور / النفقات (%)"},
     "xlabel":  {"fr": "Année", "ar": "السنة"},
-    "title":   {"fr": "Poids de la masse salariale publique en Tunisie, 1990-2025",
-                "ar": "وزن كتلة الأجور العمومية في تونس، 1990-2025"},
+    "title":   {"fr": "Poids de la masse salariale du budget de l'État, 1990-2025",
+                "ar": "وزن كتلة الأجور في ميزانية الدولة، 1990-2025"},
     "col_annee": {"fr": "Année", "ar": "السنة"},
     "col_pib":   {"fr": "% du PIB", "ar": "% من الناتج المحلي الإجمالي"},
     "col_dep":   {"fr": "% des dépenses totales", "ar": "% من إجمالي النفقات"},
