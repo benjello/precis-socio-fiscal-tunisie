@@ -6,6 +6,43 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## État vérifié le 29/09/2026
+
+Inventaire actuel (branche `docs/remunerations-relecture`, non fusionnée) : **535 clés**
+locales (`push_biblio.py --verifier` : 535 entrées, 0 perte), **533 présentes dans Zotero**.
+Deux clés absentes sont à verser après fusion : `ins-fonction-publique-historiques` et
+`decret-statut-caisses-1999`, dans les deux fichiers
+`precis/{fr,ar}/remunerations_publiques/references.json`. La première entrée est
+déjà sourcée par la page de l'INS de l'édition 2010-2014 (FR et AR) : son `issued` du 4 juillet
+2016 est la date de **cette édition**, non une date commune établie pour les quatre rapports
+rassemblés sous cette clé. Ses sources figurent dans l'en-tête de
+`figdata/fig_salaire_moyen.csv`, que le contrôle de rangement lit désormais. Elle n'existe pas
+encore sur `master` ; la seconde cite le décret d'approbation du statut des caisses de
+sécurité sociale publié au JORT n° 77 de 1999. **Ne pas déclencher `pousser-tout` sur
+`master` avant la fusion.**
+
+Contrôle de rangement au 29/09/2026 (API publique, lecture seule, avec les sources des
+figures) : 533 clés Zotero, 586 citations relevées, 465 bien rangées,
+**18 à déclasser**, 0 à ranger, 50 sans citation, 2 absentes de Zotero
+(les deux clés ci-dessus). Ces chiffres sont à revérifier après fusion.
+Les 18 déclassements constatés sont : `bct-ra`, `decret2015-462`,
+`decret2016-1`, `decret2019-1133`, `decret2019-209`, `decret2020-767`, `decretloi2011-48`,
+`ins-annuaire`, `ins-cnat-2015`, `ins-fonction-publique-2021`, `loi60-33`,
+`loi79-66-lf1980`, `loi94-28`, `loi96-101`, `minfin-ep`, `minfin-ep-2020`,
+`minfin-indicateurs-fp`, `minfin-remunerations`. Les listes détaillées et les collections
+à retirer sortent de `--controle-rangement` puis de `--appliquer-rangement` **à blanc**.
+Le nombre de « 30 clés en attente » dans l'ancien index des notes et les « pas encore dans
+Zotero » des passes ci-dessous décrivaient leur état **au jour de chaque passe** : ne pas
+relancer leurs créations sans refaire cet inventaire.
+
+Action convenue avec l'humain : **écriture Zotero après fusion** de la branche. À ce moment,
+relancer `--permissions`, `--verifier`, `--dry-run` (avec la clé du workflow),
+`--controle-rangement` et `--appliquer-rangement` à blanc sur `master` ; lire les écarts,
+créer la première clé absente (`pousser-un`, puis `comparer`), vérifier l'aller-retour avant
+`pousser-tout`, puis ranger les nouvelles clés dans « Rémunérations publiques » et appliquer
+les déclassements confirmés. Ne pas faire de
+descente avant de vérifier la préservation des notes et des URL par langue.
+
 ## En attente
 
 ### Livre « Retraites » — CNRPS, emplois de la partie active (versement du 24/09/2026)

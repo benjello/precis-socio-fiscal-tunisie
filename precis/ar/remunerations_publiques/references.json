@@ -420,10 +420,18 @@
       }
     },
     {
+      "id": "decret-statut-caisses-1999",
+      "type": "legislation",
+      "note": "citation-key: decret-statut-caisses-1999\nالرائد الرسمي عدد 77 بتاريخ 24 سبتمبر 1999، ص. 2077. نُشر أمر المصادقة على نظام أعوان مؤسسات الضمان الاجتماعي دون نص النظام الأساسي الكامل في النسخة العربية التي تمت مراجعتها؛ لا تُنسب إليه هنا قاعدة أجور غير مقروءة.",
+      "title": "أمر عدد 99-2024 مؤرخ في 13 سبتمبر 1999 يتعلق بالمصادقة على النظام الأساسي الخاص لأعوان مؤسسات الضمان الاجتماعي",
+      "URL": "https://www.pist.tn/jort/1999/1999A/Ja07799.pdf",
+      "issued": {"date-parts": [[1999, 9, 13]]}
+    },
+    {
       "id": "decret-statut-caisses-2022",
       "type": "legislation",
-      "note": "citation-key: decret-statut-caisses-2022",
-      "title": "أمر رئاسي عدد 2022-76 مؤرخ في 22 فيفري 2022",
+      "note": "citation-key: decret-statut-caisses-2022\nالرائد الرسمي عدد 20 بتاريخ 23 فيفري 2022، ص. 568-569. الفصل الأول: المصادقة على النظام الأساسي الخاص لأعوان مؤسسات الضمان الاجتماعي ومركز البحوث والدراسات الاجتماعية؛ الفصل 2: إلغاء الأمرين عدد 99-2024 و2008-500. الملحق الذي يحيل إليه الفصل الأول غير موجود في نسختي العدد الفرنسية والعربية اللتين تمت مراجعتهما.",
+      "title": "أمر رئاسي عدد 2022-76 مؤرخ في 22 فيفري 2022 يتعلق بالمصادقة على النظام الأساسي الخاص لأعوان مؤسسات الضمان الاجتماعي ومركز البحوث والدراسات الاجتماعية",
       "URL": "https://www.pist.tn/jort/2022/2022A/Ja0202022.pdf",
       "issued": {
         "date-parts": [
@@ -903,6 +911,28 @@
       "URL": "https://www.pist.tn/jort/2012/2012A/Ja0882012.pdf",
       "note": "citation-key: decret-2012-2586\nQuatrième et dernier texte retrouvé de la chaîne. Son intitulé ne vise plus les modificatifs intermédiaires. Texte lu sur pièce dans l'édition française du fascicule, le 20 septembre 2026.",
       "title-short": "Décret n° 2012-2586 du 24 octobre 2012"
+    },
+    {
+      "id": "ins-fonction-publique-historiques",
+      "type": "dataset",
+      "note": "citation-key: ins-fonction-publique-historiques\nتقارير المعهد الوطني للإحصاء المستعملة لإعادة تركيب سلسلة متوسط الأجر الشهري الخام 2010-2017: خصائص أعوان الوظيفة العمومية وأجورهم 2010-2014 و2011-2015 و2012-2016 و2013-2017. الرابط المعطى هو صفحة طبعة 2010-2014؛ والطبعات الثلاث الأخرى صفحات مماثلة على موقع المعهد. تم التحقق من التنزيلات في 25 سبتمبر 2026.",
+      "publisher": "المعهد الوطني للإحصاء، تونس",
+      "title": "خصائص أعوان الوظيفة العمومية وأجورهم، طبعات 2010-2014 إلى 2013-2017",
+      "URL": "https://www.ins.tn/ar/publication/khsays-awan-alwzyft-almwmyt-wajwrhm-lsnwat-2014-2010",
+      "author": [
+        {
+          "literal": "المعهد الوطني للإحصاء"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            4
+          ]
+        ]
+      }
     },
     {
       "id": "ins-fonction-publique-2025",
