@@ -355,11 +355,9 @@ def cles_citees(livre: str, racine: str | None = None) -> set[str]:
 
     TROIS sources, et aucune n'est facultative. Mesuré le 16/09/2026 :
 
-      - la prose (`*.qmd`) ;
-      - les tableaux engendrés (`tables/*.md`) — **36 clés distinctes** ne vivent que
-        là, dont tous les arrêtés de transferts sociaux ;
-      - l'annexe de glossaire (`_glossaire.qmd`), que `build_glossary.render_book`
-        remplit de vraies `[@clé]`, résolues contre la bibliographie du livre.
+      - la prose (`*.qmd`), dont l'annexe de glossaire (`_glossaire.qmd`) ;
+      - les tableaux engendrés (`tables/*.md`) ;
+      - les sources des figures dans l'en-tête des CSV publiés (`figdata/*.csv`).
 
     Le glossaire n'est PAS exclu, contrairement à ce que fait `ancres_utilisees`. Son
     exclusion se justifie là-bas pour les *ancres* — l'annexe se définirait elle-même,
@@ -394,6 +392,20 @@ def cles_citees(livre: str, racine: str | None = None) -> set[str]:
         for nom in sorted(os.listdir(tableaux)):
             if nom.endswith(".md"):
                 lire(os.path.join(tableaux, nom))
+    figures = os.path.join(base, "figdata")
+    if os.path.isdir(figures):
+        for nom in sorted(os.listdir(figures)):
+            if not nom.endswith(".csv"):
+                continue
+            try:
+                with open(os.path.join(figures, nom), encoding="utf-8") as f:
+                    for ligne in f:
+                        if not ligne.startswith("#"):
+                            break
+                        if ligne.startswith("# sources (citation) :"):
+                            trouvees.update(CITATION_CLE.findall(ligne))
+            except OSError:
+                pass
     return {cle for cle in trouvees if not cle.startswith(RENVOIS_QUARTO)}
 
 
@@ -619,7 +631,8 @@ def controle_rangement(groupe: str, api_key: str) -> int:
     doublement = len(rapport["a_declasser"]) + len(rapport["a_ranger"]) - len(en_defaut)
 
     print(f"{len(collections_par_cle)} référence(s) dans Zotero, "
-          f"{sum(len(c) for c in citations.values())} citation(s) relevées dans le texte.\n")
+          f"{sum(len(c) for c in citations.values())} citation(s) relevées "
+          "(chapitres, tableaux et figures).\n")
     print(f"✓ bien rangées      : {len(rapport['bien_rangee'])}")
     print(f"⚠ en défaut         : {len(en_defaut)} clé(s) distinctes")
     if doublement:

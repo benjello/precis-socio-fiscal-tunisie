@@ -147,9 +147,16 @@ absentes.
 - **Séries** : effectifs et masse salariale par régime ; dépenses de défense ; effectifs du
   secteur financier public. Substituer des sources tunisiennes officielles aux chiffres du
   FMI et de la Banque mondiale.
-- **Vérifications sur source primaire** : statut du personnel des caisses sociales (issue
-  #13), champ des banques publiques, existence d'une convention-cadre des entreprises
-  publiques. Les **branches financées par les cotisations CNRPS** sont aux articles 8 à 10 de
+- **Vérifications sur source primaire** : la loi n° 85-78 a été lue dans le JORT n° 58
+  de 1985 (art. 1-3 et 75) : statuts particuliers approuvés par décret pour son champ
+  principal, option transitoire entre statut et convention sectorielle pour certaines
+  sociétés à capital partiellement public. Pour les caisses sociales (issue #13), le
+  décret présidentiel n° 2022-76 abroge le statut approuvé en 1999. Retrouver les
+  textes des deux statuts pour qualifier la grille : le JORT n° 20 de 2022 ne joint
+  pas l'annexe annoncée, et le JORT arabe n° 77 de 1999 porte le décret d'approbation
+  sans reproduire le statut intégral. Restent aussi le champ des banques publiques et les
+  conventions réellement applicables aux entreprises publiques. Les **branches financées par
+  les cotisations CNRPS** sont aux articles 8 à 10 de
   la loi n° 85-12, dont le fascicule — JORT n° 76 de 1985 — est un scan : océrisation requise.
 - **Deux points clos le 20 septembre.** La chaîne des décrets fixant la liste des employeurs
   soumis à la loi n° 95-56 est vérifiée fascicule par fascicule et citée (n° 95-2487, puis

@@ -409,17 +409,18 @@ entries:
       definition: >
         Accord négocié entre employeurs et organisations syndicales, fixant les
         conditions d'emploi et de rémunération (classification des emplois,
-        grilles, primes) pour un secteur d'activité donné. Dans certaines entreprises
-        publiques, elle peut compléter un statut particulier approuvé par décret ;
-        cette articulation doit être établie secteur par secteur.
+        grilles, primes) pour un secteur d'activité donné. L'article 2 de la loi
+        n° 85-78 permettait, à titre transitoire, à certaines sociétés à capital
+        partiellement public de choisir entre le régime statutaire et les conventions
+        collectives du secteur.
       synonymes: []
     ar:
       terme: الاتفاقية المشتركة القطاعية
       definition: >
         اتفاق متفاوَض عليه بين الأعراف والمنظمات النقابية، يضبط شروط الشغل
-        والتأجير (تصنيف المواطن الشغلية والسلالم والمنح) لقطاع نشاط معيَّن. ويمكن
-        أن تستكمل في بعض المنشآت العمومية نظامًا أساسيًا خاصًا مصادقًا عليه بأمر؛
-        ويجب إثبات هذا التمفصل قطاعًا بقطاع.
+        والتأجير (تصنيف المواطن الشغلية والسلالم والمنح) لقطاع نشاط معيَّن. وقد
+        أتاح الفصل 2 من القانون عدد 85-78، بصفة انتقالية، لبعض الشركات ذات رأس
+        المال العمومي الجزئي الاختيار بين النظام الأساسي والاتفاقيات المشتركة للقطاع.
       synonymes: []
 
   - id: convention-collective-banques
@@ -488,22 +489,26 @@ entries:
     acronyme: null
     statut: provisoire
     references: [loi85-78, loi89-9]
-    source_definition: {ref: loi85-78}
+    source_definition: {ref: loi85-78, locator: "art. 1-2 et 75"}
     voir_aussi: [entreprises-publiques, epic, convention-collective-sectorielle, statut-particulier]
     fr:
       terme: Régime conventionnel public
       definition: >
         Catégorie d'analyse retenue dans ce précis pour les entreprises publiques
-        non financières. Leur rémunération repose d'abord sur des statuts particuliers
-        approuvés par décret, que des conventions collectives peuvent compléter selon
-        les secteurs et les entreprises.
+        non financières. La loi n° 85-78 régit les agents permanents des offices,
+        des établissements industriels et commerciaux et des sociétés à capital
+        entièrement public par des statuts particuliers approuvés par décret. Elle
+        prévoit aussi, à titre transitoire, une option entre statut et convention
+        sectorielle pour certaines sociétés à capital partiellement public.
       synonymes: []
     ar:
       terme: النظام الاتفاقي العمومي
       definition: >
         فئة تحليلية معتمدة في هذا الدليل للمنشآت العمومية غير المالية. ويقوم تأجير
-        أعوانها أولًا على أنظمة أساسية خاصة مصادق عليها بأوامر، ويمكن أن تستكملها
-        اتفاقيات مشتركة بحسب القطاعات والمنشآت.
+        أعوان الدواوين والمؤسسات الصناعية والتجارية والشركات ذات رأس المال العمومي
+        الكامل، في إطار القانون عدد 85-78، على أنظمة أساسية خاصة مصادق عليها بأوامر.
+        وينصّ القانون أيضًا على خيار انتقالي بين النظام الأساسي والاتفاقية القطاعية
+        لبعض الشركات ذات رأس المال العمومي الجزئي.
       synonymes: []
 
   - id: regime-marche-controle
