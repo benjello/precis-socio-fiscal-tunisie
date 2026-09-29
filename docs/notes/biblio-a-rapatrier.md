@@ -8,40 +8,32 @@
 
 ## État vérifié le 29/09/2026
 
-Inventaire actuel (branche `docs/remunerations-relecture`, non fusionnée) : **535 clés**
-locales (`push_biblio.py --verifier` : 535 entrées, 0 perte), **533 présentes dans Zotero**.
-Deux clés absentes sont à verser après fusion : `ins-fonction-publique-historiques` et
-`decret-statut-caisses-1999`, dans les deux fichiers
-`precis/{fr,ar}/remunerations_publiques/references.json`. La première entrée est
-déjà sourcée par la page de l'INS de l'édition 2010-2014 (FR et AR) : son `issued` du 4 juillet
-2016 est la date de **cette édition**, non une date commune établie pour les quatre rapports
-rassemblés sous cette clé. Ses sources figurent dans l'en-tête de
-`figdata/fig_salaire_moyen.csv`, que le contrôle de rangement lit désormais. Elle n'existe pas
-encore sur `master` ; la seconde cite le décret d'approbation du statut des caisses de
-sécurité sociale publié au JORT n° 77 de 1999. **Ne pas déclencher `pousser-tout` sur
-`master` avant la fusion.**
+**Versement terminé** après fusion sur `master` : 535 clés locales, 535 présentes dans
+Zotero ; `push_biblio.py --verifier` : 535 entrées, 0 perte. Les clés
+`decret-statut-caisses-1999` et `ins-fonction-publique-historiques` ont été créées par le
+workflow `biblio-zotero.yml` (`pousser-un`, puis `pousser-tout`), une par exécution ; les
+deux allers-retours réels concordent après normalisation des auteurs institutionnels.
+L'entrée INS est sourcée par la page de l'édition 2010-2014 (FR et AR) : son `issued` du
+4 juillet 2016 est la date de **cette édition**, non une date commune établie pour les
+quatre rapports. Ses sources figurent dans l'en-tête de `figdata/fig_salaire_moyen.csv`.
+Le décret de 1999 est publié au JORT n° 77 de cette année.
 
-Contrôle de rangement au 29/09/2026 (API publique, lecture seule, avec les sources des
-figures) : 533 clés Zotero, 586 citations relevées, 465 bien rangées,
-**18 à déclasser**, 0 à ranger, 50 sans citation, 2 absentes de Zotero
-(les deux clés ci-dessus). Ces chiffres sont à revérifier après fusion.
-Les 18 déclassements constatés sont : `bct-ra`, `decret2015-462`,
-`decret2016-1`, `decret2019-1133`, `decret2019-209`, `decret2020-767`, `decretloi2011-48`,
-`ins-annuaire`, `ins-cnat-2015`, `ins-fonction-publique-2021`, `loi60-33`,
-`loi79-66-lf1980`, `loi94-28`, `loi96-101`, `minfin-ep`, `minfin-ep-2020`,
-`minfin-indicateurs-fp`, `minfin-remunerations`. Les listes détaillées et les collections
-à retirer sortent de `--controle-rangement` puis de `--appliquer-rangement` **à blanc**.
-Le nombre de « 30 clés en attente » dans l'ancien index des notes et les « pas encore dans
-Zotero » des passes ci-dessous décrivaient leur état **au jour de chaque passe** : ne pas
-relancer leurs créations sans refaire cet inventaire.
+**Rangement terminé** : la simulation montrait 18 clés à déclasser et les deux nouvelles
+à ranger dans « Rémunérations publiques ». Le workflow a appliqué les 20 mouvements,
+sans échec. Nouveau contrôle en lecture seule : 535 clés Zotero, 586 citations relevées
+dans les chapitres, tableaux et figures, 485 bien rangées, 50 sans citation,
+**0 à ranger, 0 à déclasser, 0 absente**. Les « 30 clés en attente » et « pas encore dans
+Zotero » des passes anciennes ci-dessous sont des constats datés, non des tâches à rejouer.
 
-Action convenue avec l'humain : **écriture Zotero après fusion** de la branche. À ce moment,
-relancer `--permissions`, `--verifier`, `--dry-run` (avec la clé du workflow),
-`--controle-rangement` et `--appliquer-rangement` à blanc sur `master` ; lire les écarts,
-créer la première clé absente (`pousser-un`, puis `comparer`), vérifier l'aller-retour avant
-`pousser-tout`, puis ranger les nouvelles clés dans « Rémunérations publiques » et appliquer
-les déclassements confirmés. Ne pas faire de
-descente avant de vérifier la préservation des notes et des URL par langue.
+**Descente différée** : l'export CSL ramène les auteurs institutionnels sous la forme
+`family` plutôt que `literal`, d'où le faux écart initial du workflow `comparer` pour
+l'entrée INS. `push_biblio.py` utilise désormais localement la même normalisation que
+`sync_biblio.py` ; la comparaison locale donne 0 écart pour chacune des deux clés. La
+descente écraserait par ailleurs la note arabe du décret de 1999 et l'URL arabe de la
+page INS. Un correctif local préserve ces deux champs : les quatre copies FR/AR des deux
+références ont été éprouvées sur l'export réel, sans perte de note, d'URL, de titre ni
+d'auteur. **Livrer ce correctif avant de lancer `descendre` sur le workflow.** La descente
+mérite ensuite son propre diff et sa propre revue ; elle n'a pas été déclenchée ici.
 
 ## En attente
 

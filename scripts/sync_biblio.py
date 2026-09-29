@@ -164,10 +164,10 @@ def build_extra_map(group_id, api_key):
 ARABE = re.compile(r"[\u0600-\u06FF]")
 
 # Champs dont la version arabe est une TRADUCTION et non une donnée : les préserver.
-# Le reste — URL, dates, pages, numéro de fascicule — est identique dans les deux
-# langues et doit suivre la source canonique.
+# Les URL du JORT sont dérivées par édition ; la page INS à URL arabe distincte est
+# préservée par `preserve_urls_arabes`. Dates, pages et numéros suivent Zotero.
 CHAMPS_TRADUITS = ("title", "title-short", "container-title", "publisher",
-                   "publisher-place", "authority", "author", "editor", "archive")
+                   "publisher-place", "authority", "author", "editor", "archive", "note")
 
 # Le JORT paraît en deux éditions, et pist.tn les sert sous deux chemins qui ne diffèrent
 # que par une lettre de répertoire et un préfixe de fichier, les chiffres étant identiques :
@@ -300,6 +300,25 @@ def preserve_urls_absentes(items, chemin_existant, secours=None):
             rendues += 1
     if rendues:
         print(f"    {rendues} URL absente(s) de Zotero, conservée(s) depuis le fichier local")
+    return items
+
+
+def preserve_urls_arabes(items, chemin_existant, secours=None):
+    """Garde l'édition arabe d'une page quand Zotero ne porte que son URL française.
+
+    Pour le JORT, `applique_edition` transforme déjà l'adresse. Les pages INS ont
+    une adresse traduite distincte, impossible à déduire du slug français : une
+    descente ne doit pas la remplacer par la page française.
+    """
+    anciens = items_par_cle(chemin_existant)
+    secours = secours or {}
+    for item in items:
+        ancien = anciens.get(item.get("id")) or secours.get(item.get("id"))
+        ancienne_url = (ancien or {}).get("URL", "")
+        nouvelle_url = item.get("URL", "")
+        if (ancienne_url.startswith("https://www.ins.tn/ar/publication/")
+                and nouvelle_url.startswith("https://www.ins.tn/publication/")):
+            item["URL"] = ancienne_url
     return items
 
 
@@ -602,6 +621,7 @@ def main():
             a_ecrire = applique_edition(copy.deepcopy(items), lang, exceptions)
             a_ecrire = preserve_urls_absentes(a_ecrire, out_path, secours[lang])
             if lang == "ar":
+                a_ecrire = preserve_urls_arabes(a_ecrire, out_path, secours[lang])
                 a_ecrire = preserve_traductions(a_ecrire, out_path, secours[lang])
             write_csl_json(a_ecrire, out_path)
             print(f"  Wrote {out_path}")
@@ -614,6 +634,7 @@ def main():
             a_ecrire = applique_edition(copy.deepcopy(shared_items), lang, exceptions)
             a_ecrire = preserve_urls_absentes(a_ecrire, out_path, secours[lang])
             if lang == "ar":
+                a_ecrire = preserve_urls_arabes(a_ecrire, out_path, secours[lang])
                 a_ecrire = preserve_traductions(a_ecrire, out_path, secours[lang])
             write_csl_json(a_ecrire, out_path)
             print(f"  Wrote {out_path}")

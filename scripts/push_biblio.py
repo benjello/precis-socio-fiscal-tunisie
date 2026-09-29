@@ -846,7 +846,9 @@ def main() -> int:
         sync_biblio.apply_extra_variables([redescendu], extra_map)
         # Zotero rend le titre court sous `shortTitle` ; la descente le renomme en
         # `title-short`. Sans ce renommage, chaque titre court passait pour un écart.
-        sync_biblio.normalise_noms_de_champs([redescendu])
+        sync_biblio.normalise_noms_de_champs(
+            sync_biblio.normalise_auteurs([redescendu])
+        )
         redescendu["id"] = args.comparer
         local = locales[args.comparer][0]
         ecarts = 0
