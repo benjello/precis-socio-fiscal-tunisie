@@ -323,6 +323,23 @@ il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
 
 ## Suite proposée
 
+**Point d'arrêt du 30 septembre 2026.** Le repère de bonification de l'article 32 est
+établi au **5 mai 2019** dans le livre « Retraites », le glossaire et le dossier. Pour
+reprendre sans refaire la même recherche :
+
+- **D'abord, les textes locaux déjà lisibles** : loi n° 2009-39 et décret n° 2009-2085
+  pour les conditions du départ anticipé public ; puis les autres lectures de la liste
+  ci-dessous, un sujet à la fois, en mettant ce backlog à jour avec chaque chapitre.
+- **Côté modèle**, comparer le repère de l'article 32 et sa date à l'état publié dans
+  `openfisca-tunisia` avant toute correction : la date du **5 mai 2019** ne se déduit
+  pas du calendrier des âges de départ au 1er juillet 2019 et au 1er janvier 2020.
+  Ne pas régénérer un tableau du précis depuis une correction non publiée du modèle.
+- **Chaîne éditoriale en attente** : les deux clés des « Prestations sociales » à verser
+  dans Zotero après revue, avec comparaison FR/AR à la descente ; puis les traductions
+  arabes en retard, à recontrôler au retour du budget de traduction et à rendre avant
+  toute fusion. Les sources du PNAFN et les annexes des statuts des caisses restent à
+  obtenir hors du corpus JORT.
+
 1. **Lire ce qui est déjà textuel** : loi n° 2009-39 et décret n° 2009-2085
    (Retraites) ; décret n° 99-1010 et décret-loi n° 2024-4 (Cotisations) ; décret n° 2018-626 et LF 2025,
    art. 26 (Prestations) ; décrets n° 97-1368 et 2015-1768 (Fiscalité) ; décret
