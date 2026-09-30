@@ -139,7 +139,9 @@ def _cli(argv: list[str]) -> int:
     entree = sys.stdin.read()
     if commande == "livres-touches":
         fichiers = [l for l in entree.splitlines() if l.strip()]
-        print("\n".join(livres_touches(fichiers)))
+        livres = livres_touches(fichiers)
+        if livres:
+            print("\n".join(livres))
         return 0
     if commande == "citations":
         print(compter_citations_non_resolues(entree))

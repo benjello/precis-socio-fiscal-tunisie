@@ -48,7 +48,14 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
 
 ## Écrire dans le précis
 
-`docs/conventions-redaction.md` fait foi. Les trois règles qu'on oublie le plus :
+`docs/conventions-redaction.md` fait foi. Les règles qu'on oublie le plus :
+
+- **Tiens `docs/notes/backlog-precis.md` à jour quand tu modifies un chapitre.** Dans le même
+  changement, retire les tâches closes, inscris les lacunes nouvelles et indique si le texte
+  est lisible dans le corpus, demande un OCR, ou reste à obtenir. Vérifie avant de reprendre
+  les chiffres et localisations d'un inventaire daté : `docs/notes/todo-localisation.md` est
+  une photographie du 20 septembre 2026, pas un état du corpus en temps réel. La revue
+  humaine contrôle que le backlog et le chapitre racontent le même état.
 
 - **Le précis documente la loi, jamais le modèle.** Ni `openfisca`, ni « le modèle », ni « les
   paramètres » dans le texte rendu. Un constat sur le modèle va dans un `<!-- TODO (rôle) : … -->`,

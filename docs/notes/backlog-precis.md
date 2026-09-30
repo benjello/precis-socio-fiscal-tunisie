@@ -1,87 +1,103 @@
 # Ce qui reste à faire, livre par livre
 
-État au **20 septembre 2026**, version v1.26.0. Cette note rassemble ce que disent les
-issues ouvertes, les commentaires `<!-- TODO (rôle) : … -->` des chapitres et les notes de
-travail. Elle ne remplace ni les unes ni les autres : elle sert à voir l'ensemble, et à
-décider par quoi continuer.
+**Révisé le 30 septembre 2026.** Cette note rassemble les chantiers encore visibles dans les
+chapitres, les dossiers documentaires et les issues ; elle permet de choisir le prochain
+texte à lire. Une piste « faisable » signifie que le **support** est accessible, pas que
+son contenu a déjà été vérifié : seul l'article lu autorise à corriger le précis.
 
-**Une note périmée est pire qu'absente** : elle envoie vers des chantiers clos. Celle-ci
-l'était de huit jours le 20 septembre, et annonçait trois impôts « pas commencés » alors
-qu'ils étaient écrits. La règle qui en découle : **toute branche qui ajoute ou réorganise un
-chapitre met à jour la vue d'ensemble dans le même commit.**
+**Responsabilité de mise à jour.** Tout agent qui ajoute, corrige ou réorganise un chapitre
+met à jour **dans le même changement** son entrée ci-dessous : fermer la tâche accomplie,
+dater la source effectivement lue et reclasser les suites par disponibilité. La revue
+humaine contrôle cet alignement avant publication ; le documentaliste tient les fiches
+de sources.
+Les nombres et localisations datés ne deviennent jamais une preuve d'absence.
 
 Les constats portant sur le modèle de microsimulation ont leur propre fichier,
 `backlog-modele.md`. Les références à verser ou à corriger dans Zotero sont dans
-`biblio-a-rapatrier.md`. **Où trouver chaque texte que les consignes demandent de lire, et
-ce qu'il en coûte de l'ouvrir** : `todo-localisation.md`.
+`biblio-a-rapatrier.md`. `todo-localisation.md` localise 114 fascicules à la date du
+**20 septembre 2026** : c'est un relevé historique, à recontrôler sur les fichiers du
+corpus avant de citer un texte ou de dire qu'il manque. Les chemins de fascicules
+ci-dessous sont relatifs à `~/projets/PDFs-legislation-tunisie/PDFs/JORT/` ; les
+extraits des lois de finances sont dans le dossier voisin `PDFs/Lois_de_Finances/`.
 
 ## Vue d'ensemble
 
-| Livre | Écrit (lignes) | TODO | État |
-|---|---:|---:|---|
-| Fiscalité | 1 334 | 26 | **les quatre impôts sont écrits, et plus aucune section n'est vide** |
-| Retraites | 1 201 | 40 | rédigé sur le *Journal officiel* ; cinq jeux de paramètres à verser au modèle |
-| Rémunérations publiques | 751 | 33 | un chapitre abouti, trois chapitres brefs |
-| Prestations sociales | 708 | 12 | rédigé, plusieurs séries sans fondement publié |
-| Cotisations sociales | 401 | 3 | le plus complet |
+| Livre | État du texte | Première lecture faisable |
+|---|---|---|
+| Fiscalité | Quatre impôts ouverts ; TVA : déductions, régime suspensif et obligations encore à rédiger | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
+| Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Article 2 de la loi n° 2019-37 dans le JORT n° 35 de 2019, texte local extractible |
+| Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
+| Prestations sociales | Dispositifs décrits ; PNAFN historique sans sources pour ses onze dates et montants | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
+| Cotisations sociales | Régimes et branches décrits ; plusieurs assiettes et ventilations encore à établir | Décret n° 99-1010 dans le JORT n° 40 de 1999, texte local extractible |
 
-Les 114 `TODO` ne sont pas un arriéré de négligence. **Cinquante-six d'entre eux demandent
-explicitement de lire ou de vérifier un texte** — ils marquent un endroit où le précis refuse
-d'affirmer ce qu'il n'a pas vu. Les autres sont des sections à écrire, des séries à
-construire, des questions à trancher. Le compte baissera parce qu'on aura lu, ou il ne
-baissera pas. Une passe de tri menée le 20 septembre sur les vingt-sept consignes de la fiscalité n'en
-a trouvé **aucune** déjà satisfaite : il n'y a pas de stock de consignes closes à supprimer.
+Les `TODO` des `.qmd` détaillent chaque lacune, y compris celles que ce tableau ne peut pas
+résumer. Ici, **lisible** veut dire que le fascicule est présent avec une couche texte
+extractible sur les premières pages contrôlées ; vérifier à la page de l'article que les
+tableaux ou annexes ne sont pas des images. **OCR** veut dire que le fascicule est présent,
+mais que la couche texte testée est vide. Un texte absent du JORT en français peut avoir une
+édition arabe ou un extrait français dans `PDFs/Lois_de_Finances/` : les distinguer.
 
-## Fiscalité — les quatre impôts sont écrits
+## Fiscalité — quatre impôts ouverts, des lectures et des mécanismes à compléter
 
-Le livre porte désormais **1 300 lignes et 484 citations**, réparties sur quatre chapitres :
-impôt sur le revenu (596 lignes), droits de consommation (351), impôt sur les sociétés (329)
-et taxe sur la valeur ajoutée (185). Les trois derniers ont été ouverts entre le 16 et le
-20 septembre ; le portail ne promet plus rien qu'il ne tienne.
+**Immédiat, avec les sources déjà présentes.** Les décrets n° 97-1368 et 2015-1768
+(`PDFs/JORT/1997/fr/Jo05997.pdf` et `2015/fr/Jo0922015.pdf`) ont une couche texte : relever
+leurs articles, tarifs et clauses d'effet pour le chapitre des droits de consommation.
+L'extrait français `PDFs/Lois_de_Finances/Loi_de_Finances_2016.pdf` porte les articles
+utilisés de la LF 2016 ; le JORT français n° 128 de 2020 (LF 2021) est aussi au corpus
+et a été lu pour l'IRPP. **Ces deux lois ne sont donc plus des textes « absents »** ; ne
+pas confondre l'absence en ligne du fascicule français de 2015 avec celle de son extrait
+français conservé localement.
 
-Ce qui reste porte sur la FORME d'un chapitre et sur des lectures, non sur des sections
-absentes.
+**OCR ciblé.** Le code fiscal du JORT n° 1 de 1990 (`Jo00190.pdf`) et le texte initial
+de la TVA au JORT n° 39 de 1988 (`Jo03988.pdf`) sont des scans présents localement :
+vérifier les annexes sur l'image après OCR, notamment le tarif de l'annexe II du forfait.
+
+**Rédaction à partir des textes déjà cités, puis vérification des versions.** La TVA
+attend encore trois développements : déductions (art. 9-11), régime suspensif et
+obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO` de
+`precis/fr/fiscalite/_tva.qmd`. Ne pas les confondre avec une simple reprise de forme.
 
 - **Forme de `_impot_revenu.qmd` : rien à reprendre.** Ses titres ont été remontés d'un cran
   et il a reçu sa section « La longue période ». La réorganisation par réforme, un temps
   envisagée, a été écartée après lecture — voir « Forme des chapitres » plus bas, qui en
   consigne le motif et la leçon.
-- **Le livre n'a plus de section vide.** Le minimum d'impôt de l'article 44 § II et le régime
-  forfaitaire ont été écrits le 20 septembre, sur les textes. Ce qui y reste est du
-  dépouillement, et chaque obstacle est nommé dans la consigne correspondante : le tarif de
-  l'annexe II abrogée est dans le code de 1990, un SCAN ; les lois de finances pour 2016 et
-  2021 sont ABSENTES du corpus ; et l'article 16 de la loi de finances pour 2019 n'est
-  atteignable dans aucune des deux éditions — le français rend 404 sur pist.tn, et
-  l'extraction de l'arabe ne donne pas les formes Unicode standard.
-- **Reste à écrire** : la contribution au budget de l'État.
+- **IRPP** : le minimum d'impôt de l'article 44 § II et le régime forfaitaire sont écrits.
+  Restent les tarifs antérieurs de la contribution personnelle d'État, les barèmes
+  régionaux de l'évaluation forfaitaire agricole, le plafond de l'assurance-vie entre
+  ses deux bornes connues et la contribution au budget de l'État. L'article 16 de la
+  loi de finances pour 2019 pose encore un problème de lecture des éditions.
 - **Séries à construire** : le seuil de la tranche à 0 % et les déductions pour charges de
   famille, rapportés au SMIG et à l'indice des prix, 1990-2026 ; les tarifs successifs de la
   contribution des patentes ; le plafond de déduction des primes d'assurance-vie.
-- **Lectures** : barèmes régionaux d'évaluation forfaitaire agricole ; véhicule d'origine du
-  taux de 60 % de l'article 12 bis ; notes communes de la DGI sur la réforme de 2025 ;
-  articles 56 et 91 de la loi de finances 2026, lus en arabe, à confirmer en français.
+- **Lectures externes ou sous autre édition** : notes communes de la DGI sur la réforme
+  de 2025 ; articles 56 et 91 de la LF 2026 lus en arabe, à confirmer sur une édition
+  française effectivement disponible. Le fichier local « français » du JORT n° 148 de
+  2025 sert en réalité l'arabe ; ne pas le citer comme français.
 - **Ton** : exposer en regard au moins deux lectures attribuées de la dérive du barème.
 - **Reste du côté du glossaire** : un seul arbitrage, entre « revenu annuel net » (au
   glossaire) et « revenu net global » (proposé par la note documentaire sur l'article 8,
   alinéa 1er) — une notion ou deux ? Les vingt autres notions que la consigne réclamait
   existent, et l'annexe est déclarée dans les `_quarto.yml` des deux langues.
-- **Reste du côté de la bibliographie** : deux textes cités en prose sans clé — loi
-  n° 2001-123 (LF 2002) et loi n° 2007-70 (LF 2008) — et le versement Zotero des vingt clés
-  de la sous-section sur l'assiette, qui restent provisoires tant qu'il n'est pas fait.
+- **Bibliographie** : les lois n° 2001-123 (LF 2002) et n° 2007-70 (LF 2008) ont déjà
+  leurs clés CSL ; leur mention sans citation dans l'annexe de l'IRPP est à rattacher à
+  ces clés, pas à recréer. Voir `biblio-a-rapatrier.md` avant toute écriture Zotero.
 
 ## Retraites
 
-- **Lectures restantes** : rectificatifs des décrets n° 82-1030 et de la loi n° 81-6 ;
-  série du SMAG journalier ; règlement du régime complémentaire du 18 novembre 1978 ;
-  articles propres du RACI et du RTTE ; textes de départ anticipé du régime agricole.
-- **Barème d'actualisation — chronologie faite, coefficients à relever.** Les trente et un
-  arrêtés (un par année de 1994 à 2024 ; ceux de 2016, 2017 et 2019 trouvés le 24/09/2026)
-  ont leur clé dans les deux langues, et le chapitre donne leur rythme : signature en
-  février, effet rétroactif au 1er janvier, une ligne ajoutée par an ; **aucun arrêté
-  identifié pour 2025 ni 2026**. Les COEFFICIENTS ne sont pas publiés : ils doivent être relus à
-  l'image. Deux pièges consignés dans la consigne du chapitre — un fascicule textuel dont le
-  tableau est une image (1997, 2024), et deux sérialisations du tableau dont l'une, appariée
-  au jugé, produit des séries fausses mais plausibles.
+- **Lecture immédiate** : l'article 2 de la loi n° 2019-37 est dans le JORT français
+  n° 35 de 2019 (`PDFs/JORT/2019/fr/Jo0352019.pdf`, couche texte) ; établir sa clause
+  d'effet avant de dater le repère d'âge de l'article 32 de la loi n° 85-12. Les
+  rectificatifs des décrets n° 82-1030 et de la loi n° 81-6 restent à relire, mais
+  identifier d'abord leurs fascicules et leurs pages exactes : un numéro a des homonymes.
+- **Barème d'actualisation — coefficients relevés.** Les 31 arrêtés de 1994 à 2024
+  et leurs **1 488 coefficients** ont été relevés et contrôlés, y compris les images des
+  tableaux de 1997 et 2024 ; voir `_secteur_prive.qmd#sec-rsna-bareme`. Les questions
+  encore ouvertes sont la **méthode de calcul** des coefficients, à chercher hors des
+  arrêtés, et les barèmes 2025-2026 non identifiés (`docs/recherches.yml`).
+- **Autres lectures** : série du SMAG journalier, articles propres du RACI et du RTTE,
+  textes de départ anticipé du régime agricole. Le règlement complémentaire du
+  18 novembre 1978 n'est plus « à lire » en bloc : les articles utiles ont été lus à
+  l'image ou par OCR et figurent dans la note de `arrete-1978-11-18-retraite-complementaire`.
 - **Travailleurs non salariés — fait.** Âge, stage, taux, plancher et versement unique sont
   lus sur le décret n° 95-1166, sa chaîne modificative entière avec eux. L'article 30 a changé
   de nature en 2002 : la revalorisation, d'abord suspendue à un arrêté, est devenue
@@ -93,17 +109,12 @@ absentes.
   quote-part de cotisations. Restent les circulaires et rapports de la CNSS, l'avis non publié
   du Tribunal administratif, la doctrine et la jurisprudence ; aucun n'est au corpus local.
   **Cette question se résoudra hors du *Journal officiel*, ou pas du tout.**
-- **Huit tableaux sont tenus à la main, et ils n'attendent pas tous la même chose.** Compté
-  et trié le 20 septembre 2026, sur les commentaires qui accompagnent chacun d'eux. Le
-  chiffre de treize, porté ici jusque-là, et l'idée qu'il suffirait de « fusionner les PR du
-  modèle » étaient l'un et l'autre inexacts : `openfisca-tunisia-pension` n'a AUCUNE PR
-  ouverte, et aucune de ses quatre branches non fusionnées ne crée les paramètres qui
-  manquent.
-
-  **Le versement est fait, le 20 septembre 2026** — PR openfisca-tunisia-pension #51 pour la
-  fenêtre du salaire moyen de référence, puis #52 pour les trois autres jeux. Ce qui en
-  résulte n'est pas ce qu'on attendait : **un seul tableau devient engendrable**, les autres
-  changent de motif sans changer de statut.
+- **Tableaux manuels : ne pas les regrouper en un seul chantier de régénération.** Le
+  versement des paramètres de retraite du 20 septembre (PR #51 et #52 du dépôt de
+  pensions historique) n'a rendu engendrable que le tableau des âges militaires ; les
+  conditions des droits des survivants et des départs anticipés ne sont pas des valeurs
+  datées. Les tableaux de revalorisation doivent suivre la date d'effet de la pension,
+  et non celle du SMIG. Le cas de l'article 32 attend la clause d'effet de 2019.
 
   | Tableau | Ce que le versement a changé |
   |---|---|
@@ -112,31 +123,39 @@ absentes.
   | départs anticipés du RSNA | les durées et les taux sont versés ; les **conditions** de chaque cas ne sont pas des valeurs datées |
   | article 32 de la loi n° 85-12 | seul le repère d'âge serait versable, et sa date d'effet de 2019 n'est pas établie |
 
-  **Ce qui reste à verser au modèle est donc très peu de chose** : le repère d'âge de
-  l'article 32, qui attend qu'on lise la clause d'entrée en vigueur de l'article 2 de la loi
-  n° 2019-37. Tout le reste de ce que les tableaux affirment est hors de portée d'un arbre de
-  paramètres, et le dire une fois évite d'y revenir.
-
-  **Trois resteront à la main, et c'est justifié.** Les conditions d'âge, d'études et de
-  ressources de la pension d'orphelin ne sont pas des valeurs datées. Et les deux tableaux de
-  revalorisation ont pour objet la revalorisation des pensions, non le SMIG : la hausse du
-  SMIG du 1^er^ mai 2000 ne revalorise les pensions qu'au 1^er^ janvier 2001, date qu'aucun
-  paramètre de SMIG ne porte. **Les engendrer depuis le modèle produirait un tableau faux.**
+  Ne verser le repère d'âge de l'article 32 qu'une fois sa date d'effet établie. Les
+  conditions d'âge, d'études et de ressources de la pension d'orphelin restent à la main.
 - **Régimes spéciaux** : le décret-loi n° 2011-48 relève aussi la contribution de
   l'employeur pour les membres du gouvernement et les gouverneurs ; le chapitre ne le dit pas.
 
 ## Prestations sociales
 
 - **Onze paliers de l'allocation** entre 1987 et 2018 n'ont aucun fondement textuel publié.
-  Pistes non explorées : circulaires de la direction générale de la promotion sociale.
-- **Montants non relevés** : aides aux personnes âgées (arrêtés de 1997 et 2003) et aux
-  personnes handicapées (arrêtés de 2006 et 2017), soit deux séries entières.
-- **Fascicules manquants** : lois de finances 2025 et 2026 en édition française.
+  Les décisions ou circulaires de la direction générale de la promotion sociale et
+  les rapports administratifs sont à chercher **hors du JORT**. L'arrêté de 2024
+  confirme 180 D à sa publication, pas la date de départ attribuée à 2018 (issue
+  openfisca-tunisia #462) : aucune date de palier ne devient certaine par interpolation.
+- **Lecture immédiate des aides adjacentes** : arrêtés du 30 septembre 1997 et du
+  12 décembre 2003 (personnes âgées), du 1er juin 2006 et du 28 avril 2017
+  (personnes handicapées). Les quatre fascicules français sont **locaux et textuels** :
+  `Jo08197.pdf`, `Jo1022003.pdf`, `Jo0462006.pdf`, `Jo0422017.pdf`. Celui de 1997
+  renvoie au montant servi par un programme administratif : il ne donne pas à lui seul
+  une série chiffrée. Le décret n° 2018-626 sur la banque de données est également
+  lisible dans `2018/fr/Jo0632018.pdf` ; son contenu restait noté comme inconnu.
+- **Lois de finances** : l'extrait français local `PDFs/Lois_de_Finances/Loi_de_Finances_2025.pdf`
+  contient l'article 26 sur l'aide aux patients allergiques au gluten : le lire et
+  relever sa page avant de conserver la qualification « dérivée » du tableau. La LF
+  2026 est au corpus en arabe, pas dans une édition française vérifiée : ses autres
+  articles demandent lecture arabe puis confirmation française si celle-ci paraît.
 - **Conflit de pagination** des éditions française et arabe de textes de 2024 et postérieurs :
   certains folios restent à établir. La date de la loi n° 2017-47 est tranchée au JORT
   n° 50 de 2017 : 15 juin 2017, publié le 23 juin.
-- **Indemnités familiales** : décret n° 75-952 et circulaire n° 42 de 1996 à lire pour
-  compléter la série en amont de 1986.
+- **OCR ciblé** : décret n° 75-952 (`1975/fr/Jo08775.pdf`, scan local) pour la série
+  des indemnités familiales antérieure à 1986. La circulaire n° 42 de 1996,
+  **textuelle et déjà locale** dans `1996/fr/Jo09496.pdf` (à partir de la p. 2349),
+  peut être lue sans OCR pour établir les règles de gestion. Les arrêtés des quotas
+  régionaux des cartes AMG et le décret d'application du fonds contre la perte
+  d'emploi de la LF 2025 restent à identifier (`docs/recherches.yml`).
 - **Aides occasionnelles de l'AMEN** : le modificatif du 10 juillet 2025 est lu dans
   l'édition arabe du JORT n° 88, pp. 2058-2059. Il relève de 50 à 100 D l'aide de rentrée
   scolaire, avec effet au 1er septembre 2024, élargit les cas couverts et interdit le cumul
@@ -144,8 +163,9 @@ absentes.
 
 ## Rémunérations publiques
 
-- **Chapitres à étoffer** : régime conventionnel public (63 lignes), marché contrôlé (62) et
-  statutaire autonome (99), contre 474 pour le régime indiciaire.
+- **Chapitres à étoffer** : régime conventionnel public, marché contrôlé et statutaire
+  autonome ; le régime indiciaire est le plus développé. Ne pas réutiliser les
+  longueurs des chapitres mesurées avant la relecture des rémunérations.
 - **Chronologies à construire** : indemnité de magistrature (décrets identifiés au JORT) ;
   textes de rémunération des magistrats de l'ordre judiciaire, des forces de sécurité
   intérieure et des douanes, absents du livre ; tranches de l'indemnité de gestion et
@@ -153,6 +173,21 @@ absentes.
 - **Séries** : effectifs et masse salariale par régime ; dépenses de défense ; effectifs du
   secteur financier public. Substituer des sources tunisiennes officielles aux chiffres du
   FMI et de la Banque mondiale.
+- **Lecture immédiate des textes locaux** : le décret n° 2015-2217 sur les dirigeants
+  des entreprises publiques est dans `2015/fr/Jo1012015.pdf`, texte extractible ; en
+  établir l'article sur les sociétés à majorité publique avant d'étendre la règle aux
+  banques. Le Code des collectivités locales est lisible en arabe dans
+  `2018/ar/Ja0392018.pdf` ; relever ses dispositions sur les élus et agents sans
+  conclure à l'absence d'un régime par une simple recherche de mots. Le décret
+  n° 72-230 est dans `1972/fr/Jo02972.pdf`, **scan** à océriser avant d'en qualifier
+  le champ. Les fascicules cités sont sous `PDFs/JORT/`.
+- **Convention bancaire** : l'arrêté d'agrément de 2014 est textuel en français
+  (`2014/fr/Jo0232014.pdf`), mais il indique que la convention annexée est publiée
+  **seulement en arabe** ; son fascicule arabe `2014/ar/Ja0232014.pdf` est présent,
+  avec une couche texte **en formes Unicode de présentation** : `pdftotext` suivi
+  d'une normalisation NFKC rend ses mots recherchables. Lire ensuite ses articles
+  et grilles et ceux des avenants : travail faisable localement, mais pas encore
+  établi dans le précis. Ne pas lancer d'OCR sur ce fascicule textuel.
 - **Vérifications sur source primaire** : la loi n° 85-78 a été lue dans le JORT n° 58
   de 1985 (art. 1-3 et 75) : statuts particuliers approuvés par décret pour son champ
   principal, option transitoire entre statut et convention sectorielle pour certaines
@@ -160,7 +195,9 @@ absentes.
   décret présidentiel n° 2022-76 abroge le statut approuvé en 1999. Retrouver les
   textes des deux statuts pour qualifier la grille : le JORT n° 20 de 2022 ne joint
   pas l'annexe annoncée, et le JORT arabe n° 77 de 1999 porte le décret d'approbation
-  sans reproduire le statut intégral. Restent aussi le champ des banques publiques et les
+  sans reproduire le statut intégral. **Un OCR de ces fascicules ne produira pas
+  l'annexe absente** : la chercher auprès des organismes ou dans un autre recueil.
+  Restent aussi le champ des banques publiques et les
   conventions réellement applicables aux entreprises publiques. Les **branches financées par
   les cotisations CNRPS** sont aux articles 8 à 10 de
   la loi n° 85-12, dont le fascicule — JORT n° 76 de 1985 — est un scan : océrisation requise.
@@ -169,15 +206,28 @@ absentes.
   2000-908, 2001-1446, 2006-2777, 2012-2586). Et l'**indemnité familiale** ne relève pas de
   la CNRPS : c'est une indemnité de rémunération portée par le budget de l'employeur, ce que
   le livre « Prestations sociales » établissait déjà sans que celui-ci en tire parti.
-- **Code des collectivités locales** : l'édition française du JORT n° 39 de 2018 est absente
-  du corpus, l'arabe y est et s'extrait. Attention, l'absence d'un régime de rémunération
-  propre NE PEUT PAS être confirmée par une recherche par mots-clés : le code porte seize
-  « مرتب », quatorze « تأجير » et onze « منحة », probablement au titre des élus. À lire.
+- **Code des collectivités locales** : voir la lecture locale de l'édition arabe ci-dessus ;
+  son édition française n'est pas au corpus.
 
 ## Cotisations sociales
 
-- Modificatifs du décret n° 74-499 publiés après avril 2026.
-- Loi n° 65-17 du 28 juin 1965, pour les branches couvertes par le régime des étudiants.
+- **Lecture immédiate** : le décret n° 99-1010, modificatif de l'échelle des taux
+  d'accidents du travail (`1999/fr/Jo04099.pdf`), et l'article 4 du décret
+  n° 2007-1406 (`2007/fr/Jo0492007.pdf`, source déjà lue pour la maladie) : établir
+  sur pièce ce qu'ils changent respectivement aux classes de cotisation et au partage
+  employeur/agent. Le décret-loi n° 2024-4 sur les travailleuses agricoles est désormais
+  présent dans les deux éditions textuelles du JORT n° 129 de 2024 ; relever taux,
+  assiette et dates avant d'affirmer qu'ils sont fixés. Le vieux relevé
+  `todo-localisation.md` le classe encore « absent du corpus » : **ce classement est périmé**.
+- **OCR ciblé** : la loi n° 65-17 sur les risques couverts par le régime des étudiants
+  se trouve au JORT n° 34 de 1965 (`1965/fr/Jo03465.pdf`), scan local. Lire l'article
+  pertinent après OCR, au lieu de déduire les branches des seuls décrets de 1992 et 2003.
+- **À rechercher/établir** : assiette exacte du régime général, part historique des
+  prestations familiales dans le taux global, cotisation maladie des agents publics
+  avant 2007 et ventilation des parts résiduelles entre risques ; plusieurs recherches
+  négatives ont déjà leur fiche dans `docs/recherches.yml`. Relancer ces fiches plutôt
+  que répéter leur conclusion. Pour les modificatifs du décret n° 74-499 après avril
+  2026, la fiche `r-dec74-499-modificatifs` est couverte jusqu'au 18 septembre 2026.
 
 ## Forme des chapitres — le plan type, et où il ne s'applique pas
 
@@ -197,7 +247,7 @@ l'information.
 |---|---|---|
 | `_impot_societes.qmd` | conforme | — |
 | `_droits_consommation.qmd` | historique remonté en tête | la chronologie du périmètre reste un tableau sans récit texte par texte — signalé, non confirmé |
-| `_tva.qmd` | historique sorti de l'attaque | — |
+| `_tva.qmd` | historique sorti de l'attaque | déductions, achats en suspension et obligations restent à écrire sur les articles du code |
 | `_impot_revenu.qmd` | conforme, à sa manière | rien sur la forme ; restent deux sections à ÉCRIRE, voir plus bas |
 | `retraites/_secteur_*.qmd` | **rangés par mécanisme, et c'est bien** | ne pas y appliquer le plan type |
 | `_regime_indiciaire.qmd` | fait le travail sous d'autres noms | ne rien reprendre sur la forme |
@@ -236,47 +286,54 @@ il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
 
 ## Ce qui traverse les cinq livres
 
-- **Zotero** : la synchronisation est bloquée tant que le rangement des clés remontées dans
-  la bibliographie partagée n'est pas tranché ; sinon elles reviendront en doublon dans les
-  fichiers de livre (issue #17, détail dans `biblio-a-rapatrier.md`).
-- **Titres arabes** : 69 entrées bibliographiques portent encore un titre français.
-- **Glossaire arabe** : 26 termes à valider (issues #151, #77, #54, #53).
+- **Zotero** : le rangement a été corrigé le 29 septembre (535 références présentes,
+  aucun défaut restant alors). Depuis, deux nouvelles clés du livre « Prestations
+  sociales » — `loi2017-47` et `arrete-2025-07-10-appui-occasionnel` — attendent leur
+  versement **après revue** ; elles sont recensées dans `biblio-a-rapatrier.md`.
+  Recontrôler la préservation des URL et notes par langue au diff de la descente.
+- **Titres arabes et glossaire** : des notices restent en français dans la bibliographie
+  arabe et des notions sont encore à valider (issues #151, #77, #54, #53). Recompter
+  avant de réutiliser les totaux anciens de 69 notices et 26 termes.
 - **Tableaux engendrés** : la règle est que tout tableau de paramètres vienne des dépôts
   openfisca par un générateur. Retraites et Prestations sociales y dérogent provisoirement.
-- **Version arabe** : produite par la CI ; rendre l'arabe en local avant de fusionner la PR
-  de traduction.
-- **Plafond de dépense Gemini atteint, et non relevé avant le mois prochain.** Onze fichiers
-  français sont en avance sur leur arabe ; `scripts/traduction_en_retard.py` dit lesquels.
-  Aucune relance n'y changera rien : ce n'est pas un débit, c'est un plafond. Depuis le
-  20 septembre, la passe s'arrête au premier refus — un appel, pas onze — et, quand le
-  plafond explique TOUT, elle finit au vert avec un avis plutôt qu'en rouge. Au 1er octobre,
-  un `workflow_dispatch` sans argument rattrapera l'ensemble.
+- **Version arabe** : produite par la CI ; rendre tout livre traduit avant de fusionner
+  la PR de traduction. `uv run python scripts/traduction_en_retard.py --detail` signale
+  **16 fichiers français en avance sur l'arabe** au 30 septembre, dont les chapitres
+  des rémunérations et des prestations corrigés depuis le dernier passage. Le plafond
+  de dépense Gemini avait bloqué le rattrapage en septembre : le vérifier à nouveau
+  avant toute relance au 1er octobre, puis contrôler le rendu et la parité.
 - **Garde-fou de troncature — CORRIGÉ le 20 septembre.** Il était enveloppé dans
   `if old_target_text:` et ne s'exécutait donc pas en retraduction complète, le mode où la
   troncature est la plus probable. Mesuré sur le vrai script : un chapitre arabe de 175 lignes
   était écrasé par une réponse de 3, la passe sortant en 0. Il se règle désormais sur la
   SOURCE à défaut d'ancienne cible, et trois épreuves lui interdisent de redevenir
   conditionnel.
-- **`prestations_sociales/index.qmd` résiste aux deux modes de traduction** : 780 lignes,
-  171 clés de citation, 9 cellules de code — le chapitre le plus lourd du corpus. Mise à jour :
-  13 divergences de parité avant, 68 après (PR #157, fermée). Retraduction complète : 102 lignes
-  sur 780 (PR #159, fermée). L'arabe est resté à son meilleur état connu, 636 lignes et
-  13 divergences. Ne pas relancer en l'état : découper le fichier ou traduire par sections.
+- **Traduction du gros chapitre des prestations** : les PR #157 et #159 ont montré
+  qu'une traduction complète tronquait le chapitre et qu'une mise à jour partielle
+  multipliait les écarts de parité. Les nombres de lignes relevés lors de ces PR ne
+  décrivent plus le fichier actuel. Examiner la stratégie de découpage ou de
+  traduction par sections avant une retraduction complète.
 
 ## Suite proposée
 
-1. **Au 1er octobre, rattraper la traduction** : `workflow_dispatch` sans argument, puis
-   relecture arabe. Onze fichiers, dont le chapitre entier de l'impôt sur les sociétés.
-2. **Le versement des paramètres de retraite est fait** (PR openfisca-tunisia-pension #51
-   et #52). Ne reste que le repère d'âge de l'article 32, suspendu à la lecture de la clause
-   d'entrée en vigueur de l'article 2 de la loi n° 2019-37.
-3. **Débloquer Zotero**, qui conditionne toute la tenue de la bibliographie.
-4. **Étoffer les trois chapitres brefs des rémunérations publiques**.
-5. **Océriser les quelques fascicules qui bloquent plusieurs consignes à la fois** — le code
-   de 1990 en tête, qui porte à la fois l'annexe II du forfait et l'état d'origine de
-   plusieurs paramètres.
+1. **Lire ce qui est déjà textuel** : loi n° 2019-37, art. 2 (Retraites) ; décret
+   n° 99-1010 et décret-loi n° 2024-4 (Cotisations) ; décret n° 2018-626 et LF 2025,
+   art. 26 (Prestations) ; décrets n° 97-1368 et 2015-1768 (Fiscalité) ; décret
+   n° 2015-2217 (Rémunérations). Vérifier chaque article à sa page, pas seulement
+   la présence du fascicule.
+2. **Océriser par cible**, avec contrôle à l'image : loi n° 65-17 (étudiants), décret
+   n° 75-952 (indemnités familiales), code fiscal de 1990 (annexe II) et code TVA
+   de 1988. La convention bancaire arabe de 2014 est **extractible après NFKC**,
+   sans OCR. Les fascicules sont déjà locaux ; l'OCR ne peut créer une annexe absente.
+3. **Chercher hors corpus** : montants/dates PNAFN auprès de l'administration, statuts
+   annexés du personnel des caisses, méthode du barème d'actualisation des retraites.
+   Les fascicules français non disponibles en ligne des LF 2025/2026 demandent un
+   traitement distinct : extrait français local pour 2025, édition arabe pour 2026.
+4. **Entretenir la chaîne éditoriale** : après revue des deux références nouvelles,
+   les verser dans Zotero et inspecter la descente ; après réouverture du budget de
+   traduction, rattraper l'arabe et rendre les livres concernés.
 
-Pour toute consigne qui demande de lire un texte, commencer par `todo-localisation.md` : sur
-les cent-quatorze fascicules recensés, **cinquante-deux se lisent aujourd'hui**, cinquante-
-quatre demandent une océrisation et six un téléchargement. Ce sont les cinquante-deux qu'il
-faut prendre d'abord.
+`todo-localisation.md` donne le point de départ pour les numéros et pages, **pas un
+décompte actuel de disponibilité** : un fascicule qui y manque peut depuis avoir été
+téléchargé (décret-loi n° 2024-4, par exemple), ou un chemin « français » servir
+en réalité l'édition arabe.
