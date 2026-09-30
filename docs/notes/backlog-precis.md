@@ -132,9 +132,15 @@ absentes.
 - **Montants non relevés** : aides aux personnes âgées (arrêtés de 1997 et 2003) et aux
   personnes handicapées (arrêtés de 2006 et 2017), soit deux séries entières.
 - **Fascicules manquants** : lois de finances 2025 et 2026 en édition française.
-- **Deux conflits de source** à trancher sur pièce, dont la date de la loi n° 2017-47.
+- **Conflit de pagination** des éditions française et arabe de textes de 2024 et postérieurs :
+  certains folios restent à établir. La date de la loi n° 2017-47 est tranchée au JORT
+  n° 50 de 2017 : 15 juin 2017, publié le 23 juin.
 - **Indemnités familiales** : décret n° 75-952 et circulaire n° 42 de 1996 à lire pour
   compléter la série en amont de 1986.
+- **Aides occasionnelles de l'AMEN** : le modificatif du 10 juillet 2025 est lu dans
+  l'édition arabe du JORT n° 88, pp. 2058-2059. Il relève de 50 à 100 D l'aide de rentrée
+  scolaire, avec effet au 1er septembre 2024, élargit les cas couverts et interdit le cumul
+  avec des aides publiques au même titre. L'édition française reste à vérifier.
 
 ## Rémunérations publiques
 

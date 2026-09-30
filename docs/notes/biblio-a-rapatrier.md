@@ -37,6 +37,17 @@ mérite ensuite son propre diff et sa propre revue ; elle n'a pas été déclenc
 
 ## En attente
 
+### Livre « Prestations sociales » — aide occasionnelle de l'AMEN (lecture du 29/09/2026)
+
+- `arrete-2025-07-10-appui-occasionnel` : nouvelle clé dans les bibliographies FR et AR du
+  livre, **à verser dans Zotero après revue et fusion**. Texte lu dans l'édition arabe du
+  JORT n° 88 de 2025, pp. 2058-2059 ; URL arabe seule dans `references.json` arabe,
+  l'adresse du fascicule français renvoyant en réalité le PDF arabe. Comparer la descente
+  avec les notes et l'URL propres à chaque langue avant de retenir ses changements.
+- `loi2017-47` : nouvelle clé FR/AR, **à verser après revue et fusion**. Loi datée du
+  15 juin 2017 dans les deux éditions du JORT n° 50 du 23 juin, p. 2244 (FR) et 2068
+  (AR), malgré la date du 15 mai portée par la notice de `jort_cache`.
+
 ### Livre « Retraites » — CNRPS, emplois de la partie active (versement du 24/09/2026)
 
 Branche `feat/cnrps-partie-active`. Source : `docs/notes/cnrps-partie-active.md` (§ 2.1, § 8).
