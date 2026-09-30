@@ -2455,8 +2455,8 @@ entries:
   - id: cadres-actifs
     acronyme: null
     statut: valide
-    references: [loi2019-37]
-    source_definition: {ref: loi85-12, locator: "art. 29"}
+    references: [loi2019-37, loi93-64]
+    source_definition: {ref: loi85-12, locator: "art. 29 et 32"}
     voir_aussi: [bonification, fonctions-astreignantes, travaux-penibles-insalubres, forces-de-securite-interieure]
     fr:
       terme: Cadres actifs
@@ -2465,8 +2465,8 @@ entries:
         corps, qui bénéficient d'un âge de mise à la retraite dérogatoire : 55 ans
         dans la loi n° 85-12, 57 ans depuis la loi n° 2019-37 (art. 29). Ils
         bénéficient d'une bonification égale à la période restant à courir jusqu'à
-        60 ans, dans la limite de deux à cinq ans selon la durée des services
-        (art. 32).
+        60 ans dans la rédaction de 1985, puis 62 ans depuis le 5 mai 2019,
+        dans la limite de deux à cinq ans selon la durée des services (art. 32).
       synonymes: []
     ar:
       terme: الأسلاك النشيطة
@@ -2474,8 +2474,8 @@ entries:
         أعوان عموميون مصنَّفون ضمن الأسلاك النشيطة بمقتضى أوامر خاصّة بكلّ سلك،
         ينتفعون بسنّ استثنائية للإحالة على التقاعد: 55 سنة في القانون عدد 12 لسنة
         1985، و57 سنة منذ القانون عدد 37 لسنة 2019 (الفصل 29). وينتفعون بترفيع في مدّة
-        الخدمات يساوي الفترة المتبقّية إلى سنّ الستين، في حدود سنتين إلى خمس سنوات حسب
-        مدّة الخدمات (الفصل 32).
+        الخدمات يساوي الفترة المتبقّية إلى سنّ الستين في صيغة 1985، ثم إلى سنّ 62 سنة
+        بداية من 5 ماي 2019، في حدود سنتين إلى خمس سنوات حسب مدّة الخدمات (الفصل 32).
       synonymes: []
 
   - id: elements-permanents-remuneration
@@ -2588,8 +2588,8 @@ entries:
   - id: fonctions-astreignantes
     acronyme: null
     statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
-    references: [decret85-1178, loi2019-37]
-    source_definition: {ref: loi85-12, locator: "art. 28"}
+    references: [decret85-1178, loi2019-37, loi93-64]
+    source_definition: {ref: loi85-12, locator: "art. 28 et 32"}
     voir_aussi: [bonification, cadres-actifs, travaux-penibles-insalubres]
     fr:
       terme: Fonctions astreignantes
@@ -2599,7 +2599,7 @@ entries:
         cumulé avec une durée de 35 ans de services : 55 ans dans la loi n° 85-12,
         57 ans depuis la loi n° 2019-37 (art. 28). Les agents concernés bénéficient
         d'une bonification égale à la période restant à courir jusqu'à 60 ans
-        (art. 32).
+        dans la rédaction de 1985, puis 62 ans depuis le 5 mai 2019 (art. 32).
       synonymes: []
     ar:
       terme: الوظائف المرهقة
@@ -2608,7 +2608,7 @@ entries:
         مباشرتها سنًّا استثنائية للإحالة على التقاعد مقترنة بمدّة خدمات بـ35 سنة: 55 سنة
         في القانون عدد 12 لسنة 1985، و57 سنة منذ القانون عدد 37 لسنة 2019 (الفصل 28).
         وينتفع الأعوان المعنيّون بترفيع في مدّة الخدمات يساوي الفترة المتبقّية إلى سنّ
-        الستين (الفصل 32).
+        الستين في صيغة 1985، ثم إلى سنّ 62 سنة بداية من 5 ماي 2019 (الفصل 32).
       synonymes: []
 
   - id: indemnite-caractere-familial

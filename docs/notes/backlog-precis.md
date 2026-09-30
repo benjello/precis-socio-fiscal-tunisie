@@ -25,7 +25,7 @@ extraits des lois de finances sont dans le dossier voisin `PDFs/Lois_de_Finances
 | Livre | État du texte | Première lecture faisable |
 |---|---|---|
 | Fiscalité | Quatre impôts ouverts ; TVA : déductions, régime suspensif et obligations encore à rédiger | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
-| Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Article 2 de la loi n° 2019-37 dans le JORT n° 35 de 2019, texte local extractible |
+| Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; PNAFN historique sans sources pour ses onze dates et montants | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
 | Cotisations sociales | Régimes et branches décrits ; plusieurs assiettes et ventilations encore à établir | Décret n° 99-1010 dans le JORT n° 40 de 1999, texte local extractible |
@@ -84,11 +84,18 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 
 ## Retraites
 
-- **Lecture immédiate** : l'article 2 de la loi n° 2019-37 est dans le JORT français
-  n° 35 de 2019 (`PDFs/JORT/2019/fr/Jo0352019.pdf`, couche texte) ; établir sa clause
-  d'effet avant de dater le repère d'âge de l'article 32 de la loi n° 85-12. Les
-  rectificatifs des décrets n° 82-1030 et de la loi n° 81-6 restent à relire, mais
-  identifier d'abord leurs fascicules et leurs pages exactes : un numéro a des homonymes.
+- **Point clos sur la source primaire** : l'article 2 de la loi n° 2019-37 remplace
+  60 par 62 ans aux § 2 et 3 de l'article 32, sans clause d'effet. Le JORT n° 35 a
+  été déposé le 30 avril 2019 : loi n° 93-64, art. 2, délai de cinq jours **sans compter
+  le dépôt** → **5 mai 2019**. L'article 5 ne reporte à juillet 2019 et janvier 2020
+  que les âges de mise à la retraite qu'il énumère, pas l'article 32. Le chapitre et
+  le glossaire distinguent désormais ces dates ; vérifier séparément la date portée
+  en amont pour le repère du modèle avant de le modifier.
+- **Lecture immédiate suivante** : loi n° 2009-39 et décret n° 2009-2085 sur le départ
+  avant l'âge légal (`2009/fr/Jo0552009.pdf` et `Jo0562009.pdf`, textuels) ; exposer
+  les conditions que le chapitre laisse encore de côté. Les rectificatifs du décret
+  n° 82-1030 et de la loi n° 81-6 restent à relire sur les scans locaux après
+  identification exacte des pages : un numéro peut avoir des homonymes.
 - **Barème d'actualisation — coefficients relevés.** Les 31 arrêtés de 1994 à 2024
   et leurs **1 488 coefficients** ont été relevés et contrôlés, y compris les images des
   tableaux de 1997 et 2024 ; voir `_secteur_prive.qmd#sec-rsna-bareme`. Les questions
@@ -114,17 +121,17 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   pensions historique) n'a rendu engendrable que le tableau des âges militaires ; les
   conditions des droits des survivants et des départs anticipés ne sont pas des valeurs
   datées. Les tableaux de revalorisation doivent suivre la date d'effet de la pension,
-  et non celle du SMIG. Le cas de l'article 32 attend la clause d'effet de 2019.
+  et non celle du SMIG. Le repère de l'article 32 est daté sur la loi de 2019 et la
+  date de dépôt du fascicule, sans assimiler cette date au calendrier de départ.
 
   | Tableau | Ce que le versement a changé |
   |---|---|
   | âges militaires | **engendré depuis le 20 septembre 2026.** Cinq grades, deux dates, tout est dans l'arbre |
   | survivants du RSNA | la branche existe, mais trois des six lignes sont des **règles** — remariage, plafond de cumul, cumul invalidité/survivant |
   | départs anticipés du RSNA | les durées et les taux sont versés ; les **conditions** de chaque cas ne sont pas des valeurs datées |
-  | article 32 de la loi n° 85-12 | seul le repère d'âge serait versable, et sa date d'effet de 2019 n'est pas établie |
+  | article 32 de la loi n° 85-12 | repère de 60 → 62 ans exécutoire le 5 mai 2019 ; les autres distinctions entre colonnes restent des règles |
 
-  Ne verser le repère d'âge de l'article 32 qu'une fois sa date d'effet établie. Les
-  conditions d'âge, d'études et de ressources de la pension d'orphelin restent à la main.
+  Les conditions d'âge, d'études et de ressources de la pension d'orphelin restent à la main.
 - **Régimes spéciaux** : le décret-loi n° 2011-48 relève aussi la contribution de
   l'employeur pour les membres du gouvernement et les gouverneurs ; le chapitre ne le dit pas.
 
@@ -316,8 +323,8 @@ il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
 
 ## Suite proposée
 
-1. **Lire ce qui est déjà textuel** : loi n° 2019-37, art. 2 (Retraites) ; décret
-   n° 99-1010 et décret-loi n° 2024-4 (Cotisations) ; décret n° 2018-626 et LF 2025,
+1. **Lire ce qui est déjà textuel** : loi n° 2009-39 et décret n° 2009-2085
+   (Retraites) ; décret n° 99-1010 et décret-loi n° 2024-4 (Cotisations) ; décret n° 2018-626 et LF 2025,
    art. 26 (Prestations) ; décrets n° 97-1368 et 2015-1768 (Fiscalité) ; décret
    n° 2015-2217 (Rémunérations). Vérifier chaque article à sa page, pas seulement
    la présence du fascicule.
