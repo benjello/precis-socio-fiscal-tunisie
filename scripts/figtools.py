@@ -458,6 +458,44 @@ def base_legislative(*series_ids: str) -> str:
     return f"{t('base_intro')}\n\n" + "\n".join(items)
 
 
+def infobulle(artiste, texte: str) -> None:
+    """Attache une infobulle à un élément tracé (point, trait, barre) d'une figure matplotlib.
+
+    Le texte s'affiche au survol dans la page HTML : `figure_tabs` émet alors la figure en SVG
+    en ligne, où l'élément porte un `<title>` — l'infobulle native du navigateur, lue aussi
+    par les lecteurs d'écran. Le PDF garde l'image fixe. Pour un texte par point, tracer
+    chaque point par son propre appel : un `plot` à plusieurs marqueurs n'a qu'un élément.
+    """
+    registre = artiste.figure.__dict__.setdefault("_infobulles", {})
+    gid = f"ib-{len(registre)}"
+    artiste.set_gid(gid)
+    registre[gid] = texte
+
+
+def _svg_avec_infobulles(fig, chemin: Path) -> str:
+    """La figure en SVG, chaque élément marqué par `infobulle` muni de son `<title>`."""
+    import html
+    import re
+
+    fig.savefig(chemin, format="svg", bbox_inches="tight")
+    svg = chemin.read_text(encoding="utf-8")
+    svg = svg[svg.index("<svg"):]  # ni prologue XML ni DOCTYPE dans une page HTML
+    for gid, texte in fig._infobulles.items():
+        svg = svg.replace(f'<g id="{gid}">',
+                          f'<g id="{gid}" class="infobulle"><title>{html.escape(texte)}</title>', 1)
+    # Largeur fluide : la hauteur suit le viewBox.
+    svg = re.sub(r'<svg([^>]*?) width="[^"]*" height="[^"]*"',
+                 r'<svg\1 style="width:100%;height:auto"', svg, count=1)
+    return svg
+
+
+_STYLE_INFOBULLES = """<style>
+.figure-svg g.infobulle { cursor: help; }
+.figure-svg g.infobulle:hover path, .figure-svg g.infobulle:hover use { fill-opacity: .12 !important; }
+</style>
+"""
+
+
 def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
                 caption: str = "", note_lecture: str | None = None,
                 fig_id: str | None = None, figdata_dir: str = "figdata",
@@ -520,11 +558,19 @@ def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
     base = base_legislative(*series_ids)
     onglet_base = f"## {t('tab_base')}\n\n{base}\n\n" if base else ""
     alt = caption.replace('"', "&quot;")
+    image = f'![]({png_path}){{fig-alt="{alt}"}}'
+    if getattr(fig, "_infobulles", None):
+        # HTML : SVG en ligne, survolable ; ailleurs (PDF) : l'image fixe.
+        svg = _svg_avec_infobulles(fig, png / f"{slug}.svg")
+        image = (f'::: {{.content-visible when-format="html"}}\n\n```{{=html}}\n'
+                 f'{_STYLE_INFOBULLES}<div class="figure-svg" role="img" aria-label="{alt}">\n'
+                 f'{svg}\n</div>\n```\n\n:::\n\n'
+                 f'::: {{.content-hidden when-format="html"}}\n\n{image}\n\n:::')
     sortie = f"""::: {{.panel-tabset}}
 
 ## {t('tab_graph')}
 
-![]({png_path}){{fig-alt="{alt}"}}
+{image}
 
 ::: {{.figure-source}}
 {src}

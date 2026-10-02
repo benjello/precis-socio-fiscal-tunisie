@@ -29,6 +29,7 @@ from __future__ import annotations
 import datetime
 import os
 import re
+import urllib.parse
 from pathlib import Path
 from typing import Any, Callable
 
@@ -71,8 +72,14 @@ PAQUETS = {
         # (openfisca-tunisia#458) : en deçà, le tableau du plafond publierait 60 % dès 1983.
         # La 0.112 verse les barèmes d'actualisation des salaires de 2016, 2017 et 2019
         # (openfisca-tunisia#459) : en deçà, une lecture directe perdrait ces trois barèmes,
-        # que la série de la figure et le chapitre comptent désormais.
-        "version_minimale": (0, 112),
+        # que la série de la figure et le chapitre comptent désormais. La 0.115 date l'échelle
+        # des taux d'accidents du travail au 1er avril 1999 et donne à chaque taux sa
+        # référence, numéro de point compris (openfisca-tunisia#465) : en deçà, le tableau
+        # de l'échelle de 1999 ne trouverait pas les numéros de point dont il tire ses lignes.
+        # La 0.118 verse l'échelle de 1995 (`atmp_1995`, openfisca-tunisia#469) et les taux de
+        # 1999 avant transfert du point (`atmp_avant_transfert`, #470) : en deçà, le tableau de
+        # 1995 et la première colonne de celui de 1999 n'existent pas.
+        "version_minimale": (0, 118),
     },
 }
 
@@ -178,7 +185,9 @@ def url_parametre(chemin_relatif: str, langue: str = "fr") -> str:
     """Vue en tableau d'un paramètre : `parameters/a/b.yaml` -> `…/parameters/a.b/table/`."""
     nom = chemin_relatif.removeprefix("parameters/").removesuffix(".yaml").replace("/", ".")
     prefixe = "/ar" if langue == "ar" else ""
-    return f"{BASE_LEGISLATIVE}{prefixe}/parameters/{nom}/table/"
+    # Quelques fichiers du modèle portent une espace ou une lettre accentuée dans leur nom
+    # (`atmp/construction_et_reparation navale.yaml`) : l'URL doit les encoder.
+    return f"{BASE_LEGISLATIVE}{prefixe}/parameters/{urllib.parse.quote(nom)}/table/"
 
 
 def releve_debut() -> None:
@@ -851,8 +860,110 @@ def tableau_taux_datee(
     return pd.DataFrame(lignes)
 
 
+def _enfants(chemin_noeud: str) -> list[tuple[str, bool]]:
+    """Enfants d'un nœud de paramètres : [(nom, est_un_nœud)], dans l'ordre de son index.
+
+    L'ordre est celui de `metadata.order` dans `index.yaml` — l'ordre du texte, que le
+    tableau doit suivre ; les enfants qu'il omet suivent, par ordre alphabétique.
+    """
+    racine = _racine_paquet()
+    if racine is None:
+        return []
+    ref = racine
+    for element in chemin_noeud.split("/"):
+        ref = ref / element
+    if not ref.is_dir():
+        return []
+    noms = {}
+    for enfant in ref.iterdir():
+        if enfant.is_dir():
+            noms[enfant.name] = True
+        elif enfant.name.endswith(".yaml") and enfant.name != "index.yaml":
+            noms[enfant.name.removesuffix(".yaml")] = False
+    index = charge_parametre(f"{chemin_noeud}/index.yaml") or {}
+    ordre = [n for n in ((index.get("metadata") or {}).get("order") or []) if n in noms]
+    ordre += sorted(n for n in noms if n not in ordre)
+    return [(n, noms[n]) for n in ordre]
+
+
+def arborescence(chemin_noeud: str, prefixe: str = "") -> list[tuple[str, int, bool]]:
+    """Parcours en profondeur d'un nœud : [(chemin relatif au nœud, profondeur, est_un_nœud)]."""
+    sortie = []
+    for nom, est_noeud in _enfants(chemin_noeud):
+        relatif = f"{prefixe}{nom}"
+        sortie.append((relatif, relatif.count("/"), est_noeud))
+        if est_noeud:
+            sortie += arborescence(f"{chemin_noeud}/{nom}", f"{relatif}/")
+    return sortie
+
+
+def tableau_arborescence(
+    noeud_lignes: str,
+    colonnes: list[tuple[str, str, str, Callable[[float | None], str]]],
+    libelles: dict[str, str] | None = None,
+    entete_libelle: str = "Secteur",
+    retrait: str = "— ",
+    numeros: dict[str, str] | None = None,
+    entete_numero: str = "",
+) -> "pd.DataFrame | None":
+    """Pivot « catégorie × colonne » : une ligne par feuille d'un nœud, une colonne par lecture.
+
+    Sert aux échelles de taux par secteur (accidents du travail) et, plus largement, à tout
+    nœud dont les feuilles sont des catégories parallèles. Les lignes suivent l'arborescence
+    de `noeud_lignes`, dans l'ordre de ses `index.yaml` ; un sous-nœud donne une ligne de
+    regroupement, sans valeur, et ses feuilles sont mises en retrait.
+
+    `colonnes` : (nœud, date ISO, en-tête, formateur). Chaque colonne lit, sous son nœud,
+    la feuille de même chemin relatif que la ligne, au taux de sa première tranche, à la
+    date donnée — ce qui permet de juxtaposer deux nœuds de même arborescence (avant et
+    après un transfert) ou un même nœud à deux dates. Une feuille absente d'un nœud, ou sans
+    valeur à la date, donne « — ».
+
+    `libelles` : chemin relatif -> libellé de ligne. À défaut, le `short_label` du paramètre
+    (ou de l'`index.yaml` du sous-nœud). Un libellé introuvable fait échouer le tableau :
+    une ligne sans nom ne se publie pas. En arabe, le générateur fournit TOUS les libellés,
+    transcrits de l'édition arabe du texte — les `short_label` sont en français.
+
+    `numeros` : chemin relatif -> numéro de la ligne dans le texte (« 3-1 »), rendu dans une
+    première colonne `entete_numero`.
+    """
+    if pd is None:
+        return None
+    lignes_arbre = arborescence(noeud_lignes)
+    if not lignes_arbre:
+        return None
+    libelles = libelles or {}
+    lignes = []
+    for relatif, profondeur, est_noeud in lignes_arbre:
+        if relatif in libelles:
+            libelle = libelles[relatif]
+        else:
+            fichier = f"{noeud_lignes}/{relatif}/index.yaml" if est_noeud else f"{noeud_lignes}/{relatif}.yaml"
+            libelle = ((charge_parametre(fichier) or {}).get("metadata") or {}).get("short_label")
+        if not libelle:
+            raise ValueError(f"ligne sans libellé : {noeud_lignes}/{relatif}")
+        ligne = {entete_numero: numeros.get(relatif, "")} if numeros is not None else {}
+        ligne[entete_libelle] = retrait * profondeur + libelle
+        for noeud, date, entete, formateur in colonnes:
+            if est_noeud:
+                ligne[entete] = ""
+                continue
+            chemin = f"{noeud}/{relatif}.yaml"
+            serie = taux_datee(chemin)
+            retenue = None
+            for d, v, _t, _h in serie:
+                if d <= date:
+                    retenue = v
+            if serie:
+                releve_note(chemin, f"{libelle} — {entete}")
+            ligne[entete] = formateur(retenue) if retenue is not None else "—"
+        lignes.append(ligne)
+    return pd.DataFrame(lignes)
+
+
 def markdown_avec_legende(
-    chemin: str | Path, legende: str, label: str, colonnes: str = ""
+    chemin: str | Path, legende: str, label: str, colonnes: str = "",
+    niveau: int = 2, arborescence: bool = False,
 ) -> str:
     """Rend un snapshot en tableau Markdown légendé, pour un chunk `#| output: asis`.
 
@@ -863,6 +974,13 @@ def markdown_avec_legende(
     la légende porte une ancre `@tbl-…` référençable dans le texte.
 
     `colonnes` : spécification facultative de largeur, par exemple `{tbl-colwidths="[20,80]"}`.
+
+    `niveau` : niveau de titre des onglets « Tableau / Base législative » ; 3 quand le tableau
+    est lui-même placé sous un onglet (`markdown_onglets`).
+
+    `arborescence` : le tableau vient de `tableau_arborescence` ; en HTML, ses lignes de
+    regroupement deviennent dépliables (voir `SCRIPT_ARBORESCENCE`). Ailleurs — PDF, Markdown —
+    il reste un tableau ordinaire, ses retraits « — » disant la hiérarchie.
     """
     fichier = Path(chemin)
     if not fichier.is_file():
@@ -870,6 +988,8 @@ def markdown_avec_legende(
     corps = fichier.read_text(encoding="utf-8").rstrip()
     attributs = f"{{#{label}}}" if not colonnes else f"{{#{label} {colonnes}}}"
     tableau = f"{corps}\n\n: {legende} {attributs}\n"
+    if arborescence:
+        tableau = f"{_script_arborescence()}::: {{.tableau-arborescence}}\n\n{tableau}\n:::\n"
     liens = fichier.with_suffix(".liens.yml")
     if not liens.is_file() or yaml is None:
         return tableau
@@ -877,8 +997,119 @@ def markdown_avec_legende(
     m = ONGLETS[langue]
     items = "\n".join(f"- [{e['libelle']}]({e['url']})"
                        for e in yaml.safe_load(liens.read_text(encoding="utf-8")) or [])
-    return (f"::: {{.panel-tabset}}\n\n## {m['tableau']}\n\n{tableau}\n"
-            f"## {m['base']}\n\n{m['intro']}\n\n{items}\n\n:::\n")
+    titre = "#" * niveau
+    return (f"::: {{.panel-tabset}}\n\n{titre} {m['tableau']}\n\n{tableau}\n"
+            f"{titre} {m['base']}\n\n{m['intro']}\n\n{items}\n\n:::\n")
+
+
+def markdown_onglets(panneaux: list[tuple[str, str | Path, str, str]], **options) -> str:
+    """Plusieurs tableaux sous des onglets — une période, une année, une échelle par onglet.
+
+    Évite d'empiler dans la page des tableaux qui se lisent l'un OU l'autre, et d'élargir un
+    tableau d'autant de colonnes que de dates. `panneaux` : (titre de l'onglet, snapshot,
+    légende, label) ; chaque tableau garde sa légende, son ancre `@tbl-…` et ses propres
+    onglets « Tableau / Base législative », un niveau de titre plus bas. `options` passe à
+    `markdown_avec_legende` (`colonnes`, `arborescence`).
+    """
+    corps = "".join(f"## {titre}\n\n{markdown_avec_legende(chemin, legende, label, niveau=3, **options)}\n"
+                    for titre, chemin, legende, label in panneaux)
+    return f"::: {{.panel-tabset}}\n\n{corps}:::\n"
+
+
+# LIGNES DÉPLIABLES. Un tableau d'arborescence (`tableau_arborescence`) marque ses niveaux par
+# un retrait « — » en tête du libellé. En HTML, ce script lit ce retrait : une ligne suivie de
+# lignes plus profondes devient un regroupement, replié par défaut, qui se déplie au clic ;
+# le retrait textuel est remplacé par une marge. Il ne dépend que de ce marquage : tout tableau
+# placé dans un bloc `.tableau-arborescence` en bénéficie. Émis une fois par page.
+SCRIPT_ARBORESCENCE = """```{=html}
+<style>
+.tableau-arborescence tr.groupe { cursor: pointer; font-weight: 600; }
+.tableau-arborescence tr.groupe .bascule { display: inline-block; width: 1.2em; }
+.tableau-arborescence tr.masque { display: none; }
+.tableau-arborescence .tout { font-size: .85em; margin: .3em 0; }
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const ar = (document.documentElement.lang || "").startsWith("ar");
+  const mots = ar ? ["عرض الكلّ", "طيّ الكلّ"] : ["Tout déplier", "Tout replier"];
+  const fleches = { ferme: ar ? "◂" : "▸", ouvert: "▾" };
+  document.querySelectorAll(".tableau-arborescence table").forEach((table) => {
+    const lignes = [...table.querySelectorAll("tbody tr")];
+    const col = (() => {
+      for (const tr of lignes) {
+        const i = [...tr.cells].findIndex((td) => td.textContent.trim().startsWith("—"));
+        if (i >= 0) return i;
+      }
+      return -1;
+    })();
+    if (col < 0) return;
+    const entete = table.querySelector("thead tr");
+    if (entete && entete.cells[col]) entete.cells[col].style.textAlign = "start";
+    const infos = lignes.map((tr) => {
+      const td = tr.cells[col];
+      const m = td.textContent.trim().match(/^((?:—\s*)*)/);
+      const prof = (m[1].match(/—/g) || []).length;
+      td.style.textAlign = "start";
+      if (prof) {
+        const w = document.createTreeWalker(td, NodeFilter.SHOW_TEXT);
+        let n;
+        while ((n = w.nextNode()) && !n.textContent.trim());
+        if (n) n.textContent = n.textContent.replace(/^(\s*—\s*)+/, "");
+        td.style.paddingInlineStart = (prof * 1.4 + 0.4) + "em";
+      }
+      return { tr, prof };
+    });
+    const parents = [];
+    const pile = [];
+    infos.forEach((info, i) => {
+      while (pile.length && infos[pile[pile.length - 1]].prof >= info.prof) pile.pop();
+      parents.push(pile.length ? pile[pile.length - 1] : -1);
+      pile.push(i);
+    });
+    const groupes = new Set(parents.filter((p) => p >= 0));
+    const rafraichir = () => infos.forEach((info, i) => {
+      const b = info.tr.querySelector(".bascule");
+      if (b) b.textContent = info.tr.classList.contains("ouvert") ? fleches.ouvert : fleches.ferme;
+      let p = parents[i], visible = true;
+      while (p >= 0) {
+        if (!infos[p].tr.classList.contains("ouvert")) { visible = false; break; }
+        p = parents[p];
+      }
+      info.tr.classList.toggle("masque", !visible);
+    });
+    groupes.forEach((i) => {
+      const tr = infos[i].tr;
+      tr.classList.add("groupe");
+      tr.cells[col].insertAdjacentHTML("afterbegin", '<span class="bascule">▸</span>');
+      tr.addEventListener("click", () => { tr.classList.toggle("ouvert"); rafraichir(); });
+    });
+    rafraichir();
+    const bouton = document.createElement("button");
+    bouton.className = "btn btn-sm btn-outline-secondary tout";
+    bouton.textContent = mots[0];
+    bouton.addEventListener("click", () => {
+      const tout = bouton.textContent === mots[0];
+      groupes.forEach((i) => infos[i].tr.classList.toggle("ouvert", tout));
+      rafraichir();
+      bouton.textContent = tout ? mots[1] : mots[0];
+    });
+    table.before(bouton);
+  });
+});
+</script>
+```
+
+"""
+_script_arborescence_emis = False
+
+
+def _script_arborescence() -> str:
+    """Le script des lignes dépliables, la première fois seulement dans la page."""
+    global _script_arborescence_emis
+    if _script_arborescence_emis:
+        return ""
+    _script_arborescence_emis = True
+    return SCRIPT_ARBORESCENCE
 
 
 # Intitulés des onglets d'un tableau engendré, dans la langue du livre.
