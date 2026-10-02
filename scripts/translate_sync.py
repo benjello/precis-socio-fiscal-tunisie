@@ -425,6 +425,64 @@ def _compte(iterable):
     return compte
 
 
+def _lignes_du_jeton(texte, jeton, largeur=40):
+    """Où le jeton paraît : « l. 371 « …contexte… » », une entrée par ligne qui le porte.
+
+    Rapprocher les lignes de la source de celles de la traduction dit QUELLE occurrence
+    a disparu : sans cela, « attendu 3 fois, trouvé 2 » ne distingue pas une fin de
+    fichier coupée d'une formule omise en pleine phrase.
+    """
+    sorties = []
+    for i, ligne in enumerate(texte.splitlines(), 1):
+        if jeton in ligne:
+            k = ligne.index(jeton)
+            extrait = ligne[max(0, k - largeur):k + len(jeton) + largeur].strip()
+            sorties.append(f"l. {i} « {extrait} »")
+    return ", ".join(sorties) or "aucune"
+
+
+class SortieTronquee(RuntimeError):
+    """Le modèle a cessé d'écrire avant la fin : plafond de jetons de sortie atteint."""
+
+
+def raison_d_arret(response):
+    """`finish_reason` du premier candidat, en texte (« STOP », « MAX_TOKENS »…), ou ""."""
+    try:
+        raison = response.candidates[0].finish_reason
+    except (AttributeError, IndexError, TypeError):
+        return ""
+    return getattr(raison, "name", None) or str(raison or "").rsplit(".", 1)[-1]
+
+
+def journal_jetons(response):
+    """Jetons consommés par l'appel : entrée, sortie, réflexion — ou "" si inconnus."""
+    u = getattr(response, "usage_metadata", None)
+    if u is None:
+        return ""
+    champs = (("entrée", "prompt_token_count"), ("sortie", "candidates_token_count"),
+              ("réflexion", "thoughts_token_count"), ("total", "total_token_count"))
+    return ", ".join(f"{nom} {getattr(u, attr)}" for nom, attr in champs
+                     if getattr(u, attr, None) is not None)
+
+
+def verifier_fin(response, file_path):
+    """Journalise les jetons de l'appel et lève `SortieTronquee` sur MAX_TOKENS.
+
+    Le garde-fou de troncature par nombre de lignes (`SEUIL_TRONCATURE`) ne voit pas une
+    sortie coupée de quelques pour cent : elle passe pour une traduction un peu courte, et
+    l'échec ressort ailleurs — formule manquante, fin de fichier laissée en français.
+    La raison d'arrêt du modèle, elle, le dit sans ambiguïté.
+    """
+    raison = raison_d_arret(response)
+    jetons = journal_jetons(response)
+    print(f"  {file_path} : arrêt du modèle « {raison or 'inconnu'} »"
+          + (f" ; jetons — {jetons}" if jetons else ""))
+    if raison == "MAX_TOKENS":
+        raise SortieTronquee(
+            f"sortie tronquée : le modèle a atteint son plafond de jetons de sortie "
+            f"({jetons or 'consommation inconnue'})")
+
+
 def reinjecter_formules(source, traduction, table):
     """Remet les formules à la place de leurs jetons, ou lève `FormulesAlterees`.
 
@@ -467,9 +525,12 @@ def reinjecter_formules(source, traduction, table):
         if n not in table.par_numero:
             problemes.append(f"⟦MATH{n}⟧ inconnu")
         elif attendus.get(n, 0) != trouves.get(n, 0):
+            jeton = JETON_FORMULE.format(n)
             problemes.append(f"⟦MATH{n}⟧ attendu {attendus.get(n, 0)} fois, "
                              f"trouvé {trouves.get(n, 0)} fois "
-                             f"({table.par_numero[n][:60]!r})")
+                             f"({table.par_numero[n][:60]!r}) — source : "
+                             f"{_lignes_du_jeton(source_masquee, jeton)} ; traduction : "
+                             f"{_lignes_du_jeton(traduction, jeton)}")
 
     seuls_src = _compte(int(n) for n in JETON_SEUL_RE.findall(source_masquee))
     seuls_trad = _compte(int(n) for n in JETON_SEUL_RE.findall(traduction))
@@ -782,6 +843,7 @@ Fichier à traduire :
 
             if response is None:
                 raise RuntimeError("aucune réponse de l'API après retries")
+            verifier_fin(response, file_path)
             translated_text = response.text
             if translated_text.startswith("```markdown\n"):
                 translated_text = translated_text[12:]
