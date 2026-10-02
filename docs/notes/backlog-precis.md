@@ -28,7 +28,7 @@ extraits des lois de finances sont dans le dossier voisin `PDFs/Lois_de_Finances
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; PNAFN historique sans sources pour ses onze dates et montants | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
-| Cotisations sociales | Régimes et branches décrits ; plusieurs assiettes et ventilations encore à établir | Décret n° 99-1010 dans le JORT n° 40 de 1999, texte local extractible |
+| Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
 
 Les `TODO` des `.qmd` détaillent chaque lacune, y compris celles que ce tableau ne peut pas
 résumer. Ici, **lisible** veut dire que le fascicule est présent avec une couche texte
@@ -218,10 +218,16 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 
 ## Cotisations sociales
 
-- **Lecture immédiate** : le décret n° 99-1010, modificatif de l'échelle des taux
-  d'accidents du travail (`1999/fr/Jo04099.pdf`), et l'article 4 du décret
-  n° 2007-1406 (`2007/fr/Jo0492007.pdf`, source déjà lue pour la maladie) : établir
-  sur pièce ce qu'ils changent respectivement aux classes de cotisation et au partage
+- **Accidents du travail (§ sec-cot-at)** : les décrets n° 95-538 et 99-1010 sont lus
+  dans les deux éditions (taux, entrée en vigueur au 1er janvier 1995 et au 1er avril
+  1999). Les deux échelles sont engendrées, avant et après transfert du point
+  (`tables/atmp_1995.md`, `tables/atmp_1999.md`). Restent : les forfaits des
+  articles 4 à 7 et la modulation des articles 10 à 27 (openfisca-tunisia#471), dont
+  l'édition arabe des articles 4 à 7 (JORT n° 30 de 1995, pp. 691-692) reste à lire à
+  l'image ; le financement sous la loi n° 57-73. La fiche `r-atmp-echelle-modificatifs`
+  ne couvre que les intitulés : le plein texte reste à parcourir.
+- **Lecture immédiate** : l'article 4 du décret n° 2007-1406 (`2007/fr/Jo0492007.pdf`,
+  source déjà lue pour la maladie) : établir sur pièce ce qu'il change au partage
   employeur/agent. Le décret-loi n° 2024-4 sur les travailleuses agricoles est désormais
   présent dans les deux éditions textuelles du JORT n° 129 de 2024 ; relever taux,
   assiette et dates avant d'affirmer qu'ils sont fixés. Le vieux relevé
@@ -341,7 +347,7 @@ reprendre sans refaire la même recherche :
   obtenir hors du corpus JORT.
 
 1. **Lire ce qui est déjà textuel** : loi n° 2009-39 et décret n° 2009-2085
-   (Retraites) ; décret n° 99-1010 et décret-loi n° 2024-4 (Cotisations) ; décret n° 2018-626 et LF 2025,
+   (Retraites) ; décret-loi n° 2024-4 (Cotisations) ; décret n° 2018-626 et LF 2025,
    art. 26 (Prestations) ; décrets n° 97-1368 et 2015-1768 (Fiscalité) ; décret
    n° 2015-2217 (Rémunérations). Vérifier chaque article à sa page, pas seulement
    la présence du fascicule.

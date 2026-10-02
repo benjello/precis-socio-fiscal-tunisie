@@ -1,0 +1,26 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-02
+# séries (tunisia_data) : atmp-echelles-1995-1999
+# sources (citation) : @decret95-538, @decret99-1010
+# fiches : 
+# méthode/hypothèses : La correspondance entre classes de 1995 et secteurs de 1999 n'est donnée par aucun texte : seuls les cas évidents sont retenus.
+# note : Taux de cotisation d'accidents du travail des employeurs affiliés à la CNSS, après transfert du point du régime général : échelle de 1995 et échelle de 1999, classe par classe
+Classe de 1995,Taux 1995 (%),Taux depuis 1999 (%),Points de 1999
+1. Services de bureaux,"0,5","0,4",1
+2. Autres services,"0,6","0,5",2
+3. Commerce,"0,6","0,5","3-1, 3-2"
+4. Artisans,"0,6",,
+5. Agriculture et pêche,"0,7","0,6",5
+6. Industries agro-alimentaires,"1,6","1,6","6-1, 6-2, 6-3, 6-4, 6-5, 6-6, 6-7, 6-8, 6-9, 6-10"
+7. Industrie du froid,2,,
+8. Industrie du papier et des arts graphiques,"1 – 2,2","0,8 – 2","8-1, 8-2, 8-3"
+"9. Industries mécaniques, de fonderies et électriques","1,7 – 2,8",,
+"10. Industries de textile, du cuir et des chaussures",2,"1,2 – 2","14-1, 14-2, 14-3, 14-4, 14-5"
+11. Industrie du meuble,2,,
+"12. Industrie des matériaux de construction, de la céramique et de verrerie",3,"2,2 – 2,8","18, 19, 20"
+13. Industrie du bois et du liège,"3,5","3 – 3,4","15, 17"
+14. Autres industries manufacturières,2,"1,7",21
+15. Industries chimiques,"2,1 – 5","2,1 – 3,5","22-1, 22-2, 22-3, 22-4, 22-5, 22-6, 22-7, 22-8, 22-9, 22-10, 22-11, 22-12, 22-13, 22-14, 22-15, 22-16"
+16. Bâtiment et travaux publics,"3,8","3,8",23
+17. Transport et manutention,"4,5",3 – 4,"27-1, 27-2, 27-3, 27-4"
+18. Industries extractives,5,"3,5",29
+Secteurs de 1999 sans classe en 1995,,"0,5 – 4","4, 7, 9-1, 9-2, 9-3, 10, 11, 12, 13, 16, 24-1, 24-2, 24-3, 24-4, 24-5, 24-6, 25, 26, 28, 30, 31, 32, 33, 34-1, 34-2, 35-1, 35-2, 36-1, 36-2, 36-3, 37"

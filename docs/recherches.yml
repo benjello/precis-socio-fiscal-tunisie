@@ -654,3 +654,19 @@
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
   a_faire: [lire le JORT n° 58 de 2026, lire les numéros postérieurs au n° 93 de 2026]
+
+- id: r-atmp-echelle-modificatifs
+  objet: texte modifiant, après le décret n° 99-1010, l'échelle des taux de cotisation au régime de réparation des accidents du travail et des maladies professionnelles (articles 1er et 2 nouveaux du décret n° 95-538)
+  ou: [precis/fr/cotisations_sociales/index.qmd#sec-cot-at-longue-periode]
+  requetes:
+    titres_like: ['%95-538%', '%99-1010%', '%accidents du travail%taux%', '%accidents du travail%cotisation%']
+    depuis: 1999-05-18
+  passes:
+  - date: 2026-10-02
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache : intitulés et objets des textes publiés depuis le 1er janvier 1999 visant les accidents du travail ; seuls paraissent des textes sur l''assiette (décret n° 2000-1439), l''extension de la couverture (décret n° 2000-2279), les remises de pénalités (2007, 2008, 2011, 2024, 2025) et le régime des forces de sûreté intérieure (loi n° 2013-50). Aucun texte de taux. Le plein texte des fascicules n''a pas été parcouru.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules (« 95-538 », « 538 لسنة 1995 ») pour un modificatif dont l'intitulé ne viserait pas le décret
