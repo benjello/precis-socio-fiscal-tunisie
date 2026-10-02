@@ -441,6 +441,25 @@ def _lignes_du_jeton(texte, jeton, largeur=40):
     return ", ".join(sorties) or "aucune"
 
 
+# BUDGET DE SORTIE. gemini-2.5-flash « réfléchit » par défaut, et ses jetons de réflexion
+# se prennent sur le même plafond que la réponse (65 536 jetons). Le 2 octobre 2026, la
+# retraduction du chapitre « Cotisations sociales » (42 010 jetons en entrée) s'est arrêtée
+# sur MAX_TOKENS après 37 782 jetons de réflexion pour 27 748 de traduction : plus de la
+# moitié du budget allait à un raisonnement inutile pour une traduction à température 0.
+# La réflexion est donc coupée, et le plafond de sortie fixé explicitement.
+PLAFOND_SORTIE = 65536
+
+
+def config_generation(types, guidelines):
+    """Configuration de l'appel : température 0, sans réflexion, plafond de sortie explicite."""
+    return types.GenerateContentConfig(
+        system_instruction=guidelines,
+        temperature=0.0,
+        max_output_tokens=PLAFOND_SORTIE,
+        thinking_config=types.ThinkingConfig(thinking_budget=0),
+    )
+
+
 class SortieTronquee(RuntimeError):
     """Le modèle a cessé d'écrire avant la fin : plafond de jetons de sortie atteint."""
 
@@ -814,10 +833,7 @@ Fichier à traduire :
                     response = client.models.generate_content(
                         model='gemini-2.5-flash',
                         contents=prompt,
-                        config=types.GenerateContentConfig(
-                            system_instruction=guidelines,
-                            temperature=0.0,
-                        ),
+                        config=config_generation(types, guidelines),
                     )
                     break
                 except Exception as api_err:

@@ -19,7 +19,9 @@ from translate_sync import (  # noqa: E402
     FormulesAlterees,
     SortieTronquee,
     TableFormules,
+    PLAFOND_SORTIE,
     _lignes_du_jeton,
+    config_generation,
     journal_jetons,
     masquer_formules,
     raison_d_arret,
@@ -72,6 +74,20 @@ class VerifierFinTest(unittest.TestCase):
 
     def test_jetons_inconnus(self):
         self.assertEqual(journal_jetons(SimpleNamespace()), "")
+
+
+class ConfigGenerationTest(unittest.TestCase):
+    """La configuration passée au modèle : sans réflexion, plafond de sortie explicite."""
+
+    def test_sans_reflexion_et_plafond_explicite(self):
+        types = SimpleNamespace(
+            GenerateContentConfig=lambda **kw: SimpleNamespace(**kw),
+            ThinkingConfig=lambda **kw: SimpleNamespace(**kw))
+        c = config_generation(types, "consignes")
+        self.assertEqual(c.temperature, 0.0)
+        self.assertEqual(c.max_output_tokens, PLAFOND_SORTIE)
+        self.assertEqual(c.thinking_config.thinking_budget, 0)
+        self.assertEqual(c.system_instruction, "consignes")
 
 
 class FormulePerdueTest(unittest.TestCase):
