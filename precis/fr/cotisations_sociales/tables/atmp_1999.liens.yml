@@ -1,0 +1,533 @@
+- libelle: Services de bureaux — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/services_de_bureaux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.services_de_bureaux/table/
+- libelle: Services de bureaux — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/services_de_bureaux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.services_de_bureaux/table/
+- libelle: Autres services — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/autres_services.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.autres_services/table/
+- libelle: Autres services — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/autres_services.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.autres_services/table/
+- libelle: Commerce de gros — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/commerce/commerce_de_gros.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.commerce.commerce_de_gros/table/
+- libelle: Commerce de gros — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/commerce/commerce_de_gros.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.commerce.commerce_de_gros/table/
+- libelle: Commerce de détail — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/commerce/commerce_de_detail.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.commerce.commerce_de_detail/table/
+- libelle: Commerce de détail — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/commerce/commerce_de_detail.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.commerce.commerce_de_detail/table/
+- libelle: Secteur des industries artisanales — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_artisanales.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_artisanales/table/
+- libelle: Secteur des industries artisanales — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_artisanales.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_artisanales/table/
+- libelle: Agriculture et pêche — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/agriculture_et_peche.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.agriculture_et_peche/table/
+- libelle: Agriculture et pêche — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/agriculture_et_peche.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.agriculture_et_peche/table/
+- libelle: Industries du lait et dérivés — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_agro_alimentaires/lait_et_derives.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_agro_alimentaires.lait_et_derives/table/
+- libelle: Industries du lait et dérivés — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_agro_alimentaires/lait_et_derives.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_agro_alimentaires.lait_et_derives/table/
+- libelle: Industries des huiles et des corps gras — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_agro_alimentaires/huiles_corps_gras.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_agro_alimentaires.huiles_corps_gras/table/
+- libelle: Industries des huiles et des corps gras — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_agro_alimentaires/huiles_corps_gras.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_agro_alimentaires.huiles_corps_gras/table/
+- libelle: Travail des graines — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_agro_alimentaires/travail_des_graines.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_agro_alimentaires.travail_des_graines/table/
+- libelle: Travail des graines — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_agro_alimentaires/travail_des_graines.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_agro_alimentaires.travail_des_graines/table/
+- libelle: Industries de conserverie et semi-conserverie — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_agro_alimentaires/conserverie_semi_conserverie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_agro_alimentaires.conserverie_semi_conserverie/table/
+- libelle: Industries de conserverie et semi-conserverie — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_agro_alimentaires/conserverie_semi_conserverie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_agro_alimentaires.conserverie_semi_conserverie/table/
+- libelle: Industries de séchage et déshydratation — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_agro_alimentaires/sechage_deshydratation.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_agro_alimentaires.sechage_deshydratation/table/
+- libelle: Industries de séchage et déshydratation — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_agro_alimentaires/sechage_deshydratation.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_agro_alimentaires.sechage_deshydratation/table/
+- libelle: Industries du sucre, chocolaterie et dérivés — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_agro_alimentaires/sucre_chocolat_derives.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_agro_alimentaires.sucre_chocolat_derives/table/
+- libelle: Industries du sucre, chocolaterie et dérivés — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_agro_alimentaires/sucre_chocolat_derives.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_agro_alimentaires.sucre_chocolat_derives/table/
+- libelle: Industries de boissons, boissons alcoolisées et vinaigre — Avant transfert
+    du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_agro_alimentaires/boissons_alcools_vinaigre.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_agro_alimentaires.boissons_alcools_vinaigre/table/
+- libelle: Industries de boissons, boissons alcoolisées et vinaigre — Après transfert
+    du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_agro_alimentaires/boissons_alcools_vinaigre.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_agro_alimentaires.boissons_alcools_vinaigre/table/
+- libelle: Industries d'aliments composés — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_agro_alimentaires/aliments_composes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_agro_alimentaires.aliments_composes/table/
+- libelle: Industries d'aliments composés — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_agro_alimentaires/aliments_composes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_agro_alimentaires.aliments_composes/table/
+- libelle: Les abattoirs — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_agro_alimentaires/abattoirs.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_agro_alimentaires.abattoirs/table/
+- libelle: Les abattoirs — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_agro_alimentaires/abattoirs.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_agro_alimentaires.abattoirs/table/
+- libelle: Autres industries agro-alimentaires — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_agro_alimentaires/autre_agro_alimentaire.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_agro_alimentaires.autre_agro_alimentaire/table/
+- libelle: Autres industries agro-alimentaires — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_agro_alimentaires/autre_agro_alimentaire.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_agro_alimentaires.autre_agro_alimentaire/table/
+- libelle: Industries du tabac — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industrie_du_tabac.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industrie_du_tabac/table/
+- libelle: Industries du tabac — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industrie_du_tabac.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industrie_du_tabac/table/
+- libelle: Fabrication du papier et carton — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industrie_du_papier_et_des_arts_graphiques/fabrication_papier_carton.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industrie_du_papier_et_des_arts_graphiques.fabrication_papier_carton/table/
+- libelle: Fabrication du papier et carton — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industrie_du_papier_et_des_arts_graphiques/fabrication_papier_carton.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industrie_du_papier_et_des_arts_graphiques.fabrication_papier_carton/table/
+- libelle: Transformation du papier et carton — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industrie_du_papier_et_des_arts_graphiques/transformation_papier_carton.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industrie_du_papier_et_des_arts_graphiques.transformation_papier_carton/table/
+- libelle: Transformation du papier et carton — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industrie_du_papier_et_des_arts_graphiques/transformation_papier_carton.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industrie_du_papier_et_des_arts_graphiques.transformation_papier_carton/table/
+- libelle: Imprimerie et édition — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industrie_du_papier_et_des_arts_graphiques/imprimerie_edition.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industrie_du_papier_et_des_arts_graphiques.imprimerie_edition/table/
+- libelle: Imprimerie et édition — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industrie_du_papier_et_des_arts_graphiques/imprimerie_edition.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industrie_du_papier_et_des_arts_graphiques.imprimerie_edition/table/
+- libelle: Fabrication de machines et équipements mécaniques — Avant transfert du
+    point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_mecaniques/machines_equipements_mecaniques.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_mecaniques.machines_equipements_mecaniques/table/
+- libelle: Fabrication de machines et équipements mécaniques — Après transfert du
+    point
+  parametre: parameters/prelevements_sociaux/atmp/industries_mecaniques/machines_equipements_mecaniques.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_mecaniques.machines_equipements_mecaniques/table/
+- libelle: Fabrication d'équipements et d'appareils domestiques — Avant transfert
+    du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_mecaniques/equipements_appareils_domestiques.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_mecaniques.equipements_appareils_domestiques/table/
+- libelle: Fabrication d'équipements et d'appareils domestiques — Après transfert
+    du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_mecaniques/equipements_appareils_domestiques.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_mecaniques.equipements_appareils_domestiques/table/
+- libelle: Fabrication automobile et de matériel de transport — Avant transfert du
+    point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_mecaniques/automobile_materiel_de_transport.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_mecaniques.automobile_materiel_de_transport/table/
+- libelle: Fabrication automobile et de matériel de transport — Après transfert du
+    point
+  parametre: parameters/prelevements_sociaux/atmp/industries_mecaniques/automobile_materiel_de_transport.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_mecaniques.automobile_materiel_de_transport/table/
+- libelle: Industrie de fonderie et sidérurgie — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industrie_de_fonderie_et_siderurgie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industrie_de_fonderie_et_siderurgie/table/
+- libelle: Industrie de fonderie et sidérurgie — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industrie_de_fonderie_et_siderurgie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industrie_de_fonderie_et_siderurgie/table/
+- libelle: Fabrication de machines et appareils électriques — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/fabrication_de_machines_et_appareils_electriques.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.fabrication_de_machines_et_appareils_electriques/table/
+- libelle: Fabrication de machines et appareils électriques — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/fabrication_de_machines_et_appareils_electriques.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.fabrication_de_machines_et_appareils_electriques/table/
+- libelle: Fabrication de machines de bureau et de matériels informatiques — Avant
+    transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/fabrication_de_machines_de_bureau_et_de_materiels_informatique.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.fabrication_de_machines_de_bureau_et_de_materiels_informatique/table/
+- libelle: Fabrication de machines de bureau et de matériels informatiques — Après
+    transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/fabrication_de_machines_de_bureau_et_de_materiels_informatique.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.fabrication_de_machines_de_bureau_et_de_materiels_informatique/table/
+- libelle: Fabrication d'accumulateurs et de piles électriques — Avant transfert du
+    point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/fabrication_d_accumulateurs_et_de_piles_electriques.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.fabrication_d_accumulateurs_et_de_piles_electriques/table/
+- libelle: Fabrication d'accumulateurs et de piles électriques — Après transfert du
+    point
+  parametre: parameters/prelevements_sociaux/atmp/fabrication_d_accumulateurs_et_de_piles_electriques.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.fabrication_d_accumulateurs_et_de_piles_electriques/table/
+- libelle: Filature et tissage — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/textile_cuir_chaussures/filature_et_tissage.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.textile_cuir_chaussures.filature_et_tissage/table/
+- libelle: Filature et tissage — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/textile_cuir_chaussures/filature_et_tissage.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.textile_cuir_chaussures.filature_et_tissage/table/
+- libelle: Fabrication de vêtements et de fourrures, délavage et blanchisserie — Avant
+    transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/textile_cuir_chaussures/fabrication_vetements_et_fourrures_delavage_et_blanchisserie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.textile_cuir_chaussures.fabrication_vetements_et_fourrures_delavage_et_blanchisserie/table/
+- libelle: Fabrication de vêtements et de fourrures, délavage et blanchisserie — Après
+    transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/textile_cuir_chaussures/fabrication_vetements_et_fourrures_delavage_et_blanchisserie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.textile_cuir_chaussures.fabrication_vetements_et_fourrures_delavage_et_blanchisserie/table/
+- libelle: Industrie du cuir — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/textile_cuir_chaussures/industrie_du_cuir.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.textile_cuir_chaussures.industrie_du_cuir/table/
+- libelle: Industrie du cuir — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/textile_cuir_chaussures/industrie_du_cuir.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.textile_cuir_chaussures.industrie_du_cuir/table/
+- libelle: Les tanneries — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/textile_cuir_chaussures/tanneries.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.textile_cuir_chaussures.tanneries/table/
+- libelle: Les tanneries — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/textile_cuir_chaussures/tanneries.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.textile_cuir_chaussures.tanneries/table/
+- libelle: Fabrication de divers articles en cuir — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/textile_cuir_chaussures/fabrication_de_divers_articles_en_cuir.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.textile_cuir_chaussures.fabrication_de_divers_articles_en_cuir/table/
+- libelle: Fabrication de divers articles en cuir — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/textile_cuir_chaussures/fabrication_de_divers_articles_en_cuir.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.textile_cuir_chaussures.fabrication_de_divers_articles_en_cuir/table/
+- libelle: Industrie du bois — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_du_bois.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_du_bois/table/
+- libelle: Industrie du bois — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_du_bois.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_du_bois/table/
+- libelle: Industrie du meuble et de menuiserie — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industrie_du_meuble_et_de_menuiserie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industrie_du_meuble_et_de_menuiserie/table/
+- libelle: Industrie du meuble et de menuiserie — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industrie_du_meuble_et_de_menuiserie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industrie_du_meuble_et_de_menuiserie/table/
+- libelle: Industrie du liège — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industrie_du_liege.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industrie_du_liege/table/
+- libelle: Industrie du liège — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industrie_du_liege.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industrie_du_liege/table/
+- libelle: Industrie des matériaux de construction — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_des_materiaux_de_construction.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_des_materiaux_de_construction/table/
+- libelle: Industrie des matériaux de construction — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_des_materiaux_de_construction.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_des_materiaux_de_construction/table/
+- libelle: Industrie de verrerie — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industrie_de_verrerie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industrie_de_verrerie/table/
+- libelle: Industrie de verrerie — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industrie_de_verrerie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industrie_de_verrerie/table/
+- libelle: Industrie de la céramique (à l'exception des industries artisanales) —
+    Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industrie_de_la_ceramique.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industrie_de_la_ceramique/table/
+- libelle: Industrie de la céramique (à l'exception des industries artisanales) —
+    Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industrie_de_la_ceramique.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industrie_de_la_ceramique/table/
+- libelle: Autres industries manufacturières — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/autres_industries_manufacturieres.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.autres_industries_manufacturieres/table/
+- libelle: Autres industries manufacturières — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/autres_industries_manufacturieres.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.autres_industries_manufacturieres/table/
+- libelle: Industries chimiques minérales — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_chimiques/industries_chimiques_minerales.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_chimiques.industries_chimiques_minerales/table/
+- libelle: Industries chimiques minérales — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_chimiques/industries_chimiques_minerales.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_chimiques.industries_chimiques_minerales/table/
+- libelle: Fabrication des produits minéraux divers — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_chimiques/fabrication_produits_minéraux_divers.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_chimiques.fabrication_produits_min%C3%A9raux_divers/table/
+- libelle: Fabrication des produits minéraux divers — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_chimiques/fabrication_produits_minéraux_divers.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_chimiques.fabrication_produits_min%C3%A9raux_divers/table/
+- libelle: Fabrication d'engrais et industries de l'azote — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_chimiques/fabrication_engrais_et_industries_de_l_azote.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_chimiques.fabrication_engrais_et_industries_de_l_azote/table/
+- libelle: Fabrication d'engrais et industries de l'azote — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_chimiques/fabrication_engrais_et_industries_de_l_azote.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_chimiques.fabrication_engrais_et_industries_de_l_azote/table/
+- libelle: Industrie de la synthèse organique — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_chimiques/industrie_de_la_synthese_organique.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_chimiques.industrie_de_la_synthese_organique/table/
+- libelle: Industrie de la synthèse organique — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_chimiques/industrie_de_la_synthese_organique.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_chimiques.industrie_de_la_synthese_organique/table/
+- libelle: Fabrication de produits pharmaceutiques — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_chimiques/fabrication_de_produits_pharmaceutiques.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_chimiques.fabrication_de_produits_pharmaceutiques/table/
+- libelle: Fabrication de produits pharmaceutiques — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_chimiques/fabrication_de_produits_pharmaceutiques.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_chimiques.fabrication_de_produits_pharmaceutiques/table/
+- libelle: Fabrication de peintures, vernis, pigments broyés — Avant transfert du
+    point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_chimiques/fabrication_de_peintures_vernis_pigments_broyes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_chimiques.fabrication_de_peintures_vernis_pigments_broyes/table/
+- libelle: Fabrication de peintures, vernis, pigments broyés — Après transfert du
+    point
+  parametre: parameters/prelevements_sociaux/atmp/industries_chimiques/fabrication_de_peintures_vernis_pigments_broyes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_chimiques.fabrication_de_peintures_vernis_pigments_broyes/table/
+- libelle: Fabrication des produits insecticides et anticryptogamiques — Avant transfert
+    du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_chimiques/fabrication_des_produits_insecticides_et_anticyptogramiques.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_chimiques.fabrication_des_produits_insecticides_et_anticyptogramiques/table/
+- libelle: Fabrication des produits insecticides et anticryptogamiques — Après transfert
+    du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_chimiques/fabrication_des_produits_insecticides_et_anticyptogramiques.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_chimiques.fabrication_des_produits_insecticides_et_anticyptogramiques/table/
+- libelle: Fabrication d'explosifs industriels, d'accessoires, de mises à feu et d'artifices
+    — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_chimiques/fabrication_explosifs_industriels_accessoires_de_mises_a_feu_et_artifices.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_chimiques.fabrication_explosifs_industriels_accessoires_de_mises_a_feu_et_artifices/table/
+- libelle: Fabrication d'explosifs industriels, d'accessoires, de mises à feu et d'artifices
+    — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_chimiques/fabrication_explosifs_industriels_accessoires_de_mises_a_feu_et_artifices.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_chimiques.fabrication_explosifs_industriels_accessoires_de_mises_a_feu_et_artifices/table/
+- libelle: Forage de pétrole — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_chimiques/forage_de_petrole.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_chimiques.forage_de_petrole/table/
+- libelle: Forage de pétrole — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_chimiques/forage_de_petrole.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_chimiques.forage_de_petrole/table/
+- libelle: Fabrication de gaz industriels — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_chimiques/fabrication_de_gaz_industriels.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_chimiques.fabrication_de_gaz_industriels/table/
+- libelle: Fabrication de gaz industriels — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_chimiques/fabrication_de_gaz_industriels.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_chimiques.fabrication_de_gaz_industriels/table/
+- libelle: Raffinage de pétrole — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_chimiques/raffinage_de_petrole.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_chimiques.raffinage_de_petrole/table/
+- libelle: Raffinage de pétrole — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_chimiques/raffinage_de_petrole.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_chimiques.raffinage_de_petrole/table/
+- libelle: Fabrication des dérivés du pétrole — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_chimiques/fabrication_des_derives_du_petrole.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_chimiques.fabrication_des_derives_du_petrole/table/
+- libelle: Fabrication des dérivés du pétrole — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_chimiques/fabrication_des_derives_du_petrole.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_chimiques.fabrication_des_derives_du_petrole/table/
+- libelle: Fabrication de caoutchouc et d'ouvrages en caoutchouc — Avant transfert
+    du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_chimiques/fabrication_de_caoutchouc_et_d_ouvrages_en_caoutchouc.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_chimiques.fabrication_de_caoutchouc_et_d_ouvrages_en_caoutchouc/table/
+- libelle: Fabrication de caoutchouc et d'ouvrages en caoutchouc — Après transfert
+    du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_chimiques/fabrication_de_caoutchouc_et_d_ouvrages_en_caoutchouc.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_chimiques.fabrication_de_caoutchouc_et_d_ouvrages_en_caoutchouc/table/
+- libelle: Fabrication d'ouvrages en matière plastique et de la mousse — Avant transfert
+    du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_chimiques/fabrication_d_ouvrage_en_matiere_plastique_et_de_la_mousse.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_chimiques.fabrication_d_ouvrage_en_matiere_plastique_et_de_la_mousse/table/
+- libelle: Fabrication d'ouvrages en matière plastique et de la mousse — Après transfert
+    du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_chimiques/fabrication_d_ouvrage_en_matiere_plastique_et_de_la_mousse.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_chimiques.fabrication_d_ouvrage_en_matiere_plastique_et_de_la_mousse/table/
+- libelle: Fabrication de savons, de parfums et de produits d'entretien — Avant transfert
+    du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_chimiques/fabrication_de_savons_de_parfums_et_de_produits_d_entretien.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_chimiques.fabrication_de_savons_de_parfums_et_de_produits_d_entretien/table/
+- libelle: Fabrication de savons, de parfums et de produits d'entretien — Après transfert
+    du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_chimiques/fabrication_de_savons_de_parfums_et_de_produits_d_entretien.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_chimiques.fabrication_de_savons_de_parfums_et_de_produits_d_entretien/table/
+- libelle: Autres industries chimiques — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_chimiques/autres_industries_chimiques.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_chimiques.autres_industries_chimiques/table/
+- libelle: Autres industries chimiques — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_chimiques/autres_industries_chimiques.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_chimiques.autres_industries_chimiques/table/
+- libelle: Bâtiment et travaux publics — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/batiment_et_travaux_publics.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.batiment_et_travaux_publics/table/
+- libelle: Bâtiment et travaux publics — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/batiment_et_travaux_publics.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.batiment_et_travaux_publics/table/
+- libelle: Installation de menuiserie de bois, de menuiserie métallique et serrurerie
+    — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/activites_annexes_du_btp/installation_de
+    menuiserie_bois_métallique_et_serrurerie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.activites_annexes_du_btp.installation_de%20menuiserie_bois_m%C3%A9tallique_et_serrurerie/table/
+- libelle: Installation de menuiserie de bois, de menuiserie métallique et serrurerie
+    — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/activites_annexes_du_btp/installation_de
+    menuiserie_bois_métallique_et_serrurerie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.activites_annexes_du_btp.installation_de%20menuiserie_bois_m%C3%A9tallique_et_serrurerie/table/
+- libelle: Travaux de plomberie et d'installation d'équipements thermiques et de climatisation
+    — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/activites_annexes_du_btp/plomberie_et_installation_equipements_thermiques_et_climatisation.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.activites_annexes_du_btp.plomberie_et_installation_equipements_thermiques_et_climatisation/table/
+- libelle: Travaux de plomberie et d'installation d'équipements thermiques et de climatisation
+    — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/activites_annexes_du_btp/plomberie_et_installation_equipements_thermiques_et_climatisation.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.activites_annexes_du_btp.plomberie_et_installation_equipements_thermiques_et_climatisation/table/
+- libelle: Travaux de peinture et de vitrerie — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/activites_annexes_du_btp/travaux_peinture_et_vitrerie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.activites_annexes_du_btp.travaux_peinture_et_vitrerie/table/
+- libelle: Travaux de peinture et de vitrerie — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/activites_annexes_du_btp/travaux_peinture_et_vitrerie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.activites_annexes_du_btp.travaux_peinture_et_vitrerie/table/
+- libelle: Réalisation de charpentes et de couvertures — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/activites_annexes_du_btp/realisation_charpentes_et_couvertures.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.activites_annexes_du_btp.realisation_charpentes_et_couvertures/table/
+- libelle: Réalisation de charpentes et de couvertures — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/activites_annexes_du_btp/realisation_charpentes_et_couvertures.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.activites_annexes_du_btp.realisation_charpentes_et_couvertures/table/
+- libelle: Travaux d'installation électrique — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/activites_annexes_du_btp/installation_electrique.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.activites_annexes_du_btp.installation_electrique/table/
+- libelle: Travaux d'installation électrique — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/activites_annexes_du_btp/installation_electrique.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.activites_annexes_du_btp.installation_electrique/table/
+- libelle: Autres travaux d'installation et de finition — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/activites_annexes_du_btp/autres_travaux_installation_et_finition.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.activites_annexes_du_btp.autres_travaux_installation_et_finition/table/
+- libelle: Autres travaux d'installation et de finition — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/activites_annexes_du_btp/autres_travaux_installation_et_finition.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.activites_annexes_du_btp.autres_travaux_installation_et_finition/table/
+- libelle: Construction et réparation navale — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/construction_et_reparation
+    navale.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.construction_et_reparation%20navale/table/
+- libelle: Construction et réparation navale — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/construction_et_reparation navale.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.construction_et_reparation%20navale/table/
+- libelle: Activités liées aux constructions et réparations navales — Avant transfert
+    du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/activites_liees_aux_constructions_et_reparations_navales.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.activites_liees_aux_constructions_et_reparations_navales/table/
+- libelle: Activités liées aux constructions et réparations navales — Après transfert
+    du point
+  parametre: parameters/prelevements_sociaux/atmp/activites_liees_aux_constructions_et_reparations_navales.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.activites_liees_aux_constructions_et_reparations_navales/table/
+- libelle: Transports terrestres — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/transport_et_manutention/transports_terrestres.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.transport_et_manutention.transports_terrestres/table/
+- libelle: Transports terrestres — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/transport_et_manutention/transports_terrestres.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.transport_et_manutention.transports_terrestres/table/
+- libelle: Transports maritimes — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/transport_et_manutention/transports_maritimes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.transport_et_manutention.transports_maritimes/table/
+- libelle: Transports maritimes — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/transport_et_manutention/transports_maritimes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.transport_et_manutention.transports_maritimes/table/
+- libelle: Transports aériens — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/transport_et_manutention/transports_aeriens.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.transport_et_manutention.transports_aeriens/table/
+- libelle: Transports aériens — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/transport_et_manutention/transports_aeriens.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.transport_et_manutention.transports_aeriens/table/
+- libelle: Manutention et entreposage — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/transport_et_manutention/manutention_et_entreposage.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.transport_et_manutention.manutention_et_entreposage/table/
+- libelle: Manutention et entreposage — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/transport_et_manutention/manutention_et_entreposage.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.transport_et_manutention.manutention_et_entreposage/table/
+- libelle: Auto-école — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/auto_ecole.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.auto_ecole/table/
+- libelle: Auto-école — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/auto_ecole.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.auto_ecole/table/
+- libelle: Industries extractives — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/industries_extractives.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.industries_extractives/table/
+- libelle: Industries extractives — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/industries_extractives.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.industries_extractives/table/
+- libelle: Location de la main-d'œuvre pour les services administratifs — Avant transfert
+    du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/location_de_la main_d_oeuvre_pour_les_services_administratifs.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.location_de_la%20main_d_oeuvre_pour_les_services_administratifs/table/
+- libelle: Location de la main-d'œuvre pour les services administratifs — Après transfert
+    du point
+  parametre: parameters/prelevements_sociaux/atmp/location_de_la main_d_oeuvre_pour_les_services_administratifs.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.location_de_la%20main_d_oeuvre_pour_les_services_administratifs/table/
+- libelle: Gardiennage — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/gardiennage.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.gardiennage/table/
+- libelle: Gardiennage — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/gardiennage.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.gardiennage/table/
+- libelle: Location de la main-d'œuvre autre que pour les services administratifs
+    et le gardiennage — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/location_de_main_d_oeuvre_hors_services_administratifs_gardiennage.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.location_de_main_d_oeuvre_hors_services_administratifs_gardiennage/table/
+- libelle: Location de la main-d'œuvre autre que pour les services administratifs
+    et le gardiennage — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/location_de_main_d_oeuvre_hors_services_administratifs_gardiennage.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.location_de_main_d_oeuvre_hors_services_administratifs_gardiennage/table/
+- libelle: Hôtellerie — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/hotellerie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.hotellerie/table/
+- libelle: Hôtellerie — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/hotellerie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.hotellerie/table/
+- libelle: Agence de voyage, catégorie A — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/agence_de_voyage/categorie_a.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.agence_de_voyage.categorie_a/table/
+- libelle: Agence de voyage, catégorie A — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/agence_de_voyage/categorie_a.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.agence_de_voyage.categorie_a/table/
+- libelle: Agence de voyage, catégorie B — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/agence_de_voyage/categorie_b.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.agence_de_voyage.categorie_b/table/
+- libelle: Agence de voyage, catégorie B — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/agence_de_voyage/categorie_b.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.agence_de_voyage.categorie_b/table/
+- libelle: Avec atelier de réparation — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/concessionnaires_automobiles/avec_atelier_de_reparation.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.concessionnaires_automobiles.avec_atelier_de_reparation/table/
+- libelle: Avec atelier de réparation — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/concessionnaires_automobiles/avec_atelier_de_reparation.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.concessionnaires_automobiles.avec_atelier_de_reparation/table/
+- libelle: Sans atelier de réparation — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/concessionnaires_automobiles/sans_atelier_de_reparation.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.concessionnaires_automobiles.sans_atelier_de_reparation/table/
+- libelle: Sans atelier de réparation — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/concessionnaires_automobiles/sans_atelier_de_reparation.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.concessionnaires_automobiles.sans_atelier_de_reparation/table/
+- libelle: Sans chauffeur et sans atelier de réparation — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/location_de_voiture_et_d_equipements/sans_atelier_de_reparation.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.location_de_voiture_et_d_equipements.sans_atelier_de_reparation/table/
+- libelle: Sans chauffeur et sans atelier de réparation — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/location_de_voiture_et_d_equipements/sans_atelier_de_reparation.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.location_de_voiture_et_d_equipements.sans_atelier_de_reparation/table/
+- libelle: Avec atelier de réparation — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/location_de_voiture_et_d_equipements/avec_atelier_de_reparation.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.location_de_voiture_et_d_equipements.avec_atelier_de_reparation/table/
+- libelle: Avec atelier de réparation — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/location_de_voiture_et_d_equipements/avec_atelier_de_reparation.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.location_de_voiture_et_d_equipements.avec_atelier_de_reparation/table/
+- libelle: Avec chauffeur — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/location_de_voiture_et_d_equipements/avec_chauffeur.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.location_de_voiture_et_d_equipements.avec_chauffeur/table/
+- libelle: Avec chauffeur — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/location_de_voiture_et_d_equipements/avec_chauffeur.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.location_de_voiture_et_d_equipements.avec_chauffeur/table/
+- libelle: Les activités sportives — Avant transfert du point
+  parametre: parameters/prelevements_sociaux/atmp_avant_transfert/activites_sportives.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp_avant_transfert.activites_sportives/table/
+- libelle: Les activités sportives — Après transfert du point
+  parametre: parameters/prelevements_sociaux/atmp/activites_sportives.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.atmp.activites_sportives/table/
