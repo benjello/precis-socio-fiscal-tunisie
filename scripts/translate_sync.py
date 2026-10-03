@@ -758,6 +758,116 @@ Morceau à traduire :
 """
 
 
+# CELLULES DE CODE. Le traducteur ne doit traduire que les CHAÎNES d'une cellule Python
+# (légendes, notes de lecture) : la structure du code doit rester celle de la source. Le
+# 3 octobre 2026, la retraduction de `retraites/_secteur_prive.qmd` a rendu des guillemets
+# « » par des guillemets droits À L'INTÉRIEUR de chaînes délimitées par des guillemets
+# droits : trois cellules ne compilaient plus, et le livre arabe ne se construisait plus.
+# Contrôle : chaque cellule `{python}` de la traduction doit COMPILER — sinon le livre ne
+# se construit plus, et le fichier échoue. Seule réparation tolérée, et journalisée : les
+# guillemets droits intérieurs d'une ligne de chaîne, rendus « », à condition que la
+# cellule compile ensuite et ait le même arbre syntaxique que celle de la source.
+# Une cellule qui compile mais DIFFÈRE de la source (chaînes et `#| fig-cap` exceptés),
+# ou une cellule manquante, est SIGNALÉE sans bloquer : c'est le retard d'une traduction
+# sur son original (au 3 octobre 2026, dix chapitres arabes dans ce cas), que corrige une
+# retraduction complète, non une raison d'interdire toute mise à jour du fichier.
+CELLULE_PYTHON_RE = re.compile(r"```\{python\}\n(.*?)```", re.S)
+
+
+class CellulesAlterees(RuntimeError):
+    """Une cellule de code de la traduction ne compile plus ou diffère de la source."""
+
+
+def _squelette_cellule(cellule):
+    """Arbre syntaxique de la cellule, chaînes neutralisées ; None si elle ne compile pas."""
+    import ast
+    code = "\n".join(l for l in cellule.split("\n") if not l.startswith("#|"))
+    try:
+        arbre = ast.parse(code)
+    except SyntaxError:
+        return None
+    for noeud in ast.walk(arbre):
+        if isinstance(noeud, ast.Constant) and isinstance(noeud.value, str):
+            noeud.value = "S"
+    return ast.dump(arbre)
+
+
+def _options_cellule(cellule):
+    return [l for l in cellule.split("\n") if l.startswith("#|") and not l.startswith("#| fig-cap")]
+
+
+def _reparer_guillemets(cellule):
+    """Rend « » les guillemets droits intérieurs des lignes de chaîne ; (cellule, nombre)."""
+    lignes, n = [], 0
+    for ligne in cellule.split("\n"):
+        m = re.match(r'^(\s*r?)"(.*)"(\s*[,)]*\s*)$', ligne)
+        if m and '"' in m.group(2):
+            sortie, ouvrant = [], True
+            for c in m.group(2):
+                if c == '"':
+                    sortie.append("«" if ouvrant else "»")
+                    ouvrant = not ouvrant
+                    n += 1
+                else:
+                    sortie.append(c)
+            ligne = f'{m.group(1)}"{"".join(sortie)}"{m.group(3)}'
+        lignes.append(ligne)
+    return "\n".join(lignes), n
+
+
+def _etiquette(cellule):
+    return next((l for l in cellule.split("\n") if l.startswith("#| label")),
+                cellule.split("\n")[0])[:80]
+
+
+def verifier_cellules(source, traduction):
+    """Rend la traduction, cellules éventuellement réparées ; lève `CellulesAlterees` si une
+    cellule ne compile pas. Les écarts de structure sont signalés, non bloquants."""
+    cellules_source = CELLULE_PYTHON_RE.findall(source)
+    cellules_trad = CELLULE_PYTHON_RE.findall(traduction)
+    if not cellules_trad:
+        if cellules_source:
+            print(f"  cellules : AVERTISSEMENT — {len(cellules_source)} cellule(s) Python dans "
+                  "la source, aucune dans la traduction (traduction en retard).")
+        return traduction
+    alignees = len(cellules_trad) == len(cellules_source)
+    if not alignees:
+        print(f"  cellules : AVERTISSEMENT — {len(cellules_source)} cellule(s) Python dans la "
+              f"source, {len(cellules_trad)} dans la traduction (traduction en retard).")
+    reparees, cassees, divergentes = 0, [], []
+    sources = iter(cellules_source if alignees else [None] * len(cellules_trad))
+
+    def controler(m):
+        nonlocal reparees
+        source_cellule = next(sources)
+        cellule = m.group(1)
+        attendu = (None if source_cellule is None else
+                   (_squelette_cellule(source_cellule), _options_cellule(source_cellule)))
+        actuel = (_squelette_cellule(cellule), _options_cellule(cellule))
+        if actuel[0] is not None and (attendu is None or actuel == attendu):
+            return m.group(0)
+        reparee, n = _reparer_guillemets(cellule)
+        if n and _squelette_cellule(reparee) is not None and (
+                attendu is None or (_squelette_cellule(reparee), _options_cellule(reparee)) == attendu):
+            reparees += 1
+            return "```{python}\n" + reparee + "```"
+        if actuel[0] is None:
+            cassees.append(_etiquette(cellule))
+        else:
+            divergentes.append(_etiquette(source_cellule))
+        return m.group(0)
+
+    traduction = CELLULE_PYTHON_RE.sub(controler, traduction)
+    if reparees:
+        print(f"  cellules : {reparees} cellule(s) réparée(s) (guillemets intérieurs rendus « »).")
+    if divergentes:
+        print("  cellules : AVERTISSEMENT — code différent de la source (traduction en retard) : "
+              + " ; ".join(divergentes))
+    if cassees:
+        raise CellulesAlterees("cellule(s) Python qui ne compile(nt) plus : " + " ; ".join(cassees))
+    return traduction
+
+
 class DecoupageImpossible(RuntimeError):
     """Les ancres de coupe de la source manquent dans la traduction, ou en désordre."""
 
@@ -1088,6 +1198,10 @@ Fichier à traduire :
             )
             if motif:
                 raise RuntimeError(motif)
+
+            # Les cellules de code après la troncature : une sortie tronquée perd aussi des
+            # cellules, et son diagnostic propre est plus juste que « cellule manquante ».
+            translated_text = verifier_cellules(new_source_text, translated_text)
 
             # `dirname` rend la chaîne VIDE pour une cible à la racine du dépôt —
             # `CHANGELOG_ar.md` est la seule dans ce cas —, et `os.makedirs('')` lève
