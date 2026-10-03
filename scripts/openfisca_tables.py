@@ -860,6 +860,223 @@ def tableau_taux_datee(
     return pd.DataFrame(lignes)
 
 
+# ------------------------------------------- composants communs des générateurs de livres
+#
+# Remontés des générateurs des retraites, des prestations et de la fiscalité, où ils
+# vivaient en deux ou trois versions divergentes (recension du 2 octobre 2026, « Composants
+# restés locaux »). Un générateur les emploie tels quels ; il ne garde en propre que ce qui
+# est propre à son livre — un libellé, une forme de cellule composée.
+
+# L'arabe accorde le nom compté avec le nombre : singulier à 1, duel à 2, pluriel de 3 à 10,
+# singulier à l'accusatif au-delà. « 60 سنوات » ou « 36 أشهر » sont des fautes que le
+# lecteur voit, et elles seraient recopiées à chaque régénération. Le français n'a que le
+# singulier et le pluriel.
+NOMS_COMPTES = {
+    "fr": {
+        "ans": ("an", "ans"),
+        "mois": ("mois", "mois"),
+        "trimestres": ("trimestre", "trimestres"),
+        "jours": ("jour", "jours"),
+        "heures": ("heure", "heures"),
+    },
+    "ar": {
+        "ans": ("سنة", "سنتان", "سنوات", "سنة"),
+        "mois": ("شهر", "شهران", "أشهر", "شهرًا"),
+        "trimestres": ("ثلاثية", "ثلاثيتان", "ثلاثيات", "ثلاثية"),
+        "jours": ("يوم", "يومان", "أيام", "يومًا"),
+        "heures": ("ساعة", "ساعتان", "ساعات", "ساعة"),
+    },
+}
+
+
+def compte(n: int, unite: str | tuple[str, ...], langue: str = "fr") -> str:
+    """Un nombre et son nom compté : « 120 mois », « 1 an », « 40 ثلاثية », « 10 ثلاثيات ».
+
+    `unite` : une clé de `NOMS_COMPTES` (« ans », « mois », « trimestres »…), ou les formes
+    elles-mêmes — (singulier, pluriel) en français, (singulier, duel, pluriel, accusatif)
+    en arabe. En arabe, le singulier et le duel s'emploient seuls, sans chiffre.
+    """
+    formes = NOMS_COMPTES["ar" if langue == "ar" else "fr"][unite] \
+        if isinstance(unite, str) else unite
+    if langue != "ar":
+        return f"{n} {formes[0] if n == 1 else formes[-1]}"
+    if n == 1:
+        return formes[0]
+    if n == 2:
+        return formes[1]
+    return f"{n} {formes[2]}" if 3 <= n <= 10 else f"{n} {formes[3]}"
+
+
+def annees(n: int, langue: str = "fr") -> str:
+    """Un âge ou une durée en années accordées : « 60 ans », « 1 an », « 60 سنة »."""
+    return compte(n, "ans", langue)
+
+
+VIDE = "—"
+UNITE_DINAR = {"fr": " D", "ar": " د"}
+# Le salaire minimum auquel une fraction se rapporte, tel que l'écrivent les textes.
+DU_SMIG = {"fr": "du SMIG", "ar": "من الأجر الأدنى المضمون"}
+
+
+class Formateurs:
+    """Les formateurs de cellules communs aux générateurs, dans la langue du livre.
+
+    Une case sans valeur rend « — », jamais « 0 » : l'absence de règle n'est pas une valeur
+    nulle. Les montants se déclinent en trois écritures, parce que les textes n'écrivent pas
+    tous les sommes de la même façon :
+
+    - `dinars` élague les zéros de queue — « 1 500 D », « 2,5 D » —, comme les plafonds
+      fiscaux en dinars ;
+    - `millimes` garde toujours trois décimales — « 7,600 D » —, comme le *Journal officiel*
+      écrit les indemnités et les pensions ;
+    - `montant` n'écrit les millimes que s'il y en a — « 50 D », « 18,750 D » —, comme les
+      prestations.
+    """
+
+    def __init__(self, langue: str = "fr"):
+        self.langue = langue
+        self.unite = UNITE_DINAR.get(langue, UNITE_DINAR["fr"])
+
+    def taux(self, v):
+        return VIDE if v is None else formate_taux(v)
+
+    def dinars(self, v):
+        return VIDE if v is None else formate_dinars(v) + self.unite
+
+    def millimes(self, v):
+        if v is None:
+            return VIDE
+        return f"{v:,.3f}".replace(",", " ").replace(".", ",") + self.unite
+
+    def montant(self, v):
+        if v is None:
+            return VIDE
+        if float(v).is_integer():
+            return f"{int(v):,}".replace(",", " ") + self.unite
+        return self.millimes(v)
+
+    def entier(self, v):
+        return VIDE if v is None else str(int(v))
+
+    def age(self, v):
+        """Un âge, rendu en années accordées."""
+        return VIDE if v is None else annees(int(v), self.langue)
+
+    def duree(self, unite: str) -> Callable[[float | None], str]:
+        """Formateur d'une durée comptée dans `unite` (« mois », « trimestres »…)."""
+        return lambda v: VIDE if v is None else compte(int(v), unite, self.langue)
+
+    def part_smig(self, v):
+        """Une fraction du salaire minimum, rendue comme fraction et non en pourcentage.
+
+        Les textes écrivent « les deux tiers du SMIG » et « la moitié du SMIG » ; le
+        paramètre les approche par 0,66666 et 0,5. Imprimer « 66,67 % » donnerait un
+        chiffre que ne porte aucun texte.
+        """
+        if v is None:
+            return VIDE
+        from fractions import Fraction
+
+        fraction = Fraction(v).limit_denominator(12)
+        return f"{fraction.numerator}/{fraction.denominator} {DU_SMIG[self.langue]}"
+
+    def coefficient(self, v):
+        """Un multiple d'un salaire minimum : « 2/3 », « 1 », « 1,5 », « 18 »."""
+        if v is None:
+            return VIDE
+        from fractions import Fraction
+
+        fraction = Fraction(v).limit_denominator(12)
+        if fraction.denominator == 1:
+            return str(fraction.numerator)
+        if fraction.denominator == 3:
+            return f"{fraction.numerator}/3"
+        return f"{v:g}".replace(".", ",")
+
+
+def formateurs(langue: str = "fr") -> Formateurs:
+    return Formateurs(langue)
+
+
+def en_vigueur(serie, date: str):
+    """(date d'effet, valeur) en vigueur à `date` dans une série de `serie_datee`, ou None."""
+    retenue = None
+    for d, v, *_ in serie:
+        if d <= date:
+            retenue = (d, v)
+    return retenue
+
+
+def enchaine(segments, date: str):
+    """Valeur en vigueur à `date` le long de séries successives, et son formateur.
+
+    `segments` : [(série, formateur)], de la plus ancienne à la plus récente. Le régime des
+    non-salariés en est l'exemple : l'état de 1982 prend fin, par une valeur nulle, le jour
+    où commence celui du décret n° 95-1166. À date d'effet égale, la valeur non nulle
+    l'emporte — la fin d'un état n'efface pas le début du suivant. Rend (None, None) quand
+    aucune série n'a de valeur : la case restera vide, jamais à zéro.
+    """
+    meilleur = None
+    for serie, formateur in segments:
+        point = en_vigueur(serie, date)
+        if point is None:
+            continue
+        rang = (point[0], point[1] is not None)
+        if meilleur is None or rang >= meilleur[0]:
+            meilleur = (rang, point[1], formateur)
+    if meilleur is None or meilleur[1] is None:
+        return None, None
+    return meilleur[1], meilleur[2]
+
+
+def cellule(*segments: tuple[str, Callable[[float | None], str]]):
+    """Case d'une grandeur lue le long de séries successives : [(chemin, formateur)].
+
+    Rend une fonction `(séries, date) -> texte`, la forme qu'attend `tableau_enchaine`.
+    """
+    def rendre(series, date):
+        valeur, formateur = enchaine([(series[c], f) for c, f in segments], date)
+        return VIDE if valeur is None else formateur(valeur)
+    return rendre
+
+
+def tableau_enchaine(lectures, colonnes, cles, langue="fr", colonne_periode="Effet",
+                     colonne_texte="Texte") -> "pd.DataFrame | None":
+    """Tableau daté — une ligne par date d'effet — dont une cellule peut lire plusieurs séries.
+
+    Même forme que `tableau_evolution_datee`, dont il est le complément : colonne « Effet »,
+    une colonne par grandeur, colonne « Texte » tirée des clés de citation. Il sert aux
+    grandeurs qui commencent et s'arrêtent à des dates différentes : une case est vide quand
+    la règle n'existe pas encore ou n'existe plus.
+
+    `lectures` : [(chemin, libellé du lien)] — chaque paramètre lu, noté au relevé ; un
+    libellé vide laisse la fabrique noter elle-même le nœud qui le contient.
+    `colonnes` : [(en-tête, cellule)] où `cellule(séries, date)` rend le texte de la case.
+    `cles` : date ISO -> clé de citation. Une date sans clé laisse la date elle-même dans la
+    colonne « Texte », ce qu'un générateur doit refuser avant d'écrire le snapshot.
+    """
+    if pd is None:
+        return None
+    series = {}
+    for chemin, libelle in lectures:
+        serie = serie_datee(chemin)
+        if not serie:
+            print(f"✗ paramètre introuvable ou vide : {chemin}")
+            return None
+        series[chemin] = serie
+        if libelle:
+            releve_note(chemin, libelle)
+    dates = sorted({d for serie in series.values() for d, *_ in serie})
+    lignes = []
+    for date in dates:
+        ligne = {colonne_periode: formate_date(date, langue)}
+        for entete, rendre in colonnes:
+            ligne[entete] = rendre(series, date)
+        ligne[colonne_texte] = f"[@{cles[date]}]" if date in cles else date
+        lignes.append(ligne)
+    return pd.DataFrame(lignes)
+
+
 def _enfants(chemin_noeud: str) -> list[tuple[str, bool]]:
     """Enfants d'un nœud de paramètres : [(nom, est_un_nœud)], dans l'ordre de son index.
 

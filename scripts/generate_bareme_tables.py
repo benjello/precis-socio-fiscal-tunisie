@@ -104,12 +104,8 @@ TABLEAUX_CPE = [
 # Séries de paramètres scalaires : (fichier, chemin, en-tête de la colonne, formateur).
 def formateurs(langue):
     u = UNITES[langue]
-
-    def dinars(v):
-        return u["vide"] if v is None else ot.formate_dinars(v) + u["dinar"]
-
-    def taux(v):
-        return u["vide"] if v is None else ot.formate_taux(v)
+    f = ot.formateurs(langue)
+    dinars, taux = f.dinars, f.taux
 
     def plafond(v):
         if v is None or v == float("inf"):

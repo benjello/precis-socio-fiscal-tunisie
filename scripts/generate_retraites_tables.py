@@ -84,7 +84,6 @@ from __future__ import annotations
 
 import datetime
 import sys
-from fractions import Fraction
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -160,8 +159,6 @@ MOTS = {
         "assiette_dinars": "[revenu forfaitaire](#g-revenu-forfaitaire) annuel, en dinars",
         "assiette_smig": "multiple du SMIG",
         "assiette_smig_smag": "multiple du SMIG ou du SMAG",
-        "mois": ("mois", "mois", "mois", "mois"),
-        "trimestres": ("trimestre", "trimestres", "trimestres", "trimestres"),
     },
     "ar": {
         "effet": "بداية السريان",
@@ -217,63 +214,11 @@ MOTS = {
         "assiette_dinars": "[الدخل التقديري](#g-revenu-forfaitaire) السنوي، بالدينار",
         "assiette_smig": "مضاعف الأجر الأدنى المضمون",
         "assiette_smig_smag": "مضاعف الأجر الأدنى المضمون أو الأجر الأدنى الفلاحي المضمون",
-        # Formes du nom compté, comme COMPTE_AR : 1, 2, 3 à 10, au-delà.
-        "mois": ("شهر", "شهران", "أشهر", "شهرًا"),
-        "trimestres": ("ثلاثية", "ثلاثيتان", "ثلاثيات", "ثلاثية"),
     },
 }
 
-# L'arabe accorde le nom compté avec le nombre : singulier à 1, duel à 2, pluriel de 3 à 10,
-# singulier à l'accusatif au-delà. « 60 سنوات » est une faute que le lecteur voit, et elle
-# serait recopiée à chaque régénération.
-COMPTE_AR = ("سنة", "سنتان", "سنوات", "سنة")
-
-
-def annees(n: int, langue: str) -> str:
-    if langue != "ar":
-        return f"{n} ans" if n > 1 else f"{n} an"
-    if n == 1:
-        return COMPTE_AR[0]
-    if n == 2:
-        return COMPTE_AR[1]
-    return f"{n} {COMPTE_AR[2]}" if 3 <= n <= 10 else f"{n} {COMPTE_AR[3]}"
-
-
-def formateurs(langue):
-    m = MOTS[langue]
-
-    def age(v):
-        """Un âge, rendu en années accordées."""
-        return m["vide"] if v is None else annees(int(v), langue)
-
-    def taux(v):
-        return m["vide"] if v is None else ot.formate_taux(v)
-
-    def dinars(v):
-        """Montant en dinars et millimes, sur trois décimales.
-
-        `ot.formate_dinars` élague les zéros de queue — faux ici : les indemnités
-        familiales s'écrivent en millimes, et « 7,6 D » pour 7 dinars 600 millimes n'est
-        pas ce qu'imprime le Journal officiel.
-        """
-        if v is None:
-            return m["vide"]
-        brut = f"{v:,.3f}".replace(",", " ").replace(".", ",")
-        return brut + (" D" if langue == "fr" else " د")
-
-    def part_smig(v):
-        """Une fraction du salaire minimum, rendue comme fraction et non en pourcentage.
-
-        Les textes écrivent « les deux tiers du SMIG » et « la moitié du SMIG » ; le
-        paramètre les approche par 0,66666 et 0,5. Imprimer « 66,67 % » donnerait un
-        chiffre que ne porte aucun texte.
-        """
-        if v is None:
-            return m["vide"]
-        fraction = Fraction(v).limit_denominator(12)
-        return f"{fraction.numerator}/{fraction.denominator} {m['smig']}"
-
-    return age, taux, dinars, part_smig
+# Les noms comptés, l'accord arabe et les formateurs de cellules sont communs aux
+# générateurs : `ot.compte`, `ot.annees`, `ot.formateurs`.
 
 
 # Clés de citation du précis, par date d'effet : elles raccrochent chaque rupture à la
@@ -410,84 +355,12 @@ LIENS = {
 }
 
 
-def compte(n: int, formes: tuple[str, str, str, str], langue: str) -> str:
-    """Un nombre et son nom compté : « 120 mois », « 40 ثلاثية », « 10 ثلاثيات »."""
-    if langue != "ar":
-        return f"{n} {formes[0] if n == 1 else formes[1]}"
-    if n == 1:
-        return formes[0]
-    if n == 2:
-        return formes[1]
-    return f"{n} {formes[2]}" if 3 <= n <= 10 else f"{n} {formes[3]}"
-
-
-def en_vigueur(serie, date: str):
-    """(date d'effet, valeur) en vigueur à `date` dans une série de `ot.serie_datee`."""
-    retenue = None
-    for d, v, *_ in serie:
-        if d <= date:
-            retenue = (d, v)
-    return retenue
-
-
-def enchaine(segments, date: str):
-    """Valeur en vigueur à `date` le long de séries successives, et son formateur.
-
-    `segments` : [(série, formateur)], de la plus ancienne à la plus récente. Le régime des
-    non-salariés en est l'exemple : l'état de 1982 prend fin, par une valeur nulle, le jour
-    où commence celui du décret n° 95-1166. À date d'effet égale, la valeur non nulle
-    l'emporte — la fin d'un état n'efface pas le début du suivant. Rend (None, None) quand
-    aucune série n'a de valeur : la case restera vide, jamais à zéro.
-    """
-    meilleur = None
-    for serie, formateur in segments:
-        point = en_vigueur(serie, date)
-        if point is None:
-            continue
-        rang = (point[0], point[1] is not None)
-        if meilleur is None or rang >= meilleur[0]:
-            meilleur = (rang, point[1], formateur)
-    if meilleur is None or meilleur[1] is None:
-        return None, None
-    return meilleur[1], meilleur[2]
-
-
-def tableau_enchaine(lectures, colonnes, cles, langue, colonne_periode, colonne_texte):
-    """Tableau daté — une ligne par date d'effet — dont une cellule peut lire plusieurs séries.
-
-    Même forme que `ot.tableau_evolution_datee`, dont il est le complément : colonne
-    « Effet », une colonne par grandeur, colonne « Texte » tirée des clés de citation.
-    `lectures` : [(chemin, libellé du lien)] — chaque paramètre lu, noté au relevé.
-    `colonnes` : [(en-tête, cellule)] où `cellule(séries, date)` rend le texte de la case.
-    """
-    import pandas as pd
-
-    series = {}
-    for chemin, libelle in lectures:
-        serie = ot.serie_datee(chemin)
-        if not serie:
-            print(f"✗ paramètre introuvable ou vide : {chemin}")
-            return None
-        series[chemin] = serie
-        # Sans libellé, le paramètre n'a pas de lien propre : le nœud qui le contient est
-        # noté par la fabrique (les classes de revenus, un lien par barème).
-        if libelle:
-            ot.releve_note(chemin, libelle)
-    dates = sorted({d for serie in series.values() for d, *_ in serie})
-    lignes = []
-    for date in dates:
-        ligne = {colonne_periode: ot.formate_date(date, langue)}
-        for entete, cellule in colonnes:
-            ligne[entete] = cellule(series, date)
-        # Sans clé, le titre de la référence prend la case : `verifie_texte` l'arrête.
-        ligne[colonne_texte] = f"[@{cles[date]}]" if date in cles else date
-        lignes.append(ligne)
-    return pd.DataFrame(lignes)
-
-
 def tableaux(langue):
     m = MOTS[langue]
-    age, taux, dinars, part_smig = formateurs(langue)
+    f = ot.formateurs(langue)
+    age, taux, dinars, part_smig = f.age, f.taux, f.millimes, f.part_smig
+    annees, compte, en_vigueur, enchaine, cellule = (
+        ot.annees, ot.compte, ot.en_vigueur, ot.enchaine, ot.cellule)
     datee = dict(langue=langue, colonne_periode=m["effet"], colonne_texte=m["texte"])
 
     def ages():
@@ -548,24 +421,7 @@ def tableaux(langue):
     lien = LIENS[langue]
     enchainee = dict(langue=langue, colonne_periode=m["effet"], colonne_texte=m["texte"])
 
-    def coefficient(v):
-        """Un multiple du salaire minimum : « 2/3 », « 1 », « 1,5 », « 18 »."""
-        fraction = Fraction(v).limit_denominator(12)
-        if fraction.denominator == 1:
-            return str(fraction.numerator)
-        if fraction.denominator == 3:
-            return f"{fraction.numerator}/3"
-        return f"{v:g}".replace(".", ",")
-
-    def en_dinars(v):
-        return ot.formate_dinars(v) + (" D" if langue == "fr" else " د")
-
-    def cellule(*segments):
-        """Case d'une grandeur lue le long de séries successives : [(chemin, formateur)]."""
-        def rendre(series, date):
-            valeur, formateur = enchaine([(series[c], f) for c, f in segments], date)
-            return m["vide"] if valeur is None else formateur(valeur)
-        return rendre
+    coefficient, en_dinars = f.coefficient, f.dinars
 
     def rtns_vieillesse():
         """La pension de vieillesse des non-salariés : secteur non agricole, puis régime fusionné.
@@ -606,8 +462,8 @@ def tableaux(langue):
         colonnes = [
             (m["rtns_age"], paire("age", age)),
             (m["rtns_anticipe"], anticipe),
-            (m["rtns_stage"], paire("stage", lambda v: compte(int(v), m["mois"], langue),
-                                    lambda v: compte(int(v), m["trimestres"], langue))),
+            (m["rtns_stage"], paire("stage", lambda v: compte(int(v), "mois", langue),
+                                    lambda v: compte(int(v), "trimestres", langue))),
             (m["rtns_taux"], paire("taux", taux)),
             (m["rtns_majoration"], paire("majoration", taux)),
             (m["plafond"], paire("plafond", taux)),
@@ -616,7 +472,7 @@ def tableaux(langue):
             (m["rtns_minimum"], paire("minimum", part_smig,
                                       lambda v: f"{ot.formate_taux(v)} {m['smig_ou_smag']}")),
         ]
-        return tableau_enchaine(lectures, colonnes, CLES_RTNS_VIEILLESSE, **enchainee)
+        return ot.tableau_enchaine(lectures, colonnes, CLES_RTNS_VIEILLESSE, **enchainee)
 
     def rtns_agricole():
         """Le secteur agricole : l'âge, puis l'allocation de vieillesse, abrogée en 1995.
@@ -635,9 +491,9 @@ def tableaux(langue):
         colonnes = [
             (m["rtns_age"], cellule((age_ag, age), (age_95, age))),
             (m["rtns_allocation"],
-             cellule((allocation, lambda v: compte(int(v), m["trimestres"], langue)))),
+             cellule((allocation, lambda v: compte(int(v), "trimestres", langue)))),
         ]
-        return tableau_enchaine(lectures, colonnes, CLES_RTNS_AGRICOLE, **enchainee)
+        return ot.tableau_enchaine(lectures, colonnes, CLES_RTNS_AGRICOLE, **enchainee)
 
     def rtns_classes():
         """Les classes de revenus : six en dinars (1982), neuf en SMIG (1989), dix (1995).
@@ -668,7 +524,7 @@ def tableaux(langue):
             segments = [(f"{n}/classe_{k}.yaml", f) for n, nombre, f, _a, _c in noeuds
                         if k <= nombre]
             colonnes.append((m["classe"].format(k=k), cellule(*segments)))
-        return tableau_enchaine(lectures, colonnes, CLES_RTNS_CLASSES, **enchainee)
+        return ot.tableau_enchaine(lectures, colonnes, CLES_RTNS_CLASSES, **enchainee)
 
     def cnrps_1959_1985():
         """Les lignes chiffrées du régime des pensions civiles, de 1959 à 1985.
@@ -721,7 +577,7 @@ def tableaux(langue):
             (m["reversion"], cellule((conjoint, taux))),
             (m["orphelin"], cellule((orphelin, taux))),
         ]
-        return tableau_enchaine(lectures, colonnes, CLES_CNRPS_1959_1985, **enchainee)
+        return ot.tableau_enchaine(lectures, colonnes, CLES_CNRPS_1959_1985, **enchainee)
 
     return {
         "cnrps_1959_1985.md": cnrps_1959_1985,
