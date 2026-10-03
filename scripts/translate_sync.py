@@ -1,3 +1,4 @@
+import difflib
 import time
 import os
 import re
@@ -141,28 +142,338 @@ def restore_locators(source_text, translated_text):
 
     Le contenu qui suit la virgule dans `[@ref, art. 13]` est de la SYNTAXE de
     citation, pas de la prose : il doit rester tel quel. Le modèle le traduit
-    malgré la consigne — « art. 5 à 7 » devient « art. 5 إلى 7 » —, et c'est
-    une transformation assez mécanique pour être défaite ici plutôt que
-    négociée à chaque passe.
+    malgré la consigne — « art. 5 à 7 » devient « art. 5 إلى 7 », « art. 31 et 37 »
+    devient « art. 31 و 37 », « art. 37 (nouveau) » devient « art. 37 (جديد) » —,
+    et c'est une transformation assez mécanique pour être défaite ici plutôt que
+    négociée à chaque passe. Le locateur est alors recopié VERBATIM depuis la
+    citation correspondante de la source.
 
-    Prudence : on ne recopie que si les clés apparaissent dans le même ordre et
-    en même nombre des deux côtés. Sinon on ne touche à rien, et le contrôle de
-    parité signalera l'écart.
+    APPARIEMENT PAR CLÉ ET PAR RANG. La n-ième citation `[@k, …]` de la traduction
+    correspond à la n-ième `[@k, …]` de la source. Jusqu'en octobre 2026, la
+    fonction exigeait que la SUITE ENTIÈRE des clés soit identique des deux côtés :
+    une seule clé abîmée ailleurs dans le fichier (`@looi81-6`, PR #343) suffisait à
+    la faire renoncer à tous les locateurs, et « art. 48 إلى 50 » passait. D'où
+    aussi l'ordre dans `main()` : `restore_citation_keys` passe AVANT elle.
+
+    Quand une clé n'apparaît pas autant de fois des deux côtés, l'appariement par
+    rang n'est plus sûr : on aligne alors la suite des clés (difflib) et l'on ne
+    restaure que dans les plages identiques d'au moins deux citations. Ce qui reste hors de ces plages est
+    laissé tel quel, et le contrôle de parité le signalera.
+
+    Périmètre : seuls les locateurs portant de l'écriture arabe sont réécrits. Un
+    locateur altéré sans être traduit ne se distingue pas d'une correction
+    légitime. Les citations hors crochets (« Sources : @loi59-18, art. 20 ») ne sont
+    pas des locateurs Pandoc et ne sont pas touchées.
     """
     src = CITATION_RE.findall(source_text)
     dst = CITATION_RE.findall(translated_text)
-    if len(src) != len(dst) or [k for k, _ in src] != [k for k, _ in dst]:
+    if not src or not dst:
         return translated_text
 
-    locators = iter(loc for _, loc in src)
+    cles_src = [k for k, _ in src]
+    cles_dst = [k for k, _ in dst]
+    compte_src, compte_dst = _compte(cles_src), _compte(cles_dst)
+
+    # Indice dans `src` de la citation correspondant à chaque citation de `dst`.
+    vis_a_vis = {}
+    rang, positions_src = {}, {}
+    for i, k in enumerate(cles_src):
+        positions_src.setdefault(k, []).append(i)
+    alignees = None
+    for j, k in enumerate(cles_dst):
+        if compte_src.get(k, 0) == compte_dst[k]:
+            r = rang.get(k, 0)
+            rang[k] = r + 1
+            vis_a_vis[j] = positions_src[k][r]
+            continue
+        if alignees is None:
+            alignees = {}
+            sm = difflib.SequenceMatcher(None, cles_src, cles_dst, autojunk=False)
+            for tag, i1, _i2, j1, j2 in sm.get_opcodes():
+                # Une plage d'une seule citation ne dit pas laquelle des
+                # occurrences de la source lui répond : il faut un voisin aligné.
+                if tag == "equal" and j2 - j1 >= 2:
+                    for d in range(j2 - j1):
+                        alignees[j1 + d] = i1 + d
+        if j in alignees:
+            vis_a_vis[j] = alignees[j]
+
+    restaures, abstentions = [], []
+    compteur = iter(range(len(dst)))
 
     def swap(match):
-        source_locator = next(locators)
-        if ARABIC_RE.search(match.group(2)):
-            return f"[@{match.group(1)}, {source_locator}]"
-        return match.group(0)
+        j = next(compteur)
+        cle, locateur = match.group(1), match.group(2)
+        if not ARABIC_RE.search(locateur):
+            return match.group(0)
+        if j not in vis_a_vis:
+            abstentions.append(f"@{cle}, {locateur.strip()}")
+            return match.group(0)
+        locateur_source = src[vis_a_vis[j]][1]
+        restaures.append(f"« {locateur.strip()} » → « {locateur_source.strip()} »")
+        return f"[@{cle}, {locateur_source}]"
 
-    return CITATION_RE.sub(swap, translated_text)
+    resultat = CITATION_RE.sub(swap, translated_text)
+    for r in restaures:
+        print(f"  locateur restauré : {r}.")
+    for a in abstentions:
+        print(f"  locateur traduit laissé tel quel (pas de citation correspondante "
+              f"sûre dans la source) : « {a} » — le contrôle de parité tranchera.")
+    return resultat
+
+
+# ---------------------------------------------------------------------------
+# JETONS VERBATIM ABÎMÉS : clés de citation, renvois, ancres, liens de glossaire.
+#
+# Les extracteurs de `check_translation_parity.py` disent ce qui DOIT être identique
+# dans les deux langues. Les fonctions qui suivent défont, avant ce contrôle, les
+# altérations que l'on corrigeait à la main sur chaque PR auto-translate (#331, #333,
+# #343) : `@looi88-71` pour `@loi88-71`, `@arrete-11-18-…` pour
+# `@arrete-1978-11-18-…`, `@tbl-somme-three-texts` pour `@tbl-somme-trois-textes`,
+# liens de glossaire ajoutés là où le français n'en a pas.
+#
+# Comme le contrôle de parité, elles ignorent les commentaires HTML (les TODO restent
+# en français) et les blocs de code délimités.
+BRUIT_RE = re.compile(r"<!--.*?-->|```.*?```", re.S)
+
+
+def _zones_de_bruit(texte):
+    return [m.span() for m in BRUIT_RE.finditer(texte)]
+
+
+def _hors_bruit(motif, texte):
+    """Les correspondances de `motif` qui ne tombent ni en commentaire ni en code."""
+    zones = _zones_de_bruit(texte)
+    return [m for m in motif.finditer(texte)
+            if not any(a <= m.start() < b for a, b in zones)]
+
+
+# (nature, motif) — le groupe 1 est le jeton. Mêmes jetons que le contrôle de parité ;
+# les ancres de définition y gagnent les titres à attributs (`{#sec-x .unnumbered}`).
+JETONS_VERBATIM = (
+    ("clé de citation ou renvoi", re.compile(r"@([A-Za-z][A-Za-z0-9_-]*)")),
+    ("ancre", re.compile(r"\{#([A-Za-z][A-Za-z0-9_-]*)(?=[\s}])")),
+    ("cible de lien interne", re.compile(r"\]\(#([A-Za-z][A-Za-z0-9_-]*)\)")),
+)
+PREFIXE_RENVOI_RE = re.compile(r"^(sec|tbl|fig|eq|lst|g)-")
+SEUIL_PROXIMITE = 0.8
+
+
+def _proche(a, b):
+    """Deux jetons sont proches s'ils ont le même préfixe de renvoi (`sec-`, `tbl-`…,
+    ou aucun) et une similarité difflib d'au moins `SEUIL_PROXIMITE`. Les cas réels
+    vont de 0,84 (`tbl-somme-three-texts`) à 0,98 (`arrete-1918-11-18-…`)."""
+    pa, pb = PREFIXE_RENVOI_RE.match(a), PREFIXE_RENVOI_RE.match(b)
+    if (pa and pa.group(1)) != (pb and pb.group(1)):
+        return False
+    return difflib.SequenceMatcher(None, a, b, autojunk=False).ratio() >= SEUIL_PROXIMITE
+
+
+def _restaurer_jetons(source_text, translated_text, nature, motif):
+    src = [m.group(1) for m in _hors_bruit(motif, source_text)]
+    occ = _hors_bruit(motif, translated_text)
+    dst = [m.group(1) for m in occ]
+    cs, cd = _compte(src), _compte(dst)
+    exces = {t: n - cs.get(t, 0) for t, n in cd.items() if n > cs.get(t, 0)}
+    manque = {s: n - cd.get(s, 0) for s, n in cs.items() if n > cd.get(s, 0)}
+    if not exces:
+        return translated_text  # rien en trop : muette
+    if not manque:
+        for t in sorted(exces):
+            print(f"  {nature} : « {t} » en trop dans la traduction ({cd[t]}× pour "
+                  f"{cs.get(t, 0)}× à la source), rien ne manque à la source — aucune "
+                  f"restauration (le contrôle de parité tranchera).")
+        return translated_text
+
+    vers_source = {t: [s for s in manque if _proche(t, s)] for t in exces}
+    vers_trad = {s: [t for t in exces if _proche(t, s)] for s in manque}
+
+    a_remplacer = {}  # indice de l'occurrence dans `occ` -> jeton de la source
+    alignement = None
+    for t in sorted(exces):
+        candidats = vers_source[t]
+        if not candidats:
+            print(f"  {nature} : « {t} » en trop dans la traduction, aucun jeton manquant "
+                  f"de la source n'en est proche — aucune restauration "
+                  f"(le contrôle de parité tranchera).")
+            continue
+        if len(candidats) > 1 or len(vers_trad[candidats[0]]) > 1:
+            proches = sorted(set(candidats) | {x for s in candidats for x in vers_trad[s]})
+            print(f"  {nature} : « {t} » absent ou en trop, appariement ambigu "
+                  f"({', '.join(proches)}) — aucune restauration "
+                  f"(le contrôle de parité tranchera).")
+            continue
+        s = candidats[0]
+        if t not in cs and exces[t] <= manque[s]:
+            # Jeton inconnu de la source : toutes ses occurrences sont fautives.
+            for j, x in enumerate(dst):
+                if x == t:
+                    a_remplacer[j] = s
+            continue
+        # Le jeton existe aussi dans la source (ou il y a plus d'occurrences fautives
+        # que de manquantes) : seule une position peut dire laquelle est fautive.
+        if alignement is None:
+            alignement = difflib.SequenceMatcher(None, src, dst, autojunk=False).get_opcodes()
+        positions = [j1 + d for tag, i1, i2, j1, j2 in alignement
+                     if tag == "replace" and i2 - i1 == j2 - j1
+                     for d in range(j2 - j1)
+                     if dst[j1 + d] == t and src[i1 + d] == s]
+        if not positions or len(positions) > min(exces[t], manque[s]):
+            print(f"  {nature} : « {t} » ({cd[t]}× traduit, {cs.get(t, 0)}× source) "
+                  f"pour « {s} » — position non établie, aucune restauration "
+                  f"(le contrôle de parité tranchera).")
+            continue
+        for j in positions:
+            a_remplacer[j] = s
+
+    if not a_remplacer:
+        return translated_text
+    morceaux, fin = [], 0
+    for j, m in enumerate(occ):
+        if j in a_remplacer:
+            morceaux.append(translated_text[fin:m.start(1)])
+            morceaux.append(a_remplacer[j])
+            fin = m.end(1)
+    morceaux.append(translated_text[fin:])
+    for t, s in sorted({(dst[j], s) for j, s in a_remplacer.items()}):
+        n = sum(1 for j, x in a_remplacer.items() if dst[j] == t and x == s)
+        print(f"  {nature} restaurée : « {t} » → « {s} » ({n}×).")
+    return "".join(morceaux)
+
+
+def restore_citation_keys(source_text, translated_text):
+    """Rétablit les clés de citation, renvois (`@sec-…`, `@tbl-…`, `@fig-…`), ancres
+    de définition (`{#…}`) et cibles de liens internes (`](#…)`) abîmés par le modèle.
+
+    Le modèle traduit ou déforme ces jetons comme de la prose : `@looi81-6` pour
+    `@loi81-6`, `@arrete-11-18-retraite-complementaire` pour
+    `@arrete-1978-11-18-retraite-complementaire`, `@tbl-somme-three-texts` pour
+    `@tbl-somme-trois-textes` — chacun corrigé à la main sur une PR auto-translate.
+
+    MÉTHODE. Pour chaque nature de jeton, on compare les multiensembles des deux
+    côtés. Un jeton en trop dans la traduction est remplacé par un jeton manquant de
+    la source si, et seulement si, l'appariement est UNIQUE dans les deux sens (le
+    jeton en trop n'a qu'un manquant proche, et ce manquant n'a que lui) — voir
+    `_proche`. Si le jeton fautif est inconnu de la source, toutes ses occurrences
+    sont remplacées ; s'il y existe aussi, seules les occurrences que l'alignement des
+    deux suites désigne à la place du manquant le sont.
+
+    Chaque restauration et chaque abstention est journalisée. En cas de doute, rien
+    n'est touché : mieux vaut une divergence visible du contrôle de parité qu'une clé
+    attachée à la mauvaise loi.
+
+    Elle passe AVANT `restore_locators`, qui apparie les citations par clé.
+    """
+    for nature, motif in JETONS_VERBATIM:
+        translated_text = _restaurer_jetons(source_text, translated_text, nature, motif)
+    return translated_text
+
+
+LIEN_GLOSSAIRE_RE = re.compile(r"\[([^\[\]\n]+)\]\(#(g-[A-Za-z0-9_-]+)\)")
+MARQUE_DE_LIGNE_RE = re.compile(r"^\s*([-*+]|\d+[.)]|#{1,6}|:|\|)?")
+JETON_DE_LIGNE_RE = re.compile(r"@[A-Za-z][A-Za-z0-9_-]*|\{#[A-Za-z][A-Za-z0-9_-]*"
+                               r"|https?://[^\s)\]<>\"']+|\d+")
+
+
+def _signature(ligne):
+    """Ce qui, dans une ligne, ne se traduit pas : sa marque de structure (puce,
+    titre, tableau), ses clés, ancres, URL et nombres. Sert à aligner les lignes des
+    deux langues, qui n'ont pas toujours le même nombre de lignes."""
+    if not ligne.strip():
+        return ("",)
+    marque = MARQUE_DE_LIGNE_RE.match(ligne).group(1) or ""
+    return (marque, tuple(sorted(JETON_DE_LIGNE_RE.findall(ligne))))
+
+
+def _aligner_lignes(lignes_src, lignes_trad):
+    """{indice de ligne traduite: indice de ligne source}, plages identiques seules."""
+    sm = difflib.SequenceMatcher(None, [_signature(x) for x in lignes_src],
+                                 [_signature(x) for x in lignes_trad], autojunk=False)
+    vis_a_vis = {}
+    for tag, i1, _i2, j1, j2 in sm.get_opcodes():
+        if tag == "equal":
+            for d in range(j2 - j1):
+                vis_a_vis[j1 + d] = i1 + d
+    return vis_a_vis
+
+
+def remove_extra_glossary_links(source_text, translated_text):
+    """Retire les liens de glossaire `[…](#g-…)` que le modèle a AJOUTÉS.
+
+    Le modèle pose des liens de glossaire là où le français n'en a pas — sur la PR
+    #333, trois entrées d'une liste en gras sont devenues des liens, dont un vers une
+    ancre qui n'existe pas (`#g-travaux-penibles-et-insalubres`). Un lien en trop n'est
+    pas anodin : il rompt l'égalité des comptes, et `restore_anchors` comme
+    `restore_relative_links` s'abstiennent alors sur tout le fichier.
+
+    Seules les cibles `#g-…` sont concernées. Pour chaque cible plus fréquente dans la
+    traduction que dans la source :
+      - inconnue de la source, tous ses liens sont retirés ;
+      - connue, on retire ceux qui n'ont pas d'équivalent positionnel — ligne sans
+        vis-à-vis dans la source, ou vis-à-vis sans lien vers cette cible. Les lignes
+        sont alignées sur ce qui ne se traduit pas (`_signature`). Si le nombre de
+        liens ainsi désignés n'est pas exactement l'excédent, on s'abstient.
+    Le texte du lien est gardé ; il est mis en gras si la ligne source correspondante
+    porte plus de passages en gras que la ligne traduite. Chaque retrait et chaque
+    abstention est journalisé.
+
+    Elle passe APRÈS `restore_citation_keys`, qui aura d'abord rétabli une cible
+    simplement fléchie (`#g-entrepositaires` → `#g-entrepositaire`) au lieu de la
+    tenir pour un lien en trop.
+    """
+    src = [m.group(2) for m in _hors_bruit(LIEN_GLOSSAIRE_RE, source_text)]
+    occ = _hors_bruit(LIEN_GLOSSAIRE_RE, translated_text)
+    cs, cd = _compte(src), _compte(m.group(2) for m in occ)
+    exces = {t: n - cs.get(t, 0) for t, n in cd.items() if n > cs.get(t, 0)}
+    if not exces:
+        return translated_text
+
+    lignes_src = source_text.split("\n")
+    lignes_trad = translated_text.split("\n")
+    vis_a_vis = _aligner_lignes(lignes_src, lignes_trad)
+
+    def ligne_de(m):
+        return translated_text.count("\n", 0, m.start())
+
+    a_retirer = []
+    for t in sorted(exces):
+        liens = [m for m in occ if m.group(2) == t]
+        if t not in cs:
+            a_retirer.extend(liens)
+            continue
+        sans_equivalent = [
+            m for m in liens
+            if ligne_de(m) not in vis_a_vis
+            or f"](#{t})" not in lignes_src[vis_a_vis[ligne_de(m)]]
+        ]
+        if len(sans_equivalent) != exces[t]:
+            print(f"  glossaire : #{t} — {cd[t]} lien(s) traduit(s) pour {cs[t]} à la "
+                  f"source, liens en trop non identifiables — aucun retrait "
+                  f"(le contrôle de parité tranchera).")
+            continue
+        a_retirer.extend(sans_equivalent)
+
+    if not a_retirer:
+        return translated_text
+
+    gras_ajoute = {}
+    morceaux, fin = [], 0
+    for m in sorted(a_retirer, key=lambda m: m.start()):
+        i = ligne_de(m)
+        texte = m.group(1)
+        if i in vis_a_vis:
+            manque = (lignes_src[vis_a_vis[i]].count("**") // 2
+                      - lignes_trad[i].count("**") // 2 - gras_ajoute.get(i, 0))
+            if manque > 0 and not texte.startswith("**"):
+                texte = f"**{texte}**"
+                gras_ajoute[i] = gras_ajoute.get(i, 0) + 1
+        morceaux.append(translated_text[fin:m.start()])
+        morceaux.append(texte)
+        fin = m.end()
+        print(f"  glossaire : lien ajouté retiré, l. {i + 1} — #{m.group(2)}"
+              f"{' (rendu en gras, comme la source)' if texte.startswith('**') else ''}.")
+    morceaux.append(translated_text[fin:])
+    return "".join(morceaux)
 
 
 URL_RE = re.compile(r"https?://[^\s)\]<>\"']+")
@@ -1623,6 +1934,11 @@ Fichier à traduire :
                                                   table_formules)
             translated_text = reinjecter_cellules(new_source_text, translated_text,
                                                   table_code)
+            # Ordre voulu : les clés d'abord (restore_locators apparie par clé), puis
+            # les liens de glossaire en trop (ils faussent les comptes de
+            # restore_anchors et restore_relative_links), puis les locateurs.
+            translated_text = restore_citation_keys(new_source_text, translated_text)
+            translated_text = remove_extra_glossary_links(new_source_text, translated_text)
             translated_text = restore_locators(new_source_text, translated_text)
             translated_text = restore_urls(new_source_text, translated_text)
             translated_text = restore_anchors(new_source_text, translated_text)
