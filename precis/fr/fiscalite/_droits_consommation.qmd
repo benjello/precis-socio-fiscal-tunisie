@@ -116,14 +116,15 @@ Source : @loi-88-62-droit-consommation, tableau annexé. **Ce relevé n'est pas 
 
 ### Les tarifs spécifiques de 1988
 
-: Tarifs spécifiques du tableau annexé de 1988 {#tbl-dc-specifiques-1988}
-
 ```{python}
 #| echo: false
 #| output: asis
-import sys; sys.path.insert(0, "../../../scripts")
-import tarifs
-tarifs.imprime("tarifs/tarifs-releves-droits-consommation.csv", "specifiques-1988")
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "droit_consommation_specifiques_1988.md",
+                               "Tarifs spécifiques du tableau annexé de 1988", "tbl-dc-specifiques-1988"))
 ```
 
 Source : @loi-88-62-droit-consommation, tableau annexé, p. 848-849. Les explosifs préparés (position 36-02) relèvent d'une formule particulière, exposée au renvoi (3) du tableau.
@@ -312,14 +313,15 @@ Ce récapitulatif n'est pour autant pas exhaustif. L'état consolidé du code re
 
 ### Les produits pétroliers, un tarif figé depuis 1999
 
-: Tarif du droit de consommation sur les produits pétroliers, 1988-2023 {#tbl-dc-petroliers}
-
 ```{python}
 #| echo: false
 #| output: asis
-import sys; sys.path.insert(0, "../../../scripts")
-import tarifs
-tarifs.imprime("tarifs/tarifs-releves-droits-consommation.csv", "petroliers")
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "droit_consommation_petroliers.md",
+                               "Tarif du droit de consommation sur les produits pétroliers, 1988-2023", "tbl-dc-petroliers"))
 ```
 
 Sources : @loi-88-62-droit-consommation, tableau annexé ; @decret-91-550-tarif-petroliers ; @decret-99-894-tarif-petroliers ; @dgelf-code-tva-2023 ; @loi-2007-70-lf-2008, art. 58 pour la ligne « gaz naturel carburant ». La colonne 1991 porte les tarifs applicables à compter du 5 février 1991 ; la colonne 1999, ceux applicables à compter du 22 avril 1999. La désignation des positions varie selon les textes : le tableau de 1988 porte la position entière « 27-10 », tandis que les décrets de 1991 et de 1999 désignent les mêmes produits par la position extraite « Ex 27-10 » ; la colonne de gauche retient ici la position entière. La cellule « non établi » du pétrole lampant signale que la ligne ne figure ni parmi les tarifs inchangés ni parmi les tarifs relevés de l'état consolidé : son montant actuel n'est pas établi ici.

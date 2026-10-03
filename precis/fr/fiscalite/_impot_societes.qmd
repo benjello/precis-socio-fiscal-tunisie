@@ -226,14 +226,15 @@ L'article 14 de la loi de finances pour 2021 en abroge plusieurs expressions de 
 
 ### Les paramètres, en vue d'ensemble
 
-: Les taux de l'impôt sur les sociétés, par période de bénéfices {#tbl-is-taux}
-
 ```{python}
 #| echo: false
 #| output: asis
-import sys; sys.path.insert(0, "../../../scripts")
-import tarifs
-tarifs.imprime("tarifs/tarifs-releves-impot-societes.csv", "taux-chronologie")
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "is_taux.md",
+                               "Les taux de l'impôt sur les sociétés, par période de bénéfices", "tbl-is-taux"))
 ```
 
 Sources et couverture : voir le manifeste du relevé. **Les six colonnes sont établies par le texte de la loi qui les porte**, au *Journal officiel*, dans son édition française — y compris la dernière, que l'article 37 de la loi de finances pour 2025 fixe aux pages 3429-3431 du fascicule n° 149 du 10 décembre 2024. Le tiret des deux premières cellules de la colonne 1990-2006 signale qu'il n'existait alors aucun taux sectoriel distinct : le 35 % y était le droit commun, et non un taux majoré.
@@ -242,14 +243,15 @@ Le tableau porte six colonnes là où le seul droit commun en appellerait cinq. 
 
 **Ce que la série révèle, et qu'une lecture rapide manque.** Le taux n'a pas baissé continûment. Il a chuté de trente-cinq à quinze points en trente ans, puis **remonté** de cinq points. Or le palier de 15 % a disparu du code : une valeur postérieure l'a recouvert, et l'état consolidé n'en garde aucune trace. Reconstituer la chronologie à partir du seul code en vigueur donne « 25 % puis 20 % » — une baisse continue qui n'a jamais eu lieu.
 
-: Le minimum d'impôt de l'article 49 § II, assis sur le chiffre d'affaires {#tbl-is-minimum}
-
 ```{python}
 #| echo: false
 #| output: asis
-import sys; sys.path.insert(0, "../../../scripts")
-import tarifs
-tarifs.imprime("tarifs/tarifs-releves-impot-societes.csv", "minimum-impot")
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "is_minimum.md",
+                               "Le minimum d'impôt de l'article 49 § II, assis sur le chiffre d'affaires", "tbl-is-minimum"))
 ```
 
 Sources : @loi-irpp-is-1989, art. 49 § II ; @lf-1998, art. 46 ; @lf-2006, art. 43 § 1 ; @lf-2011, art. 38 ; @lf-2014, art. 48 § 2. Les montants sont en dinars. La série couvre toute la vie de l'impôt, depuis l'état de 1990 publié au fascicule des 2-5 janvier 1990.

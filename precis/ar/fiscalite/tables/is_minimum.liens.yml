@@ -1,0 +1,12 @@
+- libelle: النسبة — الشركات غير الخاضعة لسعر 10 %
+  parametre: parameters/impot_societes/minimum_impot/taux_normal.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_societes.minimum_impot.taux_normal/table/
+- libelle: النسبة — الشركات الخاضعة لسعر 10 %
+  parametre: parameters/impot_societes/minimum_impot/taux_reduit.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_societes.minimum_impot.taux_reduit/table/
+- libelle: المبلغ — الشركات غير الخاضعة لسعر 10 %
+  parametre: parameters/impot_societes/minimum_impot/montant_minimum_normal.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_societes.minimum_impot.montant_minimum_normal/table/
+- libelle: المبلغ — الشركات الخاضعة لسعر 10 %
+  parametre: parameters/impot_societes/minimum_impot/montant_minimum_reduit.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_societes.minimum_impot.montant_minimum_reduit/table/

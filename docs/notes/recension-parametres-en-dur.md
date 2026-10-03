@@ -502,7 +502,7 @@ autre livre, motif 10) ; `tableau_taux_datee(..., colonne_variation=…, sans_ma
 `tableau_gabarit`, `gabarit` et `Lecture` (tableau mixte, motif 1 : le texte de chaque case,
 dans les deux langues, reçoit des valeurs lues dans le paramètre à la date qui les fonde) ;
 `tableau_a_la_date(..., colonne_effet=…)` et chemins groupés (fiche d'un régime, une grandeur
-par ligne) ; noms comptés arabes au-delà de cent (« 300 يوم », « 180 يومًا »).
+par ligne) ; `tableau_vers_markdown(..., a_gauche=True)` (tableaux de périodes qui mêlent valeurs et états) ; noms comptés arabes au-delà de cent (« 300 يوم », « 180 يومًا »).
 
 | id | statut | tableau engendré | remarque |
 |---|---|---|---|
@@ -529,3 +529,9 @@ par ligne) ; noms comptés arabes au-delà de cent (« 300 يوم », « 180 ي�
 | CS-02 | fait, en partie | `cotisations_sociales/tables/classes_revenu.md` (`tbl-classes-revenu`), émis par le générateur des retraites | classes des non-salariés, des artistes et des Tunisiens à l'étranger, avec le salaire minimum de référence ; le tableau `tbl-assiettes`, qui mêle ces régimes à des assiettes classées B ou C, reste fait main |
 | PS-12 | fait | `perte_emploi.md` (`tbl-perte-emploi`), dans les livres des cotisations et des prestations | « 0,5 % chacun » vérifié sur l'édition arabe de la loi de finances pour 2025, art. 17 (JORT n° 149 de 2024) ; la prose des prestations est alignée |
 | PS-13 | fait, partie B | `cnrps_maladie.md` (`tbl-cnrps-maladie`) et `prevoyance_pensionnes.md`, dans les livres des cotisations et des prestations | montée en charge de 2007 à 2009 (agents) et de 2007 à 2010 (pensionnés) ; la part patronale de 1 % antérieure à 2007, sans référence, n'est pas publiée (`depuis`) ; la part maladie du régime général reste non isolable |
+| FI-01 | fait | `fiscalite/tables/bareme_generations.md` (`tbl-bareme-irpp-generations`, remplace le tableau fait main) | grandeurs dérivées des barèmes (nombre de tranches, limite de la tranche à 0 %, taux marginal supérieur et son seuil) ; les générations de l'IRPP suivent les références du paramètre, un texte non déclaré arrête la génération |
+| FI-14 | fait | colonnes 2ᵉ enfant, 3ᵉ enfant et ressources du parent ajoutées à `famille_chef_de_famille.md` (`tbl-charges-famille`) | les valeurs de 1990 des enfants (et du chef de famille, déjà publiées) n'ont pas de référence dans le paramètre : le tableau cite l'art. 40 du code par ses clés, comme avant ; signalé dans `backlog-modele.md` |
+| FI-18 | fait | `fiscalite/tables/is_taux.md` (`tbl-is-taux`), qui remplace l'impression du relevé | cases lues dans `impot_societes/taux`, états et lignes inexistantes tirés du relevé ; le relevé et `check_tarifs_openfisca.py` deviennent garde-fou ; le livre arabe reçoit un tableau traduit au lieu du relevé français |
+| FI-20 | fait | `fiscalite/tables/is_minimum.md` (`tbl-is-minimum`) | les valeurs de 1990-2005 (plafonds) et la nature du minimum restent tirées du relevé (FI-21, C) |
+| FI-30 | fait | `fiscalite/tables/droit_consommation_specifiques_1988.md` (`tbl-dc-specifiques-1988`) | les quatorze lignes pétrolières sont lues au 1er juillet 1988 ; alcools et explosifs restent tirés du relevé (FI-29, 31, 32, C) |
+| FI-33 | fait | `fiscalite/tables/droit_consommation_petroliers.md` (`tbl-dc-petroliers`), qui remplace l'impression du relevé | colonnes 1988, 1991 et 1999 lues (44 cases) ; état consolidé de 2023 et lignes nées après 1999 tirés du relevé ; noms de produits laissés en français dans l'instantané arabe, en attendant leur terminologie |

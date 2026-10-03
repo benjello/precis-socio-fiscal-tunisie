@@ -248,7 +248,8 @@ def avec_liens(fabrique: Callable[[], Any]) -> tuple[Any, list[tuple[str, str | 
 
 def ecrire_tableau(chemin_tableau: str | Path, df: "pd.DataFrame",
                    liens: list[tuple[str, str | None]], langue: str,
-                   entete: str = "", autres_livres: tuple[str, ...] = ()) -> None:
+                   entete: str = "", autres_livres: tuple[str, ...] = (),
+                   a_gauche: bool = False) -> None:
     """Écrit le snapshot Markdown d'un tableau, puis ses liens (`<nom>.liens.yml`).
 
     `entete` : commentaire HTML placé avant le tableau ; un snapshot qui en porte un se
@@ -261,7 +262,7 @@ def ecrire_tableau(chemin_tableau: str | Path, df: "pd.DataFrame",
     duplique pas dans un second générateur, il est émis deux fois. Les clés de citation du
     tableau doivent exister dans le `references.json` de chaque livre qui le reçoit.
     """
-    corps = tableau_vers_markdown(df)
+    corps = tableau_vers_markdown(df, a_gauche=a_gauche)
     texte = f"{entete}{corps}\n" if entete else corps
     chemin = Path(chemin_tableau)
     cibles = [chemin] + [chemin.parents[2] / livre / "tables" / chemin.name
@@ -656,18 +657,20 @@ def _colonne_numerique(df: "pd.DataFrame", colonne: str) -> bool:
     return all(motif.match(str(v).strip()) for v in df[colonne])
 
 
-def tableau_vers_markdown(df: "pd.DataFrame") -> str:
+def tableau_vers_markdown(df: "pd.DataFrame", a_gauche: bool = False) -> str:
     """DataFrame -> tableau Markdown pipe.
 
     Seules les colonnes dont toutes les cellules sont numériques sont alignées à droite ;
     une colonne de texte, comme la référence du texte de loi, reste alignée à gauche.
+    `a_gauche` aligne tout à gauche : un tableau dont les colonnes de périodes mêlent des
+    valeurs et des états (« ligne inexistante ») se lit mieux d'un seul alignement.
     """
     colonnes = list(df.columns)
     lignes = ["| " + " | ".join(str(c) for c in colonnes) + " |"]
     lignes.append(
         "|"
         + "|".join(
-            "---:" if i > 0 and _colonne_numerique(df, c) else "---"
+            "---:" if i > 0 and not a_gauche and _colonne_numerique(df, c) else "---"
             for i, c in enumerate(colonnes)
         )
         + "|"

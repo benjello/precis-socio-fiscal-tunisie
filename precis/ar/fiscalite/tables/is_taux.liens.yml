@@ -1,0 +1,17 @@
+- libelle: السعر العادي
+  parametre: parameters/impot_societes/taux/droit_commun.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_societes.taux.droit_commun/table/
+- libelle: Taux réduit — artisanat, agriculture, pêche, zones de développement régional,
+    coopératives
+  parametre: parameters/impot_societes/taux/reduit.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_societes.taux.reduit/table/
+- libelle: الشركات الصغرى والمتوسطة — رقم معاملات لا يتجاوز مليون دينار أو 500 ألف
+    دينار
+  parametre: parameters/impot_societes/taux/pme.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_societes.taux.pme/table/
+- libelle: البنوك ومؤسسات التأمين
+  parametre: parameters/impot_societes/taux/secteurs_35.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_societes.taux.secteurs_35/table/
+- libelle: البنوك ومؤسسات التأمين
+  parametre: parameters/impot_societes/taux/banques_assurances.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_societes.taux.banques_assurances/table/

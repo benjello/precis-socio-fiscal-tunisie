@@ -82,6 +82,16 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   leurs clés CSL ; leur mention sans citation dans l'annexe de l'IRPP est à rattacher à
   ces clés, pas à recréer. Voir `biblio-a-rapatrier.md` avant toute écriture Zotero.
 
+- **Tableaux de paramètres engendrés (recension du 2 octobre, lots 1f à 1h) — fait le
+  3 octobre 2026** : synthèse des générations du barème (`tbl-bareme-irpp-generations`),
+  colonnes neuves des charges de famille (`tbl-charges-famille`), taux et minimum de l'IS
+  (`tbl-is-taux`, `tbl-is-minimum`), tarifs pétroliers et tarif spécifique de 1988
+  (`tbl-dc-petroliers`, `tbl-dc-specifiques-1988`). Les relevés CSV de `tarifs/` restent la
+  source des cases que les paramètres ne portent pas (minimum de 1990-2005, état consolidé de
+  2023, alcools) et servent de garde-fou. À faire : la terminologie arabe des noms de produits
+  pétroliers (terminologue), que l'instantané arabe laisse en français, comme le faisait
+  déjà le livre arabe.
+
 ## Retraites
 
 - **Résultat de la branche des pensions du RSNA, 1990-2004 — fait le 3 octobre 2026** (`#fig-rsna-resultat-1990-2004`, dans `#sec-rsna-equilibre`), tiré de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026). Le tableau de cette branche n'a pas d'estimation (la colonne 2000 y est rétablie par les totaux) ; si une relecture de l'original change ses montants, relire la note de lecture. Piste : le même tableau existe pour les autres régimes (RSA, RSAA, RTNS) et pour le régime complémentaire. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches).
