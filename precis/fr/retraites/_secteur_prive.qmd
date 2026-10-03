@@ -761,7 +761,7 @@ Ces chiffres sont calculés à partir des annuaires statistiques de la caisse [@
 
 Le taux d'équilibre est enfin une grandeur instantanée, qui rapporte les seules pensions aux seuls salaires déclarés : il ne tient compte ni des réserves du régime ni de ses autres ressources.
 
-Les comptes de la caisse en donnent une autre mesure, qui inclut ces autres ressources. Sa rétrospective financière publie, de 1990 à 2004, les ressources, les emplois et le résultat de gestion de la branche des pensions du régime [@cnss-retrospective-1990-2004]. La figure suivante montre, en haut, les cotisations de la branche, les pensions qu'elle sert et ses produits financiers ; en bas, son résultat de gestion, excédent ou déficit de chaque année (@fig-rsna-resultat-1990-2004).
+Les comptes de la caisse en donnent une autre mesure, qui inclut ces autres ressources. Sa rétrospective financière publie, de 1990 à 2004, les ressources, les emplois et le résultat de gestion de la branche des pensions du régime [@cnss-retrospective-1990-2004]. La figure suivante montre, en haut, les cotisations de la branche, les pensions qu'elle sert et ses produits financiers ; en bas, son résultat de gestion, excédent ou déficit de chaque année (@fig-rsna-resultat-1990-2004). Elle marque aussi les dates d'effet des trois relèvements de la part du taux global affectée à la branche, au 1^er^ janvier 1988, 1994 et 2003 (@sec-rsna-financement) : la caisse rétablit l'équilibre de ses pensions en leur réaffectant des points du taux global, que ses notes disent pris sur la part des prestations familiales [@cnss-retrospective-1990-2004].
 
 ```{python}
 #| label: fig-rsna-resultat-1990-2004
@@ -799,6 +799,21 @@ figtools.figure_tabs(
         "montants de 2000, que la reliure de l'exemplaire consulté masque en partie, sont "
         "rétablis par les totaux et sous-totaux du tableau et par les chiffres restés "
         "visibles. "
+        "Les lignes violettes marquent, sur les deux panneaux, les dates d'effet des trois "
+        "relèvements de la quote-part du taux global de la loi n° 60-30 affectée au régime "
+        "de pensions : de 1,25/20^e^ à 4,25/20^e^ au 1^er^ janvier 1988 "
+        "[@decret88-1137, art. 1-2], à 6,25/20^e^ au 1^er^ janvier 1994 "
+        "[@decret94-1429, art. 1-2], à 7,25/20^e^ au 1^er^ janvier 2003 "
+        "[@decret2003-1212, art. 1-2]. La première précède le tableau, qui commence en "
+        "1990 : l'axe des années remonte à 1988 pour la montrer. Les libellés donnent le "
+        "taux de la branche tel que l'expriment les notes du document — 5 → 8 %, 8 → 10 %, "
+        "11,5 → 12,5 % —, qui lisent la quote-part en points de salaire ; depuis 1997, "
+        "cette lecture et la lecture littérale de la fraction divergent "
+        "(@sec-rsna-financement). Le décret de 1994 relève en outre la part salariale de la "
+        "cotisation propre du régime au 1^er^ juillet 1994, 1995 et 1996. À chaque fois, "
+        "la caisse rétablit l'équilibre des pensions en leur réaffectant des points du "
+        "taux global ; selon les notes du document, ces points sont pris sur la part des "
+        "prestations familiales [@cnss-retrospective-1990-2004, p. 14 et 60]. "
         "Trois vues se partagent le graphique : en millions de dinars courants ; en "
         "pourcentage du PIB que retient le ministère des Finances "
         "[@minfin-indicateurs-fp] ; en pourcentage du total des ressources de la CNSS, "

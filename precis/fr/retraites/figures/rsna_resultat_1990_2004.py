@@ -21,6 +21,19 @@ CE QUI EST TRACÉ.
     doivent l'essentiel, et la note de lecture le dit.
   - Bas : le résultat de gestion du tableau, ressources moins emplois, en barres.
 
+LES RÉALLOCATIONS DU TAUX GLOBAL. Trois lignes verticales marquent, sur les deux panneaux,
+les dates d'effet des trois relèvements de la quote-part du taux global de la loi n° 60-30
+affectée à la branche des pensions : 1er janvier 1988 (décret n° 88-1137, 1,25/20e →
+4,25/20e), 1er janvier 1994 (décret n° 94-1429, 4,25/20e → 6,25/20e, avec les paliers de la
+part salariale de la cotisation propre aux 1ers juillets 1994, 1995 et 1996) et 1er janvier
+2003 (décret n° 2003-1212, 6,25/20e → 7,25/20e). Ces dates sont celles qu'établissent les
+chapitres du précis (cotisations_sociales/index.qmd, tbl-pensions-quote-part ;
+retraites/_secteur_prive.qmd, annexe des textes) ; elles coïncident avec les notes du
+document (pages 14, 15 et 60). Les libellés donnent le taux de la branche selon la caisse
+(note (1) et (3) de la page 15 : 5 → 8 %, 8 → 10 %, 11,5 → 12,5 %), lecture en points
+qu'expose le chapitre des cotisations. L'axe des années commence en 1988 pour montrer la
+première ; le tableau, lui, commence en 1990.
+
 LES DÉNOMINATEURS DES VUES EN POURCENTAGE.
   - PIB : le PIB nominal retenu par le ministère des Finances (série `irpp-ratios`,
     colonne `pib_minfin_MDT`, en millions de dinars courants), déduit du déficit budgétaire
@@ -70,6 +83,10 @@ PAGE_CAISSE = 78  # ensemble des régimes, toutes branches, avec CTF et RC
 SERIE_PIB = "irpp-ratios"
 RUPTURE_PIB = 1997  # base 1983 → base 1997 des comptes nationaux (voir l'en-tête)
 MESURES = ("md", "pib", "ressources")
+# Relèvements de la quote-part du taux global affectée à la branche (date d'effet, clé du
+# libellé) — dates établies au chapitre des cotisations, voir l'en-tête.
+REALLOCATIONS = ((1988, "realloc_1988"), (1994, "realloc_1994"), (2003, "realloc_2003"))
+VIOLET = "#8250df"
 
 BLEU, ORANGE, GRIS = "#08519c", "#bc4c00", "#6e7781"
 
@@ -106,6 +123,12 @@ _L = {
     "rupture": {"fr": "changement de base\ndes comptes nationaux",
                 "ar": "تغيير سنة أساس\nالحسابات القومية"},
     "x": {"fr": "Année", "ar": "السنة"},
+    "realloc_1988": {"fr": "1er janv. 1988 : 5 → 8 %", "ar": "غرّة جانفي 1988: من 5 إلى 8 %"},
+    "realloc_1994": {"fr": "1er janv. 1994 : 8 → 10 %\npuis part salariale, juil. 1994-1996",
+                     "ar": "غرّة جانفي 1994: من 8 إلى 10 %\nثمّ حصّة الأجير، جويلية 1994-1996"},
+    "realloc_2003": {"fr": "1er janv. 2003 : 11,5 → 12,5 %", "ar": "غرّة جانفي 2003: من 11,5 إلى 12,5 %"},
+    "lg_realloc": {"fr": "Points du taux global réaffectés à la branche\n(taux de la branche selon la caisse)",
+                   "ar": "نقاط من النسبة الجملية أُعيد تخصيصها للفرع\n(نسبة الفرع حسب الصندوق)"},
     "lg_cotisations": {"fr": "Cotisations", "ar": "الاشتراكات"},
     "lg_pensions": {"fr": "Pensions servies (vieillesse, invalidité, veuves, orphelins)",
                     "ar": "الجرايات المصروفة (الشيخوخة والعجز والأرامل والأيتام)"},
@@ -273,7 +296,7 @@ def fig_resultat(mesure: str = "md"):
         ax.set_ylim(0, max(v for n in ("cotisations", "pensions", "financiers")
                            for v, _ in g[n].values()) * 1.3)
     ax.set_ylabel("\n".join(ft(l) for l in _lab("y_haut" + suffixe).split("\n")))
-    ax.set_title("\n".join(ft(l) for l in _lab("titre").split("\n")))
+    ax.set_title("\n".join(ft(l) for l in _lab("titre").split("\n")), pad=30)
     ax.grid(True, alpha=0.3)
 
     res = g["resultat"]
@@ -292,6 +315,16 @@ def fig_resultat(mesure: str = "md"):
         figtools.marque_rupture(ax, RUPTURE_PIB,
                                 "\n".join(ft(l) for l in _lab("rupture").split("\n")))
         figtools.marque_rupture(bx, RUPTURE_PIB)
+    for annee, cle in REALLOCATIONS:
+        x = annee - 0.5  # date d'effet au 1er janvier : entre deux exercices
+        for axe in (ax, bx):
+            axe.axvline(x, color=VIOLET, ls=(0, (6, 2, 1, 2)), lw=1, zorder=1)
+        # Au-dessus du cadre, hors des courbes et de la légende.
+        ax.annotate("\n".join(ft(l) for l in _lab(cle).split("\n")), xy=(x, 1),
+                    xycoords=("data", "axes fraction"), xytext=(0, 3),
+                    textcoords="offset points", va="bottom", fontsize=7, color=VIOLET,
+                    ha="left" if annee == REALLOCATIONS[0][0] else "center")
+    bx.set_xlim(REALLOCATIONS[0][0] - 0.8, ans[-1] + 0.6)
     bx.set_xlabel(ft(_lab("x")))
     bx.set_xticks(ans)
     bx.tick_params(axis="x", labelsize=8)
@@ -305,6 +338,8 @@ def fig_resultat(mesure: str = "md"):
         poignees.append(Line2D([], [], color=GRIS, marker="o", mfc="white", lw=0,
                                label=ft(_lab("lg_estime").format(
                                    annees=", ".join(map(str, estimees))))))
+    poignees.append(Line2D([], [], color=VIOLET, ls=(0, (6, 2, 1, 2)), lw=1,
+                           label="\n".join(ft(l) for l in _lab("lg_realloc").split("\n"))))
     ax.legend(handles=poignees, loc="upper left", fontsize=8)
     fig.tight_layout()
     return fig
