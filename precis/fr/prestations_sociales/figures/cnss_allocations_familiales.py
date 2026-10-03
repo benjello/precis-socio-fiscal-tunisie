@@ -2,7 +2,10 @@
 
     from figures import cnss_allocations_familiales as caf
     caf.fig_allocations()   # composantes en MD courants, total en MD constants de 1990
-    caf.table()             # les montants de la figure (onglet Données)
+    caf.fig_allocations("pib")         # composantes en % du PIB
+    caf.fig_allocations("ressources")  # en % des ressources de la CNSS, toutes branches
+    caf.vues()              # les trois, pour figtools.figure_tabs
+    caf.table()             # les montants et les ratios de la figure (onglet Données)
 
 D'OÙ VIENNENT LES DONNÉES. La Rétrospective financière 1990-2004 de la CNSS (série
 `cnss-retrospective-ressources-emplois` de tunisia-data), comptabilité des « Bilans », en
@@ -25,9 +28,30 @@ LE DÉFLATEUR. L'indice général des prix à la consommation familiale de l'INS
 à 1990. Le document de la CNSS ne compte ni les allocataires ni les enfants : le total
 déflaté mesure la dépense, non le montant par enfant.
 
+LES DÉNOMINATEURS DES VUES EN POURCENTAGE. Elles se passent de déflateur : numérateur et
+dénominateur sont en dinars courants de la même année.
+  - PIB : le PIB nominal retenu par le ministère des Finances (série `irpp-ratios`,
+    colonne `pib_minfin_MDT`, en millions de dinars courants), déduit du déficit budgétaire
+    publié en dinars et en points de PIB (fiche `sources/minfinances-recettes-fiscales.md`
+    de tunisia-data). Il passe en 1997 de la base 1983 à la base 1997 des comptes
+    nationaux : 19 066,2 MD en 1996, valeur de la base 1983 (série 30 d'UNdata, annuaire
+    statistique de l'INS 1995-2001) ; 22 943,9 MD en 1997, valeur de la base 1997 (série 100
+    d'UNdata), quand la base 1983 donnait 20 898 pour la même année — environ 10 % de plus
+    du seul fait de la base (tunisia-data, `docs/croissances-revenus-prix.md`, et les
+    réserves des séries `undata-pib` et `cnat-pib-nominal`). Rien n'est converti d'une base
+    à l'autre : la rupture est marquée sur la vue, entre 1996 et 1997.
+  - Ressources de la CNSS : la ligne « Total des ressources » du tableau de l'ensemble des
+    régimes, toutes branches, avec la convention tuniso-française et le régime
+    complémentaire (page 78). Ses composantes en redonnent le total, et ce total est la
+    somme des totaux des branches (pages 63, 67 et 75) : aucune ligne de transfert interne
+    n'y figure, donc rien n'y est compté deux fois. Les accidents du travail n'y ont de
+    ressources qu'à partir de 1995 et la protection sociale des travailleurs à partir de
+    1997 : le dénominateur s'élargit à ces dates.
+
 LES COLONNES MASQUÉES. Comme pour toutes les figures tirées de ce document, une cellule que la
 reliure masque porte une estimation provisoire ; l'année est alors hachurée (barres) et creuse
-(courbe), et la table laisse la valeur publiée vide en donnant l'estimation à part.
+(courbe), et la table laisse la valeur publiée vide en donnant l'estimation à part. Un ratio
+est estimé dès que son numérateur ou son dénominateur l'est.
 """
 from __future__ import annotations
 
@@ -46,6 +70,10 @@ import figtools  # noqa: E402
 SERIE = "cnss-retrospective-ressources-emplois"
 SERIE_PRIX = "ins-annuaire-ipc"
 ANNEE_BASE = 1990
+PAGE_CAISSE = 78  # ensemble des régimes, toutes branches, avec CTF et RC
+SERIE_PIB = "irpp-ratios"
+RUPTURE_PIB = 1997  # base 1983 → base 1997 des comptes nationaux (voir l'en-tête)
+MESURES = ("md", "pib", "ressources")
 
 BLEU, ORANGE, GRIS, VERT, VIOLET = "#08519c", "#bc4c00", "#6e7781", "#1a7f37", "#8250df"
 BLEU_CLAIR = "#6baed6"
@@ -68,6 +96,15 @@ _L = {
                     "للضمان الاجتماعي، 1990-2004"},
     "y": {"fr": "Millions de dinars (barres : courants ; courbe : constants de 1990)",
           "ar": "بملايين الدنانير (الأعمدة: جارية؛ المنحنى: ثابتة لسنة 1990)"},
+    "y_pib": {"fr": "% du PIB", "ar": "% من الناتج المحلي الإجمالي"},
+    "y_ressources": {"fr": "% des ressources de la CNSS",
+                     "ar": "% من موارد الصندوق الوطني للضمان الاجتماعي"},
+    "vue_md": {"fr": "Millions de dinars", "ar": "بملايين الدنانير"},
+    "vue_pib": {"fr": "% du PIB", "ar": "% من الناتج المحلي الإجمالي"},
+    "vue_ressources": {"fr": "% des ressources de la CNSS",
+                       "ar": "% من موارد الصندوق الوطني للضمان الاجتماعي"},
+    "rupture": {"fr": "changement de base\ndes comptes nationaux",
+                "ar": "تغيير سنة أساس\nالحسابات القومية"},
     "x": {"fr": "Année", "ar": "السنة"},
     "af_rsna": {"fr": "Allocations familiales, régime des salariés non agricoles",
                 "ar": "المنح العائلية، نظام الأجراء غير الفلاحيين"},
@@ -92,6 +129,15 @@ _L = {
     "col_reel": {"fr": "Total, dinars constants de 1990 (MD)",
                  "ar": "المجموع، بالدينار الثابت لسنة 1990 (م.د)"},
     "col_estimations": {"fr": "Estimations provisoires (MD)", "ar": "تقديرات مؤقّتة (م.د)"},
+    "col_pib": {"fr": "PIB, ministère des Finances (MD)",
+                "ar": "الناتج المحلي الإجمالي، وزارة المالية (م.د)"},
+    "col_caisse": {"fr": "Total des ressources de la CNSS (MD)",
+                   "ar": "مجموع موارد الصندوق الوطني للضمان الاجتماعي (م.د)"},
+    "total": {"fr": "Total", "ar": "المجموع"},
+    "suffixe_pib": {"fr": "% du PIB", "ar": "% من الناتج"},
+    "suffixe_ressources": {"fr": "% des ressources de la CNSS", "ar": "% من موارد الصندوق"},
+    "col_estimations_ratios": {"fr": "Estimations provisoires (ratios, %)",
+                               "ar": "تقديرات مؤقّتة (نسب، %)"},
 }
 
 
@@ -100,6 +146,8 @@ def _lab(key: str) -> str:
 
 
 def _nombre(v: float, dec: int = 1) -> str:
+    if round(v, dec) == 0:
+        v = 0.0  # ni « -0,00 » ni « -0,0 »
     return f"{v:,.{dec}f}".replace(",", " ").replace(".", ",")
 
 
@@ -131,6 +179,44 @@ def _donnees():
     return out
 
 
+def _ressources_caisse() -> dict[int, tuple[float, bool]]:
+    """{année: (MD, estimé ?)} : « Total des ressources » de la CNSS, toutes branches et tous
+    régimes (page PAGE_CAISSE)."""
+    import pandas as pd
+    d = figtools.series(SERIE)
+    d = d[(d["page"] == PAGE_CAISSE) & (d["cle"] == "total_ressources")]
+    assert set(d["regime"]) == {"ENSEMBLE"} and set(d["variante"]) == {"avec CTF & RC"} \
+        and all("PST" in b for b in d["branche"]), \
+        f"la page {PAGE_CAISSE} n'est plus le tableau de l'ensemble, toutes branches"
+    return {int(r.annee): (float(r.valeur_ou_estimation) / 1000, bool(pd.isna(r.valeur)))
+            for r in d.itertuples() if not pd.isna(r.valeur_ou_estimation)}
+
+
+def _pib() -> dict[int, float]:
+    """{année: PIB nominal en MD} retenu par le ministère des Finances."""
+    import pandas as pd
+    return {int(r.annee): float(r.pib_minfin_MDT)
+            for r in figtools.series(SERIE_PIB).itertuples() if not pd.isna(r.pib_minfin_MDT)}
+
+
+def _ratios(g: dict, mesure: str) -> dict:
+    """Les grandeurs `g` ({nom: {année: (MD, estimé ?)}}) dans l'unité `mesure`.
+
+    "md" : inchangées ; "pib" : en % du PIB ; "ressources" : en % du total des ressources de
+    la caisse. Un ratio est estimé si son numérateur ou son dénominateur l'est.
+    """
+    if mesure == "md":
+        return g
+    if mesure == "pib":
+        den = {a: (v, False) for a, v in _pib().items()}
+    elif mesure == "ressources":
+        den = _ressources_caisse()
+    else:
+        raise ValueError(mesure)
+    return {nom: {a: (100 * v / den[a][0], est or den[a][1]) for a, (v, est) in s.items()}
+            for nom, s in g.items()}
+
+
 def _indice() -> dict[int, float]:
     """IPC annuel ramené à 100 en ANNEE_BASE (lignes retenues des annuaires de l'INS)."""
     d = figtools.series(SERIE_PRIX)
@@ -151,6 +237,8 @@ def _totaux():
 def table():
     import pandas as pd
     g, ind, ans, tot = _totaux()
+    pib, caisse = _pib(), _ressources_caisse()
+    ratios = {m: _ratios({**g, "total": tot}, m) for m in ("pib", "ressources")}
     lignes = []
     for a in ans:
         ligne = {_lab("col_annee"): a}
@@ -168,14 +256,38 @@ def table():
             estimes.append(f"{_lab('col_total').split(',')[0]} : {_nombre(v, 2)} ; "
                            f"{_lab('col_reel').split(' (')[0]} : {_nombre(100 * v / ind[a], 2)}")
         ligne[_lab("col_estimations")] = " ; ".join(estimes)
+        ligne[_lab("col_pib")] = round(pib[a], 1)
+        ligne[_lab("col_caisse")] = None if caisse[a][1] else round(caisse[a][0], 1)
+        estimes_ratios = []
+        for m in ("pib", "ressources"):
+            for nom in [n for n, _, _ in _COMPOSANTES] + ["total"]:
+                v, est = ratios[m][nom][a]
+                col = f"{_lab(nom)} ({_lab(f'suffixe_{m}')})"
+                ligne[col] = None if est else round(v, 3)
+                if est:
+                    estimes_ratios.append(f"{col} : {_nombre(v, 3)}")
+        ligne[_lab("col_estimations_ratios")] = " ; ".join(estimes_ratios)
         lignes.append(ligne)
     return pd.DataFrame(lignes)
 
 
-def fig_allocations():
+def vues() -> list[tuple[str, object]]:
+    """Les trois vues de la figure, pour `figtools.figure_tabs`."""
+    return [(_lab(f"vue_{m}"), fig_allocations(m)) for m in MESURES]
+
+
+def fig_allocations(mesure: str = "md"):
+    """Composantes empilées ; `mesure` : "md" (millions de dinars courants, avec le total en
+    dinars constants de 1990), "pib" (% du PIB) ou "ressources" (% du total des ressources
+    de la CNSS, toutes branches)."""
     figtools.apply_lang_font()
     ft = figtools.fig_text
     g, ind, ans, tot = _totaux()
+    if mesure != "md":
+        r = _ratios({**g, "total": tot}, mesure)
+        tot = r.pop("total")
+        g = r
+    dec = {"md": 1, "pib": 3, "ressources": 1}[mesure]
     fig, ax = plt.subplots(figsize=(9.5, 6.4))
 
     bas = {a: 0.0 for a in ans}
@@ -189,16 +301,18 @@ def fig_allocations():
             bas[a] += v
         poignees.append(Patch(color=couleur, label=ft(_lab(nom))))
 
-    reel = {a: 100 * tot[a][0] / ind[a] for a in ans}
-    ax.plot(ans, [reel[a] for a in ans], "-", color=ORANGE, lw=2)
-    for a in ans:
-        ax.plot([a], [reel[a]], "o", color=ORANGE, ms=4.5,
-                mfc="white" if tot[a][1] else ORANGE)
-    poignees.append(Line2D([], [], color=ORANGE, marker="o", lw=2, label=ft(_lab("reel"))))
+    if mesure == "md":  # le total en dinars constants : vue en dinars seulement
+        reel = {a: 100 * tot[a][0] / ind[a] for a in ans}
+        ax.plot(ans, [reel[a] for a in ans], "-", color=ORANGE, lw=2)
+        for a in ans:
+            ax.plot([a], [reel[a]], "o", color=ORANGE, ms=4.5,
+                    mfc="white" if tot[a][1] else ORANGE)
+        poignees.append(Line2D([], [], color=ORANGE, marker="o", lw=2,
+                               label=ft(_lab("reel"))))
     for a in (ans[0], ans[-1]):
-        ax.annotate(_nombre(tot[a][0]), (a, tot[a][0]), textcoords="offset points",
+        ax.annotate(_nombre(tot[a][0], dec), (a, tot[a][0]), textcoords="offset points",
                     xytext=(0, 4), ha="center", fontsize=8, color="#24292f")
-        if a != ANNEE_BASE:  # l'année de base : même montant que la barre
+        if mesure == "md" and a != ANNEE_BASE:  # l'année de base : même montant que la barre
             ax.annotate(_nombre(reel[a]), (a, reel[a]), textcoords="offset points",
                         xytext=(0, -13), ha="center", fontsize=8, color=ORANGE)
     estimees = [a for a in ans if tot[a][1]]
@@ -207,11 +321,14 @@ def fig_allocations():
                               label=ft(_lab("estime").format(
                                   annees=", ".join(map(str, estimees))))))
 
-    ax.set_ylim(0, max(v for v, _ in tot.values()) * 1.15)
+    ax.set_ylim(0, max(v for v, _ in tot.values()) * (1.25 if mesure == "pib" else 1.15))
+    if mesure == "pib" and ans[0] < RUPTURE_PIB <= ans[-1]:
+        figtools.marque_rupture(ax, RUPTURE_PIB,
+                                "\n".join(ft(l) for l in _lab("rupture").split("\n")))
     ax.set_xticks(ans)
     ax.tick_params(axis="x", labelsize=8)
     ax.set_xlabel(ft(_lab("x")))
-    ax.set_ylabel(ft(_lab("y")))
+    ax.set_ylabel(ft(_lab("y" if mesure == "md" else f"y_{mesure}")))
     ax.set_title(ft(_lab("titre")))
     ax.grid(True, axis="y", alpha=0.3)
     ax.legend(handles=poignees, loc="upper center", bbox_to_anchor=(0.5, -0.1), ncol=1,

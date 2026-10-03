@@ -47,6 +47,16 @@ mérite ensuite son propre diff et sa propre revue ; elle n'a pas été déclenc
   papier du centre de documentation du CRESS, numérisé, date d'édition non imprimée — ne pas en
   inscrire. Entrée identique en FR et en AR (titre arabe inconnu).
 
+### Trois livres — PIB du ministère des Finances sous les figures de la CNSS (03/10/2026)
+
+- `minfin-indicateurs-fp` et `minfin-recettes-fiscales` : copiées à l'identique, langue par
+  langue, des bibliographies du livre « Fiscalité » vers celles des livres Retraites,
+  Prestations sociales et Cotisations sociales. Les trois figures tirées de la rétrospective
+  financière de la CNSS ont une vue en % du PIB, dont le dénominateur vient de la série
+  `irpp-ratios`, et l'onglet Sources cite les deux sources de cette série. Citées désormais
+  par cinq livres (quatre pour `minfin-recettes-fiscales`) : **à ranger en « Commun »** à la
+  prochaine descente, et à retirer alors des bibliographies de livre.
+
 ### Livre « Prestations sociales » — aide occasionnelle de l'AMEN (lecture du 29/09/2026)
 
 - `arrete-2025-07-10-appui-occasionnel` : nouvelle clé dans les bibliographies FR et AR du

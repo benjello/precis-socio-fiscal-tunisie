@@ -1302,6 +1302,46 @@
         ]
       },
       "note": "citation-key: cnss-annuaire-2010\n« الدليل الإحصائي 2010 » (الدليل الإحصائي للصندوق الوطني للضمان الاجتماعي، الطبعة العربية، 292 صفحة، سلاسل 2000-2010؛ صفحة العنوان: إدارة الدراسات و مراقبة التصرف، مصلحة الإحصائيات). هو الوحيد من بين الطبعات المطلع عليها الذي ينشر توزيع المضمونين حسب أصناف الدخل للفترة 2000-2004؛ ولا تنشره طبعة 2013 إلا ابتداء من 2005. الصفحات المقروءة (صفحة ملف PDF): العملة غير الأجراء، المجموع، توزيع المضمونين حسب شريحة الدخل، ص. 141؛ العملة التونسيون بالخارج، المضمونون ص. 170، توزيع المضمونين حسب شريحة الدخل ص. 173. وتتطابق هذه التوزيعات على الفترة 2005-2010 مع ما تنشره طبعتا 2013 و2017. أُخذت الوثيقة أولًا من أرشيف الإنترنت، ولا يزال موقع الصندوق يوفّرها مطابقة بايتًا ببايت لنسخة 16/07/2019 (الحجم نفسه والبصمة SHA-1 نفسها، تم التحقق في 23/09/2026). نسخة للتحقق: نسخة 16/07/2019، https://web.archive.org/web/20190716125415/http://www.cnss.tn:80/documents/10156/30862/annuaire2010.pdf (نسخ 2022 و2024 من عنوان https تحمل بصمة مختلفة ولم تُستعمل). قائمة الملفات: مستودع tunisia-data، sources/cnss-urls.csv وsources/cnss-annuaires.md."
+    },
+    {
+      "id": "minfin-indicateurs-fp",
+      "type": "dataset",
+      "note": "citation-key: minfin-indicateurs-fp",
+      "publisher": "Ministère des Finances, Tunisie",
+      "title": "Indicateurs des finances publiques",
+      "URL": "http://www.finances.gov.tn",
+      "author": [
+        {
+          "literal": "Ministère des Finances, Tunisie"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      }
+    },
+    {
+      "id": "minfin-recettes-fiscales",
+      "type": "dataset",
+      "title": "Série des recettes fiscales de l'État, 1986-2025",
+      "publisher": "Ministère des Finances, Tunisie",
+      "URL": "https://www.finances.gov.tn/fr/les-indicateurs/ressources",
+      "author": [
+        {
+          "literal": "Ministère des Finances, Tunisie"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "note": "citation-key: minfin-recettes-fiscales\nFichier « Série Recettes_fiscales_fr.xls », page « Les indicateurs → Ressources ». Recettes fiscales par rubrique, 1986-2025 en réalisations puis colonnes de prévision jusqu'à la loi de finances 2026. La ligne 1.1 « impôts sur le revenu » est ventilée entre impôts sur les salaires et autres. Consulté le 9 septembre 2026 ; classeur enregistré le 30 juin 2026."
     }
   ]
 }

@@ -765,18 +765,18 @@ Les comptes de la caisse en donnent une autre mesure, qui inclut ces autres ress
 
 ```{python}
 #| label: fig-rsna-resultat-1990-2004
-#| fig-cap: "Branche des pensions du régime des salariés non agricoles : ressources, pensions servies et résultat de gestion, millions de dinars courants, 1990-2004."
+#| fig-cap: "Branche des pensions du régime des salariés non agricoles : ressources, pensions servies et résultat de gestion, en dinars courants et rapportés au PIB et aux ressources de la CNSS, 1990-2004."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import rsna_resultat_1990_2004 as rr
 import figtools
 figtools.figure_tabs(
-    rr.fig_resultat(), rr.table(), "cnss-retrospective-ressources-emplois",
+    rr.vues(), rr.table(), "cnss-retrospective-ressources-emplois", "irpp-ratios",
     slug="fig_rsna_resultat_1990_2004",
     caption=("Branche des pensions du régime des salariés non agricoles : ressources, "
-             "pensions servies et résultat de gestion, millions de dinars courants, "
-             "1990-2004"),
+             "pensions servies et résultat de gestion, en dinars courants et rapportés au "
+             "PIB et aux ressources de la CNSS, 1990-2004"),
     note_lecture=(
         "Les montants sont ceux des comptes de bilan de la caisse, en millions de dinars "
         "**courants**. Les pensions servies sont celles de vieillesse, d'invalidité, de "
@@ -798,7 +798,18 @@ figtools.figure_tabs(
         "engage les paliers de sa cotisation propre [@decret94-1429, art. 1-2]. Les "
         "montants de 2000, que la reliure de l'exemplaire consulté masque en partie, sont "
         "rétablis par les totaux et sous-totaux du tableau et par les chiffres restés "
-        "visibles."),
+        "visibles. "
+        "Trois vues se partagent le graphique : en millions de dinars courants ; en "
+        "pourcentage du PIB que retient le ministère des Finances "
+        "[@minfin-indicateurs-fp] ; en pourcentage du total des ressources de la CNSS, "
+        "toutes branches et tous régimes, tel que le donnent ses comptes de bilan. Sur la "
+        "vue au PIB, la ligne pointillée marque le passage, en 1997, de la base 1983 à la "
+        "base 1997 des comptes nationaux, dont les niveaux sont d'environ 10 % plus "
+        "élevés [@ins-cnat-2015] : à montant égal, les ratios en sont abaissés d'environ un "
+        "dixième à partir de 1997, et la rupture n'est pas corrigée. Le total des ressources de la caisse comprend "
+        "les accidents du travail et les maladies professionnelles à partir de 1995, la "
+        "protection sociale des travailleurs à partir de 1997 : le dénominateur s'élargit "
+        "d'autant à ces dates."),
 )
 ```
 

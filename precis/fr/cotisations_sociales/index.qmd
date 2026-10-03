@@ -858,17 +858,18 @@ Les comptes de bilan de la caisse remontent jusqu'en 1990 et ventilent les cotis
 
 ```{python}
 #| label: fig-cotisations-branches-1990-2004
-#| fig-cap: "Cotisations de la CNSS par branche, comptes de bilan, millions de dinars courants, 1990-2004."
+#| fig-cap: "Cotisations de la CNSS par branche, comptes de bilan, en dinars courants et rapportées au PIB et aux ressources de la caisse, 1990-2004."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import cotisations_branches_1990_2004 as cb
 import figtools
 figtools.figure_tabs(
-    cb.fig_branches(), cb.table(), "cnss-retrospective-ressources-emplois", "cnss-cotisations",
+    cb.vues(), cb.table(), "cnss-retrospective-ressources-emplois", "cnss-cotisations",
+    "irpp-ratios",
     slug="fig_cotisations_branches_1990_2004",
-    caption=("Cotisations de la CNSS par branche, comptes de bilan, millions de dinars "
-             "courants, 1990-2004"),
+    caption=("Cotisations de la CNSS par branche, comptes de bilan, en dinars courants et "
+             "rapportées au PIB et aux ressources de la caisse, 1990-2004"),
     note_lecture=(
         "Les barres empilent les cotisations de chaque branche, en millions de dinars "
         "**courants**, pour l'ensemble des régimes de la caisse ; la participation "
@@ -890,7 +891,22 @@ figtools.figure_tabs(
         "reportent, de 2000 à 2004, les cotisations encaissées de la figure précédente : "
         "l'écart va de −1,13 % en 2000 à −0,81 % en 2004. La colonne 1999 est en partie "
         "masquée par la reliure de l'exemplaire consulté : la barre hachurée de cette année "
-        "comprend des estimations, dont l'onglet Données donne le détail."),
+        "comprend des estimations, dont l'onglet Données donne le détail. "
+        "Trois vues se partagent le graphique : en millions de dinars courants ; en "
+        "pourcentage du PIB que retient le ministère des Finances "
+        "[@minfin-indicateurs-fp] ; en pourcentage du total des ressources de la CNSS, "
+        "toutes branches et tous régimes, tel que le donnent ses comptes de bilan. Sur la "
+        "vue au PIB, la ligne pointillée marque le passage, en 1997, de la base 1983 à la "
+        "base 1997 des comptes nationaux, dont les niveaux sont d'environ 10 % plus "
+        "élevés [@ins-cnat-2015] : à montant égal, les ratios en sont abaissés d'environ un "
+        "dixième à partir de 1997, et la rupture n'est pas corrigée. Le total des ressources de la caisse comprend "
+        "les accidents du travail et les maladies professionnelles à partir de 1995, la "
+        "protection sociale des travailleurs à partir de 1997 : le dénominateur s'élargit "
+        "d'autant à ces dates. Les cotisations de chaque branche s'ajoutent au "
+        "dénominateur en même temps qu'au numérateur. Les losanges des cotisations "
+        "encaissées ne figurent que sur la vue en dinars : rapportés aux ressources des "
+        "comptes de bilan, ils mêleraient deux comptabilités. Les barres de 1999 sont "
+        "hachurées dans les trois vues."),
 )
 ```
 

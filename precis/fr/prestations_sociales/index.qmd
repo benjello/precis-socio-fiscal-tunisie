@@ -259,22 +259,23 @@ Trois conséquences. Les taux de 18, 16 et 14 % datent de **1976** et non de 198
 
 Le plafond de l'assiette est fixé en dinars par la loi, et non en multiple du salaire minimum : à la différence d'une limite indexée, il ne suit l'évolution des salaires que lorsqu'une loi le réécrit.
 
-Les comptes de bilan de la CNSS donnent, de 1990 à 2004, ce que la caisse verse au titre de ces prestations [@cnss-retrospective-1990-2004]. Sur toute cette période, les taux par rang et le plafond de l'assiette sont ceux qu'applique la loi n° 88-38 depuis le 1^er^ janvier 1989 (@tbl-af-evolution). La figure suivante montre la dépense par régime et par prestation, en dinars courants, et son total en dinars constants de 1990, déflaté par l'indice des prix à la consommation familiale [@ins-annuaire] (@fig-cnss-allocations-familiales).
+Les comptes de bilan de la CNSS donnent, de 1990 à 2004, ce que la caisse verse au titre de ces prestations [@cnss-retrospective-1990-2004]. Sur toute cette période, les taux par rang et le plafond de l'assiette sont ceux qu'applique la loi n° 88-38 depuis le 1^er^ janvier 1989 (@tbl-af-evolution). La figure suivante montre la dépense par régime et par prestation, en dinars courants, et son total en dinars constants de 1990, déflaté par l'indice des prix à la consommation familiale [@ins-annuaire], puis la même dépense rapportée au PIB et aux ressources de la caisse (@fig-cnss-allocations-familiales).
 
 ```{python}
 #| label: fig-cnss-allocations-familiales
-#| fig-cap: "Allocations familiales et majoration pour salaire unique versées par la CNSS, millions de dinars courants et constants de 1990, 1990-2004."
+#| fig-cap: "Allocations familiales et majoration pour salaire unique versées par la CNSS, en dinars courants et constants de 1990 et rapportées au PIB et aux ressources de la caisse, 1990-2004."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import cnss_allocations_familiales as caf
 import figtools
 figtools.figure_tabs(
-    caf.fig_allocations(), caf.table(),
-    "cnss-retrospective-ressources-emplois", "ins-annuaire-ipc",
+    caf.vues(), caf.table(),
+    "cnss-retrospective-ressources-emplois", "ins-annuaire-ipc", "irpp-ratios",
     slug="fig_cnss_allocations_familiales",
     caption=("Allocations familiales et majoration pour salaire unique versées par la "
-             "CNSS, millions de dinars courants et constants de 1990, 1990-2004"),
+             "CNSS, en dinars courants et constants de 1990 et rapportées au PIB et aux "
+             "ressources de la caisse, 1990-2004"),
     note_lecture=(
         "Les barres empilent, en millions de dinars **courants**, les allocations "
         "familiales du régime des salariés non agricoles, celles du régime agricole "
@@ -290,7 +291,20 @@ figtools.figure_tabs(
         "comptent ni les allocataires ni les enfants : la baisse est celle de la dépense, "
         "non du montant servi par enfant. La colonne 1999 est en partie masquée par la "
         "reliure de l'exemplaire consulté : la barre hachurée et le point creux de cette "
-        "année comprennent des estimations, dont l'onglet Données donne le détail."),
+        "année comprennent des estimations, dont l'onglet Données donne le détail. "
+        "Trois vues se partagent le graphique : en millions de dinars, celle qui vient "
+        "d'être décrite ; en pourcentage du PIB que retient le ministère des Finances "
+        "[@minfin-indicateurs-fp] ; en pourcentage du total des ressources de la CNSS, "
+        "toutes branches et tous régimes, tel que le donnent ses comptes de bilan. Sur la "
+        "vue au PIB, la ligne pointillée marque le passage, en 1997, de la base 1983 à la "
+        "base 1997 des comptes nationaux, dont les niveaux sont d'environ 10 % plus "
+        "élevés [@ins-cnat-2015] : à montant égal, les ratios en sont abaissés d'environ un "
+        "dixième à partir de 1997, et la rupture n'est pas corrigée. Le total des ressources de la caisse comprend "
+        "les accidents du travail et les maladies professionnelles à partir de 1995, la "
+        "protection sociale des travailleurs à partir de 1997 : le dénominateur s'élargit "
+        "d'autant à ces dates. Ces deux vues se passent de déflateur, numérateur et "
+        "dénominateur étant des dinars de la même année ; leurs barres de 1999 sont "
+        "hachurées comme dans la première."),
 )
 ```
 
