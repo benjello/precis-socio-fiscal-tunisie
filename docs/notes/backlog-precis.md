@@ -309,11 +309,15 @@ il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
   (#331, #333), les cinq fichiers de `fiscalite` (#334), `remunerations_publiques/index` et
   `_demo_figure_onglets` (#335), `retraites/index` (#336) ; parité, cellules et rendu arabe
   vérifiés, et six intertitres des retraites recollés à la ligne précédente remis en titres.
-  **Reste `remunerations_publiques/_regime_indiciaire`** (1 cellule sur 10 en arabe) : deux
-  passes, au même résultat, rejettent la traduction parce que les cellules `fig-salaire-moyen`
-  et `fig-emploi-public` ne compilent plus. Ce sont les deux dont la `note_lecture`, chaîne
-  Python répartie sur une vingtaine de lignes, contient des guillemets « » ; la réparation des
-  guillemets intérieurs n'y suffit pas. À reprendre côté outil avant toute relance.
+  Le dixième, `remunerations_publiques/_regime_indiciaire`, a d'abord été rejeté deux fois : les
+  cellules `fig-salaire-moyen` et `fig-emploi-public`, dont la `note_lecture` porte des « », ne
+  compilaient plus. Côté outil (#338, #339), le code des cellules est désormais masqué avant
+  l'envoi : le modèle ne voit que le texte des chaînes, d'un tenant, et le code est réinjecté à
+  l'identique. `translate_sync` rétablit aussi les liens relatifs entre livres et la ligne vide
+  devant les titres. Les quatre chapitres des rémunérations publiques (`_regime_indiciaire`,
+  `_regime_conventionnel`, `_regime_marche_controle`, `_regime_statutaire_autonome`) ont été
+  retraduits en entier le 3 octobre (#340) : parité, 10 cellules sur 10, liens et citations
+  identiques au français, rendu arabe sans citation non résolue et avec toutes ses figures.
 
 - **Zotero** : le rangement a été corrigé le 29 septembre (535 références présentes,
   aucun défaut restant alors). Depuis, deux nouvelles clés du livre « Prestations
@@ -326,12 +330,9 @@ il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
 - **Tableaux engendrés** : la règle est que tout tableau de paramètres vienne des dépôts
   openfisca par un générateur. Retraites et Prestations sociales y dérogent provisoirement.
 - **Version arabe** : produite par la CI ; rendre tout livre traduit avant de fusionner
-  la PR de traduction. `uv run python scripts/traduction_en_retard.py --detail` signale
-  **4 fichiers français en avance sur l'arabe** au 3 octobre, tous des rémunérations
-  publiques : `_regime_indiciaire` (ci-dessus), `_regime_conventionnel`,
-  `_regime_marche_controle` et `_regime_statutaire_autonome`. Le plafond
-  de dépense Gemini avait bloqué le rattrapage en septembre : le vérifier à nouveau
-  avant toute relance au 1er octobre, puis contrôler le rendu et la parité.
+  la PR de traduction. `uv run python scripts/traduction_en_retard.py --detail` ne signale
+  **aucun fichier français en avance sur l'arabe** au 3 octobre, après le rattrapage des
+  rémunérations publiques (#340).
 - **Garde-fou de troncature — CORRIGÉ le 20 septembre.** Il était enveloppé dans
   `if old_target_text:` et ne s'exécutait donc pas en retraduction complète, le mode où la
   troncature est la plus probable. Mesuré sur le vrai script : un chapitre arabe de 175 lignes
