@@ -758,15 +758,11 @@ def main() -> int:
             if df is None or df.empty:
                 print(f"✗ {langue}/{nom} : paramètre introuvable ou vide.")
                 return 1
-            premier, *autres = LIVRES.get(nom, (LIVRE,))
-            for livre in (premier, *autres):
-                manquantes = ot.cles_manquantes(df, RACINE / langue / livre)
-                if manquantes:
-                    print(f"✗ {langue}/{livre}/{nom} : clés absentes de la bibliographie — "
-                          f"{', '.join(manquantes)}")
-                    return 1
-            sortie = RACINE / langue / premier / "tables"
-            ot.ecrire_tableau(sortie / nom, df, liens, langue, autres_livres=tuple(autres))
+            erreur = ot.ecrire_dans_livres(RACINE, langue, LIVRES.get(nom, (LIVRE,)), nom,
+                                           df, liens)
+            if erreur:
+                print(erreur)
+                return 1
         print(f"✓ {langue} : {len(TABLEAUX)} tableaux")
     return serie_atmp_avec_liens()
 

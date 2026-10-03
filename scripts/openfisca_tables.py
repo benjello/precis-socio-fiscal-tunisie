@@ -294,6 +294,27 @@ def cles_manquantes(df: "pd.DataFrame", dossier_livre: str | Path) -> list[str]:
     return sorted(citees - connues)
 
 
+def ecrire_dans_livres(racine: str | Path, langue: str, livres: tuple[str, ...], nom: str,
+                       df: "pd.DataFrame", liens: list[tuple[str, str | None]],
+                       entete: str = "") -> str | None:
+    """Écrit un tableau dans `precis/<langue>/<livre>/tables/` pour chaque livre de `livres`.
+
+    Le premier livre est celui du tableau ; les suivants le reçoivent en réemploi. Avant
+    d'écrire quoi que ce soit, contrôle que les clés de citation résolvent dans CHAQUE livre :
+    rend le message d'erreur à afficher, ou None si tout est écrit.
+    """
+    racine = Path(racine)
+    for livre in livres:
+        absentes = cles_manquantes(df, racine / langue / livre)
+        if absentes:
+            return (f"✗ {langue}/{livre}/{nom} : clés absentes de la bibliographie — "
+                    f"{', '.join(absentes)}")
+    premier, *autres = livres
+    ecrire_tableau(racine / langue / premier / "tables" / nom, df, liens, langue,
+                   entete=entete, autres_livres=tuple(autres))
+    return None
+
+
 def charge_parametre(chemin_relatif: str, paquet: str | None = None) -> dict[str, Any] | None:
     """Charge un YAML de paramètre, chemin relatif à la racine du paquet.
 

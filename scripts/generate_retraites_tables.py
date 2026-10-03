@@ -727,6 +727,14 @@ MOTS_LOT_A = {
                       "de l'agent",
         "sv_cinq": "Part du conjoint à partir de cinq orphelins",
         "pension_agent": "{taux} de la pension de l'agent",
+        "regime": "Régime", "reference": "Salaire minimum de référence",
+        "reg_rtns": "Travailleurs non salariés",
+        "reg_raci": "Artistes, créateurs et intellectuels",
+        "reg_rtte": "Tunisiens à l'étranger",
+        "ref_smig": "SMIG × {h} heures", "ref_smag": " ou SMAG × {j} jours",
+        "lien_classes": "{regime} — classes de revenus, en multiples du salaire minimum",
+        "lien_heures": "{regime} — durée annuelle à laquelle le SMIG est rapporté",
+        "lien_jours": "{regime} — durée annuelle à laquelle le SMAG est rapporté",
     },
     "ar": {
         "grandeur": "المقدار", "valeur": "القيمة", "effet": "بداية السريان", "texte": "النصّ",
@@ -774,6 +782,16 @@ MOTS_LOT_A = {
         "sv_plafond": "سقف مجموع جرايات الباقين على قيد الحياة، من جراية العون",
         "sv_cinq": "نصيب القرين ابتداءً من خمسة أيتام",
         "pension_agent": "{taux} من جراية العون",
+        "regime": "النظام", "reference": "الأجر الأدنى المرجعي",
+        "reg_rtns": "العملة غير الأجراء",
+        "reg_raci": "الفنانون والمبدعون والمثقفون",
+        "reg_rtte": "التونسيون بالخارج",
+        "ref_smig": "الأجر الأدنى المضمون × {h} ساعة",
+        "ref_smag": " أو الأجر الأدنى الفلاحي المضمون × {j} يوم",
+        "lien_classes": "{regime} — شرائح الدخل، بمضاعفات الأجر الأدنى",
+        "lien_heures": "{regime} — المدة السنوية التي يُحتسب على أساسها الأجر الأدنى المضمون",
+        "lien_jours": "{regime} — المدة السنوية التي يُحتسب على أساسها الأجر الأدنى الفلاحي "
+                      "المضمون",
     },
 }
 
@@ -1306,7 +1324,53 @@ def tableaux_lot_a(langue):
         }[langue]
         return ot.tableau_gabarit(entetes, lignes, langue)
 
+    def classes_revenu():
+        """Les classes de revenus des trois régimes à assiette forfaitaire, à l'état en vigueur.
+
+        Une ligne par régime, une colonne par rang de classe ; une classe que le régime n'a
+        pas reste vide. Écrit au livre « Cotisations sociales », dont c'est l'assiette.
+        """
+        import pandas as pd
+
+        mm = MOTS[langue]
+        regimes = (
+            (m["reg_rtns"], f"{RTNS}/revenu_reference", 10, "decret95-1166, art. 7", True),
+            (m["reg_raci"], f"{RACI}/revenu_reference", 10, "decret2003-894, art. 5", False),
+            (m["reg_rtte"], f"{RTTE}/revenu_reference", 4, "decret89-107, art. 6", False),
+        )
+        lignes = []
+        for nom, noeud, nombre, cle, agricole in regimes:
+            ot.releve_note(f"{noeud}/classes", m["lien_classes"].format(regime=nom))
+            ligne = {m["regime"]: nom}
+            effets = []
+            heures = ot.en_vigueur(ot.serie_datee(f"{noeud}/heures_annuelles_smig.yaml"), ETAT)
+            ot.releve_note(f"{noeud}/heures_annuelles_smig.yaml",
+                           m["lien_heures"].format(regime=nom))
+            reference = m["ref_smig"].format(h=ot.formate_dinars(heures[1]))
+            if agricole:
+                jours = ot.en_vigueur(ot.serie_datee(f"{noeud}/jours_annuels_smag.yaml"), ETAT)
+                ot.releve_note(f"{noeud}/jours_annuels_smag.yaml",
+                               m["lien_jours"].format(regime=nom))
+                reference += m["ref_smag"].format(j=ot.formate_dinars(jours[1]))
+            ligne[m["reference"]] = reference
+            for k in range(1, 11):
+                if k > nombre:
+                    ligne[mm["classe"].format(k=k)] = ot.VIDE
+                    continue
+                point = ot.en_vigueur(ot.serie_datee(f"{noeud}/classes/classe_{k}.yaml"), ETAT)
+                if point is None or point[1] is None:
+                    print(f"✗ {noeud}/classes/classe_{k} : aucune valeur en vigueur")
+                    return None
+                effets.append(point[0])
+                ligne[mm["classe"].format(k=k)] = f.coefficient(point[1])
+            ligne = {m["regime"]: nom, m["effet"]: date(max(effets)),
+                     **{c: v for c, v in ligne.items() if c != m["regime"]}}
+            ligne[m["texte"]] = f"[@{cle}]"
+            lignes.append(ligne)
+        return pd.DataFrame(lignes)
+
     return {
+        "classes_revenu.md": classes_revenu,
         "rsna_reference.md": rsna_reference,
         "rsna_invalidite.md": rsna_invalidite,
         "rsna_survivants.md": rsna_survivants,
@@ -1338,6 +1402,19 @@ def verifie_texte(df, colonne: str) -> str | None:
     return None
 
 
+# Livres où chaque tableau est écrit, quand ce n'est pas celui des retraites seul : la
+# fabrique reste unique, le tableau est émis dans chaque livre (`ot.ecrire_dans_livres`).
+LIVRE = "retraites"
+LIVRES = {
+    # Les indemnités familiales du secteur public : accessoire de la pension ici, prestation
+    # familiale de l'agent en activité au livre « Prestations sociales ».
+    "cnrps_indemnites_familiales.md": (LIVRE, "prestations_sociales"),
+    # Les classes de revenus des trois régimes à assiette forfaitaire : l'assiette des
+    # cotisations au livre « Cotisations sociales ».
+    "classes_revenu.md": ("cotisations_sociales",),
+}
+
+
 def main() -> int:
     minimum = ot.PAQUETS[PAQUET]["version_minimale"]
     if not ot.openfisca_utilisable():
@@ -1360,12 +1437,11 @@ def main() -> int:
             if manquante is not None:
                 print(f"✗ {langue}/{nom} : date d'effet sans clé de citation — {manquante}")
                 return 1
-            absentes = ot.cles_manquantes(df, RACINE / langue / "retraites")
-            if absentes:
-                print(f"✗ {langue}/{nom} : clés absentes de la bibliographie — "
-                      f"{', '.join(absentes)}")
+            erreur = ot.ecrire_dans_livres(RACINE, langue, LIVRES.get(nom, (LIVRE,)), nom,
+                                           df, liens)
+            if erreur:
+                print(erreur)
                 return 1
-            ot.ecrire_tableau(sortie / nom, df, liens, langue)
         print(f"✓ {langue} : {len(fabriques)} tableaux")
     # Chaque série est émise quoi qu'il arrive aux autres, et le code de retour les
     # combine : une série vide ne doit pas en masquer une autre.

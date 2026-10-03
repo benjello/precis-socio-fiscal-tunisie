@@ -123,7 +123,15 @@ Pour les travailleurs non salariés, les cotisations sont assises sur un **reven
 
 Pour les artistes, créateurs et intellectuels, le **décret n° 2003-894 du 21 avril 2003** [@decret2003-894] retient un revenu forfaitaire, produit d'un coefficient de classe par le SMIG de 48 heures rapporté à 2 400 heures par an, sans pouvoir être inférieur à deux fois ce SMIG. Les dix classes vont du coefficient 2 au coefficient 18. Les cotisations sont trimestrielles.
 
-Pour les Tunisiens à l'étranger, l'assiette est forfaitaire, produit d'un coefficient de classe par le SMIG de 48 heures rapporté à 2 400 heures par an, l'assuré se plaçant à son choix dans l'une des quatre classes de coefficient 2, 4, 6 ou 9 [@decret89-107, art. 6].
+Pour les Tunisiens à l'étranger, l'assiette est forfaitaire, produit d'un coefficient de classe par le SMIG de 48 heures rapporté à 2 400 heures par an, l'assuré se plaçant à son choix dans l'une des quatre classes de coefficient 2, 4, 6 ou 9 [@decret89-107, art. 6]. Les coefficients des trois régimes sont rassemblés au @tbl-classes-revenu.
+
+```{python}
+#| echo: false
+#| output: asis
+table("classes_revenu",
+      "Classes de revenus des régimes à assiette forfaitaire, en multiples du salaire minimum",
+      "tbl-classes-revenu")
+```
 
 #### Le salaire minimum agricole {#sec-cot-smag}
 
