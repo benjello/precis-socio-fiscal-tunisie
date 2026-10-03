@@ -302,6 +302,15 @@ il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
 
 ## Ce qui traverse les cinq livres
 
+- **Traductions arabes en retard sur leur code (relevé du 3 octobre 2026).** Le garde-fou des
+  cellules Python de `translate_sync` signale dix chapitres arabes dont les cellules manquent ou
+  diffèrent du français : `fiscalite/_droits_consommation`, `_impot_revenu` (13 cellules sur 18),
+  `_impot_societes` (0 sur 3), `_tva` (étiquette `#| label` perdue), `fiscalite/index` ;
+  `remunerations_publiques/_demo_figure_onglets`, `_regime_indiciaire` (1 sur 10), `index`
+  (ancienne série) ; `retraites/_secteur_public` (6 sur 10), `retraites/index` (0 sur 5). Remède :
+  retraduction complète de chacun (workflow `translation-sync`, `traduction_complete`), désormais
+  possible même pour les plus longs grâce au découpage par sections.
+
 - **Zotero** : le rangement a été corrigé le 29 septembre (535 références présentes,
   aucun défaut restant alors). Depuis, deux nouvelles clés du livre « Prestations
   sociales » — `loi2017-47` et `arrete-2025-07-10-appui-occasionnel` — et la clé
