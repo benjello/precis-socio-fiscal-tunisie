@@ -62,7 +62,7 @@ Fin.
 '''
 
 # Traduction simulée du texte masqué : le modèle rend les « » par des guillemets droits,
-# y compris pour la paire qui chevauche deux littéraux, et perd un blanc de bord.
+# y compris pour la paire qui chevauchait deux littéraux dans la source.
 TRADUCTIONS = {
     "Texte d'introduction.": "نص تمهيدي.",
     "Taux d'équilibre du régime, 1975-2020.": "نسبة توازن النظام، 1975-2020.",
@@ -73,7 +73,7 @@ TRADUCTIONS = {
         'من 14,05 % إلى 20 %.** ومنحنى النظام التكميلي ("نسبة التوازن، ',
     "avec le régime complémentaire », trait fin) suit la première. ":
         'مع النظام التكميلي"، خط رفيع) يتبع الأول. ',
-    "Les dinars sont ": "الدنانير",
+    "Les dinars sont ": "الدنانير ",
     "courants.\\n\\n": "جارية.\\n\\n",
     "La lecture « en points » reste indicative.": 'تبقى القراءة "بالنقاط" إرشادية.',
     "Suite": "تتمة",
@@ -138,8 +138,11 @@ class ReinjectionTest(unittest.TestCase):
         compile("\n".join(ligne for ligne in code.split("\n") if not ligne.startswith("#|")),
                 "<cellule>", "exec")
         # La paire qui chevauche deux littéraux s'ouvre puis se ferme : « … », jamais « … «.
-        self.assertIn('(«نسبة التوازن، "\n', code)
-        self.assertIn('"مع النظام التكميلي»، خط رفيع)', code)
+        self.assertIn("(«نسبة", code)
+        self.assertIn("التكميلي»، خط رفيع)", code)
+        # Autant de littéraux qu'à la source, aux mêmes retours à la ligne.
+        note = code[code.index("note_lecture=("):code.index("    ),")]
+        self.assertEqual(note.count('\n        "'), 6)
         self.assertIn("«نسبة التوازن (الجرايات ÷ كتلة الأجور المصرح بها)»", code)
         self.assertIn("«بالنقاط»", code)
         self.assertNotIn('""', code.replace('"""', ""))
@@ -151,9 +154,30 @@ class ReinjectionTest(unittest.TestCase):
         # Et le garde-fou existant n'a plus rien à redire.
         self.assertEqual(silencieux(verifier_cellules, SOURCE, rendu)[0], rendu)
 
+    def test_litteraux_concatenes_montres_d_un_tenant(self):
+        # Le 3 octobre 2026, montrés un à un entre deux jetons, les littéraux d'une note
+        # ont été recousus par le modèle, qui a perdu trois jetons intermédiaires.
+        self.assertIn("passe ensuite de 14,05 %", self.masque)
+        self.assertIn("Les dinars sont courants.", self.masque)
+        self.assertEqual(len(JETON_CODE_RE.findall(self.masque)), 4)
+
+    def test_phrases_deplacees_d_un_litteral_a_l_autre(self):
+        source = ('```{python}\nf(note=(\n    "Une première phrase "\n'
+                  '    "coupée en deux."\n))\n```\n')
+        table = TableCode()
+        masque = masquer_cellules(source, table)
+        traduction = masque.replace("Une première phrase coupée en deux.",
+                                    "جملة أولى طويلة جدا مقسومة إلى جزأين اثنين.")
+        rendu, _ = silencieux(reinjecter_cellules, source, traduction, table)
+        self.assertIn('    "جملة أولى طويلة جدا مقسومة "\n    "إلى جزأين اثنين."\n', rendu)
+
     def test_blanc_de_bord_retabli(self):
-        rendu, _ = silencieux(reinjecter_cellules, SOURCE, traduire(self.masque), self.table)
-        self.assertIn('"الدنانير "\n', cellule(rendu))
+        source = 'A.\n\n```{python}\nf(note="Texte un ", x=1)\n```\n'
+        table = TableCode()
+        masque = masquer_cellules(source, table)
+        rendu, _ = silencieux(reinjecter_cellules, source,
+                              masque.replace("Texte un ", "نص"), table)
+        self.assertIn('f(note="نص ", x=1)', rendu)
 
     def test_jetons_dans_un_autre_ordre_refuses(self):
         traduction = traduire(self.masque)
