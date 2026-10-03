@@ -281,6 +281,120 @@ def restore_anchors(source_text, translated_text):
     return restaure
 
 
+# Cible relative d'un lien ou d'une image : ni `#…` (affaire de `restore_anchors`), ni
+# schéma (`https:`, `mailto:`, affaire de `restore_urls`).
+LIEN_RELATIF_RE = re.compile(r"(\]\()((?!#)(?![A-Za-z][A-Za-z0-9+.-]*:)[^()\s]+)(\))")
+
+
+def restore_relative_links(source_text, translated_text):
+    """Rétablit les cibles relatives des liens — `](../livre/page.html#ancre)`,
+    `](_chapitre.qmd)`, `![](figures/x.png)` — dans leur forme d'origine.
+
+    Une cible relative n'est pas de la prose, et le modèle l'abîme comme une URL : un
+    segment de chemin déformé (`../cotisations_socales/` pour `../cotisations_sociales/`)
+    donne un lien mort d'un livre à l'autre, que rien ne signale au rendu. La cible est
+    rétablie ENTIÈRE, fragment compris : `restore_anchors` ne voit que les `](#…)`, pas
+    l'ancre de `../x.html#sec-…`.
+
+    Même prudence que `restore_urls` : positionnelle (n-ième cible relative de la
+    traduction ↔ n-ième de la source), et seulement si les deux textes en portent le même
+    nombre. Un lien de glossaire ajouté ou retiré par le modèle suffit à rompre l'égalité :
+    la fonction s'abstient alors, et le dit. Chaque correction est journalisée.
+    """
+    src = [m.group(2) for m in LIEN_RELATIF_RE.finditer(source_text)]
+    dst = [m.group(2) for m in LIEN_RELATIF_RE.finditer(translated_text)]
+    if len(src) != len(dst):
+        print(f"  liens relatifs : {len(src)} à la source, {len(dst)} dans la traduction — "
+              f"correspondance non établie, aucune restauration "
+              f"(le contrôle de parité tranchera).")
+        return translated_text
+    if src == dst:
+        return translated_text
+    cibles = iter(src)
+
+    def swap(match):
+        cible = next(cibles)
+        if cible != match.group(2):
+            print(f"  lien relatif restauré : « {match.group(2)} » → « {cible} ».")
+        return f"{match.group(1)}{cible}{match.group(3)}"
+
+    return LIEN_RELATIF_RE.sub(swap, translated_text)
+
+
+TITRE_RE = re.compile(r"^#{1,6}\s")
+ANCRE_DE_TITRE_RE = re.compile(r"\{#([\w:.-]+)[^}]*\}\s*$")
+
+
+def _titres(lignes):
+    """[(indice de ligne, ancre ou None)] des titres ATX, hors code et commentaire HTML."""
+    titres, dans_code, dans_commentaire = [], None, False
+    for i, ligne in enumerate(lignes):
+        nue = ligne.strip()
+        if not dans_commentaire:
+            m = re.match(r"^(`{3,}|~{3,})", nue)
+            if m:
+                if dans_code is None:
+                    dans_code = m.group(1)[0] * len(m.group(1))
+                elif re.fullmatch(re.escape(dans_code[0]) + "{%d,}" % len(dans_code), nue):
+                    dans_code = None
+                continue
+        if dans_code is not None:
+            continue
+        if not dans_commentaire and TITRE_RE.match(ligne):
+            m = ANCRE_DE_TITRE_RE.search(ligne)
+            titres.append((i, m.group(1) if m else None))
+        ouvre, ferme = ligne.rfind("<!--"), ligne.rfind("-->")
+        if dans_commentaire:
+            dans_commentaire = ferme < 0 or ouvre > ferme
+        else:
+            dans_commentaire = ouvre >= 0 and ouvre > ferme
+    return titres
+
+
+def restore_heading_spacing(source_text, translated_text):
+    """Réinsère la ligne vide devant un titre de la traduction quand la source en a une.
+
+    Pandoc ne lit un titre que précédé d'une ligne vide : collé à la ligne précédente,
+    `## Invalidité {#sec-cnrps-invalidite}` devient un paragraphe, l'ancre disparaît, et
+    le renvoi `@sec-cnrps-invalidite` ne résout plus. Le cas s'est produit pour six
+    intertitres arabes. Il survient aussi à la jointure de deux morceaux d'un long
+    fichier, quand le modèle retire la ligne vide finale du premier.
+
+    Les titres sont appariés par leur ancre ; ceux qui n'en ont pas, par leur rang, et
+    seulement si les deux textes en portent le même nombre. Les titres en code ou en
+    commentaire sont ignorés. Chaque réinsertion est journalisée.
+    """
+    lignes_src = source_text.split("\n")
+    lignes_trad = translated_text.split("\n")
+
+    def vide_avant(lignes, i):
+        return i == 0 or not lignes[i - 1].strip()
+
+    titres_src = _titres(lignes_src)
+    precede_src = {a: vide_avant(lignes_src, i) for i, a in titres_src if a}
+    sans_ancre_src = [vide_avant(lignes_src, i) for i, a in titres_src if not a]
+    titres_trad = _titres(lignes_trad)
+    sans_ancre_trad = [i for i, a in titres_trad if not a]
+    rang_sans_ancre = ({i: k for k, i in enumerate(sans_ancre_trad)}
+                       if len(sans_ancre_trad) == len(sans_ancre_src) else {})
+
+    a_inserer = []
+    for i, ancre in titres_trad:
+        if vide_avant(lignes_trad, i):
+            continue
+        attendu = (precede_src.get(ancre) if ancre
+                   else (sans_ancre_src[rang_sans_ancre[i]] if i in rang_sans_ancre else None))
+        if attendu:
+            a_inserer.append(i)
+    if not a_inserer:
+        return translated_text
+    for i in reversed(a_inserer):
+        lignes_trad.insert(i, "")
+    print(f"  titres : ligne vide réinsérée devant {len(a_inserer)} titre(s) — "
+          + ", ".join(f"l. {i + 1}" for i in a_inserer) + ".")
+    return "\n".join(lignes_trad)
+
+
 # ---------------------------------------------------------------------------
 # FORMULES MATHÉMATIQUES : masquage avant envoi, réinjection après.
 #
@@ -586,17 +700,24 @@ def reinjecter_formules(source, traduction, table):
     return restitue
 
 
-def diff_masque(ancienne_source, nouvelle_source, chemin, table):
-    """Diff unifié entre deux états de la source, formules masquées.
+def diff_masque(ancienne_source, nouvelle_source, chemin, table, table_code=None):
+    """Diff unifié entre deux états de la source, formules (et code des cellules) masqués.
 
     Le diff de git porte le LaTeX en clair, sur des lignes préfixées de `+`/`-`
     où un bloc `$$…$$` n'est plus reconnaissable : le modèle y verrait les
     formules que l'on masque partout ailleurs, et serait tenté de les recopier.
-    On le recalcule donc dans l'espace masqué, avec la même table.
+    On le recalcule donc dans l'espace masqué, avec les mêmes tables. Il en va de
+    même du code des cellules, que le diff de git exposerait en clair.
     """
     import difflib
-    ancien = masquer_formules(ancienne_source, table).splitlines(keepends=True)
-    nouveau = masquer_formules(nouvelle_source, table).splitlines(keepends=True)
+
+    def masquer(texte):
+        if table_code is not None:
+            texte = masquer_cellules(texte, table_code)
+        return masquer_formules(texte, table)
+
+    ancien = masquer(ancienne_source).splitlines(keepends=True)
+    nouveau = masquer(nouvelle_source).splitlines(keepends=True)
     return "".join(difflib.unified_diff(
         ancien, nouveau, fromfile=f"a/{chemin}", tofile=f"b/{chemin}"))
 
@@ -868,6 +989,251 @@ def verifier_cellules(source, traduction):
     return traduction
 
 
+# ---------------------------------------------------------------------------
+# MASQUAGE DU CODE DES CELLULES : le modèle ne voit que les chaînes à traduire.
+#
+# `verifier_cellules` constate après coup ; il ne sait réparer qu'un cas (les guillemets
+# droits d'une ligne de chaîne). Le 3 octobre 2026, une note de lecture d'une vingtaine
+# de littéraux concaténés, ponctuée de « », est revenue avec des guillemets droits au
+# milieu de littéraux à guillemets droits. On retire donc le code au modèle, comme les
+# formules.
+#
+# DEUX VOIES ÉTAIENT POSSIBLES. (a) Faire traduire les chaînes d'une cellule dans un appel
+# séparé, en JSON, puis les réinsérer échappées : le code n'est jamais exposé, mais chaque
+# fichier coûte un appel de plus, et la note de lecture est traduite hors de la prose
+# qu'elle commente. (b) Masquer le code dans l'appel principal : tout ce qui n'est pas le
+# CORPS d'une chaîne de prose — clôtures, options `#|`, appels, noms de séries, guillemets
+# délimiteurs — devient un jeton opaque `⟪CODEn⟫`, et le modèle traduit le texte qui
+# sépare deux jetons, dans son contexte. C'est (b) qui est retenue : un seul appel, le
+# contexte conservé, et un contrat aussi strict que celui des formules.
+#
+# CE QUI RESTE VISIBLE. Le corps d'un littéral `"…"` (préfixe `r` ou `u` admis ; ni
+# f-chaîne, ni triple guillemet, ni guillemet simple) qui contient au moins un blanc et une
+# lettre — légendes, notes de lecture —, et la valeur entre guillemets des options
+# `#| fig-cap`, `tbl-cap`, `fig-alt`, `fig-subcap`. Un nom de série, un chemin,
+# `"{{< meta date >}}"` restent du code.
+#
+# LE CONTRAT. La SUITE des jetons de la traduction doit être exactement celle de la source :
+# les jetons sont nommés par leur contenu, et une suite réordonnée donnerait du code brouillé
+# qui pourrait encore compiler. Tout écart fait échouer le fichier (`CellulesAlterees`). Le
+# texte rendu entre deux jetons est ensuite ré-échappé : guillemets droits intérieurs rendus
+# « » (la parité court sur toute la cellule, car une paire peut s'ouvrir dans un littéral et
+# se fermer dans le suivant), saut de ligne rendu blanc, barre oblique inverse invalide
+# doublée hors chaîne brute, blancs de bord rétablis comme à la source.
+#
+# ORDRE. Masquer les cellules AVANT les formules : les chaînes brutes portent du LaTeX
+# (`$\tau_0 = 40\,\%$`), qui reçoit ainsi son jeton ⟦MATH⟧. Réinjecter dans l'ordre
+# inverse : formules d'abord (contre la source masquée de ses cellules), cellules ensuite.
+# Les crochets ⟪⟫ diffèrent de ⟦⟧ pour ne pas déclencher le contrôle de résidu des formules.
+# ---------------------------------------------------------------------------
+
+JETON_CODE = "⟪CODE{}⟫"
+JETON_CODE_RE = re.compile(r"⟪CODE(\d+)⟫")
+JETON_CODE_LACHE_RE = re.compile(r"⟪\s*CODE\s*([0-9٠-٩۰-۹]+)\s*⟫")
+RESIDU_CODE_RE = re.compile(r"⟪|⟫")
+CELLULE_ENTIERE_RE = re.compile(r"```\{python\}\n.*?```", re.S)
+OUVERTURE_CELLULE = "```{python}\n"
+OPTION_TRADUITE_RE = re.compile(
+    r'^(#\|\s*(?:fig-cap|tbl-cap|fig-alt|fig-subcap)\s*:\s*")(.*)("\s*)$')
+LITTERAL_PROSE_RE = re.compile(r'([rRuU]?)"(?!"")')
+ECHAPPEMENTS_VALIDES = set("\\'\"abfnrtv01234567xNuU")
+
+CONSIGNE_CODE = """
+JETONS DE CODE : les jetons de la forme ⟪CODE0⟫, ⟪CODE1⟫… remplacent du code. Recopie chaque
+jeton TEL QUEL, sans espace, DANS LE MÊME ORDRE que dans le FICHIER SOURCE et autant de fois
+qu'il y figure. Traduis le texte compris entre deux jetons, et n'y écris jamais de guillemet
+droit " : emploie « ».
+"""
+
+
+class TableCode(TableFormules):
+    """Correspondance segment de code ↔ jeton : une même suite de caractères, un même jeton."""
+
+
+def _corps_de_cellule(cellule):
+    """[(début, fin, brut)] des corps de chaîne à traduire dans le texte d'une cellule.
+
+    `brut` dit si la barre oblique inverse y est littérale (chaîne `r"…"`). Rend None si la
+    cellule ne se découpe pas en lexèmes, ou si un lexème ne se retrouve pas à sa place :
+    elle est alors masquée d'un seul tenant.
+    """
+    import io
+    import tokenize
+    corps, debuts, pos = [], [], 0
+    for ligne in cellule.split("\n"):
+        debuts.append(pos)
+        m = OPTION_TRADUITE_RE.match(ligne)
+        if m and m.group(2):
+            corps.append((pos + m.end(1), pos + m.end(2), False))
+        pos += len(ligne) + 1
+    try:
+        lexemes = list(tokenize.generate_tokens(io.StringIO(cellule).readline))
+    except Exception:  # noqa: BLE001 — TokenError, SyntaxError, IndentationError…
+        return None
+    for lex in lexemes:
+        if lex.type != tokenize.STRING:
+            continue
+        a = debuts[lex.start[0] - 1] + lex.start[1]
+        if cellule[a:a + len(lex.string)] != lex.string:
+            return None
+        m = LITTERAL_PROSE_RE.match(lex.string)
+        if not m or len(lex.string) < len(m.group(0)) + 1 or not lex.string.endswith('"'):
+            continue
+        texte = lex.string[len(m.group(0)):-1]
+        if re.search(r"\s", texte) and re.search(r"[^\W\d_]", texte) and "{{<" not in texte:
+            debut = a + len(m.group(0))
+            corps.append((debut, debut + len(texte), m.group(1) in ("r", "R")))
+    return sorted(corps)
+
+
+def _masquer_cellules(texte, table):
+    """Texte masqué, et la suite [(numéro, corps source, brut, ouvre la cellule)] des jetons.
+
+    `corps source` est le corps de chaîne qui SUIT le jeton dans la source — None pour le
+    dernier jeton d'une cellule, qui porte la clôture fermante.
+    """
+    morceaux, suite, fin = [], [], 0
+    for m in CELLULE_ENTIERE_RE.finditer(texte):
+        cellule = m.group(0)
+        decalage = len(OUVERTURE_CELLULE)
+        corps = _corps_de_cellule(cellule[decalage:-3])
+        if corps is None:
+            print(f"  cellules : {_etiquette(cellule[decalage:])} ne se découpe pas en "
+                  "lexèmes — masquée d'un seul tenant, ses chaînes restent en l'état.")
+            corps = []
+        morceaux.append(texte[fin:m.start()])
+        precedent = 0
+        for i, (a, b, brut) in enumerate(corps):
+            a, b = a + decalage, b + decalage
+            n = table.numero(cellule[precedent:a])
+            morceaux += [JETON_CODE.format(n), cellule[a:b]]
+            suite.append((n, cellule[a:b], brut, i == 0))
+            precedent = b
+        n = table.numero(cellule[precedent:])
+        morceaux.append(JETON_CODE.format(n))
+        suite.append((n, None, False, not corps))
+        fin = m.end()
+    morceaux.append(texte[fin:])
+    return "".join(morceaux), suite
+
+
+def masquer_cellules(texte, table):
+    """Remplace le code de chaque cellule `{python}` par des jetons `⟪CODEn⟫` (voir plus haut)."""
+    return _masquer_cellules(texte, table)[0]
+
+
+def _reechapper(corps, source, brut, ouvrant):
+    """Rend (corps sûr dans un littéral `"…"`, nombre de corrections, parité des « »)."""
+    n = 0
+    if "\n" in corps:
+        corps = re.sub(r"[ \t]*\n[ \t]*", " ", corps)
+        n += 1
+    sortie, i = [], 0
+    while i < len(corps):
+        c = corps[i]
+        if c == "\\":
+            if i + 1 == len(corps):  # barre finale : elle échapperait le guillemet fermant
+                n += 1
+                i += 1
+                continue
+            if brut or corps[i + 1] in ECHAPPEMENTS_VALIDES:
+                sortie.append(corps[i:i + 2])
+            else:
+                sortie.append("\\\\" + corps[i + 1])
+                n += 1
+            i += 2
+            continue
+        if c == '"':
+            sortie.append("«" if ouvrant else "»")
+            ouvrant = not ouvrant
+            n += 1
+        else:
+            sortie.append(c)
+        i += 1
+    corps = "".join(sortie)
+    tete = re.match(r"[ \t]*", source).group(0)
+    queue = re.search(r"[ \t]*$", source).group(0)
+    if tete and corps and not corps[0].isspace():
+        corps, n = tete + corps, n + 1
+    if queue and corps and not corps[-1].isspace():
+        corps, n = corps + queue, n + 1
+    return corps, n, ouvrant
+
+
+def reinjecter_cellules(source, traduction, table):
+    """Remet le code des cellules à la place de ses jetons, ou lève `CellulesAlterees`.
+
+    `source` est le texte source NON masqué de ses cellules. Échecs, tous explicites : suite
+    de jetons différente de celle de la source (perdu, dupliqué, inventé, déplacé), résidu
+    de jeton. Réparations journalisées : chiffres ou espaces dans un jeton, corps de chaîne
+    ré-échappés, clôture ouvrante ou fermante remise en début de ligne.
+    """
+    if not len(table):
+        return traduction
+    _masque, attendue = _masquer_cellules(source, table)
+
+    normalises = 0
+
+    def normaliser(m):
+        nonlocal normalises
+        canon = JETON_CODE.format(int(m.group(1)))  # int() lit aussi les chiffres indo-arabes
+        if m.group(0) != canon:
+            normalises += 1
+        return canon
+
+    traduction = JETON_CODE_LACHE_RE.sub(normaliser, traduction)
+    if normalises:
+        print(f"  cellules : {normalises} jeton(s) de code mal recopié(s), normalisé(s).")
+
+    trouvee = [int(n) for n in JETON_CODE_RE.findall(traduction)]
+    numeros = [n for n, *_ in attendue]
+    if trouvee != numeros:
+        k = next((i for i, (x, y) in enumerate(zip(numeros, trouvee)) if x != y),
+                 min(len(numeros), len(trouvee)))
+        attendu = JETON_CODE.format(numeros[k]) if k < len(numeros) else "rien"
+        trouve = JETON_CODE.format(trouvee[k]) if k < len(trouvee) else "rien"
+        raise CellulesAlterees(
+            f"code des cellules altéré par la traduction : {len(numeros)} jeton(s) de code "
+            f"attendus dans l'ordre de la source, {len(trouvee)} trouvés ; premier écart au "
+            f"rang {k} (attendu {attendu}, trouvé {trouve}). "
+            "Relancer, au besoin en retraduction complète (traduction_complete).")
+
+    parties = JETON_CODE_RE.split(traduction)
+    sortie = [parties[0]]
+    corrections, recollees, ouvrant = 0, 0, True
+    for i, (n, corps_source, brut, ouvre) in enumerate(attendue):
+        if ouvre:
+            ouvrant = True
+            avant = sortie[-1]
+            if avant.rstrip(" \t").endswith("\n"):
+                avant = avant.rstrip(" \t")
+            elif avant:
+                avant += "\n"
+                recollees += 1
+            sortie[-1] = avant
+        sortie.append(table.par_numero[n])
+        intervalle = parties[2 * i + 2]
+        if corps_source is not None:
+            intervalle, k, ouvrant = _reechapper(intervalle, corps_source, brut, ouvrant)
+            corrections += k
+        elif intervalle and not intervalle.startswith("\n"):
+            intervalle = "\n" + intervalle
+            recollees += 1
+        if RESIDU_CODE_RE.search(intervalle):
+            raise CellulesAlterees(
+                f"code des cellules altéré par la traduction : résidu de jeton "
+                f"{intervalle[:60]!r}")
+        sortie.append(intervalle)
+    if corrections:
+        print(f"  cellules : {corrections} correction(s) d'échappement dans les chaînes "
+              "traduites (guillemets droits rendus « », sauts de ligne, barres obliques, "
+              "blancs de bord).")
+    if recollees:
+        print(f"  cellules : {recollees} clôture(s) de cellule remise(s) en début de ligne.")
+    print(f"  cellules : code restitué depuis {len(numeros)} jeton(s).")
+    return "".join(sortie)
+
+
 class DecoupageImpossible(RuntimeError):
     """Les ancres de coupe de la source manquent dans la traduction, ou en désordre."""
 
@@ -1003,19 +1369,29 @@ def main():
         # formule y porte le même jeton. La source d'abord, pour que ses numéros
         # suivent l'ordre du texte. Les variables non masquées restent intactes :
         # `restore_*`, la troncature et le repère de longueur les lisent.
+        # MASQUAGE DU CODE DES CELLULES (voir `masquer_cellules`), AVANT les formules :
+        # les chaînes laissées visibles portent du LaTeX, qui reçoit ainsi son jeton.
+        table_code = TableCode()
+        source_sans_code = masquer_cellules(new_source_text, table_code)
+        ancienne_sans_code = masquer_cellules(old_target_text, table_code)
         table_formules = TableFormules()
-        prompt_source = masquer_formules(new_source_text, table_formules)
-        prompt_old_target = masquer_formules(old_target_text, table_formules)
+        prompt_source = masquer_formules(source_sans_code, table_formules)
+        prompt_old_target = masquer_formules(ancienne_sans_code, table_formules)
         prompt_diff = diff_text
         consigne_formules = ""
-        if len(table_formules):
+        if len(table_formules) or len(table_code):
             if diff_text:
                 ancienne_source = get_git_show(base_sha, file_path)
                 prompt_diff = diff_masque(ancienne_source, new_source_text,
-                                          file_path, table_formules)
+                                          file_path, table_formules, table_code)
+        if len(table_formules):
             consigne_formules = CONSIGNE_FORMULES
             print(f"  formules : {len(table_formules)} formule(s) distincte(s) "
                   f"masquée(s) avant envoi.")
+        if len(table_code):
+            consigne_formules += CONSIGNE_CODE
+            print(f"  cellules : {len(table_code)} segment(s) de code distinct(s) "
+                  f"masqué(s) avant envoi.")
 
         # Dès qu'une traduction existe, on part d'elle — même sans diff.
         # Retraduire de zéro un fichier déjà traduit EFFACE les corrections faites
@@ -1160,15 +1536,32 @@ Fichier à traduire :
             else:
                 translated_text = appeler(prompt)
 
-            # Les formules d'abord : `restore_*` et la troncature comparent à la
+            # La troncature d'abord, dans l'espace masqué : une sortie coupée perd aussi
+            # des jetons, et son diagnostic propre est plus juste que « jeton manquant ».
+            # (Le contrôle est refait plus bas sur le texte restitué.)
+            motif = motif_de_troncature(
+                len(prompt_old_target.splitlines()) or len(prompt_source.splitlines()),
+                len(translated_text.splitlines()),
+                len(prompt_source.splitlines()),
+            )
+            if motif:
+                raise RuntimeError(motif)
+
+            # Les jetons d'abord : `restore_*` et la troncature comparent à la
             # source NON masquée, et un jeton altéré doit faire échouer le fichier
             # avant toute autre réparation (`FormulesAlterees` est rattrapée plus
             # bas comme tout échec : fichier non écrit, sortie en code 1).
-            translated_text = reinjecter_formules(new_source_text, translated_text,
+            # Ordre inverse du masquage : formules d'abord (contre la source masquée de
+            # ses cellules, puisque des formules vivent dans leurs chaînes), code ensuite.
+            translated_text = reinjecter_formules(source_sans_code, translated_text,
                                                   table_formules)
+            translated_text = reinjecter_cellules(new_source_text, translated_text,
+                                                  table_code)
             translated_text = restore_locators(new_source_text, translated_text)
             translated_text = restore_urls(new_source_text, translated_text)
             translated_text = restore_anchors(new_source_text, translated_text)
+            translated_text = restore_relative_links(new_source_text, translated_text)
+            translated_text = restore_heading_spacing(new_source_text, translated_text)
 
             # GARDE-FOU CONTRE LA TRADUCTION TRONQUÉE.
             #
