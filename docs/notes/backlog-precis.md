@@ -320,6 +320,10 @@ il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
   `_regime_conventionnel`, `_regime_marche_controle`, `_regime_statutaire_autonome`) ont été
   retraduits en entier le 3 octobre (#340) : parité, 10 cellules sur 10, liens et citations
   identiques au français, rendu arabe sans citation non résolue et avec toutes ses figures.
+  Les jetons corrigés à la main sur #331, #333 et #343 — clés déformées (`@looi81-6`), renvoi
+  traduit (`@tbl-somme-three-texts`), locateurs traduits (« art. 48 إلى 50 »), liens de
+  glossaire ajoutés — sont désormais rétablis par `translate_sync` avant le contrôle de parité
+  (`restore_citation_keys`, `remove_extra_glossary_links`, `restore_locators` apparié par clé).
 
 - **Zotero** : le rangement a été corrigé le 29 septembre (535 références présentes,
   aucun défaut restant alors). Depuis, deux nouvelles clés du livre « Prestations

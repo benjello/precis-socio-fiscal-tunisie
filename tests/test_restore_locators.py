@@ -6,10 +6,9 @@ la consigne — « art. 5 à 7 » devient « art. 5 إلى 7 » —, et c'est as
 être défait ici plutôt que renégocié à chaque passe.
 
 Comme `restore_urls`, cette fonction réécrit du contenu publié. Elle est plus délicate
-encore : sa règle de prudence compare les clés ET leur ordre, et sa restauration est
-POSITIONNELLE — le générateur de locateurs est consommé à chaque correspondance, y
-compris celles qu'on ne remplace pas. Cet alignement est invisible à la lecture ; ces
-tests le verrouillent.
+encore : sa restauration apparie chaque citation à celle de la source qui porte la
+même clé au même rang. Cet alignement est invisible à la lecture ; ces tests le
+verrouillent.
 """
 
 import sys
@@ -38,10 +37,10 @@ class RestaurationTest(unittest.TestCase):
                          "أ [@a-1, art. 2] و ب [@b-2, art. 3 à 4].\n")
 
     def test_meme_cle_deux_fois_restauration_positionnelle(self):
-        """La correspondance est POSITIONNELLE, pas par clé.
+        """La correspondance se fait par clé ET par rang.
 
         Deux citations de la même référence portant des locateurs différents doivent
-        recevoir chacune le sien, dans l'ordre. Une restauration par clé les
+        recevoir chacune le sien, dans l'ordre. Une restauration par clé seule les
         confondrait — et attacherait le mauvais article à la bonne loi.
         """
         source = "D'abord [@loi-83-112, art. 5] puis [@loi-83-112, art. 9 à 11].\n"
@@ -56,17 +55,34 @@ class AbstentionTest(unittest.TestCase):
 
     Le contrôle de parité signalera l'écart. Mieux vaut une divergence visible qu'un
     locateur recopié au mauvais endroit.
+
+    Depuis octobre 2026 l'appariement se fait CLÉ PAR CLÉ (rang de la citation parmi
+    celles de la même clé), et non plus sur la suite entière des clés : une clé
+    abîmée ou une citation déplacée ailleurs dans le fichier ne bloque plus les
+    autres locateurs. L'abstention ne porte plus que sur la clé dont le compte
+    diffère, hors des plages que l'alignement des clés établit.
     """
 
-    def test_nombre_de_citations_different(self):
-        source = "A [@a-1, art. 2] et B [@b-2, art. 3].\n"
+    def test_meme_cle_comptes_differents(self):
+        source = "A [@a-1, art. 2] et B [@a-1, art. 3].\n"
         traduit = "أ [@a-1, art. 2 " + AR + " 3].\n"
         self.assertEqual(restore_locators(source, traduit), traduit)
 
+    def test_citation_fusionnee_cle_par_cle(self):
+        """Ancien `test_nombre_de_citations_different` : la citation de `b-2` a
+        disparu, mais `a-1` apparaît une fois de chaque côté — son locateur est
+        restauré. L'absence de `b-2` reste au contrôle de parité."""
+        source = "A [@a-1, art. 2] et B [@b-2, art. 3].\n"
+        traduit = "أ [@a-1, art. 2 " + AR + " 3].\n"
+        self.assertEqual(restore_locators(source, traduit), "أ [@a-1, art. 2].\n")
+
     def test_ordre_des_cles_different(self):
+        """Ancien test d'abstention : l'arabe a interverti deux citations. Par clé,
+        chacune retrouve son locateur — ce que l'appariement global refusait."""
         source = "A [@a-1, art. 2] et B [@b-2, art. 3].\n"
         traduit = "ب [@b-2, art. 3 " + AR + " 4] و أ [@a-1, art. 2].\n"
-        self.assertEqual(restore_locators(source, traduit), traduit)
+        self.assertEqual(restore_locators(source, traduit),
+                         "ب [@b-2, art. 3] و أ [@a-1, art. 2].\n")
 
 
 class PérimètreTest(unittest.TestCase):
