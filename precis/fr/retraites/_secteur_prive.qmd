@@ -761,6 +761,60 @@ Ces chiffres sont calculés à partir des annuaires statistiques de la caisse [@
 
 Le taux d'équilibre est enfin une grandeur instantanée, qui rapporte les seules pensions aux seuls salaires déclarés : il ne tient compte ni des réserves du régime ni de ses autres ressources.
 
+Les comptes de la caisse en donnent une autre mesure, qui inclut ces autres ressources. Sa rétrospective financière publie, de 1990 à 2004, les ressources, les emplois et le résultat de gestion de la branche des pensions du régime [@cnss-retrospective-1990-2004]. La figure suivante montre, en haut, les cotisations de la branche, les pensions qu'elle sert et ses produits financiers ; en bas, son résultat de gestion, excédent ou déficit de chaque année (@fig-rsna-resultat-1990-2004).
+
+```{python}
+#| label: fig-rsna-resultat-1990-2004
+#| fig-cap: "Branche des pensions du régime des salariés non agricoles : ressources, pensions servies et résultat de gestion, en dinars courants et rapportés au PIB et aux ressources de la CNSS, 1990-2004."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import rsna_resultat_1990_2004 as rr
+import figtools
+figtools.figure_tabs(
+    rr.vues(), rr.table(), "cnss-retrospective-ressources-emplois", "irpp-ratios",
+    slug="fig_rsna_resultat_1990_2004",
+    caption=("Branche des pensions du régime des salariés non agricoles : ressources, "
+             "pensions servies et résultat de gestion, en dinars courants et rapportés au "
+             "PIB et aux ressources de la CNSS, 1990-2004"),
+    note_lecture=(
+        "Les montants sont ceux des comptes de bilan de la caisse, en millions de dinars "
+        "**courants**. Les pensions servies sont celles de vieillesse, d'invalidité, de "
+        "veuves et d'orphelins ; jusqu'en 1994, la branche sert aussi les allocations "
+        "familiales des pensionnés, de 2,0 à 3,0 millions de dinars par an, qui ne sont "
+        "pas tracées mais entrent dans ses emplois, donc dans son résultat. Le résultat "
+        "est déficitaire de 1992 à 1995 — 16,4 millions de dinars en 1992, 26,9 en "
+        "1993 —, excédentaire de 1996 à 2001, puis de nouveau déficitaire : 2,5 millions "
+        "en 2002, 31,3 en 2003, 104,1 en 2004. **Les excédents de 1996 à 2001 tiennent "
+        "aux produits financiers**, nuls ou presque jusqu'en 1995, de 47,5 à 94,0 millions "
+        "de dinars par an ensuite : sans eux, le résultat serait négatif chaque année de "
+        "1996 à 2004. Dans ce seul tableau, leur ligne s'intitule « produits financiers de "
+        "fonctionnement », et le document n'explique pas leur apparition en 1996, l'année "
+        "où les produits financiers des branches des prestations familiales et des "
+        "assurances sociales du régime baissent de 65,9 à 17,1 millions de dinars. Les "
+        "cotisations sont inférieures aux pensions servies en 1993, puis "
+        "chaque année à partir de 2002. Elles font un saut en 1994, l'année où le décret "
+        "n° 94-1429 relève la quote-part du taux global affectée au régime de pensions et "
+        "engage les paliers de sa cotisation propre [@decret94-1429, art. 1-2]. Les "
+        "montants de 2000, que la reliure de l'exemplaire consulté masque en partie, sont "
+        "rétablis par les totaux et sous-totaux du tableau et par les chiffres restés "
+        "visibles. "
+        "Trois vues se partagent le graphique : en millions de dinars courants ; en "
+        "pourcentage du PIB que retient le ministère des Finances "
+        "[@minfin-indicateurs-fp] ; en pourcentage du total des ressources de la CNSS, "
+        "toutes branches et tous régimes, tel que le donnent ses comptes de bilan. Sur la "
+        "vue au PIB, la ligne pointillée marque le passage, en 1997, de la base 1983 à la "
+        "base 1997 des comptes nationaux, dont les niveaux sont d'environ 10 % plus "
+        "élevés [@ins-cnat-2015] : à montant égal, les ratios en sont abaissés d'environ un "
+        "dixième à partir de 1997, et la rupture n'est pas corrigée. Le total des ressources de la caisse comprend "
+        "les accidents du travail et les maladies professionnelles à partir de 1995, la "
+        "protection sociale des travailleurs à partir de 1997 : le dénominateur s'élargit "
+        "d'autant à ces dates."),
+)
+```
+
+Le taux d'équilibre et le résultat de gestion se lisent ensemble. Le premier rapporte les pensions aux seuls salaires déclarés ; le second confronte toutes les charges de la branche à toutes ses ressources, produits de ses réserves compris.
+
 <!-- TODO (documentaliste) : aucun annuaire statistique de la CNSS postérieur à 2017 n'existe en
 ligne ni dans les archives du web (recherche complète du 23 septembre 2026, consignée dans la fiche
 sources/cnss-annuaires.md de tunisia-data). Pistes restantes pour prolonger la série au-delà de
