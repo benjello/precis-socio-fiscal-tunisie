@@ -535,3 +535,13 @@ par ligne) ; `tableau_vers_markdown(..., a_gauche=True)` (tableaux de périodes 
 | FI-20 | fait | `fiscalite/tables/is_minimum.md` (`tbl-is-minimum`) | les valeurs de 1990-2005 (plafonds) et la nature du minimum restent tirées du relevé (FI-21, C) |
 | FI-30 | fait | `fiscalite/tables/droit_consommation_specifiques_1988.md` (`tbl-dc-specifiques-1988`) | les quatorze lignes pétrolières sont lues au 1er juillet 1988 ; alcools et explosifs restent tirés du relevé (FI-29, 31, 32, C) |
 | FI-33 | fait | `fiscalite/tables/droit_consommation_petroliers.md` (`tbl-dc-petroliers`), qui remplace l'impression du relevé | colonnes 1988, 1991 et 1999 lues (44 cases) ; état consolidé de 2023 et lignes nées après 1999 tirés du relevé ; noms de produits laissés en français dans l'instantané arabe, en attendant leur terminologie |
+
+**Proposition, non appliquée : l'injection de valeurs dans la prose (motif 2).** Chaque
+générateur écrirait, à côté de `tables/<nom>.md`, un fichier `tables/<nom>.valeurs.yml` —
+clé, valeur formatée dans la langue du livre, date d'effet, clé de citation — et un shortcode
+Quarto `{{< valeur <nom> <clé> >}}` le lirait au rendu. Les égalités indicatives (« τ0 = 40 %
+depuis le … ») et les 17 A redondants en relèveraient. Deux conditions avant de l'étendre :
+vérifier que la passe de traduction conserve les shortcodes intacts (elle traite aujourd'hui
+les chunks de code, non les shortcodes en ligne), et convenir de la forme d'une date dans une
+phrase arabe. D'ici là, un test de cohérence — la valeur citée égale le paramètre à la date —
+couvre le même risque sans toucher au texte traduit.
