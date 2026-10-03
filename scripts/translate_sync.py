@@ -276,7 +276,13 @@ def _restaurer_jetons(source_text, translated_text, nature, motif):
     cs, cd = _compte(src), _compte(dst)
     exces = {t: n - cs.get(t, 0) for t, n in cd.items() if n > cs.get(t, 0)}
     manque = {s: n - cd.get(s, 0) for s, n in cs.items() if n > cd.get(s, 0)}
-    if not exces or not manque:
+    if not exces:
+        return translated_text  # rien en trop : muette
+    if not manque:
+        for t in sorted(exces):
+            print(f"  {nature} : « {t} » en trop dans la traduction ({cd[t]}× pour "
+                  f"{cs.get(t, 0)}× à la source), rien ne manque à la source — aucune "
+                  f"restauration (le contrôle de parité tranchera).")
         return translated_text
 
     vers_source = {t: [s for s in manque if _proche(t, s)] for t in exces}
@@ -287,7 +293,10 @@ def _restaurer_jetons(source_text, translated_text, nature, motif):
     for t in sorted(exces):
         candidats = vers_source[t]
         if not candidats:
-            continue  # rien de proche : le contrôle de parité le signalera
+            print(f"  {nature} : « {t} » en trop dans la traduction, aucun jeton manquant "
+                  f"de la source n'en est proche — aucune restauration "
+                  f"(le contrôle de parité tranchera).")
+            continue
         if len(candidats) > 1 or len(vers_trad[candidats[0]]) > 1:
             proches = sorted(set(candidats) | {x for s in candidats for x in vers_trad[s]})
             print(f"  {nature} : « {t} » absent ou en trop, appariement ambigu "

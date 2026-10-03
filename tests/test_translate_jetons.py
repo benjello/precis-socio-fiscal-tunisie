@@ -107,8 +107,16 @@ class ClesAbstentionTest(unittest.TestCase):
     def test_rien_de_proche(self):
         source = "[@loi81-6]\n"
         traduit = "[@decret2023-741]\n"
-        resultat, _ = run(restore_citation_keys, source, traduit)
+        resultat, trace = run(restore_citation_keys, source, traduit)
         self.assertEqual(resultat, traduit)
+        self.assertIn("aucun jeton manquant", trace)
+
+    def test_jeton_en_trop_sans_manquant_journalise(self):
+        source = "[@loi81-6]\n"
+        traduit = "[@loi81-6] [@loi59-18]\n"
+        resultat, trace = run(restore_citation_keys, source, traduit)
+        self.assertEqual(resultat, traduit)
+        self.assertIn("rien ne manque", trace)
 
     def test_prefixe_de_renvoi_different(self):
         """`@sec-x` ne se répare jamais en `@tbl-x`, si proches soient-ils."""
