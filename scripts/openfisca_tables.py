@@ -248,16 +248,50 @@ def avec_liens(fabrique: Callable[[], Any]) -> tuple[Any, list[tuple[str, str | 
 
 def ecrire_tableau(chemin_tableau: str | Path, df: "pd.DataFrame",
                    liens: list[tuple[str, str | None]], langue: str,
-                   entete: str = "") -> None:
+                   entete: str = "", autres_livres: tuple[str, ...] = ()) -> None:
     """Écrit le snapshot Markdown d'un tableau, puis ses liens (`<nom>.liens.yml`).
 
     `entete` : commentaire HTML placé avant le tableau ; un snapshot qui en porte un se
     termine par une ligne vide, comme les générateurs l'ont toujours écrit.
+
+    `autres_livres` : RÉEMPLOI D'UN TABLEAU DANS UN AUTRE LIVRE. Le même snapshot est écrit
+    aussi dans `precis/<langue>/<livre>/tables/`, pour chaque livre nommé — les indemnités
+    familiales du secteur public servent aux retraites et aux prestations, les taux de la
+    CNRPS aux cotisations et aux rémunérations. La fabrique reste unique : le tableau ne se
+    duplique pas dans un second générateur, il est émis deux fois. Les clés de citation du
+    tableau doivent exister dans le `references.json` de chaque livre qui le reçoit.
     """
     corps = tableau_vers_markdown(df)
-    Path(chemin_tableau).write_text(
-        f"{entete}{corps}\n" if entete else corps, encoding="utf-8")
-    ecrire_liens(chemin_tableau, liens, langue)
+    texte = f"{entete}{corps}\n" if entete else corps
+    chemin = Path(chemin_tableau)
+    cibles = [chemin] + [chemin.parents[2] / livre / "tables" / chemin.name
+                         for livre in autres_livres]
+    for cible in cibles:
+        cible.parent.mkdir(parents=True, exist_ok=True)
+        cible.write_text(texte, encoding="utf-8")
+        ecrire_liens(cible, liens, langue)
+
+
+def cles_manquantes(df: "pd.DataFrame", dossier_livre: str | Path) -> list[str]:
+    """Clés de citation `[@clé]` du tableau absentes de la bibliographie du livre.
+
+    `dossier_livre` : `precis/<langue>/<livre>`. Le livre cite son `references.json` et
+    celui, partagé, de sa langue (`precis/<langue>/references.json`). Un tableau réemployé
+    dans un autre livre (`ecrire_tableau(..., autres_livres=…)`) doit y résoudre aussi :
+    sinon la citation s'imprime telle quelle dans la page.
+    """
+    import json
+
+    dossier = Path(dossier_livre)
+    connues: set[str] = set()
+    for fichier in (dossier / "references.json", dossier.parent / "references.json"):
+        if fichier.is_file():
+            donnees = json.loads(fichier.read_text(encoding="utf-8"))
+            entrees = donnees.get("items", []) if isinstance(donnees, dict) else donnees
+            connues |= {e.get("id") for e in entrees}
+    citees = {c for v in df.astype(str).to_numpy().ravel()
+              for c in re.findall(r"@([\w:.#$%&+?<>~/-]+?)(?=[,;\]\s]|$)", v)}
+    return sorted(citees - connues)
 
 
 def charge_parametre(chemin_relatif: str, paquet: str | None = None) -> dict[str, Any] | None:
@@ -597,7 +631,7 @@ def tableau_bareme(
 
 def _colonne_numerique(df: "pd.DataFrame", colonne: str) -> bool:
     """Vrai si toutes les cellules tiennent du nombre (chiffres, %, dinars, tiret)."""
-    motif = re.compile(r"^[\d\s.,%—–-]+$|^.*\d.*(%|D)$")
+    motif = re.compile(r"^[\d\s.,%—–+−-]+$|^.*\d.*(%|D)$")
     return all(motif.match(str(v).strip()) for v in df[colonne])
 
 
@@ -815,14 +849,33 @@ def taux_datee(chemin_relatif: str) -> list[tuple[str, float | None, str, str]]:
     return sortie
 
 
+def formate_points(ecart: float | None) -> str:
+    """Écart entre deux taux, en points de pourcentage, signé : 0.012 -> « +1,2 »."""
+    if ecart is None:
+        return VIDE
+    points = round(ecart * 100, 6)
+    texte = f"{abs(points):.4f}".rstrip("0").rstrip(".").replace(".", ",")
+    return ("+" if points > 0 else "−" if points < 0 else "") + texte
+
+
 def tableau_taux_datee(
     specs: list[tuple[str, str, Callable[[float | None], str]]],
     cles: dict[str, str] | None = None,
     colonne_periode: str = "Effet",
     colonne_texte: str = "Texte",
     langue: str = "fr",
+    colonne_variation: str | None = None,
+    sans_maintien: bool = False,
 ) -> "pd.DataFrame | None":
-    """Comme `tableau_evolution_datee`, mais pour des barèmes à une tranche."""
+    """Comme `tableau_evolution_datee`, mais pour des barèmes à une tranche.
+
+    `sans_maintien` : écarte les dates où aucun taux ne change — un texte qui reconduit un
+    taux n'est pas une étape de son évolution.
+
+    `colonne_variation` : en-tête d'une colonne qui donne, ligne par ligne, l'écart en points
+    avec la ligne précédente — le changement concret qu'opère le texte de la ligne. Elle suit
+    la colonne du premier taux, et reste vide à la première ligne.
+    """
     if pd is None:
         return None
     series = {chemin: taux_datee(chemin) for chemin, _e, _f in specs}
@@ -839,6 +892,9 @@ def tableau_taux_datee(
                 retenue = v
         return retenue
 
+    if sans_maintien:
+        dates = [d for i, d in enumerate(dates) if i == 0 or any(
+            valeur_a(c, d) != valeur_a(c, dates[i - 1]) for c, _e, _f in specs)]
     lignes = []
     for date in dates:
         ligne = {colonne_periode: formate_date(date, langue)}
@@ -852,6 +908,11 @@ def tableau_taux_datee(
                     break
             if titre:
                 break
+        if colonne_variation:
+            chemin = specs[0][0]
+            precedente = [d for d in dates if d < date]
+            ligne[colonne_variation] = VIDE if not precedente else formate_points(
+                (valeur_a(chemin, date) or 0) - (valeur_a(chemin, precedente[-1]) or 0))
         if cles and date in cles:
             ligne[colonne_texte] = f"[@{cles[date]}]"
         else:

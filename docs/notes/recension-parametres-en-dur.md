@@ -484,3 +484,27 @@ précis seule.
 
 À traiter en dernier, par le composant d'injection en ligne (motif 2), ou par un test de
 cohérence qui vérifie que la valeur citée égale le paramètre à la date.
+
+## Suivi du traitement des A (lot du 3 octobre 2026)
+
+Branche `docs/parametres-engendres-lot-a`, openfisca-tunisia 0.118 (`origin/master`,
+commit `e8548797`). Chaque entrée a été revérifiée avant d'être remplacée : présence du
+paramètre, date et référence de chaque valeur, égalité avec le tableau ou la prose du précis.
+Une entrée dont une partie diverge bascule en B pour cette partie, sans remplacement.
+
+Composants ajoutés ou remontés dans `scripts/openfisca_tables.py` : `compte`, `annees`,
+`formateurs` (`Formateurs` : `taux`, `dinars`, `millimes`, `montant`, `age`, `duree`,
+`part_smig`, `coefficient`), `en_vigueur`, `enchaine`, `cellule`, `tableau_enchaine` (remontés
+des retraites, des prestations et de la fiscalité, sans changement de snapshot) ;
+`ecrire_tableau(..., autres_livres=…)` et `cles_manquantes` (réemploi d'un tableau dans un
+autre livre, motif 10) ; `tableau_taux_datee(..., colonne_variation=…, sans_maintien=…)` et
+`formate_points` (colonne « avant → après » en points, motif 3 pour un taux seul).
+
+| id | statut | tableau engendré | remarque |
+|---|---|---|---|
+| CS-10 | fait | `cotisations_sociales/tables/reduction_conventionnelle.md` (`tbl-reduction-conventionnelle`) | fin de la réduction au 1er juillet 2007 rendue « aucune » |
+| CS-16 | fait | `cotisations_sociales/tables/cnrps_employeur.md` (`tbl-cnrps-employeur`, remplace le tableau fait main) | niveaux datés et colonne « Variation » ; le millésime de 1959 est signalé comme convention dans la ligne « Sources » |
+| CS-24 | sans objet | — | une seule valeur, depuis le 1er janvier 1975, déjà lue par `branches_rsna` ; la ligne de `tbl-somme-trois-textes` relève de CS-11 (B) |
+| CS-29 | fait | `cotisations_sociales/tables/prevoyance_pensionnes.md` (`tbl-prevoyance-pensionnes`) | |
+| RE-05 | fait | `cnrps_retraite.md`, émis aussi dans `remunerations_publiques/tables/` (`tbl-cnrps-retraite`) | les deux chiffres de la prose remplacés par le renvoi au tableau |
+| RE-06 | fait, partie B | `remunerations_publiques/tables/css_salarie.md` (`tbl-css-salarie`) | la reconduction au 1er janvier 2025, sourcée hors *Journal officiel*, est écartée (`sans_maintien`) et signalée dans `backlog-modele.md` |

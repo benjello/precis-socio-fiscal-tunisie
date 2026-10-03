@@ -51,6 +51,12 @@ MOTS = {
         "cnrps_retraite": "Cotisation retraite du salarié affilié à la CNRPS",
         "point": "Point", "secteur": "Secteur d'activité",
         "avant": "Avant transfert du point", "apres": "Après transfert du point",
+        "cnrps_employeur": "Contribution de l'employeur public",
+        "variation": "Variation (en points)",
+        "prevoyance": "Cotisation de prévoyance sociale du pensionné",
+        "reduction": "Réduction de la part patronale du taux global (en points)",
+        "aucune": "aucune",
+        "css_salarie": "Contribution sociale de solidarité, taux applicable aux salariés",
     },
     "ar": {
         "effet": "بداية السريان", "texte": "النصّ", "branche": "الفرع",
@@ -69,6 +75,12 @@ MOTS = {
         "cnrps_retraite": "مساهمة التقاعد للأجير المنخرط بالصندوق الوطني للتقاعد",
         "point": "العدد", "secteur": "قطاع النشاط",
         "avant": "قبل تحويل النقطة", "apres": "بعد تحويل النقطة",
+        "cnrps_employeur": "مساهمة صاحب العمل العمومي",
+        "variation": "التغيّر (بالنقاط)",
+        "prevoyance": "مساهمة الحيطة الاجتماعية لصاحب الجراية",
+        "reduction": "التخفيض في حصة صاحب العمل من النسبة الإجمالية (بالنقاط)",
+        "aucune": "لا شيء",
+        "css_salarie": "المساهمة الاجتماعية التضامنية، النسبة المطبّقة على الأجراء",
     },
 }
 
@@ -516,9 +528,92 @@ def cnrps_retraite(langue):
         colonne_periode=m["effet"], colonne_texte=m["texte"], langue=langue)
 
 
+# Clés de citation, par date d'effet : la colonne « Texte » des tableaux qui en ont.
+CLES_CNRPS_EMPLOYEUR = {
+    "1959-02-01": "loi59-18, art. 8",
+    "1975-01-01": "loi74-101-lf1975, art. 39",
+    "1995-07-01": "loi94-71",
+    **dict.fromkeys((f"{a}-07-01" for a in range(2002, 2007)), "loi2001-123-lf2002, art. 85"),
+    **dict.fromkeys((f"{a}-01-01" for a in range(2007, 2010)), "loi2007-43, art. 1"),
+    "2011-07-01": "decretloi2011-48",
+    "2019-06-01": "loi2019-37, art. 4",
+}
+CLES_PREVOYANCE = dict.fromkeys(
+    (f"{a}-07-01" for a in range(2007, 2011)), "decret2007-1406, art. 13")
+CLES_REDUCTION = {
+    "1996-10-01": "loi97-4, art. 41 nouveau ; @decret97-1645",
+    "2007-07-01": "decret2007-1406, art. 16",
+}
+CLES_CSS = {
+    "2018-01-01": "loi2017-66-lf2018, art. 53",
+    "2023-01-01": "lf-2023, art. 22",
+}
+
+
+def cnrps_employeur(langue):
+    """La contribution de l'employeur public, pendant de la retenue de l'agent.
+
+    Des niveaux datés, et non des mouvements : la colonne « Variation » donne le mouvement
+    qu'opère chaque texte, en points, sans qu'on ait à l'écrire à la main.
+    """
+    m = MOTS[langue]
+    return ot.tableau_taux_datee(
+        [(f"{PUBLIC}/salarie_cnrps/cotisations_employeur/retraite.yaml",
+          m["cnrps_employeur"], _taux(langue))],
+        cles=CLES_CNRPS_EMPLOYEUR, colonne_periode=m["effet"], colonne_texte=m["texte"],
+        langue=langue, colonne_variation=m["variation"])
+
+
+def prevoyance_pensionnes(langue):
+    """La cotisation de prévoyance sociale assise sur la pension, en quatre paliers."""
+    m = MOTS[langue]
+    return ot.tableau_taux_datee(
+        [(f"{PUBLIC}/pensionne_cnrps/prevoyance_sociale.yaml", m["prevoyance"], _taux(langue))],
+        cles=CLES_PREVOYANCE, colonne_periode=m["effet"], colonne_texte=m["texte"],
+        langue=langue)
+
+
+def reduction_conventionnelle(langue):
+    """La réduction de deux points de la part patronale, de 1996 à 2007.
+
+    Le paramètre est une valeur (`values`), non un barème : il se lit en série datée. Sa
+    fin, au 1er juillet 2007, est une valeur nulle — la réduction n'existe plus, ce que la
+    case dit en toutes lettres.
+    """
+    m = MOTS[langue]
+
+    def points(v):
+        if v is None:
+            return "—"
+        return m["aucune"] if v == 0 else ot.formate_points(-v)
+
+    return ot.tableau_evolution_datee(
+        [(f"{PRIVE}/rsna/reduction_conventionnelle.yaml", m["reduction"], points)],
+        cles=CLES_REDUCTION, langue=langue,
+        colonne_periode=m["effet"], colonne_texte=m["texte"])
+
+
+def css_salarie(langue):
+    """Le taux salarial de la contribution sociale de solidarité, depuis 2018.
+
+    Un texte qui reconduit le taux n'est pas une étape de son évolution : la loi de
+    finances pour 2025, qui maintient 0,5 %, n'a pas de ligne (`sans_maintien`).
+    """
+    m = MOTS[langue]
+    return ot.tableau_taux_datee(
+        [("parameters/prelevements_sociaux/contribution_sociale_solidarite/salarie.yaml",
+          m["css_salarie"], _taux(langue))],
+        cles=CLES_CSS, colonne_periode=m["effet"], colonne_texte=m["texte"],
+        langue=langue, sans_maintien=True)
+
+
 TABLEAUX = {
     "coin_par_regime.md": coin_par_regime,
     "cnrps_retraite.md": cnrps_retraite,
+    "cnrps_employeur.md": cnrps_employeur,
+    "prevoyance_pensionnes.md": prevoyance_pensionnes,
+    "reduction_conventionnelle.md": reduction_conventionnelle,
+    "css_salarie.md": css_salarie,
     "atmp_1995.md": atmp_1995,
     "atmp_1999.md": atmp_1999,
 }
@@ -526,6 +621,14 @@ TABLEAUX = {
 # Le régime des étudiants n'a pas de tableau : sa cotisation est un forfait, pas un taux.
 for _code, *_ in REGIMES:
     TABLEAUX[f"branches_{_code}.md"] = branches(_code)
+
+# Livres où chaque tableau est écrit, quand ce n'est pas celui des cotisations seul. La
+# fabrique reste unique : le tableau est émis dans chaque livre (`ot.ecrire_tableau`).
+LIVRE = "cotisations_sociales"
+LIVRES = {
+    "cnrps_retraite.md": (LIVRE, "remunerations_publiques"),
+    "css_salarie.md": ("remunerations_publiques",),
+}
 
 
 # ------------------------------------------------ série de la figure des deux échelles AT/MP
@@ -650,14 +753,20 @@ def main() -> int:
               f"(version {ot.version_openfisca()}, minimum {ot.VERSION_MINIMALE}).")
         return 1
     for langue in LANGUES:
-        sortie = RACINE / langue / "cotisations_sociales" / "tables"
-        sortie.mkdir(parents=True, exist_ok=True)
         for nom, fabrique in TABLEAUX.items():
             df, liens = ot.avec_liens(lambda: fabrique(langue))
             if df is None or df.empty:
                 print(f"✗ {langue}/{nom} : paramètre introuvable ou vide.")
                 return 1
-            ot.ecrire_tableau(sortie / nom, df, liens, langue)
+            premier, *autres = LIVRES.get(nom, (LIVRE,))
+            for livre in (premier, *autres):
+                manquantes = ot.cles_manquantes(df, RACINE / langue / livre)
+                if manquantes:
+                    print(f"✗ {langue}/{livre}/{nom} : clés absentes de la bibliographie — "
+                          f"{', '.join(manquantes)}")
+                    return 1
+            sortie = RACINE / langue / premier / "tables"
+            ot.ecrire_tableau(sortie / nom, df, liens, langue, autres_livres=tuple(autres))
         print(f"✓ {langue} : {len(TABLEAUX)} tableaux")
     return serie_atmp_avec_liens()
 

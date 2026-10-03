@@ -218,6 +218,10 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   le livre « Prestations sociales » établissait déjà sans que celui-ci en tire parti.
 - **Code des collectivités locales** : voir la lecture locale de l'édition arabe ci-dessus ;
   son édition française n'est pas au corpus.
+- **Tableaux de paramètres engendrés — fait le 3 octobre 2026** : le régime indiciaire
+  reçoit, depuis le générateur des cotisations, la retenue pour pension de la CNRPS
+  (`tbl-cnrps-retraite`) et le taux salarial de la contribution sociale de solidarité
+  (`tbl-css-salarie`). Le CSV des augmentations reste fait main (RE-01, RE-02, classés C).
 
 ## Cotisations sociales
 
@@ -246,6 +250,14 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   négatives ont déjà leur fiche dans `docs/recherches.yml`. Relancer ces fiches plutôt
   que répéter leur conclusion. Pour les modificatifs du décret n° 74-499 après avril
   2026, la fiche `r-dec74-499-modificatifs` est couverte jusqu'au 18 septembre 2026.
+
+- **Tableaux de paramètres engendrés (recension du 2 octobre, lot A) — fait le 3 octobre
+  2026** : contribution de l'employeur public à la CNRPS (`tbl-cnrps-employeur`, qui remplace
+  le tableau fait main), prévoyance sociale des pensionnés (`tbl-prevoyance-pensionnes`),
+  réduction conventionnelle de 1996-2007 (`tbl-reduction-conventionnelle`). Restent faits main
+  les tableaux classés B ou C dans `recension-parametres-en-dur.md` (assiettes, somme des
+  trois textes, ventilation, montée en charge AMU, longue période) : ils attendent des PR
+  openfisca-tunisia.
 
 ## Forme des chapitres — le plan type, et où il ne s'applique pas
 
