@@ -1,0 +1,45 @@
+- libelle: Âge d'ouverture de la pension de vieillesse
+  parametre: parameters/retraite/rtte/age_legal.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtte.age_legal/table/
+- libelle: Âge du départ avec décote
+  parametre: parameters/retraite/rtte/age_depart_anticipe.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtte.age_depart_anticipe/table/
+- libelle: Décote par trimestre d'anticipation
+  parametre: parameters/retraite/rtte/decote_par_trimestre.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtte.decote_par_trimestre/table/
+- libelle: Stage
+  parametre: parameters/retraite/rtte/stage_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtte.stage_mois/table/
+- libelle: Taux de la pension au terme du stage
+  parametre: parameters/retraite/rtte/taux_base.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtte.taux_base/table/
+- libelle: Majoration par trimestre au-delà du stage
+  parametre: parameters/retraite/rtte/majoration_par_trimestre.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtte.majoration_par_trimestre/table/
+- libelle: Plafond du taux de la pension
+  parametre: parameters/retraite/rtte/plafond_taux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtte.plafond_taux/table/
+- libelle: Pension minimale
+  parametre: parameters/retraite/rtte/plancher_taux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtte.plancher_taux/table/
+- libelle: 'Invalidité : stage'
+  parametre: parameters/retraite/rtte/invalidite/stage_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtte.invalidite.stage_mois/table/
+- libelle: 'Invalidité : taux de base'
+  parametre: parameters/retraite/rtte/invalidite/taux_base.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtte.invalidite.taux_base/table/
+- libelle: 'Invalidité : durée de cotisation au-delà de laquelle la pension est majorée'
+  parametre: parameters/retraite/rtte/invalidite/seuil_majoration_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtte.invalidite.seuil_majoration_mois/table/
+- libelle: Classes de revenus, en multiples du SMIG (1)
+  parametre: parameters/retraite/rtte/revenu_reference/classes/classe_1.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtte.revenu_reference.classes.classe_1/table/
+- libelle: Classes de revenus, en multiples du SMIG (2)
+  parametre: parameters/retraite/rtte/revenu_reference/classes/classe_2.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtte.revenu_reference.classes.classe_2/table/
+- libelle: Classes de revenus, en multiples du SMIG (3)
+  parametre: parameters/retraite/rtte/revenu_reference/classes/classe_3.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtte.revenu_reference.classes.classe_3/table/
+- libelle: Classes de revenus, en multiples du SMIG (4)
+  parametre: parameters/retraite/rtte/revenu_reference/classes/classe_4.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtte.revenu_reference.classes.classe_4/table/

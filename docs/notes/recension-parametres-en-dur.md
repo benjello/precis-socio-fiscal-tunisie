@@ -498,7 +498,11 @@ Composants ajoutés ou remontés dans `scripts/openfisca_tables.py` : `compte`, 
 des retraites, des prestations et de la fiscalité, sans changement de snapshot) ;
 `ecrire_tableau(..., autres_livres=…)` et `cles_manquantes` (réemploi d'un tableau dans un
 autre livre, motif 10) ; `tableau_taux_datee(..., colonne_variation=…, sans_maintien=…)` et
-`formate_points` (colonne « avant → après » en points, motif 3 pour un taux seul).
+`formate_points` (colonne « avant → après » en points, motif 3 pour un taux seul) ;
+`tableau_gabarit`, `gabarit` et `Lecture` (tableau mixte, motif 1 : le texte de chaque case,
+dans les deux langues, reçoit des valeurs lues dans le paramètre à la date qui les fonde) ;
+`tableau_a_la_date(..., colonne_effet=…)` et chemins groupés (fiche d'un régime, une grandeur
+par ligne) ; noms comptés arabes au-delà de cent (« 300 يوم », « 180 يومًا »).
 
 | id | statut | tableau engendré | remarque |
 |---|---|---|---|
@@ -508,3 +512,16 @@ autre livre, motif 10) ; `tableau_taux_datee(..., colonne_variation=…, sans_ma
 | CS-29 | fait | `cotisations_sociales/tables/prevoyance_pensionnes.md` (`tbl-prevoyance-pensionnes`) | |
 | RE-05 | fait | `cnrps_retraite.md`, émis aussi dans `remunerations_publiques/tables/` (`tbl-cnrps-retraite`) | les deux chiffres de la prose remplacés par le renvoi au tableau |
 | RE-06 | fait, partie B | `remunerations_publiques/tables/css_salarie.md` (`tbl-css-salarie`) | la reconduction au 1er janvier 2025, sourcée hors *Journal officiel*, est écartée (`sans_maintien`) et signalée dans `backlog-modele.md` |
+| RP-03 | fait | `retraites/tables/rsna_reference.md` (`tbl-rsna-reference`, remplace le tableau fait main) | tableau mixte : choix de 1974 et non-modification de 1990 gardés en texte |
+| RP-05, RP-19 | fait | `retraites/tables/rsna_survivants.md` (`tbl-rsna-survivants`, remplace le tableau fait main) | tableau mixte ; RP-19 (prose) renvoie désormais à un tableau engendré |
+| RP-08, RP-27 | fait | `retraites/tables/rsa_evolution.md` (`tbl-rsa-evolution`, remplace le tableau fait main) | tableau mixte ; la ligne du délai de demande reste du texte (RP-23, C) ; les taux de 1981 de RP-27 restent en prose, sans tableau propre |
+| RP-10 | fait | colonne « SMAG du revenu de référence » ajoutée à `rtns_agricole.md` (`tbl-rtns-agricole`) | 300 jours (1982, 1995), 180 (19 octobre 1996), 260 (1997), 300 (1998) ; la borne de version (0.118) couvre déjà la 0.113 |
+| RP-20 | fait | `retraites/tables/rsna_invalidite.md` (`tbl-rsna-invalidite`) | la condition de 6 mois sur 12 (1974-1981) reste en prose |
+| RP-29 | fait | `retraites/tables/rsaa.md` (`tbl-rsaa`) | T = {3, 5} et les 25 jours de la revalorisation restent sans paramètre (C) |
+| RP-31 | fait | `retraites/tables/complementaire.md` (`tbl-complementaire`) | `valeur_point` et `salaire_reference` écartés (sources hors *Journal officiel*, valeurs sans référence) |
+| RP-39 | fait | `retraites/tables/rtte.md` (`tbl-rtte`) | le taux de cotisation (RP-38, B) n'y figure pas |
+| RP-40 | fait | `retraites/tables/rtfr.md` (`tbl-rtfr`) | β = 2/3 n'y figure pas (CS-05, B) |
+| RP-41 | fait, partie B | `retraites/tables/raci.md` (`tbl-raci`) | majoration par trimestre et plafond écartés : datés du 5 janvier 2003 (loi n° 2002-104, art. 13) quand le précis les tient du décret n° 2003-894, exécutoire le 5 mai 2003 ; signalé dans `backlog-modele.md` |
+| RU-05 | fait, partie B | `retraites/tables/cnrps_departs_anticipes.md` (`tbl-cnrps-departs-anticipes`) | âge minimal de 50 ans des mères en 1985 écarté (sans référence, pension#27) ; durée des fonctions astreignantes laissée en prose |
+| RU-13 | fait | deux colonnes ajoutées à `cnrps_plafond_plancher.md` (`tbl-cnrps-plafond-plancher`) | |
+| RU-15 | fait, partie C | `retraites/tables/cnrps_survivants.md` (`tbl-cnrps-survivants`) | réductions de 5 et 10 %, plancher de 50 %, âges de 21 et 55 ans restent sans paramètre (C) |

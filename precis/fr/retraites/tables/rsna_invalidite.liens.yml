@@ -1,0 +1,21 @@
+- libelle: Invalidité — stage
+  parametre: parameters/retraite/rsna/invalidite/stage_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.invalidite.stage_mois/table/
+- libelle: Invalidité — taux de base
+  parametre: parameters/retraite/rsna/invalidite/taux_base.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.invalidite.taux_base/table/
+- libelle: Invalidité — majoration
+  parametre: parameters/retraite/rsna/invalidite/majoration.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.invalidite.majoration/table/
+- libelle: Invalidité — période de la majoration, en mois
+  parametre: parameters/retraite/rsna/invalidite/periode_majoration_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.invalidite.periode_majoration_mois/table/
+- libelle: Invalidité — durée au-delà de laquelle la pension est majorée
+  parametre: parameters/retraite/rsna/invalidite/seuil_majoration_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.invalidite.seuil_majoration_mois/table/
+- libelle: Invalidité — plafond du taux
+  parametre: parameters/retraite/rsna/invalidite/plafond_taux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.invalidite.plafond_taux/table/
+- libelle: Invalidité — majoration pour tierce personne
+  parametre: parameters/retraite/rsna/invalidite/majoration_tierce_personne.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.invalidite.majoration_tierce_personne/table/

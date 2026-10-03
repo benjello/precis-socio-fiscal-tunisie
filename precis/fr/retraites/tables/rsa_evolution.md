@@ -1,0 +1,8 @@
+| Élément | Loi n° 81-6 (1^er^ janvier 1981) | Modifications |
+|---|---|---|
+| Délai de présentation de la demande | un an | 10 décembre 1995 : cinq ans (loi n° 95-102, art. 74 al. 1) |
+| Bénéficiaire de la réversion | la veuve, et le veuf invalide ; mariage contracté antérieurement à l'ouverture du droit à pension | 4 août 1996 : le conjoint survivant ; liens de mariage existant au moment du décès (loi n° 96-66, art. 60 et 61) |
+| Remariage | suppression de la pension | 4 août 1996 : suspension seulement en cas de remariage avant 55 ans ; rétablissement, revalorisé, au décès du nouveau conjoint ou à la dissolution du mariage ; cumul de pensions de conjoint survivant interdit, la plus élevée étant servie (loi n° 96-66, art. 63) |
+| Plafond de cumul | pension de référence du mari | 4 août 1996 : pension dont bénéficiait ou aurait pu bénéficier le défunt (loi n° 96-66, art. 69) |
+| Âge limite de l'orphelin | orphelin mineur : 16 ans ; 21 ans en cas d'études ; sans limite en cas d'infirmité | 1^er^ mai 1997 : 16 ans ; 21 ans en études secondaires, techniques ou professionnelles ; 25 ans en études supérieures sans bourse ; la fille, tant qu'elle ne dispose pas de ressources ou que l'obligation alimentaire n'incombe pas à son époux ; sans limite en cas d'infirmité (loi n° 97-61, art. 64) ; 2 juillet 2007 : fille sans limite d'âge, conditions appréciées au décès, paiement définitivement suspendu si l'une d'elles fait défaut ; le mot « mineur » est supprimé (loi n° 2007-43) |
+| Revalorisation | à chaque paiement, proportionnellement à la variation du SMAG | aucune ; en 2026, le décret qui fixe le SMAG énonce que son augmentation s'applique aux pensions de retraite (décret n° 2026-66, art. 5) |

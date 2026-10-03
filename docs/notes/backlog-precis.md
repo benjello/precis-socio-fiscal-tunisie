@@ -137,6 +137,20 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 - **Régimes spéciaux** : le décret-loi n° 2011-48 relève aussi la contribution de
   l'employeur pour les membres du gouvernement et les gouverneurs ; le chapitre ne le dit pas.
 
+- **Tableaux de paramètres engendrés (recension du 2 octobre, lots 1a à 1c) — fait le
+  3 octobre 2026** : trois tableaux faits main remplacés par des tableaux mixtes engendrés
+  (`tbl-rsna-reference`, `tbl-rsna-survivants`, `tbl-rsa-evolution`) ; tableaux neufs pour
+  l'invalidité du régime non agricole, le régime agricole amélioré, le régime complémentaire,
+  les Tunisiens à l'étranger, les travailleurs à faibles revenus, les artistes, les départs
+  anticipés et les droits dérivés de la CNRPS ; allocation de vieillesse ajoutée à
+  `tbl-cnrps-plafond-plancher`, durée annuelle du SMAG à `tbl-rtns-agricole`. Restent faits
+  main : `tbl-rsna-coeur`, `tbl-rsna-anticipes`, `tbl-rsna-ages-derogatoires`, les deux
+  tableaux de revalorisation, `tbl-rsa-rsaa`, `tbl-rtns-coeur`, `tbl-comparaison-secteurs`,
+  `tbl-cnrps-1959-1985`, `tbl-cnrps-jouissance`, `tbl-cnrps-bonifications`,
+  `tbl-cnrps-orphelins`, `tbl-cnrps-perequation`, `tbl-regimes-speciaux` et les annexes de
+  textes : leurs valeurs sont classées B ou C dans `recension-parametres-en-dur.md`. Les
+  tableaux arabes faits main de ces trois chapitres attendent la retraduction.
+
 ## Prestations sociales
 
 - **Dépense des allocations familiales, 1990-2004 — fait le 3 octobre 2026** (`#fig-cnss-allocations-familiales`, `#sec-pf-longue-periode`), tirée de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026), déflatée par l'IPC des annuaires de l'INS (`ins-annuaire-ipc`). Restent : allocataires, enfants, montant moyen, dépense avant 1990 et après 2004 (TODO du chapitre). **221 valeurs de 1999** (et quelques-unes de 2000) masquées par la reliure restent à lire sur l'original papier (tunisia-data#26) ; en attendant, la figure trace des estimations hachurées ou creuses. Quand le classeur revient : réinjecter dans tunisia-data, relancer `figtools.refresh_cache("cnss-retrospective-ressources-emplois")`, puis relire la note de lecture, qui cite des montants. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches).

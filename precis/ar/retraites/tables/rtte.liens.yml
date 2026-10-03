@@ -1,0 +1,45 @@
+- libelle: سنّ استحقاق جراية الشيخوخة
+  parametre: parameters/retraite/rtte/age_legal.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtte.age_legal/table/
+- libelle: سنّ التقاعد المبكّر مع التخفيض في الجراية
+  parametre: parameters/retraite/rtte/age_depart_anticipe.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtte.age_depart_anticipe/table/
+- libelle: التخفيض في الجراية عن كلّ ثلاثية
+  parametre: parameters/retraite/rtte/decote_par_trimestre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtte.decote_par_trimestre/table/
+- libelle: مدة الانخراط الدنيا
+  parametre: parameters/retraite/rtte/stage_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtte.stage_mois/table/
+- libelle: نسبة الجراية عند استيفاء مدة الانخراط الدنيا
+  parametre: parameters/retraite/rtte/taux_base.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtte.taux_base/table/
+- libelle: الترفيع عن كلّ ثلاثية تفوق مدة الانخراط الدنيا
+  parametre: parameters/retraite/rtte/majoration_par_trimestre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtte.majoration_par_trimestre/table/
+- libelle: سقف نسبة الجراية
+  parametre: parameters/retraite/rtte/plafond_taux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtte.plafond_taux/table/
+- libelle: الجراية الدنيا
+  parametre: parameters/retraite/rtte/plancher_taux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtte.plancher_taux/table/
+- libelle: 'العجز: مدة الانخراط الدنيا'
+  parametre: parameters/retraite/rtte/invalidite/stage_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtte.invalidite.stage_mois/table/
+- libelle: 'العجز: النسبة الأساسية'
+  parametre: parameters/retraite/rtte/invalidite/taux_base.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtte.invalidite.taux_base/table/
+- libelle: 'العجز: مدة الاشتراك التي تُرفَّع الجراية بعدها'
+  parametre: parameters/retraite/rtte/invalidite/seuil_majoration_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtte.invalidite.seuil_majoration_mois/table/
+- libelle: شرائح الدخل، بمضاعفات الأجر الأدنى المضمون (1)
+  parametre: parameters/retraite/rtte/revenu_reference/classes/classe_1.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtte.revenu_reference.classes.classe_1/table/
+- libelle: شرائح الدخل، بمضاعفات الأجر الأدنى المضمون (2)
+  parametre: parameters/retraite/rtte/revenu_reference/classes/classe_2.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtte.revenu_reference.classes.classe_2/table/
+- libelle: شرائح الدخل، بمضاعفات الأجر الأدنى المضمون (3)
+  parametre: parameters/retraite/rtte/revenu_reference/classes/classe_3.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtte.revenu_reference.classes.classe_3/table/
+- libelle: شرائح الدخل، بمضاعفات الأجر الأدنى المضمون (4)
+  parametre: parameters/retraite/rtte/revenu_reference/classes/classe_4.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtte.revenu_reference.classes.classe_4/table/

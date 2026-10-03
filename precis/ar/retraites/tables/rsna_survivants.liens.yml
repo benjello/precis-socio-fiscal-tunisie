@@ -1,0 +1,21 @@
+- libelle: نسبة جراية القرين الباقي على قيد الحياة
+  parametre: parameters/retraite/rsna/survivants/taux_conjoint.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.survivants.taux_conjoint/table/
+- libelle: النسبة المرفّعة لجراية القرين الباقي على قيد الحياة
+  parametre: parameters/retraite/rsna/survivants/taux_conjoint_majore.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.survivants.taux_conjoint_majore/table/
+- libelle: نسبة جراية اليتيم
+  parametre: parameters/retraite/rsna/survivants/taux_orphelin.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.survivants.taux_orphelin/table/
+- libelle: نسبة جراية يتيم الأب والأم
+  parametre: parameters/retraite/rsna/survivants/taux_orphelin_pere_et_mere.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.survivants.taux_orphelin_pere_et_mere/table/
+- libelle: السنّ القصوى لليتيم
+  parametre: parameters/retraite/rsna/survivants/age_limite_orphelin.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.survivants.age_limite_orphelin/table/
+- libelle: السنّ القصوى لليتيم الدارس
+  parametre: parameters/retraite/rsna/survivants/age_limite_orphelin_etudes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.survivants.age_limite_orphelin_etudes/table/
+- libelle: السنّ القصوى لليتيم في التعليم العالي
+  parametre: parameters/retraite/rsna/survivants/age_limite_orphelin_etudes_superieures.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.survivants.age_limite_orphelin_etudes_superieures/table/

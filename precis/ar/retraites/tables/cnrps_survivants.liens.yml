@@ -1,0 +1,12 @@
+- libelle: جراية القرين الباقي على قيد الحياة
+  parametre: parameters/retraite/cnrps/survivants/taux_conjoint.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.survivants.taux_conjoint/table/
+- libelle: الجراية الوقتية لليتيم، عن كلّ يتيم
+  parametre: parameters/retraite/cnrps/survivants/taux_orphelin.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.survivants.taux_orphelin/table/
+- libelle: سقف مجموع جرايات الباقين على قيد الحياة، من جراية العون
+  parametre: parameters/retraite/cnrps/survivants/plafond_cumul.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.survivants.plafond_cumul/table/
+- libelle: نصيب القرين ابتداءً من خمسة أيتام
+  parametre: parameters/retraite/cnrps/survivants/taux_partage_5_orphelins.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.survivants.taux_partage_5_orphelins/table/

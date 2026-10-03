@@ -237,23 +237,20 @@ où $n_1$ est la durée de cotisation qui ouvre la pension proportionnelle, $n_1
 
 Deux décrets successifs ont allongé la fenêtre du salaire moyen de référence de trois ou cinq ans à dix ans, le second remplaçant la rédaction du premier ; les salaires anciens y sont désormais actualisés. Dans la formule (@sec-rsna-calcul), c'est l'ensemble $\mathcal{T}$ des durées de référence qui change : $\mathcal{T} = \{10\}$ au 23 septembre 1990 ; puis $\mathcal{T} = \{5\}$ au 1^er^ juillet 1994, $\{7\}$ au 1^er^ juillet 1995 et $\{10\}$ au 1^er^ juillet 1996. La formule de 1974 ne porte pas l'actualisation, exposée plus bas. Elle ne vaut pas non plus telle quelle entre 1990 et 1994 : l'article 19, que le décret n° 90-1455 ne modifie pas, divise encore le total des salaires par 36 ou 60 mois, alors que l'article 18 en retient dix années.
 
-| Depuis | Fenêtre de référence | Moyenne (article 19) | Limite de prise en compte des salaires | Texte |
-|---|---|---|---|---|
-| 1^er^ janvier 1974 | salaires des **trois ou cinq dernières années** précédant l'âge d'ouverture du droit, « selon que l'une ou l'autre de ces périodes de référence est plus avantageuse » pour l'assuré | total divisé par 36 ou 60 mois | **six fois le SMIG** rapporté à 2 400 heures par an | décret n° 74-499, art. 18-19 |
-| 23 septembre 1990 | salaires des **dix dernières années** précédant l'âge d'ouverture du droit ; moyenne sur la période d'activité déclarée si elle est inférieure à dix ans ; salaires « actualisés selon un barème fixé par arrêté du ministre des affaires sociales » | article 19 non modifié : 36 ou 60 mois | **six fois le SMIG** rapporté à 2 400 heures par an | décret n° 90-1455, art. 1 (art. 18 nouveau) |
-| 1^er^ juillet 1994 | **cinq dernières années** ; salaires actualisés selon un barème fixé annuellement par arrêté | 60 mois | **six fois le SMIG « régime 48 heures »** rapporté à 2 400 heures par an | décret n° 94-1429, art. 1 (art. 18-19 nouveaux) |
-| 1^er^ juillet 1995 | **sept dernières années** | 84 mois | idem | idem |
-| 1^er^ juillet 1996 | **dix dernières années** | 120 mois | idem | idem |
-
-: Salaire moyen de référence et limite de calcul des prestations du régime des salariés non agricoles {#tbl-rsna-reference}
+```{python}
+#| echo: false
+#| output: asis
+table("rsna_reference",
+      "Salaire moyen de référence et limite de calcul des prestations du régime des salariés non agricoles",
+      "tbl-rsna-reference")
+```
 
 Sources : @decret74-499, art. 18-19 ; @decret90-1455, art. 1 ; @decret94-1429, art. 1. Le décret n° 90-1455 n'énonce pas de date d'effet : le 23 septembre 1990 est la date à laquelle il devient exécutoire, un jour franc après sa publication au *Journal officiel* du 21 septembre 1990.
 
-<!-- Tableau tenu à la main, et non engendré. Le paramètre `rsna/salaire_reference/duree_mois`
-porte bien la fenêtre depuis septembre 2026, mais seulement pour ses trois dernières lignes :
-celle de 1974 offre un choix entre deux périodes, celle de 1990 énonce une non-modification, et
-ni l'un ni l'autre n'est une valeur datée. Voir l'en-tête de
-scripts/generate_retraites_tables.py. -->
+<!-- Tableau engendré depuis le 3 octobre 2026 (generate_retraites_tables.py, rsna_reference) :
+tableau mixte dont les durées, les diviseurs et la limite sont lus dans les paramètres à la date
+de chaque ligne, le texte des cases (choix de 1974, non-modification de l'article 19 en 1990)
+restant celui du chapitre. -->
 
 Les deux décrets se succèdent. Le décret n° 90-1455 porte la fenêtre de référence à dix ans en réécrivant l'article 18, mais laisse inchangé l'article 19, qui continue de calculer la moyenne sur trente-six ou soixante mois [@decret90-1455, art. 1]. Le décret n° 94-1429, qui vise le décret de 1974 « tel que modifié par le décret n° 90-1455 », abroge et remplace ensemble ces deux articles et substitue à la règle de 1990 une montée progressive, de cinq ans en 1994 à dix ans en 1996, la durée de la moyenne suivant celle de la fenêtre [@decret94-1429, art. 1]. Aucun texte publié au *Journal officiel* entre ces deux décrets qui suspende ou reporte la règle de 1990 n'est identifié ici, et aucun n'indique comment les pensions ont été calculées entre septembre 1990 et juin 1994, alors que les articles 18 et 19 prescrivaient l'un dix années de salaires, l'autre une moyenne sur trente-six ou soixante mois.
 
@@ -515,22 +512,19 @@ figtools.figure_tabs(
 
 Au décès de l'assuré, sa veuve perçoit une [pension de réversion](#g-pension-de-reversion) de **50 %** de la pension dont il bénéficiait ou aurait dû bénéficier : c'est le taux $\theta_c$ de 1974 (@sec-rsna-derives-1974) [@decret74-499, art. 31]. Le décret n° 81-188 majore ce taux jusqu'à **75 %** lorsqu'il n'y a pas d'enfant bénéficiaire ou que le total des pensions de veuve et d'orphelins ne dépasse pas la pension de l'assuré, la pension d'orphelin étant réduite d'autant en cas de dépassement [@decret81-188, art. 2]. Le droit est ouvert à l'origine à la veuve et au veuf invalide [@decret74-499, art. 29] ; depuis le décret n° 97-291, l'article 29 l'ouvre au « conjoint survivant » de l'assuré [@decret97-291, art. 1]. Le décret n° 81-188 avait déjà réécrit l'article 29 : le droit y est ouvert à la veuve d'un titulaire de pension de vieillesse ou d'un assuré remplissant le stage de vieillesse, au veuf invalide, et à la veuve d'un titulaire de pension d'invalidité ou d'un assuré décédé avant l'âge normal de la retraite qui remplissait les conditions de la pension d'invalidité de l'article 21 [@decret81-188, art. 1]. Dans sa rédaction de 1974, l'article 30 exige que le mariage ait été contracté « antérieurement à la réalisation de l'éventualité » [@decret74-499, art. 30] ; cet article a été modifié par le décret n° 90-1455, dont la nouvelle rédaction n'est pas établie ici.
 
-| Règle | Décret n° 74-499 (1^er^ janvier 1974) | Modifications |
-|---|---|---|
-| Bénéficiaire et taux de la réversion | la veuve, et le veuf invalide : 50 % | 1981 : jusqu'à 75 % sous condition ; droit rattaché, pour le décès avant l'âge normal de la retraite, aux conditions de la pension d'invalidité de l'article 21 (décret n° 81-188) ; 1997 : droit ouvert au « conjoint survivant » (décret n° 97-291, art. 29) |
-| Remariage | suppression au premier jour du trimestre civil suivant | 1990 : rétablissement, revalorisé, au décès du nouveau conjoint ; cumul de pensions de conjoint survivant au titre de mariages successifs interdit (décret n° 90-1455) |
-| Taux d'orphelin | 20 %, porté à 30 % pour l'orphelin de père et de mère | 1981 : 30 % dans tous les cas (décret n° 81-188, art. 34) ; droit étendu aux orphelins d'un titulaire de pension d'invalidité ou d'un assuré décédé avant l'âge normal qui remplissait les conditions de l'article 21 (décret n° 81-188, art. 33) |
-| Âge limite de l'orphelin | 16 ans ; 21 ans en cas d'études ; sans limite en cas d'affection incurable | 1^er^ mai 1997 : 21 ans en études secondaires, techniques ou professionnelles, 25 ans en études supérieures sans bourse, sans limite pour la fille sans ressources ou qui n'est pas à la charge de son mari et en cas d'infirmité (décret n° 97-1927) ; 2007 : paiement à la fille définitivement suspendu dès qu'une condition fait défaut (décret n° 2007-2148) |
-| Plafond de cumul | pensions de veuves et d'orphelins limitées à la pension de référence du mari, par réduction temporaire des pensions d'orphelins | 1997 : pensions de conjoint survivant et d'orphelins limitées à la pension dont bénéficiait ou aurait pu bénéficier le défunt (décret n° 97-291, art. 38) |
-| Cumul d'une pension d'invalidité et d'une pension de survivant | interdit, seule la plus élevée étant servie | 1997 : interdiction supprimée par l'abrogation de l'article 52 (décret n° 97-291, art. 2) |
-
-: Droits des survivants du régime des salariés non agricoles {#tbl-rsna-survivants}
+```{python}
+#| echo: false
+#| output: asis
+table("rsna_survivants",
+      "Droits des survivants du régime des salariés non agricoles",
+      "tbl-rsna-survivants")
+```
 
 Sources : @decret74-499, art. 29-38 et 52 ; @decret81-188, art. 1-2 ; @decret90-1455, art. 1 ; @decret97-291, art. 1-2 ; @decret97-1927, art. 1-2 ; @decret2007-2148. Le décret n° 81-188 réécrit aussi l'article 33 : les limites d'âge de 1974 y sont reprises. Le décret n° 97-291 n'énonce pas de date d'effet ; le décret n° 97-1927 prend effet au 1^er^ mai 1997.
 
-<!-- Tableau tenu à la main, et non engendré : l'arbre des paramètres du régime des salariés
-non agricoles n'a pas de branche « survivants ». Voir l'en-tête de
-scripts/generate_retraites_tables.py. -->
+<!-- Tableau engendré depuis le 3 octobre 2026 (generate_retraites_tables.py, rsna_survivants) :
+tableau mixte, dont les taux et les âges sont lus dans rsna/survivants et les règles restent
+rédigées dans les deux langues. -->
 
 La [pension temporaire d'orphelin](#g-pension-temporaire-orphelin) est collective et se réduit à mesure que chaque orphelin cesse de remplir les conditions ; elle est suspendue lorsque l'orphelin est pris en charge par une institution bénéficiant de l'aide de l'État [@decret74-499, art. 35-36]. L'article 33 issu du décret de 1997 maintient ce droit, ouvert dès 1981, aux orphelins d'un titulaire de pension d'invalidité ou d'un assuré remplissant les conditions de la pension d'invalidité [@decret81-188, art. 1 ; @decret97-1927, art. 1]. Lorsque la pension est suspendue pour abandon de famille, une pension temporaire de 80 % est allouée à l'épouse et aux enfants mineurs pendant la suspension [@decret74-499, art. 50]. L'extension de 1997 aux orphelins en études supérieures et à la fille sans ressources prend effet le même jour, le 1^er^ mai 1997, que l'extension équivalente dans le secteur public (@sec-secteur-public).
 
@@ -541,9 +535,17 @@ L'article 33 réécrit par le décret n° 81-188 est lu (docs/notes/rsna-histoir
 
 L'invalidité est ouverte dans les conditions de 1974 (@sec-rsna-derives-1974), à une exception près. Le décret n° 81-188 réécrit l'article 21 b) et ne retient plus que « un stage au moins égal à 60 mois de cotisations », sans la condition de six mois de cotisation au cours des douze mois précédant la première constatation qu'exigeait le texte de 1974 [@decret74-499, art. 21 ; @decret81-188, art. 1].
 
-Le taux de la pension a connu trois états. En 1974, il est de **40 %** du salaire moyen de référence, majoré de 2 % par période de 12 mois de cotisation au-delà de 120 mois, dans la limite de **80 %** [@decret74-499, art. 22]. Le décret n° 81-188 porte le taux de base à **50 %** [@decret81-188, art. 1]. Le décret n° 82-1030 réécrit la majoration : **0,5 %** par trimestre de cotisation au-delà de **180 mois**, dans la même limite de 80 % [@decret82-1030, art. 4]. Le seuil de la majoration passe ainsi de 120 à 180 mois au moment où le taux de base passe de 40 à 50 % ; par le calcul, 50 % est le taux que la règle de 1974 donnait à 180 mois.
+Le taux de la pension a connu trois états (@tbl-rsna-invalidite). En 1974, il est de **40 %** du salaire moyen de référence, majoré de 2 % par période de 12 mois de cotisation au-delà de 120 mois, dans la limite de **80 %** [@decret74-499, art. 22]. Le décret n° 81-188 porte le taux de base à **50 %** [@decret81-188, art. 1]. Le décret n° 82-1030 réécrit la majoration : **0,5 %** par trimestre de cotisation au-delà de **180 mois**, dans la même limite de 80 % [@decret82-1030, art. 4]. Le seuil de la majoration passe ainsi de 120 à 180 mois au moment où le taux de base passe de 40 à 50 % ; par le calcul, 50 % est le taux que la règle de 1974 donnait à 180 mois.
 
 La pension est bonifiée de 20 % lorsque l'invalide doit recourir à l'assistance d'une tierce personne ; elle est convertie en pension de vieillesse à l'âge requis, la bonification étant maintenue ; elle fait l'objet d'un contrôle annuel, mais n'est plus révisable après 55 ans ; et, cumulée avec une rente d'accident du travail, elle est réduite de la moitié de la rente, sans que la réduction excède la moitié de la pension [@decret74-499, art. 23-25 et 28]. Son cumul avec une pension de survivant, interdit en 1974, est possible depuis l'abrogation de l'article 52 en 1997 [@decret97-291, art. 2].
+
+```{python}
+#| echo: false
+#| output: asis
+table("rsna_invalidite",
+      "Pension d'invalidité du régime des salariés non agricoles, 1974-1982",
+      "tbl-rsna-invalidite")
+```
 
 #### La revalorisation {#sec-rsna-revalorisation}
 
@@ -891,16 +893,13 @@ Aucun texte modifiant le cœur du régime n'est identifié ici : l'âge de 60 an
 
 <!-- RECHERCHE r-loi81-6-modificatifs : modificatifs du cœur du régime de la loi n° 81-6 (voir docs/recherches.yml) -->
 
-| Élément | Loi n° 81-6 (1^er^ janvier 1981) | Modifications |
-|---|---|---|
-| Délai de présentation de la demande | un an | 10 décembre 1995 : cinq ans (loi n° 95-102, art. 74 al. 1) |
-| Bénéficiaire de la réversion | la veuve, et le veuf invalide ; mariage contracté antérieurement à l'ouverture du droit à pension | 4 août 1996 : le conjoint survivant ; liens de mariage existant au moment du décès (loi n° 96-66, art. 60 et 61) |
-| Remariage | suppression de la pension | 4 août 1996 : suspension seulement en cas de remariage avant 55 ans ; rétablissement, revalorisé, au décès du nouveau conjoint ou à la dissolution du mariage ; cumul de pensions de conjoint survivant interdit, la plus élevée étant servie (loi n° 96-66, art. 63) |
-| Plafond de cumul | pension de référence du mari | 4 août 1996 : pension dont bénéficiait ou aurait pu bénéficier le défunt (loi n° 96-66, art. 69) |
-| Âge limite de l'orphelin | orphelin mineur : 16 ans ; 21 ans en cas d'études ; sans limite en cas d'infirmité | 1^er^ mai 1997 : 16 ans ; 21 ans en études secondaires, techniques ou professionnelles ; 25 ans en études supérieures sans bourse ; la fille, tant qu'elle ne dispose pas de ressources ou que l'obligation alimentaire n'incombe pas à son époux ; sans limite en cas d'infirmité (loi n° 97-61, art. 64) ; 2 juillet 2007 : fille sans limite d'âge, conditions appréciées au décès, paiement définitivement suspendu si l'une d'elles fait défaut ; le mot « mineur » est supprimé (loi n° 2007-43) |
-| Revalorisation | à chaque paiement, proportionnellement à la variation du SMAG | aucune ; en 2026, le décret qui fixe le SMAG énonce que son augmentation s'applique aux pensions de retraite (décret n° 2026-66, art. 5) |
-
-: Évolution des autres éléments du régime des salariés agricoles, 1981-2026 {#tbl-rsa-evolution}
+```{python}
+#| echo: false
+#| output: asis
+table("rsa_evolution",
+      "Évolution des autres éléments du régime des salariés agricoles, 1981-2026",
+      "tbl-rsa-evolution")
+```
 
 Sources : @loi81-6, art. 60-69 et 74 ; @loi95-102 ; @loi96-66 ; @loi97-61, art. 1-2 ; @loi2007-43, art. 3-5 ; @decret2026-66, art. 5. Les lois n° 95-102 et 96-66 n'énoncent pas de date d'effet : les 10 décembre 1995 et 4 août 1996 sont les dates auxquelles elles deviennent exécutoires, cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis, les 5 décembre 1995 et 30 juillet 1996. La loi n° 97-61 prend effet au 1^er^ mai 1997 (art. 2). La loi n° 2007-43, sans clause d'effet, devient exécutoire le 2 juillet 2007, cinq jours après le dépôt du *Journal officiel* du 26 juin 2007, le 27 juin.
 
@@ -982,7 +981,15 @@ $$
 \Delta P = \tau_P\,\Delta S_A
 $$
 
-où $\Delta S_A$ est la hausse de $S_A$, 25 jours par mois faisant les 300 jours de l'année ; l'article 97 en règle aussi le calcul pour les veuves et les orphelins, et la majoration ne se cumule pas avec le relèvement au niveau de la pension minimale [@loi89-73]. C'est la règle en somme que le régime non agricole a appliquée de 1980 à 2000 (@sec-rsna-reforme-1981), et non la règle proportionnelle des titres I et II. Les périodes d'emploi agricole accomplies depuis le 1^er^ janvier 1981 peuvent être validées moyennant le versement des cotisations arriérées (art. 99).
+où $\Delta S_A$ est la hausse de $S_A$, 25 jours par mois faisant les 300 jours de l'année ; l'article 97 en règle aussi le calcul pour les veuves et les orphelins, et la majoration ne se cumule pas avec le relèvement au niveau de la pension minimale [@loi89-73]. C'est la règle en somme que le régime non agricole a appliquée de 1980 à 2000 (@sec-rsna-reforme-1981), et non la règle proportionnelle des titres I et II. Les périodes d'emploi agricole accomplies depuis le 1^er^ janvier 1981 peuvent être validées moyennant le versement des cotisations arriérées (art. 99). Les grandeurs que le titre III fixe en propre se lisent au @tbl-rsaa.
+
+```{python}
+#| echo: false
+#| output: asis
+table("rsaa",
+      "Grandeurs propres au régime agricole amélioré, depuis le 1^er^ octobre 1989",
+      "tbl-rsaa")
+```
 
 | Maillon | Régime des salariés agricoles : loi n° 81-6, titres I et II (1^er^ janvier 1981) | Régime amélioré : titre III, loi n° 89-73 (1^er^ octobre 1989) |
 |---|---|---|
@@ -1076,7 +1083,15 @@ Aucun texte modifiant la formule du régime — l'acquisition des points, le sal
 
 <!-- RECHERCHE r-complementaire-modificatifs : modificatifs du règlement du régime complémentaire (voir docs/recherches.yml) -->
 
-L'arrêté ne porte pas de clause d'effet : le *Journal officiel* n° 11 du 7 février 1997 ayant été déposé au siège du gouvernorat de Tunis le 11 février, il devient exécutoire le 16 février 1997. Ses règles sont voisines de celles que le régime non agricole a reçues en 1990 et en 1997 (@sec-rsna-derives) et le régime agricole en 1996 (@sec-rsa-evolution).
+L'arrêté ne porte pas de clause d'effet : le *Journal officiel* n° 11 du 7 février 1997 ayant été déposé au siège du gouvernorat de Tunis le 11 février, il devient exécutoire le 16 février 1997. Ses règles sont voisines de celles que le régime non agricole a reçues en 1990 et en 1997 (@sec-rsna-derives) et le régime agricole en 1996 (@sec-rsa-evolution). Les taux et les seuils du régime, avec leur date d'effet, sont rassemblés au @tbl-complementaire.
+
+```{python}
+#| echo: false
+#| output: asis
+table("complementaire",
+      "Taux et seuils du régime complémentaire",
+      "tbl-complementaire")
+```
 
 <!-- TODO (documentaliste) : rechercher la série du salaire de référence et de la valeur du point
 (rapports annuels de la CAVIS puis de la CNSS) et lire l'annexe I du règlement à l'image. -->
@@ -1159,8 +1174,9 @@ Sources : @decret82-1359, art. 7, 18-24 ; @decret82-1360, art. 1, 5, 7-8 et 17 ;
 <!-- Tableau tenu à la main (réexaminé le 24/09/2026, openfisca-tunisia 0.111). Ses lignes
 chiffrées sont désormais engendrées, datées de 1982, 1989 et 1995, aux trois tableaux qui suivent
 (tbl-rtns-vieillesse, tbl-rtns-agricole, tbl-rtns-classes) : âge, départ avec décote, stage, taux,
-majoration, plafond, pension minimale, classes de revenus, et pour le secteur agricole l'âge et
-l'allocation de vieillesse. Il reste à la main pour ce que ceux-là ne disent pas : les règles —
+majoration, plafond, pension minimale, classes de revenus, et pour le secteur agricole l'âge,
+l'allocation de vieillesse et, depuis le 3 octobre 2026, la durée de 180, 260 puis 300 jours
+à laquelle le SMAG est rapporté (décret n° 96-1797). Il reste à la main pour ce que ceux-là ne disent pas : les règles —
 mode de calcul du revenu de référence, sort des carrières inférieures au stage, mode de
 revalorisation (par décret, par arrêté, puis automatique en 2002) — et les grandeurs du secteur
 agricole de 1982 qui viennent de la loi n° 81-6 par renvoi (taux de 40 %, majoration, plafond,
@@ -1182,11 +1198,11 @@ Sources : @decret82-1359, art. 18, 20, 22 et 26 ; @decret95-1166, art. 23, 24, 2
 #| echo: false
 #| output: asis
 table("rtns_agricole",
-      "Âge et allocation de vieillesse des non-salariés du secteur agricole",
+      "Âge, allocation de vieillesse et durée annuelle du SMAG des non-salariés du secteur agricole",
       "tbl-rtns-agricole")
 ```
 
-Sources : @decret82-1360, art. 8, 17 et 18 ; @decret95-1166, art. 24 et 39. Avant 1995, le taux, le stage et le plafond du secteur agricole n'ont pas de colonne : le décret n° 82-1360 ne les énonce pas, ils viennent de la loi n° 81-6 par renvoi [@decret82-1360, art. 1 et 7] ; depuis 1995, ce sont ceux du @tbl-rtns-vieillesse. L'allocation de vieillesse, réservée aux assurés de la période transitoire [@decret82-1360, art. 16-17], disparaît avec l'abrogation du décret n° 82-1360 au 19 juillet 1995, d'où la case vide ; les carrières inférieures au stage reçoivent depuis un versement unique égal aux cotisations [@decret95-1166, art. 28 et 39].
+Sources : @decret82-1360, art. 8, 17 et 18 ; @decret95-1166, art. 7, 24, 25 et 39 ; @decret-96-1797, art. 1. Le SMAG du revenu de référence est rapporté à 300 jours par an, sauf de 1996 à 1997, où il l'est, à titre transitoire, à 180 puis 260 jours ; la date du retour à 300 jours est celle du texte arabe, qui fait foi (@tbl-rtns-coeur). Avant 1995, le taux, le stage et le plafond du secteur agricole n'ont pas de colonne : le décret n° 82-1360 ne les énonce pas, ils viennent de la loi n° 81-6 par renvoi [@decret82-1360, art. 1 et 7] ; depuis 1995, ce sont ceux du @tbl-rtns-vieillesse. L'allocation de vieillesse, réservée aux assurés de la période transitoire [@decret82-1360, art. 16-17], disparaît avec l'abrogation du décret n° 82-1360 au 19 juillet 1995, d'où la case vide ; les carrières inférieures au stage reçoivent depuis un versement unique égal aux cotisations [@decret95-1166, art. 28 et 39].
 
 ```{python}
 #| echo: false
@@ -1365,7 +1381,15 @@ $$
 Le départ entre 60 et 65 ans est réduit de $\delta = 0{,}5\,\%$ par trimestre restant à courir jusqu'à 65 ans [@decret89-107, art. 18].
 :::
 
-**Le calcul part d'une classe.** L'assuré choisit l'une de **quatre classes**, de coefficient **2, 4, 6 et 9** du [SMIG](#g-smig) du régime de 48 heures rapporté à 2 400 heures par an [@decret89-107, art. 6]. Le revenu de référence est la moyenne pondérée des coefficients des classes auxquelles il a adhéré, appliquée au SMIG en vigueur à l'ouverture du droit [@decret89-107, art. 19]. La cotisation est de 10,65 % du revenu forfaitaire de la classe, dont 5,25 % pour les pensions, et elle est à la charge du travailleur, que son employeur peut prendre en charge en tout ou partie [@decret89-107, art. 7-8].
+**Le calcul part d'une classe** (@tbl-rtte). L'assuré choisit l'une de **quatre classes**, de coefficient **2, 4, 6 et 9** du [SMIG](#g-smig) du régime de 48 heures rapporté à 2 400 heures par an [@decret89-107, art. 6]. Le revenu de référence est la moyenne pondérée des coefficients des classes auxquelles il a adhéré, appliquée au SMIG en vigueur à l'ouverture du droit [@decret89-107, art. 19]. La cotisation est de 10,65 % du revenu forfaitaire de la classe, dont 5,25 % pour les pensions, et elle est à la charge du travailleur, que son employeur peut prendre en charge en tout ou partie [@decret89-107, art. 7-8].
+
+```{python}
+#| echo: false
+#| output: asis
+table("rtte",
+      "Le régime des Tunisiens à l'étranger, depuis le 19 janvier 1989",
+      "tbl-rtte")
+```
 
 **Le plancher est la moitié du SMIG annuel** — plus haut que celui des non-salariés, ramené à 30 % en 1995 [@decret89-107, art. 22]. La revalorisation n'est pas automatique : le montant des pensions en cours « *sera révisé en cas de hausse sensible du niveau de vie* », la date et les modalités de cette révision étant renvoyées à un décret [@decret89-107, art. 23].
 
@@ -1413,7 +1437,7 @@ Le régime est jeune : il compte 8 pensionnés pour 749 assurés en 2000, 140 po
 
 **Les origines.** La **loi n° 2002-32 du 12 mars 2002, relative au régime de sécurité sociale pour certaines catégories de travailleurs dans les secteurs agricole et non agricole** [@loi2002-32], vise cinq catégories : les employés de maison ; les personnes employées par l'État, les collectivités locales et les établissements publics administratifs qui ne sont couvertes par aucun autre régime ; les petits pêcheurs et petits armateurs ; les agriculteurs exploitant au plus cinq hectares en sec ou un hectare en irrigué ; les artisans travaillant à la pièce [@loi2002-32, art. 1]. La loi ne lui donne pas de nom abrégé : ce livre, comme le livre « Cotisations sociales », le désigne comme le [régime des travailleurs à faibles revenus](#g-regime-bas-revenus), que le livre « Prestations sociales » appelle régime des « bas revenus ». Elle ne porte pas de clause d'entrée en vigueur : publiée au *Journal officiel* du 15 mars 2002, déposé au siège du gouvernorat de Tunis le 16 mars, elle devient exécutoire le **21 mars 2002**. Le **décret n° 2002-916 du 22 avril 2002** en fixe les modalités d'application ; il devient exécutoire le 7 mai 2002, cinq jours après le dépôt du *Journal officiel* du 30 avril, le 2 mai [@decret2002-916].
 
-La loi fixe elle-même les règles de la pension, sans renvoi au régime non agricole, et le décret en précise l'assiette.
+La loi fixe elle-même les règles de la pension, sans renvoi au régime non agricole, et le décret en précise l'assiette (@tbl-rtfr).
 
 - **Ouverture du droit** : **65 ans** au moins, 120 mois de cotisations effectives et validées, absence d'activité rémunérée assujettie [@loi2002-32, art. 13]. L'assuré qui atteint l'âge sans avoir accompli le stage peut rester en activité pour l'achever ; s'il décède avant, les retenues pour pension sont reversées en une fois [@loi2002-32, art. 37].
 - **Calcul** : « le montant minimum de la pension de vieillesse est fixé à **30 %** du salaire minimum garanti du secteur d'appartenance de l'assuré, en cas de réalisation de la condition de 120 mois » ; chaque trimestre supplémentaire ouvre une majoration de 0,5 % du salaire ayant servi au calcul des cotisations, « sans que le montant total de la pension puisse excéder un maximum de **80 %** dudit salaire » [@loi2002-32, art. 14].
@@ -1436,6 +1460,14 @@ Par le calcul, chaque trimestre au-delà du stage ajoute un tiers de point de $S
 - **Invalidité** : 60 mois de cotisations effectives au moins ; pension de 30 % du salaire minimum garanti du secteur, avec la même majoration et le même plafond, et une bonification de 20 % pour tierce personne [@loi2002-32, art. 16-18].
 - **Survivants** : 50 % de la pension du défunt au conjoint, suspendus s'il se remarie avant 55 ans ; 30 % collectivement aux orphelins, jusqu'à 16, 21 ou 25 ans selon les études ; le cumul ne peut dépasser la pension du défunt [@loi2002-32, art. 23 à 28].
 - **Revalorisation** : automatique, à chaque hausse du SMIG ou du SMAG selon le secteur [@loi2002-32, art. 32] ; une majoration du salaire minimum n'est prise en compte qu'à partir du premier jour de l'année civile qui suit [@decret2002-916, art. 25].
+
+```{python}
+#| echo: false
+#| output: asis
+table("rtfr",
+      "Le régime des travailleurs à faibles revenus, depuis le 21 mars 2002",
+      "tbl-rtfr")
+```
 
 **Aucune réforme du cœur du régime ; son champ s'est étendu.** Seul l'article 25 de la loi a été modifié : la loi n° 2007-43, exécutoire le 2 juillet 2007, supprime le mot « mineur » en tête de l'article et prévoit que la pension de la fille sans ressources est définitivement suspendue dès qu'une condition fait défaut ; elle ne change aucun des âges [@loi2007-43, art. 3-4]. Le champ du régime, lui, a été étendu, et deux textes y rattachent d'autres catégories.
 
@@ -1462,7 +1494,7 @@ dont seul l'intitulé est connu. -->
 
 ### Les artistes, créateurs et intellectuels {#sec-raci}
 
-**Les origines.** Le [régime des artistes, créateurs et intellectuels](#g-regime-artistes), créé par la **loi n° 2002-104 du 30 décembre 2002**, comprend « les pensions de vieillesse, d'invalidité et de survivants » [@loi2002-104, art. 1]. La loi ne comporte pas de clause d'entrée en vigueur : publiée et déposée au siège du gouvernorat de Tunis le 31 décembre 2002, elle devient exécutoire le 5 janvier 2003. Le décret n° 2003-894 du 21 avril 2003 en fixe les modalités d'application [@decret2003-894] ; publié le 29 avril 2003, il devient exécutoire le 5 mai 2003. Entre ces deux dates, le régime a son âge, son stage et son minimum, mais pas encore de taux.
+**Les origines.** Le [régime des artistes, créateurs et intellectuels](#g-regime-artistes), créé par la **loi n° 2002-104 du 30 décembre 2002**, comprend « les pensions de vieillesse, d'invalidité et de survivants » [@loi2002-104, art. 1]. La loi ne comporte pas de clause d'entrée en vigueur : publiée et déposée au siège du gouvernorat de Tunis le 31 décembre 2002, elle devient exécutoire le 5 janvier 2003. Le décret n° 2003-894 du 21 avril 2003 en fixe les modalités d'application [@decret2003-894] ; publié le 29 avril 2003, il devient exécutoire le 5 mai 2003. Entre ces deux dates, le régime a son âge, son stage et son minimum, mais pas encore de taux (@tbl-raci).
 
 **L'ouverture du droit tient à l'âge et au stage, que fixe la loi.** La pension de vieillesse est ouverte à **65 ans**, après **40 trimestres** de cotisations effectives [@loi2002-104, art. 12]. La pension d'invalidité l'est, avant cet âge, à l'assuré dont la capacité de travail ou de gain est réduite des deux tiers au moins, après **20 trimestres** — sans stage pour la victime d'un accident non professionnel ; à 65 ans, elle est remplacée par une pension de vieillesse [@loi2002-104, art. 14-15].
 
@@ -1487,6 +1519,14 @@ La pension minimale $P_{\min}$ n'est pas une fraction de $S$ : elle est de 200 d
 <!-- RECHERCHE r-raci-minimum-200 : texte relevant le minimum de 200 dinars (voir docs/recherches.yml) -->
 
 **Les survivants ont leurs règles propres.** Le conjoint reçoit 50 % de la pension du défunt, suspendus s'il se remarie avant 55 ans ; les orphelins reçoivent collectivement 30 %, jusqu'à 16 ans, 21 ans en études secondaires ou professionnelles, 25 ans en études supérieures sans bourse [@loi2002-104, art. 20 à 23]. L'article 20 ajoute, dans l'édition française, que « ce taux est majoré de 75 % de la pension de vieillesse ou d'invalidité en cas d'existence d'enfants bénéficiaires d'une pension » ; l'édition arabe dit que ce taux est relevé « jusqu'à » 75 % de cette pension [@loi2002-104, art. 20]. Le texte ne dit pas si la pension de survivants ainsi portée à 75 % est celle du seul conjoint ou celle de l'ensemble des survivants ; le cumul des pensions de survivants reste plafonné à la pension du défunt [@loi2002-104, art. 25].
+
+```{python}
+#| echo: false
+#| output: asis
+table("raci",
+      "Le régime des artistes, créateurs et intellectuels, depuis 2003",
+      "tbl-raci")
+```
 
 **La revalorisation est automatique** : les pensions en cours suivent chaque hausse du SMIG du régime de 48 heures, dans la proportion de son augmentation [@loi2002-104, art. 31].
 

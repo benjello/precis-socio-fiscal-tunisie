@@ -1,0 +1,12 @@
+- libelle: السنّ التي يوقف قبلها الزواج من جديد جراية القرين
+  parametre: parameters/retraite/rsa/survivants/age_remariage_suspensif.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsa.survivants.age_remariage_suspensif/table/
+- libelle: السنّ القصوى لليتيم
+  parametre: parameters/retraite/rsa/survivants/age_limite_orphelin.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsa.survivants.age_limite_orphelin/table/
+- libelle: السنّ القصوى لليتيم الدارس
+  parametre: parameters/retraite/rsa/survivants/age_limite_orphelin_etudes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsa.survivants.age_limite_orphelin_etudes/table/
+- libelle: السنّ القصوى لليتيم في التعليم العالي
+  parametre: parameters/retraite/rsa/survivants/age_limite_orphelin_etudes_superieures.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsa.survivants.age_limite_orphelin_etudes_superieures/table/

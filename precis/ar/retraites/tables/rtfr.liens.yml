@@ -1,0 +1,45 @@
+- libelle: سنّ استحقاق جراية الشيخوخة
+  parametre: parameters/retraite/rtfr/age_legal.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtfr.age_legal/table/
+- libelle: مدة الانخراط الدنيا
+  parametre: parameters/retraite/rtfr/stage_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtfr.stage_mois/table/
+- libelle: نسبة الجراية عند استيفاء مدة الانخراط الدنيا، من الأجر الأدنى المضمون للقطاع
+  parametre: parameters/retraite/rtfr/taux_base.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtfr.taux_base/table/
+- libelle: الترفيع عن كلّ ثلاثية تفوق مدة الانخراط الدنيا
+  parametre: parameters/retraite/rtfr/majoration_par_trimestre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtfr.majoration_par_trimestre/table/
+- libelle: سقف نسبة الجراية
+  parametre: parameters/retraite/rtfr/plafond_taux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtfr.plafond_taux/table/
+- libelle: 'العجز: مدة الانخراط الدنيا'
+  parametre: parameters/retraite/rtfr/invalidite/stage_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtfr.invalidite.stage_mois/table/
+- libelle: 'العجز: النسبة الأساسية'
+  parametre: parameters/retraite/rtfr/invalidite/taux_base.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtfr.invalidite.taux_base/table/
+- libelle: الزيادة بعنوان المساعدة من الغير
+  parametre: parameters/retraite/rtfr/invalidite/majoration_tierce_personne.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtfr.invalidite.majoration_tierce_personne/table/
+- libelle: جراية القرين الباقي على قيد الحياة
+  parametre: parameters/retraite/rtfr/survivants/taux_conjoint.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtfr.survivants.taux_conjoint/table/
+- libelle: جرايات الأيتام، مجتمعة
+  parametre: parameters/retraite/rtfr/survivants/taux_orphelins.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtfr.survivants.taux_orphelins/table/
+- libelle: 'السنّ القصوى لليتيم: القاعدة العامة؛ الدراسات الثانوية أو المهنية؛ الدراسات
+    العليا (1)'
+  parametre: parameters/retraite/rtfr/survivants/age_limite_orphelin.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtfr.survivants.age_limite_orphelin/table/
+- libelle: 'السنّ القصوى لليتيم: القاعدة العامة؛ الدراسات الثانوية أو المهنية؛ الدراسات
+    العليا (2)'
+  parametre: parameters/retraite/rtfr/survivants/age_limite_orphelin_etudes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtfr.survivants.age_limite_orphelin_etudes/table/
+- libelle: 'السنّ القصوى لليتيم: القاعدة العامة؛ الدراسات الثانوية أو المهنية؛ الدراسات
+    العليا (3)'
+  parametre: parameters/retraite/rtfr/survivants/age_limite_orphelin_etudes_superieures.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtfr.survivants.age_limite_orphelin_etudes_superieures/table/
+- libelle: السنّ التي يوقف قبلها الزواج من جديد جراية القرين
+  parametre: parameters/retraite/rtfr/survivants/age_remariage_suspensif.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtfr.survivants.age_remariage_suspensif/table/
