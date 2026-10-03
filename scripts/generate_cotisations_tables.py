@@ -57,6 +57,8 @@ MOTS = {
         "reduction": "Réduction de la part patronale du taux global (en points)",
         "aucune": "aucune",
         "css_salarie": "Contribution sociale de solidarité, taux applicable aux salariés",
+        "maladie_employeur": "Part de l'employeur public", "maladie_agent": "Part de l'agent",
+        "perte_employeur": "Part de l'employeur", "perte_salarie": "Part du salarié",
     },
     "ar": {
         "effet": "بداية السريان", "texte": "النصّ", "branche": "الفرع",
@@ -81,6 +83,8 @@ MOTS = {
         "reduction": "التخفيض في حصة صاحب العمل من النسبة الإجمالية (بالنقاط)",
         "aucune": "لا شيء",
         "css_salarie": "المساهمة الاجتماعية التضامنية، النسبة المطبّقة على الأجراء",
+        "maladie_employeur": "مساهمة المؤجر العمومي", "maladie_agent": "مساهمة العون",
+        "perte_employeur": "مساهمة المؤجر", "perte_salarie": "مساهمة الأجير",
     },
 }
 
@@ -607,8 +611,39 @@ def css_salarie(langue):
         langue=langue, sans_maintien=True)
 
 
+def cnrps_maladie(langue):
+    """La montée en charge de la cotisation d'assurance maladie des agents de la CNRPS.
+
+    Elle commence au 1er juillet 2007 : la part patronale antérieure (1 %) n'est rattachée à
+    aucun texte, et ne se publie pas (`depuis`). La première ligne porte la part de l'agent
+    alors en vigueur, fixée depuis 1973.
+    """
+    m = MOTS[langue]
+    base = f"{PUBLIC}/salarie_cnrps"
+    return ot.tableau_taux_datee(
+        [(f"{base}/cotisations_employeur/maladie.yaml", m["maladie_employeur"], _taux(langue)),
+         (f"{base}/cotisations_salarie/maladie.yaml", m["maladie_agent"], _taux(langue))],
+        cles=dict.fromkeys(("2007-07-01", "2008-07-01", "2009-07-01"), "decret2007-1406, art. 4"),
+        colonne_periode=m["effet"], colonne_texte=m["texte"], langue=langue,
+        depuis="2007-07-01", colonne_total=m["total"])
+
+
+def perte_emploi(langue):
+    """La cotisation au fonds d'assurance contre la perte d'emploi, depuis 2025."""
+    m = MOTS[langue]
+    base = f"{PRIVE}/rsna"
+    return ot.tableau_taux_datee(
+        [(f"{base}/cotisations_employeur/perte_d_emploi.yaml", m["perte_employeur"], _taux(langue)),
+         (f"{base}/cotisations_salarie/perte_d_emploi.yaml", m["perte_salarie"], _taux(langue))],
+        cles={"2025-01-01": "lf-2025, art. 17"},
+        colonne_periode=m["effet"], colonne_texte=m["texte"], langue=langue,
+        colonne_total=m["total"])
+
+
 TABLEAUX = {
     "coin_par_regime.md": coin_par_regime,
+    "cnrps_maladie.md": cnrps_maladie,
+    "perte_emploi.md": perte_emploi,
     "cnrps_retraite.md": cnrps_retraite,
     "cnrps_employeur.md": cnrps_employeur,
     "prevoyance_pensionnes.md": prevoyance_pensionnes,
@@ -628,6 +663,11 @@ LIVRE = "cotisations_sociales"
 LIVRES = {
     "cnrps_retraite.md": (LIVRE, "remunerations_publiques"),
     "css_salarie.md": ("remunerations_publiques",),
+    # L'assurance maladie et la perte d'emploi sont des prestations au livre « Prestations
+    # sociales » : il cite les taux qui les financent.
+    "cnrps_maladie.md": (LIVRE, "prestations_sociales"),
+    "prevoyance_pensionnes.md": (LIVRE, "prestations_sociales"),
+    "perte_emploi.md": (LIVRE, "prestations_sociales"),
 }
 
 

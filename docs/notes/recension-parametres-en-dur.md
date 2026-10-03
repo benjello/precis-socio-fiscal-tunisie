@@ -497,7 +497,7 @@ Composants ajoutés ou remontés dans `scripts/openfisca_tables.py` : `compte`, 
 `part_smig`, `coefficient`), `en_vigueur`, `enchaine`, `cellule`, `tableau_enchaine` (remontés
 des retraites, des prestations et de la fiscalité, sans changement de snapshot) ;
 `ecrire_tableau(..., autres_livres=…)`, `ecrire_dans_livres` et `cles_manquantes` (réemploi d'un tableau dans un
-autre livre, motif 10) ; `tableau_taux_datee(..., colonne_variation=…, sans_maintien=…)` et
+autre livre, motif 10) ; `tableau_taux_datee(..., colonne_variation=…, sans_maintien=…, depuis=…, colonne_total=…)` et
 `formate_points` (colonne « avant → après » en points, motif 3 pour un taux seul) ;
 `tableau_gabarit`, `gabarit` et `Lecture` (tableau mixte, motif 1 : le texte de chaque case,
 dans les deux langues, reçoit des valeurs lues dans le paramètre à la date qui les fonde) ;
@@ -527,3 +527,5 @@ par ligne) ; noms comptés arabes au-delà de cent (« 300 يوم », « 180 ي�
 | RU-15 | fait, partie C | `retraites/tables/cnrps_survivants.md` (`tbl-cnrps-survivants`) | réductions de 5 et 10 %, plancher de 50 %, âges de 21 et 55 ans restent sans paramètre (C) |
 | PS-04 | fait, partie C | `cnrps_indemnites_familiales.md`, émis aussi dans `prestations_sociales/tables/` (`tbl-indemnites-familiales-public`, remplace le tableau fait main) | la ligne « enfant handicapé » (4,880 D, 1996) n'a pas de paramètre : elle passe dans la ligne « Sources » |
 | CS-02 | fait, en partie | `cotisations_sociales/tables/classes_revenu.md` (`tbl-classes-revenu`), émis par le générateur des retraites | classes des non-salariés, des artistes et des Tunisiens à l'étranger, avec le salaire minimum de référence ; le tableau `tbl-assiettes`, qui mêle ces régimes à des assiettes classées B ou C, reste fait main |
+| PS-12 | fait | `perte_emploi.md` (`tbl-perte-emploi`), dans les livres des cotisations et des prestations | « 0,5 % chacun » vérifié sur l'édition arabe de la loi de finances pour 2025, art. 17 (JORT n° 149 de 2024) ; la prose des prestations est alignée |
+| PS-13 | fait, partie B | `cnrps_maladie.md` (`tbl-cnrps-maladie`) et `prevoyance_pensionnes.md`, dans les livres des cotisations et des prestations | montée en charge de 2007 à 2009 (agents) et de 2007 à 2010 (pensionnés) ; la part patronale de 1 % antérieure à 2007, sans référence, n'est pas publiée (`depuis`) ; la part maladie du régime général reste non isolable |

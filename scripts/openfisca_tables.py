@@ -992,11 +992,18 @@ def tableau_taux_datee(
     langue: str = "fr",
     colonne_variation: str | None = None,
     sans_maintien: bool = False,
+    depuis: str | None = None,
+    colonne_total: str | None = None,
 ) -> "pd.DataFrame | None":
     """Comme `tableau_evolution_datee`, mais pour des barèmes à une tranche.
 
     `sans_maintien` : écarte les dates où aucun taux ne change — un texte qui reconduit un
     taux n'est pas une étape de son évolution.
+
+    `depuis` : première date d'effet publiée ; la première ligne porte les taux en vigueur à
+    cette date. Sert à ne pas publier des états antérieurs qu'aucun texte n'établit.
+    `colonne_total` : en-tête d'une colonne qui somme, ligne par ligne, les taux des `specs`
+    (part de l'employeur et part de l'assuré).
 
     `colonne_variation` : en-tête d'une colonne qui donne, ligne par ligne, l'écart en points
     avec la ligne précédente — le changement concret qu'opère le texte de la ligne. Elle suit
@@ -1021,6 +1028,8 @@ def tableau_taux_datee(
     if sans_maintien:
         dates = [d for i, d in enumerate(dates) if i == 0 or any(
             valeur_a(c, d) != valeur_a(c, dates[i - 1]) for c, _e, _f in specs)]
+    if depuis:
+        dates = [d for d in dates if d >= depuis]
     lignes = []
     for date in dates:
         ligne = {colonne_periode: formate_date(date, langue)}
@@ -1034,6 +1043,10 @@ def tableau_taux_datee(
                     break
             if titre:
                 break
+        if colonne_total:
+            valeurs = [valeur_a(c, date) for c, _e, _f in specs]
+            presentes = [v for v in valeurs if v is not None]
+            ligne[colonne_total] = specs[0][2](sum(presentes) if presentes else None)
         if colonne_variation:
             chemin = specs[0][0]
             precedente = [d for d in dates if d < date]

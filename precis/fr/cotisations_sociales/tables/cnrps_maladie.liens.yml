@@ -1,0 +1,6 @@
+- libelle: Part de l'employeur public
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_public/salarie_cnrps/cotisations_employeur/maladie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_public.salarie_cnrps.cotisations_employeur.maladie/table/
+- libelle: Part de l'agent
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_public/salarie_cnrps/cotisations_salarie/maladie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_public.salarie_cnrps.cotisations_salarie.maladie/table/

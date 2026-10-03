@@ -423,7 +423,15 @@ Dans chaque régime, seule la part maladie est attestée par un texte, et elle n
 
 #### Le secteur public {#sec-cot-maladie-public}
 
-Les agents affiliés à la CNRPS cotisent au régime de base d'assurance maladie selon une montée en charge propre, de 3 % au 1^er^ juillet 2007 à 4,88 % au 1^er^ juillet 2008 et 6,75 % au 1^er^ juillet 2009, répartis entre l'employeur et l'agent [@decret2007-1406, art. 4]. Les pensionnés de la caisse cotisent sur leur pension, selon un calendrier distinct (@sec-cot-pensionnes).
+Les agents affiliés à la CNRPS cotisent au régime de base d'assurance maladie selon une montée en charge propre, de 3 % au 1^er^ juillet 2007 à 4,88 % au 1^er^ juillet 2008 et 6,75 % au 1^er^ juillet 2009, répartis entre l'employeur et l'agent [@decret2007-1406, art. 4] (@tbl-cnrps-maladie). Les pensionnés de la caisse cotisent sur leur pension, selon un calendrier distinct (@sec-cot-pensionnes).
+
+```{python}
+#| echo: false
+#| output: asis
+table("cnrps_maladie",
+      "Cotisation d'assurance maladie des agents affiliés à la CNRPS, 2007-2009",
+      "tbl-cnrps-maladie")
+```
 
 <!-- TODO (documentaliste) : reporter la répartition employeur/agent de l'art. 4 du décret n° 2007-1406 (lu à l'image, p. 2157, d'après la note de la référence), et établir la cotisation maladie des agents publics avant 2007. -->
 
@@ -673,7 +681,15 @@ Dans les comptes de bilan de la caisse, la branche ainsi financée est excédent
 
 #### La perte d'emploi {#sec-cot-perte-emploi}
 
-L'article 17 de la loi n° 2024-48 du 9 décembre 2024, portant loi de finances pour l'année 2025 [@lf-2025], crée un fonds spécial d'assurance contre la perte d'emploi pour raisons économiques, destiné à financer un régime d'assurance contre la perte collective d'emploi pour des motifs étrangers aux deux parties de la relation de travail et un dispositif d'accompagnement des travailleurs licenciés. Parmi les ressources du fonds figure une cotisation de **0,5 % supportée par chacune des deux parties**, assise sur la masse salariale déclarée auprès de la CNSS ; le taux figure donc dans la loi elle-même, et non dans le décret d'application qu'elle annonce. Ce décret n'a pas été identifié à ce jour.
+L'article 17 de la loi n° 2024-48 du 9 décembre 2024, portant loi de finances pour l'année 2025 [@lf-2025], crée un fonds spécial d'assurance contre la perte d'emploi pour raisons économiques, destiné à financer un régime d'assurance contre la perte collective d'emploi pour des motifs étrangers aux deux parties de la relation de travail et un dispositif d'accompagnement des travailleurs licenciés. Parmi les ressources du fonds figure une cotisation de **0,5 % supportée par chacune des deux parties**, assise sur la masse salariale déclarée auprès de la CNSS ; le taux figure donc dans la loi elle-même, et non dans le décret d'application qu'elle annonce (@tbl-perte-emploi). Ce décret n'a pas été identifié à ce jour.
+
+```{python}
+#| echo: false
+#| output: asis
+table("perte_emploi",
+      "Cotisation au fonds d'assurance contre la perte d'emploi pour raisons économiques",
+      "tbl-perte-emploi")
+```
 
 L'article ne comporte pas de clause d'entrée en vigueur propre : la cotisation court au 1^er^ janvier 2025 en vertu de la règle générale d'application des lois de finances à l'année budgétaire.
 

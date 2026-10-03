@@ -460,7 +460,15 @@ La loi n° 96-101 du 18 novembre 1996 organise une [protection contre la perte d
 - Le bénéfice des **allocations familiales et de la majoration pour salaire unique est maintenu au titre des quatre trimestres suivant** celui de la cessation d'activité, au taux plafond, et ces périodes sont assimilées à des périodes d'activité pour l'ouverture du droit aux soins ; le caractère économique ou technologique doit être constaté par l'inspection du travail, la commission de contrôle des licenciements ou les tribunaux [@loi96-101, art. 7-8].
 - Une enveloppe annuelle prélevée sur les réserves de la caisse finance des interventions et actions sociales au profit des travailleurs [@loi96-101, art. 9].
 
-**L'article 17 de la loi de finances pour 2025** crée un « fonds d'assurance contre la perte de postes de travail pour raisons économiques », dont l'objet est de financer un régime d'assurance contre la perte collective de postes pour des raisons non imputables aux parties de la relation de travail, et d'instaurer un régime d'encadrement social des travailleurs licenciés pour raisons économiques. Le fonds est alimenté par une dotation budgétaire plafonnée, une cotisation de 0,5 % à la charge de l'employeur et du salarié assise sur la masse salariale déclarée, une fraction du produit de la majoration spécifique sur le tabac, une taxe sur certains jeux, et des dons ; les articles 2 à 4 de la loi de finances complémentaire pour 2009 sont abrogés et le reliquat de leurs ressources transféré au fonds [@lf-2025, art. 17].
+**L'article 17 de la loi de finances pour 2025** crée un « fonds d'assurance contre la perte de postes de travail pour raisons économiques », dont l'objet est de financer un régime d'assurance contre la perte collective de postes pour des raisons non imputables aux parties de la relation de travail, et d'instaurer un régime d'encadrement social des travailleurs licenciés pour raisons économiques. Le fonds est alimenté par une dotation budgétaire plafonnée, une cotisation de 0,5 % à la charge de chacune des deux parties, employeur et salarié, assise sur la masse salariale déclarée (@tbl-perte-emploi), une fraction du produit de la majoration spécifique sur le tabac, une taxe sur certains jeux, et des dons ; les articles 2 à 4 de la loi de finances complémentaire pour 2009 sont abrogés et le reliquat de leurs ressources transféré au fonds [@lf-2025, art. 17].
+
+```{python}
+#| echo: false
+#| output: asis
+table("perte_emploi",
+      "Cotisation au fonds d'assurance contre la perte d'emploi pour raisons économiques",
+      "tbl-perte-emploi")
+```
 
 La citation repose sur l'**édition arabe** du fascicule. L'article renvoie à un décret pour les conditions et procédures de gestion du fonds ; ce décret n'est pas identifié ici. En l'état des textes identifiés, la loi de finances crée le véhicule financier et non le droit à prestation.
 
@@ -472,7 +480,23 @@ La loi n° 2004-71 institue un régime d'assurance maladie au profit des assuré
 
 **Les bénéficiaires** énumérés par l'article 4 sont l'[assuré social](#g-assure-social) ; le conjoint non divorcé ne bénéficiant pas d'une couverture obligatoire au titre de son activité ; les descendants à charge — enfants mineurs non couverts par ailleurs, la fille quel que soit son âge tant que son obligation alimentaire n'incombe pas à son époux ou tant qu'elle ne dispose pas de source de revenu, les enfants handicapés incapables d'exercer une activité rémunérée ; les bénéficiaires d'une pension de survivants sans couverture propre ; et les ascendants à charge non soumis à titre principal à une couverture obligatoire [@loi2004-71, art. 4]. Les soins sont pris en charge dans les secteurs public et privé, **à l'exception des frais consécutifs à un accident du travail ou à une maladie professionnelle**, qui restent régis par les textes propres [@loi2004-71, art. 5].
 
-La cotisation de base est de **6,75 %** du salaire ou du revenu, répartie en 4 % à la charge de l'employeur et 2,75 % à celle du salarié ; elle est intégralement à la charge de l'assuré travaillant pour son propre compte, et fixée à 4 % pour les pensionnés [@loi2004-71, art. 15].
+La cotisation de base est de **6,75 %** du salaire ou du revenu, répartie en 4 % à la charge de l'employeur et 2,75 % à celle du salarié ; elle est intégralement à la charge de l'assuré travaillant pour son propre compte, et fixée à 4 % pour les pensionnés [@loi2004-71, art. 15]. Pour les agents de la CNRPS et ses pensionnés, ces taux ont été atteints par paliers, de 2007 à 2010 (@tbl-cnrps-maladie ; @tbl-prevoyance-pensionnes).
+
+```{python}
+#| echo: false
+#| output: asis
+table("cnrps_maladie",
+      "Cotisation d'assurance maladie des agents affiliés à la CNRPS, 2007-2009",
+      "tbl-cnrps-maladie")
+```
+
+```{python}
+#| echo: false
+#| output: asis
+table("prevoyance_pensionnes",
+      "Cotisation d'assurance maladie assise sur la pension des retraités de la CNRPS, 2007-2010",
+      "tbl-prevoyance-pensionnes")
+```
 
 **C'est le décret n° 2007-1366, et non la loi, qui porte la date d'effet.** À compter du **1^er^ juillet 2007**, la loi n° 2004-71 s'applique aux affiliés de la CNRPS et, à la CNSS, aux régimes des salariés non agricoles, du secteur agricole tel que modifié par la loi n° 89-73, des artistes, créateurs et intellectuels, des travailleurs tunisiens à l'étranger et des travailleurs non salariés ; une extension à d'autres catégories est possible « dans une étape ultérieure » par décret [@decret2007-1366, art. 1-2].
 

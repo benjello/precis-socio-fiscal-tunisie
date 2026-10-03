@@ -188,7 +188,9 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 - **Tableau engendré — fait le 3 octobre 2026** : les indemnités familiales du secteur public
   (`tbl-indemnites-familiales-public`) sont désormais le tableau du livre « Retraites », émis
   dans ce livre ; le montant de l'enfant handicapé (1996), sans paramètre, est passé dans la
-  ligne « Sources ».
+  ligne « Sources ». Les taux qui financent l'assurance maladie des agents et des pensionnés
+  de la CNRPS et le fonds de perte d'emploi de 2025 viennent aussi du livre « Cotisations
+  sociales » (`tbl-cnrps-maladie`, `tbl-prevoyance-pensionnes`, `tbl-perte-emploi`).
 
 ## Rémunérations publiques
 
@@ -274,7 +276,8 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   2026** : contribution de l'employeur public à la CNRPS (`tbl-cnrps-employeur`, qui remplace
   le tableau fait main), prévoyance sociale des pensionnés (`tbl-prevoyance-pensionnes`),
   réduction conventionnelle de 1996-2007 (`tbl-reduction-conventionnelle`), classes de
-  revenus des régimes à assiette forfaitaire (`tbl-classes-revenu`). Restent faits main
+  revenus des régimes à assiette forfaitaire (`tbl-classes-revenu`), assurance maladie des
+  agents de la CNRPS (`tbl-cnrps-maladie`), perte d'emploi (`tbl-perte-emploi`). Restent faits main
   les tableaux classés B ou C dans `recension-parametres-en-dur.md` (assiettes, somme des
   trois textes, ventilation, montée en charge AMU, longue période) : ils attendent des PR
   openfisca-tunisia.
