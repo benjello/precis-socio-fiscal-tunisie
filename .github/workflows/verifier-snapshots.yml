@@ -38,6 +38,9 @@ on:
       # l'autre bouge.
       - 'precis/fr/fiscalite/tarifs/**'
       - 'scripts/check_tarifs_openfisca.py'
+      # Les tableaux de l'IS et du droit de consommation sont engendrés en partie depuis
+      # ces relevés, lus par `tarifs.py`.
+      - 'scripts/tarifs.py'
   push:
     branches: [master]
   # Le paramètre peut bouger sans que le précis change : c'est même le cas le plus

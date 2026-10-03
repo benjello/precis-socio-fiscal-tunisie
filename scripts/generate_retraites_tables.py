@@ -23,8 +23,9 @@ le caractère facultatif du maintien en activité, la nature de la prestation se
 carrières courtes. Ces règles sont dans la prose du chapitre, à l'endroit où le tableau
 paraît, et le tableau ne s'y substitue pas.
 
-CINQ TABLEAUX DU LIVRE RESTENT ÉCRITS À LA MAIN, et ce n'est pas un retard : les paramètres
-ne portent pas la distinction que leurs colonnes affirment. Celui des âges militaires est
+PLUSIEURS TABLEAUX DU LIVRE RESTENT ÉCRITS À LA MAIN — la liste complète est dans
+`docs/notes/recension-parametres-en-dur.md` —, parmi lesquels les cinq ci-dessous, et ce
+n'est pas un retard : les paramètres ne portent pas la distinction que leurs colonnes affirment. Celui des âges militaires est
 engendré depuis le 20 septembre 2026 ; ceux du salaire de référence et des survivants du
 régime non agricole, et celui de l'évolution du régime agricole, depuis le 3 octobre 2026,
 comme TABLEAUX MIXTES (`ot.tableau_gabarit`) : le texte de chaque case reste celui du
