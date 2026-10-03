@@ -1,0 +1,22 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-03
+# séries (tunisia_data) : cnss-retrospective-ressources-emplois
+# sources (citation) : @cnss-retrospective-1990-2004
+# fiches : sources/cnss-retrospective-financiere-1990-2004.md
+# méthode/hypothèses : SCAN SANS COUCHE TEXTE, valeurs océrisées et contrôlées par les IDENTITÉS COMPTABLES (sous-totaux, totaux, résultat = ressources − emplois, ensemble = somme des régimes) ; colonne `statut` sur chaque valeur (lu, lu_corrige, deduit_identite, masque_reliure). LA RELIURE MASQUE une colonne d'années sur la plupart des tableaux (1999 surtout, 2000 sur certains) : 430 cellules sont rétablies par une identité à une seule inconnue et 68 par le solveur fragments + identités (chiffres visibles lus case par case ; valeur unique compatible avec eux et avec toutes les identités ; validé sans erreur sur 771 valeurs connues masquées à l'identique), jamais devinées dans la colonne `valeur` ; 360 y restent vides, listées avec leur fragment visible dans cnss_retrospective_valeurs_a_retrouver.csv (221 à lire sur l'original, le reste s'en déduit). ESTIMATIONS PROVISOIRES : en attendant l'original, ces 360 cellules (1999 surtout, quelques-unes de 2000) reçoivent une estimation tracée (colonnes `estimation`, `methode_estimation`, `incertitude` ; tendance de la ligne, candidats compatibles avec les chiffres visibles, mise en cohérence avec les identités comptables), et `valeur_ou_estimation` réunit valeurs et estimations pour l'exploitation directe : les valeurs 1999 — et certaines de 2000 — de cette colonne sont donc pour partie des ESTIMATIONS, à ne pas citer comme données publiées. Estimations publiées et versionnées dans cnss_retrospective_estimations.csv, remplacées quand l'original est relu. Quatorze identités s'écartent de 2 mD entre valeurs imprimées vérifiées à l'image (totaux 2004 de tableaux jumeaux, emplois 1996) : écarts de la source, laissés tels quels. Unité : milliers de dinars (les cotisations 2000-2004 recoupent la série cnss-cotisations, en millions, à 1 % près). Comptabilité « Bilans » (droits constatés) : ne pas confondre avec les cotisations encaissées. Montants courants, non déflatés.
+# note : Branche des pensions du régime des salariés non agricoles : ressources, pensions servies et résultat de gestion, millions de dinars courants, 1990-2004
+Année,Cotisations (MD),Pensions servies (MD),Produits financiers (MD),Total des ressources (MD),Total des emplois (MD),Résultat de gestion (MD),Estimations provisoires (MD)
+1990,96.4,89.5,0.5,112.0,109.1,2.9,
+1991,114.9,102.3,1.1,127.1,125.0,2.1,
+1992,129.7,124.5,0.7,149.2,165.5,-16.4,
+1993,147.4,150.7,-0.5,159.7,186.6,-26.9,
+1994,212.7,174.3,-0.1,231.2,235.1,-3.9,
+1995,246.7,206.3,0.0,268.5,268.7,-0.2,
+1996,266.2,237.0,67.6,352.9,332.3,20.6,
+1997,316.1,267.1,50.8,369.6,320.9,48.7,
+1998,332.3,301.1,47.5,382.8,372.3,10.6,
+1999,357.2,338.9,58.8,419.2,408.5,10.6,
+2000,399.7,376.2,63.4,467.2,458.1,9.1,
+2001,440.6,418.6,72.7,516.9,509.2,7.7,
+2002,459.8,470.1,94.0,558.4,560.9,-2.5,
+2003,518.5,528.7,78.5,601.0,632.2,-31.3,
+2004,551.0,600.5,71.7,626.8,730.9,-104.1,

@@ -37,6 +37,16 @@ mérite ensuite son propre diff et sa propre revue ; elle n'a pas été déclenc
 
 ## En attente
 
+### Fonds commun — rétrospective financière de la CNSS (03/10/2026)
+
+- `cnss-retrospective-1990-2004` : nouvelle clé FR/AR dans le **fonds commun**
+  `precis/{fr,ar}/references.json` (citée par les trois livres Retraites, Prestations sociales,
+  Cotisations sociales), **à verser dans Zotero après revue et fusion**. Type `report` ; auteur,
+  titre et éditeur lus sur la couverture et la page de titre (CNSS, Direction des études et du
+  contrôle de gestion, Service des statistiques ; Tunis) ; **sans URL ni date** : exemplaire
+  papier du centre de documentation du CRESS, numérisé, date d'édition non imprimée — ne pas en
+  inscrire. Entrée identique en FR et en AR (titre arabe inconnu).
+
 ### Livre « Prestations sociales » — aide occasionnelle de l'AMEN (lecture du 29/09/2026)
 
 - `arrete-2025-07-10-appui-occasionnel` : nouvelle clé dans les bibliographies FR et AR du

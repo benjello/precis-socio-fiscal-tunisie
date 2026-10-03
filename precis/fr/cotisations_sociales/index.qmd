@@ -854,6 +854,46 @@ figtools.figure_tabs(
 )
 ```
 
+Les comptes de bilan de la caisse remontent jusqu'en 1990 et ventilent les cotisations par branche [@cnss-retrospective-1990-2004]. Ils ne relèvent pas de la même comptabilité que la série précédente : ils enregistrent les cotisations constatées au titre de chaque exercice, non les encaissements. De 2000 à 2004, années communes aux deux sources, leur total est inférieur à celui des cotisations encaissées de 0,81 % à 1,13 % selon l'année, sans que l'écart soit expliqué. La figure suivante montre ces cotisations, branche par branche, et l'apparition de deux branches nouvelles au cours de la période (@fig-cotisations-branches-1990-2004).
+
+```{python}
+#| label: fig-cotisations-branches-1990-2004
+#| fig-cap: "Cotisations de la CNSS par branche, comptes de bilan, millions de dinars courants, 1990-2004."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotisations_branches_1990_2004 as cb
+import figtools
+figtools.figure_tabs(
+    cb.fig_branches(), cb.table(), "cnss-retrospective-ressources-emplois", "cnss-cotisations",
+    slug="fig_cotisations_branches_1990_2004",
+    caption=("Cotisations de la CNSS par branche, comptes de bilan, millions de dinars "
+             "courants, 1990-2004"),
+    note_lecture=(
+        "Les barres empilent les cotisations de chaque branche, en millions de dinars "
+        "**courants**, pour l'ensemble des régimes de la caisse ; la participation "
+        "française au titre de la convention tuniso-française, qui n'est pas une "
+        "cotisation, n'y figure pas. Deux branches apparaissent : les accidents du travail "
+        "et les maladies professionnelles en 1995, dont la cotisation, fixée par le décret "
+        "n° 95-538 à compter du 1er janvier 1995, s'ajoute au point transféré du taux "
+        "global (@sec-cot-at-94-28), et la protection sociale des travailleurs en 1997, "
+        "dont la cotisation est instituée par la loi n° 96-101 du 18 novembre 1996 "
+        "[@loi96-101, art. 5]. Les cotisations des prestations familiales baissent à "
+        "chaque réaffectation du taux global, que les notes du document imputent à cette "
+        "branche [@cnss-retrospective-1990-2004] : en 1994, l'année où la quote-part "
+        "affectée au régime de pensions est relevée [@decret94-1429, art. 1-2], elles "
+        "passent de 177,1 à 156,7 millions de dinars, quand celles des pensions passent "
+        "de 158,3 à 226,3 ; en 1997, l'année de la loi n° 97-4, qui ramène le taux global "
+        "de 20 % à 18 % [@loi97-4], de 152,3 à 116,5 millions ; en 2003, l'année où le décret "
+        "n° 2003-1212 relève de nouveau la quote-part des pensions [@decret2003-1212, "
+        "art. 1-2], de 167,6 à 136,3 millions. Les losanges "
+        "reportent, de 2000 à 2004, les cotisations encaissées de la figure précédente : "
+        "l'écart va de −1,13 % en 2000 à −0,81 % en 2004. La colonne 1999 est en partie "
+        "masquée par la reliure de l'exemplaire consulté : la barre hachurée de cette année "
+        "comprend des estimations, dont l'onglet Données donne le détail."),
+)
+```
+
 Les taux décrits plus haut ne pèsent pas d'un poids comparable, et le partage entre régimes s'est déformé en vingt ans.
 
 ```{python}

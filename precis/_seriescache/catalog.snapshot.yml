@@ -1261,3 +1261,103 @@
     ثم 1644,6)، 2017 (1653,5 ثم 1668,3)، وفروق بنحو دينار بين الجدول 18 وتقرير 2018-2025
     على 2018-2020. المبالغ بالدينار الجاري دون تصحيح للأسعار.'
   fiche: sources/ins-fonction-publique-2018-2025.md
+- id: cnss-retrospective-ressources-emplois
+  titre: 'CNSS : ressources, emplois et résultats de gestion par régime et par branche,
+    1990-2004 (Rétrospective financière)'
+  sources:
+  - cnss-retrospective-1990-2004
+  build: uv run python -m tunisia_data.scan_tables --config sources/scan/cnss-retrospective-1990-2004.yml
+  raw:
+  - data/raw/caisses/cnss/retrospective/cnss_retrospective_financiere_1990-2004.pdf
+  output: data/processed/caisses/cnss_retrospective_1990_2004.csv
+  unite: milliers de dinars courants (« mD »)
+  perimetre: 'CNSS, 55 tableaux « Bilans » : RSNA, RC, étudiants, RSA, RSAA, RTNS
+    (secteurs non agricole et agricole), RTTE, RTFR, artistes, AT-MP, PST, convention
+    tuniso-française, et ensemble des régimes en plusieurs variantes (avec/sans CTF,
+    avec/sans RC)'
+  caveats: 'SCAN SANS COUCHE TEXTE, valeurs océrisées et contrôlées par les IDENTITÉS
+    COMPTABLES (sous-totaux, totaux, résultat = ressources − emplois, ensemble = somme
+    des régimes) ; colonne `statut` sur chaque valeur (lu, lu_corrige, deduit_identite,
+    masque_reliure). LA RELIURE MASQUE une colonne d''années sur la plupart des tableaux
+    (1999 surtout, 2000 sur certains) : 430 cellules sont rétablies par une identité
+    à une seule inconnue et 68 par le solveur fragments + identités (chiffres visibles
+    lus case par case ; valeur unique compatible avec eux et avec toutes les identités
+    ; validé sans erreur sur 771 valeurs connues masquées à l''identique), jamais
+    devinées dans la colonne `valeur` ; 360 y restent vides, listées avec leur fragment
+    visible dans cnss_retrospective_valeurs_a_retrouver.csv (221 à lire sur l''original,
+    le reste s''en déduit). ESTIMATIONS PROVISOIRES : en attendant l''original, ces
+    360 cellules (1999 surtout, quelques-unes de 2000) reçoivent une estimation tracée
+    (colonnes `estimation`, `methode_estimation`, `incertitude` ; tendance de la ligne,
+    candidats compatibles avec les chiffres visibles, mise en cohérence avec les identités
+    comptables), et `valeur_ou_estimation` réunit valeurs et estimations pour l''exploitation
+    directe : les valeurs 1999 — et certaines de 2000 — de cette colonne sont donc
+    pour partie des ESTIMATIONS, à ne pas citer comme données publiées. Estimations
+    publiées et versionnées dans cnss_retrospective_estimations.csv, remplacées quand
+    l''original est relu. Quatorze identités s''écartent de 2 mD entre valeurs imprimées
+    vérifiées à l''image (totaux 2004 de tableaux jumeaux, emplois 1996) : écarts
+    de la source, laissés tels quels. Unité : milliers de dinars (les cotisations
+    2000-2004 recoupent la série cnss-cotisations, en millions, à 1 % près). Comptabilité
+    « Bilans » (droits constatés) : ne pas confondre avec les cotisations encaissées.
+    Montants courants, non déflatés.'
+  titre_ar: 'الصندوق الوطني للضمان الاجتماعي: الموارد والاستعمالات ونتائج التصرّف
+    حسب النظام والفرع، 1990-2004 (الحصيلة المالية الاسترجاعية)'
+  unite_ar: آلاف الدنانير الجارية
+  perimetre_ar: 'الصندوق الوطني للضمان الاجتماعي، 55 جدولاً «الموازنات»: نظام الأجراء
+    غير الفلاحيين، النظام التكميلي، الطلبة، الأجراء الفلاحيون، النظام الفلاحي المحسّن،
+    العملة غير الأجراء (القطاع غير الفلاحي والقطاع الفلاحي)، العملة التونسيون بالخارج،
+    ذوو الدخل الضعيف، الفنّانون، حوادث الشغل والأمراض المهنية، الحماية الاجتماعية
+    للعمّال، الاتفاقية التونسية الفرنسية، ومجموع الأنظمة في عدّة صيغ'
+  caveats_ar: 'وثيقة ممسوحة ضوئياً دون طبقة نصّية: قيم مقروءة آلياً ومضبوطة بالمتطابقات
+    المحاسبية (المجاميع الفرعية والمجاميع، النتيجة = الموارد − الاستعمالات، المجموع
+    = حاصل الأنظمة)، مع عمود «الحالة» لكلّ قيمة. يحجب التجليد عموداً من السنوات في
+    أغلب الجداول (1999 خاصّة): تُستعاد 430 خانة بمتطابقة ذات مجهول واحد و68 بالجمع
+    بين الأرقام الظاهرة والمتطابقات (قيمة وحيدة)، ولا تُخمَّن أبداً في عمود «القيمة»
+    (valeur)؛ وتبقى فيه 360 خانة فارغة مدرجة مع الأرقام الظاهرة منها في قائمة القيم
+    الواجب قراءتها في النسخة الورقية (221 منها، والباقي يُستنتج منها). تقديرات مؤقّتة:
+    في انتظار النسخة الورقية، تحمل هذه الخانات الـ360 (سنة 1999 خاصّة، وبعض خانات
+    سنة 2000) تقديراً موثّقاً (الأعمدة estimation وmethode_estimation وincertitude:
+    اتّجاه السطر، والقيم المرشّحة المتوافقة مع الأرقام الظاهرة، والملاءمة مع المتطابقات
+    المحاسبية)، ويجمع العمود valeur_ou_estimation القيم والتقديرات للاستعمال المباشر:
+    فقيم 1999 — وبعض قيم 2000 — في هذا العمود تقديرات في جزء منها، لا يُستشهد بها
+    كبيانات منشورة. التقديرات المنشورة محفوظة في الملف cnss_retrospective_estimations.csv،
+    وتُستبدل عند قراءة النسخة الأصلية. أربع عشرة متطابقة تختلف بألفي دينار بين قيم
+    مطبوعة تحقّقنا منها بالصورة: فروق في المصدر نفسه. الوحدة ألف دينار، والمحاسبة
+    على أساس «الموازنات» لا الاشتراكات المستخلصة. مبالغ جارية.'
+  fiche: sources/cnss-retrospective-financiere-1990-2004.md
+- id: ins-annuaire-ipc
+  titre: Indice général des prix à la consommation familiale, base 100 en 1970, lu
+    dans chaque annuaire statistique de l'INS, 1976-2023
+  sources:
+  - ins-annuaire
+  build: scripts/extract_ipc_longue.py:main
+  raw:
+  - data/raw/ins-publications/annuaire-statistique
+  output: data/processed/ins-publications/ipc_annuaires_base1970.csv
+  unite: indice, base 100 en 1970 (moyenne annuelle)
+  perimetre: colonne de base 1970 du tableau « Évolution de l'indice général des prix
+    à la consommation familiale selon les différentes bases » des annuaires 1995-2001,
+    1998-2002 et 1999-2003 (tableau 13.7) et 2019-2023 (tableau 13.6), une ligne par
+    annuaire et par année, telle qu'imprimée
+  caveats: 'SÉRIE HOMOGÈNE, SOURCE DE LA PARTIE 1976-2023 DE `ipc-longue-periode`,
+    AVEC TOUTES LES LECTURES, Y COMPRIS CELLES QUE LA SÉRIE RACCORDÉE ÉCARTE : la
+    colonne `retenu` dit laquelle celle-ci reprend (le plus récent annuaire fait foi).
+    Les coquilles et valeurs provisoires sont conservées telles qu''imprimées : l''annuaire
+    1995-2001 imprime 108,2 pour 1985 (288,0 dans les suivants) et 645,4, provisoire,
+    pour 2001 (640,5 ensuite). LU PAR LE PROGRAMME (pdftotext) ; le script contrôle
+    cinq valeurs attendues et le recollement de l''annuaire 2019-2023 aux précédents
+    en 1999, 2001 et 2003. Les lectures obtenues commencent en 1976 (annuaire 1995-2001),
+    1983 (1998-2002), 1984 (1999-2003) et 1999 (2019-2023) ; avant 1976, la série
+    raccordée prend les rapports de la BCT (`bct-cout-de-la-vie`). Les autres annuaires
+    présents dans data/raw/ins-publications/annuaire-statistique/ ne sont pas lus.'
+  titre_ar: الرقم القياسي العام لأسعار الاستهلاك العائلي، أساس 100 سنة 1970، كما ورد
+    في كلّ حوليّة إحصائية للمعهد الوطني للإحصاء، 1976-2023
+  unite_ar: رقم قياسي، أساس 100 سنة 1970 (معدّل سنوي)
+  perimetre_ar: عمود أساس 1970 من جدول تطوّر الرقم القياسي العام لأسعار الاستهلاك
+    العائلي حسب مختلف سنوات الأساس، في حوليّات 1995-2001 و1998-2002 و1999-2003 (الجدول
+    13.7) و2019-2023 (الجدول 13.6)، سطر لكلّ حوليّة ولكلّ سنة، كما طُبع
+  caveats_ar: 'سلسلة متجانسة هي مصدر الجزء 1976-2023 من السلسلة الطويلة، بكلّ القراءات
+    بما فيها المستبعدة: يبيّن العمود `retenu` القيمة المعتمدة (أحدث حوليّة هي المرجع).
+    الأخطاء المطبعية والقيم الوقتية محفوظة كما طُبعت: حوليّة 1995-2001 تطبع 108,2
+    لسنة 1985 (288,0 في الحوليّات اللاحقة) و645,4 الوقتية لسنة 2001 (ثمّ 640,5). قراءة
+    آلية مع مراقبة خمس قيم وتطابق حوليّة 2019-2023 مع سابقاتها.'
+  fiche: sources/ins-annuaires-statistiques.md

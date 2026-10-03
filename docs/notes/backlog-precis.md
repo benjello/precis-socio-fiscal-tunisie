@@ -84,6 +84,7 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 
 ## Retraites
 
+- **Résultat de la branche des pensions du RSNA, 1990-2004 — fait le 3 octobre 2026** (`#fig-rsna-resultat-1990-2004`, dans `#sec-rsna-equilibre`), tiré de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026). Le tableau de cette branche n'a pas d'estimation (la colonne 2000 y est rétablie par les totaux) ; si une relecture de l'original change ses montants, relire la note de lecture. Piste : le même tableau existe pour les autres régimes (RSA, RSAA, RTNS) et pour le régime complémentaire.
 - **Point clos sur la source primaire** : l'article 2 de la loi n° 2019-37 remplace
   60 par 62 ans aux § 2 et 3 de l'article 32, sans clause d'effet. Le JORT n° 35 a
   été déposé le 30 avril 2019 : loi n° 93-64, art. 2, délai de cinq jours **sans compter
@@ -137,6 +138,7 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 
 ## Prestations sociales
 
+- **Dépense des allocations familiales, 1990-2004 — fait le 3 octobre 2026** (`#fig-cnss-allocations-familiales`, `#sec-pf-longue-periode`), tirée de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026), déflatée par l'IPC des annuaires de l'INS (`ins-annuaire-ipc`). Restent : allocataires, enfants, montant moyen, dépense avant 1990 et après 2004 (TODO du chapitre). **221 valeurs de 1999** (et quelques-unes de 2000) masquées par la reliure restent à lire sur l'original papier (tunisia-data#26) ; en attendant, la figure trace des estimations hachurées ou creuses. Quand le classeur revient : réinjecter dans tunisia-data, relancer `figtools.refresh_cache("cnss-retrospective-ressources-emplois")`, puis relire la note de lecture, qui cite des montants.
 - **Onze paliers de l'allocation** entre 1987 et 2018 n'ont aucun fondement textuel publié.
   Les décisions ou circulaires de la direction générale de la promotion sociale et
   les rapports administratifs sont à chercher **hors du JORT**. L'arrêté de 2024
@@ -218,6 +220,7 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 
 ## Cotisations sociales
 
+- **Cotisations par branche, 1990-2004 — fait le 3 octobre 2026** (`#fig-cotisations-branches-1990-2004`, après `#fig-cotisations-cnss`), tirées de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026). Comptes de bilan, non encaissements : écart de −1,13 % à −0,81 % avec la série encaissée en 2000-2004, inexpliqué. Les notes du document datent la réduction de 2 points de la branche familiale par la loi n° 97-4 au 1er octobre 1996, date que la loi n'énonce pas : à confronter à la datation du taux global (`#sec-cot-taux-unique`). **221 valeurs de 1999** (et quelques-unes de 2000) masquées par la reliure restent à lire sur l'original papier (tunisia-data#26) ; en attendant, la figure trace des estimations hachurées ou creuses. Quand le classeur revient : réinjecter dans tunisia-data, relancer `figtools.refresh_cache("cnss-retrospective-ressources-emplois")`, puis relire la note de lecture, qui cite des montants.
 - **Accidents du travail (§ sec-cot-at)** : les décrets n° 95-538 et 99-1010 sont lus
   dans les deux éditions (taux, entrée en vigueur au 1er janvier 1995 et au 1er avril
   1999). Les deux échelles sont engendrées, avant et après transfert du point
@@ -301,8 +304,8 @@ il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
 
 - **Zotero** : le rangement a été corrigé le 29 septembre (535 références présentes,
   aucun défaut restant alors). Depuis, deux nouvelles clés du livre « Prestations
-  sociales » — `loi2017-47` et `arrete-2025-07-10-appui-occasionnel` — attendent leur
-  versement **après revue** ; elles sont recensées dans `biblio-a-rapatrier.md`.
+  sociales » — `loi2017-47` et `arrete-2025-07-10-appui-occasionnel` — et la clé
+  commune `cnss-retrospective-1990-2004` (3 octobre) attendent leur versement **après revue** ; elles sont recensées dans `biblio-a-rapatrier.md`.
   Recontrôler la préservation des URL et notes par langue au diff de la descente.
 - **Titres arabes et glossaire** : des notices restent en français dans la bibliographie
   arabe et des notions sont encore à valider (issues #151, #77, #54, #53). Recompter
