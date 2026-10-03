@@ -1011,7 +1011,11 @@ def verifier_cellules(source, traduction):
 # f-chaîne, ni triple guillemet, ni guillemet simple) qui contient au moins un blanc et une
 # lettre — légendes, notes de lecture —, et la valeur entre guillemets des options
 # `#| fig-cap`, `tbl-cap`, `fig-alt`, `fig-subcap`. Un nom de série, un chemin,
-# `"{{< meta date >}}"` restent du code.
+# `"{{< meta date >}}"` restent du code. Des littéraux CONCATÉNÉS (séparés par de simples
+# retours à la ligne) sont montrés d'un tenant, puis répartis à nouveau sur autant de
+# littéraux qu'à la source (`_redecouper`) : montrés un à un, le modèle recousait les
+# phrases et perdait les jetons intermédiaires (trois perdus le 3 octobre 2026 sur
+# `_regime_indiciaire.qmd`).
 #
 # LE CONTRAT. La SUITE des jetons de la traduction doit être exactement celle de la source :
 # les jetons sont nommés par leur contenu, et une suite réordonnée donnerait du code brouillé
@@ -1051,67 +1055,94 @@ class TableCode(TableFormules):
 
 
 def _corps_de_cellule(cellule):
-    """[(début, fin, brut)] des corps de chaîne à traduire dans le texte d'une cellule.
+    """[(début, fin, brut, corps)] des chaînes à traduire dans le texte d'une cellule.
 
-    `brut` dit si la barre oblique inverse y est littérale (chaîne `r"…"`). Rend None si la
-    cellule ne se découpe pas en lexèmes, ou si un lexème ne se retrouve pas à sa place :
-    elle est alors masquée d'un seul tenant.
+    Des littéraux CONCATÉNÉS — séparés par de simples retours à la ligne, comme ceux
+    d'une note de lecture — forment UN seul élément, et le
+    modèle voit leur texte d'un tenant. Les montrer un à un, séparés par des jetons,
+    l'invitait à recoudre les phrases coupées en fin de ligne et à perdre les jetons
+    intermédiaires : le 3 octobre 2026, la retraduction de `_regime_indiciaire.qmd` en a
+    perdu trois. `corps` donne les bornes de chaque corps de littéral ; `(début, fin)`
+    couvre du premier au dernier, séparateurs compris ; `brut` dit si la barre oblique inverse y est littérale (chaîne `r"…"`).
+
+    Rend None si la cellule ne se découpe pas en lexèmes, ou si un lexème ne se retrouve
+    pas à sa place : elle est alors masquée d'un seul tenant.
     """
     import io
     import tokenize
-    corps, debuts, pos = [], [], 0
+    elements, debuts, pos = [], [], 0
     for ligne in cellule.split("\n"):
         debuts.append(pos)
         m = OPTION_TRADUITE_RE.match(ligne)
         if m and m.group(2):
-            corps.append((pos + m.end(1), pos + m.end(2), False))
+            elements.append((pos + m.end(1), pos + m.end(2), False,
+                             [(pos + m.end(1), pos + m.end(2))]))
         pos += len(ligne) + 1
     try:
         lexemes = list(tokenize.generate_tokens(io.StringIO(cellule).readline))
     except Exception:  # noqa: BLE001 — TokenError, SyntaxError, IndentationError…
         return None
+
+    groupes, groupe = [], None  # groupe : [début, fin, brut, [corps]] ou None
     for lex in lexemes:
-        if lex.type != tokenize.STRING:
+        if lex.type == tokenize.NL:
+            continue  # un retour à la ligne entre deux littéraux ne rompt pas le groupe
+        litteral = None
+        if lex.type == tokenize.STRING:
+            a = debuts[lex.start[0] - 1] + lex.start[1]
+            if cellule[a:a + len(lex.string)] != lex.string:
+                return None
+            m = LITTERAL_PROSE_RE.match(lex.string)
+            if m and len(lex.string) >= len(m.group(0)) + 1 and lex.string.endswith('"'):
+                debut = a + len(m.group(0))
+                litteral = (debut, a + len(lex.string) - 1, m.group(1) in ("r", "R"))
+        if litteral and groupe and groupe[2] == litteral[2]:
+            groupe[1] = litteral[1]
+            groupe[3].append(litteral[:2])
             continue
-        a = debuts[lex.start[0] - 1] + lex.start[1]
-        if cellule[a:a + len(lex.string)] != lex.string:
-            return None
-        m = LITTERAL_PROSE_RE.match(lex.string)
-        if not m or len(lex.string) < len(m.group(0)) + 1 or not lex.string.endswith('"'):
-            continue
-        texte = lex.string[len(m.group(0)):-1]
+        if groupe:
+            groupes.append(groupe)
+        groupe = [litteral[0], litteral[1], litteral[2], [litteral[:2]]] if litteral else None
+    if groupe:
+        groupes.append(groupe)
+
+    for debut, fin, brut, corps in groupes:
+        texte = "".join(cellule[x:y] for x, y in corps)
         if re.search(r"\s", texte) and re.search(r"[^\W\d_]", texte) and "{{<" not in texte:
-            debut = a + len(m.group(0))
-            corps.append((debut, debut + len(texte), m.group(1) in ("r", "R")))
-    return sorted(corps)
+            elements.append((debut, fin, brut, corps))
+    return sorted(elements, key=lambda e: e[0])
 
 
 def _masquer_cellules(texte, table):
-    """Texte masqué, et la suite [(numéro, corps source, brut, ouvre la cellule)] des jetons.
+    """Texte masqué, et la suite des jetons [(numéro, gabarit ou None, ouvre la cellule)].
 
-    `corps source` est le corps de chaîne qui SUIT le jeton dans la source — None pour le
-    dernier jeton d'une cellule, qui porte la clôture fermante.
+    Le `gabarit` décrit la chaîne qui SUIT le jeton dans la source — None pour le dernier
+    jeton d'une cellule, qui porte la clôture fermante : (texte d'origine de l'empan,
+    corps des littéraux, séparateurs entre eux, brut).
     """
     morceaux, suite, fin = [], [], 0
     for m in CELLULE_ENTIERE_RE.finditer(texte):
         cellule = m.group(0)
         decalage = len(OUVERTURE_CELLULE)
-        corps = _corps_de_cellule(cellule[decalage:-3])
-        if corps is None:
+        elements = _corps_de_cellule(cellule[decalage:-3])
+        if elements is None:
             print(f"  cellules : {_etiquette(cellule[decalage:])} ne se découpe pas en "
                   "lexèmes — masquée d'un seul tenant, ses chaînes restent en l'état.")
-            corps = []
+            elements = []
         morceaux.append(texte[fin:m.start()])
         precedent = 0
-        for i, (a, b, brut) in enumerate(corps):
+        for i, (a, b, brut, corps) in enumerate(elements):
             a, b = a + decalage, b + decalage
             n = table.numero(cellule[precedent:a])
-            morceaux += [JETON_CODE.format(n), cellule[a:b]]
-            suite.append((n, cellule[a:b], brut, i == 0))
+            bornes = [(x + decalage, y + decalage) for x, y in corps]
+            textes = [cellule[x:y] for x, y in bornes]
+            separateurs = [cellule[y:x] for (_, y), (x, _) in zip(bornes, bornes[1:])]
+            morceaux += [JETON_CODE.format(n), "".join(textes)]
+            suite.append((n, (cellule[a:b], textes, separateurs, brut), i == 0))
             precedent = b
         n = table.numero(cellule[precedent:])
         morceaux.append(JETON_CODE.format(n))
-        suite.append((n, None, False, not corps))
+        suite.append((n, None, not elements))
         fin = m.end()
     morceaux.append(texte[fin:])
     return "".join(morceaux), suite
@@ -1160,6 +1191,39 @@ def _reechapper(corps, source, brut, ouvrant):
     return corps, n, ouvrant
 
 
+def _redecouper(texte, origine, textes, separateurs):
+    """Répartit le texte traduit d'un groupe de littéraux concaténés sur autant de
+    littéraux que la source, aux mêmes séparateurs (retour à la ligne et indentation).
+
+    Texte inchangé : l'empan d'origine, à l'octet près. Sinon, coupe à un blanc non
+    échappé, au plus près de la part de longueur qu'occupait chaque littéral dans la
+    source ; un littéral peut rester vide si le texte est court. Le parseur Python
+    recolle les littéraux adjacents : l'arbre syntaxique est celui d'une seule chaîne,
+    quelle que soit la coupe.
+    """
+    if texte == "".join(textes):
+        return origine
+    if not separateurs:
+        return texte
+    total_source = sum(len(t) for t in textes) or 1
+    coupes_possibles = [i + 1 for i, c in enumerate(texte) if c == " "
+                        and (len(texte[:i]) - len(texte[:i].rstrip("\\"))) % 2 == 0]
+    coupes, cumul, precedente = [], 0, 0
+    for t in textes[:-1]:
+        cumul += len(t)
+        cible = round(cumul / total_source * len(texte))
+        candidates = [c for c in coupes_possibles if c >= precedente]
+        coupe = min(candidates, key=lambda c: abs(c - cible)) if candidates else precedente
+        coupes.append(coupe)
+        precedente = coupe
+    bornes = [0] + coupes + [len(texte)]
+    pieces = [texte[a:b] for a, b in zip(bornes, bornes[1:])]
+    sortie = [pieces[0]]
+    for sep, piece in zip(separateurs, pieces[1:]):
+        sortie += [sep, piece]
+    return "".join(sortie)
+
+
 def reinjecter_cellules(source, traduction, table):
     """Remet le code des cellules à la place de ses jetons, ou lève `CellulesAlterees`.
 
@@ -1201,7 +1265,7 @@ def reinjecter_cellules(source, traduction, table):
     parties = JETON_CODE_RE.split(traduction)
     sortie = [parties[0]]
     corrections, recollees, ouvrant = 0, 0, True
-    for i, (n, corps_source, brut, ouvre) in enumerate(attendue):
+    for i, (n, gabarit, ouvre) in enumerate(attendue):
         if ouvre:
             ouvrant = True
             avant = sortie[-1]
@@ -1213,16 +1277,18 @@ def reinjecter_cellules(source, traduction, table):
             sortie[-1] = avant
         sortie.append(table.par_numero[n])
         intervalle = parties[2 * i + 2]
-        if corps_source is not None:
-            intervalle, k, ouvrant = _reechapper(intervalle, corps_source, brut, ouvrant)
-            corrections += k
-        elif intervalle and not intervalle.startswith("\n"):
-            intervalle = "\n" + intervalle
-            recollees += 1
         if RESIDU_CODE_RE.search(intervalle):
             raise CellulesAlterees(
                 f"code des cellules altéré par la traduction : résidu de jeton "
                 f"{intervalle[:60]!r}")
+        if gabarit is not None:
+            origine, textes, separateurs, brut = gabarit
+            intervalle, k, ouvrant = _reechapper(intervalle, "".join(textes), brut, ouvrant)
+            corrections += k
+            intervalle = _redecouper(intervalle, origine, textes, separateurs)
+        elif intervalle and not intervalle.startswith("\n"):
+            intervalle = "\n" + intervalle
+            recollees += 1
         sortie.append(intervalle)
     if corrections:
         print(f"  cellules : {corrections} correction(s) d'échappement dans les chaînes "
