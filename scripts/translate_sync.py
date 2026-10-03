@@ -619,6 +619,167 @@ def get_git_diff(base_sha, head_sha, file_path):
         return ""
 
 
+# DÉCOUPAGE DES LONGS FICHIERS. Même sans réflexion, le plafond de sortie (65 536 jetons)
+# ne suffit pas à rendre en un appel un chapitre de plus de ~140 000 caractères : le
+# 3 octobre 2026, `retraites/_secteur_prive.qmd` (231 Ko) s'est arrêté sur MAX_TOKENS
+# avec 65 533 jetons écrits. Au-delà du seuil, le fichier est traduit section par
+# section — coupé sur les titres `##` ou `###` qui portent une ancre `{#…}`, hors code, hors
+# commentaire HTML et hors bloc `:::` —, puis recollé. En mise à jour, chaque morceau
+# source est apparié au morceau cible qui commence à la MÊME ancre : les ancres sont
+# recopiées verbatim, elles sont donc communes aux deux langues. Si elles ne le sont
+# pas, le fichier échoue explicitement plutôt que d'apparier de travers.
+SEUIL_DECOUPAGE = 140_000
+TAILLE_MORCEAU = 60_000
+TITRE_ANCRE_RE = re.compile(r"^#{2,3}\s.*\{#([\w:.-]+)[^}]*\}\s*$")
+
+
+def points_de_coupe(texte):
+    """[(position, ancre)] des titres `##` à ancre où l'on peut couper le texte.
+
+    Ne coupe jamais dans un bloc de code, un commentaire HTML ni un bloc `:::` : un
+    morceau qui ouvrirait l'un sans le fermer inviterait le modèle à le refermer.
+    """
+    points, pos = [], 0
+    dans_code = False
+    dans_commentaire = False
+    profondeur_div = 0
+    for ligne in texte.splitlines(keepends=True):
+        nue = ligne.strip()
+        if not dans_commentaire and nue.startswith("```"):
+            dans_code = not dans_code
+        elif not dans_code:
+            if not dans_commentaire:
+                m = TITRE_ANCRE_RE.match(ligne.rstrip("\n"))
+                if m and profondeur_div == 0 and pos > 0:
+                    points.append((pos, m.group(1)))
+                if nue.startswith(":::"):
+                    if re.match(r"^:::+\s*$", nue):
+                        profondeur_div = max(0, profondeur_div - 1)
+                    else:
+                        profondeur_div += 1
+            ouvre, ferme = ligne.count("<!--"), ligne.count("-->")
+            if dans_commentaire and ferme:
+                dans_commentaire = ouvre > 0 and ligne.rfind("<!--") > ligne.rfind("-->")
+            elif ouvre > ferme or (ouvre and ligne.rfind("<!--") > ligne.rfind("-->")):
+                dans_commentaire = True
+        pos += len(ligne)
+    return points
+
+
+def decouper(texte, taille=TAILLE_MORCEAU, ancres_permises=None):
+    """Découpe en morceaux d'environ `taille` caractères aux points de coupe.
+
+    Rend [(ancre de début ou None pour le premier, morceau)]. Un morceau peut dépasser
+    `taille` si aucune coupe n'est possible plus tôt. `"".join` des morceaux redonne
+    exactement le texte. `ancres_permises` : en mise à jour, les ancres présentes dans
+    l'ancienne traduction — on ne coupe que là, pour que l'appariement tienne même si
+    la traduction a pris un peu de retard.
+    """
+    coupes = []
+    debut = 0
+    dernier_point = None
+    points = [(pos, ancre) for pos, ancre in points_de_coupe(texte)
+              if ancres_permises is None or ancre in ancres_permises]
+    for pos, ancre in points:
+        if pos - debut > taille and dernier_point is not None:
+            coupes.append(dernier_point)
+            debut = dernier_point[0]
+        dernier_point = (pos, ancre)
+        if pos - debut > taille:
+            coupes.append(dernier_point)
+            debut = pos
+            dernier_point = None
+    if len(texte) - debut > taille and dernier_point is not None and dernier_point[0] > debut:
+        coupes.append(dernier_point)
+    morceaux, precedent, ancre_prec = [], 0, None
+    for pos, ancre in coupes:
+        morceaux.append((ancre_prec, texte[precedent:pos]))
+        precedent, ancre_prec = pos, ancre
+    morceaux.append((ancre_prec, texte[precedent:]))
+    return morceaux
+
+
+CONSIGNE_VERBATIM = """RECOPIE VERBATIM, JAMAIS TRADUITE NI FLÉCHIE : les cibles de liens et les ancres
+(`](#g-entrepositaire)`, `{#tbl-dc-petroliers}`), les clés de citation `[@loi-88-62]` et
+leurs locateurs, les URL, les numéros de textes juridiques (« loi n° 88-62 », « décret
+n° 91-550 ») et le contenu des commentaires HTML `<!-- ... -->`. Ce ne sont pas de la
+prose : une cible de lien mise au pluriel ne pointe plus sur rien, et un commentaire
+corrompu se lit dans la source."""
+
+CONSIGNE_MORCEAU = """CE TEXTE EST UN MORCEAU D'UN FICHIER PLUS LONG, découpé entre deux titres de section.
+Traduis-le tel quel : n'ajoute ni ne retire aucun titre, bloc de code, bloc `:::` ou
+commentaire, et ne complète rien de ce qui précède ou suit."""
+
+
+def prompt_morceau(source_lang, target_lang, source, ancienne, consigne_formules):
+    """Prompt d'un morceau : mise à jour sans diff si une ancienne traduction existe."""
+    if ancienne:
+        return f"""
+Voici une tâche de mise à jour de traduction bilingue.
+
+Langue source : {source_lang}
+Langue cible : {target_lang}
+
+{CONSIGNE_MORCEAU}
+
+Voici le MORCEAU SOURCE MIS À JOUR ({source_lang}) :
+```markdown
+{source}
+```
+
+Voici l'ANCIENNE TRADUCTION CIBLE ({target_lang}) de ce même morceau :
+```markdown
+{ancienne}
+```
+
+Compare toi-même le MORCEAU SOURCE MIS À JOUR et l'ANCIENNE TRADUCTION.
+
+TA TÂCHE :
+Mets à jour l'ANCIENNE TRADUCTION pour qu'elle corresponde au MORCEAU SOURCE MIS À JOUR.
+RÈGLE D'OR ABSOLUE : Tu DOIS conserver exactement la même formulation que l'ANCIENNE TRADUCTION partout où le sens de la source n'a pas changé. L'ANCIENNE TRADUCTION peut contenir des corrections faites à la main : ne les défais pas, ne reformule pas ce qui est déjà correct. Ne touche qu'à ce qui ne correspond plus à la source.
+
+{CONSIGNE_VERBATIM}
+{consigne_formules}
+Renvoie UNIQUEMENT le morceau cible mis à jour, sans aucun commentaire avant ou après.
+"""
+    return f"""
+Voici un morceau de fichier source en {source_lang} à traduire en {target_lang}.
+S'il te plaît, traduis-le entièrement et renvoie UNIQUEMENT le code source traduit, sans aucun commentaire.
+Préserve TOUTES les balises Markdown, les blocs de code et la structure exacte.
+
+{CONSIGNE_MORCEAU}
+
+{CONSIGNE_VERBATIM}
+{consigne_formules}
+Morceau à traduire :
+```markdown
+{source}
+```
+"""
+
+
+class DecoupageImpossible(RuntimeError):
+    """Les ancres de coupe de la source manquent dans la traduction, ou en désordre."""
+
+
+def apparier(morceaux_source, cible):
+    """Découpe `cible` aux ancres qui ouvrent les morceaux de la source.
+
+    Rend la liste des morceaux cibles, un par morceau source. Lève `DecoupageImpossible`
+    si une ancre manque dans la cible ou n'y vient pas dans le même ordre.
+    """
+    index = {ancre: pos for pos, ancre in points_de_coupe(cible)}
+    positions = []
+    for ancre, _m in morceaux_source[1:]:
+        if ancre not in index:
+            raise DecoupageImpossible(f"ancre {{#{ancre}}} absente de la traduction")
+        positions.append(index[ancre])
+    if positions != sorted(positions):
+        raise DecoupageImpossible("ancres de coupe dans un autre ordre dans la traduction")
+    bornes = [0] + positions + [len(cible)]
+    return [cible[a:b] for a, b in zip(bornes, bornes[1:])]
+
+
 def get_git_show(sha, file_path):
     """Contenu du fichier à un commit donné, ou chaîne vide s'il n'y existait pas."""
     try:
@@ -819,7 +980,7 @@ Fichier à traduire :
 
 
 
-        try:
+        def appeler(prompt):
             # Retry avec backoff exponentiel sur erreurs transitoires.
             # Gemini renvoie régulièrement 503 UNAVAILABLE en pic de demande ;
             # sans retry, une seule occurrence faisait échouer toute la synchro.
@@ -867,6 +1028,27 @@ Fichier à traduire :
                 translated_text = translated_text[:-5]
             elif translated_text.endswith("\n```"):
                 translated_text = translated_text[:-4]
+            return translated_text
+
+        try:
+            if len(prompt_source) > SEUIL_DECOUPAGE:
+                morceaux = decouper(prompt_source, ancres_permises=(
+                    {a for _p, a in points_de_coupe(prompt_old_target)}
+                    if prompt_old_target else None))
+                anciens = (apparier(morceaux, prompt_old_target) if prompt_old_target
+                           else [""] * len(morceaux))
+                print(f"  {file_path} : {len(prompt_source)} caractères, traduit en "
+                      f"{len(morceaux)} morceaux (seuil {SEUIL_DECOUPAGE}).")
+                parties = []
+                for (_ancre, morceau), ancien in zip(morceaux, anciens):
+                    rendu = appeler(prompt_morceau(source_lang, target_lang, morceau,
+                                                   ancien, consigne_formules))
+                    if morceau.endswith("\n") and not rendu.endswith("\n"):
+                        rendu += "\n"
+                    parties.append(rendu)
+                translated_text = "".join(parties)
+            else:
+                translated_text = appeler(prompt)
 
             # Les formules d'abord : `restore_*` et la troncature comparent à la
             # source NON masquée, et un jeton altéré doit faire échouer le fichier
