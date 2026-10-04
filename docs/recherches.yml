@@ -819,3 +819,35 @@
   a_faire:
   - lire les articles 1 à 118 de la loi n° 60-30 à l'image
   - lire l'arrêté du 16 août 1961 (application des articles 104 et 106 de la loi n° 60-30)
+
+- id: r-impot-fortune-modificatifs
+  objet: texte modifiant l'article 23 du décret-loi n° 2022-79 (impôt sur la fortune immobilière) ou l'article 88 de la loi n° 2025-17 (impôt sur la fortune), ou pris pour leur application (décret, arrêté)
+  ou: [precis/fr/fiscalite/_impot_fortune.qmd#sec-fortune-evolution]
+  requetes:
+    titres_fts: [fortune OR patrimoine immobilier, fortune OR الثروة]
+    titres_like: ['%loi de finances%']
+    plein_texte: [الثروة, الثروة العقارية, الضريبة على الثروة, 79 لسنة 2022, fortune, impôt sur la fortune]
+    depuis: 2022-12-23
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local, iort, presse]
+    couverture: 'jort_cache : FTS match « fortune OR patrimoine immobilier » (soit fortune OU (patrimoine ET immobilier), sans guillemets de phrase) et match « fortune OR الثروة » (un seul résultat pertinent, la notice du DL 2022-79 art. 23), LIKE « loi de finances » 2019-2026. Plein texte (pdftotext -layout) de tous les fascicules AR (555, normalisés NFKC pour les formes de présentation arabes) et FR du corpus local de 2023 au n° 93 de 2026, et des n° 140-143 de 2022 : « الثروة » ne renvoie, hors homonymes (ثروة حيوانية, معدنية, مصدر الثروة), qu''à Ja1412022 (art. 23) et Ja1482025 (art. 88) ; « fortune » ne renvoie à aucun fascicule FR. Les « 79 لسنة 2022 » des LF 2024 (Ja1442023) et LF 2025 (Ja1492024) visent d''autres articles (15, 26, 28, 29, 59, 64). Seconde voie : la NC 13/2026, § I, donne l''art. 23 comme législation en vigueur jusqu''au 31/12/2025. Lacunes : n° 58 de 2026 absent du corpus ; rien après le n° 93 de 2026 ; fascicules inconnus de jort_cache (outillage-sources § 1 f) parcourus seulement s''ils sont au corpus local. Note : docs/notes/fiscalite-impot-fortune.md, § 13.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: ['lire les numéros du JORT postérieurs au n° 93 de 2026, et le n° 58 de 2026']
+
+- id: r-impot-fortune-rendement
+  objet: série officielle du produit de l'impôt sur la fortune immobilière (2023-2025) et de l'impôt sur la fortune (depuis 2026), ou ligne propre dans les tableaux des recettes annexés aux lois de finances
+  ou: [precis/fr/fiscalite/_impot_fortune.qmd#sec-fortune-rendement]
+  requetes:
+    plein_texte: [الثروة, الضريبة على الثروة, impôt sur la fortune]
+    depuis: 2022-12-23
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [corpus_local, presse]
+    couverture: 'Plein texte des fascicules AR et FR du corpus local de 2023 au n° 93 de 2026, et des n° 140-143 de 2022 : « الثروة » n''apparaît que dans l''art. 23 du DL 2022-79 et l''art. 88 de la loi n° 2025-17, jamais dans les tableaux des recettes (tableau A) des LF 2023 à 2026. Classeur du ministère des Finances des recettes fiscales 1986-2025 (minfin-recettes-fiscales, tunisia-data data/raw/minfinances/recettes_fiscales.xls), lu le 4/10/2026 : les impôts directs n''y comptent que l''impôt sur le revenu et l''impôt sur les sociétés, sans ligne propre. Presse : un objectif de recettes et un nombre de redevables cités sans pièce de l''administration fiscale, non retenus. Lacunes : publications de la DGI, rapports de la Cour des comptes et lois de règlement non consultés. Note : docs/notes/fiscalite-impot-fortune.md, § 8.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: ['consulter les lois de règlement du budget 2023 et 2024, et les publications statistiques de la DGI']

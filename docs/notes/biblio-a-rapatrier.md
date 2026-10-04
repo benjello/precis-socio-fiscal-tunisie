@@ -6,6 +6,10 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Ajouts à la main du 04/10/2026 (fiscalité, impôt sur la fortune)
+
+Deux clés versées dans `precis/fr/fiscalite/references.json` et `precis/ar/fiscalite/references.json`, absentes de Zotero : `dgi-nc-15-2023` et `dgi-nc-13-2026` (notes communes parues en arabe seulement ; titre arabe dans l'entrée AR, titre français traduit dans l'entrée FR). Entrées complétées (notes) : `lf-2014` (art. 55), `lfc-2014` (art. 38), `lf-2023` (art. 23 et 76 ; pagination française établie par le fac-similé DGI, TODO levé ; art. 12 présent dans l'édition française, p. 3557), `lf-2026` (art. 88, 110, note (1)). **`lfc-2014` FR : champ `page` corrigé de 2183-2232 (pagination arabe) en 2095-2142** (sommaire de l'édition française) ; l'entrée AR garde 2183-2232. À répercuter dans Zotero avant toute descente. Source : `docs/notes/fiscalite-impot-fortune.md`, § 9.
+
 ## Ajouts à la main du 04/10/2026 (fiscalité, présentation)
 
 Quatre clés versées dans `precis/fr/fiscalite/references.json` et `precis/ar/fiscalite/references.json`, absentes de Zotero : `loi-67-53-lob`, `loi-org-96-103-lob`, `loi-org-2019-15-lob`, `zakraoui-ena-droit-fiscal` (`push_biblio.py --verifier` : 0 perte). Entrées AR : titres arabes lus sur le sommaire de l'édition arabe ; page de fin à relever (TODO). `loi-org-2019-15-lob` : jort_cache n'a pas de `pdf_fr`, URL française vérifiée sur pist.tn (HTTP 200). Support ENA sans date imprimée : pas d'`issued`.

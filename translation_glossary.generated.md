@@ -86,6 +86,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fait générateur du droit de consommation | الحدث المتولد عنه المعلوم على الاستهلاك |  |
 | Fonction publique | الوظيفة العمومية |  |
 | Fonctions astreignantes | الوظائف المرهقة |  |
+| Fonds de commerce | الأصول التجارية |  |
 | Fonds de réserve | صندوق الاحتياط |  |
 | Fonds de sécurité sociale | صناديق الضمان الاجتماعي |  |
 | Forces de sécurité intérieure | قوات الأمن الداخلي |  |
@@ -93,6 +94,10 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Gestion financière distincte | التصرّف المالي المستقلّ |  |
 | Grade | الرتبة |  |
 | Grille des salaires | شبكة الأجور |  |
+| Habitation principale | المسكن الرئيسي |  |
+| Impôt foncier (2014) | الضريبة العقارية (2014) |  |
+| Impôt sur la fortune | الضريبة على الثروة |  |
+| Impôt sur la fortune immobilière | الضريبة على الثروة العقارية |  |
 | Impôt sur le revenu des personnes physiques | الضريبة على دخل الأشخاص الطبيعيين | IRPP |
 | Impôt sur les sociétés | الضريبة على الشركات | IS |
 | Impôts directs | الأداءات المباشرة |  |

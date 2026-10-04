@@ -24,7 +24,7 @@ extraits des lois de finances sont dans le dossier voisin `PDFs/Lois_de_Finances
 
 | Livre | État du texte | Première lecture faisable |
 |---|---|---|
-| Fiscalité | Quatre impôts ouverts ; TVA : déductions, régime suspensif et obligations encore à rédiger | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
+| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) ; TVA : déductions, régime suspensif et obligations encore à rédiger | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; PNAFN historique sans sources pour ses onze dates et montants | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
@@ -37,7 +37,7 @@ tableaux ou annexes ne sont pas des images. **OCR** veut dire que le fascicule e
 mais que la couche texte testée est vide. Un texte absent du JORT en français peut avoir une
 édition arabe ou un extrait français dans `PDFs/Lois_de_Finances/` : les distinguer.
 
-## Fiscalité — quatre impôts ouverts, des lectures et des mécanismes à compléter
+## Fiscalité — cinq impôts ouverts, des lectures et des mécanismes à compléter
 
 - **Présentation (`index.qmd`) : impôts directs et indirects définis et sourcés** (LOB 1967, 1996, 2019 ; tableaux A des LF 2014 et 2021 ; support ENA de S. Zakraoui), textes lus dans le corpus. Reste : relever la page de fin des trois LOB dans l'édition arabe ; dater le support ENA ou lui substituer la doctrine imprimée (`baccouche2008`, `ayadi1996`, à obtenir) ; l'arrêté de nomenclature des recettes (LOB 2019, art. 16) n'est pas identifié.
 
@@ -59,6 +59,25 @@ attend encore trois développements : déductions (art. 9-11), régime suspensif
 obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO` de
 `precis/fr/fiscalite/_tva.qmd`. Ne pas les confondre avec une simple reprise de forme.
 
+- **Impôt sur la fortune (`_impot_fortune.qmd`, chapitre ouvert le 4 octobre 2026)** sur la
+  note `docs/notes/fiscalite-impot-fortune.md`. Textes lus : LF 2014 art. 55 et LFC 2014
+  art. 38 (fascicules FR et AR locaux, lisibles) ; DL 2022-79 art. 23 et 76 (édition arabe
+  locale, édition française par le fac-similé DGI) ; loi n° 2025-17 art. 88 et 110 (édition
+  arabe seule, traduite par le précis) ; notes communes n° 15/2023 (scan, océrisée et relue à
+  l'image) et n° 13/2026 (couche texte inutilisable, relue à l'image). Restent :
+  - **AR** : déclarer `_impot_fortune.qmd` dans `precis/ar/fiscalite/_quarto.yml` (ligne
+    commentée en place, après `_impot_societes.qmd`) dès que la traduction est livrée ;
+  - **rendement** : aucune série publiée (fiche `r-impot-fortune-rendement`) ; lois de
+    règlement 2023-2024 et publications de la DGI à consulter ;
+  - **modèle de déclaration 2026** : à obtenir (la NC 13/2026 n'a pas d'annexe) ;
+  - **modificatifs et textes d'application** : JORT postérieurs au n° 93 de 2026 et n° 58
+    de 2026 à lire (fiche `r-impot-fortune-modificatifs`) ;
+  - **antécédents** avant 2014 (époque beylicale et coloniale, 1956-2013) non explorés ;
+  - **glossaire** : `fonds-de-commerce` reste provisoire, terme français à confirmer dans un
+    texte bilingue du JORT ;
+  - **genèse parlementaire** de l'art. 88 (rejet en commission, suppression puis
+    réintroduction en plénière) : presse seulement, hors du corps faute de pièce de l'ARP
+    ou du CNRD.
 - **Forme de `_impot_revenu.qmd` : rien à reprendre.** Ses titres ont été remontés d'un cran
   et il a reçu sa section « La longue période ». La réorganisation par réforme, un temps
   envisagée, a été écartée après lecture — voir « Forme des chapitres » plus bas, qui en
@@ -460,6 +479,7 @@ l'information.
 | Chapitre | Forme | À faire |
 |---|---|---|
 | `_impot_societes.qmd` | conforme | — |
+| `_impot_fortune.qmd` | conforme ; s'achève sur une case vide (aucune série de rendement) | traduction arabe à déclarer dans le `_quarto.yml` AR |
 | `_droits_consommation.qmd` | historique remonté en tête | la chronologie du périmètre reste un tableau sans récit texte par texte — signalé, non confirmé |
 | `_tva.qmd` | historique sorti de l'attaque | déductions, achats en suspension et obligations restent à écrire sur les articles du code |
 | `_impot_revenu.qmd` | conforme, à sa manière | rien sur la forme ; restent deux sections à ÉCRIRE, voir plus bas |
