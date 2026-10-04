@@ -3003,4 +3003,5 @@ requis) :
 - [ ] `decret-2022-802` — JORT n° 121/2022, pp. 2998-2999 ; **absent de jort_cache** : URL = `pdf_fr`/`pdf_ar` d'un autre enregistrement du même fascicule (n° 121/2022), vérifiées (200, tailles égales au corpus local).
 - [ ] `dgi-nc-15-2011`, `dgi-nc-27-2016` — notes communes, sans URL publique : chercher l'adresse jibaya.tn.
 - [ ] `dgi-nc-lf2018-art16` — note commune dont le numéro (15/2018 d'après le nom du fichier) n'est pas lu sur pièce : vérifier sur l'original, puis renommer la clé si le numéro est confirmé.
+- [ ] `minfin-cnf-2013-forfait` — diaporama du ministère des Finances (CNF, août 2013, en arabe), document retiré du site : URL Wayback `20170616075036` lue dans le CDX, champs `archive`/`archive_location` posés (FR et AR).
 - [x] `lf-2026` (fonds commun, FR et AR) : note corrigée — article 91 en page 4255 de l'édition arabe (non 4254-4255) ; article 110 (application au 1er janvier 2026) en page 4258.

@@ -711,7 +711,7 @@ La même loi reprend, aux articles 44 *quinquies* et 44 *sexies*, l'imposition a
 
 **2023 : le montant fixe doublé.** Le décret n° 2022-802 allonge, à compter du 1^er^ janvier 2023, les trois listes d'activités exclues dans les zones communales [@decret-2022-802]. La loi de finances pour 2023 porte le montant fixe de 200 à 400 dinars dans les zones communales, soit 200 dinars ailleurs, pour l'impôt forfaitaire dont le délai de déclaration échoit en 2023 et au-delà [@lf-2023, art. 55].
 
-**2026 : l'option.** Le [régime estimatif optionnel](#g-regime-estimatif-optionnel) que la loi de finances pour 2026 ajoute à l'article 44 *ter* s'inscrit dans le même mouvement : il ouvre une troisième voie sous un seuil de 100 000 dinars [@lf-2026, art. 91]. Il est réservé aux personnes qui n'importent pas, n'exercent ni le commerce de gros, ni une activité non commerciale, ni l'intermédiation, et n'ont pas été classées au réel après vérification. L'impôt y est un montant annuel fixe selon la classe de chiffre d'affaires déclaré spontanément — 4 000 dinars jusqu'à 50 000 dinars, 5 000 dinars de 50 001 à 100 000 dinars —, réduit de moitié pour les activités implantées dans les campagnes et les villages ; il est libératoire dans la limite du chiffre d'affaires déclaré, avec un taux de bénéfice net estimé n'excédant pas 25 % de ce chiffre d'affaires. Qui l'a choisi n'est pas soumis à la vérification fiscale pendant six ans, sauf éléments établis d'enrichissement injustifié ou d'activités exclues, et l'option s'étend à une partie des activités que le décret n° 2022-802 avait rattachées au réel — cafés autres que les salons de thé et les débits de boissons, mécanique et électricité automobiles, lavage, vente de viandes rouges, pâtisserie, entre autres, hors grandes surfaces des grandes villes [@lf-2026, art. 91]. Les dispositions de la loi s'appliquent à compter du 1^er^ janvier 2026, l'article 91 ne figurant pas parmi les exceptions [@lf-2026, art. 110]. Le texte, paru en arabe seulement, nomme ce régime « النظام التقديري الاختياري », du mot qui désigne le régime forfaitaire lui-même ; « régime estimatif optionnel » en est la traduction retenue ici.
+**2026 : l'option.** Le [régime estimatif optionnel](#g-regime-estimatif-optionnel) que la loi de finances pour 2026 ajoute à l'article 44 *ter* s'inscrit dans le même mouvement : il ouvre une troisième voie sous un seuil de 100 000 dinars [@lf-2026, art. 91]. Il est réservé aux personnes qui n'importent pas, n'exercent ni le commerce de gros, ni une activité non commerciale, ni l'intermédiation, et n'ont pas été classées au réel après vérification. L'impôt y est un montant annuel fixe selon la classe de chiffre d'affaires déclaré spontanément — 4 000 dinars jusqu'à 50 000 dinars, 5 000 dinars de 50 001 à 100 000 dinars —, réduit de moitié pour les activités implantées dans les campagnes et les villages ; il est libératoire dans la limite du chiffre d'affaires déclaré, avec un taux de bénéfice net estimé n'excédant pas 25 % de ce chiffre d'affaires. Qui l'a choisi n'est pas soumis à la vérification fiscale pendant six ans, sauf éléments établis d'enrichissement injustifié ou d'activités exclues, et l'option s'étend à une partie des activités que le décret n° 2022-802 avait rattachées au réel — cafés de toute catégorie autres que les salons de thé et les débits de boissons, mécanique, tôlerie, peinture et électricité automobiles, vente de viandes rouges et dérivés, vente de pâtisserie et de glaces, hors grandes surfaces et grands ensembles commerciaux des grandes villes [@lf-2026, art. 91]. Les dispositions de la loi s'appliquent à compter du 1^er^ janvier 2026, l'article 91 ne figurant pas parmi les exceptions [@lf-2026, art. 110]. Le texte, paru en arabe seulement, nomme ce régime « النظام التقديري الاختياري », du mot qui désigne le régime forfaitaire lui-même ; « régime estimatif optionnel » en est la traduction retenue ici.
 
 <!-- TODO (vérification) : l'article 91 de la loi n° 2025-17 (LF 2026) a été lu à l'image sur le
 fascicule arabe du JORT n° 148 du 12 décembre 2025, p. 4255, l'édition française n'étant pas
@@ -749,15 +749,34 @@ Sources : celles de chaque ligne. Les montants sont en dinars. La colonne « App
 durées du régime forfaitaire seront datés et sourcés dans la base de paramètres. Écart constaté le
 4 octobre 2026 : voir docs/notes/backlog-modele.md (régime forfaitaire). -->
 
-<!-- TODO (rédacteur) : longue période — nombre de forfaitaires, produit de l'impôt forfaitaire,
-répartition par activité. Une collecte dédiée (consultation nationale sur la réforme fiscale
-2013-2014, présentations du ministère des Finances 2011-2014) est en cours dans
-~/projets/tunisia-data/data/raw/minfinances/reforme_fiscale_2013_2014/ ; compléter ici une
-sous-section « La longue période » à partir de son inventaire, chaque chiffre avec sa source
-(document, date, page ou diapositive). Aucune série n'est dans tunisia-data au 4 octobre 2026
-(recettes_fiscales.xls, indicateurs_fp_*.xls : pas de ligne « forfait »).
+### La longue période
 
-MANQUE ENCORE, et c'est un sujet distinct : le régime de la retenue à la source libératoire
+Les chiffres datés disponibles ici sur les forfaitaires viennent du diagnostic que le ministère des Finances a présenté en 2013, dans le cadre du projet de réforme du système fiscal, au groupe de travail chargé de la révision du régime forfaitaire [@minfin-cnf-2013-forfait] (@tbl-forfait-effectifs).
+
+: Les forfaitaires et leur contribution d'après le diagnostic du ministère des Finances, 2004-2013 {#tbl-forfait-effectifs}
+
+| Année | Inscrits | En règle | Défaillants | Contribution (millions de dinars) | Contribution moyenne (dinars) |
+|---|---:|---:|---:|---:|---:|
+| 2004 | 300 000 environ | — | — | 14 | — |
+| 2009 | 348 581 | 232 504 (67 %) | 116 077 | 25,181 | 108,3 |
+| 2010 | 363 390 | 216 526 (60 %) | 146 864 | 22,616 | 104,5 |
+| 2011 | 377 045 | 181 337 (48 %) | 195 708 | 14,969 | 82,5 |
+| 2012 | — | — | — | 23 | — |
+| juin 2013 | 394 000 environ | — | — | — | — |
+
+Source : ministère des Finances, diaporama du groupe de travail sur la révision du régime forfaitaire, 2013 — diapositive 4 pour 2004, 2012 et juin 2013, diapositive 5 pour 2009 à 2011 [@minfin-cnf-2013-forfait]. Les valeurs arrondies sont celles du texte de la diapositive 4. Pour 2010, le texte de cette diapositive porte 30 millions de dinars, le graphique de la diapositive 5, 22,616 millions.
+
+Le même document situe le régime : les forfaitaires forment 60 % du fichier des contribuables et 80 % des personnes physiques imposées dans la catégorie des bénéfices industriels et commerciaux, et leur contribution représente 0,2 % des recettes fiscales du régime intérieur, sans que l'année de ce dernier rapport soit précisée [@minfin-cnf-2013-forfait]. Entre 2009 et 2011, le nombre d'inscrits augmente chaque année tandis que celui des contribuables en règle diminue, et la contribution moyenne recule de 108,3 à 82,5 dinars — à rapprocher des planchers de 50 et 100 dinars alors en vigueur (@tbl-irpp-forfait). Le diaporama ne dit pas si ces années sont celles des revenus ou des déclarations.
+
+<!-- TODO (documentaliste) : prolonger la série après 2013 (nombre de forfaitaires, produit de
+l'impôt forfaitaire). Autres chiffres disponibles dans la même collection, à relire à l'image
+avant usage (fiche tunisia-data sources/minfinances-reforme-fiscale-2013-2014.md) : déclarations et
+contribution par tranche de chiffre d'affaires 2009-2011 (diapositives 7-8), répartition par
+secteur en 2010 (diapositives 6 et 33), comparaison avec le réel (diapositive 16), 394 976
+forfaitaires et 23,4 MD dans « إدارة الجباية : الواقع والآفاق » (juin 2013, p. 11-12), synthèse
+CNF de novembre 2013. Fichiers : ~/projets/tunisia-data/data/raw/minfinances/reforme_fiscale_2013_2014/. -->
+
+<!-- TODO (documentaliste) : MANQUE ENCORE, et c'est un sujet distinct : le régime de la retenue à la source libératoire
 (revenus de capitaux mobiliers notamment), articles du code et série des taux.
 Cf. Q12 et Q6 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 

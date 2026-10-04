@@ -67,9 +67,11 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 - **IRPP** : le minimum d'impôt de l'article 44 § II et le régime forfaitaire sont écrits.
   Le régime forfaitaire (`#sec-irpp-forfait`) couvre depuis le 4 octobre 2026 toute la
   chronologie 1990-2026, chaque modificatif lu au JORT (note
-  `docs/notes/fiscalite-regime-forfaitaire.md`). Y restent : la **longue période** (nombre de
-  forfaitaires, produit de l'impôt — collecte des documents de la réforme fiscale 2013-2014 en
-  cours dans `tunisia-data`, aucun chiffre lisible au corpus à ce jour) ; la **relecture
+  `docs/notes/fiscalite-regime-forfaitaire.md`). Y restent : la **longue période** au-delà de 2013 —
+  `tbl-forfait-effectifs` ne couvre que 2004 et 2009-2013, d'après le diaporama du ministère des
+  Finances d'août 2013 (`minfin-cnf-2013-forfait`, lu à l'image) ; les autres chiffres de la
+  collection `tunisia-data` (tranches de chiffre d'affaires, secteurs, comparaison avec le réel)
+  sont lisibles mais non encore relus ; la **relecture
   arabophone** de l'article 91 de la LF 2026 (lu à l'image, édition arabe seule parue) et
   l'**arbitrage terminologique** « régime estimatif optionnel » / « régime forfaitaire
   optionnel » (النظام التقديري الاختياري) ; le **numéro** de la note commune sur l'article 16

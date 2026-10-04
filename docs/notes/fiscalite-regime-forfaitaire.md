@@ -265,9 +265,10 @@ au fascicule — son extrait local ne cite ni « 44 *bis* » ni « forfaitaire �
   justifié ou d'activités d'importation, de gros, non commerciales ou d'intermédiation.
 - Prorogation automatique dans le régime, nonobstant l'art. 44 *bis* ; sortie sur demande de
   passage au réel ou selon l'art. 44 *sexies*.
-- S'applique aussi aux activités rattachées au réel par le décret n° 2022-802 (cafés, mécanique
-  et électricité automobile, lavage, viande rouge, pâtisserie…, sauf celles des grandes surfaces
-  des grandes villes).
+- S'applique aussi aux activités rattachées au réel par le décret n° 2022-802 (cafés de toute
+  catégorie sauf salons de thé et débits de boissons ; mécanique, tôlerie, peinture et électricité
+  automobiles ; viandes rouges et dérivés ; pâtisserie et glaces — sauf dans les grandes surfaces
+  et grands ensembles commerciaux des grandes villes).
 - Déclaration en deux versements égaux : avant le 25 avril et avant le 25 octobre.
 
 **Terminologie — point à trancher.** Le texte arabe nomme le dispositif **النظام التقديري
@@ -281,6 +282,25 @@ optionnel » — à rapprocher de l'« impôt forfaitaire optionnel » de 1 500 
 précis garde le libellé en usage, en signalant le terme arabe ; l'arbitrage revient à l'humain.
 
 ## 6. Longue période
+
+**Mise à jour du 4 octobre 2026 (après la collecte `tunisia-data`).** Diaporama du ministère des
+Finances « حوصلة لأشغال فريق العمل المكلف بمراجعة النظام التقديري وإدماج الاقتصاد الموازي »
+(CNF, août 2013), capture Wayback `20170616075036` (CDX vérifié ; l'adresse d'origine répond 404
+depuis 2022) — clé `minfin-cnf-2013-forfait`. Relu à l'image :
+
+- diapositive 4 : inscrits 300 000 (2004) → 394 000 (fin juin 2013, +31,3 %) ; 60 % du fichier,
+  80 % des personnes physiques BIC ; dépôt dans les délais 40 %, 50 % en fin d'année ;
+  contribution 14 MD (2004) → 23 MD (2012, +64 %), et « 30 م د » pour 2010 dans le texte ;
+  0,2 % des recettes fiscales du régime intérieur (année non dite) ; 45 000 interventions de
+  contrôle par an pour environ 12 MD ;
+- diapositive 5 : 2009 / 2010 / 2011 — inscrits 348 581 / 363 390 / 377 045 ; en règle
+  232 504 (67 %) / 216 526 (60 %) / 181 337 (48 %) ; défaillants 116 077 / 146 864 / 195 708 ;
+  contribution 25,181 / 22,616 / 14,969 MD ; moyenne 108,3 / 104,5 / 82,5 D.
+
+Écart signalé, non tranché : 2010 = 30 MD (texte, diapo 4) contre 22,616 MD (graphique, diapo 5).
+Versé au chapitre : `tbl-forfait-effectifs`.
+
+Constat antérieur à la collecte :
 
 Aucune série du nombre de forfaitaires ni du produit de l'impôt forfaitaire n'a été trouvée dans
 `~/projets/tunisia-data` (`recettes_fiscales.xls` et `indicateurs_fp_*.xls` du ministère des
