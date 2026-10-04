@@ -33,6 +33,7 @@ PREFIXES_PARTAGES = (
     "scripts/tarifs.py",
     "precis/glossaire.yml",
     "precis/legendes.scss",
+    "precis/legendes.html",
     "precis/_seriescache/",
 )
 

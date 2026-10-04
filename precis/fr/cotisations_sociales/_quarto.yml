@@ -16,7 +16,7 @@ book:
     - index.qmd
     - _assiette.qmd
     - _taux_global.qmd
-    - part: _branches.qmd
+    - part: "Les branches, une à une"
       chapters:
         - _pensions.qmd
         - _maladie.qmd
