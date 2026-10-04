@@ -197,7 +197,9 @@ DEUX POINTS DE CETTE CONSIGNE SONT CLOS, vérifiés le 20 septembre 2026 :
 - **Indemnité familiale.** Elle ne passe pas par la caisse. La loi n° 88-39 la fait servir aux agents publics « *autres que ceux soumis au régime de sécurité sociale institué par la loi n° 60-30* », et le décret n° 96-1906 vise « *les indemnités familiales dues aux fonctionnaires et agents de l'État, des collectivités publiques locales et des établissements publics à caractère administratif* » : ni l'un ni l'autre ne mentionne la CNRPS [@loi88-39 ; @decret96-1906]. C'est une **indemnité de rémunération portée par le budget de l'employeur**, non une prestation de sécurité sociale, et son montant est fixé en dinars par décret plutôt qu'en pourcentage d'un salaire. Le livre « Prestations sociales » en donne les montants et la chronologie.
 
 - **Retenue à la source de l'impôt sur le revenu (IRPP).** Le traitement et les indemnités imposables sont soumis à la retenue à la source au titre de l'[impôt sur le revenu des personnes physiques](#g-irpp), régi par le code de l'IRPP et de l'IS issu de la loi n°89-114 du 30 décembre 1989 [@loi-irpp-is-1989]. Le barème et ses modalités sont exposés dans le livre consacré à la fiscalité.
-- **Contribution sociale de solidarité (CSS).** La [contribution sociale de solidarité](#g-css) a été créée par l'article 53 de la loi n°2017-66 du 18 décembre 2017 portant loi de finances pour 2018 [@loi2017-66-lf2018] ; son taux salarial, initialement de 1 %, a été ramené à 0,5 % par la loi de finances pour 2023 [@lf-2023, art. 22] (@tbl-css-salarie). Ses modalités sont traitées, le cas échéant, dans le livre consacré à la fiscalité.
+- **Contribution sociale de solidarité (CSS).** La [contribution sociale de solidarité](#g-css) a été créée par l'article 53 de la loi n°2017-66 du 18 décembre 2017 portant loi de finances pour 2018 [@lf-2018, art. 53]. Pour les personnes physiques, elle est calculée en majorant d'un point chaque taux de tranche du barème de l'impôt sur le revenu ; la loi de finances pour 2023 ramène cette majoration à un demi-point pour les revenus dont la déclaration échoit en 2023, 2024 et 2025, et en dispense les seuls salariés et pensionnés dont le revenu annuel net n'excède pas 5 000 dinars [@lf-2023, art. 22] (@tbl-css-salarie). L'histoire de son taux et son affectation aux caisses sont exposées dans le livre [« Les caisses de sécurité sociale »](../caisses/_etat_caisses.html#sec-caisses-financeur), son assiette et son calcul dans le livre consacré à la fiscalité.
+
+<!-- TODO (rédacteur) : le tableau tbl-css-salarie, engendré, présente la CSS comme un « taux applicable aux salariés » de 1 % puis 0,5 % au 1er janvier 2023, sans dire qu'il s'agit d'une majoration en points des taux du barème, ni que le demi-point ne vaut que pour les revenus déclarés en 2023-2025 (loi de finances pour 2023, art. 22, § 2). Voir docs/notes/backlog-modele.md. -->
 
 ```{python}
 #| echo: false
@@ -529,7 +531,7 @@ figtools.figure_tabs(
 )
 ```
 
-### La ventilation par ministère et ses limites {#sec-ventilation-ministere}
+## La ventilation par ministère et ses limites {#sec-ventilation-ministere}
 
 L'enquête de l'INS sur les agents de la fonction publique [@ins-fonction-publique-2021] propose une ventilation des effectifs par ministère, sur la période 2015-2021, ainsi que des salaires moyens par ministère ; le rapport qui la prolonge en donne une nouvelle pour 2018-2025 [@ins-fonction-publique-2025]. Cette ventilation porte sur la fonction publique civile : les agents y sont entièrement répartis dans les catégories statutaires A1 à D, c'est-à-dire selon la grille du statut général, ce qui en fait une statistique du **régime indiciaire**. À ce titre, elle éclaire la répartition des agents indiciaires entre les administrations, mais elle appelle une réserve importante dès lors qu'on s'intéresse à certains ministères.
 

@@ -1,0 +1,200 @@
+# La longue période {#sec-caisses-longue-periode}
+
+Deux sources permettent de suivre les comptes des caisses dans le temps, à des niveaux différents.
+
+La rétrospective financière de la CNSS donne, de 1990 à 2004, les ressources, les emplois et le résultat de gestion de chaque régime et de chaque branche, dans la présentation par compte de compensation que la loi impose [@cnss-retrospective-1990-2004] : les figures de ce livre en sont tirées (@fig-cnss-regimes, @fig-cnss-atmp-pst, @fig-cnss-assurances-sociales ; pour les cotisations par branche, [livre « Cotisations sociales »](../cotisations_sociales/_bilan.html#fig-cotisations-branches-1990-2004)). Pour la CNRPS, les états financiers de 2015 à 2018 donnent les recettes et les dépenses de chaque régime [@cnrps-etats-financiers] ; rien de comparable n'est réuni ici pour la CNSS après 2004, ni pour la CNAM.
+
+Les comptes de la nation de l'Institut national de la statistique présentent, dans chaque édition, les comptes de l'ensemble des organismes de sécurité sociale — cotisations reçues, prestations, transferts entre administrations publiques, revenus de la propriété, capacité ou besoin de financement — comme le sous-secteur des administrations publiques que l'Institut nomme « administrations de sécurité sociale » — les [fonds de sécurité sociale](#g-fonds-de-securite-sociale) du système de comptabilité nationale [@ins-cnat-2015]. Ils ne ventilent ces comptes ni par caisse ni par branche. Les transferts reçus d'autres administrations publiques y sont la ligne où s'inscrivent les concours de l'État.
+
+## Les régimes de la CNSS, 1990-2004 {#sec-caisses-cnss-regimes}
+
+Ce que chaque régime prélève et ce qu'il dépense ne s'équilibrent pas de la même façon d'un régime à l'autre. La rétrospective financière de la CNSS donne, de 1990 à 2004, le total des ressources, le total des emplois et le résultat de gestion de chacun, toutes branches confondues [@cnss-retrospective-1990-2004] ; le rapport des ressources aux emplois — le taux de couverture — les sépare nettement (@fig-cnss-regimes). Les ressources du [régime des salariés agricoles](#g-rsa) couvrent moins du quart de ses emplois chaque année, et moins d'un dixième depuis 1997 ; celles des non-salariés du secteur agricole, d'un quart environ à 58 % selon les années, et le déficit de leur compte se creuse, en dinars courants, sur toute la période. Le [régime agricole amélioré](#g-rsaa) fait exception parmi les régimes agricoles : il est excédentaire toutes les années sauf 2001 et 2004. Le régime des étudiants est déficitaire chaque année depuis que sa comptabilité est séparée, en 1995. Le régime général est excédentaire chaque année, celui des non-salariés du secteur non agricole chaque année depuis 1996 ; le taux de couverture du premier revient de 140 % en 1994 à 101 % en 2004, et son excédent se réduit fortement en 2003 et 2004.
+
+Dans ces comptes, le résultat de l'ensemble des régimes est la somme des résultats de chacun, et aucune ligne ne transfère de ressources d'un régime à un autre : les déficits des uns se compensent, dans le résultat de la caisse, par les excédents des autres. En 2004, les déficits des salariés agricoles et des non-salariés du secteur agricole dépassent ensemble l'excédent du régime général ; le résultat de l'ensemble reste positif par les excédents des non-salariés du secteur non agricole, des accidents du travail et de la protection sociale des travailleurs (@fig-cnss-atmp-pst). Le document ne dit pas comment la trésorerie de la caisse couvre ces déficits. Les seuls transferts qu'il mentionne sont des transferts de taux : d'une branche à l'autre du régime général, et de ce régime vers le régime des accidents du travail et vers la protection sociale des travailleurs (@sec-caisses-ventilation).
+
+```{python}
+#| label: fig-cnss-regimes
+#| fig-cap: "Ressources et emplois des régimes de la CNSS, toutes branches confondues : taux de couverture des emplois par les ressources et résultat de gestion, en dinars courants et rapporté au PIB et aux ressources de la caisse, 1990-2004."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cnss_regimes_1990_2004 as rg
+import figtools
+figtools.figure_tabs(
+    rg.vues(), rg.table(), "cnss-retrospective-ressources-emplois", "irpp-ratios",
+    slug="fig_cnss_regimes",
+    caption=("Ressources et emplois des régimes de la CNSS, toutes branches confondues : "
+             "taux de couverture des emplois par les ressources et résultat de gestion, en "
+             "dinars courants et rapporté au PIB et aux ressources de la caisse, 1990-2004"),
+    note_lecture=(
+        "Chaque panneau est un régime, pris toutes branches confondues — prestations "
+        "familiales, assurances sociales et pensions, selon les branches qu'il a ; le "
+        "régime complémentaire, la convention tuniso-française, les accidents du travail "
+        "et la protection sociale des travailleurs, que le même tableau de la caisse donne "
+        "aussi, n'y figurent pas. Les montants sont ceux des comptes de bilan, en dinars "
+        "**courants**. La première vue rapporte le total des ressources de l'année au total "
+        "de ses emplois : au-dessus de la ligne de 100 %, en bleu, les ressources couvrent "
+        "les emplois ; au-dessous, en orange, elles ne les couvrent pas. Les trois autres "
+        "vues donnent le résultat de gestion, ressources moins emplois, en millions de "
+        "dinars, en pourcentage du PIB que retient le ministère des Finances "
+        "[@minfin-indicateurs-fp] et en pourcentage du total des ressources de la CNSS, "
+        "toutes branches et tous régimes. **Chaque panneau a sa propre échelle** : le "
+        "régime général pèse plus de cent fois les petits régimes, dont les montants se "
+        "comptent en milliers de dinars — ceux des Tunisiens à l'étranger, des travailleurs "
+        "à faibles revenus, des artistes et des étudiants. Leur taux de couverture varie "
+        "d'autant plus : il dépasse 600 % pour les Tunisiens à l'étranger de 1990 à 1992 et "
+        "pour les travailleurs à faibles revenus en 2002, première année de leur régime. "
+        "Une année sans ressources ni emplois n'est pas tracée : le régime n'existe pas "
+        "encore, ou n'a pas encore de comptabilité séparée — les étudiants avant 1995, "
+        "selon une note du document. Le régime des artistes, créateurs et intellectuels "
+        "n'a de compte qu'en 2004, sans ressources inscrites : son taux de couverture y "
+        "est nul. Le document tient deux comptes pour les non-salariés, secteur non "
+        "agricole et secteur agricole, avant comme après le décret n° 95-1166, qui réunit "
+        "leurs deux régimes en un seul [@decret95-1166]. Aucune valeur tracée n'est "
+        "masquée par la reliure de l'exemplaire consulté. Sur la vue au PIB, la ligne "
+        "pointillée marque le passage, en 1997, de la base 1983 à la base 1997 des comptes "
+        "nationaux, dont les niveaux sont d'environ 10 % plus élevés [@ins-cnat-2015] : à "
+        "montant égal, les ratios en sont abaissés d'environ un dixième à partir de 1997, "
+        "et la rupture n'est pas corrigée. Le total des ressources de la caisse comprend "
+        "les accidents du travail à partir de 1995, la protection sociale des travailleurs "
+        "à partir de 1997 : le dénominateur de la dernière vue s'élargit d'autant à ces "
+        "dates."),
+)
+```
+
+## La branche des assurances sociales du régime général {#sec-caisses-cnss-assurances-sociales}
+
+Avant la loi n° 2004-71, le bloc « assurances sociales » du taux global ne finance pas seulement des prestations servies aux assurés. La rétrospective financière de la CNSS détaille, de 1990 à 2004, les emplois de cette branche dans le régime général [@cnss-retrospective-1990-2004]. Les prestations en espèces y sont les indemnités de maladie et de couches et le capital-décès. Les prestations en nature comprennent les polycliniques de la caisse, mais aussi un forfait accordé à la Santé publique, une participation aux budgets des hôpitaux, les compléments de soins et d'hospitalisation que facturent les hôpitaux publics et des dépenses de renforcement des structures sanitaires publiques (@fig-cnss-assurances-sociales). Une part des cotisations de la branche va ainsi au système public de santé, sous des formes qui changent au cours de la période : la participation aux budgets des hôpitaux devient résiduelle à partir de 1996, l'année où apparaissent les compléments facturés par les hôpitaux publics, et ces compléments sont, de 2002 à 2004, le premier poste des emplois de la branche. Les ressources de la branche dépassent ses emplois chaque année de la période.
+
+```{python}
+#| label: fig-cnss-assurances-sociales
+#| fig-cap: "Branche des assurances sociales du régime des salariés non agricoles : emplois détaillés, ressources et résultat de gestion, en dinars courants et rapportés au PIB et aux ressources de la CNSS, 1990-2004."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cnss_assurances_sociales_1990_2004 as asr
+import figtools
+figtools.figure_tabs(
+    asr.vues(), asr.table(), "cnss-retrospective-ressources-emplois", "irpp-ratios",
+    slug="fig_cnss_assurances_sociales",
+    caption=("Branche des assurances sociales du régime des salariés non agricoles : "
+             "emplois détaillés, ressources et résultat de gestion, en dinars courants et "
+             "rapportés au PIB et aux ressources de la CNSS, 1990-2004"),
+    note_lecture=(
+        "Les montants sont ceux des comptes de bilan de la caisse, en millions de dinars "
+        "**courants**. En haut, les barres empilent les emplois de la branche ligne par "
+        "ligne : en bleu, les prestations en nature versées au secteur public de la santé ; "
+        "en vert, les polycliniques, les autres actions sanitaires et, réunis parce qu'ils "
+        "sont petits, les soins à l'étranger et le poste que le document intitule "
+        "« C.A.O. », sans en développer le sigle ; en orange, les prestations en espèces ; "
+        "en gris, les frais de gestion, les subventions et les charges de structure. La "
+        "pile vaut le total des emplois. Le trait plein donne le total des ressources, les "
+        "tirets les seules cotisations ; l'écart entre le trait et la pile est le résultat "
+        "de gestion, que le panneau du bas reprend : excédentaire chaque année, il va de "
+        "30,4 millions de dinars en 1990 à 80,4 en 1997, puis revient à 36,1 en 2003 et "
+        "44,5 en 2004. Le forfait accordé à la Santé publique passe de 15,1 millions de "
+        "dinars en 1990 à 27,3 en 1995 et reste ensuite entre 26 et 30 millions par an ; "
+        "les compléments de "
+        "soins et d'hospitalisation facturés par les hôpitaux publics, nuls jusqu'en "
+        "1995, atteignent 77,0 millions en 2003. Les ressources de 1994 comprennent un "
+        "montant d'« autres produits » quatre fois plus élevé que celui de 1993, et les "
+        "charges de structure de la même année un montant triple : le document n'en donne "
+        "pas la raison. La reliure de l'exemplaire consulté masque la colonne 1999 : toutes "
+        "ses lignes y sont estimées, hormis le total des ressources ; la barre hachurée et "
+        "les points creux de cette année en tiennent compte, et l'onglet Données donne les "
+        "estimations à part. L'onglet Données donne aussi chaque ligne du tableau "
+        "séparément. "
+        "Trois vues se partagent le graphique : en millions de dinars courants ; en "
+        "pourcentage du PIB que retient le ministère des Finances "
+        "[@minfin-indicateurs-fp] ; en pourcentage du total des ressources de la CNSS, "
+        "toutes branches et tous régimes, tel que le donnent ses comptes de bilan. Sur la "
+        "vue au PIB, la ligne pointillée marque le passage, en 1997, de la base 1983 à la "
+        "base 1997 des comptes nationaux, dont les niveaux sont d'environ 10 % plus "
+        "élevés [@ins-cnat-2015] : à montant égal, les ratios en sont abaissés d'environ un "
+        "dixième à partir de 1997, et la rupture n'est pas corrigée. Le total des "
+        "ressources de la caisse comprend les accidents du travail et les maladies "
+        "professionnelles à partir de 1995, la protection sociale des travailleurs à "
+        "partir de 1997 : le dénominateur s'élargit d'autant à ces dates."),
+)
+```
+
+<!-- TODO (documentaliste) : établir sur quels textes reposent le forfait accordé à la Santé
+publique, la participation de la CNSS aux budgets des hôpitaux et la facturation des
+compléments de soins par les hôpitaux publics à partir de 1996, ainsi que le sens du sigle
+« C.A.O. » de la rétrospective financière (page 13). Les montants de 1999 comprennent des
+estimations en attendant la relecture de l'original papier (tunisia-data#26). -->
+
+## Les accidents du travail et la protection sociale des travailleurs {#sec-caisses-cnss-atmp-pst}
+
+La rétrospective financière de la CNSS donne, de 1995 à 2004, les ressources et les emplois du régime de réparation tant que la caisse le gère, et, de 1997 à 2004, ceux de la protection sociale des travailleurs ([livre « Cotisations sociales »](../cotisations_sociales/_autres_branches.html#sec-cot-protection-sociale)) [@cnss-retrospective-1990-2004]. Les ressources du régime des accidents du travail passent de 71,2 millions de dinars courants en 1995 à 132,5 en 2004. Ses emplois varient davantage, entre 30,7 et 71,4 millions selon les années : à côté des prestations, ils comprennent une ligne que le document intitule « Provision Prest. & Mathématique », dont le montant change fortement d'une année à l'autre. Le résultat de gestion, calculé après cette ligne, est excédentaire chaque année (@fig-cnss-atmp-pst).
+
+```{python}
+#| label: fig-cnss-atmp-pst
+#| fig-cap: "Accidents du travail et maladies professionnelles, 1995-2004, et protection sociale des travailleurs, 1997-2004 : ressources, emplois et résultat de gestion, en dinars courants et rapportés au PIB et aux ressources de la CNSS."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cnss_atmp_pst_1995_2004 as ap
+import figtools
+figtools.figure_tabs(
+    ap.vues(), ap.table(), "cnss-retrospective-ressources-emplois", "irpp-ratios",
+    slug="fig_cnss_atmp_pst",
+    caption=("Accidents du travail et maladies professionnelles, 1995-2004, et protection "
+             "sociale des travailleurs, 1997-2004 : ressources, emplois et résultat de "
+             "gestion, en dinars courants et rapportés au PIB et aux ressources de la CNSS"),
+    note_lecture=(
+        "Les montants sont ceux des comptes de bilan de la caisse — des droits constatés, "
+        "non des encaissements —, en millions de dinars **courants**. Chaque panneau "
+        "empile les emplois de la branche ligne par ligne ; la pile vaut le total des "
+        "emplois. Le trait plein donne le total des ressources, les tirets les seules "
+        "cotisations, et le chiffre posé au-dessus de chaque année le résultat de gestion, "
+        "ressources moins emplois. Pour les accidents du travail, les emplois comprennent "
+        "les prestations et la ligne « Provision Prest. & Mathématique », reprise sous "
+        "l'intitulé du document, qui n'en détaille pas le contenu ; le résultat est "
+        "calculé après elle. Les produits financiers du régime, nuls en 1995, atteignent "
+        "de 15 à 17 millions de dinars par an de 2002 à 2004 : c'est l'essentiel de "
+        "l'écart entre le trait plein et les tirets. Pour la protection sociale des travailleurs, les "
+        "indemnités de licenciement atteignent 3,6 millions de dinars en 1997 et pas plus "
+        "de 1,3 million les années suivantes ; les cotisations comptabilisées passent de "
+        "11,4 à 18,2 millions. La reliure de l'exemplaire consulté masque la colonne 2000 "
+        "du tableau des accidents du travail : ses lignes de détail y sont estimées, ses "
+        "totaux et son résultat sont lus ; les segments hachurés et les points creux de "
+        "cette année en tiennent compte, et l'onglet Données donne les estimations à "
+        "part. Le tableau de la protection sociale des travailleurs est lu en entier. "
+        "Trois vues se partagent le graphique : en millions de dinars courants ; en "
+        "pourcentage du PIB que retient le ministère des Finances "
+        "[@minfin-indicateurs-fp] ; en pourcentage du total des ressources de la CNSS, "
+        "toutes branches et tous régimes, tel que le donnent ses comptes de bilan. Sur la "
+        "vue au PIB, la ligne pointillée marque le passage, en 1997, de la base 1983 à la "
+        "base 1997 des comptes nationaux, dont les niveaux sont d'environ 10 % plus "
+        "élevés [@ins-cnat-2015] : à montant égal, les ratios en sont abaissés d'environ un "
+        "dixième à partir de 1997, et la rupture n'est pas corrigée."),
+)
+```
+
+<!-- TODO (documentaliste) : établir ce que recouvre la ligne « Provision Prest. &
+Mathématique » du tableau des accidents du travail de la rétrospective financière (page 54),
+et prolonger les deux séries au-delà de 2004 — pour les accidents du travail, auprès de la
+CNAM, qui gère le régime depuis la loi n° 2004-71. Les montants de détail de 2000 comprennent
+des estimations en attendant la relecture de l'original papier (tunisia-data#26). -->
+
+<!-- TODO (documentaliste) : construire la série « comptes des organismes de sécurité sociale »
+des éditions des comptes de la nation (2001-2025, rupture de base 1983/2015 à documenter) et
+prolonger après 2004 les comptes de compensation de la CNSS par ses états financiers, pour
+donner ici une vue de longue période des trois caisses (note cadre-budgetaire-comptable-caisses.md,
+§ 3, séries 1 et 4). -->
+
+## Ce que les textes ne disent pas {#sec-caisses-silences}
+
+Trois questions que le lecteur se pose naturellement n'ont pas de réponse dans les textes identifiés ici.
+
+**La compensation entre régimes.** Aucun texte en vigueur identifié ne prévoit de transfert général d'un régime excédentaire vers un régime déficitaire. Les seuls mouvements que les textes organisent sont les dotations initiales des régimes nouveaux (@tbl-caisses-dotations), la ventilation du taux global (@sec-caisses-ventilation) et l'imputation à chaque régime d'une quote-part des frais de fonctionnement [@loi60-30, art. 22]. La compensation entre régimes n'apparaît que dans la loi n° 86-86, au nombre des mesures que la caisse centrale pouvait proposer [@loi86-86, art. 21] ; aucun décret d'organisation de cette loi n'est identifié ici, et elle est abrogée en 2004.
+
+**La garantie de l'État.** La seule garantie que prévoient les textes identifiés est celle, facultative et plafonnée par la loi de finances, des emprunts de trésorerie de la CNSS [@loi60-30, art. 25]. Aucun texte identifié n'engage l'État à couvrir le déficit d'une caisse ou d'un régime du secteur privé.
+
+**Le financement des déficits agricoles.** Les comptes de la CNSS montrent, de 1990 à 2004, des régimes agricoles constamment déficitaires et aucune ligne de transfert d'un régime à un autre (@fig-cnss-regimes). Aucun texte identifié ne dit comment ces déficits sont couverts. Un ancien directeur du Centre de recherches et d'études de sécurité sociale écrit, dans une publication du Bureau international du Travail, que le déficit des régimes agricoles et de ceux des non-salariés a dû être couvert par les excédents du régime général [@chaabane-2002-ess4, p. 15] ; le mécanisme comptable de cette couverture — virement entre fonds de réserve ou trésorerie commune de la caisse — n'est pas décrit.
+
+<!-- TODO (documentaliste) : chercher dans les états financiers de la CNSS, les rapports de son
+conseil d'administration et les études du CRESS comment la trésorerie couvre les déficits des
+régimes agricoles (lacune L10) ; relire les modificatifs de la loi n° 60-30, dont la loi n° 98-91
+visée par le décret n° 2000-1902, pour leurs effets sur les articles 18 à 33 (lacune L2). -->

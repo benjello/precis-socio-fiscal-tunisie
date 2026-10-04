@@ -1,27 +1,27 @@
-# Le système fiscal tunisien
-
-## Présentation générale
+# Présentation
 
 Ce précis présente les impôts en Tunisie, principalement depuis l'indépendance (1956), après un rappel des antécédents beylicaux et coloniaux dont le système fiscal a hérité.
 
-### La carte des impôts
+## La carte des impôts
 
-Le livre traite quatre impôts, rangés en deux parties. Ils ont en commun d'avoir été refondus à la fin des années 1980, en deux temps : l'imposition indirecte en 1988, l'imposition directe en 1989.
+Les quatre impôts de ce livre relèvent de deux familles, l'[imposition directe](#g-impots-directs) et l'[imposition indirecte](#g-impots-indirects). Sghaïer Zakraoui les distingue par la matière qu'elles frappent : l'impôt direct atteint, avec une certaine périodicité, une matière stable ou régulièrement renouvelée — un revenu, un bénéfice — ; l'impôt indirect frappe des opérations, à l'occasion de la production, de l'échange ou de la consommation d'un bien [@zakraoui-ena-droit-fiscal, p. 14-16]. Le droit budgétaire tunisien a longtemps repris ce partage sans le définir. La loi organique du budget de 1967 rangeait, parmi les recettes ordinaires de l'État, des « impôts directs » et des « impôts indirects » [@loi-67-53-lob, art. 7] ; à partir de 1996, elle les nommait « impôts directs ordinaires » et « impôts et taxes indirects ordinaires » [@loi-org-96-103-lob, art. 7 nouveau]. Les tableaux des recettes de l'État annexés aux lois de finances plaçaient d'un côté l'impôt sur le revenu et l'impôt sur les sociétés, de l'autre les droits de douane, la taxe sur la valeur ajoutée, les droits de consommation, les droits d'enregistrement et le timbre [@lf-2014, tableau A]. La loi organique du budget de 2019 ne classe plus les recettes que comme recettes fiscales, recettes non fiscales et dons [@loi-org-2019-15-lob, art. 14], et les tableaux des lois de finances suivantes ventilent les recettes fiscales par assiette — revenus et bénéfices, mutations, biens et services, commerce extérieur [@lf-2021, tableau A]. La série des recettes fiscales publiée par le ministère des Finances conserve en revanche le partage entre impôts directs et impôts indirects [@minfin-recettes-fiscales].
+
+Le livre suit ce partage : l'imposition directe d'abord, avec l'impôt sur le revenu des personnes physiques (@sec-irpp) et l'impôt sur les sociétés (@sec-impot-societes), puis l'imposition indirecte, avec la taxe sur la valeur ajoutée (@sec-tva) et les droits de consommation (@sec-droits-consommation). Ces quatre impôts ont en commun d'avoir été refondus à la fin des années 1980, en deux temps : l'imposition indirecte en 1988, l'imposition directe en 1989.
 
 : Les quatre impôts traités dans ce livre, et leurs textes fondateurs {#tbl-fisc-carte}
 
-| Partie | Impôt | Texte fondateur | Application |
+| Catégorie | Impôt | Texte fondateur | Application |
 |---|---|---|---|
-| L'imposition directe | [impôt sur le revenu des personnes physiques](#g-irpp) | loi n° 89-114 du 30 décembre 1989, portant promulgation du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés | revenus réalisés à compter du 1^er^ janvier 1990 |
+| Imposition directe | [impôt sur le revenu des personnes physiques](#g-irpp) | loi n° 89-114 du 30 décembre 1989, portant promulgation du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés | revenus réalisés à compter du 1^er^ janvier 1990 |
 | | [impôt sur les sociétés](#g-impot-societes) | même loi, même code | bénéfices réalisés à compter du 1^er^ janvier 1990 |
-| L'imposition indirecte | [taxe sur la valeur ajoutée](#g-tva) | loi n° 88-61 du 2 juin 1988, portant promulgation du code de la taxe sur la valeur ajoutée | à compter du 1^er^ juillet 1988, par décret ; le commerce de gros n'y entre qu'en 1989, le commerce de détail en 1996 |
+| Imposition indirecte | [taxe sur la valeur ajoutée](#g-tva) | loi n° 88-61 du 2 juin 1988, portant promulgation du code de la taxe sur la valeur ajoutée | à compter du 1^er^ juillet 1988, par décret ; le commerce de gros n'y entre qu'en 1989, le commerce de détail en 1996 |
 | | [droit de consommation](#g-droit-de-consommation) | loi n° 88-62 du 2 juin 1988, portant refonte de la réglementation relative aux droits de consommation | à compter du 1^er^ juillet 1988, par le même décret, d'un seul coup |
 
 Sources : @loi-irpp-is-1989 ; @code-irpp-is-1990 ; @loi-88-61-tva ; @loi-88-62-droit-consommation ; @decret-88-1109-calendrier-tva, art. 1 et 2 ; @decret-89-1222-calendrier-tva-gros, art. 1 ; @lf-1996, art. 43 et 46.
 
 Les deux impôts directs partagent un même code, et la frontière entre eux est l'objet d'une section du chapitre consacré à l'impôt sur les sociétés. Les deux impôts indirects sont nés le même jour, dans le même fascicule du *Journal officiel*, et se cumulent : le droit de consommation entre dans l'assiette de la taxe sur la valeur ajoutée, la réciproque étant exclue (@tbl-dc-cascade) [@loi-88-62-droit-consommation, art. 4 ; @dgi-nc-29-2007]. Chaque chapitre part de ce qui précédait l'impôt, et se clôt sur ce qu'il rapporte.
 
-### Ce que pèse chaque impôt
+## Ce que pèse chaque impôt
 
 Avant d'entrer dans chaque impôt, une vue d'ensemble situe ce que chacun pèse et comment ces poids se sont déplacés.
 
@@ -59,8 +59,8 @@ Les droits de douanes figurent dans cette composition pour situer les autres pr�
 
 Le rendement de chaque impôt, pris isolément et sur toute la période, est donné à la fin de son chapitre, à partir de la même série de recettes publiée par le ministère des Finances depuis 1986 : l'impôt sur le revenu (@fig-irpp-rendement), l'impôt sur les sociétés (@fig-impot-societes-rendement), la taxe sur la valeur ajoutée (@fig-tva-rendement) et les droits de consommation (@fig-droits-consommation-rendement).
 
-### Ce que ce livre ne traite pas : les cotisations sociales
+## Ce que ce livre ne traite pas : les cotisations sociales
 
 Les cotisations sociales ne sont pas traitées ici. Le prélèvement qui finance la sécurité sociale — ses taux, ses assiettes, leur histoire, régime par régime — fait l'objet du [livre « Cotisations sociales »](../cotisations_sociales/index.html#sec-cot-perimetre), qui distingue la cotisation de l'impôt par sa contrepartie : elle ouvre des droits à l'assuré pour lequel elle est versée.
 
-La règle de partage a une exception, dans chaque sens. La [contribution sociale de solidarité](#g-css), bien qu'affectée au financement des régimes de sécurité sociale, est exposée dans ce livre, au chapitre de l'impôt sur le revenu : elle est assise sur la même assiette que lui et liquidée avec lui [@lf-2018, art. 53], et le livre des Cotisations sociales y renvoie. À l'inverse, les cotisations sociales n'apparaissent ici qu'en tant qu'elles réduisent l'assiette de l'impôt sur le revenu : les retenues obligatoires de sécurité sociale sont déduites du salaire avant les frais professionnels [@code-irpp-is-1990, art. 26], et les cotisations des travailleurs non salariés figurent parmi les charges déductibles du revenu global [@lf-2010, art. 44].
+La règle de partage a une exception, dans chaque sens. La [contribution sociale de solidarité](#g-css), bien qu'affectée au financement des régimes de sécurité sociale, est exposée dans ce livre, au chapitre de l'impôt sur le revenu, pour son assiette et son calcul : elle est assise sur la même assiette que lui et liquidée avec lui [@lf-2018, art. 53], et le livre des Cotisations sociales y renvoie. L'histoire de son taux et son affectation aux caisses sont exposées dans le livre [« Les caisses de sécurité sociale »](../caisses/_etat_caisses.html#sec-caisses-financeur). À l'inverse, les cotisations sociales n'apparaissent ici qu'en tant qu'elles réduisent l'assiette de l'impôt sur le revenu : les retenues obligatoires de sécurité sociale sont déduites du salaire avant les frais professionnels [@code-irpp-is-1990, art. 26], et les cotisations des travailleurs non salariés figurent parmi les charges déductibles du revenu global [@lf-2010, art. 44].

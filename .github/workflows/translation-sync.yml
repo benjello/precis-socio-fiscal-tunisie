@@ -259,6 +259,11 @@ jobs:
           echec=""
           for livre in $LIVRES; do
             [ -d "precis/ar/$livre" ] || continue
+            # Livre neuf dont la traduction ne livre pas encore `index.qmd` : rien à rendre.
+            if [ ! -f "precis/ar/$livre/index.qmd" ]; then
+              echo "── precis/ar/$livre : index.qmd absent, traduction pas encore livrée — sauté ──"
+              continue
+            fi
             echo "── rendu de precis/ar/$livre ──"
             # `pipefail` : sans lui, le code testé est celui de `tail`, toujours 0, et un
             # rendu en échec passait pour réussi. Le 3 octobre 2026, une traduction dont

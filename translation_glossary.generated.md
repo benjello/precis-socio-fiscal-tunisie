@@ -32,7 +32,9 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Bénéfices industriels et commerciaux | الأرباح الصناعية والتجارية | BIC |
 | Bonification | الترفيع في مدّة الخدمات |  |
 | Cadres actifs | الأسلاك النشيطة |  |
+| Caisse centrale des prestations sociales | الصندوق المركزي للمنح الاجتماعية |  |
 | Caisse d'assurance vieillesse, invalidité et survivants | صندوق تأمين الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع بجراية | CAVIS |
+| Caisse de compensation des allocations familiales | صندوق تعويض المنح العائلية |  |
 | Caisse nationale d'assurance maladie | الصندوق الوطني للتأمين على المرض | CNAM |
 | Caisse nationale de retraite et de prévoyance sociale | الصندوق الوطني للتقاعد والحيطة الاجتماعية | CNRPS |
 | Caisse nationale de sécurité sociale | الصندوق الوطني للضمان الاجتماعي | CNSS |
@@ -93,6 +95,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Grille des salaires | شبكة الأجور |  |
 | Impôt sur le revenu des personnes physiques | الضريبة على دخل الأشخاص الطبيعيين | IRPP |
 | Impôt sur les sociétés | الضريبة على الشركات | IS |
+| Impôts directs | الأداءات المباشرة |  |
+| Impôts indirects | الأداءات والمعاليم غير المباشرة |  |
 | Imputation du droit de consommation | خصم المعلوم على الاستهلاك |  |
 | Indemnité à caractère familial | المنحة ذات الصبغة العائلية |  |
 | Indemnité compensatrice | المنحة التعويضية |  |
@@ -136,6 +140,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Régime conventionnel de retraite | النظام التعاقدي |  |
 | Régime conventionnel public | النظام الاتفاقي العمومي |  |
 | Régime de marché contrôlé | نظام السوق الموجَّه |  |
+| Régime de prévoyance | نظام الحيطة |  |
 | Régime de sécurité sociale des travailleuses agricoles | نظام الضمان الاجتماعي للعاملات الفلاحيات |  |
 | Régime des artistes, créateurs et intellectuels | نظام الضمان الاجتماعي للفنانين والمبدعين والمثقفين |  |
 | Régime des salariés agricoles | نظام الأجراء الفلاحيين | RSA |
@@ -168,10 +173,12 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Secteur public | القطاع العام |  |
 | Sécurité sociale des pêcheurs | الضمان الاجتماعي للصيادين البحريين |  |
 | Service fait | قاعدة الخدمة المنجزة |  |
+| Société de prévoyance des fonctionnaires et employés tunisiens | الجمعية الاحتياطية للموظفين والمستخدمين التونسيين |  |
 | Solde (militaire) | المرتّب العسكري |  |
 | Solde de réforme | منحة الإصلاح |  |
 | Stage de cotisation | مدة الانخراط الدنيا |  |
 | Statut particulier | النظام الأساسي الخصوصي |  |
+| Surcompensation | الزيادة في تعويض المنح العائلية |  |
 | Suspension du droit de consommation | توقيف العمل بالمعلوم على الاستهلاك |  |
 | Tableau A du code de la TVA | الجدول « أ » |  |
 | Tableau annexé à la loi n° 88-62 | الجدول المدرج بملحق القانون عدد 62 لسنة 1988 |  |

@@ -786,46 +786,6 @@
       }
     },
     {
-      "id": "minfin-indicateurs-fp",
-      "type": "dataset",
-      "note": "citation-key: minfin-indicateurs-fp",
-      "publisher": "Ministère des Finances, Tunisie",
-      "title": "Indicateurs des finances publiques",
-      "URL": "http://www.finances.gov.tn",
-      "author": [
-        {
-          "literal": "Ministère des Finances, Tunisie"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2025
-          ]
-        ]
-      }
-    },
-    {
-      "id": "minfin-recettes-fiscales",
-      "type": "dataset",
-      "title": "Série des recettes fiscales de l'État, 1986-2025",
-      "publisher": "Ministère des Finances, Tunisie",
-      "URL": "https://www.finances.gov.tn/fr/les-indicateurs/ressources",
-      "author": [
-        {
-          "literal": "Ministère des Finances, Tunisie"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2026
-          ]
-        ]
-      },
-      "note": "citation-key: minfin-recettes-fiscales\nFichier « Série Recettes_fiscales_fr.xls », page « Les indicateurs → Ressources ». Recettes fiscales par rubrique, 1986-2025 en réalisations puis colonnes de prévision jusqu'à la loi de finances 2026. La ligne 1.1 « impôts sur le revenu » est ventilée entre impôts sur les salaires et autres. Consulté le 9 septembre 2026 ; classeur enregistré le 30 juin 2026."
-    },
-    {
       "id": "touaiti2026",
       "type": "webpage",
       "container-title": "Le Point Tunisie",
@@ -1809,6 +1769,91 @@
       "URL": "https://www.pist.tn/jort/2014/2014A/Ja0682014.pdf",
       "note": "citation-key: lfc-2014\nArt. 10 : ajoute au premier tiret du premier alinéa du paragraphe II de l'article 44 du code un plancher propre aux personnes visées au paragraphe II de l'article 22 qui exercent une activité ayant un similaire dans le secteur public — leur impôt annuel ne peut être inférieur à celui qu'acquitte, pour la même activité et au même grade, un agent de ce secteur. Effet sur les résultats réalisés à compter de la quatrième année d'activité suivant le dépôt de la déclaration d'existence, et à compter du 1er janvier 2015 pour ceux dont la période d'activité dépasse quatre ans à cette date.\nArt. 29 : institue une CONTRIBUTION CONJONCTURELLE pour la seule année 2014, assise notamment sur 50 % du minimum d'impôt du paragraphe II de l'article 44 et sur 50 % de celui du paragraphe II de l'article 49. Ce n'est PAS un modificatif du minimum : le minimum y sert d'assiette à un prélèvement temporaire. Ne pas confondre les deux articles.\nTexte lu sur pièce dans l'édition française du fascicule, le 20 septembre 2026.",
       "title-short": "Loi n° 2014-54 du 19 août 2014"
+    },
+    {
+      "id": "loi-67-53-lob",
+      "type": "legislation",
+      "title": "قانون عدد 53 لسنة 1967 مؤرخ في 8 ديسمبر 1967 يتعلق بقانون أساسي للميزانية",
+      "title-short": "قانون عدد 53 لسنة 1967",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "52",
+      "volume": "110",
+      "issued": {
+        "date-parts": [
+          [
+            1967,
+            12,
+            8
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1967/1967A/Ja05267.pdf",
+      "note": "citation-key: loi-67-53-lob\nJORT n° 52 du 12 décembre 1967. Art. 7 (rédaction d'origine), p. 1575 de l'édition française : les recettes ordinaires de l'État sont groupées en six catégories, dont « Impôts directs », « Impôts indirects » et « Taxes ». Remplacé par la loi organique n° 96-103 ; dispositions contraires abrogées par la loi organique n° 2019-15, art. 73. URL pist.tn vérifiées (HTTP 200) le 4 octobre 2026.\nÉdition arabe : le texte commence p. 2157 (sommaire du fascicule) ; titre lu sur le sommaire. TODO (bibliographe) : relever la page de fin."
+    },
+    {
+      "id": "loi-org-96-103-lob",
+      "type": "legislation",
+      "title": "قانون أساسي عدد 103 لسنة 1996 مؤرخ في 25 نوفمبر 1996 يتعلق بتنقيح القانون الأساسي للميزانية عدد 53 لسنة 1967 المؤرخ في 8 ديسمبر 1967",
+      "title-short": "قانون أساسي عدد 103 لسنة 1996",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "96",
+      "volume": "139",
+      "issued": {
+        "date-parts": [
+          [
+            1996,
+            11,
+            25
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1996/1996A/Ja09696.pdf",
+      "note": "citation-key: loi-org-96-103-lob\nJORT n° 96 du 29 novembre 1996. Art. 7 nouveau de la loi n° 67-53, p. 2391 de l'édition française : 1re catégorie « impôts directs ordinaires », 2e catégorie « impôts et taxes indirects ordinaires », qui forment la section 1, « recettes fiscales ordinaires ». URL pist.tn vérifiées (HTTP 200) le 4 octobre 2026.\nÉdition arabe : le texte commence p. 2693 (sommaire du fascicule) ; titre lu sur le sommaire. TODO (bibliographe) : relever la page de fin."
+    },
+    {
+      "id": "loi-org-2019-15-lob",
+      "type": "legislation",
+      "title": "قانون أساسي عدد 15 لسنة 2019 مؤرخ في 13 فيفري 2019 يتعلق بالقانون الأساسي للميزانية",
+      "title-short": "قانون أساسي عدد 15 لسنة 2019",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "15",
+      "volume": "162",
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            2,
+            13
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2019/2019A/Ja0152019.pdf",
+      "note": "citation-key: loi-org-2019-15-lob\nJORT n° 15 du 19 février 2019. Pages de l'édition française : art. 14 (p. 396-397), les recettes du budget de l'État sont classées en recettes fiscales, recettes non fiscales et dons ; art. 16 (p. 397), la nomenclature des recettes et des dépenses est fixée par arrêté du ministre chargé des finances ; art. 73 (p. 405), abrogation des dispositions contraires de la loi n° 67-53 et des textes qui l'ont modifiée. L'enregistrement de jort_cache.db ne porte que l'édition arabe ; l'URL française a été vérifiée sur pist.tn (HTTP 200) le 4 octobre 2026, et le fascicule français du corpus local porte le texte p. 395.\nÉdition arabe : le texte commence p. 484 (sommaire du fascicule). TODO (bibliographe) : relever la page de fin."
+    },
+    {
+      "id": "zakraoui-ena-droit-fiscal",
+      "type": "report",
+      "title": "Droit. Axe 4 : Droit fiscal",
+      "genre": "Support de préparation à l'épreuve écrite de spécialité",
+      "author": [
+        {
+          "family": "Zakraoui",
+          "given": "Sghaïer"
+        }
+      ],
+      "publisher": "École nationale d'administration",
+      "publisher-place": "Tunis",
+      "URL": "https://www.ena.tn/wp-content/uploads/2021/03/DroitAxe4.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            4
+          ]
+        ]
+      },
+      "note": "citation-key: zakraoui-ena-droit-fiscal\nRépublique tunisienne, Premier ministère, École nationale d'administration, « Supports destinés à la préparation de l'épreuve écrite de spécialité » ; 51 p. Sans date imprimée : PDF créé le 19 septembre 2007 (métadonnées), mis en ligne en mars 2021 (chemin du fichier). Distinction entre impôts directs et impôts indirects, p. 14-16. TODO (bibliographe) : dater le support s'il en existe une édition datée."
     }
   ]
 }

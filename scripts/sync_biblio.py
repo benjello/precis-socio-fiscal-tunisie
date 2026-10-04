@@ -42,6 +42,8 @@ COLLECTION_TO_BOOK = {
     "rémunérations publiques": "remunerations_publiques",
     "remunerations publiques": "remunerations_publiques",
     "cotisations sociales": "cotisations_sociales",
+    "caisses de sécurité sociale": "caisses",
+    "caisses de securite sociale": "caisses",
 }
 
 

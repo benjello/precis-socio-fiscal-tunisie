@@ -77,8 +77,8 @@
   - precis/fr/retraites/_secteur_prive.qmd#sec-rsna-calcul
   - precis/fr/retraites/_secteur_prive.qmd#sec-rsna-depuis-2007
   - precis/fr/retraites/_secteur_prive.qmd#sec-rsna-textes-modificatifs
-  - precis/fr/cotisations_sociales/index.qmd#sec-cot-pensions-prive
-  - precis/fr/cotisations_sociales/index.qmd#sec-cot-plafonds
+  - precis/fr/cotisations_sociales/_pensions.qmd#sec-cot-pensions-prive
+  - precis/fr/cotisations_sociales/_assiette.qmd#sec-cot-plafonds
   requetes:
     titres_fts:
     - '"74-499" OR "74 499"'
@@ -494,7 +494,7 @@
 
 - id: r-cotis-rsna-branches
   objet: texte répartissant entre prestations familiales (3,10 %), indemnités de maladie et de maternité (0,85 %) et décès (0,65 %) le solde de 4,60 points du taux global de 18 % du régime des salariés non agricoles
-  ou: [precis/fr/cotisations_sociales/index.qmd#sec-cot-ventilation]
+  ou: [precis/fr/cotisations_sociales/_taux_global.qmd#sec-cot-ventilation]
   requetes:
     titres_like: ['%60-30%']
   passes:
@@ -510,7 +510,7 @@
 
 - id: r-cotis-rsa-assurances-sociales
   objet: texte ventilant entre maladie, maternité et décès les 1,20 % d'assurances sociales du régime des salariés agricoles (décret n° 81-224, art. 1er), au-delà de la part maladie de 0,91 % (décret n° 2007-1406)
-  ou: [precis/fr/cotisations_sociales/index.qmd#sec-cot-rsa]
+  ou: [precis/fr/cotisations_sociales/_regimes.qmd#sec-cot-rsa]
   requetes:
     titres_fts: ['"81-224"']
     depuis: 1981-02-27
@@ -525,7 +525,7 @@
 
 - id: r-cotis-rsaa-art90
   objet: décret répartissant entre les branches le taux global de 15 % du régime agricole amélioré (loi n° 81-6, art. 90, ajouté par la loi n° 89-73), pour l'ensemble du régime
-  ou: [precis/fr/cotisations_sociales/index.qmd#sec-cot-rsaa]
+  ou: [precis/fr/cotisations_sociales/_regimes.qmd#sec-cot-rsaa]
   requetes:
     titres_like: ['%agricole%cotisation%', '%cotisation%agricole%']
     depuis: 1989-09-05
@@ -542,7 +542,7 @@
 
 - id: r-cotis-rtte-assurances-sociales
   objet: texte ventilant entre maladie, maternité et décès les 5,40 % d'assurances sociales du régime des Tunisiens à l'étranger (décret n° 89-107, art. 7), au-delà de la part maladie de 4,10 % (décret n° 2007-1406)
-  ou: [precis/fr/cotisations_sociales/index.qmd#sec-cot-rtte]
+  ou: [precis/fr/cotisations_sociales/_regimes.qmd#sec-cot-rtte]
   requetes:
     titres_fts: ['"89-107"']
     depuis: 1989-01-17
@@ -577,7 +577,7 @@
 
 - id: r-majoration-creche-revalorisation
   objet: texte revalorisant les montants de la majoration pour salaire unique (loi n° 80-36, art. 65 bis — 9,375, 18,750 et 23,475 dinars) ou de la contribution aux frais de crèche (décret n° 95-114 — 15 dinars)
-  ou: [precis/fr/prestations_sociales/index.qmd]
+  ou: [precis/fr/prestations_sociales/_prestations_familiales.qmd]
   requetes:
     titres_fts: ['"80-36"', '"94-88" OR "95-114"']
     depuis: 1980-05-27
@@ -595,7 +595,7 @@
 
 - id: r-lf2025-art17-decret
   objet: décret fixant les conditions et procédures de gestion du fonds d'assurance contre la perte de postes de travail pour raisons économiques (loi n° 2024-48, loi de finances pour 2025, art. 17)
-  ou: [precis/fr/prestations_sociales/index.qmd]
+  ou: [precis/fr/prestations_sociales/_autres_risques.qmd]
   requetes:
     titres_like: ['%perte%', '%licenci%', '%perte d%emploi%']
     iort_ar: [فقدان]
@@ -617,7 +617,7 @@
 
 - id: r-amg-cartes-quotas
   objet: arrêtés conjoints des ministres des affaires sociales et de la santé publique fixant le nombre global des cartes de soins gratuits (décret n° 98-1812, art. 2) et à tarifs réduits, et les quotas régionaux
-  ou: [precis/fr/prestations_sociales/index.qmd]
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd]
   requetes:
     titres_like: ['%carte%soins gratuits%', '%quota%']
     depuis: 1998-09-29
@@ -657,7 +657,7 @@
 
 - id: r-atmp-echelle-modificatifs
   objet: texte modifiant, après le décret n° 99-1010, l'échelle des taux de cotisation au régime de réparation des accidents du travail et des maladies professionnelles (articles 1er et 2 nouveaux du décret n° 95-538)
-  ou: [precis/fr/cotisations_sociales/index.qmd#sec-cot-at-longue-periode]
+  ou: [precis/fr/cotisations_sociales/_accidents_travail.qmd#sec-cot-at-longue-periode]
   requetes:
     titres_like: ['%95-538%', '%99-1010%', '%accidents du travail%taux%', '%accidents du travail%cotisation%']
     depuis: 1999-05-18
@@ -673,7 +673,7 @@
 
 - id: r-cnrps-tutelle-1976-1985
   objet: texte transférant la tutelle de la CNRPS du ministère des Finances (loi n° 75-83, art. 28) à un autre département, entre le décret n° 76-3 du 5 janvier 1976 et le décret n° 85-1611 du 31 décembre 1985, qui la place sous le ministère de la protection sociale
-  ou: [precis/fr/cotisations_sociales/_cadre_caisses.qmd#sec-cot-cadre-statut]
+  ou: [precis/fr/caisses/_statut_cadre.qmd#sec-caisses-tutelle]
   requetes:
     titres_fts:
     - '"retraite et de prevoyance sociale" AND (tutelle OR rattachement OR organisation OR fonctionnement OR financiere OR "conseil d administration")'
@@ -695,7 +695,7 @@
 
 - id: r-cnrps-organisation-apres-1989
   objet: décret fixant l'organisation administrative et financière de la CNRPS postérieur au décret n° 89-1890 (équivalent, pour la CNRPS, du décret n° 2000-1902 pour la CNSS)
-  ou: [precis/fr/cotisations_sociales/_cadre_caisses.qmd#sec-cot-cadre-statut]
+  ou: [precis/fr/caisses/_statut_cadre.qmd#sec-caisses-tutelle]
   requetes:
     titres_fts:
     - '"retraite et de prevoyance sociale" AND (tutelle OR rattachement OR organisation OR fonctionnement OR financiere OR "conseil d administration")'
@@ -711,7 +711,7 @@
 
 - id: r-cnam-transfert-reserves
   objet: arrêté conjoint des ministres chargés de la sécurité sociale, des domaines de l'État et des finances transférant à la CNAM les biens et les réserves financières afférents aux régimes qu'elle gère (loi n° 2004-71, art. 10)
-  ou: [precis/fr/cotisations_sociales/_cadre_caisses.qmd#sec-cot-cadre-regimes]
+  ou: [precis/fr/caisses/_comptes_regimes.qmd#sec-caisses-reorganisations]
   requetes:
     titres_fts: [("assurance maladie" OR CNAM) AND (transfert OR reserves OR biens)]
     titres_like: ['%2004-71%']
@@ -726,7 +726,7 @@
 
 - id: r-caisses-placements-obligatoires
   objet: texte imposant aux caisses de sécurité sociale le placement de leurs réserves en bons d'équipement ou en logement social, et texte levant cette obligation (fin 1991 selon la Banque mondiale, rapport n° 11376-TUN, § 3.01)
-  ou: [precis/fr/cotisations_sociales/_cadre_caisses.qmd#sec-cot-cadre-etat]
+  ou: [precis/fr/caisses/_etat_caisses.qmd#sec-caisses-placements]
   requetes:
     titres_fts:
     - equipement AND bons
@@ -746,7 +746,7 @@
 
 - id: r-norme-comptable-securite-sociale
   objet: norme comptable sectorielle (loi n° 96-112, art. 10) applicable aux organismes de sécurité sociale
-  ou: [precis/fr/cotisations_sociales/_cadre_caisses.qmd#sec-cot-cadre-statut]
+  ou: [precis/fr/caisses/_statut_cadre.qmd#sec-caisses-etablissements]
   requetes:
     titres_fts:
     - '"normes comptables" OR "norme comptable"'
@@ -764,7 +764,7 @@
 
 - id: r-css-arretes-repartition
   objet: arrêtés du ministre chargé de la sécurité sociale fixant les critères de répartition entre caisses des recettes du « compte de diversification des sources de sécurité sociale » (décret-loi n° 2021-21, art. 12)
-  ou: [precis/fr/cotisations_sociales/_cadre_caisses.qmd#sec-cot-cadre-etat]
+  ou: [precis/fr/caisses/_etat_caisses.qmd#sec-caisses-financeur]
   requetes:
     titres_fts:
     - '"contribution sociale de solidarite" OR "المساهمة الاجتماعية التضامنية" OR "تنويع مصادر" OR "diversification des sources"'
@@ -776,3 +776,46 @@
     couverture: 'Intitulés seulement ; résultats : loi n° 2019-78 (LF 2020) art. 39 (CSS) et art. 54 (sans rapport : emprunt obligataire en devises), décret-loi n° 2021-21 (LF 2022) art. 12 (création du compte). Pas de plein texte ; fascicules 2024-2026 inconnus de jort_cache non couverts.'
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
+
+- id: r-caisses-protectorat-fondation
+  objet: textes instituant les organismes de sécurité sociale du Protectorat — Société de prévoyance des fonctionnaires et employés tunisiens, Caisse de retraite des ouvriers de l'État, agrément des trois caisses de compensation des allocations familiales du décret du 8 juin 1944
+  ou: [precis/fr/caisses/_histoire.qmd#sec-caisses-spfet]
+  requetes:
+    titres_fts:
+    - '"societe de prevoyance des fonctionnaires"'
+    - '"ouvriers de l''etat" AND (retraite OR retraites)'
+    - '"allocations familiales" AND (caisse OR caisses OR agrement)'
+    depuis: 1956-01-01
+  periode:
+    jusqu_au: 1961-12-31
+    motif: les organismes cherchés existent avant 1956 et disparaissent ou changent de nom entre 1958 et 1960 (loi n° 58-130, loi n° 59-18, loi n° 60-30) ; leurs textes fondateurs ne peuvent être cités qu'avant, ou par les visas des textes de 1956-1961
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist, visas, presse]
+    couverture: 'Le Journal officiel tunisien antérieur à 1956 n''est ni dans jort_cache ni dans le corpus local, et pist.tn répond 404 pour 1950 et 1955 (sondage de Jo00150 et Jo00155) : l''objet n''est atteignable que par les visas et par des sources secondaires. jort_cache, FTS sur les intitulés 1956-1977 ; visas lus à l''image : décret du 22 novembre 1956 (décrets du 24 décembre 1926 et du 19 novembre 1949, ce dernier approuvant « les nouveaux statuts » de la Société : l''acte de fondation est donc antérieur à 1926), loi n° 59-18 (décret du 19 novembre 1949), loi n° 59-19, loi n° 59-45 (décrets du 12 avril 1951), loi n° 58-130 (décret du 8 juin 1944, décrets des 15 septembre et 21 novembre 1955), décret du 8 novembre 1956. Source secondaire : Bertrand, Bulletin économique et social de la Tunisie, n° 73 et 74 de 1953, qui cite les textes des régimes mais pas l''acte de fondation de la Société ni l''agrément des caisses. Note : docs/notes/caisses-histoire.md.'
+    couvert_jusqu_au: 1977-12-31
+    resultat: aucun
+  a_faire:
+  - consulter les collections du Journal officiel tunisien antérieures à 1956 (BnF Gallica
+  - bibliothèques de Tunis)
+  - et l'Annuaire de législation du Protectorat
+
+- id: r-ccps-devolution
+  objet: texte réglant la dévolution à la CNSS des biens et des obligations de la Caisse centrale des prestations sociales (loi n° 58-130, abrogée par la loi n° 60-30, art. 131)
+  ou: [precis/fr/caisses/_histoire.qmd#sec-caisses-cnss-1960]
+  requetes:
+    titres_fts:
+    - '"prestations sociales"'
+    - '"caisse nationale de securite sociale" AND (transfert OR devolution OR liquidation OR patrimoine)'
+    depuis: 1960-12-14
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache, FTS sur les intitulés « prestations sociales », 1956-1977 : seul l''arrêté du 29 décembre 1959 (contrôleurs de la Caisse centrale) en dehors des textes déjà connus. Loi n° 60-30 lue à l''image aux art. 4, 5, 119 à 131 (JORT n° 57 de 1960, pp. 1602-1613) ; l''océrisation du reste de la loi ne nomme la Caisse centrale qu''aux art. 125 et 126. Loi n° 61-9 du 29 avril 1961 lue à l''image (JORT n° 17 de 1961, p. 592) : elle n''abroge que l''alinéa 2 de l''art. 123. Note : docs/notes/caisses-histoire.md.'
+    couvert_jusqu_au: 1977-12-31
+    resultat: aucun
+  a_faire:
+  - lire les articles 1 à 118 de la loi n° 60-30 à l'image
+  - lire l'arrêté du 16 août 1961 (application des articles 104 et 106 de la loi n° 60-30)

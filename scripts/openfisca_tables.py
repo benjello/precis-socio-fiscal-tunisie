@@ -1464,6 +1464,44 @@ def markdown_onglets(panneaux: list[tuple[str, str | Path, str, str]], **options
     return f"::: {{.panel-tabset}}\n\n{corps}:::\n"
 
 
+def markdown_un_tableau_en_onglets(
+    panneaux: list[tuple[str, str | Path, str]], legende: str, label: str,
+) -> str:
+    """UN tableau dont les états successifs — un barème par année, par exemple — sont des onglets.
+
+    À la différence de `markdown_onglets`, qui juxtapose des tableaux distincts, chacun avec sa
+    légende et son ancre, celui-ci n'a qu'une légende et qu'une ancre `@tbl-…` : c'est la même
+    grandeur à plusieurs dates. Un seul onglet « Base législative » réunit, sans doublon, les
+    liens de tous les états, qui renvoient d'ordinaire au même paramètre.
+
+    `panneaux` : (titre de l'onglet, snapshot, note) ; la note — la source de cet état, par
+    exemple — s'imprime sous le tableau de l'onglet, et peut être vide.
+
+    Quarto accepte un tableau légendé fait d'un bloc `::: {#tbl-…}` dont le contenu est
+    libre : ici des onglets, chacun portant un tableau sans légende (vérifié le 4 octobre 2026).
+    """
+    onglets, liens = [], {}
+    for titre, chemin, note in panneaux:
+        fichier = Path(chemin)
+        if not fichier.is_file():
+            return MESSAGE_INDISPONIBLE
+        corps = fichier.read_text(encoding="utf-8").rstrip()
+        onglets.append(f"### {titre}\n\n{corps}\n\n{note}\n" if note else f"### {titre}\n\n{corps}\n")
+        fichier_liens = fichier.with_suffix(".liens.yml")
+        if fichier_liens.is_file() and yaml is not None:
+            for e in yaml.safe_load(fichier_liens.read_text(encoding="utf-8")) or []:
+                liens.setdefault(e["url"], e["libelle"])
+    tableau = (f"::: {{#{label}}}\n\n::: {{.panel-tabset}}\n\n" + "\n".join(onglets)
+               + f"\n:::\n\n{legende}\n\n:::\n")
+    if not liens:
+        return tableau
+    langue = "ar" if "ar" in Path(panneaux[0][1]).resolve().parts[-4:-2] else "fr"
+    m = ONGLETS[langue]
+    items = "\n".join(f"- [{libelle}]({url})" for url, libelle in liens.items())
+    return (f"::: {{.panel-tabset}}\n\n## {m['tableau']}\n\n{tableau}\n"
+            f"## {m['base']}\n\n{m['intro']}\n\n{items}\n\n:::\n")
+
+
 # LIGNES DÉPLIABLES. Un tableau d'arborescence (`tableau_arborescence`) marque ses niveaux par
 # un retrait « — » en tête du libellé. En HTML, ce script lit ce retrait : une ligne suivie de
 # lignes plus profondes devient un regroupement, replié par défaut, qui se déplie au clic ;

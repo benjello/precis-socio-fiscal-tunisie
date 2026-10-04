@@ -12,16 +12,14 @@ book:
   repo-branch: master
   repo-actions: [edit, issue]
   downloads: [pdf]
+  page-footer:
+    center: "[Accueil](../index.html) · [À propos et contribuer](../a-propos.html) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)"
   chapters:
     - index.qmd
-    - part: "L'imposition directe"
-      chapters:
-        - _impot_revenu.qmd
-        - _impot_societes.qmd
-    - part: "L'imposition indirecte"
-      chapters:
-        - _tva.qmd
-        - _droits_consommation.qmd
+    - _impot_revenu.qmd
+    - _impot_societes.qmd
+    - _tva.qmd
+    - _droits_consommation.qmd
   appendices:
     - _glossaire.qmd
 

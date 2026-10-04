@@ -20,11 +20,20 @@ public, dans des fiches courtes qui ne gardent que leurs singularités.
 
 | Livre | Ce qu'il porte |
 |---|---|
-| Cotisations sociales | ce qui est **prélevé** : taux et assiette de chaque branche, leur histoire |
-| Retraites, Prestations sociales | ce qui est **servi** (formule, conditions) et l'équilibre (τ*) |
+| Cotisations sociales | ce qui est **prélevé** : taux et assiette de chaque branche, leur histoire, recouvrement et rendement |
+| Les caisses de sécurité sociale | les **organismes** : lignée, statut, tutelle, budget, comptes par régime, ventilation du taux global, relations avec l'État (CSS, compte de diversification), comptes dans la durée |
+| Retraites, Prestations sociales | ce qui est **servi** (formule, conditions) et l'équilibre propre à chaque régime (τ*) |
 
 Les Retraites ne gardent que le symbole κ (taux légal) et renvoient aux tableaux des
 Cotisations, sans raconter l'histoire des taux. Les renvois entre livres sont vérifiés un à un.
+
+Frontière redessinée le 4 octobre 2026 (plan « architecture A ») : le cadre comptable et
+budgétaire des caisses (d'abord `_cadre_caisses.qmd`, inclus avant `#sec-cot-bilan`) et les
+figures `fig-cnss-regimes`, `fig-cnss-assurances-sociales`, `fig-cnss-atmp-pst` sont passés dans
+le livre « Les caisses de sécurité sociale » ; ce livre-ci y renvoie d'une phrase et garde
+`fig-cotisations-branches-1990-2004` et `fig-cotisations-cnss`, qui sont des cotisations. Chaque
+livre « dispositif » présente les caisses par l'encadré commun `_encadre_caisses.qmd`, engendré
+par `scripts/generate_encadre_caisses.py`.
 
 ## Sommaire
 
@@ -103,6 +112,28 @@ Fiche courte par régime : qui paie, sur quelle assiette, ce qui déroge, tablea
 
 ### Annexes
 - Notations du livre (κ, etc.) ; textes modificatifs par branche
+
+## Découpage en chapitres (4 octobre 2026)
+
+Le livre ne tient plus en un seul `index.qmd`. Chaque partie du sommaire ci-dessus est devenue un
+chapitre, les branches une partie Quarto à quatre chapitres :
+
+| Fichier | Contenu | Ancre de tête |
+|---|---|---|
+| `index.qmd` | « Présentation » : introduction, conventions, partie 1 | `#sec-cot-presentation` (section) |
+| `_assiette.qmd` | partie 2 | `#sec-cot-assiette` |
+| `_taux_global.qmd` | partie 3 | `#sec-cot-taux-global` |
+| `_branches.qmd` (partie) | chapeau de la partie 4 | `#sec-cot-branches` |
+| `_pensions.qmd` | 4.1 | `#sec-cot-pensions` |
+| `_maladie.qmd` | 4.2 | `#sec-cot-maladie` |
+| `_accidents_travail.qmd` | 4.4 | `#sec-cot-at` |
+| `_autres_branches.qmd` | 4.3, 4.5, 4.6 (famille, emploi, complémentaire) | `#sec-cot-autres-branches` |
+| `_regimes.qmd` | partie 5 | `#sec-cot-regimes` |
+| `_bilan.qmd` | partie 6 | `#sec-cot-bilan` |
+| `_notations.qmd`, `_textes_modificatifs.qmd` | annexes | `#sec-cot-notations`, `#sec-cot-textes` |
+
+Les prestations familiales passent, dans l'ordre de lecture, après les accidents du travail : elles
+forment avec l'emploi et la complémentaire le chapitre des « autres branches ».
 
 ## Méthode
 

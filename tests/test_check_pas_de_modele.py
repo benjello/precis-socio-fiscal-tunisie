@@ -23,7 +23,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
-from check_pas_de_modele import controle, lignes_rendues  # noqa: E402
+from check_pas_de_modele import controle, fichiers_des_volumes, lignes_rendues  # noqa: E402
 
 
 class FichierTemporaire(unittest.TestCase):
@@ -118,6 +118,46 @@ class ExclusionTest(FichierTemporaire):
 
     def test_texte_sans_mention(self):
         self.assertEqual(controle(self.ecrire("Le décret fixe le taux à 5 %.\n")), [])
+
+
+class PerimetreTest(unittest.TestCase):
+    """La règle vaut pour les volumes ; la documentation générale peut nommer le modèle."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.precis = Path(self._tmp.name) / "precis"
+        for chemin in (
+            "fr/a-propos.qmd",
+            "fr/index.qmd",
+            "ar/index.qmd",
+            "fr/retraites/index.qmd",
+            "fr/retraites/_secteur_public.qmd",
+            "fr/retraites/_glossaire.qmd",
+            "fr/retraites/public/index.qmd",
+            "ar/retraites/index.qmd",
+        ):
+            fichier = self.precis / chemin
+            fichier.parent.mkdir(parents=True, exist_ok=True)
+            fichier.write_text("Les tableaux viennent d'openfisca-tunisia.\n", encoding="utf-8")
+
+    def tearDown(self):
+        self._tmp.cleanup()
+
+    def relatifs(self):
+        return [f.relative_to(self.precis).as_posix() for f in fichiers_des_volumes(self.precis)]
+
+    def test_les_pages_generales_sont_hors_perimetre(self):
+        self.assertNotIn("fr/a-propos.qmd", self.relatifs())
+        self.assertNotIn("fr/index.qmd", self.relatifs())
+        self.assertNotIn("ar/index.qmd", self.relatifs())
+
+    def test_les_chapitres_des_volumes_restent_controles(self):
+        self.assertEqual(
+            self.relatifs(),
+            ["ar/retraites/index.qmd", "fr/retraites/_secteur_public.qmd", "fr/retraites/index.qmd"],
+        )
+        for fichier in fichiers_des_volumes(self.precis):
+            self.assertTrue(controle(fichier), fichier)
 
 
 if __name__ == "__main__":

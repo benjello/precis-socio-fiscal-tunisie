@@ -1,0 +1,125 @@
+# Le taux global et le coin social {#sec-cot-taux-global}
+
+```{python}
+#| echo: false
+#| output: false
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+
+TABLES = Path.cwd() / "tables"
+
+
+def table(nom, legende, label, **options):
+    """Tableau de paramètres : snapshot versionné, régénéré depuis openfisca-tunisia.
+
+    Les valeurs viennent des paramètres du modèle, la colonne « Texte » de leurs
+    références. Régénération : `scripts/generate_cotisations_tables.py`.
+    """
+    print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label, **options))
+
+
+def onglets(panneaux, **options):
+    """Plusieurs tableaux sous des onglets : (titre, nom, légende, label)."""
+    print(ot.markdown_onglets(
+        [(titre, TABLES / f"{nom}.md", legende, label) for titre, nom, legende, label in panneaux],
+        **options))
+```
+
+## Le taux unique de 1960 {#sec-cot-taux-unique}
+
+La loi n° 60-30 ne fixe pas un taux par risque, mais un **taux global** unique pour l'ensemble des régimes qu'elle institue — les assurances sociales et les prestations familiales —, à la charge de l'employeur et du travailleur [@loi60-30, art. 41]. Le régime de pensions du secteur non agricole reçoit à partir de 1974 une quote-part de la masse de ces cotisations, exprimée en **vingtièmes** [@decret74-499, art. 5] : un vingtième valait alors un point de salaire. Cette fraction, et ce qu'elle devient après 1997, sont exposées avec la branche des pensions (@sec-cot-pensions-prive).
+
+**Le taux global de l'article 41** est fixé à l'origine par la loi n° 60-30 elle-même à **15 % à la charge de l'employeur et 5 % à la charge du travailleur** [@loi60-30, art. 41]. Il passe à **13 % / 5 %** avec l'article 41 nouveau issu de la loi n° 97-4, publiée le 4 février 1997 [@loi97-4] ; la loi n'énonce pas de date d'effet pour ce taux de base, de sorte qu'il court à défaut de sa publication. Entre-temps, une **variante conventionnelle** a existé : le second paragraphe de l'article 41 nouveau ouvre une réduction de deux points aux employeurs assurant à leurs salariés une couverture de soins dans un régime conventionnel, applicable à compter du 1^er^ octobre 1996 et précisée par le décret n° 97-1645 du 25 août 1997 [@decret97-1645]. Les entreprises concernées acquittaient 11 % au lieu de 13 %, soit un total employeur de 14,00 % au lieu de 16,00 %, jusqu'à l'abrogation du décret n° 97-1645 au 1^er^ juillet 2007 (@tbl-reduction-conventionnelle).
+
+```{python}
+#| echo: false
+#| output: asis
+table("reduction_conventionnelle",
+      "Réduction conventionnelle de la part patronale du taux global, 1996-2007",
+      "tbl-reduction-conventionnelle")
+```
+
+<!-- TODO (documentaliste) : la colonne « taux global » du tableau tbl-quote-part-rsna suppose que
+le taux de base de l'article 41 de la loi n° 60-30 est resté de 20 % de 1960 à la loi n° 97-4.
+L'article 39 de la loi de finances pour 1989 (loi n° 88-145, JORT n° 87/1988, p. 1797, lu à
+l'image le 23/09/2026) n'ouvre qu'un abattement optionnel de 2 % pour certains employeurs, abrogé
+par l'article 3 de la loi n° 97-4 ; il ne touche pas le taux de base. Restent à vérifier les
+autres modificatifs de la loi n° 60-30 de 1961 à 1996 (lois n° 61-9, 63-26, 64-31, 70-34, 75-82,
+80-36, 81-5, 82-71, 86-75, 88-38, 95-101, 96-65) : aucun ne doit récrire l'article 41. -->
+
+## Du taux global aux taux par branche {#sec-cot-ventilation}
+
+Le taux du régime général ne figure dans aucun texte unique. Il est la **somme de trois cotisations d'origines distinctes**, et cette somme se vérifie à la décimale près.
+
+| Bloc | Texte | Total | Employeur | Salarié |
+|---|---|---:|---:|---:|
+| Taux global des régimes de la loi n° 60-30 | loi n° 97-4 du 3 février 1997, art. 41 nouveau | 18,00 % | 13,00 | 5,00 |
+| Fonds spécial de l'État | loi n° 74-101 du 25 décembre 1974, art. 57 | 0,50 % | 0,50 | — |
+| Cotisation propre du régime de pensions | décret n° 97-555 du 31 mars 1997, art. 9 nouveau | 5,25 % | 2,50 | 2,75 |
+| **Total** | | **23,75 %** | **16,00** | **7,75** |
+
+: Les trois textes dont la somme forme le taux du régime général avant assurance maladie {#tbl-somme-trois-textes}
+
+La somme des trois textes referme exactement le taux que la CNSS publie, et c'est le résultat le plus solide de ce volume : chacun des trois taux est énoncé par un texte publié au *Journal officiel*, et leur addition donne **16,00 % et 7,75 %** avant l'assurance maladie universelle, soit, une fois celle-ci ajoutée, les **16,57 % et 9,18 %** que la caisse annonce.
+
+Le tableau des cotisations du régime général par branche (@tbl-rsna-branches) se lit avec une précaution : les branches financées par le taux global ne s'ajoutent pas aux 18 %, elles y sont **prélevées**. Les textes le disent en toutes lettres — la cotisation d'assurance maladie est « prélevée sur le taux global des cotisations prévu par la loi n° 60-30 » (décret n° 2007-1406, art. 6), la cotisation de protection sociale des travailleurs de 0,4 % — qui finance la prise en charge par la CNSS des indemnités dues aux travailleurs licenciés pour raisons économiques ou technologiques lorsque l'entreprise est en cessation de paiement, ainsi que le maintien des allocations familiales pendant les quatre trimestres suivant la cessation d'activité (loi n° 96-101, art. 2 à 4 et 7) — est « à prélever sur le taux global » (loi n° 96-101, art. 5) [@loi96-101], et le point d'accidents du travail résulte d'un « transfert d'un point des cotisations au régime général » au profit du régime institué par la loi n° 94-28 (décret n° 95-538, art. 2). Aucun de ces textes n'augmente le prélèvement : ils en réaffectent une fraction.
+
+| Branche | Part du taux global | Texte qui la fixe |
+|---|---:|---|
+| Quote-part versée au régime de pensions | 7,25/20^e^, soit 7,25 points dans la lecture de la caisse | décret n° 2003-1212, art. 5 b) nouveau |
+| Assurance maladie (soins) | 4,75 % | décret n° 2007-1406, art. 6 |
+| Accidents du travail et maladies professionnelles | 1,00 point transféré | décret n° 95-538, art. 2 |
+| Protection sociale des travailleurs | 0,40 % | loi n° 96-101, art. 5 |
+| Prestations familiales | 3,10 % | aucun texte trouvé |
+| Indemnités de maladie et de maternité | 0,85 % | aucun texte trouvé |
+| Décès et capital-décès | 0,65 % | aucun texte trouvé |
+| **Total** | **18,00 %** | |
+
+: Ventilation du taux global de 18 % entre branches, et textes qui la fixent {#tbl-ventilation-rsna}
+
+Cette ventilation ne retombe sur 18,00 % qu'avec la lecture « en points » de la quote-part des pensions, celle qu'applique la caisse (@tbl-quote-part-rsna). Dans la lecture littérale, la quote-part vaut 6,525 points, et le solde laissé aux trois dernières lignes serait de 5,325 points au lieu de 4,60.
+
+Le point « accidents du travail » de ce tableau n'est pas la cotisation d'accidents du travail proprement dite, qui s'y ajoute (@sec-cot-at).
+
+::: {.callout-warning title="Trois branches sans texte"}
+Les quatre premières lignes du tableau ci-dessus sont établies par des textes publiés au *Journal officiel*. Les trois dernières — prestations familiales, indemnités de maladie et de maternité, décès — ne sont fixées par aucun texte identifié. Leur somme, 4,60 points, est le **solde** du taux global une fois déduites les quatre premières lignes ; la répartition de ce solde entre les trois postes, telle que le tableau la présente, n'est attestée par aucun texte identifié. Le texte qui fixe cette répartition n'est pas identifié ici ; c'est la principale lacune de ce chapitre.
+
+<!-- RECHERCHE r-cotis-rsna-branches : répartition du solde de 4,60 points entre trois branches du RSNA (voir docs/recherches.yml) -->
+
+Le partage employeur/salarié suit par ailleurs, dans presque toutes les branches, la clé 13/5 de l'article 41 appliquée mécaniquement. Deux postes s'en écartent — la quote-part pensions et les prestations familiales —, d'un vingt-huitième de point chacun et en sens opposés, de sorte que leur agrégat respecte la clé et que les totaux de 16,00 % et 7,75 % sont inchangés. L'origine de ce déplacement n'est pas établie.
+:::
+
+Les autres régimes du secteur privé répartissent leur taux global de la même façon, par leur texte fondateur ou par un décret d'application, et laissent comme le régime général une partie de la ventilation sans texte ; chaque régime est présenté avec la sienne (@sec-cot-prive).
+
+## Le coin social par régime {#sec-cot-coin}
+
+Le contraste avec le régime général est le fait le plus visible du système.
+
+```{python}
+#| echo: false
+#| output: asis
+table("coin_par_regime",
+      "Prélèvement obligatoire total par régime du secteur privé, hors retraite complémentaire",
+      "tbl-coin-regimes")
+```
+
+Le prélèvement va de **7,5 % pour les travailleurs à faibles revenus à 26,75 % pour les salariés non agricoles**, soit un rapport de plus de trois. Trois mécanismes distincts produisent cet écart, et il faut les tenir séparés.
+
+Le premier est le **taux** lui-même, fixé par chaque texte fondateur : 6,45 % pour les salariés agricoles, 15 % pour le régime agricole amélioré, 11 % pour les travailleurs non salariés et les artistes, 10,65 % pour les Tunisiens à l'étranger, 7,5 % pour les travailleurs à faibles revenus, contre 23,75 % pour le régime général.
+
+Le deuxième est l'**assiette**. Le régime général cotise sur le salaire réellement perçu ; tous les autres cotisent sur une assiette forfaitaire, qui peut être très inférieure ou, pour les classes élevées, très supérieure au revenu effectif. Comparer les taux ne suffit donc pas à comparer les prélèvements. Le cas le plus net est celui des travailleurs à faibles revenus, dont l'assiette est une fraction fixe du salaire minimum (@sec-cot-reduites).
+
+Le troisième est l'**absence d'employeur**. Pour les travailleurs non salariés, les artistes et les Tunisiens à l'étranger, la colonne patronale est vide : [l'assuré supporte seul](#g-cotisation-assure) la totalité, entre 13,3 % et 14,71 %.
+
+## Part patronale, part salariale, cotisation de l'assuré {#sec-cot-parts}
+
+Le partage du prélèvement entre l'employeur et le salarié est fixé texte par texte, et prend plusieurs formes.
+
+Dans le régime général, le taux global se partage selon la clé 13/5 de l'article 41 de la loi n° 60-30 [@loi97-4] ; avec le fonds spécial de l'État, entièrement patronal, et la cotisation propre du régime de pensions, partagée 2,50 / 2,75, le total avant assurance maladie est de 16,00 % pour l'employeur et de 7,75 % pour le salarié (@tbl-somme-trois-textes). Le régime agricole amélioré retient une clé de deux tiers et un tiers [@loi89-73], de même que le régime des travailleurs à faibles revenus [@loi2002-32, art. 7] ; dans l'un et l'autre, celui qui travaille pour son propre compte supporte la totalité. Dans les régimes des travailleurs non salariés et des artistes, il n'y a pas d'employeur, et l'assuré paie seul. Dans celui des Tunisiens à l'étranger, la cotisation est à la charge du travailleur, l'employeur pouvant la prendre en charge en tout ou partie [@decret89-107].
+
+Au secteur public, la contribution est partagée entre l'agent et l'employeur public [@loi85-12, art. 9 et 13] ; dans les régimes spéciaux des membres du gouvernement, des députés et des gouverneurs, la contribution de l'État dépasse la retenue opérée sur l'assuré (@sec-cot-regimes-speciaux).
+
+Ce partage juridique ne dit rien de l'incidence économique du prélèvement : ce livre s'en tient au premier (troisième convention de lecture).

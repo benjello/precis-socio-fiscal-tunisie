@@ -1,0 +1,67 @@
+# Une comptabilité par régime {#sec-caisses-regimes}
+
+## La règle de 1960 {#sec-caisses-regle-1960}
+
+Une même caisse gère plusieurs régimes, et la loi n° 60-30 lui interdit de les confondre dans ses comptes. « La Caisse Nationale établira, pour chaque régime de sécurité sociale, un [compte de compensation](#g-compte-de-compensation) » qui porte, en recettes, « la quote-part des cotisations patronales et ouvrières réservées au régime et la quote-part des autres recettes revenant au régime » et, en dépenses, « les charges du régime qui comprennent une quote-part des dépenses de fonctionnement » [@loi60-30, art. 22]. Chaque régime a son [fonds de réserve](#g-fonds-de-reserve) : les excédents y sont versés, les déficits y sont imputés, et lorsque la réserve tombe sous le minimum fixé par le conseil d'administration, celui-ci « est tenu de proposer de majorer le taux de cotisation » ou toute autre mesure [@loi60-30, art. 23]. Le décret n° 2000-1902 maintient ces comptes de compensation parmi les comptes arrêtés chaque année [@decret2000-1902, art. 9].
+
+C'est cette présentation par régime que suivent les comptes de la CNSS de 1990 à 2004, où le résultat de chaque régime se lit séparément (@fig-cnss-regimes) [@cnss-retrospective-1990-2004].
+
+## Chaque régime nouveau, sa gestion distincte et sa réserve {#sec-caisses-nouveaux-regimes}
+
+Chaque régime créé après 1960 reprend le schéma, et l'explicite. Le régime de pensions du secteur non agricole « fait l'objet d'une [gestion financière distincte](#g-gestion-financiere-distincte) dans le cadre de l'organisation financière générale » de la CNSS [@decret74-499, art. 7]. Sa [réserve technique](#g-reserve-technique), différence entre ses recettes et ses dépenses, est placée à moyen ou à long terme et comptabilisée à part ; une analyse actuarielle et financière, au moins tous les cinq ans, commande le réajustement du taux si l'équilibre est menacé [@decret74-499, art. 10 à 13]. La loi n° 81-6 applique la même règle aux régimes du secteur agricole, dont les frais d'administration sont imputés « selon des critères objectifs », avec une comptabilité séparée pour les assurances sociales et pour les pensions et une analyse actuarielle quinquennale [@loi81-6, art. 6 à 10]. Le régime agricole amélioré de 1989 a lui aussi une gestion financière distincte [@loi89-73]. En 1995, la fusion des deux régimes de non-salariés de 1982 transfère leurs réserves au régime unifié [@decret95-1166, art. 34 à 39].
+
+Au secteur public, le décret n° 76-3 impose à la CNRPS de tenir « pour chacun des régimes gérés, des comptes individualisés » qui font ressortir, en recettes, « le produit des cotisations, subventions et autres ressources revenant au régime » et, en dépenses, les prestations servies et la quote-part des charges de gestion [@decret76-3, art. 12]. Chaque régime a son fonds de réserve ; sous le seuil fixé, le conseil « est tenu de proposer un aménagement des taux de cotisations et de subventions ou toute autre mesure tendant à rétablir l'équilibre financier du régime » [@decret76-3, art. 13]. La CNAM reçoit la règle en 2005 : elle « tient pour chaque régime qu'elle gère des comptes séparés » et affecte à chacun des fonds de réserve « provenant des excédents financiers dégagés par chacun de ces régimes » [@decret2005-321, art. 11].
+
+| Caisse et régimes | Texte | Règle |
+|---|---|---|
+| CNSS, tous régimes | loi n° 60-30 [@loi60-30, art. 22 et 23] | un compte de compensation et un fonds de réserve par régime |
+| CNSS, pensions du secteur non agricole | décret n° 74-499 [@decret74-499, art. 7, 10 à 13] | gestion financière distincte ; réserve technique placée et comptabilisée à part ; analyse actuarielle au moins quinquennale |
+| CNSS, régimes agricoles | loi n° 81-6 [@loi81-6, art. 6 à 10] | gestion financière distincte ; frais d'administration imputés selon des critères objectifs ; comptabilité séparée des assurances sociales et des pensions |
+| CNSS, non-salariés | décret n° 95-1166 [@decret95-1166, art. 34 à 39] | réserves des deux régimes de 1982 transférées au régime unifié |
+| CNRPS, tous régimes | décret n° 76-3 [@decret76-3, art. 12 et 13] | des comptes individualisés et un fonds de réserve par régime |
+| CNAM, tous régimes | décret n° 2005-321 [@decret2005-321, art. 11] | des comptes séparés et un fonds de réserve par régime |
+
+: Séparation comptable des régimes, par caisse {#tbl-caisses-separation}
+
+## Les réorganisations : la CAVIS, le projet de 1986, la CNAM {#sec-caisses-reorganisations}
+
+**La CAVIS (1976-1994).** De 1976 à 1994, les pensions du secteur privé ne sont pas gérées par la CNSS elle-même, mais par une caisse autonome « créée dans le cadre » de celle-ci, la [Caisse d'assurance vieillesse, invalidité et survivants](#g-cavis), pour le compte de laquelle la CNSS recouvre les cotisations et sert les prestations [@decret76-981, art. 1, 2 et 24]. La loi n° 81-6 lui confie aussi l'administration des pensions agricoles [@loi81-6, art. 3]. Le décret n° 94-1477 abroge le décret n° 76-981 et transfère à la CNSS les régimes qu'elle gérait [@decret94-1477, art. 1 et 2].
+
+**Le projet de 1986.** La loi n° 86-86 du 1^er^ septembre 1986 dessine une autre architecture, par branche. Son article premier organise la sécurité sociale autour d'une Caisse centrale de sécurité sociale et de trois organismes spécialisés — une Caisse nationale d'assurance maladie, une Caisse nationale des pensions et une Caisse nationale des prestations sociales —, que son article 2 substitue à la CNSS, « instituée par la loi n° 60-30 », et à la CNRPS, « instituée par la loi n° 75-83 » [@loi86-86, art. 1 et 2]. La loi ne crée donc aucune des deux caisses existantes ; elle prévoit leur remplacement. La caisse centrale est propriétaire du patrimoine et chargée de « la gestion de la trésorerie commune et le placement des fonds » ; les caisses spécialisées reçoivent d'elle une dotation annuelle [@loi86-86, art. 8, 18 et 19]. Les réserves restent tenues par régime ; si elles baissent sous le seuil, la caisse centrale propose « des mesures destinées à rétablir l'équilibre financier de ce régime et notamment : la compensation entre les régimes de sécurité sociale ; la modification des taux de répartition des contributions ; le relèvement des taux de contribution » [@loi86-86, art. 21]. Les textes antérieurs demeuraient en vigueur jusqu'aux décrets d'organisation [@loi86-86, art. 39] ; aucun décret d'organisation n'est identifié ici, et la loi est abrogée en 2004 [@loi2004-71, art. 29].
+
+**La CNAM (2004-2005).** La loi n° 2004-71 transfère à la nouvelle caisse « les biens et les réserves financières afférents aux régimes qu'elle est chargée de gérer », par arrêté conjoint des ministres chargés de la sécurité sociale, des domaines de l'État et des finances [@loi2004-71, art. 10]. Dans la rédaction de 2004, la CNAM ne recouvre pas elle-même les cotisations : la CNRPS et la CNSS les perçoivent et les lui reversent selon une convention entre caisses [@loi2004-71, art. 16] ; la loi n° 2017-47 récrit ce partage, que le livre [« Prestations sociales »](../prestations_sociales/index.html) expose. L'arrêté de transfert des réserves n'est pas identifié ici.
+
+<!-- RECHERCHE r-cnam-transfert-reserves : arrêté conjoint transférant à la CNAM les biens et réserves financières des régimes qu'elle gère (loi n° 2004-71, art. 10) (voir docs/recherches.yml) -->
+
+## L'équilibrage par la ventilation du taux global {#sec-caisses-ventilation}
+
+### Le pouvoir de ventiler {#sec-caisses-pouvoir}
+
+Le [taux global](#g-taux-global) de la loi n° 60-30 finance plusieurs régimes à la fois ([livre « Cotisations sociales »](../cotisations_sociales/_taux_global.html#sec-cot-taux-unique)) ; sa répartition entre eux est un acte de gestion de la caisse, sous le contrôle de la tutelle. Le conseil d'administration de la CNSS « propose la ventilation, par régime, des taux globaux de cotisations, ainsi que la modification, en cas de besoin, des taux de cotisations » [@loi60-30, art. 10], et l'autorité de tutelle approuve cette ventilation [@loi60-30, art. 27]. Le décret n° 2000-1902 reprend l'une et l'autre règle [@decret2000-1902, art. 3 et 15]. Les textes ouvrent ainsi deux leviers à l'équilibre d'un régime : la modification du taux de cotisation, que l'article 23 nomme lorsque la réserve tombe sous son minimum, et la ventilation du taux global. Le second ne modifie pas ce que paient employeurs et salariés ; il modifie ce que chaque compte de compensation reçoit.
+
+### Les dotations initiales des régimes nouveaux {#sec-caisses-dotations}
+
+Quand un régime naît, sa réserve est constituée sur les ressources des autres régimes de la caisse.
+
+| Année | Régime | Texte | Réserve initiale | Origine |
+|---|---|---|---:|---|
+| 1974 | pensions du secteur non agricole | décret n° 74-499 [@decret74-499, art. 10] | 15 MD | transfert des autres régimes gérés par la CNSS |
+| 1981 | pensions du secteur agricole | loi n° 81-6 [@loi81-6, art. 7] | 25 MD | prélèvement de la CNSS sur les excédents des autres régimes |
+| 1982 | exploitants et travailleurs indépendants de l'agriculture | décret n° 82-1360 [@decret82-1360, art. 12] | 35 MD | — |
+| 1989 | régime agricole amélioré | loi n° 89-73 [@loi89-73] | 10 MD | prélèvement sur la dotation du régime agricole (art. 100 de la loi n° 81-6, inséré par la loi n° 89-73) |
+
+: Réserves initiales des régimes de la CNSS créés après 1960, en millions de dinars courants {#tbl-caisses-dotations}
+
+Ces montants sont ceux qu'énoncent les textes, en dinars de leur année ; aucun ne se compare directement aux autres.
+
+### Les transferts de points {#sec-caisses-transferts}
+
+Les réaffectations du taux global qui suivent relèvent du même mécanisme ; elles ont été prises par décret ou par loi, et le livre [« Cotisations sociales »](../cotisations_sociales/_taux_global.html#sec-cot-ventilation) les expose branche par branche.
+
+- **1988, 1994 et 2003** : la quote-part du taux global affectée aux pensions du secteur non agricole passe de 1,25/20^e^ à 4,25/20^e^ au 1^er^ janvier 1988, à 6,25/20^e^ au 1^er^ janvier 1994 et à 7,25/20^e^ au 1^er^ janvier 2003 ([livre « Cotisations sociales »](../cotisations_sociales/_pensions.html#tbl-quote-part-rsna)) [@decret88-1137, art. 1-2 ; @decret94-1429, art. 1-2 ; @decret2003-1212, art. 1-2].
+- **1995** : un point des cotisations du régime général est transféré au régime des accidents du travail et des maladies professionnelles [@decret95-538, art. 2].
+- **1996** : la cotisation de protection sociale des travailleurs, de 0,4 % des salaires, est « à prélever sur le taux global » [@loi96-101, art. 5].
+
+Les comptes de la CNSS montrent l'effet de ces transferts sur les cotisations de chaque branche ([livre « Cotisations sociales »](../cotisations_sociales/_bilan.html#fig-cotisations-branches-1990-2004)) et la naissance des comptes des accidents du travail et de la protection sociale des travailleurs (@fig-cnss-atmp-pst). Les notes de la rétrospective financière de la caisse disent pris sur la part des prestations familiales les points réaffectés aux pensions [@cnss-retrospective-1990-2004] ; la Banque mondiale écrivait en 1993 que les cotisations de prestations familiales du secteur privé dégagent des excédents qui servent à financer les pensions [@bm-1993-social-protection, § 1.10].
+
+Dans ces mêmes comptes, la branche des pensions est en déficit de 1990 à 1995 et de 2002 à 2004, et en excédent de 1996 à 2001 [@cnss-retrospective-1990-2004] ; le livre [« Retraites »](../retraites/_secteur_prive.html#fig-rsna-resultat-1990-2004) en donne la figure, où sont marquées les dates d'effet des relèvements de 1988, 1994 et 2003. Aucun texte identifié ici ne rattache un transfert de points à l'état d'un fonds de réserve.

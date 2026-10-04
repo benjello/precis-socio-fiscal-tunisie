@@ -1,0 +1,61 @@
+---
+title: "À propos du précis"
+subtitle: "Ce qu'il est, à qui il s'adresse, comment y contribuer"
+format:
+  html:
+    include-in-header: ../accueil.html
+---
+
+[← Retour à l'accueil](index.html)
+
+## Ce qu'est le précis
+
+Le *Précis de la législation socio-fiscale de la Tunisie* retrace, règle par règle, l'évolution de la législation sociale et fiscale tunisienne depuis l'indépendance : qui est couvert, à quel taux, sur quelle assiette, depuis quand, et en vertu de quel texte. Chaque dispositif y est présenté dans son histoire, réforme par réforme, avec des tableaux datés et des renvois au *Journal officiel de la République tunisienne*.
+
+Il réunit ainsi ce qui est d'ordinaire dispersé entre des décennies de textes, de rapports et d'annuaires. Il se lit en ligne ou en PDF, en français et en arabe.
+
+C'est un travail en cours. Certains chapitres sont complets, d'autres sont encore des ébauches ; aucune valeur ni aucune date n'y est retenue sans source vérifiée, et une case laissée vide signale ce qui reste à établir.
+
+## À qui il s'adresse
+
+- aux **cadres des caisses et des administrations**, qui y retrouvent d'un coup l'historique d'un taux, d'un plafond ou d'un régime, avec le texte qui le fonde ;
+- aux **enseignants, chercheurs et étudiants**, qui y trouvent une source citable, une bibliographie et des séries longues ;
+- aux **économistes et chargés d'études**, pour qui il tient lieu de socle commun et évite de reconstituer le droit à chaque étude ;
+- à **toute personne** qui veut comprendre d'où viennent les règles qui s'appliquent à elle.
+
+## Comment réagir
+
+Le précis s'améliore par ceux qui connaissent le terrain. **Aucune compétence technique n'est nécessaire.**
+
+- Si vous avez reçu un message de l'auteur, **répondez-y simplement** : votre remarque sera consignée dans le suivi public du projet.
+- Sur chaque page d'un volume, le lien **« Faire part d'un problème »** ouvre un formulaire. Il demande un compte gratuit sur GitHub, le site qui héberge le projet ; on y écrit en français ou en arabe. Trois formulaires sont proposés : [signaler une erreur](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/new?template=erratum.yml), [signaler ou transmettre un document](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/new?template=document.yml), [donner son avis sur la forme](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/new?template=forme.yml).
+- Toutes les remarques déjà déposées se consultent sur [la page de suivi](https://github.com/benjello/precis-socio-fiscal-tunisie/issues).
+
+## Ce que nous cherchons
+
+Tout document publié qui contient des données ou qui éclaire l'histoire d'un dispositif, et qui ne se trouve pas au *Journal officiel* :
+
+- les **annuaires et bulletins statistiques** des caisses, anciens ou récents ;
+- les **rapports d'activité** et les **états financiers** des caisses et des administrations ;
+- les **circulaires**, **notes communes** et **instructions** ;
+- les **études**, **rapports**, **thèses** et **mémoires**.
+
+Il suffit de signaler qu'un document existe et où il se trouve : nous nous chargeons de le numériser. Une simple indication est déjà précieuse.
+
+## Remerciements
+
+Le précis doit beaucoup à celles et ceux qui l'ont relu, corrigé et complété, et qui ont transmis des documents. Leurs noms figurent ici **avec leur accord** ; nul n'y est cité sans l'avoir accepté, et un retour donné à titre personnel n'est jamais présenté comme la position d'une institution.
+
+<!-- TODO (rédacteur) : ajouter les noms au fur et à mesure des accords reçus. Aucun nom avant accord écrit. -->
+
+## Licence et citation
+
+Le texte, les tableaux et les figures du précis sont mis à disposition selon les termes de la licence [Creative Commons Attribution – Partage dans les mêmes conditions 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) : vous pouvez les reproduire, les diffuser et les adapter, à condition d'en citer l'auteur et de diffuser vos adaptations sous la même licence. Les textes officiels cités restent soumis à leur propre régime.
+
+Pour citer l'ouvrage :
+
+> Mahdi Ben Jelloul, *Précis de la législation socio-fiscale de la Tunisie*, <https://benjello.github.io/precis-socio-fiscal-tunisie/>, consulté le [date].
+
+## Comment il est produit
+
+Les tableaux de paramètres du précis sont engendrés depuis la base de données législative d'[OpenFisca-Tunisia](https://github.com/openfisca/openfisca-tunisia), le modèle de microsimulation du système socio-fiscal tunisien : chaque valeur y est datée et rattachée au texte qui la fonde. Les sources du précis et les programmes qui le produisent sont publics, sur [la page du projet](https://github.com/benjello/precis-socio-fiscal-tunisie).

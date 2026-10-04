@@ -39,6 +39,8 @@ mais que la couche texte testée est vide. Un texte absent du JORT en français 
 
 ## Fiscalité — quatre impôts ouverts, des lectures et des mécanismes à compléter
 
+- **Présentation (`index.qmd`) : impôts directs et indirects définis et sourcés** (LOB 1967, 1996, 2019 ; tableaux A des LF 2014 et 2021 ; support ENA de S. Zakraoui), textes lus dans le corpus. Reste : relever la page de fin des trois LOB dans l'édition arabe ; dater le support ENA ou lui substituer la doctrine imprimée (`baccouche2008`, `ayadi1996`, à obtenir) ; l'arrêté de nomenclature des recettes (LOB 2019, art. 16) n'est pas identifié.
+
 **Immédiat, avec les sources déjà présentes.** Les décrets n° 97-1368 et 2015-1768
 (`PDFs/JORT/1997/fr/Jo05997.pdf` et `2015/fr/Jo0922015.pdf`) ont une couche texte : relever
 leurs articles, tarifs et clauses d'effet pour le chapitre des droits de consommation.
@@ -163,6 +165,18 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 
 ## Prestations sociales
 
+- **Découpé en chapitres le 4 octobre 2026** (déplacement seul, aucune valeur changée, ancres
+  gardées) : `index.qmd` (« Présentation » : introduction, conventions, présentation générale
+  `#sec-prest-presentation`, encadré des caisses), partie « Les prestations contributives »
+  (`_contributives.qmd`, `#sec-prest-contributives` : chapeau et ouverture du droit) —
+  `_prestations_familiales.qmd` (`#sec-prest-familiales`), `_autres_risques.qmd` (maladie,
+  maternité, décès, accidents du travail, perte d'emploi, CNAM ; `#sec-prest-autres-risques`) —,
+  `_non_contributives.qmd` (`#sec-prest-non-contributives`), `_matrice.qmd` ; annexe
+  `_notations.qmd` (« Les notations du volume »).
+- **Arabe — à faire à la livraison de la traduction** : `precis/ar/prestations_sociales/_quarto.yml`
+  ne déclare encore que `index.qmd`, à dessein. Y déclarer la partie `_contributives.qmd`, les quatre chapitres et
+  l'annexe quand la traduction les livre, puis rendre le livre arabe (mêmes réserves que pour les
+  cotisations).
 - **Dépense des allocations familiales, 1990-2004 — fait le 3 octobre 2026** (`#fig-cnss-allocations-familiales`, `#sec-pf-longue-periode`), tirée de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026), déflatée par l'IPC des annuaires de l'INS (`ins-annuaire-ipc`). Restent : allocataires, enfants, montant moyen, dépense avant 1990 et après 2004 (TODO du chapitre). **221 valeurs de 1999** (et quelques-unes de 2000) masquées par la reliure restent à lire sur l'original papier (tunisia-data#26) ; en attendant, la figure trace des estimations hachurées ou creuses. Quand le classeur revient : réinjecter dans tunisia-data, relancer `figtools.refresh_cache("cnss-retrospective-ressources-emplois")`, puis relire la note de lecture, qui cite des montants. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches).
 - **Onze paliers de l'allocation** entre 1987 et 2018 n'ont aucun fondement textuel publié.
   Les décisions ou circulaires de la direction générale de la promotion sociale et
@@ -256,40 +270,38 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 
 ## Cotisations sociales
 
+- **Découpé en chapitres le 4 octobre 2026** (déplacement seul, aucune valeur changée, ancres
+  gardées) : `index.qmd` (« Présentation » : introduction, conventions, présentation générale,
+  encadré des caisses), `_assiette.qmd`, `_taux_global.qmd`, partie « Les branches, une à une »
+  (`_branches.qmd`, `#sec-cot-branches`) — `_pensions.qmd`, `_maladie.qmd`,
+  `_accidents_travail.qmd`, `_autres_branches.qmd` (famille, emploi et fonds spécial,
+  complémentaire ; ancre nouvelle `#sec-cot-autres-branches`) —, `_regimes.qmd`, `_bilan.qmd` ;
+  annexes `_notations.qmd`, `_textes_modificatifs.qmd`. L'ancre `#sec-cot-annexes`, que rien ne
+  visait, a disparu. Les liens des autres livres sont redirigés vers les nouvelles pages, **sauf
+  ceux du livre des caisses**, restructuré en parallèle, à corriger après fusion : huit liens de
+  `_comptes_regimes.qmd`, `_etat_caisses.qmd` et `_comptes_longue_periode.qmd` visent encore
+  `cotisations_sociales/index.html#…` (`sec-cot-taux-unique`, `sec-cot-ventilation` →
+  `_taux_global.html` ; `tbl-quote-part-rsna` → `_pensions.html` ;
+  `fig-cotisations-branches-1990-2004` ×2 → `_bilan.html` ; `sec-cot-fonds-special`,
+  `sec-cot-protection-sociale` → `_autres_branches.html` ; `sec-cot-cnrps-employeur` →
+  `_regimes.html`).
+- **Arabe — à faire à la livraison de la traduction** : `precis/ar/cotisations_sociales/_quarto.yml`
+  ne déclare encore que `index.qmd`, à dessein (déclarer des fichiers absents casserait le rendu).
+  Quand la passe de traduction livre les onze nouveaux fichiers, y déclarer les mêmes chapitres,
+  la partie `_branches.qmd` et les annexes, puis rendre le livre arabe. D'ici là, le livre arabe
+  sert l'ancien `index.qmd` d'un seul tenant ; si la passe réécrit d'abord `ar/index.qmd` en
+  version courte, le contenu des chapitres manquera au livre arabe jusqu'à leur déclaration.
+  Les renvois des volumes « Retraites » et « Rémunérations publiques » visent déjà les nouvelles
+  pages (`_pensions.html`, `_taux_global.html`, `_regimes.html`, `_matrice.html`…) : leur
+  retraduction produira des liens morts dans les livres arabes tant que ces chapitres n'y sont pas
+  déclarés. Déclarer les chapitres arabes dans la même passe que ces retraductions.
+
+- **Les caisses ont quitté ce livre le 4 octobre 2026** : cadre comptable et budgétaire, et les
+  trois figures de la rétrospective CNSS par régime et par branche, dans le livre « Les caisses de
+  sécurité sociale » (voir sa section ci-dessous). Ce livre garde le prélèvement, dont
+  `#fig-cotisations-branches-1990-2004` et `#fig-cotisations-cnss`.
+
 - **Cotisations par branche, 1990-2004 — fait le 3 octobre 2026** (`#fig-cotisations-branches-1990-2004`, après `#fig-cotisations-cnss`), tirées de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026). Comptes de bilan, non encaissements : écart de −1,13 % à −0,81 % avec la série encaissée en 2000-2004, inexpliqué. Les notes du document datent la réduction de 2 points de la branche familiale par la loi n° 97-4 au 1er octobre 1996, date que la loi n'énonce pas : à confronter à la datation du taux global (`#sec-cot-taux-unique`). **221 valeurs de 1999** (et quelques-unes de 2000) masquées par la reliure restent à lire sur l'original papier (tunisia-data#26) ; en attendant, la figure trace des estimations hachurées ou creuses. Quand le classeur revient : réinjecter dans tunisia-data, relancer `figtools.refresh_cache("cnss-retrospective-ressources-emplois")`, puis relire la note de lecture, qui cite des montants. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches).
-- **Trois figures de la rétrospective CNSS 1990-2004 — fait le 3 octobre 2026**, mêmes vues (MD, % du PIB, % des ressources de la CNSS) : `#fig-cnss-assurances-sociales` (`#sec-cot-maladie-longue-periode`, branche AS du RSNA, page 13 : forfait Santé publique, participation aux budgets des hôpitaux, compléments facturés par les hôpitaux publics, polycliniques, prestations en espèces, résultat ; colonne 1999 estimée hormis le total des ressources) ; `#fig-cnss-regimes` (`#sec-cot-prive`, page 79 : taux de couverture et résultat de neuf régimes ; aucune valeur estimée ; RSA et non-salariés agricoles structurellement déficitaires, RSAA excédentaire sauf 2001 et 2004, aucune ligne de transfert entre régimes) ; `#fig-cnss-atmp-pst` (`#sec-cot-at-longue-periode`, renvoi depuis `#sec-cot-protection-sociale`, pages 54 et 56 ; détail AT/MP de 2000 estimé). Restent (TODO des chapitres, textes à obtenir, hors corpus JORT pour l'essentiel) : la base juridique du forfait accordé à la Santé publique, de la participation aux budgets des hôpitaux et de la facturation des compléments de soins à partir de 1996 ; le sens du sigle « C.A.O. » ; le contenu de la ligne « Provision Prest. & Mathématique » du régime AT/MP ; ces séries après 2004 (CNAM pour les AT/MP). Quand le classeur de tunisia-data#26 revient : relire les notes de lecture, qui citent des montants.
-- **Cadre comptable et budgétaire des caisses — rédigé le 4 octobre 2026** (`_cadre_caisses.qmd`,
-  inclus dans `index.qmd` avant `#sec-cot-bilan`, `#sec-cot-cadre-caisses`), d'après la note
-  `cadre-budgetaire-comptable-caisses.md` : statut, budget et contrôle des trois caisses ;
-  comptabilité et réserves par régime ; dotations initiales et transferts de points ; concours
-  des caisses au budget et financement par l'État (CSS, compte de diversification) ; chronologie
-  des textes (`#tbl-cadre-chronologie`) ; silences des textes. Six fiches de recherche versées
-  (`r-cnrps-tutelle-1976-1985`, `r-cnrps-organisation-apres-1989`, `r-norme-comptable-securite-sociale`,
-  `r-cnam-transfert-reserves`, `r-caisses-placements-obligatoires`, `r-css-arretes-repartition`).
-  Lacunes de la note (numérotation L1-L15), état du support contrôlé le 4 octobre 2026 sur le
-  corpus local (couche texte des trois premières pages) :
-  - **lisible** : loi n° 98-91 (JORT n° 89 de 1998, `1998/fr/Jo08998.pdf`) pour les modificatifs
-    des art. 18-33 de la loi n° 60-30 (L2, en partie) ; décret n° 97-565 (JORT n° 27 de 1997)
-    et décret n° 2002-2197 (JORT n° 83 de 2002, couche à décoder le cas échéant) (L12) ; arrêtés
-    d'approbation des normes comptables de 1999 (n° 27), 2000 (n° 54), 2001 (n° 96), 2003
-    (n° 97), 2007 (n° 70), 2008 (n° 10) et 2011 (n° 17) (L7) ; décret n° 2005-910 (JORT n° 26
-    de 2005, pp. 844-850), dont le tableau de tutelle est à lire à l'image (L11) ;
-  - **OCR** : décret n° 75-775 (JORT n° 72 de 1975) et décret n° 86-454 (n° 25 de 1986) pour la
-    tutelle de la CNRPS (L1) ; modificatifs de la loi n° 60-30 antérieurs à 1996 (L2) ; lois de
-    finances 1971-1975 et 1991 (n° 86 de 1990) pour les placements en bons d'équipement (L5 ;
-    LF 1992 à localiser) ; loi n° 85-72 (n° 56 de 1985) (L13) ; décret n° 87-529 (n° 25 ou 30 de 1987, à départager) (L15) ;
-    loi n° 68-8 sur la Cour des comptes (n° 11 de 1968) (L9) ;
-  - **à obtenir** (hors JORT) : couverture des déficits agricoles par la trésorerie de la CNSS —
-    états financiers, rapports du conseil d'administration, études du CRESS (L10) ; rapport de
-    mission complet de la Cour des comptes sur la CNRPS (2006) (L9) ; affectation du produit de
-    la majoration de 1975 après 1988, tableaux A des lois de finances 1985-2004 (L6) ;
-  - **recherches** : L3, L4, L8 suivent leurs fiches dans `docs/recherches.yml`.
-  - **L14 levée** : l'arrêté du 6 janvier 1987 est déjà lu et cité par le livre « Prestations
-    sociales » (`arrete-1987-01-06-financement-pnafn`, contribution pour 1986) ; restent les
-    arrêtés des années suivantes.
-  Séries à construire avant de publier des montants (TODO du fichier) : comptes des organismes
-  de sécurité sociale des comptes de la nation ; versements des caisses au budget (tableau A) ;
-  transferts de l'État aux caisses depuis 2016, dont les sources restent à verser.
 - **Accidents du travail (§ sec-cot-at)** : les décrets n° 95-538 et 99-1010 sont lus
   dans les deux éditions (taux, entrée en vigueur au 1er janvier 1995 et au 1er avril
   1999). Les deux échelles sont engendrées, avant et après transfert du point
@@ -323,6 +335,113 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   les tableaux classés B ou C dans `recension-parametres-en-dur.md` (assiettes, somme des
   trois textes, ventilation, montée en charge AMU, longue période) : ils attendent des PR
   openfisca-tunisia.
+
+## Les caisses de sécurité sociale
+
+Livre créé le 4 octobre 2026 (`precis/fr/caisses/`) ; plan approuvé : architecture A, étapes 2
+à 4. Il porte les organismes — histoire, statut, comptes par régime, budget, relations avec
+l'État ; les livres « dispositifs » gardent les règles et renvoient ici par l'encadré commun
+(`_encadre_caisses.qmd`, engendré par `scripts/generate_encadre_caisses.py`, contrôlé par
+`tests/test_encadre_caisses.py`).
+
+- **Découpage en chapitres — fait le 4 octobre 2026** (plan validé par l'humain) : `index.qmd`
+  « Présentation » (non numérotée : périmètre `#sec-caisses-perimetre`, carte
+  `#tbl-caisses-carte`) ; `_histoire.qmd` « Des caisses du Protectorat aux caisses nationales »
+  (`#sec-caisses-panorama`) ; `_statut_cadre.qmd` ; `_comptes_regimes.qmd` (avec la ventilation
+  du taux global) ; `_etat_caisses.qmd` ; `_comptes_longue_periode.qmd` (avec « Ce que les textes
+  ne disent pas ») ; annexes `_chronologie.qmd` puis glossaire. Ancres inchangées ; liens entrants
+  corrigés vers la page de chaque chapitre (cotisations, fiscalité, rémunérations, retraites).
+  Mêmes chapitres déclarés dans `precis/ar/caisses/_quarto.yml`.
+- **Histoire — rédigée le 4 octobre 2026** (`_histoire.qmd`, note `caisses-histoire.md`) : avant
+  1956, d'après Bertrand (*Bulletin économique et social de la Tunisie*, n° 73 et 74 de 1953) et
+  les visas des textes de 1956-1961 — Société de prévoyance des fonctionnaires et employés
+  tunisiens (pensions, régime de prévoyance de 1951), Caisse de retraite des ouvriers de l'État,
+  caisses du semi-public, accidents du travail sans caisse (décret du 15 mars 1921), trois caisses
+  de compensation des allocations familiales (décret du 8 juin 1944), mutualité (décret du
+  18 février 1954, intitulé seul) ; 1956-1960 lus au JORT — surcompensation (décret du 8 novembre
+  1956), Caisse centrale des prestations sociales (loi n° 58-130), Société de prévoyance → Caisse
+  nationale de retraites (lois n° 59-18 et 59-19), Caisse de prévoyance sociale (loi n° 59-45,
+  **lue** : la tâche précédente est close), CNSS et ce qu'elle reprend (loi n° 60-30, art. 119 à
+  131) ; puis la lignée 1960-2004. Restent : **hors corpus** — Journal officiel tunisien antérieur
+  à 1956 (ni jort_cache, ni corpus local, ni pist.tn) pour les textes fondateurs de la Société,
+  de la caisse des ouvriers de l'État et des caisses d'allocations familiales (fiche
+  `r-caisses-protectorat-fondation`), mois du n° 74 du *BEST* ; **à océriser ou relire** — loi
+  n° 59-5 (JORT n° 3 de 1959 : le fichier local ne rend rien à l'OCR), loi n° 59-87, décret du
+  29 mars 1956 (JORT n° 27 de 1956, lisible à l'image), loi n° 61-9 (fiche `r-ccps-devolution`).
+- Le partage du recouvrement de la cotisation maladie après la loi n° 2017-47 reste à reporter
+  dans `#tbl-caisses-carte` (texte lu par le livre « Prestations sociales »).
+- **Contribution sociale de solidarité — histoire du taux tenue ici** (`#sec-caisses-financeur`),
+  corrigée le 4 octobre 2026 d'après `css-verification.md` : un point (loi de finances pour 2018,
+  art. 53) ; dispense permanente des seuls salaires et pensions ≤ 5 000 D nets depuis la loi de
+  finances pour 2020 (art. 39) ; demi-point pour les revenus dont la déclaration échoit de 2023 à
+  2025 (loi de finances pour 2023, art. 22, édition arabe seule, pp. 4062-4063), prorogé à 2026
+  (loi de finances pour 2026, art. 87) ; la loi de finances pour 2025 ne touche pas la CSS des
+  personnes physiques. Lecture administrative (retenue sur les sommes payées en 2023-2026) dite
+  sans citation : notes communes 1/2023 et 1/2026 à verser (bibliographe, source publique à
+  vérifier). Reste la date à retenir pour le tableau daté (openfisca-tunisia#474 et #475).
+- **Étape 5 du plan, non faite** : chapitres « État et caisses » et « comptes dans la durée » à
+  compléter par des séries à construire dans tunisia-data — comptes des organismes de sécurité
+  sociale des comptes de la nation (S1314, 2001-2025, rupture de base à documenter), transferts
+  et subventions de l'État aux caisses depuis 2016, états financiers de la CNRPS et de la CNSS
+  après 2004 ; versements des caisses au budget (tableau A des lois de finances, 1985-2004).
+- **Transitoire, à défaire après la première traduction du livre** :
+  - `precis/ar/caisses/index.qmd` et ses partiels n'existent qu'après la passe de traduction qui
+    suit la fusion ; d'ici là `build.sh`, `verifier.sh` et `translation-sync.yml` sautent le livre
+    arabe (« traduction pas encore livrée »). Vérifier ensuite que le livre arabe rend.
+  - trois liens symboliques `precis/fr/cotisations_sociales/figures/cnss_{regimes_1990_2004,
+    assurances_sociales_1990_2004,atmp_pst_1995_2004}.py` → `../../caisses/figures/` : la
+    traduction arabe actuelle du chapitre des cotisations importe encore ces modules. À retirer
+    quand elle est retraduite.
+  - trois entrées gardées dans les `references.json` ARABES seulement, parce que la traduction
+    arabe en place les cite encore : `loi59-45` (cotisations), `loi86-86` (prestations),
+    `loi2017-66-lf2018` (rémunérations publiques, doublon de `lf-2018`). À retirer après la
+    retraduction de ces chapitres.
+  - la traduction arabe de `_cadre_caisses.qmd` (PR #348), si elle arrive dans
+    `precis/ar/cotisations_sociales/`, y devient orpheline : à supprimer, la traduction du livre
+    des caisses la remplaçant.
+- **Bibliographie** : clés du livre rangées le 4 octobre 2026 — propres au livre dans
+  `caisses/references.json`, partagées avec un autre livre dans le fonds commun. Doublons fusionnés
+  dans le fonds commun : `loi86-83-lfr1986` → `loi-86-83-lfr-1986`, `loi87-83-lf1988` →
+  `loi-87-83-lf-1988`, `loi2017-66-lf2018` → `lf-2018` (tableau `css_salarie` régénéré, seul
+  l'identifiant de clé change). Zotero n'a pas encore de collection « Caisses de sécurité sociale » :
+  `COLLECTION_TO_BOOK` (`sync_biblio.py`) et `COLLECTIONS` (`push_biblio.py`) la déclarent ; après
+  fusion, l'action `ranger` du workflow `biblio-zotero.yml` la crée et y classe les items du volume.
+
+- **Trois figures de la rétrospective CNSS 1990-2004 — fait le 3 octobre 2026**, mêmes vues (MD, % du PIB, % des ressources de la CNSS) : `#fig-cnss-assurances-sociales` (livre des caisses, `#sec-caisses-cnss-assurances-sociales` ; renvoi depuis `#sec-cot-maladie-longue-periode`, branche AS du RSNA, page 13 : forfait Santé publique, participation aux budgets des hôpitaux, compléments facturés par les hôpitaux publics, polycliniques, prestations en espèces, résultat ; colonne 1999 estimée hormis le total des ressources) ; `#fig-cnss-regimes` (livre des caisses, `#sec-caisses-cnss-regimes` ; renvoi depuis `#sec-cot-prive`, page 79 : taux de couverture et résultat de neuf régimes ; aucune valeur estimée ; RSA et non-salariés agricoles structurellement déficitaires, RSAA excédentaire sauf 2001 et 2004, aucune ligne de transfert entre régimes) ; `#fig-cnss-atmp-pst` (livre des caisses, `#sec-caisses-cnss-atmp-pst` ; renvois depuis `#sec-cot-at-longue-periode` et `#sec-cot-protection-sociale`, pages 54 et 56 ; détail AT/MP de 2000 estimé). Restent (TODO des chapitres, textes à obtenir, hors corpus JORT pour l'essentiel) : la base juridique du forfait accordé à la Santé publique, de la participation aux budgets des hôpitaux et de la facturation des compléments de soins à partir de 1996 ; le sens du sigle « C.A.O. » ; le contenu de la ligne « Provision Prest. & Mathématique » du régime AT/MP ; ces séries après 2004 (CNAM pour les AT/MP). Quand le classeur de tunisia-data#26 revient : relire les notes de lecture, qui citent des montants.
+- **Cadre comptable et budgétaire des caisses — rédigé le 4 octobre 2026** (d'abord
+  `cotisations_sociales/_cadre_caisses.qmd`, déplacé le même jour dans ce livre et découpé en
+  `_statut_cadre.qmd`, `_comptes_regimes.qmd`, `_etat_caisses.qmd`, `_comptes_longue_periode.qmd`,
+  `_chronologie.qmd` ; ancres `sec-cot-cadre-*` → `sec-caisses-*`, `tbl-cadre-*` → `tbl-caisses-*`), d'après la note
+  `cadre-budgetaire-comptable-caisses.md` : statut, budget et contrôle des trois caisses ;
+  comptabilité et réserves par régime ; dotations initiales et transferts de points ; concours
+  des caisses au budget et financement par l'État (CSS, compte de diversification) ; chronologie
+  des textes (`#tbl-caisses-chronologie`) ; silences des textes. Six fiches de recherche versées
+  (`r-cnrps-tutelle-1976-1985`, `r-cnrps-organisation-apres-1989`, `r-norme-comptable-securite-sociale`,
+  `r-cnam-transfert-reserves`, `r-caisses-placements-obligatoires`, `r-css-arretes-repartition`).
+  Lacunes de la note (numérotation L1-L15), état du support contrôlé le 4 octobre 2026 sur le
+  corpus local (couche texte des trois premières pages) :
+  - **lisible** : loi n° 98-91 (JORT n° 89 de 1998, `1998/fr/Jo08998.pdf`) pour les modificatifs
+    des art. 18-33 de la loi n° 60-30 (L2, en partie) ; décret n° 97-565 (JORT n° 27 de 1997)
+    et décret n° 2002-2197 (JORT n° 83 de 2002, couche à décoder le cas échéant) (L12) ; arrêtés
+    d'approbation des normes comptables de 1999 (n° 27), 2000 (n° 54), 2001 (n° 96), 2003
+    (n° 97), 2007 (n° 70), 2008 (n° 10) et 2011 (n° 17) (L7) ; décret n° 2005-910 (JORT n° 26
+    de 2005, pp. 844-850), dont le tableau de tutelle est à lire à l'image (L11) ;
+  - **OCR** : décret n° 75-775 (JORT n° 72 de 1975) et décret n° 86-454 (n° 25 de 1986) pour la
+    tutelle de la CNRPS (L1) ; modificatifs de la loi n° 60-30 antérieurs à 1996 (L2) ; lois de
+    finances 1971-1975 et 1991 (n° 86 de 1990) pour les placements en bons d'équipement (L5 ;
+    LF 1992 à localiser) ; loi n° 85-72 (n° 56 de 1985) (L13) ; décret n° 87-529 (n° 25 ou 30 de 1987, à départager) (L15) ;
+    loi n° 68-8 sur la Cour des comptes (n° 11 de 1968) (L9) ;
+  - **à obtenir** (hors JORT) : couverture des déficits agricoles par la trésorerie de la CNSS —
+    états financiers, rapports du conseil d'administration, études du CRESS (L10) ; rapport de
+    mission complet de la Cour des comptes sur la CNRPS (2006) (L9) ; affectation du produit de
+    la majoration de 1975 après 1988, tableaux A des lois de finances 1985-2004 (L6) ;
+  - **recherches** : L3, L4, L8 suivent leurs fiches dans `docs/recherches.yml`.
+  - **L14 levée** : l'arrêté du 6 janvier 1987 est déjà lu et cité par le livre « Prestations
+    sociales » (`arrete-1987-01-06-financement-pnafn`, contribution pour 1986) ; restent les
+    arrêtés des années suivantes.
+  Séries à construire avant de publier des montants (TODO du fichier) : comptes des organismes
+  de sécurité sociale des comptes de la nation ; versements des caisses au budget (tableau A) ;
+  transferts de l'État aux caisses depuis 2016, dont les sources restent à verser.
 
 ## Forme des chapitres — le plan type, et où il ne s'applique pas
 
@@ -379,7 +498,7 @@ Pour toute passe qui DÉPLACE de la prose, le **balayage phrase à phrase** de l
 contre le résultat n'est pas optionnel : sur l'impôt sur les sociétés, deux fois plus court,
 il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
 
-## Ce qui traverse les cinq livres
+## Ce qui traverse les livres
 
 - **Traductions arabes en retard sur leur code (relevé et rattrapage du 3 octobre 2026).**
   Le garde-fou des cellules Python de `translate_sync` signalait dix chapitres arabes dont les

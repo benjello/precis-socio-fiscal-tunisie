@@ -8,7 +8,7 @@
 # `git diff --name-only origin/master...HEAD`, le reste de l'arbre de travail
 # (indexé ou non) et les fichiers non suivis. Un fichier partagé (`figtools.py`,
 # `precis/glossaire.yml`, `precis/_seriescache/`, un fichier posé au niveau de
-# la langue plutôt que du livre) fait rendre les CINQ livres — voir
+# la langue plutôt que du livre) fait rendre TOUS les livres — voir
 # `scripts/verifier_livres.py::livres_touches`.
 #
 # --sans-reseau saute la vérification des liens de la base législative (le seul
@@ -83,6 +83,7 @@ fi
 # ── 2-4. Contrôles de contenu, sans réseau ─────────────────────────────────────
 etape "Le précis ne parle pas du modèle" uv run python scripts/check_pas_de_modele.py
 etape "Le précis ne parle pas du dépouillement" uv run python scripts/check_jargon_depouillement.py
+etape "La numérotation se lit sans trou" uv run python scripts/check_numerotation.py
 etape "Chaque recherche infructueuse a sa fiche" uv run python scripts/recherches.py verifier
 etape "Les sous-agents Claude Code sont à jour" uv run python scripts/sync_agents.py --verifier
 
@@ -120,6 +121,11 @@ else
     for langue in fr ar; do
       BOOK_DIR="$ROOT_DIR/precis/$langue/$livre"
       [ -d "$BOOK_DIR" ] || continue
+      # Livre neuf : l'arabe n'arrive qu'avec la traduction post-fusion (voir build.sh).
+      if [ "$langue" = ar ] && [ ! -f "$BOOK_DIR/index.qmd" ]; then
+        printf 'SAUTÉ   Rendu ar/%s : traduction pas encore livrée (index.qmd absent)\n' "$livre"
+        continue
+      fi
       echo "-- $langue/$livre --" >>"$LOG"
       if ! (cd "$BOOK_DIR" && uv run quarto render --to html) >>"$LOG" 2>&1; then
         printf 'ÉCHEC   Rendu %s/%s (voir %s)\n' "$langue" "$livre" "$LOG"
