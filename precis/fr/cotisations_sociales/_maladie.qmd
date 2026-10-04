@@ -1,0 +1,102 @@
+# L'assurance maladie {#sec-cot-maladie}
+
+```{python}
+#| echo: false
+#| output: false
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+
+TABLES = Path.cwd() / "tables"
+
+
+def table(nom, legende, label, **options):
+    """Tableau de paramètres : snapshot versionné, régénéré depuis openfisca-tunisia.
+
+    Les valeurs viennent des paramètres du modèle, la colonne « Texte » de leurs
+    références. Régénération : `scripts/generate_cotisations_tables.py`.
+    """
+    print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label, **options))
+
+
+def onglets(panneaux, **options):
+    """Plusieurs tableaux sous des onglets : (titre, nom, légende, label)."""
+    print(ot.markdown_onglets(
+        [(titre, TABLES / f"{nom}.md", legende, label) for titre, nom, legende, label in panneaux],
+        **options))
+```
+
+## Les origines {#sec-cot-maladie-origines}
+
+La maladie entre dans le système avec les « assurances sociales » de la loi n° 60-30, qui couvrent ensemble la maladie, la maternité et le décès [@loi60-30] et que finance le taux global de l'article 41, sans cotisation distincte (@sec-cot-taux-unique). Les régimes créés ensuite reprennent ce modèle : un bloc « assurances sociales » à l'intérieur de leur taux global.
+
+## Le secteur privé {#sec-cot-maladie-prive}
+
+| Régime | Assurances sociales dans le taux global | dont maladie, selon le décret n° 2007-1406 |
+|---|---:|---:|
+| Salariés non agricoles | aucun bloc fixé par un texte | 4,75 % (art. 6) |
+| Salariés agricoles | 1,20 % [@decret81-224, art. 1] | 0,91 % (art. 7) |
+| Salariés agricoles, régime amélioré | 3 % pour les pêcheurs indépendants et les petits armateurs [@decret90-548, art. 1-2] | 2,28 % (art. 8) |
+| Tunisiens à l'étranger | 5,40 % [@decret89-107, art. 7] | 4,10 % (art. 9) |
+| Travailleurs non salariés | 4 points [@decret95-1166, art. 9] | 3,04 % (art. 10) |
+| Artistes, créateurs et intellectuels | 4 points [@loi2002-104, art. 7] | 3,04 % (art. 11) |
+| Travailleurs à faibles revenus | 2,5 points de prestations de soins [@decret2002-916, art. 14 et 15] | régime non visé |
+
+: Part des assurances sociales dans le taux global de chaque régime privé, et part maladie qu'en retient le décret n° 2007-1406 {#tbl-assurances-sociales}
+
+Dans chaque régime, seule la part maladie est attestée par un texte, et elle ne l'est que depuis 2007 : le décret n° 2007-1406 l'énonce pour calculer le supplément qu'il appelle [@decret2007-1406, art. 6 à 11]. Le partage du reste du bloc entre maternité et décès n'est fixé par aucun texte identifié ; chaque régime le signale avec sa ventilation (@sec-cot-prive). Dans le régime général, les indemnités de maladie et de maternité et le décès reçoivent 0,85 et 0,65 point du taux global, sans texte identifié non plus (@tbl-ventilation-rsna).
+
+## Le secteur public {#sec-cot-maladie-public}
+
+Les agents affiliés à la CNRPS cotisent au régime de base d'assurance maladie selon une montée en charge propre, de 3 % au 1^er^ juillet 2007 à 4,88 % au 1^er^ juillet 2008 et 6,75 % au 1^er^ juillet 2009, répartis entre l'employeur et l'agent [@decret2007-1406, art. 4] (@tbl-cnrps-maladie). Les pensionnés de la caisse cotisent sur leur pension, selon un calendrier distinct (@sec-cot-pensionnes).
+
+```{python}
+#| echo: false
+#| output: asis
+table("cnrps_maladie",
+      "Cotisation d'assurance maladie des agents affiliés à la CNRPS, 2007-2009",
+      "tbl-cnrps-maladie")
+```
+
+<!-- TODO (documentaliste) : reporter la répartition employeur/agent de l'art. 4 du décret n° 2007-1406 (lu à l'image, p. 2157, d'après la note de la référence), et établir la cotisation maladie des agents publics avant 2007. -->
+
+## La réforme de 2004 {#sec-cot-maladie-2004}
+
+La loi n° 2004-71 du 2 août 2004 institue le régime de base d'assurance maladie [@loi2004-71] et fixe à 6,75 % la cotisation qui le finance. Le décret n° 2007-1406 du 18 juin 2007 organise sa montée en charge et, pour le régime général, la décompose en une part de 4,75 % prélevée sur le taux global de la loi n° 60-30 et un supplément appelé par paliers.
+
+| Depuis | Total maladie | Employeur | Salarié |
+|---|---:|---:|---:|
+| 1^er^ juillet 2007 | 5,32 % | 4,00 | 1,32 |
+| 1^er^ juillet 2008 | 6,04 % | 4,00 | 2,04 |
+| 1^er^ juillet 2009 | 6,75 % | 4,00 | 2,75 |
+
+: Montée en charge de la cotisation d'assurance maladie dans le régime général {#tbl-amu-rsna}
+
+Le décret entre en vigueur « à compter du premier juillet 2007 » (art. 16) : c'est l'une des rares séries dont chaque palier est expressément daté par son texte. Le supplément de 0,57 point du premier palier est mis à la charge de l'employeur ; les deux paliers suivants sont, selon les termes du décret, « supportés en totalité par le salarié ».
+
+Les autres régimes suivent chacun leur calendrier, fixé par un article propre du décret.
+
+| Régime | Article | Part maladie du taux global | 2007 | 2008 | 2009 | 2010 | 2011 |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Salariés non agricoles | art. 6 | 4,75 % | 5,32 % | 6,04 % | 6,75 % | | |
+| Salariés agricoles | art. 7 | 0,91 % | 1,58 % | 2,88 % | 4,17 % | 5,46 % | 6,75 % |
+| Salariés agricoles, régime amélioré | art. 8 | 2,28 % | 2,90 % | 4,19 % | 5,47 % | 6,75 % | |
+| Tunisiens à l'étranger | art. 9 | 4,10 % | 4,99 % | 5,87 % | 6,75 % | | |
+| Travailleurs non salariés | art. 10 | 3,04 % | 3,97 % | 4,90 % | 5,83 % | 6,75 % | |
+| Artistes, créateurs et intellectuels | art. 11 | 3,04 % | 3,97 % | 4,90 % | 5,83 % | 6,75 % | |
+| Agents de la CNRPS | art. 4 | sans objet | 3 % | 4,88 % | 6,75 % | | |
+| Pensionnés de la CNRPS | art. 12 et 13 | sans objet | 1 % | 2 % | 3 % | 4 % | |
+
+: Cotisation d'assurance maladie appelée au 1^er^ juillet de chaque année par le décret n° 2007-1406, par régime {#tbl-amu-regimes}
+
+Source : décret n° 2007-1406 [@decret2007-1406, art. 4 et 6 à 13].
+
+La loi n° 2004-71 confie à la Caisse nationale d'assurance maladie, outre le régime qu'elle institue, la gestion des régimes de réparation des accidents du travail des secteurs public et privé et le service des indemnités de maladie et de couches prévues par les régimes antérieurs [@loi2004-71, art. 8]. La CNSS cesse d'encaisser les cotisations correspondantes, ce qui explique la rupture que présente la série de ses recettes (@fig-cotisations-cnss).
+
+## La longue période {#sec-cot-maladie-longue-periode}
+
+Jusqu'en 2007, la maladie est financée, dans chaque régime, par une fraction de son taux global (@tbl-assurances-sociales). Le décret n° 2007-1406 porte la cotisation de six régimes du secteur privé et des agents publics au même niveau de 6,75 %, par des calendriers étalés de 2007 à 2011 (@tbl-amu-regimes). Le régime des travailleurs à faibles revenus, que le décret ne vise pas, reste à ses 2,5 points de prestations de soins.
+
+Avant la loi n° 2004-71, le bloc « assurances sociales » du taux global ne finance pas seulement des prestations servies aux assurés : une part en va au système public de santé. Les emplois de la branche dans les comptes de la CNSS, de 1990 à 2004, sont exposés dans le livre [« Les caisses de sécurité sociale »](../caisses/index.html#sec-caisses-cnss-assurances-sociales).

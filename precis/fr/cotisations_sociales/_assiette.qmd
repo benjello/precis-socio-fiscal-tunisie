@@ -1,0 +1,114 @@
+# L'assiette {#sec-cot-assiette}
+
+```{python}
+#| echo: false
+#| output: false
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+
+TABLES = Path.cwd() / "tables"
+
+
+def table(nom, legende, label, **options):
+    """Tableau de paramètres : snapshot versionné, régénéré depuis openfisca-tunisia.
+
+    Les valeurs viennent des paramètres du modèle, la colonne « Texte » de leurs
+    références. Régénération : `scripts/generate_cotisations_tables.py`.
+    """
+    print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label, **options))
+
+
+def onglets(panneaux, **options):
+    """Plusieurs tableaux sous des onglets : (titre, nom, légende, label)."""
+    print(ot.markdown_onglets(
+        [(titre, TABLES / f"{nom}.md", legende, label) for titre, nom, legende, label in panneaux],
+        **options))
+```
+
+Deux assiettes coexistent, et la ligne de partage entre elles ne recoupe pas celle des taux.
+
+## Le salaire réel et ses éléments {#sec-cot-salaire-reel}
+
+Dans le **régime général**, l'assiette est le **salaire réellement perçu** — salaire de base et primes — et elle n'est **pas plafonnée**. C'est un trait structurant du système tunisien, qui le distingue de beaucoup de systèmes comparables : le prélèvement y est strictement proportionnel au salaire, sans tranche ni butoir.
+
+Au secteur public, la contribution de l'agent et celle de l'employeur sont assises sur les éléments permanents de la rémunération, en espèces ou en nature [@loi85-12, art. 10]. Cette assiette s'est élargie à deux reprises avant 1985, en 1973 puis en 1975, dans le même temps que le taux évoluait : l'histoire de la contribution des agents publics en rend compte (@sec-cot-pensions-public). Le livre « Rémunérations publiques » décrit les éléments de la rémunération ; le livre « Retraites », la rémunération qui sert au calcul de la pension.
+
+<!-- TODO (documentaliste) : établir sur texte la définition de l'assiette du régime général
+(quelles primes sont incluses, quel traitement des avantages en nature) : l'article 42 de la loi
+n° 60-30, auquel renvoie le décret n° 95-538, n'a pas été lu. L'article 89 de la loi n° 81-6, qui
+fixe l'assiette du régime agricole amélioré, ne l'a pas été non plus. -->
+
+## Plafonds et limites {#sec-cot-plafonds}
+
+Le régime général ne comporte aucun plafond de cotisation : il cotise sur la totalité du salaire (@sec-cot-salaire-reel). Dans les régimes à assiette forfaitaire, la question ne se pose pas dans les mêmes termes, l'assiette y étant bornée par la classe la plus élevée — coefficient 18 pour les travailleurs non salariés et les artistes, coefficient 9 pour les Tunisiens à l'étranger (@sec-cot-classes).
+
+Le seul plafond que pose un texte est celui que le régime légal de pensions du secteur non agricole retient pour le **calcul des prestations**. Ce n'est pas un plafond de cotisation, mais un plafond de prise en compte du salaire dans la pension. Cette limite de calcul des pensions est fixée à **six fois le SMIG** rapporté à une durée d'occupation annuelle de 2 400 heures dès l'origine [@decret74-499, art. 18], le décret n° 90-1455 l'a reconduite à l'identique [@decret90-1455, art. 1], et le décret n° 94-1429 l'a reprise en précisant qu'il s'agit du SMIG du régime de 48 heures [@decret94-1429, art. 1]. Aucun autre modificatif des articles 18 et 19 du décret n° 74-499 n'est identifié ici. Exprimée en multiple du SMIG, elle se déplace avec lui, et l'assiette du régime complémentaire, qui commence au-delà d'elle (@sec-cot-complementaire), avec elle. Le livre « Retraites » expose cette limite avec le calcul de la pension, ainsi que la fenêtre du salaire de référence à laquelle elle s'applique.
+
+<!-- RECHERCHE r-dec74-499-modificatifs : modificatifs des art. 18 et 19 du décret n° 74-499 (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : lire le JORT n° 58 de 2026 et les numéros suivants — a_faire de la fiche r-dec74-499-modificatifs, qui vaut aussi pour le livre « Retraites ». -->
+
+## Les assiettes forfaitaires {#sec-cot-forfaitaires}
+
+Dans les autres régimes du secteur privé, l'assiette est **forfaitaire** : elle n'est pas le revenu de l'assuré mais un montant conventionnel, exprimé en multiples du [salaire minimum](#g-smig) interprofessionnel garanti ou du salaire minimum agricole garanti (SMAG). Le mécanisme prend trois formes. Pour les salariés agricoles, le SMAG rapporté à quarante-cinq jours par trimestre, affecté d'un coefficient selon la spécialité de l'ouvrier (loi n° 81-6, art. 18). Pour les travailleurs non salariés, les artistes et les Tunisiens à l'étranger, un système de **classes de revenu** : l'assuré est réputé percevoir le revenu de la classe dans laquelle il est placé, sans pouvoir descendre en dessous de la classe minimale attachée à son activité, avec faculté d'opter pour une classe supérieure et changement possible au 1^er^ janvier suivant. Pour les travailleurs à faibles revenus enfin, une assiette unique égale aux **deux tiers** du SMIG ou du SMAG.
+
+### Les classes de revenu {#sec-cot-classes}
+
+Pour les travailleurs non salariés, les cotisations sont assises sur un **revenu forfaitaire** : le SMIG du régime de 48 heures rapporté à 2 400 heures par an dans le secteur non agricole, le SMAG rapporté à 300 jours par an dans le secteur agricole, affectés du coefficient de la classe où l'assuré est placé — dix classes, de 1 à 18 fois le revenu de référence [@decret95-1166, art. 7]. L'assuré ne peut être placé dans une classe inférieure à celle qui correspond à son activité, mais peut opter pour une classe supérieure ; le changement ne prend effet qu'au 1^er^ janvier suivant.
+
+Pour les artistes, créateurs et intellectuels, le **décret n° 2003-894 du 21 avril 2003** [@decret2003-894] retient un revenu forfaitaire, produit d'un coefficient de classe par le SMIG de 48 heures rapporté à 2 400 heures par an, sans pouvoir être inférieur à deux fois ce SMIG. Les dix classes vont du coefficient 2 au coefficient 18. Les cotisations sont trimestrielles.
+
+Pour les Tunisiens à l'étranger, l'assiette est forfaitaire, produit d'un coefficient de classe par le SMIG de 48 heures rapporté à 2 400 heures par an, l'assuré se plaçant à son choix dans l'une des quatre classes de coefficient 2, 4, 6 ou 9 [@decret89-107, art. 6]. Les coefficients des trois régimes sont rassemblés au @tbl-classes-revenu.
+
+```{python}
+#| echo: false
+#| output: asis
+table("classes_revenu",
+      "Classes de revenus des régimes à assiette forfaitaire, en multiples du salaire minimum",
+      "tbl-classes-revenu")
+```
+
+### Le salaire minimum agricole {#sec-cot-smag}
+
+Pour les salariés agricoles, l'assiette est le SMAG rapporté à quarante-cinq jours par trimestre, affecté d'un coefficient de 1 pour l'ouvrier ordinaire, 1,5 pour l'ouvrier spécialisé et 2 pour l'ouvrier qualifié ; toute période de travail égale ou supérieure à quarante-cinq jours chez le même employeur est comptée pour un trimestre [@loi81-6, art. 18].
+
+Le régime agricole amélioré a son assiette propre, fixée par l'article 89 de la loi n° 81-6. Pour les pêcheurs indépendants et les petits armateurs, qui en relèvent, le décret n° 90-548 la fixe au SMAG rapporté à soixante-quinze jours par trimestre [@decret90-548].
+
+Pour les non-salariés du secteur agricole, la durée de référence de 300 jours par an (@sec-cot-classes) a été précédée d'une période transitoire : le décret n° 96-1797 rapporte les cotisations et les prestations au SMAG de 180 jours par an jusqu'à la fin de 1996, de 260 jours en 1997 et de 300 jours à compter du 1^er^ janvier 1998 selon le texte arabe, qui fait foi — le 1^er^ décembre 1998 selon l'édition française. Le livre « Retraites » en donne le détail.
+
+<!-- TODO (bibliographe) : la clé decret-96-1797 n'existe que dans precis/{fr,ar}/retraites/references.json ; la verser au fonds commun pour la citer ici (art. 1). -->
+
+### Les assiettes réduites {#sec-cot-reduites}
+
+Pour les travailleurs à faibles revenus, l'assiette est fixée par l'article 7 de la loi n° 2002-32 aux **deux tiers** du SMAG pour trois des catégories du régime et aux deux tiers du SMIG pour les deux autres, quel que soit le revenu effectif de l'affilié [@loi2002-32, art. 7]. L'article 13 du décret n° 2002-916 en précise la mensualisation — deux tiers du SMIG de 48 heures rapporté à 200 heures par mois, ou deux tiers du SMAG rapporté à 25 jours par mois [@decret2002-916, art. 13]. Ces deux tiers sont une assiette, non un plafond : ils valent pour tous les affiliés (@sec-cot-rtfr).
+
+Depuis 2020, l'auto-entrepreneur peut adhérer au régime des travailleurs non salariés moyennant une cotisation de 11 % du SMAG ou du SMIG, 4 % pour les retraités, une classe supérieure restant possible [@decretloi2020-33, art. 7].
+
+Le régime des étudiants échappe à la notion même d'assiette : sa cotisation est un montant forfaitaire annuel, qui ne dépend d'aucun revenu (@sec-cot-etudiants).
+
+## L'assiette des pensionnés {#sec-cot-assiette-pensionnes}
+
+Les pensionnés de la CNRPS cotisent sur leur pension : le décret n° 2007-1406 assied leur cotisation sur « le montant brut de la pension » [@decret2007-1406, art. 2] ; son taux et ce qui l'a précédé sont exposés avec ce régime (@sec-cot-pensionnes).
+
+La pension du secteur public supporte aussi, depuis 2002, une contribution au titre de la péréquation : l'article 86 de la loi de finances pour 2002 la rend due par le bénéficiaire « durant toute la période de service de la pension et ses accessoires », celle de l'employeur ne l'étant que sur 36 mois [@loi2001-123-lf2002, art. 86 et 97]. Chaque augmentation transmise à la pension par la péréquation donne ainsi lieu à une contribution prélevée sur celle-ci ; le livre « Retraites » l'expose avec la revalorisation des pensions.
+
+## Les assiettes, régime par régime {#sec-cot-assiettes-synthese}
+
+| Régime | Assiette | Texte |
+|---|---|---|
+| Salariés non agricoles | salaire réellement perçu, sans plafond | loi n° 60-30 |
+| Salariés agricoles | SMAG × 45 jours par trimestre, affecté d'un coefficient de 1, 1,5 ou 2 selon la qualification | [@loi81-6, art. 18] |
+| Salariés agricoles, régime amélioré | assiette de l'article 89 de la loi n° 81-6 ; pour les pêcheurs indépendants et les petits armateurs, SMAG × 75 jours par trimestre | [@decret90-548] |
+| Travailleurs non salariés | classe de revenu : 1 à 18 fois le SMIG × 2 400 heures ou le SMAG × 300 jours | [@decret95-1166, art. 7] |
+| Artistes, créateurs et intellectuels | classe de revenu : 2 à 18 fois le SMIG × 2 400 heures | [@decret2003-894] |
+| Travailleurs à faibles revenus | deux tiers du SMIG ou du SMAG | [@loi2002-32, art. 7 ; @decret2002-916, art. 13] |
+| Tunisiens à l'étranger | classe de revenu : 2, 4, 6 ou 9 fois le SMIG × 2 400 heures | [@decret89-107, art. 6] |
+| Étudiants | aucune : cotisation forfaitaire annuelle | [@decret2003-1544] |
+| Agents publics (CNRPS) | éléments permanents de la rémunération | [@loi85-12, art. 10] |
+| Pensionnés de la CNRPS | montant brut de la pension | [@decret2007-1406, art. 2] |
+| Régime complémentaire | fraction du salaire excédant la limite de calcul des pensions du régime légal | [@arrete-1978-11-18-retraite-complementaire] |
+
+: Assiette des cotisations, par régime {#tbl-assiettes}

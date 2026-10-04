@@ -1,0 +1,96 @@
+# Les accidents du travail et les maladies professionnelles {#sec-cot-at}
+
+```{python}
+#| echo: false
+#| output: false
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+
+TABLES = Path.cwd() / "tables"
+
+
+def table(nom, legende, label, **options):
+    """Tableau de paramètres : snapshot versionné, régénéré depuis openfisca-tunisia.
+
+    Les valeurs viennent des paramètres du modèle, la colonne « Texte » de leurs
+    références. Régénération : `scripts/generate_cotisations_tables.py`.
+    """
+    print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label, **options))
+
+
+def onglets(panneaux, **options):
+    """Plusieurs tableaux sous des onglets : (titre, nom, légende, label)."""
+    print(ot.markdown_onglets(
+        [(titre, TABLES / f"{nom}.md", legende, label) for titre, nom, legende, label in panneaux],
+        **options))
+```
+
+## Avant 1994 {#sec-cot-at-avant-1994}
+
+La loi n° 94-28 remplace la loi n° 57-73, qu'elle abroge à compter du 1^er^ janvier 1995 [@loi94-28, art. 107]. Le financement de la réparation sous l'empire de la loi de 1957 n'est pas exposé ici.
+
+<!-- TODO (documentaliste) : établir le financement de la réparation des accidents du travail sous la loi n° 57-73 (la clé loi57-73 n'existe que dans precis/{fr,ar}/prestations_sociales/references.json : à verser au fonds commun). -->
+
+## La loi n° 94-28 {#sec-cot-at-94-28}
+
+La loi n° 94-28 institue le régime de réparation des préjudices résultant des accidents du travail et des maladies professionnelles, dont le champ personnel est le plus large de tout le système [@loi94-28, art. 4]. Sa cotisation est fixée par le décret n° 95-538 du 1^er^ avril 1995, qui l'assied sur les salaires de l'article 42 de la loi n° 60-30 [@decret95-538, art. 3] et entre en vigueur, rétroactivement, le 1^er^ janvier 1995 [@decret95-538, art. 28] — le jour même où la loi de 1957 cesse de s'appliquer. La gestion du régime, confiée d'abord à la CNSS, passe à la CNAM par l'article 8 de la loi n° 2004-71, sans que la loi de 1994 soit modifiée [@loi2004-71, art. 8].
+
+::: {.callout-warning title="Le point « accidents du travail » n'est pas la cotisation d'accidents du travail"}
+La ligne « accidents du travail » du tableau de ventilation du taux global (@tbl-ventilation-rsna) vaut 1 point : c'est le point transféré du taux global de la loi n° 60-30 au régime de réparation institué par la loi n° 94-28, réparti selon la clé 13/5. Ce n'est **pas** le taux de la cotisation d'accidents du travail et de maladies professionnelles proprement dite, qui s'ajoute à ce prélèvement, est **entièrement patronale**, et varie selon l'activité de l'entreprise.
+
+L'article premier du décret n° 95-538 du 1^er^ avril 1995 [@decret95-538] fixait en effet ce taux, à l'origine, par **dix-huit classes d'activité**, de 0,60 % pour les services de bureaux à 7,20 % pour les industries extractives ; l'article 2, opérant le transfert du point, ramenait l'échelle à **0,50 % pour les services de bureaux et 5 % pour les industries extractives**. La réduction n'est pas uniforme d'une classe à l'autre — un dixième de point pour la première, plus de deux points pour la dernière : le « point » transféré est un agrégat, non un abattement appliqué classe par classe. Le total patronal du régime général était donc à majorer, selon l'activité, de 0,50 à 5 points de 1995 à 1999, et l'est de 0,40 à 4 points depuis le 1^er^ avril 1999 (@sec-cot-at-99-1010).
+:::
+
+## Le décret n° 99-1010 {#sec-cot-at-99-1010}
+
+Le décret n° 99-1010 du 10 mai 1999 abroge les articles 1^er^ et 2 du décret n° 95-538, ainsi que le second paragraphe de son article 4, et les remplace à compter du 1^er^ avril 1999 [@decret99-1010, art. 1^er^ et 2]. La structure de l'échelle est conservée — un taux de cotisation au régime par secteur d'activité à l'article premier, un taux des employeurs affiliés à la CNSS après transfert du point à l'article 2 —, mais la nomenclature est refondue : les dix-huit classes de 1995 deviennent trente-sept secteurs, dont onze sont subdivisés, soit quatre-vingt-deux taux. Avant transfert du point, ils vont de 0,50 % pour les services de bureaux à 6 % pour les transports terrestres, la manutention et l'entreposage, et les auto-écoles ; après transfert, de 0,40 % à 4 % pour les mêmes secteurs (@tbl-atmp-1999).
+
+```{python}
+#| echo: false
+#| output: asis
+onglets([
+    ("Depuis le 1^er^ avril 1999", "atmp_1999",
+     "Taux de cotisation au régime de réparation des accidents du travail et des maladies professionnelles par secteur d'activité, avant et après transfert du point du régime général, à compter du 1^er^ avril 1999 [@decret99-1010, art. 1^er^ et 2]",
+     "tbl-atmp-1999"),
+    ("1995-1999", "atmp_1995",
+     "Taux de cotisation au régime de réparation des accidents du travail et des maladies professionnelles par classe d'activité, avant et après transfert du point du régime général, du 1^er^ janvier 1995 au 31 mars 1999 [@decret95-538, art. 1^er^, 2 et 28]",
+     "tbl-atmp-1995"),
+], arborescence=True, colonnes='tbl-colwidths="[8,52,20,20]"')
+```
+
+Les deux éditions du texte ne nomment pas toujours le même secteur : le point 14-3 vise « l'industrie du cuir » dans l'édition française et l'industrie de la chaussure (صناعة الأحذية) dans l'édition arabe, qui fait foi ; le taux est le même.
+
+Le même article réécrit la cotisation forfaitaire due, dans le secteur agricole non régi par la loi n° 89-73 et pour les pêcheurs payés à la part sur des bateaux de moins de trente tonnes, au titre des travailleurs dont le salaire n'excède pas deux fois le salaire minimum agricole garanti — l'employeur pouvant opter, irrévocablement, pour les salaires effectifs [@decret95-538, art. 4] : elle passe de 1 % à 0,80 % du salaire minimum agricole garanti journalier, affecté d'un coefficient de 1,5 et multiplié par un nombre de journées de travail fixé par type de culture ou d'activité, dont le tableau est révisé [@decret95-538, art. 4 ; @decret99-1010, art. 1^er^].
+
+<!-- TODO (rédacteur) : présenter les autres cotisations forfaitaires du décret n° 95-538 — chauffeurs de louage et de taxis, employés de maison, travailleurs temporaires (art. 5 à 7) — et la modulation des taux (art. 10 à 27). Le modèle ne les porte pas : openfisca-tunisia#471. -->
+
+## La longue période {#sec-cot-at-longue-periode}
+
+Deux échelles se succèdent : celle du décret n° 95-538, du 1^er^ janvier 1995 au 31 mars 1999 (@tbl-atmp-1995), et celle du décret n° 99-1010, depuis le 1^er^ avril 1999 (@tbl-atmp-1999). Leurs nomenclatures ne se recoupent qu'en partie : certaines classes de 1995 se retrouvent à l'identique en 1999 (services de bureaux, agriculture et pêche, industries extractives) ou s'y éclatent en sous-secteurs (commerce, textile, cuir et chaussures, transport et manutention) ; d'autres n'ont pas d'équivalent évident (industrie du froid, industries alimentaires diverses), et les services ajoutés en 1999 — gardiennage, hôtellerie, agences de voyage, location de main-d'œuvre ou de voitures, activités sportives — n'avaient pas de classe propre en 1995 (@fig-atmp-echelles). Aucun texte modifiant l'échelle de 1999 n'est identifié ici.
+
+```{python}
+#| label: fig-atmp-echelles
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import atmp_echelles as ae
+import figtools
+figtools.figure_tabs(
+    ae.fig_echelles(), ae.table_echelles(), "atmp-echelles-1995-1999",
+    slug="fig_atmp_echelles",
+    caption="Taux de cotisation d'accidents du travail des employeurs affiliés à la CNSS, après transfert du point du régime général : échelle de 1995 et échelle de 1999, classe par classe",
+    note_lecture=(
+        "**Chaque ligne est une classe de 1995.** Le rond creux donne son taux du 1^er^ janvier 1995 "
+        "au 31 mars 1999 ; un trait relie les taux extrêmes quand la classe est subdivisée. Les ronds "
+        "pleins donnent, depuis le 1^er^ avril 1999, les taux des secteurs qui la reprennent à l'évidence "
+        "— même libellé, ou sous-secteurs qui en reprennent les termes. Cette correspondance est une "
+        "lecture, non un texte. La dernière ligne regroupe les taux de 1999 qu'aucune classe "
+        "de 1995 ne rejoint. Les taux d'avant le transfert du point figurent aux tableaux."))
+```
+
+<!-- RECHERCHE r-atmp-echelle-modificatifs : modificatif de l'échelle des taux AT/MP après le décret n° 99-1010 (voir docs/recherches.yml) -->
+
+Les ressources et les emplois du régime de réparation, de 1995 à 2004, et ceux de la protection sociale des travailleurs, de 1997 à 2004, sont exposés dans le livre [« Les caisses de sécurité sociale »](../caisses/index.html#sec-caisses-cnss-atmp-pst).

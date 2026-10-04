@@ -77,8 +77,8 @@
   - precis/fr/retraites/_secteur_prive.qmd#sec-rsna-calcul
   - precis/fr/retraites/_secteur_prive.qmd#sec-rsna-depuis-2007
   - precis/fr/retraites/_secteur_prive.qmd#sec-rsna-textes-modificatifs
-  - precis/fr/cotisations_sociales/index.qmd#sec-cot-pensions-prive
-  - precis/fr/cotisations_sociales/index.qmd#sec-cot-plafonds
+  - precis/fr/cotisations_sociales/_pensions.qmd#sec-cot-pensions-prive
+  - precis/fr/cotisations_sociales/_assiette.qmd#sec-cot-plafonds
   requetes:
     titres_fts:
     - '"74-499" OR "74 499"'
@@ -494,7 +494,7 @@
 
 - id: r-cotis-rsna-branches
   objet: texte répartissant entre prestations familiales (3,10 %), indemnités de maladie et de maternité (0,85 %) et décès (0,65 %) le solde de 4,60 points du taux global de 18 % du régime des salariés non agricoles
-  ou: [precis/fr/cotisations_sociales/index.qmd#sec-cot-ventilation]
+  ou: [precis/fr/cotisations_sociales/_taux_global.qmd#sec-cot-ventilation]
   requetes:
     titres_like: ['%60-30%']
   passes:
@@ -510,7 +510,7 @@
 
 - id: r-cotis-rsa-assurances-sociales
   objet: texte ventilant entre maladie, maternité et décès les 1,20 % d'assurances sociales du régime des salariés agricoles (décret n° 81-224, art. 1er), au-delà de la part maladie de 0,91 % (décret n° 2007-1406)
-  ou: [precis/fr/cotisations_sociales/index.qmd#sec-cot-rsa]
+  ou: [precis/fr/cotisations_sociales/_regimes.qmd#sec-cot-rsa]
   requetes:
     titres_fts: ['"81-224"']
     depuis: 1981-02-27
@@ -525,7 +525,7 @@
 
 - id: r-cotis-rsaa-art90
   objet: décret répartissant entre les branches le taux global de 15 % du régime agricole amélioré (loi n° 81-6, art. 90, ajouté par la loi n° 89-73), pour l'ensemble du régime
-  ou: [precis/fr/cotisations_sociales/index.qmd#sec-cot-rsaa]
+  ou: [precis/fr/cotisations_sociales/_regimes.qmd#sec-cot-rsaa]
   requetes:
     titres_like: ['%agricole%cotisation%', '%cotisation%agricole%']
     depuis: 1989-09-05
@@ -542,7 +542,7 @@
 
 - id: r-cotis-rtte-assurances-sociales
   objet: texte ventilant entre maladie, maternité et décès les 5,40 % d'assurances sociales du régime des Tunisiens à l'étranger (décret n° 89-107, art. 7), au-delà de la part maladie de 4,10 % (décret n° 2007-1406)
-  ou: [precis/fr/cotisations_sociales/index.qmd#sec-cot-rtte]
+  ou: [precis/fr/cotisations_sociales/_regimes.qmd#sec-cot-rtte]
   requetes:
     titres_fts: ['"89-107"']
     depuis: 1989-01-17
@@ -657,7 +657,7 @@
 
 - id: r-atmp-echelle-modificatifs
   objet: texte modifiant, après le décret n° 99-1010, l'échelle des taux de cotisation au régime de réparation des accidents du travail et des maladies professionnelles (articles 1er et 2 nouveaux du décret n° 95-538)
-  ou: [precis/fr/cotisations_sociales/index.qmd#sec-cot-at-longue-periode]
+  ou: [precis/fr/cotisations_sociales/_accidents_travail.qmd#sec-cot-at-longue-periode]
   requetes:
     titres_like: ['%95-538%', '%99-1010%', '%accidents du travail%taux%', '%accidents du travail%cotisation%']
     depuis: 1999-05-18

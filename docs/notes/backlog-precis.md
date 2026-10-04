@@ -256,6 +256,28 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 
 ## Cotisations sociales
 
+- **Découpé en chapitres le 4 octobre 2026** (déplacement seul, aucune valeur changée, ancres
+  gardées) : `index.qmd` (« Présentation » : introduction, conventions, présentation générale,
+  encadré des caisses), `_assiette.qmd`, `_taux_global.qmd`, partie « Les branches, une à une »
+  (`_branches.qmd`, `#sec-cot-branches`) — `_pensions.qmd`, `_maladie.qmd`,
+  `_accidents_travail.qmd`, `_autres_branches.qmd` (famille, emploi et fonds spécial,
+  complémentaire ; ancre nouvelle `#sec-cot-autres-branches`) —, `_regimes.qmd`, `_bilan.qmd` ;
+  annexes `_notations.qmd`, `_textes_modificatifs.qmd`. L'ancre `#sec-cot-annexes`, que rien ne
+  visait, a disparu. Les liens des autres livres sont redirigés vers les nouvelles pages, **sauf
+  ceux du livre des caisses**, restructuré en parallèle, à corriger après fusion : huit liens de
+  `_comptes_regimes.qmd`, `_etat_caisses.qmd` et `_comptes_longue_periode.qmd` visent encore
+  `cotisations_sociales/index.html#…` (`sec-cot-taux-unique`, `sec-cot-ventilation` →
+  `_taux_global.html` ; `tbl-quote-part-rsna` → `_pensions.html` ;
+  `fig-cotisations-branches-1990-2004` ×2 → `_bilan.html` ; `sec-cot-fonds-special`,
+  `sec-cot-protection-sociale` → `_autres_branches.html` ; `sec-cot-cnrps-employeur` →
+  `_regimes.html`).
+- **Arabe — à faire à la livraison de la traduction** : `precis/ar/cotisations_sociales/_quarto.yml`
+  ne déclare encore que `index.qmd`, à dessein (déclarer des fichiers absents casserait le rendu).
+  Quand la passe de traduction livre les onze nouveaux fichiers, y déclarer les mêmes chapitres,
+  la partie `_branches.qmd` et les annexes, puis rendre le livre arabe. D'ici là, le livre arabe
+  sert l'ancien `index.qmd` d'un seul tenant ; si la passe réécrit d'abord `ar/index.qmd` en
+  version courte, le contenu des chapitres manquera au livre arabe jusqu'à leur déclaration.
+
 - **Les caisses ont quitté ce livre le 4 octobre 2026** : cadre comptable et budgétaire, et les
   trois figures de la rétrospective CNSS par régime et par branche, dans le livre « Les caisses de
   sécurité sociale » (voir sa section ci-dessous). Ce livre garde le prélèvement, dont

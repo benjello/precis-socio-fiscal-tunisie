@@ -113,6 +113,28 @@ Fiche courte par régime : qui paie, sur quelle assiette, ce qui déroge, tablea
 ### Annexes
 - Notations du livre (κ, etc.) ; textes modificatifs par branche
 
+## Découpage en chapitres (4 octobre 2026)
+
+Le livre ne tient plus en un seul `index.qmd`. Chaque partie du sommaire ci-dessus est devenue un
+chapitre, les branches une partie Quarto à quatre chapitres :
+
+| Fichier | Contenu | Ancre de tête |
+|---|---|---|
+| `index.qmd` | « Présentation » : introduction, conventions, partie 1 | `#sec-cot-presentation` (section) |
+| `_assiette.qmd` | partie 2 | `#sec-cot-assiette` |
+| `_taux_global.qmd` | partie 3 | `#sec-cot-taux-global` |
+| `_branches.qmd` (partie) | chapeau de la partie 4 | `#sec-cot-branches` |
+| `_pensions.qmd` | 4.1 | `#sec-cot-pensions` |
+| `_maladie.qmd` | 4.2 | `#sec-cot-maladie` |
+| `_accidents_travail.qmd` | 4.4 | `#sec-cot-at` |
+| `_autres_branches.qmd` | 4.3, 4.5, 4.6 (famille, emploi, complémentaire) | `#sec-cot-autres-branches` |
+| `_regimes.qmd` | partie 5 | `#sec-cot-regimes` |
+| `_bilan.qmd` | partie 6 | `#sec-cot-bilan` |
+| `_notations.qmd`, `_textes_modificatifs.qmd` | annexes | `#sec-cot-notations`, `#sec-cot-textes` |
+
+Les prestations familiales passent, dans l'ordre de lecture, après les accidents du travail : elles
+forment avec l'emploi et la complémentaire le chapitre des « autres branches ».
+
 ## Méthode
 
 - Contrôle de non-perte avant/après : citations (clé + locator), ancres `{#…}`, appels
