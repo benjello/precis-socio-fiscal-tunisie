@@ -1511,10 +1511,10 @@ entries:
   - id: regime-forfaitaire
     acronyme: null
     statut: valide
-    references: [code-irpp-is-1990, lf-1993, lf-2014]
+    references: [code-irpp-is-1990, lf-1993, lf-1999, lf-2011, lf-2014, lf-2016]
     source_definition: {ref: code-irpp-is-1990, locator: "art. 44, § IV"}
     source_traduction: {ref: lf-2014, locator: "art. 45"}
-    voir_aussi: [regime-estimatif-optionnel, minimum-impot, irpp]
+    voir_aussi: [regime-forfaitaire-optionnel, minimum-impot, irpp]
     fr:
       terme: Régime forfaitaire d'imposition
       definition: >
@@ -1535,14 +1535,14 @@ entries:
         الفصول من 44 مكرّر إلى 44 سادسا.
       synonymes: [نظام الضريبة التقديرية]
 
-  - id: regime-estimatif-optionnel
+  - id: regime-forfaitaire-optionnel
     acronyme: null
     statut: provisoire
     references: [lf-2026]
     source_definition: {ref: lf-2026, locator: "art. 91"}
     voir_aussi: [regime-forfaitaire, irpp, minimum-impot]
     fr:
-      terme: Régime estimatif optionnel
+      terme: Régime forfaitaire optionnel
       definition: >
         Régime ouvert sur option, ajouté à l'article 44 ter du code par
         l'article 91 de la loi de finances pour 2026, aux contribuables dont le

@@ -2997,3 +2997,17 @@ absentes de Zotero 55.
 - [x] `decretloi70-1` (AR) : 1186-1187 → 1300-1301 (édition arabe, JORT n° 43/1970).
 - [ ] `loi81-70` (AR) : porte encore la pagination française (1789-1798) sur l'URL du fascicule arabe. Seules les pp. 1889-1890 de l'édition arabe (art. 4) ont été lues : établir l'étendue complète de la loi dans l'édition arabe avant de corriger.
 - [ ] Même défaut probable pour d'autres entrées AR du fonds commun dont la pagination vient de `jort_cache` (qui donne la pagination française).
+
+## Passe « Fiscalité — régime forfaitaire de l'IRPP » (04/10/2026) — À REPORTER DANS ZOTERO
+
+Note documentaire : `docs/notes/fiscalite-regime-forfaitaire.md`. Six clés ajoutées à la main
+dans `precis/{fr,ar}/fiscalite/references.json` (provisoires jusqu'au rapatriement, feu vert
+requis) :
+
+- [ ] `lf-2000` — loi n° 99-101 du 31 décembre 1999 (LF 2000), JORT n° 105/1999, art. 54 p. 2748 ; URL `pdf_fr`/`pdf_ar` de jort_cache.
+- [ ] `decret-2014-2939` — JORT n° 69/2014, pp. 2192-2193 (édition française ; jort_cache donne la pagination arabe 2287-2289).
+- [ ] `decret-2022-802` — JORT n° 121/2022, pp. 2998-2999 ; **absent de jort_cache** : URL = `pdf_fr`/`pdf_ar` d'un autre enregistrement du même fascicule (n° 121/2022), vérifiées (200, tailles égales au corpus local).
+- [ ] `dgi-nc-15-2011`, `dgi-nc-27-2016` — notes communes, sans URL publique : chercher l'adresse jibaya.tn.
+- [ ] `dgi-nc-lf2018-art16` — note commune dont le numéro (15/2018 d'après le nom du fichier) n'est pas lu sur pièce : vérifier sur l'original, puis renommer la clé si le numéro est confirmé.
+- [ ] `minfin-cnf-2013-forfait` — diaporama du ministère des Finances (CNF, août 2013, en arabe), document retiré du site : URL Wayback `20170616075036` lue dans le CDX, champs `archive`/`archive_location` posés (FR et AR).
+- [x] `lf-2026` (fonds commun, FR et AR) : note corrigée — article 91 en page 4255 de l'édition arabe (non 4254-4255) ; article 110 (application au 1er janvier 2026) en page 4258.
