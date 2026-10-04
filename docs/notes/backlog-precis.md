@@ -75,6 +75,9 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   - **antécédents** avant 2014 (époque beylicale et coloniale, 1956-2013) non explorés ;
   - **glossaire** : `fonds-de-commerce` reste provisoire, terme français à confirmer dans un
     texte bilingue du JORT ;
+  - **contradiction à trancher (retraites)** : `retraites/_secteur_public.qmd` dit que le
+    DL 2022-79 n'a été publié qu'en arabe ; le fac-similé DGI de l'édition française du JORT
+    n° 141/2022 porte pourtant son art. 12 (p. 3557). Non corrigé ici (autre livre) ;
   - **genèse parlementaire** de l'art. 88 (rejet en commission, suppression puis
     réintroduction en plénière) : presse seulement, hors du corps faute de pièce de l'ARP
     ou du CNRD.

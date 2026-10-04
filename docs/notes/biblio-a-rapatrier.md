@@ -8,7 +8,7 @@
 
 ## Ajouts à la main du 04/10/2026 (fiscalité, impôt sur la fortune)
 
-Deux clés versées dans `precis/fr/fiscalite/references.json` et `precis/ar/fiscalite/references.json`, absentes de Zotero : `dgi-nc-15-2023` et `dgi-nc-13-2026` (notes communes parues en arabe seulement ; titre arabe dans l'entrée AR, titre français traduit dans l'entrée FR). Entrées complétées (notes) : `lf-2014` (art. 55), `lfc-2014` (art. 38), `lf-2023` (art. 23 et 76 ; pagination française établie par le fac-similé DGI, TODO levé ; art. 12 présent dans l'édition française, p. 3557), `lf-2026` (art. 88, 110, note (1)). **`lfc-2014` FR : champ `page` corrigé de 2183-2232 (pagination arabe) en 2095-2142** (sommaire de l'édition française) ; l'entrée AR garde 2183-2232. À répercuter dans Zotero avant toute descente. Source : `docs/notes/fiscalite-impot-fortune.md`, § 9.
+Deux clés versées dans `precis/fr/fiscalite/references.json` et `precis/ar/fiscalite/references.json`, absentes de Zotero : `dgi-nc-15-2023` et `dgi-nc-13-2026` (notes communes parues en arabe seulement ; titre arabe dans l'entrée AR, titre français traduit dans l'entrée FR). Entrées complétées (notes) : `lf-2014` (art. 55), `lfc-2014` (art. 38), `lf-2023` (art. 23 et 76 ; pagination française établie par le fac-similé DGI, TODO levé ; art. 12 présent dans l'édition française, p. 3557), `lf-2026` (art. 88, 110, note (1)). **`lfc-2014` FR : champ `page` corrigé de 2183-2232 (pagination arabe) en 2095-2142** (sommaire de l'édition française) ; l'entrée AR garde 2183-2232. À répercuter dans Zotero avant toute descente. Source : `docs/notes/fiscalite-impot-fortune.md`, § 9. `lf-2014` : art. 95 (date d'application, FR p. 3699) ajouté à la note. `push_biblio.py --verifier` : 563 entrées, 0 perte. Le `dry-run` et le `controle-rangement` du workflow `biblio-zotero` restent à lancer après poussée de la branche.
 
 ## Ajouts à la main du 04/10/2026 (fiscalité, présentation)
 
@@ -1330,7 +1330,9 @@ début en pagination arabe, pour mémoire : 3597 (`lf-2016`), 4699 (`lf-2020`), 
 
 #### Reste à faire
 
-- **`lf-2023` — pagination française non établie.** Le numéro et la date du fascicule sont
+- **`lf-2023` — pagination française non établie** (levé le 04/10/2026 : fac-similé de
+  l'édition française diffusé par la DGI, décret-loi p. 3556 ; voir l'entrée du 04/10/2026
+  en tête de ce fichier). Le numéro et la date du fascicule sont
   désormais **acquis** (JORT n° 141 du 23/12/2022, t. 165, sommaire arabe vérifié + notice
   `jort_cache.db`), ce qui lève la réserve principale du § 11.2. Mais le fascicule français
   est absent en ligne et la copie locale
