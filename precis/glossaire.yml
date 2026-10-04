@@ -1511,7 +1511,7 @@ entries:
   - id: regime-forfaitaire
     acronyme: null
     statut: valide
-    references: [code-irpp-is-1990, lf-1993, lf-2014]
+    references: [code-irpp-is-1990, lf-1993, lf-1999, lf-2011, lf-2014, lf-2016]
     source_definition: {ref: code-irpp-is-1990, locator: "art. 44, § IV"}
     source_traduction: {ref: lf-2014, locator: "art. 45"}
     voir_aussi: [regime-estimatif-optionnel, minimum-impot, irpp]

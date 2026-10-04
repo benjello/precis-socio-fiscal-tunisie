@@ -50,9 +50,10 @@ et a été lu pour l'IRPP. **Ces deux lois ne sont donc plus des textes « absen
 pas confondre l'absence en ligne du fascicule français de 2015 avec celle de son extrait
 français conservé localement.
 
-**OCR ciblé.** Le code fiscal du JORT n° 1 de 1990 (`Jo00190.pdf`) et le texte initial
-de la TVA au JORT n° 39 de 1988 (`Jo03988.pdf`) sont des scans présents localement :
-vérifier les annexes sur l'image après OCR, notamment le tarif de l'annexe II du forfait.
+**OCR ciblé.** Le texte initial de la TVA au JORT n° 39 de 1988 (`Jo03988.pdf`) est un scan
+présent localement : vérifier ses annexes sur l'image après OCR. Le code fiscal du JORT n° 1 de
+1990 a été océrisé le 4 octobre 2026 ; ses annexes II et III (forfait) sont relues à l'image
+(`docs/notes/fiscalite-regime-forfaitaire.md`).
 
 **Rédaction à partir des textes déjà cités, puis vérification des versions.** La TVA
 attend encore trois développements : déductions (art. 9-11), régime suspensif et
@@ -64,6 +65,19 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   envisagée, a été écartée après lecture — voir « Forme des chapitres » plus bas, qui en
   consigne le motif et la leçon.
 - **IRPP** : le minimum d'impôt de l'article 44 § II et le régime forfaitaire sont écrits.
+  Le régime forfaitaire (`#sec-irpp-forfait`) couvre depuis le 4 octobre 2026 toute la
+  chronologie 1990-2026, chaque modificatif lu au JORT (note
+  `docs/notes/fiscalite-regime-forfaitaire.md`). Y restent : la **longue période** (nombre de
+  forfaitaires, produit de l'impôt — collecte des documents de la réforme fiscale 2013-2014 en
+  cours dans `tunisia-data`, aucun chiffre lisible au corpus à ce jour) ; la **relecture
+  arabophone** de l'article 91 de la LF 2026 (lu à l'image, édition arabe seule parue) et
+  l'**arbitrage terminologique** « régime estimatif optionnel » / « régime forfaitaire
+  optionnel » (النظام التقديري الاختياري) ; le **numéro** de la note commune sur l'article 16
+  de la LF 2018 ; les **tableaux faits main** `tbl-irpp-forfait` et `tbl-forfait-annexe-2`, à
+  engendrer quand les paramètres seront sourcés. Textes tous lisibles au corpus local
+  (fascicules de 1990 à 1993 océrisés, ceux de 1999 et 2001 décodés) ; la LF 2016 et la LF 2020
+  se citent en pagination française d'après les extraits locaux, la LF 2023 et la LF 2026 en
+  pagination arabe.
   Restent les tarifs antérieurs de la contribution personnelle d'État, les barèmes
   régionaux de l'évaluation forfaitaire agricole, le plafond de l'assurance-vie entre
   ses deux bornes connues et la contribution au budget de l'État. L'article 16 de la

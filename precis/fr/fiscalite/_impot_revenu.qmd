@@ -168,7 +168,7 @@ table("bareme_1990",
 
 Source : @code-irpp-is-1990, art. 44 § I (JORT n° 1 des 2-5 janvier 1990, p. 9).
 
-La comparaison des deux tableaux donne la mesure de la rupture. Le nombre de tranches passe de dix-huit à six et le taux marginal supérieur de 68 % à 35 %, **en une seule fois et par le code lui-même**. La simplification du barème est donc l'œuvre de la réforme de 1989-1990, et non d'un texte ultérieur : le récit d'une « simplification de 1991 », que l'on rencontre parfois, ne correspond à aucun véhicule législatif — la loi de finances pour la gestion 1991 ne comporte pas une seule occurrence du mot « barème » et ses dispositions relatives au code de l'IRPP et de l'IS visent les articles 45, 52, 54 et 63 [@lf-1991]. Le terme de « simplification » a bien un référent dans la décennie, mais il porte sur d'autres objets : le **régime forfaitaire** du § IV de l'article 44, refondu par l'article 101 de la loi de finances pour 1993 sous l'intitulé « Unification et simplification du régime forfaitaire » [@lf-1993, art. 101], et les **procédures fiscales**, avec la loi n° 98-73 du 4 août 1998 portant simplification des procédures fiscales et réduction des taux de l'impôt, dont le dispositif concerne la plus-value immobilière et les droits d'enregistrement [@loi-98-73].
+La comparaison des deux tableaux donne la mesure de la rupture. Le nombre de tranches passe de dix-huit à six et le taux marginal supérieur de 68 % à 35 %, **en une seule fois et par le code lui-même**. La simplification du barème est donc l'œuvre de la réforme de 1989-1990, et non d'un texte ultérieur : le récit d'une « simplification de 1991 », que l'on rencontre parfois, ne correspond à aucun véhicule législatif — la loi de finances pour la gestion 1991 ne comporte pas une seule occurrence du mot « barème » et ses dispositions relatives au code de l'IRPP et de l'IS visent les articles 45, 52, 54 et 63 [@lf-1991]. Le terme de « simplification » a bien un référent dans la décennie, mais il porte sur d'autres objets : le **régime forfaitaire** du § IV de l'article 44, refondu par les articles 100 à 103 de la loi de finances pour 1993 sous l'intitulé « Unification et simplification du régime forfaitaire » [@lf-1993, art. 100 à 103] (@sec-irpp-forfait), et les **procédures fiscales**, avec la loi n° 98-73 du 4 août 1998 portant simplification des procédures fiscales et réduction des taux de l'impôt, dont le dispositif concerne la plus-value immobilière et les droits d'enregistrement [@loi-98-73].
 
 ## Comment se calcule l'IRPP {#sec-irpp-calcul}
 
@@ -643,7 +643,53 @@ modificatif. Cf. Q9 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
 Le régime réel n'est pas le seul mode d'imposition des personnes physiques. Trois sous-secteurs juridiques coexistent aujourd'hui : le **régime réel**, le **régime forfaitaire** des bénéfices industriels et commerciaux — porté par les articles 44 *bis* à 44 *sexies* du code, issus du transfert opéré par l'article 37 de la loi de finances pour 2011 depuis le § IV de l'article 44 —, et le **régime estimatif optionnel** que l'article 91 de la loi de finances pour 2026 ajoute à l'article 44 *ter* pour les contribuables dont le chiffre d'affaires n'excède pas 100 000 dinars [@lf-2026, art. 91].
 
-## Le régime forfaitaire, refondu en 2011
+## Le régime forfaitaire {#sec-irpp-forfait}
+
+Le [régime forfaitaire](#g-regime-forfaitaire) substitue, pour les plus petites entreprises individuelles des bénéfices industriels et commerciaux, un impôt lu sur le chiffre d'affaires à la détermination du bénéfice réel. Il est aussi ancien que l'IRPP : le code de 1990 le loge au paragraphe IV de l'article 44, avant que la loi de finances pour 2011 ne lui donne une section propre. Son histoire tient en trois mouvements — un forfait d'abord gradué par nature d'activité et par emplois, unifié et resserré dans les années 1990 ; un forfait proportionnel au chiffre d'affaires à partir de 2011 ; un forfait borné dans le temps et remonté par paliers depuis 2016 — auxquels la loi de finances pour 2026 ajoute une option.
+
+### Le forfait du code de 1990
+
+Le paragraphe IV de l'article 44 soumet au régime forfaitaire « les petits exploitants, artisans et commerçants lorsqu'il s'agit d'entreprises individuelles à établissement unique relevant de la catégorie des bénéfices industriels et commerciaux, non importatrices, non exportatrices et non soumises à la taxe sur la valeur ajoutée selon le régime réel » [@code-irpp-is-1990, art. 44]. Le plafond de chiffre d'affaires dépend de la nature de l'activité : 15 000 dinars pour les prestations de services, 20 000 dinars pour la consommation sur place, 30 000 dinars pour la production, la transformation et l'achat en vue de la revente, et 30 000 dinars au total lorsque plusieurs activités sont exercées dans le même établissement.
+
+**Le tarif est double.** Le droit commun est l'« impôt forfaitaire légal » de l'annexe II : un montant en dinars lu dans une grille, selon la tranche de chiffre d'affaires et la nature de l'activité — deux colonnes pour les prestations de services — consommation sur place, jusqu'à 500 dinars, et autres prestations, jusqu'à 600 dinars —, par tranches de 1 000 dinars ; une colonne pour les autres opérations, jusqu'à 700 dinars, par tranches de 2 000 dinars au-delà des deux premiers milliers [@code-irpp-is-1990, annexe II]. Pour l'alimentation générale, les cafés de première catégorie et les coiffeurs pour hommes, les annexes III-1 à III-3 fixent au contraire un « impôt forfaitaire simplifié » établi « d'après des indices professionnels spécifiques se basant sur les postes d'emplois et les zones d'activité » : une grille croisant le nombre d'employés et la zone, des communes de Tunis, Sousse et Sfax aux lieux situés hors des communes [@code-irpp-is-1990, annexes III-1 à III-3]. Aucune des annexes ne précise la période à laquelle se rapportent ses montants.
+
+**L'impôt forfaitaire est définitif ou n'est qu'une avance.** Il est définitif pour les personnes qui ne disposent pas d'autres catégories de revenus et n'ont pas été soumises au régime réel à la suite d'un contrôle fiscal ; pour les autres, comme pour celles qui ne remplissent plus les conditions, il constitue une avance à valoir sur l'impôt sur le revenu. Le régime réel reste ouvert sur option, exercée lors du dépôt de la déclaration [@code-irpp-is-1990, art. 44].
+
+### De 1992 à 2010 : unification et resserrement
+
+Les lois de finances de la décennie récrivent le paragraphe IV à plusieurs reprises. Elles en font converger les seuils, en ajoutent les exclusions, et ramènent à une grille unique ce qui se lisait dans quatre annexes.
+
+**1992 : la structure.** L'article 62 de la loi de finances pour 1992 récrit le paragraphe en trois points : le IV-1 énumère les conditions — auxquelles il ajoute de ne pas être rémunéré par des commissions — et distingue le « forfait légal » de l'annexe II et le « forfait simplifié » des annexes III ; le IV-2 ouvre l'option pour le réel ; le IV-3 règle le caractère définitif de l'impôt. Les seuils sont inchangés [@lf-1992, art. 62]. Faute de clause d'application, la loi, publiée le 31 décembre 1991, est exécutoire le 2 janvier 1992.
+
+**1993 : l'unification.** Sous l'intitulé « Unification et simplification du régime forfaitaire », la loi de finances pour 1993 exclut le commerce de gros et la fabrication de produits à base d'alcool [@lf-1993, art. 100], remplace l'annexe II par une grille unique en dix tranches de 3 000 dinars, sans distinction de nature d'activité, et récrit les grilles des cafés et des coiffeurs [@lf-1993, art. 101] (@tbl-forfait-annexe-2). Elle abaisse le seuil des prestations de services à 12 000 dinars, maintient 30 000 dinars pour la production, la transformation et l'achat-revente, et ne retient plus de seuil propre à la consommation sur place [@lf-1993, art. 102]. Elle rend enfin l'impôt forfaitaire libératoire de la taxe sur la valeur ajoutée [@lf-1993, art. 103]. Faute de clause d'application, la loi, publiée le 31 décembre 1992, est exécutoire le 2 janvier 1993.
+
+**1994-1998 : les conditions.** La loi de finances pour 1994 récrit la liste des conditions, limite le contribuable à un seul véhicule de transport de marchandises ou de transport en commun de personnes et relève à 20 000 dinars le seuil des services [@lf-1994, art. 47]. Celle de 1997 soumet les forfaitaires à trois acomptes provisionnels égaux chacun à 30 % de l'impôt forfaitaire [@lf-1997, art. 28 et 29]. Celle de 1998 exige une activité unique, plafonne la charge utile du véhicule à trois tonnes et demie, et exclut les exploitants qui ont d'autres revenus que ceux de capitaux mobiliers [@lf-1998, art. 31 à 34].
+
+**1999 : le seuil unique et l'option.** La loi de finances pour 1999 ramène tous les seuils à un plafond unique de 30 000 dinars de chiffre d'affaires, abroge le forfait simplifié et les annexes III-1 à III-3, et intitule l'annexe II « tarif de l'impôt forfaitaire » [@lf-1999, art. 59 et 60]. Elle ouvre en même temps une option pour un impôt forfaitaire annuel de 1 500 dinars, définitif, qui ne peut être augmenté qu'en cas de chiffre d'affaires annuel supérieur à 100 000 dinars [@lf-1999, art. 61]. Ses dispositions s'appliquent à compter du 1^er^ janvier 1999.
+
+**2000-2006 : le retrait et les ajustements.** La loi de finances pour 2000 organise le retrait du régime : décision motivée du ministre des finances, en cas de non-respect d'une condition autre que celle du chiffre d'affaires, avec passage au réel le 1^er^ janvier de l'année suivante et recours non suspensif [@lf-2000, art. 54]. Celle de 2002 impose au barème, sans qu'il puisse descendre sous l'impôt forfaitaire, le bénéfice de l'année où le fonds de commerce est cédé, plus-value comprise [@loi2001-123-lf2002, art. 72 et 73]. Celle de 2005 ajoute à la déclaration annuelle les achats, les stocks, les moyens d'exploitation et le loyer du local [@lf-2005, art. 64]. Celle de 2006, enfin, relève de 15 à 25 dinars l'impôt de la première tranche de l'annexe II, de 0 à 3 000 dinars de chiffre d'affaires [@lf-2006, art. 44].
+
+: Tarif de l'impôt forfaitaire de l'annexe II du code, 1993-2010 (impôt annuel en dinars) {#tbl-forfait-annexe-2}
+
+| Chiffre d'affaires (dinars) | Loi de finances pour 1993 | Loi de finances pour 2006 |
+|---|---:|---:|
+| 0 à 3 000 | 15 | 25 |
+| 3 000 à 6 000 | 45 | 45 |
+| 6 000 à 9 000 | 75 | 75 |
+| 9 000 à 12 000 | 120 | 120 |
+| 12 000 à 15 000 | 180 | 180 |
+| 15 000 à 18 000 | 260 | 260 |
+| 18 000 à 21 000 | 360 | 360 |
+| 21 000 à 24 000 | 460 | 460 |
+| 24 000 à 27 000 | 580 | 580 |
+| 27 000 à 30 000 | 700 | 700 |
+
+Sources : loi de finances pour 1993, art. 101 [@lf-1993, art. 101] ; loi de finances pour 2006, art. 44 [@lf-2006, art. 44]. L'annexe II est abrogée par la loi de finances pour 2011 [@lf-2011, art. 37].
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré quand le tarif de l'annexe II (1990,
+1993, 2006) sera daté et sourcé dans la base de paramètres ; voir docs/notes/backlog-modele.md. -->
+
+### La refonte de 2011
 
 Le forfait ne date pas de 2011 : il vivait auparavant au **paragraphe IV de l'article 44**, son tarif étant fixé par une **annexe II** au code. L'article 32 de la loi de finances pour 2011 le sort de là et lui donne une section entière — les articles 44 *bis* à 44 *sexies* —, tandis que l'article 37 abroge d'un même geste le paragraphe IV et l'annexe II, puis remplace dans tous les textes en vigueur la référence à l'ancien siège par la nouvelle [@lf-2011, art. 32 et 37].
 
@@ -653,25 +699,63 @@ Le forfait ne date pas de 2011 : il vivait auparavant au **paragraphe IV de l'ar
 
 **L'impôt forfaitaire est libératoire**, et c'est ce qui en fait un régime et non un mode de calcul : il tient lieu de taxe sur la valeur ajoutée au régime réel, d'impôt sur le revenu au titre des bénéfices industriels et commerciaux, et il comprend la taxe sur les établissements à caractère industriel, commercial ou professionnel. Il redevient déductible pour qui se trouve reclassé au régime réel après vérification [@lf-2011, art. 32].
 
-Le régime estimatif optionnel que la loi de finances pour 2026 ajoute à l'article 44 *ter* s'inscrit dans le même mouvement : il ouvre une troisième voie sous un seuil de 100 000 dinars [@lf-2026, art. 91].
+La même loi reprend, aux articles 44 *quinquies* et 44 *sexies*, l'imposition au barème en cas de cession du fonds de commerce et la procédure de retrait introduites en 2000 et 2002 [@lf-2011, art. 32]. Elle dispense les forfaitaires des acomptes provisionnels et leur offre à la place une avance semestrielle facultative [@lf-2011, art. 35 et 36]. L'impôt forfaitaire optionnel de 1 500 dinars disparaît avec l'ancien paragraphe IV [@lf-2011, art. 37; @dgi-nc-15-2011]. Le passage d'un régime à l'autre se fait à l'exercice : la législation en vigueur au 31 décembre 2010 s'applique encore à l'impôt forfaitaire dû au titre de l'exercice 2010 [@lf-2011, art. 40], et l'administration applique le nouveau régime aux revenus réalisés à partir du 1^er^ janvier 2011 [@dgi-nc-15-2011].
 
-<!-- TODO (vérification) : les articles 56 et 91 de la loi n° 2025-17 (LF 2026) ont été lus sur le fascicule arabe du JORT n° 148 du 12 décembre 2025, l'édition française n'étant pas encore parue. Faire relire par un arabophone avant publication ; l'article 91 n'énonce pas sa date d'effet en années de revenus, à établir sur les dispositions finales de la loi ou une note commune DGI 2026. -->
+### De 2014 à 2026 : un forfait borné, puis une option
 
-<!-- TODO : compléter la chronologie du régime forfaitaire de part et d'autre de 2011.
+**2014-2015 : les exclusions par activité.** La loi de finances pour 2014 exclut du forfait, dans les zones communales, les entreprises qui exercent des activités fixées par décret ; elle relève les planchers de 50 à 75 dinars et de 100 à 150 dinars, et majore de 50 % l'impôt déclaré plus de trente jours après l'expiration du délai [@lf-2014, art. 45]. Le décret n° 2014-2939 dresse la liste de ces activités — industrielles, commerciales et de services — à compter du 1^er^ janvier 2015 [@decret-2014-2939]. La loi de finances pour 2015 soustrait à l'exclusion des personnes rémunérées par commissions les distributeurs agréés des opérateurs de télécommunications [@lf-2015, art. 30].
 
-L'ÉTAT DE 2011 EST ÉTABLI et rédigé ci-dessus, sur l'article 32 de la loi de finances pour 2011,
-lu sur pièce le 20 septembre 2026 dans l'édition française du JORT n° 102 de 2010 : champ,
-huit exclusions, deux seuils, taux, planchers, effet libératoire. Restent les deux bouts.
+**2016 : le seuil unique, le tarif à deux étages et la durée.** La loi de finances pour 2016 porte le plafond à 100 000 dinars pour toutes les activités ; elle n'accorde plus le régime que pour trois ans à compter du dépôt de la déclaration d'existence, renouvelables sur justification de l'éligibilité, les entreprises en activité au 1^er^ janvier 2016 étant réputées créées à cette date ; elle remplace les taux de 2 % et 2,5 % par un tarif à deux étages — un montant fixe de 75 dinars hors zones communales et de 150 dinars ailleurs jusqu'à 10 000 dinars de chiffre d'affaires, et 3 % du chiffre d'affaires entre 10 000 et 100 000 dinars [@lf-2016, art. 17]. Le retrait passe du ministre au directeur général des impôts ou au chef du centre régional de contrôle des impôts [@lf-2016, art. 38]. L'administration applique le nouveau tarif au chiffre d'affaires de l'exercice 2015 pour les forfaitaires déjà en place [@dgi-nc-27-2016].
 
-EN AMONT. Le tarif d'origine est celui de l'ANNEXE II au code, abrogée par l'article 37 de la même
-loi. Son contenu n'est pas établi : il faut lire le code de 1990 au JORT n° 1 des 2-5 janvier 1990,
-qui est un SCAN sans couche texte — océrisation ou lecture à l'image. Les conditions d'éligibilité
-du paragraphe IV de l'article 44, dans sa rédaction antérieure, sont à établir au même endroit.
+**2018-2021 : la durée allongée.** La loi de finances pour 2018 relève le montant fixe à 200 dinars dans les zones communales, en les définissant par leurs limites territoriales antérieures au 1^er^ janvier 2015, ce montant étant réduit de moitié ailleurs, et porte la durée du régime de trois à quatre ans [@lf-2018, art. 16] ; le nouveau montant vaut pour le chiffre d'affaires de 2017 déclaré en 2018 [@dgi-nc-lf2018-art16]. La loi de finances pour 2020 lève la limite de durée pour les entreprises implantées hors des zones communales [@lf-2020, art. 42], et celle de 2021 porte la durée à six ans [@lf-2021, art. 18].
 
-EN AVAL. Les modificatifs postérieurs à 2011 — seuils, taux, mesures de retrait du régime — ne sont
-pas relevés. OBSTACLE MESURÉ le 20 septembre 2026 : les fascicules des lois de finances pour 2016
-(JORT n° 104 de 2015) et pour 2021 (JORT n° 129 de 2020) sont ABSENTS du corpus local ; à
-télécharger sur pist.tn avant toute lecture. Voir docs/notes/todo-localisation.md.
+**2023 : le montant fixe doublé.** Le décret n° 2022-802 allonge, à compter du 1^er^ janvier 2023, les trois listes d'activités exclues dans les zones communales [@decret-2022-802]. La loi de finances pour 2023 porte le montant fixe de 200 à 400 dinars dans les zones communales, soit 200 dinars ailleurs, pour l'impôt forfaitaire dont le délai de déclaration échoit en 2023 et au-delà [@lf-2023, art. 55].
+
+**2026 : l'option.** Le [régime estimatif optionnel](#g-regime-estimatif-optionnel) que la loi de finances pour 2026 ajoute à l'article 44 *ter* s'inscrit dans le même mouvement : il ouvre une troisième voie sous un seuil de 100 000 dinars [@lf-2026, art. 91]. Il est réservé aux personnes qui n'importent pas, n'exercent ni le commerce de gros, ni une activité non commerciale, ni l'intermédiation, et n'ont pas été classées au réel après vérification. L'impôt y est un montant annuel fixe selon la classe de chiffre d'affaires déclaré spontanément — 4 000 dinars jusqu'à 50 000 dinars, 5 000 dinars de 50 001 à 100 000 dinars —, réduit de moitié pour les activités implantées dans les campagnes et les villages ; il est libératoire dans la limite du chiffre d'affaires déclaré, avec un taux de bénéfice net estimé n'excédant pas 25 % de ce chiffre d'affaires. Qui l'a choisi n'est pas soumis à la vérification fiscale pendant six ans, sauf éléments établis d'enrichissement injustifié ou d'activités exclues, et l'option s'étend aux activités que le décret n° 2022-802 avait rattachées au réel [@lf-2026, art. 91]. Les dispositions de la loi s'appliquent à compter du 1^er^ janvier 2026, l'article 91 ne figurant pas parmi les exceptions [@lf-2026, art. 110]. Le texte, paru en arabe seulement, nomme ce régime « النظام التقديري الاختياري », du mot qui désigne le régime forfaitaire lui-même ; « régime estimatif optionnel » en est la traduction retenue ici.
+
+<!-- TODO (vérification) : l'article 91 de la loi n° 2025-17 (LF 2026) a été lu à l'image sur le
+fascicule arabe du JORT n° 148 du 12 décembre 2025, p. 4255, l'édition française n'étant pas
+parue (l'adresse en 2025F sert encore le fichier arabe, vérifié le 4 octobre 2026). Faire relire
+par un arabophone avant publication. Date d'effet établie : article 110 (p. 4258), 1er janvier
+2026. Reste ouvert : l'année de chiffre d'affaires visée par les deux versements (25 avril, 25
+octobre), que l'article ne dit pas — note commune DGI 2026 attendue. TERMINOLOGIE À TRANCHER :
+« النظام التقديري الاختياري » se traduit littéralement « régime forfaitaire optionnel » ; garder
+« régime estimatif optionnel » (chapitre et glossaire) ou l'aligner ? Voir
+docs/notes/fiscalite-regime-forfaitaire.md, § 5. -->
+
+### Seuils et tarifs datés
+
+: Le régime forfaitaire des bénéfices industriels et commerciaux, 1990-2026 : plafonds, tarifs et durée {#tbl-irpp-forfait}
+
+| Texte et application | Plafond de chiffre d'affaires annuel | Impôt | Durée du régime |
+|---|---|---|---|
+| Code de 1990 [@code-irpp-is-1990, art. 44] — revenus 1990 | 15 000 D (services), 20 000 D (consommation sur place), 30 000 D (production, transformation, achat-revente ; activités multiples) | grilles de l'annexe II par nature d'activité, jusqu'à 500, 600 ou 700 D ; grilles des annexes III par emplois et zones | — |
+| Loi de finances pour 1993 [@lf-1993, art. 101 et 102] — exécutoire le 2 janvier 1993 | 12 000 D (services), 30 000 D (autres activités et activités multiples) | grille unique de l'annexe II, de 15 à 700 D (@tbl-forfait-annexe-2) | — |
+| Loi de finances pour 1994 [@lf-1994, art. 47] — 1^er^ janvier 1994 | 20 000 D (services), 30 000 D (autres) | inchangé | — |
+| Loi de finances pour 1999 [@lf-1999, art. 59 à 61] — 1^er^ janvier 1999 | 30 000 D, toutes activités | annexe II, ou sur option 1 500 D définitifs | — |
+| Loi de finances pour 2006 [@lf-2006, art. 44] — 1^er^ janvier 2006 | inchangé | première tranche de l'annexe II : 15 → 25 D | — |
+| Loi de finances pour 2011 [@lf-2011, art. 32; @dgi-nc-15-2011] — revenus 2011 | 100 000 D (achat-revente, transformation, consommation sur place), 50 000 D (services) | 2 % (achat-revente, transformation) ou 2,5 % du chiffre d'affaires ; au moins 50 D hors zones communales, 100 D ailleurs | — |
+| Loi de finances pour 2014 [@lf-2014, art. 45] — 1^er^ janvier 2014 | inchangé | planchers : 50 → 75 D et 100 → 150 D ; majoration de 50 % en cas de dépôt tardif | — |
+| Loi de finances pour 2016 [@lf-2016, art. 17; @dgi-nc-27-2016] — chiffre d'affaires 2015 | 100 000 D, toutes activités | jusqu'à 10 000 D : 75 D hors zones communales, 150 D ailleurs ; de 10 000 à 100 000 D : 3 % | 3 ans |
+| Loi de finances pour 2018 [@lf-2018, art. 16; @dgi-nc-lf2018-art16] — chiffre d'affaires 2017 | inchangé | jusqu'à 10 000 D : 200 D en zone communale, 100 D ailleurs ; 3 % au-delà | 4 ans |
+| Loi de finances pour 2020 [@lf-2020, art. 42] — 1^er^ janvier 2020 | inchangé | inchangé | 4 ans, sans limite hors zones communales |
+| Loi de finances pour 2021 [@lf-2021, art. 18] — 1^er^ janvier 2021 | inchangé | inchangé | 6 ans, sans limite hors zones communales |
+| Loi de finances pour 2023 [@lf-2023, art. 55] — déclarations dues à partir de 2023 | inchangé | jusqu'à 10 000 D : 400 D en zone communale, 200 D ailleurs ; 3 % au-delà | inchangé |
+| Loi de finances pour 2026 [@lf-2026, art. 91 et 110] — 1^er^ janvier 2026 | option sous 100 000 D | sur option : 4 000 D jusqu'à 50 000 D, 5 000 D de 50 001 à 100 000 D, moitié dans les campagnes et villages | prorogation automatique ; pas de vérification pendant six ans |
+
+Sources : celles de chaque ligne. Les montants sont en dinars. La première colonne donne la date d'application énoncée par le texte ou retenue par l'administration ; pour 1993, en l'absence de clause, la date à laquelle la loi est devenue exécutoire.
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré quand les plafonds, taux, montants et
+durées du régime forfaitaire seront datés et sourcés dans la base de paramètres. Écart constaté le
+4 octobre 2026 : voir docs/notes/backlog-modele.md (régime forfaitaire). -->
+
+<!-- TODO (rédacteur) : longue période — nombre de forfaitaires, produit de l'impôt forfaitaire,
+répartition par activité. Une collecte dédiée (consultation nationale sur la réforme fiscale
+2013-2014, présentations du ministère des Finances 2011-2014) est en cours dans
+~/projets/tunisia-data/data/raw/minfinances/reforme_fiscale_2013_2014/ ; compléter ici une
+sous-section « La longue période » à partir de son inventaire, chaque chiffre avec sa source
+(document, date, page ou diapositive). Aucune série n'est dans tunisia-data au 4 octobre 2026
+(recettes_fiscales.xls, indicateurs_fp_*.xls : pas de ligne « forfait »).
 
 MANQUE ENCORE, et c'est un sujet distinct : le régime de la retenue à la source libératoire
 (revenus de capitaux mobiliers notamment), articles du code et série des taux.
@@ -698,46 +782,65 @@ Les sections qui précèdent suivent chacune un élément de l'impôt. Le tablea
 | Texte | Effet | Élément touché | Ce qui change (avant → après) | Détail |
 |---|---|---|---|---|
 | **Loi n° 89-114** et code annexé [@loi-irpp-is-1989; @code-irpp-is-1990] | revenus 1990 | institution de l'impôt | impôts cédulaires et contribution personnelle d'État → IRPP ; barème : 18 tranches et 68 % au-delà de 80 000 D → 6 tranches et 35 % au-delà de 50 000 D | @sec-irpp-institution |
-| **Loi de finances pour 1998** (loi n° 97-88), art. 45 [@lf-1998, art. 45] | — | minimum d'impôt (art. 44 § II) | plafond du minimum de 0,5 % du chiffre d'affaires : 500 → 1 000 D | @sec-irpp-minimum |
+| **Loi de finances pour 1992** (loi n° 91-98), art. 62 [@lf-1992, art. 62] | 2 janvier 1992 (exécutoire) | régime forfaitaire (art. 44 § IV) | § IV récrit : exclusion des entreprises rémunérées par des commissions ajoutée ; forfait légal (annexe II) et forfait simplifié (annexes III) distingués ; seuils inchangés | @sec-irpp-forfait |
+| **Loi de finances pour 1993** (loi n° 92-122), art. 100 à 103 [@lf-1993, art. 100 à 103] | 2 janvier 1993 (exécutoire) | régime forfaitaire (art. 44 § IV, annexes II et III) | grilles de l'annexe II par nature d'activité → grille unique de 15 à 700 D ; seuil des services : 15 000 → 12 000 D ; commerce de gros et alcool exclus ; impôt libératoire de la TVA | @sec-irpp-forfait |
+| **Loi de finances pour 1994** (loi n° 93-125), art. 47 [@lf-1994, art. 47] | 1^er^ janvier 1994 | régime forfaitaire (art. 44 § IV) | seuil des services : 12 000 → 20 000 D ; un seul véhicule de transport | @sec-irpp-forfait |
+| **Loi de finances pour 1997** (loi n° 96-113), art. 28 et 29 [@lf-1997, art. 28 et 29] | 1^er^ janvier 1997 | régime forfaitaire : acomptes (art. 51) | aucun acompte → trois acomptes de 30 % de l'impôt forfaitaire | @sec-irpp-forfait |
+| **Loi de finances pour 1998** (loi n° 97-88), art. 31 à 34 [@lf-1998, art. 31 à 34] | 1^er^ janvier 1998 | régime forfaitaire (art. 44 § IV) | activité unique exigée ; véhicule de 3,5 tonnes de charge utile au plus ; autres revenus que de capitaux mobiliers exclus ; seuil propre aux activités multiples supprimé | @sec-irpp-forfait |
+| art. 45 [@lf-1998, art. 45] | — | minimum d'impôt (art. 44 § II) | plafond du minimum de 0,5 % du chiffre d'affaires : 500 → 1 000 D | @sec-irpp-minimum |
+| **Loi de finances pour 1999** (loi n° 98-111), art. 59 à 61 [@lf-1999, art. 59 à 61] | 1^er^ janvier 1999 | régime forfaitaire (art. 44 § IV, annexes) | seuils de 20 000 et 30 000 D → 30 000 D pour toutes les activités ; forfait simplifié et annexes III abrogés ; option pour un impôt forfaitaire de 1 500 D créée | @sec-irpp-forfait |
+| **Loi de finances pour 2000** (loi n° 99-101), art. 54 [@lf-2000, art. 54] | 1^er^ janvier 2000 | régime forfaitaire : retrait | procédure de retrait créée : décision motivée du ministre, régime réel au 1^er^ janvier suivant | @sec-irpp-forfait |
+| **Loi de finances pour 2002** (loi n° 2001-123), art. 72 et 73 [@loi2001-123-lf2002, art. 72 et 73] | 1^er^ janvier 2002 | régime forfaitaire : cession du fonds de commerce | impôt forfaitaire → barème sur le bénéfice de l'année, plus-value comprise, sans descendre sous l'impôt forfaitaire | @sec-irpp-forfait |
 | **Loi de finances pour 2005**, art. 49 [@lf-2005, art. 49] | revenus 2004\* | abattement pour salaire minimum (art. 40 § V) | créé : 500 D pour les salariés payés au SMIG | @sec-irpp-salaires |
 | art. 50 [@lf-2005, art. 50; @dgi-nc-33-2005] | revenus 2004 | charges de famille : enfant infirme | 500 → 750 D | @sec-irpp-famille |
 | **Loi de finances pour 2006**, art. 42 [@lf-2006, art. 42] | — | minimum d'impôt (art. 44 § II) | plafond (0,5 % du chiffre d'affaires, au plus 1 000 D) → plancher (0,1 % du chiffre d'affaires brut hors exportation, au moins 100 D, exigible même sans chiffre d'affaires) ; exonération des entreprises nouvelles et de celles des zones de développement régional | @sec-irpp-minimum |
+| art. 44 [@lf-2006, art. 44] | 1^er^ janvier 2006 | régime forfaitaire (annexe II) | première tranche, de 0 à 3 000 D de chiffre d'affaires : 15 → 25 D | @sec-irpp-forfait |
 | **Loi de finances pour 2007**, art. 35 [@lf-2007, art. 35; @dgi-nc-18-2007] | revenus 2006 | pensions de source étrangère (art. 37) | 25 % → 80 % du montant brut, sous conditions de transfert et de justification | @sec-irpp-salaires |
 | **Loi de finances pour 2010**, art. 39 [@lf-2010, art. 39] | revenus 2009\* | abattement pour salaire minimum (art. 40 § V) | 500 → 1 000 D | @sec-irpp-salaires |
 | art. 40 [@lf-2010, art. 40] | revenus 2009\* | charges de famille : enfant infirme | 750 → 1 000 D | @sec-irpp-famille |
 | art. 44 [@lf-2010, art. 44] | — | charges déductibles (art. 39 § I) | aucune → déduction des cotisations des travailleurs non salariés affiliés à un régime légal de sécurité sociale, ajoutée | @sec-irpp-deductions |
-| **Loi de finances pour 2011**, art. 32 et 37 [@lf-2011, art. 32 et 37] | — | régime forfaitaire | § IV de l'art. 44 et tarif par tranches de l'annexe II → art. 44 *bis* à 44 *sexies* : 2 % ou 2,5 % du chiffre d'affaires, plancher de 50 ou 100 D, seuils de 100 000 et 50 000 D | @sec-irpp-regimes |
+| **Loi de finances pour 2011**, art. 32 et 37 [@lf-2011, art. 32 et 37; @dgi-nc-15-2011] | revenus 2011 | régime forfaitaire | § IV de l'art. 44 et tarif par tranches de l'annexe II → art. 44 *bis* à 44 *sexies* : 2 % ou 2,5 % du chiffre d'affaires, plancher de 50 ou 100 D, seuils de 100 000 et 50 000 D ; impôt forfaitaire optionnel de 1 500 D supprimé | @sec-irpp-forfait |
 | art. 38 [@lf-2011, art. 38] | — | minimum d'impôt (art. 44 § II) | plancher : 100 → 200 D | @sec-irpp-minimum |
 | **Loi de finances pour 2014**, art. 19 [@lf-2014, art. 19] | distributions à partir du 1^er^ janvier 2015 | revenus de valeurs mobilières (art. 38, point 10) | exonération générale des dividendes → abrogée, sauf distributions prélevées sur les fonds propres au 31 décembre 2013 | @sec-irpp-capitaux |
+| art. 45 [@lf-2014, art. 45] | 1^er^ janvier 2014 | régime forfaitaire (art. 44 *bis* et *ter*) | planchers : 50 → 75 D et 100 → 150 D ; exclusion, par décret, d'activités exercées en zone communale ; majoration de 50 % en cas de dépôt tardif | @sec-irpp-forfait |
 | art. 46 [@lf-2014, art. 46] | revenus 2013\* | bénéfices non commerciaux au forfait (art. 22 § II) | 70 % → 80 % des recettes brutes | @sec-irpp-bnc |
 | art. 48 [@lf-2014, art. 48] | — | minimum d'impôt (art. 44 § II) | 0,1 % et 200 D → 0,2 % et 300 D pour le chiffre d'affaires local ; 0,1 % et 200 D pour l'exportation et les chiffres d'affaires assimilés | @sec-irpp-minimum |
 | art. 73 [@lf-2014, art. 73] | revenus 2014 | abattement pour salaire minimum ; exonération catégorielle | abattement de 1 000 D → abrogé ; exonération du revenu annuel net n'excédant pas 5 000 D, pour les seuls traitements, salaires, pensions et rentes viagères → créée | @sec-irpp-salaires |
 | art. 94 [@lf-2014, art. 94] | revenus 2013\* | charges de famille : enfant infirme, enfant étudiant | enfant infirme : 1 000 → 1 200 D ; déduction pour enfant étudiant relevée | @sec-irpp-famille |
 | **Loi de finances complémentaire pour 2014**, art. 10 [@lfc-2014, art. 10] | quatrième année d'activité ; 1^er^ janvier 2015 pour les activités plus anciennes | plancher d'impôt | aucun → impôt au moins égal à celui d'un agent public de même activité et de même grade, pour les personnes visées à l'art. 22 § II | @sec-irpp-minimum |
-| **Loi de finances pour 2016**, art. 19 § 1 [@lf-2016, art. 19] | revenus 2015\* | autres revenus (catégorie VII) | revenus de source étrangère seuls → s'y ajoutent les jeux de pari, de hasard et de loterie, et les revenus évalués d'après les dépenses ostensibles et l'accroissement du patrimoine | @sec-irpp-autres |
+| **Décret n° 2014-2939** [@decret-2014-2939] | 1^er^ janvier 2015 | régime forfaitaire (art. 44 *bis*) | liste des activités industrielles, commerciales et de services exclues en zone communale | @sec-irpp-forfait |
+| **Loi de finances pour 2015** (loi n° 2014-59), art. 30 [@lf-2015, art. 30] | 1^er^ janvier 2015 | régime forfaitaire (art. 44 *bis*) | distributeurs agréés des opérateurs de télécommunications : exclus comme rémunérés par commissions → admis | @sec-irpp-forfait |
+| **Loi de finances pour 2016**, art. 17 [@lf-2016, art. 17; @dgi-nc-27-2016] | chiffre d'affaires 2015 | régime forfaitaire (art. 44 *bis* et *ter*) | seuils de 100 000 et 50 000 D → 100 000 D ; 2 % ou 2,5 % avec plancher → 75 ou 150 D jusqu'à 10 000 D, 3 % au-delà ; durée : sans limite → 3 ans | @sec-irpp-forfait |
+| art. 19 § 1 [@lf-2016, art. 19] | revenus 2015\* | autres revenus (catégorie VII) | revenus de source étrangère seuls → s'y ajoutent les jeux de pari, de hasard et de loterie, et les revenus évalués d'après les dépenses ostensibles et l'accroissement du patrimoine | @sec-irpp-autres |
 | art. 21 [@lf-2016, art. 21; @dgi-nc-16-2016] | revenus 2015 | revenus des propriétés bâties (art. 28 § II) | déduction forfaitaire : 30 % → 20 %, frais de réparation et d'entretien justifiés déductibles en sus | @sec-irpp-foncier |
+| art. 38 [@lf-2016, art. 38] | 1^er^ janvier 2016 | régime forfaitaire : retrait (art. 44 *sexies*) | décision du ministre → du directeur général des impôts ou du chef du centre régional de contrôle des impôts | @sec-irpp-forfait |
 | **Loi de finances pour 2017** (loi n° 2016-78), art. 13 [@lf-2017, art. 13; @dgi-nc-2-2017] | revenus 2016 | intérêts de l'épargne (art. 39 § II) | plafond : 1 500 D, dont 1 000 D de comptes spéciaux → 5 000 D, dont 3 000 D | @sec-irpp-deductions |
 | art. 14 § 1 [@lf-2017, art. 14] | revenus 2017 | barème (art. 44 § I) | 6 → 5 tranches ; tranche à taux nul : 1 500 → 5 000 D ; tranches à 15 % et 20 % supprimées, taux intermédiaires relevés ; 35 % au-delà de 50 000 D inchangé | @sec-irpp-bareme |
 | art. 14 [@lf-2017, art. 14] | revenus 2017 | frais professionnels (art. 26 § I) | 10 % sans plafond → 10 % dans la limite de 2 000 D | @sec-irpp-salaires |
 | art. 14 § 3 [@lf-2017, art. 14] | revenus 2017 | retenue à la source | dispense de retenue sur les rétributions provisoires ou accidentelles lorsque le salaire annuel global net ne dépasse pas 5 000 D | @sec-irpp-salaires |
 | art. 14 § 5 [@lf-2017, art. 14; @dgi-nc-3-2017] | revenus 2017 | exonération catégorielle | exonération des revenus n'excédant pas 5 000 D → abrogée | @sec-irpp-salaires |
 | **Loi n° 2017-8** [@loi-avantages-fiscaux-2017] | 1^er^ avril 2017 | minimum d'impôt au titre des avantages fiscaux (art. 12 *bis* de la loi n° 89-114) ; déductions de l'art. 39 | 60 % → 45 % de l'impôt dû compte non tenu des déductions ; § III, III *bis*, III *ter*, V *bis*, VI, VII, IX et XI de l'art. 39 abrogés | @sec-irpp-deductions |
-| **Loi de finances pour 2018** (loi n° 2017-66), art. 54 [@lf-2018, art. 54] | revenus 2019 | charges de famille : chef de famille, enfants | chef de famille : 150 → 300 D ; enfants : 90, 75, 60 et 45 D selon le rang → 100 D pour chacun des quatre premiers | @sec-irpp-famille |
+| **Loi de finances pour 2018** (loi n° 2017-66), art. 16 [@lf-2018, art. 16; @dgi-nc-lf2018-art16] | chiffre d'affaires 2017 | régime forfaitaire (art. 44 *bis* et *ter*) | jusqu'à 10 000 D : 150 → 200 D en zone communale, 75 → 100 D ailleurs ; durée : 3 → 4 ans | @sec-irpp-forfait |
+| art. 54 [@lf-2018, art. 54] | revenus 2019 | charges de famille : chef de famille, enfants | chef de famille : 150 → 300 D ; enfants : 90, 75, 60 et 45 D selon le rang → 100 D pour chacun des quatre premiers | @sec-irpp-famille |
 | art. 55 [@lf-2018, art. 55; @dgi-nc-7-2018] | revenus 2017 | charges de famille : enfant infirme | 1 200 → 2 000 D | @sec-irpp-famille |
 | art. 56 [@lf-2018, art. 56] | — | exonérations (art. 38) | ajout des sommes provenant des jeux de pari sur les courses de chevaux et des concours de pronostics sportifs organisés par des établissements publics | @sec-irpp-capitaux |
 | **Loi de finances pour 2020**, art. 41 [@lf-2020, art. 41; @dgi-nc-3-2020] | revenus 2019 | charges de famille : parent à charge | plafond : 150 → 450 D par parent ; condition de ressources : SMIG → double du SMIG | @sec-irpp-famille |
+| art. 42 [@lf-2020, art. 42] | 1^er^ janvier 2020 | régime forfaitaire (art. 44 *bis*) | durée de 4 ans → sans limite hors zones communales | @sec-irpp-forfait |
 | art. 44 [@lf-2020, art. 44] | — | exonérations (art. 38) | ajout de l'avantage « transport domicile-travail » offert par les entreprises des zones de développement régional | @sec-irpp-salaires |
 | **Loi de finances pour 2021**, art. 16 [@lf-2021, art. 16; @dgi-nc-1-2021] | revenus 2020 | primes d'assurance-vie (art. 39 § I) | plafond : 10 000 → 100 000 D ; déduction soumise pour la première fois au minimum de l'art. 12 *bis* de la loi n° 89-114 | @sec-irpp-deductions |
 | art. 16 [@lf-2021, art. 16] | — | comptes épargne en actions (art. 39 § VIII) | plafond : 50 000 → 100 000 D | @sec-irpp-deductions |
+| art. 18 [@lf-2021, art. 18] | 1^er^ janvier 2021 | régime forfaitaire (art. 44 *bis*) | durée : 4 → 6 ans | @sec-irpp-forfait |
 | **Loi de finances pour 2022**, art. 24 [@lf-2022, art. 24; @dgi-nc-1-2022] | revenus 2021 | intérêts de l'épargne (art. 39 § II) | plafond : 5 000 D, dont 3 000 D de comptes spéciaux → 10 000 D, dont 6 000 D | @sec-irpp-deductions |
 | art. 29 [@lf-2022, art. 29] | — | intérêts des emprunts obligataires verts, socialement responsables et durables (art. 39 § II *bis*) | déduction créée, dans la limite de 10 000 D par an | @sec-irpp-deductions |
+| **Décret n° 2022-802** [@decret-2022-802] | 1^er^ janvier 2023 | régime forfaitaire (art. 44 *bis*) | listes des activités exclues en zone communale complétées | @sec-irpp-forfait |
 | **Loi de finances pour 2023** (décret-loi n° 2022-79), art. 43 [@lf-2023, art. 43] | — | plus-value immobilière (art. 27) | exclusion du local d'habitation sans condition → réservée à la première cession d'un seul local, dans la limite de 1 000 m² et d'un prix de cession inférieur à 500 000 D | @sec-irpp-foncier |
+| art. 55 [@lf-2023, art. 55] | déclarations dues à partir de 2023 | régime forfaitaire (art. 44 *ter*) | jusqu'à 10 000 D de chiffre d'affaires : 200 → 400 D en zone communale, 100 → 200 D ailleurs | @sec-irpp-forfait |
 | **Loi de finances pour 2024**, art. 34 [@lf-2024, art. 34] | — | intérêts de l'épargne (art. 39 § II) | bons du trésor assimilables ajoutés aux supports éligibles ; plafonds inchangés | @sec-irpp-deductions |
 | **Loi de finances pour 2025** (loi n° 2024-48), art. 20 [@lf-2025, art. 20] | pensions payées à partir du 1^er^ janvier 2025 | exonérations (art. 38) | pensions d'orphelins et pensions d'invalidité d'origine non professionnelle → exonérées | @sec-irpp-salaires |
 | art. 36 § 1 [@lf-2025, art. 36] | revenus 2025 | barème (art. 44 § I) | 5 → 8 tranches ; 35 % au-delà de 50 000 D → 40 % au-delà de 70 000 D, la tranche de 50 000 à 70 000 D étant imposée à 38 % | @sec-irpp-bareme |
 | art. 39 [@lf-2025, art. 39] | revenus 2024, rétroactivement | revenus des propriétés bâties (art. 28 § II) | 20 % et frais de réparation et d'entretien en sus → 25 %, frais compris | @sec-irpp-foncier |
 | **Loi de finances pour 2026** (loi n° 2025-17), art. 56 [@lf-2026, art. 56] | trois dates énoncées par l'article (@tbl-abattement-pensions) | abattement sur les pensions (art. 26 § II) | 25 % → 30 %, 40 % puis 50 % | @sec-irpp-salaires |
-| art. 91 [@lf-2026, art. 91] | — | régimes dérogatoires | régime estimatif optionnel ajouté à l'art. 44 *ter*, pour un chiffre d'affaires n'excédant pas 100 000 D | @sec-irpp-regimes |
+| art. 91 [@lf-2026, art. 91 et 110] | 1^er^ janvier 2026 | régime forfaitaire (art. 44 *ter*) | aucune option → régime estimatif optionnel pour un chiffre d'affaires n'excédant pas 100 000 D : 4 000 ou 5 000 D selon la classe, moitié dans les campagnes et villages | @sec-irpp-forfait |
 
 Sources : celles de chaque ligne. Les montants sont en dinars.
 
