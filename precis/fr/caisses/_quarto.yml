@@ -14,8 +14,14 @@ book:
   downloads: [pdf]
   chapters:
     - index.qmd
+    - _histoire.qmd
+    - _statut_cadre.qmd
+    - _comptes_regimes.qmd
+    - _etat_caisses.qmd
+    - _comptes_longue_periode.qmd
 
   appendices:
+    - _chronologie.qmd
     - _glossaire.qmd
 
 bibliography:

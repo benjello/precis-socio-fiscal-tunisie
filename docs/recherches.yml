@@ -776,3 +776,46 @@
     couverture: 'Intitulés seulement ; résultats : loi n° 2019-78 (LF 2020) art. 39 (CSS) et art. 54 (sans rapport : emprunt obligataire en devises), décret-loi n° 2021-21 (LF 2022) art. 12 (création du compte). Pas de plein texte ; fascicules 2024-2026 inconnus de jort_cache non couverts.'
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
+
+- id: r-caisses-protectorat-fondation
+  objet: textes instituant les organismes de sécurité sociale du Protectorat — Société de prévoyance des fonctionnaires et employés tunisiens, Caisse de retraite des ouvriers de l'État, agrément des trois caisses de compensation des allocations familiales du décret du 8 juin 1944
+  ou: [precis/fr/caisses/_histoire.qmd#sec-caisses-spfet]
+  requetes:
+    titres_fts:
+    - '"societe de prevoyance des fonctionnaires"'
+    - '"ouvriers de l''etat" AND (retraite OR retraites)'
+    - '"allocations familiales" AND (caisse OR caisses OR agrement)'
+    depuis: 1956-01-01
+  periode:
+    jusqu_au: 1961-12-31
+    motif: les organismes cherchés existent avant 1956 et disparaissent ou changent de nom entre 1958 et 1960 (loi n° 58-130, loi n° 59-18, loi n° 60-30) ; leurs textes fondateurs ne peuvent être cités qu'avant, ou par les visas des textes de 1956-1961
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist, visas, presse]
+    couverture: 'Le Journal officiel tunisien antérieur à 1956 n''est ni dans jort_cache ni dans le corpus local, et pist.tn répond 404 pour 1950 et 1955 (sondage de Jo00150 et Jo00155) : l''objet n''est atteignable que par les visas et par des sources secondaires. jort_cache, FTS sur les intitulés 1956-1977 ; visas lus à l''image : décret du 22 novembre 1956 (décrets du 24 décembre 1926 et du 19 novembre 1949, ce dernier approuvant « les nouveaux statuts » de la Société : l''acte de fondation est donc antérieur à 1926), loi n° 59-18 (décret du 19 novembre 1949), loi n° 59-19, loi n° 59-45 (décrets du 12 avril 1951), loi n° 58-130 (décret du 8 juin 1944, décrets des 15 septembre et 21 novembre 1955), décret du 8 novembre 1956. Source secondaire : Bertrand, Bulletin économique et social de la Tunisie, n° 73 et 74 de 1953, qui cite les textes des régimes mais pas l''acte de fondation de la Société ni l''agrément des caisses. Note : docs/notes/caisses-histoire.md.'
+    couvert_jusqu_au: 1977-12-31
+    resultat: aucun
+  a_faire:
+  - consulter les collections du Journal officiel tunisien antérieures à 1956 (BnF Gallica
+  - bibliothèques de Tunis)
+  - et l'Annuaire de législation du Protectorat
+
+- id: r-ccps-devolution
+  objet: texte réglant la dévolution à la CNSS des biens et des obligations de la Caisse centrale des prestations sociales (loi n° 58-130, abrogée par la loi n° 60-30, art. 131)
+  ou: [precis/fr/caisses/_histoire.qmd#sec-caisses-cnss-1960]
+  requetes:
+    titres_fts:
+    - '"prestations sociales"'
+    - '"caisse nationale de securite sociale" AND (transfert OR devolution OR liquidation OR patrimoine)'
+    depuis: 1960-12-14
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache, FTS sur les intitulés « prestations sociales », 1956-1977 : seul l''arrêté du 29 décembre 1959 (contrôleurs de la Caisse centrale) en dehors des textes déjà connus. Loi n° 60-30 lue à l''image aux art. 4, 5, 119 à 131 (JORT n° 57 de 1960, pp. 1602-1613) ; l''océrisation du reste de la loi ne nomme la Caisse centrale qu''aux art. 125 et 126. Loi n° 61-9 du 29 avril 1961 lue à l''image (JORT n° 17 de 1961, p. 592) : elle n''abroge que l''alinéa 2 de l''art. 123. Note : docs/notes/caisses-histoire.md.'
+    couvert_jusqu_au: 1977-12-31
+    resultat: aucun
+  a_faire:
+  - lire les articles 1 à 118 de la loi n° 60-30 à l'image
+  - lire l'arrêté du 16 août 1961 (application des articles 104 et 106 de la loi n° 60-30)

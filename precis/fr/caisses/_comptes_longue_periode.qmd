@@ -1,4 +1,4 @@
-## La longue période {#sec-caisses-longue-periode}
+# La longue période {#sec-caisses-longue-periode}
 
 Deux sources permettent de suivre les comptes des caisses dans le temps, à des niveaux différents.
 
@@ -6,7 +6,7 @@ La rétrospective financière de la CNSS donne, de 1990 à 2004, les ressources,
 
 Les comptes de la nation de l'Institut national de la statistique présentent, dans chaque édition, les comptes de l'ensemble des organismes de sécurité sociale — cotisations reçues, prestations, transferts entre administrations publiques, revenus de la propriété, capacité ou besoin de financement — comme le sous-secteur des administrations publiques que l'Institut nomme « administrations de sécurité sociale » — les [fonds de sécurité sociale](#g-fonds-de-securite-sociale) du système de comptabilité nationale [@ins-cnat-2015]. Ils ne ventilent ces comptes ni par caisse ni par branche. Les transferts reçus d'autres administrations publiques y sont la ligne où s'inscrivent les concours de l'État.
 
-### Les régimes de la CNSS, 1990-2004 {#sec-caisses-cnss-regimes}
+## Les régimes de la CNSS, 1990-2004 {#sec-caisses-cnss-regimes}
 
 Ce que chaque régime prélève et ce qu'il dépense ne s'équilibrent pas de la même façon d'un régime à l'autre. La rétrospective financière de la CNSS donne, de 1990 à 2004, le total des ressources, le total des emplois et le résultat de gestion de chacun, toutes branches confondues [@cnss-retrospective-1990-2004] ; le rapport des ressources aux emplois — le taux de couverture — les sépare nettement (@fig-cnss-regimes). Les ressources du [régime des salariés agricoles](#g-rsa) couvrent moins du quart de ses emplois chaque année, et moins d'un dixième depuis 1997 ; celles des non-salariés du secteur agricole, d'un quart environ à 58 % selon les années, et le déficit de leur compte se creuse, en dinars courants, sur toute la période. Le [régime agricole amélioré](#g-rsaa) fait exception parmi les régimes agricoles : il est excédentaire toutes les années sauf 2001 et 2004. Le régime des étudiants est déficitaire chaque année depuis que sa comptabilité est séparée, en 1995. Le régime général est excédentaire chaque année, celui des non-salariés du secteur non agricole chaque année depuis 1996 ; le taux de couverture du premier revient de 140 % en 1994 à 101 % en 2004, et son excédent se réduit fortement en 2003 et 2004.
 
@@ -62,7 +62,7 @@ figtools.figure_tabs(
 )
 ```
 
-### La branche des assurances sociales du régime général {#sec-caisses-cnss-assurances-sociales}
+## La branche des assurances sociales du régime général {#sec-caisses-cnss-assurances-sociales}
 
 Avant la loi n° 2004-71, le bloc « assurances sociales » du taux global ne finance pas seulement des prestations servies aux assurés. La rétrospective financière de la CNSS détaille, de 1990 à 2004, les emplois de cette branche dans le régime général [@cnss-retrospective-1990-2004]. Les prestations en espèces y sont les indemnités de maladie et de couches et le capital-décès. Les prestations en nature comprennent les polycliniques de la caisse, mais aussi un forfait accordé à la Santé publique, une participation aux budgets des hôpitaux, les compléments de soins et d'hospitalisation que facturent les hôpitaux publics et des dépenses de renforcement des structures sanitaires publiques (@fig-cnss-assurances-sociales). Une part des cotisations de la branche va ainsi au système public de santé, sous des formes qui changent au cours de la période : la participation aux budgets des hôpitaux devient résiduelle à partir de 1996, l'année où apparaissent les compléments facturés par les hôpitaux publics, et ces compléments sont, de 2002 à 2004, le premier poste des emplois de la branche. Les ressources de la branche dépassent ses emplois chaque année de la période.
 
@@ -124,7 +124,7 @@ compléments de soins par les hôpitaux publics à partir de 1996, ainsi que le 
 « C.A.O. » de la rétrospective financière (page 13). Les montants de 1999 comprennent des
 estimations en attendant la relecture de l'original papier (tunisia-data#26). -->
 
-### Les accidents du travail et la protection sociale des travailleurs {#sec-caisses-cnss-atmp-pst}
+## Les accidents du travail et la protection sociale des travailleurs {#sec-caisses-cnss-atmp-pst}
 
 La rétrospective financière de la CNSS donne, de 1995 à 2004, les ressources et les emplois du régime de réparation tant que la caisse le gère, et, de 1997 à 2004, ceux de la protection sociale des travailleurs ([livre « Cotisations sociales »](../cotisations_sociales/index.html#sec-cot-protection-sociale)) [@cnss-retrospective-1990-2004]. Les ressources du régime des accidents du travail passent de 71,2 millions de dinars courants en 1995 à 132,5 en 2004. Ses emplois varient davantage, entre 30,7 et 71,4 millions selon les années : à côté des prestations, ils comprennent une ligne que le document intitule « Provision Prest. & Mathématique », dont le montant change fortement d'une année à l'autre. Le résultat de gestion, calculé après cette ligne, est excédentaire chaque année (@fig-cnss-atmp-pst).
 
