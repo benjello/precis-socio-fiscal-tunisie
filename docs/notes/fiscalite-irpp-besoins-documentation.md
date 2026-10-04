@@ -265,6 +265,7 @@ la section mais ne la bloque pas. Statut = *couvert localement* / *partiellement
   abroge ce §IV et l'annexe II, et transfère le dispositif à l'**article 44 bis**. Le code
   consolidé 2019-2025 porte ensuite l'historique annoté des articles 44 bis à 44 sexies.
 - *Statut* : **largement couvert localement**, sauf les références JORT et le volet LF 2026 (Q6).
+- *Statut au 4 octobre 2026* : **traité** — chronologie 1990-2026 lue au JORT, références versées, section `#sec-irpp-forfait` réécrite ; voir `docs/notes/fiscalite-regime-forfaitaire.md`. Reste la longue période (nombre de forfaitaires, produit).
 
 **Q13. [ENRICHISSEMENT] « Contribution au budget de l'État » (barème en jours de salaire, 2014).**
 - *Question* : identifier le texte instituant ce prélèvement exceptionnel, sa durée d'application,

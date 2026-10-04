@@ -1511,10 +1511,10 @@ entries:
   - id: regime-forfaitaire
     acronyme: null
     statut: valide
-    references: [code-irpp-is-1990, lf-1993, lf-2014]
+    references: [code-irpp-is-1990, lf-1993, lf-1999, lf-2011, lf-2014, lf-2016]
     source_definition: {ref: code-irpp-is-1990, locator: "art. 44, § IV"}
     source_traduction: {ref: lf-2014, locator: "art. 45"}
-    voir_aussi: [regime-estimatif-optionnel, minimum-impot, irpp]
+    voir_aussi: [regime-forfaitaire-optionnel, minimum-impot, irpp]
     fr:
       terme: Régime forfaitaire d'imposition
       definition: >
@@ -1535,14 +1535,14 @@ entries:
         الفصول من 44 مكرّر إلى 44 سادسا.
       synonymes: [نظام الضريبة التقديرية]
 
-  - id: regime-estimatif-optionnel
+  - id: regime-forfaitaire-optionnel
     acronyme: null
     statut: provisoire
     references: [lf-2026]
     source_definition: {ref: lf-2026, locator: "art. 91"}
     voir_aussi: [regime-forfaitaire, irpp, minimum-impot]
     fr:
-      terme: Régime estimatif optionnel
+      terme: Régime forfaitaire optionnel
       definition: >
         Régime ouvert sur option, ajouté à l'article 44 ter du code par
         l'article 91 de la loi de finances pour 2026, aux contribuables dont le
@@ -4582,14 +4582,16 @@ entries:
     references: [loi-67-53-lob, loi-org-96-103-lob, lf-2014, minfin-recettes-fiscales]
     source_definition: {ref: zakraoui-ena-droit-fiscal, locator: "p. 14-16"}
     source_traduction: {ref: loi2018-56-lf2019, locator: "tableau A"}
-    voir_aussi: [impots-indirects, irpp, impot-societes]
+    voir_aussi: [impots-indirects, irpp, impot-societes, impot-fortune]
     fr:
       terme: Impôts directs
       definition: >
         Impôts qui atteignent, avec une certaine périodicité, une matière
         imposable stable ou régulièrement renouvelée, comme un revenu ou un
         bénéfice. En Tunisie, l'impôt sur le revenu des personnes physiques et
-        l'impôt sur les sociétés. La loi organique du budget les énumérait,
+        l'impôt sur les sociétés ; le même critère y rattache l'impôt sur la
+        fortune, dû chaque année sur le patrimoine détenu au 1er janvier. La
+        loi organique du budget les énumérait,
         sans les définir, parmi les recettes de l'État, sous l'intitulé
         « impôts directs ordinaires » à partir de 1996, jusqu'à la loi
         organique du budget de 2019.
@@ -4599,7 +4601,9 @@ entries:
       definition: >
         أداءات توظَّف بصفة دورية على مادة خاضعة للأداء قارّة أو متجدّدة
         بانتظام، كالدخل أو الربح. وهي في تونس الضريبة على دخل الأشخاص
-        الطبيعيين والضريبة على الشركات. كان القانون الأساسي للميزانية
+        الطبيعيين والضريبة على الشركات، ويُلحق بها المعيار نفسه الضريبة على
+        الثروة المستوجبة كل سنة على المكاسب المملوكة في غرّة جانفي. كان
+        القانون الأساسي للميزانية
         يعدّدها، دون أن يعرّفها، ضمن موارد الدولة تحت عنوان «الأداءات
         المباشرة الاعتيادية» ابتداء من سنة 1996، إلى حين صدور القانون
         الأساسي للميزانية لسنة 2019.
@@ -5085,6 +5089,143 @@ entries:
         الأشخاص الطبيعيين وتحيل عليها في جانب من قواعد الأساس. وقد حلّت محلّ
         الضريبة على أرباح الشركات المنصوص عليها بالفصل 9 من القانون عدد 109
         لسنة 1985 المؤرخ في 31 ديسمبر 1985.
+      synonymes: []
+
+  - id: impot-fortune
+    acronyme: null
+    statut: valide
+    references: [lf-2026, dgi-nc-13-2026, lf-2023]
+    source_definition: {ref: lf-2026, locator: "art. 88"}
+    source_traduction: {ref: dgi-nc-13-2026}
+    voir_aussi: [impot-fortune-immobiliere, impots-directs, habitation-principale]
+    fr:
+      terme: Impôt sur la fortune
+      definition: >
+        Impôt dû au 1er janvier de chaque année par les personnes physiques sur
+        la valeur, nette des dettes que le texte admet en déduction, de leurs
+        immeubles, fonds de commerce et meubles, y compris ceux de leurs enfants
+        mineurs à charge, lorsqu'elle atteint 3 millions de dinars. Institué par
+        l'article 88 de la loi de finances pour 2026 à compter du 1er janvier
+        2026, il abroge et remplace l'impôt sur la fortune immobilière de 2023.
+        Il n'est codifié dans aucun code ; sa procédure relève du code des
+        droits et procédures fiscaux.
+      synonymes: []
+    ar:
+      terme: الضريبة على الثروة
+      definition: >
+        ضريبة تُستوجب في 1 جانفي من كل سنة على الأشخاص الطبيعيين بعنوان قيمة
+        ما يملكونه من عقارات وأصول تجارية ومنقولات، بما في ذلك مكاسب أبنائهم
+        القصّر الذين في كفالتهم، بعد طرح الديون التي يجيز النص طرحها، إذا بلغت
+        هذه القيمة 3 مليون دينار. أُحدثت بالفصل 88 من قانون المالية لسنة 2026
+        ابتداء من غرّة جانفي 2026، وألغت الضريبة على الثروة العقارية لسنة 2023
+        وعوّضتها. لا تندرج في أيّ مجلة، وتخضع في إجراءاتها لمجلة الحقوق
+        والإجراءات الجبائية.
+      synonymes: []
+
+  - id: impot-fortune-immobiliere
+    acronyme: null
+    statut: valide
+    references: [lf-2023, dgi-nc-15-2023]
+    source_definition: {ref: lf-2023, locator: "art. 23"}
+    source_traduction: {ref: lf-2023, locator: "art. 23"}
+    voir_aussi: [impot-fortune, habitation-principale]
+    fr:
+      terme: Impôt sur la fortune immobilière
+      definition: >
+        Impôt exigible au 1er janvier de chaque année, de 2023 à 2025, sur les
+        immeubles des personnes physiques, y compris ceux de leurs enfants
+        mineurs sous leur tutelle, dont la valeur, nette des dettes que le texte
+        admet en déduction, atteignait 3 millions de dinars ; son taux était de
+        0,5 %. Institué par l'article 23 du décret-loi n° 2022-79 portant loi de
+        finances pour 2023, il a été abrogé et remplacé, à compter du 1er
+        janvier 2026, par l'impôt sur la fortune.
+      synonymes: []
+    ar:
+      terme: الضريبة على الثروة العقارية
+      definition: >
+        ضريبة توظَّف في غرّة جانفي من كل سنة، من 2023 إلى 2025، على عقارات
+        الأشخاص الطبيعيين، بما في ذلك عقارات أبنائهم القصّر الذين في كفالتهم،
+        التي تساوي قيمتها بعد طرح الديون التي يجيز النص طرحها أو تفوق 3 مليون
+        دينار، بنسبة 0,5 %. أُحدثت بالفصل 23 من المرسوم عدد 79 لسنة 2022
+        المتعلق بقانون المالية لسنة 2023، وأُلغيت وعُوّضت بالضريبة على الثروة
+        ابتداء من غرّة جانفي 2026.
+      synonymes: []
+
+  - id: impot-foncier-2014
+    acronyme: null
+    statut: valide
+    references: [lf-2014, lfc-2014]
+    source_definition: {ref: lf-2014, locator: "art. 55"}
+    source_traduction: {ref: lf-2014, locator: "art. 55"}
+    voir_aussi: [impot-fortune-immobiliere]
+    fr:
+      terme: Impôt foncier (2014)
+      definition: >
+        Impôt sur les immeubles détenus par les personnes physiques, droits
+        qui s'y rattachent compris, égal à une fois et demie la taxe sur les
+        immeubles bâtis ou la taxe sur les immeubles non bâtis, institué par
+        l'article 55 de la loi de finances pour 2014. L'article 38 de la loi de
+        finances complémentaire pour 2014 en a supprimé les dispositions à
+        compter du 1er janvier 2014.
+      synonymes: []
+    ar:
+      terme: الضريبة العقارية (2014)
+      definition: >
+        ضريبة على العقارات التي يمتلكها الأشخاص الطبيعيون، بما في ذلك الحقوق
+        المتعلقة بها، تساوي مرّة ونصف المعلوم على العقارات المبنية أو المعلوم
+        على الأراضي غير المبنية، أُحدثت بالفصل 55 من قانون المالية لسنة 2014،
+        وألغى الفصل 38 من قانون المالية التكميلي لسنة 2014 أحكامها ابتداء من
+        غرّة جانفي 2014.
+      synonymes: []
+
+  - id: habitation-principale
+    acronyme: null
+    statut: valide
+    references: [lf-2023, lf-2026, dgi-nc-13-2026]
+    source_definition: {ref: lf-2023, locator: "art. 23 § 3"}
+    source_traduction: {ref: lf-2023, locator: "art. 23 § 3"}
+    voir_aussi: [impot-fortune, impot-fortune-immobiliere]
+    fr:
+      terme: Habitation principale
+      definition: >
+        Logement où le redevable a son habitation principale, exclu de l'impôt
+        sur la fortune immobilière puis de l'impôt sur la fortune, avec, depuis
+        2026, le mobilier qui y est utilisé. La loi ne la définit pas ;
+        l'administration l'entend quelle qu'en soit la valeur ou la surface,
+        dépendances comprises, la preuve se faisant par une attestation des
+        services compétents.
+      synonymes: []
+    ar:
+      terme: المسكن الرئيسي
+      definition: >
+        المسكن الذي يتخذه المطالب بالضريبة مسكنا رئيسيا، ويخرج من الضريبة على
+        الثروة العقارية ثم من الضريبة على الثروة، مع الأثاث المستغل به منذ
+        2026. لا يعرّفه القانون، وتعتبره الإدارة مهما كانت قيمته أو مساحته بما
+        في ذلك توابعه، ويثبت بشهادة من المصالح المختصة.
+      synonymes: []
+
+  - id: fonds-de-commerce
+    acronyme: null
+    statut: provisoire
+    references: [lf-2026]
+    source_definition: {ref: lf-2026, locator: "art. 88 § 3"}
+    voir_aussi: [impot-fortune]
+    fr:
+      terme: Fonds de commerce
+      definition: >
+        Élément du patrimoine que l'article 88 de la loi de finances pour 2026
+        range parmi les biens soumis à l'impôt sur la fortune, à côté des
+        immeubles et des meubles, et dont il exclut ceux qui sont
+        effectivement exploités.
+        Le terme français est une traduction ; il reste à confirmer dans un
+        texte bilingue du Journal officiel.
+      synonymes: []
+    ar:
+      terme: الأصول التجارية
+      definition: >
+        عنصر من المكاسب يدرجه الفصل 88 من قانون المالية لسنة 2026 ضمن
+        المكاسب الخاضعة للضريبة على الثروة، إلى جانب العقارات والمنقولات،
+        ويستثني منه الأصول التجارية المستغلة فعليا.
       synonymes: []
 
   - id: benefice-imposable

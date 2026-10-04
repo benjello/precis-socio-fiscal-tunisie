@@ -86,6 +86,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fait générateur du droit de consommation | الحدث المتولد عنه المعلوم على الاستهلاك |  |
 | Fonction publique | الوظيفة العمومية |  |
 | Fonctions astreignantes | الوظائف المرهقة |  |
+| Fonds de commerce | الأصول التجارية |  |
 | Fonds de réserve | صندوق الاحتياط |  |
 | Fonds de sécurité sociale | صناديق الضمان الاجتماعي |  |
 | Forces de sécurité intérieure | قوات الأمن الداخلي |  |
@@ -93,6 +94,10 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Gestion financière distincte | التصرّف المالي المستقلّ |  |
 | Grade | الرتبة |  |
 | Grille des salaires | شبكة الأجور |  |
+| Habitation principale | المسكن الرئيسي |  |
+| Impôt foncier (2014) | الضريبة العقارية (2014) |  |
+| Impôt sur la fortune | الضريبة على الثروة |  |
+| Impôt sur la fortune immobilière | الضريبة على الثروة العقارية |  |
 | Impôt sur le revenu des personnes physiques | الضريبة على دخل الأشخاص الطبيعيين | IRPP |
 | Impôt sur les sociétés | الضريبة على الشركات | IS |
 | Impôts directs | الأداءات المباشرة |  |
@@ -148,8 +153,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Régime des travailleurs à faibles revenus | نظام العملة ذوي الدخل المحدود |  |
 | Régime des travailleurs non salariés | نظام العملة غير الأجراء | RTNS |
 | Régime des travailleurs tunisiens à l'étranger | نظام الضمان الاجتماعي للعملة التونسيين بالخارج | RTTE |
-| Régime estimatif optionnel | النظام التقديري الاختياري |  |
 | Régime forfaitaire d'imposition | النظام التقديري |  |
+| Régime forfaitaire optionnel | النظام التقديري الاختياري |  |
 | Régime indiciaire | النظام الاستدلالي للتأجير |  |
 | Régime statutaire autonome | النظام الأساسي الخاص |  |
 | Rémunération des dirigeants d'entreprises publiques | تأجير رؤساء المؤسسات والمنشآت العمومية |  |

@@ -24,7 +24,7 @@ extraits des lois de finances sont dans le dossier voisin `PDFs/Lois_de_Finances
 
 | Livre | État du texte | Première lecture faisable |
 |---|---|---|
-| Fiscalité | Quatre impôts ouverts ; TVA : déductions, régime suspensif et obligations encore à rédiger | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
+| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) ; TVA : déductions, régime suspensif et obligations encore à rédiger | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; PNAFN historique sans sources pour ses onze dates et montants | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
@@ -37,7 +37,11 @@ tableaux ou annexes ne sont pas des images. **OCR** veut dire que le fascicule e
 mais que la couche texte testée est vide. Un texte absent du JORT en français peut avoir une
 édition arabe ou un extrait français dans `PDFs/Lois_de_Finances/` : les distinguer.
 
-## Fiscalité — quatre impôts ouverts, des lectures et des mécanismes à compléter
+## Fiscalité — cinq impôts ouverts, des lectures et des mécanismes à compléter
+
+- **Figure à faire (demande de l'humain, 4 octobre 2026) : le taux d'imposition des BIC selon le régime, en fonction du chiffre d'affaires, réforme par réforme.** Pour chaque état du droit établi dans `#sec-irpp-forfait` (1990, 1993, 1999, 2006, 2011, 2014, 2016, 2018, 2023, 2026), l'impôt rapporté au chiffre d'affaires : régime forfaitaire (grilles de l'annexe II, puis taux, planchers et montants fixes), régime forfaitaire optionnel de 2026, et régime réel (barème de l'IRPP et minimum d'impôt, sous une hypothèse de taux de bénéfice à expliciter — la LF 2026 en fixe une, au plus 25 %, pour l'option). Chiffres d'affaires **déflatés** par l'indice des prix à la consommation de l'INS, base la plus récente disponible (série dans tunisia-data, provenance à documenter taux par taux). Vue d'évolution par onglets ou petits multiples, une courbe par régime. Données : `figtools.series()` depuis un générateur hors build ; tant que les paramètres du forfait ne sont pas en amont (openfisca-tunisia#476), engendrer depuis les valeurs sourcées de la note `docs/notes/fiscalite-regime-forfaitaire.md` avec un TODO.
+
+- **Fiscalité locale : aucune entrée à ce jour (demande de l'humain, 4 octobre 2026). Option B retenue le 4 octobre 2026 : un volume VII « Les finances locales » (fiscalité locale, transferts, budgets) ; plan : `docs/notes/fiscalite-locale-plan.md`.** Le volume ne traite que des impôts d'État. Il manque un chapitre — ou un volume — sur la fiscalité locale : taxe sur les immeubles bâtis (TIB), taxe sur les terrains non bâtis (TNB), taxe sur les établissements à caractère industriel, commercial ou professionnel (TCL), et leurs textes (code de la fiscalité locale et ses modifications, à relever au JORT). Matière déjà collectée : documents de la réforme fiscale 2013-2014 (`tunisia-data/data/raw/minfinances/reforme_fiscale_2013_2014/`, fiche `sources/minfinances-reforme-fiscale-2013-2014.md`) — synthèse du groupe « fiscalité locale » (CNF août 2013, `2013-08_cnf_rf_5_ar.pdf` : TCL 111 / 93 / 137 MD et TIB 40 / 21 / 30 MD en 2010-2012), présentation de novembre 2013, journée de réflexion d'octobre 2014 sur la décentralisation ; inventaire page par page dans `docs/notes/reforme-fiscale-2013-2014-inventaire.md`. À cadrer : périmètre (impôts des collectivités locales seulement, ou aussi taxes affectées), place dans le précis, lien avec l'impôt foncier de 2014 (chapitre de l'impôt sur la fortune). Doctrine : six textes de B. Dafflon et G. Gilbert (Revue tunisienne de fiscalité, n° 20, 24, 25, 27 ; mélanges *Transparence et droit*, 2021) — deux en accès libre, quatre à obtenir en bibliothèque ou au Centre d'études fiscales de Sfax ; synthèse de référence : Dafflon et Gilbert, *L'économie politique et institutionnelle de la décentralisation en Tunisie*, AFD, 2018 (HAL, CC BY-NC-ND) ; rapports PARD 2021-2022. Inventaire, statut d'accès et ébauches CSL : `docs/notes/biblio-fiscalite-locale.md` ; copies locales hors dépôt : `~/Documents/biblio-precis/fiscalite-locale/`.
 
 - **Présentation (`index.qmd`) : impôts directs et indirects définis et sourcés** (LOB 1967, 1996, 2019 ; tableaux A des LF 2014 et 2021 ; support ENA de S. Zakraoui), textes lus dans le corpus. Reste : relever la page de fin des trois LOB dans l'édition arabe ; dater le support ENA ou lui substituer la doctrine imprimée (`baccouche2008`, `ayadi1996`, à obtenir) ; l'arrêté de nomenclature des recettes (LOB 2019, art. 16) n'est pas identifié.
 
@@ -50,20 +54,56 @@ et a été lu pour l'IRPP. **Ces deux lois ne sont donc plus des textes « absen
 pas confondre l'absence en ligne du fascicule français de 2015 avec celle de son extrait
 français conservé localement.
 
-**OCR ciblé.** Le code fiscal du JORT n° 1 de 1990 (`Jo00190.pdf`) et le texte initial
-de la TVA au JORT n° 39 de 1988 (`Jo03988.pdf`) sont des scans présents localement :
-vérifier les annexes sur l'image après OCR, notamment le tarif de l'annexe II du forfait.
+**OCR ciblé.** Le texte initial de la TVA au JORT n° 39 de 1988 (`Jo03988.pdf`) est un scan
+présent localement : vérifier ses annexes sur l'image après OCR. Le code fiscal du JORT n° 1 de
+1990 a été océrisé le 4 octobre 2026 ; ses annexes II et III (forfait) sont relues à l'image
+(`docs/notes/fiscalite-regime-forfaitaire.md`).
 
 **Rédaction à partir des textes déjà cités, puis vérification des versions.** La TVA
 attend encore trois développements : déductions (art. 9-11), régime suspensif et
 obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO` de
 `precis/fr/fiscalite/_tva.qmd`. Ne pas les confondre avec une simple reprise de forme.
 
+- **Impôt sur la fortune (`_impot_fortune.qmd`, chapitre ouvert le 4 octobre 2026)** sur la
+  note `docs/notes/fiscalite-impot-fortune.md`. Textes lus : LF 2014 art. 55 et LFC 2014
+  art. 38 (fascicules FR et AR locaux, lisibles) ; DL 2022-79 art. 23 et 76 (édition arabe
+  locale, édition française par le fac-similé DGI) ; loi n° 2025-17 art. 88 et 110 (édition
+  arabe seule, traduite par le précis) ; notes communes n° 15/2023 (scan, océrisée et relue à
+  l'image) et n° 13/2026 (couche texte inutilisable, relue à l'image). Restent :
+  - **AR** : déclarer `_impot_fortune.qmd` dans `precis/ar/fiscalite/_quarto.yml` (ligne
+    commentée en place, après `_impot_societes.qmd`) dès que la traduction est livrée ;
+  - **rendement** : aucune série publiée (fiche `r-impot-fortune-rendement`) ; lois de
+    règlement 2023-2024 et publications de la DGI à consulter ;
+  - **modèle de déclaration 2026** : à obtenir (la NC 13/2026 n'a pas d'annexe) ;
+  - **modificatifs et textes d'application** : JORT postérieurs au n° 93 de 2026 et n° 58
+    de 2026 à lire (fiche `r-impot-fortune-modificatifs`) ;
+  - **antécédents** avant 2014 (époque beylicale et coloniale, 1956-2013) non explorés ;
+  - **glossaire** : `fonds-de-commerce` reste provisoire, terme français à confirmer dans un
+    texte bilingue du JORT ;
+  - **contradiction à trancher (retraites)** : `retraites/_secteur_public.qmd` dit que le
+    DL 2022-79 n'a été publié qu'en arabe ; le fac-similé DGI de l'édition française du JORT
+    n° 141/2022 porte pourtant son art. 12 (p. 3557). Non corrigé ici (autre livre) ;
+  - **genèse parlementaire** de l'art. 88 (rejet en commission, suppression puis
+    réintroduction en plénière) : presse seulement, hors du corps faute de pièce de l'ARP
+    ou du CNRD.
 - **Forme de `_impot_revenu.qmd` : rien à reprendre.** Ses titres ont été remontés d'un cran
   et il a reçu sa section « La longue période ». La réorganisation par réforme, un temps
   envisagée, a été écartée après lecture — voir « Forme des chapitres » plus bas, qui en
   consigne le motif et la leçon.
 - **IRPP** : le minimum d'impôt de l'article 44 § II et le régime forfaitaire sont écrits.
+  Le régime forfaitaire (`#sec-irpp-forfait`) couvre depuis le 4 octobre 2026 toute la
+  chronologie 1990-2026, chaque modificatif lu au JORT (note
+  `docs/notes/fiscalite-regime-forfaitaire.md`). Y restent : la **longue période** au-delà de 2013 —
+  `tbl-forfait-effectifs` ne couvre que 2004 et 2009-2013, d'après le diaporama du ministère des
+  Finances d'août 2013 (`minfin-cnf-2013-forfait`, lu à l'image) ; les autres chiffres de la
+  collection `tunisia-data` (tranches de chiffre d'affaires, secteurs, comparaison avec le réel)
+  sont lisibles mais non encore relus ; la **relecture
+  arabophone** de l'article 91 de la LF 2026 (lu à l'image, édition arabe seule parue)  ; le **numéro** de la note commune sur l'article 16
+  de la LF 2018 ; les **tableaux faits main** `tbl-irpp-forfait` et `tbl-forfait-annexe-2`, à
+  engendrer quand les paramètres seront sourcés. Textes tous lisibles au corpus local
+  (fascicules de 1990 à 1993 océrisés, ceux de 1999 et 2001 décodés) ; la LF 2016 et la LF 2020
+  se citent en pagination française d'après les extraits locaux, la LF 2023 et la LF 2026 en
+  pagination arabe.
   Restent les tarifs antérieurs de la contribution personnelle d'État, les barèmes
   régionaux de l'évaluation forfaitaire agricole, le plafond de l'assurance-vie entre
   ses deux bornes connues et la contribution au budget de l'État. L'article 16 de la
@@ -460,6 +500,7 @@ l'information.
 | Chapitre | Forme | À faire |
 |---|---|---|
 | `_impot_societes.qmd` | conforme | — |
+| `_impot_fortune.qmd` | conforme ; s'achève sur une case vide (aucune série de rendement) | traduction arabe à déclarer dans le `_quarto.yml` AR |
 | `_droits_consommation.qmd` | historique remonté en tête | la chronologie du périmètre reste un tableau sans récit texte par texte — signalé, non confirmé |
 | `_tva.qmd` | historique sorti de l'attaque | déductions, achats en suspension et obligations restent à écrire sur les articles du code |
 | `_impot_revenu.qmd` | conforme, à sa manière | rien sur la forme ; restent deux sections à ÉCRIRE, voir plus bas |
