@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Pour citer cet ouvrage, merci d'utiliser les informations ci-dessous."
+title: "Précis de la législation socio-fiscale de la Tunisie"
+type: dataset
+authors:
+  - family-names: "Ben Jelloul"
+    given-names: "Mahdi"
+url: "https://benjello.github.io/precis-socio-fiscal-tunisie/"
+repository-code: "https://github.com/benjello/precis-socio-fiscal-tunisie"
+license: CC-BY-SA-4.0
+preferred-citation:
+  type: book
+  title: "Précis de la législation socio-fiscale de la Tunisie"
+  authors:
+    - family-names: "Ben Jelloul"
+      given-names: "Mahdi"
+  url: "https://benjello.github.io/precis-socio-fiscal-tunisie/"
+  languages:
+    - fr
+    - ar
