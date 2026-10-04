@@ -45,3 +45,28 @@ book:
       chapters: [a.qmd]
 """, {"index.qmd": "# P\n", "_partie.qmd": "# Partie\n", "a.qmd": "# A\n"})
     assert any("partie déclarée par un fichier" in e for e in ecarts_du_livre(d))
+
+
+def test_saut_de_niveau(tmp_path):
+    d = livre(tmp_path, "book:\n  chapters: [index.qmd]\nformat:\n  html:\n    number-depth: 4\n",
+              {"index.qmd": "# P\n\n## A\n\n## B\n\n#### trop bas\n"})
+    assert any("saut de niveau" in e for e in ecarts_du_livre(d))
+
+
+def test_au_dela_de_la_profondeur(tmp_path):
+    d = livre(tmp_path, "book:\n  chapters: [index.qmd]\nformat:\n  html:\n    number-depth: 2\n",
+              {"index.qmd": "# P\n\n## A\n\n### a1\n\n### a2\n\n## B\n"})
+    assert any("au-delà de number-depth" in e for e in ecarts_du_livre(d))
+
+
+def test_section_a_un_seul_enfant_y_compris_par_inclusion(tmp_path):
+    d = livre(tmp_path, "book:\n  chapters: [index.qmd]\nformat:\n  html:\n    number-depth: 4\n",
+              {"index.qmd": "# P\n\n## A\n\n{{< include _inc.qmd >}}\n\n## B\n",
+               "_inc.qmd": "### seul\n\ntexte\n"})
+    assert any("une seule sous-section" in e for e in ecarts_du_livre(d))
+
+
+def test_les_blocs_de_code_ne_sont_pas_des_titres(tmp_path):
+    d = livre(tmp_path, "book:\n  chapters: [index.qmd]\nformat:\n  html:\n    number-depth: 4\n",
+              {"index.qmd": "# P\n\n## A\n\n```python\n# commentaire\n```\n\n## B\n"})
+    assert ecarts_du_livre(d) == []

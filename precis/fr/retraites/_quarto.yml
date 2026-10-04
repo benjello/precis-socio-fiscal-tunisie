@@ -35,7 +35,7 @@ format:
     include-after-body: ../../legendes.html
     fig-cap-location: top
     tbl-cap-location: top
-    number-depth: 4
+    number-depth: 5
     toc: true
     toc-depth: 4
   pdf:
@@ -43,7 +43,7 @@ format:
     toc: true
     toc-depth: 4
     number-sections: true
-    number-depth: 4 
+    number-depth: 5
 
 # Libellés des légendes et des renvois : Quarto écrivait « Table 2.3: » en anglais, y
 # compris dans les livres arabes. Mise en forme : ../../legendes.scss et legendes.html.

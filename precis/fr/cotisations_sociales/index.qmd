@@ -1,4 +1,4 @@
-# Présentation
+# Présentation {#sec-cot-presentation}
 
 ```{python}
 #| echo: false
@@ -38,15 +38,13 @@ Ce livre traite du **prélèvement** qui finance la sécurité sociale : qui cot
 **3. La part salariale et la part patronale sont distinguées, sans préjuger de qui supporte le prélèvement.** Le partage juridique entre l'une et l'autre ne dit rien de son incidence économique. Ce volume décrit le premier et ne se prononce pas sur la seconde.
 :::
 
-## Présentation générale {#sec-cot-presentation}
-
-### Cotisation et impôt
+## Cotisation et impôt
 
 La [cotisation sociale](#g-cotisations-sociales) se distingue de l'impôt par sa **contrepartie** : elle ouvre des droits à l'[assuré social](#g-assure-social) pour lequel elle est versée, alors que l'impôt alimente le budget de l'État sans contrepartie individualisée. Cette distinction n'est pas absolue en Tunisie — le régime général comporte une cotisation au « fonds spécial de l'État » et une cotisation de « protection sociale des travailleurs » dont la contrepartie individuelle n'est pas évidente, et la contribution sociale de solidarité, assise sur l'assiette de l'impôt sur le revenu, finance les caisses tout en étant liquidée comme un impôt.
 
 Cette dernière est traitée dans le livre « Fiscalité », où son assiette la rattache, et, pour l'histoire de son taux et son affectation aux caisses, dans le livre [« Les caisses de sécurité sociale »](../caisses/_etat_caisses.html#sec-caisses-financeur) ; elle est mentionnée ici parce qu'elle contribue au financement des régimes.
 
-### La carte des régimes
+## La carte des régimes
 
 {{< include _encadre_caisses.qmd >}}
 
@@ -58,7 +56,7 @@ Au public : les **salariés affiliés à la CNRPS**, les **pensionnés** de cett
 
 Chacun de ces régimes est présenté pour lui-même en fin de livre, ceux du secteur privé (@sec-cot-prive) puis ceux du secteur public (@sec-cot-public).
 
-### Une architecture en deux étages {#sec-cot-deux-etages}
+## Une architecture en deux étages {#sec-cot-deux-etages}
 
 Sept des huit régimes privés se lisent de la même façon, et ce constat commande la lecture de tout le volume. Chacun repose sur un **taux global** fixé par son texte fondateur et réparti par branches ; sur ce taux global vient s'ajouter, à partir du 1^er^ juillet 2007, le **supplément d'assurance maladie** que le décret n° 2007-1406 du 18 juin 2007 [@decret2007-1406] appelle par paliers pour porter la cotisation maladie de chaque régime au taux unique de 6,75 % institué par la loi n° 2004-71 du 2 août 2004 [@loi2004-71].
 
@@ -76,7 +74,7 @@ Sept des huit régimes privés se lisent de la même façon, et ce constat comma
 
 Le supplément se calcule dans tous les cas de la même manière : il est l'écart entre 6,75 % et la part maladie déjà prélevée **à l'intérieur** du taux global, que le décret n° 2007-1406 énonce régime par régime — 0,91 % pour les salariés agricoles, 2,28 % pour le régime amélioré, 3,04 % pour les travailleurs non salariés et pour les artistes, 4,10 % pour les Tunisiens à l'étranger, 4,75 % pour le régime général. Cette distinction est décisive pour lire les tableaux qui suivent : la part maladie attestée par les textes est **prélevée sur** le taux global et n'y ajoute rien, tandis que le supplément d'assurance maladie s'y ajoute. Le régime des travailleurs à faibles revenus est le seul que le décret n° 2007-1406 ne vise pas ; son taux n'a pas bougé.
 
-### La datation des taux {#sec-cot-datation}
+## La datation des taux {#sec-cot-datation}
 
 Les taux du secteur privé ne sont pas tous datables avec la même sûreté. Quelques textes énoncent expressément la date à laquelle leur taux prend effet — le 1^er^ janvier 1975 pour le fonds spécial de l'État [@loi74-101-lf1975, art. 57], le 1^er^ janvier 1981 pour le régime des salariés agricoles [@loi81-6, art. 88], le 1^er^ octobre 1989 pour le régime agricole amélioré [@loi89-73], le 1^er^ janvier 1988, le 1^er^ janvier 1994 et le 1^er^ janvier 2003 pour les trois relèvements de la quote-part du taux global du régime général affectée au régime de pensions [@decret88-1137, art. 2 ; @decret94-1429, art. 2 ; @decret2003-1212, art. 2], le 1^er^ juillet de chaque année de 1994 à 1997 pour les paliers de la cotisation propre de ce régime [@decret94-1429, art. 1], et, de 2007 à 2011, chacun des paliers d'assurance maladie [@decret2007-1406, art. 6 à 11]. La plupart, en revanche, s'achèvent sur une simple clause d'exécution et laissent le lecteur dater le taux de la publication ou de la signature du texte.
 
@@ -84,11 +82,11 @@ Les taux du secteur privé ne sont pas tous datables avec la même sûreté. Que
 Parmi les textes dont ce volume tire des taux, douze s'achèvent sur une simple clause d'exécution, sans article fixant leur entrée en vigueur : la loi n° 60-30, le décret n° 74-499, le décret n° 97-555, le décret n° 95-538, la loi n° 96-101, le décret n° 95-1166, la loi n° 2002-104, la loi n° 2002-32, le décret n° 2002-916, le décret n° 2003-1544, le décret n° 89-107 et le décret n° 92-631. Ce volume ne date donc les taux qu'ils portent que de la publication ou de la signature du texte, en le disant à chaque fois. Les seules dates d'effet énoncées par un article sont mentionnées comme telles dans les sections qui suivent.
 :::
 
-### Les branches, une à une {#sec-cot-branches}
+## Les branches, une à une {#sec-cot-branches}
 
 Chaque branche est présentée selon le même plan : ses origines, son état initial, ses réformes — au secteur privé puis au secteur public —, et sa longue période. Les taux sont donnés dans les tableaux ; la prose en retrace l'histoire.
 
-### Ce que ce livre traite et ne traite pas {#sec-cot-perimetre}
+## Ce que ce livre traite et ne traite pas {#sec-cot-perimetre}
 
 Le prélèvement est le premier maillon d'une chaîne dont les autres livres du précis prennent la suite. Les mêmes régimes servent ainsi plusieurs livres pour des objets distincts, et celui-ci prend les régimes du côté de ce qu'ils prélèvent.
 
