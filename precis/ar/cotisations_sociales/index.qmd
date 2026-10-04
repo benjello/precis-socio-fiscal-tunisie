@@ -28,7 +28,7 @@ def onglets(panneaux, **options):
         **options))
 ```
 
-يتناول هذا الكتاب **الاقتطاع** الذي يموّل الضمان الاجتماعي: من يساهم، على أي أساس، بأي نسبة، ولتمويل أي فرع. يعرض أولاً الإطار المشترك لجميع الأنظمة – عرض عام (@sec-cot-presentation)، الأساس (@sec-cot-assiette)، النسبة الإجمالية والعبء الاجتماعي (@sec-cot-taux-global) – ثم يتناولها فرعاً فرعاً، من الأصول إلى الوضع الحالي (@sec-cot-branches)، قبل أن يبيّن ما يميّز الأنظمة (@sec-cot-regimes)؛ ويختتم الكتاب بالتحصيل، وعائد المساهمات، ونظرة عامة (@sec-cot-bilan).
+يتناول هذا الكتاب **الاقتطاع** الذي يموّل الضمان الاجتماعي: من يساهم، على أي أساس، بأي نسبة، ولتمويل أي فرع. يعرض أولاً الإطار المشترك لجميع الأنظمة – عرض عام (@sec-cot-presentation)، الأساس (@sec-cot-assiette)، النسبة الإجمالية والعبء الاجتماعي (@sec-cot-taux-global) – ثم يتناولها فرعاً فرعاً، من الأصول إلى الوضع الحالي (@sec-cot-branches)، قبل أن يبيّن ما يميّز الأنظمة (@sec-cot-regimes) وفي أي إطار محاسبي وميزانياتي تديرها الصناديق (@sec-cot-cadre-caisses)؛ ويختتم الكتاب بالتحصيل، وعائد المساهمات، ونظرة عامة (@sec-cot-bilan).
 
 ::: {.callout-note title="ثلاثة مبادئ للقراءة، معتمدة في كل ما يلي"}
 **1. التمييز بين القطاع الخاص والقطاع العام يمتد عبر الكتاب بأكمله.** ليس هذا مجرد تسهيل: بل يحدد الصندوق المختص – [الصندوق الوطني للضمان الاجتماعي](#g-cnss) من جهة، و[الصندوق الوطني للتقاعد والحيطة الاجتماعية](#g-cnrps) من جهة أخرى – والنص القانوني المطبق، وحجم الاقتطاع، الذي يتضاعف من نظام لآخر. حيثما يتم تناول القطاعين معاً، يأتي القطاع الخاص أولاً.
@@ -101,7 +101,7 @@ def onglets(panneaux, **options):
 <!-- TODO (documentaliste) : établir sur texte la définition de l'assiette du régime général
 (quelles primes sont incluses, quel traitement des avantages en nature) : l'article 42 de la loi
 n° 60-30, auquel renvoie le décret n° 95-538, n'a pas été lu. L'article 89 de la loi n° 81-6, qui
-fixe l'assiette du régime agricole amélioré, ne l'a pas été non plus. -->
+fixe l'assiette du régime agricole amélioré, ne l'ا pas été non plus. -->
 
 ### السقوف والحدود {#sec-cot-plafonds}
 
@@ -552,7 +552,7 @@ estimations en attendant la relecture de l'original papier (tunisia-data#26). --
 
 حل القانون عدد 94-28 محل القانون عدد 57-73، الذي ألغاه اعتباراً من 1 جانفي 1995 [@loi94-28, art. 107]. لم يتم عرض تمويل التعويض بموجب قانون 1957 هنا.
 
-<!-- TODO (documentaliste) : établir le financement de la réparation des accidents du travail sous la loi n° 57-73 (la clé loi57-73 n'existe que dans precis/{fr,ar}/prestations_sociales/references.json : à verser au fonds commun). -->
+<!-- TODO (documentaliste) : établir le financement de la réparation des accidents du travail sous la loi n° 57-73 (la clé loi57-73 n'exists que dans precis/{fr,ar}/prestations_sociales/references.json : à verser au fonds commun). -->
 
 #### القانون عدد 94-28 {#sec-cot-at-94-28}
 
@@ -1017,6 +1017,8 @@ table("prevoyance_pensionnes",
 
 قبل عام 2007، كانت الخانة فارغة، ويجب ذكر ذلك. النص السابق الوحيد الذي تم العثور عليه والذي يجعل المتقاعد يساهم على جرايته هو الأمر عدد 73-91 المؤرخ في 12 مارس 1973 [@decret73-91]، الذي تحدد مادته 15 مساهمة المتقاعد بـ 2% – لكن هذه المادة مخصصة بالكامل لنظام التأمين على المرض **الاختياري**، ونسبة تنخفض من 2% إلى 1% في أربعة وثلاثين عاماً لا تُقرأ كسلسلة إجبارية واحدة. ربط هذه النسبة 2% بالفرع الاختياري هو الفرضية الأكثر ترجيحاً؛ لم يتم إثباتها.
 
+{{< include _cadre_caisses.qmd >}}
+
 ## التحصيل، العائد، نظرة عامة {#sec-cot-bilan}
 
 ### التحصيل {#sec-cot-recouvrement}
@@ -1093,7 +1095,7 @@ figtools.figure_tabs(
         "العام الذي صدر فيه القانون عدد 97-4، الذي خفض النسبة الإجمالية "
         "من 20% إلى 18% [@loi97-4]، من 152.3 إلى 116.5 مليون؛ في عام "
         "2003، وهو العام الذي رفع فيه الأمر عدد "
-        "2003-1212 حصة الجرايات مرة أخرى [@decret2003-1212, art. 1-2]، "
+        "2003-1212 حصة الجرايات مرة أخرى [@decret2003-1212, art. 1-2], "
         "من 167.6 إلى 136.3 مليون. تعيد المعينات، من 2000 إلى 2004، "
         "المساهمات المحصلة من اللوحة السابقة: يتراوح الفارق من -1.13% في "
         "عام 2000 إلى -0.81% في عام 2004. عمود عام 1999 مخفي "
@@ -1202,7 +1204,7 @@ figtools.figure_tabs(
 
 : الفروع الممولة باقتطاع كل نظام من القطاع الخاص {#tbl-matrice-branches}
 
-تُقرأ كل خانة في بطاقة النظام (@sec-cot-prive): فهي تعيد تناول تفكيك نسبته الإجمالية، وبالنسبة لفقدان الشغل، جدول الطابقين (@tbl-architecture). لا تظهر فيها مساهمة حوادث الشغل: فهي مستحقة بموجب القانون عدد 94-28، ولا تتبع تقسيم الأنظمة (@sec-cot-at).
+تُقرأ كل خانة في بطاقة النظام (@sec-cot-prive) : فهي تعيد تناول تفكيك نسبته الإجمالية، وبالنسبة لفقدان الشغل، جدول الطابقين (@tbl-architecture). لا تظهر فيها مساهمة حوادث الشغل: فهي مستحقة بموجب القانون عدد 94-28، ولا تتبع تقسيم الأنظمة (@sec-cot-at).
 
 ## ملاحق {#sec-cot-annexes}
 
