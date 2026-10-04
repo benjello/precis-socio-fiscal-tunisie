@@ -298,27 +298,47 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 
 ## Les caisses de sécurité sociale
 
-Livre créé le 4 octobre 2026 (`precis/fr/caisses/`, un seul chapitre `index.qmd` qui inclut
-ses partiels ; plan approuvé : architecture A, étapes 2 à 4). Il porte les organismes — lignée,
-statut, comptes par régime, budget, relations avec l'État ; les livres « dispositifs » gardent
-les règles et renvoient ici par l'encadré commun (`_encadre_caisses.qmd`, engendré par
-`scripts/generate_encadre_caisses.py`, contrôlé par `tests/test_encadre_caisses.py`).
+Livre créé le 4 octobre 2026 (`precis/fr/caisses/`) ; plan approuvé : architecture A, étapes 2
+à 4. Il porte les organismes — histoire, statut, comptes par régime, budget, relations avec
+l'État ; les livres « dispositifs » gardent les règles et renvoient ici par l'encadré commun
+(`_encadre_caisses.qmd`, engendré par `scripts/generate_encadre_caisses.py`, contrôlé par
+`tests/test_encadre_caisses.py`).
 
-- **Panorama — rédigé le 4 octobre 2026** (`index.qmd`, `#sec-caisses-panorama`) : lignée de la
-  CNSS (1960), de la Caisse nationale de retraites et de la Caisse de prévoyance sociale (1959)
-  à la CNRPS (1976), de la CAVIS (1976-1994) et de la CNAM (2004), sur les seuls textes déjà lus
-  par le précis ; tableau caisse × régimes × ce qu'elle recouvre × ce qu'elle sert
-  (`#tbl-caisses-carte`, faits juridiques, tableau Markdown sourcé). Restent : la loi n° 59-45
-  (Caisse de prévoyance sociale), dont seul l'intitulé est connu — lisible dans le corpus,
-  JORT n° 22 de 1959, p. 368 ; le partage du recouvrement de la cotisation maladie après la loi
-  n° 2017-47, à reporter dans le tableau (texte lu par le livre « Prestations sociales »).
-- **Contribution sociale de solidarité — histoire du taux tenue ici** (`#sec-caisses-financeur`) :
-  un point (loi de finances pour 2018, art. 53), un demi-point pour les revenus déclarés en
-  2023-2025 avec dispense des salaires et pensions ≤ 5 000 D nets (loi de finances pour 2023,
-  art. 22, § 2, lu le 4 octobre 2026 dans l'édition arabe, JORT n° 141/2022, pp. 4061-4062 ;
-  l'édition française n'est pas en ligne). « Rémunérations publiques » et « Fiscalité » disent la
-  même chose et renvoient ici. Reste : l'état du droit pour les revenus déclarés à partir de 2026
-  (LF 2025, loi n° 2024-48, à lire) — Q10 de `fiscalite-irpp-besoins-documentation.md`.
+- **Découpage en chapitres — fait le 4 octobre 2026** (plan validé par l'humain) : `index.qmd`
+  « Présentation » (non numérotée : périmètre `#sec-caisses-perimetre`, carte
+  `#tbl-caisses-carte`) ; `_histoire.qmd` « Des caisses du Protectorat aux caisses nationales »
+  (`#sec-caisses-panorama`) ; `_statut_cadre.qmd` ; `_comptes_regimes.qmd` (avec la ventilation
+  du taux global) ; `_etat_caisses.qmd` ; `_comptes_longue_periode.qmd` (avec « Ce que les textes
+  ne disent pas ») ; annexes `_chronologie.qmd` puis glossaire. Ancres inchangées ; liens entrants
+  corrigés vers la page de chaque chapitre (cotisations, fiscalité, rémunérations, retraites).
+  Mêmes chapitres déclarés dans `precis/ar/caisses/_quarto.yml`.
+- **Histoire — rédigée le 4 octobre 2026** (`_histoire.qmd`, note `caisses-histoire.md`) : avant
+  1956, d'après Bertrand (*Bulletin économique et social de la Tunisie*, n° 73 et 74 de 1953) et
+  les visas des textes de 1956-1961 — Société de prévoyance des fonctionnaires et employés
+  tunisiens (pensions, régime de prévoyance de 1951), Caisse de retraite des ouvriers de l'État,
+  caisses du semi-public, accidents du travail sans caisse (décret du 15 mars 1921), trois caisses
+  de compensation des allocations familiales (décret du 8 juin 1944), mutualité (décret du
+  18 février 1954, intitulé seul) ; 1956-1960 lus au JORT — surcompensation (décret du 8 novembre
+  1956), Caisse centrale des prestations sociales (loi n° 58-130), Société de prévoyance → Caisse
+  nationale de retraites (lois n° 59-18 et 59-19), Caisse de prévoyance sociale (loi n° 59-45,
+  **lue** : la tâche précédente est close), CNSS et ce qu'elle reprend (loi n° 60-30, art. 119 à
+  131) ; puis la lignée 1960-2004. Restent : **hors corpus** — Journal officiel tunisien antérieur
+  à 1956 (ni jort_cache, ni corpus local, ni pist.tn) pour les textes fondateurs de la Société,
+  de la caisse des ouvriers de l'État et des caisses d'allocations familiales (fiche
+  `r-caisses-protectorat-fondation`), mois du n° 74 du *BEST* ; **à océriser ou relire** — loi
+  n° 59-5 (JORT n° 3 de 1959 : le fichier local ne rend rien à l'OCR), loi n° 59-87, décret du
+  29 mars 1956 (JORT n° 27 de 1956, lisible à l'image), loi n° 61-9 (fiche `r-ccps-devolution`).
+- Le partage du recouvrement de la cotisation maladie après la loi n° 2017-47 reste à reporter
+  dans `#tbl-caisses-carte` (texte lu par le livre « Prestations sociales »).
+- **Contribution sociale de solidarité — histoire du taux tenue ici** (`#sec-caisses-financeur`),
+  corrigée le 4 octobre 2026 d'après `css-verification.md` : un point (loi de finances pour 2018,
+  art. 53) ; dispense permanente des seuls salaires et pensions ≤ 5 000 D nets depuis la loi de
+  finances pour 2020 (art. 39) ; demi-point pour les revenus dont la déclaration échoit de 2023 à
+  2025 (loi de finances pour 2023, art. 22, édition arabe seule, pp. 4062-4063), prorogé à 2026
+  (loi de finances pour 2026, art. 87) ; la loi de finances pour 2025 ne touche pas la CSS des
+  personnes physiques. Lecture administrative (retenue sur les sommes payées en 2023-2026) dite
+  sans citation : notes communes 1/2023 et 1/2026 à verser (bibliographe, source publique à
+  vérifier). Reste la date à retenir pour le tableau daté (openfisca-tunisia#474 et #475).
 - **Étape 5 du plan, non faite** : chapitres « État et caisses » et « comptes dans la durée » à
   compléter par des séries à construire dans tunisia-data — comptes des organismes de sécurité
   sociale des comptes de la nation (S1314, 2001-2025, rupture de base à documenter), transferts

@@ -1076,6 +1076,135 @@ entries:
         تكتسي صبغة إدارية تحت إشراف وزارة الشؤون الاجتماعية.
       synonymes: []
 
+  - id: spfet
+    acronyme: null
+    statut: valide
+    references: [loi59-19, bertrand-1953-securite-sociale-2]
+    source_definition: {ref: loi59-18, locator: "art. 1"}
+    source_traduction: {ref: loi59-18, locator: "art. 1"}
+    voir_aussi: [cnrps, regime-de-prevoyance]
+    fr:
+      terme: Société de prévoyance des fonctionnaires et employés tunisiens
+      definition: >
+        Organisme qui sert, sous le Protectorat, les pensions de retraite des
+        fonctionnaires de l'État et des collectivités publiques et gère leur
+        régime de prévoyance. La loi n° 59-18 du 5 février 1959 dispose qu'elle
+        prend l'appellation de Caisse nationale de retraites (art. 1), l'une des
+        deux caisses réunies en 1976 dans la CNRPS.
+      synonymes: []
+    ar:
+      terme: الجمعية الاحتياطية للموظفين والمستخدمين التونسيين
+      definition: >
+        هيكل يصرف، في عهد الحماية، جرايات التقاعد لموظفي الدولة والجماعات
+        العمومية ويتصرّف في نظام الحيطة الخاص بهم. وينصّ القانون عدد 18 لسنة
+        1959 المؤرخ في 5 فيفري 1959 على أنه يُطلق عليها اسم الصندوق القومي
+        للتقاعد (الفصل 1)، وهو أحد الصندوقين اللذين جُمعا سنة 1976 في الصندوق
+        الوطني للتقاعد والحيطة الاجتماعية.
+      synonymes: []
+
+  - id: regime-de-prevoyance
+    acronyme: null
+    statut: valide
+    references: [bertrand-1953-securite-sociale-2]
+    source_definition: {ref: loi59-45, locator: "art. 1"}
+    source_traduction: {ref: loi59-45, locator: "art. 14"}
+    voir_aussi: [spfet, cnrps]
+    fr:
+      terme: Régime de prévoyance
+      definition: >
+        Régime obligatoire institué par un décret du 12 avril 1951 en faveur
+        des personnels de l'État et des collectivités publiques, qui couvre les
+        interventions chirurgicales, la longue maladie et le décès. Géré d'abord
+        par la Société de prévoyance des fonctionnaires et employés tunisiens,
+        il est confié en 1959 à la Caisse de prévoyance sociale (loi n° 59-45,
+        art. 1).
+      synonymes: []
+    ar:
+      terme: نظام الحيطة
+      definition: >
+        نظام إجباري أُحدث بأمر مؤرخ في 12 أفريل 1951 لفائدة أعوان الدولة
+        والجماعات العمومية، يغطي العمليات الجراحية والأمراض الطويلة الأمد
+        والوفاة. تصرّفت فيه أولًا الجمعية الاحتياطية للموظفين والمستخدمين
+        التونسيين، ثم عُهد به سنة 1959 إلى صندوق الحيطة الاجتماعية (القانون
+        عدد 45 لسنة 1959، الفصل 1).
+      synonymes: [نظام احتياطي]
+
+  - id: caisse-compensation-allocations-familiales
+    acronyme: null
+    statut: valide
+    references: [bertrand-1953-securite-sociale-1]
+    source_definition: {ref: loi58-130, locator: "art. 1"}
+    source_traduction: {ref: loi58-130, locator: "art. 1"}
+    voir_aussi: [allocation-familiale, surcompensation, caisse-centrale-prestations-sociales]
+    fr:
+      terme: Caisse de compensation des allocations familiales
+      definition: >
+        Organisme agréé qui sert, sous le régime du décret du 8 juin 1944, les
+        allocations familiales des salariés de ses employeurs adhérents, sur
+        leurs cotisations. Trois caisses existaient ; la loi n° 58-130 leur
+        retire l'agrément et leur substitue une caisse unique (art. 1 et 5).
+      synonymes: [caisse d'allocations familiales]
+    ar:
+      terme: صندوق تعويض المنح العائلية
+      definition: >
+        هيكل مصادق عليه يصرف، في إطار الأمر المؤرخ في 8 جوان 1944، المنح
+        العائلية لأجراء المؤجرين المنخرطين فيه، من مساهماتهم. وكانت هذه
+        الصناديق ثلاثة؛ وقد سحب القانون عدد 130 لسنة 1958 المصادقة الممنوحة لها
+        وعوّضها بصندوق وحيد (الفصلان 1 و5).
+      synonymes: []
+
+  - id: surcompensation
+    acronyme: null
+    statut: provisoire
+    references: []
+    source_definition: {ref: decret-1956-11-08-surcompensation, locator: "art. 2"}
+    voir_aussi: [caisse-compensation-allocations-familiales]
+    fr:
+      terme: Surcompensation
+      definition: >
+        Mécanisme de péréquation entre caisses d'allocations familiales
+        organisé par le décret du 8 novembre 1956 : les employeurs des caisses
+        dont le rapport des prestations aux salaires est inférieur à celui de
+        l'ensemble des caisses acquittent une contribution spéciale, versée à un
+        compte du Trésor qui subventionne les caisses dont ce rapport est
+        supérieur.
+      synonymes: []
+    ar:
+      terme: الزيادة في تعويض المنح العائلية
+      definition: >
+        آلية تعديل بين صناديق المنح العائلية نظّمها الأمر المؤرخ في 8 نوفمبر
+        1956: يدفع مؤجرو الصناديق التي تقلّ فيها نسبة المنح إلى الأجور عن نسبة
+        مجموع الصناديق مساهمة خاصة تُدفع إلى حساب بالخزينة يمنح إعانات للصناديق
+        التي تفوق فيها هذه النسبة.
+      synonymes: []
+
+  - id: caisse-centrale-prestations-sociales
+    acronyme: null
+    statut: valide
+    references: [loi60-30]
+    source_definition: {ref: loi58-130, locator: "art. 1"}
+    source_traduction: {ref: loi58-130, locator: "art. 1"}
+    voir_aussi: [caisse-compensation-allocations-familiales, cnss]
+    fr:
+      terme: Caisse centrale des prestations sociales
+      definition: >
+        Caisse unique chargée du service des allocations familiales par la loi
+        n° 58-130 du 22 novembre 1958, à compter du 15 décembre 1958, à la place
+        des caisses de compensation dont l'agrément est retiré (art. 1 et 9).
+        La loi n° 60-30 abroge ce texte et maintient auprès de la CNSS les
+        affiliations et les immatriculations faites auprès d'elle (art. 125,
+        126 et 131).
+      synonymes: []
+    ar:
+      terme: الصندوق المركزي للمنح الاجتماعية
+      definition: >
+        صندوق وحيد عُهد إليه بدفع المنح العائلية بمقتضى القانون عدد 130 لسنة
+        1958 المؤرخ في 22 نوفمبر 1958، ابتداءً من 15 ديسمبر 1958، عوضًا عن
+        صناديق التعويض التي سُحبت منها المصادقة (الفصلان 1 و9). وقد ألغى
+        القانون عدد 30 لسنة 1960 هذا النص وأبقى لدى الصندوق الوطني للضمان
+        الاجتماعي على الانخراطات والترسيمات المنجزة لديه (الفصول 125 و126 و131).
+      synonymes: []
+
   - id: cnam
     acronyme: CNAM
     statut: valide

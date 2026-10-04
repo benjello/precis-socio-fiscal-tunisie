@@ -44,7 +44,7 @@ Ce livre traite du **prélèvement** qui finance la sécurité sociale : qui cot
 
 La [cotisation sociale](#g-cotisations-sociales) se distingue de l'impôt par sa **contrepartie** : elle ouvre des droits à l'[assuré social](#g-assure-social) pour lequel elle est versée, alors que l'impôt alimente le budget de l'État sans contrepartie individualisée. Cette distinction n'est pas absolue en Tunisie — le régime général comporte une cotisation au « fonds spécial de l'État » et une cotisation de « protection sociale des travailleurs » dont la contrepartie individuelle n'est pas évidente, et la contribution sociale de solidarité, assise sur l'assiette de l'impôt sur le revenu, finance les caisses tout en étant liquidée comme un impôt.
 
-Cette dernière est traitée dans le livre « Fiscalité », où son assiette la rattache, et, pour l'histoire de son taux et son affectation aux caisses, dans le livre [« Les caisses de sécurité sociale »](../caisses/index.html#sec-caisses-financeur) ; elle est mentionnée ici parce qu'elle contribue au financement des régimes.
+Cette dernière est traitée dans le livre « Fiscalité », où son assiette la rattache, et, pour l'histoire de son taux et son affectation aux caisses, dans le livre [« Les caisses de sécurité sociale »](../caisses/_etat_caisses.html#sec-caisses-financeur) ; elle est mentionnée ici parce qu'elle contribue au financement des régimes.
 
 ### La carte des régimes
 
@@ -320,7 +320,7 @@ Ce dernier palier n'a jamais été atteint. Le décret n° 97-555 du 31 mars 199
 
 : Quote-part du taux global affectée au régime de pensions du secteur non agricole, 1974-2003, en points de salaire selon les deux lectures {#tbl-quote-part-rsna}
 
-La quote-part vaut 1,25/20^e^ dans la rédaction de 1974 [@decret74-499, art. 5] ; le décret n° 88-1137 du 11 juin 1988 la porte à 4,25/20^e^ à compter du 1^er^ janvier 1988 [@decret88-1137, art. 1-2] ; le décret n° 94-1429 à 6,25/20^e^ à compter du 1^er^ janvier 1994 — c'est la seule disposition de ce décret à laquelle son article 2 donne un effet rétroactif [@decret94-1429, art. 1-2] ; le décret n° 2003-1212 du 2 juin 2003 à **7,25/20^e^**, « à partir du 1^er^ janvier 2003 » [@decret2003-1212, art. 1-2]. Aucun autre modificatif de l'article 5 b) n'est identifié ici. Le pouvoir de ventiler le taux global entre les régimes, dont ces relèvements procèdent, et ce que les comptes de la caisse en montrent sont exposés dans le livre [« Les caisses de sécurité sociale »](../caisses/index.html#sec-caisses-transferts).
+La quote-part vaut 1,25/20^e^ dans la rédaction de 1974 [@decret74-499, art. 5] ; le décret n° 88-1137 du 11 juin 1988 la porte à 4,25/20^e^ à compter du 1^er^ janvier 1988 [@decret88-1137, art. 1-2] ; le décret n° 94-1429 à 6,25/20^e^ à compter du 1^er^ janvier 1994 — c'est la seule disposition de ce décret à laquelle son article 2 donne un effet rétroactif [@decret94-1429, art. 1-2] ; le décret n° 2003-1212 du 2 juin 2003 à **7,25/20^e^**, « à partir du 1^er^ janvier 2003 » [@decret2003-1212, art. 1-2]. Aucun autre modificatif de l'article 5 b) n'est identifié ici. Le pouvoir de ventiler le taux global entre les régimes, dont ces relèvements procèdent, et ce que les comptes de la caisse en montrent sont exposés dans le livre [« Les caisses de sécurité sociale »](../caisses/_comptes_regimes.html#sec-caisses-transferts).
 
 <!-- RECHERCHE r-dec74-499-modificatifs : modificatifs du décret n° 74-499, dont l'art. 5 b) (voir docs/recherches.yml) -->
 
@@ -474,7 +474,7 @@ La loi n° 2004-71 confie à la Caisse nationale d'assurance maladie, outre le r
 
 Jusqu'en 2007, la maladie est financée, dans chaque régime, par une fraction de son taux global (@tbl-assurances-sociales). Le décret n° 2007-1406 porte la cotisation de six régimes du secteur privé et des agents publics au même niveau de 6,75 %, par des calendriers étalés de 2007 à 2011 (@tbl-amu-regimes). Le régime des travailleurs à faibles revenus, que le décret ne vise pas, reste à ses 2,5 points de prestations de soins.
 
-Avant la loi n° 2004-71, le bloc « assurances sociales » du taux global ne finance pas seulement des prestations servies aux assurés : une part en va au système public de santé. Les emplois de la branche dans les comptes de la CNSS, de 1990 à 2004, sont exposés dans le livre [« Les caisses de sécurité sociale »](../caisses/index.html#sec-caisses-cnss-assurances-sociales).
+Avant la loi n° 2004-71, le bloc « assurances sociales » du taux global ne finance pas seulement des prestations servies aux assurés : une part en va au système public de santé. Les emplois de la branche dans les comptes de la CNSS, de 1990 à 2004, sont exposés dans le livre [« Les caisses de sécurité sociale »](../caisses/_comptes_longue_periode.html#sec-caisses-cnss-assurances-sociales).
 
 ### Les prestations familiales {#sec-cot-famille}
 
@@ -557,7 +557,7 @@ figtools.figure_tabs(
 
 <!-- RECHERCHE r-atmp-echelle-modificatifs : modificatif de l'échelle des taux AT/MP après le décret n° 99-1010 (voir docs/recherches.yml) -->
 
-Les ressources et les emplois du régime de réparation, de 1995 à 2004, et ceux de la protection sociale des travailleurs, de 1997 à 2004, sont exposés dans le livre [« Les caisses de sécurité sociale »](../caisses/index.html#sec-caisses-cnss-atmp-pst).
+Les ressources et les emplois du régime de réparation, de 1995 à 2004, et ceux de la protection sociale des travailleurs, de 1997 à 2004, sont exposés dans le livre [« Les caisses de sécurité sociale »](../caisses/_comptes_longue_periode.html#sec-caisses-cnss-atmp-pst).
 
 ### La perte d'emploi, la protection sociale des travailleurs et le fonds spécial de l'État {#sec-cot-emploi}
 
@@ -571,7 +571,7 @@ Trois cotisations du régime général financent des interventions qui ne relèv
 
 La cotisation de protection sociale des travailleurs est instituée par la loi n° 96-101 du 18 novembre 1996 [@loi96-101]. Elle finance la prise en charge par la CNSS des indemnités dues aux travailleurs licenciés pour raisons économiques ou technologiques lorsque l'entreprise est en cessation de paiement, la caisse étant subrogée dans leurs droits, ainsi que le maintien des allocations familiales et de la majoration pour salaire unique pendant les quatre trimestres suivant la cessation d'activité [@loi96-101, art. 2 à 4 et 7]. Son taux de 0,4 % des salaires est « à prélever sur le taux global » [@loi96-101, art. 5] : la loi n'augmente pas le prélèvement, elle en réaffecte une fraction (@tbl-ventilation-rsna). Elle ne comporte pas de clause d'entrée en vigueur.
 
-Dans les comptes de bilan de la caisse, la branche ainsi financée est excédentaire chaque année de 1997 à 2004 : ses cotisations comptabilisées passent de 11,4 à 18,2 millions de dinars courants, quand ses emplois restent compris entre 1,0 et 4,4 millions par an [@cnss-retrospective-1990-2004]. La figure qui les montre est présentée dans le livre [« Les caisses de sécurité sociale »](../caisses/index.html#fig-cnss-atmp-pst).
+Dans les comptes de bilan de la caisse, la branche ainsi financée est excédentaire chaque année de 1997 à 2004 : ses cotisations comptabilisées passent de 11,4 à 18,2 millions de dinars courants, quand ses emplois restent compris entre 1,0 et 4,4 millions par an [@cnss-retrospective-1990-2004]. La figure qui les montre est présentée dans le livre [« Les caisses de sécurité sociale »](../caisses/_comptes_longue_periode.html#fig-cnss-atmp-pst).
 
 #### La perte d'emploi {#sec-cot-perte-emploi}
 
@@ -615,7 +615,7 @@ Les branches ont été exposées une à une ; cette partie prend les régimes un
 
 Le prélèvement total de chaque régime est comparé plus haut (@tbl-coin-regimes). Les fiches qui suivent prennent chaque régime pour lui-même : son texte fondateur et ce qu'il institue, qui paie, ce qui le distingue, le tableau de ses cotisations par branche, et le renvoi au livre « Prestations sociales » pour les droits qu'il ouvre.
 
-Ce que chaque régime prélève et ce qu'il dépense ne s'équilibrent pas de la même façon d'un régime à l'autre. Les comptes de chaque régime de la CNSS, de 1990 à 2004, sont exposés dans le livre [« Les caisses de sécurité sociale »](../caisses/index.html#sec-caisses-cnss-regimes).
+Ce que chaque régime prélève et ce qu'il dépense ne s'équilibrent pas de la même façon d'un régime à l'autre. Les comptes de chaque régime de la CNSS, de 1990 à 2004, sont exposés dans le livre [« Les caisses de sécurité sociale »](../caisses/_comptes_longue_periode.html#sec-caisses-cnss-regimes).
 
 
 #### Les salariés non agricoles, régime de référence {#sec-cot-rsna}
@@ -624,7 +624,7 @@ Le régime général naît de la **loi n° 60-30 du 14 décembre 1960, relative 
 
 Son **article 34** fixe le champ d'affiliation, et le fait par énumération de secteurs plutôt que par une clause générale : salariés des établissements industriels et commerciaux, des professions libérales, des coopératives, des sociétés civiles, des syndicats et des associations ; personnels des transports ; salariés du commerce, y compris les voyageurs, représentants et placiers ; salariés du bâtiment [@loi60-30, art. 34]. Le régime couvre les assurances sociales — maladie, maternité, décès —, les prestations familiales et, par la loi n° 60-33 du même jour, les pensions de vieillesse, d'invalidité et de survivants.
 
-La caisse est bien celle de 1960 : la loi n° 86-86 du 1^er^ septembre 1986 ne la crée pas, elle prévoyait son remplacement par une architecture qui n'est jamais entrée en vigueur ; le livre [« Les caisses de sécurité sociale »](../caisses/index.html#sec-caisses-reorganisations) en retrace l'histoire.
+La caisse est bien celle de 1960 : la loi n° 86-86 du 1^er^ septembre 1986 ne la crée pas, elle prévoyait son remplacement par une architecture qui n'est jamais entrée en vigueur ; le livre [« Les caisses de sécurité sociale »](../caisses/_comptes_regimes.html#sec-caisses-reorganisations) en retrace l'histoire.
 
 Les trois blocs dont la somme forme son taux (@tbl-somme-trois-textes) ont chacun leur histoire : celle du taux global de l'article 41 est exposée plus haut (@sec-cot-taux-unique), celle de la cotisation propre et de la quote-part du régime de pensions avec cette branche (@sec-cot-pensions-prive), celle du fonds spécial de l'État avec les cotisations liées à l'emploi (@sec-cot-fonds-special). L'assurance maladie, la perte d'emploi et la retraite complémentaire, qui s'y ajoutent, sont exposées avec leur branche (@sec-cot-maladie-2004 ; @sec-cot-perte-emploi ; @sec-cot-complementaire).
 
@@ -830,7 +830,7 @@ Ce qui distingue ce régime du côté du prélèvement est la prise en charge de
 
 C'est la partie du système dont l'histoire est la mieux établie — et la seule dont chaque palier de taux se rattache à un article de loi qu'on peut lire.
 
-Le régime naît en **1959**. La **loi n° 59-18 du 5 février 1959** [@loi59-18] fixe le régime des pensions civiles et militaires de retraite et institue, en son article 5, au profit de la Caisse nationale de retraites, un prélèvement de 7 % sur le traitement de base. La caisse qui gère aujourd'hui le régime, la **CNRPS**, est formée en 1976 à partir de cette caisse et de la Caisse de prévoyance sociale, par l'article 28 de la loi de finances pour la gestion 1976 [@loi75-83, art. 28] ; le livre [« Les caisses de sécurité sociale »](../caisses/index.html#sec-caisses-cnrps) retrace cette lignée.
+Le régime naît en **1959**. La **loi n° 59-18 du 5 février 1959** [@loi59-18] fixe le régime des pensions civiles et militaires de retraite et institue, en son article 5, au profit de la Caisse nationale de retraites, un prélèvement de 7 % sur le traitement de base. La caisse qui gère aujourd'hui le régime, la **CNRPS**, est formée en 1976 à partir de cette caisse et de la Caisse de prévoyance sociale, par l'article 28 de la loi de finances pour la gestion 1976 [@loi75-83, art. 28] ; le livre [« Les caisses de sécurité sociale »](../caisses/_histoire.html#sec-caisses-cnrps) retrace cette lignée.
 
 Le régime est refondu en **1985** par la **loi n° 85-12 du 5 mars 1985** [@loi85-12], qui en confie la gestion à la CNRPS (article 4), le fait financer par une contribution partagée entre l'agent et l'employeur (article 8), et assied cette contribution sur « les différents éléments **permanents** de la rémunération de l'agent, qu'ils soient en espèces ou en nature » (article 10). Son article 76 abroge la loi de 1959 « à l'exception des dispositions relatives à l'invalidité » — des dispositions qui, vingt-deux ans plus tard, servaient toujours : l'article 47 (nouveau), tel qu'il résulte de la loi n° 2007-43 [@loi2007-43], renvoie encore à « la commission de réforme visée à l'article 29 de la loi n° 59-18 ».
 
