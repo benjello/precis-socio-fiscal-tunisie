@@ -11,11 +11,12 @@ télécharge aussi en PDF.
 
 | Volume | Objet |
 |---|---|
-| Retraites | les régimes de retraite des secteurs public et privé |
-| Cotisations sociales | taux, assiettes et plafonds des prélèvements sur les revenus du travail |
-| Prestations sociales | aide et assistance sociales, soutien à l'emploi, prestations familiales |
-| Rémunérations publiques | statuts, grilles, indemnités des agents publics |
-| Fiscalité | l'impôt sur le revenu et les autres impôts |
+| I. Fiscalité | l'impôt sur le revenu et les autres impôts |
+| II. Cotisations sociales | taux, assiettes et plafonds des prélèvements sur les revenus du travail |
+| III. Prestations sociales | aide et assistance sociales, soutien à l'emploi, prestations familiales |
+| IV. Retraites | les régimes de retraite des secteurs public et privé |
+| V. Caisses de sécurité sociale | la CNSS, la CNRPS et la CNAM : leur lignée, leur statut, leurs comptes par régime et leurs relations avec l'État |
+| VI. Rémunérations publiques | statuts, grilles, indemnités des agents publics |
 
 Chaque dispositif y est présenté dans son histoire, réforme par réforme, avec des tableaux datés
 et des liens vers les textes. C'est un travail en cours : certains chapitres sont complets,
