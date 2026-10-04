@@ -1,0 +1,38 @@
+name: Donner son avis sur la forme
+description: Plan, lisibilité, niveau de détail, ce qui manque pour que l'ouvrage vous serve — يمكنكم الكتابة بالعربية
+title: "Avis : "
+labels: ["retour-lecteur", "forme"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Dites-nous ce qui vous a aidé et ce qui vous a gêné. Aucune remarque n'est trop petite.
+  - type: dropdown
+    id: lecteur
+    attributes:
+      label: Dans quel cadre lisez-vous le précis ?
+      options:
+        - Administration ou caisse de sécurité sociale
+        - Enseignement ou recherche
+        - Organisme de coopération ou bailleur
+        - Conseil, entreprise ou syndicat
+        - Presse ou société civile
+        - Autre
+  - type: textarea
+    id: recherche
+    attributes:
+      label: Ce que vous cherchiez
+    validations:
+      required: true
+  - type: textarea
+    id: avis
+    attributes:
+      label: Ce qui vous a manqué, ou ce qui vous a gêné
+      description: Un plan peu clair, un passage obscur, un tableau difficile à lire, un sujet absent.
+    validations:
+      required: true
+  - type: input
+    id: citation
+    attributes:
+      label: Souhaitez-vous être cité dans les remerciements ?
+      description: Si oui, indiquez sous quel nom. Nul n'est cité sans son accord.
