@@ -503,7 +503,17 @@ la loi n° 2002-61. La version antérieure de ce chapitre mentionnait un départ
 Premier ministre après avis de la CAREP » : la loi n° 2002-61 (mise à la retraite proportionnelle
 par arrêté du Premier ministre) en est vraisemblablement le fondement, à confirmer. -->
 
-À côté de ces cas, la loi ouvre un **droit général au départ anticipé**, quelle que soit la fonction. Ses conditions — 55 ans et 35 ans de services en 1985 — ont été portées à 57 ans et 37 ans en 2007 (@sec-cnrps-reforme-2007), et un dispositif temporaire l'a ouvert dès 57 ans aux agents qui ont la durée minimale de services, de 2022 à 2024 (@sec-cnrps-reforme-2022).
+À côté de ces cas, la loi ouvre un **droit général au départ anticipé**, quelle que soit la fonction. Ses conditions — 55 ans et 35 ans de services en 1985 — ont été portées à 57 ans et 37 ans en 2007 (@sec-cnrps-reforme-2007), et un dispositif temporaire l'a ouvert dès 57 ans aux agents qui ont la durée minimale de services, de 2022 à 2024 (@sec-cnrps-reforme-2022). Les conditions d'âge et de durée du départ sur demande et celle du départ des mères se lisent au @tbl-cnrps-departs-anticipes.
+
+```{python}
+#| echo: false
+#| output: asis
+table("cnrps_departs_anticipes",
+      "Conditions du départ anticipé sur demande et du départ des mères de trois enfants, CNRPS",
+      "tbl-cnrps-departs-anticipes")
+```
+
+Sources : @loi85-12, art. 5 et 30 ; @loi88-71, art. 1 et 2 ; @loi2007-43. La loi n° 2007-43, sans clause d'effet, devient exécutoire le 2 juillet 2007.
 
 Le droit acquis de manière anticipée n'ouvre pas toujours une pension immédiate. L'article 41 organise une [jouissance différée](#g-jouissance-differee) selon le motif du départ.
 
@@ -590,15 +600,15 @@ Avant 1981, le plancher était exprimé par référence au traitement afférent 
 #| echo: false
 #| output: asis
 table("cnrps_plafond_plancher",
-      "Plafond et pension minimale du régime des pensions civiles et militaires",
+      "Plafond, pension minimale et allocation de vieillesse du régime des pensions civiles et militaires",
       "tbl-cnrps-plafond-plancher")
 ```
 
-Sources : @loi59-18, art. 22, § II, et 52 ; @decretloi70-1, art. 1 et 2 ; @loi81-70, art. 4-5 ; @loi85-12, art. 38 et 39. Les plafonds ne portent pas sur la même base : ceux de 1959 et de 1970 sur la rémunération indiciaire globale, celui de 1981 sur la rémunération globale de l'article 21 de la loi de 1959, celui de 1985 sur la rémunération de liquidation. Avant 1981, la pension minimale ne s'exprime pas en fraction du SMIG, d'où la case vide : elle figure au @tbl-cnrps-1959-1985 et au @tbl-cnrps-1959-1985-chiffres. Le décret n° 82-972 du 30 juin 1982, exposé ci-dessus, précise le calcul du plancher — le SMIG horaire rapporté à 2 400 heures par an — et sa revalorisation automatique, sans en changer le niveau [@decret82-972, art. 1-2] ; il n'a donc pas de ligne propre.
+Sources : @loi59-18, art. 22, § II, et 52 ; @decretloi70-1, art. 1 et 2 ; @loi81-70, art. 4-5 ; @loi85-12, art. 38, 39 et 42. Les plafonds ne portent pas sur la même base : ceux de 1959 et de 1970 sur la rémunération indiciaire globale, celui de 1981 sur la rémunération globale de l'article 21 de la loi de 1959, celui de 1985 sur la rémunération de liquidation. Avant 1981, la pension minimale ne s'exprime pas en fraction du SMIG, d'où la case vide : elle figure au @tbl-cnrps-1959-1985 et au @tbl-cnrps-1959-1985-chiffres. Le décret n° 82-972 du 30 juin 1982, exposé ci-dessus, précise le calcul du plancher — le SMIG horaire rapporté à 2 400 heures par an — et sa revalorisation automatique, sans en changer le niveau [@decret82-972, art. 1-2] ; il n'a donc pas de ligne propre.
 
 Exprimés en fraction du salaire minimum, les planchers en suivent l'évolution, que la @fig-pension-minimale traduit en dinars, avec ceux du régime des salariés non agricoles et la pension moyenne des deux caisses. Le manuel de liquidation de la caisse précise un effet de qualification : lorsque le produit du taux par la rémunération de liquidation est inférieur ou égal au minimum garanti, « ce produit n'est pas considéré comme une pension de retraite mais comme un minimum garanti », distinction qui, selon le manuel, emporte des conséquences sur les accessoires et sur les retenues [@cnrps-manuel-liquidation-2013, p. 85].
 
-L'**[allocation de vieillesse](#g-allocation-de-vieillesse)** s'adresse aux agents qui comptent **au moins cinq années** d'ancienneté sans atteindre la durée de services de l'article 22. Ils ont le choix entre le remboursement de leurs contributions et une allocation égale à **la moitié du SMIG** du régime de 2 400 heures par an [@loi85-12, art. 42]. Depuis la loi n° 97-74 du 18 novembre 1997, cette allocation est « réversible au profit du conjoint survivant et des orphelins », dans les conditions applicables aux pensions [@loi97-74].
+L'**[allocation de vieillesse](#g-allocation-de-vieillesse)** s'adresse aux agents qui comptent **au moins cinq années** d'ancienneté sans atteindre la durée de services de l'article 22. Ils ont le choix entre le remboursement de leurs contributions et une allocation égale à **la moitié du SMIG** du régime de 2 400 heures par an [@loi85-12, art. 42] (@tbl-cnrps-plafond-plancher). Depuis la loi n° 97-74 du 18 novembre 1997, cette allocation est « réversible au profit du conjoint survivant et des orphelins », dans les conditions applicables aux pensions [@loi97-74].
 
 ### Les accessoires {#sec-cnrps-accessoires}
 
@@ -649,7 +659,15 @@ $$
 P_c = \theta_c(k)\cdot P, \qquad P_o = \theta_o\cdot P, \qquad P_c + k\,P_o \le P
 $$
 
-où $P_c$ est la pension du conjoint survivant, $P_o$ la pension de chaque orphelin, $k$ le nombre d'orphelins, et $\theta_c(k)$ et $\theta_o$ les taux de ces deux pensions, en fraction de $P$, pension de retraite dont l'agent avait bénéficié ou aurait pu bénéficier [@loi85-12, art. 43 et 45]. Les taux sont, à titre indicatif, $\theta_o = 10\,\%$ depuis 1959, et $\theta_c(k) = 75\,\%$ tant qu'aucune réduction ne joue, depuis le 1^er^ mai 1981 — 50 % pour la veuve auparavant (@tbl-cnrps-1959-1985 ; @tbl-cnrps-1959-1985-chiffres). Le taux du conjoint $\theta_c(k)$ décroît avec $k$ pendant le service des pensions d'orphelins : il est réduit au titre du troisième enfant, puis de chacun des suivants, sans descendre au-dessous de 50 % [@loi85-12, art. 43]. La formule vaut tant que les orphelins sont moins de cinq ; à partir de cinq, la pension du conjoint est de 50 % de $P$, et $P_o$ devient la part égale de chaque orphelin dans les 50 % restants [@loi85-12, art. 45].
+où $P_c$ est la pension du conjoint survivant, $P_o$ la pension de chaque orphelin, $k$ le nombre d'orphelins, et $\theta_c(k)$ et $\theta_o$ les taux de ces deux pensions, en fraction de $P$, pension de retraite dont l'agent avait bénéficié ou aurait pu bénéficier [@loi85-12, art. 43 et 45]. Les taux sont, à titre indicatif (@tbl-cnrps-survivants), $\theta_o = 10\,\%$ depuis 1959, et $\theta_c(k) = 75\,\%$ tant qu'aucune réduction ne joue, depuis le 1^er^ mai 1981 — 50 % pour la veuve auparavant (@tbl-cnrps-1959-1985 ; @tbl-cnrps-1959-1985-chiffres). Le taux du conjoint $\theta_c(k)$ décroît avec $k$ pendant le service des pensions d'orphelins : il est réduit au titre du troisième enfant, puis de chacun des suivants, sans descendre au-dessous de 50 % [@loi85-12, art. 43]. La formule vaut tant que les orphelins sont moins de cinq ; à partir de cinq, la pension du conjoint est de 50 % de $P$, et $P_o$ devient la part égale de chaque orphelin dans les 50 % restants [@loi85-12, art. 45].
+
+```{python}
+#| echo: false
+#| output: asis
+table("cnrps_survivants",
+      "Droits dérivés du régime des pensions civiles et militaires : taux, plafond du cumul et partage",
+      "tbl-cnrps-survivants")
+```
 
 Les conditions de la pension d'orphelin ont été élargies en deux temps, en 1997 puis en 2007, et la place des indemnités familiales a changé en 1996.
 

@@ -123,7 +123,15 @@ Pour les travailleurs non salariés, les cotisations sont assises sur un **reven
 
 Pour les artistes, créateurs et intellectuels, le **décret n° 2003-894 du 21 avril 2003** [@decret2003-894] retient un revenu forfaitaire, produit d'un coefficient de classe par le SMIG de 48 heures rapporté à 2 400 heures par an, sans pouvoir être inférieur à deux fois ce SMIG. Les dix classes vont du coefficient 2 au coefficient 18. Les cotisations sont trimestrielles.
 
-Pour les Tunisiens à l'étranger, l'assiette est forfaitaire, produit d'un coefficient de classe par le SMIG de 48 heures rapporté à 2 400 heures par an, l'assuré se plaçant à son choix dans l'une des quatre classes de coefficient 2, 4, 6 ou 9 [@decret89-107, art. 6].
+Pour les Tunisiens à l'étranger, l'assiette est forfaitaire, produit d'un coefficient de classe par le SMIG de 48 heures rapporté à 2 400 heures par an, l'assuré se plaçant à son choix dans l'une des quatre classes de coefficient 2, 4, 6 ou 9 [@decret89-107, art. 6]. Les coefficients des trois régimes sont rassemblés au @tbl-classes-revenu.
+
+```{python}
+#| echo: false
+#| output: asis
+table("classes_revenu",
+      "Classes de revenus des régimes à assiette forfaitaire, en multiples du salaire minimum",
+      "tbl-classes-revenu")
+```
 
 #### Le salaire minimum agricole {#sec-cot-smag}
 
@@ -173,7 +181,15 @@ La pension du secteur public supporte aussi, depuis 2002, une contribution au ti
 
 La loi n° 60-30 ne fixe pas un taux par risque, mais un **taux global** unique pour l'ensemble des régimes qu'elle institue — les assurances sociales et les prestations familiales —, à la charge de l'employeur et du travailleur [@loi60-30, art. 41]. Le régime de pensions du secteur non agricole reçoit à partir de 1974 une quote-part de la masse de ces cotisations, exprimée en **vingtièmes** [@decret74-499, art. 5] : un vingtième valait alors un point de salaire. Cette fraction, et ce qu'elle devient après 1997, sont exposées avec la branche des pensions (@sec-cot-pensions-prive).
 
-**Le taux global de l'article 41** est fixé à l'origine par la loi n° 60-30 elle-même à **15 % à la charge de l'employeur et 5 % à la charge du travailleur** [@loi60-30, art. 41]. Il passe à **13 % / 5 %** avec l'article 41 nouveau issu de la loi n° 97-4, publiée le 4 février 1997 [@loi97-4] ; la loi n'énonce pas de date d'effet pour ce taux de base, de sorte qu'il court à défaut de sa publication. Entre-temps, une **variante conventionnelle** a existé : le second paragraphe de l'article 41 nouveau ouvre une réduction de deux points aux employeurs assurant à leurs salariés une couverture de soins dans un régime conventionnel, applicable à compter du 1^er^ octobre 1996 et précisée par le décret n° 97-1645 du 25 août 1997 [@decret97-1645]. Les entreprises concernées acquittaient 11 % au lieu de 13 %, soit un total employeur de 14,00 % au lieu de 16,00 %, jusqu'à l'abrogation du décret n° 97-1645 au 1^er^ juillet 2007.
+**Le taux global de l'article 41** est fixé à l'origine par la loi n° 60-30 elle-même à **15 % à la charge de l'employeur et 5 % à la charge du travailleur** [@loi60-30, art. 41]. Il passe à **13 % / 5 %** avec l'article 41 nouveau issu de la loi n° 97-4, publiée le 4 février 1997 [@loi97-4] ; la loi n'énonce pas de date d'effet pour ce taux de base, de sorte qu'il court à défaut de sa publication. Entre-temps, une **variante conventionnelle** a existé : le second paragraphe de l'article 41 nouveau ouvre une réduction de deux points aux employeurs assurant à leurs salariés une couverture de soins dans un régime conventionnel, applicable à compter du 1^er^ octobre 1996 et précisée par le décret n° 97-1645 du 25 août 1997 [@decret97-1645]. Les entreprises concernées acquittaient 11 % au lieu de 13 %, soit un total employeur de 14,00 % au lieu de 16,00 %, jusqu'à l'abrogation du décret n° 97-1645 au 1^er^ juillet 2007 (@tbl-reduction-conventionnelle).
+
+```{python}
+#| echo: false
+#| output: asis
+table("reduction_conventionnelle",
+      "Réduction conventionnelle de la part patronale du taux global, 1996-2007",
+      "tbl-reduction-conventionnelle")
+```
 
 <!-- TODO (documentaliste) : la colonne « taux global » du tableau tbl-quote-part-rsna suppose que
 le taux de base de l'article 41 de la loi n° 60-30 est resté de 20 % de 1960 à la loi n° 97-4.
@@ -353,18 +369,15 @@ La part de l'employeur public suit une trajectoire parallèle mais décalée : 1
 
 Les textes qui relèvent la part de l'employeur sont ceux qui relèvent celle de l'agent, à une exception près. La loi n° 94-71 l'augmente de 1,2 point au 1^er^ juillet 1995 [@loi94-71] ; l'article 85 de la loi de finances pour 2002, de 1,5 point par paliers de 2002 à 2006 [@loi2001-123-lf2002, art. 85] ; la loi n° 2007-43, de 1,8 point de 2007 à 2009 [@loi2007-43] ; la loi n° 2019-37, de 2 points [@loi2019-37, art. 4]. L'exception est le **décret-loi n° 2011-48**, qui relève d'un point la seule contribution de l'employeur, au 1^er^ juillet 2011 [@decretloi2011-48].
 
-| Texte | Effet | Contribution de l'employeur |
-|---|---|---:|
-| loi de finances pour 1975, art. 39 | 1975 | 10 % → 7 % |
-| loi n° 94-71 | 1^er^ juillet 1995 | + 1,2 point |
-| loi de finances pour 2002, art. 85 | 1^ers^ juillet 2002 à 2006, par cinq paliers | + 1,5 point |
-| loi n° 2007-43 | 1^ers^ janvier 2007, 2008 et 2009, par paliers de 0,60 point | + 1,8 point |
-| décret-loi n° 2011-48 | 1^er^ juillet 2011 | + 1 point |
-| loi n° 2019-37, art. 4 | premier jour du mois suivant l'entrée en vigueur de la loi | + 2 points |
+```{python}
+#| echo: false
+#| output: asis
+table("cnrps_employeur",
+      "Contribution de l'employeur public au régime des pensions civiles et militaires, 1959-2019",
+      "tbl-cnrps-employeur")
+```
 
-: Mouvements de la contribution de l'employeur public au régime des pensions civiles et militaires, 1975-2019 {#tbl-cnrps-employeur}
-
-Sources : [@loi74-101-lf1975, art. 39 ; @loi94-71 ; @loi2001-123-lf2002, art. 85 ; @loi2007-43 ; @decretloi2011-48 ; @loi2019-37, art. 4].
+Sources : [@loi59-18, art. 8 ; @loi74-101-lf1975, art. 39 ; @loi94-71 ; @loi2001-123-lf2002, art. 85 ; @loi2007-43 ; @decretloi2011-48 ; @loi2019-37, art. 4]. La colonne « Variation » donne, ligne par ligne, le mouvement qu'opère le texte. Comme pour la retenue de l'agent, le millésime de 1959 est une convention : la loi n° 59-18 n'énonce pas de date d'effet pour son article 8.
 
 #### La longue période {#sec-cot-pensions-longue-periode}
 
@@ -410,7 +423,15 @@ Dans chaque régime, seule la part maladie est attestée par un texte, et elle n
 
 #### Le secteur public {#sec-cot-maladie-public}
 
-Les agents affiliés à la CNRPS cotisent au régime de base d'assurance maladie selon une montée en charge propre, de 3 % au 1^er^ juillet 2007 à 4,88 % au 1^er^ juillet 2008 et 6,75 % au 1^er^ juillet 2009, répartis entre l'employeur et l'agent [@decret2007-1406, art. 4]. Les pensionnés de la caisse cotisent sur leur pension, selon un calendrier distinct (@sec-cot-pensionnes).
+Les agents affiliés à la CNRPS cotisent au régime de base d'assurance maladie selon une montée en charge propre, de 3 % au 1^er^ juillet 2007 à 4,88 % au 1^er^ juillet 2008 et 6,75 % au 1^er^ juillet 2009, répartis entre l'employeur et l'agent [@decret2007-1406, art. 4] (@tbl-cnrps-maladie). Les pensionnés de la caisse cotisent sur leur pension, selon un calendrier distinct (@sec-cot-pensionnes).
+
+```{python}
+#| echo: false
+#| output: asis
+table("cnrps_maladie",
+      "Cotisation d'assurance maladie des agents affiliés à la CNRPS, 2007-2009",
+      "tbl-cnrps-maladie")
+```
 
 <!-- TODO (documentaliste) : reporter la répartition employeur/agent de l'art. 4 du décret n° 2007-1406 (lu à l'image, p. 2157, d'après la note de la référence), et établir la cotisation maladie des agents publics avant 2007. -->
 
@@ -660,7 +681,15 @@ Dans les comptes de bilan de la caisse, la branche ainsi financée est excédent
 
 #### La perte d'emploi {#sec-cot-perte-emploi}
 
-L'article 17 de la loi n° 2024-48 du 9 décembre 2024, portant loi de finances pour l'année 2025 [@lf-2025], crée un fonds spécial d'assurance contre la perte d'emploi pour raisons économiques, destiné à financer un régime d'assurance contre la perte collective d'emploi pour des motifs étrangers aux deux parties de la relation de travail et un dispositif d'accompagnement des travailleurs licenciés. Parmi les ressources du fonds figure une cotisation de **0,5 % supportée par chacune des deux parties**, assise sur la masse salariale déclarée auprès de la CNSS ; le taux figure donc dans la loi elle-même, et non dans le décret d'application qu'elle annonce. Ce décret n'a pas été identifié à ce jour.
+L'article 17 de la loi n° 2024-48 du 9 décembre 2024, portant loi de finances pour l'année 2025 [@lf-2025], crée un fonds spécial d'assurance contre la perte d'emploi pour raisons économiques, destiné à financer un régime d'assurance contre la perte collective d'emploi pour des motifs étrangers aux deux parties de la relation de travail et un dispositif d'accompagnement des travailleurs licenciés. Parmi les ressources du fonds figure une cotisation de **0,5 % supportée par chacune des deux parties**, assise sur la masse salariale déclarée auprès de la CNSS ; le taux figure donc dans la loi elle-même, et non dans le décret d'application qu'elle annonce (@tbl-perte-emploi). Ce décret n'a pas été identifié à ce jour.
+
+```{python}
+#| echo: false
+#| output: asis
+table("perte_emploi",
+      "Cotisation au fonds d'assurance contre la perte d'emploi pour raisons économiques",
+      "tbl-perte-emploi")
+```
 
 L'article ne comporte pas de clause d'entrée en vigueur propre : la cotisation court au 1^er^ janvier 2025 en vertu de la règle générale d'application des lois de finances à l'année budgétaire.
 
@@ -976,7 +1005,15 @@ Les **membres du gouvernement, les députés et les gouverneurs** relèvent enfi
 
 #### Les pensionnés {#sec-cot-pensionnes}
 
-Un prélèvement pèse enfin sur la pension elle-même, au titre de la prévoyance sociale. Son ancrage est le **décret n° 2007-1406 du 18 juin 2007** [@decret2007-1406], qui assied la cotisation sur « le montant brut de la pension » et échelonne son taux : 1 % au 1^er^ juillet 2007, 2 % en 2008, 3 % en 2009, 4 % en 2010.
+Un prélèvement pèse enfin sur la pension elle-même, au titre de la prévoyance sociale. Son ancrage est le **décret n° 2007-1406 du 18 juin 2007** [@decret2007-1406], qui assied la cotisation sur « le montant brut de la pension » et échelonne son taux : 1 % au 1^er^ juillet 2007, 2 % en 2008, 3 % en 2009, 4 % en 2010 (@tbl-prevoyance-pensionnes).
+
+```{python}
+#| echo: false
+#| output: asis
+table("prevoyance_pensionnes",
+      "Cotisation de prévoyance sociale assise sur la pension des retraités de la CNRPS, 2007-2010",
+      "tbl-prevoyance-pensionnes")
+```
 
 Avant 2007, la case est vide, et il faut le dire. Le seul texte antérieur retrouvé qui fasse cotiser un pensionné sur sa pension est le décret n° 73-91 du 12 mars 1973 [@decret73-91], dont l'article 15 fixe à 2 % la cotisation du retraité — mais cet article est par ailleurs entièrement consacré au régime **facultatif** d'assurance-maladie, et un taux qui baisserait de 2 % à 1 % en trente-quatre ans ne se lit pas comme une même série obligatoire. Le rattachement de ce 2 % à la branche facultative est l'hypothèse la plus plausible ; elle n'est pas établie.
 

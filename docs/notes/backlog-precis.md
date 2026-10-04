@@ -82,6 +82,16 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   leurs clés CSL ; leur mention sans citation dans l'annexe de l'IRPP est à rattacher à
   ces clés, pas à recréer. Voir `biblio-a-rapatrier.md` avant toute écriture Zotero.
 
+- **Tableaux de paramètres engendrés (recension du 2 octobre, lots 1f à 1h) — fait le
+  3 octobre 2026** : synthèse des générations du barème (`tbl-bareme-irpp-generations`),
+  colonnes neuves des charges de famille (`tbl-charges-famille`), taux et minimum de l'IS
+  (`tbl-is-taux`, `tbl-is-minimum`), tarifs pétroliers et tarif spécifique de 1988
+  (`tbl-dc-petroliers`, `tbl-dc-specifiques-1988`). Les relevés CSV de `tarifs/` restent la
+  source des cases que les paramètres ne portent pas (minimum de 1990-2005, état consolidé de
+  2023, alcools) et servent de garde-fou. À faire : la terminologie arabe des noms de produits
+  pétroliers (terminologue), que l'instantané arabe laisse en français, comme le faisait
+  déjà le livre arabe.
+
 ## Retraites
 
 - **Résultat de la branche des pensions du RSNA, 1990-2004 — fait le 3 octobre 2026** (`#fig-rsna-resultat-1990-2004`, dans `#sec-rsna-equilibre`), tiré de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026). Le tableau de cette branche n'a pas d'estimation (la colonne 2000 y est rétablie par les totaux) ; si une relecture de l'original change ses montants, relire la note de lecture. Piste : le même tableau existe pour les autres régimes (RSA, RSAA, RTNS) et pour le régime complémentaire. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches).
@@ -137,6 +147,20 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 - **Régimes spéciaux** : le décret-loi n° 2011-48 relève aussi la contribution de
   l'employeur pour les membres du gouvernement et les gouverneurs ; le chapitre ne le dit pas.
 
+- **Tableaux de paramètres engendrés (recension du 2 octobre, lots 1a à 1c) — fait le
+  3 octobre 2026** : trois tableaux faits main remplacés par des tableaux mixtes engendrés
+  (`tbl-rsna-reference`, `tbl-rsna-survivants`, `tbl-rsa-evolution`) ; tableaux neufs pour
+  l'invalidité du régime non agricole, le régime agricole amélioré, le régime complémentaire,
+  les Tunisiens à l'étranger, les travailleurs à faibles revenus, les artistes, les départs
+  anticipés et les droits dérivés de la CNRPS ; allocation de vieillesse ajoutée à
+  `tbl-cnrps-plafond-plancher`, durée annuelle du SMAG à `tbl-rtns-agricole`. Restent faits
+  main : `tbl-rsna-coeur`, `tbl-rsna-anticipes`, `tbl-rsna-ages-derogatoires`, les deux
+  tableaux de revalorisation, `tbl-rsa-rsaa`, `tbl-rtns-coeur`, `tbl-comparaison-secteurs`,
+  `tbl-cnrps-1959-1985`, `tbl-cnrps-jouissance`, `tbl-cnrps-bonifications`,
+  `tbl-cnrps-orphelins`, `tbl-cnrps-perequation`, `tbl-regimes-speciaux` et les annexes de
+  textes : leurs valeurs sont classées B ou C dans `recension-parametres-en-dur.md`. Les
+  tableaux arabes faits main de ces trois chapitres attendent la retraduction.
+
 ## Prestations sociales
 
 - **Dépense des allocations familiales, 1990-2004 — fait le 3 octobre 2026** (`#fig-cnss-allocations-familiales`, `#sec-pf-longue-periode`), tirée de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026), déflatée par l'IPC des annuaires de l'INS (`ins-annuaire-ipc`). Restent : allocataires, enfants, montant moyen, dépense avant 1990 et après 2004 (TODO du chapitre). **221 valeurs de 1999** (et quelques-unes de 2000) masquées par la reliure restent à lire sur l'original papier (tunisia-data#26) ; en attendant, la figure trace des estimations hachurées ou creuses. Quand le classeur revient : réinjecter dans tunisia-data, relancer `figtools.refresh_cache("cnss-retrospective-ressources-emplois")`, puis relire la note de lecture, qui cite des montants. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches).
@@ -170,6 +194,13 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   l'édition arabe du JORT n° 88, pp. 2058-2059. Il relève de 50 à 100 D l'aide de rentrée
   scolaire, avec effet au 1er septembre 2024, élargit les cas couverts et interdit le cumul
   avec des aides publiques au même titre. L'édition française reste à vérifier.
+
+- **Tableau engendré — fait le 3 octobre 2026** : les indemnités familiales du secteur public
+  (`tbl-indemnites-familiales-public`) sont désormais le tableau du livre « Retraites », émis
+  dans ce livre ; le montant de l'enfant handicapé (1996), sans paramètre, est passé dans la
+  ligne « Sources ». Les taux qui financent l'assurance maladie des agents et des pensionnés
+  de la CNRPS et le fonds de perte d'emploi de 2025 viennent aussi du livre « Cotisations
+  sociales » (`tbl-cnrps-maladie`, `tbl-prevoyance-pensionnes`, `tbl-perte-emploi`).
 
 ## Rémunérations publiques
 
@@ -218,6 +249,10 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   le livre « Prestations sociales » établissait déjà sans que celui-ci en tire parti.
 - **Code des collectivités locales** : voir la lecture locale de l'édition arabe ci-dessus ;
   son édition française n'est pas au corpus.
+- **Tableaux de paramètres engendrés — fait le 3 octobre 2026** : le régime indiciaire
+  reçoit, depuis le générateur des cotisations, la retenue pour pension de la CNRPS
+  (`tbl-cnrps-retraite`) et le taux salarial de la contribution sociale de solidarité
+  (`tbl-css-salarie`). Le CSV des augmentations reste fait main (RE-01, RE-02, classés C).
 
 ## Cotisations sociales
 
@@ -246,6 +281,16 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   négatives ont déjà leur fiche dans `docs/recherches.yml`. Relancer ces fiches plutôt
   que répéter leur conclusion. Pour les modificatifs du décret n° 74-499 après avril
   2026, la fiche `r-dec74-499-modificatifs` est couverte jusqu'au 18 septembre 2026.
+
+- **Tableaux de paramètres engendrés (recension du 2 octobre, lot A) — fait le 3 octobre
+  2026** : contribution de l'employeur public à la CNRPS (`tbl-cnrps-employeur`, qui remplace
+  le tableau fait main), prévoyance sociale des pensionnés (`tbl-prevoyance-pensionnes`),
+  réduction conventionnelle de 1996-2007 (`tbl-reduction-conventionnelle`), classes de
+  revenus des régimes à assiette forfaitaire (`tbl-classes-revenu`), assurance maladie des
+  agents de la CNRPS (`tbl-cnrps-maladie`), perte d'emploi (`tbl-perte-emploi`). Restent faits main
+  les tableaux classés B ou C dans `recension-parametres-en-dur.md` (assiettes, somme des
+  trois textes, ventilation, montée en charge AMU, longue période) : ils attendent des PR
+  openfisca-tunisia.
 
 ## Forme des chapitres — le plan type, et où il ne s'applique pas
 

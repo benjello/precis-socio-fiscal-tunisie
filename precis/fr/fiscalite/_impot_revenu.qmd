@@ -312,16 +312,13 @@ La loi n° 2025-17 du 12 décembre 2025 portant loi de finances pour 2026 ne mod
 
 ### Vue d'ensemble des générations de barème
 
-: Générations successives du barème progressif sur le revenu global — contribution personnelle d'État jusqu'aux revenus de 1989, puis IRPP à partir des revenus de 1990 {#tbl-bareme-irpp-generations}
-
-| | Revenus 1986 (CPE) | Revenus 1990 → 2016 | Revenus 2017 → 2024 | Revenus 2025 → 2026 |
-|---|---|---|---|---|
-| Nombre de tranches (tranche à 0 % comprise) | 18 | 6 | 5 | 8 |
-| Limite supérieure de la tranche à 0 % | 900 D | 1 500 D | 5 000 D | 5 000 D |
-| Taux marginal supérieur | 68 % | 35 % | 35 % | 40 % |
-| Seuil du taux marginal supérieur | 80 000 D | 50 000 D | 50 000 D | 70 000 D |
-| Texte | art. 8 de la loi n° 85-109 du 31/12/1985 | art. 44 § I du code annexé à la loi n° 89-114 du 30/12/1989 | art. 14 § 1 de la loi n° 2016-78 du 17/12/2016 | art. 36 § 1 de la loi n° 2024-48 du 09/12/2024 |
-| JORT | n° 91 du 31 déc. 1985, p. 1731 | n° 1 des 2-5 janv. 1990, p. 9 | n° 105 du 27 déc. 2016, p. 3831 | n° 149 du 10 déc. 2024, p. 3429-3430 (éd. fr.) |
+```{python}
+#| echo: false
+#| output: asis
+table("bareme_generations",
+      "Générations successives du barème progressif sur le revenu global — contribution personnelle d'État jusqu'aux revenus de 1989, puis IRPP à partir des revenus de 1990",
+      "tbl-bareme-irpp-generations")
+```
 
 Sources : @lf-1986 ; @code-irpp-is-1990 ; @lf-2017 ; @lf-2025 ; @lf-2026.
 

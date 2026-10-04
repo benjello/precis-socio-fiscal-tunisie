@@ -248,16 +248,72 @@ def avec_liens(fabrique: Callable[[], Any]) -> tuple[Any, list[tuple[str, str | 
 
 def ecrire_tableau(chemin_tableau: str | Path, df: "pd.DataFrame",
                    liens: list[tuple[str, str | None]], langue: str,
-                   entete: str = "") -> None:
+                   entete: str = "", autres_livres: tuple[str, ...] = (),
+                   a_gauche: bool = False) -> None:
     """Écrit le snapshot Markdown d'un tableau, puis ses liens (`<nom>.liens.yml`).
 
     `entete` : commentaire HTML placé avant le tableau ; un snapshot qui en porte un se
     termine par une ligne vide, comme les générateurs l'ont toujours écrit.
+
+    `autres_livres` : RÉEMPLOI D'UN TABLEAU DANS UN AUTRE LIVRE. Le même snapshot est écrit
+    aussi dans `precis/<langue>/<livre>/tables/`, pour chaque livre nommé — les indemnités
+    familiales du secteur public servent aux retraites et aux prestations, les taux de la
+    CNRPS aux cotisations et aux rémunérations. La fabrique reste unique : le tableau ne se
+    duplique pas dans un second générateur, il est émis deux fois. Les clés de citation du
+    tableau doivent exister dans le `references.json` de chaque livre qui le reçoit.
     """
-    corps = tableau_vers_markdown(df)
-    Path(chemin_tableau).write_text(
-        f"{entete}{corps}\n" if entete else corps, encoding="utf-8")
-    ecrire_liens(chemin_tableau, liens, langue)
+    corps = tableau_vers_markdown(df, a_gauche=a_gauche)
+    texte = f"{entete}{corps}\n" if entete else corps
+    chemin = Path(chemin_tableau)
+    cibles = [chemin] + [chemin.parents[2] / livre / "tables" / chemin.name
+                         for livre in autres_livres]
+    for cible in cibles:
+        cible.parent.mkdir(parents=True, exist_ok=True)
+        cible.write_text(texte, encoding="utf-8")
+        ecrire_liens(cible, liens, langue)
+
+
+def cles_manquantes(df: "pd.DataFrame", dossier_livre: str | Path) -> list[str]:
+    """Clés de citation `[@clé]` du tableau absentes de la bibliographie du livre.
+
+    `dossier_livre` : `precis/<langue>/<livre>`. Le livre cite son `references.json` et
+    celui, partagé, de sa langue (`precis/<langue>/references.json`). Un tableau réemployé
+    dans un autre livre (`ecrire_tableau(..., autres_livres=…)`) doit y résoudre aussi :
+    sinon la citation s'imprime telle quelle dans la page.
+    """
+    import json
+
+    dossier = Path(dossier_livre)
+    connues: set[str] = set()
+    for fichier in (dossier / "references.json", dossier.parent / "references.json"):
+        if fichier.is_file():
+            donnees = json.loads(fichier.read_text(encoding="utf-8"))
+            entrees = donnees.get("items", []) if isinstance(donnees, dict) else donnees
+            connues |= {e.get("id") for e in entrees}
+    citees = {c for v in df.astype(str).to_numpy().ravel()
+              for c in re.findall(r"@([\w:.#$%&+?<>~/-]+?)(?=[,;\]\s]|$)", v)}
+    return sorted(citees - connues)
+
+
+def ecrire_dans_livres(racine: str | Path, langue: str, livres: tuple[str, ...], nom: str,
+                       df: "pd.DataFrame", liens: list[tuple[str, str | None]],
+                       entete: str = "") -> str | None:
+    """Écrit un tableau dans `precis/<langue>/<livre>/tables/` pour chaque livre de `livres`.
+
+    Le premier livre est celui du tableau ; les suivants le reçoivent en réemploi. Avant
+    d'écrire quoi que ce soit, contrôle que les clés de citation résolvent dans CHAQUE livre :
+    rend le message d'erreur à afficher, ou None si tout est écrit.
+    """
+    racine = Path(racine)
+    for livre in livres:
+        absentes = cles_manquantes(df, racine / langue / livre)
+        if absentes:
+            return (f"✗ {langue}/{livre}/{nom} : clés absentes de la bibliographie — "
+                    f"{', '.join(absentes)}")
+    premier, *autres = livres
+    ecrire_tableau(racine / langue / premier / "tables" / nom, df, liens, langue,
+                   entete=entete, autres_livres=tuple(autres))
+    return None
 
 
 def charge_parametre(chemin_relatif: str, paquet: str | None = None) -> dict[str, Any] | None:
@@ -450,6 +506,28 @@ def _reference_a_la_date(donnees: dict[str, Any], cle_date: Any) -> tuple[str, s
     return "", ""
 
 
+_PIST_FR_AR = re.compile(r"(/jort/\d{4}/\d{4})F(/)Jo(\w+\.pdf)$")
+
+
+def lien_reference(titre: str, lien: str, langue: str = "fr") -> str:
+    """Titre de référence d'un paramètre, rendu en LIEN vers le Journal officiel.
+
+    Les tableaux affichaient le titre seul, sans lien, alors que le paramètre porte l'adresse
+    du fascicule : le lecteur ne pouvait pas remonter au texte. En arabe, l'adresse de
+    l'édition française de pist.tn (`…/AAAAF/JoNNNAA.pdf`) est remplacée par celle de
+    l'édition arabe (`…/AAAAA/JaNNNAA.pdf`), comme le veut la convention du précis. Sans
+    lien, le titre seul ; sans titre, rien.
+    """
+    if not titre:
+        return ""
+    if not lien:
+        return titre
+    if langue == "ar":
+        lien = _PIST_FR_AR.sub(r"\1A\2Ja\3", lien)
+    titre_md = titre.replace("[", "\\[").replace("]", "\\]")
+    return f"[{titre_md}]({lien})"
+
+
 def serie_datee(chemin_relatif: str) -> list[tuple[str, float | None, str, str]]:
     """Série (date d'effet, valeur, titre de la référence, lien) d'un paramètre scalaire.
 
@@ -490,13 +568,13 @@ def tableau_serie(
     if formateur is None:
         formateur = lambda v: "—" if v is None else formate_dinars(v)
     lignes = []
-    for date, valeur, titre, _lien in serie:
+    for date, valeur, titre, lien in serie:
         ligne = {
             "À compter des revenus de": date[:4],
             colonne_valeur: formateur(valeur),
         }
         if avec_reference:
-            ligne["Texte"] = titre or "—"
+            ligne["Texte"] = lien_reference(titre, lien) or "—"
         lignes.append(ligne)
     return pd.DataFrame(lignes)
 
@@ -507,6 +585,7 @@ def tableau_evolution(
     colonne_periode: str = "Années de revenus",
     derniere_annee: str = "2026",
     colonne_texte: str = "Texte",
+    langue: str = "fr",
 ) -> "pd.DataFrame | None":
     """Plusieurs paramètres côte à côte, une ligne par période homogène.
 
@@ -552,9 +631,9 @@ def tableau_evolution(
             texte = f"[@{cles[date]}]"
         else:
             for chemin, _e, _f in specs:
-                for d, _v, titre, _h in series[chemin]:
+                for d, _v, titre, h in series[chemin]:
                     if d == date and titre:
-                        texte = titre
+                        texte = lien_reference(titre, h, langue)
                         break
                 if texte:
                     break
@@ -597,22 +676,24 @@ def tableau_bareme(
 
 def _colonne_numerique(df: "pd.DataFrame", colonne: str) -> bool:
     """Vrai si toutes les cellules tiennent du nombre (chiffres, %, dinars, tiret)."""
-    motif = re.compile(r"^[\d\s.,%—–-]+$|^.*\d.*(%|D)$")
+    motif = re.compile(r"^[\d\s.,%—–+−-]+$|^.*\d.*(%|D)$")
     return all(motif.match(str(v).strip()) for v in df[colonne])
 
 
-def tableau_vers_markdown(df: "pd.DataFrame") -> str:
+def tableau_vers_markdown(df: "pd.DataFrame", a_gauche: bool = False) -> str:
     """DataFrame -> tableau Markdown pipe.
 
     Seules les colonnes dont toutes les cellules sont numériques sont alignées à droite ;
     une colonne de texte, comme la référence du texte de loi, reste alignée à gauche.
+    `a_gauche` aligne tout à gauche : un tableau dont les colonnes de périodes mêlent des
+    valeurs et des états (« ligne inexistante ») se lit mieux d'un seul alignement.
     """
     colonnes = list(df.columns)
     lignes = ["| " + " | ".join(str(c) for c in colonnes) + " |"]
     lignes.append(
         "|"
         + "|".join(
-            "---:" if i > 0 and _colonne_numerique(df, c) else "---"
+            "---:" if i > 0 and not a_gauche and _colonne_numerique(df, c) else "---"
             for i, c in enumerate(colonnes)
         )
         + "|"
@@ -738,21 +819,21 @@ def tableau_evolution_datee(
 
     def titre_a(date):
         for chemin, _e, _f in specs:
-            for d, _v, titre, _h in series[chemin]:
+            for d, _v, titre, h in series[chemin]:
                 if d == date and titre:
-                    return titre
-        return ""
+                    return titre, h
+        return "", ""
 
     lignes = []
     for date in dates:
         ligne = {colonne_periode: formate_date(date, langue)}
         for chemin, entete, formateur in specs:
             ligne[entete] = formateur(valeur_a(chemin, date))
-        titre = titre_a(date)
+        titre, lien = titre_a(date)
         if cles and date in cles:
             ligne[colonne_texte] = f"[@{cles[date]}]"
         else:
-            ligne[colonne_texte] = titre or "—"
+            ligne[colonne_texte] = lien_reference(titre, lien, langue) or "—"
         if avec_attestation:
             ligne[colonne_attestation] = attestation(titre, langue)
         lignes.append(ligne)
@@ -760,38 +841,143 @@ def tableau_evolution_datee(
 
 
 def tableau_a_la_date(
-    specs: list[tuple[str, str, Callable[[float | None], str]]],
+    specs: list[tuple[str | tuple[str, ...], str, Callable[[float | None], str]]],
     date: str,
     cles: dict[str, str] | None = None,
     entetes: tuple[str, str, str] = ("Paramètre", "Valeur", "Texte"),
+    colonne_effet: str | None = None,
+    langue: str = "fr",
+    separateur: str = " ; ",
 ) -> "pd.DataFrame | None":
     """Rendu VERTICAL — un paramètre par ligne — d'un dispositif à millésime unique.
 
     La contribution aux frais de crèche ou les aides ponctuelles de l'AMEN social n'ont
     qu'une seule date d'effet : les mettre en colonnes donnerait un tableau d'une ligne et
     de cinq colonnes hétérogènes (un montant, une durée, deux âges, un plafond). La lecture
-    par ligne « Paramètre / Valeur / Texte » est celle du chapitre.
+    par ligne « Paramètre / Valeur / Texte » est celle du chapitre. Elle sert aussi de fiche
+    d'un régime entier — âge, stage, taux, plafond, minimum —, à l'état en vigueur à `date`.
 
     `cles` : chemin du paramètre -> clé de citation ; à défaut, titre de la référence.
+    Un chemin peut être un TUPLE de paramètres parallèles (les classes de revenus d'un
+    régime) : la case aligne leurs valeurs, séparées par `separateur`, et la clé est celle
+    du premier. `colonne_effet` : en-tête d'une colonne qui donne la date d'effet de la
+    valeur retenue — utile quand les lignes n'ont pas toutes la même.
     """
     if pd is None:
         return None
     lignes = []
-    for chemin, libelle, formateur in specs:
-        serie = serie_datee(chemin)
-        if not serie:
-            return None
-        releve_note(chemin, libelle)
-        retenue, titre_retenu = None, ""
-        for d, v, titre, _h in serie:
-            if d <= date:
-                retenue, titre_retenu = v, titre
-        if cles and chemin in cles:
-            texte = f"[@{cles[chemin]}]"
+    for chemins, libelle, formateur in specs:
+        groupe = chemins if isinstance(chemins, tuple) else (chemins,)
+        valeurs, effet, titre_retenu, lien_retenu = [], "", "", ""
+        for rang, chemin in enumerate(groupe, start=1):
+            serie = serie_datee(chemin)
+            if not serie:
+                return None
+            releve_note(chemin, libelle if len(groupe) == 1 else f"{libelle} ({rang})")
+            retenue = None
+            for d, v, titre, h in serie:
+                if d <= date:
+                    retenue = v
+                    if rang == 1:
+                        titre_retenu, lien_retenu = titre, h
+                    if retenue is not None:
+                        effet = max(effet, d)
+            valeurs.append(formateur(retenue))
+        premier = groupe[0]
+        if cles and premier in cles:
+            texte = f"[@{cles[premier]}]"
         else:
-            texte = titre_retenu or "—"
-        lignes.append(dict(zip(entetes, (libelle, formateur(retenue), texte))))
+            texte = lien_reference(titre_retenu, lien_retenu, langue) or "—"
+        ligne = {entetes[0]: libelle}
+        if colonne_effet:
+            ligne[colonne_effet] = formate_date(effet, langue) if effet else VIDE
+        ligne[entetes[1]] = separateur.join(valeurs)
+        ligne[entetes[2]] = texte
+        lignes.append(ligne)
     return pd.DataFrame(lignes)
+
+
+# ----------------------------------------------- tableau mixte : gabarit de cellules
+#
+# MOTIF « VALEURS ENGENDRÉES + RÈGLES SAISIES » (recension du 2 octobre 2026, motif 1). Bien
+# des tableaux du précis mêlent, dans une même case, une règle et une valeur : « la veuve,
+# et le veuf invalide : 50 % », « salaires des trois ou cinq dernières années ». Ni un
+# tableau de valeurs datées, qui perdrait la règle, ni un tableau écrit à la main, qui
+# figerait la valeur, ne leur conviennent. Le gabarit garde le texte de la case, dans les
+# deux langues, et y injecte chaque valeur lue dans le paramètre à la date qui la fonde :
+# corriger le paramètre corrige la case.
+
+
+class Lecture:
+    """Une valeur de paramètre à une date, à injecter dans une case de gabarit.
+
+    `formateur` : le nom d'une méthode de `Formateurs` (« taux », « age », « part_smig »,
+    « coefficient »…), « duree:<unité> » (« duree:mois »), ou une fonction `(valeur, langue)
+    -> texte`. `libelle` : {langue: libellé} du lien « Base législative ». Une valeur
+    absente à la date — paramètre inconnu, valeur nulle — fait échouer le tableau : une case
+    qui annonce une valeur ne se publie pas vide.
+    """
+
+    def __init__(self, chemin: str, date: str, formateur: str | Callable = "taux",
+                 libelle: dict[str, str] | str | None = None):
+        self.chemin, self.date, self.formateur, self.libelle = chemin, date, formateur, libelle
+
+    def valeur(self) -> float:
+        serie = serie_datee(self.chemin) or taux_datee(self.chemin)
+        point = en_vigueur(serie, self.date)
+        if point is None or point[1] is None:
+            raise ValueError(f"{self.chemin} : aucune valeur au {self.date}")
+        return point[1]
+
+    def rendre(self, langue: str) -> str:
+        v = self.valeur()
+        if callable(self.formateur):
+            return self.formateur(v, langue)
+        f = formateurs(langue)
+        if self.formateur.startswith("duree:"):
+            return f.duree(self.formateur.split(":", 1)[1])(v)
+        return getattr(f, self.formateur)(v)
+
+
+def gabarit(texte: str | dict[str, str], **lectures: Lecture) -> tuple:
+    """Une case de gabarit : un texte par langue, dont les `{nom}` reçoivent les lectures."""
+    return ("gabarit", texte, lectures)
+
+
+def tableau_gabarit(
+    entetes: list[str],
+    lignes: list[list[Any]],
+    langue: str = "fr",
+) -> "pd.DataFrame | None":
+    """Tableau mixte : chaque case est un texte, ou un gabarit qui reçoit des valeurs lues.
+
+    `lignes` : une liste de cases par ligne, dans l'ordre de `entetes`. Une case est
+    - un texte commun aux deux langues (une clé de citation, un tiret) ;
+    - un dictionnaire {langue: texte} ;
+    - `gabarit(texte, nom=Lecture(...))`, dont les `{nom}` reçoivent la valeur lue.
+    Chaque lecture est notée au relevé, sous le libellé de sa langue : l'onglet « Base
+    législative » mène à chaque paramètre injecté.
+    """
+    if pd is None:
+        return None
+
+    def rendre(case: Any) -> str:
+        if isinstance(case, tuple) and case and case[0] == "gabarit":
+            _g, texte, lectures = case
+            modele = texte[langue] if isinstance(texte, dict) else texte
+            valeurs = {}
+            for nom, lecture in lectures.items():
+                valeurs[nom] = lecture.rendre(langue)
+                libelle = lecture.libelle
+                if isinstance(libelle, dict):
+                    libelle = libelle.get(langue)
+                releve_note(lecture.chemin, libelle)
+            return modele.format(**valeurs)
+        if isinstance(case, dict):
+            return case[langue]
+        return str(case)
+
+    return pd.DataFrame([{e: rendre(c) for e, c in zip(entetes, cases)} for cases in lignes])
 
 
 def taux_datee(chemin_relatif: str) -> list[tuple[str, float | None, str, str]]:
@@ -815,14 +1001,40 @@ def taux_datee(chemin_relatif: str) -> list[tuple[str, float | None, str, str]]:
     return sortie
 
 
+def formate_points(ecart: float | None) -> str:
+    """Écart entre deux taux, en points de pourcentage, signé : 0.012 -> « +1,2 »."""
+    if ecart is None:
+        return VIDE
+    points = round(ecart * 100, 6)
+    texte = f"{abs(points):.4f}".rstrip("0").rstrip(".").replace(".", ",")
+    return ("+" if points > 0 else "−" if points < 0 else "") + texte
+
+
 def tableau_taux_datee(
     specs: list[tuple[str, str, Callable[[float | None], str]]],
     cles: dict[str, str] | None = None,
     colonne_periode: str = "Effet",
     colonne_texte: str = "Texte",
     langue: str = "fr",
+    colonne_variation: str | None = None,
+    sans_maintien: bool = False,
+    depuis: str | None = None,
+    colonne_total: str | None = None,
 ) -> "pd.DataFrame | None":
-    """Comme `tableau_evolution_datee`, mais pour des barèmes à une tranche."""
+    """Comme `tableau_evolution_datee`, mais pour des barèmes à une tranche.
+
+    `sans_maintien` : écarte les dates où aucun taux ne change — un texte qui reconduit un
+    taux n'est pas une étape de son évolution.
+
+    `depuis` : première date d'effet publiée ; la première ligne porte les taux en vigueur à
+    cette date. Sert à ne pas publier des états antérieurs qu'aucun texte n'établit.
+    `colonne_total` : en-tête d'une colonne qui somme, ligne par ligne, les taux des `specs`
+    (part de l'employeur et part de l'assuré).
+
+    `colonne_variation` : en-tête d'une colonne qui donne, ligne par ligne, l'écart en points
+    avec la ligne précédente — le changement concret qu'opère le texte de la ligne. Elle suit
+    la colonne du premier taux, et reste vide à la première ligne.
+    """
     if pd is None:
         return None
     series = {chemin: taux_datee(chemin) for chemin, _e, _f in specs}
@@ -839,23 +1051,259 @@ def tableau_taux_datee(
                 retenue = v
         return retenue
 
+    if sans_maintien:
+        dates = [d for i, d in enumerate(dates) if i == 0 or any(
+            valeur_a(c, d) != valeur_a(c, dates[i - 1]) for c, _e, _f in specs)]
+    if depuis:
+        dates = [d for d in dates if d >= depuis]
     lignes = []
     for date in dates:
         ligne = {colonne_periode: formate_date(date, langue)}
         for chemin, entete, formateur in specs:
             ligne[entete] = formateur(valeur_a(chemin, date))
-        titre = ""
+        titre, lien = "", ""
         for chemin, _e, _f in specs:
-            for d, _v, t, _h in series[chemin]:
+            for d, _v, t, h in series[chemin]:
                 if d == date and t:
-                    titre = t
+                    titre, lien = t, h
                     break
             if titre:
                 break
+        if colonne_total:
+            valeurs = [valeur_a(c, date) for c, _e, _f in specs]
+            presentes = [v for v in valeurs if v is not None]
+            ligne[colonne_total] = specs[0][2](sum(presentes) if presentes else None)
+        if colonne_variation:
+            chemin = specs[0][0]
+            precedente = [d for d in dates if d < date]
+            ligne[colonne_variation] = VIDE if not precedente else formate_points(
+                (valeur_a(chemin, date) or 0) - (valeur_a(chemin, precedente[-1]) or 0))
         if cles and date in cles:
             ligne[colonne_texte] = f"[@{cles[date]}]"
         else:
-            ligne[colonne_texte] = titre or "—"
+            ligne[colonne_texte] = lien_reference(titre, lien, langue) or "—"
+        lignes.append(ligne)
+    return pd.DataFrame(lignes)
+
+
+# ------------------------------------------- composants communs des générateurs de livres
+#
+# Remontés des générateurs des retraites, des prestations et de la fiscalité, où ils
+# vivaient en deux ou trois versions divergentes (recension du 2 octobre 2026, « Composants
+# restés locaux »). Un générateur les emploie tels quels ; il ne garde en propre que ce qui
+# est propre à son livre — un libellé, une forme de cellule composée.
+
+# L'arabe accorde le nom compté avec le nombre : singulier à 1, duel à 2, pluriel de 3 à 10,
+# singulier à l'accusatif au-delà. « 60 سنوات » ou « 36 أشهر » sont des fautes que le
+# lecteur voit, et elles seraient recopiées à chaque régénération. Le français n'a que le
+# singulier et le pluriel.
+NOMS_COMPTES = {
+    "fr": {
+        "ans": ("an", "ans"),
+        "mois": ("mois", "mois"),
+        "trimestres": ("trimestre", "trimestres"),
+        "jours": ("jour", "jours"),
+        "heures": ("heure", "heures"),
+    },
+    "ar": {
+        "ans": ("سنة", "سنتان", "سنوات", "سنة"),
+        "mois": ("شهر", "شهران", "أشهر", "شهرًا"),
+        "trimestres": ("ثلاثية", "ثلاثيتان", "ثلاثيات", "ثلاثية"),
+        "jours": ("يوم", "يومان", "أيام", "يومًا"),
+        "heures": ("ساعة", "ساعتان", "ساعات", "ساعة"),
+    },
+}
+
+
+def compte(n: int, unite: str | tuple[str, ...], langue: str = "fr") -> str:
+    """Un nombre et son nom compté : « 120 mois », « 1 an », « 40 ثلاثية », « 10 ثلاثيات ».
+
+    `unite` : une clé de `NOMS_COMPTES` (« ans », « mois », « trimestres »…), ou les formes
+    elles-mêmes — (singulier, pluriel) en français, (singulier, duel, pluriel, accusatif)
+    en arabe. En arabe, le singulier et le duel s'emploient seuls, sans chiffre.
+    """
+    formes = NOMS_COMPTES["ar" if langue == "ar" else "fr"][unite] \
+        if isinstance(unite, str) else unite
+    if langue != "ar":
+        return f"{n} {formes[0] if n == 1 else formes[-1]}"
+    if n == 1:
+        return formes[0]
+    if n == 2:
+        return formes[1]
+    # Au-delà de cent, le nom s'accorde avec la dernière composante du nombre : « 300 يوم »
+    # (centaine pleine : singulier au génitif), « 103 أيام », « 180 يومًا ».
+    reste = n % 100 if n > 100 else n
+    if n > 100 and reste == 0:
+        return f"{n} {formes[0]}"
+    return f"{n} {formes[2]}" if 3 <= reste <= 10 else f"{n} {formes[3]}"
+
+
+def annees(n: int, langue: str = "fr") -> str:
+    """Un âge ou une durée en années accordées : « 60 ans », « 1 an », « 60 سنة »."""
+    return compte(n, "ans", langue)
+
+
+VIDE = "—"
+UNITE_DINAR = {"fr": " D", "ar": " د"}
+# Le salaire minimum auquel une fraction se rapporte, tel que l'écrivent les textes.
+DU_SMIG = {"fr": "du SMIG", "ar": "من الأجر الأدنى المضمون"}
+
+
+class Formateurs:
+    """Les formateurs de cellules communs aux générateurs, dans la langue du livre.
+
+    Une case sans valeur rend « — », jamais « 0 » : l'absence de règle n'est pas une valeur
+    nulle. Les montants se déclinent en trois écritures, parce que les textes n'écrivent pas
+    tous les sommes de la même façon :
+
+    - `dinars` élague les zéros de queue — « 1 500 D », « 2,5 D » —, comme les plafonds
+      fiscaux en dinars ;
+    - `millimes` garde toujours trois décimales — « 7,600 D » —, comme le *Journal officiel*
+      écrit les indemnités et les pensions ;
+    - `montant` n'écrit les millimes que s'il y en a — « 50 D », « 18,750 D » —, comme les
+      prestations.
+    """
+
+    def __init__(self, langue: str = "fr"):
+        self.langue = langue
+        self.unite = UNITE_DINAR.get(langue, UNITE_DINAR["fr"])
+
+    def taux(self, v):
+        return VIDE if v is None else formate_taux(v)
+
+    def dinars(self, v):
+        return VIDE if v is None else formate_dinars(v) + self.unite
+
+    def millimes(self, v):
+        if v is None:
+            return VIDE
+        return f"{v:,.3f}".replace(",", " ").replace(".", ",") + self.unite
+
+    def montant(self, v):
+        if v is None:
+            return VIDE
+        if float(v).is_integer():
+            return f"{int(v):,}".replace(",", " ") + self.unite
+        return self.millimes(v)
+
+    def entier(self, v):
+        return VIDE if v is None else str(int(v))
+
+    def age(self, v):
+        """Un âge, rendu en années accordées."""
+        return VIDE if v is None else annees(int(v), self.langue)
+
+    def duree(self, unite: str) -> Callable[[float | None], str]:
+        """Formateur d'une durée comptée dans `unite` (« mois », « trimestres »…)."""
+        return lambda v: VIDE if v is None else compte(int(v), unite, self.langue)
+
+    def part_smig(self, v):
+        """Une fraction du salaire minimum, rendue comme fraction et non en pourcentage.
+
+        Les textes écrivent « les deux tiers du SMIG » et « la moitié du SMIG » ; le
+        paramètre les approche par 0,66666 et 0,5. Imprimer « 66,67 % » donnerait un
+        chiffre que ne porte aucun texte.
+        """
+        if v is None:
+            return VIDE
+        from fractions import Fraction
+
+        fraction = Fraction(v).limit_denominator(12)
+        return f"{fraction.numerator}/{fraction.denominator} {DU_SMIG[self.langue]}"
+
+    def coefficient(self, v):
+        """Un multiple d'un salaire minimum : « 2/3 », « 1 », « 1,5 », « 18 »."""
+        if v is None:
+            return VIDE
+        from fractions import Fraction
+
+        fraction = Fraction(v).limit_denominator(12)
+        if fraction.denominator == 1:
+            return str(fraction.numerator)
+        if fraction.denominator == 3:
+            return f"{fraction.numerator}/3"
+        return f"{v:g}".replace(".", ",")
+
+
+def formateurs(langue: str = "fr") -> Formateurs:
+    return Formateurs(langue)
+
+
+def en_vigueur(serie, date: str):
+    """(date d'effet, valeur) en vigueur à `date` dans une série de `serie_datee`, ou None."""
+    retenue = None
+    for d, v, *_ in serie:
+        if d <= date:
+            retenue = (d, v)
+    return retenue
+
+
+def enchaine(segments, date: str):
+    """Valeur en vigueur à `date` le long de séries successives, et son formateur.
+
+    `segments` : [(série, formateur)], de la plus ancienne à la plus récente. Le régime des
+    non-salariés en est l'exemple : l'état de 1982 prend fin, par une valeur nulle, le jour
+    où commence celui du décret n° 95-1166. À date d'effet égale, la valeur non nulle
+    l'emporte — la fin d'un état n'efface pas le début du suivant. Rend (None, None) quand
+    aucune série n'a de valeur : la case restera vide, jamais à zéro.
+    """
+    meilleur = None
+    for serie, formateur in segments:
+        point = en_vigueur(serie, date)
+        if point is None:
+            continue
+        rang = (point[0], point[1] is not None)
+        if meilleur is None or rang >= meilleur[0]:
+            meilleur = (rang, point[1], formateur)
+    if meilleur is None or meilleur[1] is None:
+        return None, None
+    return meilleur[1], meilleur[2]
+
+
+def cellule(*segments: tuple[str, Callable[[float | None], str]]):
+    """Case d'une grandeur lue le long de séries successives : [(chemin, formateur)].
+
+    Rend une fonction `(séries, date) -> texte`, la forme qu'attend `tableau_enchaine`.
+    """
+    def rendre(series, date):
+        valeur, formateur = enchaine([(series[c], f) for c, f in segments], date)
+        return VIDE if valeur is None else formateur(valeur)
+    return rendre
+
+
+def tableau_enchaine(lectures, colonnes, cles, langue="fr", colonne_periode="Effet",
+                     colonne_texte="Texte") -> "pd.DataFrame | None":
+    """Tableau daté — une ligne par date d'effet — dont une cellule peut lire plusieurs séries.
+
+    Même forme que `tableau_evolution_datee`, dont il est le complément : colonne « Effet »,
+    une colonne par grandeur, colonne « Texte » tirée des clés de citation. Il sert aux
+    grandeurs qui commencent et s'arrêtent à des dates différentes : une case est vide quand
+    la règle n'existe pas encore ou n'existe plus.
+
+    `lectures` : [(chemin, libellé du lien)] — chaque paramètre lu, noté au relevé ; un
+    libellé vide laisse la fabrique noter elle-même le nœud qui le contient.
+    `colonnes` : [(en-tête, cellule)] où `cellule(séries, date)` rend le texte de la case.
+    `cles` : date ISO -> clé de citation. Une date sans clé laisse la date elle-même dans la
+    colonne « Texte », ce qu'un générateur doit refuser avant d'écrire le snapshot.
+    """
+    if pd is None:
+        return None
+    series = {}
+    for chemin, libelle in lectures:
+        serie = serie_datee(chemin)
+        if not serie:
+            print(f"✗ paramètre introuvable ou vide : {chemin}")
+            return None
+        series[chemin] = serie
+        if libelle:
+            releve_note(chemin, libelle)
+    dates = sorted({d for serie in series.values() for d, *_ in serie})
+    lignes = []
+    for date in dates:
+        ligne = {colonne_periode: formate_date(date, langue)}
+        for entete, rendre in colonnes:
+            ligne[entete] = rendre(series, date)
+        ligne[colonne_texte] = f"[@{cles[date]}]" if date in cles else date
         lignes.append(ligne)
     return pd.DataFrame(lignes)
 

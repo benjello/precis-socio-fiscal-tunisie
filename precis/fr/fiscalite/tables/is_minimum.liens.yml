@@ -1,0 +1,12 @@
+- libelle: Taux — sociétés non soumises au taux de 10 %
+  parametre: parameters/impot_societes/minimum_impot/taux_normal.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_societes.minimum_impot.taux_normal/table/
+- libelle: Taux — sociétés soumises au taux de 10 %
+  parametre: parameters/impot_societes/minimum_impot/taux_reduit.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_societes.minimum_impot.taux_reduit/table/
+- libelle: Montant — sociétés non soumises au taux de 10 %
+  parametre: parameters/impot_societes/minimum_impot/montant_minimum_normal.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_societes.minimum_impot.montant_minimum_normal/table/
+- libelle: Montant — sociétés soumises au taux de 10 %
+  parametre: parameters/impot_societes/minimum_impot/montant_minimum_reduit.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_societes.minimum_impot.montant_minimum_reduit/table/

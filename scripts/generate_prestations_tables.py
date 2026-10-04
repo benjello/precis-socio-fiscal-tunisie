@@ -109,61 +109,15 @@ UNITES = {
            "smig": "{n} ضعف الأجر الأدنى المضمون", "vide": "—"},
 }
 
-# L'arabe accorde le nom compté avec le nombre : singulier à 1, duel à 2, pluriel de 3 à
-# 10, singulier à l'accusatif au-delà. Écrire « 2 أشهر » ou « 36 أشهر » est une faute que
-# le lecteur voit immédiatement, et elle serait recopiée à chaque régénération.
-COMPTE_AR = {
-    "mois": ("شهر", "شهران", "أشهر", "شهرًا"),
-    "ans": ("سنة", "سنتان", "سنوات", "سنة"),
-}
-COMPTE_FR = {"mois": "mois", "ans": "ans"}
-
-
-def compte(n: int, unite: str, langue: str) -> str:
-    if langue != "ar":
-        return f"{n} {COMPTE_FR[unite]}"
-    singulier, duel, pluriel, accusatif = COMPTE_AR[unite]
-    if n == 1:
-        return singulier
-    if n == 2:
-        return duel
-    return f"{n} {pluriel}" if 3 <= n <= 10 else f"{n} {accusatif}"
-
-
 def formateurs(langue):
+    """Les formateurs communs (`ot.formateurs`), et ceux propres au livre."""
     u = UNITES[langue]
-
-    def nombre(v, decimales=0):
-        """Séparateur de milliers par espace insécable fine, décimal par virgule."""
-        if decimales:
-            return f"{v:,.{decimales}f}".replace(",", " ").replace(".", ",")
-        return f"{int(v):,}".replace(",", " ")
-
-    def dinars(v):
-        """Montant en dinars et millimes, sur trois décimales.
-
-        `ot.formate_dinars` élague les zéros de queue — bon pour un plafond fiscal en
-        milliers de dinars, faux ici : les prestations s'écrivent en millimes, et
-        « 18,75 D » pour 18 dinars 750 millimes n'est pas ce qu'imprime le JORT.
-        """
-        if v is None:
-            return u["vide"]
-        brut = nombre(v) if float(v).is_integer() else nombre(v, 3)
-        return brut + u["dinar"]
-
-    def taux(v):
-        return u["vide"] if v is None else ot.formate_taux(v)
-
-    def entier(v):
-        return u["vide"] if v is None else str(int(v))
-
-    def mois(v):
-        return u["vide"] if v is None else compte(int(v), "mois", langue)
+    f = ot.formateurs(langue)
 
     def ans(v):
         if v is None:
             return u["vide"]
-        return u["aucune"] if int(v) == 0 else compte(int(v), "ans", langue)
+        return u["aucune"] if int(v) == 0 else ot.compte(int(v), "ans", langue)
 
     def smig(v):
         if v is None:
@@ -174,7 +128,8 @@ def formateurs(langue):
     def coefficient(v):
         return u["vide"] if v is None else f"× {int(v)}"
 
-    return dinars, taux, entier, mois, ans, smig, coefficient
+    # `montant` : les prestations s'écrivent en millimes, mais seulement s'il y en a.
+    return f.montant, f.taux, f.entier, f.duree("mois"), ans, smig, coefficient
 
 
 # Clés de citation du précis, par date d'effet : elles raccrochent chaque rupture à la

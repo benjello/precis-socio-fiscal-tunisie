@@ -1,0 +1,9 @@
+- libelle: 'Départ anticipé sur demande : âge minimal'
+  parametre: parameters/retraite/cnrps/depart_anticipe/sur_demande/cadre_commun/age_minimum.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.age_minimum/table/
+- libelle: 'Départ anticipé sur demande : services requis'
+  parametre: parameters/retraite/cnrps/depart_anticipe/sur_demande/cadre_commun/duree_minimum.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.depart_anticipe.sur_demande.cadre_commun.duree_minimum/table/
+- libelle: 'Mères de trois enfants : âge maximal des enfants'
+  parametre: parameters/retraite/cnrps/depart_anticipe/meres_3_enfants/age_maximum_enfant.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.depart_anticipe.meres_3_enfants.age_maximum_enfant/table/

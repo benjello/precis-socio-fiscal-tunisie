@@ -9,3 +9,11 @@
     1982 إلى 18 جويلية 1995
   parametre: parameters/retraite/rtns/avant_1995/agricole/allocation_vieillesse_trimestres.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.avant_1995.agricole.allocation_vieillesse_trimestres/table/
+- libelle: المدة السنوية التي يُحتسب على أساسها الأجر الأدنى الفلاحي المضمون المعتمد
+    للدخل المرجعي، القطاع الفلاحي، من 1 جويلية 1982 إلى 18 جويلية 1995
+  parametre: parameters/retraite/rtns/avant_1995/agricole/jours_annuels_smag.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.avant_1995.agricole.jours_annuels_smag/table/
+- libelle: المدة السنوية التي يُحتسب على أساسها الأجر الأدنى الفلاحي المضمون المعتمد
+    للدخل المرجعي، القطاعان، ابتداءً من 19 جويلية 1995
+  parametre: parameters/retraite/rtns/revenu_reference/jours_annuels_smag.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rtns.revenu_reference.jours_annuels_smag/table/

@@ -1,0 +1,17 @@
+- libelle: Droit commun
+  parametre: parameters/impot_societes/taux/droit_commun.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_societes.taux.droit_commun/table/
+- libelle: Taux réduit — artisanat, agriculture, pêche, zones de développement régional,
+    coopératives
+  parametre: parameters/impot_societes/taux/reduit.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_societes.taux.reduit/table/
+- libelle: Petites et moyennes sociétés — chiffre d'affaires au plus égal à 1 MD ou
+    500 mD
+  parametre: parameters/impot_societes/taux/pme.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_societes.taux.pme/table/
+- libelle: Banques et entreprises d'assurance
+  parametre: parameters/impot_societes/taux/secteurs_35.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_societes.taux.secteurs_35/table/
+- libelle: Banques et entreprises d'assurance
+  parametre: parameters/impot_societes/taux/banques_assurances.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_societes.taux.banques_assurances/table/

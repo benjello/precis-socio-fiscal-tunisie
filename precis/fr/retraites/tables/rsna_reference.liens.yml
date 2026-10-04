@@ -1,0 +1,24 @@
+- libelle: Salaire de référence — période courte, en années
+  parametre: parameters/retraite/rsna/salaire_reference/periode_courte_annees.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.salaire_reference.periode_courte_annees/table/
+- libelle: Salaire de référence — période longue, en années
+  parametre: parameters/retraite/rsna/salaire_reference/periode_longue_annees.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.salaire_reference.periode_longue_annees/table/
+- libelle: Salaire de référence — diviseur de la période courte, en mois
+  parametre: parameters/retraite/rsna/salaire_reference/diviseur_court_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.salaire_reference.diviseur_court_mois/table/
+- libelle: Salaire de référence — diviseur de la période longue, en mois
+  parametre: parameters/retraite/rsna/salaire_reference/diviseur_long_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.salaire_reference.diviseur_long_mois/table/
+- libelle: Limite de calcul des prestations, en multiple du SMIG
+  parametre: parameters/retraite/rsna/salaire_reference/limite_multiple_smig.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.salaire_reference.limite_multiple_smig/table/
+- libelle: Limite de calcul — durée annuelle à laquelle le SMIG est rapporté
+  parametre: parameters/retraite/rsna/salaire_reference/limite_heures_annuelles.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.salaire_reference.limite_heures_annuelles/table/
+- libelle: Salaire de référence — période de référence de 1990, en années
+  parametre: parameters/retraite/rsna/salaire_reference/periode_annees.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.salaire_reference.periode_annees/table/
+- libelle: Salaire de référence — période de référence, en mois
+  parametre: parameters/retraite/rsna/salaire_reference/duree_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.salaire_reference.duree_mois/table/

@@ -1,0 +1,18 @@
+- libelle: Taux de la cotisation contractuelle ($\gamma$)
+  parametre: parameters/retraite/complementaire/taux_cotisation_contractuel.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.complementaire.taux_cotisation_contractuel/table/
+- libelle: 'Cotisation minimale : salaire de calcul, en fraction du SMIG'
+  parametre: parameters/retraite/complementaire/salaire_minimal_cotisable_part_smig.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.complementaire.salaire_minimal_cotisable_part_smig/table/
+- libelle: Réversion au conjoint
+  parametre: parameters/retraite/complementaire/survivants/taux_reversion.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.complementaire.survivants.taux_reversion/table/
+- libelle: Pension d'orphelin
+  parametre: parameters/retraite/complementaire/survivants/taux_orphelin.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.complementaire.survivants.taux_orphelin/table/
+- libelle: Pension d'orphelin de père et de mère
+  parametre: parameters/retraite/complementaire/survivants/taux_orphelin_pere_et_mere.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.complementaire.survivants.taux_orphelin_pere_et_mere/table/
+- libelle: Âge avant lequel le remariage suspend la réversion
+  parametre: parameters/retraite/complementaire/survivants/age_limite_suspension_remariage.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.complementaire.survivants.age_limite_suspension_remariage/table/

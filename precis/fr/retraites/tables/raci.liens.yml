@@ -1,0 +1,72 @@
+- libelle: Âge d'ouverture de la pension de vieillesse
+  parametre: parameters/retraite/raci/age_legal.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.age_legal/table/
+- libelle: Stage
+  parametre: parameters/retraite/raci/stage_trimestres.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.stage_trimestres/table/
+- libelle: Taux de la pension au terme du stage
+  parametre: parameters/retraite/raci/taux_base.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.taux_base/table/
+- libelle: Pension minimale, par mois
+  parametre: parameters/retraite/raci/plancher_mensuel.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.plancher_mensuel/table/
+- libelle: 'Invalidité : stage'
+  parametre: parameters/retraite/raci/invalidite/stage_trimestres.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.invalidite.stage_trimestres/table/
+- libelle: 'Invalidité : durée de cotisation au-delà de laquelle la pension est majorée'
+  parametre: parameters/retraite/raci/invalidite/seuil_majoration_trimestres.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.invalidite.seuil_majoration_trimestres/table/
+- libelle: Majoration pour tierce personne
+  parametre: parameters/retraite/raci/invalidite/majoration_tierce_personne.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.invalidite.majoration_tierce_personne/table/
+- libelle: Classes de revenus, en multiples du SMIG (1)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_1.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.revenu_reference.classes.classe_1/table/
+- libelle: Classes de revenus, en multiples du SMIG (2)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_2.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.revenu_reference.classes.classe_2/table/
+- libelle: Classes de revenus, en multiples du SMIG (3)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_3.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.revenu_reference.classes.classe_3/table/
+- libelle: Classes de revenus, en multiples du SMIG (4)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_4.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.revenu_reference.classes.classe_4/table/
+- libelle: Classes de revenus, en multiples du SMIG (5)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_5.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.revenu_reference.classes.classe_5/table/
+- libelle: Classes de revenus, en multiples du SMIG (6)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_6.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.revenu_reference.classes.classe_6/table/
+- libelle: Classes de revenus, en multiples du SMIG (7)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_7.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.revenu_reference.classes.classe_7/table/
+- libelle: Classes de revenus, en multiples du SMIG (8)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_8.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.revenu_reference.classes.classe_8/table/
+- libelle: Classes de revenus, en multiples du SMIG (9)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_9.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.revenu_reference.classes.classe_9/table/
+- libelle: Classes de revenus, en multiples du SMIG (10)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_10.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.revenu_reference.classes.classe_10/table/
+- libelle: Réversion au conjoint
+  parametre: parameters/retraite/raci/survivants/taux_conjoint.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.survivants.taux_conjoint/table/
+- libelle: Pensions d'orphelins, ensemble
+  parametre: parameters/retraite/raci/survivants/taux_orphelins.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.survivants.taux_orphelins/table/
+- libelle: 'Âge limite de l''orphelin : droit commun ; études secondaires ou professionnelles
+    ; études supérieures (1)'
+  parametre: parameters/retraite/raci/survivants/age_limite_orphelin.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.survivants.age_limite_orphelin/table/
+- libelle: 'Âge limite de l''orphelin : droit commun ; études secondaires ou professionnelles
+    ; études supérieures (2)'
+  parametre: parameters/retraite/raci/survivants/age_limite_orphelin_etudes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.survivants.age_limite_orphelin_etudes/table/
+- libelle: 'Âge limite de l''orphelin : droit commun ; études secondaires ou professionnelles
+    ; études supérieures (3)'
+  parametre: parameters/retraite/raci/survivants/age_limite_orphelin_etudes_superieures.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.survivants.age_limite_orphelin_etudes_superieures/table/
+- libelle: Âge avant lequel le remariage suspend la réversion
+  parametre: parameters/retraite/raci/survivants/age_remariage_suspensif.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.raci.survivants.age_remariage_suspensif/table/

@@ -484,3 +484,64 @@ précis seule.
 
 À traiter en dernier, par le composant d'injection en ligne (motif 2), ou par un test de
 cohérence qui vérifie que la valeur citée égale le paramètre à la date.
+
+## Suivi du traitement des A (lot du 3 octobre 2026)
+
+Branche `docs/parametres-engendres-lot-a`, openfisca-tunisia 0.118 (`origin/master`,
+commit `e8548797`). Chaque entrée a été revérifiée avant d'être remplacée : présence du
+paramètre, date et référence de chaque valeur, égalité avec le tableau ou la prose du précis.
+Une entrée dont une partie diverge bascule en B pour cette partie, sans remplacement.
+
+Composants ajoutés ou remontés dans `scripts/openfisca_tables.py` : `compte`, `annees`,
+`formateurs` (`Formateurs` : `taux`, `dinars`, `millimes`, `montant`, `age`, `duree`,
+`part_smig`, `coefficient`), `en_vigueur`, `enchaine`, `cellule`, `tableau_enchaine` (remontés
+des retraites, des prestations et de la fiscalité, sans changement de snapshot) ;
+`ecrire_tableau(..., autres_livres=…)`, `ecrire_dans_livres` et `cles_manquantes` (réemploi d'un tableau dans un
+autre livre, motif 10) ; `tableau_taux_datee(..., colonne_variation=…, sans_maintien=…, depuis=…, colonne_total=…)` et
+`formate_points` (colonne « avant → après » en points, motif 3 pour un taux seul) ;
+`tableau_gabarit`, `gabarit` et `Lecture` (tableau mixte, motif 1 : le texte de chaque case,
+dans les deux langues, reçoit des valeurs lues dans le paramètre à la date qui les fonde) ;
+`tableau_a_la_date(..., colonne_effet=…)` et chemins groupés (fiche d'un régime, une grandeur
+par ligne) ; `tableau_vers_markdown(..., a_gauche=True)` (tableaux de périodes qui mêlent valeurs et états) ; noms comptés arabes au-delà de cent (« 300 يوم », « 180 يومًا »).
+
+| id | statut | tableau engendré | remarque |
+|---|---|---|---|
+| CS-10 | fait | `cotisations_sociales/tables/reduction_conventionnelle.md` (`tbl-reduction-conventionnelle`) | fin de la réduction au 1er juillet 2007 rendue « aucune » |
+| CS-16 | fait | `cotisations_sociales/tables/cnrps_employeur.md` (`tbl-cnrps-employeur`, remplace le tableau fait main) | niveaux datés et colonne « Variation » ; le millésime de 1959 est signalé comme convention dans la ligne « Sources » |
+| CS-24 | sans objet | — | une seule valeur, depuis le 1er janvier 1975, déjà lue par `branches_rsna` ; la ligne de `tbl-somme-trois-textes` relève de CS-11 (B) |
+| CS-29 | fait | `cotisations_sociales/tables/prevoyance_pensionnes.md` (`tbl-prevoyance-pensionnes`) | |
+| RE-05 | fait | `cnrps_retraite.md`, émis aussi dans `remunerations_publiques/tables/` (`tbl-cnrps-retraite`) | les deux chiffres de la prose remplacés par le renvoi au tableau |
+| RE-06 | fait, partie B | `remunerations_publiques/tables/css_salarie.md` (`tbl-css-salarie`) | la reconduction au 1er janvier 2025, sourcée hors *Journal officiel*, est écartée (`sans_maintien`) et signalée dans `backlog-modele.md` |
+| RP-03 | fait | `retraites/tables/rsna_reference.md` (`tbl-rsna-reference`, remplace le tableau fait main) | tableau mixte : choix de 1974 et non-modification de 1990 gardés en texte |
+| RP-05, RP-19 | fait | `retraites/tables/rsna_survivants.md` (`tbl-rsna-survivants`, remplace le tableau fait main) | tableau mixte ; RP-19 (prose) renvoie désormais à un tableau engendré |
+| RP-08, RP-27 | fait | `retraites/tables/rsa_evolution.md` (`tbl-rsa-evolution`, remplace le tableau fait main) | tableau mixte ; la ligne du délai de demande reste du texte (RP-23, C) ; les taux de 1981 de RP-27 restent en prose, sans tableau propre |
+| RP-10 | fait | colonne « SMAG du revenu de référence » ajoutée à `rtns_agricole.md` (`tbl-rtns-agricole`) | 300 jours (1982, 1995), 180 (19 octobre 1996), 260 (1997), 300 (1998) ; la borne de version (0.118) couvre déjà la 0.113 |
+| RP-20 | fait | `retraites/tables/rsna_invalidite.md` (`tbl-rsna-invalidite`) | la condition de 6 mois sur 12 (1974-1981) reste en prose |
+| RP-29 | fait | `retraites/tables/rsaa.md` (`tbl-rsaa`) | T = {3, 5} et les 25 jours de la revalorisation restent sans paramètre (C) |
+| RP-31 | fait | `retraites/tables/complementaire.md` (`tbl-complementaire`) | `valeur_point` et `salaire_reference` écartés (sources hors *Journal officiel*, valeurs sans référence) |
+| RP-39 | fait | `retraites/tables/rtte.md` (`tbl-rtte`) | le taux de cotisation (RP-38, B) n'y figure pas |
+| RP-40 | fait | `retraites/tables/rtfr.md` (`tbl-rtfr`) | β = 2/3 n'y figure pas (CS-05, B) |
+| RP-41 | fait, partie B | `retraites/tables/raci.md` (`tbl-raci`) | majoration par trimestre et plafond écartés : datés du 5 janvier 2003 (loi n° 2002-104, art. 13) quand le précis les tient du décret n° 2003-894, exécutoire le 5 mai 2003 ; signalé dans `backlog-modele.md` |
+| RU-05 | fait, partie B | `retraites/tables/cnrps_departs_anticipes.md` (`tbl-cnrps-departs-anticipes`) | âge minimal de 50 ans des mères en 1985 écarté (sans référence, pension#27) ; durée des fonctions astreignantes laissée en prose |
+| RU-13 | fait | deux colonnes ajoutées à `cnrps_plafond_plancher.md` (`tbl-cnrps-plafond-plancher`) | |
+| RU-15 | fait, partie C | `retraites/tables/cnrps_survivants.md` (`tbl-cnrps-survivants`) | réductions de 5 et 10 %, plancher de 50 %, âges de 21 et 55 ans restent sans paramètre (C) |
+| PS-04 | fait, partie C | `cnrps_indemnites_familiales.md`, émis aussi dans `prestations_sociales/tables/` (`tbl-indemnites-familiales-public`, remplace le tableau fait main) | la ligne « enfant handicapé » (4,880 D, 1996) n'a pas de paramètre : elle passe dans la ligne « Sources » |
+| CS-02 | fait, en partie | `cotisations_sociales/tables/classes_revenu.md` (`tbl-classes-revenu`), émis par le générateur des retraites | classes des non-salariés, des artistes et des Tunisiens à l'étranger, avec le salaire minimum de référence ; le tableau `tbl-assiettes`, qui mêle ces régimes à des assiettes classées B ou C, reste fait main |
+| PS-12 | fait | `perte_emploi.md` (`tbl-perte-emploi`), dans les livres des cotisations et des prestations | « 0,5 % chacun » vérifié sur l'édition arabe de la loi de finances pour 2025, art. 17 (JORT n° 149 de 2024) ; la prose des prestations est alignée |
+| PS-13 | fait, partie B | `cnrps_maladie.md` (`tbl-cnrps-maladie`) et `prevoyance_pensionnes.md`, dans les livres des cotisations et des prestations | montée en charge de 2007 à 2009 (agents) et de 2007 à 2010 (pensionnés) ; la part patronale de 1 % antérieure à 2007, sans référence, n'est pas publiée (`depuis`) ; la part maladie du régime général reste non isolable |
+| FI-01 | fait | `fiscalite/tables/bareme_generations.md` (`tbl-bareme-irpp-generations`, remplace le tableau fait main) | grandeurs dérivées des barèmes (nombre de tranches, limite de la tranche à 0 %, taux marginal supérieur et son seuil) ; les générations de l'IRPP suivent les références du paramètre, un texte non déclaré arrête la génération |
+| FI-14 | fait | colonnes 2ᵉ enfant, 3ᵉ enfant et ressources du parent ajoutées à `famille_chef_de_famille.md` (`tbl-charges-famille`) | les valeurs de 1990 des enfants (et du chef de famille, déjà publiées) n'ont pas de référence dans le paramètre : le tableau cite l'art. 40 du code par ses clés, comme avant ; signalé dans `backlog-modele.md` |
+| FI-18 | fait | `fiscalite/tables/is_taux.md` (`tbl-is-taux`), qui remplace l'impression du relevé | cases lues dans `impot_societes/taux`, états et lignes inexistantes tirés du relevé ; le relevé et `check_tarifs_openfisca.py` deviennent garde-fou ; le livre arabe reçoit un tableau traduit au lieu du relevé français |
+| FI-20 | fait | `fiscalite/tables/is_minimum.md` (`tbl-is-minimum`) | les valeurs de 1990-2005 (plafonds) et la nature du minimum restent tirées du relevé (FI-21, C) |
+| FI-30 | fait | `fiscalite/tables/droit_consommation_specifiques_1988.md` (`tbl-dc-specifiques-1988`) | les quatorze lignes pétrolières sont lues au 1er juillet 1988 ; alcools et explosifs restent tirés du relevé (FI-29, 31, 32, C) |
+| FI-33 | fait | `fiscalite/tables/droit_consommation_petroliers.md` (`tbl-dc-petroliers`), qui remplace l'impression du relevé | colonnes 1988, 1991 et 1999 lues (44 cases) ; état consolidé de 2023 et lignes nées après 1999 tirés du relevé ; noms de produits laissés en français dans l'instantané arabe, en attendant leur terminologie |
+
+**Proposition, non appliquée : l'injection de valeurs dans la prose (motif 2).** Chaque
+générateur écrirait, à côté de `tables/<nom>.md`, un fichier `tables/<nom>.valeurs.yml` —
+clé, valeur formatée dans la langue du livre, date d'effet, clé de citation — et un shortcode
+Quarto `{{< valeur <nom> <clé> >}}` le lirait au rendu. Les égalités indicatives (« τ0 = 40 %
+depuis le … ») et les 17 A redondants en relèveraient. Deux conditions avant de l'étendre :
+vérifier que la passe de traduction conserve les shortcodes intacts (elle traite aujourd'hui
+les chunks de code, non les shortcodes en ligne), et convenir de la forme d'une date dans une
+phrase arabe. D'ici là, un test de cohérence — la valeur citée égale le paramètre à la date —
+couvre le même risque sans toucher au texte traduit.
