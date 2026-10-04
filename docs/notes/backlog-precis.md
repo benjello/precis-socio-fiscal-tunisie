@@ -289,6 +289,10 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   la partie `_branches.qmd` et les annexes, puis rendre le livre arabe. D'ici là, le livre arabe
   sert l'ancien `index.qmd` d'un seul tenant ; si la passe réécrit d'abord `ar/index.qmd` en
   version courte, le contenu des chapitres manquera au livre arabe jusqu'à leur déclaration.
+  Les renvois des volumes « Retraites » et « Rémunérations publiques » visent déjà les nouvelles
+  pages (`_pensions.html`, `_taux_global.html`, `_regimes.html`, `_matrice.html`…) : leur
+  retraduction produira des liens morts dans les livres arabes tant que ces chapitres n'y sont pas
+  déclarés. Déclarer les chapitres arabes dans la même passe que ces retraductions.
 
 - **Les caisses ont quitté ce livre le 4 octobre 2026** : cadre comptable et budgétaire, et les
   trois figures de la rétrospective CNSS par régime et par branche, dans le livre « Les caisses de
