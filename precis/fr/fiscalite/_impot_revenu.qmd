@@ -51,65 +51,32 @@ Les impôts cédulaires eux-mêmes procédaient de textes échelonnés sur plusi
 
 Le plus ancien tarif connu ici est celui de l'article 2 de la loi n° 62-73 du 31 décembre 1962, qui abroge et remplace l'article 8 du décret du 31 mars 1932 pour l'imposition « au titre de l'année 1963 (Revenus de l'année 1962) et des années postérieures » [@loi-62-73-cpe, art. 2].
 
-```{python}
-#| echo: false
-#| output: asis
-table("bareme_cpe_1962",
-      "Barème de la contribution personnelle d'État applicable aux revenus de 1962 (art. 2 de la loi n° 62-73 du 31 décembre 1962)",
-      "tbl-bareme-cpe-1962")
-```
-
-Source : @loi-62-73-cpe, art. 2 (JORT n° 64 des 28-31 décembre 1962, p. 1647). Le texte ne publie que le taux de chaque tranche : la dernière colonne en est déduite. Au-delà de 10 200 dinars, il distingue une tranche allant jusqu'à 10 600 dinars et une tranche au-dessus, toutes deux à 80 %, réunies ici en une seule.
-
 L'article 10 de la loi n° 65-46 du 31 décembre 1965, portant loi de finances pour la gestion 1966, remplace à nouveau cet article 8 pour l'imposition « au titre de l'année 1966 (revenus de l'année 1965) et des années postérieures », par un tarif fixé « compte-tenu du décime prévu par la loi de Finances n° 64-59 du 31 décembre 1964 », et exempte les contribuables dont les revenus nets imposables ne dépassent pas 100 dinars [@lf-1966, art. 10].
-
-```{python}
-#| echo: false
-#| output: asis
-table("bareme_cpe_1965",
-      "Barème de la contribution personnelle d'État applicable aux revenus de 1965 (art. 10 de la loi n° 65-46 du 31 décembre 1965)",
-      "tbl-bareme-cpe-1965")
-```
-
-Source : @lf-1966, art. 10 (JORT n° 66 du 31 décembre 1965, p. 1716-1717). Le texte ne publie que le taux de chaque tranche : la dernière colonne en est déduite, sans tenir compte de l'exemption des revenus nets imposables qui ne dépassent pas 100 dinars. Au-delà de 9 800 dinars, il distingue une tranche allant jusqu'à 10 200 dinars et une tranche au-dessus, toutes deux à 88 %, réunies ici en une seule.
 
 Les tarifs qui auraient pu être fixés pour les revenus de 1966 à 1979 ne sont pas connus ici ; le suivant qui le soit est celui de l'article 8 de la loi n° 79-66 du 31 décembre 1979, portant loi de finances pour la gestion 1980, qui abroge et remplace à son tour l'article 8 du décret de 1932 [@loi79-66-lf1980, art. 8].
 
-```{python}
-#| echo: false
-#| output: asis
-table("bareme_cpe_1980",
-      "Barème de la contribution personnelle d'État applicable aux revenus de 1980 (art. 8 de la loi n° 79-66 du 31 décembre 1979)",
-      "tbl-bareme-cpe-1980")
-```
-
-Source : @loi79-66-lf1980, art. 8 (JORT n° 76 des 28-31 décembre 1979, p. 3540).
-
 L'article 9 de la loi n° 82-91 du 31 décembre 1982, portant loi de finances pour la gestion 1983, remplace l'article 8 du décret de 1932 « tel que modifié par l'article 8 de la loi de finances pour la gestion 1980 », pour les revenus à réaliser à partir du 1^er^ janvier 1983 [@lf-1983, art. 9].
-
-```{python}
-#| echo: false
-#| output: asis
-table("bareme_cpe_1983",
-      "Barème de la contribution personnelle d'État applicable aux revenus de 1983 (art. 9 de la loi n° 82-91 du 31 décembre 1982)",
-      "tbl-bareme-cpe-1983")
-```
-
-Source : @lf-1983, art. 9 (JORT n° 84 du 31 décembre 1982, p. 2877-2878).
 
 Le dernier barème de la contribution personnelle d'État avant la réforme résulte de l'article 8 de la loi n° 85-109 du 31 décembre 1985 portant loi de finances pour la gestion 1986, qui abroge et remplace l'article 8 du décret du 31 mars 1932 [@lf-1986, art. 8]. Il comportait **dix-huit tranches** et un [taux marginal](#g-taux-marginal) supérieur de **68 % au-delà de 80 000 dinars**. Le texte légal publiait, à côté du taux de chaque tranche, le taux d'imposition du revenu global atteint à la limite supérieure de celle-ci — une présentation rare, qui permet de lire directement la charge effective.
 
 ```{python}
 #| echo: false
 #| output: asis
-table("bareme_cpe_1986",
-      "Barème de la contribution personnelle d'État applicable aux revenus de 1986 (art. 8 de la loi n° 85-109 du 31 décembre 1985)",
-      "tbl-bareme-cpe-1986")
+print(ot.markdown_un_tableau_en_onglets([
+    ("Revenus de 1962", TABLES / "bareme_cpe_1962.md",
+     "Source : @loi-62-73-cpe, art. 2 (JORT n° 64 des 28-31 décembre 1962, p. 1647). Le texte ne publie que le taux de chaque tranche : la dernière colonne en est déduite. Au-delà de 10 200 dinars, il distingue une tranche allant jusqu'à 10 600 dinars et une tranche au-dessus, toutes deux à 80 %, réunies ici en une seule."),
+    ("Revenus de 1965", TABLES / "bareme_cpe_1965.md",
+     "Source : @lf-1966, art. 10 (JORT n° 66 du 31 décembre 1965, p. 1716-1717). Le texte ne publie que le taux de chaque tranche : la dernière colonne en est déduite, sans tenir compte de l'exemption des revenus nets imposables qui ne dépassent pas 100 dinars. Au-delà de 9 800 dinars, il distingue une tranche allant jusqu'à 10 200 dinars et une tranche au-dessus, toutes deux à 88 %, réunies ici en une seule."),
+    ("Revenus de 1980", TABLES / "bareme_cpe_1980.md",
+     'Source : @loi79-66-lf1980, art. 8 (JORT n° 76 des 28-31 décembre 1979, p. 3540).'),
+    ("Revenus de 1983", TABLES / "bareme_cpe_1983.md",
+     'Source : @lf-1983, art. 9 (JORT n° 84 du 31 décembre 1982, p. 2877-2878).'),
+    ("Revenus de 1986", TABLES / "bareme_cpe_1986.md",
+     'Source : @lf-1986, art. 8 (JORT n° 91 du 31 décembre 1985, p. 1731).'),
+], "Barèmes successifs de la contribution personnelle d'État, par année de revenus", "tbl-bareme-cpe"))
 ```
 
-Source : @lf-1986, art. 8 (JORT n° 91 du 31 décembre 1985, p. 1731).
-
-La lecture de la troisième colonne invite à ne pas confondre le taux marginal affiché et la charge réellement supportée : à 80 000 dinars de revenu, le taux d'imposition du revenu global ressortait à 59,98 %, et non à 68 %.
+Dans le barème des revenus de 1986, la lecture de la troisième colonne invite à ne pas confondre le taux marginal affiché et la charge réellement supportée : à 80 000 dinars de revenu, le taux d'imposition du revenu global ressortait à 59,98 %, et non à 68 %.
 
 <!-- TODO (documentaliste) : la série des tarifs de la contribution personnelle d'État compte
 désormais cinq tarifs lus au Journal officiel — revenus de 1962 (loi n° 62-73, art. 2), 1965
@@ -124,7 +91,7 @@ docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
 ### Le plafonnement de la cotisation effective
 
-Le même article assortissait le barème de plusieurs correctifs, qui en bornaient la charge par le bas comme par le haut : les contribuables dont les revenus annuels ne dépassaient pas le [SMIG](#g-smig) en étaient exonérés, l'impôt ne pouvait excéder l'excédent des revenus par rapport au SMIG, et la cotisation effective ne pouvait dépasser **60 % du revenu global imposable** [@lf-1986, art. 8]. Ce plafond avait des précédents : les tarifs de 1962, 1965 et 1980 en fixaient chacun un, porté de 40 % à 55 % (@tbl-plafond-cpe). L'article 8 récrit pour les revenus de 1983, en revanche, n'en comporte aucun [@lf-1983, art. 9] — son barème affiche d'ailleurs des taux d'imposition du revenu global supérieurs à 60 % au-delà de 80 000 dinars (@tbl-bareme-cpe-1983) —, et c'est cette rédaction que la loi de 1985 abroge : le plafond à 60 % y est donc rétabli, non maintenu. Un décret devait par ailleurs publier le barème par tranches de 20 dinars à partir de 900 dinars, sous forme de table de cotes d'impôt : c'est l'objet du décret n° 86-1188 du 12 novembre 1986.
+Le même article assortissait le barème de plusieurs correctifs, qui en bornaient la charge par le bas comme par le haut : les contribuables dont les revenus annuels ne dépassaient pas le [SMIG](#g-smig) en étaient exonérés, l'impôt ne pouvait excéder l'excédent des revenus par rapport au SMIG, et la cotisation effective ne pouvait dépasser **60 % du revenu global imposable** [@lf-1986, art. 8]. Ce plafond avait des précédents : les tarifs de 1962, 1965 et 1980 en fixaient chacun un, porté de 40 % à 55 % (@tbl-plafond-cpe). L'article 8 récrit pour les revenus de 1983, en revanche, n'en comporte aucun [@lf-1983, art. 9] — son barème affiche d'ailleurs des taux d'imposition du revenu global supérieurs à 60 % au-delà de 80 000 dinars (@tbl-bareme-cpe, revenus de 1983) —, et c'est cette rédaction que la loi de 1985 abroge : le plafond à 60 % y est donc rétabli, non maintenu. Un décret devait par ailleurs publier le barème par tranches de 20 dinars à partir de 900 dinars, sous forme de table de cotes d'impôt : c'est l'objet du décret n° 86-1188 du 12 novembre 1986.
 
 ```{python}
 #| echo: false
@@ -150,7 +117,7 @@ L'inventaire le plus sûr de ce système est donné par le texte qui l'abroge. L
 - la **contribution de solidarité** (loi n° 73-72 du 19 novembre 1973) ;
 - et, pour les personnes morales, l'**impôt sur les bénéfices des sociétés** (article 9 de la loi n° 85-109 du 31 décembre 1985).
 
-Une conséquence de cette abrogation mérite d'être signalée dès l'abord, parce qu'elle est à l'origine d'une confusion fréquente : le seuil de 80 000 dinars parfois présenté comme l'ancien plafond du taux marginal de l'IRPP n'a jamais été un seuil de cet impôt. C'est le seuil d'entrée dans la tranche à 68 % de la contribution personnelle d'État (@tbl-bareme-cpe-1986), supprimée pour les revenus réalisés à compter du 1^er^ janvier 1990.
+Une conséquence de cette abrogation mérite d'être signalée dès l'abord, parce qu'elle est à l'origine d'une confusion fréquente : le seuil de 80 000 dinars parfois présenté comme l'ancien plafond du taux marginal de l'IRPP n'a jamais été un seuil de cet impôt. C'est le seuil d'entrée dans la tranche à 68 % de la contribution personnelle d'État (@tbl-bareme-cpe, revenus de 1986), supprimée pour les revenus réalisés à compter du 1^er^ janvier 1990.
 
 ## L'institution de 1989-1990 {#sec-irpp-institution}
 
