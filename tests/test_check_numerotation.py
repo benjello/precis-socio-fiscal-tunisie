@@ -22,8 +22,7 @@ def test_livre_conforme(tmp_path):
 book:
   chapters:
     - index.qmd
-    - part: "Une partie"
-      chapters: [a.qmd]
+    - a.qmd
   appendices: [_glossaire.qmd]
 """, {"index.qmd": "# Présentation\n", "a.qmd": "# A {#sec-a}\n",
       "_glossaire.qmd": "# Glossaire {.unnumbered}\n"})
@@ -36,7 +35,7 @@ def test_chapitre_non_numerote(tmp_path):
     assert len(ecarts_du_livre(d)) == 1
 
 
-def test_partie_par_fichier(tmp_path):
+def test_toute_partie_est_refusee(tmp_path):
     d = livre(tmp_path, """
 book:
   chapters:
@@ -44,7 +43,7 @@ book:
     - part: _partie.qmd
       chapters: [a.qmd]
 """, {"index.qmd": "# P\n", "_partie.qmd": "# Partie\n", "a.qmd": "# A\n"})
-    assert any("partie déclarée par un fichier" in e for e in ecarts_du_livre(d))
+    assert any("partie" in e for e in ecarts_du_livre(d))
 
 
 def test_saut_de_niveau(tmp_path):

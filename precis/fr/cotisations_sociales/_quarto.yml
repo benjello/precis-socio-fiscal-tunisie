@@ -16,12 +16,10 @@ book:
     - index.qmd
     - _assiette.qmd
     - _taux_global.qmd
-    - part: "Les branches, une à une"
-      chapters:
-        - _pensions.qmd
-        - _maladie.qmd
-        - _accidents_travail.qmd
-        - _autres_branches.qmd
+    - _pensions.qmd
+    - _maladie.qmd
+    - _accidents_travail.qmd
+    - _autres_branches.qmd
     - _regimes.qmd
     - _bilan.qmd
 

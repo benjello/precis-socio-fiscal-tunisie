@@ -39,6 +39,8 @@ mais que la couche texte testée est vide. Un texte absent du JORT en français 
 
 ## Fiscalité — quatre impôts ouverts, des lectures et des mécanismes à compléter
 
+- **Présentation (`index.qmd`) : impôts directs et indirects définis et sourcés** (LOB 1967, 1996, 2019 ; tableaux A des LF 2014 et 2021 ; support ENA de S. Zakraoui), textes lus dans le corpus. Reste : relever la page de fin des trois LOB dans l'édition arabe ; dater le support ENA ou lui substituer la doctrine imprimée (`baccouche2008`, `ayadi1996`, à obtenir) ; l'arrêté de nomenclature des recettes (LOB 2019, art. 16) n'est pas identifié.
+
 **Immédiat, avec les sources déjà présentes.** Les décrets n° 97-1368 et 2015-1768
 (`PDFs/JORT/1997/fr/Jo05997.pdf` et `2015/fr/Jo0922015.pdf`) ont une couche texte : relever
 leurs articles, tarifs et clauses d'effet pour le chapitre des droits de consommation.

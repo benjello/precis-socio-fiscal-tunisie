@@ -6,9 +6,10 @@ cette numérotation ou la rend illisible :
 1. un `{.unnumbered}` posé sur le titre d'un chapitre : le chapitre sort de la
    numérotation, et un renvoi `@sec-…` vers l'une de ses sections s'affiche « Section 1 »,
    un numéro qui ne désigne rien (constaté le 4 octobre 2026) ;
-2. une partie déclarée par un FICHIER (`part: _branches.qmd`) : Quarto en fait une page
-   sans numéro, et les sections qu'elle porte n'en ont pas non plus. Une partie se déclare
-   par son seul titre (`part: "Les branches, une à une"`) ; son texte va dans un chapitre ;
+2. une partie (`part:`) : en HTML, Quarto ne numérote jamais les parties, qui s'intercalent
+   sans numéro entre des chapitres numérotés. Les volumes n'en ont donc pas : les chapitres
+   se suivent à plat, et l'introduction du volume annonce leurs regroupements (décision
+   du 4 octobre 2026) ;
 3. un saut de niveau (`###` directement sous `#`) : la numérotation continue dans la
    sous-section sans que la section qui devrait la contenir soit comptée ;
 4. un titre plus profond que `number-depth` : il reste sans numéro au milieu de sections
@@ -42,9 +43,8 @@ def _fichiers(entrees: list | None, livre: Path, ecarts: list[str]) -> list[Path
         if isinstance(e, str):
             fichiers.append(livre / e)
         elif isinstance(e, dict) and "part" in e:
-            if str(e["part"]).endswith(".qmd"):
-                ecarts.append(f"{livre.name} : partie déclarée par un fichier ({e['part']}) — "
-                              "déclarer la partie par son titre et mettre son texte dans un chapitre")
+            ecarts.append(f"{livre.name} : partie « {e['part']} » — Quarto ne la numérote pas ; "
+                          "mettre ses chapitres à plat et annoncer le regroupement dans l'introduction")
             fichiers += _fichiers(e.get("chapters"), livre, ecarts)
     return fichiers
 

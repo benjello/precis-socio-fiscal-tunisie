@@ -70,12 +70,10 @@ _C = {
     "tva": {"fr": "TVA", "ar": "الأداء على القيمة المضافة"},
     "consommation": {"fr": "Droits de consommation", "ar": "معاليم الاستهلاك"},
     "douanes": {"fr": "Droits de douanes", "ar": "المعاليم الديوانية"},
-    # « impôts » se dit ضرائب ; أداءات rend « taxes, redevances ». La TVA est bien un
-    # أداء — c'est son nom officiel, الأداء على القيمة المضافة, conservé ci-dessus —, mais
-    # la CATÉGORIE qui la contient avec les droits de douanes et de consommation est celle
-    # des impôts indirects. La prose arabe du même livre écrivait déjà ضرائب غير مباشرة
-    # أخرى : l'étiquette de la figure la contredisait.
-    "autres": {"fr": "Autres impôts indirects", "ar": "ضرائب غير مباشرة أخرى"},
+    # « impôts » se dit أداءات, comme au Journal officiel arabe (« impôts indirects » :
+    # الأداءات والمعاليم غير المباشرة, tableau A de la LF 2019) ; ضرائب rend « taxes ».
+    # Décision de l'humain du 4/10/2026 (docs/agents/terminologue.md).
+    "autres": {"fr": "Autres impôts indirects", "ar": "أداءات غير مباشرة أخرى"},
     "y": {"fr": "Part des recettes fiscales (%)", "ar": "الحصة من المداخيل الجبائية (%)"},
     "titre": {"fr": "Composition des recettes fiscales de l'État, 1986-2025",
               "ar": "تركيبة المداخيل الجبائية للدولة، 1986-2025"},

@@ -95,6 +95,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Grille des salaires | شبكة الأجور |  |
 | Impôt sur le revenu des personnes physiques | الضريبة على دخل الأشخاص الطبيعيين | IRPP |
 | Impôt sur les sociétés | الضريبة على الشركات | IS |
+| Impôts directs | الأداءات المباشرة |  |
+| Impôts indirects | الأداءات والمعاليم غير المباشرة |  |
 | Imputation du droit de consommation | خصم المعلوم على الاستهلاك |  |
 | Indemnité à caractère familial | المنحة ذات الصبغة العائلية |  |
 | Indemnité compensatrice | المنحة التعويضية |  |

@@ -4576,6 +4576,65 @@ entries:
         يُحتسب هذا الأخير على ثمن يشمل المعلوم على الاستهلاك.
       synonymes: []
 
+  - id: impots-directs
+    acronyme: null
+    statut: valide
+    references: [loi-67-53-lob, loi-org-96-103-lob, lf-2014, minfin-recettes-fiscales]
+    source_definition: {ref: zakraoui-ena-droit-fiscal, locator: "p. 14-16"}
+    source_traduction: {ref: loi2018-56-lf2019, locator: "tableau A"}
+    voir_aussi: [impots-indirects, irpp, impot-societes]
+    fr:
+      terme: Impôts directs
+      definition: >
+        Impôts qui atteignent, avec une certaine périodicité, une matière
+        imposable stable ou régulièrement renouvelée, comme un revenu ou un
+        bénéfice. En Tunisie, l'impôt sur le revenu des personnes physiques et
+        l'impôt sur les sociétés. La loi organique du budget les énumérait,
+        sans les définir, parmi les recettes de l'État, sous l'intitulé
+        « impôts directs ordinaires » à partir de 1996, jusqu'à la loi
+        organique du budget de 2019.
+      synonymes: [impôts directs ordinaires, imposition directe]
+    ar:
+      terme: الأداءات المباشرة
+      definition: >
+        أداءات توظَّف بصفة دورية على مادة خاضعة للأداء قارّة أو متجدّدة
+        بانتظام، كالدخل أو الربح. وهي في تونس الضريبة على دخل الأشخاص
+        الطبيعيين والضريبة على الشركات. كان القانون الأساسي للميزانية
+        يعدّدها، دون أن يعرّفها، ضمن موارد الدولة تحت عنوان «الأداءات
+        المباشرة الاعتيادية» ابتداء من سنة 1996، إلى حين صدور القانون
+        الأساسي للميزانية لسنة 2019.
+      synonymes: [الأداءات المباشرة الاعتيادية]
+
+  - id: impots-indirects
+    acronyme: null
+    statut: valide
+    references: [loi-67-53-lob, loi-org-96-103-lob, lf-2014, minfin-recettes-fiscales]
+    source_definition: {ref: zakraoui-ena-droit-fiscal, locator: "p. 14-16"}
+    source_traduction: {ref: loi2018-56-lf2019, locator: "tableau A"}
+    voir_aussi: [impots-directs, tva, droit-de-consommation]
+    fr:
+      terme: Impôts indirects
+      definition: >
+        Impôts qui frappent des opérations intermittentes ou successives, à
+        l'occasion de la production, de l'échange ou de la consommation d'un
+        bien. En Tunisie, la taxe sur la valeur ajoutée, les droits de
+        consommation, les droits de douane, les droits d'enregistrement et le
+        timbre. La loi organique du budget les énumérait, sans les définir,
+        parmi les recettes de l'État, sous l'intitulé « impôts et
+        taxes indirects ordinaires » à partir de 1996, jusqu'à la loi
+        organique du budget de 2019.
+      synonymes: [impôts et taxes indirects ordinaires, imposition indirecte]
+    ar:
+      terme: الأداءات والمعاليم غير المباشرة
+      definition: >
+        أداءات توظَّف على عمليات متقطّعة أو متتالية، بمناسبة إنتاج سلعة أو
+        تبادلها أو استهلاكها. وهي في تونس الأداء على القيمة المضافة والمعلوم
+        على الاستهلاك والمعاليم الديوانية ومعاليم التسجيل والطابع الجبائي. كان
+        القانون الأساسي للميزانية يعدّدها، دون أن يعرّفها، ضمن موارد
+        الدولة تحت عنوان «الأداءات والمعاليم غير المباشرة الاعتيادية» ابتداء
+        من سنة 1996، إلى حين صدور القانون الأساسي للميزانية لسنة 2019.
+      synonymes: [الأداءات والمعاليم غير المباشرة الاعتيادية]
+
   - id: taxe-a-la-production
     acronyme: null
     statut: provisoire

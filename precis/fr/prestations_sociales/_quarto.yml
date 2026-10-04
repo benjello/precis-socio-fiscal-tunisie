@@ -14,11 +14,9 @@ book:
   downloads: [pdf]
   chapters:
     - index.qmd
-    - part: "Les prestations contributives (sécurité sociale, hors vieillesse)"
-      chapters:
-        - _contributives.qmd
-        - _prestations_familiales.qmd
-        - _autres_risques.qmd
+    - _contributives.qmd
+    - _prestations_familiales.qmd
+    - _autres_risques.qmd
     - _non_contributives.qmd
     - _matrice.qmd
 

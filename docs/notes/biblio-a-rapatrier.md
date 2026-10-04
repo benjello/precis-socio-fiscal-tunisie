@@ -6,6 +6,10 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Ajouts à la main du 04/10/2026 (fiscalité, présentation)
+
+Quatre clés versées dans `precis/fr/fiscalite/references.json` et `precis/ar/fiscalite/references.json`, absentes de Zotero : `loi-67-53-lob`, `loi-org-96-103-lob`, `loi-org-2019-15-lob`, `zakraoui-ena-droit-fiscal` (`push_biblio.py --verifier` : 0 perte). Entrées AR : titres arabes lus sur le sommaire de l'édition arabe ; page de fin à relever (TODO). `loi-org-2019-15-lob` : jort_cache n'a pas de `pdf_fr`, URL française vérifiée sur pist.tn (HTTP 200). Support ENA sans date imprimée : pas d'`issued`.
+
 ## État vérifié le 29/09/2026
 
 **Versement terminé** après fusion sur `master` : 535 clés locales, 535 présentes dans
