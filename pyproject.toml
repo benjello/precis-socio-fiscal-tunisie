@@ -1,8 +1,11 @@
 [project]
 name = "precis-tunisie"
 version = "0.1.0"
-description = "Add your description here"
+description = "Précis de la législation socio-fiscale de la Tunisie : volumes Quarto bilingues et outils qui les produisent"
 readme = "README.md"
+license = "CC-BY-SA-4.0 AND AGPL-3.0-or-later"
+license-files = ["LICENSE.md", "LICENSES/*.txt"]
+authors = [{ name = "Mahdi Ben Jelloul" }]
 requires-python = ">=3.13"
 dependencies = [
     "arabic-reshaper>=3",
@@ -13,6 +16,10 @@ dependencies = [
     "python-bidi>=0.4",
     "pyyaml>=6",
 ]
+
+[project.urls]
+Homepage = "https://benjello.github.io/precis-socio-fiscal-tunisie/"
+Repository = "https://github.com/benjello/precis-socio-fiscal-tunisie"
 
 # Le build du site est AUTONOME : il ne dépend pas de l'entrepôt `tunisia-data`,
 # qui n'est donc PAS déclaré ici (une source path épinglée dans uv.lock ferait
