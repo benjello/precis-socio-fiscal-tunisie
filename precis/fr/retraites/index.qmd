@@ -23,16 +23,14 @@ insérés par la loi n° 2019-37 (JORT n° 35 de 2019, pp. 1312-1315), et établ
 « comptes individuels » : simple relevé de droits ou mécanisme de financement. La phrase de
 présentation sur la répartition devra être revue à la lumière de cette lecture. -->
 
-### Deux caisses
+### Les caisses
 
-**La [Caisse nationale de retraite et de prévoyance sociale](#g-cnrps) (CNRPS)** sert les pensions du secteur public. La loi n° 59-18 du 5 février 1959, qui fixe le régime des [pensions civiles et militaires](#g-pensions-civiles-militaires), dispose en son article premier que la Société de prévoyance des fonctionnaires et employés tunisiens « prend l'appellation de Caisse nationale de retraites » [@loi59-18, art. 1] ; la loi n° 59-19 du même jour en fait un établissement public doté de la personnalité civile et de l'autonomie financière [@loi59-19, art. 1]. La CNRPS procède de la loi de finances pour la gestion 1976, qui la forme à partir de cette caisse et de la Caisse de prévoyance sociale [@loi75-83] ; le [livre « Cotisations sociales »](../cotisations_sociales/index.html#sec-cot-cnrps) retrace cette filiation.
+{{< include _encadre_caisses.qmd >}}
 
-**La [Caisse nationale de sécurité sociale](#g-cnss) (CNSS)** sert les pensions du secteur privé. Elle est instituée par la loi n° 60-30 du 14 décembre 1960 [@loi60-30] ; la loi n° 60-33 du même jour porte, selon son intitulé, institution d'« un régime de pension d'invalidité, de vieillesse et de survie » dans le secteur non agricole [@loi60-33]. Pour certains régimes, la gestion des pensions passe par la Caisse d'assurance vieillesse, d'invalidité et de survivants (CAVIS) : le régime de pensions des Tunisiens à l'étranger lui est délégué [@decret89-107, art. 2], et les employeurs adhèrent auprès d'elle au régime complémentaire [@arrete-1978-11-18-retraite-complementaire, règlement, art. 3-4].
-
-<!-- TODO (documentaliste) : la loi n° 60-33 est lue (JORT n° 57/1960, p. 1616, art. 1 à 5, à
+<!-- TODO (documentaliste) : la loi n° 60-33, qui institue le régime de pension d'invalidité, de
+vieillesse et de survie du secteur non agricole, est lue (JORT n° 57/1960, p. 1616, art. 1 à 5, à
 l'image) ; elle n'énonce aucune date d'effet et le fascicule porte plusieurs dates (13-16 décembre
-1960) : sa date d'entrée en vigueur reste à établir. L'article de la loi n° 75-83 qui institue la CNRPS n'a pas
-été lu (la note bibliographique de la clé l'indique) : à lire avant d'en citer la lettre. -->
+1960) : sa date d'entrée en vigueur reste à établir. -->
 
 ### Ce que pèsent les deux caisses
 
@@ -239,6 +237,8 @@ ces textes lus, rédiger une section sur la coordination. -->
 Le [livre « Cotisations sociales »](../cotisations_sociales/index.html#sec-cot-pensions) traite le financement des régimes : les taux de cotisation retraite, leur partage entre employeur et salarié, leur assiette et leur histoire. Ce livre-ci n'en reprend aucun taux. Il ne touche au prélèvement que là où celui-ci commande le droit à pension : l'assiette du régime complémentaire, définie comme la fraction du salaire qui excède la limite de calcul des prestations du régime légal ; les contributions afférentes à la péréquation, que la loi de finances pour 2002 met à la charge du retraité, l'employeur ne cotisant que pendant 36 mois ; ou encore la cotisation qui frappe la majoration de revalorisation dans le régime non agricole.
 
 Le livre « Prestations sociales » traite les autres risques couverts par les mêmes caisses. La frontière passe à l'intérieur de plusieurs dispositifs voisins de la pension. Le capital-décès du secteur public, versé au décès d'un agent ou d'un retraité, est une prestation distincte de la pension de réversion : ce livre-ci le signale, « Prestations sociales » l'expose. Les indemnités à caractère familial s'ajoutent à la pension de l'agent chargé de famille, dans les mêmes conditions que pour les agents en activité : ce livre-ci en donne les taux au titre des accessoires de la pension, « Prestations sociales » les décrit pour les actifs. La réparation des accidents du travail des agents publics, enfin, donne lieu à une rente compensatrice servie par la caisse, dont ce livre-ci ne dit que ce que la caisse en écrit et dont « Prestations sociales » expose le régime. Les primes complémentaires aux faibles pensions, que « Prestations sociales » mentionne parmi les dispositifs adjacents à l'assistance, ne sont pas traitées ici.
+
+Le livre [« Les caisses de sécurité sociale »](../caisses/index.html) traite les caisses elles-mêmes : leur statut, la séparation de leurs comptes par régime, la ventilation du taux global entre les branches et les comptes d'ensemble de chaque caisse. Ce livre-ci ne garde, pour les pensions, que l'équilibre propre à chaque régime.
 
 Le livre « Les rémunérations dans le secteur public » décrit enfin la rémunération dont procède la pension des agents publics : c'est sur les éléments permanents de cette rémunération que la pension est liquidée, puis réajustée par la péréquation.
 

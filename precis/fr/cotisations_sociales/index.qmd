@@ -28,7 +28,7 @@ def onglets(panneaux, **options):
         **options))
 ```
 
-Ce livre traite du **prélèvement** qui finance la sécurité sociale : qui cotise, sur quelle assiette, à quel taux, et pour financer quelle branche. Il pose d'abord le cadre commun à tous les régimes — une présentation générale (@sec-cot-presentation), l'assiette (@sec-cot-assiette), le taux global et le coin social (@sec-cot-taux-global) —, puis le prend branche par branche, des origines à l'état actuel (@sec-cot-branches), avant de dire ce qui distingue les régimes (@sec-cot-regimes) et dans quel cadre comptable et budgétaire les caisses les gèrent (@sec-cot-cadre-caisses) ; le recouvrement, le rendement des cotisations et une vue d'ensemble concluent (@sec-cot-bilan).
+Ce livre traite du **prélèvement** qui finance la sécurité sociale : qui cotise, sur quelle assiette, à quel taux, et pour financer quelle branche. Il pose d'abord le cadre commun à tous les régimes — une présentation générale (@sec-cot-presentation), l'assiette (@sec-cot-assiette), le taux global et le coin social (@sec-cot-taux-global) —, puis le prend branche par branche, des origines à l'état actuel (@sec-cot-branches), avant de dire ce qui distingue les régimes (@sec-cot-regimes) ; le recouvrement, le rendement des cotisations et une vue d'ensemble concluent (@sec-cot-bilan).
 
 ::: {.callout-note title="Trois conventions de lecture, retenues dans tout ce qui suit"}
 **1. Le partage entre secteur privé et secteur public traverse tout le livre.** Ce n'est pas une commodité : il commande la caisse compétente — la [Caisse nationale de sécurité sociale](#g-cnss) d'un côté, la [Caisse nationale de retraite et de prévoyance sociale](#g-cnrps) de l'autre —, le texte applicable et l'ampleur du prélèvement, qui va du simple au double d'un régime à l'autre. Là où les deux secteurs sont traités ensemble, le secteur privé vient en premier.
@@ -47,6 +47,8 @@ La [cotisation sociale](#g-cotisations-sociales) se distingue de l'impôt par sa
 Cette dernière est traitée dans le livre « Fiscalité », où son assiette la rattache ; elle est mentionnée ici parce qu'elle contribue au financement des régimes.
 
 ### La carte des régimes
+
+{{< include _encadre_caisses.qmd >}}
 
 Le système compte **huit régimes dans le secteur privé** et trois ensembles dans le secteur public.
 
@@ -84,9 +86,9 @@ Parmi les textes dont ce chapitre tire des taux, douze s'achèvent sur une simpl
 
 ### Ce que ce livre traite et ne traite pas {#sec-cot-perimetre}
 
-Le prélèvement est le premier maillon d'une chaîne dont les autres livres du précis prennent la suite — le livre « Retraites » traite la pension, le livre « Prestations sociales » ce que le régime ouvre en dehors de la vieillesse. Les mêmes régimes servent ainsi trois livres pour trois objets distincts, et celui-ci prend les régimes du côté de ce qu'ils prélèvent.
+Le prélèvement est le premier maillon d'une chaîne dont les autres livres du précis prennent la suite. Les mêmes régimes servent ainsi plusieurs livres pour des objets distincts, et celui-ci prend les régimes du côté de ce qu'ils prélèvent.
 
-Le partage suit une règle simple. Ce livre-ci porte ce qui est **prélevé** : le taux et l'assiette de chaque branche, et leur histoire. Les livres « Retraites » et « Prestations sociales » portent ce qui est **servi** — les conditions et le calcul des prestations — et, pour les pensions, l'équilibre financier des régimes, qui rapporte les pensions servies aux cotisations encaissées. Le livre « Retraites » ne retrace donc pas l'histoire des taux de cotisation : il renvoie à ce livre-ci.
+Le partage suit une règle simple. Ce livre-ci porte ce qui est **prélevé** : le taux et l'assiette de chaque branche, leur histoire, le recouvrement et ce que rapportent les cotisations. Le livre [« Les caisses de sécurité sociale »](../caisses/index.html) porte les **organismes** qui reçoivent ce prélèvement : leur statut, leur tutelle, la séparation de leurs comptes par régime, leur budget, les comptes de leurs régimes dans la durée, et ce que l'État en attend ou y apporte. Les livres « Retraites » et « Prestations sociales » portent ce qui est **servi** — les conditions et le calcul des prestations — et, pour les pensions, l'équilibre propre à chaque régime, qui rapporte les pensions servies aux cotisations encaissées. Le livre « Retraites » ne retrace donc pas l'histoire des taux de cotisation : il renvoie à ce livre-ci.
 
 ## L'assiette {#sec-cot-assiette}
 
