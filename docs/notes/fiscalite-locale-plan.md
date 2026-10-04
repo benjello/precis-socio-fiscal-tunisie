@@ -81,7 +81,9 @@ Chaque série reconstruite reçoit sa fiche de provenance, source par source, da
 
 ## 6. Questions ouvertes
 
+Titre du volume arrêté par l'humain le 4 octobre 2026 : « Les finances locales ».
+
+
 - Faut-il un chapitre propre pour les régions et les conseils de gouvernorat, ou les traiter avec
   les communes ?
 - Les taxes affectées à des fonds (hors budgets locaux) entrent-elles dans le périmètre ?
-- Le titre du volume : « Les finances locales », ou « Les collectivités locales et leurs finances » ?
