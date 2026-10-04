@@ -40,8 +40,9 @@ COMMUN = (
     "[Caisse nationale de sécurité sociale](#g-cnss) (CNSS), instituée en 1960 [@loi60-30], "
     "gère les régimes du secteur privé, salariés et non-salariés. La "
     "[Caisse nationale de retraite et de prévoyance sociale](#g-cnrps) (CNRPS) est formée par "
-    "la loi de finances pour 1976, à partir de deux caisses créées en 1959, et couvre les "
-    "agents publics [@loi75-83, art. 28]. La [Caisse nationale d'assurance maladie](#g-cnam) "
+    "la loi de finances pour 1976, à partir de la Caisse nationale de retraites et de la "
+    "Caisse de prévoyance sociale, et couvre les agents publics [@loi75-83, art. 28]. La "
+    "[Caisse nationale d'assurance maladie](#g-cnam) "
     "(CNAM), créée en 2004, gère l'assurance maladie des deux secteurs et la réparation des "
     "accidents du travail [@loi2004-71, art. 7 et 8]. De 1976 à 1994, une quatrième caisse, "
     "la [CAVIS](#g-cavis), a géré les pensions du secteur privé dans le cadre de la CNSS "
@@ -52,8 +53,9 @@ PROPRE = {
     "cotisations_sociales": (
         "**Dans ce livre**, les cotisations des régimes du secteur privé sont recouvrées par la "
         "CNSS, celles du secteur public par la CNRPS. La cotisation d'assurance maladie "
-        "instituée en 2004 est perçue par ces deux caisses, qui la reversent à la CNAM, selon "
-        "la rédaction initiale de la loi n° 2004-71 [@loi2004-71, art. 16]."
+        "instituée en 2004 est perçue par ces deux caisses, qui la reversent à la CNAM, dans la "
+        "rédaction initiale de la loi n° 2004-71 [@loi2004-71, art. 16] ; la loi n° 2017-47 "
+        "a récrit cet article [@loi2017-47, art. 1]."
     ),
     "prestations_sociales": (
         "**Dans ce livre**, les prestations contributives sont servies par la caisse du régime "

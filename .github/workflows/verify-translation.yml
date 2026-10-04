@@ -25,7 +25,7 @@ name: Verify Translation (Checker AI)
 # ni le contrôle de parité n'ont donc de paire à comparer, et les garder ici ne
 # produirait que du bruit. Le mode de défaillance réel — chapitres qui dérivent, fichier
 # malformé — est couvert par `rendre-les-livres.yml`, qui écoute `precis/**` et rend les
-# dix livres, l'arabe compris et pour cette raison même.
+# livres de build.sh, l'arabe compris et pour cette raison même.
 on:
   pull_request:
     paths:

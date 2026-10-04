@@ -48,6 +48,12 @@ mérite ensuite son propre diff et sa propre revue ; elle n'a pas été déclenc
   contrôlée le 4 octobre 2026 (200, `application/pdf`). L'URL arabe du décret n° 2000-1902 est
   `Ja07100.pdf` (nom hors convention, mais c'est le champ de la notice, et le fichier répond ;
   `Ja0712000.pdf` rend 404). Titres en français dans les deux langues, comme les entrées voisines.
+- **Rangement revu le 4 octobre 2026** (livre « Les caisses de sécurité sociale ») : ces clés
+  sont passées dans `precis/{fr,ar}/caisses/references.json`, ou au fonds commun quand un autre
+  livre les cite ; `loi86-83-lfr1986` et `loi87-83-lf1988` sont fusionnées dans
+  `loi-86-83-lfr-1986` et `loi-87-83-lf-1988` (fonds commun), `loi2017-66-lf2018` dans `lf-2018`.
+  Aucune collection Zotero ne correspond au nouveau livre : à créer, et à déclarer dans
+  `COLLECTION_TO_BOOK`, avant le prochain rapatriement.
 - **Six clés copiées à l'identique, langue par langue**, depuis d'autres livres :
   `loi86-86` (Prestations sociales), `loi89-9` (Rémunérations publiques), `chaabane-2002-ess4`,
   `bm-1993-social-protection`, `vittas-1993-wps1154` et `cnrps-etats-financiers` (Retraites).

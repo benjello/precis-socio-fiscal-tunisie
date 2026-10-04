@@ -4,6 +4,12 @@
 > sur « les évolutions comptables des différentes caisses et le cadre budgétaire ». Rien n'est
 > rédigé pour le précis ; aucun fichier du précis n'a été modifié.
 >
+> **Suite (4 octobre 2026)** : rédigé d'abord dans `cotisations_sociales/_cadre_caisses.qmd`, puis
+> déplacé le même jour dans le livre « Les caisses de sécurité sociale » (`precis/fr/caisses/`,
+> ancres `sec-caisses-*`). Clés fusionnées depuis : `loi86-83-lfr1986` → `loi-86-83-lfr-1986`,
+> `loi87-83-lf1988` → `loi-87-83-lf-1988` (fonds commun) ; les entrées CSL du § 5 gardent
+> l'ancienne forme, pour mémoire.
+>
 > **Niveaux d'attestation** (convention des autres notes) : **[T]** texte lu au fascicule (à
 > l'image ou sur la couche texte, décodée le cas échéant) ; **[M]** seul l'intitulé (`jort_cache`)
 > est connu ; **[C]** lu dans une compilation non officielle, à vérifier au JORT ; **[S]** source
