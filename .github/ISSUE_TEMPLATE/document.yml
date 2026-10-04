@@ -1,0 +1,49 @@
+name: Signaler ou transmettre un document
+description: Rapport d'activité, annuaire statistique, circulaire, étude, thèse — يمكنكم الكتابة بالعربية
+title: "Document : "
+labels: ["retour-lecteur", "source-proposée"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Le précis cherche les documents qui ne se trouvent pas au *Journal officiel*. Il suffit de
+        dire qu'un document existe et où il se trouve : nous nous chargeons de le numériser.
+  - type: input
+    id: titre
+    attributes:
+      label: De quel document s'agit-il ?
+      description: Son titre, ou une description — « annuaire statistique de la CNSS, 1987 ».
+    validations:
+      required: true
+  - type: input
+    id: auteur
+    attributes:
+      label: Qui l'a publié, et en quelle année ?
+  - type: dropdown
+    id: nature
+    attributes:
+      label: Nature du document
+      options:
+        - Annuaire ou bulletin statistique
+        - Rapport d'activité ou états financiers
+        - Circulaire, note commune ou instruction
+        - Étude ou rapport
+        - Thèse, mémoire ou article
+        - Autre
+  - type: textarea
+    id: lieu
+    attributes:
+      label: Où se trouve-t-il ?
+      description: Une bibliothèque, un service, un site, vos propres archives. Si vous pouvez le prêter ou en envoyer une copie, dites-le.
+    validations:
+      required: true
+  - type: textarea
+    id: interet
+    attributes:
+      label: Ce qu'il apporterait au précis
+      description: Les années couvertes, les données qu'il contient, le dispositif qu'il éclaire.
+  - type: input
+    id: citation
+    attributes:
+      label: Souhaitez-vous être cité dans les remerciements ?
+      description: Si oui, indiquez sous quel nom. Nul n'est cité sans son accord.

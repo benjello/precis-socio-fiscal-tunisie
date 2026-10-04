@@ -12,6 +12,8 @@ book:
   repo-branch: master
   repo-actions: [edit, issue]
   downloads: [pdf]
+  page-footer:
+    center: "[Accueil](../index.html) · [À propos et contribuer](../a-propos.html) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)"
   chapters:
     - index.qmd
     - _contributives.qmd

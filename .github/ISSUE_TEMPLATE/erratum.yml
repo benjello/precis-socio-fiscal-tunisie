@@ -1,0 +1,46 @@
+name: Signaler une erreur
+description: Un taux, une date, une référence ou une formulation à corriger — يمكنكم الكتابة بالعربية
+title: "Erreur : "
+labels: ["retour-lecteur", "erratum"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de prendre ce temps. Quelques lignes suffisent ; écrivez en français ou en arabe.
+  - type: dropdown
+    id: volume
+    attributes:
+      label: Volume concerné
+      options:
+        - Retraites
+        - Cotisations sociales
+        - Prestations sociales
+        - Rémunérations publiques
+        - Fiscalité
+        - Caisses de sécurité sociale
+        - Plusieurs volumes, ou je ne sais pas
+    validations:
+      required: true
+  - type: input
+    id: endroit
+    attributes:
+      label: Où se trouve l'erreur ?
+      description: Le titre de la section, le numéro du tableau ou de la figure, ou l'adresse de la page.
+    validations:
+      required: true
+  - type: textarea
+    id: constat
+    attributes:
+      label: Ce qui est écrit, et ce qui devrait l'être
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: D'où le tenez-vous ?
+      description: Un texte, un document, une publication — ou votre expérience du terrain. Le précis ne retient aucune valeur sans source vérifiée ; une simple piste nous aide déjà.
+  - type: input
+    id: citation
+    attributes:
+      label: Souhaitez-vous être cité dans les remerciements ?
+      description: Si oui, indiquez sous quel nom. Nul n'est cité sans son accord.
