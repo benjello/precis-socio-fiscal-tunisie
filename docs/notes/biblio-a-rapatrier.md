@@ -53,6 +53,8 @@ mérite ensuite son propre diff et sa propre revue ; elle n'a pas été déclenc
   `bm-1993-social-protection`, `vittas-1993-wps1154` et `cnrps-etats-financiers` (Retraites).
   Citées désormais par deux livres ou plus : **à ranger en « Commun »** à la prochaine descente,
   et à retirer alors des bibliographies de livre.
+- `arrete-1987-01-06-financement-pnafn` : copiée depuis Prestations sociales (contribution des
+  caisses au programme des familles nécessiteuses). **À ranger en « Commun »**.
 - `sna2008` et `imfgfsm2014` : copiées depuis Rémunérations publiques, parce que l'entrée de
   glossaire « Fonds de sécurité sociale », désormais ancrée dans ce livre, les cite. **À ranger
   en « Commun »** avec les précédentes.

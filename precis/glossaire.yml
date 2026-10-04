@@ -4964,9 +4964,10 @@ entries:
         des régimes que cette loi institue, à la charge de l'employeur et du
         travailleur, et non par risque. Sa ventilation par régime est proposée
         par le conseil d'administration de la Caisse nationale de sécurité
-        sociale et approuvée par l'autorité de tutelle (art. 10 et 27) ; les
-        branches nouvelles y sont financées par prélèvement, sans relèvement
-        du prélèvement total.
+        sociale et approuvée par l'autorité de tutelle (art. 10 et 27). Certaines branches
+        y sont financées par prélèvement, sans relèvement du prélèvement total :
+        l'assurance maladie, la protection sociale des travailleurs et un point
+        transféré aux accidents du travail en 1995.
       synonymes: [Taux global]
     ar:
       terme: النسبة الجملية للمساهمات
@@ -4974,8 +4975,9 @@ entries:
         نسبة موحّدة يضبطها الفصل 41 من القانون عدد 30 لسنة 1960 لمجموع
         الأنظمة التي يحدثها هذا القانون، محمولة على المؤجر والعامل، لا على
         كل خطر على حدة. ويقترح مجلس إدارة الصندوق الوطني للضمان الاجتماعي
-        توزيعها حسب الأنظمة وتصادق عليه سلطة الإشراف (الفصلان 10 و27)؛ وتُموَّل
-        الفروع الجديدة باقتطاع منها، دون الترفيع في الاقتطاع الجملي.
+        توزيعها حسب الأنظمة وتصادق عليه سلطة الإشراف (الفصلان 10 و27). وتُموَّل بعض الفروع باقتطاع منها، دون
+        الترفيع في الاقتطاع الجملي: التأمين على المرض، والحماية الاجتماعية
+        للعمّال، ونقطة حُوّلت إلى حوادث الشغل سنة 1995.
       synonymes: []
 
   - id: compte-de-compensation
@@ -5097,19 +5099,19 @@ entries:
       definition: >
         Agent placé auprès d'une caisse de sécurité sociale pour le compte de
         l'État (décret n° 2000-1902, art. 18, pour la CNSS ; décret
-        n° 2005-321, pour la CNAM). Il succède au contrôleur technique et au
-        contrôleur financier que prévoyait la loi n° 60-30 (art. 29-33) et au
-        contrôleur financier du décret n° 76-3 pour la CNRPS.
+        n° 2005-321, pour la CNAM). La loi n° 60-30 prévoyait, auprès de la CNSS, un
+        contrôleur technique et un contrôleur financier (art. 29-33), et le
+        décret n° 76-3 un contrôleur financier auprès de la CNRPS.
       synonymes: []
     ar:
       terme: مراقب الدولة
       definition: >
         عون يوضع لدى صندوق للضمان الاجتماعي لحساب الدولة (الأمر عدد 1902 لسنة
         2000، الفصل 18، بالنسبة إلى الصندوق الوطني للضمان الاجتماعي؛ الأمر عدد
-        321 لسنة 2005، بالنسبة إلى الصندوق الوطني للتأمين على المرض). ويخلف
-        المراقبَ الفنّي والمراقبَ المالي اللذين نصّ عليهما القانون عدد 30 لسنة
-        1960 (الفصول 29 إلى 33)، والمراقبَ المالي الذي نصّ عليه الأمر عدد 3 لسنة
-        1976 بالنسبة إلى الصندوق الوطني للتقاعد والحيطة الاجتماعية.
+        321 لسنة 2005، بالنسبة إلى الصندوق الوطني للتأمين على المرض). وكان القانون عدد 30 لسنة 1960 ينصّ لدى الصندوق
+        الوطني للضمان الاجتماعي على مراقب فنّي ومراقب مالي (الفصول 29 إلى 33)،
+        والأمر عدد 3 لسنة 1976 على مراقب مالي لدى الصندوق الوطني للتقاعد والحيطة
+        الاجتماعية.
       synonymes: []
 
   - id: contrat-programme

@@ -242,14 +242,16 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   - **OCR** : décret n° 75-775 (JORT n° 72 de 1975) et décret n° 86-454 (n° 25 de 1986) pour la
     tutelle de la CNRPS (L1) ; modificatifs de la loi n° 60-30 antérieurs à 1996 (L2) ; lois de
     finances 1971-1975 et 1991 (n° 86 de 1990) pour les placements en bons d'équipement (L5 ;
-    LF 1992 à localiser) ; loi n° 85-72 (n° 56 de 1985) (L13) ; arrêté du 6 janvier 1987
-    (n° 4 de 1987) (L14) ; décret n° 87-529 (n° 25 ou 30 de 1987, à départager) (L15) ;
+    LF 1992 à localiser) ; loi n° 85-72 (n° 56 de 1985) (L13) ; décret n° 87-529 (n° 25 ou 30 de 1987, à départager) (L15) ;
     loi n° 68-8 sur la Cour des comptes (n° 11 de 1968) (L9) ;
   - **à obtenir** (hors JORT) : couverture des déficits agricoles par la trésorerie de la CNSS —
     états financiers, rapports du conseil d'administration, études du CRESS (L10) ; rapport de
     mission complet de la Cour des comptes sur la CNRPS (2006) (L9) ; affectation du produit de
     la majoration de 1975 après 1988, tableaux A des lois de finances 1985-2004 (L6) ;
   - **recherches** : L3, L4, L8 suivent leurs fiches dans `docs/recherches.yml`.
+  - **L14 levée** : l'arrêté du 6 janvier 1987 est déjà lu et cité par le livre « Prestations
+    sociales » (`arrete-1987-01-06-financement-pnafn`, contribution pour 1986) ; restent les
+    arrêtés des années suivantes.
   Séries à construire avant de publier des montants (TODO du fichier) : comptes des organismes
   de sécurité sociale des comptes de la nation ; versements des caisses au budget (tableau A) ;
   transferts de l'État aux caisses depuis 2016, dont les sources restent à verser.
