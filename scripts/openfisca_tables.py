@@ -506,6 +506,28 @@ def _reference_a_la_date(donnees: dict[str, Any], cle_date: Any) -> tuple[str, s
     return "", ""
 
 
+_PIST_FR_AR = re.compile(r"(/jort/\d{4}/\d{4})F(/)Jo(\w+\.pdf)$")
+
+
+def lien_reference(titre: str, lien: str, langue: str = "fr") -> str:
+    """Titre de référence d'un paramètre, rendu en LIEN vers le Journal officiel.
+
+    Les tableaux affichaient le titre seul, sans lien, alors que le paramètre porte l'adresse
+    du fascicule : le lecteur ne pouvait pas remonter au texte. En arabe, l'adresse de
+    l'édition française de pist.tn (`…/AAAAF/JoNNNAA.pdf`) est remplacée par celle de
+    l'édition arabe (`…/AAAAA/JaNNNAA.pdf`), comme le veut la convention du précis. Sans
+    lien, le titre seul ; sans titre, rien.
+    """
+    if not titre:
+        return ""
+    if not lien:
+        return titre
+    if langue == "ar":
+        lien = _PIST_FR_AR.sub(r"\1A\2Ja\3", lien)
+    titre_md = titre.replace("[", "\\[").replace("]", "\\]")
+    return f"[{titre_md}]({lien})"
+
+
 def serie_datee(chemin_relatif: str) -> list[tuple[str, float | None, str, str]]:
     """Série (date d'effet, valeur, titre de la référence, lien) d'un paramètre scalaire.
 
@@ -546,13 +568,13 @@ def tableau_serie(
     if formateur is None:
         formateur = lambda v: "—" if v is None else formate_dinars(v)
     lignes = []
-    for date, valeur, titre, _lien in serie:
+    for date, valeur, titre, lien in serie:
         ligne = {
             "À compter des revenus de": date[:4],
             colonne_valeur: formateur(valeur),
         }
         if avec_reference:
-            ligne["Texte"] = titre or "—"
+            ligne["Texte"] = lien_reference(titre, lien) or "—"
         lignes.append(ligne)
     return pd.DataFrame(lignes)
 
@@ -563,6 +585,7 @@ def tableau_evolution(
     colonne_periode: str = "Années de revenus",
     derniere_annee: str = "2026",
     colonne_texte: str = "Texte",
+    langue: str = "fr",
 ) -> "pd.DataFrame | None":
     """Plusieurs paramètres côte à côte, une ligne par période homogène.
 
@@ -608,9 +631,9 @@ def tableau_evolution(
             texte = f"[@{cles[date]}]"
         else:
             for chemin, _e, _f in specs:
-                for d, _v, titre, _h in series[chemin]:
+                for d, _v, titre, h in series[chemin]:
                     if d == date and titre:
-                        texte = titre
+                        texte = lien_reference(titre, h, langue)
                         break
                 if texte:
                     break
@@ -796,21 +819,21 @@ def tableau_evolution_datee(
 
     def titre_a(date):
         for chemin, _e, _f in specs:
-            for d, _v, titre, _h in series[chemin]:
+            for d, _v, titre, h in series[chemin]:
                 if d == date and titre:
-                    return titre
-        return ""
+                    return titre, h
+        return "", ""
 
     lignes = []
     for date in dates:
         ligne = {colonne_periode: formate_date(date, langue)}
         for chemin, entete, formateur in specs:
             ligne[entete] = formateur(valeur_a(chemin, date))
-        titre = titre_a(date)
+        titre, lien = titre_a(date)
         if cles and date in cles:
             ligne[colonne_texte] = f"[@{cles[date]}]"
         else:
-            ligne[colonne_texte] = titre or "—"
+            ligne[colonne_texte] = lien_reference(titre, lien, langue) or "—"
         if avec_attestation:
             ligne[colonne_attestation] = attestation(titre, langue)
         lignes.append(ligne)
@@ -845,18 +868,18 @@ def tableau_a_la_date(
     lignes = []
     for chemins, libelle, formateur in specs:
         groupe = chemins if isinstance(chemins, tuple) else (chemins,)
-        valeurs, effet, titre_retenu = [], "", ""
+        valeurs, effet, titre_retenu, lien_retenu = [], "", "", ""
         for rang, chemin in enumerate(groupe, start=1):
             serie = serie_datee(chemin)
             if not serie:
                 return None
             releve_note(chemin, libelle if len(groupe) == 1 else f"{libelle} ({rang})")
             retenue = None
-            for d, v, titre, _h in serie:
+            for d, v, titre, h in serie:
                 if d <= date:
                     retenue = v
                     if rang == 1:
-                        titre_retenu = titre
+                        titre_retenu, lien_retenu = titre, h
                     if retenue is not None:
                         effet = max(effet, d)
             valeurs.append(formateur(retenue))
@@ -864,7 +887,7 @@ def tableau_a_la_date(
         if cles and premier in cles:
             texte = f"[@{cles[premier]}]"
         else:
-            texte = titre_retenu or "—"
+            texte = lien_reference(titre_retenu, lien_retenu, langue) or "—"
         ligne = {entetes[0]: libelle}
         if colonne_effet:
             ligne[colonne_effet] = formate_date(effet, langue) if effet else VIDE
@@ -1038,11 +1061,11 @@ def tableau_taux_datee(
         ligne = {colonne_periode: formate_date(date, langue)}
         for chemin, entete, formateur in specs:
             ligne[entete] = formateur(valeur_a(chemin, date))
-        titre = ""
+        titre, lien = "", ""
         for chemin, _e, _f in specs:
-            for d, _v, t, _h in series[chemin]:
+            for d, _v, t, h in series[chemin]:
                 if d == date and t:
-                    titre = t
+                    titre, lien = t, h
                     break
             if titre:
                 break
@@ -1058,7 +1081,7 @@ def tableau_taux_datee(
         if cles and date in cles:
             ligne[colonne_texte] = f"[@{cles[date]}]"
         else:
-            ligne[colonne_texte] = titre or "—"
+            ligne[colonne_texte] = lien_reference(titre, lien, langue) or "—"
         lignes.append(ligne)
     return pd.DataFrame(lignes)
 

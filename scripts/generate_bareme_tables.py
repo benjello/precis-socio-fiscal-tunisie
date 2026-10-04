@@ -439,7 +439,8 @@ def main() -> int:
 
         for fichier, specs, cles in evolutions(langue):
             df, liens = ot.avec_liens(lambda: ot.tableau_evolution(
-                specs, cles=cles, colonne_periode=m["periode"], colonne_texte=m["texte"]
+                specs, cles=cles, colonne_periode=m["periode"], colonne_texte=m["texte"],
+                langue=langue
             ))
             if df is None:
                 print(f"échec : {langue}/{fichier}", file=sys.stderr)
