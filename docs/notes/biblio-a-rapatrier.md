@@ -37,6 +37,33 @@ mérite ensuite son propre diff et sa propre revue ; elle n'a pas été déclenc
 
 ## En attente
 
+### Livre « Cotisations sociales » — cadre comptable et budgétaire des caisses (04/10/2026)
+
+- **Quinze nouvelles clés FR/AR** dans `precis/{fr,ar}/cotisations_sociales/references.json`,
+  reprises de la note `cadre-budgetaire-comptable-caisses.md` (§ 5), **à verser dans Zotero
+  après revue et fusion** : `decret76-3`, `decret89-1890`, `decret89-1891`, `decret85-1611`,
+  `loi81-5`, `decret97-564`, `decret2004-2265`, `decret2000-1902`, `decret2005-321`,
+  `loi86-106-lf1987`, `loi88-60-lfc1988`, `loi86-83-lfr1986`, `loi87-83-lf1988`, `loi96-112`,
+  `dl2021-21-lf2022`. URL FR (`pdf_fr`) et AR (`pdf_ar`) lues dans `jort_cache`, chacune
+  contrôlée le 4 octobre 2026 (200, `application/pdf`). L'URL arabe du décret n° 2000-1902 est
+  `Ja07100.pdf` (nom hors convention, mais c'est le champ de la notice, et le fichier répond ;
+  `Ja0712000.pdf` rend 404). Titres en français dans les deux langues, comme les entrées voisines.
+- **Six clés copiées à l'identique, langue par langue**, depuis d'autres livres :
+  `loi86-86` (Prestations sociales), `loi89-9` (Rémunérations publiques), `chaabane-2002-ess4`,
+  `bm-1993-social-protection`, `vittas-1993-wps1154` et `cnrps-etats-financiers` (Retraites).
+  Citées désormais par deux livres ou plus : **à ranger en « Commun »** à la prochaine descente,
+  et à retirer alors des bibliographies de livre.
+- `sna2008` et `imfgfsm2014` : copiées depuis Rémunérations publiques, parce que l'entrée de
+  glossaire « Fonds de sécurité sociale », désormais ancrée dans ce livre, les cite. **À ranger
+  en « Commun »** avec les précédentes.
+- `loi75-83` (fonds commun, FR et AR) : note corrigée — l'art. 28 est lu (p. 2854).
+- **Doublon à trancher** : `lf-2018` (fonds commun) et `loi2017-66-lf2018` (Rémunérations
+  publiques) désignent la même loi n° 2017-66.
+- **Non versées**, faute de métadonnées vérifiées : `cour-des-comptes-2006-cnrps` (capture du
+  web à reprendre selon la convention : horodatage lu dans le CDX, sans suffixe `id_`, champs
+  `archive`, `archive_location`, `accessed`), `fmi-2000-red` (DOI à contrôler),
+  `minfin-transferts-annexe8` (sans URL), `ue-jumelage-cnrps-2021`.
+
 ### Fonds commun — rétrospective financière de la CNSS (03/10/2026)
 
 - `cnss-retrospective-1990-2004` : nouvelle clé FR/AR dans le **fonds commun**
