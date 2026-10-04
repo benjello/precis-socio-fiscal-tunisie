@@ -72,9 +72,7 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   Finances d'août 2013 (`minfin-cnf-2013-forfait`, lu à l'image) ; les autres chiffres de la
   collection `tunisia-data` (tranches de chiffre d'affaires, secteurs, comparaison avec le réel)
   sont lisibles mais non encore relus ; la **relecture
-  arabophone** de l'article 91 de la LF 2026 (lu à l'image, édition arabe seule parue) et
-  l'**arbitrage terminologique** « régime estimatif optionnel » / « régime forfaitaire
-  optionnel » (النظام التقديري الاختياري) ; le **numéro** de la note commune sur l'article 16
+  arabophone** de l'article 91 de la LF 2026 (lu à l'image, édition arabe seule parue)  ; le **numéro** de la note commune sur l'article 16
   de la LF 2018 ; les **tableaux faits main** `tbl-irpp-forfait` et `tbl-forfait-annexe-2`, à
   engendrer quand les paramètres seront sourcés. Textes tous lisibles au corpus local
   (fascicules de 1990 à 1993 océrisés, ceux de 1999 et 2001 décodés) ; la LF 2016 et la LF 2020

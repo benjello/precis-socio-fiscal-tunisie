@@ -148,8 +148,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Régime des travailleurs à faibles revenus | نظام العملة ذوي الدخل المحدود |  |
 | Régime des travailleurs non salariés | نظام العملة غير الأجراء | RTNS |
 | Régime des travailleurs tunisiens à l'étranger | نظام الضمان الاجتماعي للعملة التونسيين بالخارج | RTTE |
-| Régime estimatif optionnel | النظام التقديري الاختياري |  |
 | Régime forfaitaire d'imposition | النظام التقديري |  |
+| Régime forfaitaire optionnel | النظام التقديري الاختياري |  |
 | Régime indiciaire | النظام الاستدلالي للتأجير |  |
 | Régime statutaire autonome | النظام الأساسي الخاص |  |
 | Rémunération des dirigeants d'entreprises publiques | تأجير رؤساء المؤسسات والمنشآت العمومية |  |

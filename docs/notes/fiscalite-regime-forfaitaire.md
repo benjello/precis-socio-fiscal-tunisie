@@ -271,15 +271,16 @@ au fascicule — son extrait local ne cite ni « 44 *bis* » ni « forfaitaire �
   et grands ensembles commerciaux des grandes villes).
 - Déclaration en deux versements égaux : avant le 25 avril et avant le 25 octobre.
 
-**Terminologie — point à trancher.** Le texte arabe nomme le dispositif **النظام التقديري
+**Terminologie — tranchée le 4 octobre 2026 (le terme suit la loi).** Le texte arabe nomme le dispositif **النظام التقديري
 الاختياري**, avec le mot même qui désigne le régime forfaitaire depuis 1990 (« الضريبة القانونية
 التقديرية » = « impôt forfaitaire légal » ; « النظام التقديري » = « régime forfaitaire » dans toutes
 les lois de finances lues en regard). Le libellé français « régime estimatif optionnel » employé
 dans le chapitre et au glossaire n'a **aucune version française officielle** (l'édition française
 du JORT n° 148/2025 n'est pas parue : l'adresse en `2025F` sert le fichier arabe, même taille de
 8 775 232 octets, vérifié le 4 octobre 2026). Traduction littérale : « régime forfaitaire
-optionnel » — à rapprocher de l'« impôt forfaitaire optionnel » de 1 500 D de la LF 1999. Le
-précis garde le libellé en usage, en signalant le terme arabe ; l'arbitrage revient à l'humain.
+optionnel » — à rapprocher de l'« impôt forfaitaire optionnel » de 1 500 D de la LF 1999. L'humain
+a tranché : le précis suit la loi et écrit « régime forfaitaire optionnel » (glossaire :
+`regime-forfaitaire-optionnel`).
 
 ## 6. Longue période
 
