@@ -907,18 +907,24 @@ entries:
     statut: valide
     references: [lf-2018]
     source_definition: {ref: lf-2018, locator: "art. 53"}
-    voir_aussi: [irpp, cotisations-sociales, retenue-a-la-source]
+    voir_aussi: [irpp, cotisations-sociales, retenue-a-la-source, compte-diversification-securite-sociale]
     fr:
       terme: Contribution sociale de solidarité
       definition: >
-        Prélèvement additionnel à l'impôt sur le revenu, affecté au financement
-        des régimes de sécurité sociale.
+        Contribution instituée « au profit des caisses sociales » par la loi de
+        finances pour 2018 (art. 53), due par les personnes physiques soumises
+        au barème de l'impôt sur le revenu et par les entreprises soumises à
+        l'impôt sur les sociétés, y compris celles qui en sont exonérées. Depuis
+        2022, son produit alimente le compte de diversification des sources de
+        sécurité sociale.
       synonymes: [CSS]
     ar:
       terme: المساهمة الاجتماعية التضامنية
       definition: >
-        اقتطاع إضافي على الضريبة على الدخل، مخصَّص لتمويل أنظمة الضمان
-        الاجتماعي.
+        مساهمة أحدثها قانون المالية لسنة 2018 (الفصل 53) «لفائدة الصناديق
+        الاجتماعية»، يدفعها الأشخاص الطبيعيون الخاضعون لجدول الضريبة على الدخل
+        والمؤسسات الخاضعة للضريبة على الشركات، بما فيها المعفاة منها. ومنذ سنة
+        2022، تُرصد عائداتها في حساب تنويع مصادر الضمان الاجتماعي.
       synonymes: []
 
   - id: irpp
@@ -4944,3 +4950,218 @@ entries:
         وتُحتسب على الضريبة النظرية، ولا بتلك المنصوص عليها بالفقرة II من
         الفصل 44، وهي مقابلها في الضريبة على دخل الأشخاص الطبيعيين.
       synonymes: [الحد الأدنى للضريبة]
+
+  - id: taux-global
+    acronyme: null
+    statut: provisoire
+    references: [loi97-4]
+    source_definition: {ref: loi60-30, locator: "art. 10 et 41"}
+    voir_aussi: [cotisations-sociales, cnss, compte-de-compensation]
+    fr:
+      terme: Taux global de cotisation
+      definition: >
+        Taux unique fixé par l'article 41 de la loi n° 60-30 pour l'ensemble
+        des régimes que cette loi institue, à la charge de l'employeur et du
+        travailleur, et non par risque. Sa ventilation par régime est proposée
+        par le conseil d'administration de la Caisse nationale de sécurité
+        sociale et approuvée par l'autorité de tutelle (art. 10 et 27). Certaines branches
+        y sont financées par prélèvement, sans relèvement du prélèvement total :
+        l'assurance maladie, la protection sociale des travailleurs et un point
+        transféré aux accidents du travail en 1995.
+      synonymes: [Taux global]
+    ar:
+      terme: النسبة الجملية للمساهمات
+      definition: >
+        نسبة موحّدة يضبطها الفصل 41 من القانون عدد 30 لسنة 1960 لمجموع
+        الأنظمة التي يحدثها هذا القانون، محمولة على المؤجر والعامل، لا على
+        كل خطر على حدة. ويقترح مجلس إدارة الصندوق الوطني للضمان الاجتماعي
+        توزيعها حسب الأنظمة وتصادق عليه سلطة الإشراف (الفصلان 10 و27). وتُموَّل بعض الفروع باقتطاع منها، دون
+        الترفيع في الاقتطاع الجملي: التأمين على المرض، والحماية الاجتماعية
+        للعمّال، ونقطة حُوّلت إلى حوادث الشغل سنة 1995.
+      synonymes: []
+
+  - id: compte-de-compensation
+    acronyme: null
+    statut: provisoire
+    references: [decret2000-1902]
+    source_definition: {ref: loi60-30, locator: "art. 22"}
+    voir_aussi: [fonds-de-reserve, taux-global, cnss]
+    fr:
+      terme: Compte de compensation
+      definition: >
+        Compte que la Caisse nationale de sécurité sociale établit pour chacun
+        des régimes qu'elle gère : il porte en recettes la quote-part des
+        cotisations réservée au régime et la quote-part des autres recettes qui
+        lui revient, en dépenses les charges du régime, dont une quote-part des
+        frais de fonctionnement (loi n° 60-30, art. 22). Le décret n° 2000-1902
+        le maintient parmi les comptes arrêtés chaque année (art. 9).
+      synonymes: []
+    ar:
+      terme: حساب المقاصّة
+      definition: >
+        حساب يمسكه الصندوق الوطني للضمان الاجتماعي لكل نظام يتصرّف فيه: يتضمّن
+        في المداخيل منابَ المساهمات المخصّص للنظام ومنابَ الموارد الأخرى الراجع
+        إليه، وفي المصاريف أعباءَ النظام، ومنها مناب من مصاريف التسيير (القانون
+        عدد 30 لسنة 1960، الفصل 22). ويُبقي عليه الأمر عدد 1902 لسنة 2000 ضمن
+        الحسابات التي تُختم كل سنة (الفصل 9).
+      synonymes: []
+
+  - id: fonds-de-reserve
+    acronyme: null
+    statut: provisoire
+    references: [decret76-3, decret2005-321]
+    source_definition: {ref: loi60-30, locator: "art. 23"}
+    voir_aussi: [compte-de-compensation, reserve-technique, gestion-financiere-distincte]
+    fr:
+      terme: Fonds de réserve
+      definition: >
+        Réserve propre à chaque régime d'une caisse de sécurité sociale, qui
+        reçoit ses excédents et supporte ses déficits ; lorsqu'elle tombe sous
+        le minimum fixé, le conseil d'administration est tenu de proposer une
+        majoration du taux de cotisation ou toute autre mesure de nature à
+        rétablir l'équilibre (loi n° 60-30, art. 23, pour la CNSS). La règle
+        est reprise pour la CNRPS (décret n° 76-3, art. 13) et pour la CNAM
+        (décret n° 2005-321, art. 11).
+      synonymes: [Fonds de réserve par régime]
+    ar:
+      terme: صندوق الاحتياط
+      definition: >
+        احتياطي خاص بكل نظام من أنظمة صندوق للضمان الاجتماعي، تُرصد فيه فوائضه
+        وتُحمَّل عليه عجوزاته؛ وإذا نزل دون الحدّ الأدنى المضبوط، يتعيّن على مجلس
+        الإدارة أن يقترح الترفيع في نسبة المساهمة أو أي إجراء آخر من شأنه إعادة
+        التوازن (القانون عدد 30 لسنة 1960، الفصل 23، بالنسبة إلى الصندوق الوطني
+        للضمان الاجتماعي). وتُعتمد القاعدة نفسها للصندوق الوطني للتقاعد والحيطة
+        الاجتماعية (الأمر عدد 3 لسنة 1976، الفصل 13) وللصندوق الوطني للتأمين على
+        المرض (الأمر عدد 321 لسنة 2005، الفصل 11).
+      synonymes: []
+
+  - id: reserve-technique
+    acronyme: null
+    statut: provisoire
+    references: [loi81-6]
+    source_definition: {ref: decret74-499, locator: "art. 10-12"}
+    voir_aussi: [fonds-de-reserve, gestion-financiere-distincte]
+    fr:
+      terme: Réserve technique
+      definition: >
+        Réserve d'un régime de pensions de la Caisse nationale de sécurité
+        sociale, constituée par l'excédent de ses recettes sur ses dépenses,
+        placée à moyen ou long terme et comptabilisée à part. Le régime des
+        salariés non agricoles la reçoit en 1974, et le régime agricole en
+        1981, avec une dotation initiale prélevée sur les excédents des autres
+        régimes de la caisse (décret n° 74-499, art. 10-12 ; loi n° 81-6,
+        art. 7).
+      synonymes: [Réserve technique initiale]
+    ar:
+      terme: الاحتياطي الفنّي
+      definition: >
+        احتياطي نظام للجرايات بالصندوق الوطني للضمان الاجتماعي، يتكوّن من فائض
+        مداخيله على مصاريفه، ويُوظَّف على المدى المتوسط أو الطويل ويُمسك له حساب
+        منفصل. وقد تلقّاه نظام الأجراء غير الفلاحيين سنة 1974 والنظام الفلاحي
+        سنة 1981، مع اعتماد أوّلي يُقتطع من فوائض الأنظمة الأخرى للصندوق (الأمر
+        عدد 499 لسنة 1974، الفصول 10 إلى 12؛ القانون عدد 6 لسنة 1981، الفصل 7).
+      synonymes: []
+
+  - id: gestion-financiere-distincte
+    acronyme: null
+    statut: provisoire
+    references: [loi81-6, loi89-73]
+    source_definition: {ref: decret74-499, locator: "art. 7"}
+    voir_aussi: [reserve-technique, compte-de-compensation, fonds-de-reserve]
+    fr:
+      terme: Gestion financière distincte
+      definition: >
+        Règle selon laquelle un régime géré par la Caisse nationale de sécurité
+        sociale tient ses recettes, ses dépenses et ses réserves à part, « dans
+        le cadre de l'organisation financière générale » de la caisse. Elle est
+        posée pour les pensions du secteur non agricole (décret n° 74-499,
+        art. 7), puis pour les régimes agricoles (loi n° 81-6, art. 6) et le
+        régime agricole amélioré (loi n° 89-73).
+      synonymes: []
+    ar:
+      terme: التصرّف المالي المستقلّ
+      definition: >
+        قاعدة يمسك بموجبها نظامٌ يتصرّف فيه الصندوق الوطني للضمان الاجتماعي
+        مداخيلَه ومصاريفه واحتياطاته على حدة، «في إطار التنظيم المالي العام»
+        للصندوق. وقد وُضعت لجرايات القطاع غير الفلاحي (الأمر عدد 499 لسنة 1974،
+        الفصل 7)، ثم للأنظمة الفلاحية (القانون عدد 6 لسنة 1981، الفصل 6) وللنظام
+        الفلاحي المحسّن (القانون عدد 73 لسنة 1989).
+      synonymes: []
+
+  - id: controleur-d-etat
+    acronyme: null
+    statut: provisoire
+    references: [decret2005-321]
+    source_definition: {ref: decret2000-1902, locator: "art. 18"}
+    voir_aussi: [contrat-programme, epna]
+    fr:
+      terme: Contrôleur d'État
+      definition: >
+        Agent placé auprès d'une caisse de sécurité sociale pour le compte de
+        l'État (décret n° 2000-1902, art. 18, pour la CNSS ; décret
+        n° 2005-321, pour la CNAM). La loi n° 60-30 prévoyait, auprès de la CNSS, un
+        contrôleur technique et un contrôleur financier (art. 29-33), et le
+        décret n° 76-3 un contrôleur financier auprès de la CNRPS.
+      synonymes: []
+    ar:
+      terme: مراقب الدولة
+      definition: >
+        عون يوضع لدى صندوق للضمان الاجتماعي لحساب الدولة (الأمر عدد 1902 لسنة
+        2000، الفصل 18، بالنسبة إلى الصندوق الوطني للضمان الاجتماعي؛ الأمر عدد
+        321 لسنة 2005، بالنسبة إلى الصندوق الوطني للتأمين على المرض). وكان القانون عدد 30 لسنة 1960 ينصّ لدى الصندوق
+        الوطني للضمان الاجتماعي على مراقب فنّي ومراقب مالي (الفصول 29 إلى 33)،
+        والأمر عدد 3 لسنة 1976 على مراقب مالي لدى الصندوق الوطني للتقاعد والحيطة
+        الاجتماعية.
+      synonymes: []
+
+  - id: contrat-programme
+    acronyme: null
+    statut: provisoire
+    references: [decret2005-321]
+    source_definition: {ref: decret2000-1902, locator: "art. 3 et 12"}
+    voir_aussi: [controleur-d-etat, epna, entreprises-publiques]
+    fr:
+      terme: Contrat-programme
+      definition: >
+        Engagement pluriannuel arrêté par le conseil d'administration d'une
+        caisse de sécurité sociale et approuvé par le ministère de tutelle
+        (décret n° 2000-1902, art. 3 et 12, pour la CNSS ; décret n° 2005-321,
+        pour la CNAM), instrument de la tutelle des entreprises publiques.
+      synonymes: []
+    ar:
+      terme: عقد البرنامج
+      definition: >
+        التزام متعدّد السنوات يضبطه مجلس إدارة صندوق للضمان الاجتماعي وتصادق
+        عليه وزارة الإشراف (الأمر عدد 1902 لسنة 2000، الفصلان 3 و12، بالنسبة إلى
+        الصندوق الوطني للضمان الاجتماعي؛ الأمر عدد 321 لسنة 2005، بالنسبة إلى
+        الصندوق الوطني للتأمين على المرض)، وهو أداة من أدوات الإشراف على المنشآت
+        العمومية.
+      synonymes: []
+
+  - id: compte-diversification-securite-sociale
+    acronyme: null
+    statut: valide
+    references: [lf-2018]
+    source_definition: {ref: dl2021-21-lf2022, locator: "art. 12"}
+    source_traduction: {ref: dl2021-21-lf2022, locator: "art. 12"}
+    voir_aussi: [css, cnss, cnrps, cnam]
+    fr:
+      terme: Compte de diversification des sources de sécurité sociale
+      definition: >
+        Compte spécial du Trésor ouvert par l'article 12 du décret-loi
+        n° 2021-21 (loi de finances pour 2022) pour financer les caisses de
+        sécurité sociale. Il est alimenté par le produit de la contribution
+        sociale de solidarité, d'autres recettes pouvant lui être affectées ;
+        le ministre chargé de la sécurité sociale en est l'ordonnateur, et ses
+        recettes sont réparties entre les caisses selon des critères fixés par
+        son arrêté.
+      synonymes: []
+    ar:
+      terme: حساب تنويع مصادر الضمان الاجتماعي
+      definition: >
+        حساب خاص في الخزينة فتحه الفصل 12 من المرسوم عدد 21 لسنة 2021 (قانون
+        المالية لسنة 2022) لتمويل صناديق الضمان الاجتماعي. تتأتّى موارده من
+        عائدات المساهمة الاجتماعية التضامنية، ويمكن أن تُخصَّص له موارد أخرى؛
+        ويتولّى الوزير المكلّف بالضمان الاجتماعي الأمر بصرف نفقاته، وتُوزَّع
+        موارده على الصناديق حسب معايير تُضبط بقرار منه.
+      synonymes: []

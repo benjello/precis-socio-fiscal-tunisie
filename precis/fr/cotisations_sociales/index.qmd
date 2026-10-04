@@ -28,7 +28,7 @@ def onglets(panneaux, **options):
         **options))
 ```
 
-Ce livre traite du **prélèvement** qui finance la sécurité sociale : qui cotise, sur quelle assiette, à quel taux, et pour financer quelle branche. Il pose d'abord le cadre commun à tous les régimes — une présentation générale (@sec-cot-presentation), l'assiette (@sec-cot-assiette), le taux global et le coin social (@sec-cot-taux-global) —, puis le prend branche par branche, des origines à l'état actuel (@sec-cot-branches), avant de dire ce qui distingue les régimes (@sec-cot-regimes) ; le recouvrement, le rendement des cotisations et une vue d'ensemble concluent (@sec-cot-bilan).
+Ce livre traite du **prélèvement** qui finance la sécurité sociale : qui cotise, sur quelle assiette, à quel taux, et pour financer quelle branche. Il pose d'abord le cadre commun à tous les régimes — une présentation générale (@sec-cot-presentation), l'assiette (@sec-cot-assiette), le taux global et le coin social (@sec-cot-taux-global) —, puis le prend branche par branche, des origines à l'état actuel (@sec-cot-branches), avant de dire ce qui distingue les régimes (@sec-cot-regimes) et dans quel cadre comptable et budgétaire les caisses les gèrent (@sec-cot-cadre-caisses) ; le recouvrement, le rendement des cotisations et une vue d'ensemble concluent (@sec-cot-bilan).
 
 ::: {.callout-note title="Trois conventions de lecture, retenues dans tout ce qui suit"}
 **1. Le partage entre secteur privé et secteur public traverse tout le livre.** Ce n'est pas une commodité : il commande la caisse compétente — la [Caisse nationale de sécurité sociale](#g-cnss) d'un côté, la [Caisse nationale de retraite et de prévoyance sociale](#g-cnrps) de l'autre —, le texte applicable et l'ampleur du prélèvement, qui va du simple au double d'un régime à l'autre. Là où les deux secteurs sont traités ensemble, le secteur privé vient en premier.
@@ -1016,6 +1016,8 @@ table("prevoyance_pensionnes",
 ```
 
 Avant 2007, la case est vide, et il faut le dire. Le seul texte antérieur retrouvé qui fasse cotiser un pensionné sur sa pension est le décret n° 73-91 du 12 mars 1973 [@decret73-91], dont l'article 15 fixe à 2 % la cotisation du retraité — mais cet article est par ailleurs entièrement consacré au régime **facultatif** d'assurance-maladie, et un taux qui baisserait de 2 % à 1 % en trente-quatre ans ne se lit pas comme une même série obligatoire. Le rattachement de ce 2 % à la branche facultative est l'hypothèse la plus plausible ; elle n'est pas établie.
+
+{{< include _cadre_caisses.qmd >}}
 
 ## Recouvrement, rendement, vue d'ensemble {#sec-cot-bilan}
 
