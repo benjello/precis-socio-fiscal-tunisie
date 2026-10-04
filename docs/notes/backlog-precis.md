@@ -483,6 +483,17 @@ l'État ; les livres « dispositifs » gardent les règles et renvoient ici par 
   de sécurité sociale des comptes de la nation ; versements des caisses au budget (tableau A) ;
   transferts de l'État aux caisses depuis 2016, dont les sources restent à verser.
 
+## Citations répétées — suggestion, non engagée (4 octobre 2026)
+
+Une même référence revient parfois à chaque phrase : le code de l'IRPP et de l'IS (`code-irpp-is-1990`) 31 fois dans `fiscalite/_impot_revenu.qmd` ; dans le volume VII en préparation (branche locale), la loi n° 97-11 jusqu'à 28 fois par chapitre et Dafflon et Gilbert 56 fois dans le chapitre des notions. La parenthèse « (loi n° … du …, art. 3) » alourdit la lecture sans rien apporter que le numéro d'article. Suggestion, à décider par l'humain avant toute mise en œuvre :
+
+1. **Source principale déclarée en tête de section** : « Sauf mention contraire, les articles cités dans cette section sont ceux du code … [@clé]. » ; ensuite « (art. 3) » ou « l'article 35 dispose… » en clair, sans citation ; toute autre source reste citée en place. Même chose pour une doctrine suivie de bout en bout (« Les définitions de ce chapitre suivent … », puis « (p. 23) »).
+2. **Une citation par paragraphe** plutôt que par phrase quand un texte court tout le paragraphe (`[@clé, art. 1 à 5]`).
+3. **Tableaux** : une ligne « Sources » sous le tableau plutôt qu'une citation par cellule.
+4. **Contrôle** dans `scripts/verifier.sh` : une même clé citée plus de N fois (N = 4 ?) dans une section est signalée.
+
+Écartés : notes de bas de page (changement de style CSL pour tout le précis) ; suppression des articles (perte d'information). À prévoir côté traduction : les locateurs en clair « (art. 3) », hors citation, devront être protégés comme le sont aujourd'hui ceux des citations (`translate_sync.restore_locators`). Ordre envisagé : volume VII, puis IRPP, caisses, cotisations, un volume par PR.
+
 ## Forme des chapitres — le plan type, et où il ne s'applique pas
 
 **Tout chapitre décrivant un dispositif suit le même déroulé** : l'historique d'abord,
