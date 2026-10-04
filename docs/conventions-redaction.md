@@ -2,9 +2,12 @@
 
 ## 1. Le précis documente la loi, jamais le modèle
 
-C'est la règle qui commande toutes les autres, et elle est absolue dans le texte rendu.
+C'est la règle qui commande toutes les autres, et elle est absolue dans le texte rendu des
+**volumes**. La documentation générale — le `README`, la page « À propos » du site — peut dire
+d'où viennent les tableaux et nommer le modèle ; un chapitre, jamais.
+`scripts/check_pas_de_modele.py` ne contrôle donc que les fichiers des volumes.
 
-`openfisca-tunisia` **ne se mentionne pas** dans le précis : ni son nom, ni « le modèle »,
+`openfisca-tunisia` **ne se mentionne pas** dans les volumes du précis : ni son nom, ni « le modèle »,
 ni « les paramètres du modèle », ni le fait qu'un chiffre en soit tiré. Le lecteur du précis
 lit du droit socio-fiscal tunisien ; il n'a pas à savoir qu'un modèle de microsimulation
 existe, encore moins à en connaître les défauts.
