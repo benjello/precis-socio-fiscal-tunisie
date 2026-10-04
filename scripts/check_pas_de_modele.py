@@ -10,7 +10,10 @@ Le contrôle ne regarde donc que ce que le lecteur voit. Sont exclus :
 - les blocs ```{python}``` — ils importent le module qui engendre les tableaux, et ne sont
   pas rendus (`echo: false`) ;
 - les commentaires HTML `<!-- … -->` — c'est précisément la destination prévue ;
-- l'annexe `_glossaire.qmd`, engendrée par `build_glossary.py`.
+- l'annexe `_glossaire.qmd`, engendrée par `build_glossary.py` ;
+- les pages générales du site, posées directement sous `precis/<langue>/` — l'accueil,
+  « À propos » : la règle vaut pour les VOLUMES. La documentation générale peut dire d'où
+  viennent les tableaux et nommer `openfisca-tunisia` ; un chapitre, jamais.
 
 Le mot « modèle » a par ailleurs des emplois parfaitement légitimes en droit. Vouloir les
 distinguer de l'outil par la grammaire produit surtout des faux positifs : la première
@@ -106,14 +109,25 @@ def controle(chemin: Path) -> list[tuple[int, str, str]]:
     return fautes
 
 
+def fichiers_des_volumes(precis: Path) -> list[Path]:
+    """Les `.qmd` des volumes : `precis/<langue>/<volume>/…`, hors glossaire et rendus.
+
+    Un fichier posé directement sous `precis/<langue>/` est une page générale du site, que
+    la règle ne vise pas.
+    """
+    return sorted(
+        f for f in precis.rglob("*.qmd")
+        if not f.name.startswith("_glossaire")
+        and "/public/" not in f.as_posix()
+        and f.parent.parent != precis
+    )
+
+
 def main(argv: list[str]) -> int:
     if argv:
         fichiers = [Path(a) for a in argv]
     else:
-        fichiers = sorted(
-            f for f in (RACINE / "precis").rglob("*.qmd")
-            if not f.name.startswith("_glossaire") and "/public/" not in f.as_posix()
-        )
+        fichiers = fichiers_des_volumes(RACINE / "precis")
 
     total = 0
     for chemin in fichiers:

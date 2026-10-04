@@ -58,8 +58,9 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   une photographie du 20 septembre 2026, pas un état du corpus en temps réel. La revue
   humaine contrôle que le backlog et le chapitre racontent le même état.
 
-- **Le précis documente la loi, jamais le modèle.** Ni `openfisca`, ni « le modèle », ni « les
-  paramètres » dans le texte rendu. Un constat sur le modèle va dans un `<!-- TODO (rôle) : … -->`,
+- **Les volumes documentent la loi, jamais le modèle.** Ni `openfisca`, ni « le modèle », ni « les
+  paramètres » dans le texte rendu d'un volume. La documentation générale — README, page
+  « À propos » — peut, elle, dire d'où viennent les tableaux et nommer `openfisca-tunisia`. Un constat sur le modèle va dans un `<!-- TODO (rôle) : … -->`,
   dans une *issue*, ou dans `docs/notes/backlog-modele.md`. `scripts/check_pas_de_modele.py` le
   vérifie.
   Seule exception : l'onglet « Base législative » des tableaux engendrés, qui lie chaque
