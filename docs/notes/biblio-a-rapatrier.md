@@ -3000,7 +3000,7 @@ requis) :
 
 - [ ] `lf-2000` — loi n° 99-101 du 31 décembre 1999 (LF 2000), JORT n° 105/1999, art. 54 p. 2748 ; URL `pdf_fr`/`pdf_ar` de jort_cache.
 - [ ] `decret-2014-2939` — JORT n° 69/2014, pp. 2192-2193 (édition française ; jort_cache donne la pagination arabe 2287-2289).
-- [ ] `decret-2022-802` — JORT n° 121/2022, pp. 2998-2999 ; **absent de jort_cache** : URL selon la convention pist.tn, vérifiées (200, tailles égales au corpus local).
+- [ ] `decret-2022-802` — JORT n° 121/2022, pp. 2998-2999 ; **absent de jort_cache** : URL = `pdf_fr`/`pdf_ar` d'un autre enregistrement du même fascicule (n° 121/2022), vérifiées (200, tailles égales au corpus local).
 - [ ] `dgi-nc-15-2011`, `dgi-nc-27-2016` — notes communes, sans URL publique : chercher l'adresse jibaya.tn.
 - [ ] `dgi-nc-lf2018-art16` — note commune dont le numéro (15/2018 d'après le nom du fichier) n'est pas lu sur pièce : vérifier sur l'original, puis renommer la clé si le numéro est confirmé.
 - [x] `lf-2026` (fonds commun, FR et AR) : note corrigée — article 91 en page 4255 de l'édition arabe (non 4254-4255) ; article 110 (application au 1er janvier 2026) en page 4258.
