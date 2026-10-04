@@ -670,3 +670,109 @@
     resultat: aucun
   a_faire:
   - parcourir le plein texte des fascicules (« 95-538 », « 538 لسنة 1995 ») pour un modificatif dont l'intitulé ne viserait pas le décret
+
+- id: r-cnrps-tutelle-1976-1985
+  objet: texte transférant la tutelle de la CNRPS du ministère des Finances (loi n° 75-83, art. 28) à un autre département, entre le décret n° 76-3 du 5 janvier 1976 et le décret n° 85-1611 du 31 décembre 1985, qui la place sous le ministère de la protection sociale
+  ou: [precis/fr/cotisations_sociales/_cadre_caisses.qmd#sec-cot-cadre-statut]
+  requetes:
+    titres_fts:
+    - '"retraite et de prevoyance sociale" AND (tutelle OR rattachement OR organisation OR fonctionnement OR financiere OR "conseil d administration")'
+    - '"protection sociale" AND (ministere OR attributions OR organisation)'
+    titres_like: ['%attributions du ministere des affaires sociales%']
+    depuis: 1976-01-05
+  periode:
+    jusqu_au: 1986-01-07
+    motif: le décret n° 85-1611 (JORT n° 1 des 3-7 janvier 1986, p. 5) range déjà la CNRPS sous le ministère de la protection sociale
+  passes:
+  - date: 2026-10-03
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés seulement (requêtes FTS sur 1976-2026, 1976-1990 ; LIKE sur 1970-2000). Candidats non lus : décret n° 75-775 (attributions du ministère des affaires sociales, JORT n° 72/1975, p. 2340), décret n° 86-454 (attributions du ministère de la protection sociale, n° 25/1986, p. 531), postérieur à la période. Aucun plein texte des fascicules 1976-1985.'
+    couvert_jusqu_au: 1986-01-07
+    resultat: aucun
+  a_faire:
+  - plein texte (OCR) des fascicules 1976-1985 sur « retraite et de prévoyance » + « tutelle » ou « rattach »
+
+- id: r-cnrps-organisation-apres-1989
+  objet: décret fixant l'organisation administrative et financière de la CNRPS postérieur au décret n° 89-1890 (équivalent, pour la CNRPS, du décret n° 2000-1902 pour la CNSS)
+  ou: [precis/fr/cotisations_sociales/_cadre_caisses.qmd#sec-cot-cadre-statut]
+  requetes:
+    titres_fts:
+    - '"retraite et de prevoyance sociale" AND (tutelle OR rattachement OR organisation OR fonctionnement OR financiere OR "conseil d administration")'
+    titres_like: ['%76-3 du 5 janvier 1976%', '%الصندوق الوطني للتقاعد والحيطة الاجتماعية%']
+    depuis: 1989-12-15
+  passes:
+  - date: 2026-10-03
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés seulement. Le LIKE effectivement lancé combinait, en une requête : numero dans (2011-4087, 76-3, 89-1890), titre LIKE %76-3 du 5 janvier 1976%, titre LIKE %retraite et de prevoyance sociale% ET (LIKE %organisation% OU %tutelle% OU %rattach%), titre LIKE %الصندوق الوطني للتقاعد والحيطة الاجتماعية%. Résultats écartés sur l''intitulé : décret n° 2011-4087 (Caisse des dépôts et consignations), décrets complétant les décrets n° 85-1025 et 85-1176. Pas de plein texte ; fascicules 2024-2026 inconnus de jort_cache non couverts.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+
+- id: r-cnam-transfert-reserves
+  objet: arrêté conjoint des ministres chargés de la sécurité sociale, des domaines de l'État et des finances transférant à la CNAM les biens et les réserves financières afférents aux régimes qu'elle gère (loi n° 2004-71, art. 10)
+  ou: [precis/fr/cotisations_sociales/_cadre_caisses.qmd#sec-cot-cadre-regimes]
+  requetes:
+    titres_fts: [("assurance maladie" OR CNAM) AND (transfert OR reserves OR biens)]
+    titres_like: ['%2004-71%']
+    depuis: 2004-08-06
+  passes:
+  - date: 2026-10-03
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés seulement (les arrêtés ont souvent un numéro NULL : FTS sur titre et objet). Seul résultat hors textes déjà connus, écarté sur l''intitulé : décret n° 2014-10 (cotisations des bénéficiaires de l''amnistie générale). Pas de plein texte ; fascicules 2024-2026 inconnus de jort_cache non couverts.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+
+- id: r-caisses-placements-obligatoires
+  objet: texte imposant aux caisses de sécurité sociale le placement de leurs réserves en bons d'équipement ou en logement social, et texte levant cette obligation (fin 1991 selon la Banque mondiale, rapport n° 11376-TUN, § 3.01)
+  ou: [precis/fr/cotisations_sociales/_cadre_caisses.qmd#sec-cot-cadre-etat]
+  requetes:
+    titres_fts:
+    - equipement AND bons
+    - ("bons d equipement" OR "bons d'equipement" OR emploi des fonds OR "placement des fonds" OR "fonds disponibles" OR "disponibilites") AND (caisse OR caisses OR securite OR organismes)
+    depuis: 1960-12-13
+  periode:
+    jusqu_au: 1992-12-31
+    motif: selon la Banque mondiale (rapport n° 11376-TUN, § 3.01), l'obligation a été levée à la fin de 1991
+  passes:
+  - date: 2026-10-03
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés seulement, 1960-2000. Une troisième requête, LIKE combiné (titre LIKE %placement% OU %disponibilites%) ET (titre LIKE %securite sociale% OU %caisse% OU %organismes%), 1960-2010, n''a rien ajouté. Candidats non lus : articles « bons d''équipement » des lois de finances n° 71-59 (art. 9), 72-87 (art. 13), 73-82 (art. 42), 74-101 (art. 40) ; loi n° 90-111 (LF 1991), art. 64, « conversion en bons d''équipement des montants versés au titre de la retraite anticipée volontaire » (JORT n° 86/1990, p. 2056) ; arrêtés annuels d''émission des tranches (1960-1973). LF 1992 non examinée.'
+    couvert_jusqu_au: 1992-12-31
+    resultat: aucun
+  a_faire: [lire les articles candidats ci-dessus (OCR) et la loi de finances pour 1992]
+
+- id: r-norme-comptable-securite-sociale
+  objet: norme comptable sectorielle (loi n° 96-112, art. 10) applicable aux organismes de sécurité sociale
+  ou: [precis/fr/cotisations_sociales/_cadre_caisses.qmd#sec-cot-cadre-statut]
+  requetes:
+    titres_fts:
+    - '"normes comptables" OR "norme comptable"'
+    - (comptable OR comptables OR comptabilite) AND (securite OR caisses OR caisse OR sociale OR sociales)
+    titres_like: ['%systeme comptable des entreprises%', '%normes comptables%']
+    depuis: 1996-12-31
+  passes:
+  - date: 2026-10-03
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés seulement. Onze arrêtés « portant approbation des normes comptables » ou « d''une norme comptable » (1996-2022) aux intitulés génériques, non ouverts : ceux de 1999 (JORT n° 27), 2000 (n° 54), 2001 (n° 96), 2003 (n° 97), 2007 (n° 70), 2008 (n° 10) et 2011 (n° 17) sont à lire. Pas de plein texte.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [ouvrir les arrêtés d'approbation des normes comptables listés dans la couverture]
+
+- id: r-css-arretes-repartition
+  objet: arrêtés du ministre chargé de la sécurité sociale fixant les critères de répartition entre caisses des recettes du « compte de diversification des sources de sécurité sociale » (décret-loi n° 2021-21, art. 12)
+  ou: [precis/fr/cotisations_sociales/_cadre_caisses.qmd#sec-cot-cadre-etat]
+  requetes:
+    titres_fts:
+    - '"contribution sociale de solidarite" OR "المساهمة الاجتماعية التضامنية" OR "تنويع مصادر" OR "diversification des sources"'
+    depuis: 2021-12-28
+  passes:
+  - date: 2026-10-03
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés seulement ; résultats : loi n° 2019-78 (LF 2020) art. 39 (CSS) et art. 54 (sans rapport : emprunt obligataire en devises), décret-loi n° 2021-21 (LF 2022) art. 12 (création du compte). Pas de plein texte ; fascicules 2024-2026 inconnus de jort_cache non couverts.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun

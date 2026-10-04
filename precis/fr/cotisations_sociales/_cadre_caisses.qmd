@@ -1,0 +1,224 @@
+## Le cadre comptable et budgétaire des caisses {#sec-cot-cadre-caisses}
+
+Les cotisations décrites jusqu'ici sont versées à trois caisses — la CNSS, la CNRPS et, depuis 2004, la [Caisse nationale d'assurance maladie](#g-cnam). Le droit qui les organise ne s'arrête pas au taux : il dit aussi comment chaque caisse tient ses comptes, comment elle sépare ses régimes, comment elle en rétablit l'équilibre et ce que l'État en attend ou y apporte. Cette partie suit ce cadre dans l'ordre où il s'est construit : le statut commun des trois caisses et leur contrôle (@sec-cot-cadre-statut), la comptabilité par régime et les réserves (@sec-cot-cadre-regimes), l'équilibrage par la ventilation du taux global (@sec-cot-cadre-ventilation), la place de l'État (@sec-cot-cadre-etat), puis la chronologie des textes (@sec-cot-cadre-chronologie), ce qu'ils laissent sans réponse (@sec-cot-cadre-silences) et les comptes qui permettent de suivre l'ensemble sur longue période (@sec-cot-cadre-longue-periode).
+
+### Trois caisses, un même statut {#sec-cot-cadre-statut}
+
+#### Des établissements publics tenus d'une comptabilité commerciale {#sec-cot-cadre-etablissements}
+
+La forme est fixée dès 1960 pour la CNSS. « La Caisse Nationale est un établissement public, doté de la personnalité civile et de l'autonomie financière » ; elle est « régie, dans ses relations avec les tiers, par les dispositions de la législation commerciale, dans la mesure où il n'y est pas dérogé » par la loi [@loi60-30, art. 4]. Sa comptabilité est tenue « conformément aux règles qui régissent les entreprises privées, à caractère commercial », sur l'année civile ; le bilan, le compte de résultats et les comptes de chaque régime sont arrêtés par le conseil d'administration avant le 31 mars, sur le rapport du contrôleur financier [@loi60-30, art. 21].
+
+La CNRPS reçoit le même moule en 1975-1976, par une autre voie. L'article 28 de la loi de finances pour 1976 en fait « un établissement public à caractère financier doté de la personnalité civile et de l'autonomie financière », rattaché au ministère des Finances (@sec-cot-cnrps) [@loi75-83, art. 28]. Le décret n° 76-3 du 5 janvier 1976, qui l'organise, lui donne un budget de fonctionnement et un budget d'investissement, tient sa comptabilité « conformément aux règles qui régissent la comptabilité commerciale », et fait arrêter ses comptes avant le 31 mars sur le rapport d'un contrôleur financier, sous l'approbation du ministre des Finances [@decret76-3, art. 9 à 11, 14 et 15].
+
+La CNAM, créée par la loi n° 2004-71, est d'emblée un [établissement public à caractère non administratif](#g-epna) placé sous la tutelle du ministre chargé de la sécurité sociale [@loi2004-71, art. 7]. Le décret n° 2005-321, qui l'organise, retient la même règle : « La comptabilité de la caisse est tenue conformément aux règles régissant la comptabilité commerciale » [@decret2005-321, art. 11].
+
+Les deux premières caisses ont rejoint ce statut par voie de liste. Le décret n° 97-564 du 31 mars 1997 range la CNRPS et la CNSS parmi les établissements publics à caractère non administratif « considérés comme entreprises publiques » au sens de la loi n° 89-9 [@decret97-564 ; @loi89-9] ; le décret n° 2004-2265 du 27 septembre 2004, qui le remplace, y ajoute la CNAM [@decret2004-2265].
+
+La loi n° 96-112 relative au système comptable des entreprises s'applique à toute personne tenue à une comptabilité par la législation en vigueur, hors celles que régit le code de la comptabilité publique, et prévoit des normes comptables sectorielles [@loi96-112, art. 1 et 10]. Le décret n° 2005-321 la vise expressément [@decret2005-321]. Aucune norme sectorielle propre aux organismes de sécurité sociale n'est identifiée ici.
+
+<!-- RECHERCHE r-norme-comptable-securite-sociale : norme comptable sectorielle applicable aux organismes de sécurité sociale (voir docs/recherches.yml) -->
+
+#### Un budget de gestion, non un plafond de prestations {#sec-cot-cadre-budget}
+
+Le budget de chaque caisse distingue des dépenses dont la prévision est indicative et d'autres qui ne peuvent être dépassées. La loi n° 60-30 range les dépenses de la CNSS en trois chapitres — prestations, fonctionnement, établissement — et dispose que « les prévisions de dépenses du chapitre I et de la section I du chapitre II sont évaluatives ; celles de la section II du chapitre II sont limitatives » [@loi60-30, art. 18] : les prestations et les frais de personnel et de contentieux sont évaluatifs, le matériel et l'action sanitaire et sociale limitatifs. Faute d'approbation au 1^er^ janvier, la caisse peut engager les crédits prévus, hors mesures nouvelles [@loi60-30, art. 20], et un budget présenté en déséquilibre peut être arrêté d'office [@loi60-30, art. 33].
+
+La règle a traversé les réformes. En 2000, les budgets prévisionnels de la CNSS distinguent, en dépenses, les prestations, l'action sanitaire et sociale, le fonctionnement et l'investissement ; « les prévisions de dépenses du paragraphe premier et les dépenses de personnel sont évaluatives. Les autres dépenses sont limitatives » [@decret2000-1902, art. 8]. En 2005, le budget de la CNAM est arrêté à la fin du mois d'août, ses recettes ventilées par régime géré ; les dépenses de prestations et de personnel y sont « estimatives », les autres « limitatives » [@decret2005-321, art. 10]. Le budget d'une caisse n'est donc pas un plafond des dépenses de prestations ; c'est l'équilibre de chaque régime, exposé plus loin (@sec-cot-cadre-regimes), qui en tient lieu.
+
+#### La tutelle et le contrôle {#sec-cot-cadre-tutelle}
+
+**1960 : deux tutelles et deux contrôleurs.** La loi n° 60-30 place la CNSS sous la surveillance « permanente et directe » du secrétariat d'État à la santé publique et aux affaires sociales, qui peut annuler les délibérations du conseil [@loi60-30, art. 26]. Le budget, les effectifs, les emprunts, les placements immobiliers et les comptes sont approuvés conjointement avec le secrétariat d'État aux finances [@loi60-30, art. 28]. Un contrôleur technique, pour les affaires sociales, et un contrôleur financier, pour les finances, siègent auprès de la caisse avec un droit de veto suspensif [@loi60-30, art. 29 à 33].
+
+**1985-1989 : tutelle sectorielle et organisation par décret.** Au 31 décembre 1985, la CNRPS figure avec la CNSS et la [CAVIS](#g-cavis) sous le « ministère de la protection sociale », dans la liste des entreprises soumises à la tutelle de l'État [@decret85-1611]. Le texte qui fait passer la CNRPS de la tutelle des Finances à celle de ce ministère n'est pas identifié ici.
+
+<!-- RECHERCHE r-cnrps-tutelle-1976-1985 : texte transférant la tutelle de la CNRPS des Finances à un autre département, entre 1976 et 1985 (voir docs/recherches.yml) -->
+
+La loi de finances pour 1987 permet de modifier par décret l'organisation administrative et financière des établissements publics à caractère industriel et commercial [@loi86-106-lf1987, art. 75] ; la loi de finances complémentaire pour 1988 y ajoute « l'autorité de tutelle dont ils relèvent » [@loi88-60-lfc1988, art. 9]. C'est sur cette base que les décrets n° 89-1890 et n° 89-1891 du 6 décembre 1989 recomposent les conseils d'administration des deux caisses. Celui de la CNRPS compte désormais onze membres, sept pour l'État et quatre pour les assurés, et son président-directeur général est nommé sur proposition du ministre des affaires sociales [@decret89-1890]. Celui de la CNSS réunit, autour du président-directeur général, quatre représentants de l'administration, quatre des employeurs et quatre des salariés [@decret89-1891].
+
+**2000-2005 : le régime des entreprises publiques.** Le décret n° 2000-1902 donne à la CNSS son organisation actuelle. Le conseil de onze membres — trois pour l'État, quatre pour les employeurs, quatre pour les salariés — arrête les budgets prévisionnels, les états financiers et les [contrats-programmes](#g-contrat-programme) [@decret2000-1902, art. 2 et 3]. Les états financiers font l'objet d'une révision annuelle par un membre de l'ordre des experts-comptables et sont soumis aux ministres des affaires sociales et des finances [@decret2000-1902, art. 9] ; le ministre des affaires sociales les approuve sur le rapport du réviseur [@decret2000-1902, art. 14]. Les ministères de tutelle reçoivent les budgets, les états financiers et des « états mensuels de la situation des liquidités » [@decret2000-1902, art. 16 et 17]. Un [contrôleur d'État](#g-controleur-d-etat) remplace les deux contrôleurs de 1960 [@decret2000-1902, art. 18]. Le décret abroge « les dispositions antérieures contraires », sans nommer les articles de la loi n° 60-30 qu'il remplace [@decret2000-1902, art. 19].
+
+Le décret n° 2005-321 transpose le même dispositif à la CNAM : budgets, contrats-programmes et états financiers approuvés par le ministre chargé de la sécurité sociale, révision annuelle par un expert-comptable, transmission au Premier ministère de la situation mensuelle des liquidités et de celle, semestrielle, de l'endettement et des créances, contrôleur d'État [@decret2005-321, art. 11, 13 à 20].
+
+Pour la CNRPS, aucun décret postérieur à 1989 ne remplace le décret n° 76-3 parmi les textes identifiés ici : ni la révision des comptes par un expert-comptable ni le contrôleur d'État n'y sont donc prévus par un texte propre à la caisse.
+
+<!-- RECHERCHE r-cnrps-organisation-apres-1989 : décret d'organisation administrative et financière de la CNRPS postérieur au décret n° 89-1890 (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : lire les décrets n° 97-565 et n° 2002-2197 (tutelle des entreprises
+publiques) et le décret n° 2005-910 (désignation de l'autorité de tutelle, JORT n° 26/2005,
+pp. 844-850, tableau à lire à l'image) pour dire quel régime de tutelle s'applique à la CNRPS
+après 1997 ; lire le décret n° 87-529 (révision des comptes des EPIC), visé par le décret
+n° 2005-321, et la loi n° 68-8 (Cour des comptes) pour la base du contrôle externe des caisses.
+Voir docs/notes/cadre-budgetaire-comptable-caisses.md, lacunes L9, L11, L12, L15. -->
+
+### Une comptabilité par régime {#sec-cot-cadre-regimes}
+
+#### La règle de 1960 {#sec-cot-cadre-regle-1960}
+
+Une même caisse gère plusieurs régimes, et la loi n° 60-30 lui interdit de les confondre dans ses comptes. « La Caisse Nationale établira, pour chaque régime de sécurité sociale, un [compte de compensation](#g-compte-de-compensation) » qui porte, en recettes, « la quote-part des cotisations patronales et ouvrières réservées au régime et la quote-part des autres recettes revenant au régime » et, en dépenses, « les charges du régime qui comprennent une quote-part des dépenses de fonctionnement » [@loi60-30, art. 22]. Chaque régime a son [fonds de réserve](#g-fonds-de-reserve) : les excédents y sont versés, les déficits y sont imputés, et lorsque la réserve tombe sous le minimum fixé par le conseil d'administration, celui-ci « est tenu de proposer de majorer le taux de cotisation » ou toute autre mesure [@loi60-30, art. 23]. Le décret n° 2000-1902 maintient ces comptes de compensation parmi les comptes arrêtés chaque année [@decret2000-1902, art. 9].
+
+C'est cette présentation par régime que suivent les comptes de la CNSS de 1990 à 2004, où le résultat de chaque régime se lit séparément (@fig-cnss-regimes) [@cnss-retrospective-1990-2004].
+
+#### Chaque régime nouveau, sa gestion distincte et sa réserve {#sec-cot-cadre-nouveaux-regimes}
+
+Chaque régime créé après 1960 reprend le schéma, et l'explicite. Le régime de pensions du secteur non agricole « fait l'objet d'une [gestion financière distincte](#g-gestion-financiere-distincte) dans le cadre de l'organisation financière générale » de la CNSS [@decret74-499, art. 7]. Sa [réserve technique](#g-reserve-technique), différence entre ses recettes et ses dépenses, est placée à moyen ou à long terme et comptabilisée à part ; une analyse actuarielle et financière, au moins tous les cinq ans, commande le réajustement du taux si l'équilibre est menacé [@decret74-499, art. 10 à 13]. La loi n° 81-6 applique la même règle aux régimes du secteur agricole, dont les frais d'administration sont imputés « selon des critères objectifs », avec une comptabilité séparée pour les assurances sociales et pour les pensions et une analyse actuarielle quinquennale [@loi81-6, art. 6 à 10]. Le régime agricole amélioré de 1989 a lui aussi une gestion financière distincte [@loi89-73]. En 1995, la fusion des deux régimes de non-salariés de 1982 transfère leurs réserves au régime unifié [@decret95-1166, art. 34 à 39].
+
+Au secteur public, le décret n° 76-3 impose à la CNRPS de tenir « pour chacun des régimes gérés, des comptes individualisés » qui font ressortir, en recettes, « le produit des cotisations, subventions et autres ressources revenant au régime » et, en dépenses, les prestations servies et la quote-part des charges de gestion [@decret76-3, art. 12]. Chaque régime a son fonds de réserve ; sous le seuil fixé, le conseil « est tenu de proposer un aménagement des taux de cotisations et de subventions ou toute autre mesure tendant à rétablir l'équilibre financier du régime » [@decret76-3, art. 13]. La CNAM reçoit la règle en 2005 : elle « tient pour chaque régime qu'elle gère des comptes séparés » et affecte à chacun des fonds de réserve « provenant des excédents financiers dégagés par chacun de ces régimes » [@decret2005-321, art. 11].
+
+| Caisse et régimes | Texte | Règle |
+|---|---|---|
+| CNSS, tous régimes | loi n° 60-30 [@loi60-30, art. 22 et 23] | un compte de compensation et un fonds de réserve par régime |
+| CNSS, pensions du secteur non agricole | décret n° 74-499 [@decret74-499, art. 7, 10 à 13] | gestion financière distincte ; réserve technique placée et comptabilisée à part ; analyse actuarielle au moins quinquennale |
+| CNSS, régimes agricoles | loi n° 81-6 [@loi81-6, art. 6 à 10] | gestion financière distincte ; frais d'administration imputés selon des critères objectifs ; comptabilité séparée des assurances sociales et des pensions |
+| CNSS, non-salariés | décret n° 95-1166 [@decret95-1166, art. 34 à 39] | réserves des deux régimes de 1982 transférées au régime unifié |
+| CNRPS, tous régimes | décret n° 76-3 [@decret76-3, art. 12 et 13] | des comptes individualisés et un fonds de réserve par régime |
+| CNAM, tous régimes | décret n° 2005-321 [@decret2005-321, art. 11] | des comptes séparés et un fonds de réserve par régime |
+
+: Séparation comptable des régimes, par caisse {#tbl-cadre-separation}
+
+#### Les réorganisations : la CAVIS, le projet de 1986, la CNAM {#sec-cot-cadre-reorganisations}
+
+**La CAVIS (1976-1994).** De 1976 à 1994, les pensions du secteur privé ne sont pas gérées par la CNSS elle-même, mais par une caisse autonome « créée dans le cadre » de celle-ci, la [Caisse d'assurance vieillesse, invalidité et survivants](#g-cavis), pour le compte de laquelle la CNSS recouvre les cotisations et sert les prestations [@decret76-981, art. 1, 2 et 24]. La loi n° 81-6 lui confie aussi l'administration des pensions agricoles [@loi81-6, art. 3]. Le décret n° 94-1477 abroge le décret n° 76-981 et transfère à la CNSS les régimes qu'elle gérait [@decret94-1477, art. 1 et 2].
+
+**Le projet de 1986.** La loi n° 86-86 du 1^er^ septembre 1986 dessine une autre architecture, par branche : une caisse centrale de sécurité sociale, propriétaire du patrimoine, chargée de « la gestion de la trésorerie commune et le placement des fonds », et des caisses spécialisées qui reçoivent d'elle une dotation annuelle [@loi86-86, art. 8, 18 et 19]. Les réserves restent tenues par régime ; si elles baissent sous le seuil, la caisse centrale propose « des mesures destinées à rétablir l'équilibre financier de ce régime et notamment : la compensation entre les régimes de sécurité sociale ; la modification des taux de répartition des contributions ; le relèvement des taux de contribution » [@loi86-86, art. 21]. Les textes antérieurs demeuraient en vigueur jusqu'aux décrets d'organisation [@loi86-86, art. 39] ; l'architecture n'a pas pris effet, et la loi est abrogée en 2004 [@loi2004-71, art. 29].
+
+**La CNAM (2004-2005).** La loi n° 2004-71 transfère à la nouvelle caisse « les biens et les réserves financières afférents aux régimes qu'elle est chargée de gérer », par arrêté conjoint des ministres chargés de la sécurité sociale, des domaines de l'État et des finances [@loi2004-71, art. 10]. La CNAM ne recouvre pas elle-même les cotisations : la CNRPS et la CNSS les perçoivent et les lui reversent selon une convention entre caisses [@loi2004-71, art. 16]. L'arrêté de transfert des réserves n'est pas identifié ici.
+
+<!-- RECHERCHE r-cnam-transfert-reserves : arrêté conjoint transférant à la CNAM les biens et réserves financières des régimes qu'elle gère (loi n° 2004-71, art. 10) (voir docs/recherches.yml) -->
+
+### L'équilibrage par la ventilation du taux global {#sec-cot-cadre-ventilation}
+
+#### Le pouvoir de ventiler {#sec-cot-cadre-pouvoir}
+
+Le [taux global](#g-taux-global) de la loi n° 60-30 finance plusieurs régimes à la fois (@sec-cot-taux-unique) ; sa répartition entre eux est un acte de gestion de la caisse, sous le contrôle de la tutelle. Le conseil d'administration de la CNSS « propose la ventilation, par régime, des taux globaux de cotisations, ainsi que la modification, en cas de besoin, des taux de cotisations » [@loi60-30, art. 10], et l'autorité de tutelle approuve cette ventilation [@loi60-30, art. 27]. Le décret n° 2000-1902 reprend l'une et l'autre règle [@decret2000-1902, art. 3 et 15]. Réaffecter des points du taux global d'un régime ou d'une branche à l'autre est donc, au regard des textes, l'instrument ordinaire de l'équilibre : il ne modifie pas ce que paient employeurs et salariés, il modifie ce que chaque compte de compensation reçoit.
+
+#### Les dotations initiales des régimes nouveaux {#sec-cot-cadre-dotations}
+
+Quand un régime naît, sa réserve est constituée sur les ressources des autres régimes de la caisse.
+
+| Année | Régime | Texte | Réserve initiale | Origine |
+|---|---|---|---:|---|
+| 1974 | pensions du secteur non agricole | décret n° 74-499 [@decret74-499, art. 10] | 15 MD | transfert des autres régimes gérés par la CNSS |
+| 1981 | pensions du secteur agricole | loi n° 81-6 [@loi81-6, art. 7] | 25 MD | prélèvement de la CNSS sur les excédents des autres régimes |
+| 1982 | exploitants et travailleurs indépendants de l'agriculture | décret n° 82-1360 [@decret82-1360, art. 12] | 35 MD | non précisée par le texte |
+| 1989 | régime agricole amélioré | loi n° 89-73 [@loi89-73] | 10 MD | prélèvement sur la dotation du régime agricole (art. 100 de la loi n° 81-6, inséré par la loi n° 89-73) |
+
+: Réserves initiales des régimes de la CNSS créés après 1960, en millions de dinars courants {#tbl-cadre-dotations}
+
+Ces montants sont ceux qu'énoncent les textes, en dinars de leur année ; aucun ne se compare directement aux autres.
+
+#### Les transferts de points {#sec-cot-cadre-transferts}
+
+Les réaffectations du taux global qui suivent, déjà rencontrées branche par branche, relèvent du même mécanisme ; elles ont été prises par décret ou par loi.
+
+- **1988, 1994 et 2003** : la quote-part du taux global affectée aux pensions du secteur non agricole passe de 1,25/20^e^ à 4,25/20^e^ au 1^er^ janvier 1988, à 6,25/20^e^ au 1^er^ janvier 1994 et à 7,25/20^e^ au 1^er^ janvier 2003 (@tbl-quote-part-rsna) [@decret88-1137, art. 1-2 ; @decret94-1429, art. 1-2 ; @decret2003-1212, art. 1-2].
+- **1995** : un point des cotisations du régime général est transféré au régime des accidents du travail et des maladies professionnelles [@decret95-538, art. 2].
+- **1996** : la cotisation de protection sociale des travailleurs, de 0,4 % des salaires, est « à prélever sur le taux global » [@loi96-101, art. 5].
+
+Les comptes de la CNSS montrent l'effet de ces transferts sur les cotisations de chaque branche (@fig-cotisations-branches-1990-2004) et la naissance des comptes des accidents du travail et de la protection sociale des travailleurs (@fig-cnss-atmp-pst). Les notes de la rétrospective financière de la caisse disent pris sur la part des prestations familiales les points réaffectés aux pensions [@cnss-retrospective-1990-2004] ; la Banque mondiale écrivait en 1993 que les cotisations de prestations familiales du secteur privé dégagent des excédents qui servent à financer les pensions [@bm-1993-social-protection, § 1.10].
+
+Dans ces mêmes comptes, la branche des pensions est en déficit de 1990 à 1995 et de 2002 à 2004, et en excédent de 1996 à 2001 [@cnss-retrospective-1990-2004] ; le livre [« Retraites »](../retraites/_secteur_prive.html#fig-rsna-resultat-1990-2004) en donne la figure, où sont marquées les dates d'effet des relèvements de 1988, 1994 et 2003. Les textes de 1994 et de 2003 n'énoncent pas de motif, et aucun texte identifié ici ne rattache un transfert de points à l'état d'un fonds de réserve.
+
+### L'État et les caisses {#sec-cot-cadre-etat}
+
+#### Placements, emprunts et garantie {#sec-cot-cadre-placements}
+
+La loi n° 60-30 encadre l'emploi des fonds de la CNSS : dépôts à la Caisse d'épargne nationale tunisienne, titres et placements immobiliers, sous l'approbation préalable des deux secrétariats d'État de tutelle [@loi60-30, art. 24]. La loi n° 81-5 y ajoute un fonds spécial alimenté par des contributions prélevées sur les disponibilités des régimes, destiné à des prêts aux travailleurs [@loi81-5, art. 2]. La caisse ne peut emprunter « qu'en vue de faire face à ses besoins de trésorerie », et l'État peut garantir ces emprunts « dans la limite du plafond de garantie autorisé annuellement par la loi de Finances » [@loi60-30, art. 25]. Au secteur public, le conseil d'administration de la CNRPS « fixe la nature, le volume et le choix des investissements » [@decret76-3, art. 7].
+
+Selon la Banque mondiale, les caisses étaient tenues de placer une part importante de leurs réserves en bons d'équipement de l'État et dans le logement social, à des rendements inférieurs à ceux du marché, et cette obligation a été levée à la fin de 1991 [@bm-1993-social-protection, § 3.01 ; @vittas-1993-wps1154, p. 16-17]. Le texte qui imposait ces placements et celui qui les a libérés ne sont pas identifiés ici.
+
+<!-- RECHERCHE r-caisses-placements-obligatoires : texte imposant aux caisses le placement de leurs réserves en bons d'équipement ou en logement social, et texte levant cette obligation (voir docs/recherches.yml) -->
+
+<!-- TODO (rédacteur) : la Banque mondiale (rapport 11376-TUN, § 1.09 et 3.01) et Vittas (1993,
+p. 16-17) chiffrent la part des actifs placés sous le rendement du marché et le poids des réserves
+dans le PIB vers 1990. Ne les publier qu'avec une série datée (cf. docs/notes/cadre-budgetaire-
+comptable-caisses.md, § 3), jamais en point isolé. -->
+
+#### Les concours des caisses au budget de l'État {#sec-cot-cadre-concours}
+
+Le fonds spécial de l'État (@sec-cot-fonds-special) n'est pas un prélèvement sur les caisses : c'est une majoration de la cotisation patronale, versée à un fonds de l'État depuis 1975 [@loi74-101-lf1975, art. 57 et 58]. Les caisses elles-mêmes sont appelées, à partir de 1986, à contribuer à des dépenses publiques. La loi de finances rectificative pour 1986 autorise les organismes de sécurité sociale à participer au financement du programme national d'aide aux familles nécessiteuses, leur contribution annuelle étant fixée par arrêté conjoint [@loi86-83-lfr1986, art. 13]. La loi de finances pour 1988 relève les contributions annuelles des organismes de sécurité sociale aux budgets des hôpitaux publics et affecte au budget général un montant annuel provenant de ces organismes et du produit de la majoration patronale de 1975 [@loi87-83-lf1988, art. 66 et 67] ; son tableau des recettes porte les versements de la CNSS et de la CNRPS au titre des soins donnés aux assurés dans les formations sanitaires [@loi87-83-lf1988, p. 1640]. La Banque mondiale décrit ces versements hospitaliers comme des forfaits négociés chaque année avec le ministère de la santé, le budget couvrant, selon elle, l'écart avec le coût des soins [@bm-1993-social-protection, § 2.09]. La loi de finances pour 1987 autorise par ailleurs la CNRPS et la CNSS à prêter à l'office du logement du personnel du ministère de l'intérieur [@loi86-106-lf1987, art. 76].
+
+<!-- TODO (documentaliste) : construire la série des versements des caisses inscrits au tableau A
+des lois de finances (forfaits hospitaliers CNSS et CNRPS, programme des familles nécessiteuses),
+au moins 1985-2004, pour publier ces montants en évolution et non au seul exercice 1988 ; lire
+l'arrêté du 6 janvier 1987 (contribution CNRPS/CNSS au programme des familles nécessiteuses,
+JORT n° 4/1987, p. 65) et documenter l'affectation du produit de la majoration de 1975 après
+1988. Note cadre-budgetaire-comptable-caisses.md, lacunes L6 et L14. -->
+
+#### L'État employeur et l'État financeur {#sec-cot-cadre-financeur}
+
+Au secteur public, l'État est d'abord l'employeur qui cotise : sa contribution, distincte de la retenue sur l'agent, finance le régime des pensions civiles et militaires (@sec-cot-cnrps-employeur). Les états financiers de la CNRPS isolent en outre, pour les régimes spéciaux des membres du gouvernement, des députés et des gouverneurs, la couverture de leur déficit par l'État [@cnrps-etats-financiers].
+
+Depuis 2018, l'État affecte aux caisses une ressource fiscale. La loi de finances pour 2018 institue « une contribution sociale de solidarité au profit des caisses sociales », la [CSS](#g-css), due par les personnes physiques soumises au barème de l'impôt sur le revenu et par les entreprises soumises à l'impôt sur les sociétés, y compris celles qui en sont exonérées, sur les revenus et bénéfices réalisés à partir du 1^er^ janvier 2018 [@lf-2018, art. 53]. La loi de finances pour 2022 ouvre dans les écritures du Trésorier général un compte spécial du Trésor, le [« compte de diversification des sources de sécurité sociale »](#g-compte-diversification-securite-sociale), « pour financer les caisses de sécurité sociale » : il reçoit le produit de la CSS, d'autres recettes pouvant lui être affectées, ses dépenses sont estimatives, et ses recettes sont réparties entre les caisses selon des critères fixés par arrêté du ministre chargé de la sécurité sociale [@dl2021-21-lf2022, art. 12]. Ces arrêtés de répartition ne sont pas identifiés ici.
+
+<!-- RECHERCHE r-css-arretes-repartition : arrêtés fixant la répartition entre caisses des recettes du compte de diversification des sources de sécurité sociale (voir docs/recherches.yml) -->
+
+<!-- TODO (bibliographe) : verser les sources des transferts budgétaires à la CNRPS — rapport
+annuel sur les entreprises publiques (minfin-ep-*), rapport sur les transferts et garanties
+(annexe 8 des projets de loi de finances, 2020-2025), fiche de jumelage UE de 2021 — puis
+(rédacteur) présenter la série des subventions et transferts de l'État aux caisses depuis 2016
+(série tunisia-data cnrps-transferts-etat), qui n'est pas la contribution de l'État au régime de
+retraite. Note cadre-budgetaire-comptable-caisses.md, Q3 et Q5. -->
+
+### Les textes, dans l'ordre {#sec-cot-cadre-chronologie}
+
+| Texte | Article | Ce qui change |
+|---|---|---|
+| loi n° 60-30 du 14 décembre 1960 [@loi60-30] | art. 4, 10, 18 à 33 | CNSS : établissement public à comptabilité commerciale ; budget aux prestations évaluatives ; un compte de compensation et un fonds de réserve par régime ; ventilation du taux global proposée par le conseil et approuvée par la tutelle ; contrôleurs technique et financier |
+| décret n° 74-499 du 27 avril 1974 [@decret74-499] | art. 5, 7, 10 à 13 | pensions du secteur non agricole : quote-part de 1,25/20^e^ du taux global, gestion financière distincte, réserve technique dotée de 15 MD pris sur les autres régimes |
+| loi n° 74-101 du 25 décembre 1974 (loi de finances pour 1975) [@loi74-101-lf1975] | art. 57 et 58 | cotisation patronale majorée de 0,5 point au profit d'un fonds spécial de l'État |
+| loi n° 75-83 du 30 décembre 1975 (loi de finances pour 1976) [@loi75-83] | art. 28 | la Caisse nationale de retraites et la Caisse de prévoyance sociale deviennent la CNRPS, établissement public à caractère financier rattaché au ministère des Finances |
+| décret n° 76-3 du 5 janvier 1976 [@decret76-3] | art. 7, 9 à 15 | CNRPS : budgets de fonctionnement et d'investissement, comptabilité commerciale, comptes individualisés et fonds de réserve par régime, contrôleur financier |
+| décret n° 76-981 du 19 novembre 1976 [@decret76-981] | art. 1, 2 et 24 | pensions du secteur privé confiées à la CAVIS, caisse autonome créée dans le cadre de la CNSS |
+| loi n° 81-5 du 12 février 1981 [@loi81-5] | art. 2 | loi n° 60-30, art. 24 bis : fonds spécial de prêts alimenté par les disponibilités des régimes |
+| loi n° 81-6 du 12 février 1981 [@loi81-6] | art. 6 à 10 | régimes agricoles : gestion financière distincte ; réserve initiale de 25 MD prise sur les excédents des autres régimes |
+| décret n° 85-1611 du 31 décembre 1985 [@decret85-1611] | liste A | CNRPS, CNSS et CAVIS rangées sous le ministère de la protection sociale |
+| loi n° 86-83 du 1^er^ septembre 1986 (loi de finances rectificative pour 1986) [@loi86-83-lfr1986] | art. 13 | les organismes de sécurité sociale participent au programme national d'aide aux familles nécessiteuses |
+| loi n° 86-86 du 1^er^ septembre 1986 [@loi86-86] | art. 8, 18 à 21 | architecture par branche autour d'une caisse centrale, trésorerie commune, compensation entre régimes au nombre des mesures d'équilibre ; jamais mise en place |
+| loi n° 86-106 du 31 décembre 1986 (loi de finances pour 1987) [@loi86-106-lf1987] | art. 75 | organisation administrative et financière des établissements publics à caractère industriel et commercial modifiable par décret |
+| loi n° 87-83 du 31 décembre 1987 (loi de finances pour 1988) [@loi87-83-lf1988] | art. 66 et 67 | contributions annuelles des organismes de sécurité sociale aux budgets des hôpitaux publics : 3 MD → 5 MD ; 2,5 MD versés chaque année au budget général par ces organismes et sur le produit de la majoration de 1975 |
+| décret n° 88-1137 du 11 juin 1988 [@decret88-1137] | art. 1-2 | quote-part des pensions : 1,25/20^e^ → 4,25/20^e^, au 1^er^ janvier 1988 |
+| loi n° 88-60 du 2 juin 1988 (loi de finances complémentaire pour 1988) [@loi88-60-lfc1988] | art. 9 | l'autorité de tutelle de ces établissements devient elle aussi modifiable par décret |
+| décrets n° 89-1890 et 89-1891 du 6 décembre 1989 [@decret89-1890 ; @decret89-1891] | art. 1-2 | conseils d'administration de la CNRPS (onze membres) et de la CNSS (douze membres et le président-directeur général) recomposés |
+| décret n° 94-1429 du 30 juin 1994 [@decret94-1429] | art. 1-2 | quote-part des pensions : 4,25/20^e^ → 6,25/20^e^, au 1^er^ janvier 1994 |
+| décret n° 94-1477 du 4 juillet 1994 [@decret94-1477] | art. 1-2 | CAVIS supprimée, ses régimes transférés à la CNSS |
+| décret n° 95-538 du 1^er^ avril 1995 [@decret95-538] | art. 2 | un point du taux global du régime général transféré aux accidents du travail |
+| loi n° 96-101 du 18 novembre 1996 [@loi96-101] | art. 5 | 0,4 % des salaires prélevé sur le taux global pour la protection sociale des travailleurs |
+| loi n° 96-112 du 30 décembre 1996 [@loi96-112] | art. 1 et 10 | système comptable des entreprises, normes sectorielles possibles |
+| décret n° 97-564 du 31 mars 1997 [@decret97-564] | liste | CNRPS et CNSS : établissements publics à caractère non administratif considérés comme entreprises publiques |
+| décret n° 2000-1902 du 24 août 2000 [@decret2000-1902] | art. 2, 3, 8, 9, 14 à 19 | CNSS : budgets prévisionnels, états financiers révisés par un expert-comptable, contrat-programme, contrôleur d'État ; comptes de compensation maintenus |
+| décret n° 2003-1212 du 2 juin 2003 [@decret2003-1212] | art. 1-2 | quote-part des pensions : 6,25/20^e^ → 7,25/20^e^, au 1^er^ janvier 2003 |
+| loi n° 2004-71 du 2 août 2004 [@loi2004-71] | art. 7, 10, 16 et 29 | CNAM créée ; biens et réserves des régimes transférés ; cotisations recouvrées par la CNSS et la CNRPS ; loi n° 86-86 abrogée |
+| décret n° 2004-2265 du 27 septembre 2004 [@decret2004-2265] | art. 1-2 | CNAM ajoutée à la liste des établissements considérés comme entreprises publiques ; décret n° 97-564 abrogé |
+| décret n° 2005-321 du 16 février 2005 [@decret2005-321] | art. 10, 11, 13 à 20 | CNAM : prestations estimatives, comptes séparés et fonds de réserve par régime, contrôleur d'État |
+| loi n° 2017-66 du 18 décembre 2017 (loi de finances pour 2018) [@lf-2018] | art. 53 | contribution sociale de solidarité instituée au profit des caisses sociales |
+| décret-loi n° 2021-21 du 28 décembre 2021 (loi de finances pour 2022) [@dl2021-21-lf2022] | art. 12 | compte spécial du Trésor « compte de diversification des sources de sécurité sociale », alimenté par la CSS et réparti entre les caisses par arrêté |
+
+: Textes qui ont fixé ou modifié le cadre comptable et budgétaire des caisses {#tbl-cadre-chronologie}
+
+### Ce que les textes ne disent pas {#sec-cot-cadre-silences}
+
+Trois questions que le lecteur se pose naturellement n'ont pas de réponse dans les textes identifiés ici.
+
+**La compensation entre régimes.** Aucun texte en vigueur identifié ne prévoit de transfert général d'un régime excédentaire vers un régime déficitaire. Les seuls mouvements que les textes organisent sont les dotations initiales des régimes nouveaux (@tbl-cadre-dotations), la ventilation du taux global (@sec-cot-cadre-ventilation) et l'imputation à chaque régime d'une quote-part des frais de fonctionnement [@loi60-30, art. 22]. La compensation entre régimes n'apparaît que dans la loi n° 86-86, au nombre des mesures que la caisse centrale pouvait proposer, et cette architecture n'a pas pris effet [@loi86-86, art. 21].
+
+**La garantie de l'État.** La seule garantie que prévoient les textes identifiés est celle, facultative et plafonnée par la loi de finances, des emprunts de trésorerie de la CNSS [@loi60-30, art. 25]. Aucun texte identifié n'engage l'État à couvrir le déficit d'une caisse ou d'un régime du secteur privé.
+
+**Le financement des déficits agricoles.** Les comptes de la CNSS montrent, de 1990 à 2004, des régimes agricoles constamment déficitaires et aucune ligne de transfert d'un régime à un autre (@fig-cnss-regimes ; @sec-cot-prive). Aucun texte identifié ne dit comment ces déficits sont couverts. Un ancien directeur du Centre de recherches et d'études de sécurité sociale écrit, dans une publication du Bureau international du Travail, que le déficit des régimes agricoles et de ceux des non-salariés a dû être couvert par les excédents du régime général [@chaabane-2002-ess4, p. 15] ; le mécanisme comptable de cette couverture — virement entre fonds de réserve ou trésorerie commune de la caisse — n'est pas décrit.
+
+<!-- TODO (documentaliste) : chercher dans les états financiers de la CNSS, les rapports de son
+conseil d'administration et les études du CRESS comment la trésorerie couvre les déficits des
+régimes agricoles (lacune L10) ; relire les modificatifs de la loi n° 60-30, dont la loi n° 98-91
+visée par le décret n° 2000-1902, pour leurs effets sur les articles 18 à 33 (lacune L2). -->
+
+### La longue période {#sec-cot-cadre-longue-periode}
+
+Deux sources permettent de suivre les comptes des caisses dans le temps, à des niveaux différents.
+
+La rétrospective financière de la CNSS donne, de 1990 à 2004, les ressources, les emplois et le résultat de gestion de chaque régime et de chaque branche, dans la présentation par compte de compensation que la loi impose [@cnss-retrospective-1990-2004] : les figures de ce livre en sont tirées (@fig-cotisations-branches-1990-2004, @fig-cnss-regimes, @fig-cnss-atmp-pst, @fig-cnss-assurances-sociales). Rien de comparable n'est publié ici pour les années postérieures, ni pour la CNRPS et la CNAM.
+
+Les comptes de la nation de l'Institut national de la statistique présentent, dans chaque édition, les comptes de l'ensemble des organismes de sécurité sociale — cotisations reçues, prestations, transferts entre administrations publiques, revenus de la propriété, capacité ou besoin de financement — comme un sous-secteur des administrations publiques, les [fonds de sécurité sociale](#g-fonds-de-securite-sociale) [@ins-cnat-2015]. Ils ne ventilent ces comptes ni par caisse ni par branche. Les transferts reçus d'autres administrations publiques y sont la ligne où s'inscrivent les concours de l'État.
+
+<!-- TODO (documentaliste) : construire la série « comptes des organismes de sécurité sociale »
+des éditions des comptes de la nation (2001-2025, rupture de base 1983/2015 à documenter) et
+prolonger après 2004 les comptes de compensation de la CNSS par ses états financiers, pour
+donner ici une vue de longue période des trois caisses (note cadre-budgetaire-comptable-caisses.md,
+§ 3, séries 1 et 4). -->

@@ -48,10 +48,14 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Ciblage | الاستهداف |  |
 | Classe de revenus | شريحة الدخل |  |
 | Commerçant grossiste | تاجر جملة |  |
+| Compte de compensation | حساب المقاصّة |  |
+| Compte de diversification des sources de sécurité sociale | حساب تنويع مصادر الضمان الاجتماعي |  |
 | Condition de ressources | شرط الموارد |  |
+| Contrat-programme | عقد البرنامج |  |
 | Contribution aux frais de crèche | المساهمة في مصاريف رياض الأطفال |  |
 | Contribution personnelle d'État | الضريبة الشخصية للدولة | CPE |
 | Contribution sociale de solidarité | المساهمة الاجتماعية التضامنية | CSS |
+| Contrôleur d'État | مراقب الدولة |  |
 | Convention collective sectorielle | الاتفاقية المشتركة القطاعية |  |
 | Convention collective sectorielle des banques et établissements financiers | الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية |  |
 | Coordination des régimes | التنسيق بين أنظمة الضمان الاجتماعي |  |
@@ -80,9 +84,11 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fait générateur du droit de consommation | الحدث المتولد عنه المعلوم على الاستهلاك |  |
 | Fonction publique | الوظيفة العمومية |  |
 | Fonctions astreignantes | الوظائف المرهقة |  |
+| Fonds de réserve | صندوق الاحتياط |  |
 | Fonds de sécurité sociale | صناديق الضمان الاجتماعي |  |
 | Forces de sécurité intérieure | قوات الأمن الداخلي |  |
 | Frais professionnels | المصاريف المهنية |  |
+| Gestion financière distincte | التصرّف المالي المستقلّ |  |
 | Grade | الرتبة |  |
 | Grille des salaires | شبكة الأجور |  |
 | Impôt sur le revenu des personnes physiques | الضريبة على دخل الأشخاص الطبيعيين | IRPP |
@@ -145,6 +151,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Rente compensatrice | الإيراد التعويضي |  |
 | Rente d'accident du travail | إيراد حادث الشغل |  |
 | Rente viagère d'invalidité | الإيراد العمري للعجز |  |
+| Réserve technique | الاحتياطي الفنّي |  |
 | Retenue à la source | الخصم من المورد |  |
 | Retraite anticipée volontaire | التقاعد المبكّر الاختياري |  |
 | Rétribution provisoire ou accidentelle | الأجر الوقتي أو العرضي |  |
@@ -174,6 +181,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Taux ad valorem | نسبة من القيمة |  |
 | Taux de liquidation | نسبة تصفية الجراية |  |
 | Taux effectif à la limite supérieure | النسبة الفعلية في الحدّ الأقصى |  |
+| Taux global de cotisation | النسبة الجملية للمساهمات |  |
 | Taux majoré de la TVA | النسبة المرتفعة |  |
 | Taux marginal | النسبة الحدية |  |
 | Taux normal de la TVA | النسبة العادية |  |

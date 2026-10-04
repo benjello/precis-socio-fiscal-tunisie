@@ -223,6 +223,36 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 
 - **Cotisations par branche, 1990-2004 — fait le 3 octobre 2026** (`#fig-cotisations-branches-1990-2004`, après `#fig-cotisations-cnss`), tirées de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026). Comptes de bilan, non encaissements : écart de −1,13 % à −0,81 % avec la série encaissée en 2000-2004, inexpliqué. Les notes du document datent la réduction de 2 points de la branche familiale par la loi n° 97-4 au 1er octobre 1996, date que la loi n'énonce pas : à confronter à la datation du taux global (`#sec-cot-taux-unique`). **221 valeurs de 1999** (et quelques-unes de 2000) masquées par la reliure restent à lire sur l'original papier (tunisia-data#26) ; en attendant, la figure trace des estimations hachurées ou creuses. Quand le classeur revient : réinjecter dans tunisia-data, relancer `figtools.refresh_cache("cnss-retrospective-ressources-emplois")`, puis relire la note de lecture, qui cite des montants. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches).
 - **Trois figures de la rétrospective CNSS 1990-2004 — fait le 3 octobre 2026**, mêmes vues (MD, % du PIB, % des ressources de la CNSS) : `#fig-cnss-assurances-sociales` (`#sec-cot-maladie-longue-periode`, branche AS du RSNA, page 13 : forfait Santé publique, participation aux budgets des hôpitaux, compléments facturés par les hôpitaux publics, polycliniques, prestations en espèces, résultat ; colonne 1999 estimée hormis le total des ressources) ; `#fig-cnss-regimes` (`#sec-cot-prive`, page 79 : taux de couverture et résultat de neuf régimes ; aucune valeur estimée ; RSA et non-salariés agricoles structurellement déficitaires, RSAA excédentaire sauf 2001 et 2004, aucune ligne de transfert entre régimes) ; `#fig-cnss-atmp-pst` (`#sec-cot-at-longue-periode`, renvoi depuis `#sec-cot-protection-sociale`, pages 54 et 56 ; détail AT/MP de 2000 estimé). Restent (TODO des chapitres, textes à obtenir, hors corpus JORT pour l'essentiel) : la base juridique du forfait accordé à la Santé publique, de la participation aux budgets des hôpitaux et de la facturation des compléments de soins à partir de 1996 ; le sens du sigle « C.A.O. » ; le contenu de la ligne « Provision Prest. & Mathématique » du régime AT/MP ; ces séries après 2004 (CNAM pour les AT/MP). Quand le classeur de tunisia-data#26 revient : relire les notes de lecture, qui citent des montants.
+- **Cadre comptable et budgétaire des caisses — rédigé le 4 octobre 2026** (`_cadre_caisses.qmd`,
+  inclus dans `index.qmd` avant `#sec-cot-bilan`, `#sec-cot-cadre-caisses`), d'après la note
+  `cadre-budgetaire-comptable-caisses.md` : statut, budget et contrôle des trois caisses ;
+  comptabilité et réserves par régime ; dotations initiales et transferts de points ; concours
+  des caisses au budget et financement par l'État (CSS, compte de diversification) ; chronologie
+  des textes (`#tbl-cadre-chronologie`) ; silences des textes. Six fiches de recherche versées
+  (`r-cnrps-tutelle-1976-1985`, `r-cnrps-organisation-apres-1989`, `r-norme-comptable-securite-sociale`,
+  `r-cnam-transfert-reserves`, `r-caisses-placements-obligatoires`, `r-css-arretes-repartition`).
+  Lacunes de la note (numérotation L1-L15), état du support contrôlé le 4 octobre 2026 sur le
+  corpus local (couche texte des trois premières pages) :
+  - **lisible** : loi n° 98-91 (JORT n° 89 de 1998, `1998/fr/Jo08998.pdf`) pour les modificatifs
+    des art. 18-33 de la loi n° 60-30 (L2, en partie) ; décret n° 97-565 (JORT n° 27 de 1997)
+    et décret n° 2002-2197 (JORT n° 83 de 2002, couche à décoder le cas échéant) (L12) ; arrêtés
+    d'approbation des normes comptables de 1999 (n° 27), 2000 (n° 54), 2001 (n° 96), 2003
+    (n° 97), 2007 (n° 70), 2008 (n° 10) et 2011 (n° 17) (L7) ; décret n° 2005-910 (JORT n° 26
+    de 2005, pp. 844-850), dont le tableau de tutelle est à lire à l'image (L11) ;
+  - **OCR** : décret n° 75-775 (JORT n° 72 de 1975) et décret n° 86-454 (n° 25 de 1986) pour la
+    tutelle de la CNRPS (L1) ; modificatifs de la loi n° 60-30 antérieurs à 1996 (L2) ; lois de
+    finances 1971-1975 et 1991 (n° 86 de 1990) pour les placements en bons d'équipement (L5 ;
+    LF 1992 à localiser) ; loi n° 85-72 (n° 56 de 1985) (L13) ; arrêté du 6 janvier 1987
+    (n° 4 de 1987) (L14) ; décret n° 87-529 (n° 25 ou 30 de 1987, à départager) (L15) ;
+    loi n° 68-8 sur la Cour des comptes (n° 11 de 1968) (L9) ;
+  - **à obtenir** (hors JORT) : couverture des déficits agricoles par la trésorerie de la CNSS —
+    états financiers, rapports du conseil d'administration, études du CRESS (L10) ; rapport de
+    mission complet de la Cour des comptes sur la CNRPS (2006) (L9) ; affectation du produit de
+    la majoration de 1975 après 1988, tableaux A des lois de finances 1985-2004 (L6) ;
+  - **recherches** : L3, L4, L8 suivent leurs fiches dans `docs/recherches.yml`.
+  Séries à construire avant de publier des montants (TODO du fichier) : comptes des organismes
+  de sécurité sociale des comptes de la nation ; versements des caisses au budget (tableau A) ;
+  transferts de l'État aux caisses depuis 2016, dont les sources restent à verser.
 - **Accidents du travail (§ sec-cot-at)** : les décrets n° 95-538 et 99-1010 sont lus
   dans les deux éditions (taux, entrée en vigueur au 1er janvier 1995 et au 1er avril
   1999). Les deux échelles sont engendrées, avant et après transfert du point
