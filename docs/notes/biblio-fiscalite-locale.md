@@ -233,3 +233,29 @@ Les clés sont indicatives. Les champs marqués `_verifier` sont des notes de tr
 - **OPAC de l'ENA** (bibliotheque.ena.nat.tn) : injoignable.
 - **Billet de l'Université de Sfax** sur *Transparence et droit* (bulletin-usf.info, archive de 2025) : il ne donne ni ISBN, ni directeurs, ni sommaire.
 - **Copie de la Banque mondiale sur documents.worldbank.org** : pas cherchée.
+
+## Manuscrits de 2013 transmis par l'humain (4 octobre 2026)
+
+Deux documents de travail Word, copiés hors dépôt dans
+`~/Documents/biblio-precis/fiscalite-locale/gilbert-2013-manuscrits/` (manifeste et conversions
+texte au même endroit). Non publiés : à citer, s'il le faut, comme manuscrits, et de préférence par
+leur version publiée.
+
+- **Chapitre 4, « Les ressources fiscales des collectivités locales et les paiements des usagers »**,
+  version « V5 VALIDATION » du 30 mars 2013 (métadonnées : auteur Guy Gilbert ; 41 p.). Plan :
+  bases institutionnelles (tableaux 4-1 à 4-3 : textes de référence, textes d'application du code de
+  la fiscalité locale au 1er juin 2012, textes hors code) ; classification des impôts, taxes et
+  redevances (tableau 4-4) ; impôts locaux (TCL, taux minimaux, tableau 4-8 ; TIB, prix de référence,
+  tableau 4-9 ; TNB ; taxe hôtelière) ; taxes locales ; redevances ; remarques et questions
+  ouvertes ; données statistiques.
+- **Chapitre 5, « Les transferts financiers »**, version « V6 VALIDATION » (créé par Guy Gilbert,
+  modifié par Bernard Dafflon, 30 mars 2013). Plan : justification et typologie des transferts ;
+  bases institutionnelles ; architecture d'ensemble (FCCL, CPSCL) ; dotations de fonctionnement
+  (tableau 5-10 : répartition de la quote-part du FCCL, 2006-2012) ; dotations d'équipement
+  (critères de la CPSCL, schéma de financement, conditions de prêt : tableaux 5-12 à 5-14) ;
+  commentaires ; données statistiques (tableau 5-1 : ressources des collectivités, 2010-2012).
+
+Ce sont, selon toute vraisemblance, les chapitres 4 et 5 du rapport de 2013 de B. Dafflon et
+G. Gilbert pour la Banque mondiale, repris dans le livre AFD de 2018 (chapitre 5 de ce dernier pour
+le texte fiscal). Rapprochement à confirmer par comparaison avec le livre AFD 2018 et la copie du
+rapport de 2013 repérée plus haut.
