@@ -1,0 +1,91 @@
+# Les autres branches {#sec-cot-autres-branches}
+
+```{python}
+#| echo: false
+#| output: false
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+
+TABLES = Path.cwd() / "tables"
+
+
+def table(nom, legende, label, **options):
+    """Tableau de paramètres : snapshot versionné, régénéré depuis openfisca-tunisia.
+
+    Les valeurs viennent des paramètres du modèle, la colonne « Texte » de leurs
+    références. Régénération : `scripts/generate_cotisations_tables.py`.
+    """
+    print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label, **options))
+
+
+def onglets(panneaux, **options):
+    """Plusieurs tableaux sous des onglets : (titre, nom, légende, label)."""
+    print(ot.markdown_onglets(
+        [(titre, TABLES / f"{nom}.md", legende, label) for titre, nom, legende, label in panneaux],
+        **options))
+```
+
+## Les prestations familiales {#sec-cot-famille}
+
+### La part du taux global de 1960 {#sec-cot-famille-origine}
+
+Les prestations familiales sont, avec les assurances sociales, l'une des deux branches que finance le taux global de la loi n° 60-30 (@sec-cot-taux-unique). La part de ce taux qui leur revient en 1960 n'est pas établie ici. Aujourd'hui, les 3,10 points qu'elles reçoivent dans le régime général sont une part du solde que laissent les branches fixées par un texte, et leur montant n'est fixé par aucun texte identifié (@tbl-ventilation-rsna).
+
+<!-- TODO (documentaliste) : établir la part des prestations familiales dans le taux global de la loi n° 60-30 à l'origine, et ses éventuels mouvements jusqu'en 1997. -->
+
+### Une branche que tous les régimes n'ont pas {#sec-cot-famille-evolution}
+
+La branche n'existe que dans le régime général et dans le régime agricole amélioré. Le régime des salariés agricoles n'en comporte pas — c'est la ligne de partage avec le régime amélioré —, non plus que celui des travailleurs à faibles revenus (@sec-cot-rsa ; @sec-cot-rtfr). Dans le régime amélioré, l'ouverture des allocations familiales est la marque du régime (@sec-cot-rsaa) ; pour les pêcheurs indépendants et les petits armateurs, le décret n° 90-548 affecte à la branche 4,5 points des 15 % [@decret90-548, art. 1-2].
+
+La loi n° 96-101 fait par ailleurs financer par la cotisation de protection sociale des travailleurs le maintien des allocations familiales pendant les quatre trimestres qui suivent la cessation d'activité d'une entreprise (@sec-cot-emploi). Les prestations elles-mêmes — allocations familiales, majoration pour salaire unique — relèvent du livre « Prestations sociales ».
+
+## La perte d'emploi, la protection sociale des travailleurs et le fonds spécial de l'État {#sec-cot-emploi}
+
+Trois cotisations du régime général financent des interventions qui ne relèvent d'aucune des branches classiques.
+
+### Le fonds spécial de l'État {#sec-cot-fonds-special}
+
+**Le fonds spécial de l'État** est un ajout de la loi de finances pour 1975 : la loi n° 74-101 [@loi74-101-lf1975] majore la cotisation patronale de l'article 41 de 0,5 point « à compter du 1^er^ janvier 1975 », son produit étant affecté à des interventions dans les domaines économiques réparties par arrêté du Premier ministre.
+
+### La protection sociale des travailleurs {#sec-cot-protection-sociale}
+
+La cotisation de protection sociale des travailleurs est instituée par la loi n° 96-101 du 18 novembre 1996 [@loi96-101]. Elle finance la prise en charge par la CNSS des indemnités dues aux travailleurs licenciés pour raisons économiques ou technologiques lorsque l'entreprise est en cessation de paiement, la caisse étant subrogée dans leurs droits, ainsi que le maintien des allocations familiales et de la majoration pour salaire unique pendant les quatre trimestres suivant la cessation d'activité [@loi96-101, art. 2 à 4 et 7]. Son taux de 0,4 % des salaires est « à prélever sur le taux global » [@loi96-101, art. 5] : la loi n'augmente pas le prélèvement, elle en réaffecte une fraction (@tbl-ventilation-rsna). Elle ne comporte pas de clause d'entrée en vigueur.
+
+Dans les comptes de bilan de la caisse, la branche ainsi financée est excédentaire chaque année de 1997 à 2004 : ses cotisations comptabilisées passent de 11,4 à 18,2 millions de dinars courants, quand ses emplois restent compris entre 1,0 et 4,4 millions par an [@cnss-retrospective-1990-2004]. La figure qui les montre est présentée dans le livre [« Les caisses de sécurité sociale »](../caisses/_comptes_longue_periode.html#fig-cnss-atmp-pst).
+
+### La perte d'emploi {#sec-cot-perte-emploi}
+
+L'article 17 de la loi n° 2024-48 du 9 décembre 2024, portant loi de finances pour l'année 2025 [@lf-2025], crée un fonds spécial d'assurance contre la perte d'emploi pour raisons économiques, destiné à financer un régime d'assurance contre la perte collective d'emploi pour des motifs étrangers aux deux parties de la relation de travail et un dispositif d'accompagnement des travailleurs licenciés. Parmi les ressources du fonds figure une cotisation de **0,5 % supportée par chacune des deux parties**, assise sur la masse salariale déclarée auprès de la CNSS ; le taux figure donc dans la loi elle-même, et non dans le décret d'application qu'elle annonce (@tbl-perte-emploi). Ce décret n'a pas été identifié à ce jour.
+
+```{python}
+#| echo: false
+#| output: asis
+table("perte_emploi",
+      "Cotisation au fonds d'assurance contre la perte d'emploi pour raisons économiques",
+      "tbl-perte-emploi")
+```
+
+L'article ne comporte pas de clause d'entrée en vigueur propre : la cotisation court au 1^er^ janvier 2025 en vertu de la règle générale d'application des lois de finances à l'année budgétaire.
+
+Hors retraite complémentaire, le total obligatoire du régime général était ainsi de **9,18 % pour le salarié et 16,57 % pour l'employeur** de 2009 à 2024 ; la cotisation de perte d'emploi porte ces taux à **9,68 % et 17,07 %**.
+
+Le livre « Prestations sociales » expose le régime que finance le fonds.
+
+## La retraite complémentaire facultative {#sec-cot-complementaire}
+
+### Le règlement de 1978 et l'assiette différentielle {#sec-cot-complementaire-assiette}
+
+Le régime complémentaire de pension de vieillesse, d'invalidité et de survivants a été agréé par un **arrêté du ministre des affaires sociales du 18 novembre 1978** [@arrete-1978-11-18-retraite-complementaire], qui publie son règlement et dispose que celui-ci « entre en application à compter du 1^er^ janvier 1974 ». Trois traits le distinguent du régime légal.
+
+Il repose sur une **assiette différentielle**. L'article 6 du règlement énonce que « l'assiette de cotisation est la fraction de salaire excédant la limite fixée par le régime légal pour le calcul des prestations » : le régime complémentaire ne double pas le régime légal, il prolonge au-delà de la limite que le décret n° 74-499 pose pour le **calcul des pensions**. Cette limite n'est pas un plafond de cotisation — le régime légal, lui, cotise sur la totalité du salaire —, mais un plafond de prise en compte du salaire dans la pension. Les 3 points salarié et 6 points patronaux ne s'ajoutent donc pas aux 26,75 % du régime général : ils portent sur une assiette différente et plus étroite, et les deux prélèvements ne sont pas sommables. Cette limite, fixée à six fois le SMIG, et son histoire sont exposées avec les plafonds (@sec-cot-plafonds).
+
+### Le taux et l'adhésion {#sec-cot-complementaire-taux}
+
+Il est **facultatif parce que conventionnel** : le règlement s'applique aux employeurs qui ont souscrit un contrat d'adhésion auprès de la Caisse d'assurance vieillesse, d'invalidité et de survivants (CAVIS), l'adhésion prenant effet au premier jour d'un trimestre civil (art. 3 et 4). Ce sont les entreprises qui adhèrent, non les salariés.
+
+Enfin, **le taux de 9 % n'a aucune source publiée**. Le règlement fixe un taux d'appel initial de **4,5 %** et prévoit que « pour les périodes postérieures, le taux d'appel sera fixé en fonction de l'évolution de l'équilibre financier du régime, par décision du comité de gestion de la CAVIS soumise à l'approbation des ministres des finances et des affaires sociales ». Ces décisions ne sont pas publiées au *Journal officiel* : le passage de 4,5 % à 9 % ne peut être ni sourcé ni daté. Seule la clé de répartition est attestée — deux tiers à la charge de l'employeur, un tiers à la charge du participant —, et les valeurs de 6 % et 3 % la respectent.
+
+Le droit que ce régime ouvre relève du livre « Retraites ».

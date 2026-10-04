@@ -14,8 +14,20 @@ book:
   downloads: [pdf]
   chapters:
     - index.qmd
+    - _assiette.qmd
+    - _taux_global.qmd
+    - part: _branches.qmd
+      chapters:
+        - _pensions.qmd
+        - _maladie.qmd
+        - _accidents_travail.qmd
+        - _autres_branches.qmd
+    - _regimes.qmd
+    - _bilan.qmd
 
   appendices:
+    - _notations.qmd
+    - _textes_modificatifs.qmd
     - _glossaire.qmd
 
 bibliography:

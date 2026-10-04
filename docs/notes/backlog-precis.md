@@ -163,6 +163,18 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 
 ## Prestations sociales
 
+- **Découpé en chapitres le 4 octobre 2026** (déplacement seul, aucune valeur changée, ancres
+  gardées) : `index.qmd` (« Présentation » : introduction, conventions, présentation générale
+  `#sec-prest-presentation`, encadré des caisses), partie « Les prestations contributives »
+  (`_contributives.qmd`, `#sec-prest-contributives` : chapeau et ouverture du droit) —
+  `_prestations_familiales.qmd` (`#sec-prest-familiales`), `_autres_risques.qmd` (maladie,
+  maternité, décès, accidents du travail, perte d'emploi, CNAM ; `#sec-prest-autres-risques`) —,
+  `_non_contributives.qmd` (`#sec-prest-non-contributives`), `_matrice.qmd` ; annexe
+  `_notations.qmd` (« Les notations du volume »).
+- **Arabe — à faire à la livraison de la traduction** : `precis/ar/prestations_sociales/_quarto.yml`
+  ne déclare encore que `index.qmd`, à dessein. Y déclarer la partie `_contributives.qmd`, les quatre chapitres et
+  l'annexe quand la traduction les livre, puis rendre le livre arabe (mêmes réserves que pour les
+  cotisations).
 - **Dépense des allocations familiales, 1990-2004 — fait le 3 octobre 2026** (`#fig-cnss-allocations-familiales`, `#sec-pf-longue-periode`), tirée de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026), déflatée par l'IPC des annuaires de l'INS (`ins-annuaire-ipc`). Restent : allocataires, enfants, montant moyen, dépense avant 1990 et après 2004 (TODO du chapitre). **221 valeurs de 1999** (et quelques-unes de 2000) masquées par la reliure restent à lire sur l'original papier (tunisia-data#26) ; en attendant, la figure trace des estimations hachurées ou creuses. Quand le classeur revient : réinjecter dans tunisia-data, relancer `figtools.refresh_cache("cnss-retrospective-ressources-emplois")`, puis relire la note de lecture, qui cite des montants. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches).
 - **Onze paliers de l'allocation** entre 1987 et 2018 n'ont aucun fondement textuel publié.
   Les décisions ou circulaires de la direction générale de la promotion sociale et
@@ -255,6 +267,32 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   (`tbl-css-salarie`). Le CSV des augmentations reste fait main (RE-01, RE-02, classés C).
 
 ## Cotisations sociales
+
+- **Découpé en chapitres le 4 octobre 2026** (déplacement seul, aucune valeur changée, ancres
+  gardées) : `index.qmd` (« Présentation » : introduction, conventions, présentation générale,
+  encadré des caisses), `_assiette.qmd`, `_taux_global.qmd`, partie « Les branches, une à une »
+  (`_branches.qmd`, `#sec-cot-branches`) — `_pensions.qmd`, `_maladie.qmd`,
+  `_accidents_travail.qmd`, `_autres_branches.qmd` (famille, emploi et fonds spécial,
+  complémentaire ; ancre nouvelle `#sec-cot-autres-branches`) —, `_regimes.qmd`, `_bilan.qmd` ;
+  annexes `_notations.qmd`, `_textes_modificatifs.qmd`. L'ancre `#sec-cot-annexes`, que rien ne
+  visait, a disparu. Les liens des autres livres sont redirigés vers les nouvelles pages, **sauf
+  ceux du livre des caisses**, restructuré en parallèle, à corriger après fusion : huit liens de
+  `_comptes_regimes.qmd`, `_etat_caisses.qmd` et `_comptes_longue_periode.qmd` visent encore
+  `cotisations_sociales/index.html#…` (`sec-cot-taux-unique`, `sec-cot-ventilation` →
+  `_taux_global.html` ; `tbl-quote-part-rsna` → `_pensions.html` ;
+  `fig-cotisations-branches-1990-2004` ×2 → `_bilan.html` ; `sec-cot-fonds-special`,
+  `sec-cot-protection-sociale` → `_autres_branches.html` ; `sec-cot-cnrps-employeur` →
+  `_regimes.html`).
+- **Arabe — à faire à la livraison de la traduction** : `precis/ar/cotisations_sociales/_quarto.yml`
+  ne déclare encore que `index.qmd`, à dessein (déclarer des fichiers absents casserait le rendu).
+  Quand la passe de traduction livre les onze nouveaux fichiers, y déclarer les mêmes chapitres,
+  la partie `_branches.qmd` et les annexes, puis rendre le livre arabe. D'ici là, le livre arabe
+  sert l'ancien `index.qmd` d'un seul tenant ; si la passe réécrit d'abord `ar/index.qmd` en
+  version courte, le contenu des chapitres manquera au livre arabe jusqu'à leur déclaration.
+  Les renvois des volumes « Retraites » et « Rémunérations publiques » visent déjà les nouvelles
+  pages (`_pensions.html`, `_taux_global.html`, `_regimes.html`, `_matrice.html`…) : leur
+  retraduction produira des liens morts dans les livres arabes tant que ces chapitres n'y sont pas
+  déclarés. Déclarer les chapitres arabes dans la même passe que ces retraductions.
 
 - **Les caisses ont quitté ce livre le 4 octobre 2026** : cadre comptable et budgétaire, et les
   trois figures de la rétrospective CNSS par régime et par branche, dans le livre « Les caisses de

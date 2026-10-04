@@ -1,0 +1,214 @@
+# Recouvrement, rendement, vue d'ensemble {#sec-cot-bilan}
+
+```{python}
+#| echo: false
+#| output: false
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+
+TABLES = Path.cwd() / "tables"
+
+
+def table(nom, legende, label, **options):
+    """Tableau de paramètres : snapshot versionné, régénéré depuis openfisca-tunisia.
+
+    Les valeurs viennent des paramètres du modèle, la colonne « Texte » de leurs
+    références. Régénération : `scripts/generate_cotisations_tables.py`.
+    """
+    print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label, **options))
+
+
+def onglets(panneaux, **options):
+    """Plusieurs tableaux sous des onglets : (titre, nom, légende, label)."""
+    print(ot.markdown_onglets(
+        [(titre, TABLES / f"{nom}.md", legende, label) for titre, nom, legende, label in panneaux],
+        **options))
+```
+
+## Le recouvrement {#sec-cot-recouvrement}
+
+Les deux secteurs ne recouvrent pas par le même instrument, et la dissymétrie vaut d'être écrite plutôt qu'aplanie : **au privé, une déclaration trimestrielle qui précède et justifie le versement ; au public, un précompte mensuel opéré par l'employeur sur le traitement.**
+
+Au privé, tout procède des articles 45 et 46 de la loi n° 60-30. Les cotisations sont dues **à la fin de chaque trimestre** et versées « au plus tard le quinzième jour du mois suivant » ; à la même échéance, l'employeur adresse à la caisse une **déclaration trimestrielle de salaires justificative des cotisations dues**, réputée nulle si elle omet une partie des salaires payés ou mentionne des salaires inférieurs aux minima réglementaires. La carence ouvre la **taxation d'office**. C'est cette architecture qui explique que le vocabulaire des textes soit trimestriel jusque dans les prestations : les montants des prestations familiales sont eux-mêmes exprimés par trimestre.
+
+Le versement **mensuel** n'est devenu possible qu'en 2007, et seulement comme **faculté** : la loi n° 2007-51 [@loi2007-51] ajoute à l'article 45 un paragraphe disposant que les cotisations « peuvent être versées mensuellement par les employeurs ». La périodicité de principe reste trimestrielle.
+
+La même loi de 2007 refait le régime des **pénalités**, et le déplacement mérite d'être noté. La rédaction de 1960 punissait le retard de 3 ‰ par jour, **plafonnés à quatre-vingt-dix jours** ; celle de 2007 retient 1 % par mois de retard, **sans plafond**, et y ajoute une pénalité distincte de 0,5 % par mois lorsque l'employeur n'a pas déclaré la totalité des salaires. C'est désormais la déclaration, autant que le paiement, qui est sanctionnée. Les remises gracieuses relèvent du ministre chargé des affaires sociales et sont accordées « pour motifs d'intérêt général » ; la pratique en est périodique, une dizaine de textes de remise s'échelonnant de 1985 à 2025.
+
+Au public, le mécanisme est plus simple et fut longtemps dépourvu de sanction. L'article 9 de la loi n° 85-12 [@loi85-12] charge l'employeur de « prélever mensuellement » la contribution et de la « verser sans délai » à la caisse, en lui interdisant de conserver ces montants ou de les employer à une autre fin — mais sans fixer ni délai chiffré ni pénalité. Ce vide n'a été comblé qu'en **2019** : l'article 9 bis, inséré par la loi n° 2019-37, impose le transfert « dans un délai n'excédant pas le cinquième jour du mois suivant » et frappe le retard d'une pénalité de **1,5 % par mois**. Deux traits en font un texte singulier — le débiteur de la pénalité est **l'État lui-même** et les autres personnes publiques employeuses, et le taux est supérieur de moitié à celui du secteur privé. La même loi impose enfin à la CNRPS un système d'échange de données mensuel avec les employeurs, rapprochant le public de la logique déclarative du privé.
+
+## Ce que les cotisations rapportent {#sec-cot-rendement}
+
+Les taux décrits jusqu'ici fixent ce qui est dû ; ils ne disent pas ce qui est encaissé. La CNSS publie le montant de ses cotisations sur vingt et un ans, et cette série porte un enseignement que la lecture des barèmes ne donne pas.
+
+```{python}
+#| label: fig-cotisations-cnss
+#| fig-cap: "Cotisations encaissées par la CNSS, tous régimes, 2000-2020 (source CNSS)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotisations_encaissees as ce
+import figtools
+figtools.figure_tabs(
+    ce.fig_cotisations(), ce.table(), "cnss-cotisations",
+    slug="fig_cotisations_cnss",
+    caption="Cotisations encaissées par la CNSS, tous régimes, 2000-2020",
+    note_lecture=(
+        "La courbe porte deux retournements. Le premier, en **2006**, n'est pas "
+        "conjoncturel : cette année-là les recettes des branches de l'assurance maladie "
+        "et de la réparation des accidents du travail passent à la CNAM, et les "
+        "cotisations encaissées par la CNSS tombent de 1 351 à 993 millions de dinars "
+        "sans qu'aucun taux ait baissé. La série n'est donc pas homogène de part et "
+        "d'autre de cette date. Le second, en **2020**, est un vrai recul — 3 445 puis "
+        "3 430 millions — le premier depuis le transfert. Les montants sont en dinars "
+        "**courants** : c'est la forme de la courbe, non son niveau, qui s'interprète."),
+)
+```
+
+Les comptes de bilan de la caisse remontent jusqu'en 1990 et ventilent les cotisations par branche [@cnss-retrospective-1990-2004]. Ils ne relèvent pas de la même comptabilité que la série précédente : ils enregistrent les cotisations constatées au titre de chaque exercice, non les encaissements. De 2000 à 2004, années communes aux deux sources, leur total est inférieur à celui des cotisations encaissées de 0,81 % à 1,13 % selon l'année, sans que l'écart soit expliqué. La figure suivante montre ces cotisations, branche par branche, et l'apparition de deux branches nouvelles au cours de la période (@fig-cotisations-branches-1990-2004).
+
+```{python}
+#| label: fig-cotisations-branches-1990-2004
+#| fig-cap: "Cotisations de la CNSS par branche, comptes de bilan, en dinars courants et rapportées au PIB et aux ressources de la caisse, 1990-2004."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotisations_branches_1990_2004 as cb
+import figtools
+figtools.figure_tabs(
+    cb.vues(), cb.table(), "cnss-retrospective-ressources-emplois", "cnss-cotisations",
+    "irpp-ratios",
+    slug="fig_cotisations_branches_1990_2004",
+    caption=("Cotisations de la CNSS par branche, comptes de bilan, en dinars courants et "
+             "rapportées au PIB et aux ressources de la caisse, 1990-2004"),
+    note_lecture=(
+        "Les barres empilent les cotisations de chaque branche, en millions de dinars "
+        "**courants**, pour l'ensemble des régimes de la caisse ; la participation "
+        "française au titre de la convention tuniso-française, qui n'est pas une "
+        "cotisation, n'y figure pas. Deux branches apparaissent : les accidents du travail "
+        "et les maladies professionnelles en 1995, dont la cotisation, fixée par le décret "
+        "n° 95-538 à compter du 1er janvier 1995, s'ajoute au point transféré du taux "
+        "global (@sec-cot-at-94-28), et la protection sociale des travailleurs en 1997, "
+        "dont la cotisation est instituée par la loi n° 96-101 du 18 novembre 1996 "
+        "[@loi96-101, art. 5]. Les cotisations des prestations familiales baissent à "
+        "chaque réaffectation du taux global, que les notes du document imputent à cette "
+        "branche [@cnss-retrospective-1990-2004] : en 1994, l'année où la quote-part "
+        "affectée au régime de pensions est relevée [@decret94-1429, art. 1-2], elles "
+        "passent de 177,1 à 156,7 millions de dinars, quand celles des pensions passent "
+        "de 158,3 à 226,3 ; en 1997, l'année de la loi n° 97-4, qui ramène le taux global "
+        "de 20 % à 18 % [@loi97-4], de 152,3 à 116,5 millions ; en 2003, l'année où le décret "
+        "n° 2003-1212 relève de nouveau la quote-part des pensions [@decret2003-1212, "
+        "art. 1-2], de 167,6 à 136,3 millions. Les losanges "
+        "reportent, de 2000 à 2004, les cotisations encaissées de la figure précédente : "
+        "l'écart va de −1,13 % en 2000 à −0,81 % en 2004. La colonne 1999 est en partie "
+        "masquée par la reliure de l'exemplaire consulté : la barre hachurée de cette année "
+        "comprend des estimations, dont l'onglet Données donne le détail. "
+        "Trois vues se partagent le graphique : en millions de dinars courants ; en "
+        "pourcentage du PIB que retient le ministère des Finances "
+        "[@minfin-indicateurs-fp] ; en pourcentage du total des ressources de la CNSS, "
+        "toutes branches et tous régimes, tel que le donnent ses comptes de bilan. Sur la "
+        "vue au PIB, la ligne pointillée marque le passage, en 1997, de la base 1983 à la "
+        "base 1997 des comptes nationaux, dont les niveaux sont d'environ 10 % plus "
+        "élevés [@ins-cnat-2015] : à montant égal, les ratios en sont abaissés d'environ un "
+        "dixième à partir de 1997, et la rupture n'est pas corrigée. Le total des ressources de la caisse comprend "
+        "les accidents du travail et les maladies professionnelles à partir de 1995, la "
+        "protection sociale des travailleurs à partir de 1997 : le dénominateur s'élargit "
+        "d'autant à ces dates. Les cotisations de chaque branche s'ajoutent au "
+        "dénominateur en même temps qu'au numérateur. Les losanges des cotisations "
+        "encaissées ne figurent que sur la vue en dinars : rapportés aux ressources des "
+        "comptes de bilan, ils mêleraient deux comptabilités. Les barres de 1999 sont "
+        "hachurées dans les trois vues."),
+)
+```
+
+Les taux décrits plus haut ne pèsent pas d'un poids comparable, et le partage entre régimes s'est déformé en vingt ans.
+
+```{python}
+#| label: fig-effectifs-par-regime
+#| fig-cap: "CNSS : part de chaque régime dans les assurés sociaux actifs, 2000 et 2020 (source CNSS)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import effectifs_par_regime as epr
+import figtools
+figtools.figure_tabs(
+    epr.fig_parts(), epr.table(), "cnss-effectifs-par-regime",
+    slug="fig_effectifs_par_regime",
+    caption="CNSS : part de chaque régime dans les assurés sociaux actifs, 2000 et 2020",
+    note_lecture=(
+        "Le régime des salariés non agricoles passe de **76,3 % à 53,8 %** des assurés "
+        "actifs sans avoir reculé : ses effectifs sont multipliés par 1,6 sur la période. "
+        "Ce sont les autres régimes qui croissent plus vite. Le régime des travailleurs à "
+        "faible revenu, **inexistant en 2000**, rassemble 313 152 actifs en 2020, soit "
+        "davantage que les deux régimes agricoles réunis ; les travailleurs non salariés "
+        "du secteur non agricole passent de 117 270 à 431 316. Les barèmes de cotisation "
+        "s'appliquent donc à une population dont la composition a changé de nature. Les "
+        "parts de 2000 sont rapportées à la somme des régimes (1 012 220) : l'écart de "
+        "1 263 avec le total publié par la caisse est exactement le nombre de non-assujettis "
+        "de 2000, que la planche de cette année ne ventile pas. Celles de 2020 bouclent "
+        "exactement sur les 2 353 743 assurés actifs publiés, les 845 non-assujettis "
+        "compris."),
+)
+```
+
+Reste à rapprocher ce que les cotisations rapportent de ce que la caisse verse au titre des seules pensions.
+
+```{python}
+#| label: fig-pensions-vs-cotisations
+#| fig-cap: "CNSS : pensions versées et cotisations encaissées, 2000-2020 (source CNSS)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import pensions_vs_cotisations as pvc
+import figtools
+figtools.figure_tabs(
+    pvc.fig_couverture(), pvc.table(), "cnss-cotisations", "cnss-pensions-versees",
+    slug="fig_pensions_vs_cotisations",
+    caption="CNSS : pensions versées et cotisations encaissées, 2000-2020",
+    note_lecture=(
+        "**À partir de 2015, et sans interruption, les pensions versées dépassent "
+        "l'ensemble des cotisations encaissées** : 2 346,8 contre 2 308 millions de "
+        "dinars cette année-là, puis 4 013,6 contre 3 430 en 2020. En 2014 encore les "
+        "cotisations menaient. Deux précautions de lecture s'imposent. D'abord, **ceci "
+        "n'est pas un solde** : les pensions sont une branche de dépenses parmi six, "
+        "les cotisations sont l'ensemble des recettes de cotisation ; le rapport des "
+        "deux est un taux de couverture, donné dans l'onglet Données, non une balance "
+        "de la caisse. Ensuite, la rupture de 2006 n'affecte qu'une des deux courbes — "
+        "celle des cotisations, amputée cette année-là des recettes maladie et "
+        "accidents du travail — de sorte que l'écart antérieur tient pour partie à une "
+        "différence de champ. Les deux séries sont en dinars courants."),
+)
+```
+
+## Vue d'ensemble {#sec-cot-vue-ensemble}
+
+Le système tunisien de cotisations présente quatre traits que ce livre a établis sur les textes.
+
+**Il est proportionnel et sans plafond, mais sur deux assiettes différentes.** Le régime général cotise sur le salaire réellement perçu, sans butoir ; les autres régimes du secteur privé cotisent sur une assiette forfaitaire, exprimée en multiples du SMIG ou du SMAG. Le régime général ne comporte aucun plafond de cotisation ; dans les régimes à assiette forfaitaire, la question ne se pose pas dans les mêmes termes, l'assiette y étant bornée par la classe la plus élevée — coefficient 18 pour les travailleurs non salariés et les artistes, coefficient 9 pour les Tunisiens à l'étranger. Le seul plafond que pose un texte est celui que le régime légal de pensions retient pour le **calcul des prestations**, au-delà duquel le régime complémentaire prend le relais.
+
+**Il est très inégal d'un régime à l'autre** : de 7,5 % à 26,75 %, sans que la contrepartie en prestations varie dans les mêmes proportions — la matrice du livre « Prestations sociales » montre que les régimes les moins taxés sont aussi ceux qui ouvrent le moins de branches, mais l'écart n'est pas proportionnel.
+
+**Il s'est unifié par la maladie, non par le taux.** Le décret n° 2007-1406 a porté la cotisation maladie de six régimes au même niveau de 6,75 %, par des calendriers différents étalés de 2007 à 2011 ; c'est ce mouvement, et non une réforme des taux globaux, qui explique la quasi-totalité de l'écart entre les taux d'origine des régimes et ceux en vigueur aujourd'hui.
+
+**Son histoire est mieux connue qu'il n'y paraissait, mais elle reste incomplète.** Les taux globaux des sept régimes privés sont désormais rattachés à leur texte, et le taux du régime général se lit comme la somme exacte de trois d'entre eux. Ce qui manque tient en trois points : la ventilation interne des taux globaux, qui n'est attestée que pour la part maladie dans presque tous les régimes ; douze dates d'effet qu'aucun article n'énonce ; et le taux de la retraite complémentaire, qui relève de décisions non publiées au *Journal officiel*.
+
+La matrice suivante résume, pour les régimes du secteur privé, les branches que finance le prélèvement.
+
+| Régime | Pensions | Assurances sociales et maladie | Prestations familiales | Protection sociale des travailleurs et perte d'emploi |
+|---|---|---|---|---|
+| Salariés non agricoles | oui | oui | oui | oui |
+| Salariés agricoles | oui | oui | non | non |
+| Salariés agricoles, régime amélioré | oui | oui | oui | non |
+| Travailleurs non salariés | oui | oui | non | non |
+| Artistes, créateurs et intellectuels | oui | oui | non | non |
+| Travailleurs à faibles revenus | oui | soins seulement | non | non |
+| Tunisiens à l'étranger | oui | oui | non | non |
+| Travailleuses agricoles | oui | maladie | non | non |
+| Étudiants | non établi | non établi | non établi | non établi |
+
+: Branches financées par le prélèvement de chaque régime du secteur privé {#tbl-matrice-branches}
+
+Chaque case se lit dans la fiche du régime (@sec-cot-prive) : elle reprend la décomposition de son taux global et, pour la perte d'emploi, le tableau des deux étages (@tbl-architecture). La cotisation d'accidents du travail n'y figure pas : due au titre de la loi n° 94-28, elle ne suit pas le découpage des régimes (@sec-cot-at).
