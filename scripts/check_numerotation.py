@@ -30,8 +30,6 @@ import re
 import sys
 from pathlib import Path
 
-import yaml
-
 RACINE = Path(__file__).resolve().parent.parent
 RE_TITRE = re.compile(r"^(#{1,6}) +(.*)$")
 RE_INCLUDE = re.compile(r"^\{\{<\s*include\s+(\S+)\s*>\}\}\s*$")
@@ -98,6 +96,8 @@ def _profondeur(config: dict) -> int:
 
 
 def ecarts_du_livre(livre: Path) -> list[str]:
+    import yaml  # import tardif, comme build_glossary.load_entries() : la CI lance unittest sans PyYAML
+
     config = yaml.safe_load((livre / "_quarto.yml").read_text(encoding="utf-8"))
     book = config.get("book", {})
     ecarts: list[str] = []
