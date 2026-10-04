@@ -679,16 +679,15 @@ Cf. Q12 et Q6 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
 ## Les prélèvements adossés : la contribution sociale de solidarité
 
-La [contribution sociale de solidarité](#g-css) est un prélèvement distinct de l'IRPP mais assis sur la même assiette et liquidé avec lui : instituée par l'article 53 de la loi de finances pour 2018, elle est calculée comme la différence entre l'impôt résultant du barème majoré d'un point sur chaque taux de tranche et l'impôt résultant du barème non majoré.
+La [contribution sociale de solidarité](#g-css) est un prélèvement distinct de l'IRPP mais assis sur la même assiette et liquidé avec lui : instituée par l'article 53 de la loi de finances pour 2018, elle est calculée comme la différence entre l'impôt résultant du barème majoré d'un point sur chaque taux de tranche et l'impôt résultant du barème non majoré [@lf-2018, art. 53]. La loi de finances pour 2023 ramène la majoration à un demi-point pour les revenus dont la déclaration échoit en 2023, 2024 et 2025, et en dispense les personnes qui ne perçoivent que des traitements, salaires, pensions et rentes viagères et dont le revenu annuel net, après les déductions pour situation et charges de famille, n'excède pas 5 000 dinars [@lf-2023, art. 22]. Son affectation aux caisses de sécurité sociale est exposée dans le livre [« Les caisses de sécurité sociale »](../caisses/index.html#sec-caisses-financeur).
 
-<!-- TODO : section à compléter. La clé « lf-2018 » (loi n° 2017-66 du 18 décembre 2017) est
-désormais disponible dans precis/fr/fiscalite/references.json, avec URL JORT pist.tn et page
-vérifiée (article 53 en page 4289 de l'édition française) : l'article 53 peut être cité. Reste à
-documenter en série datée : le passage du taux à 0,5 point par
-l'article 22 du décret-loi n° 2022-79 (LF 2023), à titre temporaire pour 2023-2025 ; le maintien
-opéré par la LF 2025 ; et l'état du droit pour 2026, le régime temporaire arrivant à échéance. Les
-références d'openfisca-tunisia pointent vers un dépôt privé et sont à remplacer par des URL
-pist.tn. Cf. Q10 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
+<!-- TODO (documentaliste) : l'article 53 de la loi de finances pour 2018 et l'article 22,
+§ 2, de la loi de finances pour 2023 (demi-point pour les revenus déclarés en 2023-2025, lu dans
+l'édition arabe, JORT n° 141/2022, pp. 4061-4062) sont cités. Reste à documenter le maintien
+opéré par la LF 2025 et l'état du droit pour les revenus déclarés à partir de 2026 ; l'histoire du
+taux est tenue dans le livre « Les caisses de sécurité sociale » (_etat_caisses.qmd), à compléter
+là. Les références d'openfisca-tunisia pointent vers un dépôt privé et sont à remplacer par des
+URL pist.tn. Cf. Q10 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
 ## Les réformes de l'IRPP, texte par texte {#sec-irpp-reformes}
 

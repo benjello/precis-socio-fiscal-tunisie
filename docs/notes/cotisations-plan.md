@@ -20,11 +20,20 @@ public, dans des fiches courtes qui ne gardent que leurs singularités.
 
 | Livre | Ce qu'il porte |
 |---|---|
-| Cotisations sociales | ce qui est **prélevé** : taux et assiette de chaque branche, leur histoire |
-| Retraites, Prestations sociales | ce qui est **servi** (formule, conditions) et l'équilibre (τ*) |
+| Cotisations sociales | ce qui est **prélevé** : taux et assiette de chaque branche, leur histoire, recouvrement et rendement |
+| Les caisses de sécurité sociale | les **organismes** : lignée, statut, tutelle, budget, comptes par régime, ventilation du taux global, relations avec l'État (CSS, compte de diversification), comptes dans la durée |
+| Retraites, Prestations sociales | ce qui est **servi** (formule, conditions) et l'équilibre propre à chaque régime (τ*) |
 
 Les Retraites ne gardent que le symbole κ (taux légal) et renvoient aux tableaux des
 Cotisations, sans raconter l'histoire des taux. Les renvois entre livres sont vérifiés un à un.
+
+Frontière redessinée le 4 octobre 2026 (plan « architecture A ») : le cadre comptable et
+budgétaire des caisses (d'abord `_cadre_caisses.qmd`, inclus avant `#sec-cot-bilan`) et les
+figures `fig-cnss-regimes`, `fig-cnss-assurances-sociales`, `fig-cnss-atmp-pst` sont passés dans
+le livre « Les caisses de sécurité sociale » ; ce livre-ci y renvoie d'une phrase et garde
+`fig-cotisations-branches-1990-2004` et `fig-cotisations-cnss`, qui sont des cotisations. Chaque
+livre « dispositif » présente les caisses par l'encadré commun `_encadre_caisses.qmd`, engendré
+par `scripts/generate_encadre_caisses.py`.
 
 ## Sommaire
 
