@@ -577,7 +577,7 @@
 
 - id: r-majoration-creche-revalorisation
   objet: texte revalorisant les montants de la majoration pour salaire unique (loi n° 80-36, art. 65 bis — 9,375, 18,750 et 23,475 dinars) ou de la contribution aux frais de crèche (décret n° 95-114 — 15 dinars)
-  ou: [precis/fr/prestations_sociales/index.qmd]
+  ou: [precis/fr/prestations_sociales/_prestations_familiales.qmd]
   requetes:
     titres_fts: ['"80-36"', '"94-88" OR "95-114"']
     depuis: 1980-05-27
@@ -595,7 +595,7 @@
 
 - id: r-lf2025-art17-decret
   objet: décret fixant les conditions et procédures de gestion du fonds d'assurance contre la perte de postes de travail pour raisons économiques (loi n° 2024-48, loi de finances pour 2025, art. 17)
-  ou: [precis/fr/prestations_sociales/index.qmd]
+  ou: [precis/fr/prestations_sociales/_autres_risques.qmd]
   requetes:
     titres_like: ['%perte%', '%licenci%', '%perte d%emploi%']
     iort_ar: [فقدان]
@@ -617,7 +617,7 @@
 
 - id: r-amg-cartes-quotas
   objet: arrêtés conjoints des ministres des affaires sociales et de la santé publique fixant le nombre global des cartes de soins gratuits (décret n° 98-1812, art. 2) et à tarifs réduits, et les quotas régionaux
-  ou: [precis/fr/prestations_sociales/index.qmd]
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd]
   requetes:
     titres_like: ['%carte%soins gratuits%', '%quota%']
     depuis: 1998-09-29

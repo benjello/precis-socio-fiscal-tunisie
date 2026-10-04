@@ -14,8 +14,15 @@ book:
   downloads: [pdf]
   chapters:
     - index.qmd
+    - part: _contributives.qmd
+      chapters:
+        - _prestations_familiales.qmd
+        - _autres_risques.qmd
+    - _non_contributives.qmd
+    - _matrice.qmd
 
   appendices:
+    - _notations.qmd
     - _glossaire.qmd
 
 bibliography:
