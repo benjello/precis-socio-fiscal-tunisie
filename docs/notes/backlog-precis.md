@@ -396,9 +396,8 @@ l'État ; les livres « dispositifs » gardent les règles et renvoient ici par 
     arabe en place les cite encore : `loi59-45` (cotisations), `loi86-86` (prestations),
     `loi2017-66-lf2018` (rémunérations publiques, doublon de `lf-2018`). À retirer après la
     retraduction de ces chapitres.
-  - la traduction arabe de `_cadre_caisses.qmd` (PR #348), si elle arrive dans
-    `precis/ar/cotisations_sociales/`, y devient orpheline : à supprimer, la traduction du livre
-    des caisses la remplaçant.
+  - la traduction arabe orpheline de `_cadre_caisses.qmd` (PR #348) a été supprimée le 4 octobre 2026
+    (la traduction du livre des caisses la remplace).
 - **Bibliographie** : clés du livre rangées le 4 octobre 2026 — propres au livre dans
   `caisses/references.json`, partagées avec un autre livre dans le fonds commun. Doublons fusionnés
   dans le fonds commun : `loi86-83-lfr1986` → `loi-86-83-lfr-1986`, `loi87-83-lf1988` →
