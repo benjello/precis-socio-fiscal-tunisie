@@ -28,7 +28,7 @@ name: Rendu des livres
 # livre se construit. Le script sort en 1 dès qu'un livre échoue (`FAILED_BOOKS`),
 # ce job hérite donc de son code de retour sans avoir à l'interpréter.
 #
-# PORTÉE : les deux langues et les cinq livres, comme le déploiement. L'arabe est
+# PORTÉE : les deux langues et tous les livres de BOOKS (build.sh), comme le déploiement. L'arabe est
 # inclus délibérément — la dérive des chapitres de `_quarto.yml` est un mode de
 # défaillance propre à l'arabe, que le français ne peut pas révéler.
 
@@ -73,7 +73,7 @@ jobs:
       # séries statistiques sont des snapshots versionnés, relus par le build. Si ce
       # job échoue faute d'un de ces paquets, c'est qu'un module a recommencé à lire
       # une source vive — ce que ce contrôle est précisément là pour interdire.
-      - name: Rendre les cinq livres, dans les deux langues
+      - name: Rendre tous les livres, dans les deux langues
         run: ./build.sh --no-pdf
 
       - name: Ce qui a été produit

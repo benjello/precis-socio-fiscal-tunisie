@@ -18,7 +18,7 @@ PRECIS_DIR="$ROOT_DIR/precis"
 LOCAL_SITE="$ROOT_DIR/local_site"
 
 LANGUAGES=(fr ar)
-BOOKS=(prestations_sociales retraites fiscalite remunerations_publiques cotisations_sociales)
+BOOKS=(prestations_sociales retraites fiscalite remunerations_publiques cotisations_sociales caisses)
 
 DO_PDF=true
 
@@ -112,6 +112,16 @@ for lang in "${LANGUAGES[@]}"; do
 
     if [[ ! -d "$BOOK_DIR" ]]; then
       echo "[build] Skipping $book ($lang): directory not found."
+      continue
+    fi
+
+    # Un livre NEUF n'a pas encore d'arabe : son `index.qmd` arabe n'est produit que par
+    # la traduction automatique, qui ne part qu'après la fusion sur master, et aucun
+    # agent n'écrit de `.qmd` sous `precis/ar/`. Le `_quarto.yml` arabe, tenu à la main,
+    # existe déjà. On saute donc le livre arabe dont `index.qmd` manque, en le disant :
+    # ce cas, et lui seul — un CHAPITRE déclaré mais absent reste une erreur de rendu.
+    if [[ "$lang" == "ar" && ! -f "$BOOK_DIR/index.qmd" ]]; then
+      echo "[build] ⚠ $book ($lang) : traduction pas encore livrée (index.qmd absent) — livre sauté."
       continue
     fi
 

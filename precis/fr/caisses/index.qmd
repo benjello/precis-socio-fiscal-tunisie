@@ -1,0 +1,63 @@
+# Les caisses de sécurité sociale en Tunisie
+
+Ce livre traite des **organismes** qui gèrent la sécurité sociale : les caisses qui recouvrent les cotisations, servent les prestations et tiennent les comptes des régimes. Les autres livres du précis prennent les régimes par dispositif — le prélèvement, la pension, les autres prestations ; celui-ci les prend par l'institution qui les gère. Il présente d'abord les caisses et leur lignée (@sec-caisses-panorama), puis le statut commun qui les régit et leur contrôle (@sec-caisses-statut), la séparation de leurs comptes par régime (@sec-caisses-regimes) et l'équilibrage par la ventilation du taux global (@sec-caisses-ventilation), la place de l'État (@sec-caisses-etat), et enfin les comptes qui permettent de les suivre dans la durée (@sec-caisses-longue-periode) et ce que les textes laissent sans réponse (@sec-caisses-silences). La chronologie des textes figure en annexe (@sec-caisses-chronologie).
+
+## Les caisses et leur lignée {#sec-caisses-panorama}
+
+### Ce que ce livre traite et ne traite pas {#sec-caisses-perimetre}
+
+Le partage entre les livres suit une règle simple. Le livre [« Cotisations sociales »](../cotisations_sociales/index.html#sec-cot-perimetre) porte ce qui est **prélevé** : le taux et l'assiette de chaque branche, et leur histoire. Les livres [« Retraites »](../retraites/index.html) et [« Prestations sociales »](../prestations_sociales/index.html) portent ce qui est **servi**, et, pour les pensions, l'équilibre propre à chaque régime. Ce livre-ci porte les **caisses** : leur statut, leur tutelle, leur budget, la tenue de leurs comptes, la façon dont les textes rétablissent l'équilibre d'un régime, et ce que l'État attend d'elles ou leur apporte.
+
+### La Caisse nationale de sécurité sociale (1960) {#sec-caisses-cnss}
+
+La [Caisse nationale de sécurité sociale](#g-cnss) (CNSS) est instituée par la loi n° 60-30 du 14 décembre 1960, relative à l'organisation des régimes de sécurité sociale, comme « un établissement public, doté de la personnalité civile et de l'autonomie financière » [@loi60-30, art. 4]. Elle gère d'abord les assurances sociales et les prestations familiales des salariés du secteur non agricole ; la loi n° 60-33 du même jour y ajoute un régime de pensions d'invalidité, de vieillesse et de survie [@loi60-33, art. 1].
+
+Les régimes créés ensuite pour le secteur privé lui sont confiés à mesure : les salariés agricoles en 1981 [@loi81-6], les non-salariés en 1982, unifiés en 1995 [@decret82-1359 ; @decret82-1360 ; @decret95-1166], les Tunisiens à l'étranger en 1989 [@decret89-107], les travailleurs à faibles revenus et les artistes, créateurs et intellectuels en 2002 [@loi2002-32 ; @loi2002-104], les travailleuses agricoles en 2024 [@decret-loi2024-4, art. 18]. De 1976 à 1994, ses régimes de pensions sont gérés dans son cadre par une caisse autonome, la CAVIS (@sec-caisses-cavis).
+
+### De la Caisse nationale de retraites à la CNRPS (1959-1976) {#sec-caisses-cnrps}
+
+Le secteur public a eu ses caisses avant le secteur privé. La loi n° 59-18 du 5 février 1959, qui fixe le régime des pensions civiles et militaires, dispose que « la Société de Prévoyance des Fonctionnaires et Employés Tunisiens prend l'appellation de Caisse Nationale de Retraites » [@loi59-18, art. 1] ; la loi n° 59-19 du même jour en fait un établissement public doté de la personnalité civile et de l'autonomie financière, rattaché au secrétariat d'État aux finances et au commerce [@loi59-19, art. 1]. La loi n° 59-45 du 15 avril 1959 est relative à une seconde caisse, la Caisse de prévoyance sociale ; seul l'intitulé de ce texte est connu ici [@loi59-45].
+
+<!-- TODO (documentaliste) : lire la loi n° 59-45 (JORT n° 22 du 17 avril 1959, p. 368) pour
+dire ce qu'elle institue et ce que gérait la Caisse de prévoyance sociale avant 1976. -->
+
+La loi de finances pour 1976 réunit les deux : la Caisse nationale de retraite et la Caisse de prévoyance sociale « sont transformées en un établissement public à caractère financier », la [Caisse nationale de retraite et de prévoyance sociale](#g-cnrps) (CNRPS), rattachée au ministère des Finances [@loi75-83, art. 28]. La CNRPS procède donc d'une fusion, non d'une création, et d'une loi de finances. La loi n° 85-12, qui refond le régime des pensions civiles et militaires, lui en confie la gestion [@loi85-12, art. 4].
+
+### La Caisse d'assurance vieillesse, invalidité et survivants (1976-1994) {#sec-caisses-cavis}
+
+Le décret n° 76-981 du 19 novembre 1976 confie le régime légal de pensions du secteur non agricole, fusionné avec les régimes conventionnels du même ordre, à une caisse autonome « créée dans le cadre » de la CNSS, la [Caisse d'assurance vieillesse, invalidité et survivants](#g-cavis) (CAVIS) ; la CNSS recouvre pour son compte les cotisations et sert les prestations [@decret76-981, art. 1, 2 et 24]. La loi n° 81-6 lui confie aussi l'administration des pensions agricoles [@loi81-6, art. 3], le décret n° 89-107 le régime de pensions des Tunisiens à l'étranger [@decret89-107, art. 2], et les employeurs adhèrent auprès d'elle au régime complémentaire [@arrete-1978-11-18-retraite-complementaire, règlement, art. 3-4]. Le décret n° 94-1477 du 4 juillet 1994 la supprime et transfère ses régimes à la CNSS, passif, actif et réserves compris [@decret94-1477, art. 1 et 2].
+
+### La Caisse nationale d'assurance maladie (2004) {#sec-caisses-cnam}
+
+La loi n° 2004-71 du 2 août 2004 institue un régime d'assurance maladie commun aux affiliés des deux caisses et en confie la gestion à la [Caisse nationale d'assurance maladie](#g-cnam) (CNAM), [établissement public à caractère non administratif](#g-epna) placé sous la tutelle du ministre chargé de la sécurité sociale [@loi2004-71, art. 7]. La caisse reçoit aussi la gestion des régimes de réparation des accidents du travail des secteurs public et privé et le service des indemnités de maladie et de couches des régimes antérieurs [@loi2004-71, art. 8]. Dans la rédaction de 2004, elle ne recouvre pas elle-même les cotisations : la CNRPS et la CNSS les perçoivent et les lui reversent [@loi2004-71, art. 16] ; la loi n° 2017-47 récrit cet article [@loi2017-47, art. 1]. Le transfert à la CNAM des biens et des réserves des régimes qu'elle gère est exposé avec les autres réorganisations (@sec-caisses-reorganisations).
+
+Un projet antérieur, celui de la loi n° 86-86 du 1^er^ septembre 1986, prévoyait déjà une caisse nationale d'assurance maladie, dans une architecture par branche qui n'a jamais été mise en place (@sec-caisses-reorganisations).
+
+### Qui recouvre, qui sert {#sec-caisses-carte}
+
+| Caisse | Régimes | Ce qu'elle recouvre | Ce qu'elle sert | Textes |
+|---|---|---|---|---|
+| CNSS (depuis 1960) | régimes du secteur privé : salariés non agricoles et agricoles, non-salariés, Tunisiens à l'étranger, travailleurs à faibles revenus, artistes, travailleuses agricoles | les cotisations de ces régimes, y compris, dans la rédaction de 2004, la cotisation d'assurance maladie reversée à la CNAM | les pensions de vieillesse, d'invalidité et de survivants, les prestations familiales, et, jusqu'à la mise en place de la CNAM, les prestations des assurances sociales | [@loi60-30 ; @loi60-33 ; @decret94-1477, art. 3 ; @loi2004-71, art. 16] |
+| CAVIS (1976-1994) | pensions du secteur privé, régime complémentaire, Tunisiens à l'étranger | — : la CNSS recouvre pour son compte | — : la CNSS sert pour son compte | [@decret76-981, art. 1, 2 et 24 ; @decret94-1477, art. 1 et 2] |
+| CNRPS (depuis 1976 ; Caisse nationale de retraites et Caisse de prévoyance sociale de 1959 à 1975) | agents de l'État, des collectivités publiques locales et des établissements publics à caractère administratif ; agents des établissements publics à caractère industriel et commercial et des sociétés nationales qui lui sont affiliés ; membres du gouvernement, députés et gouverneurs | la contribution de l'agent et celle de l'employeur public, et, dans la rédaction de 2004, la cotisation d'assurance maladie reversée à la CNAM | les pensions civiles et militaires et celles des régimes spéciaux | [@loi59-18, art. 1 ; @loi75-83, art. 28 ; @loi85-12, art. 4 ; @decret85-980 ; @decret85-1176 ; @loi83-31 ; @loi85-16 ; @loi88-16 ; @loi2004-71, art. 16] |
+| CNAM (depuis 2004) | affiliés des deux autres caisses | — dans la rédaction de 2004 | l'assurance maladie, les indemnités de maladie et de couches, la réparation des accidents du travail des deux secteurs | [@loi2004-71, art. 7, 8 et 16] |
+
+: Les caisses de sécurité sociale, les régimes qu'elles gèrent, ce qu'elles recouvrent et ce qu'elles servent {#tbl-caisses-carte}
+
+L'assistance non contributive — programme d'aide aux familles nécessiteuses, AMEN social — ne relève d'aucune caisse : elle est servie par le ministère des affaires sociales sur le budget de l'État, et le livre « Prestations sociales » l'expose. Les caisses y ont contribué : leur participation au financement du programme est exposée avec les concours qu'elles apportent au budget de l'État (@sec-caisses-concours).
+
+<!-- TODO (rédacteur) : le partage du recouvrement de la cotisation d'assurance maladie après la
+loi n° 2017-47 (art. 16 nouveau et 16 bis de la loi n° 2004-71) est exposé dans le livre
+« Prestations sociales » ; le reporter dans ce tableau une fois la rédaction de 2017 lue ici. -->
+
+{{< include _statut_cadre.qmd >}}
+
+{{< include _comptes_regimes.qmd >}}
+
+{{< include _etat_caisses.qmd >}}
+
+{{< include _comptes_longue_periode.qmd >}}
+
+## Annexes {#sec-caisses-annexes}
+
+{{< include _chronologie.qmd >}}
