@@ -3079,6 +3079,13 @@ relancés, conformément à la consigne de reprise.
 - [ ] Rapatriement Zotero **après fusion**, sur feu vert humain : `permissions` → `verifier` →
       `dry-run` → `pousser-un` → `comparer` → `pousser-tout` → `ranger` (collection `fiscalite`,
       sauf si le contrôle dit autrement).
+- [ ] `lf-2000` : entrée unique depuis la fusion de `master` du 05/10/2026 — elle était versée
+      séparément pour l'art. 19 (TVA, p. 2741) et pour l'art. 54 (régime forfaitaire, p. 2748).
+      Le champ `page` porte les deux pages (« 2741, 2748 ») et la note réunit les deux relevés :
+      trancher entre pages des articles cités et étendue de la loi (début p. 2739).
+- [ ] Entrées AR `lf-2000`, `lf-2001`, `decret-2002-3356-tva-telecom`, `lfc-2016` : l'URL est
+      celle du fascicule arabe, mais `page` et `volume` sont ceux de l'édition française (pages
+      arabes non mesurées, note documentaire § 8.7). Même défaut que `loi81-70`.
 - [ ] `lfc-2016` : trancher l'écart de tome (160 lu sur pièce vs 161 en base) avant de pousser, ou
       pousser avec la note qui l'explique.
 

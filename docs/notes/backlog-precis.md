@@ -67,8 +67,8 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 Les réformes de 1988 à 2026 sont rédigées d'après `docs/notes/fiscalite-tva-reformes.md` ;
 son § 8 énumère ce qui reste non établi, et qui n'est donc pas écrit au chapitre : date
 d'effet des lois de finances pour 1989 à 1993 (lues à l'image, muettes sur une date
-spéciale), tableaux annexés « L », « M », « M bis », « P » et annexe 5 de la LF 2016 (au
-corpus, non lus), articles 23 à 26 de la LF 1989 (OCR en colonnes entrelacées, à relire à
+spéciale), tableaux annexés « L », « M », « M bis », « P » et annexe 5 de la LF 2016 (non lus ;
+leur présence et leur lisibilité au corpus restent à vérifier fascicule par fascicule), articles 23 à 26 de la LF 1989 (OCR en colonnes entrelacées, à relire à
 l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_cache`), et les
 144 décrets de l'article 8 signés de 1988 à 1997, connus par leur seul intitulé. La fiche
 `r-tva-mise-en-application-post-1989` reste ouverte.
