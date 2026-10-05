@@ -184,3 +184,90 @@ Aucune fiche à ce stade : aucune recherche n'a encore été conclue sans résul
 ## 8. Journal des vérifications
 
 - v1 (5 octobre 2026) : notices `jort_cache.db` ; lecture des CSV traités ; inventaire 2013-2014.
+
+## 9. Vérifications sur pièce (ajout du 5 octobre 2026, deuxième passe)
+
+À fondre dans les § 1 à 3 à la passe suivante ; consigné ici d'abord pour ne rien perdre.
+
+### 9.1 Banque mondiale 2014 — pages 15 à 17 lues à l'image
+
+- p. 16, graphique « Coût fiscal net, en millions de dinars », source « Impôts, Douanes, CNSS,
+  API, APIA » : les quinze valeurs du tableau du § 2.2 sont **confirmées** (839/948/907 ;
+  405/504/394 ; −22/−23/−23 ; −107/−125/−120 ; 1 115/1 304/1 158).
+- p. 17 : « 90 % sur environ 2.500 entreprises, sur un total d'environ 24.000 recevant des
+  incitations fiscales » ; « Le coût des incitations fiscales et financières est estimé à
+  1,2 milliard de dinars en 2009, soit 2,2 % du PIB » ; « 6.362 dinars annuels par emploi » ;
+  « environ 30.000 dinars annuels par emploi » additionnel. **Confirmé.**
+- **Écart de périmètre à ne pas gommer** : la p. 16 chiffre un coût *fiscal* net (impôts et
+  douanes) de 1 115 MD en 2009 ; la p. 17 donne 1,2 milliard pour les incitations fiscales
+  *et financières*. Le « ≈ 2 % du PIB » du ticket est donc, dans le document, **2,2 % du PIB
+  pour la seule année 2009** et pour le périmètre fiscal et financier ; le document ne donne
+  aucun ratio pour 2010 ni 2011.
+- **CORRECTION de l'inventaire** (`reforme-fiscale-2013-2014-inventaire.md`, l. 1164) : p. 15,
+  le grand graphique (ensemble des entreprises) porte **Oui 61,2 % / Non 38,8 %** ; le
+  graphique « Off-Shore », **Oui 56,5 % / Non 43,5 %** ; « On-Shore », **Oui 65,7 % /
+  Non 34,3 %**. L'inventaire avait interverti l'ensemble et l'offshore. Lecture économique :
+  les entreprises exportatrices sont celles qui déclarent le plus souvent (43,5 %) qu'elles
+  n'auraient pas investi sans incitation.
+
+### 9.2 Code d'incitations aux investissements, 1993 — image lue
+
+JORT n° 99 du 28 décembre 1993, édition française, p. 2175-2178 (scan, lu à l'image ; loi de
+promulgation p. 2174).
+
+| Article | Avantage | Valeur, durée |
+|---|---|---|
+| 7 § 1 (p. 2175) | dégrèvement des revenus ou bénéfices réinvestis dans la souscription au capital | dans la limite de 35 % des revenus ou bénéfices nets soumis à l'impôt |
+| 9 (p. 2175) | équipements : droits de douane | réduits à 10 % ; suspension de la TVA et du droit de consommation |
+| 12 § 6 et 7 (p. 2176) | entreprises **totalement exportatrices** : revenus et bénéfices de l'exportation | déduction **totale pendant les dix premières années** à partir de la première opération d'exportation, puis déduction de **50 %** sans limite de durée |
+| 16 (p. 2176) | ventes sur le marché local des entreprises totalement exportatrices | plafond de 20 % du chiffre d'affaires |
+| 22 § 2 et 3 (p. 2177) | entreprises **partiellement exportatrices** | même schéma : 100 % dix ans, puis 50 % |
+| 23 § 2 (p. 2177) | **développement régional** | déduction totale pendant dix ans à partir de l'entrée en production, puis 50 % pendant les dix années suivantes |
+| 25 (p. 2177) | développement régional : contribution patronale de sécurité sociale | prise en charge par l'État pendant cinq ans |
+| 30 § 3 (p. 2178) | **développement agricole** | déduction totale pendant les dix premières années |
+
+Entrée en vigueur : la loi de promulgation vise le 1^er^ janvier 1994 pour les entreprises
+existantes (lecture d'OCR, p. 2174 ; à relire à l'image avant citation).
+
+### 9.3 La fin par étapes du régime de l'exportation — textes lus
+
+| Texte | Article, page (éd. française) | Changement |
+|---|---|---|
+| Loi n° 2006-80 du 18 décembre 2006 (JORT n° 101) | art. 5 et 6 | bénéfices de l'exportation : déduction → **impôt sur les sociétés à 10 %** ; revenus : déduction des **deux tiers** ; pour les bénéfices et revenus réalisés à partir du **1^er^ janvier 2008** |
+| LF 2008, loi n° 2007-70 du 27 décembre 2007 (JORT n° 104) | art. 12, p. 4358 | « 1^er^ janvier 2008 » → « 1^er^ janvier 2011 » |
+| LF 2011, loi n° 2010-58 du 17 décembre 2010 (JORT n° 102) | art. 24 (p. 3465-3466 selon la notice) | « 1^er^ janvier 2011 » → « 1^er^ janvier 2012 » |
+| LFC 2011, décret-loi n° 2011-56 du 25 juin 2011 (JORT n° 47 du 28 juin 2011) | art. 11, p. 1014 | « 1^er^ janvier 2012 » → « 1^er^ janvier 2013 » |
+| LF 2013, loi n° 2012-27 du 29 décembre 2012 (JORT n° 1 du 1^er^ janvier 2013) | art. 20, p. 6 | « 1^er^ janvier 2013 » → « 1^er^ janvier 2014 » (« prorogation d'une année supplémentaire ») |
+| Loi n° 2017-8 du 14 février 2017 (JORT n° 15) | art. 1^er^ : art. 67 nouveau du code de l'IRPP et de l'IS, p. 772 | l'exportation entre dans le code : deux tiers des revenus déductibles ; bénéfices au taux du 3^e^ alinéa de l'art. 49 § I (10 %) |
+| LF 2019, loi n° 2018-56 du 27 décembre 2018 (JORT n° 104 du 28 décembre 2018) | art. 37 | **abrogation** de la sous-section « Exportation » (art. 67 à 69 du code) |
+| même loi | art. 41 § 1 | les entreprises en activité au 31 décembre 2018 conservent l'avantage **jusqu'au 31 décembre 2020** |
+
+Le taux de 10 % annoncé pour 2008 n'a donc régi les bénéfices de l'exportation qu'à partir
+de **2014**, après quatre reports ; aucune cinquième prorogation n'a été repérée dans la loi
+de finances pour 2014 (recherche par mots dans le fascicule n° 105 de 2013 — une absence sur
+une seule voie, à confirmer). La suite (13,5 % voté pour 2021, 15 % appliqué) est déjà dans
+`_impot_societes.qmd`, sections « 2019 » et « 2021 ».
+
+### 9.4 Loi de l'investissement de 2016 et loi de 2017 — textes lus
+
+- Loi n° 2016-71 du 30 septembre 2016, JORT n° 82 du 7 octobre 2016, p. 3083-3088 (date du
+  fascicule à contrôler sur l'en-tête) : art. 19, quatre **primes** (valeur ajoutée et
+  compétitivité, capacité d'employabilité, développement régional, développement durable) ;
+  art. 20, projets d'intérêt national : déduction des bénéfices dans la limite de dix ans et
+  prime dans la limite du tiers du coût ; art. 26, entrée en vigueur le 1^er^ janvier 2017 ;
+  art. 27, **abrogation du code de 1993**, sauf ses articles 14 et 36. La loi de 2016 ne porte
+  plus d'avantage fiscal d'exploitation : elle renvoie les primes à un fonds et laisse la
+  matière fiscale à la loi de 2017.
+- Loi n° 2017-8, art. 1^er^ (chapitre IV nouveau du code de l'IRPP et de l'IS, art. 63 à 77) :
+
+| Article (page) | Régime | Valeur, durée |
+|---|---|---|
+| 63 (p. 771) | développement régional | déduction totale **cinq ans** (premier groupe de zones) ou **dix ans** (deuxième groupe) |
+| 64 (p. 771) | développement régional, ensuite | deux tiers des revenus ; bénéfices au taux de 10 % |
+| 65 (p. 771) | agriculture et pêche | déduction totale **dix ans** |
+| 66 (p. 772) | agriculture et pêche, ensuite | deux tiers des revenus ; bénéfices au taux de 10 % |
+| 67 (p. 772) | exportation | deux tiers des revenus ; bénéfices au taux de 10 % ; plus de période de déduction totale |
+| 71 (p. 773) | entreprises nouvelles (hors finance, énergie, mines, promotion immobilière, commerce, télécommunications) | déduction de 100 %, 75 %, 50 %, 25 % les quatre premières années |
+
+  Comparé à 1993 : le développement régional perd la seconde décennie à 50 % ; l'exportation
+  n'a plus de période d'exonération.
