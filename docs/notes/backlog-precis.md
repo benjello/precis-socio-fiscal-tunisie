@@ -482,6 +482,41 @@ l'État ; les livres « dispositifs » gardent les règles et renvoient ici par 
   de sécurité sociale des comptes de la nation ; versements des caisses au budget (tableau A) ;
   transferts de l'État aux caisses depuis 2016, dont les sources restent à verser.
 
+## Le marché du travail
+
+Volume créé le 5 octobre 2026 (branche `docs/marche-travail-volume`), sept chapitres : présentation,
+notions, institutions, salaire minimum, conventions collectives, négociations salariales, longue
+période. Notes documentaires : `docs/notes/marche-travail-smig-smag.md`,
+`-conventions-collectives.md`, `-negociations.md` (partie privée). Le livre arabe est déclaré
+(`precis/ar/marche_travail/_quarto.yml`) et sauté tant que la traduction n'est pas livrée.
+
+À faire, avec l'état des sources :
+
+- **Chapitres annoncés, non écrits** : temps de travail et congés ; rupture du contrat de travail ;
+  politiques de l'emploi. À ajouter au `_quarto.yml` français et arabe à leur rédaction.
+- **Taux des accords-cadres UGTT-UTICA** (1990-2023) : aucun texte au *Journal officiel* ; fiche
+  `r-accords-cadres-ugtt-utica`. À obtenir hors corpus (archives d'*Echaab*, ministère des affaires
+  sociales, OIT).
+- **Décrets des secteurs non couverts** : seuls 2009-693 et 2026-69 lus ; les douze autres
+  (1989-2023) sont lisibles dans le corpus (couche texte à vérifier pour 1989-1996, OCR probable)
+  ; 2018-674 et 2019-456 ont un intitulé arabe seul en base. Le tableau `tbl-mt-non-couverts` est
+  fait main (TODO rédacteur) en attendant.
+- **Couverture conventionnelle et grilles** : aucune source chiffrée de la part des salariés
+  couverts ; aucune grille lue (textile, BTP, commerce, hôtellerie). Avenants agréés lisibles au
+  corpus (JORT, couche texte selon l'année).
+- **Code du travail de 1966** : fascicules n° 20-22 de 1966 sans couche texte (OCR requis pour
+  citer les art. 31-52 mot pour mot) ; rectificatif du n° 27/1966 non lu.
+- **Socle du SMAG avant 1974** : arrêté et décret du 30 avril 1956 (JORT n° 35/1956) non lus.
+- **Salaires effectifs du secteur privé** et part des salariés au SMIG : aucune série réunie
+  (`tunisia-data`) ; TODO documentaliste dans `_longue_periode.qmd`.
+- **Glossaire** : dix notions neuves en `provisoire` — termes arabes à confirmer sur le *Journal
+  officiel* arabe (الأجر التعاقدي, الاتفاقية المشتركة الإطارية, المصادقة على الاتفاقية المشتركة,
+  المنحة التكميلية الوقتية, الأجر الخام/الصافي, التشغيل غير المنظّم).
+- **Écarts des séries du salaire minimum avec les textes** : voir `backlog-modele.md` ; une fois la
+  PR `fix/smig-smag-dates` publiée, régénérer les tableaux et retirer l'encadré des dates du SMAG.
+- **Catalogue de `ipc-longue-periode`** (tunisia-data) : titre et réserves disent « 1962-2003 »,
+  alors que la série va jusqu'en 2023 (annuaire 2019-2023, tableau 13.6).
+
 ## Citations répétées — suggestion, non engagée (4 octobre 2026)
 
 Une même référence revient parfois à chaque phrase : le code de l'IRPP et de l'IS (`code-irpp-is-1990`) 31 fois dans `fiscalite/_impot_revenu.qmd` ; dans le volume VII en préparation (branche locale), la loi n° 97-11 jusqu'à 28 fois par chapitre et Dafflon et Gilbert 56 fois dans le chapitre des notions. La parenthèse « (loi n° … du …, art. 3) » alourdit la lecture sans rien apporter que le numéro d'article. Suggestion, à décider par l'humain avant toute mise en œuvre :
