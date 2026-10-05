@@ -341,6 +341,27 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 
 ## Cotisations sociales
 
+- **Accidents du travail par activité et taux légal — nuages de points ajoutés le 5 octobre 2026**
+  (`#fig-atmp-secteurs`, chapitre `_accidents_travail.qmd`). Le rapport CNAM
+  2023, PDF arabe lisible, porte la fréquence des accidents avec arrêt par
+  activité (PDF 15), le nombre d'accidents (PDF 13) et celui des décès
+  (PDF 26) pour 2021–2023 ; les séries sont conservées séparément dans
+  `tunisia-data`. Dix activités ont un point de l'article 2 du décret
+  n° 99-1010 qui leur correspond par le libellé et porte un taux unique ;
+  rapprochement éditorial, non correspondance administrative vérifiée.
+  Quinze autres rubriques agrègent plusieurs taux, ne recoupent pas les
+  intitulés du barème ou n'ont pas de ligne de décès ; établir le passage par les codes AT/MP auprès de la
+  CNSS/CNAM avant de les inclure. Pour 2023, la fréquence utilise les
+  assujettis de 2022 ; décès par secteur lisibles pour 22 activités, les
+  trois absentes n'étant pas interprétées comme nulles. Première vue :
+  taux légal en x, fréquence des accidents avec arrêt pour 1 000 travailleurs
+  en y ; seconde : accidents mortels pour 1 000 accidents déclarés en y,
+  ajustement linéaire et corrélation de Pearson non pondérés par année et sur
+  les dix seules activités retenues. Ce second ratio n'est pas un taux de
+  mortalité par travailleur. Le barème de 1999
+  n'est pas une série de taux effectivement acquittés de 2021 à 2023 :
+  modificatifs à rechercher (`r-atmp-echelle-modificatifs`) et modulation
+  des taux à documenter (art. 10–27 du décret n° 95-538).
 - **Autres prélèvements sur les salaires — rédigé le 5 octobre 2026** (`_prelevements_salaires.qmd`,
   `#sec-cot-prelevements-salaires`, après `_taux_global.qmd`) : TFP et contribution au FOPROLOS,
   taux en tableau engendré (`tbl-tfp-foprolos`, openfisca-tunisia 0.119, #478) ; les

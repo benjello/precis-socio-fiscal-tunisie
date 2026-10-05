@@ -1592,3 +1592,55 @@
     النصّ. يطبع حوليّة 1995-2001 القيمة 108.2 لسنة 1985 عوض 288.0، فاعتُمدت حوليّة
     1998-2002.
   fiche: sources/bct-archives.md
+- id: cnam-atmp-2023-ventilations-brutes
+  titre: 'CNAM : accidents et maladies professionnelles par activité et gouvernorat,
+    2021-2023'
+  sources:
+  - cnam-statistiques-atmp-2023
+  build: scripts/extract_cnam_atmp_2023.py:main
+  raw:
+  - data/raw/caisses/cnam/statistiquesAccidentDeTravail2023.pdf
+  output: data/processed/caisses/cnam_atmp_2023_ventilations_brutes.csv
+  unite: cas déclarés
+  perimetre: 'quatre répartitions imprimées : accidents par gouvernorat et activité
+    ; maladies par gouvernorat et activité'
+  caveats: 'Résidus de la source par rapport aux totaux : accidents régions 2021 −4
+    ; accidents secteurs 2022 +1 ; maladies secteurs 2021 −236 et 2022 +1. Les rubriques
+    en arabe et leurs rangs sont conservés sans reporter le solde sur une classe.'
+  titre_ar: 'الكنام: حوادث الشغل والأمراض المهنية حسب الجهة والنشاط، 2021-2023'
+  unite_ar: تصاريح
+  perimetre_ar: أربعة جداول توزيع من نسخة 2023
+  caveats_ar: بعض المجاميع لا تساوي مجموع الخانات، خاصة أمراض 2021 حسب النشاط (ناقص
+    236)؛ لم تُصحّح.
+  fiche: sources/cnam-statistiques.md
+- id: cnam-atmp-2023-activites-frequence-mortels-bruts
+  titre: 'CNAM : fréquence des accidents avec arrêt et accidents mortels par activité,
+    2021-2023'
+  sources:
+  - cnam-statistiques-atmp-2023
+  build: scripts/extract_cnam_atmp_2023.py:main
+  raw:
+  - data/raw/caisses/cnam/statistiquesAccidentDeTravail2023.pdf
+  output: data/processed/caisses/cnam_atmp_2023_activites_frequence_mortels_bruts.csv
+  unite: accidents avec arrêt pour 1 000 travailleurs assujettis (fréquence) ; cas
+    (décès)
+  perimetre: vingt-cinq activités pour la fréquence des accidents avec arrêt (PDF
+    15) ; vingt-deux activités publiées pour les accidents mortels (PDF 26), chacune
+    pour 2021-2023 ; les rubriques reprennent l'ordre du tableau des accidents PDF
+    13
+  caveats: Fréquence OBSERVÉE, distincte du taux légal de COTISATION. Le rapport prend
+    en compte plusieurs régimes privés et les travailleurs occasionnels couverts par
+    convention ; la fréquence 2023 utilise la ventilation des assujettis CNSS de 2022
+    par code AT/MP, non un effectif 2023. Décès déclarés de toute nature, travail
+    et trajet, révisables ; trois activités absentes du tableau des décès restent
+    absentes ici, sans zéro imputé. Les libellés arabes viennent du tableau PDF 13
+    et certains diffèrent légèrement de ceux de la page 26.
+  titre_ar: 'الكنام: مؤشّر تواتر حوادث الشغل بتوقّف عن العمل والحوادث القاتلة حسب
+    النشاط، 2021-2023'
+  unite_ar: حوادث بتوقّف عن العمل لكلّ ألف عامل خاضع؛ حوادث قاتلة
+  perimetre_ar: خمسة وعشرون نشاطاً لمؤشر التواتر واثنان وعشرون نشاطاً للحوادث القاتلة،
+    2021-2023
+  caveats_ar: مؤشر التواتر الملحوظ ليس نسبة الاشتراك القانونية؛ يعتمد مقام سنة 2023
+    على توزيع الخاضعين لسنة 2022. ثلاثة أنشطة غير مذكورة في جدول الحوادث القاتلة،
+    فلا تُسند إليها قيمة صفر. تشمل الحوادث القاتلة حوادث الطريق أيضاً ويمكن تحيينها.
+  fiche: sources/cnam-statistiques.md

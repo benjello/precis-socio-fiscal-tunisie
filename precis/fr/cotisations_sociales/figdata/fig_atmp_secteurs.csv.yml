@@ -1,0 +1,5 @@
+series: [atmp-echelles-1995-1999, cnam-atmp-2023-ventilations-brutes, cnam-atmp-2023-activites-frequence-mortels-bruts]
+sources: [decret95-538, decret99-1010, cnam-statistiques-atmp-2023]
+fiches: [sources/cnam-statistiques.md]
+caveats: [La correspondance entre classes de 1995 et secteurs de 1999 n'est donnée par aucun texte : seuls les cas évidents sont retenus., Résidus de la source par rapport aux totaux : accidents régions 2021 −4 ; accidents secteurs 2022 +1 ; maladies secteurs 2021 −236 et 2022 +1. Les rubriques en arabe et leurs rangs sont conservés sans reporter le solde sur une classe., Fréquence OBSERVÉE, distincte du taux légal de COTISATION. Le rapport prend en compte plusieurs régimes privés et les travailleurs occasionnels couverts par convention ; la fréquence 2023 utilise la ventilation des assujettis CNSS de 2022 par code AT/MP, non un effectif 2023. Décès déclarés de toute nature, travail et trajet, révisables ; trois activités absentes du tableau des décès restent absentes ici, sans zéro imputé. Les libellés arabes viennent du tableau PDF 13 et certains diffèrent légèrement de ceux de la page 26.]
+generated: 2026-10-05
