@@ -230,19 +230,19 @@ ensemble 19,15 %.
 
 | Année | Valeur | Périmètre | Source | Preuve |
 |---|---|---|---|---|
-| 2000 | 557 MD, « environ 2 % du PIB » | coût fiscal des incitations | OMC (2001), cité par la Banque mondiale 2014, ch. 4, note 10 | secondaire |
+| 2000 | 557 MD, « environ 2 % du PIB » | coût fiscal des incitations | OMC (2001), cité par la Banque mondiale 2014, ch. 4, note 10, p. 164 | secondaire |
 | 1994-2007 | 2,14 % du PIB en moyenne | coût direct des incitations fiscales | K. Ghazouani (2011), cité par l'OCDE 2013, p. 12 | secondaire |
-| 2005 | « environ 0,75 % du PIB » | dépense fiscale des incitations | FMI (2005 et 2012), cité par la Banque mondiale 2014, ch. 4, note 10 | secondaire |
-| non datée | 2,9 % du PIB | coût des incitations | Ghazouani (2011), cité par la Banque mondiale 2014, ch. 4, note 10 | secondaire |
-| 2009 | 1 296 MD, **2,2 % du PIB**, 8,5 % des recettes ; dont avantages fiscaux 1 198 MD (92 %), primes de l'APII 33, de l'APIA 54, de l'ONTT 11 | coût net total, fiscal et financier, des incitations du code | Banque mondiale 2014, *The Unfinished Revolution*, ch. 4, tableau 4.2 et p. 143, d'après IFC et ECOPA (2012) | texte lu (rapport de la Banque) |
+| 2005 | « environ 0,75 % du PIB » | dépense fiscale des incitations | FMI (2005 et 2012), cité par la Banque mondiale 2014, ch. 4, note 10, p. 164 | secondaire |
+| non datée | 2,9 % du PIB | coût des incitations | Ghazouani (2011), cité par la Banque mondiale 2014, ch. 4, note 10, p. 164 | secondaire |
+| 2009 | 1 296 MD, **2,2 % du PIB**, 8,5 % des recettes ; dont avantages fiscaux 1 198 MD (92 %), primes de l'APII 33, de l'APIA 54, de l'ONTT 11 | coût net total, fiscal et financier, des incitations du code | Banque mondiale 2014, *The Unfinished Revolution*, ch. 4, tableau 4.2 (p. 143) et p. 144, d'après IFC et ECOPA (2012) | texte lu (rapport de la Banque) |
 | 2009, 2010, 2011 | coût fiscal net 1 115, 1 304, 1 158 MD (déductions d'impôts 839 / 948 / 907 ; déductions douanières 405 / 504 / 394 ; impôts additionnels −22 / −23 / −23 ; droits de porte additionnels −107 / −125 / −120) | coût fiscal net des avantages | diaporama Banque mondiale, septembre 2014, p. 16 | image lue |
-| 2008-2011, moyenne annuelle | déduction des bénéfices des entreprises totalement exportatrices : 826,8 MD, 67 % des déductions ; exportation hors code 97,4 MD ; exportateurs partiels 87,2 MD | principales déductions brutes | Banque mondiale 2014, ch. 4, tableau 4.3 | texte lu |
+| 2008-2011, moyenne annuelle | déduction des bénéfices des entreprises totalement exportatrices : 826,8 MD, 67 % des déductions ; exportation hors code 97,4 MD ; exportateurs partiels 87,2 MD | principales déductions brutes | Banque mondiale 2014, ch. 4, tableau 4.3, p. 144 | texte lu |
 
 Sur le chiffre du ticket (« ≈ 2 % du PIB en 2009-2011 ») : le diaporama de 2014 (p. 17) et le
-rapport de la Banque (p. 143) donnent **2,2 % du PIB pour 2009**, pour le coût fiscal **et**
+rapport de la Banque (p. 144) donnent **2,2 % du PIB pour 2009**, pour le coût fiscal **et**
 financier (1,2 à 1,3 milliard de dinars). Le coût *fiscal* net de la p. 16 du diaporama
 (1 115 MD en 2009) et les « tax benefits » du tableau 4.2 (1 198 MD) ne coïncident pas : deux
-états de la même étude, non réconciliés ici. La figure 4.4 du rapport donne le coût net des
+états de la même étude, non réconciliés ici. La figure 4.4 du rapport (p. 144) donne le coût net des
 avantages fiscaux en % du PIB et des recettes pour 2009-2011 (valeurs lisibles : 2,1 / 2 /
 1,8 % du PIB ; 9,5 / 8,5 / 7,5 % des recettes), mais l'extraction du texte ne permet pas
 d'affecter chaque valeur à son année : à relire à l'image.
@@ -314,21 +314,21 @@ dépouillées ici.
 
 - Concentration : plus de 90 % des incitations fiscales et douanières vont à environ
   2 500 entreprises, sur environ 24 000 bénéficiaires (diaporama, p. 17, image lue ; rapport
-  2014, p. 143, texte lu).
+  2014, p. 144, texte lu).
 - Par régime : la déduction des entreprises totalement exportatrices fait 67 % des déductions
   (tableau 4.3) ; les quatre premiers types d'incitation, sur 68, en font près de 85 %.
 - Par secteur : mines 21 % du total, puis énergie, puis services (banque) et industrie
-  (textile) (rapport 2014, p. 143, texte lu).
+  (textile) (rapport 2014, p. 144, texte lu).
 - Par région : les incitations à l'exportation ont profité presque entièrement aux régions
-  côtières (rapport 2014, p. 139-140 et figure 4.1 ; les montants de la figure ne sont pas
+  côtières (rapport 2014, p. 140 et figure 4.1, p. 141 ; les montants de la figure ne sont pas
   extraits).
 - Effet d'aubaine : 79 % des investisseurs auraient investi sans incitation selon le rapport
-  (p. 142-143). Le diaporama, p. 15 (image lue), donne pour la même question : ensemble
+  (p. 143-144). Le diaporama, p. 15 (image lue), donne pour la même question : ensemble
   **Oui 61,2 % / Non 38,8 %** ; « Off-Shore » **Oui 56,5 % / Non 43,5 %** ; « On-Shore »
   **Oui 65,7 % / Non 34,3 %**. Les deux documents ne donnent pas le même chiffre ; ne pas les
   fondre.
 - Coût par emploi : 6 362 dinars par an et par emploi ; environ 30 000 dinars par an et par
-  emploi additionnel (diaporama p. 17, image lue ; rapport p. 144, texte lu).
+  emploi additionnel (diaporama p. 17, image lue ; rapport p. 145, texte lu).
 
 **Correction à porter à l'inventaire** `docs/notes/reforme-fiscale-2013-2014-inventaire.md`
 (l. 1164) : il attribue 56,5 / 43,5 à l'ensemble et 61,2 / 38,8 à l'offshore ; c'est l'inverse.
@@ -416,7 +416,7 @@ Vérifier que `lf-2011` et `lf-2013` pointent les fascicules cités ici.
    "author": [{"literal": "World Bank"}], "publisher": "World Bank", "publisher-place": "Washington, DC",
    "number": "86179-TN", "issued": {"date-parts": [[2014]]},
    "URL": "https://www.worldbank.org/content/dam/Worldbank/document/MNA/tunisia_report/the_unfinished_revolution_eng_chap4.pdf",
-   "note": "citation-key: banquemondiale2014-revolution-inachevee\nChapitre 4, p. 134-168 environ ; p. 139-144 lues le 5 octobre 2026 (tableaux 4.2 et 4.3, figure 4.4). Numéro de rapport et mois (mai 2014) repris de mémoire du catalogue, à contrôler ; une édition française existe, non consultée. Chiffres tirés d'IFC et ECOPA (2012), rapport préliminaire non publié."},
+   "note": "citation-key: banquemondiale2014-revolution-inachevee\nChapitre 4 ; p. 140-145 et note 10 (p. 164) lues le 5 octobre 2026 (tableaux 4.2 et 4.3, figure 4.4). Numéro de rapport et mois (mai 2014) repris de mémoire du catalogue, à contrôler ; une édition française existe, non consultée. Chiffres tirés d'IFC et ECOPA (2012), rapport préliminaire non publié."},
   {"id": "loeprick2014-incitations-fiscales", "type": "speech",
    "title": "Incitations fiscales – coûts/bénéfices et l'expérience mondiale",
    "author": [{"family": "Loeprick", "given": "Jan"}],
@@ -521,45 +521,39 @@ lus : à signaler comme tels, sans entrée propre.
     arrêté du ministre des Finances du 8 novembre 2017 chargeant la direction générale des
     avantages fiscaux et financiers d'établir le rapport sur les dépenses fiscales (cité par
     le rapport annexé au projet de loi de finances 2021, section 1, § 1)
-  ou: JORT 2017, numéros de novembre et décembre
+  ou: [precis/fr/fiscalite/_depenses_fiscales.qmd#sec-depenses-fiscales]
   requetes:
-    - source: titres_like
-      terme: "type like 'Arr%' et date_signature entre 2017-11-01 et 2017-11-15 et (ministere like '%inance%' ou titre like '%finances%')"
-    - source: titres_fts
-      terme: '"depenses fiscales" OR "النفقات الجبائية"'
-    - source: titres_like
-      terme: "titre like '%depenses fiscales%' ou '%dépenses fiscales%'"
+    titres_fts:
+      - '"depenses fiscales"'
+      - '"النفقات الجبائية"'
+    titres_like:
+      - '%depenses fiscales%'
+    depuis: 2017-11-08
   passes:
     - date: 2026-10-05
-      resultat: aucun
+      role: documentaliste
+      sources: [jort_cache]
       couverture: >-
-        intitulés de jort_cache.db seuls ; aucun fascicule lu ; le plein texte n'a pas été
-        lancé. L'arrêté peut ne pas avoir été publié au Journal officiel.
+        intitulés de jort_cache seuls : aucun titre ne porte « dépenses fiscales », en
+        français ni en arabe, et aucun arrêté des Finances signé du 1er au 15 novembre 2017
+        n'y figure sous ce filtre (ministere ou titre contenant « finances ») ; aucun
+        fascicule lu, plein texte non lancé. L'arrêté peut ne pas avoir été publié.
       couvert_jusqu_au: 2017-12-31
-  note: portée purement administrative ; ne conditionne aucun chiffre du chapitre.
-
-- id: r-rapport-depenses-fiscales-avant-plf-2021
-  objet: >-
-    rapport sur les dépenses fiscales annexé à un projet de loi de finances antérieur à celui
-    de 2021 (loi n° 2017-8, art. 18 ; loi organique n° 2019-15, art. 46 et 70)
-  ou: portail gbo.tn, rubrique des rapports annexés ; finances.gov.tn
-  requetes:
-    - source: page gbo.tn/fr/taxonomy/term/121 et gbo.tn/ar/taxonomy/term/121
-      terme: liens PDF de la rubrique « Rapport sur les dépenses fiscales et avantages financiers »
-    - source: recherche web
-      terme: 'Tunisie "dépenses fiscales" rapport annexé loi de finances 2019 OR 2020'
-  passes:
-    - date: 2026-10-05
       resultat: aucun
-      couverture: >-
-        la rubrique liste cinq PDF (déposés en 2021-04, 2022-01, 2023-01, 2024-01, 2025-03) ;
-        finances.gov.tn non parcouru ; archives du portail (Wayback) non interrogées.
-      couvert_jusqu_au: 2026-10-05
+  a_faire: plein texte des fascicules de novembre et décembre 2017 du corpus local
 ```
 
-Ces deux ébauches ne suivent pas forcément le schéma exact de `docs/recherches.yml` (la
-seconde porte sur un portail et non sur le *Journal officiel*) : à adapter au versement, ou à
-tenir comme simple lacune.
+Portée purement administrative : cet arrêté ne conditionne aucun chiffre du chapitre, et la
+fiche n'a d'intérêt que si le rédacteur le mentionne. L'ancre `ou` suppose le fichier proposé
+au § 4.
+
+La seconde recherche sans résultat — un rapport sur les dépenses fiscales annexé à un projet
+de loi de finances antérieur à celui de 2021 — ne porte pas sur le *Journal officiel* et
+n'entre pas dans le schéma du registre ; elle reste une lacune (§ 7, point 3). Ce qui a été
+fait le 5 octobre 2026 : lecture de la rubrique « Rapport sur les dépenses fiscales et
+avantages financiers » du portail gbo.tn, en français (`/fr/taxonomy/term/121`, trois PDF) et
+en arabe (`/ar/taxonomy/term/121`, cinq PDF déposés en 2021-04, 2022-01, 2023-01, 2024-01 et
+2025-03) ; une recherche web. Non fait : finances.gov.tn, archives Wayback du portail.
 
 ## 9. Journal
 
