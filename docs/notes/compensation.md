@@ -58,3 +58,40 @@ une ligne de contexte suffit.
 ## 5. Lacunes et fiches RECHERCHE proposées (à compléter)
 
 ## 6. Placement dans le précis (à compléter)
+
+## Carnet de lecture (matière brute, à fondre dans les sections ci-dessus)
+
+Lu à l'image le 5 octobre 2026 :
+
+- **LF 1984**, loi n° 83-113 du 30 décembre 1983, **art. 87** (JORT n° 86 du 30 déc. 1983, p. 3384) :
+  « Le financement des mesures d'accompagnement qui seront prises à la suite de la suppression de
+  la compensation des céréales et dérivés sera effectué pour 1984 sur les disponibilités de la
+  Caisse Générale de Compensation. » **[T]**
+- **Même loi, tableau F** (p. 3422) : fonds spécial « Caisse Générale de Compensation », prévisions
+  1984 : **145 000 000 D** en dépenses et en recettes, sur un total des fonds spéciaux de
+  420 577 000 D **[T]**.
+- **LFC 1984**, loi n° 84-2 du 21 mars 1984 (JORT n° 19, 20-23 mars 1984) : **art. 27** (p. 669) —
+  « Sont abrogées les dispositions de l'article 87 de la loi n° 83-113 » ; **art. 28** — prélèvement
+  de **8 000 000 D** sur le fonds « Contribution exceptionnelle de solidarité » au profit de la
+  CGC ; **art. 29** — total des fonds spéciaux porté de 420 577 000 D à 534 577 000 D ; **art. 6**
+  (p. 667) — 28 % du produit de la taxe sur les bières, vins et boissons alcoolisées affectés à la
+  CGC **[T]**. Tableau annexé (OCR) : « Subvention à la Caisse Générale de Compensation :
+  98 000 000 » au budget, chapitre IX **[T°, à relire à l'image]**.
+- **LFC 1989**, loi n° 89-88 du 3 novembre 1989 (JORT n° 73 du 3 nov. 1989, p. 1718) : art. 3-7 —
+  contribution au profit de la CGC « au titre de l'année 1989 » : 2,2 % du chiffre d'affaires 1988
+  des hôtels, 0,5 % de celui des autres entreprises, 0,5 % des recettes des professions non
+  commerciales (minimum 100 D), 1/30 du revenu de novembre 1989 des salariés gagnant 350 D ou
+  plus ; non déductible. Art. 8 — prêt du Trésor de **20 millions de dinars**, sans intérêts, sur
+  dix ans **[T]**.
+- **LF 1971**, loi n° 70-66, dans le même fascicule n° 58 de 1970 : un « art. 5 » d'un texte
+  d'application (à identifier) consolide la taxe de péréquation (arrêté du 5 février 1957), la
+  taxe de compensation (arrêté du 28 septembre 1964) et quatre centimes additionnels au droit de
+  consommation en une **taxe unique de compensation** sur les produits pétroliers, perçue au
+  profit de la CGC **[T°]**. Tableau F : CGC 7 000 000 D pour 1971 **[T°, à relire à l'image]**.
+- **LF 1976**, loi n° 75-83, art. 67-69 (JORT n° 87, 30-31 déc. 1975, pp. 2856-2857) : suppression
+  de la caisse spéciale de compensation des ciments ; opérations du compte de stabilisation des
+  produits pétroliers finis prises en charge par la CGC au 1er janvier 1976, solde versé **[T°]**.
+- Les tableaux F des lois de finances 1971-1992 portent chaque année la prévision du fonds
+  spécial CGC : c'est une série primaire possible (prévisions, non réalisations).
+- Recoupement `LIKE` + FTS + arabe sur `jort_cache` : aucun intitulé ne nomme la CGC entre
+  l'arrêté du 7 juillet 1992 et la loi n° 2012-27 (art. 63). Cela ne prouve rien sur le fond.
