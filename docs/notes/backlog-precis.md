@@ -512,8 +512,10 @@ période. Notes documentaires : `docs/notes/marche-travail-smig-smag.md`,
 - **Glossaire** : dix notions neuves en `provisoire` — termes arabes à confirmer sur le *Journal
   officiel* arabe (الأجر التعاقدي, الاتفاقية المشتركة الإطارية, المصادقة على الاتفاقية المشتركة,
   المنحة التكميلية الوقتية, الأجر الخام/الصافي, التشغيل غير المنظّم).
-- **Écarts des séries du salaire minimum avec les textes** : voir `backlog-modele.md` ; une fois la
-  PR `fix/smig-smag-dates` publiée, régénérer les tableaux et retirer l'encadré des dates du SMAG.
+- **Séries du salaire minimum** : corrigées par openfisca-tunisia#479 (fusionnée) ; tableaux
+  régénérés depuis `master` (0.120). À la publication de la 0.120 sur PyPI : relever
+  `VERSION_MINIMALE` dans `scripts/openfisca_tables.py` et engendrer le tableau de l'indemnité de
+  cherté de vie (TODO rédacteur dans `_salaire_minimum.qmd`).
 - **Catalogue de `ipc-longue-periode`** (tunisia-data) : titre et réserves disent « 1962-2003 »,
   alors que la série va jusqu'en 2023 (annuaire 2019-2023, tableau 13.6).
 

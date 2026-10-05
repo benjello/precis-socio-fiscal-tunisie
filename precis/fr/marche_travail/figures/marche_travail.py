@@ -21,8 +21,8 @@ CONVENTIONS.
   - SMAG rapporté au SMIG : le SMAG d'une journée, divisé par huit heures au SMIG horaire du
     régime de 48 heures (le régime de 48 heures compte 208 heures par mois, soit 26 journées
     de 8 heures).
-  - Les montants de 1961 à 1973 sont ceux du minimum de la première zone jusqu'en mai 1968,
-    et comprennent de 1971 à 1973 l'indemnité de cherté de vie (voir le chapitre).
+  - Les montants de 1961 à mai 1968 sont ceux du minimum de la première zone ; de 1971 à 1973,
+    l'indemnité de cherté de vie, servie en sus du minimum, n'y est pas comprise.
 """
 from __future__ import annotations
 
@@ -59,13 +59,11 @@ figtools.register_provenance(
     perimetre_ar=("المبالغ التي تضبطها الأوامر للأجراء البالغين 18 سنة فما فوق؛ سطر لكلّ تاريخ "
                   "سريان"),
     caveats=("Avant le 1er mai 1968, minimum de la première zone seulement. De 1971 à 1973, "
-             "les montants comprennent l'indemnité de cherté de vie de 0,020 D l'heure, servie "
-             "hors assiette sociale et intégrée au SMIG le 1er janvier 1974. Avant 1974, les "
-             "montants mensuels sont la conversion du minimum horaire. Les indemnités "
-             "spéciales de 1989 et de 1991 ne sont pas comprises. Le SMAG de 1969 et de 1977 "
-             "est daté du 1er novembre 1969 et du 1er mai 1977, quand les textes fixent le 1er "
-             "octobre 1969 et le 1er février 1977."),
-    caveats_ar=("قبل غرّة ماي 1968، الأجر الأدنى للمنطقة الأولى فقط. ومن 1971 إلى 1973 تشمل "
+             "l'indemnité de cherté de vie de 0,020 D l'heure, servie en sus du minimum et hors "
+             "assiette sociale, n'est pas comprise ; le SMIG l'intègre le 1er janvier 1974. "
+             "Avant 1974, les montants mensuels sont la conversion du minimum horaire. Les "
+             "indemnités spéciales de 1989 et de 1991 ne sont pas comprises."),
+    caveats_ar=("قبل غرّة ماي 1968، الأجر الأدنى للمنطقة الأولى فقط. ومن 1971 إلى 1973 لا تشمل "
                 "المبالغ منحة غلاء المعيشة. ولا تشمل المنحتين الخاصّتين لسنتي 1989 و1991."),
 )
 

@@ -14,13 +14,15 @@ CE QUI EST ENGENDRÉ.
   - Le SMAG journalier, découpé de même (`smag_<début>_<fin>.md`).
   - Les indemnités spéciales de 1989 et de 1991, servies en sus du SMIG et du SMAG puis
     intégrées le 1er mai 1992 (`indemnites_speciales.md`).
+
+L'indemnité de cherté de vie de 1971 (`indemnite_cherte_de_vie_*`, versée en 0.120) n'est
+pas encore engendrée : ses pages publiques n'existent pas avant la publication de la version.
   - La série brute `marche-travail-smig-smag` (`_seriescache/`), que lisent les figures de
     la longue période, et ses liens « Base législative » en deux langues.
 
-CE QUI NE L'EST PAS. Les paramètres de la composition du SMIG — indemnité complémentaire
-provisoire, majoration de 1982, salaire de base — portent des dates de signature au lieu des
-dates d'effet, un montant unique là où les textes en fixent deux, et une série limitée à
-2008-2014 : le chapitre expose cette composition d'après les textes, en prose.
+CE QUI NE L'EST PAS. La composition du SMIG — salaire de base et indemnité complémentaire
+provisoire — est exposée d'après les textes, en prose : la série du salaire de base ne couvre
+que 2008-2014.
 
 La colonne « Texte » cite une clé de la bibliographie du livre pour chaque date où le texte
 est identifié et versé (`CLES_SMIG`, `CLES_SMAG`) ; ailleurs, elle reprend l'intitulé et le
@@ -87,10 +89,10 @@ CLES_SMIG = {
 }
 CLES_SMAG = {
     "1968-05-01": "decret68-113",
-    "1969-11-01": "decret69-344",
+    "1969-10-01": "decret69-344, art. 8",
     "1971-05-01": "decret71-163",
     "1974-06-01": "decret74-571, art. 1",
-    "1977-05-01": "decret77-116",
+    "1977-02-01": "decret77-116, art. 6",
     "1980-02-01": "decret80-76",
     "1992-05-01": "decret92-1300",
     "2012-07-01": "decret2012-1982",

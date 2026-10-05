@@ -70,24 +70,16 @@ Les dates des hausses du SMIG dessinent quatre configurations.
 
 Le SMIG est fixé à l'heure et au mois dans chacun des deux régimes (@tbl-mt-smig). Chaque onglet couvre une période : avant le SMIG, le taux horaire unique, puis les deux régimes à taux horaires distincts.
 
-<!-- TODO (modéliste) : écarts entre les séries du SMIG et du SMAG et les textes, à corriger dans
-la PR openfisca-tunisia en préparation (branche fix/smig-smag-dates, sans numéro au 5 octobre 2026) ;
-liste complète dans docs/notes/marche-travail-smig-smag.md, § 3, et docs/notes/backlog-modele.md.
-SMAG : effet du décret 69-344 au 1er octobre 1969 (et non 1er novembre), du décret 77-116 au
-1er février 1977 (et non 1er mai). SMIG 1971-1973 : 0,104 D comprend l'indemnité de cherté de vie
-de 0,020 D, hors assiette sociale, qui n'est pas un SMIG. SMIG 1961-1968 : zone I seulement.
-Références : intitulé du décret 68-97 daté de 1969 ; intitulés de 61-145 et 65-561 ; URL de 2016
-(édition arabe servie à l'adresse française) et de 2019 (fichiers hors pist.tn) ; SMAG 2012-07-01
-et 2016-08-01 sans référence. Composition (non publiée ici) : indemnité complémentaire provisoire
-et majoration de 1982 datées de la signature, 30 D au lieu de 30,368 D en 48 heures, salaire de
-base limité à 2008-2014. -->
+<!-- TODO (rédacteur) : engendrer un tableau de l'indemnité de cherté de vie (1971-1973) depuis
+`marche_travail/indemnite_cherte_de_vie_{horaire,mensuelle}` (openfisca-tunisia#479), une fois la
+version 0.120 publiée et VERSION_MINIMALE relevée dans scripts/openfisca_tables.py. -->
 
 ```{python}
 #| echo: false
 #| output: asis
 print(ot.markdown_un_tableau_en_onglets([
     ("1961-1973", TABLES / "smig_1961_1973.md",
-     "Avant 1974, les textes fixent un minimum horaire ; les montants mensuels en sont la conversion sur 208 heures (48 heures) et sur 173,33 heures (40 heures). Jusqu'au 1er mai 1968, le minimum donné est celui de la première zone ; celui de la seconde est de 60 millimes en 1961 et de 66 millimes en 1966 [@decret61-145, art. 6; @decret65-561, art. 5]. À compter du 1er mai 1971, les montants comprennent l'indemnité de cherté de vie de 0,020 dinar l'heure, servie en sus du minimum de 0,084 dinar et hors de l'assiette sociale, jusqu'à son intégration au SMIG le 1er janvier 1974 [@decret71-164, art. 2 et 5; @decret74-63, art. 1]."),
+     "Avant 1974, les textes fixent un minimum horaire ; les montants mensuels en sont la conversion sur 208 heures (48 heures) et sur 173,33 heures (40 heures). Jusqu'au 1er mai 1968, le minimum donné est celui de la première zone ; celui de la seconde est de 60 millimes en 1961 et de 66 millimes en 1966 [@decret61-145, art. 6; @decret65-561, art. 5]. Du 1er mai 1971 au 31 décembre 1973, l'indemnité de cherté de vie de 0,020 dinar l'heure s'ajoute au minimum sans le modifier, hors de l'assiette sociale ; elle n'est pas comprise dans ces montants, et le SMIG de 1974 l'intègre [@decret71-164, art. 2 et 5; @decret74-63, art. 1] (@sec-mt-zones)."),
     ("1974-1981", TABLES / "smig_1974_1981.md",
      "Un seul taux horaire pour les deux régimes. En 1977 et en 1978, les montants mensuels progressent d'un montant uniforme, et non par application du taux horaire [@decret77-115; @decret78-441]."),
     ("1981-1999", TABLES / "smig_1981_1999.md",
@@ -98,10 +90,6 @@ print(ot.markdown_un_tableau_en_onglets([
 ```
 
 Le SMAG est fixé par journée de travail effectif (@tbl-mt-smag). Avant le décret n° 74-571, le salaire minimum des travailleurs agricoles est fixé par des arrêtés, puis par des décrets relatifs à leur rémunération [@decret68-113; @decret69-344; @decret71-163].
-
-::: {.callout-note appearance="simple" title="Deux dates d'effet à lire au texte"}
-Le décret n° 69-344 prend effet le 1er octobre 1969 [@decret69-344, art. 8] et le décret n° 77-116 le 1er février 1977 [@decret77-116, art. 6]. Le tableau date ces deux hausses du 1er novembre 1969 et du 1er mai 1977 : ce sont les dates des textes qui font foi.
-:::
 
 ```{python}
 #| echo: false
