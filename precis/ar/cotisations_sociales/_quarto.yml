@@ -17,6 +17,7 @@ book:
     - index.qmd
     - _assiette.qmd
     - _taux_global.qmd
+    # - _prelevements_salaires.qmd   # à déclarer quand la traduction sera livrée
     - _pensions.qmd
     - _maladie.qmd
     - _accidents_travail.qmd

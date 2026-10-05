@@ -311,6 +311,22 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 
 ## Cotisations sociales
 
+- **Autres prélèvements sur les salaires — rédigé le 5 octobre 2026** (`_prelevements_salaires.qmd`,
+  `#sec-cot-prelevements-salaires`, après `_taux_global.qmd`) : TFP et contribution au FOPROLOS,
+  taux en tableau engendré (`tbl-tfp-foprolos`, openfisca-tunisia 0.119, #478) ; les
+  changements d'assiette (1987, 2003) sont dans la prose. Note : `docs/notes/cotisations-prelevements-salaires.md`. Ouvert :
+  taux de la TFP de 1957 à 1966 (décret du 16 janvier 1957, fascicule ni dans le corpus ni sur
+  pist.tn, `r-tfp-decret-1957`) ; assiette de la TFP avant 1989 (décret de 1957, code du travail
+  de 1966, art. 364-365 : JORT n° 22/1966 lisible au corpus, à l'image) ; date d'effet de la LF
+  2003 ; exclusions handicapés et emploi à l'étranger sans texte (`r-tfp-exclusions-handicapes-etranger`) ;
+  exonérations des régimes d'incitation non inventoriées ; décret n° 94-492 (industries
+  manufacturières) non lu ; prélèvements sur le fonds de 2011-2013 connus par leurs intitulés
+  seulement ; rendement : aucune série — prévisions des tableaux « ت » des LF 2016-2019 à
+  relever (LF 2018 lue), réalisations à chercher dans les lois de règlement et les rapports de
+  la DGI. **Arabe** : chapitre déclaré en commentaire dans `precis/ar/cotisations_sociales/_quarto.yml`,
+  à décommenter dans la même PR de traduction que celle qui retraduit `_taux_global.qmd` et
+  `index.qmd`, sans quoi le livre arabe affiche `?@sec-cot-prelevements-salaires`.
+
 - **Découpé en chapitres le 4 octobre 2026** (déplacement seul, aucune valeur changée, ancres
   gardées) : `index.qmd` (« Présentation » : introduction, conventions, présentation générale,
   encadré des caisses), `_assiette.qmd`, `_taux_global.qmd`, partie « Les branches, une à une »
@@ -326,16 +342,9 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   `fig-cotisations-branches-1990-2004` ×2 → `_bilan.html` ; `sec-cot-fonds-special`,
   `sec-cot-protection-sociale` → `_autres_branches.html` ; `sec-cot-cnrps-employeur` →
   `_regimes.html`).
-- **Arabe — à faire à la livraison de la traduction** : `precis/ar/cotisations_sociales/_quarto.yml`
-  ne déclare encore que `index.qmd`, à dessein (déclarer des fichiers absents casserait le rendu).
-  Quand la passe de traduction livre les onze nouveaux fichiers, y déclarer les mêmes chapitres,
-  la partie `_branches.qmd` et les annexes, puis rendre le livre arabe. D'ici là, le livre arabe
-  sert l'ancien `index.qmd` d'un seul tenant ; si la passe réécrit d'abord `ar/index.qmd` en
-  version courte, le contenu des chapitres manquera au livre arabe jusqu'à leur déclaration.
-  Les renvois des volumes « Retraites » et « Rémunérations publiques » visent déjà les nouvelles
-  pages (`_pensions.html`, `_taux_global.html`, `_regimes.html`, `_matrice.html`…) : leur
-  retraduction produira des liens morts dans les livres arabes tant que ces chapitres n'y sont pas
-  déclarés. Déclarer les chapitres arabes dans la même passe que ces retraductions.
+- **Arabe — chapitres déclarés** : `precis/ar/cotisations_sociales/_quarto.yml` déclare les
+  chapitres du découpage du 4 octobre 2026 (constaté le 5 octobre 2026, le livre arabe rend) ;
+  seul `_prelevements_salaires.qmd` y reste en commentaire (voir ci-dessus).
 
 - **Les caisses ont quitté ce livre le 4 octobre 2026** : cadre comptable et budgétaire, et les
   trois figures de la rétrospective CNSS par régime et par branche, dans le livre « Les caisses de
