@@ -5,7 +5,7 @@
     bp.table_taux_liquidation()
     bp.fig_planchers()          # pension minimale en dinars, et pension moyenne des deux caisses
     bp.table_planchers()
-    bp.fig_limite()             # limite de calcul L = ℓ·S et salaire moyen déclaré, 2000-2017
+    bp.fig_limite()             # limite de calcul L = ℓ·S et salaire moyen déclaré, 2000-2018
     bp.table_limite()
 
 D'OÙ VIENNENT LES DONNÉES. Deux séries sont des règles de droit datées, émises hors du build
@@ -201,9 +201,9 @@ _L = {
                      "ar": "معدّل الجراية، كامل القطاع الخاص (د/شهر)"},
     # Figure 3
     "titre_limite": {"fr": "Limite de calcul des prestations (2000-2026) et salaire moyen "
-                           "déclaré (2000-2017), régime non agricole",
+                           "déclaré (2000-2018), régime non agricole",
                      "ar": "سقف احتساب المنافع (2000-2026) ومعدّل الأجر المصرّح به "
-                           "(2000-2017)، نظام الأجراء غير الفلاحيين"},
+                           "(2000-2018)، نظام الأجراء غير الفلاحيين"},
     "sous_dinars": {"fr": "Dinars courants par mois", "ar": "دينار جارٍ في الشهر"},
     "sous_ratio": {"fr": "Limite ÷ salaire moyen", "ar": "السقف ÷ معدّل الأجر"},
     "lg_limite": {"fr": "Limite de calcul L = 6 × SMIG × 2 400 h, par mois",
@@ -213,8 +213,8 @@ _L = {
               "ar": "معدّل الأجر المصرّح به (الكتلة المصرّح بها ÷ النشيطين)"},
     "lg_ratio": {"fr": "Limite de l'année ÷ salaire moyen déclaré",
                  "ar": "سقف السنة ÷ معدّل الأجر المصرّح به"},
-    "sans_salaire": {"fr": "salaire moyen déclaré non publié après 2017",
-                     "ar": "معدّل الأجر المصرّح به غير منشور بعد 2017"},
+    "sans_salaire": {"fr": "salaire moyen déclaré non disponible après 2018",
+                      "ar": "معدّل الأجر المصرّح به غير متوفّر بعد 2018"},
     "col_limite": {"fr": "Limite de calcul, moyenne de l'année (D/mois)",
                    "ar": "سقف الاحتساب، معدّل السنة (د/شهر)"},
     "col_sm": {"fr": "Salaire moyen déclaré (D/mois)", "ar": "معدّل الأجر المصرّح به (د/شهر)"},
@@ -473,7 +473,7 @@ def _limite_annuelle() -> dict[int, float]:
 
 
 def _salaires() -> dict[int, float]:
-    """Salaire moyen déclaré du régime non agricole, 2000-2017 : la CAVIS n'est pas retenue."""
+    """Salaire moyen déclaré du régime non agricole, 2000-2018 : la CAVIS n'est pas retenue."""
     d = figtools.series(SERIE_RSNA)
     return {int(r.annee): float(r.valeur) for r in d.itertuples()
             if r.indicateur == SM and int(r.annee) >= 2000}

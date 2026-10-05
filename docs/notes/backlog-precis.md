@@ -1,6 +1,6 @@
 # Ce qui reste à faire, livre par livre
 
-**Révisé le 30 septembre 2026.** Cette note rassemble les chantiers encore visibles dans les
+**Révisé le 5 octobre 2026.** Cette note rassemble les chantiers encore visibles dans les
 chapitres, les dossiers documentaires et les issues ; elle permet de choisir le prochain
 texte à lire. Une piste « faisable » signifie que le **support** est accessible, pas que
 son contenu a déjà été vérifié : seul l'article lu autorise à corriger le précis.
@@ -137,6 +137,18 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 
 ## Retraites
 
+- **Taux d'équilibre et figures du RSNA prolongés à 2018 (5 octobre 2026).**
+  L'annuaire CNSS 2018 français transmis par l'utilisateur est lisible dans sa
+  couche texte (PDF 16, 43-44) : salaires et pensions de 2018 ajoutés à la série
+  dérivée de `tunisia-data`, puis aux figures du taux, de sa décomposition,
+  du salaire moyen et de la pension moyenne. Les années 2000-2017 gardent
+  leurs valeurs et leur provenance de l'édition 2017. **Écart à élucider
+  auprès de la CNSS** : 1 289 940 actifs, note « y compris les non assujettis »
+  (PDF 43-44), contre 1 289 940 salariés + 950 non-assujettis (PDF 16).
+  Les facteurs démographique et de remplacement retiennent les actifs imprimés
+  avec une réserve visible ; le taux pensions ÷ masse salariale n'en dépend pas.
+  Au-delà de 2018, les annuaires sont à obtenir ; support non présent dans le
+  corpus local exploité. Fiche : `tunisia-data/sources/cnss-annuaires.md`.
 - **Résultat de la branche des pensions du RSNA, 1990-2004 — fait le 3 octobre 2026** (`#fig-rsna-resultat-1990-2004`, dans `#sec-rsna-equilibre`), tiré de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026). Le tableau de cette branche n'a pas d'estimation (la colonne 2000 y est rétablie par les totaux) ; si une relecture de l'original change ses montants, relire la note de lecture. Piste : le même tableau existe pour les autres régimes (RSA, RSAA, RTNS) et pour le régime complémentaire. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches).
 - **Réallocations du taux global sur la figure du résultat RSNA — fait le 3 octobre 2026** (`#fig-rsna-resultat-1990-2004`) : trois lignes aux 1er janvier 1988, 1994 et 2003 (décrets n° 88-1137, 94-1429, 2003-1212), dates du précis, identiques à celles des notes du document (pp. 14, 15, 60) ; libellés en taux de la branche selon la caisse (5 → 8, 8 → 10, 11,5 → 12,5 %), quote-parts en vingtièmes dans la note de lecture. Texte lisible dans le corpus (décrets déjà lus pour `#sec-rsna-financement`). Reste : le même tableau pour les autres régimes (RSA, RSAA, RTNS) et le régime complémentaire.
 - **Point clos sur la source primaire** : l'article 2 de la loi n° 2019-37 remplace

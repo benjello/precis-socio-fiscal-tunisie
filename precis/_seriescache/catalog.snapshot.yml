@@ -1041,7 +1041,7 @@
   fiche: sources/ins-fonction-publique-2018-2025.md
 - id: cnss-rsna-taux-equilibre
   titre: 'CNSS, régime des salariés non agricoles : taux de cotisation d''équilibre
-    de la branche pensions et sa décomposition, 2000-2017 ; CAVIS (tout le privé),
+    de la branche pensions et sa décomposition, 2000-2018 ; CAVIS (tout le privé),
     1980 et 1985-1991, sans raccord'
   sources:
   - cnss-annuaires-statistiques
@@ -1049,19 +1049,25 @@
   build: scripts/build_cnss_rsna_taux_equilibre.py:main
   raw:
   - data/processed/caisses/cnss_rsna_annuaires.csv
+  - data/processed/caisses/cnss_annuaire_2018_brut.csv
   - data/processed/caisses/bm1993_caisses.csv
   output: data/processed/caisses/cnss_rsna_taux_equilibre.csv
   unite: taux, millions de dinars, dinars par mois, personnes
   perimetre: 'taux d''équilibre = pensions servies par le RSNA sans régime complémentaire,
     toutes natures ÷ masse salariale déclarée = taux de remplacement apparent (pension
     moyenne ÷ salaire moyen) × ratio pensionnés / cotisants (pensionnés de toutes
-    natures, orphelins compris ÷ actifs, non-assujettis compris) ; variante avec régime
-    complémentaire à part ; comparé au taux légal de la branche pensions selon deux
-    lectures de l''article 5 b) du décret n° 74-499. Colonne `denominateur` : « annuaire
-    CNSS : masse salariale déclarée au RSNA » (2000-2017) ; « Banque mondiale 1993
-    : CAVIS, ensemble des régimes du privé ; cotisations de pension ÷ taux légal du
-    RSNA » (1980 et 1985-1991), avec l''indicateur « pensions ÷ cotisations de pension
-    », indépendant de tout taux'
+    natures, orphelins compris ÷ actifs imprimés) ; variante avec régime complémentaire
+    à part ; comparé au taux légal de la branche pensions selon deux lectures de l''article
+    5 b) du décret n° 74-499. Colonne `denominateur` : « annuaire CNSS : masse salariale
+    déclarée au RSNA » (2000-2018 : édition 2017 jusqu''en 2017, édition 2018 pour
+    2018) ; « Banque mondiale 1993 : CAVIS, ensemble des régimes du privé ; cotisations
+    de pension ÷ taux légal du RSNA » (1980 et 1985-1991), avec l''indicateur « pensions
+    ÷ cotisations de pension », indépendant de tout taux. RÉSERVE 2018 : les tableaux
+    de pensions p. PDF 43-44 impriment 1 289 940 actifs, présentés comme incluant
+    les non-assujettis ; le tableau salarial p. PDF 16 imprime 1 289 940 salariés
+    et 950 non-assujettis. L''effectif d''actifs imprimé est conservé sans addition,
+    mais la décomposition démographique dépend de ce désaccord ; le taux pensions
+    ÷ salaires n''en dépend pas.'
   caveats: 'SÉRIE CALCULÉE. TAUX LÉGAL AMBIGU, EXPOSÉ EN DEUX COLONNES : la quote-part
     du taux global est fixée en vingtièmes (6,25/20e depuis le 1er janvier 1994, décret
     n° 94-1429 ; 7,25/20e depuis le 1er janvier 2003, décret n° 2003-1212) alors que
@@ -1096,20 +1102,23 @@
     pas connue, et le sens de l''erreur non plus. τ* : 3,2 % (1980), 6,0 % (1985),
     8,7 % (1987), 7,9 % (1991).'
   titre_ar: 'الصندوق الوطني للضمان الاجتماعي، نظام الأجراء في القطاع غير الفلاحي:
-    نسبة المساهمة المحقّقة للتوازن في فرع الجرايات ومكوّناتها، 2000-2017؛ وصندوق تأمين
+    نسبة المساهمة المحقّقة للتوازن في فرع الجرايات ومكوّناتها، 2000-2018؛ وصندوق تأمين
     الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع بجراية (كامل القطاع الخاص)،
     1980 و1985-1991، دون ربط'
   unite_ar: نسب، ملايين الدنانير، دنانير شهرياً، أشخاص
   perimetre_ar: 'نسبة التوازن = الجرايات المدفوعة دون النظام التكميلي، بجميع أصنافها
     ÷ كتلة الأجور المصرّح بها = نسبة التعويض الظاهرة (معدّل الجراية ÷ معدّل الأجر)
-    × نسبة المنتفعين إلى المساهمين (المنتفعون بجميع الأصناف بمن فيهم الأيتام ÷ النشيطون
-    بمن فيهم غير الخاضعين)؛ مع صيغة تشمل النظام التكميلي على حدة؛ وتُقارن بالنسبة
-    القانونية لفرع الجرايات حسب قراءتين للفصل 5 (ب) من الأمر عدد 499 لسنة 1974؛ عمود
-    المقام: «الكتاب الإحصائي للصندوق: كتلة الأجور المصرّح بها» (2000-2017)، و«البنك
-    الدولي 1993: صندوق تأمين الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع
-    بجراية، كامل القطاع الخاص؛ مساهمات التقاعد ÷ النسبة القانونية لنظام الأجراء غير
-    الفلاحيين» (1980 و1985-1991)، مع مؤشّر «الجرايات ÷ مساهمات التقاعد» الذي لا يتوقّف
-    على أيّ نسبة'
+    × نسبة المنتفعين إلى المساهمين (المنتفعون بجميع الأصناف بمن فيهم الأيتام ÷ عدد
+    النشيطين المطبوع)؛ مع صيغة تشمل النظام التكميلي على حدة؛ وتُقارن بالنسبة القانونية
+    لفرع الجرايات حسب قراءتين للفصل 5 (ب) من الأمر عدد 499 لسنة 1974؛ عمود المقام:
+    «الكتاب الإحصائي للصندوق: كتلة الأجور المصرّح بها» (2000-2018؛ نسخة 2017 إلى 2017
+    ونسخة 2018 لسنة 2018)، و«البنك الدولي 1993: صندوق تأمين الشيخوخة والعجز والباقين
+    بقيد الحياة بعد وفاة المنتفع بجراية، كامل القطاع الخاص؛ مساهمات التقاعد ÷ النسبة
+    القانونية لنظام الأجراء غير الفلاحيين» (1980 و1985-1991)، مع مؤشّر «الجرايات ÷
+    مساهمات التقاعد» الذي لا يتوقّف على أيّ نسبة. تحفّظ سنة 2018: ينشر جدولا الجرايات
+    1 289 940 نشيطاً مع عبارة تشمل غير الخاضعين، بينما ينشر جدول الأجور 1 289 940
+    أجيراً و950 غير خاضع؛ اعتمد العدد المطبوع للنشيطين دون إضافة 950. يؤثر الخلاف
+    في تفكيك النسبة لا في نسبة الجرايات إلى الأجور.'
   caveats_ar: 'سلسلة محسوبة. النسبة القانونية ملتبسة وتُعرض في عمودين: الحصّة من النسبة
     الجملية محدّدة بأجزاء من عشرين (6,25/20 منذ غرّة جانفي 1994، الأمر عدد 1429 لسنة
     1994؛ 7,25/20 منذ غرّة جانفي 2003، الأمر عدد 1212 لسنة 2003)، في حين أنّ النسبة
