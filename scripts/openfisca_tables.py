@@ -78,8 +78,11 @@ PAQUETS = {
         # de l'échelle de 1999 ne trouverait pas les numéros de point dont il tire ses lignes.
         # La 0.118 verse l'échelle de 1995 (`atmp_1995`, openfisca-tunisia#469) et les taux de
         # 1999 avant transfert du point (`atmp_avant_transfert`, #470) : en deçà, le tableau de
-        # 1995 et la première colonne de celui de 1999 n'existent pas.
-        "version_minimale": (0, 118),
+        # 1995 et la première colonne de celui de 1999 n'existent pas. La 0.119 verse les
+        # taux de la taxe de formation professionnelle et de la contribution au FOPROLOS
+        # (`prelevements_sociaux/autres/`, openfisca-tunisia#477, PR #478) : en deçà, le
+        # tableau des autres prélèvements sur les salaires n'existe pas.
+        "version_minimale": (0, 119),
     },
 }
 

@@ -1,0 +1,9 @@
+- libelle: الأداء على التكوين المهني، الصناعات المعملية
+  parametre: parameters/prelevements_sociaux/autres/tfp/taux_industries_manufacturieres.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.autres.tfp.taux_industries_manufacturieres/table/
+- libelle: الأداء على التكوين المهني، القطاعات الأخرى
+  parametre: parameters/prelevements_sociaux/autres/tfp/taux_autres_secteurs.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.autres.tfp.taux_autres_secteurs/table/
+- libelle: المساهمة الراجعة لصندوق النهوض بالمسكن لفائدة الأجراء
+  parametre: parameters/prelevements_sociaux/autres/foprolos/taux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.autres.foprolos.taux/table/

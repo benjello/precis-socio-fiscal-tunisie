@@ -59,6 +59,9 @@ MOTS = {
         "css_salarie": "Contribution sociale de solidarité, taux applicable aux salariés",
         "maladie_employeur": "Part de l'employeur public", "maladie_agent": "Part de l'agent",
         "perte_employeur": "Part de l'employeur", "perte_salarie": "Part du salarié",
+        "tfp_manuf": "Taxe de formation professionnelle, industries manufacturières",
+        "tfp_autres": "Taxe de formation professionnelle, autres secteurs",
+        "foprolos": "Contribution au FOPROLOS",
     },
     "ar": {
         "effet": "بداية السريان", "texte": "النصّ", "branche": "الفرع",
@@ -85,6 +88,9 @@ MOTS = {
         "css_salarie": "المساهمة الاجتماعية التضامنية، النسبة المطبّقة على الأجراء",
         "maladie_employeur": "مساهمة المؤجر العمومي", "maladie_agent": "مساهمة العون",
         "perte_employeur": "مساهمة المؤجر", "perte_salarie": "مساهمة الأجير",
+        "tfp_manuf": "الأداء على التكوين المهني، الصناعات المعملية",
+        "tfp_autres": "الأداء على التكوين المهني، القطاعات الأخرى",
+        "foprolos": "المساهمة الراجعة لصندوق النهوض بالمسكن لفائدة الأجراء",
     },
 }
 
@@ -640,7 +646,32 @@ def perte_emploi(langue):
         colonne_total=m["total"])
 
 
+AUTRES = "parameters/prelevements_sociaux/autres"
+CLES_TFP_FOPROLOS = {
+    "1967-01-01": "decret66-527, art. 1-2",
+    "1977-08-01": "loi77-54, art. 2 et 10",
+    "1989-01-01": "loi-88-145-lf-1989, art. 29-30 et 35",
+}
+
+
+def tfp_foprolos(langue):
+    """Les deux prélèvements patronaux sur les salaires hors cotisations, depuis 1967.
+
+    Le taux de la taxe de formation professionnelle antérieur à 1967 (décret du 16 janvier
+    1957) n'est pas connu : la série commence au taux de 2 % du décret n° 66-527. Avant le
+    1er août 1977, la colonne du FOPROLOS est vide.
+    """
+    m = MOTS[langue]
+    return ot.tableau_evolution_datee(
+        [(f"{AUTRES}/tfp/taux_industries_manufacturieres.yaml", m["tfp_manuf"], _taux(langue)),
+         (f"{AUTRES}/tfp/taux_autres_secteurs.yaml", m["tfp_autres"], _taux(langue)),
+         (f"{AUTRES}/foprolos/taux.yaml", m["foprolos"], _taux(langue))],
+        cles=CLES_TFP_FOPROLOS, langue=langue,
+        colonne_periode=m["effet"], colonne_texte=m["texte"])
+
+
 TABLEAUX = {
+    "tfp_foprolos.md": tfp_foprolos,
     "coin_par_regime.md": coin_par_regime,
     "cnrps_maladie.md": cnrps_maladie,
     "perte_emploi.md": perte_emploi,
