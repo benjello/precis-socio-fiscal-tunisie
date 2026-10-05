@@ -544,6 +544,42 @@ Revue de ce que les sept volumes ne couvrent pas (sujets à établir sur les tex
 ## Allègement du juridique et de l'administratif — chantier, non urgent (5 octobre 2026)
 
 Ligne éditoriale rappelée par l'humain : le précis vise l'**impact économique, distributif et budgétaire**, l'**évolution sur le temps long** et les **ruptures de réforme** ; on retient d'un texte sa **date, sa valeur et sa source**, sans les détails administratifs sans impact (modalités de déclaration, de recouvrement, procédures). Les chapitres déjà écrits en contiennent beaucoup (par exemple le recouvrement des impôts locaux dans le volume VII). Chantier à mener plus tard, **sans forcément réécrire le texte** : réduire la visibilité de ces sections (encadrés repliés, niveau de titre plus bas) ou les **repousser en annexe** du volume. Une passe par volume, à décider avec l'humain. Les nouveaux chapitres appliquent la règle dès leur rédaction.
+## Le marché du travail
+
+Volume créé le 5 octobre 2026 (branche `docs/marche-travail-volume`), sept chapitres : présentation,
+notions, institutions, salaire minimum, conventions collectives, négociations salariales, longue
+période. Notes documentaires : `docs/notes/marche-travail-smig-smag.md`,
+`-conventions-collectives.md`, `-negociations.md` (partie privée). Le livre arabe est déclaré
+(`precis/ar/marche_travail/_quarto.yml`) et sauté tant que la traduction n'est pas livrée.
+
+À faire, avec l'état des sources :
+
+- **Chapitres annoncés, non écrits** : temps de travail et congés ; rupture du contrat de travail ;
+  politiques de l'emploi. À ajouter au `_quarto.yml` français et arabe à leur rédaction.
+- **Taux des accords-cadres UGTT-UTICA** (1990-2023) : aucun texte au *Journal officiel* ; fiche
+  `r-accords-cadres-ugtt-utica`. À obtenir hors corpus (archives d'*Echaab*, ministère des affaires
+  sociales, OIT).
+- **Décrets des secteurs non couverts** : 2009-693, 2019-456 et 2026-69 lus ; les autres
+  (1989-2023) sont au corpus (couche texte à vérifier pour 1989-1996, OCR probable) ; 2018-674 n'a
+  qu'un intitulé arabe en base, 2019-456 n'est pas dans jort_cache.db (lu au fascicule). Le tableau
+  `tbl-mt-non-couverts` est fait main (TODO rédacteur) en attendant.
+- **Couverture conventionnelle et grilles** : aucune source chiffrée de la part des salariés
+  couverts ; aucune grille lue (textile, BTP, commerce, hôtellerie). Avenants agréés lisibles au
+  corpus (JORT, couche texte selon l'année).
+- **Code du travail de 1966** : fascicules n° 20-22 de 1966 sans couche texte (OCR requis pour
+  citer les art. 31-52 mot pour mot) ; rectificatif du n° 27/1966 non lu.
+- **Socle du SMAG avant 1974** : arrêté et décret du 30 avril 1956 (JORT n° 35/1956) non lus.
+- **Salaires effectifs du secteur privé** et part des salariés au SMIG : aucune série réunie
+  (`tunisia-data`) ; TODO documentaliste dans `_longue_periode.qmd`.
+- **Glossaire** : dix notions neuves en `provisoire` — termes arabes à confirmer sur le *Journal
+  officiel* arabe (الأجر التعاقدي, الاتفاقية المشتركة الإطارية, المصادقة على الاتفاقية المشتركة,
+  المنحة التكميلية الوقتية, الأجر الخام/الصافي, التشغيل غير المنظّم).
+- **Séries du salaire minimum** : corrigées par openfisca-tunisia#479 (fusionnée) ; tableaux
+  régénérés depuis `master` (0.120). À la publication de la 0.120 sur PyPI : relever
+  `VERSION_MINIMALE` dans `scripts/openfisca_tables.py` et engendrer le tableau de l'indemnité de
+  cherté de vie (TODO rédacteur dans `_salaire_minimum.qmd`).
+- **Catalogue de `ipc-longue-periode`** (tunisia-data) : titre et réserves disent « 1962-2003 »,
+  alors que la série va jusqu'en 2023 (annuaire 2019-2023, tableau 13.6).
 
 ## Citations répétées — suggestion, non engagée (4 octobre 2026)
 

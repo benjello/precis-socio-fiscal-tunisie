@@ -41,6 +41,7 @@ BOOKS = [
     "retraites",
     "caisses",
     "finances_locales",
+    "marche_travail",
 ]
 
 LANGS = ("fr", "ar")

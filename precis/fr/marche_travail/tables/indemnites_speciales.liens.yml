@@ -1,0 +1,6 @@
+- libelle: Indemnité spéciale, SMIG (par mois)
+  parametre: parameters/marche_travail/indemnite_speciale_smig.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.indemnite_speciale_smig/table/
+- libelle: Indemnité spéciale, SMAG (par jour)
+  parametre: parameters/marche_travail/indemnite_speciale_smag.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.indemnite_speciale_smag/table/

@@ -11,8 +11,8 @@ import json
 import re
 import sys
 
-LIVRES = ("caisses", "cotisations_sociales", "finances_locales", "fiscalite", "prestations_sociales",
-          "remunerations_publiques", "retraites")
+LIVRES = ("caisses", "cotisations_sociales", "finances_locales", "fiscalite", "marche_travail",
+          "prestations_sociales", "remunerations_publiques", "retraites")
 
 # Un fichier sous ces préfixes touche potentiellement TOUS les livres : les
 # modules Python que les figures importent (`from figures import …` mis à part —

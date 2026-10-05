@@ -1,0 +1,105 @@
+# Le salaire minimum {#sec-mt-salaire-minimum}
+
+```{python}
+#| echo: false
+#| output: false
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+
+TABLES = Path.cwd() / "tables"
+
+
+def table(nom, legende, label):
+    """Tableau de paramètres législatifs conservé sous forme de snapshot versionné.
+
+    Les valeurs, les dates d'effet et leurs références sont réunies par le générateur
+    `scripts/generate_marche_travail_tables.py`.
+    """
+    print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label))
+```
+
+Le salaire minimum interprofessionnel garanti ([SMIG](#g-smig)) et le salaire minimum agricole garanti ([SMAG](#g-smag)) sont fixés par décret depuis 1974. Ce chapitre en retrace la construction : les minima par zone qui les précèdent, leur institution, les deux régimes horaires du SMIG, sa composition, et les ruptures de son calendrier. Les montants, date par date, sont réunis à la fin du chapitre (@tbl-mt-smig, @tbl-mt-smag) ; leur évolution en dinars constants est l'objet du chapitre de la longue période (@sec-mt-longue-periode).
+
+## Avant le SMIG : des minima par zone {#sec-mt-zones}
+
+Au début des années 1960, le minimum de salaire des activités non agricoles est fixé à l'occasion de relèvements généraux des salaires, et il varie selon la zone. Le décret n° 61-145 du 30 mars 1961 relève de 5 % les minima des règlements de salaires et fixe un plancher horaire de 76 millimes à Tunis, Bizerte, Sousse, Sfax et dans leurs banlieues, et de 60 millimes ailleurs, à compter du 1er avril 1961 [@decret61-145, art. 6]. Le décret n° 65-561 du 31 décembre 1965 porte ces planchers à 84 et 66 millimes au 1er janvier 1966 [@decret65-561, art. 5 et 12]. Le décret n° 68-97 du 15 avril 1968 supprime la seconde zone : à compter du 1er mai 1968, les minima de la première valent pour tout le territoire [@decret68-97, art. 1, 2 et 7].
+
+Le 1er mai 1971, une **indemnité de cherté de vie** de 0,020 dinar l'heure, soit 4 dinars par mois pour les salariés payés au mois, s'ajoute au salaire minimum ; elle n'entre ni dans l'assiette des cotisations ni dans le calcul des prestations sociales [@decret71-164, art. 2 et 5].
+
+## L'institution du SMIG et du SMAG {#sec-mt-institution-smig}
+
+Le SMIG naît de la réforme de la fixation des salaires de 1973 : le décret n° 73-247 fonde les salaires conventionnels sur un SMIG « fixé par décret » [@decret73-247, art. 2]. Le premier décret qui le fixe, le décret n° 74-63 du 31 janvier 1974, le porte à 130 millimes l'heure pour les salariés de 18 ans et plus, à compter du 1er janvier 1974, et y intègre l'indemnité de cherté de vie de 1971 [@decret74-63, art. 1 et 5]. Le SMAG suit : le décret n° 74-571 du 22 mai 1974 le fixe à 800 millimes par journée de travail, à compter du 1er juin 1974 [@decret74-571, art. 1 et 8]. Entre-temps, le décret n° 74-493 du 20 avril 1974 a institué la [commission nationale du salaire minimum garanti](#g-commission-nationale-smig) et posé que le SMIG et le SMAG sont déterminés par décret [@decret74-493, art. 1].
+
+Depuis la loi n° 96-62 du 15 juillet 1996, le code du travail définit le [salaire minimum garanti](#g-salaire-minimum-garanti) et dispose qu'il est fixé par décret (@sec-mt-notions-minimum). Les salariés de moins de 18 ans ne peuvent percevoir moins de 85 % du salaire d'un salarié plus âgé [@decret77-115, art. 4; @decret2026-67, art. 3].
+
+## Les deux régimes horaires {#sec-mt-regimes-horaires}
+
+Le SMIG est fixé pour deux régimes de durée du travail, 48 heures et 40 heures par semaine. Le code du travail de 1966 fixe la durée maximale à 48 heures et permet de la réduire à 40 heures par décret dans certaines branches [@loi66-27, art. 79 et 80] ; depuis 1996, la réduction jusqu'à 40 heures peut résulter d'une convention ou d'un texte réglementaire [@loi96-62, art. 79 (nouveau)].
+
+Jusqu'en mars 1981, le SMIG a un **taux horaire unique** ; seuls ses montants mensuels diffèrent d'un régime à l'autre, par le nombre d'heures payées. Le décret n° 79-473 fixe ainsi 48,256 dinars par mois dans le régime de 48 heures et 40,212 dinars dans celui de 40 heures [@decret79-473]. En 1977 et en 1978, les montants mensuels progressent d'un **montant uniforme** et non par application du taux horaire : 10 dinars dans les deux régimes en 1977, 4,420 et 3,684 dinars en 1978 [@decret77-115; @decret78-441].
+
+Le 1er avril 1981, les taux horaires des deux régimes **divergent**. L'indemnité complémentaire provisoire instituée ce jour-là est de 48 millimes l'heure dans le régime de 48 heures et de 58 millimes dans celui de 40 heures [@decret81-437, art. 3] : le SMIG horaire passe à 311 et 321 millimes. Le salarié du régime de 40 heures est depuis lors mieux payé à l'heure, et moins au mois (@tbl-mt-smig).
+
+## La composition du SMIG {#sec-mt-composition}
+
+Depuis 1981, le SMIG se compose d'un salaire de base et d'une [indemnité complémentaire provisoire](#g-indemnite-complementaire-provisoire). Celle-ci, de 10 dinars par mois au 1er avril 1981 [@decret81-437, art. 3], est majorée au 1er février 1982 et portée à 30,368 dinars dans le régime de 48 heures et à 30 dinars dans celui de 40 heures, soit 146 et 173 millimes l'heure [@decret82-501, art. 1 et 3]. Elle n'entre pas, à l'origine, dans l'assiette des cotisations sociales [@decret81-437, art. 7]. Les décrets suivants la maintiennent à ce montant et ne relèvent que le salaire de base ; chacun publie la décomposition du SMIG qu'il fixe [@decret92-1299, art. 2; @decret2000-949, art. 2]. Le décret n° 2026-67 précise encore que le SMIG « comprend l'indemnité complémentaire provisoire » [@decret2026-67, art. 1].
+
+Deux **indemnités spéciales** ont été servies en sus du SMIG et du SMAG, hors de l'assiette des cotisations, avant d'y être intégrées le 1er mai 1992 (@tbl-mt-indemnites-speciales).
+
+```{python}
+#| echo: false
+#| output: asis
+table("indemnites_speciales",
+      "Indemnités spéciales servies en sus du SMIG et du SMAG, en dinars, 1989-1992",
+      "tbl-mt-indemnites-speciales")
+```
+
+## Les ruptures du calendrier {#sec-mt-ruptures}
+
+Les dates des hausses du SMIG dessinent quatre configurations.
+
+- **Des hausses uniformes de tous les salaires (1977-1980).** Les décrets qui fixent le SMIG de 1977 à 1980 majorent aussi d'un montant uniforme tous les salaires légaux, conventionnels ou statutaires — 48 millimes l'heure et 10 dinars par mois en 1977 [@decret77-115, art. 2], puis de même en 1978, 1979 et 1980 [@decret78-441; @decret79-473; @decret80-75; @decret80-609]. Le chapitre des négociations y revient (@sec-mt-2026).
+- **Des intervalles sans hausse.** Le SMIG reste inchangé du 1er janvier 1983 au 1er juillet 1986, du 1er juillet 2012 au 1er mai 2014, puis d'octobre 2020 à octobre 2022 et d'octobre 2022 à mai 2024 (@tbl-mt-smig).
+- **Des effets rétroactifs.** Le décret n° 2017-668, publié le 6 juin 2017, prend effet au 1er août 2016 [@decret-2017-668-smig] ; le décret n° 2020-1069, publié le 5 janvier 2021, au 1er octobre 2020 [@decret2020-1069] ; le décret n° 2026-67, publié le 30 avril 2026, au 1er janvier 2026 [@decret2026-67, art. 1].
+- **Des décrets pluriannuels.** Le décret n° 2024-419 fixe deux paliers, au 1er mai 2024 et au 1er janvier 2025 [@decret2024-419] ; le décret n° 2026-67 en fixe trois, aux 1er janvier 2026, 2027 et 2028, et étend expressément la hausse aux pensions de retraite [@decret2026-67, art. 1 et 6]. Le décret n° 2026-66 fait de même pour le SMAG [@decret2026-66, art. 1 et 5]. Tous deux sont pris au visa de l'article 15 de la loi de finances pour 2026 [@lf-2026, art. 15].
+
+## Les montants {#sec-mt-montants}
+
+Le SMIG est fixé à l'heure et au mois dans chacun des deux régimes (@tbl-mt-smig). Chaque onglet couvre une période : avant le SMIG, le taux horaire unique, puis les deux régimes à taux horaires distincts.
+
+<!-- TODO (rédacteur) : engendrer un tableau de l'indemnité de cherté de vie (1971-1973) depuis
+`marche_travail/indemnite_cherte_de_vie_{horaire,mensuelle}` (openfisca-tunisia#479), une fois la
+version 0.120 publiée et VERSION_MINIMALE relevée dans scripts/openfisca_tables.py. -->
+
+```{python}
+#| echo: false
+#| output: asis
+print(ot.markdown_un_tableau_en_onglets([
+    ("1961-1973", TABLES / "smig_1961_1973.md",
+     "Avant 1974, les textes fixent un minimum horaire ; les montants mensuels en sont la conversion sur 208 heures (48 heures) et sur 173,33 heures (40 heures). Jusqu'au 1er mai 1968, le minimum donné est celui de la première zone ; celui de la seconde est de 60 millimes en 1961 et de 66 millimes en 1966 [@decret61-145, art. 6; @decret65-561, art. 5]. Du 1er mai 1971 au 31 décembre 1973, l'indemnité de cherté de vie de 0,020 dinar l'heure s'ajoute au minimum sans le modifier, hors de l'assiette sociale ; elle n'est pas comprise dans ces montants, et le SMIG de 1974 l'intègre [@decret71-164, art. 2 et 5; @decret74-63, art. 1] (@sec-mt-zones)."),
+    ("1974-1981", TABLES / "smig_1974_1981.md",
+     "Un seul taux horaire pour les deux régimes. En 1977 et en 1978, les montants mensuels progressent d'un montant uniforme, et non par application du taux horaire [@decret77-115; @decret78-441]."),
+    ("1981-1999", TABLES / "smig_1981_1999.md",
+     "À compter du 1er avril 1981, les taux horaires des deux régimes divergent [@decret81-437, art. 3]. Les indemnités spéciales de 1989 et de 1991 ne sont pas comprises dans ces montants (@tbl-mt-indemnites-speciales)."),
+    ("2000-2028", TABLES / "smig_2000_2028.md",
+     "Les paliers du 1er janvier 2027 et du 1er janvier 2028 sont fixés par le décret n° 2026-67 [@decret2026-67, art. 1]."),
+], "SMIG des régimes de 48 et de 40 heures, à l'heure et au mois, en dinars, salariés de 18 ans et plus, 1961-2028", "tbl-mt-smig"))
+```
+
+Le SMAG est fixé par journée de travail effectif (@tbl-mt-smag). Avant le décret n° 74-571, le salaire minimum des travailleurs agricoles est fixé par des arrêtés, puis par des décrets relatifs à leur rémunération [@decret68-113; @decret69-344; @decret71-163].
+
+```{python}
+#| echo: false
+#| output: asis
+print(ot.markdown_un_tableau_en_onglets([
+    ("1964-1980", TABLES / "smag_1964_1980.md",
+     "Le 1er février 1980, le SMAG est assorti d'une majoration uniforme de 43 millimes par jour [@decret80-76, art. 1 et 2]."),
+    ("1981-1999", TABLES / "smag_1981_1999.md",
+     "Les indemnités spéciales de 1989 et de 1991 ne sont pas comprises dans ces montants (@tbl-mt-indemnites-speciales)."),
+    ("2000-2028", TABLES / "smag_2000_2028.md",
+     "Les paliers du 1er janvier 2027 et du 1er janvier 2028 sont fixés par le décret n° 2026-66 [@decret2026-66, art. 1]."),
+], "SMAG, par journée de travail effectif, en dinars, travailleurs de 18 ans et plus, 1964-2028", "tbl-mt-smag"))
+```

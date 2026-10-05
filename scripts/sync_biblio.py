@@ -45,6 +45,8 @@ COLLECTION_TO_BOOK = {
     "caisses de sécurité sociale": "caisses",
     "caisses de securite sociale": "caisses",
     "finances locales": "finances_locales",
+    "marché du travail": "marche_travail",
+    "marche du travail": "marche_travail",
 }
 
 

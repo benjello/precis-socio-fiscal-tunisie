@@ -1206,3 +1206,22 @@
   a_faire:
   - lire les JORT n° 62, 73 et 90 à 99 de 2011 (fascicules français à obtenir, ou arabes à l'image)
   - parcourir le plein texte des fascicules de 2012 antérieurs au n° 97
+
+- id: r-accords-cadres-ugtt-utica
+  objet: accords-cadres UGTT-UTICA de négociation salariale du secteur privé (taux et dates par round), postérieurs à la convention collective cadre de 1973
+  ou: [precis/fr/marche_travail/_negociations.qmd#sec-mt-accords-cadres]
+  requetes:
+    titres_fts: [UGTT OR UTICA, accord AND salaires]
+    titres_like: ['%UGTT%', '%UTICA%', '%Union Generale Tunisienne du Travail%']
+    depuis: 1973-06-01
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local, presse]
+    couverture: titres et objets de jort_cache (FTS et LIKE) ; corpus local data/ugtt et data/conventions_collectives (posts de presse syndicale 2016-2026, aucun texte d'accord cadre) ; plein texte des fascicules non parcouru ; archives de presse antérieures à 2016 et rapports du ministère des affaires sociales non consultés
+    couvert_jusqu_au: 2026-04-30
+    resultat: aucun
+  a_faire:
+  - archives d'Echaab antérieures à 2016
+  - rapports annuels du ministère des affaires sociales
+  - études de l'OIT sur la négociation collective en Tunisie
