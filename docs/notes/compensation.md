@@ -47,9 +47,10 @@ Constats utiles au rédacteur :
   céréales ; la loi de finances complémentaire du 21 mars 1984 abroge l'article. Les événements de
   janvier 1984 eux-mêmes ne sont pas sourcés ici (aucune pièce primaire lue) : à citer par une
   source secondaire, ou à taire.
-- **Transport.** La LF 1984 (art. 38 et s., p. 3378 et s.) crée la taxe unique de compensation de
-  transports routiers et une « caisse de compensation et de soutien des transports routiers »
-  (tableau F 1984 : 5 600 000 D) **[T° pour les articles, T pour le tableau]**. Le rapport de 2014
+- **Transport.** La LF 1984 institue au 1er janvier 1984 la taxe unique de compensation de
+  transports routiers (art. 38 et suivants, lus par OCR) et crée une « caisse de compensation et
+  de soutien des transports routiers » (intitulé de la notice ; tableau F 1984 : 5 600 000 D, lu à
+  l'image) **[T°, M, T]**. Le rapport de 2014
   (ci-dessous) date de 1984 l'extension de la compensation au transport public.
 - Avant 1970 : caisses interprofessionnelles et taxes de compensation sectorielles (conserve de
   tomate 1956, ciments 1955, textile 1958, transports routiers 1963) **[M]** — une ligne de
@@ -70,8 +71,8 @@ Constats utiles au rédacteur :
   `/jort/2020/2020F/Jo0282020.pdf` répond 404 le 5 octobre 2026). L'arrêté de 2016 est absent des
   intitulés de `jort_cache` : trouvé au plein texte.
 - **Les prix eux-mêmes ne sont plus au Journal officiel.** Les arrêtés « fixant les prix des
-  produits pétroliers » y paraissent de 1964 à 1993 (24 intitulés dans `jort_cache`, du 28 sept.
-  1964 au 26 oct. 1993) **[M]** ; depuis, les prix sont notifiés par « arrêté interne » conjoint
+  produits pétroliers » y paraissent du 28 septembre 1964 au 26 octobre 1993 (24 intitulés dans
+  `jort_cache`, en comptant quatre arrêtés de 1956 sur les « carburants liquides ») **[M]** ; depuis, les prix sont notifiés par « arrêté interne » conjoint
   (arrêté de 2016, art. 7 ; arrêté de 2020, art. 6) **[T]**. Une série de prix à la pompe ne peut
   donc pas venir du JORT après 1993.
 - Ce que le mécanisme a produit (dates et ampleur des ajustements, gel éventuel) n'est établi par
@@ -120,10 +121,10 @@ construire** dans l'entrepôt avec sa fiche de provenance.
 | 2015 | 2 882,9 | 1 549,0 | 918,0 | 415,9 | `…/2017-01_resultats_provisoires_execution.pdf` (provisoire 2015-12 : 2 863,9) | [T°] |
 | 2016 | 2 210,7 | 1 580,7 | 197,0 | 433,0 | idem ; BCT, rapport annuel 2017, p. PDF 51 | [T°] |
 | 2017 | 3 492,2 | 1 494,0 | 1 550,0 | 448,2 | `…/2018_resultats_provisoires_execution_budget_fin_juillet_jd1447.pdf` ; BCT 2017 | [T°] |
-| 2018 | 4 900,0 | 1 750,0 | 2 700,0 | 450,0 | BCT, rapport annuel 2019, p. PDF 68 (LF 2018 : 3 520,0) | [S] |
-| 2019 | 4 789,5 | 1 800,0 | 2 538,0 | 451,5 | idem | [S] |
+| 2018 | 4 900,0 | 1 750,0 | 2 700,0 | 450,0 | BCT, rapport annuel 2019, p. PDF 68 (LF 2018 : 3 520,0) ; en-tête de colonnes non relu : années déduites de la disposition des autres rapports | [S] |
+| 2019 | 4 789,5 | 1 800,0 | 2 538,0 | 451,5 | idem, même réserve | [S] |
 | 2020 | — | — | — | — | BCT, rapport annuel 2020 ou 2021 : tableau non extrait | — |
-| 2021 | 6 031,0 | — | — | — | BCT, rapport annuel 2022, p. PDF 68 | [S] |
+| 2021 | 6 031,0 | — | — | — | BCT, rapport annuel 2022, p. PDF 68 (en-tête non relu) | [S] |
 | 2022 | 11 999,0 | 3 771,0 | 7 628,0 | 600,0 | BCT, rapport annuel 2023, p. PDF 72 | [S] |
 | 2023 | 11 479,5 | 3 809,5 | 7 030,0 | 640,0 | BCT, rapport annuel 2024, p. PDF 75 (rapport 2023 : 11 475,0 / 3 805,0) | [S] |
 | 2024 | 11 347,5 | 3 601,5 | 7 086,0 | 660,0 | idem | [S] |
@@ -201,7 +202,7 @@ Aucun chiffre d'incidence n'est vérifié sur pièce dans cette note. État des 
 | Jouini, Lustig, Moummi et Shimeles, « Fiscal Policy, Income Redistribution, and Poverty Reduction: Evidence from Tunisia », *Review of Income and Wealth*, vol. 64, 2018, pp. S225-S248 | incidence fiscale d'ensemble (CEQ), année 2010 | revue ; CEQ Working Paper 38 | référence relevée, article non lu |
 | Banque mondiale 1993, protection sociale (clé `bm-1993-social-protection`) ; Banque mondiale 1995, pauvreté | auto-ciblage des subventions du début des années 1990 | `TD/banque-mondiale-rapports/bm_1993_social_protection_11376.pdf`, pp. PDF 63, 83, 91-92 ; `wb_1995_13993_poverty_vol1_main.pdf`, pp. PDF 13-15 | pages repérées, non dépouillées |
 | Banque mondiale 1985, mémorandum économique | recommandation de ciblage | `wb_1985_5328_cem_a.pdf`, pp. PDF 33-45 | idem |
-| `~/projets/ceq-tunisie` | outil CEQ de la Banque mondiale, simulation 2024 sur l'enquête EBCNV 2021 (mars 2025) | `CEQ_TUN21_March2025/3.Results/TUN_FiscalSim21_Sim2024_11March2025.xlsm`, feuille `totals` : par décile, `indirect_subsidies` et colonnes `sub_*_pc` (électricité, gaz, GPL, essence, gasoil, lait, pain, pâtes, semoule, sucre, farine, huile, couscous) ; paramètres : feuilles `SubsidyFood`, `SubsidyCarb`, `SubsidyElec`, `SubsidyGas` | lecture de contrôle : subventions par tête croissantes avec le revenu, d'environ 180 D (1er décile de revenu de marché) à 306 D (9e) par an. **Fichier de travail non publié** : non citable tant que le rapport publié n'est pas identifié |
+| `~/projets/ceq-tunisie` | outil CEQ de la Banque mondiale, simulation 2024 sur l'enquête EBCNV 2021 (mars 2025) | `CEQ_TUN21_March2025/3.Results/TUN_FiscalSim21_Sim2024_11March2025.xlsm`, feuille `totals` : par décile, `indirect_subsidies` et colonnes `sub_*_pc` (électricité, gaz, GPL, essence, gasoil, lait, pain, pâtes, semoule, sucre, farine, huile, couscous) ; paramètres : feuilles `SubsidyFood`, `SubsidyCarb`, `SubsidyElec`, `SubsidyGas` | lecture de contrôle du premier bloc par décile (classement à vérifier dans le classeur) : `indirect_subsidies` par tête croissant avec le rang, d'environ 180 D (1er décile) à 306 D (9e) par an, périmètre exact de la colonne non établi. **Fichier de travail non publié** : non citable tant que le rapport publié n'est pas identifié |
 
 Mise en garde : dans `ceq-tunisie`, le module
 `src/ceq_tunisie/simulation_as_migration_from_stata/s07_subsidies.py` est une transcription
