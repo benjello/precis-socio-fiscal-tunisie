@@ -360,8 +360,10 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   les dix seules activités retenues. Ce second ratio n'est pas un taux de
   mortalité par travailleur. Le barème de 1999
   n'est pas une série de taux effectivement acquittés de 2021 à 2023 :
-  modificatifs à rechercher (`r-atmp-echelle-modificatifs`) et modulation
-  des taux à documenter (art. 10–27 du décret n° 95-538).
+  aucun modificatif de l'échelle n'est identifié (`r-atmp-echelle-modificatifs`,
+  plein texte parcouru le 5 octobre 2026), et la modulation des art. 10 à 27 du
+  décret n° 95-538, désormais exposée (`#sec-cot-at-modulation`), peut écarter la
+  cotisation due du taux du barème, sans qu'aucune donnée sur sa pratique soit connue.
 - **Autres prélèvements sur les salaires — rédigé le 5 octobre 2026** (`_prelevements_salaires.qmd`,
   `#sec-cot-prelevements-salaires`, après `_taux_global.qmd`) : TFP et contribution au FOPROLOS,
   taux en tableau engendré (`tbl-tfp-foprolos`, openfisca-tunisia 0.119, #478) ; les
@@ -406,11 +408,59 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 - **Accidents du travail (§ sec-cot-at)** : les décrets n° 95-538 et 99-1010 sont lus
   dans les deux éditions (taux, entrée en vigueur au 1er janvier 1995 et au 1er avril
   1999). Les deux échelles sont engendrées, avant et après transfert du point
-  (`tables/atmp_1995.md`, `tables/atmp_1999.md`). Restent : les forfaits des
-  articles 4 à 7 et la modulation des articles 10 à 27 (openfisca-tunisia#471), dont
-  l'édition arabe des articles 4 à 7 (JORT n° 30 de 1995, pp. 691-692) reste à lire à
-  l'image ; le financement sous la loi n° 57-73. La fiche `r-atmp-echelle-modificatifs`
-  ne couvre que les intitulés : le plein texte reste à parcourir.
+  (`tables/atmp_1995.md`, `tables/atmp_1999.md`). Reste : le financement sous la loi
+  n° 57-73 (texte à obtenir pour ce livre ; clé à verser au fonds commun).
+- **Accidents du travail : assiette et modulation — rédigé le 5 octobre 2026**
+  (`#sec-cot-at-assiette` : `#sec-cot-at-assiette-principe`, `#sec-cot-at-forfaits`,
+  `#sec-cot-at-salaire-comparaison` ; `#sec-cot-at-modulation` : `#sec-cot-at-majoration`,
+  `#sec-cot-at-reduction`, `#sec-cot-at-modulation-recours`). Lus à l'image dans les deux
+  éditions : loi n° 94-28 (art. 17, 18, 88 à 90), décret n° 95-538 (art. 1 à 29), décrets
+  n° 99-1010 et 2000-1439, loi n° 95-101. Trois tableaux **faits main**
+  (`tbl-atmp-forfaits`, `tbl-atmp-journees`, `tbl-atmp-modulation`), à engendrer quand les
+  forfaits et la modulation seront portés en amont (openfisca-tunisia#471, auquel ajouter
+  le décret n° 2000-1439) ; aucun montant en dinars n'est donné. Ouvert :
+  - **à relire à l'image** (fascicules français présents au corpus, connus par cette seule édition) :
+    loi n° 60-30, art. 42 et 46, rédaction de 1960 (JORT n° 57 de 1960, pp. 1605-1606,
+    impression pâle : paraphrasée, non citée) et son édition arabe ; loi n° 2004-71,
+    art. 8 à 10 et 29 ; décrets n° 96-341, 2003-1098 et 2008-173 (avantages exclus de
+    l'assiette), dont l'édition arabe reste à lire ; le n° 99-1011 est lu dans les deux ;
+  - **à lire** (fascicules présents au corpus le 5 octobre 2026 ; lisibilité de la couche
+    texte non vérifiée — le n° 15 de 2005 en porte une où « 2005-321 » ne se retrouve pas
+    tel quel, donc lecture à l'image ou décodage à prévoir) : décret n° 2005-321
+    (organisation de la CNAM, JORT n° 15 de 2005, `2005/fr/Jo0152005.pdf`, pp. 459-463) —
+    quelle caisse exerce les pouvoirs des art. 10 à 27 et recouvre la cotisation, depuis
+    quand ; loi n° 88-38 du 6 mai 1988, visée par le décret n° 95-538 (JORT n° 33 du
+    13 mai 1988, p. 735 d'après jort_cache, `1988/fr/Jo03388.pdf`) — l'art. 42 entre 1960
+    et 1995 n'est pas vérifié ;
+  - **à calculer** : date exécutoire de la loi n° 95-101 et des décrets n° 96-341,
+    2003-1098 et 2008-173 (aucune clause d'effet) ;
+  - **à obtenir** : une source administrative (CNSS, CNAM) sur la pratique des forfaits et
+    de la modulation ; rien n'établit qu'ils sont appliqués aujourd'hui ;
+  - **lectures, non textes** : portée du décret n° 2000-1439 sur l'art. 5 (abrogation
+    implicite) ; application à l'AT/MP des décrets d'exclusion (par renvoi seulement) ;
+    taux applicable aux forfaits des art. 5 (muet) et 7 (« selon les branches ») ;
+  - **relecteur-ar** : termes arabes de l'art. 4 du décret n° 95-538 et de l'art. 18 de la
+    loi n° 94-28, transcrits depuis des pages scannées — les divergences sont dites en
+    français dans le texte (tonneaux de jauge, pêche au feu, caprins, floriculture,
+    malades des hôpitaux psychiatriques), sans citation arabe ;
+  - **bibliographe** : clés à créer pour les décrets n° 96-341, 99-1011, 2003-1098 et
+    2008-173 ; `loi2004-71` sans `page` ni `container-title` ;
+  - **`_assiette.qmd`** : le TODO sur l'art. 42 de la loi n° 60-30 (`#sec-cot-salaire-reel`)
+    est en partie levable avec la même matière (rédactions de 1960 et de 1995, décrets
+    d'exclusion) ; le décret n° 2000-1439 y a aussi sa place, son forfait valant pour les
+    régimes de sécurité sociale ; `tbl-assiettes` n'a pas de ligne AT/MP ;
+  - **glossaire — bloquant** : le chapitre ancre sept notions créées sans définition
+    (`assiette-cotisations`, `salaire-forfaitaire`, `remuneration-a-la-part`,
+    `employes-de-maison`, `louage`, `cotisation-supplementaire`, `maladie-professionnelle`) ;
+    `build_glossary.py` s'arrête sur `KeyError: 'definition'` tant que le terminologue ne
+    les a pas définies (FR et AR), et le `_glossaire.qmd` du livre n'est pas régénéré :
+    neuf liens de glossaire du chapitre restent sans cible (les sept, plus
+    `accident-du-travail` et `smag`, que ce livre n'ancrait pas encore) ;
+  - **recherches** : fiche `r-atmp-assiette-modificatifs` créée (aucun modificatif des
+    art. 3 à 27 autre que les décrets n° 99-1010 et 2000-1439) ; passe de plein texte
+    consignée sur `r-atmp-echelle-modificatifs`. Lacunes communes : édition arabe
+    1995-2004 sans texte exploitable ; 14 fascicules français de 1995-1998 à océriser ;
+    115 fascicules citant la loi n° 94-28 sans le décret, non parcourus un à un.
 - **Lecture immédiate** : l'article 4 du décret n° 2007-1406 (`2007/fr/Jo0492007.pdf`,
   source déjà lue pour la maladie) : établir sur pièce ce qu'il change au partage
   employeur/agent. Le décret-loi n° 2024-4 sur les travailleuses agricoles est désormais

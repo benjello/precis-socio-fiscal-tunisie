@@ -1886,6 +1886,254 @@ entries:
         قيد الحياة لفائدة القرين واليتامى.
       synonymes: []
 
+  # --- Accidents du travail : assiette et modulation de la cotisation (ticket #364).
+  # Passe 1 du 05/10/2026 : termes seuls ; passe 2 du même jour : définitions, écrites
+  # sur les textes cités par la note documentaire du ticket. Les termes arabes
+  # sont transcrits des scans de l'édition arabe du JORT par le documentaliste, non
+  # relus par un arabophone : d'où `provisoire` et l'absence de `source_traduction`.
+
+  - id: maladie-professionnelle
+    acronyme: null
+    # AR : « الأمراض المهنية » (loi n° 94-28, art. 90 ; décret n° 95-538, art. 10 et 22),
+    # ramené au singulier indéfini comme « حادث شغل ». Passe 2 du 05/10/2026 : l'article 3
+    # est lu — alinéas 3 à 6, éd. française par la couche texte, éd. arabe p. 300 à
+    # l'image : « يعتبر مرضا مهنيا كل ظاهرة اعتلال وكل تعفن جرثومي أو إصابة يكون مصدرها
+    # بالقرينة ناشئا عن النشاط المهني للمتضرر ». Le singulier est donc attesté. Reste
+    # `provisoire` : transcription d'un scan, non relue par un arabophone.
+    statut: provisoire
+    references: []
+    source_definition: {ref: loi94-28, locator: "art. 3"}
+    voir_aussi: [accident-du-travail, rente-accident-travail, cnam]
+    fr:
+      terme: Maladie professionnelle
+      definition: >
+        Toute manifestation morbide, infection microbienne ou affection dont l'origine
+        est imputable par présomption à l'activité professionnelle de la victime. La
+        liste des maladies présumées d'origine professionnelle et des principaux travaux
+        susceptibles d'en être à l'origine est fixée par arrêté conjoint des ministres de
+        la santé publique et des affaires sociales ; elle fixe aussi le délai de prise en
+        charge pendant lequel le travailleur qui n'est plus exposé aux causes de la
+        maladie conserve son droit à réparation, et elle est révisée au moins une fois
+        tous les trois ans.
+      synonymes: []
+    ar:
+      terme: مرض مهني
+      definition: >
+        كلّ ظاهرة اعتلال وكلّ تعفّن جرثومي أو إصابة يكون مصدرها بالقرينة ناشئًا عن النشاط
+        المهني للمتضرّر. وتُضبط قائمة الأمراض المعتبرة ذات مصدر مهني وأهمّ الأعمال التي قد
+        تكون سببًا فيها بقرار مشترك بين وزيري الصحّة العمومية والشؤون الاجتماعية؛ وتحدّد
+        هذه القائمة كذلك المدّة التي يظلّ فيها العامل مستحقًّا للتعويض بعد أن يصبح غير
+        معرّض لمسبّبات المرض، وتقع مراجعتها مرّة كلّ ثلاث سنوات على الأقلّ.
+      synonymes: []
+
+  - id: assiette-cotisations
+    acronyme: null
+    # AR : « قاعدة الإشتراك » (loi n° 95-101, art. 1er, art. 42 nouveau de la loi
+    # n° 60-30, JORT ar. p. 2333 ; le scan porte la hamza, le glossaire écrit
+    # « الاشتراك » comme dans ses définitions existantes). Variante : « قاعدة احتساب
+    # المساهمات » (intitulé du décret n° 2000-1439). À ne pas confondre avec
+    # `assiette-fiscale` (« الوعاء الضريبي »).
+    statut: provisoire
+    references: [loi60-30, loi94-28, decret95-538]
+    source_definition: {ref: loi95-101, locator: "art. 1er (art. 42 nouveau de la loi n° 60-30)"}
+    voir_aussi: [cotisations-sociales, salaire-forfaitaire, salaire-brut, assiette-fiscale]
+    fr:
+      terme: Assiette des cotisations
+      definition: >
+        Base sur laquelle les cotisations sont calculées. Dans le régime général de
+        sécurité sociale, elle comprend, depuis la loi n° 95-101, l'ensemble des éléments
+        des salaires, émoluments, indemnités et tous autres avantages, en espèces ou en
+        nature, liés à la qualité de salarié, accordés directement ou indirectement ; en
+        sont exclus, en tout ou en partie, les avantages revêtant un caractère de
+        remboursement de frais, d'indemnisation ou d'action sociale, culturelle et
+        sportive, dont un décret fixe la liste. Le régime de réparation des accidents du
+        travail et des maladies professionnelles n'a pas d'assiette propre : la loi
+        n° 94-28 (art. 17) et le décret n° 95-538 (art. 3) renvoient à celle de
+        l'article 42 de la loi n° 60-30. Des décrets peuvent lui substituer une
+        évaluation forfaitaire des salaires dans certaines professions.
+      synonymes: [assiette de cotisations]
+    ar:
+      terme: قاعدة الاشتراك
+      definition: >
+        الأساس الذي تُحتسب عليه الاشتراكات. وتشمل في النظام العام للضمان الاجتماعي، منذ
+        القانون عدد 101 لسنة 1995، مجموع عناصر الأجور والرواتب والمنح وغيرها من المنافع
+        النقدية أو العينية المرتبطة بصفة الأجير، الممنوحة بصفة مباشرة أو غير مباشرة؛
+        وتُعفى منها كليًّا أو جزئيًّا المنافع التي تكتسي صبغة استرجاع مصاريف أو تعويضات
+        أو عمل اجتماعي أو ثقافي أو رياضي، وتُضبط قائمتها بأمر. وليس لنظام جبر الأضرار
+        الحاصلة بسبب حوادث الشغل والأمراض المهنية قاعدة خاصّة به: فالقانون عدد 28 لسنة
+        1994 (الفصل 17) والأمر عدد 538 لسنة 1995 (الفصل 3) يحيلان على قاعدة الفصل 42 من
+        القانون عدد 30 لسنة 1960. ويمكن أن يُعوَّض عنها بأمر، بالنسبة لبعض المهن، تقدير
+        جزافي للأجور.
+      synonymes: [قاعدة احتساب المساهمات]
+
+  - id: salaire-forfaitaire
+    acronyme: null
+    # Trois formes arabes selon le texte : « أجر تقديري » (décret n° 95-538, art. 4 à 7,
+    # JORT ar. pp. 691-692) ; « الأجر الجزافي » (décret n° 2000-1439) ; « تقدير جزافي
+    # للأجور والمداخيل » (loi n° 94-28, art. 17, al. 2). Terme principal retenu :
+    # « تقديري », forme du décret qui institue les forfaits et rendu déjà suivi par
+    # `revenu-forfaitaire` et `regime-forfaitaire`. Distinct de `revenu-forfaitaire`,
+    # qui désigne les classes de revenus des non-salariés.
+    statut: provisoire
+    references: [loi94-28, decret99-1010, decret2000-1439]
+    source_definition: {ref: decret95-538, locator: "art. 4 à 7"}
+    voir_aussi: [assiette-cotisations, revenu-forfaitaire, smig, smag]
+    fr:
+      terme: Salaire forfaitaire
+      definition: >
+        Salaire fixé par décret, qui tient lieu des salaires réels pour le calcul des
+        cotisations de certaines catégories ou branches d'activité (loi n° 94-28,
+        art. 17, al. 2). Le décret n° 95-538 en institue quatre pour le régime des
+        accidents du travail et des maladies professionnelles — secteur agricole et pêche
+        à la part, chauffeurs de louage et de taxis et « masseurs » des bains maures,
+        employés de maison, travailleurs employés temporairement auprès des individus —,
+        exprimés en multiples du SMAG ou du SMIG rapportés à une durée de travail et
+        affectés, selon le cas, d'un coefficient. Le décret n° 2000-1439 fixe celui des
+        travailleurs du transport par taxi, louage et transport rural.
+      synonymes: [évaluation forfaitaire des salaires]
+    ar:
+      terme: الأجر التقديري
+      definition: >
+        أجر يُضبط بأمر ويقوم مقام الأجور الفعلية في احتساب اشتراكات بعض الأصناف أو
+        القطاعات (القانون عدد 28 لسنة 1994، الفصل 17، الفقرة 2). وقد أحدث الأمر عدد 538
+        لسنة 1995 أربعة منها في نظام حوادث الشغل والأمراض المهنية — القطاع الفلاحي
+        والصيد البحري بالحصّة، وسائقو سيارات الأجرة والتاكسي وطيّابة الحمّامات التقليدية،
+        وعمال المنازل، والعمال المشتغلون بصفة وقتية لدى الأفراد —، يُعبَّر عنها بمضاعفات
+        الأجر الأدنى الفلاحي المضمون أو الأجر الأدنى المضمون لمختلف المهن منسوبةً إلى مدّة
+        عمل، مع تطبيق ضارب عند الاقتضاء. وضبط الأمر عدد 1439 لسنة 2000 أجر العاملين
+        بقطاع النقل بسيارات التاكسي واللواج والنقل الريفي.
+      synonymes: [الأجر الجزافي, التقدير الجزافي للأجور]
+
+  - id: remuneration-a-la-part
+    acronyme: null
+    # FR : pêcheurs « payés à la part » ; AR : « يقع خلاص العمال فيها بالحصة » (décret
+    # n° 95-538, art. 4, al. 1, JORT ar. p. 691), nominalisé ici par le terminologue.
+    # Les définitions arabes de `revenu-forfaitaire` et `securite-sociale-pecheurs`
+    # écrivent « بالمناب », rendu non attesté : à aligner une fois le terme tranché.
+    statut: provisoire
+    references: []
+    source_definition: {ref: decret95-538, locator: "art. 4"}
+    voir_aussi: [securite-sociale-pecheurs, salaire-forfaitaire]
+    fr:
+      terme: Rémunération à la part
+      definition: >
+        Mode de paiement des pêcheurs que le décret n° 95-538 retient comme critère :
+        les cotisations d'accidents du travail des pêcheurs « payés à la part » et
+        employés sur des bateaux de moins de trente tonneaux de jauge sont calculées sur
+        un salaire forfaitaire, comme celles du secteur agricole, pour les travailleurs
+        dont le salaire n'excède pas deux fois le SMAG. Le décret emploie l'expression
+        sans la définir.
+      synonymes: [pêche à la part]
+    ar:
+      terme: الخلاص بالحصة
+      definition: >
+        طريقة خلاص الصيادين البحريين التي اعتمدها الأمر عدد 538 لسنة 1995 معيارًا: تُحتسب
+        اشتراكات حوادث الشغل على أساس أجر تقديري بالنسبة لمراكب الصيد البحري التي تقلّ
+        حمولتها عن ثلاثين طنًّا حجميًّا والتي يقع خلاص العمال فيها بالحصّة، شأنها شأن
+        القطاع الفلاحي، وذلك للعمال الذين لا تتجاوز أجورهم مرّتين الأجر الأدنى الفلاحي
+        المضمون. ويستعمل الأمر العبارة دون أن يعرّفها.
+      synonymes: []
+
+  - id: employes-de-maison
+    acronyme: null
+    # AR : « عمال المنازل » (décret n° 95-538, art. 6 et 8, JORT ar. p. 692). Le
+    # français du décret dit « employés de maison » (art. 6) et « gens de maison »
+    # (art. 8) ; la loi n° 2021-37 dit « travailleurs domestiques ». Une définition
+    # existante du glossaire écrit « عملة المنازل ».
+    statut: provisoire
+    references: []
+    source_definition: {ref: decret95-538, locator: "art. 6"}
+    voir_aussi: [salaire-forfaitaire, smag]
+    fr:
+      terme: Employés de maison
+      definition: >
+        Catégorie de travailleurs dont le décret n° 95-538 fixe directement la cotisation
+        d'accidents du travail, en pourcentage du SMAG rapporté à 300 jours par an. Il en
+        distingue trois groupes : les aides de ménage, les autres employés de maison
+        sauf les chauffeurs, et les conducteurs de voitures ; les réparations sont
+        calculées sur la même base. Leurs cotisations peuvent être payées annuellement
+        ou au moment de la demande d'affiliation provisoire (art. 8, qui les nomme
+        « gens de maison »). Le décret ne définit pas la catégorie.
+      synonymes: [gens de maison, travailleurs domestiques]
+    ar:
+      terme: عمال المنازل
+      definition: >
+        صنف من العمال يضبط الأمر عدد 538 لسنة 1995 اشتراكهم بعنوان حوادث الشغل مباشرةً،
+        بنسبة مئوية من الأجر الأدنى الفلاحي المضمون المرتبط بمدّة شغل تساوي 300 يوم في
+        السنة. ويميّز فيه ثلاث فئات: معينو ومعينات المنازل، وعمال المنازل الآخرون من غير
+        السوّاق، وسوّاق السيارات؛ وتُحسب التعويضات على نفس الأساس. ويمكن دفع اشتراكاتهم
+        سنويًّا أو عند طلب الانخراط الوقتي (الفصل 8). ولا يعرّف الأمر هذا الصنف.
+      synonymes: []
+
+  - id: louage
+    acronyme: null
+    # AR : « اللواج » (décret n° 2000-1439 : « سيارات التاكسي واللواج وسيارات النقل
+    # الريفي »). Le décret n° 95-538, art. 5, écrit en arabe « سيارات الأجرة والتاكسي »
+    # là où le français dit « louage et taxis ».
+    statut: provisoire
+    references: [decret95-538]
+    source_definition: {ref: decret2000-1439}
+    voir_aussi: [salaire-forfaitaire, smig]
+    fr:
+      terme: Louage
+      definition: >
+        Mode de transport public des personnes que le décret n° 2000-1439 range avec le
+        taxi et le transport rural. Les cotisations de ses travailleurs, aux régimes de
+        sécurité sociale comme au régime des accidents du travail et des maladies
+        professionnelles, sont calculées sur un salaire forfaitaire : le SMIG du régime
+        de 48 heures rapporté à 2 400 heures par an, depuis le 1er juillet 2000. Le décret
+        n° 95-538 (art. 5) soumet à un salaire forfaitaire les « chauffeurs de louage et
+        de taxis » dans son édition française ; son édition arabe ne nomme pas le louage.
+        Aucun de ces deux textes ne définit le louage.
+      synonymes: [voiture de louage]
+    ar:
+      terme: اللواج
+      definition: >
+        نمط من النقل العمومي للأشخاص يذكره الأمر عدد 1439 لسنة 2000 مع سيارات التاكسي
+        وسيارات النقل الريفي. وتُحسب اشتراكات العاملين به، بعنوان أنظمة الضمان الاجتماعي
+        وبعنوان نظام حوادث الشغل والأمراض المهنية، على أساس أجر جزافي: الأجر الأدنى
+        المضمون لمختلف المهن، نظام 48 ساعة، المرتبط بمدّة شغل تساوي 2400 ساعة في السنة،
+        وذلك بداية من غرّة جويلية 2000. ويُخضع الأمر عدد 538 لسنة 1995 (الفصل 5) لأجر
+        تقديري « سائقي سيارات الأجرة والتاكسي » في صيغته العربية، التي لا تذكر اللواج،
+        حيث تقول صيغته الفرنسية « سائقي اللواج والتاكسي ». ولا يعرّف أيّ من النصّين
+        اللواج.
+      synonymes: [سيارات الأجرة]
+
+  - id: cotisation-supplementaire
+    acronyme: null
+    # AR : « الإشتراك الإضافي » et « المساهمات الإضافية » (décret n° 95-538, art. 13 et
+    # 16 à 20, JORT ar. pp. 692-693), par opposition aux « cotisations principales »,
+    # « المساهمات الأصلية » (art. 17, 21 et 24). Graphie sans hamza, comme le reste du
+    # glossaire.
+    statut: provisoire
+    references: [loi94-28]
+    source_definition: {ref: decret95-538, locator: "art. 13 et 16 à 20"}
+    voir_aussi: [accident-du-travail, maladie-professionnelle, cotisations-sociales]
+    fr:
+      terme: Cotisation supplémentaire
+      definition: >
+        Majoration que la caisse peut imposer à l'employeur qui n'a pas remédié, dans le
+        délai qu'elle lui a notifié, aux manquements constatés aux règles d'hygiène, de
+        sécurité et de prévention des risques professionnels. Elle s'ajoute aux
+        cotisations principales d'accidents du travail et de maladies professionnelles
+        et s'exprime en proportion de celles-ci : 50 %, taux qui peut être doublé
+        (art. 17), les cotisations supplémentaires étant portées à 100 % si le refus ou
+        la négligence persistent (art. 18). Elle s'applique à compter du trimestre qui
+        suit celui où la mise en demeure a expiré, et elle est supprimée, en tout ou en
+        partie, quand l'employeur prouve qu'il s'est conformé aux mesures prescrites.
+      synonymes: [majoration de la cotisation]
+    ar:
+      terme: الاشتراك الإضافي
+      definition: >
+        ترفيع يمكن للصندوق أن يفرضه على صاحب العمل الذي لم يتدارك، في الأجل الذي أُعلم به،
+        ما عُوين من إخلال بقواعد حفظ الصحّة والسلامة والوقاية من الأخطار المهنية. ويُضاف
+        إلى المساهمات الأصلية بعنوان حوادث الشغل والأمراض المهنية ويُعبَّر عنه بنسبة
+        منها: 50 بالمائة، ويمكن مضاعفة هذه النسبة (الفصل 17)، وتُرفَّع المساهمات الإضافية
+        إلى 100 بالمائة إذا تواصل الرفض أو الإهمال (الفصل 18). ويُطبَّق بداية من الثلاثية
+        الموالية لتلك التي انتهى فيها أجل التنبيه، ويُحذف كليًّا أو جزئيًّا متى أثبت صاحب
+        العمل امتثاله للإجراءات المطلوبة.
+      synonymes: [المساهمات الإضافية]
+
   - id: ayant-droit
     acronyme: null
     statut: valide
