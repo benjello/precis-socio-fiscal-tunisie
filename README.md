@@ -17,6 +17,7 @@ télécharge aussi en PDF.
 | IV. Retraites | les régimes de retraite des secteurs public et privé |
 | V. Caisses de sécurité sociale | la CNSS, la CNRPS et la CNAM : leur lignée, leur statut, leurs comptes par régime et leurs relations avec l'État |
 | VI. Rémunérations publiques | statuts, grilles, indemnités des agents publics |
+| VII. Finances locales | fiscalité locale, transferts de l'État et budgets des collectivités locales |
 | VIII. Marché du travail | salaire minimum, conventions collectives et négociations salariales du secteur privé |
 
 Chaque dispositif y est présenté dans son histoire, réforme par réforme, avec des tableaux datés

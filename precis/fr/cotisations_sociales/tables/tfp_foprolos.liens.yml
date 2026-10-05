@@ -1,0 +1,9 @@
+- libelle: Taxe de formation professionnelle, industries manufacturières
+  parametre: parameters/prelevements_sociaux/autres/tfp/taux_industries_manufacturieres.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.autres.tfp.taux_industries_manufacturieres/table/
+- libelle: Taxe de formation professionnelle, autres secteurs
+  parametre: parameters/prelevements_sociaux/autres/tfp/taux_autres_secteurs.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.autres.tfp.taux_autres_secteurs/table/
+- libelle: Contribution au FOPROLOS
+  parametre: parameters/prelevements_sociaux/autres/foprolos/taux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.autres.foprolos.taux/table/

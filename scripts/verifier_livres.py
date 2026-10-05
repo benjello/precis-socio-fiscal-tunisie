@@ -11,7 +11,7 @@ import json
 import re
 import sys
 
-LIVRES = ("caisses", "cotisations_sociales", "fiscalite", "marche_travail",
+LIVRES = ("caisses", "cotisations_sociales", "finances_locales", "fiscalite", "marche_travail",
           "prestations_sociales", "remunerations_publiques", "retraites")
 
 # Un fichier sous ces préfixes touche potentiellement TOUS les livres : les
