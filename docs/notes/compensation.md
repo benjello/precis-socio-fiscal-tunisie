@@ -61,11 +61,18 @@ Constats utiles au rédacteur :
 | Date d'effet | Texte | Source | Contenu | Niv. |
 |---|---|---|---|---|
 | 1991 | loi n° 91-45 du 1er juillet 1991, produits pétroliers, art. 17 | JORT n° 49 de 1991, pp. 1264-1266 | base légale de la commission des prix des produits pétroliers (visée par les arrêtés de 2016 et 2020) | [M] |
-| 2004 | — (constat budgétaire) | rapport « Finances publiques » 2005, p. PDF 38 ; rapport du 21 juillet 2014, p. 3 | première dépense budgétaire de compensation des carburants : **203,0 MD en 2004**, aucune en 2003 ; le rapport de 2014 date de 2004 le début de la subvention des carburants et de l'électricité | [T] |
+| 2004 | — (constat budgétaire) | rapport « Finances publiques » 2005, p. PDF 38 ; rapport du 21 juillet 2014, p. 3 | **première ligne budgétaire** de compensation des carburants : **203,0 MD en 2004**, tiret en 2003 ; le rapport de 2014 date de 2004 le début de la subvention des carburants et de l'électricité | [T] |
 | 2016-07 | arrêté des ministres de l'énergie et des finances du 15 juillet 2016, art. 5 | JORT n° 61 du 26 juill. 2016, p. 2334 | « mise en place du **mécanisme d'ajustement automatique** des prix de l'essence sans plomb, du gasoil ordinaire et du gasoil 50 » ; la commission se réunit **tous les trois mois**, sur trois mois mobiles de prix internationaux ; abroge l'arrêté du 13 février 1992 | [T] |
 | 2020-04-01 | arrêté du 31 mars 2020, art. 5 et 10 | JORT n° 28 du 3 avr. 2020, pp. 731-732 | ajustement **mensuel** ; variation plafonnée à **1,5 %** du prix en vigueur, à la hausse comme à la baisse, **2 % à compter du 1er janvier 2021** ; abroge l'arrêté de 2016 | [T] |
 | 2021-04-01 | arrêté du 7 avril 2021 | JORT n° 32 du 8 avr. 2021, p. 775 | plafond mensuel porté à **5 %** ; évaluation annuelle du mécanisme | [T] |
 
+- **2004 n'est pas l'entrée des produits pétroliers dans la compensation**, seulement leur
+  apparition comme dépense du budget. Dès 1971 une taxe unique de compensation sur les carburants
+  alimente la CGC (les carburants la financent) ; en 1976 la CGC reprend le compte de
+  stabilisation des produits pétroliers finis ; et la Banque mondiale note en 1985 que le soutien
+  à la consommation d'énergie passe alors hors CGC, compensé par la fiscalité pétrolière
+  (`wb_1985_5328_cem_a.pdf`, p. PDF 35, note 15) **[S]**. Le sens du flux entre 1976 et 2004 n'est
+  pas établi.
 - Le JORT n° 28 de 2020 manque au corpus local ; lu sur
   `https://www.pist.tn/record/143965/files/Jo0282020.pdf` (l'adresse conventionnelle
   `/jort/2020/2020F/Jo0282020.pdf` répond 404 le 5 octobre 2026). L'arrêté de 2016 est absent des
@@ -121,20 +128,29 @@ construire** dans l'entrepôt avec sa fiche de provenance.
 | 2015 | 2 882,9 | 1 549,0 | 918,0 | 415,9 | `…/2017-01_resultats_provisoires_execution.pdf` (provisoire 2015-12 : 2 863,9) | [T°] |
 | 2016 | 2 210,7 | 1 580,7 | 197,0 | 433,0 | idem ; BCT, rapport annuel 2017, p. PDF 51 | [T°] |
 | 2017 | 3 492,2 | 1 494,0 | 1 550,0 | 448,2 | `…/2018_resultats_provisoires_execution_budget_fin_juillet_jd1447.pdf` ; BCT 2017 | [T°] |
-| 2018 | 4 900,0 | 1 750,0 | 2 700,0 | 450,0 | BCT, rapport annuel 2019, p. PDF 68 (LF 2018 : 3 520,0) ; en-tête de colonnes non relu : années déduites de la disposition des autres rapports | [S] |
-| 2019 | 4 789,5 | 1 800,0 | 2 538,0 | 451,5 | idem, même réserve | [S] |
-| 2020 | — | — | — | — | BCT, rapport annuel 2020 ou 2021 : tableau non extrait | — |
-| 2021 | 6 031,0 | — | — | — | BCT, rapport annuel 2022, p. PDF 68 (en-tête non relu) | [S] |
-| 2022 | 11 999,0 | 3 771,0 | 7 628,0 | 600,0 | BCT, rapport annuel 2023, p. PDF 72 | [S] |
+| 2018 | 4 900,0 | 1 750,0 | 2 700,0 | 450,0 | BCT, rapport annuel 2019, p. PDF 68, colonnes « 2018, 2019, 2020 » (LF 2018 : 3 520,0) | [S] |
+| 2019 | 4 789,5 | 1 800,0 | 2 538,0 | 451,5 | idem (LF 2020 : 4 180,0 / 1 800,0 / 1 880,0 / 500,0) | [S] |
+| 2020 | 4 486 | 2 416 | 1 470 | 600 | BCT, rapport annuel 2021 (`ANNUALREPORT2021FRENCH.pdf`), p. PDF 67, colonnes « 2020, 2021, 2022 » | [S] |
+| 2021 | 6 031 | 2 200 | 3 327 | 504 | idem ; BCT, rapport annuel 2022, p. PDF 68 | [S] |
+| 2022 | 11 999,0 | 3 771,0 | 7 628,0 | 600,0 | BCT, rapports annuels 2022 (p. PDF 68) et 2023 (p. PDF 72) ; la LF 2022 prévoyait 7 262 (3 771 / 2 891 / 600) | [S] |
 | 2023 | 11 479,5 | 3 809,5 | 7 030,0 | 640,0 | BCT, rapport annuel 2024, p. PDF 75 (rapport 2023 : 11 475,0 / 3 805,0) | [S] |
 | 2024 | 11 347,5 | 3 601,5 | 7 086,0 | 660,0 | idem | [S] |
 | 2025 (LF) | 11 593,0 | 3 801,0 | 7 112,0 | 680,0 | idem, « provisoires (LF 2025). Source : ministère des Finances » | [S] |
 
 Réserves à porter dans la fiche de série :
 
+- **Rupture de périmètre en 2015.** Les bulletins d'exécution notent : « Dans le cadre de la LFC
+  2015, l'hypothèse de prix du baril de pétrole a été révisée de 95 $ pour la LF à 62 $ pour la LFC
+  et le principe de séparation des opérations de commercialisation des hydrocarbures a été
+  adopté » (2015-12, p. PDF 10 ; 2017-01, p. PDF 9) **[T]**, et le bulletin 2015-12 porte une ligne
+  « dont avance sur compensation carburants ». La chute de la ligne « carburants » (2 353 MD en
+  2014, 918 en 2015, 197 en 2016) mêle donc la baisse du pétrole et un changement de
+  comptabilisation dont le contenu n'est pas établi ici : ne pas la présenter comme un pur effet
+  de prix.
 - **Trois producteurs, un même tableau.** Les rapports « Finances publiques » (2003-2011), les
   bulletins d'exécution (2010-2018) et la BCT (qui cite le ministère) reprennent le même tableau du
-  ministère des Finances ; les raccords 2010-2011 et 2014-2017 concordent au dixième.
+  ministère des Finances ; les raccords 2010-2011 et 2014-2017 concordent au dixième. Les lignes [S] sont lues sur la
+  couche texte des rapports de la BCT, en-têtes de colonnes contrôlés pour 2018-2025.
 - **Révisions.** Chaque année existe en LF, LFC, provisoire et réalisé : 2005 (790 ou 788,9),
   2007 (1 281 ou 1 282,4), 2015 (2 863,9 puis 2 882,9), 2023 (11 475,0 puis 11 479,5). Retenir la
   dernière publication et le dire.
@@ -192,11 +208,34 @@ fondue dans « Interventions et transferts ».
 
 ## 3. Incidence : qui bénéficie
 
-Aucun chiffre d'incidence n'est vérifié sur pièce dans cette note. État des sources :
+Une seule étude est lue ici, sur les subventions **alimentaires** ; rien n'est lu sur l'énergie.
+
+**INS, CRES et BAD, *Analyse de l'impact des subventions alimentaires et des programmes
+d'assistance sociale sur la population pauvre et vulnérable*, juin 2013, 52 p.**
+(`http://www.cres.tn/uploads/tx_wdbiblio/rapport_impact_des_subvention_01.pdf`, en HTTP simple ;
+l'adresse HTTPS refuse la connexion). Données : enquête nationale sur le budget, la consommation
+et le niveau de vie des ménages de 2010. Lu sur couche texte nette **[T]** :
+
+| Grandeur | Valeur | Page PDF |
+|---|---|---|
+| Subventions alimentaires reçues par les ménages, contre budget de la CGC | 888 MD contre environ 1 150 MD ; 262 MD « hors ménages » (restaurants, cafés, hôtels, commerce frontalier) | 19 |
+| Répartition du budget de la CGC | **9,2 %** aux ménages pauvres (107 MD), **60,5 %** à la classe moyenne, **7,5 %** à la population aisée, **22,8 %** hors ménages | 7, 19 |
+| Subvention annuelle par tête, du 1er au 5e quintile (tableau 1) | 68,2 ; 84,2 ; 87,5 ; 89,9 ; 89,1 D | 16 |
+| Idem, pauvres contre non-pauvres (tableau 2) | 64,8 D contre 87,2 D | 16 |
+| Produits : gros pain par tête, Q1 → Q5 ; semoule, Q1 → Q5 | 20,6 → 28,5 D ; 17,0 → 12,1 D (seul produit décroissant avec le revenu) | 16 |
+| Suppression des subventions, effet immédiat sur le taux de pauvreté | +3,6 points (de 15,5 % à 19,1 %) ; pauvreté extrême +1,7 point ; après adaptation des consommations : 16,8 % | 7 |
+| Indice de Gini 2010, avec et sans subventions | 37,4 % contre 38,5 % | 7 |
+| Indice de ciblage absolu | 0,82 pour le 1er quintile, 1,07 pour le 5e | 7 |
+
+Lecture économique : le transfert est presque uniforme par tête (donc progressif en proportion du
+revenu, d'où l'effet sur la pauvreté et sur le Gini), mais légèrement croissant en dinars, et près
+du quart de la dépense ne va pas aux ménages. Les définitions des « classes » (pauvres, classe
+moyenne, aisés) sont à relever dans le rapport avant citation.
+
+État des autres sources :
 
 | Source | Objet | Accès | Ce qui est repris, et de qui |
 |---|---|---|---|
-| INS, CRES et BAD, *Analyse de l'impact des subventions alimentaires et des programmes d'assistance sociale sur la population pauvre et vulnérable*, juin 2013 | incidence des subventions alimentaires de la CGC, enquête budget-consommation | `http://www.cres.tn/uploads/tx_wdbiblio/rapport_impact_des_subvention_01.pdf` — connexion refusée le 5 octobre 2026 | d'après un résumé de moteur de recherche, **non lu** : 9,2 % des subventions aux ménages pauvres, 60,5 % à la classe moyenne, 7,5 % aux aisés, 22,8 % hors ménages [S, à vérifier] |
 | Banque mondiale, *Vers une meilleure équité : les subventions énergétiques, le ciblage et la protection sociale en Tunisie*, 2013, rapport n° 82712-TN | incidence des subventions énergétiques par quintile | `https://documents.worldbank.org/en/publication/documents-reports/documentdetail/915461468308679840/…` — page non lisible par l'outil | rien n'est repris |
 | Cuesta, El-Lahga et Lara Ibarra, *The Socioeconomic Impacts of Energy Reform in Tunisia: A Simulation Approach*, Policy Research Working Paper 7312, Banque mondiale, 2015 | simulation d'une réforme des subventions énergétiques | Open Knowledge Repository — 403 le 5 octobre 2026 | rien n'est repris |
 | Jouini, Lustig, Moummi et Shimeles, « Fiscal Policy, Income Redistribution, and Poverty Reduction: Evidence from Tunisia », *Review of Income and Wealth*, vol. 64, 2018, pp. S225-S248 | incidence fiscale d'ensemble (CEQ), année 2010 | revue ; CEQ Working Paper 38 | référence relevée, article non lu |
@@ -215,52 +254,72 @@ résultats de l'outil d'origine est exploitable.
 
 `fmi-1996-red`, `bm-1995-pauvrete-annexes`, `bm-1990-cem-8044-vol1`, `fmi-1997-selected-issues`
 (`precis/fr/retraites/references.json`) ; `bm-1993-social-protection` (`precis/fr/references.json`) ;
-`lf-1983` (`precis/fr/fiscalite/references.json` — à vérifier : loi n° 83-113 ou loi de finances
-pour 1983).
+`lf-2013` (loi n° 2012-27) et `lf-2014` (loi n° 2013-54), `loi75-83` (LF 1976) dans
+`precis/fr/references.json` ; `lf-2013` aussi dans `cotisations_sociales`. Attention : `lf-1983`
+(`fiscalite`) est la loi n° 82-91, loi de finances **pour 1983** — ce n'est pas la loi n° 83-113.
+Usage de la maison : `lf-<année du budget>`, `lfc-<année>`, champ `issue` pour le numéro du JORT.
+Contrôle fait le 5 octobre 2026 sur tous les `references.json` français.
 
 ### 4.2 À créer — ébauches CSL-JSON (FR)
 
+Pour `lf-2013`, `lf-2014` et `loi75-83`, déjà présentes, seuls les locators sont à ajouter à
+l'appel : art. 63 (JORT n° 1 du 1er janvier 2013, pp. 17-18) ; art. 76 (JORT n° 105 du 31 déc.
+2013, pp. 3692-3693) ; art. 67-69 (JORT n° 87, 30-31 déc. 1975, pp. 2856-2857).
+
+URL contrôlées le 5 octobre 2026 par `curl -sk` (code 200, `application/pdf`, 280 ko au moins)
+pour toutes les adresses pist.tn ci-dessous, éditions française et arabe ; le contenu des
+fichiers arabes n'a pas été ouvert (une adresse peut servir l'autre édition).
+
 ```json
 [
-  {"id": "loi70-26", "type": "legislation", "title": "Loi n° 70-26 du 19 mai 1970, relative aux modalités de fixation des prix et à la répression des infractions en matière économique", "authority": "République tunisienne", "issued": {"date-parts": [[1970, 5, 19]]}, "container-title": "Journal officiel de la République tunisienne", "number": "27", "page": "617-621", "URL": "https://www.pist.tn/jort/1970/1970F/Jo02770.pdf", "note": "citation-key: loi70-26\nArt. 3 : institution de la Caisse générale de compensation. Lu par OCR ; à relire à l'image. Date du fascicule à relever au pied de page."},
-  {"id": "loi70-66-lf-1971", "type": "legislation", "title": "Loi n° 70-66 du 31 décembre 1970, portant loi de finances pour la gestion 1971", "issued": {"date-parts": [[1970, 12, 31]]}, "container-title": "Journal officiel de la République tunisienne", "number": "58", "page": "1454-1470", "URL": "https://www.pist.tn/jort/1970/1970F/Jo05870.pdf", "note": "citation-key: loi70-66-lf-1971\nJORT n° 58 des 29-31 décembre 1970. Art. 48 (p. 1459) : la CGC, fonds spécial du Trésor. Tableau F (p. 1470) : 7 000 000 D."},
-  {"id": "decret70-622", "type": "legislation", "title": "Décret n° 70-622 du 31 décembre 1970, portant consolidation et simplification des droits et taxes perçus sur certains produits pétroliers", "issued": {"date-parts": [[1970, 12, 31]]}, "container-title": "Journal officiel de la République tunisienne", "number": "58", "page": "1476-1477", "URL": "https://www.pist.tn/jort/1970/1970F/Jo05870.pdf", "note": "citation-key: decret70-622\nArt. 5 : taxe unique de compensation au profit de la CGC. Effet 1er janvier 1971 (art. 6)."},
-  {"id": "loi75-83-lf-1976", "type": "legislation", "title": "Loi n° 75-83 du 30 décembre 1975, portant loi de finances pour la gestion 1976", "issued": {"date-parts": [[1975, 12, 30]]}, "container-title": "Journal officiel de la République tunisienne", "number": "87", "page": "2856-2857", "URL": "https://www.pist.tn/jort/1975/1975F/Jo08775.pdf", "note": "citation-key: loi75-83-lf-1976\nArt. 67-69. Lu par OCR."},
-  {"id": "loi83-113-lf-1984", "type": "legislation", "title": "Loi n° 83-113 du 30 décembre 1983, portant loi de finances pour la gestion 1984", "issued": {"date-parts": [[1983, 12, 30]]}, "container-title": "Journal officiel de la République tunisienne", "number": "86", "page": "3384, 3422", "URL": "https://www.pist.tn/jort/1983/1983F/Jo08683.pdf", "note": "citation-key: loi83-113-lf-1984\nJORT n° 86 du 30 décembre 1983. Art. 87 (p. 3384) ; tableau F (p. 3422). Vérifier le doublon éventuel avec « lf-1983 »."},
-  {"id": "loi84-2-lfc-1984", "type": "legislation", "title": "Loi n° 84-2 du 21 mars 1984, portant loi de finances complémentaire pour la gestion 1984", "issued": {"date-parts": [[1984, 3, 21]]}, "container-title": "Journal officiel de la République tunisienne", "number": "19", "page": "667-669", "URL": "https://www.pist.tn/jort/1984/1984F/Jo01984.pdf", "note": "citation-key: loi84-2-lfc-1984\nJORT n° 19 des 20-23 mars 1984. Art. 6, 27, 28, 29."},
-  {"id": "loi89-88-lfc-1989", "type": "legislation", "title": "Loi n° 89-88 du 3 novembre 1989, portant loi de finances complémentaire pour la gestion 1989", "issued": {"date-parts": [[1989, 11, 3]]}, "container-title": "Journal officiel de la République tunisienne", "number": "73", "page": "1718", "URL": "https://www.pist.tn/jort/1989/1989F/Jo07389.pdf", "note": "citation-key: loi89-88-lfc-1989\nJORT n° 73 du 3 novembre 1989. Art. 3-8."},
-  {"id": "loi2012-27-lf-2013", "type": "legislation", "title": "Loi n° 2012-27 du 29 décembre 2012, portant loi de finances pour l'année 2013", "issued": {"date-parts": [[2012, 12, 29]]}, "container-title": "Journal officiel de la République tunisienne", "number": "1", "page": "17-18", "URL": "https://www.pist.tn/jort/2013/2013F/Jo0012013.pdf", "note": "citation-key: loi2012-27-lf-2013\nJORT n° 1 du 1er janvier 2013. Art. 63 : redevance de compensation. URL non testée."},
-  {"id": "loi2013-54-lf-2014", "type": "legislation", "title": "Loi n° 2013-54 du 30 décembre 2013, portant loi de finances pour l'année 2014", "issued": {"date-parts": [[2013, 12, 30]]}, "container-title": "Journal officiel de la République tunisienne", "number": "105", "page": "3692-3693", "URL": "https://www.pist.tn/jort/2013/2013F/Jo1052013.pdf", "note": "citation-key: loi2013-54-lf-2014\nJORT n° 105 du 31 décembre 2013. Art. 76. Une clé existe peut-être déjà pour cette loi : vérifier."},
-  {"id": "arrete-2016-07-15-prix-petroliers", "type": "legislation", "title": "Arrêté du ministre de l'énergie et des mines et du ministre des finances du 15 juillet 2016, relatif à la composition et au fonctionnement de la commission chargée de fixer et de suivre les prix de vente des produits pétroliers finis importés et ceux raffinés localement", "issued": {"date-parts": [[2016, 7, 15]]}, "container-title": "Journal officiel de la République tunisienne", "number": "61", "page": "2334", "URL": "https://www.pist.tn/jort/2016/2016F/Jo0612016.pdf", "note": "citation-key: arrete-2016-07-15-prix-petroliers\nJORT n° 61 du 26 juillet 2016. Intitulé repris de l'art. 9 de l'arrêté du 31 mars 2020 ; page de début à relever. Art. 5 : ajustement automatique trimestriel."},
-  {"id": "arrete-2020-03-31-prix-petroliers", "type": "legislation", "title": "Arrêté du ministre de l'énergie, des mines et de la transition énergétique et du ministre des finances du 31 mars 2020, fixant la composition et le fonctionnement de la Commission technique chargée de la fixation et du suivi des prix de vente des produits pétroliers finis importés et ceux raffinés localement", "issued": {"date-parts": [[2020, 3, 31]]}, "container-title": "Journal officiel de la République tunisienne", "number": "28", "page": "731-732", "URL": "https://www.pist.tn/record/143965/files/Jo0282020.pdf", "note": "citation-key: arrete-2020-03-31-prix-petroliers\nJORT n° 28 du 3 avril 2020. L'adresse /jort/2020/2020F/Jo0282020.pdf répond 404 (5 octobre 2026) ; l'URL de notice est la seule qui serve le fascicule."},
-  {"id": "arrete-2021-04-07-prix-petroliers", "type": "legislation", "title": "Arrêté du ministre de l'industrie, de l'énergie et des mines par intérim et du ministre de l'économie, des finances et de l'appui à l'investissement du 7 avril 2021, portant modification de l'arrêté du 31 mars 2020", "issued": {"date-parts": [[2021, 4, 7]]}, "container-title": "Journal officiel de la République tunisienne", "number": "32", "page": "775", "URL": "https://www.pist.tn/jort/2021/2021F/Jo0322021.pdf", "note": "citation-key: arrete-2021-04-07-prix-petroliers\nJORT n° 32 du 8 avril 2021."},
-  {"id": "minfin-finances-publiques-2005", "type": "report", "title": "تقرير المالية العمومية لسنة 2005", "author": [{"literal": "Ministère des Finances (Tunisie)"}], "publisher": "Ministère des Finances", "publisher-place": "Tunis", "language": "ar", "note": "citation-key: minfin-finances-publiques-2005\nFichier : tunisia-data, minfinances/portail_ancien/rapports_finances_publiques/2005_rapport_finances_publiques.pdf. Date de parution et URL : dans sources/minfinances-portail-ancien-urls.csv."},
-  {"id": "minfin-finances-publiques-2008", "type": "report", "title": "تقرير المالية العمومية لسنة 2008", "author": [{"literal": "Ministère des Finances (Tunisie)"}], "publisher": "Ministère des Finances", "publisher-place": "Tunis", "language": "ar", "note": "citation-key: minfin-finances-publiques-2008\nFichier : …/2008_rapport_finances_publiques.pdf (151 p.). Date et URL : catalogue."},
-  {"id": "minfin-finances-publiques-2011", "type": "report", "title": "تقرير المالية العمومية لسنة 2011", "author": [{"literal": "Ministère des Finances (Tunisie)"}], "publisher": "Ministère des Finances", "publisher-place": "Tunis", "language": "ar", "note": "citation-key: minfin-finances-publiques-2011\nFichier : …/2011_finances_publiques.pdf (106 p.). Titre à relire sur la couverture ; date et URL : catalogue."},
-  {"id": "minfin-compensation-carburants-2014", "type": "report", "title": "Rapport définitif sur la compensation des carburants", "author": [{"literal": "Contrôle général des finances"}, {"literal": "Contrôle général des services publics"}, {"literal": "Contrôle général des domaines de l'État et des affaires foncières"}], "issued": {"date-parts": [[2014, 7, 21]]}, "publisher": "Ministère de l'Économie et des Finances", "publisher-place": "Tunis", "language": "ar", "number-of-pages": "192", "URL": "http://finances.gov.tn/images/Rapport_Def21-07-2014-comp_carbur.pdf", "note": "citation-key: minfin-compensation-carburants-2014\nTitre français repris du catalogue ; le titre arabe est à relever sur la couverture. Adresse d'origine morte : donner l'adresse Wayback du catalogue."},
+  {"id": "loi70-26", "type": "legislation", "title": "Loi n° 70-26 du 19 mai 1970, relative aux modalités de fixation des prix et à la répression des infractions en matière économique", "authority": "République tunisienne", "issued": {"date-parts": [[1970, 5, 19]]}, "container-title": "Journal officiel de la République tunisienne", "issue": "27", "page": "617-621", "URL": "https://www.pist.tn/jort/1970/1970F/Jo02770.pdf", "note": "citation-key: loi70-26\nArt. 3 : institution de la Caisse générale de compensation. Lu par OCR ; à relire à l'image. Date du fascicule à relever au pied de page."},
+  {"id": "lf-1971", "type": "legislation", "title": "Loi n° 70-66 du 31 décembre 1970, portant loi de finances pour la gestion 1971", "issued": {"date-parts": [[1970, 12, 31]]}, "container-title": "Journal officiel de la République tunisienne", "issue": "58", "page": "1454-1470", "URL": "https://www.pist.tn/jort/1970/1970F/Jo05870.pdf", "note": "citation-key: lf-1971\nJORT n° 58 des 29-31 décembre 1970. Art. 48 (p. 1459) : la CGC, fonds spécial du Trésor. Tableau F (p. 1470) : 7 000 000 D."},
+  {"id": "decret70-622", "type": "legislation", "title": "Décret n° 70-622 du 31 décembre 1970, portant consolidation et simplification des droits et taxes perçus sur certains produits pétroliers", "issued": {"date-parts": [[1970, 12, 31]]}, "container-title": "Journal officiel de la République tunisienne", "issue": "58", "page": "1476-1477", "URL": "https://www.pist.tn/jort/1970/1970F/Jo05870.pdf", "note": "citation-key: decret70-622\nArt. 5 : taxe unique de compensation au profit de la CGC. Effet 1er janvier 1971 (art. 6)."},
+  {"id": "lf-1984", "type": "legislation", "title": "Loi n° 83-113 du 30 décembre 1983, portant loi de finances pour la gestion 1984", "issued": {"date-parts": [[1983, 12, 30]]}, "container-title": "Journal officiel de la République tunisienne", "issue": "86", "page": "3384, 3422", "URL": "https://www.pist.tn/jort/1983/1983F/Jo08683.pdf", "note": "citation-key: lf-1984\nJORT n° 86 du 30 décembre 1983. Art. 87 (p. 3384) ; tableau F (p. 3422). Distincte de « lf-1983 » (loi n° 82-91)."},
+  {"id": "lfc-1984", "type": "legislation", "title": "Loi n° 84-2 du 21 mars 1984, portant loi de finances complémentaire pour la gestion 1984", "issued": {"date-parts": [[1984, 3, 21]]}, "container-title": "Journal officiel de la République tunisienne", "issue": "19", "page": "667-669", "URL": "https://www.pist.tn/jort/1984/1984F/Jo01984.pdf", "note": "citation-key: lfc-1984\nJORT n° 19 des 20-23 mars 1984. Art. 6, 27, 28, 29."},
+  {"id": "lfc-1989", "type": "legislation", "title": "Loi n° 89-88 du 3 novembre 1989, portant loi de finances complémentaire pour la gestion 1989", "issued": {"date-parts": [[1989, 11, 3]]}, "container-title": "Journal officiel de la République tunisienne", "issue": "73", "page": "1718", "URL": "https://www.pist.tn/jort/1989/1989F/Jo07389.pdf", "note": "citation-key: lfc-1989\nJORT n° 73 du 3 novembre 1989. Art. 3-8."},
+  {"id": "arrete-2016-07-15-prix-petroliers", "type": "legislation", "title": "Arrêté du ministre de l'énergie et des mines et du ministre des finances du 15 juillet 2016, relatif à la composition et au fonctionnement de la commission chargée de fixer et de suivre les prix de vente des produits pétroliers finis importés et ceux raffinés localement", "issued": {"date-parts": [[2016, 7, 15]]}, "container-title": "Journal officiel de la République tunisienne", "issue": "61", "page": "2334", "URL": "https://www.pist.tn/jort/2016/2016F/Jo0612016.pdf", "note": "citation-key: arrete-2016-07-15-prix-petroliers\nJORT n° 61 du 26 juillet 2016. Intitulé repris de l'art. 9 de l'arrêté du 31 mars 2020 ; page de début à relever. Art. 5 : ajustement automatique trimestriel."},
+  {"id": "arrete-2020-03-31-prix-petroliers", "type": "legislation", "title": "Arrêté du ministre de l'énergie, des mines et de la transition énergétique et du ministre des finances du 31 mars 2020, fixant la composition et le fonctionnement de la Commission technique chargée de la fixation et du suivi des prix de vente des produits pétroliers finis importés et ceux raffinés localement", "issued": {"date-parts": [[2020, 3, 31]]}, "container-title": "Journal officiel de la République tunisienne", "issue": "28", "page": "731-732", "URL": "https://www.pist.tn/record/143965/files/Jo0282020.pdf", "note": "citation-key: arrete-2020-03-31-prix-petroliers\nJORT n° 28 du 3 avril 2020. L'adresse /jort/2020/2020F/Jo0282020.pdf répond 404 (5 octobre 2026) ; l'URL de notice est la seule qui serve le fascicule."},
+  {"id": "arrete-2021-04-07-prix-petroliers", "type": "legislation", "title": "Arrêté du ministre de l'industrie, de l'énergie et des mines par intérim et du ministre de l'économie, des finances et de l'appui à l'investissement du 7 avril 2021, portant modification de l'arrêté du 31 mars 2020", "issued": {"date-parts": [[2021, 4, 7]]}, "container-title": "Journal officiel de la République tunisienne", "issue": "32", "page": "775", "URL": "https://www.pist.tn/jort/2021/2021F/Jo0322021.pdf", "note": "citation-key: arrete-2021-04-07-prix-petroliers\nJORT n° 32 du 8 avril 2021."},
+  {"id": "minfin-finances-publiques-2005", "type": "report", "title": "تقرير المالية العمومية لسنة 2005", "author": [{"literal": "Ministère des Finances (Tunisie)"}], "publisher": "Ministère des Finances", "publisher-place": "Tunis", "language": "ar", "URL": "https://web.archive.org/web/20110818040218id_/http://www.portail.finances.gov.tn/publications/rapprt-finances-2005.pdf", "note": "citation-key: minfin-finances-publiques-2005\nFichier local : 2005_rapport_finances_publiques.pdf (140 p.). Adresse Wayback du catalogue, non retestée. Date de parution à relever."},
+  {"id": "minfin-finances-publiques-2008", "type": "report", "title": "تقرير المالية العمومية لسنة 2008", "author": [{"literal": "Ministère des Finances (Tunisie)"}], "publisher": "Ministère des Finances", "publisher-place": "Tunis", "language": "ar", "issued": {"date-parts": [[2010, 3]]}, "note": "citation-key: minfin-finances-publiques-2008\nFichier local : 2008_rapport_finances_publiques.pdf (151 p.), publié sous le nom Rapport-Fin-Pub2010 ; mars 2010 selon le catalogue. Adresse Wayback : colonne url_wayback du catalogue."},
+  {"id": "minfin-finances-publiques-2011", "type": "report", "title": "المالية العمومية خلال 2011", "author": [{"literal": "Ministère des Finances (Tunisie)"}], "publisher": "Ministère des Finances", "publisher-place": "Tunis", "language": "ar", "issued": {"date-parts": [[2013, 4]]}, "URL": "https://web.archive.org/web/20131206130821id_/http://www.portail.finances.gov.tn/publications/Rapport-FP-2011.pdf", "note": "citation-key: minfin-finances-publiques-2011\nFichier local : 2011_finances_publiques.pdf (106 p.). Titre et date (avril 2013) repris du catalogue ; adresse Wayback non retestée."},
+  {"id": "minfin-compensation-carburants-2014", "type": "report", "title": "Rapport définitif sur la compensation des carburants", "author": [{"literal": "Contrôle général des finances"}, {"literal": "Contrôle général des services publics"}, {"literal": "Contrôle général des domaines de l'État et des affaires foncières"}], "issued": {"date-parts": [[2014, 7, 21]]}, "publisher": "Ministère de l'Économie et des Finances", "publisher-place": "Tunis", "language": "ar", "number-of-pages": "192", "URL": "https://web.archive.org/web/20161125132818id_/http://finances.gov.tn/images/Rapport_Def21-07-2014-comp_carbur.pdf", "note": "citation-key: minfin-compensation-carburants-2014\nTitre français repris du catalogue ; titre arabe à relever sur la couverture. Adresse Wayback du catalogue minfinances-portail-ancien-urls.csv (non retestée ; le fichier local vient du miroir dev.finances.gov.tn, contenu possiblement différent de la capture)."},
   {"id": "minfin-execution-budget", "type": "report", "title": "Résultats provisoires de l'exécution du budget de l'État", "author": [{"literal": "Ministère des Finances (Tunisie)"}], "publisher": "Ministère des Finances", "note": "citation-key: minfin-execution-budget\nBulletin périodique trilingue, 2012-2018 ; une entrée par numéro cité (2013-03, 2015-12, 2017-01, 2018-07) : dates et URL au catalogue."},
   {"id": "bct-rapport-annuel", "type": "report", "title": "Rapport annuel", "author": [{"literal": "Banque centrale de Tunisie"}], "publisher": "Banque centrale de Tunisie", "publisher-place": "Tunis", "note": "citation-key: bct-rapport-annuel-<année>\nUne entrée par exercice cité (1984, 2015, 2017, 2019, 2022, 2023, 2024) ; URL dans tunisia-data/sources/bct-archives-urls.csv. Vérifier les clés BCT déjà présentes."},
   {"id": "bm-1985-cem-5328", "type": "report", "title": "Tunisia: Country Economic Memorandum", "author": [{"literal": "World Bank"}], "issued": {"date-parts": [[1985]]}, "number": "5328-TUN", "publisher": "World Bank", "publisher-place": "Washington, DC", "note": "citation-key: bm-1985-cem-5328\nTitre exact, date et numérotation des volumes à relever sur la couverture (wb_1985_5328_cem_a.pdf, _b.pdf)."},
   {"id": "fmi-2000-red", "type": "report", "title": "Tunisia: Recent Economic Developments", "author": [{"literal": "International Monetary Fund"}], "issued": {"date-parts": [[2000]]}, "collection-title": "IMF Staff Country Report", "number": "00/37", "publisher": "International Monetary Fund", "publisher-place": "Washington, DC", "note": "citation-key: fmi-2000-red\nTitre et numéro déduits du nom de fichier imf_2000_037_red_tunisia.html : à vérifier sur la page de titre."},
-  {"id": "ins-cres-bad-2013-subventions", "type": "report", "title": "Analyse de l'impact des subventions alimentaires et des programmes d'assistance sociale sur la population pauvre et vulnérable", "author": [{"literal": "Institut national de la statistique"}, {"literal": "Centre de recherches et d'études sociales"}, {"literal": "Banque africaine de développement"}], "issued": {"date-parts": [[2013, 6]]}, "publisher-place": "Tunis", "URL": "http://www.cres.tn/uploads/tx_wdbiblio/rapport_impact_des_subvention_01.pdf", "note": "citation-key: ins-cres-bad-2013-subventions\nNON LU (connexion refusée le 5 octobre 2026). Ne rien citer avant lecture."},
+  {"id": "ins-cres-bad-2013-subventions", "type": "report", "title": "Analyse de l'impact des subventions alimentaires et des programmes d'assistance sociale sur la population pauvre et vulnérable", "author": [{"literal": "Institut national de la statistique"}, {"literal": "Centre de recherches et d'études sociales"}, {"literal": "Banque africaine de développement"}], "issued": {"date-parts": [[2013, 6]]}, "publisher-place": "Tunis", "URL": "http://www.cres.tn/uploads/tx_wdbiblio/rapport_impact_des_subvention_01.pdf", "number-of-pages": "52", "publisher": "Institut national de la statistique", "note": "citation-key: ins-cres-bad-2013-subventions\nLu le 5 octobre 2026 (couche texte). URL servie en HTTP seulement (200, application/pdf, 1 168 269 octets) ; HTTPS refuse la connexion."},
   {"id": "bm-2013-subventions-energetiques", "type": "report", "title": "Vers une meilleure équité : les subventions énergétiques, le ciblage et la protection sociale en Tunisie", "author": [{"literal": "Banque mondiale"}], "issued": {"date-parts": [[2013]]}, "number": "82712-TN", "publisher": "Banque mondiale", "publisher-place": "Washington, DC", "note": "citation-key: bm-2013-subventions-energetiques\nNON LU. Numéro de rapport repris d'un résultat de recherche : à vérifier."},
   {"id": "cuesta-ellahga-laraibarra-2015", "type": "report", "title": "The Socioeconomic Impacts of Energy Reform in Tunisia: A Simulation Approach", "author": [{"family": "Cuesta", "given": "José"}, {"family": "El-Lahga", "given": "AbdelRahmen"}, {"family": "Lara Ibarra", "given": "Gabriel"}], "issued": {"date-parts": [[2015]]}, "collection-title": "Policy Research Working Paper", "number": "7312", "publisher": "World Bank", "note": "citation-key: cuesta-ellahga-laraibarra-2015\nNON LU."},
   {"id": "jouini-lustig-moummi-shimeles-2018", "type": "article-journal", "title": "Fiscal Policy, Income Redistribution, and Poverty Reduction: Evidence from Tunisia", "author": [{"family": "Jouini", "given": "Nizar"}, {"family": "Lustig", "given": "Nora"}, {"family": "Moummi", "given": "Ahmed"}, {"family": "Shimeles", "given": "Abebe"}], "issued": {"date-parts": [[2018]]}, "container-title": "Review of Income and Wealth", "volume": "64", "page": "S225-S248", "note": "citation-key: jouini-lustig-moummi-shimeles-2018\nNON LU. DOI à relever."}
 ]
 ```
 
-### 4.3 Ébauches arabes
+### 4.3 Ébauches CSL-JSON (AR)
 
-Pour `precis/ar/…/references.json` : mêmes clés, URL de l'édition arabe (`…A/Ja…`), pagination
-arabe à relever au fascicule. Intitulés à relever sur l'édition arabe — **aucun n'a été lu en
-arabe ici**, sauf mention :
+Forme de `precis/ar/references.json` : mêmes clés, champ `issue`, URL de l'édition arabe. Les
+intitulés arabes des lois, du décret et des arrêtés **ne sont pas lus** : ils sont à relever au
+fascicule arabe, avec la pagination arabe ; l'entrée garde l'intitulé français en attendant,
+comme le font des entrées existantes du fichier arabe.
 
-| Clé | Intitulé arabe | État |
-|---|---|---|
-| `loi2012-27-lf-2013` | قانون عدد 27 لسنة 2012 مؤرخ في 29 ديسمبر 2012 يتعلق بقانون المالية لسنة 2013 — « دعم موارد الصندوق العام للتعويض » (فصل 63) | intitulé de rubrique lu dans `jort_cache` ; URL `…/2013A/Ja0012013.pdf` non testée |
-| `minfin-finances-publiques-2005`, `-2008`, `-2011` | تقرير المالية العمومية لسنة … | lu au pied de page du rapport 2008 |
-| `minfin-compensation-carburants-2014` | à relever sur la couverture (objet de la mission : « تدقيق لمنظومة دعم المحروقات ») | p. 1 lue |
-| autres lois, décret, arrêtés | à relever sur l'édition arabe | non lus |
+```json
+[
+  {"id": "lf-2013", "type": "legislation", "title": "قانون عدد 27 لسنة 2012 مؤرخ في 29 ديسمبر 2012 يتعلق بقانون المالية لسنة 2013", "container-title": "الرائد الرسمي للجمهورية التونسية", "issue": "1", "issued": {"date-parts": [[2012, 12, 29]]}, "URL": "https://www.pist.tn/jort/2013/2013A/Ja0012013.pdf", "note": "citation-key: lf-2013\nClé déjà présente côté français : ne compléter que si l'entrée arabe manque. Rubrique de l'art. 63 lue dans jort_cache : « دعم موارد الصندوق العام للتعويض ». Intitulé recomposé d'après la notice ; pagination arabe à relever. URL : 200, application/pdf (5 octobre 2026), contenu non ouvert."},
+  {"id": "loi70-26", "type": "legislation", "title": "Loi n° 70-26 du 19 mai 1970, relative aux modalités de fixation des prix et à la répression des infractions en matière économique", "container-title": "الرائد الرسمي للجمهورية التونسية", "issue": "27", "issued": {"date-parts": [[1970, 5, 19]]}, "URL": "https://www.pist.tn/jort/1970/1970A/Ja02770.pdf", "note": "citation-key: loi70-26\nIntitulé et pagination arabes à relever. URL : 200, contenu non ouvert."},
+  {"id": "lf-1971", "type": "legislation", "title": "Loi n° 70-66 du 31 décembre 1970, portant loi de finances pour la gestion 1971", "container-title": "الرائد الرسمي للجمهورية التونسية", "issue": "58", "issued": {"date-parts": [[1970, 12, 31]]}, "URL": "https://www.pist.tn/jort/1970/1970A/Ja05870.pdf", "note": "citation-key: lf-1971\nIntitulé et pagination arabes à relever. URL : 200, contenu non ouvert. Le décret n° 70-622 est au même fascicule."},
+  {"id": "lf-1984", "type": "legislation", "title": "Loi n° 83-113 du 30 décembre 1983, portant loi de finances pour la gestion 1984", "container-title": "الرائد الرسمي للجمهورية التونسية", "issue": "86", "issued": {"date-parts": [[1983, 12, 30]]}, "URL": "https://www.pist.tn/jort/1983/1983A/Ja08683.pdf", "note": "citation-key: lf-1984\nIntitulé et pagination arabes à relever. URL : 200, contenu non ouvert."},
+  {"id": "lfc-1984", "type": "legislation", "title": "Loi n° 84-2 du 21 mars 1984, portant loi de finances complémentaire pour la gestion 1984", "container-title": "الرائد الرسمي للجمهورية التونسية", "issue": "19", "issued": {"date-parts": [[1984, 3, 21]]}, "URL": "https://www.pist.tn/jort/1984/1984A/Ja01984.pdf", "note": "citation-key: lfc-1984\nIntitulé et pagination arabes à relever. URL : 200, contenu non ouvert."},
+  {"id": "lfc-1989", "type": "legislation", "title": "Loi n° 89-88 du 3 novembre 1989, portant loi de finances complémentaire pour la gestion 1989", "container-title": "الرائد الرسمي للجمهورية التونسية", "issue": "73", "issued": {"date-parts": [[1989, 11, 3]]}, "URL": "https://www.pist.tn/jort/1989/1989A/Ja07389.pdf", "note": "citation-key: lfc-1989\nIntitulé et pagination arabes à relever. URL : 200, contenu non ouvert."},
+  {"id": "arrete-2016-07-15-prix-petroliers", "type": "legislation", "title": "Arrêté du 15 juillet 2016 (commission des prix des produits pétroliers)", "container-title": "الرائد الرسمي للجمهورية التونسية", "issue": "61", "issued": {"date-parts": [[2016, 7, 15]]}, "URL": "https://www.pist.tn/jort/2016/2016A/Ja0612016.pdf", "note": "citation-key: arrete-2016-07-15-prix-petroliers\nIntitulé et pagination arabes à relever. URL : 200, contenu non ouvert."},
+  {"id": "arrete-2020-03-31-prix-petroliers", "type": "legislation", "title": "Arrêté du 31 mars 2020 (commission technique des prix des produits pétroliers)", "container-title": "الرائد الرسمي للجمهورية التونسية", "issue": "28", "issued": {"date-parts": [[2020, 3, 31]]}, "URL": "https://www.pist.tn/record/143965/files/Ja0282020.pdf", "note": "citation-key: arrete-2020-03-31-prix-petroliers\nIntitulé et pagination arabes à relever. URL de notice : 200, application/pdf, contenu non ouvert."},
+  {"id": "arrete-2021-04-07-prix-petroliers", "type": "legislation", "title": "Arrêté du 7 avril 2021 modifiant l'arrêté du 31 mars 2020", "container-title": "الرائد الرسمي للجمهورية التونسية", "issue": "32", "issued": {"date-parts": [[2021, 4, 7]]}, "URL": "https://www.pist.tn/jort/2021/2021A/Ja0322021.pdf", "note": "citation-key: arrete-2021-04-07-prix-petroliers\nIntitulé et pagination arabes à relever. URL : 200, contenu non ouvert."},
+  {"id": "minfin-finances-publiques-2005", "type": "report", "title": "تقرير المالية العمومية لسنة 2005", "author": [{"literal": "وزارة المالية"}], "publisher": "وزارة المالية", "publisher-place": "تونس", "language": "ar", "note": "citation-key: minfin-finances-publiques-2005\nTitre déduit du pied de page du rapport 2008 : à relire sur la couverture."},
+  {"id": "minfin-finances-publiques-2008", "type": "report", "title": "تقرير المالية العمومية لسنة 2008", "author": [{"literal": "وزارة المالية"}], "publisher": "وزارة المالية", "publisher-place": "تونس", "issued": {"date-parts": [[2010, 3]]}, "language": "ar", "note": "citation-key: minfin-finances-publiques-2008\nTitre lu au pied de page (p. 35 imprimée)."},
+  {"id": "minfin-finances-publiques-2011", "type": "report", "title": "المالية العمومية خلال 2011", "author": [{"literal": "وزارة المالية"}], "publisher": "وزارة المالية", "publisher-place": "تونس", "issued": {"date-parts": [[2013, 4]]}, "language": "ar", "note": "citation-key: minfin-finances-publiques-2011\nTitre repris du catalogue tunisia-data, non relu sur la couverture."},
+  {"id": "minfin-compensation-carburants-2014", "type": "report", "title": "[titre arabe à relever sur la couverture] — تدقيق منظومة دعم المحروقات", "author": [{"literal": "هيئة الرقابة العامة للمالية"}, {"literal": "هيئة الرقابة العامة للمصالح العمومية"}, {"literal": "هيئة الرقابة العامة لأملاك الدولة والشؤون العقارية"}], "issued": {"date-parts": [[2014, 7, 21]]}, "language": "ar", "number-of-pages": "192", "note": "citation-key: minfin-compensation-carburants-2014\nNoms des trois corps de contrôle et objet de la mission lus p. 1 ; le titre de couverture n'est pas lu."}
+]
+```
 
 ## 5. Notions à glossaire
 
@@ -304,12 +363,17 @@ compensation des allocations familiales » et la « surcompensation », sans rap
 8. **Ciblage et transferts monétaires de substitution** (1989 et suivantes ; réforme annoncée
    depuis 2013) : aucun texte lu. Le lien avec le PNAFN est à faire avec
    `docs/notes/prestations-assistance.md`.
-9. **Série 1985-2002 et année 2020** : à dépouiller dans les rapports annuels de la BCT.
+9. **Série 1985-2002** : à dépouiller dans les rapports annuels de la BCT.
 10. **Budgets citoyens 2014-2018 et rapports sur le projet de budget 2012-2014** (`PA/lois_finances/`) :
     PDF arabes sans couche texte, non ouverts ; les rapports sur le projet de budget 2018 et 2019
     sont des captures tronquées (fiche de source). Budget citoyen 2025 : connu par la presse seule.
-11. **Lois de règlement** : aucune n'a été consultée.
-12. **Incidence** : aucune étude lue (§ 3).
+11. **Lois de règlement** : aucune n'a été ouverte. Elles sont au JORT — 62 intitulés dans
+    `jort_cache`, de 1966 à 2024 ; les dernières : gestion 2009 (loi n° 2013-6, JORT n° 7 de
+    2013, pp. 357-367), gestions 2017 à 2020 (lois n° 2024-18 à 2024-21 du 5 mars 2024, JORT n° 35
+    de 2024, pp. 800-845, pagination de la notice) **[M]**. À vérifier : si leurs tableaux isolent
+    la compensation.
+12. **Incidence** : une seule étude lue (alimentaire, données 2010) ; rien sur l'énergie, rien
+    après 2010 hors le classeur CEQ non publié (§ 3).
 13. **Événements de janvier 1984** : aucune source primaire.
 14. Lectures à reprendre à l'image : loi n° 70-26, art. 3 ; LF 1976, art. 67-69 ; tableau annexé
     de la LFC 1984 (98 MD) ; bulletins d'exécution 2012-2017 ; tableau III-1 de la Banque mondiale
@@ -334,7 +398,7 @@ sur la compensation. Les fiches ci-dessous ne contiennent que les requêtes rée
   - date: 2026-10-05
     role: documentaliste
     sources: [jort_cache]
-    couverture: 'jort_cache seul : FTS sur titre et objet, LIKE sans accents, intitulé arabe cherché dans les titres de jort_cache (pas dans le miroir iort). Entre mai 1970 et 1975, les seuls intitulés nommant la CGC sont des articles de lois de finances et des arrêtés de relèvement de prévisions ; aucun décret d''organisation. Fascicules lus : n° 27 et n° 58 de 1970 seulement. Lacunes : aucun fascicule de 1970-1974 parcouru au plein texte ; miroir iort non interrogé ; visas des textes ultérieurs non remontés.'
+    couverture: 'jort_cache seul : FTS sur titre et objet ; LIKE sans accents sur titre et objet et intitulé arabe dans les titres et objets de jort_cache (pas dans le miroir iort), rejoués du 19 mai 1970 au 31 décembre 1985. Seize intitulés nomment la CGC de 1975 à 1985, tous des articles de lois de finances ou des arrêtés de relèvement de prévisions ; aucun entre mai 1970 et janvier 1975 ; aucun décret d''organisation ; un seul intitulé arabe dans toute la base (loi n° 2012-27, art. 63). Fascicules lus : n° 27 et n° 58 de 1970 seulement. Lacunes : aucun fascicule de 1970-1974 parcouru au plein texte ; miroir iort non interrogé ; visas des textes ultérieurs non remontés.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
   a_faire:
@@ -407,7 +471,7 @@ Plan du chapitre (plan type du dépôt) :
 
 1. **Historique** — taxes et caisses de compensation sectorielles avant 1970 (une phrase) ;
    création de la CGC (1970) et fonds spécial (1971) ; montée des subventions alimentaires au
-   milieu des années 1970 ; 1984 ; resserrement des années 1990 ; entrée des carburants (2004) ;
+   milieu des années 1970 ; 1984 ; resserrement des années 1990 ; première ligne budgétaire pour les carburants (2004) ;
    2011-2013 ; 2022.
 2. **Description** — ce qui est subventionné aujourd'hui (trois postes : produits de base,
    carburants-électricité-gaz, transport) ; qui paie (budget général ; ressources affectées
@@ -422,4 +486,4 @@ Plan du chapitre (plan type du dépôt) :
    (rapport de 2014) ; incidence par décile, une fois une étude lue.
 
 Préalables : construire la série dans l'entrepôt avec sa fiche de provenance (§ 2.1, § 2.3) ;
-lire au moins une étude d'incidence (§ 3) ; verser les trois fiches RECHERCHE (§ 7).
+lire une étude d'incidence sur l'énergie (§ 3) ; verser les trois fiches RECHERCHE (§ 7).
