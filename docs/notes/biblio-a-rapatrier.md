@@ -3116,3 +3116,20 @@ deux langues (comme les autres entrées du livre) :
 - [ ] Fonds commun, note complétée : `lf-2026` (art. 21, éd. AR p. 4235), `loi-87-83-lf-1988` (art. 76, p. 1635).
 - [ ] Doublon de clé à trancher : la LF 1991 (loi n° 90-111) porte `lf-1991` en fiscalité et `loi-90-111-lf-1991` en prestations sociales.
 - [ ] Le `dry-run` et le `controle-rangement` du workflow `biblio-zotero` restent à lancer après poussée de la branche (branche locale).
+
+## Passe « Fiscalité — dépenses fiscales et régimes d'incitation » (06/10/2026) — À REPORTER DANS ZOTERO
+
+Note documentaire : `docs/notes/fiscalite-depenses-fiscales.md` (§ 5). Chapitre à venir :
+`precis/fr/fiscalite/_depenses_fiscales.qmd`. Clés ajoutées à la main dans
+`precis/{fr,ar}/fiscalite/references.json` (provisoires jusqu'au rapatriement, feu vert requis) ;
+`push_biblio.py --verifier` : aucune perte nouvelle (deux préexistantes : `dafflon-2021-budget-local`,
+`minfin-cnf-2013-forfait`).
+
+- [ ] Législation, texte lu : `loi-93-120-code-incitations` (image lue, p. 2175-2178 ; page 2174 = début), `loi-2016-71-investissement` (p. 3083-3088), `dl-2011-56-lfc-2011` (art. 11, p. 1014).
+- [ ] Législation, copie du livre des finances locales : `lfc-2012` (art. 7 p. 922) — **à ranger au fonds commun** à la descente, puisque citée par deux livres.
+- [ ] Législation, intitulé seul (fascicules non ouverts) : `loi-72-38-regime-exportation`, `loi-87-51-code-investissements-industriels`, `loi-88-18-code-investissements-agricoles`, `loi-90-21-code-investissements-touristiques`. À supprimer si le rédacteur ne les cite pas ; non versés : lois 69-35, 74-74, 76-63, 81-56, 82-67, 85-96, 92-81, décret gouvernemental 2017-389 et loi 2019-47 (note documentaire § 1.1 et § 1.4).
+- [ ] Rapports et études : `minfin-depenses-fiscales-plf2022`, `minfin-depenses-fiscales-plf2023` (image lue, introduction seule ; année d'édition, exercices couverts et numéro d'annexe 2023 à confirmer), `banquemondiale2014-revolution-inachevee` (numéro de rapport et mois à relever), `loeprick2014-incitations-fiscales` (typé `report` avec `genre` « Diaporama », le type `speech` n'étant pas pris en charge par le convertisseur ; sans URL), `ocde2013-incitations-fiscales-tunisie` (URL d'un tiers, USCIB : chercher l'adresse sur oecd.org).
+- [ ] Note complétée (articles utiles) : `gbo-depenses-fiscales` (désormais **cinq** millésimes, PLF 2021 à 2025), `loi-avantages-fiscaux-2017`, `loi-2006-80-reduction-taux`, `loi-2007-70-lf-2008`, `loi-org-2019-15-lob` (fiscalité) ; `lf-2011`, `lf-2013`, `lf-2014`, `loi2018-56-lf2019` (fonds commun, FR et AR).
+- [ ] Entrées AR : `page` laissée **vide** pour les neuf entrées nouvelles (pagination arabe non mesurée) ; titres français conservés dans le fichier arabe pour `loi-93-120-code-incitations`, `dl-2011-56-lfc-2011`, `lfc-2012` et les quatre lois d'avant 1993 (intitulés arabes à relever sur le fascicule, non à traduire) ; titre arabe de `loi-2016-71-investissement` composé de la formule type du JORT et de l'objet lu dans la notice (« يتعلق بقانون الاستثمار ») : à contrôler sur le fascicule. Pour les clés déjà présentes (`loi-2006-80-reduction-taux`, `loi-2007-70-lf-2008`, `lf-2013`, `lf-2014`, `loi-avantages-fiscaux-2017`…), l'entrée arabe porte encore la pagination française (même défaut que `lf-2000`).
+- [ ] À vérifier : tome de la loi n° 93-120 (136 selon la notice) et de la loi n° 2016-71 (absent de la notice) ; page de fin du code de 1993 ; pages exactes des art. 5-6 de la loi n° 2006-80 ; art. 37 et 41 de la loi n° 2018-56 (p. 4539, 4541) et art. 46 de la loi organique (p. 400 ou 401) ; art. 24 de la loi n° 2010-58 (p. 3465-3466, notice) à relire sur le texte.
+- [ ] Collection Zotero : `fiscalite` ; le `dry-run` et le `controle-rangement` du workflow `biblio-zotero` restent à lancer après poussée de la branche (branche locale).

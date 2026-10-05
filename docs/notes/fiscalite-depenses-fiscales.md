@@ -350,7 +350,7 @@ dépouillées ici.
   emploi additionnel (diaporama p. 17, image lue ; rapport p. 145, texte lu).
 
 **Correction à porter à l'inventaire** `docs/notes/reforme-fiscale-2013-2014-inventaire.md`
-(l. 1164) : il attribue 56,5 / 43,5 à l'ensemble et 61,2 / 38,8 à l'offshore ; c'est l'inverse.
+(l. 1164) : il attribue 56,5 / 43,5 à l'ensemble et 61,2 / 38,8 à l'offshore ; c'est l'inverse. **Corrigée le 6 octobre 2026**, après contrôle de la p. 15 du diaporama à l'image.
 
 ### 3.3 Documents de la réforme de 2013-2014 (secondaire, d'après l'inventaire)
 

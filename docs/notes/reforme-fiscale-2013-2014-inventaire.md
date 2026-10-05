@@ -1161,7 +1161,7 @@ Convention : « p. N » = numéro de page du PDF (pour le document FR des Assise
 - **Chiffres** :
   - p. 3 : prévalence des incitations par région (exonérations/congés fiscaux, taux réduits, etc.), source James (Banque mondiale) : 7 colonnes de pourcentages par région (ex. Moyen-Orient et Afrique du Nord, 15 pays : 80 %, 40 %, 13 %, 0 %, 0 %, 80 %, 27 %).
   - p. 5 : enquêtes sur l'effet des incitations ; ligne **Tunisie (2012) : 58 %** des investisseurs disent que les incitations ont influencé le niveau d'investissement, avec un ratio de redondance de **25 %** (les autres : Malaisie 81/33, Guinée 92/6, Jordanie 70/28, Kenya 61/11, etc.).
-  - p. 15 : enquête Tunisie : « Votre entreprise aurait-elle investi sans les incitations ? » : ensemble Oui **56,5 %** / Non **43,5 %** ; offshore : Oui **61,2 %** / Non **38,8 %** ; onshore : Oui **65,7 %** / Non **34,3 %** (l'attribution de 56,5/43,5 à « ensemble » ou à un sous-groupe est déduite de la mise en page).
+  - p. 15 : enquête Tunisie : « Votre entreprise aurait-elle investi sans les incitations ? » : ensemble Oui **61,2 %** / Non **38,8 %** ; offshore : Oui **56,5 %** / Non **43,5 %** ; onshore : Oui **65,7 %** / Non **34,3 %** (attribution contrôlée à l'image de la p. 15 le 6 octobre 2026 : le grand graphique, titré « Votre entreprise aurait-elle investi s'il n'y avait pas les incitations à l'investissement ? », porte 61,2 / 38,8 ; les deux petits, titrés « (Off-Shore) » et « (On-Shore) », portent 56,5 / 43,5 et 65,7 / 34,3 ; erratum signalé dans `fiscalite-depenses-fiscales.md`, § 3.2).
   - p. 16 (graphique lu visuellement), « Coût net des avantages fiscaux par année », millions de dinars, source Impôts, Douanes, CNSS, API, APIA :
 
 | | 2009 | 2010 | 2011 |
