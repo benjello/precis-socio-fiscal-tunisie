@@ -5494,3 +5494,252 @@ entries:
         ويتولّى الوزير المكلّف بالضمان الاجتماعي الأمر بصرف نفقاته، وتُوزَّع
         موارده على الصناديق حسب معايير تُضبط بقرار منه.
       synonymes: []
+
+  - id: salaire-minimum-garanti
+    acronyme: null
+    statut: provisoire
+    references: [loi66-27]
+    source_definition: {ref: loi96-62, locator: "art. 134-2"}
+    voir_aussi: [smig, smag, salaire-conventionnel]
+    fr:
+      terme: Salaire minimum garanti
+      definition: >
+        Seuil au-dessous duquel il n'est pas possible de rémunérer un travailleur
+        chargé de travaux ne nécessitant pas de qualification professionnelle
+        (code du travail, art. 134-2, issu de la loi n° 96-62). Il est fixé par
+        décret, sous deux formes : le salaire minimum interprofessionnel garanti
+        (SMIG) pour les secteurs non agricoles et le salaire minimum agricole
+        garanti (SMAG).
+      synonymes: [salaire minimum légal]
+    ar:
+      terme: الأجر الأدنى المضمون
+      definition: >
+        العتبة الدنيا التي لا يجوز دونها تأجير عامل مكلَّف بأعمال لا تستوجب
+        تأهيلًا مهنيًا (مجلة الشغل، الفصل 134-2، كما أُضيف بالقانون عدد 62 لسنة
+        1996). ويُضبط بأمر في صيغتين: الأجر الأدنى المضمون لمختلف المهن في
+        القطاعات غير الفلاحية، والأجر الأدنى الفلاحي المضمون.
+      synonymes: []
+
+  - id: salaire-conventionnel
+    acronyme: null
+    statut: provisoire
+    references: [arrete-1973-05-29-convention-cadre]
+    source_definition: {ref: decret73-247, locator: "art. 1 et 2"}
+    voir_aussi: [salaire-minimum-garanti, convention-collective-sectorielle, convention-collective-cadre]
+    fr:
+      terme: Salaire conventionnel
+      definition: >
+        Salaire fixé, par catégorie professionnelle, par une convention collective
+        ou par ses avenants. Depuis le décret n° 73-247 du 26 mai 1973, les
+        conventions collectives peuvent fixer les salaires, leurs accessoires et
+        les classifications, sur la base d'un salaire minimum interprofessionnel
+        garanti fixé par décret.
+      synonymes: []
+    ar:
+      terme: الأجر التعاقدي
+      definition: >
+        أجر تضبطه اتفاقية مشتركة أو ملاحقها التعديلية حسب الأصناف المهنية. ومنذ
+        الأمر عدد 247 لسنة 1973 المؤرخ في 26 ماي 1973، يجوز للاتفاقيات المشتركة
+        ضبط الأجور وتوابعها والتصنيفات، على أساس أجر أدنى مضمون لمختلف المهن يُضبط
+        بأمر.
+      synonymes: []
+
+  - id: convention-collective-cadre
+    acronyme: null
+    statut: provisoire
+    references: [loi66-27]
+    source_definition: {ref: arrete-1973-05-29-convention-cadre}
+    voir_aussi: [convention-collective-sectorielle, agrement-convention-collective, salaire-conventionnel]
+    fr:
+      terme: Convention collective cadre
+      definition: >
+        Convention conclue le 20 mars 1973 entre l'Union tunisienne de
+        l'industrie, du commerce et de l'artisanat et l'Union générale tunisienne
+        du travail, approuvée par arrêté du 29 mai 1973 et rendue obligatoire pour
+        toutes les activités non agricoles. Elle sert de base à chaque convention
+        de branche, qui en fixe les grilles de salaires et les indemnités.
+      synonymes: [convention-cadre]
+    ar:
+      terme: الاتفاقية المشتركة الإطارية
+      definition: >
+        اتفاقية أُبرمت في 20 مارس 1973 بين الاتحاد التونسي للصناعة والتجارة
+        والصناعات التقليدية والاتحاد العام التونسي للشغل، وصودق عليها بقرار مؤرخ في
+        29 ماي 1973 وجُعلت إلزامية في جميع الأنشطة غير الفلاحية. وهي أساس كلّ
+        اتفاقية قطاعية تضبط سلالم الأجور والمنح.
+      synonymes: []
+
+  - id: agrement-convention-collective
+    acronyme: null
+    statut: provisoire
+    references: []
+    source_definition: {ref: loi66-27, locator: "art. 37 et 38"}
+    voir_aussi: [convention-collective-sectorielle, convention-collective-cadre]
+    fr:
+      terme: Agrément d'une convention collective
+      definition: >
+        Arrêté par lequel le ministre chargé du travail, après avis de la
+        commission consultative des conventions collectives, rend une convention
+        applicable à tous les employeurs et à tous les travailleurs de la branche
+        qu'elle vise, signataires ou non (code du travail de 1966, art. 37 et 38).
+        Il tient lieu de ce que d'autres droits nomment l'extension.
+      synonymes: []
+    ar:
+      terme: المصادقة على الاتفاقية المشتركة
+      definition: >
+        قرار يجعل به الوزير المكلّف بالشغل، بعد رأي اللجنة الاستشارية للاتفاقيات
+        المشتركة، اتفاقيةً منطبقة على جميع المؤجرين وجميع العمال في القطاع الذي
+        تشمله، موقّعين كانوا أم لا (مجلة الشغل لسنة 1966، الفصلان 37 و38).
+      synonymes: []
+
+  - id: indemnite-complementaire-provisoire
+    acronyme: ICP
+    statut: provisoire
+    references: [decret82-501, decret2026-67]
+    source_definition: {ref: decret81-437}
+    voir_aussi: [smig]
+    fr:
+      terme: Indemnité complémentaire provisoire
+      definition: >
+        Indemnité instituée le 1er avril 1981 par le décret n° 81-437, servie en
+        sus du salaire de base des salariés des secteurs non agricoles régis par le
+        code du travail, et majorée au 1er février 1982 par le décret n° 82-501.
+        Elle fait partie du SMIG, que les décrets successifs décomposent en salaire
+        de base et indemnité complémentaire provisoire.
+      synonymes: []
+    ar:
+      terme: المنحة التكميلية الوقتية
+      definition: >
+        منحة أُحدثت بداية من غرّة أفريل 1981 بالأمر عدد 437 لسنة 1981، تُصرف
+        زيادة على الأجر الأساسي لأجراء القطاعات غير الفلاحية الخاضعة لمجلة الشغل،
+        وتمّ الترفيع فيها بداية من غرّة فيفري 1982 بالأمر عدد 501 لسنة 1982. وهي
+        جزء من الأجر الأدنى المضمون الذي تفصّله الأوامر المتعاقبة إلى أجر أساسي
+        ومنحة تكميلية وقتية.
+      synonymes: []
+
+  - id: commission-nationale-smig
+    acronyme: null
+    statut: provisoire
+    references: [decret74-63]
+    source_definition: {ref: decret74-493}
+    voir_aussi: [smig, smag]
+    fr:
+      terme: Commission nationale du salaire minimum garanti
+      definition: >
+        Commission instituée par le décret n° 74-493 du 20 avril 1974, où
+        siègent l'État, le Parti socialiste destourien, l'Union tunisienne de
+        l'industrie, du commerce et de l'artisanat, l'Union nationale des
+        agriculteurs et l'Union générale tunisienne du travail. Le SMIG peut
+        varier après son avis (décret n° 74-63, art. 4) ; le SMIG et le SMAG sont
+        déterminés par décret.
+      synonymes: []
+    ar:
+      terme: اللجنة الوطنية للأجر الأدنى المضمون
+      definition: >
+        لجنة أُحدثت بالأمر عدد 493 لسنة 1974 المؤرخ في 20 أفريل 1974، تضمّ الدولة
+        والحزب الاشتراكي الدستوري والاتحاد التونسي للصناعة والتجارة والصناعات
+        التقليدية والاتحاد القومي للفلاحين والاتحاد العام التونسي للشغل. ويمكن
+        تعديل الأجر الأدنى بعد رأيها (الأمر عدد 63 لسنة 1974، الفصل 4)؛ ويُضبط
+        الأجر الأدنى المضمون لمختلف المهن والأجر الأدنى الفلاحي المضمون بأمر.
+      synonymes: []
+
+  - id: salaire-brut
+    acronyme: null
+    statut: provisoire
+    references: [oit-cist12-1973-salaires]
+    source_definition: {ref: loi96-62, locator: "art. 134-2 et 143"}
+    voir_aussi: [salaire-net, cout-du-travail]
+    fr:
+      terme: Salaire brut
+      definition: >
+        Rémunération due au travailleur avant toute retenue : salaire de base et
+        accessoires, indemnités et avantages en espèces ou en nature, à
+        l'exception des remboursements de frais (code du travail, art. 134-2).
+        Le bulletin de paie en indique le montant, puis la nature et le montant
+        des retenues opérées sur lui (art. 143). La statistique internationale
+        retient la même notion : la rémunération totale avant les retenues de
+        l'employeur au titre des impôts et des cotisations du salarié.
+      synonymes: [rémunération brute]
+    ar:
+      terme: الأجر الخام
+      definition: >
+        الأجر المستحقّ للعامل قبل أيّ خصم: الأجر الأساسي وتوابعه من منح ومنافع
+        نقدية أو عينية، باستثناء ما يكتسي صبغة استرجاع مصاريف (مجلة الشغل، الفصل
+        134-2). وتبيّن بطاقة الخلاص مبلغه ثمّ نوع الخصومات المجراة عليه ومبلغها
+        (الفصل 143).
+      synonymes: []
+
+  - id: salaire-net
+    acronyme: null
+    statut: provisoire
+    references: []
+    source_definition: {ref: loi96-62, locator: "art. 143"}
+    voir_aussi: [salaire-brut, cout-du-travail]
+    fr:
+      terme: Salaire net
+      definition: >
+        Rémunération effectivement perçue par le travailleur, une fois opérées
+        sur la rémunération brute les retenues — cotisations sociales du salarié,
+        impôt retenu à la source. Le bulletin de paie en porte le montant (code du
+        travail, art. 143).
+      synonymes: [rémunération nette]
+    ar:
+      terme: الأجر الصافي
+      definition: >
+        الأجر الذي يتقاضاه العامل فعلًا بعد إجراء الخصومات على الأجر الخام، من
+        مساهمات اجتماعية محمولة على الأجير وضريبة محجوزة من المورد. وتبيّن بطاقة
+        الخلاص مبلغه (مجلة الشغل، الفصل 143).
+      synonymes: []
+
+  - id: cout-du-travail
+    acronyme: null
+    statut: provisoire
+    references: []
+    source_definition: {ref: oit-cist11-1966-cout-travail, locator: "§ 3"}
+    voir_aussi: [salaire-brut, salaire-net, taux-global]
+    fr:
+      terme: Coût du travail
+      definition: >
+        Coût supporté par l'employeur pour l'emploi de main-d'œuvre : la
+        rémunération du travail, y compris le temps payé non travaillé, les primes
+        et les avantages en nature, augmentée des dépenses de sécurité sociale de
+        l'employeur, des frais de formation, des services sociaux et des impôts
+        assis sur l'emploi ou les salaires (résolution de la onzième Conférence
+        internationale des statisticiens du travail, 1966, § 3).
+      synonymes: []
+    ar:
+      terme: كلفة العمل
+      definition: >
+        الكلفة التي يتحمّلها المؤجر لتشغيل اليد العاملة: أجر العمل، بما في ذلك
+        الوقت المدفوع غير المعمول والمنح والمنافع العينية، تُضاف إليه نفقات
+        الضمان الاجتماعي المحمولة على المؤجر ونفقات التكوين والخدمات الاجتماعية
+        والأداءات الموظَّفة على التشغيل أو على الأجور (قرار المؤتمر الدولي الحادي
+        عشر لخبراء إحصاءات العمل، 1966، الفقرة 3).
+      synonymes: []
+
+  - id: emploi-informel
+    acronyme: null
+    statut: provisoire
+    references: []
+    source_definition: {ref: oit-cist21-2023-informel, locator: "§ 56"}
+    voir_aussi: [cout-du-travail]
+    fr:
+      terme: Emploi informel
+      definition: >
+        Toute activité exercée pour produire des biens ou fournir des services
+        contre rémunération ou profit qui n'est pas couverte, en droit ou en
+        pratique, par les dispositifs formels : droit commercial, déclaration des
+        activités économiques, impôt sur le revenu, législation du travail,
+        sécurité sociale (résolution de la vingt et unième Conférence
+        internationale des statisticiens du travail, 2023, § 56). Elle comprend
+        notamment les salariés dont la relation d'emploi n'est pas, en pratique,
+        formellement reconnue par l'employeur ou ne donne pas un accès effectif à
+        ces dispositifs.
+      synonymes: [travail informel]
+    ar:
+      terme: التشغيل غير المنظّم
+      definition: >
+        كلّ نشاط يُمارَس لإنتاج سلع أو تقديم خدمات مقابل أجر أو ربح ولا تشمله،
+        قانونًا أو فعلًا، الترتيبات الرسمية: القانون التجاري، والتصريح بالأنشطة
+        الاقتصادية، والضريبة على الدخل، وتشريع الشغل، والضمان الاجتماعي (قرار
+        المؤتمر الدولي الحادي والعشرين لخبراء إحصاءات العمل، 2023، الفقرة 56).
+      synonymes: []

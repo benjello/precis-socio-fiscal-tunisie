@@ -12,6 +12,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Accident du travail | حادث شغل |  |
 | Administrations publiques | الإدارات العمومية |  |
 | Agent temporaire | العون الوقتي |  |
+| Agrément d'une convention collective | المصادقة على الاتفاقية المشتركة |  |
 | Allocation de vieillesse | منحة الشيخوخة |  |
 | Allocation familiale | المنحة العائلية |  |
 | Allocation familiale non contributive | المنحة العائلية غير المساهماتية |  |
@@ -50,6 +51,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Ciblage | الاستهداف |  |
 | Classe de revenus | شريحة الدخل |  |
 | Commerçant grossiste | تاجر جملة |  |
+| Commission nationale du salaire minimum garanti | اللجنة الوطنية للأجر الأدنى المضمون |  |
 | Compte de compensation | حساب المقاصّة |  |
 | Compte de diversification des sources de sécurité sociale | حساب تنويع مصادر الضمان الاجتماعي |  |
 | Condition de ressources | شرط الموارد |  |
@@ -58,11 +60,13 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Contribution personnelle d'État | الضريبة الشخصية للدولة | CPE |
 | Contribution sociale de solidarité | المساهمة الاجتماعية التضامنية | CSS |
 | Contrôleur d'État | مراقب الدولة |  |
+| Convention collective cadre | الاتفاقية المشتركة الإطارية |  |
 | Convention collective sectorielle | الاتفاقية المشتركة القطاعية |  |
 | Convention collective sectorielle des banques et établissements financiers | الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية |  |
 | Coordination des régimes | التنسيق بين أنظمة الضمان الاجتماعي |  |
 | Cotisation de l'assuré | اشتراك المضمون |  |
 | Cotisations sociales | المساهمات الاجتماعية |  |
+| Coût du travail | كلفة العمل |  |
 | Décote | التخفيض في الجراية |  |
 | Déductions communes | الطروحات المشتركة |  |
 | Délai de carence | فترة الانتظار |  |
@@ -73,6 +77,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Émoluments de base | المرتبات الأساسية |  |
 | Émoluments globaux indiciaires | المرتبات الجملية التابعة للرقم القياسي المعين |  |
 | Emploi fonctionnel | الخطة الوظيفية |  |
+| Emploi informel | التشغيل غير المنظّم |  |
 | Emploi public | التشغيل العمومي |  |
 | Enfant à charge | الطفل المتكفَّل به |  |
 | Entrepositaire | أرباب المخازن |  |
@@ -105,6 +110,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Imputation du droit de consommation | خصم المعلوم على الاستهلاك |  |
 | Indemnité à caractère familial | المنحة ذات الصبغة العائلية |  |
 | Indemnité compensatrice | المنحة التعويضية |  |
+| Indemnité complémentaire provisoire | المنحة التكميلية الوقتية | ICP |
 | Indemnité de décès | منحة الوفاة |  |
 | Indemnité de revenu unique | منحة الدخل الوحيد |  |
 | Indemnité journalière | التعويض اليومي |  |
@@ -169,11 +175,15 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Revenu annuel net | الدخل السنوي الصافي |  |
 | Revenu forfaitaire | الدخل التقديري |  |
 | Revenus fonciers | المداخيل العقارية |  |
+| Salaire brut | الأجر الخام |  |
+| Salaire conventionnel | الأجر التعاقدي |  |
 | Salaire différentiel | الأجر التفاضلي |  |
 | Salaire journalier moyen | الأجر اليومي المتوسّط |  |
 | Salaire minimum agricole garanti | الأجر الأدنى الفلاحي المضمون | SMAG |
+| Salaire minimum garanti | الأجر الأدنى المضمون |  |
 | Salaire minimum interprofessionnel garanti | الأجر الأدنى المضمون لمختلف المهن | SMIG |
 | Salaire moyen de référence | الأجر المتوسط المرجعي |  |
+| Salaire net | الأجر الصافي |  |
 | Score d'éligibilité | أنموذج التنقيط |  |
 | Secteur public | القطاع العام |  |
 | Sécurité sociale des pêcheurs | الضمان الاجتماعي للصيادين البحريين |  |

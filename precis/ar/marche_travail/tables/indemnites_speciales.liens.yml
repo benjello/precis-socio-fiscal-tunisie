@@ -1,0 +1,6 @@
+- libelle: المنحة الخاصة، الأجر الأدنى المضمون (بالشهر)
+  parametre: parameters/marche_travail/indemnite_speciale_smig.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.indemnite_speciale_smig/table/
+- libelle: المنحة الخاصة، الأجر الأدنى الفلاحي (باليوم)
+  parametre: parameters/marche_travail/indemnite_speciale_smag.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.indemnite_speciale_smag/table/

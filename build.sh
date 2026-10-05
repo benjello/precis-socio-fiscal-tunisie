@@ -18,7 +18,7 @@ PRECIS_DIR="$ROOT_DIR/precis"
 LOCAL_SITE="$ROOT_DIR/local_site"
 
 LANGUAGES=(fr ar)
-BOOKS=(prestations_sociales retraites fiscalite remunerations_publiques cotisations_sociales caisses)
+BOOKS=(prestations_sociales retraites fiscalite remunerations_publiques cotisations_sociales caisses marche_travail)
 # Pages générales du site, posées directement sous precis/<langue>/ et rendues une à une.
 PAGES=(index a-propos)
 

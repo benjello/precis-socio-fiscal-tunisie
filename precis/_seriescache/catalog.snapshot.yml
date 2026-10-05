@@ -1361,3 +1361,33 @@
     لسنة 1985 (288,0 في الحوليّات اللاحقة) و645,4 الوقتية لسنة 2001 (ثمّ 640,5). قراءة
     آلية مع مراقبة خمس قيم وتطابق حوليّة 2019-2023 مع سابقاتها.'
   fiche: sources/ins-annuaires-statistiques.md
+- id: ipc-longue-periode
+  titre: Indice des prix à la consommation, 1962-2003, base 100 en 1970
+  sources:
+  - bct-ra
+  - ins-annuaire
+  build: scripts/extract_ipc_longue.py:main
+  raw:
+  - data/raw/bct-archives/109
+  - data/raw/ins-publications/annuaire-statistique
+  output: data/processed/ins-publications/ipc_longue_periode.csv
+  unite: indice, base 100 en 1970 (moyenne annuelle)
+  perimetre: coût de la vie (BCT, 1962-1975) puis prix à la consommation familiale
+    (INS, 1976-2003)
+  caveats: 'DEUX INDICES RACCORDÉS EN 1970 : l''indice du coût de la vie en base 100
+    en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont
+    RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation
+    abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée
+    en prose, et la source de chaque valeur est dans la colonne `source`. L''annuaire
+    1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise
+    dans l''annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au
+    lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`.'
+  titre_ar: الرقم القياسي لأسعار الاستهلاك، 1962-2003، أساس 100 سنة 1970
+  unite_ar: رقم قياسي، أساس 100 سنة 1970 (معدّل سنوي)
+  perimetre_ar: كلفة المعيشة (البنك المركزي، 1962-1975) ثمّ أسعار الاستهلاك العائلي
+    (المعهد الوطني للإحصاء، 1976-2003)
+  caveats_ar: رقمان قياسيان مربوطان سنة 1970. قيم 1962-1975 منقولة يدوياً من تقارير
+    البنك المركزي لرداءة طبقتها النصّية، مع التحقّق من كلّ قيمة بالتغيّر المذكور في
+    النصّ. يطبع حوليّة 1995-2001 القيمة 108.2 لسنة 1985 عوض 288.0، فاعتُمدت حوليّة
+    1998-2002.
+  fiche: sources/bct-archives.md
