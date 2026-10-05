@@ -1,0 +1,127 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-04
+# séries (tunisia_data) : finances-locales-cpscl
+# sources (citation) : @cpscl-etats-financiers
+# fiches : sources/finances-locales-cpscl.md
+# méthode/hypothèses : CHAQUE EXERCICE EST PUBLIÉ DEUX FOIS (colonne N, puis colonne N-1 de l'édition suivante) : édition la plus récente RETENUE, l'autre gardée (`retenu`). 17 RETRAITEMENTS entre éditions (reclassements vers les opérations pour compte en 2006, prêts nets/bruts en 2007, opérations spéciales en 2009-2010), listés dans cpscl_doublons_ecarts.csv et figés dans les tests ; la Banque mondiale (PforR 2014, tabl. 2.11) cite les valeurs de l'édition de l'exercice, non les retraitées. TROIS COQUILLES CORRIGÉES ET TRACÉES (`lecture = corrige`, valeur imprimée gardée) et deux incohérences internes laissées telles quelles (édition 2010, flux de financement ; flux d'exploitation 2018, écart de 90 000 DT). Signes de la page : décaissements et provisions négatifs. PAS DE LIGNE « ENCOURS » : créances = prêts en cours de remboursement et de réalisation + bloc courant (annuités, impayés, provisions, intérêts courus) ; aucune somme calculée. Changement de présentation du passif en 2012. Chute des impayés en 2007 (67,2 → 16,9 MD) avec apparition d'une provision sur créances rééchelonnées. Flux de trésorerie de la caisse, non recoupés avec les budgets des communes.
+# note : La Caisse des prêts et de soutien des collectivités locales : flux de l'année et impayés, en millions de dinars courants, 2005-2024
+Année,Grandeur,Montant (MD)
+2005,Dotations reçues de l'État,48.474
+2006,Dotations reçues de l'État,30.112
+2007,Dotations reçues de l'État,49.036
+2008,Dotations reçues de l'État,48.674
+2009,Dotations reçues de l'État,50.664
+2010,Dotations reçues de l'État,61.886
+2011,Dotations reçues de l'État,61.363
+2012,Dotations reçues de l'État,35.0
+2013,Dotations reçues de l'État,87.179
+2014,Dotations reçues de l'État,88.771
+2015,Dotations reçues de l'État,135.32
+2016,Dotations reçues de l'État,107.892
+2017,Dotations reçues de l'État,59.148
+2018,Dotations reçues de l'État,216.323
+2019,Dotations reçues de l'État,176.715
+2020,Dotations reçues de l'État,270.814
+2021,Dotations reçues de l'État,337.668
+2022,Dotations reçues de l'État,189.307
+2023,Dotations reçues de l'État,227.591
+2024,Dotations reçues de l'État,155.302
+2005,Subventions accordées aux collectivités,-50.395
+2006,Subventions accordées aux collectivités,-26.301
+2007,Subventions accordées aux collectivités,-22.908
+2008,Subventions accordées aux collectivités,-24.578
+2009,Subventions accordées aux collectivités,-63.622
+2010,Subventions accordées aux collectivités,-59.032
+2011,Subventions accordées aux collectivités,-25.001
+2012,Subventions accordées aux collectivités,-23.442
+2013,Subventions accordées aux collectivités,-42.18
+2014,Subventions accordées aux collectivités,-99.639
+2015,Subventions accordées aux collectivités,-80.051
+2016,Subventions accordées aux collectivités,-74.286
+2017,Subventions accordées aux collectivités,-72.613
+2018,Subventions accordées aux collectivités,-141.421
+2019,Subventions accordées aux collectivités,-174.477
+2020,Subventions accordées aux collectivités,-162.707
+2021,Subventions accordées aux collectivités,-277.533
+2022,Subventions accordées aux collectivités,-82.135
+2023,Subventions accordées aux collectivités,-168.116
+2024,Subventions accordées aux collectivités,-182.527
+2005,Prêts accordés aux collectivités,-43.316
+2006,Prêts accordés aux collectivités,-33.588
+2007,Prêts accordés aux collectivités,-31.364
+2008,Prêts accordés aux collectivités,-36.569
+2009,Prêts accordés aux collectivités,-42.79
+2010,Prêts accordés aux collectivités,-43.411
+2011,Prêts accordés aux collectivités,-23.176
+2012,Prêts accordés aux collectivités,-22.136
+2013,Prêts accordés aux collectivités,-33.331
+2014,Prêts accordés aux collectivités,-56.334
+2015,Prêts accordés aux collectivités,-50.15
+2016,Prêts accordés aux collectivités,-30.612
+2017,Prêts accordés aux collectivités,-39.557
+2018,Prêts accordés aux collectivités,-41.621
+2019,Prêts accordés aux collectivités,-36.258
+2020,Prêts accordés aux collectivités,-28.645
+2021,Prêts accordés aux collectivités,-24.804
+2022,Prêts accordés aux collectivités,-36.502
+2023,Prêts accordés aux collectivités,-39.353
+2024,Prêts accordés aux collectivités,-33.803
+2005,Remboursements de prêts reçus,38.53
+2006,Remboursements de prêts reçus,38.465
+2007,Remboursements de prêts reçus,38.518
+2008,Remboursements de prêts reçus,45.678
+2009,Remboursements de prêts reçus,41.373
+2010,Remboursements de prêts reçus,57.933
+2011,Remboursements de prêts reçus,45.229
+2012,Remboursements de prêts reçus,68.874
+2013,Remboursements de prêts reçus,67.302
+2014,Remboursements de prêts reçus,61.267
+2015,Remboursements de prêts reçus,58.564
+2016,Remboursements de prêts reçus,56.479
+2017,Remboursements de prêts reçus,52.59
+2018,Remboursements de prêts reçus,46.399
+2019,Remboursements de prêts reçus,44.663
+2020,Remboursements de prêts reçus,39.659
+2021,Remboursements de prêts reçus,44.774
+2022,Remboursements de prêts reçus,68.723
+2023,Remboursements de prêts reçus,44.043
+2024,Remboursements de prêts reçus,72.806
+2005,Annuités échues et impayées,51.407
+2006,Annuités échues et impayées,67.217
+2007,Annuités échues et impayées,16.914
+2008,Annuités échues et impayées,32.488
+2009,Annuités échues et impayées,54.416
+2010,Annuités échues et impayées,57.612
+2011,Annuités échues et impayées,86.066
+2012,Annuités échues et impayées,89.116
+2013,Annuités échues et impayées,85.634
+2014,Annuités échues et impayées,86.563
+2015,Annuités échues et impayées,89.489
+2016,Annuités échues et impayées,92.794
+2017,Annuités échues et impayées,92.192
+2018,Annuités échues et impayées,87.247
+2019,Annuités échues et impayées,85.242
+2020,Annuités échues et impayées,92.349
+2021,Annuités échues et impayées,105.426
+2022,Annuités échues et impayées,93.065
+2023,Annuités échues et impayées,106.509
+2024,Annuités échues et impayées,88.864
+2005,Provisions pour impayés,-47.455
+2006,Provisions pour impayés,-53.355
+2007,Provisions pour impayés,-7.651
+2008,Provisions pour impayés,-16.697
+2009,Provisions pour impayés,-31.111
+2010,Provisions pour impayés,-45.974
+2011,Provisions pour impayés,-53.943
+2012,Provisions pour impayés,-61.121
+2013,Provisions pour impayés,-66.336
+2014,Provisions pour impayés,-69.783
+2015,Provisions pour impayés,-71.968
+2016,Provisions pour impayés,-74.924
+2017,Provisions pour impayés,-78.215
+2018,Provisions pour impayés,-78.237
+2019,Provisions pour impayés,-77.321
+2020,Provisions pour impayés,-80.785
+2021,Provisions pour impayés,-87.487
+2022,Provisions pour impayés,-76.043
+2023,Provisions pour impayés,-78.697
+2024,Provisions pour impayés,-63.097

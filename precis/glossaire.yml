@@ -409,17 +409,18 @@ entries:
       definition: >
         Accord négocié entre employeurs et organisations syndicales, fixant les
         conditions d'emploi et de rémunération (classification des emplois,
-        grilles, primes) pour un secteur d'activité donné. Dans le secteur public
-        non administratif, elle constitue le fondement du régime conventionnel
-        (code du travail ; loi n°85-78).
+        grilles, primes) pour un secteur d'activité donné. L'article 2 de la loi
+        n° 85-78 permettait, à titre transitoire, à certaines sociétés à capital
+        partiellement public de choisir entre le régime statutaire et les conventions
+        collectives du secteur.
       synonymes: []
     ar:
       terme: الاتفاقية المشتركة القطاعية
       definition: >
         اتفاق متفاوَض عليه بين الأعراف والمنظمات النقابية، يضبط شروط الشغل
-        والتأجير (تصنيف المواطن الشغلية والسلالم والمنح) لقطاع نشاط معيَّن. وفي
-        القطاع العام غير الإداري، تُشكّل أساس النظام الاتفاقي (مجلة الشغل؛ القانون
-        عدد 85-78).
+        والتأجير (تصنيف المواطن الشغلية والسلالم والمنح) لقطاع نشاط معيَّن. وقد
+        أتاح الفصل 2 من القانون عدد 85-78، بصفة انتقالية، لبعض الشركات ذات رأس
+        المال العمومي الجزئي الاختيار بين النظام الأساسي والاتفاقيات المشتركة للقطاع.
       synonymes: []
 
   - id: convention-collective-banques
@@ -438,10 +439,9 @@ entries:
         ministre des Affaires sociales en application du Code du travail. Sa
         lignée remonte à un agrément de 1975 ; la version en vigueur est la
         convention révisée agréée par arrêté du 17 février 2014, complétée par
-        des avenants successifs. Une convention sectorielle unique couvrant
-        indistinctement banques publiques et privées est la marque documentaire
-        de l'autonomie salariale « proche du privé » du régime de marché
-        contrôlé.
+        des avenants successifs. Son champ commun aux banques publiques et privées
+        établit l'unité du cadre conventionnel, sans permettre à lui seul de comparer
+        leurs niveaux effectifs de rémunération.
       synonymes: [convention collective des banques]
     ar:
       terme: الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية
@@ -450,9 +450,9 @@ entries:
         أعوان البنوك والمؤسسات المالية، العمومية منها والخاصة، مصادَق عليها بقرار
         من وزير الشؤون الاجتماعية تطبيقًا لمجلة الشغل. تعود نشأتها إلى مصادقة سنة
         1975؛ والنسخة السارية هي الاتفاقية المنقَّحة المصادَق عليها بقرار مؤرَّخ
-        في 17 فيفري 2014، المستكمَلة بملاحق متتالية. ووجودُ اتفاقية قطاعية وحيدة
-        تشمل دون تمييز البنوك العمومية والخاصة هو العلامة الوثائقية على
-        الاستقلالية الأجرية «القريبة من القطاع الخاص» لنظام السوق الموجَّه.
+        في 17 فيفري 2014، المستكمَلة بملاحق متتالية. ويثبت شمولها المشترك للبنوك
+        العمومية والخاصة وحدة الإطار الاتفاقي، دون أن يسمح بمفرده بمقارنة مستويات
+        التأجير الفعلية بينها.
       synonymes: []
 
   - id: remuneration-dirigeants-entreprises-publiques
@@ -466,9 +466,8 @@ entries:
       terme: Rémunération des dirigeants d'entreprises publiques
       definition: >
         Rémunération des chefs d'établissements et entreprises publics et de
-        sociétés à majorité publique — y compris les banques à majorité publique
-        — encadrée et plafonnée par voie réglementaire au titre des prérogatives
-        de l'État actionnaire. Le texte en vigueur est le décret n°2015-2217 du
+        sociétés à majorité publique, encadrée et plafonnée par voie réglementaire
+        au titre des prérogatives de l'État actionnaire. Le texte en vigueur est le décret n°2015-2217 du
         11 décembre 2015 fixant les taux des éléments de cette rémunération ; il
         s'inscrit dans une chaîne réglementaire continue (décrets n°78-885,
         n°90-1855, n°2014-12). Ce plafonnement constitue le versant « contrôle »
@@ -479,8 +478,7 @@ entries:
       terme: تأجير رؤساء المؤسسات والمنشآت العمومية
       definition: >
         تأجير رؤساء المؤسسات والمنشآت العمومية والشركات ذات الأغلبية العمومية —
-        بما في ذلك البنوك ذات الأغلبية العمومية — المضبوط والمسقَّف عن طريق
-        التنظيم بعنوان صلاحيات الدولة المساهمة. والنصّ الساري هو الأمر الحكومي
+        المضبوط والمسقَّف عن طريق التنظيم بعنوان صلاحيات الدولة المساهمة. والنصّ الساري هو الأمر الحكومي
         عدد 2015-2217 المؤرّخ في 11 ديسمبر 2015 الذي يضبط نسب عناصر هذا التأجير؛
         وهو يندرج ضمن سلسلة تنظيمية متّصلة (الأوامر عدد 78-885 وعدد 90-1855 وعدد
         2014-12). ويشكّل هذا التسقيف الشقَّ «الرقابي» من نظام السوق الموجَّه، في
@@ -491,20 +489,26 @@ entries:
     acronyme: null
     statut: provisoire
     references: [loi85-78, loi89-9]
-    source_definition: {ref: loi85-78}
+    source_definition: {ref: loi85-78, locator: "art. 1-2 et 75"}
     voir_aussi: [entreprises-publiques, epic, convention-collective-sectorielle, statut-particulier]
     fr:
       terme: Régime conventionnel public
       definition: >
-        Régime de rémunération des entreprises publiques non financières, fondé
-        sur des conventions collectives, une négociation salariale et une
-        classification des emplois.
+        Catégorie d'analyse retenue dans ce précis pour les entreprises publiques
+        non financières. La loi n° 85-78 régit les agents permanents des offices,
+        des établissements industriels et commerciaux et des sociétés à capital
+        entièrement public par des statuts particuliers approuvés par décret. Elle
+        prévoit aussi, à titre transitoire, une option entre statut et convention
+        sectorielle pour certaines sociétés à capital partiellement public.
       synonymes: []
     ar:
       terme: النظام الاتفاقي العمومي
       definition: >
-        نظام تأجير المنشآت العمومية غير المالية، يقوم على الاتفاقيات المشتركة
-        والتفاوض الأجري وتصنيف المواطن الشغلية.
+        فئة تحليلية معتمدة في هذا الدليل للمنشآت العمومية غير المالية. ويقوم تأجير
+        أعوان الدواوين والمؤسسات الصناعية والتجارية والشركات ذات رأس المال العمومي
+        الكامل، في إطار القانون عدد 85-78، على أنظمة أساسية خاصة مصادق عليها بأوامر.
+        وينصّ القانون أيضًا على خيار انتقالي بين النظام الأساسي والاتفاقية القطاعية
+        لبعض الشركات ذات رأس المال العمومي الجزئي.
       synonymes: []
 
   - id: regime-marche-controle
@@ -515,29 +519,20 @@ entries:
     fr:
       terme: Régime de marché contrôlé
       definition: >
-        Régime de rémunération des entreprises publiques financières (banques,
-        assurances et institutions financières à capital public) et de certaines
-        filiales, caractérisé par un double trait. Côté agents, l'autonomie
-        salariale est forte : leur rémunération relève d'une convention
-        collective sectorielle de droit commun commune aux établissements
-        publics et privés, ce qui aligne les rémunérations de base sur le secteur
-        financier privé. Côté dirigeants, l'État exerce ses prérogatives
-        d'actionnaire et la rémunération des chefs d'entreprise est plafonnée par
-        voie réglementaire. C'est cette articulation — autonomie conventionnelle
-        de marché pour les agents, plafonnement réglementaire pour les dirigeants
-        — qui justifie le qualificatif de « marché contrôlé ».
+        Catégorie d'analyse retenue dans ce précis pour les entreprises publiques
+        financières, documentée principalement pour les banques. Les agents des banques
+        publiques et privées sont couverts par une même convention collective
+        sectorielle ; la rémunération des dirigeants des entreprises publiques relève
+        par ailleurs d'un encadrement réglementaire. Le cas des assurances et des autres
+        institutions financières publiques reste à établir.
       synonymes: []
     ar:
       terme: نظام السوق الموجَّه
       definition: >
-        نظام تأجير المنشآت العمومية المالية (البنوك والتأمين والمؤسسات المالية
-        ذات رأس المال العمومي) وبعض الفروع، يتميّز بسمة مزدوجة. فمن جهة الأعوان،
-        تكون الاستقلالية الأجرية مرتفعة: إذ يخضع تأجيرهم لاتفاقية مشتركة قطاعية
-        من القانون العام مشتركة بين المؤسسات العمومية والخاصة، ممّا يحاذي الأجور
-        الأساسية بالقطاع المالي الخاص. ومن جهة الرؤساء، تمارس الدولة صلاحياتها
-        بوصفها مساهمة ويُسقَّف تأجير رؤساء المؤسسات عن طريق التنظيم. وهذا
-        التمفصُل — استقلالية اتفاقية سوقية للأعوان وتسقيف تنظيمي للرؤساء — هو ما
-        يبرّر وصف «السوق الموجَّه».
+        فئة تحليلية معتمدة في هذا الدليل للمنشآت العمومية المالية، وهي موثقة أساسًا
+        بالنسبة إلى البنوك. ويخضع أعوان البنوك العمومية والخاصة لاتفاقية مشتركة
+        قطاعية واحدة، فيما يخضع تأجير رؤساء المنشآت العمومية لتأطير ترتيبي. ويبقى
+        وضع شركات التأمين وسائر المؤسسات المالية العمومية بحاجة إلى إثبات.
       synonymes: []
 
   - id: point-indice
@@ -912,18 +907,24 @@ entries:
     statut: valide
     references: [lf-2018]
     source_definition: {ref: lf-2018, locator: "art. 53"}
-    voir_aussi: [irpp, cotisations-sociales, retenue-a-la-source]
+    voir_aussi: [irpp, cotisations-sociales, retenue-a-la-source, compte-diversification-securite-sociale]
     fr:
       terme: Contribution sociale de solidarité
       definition: >
-        Prélèvement additionnel à l'impôt sur le revenu, affecté au financement
-        des régimes de sécurité sociale.
+        Contribution instituée « au profit des caisses sociales » par la loi de
+        finances pour 2018 (art. 53), due par les personnes physiques soumises
+        au barème de l'impôt sur le revenu et par les entreprises soumises à
+        l'impôt sur les sociétés, y compris celles qui en sont exonérées. Depuis
+        2022, son produit alimente le compte de diversification des sources de
+        sécurité sociale.
       synonymes: [CSS]
     ar:
       terme: المساهمة الاجتماعية التضامنية
       definition: >
-        اقتطاع إضافي على الضريبة على الدخل، مخصَّص لتمويل أنظمة الضمان
-        الاجتماعي.
+        مساهمة أحدثها قانون المالية لسنة 2018 (الفصل 53) «لفائدة الصناديق
+        الاجتماعية»، يدفعها الأشخاص الطبيعيون الخاضعون لجدول الضريبة على الدخل
+        والمؤسسات الخاضعة للضريبة على الشركات، بما فيها المعفاة منها. ومنذ سنة
+        2022، تُرصد عائداتها في حساب تنويع مصادر الضمان الاجتماعي.
       synonymes: []
 
   - id: irpp
@@ -1073,6 +1074,135 @@ entries:
       definition: >
         هيكل يدير أنظمة التقاعد والحيطة الاجتماعية للقطاع العام؛ مؤسسة عمومية لا
         تكتسي صبغة إدارية تحت إشراف وزارة الشؤون الاجتماعية.
+      synonymes: []
+
+  - id: spfet
+    acronyme: null
+    statut: valide
+    references: [loi59-19, bertrand-1953-securite-sociale-2]
+    source_definition: {ref: loi59-18, locator: "art. 1"}
+    source_traduction: {ref: loi59-18, locator: "art. 1"}
+    voir_aussi: [cnrps, regime-de-prevoyance]
+    fr:
+      terme: Société de prévoyance des fonctionnaires et employés tunisiens
+      definition: >
+        Organisme qui sert, sous le Protectorat, les pensions de retraite des
+        fonctionnaires de l'État et des collectivités publiques et gère leur
+        régime de prévoyance. La loi n° 59-18 du 5 février 1959 dispose qu'elle
+        prend l'appellation de Caisse nationale de retraites (art. 1), l'une des
+        deux caisses réunies en 1976 dans la CNRPS.
+      synonymes: []
+    ar:
+      terme: الجمعية الاحتياطية للموظفين والمستخدمين التونسيين
+      definition: >
+        هيكل يصرف، في عهد الحماية، جرايات التقاعد لموظفي الدولة والجماعات
+        العمومية ويتصرّف في نظام الحيطة الخاص بهم. وينصّ القانون عدد 18 لسنة
+        1959 المؤرخ في 5 فيفري 1959 على أنه يُطلق عليها اسم الصندوق القومي
+        للتقاعد (الفصل 1)، وهو أحد الصندوقين اللذين جُمعا سنة 1976 في الصندوق
+        الوطني للتقاعد والحيطة الاجتماعية.
+      synonymes: []
+
+  - id: regime-de-prevoyance
+    acronyme: null
+    statut: valide
+    references: [bertrand-1953-securite-sociale-2]
+    source_definition: {ref: loi59-45, locator: "art. 1"}
+    source_traduction: {ref: loi59-45, locator: "art. 14"}
+    voir_aussi: [spfet, cnrps]
+    fr:
+      terme: Régime de prévoyance
+      definition: >
+        Régime obligatoire institué par un décret du 12 avril 1951 en faveur
+        des personnels de l'État et des collectivités publiques, qui couvre les
+        interventions chirurgicales, la longue maladie et le décès. Géré d'abord
+        par la Société de prévoyance des fonctionnaires et employés tunisiens,
+        il est confié en 1959 à la Caisse de prévoyance sociale (loi n° 59-45,
+        art. 1).
+      synonymes: []
+    ar:
+      terme: نظام الحيطة
+      definition: >
+        نظام إجباري أُحدث بأمر مؤرخ في 12 أفريل 1951 لفائدة أعوان الدولة
+        والجماعات العمومية، يغطي العمليات الجراحية والأمراض الطويلة الأمد
+        والوفاة. تصرّفت فيه أولًا الجمعية الاحتياطية للموظفين والمستخدمين
+        التونسيين، ثم عُهد به سنة 1959 إلى صندوق الحيطة الاجتماعية (القانون
+        عدد 45 لسنة 1959، الفصل 1).
+      synonymes: [نظام احتياطي]
+
+  - id: caisse-compensation-allocations-familiales
+    acronyme: null
+    statut: valide
+    references: [bertrand-1953-securite-sociale-1]
+    source_definition: {ref: loi58-130, locator: "art. 1"}
+    source_traduction: {ref: loi58-130, locator: "art. 1"}
+    voir_aussi: [allocation-familiale, surcompensation, caisse-centrale-prestations-sociales]
+    fr:
+      terme: Caisse de compensation des allocations familiales
+      definition: >
+        Organisme agréé qui sert, sous le régime du décret du 8 juin 1944, les
+        allocations familiales des salariés de ses employeurs adhérents, sur
+        leurs cotisations. Trois caisses existaient ; la loi n° 58-130 leur
+        retire l'agrément et leur substitue une caisse unique (art. 1 et 5).
+      synonymes: [caisse d'allocations familiales]
+    ar:
+      terme: صندوق تعويض المنح العائلية
+      definition: >
+        هيكل مصادق عليه يصرف، في إطار الأمر المؤرخ في 8 جوان 1944، المنح
+        العائلية لأجراء المؤجرين المنخرطين فيه، من مساهماتهم. وكانت هذه
+        الصناديق ثلاثة؛ وقد سحب القانون عدد 130 لسنة 1958 المصادقة الممنوحة لها
+        وعوّضها بصندوق وحيد (الفصلان 1 و5).
+      synonymes: []
+
+  - id: surcompensation
+    acronyme: null
+    statut: provisoire
+    references: []
+    source_definition: {ref: decret-1956-11-08-surcompensation, locator: "art. 2"}
+    voir_aussi: [caisse-compensation-allocations-familiales]
+    fr:
+      terme: Surcompensation
+      definition: >
+        Mécanisme de péréquation entre caisses d'allocations familiales
+        organisé par le décret du 8 novembre 1956 : les employeurs des caisses
+        dont le rapport des prestations aux salaires est inférieur à celui de
+        l'ensemble des caisses acquittent une contribution spéciale, versée à un
+        compte du Trésor qui subventionne les caisses dont ce rapport est
+        supérieur.
+      synonymes: []
+    ar:
+      terme: الزيادة في تعويض المنح العائلية
+      definition: >
+        آلية تعديل بين صناديق المنح العائلية نظّمها الأمر المؤرخ في 8 نوفمبر
+        1956: يدفع مؤجرو الصناديق التي تقلّ فيها نسبة المنح إلى الأجور عن نسبة
+        مجموع الصناديق مساهمة خاصة تُدفع إلى حساب بالخزينة يمنح إعانات للصناديق
+        التي تفوق فيها هذه النسبة.
+      synonymes: []
+
+  - id: caisse-centrale-prestations-sociales
+    acronyme: null
+    statut: valide
+    references: [loi60-30]
+    source_definition: {ref: loi58-130, locator: "art. 1"}
+    source_traduction: {ref: loi58-130, locator: "art. 1"}
+    voir_aussi: [caisse-compensation-allocations-familiales, cnss]
+    fr:
+      terme: Caisse centrale des prestations sociales
+      definition: >
+        Caisse unique chargée du service des allocations familiales par la loi
+        n° 58-130 du 22 novembre 1958, à compter du 15 décembre 1958, à la place
+        des caisses de compensation dont l'agrément est retiré (art. 1 et 9).
+        La loi n° 60-30 abroge ce texte et maintient auprès de la CNSS les
+        affiliations et les immatriculations faites auprès d'elle (art. 125,
+        126 et 131).
+      synonymes: []
+    ar:
+      terme: الصندوق المركزي للمنح الاجتماعية
+      definition: >
+        صندوق وحيد عُهد إليه بدفع المنح العائلية بمقتضى القانون عدد 130 لسنة
+        1958 المؤرخ في 22 نوفمبر 1958، ابتداءً من 15 ديسمبر 1958، عوضًا عن
+        صناديق التعويض التي سُحبت منها المصادقة (الفصلان 1 و9). وقد ألغى
+        القانون عدد 30 لسنة 1960 هذا النص وأبقى لدى الصندوق الوطني للضمان
+        الاجتماعي على الانخراطات والترسيمات المنجزة لديه (الفصول 125 و126 و131).
       synonymes: []
 
   - id: cnam
@@ -1381,10 +1511,10 @@ entries:
   - id: regime-forfaitaire
     acronyme: null
     statut: valide
-    references: [code-irpp-is-1990, lf-1993, lf-2014]
+    references: [code-irpp-is-1990, lf-1993, lf-1999, lf-2011, lf-2014, lf-2016]
     source_definition: {ref: code-irpp-is-1990, locator: "art. 44, § IV"}
     source_traduction: {ref: lf-2014, locator: "art. 45"}
-    voir_aussi: [regime-estimatif-optionnel, minimum-impot, irpp]
+    voir_aussi: [regime-forfaitaire-optionnel, minimum-impot, irpp]
     fr:
       terme: Régime forfaitaire d'imposition
       definition: >
@@ -1405,14 +1535,14 @@ entries:
         الفصول من 44 مكرّر إلى 44 سادسا.
       synonymes: [نظام الضريبة التقديرية]
 
-  - id: regime-estimatif-optionnel
+  - id: regime-forfaitaire-optionnel
     acronyme: null
     statut: provisoire
     references: [lf-2026]
     source_definition: {ref: lf-2026, locator: "art. 91"}
     voir_aussi: [regime-forfaitaire, irpp, minimum-impot]
     fr:
-      terme: Régime estimatif optionnel
+      terme: Régime forfaitaire optionnel
       definition: >
         Régime ouvert sur option, ajouté à l'article 44 ter du code par
         l'article 91 de la loi de finances pour 2026, aux contribuables dont le
@@ -1512,25 +1642,24 @@ entries:
   - id: prestations-familiales
     acronyme: null
     statut: valide
-    references: [loi60-30, loi88-38]
+    references: [loi60-30, loi80-36, loi94-88, loi88-38]
     source_definition: {ref: loi60-30, locator: "art. 51"}
     voir_aussi: [allocation-familiale, majoration-salaire-unique, contribution-frais-creche, cnss]
     fr:
       terme: Prestations familiales
       definition: >
-        Ensemble des trois prestations servies par les caisses au titre des enfants à
-        charge : l'allocation familiale, la majoration pour salaire unique et la
-        contribution aux frais de crèche. L'article 51 de la loi n° 60-30 en fixe la
-        liste ; leur ouverture suppose une affiliation et un droit ouvert, non une
-        condition de ressources.
+        Prestations servies au titre des enfants à charge. L'article 51 de la loi n° 60-30
+        comprend les allocations familiales, les allocations pour congés de naissance et
+        les allocations pour congés de jeunes travailleurs. La majoration pour salaire
+        unique et la contribution aux frais de crèche ont été ajoutées par des textes
+        ultérieurs.
       synonymes: []
     ar:
       terme: المنح العائلية
       definition: >
-        مجموع المنح الثلاث التي تسندها الصناديق بعنوان الأبناء المتكفَّل بهم: المنحة
-        العائلية ومنحة الأجر الوحيد والمساهمة في مصاريف رياض الأطفال. يضبط الفصل 51 من
-        القانون عدد 30 لسنة 1960 قائمتها، ويتوقّف فتح الحقّ فيها على الانخراط لا على شرط
-        الموارد.
+        منافع تُسند بعنوان الأبناء المتكفَّل بهم. ويشمل الفصل 51 من القانون عدد 30 لسنة
+        1960 المنح العائلية ومنح عطل الولادة ومنح عطل الشبان العاملين. وأضيفت منحة الأجر
+        الوحيد والمساهمة في مصاريف رياض الأطفال بنصوص لاحقة.
       synonymes: []
 
   - id: allocation-familiale
@@ -1590,17 +1719,16 @@ entries:
       definition: >
         Contribution mensuelle versée directement à la crèche au titre des enfants de
         deux à trente-six mois des assurées sociales dont le revenu ne dépasse pas un
-        plafond exprimé en multiples du salaire minimum. C'est le seul dispositif du
-        bloc contributif dont le champ soit explicitement genré : la loi vise « les
-        assurées sociales », le décret « la mère bénéficiaire ».
+        plafond exprimé en multiples du salaire minimum. La loi vise « les assurées
+        sociales » et le décret « la mère bénéficiaire ».
       synonymes: []
     ar:
       terme: المساهمة في مصاريف رياض الأطفال
       definition: >
         مساهمة شهرية تُدفع مباشرة إلى روضة الأطفال بعنوان أبناء المضمونات اجتماعيًّا
         الذين تتراوح أعمارهم بين شهرين وستّة وثلاثين شهرًا، شرط ألّا يتجاوز دخل الأمّ
-        سقفًا محدّدًا بمضاعفات الأجر الأدنى. وهي الترتيب الوحيد في الصنف المساهماتي الذي
-        يقتصر ميدانه صراحة على النساء.
+        سقفًا محدّدًا بمضاعفات الأجر الأدنى. ويذكر القانون «المضمونات اجتماعيا» والأمر
+        «الأم المنتفعة».
       synonymes: []
 
   - id: indemnite-journaliere
@@ -1798,6 +1926,58 @@ entries:
         لنفسه ولذوي حقّه.
       synonymes: []
 
+  - id: prestation-monetaire
+    acronyme: null
+    statut: provisoire  # équivalent AR moderne non attesté tel quel dans les textes vérifiés
+    references: [loi60-30, loi-amen-social-2019, arrete-2020-05-19-transferts]
+    source_definition: {ref: loi60-30, locator: "art. 68"}
+    voir_aussi: [prestation-non-monetaire, transfert-monetaire]
+    fr:
+      terme: Prestation monétaire
+      definition: >
+        Prestation qui procure directement une somme d'argent au bénéficiaire, par un
+        versement ponctuel ou périodique. Elle correspond souvent à ce que les textes
+        juridiques appellent une indemnité ou une prestation en espèces, sans remplacer
+        la dénomination propre de chaque indemnité, allocation ou transfert. La loi
+        n° 60-30 vise ainsi les « indemnités en espèces », tandis que la loi organique
+        n° 2019-10 distingue les transferts financiers directs et le soutien financier.
+      synonymes: []
+    ar:
+      terme: المنفعة النقدية
+      definition: >
+        منفعة تُسند إلى المنتفع في شكل مبلغ مالي، دفعة واحدة أو بصفة دورية. وهي تقابل
+        غالبًا ما تسمّيه النصوص القانونية منحة أو تعويضًا نقديًّا، دون أن تكون هذه
+        التسميات مترادفة في جميع السياقات. فالفصل 68 من القانون عدد 30 لسنة 1960 يذكر
+        «المنح النقدية»، بينما يميّز الفصلان 11 و12 من القانون الأساسي عدد 10 لسنة 2019
+        بين «التحويلات المالية المباشرة» و«الدعم المادي».
+      synonymes: []
+
+  - id: prestation-non-monetaire
+    acronyme: null
+    statut: provisoire  # équivalent AR moderne non attesté tel quel dans les textes vérifiés
+    references: [loi60-30, loi-amen-social-2019]
+    source_definition: {ref: loi60-30, locator: "art. 68"}
+    voir_aussi: [prestation-monetaire]
+    fr:
+      terme: Prestation non monétaire
+      definition: >
+        Prestation fournie sous forme de bien, de soin, de service ou d'accès à un
+        service, et non par le versement d'une somme. Elle correspond à la catégorie
+        traditionnellement appelée prestation en nature, sans que les deux expressions
+        soient toujours interchangeables. La loi n° 60-30 oppose aux indemnités en
+        espèces l'octroi des soins, et la loi organique n° 2019-10 distingue les
+        transferts et soutiens financiers des prestations de soins.
+      synonymes: []
+    ar:
+      terme: المنفعة غير النقدية
+      definition: >
+        منفعة تُسند في صورة سلعة أو علاج أو خدمة أو نفاذ إلى خدمة، لا في شكل مبلغ مالي.
+        وهي تقابل غالبًا ما يسمّى في المصطلح القانوني التقليدي منفعة عينية، دون تطابق
+        مطلق بين العبارتين. فالفصل 68 من القانون عدد 30 لسنة 1960 يقابل «المنح النقدية»
+        بالعلاج في صورة العيادات أو الإيواء، ويميّز الفصل 13 من القانون الأساسي عدد 10
+        لسنة 2019 «المنافع الصحية» من التحويلات والدعم المادي.
+      synonymes: []
+
   - id: cotisation-assure
     acronyme: null
     statut: valide  # AR : le singulier est dérivé du pluriel attesté « اشتراكات المضمونين »
@@ -1830,13 +2010,13 @@ entries:
     acronyme: null
     statut: valide
     references: [loi60-30, loi96-65]
-    source_definition: {ref: loi60-30, locator: "art. 53"}
+    source_definition: {ref: loi60-30, locator: "art. 54"}
     voir_aussi: [allocation-familiale, prestations-familiales]
     fr:
       terme: Enfant à charge
       definition: >
         Notion qui commande l'ouverture des prestations familiales. Les bornes d'âge de
-        l'article 53 de la loi n° 60-30 ont été relevées par la loi n° 96-65 : seize ans
+        l'article 54 de la loi n° 60-30 ont été relevées par la loi n° 96-65 : seize ans
         sans condition, vingt et un ans en cas de scolarité, sans limite en cas
         d'infirmité ou de maladie incurable.
       synonymes: []
@@ -1844,52 +2024,55 @@ entries:
       terme: الطفل المتكفَّل به
       definition: >
         مفهوم يتحكّم في فتح الحقّ في المنح العائلية. وقد رفع القانون عدد 65 لسنة 1996
-        حدود السنّ الواردة بالفصل 53 من القانون عدد 30 لسنة 1960: ستّة عشر عامًا دون
+        حدود السنّ الواردة بالفصل 54 من القانون عدد 30 لسنة 1960: ستّة عشر عامًا دون
         شرط، وواحد وعشرون عامًا في صورة الدراسة، ودون تحديد في صورة العجز أو المرض
         العضال.
       synonymes: []
 
   - id: indemnite-perte-emploi
     acronyme: null
-    statut: valide
+    statut: provisoire
     references: [loi96-101]
-    source_definition: {ref: loi96-101}
+    source_definition: {ref: loi96-101, locator: "art. 2-9"}
     voir_aussi: [assure-social, cnss]
     fr:
-      terme: Indemnité pour perte d'emploi
+      terme: Protection contre la perte d'emploi
       definition: >
-        Prestation servie au salarié privé de son emploi pour un motif économique ou
-        technique. Elle n'est ouverte qu'à une partie des régimes, ce qui en fait la
-        branche la plus inégalement distribuée du système contributif tunisien.
+        Mécanisme de la loi n° 96-101 qui garantit, en cas de cessation de paiement de
+        l'entreprise, les indemnités de licenciement et les droits légaux des travailleurs
+        ayant perdu leur emploi pour des raisons économiques ou technologiques. Il maintient
+        temporairement les prestations familiales et le droit aux soins, sans créer de revenu
+        de remplacement.
       synonymes: []
     ar:
-      terme: منحة فقدان الشغل
+      terme: الحماية الاجتماعية للعمال الذين يفقدون شغلهم لأسباب اقتصادية أو فنية
       definition: >
-        منفعة تُسند إلى الأجير الذي فقد شغله لسبب اقتصادي أو فنّي. ولا تُفتح إلّا في بعض
-        الأنظمة، ممّا يجعلها الفرع الأكثر تفاوتًا في التوزيع داخل المنظومة المساهماتية
-        التونسية.
+        آلية أقرّها القانون عدد 101 لسنة 1996 لضمان تعويضات الطرد والحقوق القانونية
+        للعمال الذين فقدوا شغلهم لأسباب اقتصادية أو فنية عند توقف المؤسسة عن الدفع.
+        وتُبقي مؤقتًا على المنح العائلية والحق في العلاج، دون أن تُحدث دخلًا بديلًا.
       synonymes: []
 
   - id: pnafn
     acronyme: PNAFN
     statut: valide
     references: [loi-86-83-lfr-1986, arrete-2024-07-10-allocation-pauvres]
-    source_definition: {ref: arrete-2024-07-10-allocation-pauvres, locator: "art. 1"}
+    source_definition: {ref: loi-86-83-lfr-1986, locator: "art. 13"}
     voir_aussi: [amen-social, amg1, condition-de-ressources]
     fr:
       terme: Programme national d'aide aux familles nécessiteuses
       definition: >
-        Programme d'assistance servant une allocation mensuelle aux familles sans
-        ressources, apparu en 1986. Aucun texte publié ne le crée, n'en fixe l'objet ni
-        l'éligibilité : il n'apparaît au *Journal officiel* qu'en qualité d'objet de
-        dépense, et son montant n'a été énoncé par un texte qu'en 2024.
+        Programme d'assistance dont la loi de finances rectificative de 1986 autorise le
+        financement par les organismes de sécurité sociale. L'arrêté conjoint du 10 juillet
+        2024 constate que son allocation mensuelle est alors fixée à 180 dinars et autorise
+        son relèvement dans la limite du transfert monétaire de l'AMEN social.
       synonymes: []
     ar:
       terme: البرنامج الوطني لمساعدة العائلات المعوزة
       definition: >
-        برنامج مساعدة يُسند منحة شهرية إلى العائلات المعوزة، ظهر سنة 1986. ولا يوجد نصّ
-        منشور يُحدثه أو يضبط موضوعه أو شروط الانتفاع به: إذ لا يرد بالرائد الرسمي إلّا
-        بوصفه بابًا من أبواب الإنفاق، ولم يُصرَّح بمقداره في نصّ إلّا سنة 2024.
+        برنامج مساعدة أجاز قانون المالية التعديلي لسنة 1986 تمويله من قبل هياكل الضمان
+        الاجتماعي. ويعاين القرار المشترك المؤرخ في 10 جويلية 2024 أن منحته الشهرية كانت
+        مضبوطة آنذاك بمائة وثمانين دينارًا، ويجيز الترفيع فيها في حدود التحويل النقدي
+        لبرنامج الأمان الاجتماعي.
       synonymes: []
 
   - id: amen-social
@@ -1903,15 +2086,13 @@ entries:
       definition: >
         Programme institué par la loi organique n° 2019-10, qui refonde l'assistance
         autour d'un ciblage par score, d'un transfert monétaire permanent et d'un accès
-        aux soins. Il se superpose au programme national d'aide aux familles
-        nécessiteuses sans l'abroger.
+        aux soins.
       synonymes: []
     ar:
       terme: برنامج الأمان الاجتماعي
       definition: >
         برنامج أحدثه القانون الأساسي عدد 10 لسنة 2019، أعاد بناء المساعدة الاجتماعية حول
-        الاستهداف بالتنقيط والتحويل النقدي القارّ والنفاذ إلى العلاج. وهو يتراكب مع
-        البرنامج الوطني لمساعدة العائلات المعوزة دون أن يلغيه.
+        الاستهداف بالتنقيط والتحويل النقدي القارّ والنفاذ إلى العلاج.
       synonymes: []
 
   - id: categories-pauvres
@@ -2009,8 +2190,7 @@ entries:
       definition: >
         Note calculée à partir de variables observables du ménage — le *proxy means
         test* — servant à départager les demandeurs de l'AMEN social. L'arrêté du 19 mai
-        2020 en énumère les dimensions mais **non les pondérations**, qui ne sont pas
-        publiées.
+        2020 en énumère les dimensions sans fixer les pondérations.
       synonymes: []
     ar:
       terme: أنموذج التنقيط
@@ -2031,15 +2211,15 @@ entries:
       definition: >
         Versement mensuel de l'AMEN social, composé d'une allocation de base et d'un
         supplément par enfant à charge, doublé pour l'enfant titulaire d'une carte de
-        handicap. La base est revalorisée chaque année, avec effet rétroactif au 1^er^
-        janvier.
+        handicap. La base a été revalorisée en 2022 puis chaque année jusqu'en 2025, avec
+        effet au 1^er^ janvier pour chacune de ces revalorisations.
       synonymes: []
     ar:
       terme: التحويل النقدي المباشر
       definition: >
         دفع شهري في إطار برنامج الأمان الاجتماعي يتكوّن من منحة قاعدية وزيادة عن كلّ طفل
         متكفَّل به، تُضاعَف بالنسبة إلى الطفل حامل بطاقة إعاقة. وتُراجَع المنحة القاعدية
-        سنويًّا بمفعول رجعي إلى غرّة جانفي.
+        في سنة 2022 ثم سنويًّا إلى سنة 2025، بمفعول يعود إلى غرّة جانفي لكلّ مراجعة.
       synonymes: []
 
   - id: allocation-familiale-non-contributive
@@ -2053,17 +2233,15 @@ entries:
       definition: >
         Allocation mensuelle servie au titre des enfants de moins de six ans des
         catégories pauvres et à revenu limité, créée en 2022. Elle est servie sans
-        plafonnement du nombre d'enfants, et exclut expressément les affiliés à un
-        régime de sécurité sociale : c'est la règle de non-cumul avec l'allocation
-        familiale contributive.
+        plafonnement du nombre d'enfants. Parmi les catégories à revenu limité, elle exclut
+        les personnes affiliées à un régime de sécurité sociale.
       synonymes: []
     ar:
       terme: المنحة العائلية غير المساهماتية
       definition: >
         منحة شهرية تُسند بعنوان الأبناء دون سنّ ستّ سنوات في الفئات الفقيرة ومحدودة
-        الدخل، أُحدثت سنة 2022. وتُسند دون تحديد لعدد الأبناء، وتستثني صراحة المنخرطين
-        في أحد أنظمة الضمان الاجتماعي، وهي قاعدة منع الجمع مع المنحة العائلية
-        المساهماتية.
+        الدخل، أُحدثت سنة 2022. وتُسند دون تحديد لعدد الأبناء، وتستثني من الفئات محدودة
+        الدخل المنخرطين في أحد أنظمة الضمان الاجتماعي.
       synonymes: []
 
   - id: amg1
@@ -2075,17 +2253,16 @@ entries:
     fr:
       terme: Carte de soins gratuits
       definition: >
-        Titre ouvrant la gratuité des soins dans les structures publiques, attribué aux
-        familles sans ressources et, de droit, aux bénéficiaires du programme national
-        d'aide aux familles nécessiteuses. Son attribution est contingentée par des
-        quotas régionaux non publiés.
+        Titre ouvrant la gratuité des soins dans les structures publiques, attribué à tout
+        Tunisien indigent, à son conjoint et à ses enfants légalement à charge, dans la
+        limite d'un nombre global de cartes et de quotas régionaux fixés par arrêté conjoint.
       synonymes: []
     ar:
       terme: بطاقة العلاج المجاني
       definition: >
-        سند يخوّل مجّانية العلاج بالهياكل الصحّية العمومية، ويُسند إلى العائلات المعوزة،
-        وبقوّة القانون إلى المنتفعين بالبرنامج الوطني لمساعدة العائلات المعوزة. ويخضع
-        إسناده إلى حصص جهوية غير منشورة.
+        سند يخوّل مجّانية العلاج بالهياكل الصحّية العمومية، ويُسند إلى كل تونسي معوز
+        وقرينه وأبنائه المتكفّل بهم قانونًا، في حدود عدد جملي من البطاقات وحصص جهوية
+        تُضبط بقرار مشترك.
       synonymes: []
 
   - id: amg2
@@ -2138,17 +2315,16 @@ entries:
     fr:
       terme: Quota régional
       definition: >
-        Contingent de cartes de soins réparti entre gouvernorats, qui borne le nombre de
-        bénéficiaires indépendamment du nombre de ménages éligibles. Aucun arrêté fixant
-        ces quotas n'a été retrouvé : c'est l'un des trois paramètres décisifs de
-        l'assistance tunisienne à ne pas être publié.
+        Contingentement prévu par les décrets relatifs aux cartes de soins gratuits et à
+        tarifs réduits. Ces décrets disposent que le nombre global de cartes et sa
+        répartition régionale sont fixés par arrêté conjoint.
       synonymes: []
     ar:
       terme: الحصّة الجهوية
       definition: >
-        حصّة من بطاقات العلاج تُوزَّع بين الولايات وتحدّ من عدد المنتفعين بصرف النظر عن
-        عدد الأسر المستوفية للشروط. ولم يُعثر على أيّ قرار يضبط هذه الحصص، وهي أحد ثلاثة
-        معايير حاسمة في المساعدة الاجتماعية التونسية لم تُنشر.
+        تحديد للحصص تنصّ عليه الأوامر المتعلقة ببطاقات العلاج المجاني وبالتعريفة
+        المنخفضة. وتقرّر هذه الأوامر أن يُضبط العدد الجملي للبطاقات وتوزيعها الجهوي
+        بقرار مشترك.
       synonymes: []
 
   - id: salaire-journalier-moyen
@@ -2414,8 +2590,8 @@ entries:
   - id: cadres-actifs
     acronyme: null
     statut: valide
-    references: [loi2019-37]
-    source_definition: {ref: loi85-12, locator: "art. 29"}
+    references: [loi2019-37, loi93-64]
+    source_definition: {ref: loi85-12, locator: "art. 29 et 32"}
     voir_aussi: [bonification, fonctions-astreignantes, travaux-penibles-insalubres, forces-de-securite-interieure]
     fr:
       terme: Cadres actifs
@@ -2424,8 +2600,8 @@ entries:
         corps, qui bénéficient d'un âge de mise à la retraite dérogatoire : 55 ans
         dans la loi n° 85-12, 57 ans depuis la loi n° 2019-37 (art. 29). Ils
         bénéficient d'une bonification égale à la période restant à courir jusqu'à
-        60 ans, dans la limite de deux à cinq ans selon la durée des services
-        (art. 32).
+        60 ans dans la rédaction de 1985, puis 62 ans depuis le 5 mai 2019,
+        dans la limite de deux à cinq ans selon la durée des services (art. 32).
       synonymes: []
     ar:
       terme: الأسلاك النشيطة
@@ -2433,8 +2609,8 @@ entries:
         أعوان عموميون مصنَّفون ضمن الأسلاك النشيطة بمقتضى أوامر خاصّة بكلّ سلك،
         ينتفعون بسنّ استثنائية للإحالة على التقاعد: 55 سنة في القانون عدد 12 لسنة
         1985، و57 سنة منذ القانون عدد 37 لسنة 2019 (الفصل 29). وينتفعون بترفيع في مدّة
-        الخدمات يساوي الفترة المتبقّية إلى سنّ الستين، في حدود سنتين إلى خمس سنوات حسب
-        مدّة الخدمات (الفصل 32).
+        الخدمات يساوي الفترة المتبقّية إلى سنّ الستين في صيغة 1985، ثم إلى سنّ 62 سنة
+        بداية من 5 ماي 2019، في حدود سنتين إلى خمس سنوات حسب مدّة الخدمات (الفصل 32).
       synonymes: []
 
   - id: elements-permanents-remuneration
@@ -2547,8 +2723,8 @@ entries:
   - id: fonctions-astreignantes
     acronyme: null
     statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
-    references: [decret85-1178, loi2019-37]
-    source_definition: {ref: loi85-12, locator: "art. 28"}
+    references: [decret85-1178, loi2019-37, loi93-64]
+    source_definition: {ref: loi85-12, locator: "art. 28 et 32"}
     voir_aussi: [bonification, cadres-actifs, travaux-penibles-insalubres]
     fr:
       terme: Fonctions astreignantes
@@ -2558,7 +2734,7 @@ entries:
         cumulé avec une durée de 35 ans de services : 55 ans dans la loi n° 85-12,
         57 ans depuis la loi n° 2019-37 (art. 28). Les agents concernés bénéficient
         d'une bonification égale à la période restant à courir jusqu'à 60 ans
-        (art. 32).
+        dans la rédaction de 1985, puis 62 ans depuis le 5 mai 2019 (art. 32).
       synonymes: []
     ar:
       terme: الوظائف المرهقة
@@ -2567,7 +2743,7 @@ entries:
         مباشرتها سنًّا استثنائية للإحالة على التقاعد مقترنة بمدّة خدمات بـ35 سنة: 55 سنة
         في القانون عدد 12 لسنة 1985، و57 سنة منذ القانون عدد 37 لسنة 2019 (الفصل 28).
         وينتفع الأعوان المعنيّون بترفيع في مدّة الخدمات يساوي الفترة المتبقّية إلى سنّ
-        الستين (الفصل 32).
+        الستين في صيغة 1985، ثم إلى سنّ 62 سنة بداية من 5 ماي 2019 (الفصل 32).
       synonymes: []
 
   - id: indemnite-caractere-familial
@@ -4593,6 +4769,69 @@ entries:
         يُحتسب هذا الأخير على ثمن يشمل المعلوم على الاستهلاك.
       synonymes: []
 
+  - id: impots-directs
+    acronyme: null
+    statut: valide
+    references: [loi-67-53-lob, loi-org-96-103-lob, lf-2014, minfin-recettes-fiscales]
+    source_definition: {ref: zakraoui-ena-droit-fiscal, locator: "p. 14-16"}
+    source_traduction: {ref: loi2018-56-lf2019, locator: "tableau A"}
+    voir_aussi: [impots-indirects, irpp, impot-societes, impot-fortune]
+    fr:
+      terme: Impôts directs
+      definition: >
+        Impôts qui atteignent, avec une certaine périodicité, une matière
+        imposable stable ou régulièrement renouvelée, comme un revenu ou un
+        bénéfice. En Tunisie, l'impôt sur le revenu des personnes physiques et
+        l'impôt sur les sociétés ; le même critère y rattache l'impôt sur la
+        fortune, dû chaque année sur le patrimoine détenu au 1er janvier. La
+        loi organique du budget les énumérait,
+        sans les définir, parmi les recettes de l'État, sous l'intitulé
+        « impôts directs ordinaires » à partir de 1996, jusqu'à la loi
+        organique du budget de 2019.
+      synonymes: [impôts directs ordinaires, imposition directe]
+    ar:
+      terme: الأداءات المباشرة
+      definition: >
+        أداءات توظَّف بصفة دورية على مادة خاضعة للأداء قارّة أو متجدّدة
+        بانتظام، كالدخل أو الربح. وهي في تونس الضريبة على دخل الأشخاص
+        الطبيعيين والضريبة على الشركات، ويُلحق بها المعيار نفسه الضريبة على
+        الثروة المستوجبة كل سنة على المكاسب المملوكة في غرّة جانفي. كان
+        القانون الأساسي للميزانية
+        يعدّدها، دون أن يعرّفها، ضمن موارد الدولة تحت عنوان «الأداءات
+        المباشرة الاعتيادية» ابتداء من سنة 1996، إلى حين صدور القانون
+        الأساسي للميزانية لسنة 2019.
+      synonymes: [الأداءات المباشرة الاعتيادية]
+
+  - id: impots-indirects
+    acronyme: null
+    statut: valide
+    references: [loi-67-53-lob, loi-org-96-103-lob, lf-2014, minfin-recettes-fiscales]
+    source_definition: {ref: zakraoui-ena-droit-fiscal, locator: "p. 14-16"}
+    source_traduction: {ref: loi2018-56-lf2019, locator: "tableau A"}
+    voir_aussi: [impots-directs, tva, droit-de-consommation]
+    fr:
+      terme: Impôts indirects
+      definition: >
+        Impôts qui frappent des opérations intermittentes ou successives, à
+        l'occasion de la production, de l'échange ou de la consommation d'un
+        bien. En Tunisie, la taxe sur la valeur ajoutée, les droits de
+        consommation, les droits de douane, les droits d'enregistrement et le
+        timbre. La loi organique du budget les énumérait, sans les définir,
+        parmi les recettes de l'État, sous l'intitulé « impôts et
+        taxes indirects ordinaires » à partir de 1996, jusqu'à la loi
+        organique du budget de 2019.
+      synonymes: [impôts et taxes indirects ordinaires, imposition indirecte]
+    ar:
+      terme: الأداءات والمعاليم غير المباشرة
+      definition: >
+        أداءات توظَّف على عمليات متقطّعة أو متتالية، بمناسبة إنتاج سلعة أو
+        تبادلها أو استهلاكها. وهي في تونس الأداء على القيمة المضافة والمعلوم
+        على الاستهلاك والمعاليم الديوانية ومعاليم التسجيل والطابع الجبائي. كان
+        القانون الأساسي للميزانية يعدّدها، دون أن يعرّفها، ضمن موارد
+        الدولة تحت عنوان «الأداءات والمعاليم غير المباشرة الاعتيادية» ابتداء
+        من سنة 1996، إلى حين صدور القانون الأساسي للميزانية لسنة 2019.
+      synonymes: [الأداءات والمعاليم غير المباشرة الاعتيادية]
+
   - id: taxe-a-la-production
     acronyme: null
     statut: provisoire
@@ -5045,6 +5284,143 @@ entries:
         لسنة 1985 المؤرخ في 31 ديسمبر 1985.
       synonymes: []
 
+  - id: impot-fortune
+    acronyme: null
+    statut: valide
+    references: [lf-2026, dgi-nc-13-2026, lf-2023]
+    source_definition: {ref: lf-2026, locator: "art. 88"}
+    source_traduction: {ref: dgi-nc-13-2026}
+    voir_aussi: [impot-fortune-immobiliere, impots-directs, habitation-principale]
+    fr:
+      terme: Impôt sur la fortune
+      definition: >
+        Impôt dû au 1er janvier de chaque année par les personnes physiques sur
+        la valeur, nette des dettes que le texte admet en déduction, de leurs
+        immeubles, fonds de commerce et meubles, y compris ceux de leurs enfants
+        mineurs à charge, lorsqu'elle atteint 3 millions de dinars. Institué par
+        l'article 88 de la loi de finances pour 2026 à compter du 1er janvier
+        2026, il abroge et remplace l'impôt sur la fortune immobilière de 2023.
+        Il n'est codifié dans aucun code ; sa procédure relève du code des
+        droits et procédures fiscaux.
+      synonymes: []
+    ar:
+      terme: الضريبة على الثروة
+      definition: >
+        ضريبة تُستوجب في 1 جانفي من كل سنة على الأشخاص الطبيعيين بعنوان قيمة
+        ما يملكونه من عقارات وأصول تجارية ومنقولات، بما في ذلك مكاسب أبنائهم
+        القصّر الذين في كفالتهم، بعد طرح الديون التي يجيز النص طرحها، إذا بلغت
+        هذه القيمة 3 مليون دينار. أُحدثت بالفصل 88 من قانون المالية لسنة 2026
+        ابتداء من غرّة جانفي 2026، وألغت الضريبة على الثروة العقارية لسنة 2023
+        وعوّضتها. لا تندرج في أيّ مجلة، وتخضع في إجراءاتها لمجلة الحقوق
+        والإجراءات الجبائية.
+      synonymes: []
+
+  - id: impot-fortune-immobiliere
+    acronyme: null
+    statut: valide
+    references: [lf-2023, dgi-nc-15-2023]
+    source_definition: {ref: lf-2023, locator: "art. 23"}
+    source_traduction: {ref: lf-2023, locator: "art. 23"}
+    voir_aussi: [impot-fortune, habitation-principale]
+    fr:
+      terme: Impôt sur la fortune immobilière
+      definition: >
+        Impôt exigible au 1er janvier de chaque année, de 2023 à 2025, sur les
+        immeubles des personnes physiques, y compris ceux de leurs enfants
+        mineurs sous leur tutelle, dont la valeur, nette des dettes que le texte
+        admet en déduction, atteignait 3 millions de dinars ; son taux était de
+        0,5 %. Institué par l'article 23 du décret-loi n° 2022-79 portant loi de
+        finances pour 2023, il a été abrogé et remplacé, à compter du 1er
+        janvier 2026, par l'impôt sur la fortune.
+      synonymes: []
+    ar:
+      terme: الضريبة على الثروة العقارية
+      definition: >
+        ضريبة توظَّف في غرّة جانفي من كل سنة، من 2023 إلى 2025، على عقارات
+        الأشخاص الطبيعيين، بما في ذلك عقارات أبنائهم القصّر الذين في كفالتهم،
+        التي تساوي قيمتها بعد طرح الديون التي يجيز النص طرحها أو تفوق 3 مليون
+        دينار، بنسبة 0,5 %. أُحدثت بالفصل 23 من المرسوم عدد 79 لسنة 2022
+        المتعلق بقانون المالية لسنة 2023، وأُلغيت وعُوّضت بالضريبة على الثروة
+        ابتداء من غرّة جانفي 2026.
+      synonymes: []
+
+  - id: impot-foncier-2014
+    acronyme: null
+    statut: valide
+    references: [lf-2014, lfc-2014]
+    source_definition: {ref: lf-2014, locator: "art. 55"}
+    source_traduction: {ref: lf-2014, locator: "art. 55"}
+    voir_aussi: [impot-fortune-immobiliere]
+    fr:
+      terme: Impôt foncier (2014)
+      definition: >
+        Impôt sur les immeubles détenus par les personnes physiques, droits
+        qui s'y rattachent compris, égal à une fois et demie la taxe sur les
+        immeubles bâtis ou la taxe sur les immeubles non bâtis, institué par
+        l'article 55 de la loi de finances pour 2014. L'article 38 de la loi de
+        finances complémentaire pour 2014 en a supprimé les dispositions à
+        compter du 1er janvier 2014.
+      synonymes: []
+    ar:
+      terme: الضريبة العقارية (2014)
+      definition: >
+        ضريبة على العقارات التي يمتلكها الأشخاص الطبيعيون، بما في ذلك الحقوق
+        المتعلقة بها، تساوي مرّة ونصف المعلوم على العقارات المبنية أو المعلوم
+        على الأراضي غير المبنية، أُحدثت بالفصل 55 من قانون المالية لسنة 2014،
+        وألغى الفصل 38 من قانون المالية التكميلي لسنة 2014 أحكامها ابتداء من
+        غرّة جانفي 2014.
+      synonymes: []
+
+  - id: habitation-principale
+    acronyme: null
+    statut: valide
+    references: [lf-2023, lf-2026, dgi-nc-13-2026]
+    source_definition: {ref: lf-2023, locator: "art. 23 § 3"}
+    source_traduction: {ref: lf-2023, locator: "art. 23 § 3"}
+    voir_aussi: [impot-fortune, impot-fortune-immobiliere]
+    fr:
+      terme: Habitation principale
+      definition: >
+        Logement où le redevable a son habitation principale, exclu de l'impôt
+        sur la fortune immobilière puis de l'impôt sur la fortune, avec, depuis
+        2026, le mobilier qui y est utilisé. La loi ne la définit pas ;
+        l'administration l'entend quelle qu'en soit la valeur ou la surface,
+        dépendances comprises, la preuve se faisant par une attestation des
+        services compétents.
+      synonymes: []
+    ar:
+      terme: المسكن الرئيسي
+      definition: >
+        المسكن الذي يتخذه المطالب بالضريبة مسكنا رئيسيا، ويخرج من الضريبة على
+        الثروة العقارية ثم من الضريبة على الثروة، مع الأثاث المستغل به منذ
+        2026. لا يعرّفه القانون، وتعتبره الإدارة مهما كانت قيمته أو مساحته بما
+        في ذلك توابعه، ويثبت بشهادة من المصالح المختصة.
+      synonymes: []
+
+  - id: fonds-de-commerce
+    acronyme: null
+    statut: provisoire
+    references: [lf-2026]
+    source_definition: {ref: lf-2026, locator: "art. 88 § 3"}
+    voir_aussi: [impot-fortune]
+    fr:
+      terme: Fonds de commerce
+      definition: >
+        Élément du patrimoine que l'article 88 de la loi de finances pour 2026
+        range parmi les biens soumis à l'impôt sur la fortune, à côté des
+        immeubles et des meubles, et dont il exclut ceux qui sont
+        effectivement exploités.
+        Le terme français est une traduction ; il reste à confirmer dans un
+        texte bilingue du Journal officiel.
+      synonymes: []
+    ar:
+      terme: الأصول التجارية
+      definition: >
+        عنصر من المكاسب يدرجه الفصل 88 من قانون المالية لسنة 2026 ضمن
+        المكاسب الخاضعة للضريبة على الثروة، إلى جانب العقارات والمنقولات،
+        ويستثني منه الأصول التجارية المستغلة فعليا.
+      synonymes: []
+
   - id: benefice-imposable
     acronyme: null
     statut: valide
@@ -5096,3 +5472,1957 @@ entries:
         وتُحتسب على الضريبة النظرية، ولا بتلك المنصوص عليها بالفقرة II من
         الفصل 44، وهي مقابلها في الضريبة على دخل الأشخاص الطبيعيين.
       synonymes: [الحد الأدنى للضريبة]
+
+  - id: taux-global
+    acronyme: null
+    statut: provisoire
+    references: [loi97-4]
+    source_definition: {ref: loi60-30, locator: "art. 10 et 41"}
+    voir_aussi: [cotisations-sociales, cnss, compte-de-compensation]
+    fr:
+      terme: Taux global de cotisation
+      definition: >
+        Taux unique fixé par l'article 41 de la loi n° 60-30 pour l'ensemble
+        des régimes que cette loi institue, à la charge de l'employeur et du
+        travailleur, et non par risque. Sa ventilation par régime est proposée
+        par le conseil d'administration de la Caisse nationale de sécurité
+        sociale et approuvée par l'autorité de tutelle (art. 10 et 27). Certaines branches
+        y sont financées par prélèvement, sans relèvement du prélèvement total :
+        l'assurance maladie, la protection sociale des travailleurs et un point
+        transféré aux accidents du travail en 1995.
+      synonymes: [Taux global]
+    ar:
+      terme: النسبة الجملية للمساهمات
+      definition: >
+        نسبة موحّدة يضبطها الفصل 41 من القانون عدد 30 لسنة 1960 لمجموع
+        الأنظمة التي يحدثها هذا القانون، محمولة على المؤجر والعامل، لا على
+        كل خطر على حدة. ويقترح مجلس إدارة الصندوق الوطني للضمان الاجتماعي
+        توزيعها حسب الأنظمة وتصادق عليه سلطة الإشراف (الفصلان 10 و27). وتُموَّل بعض الفروع باقتطاع منها، دون
+        الترفيع في الاقتطاع الجملي: التأمين على المرض، والحماية الاجتماعية
+        للعمّال، ونقطة حُوّلت إلى حوادث الشغل سنة 1995.
+      synonymes: []
+
+  - id: compte-de-compensation
+    acronyme: null
+    statut: provisoire
+    references: [decret2000-1902]
+    source_definition: {ref: loi60-30, locator: "art. 22"}
+    voir_aussi: [fonds-de-reserve, taux-global, cnss]
+    fr:
+      terme: Compte de compensation
+      definition: >
+        Compte que la Caisse nationale de sécurité sociale établit pour chacun
+        des régimes qu'elle gère : il porte en recettes la quote-part des
+        cotisations réservée au régime et la quote-part des autres recettes qui
+        lui revient, en dépenses les charges du régime, dont une quote-part des
+        frais de fonctionnement (loi n° 60-30, art. 22). Le décret n° 2000-1902
+        le maintient parmi les comptes arrêtés chaque année (art. 9).
+      synonymes: []
+    ar:
+      terme: حساب المقاصّة
+      definition: >
+        حساب يمسكه الصندوق الوطني للضمان الاجتماعي لكل نظام يتصرّف فيه: يتضمّن
+        في المداخيل منابَ المساهمات المخصّص للنظام ومنابَ الموارد الأخرى الراجع
+        إليه، وفي المصاريف أعباءَ النظام، ومنها مناب من مصاريف التسيير (القانون
+        عدد 30 لسنة 1960، الفصل 22). ويُبقي عليه الأمر عدد 1902 لسنة 2000 ضمن
+        الحسابات التي تُختم كل سنة (الفصل 9).
+      synonymes: []
+
+  - id: fonds-de-reserve
+    acronyme: null
+    statut: provisoire
+    references: [decret76-3, decret2005-321]
+    source_definition: {ref: loi60-30, locator: "art. 23"}
+    voir_aussi: [compte-de-compensation, reserve-technique, gestion-financiere-distincte]
+    fr:
+      terme: Fonds de réserve
+      definition: >
+        Réserve propre à chaque régime d'une caisse de sécurité sociale, qui
+        reçoit ses excédents et supporte ses déficits ; lorsqu'elle tombe sous
+        le minimum fixé, le conseil d'administration est tenu de proposer une
+        majoration du taux de cotisation ou toute autre mesure de nature à
+        rétablir l'équilibre (loi n° 60-30, art. 23, pour la CNSS). La règle
+        est reprise pour la CNRPS (décret n° 76-3, art. 13) et pour la CNAM
+        (décret n° 2005-321, art. 11).
+      synonymes: [Fonds de réserve par régime]
+    ar:
+      terme: صندوق الاحتياط
+      definition: >
+        احتياطي خاص بكل نظام من أنظمة صندوق للضمان الاجتماعي، تُرصد فيه فوائضه
+        وتُحمَّل عليه عجوزاته؛ وإذا نزل دون الحدّ الأدنى المضبوط، يتعيّن على مجلس
+        الإدارة أن يقترح الترفيع في نسبة المساهمة أو أي إجراء آخر من شأنه إعادة
+        التوازن (القانون عدد 30 لسنة 1960، الفصل 23، بالنسبة إلى الصندوق الوطني
+        للضمان الاجتماعي). وتُعتمد القاعدة نفسها للصندوق الوطني للتقاعد والحيطة
+        الاجتماعية (الأمر عدد 3 لسنة 1976، الفصل 13) وللصندوق الوطني للتأمين على
+        المرض (الأمر عدد 321 لسنة 2005، الفصل 11).
+      synonymes: []
+
+  - id: reserve-technique
+    acronyme: null
+    statut: provisoire
+    references: [loi81-6]
+    source_definition: {ref: decret74-499, locator: "art. 10-12"}
+    voir_aussi: [fonds-de-reserve, gestion-financiere-distincte]
+    fr:
+      terme: Réserve technique
+      definition: >
+        Réserve d'un régime de pensions de la Caisse nationale de sécurité
+        sociale, constituée par l'excédent de ses recettes sur ses dépenses,
+        placée à moyen ou long terme et comptabilisée à part. Le régime des
+        salariés non agricoles la reçoit en 1974, et le régime agricole en
+        1981, avec une dotation initiale prélevée sur les excédents des autres
+        régimes de la caisse (décret n° 74-499, art. 10-12 ; loi n° 81-6,
+        art. 7).
+      synonymes: [Réserve technique initiale]
+    ar:
+      terme: الاحتياطي الفنّي
+      definition: >
+        احتياطي نظام للجرايات بالصندوق الوطني للضمان الاجتماعي، يتكوّن من فائض
+        مداخيله على مصاريفه، ويُوظَّف على المدى المتوسط أو الطويل ويُمسك له حساب
+        منفصل. وقد تلقّاه نظام الأجراء غير الفلاحيين سنة 1974 والنظام الفلاحي
+        سنة 1981، مع اعتماد أوّلي يُقتطع من فوائض الأنظمة الأخرى للصندوق (الأمر
+        عدد 499 لسنة 1974، الفصول 10 إلى 12؛ القانون عدد 6 لسنة 1981، الفصل 7).
+      synonymes: []
+
+  - id: gestion-financiere-distincte
+    acronyme: null
+    statut: provisoire
+    references: [loi81-6, loi89-73]
+    source_definition: {ref: decret74-499, locator: "art. 7"}
+    voir_aussi: [reserve-technique, compte-de-compensation, fonds-de-reserve]
+    fr:
+      terme: Gestion financière distincte
+      definition: >
+        Règle selon laquelle un régime géré par la Caisse nationale de sécurité
+        sociale tient ses recettes, ses dépenses et ses réserves à part, « dans
+        le cadre de l'organisation financière générale » de la caisse. Elle est
+        posée pour les pensions du secteur non agricole (décret n° 74-499,
+        art. 7), puis pour les régimes agricoles (loi n° 81-6, art. 6) et le
+        régime agricole amélioré (loi n° 89-73).
+      synonymes: []
+    ar:
+      terme: التصرّف المالي المستقلّ
+      definition: >
+        قاعدة يمسك بموجبها نظامٌ يتصرّف فيه الصندوق الوطني للضمان الاجتماعي
+        مداخيلَه ومصاريفه واحتياطاته على حدة، «في إطار التنظيم المالي العام»
+        للصندوق. وقد وُضعت لجرايات القطاع غير الفلاحي (الأمر عدد 499 لسنة 1974،
+        الفصل 7)، ثم للأنظمة الفلاحية (القانون عدد 6 لسنة 1981، الفصل 6) وللنظام
+        الفلاحي المحسّن (القانون عدد 73 لسنة 1989).
+      synonymes: []
+
+  - id: controleur-d-etat
+    acronyme: null
+    statut: provisoire
+    references: [decret2005-321]
+    source_definition: {ref: decret2000-1902, locator: "art. 18"}
+    voir_aussi: [contrat-programme, epna]
+    fr:
+      terme: Contrôleur d'État
+      definition: >
+        Agent placé auprès d'une caisse de sécurité sociale pour le compte de
+        l'État (décret n° 2000-1902, art. 18, pour la CNSS ; décret
+        n° 2005-321, pour la CNAM). La loi n° 60-30 prévoyait, auprès de la CNSS, un
+        contrôleur technique et un contrôleur financier (art. 29-33), et le
+        décret n° 76-3 un contrôleur financier auprès de la CNRPS.
+      synonymes: []
+    ar:
+      terme: مراقب الدولة
+      definition: >
+        عون يوضع لدى صندوق للضمان الاجتماعي لحساب الدولة (الأمر عدد 1902 لسنة
+        2000، الفصل 18، بالنسبة إلى الصندوق الوطني للضمان الاجتماعي؛ الأمر عدد
+        321 لسنة 2005، بالنسبة إلى الصندوق الوطني للتأمين على المرض). وكان القانون عدد 30 لسنة 1960 ينصّ لدى الصندوق
+        الوطني للضمان الاجتماعي على مراقب فنّي ومراقب مالي (الفصول 29 إلى 33)،
+        والأمر عدد 3 لسنة 1976 على مراقب مالي لدى الصندوق الوطني للتقاعد والحيطة
+        الاجتماعية.
+      synonymes: []
+
+  - id: contrat-programme
+    acronyme: null
+    statut: provisoire
+    references: [decret2005-321]
+    source_definition: {ref: decret2000-1902, locator: "art. 3 et 12"}
+    voir_aussi: [controleur-d-etat, epna, entreprises-publiques]
+    fr:
+      terme: Contrat-programme
+      definition: >
+        Engagement pluriannuel arrêté par le conseil d'administration d'une
+        caisse de sécurité sociale et approuvé par le ministère de tutelle
+        (décret n° 2000-1902, art. 3 et 12, pour la CNSS ; décret n° 2005-321,
+        pour la CNAM), instrument de la tutelle des entreprises publiques.
+      synonymes: []
+    ar:
+      terme: عقد البرنامج
+      definition: >
+        التزام متعدّد السنوات يضبطه مجلس إدارة صندوق للضمان الاجتماعي وتصادق
+        عليه وزارة الإشراف (الأمر عدد 1902 لسنة 2000، الفصلان 3 و12، بالنسبة إلى
+        الصندوق الوطني للضمان الاجتماعي؛ الأمر عدد 321 لسنة 2005، بالنسبة إلى
+        الصندوق الوطني للتأمين على المرض)، وهو أداة من أدوات الإشراف على المنشآت
+        العمومية.
+      synonymes: []
+
+  - id: compte-diversification-securite-sociale
+    acronyme: null
+    statut: valide
+    references: [lf-2018]
+    source_definition: {ref: dl2021-21-lf2022, locator: "art. 12"}
+    source_traduction: {ref: dl2021-21-lf2022, locator: "art. 12"}
+    voir_aussi: [css, cnss, cnrps, cnam]
+    fr:
+      terme: Compte de diversification des sources de sécurité sociale
+      definition: >
+        Compte spécial du Trésor ouvert par l'article 12 du décret-loi
+        n° 2021-21 (loi de finances pour 2022) pour financer les caisses de
+        sécurité sociale. Il est alimenté par le produit de la contribution
+        sociale de solidarité, d'autres recettes pouvant lui être affectées ;
+        le ministre chargé de la sécurité sociale en est l'ordonnateur, et ses
+        recettes sont réparties entre les caisses selon des critères fixés par
+        son arrêté.
+      synonymes: []
+    ar:
+      terme: حساب تنويع مصادر الضمان الاجتماعي
+      definition: >
+        حساب خاص في الخزينة فتحه الفصل 12 من المرسوم عدد 21 لسنة 2021 (قانون
+        المالية لسنة 2022) لتمويل صناديق الضمان الاجتماعي. تتأتّى موارده من
+        عائدات المساهمة الاجتماعية التضامنية، ويمكن أن تُخصَّص له موارد أخرى؛
+        ويتولّى الوزير المكلّف بالضمان الاجتماعي الأمر بصرف نفقاته، وتُوزَّع
+        موارده على الصناديق حسب معايير تُضبط بقرار منه.
+      synonymes: []
+
+  - id: tfp
+    acronyme: TFP
+    statut: valide
+    references: [decret-1956-01-12-formation-professionnelle, decret66-527]
+    source_definition: {ref: loi-88-145-lf-1989, locator: "art. 29-30"}
+    source_traduction: {ref: loi-88-145-lf-1989, locator: "art. 29-30"}
+    voir_aussi: [foprolos, avance-tfp]
+    fr:
+      terme: Taxe de formation professionnelle
+      definition: >
+        Prélèvement à la charge de l'employeur, institué en 1956, assis
+        depuis 1989 sur les salaires et rétributions versés, au taux de 1 %
+        dans les industries manufacturières et de 2 % dans les autres
+        secteurs. Son produit alimente depuis 2000 un fonds spécial du Trésor
+        consacré à la formation professionnelle.
+      synonymes: []
+    ar:
+      terme: الأداء على التكوين المهني
+      definition: >
+        أداء محمول على المؤجّر، أُحدث سنة 1956، ويُوظَّف منذ سنة 1989 على
+        الأجور والمرتّبات المدفوعة بنسبة 1 % في الصناعات المعملية و2 % في
+        القطاعات الأخرى. يموّل محصوله منذ سنة 2000 صندوقًا خاصًّا في الخزينة
+        مخصَّصًا للتكوين المهني.
+      synonymes: []
+
+  - id: foprolos
+    acronyme: FOPROLOS
+    statut: valide
+    references: [loi77-54]
+    source_definition: {ref: loi77-54, locator: "art. 1-2"}
+    source_traduction: {ref: loi-88-145-lf-1989, locator: "art. 35"}
+    voir_aussi: [tfp]
+    fr:
+      terme: Contribution au fonds de promotion du logement pour les salariés
+      definition: >
+        Prélèvement dû par tout employeur, public ou privé, à l'exception des
+        exploitants agricoles privés, institué en 1977 au taux de 2 % des
+        salaires soumis à cotisation sociale, ramené en 1989 à 1 % des
+        salaires et rétributions. Il alimente un fonds qui finance l'accès
+        des salariés au logement.
+      synonymes: [Contribution au FOPROLOS]
+    ar:
+      terme: المساهمة الراجعة لصندوق النهوض بالمسكن لفائدة الأجراء
+      definition: >
+        اقتطاع محمول على كلّ مؤجّر عمومي أو خاصّ، باستثناء المستغلّين
+        الفلاحيين الخواصّ، أُحدث سنة 1977 بنسبة 2 % من الأجور الخاضعة
+        للمساهمات الاجتماعية، ثمّ خُفّض سنة 1989 إلى 1 % من الأجور
+        والمرتّبات. يموّل صندوقًا يساعد الأجراء على الحصول على مسكن.
+      synonymes: []
+
+  - id: avance-tfp
+    acronyme: null
+    statut: provisoire
+    references: [decret2009-292]
+    source_definition: {ref: loi2007-69, locator: "art. 27"}
+    voir_aussi: [tfp]
+    fr:
+      terme: Avance sur la taxe de formation professionnelle
+      definition: >
+        Crédit d'impôt ouvert depuis 2009 aux entreprises qui forment leur
+        personnel, imputable sur la taxe de formation professionnelle dans la
+        limite de 60 % de la taxe due au titre de l'année précédente, lorsque
+        celle-ci atteint au moins 1 000 dinars.
+      synonymes: []
+    ar:
+      terme: التسبقة على الأداء على التكوين المهني
+      definition: >
+        قرض جبائي مفتوح منذ سنة 2009 للمؤسسات التي تكوّن أعوانها، يُطرح من
+        الأداء على التكوين المهني في حدود 60 % من الأداء المستوجب بعنوان السنة
+        السابقة، إذا بلغ هذا الأداء 1000 دينار على الأقلّ.
+      synonymes: []
+
+  # ── Volume « Les finances locales », chapitre « Les notions » (4 octobre 2026) ──
+  # Définitions tirées de Dafflon et Gilbert (AFD, 2018). Termes arabes PROVISOIRES :
+  # aucun texte bilingue ne met en regard ces notions doctrinales et leurs termes
+  # arabes. Quand un terme figure dans la loi organique n° 2018-29 (code des
+  # collectivités locales), édition arabe du JORT n° 39 du 15 mai 2018, l'article est
+  # indiqué en commentaire : il atteste le terme arabe, non sa mise en regard avec la
+  # notion française (édition française de ce JORT non identifiée).
+
+  - id: decentralisation
+    acronyme: null
+    statut: provisoire  # AR : اللامركزية, CCL 2018 (AR), art. 1
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 17"}
+    voir_aussi: [deconcentration, delegation-competences, devolution-competences]
+    fr:
+      terme: Décentralisation
+      definition: >
+        Transfert d'autorité et de responsabilités — compétences, tâches et
+        fonctions — du gouvernement central vers des gouvernements et des
+        autorités de niveau intermédiaire ou local, ou vers des organismes
+        presque autonomes. Elle prend deux formes, la délégation et la
+        dévolution ; la déconcentration, qui laisse les compétences au centre,
+        n'en est pas une.
+      synonymes: []
+    ar:
+      terme: اللامركزية
+      definition: >
+        نقل السلطة والمسؤوليات — من صلاحيات ومهامّ ووظائف — من الحكومة
+        المركزية إلى حكومات وسلط من المستوى الوسيط أو المحلي، أو إلى هياكل شبه
+        مستقلّة. وتتّخذ شكلين، التفويض والإسناد؛ أمّا عدم التركيز، الذي يُبقي
+        الصلاحيات بيد المركز، فليس منها.
+      synonymes: []
+
+  - id: deconcentration
+    acronyme: null
+    statut: provisoire  # AR : اللامحورية (« الإدارات اللامحورية »), CCL 2018 (AR), chapitre des districts
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 17"}
+    voir_aussi: [decentralisation]
+    fr:
+      terme: Déconcentration
+      definition: >
+        Organisation dans laquelle l'État central conserve ses responsabilités
+        et ses compétences, mais les fait exécuter par des antennes régionales
+        ou locales qui lui sont hiérarchiquement subordonnées, sans marge de
+        manœuvre.
+      synonymes: []
+    ar:
+      terme: اللامحورية
+      definition: >
+        تنظيم تحتفظ فيه الدولة المركزية بمسؤولياتها وصلاحياتها، وتعهد
+        بتنفيذها إلى فروع جهوية أو محلية تخضع لها خضوعا تسلسليا، دون هامش
+        تصرّف.
+      synonymes: [عدم التركيز]
+
+  - id: delegation-competences
+    acronyme: null
+    statut: provisoire  # AR non attesté dans un texte
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 17-18"}
+    voir_aussi: [decentralisation, devolution-competences]
+    fr:
+      terme: Délégation de compétences
+      definition: >
+        Transfert de compétences aux collectivités assorti de normes ou de
+        standards fixés par l'échelon central, que la collectivité doit
+        respecter ; elle ne choisit que les modalités de mise en œuvre et
+        supporte, en principe, le coût de ce qu'elle offre au-delà de la norme.
+      synonymes: [Délégation]
+    ar:
+      terme: تفويض الصلاحيات
+      definition: >
+        نقل صلاحيات إلى الجماعات المحلية مع معايير أو مقاييس يضبطها المستوى
+        المركزي وتلتزم الجماعة باحترامها؛ ولا تختار إلّا طرق التنفيذ، وتتحمّل
+        مبدئيا كلفة ما تقدّمه زيادة على المعيار.
+      synonymes: [التفويض]
+
+  - id: devolution-competences
+    acronyme: null
+    statut: provisoire  # AR non attesté ; le CCL 2018 (AR), art. 14, dit « الصلاحيات الذاتية » (compétences propres)
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 17"}
+    voir_aussi: [decentralisation, delegation-competences, ressources-propres]
+    fr:
+      terme: Dévolution de compétences
+      definition: >
+        Attribution aux collectivités de compétences propres, exercées avec les
+        pleins pouvoirs et sans tutelle d'un échelon supérieur, ce qui suppose
+        qu'elles disposent de ressources propres, notamment fiscales, à hauteur
+        de ces compétences.
+      synonymes: [Dévolution]
+    ar:
+      terme: إسناد الصلاحيات الذاتية
+      definition: >
+        إسناد صلاحيات ذاتية إلى الجماعات المحلية تمارسها بكامل السلطة ودون
+        إشراف مستوى أعلى، وهو ما يفترض أن تتوفّر لها موارد ذاتية، ولا سيما
+        جبائية، في حدود تلك الصلاحيات.
+      synonymes: []
+
+  - id: collectivite-locale
+    acronyme: null
+    statut: provisoire  # AR : الجماعة المحلية, CCL 2018 (AR), art. 2
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 16-18"}
+    voir_aussi: [libre-administration, decentralisation]
+    fr:
+      terme: Collectivité locale
+      definition: >
+        Entité publique territoriale qui exerce, par des organes élus et sur un
+        budget propre, une part des affaires publiques au profit de ses
+        résidents.
+      synonymes: [Collectivité territoriale]
+    ar:
+      terme: الجماعة المحلية
+      definition: >
+        ذات عمومية ترابية تمارس، بواسطة هياكل منتخبة وبميزانية خاصة بها،
+        جانبا من الشؤون العمومية لفائدة متساكنيها.
+      synonymes: []
+
+  - id: libre-administration
+    acronyme: null
+    statut: provisoire  # AR : التدبير الحر, CCL 2018 (AR), art. 4
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 16 et 18"}
+    voir_aussi: [collectivite-locale, tutelle]
+    fr:
+      terme: Libre administration
+      definition: >
+        Droit et capacité effective, pour les collectivités, de régler et de
+        gérer une part importante des affaires publiques au profit de leurs
+        résidents, par des conseils élus au suffrage direct et universel ; il
+        limite la tutelle de l'État central.
+      synonymes: []
+    ar:
+      terme: التدبير الحر
+      definition: >
+        حقّ الجماعات المحلية وقدرتها الفعلية على تنظيم جانب هامّ من الشؤون
+        العمومية وتسييره لفائدة متساكنيها، بواسطة مجالس منتخبة بالاقتراع العامّ
+        المباشر؛ ويحدّ من إشراف الدولة المركزية.
+      synonymes: []
+
+  - id: subsidiarite
+    acronyme: null
+    statut: provisoire  # AR : مبدأ التفريع, CCL 2018 (AR), art. 15
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 16 et 19-20"}
+    voir_aussi: [decentralisation]
+    fr:
+      terme: Subsidiarité
+      definition: >
+        Principe selon lequel l'exercice des responsabilités publiques incombe,
+        de façon générale, aux autorités les plus proches des citoyens et les
+        plus à même de les remplir, compte tenu de l'ampleur et de la nature de
+        la tâche et des exigences d'efficacité et d'économie.
+      synonymes: [Principe de subsidiarité]
+    ar:
+      terme: التفريع
+      definition: >
+        مبدأ يُسند بمقتضاه ممارسة المسؤوليات العمومية، بصفة عامة، إلى السلط
+        الأقرب إلى المواطنين والأقدر على القيام بها، مع مراعاة حجم المهمّة
+        وطبيعتها ومقتضيات النجاعة والاقتصاد.
+      synonymes: [مبدأ التفريع]
+
+  - id: patrimoine-financier
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 64"}
+    voir_aussi: [ressources-propres]
+    fr:
+      terme: Patrimoine financier
+      definition: >
+        Capitaux et immeubles qu'une collectivité détient à titre privé, qui ne
+        sont pas nécessaires à la production des services et pourraient être
+        vendus ; il s'oppose au patrimoine administratif, qui sert à produire
+        les services et n'a pas de valeur de marché.
+      synonymes: []
+    ar:
+      terme: الملك المالي
+      definition: >
+        رؤوس الأموال والعقارات التي تملكها جماعة محلية ملكية خاصة، والتي لا
+        تحتاجها لإنتاج الخدمات ويمكن التفويت فيها؛ ويقابله الملك الإداري الذي
+        يُستعمل لإنتاج الخدمات ولا قيمة سوقية له.
+      synonymes: []
+
+  - id: desequilibre-vertical
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 65 et 197"}
+    voir_aussi: [transfert-financier, perequation-financiere]
+    fr:
+      terme: Déséquilibre vertical
+      definition: >
+        Discordance, commune à toutes les collectivités, entre les ressources
+        qui leur sont attribuées et les tâches qui leur sont confiées ; elle
+        tient à la répartition entre niveaux de gouvernement, à la différence
+        des déséquilibres propres à une collectivité.
+      synonymes: [Déséquilibre fiscal vertical]
+    ar:
+      terme: الاختلال العمودي
+      definition: >
+        عدم تطابق، يشمل جميع الجماعات المحلية، بين الموارد المسندة إليها
+        والمهامّ الموكولة إليها؛ ويرجع إلى توزيع الموارد والمهامّ بين مستويات
+        الحكم، خلافا للاختلالات الخاصّة بجماعة بعينها.
+      synonymes: []
+
+  - id: discipline-budgetaire
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 81"}
+    voir_aussi: [regle-d-or]
+    fr:
+      terme: Discipline budgétaire
+      definition: >
+        Situation dans laquelle une loi impose aux collectivités des règles
+        contraignantes sur le résultat de leur budget et de leurs comptes ; elle
+        se distingue de la responsabilité budgétaire, attitude spontanément
+        prudente des élus qui visent l'équilibre sans règle extérieure.
+      synonymes: []
+    ar:
+      terme: الانضباط في الميزانية
+      definition: >
+        وضع يفرض فيه القانون على الجماعات المحلية قواعد ملزمة تتعلّق بنتيجة
+        ميزانيتها وحساباتها؛ ويتميّز عن المسؤولية في الميزانية، وهي سلوك حذر
+        تلقائي من المنتخبين يرمي إلى التوازن دون قاعدة خارجية.
+      synonymes: []
+
+  - id: regle-d-or
+    acronyme: null
+    statut: provisoire  # AR non attesté ; le CCL 2018 (AR), art. 126, dit « قاعدة التوازن الحقيقي للميزانية » (équilibre réel)
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 28 et 82"}
+    voir_aussi: [discipline-budgetaire, emprunt, capacite-emprunt]
+    fr:
+      terme: Règle d'or
+      definition: >
+        Règle d'équilibre budgétaire qui, dans la forme dite « revisitée »,
+        combine l'équilibre du compte de fonctionnement, service de la dette
+        compris, et le financement des investissements selon l'utilisation :
+        seuls les investissements peuvent être financés par l'emprunt, remboursé
+        sur leur durée d'utilisation, au rythme de leur amortissement.
+      synonymes: [Règle d'or revisitée]
+    ar:
+      terme: القاعدة الذهبية
+      definition: >
+        قاعدة توازن الميزانية التي تجمع، في صيغتها «المُراجَعة»، بين توازن حساب
+        التصرّف بما في ذلك خدمة الدين، وتمويل الاستثمارات حسب استعمالها: فلا
+        يُموَّل بالاقتراض إلّا الاستثمار، ويُسدَّد القرض على مدّة استعماله وبنسق
+        استهلاكه.
+      synonymes: []
+
+  - id: emprunt
+    acronyme: null
+    statut: provisoire  # AR : الاقتراض, CCL 2018 (AR), titre des ressources d'emprunt
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 28 et 66"}
+    voir_aussi: [regle-d-or, capacite-emprunt]
+    fr:
+      terme: Emprunt
+      definition: >
+        Pour une collectivité, moyen de paiement des investissements et non
+        revenu : il devra être remboursé par un excédent de recettes ou par
+        l'impôt futur.
+      synonymes: []
+    ar:
+      terme: الاقتراض
+      definition: >
+        وسيلة لخلاص الاستثمارات وليس دخلا بالنسبة إلى الجماعة المحلية: إذ
+        يتعيّن تسديده من فائض في المداخيل أو من الأداءات المستقبلية.
+      synonymes: []
+
+  - id: epargne-nette
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 83"}
+    voir_aussi: [capacite-emprunt, regle-d-or]
+    fr:
+      terme: Épargne nette
+      definition: >
+        Excédent du compte de fonctionnement après paiement des intérêts de la
+        dette et de l'amortissement des investissements existants.
+      synonymes: []
+    ar:
+      terme: الادّخار الصافي
+      definition: >
+        فائض حساب التصرّف بعد دفع فوائد الدين واستهلاك الاستثمارات القائمة.
+      synonymes: []
+
+  - id: capacite-emprunt
+    acronyme: null
+    statut: provisoire  # AR : طاقة التداين, CCL 2018 (AR), art. 150 (critère de répartition)
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 82-83"}
+    voir_aussi: [emprunt, epargne-nette, regle-d-or]
+    fr:
+      terme: Capacité d'emprunt
+      definition: >
+        Nouvel emprunt que le compte de fonctionnement d'une collectivité peut
+        supporter : l'épargne nette, diminuée des coûts récurrents qu'entraîne
+        l'investissement et augmentée des recettes qu'il procure, rapportée à la
+        somme du taux d'intérêt et du taux d'amortissement.
+      synonymes: [Capacité d'endettement]
+    ar:
+      terme: طاقة التداين
+      definition: >
+        القرض الجديد الذي يستطيع حساب التصرّف لجماعة محلية تحمّله: الادّخار
+        الصافي، مطروحا منه الكلفة المتكرّرة التي يستوجبها الاستثمار ومضافا إليه
+        ما يدرّه من مداخيل، مقسوما على مجموع نسبة الفائدة ونسبة الاستهلاك.
+      synonymes: [طاقة الاقتراض]
+
+  - id: tutelle
+    acronyme: null
+    statut: provisoire  # AR non attesté ; « الرقابة » et « مراقبة لاحقة », CCL 2018 (AR), art. 198
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 18-19"}
+    voir_aussi: [libre-administration]
+    fr:
+      terme: Tutelle
+      definition: >
+        Contrôle qu'exerce l'échelon central sur les décisions des
+        collectivités. Il porte sur la légalité de la décision, c'est-à-dire le
+        respect de la procédure, ou sur son opportunité, c'est-à-dire son objet,
+        son contenu et sa priorité ; il s'exerce a priori ou a posteriori.
+      synonymes: [Contrôle de tutelle]
+    ar:
+      terme: سلطة الإشراف
+      definition: >
+        الرقابة التي يمارسها المستوى المركزي على قرارات الجماعات المحلية.
+        وتتعلّق بشرعية القرار، أي احترام الإجراءات، أو بملاءمته، أي موضوعه
+        ومضمونه وأولويته؛ وتُمارَس مسبقا أو لاحقا.
+      synonymes: [الإشراف]
+
+  - id: ressources-propres
+    acronyme: null
+    statut: provisoire  # AR : الموارد الذاتية, CCL 2018 (AR), art. 131-132
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 65 et 68"}
+    voir_aussi: [autonomie-financiere, impot-local, redevance-utilisation, patrimoine-financier]
+    fr:
+      terme: Ressources propres
+      definition: >
+        Ressources qu'une collectivité obtient par ses propres moyens : ses
+        impôts, exclusifs ou partagés, ses redevances d'utilisation et le
+        rendement de son patrimoine. Elles s'opposent aux ressources transférées
+        par l'État.
+      synonymes: [Recettes propres]
+    ar:
+      terme: الموارد الذاتية
+      definition: >
+        الموارد التي تحصل عليها الجماعة المحلية بوسائلها الخاصّة: أداءاتها،
+        الحصرية أو المشتركة، ومعاليم الاستعمال، ومردود أملاكها. ويقابلها ما
+        تحيله الدولة من موارد.
+      synonymes: []
+
+  - id: impot-local
+    acronyme: null
+    statut: provisoire  # AR : الأداءات المحلية, CCL 2018 (AR), art. 132
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 152"}
+    voir_aussi: [taxe-finances-publiques, redevance-utilisation, ressources-propres]
+    fr:
+      terme: Impôt local
+      definition: >
+        Prélèvement obligatoire perçu au profit d'une collectivité, sans
+        contrepartie pour le contribuable et sans affectation : son produit va
+        au compte général de la collectivité. C'est la définition de l'impôt en
+        finances publiques, appliquée à la collectivité locale.
+      synonymes: [Impôt]
+    ar:
+      terme: الأداء المحلي
+      definition: >
+        اقتطاع إجباري يُوظَّف لفائدة جماعة محلية، دون مقابل للمطالب بالأداء
+        ودون تخصيص: إذ يدخل محصوله في الحساب العامّ للجماعة. وهو تعريف الأداء
+        في المالية العمومية منزَّلا على الجماعة المحلية.
+      synonymes: [الأداء]
+
+  - id: taxe-finances-publiques
+    acronyme: null
+    statut: provisoire  # AR à confirmer : le CCL 2018 (AR), art. 132, énumère « المعاليم والرسوم » sans les définir
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 152"}
+    voir_aussi: [impot-local, redevance-utilisation]
+    fr:
+      terme: Taxe (au sens des finances publiques)
+      definition: >
+        Prélèvement obligatoire qu'une collectivité perçoit comme fournisseur
+        exclusif de l'accès à un service ; il n'est dû que par celui qui demande
+        l'accès, va au budget général sans affectation, et son montant ne dépend
+        ni du volume ni du coût de la prestation. Les textes emploient souvent
+        « taxe » dans un autre sens.
+      synonymes: []
+    ar:
+      terme: الرسم (بمفهوم المالية العمومية)
+      definition: >
+        اقتطاع إجباري تستخلصه جماعة محلية بصفتها المزوّد الوحيد لخدمة ما؛ ولا
+        يُستوجب إلّا على من يطلب الانتفاع بها، ويدخل في الميزانية العامّة دون
+        تخصيص، ولا يرتبط مبلغه بحجم الخدمة ولا بكلفتها. وكثيرا ما تستعمل النصوص
+        اللفظ في معنى آخر.
+      synonymes: []
+
+  - id: redevance-utilisation
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 152-153"}
+    voir_aussi: [impot-local, taxe-finances-publiques]
+    fr:
+      terme: Redevance d'utilisation
+      definition: >
+        Prix d'un service rendu, proportionné à l'avantage que l'usager en
+        retire, affecté à la tâche qu'il finance et plafonné à son coût total ;
+        un excédent durable serait un impôt déguisé.
+      synonymes: [Paiement des usagers, Contribution causale]
+    ar:
+      terme: معلوم الاستعمال
+      definition: >
+        ثمن خدمة مسداة، يتناسب مع المنفعة التي يجنيها المنتفع منها، ويُخصَّص
+        للمهمّة التي يموّلها ولا يتجاوز كلفتها الجملية؛ وكلّ فائض دائم يُعدّ
+        أداءً مقنّعا.
+      synonymes: [الإتاوة]
+
+  - id: autonomie-budgetaire
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 68"}
+    voir_aussi: [autonomie-financiere, devolution-competences]
+    fr:
+      terme: Autonomie budgétaire
+      definition: >
+        Capacité d'une collectivité de décider seule des catégories, de la
+        quantité et de la qualité des prestations qu'elle offre à ses
+        résidents ; elle porte sur les dépenses, et les compétences dévolues en
+        sont le véritable espace.
+      synonymes: []
+    ar:
+      terme: الاستقلالية في الميزانية
+      definition: >
+        قدرة الجماعة المحلية على أن تقرّر وحدها أصناف الخدمات التي تسديها
+        لمتساكنيها وكمّيتها وجودتها؛ وهي تتعلّق بالنفقات، ومجالها الحقيقي
+        الصلاحيات المُسندة.
+      synonymes: []
+
+  - id: autonomie-financiere
+    acronyme: null
+    statut: provisoire  # AR : « الاستقلالية الإدارية والمالية », CCL 2018 (AR), art. 2 et 38
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 68"}
+    voir_aussi: [autonomie-budgetaire, souverainete-fiscale, ressources-propres, taux-autonomie-financiere]
+    fr:
+      terme: Autonomie financière
+      definition: >
+        Situation d'une collectivité qui obtient par ses propres moyens les
+        ressources dont elle a besoin, sans dépendre d'autres collectivités ;
+        elle prend en compte toutes les ressources propres. L'autonomie
+        fiscale, plus étroite, ne prend en compte que les impôts et les taxes.
+      synonymes: [Autonomie fiscale]
+    ar:
+      terme: الاستقلالية المالية
+      definition: >
+        وضع الجماعة المحلية التي تحصل بوسائلها الخاصّة على ما تحتاجه من موارد،
+        دون أن تتبع جماعات أخرى؛ وتشمل جميع الموارد الذاتية. أمّا الاستقلالية
+        الجبائية، وهي أضيق، فلا تشمل إلّا الأداءات والرسوم.
+      synonymes: [الاستقلالية الجبائية]
+
+  - id: souverainete-fiscale
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 68 et 153-154"}
+    voir_aussi: [flexibilite-fiscale, autonomie-financiere]
+    fr:
+      terme: Souveraineté fiscale
+      definition: >
+        Pouvoir d'une collectivité de définir le cercle des assujettis,
+        l'assiette, le mode de calcul et le barème des taux d'un impôt. Elle
+        est totale si la collectivité fixe tous ces éléments, partielle si elle
+        n'en fixe qu'une partie ; la fiscalité obligatoire ne lui en laisse
+        aucun.
+      synonymes: []
+    ar:
+      terme: السيادة الجبائية
+      definition: >
+        سلطة الجماعة المحلية في ضبط دائرة الخاضعين للأداء ووعائه وطريقة
+        احتسابه وجدول نسبه. وتكون تامّة إذا ضبطت الجماعة كلّ هذه العناصر، وجزئية
+        إذا لم تضبط إلّا بعضها؛ أمّا الجباية الإلزامية فلا تترك لها أيّا منها.
+      synonymes: []
+
+  - id: flexibilite-fiscale
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 68 et 154"}
+    voir_aussi: [souverainete-fiscale, impot-partage]
+    fr:
+      terme: Flexibilité fiscale
+      definition: >
+        Régime dans lequel une collectivité ne décide que du taux ou du
+        coefficient d'un impôt, les autres éléments étant identiques pour toutes
+        les collectivités ; les systèmes de centimes additionnels en relèvent.
+      synonymes: []
+    ar:
+      terme: المرونة الجبائية
+      definition: >
+        نظام لا تقرّر فيه الجماعة المحلية إلّا نسبة الأداء أو معامله، وتكون
+        بقية العناصر واحدة لكلّ الجماعات؛ وتندرج فيه أنظمة الأجزاء الإضافية.
+      synonymes: []
+
+  - id: impot-exclusif
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 153"}
+    voir_aussi: [impot-partage, part-aux-recettes]
+    fr:
+      terme: Impôt exclusif
+      definition: >
+        Impôt dont un seul niveau de gouvernement exploite l'assiette et perçoit
+        l'intégralité du produit.
+      synonymes: []
+    ar:
+      terme: الأداء الحصري
+      definition: >
+        أداء ينفرد مستوى واحد من مستويات الحكم باستغلال وعائه وبقبض كامل
+        محصوله.
+      synonymes: []
+
+  - id: impot-partage
+    acronyme: null
+    statut: provisoire  # AR à confirmer : le CCL 2018 (AR), art. 132, parle des « الأداءات التي تتقاسمها الدولة مع الجماعات المحلية »
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 153-154"}
+    voir_aussi: [impot-exclusif, part-aux-recettes, flexibilite-fiscale]
+    fr:
+      terme: Impôt partagé
+      definition: >
+        Impôt dont plusieurs échelons de gouvernement exploitent la même
+        assiette, chacun pouvant, le cas échéant, choisir son taux.
+      synonymes: []
+    ar:
+      terme: الأداء المشترك
+      definition: >
+        أداء تستغلّ عدّة مستويات من الحكم وعاءه نفسه، ويمكن لكلّ منها، عند
+        الاقتضاء، أن يختار نسبته.
+      synonymes: [الأداء المتقاسَم]
+
+  - id: part-aux-recettes
+    acronyme: null
+    statut: provisoire  # AR à confirmer : « مناب الجماعة المحلية من محصول الأداءات », CCL 2018 (AR), art. 132
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 154"}
+    voir_aussi: [impot-partage, perequation-ressources]
+    fr:
+      terme: Part aux recettes
+      definition: >
+        Fraction fixe du produit d'un impôt dont l'échelon supérieur fixe
+        l'assiette et le taux et qu'il encaisse, attribuée aux collectivités ;
+        elle se répartit entre elles selon l'origine du produit ou selon une clé
+        de répartition, qui peut viser à réduire les écarts de potentiel fiscal.
+      synonymes: [Partage de l'impôt]
+    ar:
+      terme: المناب من محصول الأداءات
+      definition: >
+        جزء قارّ من محصول أداء يضبط المستوى الأعلى وعاءه ونسبته ويستخلصه، يُسنَد
+        إلى الجماعات المحلية؛ ويُوزَّع بينها حسب مصدر المحصول أو حسب مفتاح توزيع
+        قد يرمي إلى الحدّ من الفوارق في الطاقة الجبائية.
+      synonymes: []
+
+  - id: transfert-financier
+    acronyme: null
+    statut: provisoire  # AR : « تحويلات », CCL 2018 (AR), art. 52 et 150
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 195-198"}
+    voir_aussi: [subvention-globale, subvention-specifique, perequation-financiere, desequilibre-vertical]
+    fr:
+      terme: Transfert financier
+      definition: >
+        Ressource versée par un niveau de gouvernement à un autre. Selon leur
+        objectif, les transferts financent les tâches déléguées, incitent,
+        corrigent les effets de débordement ou assurent la péréquation.
+      synonymes: [Transfert]
+    ar:
+      terme: التحويلات المالية
+      definition: >
+        موارد يدفعها مستوى من مستويات الحكم إلى مستوى آخر. وهي، حسب الغاية منها،
+        تموّل المهامّ المفوَّضة، أو تحفّز، أو تصلح آثار التجاوز، أو تحقّق التعديل.
+      synonymes: [التحويلات]
+
+  - id: subvention-globale
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 201"}
+    voir_aussi: [subvention-specifique, transfert-financier]
+    fr:
+      terme: Subvention globale
+      definition: >
+        Transfert dont le montant est à la libre disposition de la collectivité
+        qui le reçoit.
+      synonymes: [Dotation globale]
+    ar:
+      terme: المنحة الشاملة
+      definition: >
+        تحويل يكون مبلغه على ذمّة الجماعة التي تتلقّاه تتصرّف فيه بحرية.
+      synonymes: []
+
+  - id: subvention-specifique
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 201-202"}
+    voir_aussi: [subvention-globale, transfert-financier]
+    fr:
+      terme: Subvention spécifique
+      definition: >
+        Transfert affecté à une tâche ou à une dépense désignée par la
+        collectivité qui le verse.
+      synonymes: [Subvention affectée]
+    ar:
+      terme: المنحة الخصوصية
+      definition: >
+        تحويل مخصَّص لمهمّة أو لنفقة تعيّنها الجماعة التي تدفعه.
+      synonymes: [المنحة المخصَّصة]
+
+  - id: subvention-conditionnelle
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 202"}
+    voir_aussi: [subvention-forfaitaire]
+    fr:
+      terme: Subvention conditionnelle
+      definition: >
+        Transfert dont le montant varie avec la dépense subventionnée, ou avec
+        la part que la collectivité bénéficiaire est prête à y consacrer.
+      synonymes: [Subvention proportionnelle]
+    ar:
+      terme: المنحة المشروطة
+      definition: >
+        تحويل يتغيّر مبلغه بتغيّر النفقة المدعومة، أو بتغيّر الجزء الذي تكون
+        الجماعة المنتفعة مستعدّة لتخصيصه لها.
+      synonymes: [المنحة النسبية]
+
+  - id: subvention-forfaitaire
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 202"}
+    voir_aussi: [subvention-conditionnelle]
+    fr:
+      terme: Subvention forfaitaire
+      definition: >
+        Transfert d'un montant fixe, indépendant de la participation de la
+        collectivité bénéficiaire.
+      synonymes: [Subvention non conditionnelle]
+    ar:
+      terme: المنحة الجزافية
+      definition: >
+        تحويل بمبلغ قارّ لا يرتبط بمساهمة الجماعة المنتفعة.
+      synonymes: []
+
+  - id: subvention-rationnee
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 203"}
+    voir_aussi: [subvention-conditionnelle]
+    fr:
+      terme: Subvention rationnée
+      definition: >
+        Transfert puisé dans une enveloppe limitée, dit à guichet fermé, ce qui
+        oblige à fixer des critères de sélection des demandes. La subvention non
+        rationnée, à guichet ouvert, est due dès que ses conditions sont
+        remplies, quelle que soit la situation financière de celui qui la verse.
+      synonymes: [Subvention à guichet fermé]
+    ar:
+      terme: المنحة المحدودة
+      definition: >
+        تحويل يُصرَف من اعتماد محدود، ويقتضي لذلك ضبط مقاييس لانتقاء المطالب.
+        أمّا المنحة غير المحدودة فتُستحَقّ بمجرّد توفّر شروطها، مهما كانت الوضعية
+        المالية للجهة التي تدفعها.
+      synonymes: []
+
+  - id: perequation-financiere
+    acronyme: null
+    statut: provisoire  # AR à confirmer : le CCL 2018 (AR), art. 38-39, emploie « التعديل » et « التسوية » ; la mise en regard avec « péréquation » n'est pas attestée
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 20-21 et 252"}
+    voir_aussi: [perequation-ressources, perequation-besoins, potentiel-fiscal, transfert-financier]
+    fr:
+      terme: Péréquation financière
+      definition: >
+        Transfert qui compense les disparités entre collectivités échappant à
+        leur contrôle — d'assiette fiscale, de besoins ou de coûts —, en
+        application du principe de solidarité. Elle est verticale lorsque le
+        fonds est doté par le seul gouvernement central, horizontale lorsque les
+        collectivités au potentiel fiscal supérieur à la moyenne y contribuent.
+      synonymes: [Péréquation entre collectivités]
+    ar:
+      terme: التعديل المالي
+      definition: >
+        تحويل يعوّض الفوارق بين الجماعات المحلية التي تخرج عن سيطرتها — في
+        الوعاء الجبائي أو الحاجيات أو الكلفة —، تطبيقا لمبدأ التضامن. ويكون
+        عموديا إذا موّلت الحكومة المركزية وحدها الصندوق، وأفقيا إذا ساهمت فيه
+        الجماعات التي تفوق طاقتها الجبائية المعدّل.
+      synonymes: [التعديل]
+
+  - id: perequation-ressources
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 201 et 252"}
+    voir_aussi: [perequation-financiere, potentiel-fiscal, perequation-besoins]
+    fr:
+      terme: Péréquation des ressources
+      definition: >
+        Péréquation qui réduit les écarts de potentiel fiscal, en donnant
+        davantage aux collectivités dont la base d'imposition est inférieure à
+        la moyenne.
+      synonymes: []
+    ar:
+      terme: تعديل الموارد
+      definition: >
+        تعديل يحدّ من الفوارق في الطاقة الجبائية، بمنح قسط أوفر للجماعات التي
+        يقلّ وعاؤها الجبائي عن المعدّل.
+      synonymes: []
+
+  - id: perequation-besoins
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 201 et 252"}
+    voir_aussi: [perequation-financiere, perequation-ressources]
+    fr:
+      terme: Péréquation des besoins
+      definition: >
+        Péréquation qui compense les écarts de besoins ou de coûts par rapport à
+        la norme, selon des critères démographiques, géographiques ou
+        topographiques liés à la dépense.
+      synonymes: [Péréquation des charges, Péréquation des coûts]
+    ar:
+      terme: تعديل الحاجيات
+      definition: >
+        تعديل يعوّض الفوارق في الحاجيات أو في الكلفة مقارنة بالمعيار، حسب مقاييس
+        ديمغرافية أو جغرافية أو طبوغرافية مرتبطة بالنفقة.
+      synonymes: [تعديل الأعباء]
+
+  - id: taux-autonomie-financiere
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 68"}
+    voir_aussi: [autonomie-financiere, ressources-propres]
+    fr:
+      terme: Taux d'autonomie financière
+      definition: >
+        Part des recettes propres d'une collectivité dans le total des
+        ressources dont elle peut disposer, hors emprunt.
+      synonymes: []
+    ar:
+      terme: نسبة الاستقلالية المالية
+      definition: >
+        حصّة الموارد الذاتية للجماعة المحلية من مجموع الموارد التي تتصرّف فيها،
+        باستثناء الاقتراض.
+      synonymes: []
+
+  - id: potentiel-fiscal
+    acronyme: null
+    statut: provisoire  # AR : الطاقة الجبائية, CCL 2018 (AR), art. 150 (critère de répartition)
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 252"}
+    voir_aussi: [effort-fiscal, perequation-ressources]
+    fr:
+      terme: Potentiel fiscal
+      definition: >
+        Produit fiscal qu'une collectivité collecterait si elle appliquait à ses
+        bases d'imposition le taux moyen national.
+      synonymes: [Richesse fiscale, Capacité fiscale]
+    ar:
+      terme: الطاقة الجبائية
+      definition: >
+        المحصول الجبائي الذي تستخلصه جماعة محلية لو طبّقت على أوعيتها الجبائية
+        النسبة المتوسّطة الوطنية.
+      synonymes: []
+
+  - id: effort-fiscal
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 251-252"}
+    voir_aussi: [potentiel-fiscal]
+    fr:
+      terme: Effort fiscal
+      definition: >
+        Taux qu'une collectivité applique à ses propres bases d'imposition ; le
+        taux moyen national est l'effort fiscal moyen. Un produit fiscal élevé
+        n'est pas nécessairement le signe d'un effort élevé.
+      synonymes: []
+    ar:
+      terme: المجهود الجبائي
+      definition: >
+        النسبة التي تطبّقها جماعة محلية على أوعيتها الجبائية؛ والنسبة المتوسّطة
+        الوطنية هي المجهود الجبائي المتوسّط. ولا يدلّ ارتفاع المحصول الجبائي
+        بالضرورة على مجهود مرتفع.
+      synonymes: []
+
+  - id: taux-de-facturation
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 79"}
+    voir_aussi: [taux-de-recouvrement, potentiel-fiscal]
+    fr:
+      terme: Taux de facturation
+      definition: >
+        Rapport entre le montant effectivement facturé au titre d'un impôt et le
+        produit que rapporterait sa base exploitée de manière efficace.
+      synonymes: []
+    ar:
+      terme: نسبة الإصدار
+      definition: >
+        النسبة بين المبلغ المُصدَر فعلا بعنوان أداء ما والمحصول الذي يدرّه وعاؤه
+        لو استُغلّ استغلالا ناجعا.
+      synonymes: []
+
+  - id: taux-de-recouvrement
+    acronyme: null
+    statut: provisoire  # AR : « الاستخلاص », CCL 2018 (AR), passim ; « نسبة الاستخلاص » non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 79"}
+    voir_aussi: [taux-de-facturation]
+    fr:
+      terme: Taux de recouvrement
+      definition: >
+        Rapport entre le montant effectivement encaissé au titre d'un impôt et
+        le montant facturé.
+      synonymes: []
+    ar:
+      terme: نسبة الاستخلاص
+      definition: >
+        النسبة بين المبلغ المستخلَص فعلا بعنوان أداء ما والمبلغ المُصدَر.
+      synonymes: []
+
+  - id: code-fiscalite-locale
+    acronyme: null
+    statut: valide
+    references: [loi97-11]
+    source_definition: {ref: loi97-11, locator: "art. 1-3"}
+    source_traduction: {ref: loi97-11, locator: "art. 1"}
+    voir_aussi: [taxe-immeubles-batis, taxe-terrains-non-batis, taxe-etablissements, taxe-hoteliere]
+    fr:
+      terme: Code de la fiscalité locale
+      definition: >
+        Code promulgué par la loi n° 97-11 du 3 février 1997 et entré en
+        vigueur le 1er janvier 1997, qui régit les droits et redevances perçus
+        au profit des collectivités locales. Il compte huit chapitres, un par
+        prélèvement : taxe sur les immeubles bâtis, taxe sur les terrains non
+        bâtis, taxe sur les établissements à caractère industriel, commercial
+        ou professionnel, taxe hôtelière, taxe sur les spectacles, contribution
+        des propriétaires riverains, droit de licence sur les débits de
+        boissons, et taxes et redevances diverses.
+      synonymes: []
+    ar:
+      terme: مجلة الجباية المحلية
+      definition: >
+        مجلة صدرت بالقانون عدد 11 لسنة 1997 المؤرخ في 3 فيفري 1997 ودخلت حيّز
+        التنفيذ ابتداء من غرّة جانفي 1997، تنظّم المعاليم المستوجبة لفائدة
+        الجماعات المحلية. وتتضمّن ثمانية أبواب، باب لكلّ معلوم: المعلوم على
+        العقارات المبنية، والمعلوم على الأراضي غير المبنية، والمعلوم على
+        المؤسسات ذات الصبغة الصناعية أو التجارية أو المهنية، والمعلوم على النزل،
+        والمعلوم على العروض، ومساهمة المالكين الأجوار، ومعلوم الإجازة الموظف على
+        محلات بيع المشروبات، ومعاليم مختلفة.
+      synonymes: []
+
+  - id: taxe-immeubles-batis
+    acronyme: TIB
+    statut: valide
+    references: [loi97-11, decret2017-397]
+    source_definition: {ref: loi97-11, locator: "art. 1-5"}
+    source_traduction: {ref: loi97-11, locator: "art. 1"}
+    voir_aussi: [prix-reference-m2, taxe-terrains-non-batis, code-fiscalite-locale]
+    fr:
+      terme: Taxe sur les immeubles bâtis
+      definition: >
+        Taxe annuelle, due au 1er janvier par le propriétaire d'un immeuble bâti
+        situé dans une zone relevant d'une collectivité locale, sauf si
+        l'immeuble est affecté à une activité soumise à la taxe sur les
+        établissements ou à la taxe hôtelière. Son assiette est égale à 2 % du
+        prix de référence du mètre carré couvert multiplié par la superficie
+        couverte ; son taux, de 8 à 14 %, croît avec le nombre de services dont
+        bénéficie l'immeuble.
+      synonymes: []
+    ar:
+      terme: المعلوم على العقارات المبنية
+      definition: >
+        معلوم سنوي يُستوجب في غرّة جانفي على مالك العقار المبني الكائن بمنطقة
+        راجعة بالنظر إلى جماعة محلية، ما لم يكن العقار مخصّصا لنشاط خاضع للمعلوم
+        على المؤسسات أو للمعلوم على النزل. وتساوي قاعدته 2 بالمائة من الثمن
+        المرجعي للمتر المربع المبني مضروبا في المساحة المغطاة، وتتراوح نسبته بين
+        8 و14 بالمائة حسب عدد الخدمات التي ينتفع بها العقار.
+      synonymes: []
+
+  - id: taxe-terrains-non-batis
+    acronyme: TNB
+    statut: valide
+    references: [loi97-11, decret2017-396]
+    source_definition: {ref: loi97-11, locator: "art. 30-33"}
+    source_traduction: {ref: loi97-11, locator: "art. 30"}
+    voir_aussi: [taxe-immeubles-batis, code-fiscalite-locale]
+    fr:
+      terme: Taxe sur les terrains non bâtis
+      definition: >
+        Taxe annuelle due par le propriétaire d'un terrain non bâti situé dans
+        une zone relevant d'une collectivité locale, au taux de 0,3 % de la
+        valeur vénale réelle du terrain ou, à défaut, selon un tarif au mètre
+        carré fixé par décret pour chaque zone du plan d'aménagement urbain,
+        selon sa densité.
+      synonymes: []
+    ar:
+      terme: المعلوم على الأراضي غير المبنية
+      definition: >
+        معلوم سنوي يُستوجب على مالك الأرض غير المبنية الكائنة بمنطقة راجعة
+        بالنظر إلى جماعة محلية، بنسبة 0,3 بالمائة من القيمة التجارية الحقيقية
+        للأرض، أو، عند تعذّر ذلك، حسب معلوم بالمتر المربع يُضبط بأمر لكلّ منطقة
+        من مناطق مثال التهيئة العمرانية حسب كثافتها العمرانية.
+      synonymes: []
+
+  - id: taxe-etablissements
+    acronyme: TCL
+    statut: valide
+    references: [loi97-11, decret2017-395]
+    source_definition: {ref: loi97-11, locator: "art. 35-38"}
+    source_traduction: {ref: loi97-11, locator: "art. 35"}
+    voir_aussi: [taxe-hoteliere, taxe-immeubles-batis, code-fiscalite-locale]
+    fr:
+      terme: Taxe sur les établissements à caractère industriel, commercial ou professionnel
+      definition: >
+        Taxe due au profit des collectivités locales par les personnes soumises
+        à l'impôt sur le revenu au titre des bénéfices industriels et commerciaux
+        ou des bénéfices non commerciaux et par les personnes morales soumises à
+        l'impôt sur les sociétés, même exonérées de ces impôts. Assise à
+        l'origine sur le chiffre d'affaires brut local, au taux de 0,2 %, elle
+        ne peut être inférieure à un minimum calculé sur la superficie couverte
+        des locaux exploités.
+      synonymes: [Taxe sur les établissements]
+    ar:
+      terme: المعلوم على المؤسسات ذات الصبغة الصناعية أو التجارية أو المهنية
+      definition: >
+        معلوم يُستوجب لفائدة الجماعات المحلية على الأشخاص الخاضعين للضريبة على
+        الدخل بعنوان الأرباح الصناعية والتجارية أو الأرباح غير التجارية وعلى
+        الأشخاص المعنويين الخاضعين للضريبة على الشركات، ولو كانوا معفيين منهما.
+        ويُوظَّف في الأصل على رقم المعاملات المحلي الخام بنسبة 0,2 بالمائة، ولا
+        يمكن أن يقلّ عن حدّ أدنى يُحتسب على أساس المساحة المغطاة للمحلات
+        المستغلّة.
+      synonymes: []
+
+  - id: taxe-hoteliere
+    acronyme: null
+    statut: valide
+    references: [loi97-11]
+    source_definition: {ref: loi97-11, locator: "art. 41-43"}
+    source_traduction: {ref: loi97-11, locator: "art. 41"}
+    voir_aussi: [taxe-etablissements, code-fiscalite-locale]
+    fr:
+      terme: Taxe hôtelière
+      definition: >
+        Taxe due au profit des collectivités locales par les exploitants des
+        établissements touristiques, au taux de 2 % de leur chiffre d'affaires
+        brut global. Ces établissements sont exonérés de la taxe sur les
+        établissements à caractère industriel, commercial ou professionnel et
+        de la taxe sur les immeubles bâtis.
+      synonymes: []
+    ar:
+      terme: المعلوم على النزل
+      definition: >
+        معلوم يُستوجب لفائدة الجماعات المحلية على مستغلّي المؤسسات السياحية،
+        بنسبة 2 بالمائة من رقم معاملاتهم الجملي الخام. وتُعفى هذه المؤسسات من
+        المعلوم على المؤسسات ذات الصبغة الصناعية أو التجارية أو المهنية ومن
+        المعلوم على العقارات المبنية.
+      synonymes: []
+
+  - id: prix-reference-m2
+    acronyme: null
+    statut: valide
+    references: [loi97-11, decret97-431, decret2007-1185, decret2017-397]
+    source_definition: {ref: loi97-11, locator: "art. 4"}
+    source_traduction: {ref: loi97-11, locator: "art. 4"}
+    voir_aussi: [taxe-immeubles-batis]
+    fr:
+      terme: Prix de référence du mètre carré couvert
+      definition: >
+        Prix au mètre carré de superficie couverte sur lequel est calculée
+        l'assiette de la taxe sur les immeubles bâtis. Un décret en fixe, pour
+        chacune des quatre catégories de superficie couverte, un minimum et un
+        maximum ; dans ces limites, la collectivité locale le fixe par arrêté
+        motivé, selon les services rendus.
+      synonymes: []
+    ar:
+      terme: الثمن المرجعي للمتر المربع المبني
+      definition: >
+        ثمن للمتر المربع من المساحة المغطاة تُحتسب على أساسه قاعدة المعلوم على
+        العقارات المبنية. ويضبط أمر حدّه الأدنى وحدّه الأقصى لكلّ صنف من أصناف
+        المساحة المغطاة الأربعة، وتضبطه الجماعة المحلية في حدودهما بقرار معلّل
+        حسب الخدمات المسداة.
+      synonymes: []
+
+  - id: contribution-fnah
+    acronyme: null
+    statut: provisoire  # FR : intitulé repris de la note documentaire (LF 2005, art. 13), à relire sur pièce ; AR : LF 2019, art. 72 ; LF 2024, art. 59
+    references: [lf-2005, loi2018-56-lf2019]
+    source_definition: {ref: lf-2005, locator: "art. 13"}
+    source_traduction: {ref: loi2018-56-lf2019, locator: "art. 72"}
+    voir_aussi: [taxe-immeubles-batis]
+    fr:
+      terme: Contribution au profit du Fonds national d'amélioration de l'habitat
+      definition: >
+        Contribution due par les redevables de la taxe sur les immeubles bâtis
+        pour les immeubles d'habitation, égale à 4 % de l'assiette de cette
+        taxe et recouvrée selon ses règles, au profit du Fonds national
+        d'amélioration de l'habitat, fonds spécial du Trésor.
+      synonymes: []
+    ar:
+      terme: المساهمة لفائدة الصندوق الوطني لتحسين السكن
+      definition: >
+        مساهمة يدفعها الخاضعون للمعلوم على العقارات المبنية بعنوان العقارات
+        المعدّة للسكنى، تساوي 4 بالمائة من قاعدة هذا المعلوم وتُستخلص حسب
+        قواعده، لفائدة الصندوق الوطني لتحسين السكن، وهو صندوق خاص للخزينة.
+      synonymes: []
+
+  - id: fonds-commun-collectivites-locales
+    acronyme: FCCL
+    statut: valide
+    references: [loi75-36, lf-2007, lf-2018]
+    source_definition: {ref: loi75-36, locator: "art. 1-3"}
+    source_traduction: {ref: loi75-36, locator: "art. 1"}
+    voir_aussi: [reserve-fonds-commun, cpscl, transfert-financier, perequation-financiere]
+    fr:
+      terme: Fonds commun des collectivités locales
+      definition: >
+        Fonds spécial du Trésor institué par la loi n° 75-36 du 14 mai 1975, à
+        compter du 1er janvier 1976, qui répartit entre les conseils de
+        gouvernorat, puis conseils régionaux, et les communes une dotation
+        annuelle globale, selon des critères fixés par la loi ; une part en est
+        mise en réserve. Alimenté d'abord par des parts d'impôts d'État, puis à
+        partir de 1987 par une subvention du budget de l'État, il est supprimé
+        par la loi de finances pour 2018.
+      synonymes: []
+    ar:
+      terme: المال المشترك للجماعات المحلية
+      definition: >
+        مال خاص بالخزينة أحدثه القانون عدد 36 لسنة 1975 المؤرخ في 14 ماي 1975
+        بداية من غرة جانفي 1976، يوزّع على مجالس الولايات ثمّ المجالس الجهوية
+        وعلى البلديات اعتمادا سنويا جمليا وفق مقاييس يضبطها القانون، ويُرصد جزء
+        منه مدّخرا. موّل في البداية بمناب من أداءات الدولة، ثمّ بداية من سنة
+        1987 بمنحة من ميزانية الدولة، وحُذف بقانون المالية لسنة 2018.
+      synonymes: []
+
+  - id: reserve-fonds-commun
+    acronyme: null
+    statut: valide
+    references: [loi75-36, loi91-98-lf1992, lf-2007, lf-2014]
+    source_definition: {ref: loi75-36, locator: "art. 3"}
+    source_traduction: {ref: loi75-36, locator: "art. 3"}
+    voir_aussi: [fonds-commun-collectivites-locales, cpscl]
+    fr:
+      terme: Réserve du fonds commun
+      definition: >
+        Part des ressources du fonds commun des collectivités locales qui n'est
+        pas répartie selon les critères généraux, appelée « solde » par la loi
+        de 1975 : 25 % jusqu'en 2006, puis 18 % à partir de 2007. Ses parts
+        étaient fixées par la loi jusqu'en 1991, puis attribuées par décret
+        entre la commune de Tunis, les communes sièges de gouvernorat, la caisse
+        de prêts et de soutien et d'autres bénéficiaires.
+      synonymes: [Solde du fonds commun]
+    ar:
+      terme: مدّخر المال المشترك
+      definition: >
+        جزء من موارد المال المشترك للجماعات المحلية لا يوزّع حسب المقاييس
+        العامّة: 25 بالمائة إلى سنة 2006، ثمّ 18 بالمائة بداية من سنة 2007.
+        ضبط القانون أقساطه إلى سنة 1991، ثمّ صار يُسند بأمر بين بلدية تونس
+        والبلديات مراكز الولايات وصندوق القروض ومساعدة الجماعات المحلية وغيرها.
+      synonymes: []
+
+  - id: cpscl
+    acronyme: CPSCL
+    statut: valide
+    references: [loi75-37, cpscl-etats-financiers]
+    source_definition: {ref: loi75-37, locator: "art. 1-4"}
+    source_traduction: {ref: lf-2007, locator: "art. 11"}
+    voir_aussi: [fonds-commun-collectivites-locales, emprunt]
+    fr:
+      terme: Caisse des prêts et de soutien des collectivités locales
+      definition: >
+        Caisse dotée de la personnalité civile et de l'autonomie financière,
+        issue en 1976 de la transformation de la caisse des prêts aux communes
+        de 1902 par la loi n° 75-37 du 14 mai 1975. Elle consent aux
+        collectivités locales des prêts d'investissement, des subventions et
+        des bonifications d'intérêts, sur une part du fonds commun, les
+        remboursements de ses prêts et ses emprunts.
+      synonymes: []
+    ar:
+      terme: صندوق القروض ومساعدة الجماعات المحلية
+      definition: >
+        صندوق يتمتّع بالشخصية المدنية والاستقلال المالي، نشأ سنة 1976 عن تحويل
+        صندوق القروض للبلديات المحدث سنة 1902 بمقتضى القانون عدد 37 لسنة 1975
+        المؤرخ في 14 ماي 1975. يسند إلى الجماعات المحلية قروض استثمار ومنحا
+        وتخفيضات في الفوائض، من مناب من المال المشترك ومن استخلاص قروضه
+        ومن اقتراضاته.
+
+  - id: competences-propres
+    acronyme: null
+    statut: provisoire  # AR : الصلاحيات الذاتية, CCL 2018 (AR), art. 13-14 ; FR : traduction citée par Hammami, Dafflon et Gilbert (2021, p. 26-27), non officielle
+    references: [hammami-dafflon-gilbert-2021]
+    source_definition: {ref: loi-org-2018-29-ccl, locator: "art. 13-14"}
+    voir_aussi: [competences-partagees, competences-transferees, devolution-competences]
+    fr:
+      terme: Compétences propres
+      definition: >
+        Dans le code des collectivités locales de 2018, compétences que la
+        collectivité exerce seule et de façon exclusive, sous réserve des cas
+        prévus par le code.
+      synonymes: [Attributions propres]
+    ar:
+      terme: الصلاحيات الذاتية
+      definition: >
+        في مجلة الجماعات المحلية لسنة 2018، الصلاحيات التي تنفرد الجماعة
+        المحلية بمباشرتها بصفة حصرية، مع مراعاة الحالات التي تنص عليها المجلة.
+      synonymes: []
+
+  - id: competences-partagees
+    acronyme: null
+    statut: provisoire  # AR : الصلاحيات المشتركة, CCL 2018 (AR), art. 13 ; FR : traduction citée par Hammami, Dafflon et Gilbert (2021)
+    references: [hammami-dafflon-gilbert-2021]
+    source_definition: {ref: loi-org-2018-29-ccl, locator: "art. 13 et 15"}
+    voir_aussi: [competences-propres, competences-transferees, subsidiarite]
+    fr:
+      terme: Compétences partagées
+      definition: >
+        Dans le code des collectivités locales de 2018, compétences que la
+        collectivité exerce avec l'autorité centrale, en coordination et en
+        coopération avec elle, selon des conditions renvoyées à une loi.
+      synonymes: []
+    ar:
+      terme: الصلاحيات المشتركة
+      definition: >
+        في مجلة الجماعات المحلية لسنة 2018، الصلاحيات التي تباشرها الجماعة
+        المحلية مع السلطة المركزية بالتنسيق والتعاون معها، وفق شروط يضبطها
+        القانون.
+      synonymes: []
+
+  - id: competences-transferees
+    acronyme: null
+    statut: provisoire  # AR : الصلاحيات المنقولة, CCL 2018 (AR), art. 13 et 16 ; la Constitution de 2014 (art. 134) dit « déléguées » dans la traduction reproduite par Dafflon et Gilbert
+    references: [hammami-dafflon-gilbert-2021]
+    source_definition: {ref: loi-org-2018-29-ccl, locator: "art. 13 et 16"}
+    voir_aussi: [competences-propres, competences-partagees, delegation-competences]
+    fr:
+      terme: Compétences transférées
+      definition: >
+        Dans le code des collectivités locales de 2018, compétences que
+        l'autorité centrale transfère à la collectivité par la loi, avec les
+        crédits et les moyens proportionnés aux charges qu'elles entraînent.
+      synonymes: [Compétences déléguées]
+    ar:
+      terme: الصلاحيات المنقولة
+      definition: >
+        في مجلة الجماعات المحلية لسنة 2018، الصلاحيات التي تنقلها السلطة
+        المركزية إلى الجماعة المحلية بمقتضى القانون، مع الاعتمادات والوسائل
+        الملائمة للأعباء المترتبة عنها.
+      synonymes: []
+
+  - id: pouvoir-reglementaire-local
+    acronyme: null
+    statut: provisoire  # AR : السلطة الترتيبية, CCL 2018 (AR), art. 25-28 ; FR : notre traduction
+    references: []
+    source_definition: {ref: loi-org-2018-29-ccl, locator: "art. 25-28"}
+    voir_aussi: [competences-propres]
+    fr:
+      terme: Pouvoir réglementaire local
+      definition: >
+        Pouvoir du conseil d'une collectivité locale de prendre des règlements
+        dans les limites de son territoire et de ses compétences ; il peut en
+        déléguer une part à son président.
+      synonymes: []
+    ar:
+      terme: السلطة الترتيبية
+      definition: >
+        سلطة مجلس الجماعة المحلية في اتخاذ التراتيب في حدود ترابها
+        وصلاحياتها، وله أن يفوّض جزءا منها إلى رئيسه.
+      synonymes: []
+
+  - id: district
+    acronyme: null
+    statut: provisoire  # FR et AR : loi organique n° 2025-4, art. 1 (« conseils de districts », « مجالس الأقاليم ») ; CCL 2018 (AR), art. 2 et 356 (abrogé le 18 mars 2025) ; regroupement de gouvernorats : décret n° 2023-589, art. 1
+    references: [loi-org-2018-29-ccl, decret2023-589]
+    source_definition: {ref: decret2023-589, locator: "art. 1"}
+    source_traduction: {ref: loi-org2025-4, locator: "art. 1"}
+    voir_aussi: [collectivite-locale, conseil-local]
+    fr:
+      terme: District
+      definition: >
+        Collectivité locale regroupant plusieurs gouvernorats, chargée de
+        l'intégration et de la complémentarité du développement entre les zones
+        qui la composent ; son conseil est élu par les membres d'autres conseils.
+      synonymes: []
+    ar:
+      terme: الإقليم
+      definition: >
+        جماعة محلية تجمع عدة ولايات، تتولى تحقيق الاندماج والتكامل في
+        التنمية بين المناطق المكونة لها، وينتخب مجلسها أعضاء مجالس أخرى.
+      synonymes: []
+
+  - id: conseil-local
+    acronyme: null
+    statut: valide  # FR et AR : loi organique n° 2025-4, art. 1 et 7 (« conseil local », « المجلس المحلي »)
+    references: [decretloi2023-10]
+    source_definition: {ref: loi-org2025-4, locator: "art. 1 et 7"}
+    source_traduction: {ref: loi-org2025-4, locator: "art. 1"}
+    voir_aussi: [district, collectivite-locale]
+    fr:
+      terme: Conseil local
+      definition: >
+        Conseil élu au niveau de la délégation, considéré comme une collectivité
+        locale, qui délibère sur les projets de plans de développement locaux.
+      synonymes: []
+    ar:
+      terme: المجلس المحلي
+      definition: >
+        مجلس منتخب على مستوى المعتمدية، يعتبر جماعة محلية، ويتداول في مشاريع
+        مخططات التنمية المحلية.
+      synonymes: []
+
+  - id: conseil-superieur-collectivites-locales
+    acronyme: null
+    statut: provisoire  # AR : المجلس الأعلى للجماعات المحلية, CCL 2018 (AR), art. 47-60 ; FR : notre traduction (« Haut Conseil » chez Dafflon et Gilbert)
+    references: []
+    source_definition: {ref: loi-org-2018-29-ccl, locator: "art. 47-60"}
+    voir_aussi: [haute-instance-finances-locales]
+    fr:
+      terme: Conseil supérieur des collectivités locales
+      definition: >
+        Instance nationale formée de présidents de collectivités, consultée
+        obligatoirement sur les projets de loi qui intéressent les collectivités
+        locales, notamment leurs finances.
+      synonymes: [Haut Conseil des collectivités locales]
+    ar:
+      terme: المجلس الأعلى للجماعات المحلية
+      definition: >
+        هيئة وطنية تتكوّن من رؤساء جماعات محلية، يُستشار وجوبا في مشاريع
+        القوانين المتعلقة بالجماعات المحلية، ولا سيما بماليتها.
+      synonymes: []
+
+  - id: haute-instance-finances-locales
+    acronyme: null
+    statut: provisoire  # AR : الهيئة العليا للمالية المحلية, CCL 2018 (AR), art. 61-65 ; FR : notre traduction
+    references: []
+    source_definition: {ref: loi-org-2018-29-ccl, locator: "art. 61-65"}
+    voir_aussi: [conseil-superieur-collectivites-locales]
+    fr:
+      terme: Haute instance des finances locales
+      definition: >
+        Instance placée sous la supervision du Conseil supérieur des
+        collectivités locales, qui propose les ressources transférables aux
+        collectivités et leurs critères de répartition, évalue le coût des
+        transferts de compétences et suit l'endettement local.
+      synonymes: []
+    ar:
+      terme: الهيئة العليا للمالية المحلية
+      definition: >
+        هيئة تعمل تحت إشراف المجلس الأعلى للجماعات المحلية، تقترح الموارد
+        القابلة للتحويل إلى الجماعات المحلية ومقاييس توزيعها، وتقيّم كلفة نقل
+        الصلاحيات وتتابع المديونية المحلية.
+      synonymes: []
+
+  - id: delegation-speciale
+    acronyme: null
+    statut: provisoire  # FR : loi n° 75-33, art. 13 ; AR : النيابة الخصوصية, relevé dans des arrêtés du JORT n° 39 de 2018, non dans la loi
+    references: [decret2011-384]
+    source_definition: {ref: loi75-33, locator: "art. 13"}
+    voir_aussi: [collectivite-locale, tutelle]
+    fr:
+      terme: Délégation spéciale
+      definition: >
+        Organe nommé par décret qui remplit les fonctions d'un conseil
+        municipal dissous ou démissionnaire, ou celles du conseil d'une
+        commune nouvellement créée, jusqu'à l'élection d'un nouveau conseil.
+      synonymes: []
+    ar:
+      terme: النيابة الخصوصية
+      definition: >
+        هيئة تُعيَّن بأمر لتتولى مهام مجلس بلدي منحلّ أو مستقيل، أو مجلس
+        بلدية محدثة، إلى حين انتخاب مجلس جديد.
+      synonymes: []
+
+  - id: depenses-obligatoires
+    acronyme: null
+    statut: provisoire  # FR : loi n° 75-35, art. 10 ; AR : النفقات الإجبارية, CCL 2018 (AR), art. 160 (« وجوبية » à l'art. 174)
+    references: []
+    source_definition: {ref: loi75-35, locator: "art. 10"}
+    voir_aussi: [equilibre-reel, tutelle]
+    fr:
+      terme: Dépenses obligatoires
+      definition: >
+        Dépenses que la loi impose d'inscrire au budget d'une collectivité
+        locale, telles que la rémunération du personnel ou les annuités
+        d'emprunt ; elles peuvent être inscrites d'office.
+      synonymes: []
+    ar:
+      terme: النفقات الإجبارية
+      definition: >
+        نفقات يفرض القانون ترسيمها بميزانية الجماعة المحلية، مثل تأجير
+        الأعوان أو أقساط القروض، ويمكن ترسيمها وجوبا.
+      synonymes: [النفقات الوجوبية]
+
+  - id: equilibre-reel
+    acronyme: null
+    statut: provisoire  # FR : loi n° 75-35, art. 16 ; AR : التوازن الحقيقي للميزانية, CCL 2018 (AR), art. 126
+    references: [dafflon-gilbert-2018]
+    source_definition: {ref: loi75-35, locator: "art. 16"}
+    voir_aussi: [regle-d-or, depenses-obligatoires]
+    fr:
+      terme: Équilibre réel
+      definition: >
+        Exigence que les autorisations de dépenses et les prévisions de
+        recettes du budget local soient présentées et votées en équilibre,
+        compte tenu des engagements antérieurs ; la loi ne la définit pas
+        davantage.
+      synonymes: []
+    ar:
+      terme: التوازن الحقيقي للميزانية
+      definition: >
+        وجوب تقديم ترخيصات النفقات وتقديرات الموارد بميزانية الجماعة المحلية
+        والمصادقة عليها في توازن، مع اعتبار التعهدات السابقة.
+      synonymes: []
+
+  - id: ordonnateur
+    acronyme: null
+    statut: valide  # FR et AR : loi organique n° 2025-4, art. 5 (« ordonnateur », « آمر قبض وصرف »)
+    references: [loi-org2007-65]
+    source_definition: {ref: loi-org2025-4, locator: "art. 5"}
+    source_traduction: {ref: loi-org2025-4, locator: "art. 5"}
+    voir_aussi: [comptable-public]
+    fr:
+      terme: Ordonnateur
+      definition: >
+        Autorité qui ordonne les recettes et les dépenses d'un budget ; pour une
+        collectivité locale et pour les conseils locaux, régionaux et de
+        districts, son président.
+      synonymes: []
+    ar:
+      terme: آمر قبض وصرف
+      definition: >
+        السلطة التي تأذن بقبض الموارد وصرف النفقات في ميزانية ما؛ وهي بالنسبة
+        إلى الجماعة المحلية وإلى المجالس المحلية والجهوية ومجالس الأقاليم
+        رئيسها.
+      synonymes: [آمر الصرف]
+
+  - id: comptable-public
+    acronyme: null
+    statut: provisoire  # AR : محاسب الجماعة المحلية, CCL 2018 (AR), art. 129 et 184 ; FR : notre traduction
+    references: []
+    source_definition: {ref: loi-org-2018-29-ccl, locator: "art. 129 et 186"}
+    voir_aussi: [ordonnateur]
+    fr:
+      terme: Comptable public
+      definition: >
+        Agent de l'État chargé seul des encaissements et des paiements d'une
+        collectivité locale ; il contrôle la légalité des dépenses, non leur
+        opportunité.
+      synonymes: [Comptable de la collectivité locale]
+    ar:
+      terme: محاسب الجماعة المحلية
+      definition: >
+        عون عمومي للدولة يتولى وحده عمليات القبض والصرف للجماعة المحلية،
+        ويراقب شرعية النفقات دون ملاءمتها.
+      synonymes: [المحاسب العمومي]
+
+  - id: compte-financier
+    acronyme: null
+    statut: provisoire  # FR : loi n° 75-35, art. 25 ; AR : الحساب المالي, CCL 2018 (AR), art. 195-196
+    references: []
+    source_definition: {ref: loi75-35, locator: "art. 25"}
+    voir_aussi: [comptable-public]
+    fr:
+      terme: Compte financier
+      definition: >
+        Document qui retrace l'exécution du budget d'une collectivité locale
+        à la clôture de l'exercice, arrêté par son conseil.
+      synonymes: []
+    ar:
+      terme: الحساب المالي
+      definition: >
+        وثيقة تبيّن تنفيذ ميزانية الجماعة المحلية عند ختم السنة المالية،
+        ويختمها مجلسها.
+      synonymes: []
+
+  - id: faute-de-gestion
+    acronyme: null
+    statut: provisoire  # FR : loi organique n° 2007-65 (art. 23 bis nouveau de la loi n° 75-35) ; AR : خطأ تصرّف, CCL 2018 (AR), art. 183
+    references: []
+    source_definition: {ref: loi-org2007-65, locator: "art. 1"}
+    voir_aussi: [ordonnateur]
+    fr:
+      terme: Faute de gestion
+      definition: >
+        Manquement d'un ordonnateur aux règles d'exécution du budget local,
+        notamment l'engagement de dépenses au-delà des recettes réalisées ;
+        il engage sa responsabilité.
+      synonymes: []
+    ar:
+      terme: خطأ التصرّف
+      definition: >
+        إخلال آمر الصرف بقواعد تنفيذ ميزانية الجماعة المحلية، ولا سيما
+        الالتزام بنفقات تتجاوز الموارد المحققة، ويترتب عنه قيام مسؤوليته.
+      synonymes: []
+
+  - id: salaire-minimum-garanti
+    acronyme: null
+    statut: provisoire
+    references: [loi66-27]
+    source_definition: {ref: loi96-62, locator: "art. 134-2"}
+    voir_aussi: [smig, smag, salaire-conventionnel]
+    fr:
+      terme: Salaire minimum garanti
+      definition: >
+        Seuil au-dessous duquel il n'est pas possible de rémunérer un travailleur
+        chargé de travaux ne nécessitant pas de qualification professionnelle
+        (code du travail, art. 134-2, issu de la loi n° 96-62). Il est fixé par
+        décret, sous deux formes : le salaire minimum interprofessionnel garanti
+        (SMIG) pour les secteurs non agricoles et le salaire minimum agricole
+        garanti (SMAG).
+      synonymes: [salaire minimum légal]
+    ar:
+      terme: الأجر الأدنى المضمون
+      definition: >
+        العتبة الدنيا التي لا يجوز دونها تأجير عامل مكلَّف بأعمال لا تستوجب
+        تأهيلًا مهنيًا (مجلة الشغل، الفصل 134-2، كما أُضيف بالقانون عدد 62 لسنة
+        1996). ويُضبط بأمر في صيغتين: الأجر الأدنى المضمون لمختلف المهن في
+        القطاعات غير الفلاحية، والأجر الأدنى الفلاحي المضمون.
+      synonymes: []
+
+  - id: salaire-conventionnel
+    acronyme: null
+    statut: provisoire
+    references: [arrete-1973-05-29-convention-cadre]
+    source_definition: {ref: decret73-247, locator: "art. 1 et 2"}
+    voir_aussi: [salaire-minimum-garanti, convention-collective-sectorielle, convention-collective-cadre]
+    fr:
+      terme: Salaire conventionnel
+      definition: >
+        Salaire fixé, par catégorie professionnelle, par une convention collective
+        ou par ses avenants. Depuis le décret n° 73-247 du 26 mai 1973, les
+        conventions collectives peuvent fixer les salaires, leurs accessoires et
+        les classifications, sur la base d'un salaire minimum interprofessionnel
+        garanti fixé par décret.
+      synonymes: []
+    ar:
+      terme: الأجر التعاقدي
+      definition: >
+        أجر تضبطه اتفاقية مشتركة أو ملاحقها التعديلية حسب الأصناف المهنية. ومنذ
+        الأمر عدد 247 لسنة 1973 المؤرخ في 26 ماي 1973، يجوز للاتفاقيات المشتركة
+        ضبط الأجور وتوابعها والتصنيفات، على أساس أجر أدنى مضمون لمختلف المهن يُضبط
+        بأمر.
+      synonymes: []
+
+  - id: convention-collective-cadre
+    acronyme: null
+    statut: provisoire
+    references: [loi66-27]
+    source_definition: {ref: arrete-1973-05-29-convention-cadre}
+    voir_aussi: [convention-collective-sectorielle, agrement-convention-collective, salaire-conventionnel]
+    fr:
+      terme: Convention collective cadre
+      definition: >
+        Convention conclue le 20 mars 1973 entre l'Union tunisienne de
+        l'industrie, du commerce et de l'artisanat et l'Union générale tunisienne
+        du travail, approuvée par arrêté du 29 mai 1973 et rendue obligatoire pour
+        toutes les activités non agricoles. Elle sert de base à chaque convention
+        de branche, qui en fixe les grilles de salaires et les indemnités.
+      synonymes: [convention-cadre]
+    ar:
+      terme: الاتفاقية المشتركة الإطارية
+      definition: >
+        اتفاقية أُبرمت في 20 مارس 1973 بين الاتحاد التونسي للصناعة والتجارة
+        والصناعات التقليدية والاتحاد العام التونسي للشغل، وصودق عليها بقرار مؤرخ في
+        29 ماي 1973 وجُعلت إلزامية في جميع الأنشطة غير الفلاحية. وهي أساس كلّ
+        اتفاقية قطاعية تضبط سلالم الأجور والمنح.
+      synonymes: []
+
+  - id: agrement-convention-collective
+    acronyme: null
+    statut: provisoire
+    references: []
+    source_definition: {ref: loi66-27, locator: "art. 37 et 38"}
+    voir_aussi: [convention-collective-sectorielle, convention-collective-cadre]
+    fr:
+      terme: Agrément d'une convention collective
+      definition: >
+        Arrêté par lequel, après avis de la commission consultative des
+        conventions collectives, une convention est rendue
+        applicable à tous les employeurs et à tous les travailleurs de la branche
+        qu'elle vise, signataires ou non (code du travail de 1966, art. 37 et 38).
+      synonymes: []
+    ar:
+      terme: المصادقة على الاتفاقية المشتركة
+      definition: >
+        قرار تُجعل به اتفاقيةٌ، بعد رأي اللجنة الاستشارية للاتفاقيات المشتركة،
+        منطبقةً على جميع المؤجرين وجميع العمال في القطاع الذي
+        تشمله، موقّعين كانوا أم لا (مجلة الشغل لسنة 1966، الفصلان 37 و38).
+      synonymes: []
+
+  - id: indemnite-complementaire-provisoire
+    acronyme: ICP
+    statut: provisoire
+    references: [decret82-501, decret2026-67]
+    source_definition: {ref: decret81-437}
+    voir_aussi: [smig]
+    fr:
+      terme: Indemnité complémentaire provisoire
+      definition: >
+        Indemnité instituée le 1er avril 1981 par le décret n° 81-437, servie en
+        sus du salaire de base des salariés des secteurs non agricoles régis par le
+        code du travail, et majorée au 1er février 1982 par le décret n° 82-501.
+        Elle fait partie du SMIG, que les décrets successifs décomposent en salaire
+        de base et indemnité complémentaire provisoire.
+      synonymes: []
+    ar:
+      terme: المنحة التكميلية الوقتية
+      definition: >
+        منحة أُحدثت بداية من غرّة أفريل 1981 بالأمر عدد 437 لسنة 1981، تُصرف
+        زيادة على الأجر الأساسي لأجراء القطاعات غير الفلاحية الخاضعة لمجلة الشغل،
+        وتمّ الترفيع فيها بداية من غرّة فيفري 1982 بالأمر عدد 501 لسنة 1982. وهي
+        جزء من الأجر الأدنى المضمون الذي تفصّله الأوامر المتعاقبة إلى أجر أساسي
+        ومنحة تكميلية وقتية.
+      synonymes: []
+
+  - id: commission-nationale-smig
+    acronyme: null
+    statut: provisoire
+    references: [decret74-63]
+    source_definition: {ref: decret74-493}
+    voir_aussi: [smig, smag]
+    fr:
+      terme: Commission nationale du salaire minimum garanti
+      definition: >
+        Commission instituée par le décret n° 74-493 du 20 avril 1974, où
+        siègent l'État, le Parti socialiste destourien, l'Union tunisienne de
+        l'industrie, du commerce et de l'artisanat, l'Union nationale des
+        agriculteurs et l'Union générale tunisienne du travail. Le SMIG peut
+        varier après son avis (décret n° 74-63, art. 4) ; le SMIG et le SMAG sont
+        déterminés par décret.
+      synonymes: []
+    ar:
+      terme: اللجنة الوطنية للأجر الأدنى المضمون
+      definition: >
+        لجنة أُحدثت بالأمر عدد 493 لسنة 1974 المؤرخ في 20 أفريل 1974، تضمّ الدولة
+        والحزب الاشتراكي الدستوري والاتحاد التونسي للصناعة والتجارة والصناعات
+        التقليدية والاتحاد القومي للفلاحين والاتحاد العام التونسي للشغل. ويمكن
+        تعديل الأجر الأدنى بعد رأيها (الأمر عدد 63 لسنة 1974، الفصل 4)؛ ويُضبط
+        الأجر الأدنى المضمون لمختلف المهن والأجر الأدنى الفلاحي المضمون بأمر.
+      synonymes: []
+
+  - id: salaire-brut
+    acronyme: null
+    statut: provisoire
+    references: [oit-cist12-1973-salaires]
+    source_definition: {ref: loi96-62, locator: "art. 134-2 et 143"}
+    voir_aussi: [salaire-net, cout-du-travail]
+    fr:
+      terme: Salaire brut
+      definition: >
+        Rémunération due au travailleur avant toute retenue : salaire de base et
+        accessoires, indemnités et avantages en espèces ou en nature, à
+        l'exception des remboursements de frais (code du travail, art. 134-2).
+        Le bulletin de paie en indique le montant, puis la nature et le montant
+        des retenues opérées sur lui (art. 143). La statistique internationale
+        retient la même notion : la rémunération totale avant les retenues de
+        l'employeur au titre des impôts et des cotisations du salarié.
+      synonymes: [rémunération brute]
+    ar:
+      terme: الأجر الخام
+      definition: >
+        الأجر المستحقّ للعامل قبل أيّ خصم: الأجر الأساسي وتوابعه من منح ومنافع
+        نقدية أو عينية، باستثناء ما يكتسي صبغة استرجاع مصاريف (مجلة الشغل، الفصل
+        134-2). وتبيّن بطاقة الخلاص مبلغه ثمّ نوع الخصومات المجراة عليه ومبلغها
+        (الفصل 143).
+      synonymes: []
+
+  - id: salaire-net
+    acronyme: null
+    statut: provisoire
+    references: []
+    source_definition: {ref: loi96-62, locator: "art. 143"}
+    voir_aussi: [salaire-brut, cout-du-travail]
+    fr:
+      terme: Salaire net
+      definition: >
+        Rémunération effectivement perçue par le travailleur, une fois opérées
+        sur la rémunération brute les retenues — cotisations sociales du salarié,
+        impôt retenu à la source. Le bulletin de paie en porte le montant (code du
+        travail, art. 143).
+      synonymes: [rémunération nette]
+    ar:
+      terme: الأجر الصافي
+      definition: >
+        الأجر الذي يتقاضاه العامل فعلًا بعد إجراء الخصومات على الأجر الخام، من
+        مساهمات اجتماعية محمولة على الأجير وضريبة محجوزة من المورد. وتبيّن بطاقة
+        الخلاص مبلغه (مجلة الشغل، الفصل 143).
+      synonymes: []
+
+  - id: cout-du-travail
+    acronyme: null
+    statut: provisoire
+    references: []
+    source_definition: {ref: oit-cist11-1966-cout-travail, locator: "§ 3"}
+    voir_aussi: [salaire-brut, salaire-net, taux-global]
+    fr:
+      terme: Coût du travail
+      definition: >
+        Coût supporté par l'employeur pour l'emploi de main-d'œuvre : la
+        rémunération du travail, y compris le temps payé non travaillé, les primes
+        et les avantages en nature, augmentée des dépenses de sécurité sociale de
+        l'employeur, des frais de formation, des services sociaux et des impôts
+        assis sur l'emploi ou les salaires (résolution de la onzième Conférence
+        internationale des statisticiens du travail, 1966, § 3).
+      synonymes: []
+    ar:
+      terme: كلفة العمل
+      definition: >
+        الكلفة التي يتحمّلها المؤجر لتشغيل اليد العاملة: أجر العمل، بما في ذلك
+        الوقت المدفوع غير المعمول والمنح والمنافع العينية، تُضاف إليه نفقات
+        الضمان الاجتماعي المحمولة على المؤجر ونفقات التكوين والخدمات الاجتماعية
+        والأداءات الموظَّفة على التشغيل أو على الأجور (قرار المؤتمر الدولي الحادي
+        عشر لخبراء إحصاءات العمل، 1966، الفقرة 3).
+      synonymes: []
+
+  - id: emploi-informel
+    acronyme: null
+    statut: provisoire
+    references: []
+    source_definition: {ref: oit-cist21-2023-informel, locator: "§ 56"}
+    voir_aussi: [cout-du-travail]
+    fr:
+      terme: Emploi informel
+      definition: >
+        Toute activité exercée pour produire des biens ou fournir des services
+        contre rémunération ou profit qui n'est pas couverte, en droit ou en
+        pratique, par les dispositifs formels : droit commercial, déclaration des
+        activités économiques, impôt sur le revenu, législation du travail,
+        sécurité sociale (résolution de la vingt et unième Conférence
+        internationale des statisticiens du travail, 2023, § 56). Elle comprend
+        notamment les salariés dont la relation d'emploi n'est pas, en pratique,
+        formellement reconnue par l'employeur ou ne donne pas un accès effectif à
+        ces dispositifs.
+      synonymes: [travail informel]
+    ar:
+      terme: التشغيل غير المنظّم
+      definition: >
+        كلّ نشاط يُمارَس لإنتاج سلع أو تقديم خدمات مقابل أجر أو ربح ولا تشمله،
+        قانونًا أو فعلًا، الترتيبات الرسمية: القانون التجاري، والتصريح بالأنشطة
+        الاقتصادية، والضريبة على الدخل، وتشريع الشغل، والضمان الاجتماعي (قرار
+        المؤتمر الدولي الحادي والعشرين لخبراء إحصاءات العمل، 2023، الفقرة 56).
+      synonymes: []

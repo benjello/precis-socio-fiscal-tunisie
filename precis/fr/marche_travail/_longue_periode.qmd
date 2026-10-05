@@ -1,0 +1,89 @@
+# La longue période {#sec-mt-longue-periode}
+
+Ce chapitre suit le salaire minimum de 1961 à 2028 : en dinars courants, en dinars constants, et dans le rapport qu'entretiennent les deux régimes horaires du SMIG et le SMAG. Les montants sont ceux des décrets, réunis au chapitre du salaire minimum (@tbl-mt-smig, @tbl-mt-smag) ; trois ruptures y sont marquées : l'institution du SMIG en 1974, la divergence des taux horaires des deux régimes en 1981 et les décrets pluriannuels de 2026.
+
+Les séries présentées ici sont des minima légaux. Elles ne disent pas combien de salariés sont payés au salaire minimum, ni ce que gagnent les autres : aucune série des salaires effectivement versés dans le secteur privé n'est réunie dans ce volume.
+
+<!-- TODO (documentaliste) : réunir une série des salaires du secteur privé (salaires déclarés à
+la CNSS, enquêtes de l'INS) et la part des salariés payés au SMIG ; aucune ne figure dans
+tunisia-data au 5 octobre 2026 (notes docs/notes/marche-travail-smig-smag.md, § 6-7, et
+-negociations.md, « Données »). L'enquête emploi (ins-enquete-emploi/occupes_statut.csv,
+1999-2012) donne le dénominateur des salariés. -->
+
+## Le SMIG en dinars courants {#sec-mt-lp-nominal}
+
+Le minimum horaire de 1961, 76 millimes, représente 15,808 dinars sur 208 heures, la durée mensuelle du régime de 48 heures [@decret61-145, art. 6] ; le SMIG mensuel de ce régime atteint 554,736 dinars au 1er janvier 2026, et le décret de 2026 le porte à 611,520 dinars au 1er janvier 2028 [@decret2026-67, art. 1] (@fig-mt-lp-nominal). Le SMAG, rapporté à vingt-six journées, suit une trajectoire voisine et rejoint celle du SMIG de 48 heures en décembre 2012 (@sec-mt-lp-rapports).
+
+```{python}
+#| label: fig-mt-lp-nominal
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import marche_travail as mt
+import figtools
+figtools.figure_tabs(
+    mt.vues_nominal(), mt.table_nominal(), "marche-travail-smig-smag",
+    slug="fig_mt_nominal",
+    caption=("SMIG mensuel des régimes de 48 et de 40 heures et SMAG rapporté à vingt-six "
+             "journées, en dinars courants, 1961-2028"),
+    note_lecture=(
+        "Chaque marche est une date d'effet. Avant le 1er mai 1968, le montant est celui de "
+        "la première zone ; de 1971 à 1973, l'indemnité de cherté de vie s'y ajoute. Les "
+        "paliers de 2027 et de 2028 sont fixés par les décrets de 2026. L'échelle "
+        "logarithmique montre les rythmes de hausse : une pente égale est une hausse "
+        "égale en pourcentage."),
+)
+```
+
+## Le SMIG en dinars constants {#sec-mt-lp-reel}
+
+Déflaté par l'indice des prix à la consommation, le SMIG du régime de 48 heures, en moyenne annuelle et en dinars de 2023, connaît quatre phases (@fig-mt-lp-reel).
+
+- **De 1962 à 1973, il recule**, de 386 à 287 dinars de 2023 : le minimum horaire n'est relevé qu'une fois, en 1966 ; l'indemnité de cherté de vie servie à partir de 1971, qui s'y ajoute sans le modifier, n'est pas comptée.
+- **De 1974 à 1983, il progresse** : l'institution du SMIG le porte à 426 dinars en 1974, et les hausses de 1977 à 1983 à son plus haut, 715 dinars en 1983.
+- **De 1984 à 1991, il recule** à 507 dinars, faute de hausse entre le 1er janvier 1983 et le 1er juillet 1986, puis de hausses inférieures aux prix.
+- **De 1992 à 2017, il se maintient** entre 518 et 577 dinars ; **depuis 2018, il recule de nouveau**, jusqu'à 459 dinars en 2023, son niveau le plus bas depuis 1976.
+
+```{python}
+#| label: fig-mt-lp-reel
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    mt.vues_reel(), mt.table_reel(), "marche-travail-smig-smag", "ipc-longue-periode",
+    slug="fig_mt_reel",
+    caption=("SMIG mensuel du régime de 48 heures et SMAG rapporté à vingt-six journées, "
+             "moyenne annuelle en dinars de 2023, 1962-2023"),
+    note_lecture=(
+        "La moyenne annuelle est celle des montants en vigueur au premier jour de chacun "
+        "des douze mois : une hausse du 1er mai compte pour huit mois. Les dinars de 2023 "
+        "s'obtiennent en multipliant cette moyenne par le rapport de l'indice des prix de "
+        "2023 à celui de l'année. L'indice raccorde, en 1970, l'indice du coût de la vie de "
+        "la Banque centrale (1962-1975) et l'indice des prix à la consommation familiale de "
+        "l'INS (1976-2023), lu dans ses annuaires statistiques ; la série s'arrête en 2023, "
+        "dernière année de l'annuaire 2019-2023."),
+)
+```
+
+## Les deux régimes et le SMAG {#sec-mt-lp-rapports}
+
+Deux rapports résument la structure du salaire minimum (@fig-mt-lp-rapports).
+
+- **Le SMIG horaire du régime de 40 heures rapporté à celui de 48 heures.** Égal à 1 jusqu'en mars 1981, il passe à 1,032 le 1er avril 1981 et à 1,066 le 1er février 1982, sous l'effet de l'indemnité complémentaire provisoire, plus forte à l'heure dans le régime de 40 heures (@sec-mt-regimes-horaires). Il décroît ensuite lentement, les hausses ultérieures étant fixées en montants horaires voisins dans les deux régimes : 1,033 en 2011, 1,017 en 2026.
+- **Le SMAG d'une journée rapporté à huit heures de SMIG du régime de 48 heures.** Il varie entre 0,57 et 0,89 de 1964 à 2011, puis il est porté à 1 le 1er décembre 2012 [@decret2012-1982] : depuis cette date, une journée au SMAG est payée huit heures au SMIG du régime de 48 heures.
+
+```{python}
+#| label: fig-mt-lp-rapports
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    mt.vues_rapports(), mt.table_rapports(), "marche-travail-smig-smag",
+    slug="fig_mt_rapports",
+    caption=("SMIG horaire du régime de 40 heures rapporté à celui du régime de 48 heures, "
+             "et SMAG d'une journée rapporté à huit heures au SMIG horaire du régime de "
+             "48 heures, 1961-2028"),
+    note_lecture=(
+        "Le régime de 48 heures compte 208 heures par mois, soit vingt-six journées de huit "
+        "heures : le second rapport compare une journée au SMAG à une journée au SMIG de ce "
+        "régime."),
+)
+```

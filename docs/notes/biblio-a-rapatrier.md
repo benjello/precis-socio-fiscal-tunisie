@@ -6,7 +6,152 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Ajouts à la main du 04/10/2026 (finances locales, chapitres des impôts, taxes et redevances)
+
+**Vingt-deux clés neuves** versées dans `precis/fr/finances_locales/references.json` et
+`precis/ar/finances_locales/references.json`, absentes de Zotero : `loi97-11`, `decret97-431`
+à `decret97-435`, `decret97-530`, `decret98-1254`, `loi2002-76`, `decret2003-1345`,
+`decret2006-49`, `decret2006-3360`, `decret2007-1185` à `decret2007-1187`, `loi2007-53`,
+`lf-2009`, `lfc-2012`, `decret2016-805`, `decret2017-395` à `decret2017-397`. Métadonnées et
+URL tirées de `jort_cache.db` (`pdf_fr` pour le FR, `pdf_ar` du même enregistrement pour l'AR) ;
+valeurs et dates d'effet lues par la note `docs/notes/finances-locales-impots-locaux.md`. Les
+entrées AR gardent le titre français, selon l'usage du fonds, le titre arabe relevé figurant
+dans la note quand il est connu. `title-short` posé à la main. Restent à relever : pages AR de
+`decret98-1254`, `loi2002-76`, `loi2007-53`, `decret2003-1345`, `decret2006-49`,
+`decret2006-3360` ; étendue des pages de `lf-2009` et `lfc-2012` (champ `page` laissé vide).
+`decret2016-805` : édition française lue le 4/10/2026 (p. 2067-2070) ; son art. 2 imprime
+« 98-1998 » pour le décret abrogé, l'arabe « 1428 ».
+
+**Treize clés promues au fonds commun** (`precis/{fr,ar}/references.json`), parce que deux
+livres les citent désormais, et retirées des fichiers de livre selon la règle de
+`sync_biblio.repartit_references` : `lf-1997`, `lf-1999`, `lf-2003`, `lf-2005`, `lf-2006`,
+`lf-2007`, `lf-2011`, `lf-2013`, `lf-2014`, `lf-2016`, `lf-2021`, `lf-2024` (venues de
+`fiscalite`) et `loi-org-2018-29-ccl` (venue de `remunerations_publiques`). Dans Zotero, à
+**déclasser** (retirer la collection du livre d'origine, ou ajouter « Finances locales ») : le
+`controle-rangement` les signalera. Doublon apparent non tranché : `lf-2022` (commun) et
+`dl2021-21-lf2022` (caisses) désignent le même décret-loi ; le volume cite `lf-2022`.
+`push_biblio.py --verifier` : 593 entrées, 1 perte antérieure à ce versement
+(`minfin-cnf-2013-forfait`, champ `language`). Le `dry-run` et le `controle-rangement` du
+workflow `biblio-zotero` restent à lancer après poussée de la branche.
+
+## Ajout à la main du 04/10/2026 (finances locales, volume VII)
+
+Une clé versée dans `precis/fr/finances_locales/references.json` et
+`precis/ar/finances_locales/references.json`, absente de Zotero : `dafflon-gilbert-2018`
+(Dafflon et Gilbert, *L'économie politique et institutionnelle de la décentralisation en
+Tunisie*, AFD, 2018). Titre, éditeur, date de parution (septembre 2018), ISBN et ISSN lus sur
+l'exemplaire HAL ; la note de l'entrée cite ces lectures. La collection Zotero « Finances
+locales » n'existe pas encore : `COLLECTIONS` (`push_biblio.py`) et `COLLECTION_TO_BOOK`
+(`sync_biblio.py`) la déclarent ; à créer avant `ranger`. Les ébauches de
+`docs/notes/biblio-fiscalite-locale.md` pour les six articles de la *Revue tunisienne de
+fiscalité* et de *Transparence et droit* ne sont pas versées : aucun n'est cité, et seuls deux
+sont lus. Le `dry-run` et le `controle-rangement` du workflow `biblio-zotero` restent à lancer
+après poussée de la branche.
+
+## Ajouts à la main du 04/10/2026 (fiscalité, impôt sur la fortune)
+
+Deux clés versées dans `precis/fr/fiscalite/references.json` et `precis/ar/fiscalite/references.json`, absentes de Zotero : `dgi-nc-15-2023` et `dgi-nc-13-2026` (notes communes parues en arabe seulement ; titre arabe dans l'entrée AR, titre français traduit dans l'entrée FR). Entrées complétées (notes) : `lf-2014` (art. 55), `lfc-2014` (art. 38), `lf-2023` (art. 23 et 76 ; pagination française établie par le fac-similé DGI, TODO levé ; art. 12 présent dans l'édition française, p. 3557), `lf-2026` (art. 88, 110, note (1)). **`lfc-2014` FR : champ `page` corrigé de 2183-2232 (pagination arabe) en 2095-2142** (sommaire de l'édition française) ; l'entrée AR garde 2183-2232. À répercuter dans Zotero avant toute descente. Source : `docs/notes/fiscalite-impot-fortune.md`, § 9. `lf-2014` : art. 95 (date d'application, FR p. 3699) ajouté à la note. `push_biblio.py --verifier` : 563 entrées, 0 perte. Le `dry-run` et le `controle-rangement` du workflow `biblio-zotero` restent à lancer après poussée de la branche.
+
+## Ajouts à la main du 04/10/2026 (fiscalité, présentation)
+
+Quatre clés versées dans `precis/fr/fiscalite/references.json` et `precis/ar/fiscalite/references.json`, absentes de Zotero : `loi-67-53-lob`, `loi-org-96-103-lob`, `loi-org-2019-15-lob`, `zakraoui-ena-droit-fiscal` (`push_biblio.py --verifier` : 0 perte). Entrées AR : titres arabes lus sur le sommaire de l'édition arabe ; page de fin à relever (TODO). `loi-org-2019-15-lob` : jort_cache n'a pas de `pdf_fr`, URL française vérifiée sur pist.tn (HTTP 200). Support ENA sans date imprimée : pas d'`issued`.
+
+## État vérifié le 29/09/2026
+
+**Versement terminé** après fusion sur `master` : 535 clés locales, 535 présentes dans
+Zotero ; `push_biblio.py --verifier` : 535 entrées, 0 perte. Les clés
+`decret-statut-caisses-1999` et `ins-fonction-publique-historiques` ont été créées par le
+workflow `biblio-zotero.yml` (`pousser-un`, puis `pousser-tout`), une par exécution ; les
+deux allers-retours réels concordent après normalisation des auteurs institutionnels.
+L'entrée INS est sourcée par la page de l'édition 2010-2014 (FR et AR) : son `issued` du
+4 juillet 2016 est la date de **cette édition**, non une date commune établie pour les
+quatre rapports. Ses sources figurent dans l'en-tête de `figdata/fig_salaire_moyen.csv`.
+Le décret de 1999 est publié au JORT n° 77 de cette année.
+
+**Rangement terminé** : la simulation montrait 18 clés à déclasser et les deux nouvelles
+à ranger dans « Rémunérations publiques ». Le workflow a appliqué les 20 mouvements,
+sans échec. Nouveau contrôle en lecture seule : 535 clés Zotero, 586 citations relevées
+dans les chapitres, tableaux et figures, 485 bien rangées, 50 sans citation,
+**0 à ranger, 0 à déclasser, 0 absente**. Les « 30 clés en attente » et « pas encore dans
+Zotero » des passes anciennes ci-dessous sont des constats datés, non des tâches à rejouer.
+
+**Descente différée** : l'export CSL ramène les auteurs institutionnels sous la forme
+`family` plutôt que `literal`, d'où le faux écart initial du workflow `comparer` pour
+l'entrée INS. `push_biblio.py` utilise désormais localement la même normalisation que
+`sync_biblio.py` ; la comparaison locale donne 0 écart pour chacune des deux clés. La
+descente écraserait par ailleurs la note arabe du décret de 1999 et l'URL arabe de la
+page INS. Un correctif local préserve ces deux champs : les quatre copies FR/AR des deux
+références ont été éprouvées sur l'export réel, sans perte de note, d'URL, de titre ni
+d'auteur. **Livrer ce correctif avant de lancer `descendre` sur le workflow.** La descente
+mérite ensuite son propre diff et sa propre revue ; elle n'a pas été déclenchée ici.
+
 ## En attente
+
+### Livre « Cotisations sociales » — cadre comptable et budgétaire des caisses (04/10/2026)
+
+- **Quinze nouvelles clés FR/AR** dans `precis/{fr,ar}/cotisations_sociales/references.json`,
+  reprises de la note `cadre-budgetaire-comptable-caisses.md` (§ 5), **à verser dans Zotero
+  après revue et fusion** : `decret76-3`, `decret89-1890`, `decret89-1891`, `decret85-1611`,
+  `loi81-5`, `decret97-564`, `decret2004-2265`, `decret2000-1902`, `decret2005-321`,
+  `loi86-106-lf1987`, `loi88-60-lfc1988`, `loi86-83-lfr1986`, `loi87-83-lf1988`, `loi96-112`,
+  `dl2021-21-lf2022`. URL FR (`pdf_fr`) et AR (`pdf_ar`) lues dans `jort_cache`, chacune
+  contrôlée le 4 octobre 2026 (200, `application/pdf`). L'URL arabe du décret n° 2000-1902 est
+  `Ja07100.pdf` (nom hors convention, mais c'est le champ de la notice, et le fichier répond ;
+  `Ja0712000.pdf` rend 404). Titres en français dans les deux langues, comme les entrées voisines.
+- **Rangement revu le 4 octobre 2026** (livre « Les caisses de sécurité sociale ») : ces clés
+  sont passées dans `precis/{fr,ar}/caisses/references.json`, ou au fonds commun quand un autre
+  livre les cite ; `loi86-83-lfr1986` et `loi87-83-lf1988` sont fusionnées dans
+  `loi-86-83-lfr-1986` et `loi-87-83-lf-1988` (fonds commun), `loi2017-66-lf2018` dans `lf-2018`.
+  Aucune collection Zotero ne correspond au nouveau livre : à créer, et à déclarer dans
+  `COLLECTION_TO_BOOK`, avant le prochain rapatriement.
+- **Six clés copiées à l'identique, langue par langue**, depuis d'autres livres :
+  `loi86-86` (Prestations sociales), `loi89-9` (Rémunérations publiques), `chaabane-2002-ess4`,
+  `bm-1993-social-protection`, `vittas-1993-wps1154` et `cnrps-etats-financiers` (Retraites).
+  Citées désormais par deux livres ou plus : **à ranger en « Commun »** à la prochaine descente,
+  et à retirer alors des bibliographies de livre.
+- `arrete-1987-01-06-financement-pnafn` : copiée depuis Prestations sociales (contribution des
+  caisses au programme des familles nécessiteuses). **À ranger en « Commun »**.
+- `sna2008` et `imfgfsm2014` : copiées depuis Rémunérations publiques, parce que l'entrée de
+  glossaire « Fonds de sécurité sociale », désormais ancrée dans ce livre, les cite. **À ranger
+  en « Commun »** avec les précédentes.
+- `loi75-83` (fonds commun, FR et AR) : note corrigée — l'art. 28 est lu (p. 2854).
+- **Doublon à trancher** : `lf-2018` (fonds commun) et `loi2017-66-lf2018` (Rémunérations
+  publiques) désignent la même loi n° 2017-66.
+- **Non versées**, faute de métadonnées vérifiées : `cour-des-comptes-2006-cnrps` (capture du
+  web à reprendre selon la convention : horodatage lu dans le CDX, sans suffixe `id_`, champs
+  `archive`, `archive_location`, `accessed`), `fmi-2000-red` (DOI à contrôler),
+  `minfin-transferts-annexe8` (sans URL), `ue-jumelage-cnrps-2021`.
+
+### Fonds commun — rétrospective financière de la CNSS (03/10/2026)
+
+- `cnss-retrospective-1990-2004` : nouvelle clé FR/AR dans le **fonds commun**
+  `precis/{fr,ar}/references.json` (citée par les trois livres Retraites, Prestations sociales,
+  Cotisations sociales), **à verser dans Zotero après revue et fusion**. Type `report` ; auteur,
+  titre et éditeur lus sur la couverture et la page de titre (CNSS, Direction des études et du
+  contrôle de gestion, Service des statistiques ; Tunis) ; **sans URL ni date** : exemplaire
+  papier du centre de documentation du CRESS, numérisé, date d'édition non imprimée — ne pas en
+  inscrire. Entrée identique en FR et en AR (titre arabe inconnu).
+
+### Trois livres — PIB du ministère des Finances sous les figures de la CNSS (03/10/2026)
+
+- `minfin-indicateurs-fp` et `minfin-recettes-fiscales` : copiées à l'identique, langue par
+  langue, des bibliographies du livre « Fiscalité » vers celles des livres Retraites,
+  Prestations sociales et Cotisations sociales. Les trois figures tirées de la rétrospective
+  financière de la CNSS ont une vue en % du PIB, dont le dénominateur vient de la série
+  `irpp-ratios`, et l'onglet Sources cite les deux sources de cette série. Citées désormais
+  par cinq livres (quatre pour `minfin-recettes-fiscales`) : **à ranger en « Commun »** à la
+  prochaine descente, et à retirer alors des bibliographies de livre.
+
+### Livre « Prestations sociales » — aide occasionnelle de l'AMEN (lecture du 29/09/2026)
+
+- `arrete-2025-07-10-appui-occasionnel` : nouvelle clé dans les bibliographies FR et AR du
+  livre, **à verser dans Zotero après revue et fusion**. Texte lu dans l'édition arabe du
+  JORT n° 88 de 2025, pp. 2058-2059 ; URL arabe seule dans `references.json` arabe,
+  l'adresse du fascicule français renvoyant en réalité le PDF arabe. Comparer la descente
+  avec les notes et l'URL propres à chaque langue avant de retenir ses changements.
+- `loi2017-47` : nouvelle clé FR/AR, **à verser après revue et fusion**. Loi datée du
+  15 juin 2017 dans les deux éditions du JORT n° 50 du 23 juin, p. 2244 (FR) et 2068
+  (AR), malgré la date du 15 mai portée par la notice de `jort_cache`.
 
 ### Livre « Retraites » — CNRPS, emplois de la partie active (versement du 24/09/2026)
 
@@ -1227,7 +1372,9 @@ début en pagination arabe, pour mémoire : 3597 (`lf-2016`), 4699 (`lf-2020`), 
 
 #### Reste à faire
 
-- **`lf-2023` — pagination française non établie.** Le numéro et la date du fascicule sont
+- **`lf-2023` — pagination française non établie** (levé le 04/10/2026 : fac-similé de
+  l'édition française diffusé par la DGI, décret-loi p. 3556 ; voir l'entrée du 04/10/2026
+  en tête de ce fichier). Le numéro et la date du fascicule sont
   désormais **acquis** (JORT n° 141 du 23/12/2022, t. 165, sommaire arabe vérifié + notice
   `jort_cache.db`), ce qui lève la réserve principale du § 11.2. Mais le fascicule français
   est absent en ligne et la copie locale
@@ -2934,3 +3081,31 @@ relancés, conformément à la consigne de reprise.
       sauf si le contrôle dit autrement).
 - [ ] `lfc-2016` : trancher l'écart de tome (160 lu sur pièce vs 161 en base) avant de pousser, ou
       pousser avec la note qui l'explique.
+
+## Passe « Fiscalité — régime forfaitaire de l'IRPP » (04/10/2026) — À REPORTER DANS ZOTERO
+
+Note documentaire : `docs/notes/fiscalite-regime-forfaitaire.md`. Six clés ajoutées à la main
+dans `precis/{fr,ar}/fiscalite/references.json` (provisoires jusqu'au rapatriement, feu vert
+requis) :
+
+- [ ] `lf-2000` — loi n° 99-101 du 31 décembre 1999 (LF 2000), JORT n° 105/1999, art. 54 p. 2748 ; URL `pdf_fr`/`pdf_ar` de jort_cache.
+- [ ] `decret-2014-2939` — JORT n° 69/2014, pp. 2192-2193 (édition française ; jort_cache donne la pagination arabe 2287-2289).
+- [ ] `decret-2022-802` — JORT n° 121/2022, pp. 2998-2999 ; **absent de jort_cache** : URL = `pdf_fr`/`pdf_ar` d'un autre enregistrement du même fascicule (n° 121/2022), vérifiées (200, tailles égales au corpus local).
+- [ ] `dgi-nc-15-2011`, `dgi-nc-27-2016` — notes communes, sans URL publique : chercher l'adresse jibaya.tn.
+- [ ] `dgi-nc-lf2018-art16` — note commune dont le numéro (15/2018 d'après le nom du fichier) n'est pas lu sur pièce : vérifier sur l'original, puis renommer la clé si le numéro est confirmé.
+- [ ] `minfin-cnf-2013-forfait` — diaporama du ministère des Finances (CNF, août 2013, en arabe), document retiré du site : URL Wayback `20170616075036` lue dans le CDX, champs `archive`/`archive_location` posés (FR et AR).
+- [x] `lf-2026` (fonds commun, FR et AR) : note corrigée — article 91 en page 4255 de l'édition arabe (non 4254-4255) ; article 110 (application au 1er janvier 2026) en page 4258.
+
+## Passe « Cotisations — autres prélèvements sur les salaires (TFP, FOPROLOS) » (05/10/2026) — À REPORTER DANS ZOTERO
+
+Note documentaire : `docs/notes/cotisations-prelevements-salaires.md`. Chapitre :
+`precis/fr/cotisations_sociales/_prelevements_salaires.qmd`. Clés ajoutées à la main dans
+`precis/{fr,ar}/cotisations_sociales/references.json` (provisoires jusqu'au rapatriement, feu
+vert requis) ; URL `pdf_fr`/`pdf_ar` des enregistrements jort_cache, titres français dans les
+deux langues (comme les autres entrées du livre) :
+
+- [ ] Nouvelles : `decret-1956-01-12-formation-professionnelle` (JORT n° 5/1956 ; jort_cache porte aussi un enregistrement n° 13, le rectificatif, non retenu), `decret66-527`, `loi66-79-lf1967`, `loi77-54` (enregistrement `type = Loi` ; un décret n° 77-54 homonyme existe), `loi2007-69`, `decret2009-292`, `dgi-nc-5-2015` (note commune sans URL publique : chercher l'adresse jibaya.tn, relever numéro et date de bulletin).
+- [ ] Copiées depuis d'autres livres, note complétée des articles TFP/FOPROLOS : `loi86-106-lf1987` (caisses), `loi-88-145-lf-1989`, `lf-2000`, `lf-2003`, `loi-2007-70-lf-2008`, `lf-2011`, `lf-2013` (fiscalité). Collection Zotero à élargir au livre des cotisations. `lf-2003` art. 35-36 (p. 2880) et `lf-2000` art. 17-18 (p. 2741) relus à l'image le 5 octobre 2026.
+- [ ] Fonds commun, note complétée : `lf-2026` (art. 21, éd. AR p. 4235), `loi-87-83-lf-1988` (art. 76, p. 1635).
+- [ ] Doublon de clé à trancher : la LF 1991 (loi n° 90-111) porte `lf-1991` en fiscalité et `loi-90-111-lf-1991` en prestations sociales.
+- [ ] Le `dry-run` et le `controle-rangement` du workflow `biblio-zotero` restent à lancer après poussée de la branche (branche locale).

@@ -1,4 +1,4 @@
-| Effet | Allocation de base mensuelle | Texte |
+| Date de l'état | Allocation de base mensuelle | Texte |
 |---|---:|---|
 | 20 mai 2020 | 180 D | [@arrete-2020-05-19-transferts, art. 2] |
 | 1^er^ janvier 2022 | 200 D | [@arrete-2022-04-01-transferts, art. 1] |

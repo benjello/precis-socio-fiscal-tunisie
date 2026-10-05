@@ -20,14 +20,12 @@ book:
   downloads: [pdf]
   chapters:
     - index.qmd
-    - part: "الضرائب المباشرة"
-      chapters:
-        - _impot_revenu.qmd
-        - _impot_societes.qmd
-    - part: "الضرائب غير المباشرة"
-      chapters:
-        - _tva.qmd
-        - _droits_consommation.qmd
+    - _impot_revenu.qmd
+    - _impot_societes.qmd
+    # - _impot_fortune.qmd   # À décommenter quand la traduction arabe du chapitre est livrée :
+    #                          Quarto refuse un chapitre déclaré dont le fichier manque.
+    - _tva.qmd
+    - _droits_consommation.qmd
   appendices:
     - _glossaire.qmd
 

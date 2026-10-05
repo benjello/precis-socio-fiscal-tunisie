@@ -1,0 +1,244 @@
+- libelle: الخدمات المكتبية — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/services_de_bureaux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.services_de_bureaux/table/
+- libelle: الخدمات المكتبية — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/services_de_bureaux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.services_de_bureaux/table/
+- libelle: الخدمات الأخرى — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/autres_services.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.autres_services/table/
+- libelle: الخدمات الأخرى — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/autres_services.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.autres_services/table/
+- libelle: التجارة — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/commerce.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.commerce/table/
+- libelle: التجارة — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/commerce.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.commerce/table/
+- libelle: الصناعات التقليدية — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/artisans.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.artisans/table/
+- libelle: الصناعات التقليدية — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/artisans.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.artisans/table/
+- libelle: الفلاحة والصيد البحري — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/agriculture_et_peche.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.agriculture_et_peche/table/
+- libelle: الفلاحة والصيد البحري — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/agriculture_et_peche.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.agriculture_et_peche/table/
+- libelle: صناعة الحليب ومشتقاته — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_agro_alimentaires/lait_et_derives.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_agro_alimentaires.lait_et_derives/table/
+- libelle: صناعة الحليب ومشتقاته — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_agro_alimentaires/lait_et_derives.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_agro_alimentaires.lait_et_derives/table/
+- libelle: صناعة المواد الدسمة — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_agro_alimentaires/corps_gras.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_agro_alimentaires.corps_gras/table/
+- libelle: صناعة المواد الدسمة — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_agro_alimentaires/corps_gras.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_agro_alimentaires.corps_gras/table/
+- libelle: صناعة الحبوب والدقيق — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_agro_alimentaires/travail_des_graines.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_agro_alimentaires.travail_des_graines/table/
+- libelle: صناعة الحبوب والدقيق — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_agro_alimentaires/travail_des_graines.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_agro_alimentaires.travail_des_graines/table/
+- libelle: صناعة المصبرات ونصف المصبرات — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_agro_alimentaires/conserverie_semi_conserverie.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_agro_alimentaires.conserverie_semi_conserverie/table/
+- libelle: صناعة المصبرات ونصف المصبرات — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_agro_alimentaires/conserverie_semi_conserverie.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_agro_alimentaires.conserverie_semi_conserverie/table/
+- libelle: صناعة تجفيف الأغذية — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_agro_alimentaires/sechage_deshydratation.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_agro_alimentaires.sechage_deshydratation/table/
+- libelle: صناعة تجفيف الأغذية — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_agro_alimentaires/sechage_deshydratation.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_agro_alimentaires.sechage_deshydratation/table/
+- libelle: صناعة السكر والشوكلاطة ومشتقاتها — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_agro_alimentaires/sucre_chocolat_derives.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_agro_alimentaires.sucre_chocolat_derives/table/
+- libelle: صناعة السكر والشوكلاطة ومشتقاتها — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_agro_alimentaires/sucre_chocolat_derives.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_agro_alimentaires.sucre_chocolat_derives/table/
+- libelle: صناعات المشروبات والمشروبات الكحولية والخل — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_agro_alimentaires/boissons_alcools_vinaigre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_agro_alimentaires.boissons_alcools_vinaigre/table/
+- libelle: صناعات المشروبات والمشروبات الكحولية والخل — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_agro_alimentaires/boissons_alcools_vinaigre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_agro_alimentaires.boissons_alcools_vinaigre/table/
+- libelle: صناعات غذائية مختلفة — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_agro_alimentaires/alimentaires_diverses.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_agro_alimentaires.alimentaires_diverses/table/
+- libelle: صناعات غذائية مختلفة — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_agro_alimentaires/alimentaires_diverses.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_agro_alimentaires.alimentaires_diverses/table/
+- libelle: صناعة العلف المركب — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_agro_alimentaires/aliments_composes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_agro_alimentaires.aliments_composes/table/
+- libelle: صناعة العلف المركب — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_agro_alimentaires/aliments_composes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_agro_alimentaires.aliments_composes/table/
+- libelle: صناعات فلاحية وغذائية أخرى — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_agro_alimentaires/autres_agro_alimentaires.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_agro_alimentaires.autres_agro_alimentaires/table/
+- libelle: صناعات فلاحية وغذائية أخرى — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_agro_alimentaires/autres_agro_alimentaires.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_agro_alimentaires.autres_agro_alimentaires/table/
+- libelle: صناعة التبريد — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industrie_du_froid.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industrie_du_froid/table/
+- libelle: صناعة التبريد — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industrie_du_froid.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industrie_du_froid/table/
+- libelle: صناعة الورق والورق المقوى — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/papier_et_arts_graphiques/fabrication_papier_carton.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.papier_et_arts_graphiques.fabrication_papier_carton/table/
+- libelle: صناعة الورق والورق المقوى — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/papier_et_arts_graphiques/fabrication_papier_carton.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.papier_et_arts_graphiques.fabrication_papier_carton/table/
+- libelle: الطباعة وتحويل الورق والورق المقوى — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/papier_et_arts_graphiques/imprimerie_transformation_papier_carton.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.papier_et_arts_graphiques.imprimerie_transformation_papier_carton/table/
+- libelle: الطباعة وتحويل الورق والورق المقوى — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/papier_et_arts_graphiques/imprimerie_transformation_papier_carton.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.papier_et_arts_graphiques.imprimerie_transformation_papier_carton/table/
+- libelle: الصناعات الميكانيكية — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/mecaniques_fonderies_electriques/mecaniques.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.mecaniques_fonderies_electriques.mecaniques/table/
+- libelle: الصناعات الميكانيكية — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/mecaniques_fonderies_electriques/mecaniques.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.mecaniques_fonderies_electriques.mecaniques/table/
+- libelle: الصناعات المعدنية والمسابك — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/mecaniques_fonderies_electriques/fonderie_siderurgie.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.mecaniques_fonderies_electriques.fonderie_siderurgie/table/
+- libelle: الصناعات المعدنية والمسابك — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/mecaniques_fonderies_electriques/fonderie_siderurgie.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.mecaniques_fonderies_electriques.fonderie_siderurgie/table/
+- libelle: الصناعات الكهربائية — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/mecaniques_fonderies_electriques/electriques.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.mecaniques_fonderies_electriques.electriques/table/
+- libelle: الصناعات الكهربائية — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/mecaniques_fonderies_electriques/electriques.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.mecaniques_fonderies_electriques.electriques/table/
+- libelle: صناعات النسيج والجلد والأحذية — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/textile_cuir_chaussures.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.textile_cuir_chaussures/table/
+- libelle: صناعات النسيج والجلد والأحذية — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/textile_cuir_chaussures.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.textile_cuir_chaussures/table/
+- libelle: صناعة الأثاث — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/meuble.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.meuble/table/
+- libelle: صناعة الأثاث — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/meuble.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.meuble/table/
+- libelle: صناعة مواد البناء والخزف والبلور — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/materiaux_construction_ceramique_verrerie.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.materiaux_construction_ceramique_verrerie/table/
+- libelle: صناعة مواد البناء والخزف والبلور — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/materiaux_construction_ceramique_verrerie.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.materiaux_construction_ceramique_verrerie/table/
+- libelle: صناعة الخشب والفلين — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/bois_liege.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.bois_liege/table/
+- libelle: صناعة الخشب والفلين — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/bois_liege.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.bois_liege/table/
+- libelle: صناعات معملية أخرى — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/autres_industries_manufacturieres.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.autres_industries_manufacturieres/table/
+- libelle: صناعات معملية أخرى — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/autres_industries_manufacturieres.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.autres_industries_manufacturieres/table/
+- libelle: الصناعات الكبرى في الكيميا المعدنية — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_chimiques/grandes_industries_chimiques/chimiques_minerales.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_chimiques.grandes_industries_chimiques.chimiques_minerales/table/
+- libelle: الصناعات الكبرى في الكيميا المعدنية — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_chimiques/grandes_industries_chimiques/chimiques_minerales.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_chimiques.grandes_industries_chimiques.chimiques_minerales/table/
+- libelle: إنتاج المواد المعدنية المختلفة — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_chimiques/grandes_industries_chimiques/produits_mineraux_divers.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_chimiques.grandes_industries_chimiques.produits_mineraux_divers/table/
+- libelle: إنتاج المواد المعدنية المختلفة — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_chimiques/grandes_industries_chimiques/produits_mineraux_divers.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_chimiques.grandes_industries_chimiques.produits_mineraux_divers/table/
+- libelle: إنتاج الأسمدة وصناعات الأزوت — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_chimiques/grandes_industries_chimiques/engrais_azote.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_chimiques.grandes_industries_chimiques.engrais_azote/table/
+- libelle: إنتاج الأسمدة وصناعات الأزوت — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_chimiques/grandes_industries_chimiques/engrais_azote.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_chimiques.grandes_industries_chimiques.engrais_azote/table/
+- libelle: صناعة التركيبات العضوية — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_chimiques/grandes_industries_chimiques/synthese_organique.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_chimiques.grandes_industries_chimiques.synthese_organique/table/
+- libelle: صناعة التركيبات العضوية — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_chimiques/grandes_industries_chimiques/synthese_organique.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_chimiques.grandes_industries_chimiques.synthese_organique/table/
+- libelle: صناعة المفرقعات الصناعية وتوابعها وأدوات الإشعال والشماريخ — قبل تحويل
+    النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_chimiques/grandes_industries_chimiques/explosifs_mises_a_feu_artifices.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_chimiques.grandes_industries_chimiques.explosifs_mises_a_feu_artifices/table/
+- libelle: صناعة المفرقعات الصناعية وتوابعها وأدوات الإشعال والشماريخ — بعد تحويل
+    النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_chimiques/grandes_industries_chimiques/explosifs_mises_a_feu_artifices.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_chimiques.grandes_industries_chimiques.explosifs_mises_a_feu_artifices/table/
+- libelle: صناعة مواد الصيدلة — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_chimiques/grandes_industries_chimiques/produits_pharmaceutiques.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_chimiques.grandes_industries_chimiques.produits_pharmaceutiques/table/
+- libelle: صناعة مواد الصيدلة — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_chimiques/grandes_industries_chimiques/produits_pharmaceutiques.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_chimiques.grandes_industries_chimiques.produits_pharmaceutiques/table/
+- libelle: صناعة الدهن والفرنيز والصباغ المسحوقة — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_chimiques/grandes_industries_chimiques/peintures_vernis_pigments.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_chimiques.grandes_industries_chimiques.peintures_vernis_pigments/table/
+- libelle: صناعة الدهن والفرنيز والصباغ المسحوقة — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_chimiques/grandes_industries_chimiques/peintures_vernis_pigments.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_chimiques.grandes_industries_chimiques.peintures_vernis_pigments/table/
+- libelle: صناعة المواد المبيدة والفطرية — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_chimiques/grandes_industries_chimiques/insecticides_anticryptogamiques.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_chimiques.grandes_industries_chimiques.insecticides_anticryptogamiques/table/
+- libelle: صناعة المواد المبيدة والفطرية — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_chimiques/grandes_industries_chimiques/insecticides_anticryptogamiques.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_chimiques.grandes_industries_chimiques.insecticides_anticryptogamiques/table/
+- libelle: مصفاة البترول — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_chimiques/grandes_industries_chimiques/raffineries_petrole.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_chimiques.grandes_industries_chimiques.raffineries_petrole/table/
+- libelle: مصفاة البترول — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_chimiques/grandes_industries_chimiques/raffineries_petrole.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_chimiques.grandes_industries_chimiques.raffineries_petrole/table/
+- libelle: إنتاج مشتقات النفط والفحم الحجري والمنتوجات المطاطية والمواد البلاستيكية
+    — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_chimiques/grandes_industries_chimiques/derives_petrole_charbon_caoutchouc_plastique.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_chimiques.grandes_industries_chimiques.derives_petrole_charbon_caoutchouc_plastique/table/
+- libelle: إنتاج مشتقات النفط والفحم الحجري والمنتوجات المطاطية والمواد البلاستيكية
+    — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_chimiques/grandes_industries_chimiques/derives_petrole_charbon_caoutchouc_plastique.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_chimiques.grandes_industries_chimiques.derives_petrole_charbon_caoutchouc_plastique/table/
+- libelle: صناعات كيميائية أخرى — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_chimiques/autres_industries_chimiques.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_chimiques.autres_industries_chimiques/table/
+- libelle: صناعات كيميائية أخرى — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_chimiques/autres_industries_chimiques.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_chimiques.autres_industries_chimiques/table/
+- libelle: البناء والأشغال العامة — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/batiment_et_travaux_publics.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.batiment_et_travaux_publics/table/
+- libelle: البناء والأشغال العامة — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/batiment_et_travaux_publics.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.batiment_et_travaux_publics/table/
+- libelle: النقل والشحن والترصيف — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/transport_et_manutention.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.transport_et_manutention/table/
+- libelle: النقل والشحن والترصيف — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/transport_et_manutention.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.transport_et_manutention/table/
+- libelle: الصناعات الإستخراجية — قبل تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/avant_transfert/industries_extractives.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.avant_transfert.industries_extractives/table/
+- libelle: الصناعات الإستخراجية — بعد تحويل النقطة
+  parametre: parameters/prelevements_sociaux/atmp_1995/apres_transfert/industries_extractives.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.atmp_1995.apres_transfert.industries_extractives/table/

@@ -39,6 +39,9 @@ BOOKS = [
     "prestations_sociales",
     "cotisations_sociales",
     "retraites",
+    "caisses",
+    "finances_locales",
+    "marche_travail",
 ]
 
 LANGS = ("fr", "ar")

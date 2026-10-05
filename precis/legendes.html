@@ -8,3 +8,44 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
+
+<script>
+// Références bibliographiques repliables, repliées par défaut. La liste (#refs) est placée
+// dans un <details> ; un appel de citation ou une adresse en #ref-… la déplie avant de
+// défiler jusqu'à l'entrée. Les infobulles des citations lisent les entrées dans le DOM :
+// elles fonctionnent liste repliée.
+document.addEventListener("DOMContentLoaded", () => {
+  const refs = document.getElementById("refs");
+  if (!refs || refs.closest("details")) return;
+  // Un livre qui regroupe sa bibliographie dans une annexe « Références » (rémunérations
+  // publiques) voit Quarto masquer la liste de fin de chapitre : ne rien replier, sans quoi le
+  // bloc s'ouvrirait sur une liste invisible.
+  if (getComputedStyle(refs).display === "none") return;
+  const n = refs.querySelectorAll(".csl-entry").length;
+  if (!n) return;
+  // Une page qui n'est faite que de la bibliographie (annexe « Références ») reste dépliée.
+  const texte = [...document.querySelectorAll("main p")].filter(p => !refs.contains(p)).length;
+  if (texte < 2) return;
+  const ar = document.documentElement.dir === "rtl" || document.documentElement.lang === "ar";
+  const details = document.createElement("details");
+  details.className = "references-repliables";
+  const summary = document.createElement("summary");
+  summary.textContent = ar ? `المراجع (${n})` : `Références (${n})`;
+  details.appendChild(summary);
+  refs.parentNode.insertBefore(details, refs);
+  details.appendChild(refs);
+  const ouvrir = (id) => {
+    const cible = id && document.getElementById(id);
+    if (cible && details.contains(cible)) {
+      details.open = true;
+      cible.scrollIntoView();
+    }
+  };
+  ouvrir(decodeURIComponent(location.hash.slice(1)));
+  window.addEventListener("hashchange", () => ouvrir(decodeURIComponent(location.hash.slice(1))));
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest('a[href^="#ref-"]');
+    if (a) ouvrir(decodeURIComponent(a.getAttribute("href").slice(1)));
+  });
+});
+</script>

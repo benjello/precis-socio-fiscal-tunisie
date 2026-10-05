@@ -18,7 +18,9 @@ PRECIS_DIR="$ROOT_DIR/precis"
 LOCAL_SITE="$ROOT_DIR/local_site"
 
 LANGUAGES=(fr ar)
-BOOKS=(prestations_sociales retraites fiscalite remunerations_publiques cotisations_sociales)
+BOOKS=(prestations_sociales retraites fiscalite remunerations_publiques cotisations_sociales caisses finances_locales marche_travail)
+# Pages générales du site, posées directement sous precis/<langue>/ et rendues une à une.
+PAGES=(index a-propos)
 
 DO_PDF=true
 
@@ -95,14 +97,23 @@ for lang in "${LANGUAGES[@]}"; do
     continue
   fi
 
-  # ── Render landing page for the language ──────────────────────────────────
-  echo "[build] Rendering landing page for $lang..."
-  if (cd "$LANG_DIR" && uv run quarto render index.qmd --to html); then
-    echo "[build] ✓ Landing page rendered for $lang"
-  else
-    echo "[build] ✗ Landing page FAILED for $lang"
-    FAILED_BOOKS+=("$lang/index")
-  fi
+  # ── Render the general pages for the language ─────────────────────────────
+  # Une page générale NEUVE n'a pas encore d'arabe, pour la même raison qu'un livre neuf
+  # (voir plus bas) : on saute la page arabe absente, en le disant. L'accueil, lui, existe
+  # dans les deux langues — son absence reste une erreur.
+  for page in "${PAGES[@]}"; do
+    if [[ "$page" != "index" && "$lang" == "ar" && ! -f "$LANG_DIR/$page.qmd" ]]; then
+      echo "[build] ⚠ $page ($lang) : traduction pas encore livrée — page sautée."
+      continue
+    fi
+    echo "[build] Rendering page $page for $lang..."
+    if (cd "$LANG_DIR" && uv run quarto render "$page.qmd" --to html); then
+      echo "[build] ✓ Page $page rendered for $lang"
+    else
+      echo "[build] ✗ Page $page FAILED for $lang"
+      FAILED_BOOKS+=("$lang/$page")
+    fi
+  done
 
   # ── Render each book ──────────────────────────────────────────────────────
   for book in "${BOOKS[@]}"; do
@@ -112,6 +123,16 @@ for lang in "${LANGUAGES[@]}"; do
 
     if [[ ! -d "$BOOK_DIR" ]]; then
       echo "[build] Skipping $book ($lang): directory not found."
+      continue
+    fi
+
+    # Un livre NEUF n'a pas encore d'arabe : son `index.qmd` arabe n'est produit que par
+    # la traduction automatique, qui ne part qu'après la fusion sur master, et aucun
+    # agent n'écrit de `.qmd` sous `precis/ar/`. Le `_quarto.yml` arabe, tenu à la main,
+    # existe déjà. On saute donc le livre arabe dont `index.qmd` manque, en le disant :
+    # ce cas, et lui seul — un CHAPITRE déclaré mais absent reste une erreur de rendu.
+    if [[ "$lang" == "ar" && ! -f "$BOOK_DIR/index.qmd" ]]; then
+      echo "[build] ⚠ $book ($lang) : traduction pas encore livrée (index.qmd absent) — livre sauté."
       continue
     fi
 
@@ -141,13 +162,15 @@ for lang in "${LANGUAGES[@]}"; do
   # ── Assemble local site for this language ─────────────────────────────────
   mkdir -p "$LOCAL_SITE/$lang"
 
-  # Landing page
-  if [[ -f "$LANG_DIR/index.html" ]]; then
-    cp "$LANG_DIR/index.html" "$LOCAL_SITE/$lang/index.html"
-  fi
-  if [[ -d "$LANG_DIR/index_files" ]]; then
-    cp -r "$LANG_DIR/index_files" "$LOCAL_SITE/$lang/index_files"
-  fi
+  # General pages
+  for page in "${PAGES[@]}"; do
+    if [[ -f "$LANG_DIR/$page.html" ]]; then
+      cp "$LANG_DIR/$page.html" "$LOCAL_SITE/$lang/$page.html"
+    fi
+    if [[ -d "$LANG_DIR/${page}_files" ]]; then
+      cp -r "$LANG_DIR/${page}_files" "$LOCAL_SITE/$lang/${page}_files"
+    fi
+  done
 
   # Each book
   for book in "${BOOKS[@]}"; do

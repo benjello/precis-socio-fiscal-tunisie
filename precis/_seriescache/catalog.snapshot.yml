@@ -160,8 +160,9 @@
     ministères » ; l'annexe 2018 les renomme « Communes ») ; rupture de périmètre
     des collectivités locales 2016→2017 ; la colonne 2021 porte trois décimales contre
     une pour 2015-2020, d'où de faux petits mouvements 2020→2021 ; hausse de la Défense
-    de +35 % entre 2015 et 2018, corroborée mais inexpliquée, sur un champ qui exclut
-    les militaires de carrière
+    de +35 % entre 2015 et 2018, corroborée par deux publications INS mais non commentée
+    par l'INS, sur un champ qui exclut les militaires de carrière ; tout lien avec
+    le contexte sécuritaire post-2015 doit être documenté séparément
   titre_ar: أعداد أعوان الوظيفة العمومية حسب الوزارة، 2015-2021
   unite_ar: بآلاف الأعوان
   perimetre_ar: 'الوظيفة العمومية المدنية — أربع عشرة وحدة: إحدى عشرة وزارة، ورئاسة
@@ -227,15 +228,16 @@
     entre catégories se lit. Moyennes par catégorie, qui recouvrent des corps très
     hétérogènes. Champ : fonctionnaires seuls, d''où un effectif inférieur à celui
     de la fonction publique. La série s''arrête en 2020, non en 2021 comme celles
-    des effectifs. BRUT AVEC CONTRIBUTIONS — INFÉRENCE, l''INS ne le dit pas (le tableau
-    est étiqueté « salaire mensuel brut ») : pondérée par les effectifs de tab8, la
-    série redonne les fonctionnaires de tab19 à 0,05 dinar près (2018 : 1 943,2),
-    et tab19 pondéré par tab6 redonne le brut AVEC contributions de tab18 (1 716,5
-    contre 1 716,6). NE SE PROLONGE PAS par `ins-salaire-par-categorie-hors-contributions-2018-2025`
-    (rapport INS 2018-2025, tableau 12), qui est le brut SANS contributions : A1 2018
-    = 2 561,4 ici, 2 175,3 là, pour des effectifs identiques ; le rapport entre les
-    deux varie de 1,14 à 1,20 selon la catégorie et l''année, et aucun coefficient
-    ne raccorde les deux séries.'
+    des effectifs. BRUT AVEC CONTRIBUTIONS : le tableau par catégorie est seulement
+    étiqueté « salaire mensuel brut », mais la pondération par les effectifs de tab8
+    montre qu''il série redonne les fonctionnaires de tab19 à 0,05 dinar près (2018
+    : 1 943,2), et tab19 pondéré par tab6 redonne le brut AVEC contributions de tab18
+    (1 716,5 contre 1 716,6), notion explicitement nommée par l''INS. NE SE PROLONGE
+    PAS par `ins-salaire-par-categorie-hors-contributions-2018-2025` (rapport INS
+    2018-2025, tableau 12), qui est le brut SANS contributions : A1 2018 = 2 561,4
+    ici, 2 175,3 là, pour des effectifs identiques ; le rapport entre les deux varie
+    de 1,14 à 1,20 selon la catégorie et l''année, et aucun coefficient ne raccorde
+    les deux séries.'
   titre_ar: الأجر الشهري الخام للموظفين حسب الصنف القانوني، 2015-2020
   unite_ar: دينار جاري / شهر
   perimetre_ar: موظفو الدولة (باستثناء العملة والمتعاقدين)، ستة أصناف قانونية من أ1
@@ -246,10 +248,10 @@
     دون تصحيح للأسعار: لا يُقرأ تطوّر المستوى دون مؤشّر أسعار، بينما تُقرأ النسبة
     بين الأصناف. متوسّطات حسب الصنف تُخفي أسلاكاً شديدة التباين. المجال: الموظفون
     وحدهم، ومن ثمّ عدد أقلّ من مجموع الوظيفة العمومية. تنتهي السلسلة سنة 2020 لا 2021.
-    أجر خام مع المساهمات — استنتاج لا يصرّح به المعهد الوطني للإحصاء (عنوان الجدول
-    «الأجر الشهري الخام»): مرجّحةً بأعداد الجدول 8 تعطي السلسلة أجر الموظفين في الجدول
-    19 بفارق لا يتجاوز 0,05 دينار (2018: 1943,2)، والجدول 19 مرجّحاً بأعداد الجدول
-    6 يعطي الأجر الخام مع المساهمات في الجدول 18 (1716,5 مقابل 1716,6). لا تمتدّ بسلسلة
+    أجر خام مع المساهمات: لا يحمل جدول الأصناف إلا عنوان «الأجر الشهري الخام»، لكن
+    ترجيحه بأعداد الجدول 8 يعطي أجر الموظفين في الجدول 19 بفارق لا يتجاوز 0,05 دينار
+    (2018: 1943,2)، والجدول 19 مرجّحاً بأعداد الجدول 6 يعطي الأجر الخام مع المساهمات
+    في الجدول 18 (1716,5 مقابل 1716,6)، وهي تسمية يصرّح بها المعهد. لا تمتدّ بسلسلة
     2018-2025 (الجدول 12 من تقرير المعهد 2018-2025) لأنّها أجر خام دون المساهمات:
     أ1 سنة 2018 = 2561,4 هنا و2175,3 هناك لأعداد متطابقة؛ وتتراوح النسبة بينهما من
     1,14 إلى 1,20 حسب الصنف والسنة، فلا معامل يصل السلسلتين.'
@@ -926,7 +928,7 @@
     ministère de l''intérieur (intérieur 2018 : 87,3 milliers dans l''enquête, 96
     286 agents ici ; autres établissements : 55,6 milliers contre 46 892) ; la Présidence
     du gouvernement perd environ 500 agents (2,2 milliers contre 1 684), la Justice
-    en gagne environ 400, les Finances en perdent environ 300. L''INS n''explique
+    en gagne environ 400, les Finances en perdent environ 300. L''INS ne commente
     pas ce reclassement. Défense, Éducation, Agriculture et collectivités locales
     concordent à l''arrondi.'
   titre_ar: أعداد أعوان الوظيفة العمومية حسب الوزارة، 2018-2025
@@ -977,7 +979,7 @@
     3,4٪ كما نُشرت. لا تُدرج نسب التطوّر: تُقرأ في السلسلتين المتجانستين.'
   fiche: sources/ins-fonction-publique-2018-2025.md
 - id: ins-salaire-par-categorie-hors-contributions-2018-2025
-  titre: Salaire mensuel brut hors contributions des fonctionnaires par catégorie
+  titre: Salaire mensuel brut sans contributions des fonctionnaires par catégorie
     statutaire, 2018-2025
   sources:
   - ins-fonction-publique-2025
@@ -988,24 +990,25 @@
   unite: dinars courants / mois
   perimetre: fonctionnaires, six catégories statutaires A1 à D (tableau 12 du rapport)
     ; libellés A1…D comme `ins-salaire-par-categorie`
-  caveats: 'BRUT HORS CONTRIBUTIONS — INFÉRENCE, l''INS ne le dit pas : le tableau
-    est étiqueté « salaire mensuel brut moyen ». Chaîne de preuve : pondérée par les
-    effectifs du tableau 6, la série redonne les fonctionnaires du tableau 11 à 0,2
-    dinar près les huit années, et le tableau 11 pondéré redonne le brut SANS contributions
-    du tableau 10. NON RACCORDABLE à `ins-salaire-par-categorie` (tab20 de l''enquête
-    2010-2021), qui est le brut AVEC contributions, pour des effectifs par catégorie
-    pourtant identiques sur 2018-2020 : A1 2018 = 2 561,4 là-bas, 2 175,3 ici. Le
-    rapport tab20/tab12 varie selon la catégorie (2018 : A1 et A2 1,177 ; A3 1,163
-    ; B 1,164 ; C 1,178 ; D 1,141) et selon l''année (1,16 à 1,20) : aucun coefficient
-    ne raccorde les deux séries. Dinars courants ; moyennes de corps hétérogènes.'
+  caveats: 'BRUT SANS CONTRIBUTIONS : le tableau par catégorie est seulement étiqueté
+    « salaire mensuel brut moyen ». Chaîne de preuve : pondérée par les effectifs
+    du tableau 6, la série redonne les fonctionnaires du tableau 11 à 0,2 dinar près
+    les huit années, et le tableau 11 pondéré redonne le brut SANS contributions du
+    tableau 10, notion explicitement nommée par l''INS. NON RACCORDABLE à `ins-salaire-par-categorie`
+    (tab20 de l''enquête 2010-2021), qui est le brut AVEC contributions, pour des
+    effectifs par catégorie pourtant identiques sur 2018-2020 : A1 2018 = 2 561,4
+    là-bas, 2 175,3 ici. Le rapport tab20/tab12 varie selon la catégorie (2018 : A1
+    et A2 1,177 ; A3 1,163 ; B 1,164 ; C 1,178 ; D 1,141) et selon l''année (1,16
+    à 1,20) : aucun coefficient ne raccorde les deux séries. Dinars courants ; moyennes
+    de corps hétérogènes.'
   titre_ar: الأجر الشهري الخام دون المساهمات للموظفين حسب الصنف القانوني، 2018-2025
   unite_ar: دينار جاري / شهر
   perimetre_ar: الموظفون، ستة أصناف قانونية من أ1 إلى د (الجدول 12 من التقرير)؛ بالتسميات
     نفسها المعتمدة في سلسلة 2015-2020
-  caveats_ar: 'أجر خام دون المساهمات — استنتاج لا يصرّح به المعهد الوطني للإحصاء:
-    عنوان الجدول «معدّل الأجر الشهري الخام». سلسلة الإثبات: مرجّحةً بأعداد الجدول
-    6 تعطي السلسلة أجر الموظفين في الجدول 11 بفارق لا يتجاوز 0,2 دينار في السنوات
-    الثماني، والجدول 11 مرجّحاً يعطي الأجر الخام دون المساهمات في الجدول 10. لا تُوصل
+  caveats_ar: 'أجر خام دون المساهمات: لا يحمل جدول الأصناف إلا عنوان «معدّل الأجر
+    الشهري الخام». سلسلة الإثبات: مرجّحةً بأعداد الجدول 6 تعطي السلسلة أجر الموظفين
+    في الجدول 11 بفارق لا يتجاوز 0,2 دينار في السنوات الثماني، والجدول 11 مرجّحاً
+    يعطي الأجر الخام دون المساهمات في الجدول 10، وهي تسمية يصرّح بها المعهد. لا تُوصل
     بسلسلة 2015-2020 (الجدول 20 من مسح 2010-2021) وهي أجر خام مع المساهمات، رغم تطابق
     الأعداد حسب الصنف على 2018-2020: أ1 سنة 2018 = 2561,4 هناك و2175,3 هنا. تختلف
     النسبة بين الجدولين حسب الصنف (2018: أ1 وأ2 1,177؛ أ3 1,163؛ ب 1,164؛ ج 1,178؛
@@ -1217,3 +1220,366 @@
     الأجراء 19 جويلية 1995، الفنانون 5 جانفي 2003)؛ ولا ينشرها الصندوق إلّا لسنتَي
     2013 و2017. تتوقّف السلسلة سنة 2017.'
   fiche: sources/cnss-annuaires.md
+- id: fonction-publique-brut-contributions-2010-2025
+  titre: Salaire mensuel brut avec contributions de la fonction publique, 2010-2025
+  sources:
+  - ins-fonction-publique-2021
+  - ins-fonction-publique-2025
+  build: scripts/extract_ins_fonction_publique_2018_2025.py:historique_brut_contributions
+  raw:
+  - data/raw/ins-fonction-publique-salaires-historiques/Rap-fonct-pub2-site (1).pdf
+  - data/raw/ins-fonction-publique-salaires-historiques/Caractéristiques des agents
+    de la fonction publique et leurs salaires 2011-2015.pdf
+  - data/raw/ins-fonction-publique-salaires-historiques/Caractéristiques des agents
+    de la fonction publique et leurs salaires 2012-2016.pdf
+  - data/raw/ins-fonction-publique-salaires-historiques/Caractéristiques des agents
+    de la fonction publique et leurs salaires 2013-2017.pdf
+  - data/raw/ins-fonction-publique-salaires-2010-2021/tab18_0.xlsx
+  - data/raw/ins-fonction-publique-2018-2025/La fonction publique - 2018-2025.pdf
+  output: data/processed/ins-fonction-publique-2018-2025/salaire_brut_contributions_2010_2025.csv
+  unite: dinars courants / mois
+  perimetre: ensemble des agents de la fonction publique ; salaire brut avec contributions
+  caveats: 'SÉRIE COMPOSITE PAR MILLÉSIME INS. Les rapports 2010-2014 à 2013-2017
+    publient un « salaire brut moyen mensuel » ; cette série est reprise comme brut
+    avec contributions car elle se raccorde à la notion explicitement nommée dans
+    tab18. À partir de 2015, la source nomme explicitement le brut avec contributions.
+    Arbitrage : le millésime le plus récent fait foi pour chaque année ; les valeurs
+    écartées sont conservées dans salaire_brut_contributions_2010_2025_conflits.csv.
+    Révisions notables : 2013 (1287,3 → 1299,4), 2014 (1334,3 → 1326,6), 2015 (1388,9
+    puis 1461,8), 2016 (1580,7 puis 1644,6), 2017 (1653,5 puis 1668,3), et écarts
+    d''environ un dinar entre tab18 et le rapport 2018-2025 sur 2018-2020. Montants
+    en dinars courants, non déflatés.'
+  titre_ar: متوسط الأجر الشهري الخام مع المساهمات في الوظيفة العمومية، 2010-2025
+  unite_ar: دينار جاري / شهر
+  perimetre_ar: مجموع أعوان الوظيفة العمومية؛ الأجر الخام مع المساهمات
+  caveats_ar: 'سلسلة مركبة حسب طبعات المعهد الوطني للإحصاء. تنشر تقارير 2010-2014
+    إلى 2013-2017 «متوسط الأجر الشهري الخام»، وتُستعمل هنا بوصفها أجراً خاماً مع المساهمات
+    لأنها تتصل بالمفهوم المسمّى صراحة في الجدول 18. ابتداءً من 2015 تسمّي المصدر صراحة
+    الأجر الخام مع المساهمات. التحكيم: يعتمد أحدث إصدار لكل سنة، وتُحفظ القيم المستبعدة
+    في ملف salaire_brut_contributions_2010_2025_conflits.csv. مراجعات بارزة: 2013
+    (1287,3 ← 1299,4)، 2014 (1334,3 ← 1326,6)، 2015 (1388,9 ثم 1461,8)، 2016 (1580,7
+    ثم 1644,6)، 2017 (1653,5 ثم 1668,3)، وفروق بنحو دينار بين الجدول 18 وتقرير 2018-2025
+    على 2018-2020. المبالغ بالدينار الجاري دون تصحيح للأسعار.'
+  fiche: sources/ins-fonction-publique-2018-2025.md
+- id: cnss-retrospective-ressources-emplois
+  titre: 'CNSS : ressources, emplois et résultats de gestion par régime et par branche,
+    1990-2004 (Rétrospective financière)'
+  sources:
+  - cnss-retrospective-1990-2004
+  build: uv run python -m tunisia_data.scan_tables --config sources/scan/cnss-retrospective-1990-2004.yml
+  raw:
+  - data/raw/caisses/cnss/retrospective/cnss_retrospective_financiere_1990-2004.pdf
+  output: data/processed/caisses/cnss_retrospective_1990_2004.csv
+  unite: milliers de dinars courants (« mD »)
+  perimetre: 'CNSS, 55 tableaux « Bilans » : RSNA, RC, étudiants, RSA, RSAA, RTNS
+    (secteurs non agricole et agricole), RTTE, RTFR, artistes, AT-MP, PST, convention
+    tuniso-française, et ensemble des régimes en plusieurs variantes (avec/sans CTF,
+    avec/sans RC)'
+  caveats: 'SCAN SANS COUCHE TEXTE, valeurs océrisées et contrôlées par les IDENTITÉS
+    COMPTABLES (sous-totaux, totaux, résultat = ressources − emplois, ensemble = somme
+    des régimes) ; colonne `statut` sur chaque valeur (lu, lu_corrige, deduit_identite,
+    masque_reliure). LA RELIURE MASQUE une colonne d''années sur la plupart des tableaux
+    (1999 surtout, 2000 sur certains) : 430 cellules sont rétablies par une identité
+    à une seule inconnue et 68 par le solveur fragments + identités (chiffres visibles
+    lus case par case ; valeur unique compatible avec eux et avec toutes les identités
+    ; validé sans erreur sur 771 valeurs connues masquées à l''identique), jamais
+    devinées dans la colonne `valeur` ; 360 y restent vides, listées avec leur fragment
+    visible dans cnss_retrospective_valeurs_a_retrouver.csv (221 à lire sur l''original,
+    le reste s''en déduit). ESTIMATIONS PROVISOIRES : en attendant l''original, ces
+    360 cellules (1999 surtout, quelques-unes de 2000) reçoivent une estimation tracée
+    (colonnes `estimation`, `methode_estimation`, `incertitude` ; tendance de la ligne,
+    candidats compatibles avec les chiffres visibles, mise en cohérence avec les identités
+    comptables), et `valeur_ou_estimation` réunit valeurs et estimations pour l''exploitation
+    directe : les valeurs 1999 — et certaines de 2000 — de cette colonne sont donc
+    pour partie des ESTIMATIONS, à ne pas citer comme données publiées. Estimations
+    publiées et versionnées dans cnss_retrospective_estimations.csv, remplacées quand
+    l''original est relu. Quatorze identités s''écartent de 2 mD entre valeurs imprimées
+    vérifiées à l''image (totaux 2004 de tableaux jumeaux, emplois 1996) : écarts
+    de la source, laissés tels quels. Unité : milliers de dinars (les cotisations
+    2000-2004 recoupent la série cnss-cotisations, en millions, à 1 % près). Comptabilité
+    « Bilans » (droits constatés) : ne pas confondre avec les cotisations encaissées.
+    Montants courants, non déflatés.'
+  titre_ar: 'الصندوق الوطني للضمان الاجتماعي: الموارد والاستعمالات ونتائج التصرّف
+    حسب النظام والفرع، 1990-2004 (الحصيلة المالية الاسترجاعية)'
+  unite_ar: آلاف الدنانير الجارية
+  perimetre_ar: 'الصندوق الوطني للضمان الاجتماعي، 55 جدولاً «الموازنات»: نظام الأجراء
+    غير الفلاحيين، النظام التكميلي، الطلبة، الأجراء الفلاحيون، النظام الفلاحي المحسّن،
+    العملة غير الأجراء (القطاع غير الفلاحي والقطاع الفلاحي)، العملة التونسيون بالخارج،
+    ذوو الدخل الضعيف، الفنّانون، حوادث الشغل والأمراض المهنية، الحماية الاجتماعية
+    للعمّال، الاتفاقية التونسية الفرنسية، ومجموع الأنظمة في عدّة صيغ'
+  caveats_ar: 'وثيقة ممسوحة ضوئياً دون طبقة نصّية: قيم مقروءة آلياً ومضبوطة بالمتطابقات
+    المحاسبية (المجاميع الفرعية والمجاميع، النتيجة = الموارد − الاستعمالات، المجموع
+    = حاصل الأنظمة)، مع عمود «الحالة» لكلّ قيمة. يحجب التجليد عموداً من السنوات في
+    أغلب الجداول (1999 خاصّة): تُستعاد 430 خانة بمتطابقة ذات مجهول واحد و68 بالجمع
+    بين الأرقام الظاهرة والمتطابقات (قيمة وحيدة)، ولا تُخمَّن أبداً في عمود «القيمة»
+    (valeur)؛ وتبقى فيه 360 خانة فارغة مدرجة مع الأرقام الظاهرة منها في قائمة القيم
+    الواجب قراءتها في النسخة الورقية (221 منها، والباقي يُستنتج منها). تقديرات مؤقّتة:
+    في انتظار النسخة الورقية، تحمل هذه الخانات الـ360 (سنة 1999 خاصّة، وبعض خانات
+    سنة 2000) تقديراً موثّقاً (الأعمدة estimation وmethode_estimation وincertitude:
+    اتّجاه السطر، والقيم المرشّحة المتوافقة مع الأرقام الظاهرة، والملاءمة مع المتطابقات
+    المحاسبية)، ويجمع العمود valeur_ou_estimation القيم والتقديرات للاستعمال المباشر:
+    فقيم 1999 — وبعض قيم 2000 — في هذا العمود تقديرات في جزء منها، لا يُستشهد بها
+    كبيانات منشورة. التقديرات المنشورة محفوظة في الملف cnss_retrospective_estimations.csv،
+    وتُستبدل عند قراءة النسخة الأصلية. أربع عشرة متطابقة تختلف بألفي دينار بين قيم
+    مطبوعة تحقّقنا منها بالصورة: فروق في المصدر نفسه. الوحدة ألف دينار، والمحاسبة
+    على أساس «الموازنات» لا الاشتراكات المستخلصة. مبالغ جارية.'
+  fiche: sources/cnss-retrospective-financiere-1990-2004.md
+- id: ins-annuaire-ipc
+  titre: Indice général des prix à la consommation familiale, base 100 en 1970, lu
+    dans chaque annuaire statistique de l'INS, 1976-2023
+  sources:
+  - ins-annuaire
+  build: scripts/extract_ipc_longue.py:main
+  raw:
+  - data/raw/ins-publications/annuaire-statistique
+  output: data/processed/ins-publications/ipc_annuaires_base1970.csv
+  unite: indice, base 100 en 1970 (moyenne annuelle)
+  perimetre: colonne de base 1970 du tableau « Évolution de l'indice général des prix
+    à la consommation familiale selon les différentes bases » des annuaires 1995-2001,
+    1998-2002 et 1999-2003 (tableau 13.7) et 2019-2023 (tableau 13.6), une ligne par
+    annuaire et par année, telle qu'imprimée
+  caveats: 'SÉRIE HOMOGÈNE, SOURCE DE LA PARTIE 1976-2023 DE `ipc-longue-periode`,
+    AVEC TOUTES LES LECTURES, Y COMPRIS CELLES QUE LA SÉRIE RACCORDÉE ÉCARTE : la
+    colonne `retenu` dit laquelle celle-ci reprend (le plus récent annuaire fait foi).
+    Les coquilles et valeurs provisoires sont conservées telles qu''imprimées : l''annuaire
+    1995-2001 imprime 108,2 pour 1985 (288,0 dans les suivants) et 645,4, provisoire,
+    pour 2001 (640,5 ensuite). LU PAR LE PROGRAMME (pdftotext) ; le script contrôle
+    cinq valeurs attendues et le recollement de l''annuaire 2019-2023 aux précédents
+    en 1999, 2001 et 2003. Les lectures obtenues commencent en 1976 (annuaire 1995-2001),
+    1983 (1998-2002), 1984 (1999-2003) et 1999 (2019-2023) ; avant 1976, la série
+    raccordée prend les rapports de la BCT (`bct-cout-de-la-vie`). Les autres annuaires
+    présents dans data/raw/ins-publications/annuaire-statistique/ ne sont pas lus.'
+  titre_ar: الرقم القياسي العام لأسعار الاستهلاك العائلي، أساس 100 سنة 1970، كما ورد
+    في كلّ حوليّة إحصائية للمعهد الوطني للإحصاء، 1976-2023
+  unite_ar: رقم قياسي، أساس 100 سنة 1970 (معدّل سنوي)
+  perimetre_ar: عمود أساس 1970 من جدول تطوّر الرقم القياسي العام لأسعار الاستهلاك
+    العائلي حسب مختلف سنوات الأساس، في حوليّات 1995-2001 و1998-2002 و1999-2003 (الجدول
+    13.7) و2019-2023 (الجدول 13.6)، سطر لكلّ حوليّة ولكلّ سنة، كما طُبع
+  caveats_ar: 'سلسلة متجانسة هي مصدر الجزء 1976-2023 من السلسلة الطويلة، بكلّ القراءات
+    بما فيها المستبعدة: يبيّن العمود `retenu` القيمة المعتمدة (أحدث حوليّة هي المرجع).
+    الأخطاء المطبعية والقيم الوقتية محفوظة كما طُبعت: حوليّة 1995-2001 تطبع 108,2
+    لسنة 1985 (288,0 في الحوليّات اللاحقة) و645,4 الوقتية لسنة 2001 (ثمّ 640,5). قراءة
+    آلية مع مراقبة خمس قيم وتطابق حوليّة 2019-2023 مع سابقاتها.'
+  fiche: sources/ins-annuaires-statistiques.md
+- id: finances-locales-communes-agregats
+  titre: 'Finances des communes : exécution du budget, impôts locaux, FCCL et dotations,
+    2008-2023'
+  sources:
+  - dgct-donnees-ouvertes
+  build: uv run --with openpyxl --with xlrd python scripts/build_finances_locales_communes.py
+  raw:
+  - data/raw/finances_locales/dgct_portail/Données-Financières-Globales.xls
+  - data/raw/finances_locales/dgct_portail/fiscaliteslocale.xls
+  - data/raw/finances_locales/dgct_portail/fccl.xls
+  - data/raw/finances_locales/dgct_portail/Dotation.xls
+  - data/raw/finances_locales/dgct_portail/Les-dépenses-ordinaires.xls
+  - data/raw/finances_locales/dgct_portail/Ratios-financiers.xls
+  output: data/processed/finances_locales/communes_agregats_2008_2023.csv
+  unite: millions de dinars courants (MD) ; ratios en fraction
+  perimetre: 'communes (budgets, comptabilité publique, réalisations) ; quotes-parts
+    FCCL et dotation exceptionnelle aussi pour les conseils régionaux. 2008-2019 :
+    agrégats publiés par la DGCT (communes_dgct_agregats_2008_2019.csv) ; 2018-2023
+    : somme des 350 budgets par commune. Colonnes source, statut, retenu.'
+  caveats: 'DEUX SOURCES, GARDÉES TOUTES DEUX SUR 2018-2019 (colonne `retenu` : DGCT
+    jusqu''en 2019, somme des communes ensuite). Les recettes concordent à l''arrondi
+    près ; LES DÉPENSES NON (titre 1 : +1,7 MD en 2018, +7,2 MD en 2019 ; titre 2
+    : +0,6 et +5,9), écart non expliqué, figé dans les tests. 2021 = SITUATION AU
+    25/12/2021, non définitive (droits et redevances 54,8 MD contre 90-114 les autres
+    années). 2023 = PROVISOIRE (arrêté au 10/01/2024). IMPÔTS UN À UN (TIB, TNB, TCL,
+    taxe hôtelière, marchés) VIDES EN 2020-2021 : fichiers par commune sans détail
+    d''article ; rien n''est interpolé. Le FCCL est supprimé au 1er janvier 2018 mais
+    la DGCT garde l''intitulé « subventions annuelles » en 2018-2019 : rupture de
+    nature ; réserve à 18 % jusqu''en 2017, 15 % ensuite. Les recettes du titre 2
+    comprennent l''épargne et les excédents reportés du titre 1 : T1 + T2 n''est pas
+    un total consolidé. Recettes fiscales = catégories 1 et 2 (nomenclature 2018-2022),
+    qui exclut les catégories 3-4 rangées parmi les recettes fiscales en 2023. PÉRIMÈTRE
+    NON CONSTANT : 264 communes en 2012, 350 à partir de 2016-2017. Montants courants.'
+  titre_ar: 'مالية البلديات: تنفيذ الميزانية والجباية المحلية والمال المشترك للجماعات
+    المحلية والاعتمادات، 2008-2023'
+  unite_ar: بملايين الدنانير الجارية؛ النسب كسور
+  perimetre_ar: البلديات (ميزانيات، محاسبة عمومية، إنجازات)؛ 2008-2019 مجاميع منشورة
+    من الإدارة العامة للجماعات المحلية، و2018-2023 مجموع ميزانيات البلديات الـ350
+  caveats_ar: مصدران محفوظان معاً على 2018-2019 (عمود retenu). تتطابق الموارد بعد
+    التقريب ولا تتطابق النفقات (فارق غير مفسَّر). 2021 وضعية في 25/12/2021 غير نهائية،
+    و2023 وقتية (10/01/2024). الأداءات واحداً واحداً فارغة في 2020-2021 ولا يُستكمل
+    شيء. أُلغي المال المشترك في 1 جانفي 2018 مع بقاء التسمية في 2018-2019. موارد العنوان
+    الثاني تشمل الفوائض المنقولة من العنوان الأول. عدد البلديات غير ثابت (264 سنة
+    2012 ثمّ 350). مبالغ جارية.
+  fiche: sources/finances-locales-communes.md
+- id: finances-locales-cpscl
+  titre: 'CPSCL : dotations de l''État, subventions et prêts aux collectivités locales,
+    créances et impayés, 2005-2024'
+  sources:
+  - cpscl-etats-financiers
+  build: uv run python scripts/extract_cpscl_etats_financiers.py
+  raw:
+  - data/raw/finances_locales/cpscl/cpscl_etats_financiers_2006.pdf
+  - data/raw/finances_locales/cpscl/cpscl_etats_financiers_2024.pdf
+  output: data/processed/finances_locales/cpscl_2005_2024.csv
+  unite: millions de dinars courants (MD) ; dinars dans cpscl_etats_financiers_long.csv
+  perimetre: 'Caisse des prêts et de soutien des collectivités locales : flux de trésorerie
+    (dotations reçues de l''État, subventions et prêts accordés aux collectivités,
+    remboursements), créances de prêt et impayés à l''actif, résultat ; toutes les
+    lignes des trois états dans cpscl_etats_financiers_long.csv'
+  caveats: 'CHAQUE EXERCICE EST PUBLIÉ DEUX FOIS (colonne N, puis colonne N-1 de l''édition
+    suivante) : édition la plus récente RETENUE, l''autre gardée (`retenu`). 17 RETRAITEMENTS
+    entre éditions (reclassements vers les opérations pour compte en 2006, prêts nets/bruts
+    en 2007, opérations spéciales en 2009-2010), listés dans cpscl_doublons_ecarts.csv
+    et figés dans les tests ; la Banque mondiale (PforR 2014, tabl. 2.11) cite les
+    valeurs de l''édition de l''exercice, non les retraitées. TROIS COQUILLES CORRIGÉES
+    ET TRACÉES (`lecture = corrige`, valeur imprimée gardée) et deux incohérences
+    internes laissées telles quelles (édition 2010, flux de financement ; flux d''exploitation
+    2018, écart de 90 000 DT). Signes de la page : décaissements et provisions négatifs.
+    PAS DE LIGNE « ENCOURS » : créances = prêts en cours de remboursement et de réalisation
+    + bloc courant (annuités, impayés, provisions, intérêts courus) ; aucune somme
+    calculée. Changement de présentation du passif en 2012. Chute des impayés en 2007
+    (67,2 → 16,9 MD) avec apparition d''une provision sur créances rééchelonnées.
+    Flux de trésorerie de la caisse, non recoupés avec les budgets des communes.'
+  titre_ar: 'صندوق القروض ومساعدة الجماعات المحلية: اعتمادات الدولة والمنح والقروض
+    المسندة إلى الجماعات المحلية والديون والمتخلّدات، 2005-2024'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'صندوق القروض ومساعدة الجماعات المحلية: التدفّقات النقدية والقروض
+    والمتخلّدات والنتيجة'
+  caveats_ar: 'تُنشر كلّ سنة مرّتين (السنة N ثمّ عمود N-1 في القوائم الموالية): تُعتمد
+    النشرة الأحدث وتُحفظ الأخرى. سبع عشرة إعادة معالجة بين النشرتين مدرجة ومثبّتة
+    في الاختبارات. ثلاثة أخطاء مطبعية مصحّحة وموثّقة، وتناقضان داخليان متروكان على
+    حالهما. لا يوجد سطر «قائم القروض». تدفّقات خزينة الصندوق لا تُقارن مباشرة بميزانيات
+    البلديات.'
+  fiche: sources/finances-locales-cpscl.md
+- id: finances-locales-ins-comptes
+  titre: 'INS : compte des collectivités locales (emplois et ressources), 2001-2025,
+    bases 1983, 1997 et 2015'
+  sources:
+  - ins-cnat-2015
+  build: uv run python scripts/extract_ins_comptes_collectivites_locales.py
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation/2004-2008.pdf
+  - data/raw/ins-publications/comptes-de-la-nation/2013-2017.pdf
+  - data/raw/ins-publications/comptes-de-la-nation/2021-2025.pdf
+  output: data/processed/finances_locales/ins_cl_comptes_2001_2025.csv
+  unite: millions de dinars courants (MD)
+  perimetre: 'sous-secteur « collectivités locales » des administrations publiques
+    (comptabilité nationale) : production, valeur ajoutée, rémunérations, impôts reçus,
+    transferts, revenu disponible, épargne, FBCF, capacité de financement, compte
+    financier ; toutes éditions dans ins_cl_comptes_long.csv'
+  base_pib: 1983 / 1997 / 2015 (colonne base)
+  caveats: 'TROIS BASES, JAMAIS RACCORDÉES : colonne `base` ; une année publiée en
+    deux bases (2005-2008, 2015-2017) a deux lignes ; jonctions dans ins_cl_jonctions_bases.csv
+    (la valeur ajoutée 1983/1997 ne se raccorde pas : 180,2 contre 295,4 en 2005 ;
+    1997/2015 identiques en 2016-2017, différents en 2015 pour l''épargne et le revenu
+    disponible). Base lue dans le texte de chaque édition. Valeur retenue = édition
+    la plus récente de la même base ; colonne `statut` (définitif, semi-définitif,
+    provisoire). Huit milliers déplacés dans la couche texte remis en place et vérifiés
+    par les identités ; édition 2003-2007 à police mal encodée, libellés décodés.
+    FBCF 2013 (base 1997) = 276,8, égale aux salaires bruts, constante dans cinq éditions
+    et cohérente avec le compte : signalée, non corrigée. PAS DE DÉTAIL PAR IMPÔT
+    LOCAL ; le classement des produits des marchés (hors impôts ?) n''est pas documenté.'
+  titre_ar: 'المعهد الوطني للإحصاء: حساب الجماعات المحلية (الاستعمالات والموارد)،
+    2001-2025، أسس 1983 و1997 و2015'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: القطاع الفرعي «الجماعات المحلية» من الإدارات العمومية في المحاسبة
+    الوطنية
+  caveats_ar: 'ثلاث أسس لا تُربط ببعضها أبداً (عمود base)، وتبقى السنة المنشورة بأساسين
+    في سطرين. تُعتمد أحدث نشرة من الأساس نفسه. أُعيدت أرقام الآلاف المزاحة إلى مكانها
+    وتُحقِّق منها بالمتطابقات. تكوين رأس المال الثابت لسنة 2013 (أساس 1997) يساوي
+    الأجور الخام: مُشار إليه دون تصحيح. لا تفصيل حسب الأداء المحلي.'
+  fiche: sources/finances-locales-ins.md
+- id: finances-locales-bm-1985-2012
+  titre: 'Finances des communes avant 2008 selon la Banque mondiale : 1985-1991, 1990-1996,
+    2002-2012 (trois séries séparées)'
+  sources:
+  - wb-msip-1992
+  - wb-mdp2-1997
+  - wb-pforr-pad-2014
+  build: uv run python scripts/build_finances_locales_banque_mondiale.py
+  raw:
+  - data/raw/finances_locales/banque-mondiale/1992_municipal_sector_investment_sar.pdf
+  - data/raw/finances_locales/banque-mondiale/1997_municipal_development_2_pad.pdf
+  - data/raw/finances_locales/banque-mondiale/2014_pforr_pad_en_88598.pdf
+  - data/raw/finances_locales/banque-mondiale/2014_pforr_pad_fr_88598.pdf
+  output: data/processed/finances_locales/bm2014_communes_2002_2012.csv
+  unite: millions de dinars courants (MD) ; parts en %
+  perimetre: 'communes ; trois fichiers séparés (bm1992_communes_1985_1991.csv : recettes
+    courantes et FCCL ; bm1997_communes_1990_1996.csv : recettes courantes par source,
+    cinq années ; bm2014_communes_2002_2012.csv : agrégats T1/T2) et bm_recoupements.csv'
+  caveats: 'SÉRIES SÉPARÉES, JAMAIS FUSIONNÉES entre elles ni avec la série DGCT :
+    périmètres et nomenclatures différents, sources primaires tunisiennes non publiées.
+    Valeurs SAISIES depuis la page indiquée, lues à l''image pour 1992 (couche OCR
+    fautive : 2 561 et non 2 661) et 1997. LA LIGNE TL/TIB MANQUE AU TABLEAU IMPRIMÉ
+    DE 1997 : résidus des totaux publiés comme `residu_calcule`, jamais comme TL.
+    FCCL 1990 : 82 (1992) contre 50,8 (1997), vraisemblablement fonds total contre
+    quote-part des communes (indices : 63 % des transferts aux communes, 47 % des
+    budgets de fonctionnement en 1988) — NON TRANCHÉ. 1990-1991 de 1992 probablement
+    estimations de mission. PAD 2014 contre DGCT 2008-2012 : recettes T1 concordantes,
+    écarts de 10-14 MD sur dépenses T1 et ressources T2 ; dépenses T2 2012 dépassent
+    de 10 MD investissements + remboursement.'
+  titre_ar: 'مالية البلديات قبل 2008 حسب البنك الدولي: 1985-1991 و1990-1996 و2002-2012
+    (ثلاث سلاسل منفصلة)'
+  unite_ar: بملايين الدنانير الجارية؛ النسب %
+  perimetre_ar: البلديات؛ ثلاثة ملفات منفصلة وملفّ للمقارنات
+  caveats_ar: 'سلاسل منفصلة لا تُدمج فيما بينها ولا مع سلسلة الإدارة العامة للجماعات
+    المحلية. القيم منقولة من الصفحة المذكورة ومقروءة من الصورة. سطر المعلوم على العقارات
+    المبنية غائب عن الجدول المطبوع لسنة 1997: البواقي محسوبة لا مقروءة. المال المشترك
+    لسنة 1990: 82 مقابل 50,8، غير محسوم.'
+  fiche: sources/finances-locales-banque-mondiale.md
+- id: cnat-pib-nominal
+  titre: PIB aux prix courants du marché, édition par édition des Comptes de la nation,
+    2001-2025
+  sources:
+  - ins-cnat-2015
+  build: scripts/extract_cnat_pib_nominal.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/pib_nominal_editions.csv
+  unite: millions de dinars courants
+  perimetre: 'ligne « Produit Intérieur Brut (p.m) » de l''équilibre ressources-emplois
+    aux prix courants (tableau I.1 « Les emplois du PIB nominal (aux prix courants)
+    » dans les éditions récentes) ; dix-neuf éditions, trois bases (1983 : 2001-2005
+    à 2004-2008 ; 1997 : 2005-2009 à 2013-2017 ; 2015 : 2015-2020 et suivantes), avec
+    le taux de variation imprimé sous le tableau'
+  caveats: 'LES NIVEAUX NE SE COMPARENT PAS D''UNE ÉDITION À L''AUTRE : ils changent
+    de base (la base 1997 est d''environ 10 % au-dessus de la base 1983, la base 2015
+    d''environ 6 % au-dessus de la base 1997). Contrôles : huit valeurs lues à la
+    main ; dans chaque édition, le taux calculé sur les niveaux lus redonne le taux
+    imprimé à 0,1 point près ; chaque valeur d''UNdata de même base se retrouve dans
+    l''une des éditions à 0,1 % près. L''édition 2015-2020 porte six colonnes. Voir
+    `pib_nominal_croissance.csv` pour une série de taux.'
+  titre_ar: الناتج المحلي الإجمالي بالأسعار الجارية للسوق، حسب كلّ إصدار من الحسابات
+    القومية، 2001-2025
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: سطر الناتج المحلي الإجمالي بأسعار السوق من جدول الموارد والاستخدامات
+    بالأسعار الجارية؛ تسعة عشر إصداراً وثلاث سنوات أساس (1983 و1997 و2015)
+  caveats_ar: لا تُقارن المستويات من إصدار إلى آخر لتغيّر سنة الأساس. في كلّ إصدار،
+    تطابق النسبة المحسوبة من المستويات النسبة المطبوعة بفارق لا يتجاوز 0,1 نقطة، وتطابق
+    قيم الأمم المتحدة ذات الأساس نفسه أحد الإصدارات بفارق لا يتجاوز 0,1 %.
+  fiche: docs/croissances-revenus-prix.md
+- id: ipc-longue-periode
+  titre: Indice des prix à la consommation, 1962-2003, base 100 en 1970
+  sources:
+  - bct-ra
+  - ins-annuaire
+  build: scripts/extract_ipc_longue.py:main
+  raw:
+  - data/raw/bct-archives/109
+  - data/raw/ins-publications/annuaire-statistique
+  output: data/processed/ins-publications/ipc_longue_periode.csv
+  unite: indice, base 100 en 1970 (moyenne annuelle)
+  perimetre: coût de la vie (BCT, 1962-1975) puis prix à la consommation familiale
+    (INS, 1976-2003)
+  caveats: 'DEUX INDICES RACCORDÉS EN 1970 : l''indice du coût de la vie en base 100
+    en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont
+    RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation
+    abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée
+    en prose, et la source de chaque valeur est dans la colonne `source`. L''annuaire
+    1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise
+    dans l''annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au
+    lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`.'
+  titre_ar: الرقم القياسي لأسعار الاستهلاك، 1962-2003، أساس 100 سنة 1970
+  unite_ar: رقم قياسي، أساس 100 سنة 1970 (معدّل سنوي)
+  perimetre_ar: كلفة المعيشة (البنك المركزي، 1962-1975) ثمّ أسعار الاستهلاك العائلي
+    (المعهد الوطني للإحصاء، 1976-2003)
+  caveats_ar: رقمان قياسيان مربوطان سنة 1970. قيم 1962-1975 منقولة يدوياً من تقارير
+    البنك المركزي لرداءة طبقتها النصّية، مع التحقّق من كلّ قيمة بالتغيّر المذكور في
+    النصّ. يطبع حوليّة 1995-2001 القيمة 108.2 لسنة 1985 عوض 288.0، فاعتُمدت حوليّة
+    1998-2002.
+  fiche: sources/bct-archives.md

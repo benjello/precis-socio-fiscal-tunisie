@@ -458,6 +458,107 @@ def base_legislative(*series_ids: str) -> str:
     return f"{t('base_intro')}\n\n" + "\n".join(items)
 
 
+def infobulle(artiste, texte: str) -> None:
+    """Attache une infobulle à un élément tracé (point, trait, barre) d'une figure matplotlib.
+
+    Le texte s'affiche au survol dans la page HTML : `figure_tabs` émet alors la figure en SVG
+    en ligne, où l'élément porte un `<title>` — l'infobulle native du navigateur, lue aussi
+    par les lecteurs d'écran. Le PDF garde l'image fixe. Pour un texte par point, tracer
+    chaque point par son propre appel : un `plot` à plusieurs marqueurs n'a qu'un élément.
+    """
+    registre = artiste.figure.__dict__.setdefault("_infobulles", {})
+    gid = f"ib-{len(registre)}"
+    artiste.set_gid(gid)
+    registre[gid] = texte
+
+
+def marque_rupture(ax, annee: int, texte: str | None = None) -> None:
+    """Marque une rupture de série entre `annee - 1` et `annee` (axe des abscisses en années).
+
+    Ligne verticale pointillée à mi-chemin des deux années ; `texte`, s'il est donné, est
+    posé en haut du cadre, à droite de la ligne. Sert notamment aux changements de base
+    des comptes nationaux sous un ratio au PIB : la rupture se montre, elle ne se corrige
+    pas — aucune conversion d'une base à l'autre.
+    """
+    x = annee - 0.5
+    ax.axvline(x, color="#57606a", ls=(0, (2, 2)), lw=1, zorder=1)
+    if texte:
+        ax.annotate(texte, xy=(x, 1), xycoords=("data", "axes fraction"),
+                    xytext=(4, -4), textcoords="offset points", ha="left", va="top",
+                    fontsize=7, color="#57606a")
+
+
+def _svg_avec_infobulles(fig, chemin: Path) -> str:
+    """La figure en SVG, chaque élément marqué par `infobulle` muni de son `<title>`."""
+    import html
+    import re
+
+    fig.savefig(chemin, format="svg", bbox_inches="tight")
+    svg = chemin.read_text(encoding="utf-8")
+    svg = svg[svg.index("<svg"):]  # ni prologue XML ni DOCTYPE dans une page HTML
+    for gid, texte in fig._infobulles.items():
+        svg = svg.replace(f'<g id="{gid}">',
+                          f'<g id="{gid}" class="infobulle"><title>{html.escape(texte)}</title>', 1)
+    # Largeur fluide : la hauteur suit le viewBox.
+    svg = re.sub(r'<svg([^>]*?) width="[^"]*" height="[^"]*"',
+                 r'<svg\1 style="width:100%;height:auto"', svg, count=1)
+    return svg
+
+
+_STYLE_INFOBULLES = """<style>
+.figure-svg g.infobulle { cursor: help; }
+.figure-svg g.infobulle:hover path, .figure-svg g.infobulle:hover use { fill-opacity: .12 !important; }
+</style>
+"""
+
+
+def noms_des_vues(slug: str, n: int) -> list[str]:
+    """Noms de fichier (sans extension) des `n` vues d'une figure.
+
+    La première garde le nom de la figure — `<slug>.png`, celui d'une figure à vue unique —,
+    les suivantes prennent un numéro : `<slug>-2.png`, `<slug>-3.png`…
+    """
+    return [slug] + [f"{slug}-{i}" for i in range(2, n + 1)]
+
+
+def _image_vue(fig, png: Path, nom: str, alt: str) -> str:
+    """Enregistre une vue (PNG, et SVG si elle porte des infobulles) ; rend son Markdown.
+
+    Les infobulles sont lues sur la figure de LA vue (`fig._infobulles`) : chaque SVG ne
+    reçoit que les siennes.
+    """
+    png_path = png / f"{nom}.png"
+    fig.savefig(png_path, dpi=150, bbox_inches="tight")
+    image = f'![]({png_path}){{fig-alt="{alt}"}}'
+    if getattr(fig, "_infobulles", None):
+        # HTML : SVG en ligne, survolable ; ailleurs (PDF) : l'image fixe.
+        svg = _svg_avec_infobulles(fig, png / f"{nom}.svg")
+        image = (f'::: {{.content-visible when-format="html"}}\n\n```{{=html}}\n'
+                 f'{_STYLE_INFOBULLES}<div class="figure-svg" role="img" aria-label="{alt}">\n'
+                 f'{svg}\n</div>\n```\n\n:::\n\n'
+                 f'::: {{.content-hidden when-format="html"}}\n\n{image}\n\n:::')
+    return image
+
+
+def onglet_graphique(images: list[tuple[str | None, str]]) -> str:
+    """Contenu de l'image dans l'onglet « Graphique », à partir de `[(titre_vue, markdown)]`.
+
+    Une seule vue : son Markdown tel quel — la sortie d'une figure à vue unique ne change
+    pas d'un octet. Plusieurs vues : des sous-onglets (`panel-tabset` imbriqué, titres de
+    niveau 3 sous les onglets de niveau 2) en HTML ; hors HTML (PDF), où un onglet ne se
+    clique pas, la PREMIÈRE vue seule, sans titre de vue. La légende, la ligne « Source »
+    et la note de lecture restent communes, hors des sous-onglets.
+
+    Pure : ni matplotlib ni pandas, pour se tester sans dépendance.
+    """
+    if len(images) == 1:
+        return images[0][1]
+    onglets = "\n\n".join(f"### {titre}\n\n{image}" for titre, image in images)
+    return (f'::: {{.content-visible when-format="html"}}\n\n'
+            f'::: {{.panel-tabset}}\n\n{onglets}\n\n:::\n\n:::\n\n'
+            f'::: {{.content-hidden when-format="html"}}\n\n{images[0][1]}\n\n:::')
+
+
 def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
                 caption: str = "", note_lecture: str | None = None,
                 fig_id: str | None = None, figdata_dir: str = "figdata",
@@ -484,7 +585,14 @@ def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
     est `caption`. L'image ne porte donc ni identifiant ni légende — elle en portait,
     et Quarto en faisait une sous-figure « (a) … » dans une figure à la légende vide.
 
-    `fig`          : figure matplotlib (déjà rendue).
+    `fig`          : figure matplotlib (déjà rendue) — ou une liste de VUES
+                     `[(titre_vue, fig), …]`, montrées en sous-onglets de l'onglet
+                     « Graphique » (même grandeur en millions de dinars, en % du PIB…).
+                     Le titre de vue est fourni par le module, dans la langue du livre.
+                     Toujours une seule figure numérotée et une seule légende ; chaque vue
+                     a son image (`<slug>.png`, `<slug>-2.png`… — `noms_des_vues`) et ses
+                     propres infobulles. Le PDF ne montre que la première vue
+                     (`onglet_graphique`).
     `df`           : données de la figure (deviennent le figdata téléchargeable).
     `series_ids`   : id(s) de série `tunisia_data` (provenance/citation).
     `slug`         : identifiant de fichier (png + csv).
@@ -498,8 +606,7 @@ def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
 
     png = Path(png_dir)
     png.mkdir(parents=True, exist_ok=True)
-    png_path = png / f"{slug}.png"
-    fig.savefig(png_path, dpi=150, bbox_inches="tight")
+    vues = list(fig) if isinstance(fig, (list, tuple)) else [(None, fig)]
 
     csv_path = Path(figdata_dir) / f"{slug}.csv"
     write_figdata(df, csv_path, *series_ids, note=caption, generated=generated)
@@ -520,11 +627,15 @@ def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
     base = base_legislative(*series_ids)
     onglet_base = f"## {t('tab_base')}\n\n{base}\n\n" if base else ""
     alt = caption.replace('"', "&quot;")
+    image = onglet_graphique([
+        (titre, _image_vue(f, png, nom,
+                           alt if titre is None else f"{alt} — {titre}".replace('"', "&quot;")))
+        for (titre, f), nom in zip(vues, noms_des_vues(slug, len(vues)))])
     sortie = f"""::: {{.panel-tabset}}
 
 ## {t('tab_graph')}
 
-![]({png_path}){{fig-alt="{alt}"}}
+{image}
 
 ::: {{.figure-source}}
 {src}

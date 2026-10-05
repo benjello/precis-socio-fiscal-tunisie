@@ -1888,6 +1888,15 @@ JORT **n° 41 du 7 juin 2011, p. 844**, `/2011/2011F/Jo0412011.pdf` **[T]** (cou
   l'art. 32** ; art. 3, ajoute l'art. 1er c), l'art. 9 bis et les art. 71 bis à 71 septies ; art. 4,
   taux + 3 %.
 
+**Date du repère de l'article 32, lue le 30 septembre 2026.** L'article 2 (JORT n° 35
+du 30 avril 2019, p. 1313) ne porte aucune clause d'effet propre ; l'article 5
+(p. 1314) énumère les seuls articles dont il décale transitoirement l'âge de départ
+(24, 27, 28, 29 et 61), **sans viser l'article 32**. La dernière page du fascicule,
+dans ses éditions française et arabe, donne le dépôt au siège du gouvernorat de Tunis
+le **30 avril 2019**. La loi n° 93-64, art. 2, rend la loi exécutoire cinq jours après
+ce dépôt, jour du dépôt non compté : **5 mai 2019** pour le repère de 62 ans de
+l'article 32 (§ 2 et 3), distinct du calendrier des âges de mise à la retraite.
+
 ## 11.2 Après la loi n° 2019-37
 
 ### Décret-loi n° 2022-79 du 22 décembre 2022, loi de finances pour 2023 — art. 12

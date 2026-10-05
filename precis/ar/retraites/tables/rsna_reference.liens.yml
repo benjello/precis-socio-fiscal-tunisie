@@ -1,0 +1,24 @@
+- libelle: الأجر المرجعي — الفترة القصيرة، بالسنوات
+  parametre: parameters/retraite/rsna/salaire_reference/periode_courte_annees.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.salaire_reference.periode_courte_annees/table/
+- libelle: الأجر المرجعي — الفترة الطويلة، بالسنوات
+  parametre: parameters/retraite/rsna/salaire_reference/periode_longue_annees.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.salaire_reference.periode_longue_annees/table/
+- libelle: الأجر المرجعي — قاسم الفترة القصيرة، بالأشهر
+  parametre: parameters/retraite/rsna/salaire_reference/diviseur_court_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.salaire_reference.diviseur_court_mois/table/
+- libelle: الأجر المرجعي — قاسم الفترة الطويلة، بالأشهر
+  parametre: parameters/retraite/rsna/salaire_reference/diviseur_long_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.salaire_reference.diviseur_long_mois/table/
+- libelle: الحدّ الأقصى لاحتساب المنافع، مضاعفًا للأجر الأدنى المضمون
+  parametre: parameters/retraite/rsna/salaire_reference/limite_multiple_smig.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.salaire_reference.limite_multiple_smig/table/
+- libelle: حدّ الاحتساب — المدة السنوية التي يُحتسب على أساسها الأجر الأدنى المضمون
+  parametre: parameters/retraite/rsna/salaire_reference/limite_heures_annuelles.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.salaire_reference.limite_heures_annuelles/table/
+- libelle: الأجر المرجعي — الفترة المرجعية لسنة 1990، بالسنوات
+  parametre: parameters/retraite/rsna/salaire_reference/periode_annees.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.salaire_reference.periode_annees/table/
+- libelle: الأجر المرجعي — الفترة المرجعية، بالأشهر
+  parametre: parameters/retraite/rsna/salaire_reference/duree_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.salaire_reference.duree_mois/table/

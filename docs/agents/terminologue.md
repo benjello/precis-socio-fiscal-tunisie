@@ -17,7 +17,7 @@ Le 15/09/2026, vingt notions de la TVA ont été versées avant toute prose : el
 - Exécute TOUJOURS les commandes Python via `uv run`.
 - La **source unique** est `precis/glossaire.yml`. N'édite JAMAIS à la main les fichiers générés `precis/{fr,ar}/<book>/_glossaire.qmd` ni `translation_glossary.generated.md` : ils sont produits par le script.
 - Chaque entrée doit avoir un `terme` FR **et** AR ; une entrée `statut: valide` doit avoir une `definition` FR **et** AR (sinon la génération échoue : c'est le verrou de synchro).
-- **N'invente pas un terme arabe.** Une traduction non attestée se marque `provisoire` et se signale. Le 15/09/2026, le portail du ministère des Finances a tranché que « impôts » se dit **ضرائب** et non **أداءات**, qui rend « taxes, redevances » — une étiquette de figure publiée disait le contraire depuis des mois.
+- **N'invente pas un terme arabe.** Une traduction non attestée se marque `provisoire` et se signale. Le 4/10/2026, l'humain a tranché : suivre les termes du *Journal officiel* arabe, relevés en regard des deux éditions des lois de finances pour 2014 et 2019. « Impôts », au pluriel générique, se dit **الأداءات** : الأداءات المباشرة (impôts directs), الأداءات والمعاليم غير المباشرة (impôts et taxes indirects), مصالح الأداءات (services des impôts), مراقبة الأداءات (contrôle des impôts). Dans l'énumération « impôts, taxes, droits », le JORT écrit الأداءات والضرائب والمعاليم : **ضرائب** y rend « taxes », **معاليم** « droits ». Les impôts et taxes nommés gardent le nom que leur donne le texte : الضريبة على الدخل, الضريبة على الشركات, الأداء على القيمة المضافة. Cette règle remplace celle du 15/09/2026, qui suivait le portail du ministère des Finances (ضرائب pour « impôts »).
 
 ## `source_definition` : la clé doit EXISTER
 

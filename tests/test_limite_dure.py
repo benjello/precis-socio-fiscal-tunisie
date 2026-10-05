@@ -38,7 +38,8 @@ def _faux_genai(racine_faux: Path, premier_reussit: bool) -> None:
     (racine_faux / "google" / "genai").mkdir(parents=True, exist_ok=True)
     (racine_faux / "google" / "__init__.py").write_text("", encoding="utf-8")
     (racine_faux / "google" / "genai" / "types.py").write_text(
-        "class GenerateContentConfig:\n    def __init__(self, **kw): pass\n",
+        "class GenerateContentConfig:\n    def __init__(self, **kw): pass\n"
+        "class ThinkingConfig:\n    def __init__(self, **kw): pass\n",
         encoding="utf-8")
     (racine_faux / "google" / "genai" / "__init__.py").write_text(
         textwrap.dedent(f'''

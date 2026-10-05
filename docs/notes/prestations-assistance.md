@@ -83,8 +83,8 @@ gestion et non d'un article de texte.
 > (JORT n° 86 du 10 juillet 2024, p. 1844)
 
 Deux conséquences documentaires :
-1. le palier `2018-04-01: 180` d'openfisca est **exact et a duré jusqu'en juillet 2024** — la
-   série ne s'arrête pas prématurément, elle est simplement à prolonger ;
+1. le montant de **180 D est attesté en juillet 2024**, mais l'arrêté ne permet de vérifier
+   **ni sa date de départ encodée au 1er avril 2018, ni les paliers précédents** ;
 2. l'arrêté **ne fixe pas un nouveau montant** : il autorise un relèvement **plafonné** au niveau
    du transfert AMEN. Encoder « 240 D au 10 juillet 2024 » serait une sur-interprétation ; la
    formulation correcte est « allocation alignée par le haut sur le transfert AMEN, dans la limite
@@ -720,7 +720,7 @@ l'article 12 de la loi organique.
 | rentrée universitaire | **120 D** | par enfant dans le supérieur | début de l'année universitaire |
 
 **Arrêté conjoint du 8 décembre 2022 — *attesté*.** JORT n° 136 du 9 décembre 2022,
-**p. 3446-3447**. URL vérifiée (759 285 o) : `https://www.pist.tn/jort/2022/2022F/Jo1362022.pdf`
+**p. 3447-3448**. URL vérifiée (759 285 o) : `https://www.pist.tn/jort/2022/2022F/Jo1362022.pdf`
 (**fascicule absent du corpus local**, téléchargé pour cette note.)
 Son **article 5 abroge expressément l'arrêté du 19 mai 2020**. Les cinq montants ci-dessus sont
 **repris à l'identique**, mais le champ s'élargit :
@@ -738,10 +738,18 @@ Son **article 5 abroge expressément l'arrêté du 19 mai 2020**. Les cinq monta
   dépassées « dans des cas exceptionnels » sur autorisation du **comité général de la promotion
   sociale**.
 
-**Arrêté conjoint du 10 juillet 2025** modifiant l'arrêté du 8 décembre 2022 — *dérivé*.
-JORT n° 88 de 2025, **p. 2058**. **Le contenu n'a pas pu être établi** : l'URL
-`https://www.pist.tn/jort/2025/2025F/Jo0882025.pdf` répond HTTP 200 (3 191 536 o) mais **sert le
-fascicule arabe**, et le fascicule français n'est pas dans le corpus local. **TODO** (§7).
+**Arrêté conjoint du 10 juillet 2025** modifiant l'arrêté du 8 décembre 2022 — *texte lu
+en arabe* (JORT n° 88 du 11 juillet 2025, **pp. 2058-2059**,
+`https://www.pist.tn/jort/2025/2025A/Ja0882025.pdf`). L'URL en « F » sert le même fascicule
+arabe : l'édition française reste à vérifier. L'article premier remplace les deux premiers
+tirets de l'article 3 (champ de l'aide de rentrée et des abonnements de transport) et le
+quatrième tiret de l'article 4 (aide de rentrée scolaire **50 → 100 D** par enfant). Les
+classes préparatoires publiques, les kouttab et les centres d'éducation spécialisée, de
+réadaptation ou de formation professionnelle des personnes handicapées sont désormais
+explicitement compris dans ce champ. L'article 2 ajoute à l'article 4 une interdiction
+de cumul avec d'autres aides publiques au même titre. L'article 3 donne effet à l'arrêté
+**au 1er septembre 2024**. Les montants des fêtes et de la rentrée universitaire ne sont
+pas modifiés par ce texte. Clé CSL du précis : `arrete-2025-07-10-appui-occasionnel`.
 
 **Corrections à porter à openfisca** : les cinq paramètres
 `amen_social/aides_ponctuelles/**` sont datés du **2019-01-01**. Les valeurs sont exactes mais la
@@ -982,11 +990,10 @@ Chacune est un **TODO** et ne doit pas être comblée par déduction.
 6. **Décret n° 88-917 du 6 mai 1988** (modification du décret 88-175) : objet non établi.
 7. **Décret gouvernemental n° 2018-626** : intitulé arabe seul, page non renseignée, année 2018 mal
    couverte côté français.
-8. **Arrêté conjoint du 10 juillet 2025** modifiant l'arrêté du 8 décembre 2022 sur l'appui
-    financier occasionnel (JORT n° 88 de 2025, p. 2058) : **contenu inconnu**. L'URL en « F » sert
-    le fascicule arabe et le corpus local n'a pas ce numéro. C'est probablement la dernière
-    revalorisation des aides ponctuelles ; **le précis ne doit pas affirmer que les montants sont
-    inchangés depuis 2022.**
+8. **Arrêté conjoint du 10 juillet 2025** : lu dans l'édition arabe du JORT n° 88 de 2025,
+   pp. 2058-2059 (§ 3.5). La hausse de l'aide de rentrée scolaire, l'élargissement du champ
+   et le non-cumul sont exposés dans le précis ; reste à lire l'édition française si elle
+   devient disponible.
 9. **Lois de finances 2025 et 2026** : `jort_cache` n'en donne que le résumé arabe.
     `2024F/Jo1492024.pdf` répond **289 octets (404)** — la version française du fascicule de la
     LF 2025 n'est pas en ligne ; `2025F/Jo1482025.pdf` répond 200 mais **sert l'arabe**. Les cinq

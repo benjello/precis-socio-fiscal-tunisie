@@ -1,0 +1,12 @@
+- libelle: Âge avant lequel le remariage suspend la réversion
+  parametre: parameters/retraite/rsa/survivants/age_remariage_suspensif.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsa.survivants.age_remariage_suspensif/table/
+- libelle: Âge limite de l'orphelin
+  parametre: parameters/retraite/rsa/survivants/age_limite_orphelin.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsa.survivants.age_limite_orphelin/table/
+- libelle: Âge limite de l'orphelin en études
+  parametre: parameters/retraite/rsa/survivants/age_limite_orphelin_etudes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsa.survivants.age_limite_orphelin_etudes/table/
+- libelle: Âge limite de l'orphelin en études supérieures
+  parametre: parameters/retraite/rsa/survivants/age_limite_orphelin_etudes_superieures.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsa.survivants.age_limite_orphelin_etudes_superieures/table/

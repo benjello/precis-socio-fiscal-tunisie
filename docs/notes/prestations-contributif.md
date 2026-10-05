@@ -138,7 +138,7 @@ Toutes les URL ci-dessous ont été vérifiées (HTTP 200, `application/pdf`).
 | Loi n° 2002-104, artistes, créateurs et intellectuels | 2002-12-30 | n° 106, 31 déc. 2002 | 3187-3190 | non établi | [T] miroir |
 | Loi n° 2004-71, institution d'un régime d'assurance maladie | 2004-08-02 | n° 63, 6 août 2004 | 2228-2230 | **aucune date propre** : art. 3 renvoie à un décret | [T] miroir |
 | Décret n° 2007-1366, étapes d'application de la loi n° 2004-71 | 2007-06-11 | n° 47, 2007 | 1982-1983 | **1er juillet 2007** (art. 1er) | [T] miroir |
-| Loi n° 2017-47, modifiant la loi n° 2004-71 (art. 16 et 16 bis) | **conflit, voir §11** | n° 50 de 2017 | 2244 | non établi | [T] miroir |
+| Loi n° 2017-47, modifiant la loi n° 2004-71 (art. 16 et 16 bis) | **15 juin 2017, confirmé au fascicule** | n° 50, 23 juin 2017 | 2244 (FR), 2068 (AR) | aucune clause spéciale d'effet | JORT FR et AR |
 | Loi n° 2024-44, congés de maternité et de paternité | 2024-08-12 | n° 99, 12 août 2024 | 2215 | **aucun article d'entrée en vigueur** ; art. 11 abroge les dispositions contraires | [T] miroir |
 | Décret-loi n° 2024-4, protection sociale des travailleuses agricoles | 2024-10-22 | n° 129, 23 oct. 2024 | voir §11 | non établi | [T] miroir |
 | Loi n° 2024-48, loi de finances 2025, **art. 17** | 2024-12-09 | n° 149, 10 déc. 2024 | 6420-6421 (**éd. arabe**) | non établi ; gestion renvoyée à un décret | [T] éd. arabe |
@@ -1130,14 +1130,12 @@ laissée vide. Les prestations familiales sont prises au sens de l'article 51 de
 
 ---
 
-## 11. Deux conflits de source, à porter tels quels
+## 11. Date tranchée et pagination à préciser
 
-**C1 — Loi n° 2017-47, date de signature.** Le miroir iort.tn (`loi_2017_47_2017.md`) porte
-**deux fois** « **15 juin 2017** » : dans l'intitulé et dans la formule finale « Tunis, le 15 juin
-2017 ». `jort_cache.db` donne `date_signature = 2017-05-15` avec un titre « du 15 Mai 2017 », et
-un `date_publication` **égal** à la date de signature — signature d'un enregistrement dégradé. Le
-JORT n° 50 de 2017 est cohérent avec une publication de juin. **Retenir la date du texte
-(15 juin 2017) et signaler la métadonnée** ; à confirmer sur le fascicule.
+**C1 — Loi n° 2017-47, date de signature : tranché au fascicule.** Le JORT n° 50 du
+23 juin 2017 porte **15 juin 2017** dans l'intitulé et dans la formule finale du texte,
+p. 2244 de l'édition française et p. 2068 de l'édition arabe. La date du 15 mai dans
+`jort_cache.db` est une erreur de métadonnées. Le précis cite désormais `loi2017-47`.
 
 **C2 — Pagination des textes de 2024 et postérieurs.** Comme le documente déjà la note de
 `lf-2025` dans `precis/fr/fiscalite/references.json`, **deux paginations coexistent** et les deux

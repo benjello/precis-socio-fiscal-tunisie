@@ -1,0 +1,72 @@
+- libelle: سنّ استحقاق جراية الشيخوخة
+  parametre: parameters/retraite/raci/age_legal.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.age_legal/table/
+- libelle: مدة الانخراط الدنيا
+  parametre: parameters/retraite/raci/stage_trimestres.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.stage_trimestres/table/
+- libelle: نسبة الجراية عند استيفاء مدة الانخراط الدنيا
+  parametre: parameters/retraite/raci/taux_base.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.taux_base/table/
+- libelle: الجراية الدنيا، شهريًا
+  parametre: parameters/retraite/raci/plancher_mensuel.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.plancher_mensuel/table/
+- libelle: 'العجز: مدة الانخراط الدنيا'
+  parametre: parameters/retraite/raci/invalidite/stage_trimestres.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.invalidite.stage_trimestres/table/
+- libelle: 'العجز: مدة الاشتراك التي تُرفَّع الجراية بعدها'
+  parametre: parameters/retraite/raci/invalidite/seuil_majoration_trimestres.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.invalidite.seuil_majoration_trimestres/table/
+- libelle: الزيادة بعنوان المساعدة من الغير
+  parametre: parameters/retraite/raci/invalidite/majoration_tierce_personne.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.invalidite.majoration_tierce_personne/table/
+- libelle: شرائح الدخل، بمضاعفات الأجر الأدنى المضمون (1)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_1.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.revenu_reference.classes.classe_1/table/
+- libelle: شرائح الدخل، بمضاعفات الأجر الأدنى المضمون (2)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_2.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.revenu_reference.classes.classe_2/table/
+- libelle: شرائح الدخل، بمضاعفات الأجر الأدنى المضمون (3)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_3.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.revenu_reference.classes.classe_3/table/
+- libelle: شرائح الدخل، بمضاعفات الأجر الأدنى المضمون (4)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_4.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.revenu_reference.classes.classe_4/table/
+- libelle: شرائح الدخل، بمضاعفات الأجر الأدنى المضمون (5)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_5.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.revenu_reference.classes.classe_5/table/
+- libelle: شرائح الدخل، بمضاعفات الأجر الأدنى المضمون (6)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_6.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.revenu_reference.classes.classe_6/table/
+- libelle: شرائح الدخل، بمضاعفات الأجر الأدنى المضمون (7)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_7.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.revenu_reference.classes.classe_7/table/
+- libelle: شرائح الدخل، بمضاعفات الأجر الأدنى المضمون (8)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_8.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.revenu_reference.classes.classe_8/table/
+- libelle: شرائح الدخل، بمضاعفات الأجر الأدنى المضمون (9)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_9.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.revenu_reference.classes.classe_9/table/
+- libelle: شرائح الدخل، بمضاعفات الأجر الأدنى المضمون (10)
+  parametre: parameters/retraite/raci/revenu_reference/classes/classe_10.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.revenu_reference.classes.classe_10/table/
+- libelle: جراية القرين الباقي على قيد الحياة
+  parametre: parameters/retraite/raci/survivants/taux_conjoint.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.survivants.taux_conjoint/table/
+- libelle: جرايات الأيتام، مجتمعة
+  parametre: parameters/retraite/raci/survivants/taux_orphelins.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.survivants.taux_orphelins/table/
+- libelle: 'السنّ القصوى لليتيم: القاعدة العامة؛ الدراسات الثانوية أو المهنية؛ الدراسات
+    العليا (1)'
+  parametre: parameters/retraite/raci/survivants/age_limite_orphelin.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.survivants.age_limite_orphelin/table/
+- libelle: 'السنّ القصوى لليتيم: القاعدة العامة؛ الدراسات الثانوية أو المهنية؛ الدراسات
+    العليا (2)'
+  parametre: parameters/retraite/raci/survivants/age_limite_orphelin_etudes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.survivants.age_limite_orphelin_etudes/table/
+- libelle: 'السنّ القصوى لليتيم: القاعدة العامة؛ الدراسات الثانوية أو المهنية؛ الدراسات
+    العليا (3)'
+  parametre: parameters/retraite/raci/survivants/age_limite_orphelin_etudes_superieures.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.survivants.age_limite_orphelin_etudes_superieures/table/
+- libelle: السنّ التي يوقف قبلها الزواج من جديد جراية القرين
+  parametre: parameters/retraite/raci/survivants/age_remariage_suspensif.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.raci.survivants.age_remariage_suspensif/table/

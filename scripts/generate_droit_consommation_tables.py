@@ -12,12 +12,12 @@ script échoue si les deux divergent d'un millième. C'est la même protection q
 `CONTROLE_1990` dans `generate_bareme_tables.py` : un tableau faux doit casser la
 génération, jamais s'imprimer.
 
-POURQUOI LE FRANÇAIS SEUL. Les autres tableaux engendrés ne traduisent que leurs en-têtes,
-leurs données étant des nombres et des clés de citation. Celui-ci porte des NOMS DE
-PRODUITS — « white spirit non dénaturé », « fuel-oil domestique ». Les engendrer dans le
-livre arabe y déposerait du français non traduit, en contournant la chaîne de traduction ;
-et la terminologie arabe n'appartient pas à ce script. Le livre arabe garde donc son
-tableau traduit, et cet instantané ne le remplace pas.
+LES NOMS DE PRODUITS RESTENT EN FRANÇAIS DANS LE LIVRE ARABE. Les tableaux portent des noms
+de produits — « white spirit non dénaturé », « fuel-oil domestique » — dont la terminologie
+arabe est celle de l'édition arabe des textes, que ce script ne tient pas : elle relève du
+terminologue (precis/glossaire.yml). En attendant, l'instantané arabe traduit les en-têtes,
+les états et les unités, et garde les noms tels que le relevé les donne — ce qu'imprimait
+déjà le livre arabe, qui lisait le relevé français.
 
 ENREGISTRÉ EN INTÉGRATION CONTINUE. `verifier-snapshots.yml` régénère les tableaux depuis
 openfisca-tunisia sur `ref: master` et échoue si le résultat diffère du versionné ; ce
@@ -27,11 +27,13 @@ porté les paramètres `produits_petroliers` dans `master`. Les poser plus tôt 
 fait échouer la CI, soit laissé l'instantané NON GARDÉ, c'est-à-dire libre de survivre à la
 correction du paramètre qu'il reflète — le pourrissement silencieux que ce job combat.
 
-CE QUE LE TABLEAU NE PORTE PAS. Trois colonnes datées, quand le chapitre en publie quatre :
-l'état consolidé de 2023 n'a pas de date d'effet établie et n'est donc pas versé dans
-openfisca. Deux lignes nées après 1999 manquent pour la même raison. Cet instantané est
-une VÉRIFICATION que le modèle et le précis s'accordent, non un remplacement du tableau
-publié, qui reste plus complet.
+LE TABLEAU PUBLIÉ EST ENGENDRÉ, ET NON PLUS SEULEMENT CONTRÔLÉ (recension des paramètres
+en dur, FI-30 et FI-33, 3 octobre 2026). Chaque case que le paramètre porte — tarifs de 1988,
+1991 et 1999 — y est lue ; les autres viennent du relevé, qui reste la source de ce que le
+paramètre ne porte pas : l'état consolidé de 2023, dont la date d'effet n'est pas établie,
+les lignes nées après 1999, les états « ligne inexistante », « ligne scindée », « non
+établi », et, au tarif spécifique de 1988, les alcools et les explosifs. Une case lue qui ne
+rend pas exactement la cellule du relevé fait échouer la génération.
 """
 from __future__ import annotations
 
@@ -45,7 +47,6 @@ import openfisca_tables as ot  # noqa: E402
 
 RACINE = Path(__file__).parent.parent
 CSV_RELEVE = RACINE / "precis/fr/fiscalite/tarifs/tarifs-releves-droits-consommation.csv"
-SORTIE = RACINE / "precis/fr/fiscalite/tables/droit_consommation_petroliers.md"
 BRANCHE = "parameters/fiscalite_indirecte/accises/produits_petroliers"
 
 # Produit du relevé -> nom du paramètre openfisca. La même table que celle du versement :
@@ -87,58 +88,76 @@ def formate_tarif(valeur: float) -> str:
     return f"{entier},{decimales}"
 
 
-def releve() -> dict[int, dict[str, dict]]:
-    """Le relevé du précis, indexé par ligne puis par colonne. Sert de garde-fou."""
-    par_ordre: dict[int, dict[str, dict]] = {}
-    with CSV_RELEVE.open(encoding="utf-8", newline="") as f:
-        for r in csv.DictReader(f):
-            if r["tableau"] == "petroliers":
-                par_ordre.setdefault(int(r["ordre"]), {})[r["colonne"]] = r
-    return par_ordre
+# Le tarif spécifique de 1988 écrit autrement deux des produits du tarif pétrolier.
+ALIAS = {
+    "essence avion (kérosène), y compris carburéacteur":
+        "essence avion (kérosène, y compris carburéacteur)",
+    "gas-oil": "gaz-oil",
+}
+# Tableaux engendrés : tableau du relevé -> (instantané, colonne -> date du paramètre).
+TABLEAUX = {
+    "petroliers": ("droit_consommation_petroliers.md", dict(COLONNES)),
+    "specifiques-1988": ("droit_consommation_specifiques_1988.md", {"Tarif 1988": "1988-07-01"}),
+}
+# Arabe : en-têtes, états et unités. Les noms de produits restent ceux du relevé (en-tête).
+AR = {
+    "Position": "الموقع التعريفي", "Produit": "المنتوج", "Tarif 1988": "تعريفة 1988",
+    "Consolidé 2023": "الحالة المجمّعة 2023",
+    "*(ligne inexistante)*": "*(سطر غير موجود)*", "*(ligne scindée)*": "*(سطر مقسّم)*",
+    "*(non établi)*": "*(غير ثابت)*",
+}
+UNITES_AR = {"D/hl": "د/هكتولتر", "D/100 kg": "د/100 كغ", "D/tonne": "د/طن",
+             "D/m^3^": "د/م^3^"}
 
 
-def tarifs(par_ordre: dict[int, dict[str, dict]]) -> tuple[list | None, list[str], int]:
-    """Lignes du tableau, écarts avec le relevé, nombre de valeurs lues.
+def _ar(texte: str) -> str:
+    if texte in AR:
+        return AR[texte]
+    for unite, traduction in UNITES_AR.items():
+        if texte.endswith(" " + unite):
+            return texte[: -len(unite)] + traduction
+    return texte
 
-    Chaque paramètre lu est noté au relevé sous le nom du produit : c'est le libellé de
-    son lien vers la base législative. `None` en tête signale un paramètre inutilisable.
+
+def tableau(nom_releve: str, langue: str):
+    """Un tableau du relevé, chaque case lue dans le paramètre quand il la porte.
+
+    Rend (DataFrame, nombre de cases lues). Lève une erreur si une case lue diverge du relevé.
     """
-    lignes, ecarts, lus = [], [], 0
-    for ordre in sorted(par_ordre):
-        cols = par_ordre[ordre]
-        base = cols["1988"]
-        produit, position = base["produit"], base["position"]
+    import pandas as pd
+    import tarifs as releves
+
+    spec = releves.TABLEAUX[nom_releve]
+    _fichier, dates = TABLEAUX[nom_releve]
+    lignes: dict[int, dict[str, str]] = {}
+    lus = 0
+    with CSV_RELEVE.open(encoding="utf-8", newline="") as f:
+        rangs = [r for r in csv.DictReader(f) if r["tableau"] == nom_releve]
+    for r in rangs:
+        publiee = releves.recompose(r["valeur"], r["unite"], r["statut"])
+        case = publiee
+        produit = ALIAS.get(r["produit"], r["produit"])
         nom = NOMS.get(produit)
-        if nom is None:  # ligne née après 1999, non versée dans openfisca
-            continue
-
-        chemin = f"{BRANCHE}/{nom}.yaml"
-        serie = {d: v for d, v, _t, _h in ot.serie_datee(chemin)}
-        if not serie:
-            print(f"paramètre introuvable ou vide : {nom}", file=sys.stderr)
-            return None, ecarts, lus
-
-        ot.releve_note(chemin, produit)
-        ligne = {"Position": position, "Produit": produit}
-        for entete, date in COLONNES:
-            attendu = cols.get(entete)
-            valeur = serie.get(date)
-            # Une colonne absente du relevé, ou un paramètre sans valeur à cette date,
-            # ne se distingue pas d'une cellule légitimement vide : on la rend telle.
-            if attendu is None or date not in serie:
-                ligne[entete] = "—"
-                continue
-            if valeur is None:
-                print(f"paramètre {nom} : valeur nulle au {date}", file=sys.stderr)
-                return None, ecarts, lus
-            ligne[entete] = f"{formate_tarif(valeur)} {attendu['unite']}"
-            lus += 1
-            # garde-fou : openfisca et le relevé du précis doivent dire la même chose
-            cible = float(attendu["valeur"].replace(",", "."))
-            if abs(valeur - cible) > 1e-9:
-                ecarts.append(f"{nom} @{date} : openfisca={valeur} relevé={cible}")
-        lignes.append(ligne)
-    return lignes, ecarts, lus
+        date = dates.get(r["colonne"])
+        if nom and date and r["statut"] == "lu" and r["valeur"]:
+            chemin = f"{BRANCHE}/{nom}.yaml"
+            serie = {d: v for d, v, _t, _h in ot.serie_datee(chemin)}
+            if date in serie:
+                if serie[date] is None:
+                    raise ValueError(f"paramètre {nom} : valeur nulle au {date}")
+                case = f"{formate_tarif(serie[date])} {r['unite']}"
+                if case != publiee:
+                    raise ValueError(f"{nom_releve} / {r['produit']} / {r['colonne']} : le "
+                                     f"paramètre rend « {case} », le relevé « {publiee} »")
+                ot.releve_note(chemin, r["produit"])
+                lus += 1
+        ligne = lignes.setdefault(int(r["ordre"]), {"position": r["position"],
+                                                    "produit": r["produit"]})
+        ligne[r["colonne"]] = case if langue == "fr" else _ar(case)
+    entetes = spec["entetes"] if langue == "fr" else [_ar(e) for e in spec["entetes"]]
+    df = pd.DataFrame([[lignes[o].get(c, "") for c in spec["champs"]] for o in sorted(lignes)],
+                      columns=entetes)
+    return df, lus
 
 
 def main() -> int:
@@ -149,34 +168,26 @@ def main() -> int:
             file=sys.stderr,
         )
         return 1
-
-    (lignes, ecarts, lus), liens = ot.avec_liens(lambda: tarifs(releve()))
-    if lignes is None:
-        return 1
-
-    if ecarts:
-        print("Les paramètres openfisca ne correspondent plus au relevé du précis :",
-              file=sys.stderr)
-        for e in ecarts:
-            print("  " + e, file=sys.stderr)
-        return 1
-
-    import pandas as pd
-
-    df = pd.DataFrame(lignes, columns=["Position", "Produit"] + [c for c, _ in COLONNES])
-    SORTIE.parent.mkdir(parents=True, exist_ok=True)
-    ot.ecrire_tableau(
-        SORTIE, df, liens, "fr",
-        entete="<!-- Généré par scripts/generate_droit_consommation_tables.py — ne pas "
-        "éditer à la main.\n"
-        f"     Paramètres : {BRANCHE}\n"
-        "     Garde-fou : precis/fr/fiscalite/tarifs/"
-        "tarifs-releves-droits-consommation.csv\n"
-        "     Français seul : les noms de produits ne sont pas traduits ici. -->\n\n",
-    )
-    print(f"  {SORTIE.relative_to(RACINE)}")
-    print(f"  lignes : {len(lignes)}   valeurs lues depuis openfisca : {lus}")
-    print(f"  écarts avec le relevé : {len(ecarts)}")
+    sys.path.insert(0, str(Path(__file__).parent))
+    for langue in ("fr", "ar"):
+        for nom_releve, (fichier, _dates) in TABLEAUX.items():
+            try:
+                (df, lus), liens = ot.avec_liens(lambda: tableau(nom_releve, langue))
+            except ValueError as erreur:
+                print(f"Les paramètres ne correspondent plus au relevé du précis : {erreur}",
+                      file=sys.stderr)
+                return 1
+            sortie = RACINE / "precis" / langue / "fiscalite" / "tables" / fichier
+            sortie.parent.mkdir(parents=True, exist_ok=True)
+            ot.ecrire_tableau(
+                sortie, df, liens, langue, a_gauche=True,
+                entete="<!-- Généré par scripts/generate_droit_consommation_tables.py — ne pas "
+                "éditer à la main.\n"
+                f"     Cases lues dans {BRANCHE} ; les autres viennent du relevé\n"
+                "     precis/fr/fiscalite/tarifs/tarifs-releves-droits-consommation.csv, qui "
+                "sert de garde-fou. -->\n\n",
+            )
+            print(f"  {sortie.relative_to(RACINE)} : {len(df)} lignes, {lus} cases lues")
     return 0
 
 

@@ -1,0 +1,21 @@
+- libelle: Taux de la pension de réversion
+  parametre: parameters/retraite/rsna/survivants/taux_conjoint.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.survivants.taux_conjoint/table/
+- libelle: Taux majoré de la pension de réversion
+  parametre: parameters/retraite/rsna/survivants/taux_conjoint_majore.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.survivants.taux_conjoint_majore/table/
+- libelle: Taux de la pension d'orphelin
+  parametre: parameters/retraite/rsna/survivants/taux_orphelin.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.survivants.taux_orphelin/table/
+- libelle: Taux de la pension d'orphelin de père et de mère
+  parametre: parameters/retraite/rsna/survivants/taux_orphelin_pere_et_mere.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.survivants.taux_orphelin_pere_et_mere/table/
+- libelle: Âge limite de l'orphelin
+  parametre: parameters/retraite/rsna/survivants/age_limite_orphelin.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.survivants.age_limite_orphelin/table/
+- libelle: Âge limite de l'orphelin en études
+  parametre: parameters/retraite/rsna/survivants/age_limite_orphelin_etudes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.survivants.age_limite_orphelin_etudes/table/
+- libelle: Âge limite de l'orphelin en études supérieures
+  parametre: parameters/retraite/rsna/survivants/age_limite_orphelin_etudes_superieures.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.survivants.age_limite_orphelin_etudes_superieures/table/

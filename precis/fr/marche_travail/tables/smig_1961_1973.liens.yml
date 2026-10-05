@@ -1,0 +1,12 @@
+- libelle: 48 heures, à l'heure
+  parametre: parameters/marche_travail/smig_48h_horaire.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.smig_48h_horaire/table/
+- libelle: 48 heures, au mois
+  parametre: parameters/marche_travail/smig_48h_mensuel.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.smig_48h_mensuel/table/
+- libelle: 40 heures, à l'heure
+  parametre: parameters/marche_travail/smig_40h_horaire.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.smig_40h_horaire/table/
+- libelle: 40 heures, au mois
+  parametre: parameters/marche_travail/smig_40h_mensuel.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.smig_40h_mensuel/table/

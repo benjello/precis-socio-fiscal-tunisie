@@ -4,3 +4,9 @@
 - libelle: Pension minimale garantie
   parametre: parameters/retraite/cnrps/pension_minimale/minimum_garanti.yaml
   url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.pension_minimale.minimum_garanti/table/
+- libelle: Allocation de vieillesse
+  parametre: parameters/retraite/cnrps/pension_minimale/allocation_vieillesse.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.pension_minimale.allocation_vieillesse/table/
+- libelle: 'Allocation de vieillesse : services requis'
+  parametre: parameters/retraite/cnrps/pension_minimale/duree_service_allocation_vieillesse.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.pension_minimale.duree_service_allocation_vieillesse/table/

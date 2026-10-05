@@ -29,6 +29,7 @@ from sync_biblio import (  # noqa: E402
     index_local,
     items_par_cle,
     preserve_traductions,
+    preserve_urls_arabes,
     preserve_urls_absentes,
     repartit_references,
 )
@@ -216,6 +217,40 @@ class SecoursDePreservationTest(unittest.TestCase):
             preserve_traductions(items, str(destination),
                                  {"x": {"title": "قرار من وزير الشؤون الاجتماعية"}})
             self.assertEqual(items[0]["title"], "قرار من وزير الشؤون الاجتماعية")
+
+    def test_note_arabe_et_url_de_chaque_edition_survivent_a_la_descente(self):
+        with tempfile.TemporaryDirectory() as d:
+            destination = Path(d) / "references.json"
+            self.ecrire(destination, [{
+                "id": "decret-statut-caisses-1999",
+                "note": "citation-key: decret-statut-caisses-1999\nالرائد الرسمي عدد 77",
+                "URL": "https://www.pist.tn/jort/1999/1999A/Ja07799.pdf",
+            }])
+            items = [{
+                "id": "decret-statut-caisses-1999",
+                "note": "citation-key: decret-statut-caisses-1999\nJORT n° 77",
+                "URL": "https://www.pist.tn/jort/1999/1999A/Ja07799.pdf",
+            }]
+            preserve_traductions(items, str(destination))
+            self.assertEqual(items[0]["note"],
+                             "citation-key: decret-statut-caisses-1999\nالرائد الرسمي عدد 77")
+            self.assertEqual(items[0]["URL"],
+                             "https://www.pist.tn/jort/1999/1999A/Ja07799.pdf")
+
+    def test_url_ins_arabe_survit_sans_ecraser_une_nouvelle_url_arabe(self):
+        with tempfile.TemporaryDirectory() as d:
+            destination = Path(d) / "references.json"
+            ancienne = "https://www.ins.tn/ar/publication/khsays-awan-alwzyft-almwmyt-wajwrhm-lsnwat-2014-2010"
+            francaise = "https://www.ins.tn/publication/caracteristiques-des-agents-de-la-fonction-publique-et-leurs-salaires-2010-2014"
+            self.ecrire(destination, [{"id": "ins-fonction-publique-historiques", "URL": ancienne}])
+            items = [{"id": "ins-fonction-publique-historiques", "URL": francaise}]
+            preserve_urls_arabes(items, str(destination))
+            self.assertEqual(items[0]["URL"], ancienne)
+
+            nouvelle = "https://www.ins.tn/ar/publication/edition-corrigee"
+            items = [{"id": "ins-fonction-publique-historiques", "URL": nouvelle}]
+            preserve_urls_arabes(items, str(destination))
+            self.assertEqual(items[0]["URL"], nouvelle)
 
     def test_sans_secours_le_comportement_est_inchange(self):
         with tempfile.TemporaryDirectory() as d:

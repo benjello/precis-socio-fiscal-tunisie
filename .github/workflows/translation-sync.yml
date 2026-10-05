@@ -259,8 +259,16 @@ jobs:
           echec=""
           for livre in $LIVRES; do
             [ -d "precis/ar/$livre" ] || continue
+            # Livre neuf dont la traduction ne livre pas encore `index.qmd` : rien à rendre.
+            if [ ! -f "precis/ar/$livre/index.qmd" ]; then
+              echo "── precis/ar/$livre : index.qmd absent, traduction pas encore livrée — sauté ──"
+              continue
+            fi
             echo "── rendu de precis/ar/$livre ──"
-            if ! (cd "precis/ar/$livre" && uv run quarto render --to html 2>&1 | tail -40); then
+            # `pipefail` : sans lui, le code testé est celui de `tail`, toujours 0, et un
+            # rendu en échec passait pour réussi. Le 3 octobre 2026, une traduction dont
+            # trois cellules Python ne compilaient plus a été déclarée « rendue ».
+            if ! (set -o pipefail; cd "precis/ar/$livre" && uv run quarto render --to html 2>&1 | tail -40); then
               echec="$echec $livre"
             fi
           done

@@ -18,7 +18,7 @@ des mois sans que le premier ne le voie.
     collection sur la foi d'une absence changerait l'état d'une bibliothèque partagée
     à partir d'une preuve qu'on n'a pas su trouver.
 
-## Les citations se lisent à TROIS sources
+## Les citations se lisent dans la prose, les tableaux et les figures
 
 Mesuré le 16/09/2026 sur le corpus :
 
@@ -27,6 +27,8 @@ Mesuré le 16/09/2026 sur le corpus :
     dont les arrêtés de transferts sociaux ;
   - **l'annexe de glossaire** (`_glossaire.qmd`), que `build_glossary.render_book`
     remplit de vraies `[@clé]` résolues contre la bibliographie du livre.
+  - l'en-tête des figures téléchargeables (`figdata/*.csv`), dont les sources
+    sont rendues en citations par `figtools.source_line()`.
 
 Le glossaire ne doit PAS être exclu, quoi qu'en fasse `ancres_utilisees` : son exclusion
 y est justifiée pour les *ancres* — l'annexe se définirait elle-même —, raison qui ne
@@ -199,6 +201,20 @@ class ClesCiteesTest(unittest.TestCase):
         résolvent contre la bibliographie du livre."""
         r = self.livre("livre", {"_glossaire.qmd": "*Source :* [@loi-88-61-tva]"})
         self.assertEqual(cles_citees("livre", r), {"loi-88-61-tva"})
+
+    def test_les_sources_des_figures_sont_lues(self):
+        r = self.livre("livre", {
+            "figdata/salaires.csv": (
+                "# Figure-data — généré le 2026-09-25\n"
+                "# séries : salaires\n"
+                "# sources (citation) : @ins-fonction-publique-historiques, @ins-fonction-publique-2025\n"
+                "annee,valeur\n2025,1\n"
+            ),
+            "figdata/salaires.csv.yml": "sources: [autre-cle]\n",
+        })
+        self.assertEqual(cles_citees("livre", r), {
+            "ins-fonction-publique-historiques", "ins-fonction-publique-2025",
+        })
 
 
 class IdentiteArithmetiqueTest(unittest.TestCase):

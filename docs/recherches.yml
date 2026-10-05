@@ -77,8 +77,8 @@
   - precis/fr/retraites/_secteur_prive.qmd#sec-rsna-calcul
   - precis/fr/retraites/_secteur_prive.qmd#sec-rsna-depuis-2007
   - precis/fr/retraites/_secteur_prive.qmd#sec-rsna-textes-modificatifs
-  - precis/fr/cotisations_sociales/index.qmd#sec-cot-pensions-prive
-  - precis/fr/cotisations_sociales/index.qmd#sec-cot-plafonds
+  - precis/fr/cotisations_sociales/_pensions.qmd#sec-cot-pensions-prive
+  - precis/fr/cotisations_sociales/_assiette.qmd#sec-cot-plafonds
   requetes:
     titres_fts:
     - '"74-499" OR "74 499"'
@@ -494,7 +494,7 @@
 
 - id: r-cotis-rsna-branches
   objet: texte répartissant entre prestations familiales (3,10 %), indemnités de maladie et de maternité (0,85 %) et décès (0,65 %) le solde de 4,60 points du taux global de 18 % du régime des salariés non agricoles
-  ou: [precis/fr/cotisations_sociales/index.qmd#sec-cot-ventilation]
+  ou: [precis/fr/cotisations_sociales/_taux_global.qmd#sec-cot-ventilation]
   requetes:
     titres_like: ['%60-30%']
   passes:
@@ -510,7 +510,7 @@
 
 - id: r-cotis-rsa-assurances-sociales
   objet: texte ventilant entre maladie, maternité et décès les 1,20 % d'assurances sociales du régime des salariés agricoles (décret n° 81-224, art. 1er), au-delà de la part maladie de 0,91 % (décret n° 2007-1406)
-  ou: [precis/fr/cotisations_sociales/index.qmd#sec-cot-rsa]
+  ou: [precis/fr/cotisations_sociales/_regimes.qmd#sec-cot-rsa]
   requetes:
     titres_fts: ['"81-224"']
     depuis: 1981-02-27
@@ -525,7 +525,7 @@
 
 - id: r-cotis-rsaa-art90
   objet: décret répartissant entre les branches le taux global de 15 % du régime agricole amélioré (loi n° 81-6, art. 90, ajouté par la loi n° 89-73), pour l'ensemble du régime
-  ou: [precis/fr/cotisations_sociales/index.qmd#sec-cot-rsaa]
+  ou: [precis/fr/cotisations_sociales/_regimes.qmd#sec-cot-rsaa]
   requetes:
     titres_like: ['%agricole%cotisation%', '%cotisation%agricole%']
     depuis: 1989-09-05
@@ -542,7 +542,7 @@
 
 - id: r-cotis-rtte-assurances-sociales
   objet: texte ventilant entre maladie, maternité et décès les 5,40 % d'assurances sociales du régime des Tunisiens à l'étranger (décret n° 89-107, art. 7), au-delà de la part maladie de 4,10 % (décret n° 2007-1406)
-  ou: [precis/fr/cotisations_sociales/index.qmd#sec-cot-rtte]
+  ou: [precis/fr/cotisations_sociales/_regimes.qmd#sec-cot-rtte]
   requetes:
     titres_fts: ['"89-107"']
     depuis: 1989-01-17
@@ -585,7 +585,7 @@
 
 - id: r-majoration-creche-revalorisation
   objet: texte revalorisant les montants de la majoration pour salaire unique (loi n° 80-36, art. 65 bis — 9,375, 18,750 et 23,475 dinars) ou de la contribution aux frais de crèche (décret n° 95-114 — 15 dinars)
-  ou: [precis/fr/prestations_sociales/index.qmd]
+  ou: [precis/fr/prestations_sociales/_prestations_familiales.qmd]
   requetes:
     titres_fts: ['"80-36"', '"94-88" OR "95-114"']
     depuis: 1980-05-27
@@ -603,7 +603,7 @@
 
 - id: r-lf2025-art17-decret
   objet: décret fixant les conditions et procédures de gestion du fonds d'assurance contre la perte de postes de travail pour raisons économiques (loi n° 2024-48, loi de finances pour 2025, art. 17)
-  ou: [precis/fr/prestations_sociales/index.qmd]
+  ou: [precis/fr/prestations_sociales/_autres_risques.qmd]
   requetes:
     titres_like: ['%perte%', '%licenci%', '%perte d%emploi%']
     iort_ar: [فقدان]
@@ -625,7 +625,7 @@
 
 - id: r-amg-cartes-quotas
   objet: arrêtés conjoints des ministres des affaires sociales et de la santé publique fixant le nombre global des cartes de soins gratuits (décret n° 98-1812, art. 2) et à tarifs réduits, et les quotas régionaux
-  ou: [precis/fr/prestations_sociales/index.qmd]
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd]
   requetes:
     titres_like: ['%carte%soins gratuits%', '%quota%']
     depuis: 1998-09-29
@@ -662,3 +662,574 @@
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
   a_faire: [lire le JORT n° 58 de 2026, lire les numéros postérieurs au n° 93 de 2026]
+
+- id: r-atmp-echelle-modificatifs
+  objet: texte modifiant, après le décret n° 99-1010, l'échelle des taux de cotisation au régime de réparation des accidents du travail et des maladies professionnelles (articles 1er et 2 nouveaux du décret n° 95-538)
+  ou: [precis/fr/cotisations_sociales/_accidents_travail.qmd#sec-cot-at-longue-periode]
+  requetes:
+    titres_like: ['%95-538%', '%99-1010%', '%accidents du travail%taux%', '%accidents du travail%cotisation%']
+    depuis: 1999-05-18
+  passes:
+  - date: 2026-10-02
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache : intitulés et objets des textes publiés depuis le 1er janvier 1999 visant les accidents du travail ; seuls paraissent des textes sur l''assiette (décret n° 2000-1439), l''extension de la couverture (décret n° 2000-2279), les remises de pénalités (2007, 2008, 2011, 2024, 2025) et le régime des forces de sûreté intérieure (loi n° 2013-50). Aucun texte de taux. Le plein texte des fascicules n''a pas été parcouru.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules (« 95-538 », « 538 لسنة 1995 ») pour un modificatif dont l'intitulé ne viserait pas le décret
+
+- id: r-cnrps-tutelle-1976-1985
+  objet: texte transférant la tutelle de la CNRPS du ministère des Finances (loi n° 75-83, art. 28) à un autre département, entre le décret n° 76-3 du 5 janvier 1976 et le décret n° 85-1611 du 31 décembre 1985, qui la place sous le ministère de la protection sociale
+  ou: [precis/fr/caisses/_statut_cadre.qmd#sec-caisses-tutelle]
+  requetes:
+    titres_fts:
+    - '"retraite et de prevoyance sociale" AND (tutelle OR rattachement OR organisation OR fonctionnement OR financiere OR "conseil d administration")'
+    - '"protection sociale" AND (ministere OR attributions OR organisation)'
+    titres_like: ['%attributions du ministere des affaires sociales%']
+    depuis: 1976-01-05
+  periode:
+    jusqu_au: 1986-01-07
+    motif: le décret n° 85-1611 (JORT n° 1 des 3-7 janvier 1986, p. 5) range déjà la CNRPS sous le ministère de la protection sociale
+  passes:
+  - date: 2026-10-03
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés seulement (requêtes FTS sur 1976-2026, 1976-1990 ; LIKE sur 1970-2000). Candidats non lus : décret n° 75-775 (attributions du ministère des affaires sociales, JORT n° 72/1975, p. 2340), décret n° 86-454 (attributions du ministère de la protection sociale, n° 25/1986, p. 531), postérieur à la période. Aucun plein texte des fascicules 1976-1985.'
+    couvert_jusqu_au: 1986-01-07
+    resultat: aucun
+  a_faire:
+  - plein texte (OCR) des fascicules 1976-1985 sur « retraite et de prévoyance » + « tutelle » ou « rattach »
+
+- id: r-cnrps-organisation-apres-1989
+  objet: décret fixant l'organisation administrative et financière de la CNRPS postérieur au décret n° 89-1890 (équivalent, pour la CNRPS, du décret n° 2000-1902 pour la CNSS)
+  ou: [precis/fr/caisses/_statut_cadre.qmd#sec-caisses-tutelle]
+  requetes:
+    titres_fts:
+    - '"retraite et de prevoyance sociale" AND (tutelle OR rattachement OR organisation OR fonctionnement OR financiere OR "conseil d administration")'
+    titres_like: ['%76-3 du 5 janvier 1976%', '%الصندوق الوطني للتقاعد والحيطة الاجتماعية%']
+    depuis: 1989-12-15
+  passes:
+  - date: 2026-10-03
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés seulement. Le LIKE effectivement lancé combinait, en une requête : numero dans (2011-4087, 76-3, 89-1890), titre LIKE %76-3 du 5 janvier 1976%, titre LIKE %retraite et de prevoyance sociale% ET (LIKE %organisation% OU %tutelle% OU %rattach%), titre LIKE %الصندوق الوطني للتقاعد والحيطة الاجتماعية%. Résultats écartés sur l''intitulé : décret n° 2011-4087 (Caisse des dépôts et consignations), décrets complétant les décrets n° 85-1025 et 85-1176. Pas de plein texte ; fascicules 2024-2026 inconnus de jort_cache non couverts.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+
+- id: r-cnam-transfert-reserves
+  objet: arrêté conjoint des ministres chargés de la sécurité sociale, des domaines de l'État et des finances transférant à la CNAM les biens et les réserves financières afférents aux régimes qu'elle gère (loi n° 2004-71, art. 10)
+  ou: [precis/fr/caisses/_comptes_regimes.qmd#sec-caisses-reorganisations]
+  requetes:
+    titres_fts: [("assurance maladie" OR CNAM) AND (transfert OR reserves OR biens)]
+    titres_like: ['%2004-71%']
+    depuis: 2004-08-06
+  passes:
+  - date: 2026-10-03
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés seulement (les arrêtés ont souvent un numéro NULL : FTS sur titre et objet). Seul résultat hors textes déjà connus, écarté sur l''intitulé : décret n° 2014-10 (cotisations des bénéficiaires de l''amnistie générale). Pas de plein texte ; fascicules 2024-2026 inconnus de jort_cache non couverts.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+
+- id: r-caisses-placements-obligatoires
+  objet: texte imposant aux caisses de sécurité sociale le placement de leurs réserves en bons d'équipement ou en logement social, et texte levant cette obligation (fin 1991 selon la Banque mondiale, rapport n° 11376-TUN, § 3.01)
+  ou: [precis/fr/caisses/_etat_caisses.qmd#sec-caisses-placements]
+  requetes:
+    titres_fts:
+    - equipement AND bons
+    - ("bons d equipement" OR "bons d'equipement" OR emploi des fonds OR "placement des fonds" OR "fonds disponibles" OR "disponibilites") AND (caisse OR caisses OR securite OR organismes)
+    depuis: 1960-12-13
+  periode:
+    jusqu_au: 1992-12-31
+    motif: selon la Banque mondiale (rapport n° 11376-TUN, § 3.01), l'obligation a été levée à la fin de 1991
+  passes:
+  - date: 2026-10-03
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés seulement, 1960-2000. Une troisième requête, LIKE combiné (titre LIKE %placement% OU %disponibilites%) ET (titre LIKE %securite sociale% OU %caisse% OU %organismes%), 1960-2010, n''a rien ajouté. Candidats non lus : articles « bons d''équipement » des lois de finances n° 71-59 (art. 9), 72-87 (art. 13), 73-82 (art. 42), 74-101 (art. 40) ; loi n° 90-111 (LF 1991), art. 64, « conversion en bons d''équipement des montants versés au titre de la retraite anticipée volontaire » (JORT n° 86/1990, p. 2056) ; arrêtés annuels d''émission des tranches (1960-1973). LF 1992 non examinée.'
+    couvert_jusqu_au: 1992-12-31
+    resultat: aucun
+  a_faire: [lire les articles candidats ci-dessus (OCR) et la loi de finances pour 1992]
+
+- id: r-norme-comptable-securite-sociale
+  objet: norme comptable sectorielle (loi n° 96-112, art. 10) applicable aux organismes de sécurité sociale
+  ou: [precis/fr/caisses/_statut_cadre.qmd#sec-caisses-etablissements]
+  requetes:
+    titres_fts:
+    - '"normes comptables" OR "norme comptable"'
+    - (comptable OR comptables OR comptabilite) AND (securite OR caisses OR caisse OR sociale OR sociales)
+    titres_like: ['%systeme comptable des entreprises%', '%normes comptables%']
+    depuis: 1996-12-31
+  passes:
+  - date: 2026-10-03
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés seulement. Onze arrêtés « portant approbation des normes comptables » ou « d''une norme comptable » (1996-2022) aux intitulés génériques, non ouverts : ceux de 1999 (JORT n° 27), 2000 (n° 54), 2001 (n° 96), 2003 (n° 97), 2007 (n° 70), 2008 (n° 10) et 2011 (n° 17) sont à lire. Pas de plein texte.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [ouvrir les arrêtés d'approbation des normes comptables listés dans la couverture]
+
+- id: r-css-arretes-repartition
+  objet: arrêtés du ministre chargé de la sécurité sociale fixant les critères de répartition entre caisses des recettes du « compte de diversification des sources de sécurité sociale » (décret-loi n° 2021-21, art. 12)
+  ou: [precis/fr/caisses/_etat_caisses.qmd#sec-caisses-financeur]
+  requetes:
+    titres_fts:
+    - '"contribution sociale de solidarite" OR "المساهمة الاجتماعية التضامنية" OR "تنويع مصادر" OR "diversification des sources"'
+    depuis: 2021-12-28
+  passes:
+  - date: 2026-10-03
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés seulement ; résultats : loi n° 2019-78 (LF 2020) art. 39 (CSS) et art. 54 (sans rapport : emprunt obligataire en devises), décret-loi n° 2021-21 (LF 2022) art. 12 (création du compte). Pas de plein texte ; fascicules 2024-2026 inconnus de jort_cache non couverts.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+
+- id: r-caisses-protectorat-fondation
+  objet: textes instituant les organismes de sécurité sociale du Protectorat — Société de prévoyance des fonctionnaires et employés tunisiens, Caisse de retraite des ouvriers de l'État, agrément des trois caisses de compensation des allocations familiales du décret du 8 juin 1944
+  ou: [precis/fr/caisses/_histoire.qmd#sec-caisses-spfet]
+  requetes:
+    titres_fts:
+    - '"societe de prevoyance des fonctionnaires"'
+    - '"ouvriers de l''etat" AND (retraite OR retraites)'
+    - '"allocations familiales" AND (caisse OR caisses OR agrement)'
+    depuis: 1956-01-01
+  periode:
+    jusqu_au: 1961-12-31
+    motif: les organismes cherchés existent avant 1956 et disparaissent ou changent de nom entre 1958 et 1960 (loi n° 58-130, loi n° 59-18, loi n° 60-30) ; leurs textes fondateurs ne peuvent être cités qu'avant, ou par les visas des textes de 1956-1961
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist, visas, presse]
+    couverture: 'Le Journal officiel tunisien antérieur à 1956 n''est ni dans jort_cache ni dans le corpus local, et pist.tn répond 404 pour 1950 et 1955 (sondage de Jo00150 et Jo00155) : l''objet n''est atteignable que par les visas et par des sources secondaires. jort_cache, FTS sur les intitulés 1956-1977 ; visas lus à l''image : décret du 22 novembre 1956 (décrets du 24 décembre 1926 et du 19 novembre 1949, ce dernier approuvant « les nouveaux statuts » de la Société : l''acte de fondation est donc antérieur à 1926), loi n° 59-18 (décret du 19 novembre 1949), loi n° 59-19, loi n° 59-45 (décrets du 12 avril 1951), loi n° 58-130 (décret du 8 juin 1944, décrets des 15 septembre et 21 novembre 1955), décret du 8 novembre 1956. Source secondaire : Bertrand, Bulletin économique et social de la Tunisie, n° 73 et 74 de 1953, qui cite les textes des régimes mais pas l''acte de fondation de la Société ni l''agrément des caisses. Note : docs/notes/caisses-histoire.md.'
+    couvert_jusqu_au: 1977-12-31
+    resultat: aucun
+  a_faire:
+  - consulter les collections du Journal officiel tunisien antérieures à 1956 (BnF Gallica
+  - bibliothèques de Tunis)
+  - et l'Annuaire de législation du Protectorat
+
+- id: r-ccps-devolution
+  objet: texte réglant la dévolution à la CNSS des biens et des obligations de la Caisse centrale des prestations sociales (loi n° 58-130, abrogée par la loi n° 60-30, art. 131)
+  ou: [precis/fr/caisses/_histoire.qmd#sec-caisses-cnss-1960]
+  requetes:
+    titres_fts:
+    - '"prestations sociales"'
+    - '"caisse nationale de securite sociale" AND (transfert OR devolution OR liquidation OR patrimoine)'
+    depuis: 1960-12-14
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache, FTS sur les intitulés « prestations sociales », 1956-1977 : seul l''arrêté du 29 décembre 1959 (contrôleurs de la Caisse centrale) en dehors des textes déjà connus. Loi n° 60-30 lue à l''image aux art. 4, 5, 119 à 131 (JORT n° 57 de 1960, pp. 1602-1613) ; l''océrisation du reste de la loi ne nomme la Caisse centrale qu''aux art. 125 et 126. Loi n° 61-9 du 29 avril 1961 lue à l''image (JORT n° 17 de 1961, p. 592) : elle n''abroge que l''alinéa 2 de l''art. 123. Note : docs/notes/caisses-histoire.md.'
+    couvert_jusqu_au: 1977-12-31
+    resultat: aucun
+  a_faire:
+  - lire les articles 1 à 118 de la loi n° 60-30 à l'image
+  - lire l'arrêté du 16 août 1961 (application des articles 104 et 106 de la loi n° 60-30)
+
+- id: r-impot-fortune-modificatifs
+  objet: texte modifiant l'article 23 du décret-loi n° 2022-79 (impôt sur la fortune immobilière) ou l'article 88 de la loi n° 2025-17 (impôt sur la fortune), ou pris pour leur application (décret, arrêté)
+  ou: [precis/fr/fiscalite/_impot_fortune.qmd#sec-fortune-evolution]
+  requetes:
+    titres_fts: [fortune OR patrimoine immobilier, fortune OR الثروة]
+    titres_like: ['%loi de finances%']
+    plein_texte: [الثروة, الثروة العقارية, الضريبة على الثروة, 79 لسنة 2022, fortune, impôt sur la fortune]
+    depuis: 2022-12-23
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local, iort, presse]
+    couverture: 'jort_cache : FTS match « fortune OR patrimoine immobilier » (soit fortune OU (patrimoine ET immobilier), sans guillemets de phrase) et match « fortune OR الثروة » (un seul résultat pertinent, la notice du DL 2022-79 art. 23), LIKE « loi de finances » 2019-2026. Plein texte (pdftotext -layout) de tous les fascicules AR (555, normalisés NFKC pour les formes de présentation arabes) et FR du corpus local de 2023 au n° 93 de 2026, et des n° 140-143 de 2022 : « الثروة » ne renvoie, hors homonymes (ثروة حيوانية, معدنية, مصدر الثروة), qu''à Ja1412022 (art. 23) et Ja1482025 (art. 88) ; « fortune » ne renvoie à aucun fascicule FR. Les « 79 لسنة 2022 » des LF 2024 (Ja1442023) et LF 2025 (Ja1492024) visent d''autres articles (15, 26, 28, 29, 59, 64). Seconde voie : la NC 13/2026, § I, donne l''art. 23 comme législation en vigueur jusqu''au 31/12/2025. Lacunes : n° 58 de 2026 absent du corpus ; rien après le n° 93 de 2026 ; fascicules inconnus de jort_cache (outillage-sources § 1 f) parcourus seulement s''ils sont au corpus local. Note : docs/notes/fiscalite-impot-fortune.md, § 13.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: ['lire les numéros du JORT postérieurs au n° 93 de 2026, et le n° 58 de 2026']
+
+- id: r-impot-fortune-rendement
+  objet: série officielle du produit de l'impôt sur la fortune immobilière (2023-2025) et de l'impôt sur la fortune (depuis 2026), ou ligne propre dans les tableaux des recettes annexés aux lois de finances
+  ou: [precis/fr/fiscalite/_impot_fortune.qmd#sec-fortune-rendement]
+  requetes:
+    plein_texte: [الثروة, الضريبة على الثروة, impôt sur la fortune]
+    depuis: 2022-12-23
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [corpus_local, presse]
+    couverture: 'Plein texte des fascicules AR et FR du corpus local de 2023 au n° 93 de 2026, et des n° 140-143 de 2022 : « الثروة » n''apparaît que dans l''art. 23 du DL 2022-79 et l''art. 88 de la loi n° 2025-17, jamais dans les tableaux des recettes (tableau A) des LF 2023 à 2026. Classeur du ministère des Finances des recettes fiscales 1986-2025 (minfin-recettes-fiscales, tunisia-data data/raw/minfinances/recettes_fiscales.xls), lu le 4/10/2026 : les impôts directs n''y comptent que l''impôt sur le revenu et l''impôt sur les sociétés, sans ligne propre. Presse : un objectif de recettes et un nombre de redevables cités sans pièce de l''administration fiscale, non retenus. Lacunes : publications de la DGI, rapports de la Cour des comptes et lois de règlement non consultés. Note : docs/notes/fiscalite-impot-fortune.md, § 8.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: ['consulter les lois de règlement du budget 2023 et 2024, et les publications statistiques de la DGI']
+
+- id: r-cfl-prix-reference-tib-apres-2017
+  objet: décret fixant, après le décret gouvernemental n° 2017-397, le minimum et le maximum du prix de référence du mètre carré couvert de la taxe sur les immeubles bâtis (code de la fiscalité locale, art. 4 § IV, « tous les trois ans »)
+  ou: [precis/fr/finances_locales/_impots_immeubles.qmd#sec-fl-tib-prix-reference]
+  requetes:
+    titres_fts: ['"prix de reference"', المرجعي, المربع, المبنية]
+    titres_like: ['%prix de reference%', '%immeubles batis%']
+    plein_texte: [الثمن المرجعي للمتر المربع, مجلة الجباية المحلية, prix de reference du metre carre]
+    depuis: 2017-03-31
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist]
+    couverture: 'jort_cache : titres FTS et LIKE, jusqu''au 18/09/2026, seuls les décrets de 2017 répondent. Plein texte AR et FR de tous les fascicules du corpus local 2017-2026, y compris ceux que jort_cache ignore : seul le JORT 2017 n° 26 répond. Lacune : fascicules existant sur pist.tn mais absents du corpus (relancer --sonder-pist non lancé) ; éditions FR absentes après 2018, l''AR seul fait foi. Note : docs/notes/finances-locales-impots-locaux.md, § 2.2 et 10.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [relancer avec --sonder-pist]
+
+- id: r-cfl-tarif-tnb-apres-2017
+  objet: décret fixant, après le décret gouvernemental n° 2017-396, le montant de la taxe par mètre carré des terrains non bâtis (code de la fiscalité locale, art. 33, al. 2, « tous les trois ans »)
+  ou: [precis/fr/finances_locales/_impots_immeubles.qmd#sec-fl-tnb-tarif]
+  requetes:
+    titres_fts: ['"terrains non batis"', المبنية, المربع]
+    titres_like: ['%terrains non batis%']
+    plein_texte: [بالمتر المربع بالنسبة للأراضي غير المبنية, مجلة الجباية المحلية, taxe par metre carre]
+    depuis: 2017-03-31
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist]
+    couverture: 'mêmes sources, même couverture et mêmes lacunes que r-cfl-prix-reference-tib-apres-2017 ; seul le JORT 2017 n° 26 répond. Note : docs/notes/finances-locales-impots-locaux.md, § 3.2 et 10.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [relancer avec --sonder-pist]
+
+- id: r-cfl-minimum-tcl-apres-2017
+  objet: décret fixant, après le décret gouvernemental n° 2017-395, la taxe par mètre carré de référence servant au minimum de la taxe sur les établissements à caractère industriel, commercial ou professionnel (code de la fiscalité locale, art. 38 § II, « tous les trois ans »)
+  ou: [precis/fr/finances_locales/_impots_activite.qmd#sec-fl-tcl-minimum]
+  requetes:
+    titres_fts: [المرجعي, المربع]
+    plein_texte: [المتر المربع المرجعي, مجلة الجباية المحلية, taxe par metre carre]
+    depuis: 2017-03-31
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist]
+    couverture: 'mêmes sources, même couverture et mêmes lacunes que r-cfl-prix-reference-tib-apres-2017 ; seul le JORT 2017 n° 26 répond. Note : docs/notes/finances-locales-impots-locaux.md, § 4.3 et 10.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [relancer avec --sonder-pist]
+
+- id: r-cfl-prix-reference-1998-2006
+  objet: décret fixant le prix de référence de la taxe sur les immeubles bâtis, le tarif de la taxe sur les terrains non bâtis ou le minimum de la taxe sur les établissements entre les décrets du 3 mars 1997 et ceux du 14 mai 2007 (« tous les trois ans »)
+  ou:
+  - precis/fr/finances_locales/_impots_immeubles.qmd#sec-fl-tib-prix-reference
+  - precis/fr/finances_locales/_impots_immeubles.qmd#sec-fl-tnb-tarif
+  - precis/fr/finances_locales/_impots_activite.qmd#sec-fl-tcl-minimum
+  requetes:
+    titres_fts: ['"prix de reference"', '"terrains non batis"']
+    titres_like: ['%prix de reference%', '%terrains non batis%']
+    plein_texte: [prix de reference du metre carre, taxe par metre carre, code de la fiscalite locale]
+    depuis: 1997-03-07
+  periode:
+    jusqu_au: 2007-05-18
+    motif: les décrets n° 2007-1185, 2007-1186 et 2007-1187, publiés au JORT n° 40 du 18 mai 2007, ferment la période ; ils n'abrogent que les décrets n° 97-431, 97-432 et 97-433
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache (titres FTS et LIKE 1997-2007) et plein texte FR de tous les fascicules 1997-2007 du corpus local, décodés quand la police est décalée : seuls les JORT 1997 n° 11, 1997 n° 19 et 2007 n° 40 répondent. Lacunes : fascicules FR 1998 n° 1 et n° 30, illisibles en clair comme décodés ; plein texte AR inopérant avant 2005 (encodage de police).'
+    couvert_jusqu_au: 2007-05-18
+    resultat: aucun
+  a_faire: [lire à l'image les fascicules FR 1998 n° 1 et n° 30]
+
+- id: r-cfl-taxe-hoteliere-modificatifs
+  objet: texte modifiant les articles 41 à 45 du code de la fiscalité locale (taxe hôtelière)
+  ou: [precis/fr/finances_locales/_impots_activite.qmd#sec-fl-taxe-hoteliere-reformes]
+  requetes:
+    titres_fts: ['"taxe hoteliere"', '"fiscalite locale"']
+    titres_like: ['%taxe hoteliere%', '%fiscalite locale%']
+    plein_texte: [taxe hôtelière, code de la fiscalité locale, المعلوم على النزل, مجلة الجباية المحلية]
+    depuis: 1997-02-07
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache : titres FTS et LIKE jusqu''au 18/09/2026. Plein texte FR des lois de finances 1997-2021, plein texte AR des lois de finances 2016, 2019, 2020 et 2023-2026, plein texte AR de « مجلة الجباية المحلية » sur tout le corpus 1997-2026 : aucune modification des art. 41 à 45. Lacunes : couche texte arabe illisible avant 2005 et dans plusieurs fascicules de 2006-2013 ; fascicules FR 1998 n° 1 et n° 30 illisibles ; éditions FR absentes de pist.tn pour plusieurs lois de finances après 2015. Note : docs/notes/finances-locales-impots-locaux.md, § 5 et 10.1.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire:
+  - parcourir la loi de finances pour 2022 et les lois de finances complémentaires, que les passes n'ont pas visées une à une
+
+- id: r-fccl-repartition-reserve-2014-2017
+  objet: décret répartissant la réserve (المدخر) du fonds commun des collectivités locales pour les gestions 2014 à 2017, après l'art. 12 de la loi de finances pour 2014 (loi n° 2013-54)
+  ou: [precis/fr/finances_locales/_transferts.qmd#sec-fl-fccl-reserve]
+  requetes:
+    titres_fts: ['"fonds commun"', reserve AND fonds AND commun]
+    titres_like: ['%fonds commun des collectivit%', '%المال المشترك%']
+    iort_ar: [المال المشترك]
+    depuis: 2014-01-01
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'titres FR (FTS et LIKE) et AR (LIKE) de jort_cache jusqu''à la dernière publication indexée ; miroir iort (dec_, dec_gouv_, arr_, loi_). Dernier décret de répartition trouvé : n° 2013-1503. Lacunes : pas de plein texte dans les fascicules 2014-2017 ; « المدخر » non cherché dans les titres ; pist.tn non consulté. Note : docs/notes/finances-locales-transferts.md, § 5 et 12.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [elargir avec le terme المدخر (titres_like), plein texte 2014-2017]
+
+- id: r-fl-loi-competences-partagees
+  objet: loi fixant les conditions et procédures d'exercice des compétences partagées (code des collectivités locales, art. 13, al. 2) ou loi de transfert de compétences (art. 16)
+  ou: [precis/fr/finances_locales/_competences.qmd#sec-fl-comp-categories]
+  requetes:
+    titres_fts: ['"competences partagees"', '"transfert des competences"']
+    iort_ar: [الصلاحيات المشتركة, نقل الصلاحيات]
+    depuis: 2018-05-15
+  passes:
+  - date: 2026-10-05
+    role: rédacteur
+    sources: [jort_cache, iort]
+    couverture: 'titres jort_cache (FTS, FR et AR) du 15 mai 2018 au 18 septembre 2026 : aucun résultat ; miroir iort (plein texte des intitulés et corps disponibles) : seul le code de 2018 contient « الصلاحيات المشتركة » ; plein texte des fascicules non parcouru.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [plein texte des fascicules arabes 2018-2026]
+
+- id: r-fl-elections-municipales-apres-2023
+  objet: texte convoquant ou organisant l'élection de nouveaux conseils municipaux après le décret-loi n° 2023-9
+  ou:
+  - precis/fr/finances_locales/_competences.qmd#sec-fl-comp-dissolution-2023
+  - precis/fr/finances_locales/_histoire.qmd#sec-fl-hist-2023-2025
+  requetes:
+    titres_fts: ['"conseils municipaux" OR "elections municipales" OR "المجالس البلدية" OR "الانتخابات البلدية"']
+    titres_like: ['%conseils municipaux%', '%elections municipales%', '%البلدي%']
+    iort_ar: [المجالس البلدية, الانتخابات البلدية]
+    depuis: 2023-03-09
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'titres jort_cache (FTS et LIKE, FR et AR) du 9 mars 2023 au 18 septembre 2026, hors arrêtés : seuls deux articles de la loi de finances pour 2026 répondent, sans rapport ; plein texte non parcouru. Notes : docs/notes/finances-locales-competences.md § 7, finances-locales-histoire.md § 4.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [plein texte des fascicules 2023-2026]
+
+- id: r-lob-cl-seuil-approbation-apres-2017
+  objet: décret fixant le seuil de recettes au-delà duquel le budget communal est approuvé par les ministres (loi n° 75-35, art. 16, 2e sous-paragraphe), postérieur au décret gouvernemental n° 2017-758
+  ou: [precis/fr/finances_locales/_budgets.qmd#sec-fl-budg-seuils]
+  requetes:
+    titres_fts: ['"75-35" OR "75 35"', ميزانية AND الجماعات AND المحلية]
+    titres_like:
+    - '%budget des collectivites%'
+    - '%budgets des communes%'
+    - '%budgets communaux%'
+    - '%ميزانية الجماعات%'
+    - '%ميزانيات الجماعات%'
+    - '%35 لسنة 1975%'
+    plein_texte: [75-35, 35 لسنة 1975]
+    depuis: 2017-06-21
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'titres jort_cache jusqu''au 18 septembre 2026 ; plein texte non parcouru ; fascicules inconnus de la base non examinés. Note : docs/notes/finances-locales-budgets.md § 1.4 et 6.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [plein texte des fascicules 2017-2026]
+
+- id: r-ccl-2018-nomenclature-art167
+  objet: décret gouvernemental fixant la nomenclature des budgets (art. 167), les missions et programmes (art. 156) ou le système comptable (art. 191) du code des collectivités locales
+  ou: [precis/fr/finances_locales/_budgets.qmd#sec-fl-budg-ccl-principes]
+  requetes:
+    titres_fts: [تبويب, المحاسبي AND الجماعات, nomenclature AND collectivites, comptable AND collectivites AND locales]
+    depuis: 2018-05-15
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'titres jort_cache de mai 2018 au 18 septembre 2026 : seuls des textes relatifs au budget de l''État répondent ; plein texte non parcouru. Note : docs/notes/finances-locales-budgets.md § 6.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+
+- id: r-fl-dissolutions-2011
+  objet: liste et nombre des conseils municipaux dissous et des délégations spéciales nommées en 2011-2012
+  ou: [precis/fr/finances_locales/_histoire.qmd#sec-fl-hist-2011]
+  requetes:
+    titres_like: ['%dissolution de certains conseils municipaux%', '%delegations speciales%']
+    depuis: 2011-01-14
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'titres jort_cache 2011-2014 relevés (une vingtaine de décrets de dissolution) ; seuls les décrets n° 2011-383 et 2011-384 lus. Note : docs/notes/finances-locales-histoire.md § 1.6.'
+    couvert_jusqu_au: 2014-12-31
+    resultat: aucun
+  a_faire: [lire chaque décret de dissolution et compter les communes]
+
+- id: r-fl-constitution-2014-numero-special
+  objet: numéro spécial du JORT du 10 février 2014 publiant la Constitution du 27 janvier 2014, et sa traduction française
+  ou: [precis/fr/finances_locales/_histoire.qmd#sec-fl-hist-2014]
+  requetes:
+    titres_like: ['%constitution de la republique%']
+    depuis: 2014-01-27
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist]
+    couverture: 'jort_cache : seule la décision du 31 janvier 2014 (JORT n° 10) ; aucune ligne du 10 février 2014 ni du 20 avril 2015 qui s''y rapporte ; corpus local 2014 sans fichier hors numérotation ; pist.tn : Ja0002014, Jo0002014, Jas2014, Constitution2014 en 404. Note : docs/notes/finances-locales-histoire.md § 1.7.'
+    couvert_jusqu_au: 2015-04-21
+    resultat: aucun
+  a_faire: [demander à l'IORT la cote du numéro spécial, essayer d'autres noms de fichiers sur pist.tn]
+
+- id: r-fl-nombre-communes
+  objet: nombre de communes à des dates intermédiaires entre 1957 et 2014
+  ou: [precis/fr/finances_locales/_histoire.qmd#sec-fl-hist-carte]
+  requetes:
+    titres_fts: ['"creation d''une commune"']
+    depuis: 1957-03-15
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'seuls le tableau annexé au décret du 14 mars 1957 (94 communes) et l''annexe A du code de 2018 ont été lus ; requête FTS non rejouée. Note : docs/notes/finances-locales-histoire.md § 1.8.'
+    couvert_jusqu_au: 2018-05-15
+    resultat: aucun
+  a_faire: [relancer la requête FTS, compter les créations de communes par décret]
+
+- id: r-tfp-decret-1957
+  objet: décret du 16 janvier 1957 fixant le taux, les modalités et l'affectation de la taxe de formation professionnelle (JORT n° 6 du 18 janvier 1957, p. 79 selon jort_cache), et son taux initial
+  ou: [precis/fr/cotisations_sociales/_prelevements_salaires.qmd#sec-cot-tfp-taux]
+  requetes:
+    titres_fts: ['"formation professionnelle" AND taxe']
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist]
+    couverture: 'métadonnées trouvées dans jort_cache (recid 107959). Le fascicule de janvier 1957 n''est disponible ni dans le corpus local ni sur pist.tn : Jo00657.pdf est le n° 6 du 13 août 1957 (nouvelle série républicaine, ouverte le 26 juillet 1957 avec Jo00157), même fichier en ligne (HTTP 200, 1 760 594 octets). Éditions arabes de 1957 non examinées. Décret n° 64-234 (complément) lu ; décret n° 66-527 lu (taux de 2 % au 1er janvier 1967). Note : docs/notes/cotisations-prelevements-salaires.md, § 7.'
+    couvert_jusqu_au: 1957-01-18
+    resultat: aucun
+  a_faire:
+  - examiner les éditions arabes de janvier 1957
+  - chercher le décret du 16 janvier 1957 dans une autre collection du JORT (bibliothèque, archives)
+
+- id: r-tfp-exclusions-handicapes-etranger
+  objet: texte excluant de l'assiette de la taxe de formation professionnelle les salaires des handicapés et les rémunérations de l'emploi à l'étranger (cités par la note commune DGI n° 5/2015 sans référence)
+  ou: [precis/fr/cotisations_sociales/_prelevements_salaires.qmd#sec-cot-tfp-redevables]
+  requetes:
+    titres_fts: ['"formation professionnelle" AND taxe']
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'intitulés des textes relatifs à la TFP de 1956 à 2026 dans jort_cache parcourus ; textes lus : loi de finances pour 1989, art. 29 ; pour 2003, art. 36 ; pour 2011, art. 28 ; pour 2013, art. 21. Non cherchés : loi d''orientation n° 2005-83 (handicap), code de l''IRPP et de l''IS (revenus de source étrangère).'
+    couvert_jusqu_au: 2026-06-19
+    resultat: aucun
+  a_faire:
+  - lire la loi d'orientation n° 2005-83 relative aux personnes handicapées
+  - lire l'art. 36 du code de l'IRPP et de l'IS (revenus de source étrangère)
+
+- id: r-tfp-foprolos-taux-recents
+  objet: texte modifiant le taux de la taxe de formation professionnelle (1 % / 2 %) ou de la contribution au FOPROLOS (1 %) après la loi n° 88-145
+  ou:
+  - precis/fr/cotisations_sociales/_prelevements_salaires.qmd#sec-cot-tfp-taux
+  - precis/fr/cotisations_sociales/_prelevements_salaires.qmd#sec-cot-foprolos-taux
+  requetes:
+    titres_like: ['%formation professionnelle%taxe%', '%logement%salari%', '%التكوين المهني%', '%المسكن لفائدة%']
+    plein_texte: [taxe de formation, logement pour les salari, logements pour les salari, الأداء على التكوين, النهوض بالمسكن]
+    depuis: 1989-01-01
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'plein texte des 40 premières pages des fascicules des lois de finances : 2015 n° 104 (AR scanné, FR absent), 2016 n° 105, 2017 n° 101, 2018 n° 104 (FR absent), 2019 n° 104 (FR absent), 2020 n° 128, 2021 n° 119, 2022 n° 141 (FR absent), 2023 n° 144 (FR absent), 2024 n° 149 (FR absent), 2025 n° 148. Les éditions AR sans couche texte utile (2015, 2016) n''ont pas été lues. Les lois de finances complémentaires, et les lois de finances de 1990 à 2014 hors celles citées dans la note, n''ont été couvertes que par les intitulés.'
+    couvert_jusqu_au: 2025-12-12
+    resultat: aucun
+  a_faire:
+  - lire les lois de finances de 1990 à 2014 et les lois de finances complémentaires en plein texte
+  - lire à l'image les éditions AR de 2015 et 2016
+
+- id: r-foprolos-art3-redaction
+  objet: rédaction de l'art. 3 de la loi n° 77-54 en vigueur après l'art. 38 de la loi n° 88-145 (qui y mettait fin), complétée par la loi de finances pour 2006 (art. 54) et celle pour 2023 (art. 57)
+  ou: [precis/fr/cotisations_sociales/_prelevements_salaires.qmd#sec-cot-foprolos-redevables]
+  requetes:
+    titres_fts: [(logement OR logements) AND (salaries OR salarie) AND (fonds OR promotion)]
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'textes relatifs au FOPROLOS de 1977 à 2026 dans jort_cache (intitulés) ; lus : loi de finances pour 1989, art. 35-38 ; pour 1991, art. 48 ; pour 2006, art. 54 ; pour 2023, art. 57.'
+    couvert_jusqu_au: 2026-06-19
+    resultat: aucun
+
+- id: r-montants-ep-commission
+  objet: montants des augmentations des salaires des agents des entreprises et établissements publics (loi n° 85-78) arrêtés par la commission supérieure des négociations sociales, puis de supervision et de coordination, pour les cycles approuvés par les décrets n° 91-246 à 2013-4159
+  ou: [precis/fr/remunerations_publiques/_regime_conventionnel.qmd#sec-augmentations-ep]
+  requetes:
+    titres_fts:
+    - commission AND superieure AND (supervision OR negociations)
+    - (augmentation OR augmentations OR majoration) AND salaires AND (entreprises OR etablissements) AND publics
+    titres_like: ['%commission superieure de supervision%', '%approbation des augmentations des salaires%']
+    depuis: 1985-08-05
+  passes:
+  - date: 2026-10-05
+    role: rédacteur
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache jusqu''au 18 septembre 2026 : FTS et LIKE ci-dessus (aucun titre ne nomme la commission ; seuls les neuf décrets d''approbation ou de fixation, de 91-246 à 2026-64, répondent). Les neuf décrets lus au fascicule français : aucun ne publie de montant ni ne renvoie à un texte qui en publierait. Plein texte des fascicules non parcouru ; rapports annuels sur les entreprises publiques annexés aux lois de finances, procès-verbaux de la commission et presse non consultés.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire:
+  - chercher dans le plein texte des fascicules les mentions de la « commission supérieure de supervision et de coordination »
+  - consulter les rapports sur les entreprises publiques annexés aux lois de finances et les communiqués conjoints gouvernement-UGTT de 1996 et 1999 visés par les décrets n° 97-2309 et 2001-1997
+
+- id: r-augmentations-ep-2013-2025
+  objet: décret approuvant ou fixant les augmentations générales des salaires des agents des entreprises et établissements publics (loi n° 85-78) pour un cycle postérieur à la période 2011-2012 (décret n° 2013-4159) et antérieur au cycle 2026-2028 (décret n° 2026-64)
+  ou: [precis/fr/remunerations_publiques/_regime_conventionnel.qmd#sec-augmentations-ep]
+  requetes:
+    titres_fts:
+    - (augmentation OR augmentations OR majoration) AND salaires AND (entreprises OR etablissements) AND publics
+    titres_like: ['%approbation des augmentations des salaires%', '%augmentation des salaires des agents des entreprises%']
+    iort_ar: [الزيادة في الأجور]
+    depuis: 2013-10-15
+  periode:
+    jusqu_au: 2026-04-30
+    motif: le décret n° 2026-64 du 30 avril 2026 (JORT n° 44) ouvre le cycle 2026-2028
+  passes:
+  - date: 2026-10-05
+    role: rédacteur
+    sources: [jort_cache]
+    couverture: 'jort_cache jusqu''au 18 septembre 2026, titres français (FTS et LIKE) et arabes (LIKE « الزيادة في الأجور ») : seuls répondent, après 2013-4159, les décrets de la fonction publique (2019-209, 2019-1133, 2020-767, 2022-797, 2026-63), des magistrats (2019-210) et le décret n° 2026-64. Plein texte des fascicules non parcouru ; les fascicules inconnus de jort_cache (outillage-sources.md, § 1 f) échappent à la requête.'
+    couvert_jusqu_au: 2026-04-30
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules de 2014 à 2025 (augmentation des salaires, entreprises publiques)
+  - relancer avec --sonder-pist pour les fascicules inconnus de jort_cache
+
+- id: r-ige-2011
+  objet: décret majorant l'indemnité de gestion et d'exécution (décret n° 82-505) au titre de l'année 2011
+  ou: [precis/fr/remunerations_publiques/_regime_indiciaire.qmd#sec-cycles-revalorisation]
+  requetes:
+    titres_fts: [gestion AND execution AND indemnite]
+    titres_like: ['%indemnite de gestion et d%execution%']
+    plein_texte: [indemnité de gestion et d'exécution, augmentation des salaires, augmentation générale des salaires]
+    depuis: 2010-08-24
+  periode:
+    jusqu_au: 2012-12-07
+    motif: le décret n° 2012-2959 (JORT n° 97 du 7 décembre 2012) porte l'augmentation de l'indemnité au titre de l'année 2012
+  passes:
+  - date: 2026-10-05
+    role: rédacteur
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache : aucun titre de 2011 ne nomme l''indemnité (seuls 2010-1973 et 2012-2959 encadrent la période). Plein texte des 87 fascicules français de 2011 présents au corpus local (n° 1 à 89, sauf 62 et 73), couche texte lisible pour tous : aucune mention de l''indemnité ; les mentions d''« augmentation globale » relevées sont des visas de décrets de 2005 à 2010 sur d''autres indemnités. Les n° 62, 73 et 90 à 99 de 2011 manquent en français ; leurs fascicules arabes ont une couche texte inexploitable (encodage propre). 2012 parcouru par les titres seulement.'
+    couvert_jusqu_au: 2012-12-07
+    resultat: aucun
+  a_faire:
+  - lire les JORT n° 62, 73 et 90 à 99 de 2011 (fascicules français à obtenir, ou arabes à l'image)
+  - parcourir le plein texte des fascicules de 2012 antérieurs au n° 97
+
+- id: r-accords-cadres-ugtt-utica
+  objet: accords-cadres UGTT-UTICA de négociation salariale du secteur privé (taux et dates par round), postérieurs à la convention collective cadre de 1973
+  ou: [precis/fr/marche_travail/_negociations.qmd#sec-mt-accords-cadres]
+  requetes:
+    titres_fts: [UGTT OR UTICA, accord AND salaires]
+    titres_like: ['%UGTT%', '%UTICA%', '%Union Generale Tunisienne du Travail%']
+    depuis: 1973-06-01
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local, presse]
+    couverture: titres et objets de jort_cache (FTS et LIKE) ; corpus local data/ugtt et data/conventions_collectives (posts de presse syndicale 2016-2026, aucun texte d'accord cadre) ; plein texte des fascicules non parcouru ; archives de presse antérieures à 2016 et rapports du ministère des affaires sociales non consultés
+    couvert_jusqu_au: 2026-04-30
+    resultat: aucun
+  a_faire:
+  - archives d'Echaab antérieures à 2016
+  - rapports annuels du ministère des affaires sociales
+  - études de l'OIT sur la négociation collective en Tunisie

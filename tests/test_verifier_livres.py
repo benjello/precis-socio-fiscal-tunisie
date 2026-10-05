@@ -1,12 +1,15 @@
 """Tests des fonctions pures de `scripts/verifier_livres.py` (voir `scripts/verifier.sh`)."""
 
+import io
 import sys
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
 from verifier_livres import (  # noqa: E402
+    _cli,
     LIVRES,
     compter_arobases_cassees,
     compter_citations_non_resolues,
@@ -25,6 +28,13 @@ DIFF_CONTENU = "--- a/x\n+++ b/x\n@@ -2 +2 @@\n-1990,19.8\n+1990,99.9\n"
 
 
 class LivresTouchesTest(unittest.TestCase):
+
+    def test_cli_docs_seules_ne_produit_pas_un_livre_vide(self):
+        sortie = io.StringIO()
+        with patch("sys.stdin", io.StringIO("AGENTS.md\ndocs/notes/backlog-precis.md\n")), \
+             patch("sys.stdout", sortie):
+            self.assertEqual(_cli(["livres-touches"]), 0)
+        self.assertEqual(sortie.getvalue(), "")
 
     def test_fichier_d_un_seul_livre(self):
         self.assertEqual(

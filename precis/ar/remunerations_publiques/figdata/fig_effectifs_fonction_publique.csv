@@ -1,9 +1,9 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-23
-# séries (tunisia_data) : fonction-publique-effectifs
-# sources (citation) : @ins-fonction-publique-2021
-# fiches : sources/ins-fonction-publique-salaires-2010-2021.md
-# méthode/hypothèses : rupture de série collectivités locales 2016→2017 (changement de périmètre/comptage)
-# note : أعداد أعوان الوظيفة العمومية التونسية، 2015-2021
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-03
+# séries (tunisia_data) : fonction-publique-effectifs, fonction-publique-effectifs-2018-2025
+# sources (citation) : @ins-fonction-publique-2021, @ins-fonction-publique-2025
+# fiches : sources/ins-fonction-publique-salaires-2010-2021.md, sources/ins-fonction-publique-2018-2025.md
+# méthode/hypothèses : rupture de série collectivités locales 2016→2017 (changement de périmètre/comptage), EN AGENTS, et non en milliers comme `fonction-publique-effectifs` (2015-2021), qu'elle recoupe à l'arrondi près sur 2018-2021 (652 225 contre 652,2 milliers en 2018). COUVERTURE CROISSANTE DES COLLECTIVITÉS LOCALES : le rapport avertit que leur évolution « doit être interprétée en tenant compte de l'évolution du champ de couverture de la base INSAF », l'intégration progressive de nouvelles collectivités ayant amélioré l'exhaustivité du fichier ; la hausse de 21 483 (2018) à 26 697 agents (2025) mêle donc recrutements et extension du champ. Source administrative (base INSAF) ; effectif en décembre, précisé par le rapport pour 2025.
+# note : Effectifs de la fonction publique tunisienne, 2015-2025
 السنة,باستثناء الجماعات المحلية,الجماعات المحلية,إجمالي الوظيفة العمومية,المصدر
 2015,595.0,6.9,601.9,المعهد الوطني للإحصاء، مسح 2010-2021
 2016,615.7,6.7,622.4,المعهد الوطني للإحصاء، مسح 2010-2021

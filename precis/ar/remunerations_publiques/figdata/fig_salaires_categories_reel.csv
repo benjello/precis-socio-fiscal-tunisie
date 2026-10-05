@@ -1,0 +1,20 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-03
+# séries (tunisia_data) : ins-salaire-par-categorie-hors-contributions-2018-2025, ins-salaire-par-categorie, bct-ipc-base2015
+# sources (citation) : @ins-fonction-publique-2025, @ins-fonction-publique-2021, @bct-ra
+# fiches : sources/ins-fonction-publique-2018-2025.md, sources/ins-fonction-publique-salaires-2010-2021.md, sources/bct-archives.md
+# méthode/hypothèses : Le tableau 12 ne précise pas à lui seul s'il s'agit du brut avec ou sans contributions. La pondération par les effectifs du tableau 6 redonne le salaire brut sans contributions du tableau 10, notion explicitement nommée par l'INS. Non raccordable au tableau 20 de l'enquête 2010-2021, qui redonne le brut avec contributions., Le tableau 20 est étiqueté salaire mensuel brut. La pondération par les effectifs du tableau 8 redonne les fonctionnaires du tableau 19, puis le tableau 19 pondéré redonne le salaire brut avec contributions du tableau 18, notion explicitement nommée par l'INS. La troisième ligne est libellée A2 en français mais A3 en arabe ; le libellé A3 est rétabli par position., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant six rapports, chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. S'ARRÊTE EN 2024 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : الأجر الشهري الخام حسب الصنف القانوني، بالدينار الثابت لسنة 2015: بدون مساهمات 2018-2024، وللتذكير مع المساهمات 2015-2020
+السنة,المفهوم (المصدر),A1,A2,A3,B,C,D,النسبة أ1/د
+2015,خام مع المساهمات (المعهد الوطني للإحصاء، مسح 2010-2021),2446.6,1655.2,1368.9,1237.5,1141.9,1144.1,2.14
+2016,خام مع المساهمات (المعهد الوطني للإحصاء، مسح 2010-2021),2373.1,1780.7,1463.9,1415.2,1350.3,1135.2,2.09
+2017,خام مع المساهمات (المعهد الوطني للإحصاء، مسح 2010-2021),2327.2,1678.7,1376.4,1328.0,1277.9,1078.6,2.16
+2018,خام مع المساهمات (المعهد الوطني للإحصاء، مسح 2010-2021),2187.4,1621.3,1349.7,1350.9,1244.9,1107.2,1.98
+2019,خام مع المساهمات (المعهد الوطني للإحصاء، مسح 2010-2021),2263.4,1818.2,1535.8,1541.0,1383.7,1316.1,1.72
+2020,خام مع المساهمات (المعهد الوطني للإحصاء، مسح 2010-2021),2368.2,1879.8,1620.7,1617.2,1430.0,1366.4,1.73
+2018,خام دون المساهمات (المعهد الوطني للإحصاء، تقرير 2018-2025),1857.6,1377.2,1160.7,1160.9,1057.0,969.9,1.92
+2019,خام دون المساهمات (المعهد الوطني للإحصاء، تقرير 2018-2025),1893.8,1518.2,1298.2,1301.4,1156.6,1133.5,1.67
+2020,خام دون المساهمات (المعهد الوطني للإحصاء، تقرير 2018-2025),1980.6,1574.5,1374.4,1367.6,1196.5,1167.2,1.7
+2021,خام دون المساهمات (المعهد الوطني للإحصاء، تقرير 2018-2025),1941.5,1510.7,1332.4,1281.3,1088.2,1116.4,1.74
+2022,خام دون المساهمات (المعهد الوطني للإحصاء، تقرير 2018-2025),1878.2,1461.5,1273.7,1242.9,1075.7,1069.0,1.76
+2023,خام دون المساهمات (المعهد الوطني للإحصاء، تقرير 2018-2025),1735.1,1333.8,1169.0,1136.3,987.1,978.9,1.77
+2024,خام دون المساهمات (المعهد الوطني للإحصاء، تقرير 2018-2025),1685.7,1306.3,1135.7,1110.7,970.5,953.5,1.77

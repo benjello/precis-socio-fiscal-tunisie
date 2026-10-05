@@ -20,9 +20,8 @@ dont aucune valeur ne datait de 1960.
 
 Ne sont PAS générés, faute de contrepartie dans le modèle : les tableaux de structure
 juridique (conditions d'âge de l'enfant à charge, congés de maternité, multiplicateurs du
-capital décès, tarifs de l'aide médicale, matrice régime × prestation) et les aides
-ponctuelles de l'AMEN social, dont les cinq paramètres ne portent aucune référence et sont
-datés de 2019 alors que l'arrêté qui les fixe est de 2020.
+capital décès, tarifs de l'aide médicale, matrice régime × prestation). Les aides
+ponctuelles de l'AMEN social sont désormais générées avec leur référence à l'arrêté de 2022.
 """
 
 from __future__ import annotations
@@ -43,7 +42,7 @@ LANGUES = ("fr", "ar")
 # clés de citation — est identique dans les deux langues.
 MOTS = {
     "fr": {
-        "effet": "Effet", "texte": "Texte", "attestation": "Attestation",
+        "effet": "Effet", "date_etat": "Date de l'état", "texte": "Texte",
         "parametre": "Paramètre", "valeur": "Valeur",
         "rang1": "1^er^", "rang2": "2^e^", "rang3": "3^e^", "rang4": "4^e^",
         "rangs_servis": "Rangs servis",
@@ -73,7 +72,7 @@ MOTS = {
         "afnc": "Allocation familiale non contributive, par enfant",
     },
     "ar": {
-        "effet": "بداية السريان", "texte": "النصّ", "attestation": "الإثبات",
+        "effet": "بداية السريان", "date_etat": "تاريخ الحالة", "texte": "النصّ",
         "parametre": "المعيار", "valeur": "القيمة",
         "rang1": "الأوّل", "rang2": "الثاني", "rang3": "الثالث", "rang4": "الرابع",
         "rangs_servis": "الترتيبات المصروفة",
@@ -110,61 +109,15 @@ UNITES = {
            "smig": "{n} ضعف الأجر الأدنى المضمون", "vide": "—"},
 }
 
-# L'arabe accorde le nom compté avec le nombre : singulier à 1, duel à 2, pluriel de 3 à
-# 10, singulier à l'accusatif au-delà. Écrire « 2 أشهر » ou « 36 أشهر » est une faute que
-# le lecteur voit immédiatement, et elle serait recopiée à chaque régénération.
-COMPTE_AR = {
-    "mois": ("شهر", "شهران", "أشهر", "شهرًا"),
-    "ans": ("سنة", "سنتان", "سنوات", "سنة"),
-}
-COMPTE_FR = {"mois": "mois", "ans": "ans"}
-
-
-def compte(n: int, unite: str, langue: str) -> str:
-    if langue != "ar":
-        return f"{n} {COMPTE_FR[unite]}"
-    singulier, duel, pluriel, accusatif = COMPTE_AR[unite]
-    if n == 1:
-        return singulier
-    if n == 2:
-        return duel
-    return f"{n} {pluriel}" if 3 <= n <= 10 else f"{n} {accusatif}"
-
-
 def formateurs(langue):
+    """Les formateurs communs (`ot.formateurs`), et ceux propres au livre."""
     u = UNITES[langue]
-
-    def nombre(v, decimales=0):
-        """Séparateur de milliers par espace insécable fine, décimal par virgule."""
-        if decimales:
-            return f"{v:,.{decimales}f}".replace(",", " ").replace(".", ",")
-        return f"{int(v):,}".replace(",", " ")
-
-    def dinars(v):
-        """Montant en dinars et millimes, sur trois décimales.
-
-        `ot.formate_dinars` élague les zéros de queue — bon pour un plafond fiscal en
-        milliers de dinars, faux ici : les prestations s'écrivent en millimes, et
-        « 18,75 D » pour 18 dinars 750 millimes n'est pas ce qu'imprime le JORT.
-        """
-        if v is None:
-            return u["vide"]
-        brut = nombre(v) if float(v).is_integer() else nombre(v, 3)
-        return brut + u["dinar"]
-
-    def taux(v):
-        return u["vide"] if v is None else ot.formate_taux(v)
-
-    def entier(v):
-        return u["vide"] if v is None else str(int(v))
-
-    def mois(v):
-        return u["vide"] if v is None else compte(int(v), "mois", langue)
+    f = ot.formateurs(langue)
 
     def ans(v):
         if v is None:
             return u["vide"]
-        return u["aucune"] if int(v) == 0 else compte(int(v), "ans", langue)
+        return u["aucune"] if int(v) == 0 else ot.compte(int(v), "ans", langue)
 
     def smig(v):
         if v is None:
@@ -175,7 +128,8 @@ def formateurs(langue):
     def coefficient(v):
         return u["vide"] if v is None else f"× {int(v)}"
 
-    return dinars, taux, entier, mois, ans, smig, coefficient
+    # `montant` : les prestations s'écrivent en millimes, mais seulement s'il y en a.
+    return f.montant, f.taux, f.entier, f.duree("mois"), ans, smig, coefficient
 
 
 # Clés de citation du précis, par date d'effet : elles raccrochent chaque rupture à la
@@ -204,7 +158,6 @@ CLES_AMEN = {
     "2024-01-01": "arrete-2024-02-28-transferts, art. 1-2",
     "2025-01-01": "arrete-2025-01-29-transferts, art. 1-2",
 }
-CLES_PNAFN = {"2018-04-01": "arrete-2024-07-10-allocation-pauvres, art. 1"}
 CLES_SUPPLEMENT = {
     "2020-05-20": "arrete-2020-05-19-transferts, art. 2",
     "2022-02-01": "arrete-2022-04-01-transferts, art. 1",
@@ -285,6 +238,16 @@ def tableaux(langue):
         ])
         return df
 
+    def pnafn_allocation():
+        """Série importante conservée, sans attribuer aux dates une source qui ne les établit pas."""
+        df = ot.tableau_evolution_datee(
+            [(f"{NC}/pnafn/allocation.yaml", m["pnafn"], dinars)],
+            langue=langue, colonne_periode=m["date_etat"], colonne_texte=m["texte"],
+        )
+        if df is not None:
+            df[m["texte"]] = "—"
+        return df
+
     return {
         "af_evolution.md": af_evolution,
         "aides_ponctuelles.md": aides_ponctuelles,
@@ -306,16 +269,11 @@ def tableaux(langue):
             ],
             "1994-10-01", cles=CLES_CRECHE, entetes=entetes_verticales,
         ),
-        "pnafn_allocation.md": lambda: ot.tableau_evolution_datee(
-            [(f"{NC}/pnafn/allocation.yaml", m["pnafn"], dinars)],
-            cles=CLES_PNAFN, avec_attestation=True, langue=langue,
-            colonne_periode=m["effet"], colonne_texte=m["texte"],
-            colonne_attestation=m["attestation"],
-        ),
+        "pnafn_allocation.md": pnafn_allocation,
         "amen_base.md": lambda: ot.tableau_evolution_datee(
             [(f"{NC}/amen_social/allocation_base.yaml", m["amen_base"], dinars)],
             cles=CLES_AMEN, langue=langue,
-            colonne_periode=m["effet"], colonne_texte=m["texte"],
+            colonne_periode=m["date_etat"], colonne_texte=m["texte"],
         ),
         "amen_supplement_enfant.md": lambda: ot.tableau_evolution_datee(
             [
@@ -327,7 +285,7 @@ def tableaux(langue):
                  m["age_etudiant"], ans),
             ],
             cles=CLES_SUPPLEMENT, langue=langue,
-            colonne_periode=m["effet"], colonne_texte=m["texte"],
+            colonne_periode=m["date_etat"], colonne_texte=m["texte"],
         ),
         "amen_vs_afnc.md": lambda: ot.tableau_evolution_datee(
             [
@@ -335,7 +293,7 @@ def tableaux(langue):
                 (f"{NC}/allocation_familiale.yaml", m["afnc"], dinars),
             ],
             cles=CLES_AMEN_ET_AFNC, langue=langue,
-            colonne_periode=m["effet"], colonne_texte=m["texte"],
+            colonne_periode=m["date_etat"], colonne_texte=m["texte"],
         ),
     }
 
@@ -358,13 +316,10 @@ def main() -> int:
             ot.ecrire_tableau(sortie / nom, df, liens, langue)
         print(f"✓ {langue} : {len(tableaux(langue))} tableaux")
 
-    # La figure du PNAFN a besoin des mêmes paliers, mais en valeurs BRUTES : un tableau
-    # markdown porte « 7,700 D » et « 1er janvier 1987 », bons à lire, impropres à tracer.
-    # Cette série est donc émise ici, hors du build — le site se construit sans openfisca
-    # (#165) —, une seule fois puisque des valeurs brutes n'ont pas de langue.
+    # La figure lit un snapshot brut afin que le rendu du site reste autonome.
     serie = [
-        (date, valeur, "oui" if titre else "non")
-        for date, valeur, titre, _lien in ot.serie_datee(f"{NC}/pnafn/allocation.yaml")
+        (date, valeur, "non")
+        for date, valeur, _titre, _lien in ot.serie_datee(f"{NC}/pnafn/allocation.yaml")
         if valeur is not None
     ]
     if not serie:

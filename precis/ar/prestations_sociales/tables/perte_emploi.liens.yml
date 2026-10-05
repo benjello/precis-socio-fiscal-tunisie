@@ -1,0 +1,6 @@
+- libelle: مساهمة المؤجر
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsna/cotisations_employeur/perte_d_emploi.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsna.cotisations_employeur.perte_d_emploi/table/
+- libelle: مساهمة الأجير
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_prive/rsna/cotisations_salarie/perte_d_emploi.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_prive.rsna.cotisations_salarie.perte_d_emploi/table/

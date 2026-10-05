@@ -1,0 +1,18 @@
+- libelle: نسبة الاشتراك التعاقدي ($\gamma$)
+  parametre: parameters/retraite/complementaire/taux_cotisation_contractuel.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.complementaire.taux_cotisation_contractuel/table/
+- libelle: 'الاشتراك الأدنى: أجر الاحتساب، كسرًا من الأجر الأدنى المضمون'
+  parametre: parameters/retraite/complementaire/salaire_minimal_cotisable_part_smig.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.complementaire.salaire_minimal_cotisable_part_smig/table/
+- libelle: جراية القرين الباقي على قيد الحياة
+  parametre: parameters/retraite/complementaire/survivants/taux_reversion.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.complementaire.survivants.taux_reversion/table/
+- libelle: جراية اليتيم
+  parametre: parameters/retraite/complementaire/survivants/taux_orphelin.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.complementaire.survivants.taux_orphelin/table/
+- libelle: جراية يتيم الأب والأم
+  parametre: parameters/retraite/complementaire/survivants/taux_orphelin_pere_et_mere.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.complementaire.survivants.taux_orphelin_pere_et_mere/table/
+- libelle: السنّ التي يوقف قبلها الزواج من جديد جراية القرين
+  parametre: parameters/retraite/complementaire/survivants/age_limite_suspension_remariage.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.complementaire.survivants.age_limite_suspension_remariage/table/

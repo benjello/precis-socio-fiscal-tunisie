@@ -1,39 +1,71 @@
 ---
 title: "Précis de la législation socio-fiscale de la Tunisie"
 subtitle: "Historique et cadre législatif des politiques publiques en Tunisie"
+format:
+  html:
+    include-in-header: ../accueil.html
 ---
 
-Bienvenue sur le portail documentaire interactif du système socio-fiscal tunisien. Ce portail vise à documenter les évolutions de la législation sociale et fiscale depuis l'indépendance de la Tunisie en 1956 et à permettre aux experts (juristes, économistes, responsables de politiques publiques) d'y contribuer de manière collaborative.
-
-🌍 **Langues disponibles :** [Français](../fr/index.html) | [Arabe](../ar/index.html)
-
-## Précis disponibles
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-6 .g-col-lg-6}
-### [Les prestations sociales](./prestations_sociales/)
-Les programmes d’aide et d’assistance sociale, de soutien à l’emploi, et les différentes prestations monétaires et non monétaires.
+::: {.lien-langue}
+[العربية](../ar/index.html){lang="ar"}
 :::
 
-::: {.g-col-12 .g-col-md-6 .g-col-lg-6}
-### [Le système de retraite](./retraites/)
-Historique et fonctionnement du système de retraite par répartition en Tunisie (secteur public et secteur privé).
+::: {.objet-precis}
+Ce précis documente, texte par texte, l'évolution de la législation sociale et fiscale de la Tunisie, principalement depuis l'indépendance, en 1956, et rattache chaque règle à sa source au *Journal officiel*. Il s'adresse aux juristes, aux économistes et aux responsables de politiques publiques.
 :::
 
-::: {.g-col-12 .g-col-md-6 .g-col-lg-6}
-### [Les cotisations sociales](./cotisations_sociales/)
-Calcul et évolution des cotisations sociales et autres prélèvements obligatoires sur les revenus du travail.
+## Les huit volumes
+
+::: {.sommaire-volumes}
+
+1. [La fiscalité](./fiscalite/)
+
+   L'impôt sur le revenu des personnes physiques, l'impôt sur les sociétés, la taxe sur la valeur ajoutée et les droits de consommation : ce qui les précédait, leur institution et leurs réformes.
+
+2. [Les cotisations sociales](./cotisations_sociales/)
+
+   Qui cotise, sur quelle assiette et à quel taux : le cadre commun, chaque branche des origines à l'état actuel, et ce qui distingue les régimes.
+
+3. [Les prestations sociales](./prestations_sociales/)
+
+   Les prestations autres que les pensions : celles que servent les caisses de sécurité sociale, et celles de l'assistance sociale, attribuées sous condition de ressources.
+
+4. [Les retraites](./retraites/)
+
+   La pension, dans le secteur public et dans le secteur privé : qui y a droit, comment elle se calcule, ce qu'elle devient au décès de son titulaire et comment elle évolue.
+
+5. [Les caisses de sécurité sociale](./caisses/)
+
+   La CNSS, la CNRPS et la CNAM : les caisses dont elles procèdent depuis le Protectorat, leur statut commun, leurs comptes par régime et leurs relations avec l'État.
+
+6. [Les rémunérations dans le secteur public](./remunerations_publiques/)
+
+   Le périmètre du secteur public, puis, régime par régime, la construction de la rémunération des agents et les prélèvements qui la frappent.
+
+7. [Les finances locales](./finances_locales/)
+
+   Les collectivités locales et ce qui les finance : les notions d'abord, puis les institutions, les impôts locaux et les transferts de l'État, et leur évolution sur la longue période.
+
+8. [Le marché du travail](./marche_travail/)
+
+   Le salaire minimum, les conventions collectives et les négociations salariales du secteur privé : leurs institutions, leurs textes et leur évolution sur la longue période.
+
 :::
 
-::: {.g-col-12 .g-col-md-6 .g-col-lg-6}
-### [La fiscalité](./fiscalite/)
-Le système fiscal tunisien.
+## Comment lire ce précis
+
+::: {.lecture-precis}
+
+- Chaque règle est rattachée au texte qui la fixe ; la bibliographie lie les textes à leur publication au *Journal officiel de la République tunisienne*, sur `pist.tn`.
+- Les tableaux de paramètres donnent des valeurs datées ; leur onglet « Base législative » mène, pour chaque grandeur, à toutes ses valeurs datées et à leurs références.
+- Chaque volume se clôt sur un glossaire bilingue, français et arabe.
+- En Tunisie, le droit fait foi dans sa version arabe : les lois, décrets-lois, décrets et arrêtés sont publiés au *Journal officiel* en langue arabe, et leur publication dans une autre langue ne vaut qu'à titre d'information ([loi n° 93-64 du 5 juillet 1993, art. 1er](https://www.pist.tn/jort/1993/1993F/Jo05093.pdf)). Pour appliquer une règle, c'est donc le texte arabe qu'il faut lire.
+- Le précis, lui, est rédigé en français, puis traduit en arabe automatiquement et contrôlé : entre ses deux versions, c'est le texte français du précis qui sert de référence. Une traduction peut comporter des erreurs ; signalez-les (voir ci-dessous).
+
 :::
 
-::: {.g-col-12 .g-col-md-6 .g-col-lg-6}
-### [Les rémunérations dans le secteur public](./remunerations_publiques/)
-Structure et évolution des rémunérations des agents publics : statuts, grilles indiciaires, indemnités et masse salariale.
-:::
+## Contribuer
 
+::: {.contribuer}
+Le précis se construit de manière collaborative : juristes, économistes et responsables de politiques publiques peuvent y contribuer. Pour signaler une erreur, proposer une source ou une correction, ouvrez un ticket sur le [dépôt du précis](https://github.com/benjello/precis-socio-fiscal-tunisie/issues). La page [À propos et contribuer](a-propos.html) dit ce que nous cherchons et comment réagir sans compétence technique.
 :::

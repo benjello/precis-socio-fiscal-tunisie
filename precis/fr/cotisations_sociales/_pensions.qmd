@@ -1,0 +1,149 @@
+# Les pensions {#sec-cot-pensions}
+
+```{python}
+#| echo: false
+#| output: false
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+
+TABLES = Path.cwd() / "tables"
+
+
+def table(nom, legende, label, **options):
+    """Tableau de paramètres : snapshot versionné, régénéré depuis openfisca-tunisia.
+
+    Les valeurs viennent des paramètres du modèle, la colonne « Texte » de leurs
+    références. Régénération : `scripts/generate_cotisations_tables.py`.
+    """
+    print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label, **options))
+
+
+def onglets(panneaux, **options):
+    """Plusieurs tableaux sous des onglets : (titre, nom, légende, label)."""
+    print(ot.markdown_onglets(
+        [(titre, TABLES / f"{nom}.md", legende, label) for titre, nom, legende, label in panneaux],
+        **options))
+```
+
+## Les origines {#sec-cot-pensions-origines}
+
+Au secteur privé, les pensions ne relèvent pas de la loi n° 60-30, qui institue les assurances sociales et les prestations familiales, mais de la loi n° 60-33 du même jour, qui institue le régime de pensions d'invalidité, de vieillesse et de survivants du secteur non agricole [@loi60-33]. Sa cotisation propre et sa quote-part du taux global sont fixées par le décret n° 74-499 du 27 avril 1974 [@decret74-499, art. 5 et 9].
+
+Au secteur public, la retenue pour pension est plus ancienne : la loi n° 59-18 du 5 février 1959 institue un prélèvement de 7 % sur le traitement de base au profit de la Caisse nationale de retraites [@loi59-18, art. 5], à côté d'une contribution de l'État (@sec-cot-cnrps).
+
+## Le secteur privé {#sec-cot-pensions-prive}
+
+Dans le régime général, le régime de pensions reçoit deux ressources, qui ont chacune leur histoire : une cotisation propre, et une quote-part prélevée sur le taux global de la loi n° 60-30.
+
+**La cotisation propre du régime de pensions** suit sa propre trajectoire, fixée par le décret n° 74-499 du 27 avril 1974 [@decret74-499] et ses modificatifs.
+
+| Depuis | Texte | Total exigible | Employeur | Salarié |
+|---|---|---:|---:|---:|
+| 1974 | décret n° 74-499, art. 9 | 3,75 % | 2,50 | 1,25 |
+| 1^er^ juillet 1994 | décret n° 94-1429, art. 9 nouveau (taux fixé à 5,75 %) | 4,25 % | 2,50 | 1,75 |
+| 1^er^ juillet 1995 | idem, palier suivant | 4,75 % | 2,50 | 2,25 |
+| 1^er^ juillet 1996 | idem | 5,25 % | 2,50 | 2,75 |
+| avril 1997, au plus tôt le 9 | décret n° 97-555, art. 9 nouveau | 5,25 % | 2,50 | 2,75 |
+| *1^er^ juillet 1997* | *palier prévu par le décret n° 94-1429, supprimé avant son échéance* | *5,75 %* | *2,50* | *3,25* |
+
+: Cotisation propre du régime de pensions du secteur non agricole, 1974-1997 {#tbl-pensions-rsna}
+
+Le décret n° 94-1429 du 30 juin 1994 récrit l'article 9 d'une manière qu'il faut lire de près. Il fixe le taux de la cotisation propre à **5,75 %** des salaires, dont 2,5 % à la charge des employeurs et 3,25 % à la charge des travailleurs, mais rend cette dernière part « exigible » par paliers : 1,75 % à partir du 1^er^ juillet 1994, 2,25 % à partir du 1^er^ juillet 1995, 2,75 % à partir du 1^er^ juillet 1996 et 3,25 % à partir du 1^er^ juillet 1997 [@decret94-1429, art. 1]. Les totaux du tableau sont donc ceux des taux **exigibles** à chaque date ; le taux de 5,75 % que le texte énonce ne devait l'être qu'au dernier palier.
+
+Ce dernier palier n'a jamais été atteint. Le décret n° 97-555 du 31 mars 1997 abroge et remplace l'article 9 et fixe la cotisation à **5,25 %**, dont 2,50 % à la charge des employeurs et 2,75 % à celle des travailleurs [@decret97-555, art. 1], soit le niveau exigible depuis juillet 1996. Il n'énonce pas de date d'effet : publié au *Journal officiel* du 4 avril 1997, il devient exécutoire cinq jours après le dépôt du journal au siège du gouvernorat de Tunis [@loi93-64, art. 2], soit au plus tôt le 9 avril 1997 — en tout état de cause avant le 1^er^ juillet 1997. La part des travailleurs n'a donc jamais dépassé 2,75 %, et le total de 5,25 % est celui qui est encore en vigueur.
+
+À cette cotisation propre s'ajoute une **quote-part prélevée sur le taux global** des régimes de la loi n° 60-30, dont le décret n° 74-499 fixe le principe à l'article 5 b) : une fraction, exprimée en vingtièmes, de « la masse des cotisations patronales et ouvrières » de ces régimes. Trois décrets l'ont relevée, chacun avec une date d'effet expressément énoncée.
+
+| Effet | Texte | Quote-part | Taux global de l'art. 41 de la loi n° 60-30 | Lecture « en points » | Lecture littérale |
+|---|---|---:|---:|---:|---:|
+| 1974 | décret n° 74-499, art. 5 b) | 1,25/20^e^ | 20 % | 1,25 | 1,25 |
+| 1^er^ janvier 1988 | décret n° 88-1137, art. 1-2 | 4,25/20^e^ | 20 % | 4,25 | 4,25 |
+| 1^er^ janvier 1994 | décret n° 94-1429, art. 1-2 | 6,25/20^e^ | 20 % | 6,25 | 6,25 |
+| février 1997 | loi n° 97-4, art. 41 nouveau | 6,25/20^e^ | 18 % | 6,25 | 5,625 |
+| 1^er^ janvier 2003 | décret n° 2003-1212, art. 1-2 | 7,25/20^e^ | 18 % | 7,25 | 6,525 |
+
+: Quote-part du taux global affectée au régime de pensions du secteur non agricole, 1974-2003, en points de salaire selon les deux lectures {#tbl-quote-part-rsna}
+
+La quote-part vaut 1,25/20^e^ dans la rédaction de 1974 [@decret74-499, art. 5] ; le décret n° 88-1137 du 11 juin 1988 la porte à 4,25/20^e^ à compter du 1^er^ janvier 1988 [@decret88-1137, art. 1-2] ; le décret n° 94-1429 à 6,25/20^e^ à compter du 1^er^ janvier 1994 — c'est la seule disposition de ce décret à laquelle son article 2 donne un effet rétroactif [@decret94-1429, art. 1-2] ; le décret n° 2003-1212 du 2 juin 2003 à **7,25/20^e^**, « à partir du 1^er^ janvier 2003 » [@decret2003-1212, art. 1-2]. Aucun autre modificatif de l'article 5 b) n'est identifié ici. Le pouvoir de ventiler le taux global entre les régimes, dont ces relèvements procèdent, et ce que les comptes de la caisse en montrent sont exposés dans le livre [« Les caisses de sécurité sociale »](../caisses/_comptes_regimes.html#sec-caisses-transferts).
+
+<!-- RECHERCHE r-dec74-499-modificatifs : modificatifs du décret n° 74-499, dont l'art. 5 b) (voir docs/recherches.yml) -->
+
+**Cette fraction se lit de deux façons.** Exprimée en vingtièmes, elle date d'un temps où le taux global de l'article 41 de la loi n° 60-30 était de 20 % — 15 % à la charge de l'employeur et 5 % à celle du travailleur [@loi60-30, art. 41] : un vingtième de la masse des cotisations valait alors un point de salaire, et les deux lectures coïncidaient. Depuis que la loi n° 97-4 a ramené ce taux global à 18 % [@loi97-4], elles divergent. Lue « en points », la quote-part de 7,25/20^e^ vaut 7,25 points de salaire ; lue littéralement, comme une fraction des 18 %, elle en vaut 6,525. Aucun texte identifié ne convertit la fraction après 1997. La caisse applique la lecture « en points » : ses annuaires statistiques publient pour la branche un taux de 12,5 %, en renvoyant au décret n° 2003-1212 — le livre « Retraites » en donne la référence et présente la série du taux légal de la branche sous les deux lectures.
+
+<!-- TODO (bibliographe) : la clé cnss-annuaires-statistiques (annuaires statistiques 2013 et 2017
+de la CNSS, p. 340 et p. 346 pour le taux de 12,5 %) n'existe que dans precis/fr/retraites/references.json.
+La verser dans le fonds commun precis/fr/references.json (et son pendant arabe) pour pouvoir la
+citer ici au lieu du renvoi au livre « Retraites ». Elle servirait aussi à sourcer, dans la note de
+lecture de la figure fig-effectifs-par-regime, les 1 263 non-assujettis de 2000 (annuaire 2013,
+tableau 1). -->
+
+L'ambiguïté porte sur la part des 18 % que l'on attribue au régime de pensions, non sur ce que paient employeurs et travailleurs : le taux global, la cotisation propre et le total de 23,75 % (@tbl-somme-trois-textes) sont les mêmes dans les deux lectures. Le régime de pensions cumule ainsi, depuis 2003, 5,25 points de cotisation propre et une quote-part de 7,25 points dans la lecture de la caisse, soit **12,50 %** ; dans la lecture littérale, 6,525 points de quote-part, soit **11,775 %**.
+
+Les autres régimes du secteur privé affectent aux pensions une part de leur taux global, fixée par leur texte fondateur ou son décret d'application ; ces parts sont rassemblées plus bas (@tbl-kappa).
+
+<!-- TODO (documentaliste) : le plan du livre prévoit, pour le secteur privé, les réformes de 2007 et de 2019. Aucune des notes du dossier ne rattache à ces années un texte modifiant la cotisation de la branche des pensions de la CNSS ; à établir sur texte ou à retirer du plan. -->
+
+## Le secteur public {#sec-cot-pensions-public}
+
+La contribution de l'agent public a évolué comme suit.
+
+```{python}
+#| echo: false
+#| output: asis
+table("cnrps_retraite",
+      "Cotisation retraite du salarié affilié à la CNRPS, 1959-2020",
+      "tbl-cnrps-retraite")
+```
+
+La série se lit en quatre temps.
+
+**De 1959 à 1974, le taux ne bouge pas** — mais l'assiette, si. La loi n° 73-71 du 19 novembre 1973 [@loi73-71] remplace l'article 5 de la loi de 1959 en **maintenant les 7 %** et en étendant le prélèvement aux indemnités et primes entrant dans le calcul de la pension. C'est le premier avertissement que donne cette série : un taux plat ne signifie pas un prélèvement inchangé.
+
+**En 1975, le taux baisse à 5 %**, par l'article 38 de la loi de finances pour 1975 [@loi74-101-lf1975] — le seul mouvement à la baisse de toute la série. Là encore l'assiette s'élargit simultanément, aux émoluments globaux indiciaires ; et l'article suivant ramène de 10 % à 7 % la subvention de l'État. La baisse de deux points ne se lit donc pas comme une baisse nette du prélèvement.
+
+**Le millésime de 1985 ne change rien au taux** : 5 % avant, 5 % après. Il marque la re-consécration du prélèvement dans un texte neuf, non un relèvement. Sa date même est déduite plutôt que lue — l'article 75 fait entrer la loi en vigueur six mois après sa publication du 12 mars, soit le 12 septembre 1985, sans que le texte énonce cette date.
+
+**À partir de 1994, la remontée est continue**, et elle procède de trois textes seulement. La loi n° 94-71 [@loi94-71] porte le taux à 6 %. Puis deux **échéanciers pluriannuels** font le reste du travail : l'article 85 de la loi de finances pour 2002 [@loi2001-123-lf2002] relève la part de l'assuré social d'un point, réparti en 0,50 point au 1^er^ juillet 2002, 0,25 en 2003 et 0,25 en 2004 ; l'article premier de la loi n° 2007-43 [@loi2007-43] la relève de 1,2 point, en trois marches de 0,40 point aux 1^ers^ juillet 2007, 2008 et 2009. Les paliers de 2003, 2004, 2008 et 2009 n'ont donc **aucun texte propre** : ils étaient écrits d'avance, dans deux articles.
+
+Le dernier mouvement est de 2019. L'article 4 de la **loi n° 2019-37** [@loi2019-37] majore les taux de trois points au total, mais les répartit inégalement dans le temps et entre les parties : « Au titre de l'employeur : 2 % à partir du premier jour du mois qui suit la date d'entrée en vigueur de la présente loi. Au titre de l'agent : 1 % à partir du premier janvier 2020. » La part salariale monte donc d'un point **en une seule fois**, au 1^er^ janvier 2020. En soixante ans, elle aura gagné 2,2 points, dont la totalité depuis 1994.
+
+::: {.callout-note title="Une date que le texte n'établit pas"}
+Le premier millésime de la série est affiché au 1^er^ février 1959. La loi n° 59-18 n'énonce pourtant **aucune date d'effet** pour son article 5 : la seule date qu'elle fixe, le 1^er^ avril 1959, porte sur l'ouverture des droits à pension et non sur la retenue. Le fascicule qui la publie est daté des 3-6 février 1959. La date affichée par ce tableau est donc une convention, et non une date énoncée par le texte.
+:::
+
+La part de l'employeur public suit une trajectoire parallèle mais décalée : 10 % en 1959, ramenée à 7 % en 1975, elle remonte à partir de 1995 et atteint 14,5 % en 2019. Un détail de calendrier mérite d'être noté, parce qu'il se lit dans les textes eux-mêmes : les marches de la loi de 2007 tombent au 1^er^ **janvier** côté employeur et au 1^er^ **juillet** côté salarié. Les deux parts ne progressent pas au même rythme dans l'année.
+
+Les textes qui relèvent la part de l'employeur sont ceux qui relèvent celle de l'agent, à une exception près. La loi n° 94-71 l'augmente de 1,2 point au 1^er^ juillet 1995 [@loi94-71] ; l'article 85 de la loi de finances pour 2002, de 1,5 point par paliers de 2002 à 2006 [@loi2001-123-lf2002, art. 85] ; la loi n° 2007-43, de 1,8 point de 2007 à 2009 [@loi2007-43] ; la loi n° 2019-37, de 2 points [@loi2019-37, art. 4]. L'exception est le **décret-loi n° 2011-48**, qui relève d'un point la seule contribution de l'employeur, au 1^er^ juillet 2011 [@decretloi2011-48].
+
+```{python}
+#| echo: false
+#| output: asis
+table("cnrps_employeur",
+      "Contribution de l'employeur public au régime des pensions civiles et militaires, 1959-2019",
+      "tbl-cnrps-employeur")
+```
+
+Sources : [@loi59-18, art. 8 ; @loi74-101-lf1975, art. 39 ; @loi94-71 ; @loi2001-123-lf2002, art. 85 ; @loi2007-43 ; @decretloi2011-48 ; @loi2019-37, art. 4]. La colonne « Variation » donne, ligne par ligne, le mouvement qu'opère le texte. Comme pour la retenue de l'agent, le millésime de 1959 est une convention : la loi n° 59-18 n'énonce pas de date d'effet pour son article 8.
+
+## La longue période {#sec-cot-pensions-longue-periode}
+
+On note $\kappa$ le taux légal de la branche des pensions d'un régime, part de l'employeur et part de l'assuré réunies. C'est à lui que le livre « Retraites » compare le taux de cotisation d'équilibre de chaque régime ; le tableau suivant en donne, régime par régime, la valeur à l'origine et la dernière valeur fixée par un texte identifié.
+
+| Régime | À l'origine | Dernier état identifié |
+|---|---|---|
+| Salariés non agricoles | 5 % en 1974 : cotisation propre de 3,75 % et quote-part de 1,25/20^e^ [@decret74-499, art. 5 et 9] | 12,50 % depuis 2003 dans la lecture de la caisse, 11,775 % dans la lecture littérale (@tbl-quote-part-rsna) |
+| Salariés agricoles | 5,25 % en 1981 [@decret81-224, art. 1] | même texte |
+| Salariés agricoles, régime amélioré | aucun texte identifié pour l'ensemble du régime ; 7,5 % pour les pêcheurs indépendants et les petits armateurs [@decret90-548, art. 1-2] | même texte |
+| Travailleurs non salariés | 5,25 % dans les deux régimes de 1982 [@decret82-1359, art. 8 ; @decret82-1360, art. 5] | 7 % depuis 1995 [@decret95-1166, art. 9] |
+| Tunisiens à l'étranger | 5,25 % en 1989 [@decret89-107, art. 7] | même texte |
+| Travailleurs à faibles revenus | 5 points en 2002 [@decret2002-916, art. 14 et 15] | même texte |
+| Artistes, créateurs et intellectuels | 7 % en 2002 [@loi2002-104, art. 7] | même texte |
+| Pensions civiles et militaires | retenue de 7 % sur l'agent, contribution de l'État de 10 % (1959) [@loi59-18, art. 5 et 8] | agent : @tbl-cnrps-retraite ; employeur : @tbl-cnrps-employeur |
+| Membres du gouvernement, députés, gouverneurs | retenue de 10 %, contribution de l'État de 15 % (1983-1988) [@loi83-31, art. 5 ; @loi85-16, art. 5 ; @loi88-16, art. 5] | relevées par les mêmes textes que celles de la CNRPS (@sec-cot-regimes-speciaux) |
+
+: Taux légal $\kappa$ de la branche des pensions, par régime : à l'origine et dans le dernier texte identifié {#tbl-kappa}
+
+Au secteur privé, les relèvements identifiés se placent entre 1988 et 2003 — dans le régime général en 1988, de 1994 à 1996 et en 2003, pour les travailleurs non salariés en 1995 ; au secteur public, ils commencent en 1994 et se poursuivent jusqu'en 2019. Le livre « Retraites » rapporte ces taux aux pensions servies, régime par régime, pour en tirer le taux d'équilibre.

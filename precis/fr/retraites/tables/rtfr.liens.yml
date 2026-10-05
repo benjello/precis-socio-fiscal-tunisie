@@ -1,0 +1,45 @@
+- libelle: Âge d'ouverture de la pension de vieillesse
+  parametre: parameters/retraite/rtfr/age_legal.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtfr.age_legal/table/
+- libelle: Stage
+  parametre: parameters/retraite/rtfr/stage_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtfr.stage_mois/table/
+- libelle: Taux de la pension au terme du stage, en part du salaire minimum du secteur
+  parametre: parameters/retraite/rtfr/taux_base.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtfr.taux_base/table/
+- libelle: Majoration par trimestre au-delà du stage
+  parametre: parameters/retraite/rtfr/majoration_par_trimestre.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtfr.majoration_par_trimestre/table/
+- libelle: Plafond du taux de la pension
+  parametre: parameters/retraite/rtfr/plafond_taux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtfr.plafond_taux/table/
+- libelle: 'Invalidité : stage'
+  parametre: parameters/retraite/rtfr/invalidite/stage_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtfr.invalidite.stage_mois/table/
+- libelle: 'Invalidité : taux de base'
+  parametre: parameters/retraite/rtfr/invalidite/taux_base.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtfr.invalidite.taux_base/table/
+- libelle: Majoration pour tierce personne
+  parametre: parameters/retraite/rtfr/invalidite/majoration_tierce_personne.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtfr.invalidite.majoration_tierce_personne/table/
+- libelle: Réversion au conjoint
+  parametre: parameters/retraite/rtfr/survivants/taux_conjoint.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtfr.survivants.taux_conjoint/table/
+- libelle: Pensions d'orphelins, ensemble
+  parametre: parameters/retraite/rtfr/survivants/taux_orphelins.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtfr.survivants.taux_orphelins/table/
+- libelle: 'Âge limite de l''orphelin : droit commun ; études secondaires ou professionnelles
+    ; études supérieures (1)'
+  parametre: parameters/retraite/rtfr/survivants/age_limite_orphelin.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtfr.survivants.age_limite_orphelin/table/
+- libelle: 'Âge limite de l''orphelin : droit commun ; études secondaires ou professionnelles
+    ; études supérieures (2)'
+  parametre: parameters/retraite/rtfr/survivants/age_limite_orphelin_etudes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtfr.survivants.age_limite_orphelin_etudes/table/
+- libelle: 'Âge limite de l''orphelin : droit commun ; études secondaires ou professionnelles
+    ; études supérieures (3)'
+  parametre: parameters/retraite/rtfr/survivants/age_limite_orphelin_etudes_superieures.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtfr.survivants.age_limite_orphelin_etudes_superieures/table/
+- libelle: Âge avant lequel le remariage suspend la réversion
+  parametre: parameters/retraite/rtfr/survivants/age_remariage_suspensif.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rtfr.survivants.age_remariage_suspensif/table/

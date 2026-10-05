@@ -1,0 +1,40 @@
+# Les conventions collectives {#sec-mt-conventions}
+
+Les conventions collectives fixent, branche par branche, l'échelle des salaires au-dessus du salaire minimum. Ce chapitre en retient ce qui a un effet sur les salaires : la convention cadre de 1973, l'articulation entre le salaire minimum, les grilles conventionnelles et les décrets pour les salariés que nulle convention ne couvre, puis les conventions de branche et leurs avenants.
+
+## La convention collective cadre de 1973 {#sec-mt-cadre-1973}
+
+La [convention collective cadre](#g-convention-collective-cadre) est signée le 20 mars 1973 par l'UTICA et l'UGTT, et approuvée par un arrêté du ministre des affaires sociales du 29 mai 1973, qui la rend obligatoire pour toutes les activités non agricoles ; elle entre en vigueur le 1er juin 1973 [@arrete-1973-05-29-convention-cadre]. Trois de ses clauses commandent la formation des salaires.
+
+- **Elle est la base de chaque convention de branche** et renvoie à celles-ci les grilles de salaires et les indemnités [@arrete-1973-05-29-convention-cadre, art. 1 et 50].
+- **Elle rattache les salaires au salaire minimum** : ils sont fixés compte tenu d'un SMIG établi sur la base du coût de la vie [@arrete-1973-05-29-convention-cadre, préambule].
+- **Elle fixe un rythme de révision** : la convention ne peut être dénoncée ou révisée qu'au plus tôt trois ans après son entrée en vigueur, puis par périodes de deux années civiles ; à défaut d'accord, le Gouvernement arbitre [@arrete-1973-05-29-convention-cadre, art. 3].
+
+Le décret n° 73-247 du 26 mai 1973, publié au même *Journal officiel*, lève l'interdit que le code du travail de 1966 faisait aux conventions de traiter des salaires : elles fixent désormais les salaires, leurs accessoires et les classifications, sur la base d'un SMIG fixé par décret [@decret73-247, art. 1 et 2; @loi66-27, art. 51].
+
+## Trois étages de salaires {#sec-mt-trois-etages}
+
+À partir de 1973, l'échelle des salaires du secteur privé non agricole compte trois étages, fixés chacun par un acte différent.
+
+| Étage | Qui est concerné | Acte qui fixe le salaire |
+|---|---|---|
+| Salaire minimum | tout salarié de 18 ans et plus | décret fixant le SMIG [@decret73-247, art. 2; @loi96-62, art. 134 (nouveau)] |
+| Salaire conventionnel | les salariés d'une branche couverte par une convention agréée | grilles annexées à la convention et à ses avenants, agréés par arrêté [@loi66-27, art. 37, 38 et 42] |
+| Salaire des secteurs non couverts | les salariés qu'aucune convention sectorielle ni aucun statut particulier ne couvre | décret de majoration des salaires, par catégorie [@loi96-62, art. 134 (nouveau); @decret2026-69, art. 1] |
+
+: Les trois étages des salaires du secteur privé non agricole {#tbl-mt-trois-etages}
+
+Le [salaire conventionnel](#g-salaire-conventionnel) d'une catégorie ne peut être inférieur au salaire minimum [@loi96-62, art. 134 (nouveau) et 134-3] ; une hausse du SMIG relève donc mécaniquement le bas des grilles dont les premiers échelons l'atteignent, sans relever les autres.
+
+## Les conventions de branche et leurs avenants {#sec-mt-sectorielles}
+
+Les premières conventions de branche sont agréées avant la convention cadre : celle des hôtels, restaurants et cafés en 1969, celle des salines en 1971 [@arrete-1969-07-02-cc-hotellerie; @arrete-1971-06-23-cc-salines]. Les agréments se multiplient après elle : le même jour, le 29 août 1974, sont agréées les conventions de la construction métallique, du textile, de la mécanique générale et de l'électricité, et de l'imprimerie [@arrete-1974-08-29-cc-construction-metallique; @arrete-1974-08-29-cc-textile; @arrete-1974-08-29-cc-mecanique; @arrete-1974-08-29-cc-imprimerie]. Le mouvement se poursuit jusqu'à aujourd'hui : la convention sectorielle des grands, moyens et petits espaces commerciaux est agréée le 4 février 2025 [@arrete-2025-02-04-cc-espaces-commerciaux].
+
+Une convention de branche porte, en annexe, des **grilles de salaires** par catégorie et par échelon, et des **indemnités** — de transport et de présence notamment. Ses **avenants** révisent ces grilles et ces indemnités ; agréés à leur tour, ils s'imposent à toute la branche. C'est sur ces deux éléments, les salaires de base de tous les échelons des dernières grilles annexées et les indemnités de transport et de présence, que le décret n° 2026-68 applique sa hausse de 5 % par an [@decret2026-68, art. 1] (@sec-mt-2026).
+
+<!-- TODO (documentaliste) : la couverture conventionnelle — nombre de salariés couverts par une
+convention agréée, part de l'emploi salarié privé — n'a pas de source dans la note
+docs/notes/marche-travail-conventions-collectives.md (§ 2, § 8). Pistes : rapports du ministère des
+affaires sociales, ILOSTAT (« collective bargaining coverage rate »). Lire aussi une grille par
+branche (textile, BTP, commerce, hôtellerie) pour situer le bas de grille par rapport au SMIG, et
+dresser la liste des conventions en vigueur depuis les arrêtés d'agrément. -->

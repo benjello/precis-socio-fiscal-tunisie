@@ -11,8 +11,8 @@ import json
 import re
 import sys
 
-LIVRES = ("cotisations_sociales", "fiscalite", "prestations_sociales",
-          "remunerations_publiques", "retraites")
+LIVRES = ("caisses", "cotisations_sociales", "finances_locales", "fiscalite", "marche_travail",
+          "prestations_sociales", "remunerations_publiques", "retraites")
 
 # Un fichier sous ces préfixes touche potentiellement TOUS les livres : les
 # modules Python que les figures importent (`from figures import …` mis à part —
@@ -33,6 +33,7 @@ PREFIXES_PARTAGES = (
     "scripts/tarifs.py",
     "precis/glossaire.yml",
     "precis/legendes.scss",
+    "precis/legendes.html",
     "precis/_seriescache/",
 )
 
@@ -44,7 +45,7 @@ def livres_touches(fichiers: list[str]) -> list[str]:
     """Les livres à rendre, déduits des chemins modifiés.
 
     Un fichier posé directement sous `precis/<langue>/` (pas dans un sous-dossier
-    de livre) ou sous l'un des préfixes partagés fait rendre les CINQ livres :
+    de livre) ou sous l'un des préfixes partagés fait rendre TOUS les livres :
     une bibliographie ou une feuille de style communes, par exemple, ne
     « appartiennent » à aucun livre en particulier.
     """
@@ -139,7 +140,9 @@ def _cli(argv: list[str]) -> int:
     entree = sys.stdin.read()
     if commande == "livres-touches":
         fichiers = [l for l in entree.splitlines() if l.strip()]
-        print("\n".join(livres_touches(fichiers)))
+        livres = livres_touches(fichiers)
+        if livres:
+            print("\n".join(livres))
         return 0
     if commande == "citations":
         print(compter_citations_non_resolues(entree))

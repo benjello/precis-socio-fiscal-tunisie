@@ -1,0 +1,5 @@
+series: [ins-salaire-par-categorie-hors-contributions-2018-2025, ins-salaire-par-categorie]
+sources: [ins-fonction-publique-2025, ins-fonction-publique-2021]
+fiches: [sources/ins-fonction-publique-2018-2025.md, sources/ins-fonction-publique-salaires-2010-2021.md]
+caveats: [Le tableau 12 ne précise pas à lui seul s'il s'agit du brut avec ou sans contributions. La pondération par les effectifs du tableau 6 redonne le salaire brut sans contributions du tableau 10, notion explicitement nommée par l'INS. Non raccordable au tableau 20 de l'enquête 2010-2021, qui redonne le brut avec contributions., Le tableau 20 est étiqueté salaire mensuel brut. La pondération par les effectifs du tableau 8 redonne les fonctionnaires du tableau 19, puis le tableau 19 pondéré redonne le salaire brut avec contributions du tableau 18, notion explicitement nommée par l'INS. La troisième ligne est libellée A2 en français mais A3 en arabe ; le libellé A3 est rétabli par position.]
+generated: 2026-10-03

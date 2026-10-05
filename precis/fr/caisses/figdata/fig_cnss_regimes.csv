@@ -1,0 +1,111 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-03
+# séries (tunisia_data) : cnss-retrospective-ressources-emplois, irpp-ratios
+# sources (citation) : @cnss-retrospective-1990-2004, @minfin-recettes-fiscales, @minfin-indicateurs-fp
+# fiches : sources/cnss-retrospective-financiere-1990-2004.md, sources/minfinances-recettes-fiscales.md
+# méthode/hypothèses : SCAN SANS COUCHE TEXTE, valeurs océrisées et contrôlées par les IDENTITÉS COMPTABLES (sous-totaux, totaux, résultat = ressources − emplois, ensemble = somme des régimes) ; colonne `statut` sur chaque valeur (lu, lu_corrige, deduit_identite, masque_reliure). LA RELIURE MASQUE une colonne d'années sur la plupart des tableaux (1999 surtout, 2000 sur certains) : 430 cellules sont rétablies par une identité à une seule inconnue et 68 par le solveur fragments + identités (chiffres visibles lus case par case ; valeur unique compatible avec eux et avec toutes les identités ; validé sans erreur sur 771 valeurs connues masquées à l'identique), jamais devinées dans la colonne `valeur` ; 360 y restent vides, listées avec leur fragment visible dans cnss_retrospective_valeurs_a_retrouver.csv (221 à lire sur l'original, le reste s'en déduit). ESTIMATIONS PROVISOIRES : en attendant l'original, ces 360 cellules (1999 surtout, quelques-unes de 2000) reçoivent une estimation tracée (colonnes `estimation`, `methode_estimation`, `incertitude` ; tendance de la ligne, candidats compatibles avec les chiffres visibles, mise en cohérence avec les identités comptables), et `valeur_ou_estimation` réunit valeurs et estimations pour l'exploitation directe : les valeurs 1999 — et certaines de 2000 — de cette colonne sont donc pour partie des ESTIMATIONS, à ne pas citer comme données publiées. Estimations publiées et versionnées dans cnss_retrospective_estimations.csv, remplacées quand l'original est relu. Quatorze identités s'écartent de 2 mD entre valeurs imprimées vérifiées à l'image (totaux 2004 de tableaux jumeaux, emplois 1996) : écarts de la source, laissés tels quels. Unité : milliers de dinars (les cotisations 2000-2004 recoupent la série cnss-cotisations, en millions, à 1 % près). Comptabilité « Bilans » (droits constatés) : ne pas confondre avec les cotisations encaissées. Montants courants, non déflatés., sources/minfinances-recettes-fiscales.md
+# note : Ressources et emplois des régimes de la CNSS, toutes branches confondues : taux de couverture des emplois par les ressources et résultat de gestion, en dinars courants et rapporté au PIB et aux ressources de la caisse, 1990-2004
+Année,Régime,Total des ressources (MD),Total des emplois (MD),Résultat de gestion (MD),Taux de couverture (%),Résultat (% du PIB),Résultat (% des ressources de la CNSS),Estimations provisoires,"PIB, ministère des Finances (MD)",Total des ressources de la CNSS (MD)
+1990,Salariés non agricoles,358.926,264.895,94.03,135.5,0.8694,24.521,,10815.7,383.5
+1990,Salariés agricoles,1.08,4.688,-3.609,23.0,-0.0334,-0.941,,10815.7,383.5
+1990,Régime agricole amélioré,3.025,1.575,1.45,192.1,0.0134,0.378,,10815.7,383.5
+1990,"Non-salariés, secteur non agricole",5.854,6.109,-0.255,95.8,-0.0024,-0.066,,10815.7,383.5
+1990,"Non-salariés, secteur agricole",3.678,11.632,-7.954,31.6,-0.0735,-2.074,,10815.7,383.5
+1990,Tunisiens à l'étranger,0.109,0.016,0.093,681.2,0.0009,0.024,,10815.7,383.5
+1991,Salariés non agricoles,412.18,288.518,123.663,142.9,1.0281,28.254,,12028.8,437.7
+1991,Salariés agricoles,1.147,5.037,-3.891,22.8,-0.0323,-0.889,,12028.8,437.7
+1991,Régime agricole amélioré,3.467,2.079,1.388,166.8,0.0115,0.317,,12028.8,437.7
+1991,"Non-salariés, secteur non agricole",7.314,7.243,0.071,101.0,0.0006,0.016,,12028.8,437.7
+1991,"Non-salariés, secteur agricole",3.493,12.603,-9.109,27.7,-0.0757,-2.081,,12028.8,437.7
+1991,Tunisiens à l'étranger,0.135,0.021,0.114,642.9,0.0009,0.026,,12028.8,437.7
+1992,Salariés non agricoles,502.529,367.499,135.03,136.7,0.9852,24.912,,13705.9,542.0
+1992,Salariés agricoles,0.955,6.033,-5.078,15.8,-0.037,-0.937,,13705.9,542.0
+1992,Régime agricole amélioré,4.315,2.413,1.902,178.8,0.0139,0.351,,13705.9,542.0
+1992,"Non-salariés, secteur non agricole",15.71,11.789,3.921,133.3,0.0286,0.723,,13705.9,542.0
+1992,"Non-salariés, secteur agricole",5.762,15.456,-9.694,37.3,-0.0707,-1.788,,13705.9,542.0
+1992,Tunisiens à l'étranger,0.327,0.036,0.291,908.3,0.0021,0.054,,13705.9,542.0
+1993,Salariés non agricoles,530.168,386.663,143.506,137.1,0.9787,25.347,,14662.9,566.2
+1993,Salariés agricoles,0.672,6.596,-5.924,10.2,-0.0404,-1.046,,14662.9,566.2
+1993,Régime agricole amélioré,5.548,3.3,2.248,168.1,0.0153,0.397,,14662.9,566.2
+1993,"Non-salariés, secteur non agricole",14.014,16.363,-2.349,85.6,-0.016,-0.415,,14662.9,566.2
+1993,"Non-salariés, secteur agricole",4.501,18.21,-13.709,24.7,-0.0935,-2.421,,14662.9,566.2
+1993,Tunisiens à l'étranger,0.29,0.127,0.163,228.3,0.0011,0.029,,14662.9,566.2
+1994,Salariés non agricoles,693.073,495.053,198.02,140.0,1.2522,26.829,,15813.8,738.1
+1994,Salariés agricoles,0.806,6.981,-6.175,11.5,-0.039,-0.837,,15813.8,738.1
+1994,Régime agricole amélioré,7.542,5.885,1.657,128.2,0.0105,0.224,,15813.8,738.1
+1994,"Non-salariés, secteur non agricole",19.02,17.356,1.664,109.6,0.0105,0.225,,15813.8,738.1
+1994,"Non-salariés, secteur agricole",6.367,18.871,-12.504,33.7,-0.0791,-1.694,,15813.8,738.1
+1994,Tunisiens à l'étranger,0.336,0.083,0.253,404.8,0.0016,0.034,,15813.8,738.1
+1995,Salariés non agricoles,661.874,484.874,177.0,136.5,1.038,22.438,,17051.8,788.8
+1995,Salariés agricoles,0.734,7.589,-6.855,9.7,-0.0402,-0.869,,17051.8,788.8
+1995,Régime agricole amélioré,7.42,5.392,2.028,137.6,0.0119,0.257,,17051.8,788.8
+1995,"Non-salariés, secteur non agricole",25.147,25.849,-0.702,97.3,-0.0041,-0.089,,17051.8,788.8
+1995,"Non-salariés, secteur agricole",11.003,23.622,-12.619,46.6,-0.074,-1.6,,17051.8,788.8
+1995,Tunisiens à l'étranger,0.546,1.447,-0.901,37.7,-0.0053,-0.114,,17051.8,788.8
+1995,Étudiants,0.181,1.393,-1.213,13.0,-0.0071,-0.154,,17051.8,788.8
+1996,Salariés non agricoles,723.658,568.841,154.817,127.2,0.812,17.266,,19066.2,896.7
+1996,Salariés agricoles,0.966,8.766,-7.8,11.0,-0.0409,-0.87,,19066.2,896.7
+1996,Régime agricole amélioré,11.252,6.757,4.495,166.5,0.0236,0.501,,19066.2,896.7
+1996,"Non-salariés, secteur non agricole",50.744,31.333,19.411,162.0,0.1018,2.165,,19066.2,896.7
+1996,"Non-salariés, secteur agricole",17.828,30.763,-12.934,58.0,-0.0678,-1.442,,19066.2,896.7
+1996,Tunisiens à l'étranger,0.525,0.227,0.298,231.3,0.0016,0.033,,19066.2,896.7
+1996,Étudiants,0.354,0.436,-0.082,81.2,-0.0004,-0.009,,19066.2,896.7
+1997,Salariés non agricoles,674.275,506.667,167.608,133.1,0.7305,19.979,,22943.9,838.9
+1997,Salariés agricoles,0.642,8.007,-7.365,8.0,-0.0321,-0.878,,22943.9,838.9
+1997,Régime agricole amélioré,9.603,6.422,3.181,149.5,0.0139,0.379,,22943.9,838.9
+1997,"Non-salariés, secteur non agricole",41.393,26.207,15.186,157.9,0.0662,1.81,,22943.9,838.9
+1997,"Non-salariés, secteur agricole",6.976,25.054,-18.078,27.8,-0.0788,-2.155,,22943.9,838.9
+1997,Tunisiens à l'étranger,0.389,0.307,0.082,126.7,0.0004,0.01,,22943.9,838.9
+1997,Étudiants,0.198,0.946,-0.748,20.9,-0.0033,-0.089,,22943.9,838.9
+1998,Salariés non agricoles,707.119,567.385,139.734,124.6,0.5628,15.271,,24827.6,915.0
+1998,Salariés agricoles,0.784,9.707,-8.923,8.1,-0.0359,-0.975,,24827.6,915.0
+1998,Régime agricole amélioré,9.868,8.076,1.792,122.2,0.0072,0.196,,24827.6,915.0
+1998,"Non-salariés, secteur non agricole",57.058,42.562,14.496,134.1,0.0584,1.584,,24827.6,915.0
+1998,"Non-salariés, secteur agricole",20.067,39.766,-19.699,50.5,-0.0793,-2.153,,24827.6,915.0
+1998,Tunisiens à l'étranger,0.556,0.512,0.044,108.6,0.0002,0.005,,24827.6,915.0
+1998,Étudiants,0.22,1.73,-1.51,12.7,-0.0061,-0.165,,24827.6,915.0
+1999,Salariés non agricoles,753.131,626.595,126.536,120.2,0.4649,13.087,,27215.9,966.9
+1999,Salariés agricoles,0.741,10.554,-9.813,7.0,-0.0361,-1.015,,27215.9,966.9
+1999,Régime agricole amélioré,10.107,8.795,1.312,114.9,0.0048,0.136,,27215.9,966.9
+1999,"Non-salariés, secteur non agricole",65.704,55.34,10.364,118.7,0.0381,1.072,,27215.9,966.9
+1999,"Non-salariés, secteur agricole",19.809,42.746,-22.937,46.3,-0.0843,-2.372,,27215.9,966.9
+1999,Tunisiens à l'étranger,0.686,0.755,-0.069,90.9,-0.0003,-0.007,,27215.9,966.9
+1999,Étudiants,0.265,0.892,-0.627,29.7,-0.0023,-0.065,,27215.9,966.9
+2000,Salariés non agricoles,840.051,696.371,143.68,120.6,0.4882,13.363,,29433.4,1075.2
+2000,Salariés agricoles,0.879,11.5,-10.621,7.6,-0.0361,-0.988,,29433.4,1075.2
+2000,Régime agricole amélioré,11.797,9.727,2.07,121.3,0.007,0.193,,29433.4,1075.2
+2000,"Non-salariés, secteur non agricole",66.016,56.867,9.149,116.1,0.0311,0.851,,29433.4,1075.2
+2000,"Non-salariés, secteur agricole",20.59,50.662,-30.072,40.6,-0.1022,-2.797,,29433.4,1075.2
+2000,Tunisiens à l'étranger,0.776,0.669,0.107,116.0,0.0004,0.01,,29433.4,1075.2
+2000,Étudiants,0.445,1.415,-0.97,31.4,-0.0033,-0.09,,29433.4,1075.2
+2001,Salariés non agricoles,929.647,775.956,153.691,119.8,0.4841,12.876,,31746.4,1193.6
+2001,Salariés agricoles,0.899,12.017,-11.118,7.5,-0.035,-0.931,,31746.4,1193.6
+2001,Régime agricole amélioré,11.232,19.139,-7.907,58.7,-0.0249,-0.662,,31746.4,1193.6
+2001,"Non-salariés, secteur non agricole",74.626,58.052,16.574,128.6,0.0522,1.389,,31746.4,1193.6
+2001,"Non-salariés, secteur agricole",21.412,50.085,-28.673,42.8,-0.0903,-2.402,,31746.4,1193.6
+2001,Tunisiens à l'étranger,0.875,0.674,0.201,129.8,0.0006,0.017,,31746.4,1193.6
+2001,Étudiants,0.485,1.956,-1.471,24.8,-0.0046,-0.123,,31746.4,1193.6
+2002,Salariés non agricoles,993.939,854.959,138.98,116.3,0.4328,10.844,,32112.0,1281.6
+2002,Salariés agricoles,0.931,12.362,-11.431,7.5,-0.0356,-0.892,,32112.0,1281.6
+2002,Régime agricole amélioré,12.189,9.369,2.82,130.1,0.0088,0.22,,32112.0,1281.6
+2002,"Non-salariés, secteur non agricole",86.433,66.829,19.604,129.3,0.061,1.53,,32112.0,1281.6
+2002,"Non-salariés, secteur agricole",22.379,56.478,-34.099,39.6,-0.1062,-2.661,,32112.0,1281.6
+2002,Tunisiens à l'étranger,1.006,0.868,0.138,115.9,0.0004,0.011,,32112.0,1281.6
+2002,Travailleurs à faibles revenus,0.233,0.035,0.198,665.7,0.0006,0.015,,32112.0,1281.6
+2002,Étudiants,0.577,1.951,-1.374,29.6,-0.0043,-0.107,,32112.0,1281.6
+2003,Salariés non agricoles,1012.514,941.079,71.435,107.6,0.2063,5.398,,34630.0,1323.5
+2003,Salariés agricoles,1.065,13.534,-12.469,7.9,-0.036,-0.942,,34630.0,1323.5
+2003,Régime agricole amélioré,12.428,10.087,2.341,123.2,0.0068,0.177,,34630.0,1323.5
+2003,"Non-salariés, secteur non agricole",97.885,81.157,16.728,120.6,0.0483,1.264,,34630.0,1323.5
+2003,"Non-salariés, secteur agricole",22.645,56.71,-34.065,39.9,-0.0984,-2.574,,34630.0,1323.5
+2003,Tunisiens à l'étranger,1.105,0.646,0.459,171.1,0.0013,0.035,,34630.0,1323.5
+2003,Travailleurs à faibles revenus,2.474,0.876,1.598,282.4,0.0046,0.121,,34630.0,1323.5
+2003,Étudiants,1.527,3.291,-1.764,46.4,-0.0051,-0.133,,34630.0,1323.5
+2004,Salariés non agricoles,1061.484,1054.351,7.133,100.7,0.019,0.51,,37601.2,1399.6
+2004,Salariés agricoles,1.016,15.539,-14.523,6.5,-0.0386,-1.038,,37601.2,1399.6
+2004,Régime agricole amélioré,13.627,14.427,-0.8,94.5,-0.0021,-0.057,,37601.2,1399.6
+2004,"Non-salariés, secteur non agricole",108.273,88.584,19.689,122.2,0.0524,1.407,,37601.2,1399.6
+2004,"Non-salariés, secteur agricole",22.512,64.947,-42.435,34.7,-0.1129,-3.032,,37601.2,1399.6
+2004,Tunisiens à l'étranger,1.251,1.394,-0.143,89.7,-0.0004,-0.01,,37601.2,1399.6
+2004,Travailleurs à faibles revenus,6.049,2.739,3.31,220.8,0.0088,0.236,,37601.2,1399.6
+2004,"Artistes, créateurs et intellectuels",0.0,0.345,-0.345,0.0,-0.0009,-0.025,,37601.2,1399.6
+2004,Étudiants,1.762,5.928,-4.166,29.7,-0.0111,-0.298,,37601.2,1399.6

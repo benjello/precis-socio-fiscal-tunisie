@@ -14,8 +14,8 @@ Les deux langues sont produites ici, et non par la pipeline de traduction : ces 
 sont des données, pas de la prose. Seuls les en-têtes et les libellés changent d'une langue
 à l'autre ; les valeurs, les dates et les clés de citation sortent du même paramètre.
 
-CE QUE CES CINQ TABLEAUX DISENT, ET CE QU'ILS NE DISENT PAS
------------------------------------------------------------
+CE QUE CES TABLEAUX DISENT, ET CE QU'ILS NE DISENT PAS
+------------------------------------------------------
 Ils donnent des **niveaux datés** — un âge, un taux, un montant, une fraction du salaire
 minimum — et le texte qui fixe chacun. Ils ne donnent pas les conditions qui entourent ces
 niveaux : la durée de 35 ans de services qui s'ajoute à l'âge des fonctions astreignantes,
@@ -23,9 +23,16 @@ le caractère facultatif du maintien en activité, la nature de la prestation se
 carrières courtes. Ces règles sont dans la prose du chapitre, à l'endroit où le tableau
 paraît, et le tableau ne s'y substitue pas.
 
-SEPT TABLEAUX DU LIVRE RESTENT ÉCRITS À LA MAIN, et ce n'est pas un retard : les paramètres
-ne portent pas la distinction que leurs colonnes affirment. Le huitième, celui des âges
-militaires, est engendré depuis le 20 septembre 2026.
+PLUSIEURS TABLEAUX DU LIVRE RESTENT ÉCRITS À LA MAIN — la liste complète est dans
+`docs/notes/recension-parametres-en-dur.md` —, parmi lesquels les cinq ci-dessous, et ce
+n'est pas un retard : les paramètres ne portent pas la distinction que leurs colonnes affirment. Celui des âges militaires est
+engendré depuis le 20 septembre 2026 ; ceux du salaire de référence et des survivants du
+régime non agricole, et celui de l'évolution du régime agricole, depuis le 3 octobre 2026,
+comme TABLEAUX MIXTES (`ot.tableau_gabarit`) : le texte de chaque case reste celui du
+chapitre, et chaque valeur y est lue dans le paramètre, à la date qui la fonde. C'est ce qui
+manquait pour engendrer un tableau dont la démonstration tient à ses règles — le CHOIX entre
+deux périodes de 1974, la NON-MODIFICATION de l'article 19 en 1990, le sort de la réversion
+au remariage. Voir `tableaux_lot_a`.
 
 - `tbl-cnrps-bonifications` : les paramètres `bonifications/cadre_actif/service_*` portent
   bien le barème 5 / 4 / 3 / 2, mais non la distinction des trois catégories de l'article 32
@@ -44,19 +51,6 @@ militaires, est engendré depuis le 20 septembre 2026.
   hors de portée : les CONDITIONS de chaque cas — approbation du licenciement par la
   commission de contrôle, inscription au bureau de l'emploi, constat de l'usure, nombre
   d'enfants vivants — sont des faits de situation, non des valeurs datées.
-- `tbl-rsna-reference` : `rsna/salaire_reference/duree_mois` porte désormais la fenêtre du
-  régime non agricole — 60, 84 puis 120 mois en 1994, 1995 et 1996 (PR openfisca-tunisia-pension
-  #51, fusionnée le 20 septembre 2026). Elle ne couvre que TROIS des cinq lignes du tableau.
-  Les deux premières ne sont pas des valeurs datées : celle de 1974 offre un CHOIX entre
-  trente-six et soixante mois, « selon que l'une ou l'autre de ces périodes de référence est
-  plus avantageuse », et celle de 1990 énonce une NON-MODIFICATION — le décret n° 90-1455
-  récrit l'article 18 et laisse l'article 19 intact. Engendrer les trois dernières lignes
-  amputerait le tableau de ce qui en fait la démonstration.
-- `tbl-rsna-survivants` : l'arbre a désormais sa branche « survivants » (PR
-  openfisca-tunisia-pension#52), mais elle n'en porte que la moitié. Trois des six lignes
-  du tableau sont des RÈGLES et non des valeurs : le sort de la réversion en cas de
-  remariage, le plafond de cumul de l'article 38, qui borne un total par un autre montant,
-  et l'interdiction de cumuler invalidité et survivant, levée en 1997.
 - `tbl-rsna-revalo-montant` et `tbl-rsna-revalo-taux` : la série du SMIG est datée et sourcée
   chez `openfisca-tunisia`, et le cœur chiffré de ces deux tableaux en sortirait. Mais leur
   objet n'est pas le SMIG : c'est la **revalorisation des pensions**, et le paramètre ne
@@ -124,6 +118,8 @@ MOTS = {
         "cumul": "Taux cumulé en fin de tranche",
         "plafond": "Plafond du taux de la pension",
         "minimum": "[Pension minimale garantie](#g-pension-minimale-garantie)",
+        "allocation_vieillesse": "[Allocation de vieillesse](#g-allocation-de-vieillesse)",
+        "allocation_duree": "Allocation de vieillesse : services requis",
         "enfant1": "1^er^ enfant",
         "enfant2": "2^e^ enfant",
         "enfant3": "3^e^ enfant",
@@ -155,13 +151,12 @@ MOTS = {
         "rtns_minimum": "Pension minimale",
         "smig_ou_smag": "du SMIG ou du SMAG",
         "rtns_allocation": "[Allocation de vieillesse](#g-allocation-de-vieillesse), ouverte dès",
+        "rtns_jours_smag": "[SMAG](#g-smag) du revenu de référence, rapporté à une durée annuelle de",
         "classe": "Classe {k}",
         "assiette": "[Classes de revenus](#g-classe-de-revenus)",
         "assiette_dinars": "[revenu forfaitaire](#g-revenu-forfaitaire) annuel, en dinars",
         "assiette_smig": "multiple du SMIG",
         "assiette_smig_smag": "multiple du SMIG ou du SMAG",
-        "mois": ("mois", "mois", "mois", "mois"),
-        "trimestres": ("trimestre", "trimestres", "trimestres", "trimestres"),
     },
     "ar": {
         "effet": "بداية السريان",
@@ -183,6 +178,8 @@ MOTS = {
         "cumul": "النسبة المتراكمة في نهاية الشريحة",
         "plafond": "سقف نسبة تصفية الجراية",
         "minimum": "[الجراية الدنيا المضمونة](#g-pension-minimale-garantie)",
+        "allocation_vieillesse": "[منحة الشيخوخة](#g-allocation-de-vieillesse)",
+        "allocation_duree": "منحة الشيخوخة: الخدمات المستوجبة",
         "enfant1": "الطفل الأوّل",
         "enfant2": "الطفل الثاني",
         "enfant3": "الطفل الثالث",
@@ -212,68 +209,17 @@ MOTS = {
         "rtns_minimum": "الجراية الدنيا",
         "smig_ou_smag": "من الأجر الأدنى المضمون أو من الأجر الأدنى الفلاحي المضمون",
         "rtns_allocation": "[منحة الشيخوخة](#g-allocation-de-vieillesse)، ابتداءً من",
+        "rtns_jours_smag": "[الأجر الأدنى الفلاحي المضمون](#g-smag) المعتمد للدخل المرجعي، محسوبًا على أساس مدة سنوية قدرها",
         "classe": "الشريحة {k}",
         "assiette": "[شرائح الدخل](#g-classe-de-revenus)",
         "assiette_dinars": "[الدخل التقديري](#g-revenu-forfaitaire) السنوي، بالدينار",
         "assiette_smig": "مضاعف الأجر الأدنى المضمون",
         "assiette_smig_smag": "مضاعف الأجر الأدنى المضمون أو الأجر الأدنى الفلاحي المضمون",
-        # Formes du nom compté, comme COMPTE_AR : 1, 2, 3 à 10, au-delà.
-        "mois": ("شهر", "شهران", "أشهر", "شهرًا"),
-        "trimestres": ("ثلاثية", "ثلاثيتان", "ثلاثيات", "ثلاثية"),
     },
 }
 
-# L'arabe accorde le nom compté avec le nombre : singulier à 1, duel à 2, pluriel de 3 à 10,
-# singulier à l'accusatif au-delà. « 60 سنوات » est une faute que le lecteur voit, et elle
-# serait recopiée à chaque régénération.
-COMPTE_AR = ("سنة", "سنتان", "سنوات", "سنة")
-
-
-def annees(n: int, langue: str) -> str:
-    if langue != "ar":
-        return f"{n} ans" if n > 1 else f"{n} an"
-    if n == 1:
-        return COMPTE_AR[0]
-    if n == 2:
-        return COMPTE_AR[1]
-    return f"{n} {COMPTE_AR[2]}" if 3 <= n <= 10 else f"{n} {COMPTE_AR[3]}"
-
-
-def formateurs(langue):
-    m = MOTS[langue]
-
-    def age(v):
-        """Un âge, rendu en années accordées."""
-        return m["vide"] if v is None else annees(int(v), langue)
-
-    def taux(v):
-        return m["vide"] if v is None else ot.formate_taux(v)
-
-    def dinars(v):
-        """Montant en dinars et millimes, sur trois décimales.
-
-        `ot.formate_dinars` élague les zéros de queue — faux ici : les indemnités
-        familiales s'écrivent en millimes, et « 7,6 D » pour 7 dinars 600 millimes n'est
-        pas ce qu'imprime le Journal officiel.
-        """
-        if v is None:
-            return m["vide"]
-        brut = f"{v:,.3f}".replace(",", " ").replace(".", ",")
-        return brut + (" D" if langue == "fr" else " د")
-
-    def part_smig(v):
-        """Une fraction du salaire minimum, rendue comme fraction et non en pourcentage.
-
-        Les textes écrivent « les deux tiers du SMIG » et « la moitié du SMIG » ; le
-        paramètre les approche par 0,66666 et 0,5. Imprimer « 66,67 % » donnerait un
-        chiffre que ne porte aucun texte.
-        """
-        if v is None:
-            return m["vide"]
-        fraction = Fraction(v).limit_denominator(12)
-        return f"{fraction.numerator}/{fraction.denominator} {m['smig']}"
-
-    return age, taux, dinars, part_smig
+# Les noms comptés, l'accord arabe et les formateurs de cellules sont communs aux
+# générateurs : `ot.compte`, `ot.annees`, `ot.formateurs`.
 
 
 # Clés de citation du précis, par date d'effet : elles raccrochent chaque rupture à la
@@ -299,7 +245,7 @@ CLES_PLAFOND_PLANCHER = {
     "1959-04-01": "loi59-18, art. 22, § II, et 52",
     "1970-07-01": "decretloi70-1, art. 1 et 2",
     "1981-05-01": "loi81-70, art. 4-5",
-    "1985-09-12": "loi85-12, art. 38 et 39",
+    "1985-09-12": "loi85-12, art. 38, 39 et 42",
 }
 CLES_INDEMNITES = {
     "1986-05-01": "decret86-611, art. 1 et 3",
@@ -331,7 +277,12 @@ CLES_RTNS_VIEILLESSE = {
 }
 CLES_RTNS_AGRICOLE = {
     "1982-07-01": "decret82-1360, art. 8, 17 et 18",
-    "1995-07-19": "decret95-1166, art. 24 et 39",
+    "1995-07-19": "decret95-1166, art. 7, 24, 25 et 39",
+    # Le SMAG rapporté à 180, 260 puis 300 jours, à titre transitoire : dérogation au
+    # décret n° 95-1166, exécutoire le 19 octobre 1996.
+    "1996-10-19": "decret-96-1797, art. 1",
+    "1997-01-01": "decret-96-1797, art. 1",
+    "1998-01-01": "decret-96-1797, art. 1",
 }
 CLES_RTNS_CLASSES = {
     "1982-07-01": "decret82-1359, art. 7 et 26",
@@ -360,6 +311,7 @@ LIENS = {
         "plafond": "Plafond du taux de la pension",
         "minimum": "Pension minimale",
         "allocation": "Durée de cotisation ouvrant l'allocation de vieillesse",
+        "jours_smag": "Durée annuelle à laquelle le SMAG du revenu de référence est rapporté",
         "classes_dinars": "Classes de revenus en dinars, du 1er juillet 1982 au 21 octobre 1989",
         "classes_smig": "Classes de revenus en multiples du SMIG, du 22 octobre 1989 au "
                         "18 juillet 1995",
@@ -387,6 +339,7 @@ LIENS = {
         "plafond": "سقف نسبة الجراية",
         "minimum": "الجراية الدنيا",
         "allocation": "مدة الاشتراك التي تفتح الحقّ في منحة الشيخوخة",
+        "jours_smag": "المدة السنوية التي يُحتسب على أساسها الأجر الأدنى الفلاحي المضمون المعتمد للدخل المرجعي",
         "classes_dinars": "شرائح الدخل بالدينار، من 1 جويلية 1982 إلى 21 أكتوبر 1989",
         "classes_smig": "شرائح الدخل بمضاعفات الأجر الأدنى المضمون، من 22 أكتوبر 1989 "
                         "إلى 18 جويلية 1995",
@@ -410,84 +363,12 @@ LIENS = {
 }
 
 
-def compte(n: int, formes: tuple[str, str, str, str], langue: str) -> str:
-    """Un nombre et son nom compté : « 120 mois », « 40 ثلاثية », « 10 ثلاثيات »."""
-    if langue != "ar":
-        return f"{n} {formes[0] if n == 1 else formes[1]}"
-    if n == 1:
-        return formes[0]
-    if n == 2:
-        return formes[1]
-    return f"{n} {formes[2]}" if 3 <= n <= 10 else f"{n} {formes[3]}"
-
-
-def en_vigueur(serie, date: str):
-    """(date d'effet, valeur) en vigueur à `date` dans une série de `ot.serie_datee`."""
-    retenue = None
-    for d, v, *_ in serie:
-        if d <= date:
-            retenue = (d, v)
-    return retenue
-
-
-def enchaine(segments, date: str):
-    """Valeur en vigueur à `date` le long de séries successives, et son formateur.
-
-    `segments` : [(série, formateur)], de la plus ancienne à la plus récente. Le régime des
-    non-salariés en est l'exemple : l'état de 1982 prend fin, par une valeur nulle, le jour
-    où commence celui du décret n° 95-1166. À date d'effet égale, la valeur non nulle
-    l'emporte — la fin d'un état n'efface pas le début du suivant. Rend (None, None) quand
-    aucune série n'a de valeur : la case restera vide, jamais à zéro.
-    """
-    meilleur = None
-    for serie, formateur in segments:
-        point = en_vigueur(serie, date)
-        if point is None:
-            continue
-        rang = (point[0], point[1] is not None)
-        if meilleur is None or rang >= meilleur[0]:
-            meilleur = (rang, point[1], formateur)
-    if meilleur is None or meilleur[1] is None:
-        return None, None
-    return meilleur[1], meilleur[2]
-
-
-def tableau_enchaine(lectures, colonnes, cles, langue, colonne_periode, colonne_texte):
-    """Tableau daté — une ligne par date d'effet — dont une cellule peut lire plusieurs séries.
-
-    Même forme que `ot.tableau_evolution_datee`, dont il est le complément : colonne
-    « Effet », une colonne par grandeur, colonne « Texte » tirée des clés de citation.
-    `lectures` : [(chemin, libellé du lien)] — chaque paramètre lu, noté au relevé.
-    `colonnes` : [(en-tête, cellule)] où `cellule(séries, date)` rend le texte de la case.
-    """
-    import pandas as pd
-
-    series = {}
-    for chemin, libelle in lectures:
-        serie = ot.serie_datee(chemin)
-        if not serie:
-            print(f"✗ paramètre introuvable ou vide : {chemin}")
-            return None
-        series[chemin] = serie
-        # Sans libellé, le paramètre n'a pas de lien propre : le nœud qui le contient est
-        # noté par la fabrique (les classes de revenus, un lien par barème).
-        if libelle:
-            ot.releve_note(chemin, libelle)
-    dates = sorted({d for serie in series.values() for d, *_ in serie})
-    lignes = []
-    for date in dates:
-        ligne = {colonne_periode: ot.formate_date(date, langue)}
-        for entete, cellule in colonnes:
-            ligne[entete] = cellule(series, date)
-        # Sans clé, le titre de la référence prend la case : `verifie_texte` l'arrête.
-        ligne[colonne_texte] = f"[@{cles[date]}]" if date in cles else date
-        lignes.append(ligne)
-    return pd.DataFrame(lignes)
-
-
 def tableaux(langue):
     m = MOTS[langue]
-    age, taux, dinars, part_smig = formateurs(langue)
+    f = ot.formateurs(langue)
+    age, taux, dinars, part_smig = f.age, f.taux, f.millimes, f.part_smig
+    annees, compte, en_vigueur, enchaine, cellule = (
+        ot.annees, ot.compte, ot.en_vigueur, ot.enchaine, ot.cellule)
     datee = dict(langue=langue, colonne_periode=m["effet"], colonne_texte=m["texte"])
 
     def ages():
@@ -548,24 +429,7 @@ def tableaux(langue):
     lien = LIENS[langue]
     enchainee = dict(langue=langue, colonne_periode=m["effet"], colonne_texte=m["texte"])
 
-    def coefficient(v):
-        """Un multiple du salaire minimum : « 2/3 », « 1 », « 1,5 », « 18 »."""
-        fraction = Fraction(v).limit_denominator(12)
-        if fraction.denominator == 1:
-            return str(fraction.numerator)
-        if fraction.denominator == 3:
-            return f"{fraction.numerator}/3"
-        return f"{v:g}".replace(".", ",")
-
-    def en_dinars(v):
-        return ot.formate_dinars(v) + (" D" if langue == "fr" else " د")
-
-    def cellule(*segments):
-        """Case d'une grandeur lue le long de séries successives : [(chemin, formateur)]."""
-        def rendre(series, date):
-            valeur, formateur = enchaine([(series[c], f) for c, f in segments], date)
-            return m["vide"] if valeur is None else formateur(valeur)
-        return rendre
+    coefficient, en_dinars = f.coefficient, f.dinars
 
     def rtns_vieillesse():
         """La pension de vieillesse des non-salariés : secteur non agricole, puis régime fusionné.
@@ -606,8 +470,8 @@ def tableaux(langue):
         colonnes = [
             (m["rtns_age"], paire("age", age)),
             (m["rtns_anticipe"], anticipe),
-            (m["rtns_stage"], paire("stage", lambda v: compte(int(v), m["mois"], langue),
-                                    lambda v: compte(int(v), m["trimestres"], langue))),
+            (m["rtns_stage"], paire("stage", lambda v: compte(int(v), "mois", langue),
+                                    lambda v: compte(int(v), "trimestres", langue))),
             (m["rtns_taux"], paire("taux", taux)),
             (m["rtns_majoration"], paire("majoration", taux)),
             (m["plafond"], paire("plafond", taux)),
@@ -616,7 +480,7 @@ def tableaux(langue):
             (m["rtns_minimum"], paire("minimum", part_smig,
                                       lambda v: f"{ot.formate_taux(v)} {m['smig_ou_smag']}")),
         ]
-        return tableau_enchaine(lectures, colonnes, CLES_RTNS_VIEILLESSE, **enchainee)
+        return ot.tableau_enchaine(lectures, colonnes, CLES_RTNS_VIEILLESSE, **enchainee)
 
     def rtns_agricole():
         """Le secteur agricole : l'âge, puis l'allocation de vieillesse, abrogée en 1995.
@@ -627,17 +491,23 @@ def tableaux(langue):
         """
         age_ag, age_95 = f"{RTNS_AG}/age_legal.yaml", f"{RTNS}/age_legal.yaml"
         allocation = f"{RTNS_AG}/allocation_vieillesse_trimestres.yaml"
+        jours_ag = f"{RTNS_AG}/jours_annuels_smag.yaml"
+        jours_95 = f"{RTNS}/revenu_reference/jours_annuels_smag.yaml"
         lectures = [
             (age_ag, lien["avant_ag"].format(grandeur=lien["age"])),
             (age_95, lien["depuis"].format(grandeur=lien["age"])),
             (allocation, lien["avant_ag"].format(grandeur=lien["allocation"])),
+            (jours_ag, lien["avant_ag"].format(grandeur=lien["jours_smag"])),
+            (jours_95, lien["depuis"].format(grandeur=lien["jours_smag"])),
         ]
+        jours = lambda v: compte(int(v), "jours", langue)  # noqa: E731
         colonnes = [
             (m["rtns_age"], cellule((age_ag, age), (age_95, age))),
             (m["rtns_allocation"],
-             cellule((allocation, lambda v: compte(int(v), m["trimestres"], langue)))),
+             cellule((allocation, lambda v: compte(int(v), "trimestres", langue)))),
+            (m["rtns_jours_smag"], cellule((jours_ag, jours), (jours_95, jours))),
         ]
-        return tableau_enchaine(lectures, colonnes, CLES_RTNS_AGRICOLE, **enchainee)
+        return ot.tableau_enchaine(lectures, colonnes, CLES_RTNS_AGRICOLE, **enchainee)
 
     def rtns_classes():
         """Les classes de revenus : six en dinars (1982), neuf en SMIG (1989), dix (1995).
@@ -668,7 +538,7 @@ def tableaux(langue):
             segments = [(f"{n}/classe_{k}.yaml", f) for n, nombre, f, _a, _c in noeuds
                         if k <= nombre]
             colonnes.append((m["classe"].format(k=k), cellule(*segments)))
-        return tableau_enchaine(lectures, colonnes, CLES_RTNS_CLASSES, **enchainee)
+        return ot.tableau_enchaine(lectures, colonnes, CLES_RTNS_CLASSES, **enchainee)
 
     def cnrps_1959_1985():
         """Les lignes chiffrées du régime des pensions civiles, de 1959 à 1985.
@@ -721,7 +591,7 @@ def tableaux(langue):
             (m["reversion"], cellule((conjoint, taux))),
             (m["orphelin"], cellule((orphelin, taux))),
         ]
-        return tableau_enchaine(lectures, colonnes, CLES_CNRPS_1959_1985, **enchainee)
+        return ot.tableau_enchaine(lectures, colonnes, CLES_CNRPS_1959_1985, **enchainee)
 
     return {
         "cnrps_1959_1985.md": cnrps_1959_1985,
@@ -748,6 +618,10 @@ def tableaux(langue):
             [
                 (f"{CNRPS}/plaf_taux_pension.yaml", m["plafond"], taux),
                 (f"{CNRPS}/pension_minimale/minimum_garanti.yaml", m["minimum"], part_smig),
+                (f"{CNRPS}/pension_minimale/allocation_vieillesse.yaml",
+                 m["allocation_vieillesse"], part_smig),
+                (f"{CNRPS}/pension_minimale/duree_service_allocation_vieillesse.yaml",
+                 m["allocation_duree"], age),
             ],
             cles=CLES_PLAFOND_PLANCHER, **datee,
         ),
@@ -764,6 +638,7 @@ def tableaux(langue):
             ],
             cles=CLES_INDEMNITES, **datee,
         ),
+        **tableaux_lot_a(langue),
         "rsna_planchers.md": lambda: ot.tableau_evolution_datee(
             [
                 (f"{RSNA}/pension_minimale/sup.yaml", m["plancher_sup"], part_smig),
@@ -772,6 +647,744 @@ def tableaux(langue):
             cles=CLES_RSNA_PLANCHERS, **datee,
         ),
     }
+
+
+# ------------------------------------------------ tableaux engendrés le 3 octobre 2026
+#
+# Recension des paramètres écrits en dur (`docs/notes/recension-parametres-en-dur.md`),
+# lots 1a à 1c : les entrées dont le paramètre est présent, daté et sourcé, et égal à ce que
+# le précis en disait. Trois familles :
+#
+# - les FICHES de régime (`ot.tableau_a_la_date`) : une grandeur par ligne, à l'état en
+#   vigueur, pour les régimes qui n'ont connu aucune réforme de leur cœur — Tunisiens à
+#   l'étranger, travailleurs à faibles revenus, artistes, régime agricole amélioré, régime
+#   complémentaire ;
+# - les SÉRIES datées (`ot.tableau_evolution_datee`, `ot.tableau_enchaine`) : invalidité du
+#   régime non agricole, départs anticipés et droits dérivés de la CNRPS ;
+# - les TABLEAUX MIXTES (`ot.tableau_gabarit`) : les tableaux de règles qui portaient des
+#   valeurs écrites à la main — salaire de référence et survivants du régime non agricole,
+#   évolution du régime agricole. Le texte de chaque case est celui du tableau qu'ils
+#   remplacent, dans les deux langues ; chaque valeur y est lue dans le paramètre, à la date
+#   qui la fonde.
+#
+# CE QUI N'Y EST PAS, parce que le paramètre diverge du précis (diagnostic B) : la majoration
+# et le plafond du régime des artistes, que l'arbre date du 5 janvier 2003 (loi n° 2002-104,
+# art. 13) quand le précis les tient du décret n° 2003-894, exécutoire le 5 mai 2003 ;
+# l'âge minimal de 50 ans des mères de trois enfants à la CNRPS, sans référence.
+
+# Date de l'état en vigueur lu par les fiches : postérieure à toute date d'effet versée.
+ETAT = "2100-01-01"
+
+MOTS_LOT_A = {
+    "fr": {
+        "grandeur": "Grandeur", "valeur": "Valeur", "effet": "Effet", "texte": "Texte",
+        "depuis": "Depuis", "regle": "Règle", "element": "Élément",
+        "modifications": "Modifications",
+        # Fiches de régime.
+        "age": "Âge d'ouverture de la pension de vieillesse",
+        "anticipe": "Âge du départ avec [décote](#g-decote)",
+        "decote": "Décote par trimestre d'anticipation",
+        "stage": "[Stage](#g-stage-cotisation)",
+        "taux": "Taux de la pension au terme du stage",
+        "taux_secteur": "Taux de la pension au terme du stage, en part du salaire minimum du "
+                        "secteur",
+        "majoration": "Majoration par trimestre au-delà du stage",
+        "plafond": "Plafond du taux de la pension",
+        "minimum": "Pension minimale",
+        "minimum_mensuel": "Pension minimale, par mois",
+        "inv_stage": "Invalidité : stage",
+        "inv_taux": "Invalidité : taux de base",
+        "inv_seuil": "Invalidité : durée de cotisation au-delà de laquelle la pension est "
+                     "majorée",
+        "tierce": "Majoration pour tierce personne",
+        "classes": "[Classes de revenus](#g-classe-de-revenus), en multiples du SMIG",
+        "conjoint": "[Réversion](#g-pension-de-reversion) au conjoint",
+        "orphelins": "Pensions d'orphelins, ensemble",
+        "ages_orphelin": "Âge limite de l'orphelin : droit commun ; études secondaires ou "
+                         "professionnelles ; études supérieures",
+        "remariage": "Âge avant lequel le remariage suspend la réversion",
+        # Régime agricole amélioré.
+        "rsaa_seuil": "Trimestre validé : salaire déclaré, en multiple du SMAG journalier",
+        "rsaa_limite": "[Limite de calcul](#g-limite-calcul-prestations), en multiple du "
+                       "SMAG annuel",
+        "rsaa_minimum": "Pension minimale, en fraction du SMAG annuel",
+        "rsaa_jours": "SMAG annuel : durée de référence",
+        # Régime complémentaire.
+        "cpl_gamma": "Taux de la cotisation contractuelle ($\\gamma$)",
+        "cpl_minimum": "Cotisation minimale : salaire de calcul, en fraction du SMIG",
+        "cpl_orphelin": "[Pension d'orphelin](#g-pension-temporaire-orphelin)",
+        "cpl_orphelin_pm": "Pension d'orphelin de père et de mère",
+        # Invalidité du régime non agricole.
+        "taux_base": "Taux de base",
+        "inv_majoration": "Majoration",
+        "inv_majoration_cellule": "{taux} par période de {periode}",
+        "inv_au_dela": "au-delà de",
+        # CNRPS.
+        "da_age": "Départ anticipé sur demande : âge minimal",
+        "da_duree": "Départ anticipé sur demande : services requis",
+        "meres": "Mères de trois enfants : âge maximal des enfants",
+        "sv_orphelin": "[Pension d'orphelin](#g-pension-temporaire-orphelin), par orphelin",
+        "sv_plafond": "Plafond du cumul des pensions de survivants, en part de la pension "
+                      "de l'agent",
+        "sv_cinq": "Part du conjoint à partir de cinq orphelins",
+        "pension_agent": "{taux} de la pension de l'agent",
+        "regime": "Régime", "reference": "Salaire minimum de référence",
+        "reg_rtns": "Travailleurs non salariés",
+        "reg_raci": "Artistes, créateurs et intellectuels",
+        "reg_rtte": "Tunisiens à l'étranger",
+        "ref_smig": "SMIG × {h} heures", "ref_smag": " ou SMAG × {j} jours",
+        "lien_classes": "{regime} — classes de revenus, en multiples du salaire minimum",
+        "lien_heures": "{regime} — durée annuelle à laquelle le SMIG est rapporté",
+        "lien_jours": "{regime} — durée annuelle à laquelle le SMAG est rapporté",
+    },
+    "ar": {
+        "grandeur": "المقدار", "valeur": "القيمة", "effet": "بداية السريان", "texte": "النصّ",
+        "depuis": "منذ", "regle": "القاعدة", "element": "العنصر",
+        "modifications": "التعديلات",
+        "age": "سنّ استحقاق جراية الشيخوخة",
+        "anticipe": "سنّ التقاعد المبكّر مع [التخفيض في الجراية](#g-decote)",
+        "decote": "التخفيض في الجراية عن كلّ ثلاثية",
+        "stage": "[مدة الانخراط الدنيا](#g-stage-cotisation)",
+        "taux": "نسبة الجراية عند استيفاء مدة الانخراط الدنيا",
+        "taux_secteur": "نسبة الجراية عند استيفاء مدة الانخراط الدنيا، من الأجر الأدنى "
+                        "المضمون للقطاع",
+        "majoration": "الترفيع عن كلّ ثلاثية تفوق مدة الانخراط الدنيا",
+        "plafond": "سقف نسبة الجراية",
+        "minimum": "الجراية الدنيا",
+        "minimum_mensuel": "الجراية الدنيا، شهريًا",
+        "inv_stage": "العجز: مدة الانخراط الدنيا",
+        "inv_taux": "العجز: النسبة الأساسية",
+        "inv_seuil": "العجز: مدة الاشتراك التي تُرفَّع الجراية بعدها",
+        "tierce": "الزيادة بعنوان المساعدة من الغير",
+        "classes": "[شرائح الدخل](#g-classe-de-revenus)، بمضاعفات الأجر الأدنى المضمون",
+        "conjoint": "[جراية القرين الباقي على قيد الحياة](#g-pension-de-reversion)",
+        "orphelins": "جرايات الأيتام، مجتمعة",
+        "ages_orphelin": "السنّ القصوى لليتيم: القاعدة العامة؛ الدراسات الثانوية أو "
+                         "المهنية؛ الدراسات العليا",
+        "remariage": "السنّ التي يوقف قبلها الزواج من جديد جراية القرين",
+        "rsaa_seuil": "الثلاثية المعتمدة: الأجر المصرّح به، بمضاعفات الأجر الأدنى الفلاحي "
+                      "المضمون اليومي",
+        "rsaa_limite": "[الحدّ الأقصى لاحتساب المنافع](#g-limite-calcul-prestations)، "
+                       "بمضاعفات الأجر الأدنى الفلاحي المضمون السنوي",
+        "rsaa_minimum": "الجراية الدنيا، كسرًا من الأجر الأدنى الفلاحي المضمون السنوي",
+        "rsaa_jours": "الأجر الأدنى الفلاحي المضمون السنوي: المدة المعتمدة",
+        "cpl_gamma": "نسبة الاشتراك التعاقدي ($\\gamma$)",
+        "cpl_minimum": "الاشتراك الأدنى: أجر الاحتساب، كسرًا من الأجر الأدنى المضمون",
+        "cpl_orphelin": "[جراية اليتيم](#g-pension-temporaire-orphelin)",
+        "cpl_orphelin_pm": "جراية يتيم الأب والأم",
+        "taux_base": "النسبة الأساسية",
+        "inv_majoration": "الترفيع",
+        "inv_majoration_cellule": "{taux} عن كلّ فترة من {periode}",
+        "inv_au_dela": "ابتداءً مما يفوق",
+        "da_age": "التقاعد المبكّر بطلب: السنّ الدنيا",
+        "da_duree": "التقاعد المبكّر بطلب: الخدمات المستوجبة",
+        "meres": "الأمهات لثلاثة أطفال: السنّ القصوى للأطفال",
+        "sv_orphelin": "[الجراية الوقتية لليتيم](#g-pension-temporaire-orphelin)، عن كلّ يتيم",
+        "sv_plafond": "سقف مجموع جرايات الباقين على قيد الحياة، من جراية العون",
+        "sv_cinq": "نصيب القرين ابتداءً من خمسة أيتام",
+        "pension_agent": "{taux} من جراية العون",
+        "regime": "النظام", "reference": "الأجر الأدنى المرجعي",
+        "reg_rtns": "العملة غير الأجراء",
+        "reg_raci": "الفنانون والمبدعون والمثقفون",
+        "reg_rtte": "التونسيون بالخارج",
+        "ref_smig": "الأجر الأدنى المضمون × {h} ساعة",
+        "ref_smag": " أو الأجر الأدنى الفلاحي المضمون × {j} يوم",
+        "lien_classes": "{regime} — شرائح الدخل، بمضاعفات الأجر الأدنى",
+        "lien_heures": "{regime} — المدة السنوية التي يُحتسب على أساسها الأجر الأدنى المضمون",
+        "lien_jours": "{regime} — المدة السنوية التي يُحتسب على أساسها الأجر الأدنى الفلاحي "
+                      "المضمون",
+    },
+}
+
+# Libellés des liens « Base législative » des tableaux mixtes, par paramètre lu.
+LIENS_LOT_A = {
+    "periode_courte": ("Salaire de référence — période courte, en années",
+                       "الأجر المرجعي — الفترة القصيرة، بالسنوات"),
+    "periode_longue": ("Salaire de référence — période longue, en années",
+                       "الأجر المرجعي — الفترة الطويلة، بالسنوات"),
+    "diviseur_court": ("Salaire de référence — diviseur de la période courte, en mois",
+                       "الأجر المرجعي — قاسم الفترة القصيرة، بالأشهر"),
+    "diviseur_long": ("Salaire de référence — diviseur de la période longue, en mois",
+                      "الأجر المرجعي — قاسم الفترة الطويلة، بالأشهر"),
+    "periode_1990": ("Salaire de référence — période de référence de 1990, en années",
+                     "الأجر المرجعي — الفترة المرجعية لسنة 1990، بالسنوات"),
+    "duree_mois": ("Salaire de référence — période de référence, en mois",
+                   "الأجر المرجعي — الفترة المرجعية، بالأشهر"),
+    "limite_multiple": ("Limite de calcul des prestations, en multiple du SMIG",
+                        "الحدّ الأقصى لاحتساب المنافع، مضاعفًا للأجر الأدنى المضمون"),
+    "limite_heures": ("Limite de calcul — durée annuelle à laquelle le SMIG est rapporté",
+                      "حدّ الاحتساب — المدة السنوية التي يُحتسب على أساسها الأجر الأدنى "
+                      "المضمون"),
+    "taux_conjoint": ("Taux de la pension de réversion", "نسبة جراية القرين الباقي على قيد الحياة"),
+    "taux_conjoint_majore": ("Taux majoré de la pension de réversion",
+                             "النسبة المرفّعة لجراية القرين الباقي على قيد الحياة"),
+    "taux_orphelin": ("Taux de la pension d'orphelin", "نسبة جراية اليتيم"),
+    "taux_orphelin_pm": ("Taux de la pension d'orphelin de père et de mère",
+                         "نسبة جراية يتيم الأب والأم"),
+    "age_orphelin": ("Âge limite de l'orphelin", "السنّ القصوى لليتيم"),
+    "age_orphelin_etudes": ("Âge limite de l'orphelin en études", "السنّ القصوى لليتيم الدارس"),
+    "age_orphelin_sup": ("Âge limite de l'orphelin en études supérieures",
+                         "السنّ القصوى لليتيم في التعليم العالي"),
+    "remariage": ("Âge avant lequel le remariage suspend la réversion",
+                  "السنّ التي يوقف قبلها الزواج من جديد جراية القرين"),
+}
+
+
+def _lien(cle: str) -> dict[str, str]:
+    fr, ar = LIENS_LOT_A[cle]
+    return {"fr": fr, "ar": ar}
+
+
+def _entier(v, _langue):
+    return str(int(v))
+
+
+def _milliers(v, _langue):
+    return ot.formate_dinars(v)
+
+
+def _annees_de_mois(v, _langue):
+    return str(int(v // 12))
+
+
+def _fraction(v):
+    """Une fraction simple : « 1/2 », « 2/3 » ; un entier tel quel."""
+    fraction = Fraction(v).limit_denominator(12)
+    if fraction.denominator == 1:
+        return str(fraction.numerator)
+    return f"{fraction.numerator}/{fraction.denominator}"
+
+
+def tableaux_lot_a(langue):
+    m = MOTS_LOT_A[langue]
+    f = ot.formateurs(langue)
+    mois, trimestres = f.duree("mois"), f.duree("trimestres")
+    fiche = dict(entetes=(m["grandeur"], m["valeur"], m["texte"]), langue=langue)
+    datee = dict(langue=langue, colonne_periode=m["effet"], colonne_texte=m["texte"])
+    date = lambda d: ot.formate_date(d, langue)  # noqa: E731
+    g, L = ot.gabarit, ot.Lecture
+    RTTE, RTFR, RACI = ("parameters/retraite/rtte", "parameters/retraite/rtfr",
+                        "parameters/retraite/raci")
+    RSAA, CPL = "parameters/retraite/rsaa", "parameters/retraite/complementaire"
+    SR = f"{RSNA}/salaire_reference"
+
+    def ages_orphelin(base):
+        return (f"{base}/age_limite_orphelin.yaml", f"{base}/age_limite_orphelin_etudes.yaml",
+                f"{base}/age_limite_orphelin_etudes_superieures.yaml")
+
+    def rtte():
+        """Les Tunisiens à l'étranger : l'état du décret n° 89-107, jamais réformé."""
+        art = lambda a: f"decret89-107, art. {a}"  # noqa: E731
+        classes = tuple(f"{RTTE}/revenu_reference/classes/classe_{k}.yaml" for k in range(1, 5))
+        specs = [
+            (f"{RTTE}/age_legal.yaml", m["age"], f.age),
+            (f"{RTTE}/age_depart_anticipe.yaml", m["anticipe"], f.age),
+            (f"{RTTE}/decote_par_trimestre.yaml", m["decote"], f.taux),
+            (f"{RTTE}/stage_mois.yaml", m["stage"], mois),
+            (f"{RTTE}/taux_base.yaml", m["taux"], f.taux),
+            (f"{RTTE}/majoration_par_trimestre.yaml", m["majoration"], f.taux),
+            (f"{RTTE}/plafond_taux.yaml", m["plafond"], f.taux),
+            (f"{RTTE}/plancher_taux.yaml", m["minimum"], f.part_smig),
+            (f"{RTTE}/invalidite/stage_mois.yaml", m["inv_stage"], mois),
+            (f"{RTTE}/invalidite/taux_base.yaml", m["inv_taux"], f.taux),
+            (f"{RTTE}/invalidite/seuil_majoration_mois.yaml", m["inv_seuil"], mois),
+            (classes, m["classes"], f.coefficient),
+        ]
+        cles = {
+            f"{RTTE}/age_legal.yaml": art(18), f"{RTTE}/age_depart_anticipe.yaml": art(18),
+            f"{RTTE}/decote_par_trimestre.yaml": art(18), f"{RTTE}/stage_mois.yaml": art(20),
+            f"{RTTE}/taux_base.yaml": art(20), f"{RTTE}/majoration_par_trimestre.yaml": art(20),
+            f"{RTTE}/plafond_taux.yaml": art(20), f"{RTTE}/plancher_taux.yaml": art(22),
+            f"{RTTE}/invalidite/stage_mois.yaml": art(21),
+            f"{RTTE}/invalidite/taux_base.yaml": art(21),
+            f"{RTTE}/invalidite/seuil_majoration_mois.yaml": art(21),
+            classes[0]: art(6),
+        }
+        return ot.tableau_a_la_date(specs, ETAT, cles=cles, **fiche)
+
+    def rtfr():
+        """Les travailleurs à faibles revenus : l'état de la loi n° 2002-32."""
+        art = lambda a: f"loi2002-32, art. {a}"  # noqa: E731
+        sv = f"{RTFR}/survivants"
+        specs = [
+            (f"{RTFR}/age_legal.yaml", m["age"], f.age),
+            (f"{RTFR}/stage_mois.yaml", m["stage"], mois),
+            (f"{RTFR}/taux_base.yaml", m["taux_secteur"], f.taux),
+            (f"{RTFR}/majoration_par_trimestre.yaml", m["majoration"], f.taux),
+            (f"{RTFR}/plafond_taux.yaml", m["plafond"], f.taux),
+            (f"{RTFR}/invalidite/stage_mois.yaml", m["inv_stage"], mois),
+            (f"{RTFR}/invalidite/taux_base.yaml", m["inv_taux"], f.taux),
+            (f"{RTFR}/invalidite/majoration_tierce_personne.yaml", m["tierce"], f.taux),
+            (f"{sv}/taux_conjoint.yaml", m["conjoint"], f.taux),
+            (f"{sv}/taux_orphelins.yaml", m["orphelins"], f.taux),
+            (ages_orphelin(sv), m["ages_orphelin"], f.age),
+            (f"{sv}/age_remariage_suspensif.yaml", m["remariage"], f.age),
+        ]
+        cles = {
+            f"{RTFR}/age_legal.yaml": art(13), f"{RTFR}/stage_mois.yaml": art(13),
+            f"{RTFR}/taux_base.yaml": art(14), f"{RTFR}/majoration_par_trimestre.yaml": art(14),
+            f"{RTFR}/plafond_taux.yaml": art(14),
+            f"{RTFR}/invalidite/stage_mois.yaml": "loi2002-32, art. 16-18",
+            f"{RTFR}/invalidite/taux_base.yaml": "loi2002-32, art. 16-18",
+            f"{RTFR}/invalidite/majoration_tierce_personne.yaml": "loi2002-32, art. 16-18",
+            f"{sv}/taux_conjoint.yaml": "loi2002-32, art. 23 à 28",
+            f"{sv}/taux_orphelins.yaml": "loi2002-32, art. 23 à 28",
+            ages_orphelin(sv)[0]: "loi2002-32, art. 23 à 28",
+            f"{sv}/age_remariage_suspensif.yaml": "loi2002-32, art. 23 à 28",
+        }
+        return ot.tableau_a_la_date(specs, ETAT, cles=cles, **fiche)
+
+    def raci():
+        """Les artistes, créateurs et intellectuels : la loi de 2002, puis le décret de 2003.
+
+        Deux dates d'effet — l'âge, le stage et le minimum au 5 janvier 2003, le taux et les
+        classes au 5 mai 2003 —, d'où la colonne « Effet ». La majoration par trimestre et le
+        plafond n'y sont pas : leur date n'est pas établie (voir l'en-tête de ce bloc).
+        """
+        loi = lambda a: f"loi2002-104, art. {a}"  # noqa: E731
+        sv = f"{RACI}/survivants"
+        classes = tuple(f"{RACI}/revenu_reference/classes/classe_{k}.yaml" for k in range(1, 11))
+        specs = [
+            (f"{RACI}/age_legal.yaml", m["age"], f.age),
+            (f"{RACI}/stage_trimestres.yaml", m["stage"], trimestres),
+            (f"{RACI}/taux_base.yaml", m["taux"], f.taux),
+            (f"{RACI}/plancher_mensuel.yaml", m["minimum_mensuel"], f.dinars),
+            (f"{RACI}/invalidite/stage_trimestres.yaml", m["inv_stage"], trimestres),
+            (f"{RACI}/invalidite/seuil_majoration_trimestres.yaml", m["inv_seuil"], trimestres),
+            (f"{RACI}/invalidite/majoration_tierce_personne.yaml", m["tierce"], f.taux),
+            (classes, m["classes"], f.coefficient),
+            (f"{sv}/taux_conjoint.yaml", m["conjoint"], f.taux),
+            (f"{sv}/taux_orphelins.yaml", m["orphelins"], f.taux),
+            (ages_orphelin(sv), m["ages_orphelin"], f.age),
+            (f"{sv}/age_remariage_suspensif.yaml", m["remariage"], f.age),
+        ]
+        cles = {
+            f"{RACI}/age_legal.yaml": loi(12), f"{RACI}/stage_trimestres.yaml": loi(12),
+            f"{RACI}/taux_base.yaml": "decret2003-894, art. 17",
+            f"{RACI}/plancher_mensuel.yaml": "loi2002-104, art. 13 et 15 ; @decret2003-894, art. 17",
+            f"{RACI}/invalidite/stage_trimestres.yaml": "loi2002-104, art. 14-15",
+            f"{RACI}/invalidite/seuil_majoration_trimestres.yaml": loi(15),
+            f"{RACI}/invalidite/majoration_tierce_personne.yaml": loi(16),
+            classes[0]: "decret2003-894, art. 5",
+            f"{sv}/taux_conjoint.yaml": "loi2002-104, art. 20 à 23",
+            f"{sv}/taux_orphelins.yaml": "loi2002-104, art. 20 à 23",
+            ages_orphelin(sv)[0]: "loi2002-104, art. 20 à 23",
+            f"{sv}/age_remariage_suspensif.yaml": "loi2002-104, art. 20 à 23",
+        }
+        return ot.tableau_a_la_date(specs, ETAT, cles=cles, colonne_effet=m["effet"], **fiche)
+
+    def rsaa():
+        """Le régime agricole amélioré : ce que le titre III de la loi n° 81-6 fixe en propre."""
+        specs = [
+            (f"{RSAA}/seuil_trimestre_smag.yaml", m["rsaa_seuil"], f.coefficient),
+            (f"{RSAA}/salaire_reference/limite_multiple_smag.yaml", m["rsaa_limite"],
+             f.coefficient),
+            (f"{RSAA}/plancher_taux.yaml", m["rsaa_minimum"], _fraction),
+            (f"{RSAA}/salaire_reference/jours_annuels_smag.yaml", m["rsaa_jours"],
+             f.duree("jours")),
+        ]
+        cles = dict.fromkeys((c for c, _l, _f in specs), "loi89-73")
+        return ot.tableau_a_la_date(specs, ETAT, cles=cles, **fiche)
+
+    def complementaire():
+        """Le régime complémentaire : le règlement de 1978 et l'arrêté de 1997."""
+        reglement = "arrete-1978-11-18-retraite-complementaire, règlement, art. {}"
+        sv = f"{CPL}/survivants"
+        specs = [
+            (f"{CPL}/taux_cotisation_contractuel.yaml", m["cpl_gamma"], f.taux),
+            (f"{CPL}/salaire_minimal_cotisable_part_smig.yaml", m["cpl_minimum"], _fraction),
+            (f"{sv}/taux_reversion.yaml", m["conjoint"], f.taux),
+            (f"{sv}/taux_orphelin.yaml", m["cpl_orphelin"], f.taux),
+            (f"{sv}/taux_orphelin_pere_et_mere.yaml", m["cpl_orphelin_pm"], f.taux),
+            (f"{sv}/age_limite_suspension_remariage.yaml", m["remariage"], f.age),
+        ]
+        cles = {
+            f"{CPL}/taux_cotisation_contractuel.yaml": reglement.format(10),
+            f"{CPL}/salaire_minimal_cotisable_part_smig.yaml": reglement.format(14),
+            f"{sv}/taux_reversion.yaml": reglement.format(23),
+            f"{sv}/taux_orphelin.yaml": reglement.format("26-27"),
+            f"{sv}/taux_orphelin_pere_et_mere.yaml": reglement.format("26-27"),
+            f"{sv}/age_limite_suspension_remariage.yaml":
+                "arrete-1997-01-27-retraite-complementaire",
+        }
+        return ot.tableau_a_la_date(specs, ETAT, cles=cles, colonne_effet=m["effet"], **fiche)
+
+    def rsna_invalidite():
+        """La pension d'invalidité du régime non agricole : trois états, 1974, 1981, 1982.
+
+        La majoration se lit en deux paramètres — un taux et la période qu'il rémunère — que
+        la case réunit : « 2 % par période de 12 mois », puis « 0,5 % par période de 3 mois ».
+        """
+        inv = f"{RSNA}/invalidite"
+        chemins = {c: f"{inv}/{c}.yaml" for c in (
+            "stage_mois", "taux_base", "majoration", "periode_majoration_mois",
+            "seuil_majoration_mois", "plafond_taux", "majoration_tierce_personne")}
+        libelles = {
+            "fr": {"stage_mois": "Invalidité — stage", "taux_base": "Invalidité — taux de base",
+                   "majoration": "Invalidité — majoration",
+                   "periode_majoration_mois": "Invalidité — période de la majoration, en mois",
+                   "seuil_majoration_mois": "Invalidité — durée au-delà de laquelle la "
+                                            "pension est majorée",
+                   "plafond_taux": "Invalidité — plafond du taux",
+                   "majoration_tierce_personne": "Invalidité — majoration pour tierce personne"},
+            "ar": {"stage_mois": "العجز — مدة الانخراط الدنيا",
+                   "taux_base": "العجز — النسبة الأساسية", "majoration": "العجز — الترفيع",
+                   "periode_majoration_mois": "العجز — فترة الترفيع، بالأشهر",
+                   "seuil_majoration_mois": "العجز — المدة التي تُرفَّع الجراية بعدها",
+                   "plafond_taux": "العجز — سقف النسبة",
+                   "majoration_tierce_personne": "العجز — الزيادة بعنوان المساعدة من الغير"},
+        }[langue]
+        lectures = [(chemins[c], libelles[c]) for c in chemins]
+        c = ot.cellule
+
+        def majoration(series, d):
+            taux_ = c((chemins["majoration"], f.taux))(series, d)
+            periode = c((chemins["periode_majoration_mois"], mois))(series, d)
+            return m["inv_majoration_cellule"].format(taux=taux_, periode=periode)
+
+        colonnes = [
+            (m["stage"], c((chemins["stage_mois"], mois))),
+            (m["taux_base"], c((chemins["taux_base"], f.taux))),
+            (m["inv_majoration"], majoration),
+            (m["inv_au_dela"], c((chemins["seuil_majoration_mois"], mois))),
+            (m["plafond"], c((chemins["plafond_taux"], f.taux))),
+            (m["tierce"], c((chemins["majoration_tierce_personne"], f.taux))),
+        ]
+        cles = {"1974-01-01": "decret74-499, art. 21 à 23",
+                "1981-02-19": "decret81-188, art. 1",
+                "1982-07-22": "decret82-1030, art. 4"}
+        return ot.tableau_enchaine(lectures, colonnes, cles, **datee)
+
+    def cnrps_departs():
+        """Les conditions du départ anticipé de la CNRPS : 1985, 1989, 2007."""
+        da = f"{CNRPS}/depart_anticipe"
+        return ot.tableau_evolution_datee(
+            [
+                (f"{da}/sur_demande/cadre_commun/age_minimum.yaml", m["da_age"], f.age),
+                (f"{da}/sur_demande/cadre_commun/duree_minimum.yaml", m["da_duree"], f.age),
+                (f"{da}/meres_3_enfants/age_maximum_enfant.yaml", m["meres"], f.age),
+            ],
+            cles={"1985-09-12": "loi85-12, art. 5 et 30", "1989-01-01": "loi88-71, art. 1 et 2",
+                  "2007-07-02": "loi2007-43"},
+            **datee)
+
+    def cnrps_survivants():
+        """Les droits dérivés de la CNRPS : taux, plafond du cumul, partage à cinq orphelins."""
+        sv = f"{CNRPS}/survivants"
+        part_agent = lambda v: ot.VIDE if v is None else m["pension_agent"].format(  # noqa: E731
+            taux=f.taux(v))
+        return ot.tableau_evolution_datee(
+            [
+                (f"{sv}/taux_conjoint.yaml", m["conjoint"], f.taux),
+                (f"{sv}/taux_orphelin.yaml", m["sv_orphelin"], f.taux),
+                (f"{sv}/plafond_cumul.yaml", m["sv_plafond"], part_agent),
+                (f"{sv}/taux_partage_5_orphelins.yaml", m["sv_cinq"], part_agent),
+            ],
+            cles={"1959-04-01": "loi59-18, art. 31 et 52 ; @loi59-100, art. 1",
+                  "1981-05-01": "loi81-70, art. 4",
+                  "1985-09-12": "loi85-12, art. 43 et 45"},
+            **datee)
+
+    def rsna_reference():
+        """Salaire de référence et limite de calcul du régime non agricole, 1974-1996.
+
+        Tableau mixte : la fenêtre de 1974 est un CHOIX entre deux périodes, celle de 1990
+        une NON-MODIFICATION de l'article 19 ; ni l'un ni l'autre ne se dit par une valeur
+        seule. Le texte de chaque case est celui du chapitre ; les durées, les diviseurs et
+        la limite y sont lus dans le paramètre, à la date de la ligne.
+        """
+        def lu(nom, chemin, d, formateur):
+            return L(f"{SR}/{chemin}.yaml", d, formateur, _lien(nom))
+
+        def limite(d, regime_48h=False):
+            fr = ("**{m} fois le SMIG « régime 48 heures »** rapporté à {h} heures par an"
+                  if regime_48h else "**{m} fois le SMIG** rapporté à {h} heures par an")
+            ar = ("**{m} أضعاف الأجر الأدنى المضمون لمختلف المهن (SMIG) «نظام 48 ساعة»** "
+                  "بالنسبة لـ {h} ساعة سنوياً" if regime_48h else
+                  "**{m} أضعاف الأجر الأدنى المضمون لمختلف المهن (SMIG)** بالنسبة لـ {h} "
+                  "ساعة سنوياً")
+            return g({"fr": fr, "ar": ar},
+                     m=lu("limite_multiple", "limite_multiple_smig", d, _entier),
+                     h=lu("limite_heures", "limite_heures_annuelles", d, _milliers))
+
+        def fenetre_recente(d, actualisation=False):
+            fr = "**{n} dernières années**"
+            ar = "**السنوات {n} الأخيرة**"
+            if actualisation:
+                fr += " ; salaires actualisés selon un barème fixé annuellement par arrêté"
+                ar += "؛ أجور محيّنة وفقاً لجدول يحدد سنوياً بقرار"
+            return g({"fr": fr, "ar": ar}, n=lu("duree_mois", "duree_mois", d, _annees_de_mois))
+
+        def moyenne(d):
+            return g({"fr": "{d}", "ar": "{d}"}, d=lu("duree_mois", "duree_mois", d,
+                                                     "duree:mois"))
+
+        d74, d90, d94, d95, d96 = ("1974-01-01", "1990-09-23", "1994-07-01", "1995-07-01",
+                                   "1996-07-01")
+        lignes = [
+            [date(d74),
+             g({"fr": "salaires des **{c} ou {l} dernières années** précédant l'âge d'ouverture "
+                      "du droit, « selon que l'une ou l'autre de ces périodes de référence est "
+                      "plus avantageuse » pour l'assuré",
+                "ar": "أجور **السنوات {c} أو {l} الأخيرة** التي تسبق سنّ فتح الحق، «حسب ما "
+                      "تكون إحدى هاتين الفترتين المرجعيتين أكثر فائدة» للمضمون"},
+               c=lu("periode_courte", "periode_courte_annees", d74, _entier),
+               l=lu("periode_longue", "periode_longue_annees", d74, _entier)),
+             g({"fr": "total divisé par {c} ou {l} mois", "ar": "المجموع مقسوم على {c} أو {l} شهراً"},
+               c=lu("diviseur_court", "diviseur_court_mois", d74, _entier),
+               l=lu("diviseur_long", "diviseur_long_mois", d74, _entier)),
+             limite(d74), "[@decret74-499, art. 18-19]"],
+            [date(d90),
+             g({"fr": "salaires des **{p} dernières années** précédant l'âge d'ouverture du "
+                      "droit ; moyenne sur la période d'activité déclarée si elle est "
+                      "inférieure à {p} ans ; salaires « actualisés selon un barème fixé par "
+                      "arrêté du ministre des affaires sociales »",
+                "ar": "أجور **السنوات {p} الأخيرة** التي تسبق سنّ فتح الحق؛ متوسط على فترة "
+                      "النشاط المصرح بها إذا كانت أقل من {p} سنوات؛ أجور «محيّنة وفقاً لجدول "
+                      "يحدده قرار من وزير الشؤون الاجتماعية»"},
+               p=lu("periode_1990", "periode_annees", d90, _entier)),
+             g({"fr": "article 19 non modifié : {c} ou {l} mois",
+                "ar": "الفصل 19 لم يعدّل: {c} أو {l} شهراً"},
+               c=lu("diviseur_court", "diviseur_court_mois", d90, _entier),
+               l=lu("diviseur_long", "diviseur_long_mois", d90, _entier)),
+             limite(d90), "[@decret90-1455, art. 1]"],
+            [date(d94), fenetre_recente(d94, actualisation=True), moyenne(d94),
+             limite(d94, regime_48h=True), "[@decret94-1429, art. 1]"],
+            [date(d95), fenetre_recente(d95), moyenne(d95), limite(d95, regime_48h=True),
+             "[@decret94-1429, art. 1]"],
+            [date(d96), fenetre_recente(d96), moyenne(d96), limite(d96, regime_48h=True),
+             "[@decret94-1429, art. 1]"],
+        ]
+        entetes = {
+            "fr": [m["depuis"], "Fenêtre de référence", "Moyenne (article 19)",
+                   "Limite de prise en compte des salaires", m["texte"]],
+            "ar": [m["depuis"], "نافذة المرجع", "المتوسط (الفصل 19)",
+                   "حدّ الأخذ في الاعتبار للأجور", m["texte"]],
+        }[langue]
+        return ot.tableau_gabarit(entetes, lignes, langue)
+
+    def rsna_survivants():
+        """Droits des survivants du régime non agricole : règles et taux, 1974-2007."""
+        sv = f"{RSNA}/survivants"
+
+        def lu(nom, chemin, d, formateur="taux"):
+            return L(f"{sv}/{chemin}.yaml", d, formateur, _lien(nom))
+
+        d74, d81, d97 = "1974-01-01", "1981-02-19", "1997-05-01"
+        lignes = [
+            [{"fr": "Bénéficiaire et taux de la réversion",
+              "ar": "المستفيد ونسبة جراية القرين الباقي على قيد الحياة"},
+             g({"fr": "la veuve, et le veuf invalide : {c}", "ar": "الأرملة، والأرمل العاجز: {c}"},
+               c=lu("taux_conjoint", "taux_conjoint", d74)),
+             g({"fr": "1981 : jusqu'à {cm} sous condition ; droit rattaché, pour le décès avant "
+                      "l'âge normal de la retraite, aux conditions de la pension d'invalidité de "
+                      "l'article 21 (décret n° 81-188) ; 1997 : droit ouvert au « conjoint "
+                      "survivant » (décret n° 97-291, art. 29)",
+                "ar": "1981: حتى {cm} بشرط؛ الحق مرتبط، للوفاة قبل السن العادية للتقاعد، بشروط "
+                      "جراية العجز المنصوص عليها في الفصل 21 (الأمر عدد 81-188)؛ 1997: الحق "
+                      "مفتوح لـ «القرين الباقي على قيد الحياة» (الأمر عدد 97-291، الفصل 29)"},
+               cm=lu("taux_conjoint_majore", "taux_conjoint_majore", d81))],
+            [{"fr": "Remariage", "ar": "الزواج من جديد"},
+             {"fr": "suppression au premier jour du trimestre civil suivant",
+              "ar": "الإلغاء في اليوم الأول من الثلاثي المدني التالي"},
+             {"fr": "1990 : rétablissement, revalorisé, au décès du nouveau conjoint ; cumul de "
+                    "pensions de conjoint survivant au titre de mariages successifs interdit "
+                    "(décret n° 90-1455)",
+              "ar": "1990: إعادة التأسيس، مع إعادة تقييم، عند وفاة القرين الجديد؛ منع الجمع بين "
+                    "جرايات القرين الباقي على قيد الحياة بموجب زيجات متتالية (الأمر عدد "
+                    "90-1455)"}],
+            [{"fr": "Taux d'orphelin", "ar": "نسبة اليتيم"},
+             g({"fr": "{o}, porté à {pm} pour l'orphelin de père et de mère",
+                "ar": "{o}، ترفع إلى {pm} ليتيم الأب والأم"},
+               o=lu("taux_orphelin", "taux_orphelin", d74),
+               pm=lu("taux_orphelin_pm", "taux_orphelin_pere_et_mere", d74)),
+             g({"fr": "1981 : {o} dans tous les cas (décret n° 81-188, art. 34) ; droit étendu "
+                      "aux orphelins d'un titulaire de pension d'invalidité ou d'un assuré "
+                      "décédé avant l'âge normal qui remplissait les conditions de l'article 21 "
+                      "(décret n° 81-188, art. 33)",
+                "ar": "1981: {o} في جميع الحالات (الأمر عدد 81-188، الفصل 34)؛ الحق يمتد ليشمل "
+                      "أيتام صاحب جراية عجز أو لمضمون توفي قبل السن العادية وكان يستوفي شروط "
+                      "الفصل 21 (الأمر عدد 81-188، الفصل 33)"},
+               o=lu("taux_orphelin", "taux_orphelin", d81))],
+            [{"fr": "Âge limite de l'orphelin", "ar": "السن القصوى لليتيم"},
+             g({"fr": "{a} ; {e} en cas d'études ; sans limite en cas d'affection incurable",
+                "ar": "{a}؛ {e} في حالة الدراسة؛ بدون حد في حالة مرض عضال"},
+               a=lu("age_orphelin", "age_limite_orphelin", d74, "age"),
+               e=lu("age_orphelin_etudes", "age_limite_orphelin_etudes", d74, "age")),
+             g({"fr": "{d} : {e} en études secondaires, techniques ou professionnelles, {s} en "
+                      "études supérieures sans bourse, sans limite pour la fille sans ressources "
+                      "ou qui n'est pas à la charge de son mari et en cas d'infirmité (décret "
+                      "n° 97-1927) ; 2007 : paiement à la fille définitivement suspendu dès "
+                      "qu'une condition fait défaut (décret n° 2007-2148)",
+                "ar": "{d}: {e} في الدراسات الثانوية أو الفنية أو المهنية، {s} في الدراسات العليا "
+                      "بدون منحة، بدون حد للفتاة التي لا تملك موارد أو التي ليست على نفقة زوجها "
+                      "وفي حالة العجز (الأمر عدد 97-1927)؛ 2007: تعليق دفع الجراية للفتاة "
+                      "نهائياً بمجرد فقدان شرط (الأمر عدد 2007-2148)"},
+               d=L(f"{sv}/age_limite_orphelin_etudes_superieures.yaml", d97,
+                   lambda _v, lg: ot.formate_date(d97, lg), _lien("age_orphelin_sup")),
+               e=lu("age_orphelin_etudes", "age_limite_orphelin_etudes", d97, "age"),
+               s=lu("age_orphelin_sup", "age_limite_orphelin_etudes_superieures", d97, "age"))],
+            [{"fr": "Plafond de cumul", "ar": "سقف الجمع"},
+             {"fr": "pensions de veuves et d'orphelins limitées à la pension de référence du "
+                    "mari, par réduction temporaire des pensions d'orphelins",
+              "ar": "جرايات الأرامل والأيتام محدودة بجراية الزوج المرجعية، مع تخفيض مؤقت "
+                    "لجرايات الأيتام"},
+             {"fr": "1997 : pensions de conjoint survivant et d'orphelins limitées à la pension "
+                    "dont bénéficiait ou aurait pu bénéficier le défunt (décret n° 97-291, "
+                    "art. 38)",
+              "ar": "1997: جرايات القرين الباقي على قيد الحياة والأيتام محدودة بالجراية التي كان "
+                    "ينتفع بها أو كان يمكن أن ينتفع بها المتوفى (الأمر عدد 97-291، الفصل 38)"}],
+            [{"fr": "Cumul d'une pension d'invalidité et d'une pension de survivant",
+              "ar": "الجمع بين جراية عجز وجراية قرين باق على قيد الحياة"},
+             {"fr": "interdit, seule la plus élevée étant servie",
+              "ar": "ممنوع، تدفع الأعلى فقط"},
+             {"fr": "1997 : interdiction supprimée par l'abrogation de l'article 52 (décret "
+                    "n° 97-291, art. 2)",
+              "ar": "1997: إلغاء المنع بإلغاء الفصل 52 (الأمر عدد 97-291، الفصل 2)"}],
+        ]
+        entetes = {
+            "fr": [m["regle"], f"Décret n° 74-499 ({date(d74)})", m["modifications"]],
+            "ar": [m["regle"], f"الأمر عدد 74-499 ({date(d74)})", m["modifications"]],
+        }[langue]
+        return ot.tableau_gabarit(entetes, lignes, langue)
+
+    def rsa_evolution():
+        """Évolution des autres éléments du régime des salariés agricoles, 1981-2026."""
+        sv = "parameters/retraite/rsa/survivants"
+
+        def lu(nom, chemin, d, formateur="age"):
+            return L(f"{sv}/{chemin}.yaml", d, formateur, _lien(nom))
+
+        d81, d96, d97 = "1981-01-01", "1996-08-04", "1997-05-01"
+        lignes = [
+            [{"fr": "Délai de présentation de la demande", "ar": "أجل تقديم الطلب"},
+             {"fr": "un an", "ar": "سنة واحدة"},
+             {"fr": "10 décembre 1995 : cinq ans (loi n° 95-102, art. 74 al. 1)",
+              "ar": "10 ديسمبر 1995: خمس سنوات (القانون عدد 95-102، الفصل 74 فقرة 1)"}],
+            [{"fr": "Bénéficiaire de la réversion",
+              "ar": "المستفيد من جراية القرين الباقي على قيد الحياة"},
+             {"fr": "la veuve, et le veuf invalide ; mariage contracté antérieurement à "
+                    "l'ouverture du droit à pension",
+              "ar": "الأرملة، والأرمل العاجز؛ زواج تم قبل فتح الحق في الجراية"},
+             {"fr": "4 août 1996 : le conjoint survivant ; liens de mariage existant au moment "
+                    "du décès (loi n° 96-66, art. 60 et 61)",
+              "ar": "4 أوت 1996: القرين الباقي على قيد الحياة؛ روابط الزواج القائمة وقت الوفاة "
+                    "(القانون عدد 96-66، الفصلان 60 و61)"}],
+            [{"fr": "Remariage", "ar": "الزواج من جديد"},
+             {"fr": "suppression de la pension", "ar": "إلغاء الجراية"},
+             g({"fr": "{d} : suspension seulement en cas de remariage avant {r} ans ; "
+                      "rétablissement, revalorisé, au décès du nouveau conjoint ou à la "
+                      "dissolution du mariage ; cumul de pensions de conjoint survivant "
+                      "interdit, la plus élevée étant servie (loi n° 96-66, art. 63)",
+                "ar": "{d}: تعليق فقط في حال الزواج من جديد قبل سن {r}؛ استعادة، مع تعديل، عند "
+                      "وفاة القرين الجديد أو حل الزواج؛ منع الجمع بين جرايات القرين الباقي على "
+                      "قيد الحياة، وتُصرف الجراية الأعلى (القانون عدد 96-66، الفصل 63)"},
+               d=L(f"{sv}/age_remariage_suspensif.yaml", d96,
+                   lambda _v, lg: ot.formate_date(d96, lg), _lien("remariage")),
+               r=lu("remariage", "age_remariage_suspensif", d96, _entier))],
+            [{"fr": "Plafond de cumul", "ar": "سقف الجمع"},
+             {"fr": "pension de référence du mari", "ar": "جراية الزوج المرجعية"},
+             {"fr": "4 août 1996 : pension dont bénéficiait ou aurait pu bénéficier le défunt "
+                    "(loi n° 96-66, art. 69)",
+              "ar": "4 أوت 1996: الجراية التي كان يستفيد منها أو كان يمكن أن يستفيد منها "
+                    "المتوفى (القانون عدد 96-66، الفصل 69)"}],
+            [{"fr": "Âge limite de l'orphelin", "ar": "السن الأقصى لليتيم"},
+             g({"fr": "orphelin mineur : {a} ; {e} en cas d'études ; sans limite en cas "
+                      "d'infirmité",
+                "ar": "يتيم قاصر: {a}؛ {e} في حال الدراسة؛ دون حدّ في حال العجز"},
+               a=lu("age_orphelin", "age_limite_orphelin", d81),
+               e=lu("age_orphelin_etudes", "age_limite_orphelin_etudes", d81)),
+             g({"fr": "{d} : {a} ; {e} en études secondaires, techniques ou professionnelles ; "
+                      "{s} en études supérieures sans bourse ; la fille, tant qu'elle ne "
+                      "dispose pas de ressources ou que l'obligation alimentaire n'incombe pas "
+                      "à son époux ; sans limite en cas d'infirmité (loi n° 97-61, art. 64) ; "
+                      "2 juillet 2007 : fille sans limite d'âge, conditions appréciées au décès, "
+                      "paiement définitivement suspendu si l'une d'elles fait défaut ; le mot "
+                      "« mineur » est supprimé (loi n° 2007-43)",
+                "ar": "{d}: {a}؛ {e} في الدراسات الثانوية أو الفنية أو المهنية؛ {s} في الدراسات "
+                      "العليا دون منحة؛ البنت، ما دامت لا تملك موارد أو أن واجب النفقة لا يقع "
+                      "على عاتق زوجها؛ دون حدّ في حال العجز (القانون عدد 97-61، الفصل 64)؛ "
+                      "2 جويلية 2007: البنت دون حدّ للسن، تُقيّم الشروط عند الوفاة، ويُعلّق "
+                      "الدفع نهائياً إذا فقد أحدها؛ تُحذف كلمة «قاصر» (القانون عدد 2007-43)"},
+               d=L(f"{sv}/age_limite_orphelin_etudes_superieures.yaml", d97,
+                   lambda _v, lg: ot.formate_date(d97, lg), _lien("age_orphelin_sup")),
+               a=lu("age_orphelin", "age_limite_orphelin", d97),
+               e=lu("age_orphelin_etudes", "age_limite_orphelin_etudes", d97),
+               s=lu("age_orphelin_sup", "age_limite_orphelin_etudes_superieures", d97))],
+            [{"fr": "Revalorisation", "ar": "تعديل الجرايات"},
+             {"fr": "à chaque paiement, proportionnellement à la variation du SMAG",
+              "ar": "عند كل دفع، تناسبياً مع تغيّر الأجر الأدنى الفلاحي المضمون"},
+             {"fr": "aucune ; en 2026, le décret qui fixe le SMAG énonce que son augmentation "
+                    "s'applique aux pensions de retraite (décret n° 2026-66, art. 5)",
+              "ar": "لا شيء؛ في عام 2026، ينص الأمر الذي يحدد الأجر الأدنى الفلاحي المضمون على "
+                    "أن زيادته تُطبق على جرايات التقاعد (الأمر عدد 2026-66، الفصل 5)"}],
+        ]
+        entetes = {
+            "fr": [m["element"], f"Loi n° 81-6 ({date(d81)})", m["modifications"]],
+            "ar": [m["element"], f"القانون عدد 81-6 ({date(d81)})", m["modifications"]],
+        }[langue]
+        return ot.tableau_gabarit(entetes, lignes, langue)
+
+    def classes_revenu():
+        """Les classes de revenus des trois régimes à assiette forfaitaire, à l'état en vigueur.
+
+        Une ligne par régime, une colonne par rang de classe ; une classe que le régime n'a
+        pas reste vide. Écrit au livre « Cotisations sociales », dont c'est l'assiette.
+        """
+        import pandas as pd
+
+        mm = MOTS[langue]
+        regimes = (
+            (m["reg_rtns"], f"{RTNS}/revenu_reference", 10, "decret95-1166, art. 7", True),
+            (m["reg_raci"], f"{RACI}/revenu_reference", 10, "decret2003-894, art. 5", False),
+            (m["reg_rtte"], f"{RTTE}/revenu_reference", 4, "decret89-107, art. 6", False),
+        )
+        lignes = []
+        for nom, noeud, nombre, cle, agricole in regimes:
+            ot.releve_note(f"{noeud}/classes", m["lien_classes"].format(regime=nom))
+            ligne = {m["regime"]: nom}
+            effets = []
+            heures = ot.en_vigueur(ot.serie_datee(f"{noeud}/heures_annuelles_smig.yaml"), ETAT)
+            ot.releve_note(f"{noeud}/heures_annuelles_smig.yaml",
+                           m["lien_heures"].format(regime=nom))
+            reference = m["ref_smig"].format(h=ot.formate_dinars(heures[1]))
+            if agricole:
+                jours = ot.en_vigueur(ot.serie_datee(f"{noeud}/jours_annuels_smag.yaml"), ETAT)
+                ot.releve_note(f"{noeud}/jours_annuels_smag.yaml",
+                               m["lien_jours"].format(regime=nom))
+                reference += m["ref_smag"].format(j=ot.formate_dinars(jours[1]))
+            ligne[m["reference"]] = reference
+            for k in range(1, 11):
+                if k > nombre:
+                    ligne[mm["classe"].format(k=k)] = ot.VIDE
+                    continue
+                point = ot.en_vigueur(ot.serie_datee(f"{noeud}/classes/classe_{k}.yaml"), ETAT)
+                if point is None or point[1] is None:
+                    print(f"✗ {noeud}/classes/classe_{k} : aucune valeur en vigueur")
+                    return None
+                effets.append(point[0])
+                ligne[mm["classe"].format(k=k)] = f.coefficient(point[1])
+            ligne = {m["regime"]: nom, m["effet"]: date(max(effets)),
+                     **{c: v for c, v in ligne.items() if c != m["regime"]}}
+            ligne[m["texte"]] = f"[@{cle}]"
+            lignes.append(ligne)
+        return pd.DataFrame(lignes)
+
+    return {
+        "classes_revenu.md": classes_revenu,
+        "rsna_reference.md": rsna_reference,
+        "rsna_invalidite.md": rsna_invalidite,
+        "rsna_survivants.md": rsna_survivants,
+        "rsa_evolution.md": rsa_evolution,
+        "rsaa.md": rsaa,
+        "complementaire.md": complementaire,
+        "rtte.md": rtte,
+        "rtfr.md": rtfr,
+        "raci.md": raci,
+        "cnrps_departs_anticipes.md": cnrps_departs,
+        "cnrps_survivants.md": cnrps_survivants,
+    }
+
 
 
 def verifie_texte(df, colonne: str) -> str | None:
@@ -788,6 +1401,19 @@ def verifie_texte(df, colonne: str) -> str | None:
         if not texte.startswith("[@"):
             return texte
     return None
+
+
+# Livres où chaque tableau est écrit, quand ce n'est pas celui des retraites seul : la
+# fabrique reste unique, le tableau est émis dans chaque livre (`ot.ecrire_dans_livres`).
+LIVRE = "retraites"
+LIVRES = {
+    # Les indemnités familiales du secteur public : accessoire de la pension ici, prestation
+    # familiale de l'agent en activité au livre « Prestations sociales ».
+    "cnrps_indemnites_familiales.md": (LIVRE, "prestations_sociales"),
+    # Les classes de revenus des trois régimes à assiette forfaitaire : l'assiette des
+    # cotisations au livre « Cotisations sociales ».
+    "classes_revenu.md": ("cotisations_sociales",),
+}
 
 
 def main() -> int:
@@ -812,7 +1438,11 @@ def main() -> int:
             if manquante is not None:
                 print(f"✗ {langue}/{nom} : date d'effet sans clé de citation — {manquante}")
                 return 1
-            ot.ecrire_tableau(sortie / nom, df, liens, langue)
+            erreur = ot.ecrire_dans_livres(RACINE, langue, LIVRES.get(nom, (LIVRE,)), nom,
+                                           df, liens)
+            if erreur:
+                print(erreur)
+                return 1
         print(f"✓ {langue} : {len(fabriques)} tableaux")
     # Chaque série est émise quoi qu'il arrive aux autres, et le code de retour les
     # combine : une série vide ne doit pas en masquer une autre.

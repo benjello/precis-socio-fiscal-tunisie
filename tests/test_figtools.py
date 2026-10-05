@@ -234,5 +234,75 @@ class EcritureSansToucherTest(unittest.TestCase):
         self.assertTrue(self.side.exists())
 
 
+class FausseFigure:
+    """Ce que `_image_vue` demande à une figure matplotlib : `savefig` et `_infobulles`.
+
+    Le SVG écrit porte un groupe par infobulle de CETTE figure, comme matplotlib le fait
+    pour un artiste muni d'un `gid` : on vérifie ainsi que chaque vue ne reçoit que les
+    siennes, sans installer matplotlib.
+    """
+
+    def __init__(self, infobulles=None):
+        if infobulles:
+            self._infobulles = infobulles
+
+    def savefig(self, chemin, format=None, **_):
+        groupes = "".join(f'<g id="{gid}"><path/></g>' for gid in getattr(self, "_infobulles", {}))
+        Path(chemin).write_text(
+            f'<?xml version="1.0"?>\n<svg width="10pt" height="5pt" viewBox="0 0 10 5">'
+            f'{groupes}</svg>\n', encoding="utf-8")
+
+
+class VuesTest(unittest.TestCase):
+    """Une figure peut montrer plusieurs vues — millions de dinars, % du PIB… — en
+    sous-onglets de l'onglet « Graphique », sans cesser d'être UNE figure numérotée.
+
+    Le contrat qu'on fige : une vue unique rend exactement ce que rendait la figure avant
+    l'introduction des vues (les figures existantes ne bougent pas d'un octet) ; plusieurs
+    vues rendent un `panel-tabset` imbriqué en HTML et la première vue seule ailleurs.
+    """
+
+    def test_noms_des_fichiers(self):
+        self.assertEqual(figtools.noms_des_vues("fig_x", 1), ["fig_x"])
+        self.assertEqual(figtools.noms_des_vues("fig_x", 3), ["fig_x", "fig_x-2", "fig_x-3"])
+
+    def test_vue_unique_inchangee(self):
+        image = '![](_fig/fig_x.png){fig-alt="Légende"}'
+        self.assertEqual(figtools.onglet_graphique([(None, image)]), image)
+
+    def test_plusieurs_vues_en_sous_onglets(self):
+        sortie = figtools.onglet_graphique([("Millions de dinars", "IMG1"),
+                                            ("% du PIB", "IMG2")])
+        html, _, pdf = sortie.partition('::: {.content-hidden when-format="html"}')
+        self.assertTrue(html.startswith('::: {.content-visible when-format="html"}'))
+        self.assertIn("::: {.panel-tabset}", html)
+        self.assertIn("### Millions de dinars\n\nIMG1", html)
+        self.assertIn("### % du PIB\n\nIMG2", html)
+        self.assertLess(html.index("IMG1"), html.index("IMG2"))
+        self.assertNotIn("\n## ", sortie)  # niveau 2 : réservé aux onglets de la figure
+        # Hors HTML : la première vue seule, sans titre de vue.
+        self.assertIn("IMG1", pdf)
+        self.assertNotIn("IMG2", pdf)
+        self.assertNotIn("###", pdf)
+
+    def test_chaque_vue_a_ses_infobulles(self):
+        with tempfile.TemporaryDirectory() as d:
+            png = Path(d)
+            a = figtools._image_vue(FausseFigure({"ib-0": "vue un"}), png, "fig_x", "Alt")
+            b = figtools._image_vue(FausseFigure({"ib-0": "vue deux"}), png, "fig_x-2",
+                                    "Alt — % du PIB")
+            c = figtools._image_vue(FausseFigure(), png, "fig_x-3", "Alt")
+            self.assertTrue((png / "fig_x.png").exists())
+            self.assertTrue((png / "fig_x-2.png").exists())
+        self.assertIn("<title>vue un</title>", a)
+        self.assertNotIn("vue deux", a)
+        self.assertIn("<title>vue deux</title>", b)
+        self.assertNotIn("vue un", b)
+        self.assertIn("fig_x-2.png", b)
+        self.assertIn('aria-label="Alt — % du PIB"', b)
+        # Sans infobulle : l'image seule, ni SVG ni bascule HTML/PDF.
+        self.assertEqual(c, f'![]({png / "fig_x-3.png"}){{fig-alt="Alt"}}')
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -6,8 +6,9 @@ versionné : c'est ici que les conventions vivent, pas dans la mémoire d'un ass
 
 ## Le dépôt en deux phrases
 
-Cinq livres Quarto bilingues (`precis/fr/<livre>/`, `precis/ar/<livre>/`) — retraites, cotisations
-sociales, prestations sociales, rémunérations publiques, fiscalité —, un glossaire bilingue
+Huit volumes bilingues — des livres Quarto, `precis/fr/<livre>/` et `precis/ar/<livre>/` — :
+fiscalité, cotisations sociales, prestations sociales, retraites, caisses de sécurité sociale,
+rémunérations publiques, finances locales, marché du travail ; un glossaire bilingue
 engendré depuis `precis/glossaire.yml`, une bibliographie CSL-JSON, et des tableaux de paramètres
 engendrés depuis le dépôt `openfisca-tunisia`, qui porte aussi les retraites depuis sa version 0.93.
 
@@ -29,12 +30,17 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   rattrapage à la main. Conséquence pratique : **quand tu ajoutes un chapitre côté français, ajoute-le
   toi-même au `_quarto.yml` arabe**, une fois sa traduction livrée — sans quoi il ne sera servi dans
   aucune des deux langues. Un fichier malformé ou des chapitres qui dérivent sont attrapés par
-  `rendre-les-livres.yml`, qui rend les dix livres sur chaque PR.
+  `rendre-les-livres.yml`, qui rend les seize livres sur chaque PR.
 - **Ne modifie pas les fichiers engendrés** : `_glossaire.qmd`, `translation_glossary.generated.md`,
   `precis/*/*/tables/*`.
-- **Aucune valeur, aucune date, aucune URL sans source vérifiée.** Une case vide honnête vaut mieux
-  qu'une valeur plausible. URL du JORT sur `pist.tn` uniquement, dans l'édition de la langue du
-  fichier.
+- **Aucune valeur isolée, aucune date, aucune URL sans source vérifiée.** Une case vide honnête vaut
+  mieux qu'une valeur plausible. Exception éditoriale : une **série historique importante déjà
+  portée par openfisca-tunisia** peut rester visible provisoirement pour que son évolution ne
+  disparaisse pas du précis. Elle est alors présentée dans son ensemble, jamais comme un état du
+  droit établi, sans mention du modèle dans le rendu ; un `<!-- TODO (documentaliste) : … -->`
+  adjacent renvoie à une issue ouverte sur `openfisca-tunisia` qui énumère les valeurs et dates à
+  sourcer, et le constat figure aussi dans `docs/notes/backlog-modele.md`. URL du JORT sur `pist.tn`
+  uniquement, dans l'édition de la langue du fichier.
 - **Ne committe pas** sans que l'humain ait relu, sauf consigne explicite. N'ouvre ni PR ni issue de
   ta propre initiative.
 - **OCR** : lance les océrisations au premier plan ou attends-les, et ne laisse aucun processus
@@ -43,10 +49,18 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
 
 ## Écrire dans le précis
 
-`docs/conventions-redaction.md` fait foi. Les trois règles qu'on oublie le plus :
+`docs/conventions-redaction.md` fait foi. Les règles qu'on oublie le plus :
 
-- **Le précis documente la loi, jamais le modèle.** Ni `openfisca`, ni « le modèle », ni « les
-  paramètres » dans le texte rendu. Un constat sur le modèle va dans un `<!-- TODO (rôle) : … -->`,
+- **Tiens `docs/notes/backlog-precis.md` à jour quand tu modifies un chapitre.** Dans le même
+  changement, retire les tâches closes, inscris les lacunes nouvelles et indique si le texte
+  est lisible dans le corpus, demande un OCR, ou reste à obtenir. Vérifie avant de reprendre
+  les chiffres et localisations d'un inventaire daté : `docs/notes/todo-localisation.md` est
+  une photographie du 20 septembre 2026, pas un état du corpus en temps réel. La revue
+  humaine contrôle que le backlog et le chapitre racontent le même état.
+
+- **Les volumes documentent la loi, jamais le modèle.** Ni `openfisca`, ni « le modèle », ni « les
+  paramètres » dans le texte rendu d'un volume. La documentation générale — README, page
+  « À propos » — peut, elle, dire d'où viennent les tableaux et nommer `openfisca-tunisia`. Un constat sur le modèle va dans un `<!-- TODO (rôle) : … -->`,
   dans une *issue*, ou dans `docs/notes/backlog-modele.md`. `scripts/check_pas_de_modele.py` le
   vérifie.
   Seule exception : l'onglet « Base législative » des tableaux engendrés, qui lie chaque
@@ -207,7 +221,7 @@ scripts/verifier.sh [livre…]                                # glossaire, contr
 uv run python scripts/build_glossary.py                    # verrou de synchro du glossaire
 cd precis/fr/<livre> && uv run quarto render --to html     # zéro citation [?] non résolue
 uv run python scripts/check_pas_de_modele.py               # le précis ne parle pas du modèle
-./build.sh                                                  # les cinq livres, FR et AR
+./build.sh                                                  # les huit volumes, FR et AR
 ```
 
 **Rends TOUS les livres que la PR touche, pas seulement celui qui l'occupe.** Aucun job de CI ne

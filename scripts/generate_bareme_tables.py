@@ -52,6 +52,17 @@ MOTS = {
         "deduction": "Déduction",
         "enfant1": "1\u1d49\u02b3 enfant",
         "enfant4": "4\u1d49 enfant",
+        "enfant2": "2\u1d49 enfant",
+        "enfant3": "3\u1d49 enfant",
+        "parent_ressources": "Ressources maximales du parent à charge",
+        "smig_fois": "{n} SMIG",
+        # Synthèse des générations du barème.
+        "generation": "", "generation_cpe": "Revenus {debut} (CPE)",
+        "generation_periode": "Revenus {debut} → {fin}",
+        "nb_tranches": "Nombre de tranches (tranche à 0 % comprise)",
+        "limite_zero": "Limite supérieure de la tranche à 0 %",
+        "tms": "Taux marginal supérieur",
+        "seuil_tms": "Seuil du taux marginal supérieur",
         "enfant_infirme": "Enfant infirme",
         "parent": "Parent à charge",
         # Libellés des liens vers la base législative des barèmes.
@@ -77,6 +88,16 @@ MOTS = {
         "deduction": "الطرح",
         "enfant1": "الطفل الأوّل",
         "enfant4": "الطفل الرابع",
+        "enfant2": "الطفل الثاني",
+        "enfant3": "الطفل الثالث",
+        "parent_ressources": "الموارد القصوى للوالد المتكفَّل به",
+        "smig_fois": "{n} × الأجر الأدنى المضمون",
+        "generation": "", "generation_cpe": "مداخيل {debut} (الضريبة الشخصية للدولة)",
+        "generation_periode": "مداخيل {debut} → {fin}",
+        "nb_tranches": "عدد الشرائح (بما فيها الشريحة بنسبة 0 %)",
+        "limite_zero": "الحدّ الأعلى للشريحة بنسبة 0 %",
+        "tms": "أعلى نسبة حدّية",
+        "seuil_tms": "عتبة أعلى نسبة حدّية",
         "enfant_infirme": "الطفل المعوق",
         "parent": "الوالد المتكفَّل به",
         "bareme_ir": "جدول الضريبة على الدخل",
@@ -104,12 +125,8 @@ TABLEAUX_CPE = [
 # Séries de paramètres scalaires : (fichier, chemin, en-tête de la colonne, formateur).
 def formateurs(langue):
     u = UNITES[langue]
-
-    def dinars(v):
-        return u["vide"] if v is None else ot.formate_dinars(v) + u["dinar"]
-
-    def taux(v):
-        return u["vide"] if v is None else ot.formate_taux(v)
+    f = ot.formateurs(langue)
+    dinars, taux = f.dinars, f.taux
 
     def plafond(v):
         if v is None or v == float("inf"):
@@ -130,6 +147,7 @@ def formateurs(langue):
 # dans la langue voulue.
 def evolutions(langue):
     m = MOTS[langue]
+    u = UNITES[langue]
     dinars, taux, _plafond, plafond_ou_aucun = formateurs(langue)
     ir = "parameters/impot_revenu"
     return [
@@ -159,9 +177,13 @@ def evolutions(langue):
         ("famille_chef_de_famille.md",
          [(f"{ir}/deductions/famille/chef_de_famille.yaml", m["deduction"], dinars),
           (f"{ir}/deductions/famille/enf1.yaml", m["enfant1"], dinars),
+          (f"{ir}/deductions/famille/enf2.yaml", m["enfant2"], dinars),
+          (f"{ir}/deductions/famille/enf3.yaml", m["enfant3"], dinars),
           (f"{ir}/deductions/famille/enf4.yaml", m["enfant4"], dinars),
           (f"{ir}/deductions/famille/infirme.yaml", m["enfant_infirme"], dinars),
-          (f"{ir}/deductions/famille/parent_max.yaml", m["parent"], dinars)],
+          (f"{ir}/deductions/famille/parent_max.yaml", m["parent"], dinars),
+          (f"{ir}/deductions/famille/parent_plaf.yaml", m["parent_ressources"],
+           lambda v: u["vide"] if v is None else m["smig_fois"].format(n=f"{v:g}"))],
          {"1990-01-01": "code-irpp-is-1990, art. 40", "2004-01-01": "lf-2005, art. 50",
           "2009-01-01": "lf-2010, art. 40", "2013-01-01": "lf-2014, art. 94",
           "2017-01-01": "lf-2018, art. 55", "2019-01-01": "lf-2018, art. 54"}),
@@ -240,6 +262,151 @@ def bareme(chemin, annee, libelle, langue, colonne_tranche, avec_taux_effectif):
     )
 
 
+# ------------------------------------------------ synthèse des générations du barème
+#
+# Recension des paramètres en dur, FI-01 : le tableau `tbl-bareme-irpp-generations` ne porte
+# que des grandeurs DÉRIVÉES des barèmes déjà lus — nombre de tranches, limite de la tranche
+# à taux nul, taux marginal supérieur et son seuil. Elles se calculent ; elles ne se saisissent
+# plus. Une génération est un barème daté : la dernière de la contribution personnelle
+# d'État, puis chaque barème de l'IRPP, dont les dates sont celles des références du paramètre.
+
+DERNIERE_ANNEE = 2026
+GENERATION_CPE = (BAREME_CPE, 1986, "lf-1986, art. 8",
+                  {"fr": "n° 91 du 31 déc. 1985, p. 1731", "ar": "العدد 91 بتاريخ 31 ديسمبر 1985، ص. 1731"})
+TEXTES_IRPP = {
+    1990: ("code-irpp-is-1990, art. 44 § I",
+           {"fr": "n° 1 des 2-5 janv. 1990, p. 9", "ar": "العدد 1 بتاريخ 2-5 جانفي 1990، ص. 9"}),
+    2017: ("lf-2017, art. 14 § 1",
+           {"fr": "n° 105 du 27 déc. 2016, p. 3831", "ar": "العدد 105 بتاريخ 27 ديسمبر 2016، ص. 3831"}),
+    2025: ("lf-2025, art. 36 § 1",
+           {"fr": "n° 149 du 10 déc. 2024, p. 3429-3430 (éd. fr.)",
+            "ar": "العدد 149 بتاريخ 10 ديسمبر 2024، ص. 3429-3430 (النسخة الفرنسية)"}),
+}
+LIGNES_JORT = {"fr": ("Texte", "JORT"), "ar": ("النصّ", "الرائد الرسمي")}
+
+
+def bareme_generations(langue):
+    """Synthèse des générations du barème progressif, CPE de 1986 puis IRPP."""
+    import pandas as pd
+
+    m, u = MOTS[langue], UNITES[langue]
+    references = (ot.charge_parametre(BAREME) or {}).get("metadata", {}).get("reference", {})
+    annees = sorted(int(str(c)[:4]) for c in references)
+    inconnues = [a for a in annees if a not in TEXTES_IRPP]
+    if inconnues:
+        print(f"✗ génération du barème sans texte déclaré (TEXTES_IRPP) : {inconnues}")
+        return None
+    generations = [GENERATION_CPE] + [
+        (BAREME, a, *TEXTES_IRPP[a]) for a in annees]
+    ot.releve_note(BAREME_CPE, m["bareme_cpe"])
+    ot.releve_note(BAREME, m["bareme_ir"])
+    colonnes, cellules = [], []
+    for rang, (chemin, annee, cle, jort) in enumerate(generations):
+        tranches = ot.bareme_a_la_date(chemin, datetime.date(annee, 1, 1))
+        if not tranches:
+            return None
+        if chemin == BAREME_CPE:
+            colonnes.append(m["generation_cpe"].format(debut=annee))
+        else:
+            suivante = generations[rang + 1][1] - 1 if rang + 1 < len(generations) \
+                else DERNIERE_ANNEE
+            colonnes.append(m["generation_periode"].format(debut=annee, fin=suivante))
+        cellules.append([
+            str(len(tranches)),
+            ot.formate_dinars(tranches[1][0]) + u["dinar"],
+            ot.formate_taux(tranches[-1][1]),
+            ot.formate_dinars(tranches[-1][0]) + u["dinar"],
+            f"[@{cle}]",
+            jort[langue],
+        ])
+    libelles = [m["nb_tranches"], m["limite_zero"], m["tms"], m["seuil_tms"],
+                *LIGNES_JORT[langue]]
+    lignes = [{m["generation"]: libelle, **{c: cellules[j][i] for j, c in enumerate(colonnes)}}
+              for i, libelle in enumerate(libelles)]
+    return pd.DataFrame(lignes)
+
+
+# ----------------------------------------------- impôt sur les sociétés : taux et minimum
+#
+# Recension, FI-18 et FI-20. Les deux tableaux du chapitre étaient imprimés depuis le relevé
+# saisi `tarifs-releves-impot-societes.csv`, contrôlé par `check_tarifs_openfisca.py`. Ils
+# sont désormais ENGENDRÉS : chaque case que le modèle porte est lue dans le paramètre, à la
+# date d'effet de la case ; les autres — la nature du minimum, plafond puis plancher, les
+# valeurs antérieures au retournement de 2006, les états « ligne inexistante » et « sans
+# objet » — viennent du relevé, qui reste la source de ce que le paramètre ne peut pas porter.
+# Le relevé sert aussi de GARDE-FOU : une case lue qui ne rend pas exactement la cellule du
+# relevé fait échouer la génération. Les correspondances (ligne -> paramètre) sont celles du
+# contrôle, importées et non recopiées.
+
+RELEVE_IS = RACINE / "fr" / "fiscalite" / "tarifs" / "tarifs-releves-impot-societes.csv"
+TABLEAUX_IS = {"is_taux.md": "taux-chronologie", "is_minimum.md": "minimum-impot"}
+# Traduction des libellés et des états du relevé, qui est en français.
+RELEVE_AR = {
+    "Taux": "السعر", "Élément": "العنصر", "Depuis 2024": "منذ 2024", "Depuis 2014": "منذ 2014",
+    "Droit commun": "السعر العادي",
+    "Taux réduit": "السعر المخفّض — الصناعات التقليدية والفلاحة والصيد البحري ومناطق التنمية "
+                   "الجهوية والتعاضديات",
+    "Petites et moyennes sociétés": "الشركات الصغرى والمتوسطة — رقم معاملات لا يتجاوز مليون "
+                                    "دينار أو 500 ألف دينار",
+    "Secteurs majorés": "القطاعات الخاضعة لسعر مرفّع — المالية والاتصالات والمحروقات "
+                        "والمساحات التجارية الكبرى",
+    "Banques et entreprises d'assurance": "البنوك ومؤسسات التأمين",
+    "Nature du minimum": "طبيعة الحدّ الأدنى",
+    "Taux — sociétés non soumises": "النسبة — الشركات غير الخاضعة لسعر 10 %",
+    "Taux — sociétés soumises": "النسبة — الشركات الخاضعة لسعر 10 %",
+    "Montant — sociétés non soumises": "المبلغ — الشركات غير الخاضعة لسعر 10 %",
+    "Montant — sociétés soumises": "المبلغ — الشركات الخاضعة لسعر 10 %",
+    "plafond": "سقف", "plancher": "حدّ أدنى",
+    "*(ligne inexistante)*": "*(سطر غير موجود)*",
+}
+
+
+def _ar_releve(texte: str) -> str:
+    """Traduit une cellule du relevé : libellé (par son début), état, ou montant."""
+    for debut, traduction in RELEVE_AR.items():
+        if texte == debut or (len(debut) > 12 and texte.startswith(debut)):
+            return traduction
+    return texte.replace(" D", " د")
+
+
+def tableau_is(tableau: str, langue: str):
+    """Un tableau du relevé de l'IS, chaque case lue dans le paramètre quand il la porte."""
+    import csv
+    import pandas as pd
+    import check_tarifs_openfisca as controle
+    import tarifs
+
+    spec = tarifs.TABLEAUX[tableau]
+    rangs = [r for r in csv.DictReader(RELEVE_IS.open(encoding="utf-8"))
+             if r["tableau"] == tableau]
+    lignes: dict[int, dict[str, str]] = {}
+    for r in rangs:
+        publiee = tarifs.recompose(r["valeur"], r["unite"], r["statut"])
+        case = publiee
+        _cle, chemin = controle.cle(r)
+        if (r["statut"] == "lu" and r["valeur"] and chemin
+                and not controle.prefixe_hors_modele(r)):
+            relatif = "parameters/impot_societes/" + chemin.replace(".", "/") + ".yaml"
+            valeur = ot.valeur_a_la_date(
+                (ot.charge_parametre(relatif) or {}).get("values"),
+                datetime.date.fromisoformat(r["date_effet"]))
+            if valeur is None:
+                raise ValueError(f"{relatif} : aucune valeur au {r['date_effet']}")
+            case = (ot.formate_taux(valeur) if r["unite"] == "%"
+                    else ot.formate_dinars(valeur) + " " + r["unite"]).strip()
+            if case != publiee:
+                raise ValueError(f"{tableau} / {r['produit'][:40]} / {r['colonne']} : "
+                                 f"le paramètre rend « {case} », le relevé « {publiee} »")
+            libelle = r["produit"] if langue == "fr" else _ar_releve(r["produit"])
+            ot.releve_note(relatif, libelle)
+        ligne = lignes.setdefault(int(r["ordre"]), {})
+        ligne["produit"] = r["produit"] if langue == "fr" else _ar_releve(r["produit"])
+        ligne[r["colonne"]] = case if langue == "fr" else _ar_releve(case)
+    entetes = spec["entetes"] if langue == "fr" else [_ar_releve(e) for e in spec["entetes"]]
+    return pd.DataFrame([[lignes[o].get(c, "") for c in spec["champs"]] for o in sorted(lignes)],
+                        columns=entetes)
+
+
 def main() -> int:
     if not ot.openfisca_utilisable():
         version = ot.version_openfisca()
@@ -272,7 +439,8 @@ def main() -> int:
 
         for fichier, specs, cles in evolutions(langue):
             df, liens = ot.avec_liens(lambda: ot.tableau_evolution(
-                specs, cles=cles, colonne_periode=m["periode"], colonne_texte=m["texte"]
+                specs, cles=cles, colonne_periode=m["periode"], colonne_texte=m["texte"],
+                langue=langue
             ))
             if df is None:
                 print(f"échec : {langue}/{fichier}", file=sys.stderr)
@@ -318,8 +486,27 @@ def main() -> int:
                 f"     Source : {source} -->\n\n",
             )
 
+        df, liens = ot.avec_liens(lambda: bareme_generations(langue))
+        if df is None:
+            print(f"échec : {langue}/bareme_generations.md", file=sys.stderr)
+            return 1
+        ot.ecrire_tableau(
+            sortie / "bareme_generations.md", df, liens, langue,
+            entete="<!-- Généré par scripts/generate_bareme_tables.py — ne pas éditer à la main.\n"
+                   "     Grandeurs dérivées des barèmes de la CPE (1986) et de l'IRPP. -->\n\n")
+
+        for fichier, tableau in TABLEAUX_IS.items():
+            df, liens = ot.avec_liens(lambda: tableau_is(tableau, langue))
+            ot.ecrire_tableau(
+                sortie / fichier, df, liens, langue,
+                entete="<!-- Généré par scripts/generate_bareme_tables.py — ne pas éditer à la main.\n"
+                       "     Cases lues dans parameters/impot_societes ; les autres viennent du "
+                       "relevé\n     precis/fr/fiscalite/tarifs/tarifs-releves-impot-societes.csv, "
+                       "qui sert de garde-fou. -->\n\n",
+                a_gauche=True)
+
         total = (len(TABLEAUX_CPE) + len(evolutions(langue))
-                 + len(evolutions_datees(langue)) + len(TABLEAUX))
+                 + len(evolutions_datees(langue)) + len(TABLEAUX) + 1 + len(TABLEAUX_IS))
         print(f"✓ {langue} : {total} tableaux")
     return 0
 

@@ -1,0 +1,138 @@
+# Les transferts de l'État {#sec-fl-transferts}
+
+Ce chapitre expose ce que l'État transfère aux collectivités locales. Il mobilise les notions du chapitre 2 : le [transfert financier](#g-transfert-financier) et ses objectifs (@sec-fl-transferts-objectifs) ; les critères qui distinguent la [subvention globale](#g-subvention-globale) de la [subvention spécifique](#g-subvention-specifique), la [subvention conditionnelle](#g-subvention-conditionnelle) de la [subvention forfaitaire](#g-subvention-forfaitaire) (@sec-fl-transferts-criteres) ; la [péréquation](#g-perequation-financiere) des ressources et des besoins (@sec-fl-perequation).
+
+Pendant quarante-deux ans, de 1976 à 2017, le principal de ces transferts est le [fonds commun des collectivités locales](#g-fonds-commun-collectivites-locales). Au sens du chapitre des notions, c'est une dotation globale et forfaitaire : la collectivité en dispose librement, et son montant ne dépend pas de ce qu'elle dépense. Ses critères de répartition mêlent un partage selon la population, une part égale, une part selon le rendement de l'impôt foncier communal et, à partir de 2001, une part réservée aux communes dont les recettes fiscales sont inférieures à la moyenne, qui relève de la péréquation des ressources. Une fraction du fonds, la [réserve](#g-reserve-fonds-commun), est attribuée hors de ces critères. À côté du fonds, la [Caisse des prêts et de soutien des collectivités locales](#g-cpscl) prête aux collectivités et leur accorde des subventions d'investissement.
+
+Le chapitre suit le plan commun du volume : les origines, l'institution du fonds et de la caisse en 1975, les réformes une à une jusqu'à la suppression du fonds, puis la longue période. Une loi de finances dont la date d'effet n'est pas relevée ici est désignée par la gestion qu'elle régit.
+
+## Les origines {#sec-fl-transferts-origines}
+
+Le fonds commun de 1975 réunit deux fonds spéciaux du Trésor plus anciens, le « 1er Fonds Commun des Collectivités Locales » et le « Fonds Commun des Carburants et Pneumatiques », que l'article 56 d'un décret du 25 juin 1948 avait institués [@loi75-36, art. 1]. La caisse de 1975 transforme de même la caisse des prêts aux communes, instituée par un décret du 15 décembre 1902 et réorganisée par un décret du 1er mars 1932 [@loi75-37, art. 1].
+
+Seul l'objet de ces textes anciens est connu ici, d'après les lois de 1975 qui les visent ; leurs règles ne sont pas exposées.
+
+<!-- TODO (documentaliste) : lire le décret du 25 juin 1948 (art. 56 à 58) et les décrets du 15 décembre 1902 et du 1er mars 1932, pour le futur chapitre d'histoire des collectivités. -->
+
+## L'institution, en 1975 {#sec-fl-transferts-1975}
+
+### Le fonds commun des collectivités locales {#sec-fl-fccl-1975}
+
+La loi n° 75-36 du 14 mai 1975 fusionne les deux fonds anciens en « un seul fonds spécial intitulé : "Fonds Commun des Collectivités Locales" », « المال المشترك للجماعات المحلية » dans l'édition arabe [@loi75-36, art. 1]. Elle prend effet le 1er janvier 1976 [@loi75-36, art. 5].
+
+**Ressources.** Le fonds est alimenté par des parts d'impôts d'État [@loi75-36, art. 2] :
+
+- 7 % de l'impôt de la patente et de l'impôt sur le bénéfice des professions non commerciales, et 25 % pour les contribuables imposés au forfait légal ou contractuel ;
+- 10 % des taxes sur le chiffre d'affaires ;
+- 10 % des impôts sur les olives, sur les céréales et sur la vigne, et 50 % de l'impôt agricole ;
+- dix centimes additionnels au droit sur les chambres à air et pneumatiques ;
+- des prélèvements de 3 % et 9 % sur le droit unique de consommation de certains produits pétroliers.
+
+**Répartition.** Les trois quarts des ressources annuelles vont aux collectivités : 20 % aux conseils de gouvernorat, au prorata de leur population hors communes ; 80 % aux communes, moitié au prorata de leur population, moitié au prorata de la moyenne, sur les trois dernières années, de leurs recettes des taxes municipales sur la propriété bâtie. Le quart restant, « le solde », « المدخر » en arabe, est partagé par la loi elle-même : 5 % à la commune de Tunis, 6 % à la caisse des prêts et de soutien, 4 % aux communes de Tunis, Sfax, Sousse et Bizerte pour leurs programmes d'équipement, 8 % à l'Office national de l'assainissement, 2 % au District de Tunis [@loi75-36, art. 3]. L'évolution de ces parts et de ces critères est au @tbl-fl-fccl-repartition.
+
+Pour une commune $j$, la quote-part de 1976 s'écrit :
+
+$$
+F_j = \lambda\,\mu\,F\left(\frac{1}{2}\,\frac{N_j}{\sum_k N_k} + \frac{1}{2}\,\frac{B_j}{\sum_k B_k}\right)
+$$
+
+où $F$ est le montant annuel du fonds, $\lambda$ la part des collectivités locales, $\mu$ la part des communes dans cette part, $N_j$ la population de la commune et $B_j$ la moyenne triennale de ses recettes des taxes sur la propriété bâtie. En 1976, $\lambda = 75\,\%$ et $\mu = 80\,\%$ [@loi75-36, art. 3] ; les valeurs suivantes sont au @tbl-fl-fccl-repartition.
+
+### La caisse des prêts et de soutien des collectivités locales {#sec-fl-cpscl-1975}
+
+La loi n° 75-37 du même jour transforme la caisse des prêts aux communes en « caisse des prêts et de soutien des collectivités locales », dotée de la personnalité civile et de l'autonomie financière, avec effet au 1er janvier 1976 [@loi75-37, art. 1, 2 et 6]. Ses ressources sont le prélèvement sur le fonds commun, les annuités de remboursement de ses prêts, ses emprunts et le produit de ses opérations financières [@loi75-37, art. 3]. Elle consent aux communes, à leurs syndicats, aux conseils de gouvernorat et à leurs établissements des prêts d'investissement, des subventions et des bonifications d'intérêts ; les subventions vont aux collectivités astreintes à des sujétions spéciales ou dont la situation financière est particulièrement difficile, dans la limite de la moitié du prélèvement qu'elle reçoit du fonds commun [@loi75-37, art. 4]. Le lien entre prêt et subvention, au sens du chapitre des notions (@sec-fl-regle-or), passe donc par la caisse.
+
+<!-- TODO (documentaliste) : lire les décrets d'organisation et de conditions des prêts et subventions de la CPSCL (n° 77-212, 79-619, 92-688, 92-1092, 97-1135, 2014-3505, 2016-367), la loi n° 2001-56 (fonds de dotation), les arrêtés du 13 juillet 2015 et du 14 novembre 2017 (subventions annuelles) : note, § 7. -->
+
+## Les réformes, une à une {#sec-fl-fccl-reformes}
+
+### 1982-1986 : la part égale et la part des conseils {#sec-fl-fccl-1982-1986}
+
+La loi de finances pour 1982 récrit l'article 3. Les collectivités gardent les trois quarts du fonds, et les communes 80 % de cette part ; mais une part égale entre bénéficiaires apparaît : 15 % pour les conseils de gouvernorat, le reste selon la population ; 10 % pour les communes, le reste moitié selon la population, moitié selon le rendement des taxes sur la propriété bâtie. Dans le solde, la part de la commune de Tunis passe de 5 à 6 %, pour ses projets d'investissement, et les 4 % des quatre grandes communes deviennent 3 % partagés à égalité entre les communes sièges de gouvernorat [@loi81-100-lf1982, art. 27]. La loi de finances pour 1985 permet d'affecter jusqu'au tiers de la part de Tunis à ses dépenses ordinaires, par arrêté conjoint [@loi84-84-lf1985, art. 63]. Celle de 1986 ramène la part des conseils de gouvernorat de 20 à 14 % et porte celle des communes de 80 à 86 % [@loi85-109-lf1986, art. 68].
+
+### 1987 : des parts d'impôts à la subvention du budget {#sec-fl-fccl-1987}
+
+La loi de finances pour 1987 rend au budget général de l'État les impôts et taxes affectés à plusieurs fonds spéciaux du Trésor, dont le fonds commun, et abroge les dispositions contraires [@loi86-106-lf1987, art. 92]. Le fonds ne reçoit plus de parts d'impôts : il est alimenté par une subvention du budget, inscrite chaque année au tableau des fonds spéciaux du Trésor de la loi de finances. Pour 1990, cette subvention est de 80 millions de dinars [@lf-1990, tableau « L »].
+
+Chaque loi de finances autorise en outre des prélèvements sur les crédits du fonds (@tbl-fl-fccl-prelevements), et reconduit, à partir de 1988, le montant de la réserve réparti l'année précédente [@loi-87-83-lf-1988, art. 72; @loi88-145-lf1989, art. 103; @lf-1990, art. 55; @loi90-111-lf1991, art. 81].
+
+| Gestion | Caisse des prêts et de soutien | Protection civile | Autres | Texte |
+|---|---|---|---|---|
+| 1987 | 2 500 000 D | 700 000 D | — | [@loi86-106-lf1987, art. 44 et 94] |
+| 1988 | 2 500 000 D | 700 000 D | 1 500 000 D, prime de rendement des agents | [@loi-87-83-lf-1988, art. 69-71] |
+| 1989 | 2 500 000 D | 700 000 D | 1 500 000 D, prime de rendement ; 3 800 000 D, hausse des salaires | [@loi88-145-lf1989, art. 100-102] |
+| 1990 | 3 500 000 D | 700 000 D | — | [@lf-1990, art. 53-54] |
+| 1991 | 3 500 000 D | 700 000 D | — | [@loi90-111-lf1991, art. 79-80] |
+
+: Prélèvements autorisés par les lois de finances sur les crédits du fonds commun, 1987-1991 {#tbl-fl-fccl-prelevements}
+
+<!-- TODO (documentaliste) : relire à l'image les montants de 1990 et 1991 au profit de la caisse (lus par océrisation) ; lire les prélèvements des lois de finances pour 1977 à 1979 et le montant du fonds, loi de finances par loi de finances, de 1987 à 2017 (tableaux des fonds spéciaux puis des comptes spéciaux) : note, § 3 et 11. -->
+
+### 1992-1995 : la réserve attribuée par décret {#sec-fl-fccl-reserve}
+
+La loi de finances pour 1992 supprime les pourcentages fixes du solde : ses 25 % sont attribués par décret à la commune de Tunis, au conseil régional de Tunis, aux communes sièges de gouvernorat, au District de Tunis, à la caisse des prêts et de soutien et à l'Office national de l'assainissement ; le décret peut en verser une partie à la part des communes, selon les critères généraux [@loi91-98-lf1992, art. 80]. Le premier de ces décrets fixe la réserve de 1992 à 24 millions de dinars : 7 680 000 D à l'Office national de l'assainissement, 7 620 000 D à la caisse, 4 600 000 D à la commune de Tunis, 2 600 000 D aux communes sièges de gouvernorat, 920 000 D au District de Tunis et 580 000 D au conseil régional de Tunis [@decret92-308]. La loi n° 95-45 ajoute l'Office national de la protection civile aux bénéficiaires, avec effet au 1er janvier 1995 [@loi95-45, art. 1 et 2].
+
+Un décret de répartition de la réserve paraît ensuite chaque année, de 1993 à 2013 ; ceux de 1993 à 2013 ne sont pas exposés ici. Aucun décret de répartition n'est identifié pour les gestions 2014 à 2017.
+
+<!-- RECHERCHE r-fccl-repartition-reserve-2014-2017 : décret répartissant la réserve du fonds commun pour 2014-2017 (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : lire les décrets annuels de répartition de la réserve n° 93-155, 94-592, 95-1122, 96-910, 97-390, 98-397, 99-491, 2000-318, 2001-418, 2002-110, 2003-448, 2004-271, 2005-205, 2006-554, 2007-384, 2007-1303, 2008-354, 2009-355, 2010-461, 2011-276, 2012-147 et 2013-1503 (montant, bénéficiaires, parts), et relire le décret n° 92-308 à l'image : note, § 5. -->
+
+### 2001 et 2007 : la péréquation, puis 82 % aux collectivités {#sec-fl-fccl-2001-2007}
+
+La loi n° 2000-60 récrit les critères à compter du 1er janvier 2001. Pour les conseils régionaux, la part égale passe de 15 à 25 %, le reste selon la population. Pour les communes : 10 % à parts égales, 45 % selon la population, 41 % selon la moyenne triennale des recettes de la taxe sur les immeubles bâtis, et 4 % au prorata de la population entre les communes dont la moyenne triennale des recettes de la taxe sur les immeubles bâtis, de la taxe sur les établissements, de la taxe hôtelière et des produits des marchés est inférieure à celle de l'ensemble des communes [@loi2000-60, art. 1 et 2]. Cette dernière part est une péréquation des ressources, au sens du chapitre des notions : elle ne va qu'aux communes dont le rendement fiscal est inférieur à la moyenne.
+
+La loi de finances pour 2007 porte la part des collectivités de 75 à 82 % du fonds, dont 14 % aux conseils régionaux et 86 % aux communes, et ramène la réserve de 25 à 18 %. La réserve n'a plus que quatre bénéficiaires : la commune de Tunis, le conseil régional de Tunis, les communes sièges de gouvernorat et la caisse ; le District de Tunis, l'Office national de l'assainissement et l'Office de la protection civile en sortent [@lf-2007, art. 11]. La quote-part des communes atteint donc 70,5 % du fonds (82 % × 86 %), celle des conseils régionaux 11,5 %.
+
+### 2014 : la rationalisation des critères {#sec-fl-fccl-2014}
+
+La loi de finances pour 2014, sous l'intitulé « ترشيد مقاييس توزيع المال المشترك للجماعات المحلية », réduit à 37 % la part des communes répartie selon la taxe sur les immeubles bâtis et porte à 8 % la part de péréquation des communes à faible potentiel. Elle plafonne aussi les parts de la réserve de 18 % : jusqu'à 24 % pour la commune de Tunis, 3 % pour le conseil régional de Tunis, 30 % pour les communes sièges de gouvernorat, 27 % pour la caisse, et 16 % « aux exigences de l'autorité de tutelle centrale » pour les besoins spécifiques et imprévus des collectivités ; une quote-part peut toujours être versée, par décret, à la part des communes. Ces dispositions s'appliquent à compter du 1er janvier 2014 [@lf-2014, art. 12 et 95].
+
+### 2018 : la suppression du fonds {#sec-fl-fccl-2018}
+
+La loi de finances pour 2018 supprime le compte spécial du Trésor « حساب المال المشترك للجماعات العمومية المحلية » et abroge la loi n° 75-36 [@lf-2018, art. 11] ; seul l'intitulé de cet article est connu ici, et sa date d'effet n'est pas relevée. Les dotations qui succèdent au fonds, prévues par le code des collectivités locales de 2018 et par les lois de finances suivantes, ne sont pas encore exposées ici. Les budgets des communes de 2022 et 2023 en portent une, la quote-part de la « dotation annuelle », au fonctionnement et à l'investissement (@sec-fl-lp-fccl).
+
+Deux fonds distincts du fonds commun portent des noms voisins. La loi de finances pour 2013 crée un fonds de coopération entre les collectivités locales, « صندوق التعاون بين الجماعات المحلية », dont un décret du 8 juillet 2013 fixe les critères de répartition ; la loi de finances pour 2021 crée un fonds de soutien à la décentralisation, de péréquation et de solidarité entre les collectivités locales, « صندوق دعم اللامركزية والتسوية والتعديل والتضامن بين الجماعات المحلية » [@lf-2013, art. 13-15; @lf-2021, art. 13]. Seul l'intitulé de ces textes est connu ici.
+
+<!-- TODO (documentaliste) : lire l'art. 11 de la LF 2018 (texte, pages FR et AR, effet) ; les articles du code des collectivités locales (loi organique n° 2018-29) sur les ressources transférées, la péréquation et l'appui, et l'art. 392 (fonds de coopération ou fonds commun ?) ; les art. 13-15 de la LF 2013, le décret n° 2013-2797 et l'art. 13 de la LF 2021 (loi n° 2020-46) ; verser les clés correspondantes : note, § 6 et 11. -->
+
+<!-- TODO (documentaliste) : la réserve vaut 15 % du crédit global en 2018 et 2019 dans les agrégats de la DGCT ; trouver le texte qui fonde ce taux. -->
+
+<!-- TODO (documentaliste) : subventions d'investissement, programmes régionaux de développement, programme d'investissement communal et dotation exceptionnelle de 2011-2012 : aucun texte lu au JORT (repères : manuscrit Gilbert 2013, ch. 5, § 5.4 et 5.5 ; Dafflon et Gilbert 2018, ch. 6). -->
+
+## Les textes, en un tableau {#sec-fl-transferts-textes}
+
+| Ce qui est réparti | 1976 | 1982 | 1986 | 1995 | 2001 | 2007 | 2014 |
+|---|---|---|---|---|---|---|---|
+| Part des collectivités locales | 75 % | 75 % | 75 % | 75 % | 75 % | 82 % | 82 % |
+| dont conseils de gouvernorat, puis régionaux | 20 % | 20 % | 14 % | 14 % | 14 % | 14 % | 14 % |
+| dont communes | 80 % | 80 % | 86 % | 86 % | 86 % | 86 % | 86 % |
+| Critères des conseils | population | 15 % égalité, 85 % population | idem | idem | 25 % égalité, 75 % population | idem | idem |
+| Critères des communes | 50 % population, 50 % propriété bâtie | 10 % égalité, 45 % population, 45 % propriété bâtie | idem | idem | 10 % égalité, 45 % population, 41 % TIB, 4 % péréquation | idem | 10 % égalité, 45 % population, 37 % TIB, 8 % péréquation |
+| Réserve (« solde ») | 25 %, parts fixées par la loi | 25 %, parts fixées par la loi | idem | 25 %, attribuée par décret | idem | 18 %, attribuée par décret | 18 %, parts plafonnées par la loi |
+| Texte | [@loi75-36, art. 3] | [@loi81-100-lf1982, art. 27] | [@loi85-109-lf1986, art. 68] | [@loi95-45] | [@loi2000-60] | [@lf-2007, art. 11] | [@lf-2014, art. 12] |
+
+: Répartition légale du fonds commun des collectivités locales, 1976-2017 {#tbl-fl-fccl-repartition}
+
+Les colonnes datent l'entrée en vigueur de chaque texte : 1er janvier 1976, gestions 1982 et 1986, 1er janvier 1995, 2001, 2007 et 2014. La réserve est attribuée par décret depuis la gestion 1992 [@loi91-98-lf1992, art. 80]. Le fonds est supprimé par la loi de finances pour 2018 [@lf-2018, art. 11].
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré quand ces parts et critères seront datés et sourcés dans la base de paramètres. -->
+
+## La longue période {#sec-fl-transferts-longue-periode}
+
+Le montant du fonds n'est réuni ici, par loi de finances, que pour 1990 : une subvention du budget de 80 millions de dinars, en prévision [@lf-1990, tableau « L »]. Pour la même année, la Banque mondiale publie deux chiffres, 82 MD dans un rapport de 1992 et 50,8 MD dans un rapport de 1997 [@wb-msip-1992, fig. 6; @wb-mdp2-1997, annexe 4, tabl. 2]. Le premier est proche du montant voté ; le second se rapproche de la part des communes que donnent les critères légaux, 75 % × 86 % du fonds, soit 51,6 MD sur 80 MD, mais ce calcul n'est imprimé nulle part et la réserve de 1990 n'est pas connue ici. La divergence n'est donc pas tranchée.
+
+Les séries de la Banque mondiale (1985-2012), de la Direction générale des collectivités locales (2008-2019) et des budgets par commune (2018-2023) sont exposées au chapitre de la longue période : celle du fonds au @fig-fl-lp-fccl, celle de la caisse au @fig-fl-lp-cpscl. De 2008 à 2017, la réserve y vaut 18 % du crédit global, et la quote-part des communes 70,4 % à 70,7 %, ce que donnent, à l'arrondi près, les taux de la loi de finances pour 2007 (@sec-fl-lp-fccl).
+
+## Notations {#sec-fl-transferts-notations}
+
+| Symbole | Grandeur | Section |
+|---|---|---|
+| $F$ | montant annuel du fonds commun | @sec-fl-fccl-1975 |
+| $F_j$ | quote-part de la commune $j$ | @sec-fl-fccl-1975 |
+| $\lambda$ | part des collectivités locales dans le fonds | @sec-fl-fccl-1975 |
+| $\mu$ | part des communes dans la part des collectivités | @sec-fl-fccl-1975 |
+| $N_j$ | population de la commune $j$ | @sec-fl-fccl-1975 |
+| $B_j$ | moyenne triennale des recettes des taxes sur la propriété bâtie de la commune $j$ | @sec-fl-fccl-1975 |
+
+: Les symboles du chapitre {#tbl-fl-transferts-notations}

@@ -1,0 +1,21 @@
+- libelle: العجز — مدة الانخراط الدنيا
+  parametre: parameters/retraite/rsna/invalidite/stage_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.invalidite.stage_mois/table/
+- libelle: العجز — النسبة الأساسية
+  parametre: parameters/retraite/rsna/invalidite/taux_base.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.invalidite.taux_base/table/
+- libelle: العجز — الترفيع
+  parametre: parameters/retraite/rsna/invalidite/majoration.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.invalidite.majoration/table/
+- libelle: العجز — فترة الترفيع، بالأشهر
+  parametre: parameters/retraite/rsna/invalidite/periode_majoration_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.invalidite.periode_majoration_mois/table/
+- libelle: العجز — المدة التي تُرفَّع الجراية بعدها
+  parametre: parameters/retraite/rsna/invalidite/seuil_majoration_mois.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.invalidite.seuil_majoration_mois/table/
+- libelle: العجز — سقف النسبة
+  parametre: parameters/retraite/rsna/invalidite/plafond_taux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.invalidite.plafond_taux/table/
+- libelle: العجز — الزيادة بعنوان المساعدة من الغير
+  parametre: parameters/retraite/rsna/invalidite/majoration_tierce_personne.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.invalidite.majoration_tierce_personne/table/

@@ -1,0 +1,7 @@
+| Depuis | Fenêtre de référence | Moyenne (article 19) | Limite de prise en compte des salaires | Texte |
+|---|---|---|---|---|
+| 1^er^ janvier 1974 | salaires des **3 ou 5 dernières années** précédant l'âge d'ouverture du droit, « selon que l'une ou l'autre de ces périodes de référence est plus avantageuse » pour l'assuré | total divisé par 36 ou 60 mois | **6 fois le SMIG** rapporté à 2 400 heures par an | [@decret74-499, art. 18-19] |
+| 23 septembre 1990 | salaires des **10 dernières années** précédant l'âge d'ouverture du droit ; moyenne sur la période d'activité déclarée si elle est inférieure à 10 ans ; salaires « actualisés selon un barème fixé par arrêté du ministre des affaires sociales » | article 19 non modifié : 36 ou 60 mois | **6 fois le SMIG** rapporté à 2 400 heures par an | [@decret90-1455, art. 1] |
+| 1^er^ juillet 1994 | **5 dernières années** ; salaires actualisés selon un barème fixé annuellement par arrêté | 60 mois | **6 fois le SMIG « régime 48 heures »** rapporté à 2 400 heures par an | [@decret94-1429, art. 1] |
+| 1^er^ juillet 1995 | **7 dernières années** | 84 mois | **6 fois le SMIG « régime 48 heures »** rapporté à 2 400 heures par an | [@decret94-1429, art. 1] |
+| 1^er^ juillet 1996 | **10 dernières années** | 120 mois | **6 fois le SMIG « régime 48 heures »** rapporté à 2 400 heures par an | [@decret94-1429, art. 1] |

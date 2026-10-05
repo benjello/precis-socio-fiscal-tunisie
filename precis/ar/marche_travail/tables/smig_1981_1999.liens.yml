@@ -1,0 +1,12 @@
+- libelle: نظام 48 ساعة، بالساعة
+  parametre: parameters/marche_travail/smig_48h_horaire.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.smig_48h_horaire/table/
+- libelle: نظام 48 ساعة، بالشهر
+  parametre: parameters/marche_travail/smig_48h_mensuel.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.smig_48h_mensuel/table/
+- libelle: نظام 40 ساعة، بالساعة
+  parametre: parameters/marche_travail/smig_40h_horaire.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.smig_40h_horaire/table/
+- libelle: نظام 40 ساعة، بالشهر
+  parametre: parameters/marche_travail/smig_40h_mensuel.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.smig_40h_mensuel/table/

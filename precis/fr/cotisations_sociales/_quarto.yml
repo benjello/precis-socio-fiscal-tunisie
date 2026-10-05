@@ -12,10 +12,23 @@ book:
   repo-branch: master
   repo-actions: [edit, issue]
   downloads: [pdf]
+  page-footer:
+    center: "[Accueil](../index.html) · [À propos et contribuer](../a-propos.html) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)"
   chapters:
     - index.qmd
+    - _assiette.qmd
+    - _taux_global.qmd
+    - _prelevements_salaires.qmd
+    - _pensions.qmd
+    - _maladie.qmd
+    - _accidents_travail.qmd
+    - _autres_branches.qmd
+    - _regimes.qmd
+    - _bilan.qmd
 
   appendices:
+    - _notations.qmd
+    - _textes_modificatifs.qmd
     - _glossaire.qmd
 
 bibliography:

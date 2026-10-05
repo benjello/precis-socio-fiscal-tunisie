@@ -1,0 +1,12 @@
+- libelle: Réversion au conjoint
+  parametre: parameters/retraite/cnrps/survivants/taux_conjoint.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.survivants.taux_conjoint/table/
+- libelle: Pension d'orphelin, par orphelin
+  parametre: parameters/retraite/cnrps/survivants/taux_orphelin.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.survivants.taux_orphelin/table/
+- libelle: Plafond du cumul des pensions de survivants, en part de la pension de l'agent
+  parametre: parameters/retraite/cnrps/survivants/plafond_cumul.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.survivants.plafond_cumul/table/
+- libelle: Part du conjoint à partir de cinq orphelins
+  parametre: parameters/retraite/cnrps/survivants/taux_partage_5_orphelins.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.survivants.taux_partage_5_orphelins/table/

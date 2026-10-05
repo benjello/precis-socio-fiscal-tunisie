@@ -1,4 +1,4 @@
-| Effet | Base mensuelle du transfert AMEN | Allocation familiale non contributive, par enfant | Texte |
+| Date de l'état | Base mensuelle du transfert AMEN | Allocation familiale non contributive, par enfant | Texte |
 |---|---:|---:|---|
 | 20 mai 2020 | 180 D | — | [@arrete-2020-05-19-transferts, art. 2] |
 | 1^er^ janvier 2022 | 200 D | — | [@arrete-2022-04-01-transferts, art. 1] |

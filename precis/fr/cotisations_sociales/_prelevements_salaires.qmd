@@ -1,0 +1,89 @@
+# Les autres prélèvements sur les salaires {#sec-cot-prelevements-salaires}
+
+```{python}
+#| echo: false
+#| output: false
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+
+TABLES = Path.cwd() / "tables"
+
+
+def table(nom, legende, label, **options):
+    """Tableau de paramètres : snapshot versionné, régénéré depuis openfisca-tunisia.
+
+    Régénération : `scripts/generate_cotisations_tables.py`.
+    """
+    print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label, **options))
+```
+
+Deux prélèvements s'ajoutent aux cotisations sociales sur la masse salariale : la [taxe de formation professionnelle](#g-tfp) et la [contribution au fonds de promotion du logement pour les salariés](#g-foprolos) (FOPROLOS). Ils ne sont pas des cotisations : aucun droit individuel n'est attaché à leur versement, et leur produit ne va pas aux caisses de sécurité sociale. Ils sont à la charge de l'employeur seul, sans part salariale, et depuis 1989 tous deux sont assis sur les salaires et rétributions [@loi-88-145-lf-1989, art. 29-30 et 35].
+
+Leur poids s'ajoute au coin social présenté plus haut (@sec-cot-coin). Depuis les salaires de janvier 1989, ils représentent ensemble 2 points de la masse salariale dans les industries manufacturières et 3 points dans les autres secteurs ; de 1977 à 1988, chacun était de 2 % (@tbl-tfp-foprolos). Comme pour les cotisations, ce partage juridique ne dit rien de qui en supporte la charge économique.
+
+```{python}
+#| echo: false
+#| output: asis
+table("tfp_foprolos",
+      "Taux de la taxe de formation professionnelle et de la contribution au FOPROLOS, depuis 1967",
+      "tbl-tfp-foprolos")
+```
+
+## La taxe de formation professionnelle {#sec-cot-tfp}
+
+### Taux et assiette {#sec-cot-tfp-taux}
+
+La taxe est instituée en 1956 à la charge des assujettis à la patente, hors patente forfaitaire ; le décret qui l'institue renvoie la fixation de son taux à un texte ultérieur [@decret-1956-01-12-formation-professionnelle, art. 27-28]. Ce texte est un décret du 16 janvier 1957 [@decret66-527] ; seul l'intitulé de ce décret est connu ici, et le taux appliqué de 1957 à 1966 n'est donc pas connu.
+
+<!-- RECHERCHE r-tfp-decret-1957 : décret du 16 janvier 1957 fixant le taux initial de la taxe de formation professionnelle (voir docs/recherches.yml) -->
+
+Le taux est porté à 2 % au 1^er^ janvier 1967 [@decret66-527, art. 1-2] (@tbl-tfp-foprolos). La loi de finances pour 1989 introduit la seule différenciation du barème : 1 % pour les industries manufacturières, 2 % pour les autres secteurs, sur les salaires et rétributions versés chaque mois [@loi-88-145-lf-1989, art. 29-30]. En 2003, l'assiette inclut expressément les avantages en nature, et la taxe s'étend aux personnes exerçant une profession non commerciale [@lf-2003, art. 35-36]. Aucun texte postérieur modifiant ces taux n'est identifié ici.
+
+<!-- RECHERCHE r-tfp-foprolos-taux-recents : texte modifiant le taux de la TFP ou de la contribution au FOPROLOS après la loi n° 88-145 (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : assiette de la taxe avant 1989 (décret du 16 janvier 1957, code du travail de 1966, art. 364-365) ; date d'effet de la loi de finances pour 2003 (aucune clause relevée ; la note commune n° 10/2003 retient le 1er janvier 2003). -->
+
+### Qui la paie {#sec-cot-tfp-redevables}
+
+Le champ de la taxe est celui des entreprises soumises à l'impôt sur les bénéfices, élargi en 2003 aux professions non commerciales [@lf-2003, art. 35; @dgi-nc-5-2015]. L'État, les collectivités locales et les établissements publics administratifs n'y figurent pas : leur sortie du champ tient au critère des redevables, non à une exonération. Des organismes publics qui s'y trouvent payaient la taxe : la CNSS, la CNRPS et la CNAM en sont exonérées depuis le 1^er^ janvier 2008 [@loi-2007-70-lf-2008, art. 40 et 64].
+
+En 2007, la loi relative à l'initiative économique exonère pendant trois ans les petites entreprises, et les établissements d'enseignement et de formation au titre des salaires de leurs enseignants permanents ; la date d'effet de ces deux mesures n'est pas établie [@loi2007-69, art. 24 et 33]. Deux éléments de rémunération sortent de l'assiette : les primes versées aux bénéficiaires des interventions du fonds national de l'emploi au 1^er^ janvier 2011 [@lf-2011, art. 28 et 50], la gratification de fin de service au 1^er^ janvier 2013 [@lf-2013, art. 21 et 79]. L'administration fiscale exclut aussi les rémunérations des personnes handicapées et celles de l'emploi à l'étranger [@dgi-nc-5-2015] ; le texte qui le prévoit n'est pas identifié ici.
+
+<!-- RECHERCHE r-tfp-exclusions-handicapes-etranger : texte excluant de l'assiette de la TFP les salaires des handicapés et l'emploi à l'étranger (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : exonérations des régimes d'incitation (code d'incitation aux investissements de 1993, loi n° 2017-8, lois de finances complémentaires de 2012 et 2015), non inventoriées ; définition des industries manufacturières (décret n° 94-492), non lue. -->
+
+Une partie de la taxe revient aux entreprises qui forment leur personnel. En 2000, des ristournes leur sont accordées, et le produit affecté au fonds de la formation s'entend net de celles-ci [@lf-2000, art. 18]. Depuis le 1^er^ janvier 2009, l'[avance sur la taxe](#g-avance-tfp) prend la forme d'un crédit d'impôt imputable sur la taxe due, plafonné à 60 % de la taxe de l'année précédente et réservé aux entreprises dont cette taxe atteint au moins 1 000 dinars [@loi2007-69, art. 27 et 31; @decret2009-292, art. 2-3]. Pour ces entreprises, le taux effectif est inférieur au taux légal.
+
+### Affectation {#sec-cot-tfp-affectation}
+
+Le produit de la taxe va d'abord au budget de l'État [@decret-1956-01-12-formation-professionnelle, art. 27]. La loi de finances pour 1967 supprime un « Fonds de formation professionnelle » et affecte la taxe au budget de l'État [@loi66-79-lf1967, art. 16-17]. Au 1^er^ janvier 2000, la taxe nette des ristournes alimente un compte spécial du Trésor, le fonds de promotion de la formation professionnelle et de l'apprentissage [@lf-2000, art. 17-18] ; depuis 2009, ce fonds la reçoit nette de l'avance [@loi2007-69, art. 29].
+
+## La contribution au FOPROLOS {#sec-cot-foprolos}
+
+### Taux et assiette {#sec-cot-foprolos-taux}
+
+La contribution est instituée au 1^er^ août 1977 au taux de 2 % des salaires soumis à cotisation à la CNRPS, à la CNSS ou à la CRPSPEGT ; elle constitue une charge déductible [@loi77-54, art. 2 et 10]. La loi de finances pour 1987 étend cette assiette à l'indemnité complémentaire provisoire, à la majoration du SMIG de 1982 et à l'indemnité de transport [@loi86-106-lf1987, art. 49]. La loi de finances pour 1989 ramène le taux à 1 % et l'assoit sur les salaires et rétributions, comme la taxe de formation professionnelle [@loi-88-145-lf-1989, art. 35] (@tbl-tfp-foprolos). Le taux n'a pas changé depuis, en l'état des textes identifiés (@sec-cot-tfp-taux).
+
+### Qui la paie {#sec-cot-foprolos-redevables}
+
+Le champ est plus large que celui de la taxe de formation professionnelle : la contribution est due par tout employeur, public ou privé, à la seule exception des exploitants agricoles privés [@loi77-54, art. 1er]. L'État y est donc assujetti par un texte exprès. Les exonérations de 2007 en faveur des petites entreprises et de l'enseignement s'appliquent aux deux prélèvements [@loi2007-69, art. 24 et 33], de même que les exclusions d'assiette de 2011 et 2013 [@lf-2011, art. 28; @lf-2013, art. 22].
+
+Perçue d'abord par les caisses de sécurité sociale, la contribution est recouvrée depuis 1989 par la recette des finances [@loi77-54, art. 3; @loi-88-145-lf-1989, art. 35-38]. La rédaction de l'article 3 de la loi n° 77-54 en vigueur depuis lors n'est pas établie ici.
+
+<!-- RECHERCHE r-foprolos-art3-redaction : rédaction de l'art. 3 de la loi n° 77-54 en vigueur après l'art. 38 de la loi n° 88-145 (voir docs/recherches.yml) -->
+
+### Affectation {#sec-cot-foprolos-affectation}
+
+La contribution alimente le fonds de promotion du logement pour les salariés, qui finance des prêts à l'accession des salariés au logement [@loi77-54, art. 5-6]. Le fonds sert aussi d'autres politiques du logement : dès 1988, la loi de finances y opère un prélèvement au profit du programme national de résorption des logements rudimentaires [@loi-87-83-lf-1988, art. 76], et la loi de finances pour 2026 étend ses interventions aux logements et lots sociaux de la Société nationale immobilière de Tunisie et d'autres opérateurs [@lf-2026, art. 21].
+
+<!-- TODO (documentaliste) : prélèvements sur le fonds de 2011, 2012 et 2013 (décret-loi n° 2011-56, art. 3 ; loi de finances complémentaire pour 2012, art. 36 ; loi de finances pour 2013, art. 11), dont seuls les intitulés sont connus ; à lire avant de les citer. -->
+
+## Le rendement {#sec-cot-prelevements-rendement}
+
+Les seules données identifiées ici sont des **prévisions** : les lois de finances, de 2016 à 2019 au moins, inscrivent les ressources attendues du fonds de la formation professionnelle et du fonds du logement des salariés. Ce sont des ressources des fonds — nettes de l'avance pour la taxe de formation —, non le produit brut des prélèvements, et aucune série de réalisations n'est disponible.
+
+<!-- TODO (documentaliste) : construire la série des prévisions (tableaux « ت » des comptes spéciaux du Trésor, lois de finances pour 2016 à 2019 au moins ; LF 2018, éd. AR, JORT n° 101/2017, p. 4295) et chercher les réalisations (lois de règlement du budget, rapports annuels de la DGI, budgets du ministère de la formation professionnelle). Ne publier aucun montant tant qu'une seule année est disponible. -->

@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "id": "loi-org-2018-29-ccl",
-      "type": "legislation",
-      "note": "citation-key: loi-org-2018-29-ccl\nLe fascicule français correspondant n'est pas en ligne sur pist.tn : l'URL renvoie à l'édition arabe, qui porte le même texte.\nURL ARABE RETIRÉE DU FICHIER FRANÇAIS le 16/09/2026 : elle pointait https://www.pist.tn/jort/2018/2018A/Ja0392018.pdf, c'est-à-dire l'édition ARABE, ce que la convention interdit dans un references.json français (URL FR = champ pdf_fr). Le candidat https://www.pist.tn/jort/2018/2018F/Jo0392018.pdf rend 404 (re-vérifié curl -k, 16/09/2026). L'entrée française reste donc SANS URL ; l'entrée arabe homologue conserve l'adresse arabe.",
-      "title": "Loi organique n°2018-29 du 9 mai 2018, relative au Code des collectivités locales",
-      "issued": {
-        "date-parts": [
-          [
-            2018,
-            5,
-            9
-          ]
-        ]
-      },
-      "title-short": "Loi organique n° 2018-29 du 9 mai 2018"
-    },
-    {
       "id": "wb-tunisia-per-2020",
       "type": "report",
       "note": "citation-key: wb-tunisia-per-2020",
@@ -57,22 +41,6 @@
       }
     },
     {
-      "id": "sna2008",
-      "type": "book",
-      "note": "citation-key: sna2008",
-      "publisher": "Nations Unies, Commission européenne, FMI, OCDE, Banque mondiale",
-      "publisher-place": "New York",
-      "title": "System of National Accounts 2008",
-      "URL": "https://unstats.un.org/unsd/nationalaccount/sna2008.asp",
-      "issued": {
-        "date-parts": [
-          [
-            2009
-          ]
-        ]
-      }
-    },
-    {
       "id": "sipri-milex",
       "type": "dataset",
       "note": "citation-key: sipri-milex",
@@ -91,26 +59,6 @@
       "note": "citation-key: minfin-remunerations",
       "publisher": "Ministère des Finances, Tunisie",
       "title": "Série de répartition économique des dépenses du budget de l’État (Rémunérations publiques)",
-      "URL": "http://www.finances.gov.tn",
-      "author": [
-        {
-          "literal": "Ministère des Finances, Tunisie"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2025
-          ]
-        ]
-      }
-    },
-    {
-      "id": "minfin-indicateurs-fp",
-      "type": "dataset",
-      "note": "citation-key: minfin-indicateurs-fp",
-      "publisher": "Ministère des Finances, Tunisie",
-      "title": "Indicateurs des finances publiques",
       "URL": "http://www.finances.gov.tn",
       "author": [
         {
@@ -158,23 +106,6 @@
         ]
       },
       "title-short": "Loi n° 95-46 du 15 mai 1995"
-    },
-    {
-      "id": "loi89-9",
-      "type": "legislation",
-      "note": "citation-key: loi89-9",
-      "title": "Loi n°89-9 du 1er février 1989, relative aux participations et entreprises publiques",
-      "URL": "https://www.pist.tn/jort/1989/1989F/Jo00989.pdf",
-      "issued": {
-        "date-parts": [
-          [
-            1989,
-            2,
-            1
-          ]
-        ]
-      },
-      "title-short": "Loi n° 89-9 du 1er février 1989"
     },
     {
       "id": "loi73-81",
@@ -296,23 +227,6 @@
       "title-short": "Loi n° 59-12 du 5 février 1959"
     },
     {
-      "id": "loi2017-66-lf2018",
-      "type": "legislation",
-      "note": "citation-key: loi2017-66-lf2018",
-      "title": "Loi n°2017-66 du 18 décembre 2017, portant loi de finances pour l'année 2018",
-      "URL": "https://www.pist.tn/jort/2017/2017F/Jo1012017.pdf",
-      "issued": {
-        "date-parts": [
-          [
-            2017,
-            12,
-            18
-          ]
-        ]
-      },
-      "title-short": "Loi n° 2017-66 du 18 décembre 2017"
-    },
-    {
       "id": "loi2016-48",
       "type": "legislation",
       "note": "citation-key: loi2016-48",
@@ -362,22 +276,6 @@
         "date-parts": [
           [
             2023
-          ]
-        ]
-      }
-    },
-    {
-      "id": "imfgfsm2014",
-      "type": "book",
-      "note": "citation-key: imfgfsm2014",
-      "publisher": "Fonds monétaire international",
-      "publisher-place": "Washington, D.C.",
-      "title": "Government Finance Statistics Manual 2014",
-      "URL": "https://www.imf.org/external/pubs/ft/gfs/manual/2014/gfsfinal.pdf",
-      "issued": {
-        "date-parts": [
-          [
-            2014
           ]
         ]
       }
@@ -435,10 +333,27 @@
       "title-short": "Décret n° 2015-2217 du 11 décembre 2015"
     },
     {
+      "id": "decret-statut-caisses-1999",
+      "type": "legislation",
+      "note": "citation-key: decret-statut-caisses-1999\nJORT n° 77 du 24 septembre 1999, p. 1741. L'édition française indique que le texte du statut est publié uniquement en langue arabe. L'édition arabe consultée porte le décret d'approbation (p. 2077) sans reproduire le statut intégral : seul le décret est établi ici.",
+      "title": "Décret n° 99-2024 du 13 septembre 1999, relatif à l'approbation du statut du personnel des organismes de sécurité sociale",
+      "URL": "https://www.pist.tn/jort/1999/1999F/Jo07799.pdf",
+      "issued": {
+        "date-parts": [
+          [
+            1999,
+            9,
+            13
+          ]
+        ]
+      },
+      "title-short": "Décret n° 99-2024 du 13 septembre 1999"
+    },
+    {
       "id": "decret-statut-caisses-2022",
       "type": "legislation",
-      "note": "citation-key: decret-statut-caisses-2022",
-      "title": "Décret présidentiel n°2022-76 du 22 février 2022, relatif à l'approbation du statut particulier du personnel des organismes de sécurité sociale (CNSS, CNRPS, CNAM)",
+      "note": "citation-key: decret-statut-caisses-2022\nJORT n° 20 du 23 février 2022, pp. 557-558. Art. 1 : approbation du statut du personnel des organismes de sécurité sociale et du centre de recherches et d'études sociales ; art. 2 : abrogation des décrets n° 99-2024 et 2008-500. L'annexe statutaire annoncée n'est pas jointe aux fascicules français et arabe consultés : sa grille de rémunération reste à établir.",
+      "title": "Décret présidentiel n° 2022-76 du 22 février 2022, relatif à l'approbation du statut particulier du personnel des organismes de la sécurité sociale et du centre de recherches et d'études sociales",
       "URL": "https://www.pist.tn/jort/2022/2022F/Jo0202022.pdf",
       "issued": {
         "date-parts": [
@@ -942,6 +857,28 @@
       "URL": "https://www.pist.tn/jort/2012/2012F/Jo0882012.pdf",
       "note": "citation-key: decret-2012-2586\nQuatrième et dernier texte retrouvé de la chaîne. Son intitulé ne vise plus les modificatifs intermédiaires. Texte lu sur pièce dans l'édition française du fascicule, le 20 septembre 2026.",
       "title-short": "Décret n° 2012-2586 du 24 octobre 2012"
+    },
+    {
+      "id": "ins-fonction-publique-historiques",
+      "type": "dataset",
+      "note": "citation-key: ins-fonction-publique-historiques\nRapports INS utilisés pour reconstituer la série du salaire brut moyen mensuel 2010-2017 : Caractéristiques des agents de la fonction publique et leurs salaires 2010-2014, 2011-2015, 2012-2016 et 2013-2017. URL donnée : page de l'édition 2010-2014 ; les trois autres éditions sont les pages homonymes du site INS. Téléchargements vérifiés le 25 septembre 2026.",
+      "publisher": "Institut National de la Statistique, Tunisie",
+      "title": "Caractéristiques des agents de la fonction publique et leurs salaires, éditions 2010-2014 à 2013-2017",
+      "URL": "https://www.ins.tn/publication/caracteristiques-des-agents-de-la-fonction-publique-et-leurs-salaires-2010-2014",
+      "author": [
+        {
+          "literal": "Institut National de la Statistique (INS)"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            4
+          ]
+        ]
+      }
     },
     {
       "id": "ins-fonction-publique-2025",

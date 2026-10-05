@@ -1,5 +1,11 @@
 """Vérifie que les tarifs publiés par le précis concordent avec openfisca.
 
+DEPUIS LE 3 OCTOBRE 2026, les deux tableaux de l'IS sont ENGENDRÉS par
+`generate_bareme_tables.py` (`is_taux.md`, `is_minimum.md`), qui importe les
+correspondances ci-dessous : chaque case que le modèle porte y est lue, les autres
+viennent du relevé. Ce script reste le garde-fou du relevé ; le paragraphe qui suit dit
+pourquoi le relevé, lui, demeure.
+
 POURQUOI UN CONTRÔLE ET NON UN GÉNÉRATEUR. La règle du précis veut qu'un tableau de
 paramètres vienne des dépôts openfisca. Elle ne s'applique pas telle quelle au relevé
 de l'impôt sur les sociétés, pour une raison de fond : ce relevé porte des lignes que

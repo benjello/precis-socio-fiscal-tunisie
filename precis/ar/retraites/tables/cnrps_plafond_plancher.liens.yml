@@ -4,3 +4,9 @@
 - libelle: الجراية الدنيا المضمونة
   parametre: parameters/retraite/cnrps/pension_minimale/minimum_garanti.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.pension_minimale.minimum_garanti/table/
+- libelle: منحة الشيخوخة
+  parametre: parameters/retraite/cnrps/pension_minimale/allocation_vieillesse.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.pension_minimale.allocation_vieillesse/table/
+- libelle: 'منحة الشيخوخة: الخدمات المستوجبة'
+  parametre: parameters/retraite/cnrps/pension_minimale/duree_service_allocation_vieillesse.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.pension_minimale.duree_service_allocation_vieillesse/table/
