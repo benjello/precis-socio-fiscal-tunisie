@@ -1361,3 +1361,195 @@
     لسنة 1985 (288,0 في الحوليّات اللاحقة) و645,4 الوقتية لسنة 2001 (ثمّ 640,5). قراءة
     آلية مع مراقبة خمس قيم وتطابق حوليّة 2019-2023 مع سابقاتها.'
   fiche: sources/ins-annuaires-statistiques.md
+- id: finances-locales-communes-agregats
+  titre: 'Finances des communes : exécution du budget, impôts locaux, FCCL et dotations,
+    2008-2023'
+  sources:
+  - dgct-donnees-ouvertes
+  build: uv run --with openpyxl --with xlrd python scripts/build_finances_locales_communes.py
+  raw:
+  - data/raw/finances_locales/dgct_portail/Données-Financières-Globales.xls
+  - data/raw/finances_locales/dgct_portail/fiscaliteslocale.xls
+  - data/raw/finances_locales/dgct_portail/fccl.xls
+  - data/raw/finances_locales/dgct_portail/Dotation.xls
+  - data/raw/finances_locales/dgct_portail/Les-dépenses-ordinaires.xls
+  - data/raw/finances_locales/dgct_portail/Ratios-financiers.xls
+  output: data/processed/finances_locales/communes_agregats_2008_2023.csv
+  unite: millions de dinars courants (MD) ; ratios en fraction
+  perimetre: 'communes (budgets, comptabilité publique, réalisations) ; quotes-parts
+    FCCL et dotation exceptionnelle aussi pour les conseils régionaux. 2008-2019 :
+    agrégats publiés par la DGCT (communes_dgct_agregats_2008_2019.csv) ; 2018-2023
+    : somme des 350 budgets par commune. Colonnes source, statut, retenu.'
+  caveats: 'DEUX SOURCES, GARDÉES TOUTES DEUX SUR 2018-2019 (colonne `retenu` : DGCT
+    jusqu''en 2019, somme des communes ensuite). Les recettes concordent à l''arrondi
+    près ; LES DÉPENSES NON (titre 1 : +1,7 MD en 2018, +7,2 MD en 2019 ; titre 2
+    : +0,6 et +5,9), écart non expliqué, figé dans les tests. 2021 = SITUATION AU
+    25/12/2021, non définitive (droits et redevances 54,8 MD contre 90-114 les autres
+    années). 2023 = PROVISOIRE (arrêté au 10/01/2024). IMPÔTS UN À UN (TIB, TNB, TCL,
+    taxe hôtelière, marchés) VIDES EN 2020-2021 : fichiers par commune sans détail
+    d''article ; rien n''est interpolé. Le FCCL est supprimé au 1er janvier 2018 mais
+    la DGCT garde l''intitulé « subventions annuelles » en 2018-2019 : rupture de
+    nature ; réserve à 18 % jusqu''en 2017, 15 % ensuite. Les recettes du titre 2
+    comprennent l''épargne et les excédents reportés du titre 1 : T1 + T2 n''est pas
+    un total consolidé. Recettes fiscales = catégories 1 et 2 (nomenclature 2018-2022),
+    qui exclut les catégories 3-4 rangées parmi les recettes fiscales en 2023. PÉRIMÈTRE
+    NON CONSTANT : 264 communes en 2012, 350 à partir de 2016-2017. Montants courants.'
+  titre_ar: 'مالية البلديات: تنفيذ الميزانية والجباية المحلية والمال المشترك للجماعات
+    المحلية والاعتمادات، 2008-2023'
+  unite_ar: بملايين الدنانير الجارية؛ النسب كسور
+  perimetre_ar: البلديات (ميزانيات، محاسبة عمومية، إنجازات)؛ 2008-2019 مجاميع منشورة
+    من الإدارة العامة للجماعات المحلية، و2018-2023 مجموع ميزانيات البلديات الـ350
+  caveats_ar: مصدران محفوظان معاً على 2018-2019 (عمود retenu). تتطابق الموارد بعد
+    التقريب ولا تتطابق النفقات (فارق غير مفسَّر). 2021 وضعية في 25/12/2021 غير نهائية،
+    و2023 وقتية (10/01/2024). الأداءات واحداً واحداً فارغة في 2020-2021 ولا يُستكمل
+    شيء. أُلغي المال المشترك في 1 جانفي 2018 مع بقاء التسمية في 2018-2019. موارد العنوان
+    الثاني تشمل الفوائض المنقولة من العنوان الأول. عدد البلديات غير ثابت (264 سنة
+    2012 ثمّ 350). مبالغ جارية.
+  fiche: sources/finances-locales-communes.md
+- id: finances-locales-cpscl
+  titre: 'CPSCL : dotations de l''État, subventions et prêts aux collectivités locales,
+    créances et impayés, 2005-2024'
+  sources:
+  - cpscl-etats-financiers
+  build: uv run python scripts/extract_cpscl_etats_financiers.py
+  raw:
+  - data/raw/finances_locales/cpscl/cpscl_etats_financiers_2006.pdf
+  - data/raw/finances_locales/cpscl/cpscl_etats_financiers_2024.pdf
+  output: data/processed/finances_locales/cpscl_2005_2024.csv
+  unite: millions de dinars courants (MD) ; dinars dans cpscl_etats_financiers_long.csv
+  perimetre: 'Caisse des prêts et de soutien des collectivités locales : flux de trésorerie
+    (dotations reçues de l''État, subventions et prêts accordés aux collectivités,
+    remboursements), créances de prêt et impayés à l''actif, résultat ; toutes les
+    lignes des trois états dans cpscl_etats_financiers_long.csv'
+  caveats: 'CHAQUE EXERCICE EST PUBLIÉ DEUX FOIS (colonne N, puis colonne N-1 de l''édition
+    suivante) : édition la plus récente RETENUE, l''autre gardée (`retenu`). 17 RETRAITEMENTS
+    entre éditions (reclassements vers les opérations pour compte en 2006, prêts nets/bruts
+    en 2007, opérations spéciales en 2009-2010), listés dans cpscl_doublons_ecarts.csv
+    et figés dans les tests ; la Banque mondiale (PforR 2014, tabl. 2.11) cite les
+    valeurs de l''édition de l''exercice, non les retraitées. TROIS COQUILLES CORRIGÉES
+    ET TRACÉES (`lecture = corrige`, valeur imprimée gardée) et deux incohérences
+    internes laissées telles quelles (édition 2010, flux de financement ; flux d''exploitation
+    2018, écart de 90 000 DT). Signes de la page : décaissements et provisions négatifs.
+    PAS DE LIGNE « ENCOURS » : créances = prêts en cours de remboursement et de réalisation
+    + bloc courant (annuités, impayés, provisions, intérêts courus) ; aucune somme
+    calculée. Changement de présentation du passif en 2012. Chute des impayés en 2007
+    (67,2 → 16,9 MD) avec apparition d''une provision sur créances rééchelonnées.
+    Flux de trésorerie de la caisse, non recoupés avec les budgets des communes.'
+  titre_ar: 'صندوق القروض ومساعدة الجماعات المحلية: اعتمادات الدولة والمنح والقروض
+    المسندة إلى الجماعات المحلية والديون والمتخلّدات، 2005-2024'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'صندوق القروض ومساعدة الجماعات المحلية: التدفّقات النقدية والقروض
+    والمتخلّدات والنتيجة'
+  caveats_ar: 'تُنشر كلّ سنة مرّتين (السنة N ثمّ عمود N-1 في القوائم الموالية): تُعتمد
+    النشرة الأحدث وتُحفظ الأخرى. سبع عشرة إعادة معالجة بين النشرتين مدرجة ومثبّتة
+    في الاختبارات. ثلاثة أخطاء مطبعية مصحّحة وموثّقة، وتناقضان داخليان متروكان على
+    حالهما. لا يوجد سطر «قائم القروض». تدفّقات خزينة الصندوق لا تُقارن مباشرة بميزانيات
+    البلديات.'
+  fiche: sources/finances-locales-cpscl.md
+- id: finances-locales-ins-comptes
+  titre: 'INS : compte des collectivités locales (emplois et ressources), 2001-2025,
+    bases 1983, 1997 et 2015'
+  sources:
+  - ins-cnat-2015
+  build: uv run python scripts/extract_ins_comptes_collectivites_locales.py
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation/2004-2008.pdf
+  - data/raw/ins-publications/comptes-de-la-nation/2013-2017.pdf
+  - data/raw/ins-publications/comptes-de-la-nation/2021-2025.pdf
+  output: data/processed/finances_locales/ins_cl_comptes_2001_2025.csv
+  unite: millions de dinars courants (MD)
+  perimetre: 'sous-secteur « collectivités locales » des administrations publiques
+    (comptabilité nationale) : production, valeur ajoutée, rémunérations, impôts reçus,
+    transferts, revenu disponible, épargne, FBCF, capacité de financement, compte
+    financier ; toutes éditions dans ins_cl_comptes_long.csv'
+  base_pib: 1983 / 1997 / 2015 (colonne base)
+  caveats: 'TROIS BASES, JAMAIS RACCORDÉES : colonne `base` ; une année publiée en
+    deux bases (2005-2008, 2015-2017) a deux lignes ; jonctions dans ins_cl_jonctions_bases.csv
+    (la valeur ajoutée 1983/1997 ne se raccorde pas : 180,2 contre 295,4 en 2005 ;
+    1997/2015 identiques en 2016-2017, différents en 2015 pour l''épargne et le revenu
+    disponible). Base lue dans le texte de chaque édition. Valeur retenue = édition
+    la plus récente de la même base ; colonne `statut` (définitif, semi-définitif,
+    provisoire). Huit milliers déplacés dans la couche texte remis en place et vérifiés
+    par les identités ; édition 2003-2007 à police mal encodée, libellés décodés.
+    FBCF 2013 (base 1997) = 276,8, égale aux salaires bruts, constante dans cinq éditions
+    et cohérente avec le compte : signalée, non corrigée. PAS DE DÉTAIL PAR IMPÔT
+    LOCAL ; le classement des produits des marchés (hors impôts ?) n''est pas documenté.'
+  titre_ar: 'المعهد الوطني للإحصاء: حساب الجماعات المحلية (الاستعمالات والموارد)،
+    2001-2025، أسس 1983 و1997 و2015'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: القطاع الفرعي «الجماعات المحلية» من الإدارات العمومية في المحاسبة
+    الوطنية
+  caveats_ar: 'ثلاث أسس لا تُربط ببعضها أبداً (عمود base)، وتبقى السنة المنشورة بأساسين
+    في سطرين. تُعتمد أحدث نشرة من الأساس نفسه. أُعيدت أرقام الآلاف المزاحة إلى مكانها
+    وتُحقِّق منها بالمتطابقات. تكوين رأس المال الثابت لسنة 2013 (أساس 1997) يساوي
+    الأجور الخام: مُشار إليه دون تصحيح. لا تفصيل حسب الأداء المحلي.'
+  fiche: sources/finances-locales-ins.md
+- id: finances-locales-bm-1985-2012
+  titre: 'Finances des communes avant 2008 selon la Banque mondiale : 1985-1991, 1990-1996,
+    2002-2012 (trois séries séparées)'
+  sources:
+  - wb-msip-1992
+  - wb-mdp2-1997
+  - wb-pforr-pad-2014
+  build: uv run python scripts/build_finances_locales_banque_mondiale.py
+  raw:
+  - data/raw/finances_locales/banque-mondiale/1992_municipal_sector_investment_sar.pdf
+  - data/raw/finances_locales/banque-mondiale/1997_municipal_development_2_pad.pdf
+  - data/raw/finances_locales/banque-mondiale/2014_pforr_pad_en_88598.pdf
+  - data/raw/finances_locales/banque-mondiale/2014_pforr_pad_fr_88598.pdf
+  output: data/processed/finances_locales/bm2014_communes_2002_2012.csv
+  unite: millions de dinars courants (MD) ; parts en %
+  perimetre: 'communes ; trois fichiers séparés (bm1992_communes_1985_1991.csv : recettes
+    courantes et FCCL ; bm1997_communes_1990_1996.csv : recettes courantes par source,
+    cinq années ; bm2014_communes_2002_2012.csv : agrégats T1/T2) et bm_recoupements.csv'
+  caveats: 'SÉRIES SÉPARÉES, JAMAIS FUSIONNÉES entre elles ni avec la série DGCT :
+    périmètres et nomenclatures différents, sources primaires tunisiennes non publiées.
+    Valeurs SAISIES depuis la page indiquée, lues à l''image pour 1992 (couche OCR
+    fautive : 2 561 et non 2 661) et 1997. LA LIGNE TL/TIB MANQUE AU TABLEAU IMPRIMÉ
+    DE 1997 : résidus des totaux publiés comme `residu_calcule`, jamais comme TL.
+    FCCL 1990 : 82 (1992) contre 50,8 (1997), vraisemblablement fonds total contre
+    quote-part des communes (indices : 63 % des transferts aux communes, 47 % des
+    budgets de fonctionnement en 1988) — NON TRANCHÉ. 1990-1991 de 1992 probablement
+    estimations de mission. PAD 2014 contre DGCT 2008-2012 : recettes T1 concordantes,
+    écarts de 10-14 MD sur dépenses T1 et ressources T2 ; dépenses T2 2012 dépassent
+    de 10 MD investissements + remboursement.'
+  titre_ar: 'مالية البلديات قبل 2008 حسب البنك الدولي: 1985-1991 و1990-1996 و2002-2012
+    (ثلاث سلاسل منفصلة)'
+  unite_ar: بملايين الدنانير الجارية؛ النسب %
+  perimetre_ar: البلديات؛ ثلاثة ملفات منفصلة وملفّ للمقارنات
+  caveats_ar: 'سلاسل منفصلة لا تُدمج فيما بينها ولا مع سلسلة الإدارة العامة للجماعات
+    المحلية. القيم منقولة من الصفحة المذكورة ومقروءة من الصورة. سطر المعلوم على العقارات
+    المبنية غائب عن الجدول المطبوع لسنة 1997: البواقي محسوبة لا مقروءة. المال المشترك
+    لسنة 1990: 82 مقابل 50,8، غير محسوم.'
+  fiche: sources/finances-locales-banque-mondiale.md
+- id: cnat-pib-nominal
+  titre: PIB aux prix courants du marché, édition par édition des Comptes de la nation,
+    2001-2025
+  sources:
+  - ins-cnat-2015
+  build: scripts/extract_cnat_pib_nominal.py:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation
+  output: data/processed/ins-comptes-nationaux/pib_nominal_editions.csv
+  unite: millions de dinars courants
+  perimetre: 'ligne « Produit Intérieur Brut (p.m) » de l''équilibre ressources-emplois
+    aux prix courants (tableau I.1 « Les emplois du PIB nominal (aux prix courants)
+    » dans les éditions récentes) ; dix-neuf éditions, trois bases (1983 : 2001-2005
+    à 2004-2008 ; 1997 : 2005-2009 à 2013-2017 ; 2015 : 2015-2020 et suivantes), avec
+    le taux de variation imprimé sous le tableau'
+  caveats: 'LES NIVEAUX NE SE COMPARENT PAS D''UNE ÉDITION À L''AUTRE : ils changent
+    de base (la base 1997 est d''environ 10 % au-dessus de la base 1983, la base 2015
+    d''environ 6 % au-dessus de la base 1997). Contrôles : huit valeurs lues à la
+    main ; dans chaque édition, le taux calculé sur les niveaux lus redonne le taux
+    imprimé à 0,1 point près ; chaque valeur d''UNdata de même base se retrouve dans
+    l''une des éditions à 0,1 % près. L''édition 2015-2020 porte six colonnes. Voir
+    `pib_nominal_croissance.csv` pour une série de taux.'
+  titre_ar: الناتج المحلي الإجمالي بالأسعار الجارية للسوق، حسب كلّ إصدار من الحسابات
+    القومية، 2001-2025
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: سطر الناتج المحلي الإجمالي بأسعار السوق من جدول الموارد والاستخدامات
+    بالأسعار الجارية؛ تسعة عشر إصداراً وثلاث سنوات أساس (1983 و1997 و2015)
+  caveats_ar: لا تُقارن المستويات من إصدار إلى آخر لتغيّر سنة الأساس. في كلّ إصدار،
+    تطابق النسبة المحسوبة من المستويات النسبة المطبوعة بفارق لا يتجاوز 0,1 نقطة، وتطابق
+    قيم الأمم المتحدة ذات الأساس نفسه أحد الإصدارات بفارق لا يتجاوز 0,1 %.
+  fiche: docs/croissances-revenus-prix.md

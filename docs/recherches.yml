@@ -852,6 +852,231 @@
     resultat: aucun
   a_faire: ['consulter les lois de règlement du budget 2023 et 2024, et les publications statistiques de la DGI']
 
+- id: r-cfl-prix-reference-tib-apres-2017
+  objet: décret fixant, après le décret gouvernemental n° 2017-397, le minimum et le maximum du prix de référence du mètre carré couvert de la taxe sur les immeubles bâtis (code de la fiscalité locale, art. 4 § IV, « tous les trois ans »)
+  ou: [precis/fr/finances_locales/_impots_immeubles.qmd#sec-fl-tib-prix-reference]
+  requetes:
+    titres_fts: ['"prix de reference"', المرجعي, المربع, المبنية]
+    titres_like: ['%prix de reference%', '%immeubles batis%']
+    plein_texte: [الثمن المرجعي للمتر المربع, مجلة الجباية المحلية, prix de reference du metre carre]
+    depuis: 2017-03-31
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist]
+    couverture: 'jort_cache : titres FTS et LIKE, jusqu''au 18/09/2026, seuls les décrets de 2017 répondent. Plein texte AR et FR de tous les fascicules du corpus local 2017-2026, y compris ceux que jort_cache ignore : seul le JORT 2017 n° 26 répond. Lacune : fascicules existant sur pist.tn mais absents du corpus (relancer --sonder-pist non lancé) ; éditions FR absentes après 2018, l''AR seul fait foi. Note : docs/notes/finances-locales-impots-locaux.md, § 2.2 et 10.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [relancer avec --sonder-pist]
+
+- id: r-cfl-tarif-tnb-apres-2017
+  objet: décret fixant, après le décret gouvernemental n° 2017-396, le montant de la taxe par mètre carré des terrains non bâtis (code de la fiscalité locale, art. 33, al. 2, « tous les trois ans »)
+  ou: [precis/fr/finances_locales/_impots_immeubles.qmd#sec-fl-tnb-tarif]
+  requetes:
+    titres_fts: ['"terrains non batis"', المبنية, المربع]
+    titres_like: ['%terrains non batis%']
+    plein_texte: [بالمتر المربع بالنسبة للأراضي غير المبنية, مجلة الجباية المحلية, taxe par metre carre]
+    depuis: 2017-03-31
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist]
+    couverture: 'mêmes sources, même couverture et mêmes lacunes que r-cfl-prix-reference-tib-apres-2017 ; seul le JORT 2017 n° 26 répond. Note : docs/notes/finances-locales-impots-locaux.md, § 3.2 et 10.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [relancer avec --sonder-pist]
+
+- id: r-cfl-minimum-tcl-apres-2017
+  objet: décret fixant, après le décret gouvernemental n° 2017-395, la taxe par mètre carré de référence servant au minimum de la taxe sur les établissements à caractère industriel, commercial ou professionnel (code de la fiscalité locale, art. 38 § II, « tous les trois ans »)
+  ou: [precis/fr/finances_locales/_impots_activite.qmd#sec-fl-tcl-minimum]
+  requetes:
+    titres_fts: [المرجعي, المربع]
+    plein_texte: [المتر المربع المرجعي, مجلة الجباية المحلية, taxe par metre carre]
+    depuis: 2017-03-31
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist]
+    couverture: 'mêmes sources, même couverture et mêmes lacunes que r-cfl-prix-reference-tib-apres-2017 ; seul le JORT 2017 n° 26 répond. Note : docs/notes/finances-locales-impots-locaux.md, § 4.3 et 10.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [relancer avec --sonder-pist]
+
+- id: r-cfl-prix-reference-1998-2006
+  objet: décret fixant le prix de référence de la taxe sur les immeubles bâtis, le tarif de la taxe sur les terrains non bâtis ou le minimum de la taxe sur les établissements entre les décrets du 3 mars 1997 et ceux du 14 mai 2007 (« tous les trois ans »)
+  ou:
+  - precis/fr/finances_locales/_impots_immeubles.qmd#sec-fl-tib-prix-reference
+  - precis/fr/finances_locales/_impots_immeubles.qmd#sec-fl-tnb-tarif
+  - precis/fr/finances_locales/_impots_activite.qmd#sec-fl-tcl-minimum
+  requetes:
+    titres_fts: ['"prix de reference"', '"terrains non batis"']
+    titres_like: ['%prix de reference%', '%terrains non batis%']
+    plein_texte: [prix de reference du metre carre, taxe par metre carre, code de la fiscalite locale]
+    depuis: 1997-03-07
+  periode:
+    jusqu_au: 2007-05-18
+    motif: les décrets n° 2007-1185, 2007-1186 et 2007-1187, publiés au JORT n° 40 du 18 mai 2007, ferment la période ; ils n'abrogent que les décrets n° 97-431, 97-432 et 97-433
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache (titres FTS et LIKE 1997-2007) et plein texte FR de tous les fascicules 1997-2007 du corpus local, décodés quand la police est décalée : seuls les JORT 1997 n° 11, 1997 n° 19 et 2007 n° 40 répondent. Lacunes : fascicules FR 1998 n° 1 et n° 30, illisibles en clair comme décodés ; plein texte AR inopérant avant 2005 (encodage de police).'
+    couvert_jusqu_au: 2007-05-18
+    resultat: aucun
+  a_faire: [lire à l'image les fascicules FR 1998 n° 1 et n° 30]
+
+- id: r-cfl-taxe-hoteliere-modificatifs
+  objet: texte modifiant les articles 41 à 45 du code de la fiscalité locale (taxe hôtelière)
+  ou: [precis/fr/finances_locales/_impots_activite.qmd#sec-fl-taxe-hoteliere-reformes]
+  requetes:
+    titres_fts: ['"taxe hoteliere"', '"fiscalite locale"']
+    titres_like: ['%taxe hoteliere%', '%fiscalite locale%']
+    plein_texte: [taxe hôtelière, code de la fiscalité locale, المعلوم على النزل, مجلة الجباية المحلية]
+    depuis: 1997-02-07
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache : titres FTS et LIKE jusqu''au 18/09/2026. Plein texte FR des lois de finances 1997-2021, plein texte AR des lois de finances 2016, 2019, 2020 et 2023-2026, plein texte AR de « مجلة الجباية المحلية » sur tout le corpus 1997-2026 : aucune modification des art. 41 à 45. Lacunes : couche texte arabe illisible avant 2005 et dans plusieurs fascicules de 2006-2013 ; fascicules FR 1998 n° 1 et n° 30 illisibles ; éditions FR absentes de pist.tn pour plusieurs lois de finances après 2015. Note : docs/notes/finances-locales-impots-locaux.md, § 5 et 10.1.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire:
+  - parcourir la loi de finances pour 2022 et les lois de finances complémentaires, que les passes n'ont pas visées une à une
+
+- id: r-fccl-repartition-reserve-2014-2017
+  objet: décret répartissant la réserve (المدخر) du fonds commun des collectivités locales pour les gestions 2014 à 2017, après l'art. 12 de la loi de finances pour 2014 (loi n° 2013-54)
+  ou: [precis/fr/finances_locales/_transferts.qmd#sec-fl-fccl-reserve]
+  requetes:
+    titres_fts: ['"fonds commun"', reserve AND fonds AND commun]
+    titres_like: ['%fonds commun des collectivit%', '%المال المشترك%']
+    iort_ar: [المال المشترك]
+    depuis: 2014-01-01
+  passes:
+  - date: 2026-10-04
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'titres FR (FTS et LIKE) et AR (LIKE) de jort_cache jusqu''à la dernière publication indexée ; miroir iort (dec_, dec_gouv_, arr_, loi_). Dernier décret de répartition trouvé : n° 2013-1503. Lacunes : pas de plein texte dans les fascicules 2014-2017 ; « المدخر » non cherché dans les titres ; pist.tn non consulté. Note : docs/notes/finances-locales-transferts.md, § 5 et 12.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [elargir avec le terme المدخر (titres_like), plein texte 2014-2017]
+
+- id: r-fl-loi-competences-partagees
+  objet: loi fixant les conditions et procédures d'exercice des compétences partagées (code des collectivités locales, art. 13, al. 2) ou loi de transfert de compétences (art. 16)
+  ou: [precis/fr/finances_locales/_competences.qmd#sec-fl-comp-categories]
+  requetes:
+    titres_fts: ['"competences partagees"', '"transfert des competences"']
+    iort_ar: [الصلاحيات المشتركة, نقل الصلاحيات]
+    depuis: 2018-05-15
+  passes:
+  - date: 2026-10-05
+    role: rédacteur
+    sources: [jort_cache, iort]
+    couverture: 'titres jort_cache (FTS, FR et AR) du 15 mai 2018 au 18 septembre 2026 : aucun résultat ; miroir iort (plein texte des intitulés et corps disponibles) : seul le code de 2018 contient « الصلاحيات المشتركة » ; plein texte des fascicules non parcouru.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [plein texte des fascicules arabes 2018-2026]
+
+- id: r-fl-elections-municipales-apres-2023
+  objet: texte convoquant ou organisant l'élection de nouveaux conseils municipaux après le décret-loi n° 2023-9
+  ou:
+  - precis/fr/finances_locales/_competences.qmd#sec-fl-comp-dissolution-2023
+  - precis/fr/finances_locales/_histoire.qmd#sec-fl-hist-2023-2025
+  requetes:
+    titres_fts: ['"conseils municipaux" OR "elections municipales" OR "المجالس البلدية" OR "الانتخابات البلدية"']
+    titres_like: ['%conseils municipaux%', '%elections municipales%', '%البلدي%']
+    iort_ar: [المجالس البلدية, الانتخابات البلدية]
+    depuis: 2023-03-09
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'titres jort_cache (FTS et LIKE, FR et AR) du 9 mars 2023 au 18 septembre 2026, hors arrêtés : seuls deux articles de la loi de finances pour 2026 répondent, sans rapport ; plein texte non parcouru. Notes : docs/notes/finances-locales-competences.md § 7, finances-locales-histoire.md § 4.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [plein texte des fascicules 2023-2026]
+
+- id: r-lob-cl-seuil-approbation-apres-2017
+  objet: décret fixant le seuil de recettes au-delà duquel le budget communal est approuvé par les ministres (loi n° 75-35, art. 16, 2e sous-paragraphe), postérieur au décret gouvernemental n° 2017-758
+  ou: [precis/fr/finances_locales/_budgets.qmd#sec-fl-budg-seuils]
+  requetes:
+    titres_fts: ['"75-35" OR "75 35"', ميزانية AND الجماعات AND المحلية]
+    titres_like:
+    - '%budget des collectivites%'
+    - '%budgets des communes%'
+    - '%budgets communaux%'
+    - '%ميزانية الجماعات%'
+    - '%ميزانيات الجماعات%'
+    - '%35 لسنة 1975%'
+    plein_texte: [75-35, 35 لسنة 1975]
+    depuis: 2017-06-21
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'titres jort_cache jusqu''au 18 septembre 2026 ; plein texte non parcouru ; fascicules inconnus de la base non examinés. Note : docs/notes/finances-locales-budgets.md § 1.4 et 6.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire: [plein texte des fascicules 2017-2026]
+
+- id: r-ccl-2018-nomenclature-art167
+  objet: décret gouvernemental fixant la nomenclature des budgets (art. 167), les missions et programmes (art. 156) ou le système comptable (art. 191) du code des collectivités locales
+  ou: [precis/fr/finances_locales/_budgets.qmd#sec-fl-budg-ccl-principes]
+  requetes:
+    titres_fts: [تبويب, المحاسبي AND الجماعات, nomenclature AND collectivites, comptable AND collectivites AND locales]
+    depuis: 2018-05-15
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'titres jort_cache de mai 2018 au 18 septembre 2026 : seuls des textes relatifs au budget de l''État répondent ; plein texte non parcouru. Note : docs/notes/finances-locales-budgets.md § 6.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+
+- id: r-fl-dissolutions-2011
+  objet: liste et nombre des conseils municipaux dissous et des délégations spéciales nommées en 2011-2012
+  ou: [precis/fr/finances_locales/_histoire.qmd#sec-fl-hist-2011]
+  requetes:
+    titres_like: ['%dissolution de certains conseils municipaux%', '%delegations speciales%']
+    depuis: 2011-01-14
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'titres jort_cache 2011-2014 relevés (une vingtaine de décrets de dissolution) ; seuls les décrets n° 2011-383 et 2011-384 lus. Note : docs/notes/finances-locales-histoire.md § 1.6.'
+    couvert_jusqu_au: 2014-12-31
+    resultat: aucun
+  a_faire: [lire chaque décret de dissolution et compter les communes]
+
+- id: r-fl-constitution-2014-numero-special
+  objet: numéro spécial du JORT du 10 février 2014 publiant la Constitution du 27 janvier 2014, et sa traduction française
+  ou: [precis/fr/finances_locales/_histoire.qmd#sec-fl-hist-2014]
+  requetes:
+    titres_like: ['%constitution de la republique%']
+    depuis: 2014-01-27
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist]
+    couverture: 'jort_cache : seule la décision du 31 janvier 2014 (JORT n° 10) ; aucune ligne du 10 février 2014 ni du 20 avril 2015 qui s''y rapporte ; corpus local 2014 sans fichier hors numérotation ; pist.tn : Ja0002014, Jo0002014, Jas2014, Constitution2014 en 404. Note : docs/notes/finances-locales-histoire.md § 1.7.'
+    couvert_jusqu_au: 2015-04-21
+    resultat: aucun
+  a_faire: [demander à l'IORT la cote du numéro spécial, essayer d'autres noms de fichiers sur pist.tn]
+
+- id: r-fl-nombre-communes
+  objet: nombre de communes à des dates intermédiaires entre 1957 et 2014
+  ou: [precis/fr/finances_locales/_histoire.qmd#sec-fl-hist-carte]
+  requetes:
+    titres_fts: ['"creation d''une commune"']
+    depuis: 1957-03-15
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'seuls le tableau annexé au décret du 14 mars 1957 (94 communes) et l''annexe A du code de 2018 ont été lus ; requête FTS non rejouée. Note : docs/notes/finances-locales-histoire.md § 1.8.'
+    couvert_jusqu_au: 2018-05-15
+    resultat: aucun
+  a_faire: [relancer la requête FTS, compter les créations de communes par décret]
+
 - id: r-montants-ep-commission
   objet: montants des augmentations des salaires des agents des entreprises et établissements publics (loi n° 85-78) arrêtés par la commission supérieure des négociations sociales, puis de supervision et de coordination, pour les cycles approuvés par les décrets n° 91-246 à 2013-4159
   ou: [precis/fr/remunerations_publiques/_regime_conventionnel.qmd#sec-augmentations-ep]

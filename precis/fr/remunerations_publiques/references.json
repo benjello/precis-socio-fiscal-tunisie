@@ -1,22 +1,6 @@
 {
   "items": [
     {
-      "id": "loi-org-2018-29-ccl",
-      "type": "legislation",
-      "note": "citation-key: loi-org-2018-29-ccl\nLe fascicule français correspondant n'est pas en ligne sur pist.tn : l'URL renvoie à l'édition arabe, qui porte le même texte.\nURL ARABE RETIRÉE DU FICHIER FRANÇAIS le 16/09/2026 : elle pointait https://www.pist.tn/jort/2018/2018A/Ja0392018.pdf, c'est-à-dire l'édition ARABE, ce que la convention interdit dans un references.json français (URL FR = champ pdf_fr). Le candidat https://www.pist.tn/jort/2018/2018F/Jo0392018.pdf rend 404 (re-vérifié curl -k, 16/09/2026). L'entrée française reste donc SANS URL ; l'entrée arabe homologue conserve l'adresse arabe.",
-      "title": "Loi organique n°2018-29 du 9 mai 2018, relative au Code des collectivités locales",
-      "issued": {
-        "date-parts": [
-          [
-            2018,
-            5,
-            9
-          ]
-        ]
-      },
-      "title-short": "Loi organique n° 2018-29 du 9 mai 2018"
-    },
-    {
       "id": "wb-tunisia-per-2020",
       "type": "report",
       "note": "citation-key: wb-tunisia-per-2020",
