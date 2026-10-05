@@ -95,3 +95,69 @@ Lu à l'image le 5 octobre 2026 :
   spécial CGC : c'est une série primaire possible (prévisions, non réalisations).
 - Recoupement `LIKE` + FTS + arabe sur `jort_cache` : aucun intitulé ne nomme la CGC entre
   l'arrêté du 7 juillet 1992 et la loi n° 2012-27 (art. 63). Cela ne prouve rien sur le fond.
+
+Lu sur couche texte le 5 octobre 2026 (carburants, ressources, séries) :
+
+- **Arrêté du 15 juillet 2016** (énergie/finances), JORT n° 61 du 26 juillet 2016, p. 2334, art. 5 :
+  « mise en place du mécanisme d'ajustement automatique des prix de l'essence sans plomb, du
+  gasoil ordinaire et du gasoil 50 » ; la commission (loi n° 91-45, art. 17) se réunit **tous les
+  trois mois**, sur l'évolution des prix internationaux observée sur trois mois mobiles ; abroge
+  l'arrêté du 13 février 1992 **[T]**. Absent des intitulés de `jort_cache` (trouvé au plein texte).
+- **Arrêté du 31 mars 2020**, JORT n° 28 du 3 avril 2020, pp. 731-732 (fascicule absent du corpus
+  local ; lu sur `https://www.pist.tn/record/143965/files/Jo0282020.pdf`, l'adresse
+  `/jort/2020/2020F/Jo0282020.pdf` répond 404) : ajustement **mensuel** ; variation plafonnée à
+  **1,5 %** du prix en vigueur, à la hausse ou à la baisse, **2 % à compter du 1er janvier 2021**
+  (art. 5) ; effet 1er avril 2020 (art. 10) ; abroge l'arrêté du 15 juillet 2016 **[T]**.
+- **Arrêté du 7 avril 2021**, JORT n° 32 du 8 avril 2021, p. 775 : plafond mensuel porté à **5 %** ;
+  effet 1er avril 2021 **[T]**.
+- Plein texte « ajustement automatique » dans les fascicules français 2016-2026 du corpus local :
+  trois occurrences seulement (n° 61/2016, n° 78/2020 — organigramme du ministère —, n° 32/2021).
+  Aucun texte postérieur à avril 2021 ne le nomme dans le corpus.
+- **LF 2014**, loi n° 2013-54, art. 76 (JORT n° 105 du 31 déc. 2013, pp. 3692-3693) : étend la
+  **redevance** de l'art. 63 de la LF 2013 (rubrique « renforcement des ressources de la CGC ») aux
+  voitures particulières — de 20 D (4 CV) à 850 D (16 CV et plus) — et aux véhicules soumis à la
+  taxe unique de compensation de transports routiers (25 % de cette taxe) **[T]**. L'art. 63 de la
+  loi n° 2012-27 lui-même n'est pas lu (fascicule n° 104 de 2012 absent du corpus et de pist.tn
+  aux adresses essayées).
+- **Rapport du 21 juillet 2014 sur la compensation des carburants** (contrôle général des finances
+  et al., 192 p., arabe), pp. 3-4, lu à l'image : politique de subvention depuis les années 1940 ;
+  création de la CGC en 1970 pour les produits alimentaires ; extension en **1984** au transport
+  public (fonds de compensation et de soutien des transports routiers) ; subvention des
+  **carburants et de l'électricité depuis 2004**. Besoins de financement STEG-STIR-ETAP (MD) :
+  2010 réalisé **1 065,9** ; 2011 réalisé **2 543,7** ; 2012 LF 3 095, LFC 4 084,5, réalisé
+  **5 064,4** ; 2013 LFC (prévision) **5 754** **[T]**. Ces montants (besoins des trois
+  entreprises, y compris soutien indirect en nature) dépassent le crédit budgétaire « carburants ».
+- **Résultats provisoires de l'exécution du budget** (`budget_execution/`, trilingues, couche
+  texte), tableau des dépenses, lignes « dont Compensation / Produits de base / Carburants /
+  Transport », en MD — lecture des fichiers 2013-03 (p. 16), 2015-12, 2017-01, 2018 fin juillet
+  **[T, non relu à l'image]** :
+
+  | Année | Compensation | Produits de base | Carburants | Transport |
+  |---|---|---|---|---|
+  | 2010 | 1 500,0 | 730,0 | 550,0 | 220,0 |
+  | 2011 | 2 869,2 | 1 100,0 | 1 536,0 | 233,2 |
+  | 2012 | 3 624,1 | 1 235,6 | 2 111,0 | 277,5 |
+  | 2013 | 5 514,0 | 1 450,0 | 3 734,0 | 330,0 |
+  | 2014 | 4 154,2 | 1 416,7 | 2 353,0 | 384,5 |
+  | 2015 | 2 882,9 | 1 549,0 | 918,0 | 415,9 |
+  | 2016 | 2 210,7 | 1 580,7 | 197,0 | 433,0 |
+  | 2017 (prov.) | 3 492,2 | 1 494,0 | 1 550,0 | 448,2 |
+  | 2018 (LF) | 3 520,0 | 1 570,0 | 1 500,0 | 450,0 |
+
+  Le 2010 du bulletin 2013-03 donne aussi une version « 1 430 / 800 / 430 / 200 » dans une colonne
+  voisine (LF ou réalisé : en-têtes à relire à l'image). 2015 : 2 863,9 dans le bulletin 2015-12
+  (provisoire), 2 882,9 ensuite.
+- **Banque mondiale, mémorandum économique 1985** (`wb_1985_5328_cem_a.pdf`, p. PDF 36, tableau
+  III-1 « Expenditures of Stabilization Fund (CGC), 1970-1984 », milliers de dinars ; couche texte
+  très dégradée, à relire à l'image) : total 1970 ≈ 1 300 ; 1973 ≈ 8 500 ; 1975 ≈ 59 200 ; 1979 ≈
+  58 900 ; 1981 ≈ 157 000 ; 1982 ≈ 168 300 ; 1983 ≈ 182 300 ; 1984 (est.) ≈ 257 800 ; les
+  subventions aux céréales et aux huiles apparaissent en **1975** **[S, T°]**. Annexe
+  (`wb_1985_5328_cem_b.pdf`, p. PDF 108, tableau 11, source CGC) : 1982 165,0 MD ; 1983 181,0 ;
+  budget 1984 251,0 dont céréales 156,5 (62,4 %), huile d'olive 33,5, sucre 15,0, engrais 14,8,
+  lait 6,6 **[S]**.
+- **FMI** (`imf_1996_027_red_tunisia.html`, tableau 24, source ministère des Finances) : « food
+  subsidies » 1991-1995 : 296,3 ; 269,0 ; 260,0 ; 247,0 ; 243,0 MD ; texte : de 4,2 % du PIB en
+  1988 à 1,8 % en 1994. `imf_2000_037_red_tunisia.html`, tableau 15 : « consumer subsidies by CGC »
+  1994-1998 : 319 ; 346 ; 418 ; 378 ; 375 MD, soit 2,0 ; 2,0 ; 2,2 ; 1,8 ; 1,7 % du PIB ; dette de
+  la CGC : 95 ; 155 ; 302 ; −80 ; −80 **[S]**. Les deux tableaux divergent pour 1994 (247 contre
+  319) : périmètres différents, à ne pas raccorder sans explication.
