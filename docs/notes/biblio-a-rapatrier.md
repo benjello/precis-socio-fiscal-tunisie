@@ -3053,3 +3053,17 @@ requis) :
 - [ ] `dgi-nc-lf2018-art16` — note commune dont le numéro (15/2018 d'après le nom du fichier) n'est pas lu sur pièce : vérifier sur l'original, puis renommer la clé si le numéro est confirmé.
 - [ ] `minfin-cnf-2013-forfait` — diaporama du ministère des Finances (CNF, août 2013, en arabe), document retiré du site : URL Wayback `20170616075036` lue dans le CDX, champs `archive`/`archive_location` posés (FR et AR).
 - [x] `lf-2026` (fonds commun, FR et AR) : note corrigée — article 91 en page 4255 de l'édition arabe (non 4254-4255) ; article 110 (application au 1er janvier 2026) en page 4258.
+
+## Passe « Cotisations — autres prélèvements sur les salaires (TFP, FOPROLOS) » (05/10/2026) — À REPORTER DANS ZOTERO
+
+Note documentaire : `docs/notes/cotisations-prelevements-salaires.md`. Chapitre :
+`precis/fr/cotisations_sociales/_prelevements_salaires.qmd`. Clés ajoutées à la main dans
+`precis/{fr,ar}/cotisations_sociales/references.json` (provisoires jusqu'au rapatriement, feu
+vert requis) ; URL `pdf_fr`/`pdf_ar` des enregistrements jort_cache, titres français dans les
+deux langues (comme les autres entrées du livre) :
+
+- [ ] Nouvelles : `decret-1956-01-12-formation-professionnelle` (JORT n° 5/1956 ; jort_cache porte aussi un enregistrement n° 13, le rectificatif, non retenu), `decret66-527`, `loi66-79-lf1967`, `loi77-54` (enregistrement `type = Loi` ; un décret n° 77-54 homonyme existe), `loi2007-69`, `decret2009-292`, `dgi-nc-5-2015` (note commune sans URL publique : chercher l'adresse jibaya.tn, relever numéro et date de bulletin).
+- [ ] Copiées depuis d'autres livres, note complétée des articles TFP/FOPROLOS : `loi86-106-lf1987` (caisses), `loi-88-145-lf-1989`, `lf-2000`, `lf-2003`, `loi-2007-70-lf-2008`, `lf-2011`, `lf-2013` (fiscalité). Collection Zotero à élargir au livre des cotisations. `lf-2003` art. 35-36 (p. 2880) et `lf-2000` art. 17-18 (p. 2741) relus à l'image le 5 octobre 2026.
+- [ ] Fonds commun, note complétée : `lf-2026` (art. 21, éd. AR p. 4235), `loi-87-83-lf-1988` (art. 76, p. 1635).
+- [ ] Doublon de clé à trancher : la LF 1991 (loi n° 90-111) porte `lf-1991` en fiscalité et `loi-90-111-lf-1991` en prestations sociales.
+- [ ] Le `dry-run` et le `controle-rangement` du workflow `biblio-zotero` restent à lancer après poussée de la branche (branche locale).

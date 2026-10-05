@@ -25,6 +25,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Augmentation optionnelle de l'âge de mise à la retraite | الترفيع الاختياري في سنّ الإحالة على التقاعد |  |
 | Autonomie budgétaire | الاستقلالية في الميزانية |  |
 | Autonomie financière | الاستقلالية المالية |  |
+| Avance sur la taxe de formation professionnelle | التسبقة على الأداء على التكوين المهني |  |
 | Avancement d'échelon | الترقّي في الدرجة |  |
 | Avantage en nature | الامتياز العيني |  |
 | Ayant droit | ذو الحقّ |  |
@@ -67,6 +68,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Conseil local | المجلس المحلي |  |
 | Conseil supérieur des collectivités locales | المجلس الأعلى للجماعات المحلية |  |
 | Contrat-programme | عقد البرنامج |  |
+| Contribution au fonds de promotion du logement pour les salariés | المساهمة الراجعة لصندوق النهوض بالمسكن لفائدة الأجراء | FOPROLOS |
 | Contribution au profit du Fonds national d'amélioration de l'habitat | المساهمة لفائدة الصندوق الوطني لتحسين السكن |  |
 | Contribution aux frais de crèche | المساهمة في مصاريف رياض الأطفال |  |
 | Contribution personnelle d'État | الضريبة الشخصية للدولة | CPE |
@@ -259,6 +261,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Taux spécifique | نسبة نوعية |  |
 | Taxe (au sens des finances publiques) | الرسم (بمفهوم المالية العمومية) |  |
 | Taxe à la production | الأداء على الإنتاج |  |
+| Taxe de formation professionnelle | الأداء على التكوين المهني | TFP |
 | Taxe hôtelière | المعلوم على النزل |  |
 | Taxe sur la valeur ajoutée | الأداء على القيمة المضافة | TVA |
 | Taxe sur les bières, vins et autres boissons alcoolisées | الأداء على الجعة والخمور والمشروبات الكحولية الأخرى |  |
