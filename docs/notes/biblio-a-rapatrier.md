@@ -6,6 +6,48 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Ajouts à la main du 04/10/2026 (finances locales, chapitres des impôts, taxes et redevances)
+
+**Vingt-deux clés neuves** versées dans `precis/fr/finances_locales/references.json` et
+`precis/ar/finances_locales/references.json`, absentes de Zotero : `loi97-11`, `decret97-431`
+à `decret97-435`, `decret97-530`, `decret98-1254`, `loi2002-76`, `decret2003-1345`,
+`decret2006-49`, `decret2006-3360`, `decret2007-1185` à `decret2007-1187`, `loi2007-53`,
+`lf-2009`, `lfc-2012`, `decret2016-805`, `decret2017-395` à `decret2017-397`. Métadonnées et
+URL tirées de `jort_cache.db` (`pdf_fr` pour le FR, `pdf_ar` du même enregistrement pour l'AR) ;
+valeurs et dates d'effet lues par la note `docs/notes/finances-locales-impots-locaux.md`. Les
+entrées AR gardent le titre français, selon l'usage du fonds, le titre arabe relevé figurant
+dans la note quand il est connu. `title-short` posé à la main. Restent à relever : pages AR de
+`decret98-1254`, `loi2002-76`, `loi2007-53`, `decret2003-1345`, `decret2006-49`,
+`decret2006-3360` ; étendue des pages de `lf-2009` et `lfc-2012` (champ `page` laissé vide).
+`decret2016-805` : édition française lue le 4/10/2026 (p. 2067-2070) ; son art. 2 imprime
+« 98-1998 » pour le décret abrogé, l'arabe « 1428 ».
+
+**Treize clés promues au fonds commun** (`precis/{fr,ar}/references.json`), parce que deux
+livres les citent désormais, et retirées des fichiers de livre selon la règle de
+`sync_biblio.repartit_references` : `lf-1997`, `lf-1999`, `lf-2003`, `lf-2005`, `lf-2006`,
+`lf-2007`, `lf-2011`, `lf-2013`, `lf-2014`, `lf-2016`, `lf-2021`, `lf-2024` (venues de
+`fiscalite`) et `loi-org-2018-29-ccl` (venue de `remunerations_publiques`). Dans Zotero, à
+**déclasser** (retirer la collection du livre d'origine, ou ajouter « Finances locales ») : le
+`controle-rangement` les signalera. Doublon apparent non tranché : `lf-2022` (commun) et
+`dl2021-21-lf2022` (caisses) désignent le même décret-loi ; le volume cite `lf-2022`.
+`push_biblio.py --verifier` : 593 entrées, 1 perte antérieure à ce versement
+(`minfin-cnf-2013-forfait`, champ `language`). Le `dry-run` et le `controle-rangement` du
+workflow `biblio-zotero` restent à lancer après poussée de la branche.
+
+## Ajout à la main du 04/10/2026 (finances locales, volume VII)
+
+Une clé versée dans `precis/fr/finances_locales/references.json` et
+`precis/ar/finances_locales/references.json`, absente de Zotero : `dafflon-gilbert-2018`
+(Dafflon et Gilbert, *L'économie politique et institutionnelle de la décentralisation en
+Tunisie*, AFD, 2018). Titre, éditeur, date de parution (septembre 2018), ISBN et ISSN lus sur
+l'exemplaire HAL ; la note de l'entrée cite ces lectures. La collection Zotero « Finances
+locales » n'existe pas encore : `COLLECTIONS` (`push_biblio.py`) et `COLLECTION_TO_BOOK`
+(`sync_biblio.py`) la déclarent ; à créer avant `ranger`. Les ébauches de
+`docs/notes/biblio-fiscalite-locale.md` pour les six articles de la *Revue tunisienne de
+fiscalité* et de *Transparence et droit* ne sont pas versées : aucun n'est cité, et seuls deux
+sont lus. Le `dry-run` et le `controle-rangement` du workflow `biblio-zotero` restent à lancer
+après poussée de la branche.
+
 ## Ajouts à la main du 04/10/2026 (fiscalité, impôt sur la fortune)
 
 Deux clés versées dans `precis/fr/fiscalite/references.json` et `precis/ar/fiscalite/references.json`, absentes de Zotero : `dgi-nc-15-2023` et `dgi-nc-13-2026` (notes communes parues en arabe seulement ; titre arabe dans l'entrée AR, titre français traduit dans l'entrée FR). Entrées complétées (notes) : `lf-2014` (art. 55), `lfc-2014` (art. 38), `lf-2023` (art. 23 et 76 ; pagination française établie par le fac-similé DGI, TODO levé ; art. 12 présent dans l'édition française, p. 3557), `lf-2026` (art. 88, 110, note (1)). **`lfc-2014` FR : champ `page` corrigé de 2183-2232 (pagination arabe) en 2095-2142** (sommaire de l'édition française) ; l'entrée AR garde 2183-2232. À répercuter dans Zotero avant toute descente. Source : `docs/notes/fiscalite-impot-fortune.md`, § 9. `lf-2014` : art. 95 (date d'application, FR p. 3699) ajouté à la note. `push_biblio.py --verifier` : 563 entrées, 0 perte. Le `dry-run` et le `controle-rangement` du workflow `biblio-zotero` restent à lancer après poussée de la branche.

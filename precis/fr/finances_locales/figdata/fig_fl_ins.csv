@@ -1,0 +1,71 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-04
+# séries (tunisia_data) : finances-locales-ins-comptes, cnat-pib-nominal
+# sources (citation) : @ins-cnat-2015
+# fiches : sources/finances-locales-ins.md, docs/croissances-revenus-prix.md
+# méthode/hypothèses : TROIS BASES, JAMAIS RACCORDÉES : colonne `base` ; une année publiée en deux bases (2005-2008, 2015-2017) a deux lignes ; jonctions dans ins_cl_jonctions_bases.csv (la valeur ajoutée 1983/1997 ne se raccorde pas : 180,2 contre 295,4 en 2005 ; 1997/2015 identiques en 2016-2017, différents en 2015 pour l'épargne et le revenu disponible). Base lue dans le texte de chaque édition. Valeur retenue = édition la plus récente de la même base ; colonne `statut` (définitif, semi-définitif, provisoire). Huit milliers déplacés dans la couche texte remis en place et vérifiés par les identités ; édition 2003-2007 à police mal encodée, libellés décodés. FBCF 2013 (base 1997) = 276,8, égale aux salaires bruts, constante dans cinq éditions et cohérente avec le compte : signalée, non corrigée. PAS DE DÉTAIL PAR IMPÔT LOCAL ; le classement des produits des marchés (hors impôts ?) n'est pas documenté., LES NIVEAUX NE SE COMPARENT PAS D'UNE ÉDITION À L'AUTRE : ils changent de base (la base 1997 est d'environ 10 % au-dessus de la base 1983, la base 2015 d'environ 6 % au-dessus de la base 1997). Contrôles : huit valeurs lues à la main ; dans chaque édition, le taux calculé sur les niveaux lus redonne le taux imprimé à 0,1 point près ; chaque valeur d'UNdata de même base se retrouve dans l'une des éditions à 0,1 % près. L'édition 2015-2020 porte six colonnes. Voir `pib_nominal_croissance.csv` pour une série de taux.
+# note : Épargne brute et formation brute de capital fixe des collectivités locales dans les comptes de la nation, en millions de dinars courants et en % du PIB de la même base, 2001-2025
+Année,Grandeur,Base du PIB ou du compte,Montant (MD),% du PIB,Statut
+2001,Épargne brute,1983,67.7,0.235,definitif
+2002,Épargne brute,1983,58.1,0.194,definitif
+2003,Épargne brute,1983,66.7,0.207,definitif
+2004,Épargne brute,1983,69.1,0.196,definitif
+2005,Épargne brute,1983,73.1,0.194,definitif
+2006,Épargne brute,1983,85.8,0.207,definitif
+2007,Épargne brute,1983,90.1,0.197,semi_definitif
+2008,Épargne brute,1983,94.9,0.188,provisoire
+2005,Épargne brute,1997,54.6,0.13,definitif
+2006,Épargne brute,1997,61.6,0.135,definitif
+2007,Épargne brute,1997,89.7,0.18,definitif
+2008,Épargne brute,1997,132.6,0.24,definitif
+2009,Épargne brute,1997,62.2,0.106,definitif
+2010,Épargne brute,1997,85.4,0.135,definitif
+2011,Épargne brute,1997,102.3,0.159,definitif
+2012,Épargne brute,1997,126.0,0.179,definitif
+2013,Épargne brute,1997,174.6,0.232,definitif
+2014,Épargne brute,1997,195.3,0.242,definitif
+2015,Épargne brute,1997,198.5,0.234,definitif
+2016,Épargne brute,1997,172.5,0.192,semi_definitif
+2017,Épargne brute,1997,194.9,0.202,provisoire
+2015,Épargne brute,2015,359.1,0.4,definitif
+2016,Épargne brute,2015,172.6,0.181,definitif
+2017,Épargne brute,2015,194.9,0.191,definitif
+2018,Épargne brute,2015,218.5,0.193,definitif
+2019,Épargne brute,2015,236.4,0.192,definitif
+2020,Épargne brute,2015,153.1,0.128,definitif
+2021,Épargne brute,2015,142.0,0.108,definitif
+2022,Épargne brute,2015,254.3,0.182,definitif
+2023,Épargne brute,2015,268.7,0.179,definitif
+2024,Épargne brute,2015,356.9,0.223,semi_definitif
+2025,Épargne brute,2015,459.3,0.268,provisoire
+2001,Formation brute de capital fixe,1983,128.4,0.446,definitif
+2002,Formation brute de capital fixe,1983,123.1,0.411,definitif
+2003,Formation brute de capital fixe,1983,87.2,0.271,definitif
+2004,Formation brute de capital fixe,1983,124.0,0.352,definitif
+2005,Formation brute de capital fixe,1983,116.0,0.307,definitif
+2006,Formation brute de capital fixe,1983,107.8,0.26,definitif
+2007,Formation brute de capital fixe,1983,89.9,0.197,semi_definitif
+2008,Formation brute de capital fixe,1983,65.3,0.129,provisoire
+2005,Formation brute de capital fixe,1997,116.0,0.277,definitif
+2006,Formation brute de capital fixe,1997,107.8,0.236,definitif
+2007,Formation brute de capital fixe,1997,89.9,0.18,definitif
+2008,Formation brute de capital fixe,1997,65.3,0.118,definitif
+2009,Formation brute de capital fixe,1997,164.3,0.28,definitif
+2010,Formation brute de capital fixe,1997,180.1,0.286,definitif
+2011,Formation brute de capital fixe,1997,213.4,0.331,definitif
+2012,Formation brute de capital fixe,1997,218.0,0.31,definitif
+2013,Formation brute de capital fixe,1997,276.8,0.368,definitif
+2014,Formation brute de capital fixe,1997,433.7,0.536,definitif
+2015,Formation brute de capital fixe,1997,443.4,0.524,definitif
+2016,Formation brute de capital fixe,1997,482.3,0.537,semi_definitif
+2017,Formation brute de capital fixe,1997,500.6,0.52,provisoire
+2015,Formation brute de capital fixe,2015,443.4,0.494,definitif
+2016,Formation brute de capital fixe,2015,482.3,0.506,definitif
+2017,Formation brute de capital fixe,2015,500.6,0.491,definitif
+2018,Formation brute de capital fixe,2015,515.3,0.456,definitif
+2019,Formation brute de capital fixe,2015,463.3,0.377,definitif
+2020,Formation brute de capital fixe,2015,386.3,0.323,definitif
+2021,Formation brute de capital fixe,2015,425.7,0.324,definitif
+2022,Formation brute de capital fixe,2015,480.2,0.344,definitif
+2023,Formation brute de capital fixe,2015,436.0,0.291,definitif
+2024,Formation brute de capital fixe,2015,464.2,0.29,semi_definitif
+2025,Formation brute de capital fixe,2015,624.8,0.364,provisoire

@@ -5566,3 +5566,1422 @@ entries:
         الأداء على التكوين المهني في حدود 60 % من الأداء المستوجب بعنوان السنة
         السابقة، إذا بلغ هذا الأداء 1000 دينار على الأقلّ.
       synonymes: []
+
+  # ── Volume « Les finances locales », chapitre « Les notions » (4 octobre 2026) ──
+  # Définitions tirées de Dafflon et Gilbert (AFD, 2018). Termes arabes PROVISOIRES :
+  # aucun texte bilingue ne met en regard ces notions doctrinales et leurs termes
+  # arabes. Quand un terme figure dans la loi organique n° 2018-29 (code des
+  # collectivités locales), édition arabe du JORT n° 39 du 15 mai 2018, l'article est
+  # indiqué en commentaire : il atteste le terme arabe, non sa mise en regard avec la
+  # notion française (édition française de ce JORT non identifiée).
+
+  - id: decentralisation
+    acronyme: null
+    statut: provisoire  # AR : اللامركزية, CCL 2018 (AR), art. 1
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 17"}
+    voir_aussi: [deconcentration, delegation-competences, devolution-competences]
+    fr:
+      terme: Décentralisation
+      definition: >
+        Transfert d'autorité et de responsabilités — compétences, tâches et
+        fonctions — du gouvernement central vers des gouvernements et des
+        autorités de niveau intermédiaire ou local, ou vers des organismes
+        presque autonomes. Elle prend deux formes, la délégation et la
+        dévolution ; la déconcentration, qui laisse les compétences au centre,
+        n'en est pas une.
+      synonymes: []
+    ar:
+      terme: اللامركزية
+      definition: >
+        نقل السلطة والمسؤوليات — من صلاحيات ومهامّ ووظائف — من الحكومة
+        المركزية إلى حكومات وسلط من المستوى الوسيط أو المحلي، أو إلى هياكل شبه
+        مستقلّة. وتتّخذ شكلين، التفويض والإسناد؛ أمّا عدم التركيز، الذي يُبقي
+        الصلاحيات بيد المركز، فليس منها.
+      synonymes: []
+
+  - id: deconcentration
+    acronyme: null
+    statut: provisoire  # AR : اللامحورية (« الإدارات اللامحورية »), CCL 2018 (AR), chapitre des districts
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 17"}
+    voir_aussi: [decentralisation]
+    fr:
+      terme: Déconcentration
+      definition: >
+        Organisation dans laquelle l'État central conserve ses responsabilités
+        et ses compétences, mais les fait exécuter par des antennes régionales
+        ou locales qui lui sont hiérarchiquement subordonnées, sans marge de
+        manœuvre.
+      synonymes: []
+    ar:
+      terme: اللامحورية
+      definition: >
+        تنظيم تحتفظ فيه الدولة المركزية بمسؤولياتها وصلاحياتها، وتعهد
+        بتنفيذها إلى فروع جهوية أو محلية تخضع لها خضوعا تسلسليا، دون هامش
+        تصرّف.
+      synonymes: [عدم التركيز]
+
+  - id: delegation-competences
+    acronyme: null
+    statut: provisoire  # AR non attesté dans un texte
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 17-18"}
+    voir_aussi: [decentralisation, devolution-competences]
+    fr:
+      terme: Délégation de compétences
+      definition: >
+        Transfert de compétences aux collectivités assorti de normes ou de
+        standards fixés par l'échelon central, que la collectivité doit
+        respecter ; elle ne choisit que les modalités de mise en œuvre et
+        supporte, en principe, le coût de ce qu'elle offre au-delà de la norme.
+      synonymes: [Délégation]
+    ar:
+      terme: تفويض الصلاحيات
+      definition: >
+        نقل صلاحيات إلى الجماعات المحلية مع معايير أو مقاييس يضبطها المستوى
+        المركزي وتلتزم الجماعة باحترامها؛ ولا تختار إلّا طرق التنفيذ، وتتحمّل
+        مبدئيا كلفة ما تقدّمه زيادة على المعيار.
+      synonymes: [التفويض]
+
+  - id: devolution-competences
+    acronyme: null
+    statut: provisoire  # AR non attesté ; le CCL 2018 (AR), art. 14, dit « الصلاحيات الذاتية » (compétences propres)
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 17"}
+    voir_aussi: [decentralisation, delegation-competences, ressources-propres]
+    fr:
+      terme: Dévolution de compétences
+      definition: >
+        Attribution aux collectivités de compétences propres, exercées avec les
+        pleins pouvoirs et sans tutelle d'un échelon supérieur, ce qui suppose
+        qu'elles disposent de ressources propres, notamment fiscales, à hauteur
+        de ces compétences.
+      synonymes: [Dévolution]
+    ar:
+      terme: إسناد الصلاحيات الذاتية
+      definition: >
+        إسناد صلاحيات ذاتية إلى الجماعات المحلية تمارسها بكامل السلطة ودون
+        إشراف مستوى أعلى، وهو ما يفترض أن تتوفّر لها موارد ذاتية، ولا سيما
+        جبائية، في حدود تلك الصلاحيات.
+      synonymes: []
+
+  - id: collectivite-locale
+    acronyme: null
+    statut: provisoire  # AR : الجماعة المحلية, CCL 2018 (AR), art. 2
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 16-18"}
+    voir_aussi: [libre-administration, decentralisation]
+    fr:
+      terme: Collectivité locale
+      definition: >
+        Entité publique territoriale qui exerce, par des organes élus et sur un
+        budget propre, une part des affaires publiques au profit de ses
+        résidents.
+      synonymes: [Collectivité territoriale]
+    ar:
+      terme: الجماعة المحلية
+      definition: >
+        ذات عمومية ترابية تمارس، بواسطة هياكل منتخبة وبميزانية خاصة بها،
+        جانبا من الشؤون العمومية لفائدة متساكنيها.
+      synonymes: []
+
+  - id: libre-administration
+    acronyme: null
+    statut: provisoire  # AR : التدبير الحر, CCL 2018 (AR), art. 4
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 16 et 18"}
+    voir_aussi: [collectivite-locale, tutelle]
+    fr:
+      terme: Libre administration
+      definition: >
+        Droit et capacité effective, pour les collectivités, de régler et de
+        gérer une part importante des affaires publiques au profit de leurs
+        résidents, par des conseils élus au suffrage direct et universel ; il
+        limite la tutelle de l'État central.
+      synonymes: []
+    ar:
+      terme: التدبير الحر
+      definition: >
+        حقّ الجماعات المحلية وقدرتها الفعلية على تنظيم جانب هامّ من الشؤون
+        العمومية وتسييره لفائدة متساكنيها، بواسطة مجالس منتخبة بالاقتراع العامّ
+        المباشر؛ ويحدّ من إشراف الدولة المركزية.
+      synonymes: []
+
+  - id: subsidiarite
+    acronyme: null
+    statut: provisoire  # AR : مبدأ التفريع, CCL 2018 (AR), art. 15
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 16 et 19-20"}
+    voir_aussi: [decentralisation]
+    fr:
+      terme: Subsidiarité
+      definition: >
+        Principe selon lequel l'exercice des responsabilités publiques incombe,
+        de façon générale, aux autorités les plus proches des citoyens et les
+        plus à même de les remplir, compte tenu de l'ampleur et de la nature de
+        la tâche et des exigences d'efficacité et d'économie.
+      synonymes: [Principe de subsidiarité]
+    ar:
+      terme: التفريع
+      definition: >
+        مبدأ يُسند بمقتضاه ممارسة المسؤوليات العمومية، بصفة عامة، إلى السلط
+        الأقرب إلى المواطنين والأقدر على القيام بها، مع مراعاة حجم المهمّة
+        وطبيعتها ومقتضيات النجاعة والاقتصاد.
+      synonymes: [مبدأ التفريع]
+
+  - id: patrimoine-financier
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 64"}
+    voir_aussi: [ressources-propres]
+    fr:
+      terme: Patrimoine financier
+      definition: >
+        Capitaux et immeubles qu'une collectivité détient à titre privé, qui ne
+        sont pas nécessaires à la production des services et pourraient être
+        vendus ; il s'oppose au patrimoine administratif, qui sert à produire
+        les services et n'a pas de valeur de marché.
+      synonymes: []
+    ar:
+      terme: الملك المالي
+      definition: >
+        رؤوس الأموال والعقارات التي تملكها جماعة محلية ملكية خاصة، والتي لا
+        تحتاجها لإنتاج الخدمات ويمكن التفويت فيها؛ ويقابله الملك الإداري الذي
+        يُستعمل لإنتاج الخدمات ولا قيمة سوقية له.
+      synonymes: []
+
+  - id: desequilibre-vertical
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 65 et 197"}
+    voir_aussi: [transfert-financier, perequation-financiere]
+    fr:
+      terme: Déséquilibre vertical
+      definition: >
+        Discordance, commune à toutes les collectivités, entre les ressources
+        qui leur sont attribuées et les tâches qui leur sont confiées ; elle
+        tient à la répartition entre niveaux de gouvernement, à la différence
+        des déséquilibres propres à une collectivité.
+      synonymes: [Déséquilibre fiscal vertical]
+    ar:
+      terme: الاختلال العمودي
+      definition: >
+        عدم تطابق، يشمل جميع الجماعات المحلية، بين الموارد المسندة إليها
+        والمهامّ الموكولة إليها؛ ويرجع إلى توزيع الموارد والمهامّ بين مستويات
+        الحكم، خلافا للاختلالات الخاصّة بجماعة بعينها.
+      synonymes: []
+
+  - id: discipline-budgetaire
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 81"}
+    voir_aussi: [regle-d-or]
+    fr:
+      terme: Discipline budgétaire
+      definition: >
+        Situation dans laquelle une loi impose aux collectivités des règles
+        contraignantes sur le résultat de leur budget et de leurs comptes ; elle
+        se distingue de la responsabilité budgétaire, attitude spontanément
+        prudente des élus qui visent l'équilibre sans règle extérieure.
+      synonymes: []
+    ar:
+      terme: الانضباط في الميزانية
+      definition: >
+        وضع يفرض فيه القانون على الجماعات المحلية قواعد ملزمة تتعلّق بنتيجة
+        ميزانيتها وحساباتها؛ ويتميّز عن المسؤولية في الميزانية، وهي سلوك حذر
+        تلقائي من المنتخبين يرمي إلى التوازن دون قاعدة خارجية.
+      synonymes: []
+
+  - id: regle-d-or
+    acronyme: null
+    statut: provisoire  # AR non attesté ; le CCL 2018 (AR), art. 126, dit « قاعدة التوازن الحقيقي للميزانية » (équilibre réel)
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 28 et 82"}
+    voir_aussi: [discipline-budgetaire, emprunt, capacite-emprunt]
+    fr:
+      terme: Règle d'or
+      definition: >
+        Règle d'équilibre budgétaire qui, dans la forme dite « revisitée »,
+        combine l'équilibre du compte de fonctionnement, service de la dette
+        compris, et le financement des investissements selon l'utilisation :
+        seuls les investissements peuvent être financés par l'emprunt, remboursé
+        sur leur durée d'utilisation, au rythme de leur amortissement.
+      synonymes: [Règle d'or revisitée]
+    ar:
+      terme: القاعدة الذهبية
+      definition: >
+        قاعدة توازن الميزانية التي تجمع، في صيغتها «المُراجَعة»، بين توازن حساب
+        التصرّف بما في ذلك خدمة الدين، وتمويل الاستثمارات حسب استعمالها: فلا
+        يُموَّل بالاقتراض إلّا الاستثمار، ويُسدَّد القرض على مدّة استعماله وبنسق
+        استهلاكه.
+      synonymes: []
+
+  - id: emprunt
+    acronyme: null
+    statut: provisoire  # AR : الاقتراض, CCL 2018 (AR), titre des ressources d'emprunt
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 28 et 66"}
+    voir_aussi: [regle-d-or, capacite-emprunt]
+    fr:
+      terme: Emprunt
+      definition: >
+        Pour une collectivité, moyen de paiement des investissements et non
+        revenu : il devra être remboursé par un excédent de recettes ou par
+        l'impôt futur.
+      synonymes: []
+    ar:
+      terme: الاقتراض
+      definition: >
+        وسيلة لخلاص الاستثمارات وليس دخلا بالنسبة إلى الجماعة المحلية: إذ
+        يتعيّن تسديده من فائض في المداخيل أو من الأداءات المستقبلية.
+      synonymes: []
+
+  - id: epargne-nette
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 83"}
+    voir_aussi: [capacite-emprunt, regle-d-or]
+    fr:
+      terme: Épargne nette
+      definition: >
+        Excédent du compte de fonctionnement après paiement des intérêts de la
+        dette et de l'amortissement des investissements existants.
+      synonymes: []
+    ar:
+      terme: الادّخار الصافي
+      definition: >
+        فائض حساب التصرّف بعد دفع فوائد الدين واستهلاك الاستثمارات القائمة.
+      synonymes: []
+
+  - id: capacite-emprunt
+    acronyme: null
+    statut: provisoire  # AR : طاقة التداين, CCL 2018 (AR), art. 150 (critère de répartition)
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 82-83"}
+    voir_aussi: [emprunt, epargne-nette, regle-d-or]
+    fr:
+      terme: Capacité d'emprunt
+      definition: >
+        Nouvel emprunt que le compte de fonctionnement d'une collectivité peut
+        supporter : l'épargne nette, diminuée des coûts récurrents qu'entraîne
+        l'investissement et augmentée des recettes qu'il procure, rapportée à la
+        somme du taux d'intérêt et du taux d'amortissement.
+      synonymes: [Capacité d'endettement]
+    ar:
+      terme: طاقة التداين
+      definition: >
+        القرض الجديد الذي يستطيع حساب التصرّف لجماعة محلية تحمّله: الادّخار
+        الصافي، مطروحا منه الكلفة المتكرّرة التي يستوجبها الاستثمار ومضافا إليه
+        ما يدرّه من مداخيل، مقسوما على مجموع نسبة الفائدة ونسبة الاستهلاك.
+      synonymes: [طاقة الاقتراض]
+
+  - id: tutelle
+    acronyme: null
+    statut: provisoire  # AR non attesté ; « الرقابة » et « مراقبة لاحقة », CCL 2018 (AR), art. 198
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 18-19"}
+    voir_aussi: [libre-administration]
+    fr:
+      terme: Tutelle
+      definition: >
+        Contrôle qu'exerce l'échelon central sur les décisions des
+        collectivités. Il porte sur la légalité de la décision, c'est-à-dire le
+        respect de la procédure, ou sur son opportunité, c'est-à-dire son objet,
+        son contenu et sa priorité ; il s'exerce a priori ou a posteriori.
+      synonymes: [Contrôle de tutelle]
+    ar:
+      terme: سلطة الإشراف
+      definition: >
+        الرقابة التي يمارسها المستوى المركزي على قرارات الجماعات المحلية.
+        وتتعلّق بشرعية القرار، أي احترام الإجراءات، أو بملاءمته، أي موضوعه
+        ومضمونه وأولويته؛ وتُمارَس مسبقا أو لاحقا.
+      synonymes: [الإشراف]
+
+  - id: ressources-propres
+    acronyme: null
+    statut: provisoire  # AR : الموارد الذاتية, CCL 2018 (AR), art. 131-132
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 65 et 68"}
+    voir_aussi: [autonomie-financiere, impot-local, redevance-utilisation, patrimoine-financier]
+    fr:
+      terme: Ressources propres
+      definition: >
+        Ressources qu'une collectivité obtient par ses propres moyens : ses
+        impôts, exclusifs ou partagés, ses redevances d'utilisation et le
+        rendement de son patrimoine. Elles s'opposent aux ressources transférées
+        par l'État.
+      synonymes: [Recettes propres]
+    ar:
+      terme: الموارد الذاتية
+      definition: >
+        الموارد التي تحصل عليها الجماعة المحلية بوسائلها الخاصّة: أداءاتها،
+        الحصرية أو المشتركة، ومعاليم الاستعمال، ومردود أملاكها. ويقابلها ما
+        تحيله الدولة من موارد.
+      synonymes: []
+
+  - id: impot-local
+    acronyme: null
+    statut: provisoire  # AR : الأداءات المحلية, CCL 2018 (AR), art. 132
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 152"}
+    voir_aussi: [taxe-finances-publiques, redevance-utilisation, ressources-propres]
+    fr:
+      terme: Impôt local
+      definition: >
+        Prélèvement obligatoire perçu au profit d'une collectivité, sans
+        contrepartie pour le contribuable et sans affectation : son produit va
+        au compte général de la collectivité. C'est la définition de l'impôt en
+        finances publiques, appliquée à la collectivité locale.
+      synonymes: [Impôt]
+    ar:
+      terme: الأداء المحلي
+      definition: >
+        اقتطاع إجباري يُوظَّف لفائدة جماعة محلية، دون مقابل للمطالب بالأداء
+        ودون تخصيص: إذ يدخل محصوله في الحساب العامّ للجماعة. وهو تعريف الأداء
+        في المالية العمومية منزَّلا على الجماعة المحلية.
+      synonymes: [الأداء]
+
+  - id: taxe-finances-publiques
+    acronyme: null
+    statut: provisoire  # AR à confirmer : le CCL 2018 (AR), art. 132, énumère « المعاليم والرسوم » sans les définir
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 152"}
+    voir_aussi: [impot-local, redevance-utilisation]
+    fr:
+      terme: Taxe (au sens des finances publiques)
+      definition: >
+        Prélèvement obligatoire qu'une collectivité perçoit comme fournisseur
+        exclusif de l'accès à un service ; il n'est dû que par celui qui demande
+        l'accès, va au budget général sans affectation, et son montant ne dépend
+        ni du volume ni du coût de la prestation. Les textes emploient souvent
+        « taxe » dans un autre sens.
+      synonymes: []
+    ar:
+      terme: الرسم (بمفهوم المالية العمومية)
+      definition: >
+        اقتطاع إجباري تستخلصه جماعة محلية بصفتها المزوّد الوحيد لخدمة ما؛ ولا
+        يُستوجب إلّا على من يطلب الانتفاع بها، ويدخل في الميزانية العامّة دون
+        تخصيص، ولا يرتبط مبلغه بحجم الخدمة ولا بكلفتها. وكثيرا ما تستعمل النصوص
+        اللفظ في معنى آخر.
+      synonymes: []
+
+  - id: redevance-utilisation
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 152-153"}
+    voir_aussi: [impot-local, taxe-finances-publiques]
+    fr:
+      terme: Redevance d'utilisation
+      definition: >
+        Prix d'un service rendu, proportionné à l'avantage que l'usager en
+        retire, affecté à la tâche qu'il finance et plafonné à son coût total ;
+        un excédent durable serait un impôt déguisé.
+      synonymes: [Paiement des usagers, Contribution causale]
+    ar:
+      terme: معلوم الاستعمال
+      definition: >
+        ثمن خدمة مسداة، يتناسب مع المنفعة التي يجنيها المنتفع منها، ويُخصَّص
+        للمهمّة التي يموّلها ولا يتجاوز كلفتها الجملية؛ وكلّ فائض دائم يُعدّ
+        أداءً مقنّعا.
+      synonymes: [الإتاوة]
+
+  - id: autonomie-budgetaire
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 68"}
+    voir_aussi: [autonomie-financiere, devolution-competences]
+    fr:
+      terme: Autonomie budgétaire
+      definition: >
+        Capacité d'une collectivité de décider seule des catégories, de la
+        quantité et de la qualité des prestations qu'elle offre à ses
+        résidents ; elle porte sur les dépenses, et les compétences dévolues en
+        sont le véritable espace.
+      synonymes: []
+    ar:
+      terme: الاستقلالية في الميزانية
+      definition: >
+        قدرة الجماعة المحلية على أن تقرّر وحدها أصناف الخدمات التي تسديها
+        لمتساكنيها وكمّيتها وجودتها؛ وهي تتعلّق بالنفقات، ومجالها الحقيقي
+        الصلاحيات المُسندة.
+      synonymes: []
+
+  - id: autonomie-financiere
+    acronyme: null
+    statut: provisoire  # AR : « الاستقلالية الإدارية والمالية », CCL 2018 (AR), art. 2 et 38
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 68"}
+    voir_aussi: [autonomie-budgetaire, souverainete-fiscale, ressources-propres, taux-autonomie-financiere]
+    fr:
+      terme: Autonomie financière
+      definition: >
+        Situation d'une collectivité qui obtient par ses propres moyens les
+        ressources dont elle a besoin, sans dépendre d'autres collectivités ;
+        elle prend en compte toutes les ressources propres. L'autonomie
+        fiscale, plus étroite, ne prend en compte que les impôts et les taxes.
+      synonymes: [Autonomie fiscale]
+    ar:
+      terme: الاستقلالية المالية
+      definition: >
+        وضع الجماعة المحلية التي تحصل بوسائلها الخاصّة على ما تحتاجه من موارد،
+        دون أن تتبع جماعات أخرى؛ وتشمل جميع الموارد الذاتية. أمّا الاستقلالية
+        الجبائية، وهي أضيق، فلا تشمل إلّا الأداءات والرسوم.
+      synonymes: [الاستقلالية الجبائية]
+
+  - id: souverainete-fiscale
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 68 et 153-154"}
+    voir_aussi: [flexibilite-fiscale, autonomie-financiere]
+    fr:
+      terme: Souveraineté fiscale
+      definition: >
+        Pouvoir d'une collectivité de définir le cercle des assujettis,
+        l'assiette, le mode de calcul et le barème des taux d'un impôt. Elle
+        est totale si la collectivité fixe tous ces éléments, partielle si elle
+        n'en fixe qu'une partie ; la fiscalité obligatoire ne lui en laisse
+        aucun.
+      synonymes: []
+    ar:
+      terme: السيادة الجبائية
+      definition: >
+        سلطة الجماعة المحلية في ضبط دائرة الخاضعين للأداء ووعائه وطريقة
+        احتسابه وجدول نسبه. وتكون تامّة إذا ضبطت الجماعة كلّ هذه العناصر، وجزئية
+        إذا لم تضبط إلّا بعضها؛ أمّا الجباية الإلزامية فلا تترك لها أيّا منها.
+      synonymes: []
+
+  - id: flexibilite-fiscale
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 68 et 154"}
+    voir_aussi: [souverainete-fiscale, impot-partage]
+    fr:
+      terme: Flexibilité fiscale
+      definition: >
+        Régime dans lequel une collectivité ne décide que du taux ou du
+        coefficient d'un impôt, les autres éléments étant identiques pour toutes
+        les collectivités ; les systèmes de centimes additionnels en relèvent.
+      synonymes: []
+    ar:
+      terme: المرونة الجبائية
+      definition: >
+        نظام لا تقرّر فيه الجماعة المحلية إلّا نسبة الأداء أو معامله، وتكون
+        بقية العناصر واحدة لكلّ الجماعات؛ وتندرج فيه أنظمة الأجزاء الإضافية.
+      synonymes: []
+
+  - id: impot-exclusif
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 153"}
+    voir_aussi: [impot-partage, part-aux-recettes]
+    fr:
+      terme: Impôt exclusif
+      definition: >
+        Impôt dont un seul niveau de gouvernement exploite l'assiette et perçoit
+        l'intégralité du produit.
+      synonymes: []
+    ar:
+      terme: الأداء الحصري
+      definition: >
+        أداء ينفرد مستوى واحد من مستويات الحكم باستغلال وعائه وبقبض كامل
+        محصوله.
+      synonymes: []
+
+  - id: impot-partage
+    acronyme: null
+    statut: provisoire  # AR à confirmer : le CCL 2018 (AR), art. 132, parle des « الأداءات التي تتقاسمها الدولة مع الجماعات المحلية »
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 153-154"}
+    voir_aussi: [impot-exclusif, part-aux-recettes, flexibilite-fiscale]
+    fr:
+      terme: Impôt partagé
+      definition: >
+        Impôt dont plusieurs échelons de gouvernement exploitent la même
+        assiette, chacun pouvant, le cas échéant, choisir son taux.
+      synonymes: []
+    ar:
+      terme: الأداء المشترك
+      definition: >
+        أداء تستغلّ عدّة مستويات من الحكم وعاءه نفسه، ويمكن لكلّ منها، عند
+        الاقتضاء، أن يختار نسبته.
+      synonymes: [الأداء المتقاسَم]
+
+  - id: part-aux-recettes
+    acronyme: null
+    statut: provisoire  # AR à confirmer : « مناب الجماعة المحلية من محصول الأداءات », CCL 2018 (AR), art. 132
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 154"}
+    voir_aussi: [impot-partage, perequation-ressources]
+    fr:
+      terme: Part aux recettes
+      definition: >
+        Fraction fixe du produit d'un impôt dont l'échelon supérieur fixe
+        l'assiette et le taux et qu'il encaisse, attribuée aux collectivités ;
+        elle se répartit entre elles selon l'origine du produit ou selon une clé
+        de répartition, qui peut viser à réduire les écarts de potentiel fiscal.
+      synonymes: [Partage de l'impôt]
+    ar:
+      terme: المناب من محصول الأداءات
+      definition: >
+        جزء قارّ من محصول أداء يضبط المستوى الأعلى وعاءه ونسبته ويستخلصه، يُسنَد
+        إلى الجماعات المحلية؛ ويُوزَّع بينها حسب مصدر المحصول أو حسب مفتاح توزيع
+        قد يرمي إلى الحدّ من الفوارق في الطاقة الجبائية.
+      synonymes: []
+
+  - id: transfert-financier
+    acronyme: null
+    statut: provisoire  # AR : « تحويلات », CCL 2018 (AR), art. 52 et 150
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 195-198"}
+    voir_aussi: [subvention-globale, subvention-specifique, perequation-financiere, desequilibre-vertical]
+    fr:
+      terme: Transfert financier
+      definition: >
+        Ressource versée par un niveau de gouvernement à un autre. Selon leur
+        objectif, les transferts financent les tâches déléguées, incitent,
+        corrigent les effets de débordement ou assurent la péréquation.
+      synonymes: [Transfert]
+    ar:
+      terme: التحويلات المالية
+      definition: >
+        موارد يدفعها مستوى من مستويات الحكم إلى مستوى آخر. وهي، حسب الغاية منها،
+        تموّل المهامّ المفوَّضة، أو تحفّز، أو تصلح آثار التجاوز، أو تحقّق التعديل.
+      synonymes: [التحويلات]
+
+  - id: subvention-globale
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 201"}
+    voir_aussi: [subvention-specifique, transfert-financier]
+    fr:
+      terme: Subvention globale
+      definition: >
+        Transfert dont le montant est à la libre disposition de la collectivité
+        qui le reçoit.
+      synonymes: [Dotation globale]
+    ar:
+      terme: المنحة الشاملة
+      definition: >
+        تحويل يكون مبلغه على ذمّة الجماعة التي تتلقّاه تتصرّف فيه بحرية.
+      synonymes: []
+
+  - id: subvention-specifique
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 201-202"}
+    voir_aussi: [subvention-globale, transfert-financier]
+    fr:
+      terme: Subvention spécifique
+      definition: >
+        Transfert affecté à une tâche ou à une dépense désignée par la
+        collectivité qui le verse.
+      synonymes: [Subvention affectée]
+    ar:
+      terme: المنحة الخصوصية
+      definition: >
+        تحويل مخصَّص لمهمّة أو لنفقة تعيّنها الجماعة التي تدفعه.
+      synonymes: [المنحة المخصَّصة]
+
+  - id: subvention-conditionnelle
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 202"}
+    voir_aussi: [subvention-forfaitaire]
+    fr:
+      terme: Subvention conditionnelle
+      definition: >
+        Transfert dont le montant varie avec la dépense subventionnée, ou avec
+        la part que la collectivité bénéficiaire est prête à y consacrer.
+      synonymes: [Subvention proportionnelle]
+    ar:
+      terme: المنحة المشروطة
+      definition: >
+        تحويل يتغيّر مبلغه بتغيّر النفقة المدعومة، أو بتغيّر الجزء الذي تكون
+        الجماعة المنتفعة مستعدّة لتخصيصه لها.
+      synonymes: [المنحة النسبية]
+
+  - id: subvention-forfaitaire
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 202"}
+    voir_aussi: [subvention-conditionnelle]
+    fr:
+      terme: Subvention forfaitaire
+      definition: >
+        Transfert d'un montant fixe, indépendant de la participation de la
+        collectivité bénéficiaire.
+      synonymes: [Subvention non conditionnelle]
+    ar:
+      terme: المنحة الجزافية
+      definition: >
+        تحويل بمبلغ قارّ لا يرتبط بمساهمة الجماعة المنتفعة.
+      synonymes: []
+
+  - id: subvention-rationnee
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 203"}
+    voir_aussi: [subvention-conditionnelle]
+    fr:
+      terme: Subvention rationnée
+      definition: >
+        Transfert puisé dans une enveloppe limitée, dit à guichet fermé, ce qui
+        oblige à fixer des critères de sélection des demandes. La subvention non
+        rationnée, à guichet ouvert, est due dès que ses conditions sont
+        remplies, quelle que soit la situation financière de celui qui la verse.
+      synonymes: [Subvention à guichet fermé]
+    ar:
+      terme: المنحة المحدودة
+      definition: >
+        تحويل يُصرَف من اعتماد محدود، ويقتضي لذلك ضبط مقاييس لانتقاء المطالب.
+        أمّا المنحة غير المحدودة فتُستحَقّ بمجرّد توفّر شروطها، مهما كانت الوضعية
+        المالية للجهة التي تدفعها.
+      synonymes: []
+
+  - id: perequation-financiere
+    acronyme: null
+    statut: provisoire  # AR à confirmer : le CCL 2018 (AR), art. 38-39, emploie « التعديل » et « التسوية » ; la mise en regard avec « péréquation » n'est pas attestée
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 20-21 et 252"}
+    voir_aussi: [perequation-ressources, perequation-besoins, potentiel-fiscal, transfert-financier]
+    fr:
+      terme: Péréquation financière
+      definition: >
+        Transfert qui compense les disparités entre collectivités échappant à
+        leur contrôle — d'assiette fiscale, de besoins ou de coûts —, en
+        application du principe de solidarité. Elle est verticale lorsque le
+        fonds est doté par le seul gouvernement central, horizontale lorsque les
+        collectivités au potentiel fiscal supérieur à la moyenne y contribuent.
+      synonymes: [Péréquation entre collectivités]
+    ar:
+      terme: التعديل المالي
+      definition: >
+        تحويل يعوّض الفوارق بين الجماعات المحلية التي تخرج عن سيطرتها — في
+        الوعاء الجبائي أو الحاجيات أو الكلفة —، تطبيقا لمبدأ التضامن. ويكون
+        عموديا إذا موّلت الحكومة المركزية وحدها الصندوق، وأفقيا إذا ساهمت فيه
+        الجماعات التي تفوق طاقتها الجبائية المعدّل.
+      synonymes: [التعديل]
+
+  - id: perequation-ressources
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 201 et 252"}
+    voir_aussi: [perequation-financiere, potentiel-fiscal, perequation-besoins]
+    fr:
+      terme: Péréquation des ressources
+      definition: >
+        Péréquation qui réduit les écarts de potentiel fiscal, en donnant
+        davantage aux collectivités dont la base d'imposition est inférieure à
+        la moyenne.
+      synonymes: []
+    ar:
+      terme: تعديل الموارد
+      definition: >
+        تعديل يحدّ من الفوارق في الطاقة الجبائية، بمنح قسط أوفر للجماعات التي
+        يقلّ وعاؤها الجبائي عن المعدّل.
+      synonymes: []
+
+  - id: perequation-besoins
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 201 et 252"}
+    voir_aussi: [perequation-financiere, perequation-ressources]
+    fr:
+      terme: Péréquation des besoins
+      definition: >
+        Péréquation qui compense les écarts de besoins ou de coûts par rapport à
+        la norme, selon des critères démographiques, géographiques ou
+        topographiques liés à la dépense.
+      synonymes: [Péréquation des charges, Péréquation des coûts]
+    ar:
+      terme: تعديل الحاجيات
+      definition: >
+        تعديل يعوّض الفوارق في الحاجيات أو في الكلفة مقارنة بالمعيار، حسب مقاييس
+        ديمغرافية أو جغرافية أو طبوغرافية مرتبطة بالنفقة.
+      synonymes: [تعديل الأعباء]
+
+  - id: taux-autonomie-financiere
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 68"}
+    voir_aussi: [autonomie-financiere, ressources-propres]
+    fr:
+      terme: Taux d'autonomie financière
+      definition: >
+        Part des recettes propres d'une collectivité dans le total des
+        ressources dont elle peut disposer, hors emprunt.
+      synonymes: []
+    ar:
+      terme: نسبة الاستقلالية المالية
+      definition: >
+        حصّة الموارد الذاتية للجماعة المحلية من مجموع الموارد التي تتصرّف فيها،
+        باستثناء الاقتراض.
+      synonymes: []
+
+  - id: potentiel-fiscal
+    acronyme: null
+    statut: provisoire  # AR : الطاقة الجبائية, CCL 2018 (AR), art. 150 (critère de répartition)
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 252"}
+    voir_aussi: [effort-fiscal, perequation-ressources]
+    fr:
+      terme: Potentiel fiscal
+      definition: >
+        Produit fiscal qu'une collectivité collecterait si elle appliquait à ses
+        bases d'imposition le taux moyen national.
+      synonymes: [Richesse fiscale, Capacité fiscale]
+    ar:
+      terme: الطاقة الجبائية
+      definition: >
+        المحصول الجبائي الذي تستخلصه جماعة محلية لو طبّقت على أوعيتها الجبائية
+        النسبة المتوسّطة الوطنية.
+      synonymes: []
+
+  - id: effort-fiscal
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 251-252"}
+    voir_aussi: [potentiel-fiscal]
+    fr:
+      terme: Effort fiscal
+      definition: >
+        Taux qu'une collectivité applique à ses propres bases d'imposition ; le
+        taux moyen national est l'effort fiscal moyen. Un produit fiscal élevé
+        n'est pas nécessairement le signe d'un effort élevé.
+      synonymes: []
+    ar:
+      terme: المجهود الجبائي
+      definition: >
+        النسبة التي تطبّقها جماعة محلية على أوعيتها الجبائية؛ والنسبة المتوسّطة
+        الوطنية هي المجهود الجبائي المتوسّط. ولا يدلّ ارتفاع المحصول الجبائي
+        بالضرورة على مجهود مرتفع.
+      synonymes: []
+
+  - id: taux-de-facturation
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 79"}
+    voir_aussi: [taux-de-recouvrement, potentiel-fiscal]
+    fr:
+      terme: Taux de facturation
+      definition: >
+        Rapport entre le montant effectivement facturé au titre d'un impôt et le
+        produit que rapporterait sa base exploitée de manière efficace.
+      synonymes: []
+    ar:
+      terme: نسبة الإصدار
+      definition: >
+        النسبة بين المبلغ المُصدَر فعلا بعنوان أداء ما والمحصول الذي يدرّه وعاؤه
+        لو استُغلّ استغلالا ناجعا.
+      synonymes: []
+
+  - id: taux-de-recouvrement
+    acronyme: null
+    statut: provisoire  # AR : « الاستخلاص », CCL 2018 (AR), passim ; « نسبة الاستخلاص » non attesté
+    references: []
+    source_definition: {ref: dafflon-gilbert-2018, locator: "p. 79"}
+    voir_aussi: [taux-de-facturation]
+    fr:
+      terme: Taux de recouvrement
+      definition: >
+        Rapport entre le montant effectivement encaissé au titre d'un impôt et
+        le montant facturé.
+      synonymes: []
+    ar:
+      terme: نسبة الاستخلاص
+      definition: >
+        النسبة بين المبلغ المستخلَص فعلا بعنوان أداء ما والمبلغ المُصدَر.
+      synonymes: []
+
+  - id: code-fiscalite-locale
+    acronyme: null
+    statut: valide
+    references: [loi97-11]
+    source_definition: {ref: loi97-11, locator: "art. 1-3"}
+    source_traduction: {ref: loi97-11, locator: "art. 1"}
+    voir_aussi: [taxe-immeubles-batis, taxe-terrains-non-batis, taxe-etablissements, taxe-hoteliere]
+    fr:
+      terme: Code de la fiscalité locale
+      definition: >
+        Code promulgué par la loi n° 97-11 du 3 février 1997 et entré en
+        vigueur le 1er janvier 1997, qui régit les droits et redevances perçus
+        au profit des collectivités locales. Il compte huit chapitres, un par
+        prélèvement : taxe sur les immeubles bâtis, taxe sur les terrains non
+        bâtis, taxe sur les établissements à caractère industriel, commercial
+        ou professionnel, taxe hôtelière, taxe sur les spectacles, contribution
+        des propriétaires riverains, droit de licence sur les débits de
+        boissons, et taxes et redevances diverses.
+      synonymes: []
+    ar:
+      terme: مجلة الجباية المحلية
+      definition: >
+        مجلة صدرت بالقانون عدد 11 لسنة 1997 المؤرخ في 3 فيفري 1997 ودخلت حيّز
+        التنفيذ ابتداء من غرّة جانفي 1997، تنظّم المعاليم المستوجبة لفائدة
+        الجماعات المحلية. وتتضمّن ثمانية أبواب، باب لكلّ معلوم: المعلوم على
+        العقارات المبنية، والمعلوم على الأراضي غير المبنية، والمعلوم على
+        المؤسسات ذات الصبغة الصناعية أو التجارية أو المهنية، والمعلوم على النزل،
+        والمعلوم على العروض، ومساهمة المالكين الأجوار، ومعلوم الإجازة الموظف على
+        محلات بيع المشروبات، ومعاليم مختلفة.
+      synonymes: []
+
+  - id: taxe-immeubles-batis
+    acronyme: TIB
+    statut: valide
+    references: [loi97-11, decret2017-397]
+    source_definition: {ref: loi97-11, locator: "art. 1-5"}
+    source_traduction: {ref: loi97-11, locator: "art. 1"}
+    voir_aussi: [prix-reference-m2, taxe-terrains-non-batis, code-fiscalite-locale]
+    fr:
+      terme: Taxe sur les immeubles bâtis
+      definition: >
+        Taxe annuelle, due au 1er janvier par le propriétaire d'un immeuble bâti
+        situé dans une zone relevant d'une collectivité locale, sauf si
+        l'immeuble est affecté à une activité soumise à la taxe sur les
+        établissements ou à la taxe hôtelière. Son assiette est égale à 2 % du
+        prix de référence du mètre carré couvert multiplié par la superficie
+        couverte ; son taux, de 8 à 14 %, croît avec le nombre de services dont
+        bénéficie l'immeuble.
+      synonymes: []
+    ar:
+      terme: المعلوم على العقارات المبنية
+      definition: >
+        معلوم سنوي يُستوجب في غرّة جانفي على مالك العقار المبني الكائن بمنطقة
+        راجعة بالنظر إلى جماعة محلية، ما لم يكن العقار مخصّصا لنشاط خاضع للمعلوم
+        على المؤسسات أو للمعلوم على النزل. وتساوي قاعدته 2 بالمائة من الثمن
+        المرجعي للمتر المربع المبني مضروبا في المساحة المغطاة، وتتراوح نسبته بين
+        8 و14 بالمائة حسب عدد الخدمات التي ينتفع بها العقار.
+      synonymes: []
+
+  - id: taxe-terrains-non-batis
+    acronyme: TNB
+    statut: valide
+    references: [loi97-11, decret2017-396]
+    source_definition: {ref: loi97-11, locator: "art. 30-33"}
+    source_traduction: {ref: loi97-11, locator: "art. 30"}
+    voir_aussi: [taxe-immeubles-batis, code-fiscalite-locale]
+    fr:
+      terme: Taxe sur les terrains non bâtis
+      definition: >
+        Taxe annuelle due par le propriétaire d'un terrain non bâti situé dans
+        une zone relevant d'une collectivité locale, au taux de 0,3 % de la
+        valeur vénale réelle du terrain ou, à défaut, selon un tarif au mètre
+        carré fixé par décret pour chaque zone du plan d'aménagement urbain,
+        selon sa densité.
+      synonymes: []
+    ar:
+      terme: المعلوم على الأراضي غير المبنية
+      definition: >
+        معلوم سنوي يُستوجب على مالك الأرض غير المبنية الكائنة بمنطقة راجعة
+        بالنظر إلى جماعة محلية، بنسبة 0,3 بالمائة من القيمة التجارية الحقيقية
+        للأرض، أو، عند تعذّر ذلك، حسب معلوم بالمتر المربع يُضبط بأمر لكلّ منطقة
+        من مناطق مثال التهيئة العمرانية حسب كثافتها العمرانية.
+      synonymes: []
+
+  - id: taxe-etablissements
+    acronyme: TCL
+    statut: valide
+    references: [loi97-11, decret2017-395]
+    source_definition: {ref: loi97-11, locator: "art. 35-38"}
+    source_traduction: {ref: loi97-11, locator: "art. 35"}
+    voir_aussi: [taxe-hoteliere, taxe-immeubles-batis, code-fiscalite-locale]
+    fr:
+      terme: Taxe sur les établissements à caractère industriel, commercial ou professionnel
+      definition: >
+        Taxe due au profit des collectivités locales par les personnes soumises
+        à l'impôt sur le revenu au titre des bénéfices industriels et commerciaux
+        ou des bénéfices non commerciaux et par les personnes morales soumises à
+        l'impôt sur les sociétés, même exonérées de ces impôts. Assise à
+        l'origine sur le chiffre d'affaires brut local, au taux de 0,2 %, elle
+        ne peut être inférieure à un minimum calculé sur la superficie couverte
+        des locaux exploités.
+      synonymes: [Taxe sur les établissements]
+    ar:
+      terme: المعلوم على المؤسسات ذات الصبغة الصناعية أو التجارية أو المهنية
+      definition: >
+        معلوم يُستوجب لفائدة الجماعات المحلية على الأشخاص الخاضعين للضريبة على
+        الدخل بعنوان الأرباح الصناعية والتجارية أو الأرباح غير التجارية وعلى
+        الأشخاص المعنويين الخاضعين للضريبة على الشركات، ولو كانوا معفيين منهما.
+        ويُوظَّف في الأصل على رقم المعاملات المحلي الخام بنسبة 0,2 بالمائة، ولا
+        يمكن أن يقلّ عن حدّ أدنى يُحتسب على أساس المساحة المغطاة للمحلات
+        المستغلّة.
+      synonymes: []
+
+  - id: taxe-hoteliere
+    acronyme: null
+    statut: valide
+    references: [loi97-11]
+    source_definition: {ref: loi97-11, locator: "art. 41-43"}
+    source_traduction: {ref: loi97-11, locator: "art. 41"}
+    voir_aussi: [taxe-etablissements, code-fiscalite-locale]
+    fr:
+      terme: Taxe hôtelière
+      definition: >
+        Taxe due au profit des collectivités locales par les exploitants des
+        établissements touristiques, au taux de 2 % de leur chiffre d'affaires
+        brut global. Ces établissements sont exonérés de la taxe sur les
+        établissements à caractère industriel, commercial ou professionnel et
+        de la taxe sur les immeubles bâtis.
+      synonymes: []
+    ar:
+      terme: المعلوم على النزل
+      definition: >
+        معلوم يُستوجب لفائدة الجماعات المحلية على مستغلّي المؤسسات السياحية،
+        بنسبة 2 بالمائة من رقم معاملاتهم الجملي الخام. وتُعفى هذه المؤسسات من
+        المعلوم على المؤسسات ذات الصبغة الصناعية أو التجارية أو المهنية ومن
+        المعلوم على العقارات المبنية.
+      synonymes: []
+
+  - id: prix-reference-m2
+    acronyme: null
+    statut: valide
+    references: [loi97-11, decret97-431, decret2007-1185, decret2017-397]
+    source_definition: {ref: loi97-11, locator: "art. 4"}
+    source_traduction: {ref: loi97-11, locator: "art. 4"}
+    voir_aussi: [taxe-immeubles-batis]
+    fr:
+      terme: Prix de référence du mètre carré couvert
+      definition: >
+        Prix au mètre carré de superficie couverte sur lequel est calculée
+        l'assiette de la taxe sur les immeubles bâtis. Un décret en fixe, pour
+        chacune des quatre catégories de superficie couverte, un minimum et un
+        maximum ; dans ces limites, la collectivité locale le fixe par arrêté
+        motivé, selon les services rendus.
+      synonymes: []
+    ar:
+      terme: الثمن المرجعي للمتر المربع المبني
+      definition: >
+        ثمن للمتر المربع من المساحة المغطاة تُحتسب على أساسه قاعدة المعلوم على
+        العقارات المبنية. ويضبط أمر حدّه الأدنى وحدّه الأقصى لكلّ صنف من أصناف
+        المساحة المغطاة الأربعة، وتضبطه الجماعة المحلية في حدودهما بقرار معلّل
+        حسب الخدمات المسداة.
+      synonymes: []
+
+  - id: contribution-fnah
+    acronyme: null
+    statut: provisoire  # FR : intitulé repris de la note documentaire (LF 2005, art. 13), à relire sur pièce ; AR : LF 2019, art. 72 ; LF 2024, art. 59
+    references: [lf-2005, loi2018-56-lf2019]
+    source_definition: {ref: lf-2005, locator: "art. 13"}
+    source_traduction: {ref: loi2018-56-lf2019, locator: "art. 72"}
+    voir_aussi: [taxe-immeubles-batis]
+    fr:
+      terme: Contribution au profit du Fonds national d'amélioration de l'habitat
+      definition: >
+        Contribution due par les redevables de la taxe sur les immeubles bâtis
+        pour les immeubles d'habitation, égale à 4 % de l'assiette de cette
+        taxe et recouvrée selon ses règles, au profit du Fonds national
+        d'amélioration de l'habitat, fonds spécial du Trésor.
+      synonymes: []
+    ar:
+      terme: المساهمة لفائدة الصندوق الوطني لتحسين السكن
+      definition: >
+        مساهمة يدفعها الخاضعون للمعلوم على العقارات المبنية بعنوان العقارات
+        المعدّة للسكنى، تساوي 4 بالمائة من قاعدة هذا المعلوم وتُستخلص حسب
+        قواعده، لفائدة الصندوق الوطني لتحسين السكن، وهو صندوق خاص للخزينة.
+      synonymes: []
+
+  - id: fonds-commun-collectivites-locales
+    acronyme: FCCL
+    statut: valide
+    references: [loi75-36, lf-2007, lf-2018]
+    source_definition: {ref: loi75-36, locator: "art. 1-3"}
+    source_traduction: {ref: loi75-36, locator: "art. 1"}
+    voir_aussi: [reserve-fonds-commun, cpscl, transfert-financier, perequation-financiere]
+    fr:
+      terme: Fonds commun des collectivités locales
+      definition: >
+        Fonds spécial du Trésor institué par la loi n° 75-36 du 14 mai 1975, à
+        compter du 1er janvier 1976, qui répartit entre les conseils de
+        gouvernorat, puis conseils régionaux, et les communes une dotation
+        annuelle globale, selon des critères fixés par la loi ; une part en est
+        mise en réserve. Alimenté d'abord par des parts d'impôts d'État, puis à
+        partir de 1987 par une subvention du budget de l'État, il est supprimé
+        par la loi de finances pour 2018.
+      synonymes: []
+    ar:
+      terme: المال المشترك للجماعات المحلية
+      definition: >
+        مال خاص بالخزينة أحدثه القانون عدد 36 لسنة 1975 المؤرخ في 14 ماي 1975
+        بداية من غرة جانفي 1976، يوزّع على مجالس الولايات ثمّ المجالس الجهوية
+        وعلى البلديات اعتمادا سنويا جمليا وفق مقاييس يضبطها القانون، ويُرصد جزء
+        منه مدّخرا. موّل في البداية بمناب من أداءات الدولة، ثمّ بداية من سنة
+        1987 بمنحة من ميزانية الدولة، وحُذف بقانون المالية لسنة 2018.
+      synonymes: []
+
+  - id: reserve-fonds-commun
+    acronyme: null
+    statut: valide
+    references: [loi75-36, loi91-98-lf1992, lf-2007, lf-2014]
+    source_definition: {ref: loi75-36, locator: "art. 3"}
+    source_traduction: {ref: loi75-36, locator: "art. 3"}
+    voir_aussi: [fonds-commun-collectivites-locales, cpscl]
+    fr:
+      terme: Réserve du fonds commun
+      definition: >
+        Part des ressources du fonds commun des collectivités locales qui n'est
+        pas répartie selon les critères généraux, appelée « solde » par la loi
+        de 1975 : 25 % jusqu'en 2006, puis 18 % à partir de 2007. Ses parts
+        étaient fixées par la loi jusqu'en 1991, puis attribuées par décret
+        entre la commune de Tunis, les communes sièges de gouvernorat, la caisse
+        de prêts et de soutien et d'autres bénéficiaires.
+      synonymes: [Solde du fonds commun]
+    ar:
+      terme: مدّخر المال المشترك
+      definition: >
+        جزء من موارد المال المشترك للجماعات المحلية لا يوزّع حسب المقاييس
+        العامّة: 25 بالمائة إلى سنة 2006، ثمّ 18 بالمائة بداية من سنة 2007.
+        ضبط القانون أقساطه إلى سنة 1991، ثمّ صار يُسند بأمر بين بلدية تونس
+        والبلديات مراكز الولايات وصندوق القروض ومساعدة الجماعات المحلية وغيرها.
+      synonymes: []
+
+  - id: cpscl
+    acronyme: CPSCL
+    statut: valide
+    references: [loi75-37, cpscl-etats-financiers]
+    source_definition: {ref: loi75-37, locator: "art. 1-4"}
+    source_traduction: {ref: lf-2007, locator: "art. 11"}
+    voir_aussi: [fonds-commun-collectivites-locales, emprunt]
+    fr:
+      terme: Caisse des prêts et de soutien des collectivités locales
+      definition: >
+        Caisse dotée de la personnalité civile et de l'autonomie financière,
+        issue en 1976 de la transformation de la caisse des prêts aux communes
+        de 1902 par la loi n° 75-37 du 14 mai 1975. Elle consent aux
+        collectivités locales des prêts d'investissement, des subventions et
+        des bonifications d'intérêts, sur une part du fonds commun, les
+        remboursements de ses prêts et ses emprunts.
+      synonymes: []
+    ar:
+      terme: صندوق القروض ومساعدة الجماعات المحلية
+      definition: >
+        صندوق يتمتّع بالشخصية المدنية والاستقلال المالي، نشأ سنة 1976 عن تحويل
+        صندوق القروض للبلديات المحدث سنة 1902 بمقتضى القانون عدد 37 لسنة 1975
+        المؤرخ في 14 ماي 1975. يسند إلى الجماعات المحلية قروض استثمار ومنحا
+        وتخفيضات في الفوائض، من مناب من المال المشترك ومن استخلاص قروضه
+        ومن اقتراضاته.
+
+  - id: competences-propres
+    acronyme: null
+    statut: provisoire  # AR : الصلاحيات الذاتية, CCL 2018 (AR), art. 13-14 ; FR : traduction citée par Hammami, Dafflon et Gilbert (2021, p. 26-27), non officielle
+    references: [hammami-dafflon-gilbert-2021]
+    source_definition: {ref: loi-org-2018-29-ccl, locator: "art. 13-14"}
+    voir_aussi: [competences-partagees, competences-transferees, devolution-competences]
+    fr:
+      terme: Compétences propres
+      definition: >
+        Dans le code des collectivités locales de 2018, compétences que la
+        collectivité exerce seule et de façon exclusive, sous réserve des cas
+        prévus par le code.
+      synonymes: [Attributions propres]
+    ar:
+      terme: الصلاحيات الذاتية
+      definition: >
+        في مجلة الجماعات المحلية لسنة 2018، الصلاحيات التي تنفرد الجماعة
+        المحلية بمباشرتها بصفة حصرية، مع مراعاة الحالات التي تنص عليها المجلة.
+      synonymes: []
+
+  - id: competences-partagees
+    acronyme: null
+    statut: provisoire  # AR : الصلاحيات المشتركة, CCL 2018 (AR), art. 13 ; FR : traduction citée par Hammami, Dafflon et Gilbert (2021)
+    references: [hammami-dafflon-gilbert-2021]
+    source_definition: {ref: loi-org-2018-29-ccl, locator: "art. 13 et 15"}
+    voir_aussi: [competences-propres, competences-transferees, subsidiarite]
+    fr:
+      terme: Compétences partagées
+      definition: >
+        Dans le code des collectivités locales de 2018, compétences que la
+        collectivité exerce avec l'autorité centrale, en coordination et en
+        coopération avec elle, selon des conditions renvoyées à une loi.
+      synonymes: []
+    ar:
+      terme: الصلاحيات المشتركة
+      definition: >
+        في مجلة الجماعات المحلية لسنة 2018، الصلاحيات التي تباشرها الجماعة
+        المحلية مع السلطة المركزية بالتنسيق والتعاون معها، وفق شروط يضبطها
+        القانون.
+      synonymes: []
+
+  - id: competences-transferees
+    acronyme: null
+    statut: provisoire  # AR : الصلاحيات المنقولة, CCL 2018 (AR), art. 13 et 16 ; la Constitution de 2014 (art. 134) dit « déléguées » dans la traduction reproduite par Dafflon et Gilbert
+    references: [hammami-dafflon-gilbert-2021]
+    source_definition: {ref: loi-org-2018-29-ccl, locator: "art. 13 et 16"}
+    voir_aussi: [competences-propres, competences-partagees, delegation-competences]
+    fr:
+      terme: Compétences transférées
+      definition: >
+        Dans le code des collectivités locales de 2018, compétences que
+        l'autorité centrale transfère à la collectivité par la loi, avec les
+        crédits et les moyens proportionnés aux charges qu'elles entraînent.
+      synonymes: [Compétences déléguées]
+    ar:
+      terme: الصلاحيات المنقولة
+      definition: >
+        في مجلة الجماعات المحلية لسنة 2018، الصلاحيات التي تنقلها السلطة
+        المركزية إلى الجماعة المحلية بمقتضى القانون، مع الاعتمادات والوسائل
+        الملائمة للأعباء المترتبة عنها.
+      synonymes: []
+
+  - id: pouvoir-reglementaire-local
+    acronyme: null
+    statut: provisoire  # AR : السلطة الترتيبية, CCL 2018 (AR), art. 25-28 ; FR : notre traduction
+    references: []
+    source_definition: {ref: loi-org-2018-29-ccl, locator: "art. 25-28"}
+    voir_aussi: [competences-propres]
+    fr:
+      terme: Pouvoir réglementaire local
+      definition: >
+        Pouvoir du conseil d'une collectivité locale de prendre des règlements
+        dans les limites de son territoire et de ses compétences ; il peut en
+        déléguer une part à son président.
+      synonymes: []
+    ar:
+      terme: السلطة الترتيبية
+      definition: >
+        سلطة مجلس الجماعة المحلية في اتخاذ التراتيب في حدود ترابها
+        وصلاحياتها، وله أن يفوّض جزءا منها إلى رئيسه.
+      synonymes: []
+
+  - id: district
+    acronyme: null
+    statut: provisoire  # FR et AR : loi organique n° 2025-4, art. 1 (« conseils de districts », « مجالس الأقاليم ») ; CCL 2018 (AR), art. 2 et 356 (abrogé le 18 mars 2025) ; regroupement de gouvernorats : décret n° 2023-589, art. 1
+    references: [loi-org-2018-29-ccl, decret2023-589]
+    source_definition: {ref: decret2023-589, locator: "art. 1"}
+    source_traduction: {ref: loi-org2025-4, locator: "art. 1"}
+    voir_aussi: [collectivite-locale, conseil-local]
+    fr:
+      terme: District
+      definition: >
+        Collectivité locale regroupant plusieurs gouvernorats, chargée de
+        l'intégration et de la complémentarité du développement entre les zones
+        qui la composent ; son conseil est élu par les membres d'autres conseils.
+      synonymes: []
+    ar:
+      terme: الإقليم
+      definition: >
+        جماعة محلية تجمع عدة ولايات، تتولى تحقيق الاندماج والتكامل في
+        التنمية بين المناطق المكونة لها، وينتخب مجلسها أعضاء مجالس أخرى.
+      synonymes: []
+
+  - id: conseil-local
+    acronyme: null
+    statut: valide  # FR et AR : loi organique n° 2025-4, art. 1 et 7 (« conseil local », « المجلس المحلي »)
+    references: [decretloi2023-10]
+    source_definition: {ref: loi-org2025-4, locator: "art. 1 et 7"}
+    source_traduction: {ref: loi-org2025-4, locator: "art. 1"}
+    voir_aussi: [district, collectivite-locale]
+    fr:
+      terme: Conseil local
+      definition: >
+        Conseil élu au niveau de la délégation, considéré comme une collectivité
+        locale, qui délibère sur les projets de plans de développement locaux.
+      synonymes: []
+    ar:
+      terme: المجلس المحلي
+      definition: >
+        مجلس منتخب على مستوى المعتمدية، يعتبر جماعة محلية، ويتداول في مشاريع
+        مخططات التنمية المحلية.
+      synonymes: []
+
+  - id: conseil-superieur-collectivites-locales
+    acronyme: null
+    statut: provisoire  # AR : المجلس الأعلى للجماعات المحلية, CCL 2018 (AR), art. 47-60 ; FR : notre traduction (« Haut Conseil » chez Dafflon et Gilbert)
+    references: []
+    source_definition: {ref: loi-org-2018-29-ccl, locator: "art. 47-60"}
+    voir_aussi: [haute-instance-finances-locales]
+    fr:
+      terme: Conseil supérieur des collectivités locales
+      definition: >
+        Instance nationale formée de présidents de collectivités, consultée
+        obligatoirement sur les projets de loi qui intéressent les collectivités
+        locales, notamment leurs finances.
+      synonymes: [Haut Conseil des collectivités locales]
+    ar:
+      terme: المجلس الأعلى للجماعات المحلية
+      definition: >
+        هيئة وطنية تتكوّن من رؤساء جماعات محلية، يُستشار وجوبا في مشاريع
+        القوانين المتعلقة بالجماعات المحلية، ولا سيما بماليتها.
+      synonymes: []
+
+  - id: haute-instance-finances-locales
+    acronyme: null
+    statut: provisoire  # AR : الهيئة العليا للمالية المحلية, CCL 2018 (AR), art. 61-65 ; FR : notre traduction
+    references: []
+    source_definition: {ref: loi-org-2018-29-ccl, locator: "art. 61-65"}
+    voir_aussi: [conseil-superieur-collectivites-locales]
+    fr:
+      terme: Haute instance des finances locales
+      definition: >
+        Instance placée sous la supervision du Conseil supérieur des
+        collectivités locales, qui propose les ressources transférables aux
+        collectivités et leurs critères de répartition, évalue le coût des
+        transferts de compétences et suit l'endettement local.
+      synonymes: []
+    ar:
+      terme: الهيئة العليا للمالية المحلية
+      definition: >
+        هيئة تعمل تحت إشراف المجلس الأعلى للجماعات المحلية، تقترح الموارد
+        القابلة للتحويل إلى الجماعات المحلية ومقاييس توزيعها، وتقيّم كلفة نقل
+        الصلاحيات وتتابع المديونية المحلية.
+      synonymes: []
+
+  - id: delegation-speciale
+    acronyme: null
+    statut: provisoire  # FR : loi n° 75-33, art. 13 ; AR : النيابة الخصوصية, relevé dans des arrêtés du JORT n° 39 de 2018, non dans la loi
+    references: [decret2011-384]
+    source_definition: {ref: loi75-33, locator: "art. 13"}
+    voir_aussi: [collectivite-locale, tutelle]
+    fr:
+      terme: Délégation spéciale
+      definition: >
+        Organe nommé par décret qui remplit les fonctions d'un conseil
+        municipal dissous ou démissionnaire, ou celles du conseil d'une
+        commune nouvellement créée, jusqu'à l'élection d'un nouveau conseil.
+      synonymes: []
+    ar:
+      terme: النيابة الخصوصية
+      definition: >
+        هيئة تُعيَّن بأمر لتتولى مهام مجلس بلدي منحلّ أو مستقيل، أو مجلس
+        بلدية محدثة، إلى حين انتخاب مجلس جديد.
+      synonymes: []
+
+  - id: depenses-obligatoires
+    acronyme: null
+    statut: provisoire  # FR : loi n° 75-35, art. 10 ; AR : النفقات الإجبارية, CCL 2018 (AR), art. 160 (« وجوبية » à l'art. 174)
+    references: []
+    source_definition: {ref: loi75-35, locator: "art. 10"}
+    voir_aussi: [equilibre-reel, tutelle]
+    fr:
+      terme: Dépenses obligatoires
+      definition: >
+        Dépenses que la loi impose d'inscrire au budget d'une collectivité
+        locale, telles que la rémunération du personnel ou les annuités
+        d'emprunt ; elles peuvent être inscrites d'office.
+      synonymes: []
+    ar:
+      terme: النفقات الإجبارية
+      definition: >
+        نفقات يفرض القانون ترسيمها بميزانية الجماعة المحلية، مثل تأجير
+        الأعوان أو أقساط القروض، ويمكن ترسيمها وجوبا.
+      synonymes: [النفقات الوجوبية]
+
+  - id: equilibre-reel
+    acronyme: null
+    statut: provisoire  # FR : loi n° 75-35, art. 16 ; AR : التوازن الحقيقي للميزانية, CCL 2018 (AR), art. 126
+    references: [dafflon-gilbert-2018]
+    source_definition: {ref: loi75-35, locator: "art. 16"}
+    voir_aussi: [regle-d-or, depenses-obligatoires]
+    fr:
+      terme: Équilibre réel
+      definition: >
+        Exigence que les autorisations de dépenses et les prévisions de
+        recettes du budget local soient présentées et votées en équilibre,
+        compte tenu des engagements antérieurs ; la loi ne la définit pas
+        davantage.
+      synonymes: []
+    ar:
+      terme: التوازن الحقيقي للميزانية
+      definition: >
+        وجوب تقديم ترخيصات النفقات وتقديرات الموارد بميزانية الجماعة المحلية
+        والمصادقة عليها في توازن، مع اعتبار التعهدات السابقة.
+      synonymes: []
+
+  - id: ordonnateur
+    acronyme: null
+    statut: valide  # FR et AR : loi organique n° 2025-4, art. 5 (« ordonnateur », « آمر قبض وصرف »)
+    references: [loi-org2007-65]
+    source_definition: {ref: loi-org2025-4, locator: "art. 5"}
+    source_traduction: {ref: loi-org2025-4, locator: "art. 5"}
+    voir_aussi: [comptable-public]
+    fr:
+      terme: Ordonnateur
+      definition: >
+        Autorité qui ordonne les recettes et les dépenses d'un budget ; pour une
+        collectivité locale et pour les conseils locaux, régionaux et de
+        districts, son président.
+      synonymes: []
+    ar:
+      terme: آمر قبض وصرف
+      definition: >
+        السلطة التي تأذن بقبض الموارد وصرف النفقات في ميزانية ما؛ وهي بالنسبة
+        إلى الجماعة المحلية وإلى المجالس المحلية والجهوية ومجالس الأقاليم
+        رئيسها.
+      synonymes: [آمر الصرف]
+
+  - id: comptable-public
+    acronyme: null
+    statut: provisoire  # AR : محاسب الجماعة المحلية, CCL 2018 (AR), art. 129 et 184 ; FR : notre traduction
+    references: []
+    source_definition: {ref: loi-org-2018-29-ccl, locator: "art. 129 et 186"}
+    voir_aussi: [ordonnateur]
+    fr:
+      terme: Comptable public
+      definition: >
+        Agent de l'État chargé seul des encaissements et des paiements d'une
+        collectivité locale ; il contrôle la légalité des dépenses, non leur
+        opportunité.
+      synonymes: [Comptable de la collectivité locale]
+    ar:
+      terme: محاسب الجماعة المحلية
+      definition: >
+        عون عمومي للدولة يتولى وحده عمليات القبض والصرف للجماعة المحلية،
+        ويراقب شرعية النفقات دون ملاءمتها.
+      synonymes: [المحاسب العمومي]
+
+  - id: compte-financier
+    acronyme: null
+    statut: provisoire  # FR : loi n° 75-35, art. 25 ; AR : الحساب المالي, CCL 2018 (AR), art. 195-196
+    references: []
+    source_definition: {ref: loi75-35, locator: "art. 25"}
+    voir_aussi: [comptable-public]
+    fr:
+      terme: Compte financier
+      definition: >
+        Document qui retrace l'exécution du budget d'une collectivité locale
+        à la clôture de l'exercice, arrêté par son conseil.
+      synonymes: []
+    ar:
+      terme: الحساب المالي
+      definition: >
+        وثيقة تبيّن تنفيذ ميزانية الجماعة المحلية عند ختم السنة المالية،
+        ويختمها مجلسها.
+      synonymes: []
+
+  - id: faute-de-gestion
+    acronyme: null
+    statut: provisoire  # FR : loi organique n° 2007-65 (art. 23 bis nouveau de la loi n° 75-35) ; AR : خطأ تصرّف, CCL 2018 (AR), art. 183
+    references: []
+    source_definition: {ref: loi-org2007-65, locator: "art. 1"}
+    voir_aussi: [ordonnateur]
+    fr:
+      terme: Faute de gestion
+      definition: >
+        Manquement d'un ordonnateur aux règles d'exécution du budget local,
+        notamment l'engagement de dépenses au-delà des recettes réalisées ;
+        il engage sa responsabilité.
+      synonymes: []
+    ar:
+      terme: خطأ التصرّف
+      definition: >
+        إخلال آمر الصرف بقواعد تنفيذ ميزانية الجماعة المحلية، ولا سيما
+        الالتزام بنفقات تتجاوز الموارد المحققة، ويترتب عنه قيام مسؤوليته.
+      synonymes: []

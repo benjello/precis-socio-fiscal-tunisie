@@ -1,0 +1,221 @@
+# Les impôts sur l'activité {#sec-fl-activite}
+
+Le [code de la fiscalité locale](#g-code-fiscalite-locale) frappe l'activité économique par deux prélèvements : la [taxe sur les établissements à caractère industriel, commercial ou professionnel](#g-taxe-etablissements), dite ici TCL, et la [taxe hôtelière](#g-taxe-hoteliere). Comme les taxes sur les immeubles, ce sont des impôts au sens du chapitre des notions (@sec-fl-impot-taxe-redevance). Ils en éclairent une autre distinction, entre l'impôt exclusif, l'impôt partagé et la part aux recettes (@sec-fl-impot-partage) : leur produit revient aux collectivités, mais leur base est le chiffre d'affaires, que l'État connaît par ses propres impôts, et ils sont déclarés et recouvrés auprès de ses services. Les collectivités n'ont de pouvoir ni sur leur assiette ni sur leur taux (@sec-fl-autonomie).
+
+Le chapitre suit le même plan que le précédent (@sec-fl-immeubles). Les articles cités sans autre précision sont ceux du code ; les textes sans clause d'effet sont datés du jour où ils deviennent exécutoires [@loi93-64, art. 2]. Pour les notions communes à l'impôt sur le revenu et à l'impôt sur les sociétés, le chapitre renvoie au volume « La fiscalité », aux chapitres de [l'impôt sur le revenu des personnes physiques](../fiscalite/_impot_revenu.html#sec-irpp) et de [l'impôt sur les sociétés](../fiscalite/_impot_societes.html#sec-impot-societes).
+
+## Les origines {#sec-fl-activite-origines}
+
+Les deux impôts existaient avant le code. La loi qui le promulgue abroge la loi n° 75-39 du 14 mai 1975, qui avait institué la taxe sur les établissements au profit des collectivités locales, et la loi n° 75-34 du même jour, qui avait institué la taxe hôtelière au profit des communes et des conseils de gouvernorat [@loi97-11, art. 3 de la loi]. Seul l'intitulé de ces deux lois est connu ici ; leurs règles, et les textes qui les ont modifiées de 1975 à 1996, ne sont pas exposés.
+
+<!-- TODO (documentaliste) : lire les lois n° 75-34 et 75-39 du 14 mai 1975 (JORT n° 34 du 20 mai 1975 selon jort_cache) et leurs modificatifs signalés par jort_cache (décret n° 76-2, lois de finances pour 1976, 1980 et 1992), pour écrire l'histoire de ces deux impôts. -->
+
+## L'institution par le code de 1997 {#sec-fl-activite-code}
+
+### La taxe sur les établissements {#sec-fl-tcl-1997}
+
+**Redevables.** La taxe est due, même en cas d'exonération de l'impôt sur le revenu ou de l'impôt sur les sociétés, par les personnes physiques soumises à l'impôt sur le revenu au titre des bénéfices industriels et commerciaux ou des bénéfices non commerciaux, par les personnes morales soumises à l'impôt sur les sociétés, et par les sociétés de personnes et les associations en participation [@loi97-11, art. 35]. En sont exonérées les personnes que le code de l'impôt sur le revenu et de l'impôt sur les sociétés exonère à ses articles 3 § 6 et 45 § 2, ainsi que les établissements touristiques soumis à la taxe hôtelière ; les régimes spéciaux, légaux ou conventionnels, sont maintenus [@loi97-11, art. 36].
+
+**Assiette et taux.** La taxe est assise sur le chiffre d'affaires brut local, au taux de 0,2 % [@loi97-11, art. 37 et 38 § I]. Elle est assise sur l'impôt sur le revenu ou sur les sociétés, au taux de 25 %, dans trois cas : les contribuables au forfait de l'article 44 § IV du code de l'impôt sur le revenu et de l'impôt sur les sociétés, les établissements dont la marge brute réglementée ne dépasse pas 4 %, et les établissements déficitaires qui justifient d'une comptabilité régulière [@loi97-11, art. 37 et 38 § I].
+
+**Minimum.** La taxe ne peut être inférieure à la taxe sur les immeubles bâtis des locaux exploités, calculée sur 5 % du prix de référence du mètre carré, et non sur 2 %, multipliée par la superficie couverte. Ce minimum s'applique aussi aux établissements sans chiffre d'affaires. Il distingue quatre catégories d'immeubles : à usage administratif ou d'activité commerciale ou non commerciale, construction légère industrielle, béton industriel, et immeubles industriels de plus de 5 000 m². Le montant par mètre carré, dit « taxe par mètre carré de référence », est fixé par décret tous les trois ans [@loi97-11, art. 38 § II]. Dans le cas général, la taxe s'écrit :
+
+$$
+T = \max\left(\tau\,A,\; \mu\,s\right)
+$$
+
+où $T$ est la taxe annuelle, $\tau$ son taux, $A$ le chiffre d'affaires brut local, $\mu$ la taxe par mètre carré de référence, fonction de la catégorie de l'immeuble et du taux de la taxe sur les immeubles bâtis applicable au local, et $s$ la superficie couverte des locaux exploités. Depuis le 1er janvier 1997, $\tau = 0{,}2\,\%$ dans le cas général (@tbl-fl-tcl-taux) ; les valeurs de $\mu$ sont au @tbl-fl-tcl-minimum.
+
+**Maximum et répartition.** Un décret fixe un maximum ; si le minimum le dépasse, c'est le minimum qui est dû [@loi97-11, art. 38 § III]. Les établissements agricoles et de pêche soumis à l'impôt sur les sociétés acquittent une taxe égale à la taxe sur les immeubles bâtis de chacun de leurs locaux [@loi97-11, art. 38 § IV]. Quand l'activité s'exerce dans plusieurs collectivités, la taxe se répartit entre elles selon la superficie couverte de chaque centre ou agence [@loi97-11, art. 38 § V].
+
+**Déclaration, contrôle.** La taxe est déclarée à la recette des finances, avec le siège, le matricule, les filiales et leurs superficies, le chiffre d'affaires brut local et la catégorie d'immeuble, dans les quinze premiers jours du mois suivant pour les personnes physiques et dans les vingt-huit premiers jours pour les personnes morales ; les redevables taxés sur leur impôt la paient avec celui-ci [@loi97-11, art. 39]. Le contrôle et le contentieux suivent les règles du code de l'impôt sur le revenu et de l'impôt sur les sociétés, et, pour le minimum, celles de la taxe sur les immeubles bâtis ; une filiale non déclarée est imposée par la collectivité à la taxe sur les immeubles bâtis, sans restitution [@loi97-11, art. 40].
+
+### La taxe hôtelière {#sec-fl-taxe-hoteliere-1997}
+
+La taxe hôtelière est due par les exploitants des établissements touristiques au sens de la législation en vigueur. Elle est assise sur le chiffre d'affaires brut global, au taux de 2 % [@loi97-11, art. 41-43]. Son recouvrement, son contrôle, son contentieux, ses sanctions et sa prescription suivent les règles de la taxe sur les établissements [@loi97-11, art. 44-45]. Les établissements qui y sont soumis sont exonérés de la taxe sur les établissements [@loi97-11, art. 36] et de la taxe sur les immeubles bâtis [@loi97-11, art. 1].
+
+La loi de finances pour 1997, entrée en vigueur en même temps que le code, affecte la moitié du produit de la taxe hôtelière au fonds spécial du Trésor pour la protection des zones touristiques, en modifiant l'article 39 de la loi de finances pour 1993 [@lf-1997, art. 53].
+
+<!-- TODO (documentaliste) : lire l'art. 39 de la loi n° 92-122 (LF 1993) dans sa rédaction initiale, et les décrets fixant les zones municipales touristiques (décret n° 94-822 et ses compléments), pour dater la part affectée au fonds avant 1997 et le périmètre des zones. -->
+
+### Les autres impôts du code {#sec-fl-activite-autres}
+
+D'autres prélèvements du code frappent une activité : la taxe sur les spectacles, due par les organisateurs de spectacles occasionnels, le droit de licence sur les débits de boissons, et plusieurs des droits perçus dans les marchés. Le code les range parmi ses autres taxes et redevances, aux chapitres V, VII et VIII ; ils sont exposés au chapitre suivant (@sec-fl-taxes-code).
+
+## Les barèmes fixés par décret {#sec-fl-activite-baremes}
+
+### Le minimum : la taxe par mètre carré de référence {#sec-fl-tcl-minimum}
+
+Le décret fixe, pour chaque catégorie d'immeuble, un montant par mètre carré selon le taux de la taxe sur les immeubles bâtis applicable au local. Les montants ont été relevés au 1er janvier 2008, puis au 1er janvier 2017 (@tbl-fl-tcl-minimum).
+
+::: {#tbl-fl-tcl-minimum}
+
+::: {.panel-tabset}
+
+#### Depuis le 1er janvier 2017
+
+| Catégorie d'immeuble | 8 % | 10 % | 12 % | 14 % |
+|---|---|---|---|---|
+| 1 : usage administratif, commercial ou non commercial | 0,900 | 1,125 | 1,345 | 1,570 |
+| 2 : construction légère industrielle | 0,620 | 0,770 | 0,920 | 1,075 |
+| 3 : béton industriel | 0,755 | 0,950 | 1,135 | 1,320 |
+| 4 : industriel de plus de 5 000 m² | 0,990 | 1,240 | 1,485 | 1,735 |
+
+Décret gouvernemental n° 2017-395 du 28 mars 2017 ; effet au 1er janvier 2017, art. 3 [@decret2017-395].
+
+#### Du 1er janvier 2008 au 31 décembre 2016
+
+| Catégorie d'immeuble | 8 % | 10 % | 12 % | 14 % |
+|---|---|---|---|---|
+| 1 : usage administratif, commercial ou non commercial | 0,815 | 1,020 | 1,220 | 1,425 |
+| 2 : construction légère industrielle | 0,560 | 0,700 | 0,835 | 0,975 |
+| 3 : béton industriel | 0,685 | 0,860 | 1,030 | 1,200 |
+| 4 : industriel de plus de 5 000 m² | 0,900 | 1,125 | 1,350 | 1,575 |
+
+Décret n° 2007-1187 du 14 mai 2007 ; effet au 1er janvier 2008, art. 3 [@decret2007-1187].
+
+#### Du 13 mars 1997 au 31 décembre 2007
+
+| Catégorie d'immeuble | 8 % | 10 % | 12 % | 14 % |
+|---|---|---|---|---|
+| 1 : usage administratif, commercial ou non commercial | 0,760 | 0,950 | 1,140 | 1,330 |
+| 2 : construction légère industrielle | 0,520 | 0,650 | 0,780 | 0,910 |
+| 3 : béton industriel | 0,640 | 0,800 | 0,960 | 1,120 |
+| 4 : industriel de plus de 5 000 m² | 0,840 | 1,050 | 1,260 | 1,470 |
+
+Décret n° 97-433 du 3 mars 1997 ; sans clause d'effet, exécutoire le 13 mars 1997 [@decret97-433].
+
+:::
+
+Minimum de la taxe sur les établissements : taxe par mètre carré de référence, en dinars, selon la catégorie d'immeuble et le taux de la taxe sur les immeubles bâtis applicable au local
+
+:::
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré (ot.markdown_un_tableau_en_onglets) quand ces montants seront datés et sourcés dans la base de paramètres. -->
+
+Aucun décret n'est identifié entre celui de 1997 et celui de 2007, ni depuis celui de 2017. Le dernier état connu est celui du 1er janvier 2017.
+
+<!-- RECHERCHE r-cfl-minimum-tcl-apres-2017 : décret fixant la taxe par m² de référence du minimum de la TCL après le décret gouvernemental n° 2017-395 (voir docs/recherches.yml) -->
+
+<!-- RECHERCHE r-cfl-prix-reference-1998-2006 : décret fixant le prix de référence de la TIB, le tarif de la TNB ou le minimum de la TCL entre 1997 et 2007 (voir docs/recherches.yml) -->
+
+### Le maximum, jusqu'à sa suppression {#sec-fl-tcl-maximum}
+
+Le maximum annuel de la taxe a été relevé deux fois avant d'être supprimé au 1er janvier 2012 (@tbl-fl-tcl-maximum).
+
+| Date d'effet | Maximum annuel | Texte |
+|---|---|---|
+| 13 mars 1997 | 50 000 D | [@decret97-435] |
+| 26 juin 2003 | 60 000 D | [@decret2003-1345] ; il abroge le précédent |
+| 1er janvier 2007 | 100 000 D | [@decret2006-3360, art. 2] ; il abroge le précédent |
+| 1er janvier 2012 | supprimé : art. 38 § III abrogé | [@lfc-2012, art. 50] ; il fixe lui-même cette date |
+
+: Maximum annuel de la taxe sur les établissements, de 1997 à sa suppression {#tbl-fl-tcl-maximum}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré quand le maximum sera daté et sourcé dans la base de paramètres. -->
+
+## Les réformes, une à une {#sec-fl-activite-reformes}
+
+Les réformes de la taxe sur les établissements touchent son champ, ses taux, la répartition de son produit entre collectivités et ses obligations déclaratives ; plusieurs lois l'absorbent aussi dans les régimes forfaitaires de l'impôt sur le revenu. Le @tbl-fl-tcl-taux en donne les assiettes et les taux successifs, et le @tbl-fl-activite-textes les reprend texte par texte.
+
+### 2002-2007 : champ, maximum et répartition {#sec-fl-tcl-2002-2007}
+
+Les groupements d'intérêt économique deviennent redevables au 1er janvier 2002 [@loi2001-123-lf2002, art. 65]. Au 1er janvier 2003, le contentieux du minimum renvoie aux articles 10 à 26, 28 et 29 du code, et non plus à l'article 27, qui fixe la prescription [@lf-2003, art. 80]. Au 1er janvier 2005, les personnes non établies et non domiciliées en Tunisie sont exonérées, et la répartition entre collectivités, à défaut de superficie couverte, est renvoyée à des critères fixés par décret [@lf-2005, art. 80 et 81]. Ce décret, exécutoire le 23 janvier 2006, attribue la moitié de la taxe d'une carrière à la collectivité qui l'abrite, répartit 30 % de la taxe à parts égales entre les collectivités où se trouvent des immeubles non bâtis ou non couverts, et, à défaut d'immeubles, répartit la taxe selon le chiffre d'affaires [@decret2006-49]. Le maximum est relevé le 26 juin 2003 puis le 1er janvier 2007 (@tbl-fl-tcl-maximum).
+
+### 2011-2014 : forfaits, taux réduit et fin du maximum {#sec-fl-tcl-2011-2014}
+
+La loi de finances pour 2011 crée un régime forfaitaire de l'impôt sur le revenu dont l'impôt « comprend la taxe sur les établissements » [@lf-2011, art. 32].
+
+La loi de finances complémentaire pour 2012 abroge le maximum, avec effet au 1er janvier 2012 [@lfc-2012, art. 50].
+
+Au 1er janvier 2013, l'assiette sur l'impôt ne vise plus que les forfaitaires de l'article 44 bis du code de l'impôt sur le revenu et de l'impôt sur les sociétés et les établissements en perte ; le cas de la marge réglementée ne dépassant pas 4 % disparaît [@lf-2013, art. 23]. Un taux réduit de 0,1 % s'applique aux établissements qui commercialisent exclusivement, ou pour 80 % au moins, des produits à prix homologués dont la marge brute ne dépasse pas 6 % ; ils peuvent opter, en janvier, pour 25 % de leur impôt [@lf-2013, art. 24]. La même loi affecte au Fonds de coopération entre les collectivités locales le produit de la taxe au-delà de 100 000 dinars par établissement et par an [@lf-2013, art. 14] ; ce mécanisme relève des transferts entre collectivités, objet d'un chapitre à venir.
+
+Au 1er janvier 2014, le mot « local » disparaît de l'assiette : la taxe porte sur le chiffre d'affaires brut. Le taux de 0,1 % s'étend au chiffre d'affaires à l'exportation, à celui des établissements de santé travaillant exclusivement pour des non-résidents et à celui des prestataires de services financiers aux non-résidents [@lf-2014, art. 49]. La taxe est retirée des exonérations accordées par le code d'incitation aux investissements, par la loi n° 2001-94 sur les établissements de santé et par la loi n° 92-81 sur les parcs d'activités économiques [@lf-2014, art. 50].
+
+### 2016-2024 : déclarations, répartition, contributions uniques {#sec-fl-tcl-2016-2024}
+
+Au 1er janvier 2016, la déclaration mentionne aussi la superficie et l'adresse des lots non couverts ou non bâtis, sous peine d'une amende de 1 000 dinars par lot non déclaré [@lf-2016, art. 37] ; au 1er janvier 2024, cette amende suit les règles de la taxe sur les terrains non bâtis [@lf-2024, art. 67].
+
+Au 1er janvier 2021, la répartition entre collectivités se fait à la superficie bâtie ou couverte « nonobstant l'usage destiné » ; à défaut, les critères du décret de 2006 passent dans la loi [@lf-2021, art. 37]. La même loi alimente le Fonds d'appui à la décentralisation, notamment par le produit de la taxe au-delà de 100 000 dinars par établissement [@lf-2021, art. 13].
+
+Deux régimes de contribution unique absorbent la taxe. Depuis le 1er janvier 2019, les petits exploitants à revenu irrégulier qui se déclarent spontanément acquittent une contribution unique qui « comprend » la taxe [@loi2018-56-lf2019, art. 42]. Depuis le 1er janvier 2023, la contribution unique de l'auto-entrepreneur comprend la taxe à raison de 20 % de l'impôt sur le revenu, sans minimum [@lf-2023, art. 52].
+
+Les délais de déclaration sont aménagés : un délai trimestriel, dans les quinze premiers jours du mois qui suit chaque trimestre civil, pour les personnes visées à l'article 62 § III ter du code de l'impôt sur le revenu et de l'impôt sur les sociétés, au 1er janvier 2023 [@lf-2023, art. 57] ; les vingt premiers jours du mois pour les personnes morales qui déclarent par voie électronique, au 1er janvier 2024 [@lf-2024, art. 69].
+
+<!-- TODO (documentaliste) : lire l'art. 7 du décret-loi n° 2020-33 (auto-entrepreneur) dans sa rédaction initiale, pour savoir si la contribution unique comprenait déjà la TCL avant 2023. -->
+
+### Les amnisties {#sec-fl-tcl-amnisties}
+
+Plusieurs lois étendent à la taxe sur les établissements, à la taxe hôtelière et au droit de licence les mesures d'amnistie des impôts d'État : la loi de finances complémentaire pour 2012 [@lfc-2012, art. 15], les lois de finances pour 2019 [@loi2018-56-lf2019, art. 73], pour 2024 [@lf-2024, art. 58] et pour 2025 [@lf-2025, art. 74]. Elles ne modifient pas le code et ne sont pas détaillées ici.
+
+<!-- TODO (documentaliste) : relever l'article de la loi de finances pour 2026 (JORT n° 148 de 2025, édition arabe p. 4249) et les articles de la loi n° 2006-25 et du décret-loi n° 2006-1, qui étendent aussi des amnisties à ces taxes. -->
+
+### La taxe hôtelière {#sec-fl-taxe-hoteliere-reformes}
+
+Aucune modification des articles 41 à 45 du code n'est identifiée ici depuis 1997 : en l'état des textes identifiés, la taxe hôtelière garde son assiette et son taux d'origine.
+
+<!-- RECHERCHE r-cfl-taxe-hoteliere-modificatifs : texte modifiant les art. 41 à 45 du code de la fiscalité locale (voir docs/recherches.yml) -->
+
+
+## Les textes, en un tableau {#sec-fl-activite-textes}
+
+| Date d'effet | Assiette | Taux | Texte |
+|---|---|---|---|
+| 1er janvier 1997 | chiffre d'affaires brut local | 0,2 % | [@loi97-11, art. 38 § I] |
+| 1er janvier 1997 | impôt sur le revenu ou sur les sociétés, pour les forfaitaires, les marges réglementées ≤ 4 % et les déficitaires | 25 % | [@loi97-11, art. 37 et 38 § I] |
+| 1er janvier 1997 | chiffre d'affaires brut global des établissements touristiques (taxe hôtelière) | 2 % | [@loi97-11, art. 42 et 43] |
+| 1er janvier 2013 | chiffre d'affaires des produits à prix homologués à marge ≤ 6 % | 0,1 %, ou 25 % de l'impôt sur option | [@lf-2013, art. 24] |
+| 1er janvier 2013 | impôt, pour les forfaitaires de l'art. 44 bis et les établissements en perte | 25 % | [@lf-2013, art. 23] |
+| 1er janvier 2014 | chiffre d'affaires brut, le mot « local » supprimé | 0,2 % | [@lf-2014, art. 49] |
+| 1er janvier 2014 | chiffre d'affaires à l'exportation, et services de santé ou financiers rendus aux non-résidents | 0,1 % | [@lf-2014, art. 49] |
+| 1er janvier 2023 | impôt sur le revenu de l'auto-entrepreneur, dans la contribution unique | 20 % | [@lf-2023, art. 52] |
+
+: Assiettes et taux de la taxe sur les établissements et de la taxe hôtelière depuis 1997 {#tbl-fl-tcl-taux}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré quand ces taux seront datés et sourcés dans la base de paramètres -->
+
+| Texte | Article | Changement | Date d'effet |
+|---|---|---|---|
+| Loi de finances pour 1997 [@lf-1997] | 53 | Hors code : moitié du produit de la taxe hôtelière affectée au fonds de protection des zones touristiques | 1er janvier 1997 |
+| Loi de finances pour 2002 [@loi2001-123-lf2002] | 65 | Art. 35 : groupements d'intérêt économique redevables | 1er janvier 2002 |
+| Loi de finances pour 2003 [@lf-2003] | 80 | Art. 40 § II : renvoi aux art. 10 à 26, 28 et 29, sans l'art. 27 | 1er janvier 2003 |
+| Décret n° 2003-1345 [@decret2003-1345] | — | Art. 38 § III : maximum 50 000 D → 60 000 D | 26 juin 2003 |
+| Loi de finances pour 2005 [@lf-2005] | 80 | Art. 36 : exonération des non-établis et non-domiciliés | 1er janvier 2005 |
+| idem | 81 | Art. 38 § V : critères de répartition fixés par décret, à défaut de superficie | 1er janvier 2005 |
+| Décret n° 2006-49 [@decret2006-49] | — | Critères de répartition : carrière 50 %, non bâti 30 %, chiffre d'affaires | 23 janvier 2006 |
+| Décret n° 2006-3360 [@decret2006-3360] | — | Art. 38 § III : maximum 60 000 D → 100 000 D | 1er janvier 2007 |
+| Loi de finances pour 2011 [@lf-2011] | 32 | Hors code : l'impôt forfaitaire de l'art. 44 quater comprend la taxe | 1er janvier 2011 |
+| Loi de finances complémentaire pour 2012 [@lfc-2012] | 50 | Art. 38 § III abrogé : fin du maximum | 1er janvier 2012 |
+| Loi de finances pour 2013 [@lf-2013] | 14 | Hors code : produit au-delà de 100 000 D affecté au Fonds de coopération entre les collectivités locales | 1er janvier 2013 |
+| idem | 23 | Art. 37 al. 2 : assiette sur l'impôt limitée aux forfaitaires de l'art. 44 bis et aux établissements en perte | 1er janvier 2013 |
+| idem | 24 | Art. 38 § I : taux réduit de 0,1 % pour les produits à prix homologués | 1er janvier 2013 |
+| Loi de finances pour 2014 [@lf-2014] | 49 | Art. 37 et 39 § I : « local » supprimé ; art. 38 § I : 0,1 % pour l'exportation et des services aux non-résidents | 1er janvier 2014 |
+| idem | 50 | Hors code : taxe retirée de trois régimes d'exonération | 1er janvier 2014 |
+| Loi de finances pour 2016 [@lf-2016] | 37 | Art. 39 § I et 40 § III : déclaration des lots non bâtis, amende de 1 000 D par lot | 1er janvier 2016 |
+| Loi de finances pour 2019 [@loi2018-56-lf2019] | 42 | Hors code : contribution unique des petits exploitants, taxe comprise | 1er janvier 2019 |
+| Loi de finances pour 2021 [@lf-2021] | 13 | Hors code : produit au-delà de 100 000 D au Fonds d'appui à la décentralisation | 1er janvier 2021 |
+| idem | 37 | Art. 38 § V : répartition à la superficie bâtie ou couverte ; critères de 2006 repris dans la loi | 1er janvier 2021 |
+| Loi de finances pour 2023 [@lf-2023] | 52 | Hors code : contribution unique de l'auto-entrepreneur, taxe à 20 % de l'impôt | 1er janvier 2023 |
+| idem | 57 | Art. 39 § II : délai trimestriel pour les personnes de l'art. 62 § III ter | 1er janvier 2023 |
+| Loi de finances pour 2024 [@lf-2024] | 67 | Art. 40 § III : amende selon les règles de la taxe sur les terrains non bâtis | 1er janvier 2024 |
+| idem | 69 | Art. 39 § II : vingt jours pour les personnes morales qui télédéclarent | 1er janvier 2024 |
+
+: Les textes qui ont modifié la taxe sur les établissements et la taxe hôtelière depuis 1997 {#tbl-fl-activite-textes}
+
+Les dates d'effet sont celles que fixe chaque loi de finances pour l'ensemble de ses dispositions, sauf mention contraire.
+
+## La longue période {#sec-fl-activite-longue-periode}
+
+Depuis 1997, la taxe sur les établissements a perdu son plafond, gagné un taux réduit et vu une partie de ses redevables passer à des contributions uniques qui l'englobent ; la taxe hôtelière, en l'état des textes identifiés, garde ses règles d'origine. Le rendement de ces deux impôts et la part que la taxe sur les établissements représente dans les ressources propres des collectivités ne sont pas encore réunis ici. Ils le seront au chapitre de la longue période.
+
+## Notations {#sec-fl-activite-notations}
+
+| Symbole | Grandeur | Section |
+|---|---|---|
+| $T$ | montant annuel de la taxe | [@sec-fl-tcl-1997] |
+| $\tau$ | taux de la taxe sur les établissements | [@sec-fl-tcl-1997] |
+| $A$ | chiffre d'affaires brut local | [@sec-fl-tcl-1997] |
+| $\mu$ | taxe par mètre carré de référence | [@sec-fl-tcl-1997] |
+| $s$ | superficie couverte des locaux exploités | [@sec-fl-tcl-1997] |
+
+: Les symboles du chapitre {#tbl-fl-activite-notations}

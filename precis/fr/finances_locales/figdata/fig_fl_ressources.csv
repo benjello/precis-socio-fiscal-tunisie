@@ -1,0 +1,75 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-04
+# séries (tunisia_data) : finances-locales-communes-agregats, finances-locales-bm-1985-2012, finances-locales-bm-1997, cnat-pib-nominal
+# sources (citation) : @dgct-donnees-ouvertes, @wb-msip-1992, @wb-mdp2-1997, @wb-pforr-pad-2014, @ins-cnat-2015
+# fiches : sources/finances-locales-communes.md, sources/finances-locales-banque-mondiale.md, docs/croissances-revenus-prix.md
+# méthode/hypothèses : DEUX SOURCES, GARDÉES TOUTES DEUX SUR 2018-2019 (colonne `retenu` : DGCT jusqu'en 2019, somme des communes ensuite). Les recettes concordent à l'arrondi près ; LES DÉPENSES NON (titre 1 : +1,7 MD en 2018, +7,2 MD en 2019 ; titre 2 : +0,6 et +5,9), écart non expliqué, figé dans les tests. 2021 = SITUATION AU 25/12/2021, non définitive (droits et redevances 54,8 MD contre 90-114 les autres années). 2023 = PROVISOIRE (arrêté au 10/01/2024). IMPÔTS UN À UN (TIB, TNB, TCL, taxe hôtelière, marchés) VIDES EN 2020-2021 : fichiers par commune sans détail d'article ; rien n'est interpolé. Le FCCL est supprimé au 1er janvier 2018 mais la DGCT garde l'intitulé « subventions annuelles » en 2018-2019 : rupture de nature ; réserve à 18 % jusqu'en 2017, 15 % ensuite. Les recettes du titre 2 comprennent l'épargne et les excédents reportés du titre 1 : T1 + T2 n'est pas un total consolidé. Recettes fiscales = catégories 1 et 2 (nomenclature 2018-2022), qui exclut les catégories 3-4 rangées parmi les recettes fiscales en 2023. PÉRIMÈTRE NON CONSTANT : 264 communes en 2012, 350 à partir de 2016-2017. Montants courants., SÉRIES SÉPARÉES, JAMAIS FUSIONNÉES entre elles ni avec la série DGCT : périmètres et nomenclatures différents, sources primaires tunisiennes non publiées. Valeurs SAISIES depuis la page indiquée, lues à l'image pour 1992 (couche OCR fautive : 2 561 et non 2 661) et 1997. LA LIGNE TL/TIB MANQUE AU TABLEAU IMPRIMÉ DE 1997 : résidus des totaux publiés comme `residu_calcule`, jamais comme TL. FCCL 1990 : 82 (1992) contre 50,8 (1997), vraisemblablement fonds total contre quote-part des communes (indices : 63 % des transferts aux communes, 47 % des budgets de fonctionnement en 1988) — NON TRANCHÉ. 1990-1991 de 1992 probablement estimations de mission. PAD 2014 contre DGCT 2008-2012 : recettes T1 concordantes, écarts de 10-14 MD sur dépenses T1 et ressources T2 ; dépenses T2 2012 dépassent de 10 MD investissements + remboursement., Valeurs lues à l'image ; la ligne de la taxe locative manque au tableau imprimé. Série séparée, jamais fusionnée avec les autres., LES NIVEAUX NE SE COMPARENT PAS D'UNE ÉDITION À L'AUTRE : ils changent de base (la base 1997 est d'environ 10 % au-dessus de la base 1983, la base 2015 d'environ 6 % au-dessus de la base 1997). Contrôles : huit valeurs lues à la main ; dans chaque édition, le taux calculé sur les niveaux lus redonne le taux imprimé à 0,1 point près ; chaque valeur d'UNdata de même base se retrouve dans l'une des éditions à 0,1 % près. L'édition 2015-2020 porte six colonnes. Voir `pib_nominal_croissance.csv` pour une série de taux.
+# note : Recettes de fonctionnement des communes : recettes propres et transferts de l'État, en millions de dinars courants, en part des recettes de fonctionnement et en % du PIB, 1990-2023
+Année,Grandeur,Source,Montant (MD),% des recettes de fonctionnement,% du PIB,Statut
+2008,Recettes propres de fonctionnement,"DGCT, agrégats publiés",344.0,75.1,0.62,definitif
+2008,Transferts de fonctionnement de l'État,"DGCT, agrégats publiés",114.0,24.9,0.21,definitif
+2009,Recettes propres de fonctionnement,"DGCT, agrégats publiés",358.0,74.7,0.61,definitif
+2009,Transferts de fonctionnement de l'État,"DGCT, agrégats publiés",121.0,25.3,0.21,definitif
+2010,Recettes propres de fonctionnement,"DGCT, agrégats publiés",402.0,75.1,0.64,definitif
+2010,Transferts de fonctionnement de l'État,"DGCT, agrégats publiés",133.0,24.9,0.21,definitif
+2011,Recettes propres de fonctionnement,"DGCT, agrégats publiés",267.0,47.6,0.41,definitif
+2011,Transferts de fonctionnement de l'État,"DGCT, agrégats publiés",294.0,52.4,0.46,definitif
+2012,Recettes propres de fonctionnement,"DGCT, agrégats publiés",371.0,57.8,0.53,definitif
+2012,Transferts de fonctionnement de l'État,"DGCT, agrégats publiés",271.0,42.2,0.39,definitif
+2013,Recettes propres de fonctionnement,"DGCT, agrégats publiés",428.0,61.8,0.57,definitif
+2013,Transferts de fonctionnement de l'État,"DGCT, agrégats publiés",265.0,38.2,0.35,definitif
+2014,Recettes propres de fonctionnement,"DGCT, agrégats publiés",477.0,64.5,0.59,definitif
+2014,Transferts de fonctionnement de l'État,"DGCT, agrégats publiés",263.0,35.5,0.33,definitif
+2015,Recettes propres de fonctionnement,"DGCT, agrégats publiés",537.5,66.0,0.6,definitif
+2015,Transferts de fonctionnement de l'État,"DGCT, agrégats publiés",276.5,34.0,0.31,definitif
+2016,Recettes propres de fonctionnement,"DGCT, agrégats publiés",577.0,67.6,0.61,definitif
+2016,Transferts de fonctionnement de l'État,"DGCT, agrégats publiés",276.0,32.4,0.29,definitif
+2017,Recettes propres de fonctionnement,"DGCT, agrégats publiés",643.0,69.8,0.63,definitif
+2017,Transferts de fonctionnement de l'État,"DGCT, agrégats publiés",278.0,30.2,0.27,definitif
+2018,Recettes propres de fonctionnement,"DGCT, agrégats publiés",713.0,68.2,0.63,definitif
+2018,Transferts de fonctionnement de l'État,"DGCT, agrégats publiés",333.0,31.8,0.29,definitif
+2019,Recettes propres de fonctionnement,"DGCT, agrégats publiés",806.0,68.9,0.66,definitif
+2019,Transferts de fonctionnement de l'État,"DGCT, agrégats publiés",363.0,31.1,0.3,definitif
+2018,Recettes propres de fonctionnement,Somme des budgets des communes,676.1,64.6,0.6,definitif
+2018,Transferts de fonctionnement de l'État,Somme des budgets des communes,370.4,35.4,0.33,definitif
+2019,Recettes propres de fonctionnement,Somme des budgets des communes,746.6,63.9,0.61,definitif
+2019,Transferts de fonctionnement de l'État,Somme des budgets des communes,422.3,36.1,0.34,definitif
+2020,Recettes propres de fonctionnement,Somme des budgets des communes,643.9,56.8,0.54,definitif
+2020,Transferts de fonctionnement de l'État,Somme des budgets des communes,490.1,43.2,0.41,definitif
+2021,Recettes propres de fonctionnement,Somme des budgets des communes,684.7,58.7,0.52,situation_au_2021-12-25
+2021,Transferts de fonctionnement de l'État,Somme des budgets des communes,481.7,41.3,0.37,situation_au_2021-12-25
+2022,Recettes propres de fonctionnement,Somme des budgets des communes,824.6,59.6,0.59,definitif
+2022,Transferts de fonctionnement de l'État,Somme des budgets des communes,560.0,40.4,0.4,definitif
+2023,Recettes propres de fonctionnement,Somme des budgets des communes,856.5,58.8,0.57,provisoire_au_2024-01-10
+2023,Transferts de fonctionnement de l'État,Somme des budgets des communes,599.1,41.2,0.4,provisoire_au_2024-01-10
+2002,Recettes propres de fonctionnement,"Banque mondiale, document de 2014",223.0,72.2,0.75,publie
+2002,Transferts de fonctionnement de l'État,"Banque mondiale, document de 2014",86.0,27.8,0.29,publie
+2003,Recettes propres de fonctionnement,"Banque mondiale, document de 2014",234.0,72.2,0.73,publie
+2003,Transferts de fonctionnement de l'État,"Banque mondiale, document de 2014",90.0,27.8,0.28,publie
+2004,Recettes propres de fonctionnement,"Banque mondiale, document de 2014",258.0,73.5,0.73,publie
+2004,Transferts de fonctionnement de l'État,"Banque mondiale, document de 2014",92.0,26.2,0.26,publie
+2005,Recettes propres de fonctionnement,"Banque mondiale, document de 2014",279.0,74.6,0.67,publie
+2005,Transferts de fonctionnement de l'État,"Banque mondiale, document de 2014",95.0,25.4,0.23,publie
+2006,Recettes propres de fonctionnement,"Banque mondiale, document de 2014",312.0,76.3,0.68,publie
+2006,Transferts de fonctionnement de l'État,"Banque mondiale, document de 2014",98.0,24.0,0.21,publie
+2007,Recettes propres de fonctionnement,"Banque mondiale, document de 2014",322.0,75.4,0.65,publie
+2007,Transferts de fonctionnement de l'État,"Banque mondiale, document de 2014",105.0,24.6,0.21,publie
+2008,Recettes propres de fonctionnement,"Banque mondiale, document de 2014",346.0,75.5,0.63,publie
+2008,Transferts de fonctionnement de l'État,"Banque mondiale, document de 2014",112.0,24.5,0.2,publie
+2009,Recettes propres de fonctionnement,"Banque mondiale, document de 2014",360.0,75.2,0.61,publie
+2009,Transferts de fonctionnement de l'État,"Banque mondiale, document de 2014",119.0,24.8,0.2,publie
+2010,Recettes propres de fonctionnement,"Banque mondiale, document de 2014",404.0,75.4,0.64,publie
+2010,Transferts de fonctionnement de l'État,"Banque mondiale, document de 2014",131.0,24.4,0.21,publie
+2011,Recettes propres de fonctionnement,"Banque mondiale, document de 2014",268.0,47.8,0.42,publie
+2011,Transferts de fonctionnement de l'État,"Banque mondiale, document de 2014",293.0,52.2,0.45,publie
+2012,Recettes propres de fonctionnement,"Banque mondiale, document de 2014",370.0,57.7,0.53,publie
+2012,Transferts de fonctionnement de l'État,"Banque mondiale, document de 2014",271.0,42.3,0.39,publie
+1990,Recettes propres de fonctionnement,"Banque mondiale, rapport de 1997",74.1,59.3,,publie
+1990,Transferts de fonctionnement de l'État,"Banque mondiale, rapport de 1997",50.8,40.7,,publie
+1992,Recettes propres de fonctionnement,"Banque mondiale, rapport de 1997",109.5,63.7,,publie
+1992,Transferts de fonctionnement de l'État,"Banque mondiale, rapport de 1997",62.5,36.3,,publie
+1994,Recettes propres de fonctionnement,"Banque mondiale, rapport de 1997",128.9,66.0,,publie
+1994,Transferts de fonctionnement de l'État,"Banque mondiale, rapport de 1997",66.3,34.0,,publie
+1995,Recettes propres de fonctionnement,"Banque mondiale, rapport de 1997",134.6,65.7,,publie
+1995,Transferts de fonctionnement de l'État,"Banque mondiale, rapport de 1997",70.2,34.3,,publie
+1996,Recettes propres de fonctionnement,"Banque mondiale, rapport de 1997",148.7,67.5,,publie
+1996,Transferts de fonctionnement de l'État,"Banque mondiale, rapport de 1997",71.5,32.5,,publie
