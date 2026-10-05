@@ -29,6 +29,7 @@ extraits des lois de finances sont dans le dossier voisin `PDFs/Lois_de_Finances
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; PNAFN historique sans sources pour ses onze dates et montants | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
+| Finances locales | Les dix chapitres rédigés : présentation, notions et ressources propres (4 octobre 2026) ; institutions (histoire, compétences, budgets), transferts de l'État et longue période (5 octobre 2026) | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
 
 Les `TODO` des `.qmd` détaillent chaque lacune, y compris celles que ce tableau ne peut pas
 résumer. Ici, **lisible** veut dire que le fascicule est présent avec une couche texte
@@ -41,7 +42,7 @@ mais que la couche texte testée est vide. Un texte absent du JORT en français 
 
 - **Figure à faire (demande de l'humain, 4 octobre 2026) : le taux d'imposition des BIC selon le régime, en fonction du chiffre d'affaires, réforme par réforme.** Pour chaque état du droit établi dans `#sec-irpp-forfait` (1990, 1993, 1999, 2006, 2011, 2014, 2016, 2018, 2023, 2026), l'impôt rapporté au chiffre d'affaires : régime forfaitaire (grilles de l'annexe II, puis taux, planchers et montants fixes), régime forfaitaire optionnel de 2026, et régime réel (barème de l'IRPP et minimum d'impôt, sous une hypothèse de taux de bénéfice à expliciter — la LF 2026 en fixe une, au plus 25 %, pour l'option). Chiffres d'affaires **déflatés** par l'indice des prix à la consommation de l'INS, base la plus récente disponible (série dans tunisia-data, provenance à documenter taux par taux). Vue d'évolution par onglets ou petits multiples, une courbe par régime. Données : `figtools.series()` depuis un générateur hors build ; tant que les paramètres du forfait ne sont pas en amont (openfisca-tunisia#476), engendrer depuis les valeurs sourcées de la note `docs/notes/fiscalite-regime-forfaitaire.md` avec un TODO.
 
-- **Fiscalité locale : aucune entrée à ce jour (demande de l'humain, 4 octobre 2026). Option B retenue le 4 octobre 2026 : un volume VII « Les finances locales » (fiscalité locale, transferts, budgets) ; plan : `docs/notes/fiscalite-locale-plan.md`.** Le volume ne traite que des impôts d'État. Il manque un chapitre — ou un volume — sur la fiscalité locale : taxe sur les immeubles bâtis (TIB), taxe sur les terrains non bâtis (TNB), taxe sur les établissements à caractère industriel, commercial ou professionnel (TCL), et leurs textes (code de la fiscalité locale et ses modifications, à relever au JORT). Matière déjà collectée : documents de la réforme fiscale 2013-2014 (`tunisia-data/data/raw/minfinances/reforme_fiscale_2013_2014/`, fiche `sources/minfinances-reforme-fiscale-2013-2014.md`) — synthèse du groupe « fiscalité locale » (CNF août 2013, `2013-08_cnf_rf_5_ar.pdf` : TCL 111 / 93 / 137 MD et TIB 40 / 21 / 30 MD en 2010-2012), présentation de novembre 2013, journée de réflexion d'octobre 2014 sur la décentralisation ; inventaire page par page dans `docs/notes/reforme-fiscale-2013-2014-inventaire.md`. À cadrer : périmètre (impôts des collectivités locales seulement, ou aussi taxes affectées), place dans le précis, lien avec l'impôt foncier de 2014 (chapitre de l'impôt sur la fortune). Doctrine : six textes de B. Dafflon et G. Gilbert (Revue tunisienne de fiscalité, n° 20, 24, 25, 27 ; mélanges *Transparence et droit*, 2021) — deux en accès libre, quatre à obtenir en bibliothèque ou au Centre d'études fiscales de Sfax ; synthèse de référence : Dafflon et Gilbert, *L'économie politique et institutionnelle de la décentralisation en Tunisie*, AFD, 2018 (HAL, CC BY-NC-ND) ; rapports PARD 2021-2022. Inventaire, statut d'accès et ébauches CSL : `docs/notes/biblio-fiscalite-locale.md` ; copies locales hors dépôt : `~/Documents/biblio-precis/fiscalite-locale/`.
+- **Fiscalité locale : aucune entrée à ce jour (demande de l'humain, 4 octobre 2026). Option B retenue le 4 octobre 2026 : un volume VII « Les finances locales » (fiscalité locale, transferts, budgets) ; plan : `docs/notes/fiscalite-locale-plan.md`. TIB, TNB, TCL et taxes du code rédigées dans ce volume le 4 octobre 2026 (voir « Les finances locales » ci-dessous).** Le volume ne traite que des impôts d'État. Il manque un chapitre — ou un volume — sur la fiscalité locale : taxe sur les immeubles bâtis (TIB), taxe sur les terrains non bâtis (TNB), taxe sur les établissements à caractère industriel, commercial ou professionnel (TCL), et leurs textes (code de la fiscalité locale et ses modifications, à relever au JORT). Matière déjà collectée : documents de la réforme fiscale 2013-2014 (`tunisia-data/data/raw/minfinances/reforme_fiscale_2013_2014/`, fiche `sources/minfinances-reforme-fiscale-2013-2014.md`) — synthèse du groupe « fiscalité locale » (CNF août 2013, `2013-08_cnf_rf_5_ar.pdf` : TCL 111 / 93 / 137 MD et TIB 40 / 21 / 30 MD en 2010-2012), présentation de novembre 2013, journée de réflexion d'octobre 2014 sur la décentralisation ; inventaire page par page dans `docs/notes/reforme-fiscale-2013-2014-inventaire.md`. À cadrer : périmètre (impôts des collectivités locales seulement, ou aussi taxes affectées), place dans le précis, lien avec l'impôt foncier de 2014 (chapitre de l'impôt sur la fortune). Doctrine : six textes de B. Dafflon et G. Gilbert (Revue tunisienne de fiscalité, n° 20, 24, 25, 27 ; mélanges *Transparence et droit*, 2021) — deux en accès libre, quatre à obtenir en bibliothèque ou au Centre d'études fiscales de Sfax ; synthèse de référence : Dafflon et Gilbert, *L'économie politique et institutionnelle de la décentralisation en Tunisie*, AFD, 2018 (HAL, CC BY-NC-ND) ; rapports PARD 2021-2022. Inventaire, statut d'accès et ébauches CSL : `docs/notes/biblio-fiscalite-locale.md` ; copies locales hors dépôt : `~/Documents/biblio-precis/fiscalite-locale/`.
 
 - **Présentation (`index.qmd`) : impôts directs et indirects définis et sourcés** (LOB 1967, 1996, 2019 ; tableaux A des LF 2014 et 2021 ; support ENA de S. Zakraoui), textes lus dans le corpus. Reste : relever la page de fin des trois LOB dans l'édition arabe ; dater le support ENA ou lui substituer la doctrine imprimée (`baccouche2008`, `ayadi1996`, à obtenir) ; l'arrêté de nomenclature des recettes (LOB 2019, art. 16) n'est pas identifié.
 
@@ -482,6 +483,37 @@ l'État ; les livres « dispositifs » gardent les règles et renvoient ici par 
   de sécurité sociale des comptes de la nation ; versements des caisses au budget (tableau A) ;
   transferts de l'État aux caisses depuis 2016, dont les sources restent à verser.
 
+## Manques du précis — revue du 5 octobre 2026
+
+Revue de ce que les sept volumes ne couvrent pas (sujets à établir sur les textes, rien n'est affirmé ici). Ordre de traitement décidé par l'humain : **1 et 2 d'abord** (documentation lancée le 5 octobre 2026), puis 5, 8, et 15 en dernier.
+
+**Prioritaires**
+
+1. **Prélèvements sur salaires autres que les cotisations** : taxe de formation professionnelle (TFP), contribution au FOPROLOS — assiette, taux, redevables, historique ; sans eux, le coin socio-fiscal des cotisations est incomplet. **En cours.**
+2. **Salaire minimum et salaires négociés du secteur privé** : histoire du SMIG et du SMAG (montants, régimes 40 h / 48 h, revalorisations, décrets) ; conventions collectives sectorielles et leurs grilles ; accords salariaux périodiques UGTT-UTICA (privé) et UGTT-gouvernement (public). **En cours.**
+3. Droit du travail déterminant les revenus : durée du travail, congés payés, heures supplémentaires, indemnités de licenciement, contrats précaires et sous-traitance, travail informel.
+4. Politiques actives de l'emploi : programmes de l'ANETI (stages d'insertion, contrats aidés), primes à l'embauche, prises en charge de cotisations patronales ; protection contre la perte d'emploi (aujourd'hui effleurée).
+5. La compensation (Caisse générale de compensation : produits de base, carburants, électricité, transport) — sources déjà collectées sur l'ancien portail du ministère des Finances (`tunisia-data/sources/minfinances-portail-ancien.md`).
+
+**Fiscalité**
+
+6. Droits d'enregistrement et de timbre ; fiscalité des mutations immobilières.
+7. Droits de douane.
+8. Dépenses fiscales et régimes d'incitation (code d'incitation aux investissements, loi de 2016, entreprises totalement exportatrices, développement régional) — documents Banque mondiale 2014 collectés.
+9. Fiscalité de l'épargne et du capital : retenues libératoires sur les revenus de capitaux mobiliers, plus-values mobilières, épargne exonérée.
+10. Taxes affectées et contributions exceptionnelles (contribution conjoncturelle, contribution au budget de l'État de 2014, FODEC, vignette).
+
+**Social et secteur public**
+
+11. Régimes spéciaux du secteur public (militaires, forces de sécurité, magistrats, membres du gouvernement), recrutement, départs anticipés et plans de départ volontaire.
+12. Couverture santé au-delà de la CNAM : filières, ticket modérateur, mutuelles et assurance complémentaire de groupe.
+13. Logement social (FOPROLOS, programmes, prêts aidés), en lien avec le foncier.
+14. Transferts en nature et aides à l'éducation (bourses, cantines, allocation de rentrée scolaire, handicap).
+
+**Transversal**
+
+15. Synthèse de la redistribution par décile (impôts, cotisations, prestations, subventions), dans l'esprit des études d'incidence de type CEQ (dépôt `ceq-tunisie`).
+
 ## Citations répétées — suggestion, non engagée (4 octobre 2026)
 
 Une même référence revient parfois à chaque phrase : le code de l'IRPP et de l'IS (`code-irpp-is-1990`) 31 fois dans `fiscalite/_impot_revenu.qmd` ; dans le volume VII en préparation (branche locale), la loi n° 97-11 jusqu'à 28 fois par chapitre et Dafflon et Gilbert 56 fois dans le chapitre des notions. La parenthèse « (loi n° … du …, art. 3) » alourdit la lecture sans rien apporter que le numéro d'article. Suggestion, à décider par l'humain avant toute mise en œuvre :
@@ -492,6 +524,157 @@ Une même référence revient parfois à chaque phrase : le code de l'IRPP et de
 4. **Contrôle** dans `scripts/verifier.sh` : une même clé citée plus de N fois (N = 4 ?) dans une section est signalée.
 
 Écartés : notes de bas de page (changement de style CSL pour tout le précis) ; suppression des articles (perte d'information). À prévoir côté traduction : les locateurs en clair « (art. 3) », hors citation, devront être protégés comme le sont aujourd'hui ceux des citations (`translate_sync.restore_locators`). Ordre envisagé : volume VII, puis IRPP, caisses, cotisations, un volume par PR.
+
+## Les finances locales
+
+Volume créé le 4 octobre 2026 (`precis/fr/finances_locales/`), d'après le plan
+`docs/notes/fiscalite-locale-plan.md` (quatre mouvements, les notions avant le droit). Le
+livre arabe a son `_quarto.yml` et ses références ; il est sauté au rendu tant que la
+traduction n'a pas livré `index.qmd`.
+
+- **Présentation — rédigée le 4 octobre 2026** (`index.qmd`, `#sec-fl-presentation`) : objet
+  du volume, quatre mouvements, frontières avec « La fiscalité » (impôt foncier de 2014, IRPP et
+  IS) et avec « Rémunérations publiques ». Les trois chapitres des ressources propres y sont
+  renvoyés par `@sec-` ; les chapitres d'institutions, des transferts et de la longue période
+  restent annoncés sans renvoi, faute d'exister. La phrase sur la TCL s'appuie désormais sur le
+  code de la fiscalité locale (art. 35 et 37), et non plus sur Dafflon et Gilbert.
+- **Trois chapitres des ressources propres — rédigés le 4 octobre 2026**, d'après la note
+  `docs/notes/finances-locales-impots-locaux.md` (textes lus au JORT, valeurs relues à l'image
+  en FR et en AR) : `_impots_immeubles.qmd` (`#sec-fl-immeubles` : TIB et TNB, structure du
+  code, barèmes de 1997, 2008 et 2017 en tableaux à onglets, réformes de 1998 à 2025, pénalité
+  de retard), `_impots_activite.qmd` (`#sec-fl-activite` : TCL et taxe hôtelière, minimum en
+  onglets, maximum jusqu'en 2011, réformes de 2002 à 2024, taux), `_taxes_redevances.qmd`
+  (`#sec-fl-taxes` : chapitres V à VIII du code, décret de tarifs n° 2016-805 lu le 4 octobre
+  2026 en français, marges laissées aux collectivités, code des collectivités locales,
+  art. 137, 139-141, 391-392). Tous les tableaux de paramètres sont faits main et portent le
+  TODO de remplacement par un tableau engendré : aucun de ces paramètres n'est dans la base.
+  Cinq fiches RECHERCHE versées (`r-cfl-*`) : prix de référence, tarif TNB et minimum TCL
+  après 2017 ; décrets intermédiaires 1997-2007 ; modificatifs de la taxe hôtelière.
+- **Lacunes des chapitres des ressources** (TODO des `.qmd`), toutes **lisibles dans le
+  corpus** sauf mention :
+  - code des collectivités locales : date d'entrée en vigueur des dispositions budgétaires
+    (dispositions finales, édition arabe du JORT n° 39 de 2018) ; décrets transitoires de
+    l'art. 391 (à chercher) ; délibérations tarifaires communales, au *Journal officiel des
+    collectivités locales*, **hors corpus** ;
+  - portée du § 10 de l'art. 59 du décret-loi n° 2022-79 sur la pénalité de 1,25 % de la TIB
+    (texte lu, interprétation à trancher) ;
+  - barème des parkings récrit par la LF 2003, art. 79, à transcrire (JORT n° 102 de 2002) ;
+  - grilles du décret n° 98-1428 et de ses modificatifs, et du décret n° 2016-805 (lu, non
+    transcrit ; l'édition arabe fait foi) ;
+  - antécédents abrogés en 1997 (décrets de 1887 à 1956, lois n° 71-41, 75-34 et 75-39) ; les
+    fascicules de 1975 sont au corpus, ceux d'avant 1956 restent à obtenir ;
+  - art. 39 de la LF 1993 et décrets des zones municipales touristiques ; art. 7 initial du
+    décret-loi n° 2020-33 ; art. 7 de la loi organique du budget des collectivités locales ;
+  - articles d'amnistie de la LF 2026, de la loi n° 2006-25 et du décret-loi n° 2006-1 ;
+  - arrêtés communaux fixant le prix de référence de la TIB, **hors corpus**.
+- **Trois chapitres des institutions — rédigés le 5 octobre 2026** (branche
+  `docs/finances-locales-institutions`), d'après trois notes documentaires établies sur le JORT :
+  `_histoire.qmd` (`#sec-fl-histoire`, note `finances-locales-histoire.md` : loi municipale de
+  1957, conseils de gouvernorat de 1957 et 1963, Constitution de 1959 et art. 71 de 2002, lois du
+  14 mai 1975, conseils régionaux de 1989, 2011, Constitution de 2014, carte communale, code de
+  2018, Constitution de 2022, décrets-lois de 2023, loi organique n° 2025-4) ;
+  `_competences.qmd` (`#sec-fl-competences`, note `finances-locales-competences.md` : loi organique
+  des communes, loi n° 89-11, catégories de compétences du code, art. 11-28, 234-244, 293-298,
+  356-358, instances nationales, contrôle des actes, depuis 2023) ; `_budgets.qmd`
+  (`#sec-fl-budgets-comptes`, note `finances-locales-budgets.md` : loi n° 75-35 lue à l'image,
+  modifications de 1979 à 1997, refonte de 2007, série des seuils d'approbation de 1975 à 2017
+  — décrets n° 77-320, 86-1036 et 89-280 relus à l'image le 5 octobre 2026, effet du décret
+  n° 89-280 au 1er janvier 1989 —, code de 2018, art. 126-199 et 383, loi organique n° 2025-4).
+  Entrée en vigueur des règles budgétaires du code pour les communes : budgets de 2019, les
+  résultats définitifs des municipales ayant été proclamés par les décisions de l'ISIE n° 2018-12
+  et suivantes, du 17 mai au 12 juin 2018 (JORT n° 46 à 50 de 2018, lus le 5 octobre 2026). Le
+  tableau des seuils est fait main et porte le TODO de remplacement par un tableau engendré.
+  Sept fiches RECHERCHE versées : `r-fl-loi-competences-partagees`,
+  `r-fl-elections-municipales-apres-2023`, `r-lob-cl-seuil-approbation-apres-2017`,
+  `r-ccl-2018-nomenclature-art167`, `r-fl-dissolutions-2011`,
+  `r-fl-constitution-2014-numero-special`, `r-fl-nombre-communes`. Quinze notions au glossaire
+  (compétences propres, partagées, transférées ; district ; conseil local ; délégation spéciale ;
+  instances nationales ; notions budgétaires), dont trois `valide`. Les renvois de `index.qmd`
+  vers ces chapitres restent à poser à la réunion des branches.
+- **Lacunes des chapitres des institutions** (TODO des `.qmd`), **lisibles dans le corpus** sauf
+  mention :
+  - lois organiques n° 85-43, 91-24, 95-68 et 2006-48 (modificatifs de la loi organique des
+    communes) ; fin du texte et édition arabe de la loi n° 75-33 ; sort de la loi n° 75-33 après
+    le code de 2018 ;
+  - art. 38-41 de la LF 1980 (lus sur OCR, à relire à l'image) ; date de dépôt du JORT n° 38 de
+    1994 (loi organique n° 94-44) ; date de publication du décret n° 75-485 au pied du fascicule ;
+  - textes de création des agences nationales citées par Dafflon et Gilbert et décret
+    n° 2004-1182 (Centre de formation et d'appui à la décentralisation, couche texte décalée) ;
+  - vote des budgets communaux depuis la dissolution de 2023 ;
+  - numéro spécial du JORT du 10 février 2014 (Constitution), **à obtenir** (absent de pist.tn
+    et de jort_cache) ; texte arabe de la Constitution de 2014 ;
+  - nombre des conseils municipaux dissous en 2011-2012 et nombre de communes entre 1957 et 2014 ;
+  - code de la comptabilité publique et lois sur la Cour des comptes, non lus.
+- **Lacunes des chapitres des ressources levées par ces notes, à reporter à la réunion** :
+  l'entrée en vigueur des dispositions budgétaires du code pour les communes (premier point du
+  TODO de `_taxes_redevances.qmd`, § « La transition ») est établie au 1er janvier 2019 ; l'art. 7
+  de la loi organique du budget est lu (note `finances-locales-budgets.md`, § 1.1 et 1.3). Les
+  chapitres 6 à 8 n'ont pas été modifiés.
+- **Livre arabe** : les trois chapitres sont déclarés en commentaire dans
+  `precis/ar/finances_locales/_quarto.yml`, à décommenter quand la traduction sera livrée.
+- **Notions — rédigé le 4 octobre 2026** (`_notions.qmd`, `#sec-fl-notions`) : décentraliser,
+  budget local, ressources propres, transferts, mesurer, et tableau des notations. Source
+  unique : Dafflon et Gilbert, AFD 2018 (`dafflon-gilbert-2018`), lue dans l'exemplaire HAL
+  (p. 11-30, 64-69, 79, 81-86, 150-157, 195-207, 251-252). Les manuscrits de 2013 (encadrés 4-5
+  et 4-6, § 5.1) ont été comparés : ils sont repris à l'identique dans le livre, qui seul est
+  cité. Aucune valeur tunisienne.
+- **Notions non définies faute de source lue** : épargne brute (le livre ne la définit
+  qu'en droit tunisien, comme solde du titre I, p. 84) ; dépendance aux transferts ; fonds
+  commun, comme notion générale ; établissement public. À sourcer dans Dafflon et Madiès, AFD,
+  *Notes et documents* n° 42 (2008) — le fichier téléchargé le 4 octobre 2026 n'en contient que
+  six pages, à obtenir en entier — ou à traiter dans les chapitres de droit.
+- **Glossaire — 40 notions, toutes `provisoire`** : les termes arabes ne sont mis en regard
+  des notions par aucun texte bilingue. Treize figurent, à la lettre ou presque, dans l'édition
+  arabe du code des collectivités locales (JORT n° 39 de 2018 ; article en commentaire de
+  chaque entrée), dont l'édition française n'est pas identifiée (absente de jort_cache, du
+  corpus local et de pist.tn le 4 octobre 2026). Les autres sont proposés sans attestation.
+  À trancher par un arabophone : « التعديل » pour péréquation (le code emploie aussi
+  « التسوية », et Dafflon et Gilbert rendent l'article 136 de la Constitution de 2014 par
+  « régulation et adéquation », p. 205) ; « الرسم » pour la taxe au sens des finances
+  publiques ; « معلوم الاستعمال » pour la redevance d'utilisation.
+- **Références à lire avant les chapitres suivants** : Dafflon et Gilbert, PARD 2021
+  (transferts) et 2022 ; Hammami, Dafflon et Gilbert, PARD 2021 (compétences) ; Dafflon, RTF
+  n° 25 (2017) ; voir `docs/notes/biblio-fiscalite-locale.md`.
+- **Questions du plan restées ouvertes** : chapitre propre aux régions ; taxes affectées à
+  des fonds hors budgets locaux.
+- **Transferts de l'État — rédigé le 5 octobre 2026** (`_transferts.qmd`, `#sec-fl-transferts`),
+  d'après la note `docs/notes/finances-locales-transferts.md`, close par anticipation : lois
+  n° 75-36 et 75-37, LF 1982 (art. 27), 1985 (art. 63), 1986 (art. 68), 1987 (art. 44, 92, 94),
+  1988-1991 (prélèvements et reconduction de la réserve), 1990 (tableau « L » : 80 MD), 1992
+  (art. 80), décret n° 92-308, loi n° 95-45, loi n° 2000-60, LF 2007 (art. 11), LF 2014 (art. 12)
+  lus au fascicule ; tableau de la répartition légale 1976-2017 fait main (TODO de tableau
+  engendré). L'ancre des notions passe de `#sec-fl-transferts` à `#sec-fl-notions-transferts`.
+  Fiche `r-fccl-repartition-reserve-2014-2017`. **Lacunes, toutes lisibles dans le corpus** :
+  - décrets de répartition de la réserve 1993-2013 (vingt-deux, non lus ; les AR postérieurs
+    à 2000 sont aussi sur le miroir iort) ; décret n° 92-308 à relire à l'image (océrisation) ;
+  - montant du fonds, LF par LF, 1987-2017 (seul 1990 est lu) ; LF 1977-1979 et arrêtés de
+    1975-1983 ; clauses d'effet des LF 1982, 1985, 1986 et 1992 ; pages AR de la plupart des
+    textes lus ;
+  - LF 2018, art. 11 (texte, effet) ; code des collectivités locales (ressources transférées,
+    péréquation, art. 392) ; LF 2013 art. 13-15, décret n° 2013-2797, LF 2021 art. 13 :
+    seuls leurs intitulés sont cités ;
+  - texte fondant la réserve de 15 % des agrégats DGCT de 2018-2019 ;
+  - décrets et arrêtés de la CPSCL (77-212 … 2016-367, loi n° 2001-56) ;
+  - subventions d'investissement, PIC, PRD, dotation exceptionnelle 2011-2012 : aucune source
+    primaire lue ;
+  - divergence 82 / 50,8 MD du fonds en 1990 : non tranchée (le JORT donne 80 MD votés).
+- **Longue période — rédigé le 5 octobre 2026** (`_longue_periode.qmd`,
+  `#sec-fl-longue-periode`) : six figures à onglets (`figures/finances_locales.py`), lues par
+  `figtools.series()` sur les séries de tunisia-data snapshotées dans `precis/_seriescache/`
+  (communes 2008-2023, CPSCL 2005-2024, INS trois bases, Banque mondiale 1985-2012, PIB des
+  comptes de la nation) ; les fichiers Banque mondiale 1992 et 1997, absents du catalogue de
+  l'entrepôt sous un identifiant propre, sont snapshotés par
+  `scripts/snapshot_finances_locales_bm.py` et déclarés par `register_provenance` — à retirer
+  quand tunisia-data les déclarera. Références versées : `dgct-donnees-ouvertes`,
+  `cpscl-etats-financiers`, `wb-msip-1992`, `wb-mdp2-1997`, `wb-pforr-pad-2014`,
+  `wb-pforr-ta-2014`, décrets n° 2016-600 à 602 ; `ins-cnat-2015` couvre déjà les éditions en
+  bases 1983 et 1997 (pas de clé séparée). **Lacunes** : dépenses, investissement et
+  endettement des communes non encore suivis (données présentes) ; définitions du ratio
+  d'autonomie et du taux de recouvrement de la TIB publiés par la DGCT ; explication de la TIB
+  de 2019 (76 MD) ; écart DGCT / somme des communes sur les dépenses 2018-2019.
+- **Livre arabe** : `_transferts.qmd` et `_longue_periode.qmd` déclarés en commentaire dans
+  `precis/ar/finances_locales/_quarto.yml`. Glossaire : `fonds-commun-collectivites-locales`,
+  `reserve-fonds-commun`, `cpscl` (termes arabes du JORT).
 
 ## Forme des chapitres — le plan type, et où il ne s'applique pas
 

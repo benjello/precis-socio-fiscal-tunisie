@@ -1,0 +1,93 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-04
+# séries (tunisia_data) : finances-locales-communes-agregats, finances-locales-bm-1997, cnat-pib-nominal
+# sources (citation) : @dgct-donnees-ouvertes, @wb-mdp2-1997, @ins-cnat-2015
+# fiches : sources/finances-locales-communes.md, sources/finances-locales-banque-mondiale.md, docs/croissances-revenus-prix.md
+# méthode/hypothèses : DEUX SOURCES, GARDÉES TOUTES DEUX SUR 2018-2019 (colonne `retenu` : DGCT jusqu'en 2019, somme des communes ensuite). Les recettes concordent à l'arrondi près ; LES DÉPENSES NON (titre 1 : +1,7 MD en 2018, +7,2 MD en 2019 ; titre 2 : +0,6 et +5,9), écart non expliqué, figé dans les tests. 2021 = SITUATION AU 25/12/2021, non définitive (droits et redevances 54,8 MD contre 90-114 les autres années). 2023 = PROVISOIRE (arrêté au 10/01/2024). IMPÔTS UN À UN (TIB, TNB, TCL, taxe hôtelière, marchés) VIDES EN 2020-2021 : fichiers par commune sans détail d'article ; rien n'est interpolé. Le FCCL est supprimé au 1er janvier 2018 mais la DGCT garde l'intitulé « subventions annuelles » en 2018-2019 : rupture de nature ; réserve à 18 % jusqu'en 2017, 15 % ensuite. Les recettes du titre 2 comprennent l'épargne et les excédents reportés du titre 1 : T1 + T2 n'est pas un total consolidé. Recettes fiscales = catégories 1 et 2 (nomenclature 2018-2022), qui exclut les catégories 3-4 rangées parmi les recettes fiscales en 2023. PÉRIMÈTRE NON CONSTANT : 264 communes en 2012, 350 à partir de 2016-2017. Montants courants., Valeurs lues à l'image ; la ligne de la taxe locative manque au tableau imprimé. Série séparée, jamais fusionnée avec les autres., LES NIVEAUX NE SE COMPARENT PAS D'UNE ÉDITION À L'AUTRE : ils changent de base (la base 1997 est d'environ 10 % au-dessus de la base 1983, la base 2015 d'environ 6 % au-dessus de la base 1997). Contrôles : huit valeurs lues à la main ; dans chaque édition, le taux calculé sur les niveaux lus redonne le taux imprimé à 0,1 point près ; chaque valeur d'UNdata de même base se retrouve dans l'une des éditions à 0,1 % près. L'édition 2015-2020 porte six colonnes. Voir `pib_nominal_croissance.csv` pour une série de taux.
+# note : Rendement des impôts locaux des communes, en millions de dinars courants, en part des recettes de fonctionnement et en % du PIB, et taux de recouvrement publié de la taxe sur les immeubles bâtis, 1990-2023
+Année,Grandeur,Source,Valeur (%),Montant (MD),% des recettes de fonctionnement,% du PIB,Statut
+2008,Taux de recouvrement de la TIB publié par la DGCT,"DGCT, agrégats publiés",24.0,,,,
+2009,Taux de recouvrement de la TIB publié par la DGCT,"DGCT, agrégats publiés",22.0,,,,
+2010,Taux de recouvrement de la TIB publié par la DGCT,"DGCT, agrégats publiés",22.0,,,,
+2011,Taux de recouvrement de la TIB publié par la DGCT,"DGCT, agrégats publiés",11.0,,,,
+2012,Taux de recouvrement de la TIB publié par la DGCT,"DGCT, agrégats publiés",14.0,,,,
+2013,Taux de recouvrement de la TIB publié par la DGCT,"DGCT, agrégats publiés",13.0,,,,
+2014,Taux de recouvrement de la TIB publié par la DGCT,"DGCT, agrégats publiés",12.0,,,,
+2015,Taux de recouvrement de la TIB publié par la DGCT,"DGCT, agrégats publiés",11.0,,,,
+2016,Taux de recouvrement de la TIB publié par la DGCT,"DGCT, agrégats publiés",12.0,,,,
+2017,Taux de recouvrement de la TIB publié par la DGCT,"DGCT, agrégats publiés",12.0,,,,
+2018,Taux de recouvrement de la TIB publié par la DGCT,"DGCT, agrégats publiés",12.0,,,,
+2019,Taux de recouvrement de la TIB publié par la DGCT,"DGCT, agrégats publiés",18.0,,,,
+2008,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",,89.0,19.4,0.161,definitif
+2008,Taxe sur les immeubles bâtis,"DGCT, agrégats publiés",,33.0,7.2,0.06,definitif
+2008,Taxe sur les terrains non bâtis,"DGCT, agrégats publiés",,11.0,2.4,0.02,definitif
+2008,Taxe hôtelière,"DGCT, agrégats publiés",,21.0,4.6,0.038,definitif
+2009,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",,94.0,19.6,0.16,definitif
+2009,Taxe sur les immeubles bâtis,"DGCT, agrégats publiés",,36.0,7.5,0.061,definitif
+2009,Taxe sur les terrains non bâtis,"DGCT, agrégats publiés",,14.0,2.9,0.024,definitif
+2009,Taxe hôtelière,"DGCT, agrégats publiés",,20.0,4.2,0.034,definitif
+2010,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",,111.0,20.7,0.176,definitif
+2010,Taxe sur les immeubles bâtis,"DGCT, agrégats publiés",,39.0,7.3,0.062,definitif
+2010,Taxe sur les terrains non bâtis,"DGCT, agrégats publiés",,15.0,2.8,0.024,definitif
+2010,Taxe hôtelière,"DGCT, agrégats publiés",,22.0,4.1,0.035,definitif
+2011,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",,93.0,16.6,0.144,definitif
+2011,Taxe sur les immeubles bâtis,"DGCT, agrégats publiés",,20.0,3.6,0.031,definitif
+2011,Taxe sur les terrains non bâtis,"DGCT, agrégats publiés",,12.0,2.1,0.019,definitif
+2011,Taxe hôtelière,"DGCT, agrégats publiés",,12.0,2.1,0.019,definitif
+2012,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",,138.0,21.5,0.196,definitif
+2012,Taxe sur les immeubles bâtis,"DGCT, agrégats publiés",,30.0,4.7,0.043,definitif
+2012,Taxe sur les terrains non bâtis,"DGCT, agrégats publiés",,14.0,2.2,0.02,definitif
+2012,Taxe hôtelière,"DGCT, agrégats publiés",,15.0,2.3,0.021,definitif
+2013,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",,154.0,22.2,0.205,definitif
+2013,Taxe sur les immeubles bâtis,"DGCT, agrégats publiés",,31.0,4.5,0.041,definitif
+2013,Taxe sur les terrains non bâtis,"DGCT, agrégats publiés",,17.0,2.5,0.023,definitif
+2013,Taxe hôtelière,"DGCT, agrégats publiés",,15.0,2.2,0.02,definitif
+2014,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",,179.0,24.2,0.221,definitif
+2014,Taxe sur les immeubles bâtis,"DGCT, agrégats publiés",,35.0,4.7,0.043,definitif
+2014,Taxe sur les terrains non bâtis,"DGCT, agrégats publiés",,20.0,2.7,0.025,definitif
+2014,Taxe hôtelière,"DGCT, agrégats publiés",,19.0,2.6,0.023,definitif
+2015,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",,222.0,27.3,0.247,definitif
+2015,Taxe sur les immeubles bâtis,"DGCT, agrégats publiés",,36.0,4.4,0.04,definitif
+2015,Taxe sur les terrains non bâtis,"DGCT, agrégats publiés",,22.0,2.7,0.024,definitif
+2015,Taxe hôtelière,"DGCT, agrégats publiés",,13.0,1.6,0.014,definitif
+2016,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",,232.0,27.2,0.243,definitif
+2016,Taxe sur les immeubles bâtis,"DGCT, agrégats publiés",,41.0,4.8,0.043,definitif
+2016,Taxe sur les terrains non bâtis,"DGCT, agrégats publiés",,25.0,2.9,0.026,definitif
+2016,Taxe hôtelière,"DGCT, agrégats publiés",,13.0,1.5,0.014,definitif
+2017,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",,262.0,28.4,0.257,definitif
+2017,Taxe sur les immeubles bâtis,"DGCT, agrégats publiés",,43.0,4.7,0.042,definitif
+2017,Taxe sur les terrains non bâtis,"DGCT, agrégats publiés",,27.0,2.9,0.026,definitif
+2017,Taxe hôtelière,"DGCT, agrégats publiés",,17.0,1.8,0.017,definitif
+2018,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",,292.0,27.9,0.258,definitif
+2018,Taxe sur les immeubles bâtis,"DGCT, agrégats publiés",,46.0,4.4,0.041,definitif
+2018,Taxe sur les terrains non bâtis,"DGCT, agrégats publiés",,27.0,2.6,0.024,definitif
+2018,Taxe hôtelière,"DGCT, agrégats publiés",,24.0,2.3,0.021,definitif
+2019,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",,314.0,26.9,0.255,definitif
+2019,Taxe sur les immeubles bâtis,"DGCT, agrégats publiés",,76.0,6.5,0.062,definitif
+2019,Taxe sur les terrains non bâtis,"DGCT, agrégats publiés",,33.0,2.8,0.027,definitif
+2019,Taxe hôtelière,"DGCT, agrégats publiés",,29.0,2.5,0.024,definitif
+2020,Taxe sur les établissements (TCL),Somme des budgets des communes,,,,,definitif
+2020,Taxe sur les immeubles bâtis,Somme des budgets des communes,,,,,definitif
+2020,Taxe sur les terrains non bâtis,Somme des budgets des communes,,,,,definitif
+2020,Taxe hôtelière,Somme des budgets des communes,,,,,definitif
+2021,Taxe sur les établissements (TCL),Somme des budgets des communes,,,,,situation_au_2021-12-25
+2021,Taxe sur les immeubles bâtis,Somme des budgets des communes,,,,,situation_au_2021-12-25
+2021,Taxe sur les terrains non bâtis,Somme des budgets des communes,,,,,situation_au_2021-12-25
+2021,Taxe hôtelière,Somme des budgets des communes,,,,,situation_au_2021-12-25
+2022,Taxe sur les établissements (TCL),Somme des budgets des communes,,359.9,26.0,0.258,definitif
+2022,Taxe sur les immeubles bâtis,Somme des budgets des communes,,44.4,3.2,0.032,definitif
+2022,Taxe sur les terrains non bâtis,Somme des budgets des communes,,43.5,3.1,0.031,definitif
+2022,Taxe hôtelière,Somme des budgets des communes,,24.7,1.8,0.018,definitif
+2023,Taxe sur les établissements (TCL),Somme des budgets des communes,,400.1,27.5,0.267,provisoire_au_2024-01-10
+2023,Taxe sur les immeubles bâtis,Somme des budgets des communes,,42.9,2.9,0.029,provisoire_au_2024-01-10
+2023,Taxe sur les terrains non bâtis,Somme des budgets des communes,,36.3,2.5,0.024,provisoire_au_2024-01-10
+2023,Taxe hôtelière,Somme des budgets des communes,,39.8,2.7,0.027,provisoire_au_2024-01-10
+1990,Taxe sur les établissements (TCL),"Banque mondiale, rapport de 1997",,10.4,8.3,,publie
+1990,Taxe hôtelière,"Banque mondiale, rapport de 1997",,4.8,3.8,,publie
+1992,Taxe sur les établissements (TCL),"Banque mondiale, rapport de 1997",,19.2,11.2,,publie
+1992,Taxe hôtelière,"Banque mondiale, rapport de 1997",,5.8,3.4,,publie
+1994,Taxe sur les établissements (TCL),"Banque mondiale, rapport de 1997",,24.2,12.4,,publie
+1994,Taxe hôtelière,"Banque mondiale, rapport de 1997",,8.4,4.3,,publie
+1995,Taxe sur les établissements (TCL),"Banque mondiale, rapport de 1997",,26.2,12.8,,publie
+1995,Taxe hôtelière,"Banque mondiale, rapport de 1997",,8.1,4.0,,publie
+1996,Taxe sur les établissements (TCL),"Banque mondiale, rapport de 1997",,28.7,13.0,,publie
+1996,Taxe hôtelière,"Banque mondiale, rapport de 1997",,8.8,4.0,,publie
