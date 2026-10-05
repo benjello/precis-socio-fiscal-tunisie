@@ -1,4 +1,4 @@
-"""Figures « taux de cotisation d'équilibre du régime des salariés non agricoles », 2000-2017,
+"""Figures « taux de cotisation d'équilibre du régime des salariés non agricoles », 2000-2018,
 précédées, sans raccord, de la CAVIS (tout le secteur privé) en 1980 et 1985-1991.
 
     from figures import taux_equilibre_rsna as ter
@@ -42,8 +42,12 @@ triangulaires creuses, aucun trait à travers 1981-1984 ni 1992-1999 (fond hachu
 décomposition, un panneau propre en base 100 en 1985 : un indice commun ferait lire 1991 → 2000
 comme une évolution mesurée, alors que ni la source ni le périmètre ne sont les mêmes.
 
-De 2000 à 2017, la masse salariale déclarée est publiée chaque année par le même annuaire. Les chiffres cités dans le texte du chapitre se
-recalculent depuis `table()`.
+De 2000 à 2017, la série retient l'annuaire 2017 ; en 2018, l'annuaire 2018.
+Les actifs imprimés en 2018 (1 289 940) sont égaux aux salariés déclarés alors que le
+tableau salarial imprime aussi 950 non-assujettis : la décomposition en deux facteurs
+utilise les actifs publiés sans ajouter les 950, avec réserve dans la note de lecture.
+Le taux pensions ÷ masse salariale ne dépend pas de ce désaccord. Les chiffres cités
+dans le texte du chapitre se recalculent depuis `table()`.
 """
 from __future__ import annotations
 
@@ -85,18 +89,18 @@ BASE_BM, BASE = 1985, 2000
 _L = {
     "titre_taux": {
         "fr": "Régime des salariés non agricoles : taux de cotisation d'équilibre\n"
-              "et taux légal de la branche pensions, 1980-2017",
+              "et taux légal de la branche pensions, 1980-2018",
         "ar": "نظام الأجراء غير الفلاحيين: نسبة المساهمة المحقّقة للتوازن\n"
-              "والنسبة القانونية لفرع الجرايات، 1980-2017"},
+              "والنسبة القانونية لفرع الجرايات، 1980-2018"},
     "titre_decomp": {
         "fr": "Régime des salariés non agricoles : décomposition du taux d'équilibre,\n"
-              "en indices, 1980-2017",
+              "en indices, 1980-2018",
         "ar": "نظام الأجراء غير الفلاحيين: تفكيك نسبة التوازن،\n"
-              "مؤشرات، 1980-2017"},
+              "مؤشرات، 1980-2018"},
     "panneau_bm": {"fr": "CAVIS, tout le privé, 1980, 1985-1991 :\nbase 100 en 1985",
                    "ar": "صندوق تأمين الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع بجراية،\nكامل القطاع الخاص، 1980، 1985-1991: أساس 100 سنة 1985"},
-    "panneau_rec": {"fr": "Salariés non agricoles, 2000-2017 :\nbase 100 en 2000",
-                    "ar": "الأجراء غير الفلاحيين، 2000-2017:\nأساس 100 سنة 2000"},
+    "panneau_rec": {"fr": "Salariés non agricoles, 2000-2018 :\nbase 100 en 2000",
+                     "ar": "الأجراء غير الفلاحيين، 2000-2018:\nأساس 100 سنة 2000"},
     "trou": {"fr": "1992-1999 :\naucune donnée", "ar": "1992-1999:\nلا معطيات"},
     "lg_tau_bm": {"fr": "Taux d'équilibre de la CAVIS, tout le secteur privé, 1980 et 1985-1991\n"
                         "(Banque mondiale, 1993 ; masse = cotisations ÷ taux du régime ; sans raccord)",
@@ -106,8 +110,8 @@ _L = {
                 "ar": "النسبة القانونية، 1980-1991: 5 %، ثمّ 8 % سنة 1988 (تتطابق القراءتان)"},
     "lg_bm": {"fr": "1980, 1985-1991 : CAVIS, tout le secteur privé (Banque mondiale, 1993)",
               "ar": "1980، 1985-1991: صندوق تأمين الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع بجراية،\nكامل القطاع الخاص (البنك الدولي، 1993)"},
-    "lg_ann": {"fr": "2000-2017 : salariés non agricoles (annuaires de la caisse)",
-               "ar": "2000-2017: الأجراء غير الفلاحيين (الكتب الإحصائية للصندوق)"},
+    "lg_ann": {"fr": "2000-2018 : salariés non agricoles (annuaires de la caisse)",
+                "ar": "2000-2018: الأجراء غير الفلاحيين (الكتب الإحصائية للصندوق)"},
     "x": {"fr": "Année", "ar": "السنة"},
     "y_taux": {"fr": "% de la masse salariale déclarée", "ar": "% من كتلة الأجور المصرّح بها"},
     "y_indice": {"fr": "Indice (échelle logarithmique)",
@@ -189,7 +193,7 @@ def _suites(annees):
 
 
 def _donnees():
-    """{année: {clé: valeur, 'src_num': …, 'src_den': …}}, 1980, 1985-1991, 2000-2017.
+    """{année: {clé: valeur, 'src_num': …, 'src_den': …}}, 1980, 1985-1991, 2000-2018.
 
     Les années 1980-1991 n'ont pas `tau_rc` ; seules elles ont `pc` : les lire par `.get`."""
     df = figtools.series(SERIE)
@@ -239,7 +243,7 @@ def table():
 
 def _indices():
     """Indices du taux d'équilibre et de ses deux facteurs, chaque période sur sa base :
-    CAVIS 1980 et 1985-1991 en base 100 en 1985, RSNA 2000-2017 en base 100 en 2000."""
+    CAVIS 1980 et 1985-1991 en base 100 en 1985, RSNA 2000-2018 en base 100 en 2000."""
     d = _donnees()
     out = {}
     for a, v in d.items():

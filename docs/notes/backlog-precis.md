@@ -1,6 +1,6 @@
 # Ce qui reste à faire, livre par livre
 
-**Révisé le 30 septembre 2026.** Cette note rassemble les chantiers encore visibles dans les
+**Révisé le 5 octobre 2026.** Cette note rassemble les chantiers encore visibles dans les
 chapitres, les dossiers documentaires et les issues ; elle permet de choisir le prochain
 texte à lire. Une piste « faisable » signifie que le **support** est accessible, pas que
 son contenu a déjà été vérifié : seul l'article lu autorise à corriger le précis.
@@ -24,7 +24,7 @@ extraits des lois de finances sont dans le dossier voisin `PDFs/Lois_de_Finances
 
 | Livre | État du texte | Première lecture faisable |
 |---|---|---|
-| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) ; TVA : déductions, régime suspensif et obligations encore à rédiger | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
+| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées ; déductions, régime suspensif et obligations encore à rédiger | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; PNAFN historique sans sources pour ses onze dates et montants | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
@@ -64,6 +64,14 @@ présent localement : vérifier ses annexes sur l'image après OCR. Le code fisc
 attend encore trois développements : déductions (art. 9-11), régime suspensif et
 obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO` de
 `precis/fr/fiscalite/_tva.qmd`. Ne pas les confondre avec une simple reprise de forme.
+Les réformes de 1988 à 2026 sont rédigées d'après `docs/notes/fiscalite-tva-reformes.md` ;
+son § 8 énumère ce qui reste non établi, et qui n'est donc pas écrit au chapitre : date
+d'effet des lois de finances pour 1989 à 1993 (lues à l'image, muettes sur une date
+spéciale), tableaux annexés « L », « M », « M bis », « P » et annexe 5 de la LF 2016 (non lus ;
+leur présence et leur lisibilité au corpus restent à vérifier fascicule par fascicule), articles 23 à 26 de la LF 1989 (OCR en colonnes entrelacées, à relire à
+l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_cache`), et les
+144 décrets de l'article 8 signés de 1988 à 1997, connus par leur seul intitulé. La fiche
+`r-tva-mise-en-application-post-1989` reste ouverte.
 
 - **Impôt sur la fortune (`_impot_fortune.qmd`, chapitre ouvert le 4 octobre 2026)** sur la
   note `docs/notes/fiscalite-impot-fortune.md`. Textes lus : LF 2014 art. 55 et LFC 2014
@@ -137,6 +145,18 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 
 ## Retraites
 
+- **Taux d'équilibre et figures du RSNA prolongés à 2018 (5 octobre 2026).**
+  L'annuaire CNSS 2018 français transmis par l'utilisateur est lisible dans sa
+  couche texte (PDF 16, 43-44) : salaires et pensions de 2018 ajoutés à la série
+  dérivée de `tunisia-data`, puis aux figures du taux, de sa décomposition,
+  du salaire moyen et de la pension moyenne. Les années 2000-2017 gardent
+  leurs valeurs et leur provenance de l'édition 2017. **Écart à élucider
+  auprès de la CNSS** : 1 289 940 actifs, note « y compris les non assujettis »
+  (PDF 43-44), contre 1 289 940 salariés + 950 non-assujettis (PDF 16).
+  Les facteurs démographique et de remplacement retiennent les actifs imprimés
+  avec une réserve visible ; le taux pensions ÷ masse salariale n'en dépend pas.
+  Au-delà de 2018, les annuaires sont à obtenir ; support non présent dans le
+  corpus local exploité. Fiche : `tunisia-data/sources/cnss-annuaires.md`.
 - **Résultat de la branche des pensions du RSNA, 1990-2004 — fait le 3 octobre 2026** (`#fig-rsna-resultat-1990-2004`, dans `#sec-rsna-equilibre`), tiré de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026). Le tableau de cette branche n'a pas d'estimation (la colonne 2000 y est rétablie par les totaux) ; si une relecture de l'original change ses montants, relire la note de lecture. Piste : le même tableau existe pour les autres régimes (RSA, RSAA, RTNS) et pour le régime complémentaire. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches).
 - **Réallocations du taux global sur la figure du résultat RSNA — fait le 3 octobre 2026** (`#fig-rsna-resultat-1990-2004`) : trois lignes aux 1er janvier 1988, 1994 et 2003 (décrets n° 88-1137, 94-1429, 2003-1212), dates du précis, identiques à celles des notes du document (pp. 14, 15, 60) ; libellés en taux de la branche selon la caisse (5 → 8, 8 → 10, 11,5 → 12,5 %), quote-parts en vingtièmes dans la note de lecture. Texte lisible dans le corpus (décrets déjà lus pour `#sec-rsna-financement`). Reste : le même tableau pour les autres régimes (RSA, RSAA, RTNS) et le régime complémentaire.
 - **Point clos sur la source primaire** : l'article 2 de la loi n° 2019-37 remplace
@@ -329,6 +349,27 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 
 ## Cotisations sociales
 
+- **Accidents du travail par activité et taux légal — nuages de points ajoutés le 5 octobre 2026**
+  (`#fig-atmp-secteurs`, chapitre `_accidents_travail.qmd`). Le rapport CNAM
+  2023, PDF arabe lisible, porte la fréquence des accidents avec arrêt par
+  activité (PDF 15), le nombre d'accidents (PDF 13) et celui des décès
+  (PDF 26) pour 2021–2023 ; les séries sont conservées séparément dans
+  `tunisia-data`. Dix activités ont un point de l'article 2 du décret
+  n° 99-1010 qui leur correspond par le libellé et porte un taux unique ;
+  rapprochement éditorial, non correspondance administrative vérifiée.
+  Quinze autres rubriques agrègent plusieurs taux, ne recoupent pas les
+  intitulés du barème ou n'ont pas de ligne de décès ; établir le passage par les codes AT/MP auprès de la
+  CNSS/CNAM avant de les inclure. Pour 2023, la fréquence utilise les
+  assujettis de 2022 ; décès par secteur lisibles pour 22 activités, les
+  trois absentes n'étant pas interprétées comme nulles. Première vue :
+  taux légal en x, fréquence des accidents avec arrêt pour 1 000 travailleurs
+  en y ; seconde : accidents mortels pour 1 000 accidents déclarés en y,
+  ajustement linéaire et corrélation de Pearson non pondérés par année et sur
+  les dix seules activités retenues. Ce second ratio n'est pas un taux de
+  mortalité par travailleur. Le barème de 1999
+  n'est pas une série de taux effectivement acquittés de 2021 à 2023 :
+  modificatifs à rechercher (`r-atmp-echelle-modificatifs`) et modulation
+  des taux à documenter (art. 10–27 du décret n° 95-538).
 - **Autres prélèvements sur les salaires — rédigé le 5 octobre 2026** (`_prelevements_salaires.qmd`,
   `#sec-cot-prelevements-salaires`, après `_taux_global.qmd`) : TFP et contribution au FOPROLOS,
   taux en tableau engendré (`tbl-tfp-foprolos`, openfisca-tunisia 0.119, #478) ; les
@@ -762,7 +803,7 @@ l'information.
 | `_impot_societes.qmd` | conforme | — |
 | `_impot_fortune.qmd` | conforme ; s'achève sur une case vide (aucune série de rendement) | traduction arabe à déclarer dans le `_quarto.yml` AR |
 | `_droits_consommation.qmd` | historique remonté en tête | la chronologie du périmètre reste un tableau sans récit texte par texte — signalé, non confirmé |
-| `_tva.qmd` | historique sorti de l'attaque | déductions, achats en suspension et obligations restent à écrire sur les articles du code |
+| `_tva.qmd` | conforme au plan type : historique, architecture de 1988, évolution réforme par réforme, longue période | déductions, achats en suspension et obligations restent à écrire sur les articles du code ; le tableau des générations de taux est fait main, à engendrer quand la série législative des taux sera complète en amont |
 | `_impot_revenu.qmd` | conforme, à sa manière | rien sur la forme ; restent deux sections à ÉCRIRE, voir plus bas |
 | `retraites/_secteur_*.qmd` | **rangés par mécanisme, et c'est bien** | ne pas y appliquer le plan type |
 | `_regime_indiciaire.qmd` | fait le travail sous d'autres noms | ne rien reprendre sur la forme |
