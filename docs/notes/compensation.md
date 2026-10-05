@@ -161,3 +161,40 @@ Lu sur couche texte le 5 octobre 2026 (carburants, ressources, séries) :
   1994-1998 : 319 ; 346 ; 418 ; 378 ; 375 MD, soit 2,0 ; 2,0 ; 2,2 ; 1,8 ; 1,7 % du PIB ; dette de
   la CGC : 95 ; 155 ; 302 ; −80 ; −80 **[S]**. Les deux tableaux divergent pour 1994 (247 contre
   319) : périmètres différents, à ne pas raccorder sans explication.
+
+Rapports annuels « Finances publiques » (تقرير المالية العمومية, ministère des Finances, arabe,
+`portail_ancien/rapports_finances_publiques/`), lus à l'image le 5 octobre 2026 — dépenses de
+compensation (الدعم) du budget de l'État, MD **[T]** :
+
+| Année | Total | Produits de base | Carburants | Transport | Fichier, page PDF (page imprimée) |
+|---|---|---|---|---|---|
+| 2003 | 328,8 (somme) | 217,8 | — | 111,0 | `2005_rapport_finances_publiques.pdf`, p. 38 (37) |
+| 2004 | 523,0 (somme) | 200,0 | 203,0 | 120,0 | idem |
+| 2005 | 788,9 (somme) ; 790 | 240,9 ; 244 | 414,0 ; 414 | 134,0 ; 132 | idem ; `2008_…pdf`, p. 37 (35) |
+| 2006 | 933 | 287 | 500 | 146 | `2008_rapport_finances_publiques.pdf`, p. 37 (35) |
+| 2007 | 1 281 | 668 | 450 | 163 | idem |
+| 2008 | 2 036 | 1 048 | 806 | 182 | idem |
+| 2009 | 1 430,0 | 800,0 | 430,0 | 200,0 | `2011_finances_publiques.pdf`, p. 30 (26) |
+| 2010 | 1 500,0 | 730,0 | 550,0 | 220,0 | idem |
+| 2011 | 2 869,2 | 1 100,0 | 1 536,0 | 233,2 | idem |
+
+- Le rapport 2005 ne porte **aucune** dépense de compensation des carburants en 2003 (tiret) et
+  203 MD en 2004 : c'est l'entrée des carburants dans la compensation budgétaire, concordante
+  avec le rapport de 2014 (« depuis 2004 »).
+- Écarts 2005 entre le rapport 2005 (240,9 / 414,0 / 134,0) et le rapport 2008 (244 / 414 / 132) :
+  à signaler, non arbitrés.
+- Rapport 2011, p. 30 : la compensation de 2011 représente **4,4 % du PIB** et 61 % des dépenses
+  de développement ; produits de base 2011 : céréales 833,7, huile 214,4, lait 23,1, sucre 10,8,
+  papier scolaire 4,3, autres 13,7 (2009 : céréales 687,0, huile 109,0 ; 2010 : 613,0 et 112,7) ;
+  carburants 2011 par entreprise : ETAP 572,0, STEG 540,0, STIR 424,0. P. 31 : besoins totaux du
+  système carburants-électricité 2011 ≈ 2 568 MD, dont subvention budgétaire 1 536.
+- Rapport 2010 (`2010_rapport_finances_publiques.pdf`, p. 32, couche texte, non relu à l'image) :
+  compensation 2010 = 2,4 % du PIB et 33 % des dépenses de développement **[T°]**.
+- Rapport 2008, annexe 23 (p. 151) : suivi du XIe Plan 2007-2011 — compensation prévue au Plan
+  (928 ; 929 ; 919 ; 912 ; 909 MD) contre réalisée (1 282,4 ; 2 036,0 ; 1 430,0 ; LF 2010
+  1 500,0), avec PIB (2007 : 45 628,7 ; 2008 : 50 324,9 MD) et total du budget : de quoi calculer
+  les parts **[T]**.
+- Rapport 2011, p. 19 : la CGC figure encore parmi les comptes spéciaux du Trésor, pour des
+  recettes affectées de **36,6 MD (2009), 30,2 (2010), 31,6 (2011)** — sans commune mesure avec la
+  dépense (1 430 à 2 869 MD), qui passe donc par le budget. Même page : « taxe compensatoire sur
+  le transport » (المعلوم التعويضي على النقل) 97,4 ; 105,1 ; 101,7 MD **[T]**.
