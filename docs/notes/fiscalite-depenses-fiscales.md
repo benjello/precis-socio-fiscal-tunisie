@@ -60,7 +60,7 @@ promulgation p. 2174, code à partir de la p. 2174 ; pages 2175 à 2178 lues à 
 |---|---|---|
 | 7 § 1 (p. 2175) | incitations communes | dégrèvement des revenus ou bénéfices réinvestis dans la souscription au capital, dans la limite de 35 % des revenus ou bénéfices nets imposables |
 | 9 (p. 2175) | incitations communes, équipements | droits de douane réduits à 10 % ; suspension de la TVA et du droit de consommation |
-| 12 § 6 et 7 (p. 2176) | **entreprises totalement exportatrices** | revenus et bénéfices de l'exportation déduits **en totalité pendant les dix premières années** à partir de la première opération d'exportation, puis à **50 %**, sans limite de durée |
+| 12 § 6 et 7 (p. 2176) | **entreprises totalement exportatrices** | revenus et bénéfices de l'exportation déduits **en totalité pendant les dix premières années** à partir de la première opération d'exportation, puis à **50 %** ; le texte de 1993 ne fixe pas de terme à cette seconde période |
 | 16 (p. 2176) | idem | ventes sur le marché local plafonnées à 20 % du chiffre d'affaires |
 | 22 § 2 et 3 (p. 2177) | exportateurs partiels | même schéma sur les revenus de l'exportation : 100 % dix ans, puis 50 % |
 | 23 § 2 (p. 2177) | **développement régional** | déduction totale pendant dix ans à partir de l'entrée en production, puis 50 % pendant les dix années suivantes |
@@ -70,6 +70,8 @@ promulgation p. 2174, code à partir de la p. 2174 ; pages 2175 à 2178 lues à 
 L'article 10 (p. 2176) définit l'entreprise totalement exportatrice ; l'article 14, sa qualité
 de non-résidente quand 66 % au moins du capital sont détenus par des non-résidents au moyen
 de devises — d'où l'appellation courante de régime « offshore », que le code n'emploie pas.
+La Banque mondiale (2014, ch. 4) décrit ce régime comme « 50 % pendant dix autres
+années » : un plafonnement postérieur est possible, il n'est pas établi ici.
 La date d'entrée en vigueur du code n'a été lue qu'à travers l'OCR de la loi de promulgation
 (mention du 1^er^ janvier 1994 pour les entreprises existantes) : à relire à l'image, p. 2174.
 
@@ -181,20 +183,37 @@ rapport arabe — image lue ; p. 6 du PDF pour le rapport 2021 — texte lu) :
 
 | Exercice (rapport) | Avantages fiscaux, MD | % du PIB | % du budget de l'État | % des ressources fiscales | Avantages financiers, MD | Total, MD | Total, % du PIB |
 |---|---|---|---|---|---|---|---|
-| 2019 (LF 2021) | 4 712 | 4,14 | 11,15 | 16,3 | 932 | 5 644 | 4,96 |
+| 2019 (LF 2021) | 4 712 | 4,14 | 11,15 | 16,3 (introduction) ; 19,15 (tableau n° 4) | 932 | 5 644 | 4,96 |
 | 2020 (LF 2022) | 4 225 | 3,6 | 8,95 | 18,06 | 702 | 4 927 | 4,21 |
 | 2021 (LF 2023) | 7 745 | 5,92 | 13,95 | 25,13 | 642 | 8 387 | 6,41 |
 | 2022 (LF 2024) | 6 361 | 4,40 | 12,49 | 17,94 | 544 | 6 905 | 4,77 |
 | 2023 (LF 2025) | 6 164,7 | 3,89 | 10,31 | 16,20 | 520,7 | 6 685,4 | 4,22 |
+
+Le rapport 2021 donne deux ratios différents pour 2019 : 16,3 % des « ressources fiscales »
+dans l'introduction (p. 6), et 4 712 / 24 602,4 = 19,15 % des recettes fiscales au tableau
+n° 4 (p. 29) ; le dénominateur de l'introduction n'est pas établi.
 
 Rapport 2021, tableau n° 3 (p. 28 du PDF, texte lu) : total des dépenses fiscales 3 787,8 MD
 en 2017, 4 882,7 MD en 2018, 4 712,3 MD en 2019.
 
 **Trois réserves, à porter dans le chapitre** :
 
-1. **Le périmètre change en 2024.** Une note de bas de page des rapports 2024 et 2025 (p. 7)
-   précise que le montant est donné sans les dépenses fiscales au titre de l'exonération des
-   médicaments et des engrais. La série n'est donc pas homogène de part et d'autre.
+1. **Le périmètre change entre le rapport 2021 et les rapports 2024 et 2025.** Une note de
+   bas de page de ces deux derniers (p. 7) précise que le montant est donné sans les dépenses
+   fiscales au titre de l'exonération des médicaments et des engrais. Le rapport 2021 les
+   compte : son tableau n° 9 donne pour 2019 274,5 MD de médicaments et articles paramédicaux
+   et 249,9 MD d'engrais. Les CSV traités suivent le périmètre de chaque rapport — leurs
+   sommes par impôt redonnent l'agrégat publié (6 360,6 pour 6 361 en 2022 ; 6 164,6 pour
+   6 164,7 en 2023) — et, dans le détail, les lignes dont le libellé nomme médicaments,
+   pharmacie ou engrais passent de 321,8 MD en 2019 (huit lignes, rapport 2021) à 32,1 MD en
+   2020 (quatre lignes, rapport 2024) puis 0,0 MD en 2023 (trois lignes, rapport 2025).
+   **La couture 2019/2020 de la série traitée est donc une rupture de périmètre de plusieurs
+   centaines de millions de dinars**, et non un simple changement de source. Deux textes du
+   dépôt disent aujourd'hui le contraire et sont à corriger : le docstring de
+   `precis/fr/fiscalite/figures/depenses_fiscales.py` (« ce ne sont pas des ruptures de
+   niveau, mais des changements de source ») et la fiche
+   `~/projets/tunisia-data/sources/gbo-depenses-fiscales.md`, qui ne mentionne pas cette
+   exclusion. Le périmètre des rapports 2022 et 2023 sur ce point n'a pas été vérifié.
 2. **Les rapports se révisent.** Exercice 2021 : 7 745 MD dans le rapport 2023, contre
    5 871,5 MD (somme par impôt du rapport 2024) et 5 872,3 MD (rapport 2025). Exercice 2020 :
    4 225 MD dans le rapport 2022, 4 795,5 MD dans le rapport 2024. L'écart de 2021 est trop
@@ -211,7 +230,7 @@ en 2017, 4 882,7 MD en 2018, 4 712,3 MD en 2019.
   (45 lignes : rapport, impôt, année, montant en MD, dispositifs recensés et valorisés) ;
 - `~/projets/tunisia-data/data/processed/precis/depenses_fiscales_detail_2017_2023.csv`
   (3 162 lignes : un dispositif par ligne, code à neuf chiffres, forme, libellé, montant) ;
-- contrôle effectué ici : les totaux par impôt du CSV pour 2017-2019 coïncident avec le
+- contrôle effectué ici (sur le rapport 2021 seulement) : les totaux par impôt du CSV pour 2017-2019 coïncident avec le
   tableau n° 3 du rapport 2021 (IRPP 65,3 / 73,5 / 6,7 ; IS 559,7 / 551,2 / 350,5 ; TVA
   1 326,4 / 1 616,8 / 1 532,8 ; douanes 382,3 / 834,8 / 815 ; consommation 1 454,1 / 1 806,4 /
   2 007,3) ;
@@ -414,9 +433,9 @@ Vérifier que `lf-2011` et `lf-2013` pointent les fascicules cités ici.
   {"id": "banquemondiale2014-revolution-inachevee", "type": "report",
    "title": "The Unfinished Revolution: Bringing Opportunity, Good Jobs and Greater Wealth to All Tunisians",
    "author": [{"literal": "World Bank"}], "publisher": "World Bank", "publisher-place": "Washington, DC",
-   "number": "86179-TN", "issued": {"date-parts": [[2014]]},
+   "issued": {"date-parts": [[2014]]},
    "URL": "https://www.worldbank.org/content/dam/Worldbank/document/MNA/tunisia_report/the_unfinished_revolution_eng_chap4.pdf",
-   "note": "citation-key: banquemondiale2014-revolution-inachevee\nChapitre 4 ; p. 140-145 et note 10 (p. 164) lues le 5 octobre 2026 (tableaux 4.2 et 4.3, figure 4.4). Numéro de rapport et mois (mai 2014) repris de mémoire du catalogue, à contrôler ; une édition française existe, non consultée. Chiffres tirés d'IFC et ECOPA (2012), rapport préliminaire non publié."},
+   "note": "citation-key: banquemondiale2014-revolution-inachevee\nChapitre 4 ; p. 140-145 et note 10 (p. 164) lues le 5 octobre 2026 (tableaux 4.2 et 4.3, figure 4.4). Numéro de rapport et mois de parution non relevés (le PDF du chapitre a été produit le 22 septembre 2014 d'après ses métadonnées) ; à relever sur la notice de la Banque. Édition française non consultée. Chiffres tirés d'IFC et ECOPA (2012), rapport préliminaire non publié."},
   {"id": "loeprick2014-incitations-fiscales", "type": "speech",
    "title": "Incitations fiscales – coûts/bénéfices et l'expérience mondiale",
    "author": [{"family": "Loeprick", "given": "Jan"}],
@@ -510,6 +529,11 @@ lus : à signaler comme tels, sans entrée propre.
     1993, art. 25 ; loi n° 99-59 du 30 juin 1999, intitulé seul) : compté parmi les avantages
     financiers ; à croiser avec le volume « Cotisations sociales ».
 11. **Loi n° 2019-47** et décret gouvernemental n° 2017-389 : intitulés seuls.
+12. **LF 2015, loi n° 2014-59, art. 18** (« mesures de soutien des entreprises totalement
+    exportatrices », JORT n° 105 de 2014, p. 3464) : intitulé seul. Le constat « 10 % appliqué
+    à partir de 2014 » suppose qu'aucun texte postérieur à la loi de finances pour 2013 n'a
+    touché à ce calendrier ; cet article est le premier à ouvrir pour s'en assurer.
+13. **Terme de la déduction de 50 %** des exportateurs entre 1993 et 2006 (voir § 1.2).
 
 ## 8. Recherches infructueuses — fiches proposées, non versées dans `docs/recherches.yml`
 
@@ -535,9 +559,10 @@ lus : à signaler comme tels, sans entrée propre.
       sources: [jort_cache]
       couverture: >-
         intitulés de jort_cache seuls : aucun titre ne porte « dépenses fiscales », en
-        français ni en arabe, et aucun arrêté des Finances signé du 1er au 15 novembre 2017
-        n'y figure sous ce filtre (ministere ou titre contenant « finances ») ; aucun
-        fascicule lu, plein texte non lancé. L'arrêté peut ne pas avoir été publié.
+        français ni en arabe ; aucun des 29 arrêtés signés du 1er au 15 novembre 2017 que
+        connaît la base ne porte la date du 8 (le champ ministere y est vide, il ne peut
+        servir de filtre). Aucun fascicule lu, plein texte non lancé. L'arrêté peut ne pas
+        avoir été publié.
       couvert_jusqu_au: 2017-12-31
       resultat: aucun
   a_faire: plein texte des fascicules de novembre et décembre 2017 du corpus local
