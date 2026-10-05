@@ -52,7 +52,9 @@ figtools.register_provenance(
     SERIE,
     titre="Augmentations générales des salaires de la fonction publique, par catégorie",
     titre_ar="الزيادات العامة في أجور الوظيفة العمومية، حسب الصنف",
-    sources=list(aug.DECRETS),
+    # Les seuls décrets du relevé tracé : DECRETS porte aussi ceux de l'indemnité de
+    # gestion et d'exécution (1993-2013), qui ne sont pas dans cette série.
+    sources=[k for k in aug.DECRETS if k in {r["texte"] for r in aug.charge(CSV)}],
     unite="dinars par mois (montants fixés par décret)",
     unite_ar="دينار في الشهر (مبالغ محدّدة بأمر)",
     perimetre="agents de l'État, des collectivités locales et des établissements publics "
