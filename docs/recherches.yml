@@ -851,3 +851,68 @@
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
   a_faire: ['consulter les lois de règlement du budget 2023 et 2024, et les publications statistiques de la DGI']
+
+- id: r-tfp-decret-1957
+  objet: décret du 16 janvier 1957 fixant le taux, les modalités et l'affectation de la taxe de formation professionnelle (JORT n° 6 du 18 janvier 1957, p. 79 selon jort_cache), et son taux initial
+  ou: [precis/fr/cotisations_sociales/_prelevements_salaires.qmd#sec-cot-tfp-taux]
+  requetes:
+    titres_fts: ['"formation professionnelle" AND taxe']
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist]
+    couverture: 'métadonnées trouvées dans jort_cache (recid 107959). Le fascicule de janvier 1957 n''est disponible ni dans le corpus local ni sur pist.tn : Jo00657.pdf est le n° 6 du 13 août 1957 (nouvelle série républicaine, ouverte le 26 juillet 1957 avec Jo00157), même fichier en ligne (HTTP 200, 1 760 594 octets). Éditions arabes de 1957 non examinées. Décret n° 64-234 (complément) lu ; décret n° 66-527 lu (taux de 2 % au 1er janvier 1967). Note : docs/notes/cotisations-prelevements-salaires.md, § 7.'
+    couvert_jusqu_au: 1957-01-18
+    resultat: aucun
+  a_faire:
+  - examiner les éditions arabes de janvier 1957
+  - chercher le décret du 16 janvier 1957 dans une autre collection du JORT (bibliothèque, archives)
+
+- id: r-tfp-exclusions-handicapes-etranger
+  objet: texte excluant de l'assiette de la taxe de formation professionnelle les salaires des handicapés et les rémunérations de l'emploi à l'étranger (cités par la note commune DGI n° 5/2015 sans référence)
+  ou: [precis/fr/cotisations_sociales/_prelevements_salaires.qmd#sec-cot-tfp-redevables]
+  requetes:
+    titres_fts: ['"formation professionnelle" AND taxe']
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'intitulés des textes relatifs à la TFP de 1956 à 2026 dans jort_cache parcourus ; textes lus : loi de finances pour 1989, art. 29 ; pour 2003, art. 36 ; pour 2011, art. 28 ; pour 2013, art. 21. Non cherchés : loi d''orientation n° 2005-83 (handicap), code de l''IRPP et de l''IS (revenus de source étrangère).'
+    couvert_jusqu_au: 2026-06-19
+    resultat: aucun
+  a_faire:
+  - lire la loi d'orientation n° 2005-83 relative aux personnes handicapées
+  - lire l'art. 36 du code de l'IRPP et de l'IS (revenus de source étrangère)
+
+- id: r-tfp-foprolos-taux-recents
+  objet: texte modifiant le taux de la taxe de formation professionnelle (1 % / 2 %) ou de la contribution au FOPROLOS (1 %) après la loi n° 88-145
+  ou:
+  - precis/fr/cotisations_sociales/_prelevements_salaires.qmd#sec-cot-tfp-taux
+  - precis/fr/cotisations_sociales/_prelevements_salaires.qmd#sec-cot-foprolos-taux
+  requetes:
+    titres_like: ['%formation professionnelle%taxe%', '%logement%salari%', '%التكوين المهني%', '%المسكن لفائدة%']
+    plein_texte: [taxe de formation, logement pour les salari, logements pour les salari, الأداء على التكوين, النهوض بالمسكن]
+    depuis: 1989-01-01
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'plein texte des 40 premières pages des fascicules des lois de finances : 2015 n° 104 (AR scanné, FR absent), 2016 n° 105, 2017 n° 101, 2018 n° 104 (FR absent), 2019 n° 104 (FR absent), 2020 n° 128, 2021 n° 119, 2022 n° 141 (FR absent), 2023 n° 144 (FR absent), 2024 n° 149 (FR absent), 2025 n° 148. Les éditions AR sans couche texte utile (2015, 2016) n''ont pas été lues. Les lois de finances complémentaires, et les lois de finances de 1990 à 2014 hors celles citées dans la note, n''ont été couvertes que par les intitulés.'
+    couvert_jusqu_au: 2025-12-12
+    resultat: aucun
+  a_faire:
+  - lire les lois de finances de 1990 à 2014 et les lois de finances complémentaires en plein texte
+  - lire à l'image les éditions AR de 2015 et 2016
+
+- id: r-foprolos-art3-redaction
+  objet: rédaction de l'art. 3 de la loi n° 77-54 en vigueur après l'art. 38 de la loi n° 88-145 (qui y mettait fin), complétée par la loi de finances pour 2006 (art. 54) et celle pour 2023 (art. 57)
+  ou: [precis/fr/cotisations_sociales/_prelevements_salaires.qmd#sec-cot-foprolos-redevables]
+  requetes:
+    titres_fts: [(logement OR logements) AND (salaries OR salarie) AND (fonds OR promotion)]
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'textes relatifs au FOPROLOS de 1977 à 2026 dans jort_cache (intitulés) ; lus : loi de finances pour 1989, art. 35-38 ; pour 1991, art. 48 ; pour 2006, art. 54 ; pour 2023, art. 57.'
+    couvert_jusqu_au: 2026-06-19
+    resultat: aucun

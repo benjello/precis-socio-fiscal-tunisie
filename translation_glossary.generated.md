@@ -23,6 +23,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Assujetti | الخاضع للأداء |  |
 | Assuré social | المضمون الاجتماعي |  |
 | Augmentation optionnelle de l'âge de mise à la retraite | الترفيع الاختياري في سنّ الإحالة على التقاعد |  |
+| Avance sur la taxe de formation professionnelle | التسبقة على الأداء على التكوين المهني |  |
 | Avancement d'échelon | الترقّي في الدرجة |  |
 | Avantage en nature | الامتياز العيني |  |
 | Ayant droit | ذو الحقّ |  |
@@ -54,6 +55,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Compte de diversification des sources de sécurité sociale | حساب تنويع مصادر الضمان الاجتماعي |  |
 | Condition de ressources | شرط الموارد |  |
 | Contrat-programme | عقد البرنامج |  |
+| Contribution au fonds de promotion du logement pour les salariés | المساهمة الراجعة لصندوق النهوض بالمسكن لفائدة الأجراء | FOPROLOS |
 | Contribution aux frais de crèche | المساهمة في مصاريف رياض الأطفال |  |
 | Contribution personnelle d'État | الضريبة الشخصية للدولة | CPE |
 | Contribution sociale de solidarité | المساهمة الاجتماعية التضامنية | CSS |
@@ -200,6 +202,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Taux réduit de la TVA | النسبة المخفضة |  |
 | Taux spécifique | نسبة نوعية |  |
 | Taxe à la production | الأداء على الإنتاج |  |
+| Taxe de formation professionnelle | الأداء على التكوين المهني | TFP |
 | Taxe sur la valeur ajoutée | الأداء على القيمة المضافة | TVA |
 | Taxe sur les bières, vins et autres boissons alcoolisées | الأداء على الجعة والخمور والمشروبات الكحولية الأخرى |  |
 | Taxe sur les prestations de service | الأداء على الخدمات |  |

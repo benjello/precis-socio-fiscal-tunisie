@@ -310,6 +310,21 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
 
 ## Cotisations sociales
 
+- **Autres prélèvements sur les salaires — rédigé le 5 octobre 2026** (`_prelevements_salaires.qmd`,
+  `#sec-cot-prelevements-salaires`, après `_taux_global.qmd`) : TFP et contribution au FOPROLOS,
+  taux et assiette en tableaux faits main (`tbl-tfp-taux`, `tbl-foprolos-taux`) en attendant
+  openfisca-tunisia#477. Note : `docs/notes/cotisations-prelevements-salaires.md`. Ouvert :
+  taux de la TFP de 1957 à 1966 (décret du 16 janvier 1957, fascicule ni dans le corpus ni sur
+  pist.tn, `r-tfp-decret-1957`) ; assiette de la TFP avant 1989 (décret de 1957, code du travail
+  de 1966, art. 364-365 : JORT n° 22/1966 lisible au corpus, à l'image) ; date d'effet de la LF
+  2003 ; exclusions handicapés et emploi à l'étranger sans texte (`r-tfp-exclusions-handicapes-etranger`) ;
+  exonérations des régimes d'incitation non inventoriées ; décret n° 94-492 (industries
+  manufacturières) non lu ; prélèvements sur le fonds de 2011-2013 connus par leurs intitulés
+  seulement ; rendement : aucune série — prévisions des tableaux « ت » des LF 2016-2019 à
+  relever (LF 2018 lue), réalisations à chercher dans les lois de règlement et les rapports de
+  la DGI. **Arabe** : chapitre déclaré en commentaire dans `precis/ar/cotisations_sociales/_quarto.yml`,
+  à décommenter à la livraison de la traduction.
+
 - **Découpé en chapitres le 4 octobre 2026** (déplacement seul, aucune valeur changée, ancres
   gardées) : `index.qmd` (« Présentation » : introduction, conventions, présentation générale,
   encadré des caisses), `_assiette.qmd`, `_taux_global.qmd`, partie « Les branches, une à une »

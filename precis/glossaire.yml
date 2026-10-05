@@ -5494,3 +5494,75 @@ entries:
         ويتولّى الوزير المكلّف بالضمان الاجتماعي الأمر بصرف نفقاته، وتُوزَّع
         موارده على الصناديق حسب معايير تُضبط بقرار منه.
       synonymes: []
+
+  - id: tfp
+    acronyme: TFP
+    statut: valide
+    references: [decret-1956-01-12-formation-professionnelle, decret66-527]
+    source_definition: {ref: loi-88-145-lf-1989, locator: "art. 29-30"}
+    source_traduction: {ref: loi-88-145-lf-1989, locator: "art. 29-30"}
+    voir_aussi: [foprolos, avance-tfp]
+    fr:
+      terme: Taxe de formation professionnelle
+      definition: >
+        Prélèvement à la charge de l'employeur, institué en 1956, assis
+        depuis 1989 sur les salaires et rétributions versés, au taux de 1 %
+        dans les industries manufacturières et de 2 % dans les autres
+        secteurs. Son produit alimente depuis 2000 un fonds spécial du Trésor
+        consacré à la formation professionnelle.
+      synonymes: []
+    ar:
+      terme: الأداء على التكوين المهني
+      definition: >
+        أداء محمول على المؤجّر، أُحدث سنة 1956، ويُوظَّف منذ سنة 1989 على
+        الأجور والمرتّبات المدفوعة بنسبة 1 % في الصناعات المعملية و2 % في
+        القطاعات الأخرى. يموّل محصوله منذ سنة 2000 صندوقًا خاصًّا في الخزينة
+        مخصَّصًا للتكوين المهني.
+      synonymes: []
+
+  - id: foprolos
+    acronyme: FOPROLOS
+    statut: valide
+    references: [loi77-54]
+    source_definition: {ref: loi77-54, locator: "art. 1-2"}
+    source_traduction: {ref: loi-88-145-lf-1989, locator: "art. 35"}
+    voir_aussi: [tfp]
+    fr:
+      terme: Contribution au fonds de promotion du logement pour les salariés
+      definition: >
+        Prélèvement dû par tout employeur, public ou privé, à l'exception des
+        exploitants agricoles privés, institué en 1977 au taux de 2 % des
+        salaires soumis à cotisation sociale, ramené en 1989 à 1 % des
+        salaires et rétributions. Il alimente un fonds qui finance l'accès
+        des salariés au logement.
+      synonymes: [Contribution au FOPROLOS]
+    ar:
+      terme: المساهمة الراجعة لصندوق النهوض بالمسكن لفائدة الأجراء
+      definition: >
+        اقتطاع محمول على كلّ مؤجّر عمومي أو خاصّ، باستثناء المستغلّين
+        الفلاحيين الخواصّ، أُحدث سنة 1977 بنسبة 2 % من الأجور الخاضعة
+        للمساهمات الاجتماعية، ثمّ خُفّض سنة 1989 إلى 1 % من الأجور
+        والمرتّبات. يموّل صندوقًا يساعد الأجراء على الحصول على مسكن.
+      synonymes: []
+
+  - id: avance-tfp
+    acronyme: null
+    statut: provisoire
+    references: [decret2009-292]
+    source_definition: {ref: loi2007-69, locator: "art. 27"}
+    voir_aussi: [tfp]
+    fr:
+      terme: Avance sur la taxe de formation professionnelle
+      definition: >
+        Crédit d'impôt ouvert depuis 2009 aux entreprises qui forment leur
+        personnel, imputable sur la taxe de formation professionnelle dans la
+        limite de 60 % de la taxe due au titre de l'année précédente, lorsque
+        celle-ci atteint au moins 1 000 dinars.
+      synonymes: []
+    ar:
+      terme: التسبقة على الأداء على التكوين المهني
+      definition: >
+        قرض جبائي مفتوح منذ سنة 2009 للمؤسسات التي تكوّن أعوانها، يُطرح من
+        الأداء على التكوين المهني في حدود 60 % من الأداء المستوجب بعنوان السنة
+        السابقة، إذا بلغ هذا الأداء 1000 دينار على الأقلّ.
+      synonymes: []
