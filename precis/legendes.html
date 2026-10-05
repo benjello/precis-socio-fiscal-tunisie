@@ -17,6 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const refs = document.getElementById("refs");
   if (!refs || refs.closest("details")) return;
+  // Un livre qui regroupe sa bibliographie dans une annexe « Références » (rémunérations
+  // publiques) voit Quarto masquer la liste de fin de chapitre : ne rien replier, sans quoi le
+  // bloc s'ouvrirait sur une liste invisible.
+  if (getComputedStyle(refs).display === "none") return;
   const n = refs.querySelectorAll(".csl-entry").length;
   if (!n) return;
   // Une page qui n'est faite que de la bibliographie (annexe « Références ») reste dépliée.
