@@ -497,10 +497,10 @@ période. Notes documentaires : `docs/notes/marche-travail-smig-smag.md`,
 - **Taux des accords-cadres UGTT-UTICA** (1990-2023) : aucun texte au *Journal officiel* ; fiche
   `r-accords-cadres-ugtt-utica`. À obtenir hors corpus (archives d'*Echaab*, ministère des affaires
   sociales, OIT).
-- **Décrets des secteurs non couverts** : seuls 2009-693 et 2026-69 lus ; les douze autres
-  (1989-2023) sont lisibles dans le corpus (couche texte à vérifier pour 1989-1996, OCR probable)
-  ; 2018-674 et 2019-456 ont un intitulé arabe seul en base. Le tableau `tbl-mt-non-couverts` est
-  fait main (TODO rédacteur) en attendant.
+- **Décrets des secteurs non couverts** : 2009-693, 2019-456 et 2026-69 lus ; les autres
+  (1989-2023) sont au corpus (couche texte à vérifier pour 1989-1996, OCR probable) ; 2018-674 n'a
+  qu'un intitulé arabe en base, 2019-456 n'est pas dans jort_cache.db (lu au fascicule). Le tableau
+  `tbl-mt-non-couverts` est fait main (TODO rédacteur) en attendant.
 - **Couverture conventionnelle et grilles** : aucune source chiffrée de la part des salariés
   couverts ; aucune grille lue (textile, BTP, commerce, hôtellerie). Avenants agréés lisibles au
   corpus (JORT, couche texte selon l'année).

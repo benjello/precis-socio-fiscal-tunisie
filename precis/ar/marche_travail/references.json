@@ -876,7 +876,6 @@
           ]
         ]
       },
-      "language": "en",
       "URL": "https://www.ilo.org/media/266996/download",
       "accessed": {
         "date-parts": [
@@ -910,7 +909,6 @@
           ]
         ]
       },
-      "language": "en",
       "URL": "https://www.ilo.org/media/267011/download",
       "accessed": {
         "date-parts": [
@@ -935,8 +933,7 @@
       ],
       "publisher": "منظمة العمل الدولية",
       "publisher-place": "Genève",
-      "number": "ICLS/21/2023/RES. I",
-      "genre": "21st International Conference of Labour Statisticians (Geneva, 11–20 October 2023), Resolution I",
+      "genre": "ICLS/21/2023/RES. I — 21st International Conference of Labour Statisticians (Geneva, 11–20 October 2023), Resolution I",
       "issued": {
         "date-parts": [
           [
@@ -946,7 +943,6 @@
           ]
         ]
       },
-      "language": "en",
       "URL": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40dgreports/%40stat/documents/normativeinstrument/wcms_901516.pdf",
       "accessed": {
         "date-parts": [
@@ -1118,6 +1114,85 @@
       },
       "URL": "https://www.pist.tn/jort/2025/2025A/Ja0152025.pdf",
       "note": "citation-key: arrete-2025-02-04-cc-espaces-commerciaux\nJORT n° 15 (publication du 2025-02-05), p. 312. Notice de jort_cache.db (recid 195617) ; texte non relu ici. URL tirée du champ pdf_ar."
+    },
+    {
+      "id": "decret2017-669",
+      "type": "legislation",
+      "title": "Décret gouvernemental n° 2017-669 du 5 juin 2017, fixant le salaire minimum agricole garanti",
+      "title-short": "Décret gouvernemental n° 2017-669 du 5 juin 2017",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "45",
+      "page": "2047",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            6,
+            5
+          ]
+        ]
+      },
+      "note": "citation-key: decret2017-669\nJORT n° 45 du 6 juin 2017, p. 2047 (notice de jort_cache.db, recid 77456). L'adresse de l'édition française de ce fascicule sur pist.tn (2017F/Jo0452017.pdf) sert l'édition arabe (vérifié sur le fichier du corpus local le 5 octobre 2026) : entrée française sans URL.",
+      "URL": "https://www.pist.tn/jort/2017/2017A/Ja0452017.pdf"
+    },
+    {
+      "id": "decret2019-454",
+      "type": "legislation",
+      "title": "Décret gouvernemental n° 2019-454 du 28 mai 2019, fixant le salaire minimum interprofessionnel garanti dans les secteurs non agricoles régis par le code du travail",
+      "title-short": "Décret gouvernemental n° 2019-454 du 28 mai 2019",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "43",
+      "page": "1585-1586",
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            28
+          ]
+        ]
+      },
+      "note": "citation-key: decret2019-454\nJORT n° 43 du 28 mai 2019, pp. 1585-1586 de l'édition française (pp. 1681-1682 de l'édition arabe, notice jort_cache.db recid 118538, qui ne porte que l'adresse arabe). Relu au fascicule français du corpus local le 5 octobre 2026 : 403,104 D (48 heures) et 343,892 D (40 heures) par mois ; effet le 1er mai 2019. URL française absente de jort_cache.db : non reportée.",
+      "URL": "https://www.pist.tn/jort/2019/2019A/Ja0432019.pdf"
+    },
+    {
+      "id": "decret2019-455",
+      "type": "legislation",
+      "title": "Décret gouvernemental n° 2019-455 du 28 mai 2019, fixant le salaire minimum agricole garanti",
+      "title-short": "Décret gouvernemental n° 2019-455 du 28 mai 2019",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "43",
+      "page": "1586-1587",
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            28
+          ]
+        ]
+      },
+      "note": "citation-key: decret2019-455\nJORT n° 43 du 28 mai 2019, pp. 1586-1587 de l'édition française (p. 1683 de l'édition arabe, notice jort_cache.db recid 118539, adresse arabe seule). Relu au fascicule français du corpus local le 5 octobre 2026 : 15,504 D par journée ; effet le 1er mai 2019. URL française absente de jort_cache.db : non reportée.",
+      "URL": "https://www.pist.tn/jort/2019/2019A/Ja0432019.pdf"
+    },
+    {
+      "id": "decret2019-456",
+      "type": "legislation",
+      "title": "Décret gouvernemental n° 2019-456 du 28 mai 2019, portant majoration des salaires dans les secteurs non agricoles régis par le code du travail et non couverts par des conventions collectives sectorielles ou par des statuts particuliers",
+      "title-short": "Décret gouvernemental n° 2019-456 du 28 mai 2019",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "43",
+      "page": "1587-1588",
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            28
+          ]
+        ]
+      },
+      "note": "citation-key: decret2019-456\nJORT n° 43 du 28 mai 2019, pp. 1587-1588 de l'édition française. Absent de jort_cache.db ; relu au fascicule français du corpus local le 5 octobre 2026 : majoration horaire de 155 à 199 millimes (exécution, hors salariés au SMIG), 228 millimes (maîtrise), 298 millimes (cadres) ; effet le 1er mai 2019. Sans URL."
     }
   ]
 }

@@ -12,7 +12,7 @@ tunisia-data au 5 octobre 2026 (notes docs/notes/marche-travail-smig-smag.md, §
 
 ## Le SMIG en dinars courants {#sec-mt-lp-nominal}
 
-Le SMIG mensuel du régime de 48 heures passe de 15,808 dinars en 1961 à 554,736 dinars au 1er janvier 2026, et le décret de 2026 le porte à 611,520 dinars au 1er janvier 2028 [@decret61-145, art. 6; @decret2026-67, art. 1] (@fig-mt-lp-nominal). Le SMAG, rapporté à vingt-six journées, suit une trajectoire voisine et rejoint celle du SMIG de 48 heures en décembre 2012 (@sec-mt-lp-rapports).
+Le minimum horaire de 1961, 76 millimes, représente 15,808 dinars sur 208 heures, la durée mensuelle du régime de 48 heures [@decret61-145, art. 6] ; le SMIG mensuel de ce régime atteint 554,736 dinars au 1er janvier 2026, et le décret de 2026 le porte à 611,520 dinars au 1er janvier 2028 [@decret2026-67, art. 1] (@fig-mt-lp-nominal). Le SMAG, rapporté à vingt-six journées, suit une trajectoire voisine et rejoint celle du SMIG de 48 heures en décembre 2012 (@sec-mt-lp-rapports).
 
 ```{python}
 #| label: fig-mt-lp-nominal
