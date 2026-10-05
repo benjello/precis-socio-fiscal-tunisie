@@ -38,13 +38,13 @@
 Lois modifiant le code, contrôlées pour leurs articles : 69-16 (art. 234, 236, 240), 70-20
 (médaille du travail), 76-84 (art. 376), 91-15 (art. 445), 93-66 (art. 5 bis), 94-29 (contrats,
 prud'hommes, sanctions, conflits ; **ni 31-52, ni 134**), 96-62 (dont 79 et 134), 2006-18,
-2007-19, 2025-9 (contrats) **[T]**. Aucune de ces lois ne touche les articles 31 à 52. Non
+2007-19, 2025-9 (contrats ; recherche des articles 31-52 et 134 dans son texte : aucun) **[T]**. Aucune de ces lois ne touche les articles 31 à 52 ; les lois non ouvertes ci-dessous ne sont pas couvertes par ce constat. Non
 ouvertes : 73-77, 77-55, 88-55, 2011-4 (art. 234, sanctions), décrets-lois 2011-51, 2020-2,
 2021-11 (titres seuls ; aucun ne vise les articles 31-52 ou 134 dans son intitulé).
 
 **Correction d'un corpus.** `PDFs-legislation-tunisie/data/conventions_collectives/smig_smag.yaml`
 cite comme cadre « art. 134 et 234 » : l'article 234 est un article de **sanctions** (rédaction de
-la loi n° 94-29, p. 1638 du texte extrait) ; il ne fonde pas le SMIG.
+la loi n° 94-29, JORT n° 15 du 22 févr. 1994, p. 323) ; il ne fonde pas le SMIG.
 
 ### 1.3 Les deux régimes horaires (40 h et 48 h)
 
@@ -79,15 +79,15 @@ est à corriger.
 | Effet | Indemnité | Montant | Sort | Source | Niv. |
 |---|---|---|---|---|---|
 | 1971-05-01 | cherté de vie (non agricole) | 0,020 D/h ; 4 D/mois | hors cotisations et prestations (art. 5) ; **intégrée au SMIG au 1er janv. 1974** (74-63, art. 1) | 71-164 ; 74-63 | [T] |
-| 1981-04-01 | complémentaire provisoire | 10 D/mois | hors assiette (81-437, art. 7 ; loi n° 81-36) ; assimilée à une hausse du SMIG pour les pensions | 81-437 | [T] |
+| 1981-04-01 | complémentaire provisoire | 10 D/mois | hors assiette (81-437, art. 7 [T] ; loi n° 81-36 [M]) ; assimilée à une hausse du SMIG pour les pensions | 81-437 | [T] |
 | 1989-08-01 | spéciale SMIG / SMAG | 3 D/mois ; 0,115 D/j | hors assiette (89-1551 art. 5 ; 89-1552 art. 4) | JORT n° 69, 17 oct. 1989, p. 1632 | [T°] |
 | 1991-08-01 | spéciale SMIG / SMAG | 5 D/mois ; 0,215 D/j | idem ; **intégrées au 1er mai 1992** (92-1299 art. 3 ; 92-1300 art. 3) | JORT n° 63, 17 sept. 1991, pp. 1580-1581 | [T] |
 
 ### 1.6 Ruptures de l'indexation et du calendrier
 
-- **Pas d'indexation automatique en vigueur** : 74-63, art. 4 prévoyait une variation selon le
-  coût de la vie par arrêté ; aucune revalorisation postérieure n'est prise par arrêté — toutes le
-  sont par décret (relevé `jort_cache.db`, titres « salaire minimum », 1974-2026) **[M]**.
+- **Pas d'indexation automatique identifiée** : 74-63, art. 4 prévoyait une variation selon le
+  coût de la vie par arrêté ; les titres de `jort_cache.db` (« salaire minimum », 1974-2026) ne
+  font apparaître que des décrets, aucun arrêté de variation **[M]**.
 - **Intervalles sans hausse** (déjà établis) : 1er janv. 1983 → 1er juill. 1986 ; 1er juill. 2012
   → 1er mai 2014 ; 1er oct. 2020 → 1er oct. 2022 ; 1er oct. 2022 → 1er mai 2024
   (`retraites-revalorisation.md` § 2.3).
@@ -97,6 +97,14 @@ est à corriger.
   (5 janv. 2021, effet 1er oct. 2020), 2026-67 (30 avril 2026, effet 1er janv. 2026) **[T]**.
 - **Lien SMIG-pensions** : 2026-67 art. 6 et 2026-66 art. 5 — première clause d'extension expresse
   aux pensions (`retraites-revalorisation.md` § 1.10).
+
+### 1.6 bis Loi de finances pour 2026, article 15
+
+Loi n° 2025-17 du 12 décembre 2025, JORT n° 148, édition arabe, p. 4233 (l'adresse française sert
+l'arabe) **[T]** : « يتم الترفيع في الأجور والمرتبات في القطاعين العام والخاص بعنوان سنوات 2026
+و2027 و2028. ينسحب الترفيع على جرايات المتقاعدين. يتم ضبط الترفيع في الأجور والمرتبات وجرايات
+المتقاعدين بمقتضى أمر. » La loi ne fixe **aucun taux** : elle renvoie au décret (2026-63 à
+2026-69). URL : `https://www.pist.tn/jort/2025/2025A/Ja1482025.pdf`.
 
 ### 1.7 Ce qui était hors champ du SMIG
 
@@ -109,7 +117,7 @@ est à corriger.
 
 Séries `smig_48h_mensuel`, `smig_40h_mensuel`, `smig_48h_horaire`, `smig_40h_horaire`,
 `smag_journalier` (openfisca-tunisia `master`, commit `e8548797`, 5 oct. 2026) : 1961-2028 pour le
-SMIG (60 dates), 1964-2028 pour le SMAG (58 dates). Elles ont été corrigées le 11 septembre 2026
+SMIG (56 dates), 1964-2028 pour le SMAG (58 dates). Elles ont été corrigées le 11 septembre 2026
 (commit `51443dff`, indemnités spéciales séparées, séries complétées jusqu'en 2028) ; les
 issues #403 et #407 restent **ouvertes** sur GitHub.
 
@@ -127,10 +135,10 @@ pas une erreur) ; base + ICP = SMIG sur 2008-2014.
 | 4 | `smig_*` | 1961-04-01, 1966-01-01 | 76 / 84 millimes | taux de la **zone I** seulement ; zone II : 60 / 66 millimes, jusqu'au 1er mai 1968 | zonage non représenté | [T]/[T°] |
 | 5 | `smig_48h_mensuel` (réf.) | 1968-05-01 | « décret n° 68-97 du 15 avril **1969** » | décret du 15 avril **1968** ; il ne fixe aucun montant (suppression de la zone II) | intitulé | [T°] |
 | 6 | `smig_48h_mensuel` (réf.) | 1961-04-01, 1966-01-01 | « fixant le salaire minimum… » | 61-145 : « relèvement général des salaires » ; 65-561 : « relèvement des salaires dans l'industrie, le commerce et les professions libérales » | intitulés | [T] |
-| 7 | `indemnite_complementaire_provisoire` | 1981-04-07 | date de **signature** | effet **1er avril 1981** (81-437, art. 10) | date | [T] |
-| 8 | `indemnite_complementaire_provisoire` | 1982-02-01 | **30** (un seul montant) | 30,368 D en 48 h, 30 D en 40 h ; 146 / 173 millimes l'heure (92-1299 et 2002-1790, art. 2) | valeur 48 h | [T] |
-| 9 | `majoration_smig_48h_mensuel`, `_40h_` | 1982-03-16 | date de **signature** | effet **1er février 1982** (82-501, art. 13) | date ; et recouvrement avec # 8 (la majoration est déjà dans les 30,368 / 30 D) | [T] |
-| 10 | `salaire_de_base_*` | — | 2008-2014 seulement | composition publiée par chaque décret depuis 1992 (art. 2) ; ex. 2002 : 172,224 / 146,799 D, 828 / 847 m | série tronquée | [T] |
+| 7 | `indemnite_complementaire_provisoire` (lu par aucune formule) | 1981-04-07 | date de **signature** | effet **1er avril 1981** (81-437, art. 10) | date | [T] |
+| 8 | `indemnite_complementaire_provisoire` (idem) | 1982-02-01 | **30** (un seul montant) | 30,368 D en 48 h, 30 D en 40 h ; 146 / 173 millimes l'heure (92-1299 et 2002-1790, art. 2) | valeur 48 h | [T] |
+| 9 | `majoration_smig_48h_mensuel`, `_40h_` (lus par aucune formule) | 1982-03-16 | date de **signature** | effet **1er février 1982** (82-501, art. 13) | date ; et recouvrement avec # 8 (la majoration est déjà dans les 30,368 / 30 D) | [T] |
+| 10 | `salaire_de_base_*` (lus par aucune formule) | — | 2008-2014 seulement | composition publiée par chaque décret depuis 1992 (art. 2) ; ex. 2002 : 172,224 / 146,799 D, 828 / 847 m | série tronquée | [T] |
 | 11 | `smig_*` (réf.) | 2019-05-01 | URL `Décret_2020_1069_fr.pdf`, `Décret_2019_455_fr.pdf` | JORT n° 43 du 28 mai 2019, pp. 1681-1684 [M] : `https://www.pist.tn/jort/2019/2019F/Jo0432019.pdf` (contenu de l'URL non vérifié) | URL | [M] |
 | 12 | `smag_journalier` (réf.) | 2012-07-01, 2016-08-01 | sans référence | 2012-1982 (art. 1, 1er tiret) ; 2017-669 | référence manquante | [T]/[M] |
 | 13 | `smig_*` (réf.) | 2016-08-01 | `2017F/Jo0452017.pdf` | l'URL française sert l'édition arabe | URL | [T] |
@@ -138,7 +146,8 @@ pas une erreur) ; base + ICP = SMIG sur 2008-2014.
 Sans écart, vérifiés ici : SMAG 1964 (0,350, arrêté du 24 déc. 1963, effet 1er janv. 1964
 [T°]), 1966 (0,385, arrêté du 31 déc. 1965 [T]), 1968 (0,500, 68-113 [T°]), 1971 (0,600, 71-163
 [T°]), 1974 (0,800 [T°]), 1975 (0,900 [T°]), 1978 (1,332 [T°]), 1979 (1,440 [T°]), 1980-02-01
-(1,483 [T°]) ; SMIG 1974-1980 (74-63 [T], 75-357, 77-115, 78-441, 79-473, 80-75, 80-609 [T°]),
+(1,483, avec une majoration uniforme de 43 millimes par jour, 80-76 art. 1-2, JORT n° 5 du
+25 janv. 1980, p. 204 [T]) ; SMIG 1974-1980 (74-63 [T], 75-357, 77-115, 78-441, 79-473, 80-75, 80-609 [T°]),
 2002-2005 [T]. Les écarts déjà ouverts (#403, #407) ne sont pas repris.
 
 ## 4. Références
@@ -189,9 +198,6 @@ Côté arabe : mêmes entrées, titre arabe officiel à relever sur `data/iort/t
 
 ## 7. Lacunes
 
-- **Loi de finances pour 2026, article 15** (visé par 2026-63 à 2026-69) : édition française
-  absente (le fichier `2025F/Jo1482025.pdf` sert l'arabe) ; la couche texte arabe ne rend pas le
-  numéro d'article. À lire à l'image, n° 148 du 12 déc. 2025 (édition arabe).
 - Rectificatif du code (JORT n° 27/1966, p. 960) non lu.
 - Arrêté du 30 avril 1956 et décret du 30 avril 1956 (rémunération des ouvriers agricoles,
   JORT n° 35/1956, pp. 601-604) : socle du SMAG avant 1974, non lus.
@@ -202,17 +208,5 @@ Côté arabe : mêmes entrées, titre arabe officiel à relever sur `data/iort/t
 ## 8. Recherches infructueuses
 
 Aucune fiche existante de `docs/recherches.yml` ne porte sur le SMIG (vérifié par
-`uv run python scripts/recherches.py lister`). Fiche proposée (non versée) :
-
-```yaml
-- id: r-lf2026-article-15-salaires
-  objet: Loi n° 2025-17 (LF 2026), article 15 — fondement des décrets 2026-63 à 2026-69
-  ou: JORT n° 148 du 12 décembre 2025, édition arabe
-  requetes:
-    - {source: plein_texte, terme: "الفصل 15", note: "pdftotext -layout Ja1482025.pdf : aucun résultat"}
-  passes:
-    - date: 2026-10-05
-      resultat: aucun
-      couverture: "couche texte arabe du seul n° 148/2025 ; l'édition française servie à l'adresse F est l'arabe ; pas de lecture à l'image"
-      couvert_jusqu_au: 2025-12-12
-```
+`uv run python scripts/recherches.py lister`). Aucune fiche proposée : l'article 15 de la LF 2026,
+seul objet manquant au départ, a été lu (§ 1.6 bis).

@@ -19,15 +19,20 @@
 
 ## a.2 Les rounds, lisibles au *Journal officiel* par trois familles de textes
 
-Aucun accord cadre UGTT-UTICA n'est publié au JORT : `titre like '%UGTT%'`, `'%UTICA%'`,
-`'%Union Generale Tunisienne du Travail%'` et FTS `UGTT OR UTICA`, `accord AND salaires` ne
-renvoient aucun texte **[M]**. Les rounds se lisent par leurs
-textes d'application :
+Hormis la convention cadre de 1973 (accord UTICA-UGTT publié avec son arrêté d'agrément, JORT
+n° 21/1973), les accords salariaux des rounds **ne sont pas identifiés** par les titres de
+`jort_cache` : `titre like '%UGTT%'`, `'%UTICA%'`, `'%Union Generale Tunisienne du Travail%'` et
+FTS `UGTT OR UTICA`, `accord AND salaires` ne renvoient aucun texte **[M]**. Les rounds se lisent
+par leurs textes d'application :
 
 1. **Avenants salariaux des conventions sectorielles** (arrêtés d'agrément) — pics en 1983,
    1989-1990, 1993, 1996, 1999, 2002, 2006, 2009, 2013-2014 (voir la note conventions, § 2) **[M]**.
 2. **Décrets de majoration des salaires dans les secteurs non couverts** par une convention
-   (agents d'exécution, maîtrise, cadres, en millimes l'heure et dinars par mois) **[M]** :
+   (agents d'exécution, maîtrise, cadres, en millimes l'heure et dinars par mois) **[M]**. Liste
+   tirée de `titre like` (français) et du FTS `"الترفيع في الأجور" OR (majoration AND salaires AND
+   couverts)` ; les décrets à titre arabe seul (2018-674, 2019-456) peuvent en cacher d'autres,
+   notamment pour 2011-2012, 2014-2015, 2020, 2022 et 2024, années de hausse du SMIG sans décret
+   de cette famille identifié :
 
 | Décret | JORT (n°, date, pages) | Remarque |
 |---|---|---|
@@ -50,13 +55,15 @@ textes d'application :
 
 3. **Décrets « portant approbation des augmentations des salaires » des entreprises publiques
    régies par le statut général** — leurs titres datent les rounds : 91-246 (n° 15/1991, p. 328),
-   94-1223 (n° 44/1994, p. 936), 97-2309 (n° 98/1997, pp. 2164-2165), 2001-1997 (« période
+   94-1223 (n° 44/1994, p. 936), 97-2309 (n° 98/1997, pp. 2164-2165) ; pour la fonction publique,
+   les décrets 96-1907 et suivants fixent « l'augmentation globale des salaires durant la période
+   1996-1998 » ; 2001-1997 (« période
    1999-2001 », n° 70/2001), 2003-1932 (« 2002-2004 », n° 73/2003), 2007-825 (« 2005-2007 »,
    n° 29/2007), 2010-1176 (« 2008-2010 », n° 43/2010), 2013-4159 (« 2011-2012 », n° 82/2013),
    2026-64 (n° 44/2026, pp. 832-834) **[M]**. Ils relèvent du volume (b) mais **datent les rounds
    triennaux** communs au privé.
 
-**Chronologie des rounds [D]** : 1990-1992 (?), 1993-1995, 1996-1998, 1999-2001, 2002-2004,
+**Chronologie des rounds [D]** : 1990-1992 (non daté par un titre), 1993-1995, 1996-1998, 1999-2001, 2002-2004,
 2005-2007, 2008-2010, 2011-2012, puis négociations annuelles ou biennales (2014, 2016-2017,
 2018-2019, 2022-2023) — déduite des dates ci-dessus ; **aucun taux** d'accord UGTT-UTICA n'est
 établi ici sur pièce.
@@ -72,8 +79,12 @@ de la loi de finances pour 2026** (loi n° 2025-17) **[T]** :
 - 2026-69 : secteurs non couverts, montants fixes par catégorie, trois paliers **[T]** ;
 - 2026-66 / 2026-67 : SMAG et SMIG +5 % par an (note SMIG-SMAG) **[T]**.
 
-C'est, pour le privé couvert par une convention, la première hausse générale fixée **par décret**
-sur trois ans, sans avenant négocié. L'UGTT conteste ce mode de fixation, en invoquant l'art. 134
+**Précédent** : de 1977 à 1980, les décrets SMIG majoraient déjà, par décret, tous les salaires
+« légaux, conventionnels ou statutaires » d'un montant uniforme (77-115, art. 2 : +48 m/h et
++10 D/mois ; de même 78-441, 79-473, 80-75, 80-609) **[T°]**. Ce qui est nouveau en 2026 : un
+**pourcentage pluriannuel** (5 % par an sur 2026-2028) appliqué aux **grilles** des conventions
+sectorielles, fondé sur l'article 15 de la LF 2026, qui ne fixe lui-même aucun taux (JORT n° 148
+du 12 déc. 2025, éd. arabe, p. 4233) **[T]**. L'UGTT conteste ce mode de fixation, en invoquant l'art. 134
 (article de la Chaab News, 12 nov. 2025, corpus `ugtt_chronologie.yaml`, post 10884) **[U]** — à
 présenter, s'il y a lieu, comme position d'une partie.
 
@@ -152,8 +163,6 @@ Existantes : `decret-2022-797`, `decret2026-63`, `decret2026-65`, `decret2022-76
 
 - **Taux des accords cadres UGTT-UTICA** (1990 → 2023) : aucune source primaire. Pistes : archives
   de *Echaab*, rapports annuels du ministère des affaires sociales, études (Ben Sedrine ; OIT).
-- **Article 15 de la LF 2026** : non lu (édition arabe seule ; fiche proposée dans la note
-  SMIG-SMAG).
 - **Montants des décrets « secteurs non couverts »** 1989-2023 : seuls 2009-693 et 2026-69 lus.
 - **Effet budgétaire** des augmentations publiques par cycle : non établi par texte ; seuls les
   agrégats de masse salariale existent.
@@ -162,16 +171,19 @@ Fiche proposée (non versée) :
 
 ```yaml
 - id: r-accords-cadres-ugtt-utica
-  objet: Accords cadres UGTT-UTICA de négociation salariale (secteur privé), taux et dates par round
-  ou: JORT (jort_cache.db, titres) et corpus local data/ugtt, data/conventions_collectives
+  objet: accords cadres UGTT-UTICA de négociation salariale du secteur privé (taux et dates par round), postérieurs à la convention collective cadre de 1973
+  ou: [docs/notes/marche-travail-negociations.md]
   requetes:
-    - {source: titres_like, terme: "%UGTT%"}
-    - {source: titres_like, terme: "%UTICA%"}
-    - {source: titres_fts, terme: "accord AND salaires"}
-    - {source: titres_fts, terme: "UGTT OR UTICA"}
+    titres_fts: ['UGTT OR UTICA', 'accord AND salaires']
+    titres_like: ['%UGTT%', '%UTICA%', '%Union Generale Tunisienne du Travail%']
+    depuis: 1973-06-01
   passes:
-    - date: 2026-10-05
-      resultat: aucun
-      couverture: "titres jort_cache 1956-2026 ; corpus UGTT 2016-2026 (posts de presse, pas de texte d'accord cadre) ; archives de presse et rapports ministériels non consultés"
-      couvert_jusqu_au: 2026-04-30
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local, presse]
+    couverture: 'titres et objets de jort_cache (FTS et LIKE) ; corpus local data/ugtt et data/conventions_collectives (posts de presse syndicale 2016-2026, aucun texte d''accord cadre) ; plein texte des fascicules non parcouru ; archives de presse antérieures à 2016 et rapports du ministère des affaires sociales non consultés'
+    couvert_jusqu_au: 2026-04-30
+    resultat: aucun
 ```
+
+(`ou` pointe provisoirement vers cette note : aucune ancre n'existe encore dans un `.qmd`.)

@@ -21,9 +21,8 @@ agricole a **trois étages** — le SMIG (décret) ; les **grilles des conventio
 majoration** (« secteurs non couverts par des conventions collectives », voir la note sur les
 négociations).
 
-Commission consultative des conventions collectives : art. 49-50 du code ; composition par arrêté
-du Premier ministre du 29 mai 1973 (Ferjani Bel Hadj Ammar, Chedli Zalila, Habib Achour, Sadok
-Allouche, titulaires), même fascicule, p. 852 **[T]**.
+Commission consultative des conventions collectives : art. 49-50 du code ; composition (UTICA,
+UGTT) par arrêté du Premier ministre du 29 mai 1973, même fascicule, p. 852 **[T]**.
 
 ## 2. Couverture : combien de conventions, quand
 
@@ -32,7 +31,7 @@ Relevé `jort_cache.db` (titres contenant « convention collective », 1956-2026
 | Période | Événement | Volume |
 |---|---|---|
 | 1969-1971 | premières conventions agréées (hôtels-cafés-restaurants, 2 juill. 1969 ; salines, 1971) | 2 |
-| 1974-1977 | **vague d'agréments** après la convention cadre : textile, mécanique-électricité, imprimerie, construction métallique (29 août 1974), BTP, pétrole, pâtes, boissons (mars 1975), cuirs, ports, matériaux, lait, bonneterie-confection, confiserie, chaussure, hôtellerie, conserves, savonneries, peinture, minoterie, explosifs, presse, fonderie-métallurgie, assurances, commerce de matériaux (1975), boulangerie, commerce de gros et détail, pharmacies, plastique, teintureries (1976), produits d'entretien, parfumerie, cafés-bars-restaurants, bois-meuble, cinémas (1977) | 59 arrêtés d'agrément ou d'approbation de convention au total sur 1969-2025, dont l'essentiel en 1974-1977 |
+| 1974-1977 | **vague d'agréments** après la convention cadre : textile, mécanique-électricité, imprimerie, construction métallique (29 août 1974), BTP, pétrole, pâtes, boissons (mars 1975), cuirs, ports, matériaux, lait, bonneterie-confection, confiserie, chaussure, hôtellerie, conserves, savonneries, peinture, minoterie, explosifs, presse, fonderie-métallurgie, assurances, commerce de matériaux (1975), boulangerie, commerce de gros et détail, pharmacies, plastique, teintureries (1976), produits d'entretien, parfumerie, cafés-bars-restaurants, bois-meuble, cinémas (1977) | **au moins 64** agréments ou approbations de convention (hors avenants) sur 1969-2025, dont l'essentiel en 1974-1977 — requête `titre like '%agrement de la convention%' or like '%agrément de la convention%' or like '%approbation de la convention collective%'`, avenants exclus ; borne basse (titres arabes seuls non comptés) |
 | 1983, 1989-1990, 1993, 1996, 1999, 2002, 2006, 2009, 2013-2014 | **pics d'avenants** : 35, 45-41, 53, 12, 9, 11, 20, 16, 44-40 textes par an | rythme triennal des accords cadres (note négociations) |
 | 2019-2025 | avenants n° 15 à 18 dans les branches anciennes ; une convention nouvelle (grands, moyens et petits espaces commerciaux, arrêté du 4 févr. 2025, JORT n° 15, p. 312) | 3 à 8 textes par an |
 
@@ -109,5 +108,5 @@ les salariés, dénominateur d'un taux de couverture.
 - Taux de couverture conventionnelle : aucune source.
 - Grilles de salaires : aucune grille lue au JORT dans cette passe ; une lecture par branche
   (textile, BTP, commerce, hôtellerie) permettrait de comparer le bas de grille au SMIG.
-- Liste exhaustive des ~50 conventions en vigueur : à établir depuis les 59 arrêtés d'agrément
-  (notices), non fait ici.
+- Liste exhaustive des conventions en vigueur : à établir depuis les arrêtés d'agrément (au moins
+  64 notices), non fait ici.
