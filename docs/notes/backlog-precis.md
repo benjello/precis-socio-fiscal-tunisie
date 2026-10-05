@@ -264,8 +264,26 @@ obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO`
   longueurs des chapitres mesurées avant la relecture des rémunérations.
 - **Chronologies à construire** : indemnité de magistrature (décrets identifiés au JORT) ;
   textes de rémunération des magistrats de l'ordre judiciaire, des forces de sécurité
-  intérieure et des douanes, absents du livre ; tranches de l'indemnité de gestion et
-  d'exécution de 1996 à 2012.
+  intérieure et des douanes, absents du livre.
+- **Augmentations générales (5 octobre 2026)** : les tranches de l'indemnité de gestion et
+  d'exécution de 1993 à 2013 sont lues et relevées (`augmentations/augmentations-ige.csv`,
+  § des cycles du régime indiciaire) ; les décrets des entreprises publiques de 1991 à 2026
+  sont lus et présentés au régime conventionnel (`#sec-augmentations-ep`). Note :
+  `docs/notes/remunerations-accords-salariaux-publics.md`. Restent :
+  - décrets n° 90-1001 et 91-803 (IGE, cycle 1990-1992 ?) : fascicules JORT n° 42 de 1990
+    et n° 38 de 1991 au corpus local, **scans sans couche texte** : lecture à l'image
+    ou OCR ;
+  - décrets parallèles des autres corps (ingénieurs, enseignants, santé, greffes…) :
+    fascicules au corpus, **texte lisible** à partir de 1996 ; non relevés ;
+  - majoration de l'IGE au titre de 2011 (fiche `r-ige-2011`) : JORT n° 62, 73 et 90 à 99
+    de 2011 **à obtenir** en français (l'arabe n'a pas de couche texte exploitable) ;
+  - montants arrêtés par la commission supérieure pour les entreprises publiques, 1991-2012
+    (fiche `r-montants-ep-commission`) : **à obtenir** hors JORT (rapports sur les
+    entreprises publiques, communiqués conjoints de 1996 et 1999) ;
+  - décrets des entreprises publiques entre 2013 et 2026 (fiche
+    `r-augmentations-ep-2013-2025`) : plein texte 2014-2025 **lisible**, non parcouru ;
+  - magistrats (décrets n° 2019-1132 et 2026-65) : à porter au régime statutaire autonome ;
+  - poids budgétaire par cycle : aucun texte ne le donne.
 - **Séries** : effectifs et masse salariale par régime ; dépenses de défense ; effectifs du
   secteur financier public. Substituer des sources tunisiennes officielles aux chiffres du
   FMI et de la Banque mondiale.

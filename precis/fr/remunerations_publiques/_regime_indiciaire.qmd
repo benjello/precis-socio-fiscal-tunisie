@@ -349,7 +349,35 @@ L'UGTT, **partie à la négociation**, a publié le procès-verbal d'accord fixa
 **Réserve de date.** Le PV publié par l'UGTT date la séance de négociation du **14 septembre 2022**, là où d'autres sources mentionnent le 15 septembre ; l'écart est rapporté sans être tranché.
 :::
 
-<!-- TODO (documentaliste) : les décrets des cycles 2015-2028 sont identifiés et lus (docs/notes/retraites-revalorisation.md, § 6.2). Restent à lire les montants des tranches 1996-2012 de l'indemnité de gestion et d'exécution et des décrets par corps, pour étendre le tableau en amont de 2015 ; et à confirmer l'effet du décret n°2015-462, qui n'énonce pas de date. -->
+En amont de 2015, les cycles se lisent dans l'**indemnité de gestion et d'exécution**, celle du corps administratif commun et des grades équivalents. De 1993 à 2010, ils durent trois ans. Le décret qui ouvre un cycle fixe le montant global de la majoration sur la période et en alloue la première tranche ; un décret annuel sert chacune des deux suivantes. Le décret n°93-2062 fixe à lui seul les trois tranches du cycle 1993-1995 [@decret93-2062, art. 1]. Le décret n°96-1907 ouvre le cycle 1996-1998 en fixant « l'augmentation globale des salaires durant la période 1996-1998 » [@decret96-1907, art. 2] ; les décrets n°97-1174 et n°98-1292 en servent les deux tranches suivantes [@decret97-1174, art. 1; @decret98-1292, art. 1]. Le même schéma se répète pour 1999-2001, 2002-2004, 2005-2007 et 2008-2010 (@tbl-augmentations-ige).^[Cycle 1999-2001 [@decret99-2015; @decret2000-1199; @decret2001-1557] ; cycle 2002-2004 [@decret2002-2672; @decret2003-1568; @decret2004-1538] ; cycle 2005-2007 [@decret2005-3137; @decret2006-2182; @decret2007-1671] ; cycle 2008-2010 [@decret2008-4047; @decret2009-2145; @decret2010-1973].] Chaque tranche prend effet au 1^er^ juillet, quelle que soit la date de signature du décret : celui qui ouvre le cycle 2008-2010, signé le 30 décembre 2008, alloue la première tranche « à compter du 1^er^ juillet 2008 » [@decret2008-4047, art. 2].
+
+: Cycles de majoration de l'indemnité de gestion et d'exécution, 1993-2013. Chaque décret est désigné par sa forme abrégée ; son intitulé officiel complet apparaît au survol. {#tbl-augmentations-ige}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../../scripts")
+import augmentations
+augmentations.imprime("augmentations/augmentations-ige.csv", "cycles")
+```
+
+Comme après 2015, les montants sont fixés en dinars, jamais en pourcentage, et ils décroissent du haut au bas de la grille. Sur le cycle 1993-1995, la majoration globale va de 95 dinars pour les grades de la sous-catégorie A1 à 40 dinars pour la catégorie D [@decret93-2062, art. 1]. Sur le cycle 2008-2010, elle va de 226 dinars pour l'administrateur général à 66 dinars pour la catégorie D, et c'est le seul cycle du relevé où les trois grades de A1 reçoivent des montants distincts [@decret2008-4047, art. 1]. L'augmentation de 2012 rompt avec cette progression : deux tranches de 35 dinars, au 1^er^ juillet 2012 et au 1^er^ janvier 2013, identiques pour toutes les catégories et pour les ouvriers [@decret2012-2959, art. 1].
+
+: Montants mensuels de la majoration de l'indemnité de gestion et d'exécution, par grade ou catégorie et par date d'effet, en dinars. {#tbl-augmentations-ige-montants}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../../scripts")
+import augmentations
+augmentations.imprime("augmentations/augmentations-ige.csv", "montants")
+```
+
+Ces montants ne valent que pour les bénéficiaires de l'indemnité de gestion et d'exécution. Les autres corps recevaient leur majoration par des décrets parallèles, chacun sur son indemnité propre et avec ses propres montants : ce relevé n'est pas celui de toute la fonction publique, et il ne se raccorde pas aux augmentations générales servies depuis 2015. Aucune majoration de cette indemnité au titre de l'année 2011 n'est identifiée ici. Les entreprises publiques suivent les mêmes cycles par un autre circuit, décrit à la @sec-augmentations-ep.
+
+<!-- RECHERCHE r-ige-2011 : majoration de l'indemnité de gestion et d'exécution au titre de l'année 2011 (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : les décrets des cycles 2015-2028 sont identifiés et lus (docs/notes/retraites-revalorisation.md, § 6.2) ; ceux de l'indemnité de gestion et d'exécution, de 1993 à 2013, aussi (docs/notes/remunerations-accords-salariaux-publics.md). Restent à lire les décrets n° 90-1001 et 91-803 (cycle 1990-1992 ?), les décrets parallèles des autres corps, et à confirmer l'effet du décret n°2015-462, qui n'énonce pas de date. -->
 
 ## Repères budgétaires et statistiques
 
