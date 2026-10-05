@@ -57,6 +57,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Classe de revenus | شريحة الدخل |  |
 | Code de la fiscalité locale | مجلة الجباية المحلية |  |
 | Collectivité locale | الجماعة المحلية |  |
+| Commerçant détaillant assujetti à la taxe sur la valeur ajoutée | تاجر التفصيل الخاضع للأداء على القيمة المضافة |  |
 | Commerçant grossiste | تاجر جملة |  |
 | Commission nationale du salaire minimum garanti | اللجنة الوطنية للأجر الأدنى المضمون |  |
 | Compétences partagées | الصلاحيات المشتركة |  |
@@ -83,6 +84,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Cotisation de l'assuré | اشتراك المضمون |  |
 | Cotisations sociales | المساهمات الاجتماعية |  |
 | Coût du travail | كلفة العمل |  |
+| Crédit de taxe sur la valeur ajoutée | فائض الأداء على القيمة المضافة |  |
 | Décentralisation | اللامركزية |  |
 | Déconcentration | اللامحورية |  |
 | Décote | التخفيض في الجراية |  |
@@ -96,6 +98,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Discipline budgétaire | الانضباط في الميزانية |  |
 | District | الإقليم |  |
 | Droit de consommation | المعلوم على الاستهلاك |  |
+| Droit forfaitaire simplifié | الأداء التقديري المبسط |  |
 | Échelon | الدرجة |  |
 | Échelonnement indiciaire | التدرّج القياسي |  |
 | Effort fiscal | المجهود الجبائي |  |
@@ -188,6 +191,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prix de référence du mètre carré couvert | الثمن المرجعي للمتر المربع المبني |  |
 | Produit intérieur brut | الناتج المحلي الإجمالي | PIB |
 | Programme national d'aide aux familles nécessiteuses | البرنامج الوطني لمساعدة العائلات المعوزة | PNAFN |
+| Promoteur immobilier | الباعث العقاري |  |
 | Promotion | الترقية |  |
 | Protection contre la perte d'emploi | الحماية الاجتماعية للعمال الذين يفقدون شغلهم لأسباب اقتصادية أو فنية |  |
 | Quota régional | الحصّة الجهوية |  |
@@ -210,6 +214,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Régime forfaitaire optionnel | النظام التقديري الاختياري |  |
 | Régime indiciaire | النظام الاستدلالي للتأجير |  |
 | Régime statutaire autonome | النظام الأساسي الخاص |  |
+| Régime suspensif de la taxe sur la valeur ajoutée | نظام توقيف العمل بالأداء على القيمة المضافة |  |
 | Règle d'or | القاعدة الذهبية |  |
 | Rémunération des dirigeants d'entreprises publiques | تأجير رؤساء المؤسسات والمنشآت العمومية |  |
 | Rente compensatrice | الإيراد التعويضي |  |
@@ -272,6 +277,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Taxe (au sens des finances publiques) | الرسم (بمفهوم المالية العمومية) |  |
 | Taxe à la production | الأداء على الإنتاج |  |
 | Taxe de formation professionnelle | الأداء على التكوين المهني | TFP |
+| Taxe forfaitaire annuelle | الأداء السنوي التقديري |  |
+| Taxe forfaitaire mensuelle sur la valeur ajoutée | أداء تقديري شهري على القيمة المضافة |  |
 | Taxe hôtelière | المعلوم على النزل |  |
 | Taxe sur la valeur ajoutée | الأداء على القيمة المضافة | TVA |
 | Taxe sur les bières, vins et autres boissons alcoolisées | الأداء على الجعة والخمور والمشروبات الكحولية الأخرى |  |
@@ -287,6 +294,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Transfert monétaire direct | التحويل النقدي المباشر |  |
 | Travaux pénibles et insalubres | الأشغال الشاقّة وغير الصحّية |  |
 | Tutelle | سلطة الإشراف |  |
+| TVA sur la marge | احتساب الأداء على القيمة المضافة على الفارق بين ثمن البيع وثمن الشراء |  |
 | Valeur du point d'indice | قيمة النقطة الاستدلالية |  |
 | Valeur en douane | القيمة المصرح بها لدى الديوانة |  |
 | Validation des services | إدماج الخدمات |  |
