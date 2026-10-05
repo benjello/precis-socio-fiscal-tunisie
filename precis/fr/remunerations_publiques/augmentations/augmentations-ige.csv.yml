@@ -1,0 +1,74 @@
+# Manifeste du relevé des majorations de l'indemnité de gestion et d'exécution, 1993-2013.
+#
+# Fichier TENU À LA MAIN — il n'est produit par aucun générateur. Il accompagne
+# augmentations-ige.csv, dont il énonce la provenance et les limites.
+#
+# D'OÙ VIENNENT LES VALEURS. Des décrets eux-mêmes, lus au Journal officiel (édition
+# française) le 5 octobre 2026 : couche texte, tableaux relus à l'image ; le décret
+# n° 93-2062 est un scan, lu à l'image.
+
+format: long
+cle_de_ligne: [texte, date_effet, categorie]
+
+colonnes:
+  cycle: cycle de négociation (période que nomme le décret qui ouvre le cycle)
+  texte: clé de citation du décret (résout dans precis/fr/references.json)
+  nature: majoration de l'indemnité de gestion et d'exécution (décret n° 82-505)
+  date_effet: date « à compter » de laquelle le décret alloue la tranche
+  categorie: grade ou sous-catégorie, avec les libellés des décrets ; ouvriers par unité
+  montant: montant mensuel de la tranche en dinars, tel que le décret le fixe (demi-dinars compris)
+  statut: lu (valeur lue dans le texte)
+
+sources:
+  - decret93-2062
+  - decret96-1907
+  - decret97-1174
+  - decret98-1292
+  - decret99-2015
+  - decret2000-1199
+  - decret2001-1557
+  - decret2002-2672
+  - decret2003-1568
+  - decret2004-1538
+  - decret2005-3137
+  - decret2006-2182
+  - decret2007-1671
+  - decret2008-4047
+  - decret2009-2145
+  - decret2010-1973
+  - decret2012-2959
+
+couverture: les tranches de l'IGE de 1993 à 2013 ; PAS l'ensemble de la fonction publique
+couverture_detail: >-
+  L'indemnité de gestion et d'exécution est celle du corps administratif commun et des
+  grades « équivalents » qui en bénéficient. Chaque autre corps (ingénieurs, architectes,
+  enseignants, personnels de santé, greffes…) recevait sa majoration par un décret
+  parallèle, sur sa propre indemnité et avec ses propres montants : ceux-là ne figurent
+  pas ici. Le relevé ne doit donc pas être lu comme « l'augmentation de la fonction
+  publique », ni raccordé au relevé des augmentations générales depuis 2015
+  (augmentations-fonction-publique.csv), qui procède d'un autre instrument.
+
+reserves:
+
+  controle_par_les_globaux: >-
+    Pour chaque cycle triennal de 1993 à 2010, le premier décret fixe aussi le montant
+    global de la majoration sur la période. La somme des trois tranches lues le retrouve
+    pour chaque grade et chaque unité d'ouvriers (tests/test_augmentations.py).
+
+  a1_par_grade: >-
+    Les décrets donnent une ligne à chacun des trois grades de A1 (administrateur général,
+    en chef, conseiller). Leurs montants sont égaux jusqu'en 2007 et distincts de 2008 à
+    2010 ; les trois grades sont portés à chaque date plutôt que fondus en « A1 ».
+
+  ouvriers: >-
+    Les ouvriers sont rangés par unité (3e, 2e, 1re), comme dans les décrets ; leurs
+    montants suivent ceux des catégories B, C et D.
+
+  2011: >-
+    Aucune majoration de l'IGE « au titre de l'année 2011 » n'est identifiée ; le décret
+    n° 2012-2959 porte deux tranches de 35 D, au 1er juillet 2012 et au 1er janvier 2013.
+    Fiche r-ige-2011 de docs/recherches.yml.
+
+  avant_1993: >-
+    Les décrets n° 90-1001 et 91-803, qui modifient le décret n° 82-505, ne sont pas lus ;
+    le relevé commence au décret n° 93-2062.

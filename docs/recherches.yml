@@ -851,3 +851,68 @@
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
   a_faire: ['consulter les lois de règlement du budget 2023 et 2024, et les publications statistiques de la DGI']
+
+- id: r-montants-ep-commission
+  objet: montants des augmentations des salaires des agents des entreprises et établissements publics (loi n° 85-78) arrêtés par la commission supérieure des négociations sociales, puis de supervision et de coordination, pour les cycles approuvés par les décrets n° 91-246 à 2013-4159
+  ou: [precis/fr/remunerations_publiques/_regime_conventionnel.qmd#sec-augmentations-ep]
+  requetes:
+    titres_fts:
+    - commission AND superieure AND (supervision OR negociations)
+    - (augmentation OR augmentations OR majoration) AND salaires AND (entreprises OR etablissements) AND publics
+    titres_like: ['%commission superieure de supervision%', '%approbation des augmentations des salaires%']
+    depuis: 1985-08-05
+  passes:
+  - date: 2026-10-05
+    role: rédacteur
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache jusqu''au 18 septembre 2026 : FTS et LIKE ci-dessus (aucun titre ne nomme la commission ; seuls les neuf décrets d''approbation ou de fixation, de 91-246 à 2026-64, répondent). Les neuf décrets lus au fascicule français : aucun ne publie de montant ni ne renvoie à un texte qui en publierait. Plein texte des fascicules non parcouru ; rapports annuels sur les entreprises publiques annexés aux lois de finances, procès-verbaux de la commission et presse non consultés.'
+    couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  a_faire:
+  - chercher dans le plein texte des fascicules les mentions de la « commission supérieure de supervision et de coordination »
+  - consulter les rapports sur les entreprises publiques annexés aux lois de finances et les communiqués conjoints gouvernement-UGTT de 1996 et 1999 visés par les décrets n° 97-2309 et 2001-1997
+
+- id: r-augmentations-ep-2013-2025
+  objet: décret approuvant ou fixant les augmentations générales des salaires des agents des entreprises et établissements publics (loi n° 85-78) pour un cycle postérieur à la période 2011-2012 (décret n° 2013-4159) et antérieur au cycle 2026-2028 (décret n° 2026-64)
+  ou: [precis/fr/remunerations_publiques/_regime_conventionnel.qmd#sec-augmentations-ep]
+  requetes:
+    titres_fts:
+    - (augmentation OR augmentations OR majoration) AND salaires AND (entreprises OR etablissements) AND publics
+    titres_like: ['%approbation des augmentations des salaires%', '%augmentation des salaires des agents des entreprises%']
+    iort_ar: [الزيادة في الأجور]
+    depuis: 2013-10-15
+  periode:
+    jusqu_au: 2026-04-30
+    motif: le décret n° 2026-64 du 30 avril 2026 (JORT n° 44) ouvre le cycle 2026-2028
+  passes:
+  - date: 2026-10-05
+    role: rédacteur
+    sources: [jort_cache]
+    couverture: 'jort_cache jusqu''au 18 septembre 2026, titres français (FTS et LIKE) et arabes (LIKE « الزيادة في الأجور ») : seuls répondent, après 2013-4159, les décrets de la fonction publique (2019-209, 2019-1133, 2020-767, 2022-797, 2026-63), des magistrats (2019-210) et le décret n° 2026-64. Plein texte des fascicules non parcouru ; les fascicules inconnus de jort_cache (outillage-sources.md, § 1 f) échappent à la requête.'
+    couvert_jusqu_au: 2026-04-30
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules de 2014 à 2025 (augmentation des salaires, entreprises publiques)
+  - relancer avec --sonder-pist pour les fascicules inconnus de jort_cache
+
+- id: r-ige-2011
+  objet: décret majorant l'indemnité de gestion et d'exécution (décret n° 82-505) au titre de l'année 2011
+  ou: [precis/fr/remunerations_publiques/_regime_indiciaire.qmd#sec-cycles-revalorisation]
+  requetes:
+    titres_fts: [gestion AND execution AND indemnite]
+    titres_like: ['%indemnite de gestion et d%execution%']
+    plein_texte: [indemnité de gestion et d'exécution, augmentation des salaires, augmentation générale des salaires]
+    depuis: 2010-08-24
+  periode:
+    jusqu_au: 2012-12-07
+    motif: le décret n° 2012-2959 (JORT n° 97 du 7 décembre 2012) porte l'augmentation de l'indemnité au titre de l'année 2012
+  passes:
+  - date: 2026-10-05
+    role: rédacteur
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache : aucun titre de 2011 ne nomme l''indemnité (seuls 2010-1973 et 2012-2959 encadrent la période). Plein texte des 87 fascicules français de 2011 présents au corpus local (n° 1 à 89, sauf 62 et 73), couche texte lisible pour tous : aucune mention de l''indemnité ; les mentions d''« augmentation globale » relevées sont des visas de décrets de 2005 à 2010 sur d''autres indemnités. Les n° 62, 73 et 90 à 99 de 2011 manquent en français ; leurs fascicules arabes ont une couche texte inexploitable (encodage propre). 2012 parcouru par les titres seulement.'
+    couvert_jusqu_au: 2012-12-07
+    resultat: aucun
+  a_faire:
+  - lire les JORT n° 62, 73 et 90 à 99 de 2011 (fascicules français à obtenir, ou arabes à l'image)
+  - parcourir le plein texte des fascicules de 2012 antérieurs au n° 97

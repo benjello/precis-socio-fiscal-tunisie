@@ -25,13 +25,119 @@ from pathlib import Path
 
 # Ordre hiérarchique des catégories statutaires, puis les postes d'ouvriers, puis la
 # mention « tous ». C'est l'ordre de lecture des décrets eux-mêmes.
-ORDRE = ["A1", "A2", "A3", "B", "C", "D",
-         "ouvriers", "ouvriers 3e unité", "autres ouvriers", "tous"]
+#
+# Avant 2015, les décrets de l'indemnité de gestion et d'exécution fixent les montants
+# GRADE PAR GRADE : les trois grades de la sous-catégorie A1 y ont leur ligne (et, de 2008 à
+# 2010, des montants distincts), et les ouvriers y sont rangés en trois unités. Ces
+# libellés suivent ceux des décrets ; ils ne sont pas fondus dans « A1 » ni dans
+# « autres ouvriers », ce qui ferait dire aux textes ce qu'ils n'écrivent pas.
+ORDRE = ["A1 général", "A1 en chef", "A1 conseiller",
+         "A1", "A2", "A3", "B", "C", "D",
+         "ouvriers", "ouvriers 3e unité", "ouvriers 2e unité", "ouvriers 1re unité",
+         "autres ouvriers", "tous"]
 
 # Clé de citation -> (forme courte, intitulé officiel complet).
 # L'intitulé est repris VERBATIM de `precis/fr/references.json` : il sert d'infobulle, et
 # une infobulle qui paraphraserait le titre officiel ne vaudrait rien.
 DECRETS = {
+    # Indemnité de gestion et d'exécution, 1993-2013 (relevé augmentations-ige.csv).
+    "decret93-2062": (
+        "Décret 93-2062",
+        "Décret n° 93-2062 du 11 octobre 1993, portant majoration des taux de "
+        "l'indemnité de gestion et d'exécution instituée par le décret n° 82-505 du 16 "
+        "mars 1982, au profit des personnels de l'Etat, des collectivités publiques "
+        "locales et des établissements publics à caractère administratif"),
+    "decret96-1907": (
+        "Décret 96-1907",
+        "Décret n° 96-1907 du 16 octobre 1996, portant majoration des taux de "
+        "l'indemnité de gestion et d'exécution instituée par le décret n° 82-505 du 16 "
+        "mars 1982 au profit des personnels de l'Etat, des collectivités publiques "
+        "locales et des établissements publics à caractère administratif et fixation de"
+        " l'augmentation globale des salaires durant la période 1996-1998 au profit des"
+        " agents bénéficiaires de cette indemnité"),
+    "decret97-1174": (
+        "Décret 97-1174",
+        "Décret n° 97-1174 du 16 juin 1997, portant majoration des taux de l'indemnité "
+        "de gestion et d'exécution, au titre de l'année 1997"),
+    "decret98-1292": (
+        "Décret 98-1292",
+        "Décret n° 98-1292 du 15 juin 1998, portant majoration des taux de l'indemnité "
+        "de gestion et d'exécution au titre de l'année 1998"),
+    "decret99-2015": (
+        "Décret 99-2015",
+        "Décret n° 99-2015 du 13 septembre 1999, portant fixation de l'augmentation "
+        "globale des taux de l'indemnité de gestion et d'exécution durant la période "
+        "1999-2001 et octroi de la première tranche au profit des agents bénéficiaires "
+        "de cette indemnité"),
+    "decret2000-1199": (
+        "Décret 2000-1199",
+        "Décret n° 2000-1199 du 5 juin 2000, portant octroi de la deuxième tranche de "
+        "l'augmentation globale des montants de l'indemnité de gestion et d'exécution "
+        "au profit des agents bénéficiaires de cette indemnité au titre de l'année 2000"),
+    "decret2001-1557": (
+        "Décret 2001-1557",
+        "Décret n° 2001-1557 du 2 juillet 2001, portant octroi de la troisième tranche "
+        "de l'augmentation globale des montants de l'indemnité de gestion et "
+        "d'exécution au profit des agents bénéficiaires de cette indemnité au titre de "
+        "l'année 2001"),
+    "decret2002-2672": (
+        "Décret 2002-2672",
+        "Décret n° 2002-2672 du 22 octobre 2002, portant fixation de l'augmentation "
+        "globale des montants de l'indemnité de gestion et d'exécution durant la "
+        "période 2002-2004 et octroi de la première tranche au profit des agents "
+        "bénéficiaires de cette indemnité"),
+    "decret2003-1568": (
+        "Décret 2003-1568",
+        "Décret n° 2003-1568 du 7 juillet 2003, portant octroi de la deuxième tranche "
+        "de l'augmentation globale des montants de l'indemnité de gestion et "
+        "d'exécution au profit des agents bénéficiaires de cette indemnité au titre de "
+        "l'année 2003"),
+    "decret2004-1538": (
+        "Décret 2004-1538",
+        "Décret n° 2004-1538 du 5 juillet 2004, portant octroi de la troisième tranche "
+        "de l'augmentation globale des montants de l'indemnité de gestion et "
+        "d'exécution au profit des agents bénéficiaires de cette indemnité au titre de "
+        "l'année 2004"),
+    "decret2005-3137": (
+        "Décret 2005-3137",
+        "Décret n° 2005-3137 du 6 décembre 2005, portant fixation de l'augmentation "
+        "globale des montants de l'indemnité de gestion et d'exécution durant la "
+        "période 2005-2007 et octroi de la première tranche au profit des agents "
+        "bénéficiaires de cette indemnité"),
+    "decret2006-2182": (
+        "Décret 2006-2182",
+        "Décret n° 2006-2182 du 7 août 2006, portant octroi de la deuxième tranche de "
+        "l'augmentation globale des montants de l'indemnité de gestion et d'exécution "
+        "au profit des agents bénéficiaires de cette indemnité au titre de l'année 2006"),
+    "decret2007-1671": (
+        "Décret 2007-1671",
+        "Décret n° 2007-1671 du 5 juillet 2007, portant octroi de la troisième tranche "
+        "de l'augmentation des montants de l'indemnité de gestion et d'exécution "
+        "allouée au profit des agents bénéficiaires de cette indemnité au titre de "
+        "l'année 2007"),
+    "decret2008-4047": (
+        "Décret 2008-4047",
+        "Décret n° 2008-4047 du 30 décembre 2008, portant fixation de l'augmentation "
+        "globale des montants de l'indemnité de gestion et d'exécution durant la "
+        "période 2008-2010 et octroi de la première tranche au profit des agents "
+        "bénéficiaires de cette indemnité"),
+    "decret2009-2145": (
+        "Décret 2009-2145",
+        "Décret n° 2009-2145 du 14 juillet 2009, portant octroi de la deuxième tranche "
+        "de l'augmentation globale des montants de l'indemnité de gestion et "
+        "d'exécution au profit des agents bénéficiaires de cette indemnité au titre de "
+        "l'année 2009"),
+    "decret2010-1973": (
+        "Décret 2010-1973",
+        "Décret n° 2010-1973 du 16 août 2010, portant octroi de la troisième tranche de"
+        " l'augmentation globale des montants de l'indemnité de gestion et d'exécution "
+        "au profit des agents bénéficiaires de cette indemnité au titre de l'année 2010"),
+    "decret2012-2959": (
+        "Décret 2012-2959",
+        "Décret n° 2012-2959 du 29 novembre 2012, portant augmentation des montants de "
+        "l'indemnité de gestion et d'exécution au profit des agents bénéficiaires de "
+        "cette indemnité au titre de l'année 2012"),
+    # Augmentations générales, depuis 2015 (relevé augmentations-fonction-publique.csv).
     "decret2015-462": (
         "Décret 2015-462",
         "Décret gouvernemental n° 2015-462 du 24 juin 2015, portant majoration des "
@@ -133,8 +239,19 @@ def dates_presentes(rangs: list[dict]) -> list[str]:
     return sorted({r["date_effet"] for r in rangs if r["date_effet"]})
 
 
-def _montant(v: str) -> int:
-    return int(float(v))
+def _montant(v: str) -> int | float:
+    """Le montant tel que le décret l'écrit : entier s'il l'est, décimal sinon.
+
+    Les décrets de 2002 à 2007 fixent des demi-dinars (« 25,5 »). Un `int()` les
+    tronquerait sans bruit ; un `float()` systématique ferait de « 60 » un « 60.0 ».
+    """
+    x = float(v)
+    return int(x) if x.is_integer() else x
+
+
+def affiche(v: int | float) -> str:
+    """« 60 » ou « 25,5 » : la virgule décimale du texte français."""
+    return str(v) if isinstance(v, int) else f"{v:g}".replace(".", ",")
 
 
 def tableau_cycles(rangs: list[dict]) -> str:
@@ -163,7 +280,8 @@ def tableau_cycles(rangs: list[dict]) -> str:
         textes = ", ".join(infobulle(t) for t in c["textes"])
         dates = ", ".join(formate_date(d) for d in sorted(c["dates"])) or "—"
         bas, haut = min(c["montants"]), max(c["montants"])
-        plage = f"{bas} D" if bas == haut else f"{bas} à {haut} D"
+        plage = (f"{affiche(bas)} D" if bas == haut
+                 else f"{affiche(bas)} à {affiche(haut)} D")
         lignes.append(f"| {cycle} | {textes} | {dates} | {plage} |")
     return "\n".join(lignes)
 
@@ -183,7 +301,7 @@ def tableau_montants(rangs: list[dict]) -> str:
         cellules = []
         for c in cats:
             v = [r for r in du_jour if r["categorie"] == c]
-            cellules.append(str(_montant(v[0]["montant"])) if v else "")
+            cellules.append(affiche(_montant(v[0]["montant"])) if v else "")
         lignes.append(f"| {formate_date(date)} | {texte} | " + " | ".join(cellules) + " |")
     return "\n".join(lignes)
 
