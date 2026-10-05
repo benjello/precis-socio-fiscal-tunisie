@@ -632,6 +632,22 @@ Volume créé le 4 octobre 2026 (`precis/fr/finances_locales/`), d'après le pla
 livre arabe a son `_quarto.yml` et ses références ; il est sauté au rendu tant que la
 traduction n'a pas livré `index.qmd`.
 
+- **À lire et à intégrer : décret-loi n° 2026-4 du 30 septembre 2026 relatif aux conseils
+  municipaux** (JORT n° 96 du 30 septembre 2026, édition arabe, p. 2058 d'après le sommaire du
+  fascicule ; repéré le 5 octobre 2026). Son article 139 abroge la loi organique n° 2018-29 du
+  9 mai 2018 (code des collectivités locales), sur laquelle s'appuient les chapitres
+  d'institutions, de budgets et de transferts. L'article 136 n'en fixe l'entrée en vigueur
+  qu'après la proclamation des résultats définitifs des premières élections des conseils
+  municipaux qui suivront, sous réserve de l'article 137 ; l'article 134 maintient le fonds
+  d'appui à la décentralisation. **État de lecture** : seuls ces articles ont été lus, sur le
+  texte converti du fascicule arabe, dont les colonnes sont entrelacées — à relire à l'image
+  avant toute citation, puis lire le texte en entier (140 articles, titre III sur le régime
+  financier). **Corpus** : fascicule arabe présent et lisible (`PDFs/JORT/2026/ar/Ja0962026.pdf`) ;
+  édition française à obtenir — le fichier « fr » du corpus est l'arabe
+  (`docs/notes/outillage-sources.md`, § 3). Texte absent de `jort_cache.db`. Rien n'est encore
+  écrit au volume : tant que le texte n'est pas lu, les chapitres décrivent le droit du code de
+  2018, sans mention de son abrogation à venir.
+
 - **Présentation — rédigée le 4 octobre 2026** (`index.qmd`, `#sec-fl-presentation`) : objet
   du volume, quatre mouvements, frontières avec « La fiscalité » (impôt foncier de 2014, IRPP et
   IS) et avec « Rémunérations publiques ». Les trois chapitres des ressources propres y sont
