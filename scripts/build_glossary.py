@@ -40,6 +40,7 @@ BOOKS = [
     "cotisations_sociales",
     "retraites",
     "caisses",
+    "finances_locales",
 ]
 
 LANGS = ("fr", "ar")

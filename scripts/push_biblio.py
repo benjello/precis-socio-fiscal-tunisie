@@ -332,6 +332,7 @@ COLLECTIONS = {
     "remunerations_publiques": "Rémunérations publiques",
     "cotisations_sociales": "Cotisations sociales",
     "caisses": "Caisses de sécurité sociale",
+    "finances_locales": "Finances locales",
 }
 
 
