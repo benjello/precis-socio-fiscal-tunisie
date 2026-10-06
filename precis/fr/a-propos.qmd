@@ -74,6 +74,12 @@ Pour citer l'ouvrage :
 
 > Mahdi Ben Jelloul, *Précis de la législation socio-fiscale de la Tunisie*, <https://benjello.github.io/precis-socio-fiscal-tunisie/>, consulté le [date].
 
+**Pourquoi un seul nom.** La citation ne porte aujourd'hui qu'un nom parce qu'une seule personne répond de l'ensemble, et d'abord de ses erreurs. Ce n'est pas un titre de propriété : la licence garantit que le précis reste un bien commun, que chacun peut reprendre, compléter et rediffuser.
+
+**Un ouvrage appelé à devenir collectif.** Le précis a vocation à être écrit à plusieurs. Toute personne qui relit, corrige ou transmet des documents est nommée dans les [remerciements](#remerciements), avec son accord et pour ce qu'elle a fait. Celle qui rédige ou prend en charge un chapitre ou un volume en est l'auteur : son nom figure en tête de ce chapitre et dans la manière de le citer. La citation de l'ensemble s'élargira à mesure que ces contributions le justifieront.
+
 ## Comment il est produit
+
+Le précis est écrit avec un recours massif à l'intelligence artificielle : elle sert à retrouver les textes au *Journal officiel*, à rassembler les données, et à rédiger. L'auteur oriente ce travail, le relit et le valide ; il en répond. Chaque affirmation renvoie au texte qui la fonde, pour que le lecteur puisse la vérifier lui-même. C'est un texte en évolution, corrigé et complété en continu : il n'a pas l'autorité d'une publication officielle, et tout signalement d'erreur est bienvenu.
 
 Les tableaux de paramètres du précis sont engendrés depuis la base de données législative d'[OpenFisca-Tunisia](https://github.com/openfisca/openfisca-tunisia), le modèle de microsimulation du système socio-fiscal tunisien : chaque valeur y est datée et rattachée au texte qui la fonde. Les sources du précis et les programmes qui le produisent sont publics, sur [la page du projet](https://github.com/benjello/precis-socio-fiscal-tunisie).
