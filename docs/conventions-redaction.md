@@ -143,9 +143,11 @@ Un taux en vigueur sans son histoire ne dit pas ce qu'il vaut.
 **Le budgétaire, les rapports extérieurs et les évaluations économiques ne sont pas au même
 niveau.** Trois familles de chiffres portent sur un même dispositif et ne disent pas la même
 chose : le *budgétaire* — lois de finances, lois de règlement, exécution du budget, évaluations
-du ministère des Finances — ; les *rapports extérieurs* — Banque mondiale, FMI, OCDE, banque
-centrale quand elle ne fait que citer — ; les *évaluations économiques* — études d'incidence,
-d'impact, de coût, d'auteurs ou d'institutions. Elles ne se mêlent ni dans un même tableau ni
+du ministère des Finances — ; les *rapports extérieurs*, c'est-à-dire ceux des institutions
+internationales, FMI, Banque mondiale et OCDE en particulier ; les *évaluations économiques* —
+études d'incidence, d'impact, de coût, d'auteurs ou d'institutions. Un organisme tunisien qui
+ne fait que reprendre les chiffres du ministère des Finances — la Banque centrale dans son
+rapport annuel — reste du budgétaire : on le dit relais, et on nomme la source qu'il cite. Elles ne se mêlent ni dans un même tableau ni
 dans un même fil de récit, et ne se présentent pas sur le même plan : le budgétaire d'abord, en
 entonnoir (la dépense globale, sa décomposition par type, puis les gros plans) ; les autres
 ensuite, dans des sections titrées comme telles. Toute étude extérieure vient avec **sa

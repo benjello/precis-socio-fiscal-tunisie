@@ -74,7 +74,8 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   identifié ici ») et porte une ancre `<!-- RECHERCHE r-… : … -->` vers une fiche rejouable de
   `docs/recherches.yml` — requêtes, sources, couverture datée, résultat. `scripts/recherches.py`
   la vérifie (CI), la relance et l'élargit.
-- **Le budgétaire ne se mêle pas aux rapports extérieurs ni aux évaluations économiques** : pas
+- **Le budgétaire ne se mêle pas aux rapports extérieurs (FMI, Banque mondiale, OCDE) ni aux
+  évaluations économiques** : pas
   dans le même tableau, pas sur le même plan, et jamais une étude sans sa méthode (qui, quelles
   données, quel périmètre, quel calcul). Le budgétaire d'abord, en entonnoir ; les études ensuite,
   titrées comme telles. Les superposer **sur un graphique** est permis quand elles sont censées
