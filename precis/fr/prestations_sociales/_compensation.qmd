@@ -1,0 +1,329 @@
+# La compensation {#sec-compensation}
+
+La [compensation des prix](#g-compensation-des-prix) n'est pas une prestation au sens des chapitres précédents : elle n'est ouverte ni par une affiliation ni par une [condition de ressources](#g-condition-de-ressources), et aucun bénéficiaire n'est désigné. L'État abaisse le prix de certains biens et services — [produits de base](#g-produits-de-base), carburants, électricité et gaz, transport — et prend la différence à sa charge. Elle figure dans ce volume parce qu'elle opère, par les prix, un transfert aux ménages qui se compare aux [transferts monétaires](#g-transfert-monetaire) de l'assistance sociale (@sec-prest-non-contributives) : son coût budgétaire, sa répartition entre les ménages et ses ruptures de réforme sont les trois objets du chapitre.
+
+L'exposé suit quatre temps : la création de la [Caisse générale de compensation](#g-caisse-generale-compensation) (CGC) en 1970-1971 ; ce que la compensation couvre et la manière dont elle est financée ; les réformes, texte par texte ; enfin la longue période — le coût par poste et sa répartition entre les ménages.
+
+::: {.callout-note title="Ce qui est attesté, et à quel niveau"}
+Les lois, les décrets et les arrêtés cités sont des *textes établis*, à une exception près, dans la loi de finances pour 1984 : pour la taxe unique de compensation de transports routiers, seule la *référence* de l'article qui l'institue est retenue ici, et le nom de la caisse de compensation et de soutien des transports routiers est *dérivé* de l'intitulé du texte ; le montant prévu pour cette caisse est, lui, établi. Les séries de coût viennent de trois familles de sources, que les tableaux nomment ligne à ligne : les lois de finances elles-mêmes, les rapports du ministère des Finances, et des sources secondaires — Banque mondiale, Fonds monétaire international (FMI), Banque centrale de Tunisie (BCT) — qui reprennent des chiffres de l'administration. Ces séries ne couvrent ni les mêmes années ni le même périmètre : elles sont présentées en tableaux séparés et ne se raccordent pas.
+:::
+
+## Historique {#sec-compensation-historique}
+
+### La création de la Caisse, 1970-1971 {#sec-compensation-institution}
+
+La Caisse est créée par la loi sur les prix du 19 mai 1970 : « Il est institué une Caisse Générale de Compensation destinée à agir sur les prix des marchandises, produits et services de première nécessité notamment au moyen de subvention et de péréquation » [@loi70-26, art. 3]. Deux instruments sont ainsi nommés : la subvention, qui met la différence de prix à la charge de la Caisse, et la [péréquation](#g-perequation-des-prix), qui la finance par un prélèvement sur d'autres prix. Le même article renvoie à un décret les modalités de fonctionnement de la Caisse. Ce décret n'est pas identifié ici : la liste des produits compensés à l'origine et l'organisation de la Caisse ne sont donc pas établies par un texte.
+
+<!-- RECHERCHE r-cgc-decret-application-1970 : décret d'application de l'art. 3 de la loi n° 70-26 (voir docs/recherches.yml) -->
+
+La loi de finances pour 1971 lui donne sa forme budgétaire : la Caisse « constitue un Fonds Spécial du Trésor », c'est-à-dire un compte hors budget général, doté de recettes propres ; l'ancien fonds « Opérations de compensation » est supprimé et son solde lui est affecté ; les taxes et redevances de compensation lui reviennent et « sont instituées et modifiées par décret » [@lf-1971, art. 48]. Le [fonds spécial du Trésor](#g-fonds-special-tresor) ainsi créé est prévu à 7 000 000 D en recettes comme en dépenses, sur 20 290 000 D pour l'ensemble des fonds spéciaux [@lf-1971, tableau F].
+
+La première ressource affectée porte sur les carburants. Le décret n° 70-622 fond en une taxe unique de compensation sur les produits pétroliers, « perçue au profit de la CGC », trois prélèvements antérieurs — une taxe de péréquation de 1957, une taxe de compensation de 1964 et quatre centimes additionnels au droit de consommation —, à compter du 1^er^ janvier 1971 [@decret70-622, art. 5 et 6]. À l'origine, les carburants financent donc la compensation ; ils n'en bénéficient pas.
+
+La Caisse ne naît pas sur un terrain vide : le fonds « Opérations de compensation » qu'elle remplace, les taxes que le décret consolide et la caisse spéciale de compensation des ciments, qu'elle absorbe en 1976, attestent de mécanismes sectoriels antérieurs [@lf-1971, art. 48 ; @decret70-622, art. 5 ; @loi75-83, art. 67].
+
+### Les grandes étapes
+
+Quatre déplacements marquent ensuite la trajectoire, détaillés plus bas.
+
+- **L'élargissement du champ.** La Caisse reprend en 1976 la caisse des ciments et le compte de stabilisation des produits pétroliers finis [@loi75-83, art. 67-68]. Un rapport officiel de 2014 date de 1984 l'extension de la compensation au transport public, et de 2004 le début de la subvention des carburants et de l'électricité [@minfin-compensation-carburants-2014, p. 3].
+- **L'épisode de 1984.** La loi de finances pour 1984 prévoit la suppression de la compensation des céréales et dérivés ; la loi de finances complémentaire du 21 mars 1984 abroge cette disposition et procure à la Caisse des ressources nouvelles (@sec-compensation-1984).
+- **Le changement de payeur.** Les ressources affectées cessent de couvrir la dépense dès les années 1980 ; dans les années 2000, la compensation est une dépense du budget général (@sec-compensation-financement).
+- **Le changement d'échelle et de composition.** La dépense budgétaire passe de 328,8 millions de dinars (MD) en 2003 à 2 869,2 MD en 2011, et les carburants, absents du budget en 2003, en forment plus de la moitié en 2011 (@tbl-compensation-2003-2011).
+
+## Ce que la compensation couvre et comment elle est financée {#sec-compensation-description}
+
+### Trois postes
+
+Les documents budgétaires du ministère des Finances répartissent la compensation en trois postes [@minfin-finances-publiques-2008 ; @minfin-finances-publiques-2011].
+
+- Les **produits de base** : les céréales et l'huile en forment l'essentiel, avec le lait, le sucre et le papier scolaire (@tbl-compensation-produits-2009-2011).
+- Les **carburants** : sous ce nom, la [compensation des carburants](#g-compensation-carburants) réunit les transferts à trois entreprises publiques de l'énergie — l'Entreprise tunisienne d'activités pétrolières (ETAP), la Société tunisienne de l'électricité et du gaz (STEG) et la Société tunisienne des industries de raffinage (STIR). Le poste couvre donc aussi l'électricité et le gaz (@tbl-compensation-energie-2011).
+- Le **transport** : la [compensation du transport](#g-compensation-transport) est le plus petit des trois postes et le plus régulier.
+
+<!-- TODO (documentaliste) : les opérateurs par lesquels passe la compensation (Office des céréales, Office du commerce, sociétés de transport), les bénéficiaires de la compensation du transport (abonnements scolaires et étudiants, tarifs réduits) et les entrées et sorties de produits dans le temps ne sont établis par aucun texte : voir docs/notes/compensation.md, § 6, points 6 et 7. -->
+
+### Le financement : des ressources affectées au budget général {#sec-compensation-financement}
+
+La Caisse est conçue en 1971 comme un compte équilibré par ses propres taxes. Trois générations de ressources affectées se succèdent : la taxe unique de compensation sur les produits pétroliers (1971) ; une part de la taxe sur les alcools et une contribution exceptionnelle sur les entreprises et les salaires dans les années 1980 (@sec-compensation-1984 et @sec-compensation-1989) ; la [redevance de compensation](#g-redevance-compensation) depuis 2013 (@sec-compensation-redevance).
+
+Ces ressources ne suivent pas la dépense. En 1984, le budget de l'État inscrit une subvention à la Caisse [@decret84-259, tableau A] ; en 1989, le Trésor lui consent un prêt [@lfc-1989, art. 8]. Pour 2009-2011, le rapport du ministère des Finances donne la mesure de l'écart entre les recettes affectées du compte de la Caisse et la dépense.
+
+| | 2009 | 2010 | 2011 |
+|---|---:|---:|---:|
+| Recettes affectées du compte de la CGC (MD) | 36,6 | 30,2 | 31,6 |
+| Dépense de compensation, trois postes (MD) | 1 430,0 | 1 500,0 | 2 869,2 |
+
+: Recettes affectées de la Caisse et dépense de compensation, 2009-2011. Source : ministère des Finances [@minfin-finances-publiques-2011]. {#tbl-compensation-recettes-affectees}
+
+La compensation est alors, pour l'essentiel, une dépense du budget général de l'État. Le texte qui a opéré ce passage — ou la date à laquelle la dépense a quitté les fonds spéciaux du Trésor — n'est pas identifié ici ; la dépense figure en tout cas au budget en 2003, première année du @tbl-compensation-2003-2011.
+
+<!-- RECHERCHE r-cgc-budgetisation-1992-2003 : texte transférant la dépense de la CGC des fonds spéciaux du Trésor au budget général, entre 1992 et 2003 (voir docs/recherches.yml) -->
+
+<!-- TODO (bibliographe) : verser la loi n° 91-98 (LF 1992, art. 77 : nouveau prêt du Trésor à la CGC) et les arrêtés des 11 octobre 1990 et 7 juillet 1992 (relèvement des prévisions du fonds spécial), connus par leur seul intitulé ; puis les citer ici. -->
+
+Le rendement de la redevance de compensation depuis 2013 n'est pas établi ici.
+
+<!-- TODO (documentaliste) : produit annuel de la redevance de compensation depuis 2013 ; arrêté du 10 mai 2024 (JORT n° 61, p. 1428) qui atteste que la redevance existe encore en 2024, à verser par le bibliographe avant citation. -->
+
+## Les réformes, texte par texte {#sec-compensation-reformes}
+
+| Texte | Disposition | Changement |
+|---|---|---|
+| Loi n° 70-26 du 19 mai 1970 | art. 3 [@loi70-26, art. 3] | institution de la Caisse générale de compensation ; instruments : subvention et péréquation |
+| Loi de finances pour 1971 | art. 48 ; tableau F [@lf-1971, art. 48] | la Caisse devient un fonds spécial du Trésor ; prévision pour 1971 : 7 000 000 D |
+| Décret n° 70-622 du 31 décembre 1970 | art. 5 [@decret70-622, art. 5] | taxe unique de compensation sur les produits pétroliers au profit de la Caisse, au 1^er^ janvier 1971 : essence 1,378 D/hl, pétrole 0,036 D/hl, gas-oil 0,235 D/hl |
+| Loi de finances pour 1976 | art. 67 et 68 [@loi75-83, art. 67-68] | au 1^er^ janvier 1976, la Caisse reprend la caisse spéciale de compensation des ciments, supprimée, et le compte de stabilisation des produits pétroliers finis |
+| Loi de finances pour 1984 | art. 87 ; tableau F [@lf-1984, art. 87] | financement, sur les disponibilités de la Caisse, des mesures d'accompagnement de « la suppression de la compensation des céréales et dérivés » ; prévision du fonds pour 1984 : 145 000 000 D |
+| Loi de finances pour 1984 | art. 38 et suivants ; tableau F [@lf-1984, art. 38 et tableau F] | [taxe unique de compensation de transports routiers](#g-taxe-unique-compensation-transports-routiers) au 1^er^ janvier 1984 ; 5 600 000 D prévus pour la caisse de compensation et de soutien des transports routiers |
+| Loi de finances complémentaire du 21 mars 1984 | art. 6 et 27 à 29 [@lfc-1984, art. 6 et 27-29] | l'article 87 de la loi de finances est abrogé ; 28 % de la taxe sur les bières, vins et alcools et 8 000 000 D de la contribution exceptionnelle de solidarité vont à la Caisse ; total des fonds spéciaux : de 420 577 000 D à 534 577 000 D |
+| Décret n° 84-259 du 21 mars 1984 | tableau A, chap. IX, section II, art. 64 [@decret84-259, tableau A] | subvention du budget de l'État à la Caisse : 98 000 000 D |
+| Loi de finances complémentaire du 3 novembre 1989 | art. 3 à 8 [@lfc-1989, art. 3-8] | contribution au profit de la Caisse au titre de 1989 ; prêt du Trésor de 20 millions de dinars, sans intérêts, sur dix ans |
+| Loi de finances pour 2013 | art. 63 [@lf-2013, art. 63] | redevance de compensation : 1 % du chiffre d'affaires de certains établissements, 5 000 D sur les grosses cylindrées, 2 D par nuitée d'hôtel, 1 % du revenu annuel des personnes physiques au-delà de 20 000 D de revenu net, plafonné à 2 000 D |
+| Loi de finances pour 2014 | art. 76 [@lf-2014, art. 76] | redevance étendue aux voitures particulières, de 20 D à 850 D selon la puissance, et à 25 % de la taxe unique de compensation de transports routiers |
+| Arrêté du 15 juillet 2016 | art. 5 [@arrete-2016-07-15-prix-petroliers, art. 5] | ajustement automatique des prix de l'essence et du gasoil, tous les trois mois |
+| Arrêté du 31 mars 2020 | art. 5 et 10 [@arrete-2020-03-31-prix-petroliers, art. 5 et 10] | ajustement mensuel ; variation plafonnée à 1,5 % du prix en vigueur, puis 2 % à compter du 1^er^ janvier 2021 |
+| Arrêté du 7 avril 2021 | [@arrete-2021-04-07-prix-petroliers] | plafond mensuel porté à 5 % |
+
+: Les textes de la compensation, 1970-2021 : ce que chacun change. {#tbl-compensation-reformes}
+
+### 1976 : les ciments et les produits pétroliers {#sec-compensation-1976}
+
+La loi de finances pour 1976 supprime la caisse spéciale de compensation des ciments et verse son solde à la Caisse générale, qui en reprend dépenses et recettes ; elle lui confie aussi les opérations du compte de stabilisation des produits pétroliers finis, solde compris [@loi75-83, art. 67-68]. La Caisse intervient dès lors sur les prix pétroliers, sans que le sens du flux — subvention nette ou prélèvement net — soit établi entre 1976 et 2004. La Banque mondiale note en 1985 que le soutien à la consommation d'énergie passe alors hors de la Caisse et se compense avec la fiscalité pétrolière [@bm-1985-cem-5328-vol2, note 15].
+
+### 1984 : la compensation des céréales {#sec-compensation-1984}
+
+La loi de finances pour 1984, du 30 décembre 1983, dispose que « le financement des mesures d'accompagnement qui seront prises à la suite de la suppression de la compensation des céréales et dérivés sera effectué pour 1984 sur les disponibilités de la CGC » [@lf-1984, art. 87]. Les céréales sont alors le premier poste de la Caisse : 156,5 MD sur 251,0 MD au budget de 1984, selon la Banque mondiale (@tbl-compensation-1982-1984).
+
+La loi de finances complémentaire du 21 mars 1984 abroge cet article [@lfc-1984, art. 27] et reconstitue les moyens de la Caisse par trois voies :
+
+- une ressource affectée nouvelle, 28 % du produit de la taxe sur les bières, vins et alcools [@lfc-1984, art. 6] ;
+- un prélèvement de 8 000 000 D sur le fonds « contribution exceptionnelle de solidarité » [@lfc-1984, art. 28] ;
+- une subvention du budget de l'État de 98 000 000 D, inscrite au budget des dépenses modifié le même jour [@decret84-259, tableau A].
+
+Le rapport de la Banque centrale pour 1984 recoupe ces montants : 106 millions de dinars de subventions à la Caisse, dont 98 à la charge du budget ordinaire et 8 prélevés sur la contribution exceptionnelle de solidarité [@bct-ra-1984, p. 153]. La même loi de finances complémentaire porte le total des fonds spéciaux du Trésor de 420 577 000 D à 534 577 000 D [@lfc-1984, art. 29].
+
+La même année, la loi de finances institue la taxe unique de compensation de transports routiers et prévoit 5 600 000 D pour une caisse de compensation et de soutien des transports routiers [@lf-1984, art. 38 et tableau F]. Cette taxe relève du volume [« Fiscalité »](../fiscalite/index.html).
+
+<!-- TODO (documentaliste) : relire l'article 38 et suivants de la loi n° 83-113 sur le fascicule (taux, assiette, affectation de la taxe unique de compensation de transports routiers) : seuls l'institution de la taxe et le montant du tableau F sont repris ici. -->
+
+### 1989 : une contribution exceptionnelle {#sec-compensation-1989}
+
+La loi de finances complémentaire du 3 novembre 1989 institue, « au titre de l'année 1989 », une contribution au profit de la Caisse, non déductible [@lfc-1989, art. 3-8] :
+
+| Redevable | Assiette | Taux |
+|---|---|---|
+| Hôtels | chiffre d'affaires de 1988 | 2,2 % |
+| Autres entreprises | chiffre d'affaires de 1988 | 0,5 % |
+| Professions non commerciales | recettes | 0,5 %, avec un minimum de 100 D |
+| Salariés gagnant 350 D et plus | revenu de novembre 1989 | un trentième |
+
+: La contribution de 1989 au profit de la Caisse générale de compensation. Source : loi n° 89-88 [@lfc-1989, art. 3-8]. {#tbl-compensation-contribution-1989}
+
+La même loi autorise un prêt du Trésor à la Caisse de 20 millions de dinars, sans intérêts, remboursable sur dix ans [@lfc-1989, art. 8]. Le financement de l'année repose ainsi sur un prélèvement unique et sur l'endettement de la Caisse auprès de l'État. Le FMI situe dans cette période le reflux des subventions alimentaires de la Caisse, de 4,2 % du [PIB](#g-pib) en 1988 à 1,8 % en 1994 [@fmi-1996-red].
+
+### 2013-2014 : la redevance de compensation {#sec-compensation-redevance}
+
+Après la hausse de la dépense de 1 500,0 MD en 2010 à 2 869,2 MD en 2011 (@tbl-compensation-2003-2011), la loi de finances pour 2013 crée une redevance de compensation au profit de la Caisse, assise sur des consommations et des revenus élevés [@lf-2013, art. 63] ; la loi de finances pour 2014 l'étend à l'ensemble des voitures particulières [@lf-2014, art. 76].
+
+| Assiette | Montant | Texte |
+|---|---|---|
+| Chiffre d'affaires des casinos, boîtes de nuit, restaurants classés, cafés de 2^e^ et 3^e^ catégorie, salons de thé et pâtissiers | 1 % | LF 2013, art. 63 |
+| Première immatriculation des voitures de plus de 2 000 cm³ (essence) ou 2 500 cm³ (diesel) | 5 000 D | LF 2013, art. 63 |
+| Nuitée d'hôtel, à compter du 1^er^ octobre 2013 | 2 D | LF 2013, art. 63 |
+| Revenu annuel des personnes physiques, au-delà de 20 000 D de revenu net | 1 %, plafonné à 2 000 D | LF 2013, art. 63 |
+| Voitures particulières, selon la puissance | de 20 D (4 CV) à 850 D (16 CV et plus) | LF 2014, art. 76 |
+| Véhicules soumis à la taxe unique de compensation de transports routiers | 25 % de cette taxe | LF 2014, art. 76 |
+
+: La redevance de compensation, 2013-2014. Sources : loi n° 2012-27 [@lf-2013, art. 63] ; loi n° 2013-54 [@lf-2014, art. 76]. {#tbl-compensation-redevance}
+
+<!-- TODO (documentaliste) : établir sur l'article 63 de la loi n° 2012-27 si le 1 % frappe le revenu entier des personnes dont le revenu net dépasse 20 000 D, ou la seule fraction au-delà de ce seuil : la formule de la note documentaire est reprise telle quelle. -->
+
+### 2016-2021 : l'ajustement automatique des prix des carburants {#sec-compensation-carburants}
+
+Les trois arrêtés de 2016, 2020 et 2021 ne touchent pas au financement de la compensation mais à sa cause : l'écart entre le prix intérieur des carburants et leur coût. Le [mécanisme d'ajustement automatique](#g-ajustement-automatique-prix-carburants) lie le premier au second, par pas plafonnés.
+
+| Arrêté | Périodicité | Variation maximale du prix à chaque ajustement |
+|---|---|---|
+| 15 juillet 2016 [@arrete-2016-07-15-prix-petroliers, art. 5] | tous les trois mois, sur trois mois mobiles de prix internationaux | |
+| 31 mars 2020 [@arrete-2020-03-31-prix-petroliers, art. 5 et 10] | tous les mois | 1,5 % du prix en vigueur, à la hausse comme à la baisse ; 2 % à compter du 1^er^ janvier 2021 |
+| 7 avril 2021 [@arrete-2021-04-07-prix-petroliers] | tous les mois | 5 % |
+
+: L'ajustement automatique des prix de l'essence sans plomb, du gasoil ordinaire et du gasoil 50, 2016-2021. L'arrêté de 2016 n'est cité ici que pour sa périodicité. {#tbl-compensation-ajustement}
+
+L'arrêté de 2020 abroge celui de 2016 ; celui de 2021 ajoute une évaluation annuelle du mécanisme. Aucun texte postérieur modifiant, suspendant ou abrogeant le mécanisme n'est identifié ici.
+
+<!-- RECHERCHE r-carburants-ajustement-apres-2021 : texte modifiant, suspendant ou abrogeant l'ajustement automatique mensuel après l'arrêté du 7 avril 2021 (voir docs/recherches.yml) -->
+
+Deux limites bornent la portée de ces textes. Les prix eux-mêmes sont notifiés par un acte conjoint des deux ministres qui n'est pas publié au *Journal officiel* [@arrete-2016-07-15-prix-petroliers, art. 7 ; @arrete-2020-03-31-prix-petroliers, art. 6] : la série des prix à la pompe ne se lit donc pas dans les textes. Et ce que le mécanisme a produit — dates et ampleur des ajustements, périodes de gel — n'est établi par aucune source citée ici.
+
+<!-- TODO (documentaliste) : série des prix à la pompe (arrêtés publiés de 1964 à 1993, puis sources hors JORT : ministère chargé de l'énergie, Observatoire national de l'énergie, STIR) et tarifs de l'électricité et du gaz par tranche (STEG) : aucune série n'est localisée — docs/notes/compensation.md, § 6, points 4 et 5. -->
+
+## Longue période et données {#sec-compensation-longue-periode}
+
+Aucune série continue du coût de la compensation n'est disponible de 1970 à aujourd'hui. Quatre blocs datés se succèdent, de sources et de périmètres différents ; entre eux, les années 1985 à 1990 et 1999 à 2002 ne sont couvertes par aucune valeur en dinars.
+
+<!-- TODO (rédacteur) : NE PAS tracer de figure tant que la série n'est pas reconstruite dans l'entrepôt avec sa fiche de provenance (docs/notes/compensation.md, § 2.1, 2.3 et 2.4) : coût par poste 2003-2025 en MD et en % du PIB ; temps long 1970-2025 en % du PIB, ruptures de périmètre signalées. Les parts dans le PIB ne se calculent pas à la main : seules les parts publiées par les sources figurent ci-dessous. -->
+
+### 1971-1984 : le fonds spécial
+
+Les lois de finances donnent la prévision annuelle du fonds spécial ; deux années en sont établies ici, que la Banque mondiale permet de rapprocher des dépenses de la Caisse au début des années 1980.
+
+| Année | Grandeur | Montant (MD) | Source |
+|---|---|---:|---|
+| 1971 | prévision du fonds spécial | 7,0 | loi de finances [@lf-1971, tableau F] |
+| 1982 | dépenses de la Caisse | 165,0 | Banque mondiale, citant la Caisse [@bm-1985-cem-5328-vol1, tableau 11] |
+| 1983 | dépenses de la Caisse | 181,0 | idem |
+| 1984 | prévision initiale du fonds spécial | 145,0 | loi de finances [@lf-1984, tableau F] |
+| 1984 | budget de la Caisse | 251,0 | Banque mondiale, citant la Caisse [@bm-1985-cem-5328-vol1, tableau 11] |
+
+: Le fonds spécial et les dépenses de la Caisse, 1971-1984 (millions de dinars courants). Les prévisions des lois de finances et les dépenses rapportées par la Banque mondiale ne mesurent pas la même grandeur. {#tbl-compensation-1971-1984}
+
+Le budget de la Caisse pour 1984, tel que le rapporte la Banque mondiale, se répartit ainsi.
+
+| Produit | Budget 1984 (MD) |
+|---|---:|
+| Céréales | 156,5 |
+| Huile d'olive | 33,5 |
+| Sucre | 15,0 |
+| Engrais | 14,8 |
+| Lait | 6,6 |
+| **Total, autres postes compris** | **251,0** |
+
+: Le budget de la Caisse générale de compensation pour 1984, par produit. Source : Banque mondiale, citant la Caisse [@bm-1985-cem-5328-vol1, tableau 11]. Les céréales en forment 62,4 %. {#tbl-compensation-1982-1984}
+
+<!-- TODO (documentaliste) : la série annuelle 1970-1984 des dépenses de la Caisse par poste (Banque mondiale 1985, vol. II, tableau III-1) et les tableaux F des lois de finances 1972-1992 restent à établir avant toute publication ; série 1985-2002 à construire sur les rapports annuels de la BCT — docs/notes/compensation.md, § 2.2, 2.3 et § 6, point 9. -->
+
+### 1988-1998 : les subventions alimentaires selon le FMI
+
+Deux rapports du FMI couvrent la décennie. Le premier donne les subventions alimentaires, d'après le ministère des Finances, et situe leur poids à 4,2 % du PIB en 1988 et 1,8 % en 1994 [@fmi-1996-red] ; le second donne les « subventions aux consommateurs par la CGC ». Les deux se recouvrent en 1994 et y divergent — 247,0 MD contre 319 MD : les périmètres diffèrent, et les deux séries ne se raccordent pas.
+
+| Année | Subventions alimentaires (MD) — FMI 1996 | Subventions aux consommateurs par la CGC (MD) — FMI 2000 | Idem, en % du PIB — FMI 2000 |
+|---|---:|---:|---:|
+| 1991 | 296,3 | | |
+| 1992 | 269,0 | | |
+| 1993 | 260,0 | | |
+| 1994 | 247,0 | 319 | 2,0 |
+| 1995 | 243,0 | 346 | 2,0 |
+| 1996 | | 418 | 2,2 |
+| 1997 | | 378 | 1,8 |
+| 1998 | | 375 | 1,7 |
+
+: Les subventions de la Caisse dans les années 1990, selon deux rapports du FMI (millions de dinars courants). Sources : FMI 1996 [@fmi-1996-red, tableau 24] ; FMI 2000 [@fmi-2000-red, tableau 15]. Deux séries distinctes, non raccordées. {#tbl-compensation-fmi}
+
+### 2003-2011 : la dépense budgétaire par poste
+
+Les rapports du ministère des Finances donnent, à partir de 2003, la dépense de compensation en trois postes. C'est le seul bloc d'un seul tenant et d'une seule source.
+
+| Année | Produits de base | Carburants | Transport | Total | Rapport |
+|---|---:|---:|---:|---:|---|
+| 2003 | 217,8 | — | 111,0 | 328,8 | 2005 |
+| 2004 | 200,0 | 203,0 | 120,0 | 523,0 | 2005 |
+| 2005 | 244 | 414 | 132 | 790 | 2008 |
+| 2006 | 287 | 500 | 146 | 933 | 2008 |
+| 2007 | 668 | 450 | 163 | 1 281 | 2008 |
+| 2008 | 1 048 | 806 | 182 | 2 036 | 2008 |
+| 2009 | 800,0 | 430,0 | 200,0 | 1 430,0 | 2011 |
+| 2010 | 730,0 | 550,0 | 220,0 | 1 500,0 | 2011 |
+| 2011 | 1 100,0 | 1 536,0 | 233,2 | 2 869,2 | 2011 |
+
+: La dépense budgétaire de compensation par poste, 2003-2011 (millions de dinars courants). Sources : ministère des Finances, rapports sur les finances publiques de 2005, 2008 et 2011 [@minfin-finances-publiques-2005 ; @minfin-finances-publiques-2008 ; @minfin-finances-publiques-2011]. Le poste « carburants » réunit les transferts à l'ETAP, à la STEG et à la STIR. Les totaux de 2003 et 2004 sont la somme des trois postes. Chaque année est donnée dans sa publication la plus récente : le rapport de 2005 donnait pour 2005 des postes de 240,9, 414,0 et 134,0 MD, et l'annexe 23 du rapport de 2008 donne pour 2007 un total de 1 282,4 MD. {#tbl-compensation-2003-2011}
+
+Trois faits s'y lisent. La ligne « carburants » apparaît en 2004, à 203,0 MD : c'est la première inscription budgétaire de ce poste, non l'entrée des produits pétroliers dans la compensation, qui date de 1971 pour la taxe et de 1976 pour le compte de stabilisation (@sec-compensation-1976). Le poste des produits de base passe de 287 MD en 2006 à 1 048 MD en 2008. Enfin la dépense totale passe de 1 500,0 MD en 2010 à 2 869,2 MD en 2011, les carburants de 550,0 à 1 536,0 MD ; le ministère des Finances chiffre la compensation de 2011 à 4,4 % du PIB et à 61 % des dépenses de développement [@minfin-finances-publiques-2011].
+
+Le même ministère rapproche la dépense réalisée de celle que prévoyait le XI^e^ Plan, stable et proche de 900 MD par an.
+
+| | 2007 | 2008 | 2009 | 2010 | 2011 |
+|---|---:|---:|---:|---:|---:|
+| Compensation prévue au XI^e^ Plan (MD) | 928 | 929 | 919 | 912 | 909 |
+| Compensation réalisée (MD) | 1 282,4 | 2 036,0 | 1 430,0 | | |
+| PIB (MD) | 45 628,7 | 50 324,9 | | | |
+
+: La compensation prévue au XI^e^ Plan et réalisée, 2007-2011 (millions de dinars courants). Source : ministère des Finances [@minfin-finances-publiques-2008, annexe 23]. {#tbl-compensation-plan}
+
+Le détail par produit et par entreprise est connu pour la fin de la période.
+
+| Produit | 2009 | 2010 | 2011 |
+|---|---:|---:|---:|
+| Céréales | 687,0 | 613,0 | 833,7 |
+| Huile | 109,0 | 112,7 | 214,4 |
+| Lait | | | 23,1 |
+| Sucre | | | 10,8 |
+| Papier scolaire | | | 4,3 |
+| Autres | | | 13,7 |
+| **Produits de base** | **800,0** | **730,0** | **1 100,0** |
+
+: La compensation des produits de base par produit, 2009-2011 (millions de dinars courants). Source : ministère des Finances [@minfin-finances-publiques-2011]. Le détail des produits autres que les céréales et l'huile n'est donné que pour 2011. {#tbl-compensation-produits-2009-2011}
+
+| Entreprise | Transfert en 2011 (MD) |
+|---|---:|
+| ETAP | 572,0 |
+| STEG | 540,0 |
+| STIR | 424,0 |
+| **Poste « carburants »** | **1 536,0** |
+
+: Le poste « carburants » en 2011, par entreprise bénéficiaire du transfert (millions de dinars courants). Source : ministère des Finances [@minfin-finances-publiques-2011]. {#tbl-compensation-energie-2011}
+
+### Après 2011
+
+Le même tableau du ministère des Finances est prolongé par ses bulletins d'exécution du budget, puis par les rapports annuels de la BCT, qui le citent. Les valeurs postérieures à 2011 ne sont pas reproduites ici.
+
+<!-- TODO (bibliographe) : aucune clé n'existe pour les sources de la série 2012-2025 — bulletins « Résultats provisoires de l'exécution du budget de l'État » (numéros de mars 2013, décembre 2015, janvier 2017, juillet 2018) et rapports annuels de la BCT pour 2015, 2017, 2019, 2021, 2022, 2023 et 2024. Les verser, après relecture des lignes 2012-2017, puis prolonger le tableau tbl-compensation-2003-2011 jusqu'en 2025 (docs/notes/compensation.md, § 2.1) : c'est là que se lisent le pic de 2013, le creux de 2016 et le changement d'échelle de 2022. -->
+
+Une rupture de périmètre est à connaître avant toute lecture de cette suite : les bulletins d'exécution signalent que la loi de finances complémentaire pour 2015 a, d'une part, révisé à la baisse l'hypothèse de prix du baril et, d'autre part, adopté le principe d'une séparation des opérations de commercialisation des hydrocarbures. La baisse de la ligne « carburants » à partir de 2015 mêle donc un effet de prix et un changement de comptabilisation, dont le contenu n'est pas établi ici ; elle ne se lit pas comme un pur effet du prix du pétrole.
+
+Deux autres réserves valent pour toute la série budgétaire. Elle est tenue en base caisse : les arriérés et les régularisations entre l'État et les entreprises déplacent la charge d'une année à l'autre. Et chaque année existe en plusieurs états successifs — loi de finances, loi de finances complémentaire, résultat provisoire, réalisé —, qui diffèrent.
+
+### Coût budgétaire et coût économique de l'énergie {#sec-compensation-cout-economique}
+
+Le crédit budgétaire « carburants » ne mesure pas tout le soutien à l'énergie. Un rapport daté du 21 juillet 2014, établi par trois corps de contrôle de l'État sur ordre de mission du ministre des finances, raisonne sur les besoins de financement de l'ensemble STEG-STIR-ETAP [@minfin-compensation-carburants-2014, p. 4].
+
+| Année | État | Besoin de financement STEG-STIR-ETAP (MD) | Pour mémoire : crédit « carburants » (MD) |
+|---|---|---:|---:|
+| 2010 | réalisé | 1 065,9 | 550,0 |
+| 2011 | réalisé | 2 543,7 | 1 536,0 |
+| 2012 | loi de finances | 3 095 | |
+| 2012 | loi de finances complémentaire | 4 084,5 | |
+| 2012 | réalisé | 5 064,4 | |
+| 2013 | loi de finances complémentaire (prévision) | 5 754 | |
+
+: Les besoins de financement du système STEG-STIR-ETAP, 2010-2013 (millions de dinars courants). Sources : rapport de contrôle du 21 juillet 2014 [@minfin-compensation-carburants-2014, p. 4] ; pour le crédit budgétaire, @tbl-compensation-2003-2011. Les deux grandeurs ne se substituent pas l'une à l'autre. {#tbl-compensation-besoins-energie}
+
+La mission estime en outre à environ 1 210 MD, sur 2010-2012, le soutien en nature dont bénéficie la STEG au titre de la redevance sur le gaz algérien, qui n'est pas inscrit au budget [@minfin-compensation-carburants-2014, p. 4]. Sur 2010 et 2011, seules années où les deux grandeurs sont connues ici, le besoin de financement dépasse le crédit budgétaire « carburants ».
+
+<!-- TODO (documentaliste) : le rapport de 2014 n'est exploité que pour ses pages 1 à 5 ; ses tableaux chiffrés (pp. 23-180) restent à lire — docs/notes/compensation.md, § 1.3. -->
+
+### Qui bénéficie des subventions alimentaires {#sec-compensation-incidence}
+
+L'[incidence des subventions](#g-incidence-des-subventions) — leur répartition entre les ménages selon leur niveau de vie — est établie ici par une seule étude, conduite par l'Institut national de la statistique avec le Centre de recherches et d'études sociales et la Banque africaine de développement sur l'enquête de consommation de 2010. Elle ne porte que sur les subventions alimentaires [@ins-cres-bad-2013-subventions].
+
+Premier résultat, une part de la dépense n'atteint pas les ménages : sur un budget de la Caisse d'environ 1 150 MD, 888 MD leur reviennent ; 262 MD, soit 22,8 %, vont à des consommations « hors ménages » — restaurants, cafés, hôtels, commerce frontalier. Le budget retenu par l'étude ne coïncide pas avec le poste « produits de base » de 2010 du @tbl-compensation-2003-2011 ; les deux chiffres ne se rapprochent pas sans connaître le périmètre de l'étude.
+
+Deuxième résultat, la subvention reçue par tête varie peu d'un [quintile de niveau de vie](#g-quintile-niveau-de-vie) à l'autre, et croît légèrement avec le revenu.
+
+| | 1^er^ quintile | 2^e^ | 3^e^ | 4^e^ | 5^e^ quintile |
+|---|---:|---:|---:|---:|---:|
+| Subvention alimentaire annuelle par tête (D) | 68,2 | 84,2 | 87,5 | 89,9 | 89,1 |
+| dont gros pain (D) | 20,6 | | | | 28,5 |
+| dont semoule (D) | 17,0 | | | | 12,1 |
+| Indice de ciblage absolu | 0,82 | | | | 1,07 |
+
+: La subvention alimentaire par tête selon le quintile de niveau de vie, 2010. Source : INS, CRES et BAD [@ins-cres-bad-2013-subventions] ; les montants par tête viennent du tableau 1 de l'étude. Les valeurs par produit et l'indice de ciblage ne sont repris que pour les quintiles extrêmes. {#tbl-compensation-incidence}
+
+Les personnes pauvres reçoivent 64,8 D par tête, contre 87,2 D pour les non-pauvres [@ins-cres-bad-2013-subventions, tableau 2]. La semoule est, selon l'étude, le seul produit dont la subvention décroît avec le revenu. Un montant presque égal par tête pèse cependant davantage dans un budget modeste, ce que mesurent les deux derniers résultats de l'étude.
+
+| Indicateur, 2010 | Avec les subventions | Sans les subventions |
+|---|---:|---:|
+| Taux de pauvreté, effet immédiat | 15,5 % | 19,1 % |
+| Taux de pauvreté, après adaptation des consommations | 15,5 % | 16,8 % |
+| Indice de Gini | 37,4 % | 38,5 % |
+
+: L'effet simulé d'une suppression des subventions alimentaires sur la pauvreté et l'inégalité, 2010. Source : INS, CRES et BAD [@ins-cres-bad-2013-subventions]. La pauvreté extrême augmenterait de 1,7 point dans l'effet immédiat. {#tbl-compensation-pauvrete}
+
+Deux constats de l'étude se font ainsi face : sans [ciblage](#g-ciblage), la subvention profite davantage, par tête, au cinquième le plus aisé qu'au cinquième le plus modeste ; et sa suppression relèverait, dans l'effet immédiat, le taux de pauvreté de 3,6 points. C'est le terme de la comparaison avec les transferts monétaires ciblés de l'assistance sociale (@sec-prest-non-contributives).
+
+L'incidence des subventions à l'énergie n'est pas documentée ici, non plus que celle des subventions alimentaires après 2010.
+
+<!-- TODO (documentaliste) : trois études à lire avant d'écrire l'incidence de l'énergie — Banque mondiale 2013, « Vers une meilleure équité : les subventions énergétiques, le ciblage et la protection sociale en Tunisie » (n° 82712-TN, numéro à vérifier) ; Cuesta, El-Lahga et Lara Ibarra 2015 (Policy Research Working Paper 7312) ; Jouini, Lustig, Moummi et Shimeles 2018 (Review of Income and Wealth, vol. 64). Relever aussi, dans l'étude INS-CRES-BAD, la définition des classes (pauvres, classe moyenne, aisés) avant de citer la répartition du budget entre elles ; et les pages sur l'auto-ciblage des rapports Banque mondiale 1993 et 1995 — docs/notes/compensation.md, § 3. -->
+
+<!-- TODO (documentaliste) : ciblage et transferts monétaires de substitution (1989 et suivantes ; réforme annoncée depuis 2013) : aucun texte n'est établi ; lien à faire avec le PNAFN (docs/notes/prestations-assistance.md) — docs/notes/compensation.md, § 6, point 8. Lois de règlement : à ouvrir pour savoir si leurs tableaux isolent la compensation (§ 6, point 11). -->

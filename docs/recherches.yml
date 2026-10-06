@@ -1233,3 +1233,65 @@
   - archives d'Echaab antérieures à 2016
   - rapports annuels du ministère des affaires sociales
   - études de l'OIT sur la négociation collective en Tunisie
+
+- id: r-cgc-decret-application-1970
+  objet: décret fixant les modalités d'application de l'article 3 de la loi n° 70-26 du 19 mai 1970 (organisation et interventions de la Caisse générale de compensation)
+  ou: [precis/fr/prestations_sociales/_compensation.qmd#sec-compensation-institution]
+  requetes:
+    titres_fts: ['"caisse generale de compensation" OR "caisse de compensation"', compensation]
+    titres_like: ['%caisse generale de compensation%']
+    iort_ar: [الصندوق العام للتعويض]
+    depuis: 1970-05-19
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache seul : FTS sur titre et objet ; LIKE sans accents sur titre et objet et intitulé arabe dans les titres et objets de jort_cache (pas dans le miroir iort), rejoués du 19 mai 1970 au 31 décembre 1985. Seize intitulés nomment la CGC de 1975 à 1985, tous des articles de lois de finances ou des arrêtés de relèvement de prévisions ; aucun entre mai 1970 et janvier 1975 ; aucun décret d''organisation ; un seul intitulé arabe dans toute la base (loi n° 2012-27, art. 63). Fascicules lus : n° 27 et n° 58 de 1970 seulement. Lacunes : aucun fascicule de 1970-1974 parcouru au plein texte ; miroir iort non interrogé ; visas des textes ultérieurs non remontés.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - plein texte des fascicules de 1970 à 1972 (après OCR) sur « Caisse Générale de Compensation »
+  - remonter les visas de la loi n° 91-64 sur la concurrence et les prix et des décrets de prix des années 1970
+  - interroger le miroir iort sur الصندوق العام للتعويض
+
+- id: r-cgc-budgetisation-1992-2003
+  objet: texte transférant la dépense de la Caisse générale de compensation des fonds spéciaux du Trésor au budget général de l'État, ou réformant son financement, entre 1992 et 2003
+  ou: [precis/fr/prestations_sociales/_compensation.qmd#sec-compensation-financement]
+  requetes:
+    titres_fts: ['"caisse generale de compensation" OR "caisse de compensation"']
+    titres_like: ['%caisse generale de compensation%']
+    iort_ar: [الصندوق العام للتعويض]
+    depuis: 1992-07-07
+  periode:
+    jusqu_au: 2005-12-31
+    motif: le rapport « Finances publiques » 2005 présente la compensation de 2003 à 2005 comme une dépense d'intervention du budget
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache seul (FTS, LIKE sans accents depuis 1986, intitulé arabe dans les titres) : aucun intitulé ne nomme la CGC entre l''arrêté du 7 juillet 1992 et l''article 63 de la loi n° 2012-27. Lacunes : aucune loi de finances de 1993 à 2003 ouverte ; les fascicules 2000-2006 à couche texte décalée ne sont pas testés.'
+    couvert_jusqu_au: 2005-12-31
+    resultat: aucun
+  a_faire:
+  - 'lire les tableaux des fonds spéciaux du Trésor des lois de finances 1993 à 2003 : dernière année où la CGC y figure pour sa dépense entière'
+  - rapports annuels de la BCT 1992-2003, chapitre finances publiques
+
+- id: r-carburants-ajustement-apres-2021
+  objet: texte modifiant, suspendant ou abrogeant le mécanisme d'ajustement automatique mensuel des prix des carburants après l'arrêté du 7 avril 2021
+  ou: [precis/fr/prestations_sociales/_compensation.qmd#sec-compensation-carburants]
+  requetes:
+    titres_fts: ['"ajustement automatique" OR (prix AND carburants) OR ("produits petroliers" AND prix)']
+    titres_like: ['%produits petroliers%', '%carburant%', '%ajustement%prix%']
+    plein_texte: [ajustement automatique]
+    depuis: 2021-04-08
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : aucun intitulé postérieur à l''arrêté du 7 avril 2021. Plein texte « ajustement automatique » (pdftotext, sans normalisation) sur les fascicules FRANÇAIS du corpus local de 2016 à 2026 (2021 : 117 ; 2022 : 125 ; 2023 : 128 ; 2024 : 147 ; 2025 : 153 ; 2026 : 94) : trois occurrences, toutes de 2016-2021 (n° 61/2016, n° 78/2020, n° 32/2021). Lacunes : édition arabe non parcourue ; fascicules français manquants au corpus non recensés (le n° 28 de 2020 en fait partie ; 2018 : 70 fichiers et 2019 : 59, années manifestement incomplètes) ; fichiers français servant l''édition arabe non écartés ; les prix sont notifiés par arrêté interne non publié (arrêté de 2020, art. 6).'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - rejouer au plein texte sur l'édition arabe (terme à relever dans l'arrêté du 31 mars 2020, éd. ar.)
+  - recenser les fascicules français absents du corpus pour 2021-2026 (relancer --sonder-pist)
+  - presse et communiqués du ministère chargé de l'énergie pour les dates d'ajustement de 2022

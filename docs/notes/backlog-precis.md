@@ -234,10 +234,74 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
   maternité, décès, accidents du travail, perte d'emploi, CNAM ; `#sec-prest-autres-risques`) —,
   `_non_contributives.qmd` (`#sec-prest-non-contributives`), `_matrice.qmd` ; annexe
   `_notations.qmd` (« Les notations du volume »).
-- **Arabe — à faire à la livraison de la traduction** : `precis/ar/prestations_sociales/_quarto.yml`
-  ne déclare encore que `index.qmd`, à dessein. Y déclarer la partie `_contributives.qmd`, les quatre chapitres et
-  l'annexe quand la traduction les livre, puis rendre le livre arabe (mêmes réserves que pour les
-  cotisations).
+- **Arabe** : `precis/ar/prestations_sociales/_quarto.yml` déclare les chapitres traduits (état
+  constaté le 6 octobre 2026). Le chapitre `_compensation.qmd` y figure **en commentaire** : le
+  décommenter quand sa traduction est livrée, puis rendre le livre arabe.
+- **Chapitre « La compensation » créé le 6 octobre 2026** (`_compensation.qmd`, `#sec-compensation`,
+  entre `_non_contributives.qmd` et `_matrice.qmd`), sur la seule note `docs/notes/compensation.md`
+  (son § 9 prévaut). Plan type : création de la Caisse (1970-1971) → postes et financement →
+  réformes (1976, 1984, 1989, 2013-2014, carburants 2016-2021) → longue période (quatre blocs de
+  coût non raccordés, coût budgétaire et coût économique de l'énergie, incidence alimentaire).
+  Aucune figure : les séries ne sont que localisées. Trois fiches versées dans
+  `docs/recherches.yml` : `r-cgc-decret-application-1970`, `r-cgc-budgetisation-1992-2003`,
+  `r-carburants-ajustement-apres-2021`. Lacunes, dans l'état que la note établit :
+  - **Série 2012-2025 non publiée, faute de clés** : bulletins « Résultats provisoires de
+    l'exécution du budget » (mars 2013, décembre 2015, janvier 2017, juillet 2018) et rapports
+    annuels de la BCT (2015, 2017, 2019, 2021 à 2024) sont **collectés** dans `tunisia-data`
+    (ancien portail du ministère, `bct-archives/109/`), mais non versés à la bibliographie ; les
+    lignes 2012-2017 sont à relire à l'image avant versement. La rupture de périmètre de 2015
+    (LFC 2015 : hypothèse de prix du baril révisée, séparation des opérations de
+    commercialisation des hydrocarbures) est dite en prose, sans chiffre ni clé ; son contenu
+    comptable reste à établir.
+  - **Série à reconstruire dans l'entrepôt** (coût par poste 2003-2025, en MD et en % du PIB ;
+    temps long depuis 1970), avec sa fiche de provenance : préalable aux figures (TODO rédacteur).
+    PIB : `tunisia-data` (WDI, comptes nationaux de l'INS). Aucun ratio n'est calculé à la main
+    dans le chapitre.
+  - **Série 1985-2002** : à établir sur les rapports annuels de la BCT (`bct-archives/109/`,
+    textuels, chapitre « finances publiques ») ; 1999-2002 : attendus aussi dans les rapports
+    « Finances publiques » antérieurs à 2005, **non collectés**. Tableau III-1 de la Banque
+    mondiale 1985 (dépenses de la Caisse 1970-1984) : collecté, **à relire à l'image**, aucune
+    valeur n'en est publiée. Tableaux F des lois de finances 1972-1992 : au JORT, seuls 1971 et
+    1984 sont établis.
+  - **Date du passage de la Caisse au budget général** : aucun texte identifié entre l'arrêté du
+    7 juillet 1992 et la dépense budgétaire de 2003 (fiche `r-cgc-budgetisation-1992-2003`) ;
+    lois de finances 1993-2003 à ouvrir au JORT. Loi n° 91-98 (art. 77) et arrêtés des
+    11 octobre 1990 et 7 juillet 1992 : connus par leur intitulé, sans clé, non cités.
+  - **Décret d'application de l'article 3 de la loi n° 70-26** : non identifié (fiche
+    `r-cgc-decret-application-1970`) ; fascicules de 1970 à 1972 à parcourir après OCR.
+  - **Carburants après avril 2021** : aucun texte identifié (fiche
+    `r-carburants-ajustement-apres-2021`) ; ce que le mécanisme a produit n'est pas établi.
+  - **Prix à la pompe et tarifs de l'électricité et du gaz** : aucune série localisée. Arrêtés de
+    prix de 1964 à 1993 : intitulés connus, textes à lire au JORT ; après 1993, hors JORT
+    (ministère chargé de l'énergie, Observatoire national de l'énergie, STIR, STEG) : **à
+    obtenir**.
+  - **Incidence de l'énergie : trois études à lire, aucune au corpus** — Banque mondiale 2013
+    (n° 82712-TN, numéro à vérifier), Cuesta, El-Lahga et Lara Ibarra 2015 (PRWP 7312), Jouini,
+    Lustig, Moummi et Shimeles 2018 : **à obtenir**, puis à verser. Rien non plus sur
+    l'alimentaire après 2010. Dans l'étude INS-CRES-BAD, la définition des classes (pauvres,
+    classe moyenne, aisés) reste à relever : la répartition du budget entre elles n'est pas
+    citée. Pages sur l'auto-ciblage des rapports Banque mondiale 1993 et 1995 : collectés,
+    à lire (l'ancre `#g-auto-ciblage` n'est pas encore employée).
+  - **Lois de règlement** : aucune ouverte ; au JORT (dernières : gestion 2009, loi n° 2013-6 ;
+    gestions 2017 à 2020, lois n° 2024-18 à 2024-21) ; à vérifier si leurs tableaux isolent la
+    compensation.
+  - **Textes non relus à l'image** (repris de la lecture du documentaliste) : LF 1971 (art. 48,
+    tableau F) et décret n° 70-622, LF 1984 (art. 87, tableau F), LFC 1989 (art. 3-8) ;
+    **art. 38 et suivants de la LF 1984** (taxe unique de compensation de transports routiers) :
+    connu par une lecture dégradée, seule sa référence est retenue — fascicule au corpus, à
+    relire. Rapport de 2014 sur la compensation des carburants : pages 1 à 5 seules exploitées,
+    PDF arabe sans texte exploitable, tableaux chiffrés à lire à l'image. Budgets citoyens
+    2014-2018 et rapports sur le projet de budget 2012-2014 : collectés, PDF arabes à océriser.
+  - **Hors texte, faute de source** : opérateurs de la compensation, bénéficiaires de la
+    compensation du transport, entrées et sorties de produits, produit de la redevance de
+    compensation, ciblage et transferts de substitution, événements de janvier 1984 (aucune
+    source primaire : le chapitre s'en tient aux deux lois de finances).
+  - **Redevance de compensation, revenu des personnes physiques** : à établir sur l'article 63 de
+    la loi n° 2012-27 (fascicule au corpus) si le 1 % frappe le revenu entier ou la fraction
+    au-delà de 20 000 D.
+  - **Glossaire, passe 2 attendue** : les treize notions du chapitre sont `provisoire` et sans
+    définition ; `scripts/build_glossary.py` a été rendu tolérant à l'absence de définition
+    d'une entrée provisoire (il s'arrêtait sur `KeyError`).
 - **Dépense des allocations familiales, 1990-2004 — fait le 3 octobre 2026** (`#fig-cnss-allocations-familiales`, `#sec-pf-longue-periode`), tirée de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026), déflatée par l'IPC des annuaires de l'INS (`ins-annuaire-ipc`). Restent : allocataires, enfants, montant moyen, dépense avant 1990 et après 2004 (TODO du chapitre). **221 valeurs de 1999** (et quelques-unes de 2000) masquées par la reliure restent à lire sur l'original papier (tunisia-data#26) ; en attendant, la figure trace des estimations hachurées ou creuses. Quand le classeur revient : réinjecter dans tunisia-data, relancer `figtools.refresh_cache("cnss-retrospective-ressources-emplois")`, puis relire la note de lecture, qui cite des montants. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches).
 - **Onze paliers de l'allocation** entre 1987 et 2018 n'ont aucun fondement textuel publié.
   Les décisions ou circulaires de la direction générale de la promotion sociale et
@@ -561,7 +625,7 @@ Revue de ce que les sept volumes ne couvrent pas (sujets à établir sur les tex
 2. **Salaire minimum et salaires négociés du secteur privé** : histoire du SMIG et du SMAG (montants, régimes 40 h / 48 h, revalorisations, décrets) ; conventions collectives sectorielles et leurs grilles ; accords salariaux périodiques UGTT-UTICA (privé) et UGTT-gouvernement (public). **En cours.**
 3. Droit du travail déterminant les revenus : durée du travail, congés payés, heures supplémentaires, indemnités de licenciement, contrats précaires et sous-traitance, travail informel.
 4. Politiques actives de l'emploi : programmes de l'ANETI (stages d'insertion, contrats aidés), primes à l'embauche, prises en charge de cotisations patronales ; protection contre la perte d'emploi (aujourd'hui effleurée).
-5. La compensation (Caisse générale de compensation : produits de base, carburants, électricité, transport) — sources déjà collectées sur l'ancien portail du ministère des Finances (`tunisia-data/sources/minfinances-portail-ancien.md`).
+5. La compensation (Caisse générale de compensation : produits de base, carburants, électricité, transport) — **chapitre créé le 6 octobre 2026** dans le volume « Prestations sociales » (`_compensation.qmd`) ; lacunes à la rubrique « Prestations sociales » ci-dessus.
 
 **Fiscalité**
 

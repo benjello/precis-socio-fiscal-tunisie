@@ -20,6 +20,8 @@ book:
     - _prestations_familiales.qmd
     - _autres_risques.qmd
     - _non_contributives.qmd
+    # Chapitre à déclarer quand sa traduction sera livrée :
+    # - _compensation.qmd
     - _matrice.qmd
 
   appendices:
