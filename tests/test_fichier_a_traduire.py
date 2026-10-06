@@ -35,7 +35,8 @@ class QuartoYmlTest(unittest.TestCase):
     def test_refus_quel_que_soit_le_livre(self):
         for livre in ("fiscalite", "retraites", "prestations_sociales",
                       "remunerations_publiques", "cotisations_sociales",
-                      "caisses", "finances_locales", "marche_travail"):
+                      "caisses", "finances_locales", "marche_travail",
+                      "compensation"):
             with self.subTest(livre=livre):
                 self.assertFalse(fichier_a_traduire(f"precis/fr/{livre}/_quarto.yml"))
 

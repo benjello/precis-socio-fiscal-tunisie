@@ -1,0 +1,678 @@
+# Les carburants {#sec-compensation-carburants-chapitre}
+
+Le poste « carburants » est le plus instable de la dépense de compensation, et celui dont la ligne budgétaire dit le moins. Ce chapitre l'ouvre en huit temps : le circuit — qui vend quoi à qui, à quel prix, et ce que le budget verse à chacun ; la subvention que le budget inscrit et celle qu'il n'inscrivait pas, de 2010 à 2012 ; la rupture de périmètre de 2015 ; les recettes en regard ; les prix à la pompe de 1964 à 2026 ; la structure de ces prix et la subvention par litre ; le mécanisme d'ajustement et ce qu'il a produit ; enfin l'autorité qui fixe et notifie les prix. Tout y est de la famille budgétaire ou tiré de textes et de publications officielles ; la série reconstituée par le Fonds monétaire international (FMI) est donnée à part (@sec-compensation-fmi-energie).
+
+## Le circuit {#sec-compensation-circuit}
+
+### Trois entreprises publiques
+
+Trois entreprises publiques portent le circuit des hydrocarbures.
+
+- L'**Entreprise tunisienne d'activités pétrolières (ETAP)** commercialise le pétrole brut et le gaz qui reviennent à l'État.
+- La **Société tunisienne des industries de raffinage (STIR)** achète du pétrole brut, le raffine, et importe des produits finis.
+- La **Société tunisienne de l'électricité et du gaz (STEG)** achète du gaz — importé d'Algérie, ou prélevé au titre de la redevance due par le gazoduc qui traverse le territoire — pour produire l'électricité et distribuer le gaz.
+
+En aval, les prix de vente au public sont administrés (@sec-compensation-qui-notifie). En amont, la loi veut que « les prix de cession à la raffinerie du pétrole brut appartenant à l'État et les prix de cession des produits finis à la sortie de la raffinerie » soient fixés « par référence aux prix d'importation », par une commission [@loi91-45, art. 17].
+
+### Deux étages de subvention jusqu'en 2014
+
+Jusqu'en 2014, la pratique s'écarte de cette référence. Un rapport daté du 21 juillet 2014, établi par trois corps de contrôle de l'État sur ordre de mission du ministre des finances, décrit une subvention à deux étages [@minfin-compensation-carburants-2014, p. 6-9].
+
+- L'étage **direct** est seul inscrit en dépense au budget : c'est la ligne « carburants », faite de transferts à la STEG, à la STIR et, à partir de 2011, à l'ETAP.
+- L'étage **indirect** n'est inscrit nulle part en dépense. L'ETAP cède le pétrole brut à la STIR, et le gaz parvient à la STEG, à des prix de cession préférentiels fixés par l'administration ; l'écart avec le prix mondial est un manque à gagner sur des ressources de l'État — excédent de la commercialisation du pétrole pour le compte de l'État, bénéfices de l'ETAP, rendement de la redevance sur le gaz. La direction générale des ressources et des équilibres du ministère des Finances décrit cette répartition comme « la démarche suivie depuis 2004 ».
+
+| Produit cédé | Acheteur | Prix de cession préférentiel | Prix mondial en 2012, selon le même rapport |
+|---|---|---:|---:|
+| Pétrole brut, local ou importé | STIR | environ 50 D le baril | plus de 170 D le baril |
+| Gaz algérien, importé ou prélevé au titre de la redevance | STEG | 90,8 D la tonne équivalent pétrole | environ 800 D la tonne équivalent pétrole |
+
+: Les prix de cession préférentiels du pétrole brut et du gaz, en vigueur jusqu'en 2014. Source : rapport du 21 juillet 2014 [@minfin-compensation-carburants-2014, p. 7]. Le rapport rattache le prix du gaz à un arrêté du ministre de l'Économie nationale du 8 octobre 1993, et celui du brut à une lettre ministérielle de 1974 et à des lettres de la direction générale de l'énergie. {#tbl-compensation-prix-cession}
+
+### Ce que le budget verse à chacun
+
+La ligne « carburants » se répartit entre les trois entreprises, et cette répartition se renverse en 2015.
+
+| Année | ETAP | STEG | STIR | Ligne « carburants » | Source |
+|---|---:|---:|---:|---:|---|
+| 2010 | — | 250 | 300 | 550,0 | rapport de 2014 [@minfin-compensation-carburants-2014, p. 8 et 10] |
+| 2011 | 572 | 540 | 424 | 1 536,0 | idem |
+| 2012 | 761 | 850 | 500 | 2 111,0 | idem |
+| 2014 | 2 200 | 53 | 100 | 2 353,0 | rapport semestriel à fin 2015 [@minfin-rapport-semestriel-2015-12, p. 28] |
+| 2015 | néant | 858 | 60 | 918,0 | idem |
+| 2016 | néant | néant | 197 | 197,0 | rapport semestriel à fin 2016 [@minfin-rapport-semestriel-2016-12, p. 26] |
+
+: La ligne budgétaire « carburants » par entreprise bénéficiaire, 2010-2016 (millions de dinars courants). Source : ministère des Finances. La répartition n'est pas établie ici pour 2013, ni après 2016. {#tbl-compensation-carburants-beneficiaires}
+
+En 2014, l'ETAP reçoit 94 % de la ligne : elle est subventionnée pour l'écart de prix qu'elle supporte en cédant à perte, de sorte que la [subvention directe](#g-subvention-directe) à l'ETAP est une [subvention indirecte](#g-subvention-indirecte) à la STIR et à la STEG [@minfin-compensation-carburants-2014, p. 6]. En 2015, l'ETAP ne reçoit plus rien et la STEG reçoit 93 % de la ligne. À la fin de juin 2018, la subvention est versée par avances du Trésor : 495 millions de dinars (MD) à la STIR et 195 MD à la STEG [@minfin-rapport-execution-2018-06, p. 5].
+
+Le @fig-compensation-carburants-beneficiaires donne cette répartition année par année.
+
+```{python}
+#| label: fig-compensation-carburants-beneficiaires
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import compensation as cm
+cm.figure(
+    "carburants_beneficiaires",
+    caption=("La ligne budgétaire « carburants » par entreprise bénéficiaire, 2010-2012 et "
+             "2014-2016 : en millions de dinars courants et en part de la ligne"),
+    note_lecture=(
+        "Chaque barre empile les versements du budget à l'ETAP, à la STEG et à la STIR ; le "
+        "nombre qui la surmonte est la ligne « carburants » de l'année. La répartition de "
+        "2013 n'est pas connue ici : l'année reste vide. Le trait vertical marque "
+        "l'élargissement du périmètre de 2015 : l'ETAP, qui reçoit 94 % de la ligne en 2014, "
+        "n'en reçoit plus rien ensuite."))
+```
+
+## Subvention directe et subvention totale, 2010-2012 {#sec-compensation-cout-economique}
+
+Le rapport de 2014 est la seule pièce budgétaire qui chiffre l'étage indirect. Il le fait pour trois années, et de trois manières qui ne se confondent pas : les besoins de financement de l'ensemble STEG-STIR-ETAP ; la subvention totale, directe et indirecte, dans la ventilation de la mission ; la même, dans la ventilation que lui oppose la direction générale des ressources et des équilibres.
+
+::: {.callout-note collapse="true" title="La subvention des carburants selon le rapport du 21 juillet 2014, 2010-2012 : le tableau"}
+| Grandeur | 2010 | 2011 | 2012 |
+|---|---:|---:|---:|
+| **Pour mémoire : ligne budgétaire « carburants »** | **550,0** | **1 536,0** | **2 111,0** |
+| *Ventilation de la mission (p. 9)* | | | |
+| Subvention directe | 928,3 | 2 296,35 | 2 127,5 |
+| Subvention indirecte | 857,3 | 1 105,65 | 2 766,7 |
+| Total | 1 785,6 | 3 402,0 | 4 894,2 |
+| *Ventilation de la direction générale des ressources et des équilibres (p. 10)* | | | |
+| Subvention directe consommée | 552,8 | 1 571,2 | 1 366,5 |
+| Subvention indirecte | 1 232,3 | 1 730,8 | 3 527,7 |
+| Total | 1 785,1 | 3 302,0 | 4 894,2 |
+| *Besoins de financement de l'ensemble STEG-STIR-ETAP (p. 4)* | | | |
+| Réalisé | 1 065,9 | 2 543,7 | 5 064,4 |
+
+: La subvention des carburants selon le rapport du 21 juillet 2014, 2010-2012 : ligne budgétaire, subvention totale dans ses deux ventilations, besoins de financement (millions de dinars courants). Source : [@minfin-compensation-carburants-2014, p. 4 et 8-10] ; pour la ligne budgétaire, @tbl-compensation-2003-2011 et @tbl-compensation-2012-2025. Les trois grandeurs ne se substituent pas l'une à l'autre, et une part d'une ventilation ne s'ajoute pas à une part de l'autre. Deux discordances sont dans le rapport lui-même : le total de 2011 vaut 3 402,0 MD à la page 9 et 3 302,0 MD à la page 10 ; la subvention directe de 2011 dépasse de 53,15 MD la somme des montants donnés par entreprise. Pour 2012, les besoins de financement étaient prévus à 3 095 MD en loi de finances et 4 084,5 MD en loi de finances complémentaire ; pour 2013, la loi de finances complémentaire en prévoit 5 754 MD. {#tbl-compensation-besoins-energie}
+
+:::
+
+Trois faits s'y lisent. La subvention totale est, chaque année, deux à trois fois la ligne budgétaire : 4 894,2 MD en 2012 pour 2 111,0 MD inscrits. Sa part non inscrite croît plus vite que la part inscrite, quelle que soit la ventilation retenue. Et les deux ventilations ne s'accordent que sur le total de 2012. Dans l'étage indirect, la mission isole la redevance sur le gaz algérien — 310,5 MD en 2010, 390,1 MD en 2011, 510,6 MD en 2012, soit environ 1 210 MD en trois ans —, soutien en nature dont bénéficie la STEG [@minfin-compensation-carburants-2014, p. 4 et 8].
+
+Aucune source budgétaire ne donne la subvention indirecte de 2013 et de 2014.
+
+Le @fig-compensation-carburants-directe-totale met côte à côte les deux ventilations du rapport, la ligne budgétaire et les besoins de financement.
+
+```{python}
+#| label: fig-compensation-carburants-directe-totale
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import compensation as cm
+cm.figure(
+    "carburants_directe_totale",
+    caption=("La subvention des carburants selon le rapport du 21 juillet 2014, 2010-2012 : "
+             "subvention directe et indirecte dans ses deux ventilations, ligne budgétaire "
+             "et besoins de financement, en millions de dinars courants et en part du PIB"),
+    note_lecture=(
+        "Pour chaque année, deux barres qui ne s'additionnent pas : à gauche (orange), la "
+        "ventilation du rapport entre subvention directe, inscrite au budget, et subvention "
+        "indirecte, hors budget ; à droite (brun), celle de la direction générale des "
+        "ressources et des équilibres, entre subvention directe consommée et subvention "
+        "indirecte. Le nombre au-dessus est le total de la ventilation. Le rond noir est la "
+        "ligne budgétaire « carburants » de l'année ; le losange violet, les besoins de "
+        "financement réalisés de l'ensemble STEG-STIR-ETAP. Les prévisions de besoins de 2012 "
+        "et 2013 ne sont que dans les données.\n\n"
+        "Seconde vue : les mêmes grandeurs en part du PIB — celui de l'INS en base 2015, "
+        "rétropolée par l'INS pour 2010-2014 (voir l'[annexe sur le "
+        "PIB](../annexe-pib.html#pib-base-2015)). Aucune part des dépenses de l'État n'est "
+        "donnée : la subvention indirecte n'est pas une dépense du budget."))
+```
+
+<!-- TODO (documentaliste) : le rapport de 2014 n'est exploité que pour ses pages 1 à 10 et 158-159 ; ses tableaux chiffrés restent à lire, et la subvention indirecte de 2013-2014 comme l'effet constaté de la séparation de 2015 à 2018 restent à établir (loi de règlement de 2015, rapports de la Cour des comptes) — docs/notes/compensation-rupture-2015.md, § (vi), points 3 et 4. -->
+
+## 2015 : le périmètre de la ligne s'élargit {#sec-compensation-rupture-2015}
+
+### Ce qui change
+
+Jusqu'en 2014, la ligne « carburants » ne retrace que la subvention versée par le budget, dite directe : la STIR et la STEG reçoivent en outre leur pétrole brut et leur gaz à des prix de cession préférentiels — environ 50 dinars le baril, 90,8 dinars la tonne équivalent pétrole —, avantage qui n'est inscrit nulle part en dépense [@minfin-compensation-carburants-2014, p. 7-9]. À compter de 2015, ces deux entreprises s'approvisionnent au prix mondial et l'ETAP reverse au Trésor le produit de la vente du pétrole de l'État : la loi de finances complémentaire pour 2015 inscrit à ce titre 894 MD de subvention supplémentaire et 894 MD de recettes non fiscales, opération que son rapport de présentation dit « blanche » [@minfin-projet-lfc-2015, § 19-20]. La rupture joue donc à la hausse sur la ligne : le ministère des Finances attribue pour l'essentiel à la baisse du baril, de 99 à 52 dollars, le recul de 2 353,0 MD en 2014 à 918,0 MD en 2015, obtenu « malgré » la séparation [@minfin-rapport-semestriel-2015-12, p. 24 et 28-29]. Les années antérieures à 2015 et les suivantes ne sont pas mesurées sur le même périmètre, et aucune source budgétaire ne donne le raccord pour 2013 et 2014 ; les produits de base et le transport ne sont pas concernés.
+
+Les documents budgétaires nomment ce changement la « [séparation des opérations de commercialisation des hydrocarbures](#g-separation-commercialisation-hydrocarbures) ». Les bulletins d'exécution du budget le signalent en note, sous leurs tableaux : dans le cadre de la loi de finances complémentaire pour 2015, l'hypothèse de prix du baril a été révisée de 95 à 62 dollars, « et le principe de séparation des opérations de commercialisation des hydrocarbures a été adopté » [@minfin-resultats-provisoires-2015-12 ; @minfin-resultats-provisoires-2017-01 ; @minfin-resultats-provisoires-2018-07]. Ce n'est ni une sortie du budget ni un compte spécial : c'est le passage d'une subvention comptée nette de ressources que l'État ne percevait pas à une dépense d'un côté et une recette de l'autre.
+
+La séparation n'est portée par aucun article de loi. Le rapport du projet de loi de finances complémentaire la rattache aux recommandations de deux séances de travail ministérielles, des 21 mai et 30 décembre 2014 [@minfin-projet-lfc-2015, § 20] ; la loi elle-même ne l'inscrit que dans ses prévisions, par une ligne de recettes de 487 000 000 D, « Revenus de l'exploitation pétrolière » [@lfc-2015, tableau A, art. 40-01]. L'acte qui l'a formalisée — et, avec lui, les nouveaux prix de cession — n'est pas identifié ici.
+
+<!-- RECHERCHE r-separation-hydrocarbures-2014-texte : acte formalisant la séparation des opérations de commercialisation des hydrocarbures et les nouveaux prix de cession du brut et du gaz (voir docs/recherches.yml) -->
+
+### La part du prix et la part du périmètre
+
+Une source budgétaire sépare les deux effets, avant exécution : le rapport du projet de loi de finances complémentaire pour 2015, qui décompose le passage de la prévision initiale à la prévision révisée.
+
+| Facteur | Effet sur la subvention des carburants (MD) |
+|---|---:|
+| Loi de finances pour 2015 | 1 826 |
+| Prix du baril, de 95 à 62 dollars | −2 244 |
+| Cours du dollar, de 1,8 à 1,95 dinar | +413 |
+| Programme d'ajustement des prix intérieurs non réalisé | +356 |
+| Quantités importées | +41 |
+| Séparation des opérations de commercialisation des hydrocarbures | +894 |
+| **Loi de finances complémentaire pour 2015** | **1 286** |
+| *Écart* | *−540* |
+
+: Du projet initial au projet révisé : les facteurs de la subvention des carburants en 2015 (millions de dinars courants). Source : rapport du projet de loi de finances complémentaire pour 2015 [@minfin-projet-lfc-2015, § 17 et 19]. C'est une décomposition avant exécution ; la dépense exécutée en 2015 est de 918,0 MD. {#tbl-compensation-lfc-2015}
+
+La baisse du baril retire 2 244 MD ; la séparation en ajoute 894. L'effet de la séparation dépend lui-même du prix : le même rapport l'estime à 1 451 MD aux hypothèses de la loi de finances initiale, et le ramène à 894 MD après la baisse du baril et la hausse du dollar [@minfin-projet-lfc-2015, § 20]. Ce n'est donc pas une constante qu'on retrancherait de chaque année suivante, ni qu'on ajouterait aux précédentes.
+
+En exécution, aucune source ne chiffre l'effet. Le rapport semestriel à fin 2015 range la séparation parmi les facteurs qui alourdissent la subvention, avec le dollar — 1,962 dinar contre 1,700 en 2014 — et les achats de gaz algérien de la STEG, comptés 1 758 MD en 2015 contre 265 MD en 2014 parce qu'ils sont désormais valorisés au prix mondial [@minfin-rapport-semestriel-2015-12, p. 29].
+
+### Les recettes en regard
+
+La contrepartie de la séparation se lit du côté des recettes non fiscales. La prévision de 894 MD se partage en 487 MD de revenus de la commercialisation du pétrole local, 275 MD de bénéfices de l'ETAP et 132 MD d'écart de valorisation du gaz de la redevance [@minfin-projet-lfc-2015, § 12-13]. L'encaissement n'a pas suivi.
+
+| Année | [Revenus de commercialisation des carburants](#g-revenus-commercialisation-carburants), prévus | Revenus de commercialisation des carburants, encaissés | Redevance sur le gazoduc, encaissée |
+|---|---|---:|---:|
+| 2012 | | | 210,5 |
+| 2013 | | | 109,7 |
+| 2014 | | | 121,5 |
+| 2015 | 487 (loi de finances complémentaire) | 150,0 | 38,4 |
+| 2016 | | 0,0 | 293,0 |
+| 2017 | 500,0 (loi de finances) ; 615,0 (loi de finances complémentaire) | 609,5 | 555,1 |
+| 2018 | 401,5 (loi de finances) ; 600,0 (loi de finances complémentaire) | 635,0 | 605,4 |
+
+: Les recettes non fiscales en regard de la subvention des carburants, 2012-2018 (millions de dinars courants). Sources : bulletins d'exécution du budget [@minfin-resultats-provisoires-2017-01 ; @minfin-resultats-provisoires-2018-07] ; pour 2018, note d'exécution à fin décembre [@minfin-note-execution-2018-12] ; pour la prévision de 2015, loi de finances complémentaire [@lfc-2015, tableau A]. La ligne des revenus de commercialisation n'existe pas avant 2015. {#tbl-compensation-carburants-recettes}
+
+Pour 2015, le ministère des Finances compte 342 MD dus par l'ETAP au titre de la commercialisation du pétrole, dont 150 MD versés en avance au Trésor ; environ 180 MD de bénéfices de l'ETAP, dont le paiement est différé ; et une redevance sur le gaz de 152 MD, dont 115 MD sur les quantités livrées à la STEG, pour 38 MD encaissés [@minfin-rapport-semestriel-2015-12, p. 18-19]. Ces trois montants ne s'additionnent pas : le rapport n'en publie pas la somme. L'opération dite blanche ne l'a donc pas été en trésorerie.
+
+Le principe reste appliqué ensuite : la Banque centrale relève des « revenus pétroliers de 593 MDT » en 2021, et des recettes issues de la commercialisation des carburants en 2025 [@bct-ra-2021 ; @bct-ra-2025, p. 68-69]. Les 2 700,0 MD de 2018 et les 7 628,0 MD de 2022 sont donc mesurés dans le périmètre d'après 2015.
+
+### 2016 : un troisième facteur, les impayés
+
+Le creux de 2016 — 197,0 MD — ne tient pas seulement au prix du baril et à l'ajustement automatique des prix à la pompe, introduit en juillet 2016 (@sec-compensation-ajustement). Cette année-là, les 197 MD vont à la seule STIR ; la STEG, qui achète son gaz au prix mondial, ne reçoit aucune subvention ; et l'ETAP ne verse aucune recette de commercialisation au Trésor, la STEG et la STIR n'ayant pas honoré leurs engagements envers elle [@minfin-rapport-semestriel-2016-12, p. 17 et 26]. Une partie du coût est ainsi portée par des impayés entre entreprises publiques, et envers le Trésor, hors de la ligne. La régularisation de ces impayés n'est pas établie ici.
+
+Le projet de budget pour 2016 montre comment la ligne est construite depuis la séparation : 579 MD de subvention, soit 689 MD de besoins d'équilibre — 492 MD d'incidence de la mise en place du mécanisme d'ajustement automatique et 197 MD pour la commercialisation de l'électricité et du gaz —, moins 110 MD de résultat de l'activité d'importation et de raffinage de la STIR [@minfin-projet-budget-2016, p. 48-49]. La ligne est donc un solde, net du résultat de la raffinerie.
+
+## Les recettes tirées des carburants {#sec-compensation-carburants-recettes}
+
+Avant d'être subventionnés, les carburants ont financé la compensation. La taxe unique de compensation de 1971 (@sec-compensation-institution) est relevée trois fois, chaque fois en même temps que le prix à la pompe.
+
+| Date d'effet | Essence | Pétrole lampant | Gas-oil | Texte |
+|---|---:|---:|---:|---|
+| 28 septembre 1964 | 1,050 | 0,470 | 0,460 | arrêté du 28 septembre 1964 [@arrete-1964-09-28-prix-petroliers, art. 1] |
+| 1^er^ janvier 1966 | 2,050 | | | arrêté du 31 décembre 1965 [@arrete-1965-12-31-prix-petroliers] |
+| 25 septembre 1966 | 1,750 et 1,650 | supprimée | supprimée | arrêté du 23 septembre 1966 [@arrete-1966-09-23-prix-petroliers] |
+| 1^er^ janvier 1971 | 1,378 | 0,036 | 0,235 | décret n° 70-622 [@decret70-622, art. 5] |
+| 24 mai 1974 | 6,150 | | | décret n° 74-576 [@decret74-576] |
+| 25 mars 1978 | 7,120 | | | [@decret78-316, p. 817] |
+| 1^er^ janvier 1981 | 9,750 | | 2,180 | décret n° 80-1641 [@decret80-1641] |
+
+: La taxe au profit de la Caisse sur les produits pétroliers, puis la taxe unique de compensation, 1964-1981 (dinars par hectolitre). Avant 1971, la taxe de 1964 s'ajoute à la redevance de 1957 (@tbl-compensation-prelevements-avant-1970) ; la taxe unique de 1971 les réunit. Une case vide est un tarif que le texte ne modifie pas. En 1966, les deux tarifs valent pour les deux qualités d'essence. Le décret de 1980 institue en outre une taxe de 4 D par tonne sur le fuel-oil lourd, et un tarif de 1,525 D/hl pour le gas-oil de l'agriculture et de la pêche. Les tarifs postérieurs à 1981 ne sont pas établis ici. {#tbl-compensation-taxe-unique}
+
+Le 24 mai 1974, la taxe sur les essences passe de 1,378 à 6,150 D par hectolitre, soit 47,72 millimes de plus par litre, et le prix du supercarburant de 115 à 165 millimes : la hausse du prix à la pompe est, presque en entier, une hausse de la taxe affectée à la Caisse [@decret74-576 ; @arrete-1974-05-24-prix-petroliers]. Le gas-oil et le pétrole lampant ne bougent pas. De 1974 à 1993, les arrêtés de prix affectent en outre à la Caisse la plus-value de réévaluation des stocks à chaque hausse [@arrete-1974-05-24-prix-petroliers, art. 3 ; @arrete-1993-10-26-prix-petroliers, art. 9].
+
+Le rendement est connu pour trois années : la taxe unique sur les carburants rapporte 51,5 MD à la Caisse en 1984, 52,5 MD en 1985 et 52 MD en 1986, soit plus du tiers de ses recettes propres (@tbl-compensation-recettes-propres) [@bct-ra-1985, p. 76 ; @bct-ra-1986, p. 76]. Elle cesse d'être individualisée en 1987, quand les recettes de la Caisse entrent au budget (@sec-compensation-1987). La suite n'est établie qu'à partir de 2004 : cette année-là apparaît la première ligne budgétaire de subvention des carburants, et, depuis 2015, des revenus de commercialisation en regard (@tbl-compensation-carburants-recettes).
+
+## Les prix à la pompe, 1964-2026 {#sec-compensation-prix-pompe}
+
+Aucune source ne donne le prix à la pompe d'un seul tenant sur soixante ans. Cinq familles de sources se relaient ; elles ne mesurent pas le même objet — un prix à sa date d'effet, une moyenne annuelle, un relevé — et sont données ici une à une, sans être fondues.
+
+Le @fig-compensation-prix-pompe les superpose pour l'essence et pour le gasoil, chacune avec son tracé.
+
+```{python}
+#| label: fig-compensation-prix-pompe
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import compensation as cm
+cm.figure(
+    "prix_pompe",
+    caption=("Les prix à la pompe de l'essence et du gasoil selon les familles de sources, "
+             "1964-2026 (millimes par litre, prix courants, échelle logarithmique)"),
+    note_lecture=(
+        "Un onglet par carburant. Chaque famille de sources a sa couleur et son tracé, et "
+        "aucune n'est reliée à une autre. En noir, les prix limites fixés par arrêté publié "
+        "au Journal officiel, en marches d'escalier aux dates d'effet (1964-1993). En bleu, "
+        "les moyennes annuelles du ministère chargé de l'énergie, pondérées par les jours "
+        "(1990-2016), placées au milieu de l'année. En vert, les moyennes annuelles des prix "
+        "de détail de l'INS. En brun, les ajustements datés de 2002 à 2018 : losange plein "
+        "quand la date est officielle, creux quand elle vient de la presse. En violet, les "
+        "prix en vigueur publiés par l'Observatoire national de l'énergie depuis 2017, en "
+        "escalier ; le dernier palier est prolongé jusqu'à fin juillet 2026, les prix étant "
+        "inchangés depuis le 24 novembre 2022. La croix rouge est un prix cité par la Banque "
+        "mondiale pour 2014.\n\n"
+        "Les traits verticaux marquent les ruptures de produit ou de nature du prix : prix "
+        "uniforme sur le territoire en 1968, après les prix de la zone de Tunis ; essence "
+        "sans plomb en 1992 ; passage des prix datés aux moyennes annuelles en 1995 ; retour "
+        "des prix datés en 2017. Les triangles rouges au pied du cadre sont les étapes du "
+        "mécanisme d'ajustement, de 2009 à 2022. Les ajustements de 1997 à 2000 déduits par "
+        "le calcul (aucune hausse n'est intervenue en 2001) et les relevés mensuels de l'INS ne sont pas tracés ; ils sont dans les "
+        "données. L'échelle logarithmique permet de lire sur une même vue 90 et 2 525 "
+        "millimes."))
+```
+
+### 1964-1993 : les arrêtés publiés au *Journal officiel*
+
+De 1964 à 1993, le prix à la pompe est fixé par un arrêté publié, qui donne des « prix limites de vente » en millimes par litre. De 1974 à 1993, la chaîne est fermée par ses clauses d'abrogation : chaque arrêté abroge nommément le précédent.
+
+::: {.callout-note collapse="true" title="Les prix à la pompe fixés par arrêté, 1964-1993 : le tableau"}
+| Date d'effet | Essence super | Essence normale | Sans plomb | Pétrole lampant | Gas-oil | Bouteille de gaz de 13 kg (D) | Arrêté |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 28 sept. 1964 | 90 | 87 | | 38 | 40 | | [@arrete-1964-09-28-prix-petroliers] |
+| 1^er^ janv. 1966 | 100 | 97 | | | | | [@arrete-1965-12-31-prix-petroliers] |
+| 25 sept. 1966 | 97 | 93 | | 33,30 | 35,40 | | [@arrete-1966-09-23-prix-petroliers] |
+| 10 déc. 1968 | 106 | 101 | | 34 | 37 | | [@arrete-1968-12-09-prix-carburants] |
+| 1^er^ oct. 1971 | 115 | 110 | | 36 | 45 | | [@arrete-1971-09-30-prix-petroliers] |
+| 24 mai 1974 | 165 | 160 | | | | | [@arrete-1974-05-24-prix-petroliers] |
+| 1^er^ janv. 1977 | 180 | 170 | | 40 | 60 | | [@arrete-1976-12-31-prix-petroliers] |
+| 25 mars 1978 | 190 | 180 | | | | | [@arrete-1978-03-23-prix-petroliers] |
+| 27 déc. 1978 | 205 | 192 | | 45 | 66 | 1,700 | [@arrete-1978-12-25-prix-petroliers] |
+| 28 déc. 1979 | 220 | 205 | | 50 | 75 | 1,850 | [@arrete-1979-12-27-prix-petroliers] |
+| 27 juin 1981 | 280 | 265 | | 60 | 110 | 2,100 | [@arrete-1981-06-23-prix-petroliers] |
+| 5 janv. 1982 | 295 | 280 | | 70 | 125 | 2,350 | [@arrete-1982-01-05-prix-petroliers] |
+| 1^er^ oct. 1982 | 320 | 300 | | 100 | 145 | 2,700 | [@arrete-1982-09-30-prix-petroliers] |
+| 22 févr. 1984 | 360 | 340 | | 100 | 160 | 2,700 | [@arrete-1984-02-20-prix-petroliers] |
+| 30 nov. 1984 | 380 | 360 | | 110 | 180 | 3,000 | [@arrete-1984-11-29-prix-petroliers] |
+| 7 juin 1985 | 410 | 390 | | 120 | 210 | 3,000 | [@arrete-1985-06-06-prix-petroliers] |
+| 11 déc. 1985 | 430 | 410 | | 130 | 230 | 3,000 | [@arrete-1985-12-09-prix-petroliers] |
+| 30 juill. 1986 | 450 | 430 | | 140 | 250 | 3,000 | [@arrete-1986-07-29-prix-petroliers] |
+| 11 févr. 1987 | 470 | 450 | | 150 | 270 | 3,000 | [@arrete-1987-02-14-prix-petroliers] |
+| 29 avr. 1988 | 490 | 470 | | 160 | 290 | 3,200 | [@arrete-1988-05-05-prix-petroliers] |
+| 5 févr. 1991 | 530 | 490 | | 180 | 310 | 3,500 | [@arrete-1991-02-05-prix-petroliers] |
+| 1^er^ juill. 1992 | | | 580 | | | | [@arrete-1992-07-10-prix-petroliers] |
+| 9 oct. 1993 | 570 | 530 | 620 | 180 | 310 | 3,800 | [@arrete-1993-10-26-prix-petroliers] |
+
+: Les prix limites de vente à la pompe fixés par arrêté, 1964-1993 (millimes par litre ; bouteille de gaz en dinars). Une case vide est un prix que l'arrêté ne modifie pas, ou un produit qu'il ne fixe pas : le dernier prix se prolonge. Jusqu'en 1966, le prix est celui de la zone de Tunis ; l'arrêté du 9 décembre 1968 institue le prix uniforme sur le territoire. Les quatre prix de septembre 1966 sont vérifiés par le calcul de la taxe ; ceux du pétrole lampant et du gas-oil de novembre 1984, mal imprimés, sont rétablis par le prix de gros et la marge. Plusieurs arrêtés (1987, 1988, 1992, 1993) portent une date d'effet antérieure à leur signature. {#tbl-compensation-prix-arretes}
+:::
+
+Quatre faits. Le prix du supercarburant passe de 90 millimes le litre en 1964 à 570 en 1993. Les deux hausses les plus fortes — +50 millimes sur l'essence le 24 mai 1974, puis de 220 à 280 millimes entre la fin de 1979 et juin 1981 — accompagnent deux relèvements de la taxe unique de compensation (@tbl-compensation-taxe-unique). Les années 1980 voient une hausse presque chaque année, de vingt millimes le plus souvent. Enfin l'écart entre l'essence et le gas-oil se resserre : le gas-oil vaut 39 % du prix du super en 1971, 34 % en 1979 et 54 % en 1993.
+
+Un maillon manque. L'arrêté du 23 juin 1981 abroge un arrêté du 31 décembre 1980 [@arrete-1981-06-23-prix-petroliers], qui n'est pas identifié ici : les prix du premier semestre de 1981 ne sont pas établis.
+
+<!-- RECHERCHE r-arrete-prix-petroliers-1980-12-31 : arrêté du 31 décembre 1980 fixant les prix des produits pétroliers, abrogé par l'arrêté du 23 juin 1981 (voir docs/recherches.yml) -->
+
+L'arrêté du 26 octobre 1993 est le dernier arrêté de prix publié. Aucun acte fixant les prix de vente au public n'est identifié au *Journal officiel* après cette date.
+
+<!-- RECHERCHE r-prix-pompe-arretes-apres-1993 : acte publié au Journal officiel fixant les prix de vente au public des produits pétroliers après l'arrêté du 26 octobre 1993 (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : le prix de la bouteille de gaz fixé par l'arrêté du 18 août 1992 (clé arrete-1992-08-18-prix-petroliers) n'est connu que par une lecture dégradée : à relire sur le fascicule avant de l'ajouter au tableau ; quatre arrêtés de 1956 sur les « carburants liquides », en francs, ne sont pas exploités. -->
+
+### 1990-2016 : les moyennes annuelles du ministère chargé de l'énergie
+
+Pour la période où le *Journal officiel* se tait, le ministère chargé de l'énergie a publié, sur son portail de données ouvertes, des « prix moyens pondérés annuels de vente » de six produits, de 1990 à 2016. Ce sont des moyennes de l'année pondérées par les jours, non des prix à une date. C'est la seule série du gasoil ordinaire entre 1993 et 2007.
+
+::: {.callout-note collapse="true" title="Les prix moyens annuels de vente des produits pétroliers, 1990-2016 : le tableau"}
+| Année | Essence sans plomb | Essence super | Gasoil ordinaire | Gasoil 50 | Pétrole lampant | Bouteille de gaz de 13 kg (D) |
+|---|---:|---:|---:|---:|---:|---:|
+| 1990 | | 480,05 | 283,50 | | 155,03 | 3,20 |
+| 1991 | | 526,16 | 308,08 | | 178,08 | 3,47 |
+| 1992 | | 530,00 | 310,00 | | 180,00 | 3,62 |
+| 1993 | 620,00 | 539,21 | 310,00 | | 180,00 | 3,80 |
+| 1994 | 620,00 | 570,00 | 310,00 | | 180,00 | 3,80 |
+| 1995 | 620,00 | 570,00 | 310,00 | | 180,00 | 3,80 |
+| 1996 | 620,00 | 570,00 | 310,00 | | 180,00 | 3,97 |
+| 1997 | 620,00 | 583,89 | 319,26 | | 191,58 | 4,17 |
+| 1998 | 643,01 | 636,16 | 347,75 | | 214,86 | 4,32 |
+| 1999 | 665,44 | 665,44 | 369,53 | | 233,92 | 4,46 |
+| 2000 | 693,33 | 693,33 | 398,33 | | 240,00 | 4,62 |
+| 2001 | 693,33 | 693,33 | 398,33 | | 240,00 | 4,80 |
+| 2002 | 716,58 | 716,58 | 415,00 | | 240,00 | 4,80 |
+| 2003 | 762,36 | 762,36 | 429,90 | | 254,90 | 4,95 |
+| 2004 | 802,05 | 802,05 | 456,37 | | 274,86 | 5,26 |
+| 2005 | 895,78 | 895,78 | 536,37 | | 338,14 | 5,74 |
+| 2006 | 1 057,40 | 1 057,40 | 697,40 | | 497,40 | 6,43 |
+| 2007 | 1 141,78 | 1 141,78 | 781,78 | 922,57 | 581,78 | 6,77 |
+| 2008 | 1 279,40 | 1 279,40 | 918,41 | 1 085,21 | 717,86 | 7,33 |
+| 2009 | 1 272,05 | 1 272,05 | 912,05 | 1 102,05 | 712,05 | 7,31 |
+| 2010 | 1 315,75 | | 955,75 | 1 145,75 | 755,75 | 7,48 |
+| 2011 | 1 370,00 | | 1 010,00 | 1 200,00 | 810,00 | 7,41 |
+| 2012 | 1 406,90 | | 1 039,29 | 1 236,44 | 812,22 | 7,42 |
+| 2013 | 1 552,74 | | 1 156,19 | 1 382,74 | 810,00 | 7,40 |
+| 2014 | 1 620,41 | | 1 210,33 | 1 450,41 | 810,00 | 7,40 |
+| 2015 | 1 670,00 | | 1 250,00 | 1 500,00 | 810,00 | 7,40 |
+| 2016 | 1 650,27 | | 1 172,98 | 1 436,83 | 810,00 | 7,40 |
+
+: Les prix moyens pondérés annuels de vente des produits pétroliers, 1990-2016 (millimes par litre ; bouteille de gaz en dinars). Source : ministère de l'Industrie, de l'Énergie et des Mines, direction générale de l'énergie, jeu de données ouvertes « Prix de vente des produits pétroliers », créé le 4 novembre 2014 et modifié le 15 février 2018 [@minenergie-opendata-prix-vente-petroliers] ; le portail ne répond plus, et le fichier est conservé aux archives du web. Deux lignes du fichier sont fautives. Celle de 2001 répète au centième celle de 2000 : c'est une recopie, les deux hausses de 2000 datant de mars et d'août selon la Banque centrale [@bct-ra-2002, p. 168]. Celle de 1990 (480,05 et 283,50) ne concorde pas avec l'arrêté de 1988, en vigueur toute l'année, qui fixe le super à 490 millimes et le gas-oil à 290. {#tbl-compensation-prix-ministere}
+:::
+
+La série raccorde les arrêtés : elle redonne, pour 1991 et 1993, la moyenne des prix qu'ils fixent, pondérée par leurs dates d'effet, et pour 1994 à 1996 les prix de l'arrêté de 1993. Elle montre un gel de près de quatre ans, d'octobre 1993 à 1997 — essence sans plomb à 620 millimes, gasoil à 310 —, puis des hausses chaque année de 1997 à 2000, dont seules les moyennes annuelles sont établies. La Banque centrale date de mars et d'août 2000 les deux hausses de cette année-là, et la suivante de novembre 2002 [@bct-ra-2002, p. 168] ; le jour et le niveau de chacun des ajustements de 1997 à 2000 ne sont pas établis. Aucune hausse n'intervient en 2001 (@sec-compensation-structure-prix). Le gasoil passe de 310 millimes en 1996 à 415 en 2002, puis à 1 250 en 2015.
+
+### L'Institut national de la statistique : moyennes et relevés
+
+L'Institut national de la statistique (INS) donne deux séries, qui sont des relevés de prix de détail à Tunis et non des tarifs.
+
+L'*Annuaire statistique* publie depuis 1995 la moyenne des douze mois pour l'essence, le pétrole lampant et la bouteille de gaz ; le gasoil n'y figure pas [@ins-annuaire-statistique-prix-detail].
+
+::: {.callout-note collapse="true" title="Les prix de détail à Tunis en moyenne annuelle selon l'INS, 1995-2023 : le tableau"}
+| Année | Essence | Pétrole lampant | Bouteille de gaz |
+|---|---:|---:|---:|
+| 1995 | 530 | 200 | 3 800 |
+| 1996 | 530 | 200 | 3 987 |
+| 1997 | 545 | 213 | 4 170 |
+| 1998 | 597 | 243 | 4 323 |
+| 1999 | 630 | 258 | 4 469 |
+| 2000 | 658 | 260 | 4 625 |
+| 2001 | 675 | 260 | 4 800 |
+| 2002 | 681 ; 718 | 260 | 4 800 |
+| 2003 | 730 ; 763 | 260 | 4 950 |
+| 2004 | 773 ; 803 | 275 | 5 258 |
+| 2005 | 866 ; 898 | 339 | 5 742 |
+| 2006 | 1 063 | 503 | 6 450 |
+| 2007 | 1 146 | 586 | 6 783 |
+| 2008 | 1 277 | 717 | 7 317 |
+| 2009 | 1 270 | 710 | 7 300 |
+| 2010 | 1 316 | 760 | 7 500 |
+| 2011 | 1 320 | 810 | 7 400 |
+| 2012 | 1 403 | 810 | 7 400 |
+| 2013 | 1 553 | 810 | 7 400 |
+| 2014 | 1 620 | 810 | 7 400 |
+| 2015 | 1 670 | 810 | 7 400 |
+| 2016 | 1 650 | 810 | 7 400 |
+| 2017 | 1 700 | 810 | 7 400 |
+| 2018 | 1 897 | 810 | 7 700 |
+| 2019 | 2 045 | 810 | 7 700 |
+| 2020 | 1 978 | 810 | 7 700 |
+| 2021 | 2 060 | 810 | 7 700 |
+| 2022 | 2 331 | 857 | 8 067 |
+| 2023 | 2 525 | 950 | 8 800 |
+
+: Les prix de détail à Tunis en moyenne des douze mois, 1995-2023 (millimes ; essence et pétrole lampant au litre, bouteille de gaz à l'unité). Source : INS, *Annuaire statistique de la Tunisie*, éditions 1995-2001 à 2019-2023 [@ins-annuaire-statistique-prix-detail]. La ligne de l'essence est celle de l'essence normale jusqu'en 2005, de l'essence super ensuite ; pour 2002-2005, les deux valeurs coexistent selon l'édition. La valeur de 2011 pour l'essence ne suit pas la hausse du 12 décembre 2010 (@tbl-compensation-ajustements) : le relevé est resté inchangé toute l'année, et s'écarte de 50 millimes de la moyenne du ministère. {#tbl-compensation-prix-ins}
+:::
+
+Le *Bulletin mensuel de la statistique* de l'INS [@ins-bms] donne, lui, le relevé mensuel de l'essence, du gasoil et du pétrole lampant depuis novembre 2007, et la moyenne annuelle du gasoil depuis 2008. Ses relevés servent, au @tbl-compensation-ajustements, à établir le niveau des prix à la date de chaque ajustement ; le mois d'un ajustement y porte tantôt le nouveau prix, tantôt l'ancien.
+
+Deux gels s'y lisent : le pétrole lampant reste à 810 millimes de 2011 à 2021, et la bouteille de gaz à 7 400 puis 7 700 millimes sur la même période.
+
+### Depuis 2017 : l'Observatoire national de l'énergie
+
+À partir de juillet 2017, l'Observatoire national de l'énergie et des mines publie, dans sa *Conjoncture énergétique* mensuelle et ses *Chiffres clés* annuels, le prix de vente au public en vigueur et sa date ; une page du ministère donne, d'avril 2020 à novembre 2022, la décision de chaque réunion de la commission [@one-conjoncture-energetique ; @one-chiffres-cles-energie ; @minenergie-prix-marges-petroliers].
+
+::: {.callout-note collapse="true" title="Les prix de vente au public en vigueur, 2019-2026 : le tableau"}
+| Date d'effet | Essence sans plomb | Gasoil ordinaire | Gasoil sans soufre | Bouteille de gaz de 13 kg (D) |
+|---|---:|---:|---:|---:|
+| 31 mars 2019 | 2 065 | 1 570 | 1 825 | 7,7 |
+| 7 avr. 2020 | 2 035 | 1 550 | 1 800 | 7,7 |
+| 8 mai 2020 | 2 005 | 1 530 | 1 775 | 7,7 |
+| 9 juin 2020 | 1 975 | 1 510 | 1 750 | 7,7 |
+| 8 juill. 2020 | 1 945 | 1 490 | 1 725 | 7,7 |
+| 11 août 2020 | 1 915 | 1 470 | 1 700 | 7,7 |
+| 9 oct. 2020 | 1 915 | 1 470 | 1 675 | |
+| 10 nov. 2020 | 1 915 | 1 470 | 1 650 | |
+| 5 févr. 2021 | 1 955 | 1 500 | 1 685 | 7,7 |
+| 11 mars 2021 | 1 995 | 1 530 | 1 720 | 7,7 |
+| 20 avr. 2021 | 2 095 | 1 605 | 1 805 | 7,7 |
+| 1^er^ févr. 2022 | 2 155 | 1 655 | 1 860 | 7,7 |
+| 1^er^ mars 2022 | 2 220 | 1 705 | 1 915 | 7,7 |
+| 14 avr. 2022 | 2 330 | 1 790 | 2 010 | 7,7 |
+| 18 sept. 2022 | 2 400 | 1 860 | 2 080 | 8,8 |
+| 24 nov. 2022 | 2 525 | 1 985 | 2 205 | 8,8 |
+| état à fin juillet 2026 | 2 525 | 1 985 | 2 205 | 8,8 |
+
+: Les prix de vente au public en vigueur, du 31 mars 2019 à fin juillet 2026 (millimes par litre ; bouteille de gaz en dinars). Sources : Observatoire national de l'énergie et des mines, *Chiffres clés de l'énergie* et *Conjoncture énergétique* [@one-chiffres-cles-energie ; @one-conjoncture-energetique] ; ministère chargé de l'énergie, page « Prix et marges des produits pétroliers » [@minenergie-prix-marges-petroliers]. Les deux publications du ministère diffèrent d'un à trois jours sur trois dates : 5 ou 6 février 2021, 8 ou 11 septembre 2020 (réunion sans ajustement), 14 ou 16 avril 2022 — date que la *Conjoncture énergétique* fixe au 14 avril. Les prix de 2017 et 2018 sont au @tbl-compensation-ajustements. {#tbl-compensation-prix-one}
+:::
+
+### Les ajustements datés, 2002-2018
+
+Entre le dernier arrêté publié et les publications de l'Observatoire, les dates et les montants de chaque ajustement se reconstituent ligne à ligne, avec un niveau d'attestation qui varie : le tableau le dit pour chacune.
+
+| Date d'effet | Essence sans plomb | Gasoil ordinaire | D'où vient la date | D'où vient le niveau |
+|---|---:|---:|---|---|
+| 13 oct. 2002 | 740 | 415 | presse, d'après un tableau attribué à l'Agence nationale pour la maîtrise de l'énergie | idem |
+| 4 avr. 2003 | 770 | 435 | idem | idem |
+| 5 ou 8 mai 2004 | 800 | 455 | idem ; date à trois jours près | idem |
+| 1^er^ août 2004 | 830 | 475 | idem | idem |
+| 13 févr. 2005 | 860 | 500 | idem | idem |
+| 5 juin 2005 | 900 | 540 | idem | idem |
+| 4 sept. 2005 | 950 | 590 | idem | idem |
+| 15 janv. 2006 | 1 000 | 640 | idem | idem |
+| 26 avr. 2006 | 1 050 | 690 | idem | idem |
+| 2 juill. 2006 | 1 100 | 740 | rapport du 21 juillet 2014 | **calculé** sur la moyenne annuelle du ministère |
+| 6 mai 2007 | 1 150 | 790 | rapport du 21 juillet 2014 | **calculé** sur la moyenne annuelle du ministère |
+| 28 oct. 2007 | 1 200 | 840 | rapport du 21 juillet 2014 | relevé mensuel de l'INS |
+| 2 mars 2008 | 1 250 | 890 | rapport du 21 juillet 2014 | relevé mensuel de l'INS |
+| 6 juill. 2008 | 1 320 | 960 | rapport du 21 juillet 2014 | relevé mensuel de l'INS |
+| 16 janv. 2009 | 1 270 | 910 | BCT, rapport annuel 2009 ; rapport du 21 juillet 2014 | relevé mensuel de l'INS |
+| 21 févr. 2010 | 1 320 | 960 | rapport du 21 juillet 2014 | relevé mensuel de l'INS |
+| 12 déc. 2010 | 1 370 | 1 010 | presse, d'après le communiqué du ministère | idem |
+| 2 sept. 2012 | 1 470 | 1 090 | rapport du 21 juillet 2014 | relevé mensuel de l'INS |
+| 5 mars 2013 | 1 570 | 1 170 | rapport du 21 juillet 2014 | relevé mensuel de l'INS |
+| 1^er^ juill. 2014 | 1 670 | 1 250 | presse, d'après le communiqué du ministère | idem ; relevé mensuel de l'INS |
+| 6 janv. 2016 | 1 650 | 1 200 | presse, d'après le communiqué du ministère | idem ; relevé mensuel de l'INS |
+| 16 juill. 2016 | 1 650 | 1 140 | Observatoire national de l'énergie ; presse, d'après l'annonce du ministre | idem ; relevé mensuel de l'INS |
+| 2 juill. 2017 | 1 750 | 1 230 | Observatoire national de l'énergie | idem |
+| 1^er^ janv. 2018 | 1 800 | 1 280 | presse | Observatoire national de l'énergie |
+| 1^er^ avr. 2018 | 1 850 | 1 330 | presse, d'après le communiqué du ministère | idem |
+| 23 juin 2018 | 1 925 | 1 405 | presse, d'après le communiqué du ministère | idem ; relevé mensuel de l'INS |
+| 2 sept. 2018 | 1 985 | 1 480 | Observatoire national de l'énergie | idem |
+
+: Les ajustements datés du prix de l'essence sans plomb et du gasoil ordinaire, 2002-2018 (millimes par litre). Sources : rapport du 21 juillet 2014, dont les graphiques portent les dates des structures de prix de 2006 à 2013 [@minfin-compensation-carburants-2014, p. 158-159] ; BCT [@bct-ra-2009, p. 191-192] ; Observatoire national de l'énergie et des mines [@one-conjoncture-energetique ; @one-chiffres-cles-energie] ; INS, *Bulletin mensuel de la statistique*, tableau des prix moyens de détail à Tunis [@ins-bms] ; presse en ligne (WMC, Kapitalis, Directinfo, Tekiano, Webdo, L'Économiste maghrébin), aux dates des ajustements [@presse-wmc-2006-09-07 ; @presse-kapitalis-2010-12-12 ; @presse-directinfo-2013-03-05 ; @presse-tekiano-2014-07-03 ; @presse-tekiano-2016-01-05 ; @presse-webdo-2016-07-14 ; @presse-kapitalis-2017-12-30 ; @presse-tekiano-2018-04-02 ; @presse-economiste-maghrebin-2018-06-23]. De 2002 à 2016, les lignes tirées de la presse et du rapport de 2014 redonnent la moyenne annuelle du ministère (@tbl-compensation-prix-ministere) ; trois éléments ont au contraire été calés sur elle et ne la confirment pas : les niveaux du 2 juillet 2006 et du 6 mai 2007, et le jour de mai 2004. Pour octobre 2002, la Banque centrale écrit « novembre 2002 » [@bct-ra-2002, p. 168] : la discordance n'est pas tranchée. Les ajustements de 1997 à 2001 ne figurent pas au tableau : ni leur date ni leur niveau ne sont établis. {#tbl-compensation-ajustements}
+
+La frise se lit en six temps.
+
+- **2003-2008 : treize hausses en cinq ans et demi**, dont trois en 2005 et trois en 2006 ; le gasoil passe de 415 à 960 millimes, l'essence de 740 à 1 320.
+- **16 janvier 2009 : la seule baisse avant 2016**, de 50 millimes.
+- **2010 : deux hausses de 50 millimes**, puis aucun mouvement jusqu'en septembre 2012.
+- **2012-2014 : trois hausses**, de 100 millimes sur l'essence et 80 sur le gasoil.
+- **2016 : deux baisses**, la seconde pour le seul gasoil.
+- **2017-2018 : cinq hausses en quatorze mois**, soit +335 millimes sur l'essence et +340 sur le gasoil.
+
+Deux rapprochements avec la ligne budgétaire peuvent être faits. L'absence d'ajustement entre décembre 2010 et septembre 2012 est contemporaine du passage de la ligne « carburants » de 550,0 MD en 2010 à 2 111,0 MD en 2012. Et le rapport du projet de loi de finances complémentaire pour 2015 chiffre à 356 MD, pour cette seule année, le coût d'un programme d'ajustement des prix non réalisé (@tbl-compensation-lfc-2015).
+
+## La structure des prix et la subvention par litre {#sec-compensation-structure-prix}
+
+### Ce que l'Observatoire publie
+
+Le prix à la pompe n'est que le dernier terme d'une [structure des prix](#g-structure-des-prix) : un prix d'entrée du produit, des droits et taxes, des frais et des marges. Cette structure est publiée. L'Observatoire national de l'énergie et des mines donne, dans le tableau « Produits pétroliers » de sa *Conjoncture énergétique* mensuelle, pour l'essence, le gasoil ordinaire, le gasoil sans soufre, le fuel lourd et la bouteille de gaz [@one-conjoncture-energetique] :
+
+- le **prix moyen d'importation** du mois ;
+- le **prix de cession** à la sortie de la raffinerie, avec la date de la structure en vigueur ;
+- les **droits et taxes** — droit de consommation, redevance et taxe sur la valeur ajoutée ;
+- les **frais et marges** — mise en place, marge des sociétés de distribution, forfait de transport uniforme, stockage de sécurité, marge des revendeurs ;
+- le **prix de vente au public**.
+
+Le tableau est complet depuis février 2020. De juillet 2014 à 2019, il ne donne que le prix d'importation, le prix de cession et le prix public : les droits, les taxes et les marges de ces années n'y sont pas. Avant 2014, aucune structure datée n'est publiée par une source officielle tunisienne établie ici.
+
+### Comment le tableau se lit
+
+Le tableau obéit à deux égalités, que ses colonnes vérifient au millime près, hors les exceptions dites en légende du @tbl-compensation-structure-2020-2022.
+
+- **Le prix de vente au public** est la somme du prix de cession, des droits et taxes, et des frais et marges. Pour l'essence au 7 avril 2020 : 1 101 + 738 + 196 = 2 035 millimes le litre.
+- **Le prix de vente « nominal »**, que l'Observatoire ne publie que de février à août 2020, est le prix public « simulé sur la base du prix d'importation » : la même somme, où le prix d'importation remplace le prix de cession. Pour l'essence : 994 + 738 + 196 = 1 928 millimes.
+
+L'écart entre le prix nominal et le prix public est donc, par construction, l'écart entre le prix d'importation et le prix de cession : ce n'est pas une seconde mesure. Positif, il dit que le produit importé coûte plus que le prix auquel il est cédé aux distributeurs ; négatif, qu'il coûte moins. L'Observatoire trace lui-même cet écart et le qualifie de « calcul à titre indicatif basé sur le différentiel entre le prix moyen pondéré d'importation et le prix de cession ».
+
+Deux précautions de lecture. Le prix de cession, les droits, les marges et le prix public sont fixés par l'administration à chaque **date de structure** et ne bougent pas entre deux dates ; seul le prix d'importation change d'un numéro à l'autre. Et ce prix d'importation n'est pas celui du mois : c'est une moyenne pondérée par les quantités depuis le début de l'année. L'Observatoire ne l'écrit en toutes lettres que dans ses numéros de 2022 et de 2026 ; pour les années antérieures, cette lecture repose sur la mention « prix moyen pondéré » du tableau et sur son en-tête « à fin » du mois. Le numéro de décembre donne donc la moyenne de l'année.
+
+### Les structures datées, 2014-2022
+
+Vingt-quatre structures sont datées par l'Observatoire du 1^er^ juillet 2014 au 24 novembre 2022. La décomposition complète n'existe que pour les dernières ; quatre d'entre elles en donnent la mesure.
+
+| Structure du | Produit | Prix de cession | Droits et taxes | Frais et marges | Prix public |
+|---|---|---:|---:|---:|---:|
+| 7 avril 2020 | essence sans plomb | 1 101 | 738 | 196 | 2 035 |
+| 7 avril 2020 | gasoil ordinaire | 1 095 | 295 | 160 | 1 550 |
+| 7 avril 2020 | gasoil sans soufre | 1 135 | 504 | 161 | 1 800 |
+| 20 avril 2021 | essence sans plomb | 1 149 | 747 | 198 | 2 095 |
+| 20 avril 2021 | gasoil ordinaire | 1 141 | 301 | 163 | 1 605 |
+| 20 avril 2021 | gasoil sans soufre | 1 137 | 504 | 164 | 1 805 |
+| 14 avril 2022 | essence sans plomb | 1 343 | 785 | 202 | 2 330 |
+| 14 avril 2022 | gasoil ordinaire | 1 300 | 323 | 167 | 1 790 |
+| 14 avril 2022 | gasoil sans soufre | 1 314 | 528 | 168 | 2 010 |
+| 24 novembre 2022 | essence sans plomb | 1 498 | 815 | 211 | 2 525 |
+| 24 novembre 2022 | gasoil ordinaire | 1 464 | 345 | 176 | 1 985 |
+| 24 novembre 2022 | gasoil sans soufre | 1 478 | 550 | 177 | 2 205 |
+
+: La structure du prix des carburants à quatre dates, 2020-2022 (millimes par litre). Source : Observatoire national de l'énergie et des mines, *Conjoncture énergétique* [@one-conjoncture-energetique]. La structure du 24 novembre 2022 est encore en vigueur à fin juillet 2026. Pour l'essence, la somme des trois composantes est inférieure d'un millime au prix public à partir d'avril 2021 : c'est un arrondi de la source. {#tbl-compensation-structure-synthese}
+
+Trois constats. Les droits et taxes pèsent très inégalement : 815 millimes sur le litre d'essence en novembre 2022, 345 sur le litre de gasoil ordinaire, pour des prix de cession voisins. D'une structure à l'autre, c'est le prix de cession qui porte l'essentiel de l'ajustement : de 1 101 à 1 498 millimes pour l'essence entre avril 2020 et novembre 2022, quand les droits et taxes passent de 738 à 815 et les frais et marges de 196 à 211. Enfin les frais et marges sont presque constants.
+
+::: {.callout-note collapse="true" title="Prix de cession et prix public à chaque structure, 2014-2019 : le tableau"}
+| Structure du | Essence sans plomb | Gasoil ordinaire | Gasoil à 50 ppm, puis sans soufre | Bouteille de gaz de 13 kg (D) |
+|---|---|---|---|---|
+| 1^er^ juillet 2014 | 1 065 → 1 670 | 942 → 1 250 | 1 164 → 1 500 | 3,222 → 7,400 |
+| 6 janvier 2016 | 822 → 1 650 | 828 → 1 200 | 870 → 1 450 | 3,032 → 7,4 |
+| 16 juillet 2016 | 822 → 1 650 | 774 → 1 140 | 843 → 1 420 | 3,032 → 7,4 |
+| 25 novembre 2016 | 817 → 1 650 | 769 → 1 140 | 838 → 1 420 | 2,913 → 7,4 |
+| 2 juillet 2017 | 855 → 1 750 | 805 → 1 230 | 870 → 1 510 | 2,913 → 7,4 |
+| 31 décembre 2017 | 934 → 1 800 | 884 → 1 280 | 953 → 1 560 | 3,060 → 7,7 |
+| 23 juin 2018 | 1 027 → 1 925 | 984 → 1 405 | 1 051 → 1 685 | 3,001 → 7,7 |
+| 2 septembre 2018 | 1 077 → 1 985 | 1 051 → 1 480 | 1 104 → 1 745 | 3,001 → 7,7 |
+| 31 mars 2019 | 1 138 → 2 065 | 1 124 → 1 570 | 1 169 → 1 825 | 2,882 → 7,7 |
+
+: Le prix de cession et le prix public des carburants à chaque structure datée, 2014-2019 (prix de cession → prix public ; millimes par litre, bouteille de gaz en dinars). Source : Observatoire national de l'énergie et des mines, *Conjoncture énergétique* [@one-conjoncture-energetique]. Pour ces années, la source ne donne ni les droits et taxes ni les marges. Le tableau ne porte que les structures présentes dans les numéros établis : la structure du 1^er^ avril 2018 (@tbl-compensation-ajustements) n'y figure pas, aucun numéro de janvier à juin 2018 n'étant conservé, et trois autres périodes sans numéro — octobre 2015 à mars 2016, mai à juillet 2016, juin à août 2017 — peuvent cacher une structure intermédiaire. La structure du 25 novembre 2016 abaisse le prix de cession sans changer le prix public. Celle que la source date du 31 décembre 2017 est l'ajustement du 1^er^ janvier 2018. {#tbl-compensation-structure-2014-2019}
+:::
+
+::: {.callout-note collapse="true" title="La décomposition du prix à chaque structure, 2020-2022 : le tableau"}
+| Structure du | Essence sans plomb | Gasoil ordinaire | Gasoil sans soufre |
+|---|---|---|---|
+| 31 mars 2019, décomposée en février 2020 | — / 744 / 183 → 2 065 | — / 298 / 148 → 1 570 | — / 508 / 149 → 1 825 |
+| 7 avril 2020 | 1 101 / 738 / 196 → 2 035 | 1 095 / 295 / 160 → 1 550 | 1 135 / 504 / 161 → 1 800 |
+| 8 mai 2020 | — / 733 / 192 → 2 005 | — / 293 / 157 → 1 530 | — / 501 / 158 → 1 775 |
+| 9 juin 2020 | — / 729 / 192 → 1 975 | — / 291 / 157 → 1 510 | — / 498 / 158 → 1 750 |
+| 8 juillet 2020, selon le numéro de juillet | — / 724 / 192 → 1 945 | — / 288 / 157 → 1 490 | — / 495 / 158 → 1 725 |
+| 8 juillet 2020, selon le numéro d'août | 1 004 / 719 / 192 → 1 915 | 1 027 / 286 / 157 → 1 470 | 1 049 / 493 / 158 → 1 700 |
+| 9 octobre 2020 | inchangée | inchangé | — / 490 / 158 → 1 675 |
+| 10 novembre 2020 | 1 004 / 719 / 192 → 1 915 | 1 027 / 286 / 157 → 1 470 | 1 005 / 487 / 158 → 1 650 |
+| 6 février 2021 | 1 033 / … → 1 955 | 1 050 / … → 1 500 | 1 032 / … → 1 685 |
+| 11 mars 2021 | 1 067 / 731 / 197 → 1 995 | 1 076 / 293 / 162 → 1 530 | 1 063 / 495 / 162 → 1 720 |
+| 20 avril 2021 | 1 149 / 747 / 198 → 2 095 | 1 141 / 301 / 163 → 1 605 | 1 137 / 504 / 164 → 1 805 |
+| 1^er^ février 2022 | 1 198 / 757 / 200 → 2 155 | 1 183 / 307 / 165 → 1 655 | 1 184 / 511 / 165 → 1 860 |
+| 1^er^ mars 2022 | 1 251 / 767 / 201 → 2 220 | 1 226 / 313 / 166 → 1 705 | 1 231 / 517 / 167 → 1 915 |
+| 14 avril 2022 | 1 343 / 785 / 202 → 2 330 | 1 300 / 323 / 167 → 1 790 | 1 314 / 528 / 168 → 2 010 |
+| 18 septembre 2022 | 1 398 / 796 / 206 → 2 400 | 1 358 / 330 / 171 → 1 860 | 1 372 / 536 / 172 → 2 080 |
+| 24 novembre 2022 | 1 498 / 815 / 211 → 2 525 | 1 464 / 345 / 176 → 1 985 | 1 478 / 550 / 177 → 2 205 |
+
+: La décomposition du prix des carburants à chaque structure datée, 2020-2022 (prix de cession / droits et taxes / frais et marges → prix public ; millimes par litre). Source : Observatoire national de l'énergie et des mines, *Conjoncture énergétique* [@one-conjoncture-energetique]. Le relevé est exhaustif depuis février 2020 seulement. Un tiret marque un prix de cession que le numéro ne donne pas. Quatre réserves tiennent à la source elle-même. Les droits et taxes et les marges de la structure du 6 février 2021 ne sont pas repris : le numéro a mis à jour le prix de cession et le prix public, mais laissé ces deux colonnes à leur valeur antérieure. Deux numéros datent du 8 juillet 2020 deux jeux de prix différents : la baisse d'août 2020 n'est pas datée par la source. La structure de novembre 2020 est datée du 10 dans deux numéros et du 9 dans un troisième. Enfin deux sommes de la colonne du prix nominal sont fausses dans la source, pour le fuel lourd en février 2020 et pour l'essence en juin 2020 ; elles ne sont pas reprises. Pour la bouteille de gaz de 13 kg, la structure est de 2,782 / 0,970 / 3,948 → 7,7 dinars du 7 avril 2020 au 14 avril 2022, puis de 3,43 / 1,11 / 4,27 → 8,80 dinars. {#tbl-compensation-structure-2020-2022}
+:::
+
+### Prix d'importation et prix de cession en moyenne annuelle, 2016-2025
+
+Le numéro de décembre de la *Conjoncture énergétique* donne le prix moyen d'importation de l'année. Mis en regard du prix de cession, il dit de combien le produit importé a coûté plus, ou moins, qu'il n'a été cédé.
+
+| Année | Essence : importation | Essence : cession | Essence : écart | Gasoil ordinaire : importation | Gasoil : cession | Gasoil : écart | Bouteille de gaz : importation (D) | Bouteille : cession (D) |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2016 | 768 | 817 | −49 | 716 | 769 | −53 | 11,559 | 2,913 |
+| 2017 | 1 048 | 934 | +114 | 1 023 | 884 | +139 | 15,899 | 3,060 |
+| 2018 | 1 381 | 1 077 | +304 | 1 414 | 1 051 | +363 | 18,027 | 3,001 |
+| 2019 | 1 416 | 1 138 | +278 | 1 484 | 1 124 | +360 | 17,871 | 2,882 |
+| 2020 | 916 | 1 004 | −88 | 963 | 1 027 | −64 | 15,46 | 2,782 |
+| 2021 | 1 510 | 1 149 | +361 | 1 366 | 1 141 | +225 | 24,58 | 2,782 |
+| 2022 | 2 570 | 1 498 | +1 072 | 2 912 | 1 464 | +1 448 | 33,40 | 3,43 |
+| 2023 | 2 131 | 1 498 | +633 | 2 082 | 1 464 | +618 | 26,20 | 3,43 |
+| 2024, à fin novembre | 2 039 | 1 498 | +541 | 1 990 | 1 464 | +526 | 23,98 | 3,43 |
+| 2025 | 1 711 | 1 498 | +213 | 1 765 | 1 464 | +301 | 24,52 | 3,43 |
+
+: Le prix moyen d'importation de l'année et le prix de cession en vigueur en fin d'année, 2016-2025 (millimes par litre ; bouteille de gaz de 13 kg en dinars). Source : Observatoire national de l'énergie et des mines, *Conjoncture énergétique*, numéros de décembre [@one-conjoncture-energetique]. Les deux colonnes d'écart sont un **calcul** fait ici — importation moins cession —, que l'Observatoire dit lui-même « indicatif ». Trois réserves : le prix de cession est celui de la fin de l'année, alors que le prix d'importation est la moyenne de l'année, si bien que l'écart est faussé les années où la cession a changé (2017, 2018, 2020, 2021, 2022) ; il ignore la production de la raffinerie ; et il n'est pas la subvention budgétaire. Pour 2024, le numéro de décembre n'est pas établi. {#tbl-compensation-import-cession}
+
+L'écart change de signe avec le prix du pétrole : le litre d'essence importé coûte moins que son prix de cession en 2016 et en 2020, et jusqu'à 1 072 millimes de plus en 2022, année où la ligne budgétaire « carburants » atteint 7 628,0 MD (@tbl-compensation-2012-2025). Pour la bouteille de gaz, l'écart est positif chaque année et ne descend jamais sous 8 dinars : le prix de cession de la bouteille, autour de 3 dinars, ne suit pas son prix d'importation, qui va de 11,6 à 33,4 dinars.
+
+<!-- TODO (documentaliste) : structure du 1er avril 2018 et numéros de janvier à juin 2018 de la Conjoncture énergétique (non archivés) ; date de la baisse d'août 2020 ; droits et taxes et marges de la structure du 6 février 2021 ; composantes séparées (droit de consommation, TVA, chaque marge), à reconstituer depuis le Journal officiel ; numéros de 2023 à 2026 établis par sondage — docs/notes/compensation-structure-prix-relue.md, § 2, 3 et 8. -->
+
+### La subvention par litre selon les budgets citoyens, 2021-2024
+
+Le ministère des Finances publie, dans ses budgets citoyens, ce que coûte chaque produit, ce que le consommateur en paie, et la différence. Ce sont des subventions unitaires **prévisionnelles**, calculées à l'hypothèse de prix du baril retenue pour le budget ; ce ne sont pas des montants constatés.
+
+| Budget | Produit | Coût | Prix payé | Subvention unitaire |
+|---|---|---:|---:|---:|
+| 2021 | bouteille de gaz | 18 500 | 7 700 | 10 800 |
+| 2022 | essence, le litre | 3 325 | 2 220 | 1 105 |
+| 2022 | gasoil, le litre | 2 754 | 1 705 | 1 049 |
+| 2022 | gasoil sans soufre, le litre | 3 071 | 1 915 | 1 156 |
+| 2022 | bouteille de gaz | 41 000 | 7 700 | 33 000 |
+| 2023 | essence, le litre | 3 396 | 2 525 | 871 |
+| 2023 | gasoil, le litre | 2 820 | 1 985 | 835 |
+| 2023 | gasoil sans soufre, le litre | 3 140 | 2 205 | 935 |
+| 2023 | bouteille de gaz | 42 000 | 8 800 | 33 000 |
+| 2024 | essence, le litre | 3 055 | 2 525 | 530 |
+| 2024 | gasoil, le litre | 2 511 | 1 985 | 526 |
+| 2024 | gasoil sans soufre, le litre | 2 813 | 2 205 | 608 |
+| 2024 | bouteille de gaz | 36 000 | 8 800 | 27 000 |
+
+: La subvention unitaire prévisionnelle des produits pétroliers selon les budgets citoyens, 2021-2024 (millimes). Source : ministère des Finances [@minfin-budget-citoyen-2021, p. 3 ; @minfin-budget-citoyen-2022, p. 4 ; @minfin-budget-citoyen-2023, p. 4 ; @minfin-budget-citoyen-2024, p. 9]. Hypothèses de prix du baril : 45 dollars pour 2021 ; 75 dollars pour le budget de 2022, dont le budget citoyen écrit que le baril a entre-temps atteint 100 dollars ; 89 dollars pour 2023 ; 81 dollars pour 2024. Pour la bouteille de gaz, les budgets de 2022 à 2024 donnent des montants arrondis au dinar. Le budget de 2021 ne donne que la bouteille de gaz. {#tbl-compensation-subvention-unitaire}
+
+Trois faits. La bouteille de gaz est, de loin, le produit le plus subventionné : le consommateur en paie moins du quart du coût de 2022 à 2024, et le budget citoyen de 2021 écrit que la subvention des hydrocarbures « concerne principalement la bouteille de gaz ». La subvention par litre de carburant recule de moitié entre le budget de 2022 et celui de 2024 ; entre-temps, les prix à la pompe ont été relevés cinq fois (@sec-compensation-ajustement). Enfin les mêmes documents donnent la sensibilité de la dépense au prix du pétrole : un dollar de plus par baril ajoute 129 MD à la subvention selon le budget de 2021, 137 MD selon celui de 2022, 141 MD selon celui de 2023 et 144 MD selon celui de 2024.
+
+La dotation budgétaire en millions de dinars, ventilée par produit pétrolier et année par année, n'est donnée par aucune publication officielle établie ici ; le rapport de contrôle de 2014 constate que la STIR n'a pas de comptabilité analytique par produit.
+
+### Avant la ligne budgétaire : 2000-2002
+
+Pour les années qui précèdent la première ligne budgétaire de 2004, la Banque centrale donne le « déficit de commercialisation des hydrocarbures » : 232,5 MD en 2000, 117,1 MD en 2001 et 111,0 MD en 2002, pour l'essentiel sur les produits finis importés, et financé alors par le résultat de raffinage de la STIR et le bénéfice de l'ETAP [@bct-ra-2002, p. 168]. Le même passage date les hausses des prix intérieurs : mars et août 2000, puis novembre 2002. Aucune n'intervient en 2001 : le Fonds monétaire international, dans son rapport de 2002, le relève de son côté — « domestic petroleum prices were not raised during the year » [@fmi-2002-cr02122, § 12].
+
+### Une série annuelle depuis 1980, portée par un graphique
+
+Les *Chiffres clés de l'énergie* de l'Observatoire portent chaque année un graphique du « prix annuel moyen de vente de l'essence et du gasoil » depuis 1980 [@one-chiffres-cles-energie]. Aucun tableau ni fichier de données ne l'accompagne. Une série annuelle de 1980 à 2025 peut être tirée des coordonnées de ce graphique, à un millime et demi près ; elle recoupe les arrêtés de 1979 et de 1988 et les moyennes du ministère. Parce qu'elle procède d'un graphique et non d'un tableau publié, ses valeurs ne sont pas reprises ici.
+
+<!-- TODO (documentaliste) : demander à l'Observatoire national de l'énergie et des mines les données du graphique 1980-2025 des Chiffres clés ; d'ici là, la série relevée sur le graphique (docs/notes/compensation-archives-energie.md, § 4) reste hors publication. Budgets citoyens 2018 et 2020 à ouvrir ; budget citoyen 2025 non archivé. -->
+
+## Le mécanisme d'ajustement {#sec-compensation-ajustement}
+
+### Quatre textes ou décisions, 2009-2021
+
+Le premier mécanisme date de 2009, non de 2016. La Banque centrale le rapporte ainsi : « l'année 2009 a été caractérisée par l'adoption d'un mécanisme d'ajustement des prix de vente intérieurs des produits pétroliers », lequel « a été activé le 16 janvier 2009 et ce, par la réduction des prix de l'ordre de 5 % suite à la baisse de la moyenne trimestrielle des prix mondiaux du brut à un niveau inférieur à celui du prix d'équilibre de plus de 10 dollars par baril » [@bct-ra-2009, p. 191-192]. Le texte qui l'institue n'est pas cité par le rapport.
+
+Les trois arrêtés de 2016, 2020 et 2021 instituent ensuite le [mécanisme d'ajustement automatique](#g-ajustement-automatique-prix-carburants), qui lie le prix intérieur aux prix internationaux par pas plafonnés.
+
+| Mécanisme | Périodicité | Variation maximale du prix à chaque ajustement | Produits |
+|---|---|---|---|
+| 2009, activé le 16 janvier [@bct-ra-2009, p. 191-192] | sur la moyenne trimestrielle des prix mondiaux du brut | | |
+| Arrêté du 15 juillet 2016 [@arrete-2016-07-15-prix-petroliers, art. 5] | tous les trois mois, sur trois mois mobiles de prix internationaux | | essence sans plomb, gasoil ordinaire, gasoil 50 |
+| Arrêté du 31 mars 2020 [@arrete-2020-03-31-prix-petroliers, art. 5 et 10] | tous les mois, à compter du 1^er^ avril 2020 | 1,5 % du prix en vigueur, à la hausse comme à la baisse ; 2 % à compter du 1^er^ janvier 2021 | essence sans plomb, gasoil ordinaire, gasoil sans soufre |
+| Arrêté du 7 avril 2021 [@arrete-2021-04-07-prix-petroliers] | tous les mois | 5 % | idem |
+
+: Les mécanismes d'ajustement des prix des carburants, 2009-2021. Une case vide est une règle que la source citée ne donne pas. L'arrêté de 2020 abroge celui de 2016 ; celui de 2021 ajoute une évaluation annuelle du mécanisme. {#tbl-compensation-ajustement}
+
+Le mécanisme ne couvre ni la bouteille de gaz ni le pétrole lampant.
+
+### Ce qu'il a produit
+
+- **Régime de 2016.** Le ministère chargé de l'énergie écrit que le mécanisme a été « appliqué en sept occasions depuis son introduction en 2016 » et qu'il « n'a pas été appliqué dans 50 % des cas » [@minenergie-prix-marges-petroliers]. Après la hausse du 31 mars 2019, aucun prix ne bouge pendant un an, jusqu'au 7 avril 2020 (@tbl-compensation-prix-one).
+- **Régime mensuel de 2020.** Cinq baisses consécutives d'avril à août 2020 : l'essence perd 150 millimes, de 2 065 à 1 915. Puis deux baisses du seul gasoil sans soufre, en octobre et novembre.
+- **2021.** Trois hausses, les 5 février, 11 mars et 20 avril, la dernière au plafond de 5 % ; puis un gel de neuf mois, jusqu'au 1^er^ février 2022.
+- **2022.** Cinq hausses, du 1^er^ février au 24 novembre : l'essence passe de 2 095 à 2 525 millimes.
+- **Depuis le 24 novembre 2022.** Les prix n'ont plus changé : la *Conjoncture énergétique* à fin juillet 2026 donne encore les prix « en vigueur au public à partir du 24/11/2022 » [@one-conjoncture-energetique].
+
+Ce gel de plus de trois ans et demi est contemporain d'une ligne « carburants » de 7 030,0 MD en 2023 et 7 086,0 MD en 2024, et d'une prévision de 7 112,0 MD en loi de finances pour 2025 (@tbl-compensation-2012-2025). Aucun texte postérieur à l'arrêté du 7 avril 2021 modifiant, suspendant ou abrogeant le mécanisme n'est identifié ici : rien n'établit si le gel procède d'un texte, d'une décision de la commission ou de son absence de réunion.
+
+<!-- RECHERCHE r-carburants-ajustement-apres-2021 : texte modifiant, suspendant ou abrogeant l'ajustement automatique mensuel après l'arrêté du 7 avril 2021 (voir docs/recherches.yml) -->
+
+## Qui fixe et qui notifie les prix {#sec-compensation-qui-notifie}
+
+### Jusqu'en 1993 : un arrêté publié
+
+La loi de 1965 dispose que « les prix de vente au public des produits pétroliers ainsi que les marges bénéficiaires de gros et de détail sont fixés par arrêté du Secrétaire d'État au Plan et à l'Économie Nationale » [@loi65-26, art. 8]. Les arrêtés de prix sont publiés, et leur auteur change avec l'organisation du gouvernement.
+
+| Période | Auteur de l'arrêté de prix, tel que le *Journal officiel* l'intitule |
+|---|---|
+| 28 septembre 1964 | secrétaire d'État au Plan et aux Finances |
+| 1965-1968 | secrétaire d'État au Plan et à l'Économie nationale |
+| 1971-1976 | ministre de l'Économie nationale |
+| 1978-1979 | ministres de l'Industrie, des Mines et de l'Énergie et du Commerce (arrêté conjoint) |
+| 1981-1985 | ministre de l'Économie nationale |
+| 1986-1987 | ministres de l'Industrie et du Commerce et de l'Énergie et des Mines (arrêté conjoint) |
+| 1988 | ministre de l'Économie nationale |
+| 5 février 1991 | ministre de l'Économie et des Finances |
+| 1992-1993 | ministre de l'Économie nationale |
+
+: L'auteur des arrêtés fixant les prix des produits pétroliers, 1964-1993. Source : arrêtés du @tbl-compensation-prix-arretes. {#tbl-compensation-auteurs-arretes}
+
+### Depuis 1991 : ce que dit la loi
+
+La loi du 1^er^ juillet 1991, qui abroge celle de 1965, distingue deux prix et deux autorités [@loi91-45, art. 17, 18 et 32].
+
+- **Les prix de cession** — du brut à la raffinerie, des produits finis à la sortie de la raffinerie — sont fixés « par une commission dont la composition et le fonctionnement sont fixés par arrêté conjoint du ministre chargé de l'énergie et du ministre chargé des finances » (article 17).
+- **Les prix au public** : « Les prix plafonds des ventes au public sur le marché local des produits pétroliers ainsi que la marge bénéficiaire de détail sont fixés par arrêté du ministre chargé de l'énergie et du commerce. La [structure des prix](#g-structure-des-prix) est établie par le ministre chargé de l'énergie » (article 18).
+
+### Depuis 2016 : ce que disent les arrêtés
+
+Les arrêtés de 2016 et de 2020 ne visent que l'article 17. Ils chargent la commission de fixer les prix de l'essence et du gasoil [@arrete-2016-07-15-prix-petroliers, art. 5 ; @arrete-2020-03-31-prix-petroliers, art. 5], et organisent leur notification par un acte qui n'est pas publié.
+
+| Arrêté | Ministres auteurs, tels que l'arrêté les intitule | Signataires | Notification des prix |
+|---|---|---|---|
+| 13 février 1992 [@arrete-1992-02-13-prix-cession, art. 6] | « des ministres de l'économie nationale et des finances » | Sadok Rabah, ministre de l'économie nationale ; Mohamed Ghannouchi, ministre des finances | prix de cession « notifiés aux intéressés par voie d'[arrêté interne](#g-arrete-interne) signé conjointement par les ministres des finances et de l'économie nationale » |
+| 15 juillet 2016 [@arrete-2016-07-15-prix-petroliers, art. 7] | « du ministre de l'énergie et des mines et du ministre des finances » | Mongi Marzouk, ministre de l'énergie et des mines ; Slim Chaker, ministre des finances | « Les intéressés sont informés de la nouvelle structure des prix par voie d'arrêté interne signé conjointement par le ministre chargé de l'énergie et le ministre chargé des finances. Cet arrêté fixe les nouveaux prix et les modalités de leur application. » |
+| 31 mars 2020 [@arrete-2020-03-31-prix-petroliers, art. 6] | dans l'intitulé : « du ministre de l'énergie et des mines et de la transition énergétique et du ministre des finances » ; dans la formule d'auteur : « le ministre de l'énergie, des mines et de la transition énergétique et le ministre des finances » | Mongi Marzoug, ministre de l'énergie, des mines et de la transition énergétique ; Mohamed Nizar Yaïche, ministre des finances | « Les intéressés sont informés de la nouvelle structure des prix, par arrêté interne conjoint signé du ministre chargé de l'énergie et du ministre chargé des finances. L'arrêté fixe les modalités d'application des nouveaux prix. » |
+| 7 avril 2021 [@arrete-2021-04-07-prix-petroliers] | « du ministre de l'industrie, de l'énergie et des mines par intérim et du ministre de l'économie, des finances et de l'appui à l'investissement » | Mohamed Boussaïd, ministre de l'industrie, de l'énergie et des mines par intérim ; Ali Kooli, ministre de l'économie, des finances et de l'appui à l'investissement | ne modifie pas l'article 6 de l'arrêté de 2020 |
+
+: Les ministres qui organisent la fixation des prix et leur notification, 1992-2021, tels que les arrêtés les nomment. L'arrêté de 1992 ne porte que sur les prix de cession. {#tbl-compensation-ministres}
+
+Selon ces arrêtés, le prix à la pompe est, depuis 2016, arrêté par une commission — présidée en 2016 par le ministre chargé de l'énergie ou son représentant, en 2020 par un représentant du ministère chargé de l'énergie, et où siègent la Présidence du gouvernement, les finances, le commerce, le directeur général des hydrocarbures et le président-directeur général de la STIR — et porté à la connaissance des opérateurs par un « arrêté interne » conjoint du ministre chargé de l'énergie et du ministre chargé des finances. Cet acte n'est pas publié au *Journal officiel* ; le ministère chargé de l'énergie en publie le résultat. Les titres des deux ministres ont changé à chaque texte : énergie et mines en 2016 ; énergie, mines et transition énergétique en 2020 ; industrie, énergie et mines en 2021 ; finances, puis économie, finances et appui à l'investissement en 2021.
+
+### Une discordance, exposée sans être tranchée
+
+Trois formules coexistent sur l'autorité qui fixe le prix au public.
+
+- **La loi** : un arrêté « du ministre chargé de l'énergie et du commerce » [@loi91-45, art. 18].
+- **Les arrêtés de 2016 et de 2020** : la commission fixe les prix, et un arrêté interne du ministre chargé de l'énergie et du ministre chargé des **finances** « fixe les nouveaux prix » (2016) ou « les modalités d'application des nouveaux prix » (2020).
+- **Le ministère chargé de l'énergie**, sur sa page consacrée aux prix : « Les prix des produits pétroliers à la sortie de la raffinerie et à l'importation sont fixés par un arrêté conjoint du ministre chargé de l'énergie et du ministre chargé des finances. Le prix de vente au public ainsi que les marges de gros et de détails sont fixés par une décision conjointe du ministre chargé de l'énergie et du ministre chargé du **commerce**. » [@minenergie-prix-marges-petroliers]
+
+Aucun de ces actes internes n'est établi ici : ni leur intitulé, ni leurs signataires effectifs ne sont connus. Le volume expose les trois formules et n'en retient aucune contre les autres.
+
+<!-- TODO (documentaliste) : obtenir un « arrêté interne » de notification des prix (intitulé, signataires) ; demander à l'Observatoire national de l'énergie et des mines la mise à jour du jeu de données 1990-2016, les dates et niveaux des ajustements de 1997 à 2000 — docs/notes/compensation-prix-carburants-1993-2018.md, § (v) et (vi). Tarifs de l'électricité et du gaz par tranche (STEG) : non cherchés. -->

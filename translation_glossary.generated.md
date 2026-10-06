@@ -19,6 +19,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | AMEN social | برنامج الأمان الاجتماعي |  |
 | Annuité liquidable | السنة القابلة للتصفية |  |
 | Appui financier occasionnel | الدعم المادي الظرفي |  |
+| Arrêté interne | قرار داخلي |  |
 | Assiette des cotisations | قاعدة الاشتراك |  |
 | Assiette du droit de consommation | قاعدة المعلوم على الاستهلاك |  |
 | Assiette fiscale | الوعاء الضريبي |  |
@@ -30,6 +31,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Avance sur la taxe de formation professionnelle | التسبقة على الأداء على التكوين المهني |  |
 | Avancement d'échelon | الترقّي في الدرجة |  |
 | Avantage en nature | الامتياز العيني |  |
+| Avantages financiers | الامتيازات المالية |  |
+| Avantages fiscaux | الامتيازات الجبائية |  |
 | Ayant droit | ذو الحقّ |  |
 | Barème de l'impôt sur le revenu | جدول الضريبة على الدخل |  |
 | Bénéfice imposable | الربح الخاضع للضريبة |  |
@@ -41,6 +44,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Caisse d'assurance vieillesse, invalidité et survivants | صندوق تأمين الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع بجراية | CAVIS |
 | Caisse de compensation des allocations familiales | صندوق تعويض المنح العائلية |  |
 | Caisse des prêts et de soutien des collectivités locales | صندوق القروض ومساعدة الجماعات المحلية | CPSCL |
+| Caisse générale de compensation | الصندوق العام للتعويض | CGC |
 | Caisse nationale d'assurance maladie | الصندوق الوطني للتأمين على المرض | CNAM |
 | Caisse nationale de retraite et de prévoyance sociale | الصندوق الوطني للتقاعد والحيطة الاجتماعية | CNRPS |
 | Caisse nationale de sécurité sociale | الصندوق الوطني للضمان الاجتماعي | CNSS |
@@ -52,15 +56,20 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Catégorie de grade | صنف الرتبة |  |
 | Catégories à revenu limité | الفئات محدودة الدخل |  |
 | Catégories pauvres | الفئات الفقيرة |  |
+| Centimes additionnels | صانتيمات إضافية |  |
 | Chiffre d'affaires imposable | رقم المعاملات الخاضع |  |
 | Chiffre indiciaire | الرقم القياسي |  |
 | Ciblage | الاستهداف |  |
 | Classe de revenus | شريحة الدخل |  |
+| Code d'incitations aux investissements | مجلة تشجيع الاستثمارات |  |
 | Code de la fiscalité locale | مجلة الجباية المحلية |  |
 | Collectivité locale | الجماعة المحلية |  |
 | Commerçant détaillant assujetti à la taxe sur la valeur ajoutée | تاجر التفصيل الخاضع للأداء على القيمة المضافة |  |
 | Commerçant grossiste | تاجر جملة |  |
 | Commission nationale du salaire minimum garanti | اللجنة الوطنية للأجر الأدنى المضمون |  |
+| Compensation des carburants | دعم المحروقات |  |
+| Compensation des prix | الدعم |  |
+| Compensation du transport | دعم النقل |  |
 | Compétences partagées | الصلاحيات المشتركة |  |
 | Compétences propres | الصلاحيات الذاتية |  |
 | Compétences transférées | الصلاحيات المنقولة |  |
@@ -94,6 +103,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Délai de carence | فترة الانتظار |  |
 | Délégation de compétences | تفويض الصلاحيات |  |
 | Délégation spéciale | النيابة الخصوصية |  |
+| Dépenses fiscales | النفقات الجبائية |  |
 | Dépenses obligatoires | النفقات الإجبارية |  |
 | Déséquilibre vertical | الاختلال العمودي |  |
 | Dévolution de compétences | إسناد الصلاحيات الذاتية |  |
@@ -114,7 +124,9 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Emprunt | الاقتراض |  |
 | Enfant à charge | الطفل المتكفَّل به |  |
 | Entrepositaire | أرباب المخازن |  |
+| Entreprise tunisienne d'activités pétrolières | المؤسسة التونسية للأنشطة البترولية | ETAP |
 | Entreprises publiques | المنشآت العمومية |  |
+| Entreprises totalement exportatrices | المؤسسات المصدرة كليا |  |
 | Épargne nette | الادّخار الصافي |  |
 | Équilibre réel | التوازن الحقيقي للميزانية |  |
 | Établissement public à caractère administratif | المؤسسة العمومية ذات الصبغة الإدارية | EPA |
@@ -132,6 +144,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fonds de commerce | الأصول التجارية |  |
 | Fonds de réserve | صندوق الاحتياط |  |
 | Fonds de sécurité sociale | صناديق الضمان الاجتماعي |  |
+| Fonds spéciaux du Trésor | الحسابات الخاصة في الخزينة |  |
 | Forces de sécurité intérieure | قوات الأمن الداخلي |  |
 | Frais professionnels | المصاريف المهنية |  |
 | Gestion financière distincte | التصرّف المالي المستقلّ |  |
@@ -150,6 +163,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Impôts directs | الأداءات المباشرة |  |
 | Impôts indirects | الأداءات والمعاليم غير المباشرة |  |
 | Imputation du droit de consommation | خصم المعلوم على الاستهلاك |  |
+| Incidence des subventions | توزيع منافع الدعم |  |
 | Indemnité à caractère familial | المنحة ذات الصبغة العائلية |  |
 | Indemnité compensatrice | المنحة التعويضية |  |
 | Indemnité complémentaire provisoire | المنحة التكميلية الوقتية | ICP |
@@ -166,6 +180,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Majoration pour salaire unique | منحة الأجر الوحيد |  |
 | Maladie professionnelle | مرض مهني |  |
 | Masse salariale | كتلة الأجور |  |
+| Mécanisme d'ajustement automatique des prix des carburants | آلية التعديل الأوتوماتيكي لأسعار المحروقات |  |
 | Minimum d'impôt | الضريبة الدنيا |  |
 | Minimum d'impôt sur le chiffre d'affaires | الضريبة الدنيا |  |
 | Mise à la retraite d'office | الإحالة الوجوبية على التقاعد |  |
@@ -183,6 +198,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Pensions civiles et militaires | الجرايات المدنية والعسكرية |  |
 | Péréquation des besoins | تعديل الحاجيات |  |
 | Péréquation des pensions | تنظير الجرايات |  |
+| Péréquation des prix | تعديل الأسعار |  |
 | Péréquation des ressources | تعديل الموارد |  |
 | Péréquation financière | التعديل المالي |  |
 | Position tarifaire | البند التعريفي |  |
@@ -192,16 +208,22 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prestation monétaire | المنفعة النقدية |  |
 | Prestation non monétaire | المنفعة غير النقدية |  |
 | Prestations familiales | المنح العائلية |  |
+| Prime d'investissement | منحة الاستثمار |  |
 | Prime de rendement | منحة المردودية |  |
+| Prix de cession préférentiel | السعر التفاضلي |  |
 | Prix de référence du mètre carré couvert | الثمن المرجعي للمتر المربع المبني |  |
 | Produit intérieur brut | الناتج المحلي الإجمالي | PIB |
+| Produits de base | المواد الأساسية |  |
 | Programme national d'aide aux familles nécessiteuses | البرنامج الوطني لمساعدة العائلات المعوزة | PNAFN |
+| Projets d'intérêt national | المشاريع ذات الأهمية الوطنية |  |
 | Promoteur immobilier | الباعث العقاري |  |
 | Promotion | الترقية |  |
 | Protection contre la perte d'emploi | الحماية الاجتماعية للعمال الذين يفقدون شغلهم لأسباب اقتصادية أو فنية |  |
+| Quintile de niveau de vie | الشريحة الخُمسية لمستوى العيش |  |
 | Quota régional | الحصّة الجهوية |  |
 | Recettes fiscales | المداخيل الجبائية |  |
 | Redevance d'utilisation | معلوم الاستعمال |  |
+| Redevance de compensation | أتاوة الدعم |  |
 | Régime agricole amélioré | النظام الفلاحي المحسَّن | RSAA |
 | Régime complémentaire | النظام التكميلي |  |
 | Régime conventionnel de retraite | النظام التعاقدي |  |
@@ -235,6 +257,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Revalorisation des pensions | تعديل الجرايات |  |
 | Revenu annuel net | الدخل السنوي الصافي |  |
 | Revenu forfaitaire | الدخل التقديري |  |
+| Revenus de commercialisation des carburants | مداخيل تسويق المحروقات |  |
 | Revenus fonciers | المداخيل العقارية |  |
 | Salaire brut | الأجر الخام |  |
 | Salaire conventionnel | الأجر التعاقدي |  |
@@ -249,21 +272,28 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Score d'éligibilité | أنموذج التنقيط |  |
 | Secteur public | القطاع العام |  |
 | Sécurité sociale des pêcheurs | الضمان الاجتماعي للصيادين البحريين |  |
+| Séparation des opérations de commercialisation des hydrocarbures | فصل عمليات تسويق المحروقات |  |
 | Service fait | قاعدة الخدمة المنجزة |  |
 | Société de prévoyance des fonctionnaires et employés tunisiens | الجمعية الاحتياطية للموظفين والمستخدمين التونسيين |  |
+| Société tunisienne de l'électricité et du gaz | الشركة التونسية للكهرباء والغاز | STEG |
+| Société tunisienne des industries de raffinage | الشركة التونسية لصناعات التكرير | STIR |
 | Solde (militaire) | المرتّب العسكري |  |
 | Solde de réforme | منحة الإصلاح |  |
 | Souveraineté fiscale | السيادة الجبائية |  |
 | Stage de cotisation | مدة الانخراط الدنيا |  |
 | Statut particulier | النظام الأساسي الخصوصي |  |
+| Structure des prix | تركيبة الأسعار |  |
 | Subsidiarité | التفريع |  |
 | Subvention conditionnelle | المنحة المشروطة |  |
+| Subvention directe | الدعم المباشر |  |
 | Subvention forfaitaire | المنحة الجزافية |  |
 | Subvention globale | المنحة الشاملة |  |
+| Subvention indirecte | الدعم غير المباشر |  |
 | Subvention rationnée | المنحة المحدودة |  |
 | Subvention spécifique | المنحة الخصوصية |  |
 | Surcompensation | الزيادة في تعويض المنح العائلية |  |
 | Suspension du droit de consommation | توقيف العمل بالمعلوم على الاستهلاك |  |
+| Système fiscal de référence | النظام الجبائي المرجعي |  |
 | Tableau A du code de la TVA | الجدول « أ » |  |
 | Tableau annexé à la loi n° 88-62 | الجدول المدرج بملحق القانون عدد 62 لسنة 1988 |  |
 | Tableau B bis du code de la TVA | الجدول « ب مكرر » |  |
@@ -293,7 +323,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Taxe sur les immeubles bâtis | المعلوم على العقارات المبنية | TIB |
 | Taxe sur les prestations de service | الأداء على الخدمات |  |
 | Taxe sur les terrains non bâtis | المعلوم على الأراضي غير المبنية | TNB |
-| Taxe unique de compensation sur les carburants | الأداء الوحيد للتعويض على المحروقات |  |
+| Taxe unique de compensation de transports routiers | المعلوم الوحيد التعويضي على النقل بالطرقات |  |
+| Taxe unique de compensation sur les produits pétroliers | المعلوم الوحيد التعويضي على منتوجات النفط |  |
 | Territorialité de la TVA | مبدأ الإقليمية |  |
 | Traitement de base | المرتب الأساسي |  |
 | Tranche | شريحة |  |
@@ -305,3 +336,4 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Valeur du point d'indice | قيمة النقطة الاستدلالية |  |
 | Valeur en douane | القيمة المصرح بها لدى الديوانة |  |
 | Validation des services | إدماج الخدمات |  |
+| Zones de développement régional | مناطق التنمية الجهوية |  |

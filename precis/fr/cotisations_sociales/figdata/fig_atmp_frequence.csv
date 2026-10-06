@@ -1,0 +1,68 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-06
+# séries (tunisia_data) : atmp-sinistres-declares-2012-2022-bruts
+# sources (citation) : @mas2023-profil-sst, @belloussaief2023-atmp
+# fiches : sources/mas-profil-sst-2023.md
+# méthode/hypothèses : Les deux documents sont gardés côte à côte, sans raccord : ils diffèrent pour les accidents du travail de 2014 (42 209 / 42 114) et de 2015 (37 376 / 38 002) et pour les accidents de trajet de 2014, 2015 et 2020. Le Profil ne cite pas la source de ses annexes. Sous-déclaration et sous-reconnaissance des maladies professionnelles signalées par la Lettre. Les indices de la Lettre n'ont pas de valeur pour l'incapacité permanente en 2020. Valeurs transcrites puis retrouvées une à une dans la couche texte des pages.
+# note : Indices de fréquence des accidents du travail, des accidents de trajet et des maladies professionnelles, pour 1 000 salariés, 2012-2020
+Indicateur,Année,Valeur,Unité,Document,Tableau ou annexe,Page
+indice de fréquence des accidents de trajet avec arrêt,2012,"1,36",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents de trajet avec arrêt,2013,"1,23",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents de trajet avec arrêt,2014,"1,12",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents de trajet avec arrêt,2015,"1,07",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents de trajet avec arrêt,2016,"1,20",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents de trajet avec arrêt,2017,"1,16",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents de trajet avec arrêt,2018,"1,08",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents de trajet avec arrêt,2019,"0,866",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents de trajet avec arrêt,2020,"0,629",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents de trajet avec décès,2012,"0,05",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents de trajet avec décès,2013,"0,04",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents de trajet avec décès,2014,"0,03",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents de trajet avec décès,2015,"0,04",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents de trajet avec décès,2016,"0,04",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents de trajet avec décès,2017,"0,03",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents de trajet avec décès,2018,"0,03",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents de trajet avec décès,2019,"0,023",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents de trajet avec décès,2020,"0,011",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec arrêt,2012,"22,19",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec arrêt,2013,"20,47",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec arrêt,2014,"19,15",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec arrêt,2015,"19,48",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec arrêt,2016,"17,97",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec arrêt,2017,"16,77",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec arrêt,2018,"16,89",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec arrêt,2019,"15,134",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec arrêt,2020,"11,054",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec décès,2012,"0,09",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec décès,2013,"0,08",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec décès,2014,"0,06",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec décès,2015,"0,08",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec décès,2016,"0,07",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec décès,2017,"0,08",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec décès,2018,"0,04",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec décès,2019,"0,058",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec décès,2020,"0,055",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec incapacité permanente,2012,"2,44",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec incapacité permanente,2013,"2,04",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec incapacité permanente,2014,"1,79",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec incapacité permanente,2015,"1,97",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec incapacité permanente,2016,"1,90",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec incapacité permanente,2017,"1,77",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec incapacité permanente,2018,"1,54",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des accidents du travail avec incapacité permanente,2019,"1,283",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des maladies professionnelles,2012,"0,84",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des maladies professionnelles,2013,"0,86",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des maladies professionnelles,2014,"0,87",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des maladies professionnelles,2015,"0,96",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des maladies professionnelles,2016,"1,08",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des maladies professionnelles,2017,"1,15",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des maladies professionnelles,2018,"1,20",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des maladies professionnelles,2019,"1,252",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des maladies professionnelles,2020,"1,181",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des maladies professionnelles avec incapacité permanente,2012,"0,52",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des maladies professionnelles avec incapacité permanente,2013,"0,53",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des maladies professionnelles avec incapacité permanente,2014,"0,47",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des maladies professionnelles avec incapacité permanente,2015,"0,56",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des maladies professionnelles avec incapacité permanente,2016,"0,57",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des maladies professionnelles avec incapacité permanente,2017,"0,59",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des maladies professionnelles avec incapacité permanente,2018,"0,50",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4
+indice de fréquence des maladies professionnelles avec incapacité permanente,2019,"0,215",pour 1 000 salariés,"La Lettre du CRES n° 8, janvier 2023",tableau 3,4

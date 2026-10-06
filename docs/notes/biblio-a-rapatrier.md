@@ -6,6 +6,111 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Ajouts à la main du 06/10/2026 (prestations sociales, chapitre « Compensation »)
+
+**Dix-neuf clés neuves** (puis dix-sept de plus, voir « Versement complémentaire » ci-dessous) versées dans `precis/fr/prestations_sociales/references.json` et
+`precis/ar/prestations_sociales/references.json`, absentes de Zotero.
+
+- Textes (10) : `loi70-26`, `lf-1971`, `decret70-622`, `lf-1984` (loi n° 83-113, distincte de `lf-1983`),
+  `lfc-1984`, `decret84-259` (porte la subvention de 98 MD de 1984), `lfc-1989`,
+  `arrete-2016-07-15-prix-petroliers`, `arrete-2020-03-31-prix-petroliers`,
+  `arrete-2021-04-07-prix-petroliers`.
+- Sources secondaires (9) : `bm-1985-cem-5328-vol1`, `bm-1985-cem-5328-vol2`, `fmi-2000-red`,
+  `bct-ra-1984`, `ins-cres-bad-2013-subventions`, `minfin-finances-publiques-2005`,
+  `minfin-finances-publiques-2008`, `minfin-finances-publiques-2011`,
+  `minfin-compensation-carburants-2014`.
+
+**Réutilisées** : `lf-2013` (art. 63), `lf-2014` (art. 76) et `loi75-83` (art. 67-68), au fonds commun, dont
+la `note` est complétée ; `loi75-83` : champ `page` FR porté de 2852-2854 à 2852-2857 (signature lue p. 2857),
+à répercuter dans Zotero. **Promue au fonds commun** : `fmi-1996-red` (venue de `retraites`, citée aussi par
+« Compensation ») — dans Zotero, à **déclasser** de la collection « Retraites » (le `controle-rangement` le
+signalera). Non touchées : `bm-1993-social-protection`, `bm-1995-pauvrete-annexes`, `fmi-1997-selected-issues`,
+`bm-1990-cem-8044-vol1` (non citées par le plan).
+
+**Relectures à l'image** (loi n° 70-26 art. 3 ; LF 1976 art. 67-68 et non 67-69 ; subvention de 98 MD, qui est dans le décret n° 84-259
+et non dans la loi n° 84-2) : voir `docs/notes/compensation.md`, § 9.
+
+**Restent à relever / vérifier**
+
+- Entrées arabes : intitulés arabes des dix textes **non lus** (titre français conservé, selon l'usage) ;
+  **champ `page` laissé vide** (pagination arabe non mesurée) ; contenu des fichiers arabes non ouvert.
+- `lf-2013`, `lf-2014`, `loi75-83` (fonds commun, entrées arabes) : leur champ `page` reprend la pagination
+  française (3-135, 3666-3832, 2852-2854) — à mesurer ; idem `loi75-82` (prestations sociales, AR, 2852).
+- `lf-2013` existe aussi dans `cotisations_sociales` (FR et AR), en doublon du fonds commun : préexistant, non touché.
+- `bct-ra` figure dans trois fichiers de livre (`marche_travail`, `remunerations_publiques`, `retraites`) : préexistant, non touché.
+- Pages et articles lus par le documentaliste mais non relus à l'image : `lf-1971` (art. 48, tableau F), `decret70-622`,
+  `lf-1984` (art. 87, tableau F), `lfc-1989` (art. 3-8) ; fin de page des lois de 1970, 1971, 1984, 1989 d'après `jort_cache.db`.
+- `arrete-2016-07-15-prix-petroliers` : aucune notice dans `jort_cache.db` ; URL du fascicule n° 61 tirée des autres
+  enregistrements du même fascicule. `arrete-2020-03-31-prix-petroliers` : URL de notice `/record/143965/…` (l'adresse conventionnelle répond 404),
+  AR non contrôlée.
+- `minfin-compensation-carburants-2014` : pas de couverture (page 1 = préface), titre arabe non lu, titre français du catalogue,
+  éditeur non établi. `minfin-finances-publiques-2011` : capture Wayback tronquée, URL = miroir `dev.finances.gov.tn`
+  (pérennité à surveiller).
+- `fmi-2000-red` : numéro « 00/37 » déduit des métadonnées, page de titre non lue ; aucune capture contrôlée.
+- `bm-1985-cem-5328-vol1`/`-vol2` : tableaux cités (III-1, tableau 11) non relus à l'image ici.
+- `bct-ra-1984` : pas de date de parution imprimée (champ `issued` absent). Les rapports BCT 2015 à 2025 sont versés depuis
+  (voir « Versement complémentaire ») ; ceux de 1980-1983 et 1985-1988, cités par la note, restent non lus, non versés.
+- **Non versés, non lus** : Banque mondiale 2013 (n° 82712-TN), Cuesta et al. 2015, Jouini et al. 2018, `minfin-execution-budget`.
+  La simulation du dépôt `ceq-tunisie` n'est pas citable.
+- `push_biblio.py --verifier` : voir le résultat dans le rapport de la passe. Le `dry-run` et le `controle-rangement`
+  du workflow `biblio-zotero` restent à lancer après poussée de la branche.
+
+### Versement complémentaire du 06/10/2026 : série 2012-2025 de la compensation
+
+**Dix-sept clés neuves**, versées dans `precis/fr/prestations_sociales/references.json` et
+`precis/ar/prestations_sociales/references.json`, absentes de Zotero. Lectures à l'image : `docs/notes/compensation.md`, § 10.
+
+- Ministère des Finances (6) : `minfin-resultats-provisoires-2013-03`, `-2015-12`, `-2017-01`, `-2018-07` (bulletins,
+  trilingues), `minfin-note-execution-2018-12` (note à fin 2018, fichier Word), `minfin-finances-publiques-2010`
+  (rapport lu pour la part de 2,4 % du PIB en 2010). Convention d'archive : `URL` = capture du Wayback Machine
+  (horodatage lu dans le CDX, capture sha256-identique à la copie locale), `archive`, `archive_location`, `accessed`, motif en `note`.
+  Aucune n'a de `issued` (pas de date de parution sur les couvertures) sauf le rapport 2010 (mai 2012).
+- BCT (11) : `bct-ra-2015` à `bct-ra-2025`, une clé par rapport annuel (même logique que `bct-ra-1984`, distincte du
+  jeu de données générique `bct-ra` des livres « Retraites », « Marché du travail », « Rémunérations publiques »).
+  URL : bct.gov.tn (FR `RA_AAAA_fr.pdf`, `ANNUALREPORT2021FRENCH.pdf` pour 2021) ; entrées arabes : édition arabe
+  (`RA_AAAA_ar.pdf`, `ANNUALREPORT2021ARABIC.pdf` pour 2021), HTTP 200 le 06/10/2026, **absente du corpus local**.
+  Aucun champ `page` ni `number-of-pages` (la pagination est dans la `note`).
+- `bct-ra-1984` : sa `note` (FR et AR) est mise à jour (« les rapports 2015 à 2025 sont versés »).
+- À répercuter dans Zotero : 17 articles à créer (`citation-key:` dans Extra) ; dans la collection du livre « Prestations sociales ».
+
+**Restent à relever / vérifier**
+
+- Entrées arabes des rapports de la BCT : **pagination imprimée de l'édition arabe non mesurée** ; seuls les numéros de page du PDF
+  arabe où se retrouvent les chiffres (couche texte) sont consignés en `note`. Les valeurs ont été lues à l'image sur l'édition
+  **française** seulement.
+- `minfin-note-execution-2018-12` : fichier Word lu après conversion LibreOffice ; ni date de parution ni signataire ; la
+  page citée (7) dépend du rendu. Le texte de la page 1 n'a pas été vu à l'image.
+- `minfin-resultats-provisoires-*` : `title-short` posé à la main ; l'éditeur de couverture est la D.G.R.E. (direction générale des
+  ressources et des équilibres), non portée en `author`.
+- Bulletins 2013-03 et rapport 2010 : le miroir `dev.finances.gov.tn` sert encore un fichier identique ; l'URL retenue est la
+  capture (convention), à revoir si le miroir devient l'adresse officielle.
+- Part du PIB 2011 (4,4 %) non relue ; parts des années 2016-2017, 2019-2021, 2024-2025 « non relevées » (pas de preuve d'absence).
+- Note du ministère à fin mars 2019 (jd1605) : lue en couche texte seulement (LF 2019 4 350,0) ; non versée.
+- `push_biblio.py --verifier` : 769 entrées éprouvées, 2 pertes préexistantes seulement (`dafflon-2021-budget-local`, `minfin-cnf-2013-forfait`) ;
+  aucune perte ajoutée. `dry-run` et `controle-rangement` du workflow `biblio-zotero` : à lancer après poussée de la branche.
+
+### Passe de clôture du 06/10/2026 : chapitre « La compensation »
+
+- **Résolution** : les 38 clés bibliographiques du chapitre (prose, tableaux, renvois) et les 12 entrées de glossaire du bloc « Compensation »
+  (`references`, `source_definition`, `source_traduction`) résolvent en FR et en AR (fichier du volume ou fonds commun) ; aucune clé manquante.
+  `fmi-1996-red` : une seule entrée, au fonds commun (FR et AR) ; le volume « Retraites » ne la cite plus et se rend sans citation non résolue.
+- **`lf-2014`, art. 76 à 78**, relus sur le fascicule français (JORT n° 105, 31 déc. 2013) : le fond du chapitre est confirmé (tarif de 20 D à
+  850 D, 25 % de la taxe unique, 1 % du revenu annuel net entier au-delà de 20 000 D, retenue à la source, non déductible, années 2014 et 2015).
+  **Pagination corrigée** d'après les pieds de page, vérifiés à l'image : art. 76 pp. 3693-3694 (n° 5 en 3693 ; n° 3, art. 20 bis, en 3694), art. 77 et 78 p. 3694 —
+  et non « pp. 3692-3693 ». Même glissement pour l'art. 73 (p. 3692, non 3691). La `note` FR est complétée ; la `note` AR décrit les articles sans pagination.
+  **À répercuter hors de la bibliographie (non fait, hors périmètre)** : `docs/notes/compensation.md` (l. 34 et 267) et le `TODO` de
+  `_compensation.qmd` (devenu `precis/fr/compensation/_reformes.qmd` le 6 octobre 2026 ; l. 143 : « pp. 3692-3693 » devrait être 3693-3694) donnent encore l'ancienne pagination.
+- **Sondage du tableau 2012-2025** contre le § 10.1 de `docs/notes/compensation.md` : 2013, 2016, 2022 concordent (postes, totaux, sommes), ainsi que les
+  pages des rapports de la BCT citées (RA 2020 p. 62, 2021 p. 57, 2022 p. 60, 2023 p. 64, 2024 p. 65, 2025 p. 71 ; RA 2015 p. 45, RA 2019 p. 60). Aucune discordance.
+- **Contrôles** : `push_biblio.py --verifier` : 769 entrées, 2 pertes préexistantes ; `verifier.sh prestations_sociales retraites` : tout vert.
+- **Prêt à rapatrier sur feu vert humain** (séquence `permissions` → `verifier` → `dry-run` → `pousser-un` → `comparer` → `pousser-tout` → `ranger`) :
+  les 36 clés neuves du chapitre (19 + 17), la note de `lf-2014` (fonds commun) à répercuter, `fmi-1996-red` à déclasser de « Retraites » ;
+  collection du livre « Prestations sociales » à confirmer dans `COLLECTION_TO_BOOK`.
+- **Reste à vérifier** : titres arabes non lus ; paginations arabes non mesurées (`lf-2013`, `lf-2014`, `loi75-83`, rapports de la BCT en AR) ;
+  doublons préexistants hors périmètre entre fonds commun et livres : `lf-2003`, `lf-2011`, `lf-2013` (cotisations), `decret80-75`, `decret80-609`,
+  `decret82-501`, `decret2019-454` (marché du travail).
+- **Non lancés (passent par Zotero, à lancer par l'appelant)** : `dry-run` et `controle-rangement` du workflow `biblio-zotero`.
+
 ## Ajouts à la main du 04/10/2026 (finances locales, chapitres des impôts, taxes et redevances)
 
 **Vingt-deux clés neuves** versées dans `precis/fr/finances_locales/references.json` et
@@ -3116,3 +3221,136 @@ deux langues (comme les autres entrées du livre) :
 - [ ] Fonds commun, note complétée : `lf-2026` (art. 21, éd. AR p. 4235), `loi-87-83-lf-1988` (art. 76, p. 1635).
 - [ ] Doublon de clé à trancher : la LF 1991 (loi n° 90-111) porte `lf-1991` en fiscalité et `loi-90-111-lf-1991` en prestations sociales.
 - [ ] Le `dry-run` et le `controle-rangement` du workflow `biblio-zotero` restent à lancer après poussée de la branche (branche locale).
+
+## Passe « Compensation — réécriture du volume IX » (06/10/2026) — À REPORTER DANS ZOTERO
+
+Notes documentaires : `docs/notes/compensation.md`, `compensation-avant-1970-et-plans.md`,
+`compensation-prix-carburants.md`, `compensation-rupture-2015.md`. Branche locale
+`docs/compensation-documentation` (rien poussé). Le livre « compensation » figure dans
+`COLLECTION_TO_BOOK` (collection Zotero « compensation » à créer si absente). 82 clés ajoutées à la
+main dans `precis/{fr,ar}/compensation/references.json` (provisoires jusqu'au rapatriement, feu vert
+requis), 6 de plus pour les rapports de la BCT d'avant 1984, 2 clés promues au fonds commun.
+
+### Clés versées, par thème (FR et AR identiques en jeu de clés)
+- **Rapports de la BCT des figures (23)** : `bct-ra-1985`, `-1986`, `-1988`, `-1989`, `-1991` à `-1996`, `-1998`, `-1999`, `-2001` à `-2011`. Numéro du rapport lu sur la couverture (image pour 1985-1994, couche texte ensuite) ; date de parution lue seulement pour 2006-2008 (juin). `cles_absentes()` est vide. Les 6 autres (`bct-ra-1965`, `-1967`, `-1971`, `-1974`, `-1975`, `-1980`) servent à l'historique d'avant 1984.
+- **Dénominateurs** : confirmés d'après le catalogue de tunisia-data : `minfin-remunerations` = `repartition_depenses.xls` (dépenses de l'État, 1990-2025), `minfin-indicateurs-fp` = `indicateurs_fp_2025.xls` (PIB du ministère), `wb-wdi` = `wdi-tunisie`. `undata-sna` : aucune figure ne l'emploie, non touchée.
+- **Avant 1970** : `arrete-1956-04-07-redevance-huiles`, `arrete-1956-12-27-redevance-sucres`, `decret-1956-03-22-ciments`, `arrete-1957-02-05-redevance-hydrocarbures`, `decret-1957-03-30-credits-provisoires`, `arrete-1964-09-28-prix-petroliers`, `arrete-1965-07-20-redevance-hydrocarbures`, `loi65-26`, `decret58-163`, `loi59-66`, `decret-loi62-10`, `decret67-99`, `lf-1970`. Non versés (intitulé seul, jamais lus) : décret du 28 juin 1945 et textes antérieurs à 1956 (hors corpus), décret n° 58-173, décret n° 64-54, lois n° 62-26, 65-13, 69-32, 73-54, 82-63, 87-36, 92-57, 97-49, 2002-79, 2007-45, 2010-37 (lois de plan connues par jort_cache seulement).
+- **Série des prix** : les 24 arrêtés de prix lus, une clé par arrêté, `arrete-AAAA-MM-JJ-prix-petroliers` (1965-12-31, 1966-09-23, 1968-12-09 `-prix-carburants`, 1971-09-30, 1974-05-24, 1976-12-31, 1978-03-23, 1978-12-25, 1979-12-27, 1981-06-23, 1982-01-05, 1982-09-30, 1984-02-20, 1984-11-29, 1985-06-06, 1985-12-09, 1986-07-29, 1987-02-14, 1988-05-05, 1991-02-05, 1993-10-26 ; `arrete-1992-07-10-prix-petroliers`, `arrete-1992-08-18-prix-petroliers` (renommées le même jour pour suivre les clés de la série des prix)) plus `arrete-1964-09-28-prix-petroliers` ; `decret74-576`, `decret80-1641`, `loi91-45`, `arrete-1992-02-13-prix-cession` ; `ins-annuaire-statistique-prix-detail`, `one-chiffres-cles-energie`, `one-conjoncture-energetique`, `minenergie-prix-marges-petroliers`. L'arrêté du 31 décembre 1980 n'est pas localisé (fiche `r-arrete-prix-petroliers-1980-12-31`).
+- **Plans** : `loi77-48`, `loi2017-28`, `loi2026-16`, `bm-1977-revue-ve-plan`, `plan-2016-2020-vol1` (Wayback : retiré du site). Banque mondiale 1985 : déjà versée.
+- **Rupture de 2015** : `lfc-2015`, `minfin-projet-lfc-2015`, `minfin-projet-budget-2016`, `minfin-rapport-semestriel-2015-12`, `-2016-06`, `-2016-12`, `minfin-rapport-execution-2018-06` (tous en Wayback, `archive`/`archive_location`/`accessed` posés, horodatages relus dans le CDX et captures téléchargées de même taille que les copies locales), `fmi-2014-cr14362`, `fmi-2016-cr16138` (URL imf.org conservées : 403 aux robots, document servi aux lecteurs), `bm-2015-wps7312` (notice complétée : titre, auteurs, date).
+
+### Promotion au fonds commun
+`minfin-remunerations` (utilisée par rémunérations, retraites, compensation ; titre débarrassé de la parenthèse « Rémunérations publiques », note complétée) et `wb-wdi` (retraites + compensation) : retirées de `precis/{fr,ar}/{retraites,remunerations_publiques}` et versées dans `precis/{fr,ar}/references.json`. Rendus des deux livres d'origine : 0 citation non résolue (`scripts/verifier.sh compensation retraites remunerations_publiques`).
+
+### Corrections de notices
+`arrete-2021-04-07-prix-petroliers` : pages `775-776` (FR). `arrete-2016-07-15-prix-petroliers` (intitulé « fixant », pp. 2333-2334) et `arrete-2020-03-31-prix-petroliers` (pp. 731-732) étaient déjà conformes. `decret70-622` : pp. 1476-1477 déjà portées ; note AR complétée (« centimes » translittéré صانتيمات اضافية). `bct-ra-1984` : note mise à jour (les rapports 1985-1988 sont désormais versés).
+
+### Ce qui reste à vérifier
+- [ ] **Entrées AR des rapports de la BCT** : édition arabe trouvée par sondage d'adresses (aucun catalogue ne la liste) pour 1988-1989, 1991-1996, 1998-1999, 2001-2011 : `Rapport_Annuel_AAAA_Arabe.pdf` (2001-2009 et années 1980-1990), `rapport2010_ar.pdf`, `rapport_annuel_arabe2011.pdf`, HTTP 200 et `%PDF`, année lue sur la couverture ; intitulé « التقرير السنوي » lu seulement sur les couvertures de 1988 et 2008. **1985, 1986 et les six rapports d'avant 1984 : aucune édition arabe trouvée ou cherchée, l'entrée AR porte l'URL de l'édition française (comme `bct-ra-1984`) et la note le dit** — à arbitrer (URL vide ?).
+- [ ] Intitulés d'arrêtés de prix non reconfirmés sur le fascicule (jort_cache seul) : 1968-12-09, 1974-05-24, 1984-11-29, 1988-05-05, 1993-10-26 ; auteur « Premier ministre » de l'arrêté du 7 avril 1956 non tranché (jort_cache dit « Finances ») ; arrêté du 10 juillet 1992 : l'OCR du sommaire lit « 16 juillet », à relire à l'image. Les autres intitulés sont lus au sommaire par OCR (la note de chaque entrée dit lequel).
+- [ ] Entrées AR de tous les textes JORT : intitulé arabe non lu, pagination arabe non mesurée (`page` vide), URL = `pdf_ar` de jort_cache ; pour 1957 (fascicules absents de jort_cache), URL arabes vérifiées sur la couverture (n° 12 du 8 février, n° 26 bis du 30 mars). `loi2026-16` : `pdf_fr` vide dans jort_cache, URL du fascicule n° 73 lue sur les enregistrements voisins.
+- [ ] `lfc-2015` : page de début (1886) reprise de la note documentaire, non revérifiée ; `decret-1957-03-30-credits-provisoires` : étendue 359-378 reprise du brouillon (art. 36 lu p. 364).
+- [ ] `minfin-rapport-*` et `minfin-projet-*` : titres arabes non relevés sur les couvertures (titre français traduit) ; dates de parution non lues sauf avril 2017 (2016-12) et 16 octobre 2015 (LF 2016).
+- [ ] `ins-annuaire-statistique-prix-detail` : adresse de téléchargement sur ins.tn à relever (URL vide) ; une entrée par édition serait plus rigoureuse. ONE : numéros de la *Conjoncture* de 2017 et décembre 2019 lus mais adresses et copies absentes ; numéros 2016-2018 introuvables.
+- [ ] Séries de dates : `issued` volontairement absent pour INS et ONE (éditions multiples ; le champ `literal` ne survit pas à l'aller-retour Zotero).
+- [ ] `number-of-pages`, `number` (rapports) et `language` ne survivent pas à `csl_vers_zotero` : les nombres de pages et numéros de rapport sont dans `note`, la langue arabe des documents aussi.
+- [ ] Titre de `plan-2016-2020-vol1` : le titre arabe est celui du documentaliste (couverture non relue).
+
+### PDF récupérés dans tunisia-data (aucun fichier versionné ; `git check-ignore` a confirmé chaque chemin, rien écrasé, tous commencent par `%PDF`, `git status` du dépôt inchangé)
+Dossier `data/raw/banque-mondiale-rapports/` (ignoré ; rangés là faute de dossier dédié, comme la collecte du même jour) :
+| Fichier | Origine, 06/10/2026 | SHA-256 |
+|---|---|---|
+| `imf_2014_362_sba_fifth_review_tunisia.pdf` (CR 14/362, 85 p.) | imf.org répond 403 ; capture Wayback 20260412133725 (`…/web/20260412133725id_/https://www.imf.org/external/pubs/ft/scr/2014/cr14362.pdf`) ; la capture 2024 était tronquée à 1 Mio (rejetée) | `4ad1b992164436206e64c47a8eccd3ecd2123ffcacd7fee3585e895b9902577b` |
+| `imf_2015_285_art4_sixth_review_tunisia.pdf` (CR 15/285, 127 p.) | capture Wayback `…/web/2024id_/https://www.imf.org/external/pubs/ft/scr/2015/cr15285.pdf` (imf.org : 403) ; **non lu, aucune clé versée** | `57effb129ed4badb67f2d15127d4b2c96e65930372906f917b1595356279908e` |
+| `wb_1977_1539_review_fifth_plan.pdf` (153 p.) | https://documents1.worldbank.org/curated/en/439121468115136489/pdf/multi0page.pdf | `fff518bea562aed40c246709336293b71fb3245a040be4bca823b0439083694a` |
+| `mdici_2017_plan_2016_2020_vol1_global_ar.pdf` (185 p.) | capture Wayback 20250712220027 (`…id_/https://www.mdici.gov.tn/wp-content/uploads/2017/06/Volume_Global.pdf`) | `8816f9f3c559a51757e4ab46792024eb3a1e74f4163fb6806ad6d97752445e94` |
+| `one_chiffres_cles_2018.pdf` … `one_chiffres_cles_2025.pdf` (8 fichiers) et `one_conjoncture_2026_07.pdf` | https://www.energiemines.gov.tn/fileadmin/docs-u1/… (noms dans la note de `one-chiffres-cles-energie`) | dans les notes des clés |
+Dossier `data/raw/bct-archives/109/ar/` (ignoré) : 21 éditions arabes (`Rapport_Annuel_AAAA_Arabe.pdf`, `rapport2010_ar.pdf`, `rapport_annuel_arabe2011.pdf`), SHA-256 dans la note de chaque clé AR. Déjà locaux, empreintes portées en note : rapports de la BCT 1965-2011 (français), `imf_2016_138_eff_request_tunisia.pdf`, `wb_2015_wps7312_energy_reform_simulation.pdf`, annuaires de l'INS (22 éditions), rapports du ministère des Finances sous `minfinances/portail_ancien/`. **Pas de copie locale** : CR 17/203, 18/120, 18/218, 19/223 du FMI (non versés, non lus) ; numéros 2017 et décembre 2019 de la *Conjoncture énergétique*.
+
+### Contrôles et reste Zotero
+`push_biblio.py --verifier` : 857 entrées, 2 pertes (les deux préexistantes : `dafflon-2021-budget-local`, `minfin-cnf-2013-forfait`). Les actions `dry-run` et `controle-rangement` du workflow `biblio-zotero` ne peuvent pas tourner sur une branche locale non poussée : à lancer après poussée, puis, sur feu vert humain, `permissions` → `verifier` → `dry-run` → `pousser-un` → `comparer` → `pousser-tout` → `ranger`. Le contrôle de rangement dira si `minfin-remunerations` et `wb-wdi` (désormais communes) portent encore des collections de livre à retirer ; collection `compensation` pour les 88 clés propres au volume.
+
+## Passe « Annexe du site — le PIB et ses changements de base » (06/10/2026) — À REPORTER DANS ZOTERO
+
+Note documentaire : `docs/notes/annexe-pib.md`, § 7. Page : `precis/fr/annexe-pib.qmd`, qui lit
+`references.json`, `retraites/references.json` et `remunerations_publiques/references.json`.
+
+- [ ] Nouvelles, fonds commun `precis/{fr,ar}/references.json` (provisoires jusqu'au
+  rapatriement, feu vert requis) : `ins-changement-base-2015`, `ins-pib-base-2015-2010-2020`,
+  `imf-tunisia-art4-2010`. Reprises des ébauches de la note, à deux écarts près, imposés par
+  `push_biblio.py --verifier` : le champ `language` est retiré (non restitué par Zotero), et le
+  numéro du rapport du FMI (`number` : 10/282, non restitué) est porté en tête de la note.
+- [ ] `imf-tunisia-art4-2020` (rémunérations publiques) : c'est le rapport n° 21/44, dont le
+  titre imprimé est « 2021 Article IV Consultation » (février 2021), non « 2020 ».
+- [x] `undata-sna`, `wb-wdi` : remontées des retraites au fonds commun le 6 octobre 2026
+  (entrées inchangées ; `wb-wdi` identique à celle de la branche de la compensation). Dans
+  Zotero : les ranger dans la collection commune.
+- [ ] `bct-ra` (retraites, rémunérations publiques, marché du travail) : à remonter au fonds
+  commun ; `undata-sna` ne vise que le tableau 4.1, l'annexe emploie aussi les tableaux 1.1 et
+  1.2 ; `wb-wdi` gagnerait la mention des métadonnées du pays et de l'indicateur de croissance
+  en volume (NY.GDP.MKTP.KD.ZG).
+- [ ] `minfin-indicateurs-fp` : URL générique, à préciser.
+- [ ] Les pages citées dans l'annexe sont celles des fichiers PDF, non les folios imprimés :
+  à convertir si l'on veut des folios.
+- [ ] Titres arabes des deux entrées de l'INS : à valider par le relecteur-ar.
+
+## Passe « Fiscalité — dépenses fiscales et régimes d'incitation » (06/10/2026) — À REPORTER DANS ZOTERO
+
+Note documentaire : `docs/notes/fiscalite-depenses-fiscales.md` (§ 5). Chapitre à venir :
+`precis/fr/fiscalite/_depenses_fiscales.qmd`. Clés ajoutées à la main dans
+`precis/{fr,ar}/fiscalite/references.json` (provisoires jusqu'au rapatriement, feu vert requis) ;
+`push_biblio.py --verifier` : aucune perte nouvelle (deux préexistantes : `dafflon-2021-budget-local`,
+`minfin-cnf-2013-forfait`).
+
+- [ ] Législation, texte lu : `loi-93-120-code-incitations` (image lue, p. 2175-2178 ; page 2174 = début), `loi-2016-71-investissement` (p. 3083-3088), `dl-2011-56-lfc-2011` (art. 11, p. 1014).
+- [ ] Législation, copie du livre des finances locales : `lfc-2012` (art. 7 p. 922) — **à ranger au fonds commun** à la descente, puisque citée par deux livres.
+- [ ] Législation, intitulé seul (fascicules non ouverts) : `loi-72-38-regime-exportation`, `loi-87-51-code-investissements-industriels`, `loi-88-18-code-investissements-agricoles`, `loi-90-21-code-investissements-touristiques`. À supprimer si le rédacteur ne les cite pas ; non versés : lois 69-35, 74-74, 76-63, 81-56, 82-67, 85-96, 92-81, décret gouvernemental 2017-389 et loi 2019-47 (note documentaire § 1.1 et § 1.4).
+- [ ] Rapports et études : `minfin-depenses-fiscales-plf2022`, `minfin-depenses-fiscales-plf2023` (image lue, introduction seule ; année d'édition, exercices couverts et numéro d'annexe 2023 à confirmer), `banquemondiale2014-revolution-inachevee` (numéro de rapport et mois à relever), `loeprick2014-incitations-fiscales` (typé `report` avec `genre` « Diaporama », le type `speech` n'étant pas pris en charge par le convertisseur ; sans URL), `ocde2013-incitations-fiscales-tunisie` (URL d'un tiers, USCIB : chercher l'adresse sur oecd.org).
+- [ ] Note complétée (articles utiles) : `gbo-depenses-fiscales` (désormais **cinq** millésimes, PLF 2021 à 2025), `loi-avantages-fiscaux-2017`, `loi-2006-80-reduction-taux`, `loi-2007-70-lf-2008`, `loi-org-2019-15-lob` (fiscalité) ; `lf-2011`, `lf-2013`, `lf-2014`, `loi2018-56-lf2019` (fonds commun, FR et AR).
+- [ ] Entrées AR : `page` laissée **vide** pour les neuf entrées nouvelles (pagination arabe non mesurée) ; titres français conservés dans le fichier arabe pour `loi-93-120-code-incitations`, `dl-2011-56-lfc-2011`, `lfc-2012` et les quatre lois d'avant 1993 (intitulés arabes à relever sur le fascicule, non à traduire) ; titre arabe de `loi-2016-71-investissement` composé de la formule type du JORT et de l'objet lu dans la notice (« يتعلق بقانون الاستثمار ») : à contrôler sur le fascicule. Pour les clés déjà présentes (`loi-2006-80-reduction-taux`, `loi-2007-70-lf-2008`, `lf-2013`, `lf-2014`, `loi-avantages-fiscaux-2017`…), l'entrée arabe porte encore la pagination française (même défaut que `lf-2000`).
+- [ ] À vérifier : tome de la loi n° 93-120 (136 selon la notice) et de la loi n° 2016-71 (absent de la notice) ; page de fin du code de 1993 ; pages exactes des art. 5-6 de la loi n° 2006-80 ; art. 37 et 41 de la loi n° 2018-56 (p. 4539, 4541) et art. 46 de la loi organique (p. 400 ou 401) ; art. 24 de la loi n° 2010-58 (p. 3465-3466, notice) à relire sur le texte.
+- [ ] Collection Zotero : `fiscalite` ; le `dry-run` et le `controle-rangement` du workflow `biblio-zotero` restent à lancer après poussée de la branche (branche locale).
+
+### Clôture du bibliographe (06/10/2026) — chapitre rédigé, glossaire doté
+
+- [x] Résolution : toutes les clés citées par `_depenses_fiscales.qmd` et par les `references`/`source_definition`/`source_traduction` des neuf entrées de glossaire du chapitre résolvent en FR et en AR (aucune clé manquante).
+- [x] Pagination de `gbo-depenses-fiscales` : convention retenue = **page imprimée** (celle qu'un lecteur retrouve ; le glossaire l'emploie déjà). Vérifié sur les PDF : PLF 2021, page du fichier 6 = imprimée 2, fichier 29 = imprimée 25 (tableau n° 4) ; l'introduction « p. 7 » est imprimée 7 pour PLF 2022 (fichier 7), 2023 (fichier 8), 2024 (fichier 8) et 2025 (fichier 7). Locators du chapitre corrigés : « p. 6 » → « p. 2 », « p. 29 » → « p. 25 » ; les « p. 7 » étaient déjà imprimés.
+- [x] `loi-avantages-fiscaux-2017` (AR) : titre arabe porté, lu au sommaire du JORT n° 15/2017, édition arabe (corpus local) : « قانون عدد 8 لسنة 2017 مؤرخ في 14 فيفري 2017 يتعلق بمراجعة منظومة الامتيازات الجبائية ». Son `page` (778) et sa note restent ceux de l'édition française : pagination arabe à mesurer.
+- [ ] Titres arabes encore en français, **non lisibles** ici (couche texte du corpus illisible ou fascicule absent, pas d'OCR arabe installé) : `loi-2006-80-reduction-taux`, `loi-2007-70-lf-2008`, `lf-2011`, `lf-2013`, `lf-2014`, `dl-2011-56-lfc-2011` (texte du fascicule arabe à encodage cassé) ; `loi-93-120-code-incitations`, `loi-87-51-…`, `loi-88-18-…`, `loi-90-21-…` (fascicule arabe absent du corpus local). À relever à l'image du sommaire.
+- [ ] Sept textes d'avant 1993 : TODO du chapitre conservé (fascicules non ouverts).
+- [ ] Prêt à rapatrier sur feu vert humain, après `permissions` → `verifier` → `dry-run` → `pousser-un` → `comparer` → `pousser-tout` → `ranger` : toutes les entrées de la passe ci-dessus ; `lfc-2012` à ranger au fonds commun. Le `dry-run` et le `controle-rangement` n'ont pas été lancés (workflow `biblio-zotero`, hors ligne impossible) : restent à lancer.
+
+### Complément du 06/10/2026 (après la réécriture du chapitre) — À REPORTER DANS ZOTERO
+
+- [ ] Nouvelles clés (FR et AR) : `loi-69-35-code-investissements` (JORT n° 24 de 1969, p. 766-769, lue à l'image en entier ; rectificatifs n° 25 p. 810 et n° 28 p. 912), `loi-74-74-industries-manufacturieres` (JORT n° 51 de 1974, p. 1744-1746 ; rectificatif de la notice : n° 22, p. 620, fascicule rangé sous 1975 sur pist.tn, année à contrôler), `ghazouani2011-evaluation-incitations-cii` (étude IACE/CTEE du 30 juin 2011, 38 p. ; convention d'archive Wayback, capture `20110815092647` lue dans le CDX, `archive_location` telle que la capture l'enregistre ; copie locale et SHA-256 en note ; titre, auteur et date lus sur la page de titre). Entrées arabes : `page` vide, URL du JORT arabe, titres français (intitulés arabes non lus).
+- [x] `loi-72-38-regime-exportation` : note complétée (lue à l'image en entier, 15 articles).
+- [x] Copies locales (chemin et SHA-256 en note) : `banquemondiale2014-revolution-inachevee` (n° 86179, mai 2014 ; pages citées = édition ANGLAISE, décalées de 8-9 pages dans l'édition française), `ocde2013-incitations-fiscales-tunisie` (titre et date lus ; URL tierce USCIB, pas d'adresse oecd.org), `minfin-depenses-fiscales-plf2022` et `-plf2023`.
+- [ ] Restent : tome des lois 69-35 (112) et 74-74 (117) d'après les notices seulement ; l'URL de `banquemondiale2014-revolution-inachevee` est celle du seul chapitre 4 en anglais (adresse de la notice : documents.worldbank.org/…/658461468312323813) ; type `report` + `genre` pour Loeprick ; lois 76-63, 81-56, 82-67, 92-81 et décret-loi 85-14 sans clé ; l'étude de Ghazouani est lue mais le chapitre ne la cite pas encore de première main (TODO documentaliste en fin de chapitre).
+
+### Versement complémentaire du 06/10/2026 (volume IX réécrit : sept chapitres)
+Clés ajoutées FR et AR dans `precis/{fr,ar}/compensation/references.json` (20), une promue au fonds commun :
+- **BCT** : `bct-ra-1987` (29ème rapport ; couverture lue à l'image), `bct-ra-1997` (39ème), `bct-ra-2000` (42ème) ; éditions arabes trouvées (`Rapport_Annuel_AAAA_Arabe.pdf`, HTTP 200, copies sous `bct-archives/109/ar/`, SHA-256 en note). `bct-ra-1990` : aucune série ni texte ne la cite, non versée.
+- `decret78-316` (JORT n° 23, p. 817 ; contenu lu à l'image, intitulé relu au sommaire par OCR), `minenergie-opendata-prix-vente-petroliers` (capture Wayback du 29/10/2019 relue au CDX ; copie suivie par git, SHA-256 identique ; deux lignes douteuses, 2001 et 1990, dites en note ; la capture du XLS du 22/12/2018 garde l'horodatage de la note, non relu), `minfin-note-execution-2019-03` (demandée par une série ; horodatage 20190717082916 repris du catalogue tunisia-data, **non relu au CDX** : à vérifier).
+- **Presse (9)** : `presse-wmc-2006-09-07`, `presse-kapitalis-2010-12-12`, `presse-directinfo-2013-03-05`, `presse-tekiano-2014-07-03`, `presse-tekiano-2016-01-05`, `presse-webdo-2016-07-14` (page retirée : capture Wayback du 04/07/2019 lue au CDX), `presse-kapitalis-2017-12-30`, `presse-tekiano-2018-04-02`, `presse-economiste-maghrebin-2018-06-23` ; chaque page a répondu 200 le 06/10/2026, titre lu sur la page, date de publication reprise de la note documentaire. Laissé : Tekiano du 3 septembre 2018 et WMC du 2 septembre 2018 (simples confirmations d'une date déjà établie par l'Observatoire ; aucune adresse dans les notes).
+- **Promue** : `ins-bms` (fonds commun FR et AR ; « Retraites » résout toujours).
+- **Fusion** : les notes de `lf-2013` et `lf-2014` du fonds commun (FR et AR) n'ont plus de lignes en double (page de l'art. 73 : 3692 ; art. 76 à 78 pp. 3693-3694 ; art. 63 de la LF 2013 conservés).
+- **Non versées** : loi de finances pour 1981, LF 1987 (numéro non établi), loi n° 91-98, arrêtés de 1990, 1992 (fonds spécial) et du 10 mai 2024, loi n° 63-13 : le texte ne les cite pas pour un fait (la LF 1981 l'est par la BCT 1980, la rupture de 1987 par la BCT 1987). Le TODO du bibliographe de `_institution.qmd` (l. 222) est donc conservé. Rien non plus pour l'électricité, le gaz et les archives de l'énergie, comme demandé.
+- **Séries** : toutes les clés des colonnes `source`, `source_prevu`, `source_realise` des snapshots `precis/_seriescache/compensation-*.csv` et des séries `compensation_*`, `prix_carburants*`, `taxe_compensation_produits_petroliers` de l'entrepôt résolvent maintenant (contrôle par script).
+- [ ] Mentions en clair remplacées par une citation dans `_institution.qmd` (tableau du compte de la Caisse, lignes 1987 et 1997 ; section de la rupture de 1987) et `_carburants.qmd` (tableau de la taxe unique, jeu de données du ministère, Bulletin mensuel de l'INS, presse de la frise).
+
+### Versement du 06/10/2026 : tarifs de l'électricité et du gaz, structure des prix, incidence (volume IX)
+Sources : `compensation-tarifs-electricite-gaz.md`, `compensation-archives-energie.md`, `compensation-rapport-2014.md`. 43 clés ajoutées FR et AR dans `precis/{fr,ar}/compensation/references.json` (aucun .qmd touché) ; les copies locales et empreintes sont en `note`.
+- **Tarifs 1970-1992** (neuf textes lus à l'image, deux en partie, JORT par `jort_cache`, URL FR et AR) : `arrete-AAAA-MM-JJ-tarifs-electricite-gaz` pour 1970-08-07, 1975-04-15, 1978-11-27 (partiel), 1981-09-01 (partiel), 1982-09-30, 1984-06-04, 1987-06-08, 1990-12-19 ; `decision-1992-08-11-tarifs-electricite-gaz` ; cadre : `decret91-1996`.
+- **STEG** : `steg-ra-2007` à `steg-ra-2021` (couche texte, subvention d'exploitation et ajustements ; captures Wayback sauf 2021, encore en ligne ; `steg-ra-2015` : horodatage non relu au CDX) ; 10 grilles `steg-grille-AAAA-MM-JJ` (2004-05-01 et 2006-01-01 en pages HTML sans copie locale ; 2008-09-01, 2010-06-01, 2012-09-01, 2014-05-01, 2017-01-01, 2018-09-01, 2019-06-01, 2022-05-01 : fichier basse tension local + pièces compagnes en note).
+- **Incidence et subvention unitaire** : `bm-2013-82712`, `fmi-2002-cr02122`, `gtz-1999-fuel-prices`, `gtz-2001-fuel-prices`, `minfin-budget-citoyen-2021` à `-2024` (subventions unitaires prévisionnelles) ; notes complétées de `bm-2015-wps7312` (méthode et écart des tranches), `minfin-compensation-carburants-2014` (subvention unitaire 2008-2012), `bct-ra-2002` (ajustements 2000-2002), `one-chiffres-cles-energie` (prix moyen, coût de revient, série 1980-2025 lue sur un graphique) et `one-conjoncture-energetique` (structure des prix, relevé automatique).
+- [ ] **Laissé** : les textes seulement visés par les arrêtés (décret-loi n° 62-8, décrets n° 64-9 et 64-10, loi n° 91-64, décret n° 76-826) ; les arrêtés tarifaires non lus (1961, 1963, 1976, 1977, 1978-02, 1980, 1981-01) ; les grilles de 1993 à 2003 et de 2014-01 (introuvables) ; les pièces moyenne et haute tension et gaz de chaque grille (dans la note de la grille BT, une clé par grille et non par pièce) ; l'étude ANER 2000 (non lue) ; Banque mondiale n° 47294 (2008) et ESMAP, FMI CR 13/161, 14/50, 15/285 (méthode rapportée par la note, pas citée pour un fait) ; les rapports sur le budget 2013-2025 (non lus) ; `steg-ra-2005`, `-2006`, `-2022`, `-2023`, `-2024` (non cités, sans couche texte ou corrompus) ; les presses de 2022 sur l'électricité (Kapitalis du 12 mai 2022) ; le rapport du 21 juillet 2014 reste non lu pour ses pages sur la STEG.
+- [ ] Vérifier : l'horodatage de `steg-ra-2015` et de `minfin-note-execution-2019-03` au CDX (archive du web hors service ce jour) ; l'acte qui fixe les grilles après 1992 n'est pas identifié.
+
+### Versement du 06/10/2026 : tarifs 1993-2004, moyenne et haute tension, structure des prix relue, calculs des études (volume IX)
+Sources : `compensation-tarifs-1993-2004.md`, `compensation-tarifs-mt-ht-gaz.md`, `compensation-structure-prix-relue.md`, `compensation-etudes-incidence-calculs.md`. 18 clés ajoutées FR et AR (`precis/{fr,ar}/compensation/references.json`), notes complétées pour une quinzaine d'autres ; aucun .qmd touché.
+- **Rapports de bailleurs** : `bm-1998-icr-17374` (ICR gaz, tarifs 1992-1994, image lue), `esmap-2005-307-electrification-rurale` (grille 2001, « Source: STEG »), `bad-2006-rap-electricite-vi` (sept ajustements 2000-2006, coût de revient 2000-2004 ; capture Wayback, afdb.org répond 403 aux robots), `jouini-lustig-moummi-shimeles-2017-ceq38` (capture Wayback, copie locale et SHA-256 en note). Copies locales sous `banque-mondiale-rapports/`.
+- **Pages archivées (convention d'archive, horodatage lu au CDX)** : `apia-1998-couts-facteurs`, `fipa-1999-production`, `fipa-2001-02-electricite-eng`, `fipa-2001-05-electricite`, `fipa-2003-08-electricite-avril-2003`, `fipa-2004-11-gaz-mai-2004`, `api-2003-04-couts-energie`, `api-2003-10-energie`, `steg-page-2004-01-tarif`, `steg-grille-2005-02-01` ; octets bruts des captures dans le scratchpad de la collecte (hors entrepôt), SHA-256 en note.
+- **Grilles nouvelles** : `steg-grille-2013-03-01`, `steg-grille-2018-05-01` (PDF locaux), `steg-grille-2022-10-01-mt`, `steg-regime-horaire-2017` (image des postes horaires, capture du 21/04/2017) ; les dix `steg-grille-AAAA-MM-JJ` existantes complétées des captures moyenne tension, haute tension, gaz moyenne et haute pression (niveau I ou H).
+- **Complétées** : `one-conjoncture-energetique` (78 numéros relus à l'image, taux d'erreur du relevé 4/1 023 valeurs, lacunes ; 29 numéros nouveaux téléchargés et rangés dans `banque-mondiale-rapports/`, adresses et SHA-256 en note), `ins-annuaire-statistique-prix-detail` (tableau 13.4, éd. 2001, p. 195), `bct-ra-1993`, `bct-ra-1999`, `ins-cres-bad-2013-subventions` (échantillon et pages de la méthode).
+- [ ] **Laissé** : le tarif interruptible de 2013 (`steg_tarifs_interr_2013.pdf`, local, jamais lu) ; `bm-1994-pcr-13172` (non cité pour un fait) ; Araar et Verme (2012, SUBSIM), INS-BAD-Banque mondiale 2012 sur la pauvreté, FMI 2014 sur les subventions, Marouani et Robalino (2012) : cités de seconde main, non ouverts ; le catalogue `sources/banque-mondiale-rapports-urls.csv` de tunisia-data n'a pas été modifié (lignes à y ajouter par qui tient la branche) ; la fiche sur les auteurs d'ESMAP 307/05 (auteurs non confirmés sur la page de titre) ; l'acte du 10 août 2000, seulement cité par l'API.
+- [ ] Vérifier : horodatages de `steg-ra-2015` et `minfin-note-execution-2019-03` au CDX ; page d'origine de `apia-1998-couts-facteurs` (l'adresse répond 200 mais sert autre chose ou rien d'utile : « ne sert plus cette page », vérification sommaire).

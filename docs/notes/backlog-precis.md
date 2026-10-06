@@ -1,6 +1,6 @@
 # Ce qui reste à faire, livre par livre
 
-**Révisé le 5 octobre 2026.** Cette note rassemble les chantiers encore visibles dans les
+**Révisé le 6 octobre 2026.** Cette note rassemble les chantiers encore visibles dans les
 chapitres, les dossiers documentaires et les issues ; elle permet de choisir le prochain
 texte à lire. Une piste « faisable » signifie que le **support** est accessible, pas que
 son contenu a déjà été vérifié : seul l'article lu autorise à corriger le précis.
@@ -24,7 +24,7 @@ extraits des lois de finances sont dans le dossier voisin `PDFs/Lois_de_Finances
 
 | Livre | État du texte | Première lecture faisable |
 |---|---|---|
-| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées ; déductions, régime suspensif et obligations encore à rédiger | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
+| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et un chapitre transversal sur les dépenses fiscales et les régimes d'incitation (6 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées ; déductions, régime suspensif et obligations encore à rédiger | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; PNAFN historique sans sources pour ses onze dates et montants | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
@@ -95,6 +95,105 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
   - **genèse parlementaire** de l'art. 88 (rejet en commission, suppression puis
     réintroduction en plénière) : presse seulement, hors du corps faute de pièce de l'ARP
     ou du CNRD.
+- **Dépenses fiscales et régimes d'incitation (`_depenses_fiscales.qmd`, chapitre créé le
+  6 octobre 2026, repris le même jour après relecture)** sur la note
+  `docs/notes/fiscalite-depenses-fiscales.md`, seule matière du chapitre (§ 10 pour la
+  reprise). Écrit : code de 1969, loi n° 72-38 décrite en entier et ce en quoi elle rompt,
+  loi n° 74-74 ; code de 1993 (objet, abrogations, plan par objectif, art. 7, 9, 10, 12, 14,
+  16, 20, 22, 23, 25, 30) ; imposition de l'exportation votée en 2006 et ses quatre reports ;
+  lois n° 2016-71 et n° 2017-8 ; abrogation du régime de l'exportation (LF 2019) ; coût et
+  bénéficiaires en deux blocs séparés — évaluations du ministère des Finances (méthode du
+  rapport PLF 2021, agrégats 2019-2023, par impôt, bénéficiaires, avantages financiers) et
+  études extérieures (Banque mondiale 2014, diaporama de septembre 2014, OCDE 2013,
+  estimations antérieures), chacune avec sa méthode. Disponibilités ci-dessous contrôlées le
+  6 octobre 2026 (présence du fichier, `pdftotext` sur le fascicule entier) ; la page de
+  l'article n'a pas été ouverte. Restent :
+  - **AR** : déclarer `_depenses_fiscales.qmd` dans `precis/ar/fiscalite/_quarto.yml`
+    (ligne commentée en place, après `_droits_consommation.qmd`) dès que la traduction est
+    livrée ;
+  - **clés à verser (bibliographe)** : loi n° 69-35 (JORT n° 24 de 1969, p. 766-769) et loi
+    n° 74-74 (JORT n° 51 de 1974, p. 1744-1746), citées en clair au chapitre faute de clé ;
+    ébauches au § 10.1 e de la note ;
+  - **loi n° 72-38** : date d'entrée en vigueur (aucune clause) et texte qui l'a abrogée non
+    établis ; motifs, nombre d'entreprises agréées, effets sur l'emploi et l'exportation :
+    aucune source, rien n'est écrit ;
+  - **textes de 1976 à 1992 — OCR** : taux, durées et dates d'effet non établis, seuls les
+    intitulés sont connus ; la chaîne 1974 → 1981 → 1987 → 1993 du régime du marché intérieur
+    n'est pas établie. Fascicules français présents au corpus, couche texte vide :
+    `1976/fr/Jo04676.pdf` (n° 76-63), `1981/fr/Jo04481.pdf` (n° 81-56),
+    `1982/fr/Jo05482.pdf` (n° 82-67), `1985/fr/Jo07385.pdf` (décret-loi n° 85-14),
+    `1987/fr/Jo05687.pdf` (n° 87-51), `1988/fr/Jo02388.pdf` (n° 88-18),
+    `1990/fr/Jo02190.pdf` (n° 90-21), `1992/fr/Jo05292.pdf` (n° 92-81). Priorité : 1985 et
+    1987 (sort de la loi de 1972). Cinq n'ont pas de clé CSL ;
+  - **code de 1993 — OCR** : `1993/fr/Jo09993.pdf` présent, couche texte vide ; pas de
+    clause générale d'entrée en vigueur : date du dépôt du JORT n° 99 à établir ; intitulés
+    des titres VII à X et nombre d'articles à contrôler sur la page (p. 2179-2181) ; terme
+    de la déduction de 50 % des exportateurs entre 1993 et 2006 non établi ;
+  - **méthode des rapports PLF 2022 à 2025** : non établie (introduction et table des
+    matières seules) ; données employées par le ministère non décrites dans le rapport 2021 ;
+  - **crédits budgétaires** des primes et des prises en charge de cotisations : non relevés
+    (fonds spéciaux du Trésor, budgets par mission, lois de règlement, comptes du Fonds
+    tunisien de l'investissement — à obtenir) ; le chapitre ne publie que les paiements
+    déclarés du rapport PLF 2021 ;
+  - **mentions dans les chapitres d'impôt (6 octobre 2026)** : chaque avantage établi par un
+    texte est signalé, avec renvoi à `@sec-depenses-fiscales`, dans `_impot_societes.qmd`
+    (paramètres d'origine, « 2017 », « 2019 », rendement), `_impot_revenu.qmd` (BIC,
+    catégorie III, déductions, rendement), `_tva.qmd` (régime suspensif, rendement) et
+    `_droits_consommation.qmd` (renvoi à l'art. 13 *ter*, rendement). **Non mentionnés,
+    faute de texte établi** — à lire avant d'écrire quoi que ce soit dans ces chapitres :
+    régime des Tunisiens résidents à l'étranger (premier poste du recensement ; le rapport
+    cite la LF 1975, art. 33) ; concessionnaires automobiles (droit de consommation,
+    position 87-03) ; exonérations de TVA et de douane des médicaments, engrais et produits
+    alimentaires ; avantages au titre du réinvestissement après 2017 (art. 72 à 77 du code
+    de l'IRPP et de l'IS) ; sociétés d'investissement à capital risque. Les droits de douane
+    n'ont pas de chapitre : leurs exonérations (loi n° 2017-8, art. 4) restent dans
+    `_depenses_fiscales.qmd`. Dans `_impot_revenu.qmd`, la série du § V de l'art. 39 reste
+    non établie pour les activités qu'il vise depuis 2017 ; l'état de la LF 2019, art. 15
+    (« moitié des revenus » des activités à 13,5 %) n'est pas repris ;
+  - **études extérieures** (PDF collectés le 6 octobre 2026 dans `tunisia-data`, lisibles,
+    contenu non relevé) : annexe 4.2 du volume d'annexes de la Banque mondiale (p. 35) —
+    taille de l'échantillon et libellé des questions de l'enquête ; étude de Ghazouani
+    (2011) — citée de première main depuis le 6 octobre 2026 (pp. 3-9 lues, tableau 1 repris) ;
+    restent sa figure 2 (coût en MD par année), ses annexes et la cause des creux de 2004-2005
+    (clé à verser). L'étude IFC-ECOPA de novembre 2012 est un rapport préliminaire non
+    publié : à obtenir ;
+  - **calendrier de 2014 — lisible** : LF 2015 (loi n° 2014-59), art. 18, « mesures de
+    soutien des entreprises totalement exportatrices », `2014/fr/Jo1052014.pdf` ; à ouvrir
+    pour confirmer qu'aucun texte n'a touché à l'échéance du 1er janvier 2014. LF 2014,
+    art. 49-50 et 54 (`2013/fr/`, JORT n° 105) : connus par leur intitulé, non repris ;
+  - **zones de développement régional — lisible** : décret gouvernemental n° 2017-389,
+    `2017/fr/Jo0252017.pdf` ; loi n° 2019-47, `2019/fr/Jo0472019.pdf` (portée fiscale non
+    établie) ;
+  - **rapports annexés aux PLF 2022 et 2023 — à obtenir** : non archivés dans
+    `tunisia-data` (`data/raw/gbo/` ne porte que les rapports 2021, 2024 et 2025) ; adresses
+    sur gbo.tn dans la note, § 2.2, relevées le 5 octobre 2026 et non recontrôlées. Seule
+    leur introduction (p. 7) est connue. Rapport annexé au PLF 2026 : non cherché.
+    Existence d'un rapport pour les PLF 2019 et 2020 : non établie ;
+  - **série du coût à reconstruire, avec sa rupture de périmètre** : les rapports 2024 et
+    2025 excluent les exonérations des médicaments et des engrais, que le rapport 2021
+    compte (274,5 et 249,9 MD en 2019). Les deux CSV traités de `tunisia-data` cousent trois
+    rapports sur cinq et portent cette rupture à la couture 2019/2020 ; le périmètre des
+    rapports 2022 et 2023 reste à lire. `figures/depenses_fiscales.py` n'est donc pas appelé
+    (docstring corrigé le 6 octobre 2026, code inchangé) et aucune figure n'est publiée.
+    La fiche `~/projets/tunisia-data/sources/gbo-depenses-fiscales.md` ne mentionne pas
+    cette exclusion : à corriger dans ce dépôt-là ;
+  - **écart sur l'exercice 2021** : 7 745 MD (rapport 2023) contre 5 871,5 et 5 872,3 MD
+    (rapports 2024 et 2025) ; cause non établie, à lire dans les rapports 2023 et 2024. Les
+    deux ratios du rapport 2021 pour 2019 (16,3 % et 19,15 % des ressources fiscales) sont
+    signalés au chapitre ; le dénominateur de l'introduction reste à établir ;
+  - **à vérifier sur les rapports** : décomptes de dispositifs valorisés par impôt (37/57 ;
+    34/63, rapport 2025) et sommes par impôt de 2020 et 2021, tenus de la série traitée ; répartition par
+    impôt 2020-2023 et par secteur 2017-2019 (tableau n° 6 du rapport 2021, relevé pour 2019
+    seulement) non publiées ; ventilation par gouvernorat et délégation (loi n° 2017-8,
+    art. 18) : présence dans les rapports non vérifiée ;
+  - **avant 2017** : aucune série homogène. Retirés du chapitre : l'estimation OMC 2000
+    rapportée par la Banque mondiale (note 10 du ch. 4), non retrouvée dans la notification
+    G/SCM/N/71/TUN : à rapprocher de sa section IX (pp. 14-15) ; l'estimation du FMI pour
+    2005 (deux rapports d'assistance technique non publiés) ; une seconde estimation attribuée à
+    Ghazouani par la même note, absente de son étude. Figures 4.1 et 4.4 du rapport de la Banque mondiale à
+    relever sur l'image ;
+  - **à croiser avec « Cotisations sociales »** : coût des prises en charge de cotisations
+    patronales (code de 1993, art. 25 ; loi n° 99-59, connue par son intitulé).
 - **Forme de `_impot_revenu.qmd` : rien à reprendre.** Ses titres ont été remontés d'un cran
   et il a reçu sa section « La longue période ». La réorganisation par réforme, un temps
   envisagée, a été écartée après lecture — voir « Forme des chapitres » plus bas, qui en
@@ -234,10 +333,11 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
   maternité, décès, accidents du travail, perte d'emploi, CNAM ; `#sec-prest-autres-risques`) —,
   `_non_contributives.qmd` (`#sec-prest-non-contributives`), `_matrice.qmd` ; annexe
   `_notations.qmd` (« Les notations du volume »).
-- **Arabe — à faire à la livraison de la traduction** : `precis/ar/prestations_sociales/_quarto.yml`
-  ne déclare encore que `index.qmd`, à dessein. Y déclarer la partie `_contributives.qmd`, les quatre chapitres et
-  l'annexe quand la traduction les livre, puis rendre le livre arabe (mêmes réserves que pour les
-  cotisations).
+- **Arabe** : `precis/ar/prestations_sociales/_quarto.yml` déclare les chapitres traduits (état
+  constaté le 6 octobre 2026).
+- **La compensation est sortie du volume le 6 octobre 2026** : `_compensation.qmd` est supprimé,
+  son texte forme le volume IX (rubrique « La compensation » ci-dessous) ; le plan du volume
+  (`index.qmd`) y renvoie par un lien entre livres.
 - **Dépense des allocations familiales, 1990-2004 — fait le 3 octobre 2026** (`#fig-cnss-allocations-familiales`, `#sec-pf-longue-periode`), tirée de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026), déflatée par l'IPC des annuaires de l'INS (`ins-annuaire-ipc`). Restent : allocataires, enfants, montant moyen, dépense avant 1990 et après 2004 (TODO du chapitre). **221 valeurs de 1999** (et quelques-unes de 2000) masquées par la reliure restent à lire sur l'original papier (tunisia-data#26) ; en attendant, la figure trace des estimations hachurées ou creuses. Quand le classeur revient : réinjecter dans tunisia-data, relancer `figtools.refresh_cache("cnss-retrospective-ressources-emplois")`, puis relire la note de lecture, qui cite des montants. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches).
 - **Onze paliers de l'allocation** entre 1987 et 2018 n'ont aucun fondement textuel publié.
   Les décisions ou circulaires de la direction générale de la promotion sociale et
@@ -406,8 +506,14 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
 
 ## Cotisations sociales
 
-- **Accidents du travail par activité et taux légal — nuages de points ajoutés le 5 octobre 2026**
-  (`#fig-atmp-secteurs`, chapitre `_accidents_travail.qmd`). Le rapport CNAM
+- **Accidents du travail par activité et taux légal — mis en réserve le 6 octobre 2026**
+  (`docs/reserve/atmp-bareme-sinistralite.md`). Les nuages de points ajoutés la veille
+  (`fig-atmp-secteurs`) sont **retirés du chapitre** `_accidents_travail.qmd` : une relectrice
+  signale que le rattachement des employeurs aux activités (NAT61 à la CNSS) n'est pas fiable,
+  ce qui fausse la sinistralité par activité. Module et données conservés, plus rendus. À
+  reprendre quand une source publiée établira la classification (passage NAT61 → NAT2009) et
+  un tableau de passage par codes d'activité ; conditions détaillées dans la fiche. Constat
+  d'origine, conservé pour la reprise : le rapport CNAM
   2023, PDF arabe lisible, porte la fréquence des accidents avec arrêt par
   activité (PDF 15), le nombre d'accidents (PDF 13) et celui des décès
   (PDF 26) pour 2021–2023 ; les séries sont conservées séparément dans
@@ -475,6 +581,41 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
   1999). Les deux échelles sont engendrées, avant et après transfert du point
   (`tables/atmp_1995.md`, `tables/atmp_1999.md`). Reste : le financement sous la loi
   n° 57-73 (texte à obtenir pour ce livre ; clé à verser au fonds commun).
+- **Accidents du travail : CNAM et CNSS, classement des employeurs, sinistres déclarés —
+  rédigé le 6 octobre 2026** (`#sec-cot-at-modulation-caisses`,
+  `#sec-cot-at-modulation-application`, `#sec-cot-at-classement`, `#sec-cot-at-declares`),
+  à la suite d'un retour de lecture. Lus : loi n° 2004-71, art. 5, 8 à 10, 16 et 29, à
+  l'image dans les deux éditions ; loi n° 2017-47 ; décret n° 2005-321 en entier (rien sur
+  la prévention ni la modulation) ; décrets n° 96-1050 et 2009-2344 (couche texte française,
+  non relus à l'image). Deux documents publiés, lus et rapportés comme tels : le Profil
+  national de la sécurité et de la santé au travail (ministère des affaires sociales, 2023)
+  et La Lettre du CRES n° 8 (janvier 2023). Ouvert :
+  - **non établi par un texte** : la caisse qui décide la majoration et la réduction depuis
+    2004 ; une commission pour ces décisions (`r-atmp-commission-modulation`) ; la convention
+    de recouvrement entre la CNSS et la CNAM (`r-cnam-cnss-convention-recouvrement`) ;
+    question posée à la relectrice ;
+  - **à lire** : la circulaire n° 20 du ministre des affaires sociales du 19 décembre 2001
+    (comité de veille), connue par le seul Profil, p. 32 ; les annexes des organigrammes de
+    la CNAM (décrets n° 2008-3707 et 2018-747) ; le décret n° 2002-583 ;
+  - **rangés le 6 octobre 2026** : les PDF du Profil et de la Lettre du CRES n° 8, dans
+    `tunisia-data` (`data/raw/caisses/mas/` et `data/raw/caisses/cres/`), fiches
+    `sources/mas-profil-sst-2023.md` et `sources/cres-lettre-8-atmp-2023.md` (tunisia-data#34) ;
+    le PDF du ministère a été téléchargé sans vérification du certificat du site ;
+  - **deux figures** (`fig-atmp-declares`, `fig-atmp-frequence`, module
+    `figures/atmp_sinistres.py`), sur la série `atmp-sinistres-declares-2012-2022-bruts` de
+    l'entrepôt (tunisia-data#34, **à fusionner** : le précis n'en porte que l'instantané) ; les
+    écarts entre les deux documents pour 2014, 2015 et 2020 sont dits dans le texte et gardés
+    dans les données ; reste à raccorder aux statistiques de la CNAM pour 2021-2023 ; les
+    intitulés d'indicateurs de l'onglet « Données » ne sont pas traduits en arabe ;
+  - **non repris, faute de série** : 209 entreprises bénéficiaires d'une réduction jusqu'en
+    2020 et 7 prêts de 2014 à 2019 (Profil, pp. 48-49), cumuls sans source ;
+  - **pour le volume des caisses** : recettes, dépenses et résultats du régime de 2018 à 2022
+    (Profil, annexe 5, p. 92), avec une incohérence sur les dépenses de 2021 (159,755 MD à
+    l'annexe, 222,343 MD au texte p. 28) ; part du régime dans les dépenses de la CNAM de
+    2009 à 2019 (Lettre du CRES, figure 1) ; recettes et dépenses de 2007 à 2018 en
+    graphique sans valeurs (figure 2) ;
+  - **relecteur-ar** : pagination arabe des décrets n° 96-1050 et 2009-2344, et fin du décret
+    n° 2005-321, non relevées.
 - **Accidents du travail : assiette et modulation — rédigé le 5 octobre 2026**
   (`#sec-cot-at-assiette` : `#sec-cot-at-assiette-principe`, `#sec-cot-at-forfaits`,
   `#sec-cot-at-salaire-comparaison` ; `#sec-cot-at-modulation` : `#sec-cot-at-majoration`,
@@ -486,21 +627,15 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
   le décret n° 2000-1439) ; aucun montant en dinars n'est donné. Ouvert :
   - **à relire à l'image** (fascicules français présents au corpus, connus par cette seule édition) :
     loi n° 60-30, art. 42 et 46, rédaction de 1960 (JORT n° 57 de 1960, pp. 1605-1606,
-    impression pâle : paraphrasée, non citée) et son édition arabe ; loi n° 2004-71,
-    art. 8 à 10 et 29 ; décrets n° 96-341, 2003-1098 et 2008-173 (avantages exclus de
+    impression pâle : paraphrasée, non citée) et son édition arabe ; décrets n° 96-341, 2003-1098 et 2008-173 (avantages exclus de
     l'assiette), dont l'édition arabe reste à lire ; le n° 99-1011 est lu dans les deux ;
-  - **à lire** (fascicules présents au corpus le 5 octobre 2026 ; lisibilité de la couche
-    texte non vérifiée — le n° 15 de 2005 en porte une où « 2005-321 » ne se retrouve pas
-    tel quel, donc lecture à l'image ou décodage à prévoir) : décret n° 2005-321
-    (organisation de la CNAM, JORT n° 15 de 2005, `2005/fr/Jo0152005.pdf`, pp. 459-463) —
-    quelle caisse exerce les pouvoirs des art. 10 à 27 et recouvre la cotisation, depuis
-    quand ; loi n° 88-38 du 6 mai 1988, visée par le décret n° 95-538 (JORT n° 33 du
-    13 mai 1988, p. 735 d'après jort_cache, `1988/fr/Jo03388.pdf`) — l'art. 42 entre 1960
-    et 1995 n'est pas vérifié ;
+  - **à lire** (fascicule présent au corpus) : loi n° 88-38 du 6 mai 1988, visée par le
+    décret n° 95-538 (JORT n° 33 du 13 mai 1988, p. 735 d'après jort_cache,
+    `1988/fr/Jo03388.pdf`) — l'art. 42 entre 1960 et 1995 n'est pas vérifié ;
   - **à calculer** : date exécutoire de la loi n° 95-101 et des décrets n° 96-341,
     2003-1098 et 2008-173 (aucune clause d'effet) ;
-  - **à obtenir** : une source administrative (CNSS, CNAM) sur la pratique des forfaits et
-    de la modulation ; rien n'établit qu'ils sont appliqués aujourd'hui ;
+  - **à obtenir** : une source administrative (CNSS, CNAM) sur la pratique des forfaits ;
+    rien n'établit qu'ils sont appliqués aujourd'hui ;
   - **lectures, non textes** : portée du décret n° 2000-1439 sur l'art. 5 (abrogation
     implicite) ; application à l'AT/MP des décrets d'exclusion (par renvoi seulement) ;
     taux applicable aux forfaits des art. 5 (muet) et 7 (« selon les branches ») ;
@@ -668,13 +803,13 @@ Revue de ce que les sept volumes ne couvrent pas (sujets à établir sur les tex
 2. **Salaire minimum et salaires négociés du secteur privé** : histoire du SMIG et du SMAG (montants, régimes 40 h / 48 h, revalorisations, décrets) ; conventions collectives sectorielles et leurs grilles ; accords salariaux périodiques UGTT-UTICA (privé) et UGTT-gouvernement (public). **En cours.**
 3. Droit du travail déterminant les revenus : durée du travail, congés payés, heures supplémentaires, indemnités de licenciement, contrats précaires et sous-traitance, travail informel.
 4. Politiques actives de l'emploi : programmes de l'ANETI (stages d'insertion, contrats aidés), primes à l'embauche, prises en charge de cotisations patronales ; protection contre la perte d'emploi (aujourd'hui effleurée).
-5. La compensation (Caisse générale de compensation : produits de base, carburants, électricité, transport) — sources déjà collectées sur l'ancien portail du ministère des Finances (`tunisia-data/sources/minfinances-portail-ancien.md`).
+5. La compensation (Caisse générale de compensation : produits de base, carburants, électricité, transport) — **volume IX créé le 6 octobre 2026** (`precis/fr/compensation/`) ; lacunes à la rubrique « La compensation » ci-dessous.
 
 **Fiscalité**
 
 6. Droits d'enregistrement et de timbre ; fiscalité des mutations immobilières.
 7. Droits de douane.
-8. Dépenses fiscales et régimes d'incitation (code d'incitation aux investissements, loi de 2016, entreprises totalement exportatrices, développement régional) — documents Banque mondiale 2014 collectés.
+8. Dépenses fiscales et régimes d'incitation (code d'incitation aux investissements, loi de 2016, entreprises totalement exportatrices, développement régional) — **chapitre créé le 6 octobre 2026** (`fiscalite/_depenses_fiscales.qmd`) ; lacunes dans la section « Fiscalité » ci-dessus.
 9. Fiscalité de l'épargne et du capital : retenues libératoires sur les revenus de capitaux mobiliers, plus-values mobilières, épargne exonérée.
 10. Taxes affectées et contributions exceptionnelles (contribution conjoncturelle, contribution au budget de l'État de 2014, FODEC, vignette).
 
@@ -728,6 +863,194 @@ période. Notes documentaires : `docs/notes/marche-travail-smig-smag.md`,
   cherté de vie (TODO rédacteur dans `_salaire_minimum.qmd`).
 - **Catalogue de `ipc-longue-periode`** (tunisia-data) : titre et réserves disent « 1962-2003 »,
   alors que la série va jusqu'en 2023 (annuaire 2019-2023, tableau 13.6).
+
+## La compensation
+
+Volume IX (`precis/fr/compensation/`), créé le 6 octobre 2026 par redécoupage du chapitre
+`_compensation.qmd` du volume « Prestations sociales », puis **réécrit le 6 octobre 2026** sur les
+notes `docs/notes/compensation.md` (§ 9 et 10 prévalent), `compensation-avant-1970-et-plans.md`,
+`compensation-rupture-2015.md` (sa synthèse fait foi), `compensation-prix-carburants.md` et
+`compensation-prix-carburants-1993-2018.md` (la seconde corrige la première). Règle d'exposé :
+le budgétaire d'abord, en entonnoir ; les rapports extérieurs et les études d'impact ensuite, à
+part, chacun avec sa méthode ; aucun tableau ne mêle deux familles. Huit chapitres depuis l'ajout de `_electricite_gaz.qmd`
+(rubriques « Électricité et gaz », « Structure des prix » et « Incidence de l'énergie » des
+lacunes ci-dessous) :
+
+- `index.qmd` (`#sec-compensation`) : objet, encadré « Trois familles de chiffres », plan ;
+- `_institution.qmd` (`#sec-compensation-caisse`) : avant 1970 (Caisse de compensation du
+  Protectorat, péréquation, rupture du 28 septembre 1964, compte 1965-1975), création de
+  1970-1971, compte de la Caisse 1984-2011 (charges, recettes propres, dotation, solde ; charges
+  par produit ; recettes propres de 1984-1985 ; prêts du Trésor), rupture de 1987, poids de la
+  dotation dans les dépenses de l'État ;
+- `_reformes.qmd` (`#sec-compensation-reformes`) : tableau 1957-2021, puis 1976, 1984, 1989,
+  redevance de 2013-2014, renvoi aux carburants ;
+- `_depense.qmd` (`#sec-compensation-longue-periode`) : dépense globale, décomposition par poste
+  (tableaux 2003-2011 et 2012-2025 **repliés**, les figures les portent), prévu et réalisé (lois
+  de finances ; plans IXe, XIe, 2016-2020 ; VIe en mention) ;
+- `_carburants.qmd` (`#sec-compensation-carburants-chapitre`), **nouveau** : circuit ETAP-STIR-STEG
+  et prix de cession, subvention directe et totale selon l'audit de 2014, rupture de 2015
+  (périmètre élargi, facteurs de la LFC 2015, recettes en regard, impayés de 2016), taxe unique
+  de compensation 1964-1981, prix à la pompe 1964-2026 source par source, mécanisme d'ajustement
+  2009-2021 et gels, autorité qui fixe et notifie les prix ;
+- `_exterieurs.qmd` (`#sec-compensation-sources-exterieures`), **nouveau** : figure de comparaison,
+  Banque mondiale 1977 et 1985, FMI 1996 et 2000, FMI 2014 et 2016 (énergie « brute ») ;
+- `_incidence.qmd` (`#sec-compensation-incidence`) : l'étude INS-CRES-BAD de 2013, avec sa méthode.
+
+Retiré : la section « La compensation rapportée au PIB » et son tableau des parts publiées
+(`tbl-compensation-pib`) — les parts sont celles des figures, calculées dans l'entrepôt ; le
+tableau du XIe Plan année par année (`tbl-compensation-plan`) et le tableau du poste des
+carburants par entreprise en 2011 (`tbl-compensation-energie-2011`), repris dans des tableaux
+plus larges ; la phrase du FMI de 1996 sur 4,2 % et 1,8 % du PIB, qui ne se recoupe pas avec son
+propre tableau. Le tableau `tbl-compensation-1971-1984` ne mêle plus les familles : les lignes
+de la Banque mondiale sont passées dans `_exterieurs.qmd`.
+
+Neuf fiches dans `docs/recherches.yml` : `r-caisse-compensation-origine`,
+`r-centimes-additionnels-art106-1955`, `r-cgc-decret-application-1970`,
+`r-cgc-budgetisation-1992-2003` (`_institution.qmd`) ; `r-plans-prevision-compensation`
+(`_depense.qmd`) ; `r-separation-hydrocarbures-2014-texte`, `r-arrete-prix-petroliers-1980-12-31`,
+`r-prix-pompe-arretes-apres-1993`, `r-carburants-ajustement-apres-2021` (`_carburants.qmd`).
+Proposées par les notes et **non versées**, faute d'ancre dans le texte :
+`r-operations-compensation-creation`, `r-arrete-1993-10-08-prix-gaz-steg`,
+`r-separation-effet-ex-post`, `r-serie-prix-pompe-1993-2017` (largement résolue).
+
+- **Figures** (`precis/fr/compensation/figures/compensation.py`, appelées par `cm.figure(…)`),
+  onze, chacune appelée une fois : `fig-compensation-compte-caisse`,
+  `fig-compensation-par-produit` et `fig-compensation-recettes-caisse` dans `_institution.qmd` ;
+  `fig-compensation-longue-periode`, `fig-compensation-par-poste`,
+  `fig-compensation-prevu-realise` et `fig-compensation-prevu-realise-postes` dans
+  `_depense.qmd` ; `fig-compensation-carburants-beneficiaires`,
+  `fig-compensation-carburants-directe-totale` et `fig-compensation-prix-pompe` dans
+  `_carburants.qmd` ; `fig-compensation-sources-exterieures` dans `_exterieurs.qmd`.
+  - **Snapshots** : refaits le 6 octobre 2026 depuis `main` de `tunisia-data` (neuf séries
+    `compensation-*` et `prix-carburants*`). Les notes de lecture disent la base du PIB d'après
+    `segment_pib`, `pib_retropole` et `rupture_pib` (2010-2024 : INS, base 2015, rétropolée
+    pour 2010-2014). La rupture de 1987 est déclarée dans le module, la colonne `rupture` de
+    l'entrepôt ne la portant pas : à y verser.
+  - **Tableaux repliés le 6 octobre 2026** : `tbl-compensation-compte-caisse` et
+    `tbl-compensation-besoins-energie`, que des figures portent.
+  - **Prix à la pompe en dinars constants** : vue non faite. `ipc-longue-periode` est
+    snapshoté, mais c'est un indice raccordé (bases 1962 et 1970), annuel et arrêté à 2023,
+    face à des prix datés au jour jusqu'en 2026 : le déflatage demande une règle écrite
+    (année d'effet, prolongement 2024-2026) avant d'être tracé.
+  - **Non tracé, présent dans les données** : relevés mensuels de l'INS et ajustements déduits
+    par le calcul (prix à la pompe) ; lignes de plan en cumul ou en part du PIB et prévisions
+    de dotation de 1989 et 2007 (prévu / réalisé) ; prévisions de besoins de financement de
+    2012-2013 (carburants) ; dépenses du fonds spécial par produit, 1983-1986.
+  - **Annexe sur le PIB** : le texte et les notes des figures renvoient à
+    `../annexe-pib.html#sec-pib-ruptures` et `#sec-pib-retropolation` ; l'annexe est sur une autre
+    branche, les ancres n'ont pas pu être contrôlées ici.
+  - **Arabe** : `precis/ar/compensation/figures` est un lien vers le module français ; ses
+    libellés sont bilingues, non relus par un arabophone.
+- **Arabe** : `precis/ar/compensation/_quarto.yml` (tenu à la main) porte en commentaire les six
+  chapitres, dont `_carburants.qmd` et `_exterieurs.qmd` ; décommenter chaque chapitre quand sa
+  traduction est livrée, puis rendre le livre arabe.
+- **Bibliographie — clés manquantes, citées en clair dans le texte** (bibliographe) :
+  `bct-ra-1987` (dotation de 189 MD, citation sur la loi de finances pour 1987, p. 71) et
+  `bct-ra-1997` (dotation de 320 MD, p. 91) ; `decret78-316` (taxe unique à 7,120 D/hl) ;
+  `minenergie-opendata-prix-vente-petroliers` (moyennes annuelles 1990-2016, fichier aux
+  archives du web, **non versé à l'entrepôt**) ; `ins-bms` (présente dans « Retraites » seulement) ;
+  dix articles de presse de la frise 2002-2018 ; loi de finances pour 1981 et pour 1987, loi
+  n° 91-98, arrêtés des 11 octobre 1990 et 7 juillet 1992, arrêté du 10 mai 2024 ; loi n° 63-13
+  (caisse des transports routiers). La collection Zotero « Compensation » reste à créer.
+- **Glossaire — notions à créer** (terminologue) : subvention directe / subvention indirecte ;
+  prix de cession (préférentiel) ; séparation des opérations de commercialisation des
+  hydrocarbures ; revenus de commercialisation des carburants ; compte de la Caisse (charges,
+  recettes propres) ; dotation budgétaire ; taxe unique de compensation sur les produits
+  pétroliers ; redevance compensatrice ; centimes additionnels ; prix limite de vente ; structure
+  des prix ; arrêté interne ; mécanisme d'ajustement de 2009 ; base caisse ; ETAP, STIR, STEG.
+  L'ancre `#g-auto-ciblage` n'est toujours pas employée.
+- **Lacunes**, dans l'état que les notes établissent :
+  - **Avant 1956** : aucun texte établi dans sa lettre ; décrets de 1943, 1945, 1954, 1955 connus
+    par les visas. *Journal officiel tunisien* de 1943-1955 : hors corpus et hors pist.tn, **à
+    obtenir** (Gallica à vérifier dans un navigateur). Fiches `r-caisse-compensation-origine` et
+    `r-centimes-additionnels-art106-1955`.
+  - **1956-1969, chiffres non publiés** : montants des redevances sur les huiles et le sucre
+    (1956, 1958), sur l'acier (1967), arrêté du 20 juillet 1965, lois n° 59-66 et n° 63-13,
+    tableau F de la loi de finances pour 1970 — fascicules au corpus ou sur pist.tn, connus par
+    OCR seul : **à relire à l'image**. Première série de 1957 du Journal officiel : absente du
+    corpus local, présente sur pist.tn. Aucune série du compte avant 1970 (deux points : 1965,
+    1967).
+  - **Dotation du budget à la Caisse, dix années sans valeur** : 1988, 1989, 1990, 2000, 2001,
+    2003, 2006, 2008, 2009, 2011 — à chercher au chapitre des finances publiques des rapports de
+    la BCT (au corpus, textuels) et dans les lois de règlement. Recettes propres après 1999,
+    charges par produit de 1984, 1989-1991 et 1994, prêts et avances du Trésor par année : non
+    établis. Loi de finances pour 1987 (intégration des recettes au budget) : à lire au JORT.
+  - **Passage de la Caisse hors des fonds spéciaux** : texte non identifié (fiche
+    `r-cgc-budgetisation-1992-2003`) ; lois de finances 1993-2003 à ouvrir.
+  - **Décret d'application de l'article 3 de la loi n° 70-26** : non identifié (fiche).
+  - **Rupture de 2015** : effet constaté de la séparation de 2015 à 2018, subvention indirecte de
+    2013 et 2014, bénéficiaires de la ligne en 2013 et après 2016, recettes de commercialisation
+    encaissées de 2019 à 2025, acte formalisant la séparation (fiche), arrêté du 8 octobre 1993
+    sur le prix du gaz, régularisation des impayés de 2016 : non établis. Rapport de 2014 :
+    pages 1-10 et 158-159 seules exploitées. Lois de finances pour 2016 et 2019 : éditions
+    françaises absentes du corpus local.
+  - **Prix à la pompe** : arrêté du 31 décembre 1980 (fiche) ; **1997-2001 : dates et niveaux des
+    ajustements non établis** (moyennes annuelles seules ; les lignes inférées ne sont pas
+    publiées) ; laquelle des lignes 2000 et 2001 du ministère est fautive ; tout prix mensuel
+    avant novembre 2007 ; ajustements du pétrole lampant et de la bouteille de gaz avant 2008 ;
+    moyenne officielle 2017-2018 ; prix de la bouteille de gaz du 18 août 1992 (à relire à
+    l'image) ; aucun « arrêté interne » de notification n'a été vu. Tarifs de la taxe unique
+    après 1981 : non établis.
+  - **Électricité et gaz** (`_electricite_gaz.qmd`, `#sec-compensation-electricite-gaz`), sur
+    `compensation-tarifs-electricite-gaz.md`, `compensation-tarifs-1993-2004.md` et
+    `compensation-tarifs-mt-ht-gaz.md` — écrit : autorité tarifaire (arrêtés 1970-1990, décision
+    du 11 août 1992, décision du 10 août 2000 citée par l'API) ; grilles des ménages 1970-1992
+    (Journal officiel), cinq grilles de 1993 à 2003 en deux tableaux (relais officiels ; rapport
+    extérieur seul), 2004-2022 (STEG, établies sur ses documents de 2008 à 2022) ; frise
+    1992-2006 avec la famille de chaque source ; moyenne et haute tension, gaz en moyenne et
+    haute pression, tarifs à postes horaires expliqués ; recette moyenne par kWh donnée comme un
+    calcul ; coût et prix de vente (rapport de contrôle 2008-2012 ; Observatoire 2017-2025 ;
+    BAD 2000-2004, rapport extérieur) ; rapprochement avec la subvention d'exploitation de la
+    STEG. **Restent** : jour d'effet des grilles d'octobre 1993 et de juin 1994 (fiche
+    `r-tarifs-electricite-grilles-1993-2003`, passe consignée) ; moyenne et haute tension et gaz
+    de 1994 à 2003, établis par les notes et non publiés ; grilles du gaz de 2001 à 2003 ;
+    **acte du 10 août 2000 non lu**, actes de 1993, 1994, 2001, 2003 et 2004 non identifiés
+    (fiche `r-tarifs-electricite-gaz-apres-1992`, passe consignée) ; contradiction de 2003 (90
+    ou 94) et écart de 2005 avec l'INS ; **tarifs du Journal officiel de 1975 à 1990 à relire**
+    (moyenne et haute tension, unité de la prime) ; haute tension de septembre 2012, moyenne
+    pression de 2012-2013 ; heures des postes avant 2014 ; ventes en haute tension de 2020 ;
+    grille basse tension du 1er janvier 2014 (source seconde, non publiée) ; arrêtés de 1961,
+    1963, 1976-1981 connus par leur intitulé ; **figure de la facture type**
+    (`fig-compensation-facture-electricite`, TODO figures : TVA et surtaxe municipale à
+    reconstituer) ; série de la subvention d'exploitation de la STEG non publiée (notes aux
+    états financiers à lire) ; décodage des couches texte du JORT des années 2000 à verser à
+    `docs/notes/outillage-sources.md`.
+  - **Structure des prix des carburants** (`_carburants.qmd`, `#sec-compensation-structure-prix`),
+    sur `compensation-archives-energie.md` et `compensation-structure-prix-relue.md` — écrit :
+    lecture du tableau de la *Conjoncture énergétique*, 24 structures datées de 2014 à 2022
+    (synthèse en clair, deux tableaux repliés), importation et cession en moyenne annuelle
+    2016-2025 (écart donné comme un calcul), subvention unitaire prévisionnelle des budgets
+    citoyens 2021-2024, déficit de commercialisation 2000-2002, hausses de 2000, aucune en 2001.
+    **Restent** : **structure du 1er avril 2018** et numéros de janvier à juin 2018 ; date de la
+    baisse d'août 2020 ; droits et marges du 6 février 2021 ; composantes séparées (droit de
+    consommation, TVA, chaque marge) ; **montant budgétaire par produit pétrolier** (aucune
+    publication officielle) ; **décisions de prix** (aucun « arrêté interne » en ligne ni
+    archivé) ; série 1980-2025 du graphique des *Chiffres clés* (non publiée en valeurs) ; jour
+    et niveau des ajustements de 1997 à 2000 ; budgets citoyens 2018, 2020 et 2025 ; répartition
+    STIR / STEG de la ligne 2022-2025 (rapports sur le budget, sans clé).
+  - **Études d'impact** (`_incidence.qmd`), sur `compensation-etudes-incidence-calculs.md` —
+    écrit, pour quatre études, les données, le calcul pas à pas, les résultats, les limites et
+    les incohérences : INS-CRES-BAD 2013 (répartition 9,2 / 60,5 / 7,5 / 22,8 publiée avec la
+    mention que deux classes ne sont pas définies), Banque mondiale 2013 (par produit, par
+    quintile, par tête, réforme simulée), document de travail de 2015 (subvention unitaire, par
+    quintile, perte, scénarios), document de travail de 2017 (agrégat de toutes les
+    subventions). **Restent** : **tableaux d'études à contrôler cellule par cellule** (seuls le
+    tableau 1 et les figures 11 et 12 de la note de 2013 sont établis sur le document) ;
+    alignement du tableau 18-8 du document de 2017 ; outil de simulation (Araar et Verme, 2012)
+    non ouvert ; définition des classes moyenne et aisée (rapport INS-BAD-Banque mondiale de
+    2012) ; Banque mondiale n° 47294 (2008), sans clé ; rien sur l'alimentaire après 2010.
+  - **Rapports extérieurs** : tableau III-1 de la Banque mondiale 1985 et tableau par produit
+    1972-1977 de la revue du Ve Plan : à relire à l'image, aucune valeur publiée ; rétropolation
+    de la série « brute » du FMI non détaillée par le rapport ; rapports du FMI de 2015 à 2019
+    non exploités.
+  - **Lois de règlement** : aucune ouverte.
+  - **Textes non relus à l'image** : LF 1971 (art. 48, tableau F), décret n° 70-622, LF 1984
+    (art. 87, tableau F ; art. 38 et suivants : seule la référence est retenue), LFC 1989.
+  - **Hors texte, faute de source** : opérateurs de la compensation des produits de base,
+    bénéficiaires de la compensation du transport, entrées et sorties de produits, produit de la
+    redevance de compensation, ciblage et transferts de substitution, événements de janvier 1984.
+  - **Redevance de compensation, revenu des personnes physiques** : rédaction de 2013 (assiette,
+    plafond de 2 000 D) à relire à l'image ; prorogation des volets bornés à 2014-2015 à établir.
 
 ## Citations répétées — suggestion, non engagée (4 octobre 2026)
 
@@ -962,6 +1285,130 @@ Ce qui reste sur ce chapitre ne relève plus de la forme mais du documentaliste.
 Pour toute passe qui DÉPLACE de la prose, le **balayage phrase à phrase** de l'original
 contre le résultat n'est pas optionnel : sur l'impôt sur les sociétés, deux fois plus court,
 il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
+
+## Le PIB et ses changements de base — annexe du site et mise en conformité des volumes (6 octobre 2026)
+
+**Fait.** L'annexe `precis/fr/annexe-pib.qmd` est écrite (page de site, rendue par `build.sh`
+comme `a-propos`, liée depuis l'accueil et le pied de page des huit volumes français). Matière :
+`docs/notes/annexe-pib.md`. Ancres stables auxquelles les volumes renvoient : `#sec-pib-bases`,
+`#sec-pib-ecarts`, `#sec-pib-retropolation`, `#sec-pib-sources`, `#sec-pib-ruptures`,
+`#sec-pib-lire`, `#sec-pib-definition`, et par changement de base `#pib-base-1997`,
+`#pib-base-2015` (plus `#pib-base-1983`, `#pib-annee-de-prix`, `#pib-series-accolees`,
+`#tbl-pib-jonctions`).
+
+**Règle à appliquer partout** : toute grandeur rapportée au PIB nomme la base, dit si le PIB est
+recalculé pour le passé ou non, trace les changements de base et renvoie à l'annexe. Modèle à
+généraliser : `finances_locales/figures/finances_locales.py` (`_pib`, `_pib_par_base`,
+`_ruptures_pib`).
+
+**Inventaire** (note, § 4.2) : 25 emplois du PIB dans six volumes — 4 conformes, 8 partiels,
+13 non conformes. À mettre en conformité **dans des PR distinctes, une par volume** ; rien n'a
+été touché dans les volumes ici.
+
+- **Fiscalité — 8 emplois non conformes.** Les quatre figures de rendement (`figures/irpp.py`,
+  `impot_societes.py`, `tva.py`, `droits_consommation.py`) rapportent les recettes au PIB du
+  ministère des Finances sans dire sa base ni tracer ses changements de niveau (1997, 2002, 2005,
+  2010) ; la légende de l'impôt sur les sociétés présente l'écart de 5 % de 2012-2014 entre ses
+  deux colonnes de PIB sans dire que c'est un écart de base. Quatre phrases chiffrées à reprendre :
+  `_impot_revenu.qmd` (« de 1,9 % à plus de 6 % », 1990-2016), `_impot_societes.qmd` (« 1,86 % …
+  3,77 % »), `_tva.qmd` (« 6,5 % en 1988, 5,1 % en 1997… » : 1997 est l'année du changement de
+  niveau de 9,8 %), `_droits_consommation.qmd` (maximum de 1994 en base 1983 comparé à la suite en
+  base 1997).
+- **Rémunérations publiques — 5 emplois non conformes.** `fig-masse-salariale-ratios` (et sa
+  reprise dans `_demo_figure_onglets.qmd`) annonce un « PIB en base 2015 » alors que 1990-1996
+  n'est pas dans cette base, que 2002-2004 ne se rattache à aucune base et que **2012-2014 sont
+  en base 1997** : la part publiée vaut 12,30 %, 12,79 % et 13,03 % ; rapportée au PIB en base
+  2015 recalculé par l'INS, 11,71 %, 12,15 % et 12,35 % ; le « reflux » de 2014 à 2015 est un
+  effet de base. Phrase de `index.qmd` (« 11 à 12 % … 16,1 % en 2020 … ») à reprendre. Figure B
+  de `masse_salariale.py` : « base 2010 (×1,06) » — il n'existe pas de PIB nominal « base 2010 »,
+  et le coefficient unique est appliqué à 1990-2025 alors qu'il n'est mesuré que sur 2015-2017.
+  Citations du FMI (17,6 % en 2020 : PIB en base 1997, établi) et de la Banque mondiale (14,7 %
+  en 2017, 10,7 % en 2010 ; `_regime_conventionnel.qmd`, transferts aux entreprises publiques,
+  8,9 % en 2013 et 7,5 % en 2014) : dire la base, ou dire qu'elle n'est pas précisée par la
+  source (revue des dépenses publiques de 2020 à relire sur ce point).
+- **Figures de la CNSS, 1990-2004 — 6 figures partielles, même défaut** : le changement de
+  1997 est tracé et dit ; celui de **2002** (valeurs du ministère non rattachées, 2002-2004) ne
+  l'est pas.
+  - **Caisses** (`_comptes_longue_periode.qmd`) : `fig-cnss-regimes`,
+    `fig-cnss-assurances-sociales`, `fig-cnss-atmp-pst`.
+  - **Cotisations** (`_bilan.qmd`) : cotisations par branche ; les modules `cnss_*` du volume
+    sont des liens symboliques vers ceux des caisses — une même PR pour les deux volumes.
+  - **Prestations** (`_prestations_familiales.qmd`) : allocations familiales.
+  - **Retraites** (`_secteur_prive.qmd`) : branche des pensions du RSNA.
+- **Retraites — 1 groupe partiel** : les deux figures du barème d'actualisation
+  (`bareme_actualisation.py`) ; dire les années de la réserve d'avant 1993 (taux de 1970 à cheval
+  sur deux séries ; taux de 1983 et 1985 appuyés sur des valeurs de 1983-1984 propres à la Banque
+  mondiale).
+- **Finances locales — 4 figures conformes, 1 phrase partielle** : `_longue_periode.qmd`, « de
+  0,74 % en 2002 à … 0,66 % en 2019 » traverse trois bases sans le dire dans la phrase ; points
+  de 1985-1991 de `fig-fl-lp-fccl` rapportés au PIB d'un rapport de la Banque mondiale de 1992
+  dont la base n'est pas dite. Remplacer le paragraphe local sur les bases par un renvoi à
+  l'annexe.
+- **Marché du travail** : aucun emploi du PIB relevé.
+
+**Figures de l'annexe — fait le 6 octobre 2026.** `#fig-pib-volume` (sous-section
+`#pib-croissance-volume`), deux vues : tous les taux de croissance en volume de 1961 à 2025
+(comptes tunisiens en ronds de la couleur de leur base, Banque mondiale en croix, taux retenu en
+trait, neuf jonctions étiquetées base / année de prix / série / source, 1962-1965 sur fond gris) ;
+les deux indices enchaînés, prix courants et volume. `#fig-pib-bases` (sous-section
+`#pib-croissance-longue-periode` ; le `TODO (rédacteur)` de `#sec-pib-ecarts` est levé), trois
+vues, toutes aux prix courants : niveaux des bases 1983, 1997 et 2015 sur leurs années (tronçons
+rétropolés par l'INS distingués) ; croissance calculée à l'intérieur de chaque base, 1962-2025 ;
+série accolée et série enchaînée, en indice et en taux, les deux taux faux de 1997 et de 2010
+marqués. Module `precis/fr/figures/annexe_pib.py`. La règle 2 de `#sec-pib-ruptures` dit
+désormais que la série enchaînée n'est qu'une illustration.
+
+- **Snapshots.** `pib-courant-enchaine`, `pib-croissance-par-base`,
+  `pib-courant-recouvrements`, `pib-croissance-volume` et `pib-volume-enchaine`
+  (`precis/_seriescache/`) sont pris sur `main` de `tunisia-data` (`b6e412c`, 6 octobre 2026) :
+  CSV identiques, octet pour octet, à ceux de l'entrepôt.
+- **Câblage d'une figure de page de site.** Le module est dans `precis/fr/figures/` (lien
+  symbolique `precis/ar/figures`), les sorties à côté de la page (`precis/<langue>/_fig/`,
+  ignoré, et `precis/<langue>/figdata/`, versionné) ; `build.sh` copie ces deux dossiers dans le
+  site. `scripts/verifier.sh` ne rend aucune page de site et ne restaure pas
+  `precis/<langue>/figdata/` : la page se contrôle par `./build.sh --no-pdf`. Une modification
+  du seul module `precis/fr/figures/annexe_pib.py` ne fait rendre aucun livre
+  (`verifier_livres.livres_touches`), ce qui est exact — mais rien ne rend alors la page.
+- **Ligne « Source » et onglet « Sources ».** Le module remplace, pour l'affichage, le libellé
+  des bases, le périmètre et les réserves du catalogue de l'entrepôt par un texte pour le
+  lecteur, en français et en arabe (`PROVENANCE_LECTEUR`, comme `masse_salariale.py`) : ni nom
+  de colonne, ni consigne de filtrage, ni chemin de fiche dans la page rendue. À relire si le
+  catalogue change.
+- **Reste à faire, en amont.** Les colonnes `jonction`,
+  `source`, `base` et `annee_de_prix` des séries en volume n'existent qu'en français : les
+  infobulles de la page arabe les reprendront telles quelles. Divergence de 1962-1965 entre la Banque mondiale et la série des
+  Nations unies, et taux de 1970 : à départager sur pièces (rapports annuels de la BCT,
+  mémorandums de la Banque mondiale de 1978 et 1985 — `docs/pib-croissance-volume.md` de
+  l'entrepôt). Étiquettes à corriger :
+  `masse-salariale-ratios` (`base_pib: 2015`), `irpp-ratios` (`pib_cnat_MDT`, 2012-2014),
+  `masse-salariale-reconciliation` (« base 2010 »).
+- **Bibliographie.** `undata-sna` et `wb-wdi` sont promues au fonds commun
+  (`precis/{fr,ar}/references.json`) et retirées de `retraites/references.json` : l'onglet
+  « Sources » affiche leur titre et leur lien. `wb-wdi` est reprise à l'identique de la branche
+  de la compensation, qui la promeut aussi : à la fusion des deux branches, ne garder qu'une
+  entrée. `bct-ra` reste à remonter.
+- **Pied de page.** Le lien vers l'annexe est au pied de page des huit volumes de `master` ; le
+  neuvième volume (la compensation) arrive par une autre PR : y ajouter le même lien à sa
+  fusion.
+- **Arabe.** La page arabe n'existe pas encore ; les libellés arabes de la figure sont dans le
+  module et sont à relire avec la traduction de la page (« سلسلة مسلسلة » pour la série
+  enchaînée, « موصولة دون تصحيح » pour la série accolée, repris du catalogue de l'entrepôt).
+
+**Reste non établi** (note, § 5, L1 à L9) : comptes d'avant la base 1983, date d'entrée en
+service de celle-ci et profondeur de son recalcul ; CD de l'édition 2005-2009 ; méthode du
+recalcul 2010-2014 et toute série en base 2015 avant 2010 ; base du PIB dans la revue des
+dépenses publiques de 2020 ; origine des valeurs 2002-2004 du ministère des Finances ; PIB
+définitif en base 1997 pour 2018-2020 ; termes arabes de « rétropolation » et de « changement
+de base ». Supports : publications de l'INS et rapports de la BCT, hors *Journal officiel* —
+le registre `docs/recherches.yml` ne peut pas les porter sans extension de
+`scripts/recherches.py` ; la page porte des `TODO (documentaliste)` à la place d'ancres.
+
+**Arabe** : `precis/ar/annexe-pib.qmd` viendra de la traduction après fusion (`build.sh` saute
+la page absente). Ensuite, à la main : ajouter le lien d'annexe au pied de page des huit
+`_quarto.yml` arabes et à `precis/ar/index.qmd` s'il n'y est pas ; vérifier que les
+identifiants `{#…}` sont restés tels quels. Glossaire : la page ne peut pas ancrer le glossaire
+(engendré par livre) ; les notions de la note (§ 8) sont définies dans le texte et restent à
+verser par le terminologue quand un volume les emploiera.
 
 ## Ce qui traverse les livres
 

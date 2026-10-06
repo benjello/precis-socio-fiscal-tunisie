@@ -18,9 +18,9 @@ PRECIS_DIR="$ROOT_DIR/precis"
 LOCAL_SITE="$ROOT_DIR/local_site"
 
 LANGUAGES=(fr ar)
-BOOKS=(prestations_sociales retraites fiscalite remunerations_publiques cotisations_sociales caisses finances_locales marche_travail)
+BOOKS=(prestations_sociales retraites fiscalite remunerations_publiques cotisations_sociales caisses finances_locales marche_travail compensation)
 # Pages générales du site, posées directement sous precis/<langue>/ et rendues une à une.
-PAGES=(index a-propos)
+PAGES=(index a-propos annexe-pib)
 
 DO_PDF=true
 
@@ -169,6 +169,17 @@ for lang in "${LANGUAGES[@]}"; do
     fi
     if [[ -d "$LANG_DIR/${page}_files" ]]; then
       cp -r "$LANG_DIR/${page}_files" "$LOCAL_SITE/$lang/${page}_files"
+    fi
+  done
+
+  # Figures des pages générales (annexe sur le PIB) : `figtools.figure_tabs` écrit ses images
+  # dans `_fig/` et ses données téléchargeables dans `figdata/`, à côté de la page — comme
+  # dans un livre, où Quarto les copie lui-même dans `public/`. Une page isolée n'a pas de
+  # projet Quarto : on les copie ici, sans quoi l'image et le lien de téléchargement
+  # pointeraient dans le vide.
+  for dossier in _fig figdata; do
+    if [[ -d "$LANG_DIR/$dossier" ]]; then
+      cp -r "$LANG_DIR/$dossier" "$LOCAL_SITE/$lang/$dossier"
     fi
   done
 

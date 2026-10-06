@@ -6,9 +6,9 @@ versionné : c'est ici que les conventions vivent, pas dans la mémoire d'un ass
 
 ## Le dépôt en deux phrases
 
-Huit volumes bilingues — des livres Quarto, `precis/fr/<livre>/` et `precis/ar/<livre>/` — :
+Neuf volumes bilingues — des livres Quarto, `precis/fr/<livre>/` et `precis/ar/<livre>/` — :
 fiscalité, cotisations sociales, prestations sociales, retraites, caisses de sécurité sociale,
-rémunérations publiques, finances locales, marché du travail ; un glossaire bilingue
+rémunérations publiques, finances locales, marché du travail, compensation ; un glossaire bilingue
 engendré depuis `precis/glossaire.yml`, une bibliographie CSL-JSON, et des tableaux de paramètres
 engendrés depuis le dépôt `openfisca-tunisia`, qui porte aussi les retraites depuis sa version 0.93.
 
@@ -30,7 +30,7 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   rattrapage à la main. Conséquence pratique : **quand tu ajoutes un chapitre côté français, ajoute-le
   toi-même au `_quarto.yml` arabe**, une fois sa traduction livrée — sans quoi il ne sera servi dans
   aucune des deux langues. Un fichier malformé ou des chapitres qui dérivent sont attrapés par
-  `rendre-les-livres.yml`, qui rend les seize livres sur chaque PR.
+  `rendre-les-livres.yml`, qui rend les dix-huit livres sur chaque PR.
 - **Ne modifie pas les fichiers engendrés** : `_glossaire.qmd`, `translation_glossary.generated.md`,
   `precis/*/*/tables/*`.
 - **Aucune valeur isolée, aucune date, aucune URL sans source vérifiée.** Une case vide honnête vaut
@@ -74,6 +74,18 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   identifié ici ») et porte une ancre `<!-- RECHERCHE r-… : … -->` vers une fiche rejouable de
   `docs/recherches.yml` — requêtes, sources, couverture datée, résultat. `scripts/recherches.py`
   la vérifie (CI), la relance et l'élargit.
+- **Le budgétaire ne se mêle pas aux rapports extérieurs (FMI, Banque mondiale, OCDE) ni aux
+  évaluations économiques** : pas
+  dans le même tableau, pas sur le même plan, et jamais une étude sans sa méthode (qui, quelles
+  données, quel périmètre, quel calcul). Le budgétaire d'abord, en entonnoir ; les études ensuite,
+  titrées comme telles. Les superposer **sur un graphique** est permis quand elles sont censées
+  traiter des mêmes dispositifs, familles distinguées et ruptures expliquées.
+- **Tout PIB dit sa base, et s'il est rétropolé** ; si la source ne le dit pas, on l'écrit. Jamais
+  deux bases chaînées en silence : la série se trace par segments, le changement de base est une
+  rupture, et la rupture renvoie à l'annexe du site sur le PIB (`precis/fr/annexe-pib.qmd`).
+- **Les études citées sont récupérées** : le PDF de toute étude citée est rangé dans
+  `tunisia-data` (`data/raw/`, hors git, catalogué dans `sources/`). On ne cite pas de seconde
+  main ce qu'on peut obtenir.
 - **Aucun chiffre ponctuel isolé** : toute valeur vient avec sa vue d'évolution datée. Et dans un
   tableau de textes, la colonne de contenu donne le changement concret — article, avant → après —,
   sinon la ligne n'a rien à y faire.
@@ -221,7 +233,7 @@ scripts/verifier.sh [livre…]                                # glossaire, contr
 uv run python scripts/build_glossary.py                    # verrou de synchro du glossaire
 cd precis/fr/<livre> && uv run quarto render --to html     # zéro citation [?] non résolue
 uv run python scripts/check_pas_de_modele.py               # le précis ne parle pas du modèle
-./build.sh                                                  # les huit volumes, FR et AR
+./build.sh                                                  # les neuf volumes, FR et AR
 ```
 
 **Rends TOUS les livres que la PR touche, pas seulement celui qui l'occupe.** Aucun job de CI ne
