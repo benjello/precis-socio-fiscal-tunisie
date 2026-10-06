@@ -3116,3 +3116,23 @@ deux langues (comme les autres entrées du livre) :
 - [ ] Fonds commun, note complétée : `lf-2026` (art. 21, éd. AR p. 4235), `loi-87-83-lf-1988` (art. 76, p. 1635).
 - [ ] Doublon de clé à trancher : la LF 1991 (loi n° 90-111) porte `lf-1991` en fiscalité et `loi-90-111-lf-1991` en prestations sociales.
 - [ ] Le `dry-run` et le `controle-rangement` du workflow `biblio-zotero` restent à lancer après poussée de la branche (branche locale).
+
+## Passe « Annexe du site — le PIB et ses changements de base » (06/10/2026) — À REPORTER DANS ZOTERO
+
+Note documentaire : `docs/notes/annexe-pib.md`, § 7. Page : `precis/fr/annexe-pib.qmd`, qui lit
+`references.json`, `retraites/references.json` et `remunerations_publiques/references.json`.
+
+- [ ] Nouvelles, fonds commun `precis/{fr,ar}/references.json` (provisoires jusqu'au
+  rapatriement, feu vert requis) : `ins-changement-base-2015`, `ins-pib-base-2015-2010-2020`,
+  `imf-tunisia-art4-2010`. Reprises des ébauches de la note, à deux écarts près, imposés par
+  `push_biblio.py --verifier` : le champ `language` est retiré (non restitué par Zotero), et le
+  numéro du rapport du FMI (`number` : 10/282, non restitué) est porté en tête de la note.
+- [ ] `imf-tunisia-art4-2020` (rémunérations publiques) : c'est le rapport n° 21/44, dont le
+  titre imprimé est « 2021 Article IV Consultation » (février 2021), non « 2020 ».
+- [ ] `undata-sna`, `wb-wdi` (retraites), `bct-ra` (retraites, rémunérations publiques, marché du
+  travail) : à remonter au fonds commun ; `undata-sna` ne vise que le tableau 4.1, l'annexe
+  emploie aussi le tableau 1.1 ; `wb-wdi` gagnerait la mention des métadonnées du pays.
+- [ ] `minfin-indicateurs-fp` : URL générique, à préciser.
+- [ ] Les pages citées dans l'annexe sont celles des fichiers PDF, non les folios imprimés :
+  à convertir si l'on veut des folios.
+- [ ] Titres arabes des deux entrées de l'INS : à valider par le relecteur-ar.

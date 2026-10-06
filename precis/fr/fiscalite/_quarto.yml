@@ -13,7 +13,7 @@ book:
   repo-actions: [edit, issue]
   downloads: [pdf]
   page-footer:
-    center: "[Accueil](../index.html) · [À propos et contribuer](../a-propos.html) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)"
+    center: "[Accueil](../index.html) · [À propos et contribuer](../a-propos.html) · [Le PIB et ses changements de base](../annexe-pib.html) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)"
   chapters:
     - index.qmd
     - _impot_revenu.qmd

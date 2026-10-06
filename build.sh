@@ -20,7 +20,7 @@ LOCAL_SITE="$ROOT_DIR/local_site"
 LANGUAGES=(fr ar)
 BOOKS=(prestations_sociales retraites fiscalite remunerations_publiques cotisations_sociales caisses finances_locales marche_travail)
 # Pages générales du site, posées directement sous precis/<langue>/ et rendues une à une.
-PAGES=(index a-propos)
+PAGES=(index a-propos annexe-pib)
 
 DO_PDF=true
 

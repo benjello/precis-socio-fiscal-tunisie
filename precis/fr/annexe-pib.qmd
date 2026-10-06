@@ -1,0 +1,354 @@
+---
+title: "Le PIB et ses changements de base"
+subtitle: "Annexe commune aux volumes : en quelle base est un PIB, s'il est recalculé pour le passé, et comment lire une part du PIB"
+format:
+  html:
+    include-in-header: ../accueil.html
+    toc: true
+    toc-depth: 3
+    toc-title: "Sommaire"
+    tbl-cap-location: top
+bibliography:
+  - references.json
+  - retraites/references.json
+  - remunerations_publiques/references.json
+csl: precis.csl
+crossref:
+  tbl-title: "Tableau"
+  tbl-prefix: "tableau"
+  title-delim: " —"
+---
+
+[← Retour à l'accueil](index.html)
+
+<!-- Identifiants STABLES de cette page, auxquels les volumes renvoient (ne pas les renommer, ne pas les traduire) :
+     #sec-pib-pourquoi, #sec-pib-definition, #sec-pib-bases, #pib-base-1983, #pib-base-1997, #pib-base-2015,
+     #pib-base-2010, #sec-pib-ecarts, #pib-ecart-1983-1997, #pib-ecart-1997-2015, #pib-ecart-ratio,
+     #sec-pib-retropolation, #pib-series-accolees, #sec-pib-sources, #sec-pib-ruptures, #sec-pib-lire.
+     Matière : docs/notes/annexe-pib.md. -->
+
+## Pourquoi cette annexe {#sec-pib-pourquoi}
+
+Les volumes du précis rapportent souvent une grandeur au produit intérieur brut (PIB) : le rendement d'un impôt, la masse salariale de l'État, les cotisations d'un régime, les recettes des communes. Une telle part ne se lit qu'en connaissant le PIB qui la porte, car le PIB d'une même année n'a pas une valeur unique : les comptes nationaux tunisiens ont changé deux fois de base, et chaque changement a relevé le niveau du PIB, de 9 à 11 % la première fois, de 5 à 6 % la seconde (voir [les écarts de niveau](#sec-pib-ecarts)).
+
+L'Institut national de la statistique (INS) le dit lui-même en présentant sa base la plus récente : « les ratios usuels du compte des administrations publiques, comme le déficit budgétaire, la pression fiscale et le taux d'endettement sont mécaniquement tirés vers le bas par le relèvement du niveau du PIB » [@ins-changement-base-2015, p. 2].
+
+Cette annexe dit donc quelles bases se sont succédé, de combien elles s'écartent, jusqu'où chacune a été recalculée pour le passé, quel PIB emploie chaque source que le précis cite, et comment le précis signale un changement de base dans une série. Les volumes y renvoient chaque fois qu'ils signalent une rupture de série.
+
+Les montants sont en millions de dinars courants, abrégés MD.
+
+## Ce qu'est une base, et ce qu'elle n'est pas {#sec-pib-definition}
+
+### La base des comptes
+
+L'INS définit ainsi la base : « on appelle base un ensemble fixé de concepts, nomenclatures, et méthodes mis en œuvre pour un exercice ou une année déterminée […] et qui seront répliqués pour l'élaboration des comptes économiques des années qui suivent » [@ins-cnat-2015, éd. 2015-2020, p. 11]. Il ajoute qu'« au fur et à mesure qu'on s'écarte de l'année de base, la qualité des comptes nationaux se dégrade », ce qui conduit à en changer : l'opération est dite « "rebasage" ou "changement de base" » [@ins-cnat-2015, éd. 2015-2020, p. 3 et 11].
+
+Quelques notions servent dans toute l'annexe :
+
+- le **PIB aux prix courants**, ou PIB nominal, est la valeur de la production de l'année aux prix de cette même année ; c'est lui qui sert de dénominateur aux parts du PIB ;
+- le **système de comptabilité nationale** (SCN) est la norme internationale des Nations unies, dans ses versions de 1968, 1993 et 2008 ; chaque base tunisienne en applique une ;
+- un **changement de base** modifie le *niveau* du PIB aux prix courants, parce qu'il change les concepts, les nomenclatures, les sources et les méthodes d'évaluation ;
+- la **rétropolation** désigne ici le recalcul des années passées dans la nouvelle base ; l'INS n'emploie pas ce mot et écrit : « Lorsque Statistiques Tunisie procède à un changement de base, de nouvelles estimations sont publiées pour le passé » [@ins-cnat-2015, éd. 2015-2020, p. 10] ;
+- une **rupture de série** est l'année où une série passe d'une base à une autre sans avoir été recalculée : son niveau change sans que l'économie ait changé d'autant.
+
+L'INS ne reconnaît que trois bases : « Depuis son instauration dans les années quatre-vingt avec la première base 1983, le Système de Comptabilité Nationale Tunisien (SCNT) aura connu deux changements de base : 1997 et maintenant 2015 » [@ins-cnat-2015, éd. 2015-2020, p. 11].
+
+### L'année des prix n'est pas une base {#pib-base-2010}
+
+Les comptes sont aussi publiés en volume, c'est-à-dire aux prix d'une année de référence, pour mesurer la croissance hors variation des prix. Cette **année de prix** change plus souvent que la base, et elle ne modifie pas le PIB aux prix courants. Quatre années de prix se rencontrent dans les sources : 1990, 2005, 2010 et 2015.
+
+| Année de prix | Base des comptes à laquelle elle appartient | Où elle est attestée |
+|---|---|---|
+| 1990 | base 1983 | comptes « aux prix courants et aux prix constants de l'année de référence 1990 » [@ins-cnat-2015, éd. 2001-2005, p. 3] ; « PIB (aux prix constants de 1990) » des rapports annuels de la Banque centrale de Tunisie (BCT) jusqu'à celui de 2008 [@bct-ra, rapport 2008, p. 72] |
+| 2005 | base 1997 | comptes « aux prix de l'année précédente », auxquels s'ajoutent « des comptes aux prix constants d'une année fixe (année 2005) » [@ins-cnat-2015, éd. 2005-2009, p. 3] ; la mention figure dans les éditions 2005-2009 à 2009-2013 |
+| 2010 | base 1997 | « Aux prix constants de 2010 » dans les rapports annuels de la BCT de 2016 à 2020 [@bct-ra, rapport 2016, p. 116, et rapport 2020, p. 142] ; Fonds monétaire international (FMI), rapport de février 2021 ; aucune édition des *Comptes de la nation* ne porte la mention « base 2010 » |
+| 2015 | base 2015 | « Aux prix constants de 2015 » à partir du rapport annuel 2021 de la BCT [@bct-ra, rapport 2021, p. 136] |
+
+: Les années de prix des séries en volume, et la base à laquelle chacune appartient {#tbl-pib-annees-prix}
+
+::: {.callout-note}
+## La « base 2010 » n'est pas une base du PIB aux prix courants
+
+Il n'existe pas de PIB nominal « base 2010 » distinct. Un PIB présenté « aux prix de 2010 » ou « en base 2010 » est, pour ses niveaux aux prix courants, un PIB de la **base 1997**. Le FMI l'écrit dans son rapport de février 2021 : « *The National Institute of Statistics (NSI) publishes annual and quarterly GDP by production in current and constant (2010) prices according to the System of National Accounts 1993 (SNA 1993)* » [@imf-tunisia-art4-2020, p. 91] — l'INS publie le PIB aux prix courants et aux prix constants de 2010 selon le système de comptabilité nationale de 1993, celui de la base 1997.
+
+Dans le rapport annuel 2018 de la BCT, la mention « base 2010 » désigne à la fois la base de l'indice des prix et l'année de prix du PIB en volume [@bct-ra, rapport 2018, p. 95].
+:::
+
+<!-- TODO (bibliographe) : la clé imf-tunisia-art4-2020 désigne le rapport n° 21/44, dont le titre imprimé est « 2021 Article IV Consultation » (février 2021) et non « 2020 » ; à corriger dans remunerations_publiques/references.json (docs/notes/annexe-pib.md, § 7.1). -->
+
+## Les bases successives {#sec-pib-bases}
+
+| Base | Système de comptabilité nationale | Première publication | Années publiées par l'INS dans cette base | Recalcul du passé par l'INS |
+|---|---|---|---|---|
+| Avant 1983 | n'est pas établi ici | n'est pas établie ici | des agrégats existent, aux prix de 1957, 1960, 1966, 1972 et 1980 ; aucune base n'y est nommée | — |
+| **1983** | SCN 1968 | la date d'entrée en service de la base 1983 n'est pas établie ici ; la plus ancienne édition connue ici est le volume n° 11, 2001-2005, de décembre 2006 | éditions 2001-2005 à 2004-2008 ; chiffres transmis aux Nations unies de 1992 à 2009 | étendue vers le passé non établie ici |
+| **1997** | SCN 1993 | adoptée « début 2010 » selon le FMI ; première édition : volume n° 15, 2005-2009, de décembre 2010 | éditions 2005-2009 à 2013-2017 ; chiffres transmis aux Nations unies de 1997 à 2017 ; comptes tenus jusqu'en 2020 | **jusqu'en 1997** |
+| **2015** | SCN 2008 | communiqué du 15 août 2021 ; première édition : 2015-2020 (« Edition 2022 ») | éditions 2015-2020 à 2021-2025 ; chiffres transmis aux Nations unies de 2015 à 2023 | **jusqu'en 2010** |
+
+: Les bases des comptes nationaux tunisiens {#tbl-pib-bases}
+
+Sources du tableau : [@ins-cnat-2015 ; @ins-changement-base-2015 ; @ins-pib-base-2015-2010-2020 ; @imf-tunisia-art4-2010 ; @undata-sna ; @bct-ra].
+
+<!-- TODO (documentaliste) : comptes d'avant la base 1983 (producteur, système, bases nommées ou non), date et publication d'entrée en service de la base 1983, volumes n° 1 à 10 des Comptes de la nation, profondeur de son recalcul vers le passé — docs/notes/annexe-pib.md, § 5, lacunes L1 à L3 et recherche R1. Le registre docs/recherches.yml n'admet que des requêtes sur le Journal officiel : pas de fiche possible en l'état. -->
+
+### La base 1983 {#pib-base-1983}
+
+Les éditions 2001-2005 à 2004-2008 des *Comptes de la nation* portent le bandeau « Base 1983 ». Elles suivent le système de 1968 : « Les comptes nationaux présentés dans ce volume respectent les concepts et les définitions du système des Nations Unies de 1968 (SCN 68) » [@ins-cnat-2015, éd. 2001-2005, p. 8]. Les volumes y sont aux prix de 1990. L'activité des petites unités y est mesurée par « une enquête quinquennale (1997, 2002…) sur les entreprises de moins de 6 salariés (secteur non structuré) », à côté de l'enquête annuelle auprès des entreprises « de plus de 6 salariés » [@ins-cnat-2015, éd. 2001-2005, p. 8].
+
+La date d'entrée en service de cette base n'est pas établie ici. L'INS parle d'une « instauration dans les années quatre-vingt » [@ins-cnat-2015, éd. 2015-2020, p. 11]. Le rapport annuel 1992 de la BCT signale de son côté qu'« à partir de 1990, les taux d'accroissement de la valeur ajoutée en termes réels sont calculés selon le nouveau système des Comptes Nationaux qui a été harmonisé avec celui de l'Organisation des Nations-Unies » [@bct-ra, rapport 1992, p. 52] ; aucun de ces deux textes n'écrit que ce nouveau système est la base 1983.
+
+L'étendue de son recalcul vers le passé n'est pas établie non plus. Les chiffres que la Tunisie a transmis aux Nations unies forment, pour le système de 1968, trois séries : 1960-1969, 1970-1997 et 1992-2009 [@undata-sna]. La dernière est au niveau des éditions en base 1983 ; elle coïncide à 0,01 % près avec la deuxième sur leurs années communes, de 1992 à 1997. La source ne dit pas si la série 1970-1997 est la base 1983 recalculée jusqu'en 1970, ou une série antérieure dont la base 1983 n'aurait pas modifié le niveau.
+
+### Le passage à la base 1997 {#pib-base-1997}
+
+La base 1997 est publiée pour la première fois dans l'édition 2005-2009 des *Comptes de la nation*, volume n° 15, de décembre 2010, sous le titre « Nouveau système de comptabilité nationale tunisien — Méthodologie et principaux résultats ». L'INS y écrit avoir entrepris « la révision du système de comptabilité nationale tunisien afin de l'adapter au SCN93. Cette adaptation a été menée sur la base de l'année 1997 et donné lieu au SCNT97 » [@ins-cnat-2015, éd. 2005-2009, p. 11].
+
+Selon l'INS, la nouvelle base intègre « les nouveaux concepts et définitions du SCN93 des Nations Unies, les nouvelles nomenclatures tunisiennes des activités et des produits (NAT1996 et CTP2002), les nouvelles enquêtes économiques, les estimations actualisées des champs non couverts par des enquêtes directes et la 5ème Edition du manuel de la balance des paiements du FMI » [@ins-cnat-2015, éd. 2005-2009, p. 3]. Les volumes sont désormais calculés aux prix de l'année précédente.
+
+Le FMI, qui rapporte les données des autorités tunisiennes, date l'adoption du début de 2010 et en mesure l'effet : « *In early 2010, the Tunisian authorities adopted a new national accounts system for the period 1997–2008 to comply with the 1993 United Nations national accounts system. […] The total effect of the introduction of new system has been an increase of around 10 percent in nominal GDP figures each year* » [@imf-tunisia-art4-2010, annexe 5, p. 39]. Son rapport donne les deux séries, l'ancienne et la nouvelle, de 2002 à 2008.
+
+La BCT adopte la nouvelle base dans son rapport annuel 2009 : le PIB de 2008 y vaut 55 297 MD, contre 50 325 MD dans le rapport annuel 2008 [@bct-ra, rapport 2008, p. 72, et rapport 2009, p. 73].
+
+La dernière édition en base 1997 est celle de 2013-2017 (« Edition 2019 »). Les comptes dans cette base ont néanmoins été tenus jusqu'en 2020 : le communiqué de 2021 compare, pour 2019 et 2020, la croissance, le déficit et la dette « dans l'ancienne base » et dans la nouvelle [@ins-changement-base-2015], et le rapport annuel 2020 de la BCT donne les PIB de 2018 à 2020 à ce niveau [@bct-ra, rapport 2020, p. 59].
+
+<!-- TODO (documentaliste) : contenu du CD de l'édition 2005-2009 (comptes 1997-2007 en base 1997) ; date exacte et support de la diffusion de « début 2010 » ; PIB définitif en base 1997 pour 2018-2020 — docs/notes/annexe-pib.md, § 5, lacunes L4, L6 et L8. -->
+
+### Le passage à la base 2015 {#pib-base-2015}
+
+La base 2015 est rendue publique par un communiqué de l'INS daté du 15 août 2021, « Les Comptes Nationaux changent de base », accompagné d'une note explicative de quatre pages et d'un classeur de données [@ins-changement-base-2015 ; @ins-pib-base-2015-2010-2020]. L'édition 2015-2020 des *Comptes de la nation*, en deux volumes (« Edition 2022 »), suit ; ses travaux « ont été lancés dès 2017 et se sont étalés sur cinq années » [@ins-cnat-2015, éd. 2015-2020, p. 3].
+
+L'INS chiffre le relèvement pour l'année de base : « Le PIB se situe pour 2015 à 89 802,2 millions de dinars, soit une révision à la hausse de 5 113 millions de dinars (ou +6 %) par rapport à son niveau dans les comptes de la base 1997, dont 4 781,8 millions de dinars liés aux activités marchandes et seulement 331,2 millions […] à l'activité non marchande » [@ins-changement-base-2015, p. 1]. Du côté des emplois du PIB, la consommation finale contribue à cette réévaluation pour 3,2 points, la formation brute de capital fixe pour 2,4 points et le solde extérieur pour − 0,2 point [@ins-changement-base-2015, p. 2].
+
+Selon l'INS, le changement tient à cinq ordres de causes [@ins-changement-base-2015, p. 1-4 ; @ins-cnat-2015, éd. 2015-2020, p. 10-21] :
+
+- le passage au SCN 2008, dont « l'impact net […] dans la réévaluation du PIB de 2015 est relativement modeste » : la recherche-développement et l'armement comptés en investissement, la production des banques, de la banque centrale et des assurances, le rattachement de la production agricole à son exercice ;
+- les nomenclatures d'activités et de produits de 2009 ;
+- les sources : le répertoire national des entreprises et les liasses fiscales, à côté de l'enquête annuelle ;
+- l'économie informelle, dont la définition est formalisée et dont les unités non connues de l'administration, auparavant estimées de façon « exogène et plutôt "grossière" », le sont désormais à partir de l'enquête sur l'emploi ;
+- les activités illégales : les comptes « intègrent partiellement, et pour la première fois, une estimation de la production illégale liée à la contrebande et au trafic de stupéfiants ».
+
+La note résume l'ensemble : « peu de changements conceptuels, […] quasi maintien des nomenclatures, mais davantage […] un effort particulier pour améliorer les méthodes d'évaluation » [@ins-changement-base-2015, p. 1].
+
+## Les écarts de niveau entre bases {#sec-pib-ecarts}
+
+Une année publiée dans deux bases a deux PIB. Ces années de recouvrement mesurent ce que le changement de base fait au niveau : treize années pour le passage de la base 1983 à la base 1997, huit pour le passage de la base 1997 à la base 2015.
+
+<!-- TODO (rédacteur) : figure des niveaux par base quand la série du PIB par base sera versée dans l'entrepôt -->
+
+### De la base 1983 à la base 1997 : 1997-2009 {#pib-ecart-1983-1997}
+
+| Année | Base 1983 (MD) | Base 1997 (MD) | Écart (MD) | Écart (%) |
+|---|---:|---:|---:|---:|
+| 1997 | 20 898,0 | 22 943,9 | 2 045,9 | 9,79 |
+| 1998 | 22 561,0 | 24 827,6 | 2 266,6 | 10,05 |
+| 1999 | 24 672,0 | 27 215,9 | 2 543,9 | 10,31 |
+| 2000 | 26 651,0 | 29 433,3 | 2 782,3 | 10,44 |
+| 2001 | 28 757,0 | 31 746,5 | 2 989,5 | 10,40 |
+| 2002 | 29 924,0 | 32 901,4 | 2 977,4 | 9,95 |
+| 2003 | 32 170,3 | 35 373,3 | 3 203,0 | 9,96 |
+| 2004 | 35 216,8 | 38 838,6 | 3 621,8 | 10,28 |
+| 2005 | 37 751,2 | 41 871,0 | 4 119,8 | 10,91 |
+| 2006 | 41 384,7 | 45 756,2 | 4 371,5 | 10,56 |
+| 2007 | 45 638,1 | 49 857,5 | 4 219,4 | 9,25 |
+| 2008 | 50 440,5 | 55 267,8 | 4 827,3 | 9,57 |
+| 2009 | 53 419,1 | 58 677,2 | 5 258,1 | 9,84 |
+
+: PIB aux prix courants dans la base 1983 et dans la base 1997, années publiées dans les deux bases, 1997-2009 {#tbl-pib-ecart-1983-1997}
+
+Source : chiffres de l'INS transmis aux Nations unies, séries du système de 1968 (1992-2009) et du système de 1993 (1997-2017) [@undata-sna]. L'écart en pourcentage est rapporté à la base 1983. Les années 1997 à 2004 de la base 1997 sont recalculées (voir [la rétropolation](#sec-pib-retropolation)). Pour 2001, un autre tableau de la même source porte 28 729 MD en base 1983. Dans les seules éditions des *Comptes de la nation*, le recouvrement se limite à 2005-2008, avec les mêmes écarts [@ins-cnat-2015].
+
+<!-- TODO (bibliographe) : undata-sna ne vise que le tableau 4.1 ; l'annexe emploie aussi le tableau 1.1 (https://data.un.org/Data.aspx?d=SNA&f=group_code%3a101%3bcountry_code%3a788%3bfiscal_year%3a1997, consulté le 6 octobre 2026). Remonter undata-sna, wb-wdi et bct-ra au fonds commun (docs/notes/annexe-pib.md, § 7.1). -->
+
+### De la base 1997 à la base 2015 : 2010-2017 {#pib-ecart-1997-2015}
+
+| Année | Base 1997 (MD) | Base 2015 (MD) | Écart (MD) | Écart (%) | Valeur en base 2015 |
+|---|---:|---:|---:|---:|---|
+| 2010 | 63 054,8 | 66 139,7 | 3 084,9 | 4,89 | recalculée |
+| 2011 | 64 492,2 | 67 747,3 | 3 255,1 | 5,05 | recalculée |
+| 2012 | 70 354,4 | 73 895,4 | 3 541,0 | 5,03 | recalculée |
+| 2013 | 75 144,1 | 79 096,6 | 3 952,5 | 5,26 | recalculée |
+| 2014 | 80 865,5 | 85 345,7 | 4 480,2 | 5,54 | recalculée |
+| 2015 | 84 689,2 | 89 802,2 | 5 113,0 | 6,04 | année de base |
+| 2016 | 89 792,2 | 95 286,9 | 5 494,7 | 6,12 | établie directement |
+| 2017 | 96 324,7 | 102 011,5 | 5 686,8 | 5,90 | établie directement |
+
+: PIB aux prix courants dans la base 1997 et dans la base 2015, années publiées dans les deux bases, 2010-2017 {#tbl-pib-ecart-1997-2015}
+
+Source : pour la base 1997, la dernière édition des *Comptes de la nation* qui porte l'année [@ins-cnat-2015] ; pour la base 2015, le classeur de l'INS du 15 août 2021 pour 2010-2014 [@ins-pib-base-2015-2010-2020] et les éditions pour 2015-2017 [@ins-cnat-2015]. L'écart en pourcentage est rapporté à la base 1997. L'écart de 2015, 5 113 MD, est celui que publie le communiqué de l'INS.
+
+Le tableau s'arrête à 2017, dernière année d'une édition en base 1997. Pour 2018 à 2020, le PIB de cette base n'est connu que par des estimations de la BCT [@bct-ra, rapport 2020, p. 59] et du FMI [@imf-tunisia-art4-2020, p. 33], identiques pour 2018 et 2019 (106 242 et 114 939 MD) et différentes pour 2020 (110 295 MD pour la BCT, 111 251 MD pour le FMI) : aucun écart n'en est tiré ici.
+
+### L'écart n'est pas constant
+
+L'écart entre la base 1983 et la base 1997 varie de 9,3 % à 10,9 % selon l'année ; celui entre la base 1997 et la base 2015, de 4,9 % à 6,1 %, et il tend à croître de 2010 à 2016. **On ne passe donc pas d'une base à l'autre par un coefficient unique** : un PIB ne se convertit que par les valeurs publiées dans les deux bases, année par année, et il n'existe aucune année commune aux bases 1983 et 2015.
+
+Ces écarts ne se confondent pas avec les révisions ordinaires. À l'intérieur d'une même base, le PIB d'une année bouge de moins de 0,9 % d'une édition à l'autre — au plus 0,83 % pour 2021, 0,79 % pour 2022 et 0,77 % pour 2010 [@ins-cnat-2015]. Dans chaque édition, les comptes sont « définitifs » pour les trois premières années, « semi-définitifs » pour la quatrième et « provisoires » pour la cinquième [@ins-cnat-2015, éd. 2005-2009, p. 3].
+
+### Ce que l'écart fait à une part du PIB {#pib-ecart-ratio}
+
+À numérateur inchangé, une part du PIB baisse quand le PIB est relevé :
+
+$$
+p' = \frac{p}{1 + e}
+$$
+
+où $p$ est la part dans l'ancienne base, $p'$ la part dans la nouvelle base et $e$ l'écart relatif entre les deux PIB de l'année, lu dans les deux tableaux qui précèdent.
+
+| Une grandeur qui vaut 5 % du PIB… | …vaut, la même année | Soit |
+|---|---|---|
+| en base 1983, en 1997 | 4,55 % du PIB en base 1997 | − 0,45 point |
+| en base 1983, en 2005 | 4,51 % du PIB en base 1997 | − 0,49 point |
+| en base 1997, en 2010 | 4,77 % du PIB en base 2015 | − 0,23 point |
+| en base 1997, en 2015 | 4,72 % du PIB en base 2015 | − 0,28 point |
+| en base 1983, en 1997, portée en base 2015 | non calculable : aucune année n'est publiée dans les bases 1983 et 2015 | — |
+
+: Effet d'un changement de base sur une part du PIB, à numérateur inchangé {#tbl-pib-ecart-ratio}
+
+L'effet croît avec la taille de la grandeur. Sur une grandeur de l'ordre de 15 % du PIB, le changement de 2015 déplace la part de 0,8 à 0,9 point ; sur une grandeur de l'ordre de 85 % du PIB, d'environ 5 points — c'est l'exemple de la dette publique que donne l'INS (voir [comment lire une part du PIB](#sec-pib-lire)).
+
+## La rétropolation : jusqu'où chaque base a été recalculée {#sec-pib-retropolation}
+
+### Ce que l'INS a recalculé
+
+**La base 1997 est recalculée jusqu'en 1997.** L'édition 2005-2009 annonce que « le CD accompagnant ce volume contient la série des comptes 1997-2007 élaborées selon le nouveau système SCNT97 » [@ins-cnat-2015, éd. 2005-2009, p. 3], et le FMI décrit « *a revised national accounts series covering the period 1997–2009 based on SNA 1993 (instead of, as before, SNA 1968)* » [@imf-tunisia-art4-2010, p. 48]. Les valeurs de 1997 à 2004, que les éditions imprimées ne reprennent pas, sont celles de la série transmise aux Nations unies [@undata-sna]. Aucune année antérieure à 1997 n'est publiée dans cette base.
+
+**La base 2015 est recalculée jusqu'en 2010.** Ce recalcul ne figure pas dans une édition des *Comptes de la nation* : l'édition 2015-2020 « couvre les six années pour lesquelles les comptes sont disponibles en base 2015 » [@ins-cnat-2015, éd. 2015-2020, p. 3]. Il est dans le classeur joint au communiqué du 15 août 2021, qui donne le PIB et ses emplois de 2010 à 2020, aux prix courants et aux prix de l'année précédente [@ins-pib-base-2015-2010-2020]. Les Nations unies n'ont reçu la base 2015 qu'à partir de 2015 [@undata-sna].
+
+| Année | PIB aux prix courants, base 2015 (MD) | Statut |
+|---|---:|---|
+| 2010 | 66 139,7 | recalculé |
+| 2011 | 67 747,3 | recalculé |
+| 2012 | 73 895,4 | recalculé |
+| 2013 | 79 096,6 | recalculé |
+| 2014 | 85 345,7 | recalculé |
+| 2015 | 89 802,2 | année de base |
+| 2016 | 95 286,9 | établi directement |
+| 2017 | 102 011,5 | établi directement |
+| 2018 | 112 985,5 | établi directement |
+| 2019 | 122 578,4 | établi directement, révisé depuis |
+| 2020 | 119 526,4 | établi directement, révisé depuis |
+
+: PIB aux prix courants en base 2015, tel que publié par l'INS le 15 août 2021, 2010-2020 {#tbl-pib-base-2015-retropole}
+
+Source : [@ins-pib-base-2015-2010-2020]. Les valeurs de 2019 et de 2020 sont celles du 15 août 2021 ; les éditions suivantes des *Comptes de la nation* les portent à 122 969,3 et 119 502,1 MD [@ins-cnat-2015].
+
+La méthode de ce recalcul de 2010 à 2014 n'est pas établie ici, et aucune publication identifiée ne donne la base 2015 avant 2010.
+
+<!-- TODO (documentaliste) : note méthodologique de la base 2015 décrivant le recalcul 2010-2014 (annoncée par la note du 15 août 2021, p. 3, n. 1), et toute série en base 2015 antérieure à 2010 — docs/notes/annexe-pib.md, § 5, lacune L5 et recherche R2. Le registre docs/recherches.yml n'admet que des requêtes sur le Journal officiel : pas de fiche possible en l'état. -->
+
+Il s'ensuit qu'**aucune série du PIB tunisien n'est homogène de 1990 à aujourd'hui** : la base 1983 s'arrête en 2009, la base 1997 court de 1997 à 2020, la base 2015 commence en 2010.
+
+### Les séries qui accolent les bases {#pib-series-accolees}
+
+Deux séries longues que le précis emploie ou cite ne sont pas recalculées : elles mettent bout à bout des segments de bases différentes. Leur niveau change donc à la jonction, sans que l'économie ait changé d'autant.
+
+Du côté des institutions tunisiennes, le PIB qui sert de dénominateur aux indicateurs des finances publiques du ministère des Finances [@minfin-indicateurs-fp] change de niveau en 1997 et en 2010, et non en 2015 : ses valeurs de 2010 à 2014 sont le recalcul de l'INS en base 2015. Il porte deux changements de niveau supplémentaires, en 2002 et en 2005, parce que ses valeurs de 2002 à 2004 ne se rattachent à aucune base (voir [le tableau des sources](#tbl-pib-sources-tn)).
+
+Du côté des sources extérieures, la série du PIB en monnaie nationale de la Banque mondiale [@wb-wdi] est accolée aux mêmes années, 1997 et 2010 ; elle tient les années 2002 à 2004 en base 1997.
+
+| Année de jonction | Passage | Changement de niveau à la jonction | Séries concernées |
+|---|---|---:|---|
+| 1997 | de la base 1983 à la base 1997 | + 9,8 % | ministère des Finances ; Banque mondiale |
+| 2002 | de la base 1997 à des valeurs propres au ministère | − 2,4 % | ministère des Finances |
+| 2005 | de ces valeurs propres à la base 1997 | + 3,2 % | ministère des Finances |
+| 2010 | de la base 1997 à la base 2015 recalculée | + 4,9 % | ministère des Finances ; Banque mondiale |
+
+: Les années où les séries accolées changent de niveau {#tbl-pib-jonctions}
+
+Ces pourcentages mesurent l'écart entre les deux niveaux du PIB à la jonction, non un taux de croissance : ils s'ajoutent, cette année-là, à la croissance du PIB.
+
+## Quel PIB dans quelle source {#sec-pib-sources}
+
+Les deux tableaux qui suivent séparent les institutions tunisiennes, qui produisent ou emploient les comptes, des organisations extérieures, qui les reprennent. Quand une source ne nomme pas sa base, le tableau le dit et indique à quelle base ses valeurs coïncident.
+
+### Les institutions tunisiennes
+
+| Source | Années ou publications | Base | Recalculé pour le passé ? |
+|---|---|---|---|
+| **INS**, *Comptes de la nation* [@ins-cnat-2015] | éditions 2001-2005 à 2004-2008 | base 1983, nommée par la source | non |
+| | éditions 2005-2009 à 2013-2017 | base 1997, nommée par la source | non dans les éditions ; les années 1997-2004 sont recalculées à part |
+| | éditions 2015-2020 à 2021-2025 | base 2015, nommée par la source | non |
+| **INS**, classeur du 15 août 2021 [@ins-pib-base-2015-2010-2020] | 2010-2020 | base 2015, nommée par la source | oui pour 2010-2014 |
+| **Ministère des Finances**, indicateurs des finances publiques [@minfin-indicateurs-fp] | 1986-1996 | base non précisée par la source ; les valeurs coïncident avec la série 1970-1997 transmise aux Nations unies | — |
+| | 1997-2001 et 2005-2008 | base non précisée par la source ; les valeurs coïncident avec la base 1997 | oui pour 1997-2001 |
+| | 2002-2004 | base non précisée par la source ; les valeurs — 32 112,0, 34 630,0 et 37 601,2 MD — ne coïncident avec aucune base : de 2,1 à 3,2 % sous la base 1997, environ 7 % au-dessus de la base 1983 | n'est pas établi ici |
+| | 2009 | base non précisée par la source ; la valeur, 58 883,3 MD, est proche de celle de l'édition 2006-2010 en base 1997 (58 890,3 MD), ramenée ensuite à 58 677,2 MD | — |
+| | 2010-2014 | base non précisée par la source ; les valeurs coïncident, à 0,1 MD près, avec le recalcul de l'INS en base 2015 | oui |
+| | 2015-2024 | base non précisée par la source ; les valeurs coïncident avec la base 2015 | non |
+| | 2025 | estimation propre au ministère : 172 614,0 MD, contre 171 642,1 MD dans l'édition 2021-2025 de l'INS | — |
+| **BCT**, rapports annuels [@bct-ra] | jusqu'au rapport 2008 | base 1983, volumes aux prix de 1990 | — |
+| | rapports 2009 à 2020 | base 1997 (« Nouveau Système des Comptes Nationaux »), volumes aux prix de l'année précédente puis aux prix de 2010 | — |
+| | rapports 2021 et suivants | base 2015, volumes aux prix de 2015 | — |
+
+: Le PIB employé par les institutions tunisiennes {#tbl-pib-sources-tn}
+
+Le ministère des Finances ne publie pas le PIB qu'il emploie : celui-ci se déduit du déficit budgétaire, que ses indicateurs donnent à la fois en dinars et en pourcentage du PIB.
+
+<!-- TODO (documentaliste) : origine des valeurs 2002-2004 du PIB du ministère des Finances (lois de finances et rapports sur le budget 2003-2006, budgets économiques) — docs/notes/annexe-pib.md, § 5, lacune L7. -->
+<!-- TODO (bibliographe) : préciser l'URL de minfin-indicateurs-fp, aujourd'hui générique (docs/notes/annexe-pib.md, § 7.1). -->
+
+### Les organisations extérieures
+
+Chacune reprend les chiffres de l'INS, selon sa méthode propre :
+
+- les **Nations unies** publient les chiffres que leur transmet l'INS, rangés en séries qui portent le nom du système de comptabilité nationale suivi, non celui de la base ;
+- la **Banque mondiale** publie, dans ses indicateurs du développement dans le monde, une seule série longue du PIB en monnaie nationale, formée de segments successifs ;
+- le **FMI** publie, dans ses rapports de consultation au titre de l'article IV, des tableaux établis par ses services à partir des données des autorités tunisiennes.
+
+| Source | Années | Base | Recalculé pour le passé ? |
+|---|---|---|---|
+| **Nations unies**, comptes nationaux officiels des pays [@undata-sna] | 1960-1969 ; 1970-1997 ; 1992-2009 | « SNA 1968 » ; base non précisée par la source ; la série 1992-2009 coïncide avec la base 1983 | n'est pas établi ici |
+| | 1997-2017 | « SNA 1993 » ; base non précisée par la source ; les valeurs coïncident avec la base 1997 | oui pour 1997-2004 |
+| | 2015-2023 | « SNA 2008 » ; base non précisée par la source ; les valeurs coïncident avec la base 2015 | non |
+| **Banque mondiale**, indicateurs du développement dans le monde, PIB en monnaie nationale courante, mise à jour du 13 juillet 2026 [@wb-wdi] | 1961-1969 | base non précisée par la source ; valeurs proches de la série 1960-1969 des Nations unies, sans coïncider avec elle | — |
+| | 1970-1996 | base non précisée par la source ; les valeurs coïncident avec la série 1970-1997 des Nations unies, sauf en 1983 et 1984 (5 668,1 et 6 412,4 MD, contre 5 497,4 et 6 240,0 MD) | — |
+| | 1997-2009 | base non précisée par la source ; les valeurs coïncident avec la base 1997 | oui pour 1997-2004 |
+| | 2010-2024 | année de base déclarée : 2015 ; les valeurs coïncident avec la base 2015 | oui pour 2010-2014 |
+| **Banque mondiale**, rapports sur la Tunisie [@wb-tunisia-per-2020] | selon le rapport | base non précisée par la source ; n'est pas établie ici | — |
+| **FMI**, rapport n° 10/282, consultation de 2010 [@imf-tunisia-art4-2010, annexe 5, p. 39] | 2002-2008, deux séries | base 1983 (« *Old GDP* », volumes aux prix de 1990) et base 1997 (« *New GDP* ») | oui, 1997-2008 |
+| **FMI**, rapport n° 21/44, février 2021 [@imf-tunisia-art4-2020, p. 33 et 91] | 2017-2025 | base 1997 (SCN 1993), volumes aux prix de 2010 ; PIB nominal de 95 865, 106 242, 114 939 et 111 251 MD de 2017 à 2020 | non |
+
+: Le PIB employé par les organisations extérieures {#tbl-pib-sources-ext}
+
+Les métadonnées que la Banque mondiale attache à la Tunisie déclarent 2015 pour année de base des comptes nationaux, et le système de comptabilité nationale de 1993 pour méthode [@wb-wdi].
+
+<!-- TODO (documentaliste) : mention de la base du PIB dans la revue des dépenses publiques de la Banque mondiale de 2020 — docs/notes/annexe-pib.md, § 5, lacune L6. -->
+
+## Comment le précis signale une rupture de série {#sec-pib-ruptures}
+
+Quand une figure ou un tableau rapporte une grandeur au PIB, le précis suit cinq règles :
+
+1. **La base est nommée.** La légende ou la note dit dans quelle base est le PIB, et s'il est recalculé pour le passé ; quand il ne l'est pas, ou quand la source ne précise pas sa base, elle le dit.
+2. **Les séries sont tracées par segments de base, jamais chaînées.** Aucun raccord n'est calculé entre deux bases : l'écart entre elles n'étant pas constant, un coefficient de passage fabriquerait des valeurs qu'aucune source ne publie.
+3. **Le changement de base est marqué.** Un trait vertical signale l'année où la série change de base ; la légende renvoie à cette annexe.
+4. **Une année publiée dans deux bases porte deux points**, chacun rapporté au PIB de sa propre base.
+5. **Une part qui ne dépend d'aucune base est donnée à côté**, quand la grandeur s'y prête : la part dans les dépenses de l'État, par exemple, ne fait intervenir aucun PIB et traverse les changements de base sans rupture.
+
+Les deux changements de base ont chacun leur renvoi : [le passage à la base 1997](#pib-base-1997) et [le passage à la base 2015](#pib-base-2015) ; les années où une série accolée change de niveau sont au [tableau des jonctions](#tbl-pib-jonctions).
+
+## Comment lire une part du PIB {#sec-pib-lire}
+
+L'INS donne lui-même la mesure de l'effet, pour l'année 2020 et pour l'année de base :
+
+| Grandeur | Dans la base 1997 | Dans la base 2015 |
+|---|---:|---:|
+| Déficit budgétaire de 2020, en % du PIB | 11,8 | 11,1 |
+| Dette publique de 2020, en % du PIB | 88,6 | 83,5 |
+| PIB par habitant de 2015, en dinars | 7 586,8 | 8 044,9 |
+
+: Trois grandeurs avant et après le changement de base de 2015, selon l'INS {#tbl-pib-lire-ins}
+
+Source : [@ins-changement-base-2015, p. 2].
+
+Trois précautions en découlent :
+
+- **Chercher la base avant de lire le chiffre.** Une part du PIB sans mention de base se rattache à une base par sa source et par son année, à l'aide des tableaux de la section [Quel PIB dans quelle source](#sec-pib-sources).
+- **Ne pas comparer une part d'avant et d'après un changement de base sans le dire.** Entre deux années séparées par une jonction, une partie de la variation vient du dénominateur : environ un dixième de la part en 1997, un vingtième en 2010.
+- **Ne pas convertir par un coefficient.** La conversion ne se fait que pour les années publiées dans les deux bases, avec leurs deux PIB ([tableaux des écarts](#sec-pib-ecarts)) ; avant 1997, aucune année n'est publiée dans deux bases.
+
+## Références {.unnumbered}
+
+Les pages citées sont celles du fichier mis en ligne par l'éditeur, qui peuvent différer de la pagination imprimée.
+
+::: {#refs}
+:::
