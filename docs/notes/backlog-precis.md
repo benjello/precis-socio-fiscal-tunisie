@@ -899,6 +899,31 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     moyenne officielle 2017-2018 ; prix de la bouteille de gaz du 18 août 1992 (à relire à
     l'image) ; aucun « arrêté interne » de notification n'a été vu. Tarifs de la taxe unique
     après 1981 : non établis.
+  - **Rédaction finale du 6 octobre 2026** (notes `compensation-tarifs-1993-2004.md`,
+    `compensation-tarifs-mt-ht-gaz.md`, `compensation-structure-prix-relue.md`,
+    `compensation-etudes-incidence-calculs.md`) — ce qui suit dans les trois rubriques
+    ci-dessous est **dépassé sur ces points** : (1) `_electricite_gaz.qmd` : cinq grilles de
+    1993 à 2003 (deux tableaux, relais officiels et rapports extérieurs), frise 1992-2006 avec
+    la famille de chaque source, section moyenne et haute tension et gaz industriel, recette
+    moyenne par kWh donnée comme un calcul, coût de revient 2000-2004 (BAD), basse tension de
+    2008 à 2022 établie sur les documents ; (2) `_carburants.qmd` : valeurs de la structure des
+    prix publiées (lecture du tableau, 24 structures datées, importation et cession 2016-2025) ;
+    (3) `_incidence.qmd` : données, calcul, résultats, limites et incohérences pour quatre études
+    (INS-CRES-BAD, Banque mondiale 2013 et 2015, document de travail de 2017), répartition
+    9,2 / 60,5 / 7,5 / 22,8 publiée avec la mention que deux classes ne sont pas définies.
+    **Restent** : jour d'effet des grilles d'octobre 1993 et de juin 1994, et leur moyenne et
+    haute tension (fiche `r-tarifs-electricite-grilles-1993-2003`, passe consignée) ; grilles du
+    gaz de 2001 à 2003 ; **acte du 10 août 2000 non lu** et actes de 1993, 1994, 2001, 2003, 2004
+    (fiche `r-tarifs-electricite-gaz-apres-1992`, passe consignée) ; contradiction de 2003
+    (90 ou 94) ; **tarifs du Journal officiel 1975-1990 à relire** (moyenne et haute tension,
+    unité de la prime) ; haute tension de septembre 2012 et moyenne pression de 2012-2013 ;
+    heures des postes avant 2014 ; haute tension de 2020 dans les ventes de la STEG ; **structure
+    du 1er avril 2018** et numéros de janvier à juin 2018 de la *Conjoncture énergétique* ;
+    date de la baisse d'août 2020 ; **tableaux d'études à contrôler cellule par cellule**
+    (seuls le tableau 1 et les figures 11 et 12 de la note de 2013 sont établis sur le
+    document) ; **figure de la facture type** (TODO figures) ; grille basse tension du 1er
+    janvier 2014 (source seconde, non publiée) ; décodage des couches texte du JORT des années
+    2000 à verser à `docs/notes/outillage-sources.md`.
   - **Électricité et gaz — chapitre `_electricite_gaz.qmd` écrit le 6 octobre 2026**
     (`#sec-compensation-electricite-gaz`, après `_carburants.qmd`), sur
     `docs/notes/compensation-tarifs-electricite-gaz.md` : autorité tarifaire (arrêtés 1970-1990,
