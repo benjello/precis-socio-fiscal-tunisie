@@ -15,8 +15,6 @@ Les parts données dans ce volume sont calculées ici, sur des dénominateurs so
 Les parts que publient les rapports se retrouvent, pour la plupart, à quelques centièmes de point près une fois la dépense rapportée au PIB de la base en vigueur à la date du rapport.
 :::
 
-<!-- TODO (figures) : la règle du PIB pour 2010-2014 diffère entre le snapshot que tracent les figures (PIB du ministère, base non précisée, « n. r. ») et la fiche compensation-ratios de l'entrepôt (PIB de l'INS en base 2015, rétropolé par l'INS). Les parts sont les mêmes (2013 : 6,97 %) ; seul le libellé de la base diffère. Aligner les notes de lecture une fois le snapshot refait ; le texte ne donne aucune part du PIB pour 2010-2014. -->
-
 ## La dépense globale sur la longue période {#sec-compensation-depense-globale}
 
 Le @fig-compensation-longue-periode donne la dépense de compensation de 1984 à 2026 selon trois mesures : en part des dépenses de l'État hors service de la dette, en part du PIB et en millions de dinars courants.
@@ -41,7 +39,9 @@ cm.figure(
         "compensation, et les « dépenses de compensation » du budget. En brun, les charges de la "
         "Caisse, que la dotation ne finance qu'en partie : elles ne sont pas une dépense du "
         "budget, et ne sont donc rapportées qu'au PIB. "
-        "Trois ruptures sont marquées d'un trait vertical : 2003, où commence la série en trois "
+        "Quatre ruptures sont marquées d'un trait vertical : 1987, où la loi de finances intègre "
+        "au budget les recettes de la Caisse — la dotation passe de 68 à 189 MD, changement de "
+        "mode de financement et non de coût ; 2003, où commence la série en trois "
         "postes ; 2004, où y apparaît la première ligne de carburants ; 2015, où le périmètre de la ligne "
         "de carburants s'élargit : la fin des prix de cession préférentiels du pétrole brut et du gaz "
         "y fait entrer une subvention jusque-là hors budget, avec une recette non fiscale en regard. Les changements du champ des produits de base "
@@ -50,20 +50,20 @@ cm.figure(
         "comptes nationaux : c'est la mesure homogène sur la période. Son dénominateur exclut "
         "le service de la dette ; la part est donc plus élevée qu'elle ne le serait dans un "
         "budget total. "
-        "La part du PIB est tracée par segments, jamais reliés entre eux, et chaque changement "
-        "de segment est une rupture de série qui tient au seul dénominateur "
-        "(voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Le PIB employé est, segment par "
-        "segment : en 1984-1985, celui de la Banque mondiale, qui accole les bases sans les "
-        "raccorder — base non précisée par la source ; ensuite celui du ministère des Finances, "
-        "en base 1983 présumée pour 1986-1991, en base 1983 pour 1992-1996, en base 1997 pour "
-        "1997-2001 et 2005-2009, en base 2015 pour 2015-2024. Ses valeurs de 2002-2004 lui sont "
-        "propres, celles de 2010-2014 dépassent d'environ 5 % la base 1997 — l'ordre de grandeur "
-        "d'une rétropolation de la base 2015, que la source n'annonce pas —, et celle de 2025 "
-        "est une estimation : pour ces trois tronçons, notés « n. r. », la base n'est pas "
-        "précisée par la source. Pour les autres, la série ne dit pas si la "
-        "valeur est celle de la publication d'origine ou une valeur rétropolée. Le passage de la "
-        "base 1983 à la base 1997 relève le niveau du PIB de 9,8 % en 1997, celui à la base 2015 "
-        "de 6,0 % en 2015 : la même dépense pèse d'autant moins en points de PIB. "
+        "La part du PIB est tracée par segments, jamais reliés entre eux, et chaque "
+        "changement de segment est une rupture de série qui tient au seul dénominateur (voir "
+        "l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Le PIB employé est, "
+        "segment par segment : jusqu'en 1985, celui de la Banque mondiale, qui accole les "
+        "bases sans les raccorder — base non précisée par la source ; ensuite celui du "
+        "ministère des Finances, en base 1983 présumée pour 1986-1991, en base 1983 pour "
+        "1992-1996, en base 1997, rétropolée par l'INS, pour 1997-2001, en base 1997 pour "
+        "2005-2009 ; ses valeurs de 2002-2004 et de 2025 lui sont propres et ne se rattachent "
+        "à aucune base (« n. r. ») ; de 2010 à 2024, celui de l'INS en base 2015, rétropolée "
+        "par l'INS pour 2010-2014. Avant 1997, la série ne précise pas si la valeur est "
+        "rétropolée. Le passage à la [base 1997](../annexe-pib.html#pib-base-1997) relève le "
+        "niveau du PIB de 9,8 % en 1997, celui à la [base "
+        "2015](../annexe-pib.html#pib-base-2015) de 4,9 % en 2010 : la même dépense pèse "
+        "d'autant moins en points de PIB. "
         "Les points creux de 2025 et 2026 sont des lois de finances, non des dépenses "
         "constatées. Le niveau en dinars courants est en échelle logarithmique."))
 ```
@@ -132,15 +132,12 @@ cm.figure(
         "La part des dépenses de l'État ne dépend d'aucune base des comptes nationaux : c'est la "
         "mesure homogène sur la période ; son dénominateur exclut le service de la dette. "
         "La part du PIB change de dénominateur d'un segment à l'autre, et chacun de ces "
-        "changements est une rupture de série (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "
-        "Le PIB est celui du ministère des Finances : en base 1997 pour 2005-2009, en base 2015 "
-        "pour 2015-2024 — le passage à la base 2015 relève son niveau de 6,0 %. Ses valeurs de "
-        "2002-2004 lui sont propres, celles de 2010-2014 dépassent d'environ 5 % la base 1997 — "
-        "l'ordre de grandeur d'une rétropolation de la base 2015, que la source n'annonce pas —, "
-        "et celle de 2025 est une estimation : pour ces trois tronçons, notés "
-        "« n. r. », la base n'est pas précisée par la source. Pour les segments en base 1997 et "
-        "en base 2015, la série ne dit pas si la valeur est celle de la publication d'origine ou "
-        "une valeur rétropolée."))
+        "changements est une rupture de série (voir l'[annexe sur le "
+        "PIB](../annexe-pib.html#sec-pib-ruptures)). Le PIB est, en 2003-2004 et en 2025, une "
+        "valeur propre au ministère des Finances, rattachée à aucune base (« n. r. ») ; en "
+        "2005-2009, celui du ministère en base 1997 ; de 2010 à 2024, celui de l'INS en [base "
+        "2015](../annexe-pib.html#pib-base-2015), rétropolée par l'INS pour 2010-2014 : son "
+        "niveau est relevé de 4,9 % en 2010."))
 ```
 
 Cinq constats.

@@ -823,8 +823,8 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
   `fig-compensation-recettes-caisse` dans `_institution.qmd` ; `fig-compensation-longue-periode`,
   `fig-compensation-par-poste` et `fig-compensation-prevu-realise` dans `_depense.qmd` ;
   `fig-compensation-sources-exterieures` dans `_exterieurs.qmd`. Les notes de lecture ont été
-  corrigées dans les `.qmd` pour la rupture de 2015 (« périmètre élargi ») ; **le libellé de la
-  marque sur les graphiques reste à corriger dans le module** (agent des figures).
+  corrigées dans les `.qmd` pour la rupture de 2015 (« périmètre élargi »), et le libellé de la
+  marque sur les graphiques l'est aussi.
   - **Figures attendues**, posées en `<!-- TODO (figures) : … -->` : `fig-compensation-compte-caisse`
     et `fig-compensation-par-produit` (`_institution.qmd`, série `compensation-compte-caisse`) ;
     `fig-compensation-prevu-realise-postes` (`_depense.qmd`, série `compensation-prevu-realise`) ;
@@ -833,13 +833,10 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     `prix-carburants`). Quand elles existeront, replier les tableaux qu'elles remplacent
     (`tbl-compensation-compte-caisse`, `tbl-compensation-besoins-energie`, tableaux de prix déjà
     repliés).
-  - **Base du PIB pour 2010-2014** : le snapshot tracé dit « base non précisée » (PIB du
-    ministère), la fiche `compensation-ratios` de l'entrepôt dit « INS, base 2015, rétropolée » ;
-    les parts sont les mêmes. Le texte ne donne aucune part du PIB pour ces années ; à aligner
-    quand le snapshot sera refait. Le snapshot ne porte pas la dotation de 1987 ni celle de 1997.
-  - **Snapshots à refaire** : `precis/_seriescache/compensation-{parts,prevu-realise,
-    recettes-caisse}.csv` viennent d'une branche de `tunisia-data` non fusionnée au 6 octobre
-    2026 ; relancer `figtools.refresh_cache(…)` une fois la branche sur `main`.
+  - **Snapshots** : refaits le 7 octobre 2026 depuis `main` de `tunisia-data` (neuf séries
+    `compensation-*` et `prix-carburants*`) ; les notes de lecture disent la base du PIB d'après
+    les colonnes `segment_pib`, `pib_retropole` et `rupture_pib` (2010-2024 : INS, base 2015,
+    rétropolée pour 2010-2014). Rupture de 1987 marquée sur la dotation et les recettes.
   - **Annexe sur le PIB** : le texte et les notes des figures renvoient à
     `../annexe-pib.html#sec-pib-ruptures` et `#sec-pib-retropolation` ; l'annexe est sur une autre
     branche, les ancres n'ont pas pu être contrôlées ici.

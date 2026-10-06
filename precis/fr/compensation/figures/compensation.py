@@ -31,8 +31,9 @@ RÈGLES COMMUNES À TOUTES LES FIGURES.
     changement de source ou de base du PIB, un trait vertical le marque, et la base de chaque
     segment est écrite au-dessus du cadre. Rien n'est chaîné.
   - **Les ruptures viennent des données** (colonne `rupture`) : changement de grandeur en
-    2003, première ligne de carburants en 2004, séparation de la commercialisation des
-    hydrocarbures en 2015. Leur texte complet est dans l'infobulle du repère triangulaire,
+    2003, première ligne de carburants en 2004, périmètre élargi en 2015. Une seule est
+    déclarée ici, d'après la fiche du compte de la Caisse : 1987, où les recettes de la
+    Caisse sont intégrées au budget. Leur texte complet est dans l'infobulle du repère triangulaire,
     en haut du trait ; les changements de champ des produits de base sont dans l'infobulle
     des points.
   - **Les lois de finances et les prévisions sont des points creux**, reliés en pointillé.
@@ -150,6 +151,11 @@ _L = {
     "f_recettes_affectees_cgc_minfin": {
         "fr": "Recettes affectées du compte de la Caisse (ministère des Finances)",
         "ar": "الموارد المخصَّصة لحساب الصندوق (وزارة المالية)"},
+    "f_recettes_totales_cgc_bct": {
+        "fr": "Recettes de toute nature de la Caisse (rapports de la BCT)",
+        "ar": "موارد الصندوق بجميع أصنافها (تقارير البنك المركزي)"},
+    "d_cgc_depenses_bct": {"fr": "Dépense en regard : dépenses du fonds spécial",
+                           "ar": "النفقات المقابلة: نفقات الصندوق الخاص"},
     "d_cgc_charges_bct": {"fr": "Dépense en regard : charges de la Caisse",
                           "ar": "النفقات المقابلة: أعباء الصندوق"},
     "d_budget": {"fr": "Dépense en regard : dépense budgétaire, trois postes",
@@ -180,8 +186,8 @@ _L = {
                    "ar": "خطّ عمودي: انقطاع في السلسلة (التفاصيل عند المثلّث)"},
     "lg_pib": {"fr": "au-dessus du cadre : base du PIB de chaque segment",
                "ar": "فوق الإطار: سنة أساس الناتج لكلّ مقطع"},
-    "lg_pib_nr": {"fr": " ; « n. r. » : base non précisée par la source",
-                  "ar": "؛ «غ. م.»: سنة الأساس غير محدَّدة في المصدر"},
+    "lg_pib_nr": {"fr": " ; « n. r. » : valeur propre au ministère, rattachée à aucune base",
+                  "ar": "؛ «غ. م.»: قيمة خاصّة بالوزارة غير مربوطة بسنة أساس"},
     "lg_pib_bm": {"fr": " ; « BM » : PIB de la Banque mondiale",
                   "ar": "؛ «ب. د.»: ناتج البنك الدولي"},
     "lg_bloc_budgetaire": {
@@ -195,8 +201,11 @@ _L = {
     "rup_2003": {"fr": "2003 : dépense\nen trois postes", "ar": "2003: نفقات\nبثلاثة أبواب"},
     "rup_2004": {"fr": "2004 : première ligne\nde carburants",
                  "ar": "2004: أوّل سطر\nللمحروقات"},
-    "rup_2015": {"fr": "2015 : commercialisation\ndes hydrocarbures séparée",
-                 "ar": "2015: فصل عمليات\nتسويق المحروقات"},
+    "rup_2015": {"fr": "2015 : périmètre\nélargi", "ar": "2015: توسيع\nالنطاق"},
+    "rup_1987": {"fr": "1987 : recettes de la Caisse\nintégrées au budget",
+                 "ar": "1987: إدماج موارد\nالصندوق في الميزانية"},
+    "retropolee": {"fr": "(rétropolée)", "ar": "(معاد احتسابها)"},
+    "retropolee_p": {"fr": "(rétropolée {a}-{b})", "ar": "(معاد احتسابها {a}-{b})"},
     # bases du PIB (au-dessus du cadre)
     "b_base 1983 présumée": {"fr": "base 1983\n(présumée)", "ar": "أساس 1983\n(مفترض)"},
     "b_base 1983": {"fr": "base 1983", "ar": "أساس 1983"},
@@ -245,31 +254,16 @@ _L = {
     "c_segment_pib": {"fr": "Segment de PIB", "ar": "مقطع الناتج"},
     "c_part_pib_pct": {"fr": "% du PIB", "ar": "% من الناتج"},
     "c_rupture": {"fr": "Rupture", "ar": "الانقطاع"},
-    "c_nature_pib": {"fr": "PIB employé : base et rétropolation",
-                     "ar": "الناتج المعتمد: سنة الأساس وإعادة الاحتساب"},
-    # nature du PIB de chaque segment (colonne des données)
-    "n_bm": {"fr": "PIB de la Banque mondiale, qui accole les bases sans les raccorder : base "
-                   "non précisée par la source",
-             "ar": "ناتج البنك الدولي، بسنوات أساس متتابعة غير مربوطة: سنة الأساس غير محدَّدة "
-                   "في المصدر"},
-    "n_presumee": {"fr": "PIB du ministère des Finances, base 1983 présumée ; la série ne dit "
-                         "pas si la valeur est rétropolée",
-                   "ar": "ناتج وزارة المالية، أساس 1983 مفترض؛ لا تبيّن السلسلة إن كانت القيمة "
-                         "معاد احتسابها"},
-    "n_base": {"fr": "PIB du ministère des Finances, {b} ; la série ne dit pas si la valeur est "
-                     "rétropolée",
-               "ar": "ناتج وزارة المالية، {b}؛ لا تبيّن السلسلة إن كانت القيمة معاد احتسابها"},
-    "n_propre": {"fr": "PIB propre au ministère des Finances : base non précisée par la source",
-                 "ar": "ناتج خاصّ بوزارة المالية: سنة الأساس غير محدَّدة في المصدر"},
-    "n_retropole": {"fr": "PIB propre au ministère des Finances, supérieur d'environ 5 % à la "
-                          "base 1997 — l'ordre de grandeur d'une rétropolation de la base "
-                          "2015 : ni la base ni la rétropolation ne sont précisées par la source",
-                    "ar": "ناتج خاصّ بوزارة المالية، يفوق أساس 1997 بنحو 5 % — وهو ما يوافق "
-                          "إعادة احتساب على أساس 2015: لا سنة الأساس ولا إعادة الاحتساب "
-                          "محدَّدتان في المصدر"},
-    "n_estimation": {"fr": "PIB estimé par le ministère des Finances : base non précisée par "
-                           "la source",
-                     "ar": "ناتج مقدَّر من وزارة المالية: سنة الأساس غير محدَّدة في المصدر"},
+    "c_pib_retropole": {"fr": "PIB rétropolé", "ar": "ناتج معاد احتسابه"},
+    "c_rupture_pib": {"fr": "Rupture du PIB", "ar": "انقطاع الناتج"},
+    "c_plan": {"fr": "Plan", "ar": "المخطّط"},
+    "c_periode": {"fr": "Période", "ar": "الفترة"},
+    "c_prevu_pct_pib": {"fr": "Prévu (% du PIB)", "ar": "المتوقَّع (% من الناتج)"},
+    "c_realise_pct_pib_publie": {"fr": "Réalisé, % du PIB publié",
+                                 "ar": "المنجَز، % من الناتج المنشورة"},
+    "c_realise_pct_pib_calcule": {"fr": "Réalisé, % du PIB calculé",
+                                  "ar": "المنجَز، % من الناتج المحسوبة"},
+    "c_ecart_points_pib": {"fr": "Écart (points de PIB)", "ar": "الفارق (نقاط من الناتج)"},
     "c_horizon": {"fr": "Horizon de la prévision", "ar": "أفق التقدير"},
     "c_prevu_MDT": {"fr": "Prévu (MD)", "ar": "المتوقَّع (م.د)"},
     "c_etat_prevu": {"fr": "Libellé du prévu", "ar": "تسمية المتوقَّع"},
@@ -373,9 +367,9 @@ PROVENANCE_LECTEUR = {
                    "1986-2025), dans le PIB (PIB du ministère des Finances 1986-2025, Banque "
                    "mondiale avant 1986)"),
         caveats=("Les séries ne se raccordent pas. La part du PIB se lit par segments : le PIB "
-                 "change de source ou de base en 1986, 1997, 2002, 2005, 2010, 2015 et 2025. "
-                 "Les dépenses de l'État sont hors service de la dette. Carburants : rupture de "
-                 "périmètre en 2015. 2025 et 2026 sont des lois de finances.")),
+                 "change de source ou de base en 1986, 1997, 2002, 2005, 2010 et 2025. "
+                 "Les dépenses de l'État sont hors service de la dette. Carburants : périmètre "
+                 "élargi en 2015. 2025 et 2026 sont des lois de finances.")),
     SERIE_PREVU: dict(
         perimetre=("chaque prévision (XIe Plan 2007-2011 ; lois de finances et lois de "
                    "finances complémentaires 2012-2026, par poste ; prévisions initiales des "
@@ -423,31 +417,6 @@ def _declarer(series_id: str, cles) -> list[str]:
 
 # --- tables de données -------------------------------------------------------------------
 
-def _nature_pib(segment):
-    """Ce que la série dit du PIB d'un segment : sa base, et s'il est rétropolé.
-
-    D'après `segment_pib` et la fiche `docs/compensation-ratios.md` de l'entrepôt : les
-    valeurs de 2010-2014 y ont l'ordre de grandeur d'une rétropolation de la base 2015, sans
-    que le ministère le dise ; celle de 2025 est une estimation ;
-    pour les segments rattachés à une base, la série ne dit pas si la valeur est celle de la
-    publication d'origine. Un tronçon « non rattaché » n'a pas de base précisée."""
-    if _vide(segment):
-        return None
-    s = str(segment)
-    if s.startswith("wdi"):
-        return _lab("n_bm")
-    if "présumée" in s:
-        return _lab("n_presumee")
-    if "non rattach" in s:
-        if "2010-2014" in s:
-            return _lab("n_retropole")
-        if "2025-2025" in s:
-            return _lab("n_estimation")
-        return _lab("n_propre")
-    m = re.search(r"\((base \d{4})\)", s)
-    return _lab("n_base", b=_lab("b_" + m.group(1))) if m else None
-
-
 def _note(v):
     if _vide(v):
         return v
@@ -482,9 +451,6 @@ def _table(d, colonnes):
             out[_lab("c_" + col)] = d[col].map(lambda f: _lab("f_" + f))
         elif col == "note":
             out[_lab("c_note")] = d[col].map(_note)
-        elif col == "segment_pib":
-            out[_lab("c_segment_pib")] = d[col]
-            out[_lab("c_nature_pib")] = d[col].map(_nature_pib)
         elif col.startswith("page_"):  # numéros de page : entiers, vides admis
             out[_lab("c_" + col)] = d[col].astype("Int64")
         elif d[col].dtype == object:
@@ -499,16 +465,19 @@ COLS_PARTS = ["annee", "famille", "nature", "poste", "valeur_MDT", "etat_norme",
               "part_depenses_etat_pct", "part_pib_pct", "source", "document", "page_imprimee",
               "page_pdf", "note", "depenses_etat_hors_dette_MDT", "depenses_fonctionnement_MDT",
               "part_depenses_fonctionnement_pct", "pib_MDT", "source_pib", "base_pib",
-              "segment_pib", "rupture"]
+              "segment_pib", "pib_retropole", "rupture_pib", "rupture"]
 COLS_PREVU = ["annee", "famille", "nature", "poste", "horizon", "prevu_MDT", "realise_MDT",
               "ecart_MDT", "ecart_pct", "etat_prevu", "source_prevu", "page_imprimee_prevu",
-              "page_pdf_prevu", "etat_realise", "source_realise", "page_pdf_realise", "note"]
+              "page_pdf_prevu", "etat_realise", "source_realise", "page_pdf_realise", "note",
+              "plan", "periode", "prevu_pct_pib", "realise_pct_pib_publie",
+              "realise_pct_pib_calcule", "ecart_points_pib"]
 COLS_RECETTES = ["annee", "famille", "nature", "recettes_MDT", "famille_depense",
                  "poste_depense", "depense_en_regard_MDT", "couverture_pct",
                  "part_depenses_etat_pct", "part_pib_pct", "part_depenses_etat_depense_pct",
                  "part_pib_depense_pct", "etat", "source", "document", "page_imprimee",
                  "page_pdf", "note", "depenses_etat_hors_dette_MDT", "pib_MDT", "source_pib",
-                 "base_pib", "segment_pib", "produits_de_base_MDT",
+                 "base_pib", "segment_pib", "pib_retropole", "rupture_pib",
+                 "produits_de_base_MDT",
                  "couverture_produits_de_base_pct"]
 
 
@@ -604,18 +573,28 @@ def _poignee_pib(d) -> Line2D:
     return Line2D([], [], color="none", label=figtools.fig_text(texte))
 
 
+# Rupture déclarée ici, la colonne `rupture` ne la portant pas : fiche du compte de la Caisse
+# (Banque centrale, rapport annuel 1987, p. 71).
+FAMILLES_1987 = ("budget_dotation_cgc_bct", "recettes_propres_cgc_bct")
+RUPTURE_1987 = ("1987 : la loi de finances intègre au budget les recettes fiscales et "
+                "parafiscales de la Caisse ; la dotation passe de 68 à 189 MD — changement de "
+                "mode de financement, non de coût")
+
+
 def _ruptures_des_donnees(d) -> dict[int, dict[str, list[str]]]:
     """{année: {"pib": […], "champ": […], "serie": […]}} d'après la colonne `rupture`.
 
     « PIB … » : changement de source ou de base du dénominateur ; « champ : … » : entrée ou
     sortie d'un produit ; le reste : changement de la série elle-même, à marquer d'un trait."""
     out: dict[int, dict[str, list[str]]] = {}
+    if "famille" in d and d["famille"].isin(FAMILLES_1987).any():
+        out[1987] = {"serie": [RUPTURE_1987]}
     for r in d[d["rupture"].notna()].itertuples(index=False):
         # Un texte peut réunir plusieurs ruptures, séparées par « ; » ; un morceau qui n'ouvre
         # pas une rupture (« PIB… », « champ : … », « carburants : … ») continue la précédente.
         ruptures: list[str] = []
         for m in str(r.rupture).split(" ; "):
-            if ruptures and not m.startswith(("PIB", "champ", "carburants", "première")):
+            if ruptures and not m.startswith(("PIB", "champ", "carburants", "première", "2015")):
                 ruptures[-1] += " ; " + m
             else:
                 ruptures.append(m.strip())
@@ -690,7 +669,15 @@ def _marque_ruptures(ax, d, x0, x1, pib=False, cote=None, bas=False):
                       if base.startswith("non rattach") else base)
         if cle not in _L:
             continue
-        ax.annotate(_ft(cle), xy=((a0c + a1c) / 2, 1), xycoords=("data", "axes fraction"),
+        texte = _ft(cle)
+        if "pib_retropole" in d and base.startswith("base"):
+            ds = d[d["segment_pib"].astype(str).str.contains(f"{a0}-{a1}", regex=False)]
+            retro = sorted(ds[ds["pib_retropole"] == "oui"]["annee"].astype(int).unique())
+            if retro and not (ds["pib_retropole"] == "non").any():
+                texte += "\n" + _ft("retropolee")
+            elif retro:
+                texte += "\n" + _ft("retropolee_p", a=retro[0], b=retro[-1])
+        ax.annotate(texte, xy=((a0c + a1c) / 2, 1), xycoords=("data", "axes fraction"),
                     xytext=(0, 5), textcoords="offset points", ha="center", va="bottom",
                     fontsize=6.5, color=GRIS, annotation_clip=False)
     ax.annotate(_ft("b_pib"), xy=(0, 1), xycoords="axes fraction", xytext=(-6, 5),
@@ -853,6 +840,9 @@ def fig_prevu_realise(vue: str = "lf"):
         d = d[(d["famille"] == "budget") & (d["poste"] == "total") & (d["horizon"] == "plan")]
     else:
         d = d[d["famille"] == "cgc_charges_bct"]
+    # Les lignes de plan en cumul ou en part du PIB ne sont pas des prévisions annuelles en
+    # dinars : elles restent dans les données.
+    d = d[d["horizon"].isin(STYLE_HORIZON) & d["prevu_MDT"].notna()]
     d = d.sort_values(["annee", "horizon"])
     fig, (ax, bx) = plt.subplots(2, 1, figsize=(9.5, 6.4), sharex=True,
                                  gridspec_kw=dict(height_ratios=[2, 1.15], hspace=0.08))
@@ -927,13 +917,16 @@ def _figure_prevu_realise():
     vues = [(_lab("vue_lf"), fig_prevu_realise("lf")),
             (_lab("vue_plan"), fig_prevu_realise("plan")),
             (_lab("vue_caisse"), fig_prevu_realise("caisse"))]
-    cles = list(d["source_prevu"]) + list(d["source_realise"])
+    # « compensation-depense » y désigne un cumul de la série elle-même, non un document.
+    cles = [k for k in list(d["source_prevu"]) + list(d["source_realise"])
+            if not str(k).startswith("compensation-")]
     return vues, _table(d, COLS_PREVU), {SERIE_PREVU: cles}, "fig_compensation_prevu_realise"
 
 
 # --- 4. Les recettes de la Caisse face à la dépense --------------------------------------
 
-FAMILLES_RECETTES = (("recettes_propres_cgc_bct", "s", VERT, "cgc_charges_bct"),
+FAMILLES_RECETTES = (("recettes_totales_cgc_bct", "o", GRIS, "cgc_depenses_bct"),
+                     ("recettes_propres_cgc_bct", "s", VERT, "cgc_charges_bct"),
                      ("recettes_affectees_cgc_minfin", "D", VIOLET, "budget"))
 
 
@@ -1012,7 +1005,7 @@ def fig_recettes_caisse(mesure: str = "md"):
         _cadre(ax, "md_log", x0, x1, xlabel=False)
         _axe_log(ax)
         _cadre(bx, "pct_couv", x0, x1)
-        bx.set_ylim(0, 75)
+        bx.set_ylim(0, 120)
         bx.set_xticks(list(range(x0, x1 + 1, 2)))
         bx.tick_params(axis="x", labelsize=7.5)
         bx.legend(handles=poignees, loc="upper center", bbox_to_anchor=(0.5, -0.3), ncol=2,

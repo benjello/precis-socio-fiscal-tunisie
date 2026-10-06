@@ -175,30 +175,31 @@ from figures import compensation as cm
 cm.figure(
     "recettes_caisse",
     caption=("Les recettes de la Caisse générale de compensation face à la dépense, "
-             "1984-2011 : en millions de dinars courants avec le rapport des recettes à la "
+             "1974-2011 : en millions de dinars courants avec le rapport des recettes à la "
              "dépense, en part des dépenses de l'État hors service de la dette et en part du PIB"),
     note_lecture=(
-        "Deux séries de recettes, qui ne se raccordent pas : en vert, les recettes propres de la "
-        "Caisse d'après les rapports annuels de la Banque centrale (1984-1986, 1991-1996, "
-        "1998-1999), en regard des charges de la Caisse ; en violet, les recettes affectées du "
+        "Trois séries de recettes, qui ne se raccordent pas : en vert, les recettes propres de la "
+        "Caisse d'après les rapports annuels de la Banque centrale (1984-1986, "
+        "1991-1999), en regard des charges de la Caisse ; en violet, les recettes affectées du "
         "compte de la Caisse d'après le ministère des Finances (2009-2011), en regard de la "
-        "dépense budgétaire des trois postes. Aucune valeur n'est connue ici pour 1987-1990, "
-        "1997 et 2000-2008. "
+        "dépense budgétaire des trois postes ; en gris, les recettes de toute nature de 1974 et "
+        "1975, en regard des dépenses du fonds spécial. Aucune recette n'est connue ici pour "
+        "1976-1983, 1987-1990 et 2000-2008 : à partir de 1987, la loi de finances intègre au "
+        "budget les recettes fiscales et parafiscales de la Caisse (trait vertical). "
         "Le graphique du bas donne le rapport des recettes à la dépense en regard. Les montants "
         "et la part du PIB sont en échelle logarithmique : les recettes sont, à partir de 1991, "
         "d'un ordre de grandeur inférieur à la dépense. La part des dépenses de l'État, donnée "
         "pour les recettes depuis 1986, ne dépend d'aucune base des comptes nationaux : c'est la "
         "mesure homogène. La part du PIB est tracée par segments, et chaque changement de "
         "segment est une rupture de série qui tient au seul dénominateur "
-        "(voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Le PIB employé est, en 1984-1985, "
-        "celui de la Banque mondiale, qui accole les bases sans les raccorder — base non précisée "
-        "par la source ; ensuite celui du ministère des Finances, en base 1983 présumée pour "
-        "1986-1991, en base 1983 pour 1992-1996, en base 1997 pour 1997-2001 et 2005-2009. Ses "
-        "valeurs de 2010 et 2011 dépassent d'environ 5 % la base 1997 — l'ordre de grandeur d'une "
-        "rétropolation de la base 2015, que la source n'annonce pas : leur base n'est pas "
-        "précisée par la source (« n. r. »). Pour les segments rattachés à "
-        "une base, la série ne dit pas si la valeur est celle de la publication d'origine ou une "
-        "valeur rétropolée."))
+        "(voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Le PIB employé "
+        "est, segment par segment : jusqu'en 1985, celui de la Banque mondiale, qui accole "
+        "les bases sans les raccorder — base non précisée par la source ; ensuite celui du "
+        "ministère des Finances, en base 1983 présumée pour 1986-1991, en base 1983 pour "
+        "1992-1996, en base 1997, rétropolée par l'INS, pour 1997-2001, en base 1997 pour "
+        "2005-2009 ; en 2010 et 2011, celui de l'INS en [base "
+        "2015](../annexe-pib.html#pib-base-2015), rétropolée par l'INS, d'un niveau supérieur "
+        "de 4,9 %. Avant 1997, la série ne précise pas si la valeur est rétropolée."))
 ```
 
 ```{python}
@@ -210,11 +211,10 @@ cm.tableau_recettes_affectees(
     caption=("Recettes affectées de la Caisse et dépense de compensation, 2009-2011 : montants, "
              "part des dépenses de l'État hors service de la dette et part du PIB. Source des "
              "montants : ministère des Finances [@minfin-finances-publiques-2011]. Les deux "
-             "parts placées sous un montant le rapportent aux dépenses de l'État et au PIB que "
-             "donne le ministère des Finances ; son PIB est en base 1997 pour 2009 ; ses valeurs de "
-             "2010 et 2011 dépassent d'environ 5 % la base 1997 — l'ordre de grandeur d'une "
-             "rétropolation de la base 2015, que la source n'annonce pas —, et leur base n'est "
-             "pas précisée par la source (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures))."))
+             "parts placées sous un montant le rapportent aux dépenses de l'État et au PIB : "
+             "PIB du ministère des Finances en base 1997 pour 2009 ; PIB de l'INS en base 2015, "
+             "rétropolée par l'INS, pour 2010 et 2011, d'un niveau supérieur de 4,9 % "
+             "(voir l'[annexe sur le PIB](../annexe-pib.html#pib-base-2015))."))
 ```
 
 <!-- TODO (documentaliste) : produit annuel de la redevance de compensation depuis 2013 ; arrêté du 10 mai 2024 (JORT n° 61, p. 1428) qui atteste que la redevance existe encore en 2024, à verser par le bibliographe avant citation. Opérateurs par lesquels passe la compensation (Office des céréales, Office du commerce, sociétés de transport) et entrées et sorties de produits dans le temps : établis par aucun texte — docs/notes/compensation.md, § 6, points 6 et 7. -->
