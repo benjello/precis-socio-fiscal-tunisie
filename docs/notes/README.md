@@ -23,6 +23,7 @@ Ces notes ne se valent pas. Elles relèvent de quatre espèces, dont **deux seul
 |---|---|---|
 | [`biblio-a-rapatrier.md`](biblio-a-rapatrier.md) | Références à remonter dans Zotero, source canonique. **Tant qu'elles n'y sont pas, `sync_biblio.py` les écrasera.** | en cours — 535 clés présentes au 29/09/2026 ; deux nouvelles clés du livre « Prestations sociales » à verser après fusion |
 | [`series-pensions-salaires-bilan.md`](series-pensions-salaires-bilan.md) | Séries des figures « pensions, salaires et barème » du livre « Retraites » : source exacte, spécificités, ruptures, contrôles et **questions ouvertes pour le bilan global**. | en cours — ouverte le 22/09/2026 |
+| [`annexe-pib.md`](annexe-pib.md) | Matière de l'annexe du site sur le PIB : bases 1983, 1997 et 2015 des comptes nationaux, écarts de niveau, rétropolations, PIB de chaque source, **inventaire des parts du PIB du précis à mettre en conformité**. | en cours — ouverte le 06/10/2026 ; annexe à rédiger |
 
 ## Dossiers documentaires — closes
 

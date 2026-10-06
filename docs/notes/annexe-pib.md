@@ -31,8 +31,10 @@ Fichiers de `~/projets/tunisia-data` : `R/` abrège `data/raw/`, `P/` abrège `d
    p. 11) **[lu]**.
 2. **« 1990 », « 2005 » et « 2010 » ne sont pas des bases des comptes** mais des **années de prix**
    des séries en volume, à l'intérieur de la base 1983 (prix constants de 1990) puis de la base 1997
-   (prix de 2005, puis de 2010). Elles ne changent rien au PIB aux prix courants. La « base 2010 »
-   du FMI et de la Banque mondiale est, pour les niveaux nominaux, **la base 1997 de l'INS**
+   (prix de 2005, puis de 2010 — cette dernière attestée par la BCT et le FMI, non par une
+   édition de l'INS). Elles ne changent rien au PIB aux prix courants. La « base 2010 » prêtée au
+   FMI et à la Banque mondiale est, pour les niveaux nominaux, **la base 1997 de l'INS** : le FMI
+   écrit lui-même « constant (2010) prices according to the System of National Accounts 1993 »
    (§ 1.5).
 3. **L'INS a rétropolé la base 2015 jusqu'en 2010**, dans le classeur joint à son communiqué du
    15 août 2021 — et non dans une édition des *Comptes de la nation*. C'est l'origine, jusqu'ici non
@@ -51,7 +53,7 @@ inexacte (§ 4.3).
 |---|---|---|---|---|---|
 | Avant 1983 | non établi | — | — | — | **[non établi]** : des comptes existent (BCT, rapports annuels, agrégats aux prix de 1957, 1960, 1966, 1972, 1980), aucune « base » n'est nommée par un texte lu |
 | **1983** | SCN 1968 | la plus ancienne édition lue est le volume n° 11, 2001-2005, déc. 2006 ; la première publication n'est pas identifiée | éditions lues : 2001-2008 ; transmis aux Nations unies : 1992-2009 (série 30) ; la série 20 (1970-1997) est au même niveau, sa base n'est pas dite | étendue vers le passé non établie | **[lu]** pour le système et les éditions ; **[non établi]** pour la date d'entrée en service et la profondeur |
-| **1997** | SCN 1993 (« SCNT97 ») | volume n° 15, 2005-2009, déc. 2010 ; premier emploi par la BCT : rapport annuel 2009 | éditions : 2005-2017 ; transmis aux Nations unies : 1997-2017 (série 100) ; comptes poursuivis jusqu'en 2020 | **jusqu'en 1997** : « le CD accompagnant ce volume contient la série des comptes 1997-2007 » | **[lu]** |
+| **1997** | SCN 1993 (« SCNT97 ») | adoptée « début 2010 » selon le FMI ; premier emploi par la BCT : rapport annuel 2009 ; première édition de l'INS lue : volume n° 15, 2005-2009, déc. 2010 | éditions : 2005-2017 ; transmis aux Nations unies : 1997-2017 (série 100) ; comptes poursuivis jusqu'en 2020 | **jusqu'en 1997** : « le CD accompagnant ce volume contient la série des comptes 1997-2007 » | **[lu]** |
 | **2015** | SCN 2008 | communiqué et classeur du 15 août 2021 ; édition 2015-2020, vol. A et B, « Edition 2022 » | éditions : 2015-2025 ; transmis aux Nations unies : 2015-2023 (série 1000) | **jusqu'en 2010**, PIB et emplois aux prix courants et aux prix de l'année précédente, classeur du 15 août 2021 | **[lu]** |
 | « 1990 », « 2005 », « 2010 » | — | — | — | — | **[lu]** : années de prix des volumes, pas des bases (§ 1.5) |
 
@@ -107,6 +109,16 @@ inexacte (§ 4.3).
 - **Rétropolation** : « le CD accompagnant ce volume contient la série des comptes 1997-2007
   élaborées selon le nouveau système SCNT97 » (p. 3) **[lu]**. Le CD lui-même n'est pas dans
   l'entrepôt ; les valeurs 1997-2004 sont connues par UNdata (série 100) **[calculé]**.
+- **Date d'adoption et ampleur, selon le FMI** : « In early 2010, the Tunisian authorities adopted
+  a new national accounts system for the period 1997–2008 to comply with the 1993 United Nations
+  national accounts system. […] The total effect of the introduction of new system has been an
+  increase of around 10 percent in nominal GDP figures each year. Constant price aggregates are now
+  calculated based on last year's prices » (rapport n° 10/282, annexe 5, p. 39 du PDF, avec un
+  tableau « Old GDP / New GDP » 2002-2008 et l'effet sur le déficit, le solde courant et la dette,
+  « Source: Tunisian authorities ») ; « a revised national accounts series covering the period
+  1997–2009 based on SNA 1993 (instead of, as before, SNA 1968) » (p. 48) **[lu]**. La
+  rétropolation 1997-2004 précède donc l'édition de décembre 2010. Le « New GDP » 2002-2004 du FMI
+  (32 901,2 ; 35 373,3 ; 38 838,5) est celui de la série 100 des Nations unies **[calculé]**.
 - **Premier emploi par la BCT** : le rapport annuel 2008 donne encore le PIB « aux prix constants de
   1990 » et 50 325 MD pour 2008 (`rapport2008.pdf`, p. 72) ; le rapport 2009 donne 55 297 MD pour
   la même année et cite le « Nouveau Système des Comptes Nationaux » (`rapport2009.pdf`, pp. 73, 91,
@@ -194,11 +206,17 @@ inexacte (§ 4.3).
   `tunisia-data` étiquette « base 2010 » (`docs/reconciliation-masse-salariale-pib.md` : PIB 2015 =
   84 648, PIB 2017 = 96 325) sont, au chiffre près, celles des éditions 2012-2016 et 2013-2017, que
   l'INS intitule « Base 1997 » **[calculé]** (`P/ins-comptes-nationaux/pib_nominal_editions.csv`).
-  Le FMI et la Banque mondiale travaillaient en 2020-2021 sur les comptes en base 1997, dont les
-  volumes sont aux prix de 2010 ; **la mention exacte de leurs rapports n'a pas pu être relue**
-  (imf.org renvoie 403 aux deux adresses essayées) **[non établi]**. Le libellé « base 2010
-  (FMI/BM) » du précis et de l'entrepôt est donc à remplacer par « base 1997 (volumes aux prix de
-  2010) » sous réserve de cette relecture.
+  **Le FMI le dit lui-même** : « The National Institute of Statistics (NSI) publishes annual and
+  quarterly GDP by production in current and constant (2010) prices according to the System of
+  National Accounts 1993 (SNA 1993) » (rapport n° 21/44, février 2021, annexe d'information,
+  « Statistical Issues », p. 91 du PDF) ; ses tableaux portent « Real GDP (at 2010 prices) » et un
+  PIB nominal de 95 865, 106 242, 114 939 et 111 251 MD pour 2017-2020 (p. 33) **[lu]** — niveaux
+  de la base 1997, identiques pour 2018 et 2019 à ceux du rapport annuel 2020 de la BCT. Sa masse
+  salariale de 17,6 % du PIB en 2020 est rapportée à ce PIB. Aucune édition de l'INS lue n'imprime
+  « prix de 2010 » : l'année de prix 2010 n'est attestée que par la BCT et le FMI. Le libellé
+  « base 2010 (FMI/BM) » du précis et de l'entrepôt est à remplacer par « base 1997 (SCN 1993,
+  volumes aux prix de 2010) ». Pour la Banque mondiale (revue des dépenses publiques de 2020), la
+  mention n'a pas été relue **[non établi]**.
 
 ---
 
@@ -252,11 +270,19 @@ l'INS du 15 août 2021 pour 2010-2014 (rétropolé), éditions pour 2015-2017 **
 
 Le 5 113 de 2015 est exactement le chiffre du communiqué de l'INS. Pour 2018-2020, la base 1997
 n'est connue que par des estimations : BCT, rapport annuel 2020, p. 59 — 106 242, 114 939 et
-110 295 MD **[lu]** ; la base 2015 d'aujourd'hui est 6,3 %, 7,0 % et 8,3 % au-dessus — et, pour 2020,
+110 295 MD — et FMI, rapport n° 21/44, p. 33 — 106 242, 114 939 et 111 251 MD **[lu]** ; d'après
+la BCT, la base 2015 d'aujourd'hui est 6,3 %, 7,0 % et 8,3 % au-dessus — et, pour 2020,
 par les ratios du communiqué de l'INS (11,8 → 11,1 ; 88,6 → 83,5), qui impliquent un écart
 d'environ 6,1 à 6,3 %. Les deux ne concordent pas pour 2020 : ne pas en tirer une valeur.
 
 ### 2.3 Avant 1997 et avant 1970
+
+Le tableau 1.1 d'UNdata, d'où viennent les séries 10 et 20, n'est pas une série de l'entrepôt.
+Il se rejoue année par année à l'adresse
+`https://data.un.org/Data.aspx?d=SNA&f=group_code%3a101%3bcountry_code%3a788%3bfiscal_year%3aAAAA`
+(AAAA de 1960 à 2023) : ligne « Equals: GROSS DOMESTIC PRODUCT », code B.1*g, colonnes « Series »
+et « SNA System ». Les 64 pages lues le 6 octobre 2026 sont déposées sous
+`R/undata/sna_101_tunisie_AAAA.html` (répertoire ignoré par git).
 
 Aucune année antérieure à 1997 n'est publiée dans deux bases dans les sources réunies
 **[non établi]**. UNdata : série 10 (1960-1969) et série 20 (1970-1997) ne se recouvrent pas ; la
@@ -314,7 +340,8 @@ années d'une édition, « semi-définitifs » pour la quatrième, « provisoire
 | **BCT, rapports annuels** | jusqu'au rapport 2008 | 1983 (volumes aux prix de 1990) | — | « PIB (aux prix constants de 1990) », p. 72 **[lu]** |
 | | rapports 2009 à 2020 | 1997 (volumes aux prix de l'année précédente, puis « prix constants de 2010 ») | — | « Nouveau Système des Comptes Nationaux » **[lu]** |
 | | rapports 2021 et suivants | 2015 | — | « Aux prix constants de 2015 » ; PIB 2019 = 122 578 (p. 55) **[lu]** |
-| **FMI** (article IV 2020-2021) | — | « base 2010 » selon l'entrepôt ; non relu | — | **[non établi]** |
+| **FMI**, rapport n° 10/282 (article IV 2010) | 2002-2008, deux séries | 1983 (« Old GDP », volumes « in 1990 prices ») et 1997 (« New GDP ») | oui (1997-2008) | annexe 5, p. 39 **[lu]** |
+| **FMI**, rapport n° 21/44 (article IV 2021) | 2017-2025 | **1997** (SCN 1993), volumes aux prix de 2010 ; c'est la « base 2010 » de l'entrepôt | non | « constant (2010) prices according to the System of National Accounts 1993 », p. 91 ; PIB nominal p. 33 **[lu]** |
 
 Ce que ce tableau établit de neuf : **les séries longues du ministère des Finances et de la Banque
 mondiale sont la même série accolée**, qui change de niveau en **1997 (+ 9,8 %)** et en
@@ -344,9 +371,10 @@ et colonnes de `precis/_seriescache/*.csv`. Les trois modules `cnss_*` de
 Conséquence chiffrée de l'étiquette inexacte de 2012-2014 **[calculé]** : la part de la masse
 salariale de l'État dans le PIB publiée par le précis vaut 12,30 %, 12,79 % et 13,03 % en 2012,
 2013 et 2014 (PIB base 1997) ; rapportée au PIB base 2015 rétropolé de l'INS, elle vaut 11,71 %,
-12,15 % et 12,35 %. La série publiée descend donc artificiellement entre 2011 et 2012 (dénominateur
-plus petit de 5 %) et le « reflux » de 2014 à 2015 (13,03 → 12,90) est un effet de base : dans une
-base constante, la part monte de 12,35 à 12,90.
+12,15 % et 12,35 %. Entre 2011 et 2012, la série publiée monte de 11,34 à 12,30 % : dans une base
+constante, elle ne monte que de 11,34 à 11,71 % — 0,6 point de la hausse publiée vient du
+dénominateur, plus petit de 5 %. Et le « reflux » de 2014 à 2015 (13,03 → 12,90) est un effet de
+base : dans une base constante, la part monte de 12,35 à 12,90.
 
 ### 4.2 Inventaire des endroits où une grandeur est rapportée au PIB
 
@@ -366,11 +394,11 @@ base constante, la part monte de 12,35 à 12,90.
 | 12 | Cotisations | `_bilan.qmd` | fig. cotisations par branche, 1990-2004 (`cotisations_branches_1990_2004.py`) | idem | idem | idem | idem | partiel |
 | 13 | Prestations | `_prestations_familiales.qmd` | fig. allocations familiales, 1990-2004 (`cnss_allocations_familiales.py`) | idem | idem | idem | idem | partiel |
 | 14 | Retraites | `_secteur_prive.qmd` l. 777 | fig. branche des pensions du RSNA, 1990-2004 (`rsna_resultat_1990_2004.py`) | idem | idem | idem | idem | partiel |
-| 15 | Retraites | `_secteur_prive.qmd` l. 309 et 361 | deux fig. barème d'actualisation et croissance du PIB nominal (`bareme_actualisation.py`) | `croissances-revenus-prix` | dite : « depuis 1993, chaque taux compare deux années d'une même base » | non | sans objet depuis 1993 ; réserve écrite avant | oui (réserve à préciser : 1970, 1983-1985) |
+| 15 | Retraites | `_secteur_prive.qmd` l. 309 et 361 | deux fig. barème d'actualisation et croissance du PIB nominal (`bareme_actualisation.py`) | `croissances-revenus-prix` | dite : « depuis 1993, chaque taux compare deux années d'une même base » | non | sans objet depuis 1993 ; réserve écrite avant, sans années | partiel : avec les niveaux de la Banque mondiale, les taux de 1983 et 1985 s'écartent de + 3,6 et − 3,0 points de ceux de la série 20 des Nations unies ; 1970 est à cheval sur deux séries |
 | 16 | Rémunérations publiques | `index.qmd` | fig-masse-salariale-ratios, 1990-2025 (`masse_salariale.py`, fig. A) ; reprise dans `_demo_figure_onglets.qmd` | `masse-salariale-ratios` | dite, **à tort** : « PIB en base 2015 » | dit rétropolé, ne l'est que pour 2010-2011 | **aucune**, alors que la série en porte en 1997, 2002, 2005, 2010, 2012, 2015 | **non** |
 | 17 | Rémunérations publiques | `index.qmd` l. 79 | « 11 à 12 % du PIB au début des années 1990, reflue jusqu'à environ 10 % vers 2010 […] 16,1 % en 2020 […] 13,5 % en 2025 » | idem | idem | — | non | **non** (le début est en base 1983, « vers 2010 » en base 2015 rétropolée) |
 | 18 | Rémunérations publiques | `masse_salariale.py`, fig. B et figdata `fig_B_reconciliation.csv` | « Recalculé en PIB base 2010 (×1,06) » ; `FACTOR = 1.060` | `masse-salariale-reconciliation` | « base 2010 » : n'existe pas comme base nominale (§ 1.5) ; coefficient unique appliqué à 1990-2025 | — | — | **non** |
-| 19 | Rémunérations publiques | `index.qmd` l. 44, 103, 117 | FMI : 17,6 % du PIB en 2020 ; Banque mondiale : 14,7 % en 2017, 10,7 % en 2010 | PIB des rapports | non dite dans le texte | — | — | **non** (base à dire : base 1997 présumée, à relire) |
+| 19 | Rémunérations publiques | `index.qmd` l. 44, 103, 117 | FMI : 17,6 % du PIB en 2020 ; Banque mondiale : 14,7 % en 2017, 10,7 % en 2010 | PIB des rapports | non dite dans le texte | — | — | **non** (à dire : FMI, base 1997, établi § 1.5 ; Banque mondiale, non relu) |
 | 20 | Rémunérations publiques | `_regime_conventionnel.qmd` l. 83 | Banque mondiale : transferts aux entreprises publiques, 8,9 % du PIB en 2013, 7,5 % en 2014 | PIB du rapport | non dite | — | — | **non** |
 | 21 | Finances locales | `_longue_periode.qmd` | fig-fl-lp-ressources, 1990-2023 | `cnat-pib-nominal`, édition la plus récente | dite, exacte : « base 1983 jusqu'en 2004, base 1997 de 2005 à 2014, base 2015 ensuite » | non | oui (`_ruptures_pib`) | oui |
 | 22 | Finances locales | idem | fig-fl-lp-impots | idem | idem | non | oui | oui |
@@ -380,9 +408,10 @@ base constante, la part monte de 12,35 à 12,90.
 
 **Bilan** : 25 emplois relevés (17 figures ou groupes de figures, 8 phrases chiffrées) dans six
 volumes ; aucun dans « Marché du travail » ni dans les deux autres figures de longue période des
-finances locales (autonomie, caisse des prêts), qui n'ont pas de vue au PIB. **Conformes : 5** (les quatre figures des finances
-locales et les figures du barème d'actualisation). **Partiels : 7** (six figures de la CNSS
-1990-2004, où 1997 est tracée mais non 2002 ; une phrase des finances locales). **Non conformes :
+finances locales (autonomie, caisse des prêts), qui n'ont pas de vue au PIB. **Conformes : 4** (les quatre figures des finances
+locales). **Partiels : 8** (six figures de la CNSS 1990-2004, où 1997 est tracée mais non 2002 ;
+les figures du barème d'actualisation, pour 1970 et 1983-1985 ; une phrase des finances
+locales). **Non conformes :
 13** : les quatre figures de rendement de la fiscalité et leurs quatre phrases, la figure de la masse
 salariale, sa phrase et sa « réconciliation », et les deux passages qui citent le FMI et la Banque
 mondiale.
@@ -412,51 +441,54 @@ lit la base dans la série, rapporte chaque valeur au PIB de sa base et trace le
 | # | Lacune | Où chercher |
 |---|---|---|
 | L1 | Comptes d'avant la base 1983 : producteur, système, années de référence ; s'il a existé des « bases » nommées | Rapports annuels de la BCT 1959-1985 (les agrégats y sont « aux prix de 1957 », « de 1960 », « prix constants de 1966 » — rapport 1973, p. 3 —, « de 1972 » — rapport 1981, p. 64 —, « de 1980 » — rapport 1989, p. 56) ; mémorandums de la Banque mondiale de 1985 (`wb_1985_5328_cem_b.pdf` : comptes « in 1980 prices », source « Ministry of Plan ») ; annuaire des statistiques des comptes nationaux des Nations unies ; les fichiers `wb_1978_2201_cem.pdf` et `wb_1981_3399_cem.pdf` n'ont pas de couche texte (OCR à faire) |
-| L2 | Date et publication d'entrée en service de la base 1983 ; volumes n° 1 à 10 des *Comptes de la nation* | Bibliothèque de l'INS ; rapports de la BCT 1990-1993 ; fiche proposée `r-ins-comptes-nation-base-1983` |
+| L2 | Date et publication d'entrée en service de la base 1983 ; volumes n° 1 à 10 des *Comptes de la nation* | Bibliothèque de l'INS ; rapports de la BCT 1990-1993  ; recherche R1 ci-dessous |
 | L3 | Profondeur de la rétropolation de la base 1983 (la série 20 des Nations unies, 1970-1997, en est-elle une ?) | Notes par série de l'annuaire des Nations unies ; volumes anciens de l'INS |
 | L4 | Contenu du CD de l'édition 2005-2009 (comptes 1997-2007 en base 1997) | INS ; à défaut, UNdata série 100 fait foi pour le seul PIB |
-| L5 | Méthode de la rétropolation 2010-2014 en base 2015 ; existence d'une rétropolation avant 2010 | « Une note méthodologique plus complète accompagne la publication des résultats » (note du 15 août 2021, p. 3, n. 1) : non identifiée ; portail de données de l'INS (accès fermé) ; fiche proposée `r-ins-retropolation-base-2015` |
-| L6 | Mention exacte de la base du PIB dans les rapports du FMI (article IV 2020-2021, annexe statistique) et de la Banque mondiale (revue des dépenses publiques 2020) | imf.org refuse le téléchargement automatique (403) ; à lire à la main. Un résultat de recherche attribue au rapport d'article IV de 2010 (n° 10/282) l'adoption « début 2010 » de nouveaux comptes 1997-2008 conformes au SCN 1993 et un PIB nominal « environ 10 % » plus haut : **non relu, à ne pas citer** |
+| L5 | Méthode de la rétropolation 2010-2014 en base 2015 ; existence d'une rétropolation avant 2010 | « Une note méthodologique plus complète accompagne la publication des résultats » (note du 15 août 2021, p. 3, n. 1) : non identifiée ; portail de données de l'INS (accès fermé)  ; recherche R2 ci-dessous |
+| L6 | Mention de la base du PIB dans la revue des dépenses publiques de la Banque mondiale (2020) ; date exacte et support de la diffusion de « début 2010 » de la base 1997 | Le rapport de la Banque mondiale, à relire ; pour le FMI, la question est close (§ 1.3 et 1.5 ; imf.org refusant le téléchargement automatique, les deux rapports ont été pris dans les archives du web, § 7.2) |
 | L7 | Origine des valeurs 2002-2004 du PIB du ministère des Finances (32 112,0 ; 34 630,0 ; 37 601,2) | Lois de finances et rapports sur le budget 2003-2006 ; budgets économiques |
 | L8 | PIB en base 1997 définitif pour 2018-2020 | Communiqués trimestriels de l'INS de 2019-2021 ; la page `les-comptes-de-la-nation-en-2018` n'expose aucun PDF |
 | L9 | Termes arabes de « rétropolation » et de « changement de base » | Version arabe du communiqué du 15 août 2021 (l'adresse `/ar/publication/les-comptes-nationaux-changent-de-base` renvoie 404) ; rapport annuel de la BCT en arabe (aucun dans l'entrepôt) |
 
-### Recherches infructueuses — fiches proposées
+### Recherches infructueuses
 
 Aucune fiche de `docs/recherches.yml` ne porte sur les comptes nationaux
-(`scripts/recherches.py lister`, 6 octobre 2026). Les sources du registre (`titres_fts`,
-`titres_like`, `iort_ar`, `plein_texte`) visent le *Journal officiel* ; les deux recherches
-ci-dessous portent sur des publications statistiques. Elles sont proposées telles que faites, à
-verser si le registre admet ce type d'objet — sinon à garder ici.
+(`scripts/recherches.py lister`, 6 octobre 2026). **Les deux recherches ci-dessous ne peuvent pas
+entrer au registre** : son schéma n'admet que des requêtes sur le *Journal officiel*
+(`titres_fts`, `titres_like`, `iort_ar`, `plein_texte` des fascicules) et des sources de passe
+closes (`jort_cache`, `iort`, `corpus_local`, `pist`, `mcp_jort`, `visas`, `presse`) ; or elles
+portent sur des publications statistiques. Elles restent donc ici, dans la forme du registre, et
+l'annexe n'aura pas d'ancre `RECHERCHE` pour elles. Si l'humain veut les y verser, il faut d'abord
+étendre `scripts/recherches.py`.
 
-```yaml
-- id: r-ins-comptes-nation-base-1983
-  objet: première publication des Comptes de la nation en base 1983 (volumes n° 1 à 10) et date d'entrée en service du système
-  ou: precis/fr/annexe-pib.qmd (à créer)
-  requetes:
-    - {source: plein_texte, corpus: "tunisia-data, 19 éditions des Comptes de la nation", terme: "base 1983|année de base|SCN 68"}
-    - {source: plein_texte, corpus: "tunisia-data, rapports annuels BCT 1959-2025", terme: "système (des|de) compt(es|abilité) nation|ancien système|nouveau système|année de base"}
-  passes:
-    - date: 2026-10-06
-      resultat: aucun
-      couverture: >-
-        Éditions 2001-2005 à 2021-2025 lues en plein texte ; aucune édition antérieure dans
-        l'entrepôt. Rapports BCT : seul celui de 1992 répond (pp. 43, 52, 98). Rapports 1978 et 1981
-        de la Banque mondiale sans couche texte, non lus.
-- id: r-ins-retropolation-base-2015
-  objet: note méthodologique de la base 2015 décrivant la rétropolation 2010-2014, et toute série en base 2015 antérieure à 2010
-  ou: precis/fr/annexe-pib.qmd (à créer)
-  requetes:
-    - {source: web, terme: "INS Tunisie comptes nationaux base 2015 rétropolation séries 2010-2014"}
-    - {source: plein_texte, corpus: "éditions 2015-2020 à 2021-2025", terme: "rétropol|séries? longue|nouvelles estimations"}
-  passes:
-    - date: 2026-10-06
-      resultat: aucun
-      couverture: >-
-        Trouvé : communiqué, note de 4 pages et classeur 2010-2020 du 15 août 2021. Non trouvé :
-        la « note méthodologique plus complète » ; aucune année antérieure à 2010. Portail de
-        données de l'INS non interrogé (accès fermé). UNdata : série 1000 à partir de 2015 seulement.
-```
+**R1 — première publication des *Comptes de la nation* en base 1983** (volumes n° 1 à 10) et date
+d'entrée en service du système.
+
+- Requêtes lancées : expression régulière
+  `base (19|20)[0-9]{2}|ann[ée]e de base|changement de base|r[ée]tropol|SCN ?(68|93|1968|1993|2008)|syst[èe]me de comptabilit`
+  sur le texte (`pdftotext -layout`) des dix-neuf éditions de
+  `R/ins-publications/comptes-de-la-nation/` ; expression
+  `syst[èe]me (des|de) compt(es|abilit[ée]) nation|ancien syst[èe]me|nouveau syst[èe]me (de|des) compt|base (19|20)[0-9]{2}|changement de base|rebasage|ann[ée]e de base|r[ée]tropol`
+  sur le texte des rapports annuels de la BCT 1985-2025 (`R/bct-archives/109/`).
+- Passe du 2026-10-06, documentaliste. Résultat : aucun. Couverture : éditions 2001-2005
+  (déc. 2006) à 2021-2025 (« Edition 2026 ») ; aucune édition antérieure dans l'entrepôt. BCT :
+  seul le rapport 1992 répond (pp. 43, 52, 98) ; les rapports 1959-1984 n'ont été interrogés que
+  sur « prix (constants) de AAAA » et « comptabilité nationale ». Non lus : rapports de la Banque
+  mondiale de 1978 et 1981 (sans couche texte). Couvert jusqu'au : 2026-10-06 pour l'entrepôt tel
+  qu'il est ce jour.
+
+**R2 — note méthodologique de la base 2015 décrivant la rétropolation 2010-2014**, et toute série
+en base 2015 antérieure à 2010.
+
+- Requêtes lancées : recherche web « INS Tunisie comptes nationaux base 2015 rétropolation séries
+  2010-2014 "base 2015" PIB révisé changement de base » ; expression `r[ée]tropol` sur le texte des
+  six éditions en base 2015 et des rapports de la BCT 2020-2025 (aucune occurrence) ; lecture de la
+  page `https://ins.tn/publication/les-comptes-nationaux-changent-de-base` et de ses deux pièces.
+- Passe du 2026-10-06, documentaliste. Résultat : aucun pour la note méthodologique et pour les
+  années antérieures à 2010 ; trouvé, le classeur 2010-2020 (`ins-pib-base-2015-2010-2020`, § 7.2).
+  Couverture : site de l'INS par ces seules pages ; portail de données de l'INS non interrogé
+  (accès fermé) ; UNdata, tableaux 1.1 et 4.1 : série 1000 à partir de 2015 seulement. Couvert
+  jusqu'au : 2026-10-06.
 
 ---
 
@@ -507,7 +539,8 @@ Ton : documentaire. Pas de nom de fichier, de script ni de modèle dans le texte
 | `wb-wdi` | `precis/{fr,ar}/retraites/references.json` | à remonter au niveau commun |
 | `bct-ra` | `marche_travail`, `remunerations_publiques`, `retraites` (fr et ar) | à remonter au niveau commun ; citer avec millésime et page |
 | `minfin-indicateurs-fp` | `precis/{fr,ar}/references.json` | URL générique : à préciser par le bibliographe |
-| `imf-tunisia-art4-2020`, `wb-tunisia-per-2020` | `remunerations_publiques` (fr et ar) | base du PIB à relire (L6) |
+| `imf-tunisia-art4-2020` | `remunerations_publiques` (fr et ar) | c'est le rapport n° 21/44 (adresse `1tunea2021001`) ; son titre imprimé est « 2021 Article IV Consultation » (février 2021), non « 2020 » : à signaler au bibliographe. Base du PIB établie (§ 1.5) |
+| `wb-tunisia-per-2020` | `remunerations_publiques` (fr et ar) | base du PIB à relire (L6) |
 
 ### 7.2 À créer (ébauches CSL-JSON)
 
@@ -522,6 +555,13 @@ Publications récupérées le 6 octobre 2026 et déposées dans
 | `INS_2021-08-15_note_changement_de_base_2015.pdf` (4 p.) | `https://ins.tn/sites/default/files-ftp3/files/publication/pdf/15082021%20SCNT%20Base%202015%20Document%20synthese.pdf` | `499e51976ec5bce54cac0b4ddd0bbd09706787a6b7943f73d79dde325490de34` |
 | `INS_2021-08-15_donnees_annuelles_base_2015_2010-2020.xlsx` | `https://ins.tn/sites/default/files-ftp3/files/publication/pdf/Données%20anuelles_2.xlsx` | `7e3737f84ad701d1df7c4c7bea1687df34c7f8374d0f1920d05f08bf10fbf43c` |
 | `INS_2021-03_cnat_presentation_SCNT97.pdf` (25 p. ; préface et méthodologie de l'édition 2008-2012, base 1997 ; non cité, gardé pour mémoire) | `https://www.ins.tn/sites/default/files-ftp3/files/2021-03/cnat-presentation.pdf` | `43873eec90f16205239d3453094ef62cc20d7b63333c81826f866b44408e324a` |
+
+| `R/banque-mondiale-rapports/imf_2021_044_art4_tunisia.pdf` (FMI, rapport n° 21/44) | `https://web.archive.org/web/20211114144956id_/https://www.imf.org/-/media/Files/Publications/CR/2021/English/1TUNEA2021001.ashx` | `f6f6792d2a60e7f65f92a9ca509ee7a8cc73a13c4074c97caf06e6594ad7c16e` |
+| `R/banque-mondiale-rapports/imf_2010_282_art4_tunisia.pdf` (FMI, rapport n° 10/282) | `https://web.archive.org/web/20110804234937id_/http://www.imf.org/external/pubs/ft/scr/2010/cr10282.pdf` | `be97d6a7663780686a936a9bcbb795924c55216e525d7476ac48dc6cc9c70d56` |
+| `R/undata/sna_101_tunisie_AAAA.html` (64 pages, 1960-2023) | adresse du § 2.3 | non relevée (pages dynamiques) |
+
+Les deux rapports du FMI sont dans `R/banque-mondiale-rapports/`, ignoré par git, où l'entrepôt
+range déjà les rapports du FMI ; imf.org répondant 403, ils viennent des archives du web.
 
 Page d'accueil des deux premiers : `https://ins.tn/publication/les-comptes-nationaux-changent-de-base`
 (date affichée : 15-08-2021).
@@ -560,6 +600,28 @@ Français :
     "note": "citation-key: ins-pib-base-2015-2010-2020\nClasseur « Données » joint au communiqué du 15 août 2021 ; le titre est descriptif, le fichier n'en porte pas. Seule publication lue qui donne 2010-2014 en base 2015."
   }
 ]
+```
+
+Troisième entrée à créer, identique dans les deux langues (document en anglais ; en arabe,
+`publisher` : « صندوق النقد الدولي ») :
+
+```json
+{
+  "id": "imf-tunisia-art4-2010",
+  "type": "report",
+  "title": "Tunisia: 2010 Article IV Consultation — Staff Report; Public Information Notice on the Executive Board Discussion; and Statement by the Executive Director for Tunisia",
+  "title-short": "FMI, Tunisia: 2010 Article IV Consultation",
+  "author": [{"literal": "International Monetary Fund"}],
+  "collection-title": "IMF Country Report",
+  "number": "10/282",
+  "publisher": "Fonds monétaire international",
+  "publisher-place": "Washington, D.C.",
+  "issued": {"date-parts": [[2010, 9]]},
+  "language": "en",
+  "URL": "https://www.imf.org/external/pubs/ft/scr/2010/cr10282.pdf",
+  "accessed": {"date-parts": [[2026, 10, 6]]},
+  "note": "citation-key: imf-tunisia-art4-2010\nAnnexe 5, « Tunisia's New National Accounts » : adoption début 2010 de comptes 1997-2008 conformes au SCN 1993, PIB nominal relevé d'environ 10 %, tableau des deux séries 2002-2008. Lu dans la copie des archives du web du 4 août 2011."
+}
 ```
 
 Arabe (mêmes clés ; l'INS ne publie pas ce communiqué en arabe à l'adresse correspondante : le
