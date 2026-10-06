@@ -1,0 +1,89 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-06
+# séries (tunisia_data) : atmp-sinistres-declares-2012-2022-bruts
+# sources (citation) : @mas2023-profil-sst, @belloussaief2023-atmp
+# fiches : sources/mas-profil-sst-2023.md
+# méthode/hypothèses : Les deux documents sont gardés côte à côte, sans raccord : ils diffèrent pour les accidents du travail de 2014 (42 209 / 42 114) et de 2015 (37 376 / 38 002) et pour les accidents de trajet de 2014, 2015 et 2020. Le Profil ne cite pas la source de ses annexes. Sous-déclaration et sous-reconnaissance des maladies professionnelles signalées par la Lettre. Les indices de la Lettre n'ont pas de valeur pour l'incapacité permanente en 2020. Valeurs transcrites puis retrouvées une à une dans la couche texte des pages.
+# note : Accidents du travail, accidents de trajet et maladies professionnelles déclarés, 2013-2022
+Indicateur,Année,Valeur,Unité,Document,Tableau ou annexe,Page
+accidents de trajet,2014,2395,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents de trajet,2015,2098,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents de trajet,2016,2206,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents de trajet,2017,2229,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents de trajet,2018,2295,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents de trajet,2019,1770,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents de trajet,2020,1327,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents de trajet,2013,2574,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents de trajet,2014,2399,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents de trajet,2015,2074,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents de trajet,2016,2206,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents de trajet,2017,2229,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents de trajet,2018,2295,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents de trajet,2019,1770,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents de trajet,2020,1328,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents de trajet,2021,1440,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents de trajet,2022,1463,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents de trajet avec arrêt,2014,1781,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents de trajet avec arrêt,2015,1533,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents de trajet avec arrêt,2016,1717,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents de trajet avec arrêt,2017,1715,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents de trajet avec arrêt,2018,1671,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents de trajet avec arrêt,2019,1401,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents de trajet avec arrêt,2020,990,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents de trajet mortels,2013,58,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents de trajet mortels,2014,50,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents de trajet mortels,2015,56,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents de trajet mortels,2016,57,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents de trajet mortels,2017,40,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents de trajet mortels,2018,44,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents de trajet mortels,2019,37,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents de trajet mortels,2020,18,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents de trajet mortels,2021,16,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents de trajet mortels,2022,28,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents du travail,2014,42114,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents du travail,2015,38002,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents du travail,2016,34594,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents du travail,2017,33671,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents du travail,2018,33505,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents du travail,2019,32929,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents du travail,2020,23316,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents du travail avec arrêt,2014,30521,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents du travail avec arrêt,2015,27805,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents du travail avec arrêt,2016,25809,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents du travail avec arrêt,2017,24849,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents du travail avec arrêt,2018,26043,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents du travail avec arrêt,2019,24472,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents du travail avec arrêt,2020,17405,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+accidents mortels sur les lieux de travail,2013,131,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents mortels sur les lieux de travail,2014,92,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents mortels sur les lieux de travail,2015,115,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents mortels sur les lieux de travail,2016,99,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents mortels sur les lieux de travail,2017,112,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents mortels sur les lieux de travail,2018,65,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents mortels sur les lieux de travail,2019,95,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents mortels sur les lieux de travail,2020,96,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents mortels sur les lieux de travail,2021,84,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents mortels sur les lieux de travail,2022,65,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 10,99
+accidents sur les lieux de travail,2013,44112,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents sur les lieux de travail,2014,42209,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents sur les lieux de travail,2015,37376,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents sur les lieux de travail,2016,34594,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents sur les lieux de travail,2017,33671,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents sur les lieux de travail,2018,33505,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents sur les lieux de travail,2019,32929,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents sur les lieux de travail,2020,23316,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents sur les lieux de travail,2021,24172,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+accidents sur les lieux de travail,2022,25003,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 11,99
+maladies professionnelles déclarées,2014,1195,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+maladies professionnelles déclarées,2015,1367,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+maladies professionnelles déclarées,2016,1551,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+maladies professionnelles déclarées,2017,1709,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+maladies professionnelles déclarées,2018,1852,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+maladies professionnelles déclarées,2019,2025,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+maladies professionnelles déclarées,2020,1860,cas déclarés,"La Lettre du CRES n° 8, janvier 2023",tableau 1,2
+maladies professionnelles déclarées,2016,1551,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 15,101
+maladies professionnelles déclarées,2017,1709,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 15,101
+maladies professionnelles déclarées,2018,1852,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 15,101
+maladies professionnelles déclarées,2019,2025,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 15,101
+maladies professionnelles déclarées,2020,1860,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 15,101
+maladies professionnelles déclarées,2021,2243,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 15,101
+maladies professionnelles déclarées,2022,2895,cas déclarés,"MAS, Profil national de la SST, 2023",annexe 15,101

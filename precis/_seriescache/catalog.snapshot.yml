@@ -1820,3 +1820,35 @@
     يحفظ المؤشر النموّ لا المستويات ولا البنية، ولا يعوّض إعادة الاحتساب. نسبة سنة
     1970 من البنك الدولي.'
   fiche: docs/pib-croissance-volume.md
+- id: atmp-sinistres-declares-2012-2022-bruts
+  titre: 'Accidents du travail et maladies professionnelles déclarés, et indices de
+    fréquence, 2012-2022 : Profil national de la SST et Lettre du CRES n° 8'
+  sources:
+  - mas2023-profil-sst
+  - belloussaief2023-atmp
+  build: scripts/extract_atmp_sinistres_declares.py:main
+  raw:
+  - data/raw/caisses/mas/profil_national_sst_2023_fr.pdf
+  - data/raw/caisses/cres/cres_lettre_n8_2023_atmp.pdf
+  output: data/processed/caisses/atmp_sinistres_declares_2012_2022_bruts.csv
+  unite: cas déclarés ; indices pour 1 000 salariés
+  perimetre: 'déclarations à la CNAM reprises de deux documents : accidents sur les
+    lieux de travail et de trajet, mortels ou non, 2013-2022, et maladies professionnelles
+    2016-2022 (Profil, annexes 10, 11 et 15) ; accidents et maladies avec et sans
+    arrêt 2014-2020 et indices de fréquence 2012-2020 (Lettre du CRES, tableaux 1
+    et 3). Fonction publique et indépendants hors champ selon la Lettre.'
+  caveats: 'Les deux documents sont gardés côte à côte, sans raccord : ils diffèrent
+    pour les accidents du travail de 2014 (42 209 / 42 114) et de 2015 (37 376 / 38
+    002) et pour les accidents de trajet de 2014, 2015 et 2020. Le Profil ne cite
+    pas la source de ses annexes. Sous-déclaration et sous-reconnaissance des maladies
+    professionnelles signalées par la Lettre. Les indices de la Lettre n''ont pas
+    de valeur pour l''incapacité permanente en 2020. Valeurs transcrites puis retrouvées
+    une à une dans la couche texte des pages.'
+  titre_ar: حوادث الشغل والأمراض المهنية المصرّح بها ومؤشرات التواتر، 2012-2022
+  unite_ar: تصاريح؛ مؤشرات لكل ألف أجير
+  perimetre_ar: 'تصاريح لدى الصندوق الوطني للتأمين على المرض منقولة عن وثيقتين: الملف
+    الوطني للصحة والسلامة المهنية 2023 ورسالة مركز البحوث والدراسات الاجتماعية عدد
+    8'
+  caveats_ar: الوثيقتان غير متطابقتين في 2014 و2015 و2020؛ بقيت القراءتان منفصلتين
+    دون تصحيح.
+  fiche: sources/mas-profil-sst-2023.md
