@@ -153,7 +153,8 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
   - **études extérieures** (PDF collectés le 6 octobre 2026 dans `tunisia-data`, lisibles,
     contenu non relevé) : annexe 4.2 du volume d'annexes de la Banque mondiale (p. 35) —
     taille de l'échantillon et libellé des questions de l'enquête ; étude de Ghazouani
-    (2011), tableau 1, p. 7 — méthode et série annuelle 1994-2007, à citer de première main
+    (2011) — citée de première main depuis le 6 octobre 2026 (pp. 3-9 lues, tableau 1 repris) ;
+    restent sa figure 2 (coût en MD par année), ses annexes et la cause des creux de 2004-2005
     (clé à verser). L'étude IFC-ECOPA de novembre 2012 est un rapport préliminaire non
     publié : à obtenir ;
   - **calendrier de 2014 — lisible** : LF 2015 (loi n° 2014-59), art. 18, « mesures de

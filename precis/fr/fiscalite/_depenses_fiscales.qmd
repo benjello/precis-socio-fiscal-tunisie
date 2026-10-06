@@ -406,13 +406,41 @@ Source : @loeprick2014-incitations-fiscales, p. 15.
 
 Sous ces hypothèses, le taux effectif marginal est de 35,78 % pour l'industrie du régime intérieur et de 4,53 % pour l'industrie exportatrice [@ocde2013-incitations-fiscales-tunisie, p. 7]. Le rapport recommande par ailleurs la publication d'un rapport annuel sur les dépenses fiscales.
 
-#### Ghazouani (2011) : une moyenne de 1994 à 2007
+#### Ghazouani (2011) : le coût des incitations du code, de 1994 à 2007 {#sec-df-ghazouani}
 
-**Méthode.** L'étude de Kamel Ghazouani pour le Centre tunisien des études économiques, de juin 2011, n'est connue ici que par ce que l'OCDE en rapporte : un coût direct des incitations fiscales, établi d'après des données du ministère des Finances. La méthode n'est pas décrite par la source qui la rapporte.
+**Méthode.** L'étude est celle de Kamel Ghazouani, maître de conférences à l'université de Carthage, présentée le 30 juin 2011 au Centre tunisien des études économiques. Elle porte sur le seul code de 1993 et additionne deux ensembles : les incitations fiscales — impôt sur les sociétés, impôt sur le revenu, droits de douane, taxe sur la valeur ajoutée — et les incitations financières — primes d'investissement, prise en charge de travaux d'infrastructure, bonifications d'intérêt, prise en charge de la contribution patronale de sécurité sociale. Elle rapporte leur total au PIB, aux recettes fiscales et aux dépenses de l'État, en donnant pour sources l'Institut national de la statistique et le ministère des Finances [@ghazouani2011-evaluation-incitations-cii, p. 5 et 7]. Elle ne dit ni comment le coût de chaque incitation est chiffré, ni la base du PIB employé.
 
-Ce coût direct est, selon l'OCDE, de 2,14 % du PIB en moyenne de 1994 à 2007 [@ocde2013-incitations-fiscales-tunisie, p. 12]. C'est le seul point disponible ici pour les années antérieures à 2008, et il ne se raccorde à aucune des mesures qui précèdent. La Banque mondiale écrit elle-même qu'aucune évaluation d'ensemble n'avait été menée avant 2012 [@banquemondiale2014-revolution-inachevee, ch. 4, note 10, p. 164].
+Sur la période 1994-2007, les incitations du code représentent en moyenne 2,14 % du PIB, 10,76 % des recettes fiscales et 9,05 % des dépenses de gestion et de développement de l'État (@tbl-df-ghazouani). L'OCDE reprend cette moyenne en la disant un coût des seules incitations fiscales [@ocde2013-incitations-fiscales-tunisie, p. 12] ; l'étude, elle, la calcule sur le total, fiscal et financier.
 
-<!-- TODO (documentaliste) : lire l'étude de Ghazouani (2011), maintenant collectée (tunisia-data, data/raw/banque-mondiale-rapports/iace_2011_ghazouani_evaluation_incitations_cii.pdf) : méthode, série annuelle 1994-2007 du tableau 1, p. 7 ; puis la citer de première main (clé à verser) -->
+: Les incitations du code de 1993 rapportées au PIB et au budget de l'État, 1994-2007, selon Ghazouani (2011) {#tbl-df-ghazouani}
+
+| Année | % du PIB | % des recettes fiscales | % des dépenses de gestion et de développement |
+|---|---:|---:|---:|
+| 1994 | 2,48 | 12,93 | 9,58 |
+| 1995 | 2,42 | 11,99 | 9,39 |
+| 1996 | 2,24 | 11,30 | 8,89 |
+| 1997 | 1,92 | 9,48 | 7,60 |
+| 1998 | 2,19 | 10,38 | 8,86 |
+| 1999 | 2,59 | 12,26 | 10,30 |
+| 2000 | 2,18 | 10,26 | 8,82 |
+| 2001 | 2,43 | 11,19 | 9,77 |
+| 2002 | 2,42 | 11,45 | 10,00 |
+| 2003 | 2,02 | 9,60 | 8,50 |
+| 2004 | 0,85 | 4,46 | 4,01 |
+| 2005 | 0,77 | 4,30 | 3,92 |
+| 2006 | 1,72 | 10,13 | 8,60 |
+| 2007 | 1,68 | 9,78 | 8,32 |
+| **Moyenne** | **2,14** | **10,76** | **9,05** |
+
+Source : @ghazouani2011-evaluation-incitations-cii, tableau 1, p. 7. La base du PIB n'est pas précisée par la source.
+
+Selon la même étude, les incitations fiscales font 80 % du total, soit environ 500 MD par an en moyenne de 1994 à 2007, et les incitations financières 20 %. L'exonération de l'impôt sur les sociétés est le premier poste : 4 039 MD cumulés sur les treize premières années du code, soit 288 MD par an et 56 % des incitations fiscales ; les exonérations de droits de douane en font 37 %, soit 192 MD par an. Parmi les incitations financières, les primes d'investissement pèsent 82 MD par an et la prise en charge de la contribution patronale de sécurité sociale 13,59 MD par an [@ghazouani2011-evaluation-incitations-cii, p. 5].
+
+Deux réserves de lecture. Le tableau porte deux années très basses, 2004 et 2005, que l'étude ne commente pas. Et pour 2007, il donne 1,68 % du PIB, alors que le texte chiffre plus loin le coût total à environ 950 MD, « environ 2.5 % du PIB » [@ghazouani2011-evaluation-incitations-cii, p. 9] : les deux chiffres ne coïncident pas, et l'étude n'en dit rien.
+
+C'est la seule série annuelle disponible ici pour les années antérieures à 2008. Elle ne se raccorde à aucune des mesures qui précèdent : son périmètre — fiscal et financier — n'est ni celui du coût net de la Banque mondiale, ni celui des dépenses fiscales du ministère des Finances. La Banque mondiale écrit elle-même qu'aucune évaluation d'ensemble n'avait été menée avant 2012 [@banquemondiale2014-revolution-inachevee, ch. 4, note 10, p. 164].
+
+<!-- TODO (documentaliste) : l'étude de Ghazouani a été lue sur sa couche texte le 6 octobre 2026 (copie : tunisia-data, data/raw/banque-mondiale-rapports/iace_2011_ghazouani_evaluation_incitations_cii.pdf ; capture Wayback du 15 août 2011) : pp. 3-9 seulement. Restent à lire : la figure 2 (coût en MD par année, fiscal et financier), les annexes statistiques et économétriques, et la cause des creux de 2004-2005. Une estimation de « 2,9 % du PIB » que la note documentaire lui attribuait n'y figure pas. -->
 
 <!-- TODO (documentaliste) : retirés du chapitre le 6 octobre 2026 — (1) l'estimation « 557 MD en 2000, environ 2 % du PIB » que la Banque mondiale (ch. 4, note 10) attribue à l'OMC : elle ne figure pas dans la notification G/SCM/N/71/TUN du 1er juin 2001, à rapprocher de sa section IX (pp. 14-15) ; (2) « environ 0,75 % du PIB en 2005 », attribué à deux rapports d'assistance technique du FMI (2005 et 2012), non publiés : seconde main, sans méthode. Restent à relever : figures 4.1 (répartition régionale) et 4.4 (coût net en % du PIB et des recettes, 2009-2011) du rapport de la Banque mondiale ; annexes 4.3 à 4.6 (sources fiscales). Non repris : tableau 4.1 du rapport (36 % d'entreprises « marginales » dans le régime de l'exportation, p. 142), diapositive 5 du diaporama (ratio de redondance), documents de la réforme de 2013-2014 connus de seconde main (note, § 3.3). -->
 
