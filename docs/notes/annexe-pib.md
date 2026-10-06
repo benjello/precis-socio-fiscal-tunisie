@@ -50,7 +50,7 @@ inexacte (§ 4.3).
 | Base | Système suivi | Première publication lue | Années publiées par l'INS dans cette base | Rétropolation par l'INS | Niveau de preuve |
 |---|---|---|---|---|---|
 | Avant 1983 | non établi | — | — | — | **[non établi]** : des comptes existent (BCT, rapports annuels, agrégats aux prix de 1957, 1960, 1966, 1972, 1980), aucune « base » n'est nommée par un texte lu |
-| **1983** | SCN 1968 | la plus ancienne édition lue est le volume n° 11, 2001-2005, déc. 2006 ; la première publication n'est pas identifiée | éditions lues : 2001-2008 ; transmis aux Nations unies : 1992-2009 (série 30), et 1970-1997 (série 20) | étendue vers le passé non établie | **[lu]** pour le système et les éditions ; **[non établi]** pour la date d'entrée en service et la profondeur |
+| **1983** | SCN 1968 | la plus ancienne édition lue est le volume n° 11, 2001-2005, déc. 2006 ; la première publication n'est pas identifiée | éditions lues : 2001-2008 ; transmis aux Nations unies : 1992-2009 (série 30) ; la série 20 (1970-1997) est au même niveau, sa base n'est pas dite | étendue vers le passé non établie | **[lu]** pour le système et les éditions ; **[non établi]** pour la date d'entrée en service et la profondeur |
 | **1997** | SCN 1993 (« SCNT97 ») | volume n° 15, 2005-2009, déc. 2010 ; premier emploi par la BCT : rapport annuel 2009 | éditions : 2005-2017 ; transmis aux Nations unies : 1997-2017 (série 100) ; comptes poursuivis jusqu'en 2020 | **jusqu'en 1997** : « le CD accompagnant ce volume contient la série des comptes 1997-2007 » | **[lu]** |
 | **2015** | SCN 2008 | communiqué et classeur du 15 août 2021 ; édition 2015-2020, vol. A et B, « Edition 2022 » | éditions : 2015-2025 ; transmis aux Nations unies : 2015-2023 (série 1000) | **jusqu'en 2010**, PIB et emplois aux prix courants et aux prix de l'année précédente, classeur du 15 août 2021 | **[lu]** |
 | « 1990 », « 2005 », « 2010 » | — | — | — | — | **[lu]** : années de prix des volumes, pas des bases (§ 1.5) |
@@ -252,7 +252,7 @@ l'INS du 15 août 2021 pour 2010-2014 (rétropolé), éditions pour 2015-2017 **
 
 Le 5 113 de 2015 est exactement le chiffre du communiqué de l'INS. Pour 2018-2020, la base 1997
 n'est connue que par des estimations : BCT, rapport annuel 2020, p. 59 — 106 242, 114 939 et
-110 295 MD **[lu]**, soit 6,3 %, 7,0 % et 8,3 % sous la base 2015 d'aujourd'hui — et, pour 2020,
+110 295 MD **[lu]** ; la base 2015 d'aujourd'hui est 6,3 %, 7,0 % et 8,3 % au-dessus — et, pour 2020,
 par les ratios du communiqué de l'INS (11,8 → 11,1 ; 88,6 → 83,5), qui impliquent un écart
 d'environ 6,1 à 6,3 %. Les deux ne concordent pas pour 2020 : ne pas en tirer une valeur.
 
@@ -260,7 +260,7 @@ d'environ 6,1 à 6,3 %. Les deux ne concordent pas pour 2020 : ne pas en tirer u
 
 Aucune année antérieure à 1997 n'est publiée dans deux bases dans les sources réunies
 **[non établi]**. UNdata : série 10 (1960-1969) et série 20 (1970-1997) ne se recouvrent pas ; la
-Banque mondiale s'écarte de la série 10 sur 1961-1969 (de − 3,5 % à + 0,6 %) et de la série 20 en
+Banque mondiale s'écarte de la série 10 sur 1961-1969 (de − 2,7 % à + 0,6 %) et de la série 20 en
 1983 et 1984 (5 668,1 et 6 412,4 contre 5 497,4 et 6 240,0, soit + 3,1 % et + 2,8 %) **[calculé]**.
 
 ### 2.4 Ce que cela fait à une part du PIB
@@ -301,7 +301,7 @@ années d'une édition, « semi-définitifs » pour la quatrième, « provisoire
 | | 2015-2023 série 1000 | « SNA 2008 » = base 2015 | non | idem **[rapproché]** |
 | **Ministère des Finances**, classeurs « indicateurs des finances publiques » (PIB déduit du déficit en dinars et en % du PIB) | 1986-1996 | égale à la série 20 des Nations unies (base 1983 présumée) | — | base non précisée par la source **[rapproché]** |
 | | 1997-2001, 2005-2008 | 1997 | oui pour 1997-2001 | **[rapproché]** |
-| | 2002-2004 | **non rattachée** : 32 112,0 ; 34 630,0 ; 37 601,2 — 2,4 à 3,2 % sous la base 1997, 7 % au-dessus de la base 1983 | — | **[non établi]** |
+| | 2002-2004 | **non rattachée** : 32 112,0 ; 34 630,0 ; 37 601,2 — 2,1 à 3,2 % sous la base 1997, environ 7 % au-dessus de la base 1983 | — | **[non établi]** |
 | | 2009 | 1997, valeur d'une édition périmée (58 883,3 ; édition 2006-2010 : 58 890,3 ; ensuite 58 677,2) | — | **[rapproché]** |
 | | 2010-2014 | **2015, rétropolation de l'INS** | **oui** | égalité, à 0,1 MD, avec le classeur du 15 août 2021 **[rapproché]** |
 | | 2015-2024 | 2015 | non | **[rapproché]** |
@@ -339,7 +339,7 @@ et colonnes de `precis/_seriescache/*.csv`. Les trois modules `cnss_*` de
 | `irpp-ratios.csv` | `pib_cnat_MDT` | 1990-2011 : copie du PIB du ministère ; **2012-2014 : base 1997** ; 2015-2024 : base 2015 | « PIB des comptes nationaux » | **non** |
 | `masse-salariale-ratios.csv` | `pib_nominal_MDT`, `ms_sur_pib_pct`, `source_pib` | même colonne que `pib_cnat_MDT` : 1990-1996 série 20, 1997-2001 base 1997, 2002-2004 non rattaché, 2005-2009 base 1997, 2010-2011 base 2015 rétropolée, **2012-2014 base 1997**, 2015-2024 base 2015 | `base_pib: 2015` ; `source_pib` = « Min.Fin retro (b2015) » ou « CNAT b2015 » | **non** |
 | `masse-salariale-reconciliation.csv` | `pib_base2010_MDT` | 2017 : édition 2013-2017, **base 1997** ; 2019 et 2020 : base 2015 ÷ 1,06, valeur non publiée | « base 2010 (FMI/BM) » | **non** |
-| `croissances-revenus-prix.csv` | taux du PIB nominal | 1962-1992 : WDI (1970 à cheval sur les séries 10 et 20 ; 1983-1985 sur des valeurs que la série 20 ne porte pas) ; 1993-1997 série 30 ; 1998-2001 série 100 ; 2002-2025 éditions, taux intra-édition | exacte depuis 1993 ; « non vérifié dans une même base » avant | oui, réserve à compléter |
+| `croissances-revenus-prix.csv` | taux du PIB nominal | 1962-1992 : WDI (jusqu'en 1969, valeurs qu'aucune série des Nations unies ne porte, puis série 20 : le taux de 1970 est à cheval ; ceux de 1983 et 1985 reposent sur des valeurs de 1983-1984 que la série 20 ne porte pas) ; 1993-1997 série 30 ; 1998-2001 série 100 ; 2002-2025 éditions, taux intra-édition | exacte depuis 1993 ; « non vérifié dans une même base » avant | oui, réserve à compléter |
 
 Conséquence chiffrée de l'étiquette inexacte de 2012-2014 **[calculé]** : la part de la masse
 salariale de l'État dans le PIB publiée par le précis vaut 12,30 %, 12,79 % et 13,03 % en 2012,
@@ -378,12 +378,13 @@ base constante, la part monte de 12,35 à 12,90.
 | 24 | Finances locales | idem | fig-fl-lp-ins, compte des collectivités locales | `cnat-pib-nominal` par base | dite : « chaque valeur est rapportée au PIB de sa propre base » | non | oui, deux points par année commune | oui |
 | 25 | Finances locales | `_longue_periode.qmd` l. 73 | « de 0,74 % en 2002 à 0,61-0,64 % en 2008-2010 […] 0,41 % en 2011 […] 0,66 % en 2019 » | idem | dite au § des ruptures, pas dans la phrase : 2002 en base 1983, 2008-2011 en base 1997, 2019 en base 2015 | non | — | partiel |
 
-**Bilan** : 25 emplois relevés (15 figures ou groupes de figures, 10 phrases chiffrées) dans six
-volumes ; aucun dans « Marché du travail ». **Conformes : 5** (les quatre figures des finances
+**Bilan** : 25 emplois relevés (17 figures ou groupes de figures, 8 phrases chiffrées) dans six
+volumes ; aucun dans « Marché du travail » ni dans les deux autres figures de longue période des
+finances locales (autonomie, caisse des prêts), qui n'ont pas de vue au PIB. **Conformes : 5** (les quatre figures des finances
 locales et les figures du barème d'actualisation). **Partiels : 7** (six figures de la CNSS
 1990-2004, où 1997 est tracée mais non 2002 ; une phrase des finances locales). **Non conformes :
-13** : les quatre figures de rendement de la fiscalité et leurs cinq phrases, la figure de la masse
-salariale, sa phrase et sa « réconciliation », et les trois citations du FMI et de la Banque
+13** : les quatre figures de rendement de la fiscalité et leurs quatre phrases, la figure de la masse
+salariale, sa phrase et sa « réconciliation », et les deux passages qui citent le FMI et la Banque
 mondiale.
 
 `finances_locales.py` (`_pib`, `_pib_par_base`, `_ruptures_pib`) est le modèle à généraliser : il
