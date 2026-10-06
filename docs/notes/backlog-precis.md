@@ -652,7 +652,14 @@ Cinq figures depuis le 6 octobre 2026 (rubrique « Figures » ci-dessous). Trois
   `fig-compensation-recettes-caisse` dans `_institution.qmd`, dont le tableau
   `tbl-compensation-recettes-affectees` est désormais engendré depuis les séries
   (`cm.tableau_recettes_affectees`), avec les parts des dépenses de l'État et du PIB. Les parts
-  tracées sont celles de l'entrepôt ; aucune part publiée par une source n'est tracée.
+  tracées sont celles de l'entrepôt ; aucune part publiée par une source n'est tracée. Seule
+  la structure par poste (poste / total de l'année) est calculée dans le module.
+  `fig-compensation-longue-periode` est la vue budgétaire seule ;
+  `fig-compensation-sources-exterieures` la vue d'ensemble 1982-2026, budgétaire et rapports
+  extérieurs.
+  - **Pas de figure par produit** (céréales, huile, lait, sucre) : l'entrepôt n'a aucune série
+    par produit — seulement des montants cités en note pour 1984 ; le chapitre n'a que 1984
+    et 2009-2011. À reprendre quand les rapports de la BCT seront relevés produit par produit.
   - **Snapshots à refaire** : `precis/_seriescache/compensation-{parts,prevu-realise,
     recettes-caisse}.csv` viennent de la branche `data/compensation-serie-longue` de
     `tunisia-data`, **non fusionnée** au 6 octobre 2026 ; relancer

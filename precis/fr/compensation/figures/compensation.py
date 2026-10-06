@@ -80,6 +80,7 @@ STYLE_FAMILLE = {
     "budget_compensation_bct": dict(color=VIOLET, ls=":", marker="D", lw=1.6, ms=4.5),
     "cgc_charges_bct": dict(color=BRUN, ls="-.", marker="^", lw=1.4, ms=5),
     "cgc_depenses_bct": dict(color=GRIS, ls="-", marker="v", lw=1.2, ms=5),
+    "fonds_special_lf": dict(color=GRIS, ls="", marker="h", lw=0, ms=7),
     "cgc_bm_1985": dict(color=ROUGE, ls="", marker="P", lw=0, ms=7),
     "fmi_1996": dict(color=ROUGE, ls="", marker="X", lw=0, ms=7),
     "fmi_2000": dict(color=ROUGE, ls="", marker="*", lw=0, ms=9),
@@ -105,6 +106,11 @@ _L = {
     "pct_pib": {"fr": "En % du PIB", "ar": "% من الناتج المحلي الإجمالي"},
     "pct_pib_log": {"fr": "En % du PIB\n(échelle logarithmique)",
                     "ar": "% من الناتج المحلي الإجمالي\n(سلّم لوغاريتمي)"},
+    "pct_total": {"fr": "En % du total de la dépense de compensation de l'année",
+                  "ar": "% من مجموع نفقات الدعم للسنة"},
+    "vue_struct": {"fr": "En part du total de la compensation", "ar": "كنسبة من مجموع الدعم"},
+    "c_part_total_compensation_pct": {"fr": "% du total de la compensation",
+                                      "ar": "% من مجموع الدعم"},
     "pct_ecart": {"fr": "Écart au prévu (%)", "ar": "الفارق عن المتوقَّع (%)"},
     "pct_couv": {"fr": "Recettes / dépense (%)", "ar": "الموارد / النفقات (%)"},
     "vue_dep": {"fr": "En part des dépenses de l'État", "ar": "كنسبة من نفقات الدولة"},
@@ -178,8 +184,13 @@ _L = {
                   "ar": "؛ «غ. م.»: سنة الأساس غير محدَّدة في المصدر"},
     "lg_pib_bm": {"fr": " ; « BM » : PIB de la Banque mondiale",
                   "ar": "؛ «ب. د.»: ناتج البنك الدولي"},
-    "lg_exterieur": {"fr": "en rouge, sans trait : rapports extérieurs",
-                     "ar": "بالأحمر ودون خطّ: التقارير الخارجية"},
+    "lg_bloc_budgetaire": {
+        "fr": "Budgétaire (lois de finances, ministère des Finances, rapports de la BCT qui "
+              "les relaient)",
+        "ar": "الميزانية (قوانين المالية، وزارة المالية، تقارير البنك المركزي الناقلة عنها)"},
+    "lg_bloc_exterieur": {"fr": "Rapports extérieurs (Banque mondiale, FMI)",
+                          "ar": "التقارير الخارجية (البنك الدولي، صندوق النقد الدولي)"},
+    "lg_bloc_reperes": {"fr": "Repères", "ar": "علامات"},
     # ruptures (repères courts ; le texte complet est dans les données)
     "rup_2003": {"fr": "2003 : dépense\nen trois postes", "ar": "2003: نفقات\nبثلاثة أبواب"},
     "rup_2004": {"fr": "2004 : première ligne\nde carburants",
@@ -250,10 +261,12 @@ _L = {
                "ar": "ناتج وزارة المالية، {b}؛ لا تبيّن السلسلة إن كانت القيمة معاد احتسابها"},
     "n_propre": {"fr": "PIB propre au ministère des Finances : base non précisée par la source",
                  "ar": "ناتج خاصّ بوزارة المالية: سنة الأساس غير محدَّدة في المصدر"},
-    "n_retropole": {"fr": "PIB propre au ministère des Finances, rétropolé (environ + 5 % sur "
-                          "la base 1997) : base non précisée par la source",
-                    "ar": "ناتج خاصّ بوزارة المالية، معاد احتسابه (نحو + 5 % على أساس 1997): "
-                          "سنة الأساس غير محدَّدة في المصدر"},
+    "n_retropole": {"fr": "PIB propre au ministère des Finances, supérieur d'environ 5 % à la "
+                          "base 1997 — l'ordre de grandeur d'une rétropolation de la base "
+                          "2015 : ni la base ni la rétropolation ne sont précisées par la source",
+                    "ar": "ناتج خاصّ بوزارة المالية، يفوق أساس 1997 بنحو 5 % — وهو ما يوافق "
+                          "إعادة احتساب على أساس 2015: لا سنة الأساس ولا إعادة الاحتساب "
+                          "محدَّدتان في المصدر"},
     "n_estimation": {"fr": "PIB estimé par le ministère des Finances : base non précisée par "
                            "la source",
                      "ar": "ناتج مقدَّر من وزارة المالية: سنة الأساس غير محدَّدة في المصدر"},
@@ -304,9 +317,10 @@ def _unite(mesure: str) -> str:
     return " %"
 
 
-COLONNE = {"md": "valeur_MDT", "dep": "part_depenses_etat_pct", "pib": "part_pib_pct"}
-YLABEL = {"md": "md", "dep": "pct_dep", "pib": "pct_pib"}
-DECIMALES = {"md": 1, "dep": 2, "pib": 2}
+COLONNE = {"md": "valeur_MDT", "dep": "part_depenses_etat_pct", "pib": "part_pib_pct",
+           "struct": "part_total_compensation_pct"}
+YLABEL = {"md": "md", "dep": "pct_dep", "pib": "pct_pib", "struct": "pct_total"}
+DECIMALES = {"md": 1, "dep": 2, "pib": 2, "struct": 1}
 
 
 # --- lecture des séries ------------------------------------------------------------------
@@ -343,15 +357,42 @@ def _suites(annees) -> list[list[int]]:
 _META_ORIGINE: dict[str, dict] = {}
 
 
-# Tournures de relevé, bannies du texte rendu : ce qui en porte une est omis de la page (notes
-# des tables, réserves du catalogue) et reste dans la série.
+# Tournures de relevé, bannies du texte rendu : la partie de note qui en porte une est omise
+# de la table affichée (elle reste dans la série).
 _RE_RELEVE = re.compile(r"relu|couche texte|à l'image", re.IGNORECASE)
 
-
-def _sans_releve(texte: str) -> str:
-    """Le texte sans ses phrases de relevé (découpe sur « . » suivi d'une majuscule)."""
-    phrases = re.split(r"(?<=\.) (?=[A-ZÀ-Ý])", texte)
-    return " ".join(p for p in phrases if not _RE_RELEVE.search(p))
+# Périmètre et réserves affichés dans l'onglet « Sources » et dans l'en-tête des fichiers
+# téléchargés. Ceux du catalogue de l'entrepôt s'adressent à qui trace la série (noms de
+# colonnes, consignes de tracé, journal de relevé) ; ceux-ci disent la même chose au lecteur.
+# Les versions arabes du catalogue sont déjà rédigées pour le lecteur et sont gardées.
+PROVENANCE_LECTEUR = {
+    SERIE_PARTS: dict(
+        perimetre=("une valeur par année, par série et par poste, avec sa source et son état, "
+                   "et trois parts calculées : dans les dépenses de l'État hors service de la "
+                   "dette et dans les dépenses de fonctionnement (séries budgétaires de l'État, "
+                   "1986-2025), dans le PIB (PIB du ministère des Finances 1986-2025, Banque "
+                   "mondiale avant 1986)"),
+        caveats=("Les séries ne se raccordent pas. La part du PIB se lit par segments : le PIB "
+                 "change de source ou de base en 1986, 1997, 2002, 2005, 2010, 2015 et 2025. "
+                 "Les dépenses de l'État sont hors service de la dette. Carburants : rupture de "
+                 "périmètre en 2015. 2025 et 2026 sont des lois de finances.")),
+    SERIE_PREVU: dict(
+        perimetre=("chaque prévision (XIe Plan 2007-2011 ; lois de finances et lois de "
+                   "finances complémentaires 2012-2026, par poste ; prévisions initiales des "
+                   "charges de la Caisse 1986-2011 citées par la Banque centrale), en regard de "
+                   "la valeur de la même série et du même poste"),
+        caveats=("Le prévu et le réalisé sont toujours de la même série. Le réalisé de "
+                 "2012-2013 et de 2019-2024 est une colonne que la source ne qualifie pas ; les "
+                 "prévisions de 2019-2023 sont des colonnes d'années à venir, sans étiquette, "
+                 "des rapports de la Banque centrale ; 2025 et 2026 n'ont pas de réalisé. Les "
+                 "lois de finances initiales de 2012, 2014 et 2015 n'y figurent pas. Un seul "
+                 "plan de développement est chiffré, le XIe, par une annexe du ministère des "
+                 "Finances.")),
+    SERIE_RECETTES: dict(
+        caveats=("Deux séries de recettes et deux dépenses en regard, qui ne se raccordent "
+                 "pas. Aucune valeur pour 1987-1990, 1997 et 2000-2008. PIB : celui du "
+                 "ministère des Finances, par segments ; Banque mondiale en 1984-1985.")),
+}
 
 
 def _cles_pib(d) -> list[str]:
@@ -373,11 +414,7 @@ def _declarer(series_id: str, cles) -> list[str]:
     cles = list(dict.fromkeys(str(k) for k in cles if not _vide(k)))
     champs = {k: v for k, v in origine.items() if k != "id"}
     champs["sources"] = [k for k in cles if k in connues]
-    # Réserves du catalogue : la phrase qui décrit le relevé (et non la donnée) n'est pas
-    # reprise dans la page ni dans l'en-tête du fichier téléchargé.
-    for champ in ("caveats", "caveats_ar"):
-        if isinstance(origine.get(champ), str):
-            champs[champ] = _sans_releve(origine[champ])
+    champs.update(PROVENANCE_LECTEUR.get(series_id, {}))
     # « (fichier à tracer) » est une consigne d'atelier, pas un titre.
     champs["titre"] = str(origine.get("titre", series_id)).replace(" (fichier à tracer)", "")
     figtools.register_provenance(series_id, **champs)
@@ -390,7 +427,8 @@ def _nature_pib(segment):
     """Ce que la série dit du PIB d'un segment : sa base, et s'il est rétropolé.
 
     D'après `segment_pib` et la fiche `docs/compensation-ratios.md` de l'entrepôt : les
-    valeurs de 2010-2014 y sont données pour rétropolées, celle de 2025 pour une estimation ;
+    valeurs de 2010-2014 y ont l'ordre de grandeur d'une rétropolation de la base 2015, sans
+    que le ministère le dise ; celle de 2025 est une estimation ;
     pour les segments rattachés à une base, la série ne dit pas si la valeur est celle de la
     publication d'origine. Un tronçon « non rattaché » n'a pas de base précisée."""
     if _vide(segment):
@@ -414,7 +452,18 @@ def _note(v):
     if _vide(v):
         return v
     morceaux = [m for m in str(v).split(" ; ") if not _RE_RELEVE.search(m)]
-    return " ; ".join(morceaux) if morceaux else None
+    return _lisible(" ; ".join(morceaux)) if morceaux else None
+
+
+def _lisible(v):
+    """Une cellule de texte telle qu'elle est affichée : sans les noms de code de l'entrepôt
+    ni ce qui décrit son contenu plutôt que la donnée. La série garde le texte d'origine."""
+    if _vide(v):
+        return v
+    t = str(v).replace("la famille `budget`", "la dépense budgétaire en trois postes")
+    t = t.replace(" (aucune série de base connue avant 1992 dans l'entrepôt)", "")
+    t = t.replace(", état non relevé", "")
+    return t.replace("`", "")
 
 
 def _table(d, colonnes):
@@ -438,6 +487,8 @@ def _table(d, colonnes):
             out[_lab("c_nature_pib")] = d[col].map(_nature_pib)
         elif col.startswith("page_"):  # numéros de page : entiers, vides admis
             out[_lab("c_" + col)] = d[col].astype("Int64")
+        elif d[col].dtype == object:
+            out[_lab("c_" + col)] = d[col].map(_lisible)
         else:
             out[_lab("c_" + col)] = d[col]
     import pandas as pd
@@ -583,7 +634,7 @@ def _repere(ax, annee, texte):
     figtools.infobulle(p, texte)
 
 
-def _marque_ruptures(ax, d, x0, x1, pib=False, cote=None):
+def _marque_ruptures(ax, d, x0, x1, pib=False, cote=None, bas=False):
     """Traits verticaux des ruptures de série lues dans les données ; pour la part du PIB,
     un trait à chaque changement de segment et la base de chaque segment au-dessus du cadre."""
     rup = _ruptures_des_donnees(d)
@@ -598,9 +649,13 @@ def _marque_ruptures(ax, d, x0, x1, pib=False, cote=None):
         cle = f"rup_{a}"
         if cle in _L:
             gauche = cote.get(a) == "gauche"
-            ax.annotate(_ft(cle), xy=(a - 0.5, 1), xycoords=("data", "axes fraction"),
-                        xytext=(-4 if gauche else 4, -4 - 22 * (niveau % 2 if not gauche else 0)),
-                        textcoords="offset points", ha="right" if gauche else "left", va="top",
+            # `bas` : libellés au pied du cadre, quand les courbes occupent le haut (niveaux).
+            dy = 4 + 22 * (niveau % 2 if not gauche else 0)
+            ax.annotate(_ft(cle), xy=(a - 0.5, 0 if bas else 1),
+                        xycoords=("data", "axes fraction"),
+                        xytext=(-4 if gauche else 4, dy if bas else -dy),
+                        textcoords="offset points", ha="right" if gauche else "left",
+                        va="bottom" if bas else "top",
                         fontsize=7, color=GRIS, zorder=5,
                         bbox=dict(facecolor="white", edgecolor="none", alpha=0.85, pad=1))
             if not gauche:
@@ -675,7 +730,7 @@ def fig_longue_periode(mesure: str = "dep"):
         ax.set_ylim(bottom=0)
         ax.set_ylim(top=ax.get_ylim()[1] * 1.12)
     _marque_ruptures(ax, d[d[col].notna()], x0, x1, pib=(mesure == "pib"),
-                     cote={2003: "gauche"})
+                     cote={2003: "gauche"}, bas=(mesure == "md"))
     poignees = _legende_familles(traces)
     poignees.append(_poignee("lg_prevu", color=GRIS, marker="o", mfc="white", ls=(0, (1, 2)),
                              lw=1.2))
@@ -699,8 +754,23 @@ def _figure_longue_periode():
 # --- 2. La décomposition par poste -------------------------------------------------------
 
 def _par_poste():
+    """La dépense budgétaire par poste, avec la part de chaque poste dans le total de l'année.
+
+    Cette part est la seule grandeur calculée ici : valeur du poste / valeur de la ligne
+    « total » de la même année (même famille, et un seul état retenu par année). Les trois
+    postes somment au total chaque année ; `ecarts_au_total()` le contrôle."""
     d = _parts()
-    return d[d["famille"] == "budget"]
+    d = d[d["famille"] == "budget"].copy()
+    total = d[d["poste"] == "total"].set_index("annee")["valeur_MDT"]
+    d["part_total_compensation_pct"] = (100 * d["valeur_MDT"] / d["annee"].map(total)).round(1)
+    return d
+
+
+def ecarts_au_total(seuil: float = 0.05) -> dict[int, float]:
+    """{année: somme des trois postes − total} pour les années où l'écart dépasse `seuil` MD."""
+    d = _par_poste().pivot(index="annee", columns="poste", values="valeur_MDT").fillna(0)
+    e = (d["produits_de_base"] + d["carburants"] + d["transport"] - d["total"]).round(2)
+    return {int(a): float(v) for a, v in e.items() if abs(v) > seuil}
 
 
 def fig_par_poste(mesure: str = "md"):
@@ -725,7 +795,13 @@ def fig_par_poste(mesure: str = "md"):
                            edgecolor=couleur if prevu else "white", linewidth=0.8,
                            alpha=0.4 if prevu else 1.0, ls="--" if prevu else "-", zorder=2)
             figtools.infobulle(barre[0], _bulle(r, _lab("p_" + poste), v, mesure))
+            if mesure == "struct" and v >= 6:  # pourcentage dans la barre, si la place le permet
+                ax.annotate(_nombre(v, 0), xy=(a, bas + v / 2), ha="center", va="center",
+                            fontsize=6.2, color=NOIR, zorder=4,
+                            bbox=dict(facecolor="white", edgecolor="none", alpha=0.75, pad=0.6))
             bas += v
+        if mesure == "struct":
+            continue
         total = da[da["poste"] == "total"]
         haut = bas if total.empty else float(total.iloc[0][col])
         ax.annotate(_nombre(haut, dec), xy=(a, bas), xytext=(0, 2), textcoords="offset points",
@@ -736,7 +812,11 @@ def fig_par_poste(mesure: str = "md"):
     ax.tick_params(axis="x", labelsize=7)
     if mesure == "md":
         ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nombre(v, 0)))
-    ax.set_ylim(top=ax.get_ylim()[1] * 1.14)
+    if mesure == "struct":
+        ax.set_ylim(0, 118)  # la marge du haut porte les libellés de rupture
+        ax.set_yticks(range(0, 101, 20))
+    else:
+        ax.set_ylim(top=ax.get_ylim()[1] * 1.14)
     _marque_ruptures(ax, d, x0, x1, pib=(mesure == "pib"))
     poignees = [Patch(facecolor=c, hatch=h, edgecolor="white",
                       label=figtools.fig_text(_lab("p_" + p))) for p, c, h in POSTES]
@@ -753,9 +833,11 @@ def fig_par_poste(mesure: str = "md"):
 def _figure_par_poste():
     d = _par_poste().sort_values(["annee", "poste"])
     vues = [(_lab("vue_md"), fig_par_poste("md")), (_lab("vue_dep"), fig_par_poste("dep")),
-            (_lab("vue_pib"), fig_par_poste("pib"))]
+            (_lab("vue_pib"), fig_par_poste("pib")), (_lab("vue_struct"), fig_par_poste("struct"))]
     cles = list(d["source"]) + [CLE_DEPENSES] + _cles_pib(d)
-    return vues, _table(d, COLS_PARTS), {SERIE_PARTS: cles}, "fig_compensation_par_poste"
+    colonnes = list(COLS_PARTS)
+    colonnes.insert(colonnes.index("valeur_MDT") + 1, "part_total_compensation_pct")
+    return vues, _table(d, colonnes), {SERIE_PARTS: cles}, "fig_compensation_par_poste"
 
 
 # --- 3. Prévu et réalisé -----------------------------------------------------------------
@@ -992,40 +1074,63 @@ def tableau_recettes_affectees(caption: str, tbl_id: str = "tbl-compensation-rec
     print("\n".join(out) + f"\n\n: {caption} {{#{tbl_id}}}\n")
 
 
-# --- 5. Les sources extérieures face aux séries budgétaires ------------------------------
+# --- 5. Vue d'ensemble : séries budgétaires et rapports extérieurs ------------------------
 
-FAMILLES_BUDGETAIRES_ANCIENNES = ("budget_dotation_cgc_bct", "cgc_charges_bct",
-                                  "cgc_depenses_bct")
+FAMILLES_BUDGETAIRES = ("budget", "budget_dotation_cgc_bct", "budget_compensation_bct",
+                        "cgc_charges_bct", "cgc_depenses_bct", "fonds_special_lf")
 FAMILLES_EXTERIEURES = ("cgc_bm_1985", "fmi_1996", "fmi_2000")
-FIN_EXTERIEUR = 1999  # un an après la dernière année du FMI
+DEBUT_ENSEMBLE = 1982  # première année des rapports extérieurs ; 1971 reste dans les données
 
 
 def _sources_exterieures():
+    """Toutes les familles retenues de la série ; pour la dépense budgétaire, le total."""
     d = _parts()
-    d = d[d["famille"].isin(FAMILLES_BUDGETAIRES_ANCIENNES + FAMILLES_EXTERIEURES)]
-    debut = int(d[d["nature"] == "exterieur"]["annee"].min())
-    return d[(d["annee"] >= debut) & (d["annee"] <= FIN_EXTERIEUR)]
+    d = d[d["famille"].isin(FAMILLES_BUDGETAIRES + FAMILLES_EXTERIEURES)]
+    return d[(d["famille"] != "budget") | (d["poste"] == "total")]
 
 
 def fig_sources_exterieures(mesure: str = "pib"):
     figtools.apply_lang_font()
     d = _sources_exterieures()
+    d = d[d["annee"] >= DEBUT_ENSEMBLE]
     col = COLONNE[mesure]
-    fig, ax = plt.subplots(figsize=(9.5, 5.6))
-    familles = FAMILLES_BUDGETAIRES_ANCIENNES + FAMILLES_EXTERIEURES
-    traces = [f for f in familles if _trace_famille(ax, d, f, mesure)]
-    annees = d[d[col].notna()]["annee"].astype(int)
+    fig, ax = plt.subplots(figsize=(9.5, 5.8))
+    budgetaires = [f for f in FAMILLES_BUDGETAIRES if _trace_famille(ax, d, f, mesure)]
+    exterieures = [f for f in FAMILLES_EXTERIEURES if _trace_famille(ax, d, f, mesure)]
+    trace = d[d[col].notna()]
+    annees = trace["annee"].astype(int)
     x0, x1 = int(annees.min()), int(annees.max())
-    _cadre(ax, YLABEL[mesure], x0, x1)
-    ax.xaxis.set_major_locator(MaxNLocator(integer=True, nbins=18))
-    ax.set_ylim(bottom=0)
-    ax.set_ylim(top=ax.get_ylim()[1] * 1.08)
-    _marque_ruptures(ax, d[d[col].notna()], x0, x1, pib=(mesure == "pib"))
-    poignees = _legende_familles(traces)
-    poignees.append(_poignee("lg_exterieur", color="none"))
+    _cadre(ax, "md_log" if mesure == "md" else YLABEL[mesure], x0, x1)
+    if mesure == "md":
+        _axe_log(ax)
+    else:
+        ax.set_ylim(bottom=0)
+        ax.set_ylim(top=ax.get_ylim()[1] * 1.12)
+    _marque_ruptures(ax, trace, x0, x1, pib=(mesure == "pib"), cote={2003: "gauche"},
+                     bas=(mesure == "md"))
+    # Légende en blocs titrés : budgétaire, rapports extérieurs, repères.
+    titres = []
+
+    def titre(cle):
+        titres.append(len(poignees))
+        poignees.append(_poignee(cle, color="none"))
+
+    poignees: list = []
+    titre("lg_bloc_budgetaire")
+    poignees += _legende_familles(budgetaires)
+    if exterieures:
+        titre("lg_bloc_exterieur")
+        poignees += _legende_familles(exterieures)
+    titre("lg_bloc_reperes")
+    poignees.append(_poignee("lg_prevu", color=GRIS, marker="o", mfc="white", ls=(0, (1, 2)),
+                             lw=1.2))
+    poignees.append(_poignee("lg_rupture", color=GRIS, ls=(0, (2, 2)), lw=1, marker=7, ms=5))
     if mesure == "pib":
-        poignees.append(_poignee_pib(d))
-    _legende(ax, poignees, ncol=1, y=-0.12)
+        poignees.append(_poignee_pib(trace))
+    legende = ax.legend(handles=poignees, loc="upper center", bbox_to_anchor=(0.5, 0),
+                        borderaxespad=4.2, ncol=1, fontsize=7.2, frameon=False)
+    for i in titres:
+        legende.get_texts()[i].set_fontweight("bold")
     fig.tight_layout()
     return fig
 
@@ -1033,8 +1138,9 @@ def fig_sources_exterieures(mesure: str = "pib"):
 def _figure_sources_exterieures():
     d = _sources_exterieures().sort_values(["nature", "famille", "annee"])
     vues = [(_lab("vue_pib"), fig_sources_exterieures("pib")),
+            (_lab("vue_dep"), fig_sources_exterieures("dep")),
             (_lab("vue_md"), fig_sources_exterieures("md"))]
-    cles = list(d["source"]) + _cles_pib(d)
+    cles = list(d["source"]) + [CLE_DEPENSES] + _cles_pib(d)
     return (vues, _table(d, COLS_PARTS), {SERIE_PARTS: cles},
             "fig_compensation_sources_exterieures")
 

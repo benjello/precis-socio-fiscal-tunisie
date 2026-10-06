@@ -71,8 +71,9 @@ cm.figure(
         "celui de la Banque mondiale, qui accole les bases sans les raccorder — base non précisée "
         "par la source ; ensuite celui du ministère des Finances, en base 1983 présumée pour "
         "1986-1991, en base 1983 pour 1992-1996, en base 1997 pour 1997-2001 et 2005-2009. Ses "
-        "valeurs de 2010 et 2011 sont rétropolées, supérieures d'environ 5 % à la base 1997 : "
-        "leur base n'est pas précisée par la source (« n. r. »). Pour les segments rattachés à "
+        "valeurs de 2010 et 2011 dépassent d'environ 5 % la base 1997 — l'ordre de grandeur d'une "
+        "rétropolation de la base 2015, que la source n'annonce pas : leur base n'est pas "
+        "précisée par la source (« n. r. »). Pour les segments rattachés à "
         "une base, la série ne dit pas si la valeur est celle de la publication d'origine ou une "
         "valeur rétropolée."))
 ```
@@ -88,8 +89,9 @@ cm.tableau_recettes_affectees(
              "montants : ministère des Finances [@minfin-finances-publiques-2011]. Les deux "
              "parts placées sous un montant le rapportent aux dépenses de l'État et au PIB que "
              "donne le ministère des Finances ; son PIB est en base 1997 pour 2009 ; ses valeurs de "
-             "2010 et 2011 sont rétropolées, supérieures d'environ 5 % à la base 1997, et leur "
-             "base n'est pas précisée par la source (voir l'[annexe sur le PIB](../annexe-pib.html))."))
+             "2010 et 2011 dépassent d'environ 5 % la base 1997 — l'ordre de grandeur d'une "
+             "rétropolation de la base 2015, que la source n'annonce pas —, et leur base n'est "
+             "pas précisée par la source (voir l'[annexe sur le PIB](../annexe-pib.html))."))
 ```
 
 La compensation est alors, pour l'essentiel, une dépense du budget général de l'État. Le texte qui a opéré ce passage — ou la date à laquelle la dépense a quitté les fonds spéciaux du Trésor — n'est pas identifié ici ; la dépense figure en tout cas au budget en 2003, première année du @tbl-compensation-2003-2011.

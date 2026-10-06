@@ -46,9 +46,10 @@ cm.figure(
         "raccorder — base non précisée par la source ; ensuite celui du ministère des Finances, "
         "en base 1983 présumée pour 1986-1991, en base 1983 pour 1992-1996, en base 1997 pour "
         "1997-2001 et 2005-2009, en base 2015 pour 2015-2024. Ses valeurs de 2002-2004 lui sont "
-        "propres, celles de 2010-2014 sont rétropolées, supérieures d'environ 5 % à la base "
-        "1997, et celle de 2025 est une estimation : pour ces trois tronçons, notés « n. r. », "
-        "la base n'est pas précisée par la source. Pour les autres, la série ne dit pas si la "
+        "propres, celles de 2010-2014 dépassent d'environ 5 % la base 1997 — l'ordre de grandeur "
+        "d'une rétropolation de la base 2015, que la source n'annonce pas —, et celle de 2025 "
+        "est une estimation : pour ces trois tronçons, notés « n. r. », la base n'est pas "
+        "précisée par la source. Pour les autres, la série ne dit pas si la "
         "valeur est celle de la publication d'origine ou une valeur rétropolée. Le passage de la "
         "base 1983 à la base 1997 relève le niveau du PIB de 9,8 % en 1997, celui à la base 2015 "
         "de 6,0 % en 2015 : la même dépense pèse d'autant moins en points de PIB. "
@@ -101,7 +102,8 @@ cm.figure(
         "égal au montant prévu. Les prévisions de 2019 à 2023 sont les colonnes d'années à "
         "venir des rapports annuels de la Banque centrale. Les lois de finances initiales de 2012, "
         "2014 et 2015 ne sont pas dans la série ; 2025 et 2026 n'ont pas encore de réalisé. "
-        "Un seul plan de développement est chiffré, le XIe (2007-2011)."))
+        "Un seul plan de développement est chiffré, le XIe (2007-2011). Deux prévisions de la "
+        "dotation du budget à la Caisse, pour 1989 et 2007, ne sont que dans les données."))
 ```
 
 Le ministère des Finances rapproche la dépense réalisée de celle que prévoyait le XI^e^ Plan, stable et proche de 900 MD par an.
@@ -139,7 +141,7 @@ La BCT qualifie de « record » la part de 2013 [@bct-ra-2015, p. 33] ; celles q
 
 ## La décomposition par poste {#sec-compensation-par-poste}
 
-Le @fig-compensation-par-poste réunit en une série les deux tableaux qui suivent, de 2003 à 2026, et rapporte chaque poste aux dépenses de l'État et au PIB.
+Le @fig-compensation-par-poste réunit en une série les deux tableaux qui suivent, de 2003 à 2026, et rapporte chaque poste aux dépenses de l'État, au PIB et au total de la dépense de compensation.
 
 ```{python}
 #| label: fig-compensation-par-poste
@@ -150,10 +152,13 @@ from figures import compensation as cm
 cm.figure(
     "par_poste",
     caption=("La dépense budgétaire de compensation par poste, 2003-2026 : en millions de "
-             "dinars courants, en part des dépenses de l'État hors service de la dette et en "
-             "part du PIB"),
+             "dinars courants, en part des dépenses de l'État hors service de la dette, en "
+             "part du PIB et en part du total de la dépense de compensation"),
     note_lecture=(
-        "Chaque barre empile les trois postes ; le nombre qui la surmonte est le total. Les "
+        "Chaque barre empile les trois postes ; le nombre qui la surmonte est le total. La "
+        "quatrième vue donne la structure : chaque poste en pourcentage du total de l'année, "
+        "calculé sur les montants de la première vue, dont les trois postes somment au total "
+        "chaque année. Les "
         "barres claires de 2025 et 2026 sont des lois de finances, non des dépenses constatées ; "
         "2026 n'a ni dépenses de l'État ni PIB en regard. "
         "Deux ruptures sont marquées : 2004, première année où le budget porte une ligne de "
@@ -166,8 +171,9 @@ cm.figure(
         "changements est une rupture de série (voir l'[annexe sur le PIB](../annexe-pib.html)). "
         "Le PIB est celui du ministère des Finances : en base 1997 pour 2005-2009, en base 2015 "
         "pour 2015-2024 — le passage à la base 2015 relève son niveau de 6,0 %. Ses valeurs de "
-        "2002-2004 lui sont propres, celles de 2010-2014 sont rétropolées, supérieures d'environ "
-        "5 % à la base 1997, et celle de 2025 est une estimation : pour ces trois tronçons, notés "
+        "2002-2004 lui sont propres, celles de 2010-2014 dépassent d'environ 5 % la base 1997 — "
+        "l'ordre de grandeur d'une rétropolation de la base 2015, que la source n'annonce pas —, "
+        "et celle de 2025 est une estimation : pour ces trois tronçons, notés "
         "« n. r. », la base n'est pas précisée par la source. Pour les segments en base 1997 et "
         "en base 2015, la série ne dit pas si la valeur est celle de la publication d'origine ou "
         "une valeur rétropolée."))
@@ -280,9 +286,7 @@ La mission estime en outre à environ 1 210 MD, sur 2010-2012, le soutien en nat
 
 ## Les sources extérieures : Banque mondiale et FMI {#sec-compensation-sources-exterieures}
 
-Les tableaux qui suivent sont repris de rapports de la Banque mondiale et du FMI. Ils sont distincts de la série budgétaire du ministère des Finances : ils ne se raccordent ni entre eux ni à elle.
-
-Le @fig-compensation-sources-exterieures les place à côté des séries budgétaires des mêmes années, toutes rapportées au même PIB.
+Les rapports de la Banque mondiale et du FMI donnent d'autres séries que celles du budget. Elles ne se raccordent ni entre elles ni aux séries budgétaires : aucune ne mesure la même grandeur. Le @fig-compensation-sources-exterieures les superpose pourtant, des années 1980 à 2026, pour suivre l'ordre de grandeur sur quarante ans, chaque série distinguée et chaque rupture marquée. Les tableaux repris de ces rapports suivent la figure.
 
 ```{python}
 #| label: fig-compensation-sources-exterieures
@@ -292,32 +296,52 @@ import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import compensation as cm
 cm.figure(
     "sources_exterieures",
-    caption=("Les subventions de la Caisse selon la Banque mondiale et le FMI, en regard des "
-             "séries budgétaires des mêmes années, 1982-1999 : en part du PIB et en millions de "
-             "dinars courants"),
+    caption=("La compensation sur quarante ans : séries budgétaires et rapports de la Banque "
+             "mondiale et du FMI, 1982-2026, en part du PIB, en part des dépenses de l'État "
+             "hors service de la dette et en millions de dinars courants"),
     note_lecture=(
-        "Les séries budgétaires sont en traits ; les rapports extérieurs, en marques rouges que "
-        "rien ne relie. Toutes les parts sont calculées sur le même PIB : ce ne sont pas les "
-        "parts que ces rapports impriment. Ce PIB est, en 1982-1985, celui de la Banque "
-        "mondiale, qui accole les bases sans les raccorder — base non précisée par la source ; "
-        "ensuite celui du ministère des Finances, en base 1983 présumée pour 1986-1991, en base "
-        "1983 pour 1992-1996 et en base 1997 à partir de 1997, où son niveau est relevé de "
-        "9,8 % ; la série ne dit pas si ces valeurs sont celles de la publication d'origine ou "
-        "des valeurs rétropolées. Chaque changement de segment est une rupture de série qui "
-        "tient au seul dénominateur (voir l'[annexe sur le PIB](../annexe-pib.html)) ; aucune "
-        "part des dépenses de l'État, mesure qui ne dépend d'aucune base, n'est calculable pour "
-        "les rapports extérieurs. Chaque source mesure une grandeur qui lui est propre.\n\n"
+        "Neuf séries, qui ne se raccordent pas : aucun trait ne va de l'une à l'autre, et une "
+        "année sans valeur interrompt le trait. Les séries budgétaires sont en traits, une "
+        "couleur et un style par grandeur ; les rapports extérieurs, en marques rouges que rien "
+        "ne relie. Les points creux sont des lois de finances ou des prévisions. La prévision "
+        "du fonds spécial pour 1971 n'est pas tracée ; elle est dans les données.\n\n"
+        "**Changements de grandeur.** Jusqu'en 2002, les séries ne portent que sur les produits "
+        "de base : charges de la Caisse, qu'elles soient payées par le budget ou par ses "
+        "recettes propres (1984-2011) ; dotation du budget à la Caisse ; « dépenses de "
+        "compensation » du budget ; dépenses et prévisions du fonds spécial. En 2003 commence "
+        "la dépense budgétaire en trois postes, qui ajoute le transport ; la première ligne de "
+        "carburants y apparaît en 2004 ; en 2015, les opérations de commercialisation des "
+        "hydrocarbures sont séparées. De 2003 à 2011, charges de la Caisse, dotation et dépense "
+        "en trois postes coexistent sans coïncider.\n\n"
+        "**Ce que mesure chaque rapport extérieur.**\n\n"
         "- **Banque mondiale, rapport de 1985** : dépenses de la Caisse, d'après la Caisse. La "
         "valeur de 1983 est provisoire et comprend 32 MD dus en 1982 et non payés cette année-là ; "
         "celle de 1984 est le budget de la Caisse, non une dépense (point creux).\n"
-        "- **FMI, rapport de 1996** : ligne des subventions alimentaires dans les opérations de "
-        "l'administration centrale, d'après le ministère des Finances, 1991-1995.\n"
-        "- **FMI, rapport de 2000** : subventions aux consommateurs par la Caisse, 1994-1998, "
-        "intérêts sur les arriérés de la Caisse compris ; la série s'écarte de celle du rapport "
-        "de 1996 pour 1994 et 1995.\n"
-        "- **Séries budgétaires** : dotation du budget à la Caisse et charges de la Caisse, "
-        "d'après les rapports annuels de la Banque centrale ; dépenses du fonds spécial de la "
-        "Caisse pour 1983 et 1984."))
+        "- **FMI, rapport de 1996** : ligne des subventions alimentaires (« food subsidies ») "
+        "dans les opérations de l'administration centrale, d'après le ministère des Finances, "
+        "1991-1995.\n"
+        "- **FMI, rapport de 2000** : subventions aux consommateurs par la Caisse (« consumer "
+        "subsidies by CGC »), 1994-1998, intérêts sur les arriérés de la Caisse compris ; la "
+        "série s'écarte de celle du rapport de 1996 pour 1994 et 1995.\n\n"
+        "**Le PIB.** Toutes les parts sont calculées sur le même PIB : ce ne sont pas celles "
+        "que ces rapports impriment. La part du PIB est tracée par segments, jamais reliés, et "
+        "chaque changement de segment est une rupture de série qui tient au seul dénominateur "
+        "(voir l'[annexe sur le PIB](../annexe-pib.html)). Le PIB employé est, en 1982-1985, "
+        "celui de la Banque mondiale, qui accole les bases sans les raccorder — base non "
+        "précisée par la source ; ensuite celui du ministère des Finances, en base 1983 "
+        "présumée pour 1986-1991, en base 1983 pour 1992-1996, en base 1997 pour 1997-2001 et "
+        "2005-2009, en base 2015 pour 2015-2024. Ses valeurs de 2002-2004 lui sont propres, "
+        "celles de 2010-2014 dépassent d'environ 5 % la base 1997 — l'ordre de grandeur d'une "
+        "rétropolation de la base 2015, que la source n'annonce pas —, et celle de 2025 est une "
+        "estimation : pour ces trois tronçons, notés « n. r. », la base n'est pas précisée par "
+        "la source. Pour les autres, la série ne dit pas si la valeur est celle de la "
+        "publication d'origine ou une valeur rétropolée. Le passage à la base 1997 relève le "
+        "niveau du PIB de 9,8 % en 1997, celui à la base 2015 de 6,0 % en 2015.\n\n"
+        "**Les deux autres vues.** La part des dépenses de l'État ne dépend d'aucune base : "
+        "c'est la mesure homogène, mais elle n'existe que depuis 1986 et pour les seules "
+        "dépenses du budget — ni les charges de la Caisse ni les rapports extérieurs n'y "
+        "figurent. Le niveau en dinars courants est en échelle logarithmique, seule façon de "
+        "lire sur une même vue les 260 MD de 1984 et les 11 999 MD de 2022."))
 ```
 ### Le budget de la Caisse pour 1984 selon la Banque mondiale
 
