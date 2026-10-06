@@ -140,6 +140,47 @@ se constate ; il ne s'indigne pas.
 **Jamais un chiffre ponctuel sans sa vue d'évolution** — un graphique ou un tableau daté.
 Un taux en vigueur sans son histoire ne dit pas ce qu'il vaut.
 
+**Le budgétaire, les rapports extérieurs et les évaluations économiques ne sont pas au même
+niveau.** Trois familles de chiffres portent sur un même dispositif et ne disent pas la même
+chose : le *budgétaire* — lois de finances, lois de règlement, exécution du budget, évaluations
+du ministère des Finances — ; les *rapports extérieurs*, c'est-à-dire ceux des institutions
+internationales, FMI, Banque mondiale et OCDE en particulier ; les *évaluations économiques* —
+études d'incidence, d'impact, de coût, d'auteurs ou d'institutions. Un organisme tunisien qui
+ne fait que reprendre les chiffres du ministère des Finances — la Banque centrale dans son
+rapport annuel — reste du budgétaire : on le dit relais, et on nomme la source qu'il cite. Elles ne se mêlent ni dans un même tableau ni
+dans un même fil de récit, et ne se présentent pas sur le même plan : le budgétaire d'abord, en
+entonnoir (la dépense globale, sa décomposition par type, puis les gros plans) ; les autres
+ensuite, dans des sections titrées comme telles. Toute étude extérieure vient avec **sa
+méthode**, en une phrase au moins avant ses chiffres : qui, quelles années de données, quel
+périmètre, comment la grandeur est calculée (déclarations fiscales ou enquête, coût brut ou net,
+hypothèses). Une estimation dont la source ne décrit pas la méthode le dit — « méthode non
+décrite par la source qui la rapporte » — ou ne figure pas.
+
+La comparaison reste permise, et utile : **sur un graphique**, on peut superposer des séries de
+familles différentes dès lors qu'elles sont censées traiter des mêmes dispositifs, à condition
+que la légende distingue les familles et que les changements de méthode et les ruptures de série
+soient expliqués. Pour le temps long, on préfère une mesure cohérente — part du PIB, part des
+dépenses publiques — aux niveaux en dinars courants.
+
+**Tout PIB dit sa base, et s'il est rétropolé.** Chaque fois qu'une grandeur est rapportée au
+PIB — dans un tableau, une figure, une phrase —, on sait et on dit dans quelle base de comptes
+nationaux ce PIB est exprimé, et si la valeur est celle de la base d'origine ou une valeur
+rétropolée dans une base postérieure. Quand la source ne le dit pas, on l'écrit : « base non
+précisée par la source ». Deux PIB de bases différentes ne se chaînent jamais en silence : une
+série en part du PIB se trace par segments de base, et le changement de base se signale comme
+une rupture de série. L'explication des bases, de leurs écarts de niveau et des rétropolations
+n'est pas répétée de chapitre en chapitre : elle vit dans l'annexe du site consacrée au PIB
+(`precis/fr/annexe-pib.qmd`), à laquelle renvoie toute rupture de série qui tient à un
+changement de base. La part des dépenses de l'État, qui ne dépend d'aucune base, se donne à
+côté de la part du PIB dès que les deux existent.
+
+**Les études citées sont récupérées, systématiquement.** Toute étude, tout rapport cité dans un
+volume a sa copie locale — le PDF lui-même, non une page qui le résume — rangée dans l'entrepôt
+`tunisia-data` (`data/raw/<source>/`, hors git, avec son adresse d'origine, sa date de collecte
+et son empreinte dans le catalogue `sources/`). On ne cite pas de seconde main ce qu'on peut
+obtenir : quand un rapport en rapporte un autre, on va chercher l'autre. Un document
+introuvable est dit tel dans `docs/notes/biblio-a-rapatrier.md`, avec les adresses essayées.
+
 **Une série importante déjà portée par `openfisca-tunisia` ne disparaît pas faute de références.**
 Elle peut être publiée provisoirement pour rendre son évolution repérable, à trois conditions :
 la série entière est montrée plutôt qu'une valeur isolée ; la prose ne nomme pas le modèle et ne

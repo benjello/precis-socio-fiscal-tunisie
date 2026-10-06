@@ -1,10 +1,9 @@
 """Figure « les plus gros dispositifs dérogatoires » du livre *Fiscalité*.
 
-PAS ENCORE APPELÉE PAR LE CHAPITRE. Le coût des régimes dérogatoires est très
-majoritairement porté par le droit de consommation, la TVA et les droits de douane :
-cette figure appartient donc aux sections sur les impôts indirects, encore à écrire, et
-non à la section sur l'impôt sur le revenu où elle avait d'abord été placée. Le module
-est prêt ; il attend son chapitre.
+PAS APPELÉE PAR LE CHAPITRE « Les dépenses fiscales et les régimes d'incitation »
+(`_depenses_fiscales.qmd`), et à ne pas appeler en l'état : la série cousue ci-dessous
+porte une rupture de périmètre (voir « TROIS RAPPORTS COUSUS »). Le code est inchangé ;
+il est à reprendre quand la série aura été reconstruite périmètre par périmètre.
 
 Sélection : parmi les dispositifs chiffrés **les sept années** de 2017 à 2023, les huit dont
 le coût moyen est le plus élevé. Les plus gros et les plus longs, donc — ceux qu'on peut
@@ -12,8 +11,20 @@ suivre sans trou et qui pèsent réellement.
 
 TROIS RAPPORTS COUSUS. La série vient de trois rapports annexés aux lois de finances, qui se
 chevauchent et se révisent entre eux. On retient le millésime le plus récent pour chaque
-exercice, et la figure marque les deux coutures : ce ne sont pas des ruptures de niveau,
-mais des changements de source, et un lecteur doit pouvoir le voir.
+exercice, et la figure marque les deux coutures.
+
+LA COUTURE 2019/2020 EST UNE RUPTURE DE PÉRIMÈTRE, et non un simple changement de source
+(`docs/notes/fiscalite-depenses-fiscales.md`, § 2.2). Les rapports annexés aux projets de
+loi de finances pour 2024 et 2025 donnent leurs montants sans les dépenses fiscales liées
+à l'exonération des médicaments et des engrais ; le rapport annexé au projet pour 2021
+les compte (tableau n° 9, exercice 2019 : 274,5 MD de médicaments et articles
+paramédicaux, 249,9 MD d'engrais). Dans la série traitée, les lignes dont le libellé
+nomme médicaments, pharmacie ou engrais passent de 321,8 MD en 2019 à 32,1 MD en 2020 puis
+0,0 MD en 2023. La ligne « TVA : médicaments et produits paramédicaux » (222001333), l'une
+des huit que la sélection peut retenir, porte donc cet artefact : sa chute entre 2019 et
+2020 n'est pas une baisse du coût. La couture 2020/2021 (rapport 2024 → rapport 2025) n'a
+pas été examinée sous cet angle. Les rapports annexés aux projets pour 2022 et 2023 ne
+sont pas dans la série.
 """
 from __future__ import annotations
 

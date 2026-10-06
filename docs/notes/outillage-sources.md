@@ -204,6 +204,13 @@ texte de `recherches.py relancer` les reconnaît (empreinte identique au PDF ara
 numéro, ou texte extrait majoritairement arabe) et les compte « FR absent (fichier arabe) » :
 ils ne valent pas lecture de l'édition française.
 
+S'y ajoute, au 5 octobre 2026, le **n° 96 de 2026** (30 septembre 2026) : `Jo0962026.pdf` est
+identique octet pour octet à `Ja0962026.pdf`, et pist.tn sert encore l'arabe à l'adresse `2026F`.
+Ce numéro porte les décrets-lois n° 2026-1 à 2026-4 ; **le décret-loi n° 2026-4 (conseils
+municipaux) n'est pas indexé dans `jort_cache.db`** — ni par numéro, ni par intitulé — et échappe
+donc aux requêtes sur les titres : le chercher dans le texte converti du fascicule arabe
+(`markdown_output/JORT/2026/ar/Ja0962026.md`), dont les colonnes sont entrelacées.
+
 ### L'édition ARABE de l'an 2000 ne suit pas la règle de nommage
 
 `sync_biblio.url_jort` dérive l'adresse arabe de l'adresse française en changeant `F/Jo` en

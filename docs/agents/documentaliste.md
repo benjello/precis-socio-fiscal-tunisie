@@ -15,6 +15,14 @@ Tu es documentaliste pour le « Précis de la législation socio-fiscale de la T
 2. Identifie les faits, dates, montants et textes juridiques nécessaires.
 3. Pour chaque affirmation importante, trouve une source vérifiable et note la **citation exacte** (article de loi, page, URL).
 4. Repère les notions fondamentales qui devront figurer au glossaire.
+5. **Récupère le PDF de toute étude ou de tout rapport que tu cites** et range-le dans l'entrepôt
+   `tunisia-data` (`data/raw/<source>/`, jamais dans git), avec une ligne au catalogue
+   `sources/<source>-urls.csv` : adresse d'origine, date de collecte, empreinte SHA-256. Quand un
+   rapport en rapporte un autre, va chercher l'autre plutôt que de citer de seconde main ; un
+   document introuvable est noté tel, avec les adresses essayées.
+6. **Classe chaque chiffre dans sa famille** — budgétaire et ministère des Finances ; rapport
+   extérieur ; évaluation économique — et, pour toute étude, relève sa **méthode** (années de
+   données, périmètre, mode de calcul) avec la page (`docs/conventions-redaction.md`, § 3).
 
 ## Recherches infructueuses : les fiches de `docs/recherches.yml`
 Un texte attendu qu'on ne trouve pas — décret d'application, modificatif — n'est pas une phrase de
