@@ -23,7 +23,7 @@ crossref:
 
 <!-- Identifiants STABLES de cette page, auxquels les volumes renvoient (ne pas les renommer, ne pas les traduire) :
      #sec-pib-pourquoi, #sec-pib-definition, #sec-pib-bases, #pib-base-1983, #pib-base-1997, #pib-base-2015,
-     #pib-base-2010, #sec-pib-ecarts, #pib-ecart-1983-1997, #pib-ecart-1997-2015, #pib-ecart-ratio,
+     #pib-annee-de-prix, #sec-pib-ecarts, #pib-ecart-1983-1997, #pib-ecart-1997-2015, #pib-ecart-ratio,
      #sec-pib-retropolation, #pib-series-accolees, #sec-pib-sources, #sec-pib-ruptures, #sec-pib-lire.
      Matière : docs/notes/annexe-pib.md. -->
 
@@ -53,7 +53,7 @@ Quelques notions servent dans toute l'annexe :
 
 L'INS ne reconnaît que trois bases : « Depuis son instauration dans les années quatre-vingt avec la première base 1983, le Système de Comptabilité Nationale Tunisien (SCNT) aura connu deux changements de base : 1997 et maintenant 2015 » [@ins-cnat-2015, éd. 2015-2020, p. 11].
 
-### L'année des prix n'est pas une base {#pib-base-2010}
+### L'année des prix n'est pas une base {#pib-annee-de-prix}
 
 Les comptes sont aussi publiés en volume, c'est-à-dire aux prix d'une année de référence, pour mesurer la croissance hors variation des prix. Cette **année de prix** change plus souvent que la base, et elle ne modifie pas le PIB aux prix courants. Quatre années de prix se rencontrent dans les sources : 1990, 2005, 2010 et 2015.
 
@@ -259,7 +259,7 @@ Ces pourcentages mesurent l'écart entre les deux niveaux du PIB à la jonction,
 
 ## Quel PIB dans quelle source {#sec-pib-sources}
 
-Les deux tableaux qui suivent séparent les institutions tunisiennes, qui produisent ou emploient les comptes, des organisations extérieures, qui les reprennent. Quand une source ne nomme pas sa base, le tableau le dit et indique à quelle base ses valeurs coïncident.
+Les deux tableaux qui suivent séparent les institutions tunisiennes, qui produisent ou emploient les comptes, des organisations extérieures, qui les publient à leur tour. Quand une source ne nomme pas sa base, le tableau le dit et indique à quelle base ses valeurs coïncident.
 
 ### Les institutions tunisiennes
 
@@ -282,14 +282,14 @@ Les deux tableaux qui suivent séparent les institutions tunisiennes, qui produi
 
 : Le PIB employé par les institutions tunisiennes {#tbl-pib-sources-tn}
 
-Le ministère des Finances ne publie pas le PIB qu'il emploie : celui-ci se déduit du déficit budgétaire, que ses indicateurs donnent à la fois en dinars et en pourcentage du PIB.
+Le PIB du ministère des Finances se déduit du déficit budgétaire, que ses indicateurs donnent à la fois en dinars et en pourcentage du PIB.
 
 <!-- TODO (documentaliste) : origine des valeurs 2002-2004 du PIB du ministère des Finances (lois de finances et rapports sur le budget 2003-2006, budgets économiques) — docs/notes/annexe-pib.md, § 5, lacune L7. -->
 <!-- TODO (bibliographe) : préciser l'URL de minfin-indicateurs-fp, aujourd'hui générique (docs/notes/annexe-pib.md, § 7.1). -->
 
 ### Les organisations extérieures
 
-Chacune reprend les chiffres de l'INS, selon sa méthode propre :
+Chacune a sa méthode propre :
 
 - les **Nations unies** publient les chiffres que leur transmet l'INS, rangés en séries qui portent le nom du système de comptabilité nationale suivi, non celui de la base ;
 - la **Banque mondiale** publie, dans ses indicateurs du développement dans le monde, une seule série longue du PIB en monnaie nationale, formée de segments successifs ;

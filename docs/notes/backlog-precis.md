@@ -897,7 +897,7 @@ comme `a-propos`, liée depuis l'accueil et le pied de page des huit volumes fra
 `docs/notes/annexe-pib.md`. Ancres stables auxquelles les volumes renvoient : `#sec-pib-bases`,
 `#sec-pib-ecarts`, `#sec-pib-retropolation`, `#sec-pib-sources`, `#sec-pib-ruptures`,
 `#sec-pib-lire`, `#sec-pib-definition`, et par changement de base `#pib-base-1997`,
-`#pib-base-2015` (plus `#pib-base-1983`, `#pib-base-2010`, `#pib-series-accolees`,
+`#pib-base-2015` (plus `#pib-base-1983`, `#pib-annee-de-prix`, `#pib-series-accolees`,
 `#tbl-pib-jonctions`).
 
 **Règle à appliquer partout** : toute grandeur rapportée au PIB nomme la base, dit si le PIB est
@@ -930,10 +930,15 @@ généraliser : `finances_locales/figures/finances_locales.py` (`_pib`, `_pib_pa
   en 2017, 10,7 % en 2010 ; `_regime_conventionnel.qmd`, transferts aux entreprises publiques,
   8,9 % en 2013 et 7,5 % en 2014) : dire la base, ou dire qu'elle n'est pas précisée par la
   source (revue des dépenses publiques de 2020 à relire sur ce point).
-- **Caisses, Cotisations, Prestations, Retraites — 6 figures partielles** (CNSS 1990-2004 :
-  `fig-cnss-regimes`, `fig-cnss-assurances-sociales`, `fig-cnss-atmp-pst`, cotisations par
-  branche, allocations familiales, branche des pensions du RSNA). Le changement de 1997 est
-  tracé et dit ; celui de **2002** (valeurs du ministère non rattachées, 2002-2004) ne l'est pas.
+- **Figures de la CNSS, 1990-2004 — 6 figures partielles, même défaut** : le changement de
+  1997 est tracé et dit ; celui de **2002** (valeurs du ministère non rattachées, 2002-2004) ne
+  l'est pas.
+  - **Caisses** (`_comptes_longue_periode.qmd`) : `fig-cnss-regimes`,
+    `fig-cnss-assurances-sociales`, `fig-cnss-atmp-pst`.
+  - **Cotisations** (`_bilan.qmd`) : cotisations par branche ; les modules `cnss_*` du volume
+    sont des liens symboliques vers ceux des caisses — une même PR pour les deux volumes.
+  - **Prestations** (`_prestations_familiales.qmd`) : allocations familiales.
+  - **Retraites** (`_secteur_prive.qmd`) : branche des pensions du RSNA.
 - **Retraites — 1 groupe partiel** : les deux figures du barème d'actualisation
   (`bareme_actualisation.py`) ; dire les années de la réserve d'avant 1993 (taux de 1970 à cheval
   sur deux séries ; taux de 1983 et 1985 appuyés sur des valeurs de 1983-1984 propres à la Banque
