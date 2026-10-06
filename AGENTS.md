@@ -80,6 +80,9 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   données, quel périmètre, quel calcul). Le budgétaire d'abord, en entonnoir ; les études ensuite,
   titrées comme telles. Les superposer **sur un graphique** est permis quand elles sont censées
   traiter des mêmes dispositifs, familles distinguées et ruptures expliquées.
+- **Tout PIB dit sa base, et s'il est rétropolé** ; si la source ne le dit pas, on l'écrit. Jamais
+  deux bases chaînées en silence : la série se trace par segments, le changement de base est une
+  rupture, et la rupture renvoie à l'annexe du site sur le PIB (`precis/fr/annexe-pib.qmd`).
 - **Les études citées sont récupérées** : le PDF de toute étude citée est rangé dans
   `tunisia-data` (`data/raw/`, hors git, catalogué dans `sources/`). On ne cite pas de seconde
   main ce qu'on peut obtenir.

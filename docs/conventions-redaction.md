@@ -162,6 +162,18 @@ que la légende distingue les familles et que les changements de méthode et les
 soient expliqués. Pour le temps long, on préfère une mesure cohérente — part du PIB, part des
 dépenses publiques — aux niveaux en dinars courants.
 
+**Tout PIB dit sa base, et s'il est rétropolé.** Chaque fois qu'une grandeur est rapportée au
+PIB — dans un tableau, une figure, une phrase —, on sait et on dit dans quelle base de comptes
+nationaux ce PIB est exprimé, et si la valeur est celle de la base d'origine ou une valeur
+rétropolée dans une base postérieure. Quand la source ne le dit pas, on l'écrit : « base non
+précisée par la source ». Deux PIB de bases différentes ne se chaînent jamais en silence : une
+série en part du PIB se trace par segments de base, et le changement de base se signale comme
+une rupture de série. L'explication des bases, de leurs écarts de niveau et des rétropolations
+n'est pas répétée de chapitre en chapitre : elle vit dans l'annexe du site consacrée au PIB
+(`precis/fr/annexe-pib.qmd`), à laquelle renvoie toute rupture de série qui tient à un
+changement de base. La part des dépenses de l'État, qui ne dépend d'aucune base, se donne à
+côté de la part du PIB dès que les deux existent.
+
 **Les études citées sont récupérées, systématiquement.** Toute étude, tout rapport cité dans un
 volume a sa copie locale — le PDF lui-même, non une page qui le résume — rangée dans l'entrepôt
 `tunisia-data` (`data/raw/<source>/`, hors git, avec son adresse d'origine, sa date de collecte
