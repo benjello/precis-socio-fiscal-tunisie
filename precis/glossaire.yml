@@ -7426,3 +7426,220 @@ entries:
         الاقتصادية، والضريبة على الدخل، وتشريع الشغل، والضمان الاجتماعي (قرار
         المؤتمر الدولي الحادي والعشرين لخبراء إحصاءات العمل، 2023، الفقرة 56).
       synonymes: []
+
+  # --- Compensation (volume « Prestations sociales », chapitre « La compensation ») ---
+  # Passe 1 du 6 octobre 2026 : identifiants, termes et sources ; les définitions
+  # viennent en passe 2, après la rédaction. Toutes les entrées restent `provisoire`
+  # tant qu'elles n'ont pas de définition. Celles qui portent une `source_traduction`
+  # ont un terme arabe lu sur l'édition arabe du texte cité ; les autres non.
+  - id: caisse-generale-compensation
+    acronyme: CGC
+    statut: provisoire
+    references: [loi70-26, lf-1971, lf-2013, lf-2014]
+    source_definition: {ref: loi70-26, locator: "art. 3"}
+    # AR : « أحدث صندوق عام للتعويض » (loi n° 70-26, art. 3, éd. arabe) ; forme
+    # définie « الصندوق العام للتعويض » dans l'intitulé de l'art. 76 de la LF 2014.
+    source_traduction: {ref: loi70-26, locator: "art. 3"}
+    voir_aussi: [compensation-des-prix, fonds-special-tresor, redevance-compensation, produits-de-base]
+    fr:
+      terme: Caisse générale de compensation
+      synonymes: []
+    ar:
+      terme: الصندوق العام للتعويض
+      synonymes: []
+
+  - id: compensation-des-prix
+    acronyme: null
+    statut: provisoire
+    references: [loi70-26, minfin-finances-publiques-2008, lf-2013]
+    source_definition: {ref: loi70-26, locator: "art. 3"}
+    # AR : arbitrage du 6 octobre 2026. Le JORT et les rapports « Finances publiques »
+    # rendent la politique par « الدعم » (« نفقات الدعم », rapport 2008, p. 35 imprimée ;
+    # « أتاوة الدعم » = redevance de compensation, LF 2013, art. 63) ; « التعويض » ne
+    # subsiste que dans le nom de la caisse et dans l'intitulé de chapitres budgétaires.
+    # Le terme français est qualifié (« des prix ») pour que la table de traduction
+    # n'impose pas « الدعم » aux autres sens de « compensation » (allocations
+    # familiales, comptes des caisses).
+    source_traduction: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
+    voir_aussi: [caisse-generale-compensation, produits-de-base, compensation-carburants, compensation-transport, perequation-des-prix]
+    fr:
+      terme: Compensation des prix
+      synonymes: [Compensation, Subvention aux prix]
+    ar:
+      terme: الدعم
+      synonymes: [التعويض]
+
+  - id: produits-de-base
+    acronyme: null
+    statut: provisoire
+    references: [minfin-finances-publiques-2008, loi70-26]
+    source_definition: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
+    # AR : « دعم المواد الأساسية » (rapport 2008, p. 35 imprimée, p. 37 du PDF).
+    # La loi n° 70-26, art. 3, dit « produits de première nécessité » —
+    # « البضائع والمنتجات والخدمات الضرورية » dans l'édition arabe.
+    source_traduction: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
+    voir_aussi: [compensation-des-prix, caisse-generale-compensation]
+    fr:
+      terme: Produits de base
+      synonymes: [Produits de première nécessité]
+    ar:
+      terme: المواد الأساسية
+      synonymes: [المنتجات الضرورية]
+
+  - id: compensation-carburants
+    acronyme: null
+    statut: provisoire
+    references: [minfin-finances-publiques-2005, minfin-finances-publiques-2008, minfin-compensation-carburants-2014]
+    source_definition: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
+    # AR : « دعم المحروقات » ; le même rapport écrit aussi « دعم منظومة المحروقات
+    # و الكهرباء » (p. 7 imprimée) quand il y joint l'électricité.
+    source_traduction: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
+    voir_aussi: [compensation-des-prix, ajustement-automatique-prix-carburants]
+    fr:
+      terme: Compensation des carburants
+      synonymes: [Subvention des carburants, Subvention énergétique]
+    ar:
+      terme: دعم المحروقات
+      synonymes: []
+
+  - id: compensation-transport
+    acronyme: null
+    statut: provisoire
+    references: [minfin-finances-publiques-2008, lf-1984]
+    source_definition: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
+    # AR : « دعم النقل » dans le tableau, « دعم النقل العمومي » dans le texte de la
+    # même page.
+    source_traduction: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
+    voir_aussi: [compensation-des-prix, taxe-unique-compensation-transports-routiers]
+    fr:
+      terme: Compensation du transport
+      synonymes: [Subvention du transport public]
+    ar:
+      terme: دعم النقل
+      synonymes: [دعم النقل العمومي]
+
+  - id: fonds-special-tresor
+    acronyme: null
+    statut: provisoire
+    references: [lf-1971, lf-2014]
+    source_definition: {ref: lf-1971, locator: "art. 48"}
+    # AR : attesté au pluriel seulement — « fonds spéciaux du Trésor » en regard de
+    # « الحسابات الخاصة في الخزينة » (LF 2014, art. 2 et tableau « B »). Le singulier
+    # n'est pas lu, et l'édition arabe de la LF 1971 non plus.
+    source_traduction: {ref: lf-2014, locator: "art. 2"}
+    voir_aussi: [caisse-generale-compensation]
+    fr:
+      terme: Fonds spéciaux du Trésor
+      synonymes: [Fonds spécial du Trésor]
+    ar:
+      terme: الحسابات الخاصة في الخزينة
+      synonymes: []
+
+  - id: redevance-compensation
+    acronyme: null
+    statut: provisoire
+    references: [lf-2013, lf-2014]
+    source_definition: {ref: lf-2013, locator: "art. 63"}
+    # AR : « أتاوة الدعم المنصوص عليها بهذا الفصل » (LF 2013, art. 63, § II, éd. arabe) ;
+    # même terme dans l'arrêté du 10 mai 2024 (JORT n° 61 de 2024).
+    source_traduction: {ref: lf-2013, locator: "art. 63"}
+    voir_aussi: [caisse-generale-compensation, compensation-des-prix, taxe-unique-compensation-transports-routiers]
+    fr:
+      terme: Redevance de compensation
+      synonymes: []
+    ar:
+      terme: أتاوة الدعم
+      synonymes: []
+
+  - id: taxe-unique-compensation-transports-routiers
+    acronyme: null
+    statut: provisoire
+    references: [lf-1984, lf-2014]
+    source_definition: {ref: lf-1984, locator: "art. 38"}
+    # AR : lu en regard du français à l'art. 76 de la LF 2014 ; l'édition arabe de la
+    # LF 1984 n'est pas lue.
+    source_traduction: {ref: lf-2014, locator: "art. 76"}
+    voir_aussi: [compensation-transport, redevance-compensation, taxe-unique-compensation-carburants]
+    fr:
+      terme: Taxe unique de compensation de transports routiers
+      synonymes: []
+    ar:
+      terme: المعلوم الوحيد التعويضي على النقل بالطرقات
+      synonymes: [المعلوم التعويضي على النقل]
+
+  - id: ajustement-automatique-prix-carburants
+    acronyme: null
+    statut: provisoire
+    references: [arrete-2016-07-15-prix-petroliers, arrete-2020-03-31-prix-petroliers, arrete-2021-04-07-prix-petroliers]
+    source_definition: {ref: arrete-2016-07-15-prix-petroliers, locator: "art. 5"}
+    # AR : « آلية التعديل الأوتوماتيكي لأسعار البنزين الخالي من الرصاص والغازوال… »
+    # (arrêté de 2016, art. 5) ; forme générique « الآلية الشهرية للتعديل الأوتوماتيكي
+    # لأسعار المحروقات » (arrêté de 2021, art. 7 nouveau). L'édition arabe de l'arrêté
+    # de 2020 n'est pas lue.
+    source_traduction: {ref: arrete-2021-04-07-prix-petroliers, locator: "art. 1"}
+    voir_aussi: [compensation-carburants]
+    fr:
+      terme: Mécanisme d'ajustement automatique des prix des carburants
+      synonymes: [Ajustement automatique des prix]
+    ar:
+      terme: آلية التعديل الأوتوماتيكي لأسعار المحروقات
+      synonymes: []
+
+  - id: perequation-des-prix
+    acronyme: null
+    statut: provisoire
+    references: [loi70-26, minfin-finances-publiques-2008]
+    source_definition: {ref: loi70-26, locator: "art. 3"}
+    # AR à confirmer : l'édition arabe de la loi n° 70-26, art. 3, ne nomme pas la
+    # péréquation, elle la paraphrase (« إدخال تعديلات على تلك الأسعار ») ; le rapport
+    # « Finances publiques » 2008 (p. 39 imprimée) écrit que la caisse assure
+    # « تعديل أسعار المواد الأساسية و دعمها ». Le rapprochement est du terminologue :
+    # pas de `source_traduction`.
+    voir_aussi: [compensation-des-prix, caisse-generale-compensation]
+    fr:
+      terme: Péréquation des prix
+      synonymes: []
+    ar:
+      terme: تعديل الأسعار
+      synonymes: []
+
+  # Notions analytiques : aucun terme arabe lu sur un texte officiel. Traduction du
+  # terminologue, à faire confirmer par un arabophone ou par une publication arabe
+  # de l'INS ; pas de `source_traduction`.
+  - id: incidence-des-subventions
+    acronyme: null
+    statut: provisoire
+    references: [ins-cres-bad-2013-subventions]
+    source_definition: {ref: ins-cres-bad-2013-subventions}
+    voir_aussi: [quintile-niveau-de-vie, auto-ciblage, compensation-des-prix]
+    fr:
+      terme: Incidence des subventions
+      synonymes: [Incidence]
+    ar:
+      terme: توزيع منافع الدعم
+      synonymes: []
+
+  - id: quintile-niveau-de-vie
+    acronyme: null
+    statut: provisoire
+    references: [ins-cres-bad-2013-subventions]
+    source_definition: {ref: ins-cres-bad-2013-subventions}
+    voir_aussi: [incidence-des-subventions]
+    fr:
+      terme: Quintile de niveau de vie
+      synonymes: [Quintile]
+    ar:
+      terme: الشريحة الخُمسية لمستوى العيش
+      synonymes: []
+
+  - id: auto-ciblage
+    acronyme: null
+    statut: provisoire
+    references: []
+    voir_aussi: [ciblage, incidence-des-subventions]
+    fr:
+      terme: Auto-ciblage
+      synonymes: []
+    ar:
+      terme: الاستهداف الذاتي
+      synonymes: []
