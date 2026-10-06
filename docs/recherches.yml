@@ -723,10 +723,54 @@
     couverture: 'jort_cache jusqu''au 30 septembre 2026 (intitulés, LIKE doublés de FTS) ; miroir iort (corps depuis 2000 seulement ; faux positif dec_2007_1351, décret n° 538 de 1973) ; plein texte français 1995 à 2026 n° 95, décalage de 29 décodé pour 1999-2005 ; plein texte arabe 2014 à 2026 n° 96, partiel pour 2005-2013, nul pour 1995-2004 ; motif arabe réellement employé : numéro et année à moins de 12 caractères, plus large que les termes consignés. Textes lus : décrets n° 99-1010 (art. 4, § 2 seul, les art. 5 à 27 intacts) et n° 2000-1439 (salaire forfaitaire taxi, louage, transport rural, 1er juillet 2000, abrogation implicite du coefficient de l''art. 5) ; loi n° 95-103 (art. 7 seul) ; décrets n° 97-2004 et 2000-2279, loi n° 2002-32, décret n° 2002-916, loi n° 2021-37, loi n° 2004-71 : rien sur l''assiette ni sur la modulation. Visas de 2000, 2009, 2017, 2020, 2021 et 2024 : décret n° 95-538 modifié par le seul décret n° 99-1010. Lacunes : édition arabe 1995-2004 ; 289 numéros français non lus (absents, sans texte ou fichier arabe), dont 14 en 1995-1998 lus dans aucune édition (1995 n° 36 ; 1996 n° 23, 24, 37, 84, 95, 97 ; 1997 n° 16, 21, 31, 34, 99 ; 1998 n° 1, 30) ; les 115 fascicules français citant la loi n° 94-28 sans citer le décret n''ont pas été lus un à un ; n° 13 et 14 de 2021 identiques en français.'
     couvert_jusqu_au: 2026-09-30
     resultat: aucun
+  - date: 2026-10-06
+    role: documentaliste
+    sources: [jort_cache, corpus_local, visas]
+    couverture: 'Intitulés jort_cache jusqu''au 2 octobre 2026 (FTS seule : modulation des cotisations, risques professionnels). Plein texte français 2004-2026, 2 415 fichiers, décalage de 29 décodé pour 116 : motifs de majoration, réduction, cotisation supplémentaire, bonus-malus — aucun texte sur la modulation AT/MP. Plein texte arabe exploitable de 2014 à 2026 seulement (2004-2013 quasi nul), termes du décret arabe de 1995 lus à l''image ; méthode contrôlée sur un texte témoin de 2017, les termes de modulation eux-mêmes sans témoin. Lus : décret n° 2005-321 en entier (rien sur prévention, tarification, modulation, recouvrement) ; loi n° 2004-71, art. 5, 8 à 10, 16 et 29, à l''image dans les deux éditions (aucune clause de substitution ; art. 29 : abrogation des seules dispositions contraires) ; loi n° 2017-47 ; décrets n° 96-1050 et 2009-2344 (substitution expresse de la CNAM à la CNSS pour les prêts et primes de prévention, pas pour le décret n° 95-538). Lacunes : mêmes numéros non lus que la passe du 5 octobre ; édition arabe 2004-2013 ; annexes des organigrammes de la CNAM (décrets n° 2008-3707 et 2018-747) ; décret n° 2002-583 non lu.'
+    couvert_jusqu_au: 2026-09-30
+    resultat: aucun
   a_faire:
   - lire à l'image ou océriser les 14 fascicules français de 1995-1998 sans couche texte
   - lire les contextes des occurrences de « 94-28 » (115 fascicules français) pour un texte qui modifierait la loi sans viser le décret
-  - lire le décret n° 2005-321 (organisation de la CNAM) sur l'exercice des pouvoirs des art. 10 à 27
+  - lire à l'image les annexes des décrets n° 2008-3707 et 2018-747 (organigrammes de la CNAM)
+
+- id: r-atmp-commission-modulation
+  objet: texte instituant ou désignant une commission (nationale, ou placée auprès de la CNAM ou de la CNSS) appelée à connaître des décisions de majoration ou de réduction de la cotisation d'accidents du travail et de maladies professionnelles (loi n° 94-28, art. 90 ; décret n° 95-538, art. 10 à 27)
+  ou: [precis/fr/cotisations_sociales/_accidents_travail.qmd#sec-cot-at-modulation-caisses]
+  requetes:
+    titres_fts:
+    - (commission OR comite OR conseil) AND ("accidents du travail" OR "risques professionnels" OR "securite au travail")
+    - (majoration OR reduction OR modulation OR bonus) AND cotisations
+    - '"الأخطار المهنية" OR "الاخطار المهنية" OR ("حوادث الشغل" AND لجنة)'
+    plein_texte: [majoration des cotisations, réduction des cotisations, cotisation supplémentaire, bonus-malus]
+    depuis: 1995-04-14
+  passes:
+  - date: 2026-10-06
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Intitulés jusqu''au 2 octobre 2026 (FTS seule). Plein texte français : termes ci-dessus sur 2004-2026 ; motif « commission » à 120 caractères de « risques professionnels », deux ordres, sur 1995-2026 (seule réponse : annexe sur les prêts, n° 79 de 2009). Arabe exploitable de 2014 à 2026 seulement. Lus : décret n° 95-538 (aucune commission ; français sur couche texte, arabe à l''image) ; décrets n° 96-1001 et 2007-2383 (conseil national consultatif, sans compétence sur les cotisations) ; décrets n° 96-1050 et 2009-2344 (commission des prêts et primes, auprès de la CNSS puis de la CNAM, sans compétence sur les cotisations). Non lus en entier : décrets n° 91-1761, 91-1936, 2002-583, 2009-2375. Une commission créée par décision interne d''une caisse ne paraîtrait pas au Journal officiel.'
+    couvert_jusqu_au: 2026-09-30
+    resultat: aucun
+  a_faire:
+  - lire à l'image les décrets n° 91-1761 et 91-1936 (fascicules n° 82 et 89 de 1991)
+  - consulter les rapports d'activité de la CNAM sur la procédure de réduction
+
+- id: r-cnam-cnss-convention-recouvrement
+  objet: convention conclue entre la CNSS (et, jusqu'en 2017, la CNRPS) et la CNAM fixant les modalités et procédures du recouvrement et du transfert des cotisations, dont celles du régime des accidents du travail et des maladies professionnelles (loi n° 2004-71, art. 16, puis art. 16 bis ajouté par la loi n° 2017-47)
+  ou: [precis/fr/cotisations_sociales/_accidents_travail.qmd#sec-cot-at-modulation-caisses]
+  requetes:
+    titres_fts: ['"assurance maladie" AND (recouvrement OR convention) AND ("securite sociale" OR caisses)']
+    plein_texte: [convention conclue entre les caisses, convention conclue entre les deux caisses]
+    depuis: 2004-08-06
+  passes:
+  - date: 2026-10-06
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Intitulés jusqu''au 2 octobre 2026 (FTS seule) : 19 textes, tous des conventions entre la CNAM et les prestataires de soins ou les assureurs. Plein texte français 1995-2026 : seules occurrences, les articles 16 (2004) et 16 bis (2017) eux-mêmes. Édition arabe non interrogée sur ce point. Aucune disposition ne prévoit la publication de cette convention. Sites des caisses non explorés au-delà de la rubrique AT/MP de cnam.nat.tn.'
+    couvert_jusqu_au: 2026-09-30
+    resultat: aucun
+  a_faire:
+  - chercher la convention, et l'accord d'échange de données de 2011 cité par La Lettre du CRES n° 8, dans les rapports d'activité et les archives du web des deux caisses
 
 - id: r-cnrps-tutelle-1976-1985
   objet: texte transférant la tutelle de la CNRPS du ministère des Finances (loi n° 75-83, art. 28) à un autre département, entre le décret n° 76-3 du 5 janvier 1976 et le décret n° 85-1611 du 31 décembre 1985, qui la place sous le ministère de la protection sociale

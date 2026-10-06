@@ -194,13 +194,55 @@ Elle est plafonnée : « la réduction du taux de cotisation principale, pour to
 
 <!-- TODO (rédacteur) : remplacer par un tableau engendré quand ces quotités seront portées en amont (openfisca-tunisia#471). -->
 
-### Le recours et la caisse compétente {#sec-cot-at-modulation-recours}
+### Le recours {#sec-cot-at-modulation-recours}
 
 L'employeur peut contester les décisions d'augmentation ou de réduction « conformément aux procédures du droit commun », sous réserve des dispositions de la loi n° 60-30 relatives au paiement des cotisations [@decret95-538, art. 27].
 
-Tous ces articles confient la décision à la « caisse nationale de sécurité sociale », la [CNSS](#g-cnss). La loi n° 2004-71 a rangé parmi les missions de la [CNAM](#g-cnam) la gestion des régimes légaux de réparation des dommages résultant des accidents du travail et des maladies professionnelles [@loi2004-71, art. 8], sans que le décret, en l'état des textes identifiés, soit réécrit. La caisse qui exerce depuis lors les pouvoirs de majoration et de réduction, et la date à partir de laquelle elle les exerce, ne sont pas établies ici ; l'application effective de ces dispositions ne l'est pas davantage.
+### La caisse qui gère et la caisse qui recouvre {#sec-cot-at-modulation-caisses}
 
-<!-- TODO (documentaliste) : lire le décret n° 2005-321 (organisation de la CNAM, JORT n° 15 de 2005, pp. 459-463) sur l'exercice des pouvoirs des articles 10 à 27 et sur le recouvrement de la cotisation AT/MP ; relire à l'image la loi n° 2004-71, art. 8 à 10 et 29 (art. 29 : le chapitre II du titre II applicable dès la promulgation, le reste au 1er juillet 2005) ; consulter une source administrative (CNSS, CNAM) sur la pratique des forfaits et de la modulation. -->
+Tous ces articles confient la décision à la « caisse nationale de sécurité sociale », la [CNSS](#g-cnss) : en 1995, une seule caisse gérait le régime, percevait la cotisation et disposait des services de prévention. La loi n° 2004-71 a séparé ces fonctions (@tbl-atmp-caisses).
+
+**La gestion passe à la CNAM.** Les missions de la [CNAM](#g-cnam) comprennent « la gestion des régimes légaux de réparation des dommages résultant des accidents du travail et des maladies professionnelles dans les secteurs public et privé » [@loi2004-71, art. 8], disposition applicable dès la promulgation de la loi, le 2 août 2004 [@loi2004-71, art. 29]. Les cotisations d'accidents du travail et de maladies professionnelles, et les pénalités qui s'y attachent, figurent parmi les recettes de son budget [@decret2005-321, art. 10].
+
+**Le recouvrement reste aux caisses de sécurité sociale.** La CNRPS et la CNSS, « chacune en ce qui la concerne », recouvrent les cotisations dues au titre de ces régimes et les transfèrent à la CNAM « selon les modalités et les procédures qui sont fixées par une convention conclue entre les caisses concernées », à compter du 1^er^ juillet 2005 [@loi2004-71, art. 16 et 29]. La loi n° 2017-47 réécrit la règle : la CNSS recouvre les cotisations du secteur privé et les transfère « dans les délais » à la CNAM, selon une convention entre les deux caisses ; celles du secteur public sont « transférées directement » à la CNAM [@loi2017-47, art. 1^er^ et 2 ; art. 16 nouveau et 16 bis de la loi n° 2004-71]. Cette convention n'est pas identifiée ici.
+
+<!-- RECHERCHE r-cnam-cnss-convention-recouvrement : convention entre la CNSS et la CNAM sur le recouvrement et le transfert des cotisations, loi n° 2004-71, art. 16 et 16 bis (voir docs/recherches.yml) -->
+
+| Fonction | En 1995 | Depuis la loi n° 2004-71 | Texte |
+|---|---|---|---|
+| Gestion du régime | CNSS | CNAM, à compter du 2 août 2004 | loi n° 2004-71, art. 8 et 29 |
+| Recouvrement de la cotisation, secteur privé | CNSS | CNSS, qui la transfère à la CNAM, à compter du 1^er^ juillet 2005 | loi n° 2004-71, art. 16, puis art. 16 bis |
+| Majoration et réduction de la cotisation | CNSS | aucun texte identifié ne modifie le décret, qui nomme toujours la CNSS | décret n° 95-538, art. 10 à 27 |
+| Prêts et primes pour les projets de santé et de sécurité au travail | CNSS | CNAM, par substitution expresse, en 2009 | décret n° 2009-2344, art. 3 |
+
+: La répartition des fonctions entre la CNSS et la CNAM dans le régime des accidents du travail et des maladies professionnelles [@loi2004-71; @loi2017-47; @decret95-538; @decret2009-2344] {#tbl-atmp-caisses tbl-colwidths="[26,12,36,26]"}
+
+**Le décret de 1995 n'a pas été réécrit.** Aucun texte identifié ici ne remplace la CNSS par la CNAM dans les articles 10 à 27 du décret n° 95-538, et le décret qui organise la CNAM ne traite ni de la prévention ni de la modulation de la cotisation [@decret2005-321]. Le pouvoir réglementaire a pourtant opéré cette substitution pour un texte voisin, pris lui aussi pour l'application de la loi n° 94-28 : « l'expression "caisse nationale de sécurité sociale" » y « est abrogée et remplacée par l'expression "caisse nationale d'assurance maladie" », et la commission qui examine les demandes de prêts et de primes d'investissement est désormais « créée auprès de la caisse nationale d'assurance maladie » [@decret2009-2344, art. 3 ; art. 9 nouveau du décret n° 96-1050]. La caisse que désigne aujourd'hui « la caisse » des articles 10 à 27 n'est donc écrite par aucun texte identifié ; aucun texte publié n'institue non plus de commission pour les décisions de majoration et de réduction, que le décret soumet au seul avis de l'inspection du travail et de l'inspection médicale.
+
+<!-- RECHERCHE r-atmp-commission-modulation : texte instituant une commission pour les décisions de majoration ou de réduction de la cotisation AT/MP (voir docs/recherches.yml) -->
+
+### L'application, selon un diagnostic du ministère {#sec-cot-at-modulation-application}
+
+La seule description publiée de la pratique identifiée ici est un diagnostic, non un texte : le « Profil national de la sécurité et de la santé au travail », établi en 2023 par le ministère des affaires sociales avec l'appui du Bureau international du travail, à partir d'un guide de recueil de données adressé aux institutions, de réunions avec elles et avec les partenaires sociaux, et d'entretiens en régions [@mas2023-profil-sst, p. 8]. Il nomme « bonus-malus » ce que les textes appellent réduction et majoration.
+
+Selon ce rapport, la CNAM « dispose d'un Département de prévention des accidents du travail et des maladies professionnelles », chargé notamment d'« assigner des incitations financières pour la prévention (bonus-malus, prêts et subventions) » [@mas2023-profil-sst, p. 22], tandis que la CNSS « est chargée du recouvrement des cotisations des employeurs du secteur privé au profit du régime AT-MP géré par la CNAM » [@mas2023-profil-sst, p. 31]. Un comité de veille consultatif, créé par une circulaire du ministre des affaires sociales du 19 décembre 2001, a parmi ses attributions de suivre « les demandes de réduction des cotisations » et de « proposer, si nécessaire, l'application de la majoration de ces cotisations en cas de négligence » [@mas2023-profil-sst, p. 32]. Le rapport ne dit pas qui signe la décision, ni comment elle parvient à la caisse qui recouvre.
+
+Il juge ces instruments « très peu appliqués » [@mas2023-profil-sst, p. 63] : « Le Bonus avec une grille et des critères qui méritent d'être révisés pour plus d'objectivité et le Malus, sans grille pour l'application de la sanction, ne sont que très peu appliqués et n'ont pas abouti aux objectifs escomptés comme moyens d'incitation à la prévention » [@mas2023-profil-sst, p. 66]. Il ne publie aucune série annuelle des réductions accordées ni des majorations prononcées.
+
+## Le classement des employeurs dans le barème {#sec-cot-at-classement}
+
+Un barème par activité suppose que chaque employeur soit rangé dans une activité. Les décrets fixent les taux ; ils ne règlent pas ce classement. Une note d'étude du Centre de recherches et d'études sociales, établie sur les données de la CNAM, en décrit la pratique : « la CNSS classifie les entreprises lors de leurs affiliations sur la base de leur secteur d'activité et attribue à cet effet un code d'activité économique qui correspond à un code ATMP qui leur permet de déterminer leur taux de cotisation au régime ATMP » [@belloussaief2023-atmp, p. 6].
+
+Cette note relève trois difficultés [@belloussaief2023-atmp, p. 6] :
+
+- **une nomenclature ancienne** : le classement « se fait selon une nomenclature ancienne (NAT 1961) » qui « ne tient pas compte des évolutions du tissu économique tunisien » ;
+- **des erreurs dans les deux sens** : « une pénurie de ressources dans le cas où les erreurs de classement se font dans les activités ayant un taux de cotisation inférieur à l'activité réelle de l'entreprise », et « une pénalisation pour les entreprises qui ont été classées dans des activités ayant des taux de cotisation plus élevés que leur activité réelle » ;
+- **l'absence de contrôle systématique** : faute d'interopérabilité entre les systèmes de gestion des deux caisses, la CNAM n'est pas « automatiquement informée par les nouvelles affiliations ou par les modifications des taux de cotisation », et l'écart entre le taux appliqué et l'activité réelle n'apparaît qu'à l'occasion d'une enquête après un sinistre ou d'une visite.
+
+Elle signale un accord d'échange de données entre les deux caisses, de 2011, par lequel la CNSS fournirait chaque trimestre à la CNAM la liste des entreprises affiliées avec leur taux et leur code d'activité, et écrit que la CNAM n'a « reçu aucune liste depuis la signature de l'accord » ; elle recommande de réviser les codes d'activité pour les aligner sur la nomenclature de 2009 [@belloussaief2023-atmp, p. 6]. Le diagnostic du ministère demande de même « l'établissement d'une liste des entreprises tunisiennes avec une mise à jour d'une classification précise par risque » [@mas2023-profil-sst, p. 27].
+
+Ces constats commandent la lecture de toute statistique par activité : l'activité sous laquelle un accident est compté, comme celle dont l'employeur acquitte le taux, peut différer de son activité réelle.
+
 <!-- TODO (modeliste) : les salaires forfaitaires des articles 4 à 7 du décret n° 95-538, celui du décret n° 2000-1439 et la modulation des articles 10 à 27 ne sont pas portés par le modèle : openfisca-tunisia#471 (le décret n° 2000-1439 est à y ajouter). -->
 
 ## La longue période {#sec-cot-at-longue-periode}
@@ -229,44 +271,63 @@ figtools.figure_tabs(
 
 <!-- RECHERCHE r-atmp-echelle-modificatifs : modificatif de l'échelle des taux AT/MP après le décret n° 99-1010 (voir docs/recherches.yml) -->
 
-## Le barème et les accidents observés par activité {#sec-cot-at-sinistralite}
+## Les accidents et les maladies déclarés, 2012-2022 {#sec-cot-at-declares}
 
-Le barème de cotisation du décret n° 99-1010 et les statistiques d'accidents ne mesurent pas la même chose. Le premier fixe des taux **en pourcentage des salaires**, par activité de l'employeur affilié à la CNSS **après transfert du point** [@decret99-1010, art. 1^er^, art. 2 nouveau du décret n° 95-538] ; les secondes comptent les accidents déclarés à la CNAM et rapportent les **accidents avec arrêt** au nombre de travailleurs assujettis, pour 1 000 travailleurs [@cnam-statistiques-atmp-2023, pp. PDF 4, 13 et 15]. Les décès déclarés comprennent ceux survenus au travail et ceux sur le trajet [@cnam-statistiques-atmp-2023, pp. PDF 24 et 26].
+La cotisation finance la réparation de sinistres dont deux documents publient le nombre sur dix ans : le rapport du ministère des affaires sociales, pour les accidents de 2013 à 2022 et les maladies professionnelles de 2016 à 2022 [@mas2023-profil-sst, annexes 10, 11 et 15, pp. 99 et 101], et la note du CRES, pour les accidents et les maladies de 2014 à 2020 et pour les indices de fréquence de 2012 à 2020 [@belloussaief2023-atmp, tableaux 1 et 3, pp. 2 et 4]. Ce sont des comptages de déclarations à la CNAM, repris ici de ces documents et non de la caisse elle-même.
 
-La figure rapproche **dix activités** dont le libellé CNAM correspond à un point précis du barème de 1999, ou à des sous-activités qui portent **toutes le même taux** — c'est le cas des dix branches alimentaires. Elle ne fabrique pas de taux moyen pour la chimie, les transports, les services ou les autres rubriques qui regroupent plusieurs points à taux différents. Deux nuages de points placent le taux du **barème de 1999 en abscisse** : la fréquence des accidents avec arrêt en ordonnée dans le premier, puis le nombre d'accidents mortels **rapporté à 1 000 accidents déclarés** dans le second. Les trois couleurs donnent l'évolution **2021–2023**, avec une droite de tendance et une corrélation calculées séparément pour chaque année ; les nombres d'accidents et de décès restent consultables dans l'onglet « Données ». Ce rapprochement descriptif n'établit ni le taux effectivement payé par chaque employeur ces années-là, ni un effet de la cotisation sur le risque.
+Le nombre d'accidents du travail déclarés recule de près de moitié entre 2013 et 2020, année des confinements, et ne remonte que peu ensuite ; celui des maladies professionnelles déclarées augmente presque sans interruption (@fig-atmp-declares).
 
 ```{python}
-#| label: fig-atmp-secteurs
+#| label: fig-atmp-declares
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
-from figures import atmp_secteurs as atsec
+from figures import atmp_sinistres as ats
 import figtools
 figtools.figure_tabs(
-    [("Accidents avec arrêt", atsec.fig_accidents()),
-     ("Accidents mortels", atsec.fig_mortalite())], atsec.table(),
-    "atmp-echelles-1995-1999", "cnam-atmp-2023-ventilations-brutes",
-    "cnam-atmp-2023-activites-frequence-mortels-bruts",
-    slug="fig_atmp_secteurs",
-    caption="Taux légal AT/MP du barème de 1999 et sinistralité observée par activité, 2021-2023",
+    [(ats._lab("v_declares"), ats.fig_declares()), (ats._lab("v_mortels"), ats.fig_mortels())],
+    ats.table_declares(), ats.SERIE,
+    slug="fig_atmp_declares", nominal=False,
+    caption="Accidents du travail, accidents de trajet et maladies professionnelles déclarés, 2013-2022",
     note_lecture=(
-        "**Chaque point est une activité ; son abscisse est le taux du barème légal de 1999 "
-        "après transfert du point du régime général, en % des salaires.** La première vue "
-        "porte en ordonnée la fréquence des accidents **avec arrêt**, pour 1 000 travailleurs "
-        "assujettis ; la seconde, les accidents **mortels pour 1 000 accidents déclarés**, "
-        "et non pour 1 000 travailleurs. Les lettres renvoient aux activités listées sous "
-        "les graphiques. Gris : 2021 ; orange : 2022 ; bleu : 2023. Les droites pointillées "
-        "sont des ajustements linéaires sur **dix activités seulement** ; « r de Pearson » "
-        "mesure l'association brute, pas un effet causal. Les décès comprennent ceux du "
-        "trajet et peuvent être révisés pendant cinq ans. Le champ de la CNAM inclut "
-        "des travailleurs occasionnels des chantiers publics, alors que le barème légal "
-        "montré vise les employeurs affiliés à la CNSS. La fréquence 2023 utilise la "
-        "ventilation des travailleurs assujettis **de 2022**. Le tableau des accidents "
-        "par secteur totalise un cas de plus que le total national en 2022 ; les valeurs "
-        "sont conservées. Le rapprochement des intitulés avec le décret n'est pas un tableau "
-        "de passage officiel. Quinze autres rubriques sont écartées faute de taux unique, "
-        "de correspondance ou de ligne de décès ; aucune cotisation moyenne n'est inventée."),
-)
+        "**Première vue** : en haut, les accidents déclarés sur les lieux de travail ; en bas, à "
+        "une autre échelle, les accidents de trajet et les maladies professionnelles. Les nombres "
+        "d'accidents sont ceux du rapport du ministère ; un **rond creux** marque, en 2014 et en "
+        "2015, la valeur différente que donne la note du CRES. Les maladies professionnelles de "
+        "2014 et 2015 viennent de cette note, les suivantes du rapport. **Seconde vue** : les "
+        "accidents mortels, ceux des lieux de travail surmontés de ceux du trajet ; le nombre "
+        "au-dessus de chaque barre est leur somme. Ce sont des **déclarations** à la CNAM : la "
+        "fonction publique et les indépendants n'y figurent pas, et la sous-déclaration n'est "
+        "pas mesurée. L'onglet « Données » garde les deux documents côte à côte, page par page."))
 ```
+
+Les deux documents ne concordent pas partout. Pour 2014 et 2015, la note du CRES compte 42 114 puis 38 002 accidents du travail et 2 395 puis 2 098 accidents de trajet, là où le rapport du ministère en donne 42 209 puis 37 376 et 2 399 puis 2 074 ; pour 2020, elle compte 1 327 accidents de trajet contre 1 328. De 2016 à 2019, les deux séries sont identiques. Aucun des deux n'explique ces écarts ; la figure retient la série la plus longue et marque l'autre valeur. Le rapport du ministère ne cite pas la source de ses annexes.
+
+Rapportés au nombre de salariés, les accidents du travail avec arrêt passent de 22,19 pour 1 000 salariés en 2012 à 11,054 en 2020, tandis que la fréquence des maladies professionnelles s'élève (@fig-atmp-frequence).
+
+```{python}
+#| label: fig-atmp-frequence
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import atmp_sinistres as ats
+import figtools
+figtools.figure_tabs(
+    [(ats._lab("v_arret"), ats.fig_frequence()), (ats._lab("v_gravite"), ats.fig_gravite())],
+    ats.table_frequence(), ats.SERIE,
+    slug="fig_atmp_frequence", nominal=False,
+    caption="Indices de fréquence des accidents du travail, des accidents de trajet et des maladies professionnelles, pour 1 000 salariés, 2012-2020",
+    note_lecture=(
+        "**Chaque point est un indice publié**, pour 1 000 salariés : aucun n'est recalculé ici. "
+        "**Première vue** : les sinistres avec arrêt de travail — accidents du travail en haut ; "
+        "accidents de trajet et maladies professionnelles en bas, à une autre échelle. **Seconde "
+        "vue** : les sinistres les plus graves — avec décès en haut, avec incapacité permanente "
+        "en bas ; ces deux derniers indices ne sont pas publiés pour 2020. Les valeurs de 2019 "
+        "et de 2020 sont imprimées avec trois décimales, les précédentes avec deux."))
+```
+
+Ces chiffres ont des limites que leurs auteurs énoncent. Les statistiques de la CNAM « souffrent de beaucoup de limites telles que la sous déclaration, la sous reconnaissance des maladies professionnelles et la couverture limitée de certains secteurs excluant notamment la fonction publique et les indépendants » [@belloussaief2023-atmp, p. 5]. La hausse des maladies professionnelles déclarées peut tenir à « une meilleure déclaration due à une meilleure information, tant des médecins que des salariés », et à l'élargissement de la liste des maladies reconnues [@belloussaief2023-atmp, p. 3]. La même note donne ailleurs, pour l'ensemble des secteurs, un indice moyen des accidents du travail de 42,28 en 2012 et de 20,06 en 2020, près du double de celui qui est tracé ici, sans dire ce qui distingue les deux mesures [@belloussaief2023-atmp, tableaux 2 et 3, p. 4].
+
+<!-- TODO (rédacteur) : raccorder ces séries aux statistiques de la CNAM pour 2021-2023, déjà à l'entrepôt de données, quand leurs champs auront été comparés. -->
 
 Les ressources et les emplois du régime de réparation, de 1995 à 2004, et ceux de la protection sociale des travailleurs, de 1997 à 2004, sont exposés dans le livre [« Les caisses de sécurité sociale »](../caisses/_comptes_longue_periode.html#sec-caisses-cnss-atmp-pst).
