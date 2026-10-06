@@ -4451,7 +4451,8 @@ entries:
   - id: pib
     acronyme: PIB
     statut: valide
-    references: []
+    references: [sna2008]
+    source_definition: {ref: sna2008}
     voir_aussi: [masse-salariale, recettes-fiscales, administrations-publiques]
     fr:
       terme: Produit intérieur brut
@@ -5449,30 +5450,35 @@ entries:
   - id: taxe-unique-compensation-carburants
     acronyme: null
     statut: provisoire
-    references: [loi-88-62-droit-consommation]
-    source_definition: {ref: loi-88-62-droit-consommation, locator: "tableau annexé, renvoi (2)"}
-    voir_aussi: [droit-de-consommation, taxe-bieres-vins-boissons-alcoolisees]
+    references: [decret70-622]
+    source_definition: {ref: decret70-622, locator: "art. 5"}
+    # AR : l'édition arabe du décret n° 70-622, art. 5, écrit « معلوم وحيد تعويضي
+    # يستخلص لفائدة الصندوق العام للتعويضات » (lue à l'image par le documentaliste,
+    # docs/notes/compensation-avant-1970-et-plans.md). Le complément « على منتوجات
+    # النفط » est ajouté ici pour distinguer cette taxe de celle des transports
+    # routiers : il n'est pas dans le texte, d'où le statut provisoire.
+    source_traduction: {ref: decret70-622, locator: "art. 5"}
+    voir_aussi: [caisse-generale-compensation, centimes-additionnels, taxe-unique-compensation-transports-routiers, droit-de-consommation]
     fr:
-      terme: Taxe unique de compensation sur les carburants
+      terme: Taxe unique de compensation sur les produits pétroliers
       definition: >
-        Prélèvement antérieur sur les carburants, auquel le tableau annexé à
-        la loi n° 88-62 du 2 juin 1988 renvoie en note (2) lors de
-        l'institution du droit de consommation : les personnes qui ne
-        supportaient jusque-là que cette taxe restent soumises à elle. Les
-        premiers exercices de la série des recettes de « droits de
-        consommation » la portent encore, avec la taxe sur les bières, vins et
-        autres boissons alcoolisées. Dispositif historique.
-      synonymes: []
+        Taxe perçue au profit de la Caisse générale de compensation, en laquelle le
+        décret n° 70-622 du 31 décembre 1970 (art. 5) consolide, à compter du 1^er^
+        janvier 1971, trois prélèvements sur les carburants : la taxe de péréquation
+        de 1957, la taxe de compensation de 1964 et quatre centimes additionnels au
+        droit de consommation. Le tableau annexé à la loi n° 88-62 du 2 juin 1988, qui
+        refond le droit de consommation, y renvoie encore.
+      synonymes: [Taxe unique de compensation sur les carburants]
     ar:
-      terme: الأداء الوحيد للتعويض على المحروقات
+      terme: المعلوم الوحيد التعويضي على منتوجات النفط
       definition: >
-        معلوم سابق على المحروقات، أحال إليه الجدول المدرج بملحق القانون عدد 62
-        لسنة 1988 المؤرخ في 2 جوان 1988 في إحالته عدد (2) عند إحداث المعلوم
-        على الاستهلاك: فالأشخاص الذين لم يكونوا يتحمّلون قبل ذلك سوى هذا
-        المعلوم يبقون خاضعين له. نظام تاريخي. (التسمية العربية هنا وصفية غير
-        مثبتة في نصّ مقروء، وهي في انتظار قراءة الصفحة 856 من العدد العربي
-        للرائد الرسمي.)
-      synonymes: []
+        معلوم يُستخلص لفائدة الصندوق العام للتعويض، وحّد فيه الأمر عدد 622 لسنة 1970
+        المؤرخ في 31 ديسمبر 1970 (الفصل 5)، بداية من غرة جانفي 1971، ثلاثة اقتطاعات
+        على المحروقات: المعلوم التعديلي لسنة 1957، والمعلوم التعويضي لسنة 1964، وأربعة
+        صانتيمات إضافية للأداء على الاستهلاك. وما زال الجدول الملحق بالقانون عدد 62
+        لسنة 1988 المؤرخ في 2 جوان 1988، المتعلق بمراجعة المعلوم على الاستهلاك، يحيل
+        إليه.
+      synonymes: [المعلوم الوحيد التعويضي]
 
   - id: taxe-bieres-vins-boissons-alcoolisees
     acronyme: null
@@ -7674,6 +7680,636 @@ entries:
         الاقتصادية، والضريبة على الدخل، وتشريع الشغل، والضمان الاجتماعي (قرار
         المؤتمر الدولي الحادي والعشرين لخبراء إحصاءات العمل، 2023، الفقرة 56).
       synonymes: []
+
+  # --- Compensation (volume « Prestations sociales », chapitre « La compensation ») ---
+  # Passes 1 et 2 du 6 octobre 2026. Les entrées qui portent une `source_traduction`
+  # ont un terme arabe lu sur l'édition arabe du texte cité ; les autres non, et
+  # restent `provisoire`.
+  - id: caisse-generale-compensation
+    acronyme: CGC
+    statut: valide
+    references: [loi70-26, lf-1971, lf-2013, lf-2014]
+    source_definition: {ref: loi70-26, locator: "art. 3"}
+    # AR : « أحدث صندوق عام للتعويض » (loi n° 70-26, art. 3, éd. arabe) ; forme
+    # définie « الصندوق العام للتعويض » dans l'intitulé de l'art. 76 de la LF 2014.
+    source_traduction: {ref: loi70-26, locator: "art. 3"}
+    voir_aussi: [compensation-des-prix, fonds-special-tresor, redevance-compensation, produits-de-base]
+    fr:
+      terme: Caisse générale de compensation
+      definition: >
+        Caisse instituée par l'article 3 de la loi n° 70-26 du 19 mai 1970 pour « agir
+        sur les prix des marchandises, produits et services de première nécessité
+        notamment au moyen de subvention et de péréquation ». La loi de finances pour
+        1971 (art. 48) en fait un fonds spécial du Trésor, auquel reviennent les taxes
+        et redevances de compensation ; la redevance de compensation lui est affectée
+        depuis 2013.
+      synonymes: []
+    ar:
+      terme: الصندوق العام للتعويض
+      definition: >
+        صندوق أحدثه الفصل 3 من القانون عدد 26 لسنة 1970 المؤرخ في 19 ماي 1970، «يرمي
+        إلى الضغط على أسعار البضائع والمنتجات والخدمات الضرورية خاصة بواسطة منح أو
+        إدخال تعديلات على تلك الأسعار». وقد جعله قانون المالية لسنة 1971 (الفصل 48) من
+        الحسابات الخاصة في الخزينة، وخُصّصت له أتاوة الدعم منذ سنة 2013.
+      synonymes: []
+
+  - id: compensation-des-prix
+    acronyme: null
+    statut: valide
+    references: [loi70-26, minfin-finances-publiques-2008, lf-2013]
+    source_definition: {ref: loi70-26, locator: "art. 3"}
+    # AR : arbitrage du 6 octobre 2026. Le JORT et les rapports « Finances publiques »
+    # rendent la politique par « الدعم » (« نفقات الدعم », rapport 2008, p. 35 imprimée ;
+    # « أتاوة الدعم » = redevance de compensation, LF 2013, art. 63) ; « التعويض » ne
+    # subsiste que dans le nom de la caisse et dans l'intitulé de chapitres budgétaires.
+    # Le terme français est qualifié (« des prix ») pour que la table de traduction
+    # n'impose pas « الدعم » aux autres sens de « compensation » (allocations
+    # familiales, comptes des caisses).
+    source_traduction: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
+    voir_aussi: [caisse-generale-compensation, produits-de-base, compensation-carburants, compensation-transport, perequation-des-prix]
+    fr:
+      terme: Compensation des prix
+      definition: >
+        Action de l'État sur les prix des produits et services de première nécessité,
+        que l'article 3 de la loi n° 70-26 confie à la Caisse générale de compensation
+        « notamment au moyen de subvention et de péréquation ». Les rapports du
+        ministère des Finances en répartissent la dépense en trois postes : produits
+        de base, carburants et transport.
+      synonymes: [Compensation, Subvention aux prix]
+    ar:
+      terme: الدعم
+      definition: >
+        تدخّل الدولة في أسعار المنتجات والخدمات الضرورية، وقد أسنده الفصل 3 من القانون
+        عدد 26 لسنة 1970 إلى الصندوق العام للتعويض «خاصة بواسطة منح أو إدخال تعديلات
+        على تلك الأسعار». وتوزّع تقارير وزارة المالية نفقات الدعم على ثلاثة أبواب:
+        المواد الأساسية والمحروقات والنقل.
+      synonymes: [التعويض]
+
+  - id: produits-de-base
+    acronyme: null
+    statut: valide
+    references: [minfin-finances-publiques-2008, loi70-26]
+    source_definition: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
+    # AR : « دعم المواد الأساسية » (rapport 2008, p. 35 imprimée, p. 37 du PDF).
+    # La loi n° 70-26, art. 3, dit « produits de première nécessité » —
+    # « البضائع والمنتجات والخدمات الضرورية » dans l'édition arabe.
+    source_traduction: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
+    voir_aussi: [compensation-des-prix, caisse-generale-compensation]
+    fr:
+      terme: Produits de base
+      definition: >
+        Premier des trois postes entre lesquels les rapports du ministère des Finances
+        répartissent la dépense de compensation, avec les carburants et le transport.
+        La loi n° 70-26 (art. 3) parle, elle, de « marchandises, produits et services
+        de première nécessité ».
+      synonymes: [Produits de première nécessité]
+    ar:
+      terme: المواد الأساسية
+      definition: >
+        أوّل الأبواب الثلاثة التي توزّع عليها تقارير وزارة المالية نفقات الدعم، مع
+        المحروقات والنقل. أمّا القانون عدد 26 لسنة 1970 (الفصل 3) فيتحدّث عن «البضائع
+        والمنتجات والخدمات الضرورية».
+      synonymes: [المنتجات الضرورية]
+
+  - id: compensation-carburants
+    acronyme: null
+    statut: valide
+    references: [minfin-finances-publiques-2005, minfin-finances-publiques-2008, minfin-compensation-carburants-2014, minfin-projet-lfc-2015]
+    source_definition: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
+    # AR : « دعم المحروقات » ; le même rapport écrit aussi « دعم منظومة المحروقات
+    # و الكهرباء » (p. 7 imprimée) quand il y joint l'électricité.
+    source_traduction: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
+    voir_aussi: [compensation-des-prix, ajustement-automatique-prix-carburants, subvention-directe, subvention-indirecte, separation-commercialisation-hydrocarbures, etap, steg, stir]
+    fr:
+      terme: Compensation des carburants
+      definition: >
+        Poste de la dépense de compensation que les rapports du ministère des Finances
+        consacrent aux carburants, à côté des produits de base et du transport ; il
+        réunit des transferts à l'ETAP, à la STEG et à la STIR et couvre donc aussi
+        l'électricité et le gaz. Son périmètre s'élargit en 2015 : avec la séparation
+        des opérations de commercialisation des hydrocarbures, la ligne inclut ce que
+        les prix de cession préférentiels laissaient jusque-là hors du budget.
+      synonymes: [Subvention des carburants, Subvention énergétique]
+    ar:
+      terme: دعم المحروقات
+      definition: >
+        باب من نفقات الدعم تخصّصه تقارير وزارة المالية للمحروقات، إلى جانب المواد
+        الأساسية والنقل؛ ويضمّ تحويلات لفائدة المؤسسة التونسية للأنشطة البترولية
+        والشركة التونسية للكهرباء والغاز والشركة التونسية لصناعات التكرير، فيشمل كذلك
+        الكهرباء والغاز. واتّسع مجاله سنة 2015: فمع فصل عمليات تسويق المحروقات صار
+        يتضمّن ما كانت الأسعار التفاضلية تبقيه قبل ذلك خارج الميزانية.
+      synonymes: []
+
+  - id: compensation-transport
+    acronyme: null
+    statut: valide
+    references: [minfin-finances-publiques-2008, lf-1984]
+    source_definition: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
+    # AR : « دعم النقل » dans le tableau, « دعم النقل العمومي » dans le texte de la
+    # même page.
+    source_traduction: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
+    voir_aussi: [compensation-des-prix, taxe-unique-compensation-transports-routiers]
+    fr:
+      terme: Compensation du transport
+      definition: >
+        Poste de la dépense de compensation que les rapports du ministère des Finances
+        consacrent au transport public, à côté des produits de base et des carburants.
+      synonymes: [Subvention du transport public]
+    ar:
+      terme: دعم النقل
+      definition: >
+        باب من نفقات الدعم تخصّصه تقارير وزارة المالية للنقل العمومي، إلى جانب المواد
+        الأساسية والمحروقات.
+      synonymes: [دعم النقل العمومي]
+
+  - id: fonds-special-tresor
+    acronyme: null
+    statut: provisoire
+    references: [lf-1971, lf-2014]
+    source_definition: {ref: lf-1971, locator: "art. 48"}
+    # AR : attesté au pluriel seulement — « fonds spéciaux du Trésor » en regard de
+    # « الحسابات الخاصة في الخزينة » (LF 2014, art. 2 et tableau « B »). Le singulier
+    # n'est pas lu, et l'édition arabe de la LF 1971 non plus.
+    source_traduction: {ref: lf-2014, locator: "art. 2"}
+    voir_aussi: [caisse-generale-compensation]
+    fr:
+      terme: Fonds spéciaux du Trésor
+      definition: >
+        Compte du Trésor auquel la loi de finances affecte des recettes et dont elle
+        arrête chaque année les prévisions dans un tableau annexé. La loi de finances
+        pour 1971 (art. 48) fait de la Caisse générale de compensation un fonds
+        spécial du Trésor, auquel reviennent les taxes et redevances de compensation.
+      synonymes: [Fonds spécial du Trésor]
+    ar:
+      terme: الحسابات الخاصة في الخزينة
+      definition: >
+        حساب في الخزينة يخصّص له قانون المالية موارد ويضبط تقديراته كلّ سنة في جدول
+        ملحق به. وقد جعل قانون المالية لسنة 1971 (الفصل 48) الصندوق العام للتعويض من
+        هذه الحسابات، وأرجع إليه الأداءات والأتاوات التعويضية.
+      synonymes: []
+
+  - id: redevance-compensation
+    acronyme: null
+    statut: valide
+    references: [lf-2013, lf-2014]
+    source_definition: {ref: lf-2013, locator: "art. 63"}
+    # AR : « أتاوة الدعم المنصوص عليها بهذا الفصل » (LF 2013, art. 63, § II, éd. arabe) ;
+    # même terme dans l'arrêté du 10 mai 2024 (JORT n° 61 de 2024).
+    source_traduction: {ref: lf-2013, locator: "art. 63"}
+    voir_aussi: [caisse-generale-compensation, compensation-des-prix, taxe-unique-compensation-transports-routiers]
+    fr:
+      terme: Redevance de compensation
+      definition: >
+        Redevance créée au profit de la Caisse générale de compensation par l'article
+        63 de la loi de finances pour 2013. Elle est due sur le chiffre d'affaires de
+        certains établissements, sur la première immatriculation des voitures de forte
+        cylindrée, par nuitée d'hôtel et sur le revenu annuel net des personnes
+        physiques au-delà de 20 000 dinars. La loi de finances pour 2014 l'étend aux
+        voitures particulières et aux véhicules soumis à la taxe unique de
+        compensation de transports routiers (art. 76), réécrit le volet assis sur le
+        revenu (art. 77) et borne ces deux volets aux années 2014 et 2015 (art. 78).
+      synonymes: []
+    ar:
+      terme: أتاوة الدعم
+      definition: >
+        أتاوة أحدثها الفصل 63 من قانون المالية لسنة 2013 لفائدة الصندوق العام للتعويض.
+        تُستوجب على رقم معاملات بعض المؤسسات، وعند أوّل تسجيل للسيارات ذات الأسطوانة
+        الكبيرة، وعن كلّ ليلة مقضّاة بالمؤسسات السياحية، وعلى الدخل السنوي الصافي
+        للأشخاص الطبيعيين الذي يفوق 20.000 دينار. ووسّعها قانون المالية لسنة 2014 إلى
+        السيارات الخاصة والعربات الخاضعة للمعلوم الوحيد التعويضي على النقل بالطرقات
+        (الفصل 76)، وأعاد صياغة الجزء الموظّف على الدخل (الفصل 77)، وحصر تطبيق هذين
+        الجزأين في سنتي 2014 و2015 (الفصل 78).
+      synonymes: []
+
+  - id: taxe-unique-compensation-transports-routiers
+    acronyme: null
+    statut: valide
+    references: [lf-1984, lf-2014]
+    source_definition: {ref: lf-1984, locator: "art. 38"}
+    # AR : lu en regard du français à l'art. 76 de la LF 2014 ; l'édition arabe de la
+    # LF 1984 n'est pas lue.
+    source_traduction: {ref: lf-2014, locator: "art. 76"}
+    voir_aussi: [compensation-transport, redevance-compensation, taxe-unique-compensation-carburants]
+    fr:
+      terme: Taxe unique de compensation de transports routiers
+      definition: >
+        Taxe instituée à compter du 1^er^ janvier 1984 par l'article 38 de la loi de
+        finances pour 1984. Elle s'applique aux véhicules de transport en commun de
+        personnes de plus de neuf places, aux véhicules de transport routier de
+        marchandises d'une charge utile supérieure à 300 kilogrammes, aux voitures de
+        louage et aux taxis. La loi de finances pour 2014 met à la charge des
+        véhicules qui y sont soumis une redevance de compensation égale à 25 % de son
+        montant (art. 76), au titre des années 2014 et 2015 (art. 78).
+      synonymes: []
+    ar:
+      terme: المعلوم الوحيد التعويضي على النقل بالطرقات
+      definition: >
+        معلوم أحدثه الفصل 38 من قانون المالية لسنة 1984 بداية من غرة جانفي 1984. يطبّق
+        على عربات النقل المشترك للأشخاص التي تفوق مقاعدها التسعة، وعلى عربات نقل
+        البضائع بالطرقات التي تفوق حمولتها النافعة 300 كيلوغرام، وعلى سيارات اللواج
+        وسيارات التاكسي. ووظّف قانون المالية لسنة 2014 على العربات الخاضعة له أتاوة
+        دعم تساوي 25 % من مبلغه (الفصل 76)، بعنوان سنتي 2014 و2015 (الفصل 78).
+      synonymes: [المعلوم التعويضي على النقل]
+
+  - id: ajustement-automatique-prix-carburants
+    acronyme: null
+    statut: valide
+    references: [arrete-2016-07-15-prix-petroliers, arrete-2020-03-31-prix-petroliers, arrete-2021-04-07-prix-petroliers, bct-ra-2009]
+    source_definition: {ref: arrete-2016-07-15-prix-petroliers, locator: "art. 5"}
+    # AR : « آلية التعديل الأوتوماتيكي لأسعار البنزين الخالي من الرصاص والغازوال… »
+    # (arrêté de 2016, art. 5) ; forme générique « الآلية الشهرية للتعديل الأوتوماتيكي
+    # لأسعار المحروقات » (arrêté de 2021, art. 7 nouveau). L'édition arabe de l'arrêté
+    # de 2020 n'est pas lue.
+    source_traduction: {ref: arrete-2021-04-07-prix-petroliers, locator: "art. 1"}
+    voir_aussi: [compensation-carburants]
+    fr:
+      terme: Mécanisme d'ajustement automatique des prix des carburants
+      definition: >
+        Mécanisme mis en place par l'arrêté du 15 juillet 2016 (art. 5) pour l'essence
+        sans plomb, le gasoil ordinaire et le gasoil 50 : une commission fixe
+        périodiquement leurs prix de vente au public d'après l'évolution des prix sur
+        le marché international. L'ajustement, trimestriel en 2016, devient mensuel
+        avec l'arrêté du 31 mars 2020, qui plafonne la variation à chaque ajustement ;
+        l'arrêté du 7 avril 2021 porte ce plafond à 5 % du prix en vigueur. Un premier
+        mécanisme d'ajustement des prix intérieurs des produits pétroliers, rapporté
+        par la Banque centrale, avait été activé le 16 janvier 2009 ; le texte qui
+        l'institue n'est pas identifié ici.
+      synonymes: [Ajustement automatique des prix]
+    ar:
+      terme: آلية التعديل الأوتوماتيكي لأسعار المحروقات
+      definition: >
+        آلية وُضعت بمقتضى القرار المؤرخ في 15 جويلية 2016 (الفصل 5) بالنسبة إلى
+        البنزين الخالي من الرصاص والغازوال العادي والغازوال 50: تضبط لجنة دوريًا أسعار
+        بيعها للعموم على ضوء تطوّر أسعارها في السوق العالمية. وكان التعديل كلّ ثلاثة
+        أشهر سنة 2016، ثمّ صار شهريًا بمقتضى القرار المؤرخ في 31 مارس 2020 الذي وضع
+        حدًّا أقصى لقيمة كلّ تعديل؛ ورفع القرار المؤرخ في 7 أفريل 2021 هذا الحدّ إلى 5
+        % من سعر البيع الجاري به العمل. وكانت آلية أولى لتعديل الأسعار الداخلية
+        للمنتوجات النفطية، ذكرها البنك المركزي، قد فُعّلت في 16 جانفي 2009؛ والنصّ
+        المحدث لها غير محدَّد هنا.
+      synonymes: []
+
+  - id: perequation-des-prix
+    acronyme: null
+    statut: provisoire
+    references: [loi70-26, minfin-finances-publiques-2008]
+    source_definition: {ref: loi70-26, locator: "art. 3"}
+    # AR à confirmer : l'édition arabe de la loi n° 70-26, art. 3, ne nomme pas la
+    # péréquation, elle la paraphrase (« إدخال تعديلات على تلك الأسعار ») ; le rapport
+    # « Finances publiques » 2008 (p. 39 imprimée) écrit que la caisse assure
+    # « تعديل أسعار المواد الأساسية و دعمها ». Le rapprochement est du terminologue :
+    # pas de `source_traduction`.
+    voir_aussi: [compensation-des-prix, caisse-generale-compensation]
+    fr:
+      terme: Péréquation des prix
+      definition: >
+        Second des deux instruments, avec la subvention, que l'article 3 de la loi n°
+        70-26 du 19 mai 1970 donne à la Caisse générale de compensation pour agir sur
+        les prix des produits de première nécessité. La loi ne le définit pas.
+      synonymes: []
+    ar:
+      terme: تعديل الأسعار
+      definition: >
+        ثاني الوسيلتين، مع المنح، اللتين خوّلهما الفصل 3 من القانون عدد 26 لسنة 1970
+        المؤرخ في 19 ماي 1970 للصندوق العام للتعويض قصد الضغط على أسعار المنتجات
+        الضرورية. ولا يعرّفه القانون، ويعبّر عنه نصّه العربي بـ«إدخال تعديلات على تلك
+        الأسعار».
+      synonymes: []
+
+  # --- Compensation, volume IX : carburants et circuit des hydrocarbures (passe du
+  # volume réécrit). Les termes arabes tirés du rapport de 2014 et des documents
+  # budgétaires de 2015 sont ceux relevés à l'image par le documentaliste
+  # (docs/notes/compensation-rupture-2015.md, « Notions à glossaire »).
+
+  - id: subvention-directe
+    acronyme: null
+    statut: valide
+    references: [minfin-compensation-carburants-2014]
+    source_definition: {ref: minfin-compensation-carburants-2014, locator: "p. 7-9"}
+    source_traduction: {ref: minfin-compensation-carburants-2014, locator: "p. 7-9"}
+    voir_aussi: [subvention-indirecte, compensation-carburants, prix-de-cession-preferentiel]
+    fr:
+      terme: Subvention directe
+      definition: >
+        Part de la subvention des carburants que le budget de l'État inscrit en
+        dépense : la ligne « carburants », faite de transferts à la STEG, à la STIR
+        et, à partir de 2011, à l'ETAP. Le rapport du 21 juillet 2014 l'oppose à la
+        subvention indirecte.
+      synonymes: []
+    ar:
+      terme: الدعم المباشر
+      definition: >
+        الجزء من دعم المحروقات الذي تُدرجه ميزانية الدولة ضمن نفقاتها: وهو باب
+        «المحروقات» المتكوّن من تحويلات لفائدة الشركة التونسية للكهرباء والغاز والشركة
+        التونسية لصناعات التكرير، ثمّ المؤسسة التونسية للأنشطة البترولية بداية من سنة
+        2011. ويقابله تقرير 21 جويلية 2014 بالدعم غير المباشر.
+      synonymes: []
+
+  - id: subvention-indirecte
+    acronyme: null
+    statut: valide
+    references: [minfin-compensation-carburants-2014]
+    source_definition: {ref: minfin-compensation-carburants-2014, locator: "p. 7-9"}
+    source_traduction: {ref: minfin-compensation-carburants-2014, locator: "p. 7-9"}
+    voir_aussi: [subvention-directe, prix-de-cession-preferentiel, separation-commercialisation-hydrocarbures]
+    fr:
+      terme: Subvention indirecte
+      definition: >
+        Part de la subvention des carburants qui n'est inscrite nulle part en dépense
+        jusqu'en 2014 : l'écart entre le prix mondial et les prix de cession
+        préférentiels auxquels le pétrole brut parvient à la STIR et le gaz à la STEG,
+        manque à gagner sur des ressources de l'État. Le rapport du 21 juillet 2014
+        est la seule pièce budgétaire qui la chiffre, pour 2010-2012.
+      synonymes: []
+    ar:
+      terme: الدعم غير المباشر
+      definition: >
+        الجزء من دعم المحروقات الذي لم يكن مدرجًا في أيّ باب من النفقات إلى سنة 2014:
+        وهو الفارق بين السعر العالمي والأسعار التفاضلية التي يُسلَّم بها النفط الخام
+        إلى الشركة التونسية لصناعات التكرير والغاز إلى الشركة التونسية للكهرباء
+        والغاز، أي نقص في موارد راجعة للدولة. وتقرير 21 جويلية 2014 هو الوثيقة
+        الميزانية الوحيدة التي تقدّره، للسنوات 2010-2012.
+      synonymes: []
+
+  - id: prix-de-cession-preferentiel
+    acronyme: null
+    statut: valide
+    references: [minfin-compensation-carburants-2014, minfin-projet-lfc-2015, loi91-45]
+    source_definition: {ref: minfin-compensation-carburants-2014, locator: "p. 7"}
+    # AR : le rapport écrit « سعر تفاضلي » (prix préférentiel) ; « de cession » n'y est pas rendu.
+    source_traduction: {ref: minfin-compensation-carburants-2014, locator: "p. 7"}
+    voir_aussi: [subvention-indirecte, separation-commercialisation-hydrocarbures, etap, stir, steg]
+    fr:
+      terme: Prix de cession préférentiel
+      definition: >
+        Prix, fixé par l'administration et inférieur au prix mondial, auquel le
+        pétrole brut est cédé à la STIR et le gaz à la STEG jusqu'en 2014 : environ 50
+        dinars le baril et 90,8 dinars la tonne équivalent pétrole selon le rapport du
+        21 juillet 2014. La loi n° 91-45 (art. 17) veut, elle, que les prix de cession
+        soient fixés par une commission, par référence aux prix d'importation.
+      synonymes: [Prix de cession]
+    ar:
+      terme: السعر التفاضلي
+      definition: >
+        سعر تضبطه الإدارة دون السعر العالمي، يُسلَّم به النفط الخام إلى الشركة
+        التونسية لصناعات التكرير والغاز إلى الشركة التونسية للكهرباء والغاز إلى سنة
+        2014: نحو 50 دينارًا للبرميل و90,8 دينارًا للطنّ المكافئ نفط حسب تقرير 21
+        جويلية 2014. أمّا القانون عدد 45 لسنة 1991 (الفصل 17) فيقتضي أن تضبط لجنة
+        أسعار البيع لمعامل التكرير بالرجوع إلى أسعار التوريد.
+      synonymes: []
+
+  - id: separation-commercialisation-hydrocarbures
+    acronyme: null
+    statut: valide
+    references: [minfin-resultats-provisoires-2015-12, minfin-projet-lfc-2015, lfc-2015]
+    source_definition: {ref: minfin-projet-lfc-2015, locator: "§ 19-20"}
+    source_traduction: {ref: minfin-resultats-provisoires-2015-12}
+    voir_aussi: [prix-de-cession-preferentiel, subvention-indirecte, revenus-commercialisation-carburants, compensation-carburants]
+    fr:
+      terme: Séparation des opérations de commercialisation des hydrocarbures
+      definition: >
+        Principe adopté dans le cadre de la loi de finances complémentaire pour 2015 :
+        la STIR et la STEG s'approvisionnent au prix mondial et l'ETAP reverse au
+        Trésor le produit de la vente du pétrole de l'État. La subvention, jusque-là
+        comptée nette de ressources que l'État ne percevait pas, devient une dépense
+        d'un côté et une recette de l'autre, ce qui élargit le périmètre de la ligne «
+        carburants ». Aucun article de loi ne porte ce principe.
+      synonymes: []
+    ar:
+      terme: فصل عمليات تسويق المحروقات
+      definition: >
+        مبدأ اعتُمد في إطار قانون المالية التكميلي لسنة 2015: تتزوّد الشركة التونسية
+        لصناعات التكرير والشركة التونسية للكهرباء والغاز بالسعر العالمي، وتحوّل
+        المؤسسة التونسية للأنشطة البترولية إلى الخزينة محصول بيع النفط الراجع للدولة.
+        فالدعم الذي كان يُحتسب صافيًا من موارد لا تقبضها الدولة صار نفقة من جهة
+        وموردًا من جهة أخرى، ممّا وسّع مجال باب «المحروقات». ولم يرد هذا المبدأ في أيّ
+        فصل من القانون.
+      synonymes: []
+
+  - id: revenus-commercialisation-carburants
+    acronyme: null
+    statut: provisoire
+    references: [minfin-projet-lfc-2015, lfc-2015]
+    source_definition: {ref: minfin-projet-lfc-2015, locator: "§ 12-13"}
+    # AR : « مداخيل تسويق المحروقات » est relevé par le documentaliste sans page de
+    # source (docs/notes/compensation-rupture-2015.md) : pas de `source_traduction`.
+    voir_aussi: [separation-commercialisation-hydrocarbures, compensation-carburants]
+    fr:
+      terme: Revenus de commercialisation des carburants
+      definition: >
+        Recette non fiscale du budget de l'État, contrepartie de la séparation des
+        opérations de commercialisation des hydrocarbures ; la ligne n'existe pas
+        avant 2015. La loi de finances complémentaire pour 2015 la prévoit sous
+        l'intitulé « Revenus de l'exploitation pétrolière ».
+      synonymes: [Revenus de commercialisation]
+    ar:
+      terme: مداخيل تسويق المحروقات
+      definition: >
+        مورد غير جبائي لميزانية الدولة يقابل فصل عمليات تسويق المحروقات؛ ولا وجود لهذا
+        الباب قبل سنة 2015. وقد قدّره قانون المالية التكميلي لسنة 2015 في جدول موارده.
+      synonymes: []
+
+  - id: centimes-additionnels
+    acronyme: null
+    statut: provisoire
+    references: [decret70-622, decret-1957-03-30-credits-provisoires]
+    source_definition: {ref: decret70-622, locator: "art. 5"}
+    # AR : translittération de l'édition arabe du décret (« والاربعة صانتيمات الاضافية »),
+    # lue à l'image par le documentaliste. Provisoire : le contenu de la notion n'est pas établi.
+    source_traduction: {ref: decret70-622, locator: "art. 5"}
+    voir_aussi: [taxe-unique-compensation-carburants, droit-de-consommation]
+    fr:
+      terme: Centimes additionnels
+      definition: >
+        Expression du décret n° 70-622 du 31 décembre 1970 (art. 5), qui consolide
+        dans la taxe unique de compensation « les quatre centimes additionnels au
+        droit de consommation prévus par le décret du 30 mars 1957 ». L'expression est
+        celle du texte ; l'assiette et le taux de ce prélèvement ne sont pas établis
+        ici.
+      synonymes: []
+    ar:
+      terme: صانتيمات إضافية
+      definition: >
+        عبارة وردت في الأمر عدد 622 لسنة 1970 المؤرخ في 31 ديسمبر 1970 (الفصل 5)، الذي
+        أدمج في المعلوم الوحيد التعويضي «الاربعة صانتيمات الاضافية» للأداء على
+        الاستهلاك المقرّرة بالأمر المؤرخ في 30 مارس 1957. والعبارة هي عبارة النصّ؛
+        أمّا قاعدة هذا الاقتطاع ونسبته فغير ثابتتين هنا.
+      synonymes: []
+
+  - id: structure-des-prix
+    acronyme: null
+    statut: valide
+    references: [loi91-45, arrete-2016-07-15-prix-petroliers, arrete-2020-03-31-prix-petroliers]
+    source_definition: {ref: loi91-45, locator: "art. 18"}
+    # AR : « التركيبة الجديدة للأسعار » (arrêté de 2016, art. 7, éd. arabe).
+    source_traduction: {ref: arrete-2016-07-15-prix-petroliers, locator: "art. 7"}
+    voir_aussi: [arrete-interne, ajustement-automatique-prix-carburants]
+    fr:
+      terme: Structure des prix
+      definition: >
+        Décomposition du prix des produits pétroliers que la loi n° 91-45 (art. 18)
+        charge le ministre chargé de l'énergie d'établir, à côté des prix plafonds de
+        vente au public fixés par arrêté. Depuis l'arrêté du 15 juillet 2016 (art. 7),
+        la nouvelle structure des prix est notifiée aux intéressés par arrêté interne.
+        Aucun des textes cités n'en énumère les composantes.
+      synonymes: []
+    ar:
+      terme: تركيبة الأسعار
+      definition: >
+        تفصيل سعر منتوجات النفط الذي كلّف القانون عدد 45 لسنة 1991 (الفصل 18) الوزير
+        المكلف بالطاقة بوضعه، إلى جانب الأسعار القصوى للبيع للعموم المضبوطة بقرار.
+        ومنذ القرار المؤرخ في 15 جويلية 2016 (الفصل 7) يُعلَم المعنيون بالأمر
+        بالتركيبة الجديدة للأسعار بواسطة قرار داخلي. ولا يعدّد أيّ من النصوص المذكورة
+        عناصرها.
+      synonymes: []
+
+  - id: arrete-interne
+    acronyme: null
+    statut: valide
+    references: [arrete-1992-02-13-prix-cession, arrete-2016-07-15-prix-petroliers, arrete-2020-03-31-prix-petroliers]
+    source_definition: {ref: arrete-2016-07-15-prix-petroliers, locator: "art. 7"}
+    # AR : « بواسطة قرار داخلي مشترك » (arrêté de 2016, art. 7, éd. arabe).
+    source_traduction: {ref: arrete-2016-07-15-prix-petroliers, locator: "art. 7"}
+    voir_aussi: [structure-des-prix, ajustement-automatique-prix-carburants]
+    fr:
+      terme: Arrêté interne
+      definition: >
+        Acte signé conjointement par le ministre chargé de l'énergie et le ministre
+        chargé des finances, par lequel les intéressés sont informés des nouveaux prix
+        des produits pétroliers et de leurs modalités d'application (arrêté du 15
+        juillet 2016, art. 7 ; arrêté du 31 mars 2020, art. 6). L'arrêté du 13 février
+        1992 (art. 6) employait déjà cette voie pour les prix de cession. Il n'est pas
+        publié au Journal officiel.
+      synonymes: [Arrêté interne conjoint]
+    ar:
+      terme: قرار داخلي
+      definition: >
+        قرار مشترك ممضى من الوزير المكلف بالطاقة والوزير المكلف بالمالية، يُعلَم
+        بواسطته المعنيون بالأمر بالأسعار الجديدة لمنتوجات النفط وبإجراءات تطبيقها
+        (القرار المؤرخ في 15 جويلية 2016، الفصل 7؛ القرار المؤرخ في 31 مارس 2020،
+        الفصل 6). وكان القرار المؤرخ في 13 فيفري 1992 (الفصل 6) يعتمد هذه الطريقة في
+        أسعار البيع لمعامل التكرير. ولا يُنشر بالرائد الرسمي.
+      synonymes: [قرار داخلي مشترك]
+
+  - id: etap
+    acronyme: ETAP
+    statut: valide
+    references: [minfin-compensation-carburants-2014, minfin-finances-publiques-2011]
+    source_definition: {ref: minfin-compensation-carburants-2014, locator: "p. 6-9"}
+    # AR : nom suivi du sigle latin dans le rapport « Finances publiques » 2011 (annexe sur
+    # les carburants, pp. 72-73 du PDF).
+    source_traduction: {ref: minfin-finances-publiques-2011}
+    voir_aussi: [stir, steg, compensation-carburants]
+    fr:
+      terme: Entreprise tunisienne d'activités pétrolières
+      definition: >
+        Entreprise publique qui commercialise le pétrole brut et le gaz revenant à
+        l'État. Jusqu'en 2014, elle cède le brut à la STIR à un prix de cession
+        préférentiel ; depuis la séparation de 2015, elle reverse au Trésor le produit
+        de la vente du pétrole de l'État.
+      synonymes: []
+    ar:
+      terme: المؤسسة التونسية للأنشطة البترولية
+      definition: >
+        منشأة عمومية تسوّق النفط الخام والغاز الراجعين للدولة. كانت إلى سنة 2014 تسلّم
+        النفط الخام إلى الشركة التونسية لصناعات التكرير بسعر تفاضلي؛ ومنذ الفصل
+        المعتمد سنة 2015 صارت تحوّل إلى الخزينة محصول بيع النفط الراجع للدولة.
+      synonymes: []
+
+  - id: stir
+    acronyme: STIR
+    statut: valide
+    references: [minfin-compensation-carburants-2014, minfin-finances-publiques-2011]
+    source_definition: {ref: minfin-compensation-carburants-2014, locator: "p. 6-9"}
+    # AR : nom suivi du sigle latin dans le rapport « Finances publiques » 2011 (annexe sur
+    # les carburants, pp. 72-73 du PDF).
+    source_traduction: {ref: minfin-finances-publiques-2011}
+    voir_aussi: [etap, steg, compensation-carburants]
+    fr:
+      terme: Société tunisienne des industries de raffinage
+      definition: >
+        Entreprise publique qui achète du pétrole brut, le raffine et importe des
+        produits finis. Elle est l'un des bénéficiaires de la ligne budgétaire «
+        carburants ».
+      synonymes: []
+    ar:
+      terme: الشركة التونسية لصناعات التكرير
+      definition: >
+        منشأة عمومية تشتري النفط الخام وتكرّره وتورّد المنتوجات الجاهزة. وهي من
+        المنتفعين بباب «المحروقات» في الميزانية.
+      synonymes: []
+
+  - id: steg
+    acronyme: STEG
+    statut: valide
+    references: [minfin-compensation-carburants-2014, minfin-finances-publiques-2011]
+    source_definition: {ref: minfin-compensation-carburants-2014, locator: "p. 6-9"}
+    # AR : nom suivi du sigle latin dans le rapport « Finances publiques » 2011 (annexe sur
+    # les carburants, pp. 72-73 du PDF).
+    source_traduction: {ref: minfin-finances-publiques-2011}
+    voir_aussi: [etap, stir, compensation-carburants]
+    fr:
+      terme: Société tunisienne de l'électricité et du gaz
+      definition: >
+        Entreprise publique qui achète du gaz — importé d'Algérie, ou prélevé au titre
+        de la redevance due par le gazoduc qui traverse le territoire — pour produire
+        l'électricité et distribuer le gaz. Elle est l'un des bénéficiaires de la
+        ligne budgétaire « carburants ».
+      synonymes: []
+    ar:
+      terme: الشركة التونسية للكهرباء والغاز
+      definition: >
+        منشأة عمومية تشتري الغاز — المورّد من الجزائر أو المقتطع بعنوان الأتاوة
+        الموظفة على أنبوب الغاز العابر للتراب التونسي — لإنتاج الكهرباء وتوزيع الغاز.
+        وهي من المنتفعين بباب «المحروقات» في الميزانية.
+      synonymes: []
+
+  # Notions analytiques : aucun terme arabe lu sur un texte officiel. Traduction du
+  # terminologue, à faire confirmer par un arabophone ou par une publication arabe
+  # de l'INS ; pas de `source_traduction`.
+  - id: incidence-des-subventions
+    acronyme: null
+    statut: provisoire
+    references: [ins-cres-bad-2013-subventions]
+    source_definition: {ref: ins-cres-bad-2013-subventions}
+    voir_aussi: [quintile-niveau-de-vie, ciblage, compensation-des-prix]
+    fr:
+      terme: Incidence des subventions
+      definition: >
+        Répartition du bénéfice des subventions entre les ménages selon leur niveau de
+        vie. Pour les subventions alimentaires, l'étude de l'INS, du CRES et de la BAD
+        (2013) la mesure par le montant reçu par tête dans chaque quintile, à partir
+        de l'enquête de consommation de 2010.
+      synonymes: [Incidence]
+    ar:
+      terme: توزيع منافع الدعم
+      definition: >
+        توزيع الانتفاع بالدعم بين الأسر حسب مستوى عيشها. وتقيسه دراسة المعهد الوطني
+        للإحصاء ومركز البحوث والدراسات الاجتماعية والبنك الإفريقي للتنمية (2013)، في
+        ما يخصّ دعم المواد الغذائية، بالمبلغ المتحصّل عليه للفرد الواحد في كلّ شريحة
+        خُمسية، انطلاقًا من مسح الاستهلاك لسنة 2010.
+      synonymes: []
+
+  - id: quintile-niveau-de-vie
+    acronyme: null
+    statut: provisoire
+    references: [ins-cres-bad-2013-subventions]
+    source_definition: {ref: ins-cres-bad-2013-subventions}
+    voir_aussi: [incidence-des-subventions]
+    fr:
+      terme: Quintile de niveau de vie
+      definition: >
+        Chacun des cinq groupes d'effectif égal obtenus en classant la population par
+        niveau de vie croissant : le premier quintile réunit le cinquième le plus
+        modeste, le cinquième quintile le plus aisé. L'étude de l'INS, du CRES et de
+        la BAD (2013) classe ainsi la population selon le revenu ou la dépense.
+      synonymes: [Quintile]
+    ar:
+      terme: الشريحة الخُمسية لمستوى العيش
+      definition: >
+        كلّ واحدة من خمس مجموعات متساوية العدد يُتحصّل عليها بترتيب السكّان تصاعديًا
+        حسب مستوى العيش: تضمّ الشريحة الأولى الخُمس الأقلّ دخلًا والشريحة الخامسة
+        الخُمس الأيسر حالًا. وتعتمد دراسة المعهد الوطني للإحصاء ومركز البحوث والدراسات
+        الاجتماعية والبنك الإفريقي للتنمية (2013) هذا التصنيف حسب الدخل أو الإنفاق.
 
   # ── Volume « La fiscalité », chapitre « Les dépenses fiscales et les régimes
   #    d'incitation » (passe 1 du 6 octobre 2026 : termes et sources ; passe 2 du

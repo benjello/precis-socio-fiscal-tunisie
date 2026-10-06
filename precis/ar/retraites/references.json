@@ -774,26 +774,6 @@
       }
     },
     {
-      "id": "minfin-remunerations",
-      "type": "dataset",
-      "note": "citation-key: minfin-remunerations",
-      "publisher": "Ministère des Finances, Tunisie",
-      "title": "Série de répartition économique des dépenses du budget de l’État (Rémunérations publiques)",
-      "URL": "http://www.finances.gov.tn",
-      "author": [
-        {
-          "literal": "Ministère des Finances, Tunisie"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2025
-          ]
-        ]
-      }
-    },
-    {
       "id": "ins-annuaire",
       "type": "report",
       "title": "Annuaire statistique de la Tunisie (éditions 1995-2001, 1998-2002, 1999-2003 et 2019-2023)",
@@ -822,21 +802,6 @@
       "publisher-place": "Tunis",
       "URL": "https://www.ins.tn/publication/enquete-nationale-sur-lemploi-2012",
       "note": "citation-key: ins-enpe\nEnsemble de rapports annuels de l'INS. Intitulés lus en couverture : « المسح الوطني حول السكان والتشغيل لسنة 2005 » (daté « أكتوبر 2006 », en arabe) ; « المسح الوطني حول السكان والتشغيل لسنة 2010 » (daté « جوان 2011 », en arabe) ; « Enquête nationale sur la population et l'emploi 2012 » (bilingue, daté « Décembre 2013 »). Le portail de l'INS les intitule « Enquête Nationale sur l'Emploi AAAA ». Utilisés pour les occupés selon la situation dans la profession : rapport 2005, tableau 27 ; rapport 2010, tableau 33 ; rapport 2012, tableau 30. L'URL donnée est la page du rapport 2012 (vérifiée le 21 septembre 2026) ; rapports 2005 et 2010 : https://www.ins.tn/publication/enquete-nationale-sur-lemploi-2005 et https://www.ins.tn/publication/enquete-nationale-sur-lemploi-2010 (vérifiées le 21 septembre 2026). Liste des fichiers : dépôt tunisia-data, sources/ins-enquete-emploi-urls.csv."
-    },
-    {
-      "id": "ins-bms",
-      "type": "report",
-      "title": "Bulletin mensuel de la statistique (numéros de novembre 2008 à juillet 2026)",
-      "title-short": "INS, Bulletin mensuel de la statistique",
-      "author": [
-        {
-          "literal": "Institut National de la Statistique (INS)"
-        }
-      ],
-      "publisher": "Institut National de la Statistique, Tunisie",
-      "publisher-place": "Tunis",
-      "URL": "https://www.ins.tn/publication/bulletin-mensuel-de-la-statistique-juillet-2026",
-      "note": "citation-key: ins-bms\nPublication mensuelle de l'INS, mise en ligne avec retard (le numéro de juillet 2026 l'a été le 8 septembre 2026). Collection des 213 numéros en ligne, du plus ancien (novembre 2008) au plus récent (juillet 2026). Utilisée pour le tableau 2.2 « Taux d'évolution trimestriel des salaires », renvoi (1) « Salaire dans le secteur privé non agricole » (page 9 de novembre 2008 à juin 2012, page 12 de juillet 2012 à janvier 2023, page 10 depuis février 2023), d'après le registre des salariés déclarés à la Caisse nationale de sécurité sociale. Chaque numéro donne cinq ou six trimestres, et les valeurs sont révisées d'un numéro à l'autre. L'URL donnée est la page du numéro de juillet 2026 (vérifiée le 22 septembre 2026) ; liste des numéros : https://www.ins.tn/publication (vérifiée le 22 septembre 2026). Page du portail « Taux d'évolution du salaire moyen dans le secteur privé non agricole » : https://www.ins.tn/statistiques/99 (vérifiée le 22 septembre 2026), seule source de T3 2020 et de la valeur révisée de T1 2024 ; ses mises à jour successives sont archivées (captures de novembre 2021 à juin 2025, liste : http://web.archive.org/cdx/search/cdx?url=ins.tn/statistiques/99), sauf celle du 10 août 2026. Adresse de la page et du PDF de chaque numéro : dépôt tunisia-data, sources/ins-bms-urls.csv ; fiche : sources/ins-bms-salaires-prive.md."
     },
     {
       "id": "ins-guide-salaires-prive-2026",
@@ -1029,32 +994,6 @@
       "URL": "https://documents1.worldbank.org/curated/en/919691468337762945/pdf/multi0page.pdf",
       "title-short": "Banque mondiale, Country Economic Memorandum, vol. V (1990)",
       "note": "citation-key: bm-1990-cem-8044-vol5\nRapport n° 8044-TUN, « (In Five Volumes) Volume V: Annex 4. Statistical Annexes », « March 1990 », diffusion restreinte à l'origine (« For official use only ») ; titre, numéro, date et unité (« Country Operations Division, Country Department II, Europe, Middle East and North Africa Region ») lus sur la couverture du PDF (92 pages, scan). Catalogue de la Banque mondiale (documents.worldbank.org, identifiant 919691468337762945) : « Tunisia - Country economic memorandum : the road to an outward oriented economy (Vol. 5 of 5) : Annex 4 », rapport 8044, type « Pre-2003 Economic or Sector Report », daté du 31 mars 1990 : seul le mois, imprimé sur la couverture, est retenu. Utilisé pour les tableaux 2.4 « Expenditure on Gross Domestic Product at Current Market Prices » (page 25 du PDF) et 10.2 « Distribution of Average Salaries by Sectors » (page 91 du PDF). URL vérifiée le 22 septembre 2026 (HTTP 200, PDF de 3 289 753 octets, identique à la copie locale de tunisia-data). Consulté le 22 septembre 2026."
-    },
-    {
-      "id": "fmi-1996-red",
-      "type": "report",
-      "title": "Tunisia: Recent Economic Developments",
-      "genre": "IMF Staff Country Reports, vol. 1996, n° 027",
-      "author": [
-        {
-          "literal": "International Monetary Fund"
-        }
-      ],
-      "publisher": "Fonds monétaire international",
-      "publisher-place": "Washington, D.C.",
-      "issued": {
-        "date-parts": [
-          [
-            1996,
-            5,
-            7
-          ]
-        ]
-      },
-      "DOI": "10.5089/9781451837735.002.A001",
-      "URL": "https://www.elibrary.imf.org/view/journals/002/1996/027/article-A001-en.xml",
-      "title-short": "FMI, Tunisia: Recent Economic Developments (1996)",
-      "note": "citation-key: fmi-1996-red\nTitre, auteur, éditeur et date lus dans les métadonnées de la page de la bibliothèque en ligne du FMI (copie de la page conservée par tunisia-data, et capture des archives du web) : citation_title « Tunisia: Recent Economic Developments », citation_author « International Monetary Fund », citation_publisher « International Monetary Fund », citation_publication_date « 1996/05/07 » (« Publication Date: 07 May 1996 » dans la page), citation_journal_title « IMF Staff Country Reports », volume 1996, numéro 027 ; DOI 10.5089/9781451837735.002.A001 ; eISBN 9781451837735. Le rapport est d'ordinaire cité comme « IMF Staff Country Report No. 96/27 », forme usuelle du FMI pour ce volume et ce numéro ; cette chaîne n'apparaît pas sur la page et la page de titre du PDF n'a pas été lue : le champ genre reprend donc la forme lue (volume 1996, numéro 027), comme pour fmi-1997-selected-issues. Tableau pertinent pour les séries de salaires : tableau 21 « Tunisia: Wage and Employment Indicators, 1990–95 » (source : « Ministry of Economic Development ») : masse salariale, salariés et salaire annuel moyen 1990-1992, SMAG et SMIG 1990-1995. La page d'origine refuse les accès automatisés (HTTP 403 le 22 septembre 2026) : capture des archives du web du 15 juin 2025, https://web.archive.org/web/20250615025519/https://www.elibrary.imf.org/view/journals/002/1996/027/article-A001-en.xml , vérifiée le 22 septembre 2026 (HTTP 200, 2 264 273 octets, mêmes citation_title, date et DOI, tableau 21 présent). Consulté le 22 septembre 2026."
     },
     {
       "id": "bit-yearbook-1985",

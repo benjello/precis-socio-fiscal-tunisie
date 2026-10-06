@@ -19,6 +19,7 @@ télécharge aussi en PDF.
 | VI. Rémunérations publiques | statuts, grilles, indemnités des agents publics |
 | VII. Finances locales | fiscalité locale, transferts de l'État et budgets des collectivités locales |
 | VIII. Marché du travail | salaire minimum, conventions collectives et négociations salariales du secteur privé |
+| IX. Compensation | la Caisse générale de compensation et les subventions aux prix : produits de base, carburants, transport |
 
 Chaque dispositif y est présenté dans son histoire, réforme par réforme, avec des tableaux datés
 et des liens vers les textes. C'est un travail en cours : certains chapitres sont complets,

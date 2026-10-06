@@ -1820,6 +1820,488 @@
     يحفظ المؤشر النموّ لا المستويات ولا البنية، ولا يعوّض إعادة الاحتساب. نسبة سنة
     1970 من البنك الدولي.'
   fiche: docs/pib-croissance-volume.md
+- id: compensation-parts
+  titre: 'Dépense de compensation par poste : niveau, part des dépenses de l''État
+    et part du PIB, 1971-2026 (fichier à tracer)'
+  sources:
+  - bct-ra-1965
+  - bct-ra-1971
+  - bct-ra-1974
+  - bct-ra-1975
+  - bct-ra-1984
+  - bct-ra-1985
+  - bct-ra-1986
+  - bct-ra-1987
+  - bct-ra-1988
+  - bct-ra-1989
+  - bct-ra-1991
+  - bct-ra-1992
+  - bct-ra-1993
+  - bct-ra-1994
+  - bct-ra-1995
+  - bct-ra-1996
+  - bct-ra-1997
+  - bct-ra-1998
+  - bct-ra-1999
+  - bct-ra-2000
+  - bct-ra-2001
+  - bct-ra-2002
+  - bct-ra-2003
+  - bct-ra-2004
+  - bct-ra-2005
+  - bct-ra-2006
+  - bct-ra-2007
+  - bct-ra-2008
+  - bct-ra-2009
+  - bct-ra-2010
+  - bct-ra-2011
+  - bct-ra-2018
+  - bct-ra-2019
+  - bct-ra-2020
+  - bct-ra-2021
+  - bct-ra-2022
+  - bct-ra-2023
+  - bct-ra-2024
+  - bct-ra-2025
+  - bm-1985-cem-5328-vol1
+  - bm-1985-cem-5328-vol2
+  - fmi-1996-red
+  - fmi-2000-red
+  - lf-1970
+  - lf-1971
+  - lf-1984
+  - minfin-finances-publiques-2005
+  - minfin-finances-publiques-2008
+  - minfin-finances-publiques-2011
+  - minfin-note-execution-2018-12
+  - minfin-projet-lfc-2015
+  - minfin-resultats-provisoires-2013-03
+  - minfin-resultats-provisoires-2015-12
+  - minfin-resultats-provisoires-2017-01
+  - minfin-resultats-provisoires-2018-07
+  - minfin-remunerations
+  - minfin-indicateurs-fp
+  - ins-cnat-2015
+  - undata-sna
+  - wb-wdi
+  build: scripts/build_compensation.py:main
+  raw:
+  - data/raw/minfinances/repartition_depenses.xls
+  - data/processed/precis/compensation_depense_par_poste.csv
+  - data/processed/precis/irpp_ratios_1986_2025.csv
+  - data/processed/banque-mondiale/wdi_tunisie.csv
+  output: data/processed/precis/compensation_par_poste_parts.csv
+  unite: millions de dinars courants et %
+  perimetre: 'valeurs retenues de `compensation-depense`, une ligne par (année, famille,
+    poste), avec toute leur provenance (état, source, page, lecture, note) et trois
+    parts calculées : dans les dépenses de l''État hors service de la dette et dans
+    les dépenses de fonctionnement (familles budgétaires de l''État, 1986-2025), dans
+    le PIB (PIB du ministère des Finances 1986-2025, Banque mondiale avant 1986) ;
+    `base_pib` donne le segment de base, `rupture` le changement à marquer'
+  caveats: 'UN SEUL PIB PAR ANNÉE, QUI CHANGE DE BASE : tracer la part du PIB par
+    segments de `segment_pib` (ruptures en 1986, 1997, 2002, 2005, 2010 et 2025),
+    jamais d''un trait continu ni en groupant par `base_pib` ; de 2010 à 2024 le PIB
+    est celui de l''INS en base 2015 (rétropolé pour 2010-2014), avant 2010 et en
+    2025 celui du ministère des Finances, avant 1986 celui de la Banque mondiale ;
+    `rupture_pib` porte les libellés partagés avec `masse-salariale-ratios` ; pour
+    comparer les bases entre elles, lire `compensation-ratios`. Filtrer `famille`
+    : les familles ne se raccordent pas, et `nature` sépare le budgétaire des rapports
+    extérieurs. Dépenses de l''État hors service de la dette. Carburants : périmètre
+    élargi en 2015 (colonne `rupture`), la baisse de 2015 tenant au prix du baril.
+    2025 et 2026 sont des lois de finances (`etat_norme`). Voir docs/compensation-depense-par-poste.md
+    et docs/compensation-ratios.md.'
+  titre_ar: 'نفقات الدعم حسب الباب: المبلغ والحصة من نفقات الدولة ومن الناتج المحلي
+    الإجمالي، 1971-2026'
+  unite_ar: بملايين الدنانير الجارية وبالنسبة المئوية
+  perimetre_ar: 'القيم المعتمدة من سلسلة compensation-depense، سطر لكلّ سنة وصنف وباب،
+    مع المصدر والصفحة والحالة، وثلاث حصص محسوبة: من نفقات الدولة دون خدمة الدين، من
+    نفقات التصرّف، ومن الناتج المحلي الإجمالي'
+  caveats_ar: 'ناتج واحد لكلّ سنة يتغيّر أساسه: تُرسم الحصة بمقاطع حسب سنة الأساس
+    (انقطاعات في 1997 و2010 و2015). لا تُربط الأصناف فيما بينها. سنتا 2025 و2026 قانونا
+    مالية.'
+  fiche: docs/compensation-depense-par-poste.md
+- id: compensation-prevu-realise
+  titre: 'Compensation : prévu (plan, loi de finances, loi de finances complémentaire,
+    prévision initiale) contre réalisé, par poste, 1986-2026'
+  sources:
+  - bct-ra-1965
+  - bct-ra-1971
+  - bct-ra-1974
+  - bct-ra-1975
+  - bct-ra-1984
+  - bct-ra-1985
+  - bct-ra-1986
+  - bct-ra-1987
+  - bct-ra-1988
+  - bct-ra-1989
+  - bct-ra-1991
+  - bct-ra-1992
+  - bct-ra-1993
+  - bct-ra-1994
+  - bct-ra-1995
+  - bct-ra-1996
+  - bct-ra-1997
+  - bct-ra-1998
+  - bct-ra-1999
+  - bct-ra-2000
+  - bct-ra-2001
+  - bct-ra-2002
+  - bct-ra-2003
+  - bct-ra-2004
+  - bct-ra-2005
+  - bct-ra-2006
+  - bct-ra-2007
+  - bct-ra-2008
+  - bct-ra-2009
+  - bct-ra-2010
+  - bct-ra-2011
+  - bct-ra-2018
+  - bct-ra-2019
+  - bct-ra-2020
+  - bct-ra-2021
+  - bct-ra-2022
+  - bct-ra-2023
+  - bct-ra-2024
+  - bct-ra-2025
+  - bm-1985-cem-5328-vol1
+  - bm-1985-cem-5328-vol2
+  - fmi-1996-red
+  - fmi-2000-red
+  - lf-1970
+  - lf-1971
+  - lf-1984
+  - minfin-finances-publiques-2005
+  - minfin-finances-publiques-2008
+  - minfin-finances-publiques-2011
+  - minfin-note-execution-2018-12
+  - minfin-projet-lfc-2015
+  - minfin-resultats-provisoires-2013-03
+  - minfin-resultats-provisoires-2015-12
+  - minfin-resultats-provisoires-2017-01
+  - minfin-resultats-provisoires-2018-07
+  - plan-2016-2020-vol1
+  build: scripts/build_compensation.py:main
+  raw:
+  - data/processed/precis/compensation_depense_par_poste.csv
+  output: data/processed/precis/compensation_prevu_realise.csv
+  unite: millions de dinars courants ; écart en millions de dinars et en % du prévu
+  perimetre: chaque prévision lue dans `compensation-depense` (XIe Plan 2007-2011
+    ; lois de finances et lois de finances complémentaires 2012-2026, par poste ;
+    prévisions initiales des charges de la Caisse 1986-2011 citées par la Banque centrale),
+    en regard de la valeur retenue de la même famille et du même poste
+  caveats: 'Le prévu et le réalisé sont toujours de la même famille. Le « réalisé
+    » de 2012-2013 et 2019-2024 est une colonne non qualifiée ; les « prévisions »
+    de 2019-2023 sont des colonnes prospectives non étiquetées des rapports de la
+    Banque centrale ; 2025 et 2026 n''ont pas de réalisé. Lois de finances initiales
+    de 2012, 2014 et 2015 non lues. Trois plans : XIe (annuel et cumul, en dinars),
+    2016-2020 (cumul, en dinars et en part du PIB, avec le constat du plan sur 2011-2015)
+    et IXe (objectif en part du PIB pour 2001 : colonnes `prevu_pct_pib`, `realise_pct_pib_publie`
+    — part imprimée par la Banque centrale — et `realise_pct_pib_calcule`). Le VIe
+    Plan porte sur tous les comptes spéciaux et n''est pas versé. Écart par poste
+    en MDT (`ecart_MDT`) et en % (`ecart_pct`). Voir docs/compensation-depense-par-poste.md.'
+  titre_ar: 'الدعم: المتوقَّع (المخطّط، قانون المالية، قانون المالية التكميلي، التقديرات
+    الأولية) مقابل المنجَز، 1986-2026'
+  unite_ar: بملايين الدنانير الجارية؛ الفارق بملايين الدنانير وبنسبة من المتوقَّع
+  perimetre_ar: كلّ تقدير مقروء في سلسلة compensation-depense بإزاء القيمة المعتمدة
+    من الصنف نفسه والباب نفسه
+  caveats_ar: المتوقَّع والمنجَز من الصنف نفسه دائماً. لا منجَز لسنتَي 2025 و2026.
+    مخطّط تنموي واحد مرقَّم (الحادي عشر).
+  fiche: docs/compensation-depense-par-poste.md
+- id: compensation-recettes-caisse
+  titre: Recettes propres de la Caisse générale de compensation face à la dépense,
+    1984-2011
+  sources:
+  - bct-ra-1975
+  - bct-ra-1985
+  - bct-ra-1986
+  - bct-ra-1991
+  - bct-ra-1992
+  - bct-ra-1993
+  - bct-ra-1994
+  - bct-ra-1995
+  - bct-ra-1996
+  - bct-ra-1997
+  - bct-ra-1998
+  - bct-ra-1999
+  - minfin-finances-publiques-2011
+  - minfin-remunerations
+  - minfin-indicateurs-fp
+  - ins-cnat-2015
+  - undata-sna
+  - wb-wdi
+  build: scripts/build_compensation.py:main
+  raw:
+  - data/raw/bct-archives/109
+  - data/raw/minfinances/portail_ancien
+  - data/raw/minfinances/repartition_depenses.xls
+  - data/processed/precis/compensation_depense_par_poste.csv
+  output: data/processed/precis/compensation_recettes_caisse.csv
+  unite: millions de dinars courants et %
+  perimetre: recettes propres de la Caisse citées par la Banque centrale (1984-1986,
+    1991-1996, 1998-1999), en regard des charges de la Caisse ; recettes affectées
+    du compte de la Caisse selon le ministère des Finances (2009-2011), en regard
+    de la dépense budgétaire totale ; taux de couverture, part des dépenses de l'État
+    hors service de la dette (depuis 1986) et part du PIB, calculés
+  caveats: 'Deux familles et deux dépenses en regard (colonnes `famille`, `famille_depense`)
+    : ne pas les relier. Trous en 1987-1990, 1997 et 2000-2008. PIB retenu, par segments
+    de `segment_pib` ; Banque mondiale en 1984-1985. Valeurs 2009-2011 : libellé arabe
+    non relu à l''image. Voir docs/compensation-depense-par-poste.md.'
+  titre_ar: الموارد الذاتية للصندوق العام للتعويض مقابل النفقات، 1984-2011
+  unite_ar: بملايين الدنانير الجارية وبالنسبة المئوية
+  perimetre_ar: الموارد الذاتية للصندوق حسب البنك المركزي (1984-1986، 1991-1996، 1998-1999)
+    بإزاء أعباء الصندوق؛ الموارد المخصَّصة لحساب الصندوق حسب وزارة المالية (2009-2011)
+    بإزاء مجموع نفقات الدعم بالميزانية
+  caveats_ar: صنفان لا يُربطان. ثغرات في 1987-1990 و1997 و2000-2008.
+  fiche: docs/compensation-depense-par-poste.md
+- id: compensation-compte-caisse
+  titre: 'Compte de la Caisse générale de compensation : charges par produit, ressources
+    et solde, 1970-2011'
+  sources:
+  - bct-ra-1971
+  - bct-ra-1974
+  - bct-ra-1975
+  - bct-ra-1984
+  - bct-ra-1985
+  - bct-ra-1986
+  - bct-ra-1987
+  - bct-ra-1988
+  - bct-ra-1989
+  - bct-ra-1991
+  - bct-ra-1992
+  - bct-ra-1993
+  - bct-ra-1994
+  - bct-ra-1995
+  - bct-ra-1996
+  - bct-ra-1997
+  - bct-ra-1998
+  - bct-ra-1999
+  - bct-ra-2001
+  - bct-ra-2002
+  - bct-ra-2003
+  - bct-ra-2004
+  - bct-ra-2005
+  - bct-ra-2006
+  - bct-ra-2007
+  - bct-ra-2008
+  - bct-ra-2009
+  - bct-ra-2010
+  - bct-ra-2011
+  - minfin-remunerations
+  - minfin-indicateurs-fp
+  - ins-cnat-2015
+  - undata-sna
+  - wb-wdi
+  build: scripts/build_compensation_caisse_carburants.py:main
+  raw:
+  - data/raw/minfinances/portail_ancien
+  - data/raw/bct-archives/109
+  output: data/processed/precis/compensation_compte_caisse.csv
+  unite: millions de dinars courants et %
+  perimetre: 'une ligne par (année, sens, rubrique) : charges de la Caisse, total
+    et par produit ; ressources — dotation du budget de l''État, recettes propres,
+    autres — ; solde imprimé par le rapport ; d''après les rapports annuels de la
+    Banque centrale ; parts calculées dans les dépenses de l''État hors service de
+    la dette (depuis 1986) et dans le PIB retenu'
+  caveats: 'La grandeur qui pèse sur le budget est la DOTATION, non les charges. Rupture
+    de 1987 : les recettes de la Caisse sont intégrées au budget, la dotation passe
+    de 68 à 189 millions de dinars sans hausse des charges. Dotation non donnée par
+    le rapport en 1988-1990, 2000-2001, 2003, 2006, 2008-2009 et 2011 : laissée vide,
+    jamais déduite des charges. Charges par produit incomplètes pour 1985, 1992, 1993
+    et 1995 (texte). Le champ des produits change (colonne `rupture`). PIB par `segment_pib`.'
+  titre_ar: 'حساب الصندوق العام للتعويض: الأعباء حسب المادّة والموارد والرصيد، 1970-2011'
+  unite_ar: بملايين الدنانير الجارية وبالنسبة المئوية
+  perimetre_ar: 'سطر لكلّ سنة ووجهة وباب: أعباء الصندوق، المجموع وحسب المادّة؛ الموارد
+    — اعتماد ميزانية الدولة، الموارد الذاتية، غيرها —؛ الرصيد؛ حسب التقارير السنوية
+    للبنك المركزي'
+  caveats_ar: 'ما يثقل الميزانية هو اعتماد الدولة لا الأعباء. انقطاع سنة 1987: أُدمجت
+    موارد الصندوق في الميزانية. الاعتماد غير مذكور في تقارير بعض السنوات: تُرك فارغاً
+    ولم يُستنتج من الأعباء.'
+  fiche: docs/compensation-compte-caisse.md
+- id: compensation-carburants-audit-2014
+  titre: 'Compensation des carburants selon l''audit de juillet 2014 : subvention
+    directe, indirecte et totale, besoins de financement, 2010-2013'
+  sources:
+  - minfin-compensation-carburants-2014
+  - minfin-remunerations
+  - minfin-indicateurs-fp
+  - ins-cnat-2015
+  - undata-sna
+  - wb-wdi
+  build: scripts/build_compensation_caisse_carburants.py:main
+  raw:
+  - data/raw/minfinances/portail_ancien
+  - data/raw/bct-archives/109
+  output: data/processed/precis/compensation_carburants_audit_2014.csv
+  unite: millions de dinars courants
+  perimetre: 'rapport d''audit des corps de contrôle (ministère des Finances), 21
+    juillet 2014 : subvention totale, directe (inscrite au budget) et indirecte (hors
+    budget), deux ventilations (p. 9 et p. 10) ; besoins en nature par origine, dont
+    la redevance sur le gaz algérien ; besoins de financement du système STEG-STIR-ETAP'
+  caveats: 'GRANDEUR DISTINCTE de la ligne budgétaire « carburants » : ne pas les
+    tracer d''un même trait sans le dire. Deux ventilations du même total, à ne pas
+    mêler. Deux lignes douteuses pour 2011 (voir la fiche). Valeurs transcrites d''une
+    note documentaire, non relues ici.'
+  titre_ar: 'دعم المحروقات حسب تقرير التدقيق لشهر جويلية 2014: الدعم المباشر وغير
+    المباشر والجملي، 2010-2013'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'تقرير هياكل الرقابة بتاريخ 21 جويلية 2014: الدعم الجملي والمباشر
+    (المرسّم بالميزانية) وغير المباشر (خارج الميزانية)، وحاجيات تمويل منظومة المحروقات'
+  caveats_ar: مقدار مختلف عن اعتماد الميزانية للمحروقات. توزيعان للمجموع نفسه لا يُجمعان.
+  fiche: docs/compensation-carburants.md
+- id: compensation-carburants-beneficiaires
+  titre: Ligne budgétaire « carburants » par entreprise bénéficiaire (ETAP, STEG,
+    STIR), 2010-2016
+  sources:
+  - minfin-compensation-carburants-2014
+  - minfin-rapport-semestriel-2015-12
+  - minfin-rapport-semestriel-2016-12
+  build: scripts/build_compensation_caisse_carburants.py:main
+  raw:
+  - data/raw/minfinances/portail_ancien
+  - data/raw/bct-archives/109
+  output: data/processed/precis/compensation_carburants_beneficiaires.csv
+  unite: millions de dinars courants et % de la ligne
+  perimetre: répartition de la dépense budgétaire de compensation des carburants entre
+    l'ETAP, la STEG et la STIR ; la somme est contrôlée contre la ligne du relevé
+    `compensation-depense`
+  caveats: 'Années 2013 et 2017 et suivantes non relevées. Zéro = « néant » dit par
+    la source. En 2015 l''ETAP sort de la ligne (périmètre élargi : la STEG et la
+    STIR achètent au prix mondial).'
+  titre_ar: اعتماد دعم المحروقات حسب المؤسسة المنتفعة، 2010-2016
+  unite_ar: بملايين الدنانير الجارية وبنسبة من الاعتماد
+  perimetre_ar: توزيع نفقات دعم المحروقات بالميزانية بين المؤسسة التونسية للأنشطة
+    البترولية والشركة التونسية للكهرباء والغاز والشركة التونسية لصناعات التكرير
+  caveats_ar: سنوات 2013 و2017 وما بعدها غير مرصودة. الصفر يعني «لا شيء» حسب المصدر.
+  fiche: docs/compensation-carburants.md
+- id: compensation-carburants-recettes
+  titre: 'Contrepartie en recettes non fiscales de la compensation des carburants
+    : commercialisation des carburants, redevance sur le gazoduc, bénéfices de l''ETAP,
+    2012-2019'
+  sources:
+  - lfc-2015
+  - minfin-note-execution-2018-12
+  - minfin-note-execution-2019-03
+  - minfin-projet-lfc-2015
+  - minfin-rapport-semestriel-2015-12
+  - minfin-rapport-semestriel-2016-12
+  - minfin-resultats-provisoires-2017-01
+  - minfin-resultats-provisoires-2018-07
+  - minfin-remunerations
+  - minfin-indicateurs-fp
+  - ins-cnat-2015
+  - undata-sna
+  - wb-wdi
+  build: scripts/build_compensation_caisse_carburants.py:main
+  raw:
+  - data/raw/minfinances/portail_ancien
+  - data/raw/bct-archives/109
+  output: data/processed/precis/compensation_carburants_recettes.csv
+  unite: millions de dinars courants
+  perimetre: recettes encaissées, dues et prévues (loi de finances, loi de finances
+    complémentaire) ; colonnes `etat` et `etat_norme`
+  caveats: 'Recettes, non dépenses : ne jamais les retrancher de la ligne de dépense
+    pour « revenir » au périmètre d''avant 2015. Encaissé très inférieur au prévu
+    en 2015 (150 pour 487) et nul en 2016. Montants de 2019 à 2025 non relevés.'
+  titre_ar: المداخيل غير الجبائية المقابلة لدعم المحروقات، 2012-2019
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'المداخيل المستخلصة والمستحقّة والمقدَّرة: مداخيل تسويق المحروقات،
+    أتاوة أنبوب الغاز، أرباح المؤسسة التونسية للأنشطة البترولية'
+  caveats_ar: 'مداخيل لا نفقات: لا تُطرح من نفقات الدعم. المستخلَص أقلّ بكثير من المقدَّر
+    سنة 2015 ومنعدم سنة 2016.'
+  fiche: docs/compensation-carburants.md
+- id: prix-carburants
+  titre: 'Prix publics des produits pétroliers, 1964-2026 : arrêtés, moyennes annuelles
+    de l''INS, prix datés du ministère chargé de l''énergie'
+  sources:
+  - arrete-1964-09-28-prix-petroliers
+  - arrete-1965-12-31-prix-petroliers
+  - arrete-1966-09-23-prix-petroliers
+  - arrete-1968-12-09-prix-carburants
+  - arrete-1971-09-30-prix-petroliers
+  - arrete-1974-05-24-prix-petroliers
+  - arrete-1976-12-31-prix-petroliers
+  - arrete-1978-03-23-prix-petroliers
+  - arrete-1978-12-25-prix-petroliers
+  - arrete-1979-12-27-prix-petroliers
+  - arrete-1981-06-23-prix-petroliers
+  - arrete-1982-01-05-prix-petroliers
+  - arrete-1982-09-30-prix-petroliers
+  - arrete-1984-02-20-prix-petroliers
+  - arrete-1984-11-29-prix-petroliers
+  - arrete-1985-06-06-prix-petroliers
+  - arrete-1985-12-09-prix-petroliers
+  - arrete-1986-07-29-prix-petroliers
+  - arrete-1987-02-14-prix-petroliers
+  - arrete-1988-05-05-prix-petroliers
+  - arrete-1991-02-05-prix-petroliers
+  - arrete-1992-07-10-prix-petroliers
+  - arrete-1992-08-18-prix-petroliers
+  - arrete-1993-10-26-prix-petroliers
+  - bm-2015-wps7312
+  - ins-annuaire-statistique-prix-detail
+  - ins-bms
+  - minenergie-opendata-prix-vente-petroliers
+  - minenergie-prix-marges-petroliers
+  - minfin-compensation-carburants-2014
+  - one-chiffres-cles-energie
+  - one-conjoncture-energetique
+  - presse-economiste-maghrebin-2018-06-23
+  - presse-kapitalis-2010-12-12
+  - presse-kapitalis-2017-12-30
+  - presse-tekiano-2014-07-03
+  - presse-tekiano-2016-01-05
+  - presse-tekiano-2018-04-02
+  - presse-wmc-2006-09-07
+  build: scripts/build_prix_carburants.py:main
+  raw:
+  - data/raw/minenergie/donnees-ouvertes/prix_vente_produits_petroliers_1990-2016.csv
+  output: data/processed/precis/prix_carburants.csv
+  unite: millimes par litre ; millimes par bouteille pour le GPL
+  perimetre: 'une ligne par (date d''effet ou année, produit, source) : 99 prix limites
+    de vente à la pompe fixés par arrêté (1964-1993) ; moyennes annuelles de l''INS
+    (1995-2023) et du ministère chargé de l''énergie (1990-2016, gasoil compris) ;
+    frise de 29 ajustements datés de l''essence et du gasoil (1997-2018) ; 63 prix
+    datés du ministère (2017-2022) ; paliers du relevé mensuel de l''INS (2007-2022)
+    ; GPL ; un point de la Banque mondiale (mai 2014)'
+  caveats: 'DIX FAMILLES NON RACCORDÉES (colonne `famille`) : un prix daté, une moyenne
+    annuelle et un relevé mensuel ne sont pas la même grandeur. Ajustements de 1997-2000
+    INFÉRÉS par le calcul ; ceux de 2002-2018 en partie connus par la presse reprenant
+    les communiqués. Moyenne du ministère pour 2001 suspecte ; moyennes de l''INS
+    pour 2011 fausses de 50 millimes. Ruptures : prix uniforme le 10 décembre 1968,
+    sans plomb en 1992, essence normale puis super dans l''annuaire en 2006. Prix
+    inchangés depuis le 24 novembre 2022. Transcrits d''une note documentaire, non
+    relus. Voir docs/prix-carburants.md.'
+  titre_ar: الأسعار العمومية للمواد البترولية، 1964-2026
+  unite_ar: ملّيم للّتر؛ ملّيم للقارورة بالنسبة لغاز البترول المسيَّل
+  perimetre_ar: 'سطر لكلّ تاريخ أو سنة ومادّة ومصدر: أسعار محدَّدة بقرارات (1964-1993)،
+    معدّلات سنوية، تعديلات مؤرَّخة، أسعار مؤرَّخة للوزارة المكلّفة بالطاقة'
+  caveats_ar: 'أصناف مصادر لا تُربط فيما بينها: السعر المؤرَّخ والمعدّل السنوي ليسا
+    المقدار نفسه. الأسعار لم تتغيّر منذ 24 نوفمبر 2022.'
+  fiche: docs/prix-carburants.md
+- id: prix-carburants-evenements
+  titre: 'Mécanisme d''ajustement des prix des carburants : dates établies, 2009-2022'
+  sources:
+  - arrete-2016-07-15-prix-petroliers
+  - arrete-2020-03-31-prix-petroliers
+  - arrete-2021-04-07-prix-petroliers
+  - bct-ra-2009
+  - bm-2015-wps7312
+  - minenergie-prix-marges-petroliers
+  - one-conjoncture-energetique
+  build: scripts/build_prix_carburants.py:main
+  raw: []
+  output: data/processed/precis/prix_carburants_evenements.csv
+  unite: sans objet (dates)
+  perimetre: 'dates de création, de modification et d''application du mécanisme d''ajustement
+    automatique : 2009, 2014, 2016, 2020, 2021, 2022 ; gel constaté depuis le 24 novembre
+    2022'
+  caveats: Seulement ce qui est daté par une source ; rien n'établit si le gel résulte
+    d'un texte ou de l'absence de réunion de la commission.
+  titre_ar: 'آلية تعديل أسعار المحروقات: التواريخ الثابتة، 2009-2022'
+  unite_ar: دون وحدة (تواريخ)
+  perimetre_ar: تواريخ إحداث آلية التعديل الآلي للأسعار وتنقيحها وتطبيقها
+  caveats_ar: ما ثبت تاريخه فقط.
+  fiche: docs/prix-carburants.md
 - id: atmp-sinistres-declares-2012-2022-bruts
   titre: 'Accidents du travail et maladies professionnelles déclarés, et indices de
     fréquence, 2012-2022 : Profil national de la SST et Lettre du CRES n° 8'

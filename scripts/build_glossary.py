@@ -42,6 +42,7 @@ BOOKS = [
     "caisses",
     "finances_locales",
     "marche_travail",
+    "compensation",
 ]
 
 LANGS = ("fr", "ar")
@@ -202,7 +203,9 @@ def render_book(entries, book, lang, retenues=None):
         switch_url = f"../../{other}/{book}/_glossaire.html#g-{eid}"
         lines.append(f"[{SWITCH_LABEL[lang]} → {e[other]['terme']}]({switch_url})")
         lines.append("")
-        lines.append(clean(e[lang]["definition"]))
+        # Une entrée `provisoire` peut être ancrée avant sa définition (passe 1 du
+        # terminologue) : `validate()` ne l'exige qu'au statut `valide`.
+        lines.append(clean(e[lang].get("definition") or ""))
         lines.append("")
         src_def = cite(e.get("source_definition"))
         if src_def:

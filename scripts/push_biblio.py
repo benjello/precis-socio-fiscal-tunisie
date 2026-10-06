@@ -334,6 +334,7 @@ COLLECTIONS = {
     "caisses": "Caisses de sécurité sociale",
     "finances_locales": "Finances locales",
     "marche_travail": "Marché du travail",
+    "compensation": "Compensation",
 }
 
 

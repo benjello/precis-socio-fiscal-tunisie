@@ -333,10 +333,11 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
   maternité, décès, accidents du travail, perte d'emploi, CNAM ; `#sec-prest-autres-risques`) —,
   `_non_contributives.qmd` (`#sec-prest-non-contributives`), `_matrice.qmd` ; annexe
   `_notations.qmd` (« Les notations du volume »).
-- **Arabe — à faire à la livraison de la traduction** : `precis/ar/prestations_sociales/_quarto.yml`
-  ne déclare encore que `index.qmd`, à dessein. Y déclarer la partie `_contributives.qmd`, les quatre chapitres et
-  l'annexe quand la traduction les livre, puis rendre le livre arabe (mêmes réserves que pour les
-  cotisations).
+- **Arabe** : `precis/ar/prestations_sociales/_quarto.yml` déclare les chapitres traduits (état
+  constaté le 6 octobre 2026).
+- **La compensation est sortie du volume le 6 octobre 2026** : `_compensation.qmd` est supprimé,
+  son texte forme le volume IX (rubrique « La compensation » ci-dessous) ; le plan du volume
+  (`index.qmd`) y renvoie par un lien entre livres.
 - **Dépense des allocations familiales, 1990-2004 — fait le 3 octobre 2026** (`#fig-cnss-allocations-familiales`, `#sec-pf-longue-periode`), tirée de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026), déflatée par l'IPC des annuaires de l'INS (`ins-annuaire-ipc`). Restent : allocataires, enfants, montant moyen, dépense avant 1990 et après 2004 (TODO du chapitre). **221 valeurs de 1999** (et quelques-unes de 2000) masquées par la reliure restent à lire sur l'original papier (tunisia-data#26) ; en attendant, la figure trace des estimations hachurées ou creuses. Quand le classeur revient : réinjecter dans tunisia-data, relancer `figtools.refresh_cache("cnss-retrospective-ressources-emplois")`, puis relire la note de lecture, qui cite des montants. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches).
 - **Onze paliers de l'allocation** entre 1987 et 2018 n'ont aucun fondement textuel publié.
   Les décisions ou circulaires de la direction générale de la promotion sociale et
@@ -745,7 +746,7 @@ Revue de ce que les sept volumes ne couvrent pas (sujets à établir sur les tex
 2. **Salaire minimum et salaires négociés du secteur privé** : histoire du SMIG et du SMAG (montants, régimes 40 h / 48 h, revalorisations, décrets) ; conventions collectives sectorielles et leurs grilles ; accords salariaux périodiques UGTT-UTICA (privé) et UGTT-gouvernement (public). **En cours.**
 3. Droit du travail déterminant les revenus : durée du travail, congés payés, heures supplémentaires, indemnités de licenciement, contrats précaires et sous-traitance, travail informel.
 4. Politiques actives de l'emploi : programmes de l'ANETI (stages d'insertion, contrats aidés), primes à l'embauche, prises en charge de cotisations patronales ; protection contre la perte d'emploi (aujourd'hui effleurée).
-5. La compensation (Caisse générale de compensation : produits de base, carburants, électricité, transport) — sources déjà collectées sur l'ancien portail du ministère des Finances (`tunisia-data/sources/minfinances-portail-ancien.md`).
+5. La compensation (Caisse générale de compensation : produits de base, carburants, électricité, transport) — **volume IX créé le 6 octobre 2026** (`precis/fr/compensation/`) ; lacunes à la rubrique « La compensation » ci-dessous.
 
 **Fiscalité**
 
@@ -805,6 +806,194 @@ période. Notes documentaires : `docs/notes/marche-travail-smig-smag.md`,
   cherté de vie (TODO rédacteur dans `_salaire_minimum.qmd`).
 - **Catalogue de `ipc-longue-periode`** (tunisia-data) : titre et réserves disent « 1962-2003 »,
   alors que la série va jusqu'en 2023 (annuaire 2019-2023, tableau 13.6).
+
+## La compensation
+
+Volume IX (`precis/fr/compensation/`), créé le 6 octobre 2026 par redécoupage du chapitre
+`_compensation.qmd` du volume « Prestations sociales », puis **réécrit le 6 octobre 2026** sur les
+notes `docs/notes/compensation.md` (§ 9 et 10 prévalent), `compensation-avant-1970-et-plans.md`,
+`compensation-rupture-2015.md` (sa synthèse fait foi), `compensation-prix-carburants.md` et
+`compensation-prix-carburants-1993-2018.md` (la seconde corrige la première). Règle d'exposé :
+le budgétaire d'abord, en entonnoir ; les rapports extérieurs et les études d'impact ensuite, à
+part, chacun avec sa méthode ; aucun tableau ne mêle deux familles. Huit chapitres depuis l'ajout de `_electricite_gaz.qmd`
+(rubriques « Électricité et gaz », « Structure des prix » et « Incidence de l'énergie » des
+lacunes ci-dessous) :
+
+- `index.qmd` (`#sec-compensation`) : objet, encadré « Trois familles de chiffres », plan ;
+- `_institution.qmd` (`#sec-compensation-caisse`) : avant 1970 (Caisse de compensation du
+  Protectorat, péréquation, rupture du 28 septembre 1964, compte 1965-1975), création de
+  1970-1971, compte de la Caisse 1984-2011 (charges, recettes propres, dotation, solde ; charges
+  par produit ; recettes propres de 1984-1985 ; prêts du Trésor), rupture de 1987, poids de la
+  dotation dans les dépenses de l'État ;
+- `_reformes.qmd` (`#sec-compensation-reformes`) : tableau 1957-2021, puis 1976, 1984, 1989,
+  redevance de 2013-2014, renvoi aux carburants ;
+- `_depense.qmd` (`#sec-compensation-longue-periode`) : dépense globale, décomposition par poste
+  (tableaux 2003-2011 et 2012-2025 **repliés**, les figures les portent), prévu et réalisé (lois
+  de finances ; plans IXe, XIe, 2016-2020 ; VIe en mention) ;
+- `_carburants.qmd` (`#sec-compensation-carburants-chapitre`), **nouveau** : circuit ETAP-STIR-STEG
+  et prix de cession, subvention directe et totale selon l'audit de 2014, rupture de 2015
+  (périmètre élargi, facteurs de la LFC 2015, recettes en regard, impayés de 2016), taxe unique
+  de compensation 1964-1981, prix à la pompe 1964-2026 source par source, mécanisme d'ajustement
+  2009-2021 et gels, autorité qui fixe et notifie les prix ;
+- `_exterieurs.qmd` (`#sec-compensation-sources-exterieures`), **nouveau** : figure de comparaison,
+  Banque mondiale 1977 et 1985, FMI 1996 et 2000, FMI 2014 et 2016 (énergie « brute ») ;
+- `_incidence.qmd` (`#sec-compensation-incidence`) : l'étude INS-CRES-BAD de 2013, avec sa méthode.
+
+Retiré : la section « La compensation rapportée au PIB » et son tableau des parts publiées
+(`tbl-compensation-pib`) — les parts sont celles des figures, calculées dans l'entrepôt ; le
+tableau du XIe Plan année par année (`tbl-compensation-plan`) et le tableau du poste des
+carburants par entreprise en 2011 (`tbl-compensation-energie-2011`), repris dans des tableaux
+plus larges ; la phrase du FMI de 1996 sur 4,2 % et 1,8 % du PIB, qui ne se recoupe pas avec son
+propre tableau. Le tableau `tbl-compensation-1971-1984` ne mêle plus les familles : les lignes
+de la Banque mondiale sont passées dans `_exterieurs.qmd`.
+
+Neuf fiches dans `docs/recherches.yml` : `r-caisse-compensation-origine`,
+`r-centimes-additionnels-art106-1955`, `r-cgc-decret-application-1970`,
+`r-cgc-budgetisation-1992-2003` (`_institution.qmd`) ; `r-plans-prevision-compensation`
+(`_depense.qmd`) ; `r-separation-hydrocarbures-2014-texte`, `r-arrete-prix-petroliers-1980-12-31`,
+`r-prix-pompe-arretes-apres-1993`, `r-carburants-ajustement-apres-2021` (`_carburants.qmd`).
+Proposées par les notes et **non versées**, faute d'ancre dans le texte :
+`r-operations-compensation-creation`, `r-arrete-1993-10-08-prix-gaz-steg`,
+`r-separation-effet-ex-post`, `r-serie-prix-pompe-1993-2017` (largement résolue).
+
+- **Figures** (`precis/fr/compensation/figures/compensation.py`, appelées par `cm.figure(…)`),
+  onze, chacune appelée une fois : `fig-compensation-compte-caisse`,
+  `fig-compensation-par-produit` et `fig-compensation-recettes-caisse` dans `_institution.qmd` ;
+  `fig-compensation-longue-periode`, `fig-compensation-par-poste`,
+  `fig-compensation-prevu-realise` et `fig-compensation-prevu-realise-postes` dans
+  `_depense.qmd` ; `fig-compensation-carburants-beneficiaires`,
+  `fig-compensation-carburants-directe-totale` et `fig-compensation-prix-pompe` dans
+  `_carburants.qmd` ; `fig-compensation-sources-exterieures` dans `_exterieurs.qmd`.
+  - **Snapshots** : refaits le 6 octobre 2026 depuis `main` de `tunisia-data` (neuf séries
+    `compensation-*` et `prix-carburants*`). Les notes de lecture disent la base du PIB d'après
+    `segment_pib`, `pib_retropole` et `rupture_pib` (2010-2024 : INS, base 2015, rétropolée
+    pour 2010-2014). La rupture de 1987 est déclarée dans le module, la colonne `rupture` de
+    l'entrepôt ne la portant pas : à y verser.
+  - **Tableaux repliés le 6 octobre 2026** : `tbl-compensation-compte-caisse` et
+    `tbl-compensation-besoins-energie`, que des figures portent.
+  - **Prix à la pompe en dinars constants** : vue non faite. `ipc-longue-periode` est
+    snapshoté, mais c'est un indice raccordé (bases 1962 et 1970), annuel et arrêté à 2023,
+    face à des prix datés au jour jusqu'en 2026 : le déflatage demande une règle écrite
+    (année d'effet, prolongement 2024-2026) avant d'être tracé.
+  - **Non tracé, présent dans les données** : relevés mensuels de l'INS et ajustements déduits
+    par le calcul (prix à la pompe) ; lignes de plan en cumul ou en part du PIB et prévisions
+    de dotation de 1989 et 2007 (prévu / réalisé) ; prévisions de besoins de financement de
+    2012-2013 (carburants) ; dépenses du fonds spécial par produit, 1983-1986.
+  - **Annexe sur le PIB** : le texte et les notes des figures renvoient à
+    `../annexe-pib.html#sec-pib-ruptures` et `#sec-pib-retropolation` ; l'annexe est sur une autre
+    branche, les ancres n'ont pas pu être contrôlées ici.
+  - **Arabe** : `precis/ar/compensation/figures` est un lien vers le module français ; ses
+    libellés sont bilingues, non relus par un arabophone.
+- **Arabe** : `precis/ar/compensation/_quarto.yml` (tenu à la main) porte en commentaire les six
+  chapitres, dont `_carburants.qmd` et `_exterieurs.qmd` ; décommenter chaque chapitre quand sa
+  traduction est livrée, puis rendre le livre arabe.
+- **Bibliographie — clés manquantes, citées en clair dans le texte** (bibliographe) :
+  `bct-ra-1987` (dotation de 189 MD, citation sur la loi de finances pour 1987, p. 71) et
+  `bct-ra-1997` (dotation de 320 MD, p. 91) ; `decret78-316` (taxe unique à 7,120 D/hl) ;
+  `minenergie-opendata-prix-vente-petroliers` (moyennes annuelles 1990-2016, fichier aux
+  archives du web, **non versé à l'entrepôt**) ; `ins-bms` (présente dans « Retraites » seulement) ;
+  dix articles de presse de la frise 2002-2018 ; loi de finances pour 1981 et pour 1987, loi
+  n° 91-98, arrêtés des 11 octobre 1990 et 7 juillet 1992, arrêté du 10 mai 2024 ; loi n° 63-13
+  (caisse des transports routiers). La collection Zotero « Compensation » reste à créer.
+- **Glossaire — notions à créer** (terminologue) : subvention directe / subvention indirecte ;
+  prix de cession (préférentiel) ; séparation des opérations de commercialisation des
+  hydrocarbures ; revenus de commercialisation des carburants ; compte de la Caisse (charges,
+  recettes propres) ; dotation budgétaire ; taxe unique de compensation sur les produits
+  pétroliers ; redevance compensatrice ; centimes additionnels ; prix limite de vente ; structure
+  des prix ; arrêté interne ; mécanisme d'ajustement de 2009 ; base caisse ; ETAP, STIR, STEG.
+  L'ancre `#g-auto-ciblage` n'est toujours pas employée.
+- **Lacunes**, dans l'état que les notes établissent :
+  - **Avant 1956** : aucun texte établi dans sa lettre ; décrets de 1943, 1945, 1954, 1955 connus
+    par les visas. *Journal officiel tunisien* de 1943-1955 : hors corpus et hors pist.tn, **à
+    obtenir** (Gallica à vérifier dans un navigateur). Fiches `r-caisse-compensation-origine` et
+    `r-centimes-additionnels-art106-1955`.
+  - **1956-1969, chiffres non publiés** : montants des redevances sur les huiles et le sucre
+    (1956, 1958), sur l'acier (1967), arrêté du 20 juillet 1965, lois n° 59-66 et n° 63-13,
+    tableau F de la loi de finances pour 1970 — fascicules au corpus ou sur pist.tn, connus par
+    OCR seul : **à relire à l'image**. Première série de 1957 du Journal officiel : absente du
+    corpus local, présente sur pist.tn. Aucune série du compte avant 1970 (deux points : 1965,
+    1967).
+  - **Dotation du budget à la Caisse, dix années sans valeur** : 1988, 1989, 1990, 2000, 2001,
+    2003, 2006, 2008, 2009, 2011 — à chercher au chapitre des finances publiques des rapports de
+    la BCT (au corpus, textuels) et dans les lois de règlement. Recettes propres après 1999,
+    charges par produit de 1984, 1989-1991 et 1994, prêts et avances du Trésor par année : non
+    établis. Loi de finances pour 1987 (intégration des recettes au budget) : à lire au JORT.
+  - **Passage de la Caisse hors des fonds spéciaux** : texte non identifié (fiche
+    `r-cgc-budgetisation-1992-2003`) ; lois de finances 1993-2003 à ouvrir.
+  - **Décret d'application de l'article 3 de la loi n° 70-26** : non identifié (fiche).
+  - **Rupture de 2015** : effet constaté de la séparation de 2015 à 2018, subvention indirecte de
+    2013 et 2014, bénéficiaires de la ligne en 2013 et après 2016, recettes de commercialisation
+    encaissées de 2019 à 2025, acte formalisant la séparation (fiche), arrêté du 8 octobre 1993
+    sur le prix du gaz, régularisation des impayés de 2016 : non établis. Rapport de 2014 :
+    pages 1-10 et 158-159 seules exploitées. Lois de finances pour 2016 et 2019 : éditions
+    françaises absentes du corpus local.
+  - **Prix à la pompe** : arrêté du 31 décembre 1980 (fiche) ; **1997-2001 : dates et niveaux des
+    ajustements non établis** (moyennes annuelles seules ; les lignes inférées ne sont pas
+    publiées) ; laquelle des lignes 2000 et 2001 du ministère est fautive ; tout prix mensuel
+    avant novembre 2007 ; ajustements du pétrole lampant et de la bouteille de gaz avant 2008 ;
+    moyenne officielle 2017-2018 ; prix de la bouteille de gaz du 18 août 1992 (à relire à
+    l'image) ; aucun « arrêté interne » de notification n'a été vu. Tarifs de la taxe unique
+    après 1981 : non établis.
+  - **Électricité et gaz** (`_electricite_gaz.qmd`, `#sec-compensation-electricite-gaz`), sur
+    `compensation-tarifs-electricite-gaz.md`, `compensation-tarifs-1993-2004.md` et
+    `compensation-tarifs-mt-ht-gaz.md` — écrit : autorité tarifaire (arrêtés 1970-1990, décision
+    du 11 août 1992, décision du 10 août 2000 citée par l'API) ; grilles des ménages 1970-1992
+    (Journal officiel), cinq grilles de 1993 à 2003 en deux tableaux (relais officiels ; rapport
+    extérieur seul), 2004-2022 (STEG, établies sur ses documents de 2008 à 2022) ; frise
+    1992-2006 avec la famille de chaque source ; moyenne et haute tension, gaz en moyenne et
+    haute pression, tarifs à postes horaires expliqués ; recette moyenne par kWh donnée comme un
+    calcul ; coût et prix de vente (rapport de contrôle 2008-2012 ; Observatoire 2017-2025 ;
+    BAD 2000-2004, rapport extérieur) ; rapprochement avec la subvention d'exploitation de la
+    STEG. **Restent** : jour d'effet des grilles d'octobre 1993 et de juin 1994 (fiche
+    `r-tarifs-electricite-grilles-1993-2003`, passe consignée) ; moyenne et haute tension et gaz
+    de 1994 à 2003, établis par les notes et non publiés ; grilles du gaz de 2001 à 2003 ;
+    **acte du 10 août 2000 non lu**, actes de 1993, 1994, 2001, 2003 et 2004 non identifiés
+    (fiche `r-tarifs-electricite-gaz-apres-1992`, passe consignée) ; contradiction de 2003 (90
+    ou 94) et écart de 2005 avec l'INS ; **tarifs du Journal officiel de 1975 à 1990 à relire**
+    (moyenne et haute tension, unité de la prime) ; haute tension de septembre 2012, moyenne
+    pression de 2012-2013 ; heures des postes avant 2014 ; ventes en haute tension de 2020 ;
+    grille basse tension du 1er janvier 2014 (source seconde, non publiée) ; arrêtés de 1961,
+    1963, 1976-1981 connus par leur intitulé ; **figure de la facture type**
+    (`fig-compensation-facture-electricite`, TODO figures : TVA et surtaxe municipale à
+    reconstituer) ; série de la subvention d'exploitation de la STEG non publiée (notes aux
+    états financiers à lire) ; décodage des couches texte du JORT des années 2000 à verser à
+    `docs/notes/outillage-sources.md`.
+  - **Structure des prix des carburants** (`_carburants.qmd`, `#sec-compensation-structure-prix`),
+    sur `compensation-archives-energie.md` et `compensation-structure-prix-relue.md` — écrit :
+    lecture du tableau de la *Conjoncture énergétique*, 24 structures datées de 2014 à 2022
+    (synthèse en clair, deux tableaux repliés), importation et cession en moyenne annuelle
+    2016-2025 (écart donné comme un calcul), subvention unitaire prévisionnelle des budgets
+    citoyens 2021-2024, déficit de commercialisation 2000-2002, hausses de 2000, aucune en 2001.
+    **Restent** : **structure du 1er avril 2018** et numéros de janvier à juin 2018 ; date de la
+    baisse d'août 2020 ; droits et marges du 6 février 2021 ; composantes séparées (droit de
+    consommation, TVA, chaque marge) ; **montant budgétaire par produit pétrolier** (aucune
+    publication officielle) ; **décisions de prix** (aucun « arrêté interne » en ligne ni
+    archivé) ; série 1980-2025 du graphique des *Chiffres clés* (non publiée en valeurs) ; jour
+    et niveau des ajustements de 1997 à 2000 ; budgets citoyens 2018, 2020 et 2025 ; répartition
+    STIR / STEG de la ligne 2022-2025 (rapports sur le budget, sans clé).
+  - **Études d'impact** (`_incidence.qmd`), sur `compensation-etudes-incidence-calculs.md` —
+    écrit, pour quatre études, les données, le calcul pas à pas, les résultats, les limites et
+    les incohérences : INS-CRES-BAD 2013 (répartition 9,2 / 60,5 / 7,5 / 22,8 publiée avec la
+    mention que deux classes ne sont pas définies), Banque mondiale 2013 (par produit, par
+    quintile, par tête, réforme simulée), document de travail de 2015 (subvention unitaire, par
+    quintile, perte, scénarios), document de travail de 2017 (agrégat de toutes les
+    subventions). **Restent** : **tableaux d'études à contrôler cellule par cellule** (seuls le
+    tableau 1 et les figures 11 et 12 de la note de 2013 sont établis sur le document) ;
+    alignement du tableau 18-8 du document de 2017 ; outil de simulation (Araar et Verme, 2012)
+    non ouvert ; définition des classes moyenne et aisée (rapport INS-BAD-Banque mondiale de
+    2012) ; Banque mondiale n° 47294 (2008), sans clé ; rien sur l'alimentaire après 2010.
+  - **Rapports extérieurs** : tableau III-1 de la Banque mondiale 1985 et tableau par produit
+    1972-1977 de la revue du Ve Plan : à relire à l'image, aucune valeur publiée ; rétropolation
+    de la série « brute » du FMI non détaillée par le rapport ; rapports du FMI de 2015 à 2019
+    non exploités.
+  - **Lois de règlement** : aucune ouverte.
+  - **Textes non relus à l'image** : LF 1971 (art. 48, tableau F), décret n° 70-622, LF 1984
+    (art. 87, tableau F ; art. 38 et suivants : seule la référence est retenue), LFC 1989.
+  - **Hors texte, faute de source** : opérateurs de la compensation des produits de base,
+    bénéficiaires de la compensation du transport, entrées et sorties de produits, produit de la
+    redevance de compensation, ciblage et transferts de substitution, événements de janvier 1984.
+  - **Redevance de compensation, revenu des personnes physiques** : rédaction de 2013 (assiette,
+    plafond de 2 000 D) à relire à l'image ; prorogation des volets bornés à 2014-2015 à établir.
 
 ## Citations répétées — suggestion, non engagée (4 octobre 2026)
 

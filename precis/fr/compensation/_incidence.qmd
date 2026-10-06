@@ -1,0 +1,215 @@
+# Les études d'impact : qui bénéficie des subventions {#sec-compensation-incidence}
+
+Ce chapitre quitte le budget pour l'évaluation économique : il ne dit plus ce que la compensation coûte, mais à qui elle revient. Une étude d'impact ne constate pas, elle estime, à partir d'une enquête et d'hypothèses ; ses résultats ne sont pas du même rang que les chiffres budgétaires des chapitres précédents et ne s'y ajoutent pas.
+
+Deux matières s'y suivent sans se mêler : les subventions alimentaires, d'après une étude de la statistique publique ; les subventions à l'énergie, d'après deux rapports de la Banque mondiale et un document de travail universitaire, rapports extérieurs présentés comme tels. Pour chaque étude, le chapitre dit d'abord les données, puis le calcul, pas à pas, puis les résultats, enfin les limites que l'étude se reconnaît et les incohérences qu'elle porte.
+
+## Les subventions alimentaires : l'étude de l'INS, du CRES et de la BAD {#sec-compensation-incidence-alimentaire}
+
+L'[incidence des subventions](#g-incidence-des-subventions) — leur répartition entre les ménages selon leur niveau de vie — est établie ici, pour l'alimentaire, par une seule étude, conduite par l'Institut national de la statistique avec le Centre de recherches et d'études sociales et la Banque africaine de développement. Elle ne porte que sur les subventions alimentaires [@ins-cres-bad-2013-subventions].
+
+**Les données.** L'enquête nationale sur le budget, la consommation et le niveau de vie des ménages de 2010 : 11 281 ménages pour le volet budgétaire. Les prix de vente et les prix de revient des dix produits étudiés — semoule, couscous, pâtes, farine, gros pain, baguette, tomate industrielle, lait, sucre, huile végétale — viennent des services du ministère du Commerce.
+
+**Le calcul.** Il se fait en cinq temps.
+
+1. *La subvention reçue par un ménage.* Pour chaque produit, la quantité consommée est multipliée par la différence entre le prix de revient et le prix de vente ; la somme sur les dix produits donne la subvention du ménage. La subvention unitaire est donc un écart au prix de revient intérieur, non à un prix international.
+2. *Le classement.* Les personnes sont rangées en quintiles de dépense par tête, et en pauvres et non-pauvres au seuil national, sous lequel se trouve 15,5 % de la population en 2010.
+3. *Le « hors ménages ».* C'est un solde : l'étude retranche du budget de la Caisse, environ 1 150 MD, les subventions reçues par les ménages d'après l'enquête, 888 MD. La différence est attribuée aux restaurants, aux cafés, aux hôtels et au commerce frontalier ; elle absorbe aussi tout écart entre la consommation déclarée à l'enquête et la consommation réelle.
+4. *La suppression, effet immédiat.* Le revenu et le panier de consommation sont supposés inchangés : la perte de chaque ménage est le poids du produit dans sa dépense multiplié par la hausse du prix, et l'on recompte les pauvres. L'étude écrit elle-même que cette approche surestime l'effet.
+5. *La suppression, après adaptation.* L'étude estime un système de demande, qui donne les élasticités de chaque produit à son prix, au prix des autres et au revenu ; les ménages substituent un produit à l'autre, et l'on recompte les pauvres.
+
+**Les résultats.** Premier résultat, une part de la dépense n'atteint pas les ménages : sur un budget de la Caisse d'environ 1 150 MD, 888 MD leur reviennent ; 262 MD, soit 22,8 %, vont à des consommations « hors ménages » — restaurants, cafés, hôtels, commerce frontalier. Le budget retenu par l'étude ne coïncide pas avec le poste « produits de base » de 2010 du @tbl-compensation-2003-2011 ; les deux chiffres ne se rapprochent pas sans connaître le périmètre de l'étude.
+
+Deuxième résultat, la subvention reçue par tête varie peu d'un [quintile de niveau de vie](#g-quintile-niveau-de-vie) à l'autre, et croît légèrement avec le revenu.
+
+| | 1^er^ quintile | 2^e^ | 3^e^ | 4^e^ | 5^e^ quintile |
+|---|---:|---:|---:|---:|---:|
+| Subvention alimentaire annuelle par tête (D) | 68,2 | 84,2 | 87,5 | 89,9 | 89,1 |
+| dont gros pain (D) | 20,6 | | | | 28,5 |
+| dont semoule (D) | 17,0 | | | | 12,1 |
+| Indice de ciblage absolu | 0,82 | | | | 1,07 |
+
+: La subvention alimentaire par tête selon le quintile de niveau de vie, 2010. Source : INS, CRES et BAD [@ins-cres-bad-2013-subventions] ; les montants par tête viennent du tableau 1 de l'étude. Les valeurs par produit et l'indice de ciblage ne sont repris que pour les quintiles extrêmes. Valeurs transcrites du texte de l'étude, à confronter au document. {#tbl-compensation-incidence}
+
+Les personnes pauvres reçoivent 64,8 D par tête, contre 87,2 D pour les non-pauvres : elles reçoivent 12,0 % des subventions qui vont aux ménages, pour 15,5 % de la population [@ins-cres-bad-2013-subventions, tableau 3, p. 18]. La semoule est, selon l'étude, le seul produit dont la subvention décroît avec le revenu. Un montant presque égal par tête pèse cependant davantage dans un budget modeste, ce que mesurent les deux derniers résultats de l'étude.
+
+| Indicateur, 2010 | Avec les subventions | Sans les subventions |
+|---|---:|---:|
+| Taux de pauvreté, effet immédiat | 15,5 % | 19,1 % |
+| Taux de pauvreté, après adaptation des consommations | 15,5 % | 16,8 % |
+| Indice de Gini | 37,4 % | 38,5 % |
+
+: L'effet simulé d'une suppression des subventions alimentaires sur la pauvreté et l'inégalité, 2010. Source : INS, CRES et BAD [@ins-cres-bad-2013-subventions]. La pauvreté extrême augmenterait de 1,7 point dans l'effet immédiat. Valeurs transcrites du texte de l'étude, à confronter au document. {#tbl-compensation-pauvrete}
+
+Deux constats de l'étude se font ainsi face : sans [ciblage](#g-ciblage), la subvention profite davantage, par tête, au cinquième le plus aisé qu'au cinquième le plus modeste ; et sa suppression relèverait, dans l'effet immédiat, le taux de pauvreté de 3,6 points. C'est le terme de la comparaison avec les transferts monétaires ciblés de l'assistance sociale ([« Les prestations non contributives »](../prestations_sociales/_non_contributives.html#sec-prest-non-contributives)).
+
+Troisième résultat, l'étude répartit le budget de la Caisse entre quatre destinataires.
+
+| Destinataire | Part du budget de la Caisse |
+|---|---:|
+| Ménages pauvres | 9,2 % |
+| « Classe moyenne » | 60,5 % |
+| « Population aisée » | 7,5 % |
+| Hors ménages | 22,8 % |
+
+: La répartition du budget de la Caisse générale de compensation selon l'étude, 2010. Source : INS, CRES et BAD [@ins-cres-bad-2013-subventions, p. 19]. Seules deux lignes sont définies par l'étude : les ménages pauvres, au seuil national — leur part est 12 % des 888 MD reçus par les ménages, rapportée aux 1 150 MD du budget —, et le hors ménages, qui est un solde. Les classes « moyenne » et « aisée » ne sont définies nulle part dans l'étude, qui ne donne ni seuil ni critère ; la part de 7,5 % ne correspond pas au cinquième quintile, qui reçoit 21,3 % des subventions des ménages, alors que l'étude nomme ailleurs ce quintile « population aisée ». Valeurs transcrites du texte de l'étude, à confronter au document. {#tbl-compensation-classes}
+
+**Ce que l'étude dit de ses limites.** L'effet immédiat surestime la hausse de la pauvreté ; des analyses supplémentaires sont dites nécessaires. **Incohérences relevées.** Deux tableaux de l'étude portent des chiffres intervertis pour la subvention par tête des pauvres et des non-pauvres ; les valeurs retenues ici, 64,8 et 87,2 D, sont celles du texte et du tableau qui s'accordent. L'indice de Gini de 37,4 % est daté de 2010 dans le résumé et de 2011 dans la conclusion.
+
+L'incidence des subventions alimentaires après 2010 n'est pas documentée ici.
+
+<!-- TODO (documentaliste) : tableaux de l'étude INS-CRES-BAD transcrits du texte du fichier, à confronter au document cellule par cellule ; élasticités du système de demande non relevées ; rapport INS-BAD-Banque mondiale de 2012 sur la pauvreté et la polarisation, auquel renvoie probablement la définition des classes moyenne et aisée ; pages sur l'auto-ciblage des rapports Banque mondiale 1993 et 1995 — docs/notes/compensation-etudes-incidence-calculs.md, § D et H. -->
+
+## Les subventions à l'énergie : trois rapports extérieurs {#sec-compensation-incidence-energie}
+
+Aucune étude de source officielle tunisienne sur l'incidence des subventions à l'énergie n'est établie ici. Deux rapports de la Banque mondiale en traitent, et un document de travail universitaire les englobe dans un agrégat plus large. Ce sont des rapports extérieurs : leurs montants sont des estimations de leurs auteurs, calculées selon une méthode qui leur est propre, et ne se comparent pas ligne à ligne à la dépense budgétaire des chapitres précédents. Les deux études de la Banque mondiale ne se raccordent pas non plus l'une à l'autre : elles n'ont ni la même date de prix ni la même manière de compter l'électricité.
+
+### La note de la Banque mondiale de 2013
+
+La note « Vers une meilleure équité » demande qui bénéficie des subventions à l'énergie et ce que produirait leur réforme [@bm-2013-82712].
+
+**Les données.** Les enquêtes de l'Institut national de la statistique sur le budget, la consommation et le niveau de vie de 2005 et de 2010, l'incidence étant calculée sur celle de 2010 ; les prix et les subventions des ministères des Finances et de l'Industrie, aux prix d'avril 2013 ; les comptes de la STEG pour l'électricité ; pour les effets sur l'économie, une matrice de comptabilité sociale de 2005.
+
+**Le calcul.** Il se fait en cinq temps.
+
+1. *La subvention par unité.* C'est l'écart de prix : la différence entre un prix de référence — des prix internationaux franco à bord, dont la note écrit qu'ils ne sont « pas directement comparables aux prix au détail » mais sont les seuls disponibles — et le prix de vente. La note ne donne ni la formule ni le détail des frais et taxes ajoutés au prix de référence.
+2. *La dépense par produit.* Elle se lit comme la consommation totale au prix de vente, multipliée par la hausse de prix qu'il faudrait pour supprimer la subvention. Ce rapport se vérifie produit par produit sur le tableau de la note, sauf pour l'électricité.
+3. *L'électricité, à part.* Son montant n'est pas un écart de prix mesuré : la note part de « la subvention d'exploitation que la STEG fait apparaître dans son bilan » et en calcule « l'équivalent-prix ». Elle reconnaît que la structure des subventions aux opérateurs n'a pas pu être identifiée et qu'elle a dû poser des hypothèses sur les taux de subvention de l'électricité. C'est la grandeur comptable du @tbl-compensation-eg-rapprochement.
+4. *Le classement des ménages.* Les personnes sont rangées en quintiles de dépense de consommation par tête. Le bénéfice d'un ménage est sa consommation du produit multipliée par la subvention unitaire ; la note ne dit pas comment les quantités sont tirées de l'enquête.
+5. *Effets directs seulement.* Les parts par quintile et les montants par tête ne comptent que ce que le ménage consomme lui-même, à consommation inchangée. Les effets indirects — le renchérissement des autres biens — sont traités à part, par une simulation d'équilibre général calée sur la matrice de 2005.
+
+**Les résultats.** La note chiffre d'abord la dépense par produit.
+
+| Produit | Consommation au prix de vente, avril 2013 (MD) | Hausse de prix qui supprimerait la subvention | Subvention « en avril 2013 » (MD) | Subvention prévue à fin 2013 (MD) |
+|---|---:|---:|---:|---:|
+| Gaz de pétrole liquéfié | 225 | 214 % | 483 | 749 |
+| Essence | 884 | 23 % | 199 | 321 |
+| Gasoil à 50 ppm de soufre | 230 | 22 % | 50 | 75 |
+| Gasoil ordinaire | 1 739 | 40 % | 693 | 1 071 |
+| Fuel lourd | 103 | 165 % | 170 | 214 |
+| Pétrole lampant | 36 | 66 % | 23 | 32 |
+| Électricité | 2 169 | 30 % | 1 671 | 2 569 |
+| **Total** | **5 385** | | **3 290** | **5 032** |
+
+: Les subventions à l'énergie par produit en 2013, estimées par la Banque mondiale (millions de dinars courants). Source : Banque mondiale, calculs de ses services d'après des données des ministères des Finances et de l'Industrie [@bm-2013-82712, tableau 1, p. 5], tableau établi sur le document. La note ne définit pas le montant « en avril 2013 ». Elle rapporte ce montant au PIB de 2012 (70 400 MD), soit 4,7 %, et le montant prévu au PIB prévu de 2013 (76 240 MD), soit 6,6 % : les deux parts n'ont pas le même dénominateur, et la note ne précise pas la base de ce PIB, tiré d'une base de données du Fonds monétaire international (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Le taux de subvention que le même tableau donne pour l'électricité, sans l'expliquer, n'est pas repris. Estimation d'un rapport extérieur : la ligne budgétaire « carburants » de 2013 est de 3 734,0 MD (@tbl-compensation-2012-2025), et les deux grandeurs ne se substituent pas l'une à l'autre. {#tbl-compensation-bm-2013}
+
+Selon cette estimation, l'électricité forme la moitié du total, le gasoil ordinaire et le gaz de pétrole liquéfié l'essentiel du reste. La subvention par unité, en avril 2013, est de 1,21 D par kilogramme de gaz de pétrole liquéfié, vendu 0,57 D ; 0,47 D par litre de pétrole lampant, vendu 0,81 D ; 0,28 D par litre d'essence, vendu 1,57 D ; 0,27 D par litre de gasoil, vendu 1,40 D [@bm-2013-82712, tableau 16, p. 41].
+
+La note donne ensuite la part de chaque quintile dans les bénéfices directs.
+
+| Produit | 1^er^ quintile | 2^e^ | 3^e^ | 4^e^ | 5^e^ quintile |
+|---|---:|---:|---:|---:|---:|
+| Électricité et gaz | 13 | 17 | 19 | 22 | 29 |
+| Essence | 1 | 3 | 8 | 20 | 67 |
+| Gaz de pétrole liquéfié | 15 | 19 | 21 | 23 | 22 |
+| Gasoil | 2 | 7 | 13 | 19 | 59 |
+| Pétrole lampant | 9 | 11 | 10 | 29 | 41 |
+| **Ensemble des subventions à l'énergie** | **13** | **16** | **19** | **23** | **29** |
+| *Pour comparaison, selon la même note : subventions alimentaires* | *16* | *18* | *20* | *21* | *25* |
+
+: La part de chaque quintile de dépense par tête dans les bénéfices directs des subventions à l'énergie, aux prix d'avril 2013 (%). Source : Banque mondiale [@bm-2013-82712, figures 11 et 12, p. 11-12], figures établies sur le document. Effets directs seuls, enquête de 2010. {#tbl-compensation-bm-2013-quintiles}
+
+| Quintile | Gaz de pétrole liquéfié | Électricité | Essence | Gasoil | Ensemble |
+|---|---:|---:|---:|---:|---:|
+| 1^er^ | 44 | 17 | 1 | 0 | 62 |
+| 2^e^ | 55 | 22 | 2 | 1 | 80 |
+| 3^e^ | 60 | 26 | 5 | 1 | 91 |
+| 4^e^ | 66 | 30 | 12 | 2 | 110 |
+| 5^e^ | 60 | 39 | 35 | 4 | 139 |
+| Moyenne | 56 | 27 | 9 | 1 | 94 |
+
+: Le bénéfice direct des subventions à l'énergie par tête et par an, selon le quintile, aux prix d'avril 2013 (dinars). Source : Banque mondiale [@bm-2013-82712, figure 13, p. 13] ; valeurs transcrites du texte de la note, à confronter au document. Le pétrole lampant, nul à l'arrondi, n'est pas repris. {#tbl-compensation-bm-2013-par-tete}
+
+Trois constats, selon la note. L'essence et le gasoil profitent d'abord au cinquième le plus aisé, qui reçoit 67 % et 59 % de leur subvention directe. Le gaz de pétrole liquéfié est réparti presque également, et pèse le plus dans ce que reçoit un ménage modeste : 44 des 62 D par tête du premier quintile. Au total, le bénéfice direct va de 62 D par tête pour le premier quintile à 139 D pour le cinquième. Le poids du gaz de pétrole liquéfié dans ce que reçoivent les ménages — 56 D sur 94 — ne se compare pas à son poids dans la dépense totale du premier tableau, qui couvre toute l'économie et non les seuls ménages.
+
+La note simule enfin une réforme. La suppression de la seule subvention au gaz de pétrole liquéfié relèverait le taux de pauvreté « de près de 1.8 pour cent », au seuil de 1 025 D par tête que retient la note [@bm-2013-82712, § 31, p. 18]. Un transfert couvrant les effets directs d'une suppression des subventions aux carburants serait de 66 D par tête et par an — 56 pour le gaz de pétrole liquéfié, 9 pour l'essence, 1 pour le gasoil, l'électricité n'y étant pas comptée — et coûterait 145 MD s'il était versé au cinquième le plus modeste de la population, 528 MD s'il l'était à quatre cinquièmes [@bm-2013-82712, tableaux 11 et 12, p. 29]. Sur l'ensemble de l'économie, la simulation d'une suppression de toutes les subventions en cinq ans donne, en moyenne et par rapport à une situation sans réforme, un PIB supérieur de 0,21 point, une consommation des ménages inférieure de 3,7 % et un taux de chômage supérieur de 0,34 point [@bm-2013-82712, tableau 6, p. 15].
+
+**Ce que l'étude dit de ses limites.** Les résultats sur l'économie sont à prendre « avec prudence » et « plutôt à titre indicatif de tendances d'évolution » : ils supposent que toute l'économie budgétaire est réinvestie, sans mesure d'atténuation, et reposent sur des tableaux de 2005. Les prix franco à bord ne sont pas comparables aux prix de détail. Les effets indirects sont exclus des tableaux par quintile.
+
+**Incohérences relevées.** Le montant « en avril 2013 » n'est pas défini. Le texte de la note donne, pour le total des bénéfices directs par quintile, des montants en millions de dinars qui ne se déduisent pas de ses montants par tête : ils ne sont pas repris. Le résumé écrit 60 % là où la figure donne 59 % pour le gasoil.
+
+### Le document de travail de la Banque mondiale de 2015
+
+Le document de Cuesta, El-Lahga et Lara Ibarra simule la réforme annoncée à la fin de 2014 : suppression des subventions à l'essence, au gasoil et au gaz de pétrole liquéfié, et hausse uniforme de 10 % du prix de l'électricité des ménages [@bm-2015-wps7312].
+
+**Les données.** Un sous-échantillon de l'enquête de 2010, dont les dépenses sont actualisées à 2014 par l'indice des prix, la croissance et la population ; la grille tarifaire et les prix en vigueur en mai 2014 ; des prix de référence internationaux obtenus de l'administration de l'énergie ; le tableau des entrées et sorties de 2010 pour les effets indirects.
+
+**Le calcul.** Il se fait en six temps.
+
+1. *La subvention par unité.* Le prix non subventionné est le prix de référence international augmenté de toutes les taxes locales et des coûts intérieurs de distribution ; la subvention est sa différence avec le prix de vente. Le taux de subvention est rapporté au prix non subventionné, non au prix payé.
+2. *L'électricité.* Le prix de référence est unique : 0,268 D le kilowattheure. Chaque tranche de la grille de mai 2014 a donc sa subvention, positive pour les tranches basses, négative au-delà de 300 kWh par mois, où le ménage paie plus que ce prix.
+3. *Les quantités.* L'enquête donne des dépenses, non des quantités : les auteurs les retrouvent en inversant la grille tarifaire de mai 2014.
+4. *Le classement.* Quintiles de consommation par tête.
+5. *L'effet direct.* Aucune élasticité : « tout le monde consomme autant, mais à des prix plus élevés ». La subvention reçue est la quantité multipliée par la subvention unitaire, ce qui se vérifie sur le gaz de pétrole liquéfié.
+6. *L'effet indirect.* Les hausses sont répercutées sur les produits qui emploient l'énergie, par le tableau des entrées et sorties de 2010 — une « approximation simple », disent les auteurs, dont le détail n'est pas publié.
+
+**Les résultats.**
+
+| Produit ou tranche, mai 2014 | Prix non subventionné | Prix de vente | Subvention | Taux de subvention |
+|---|---:|---:|---:|---:|
+| Essence, le litre | 1,856 | 1,670 | 0,186 | 10 % |
+| Gasoil, le litre | 1,584 | 1,250 | 0,334 | 21 % |
+| Gaz de pétrole liquéfié, le kilogramme | 1,790 | 0,570 | 1,220 | 68 % |
+| Électricité, ménages jusqu'à 200 kWh par mois : jusqu'à 50 kWh | 0,268 | 0,075 | 0,193 | 72 % |
+| idem : jusqu'à 100 kWh | 0,268 | 0,108 | 0,160 | 60 % |
+| idem : jusqu'à 200 kWh | 0,268 | 0,140 | 0,128 | 47 % |
+| Électricité, ménages au-delà de 200 kWh : 1 à 200 kWh | 0,268 | 0,151 | 0,117 | 43 % |
+| idem : 201 à 300 kWh | 0,268 | 0,184 | 0,084 | 31 % |
+| idem : 301 à 500 kWh | 0,268 | 0,280 | −0,012 | −4 % |
+| idem : plus de 500 kWh | 0,268 | 0,350 | −0,082 | −31 % |
+
+: La subvention par unité selon le document de travail de 2015, aux prix de mai 2014 (dinars). Source : Banque mondiale [@bm-2015-wps7312, tableau 3, p. 11] ; valeurs transcrites du texte du document, à confronter au document. Les prix de vente de l'électricité sont ceux de la grille de la STEG du 1^er^ mai 2014 (@tbl-compensation-eg-grilles-steg). {#tbl-compensation-wps-unitaire}
+
+| Quintile | Essence | Gasoil | Gaz de pétrole liquéfié | Électricité | Total par tête | Part du total |
+|---|---:|---:|---:|---:|---:|---:|
+| 1^er^ | 0,09 | 0,15 | 44,53 | 36,99 | 81,76 | 14,9 % |
+| 2^e^ | 0,43 | 0,65 | 55,33 | 41,42 | 97,82 | 17,9 % |
+| 3^e^ | 1,57 | 1,24 | 59,88 | 46,06 | 108,74 | 19,9 % |
+| 4^e^ | 4,65 | 1,86 | 68,30 | 47,85 | 122,67 | 22,4 % |
+| 5^e^ | 18,18 | 5,70 | 63,91 | 48,89 | 136,69 | 25,0 % |
+| Ensemble | 4,98 | 1,92 | 58,39 | 44,24 | 109,53 | 100 % |
+
+: La subvention à l'énergie reçue par tête et par an, selon le quintile, aux prix de mai 2014 (dinars). Source : Banque mondiale [@bm-2015-wps7312, tableaux 7 et 8, p. 15] ; valeurs transcrites du texte du document, à confronter au document. {#tbl-compensation-wps-quintiles}
+
+Rapportée à la dépense du ménage, la subvention pèse 8,8 % au premier quintile et 2,4 % au cinquième [@bm-2015-wps7312, tableau 9, p. 16] : plus élevée en dinars pour les ménages aisés, elle compte davantage dans le budget des ménages modestes. Le gaz de pétrole liquéfié en forme plus de la moitié.
+
+| Effet de la réforme simulée | 1^er^ quintile | 5^e^ quintile | Ensemble |
+|---|---:|---:|---:|
+| Perte par tête et par an (D) | 60,5 | 177,1 | 109,3 |
+| dont effet direct | 48,4 | 102,9 | 73,3 |
+| dont effet indirect | 12,1 | 74,3 | 36,0 |
+| Perte en part de la dépense | 6,7 % | 3,1 % | 4,7 % |
+
+: La perte de pouvoir d'achat par tête qu'entraînerait la réforme simulée, selon le quintile (dinars par an, et part de la dépense). Source : Banque mondiale [@bm-2015-wps7312, tableau 10, p. 18-19, et figure 5] ; valeurs transcrites du texte du document, à confronter au document. {#tbl-compensation-wps-perte}
+
+| Scénario | Transfert moyen par bénéficiaire | Bénéficiaires | Taux de pauvreté | Indice de Gini |
+|---|---:|---:|---:|---:|
+| Avant la réforme | | | 15,27 % | 36,57 |
+| Réforme sans compensation | | | 17,84 % | 37,18 |
+| Réforme et transfert universel | 75 D | 10,9 millions | 14,87 % | 36,29 |
+| Réforme et transfert aux titulaires des cartes de soins | 264 D | 3,1 millions | 13,83 % | 35,46 |
+| Réforme et transfert aux seuls pauvres, ciblage supposé parfait | 420 D | 1,9 million | 5,25 % | 34,22 |
+
+: La pauvreté et l'inégalité selon la réforme simulée et trois manières d'en redistribuer l'économie budgétaire, 817,5 MD. Source : Banque mondiale [@bm-2015-wps7312, tableau 13, p. 21-22] ; valeurs transcrites du texte du document, à confronter au document. Le point de départ est celui de ce tableau : un taux de pauvreté de 15,27 %, au seuil haut, mesuré sur le sous-échantillon de l'enquête. {#tbl-compensation-wps-scenarios}
+
+La réforme simulée économiserait 817,5 MD, dont 635,6 MD sur le gaz de pétrole liquéfié, 106,7 MD sur l'électricité, 54,2 MD sur l'essence et 20,9 MD sur le gasoil [@bm-2015-wps7312, tableau 12, p. 20-21]. Sans compensation, elle relèverait le taux de pauvreté de 2,6 points ; redistribuée à tous, la même somme le ramènerait sous son niveau de départ. Le gasoil pèse peu dans l'effet direct et le plus dans l'effet indirect [@bm-2015-wps7312, tableau 10].
+
+**Ce que l'étude dit de ses limites.** Aucune réaction de comportement : les effets sont « immédiats ». La structure de consommation de 2010 est supposée valoir en 2014. L'analyse porte sur un sous-échantillon, d'où des taux de départ qui ne sont pas les taux officiels. Les scénarios de compensation sont dits « irréalistes » par les auteurs : ciblage parfait et sans coût, toute l'économie redistribuée. La réforme simulée était encore « vaguement définie ».
+
+**Incohérences relevées.** Le texte courant du document donne, pour les tranches hautes de l'électricité, trois prix qui ne sont pas ceux de la grille de la STEG ; ses tableaux de calcul, eux, portent la bonne grille — 184, 280 et 350 millimes. L'erreur est donc dans une phrase, non dans la simulation. Le document porte deux points de départ pour la pauvreté, selon le tableau ; seul celui du tableau des scénarios est repris ici. Un tableau de consommation d'électricité par individu, dont l'unité de temps n'est pas dite, n'est pas repris.
+
+### Un agrégat de toutes les subventions : le document de travail de 2017
+
+Le document de Jouini, Lustig, Moummi et Shimeles ne mesure pas l'incidence de l'énergie : il mesure l'effet de l'ensemble des prélèvements et des transferts sur l'inégalité et la pauvreté, et les subventions y forment un seul agrégat — produits de base, énergie et transport confondus, sans ventilation par produit [@jouini-lustig-moummi-shimeles-2017-ceq38].
+
+**Les données.** L'enquête de 2010, réduite aux 5 456 ménages présents dans ses trois volets ; les impôts indirects et les subventions d'après le ministère des Finances.
+
+**Le calcul.** L'enquête ne donnant pas les revenus, la consommation y tient lieu de revenu disponible, et les auteurs remontent au revenu d'avant impôts et transferts. Les subventions sont imputées à chaque ménage selon sa consommation déclarée, puis réduites en proportion pour s'accorder avec les comptes de l'administration ; il n'y a ni prix de référence ni formule par produit, ni effet indirect, ni réaction de comportement. Les ménages sont rangés en dixièmes de revenu par tête avant impôts et transferts.
+
+**Les résultats.** Deux résultats portent sur les subventions. Les deux dixièmes les plus modestes en reçoivent 11,7 %, le dixième le plus aisé 18,3 % ; et elles représentent 23,6 % du revenu du premier dixième, contre 5,1 % de celui du dernier [@jouini-lustig-moummi-shimeles-2017-ceq38, tableaux 18-7 et 18-8] — valeurs transcrites du texte du document, à confronter au document. Comme dans les autres études, la subvention est plus forte en montant pour les ménages aisés, et plus lourde dans le budget des ménages modestes.
+
+**Ce que l'étude dit de ses limites.** Pas de données de revenu ; des montants imputés depuis les comptes administratifs et remis à l'échelle ; un impôt sur le revenu simulé.
+
+<!-- TODO (documentaliste) : tableaux des trois études transcrits du texte des fichiers, à confronter aux documents cellule par cellule — seuls le tableau 1 et les figures 11 et 12 de la note de 2013 sont établis sur le document ; alignement des colonnes du tableau 18-8 du document de 2017 à contrôler avant toute citation dixième par dixième ; outil de simulation des deux études de la Banque mondiale (Araar et Verme, 2012) non ouvert ; grille basse tension du 1er janvier 2014 donnée en annexe du document de 2015, source seconde, à confirmer par une pièce de la STEG ; Banque mondiale, rapport n° 47294 (2008), à verser avant citation — docs/notes/compensation-etudes-incidence-calculs.md, § F à H. -->
+
+<!-- TODO (documentaliste) : ciblage et transferts monétaires de substitution (1989 et suivantes ; réforme annoncée depuis 2013) : aucun texte n'est établi ; lien à faire avec le PNAFN (docs/notes/prestations-assistance.md) — docs/notes/compensation.md, § 6, point 8. -->
