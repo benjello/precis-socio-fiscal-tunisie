@@ -99,7 +99,7 @@ et non dans la loi n° 84-2) : voir `docs/notes/compensation.md`, § 9.
   **Pagination corrigée** d'après les pieds de page, vérifiés à l'image : art. 76 pp. 3693-3694 (n° 5 en 3693 ; n° 3, art. 20 bis, en 3694), art. 77 et 78 p. 3694 —
   et non « pp. 3692-3693 ». Même glissement pour l'art. 73 (p. 3692, non 3691). La `note` FR est complétée ; la `note` AR décrit les articles sans pagination.
   **À répercuter hors de la bibliographie (non fait, hors périmètre)** : `docs/notes/compensation.md` (l. 34 et 267) et le `TODO` de
-  `_compensation.qmd` (l. 143 : « pp. 3692-3693 » devrait être 3693-3694) donnent encore l'ancienne pagination.
+  `_compensation.qmd` (devenu `precis/fr/compensation/_reformes.qmd` le 6 octobre 2026 ; l. 143 : « pp. 3692-3693 » devrait être 3693-3694) donnent encore l'ancienne pagination.
 - **Sondage du tableau 2012-2025** contre le § 10.1 de `docs/notes/compensation.md` : 2013, 2016, 2022 concordent (postes, totaux, sommes), ainsi que les
   pages des rapports de la BCT citées (RA 2020 p. 62, 2021 p. 57, 2022 p. 60, 2023 p. 64, 2024 p. 65, 2025 p. 71 ; RA 2015 p. 45, RA 2019 p. 60). Aucune discordance.
 - **Contrôles** : `push_biblio.py --verifier` : 769 entrées, 2 pertes préexistantes ; `verifier.sh prestations_sociales retraites` : tout vert.

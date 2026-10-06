@@ -1,0 +1,206 @@
+# La dépense budgétaire {#sec-compensation-longue-periode}
+
+Aucune série continue du coût de la compensation n'est disponible de 1970 à aujourd'hui. Quatre blocs datés se succèdent : le fonds spécial de 1971 à 1984, les subventions alimentaires des années 1990 selon le FMI, puis la dépense budgétaire par poste de 2003 à 2011 et de 2012 à 2025. Les deux premiers sont de sources et de périmètres différents et ne se raccordent ni entre eux ni aux suivants ; les deux derniers reprennent un même tableau du ministère des Finances et se suivent. Les années 1985 à 1990 et 1999 à 2002 ne sont couvertes par aucune valeur en dinars. Le chapitre va du général au particulier : la dépense globale, sa décomposition par poste, puis le poste de l'énergie. Les séries de la Banque mondiale et du FMI, de périmètres différents de celui du ministère des Finances, sont présentées à part (@sec-compensation-sources-exterieures).
+
+<!-- TODO (rédacteur) : NE PAS tracer de figure tant que la série n'est pas reconstruite dans l'entrepôt avec sa fiche de provenance (docs/notes/compensation.md, § 2.1, 2.3 et 2.4) : coût par poste 2003-2025 en MD et en % du PIB ; temps long 1970-2025 en % du PIB, ruptures de périmètre signalées. Les parts dans le PIB ne se calculent pas à la main : seules les parts publiées par les sources figurent ci-dessous. -->
+
+## La dépense globale sur la longue période {#sec-compensation-depense-globale}
+
+### 1971-1984 : le fonds spécial
+
+Les lois de finances donnent la prévision annuelle du fonds spécial ; deux années en sont établies ici, que la Banque mondiale permet de rapprocher des dépenses de la Caisse au début des années 1980.
+
+| Année | Grandeur | Montant (MD) | Source |
+|---|---|---:|---|
+| 1971 | prévision du fonds spécial | 7,0 | loi de finances [@lf-1971, tableau F] |
+| 1982 | dépenses de la Caisse | 165,0 | Banque mondiale, citant la Caisse [@bm-1985-cem-5328-vol1, tableau 11] |
+| 1983 | dépenses de la Caisse | 181,0 | idem |
+| 1984 | prévision initiale du fonds spécial | 145,0 | loi de finances [@lf-1984, tableau F] |
+| 1984 | budget de la Caisse | 251,0 | Banque mondiale, citant la Caisse [@bm-1985-cem-5328-vol1, tableau 11] |
+
+: Le fonds spécial et les dépenses de la Caisse, 1971-1984 (millions de dinars courants). Les prévisions des lois de finances et les dépenses rapportées par la Banque mondiale ne mesurent pas la même grandeur. {#tbl-compensation-1971-1984}
+
+<!-- TODO (documentaliste) : la série annuelle 1970-1984 des dépenses de la Caisse par poste (Banque mondiale 1985, vol. II, tableau III-1) et les tableaux F des lois de finances 1972-1992 restent à établir avant toute publication ; série 1985-2002 à construire sur les rapports annuels de la BCT — docs/notes/compensation.md, § 2.2, 2.3 et § 6, point 9. -->
+
+### 2003-2025 : le total de la dépense budgétaire
+
+À partir de 2003, le total annuel de la dépense budgétaire se lit dans la colonne « Total » des tableaux par poste (@tbl-compensation-2003-2011 et @tbl-compensation-2012-2025).
+
+Deux réserves valent pour toute la série budgétaire. Elle est tenue en base caisse : les arriérés et les régularisations entre l'État et les entreprises déplacent la charge d'une année à l'autre. Et chaque année existe en plusieurs états successifs — loi de finances, loi de finances complémentaire, résultat provisoire, résultat —, qui diffèrent.
+
+Le ministère des Finances rapproche la dépense réalisée de celle que prévoyait le XI^e^ Plan, stable et proche de 900 MD par an.
+
+
+| | 2007 | 2008 | 2009 | 2010 | 2011 |
+|---|---:|---:|---:|---:|---:|
+| Compensation prévue au XI^e^ Plan (MD) | 928 | 929 | 919 | 912 | 909 |
+| Compensation réalisée (MD) | 1 282,4 | 2 036,0 | 1 430,0 | | |
+| PIB (MD) | 45 628,7 | 50 324,9 | | | |
+
+: La compensation prévue au XI^e^ Plan et réalisée, 2007-2011 (millions de dinars courants). Source : ministère des Finances [@minfin-finances-publiques-2008, annexe 23]. {#tbl-compensation-plan}
+
+### La compensation rapportée au PIB {#sec-compensation-pib}
+
+Les sources ne publient la part de la compensation dans le PIB que pour certaines années ; seules ces parts sont reprises ici.
+
+| Année | Part dans le PIB | Source |
+|---|---:|---|
+| 2010 | 2,4 % | ministère des Finances [@minfin-finances-publiques-2010, p. 26] |
+| 2011 | 4,4 % | ministère des Finances [@minfin-finances-publiques-2011] |
+| 2013 | 7,3 % | BCT [@bct-ra-2015, p. 33] |
+| 2014 | 5,1 % | BCT [@bct-ra-2015, p. 33] |
+| 2015 | 3,3 % | BCT [@bct-ra-2015, p. 33] |
+| 2018 | 4,6 % | BCT [@bct-ra-2018, p. 31] |
+| 2022 | 8,3 % | BCT [@bct-ra-2022, p. 60] |
+| 2022 | 8,6 % | BCT, rapport suivant [@bct-ra-2023, p. 56] |
+| 2023 | 7,5 % | BCT [@bct-ra-2023, p. 56] |
+
+: La part de la dépense budgétaire de compensation dans le PIB, pour les années où une source la publie, 2010-2023. La part de 2015 est publiée avec le résultat provisoire de 2 863,9 MD. Deux rapports successifs de la BCT donnent deux parts pour 2022. Ces parts portent sur les trois postes : elles ne se comparent pas à celles du @tbl-compensation-fmi, limitées aux subventions de la Caisse. {#tbl-compensation-pib}
+
+La BCT qualifie de « record » la part de 2013 [@bct-ra-2015, p. 33] ; celles qu'elle publie pour 2022 la dépassent. Pour 2018, elle ajoute que la compensation forme 20,7 % des dépenses de fonctionnement [@bct-ra-2018, p. 31].
+
+<!-- TODO (documentaliste) : parts dans le PIB des années non relevées (2012, 2016, 2017, 2019-2021, 2024, 2025) : à chercher dans les rapports de la BCT et du ministère ; ne jamais les calculer à la main (docs/notes/compensation.md, § 10.3). -->
+
+## La décomposition par poste {#sec-compensation-par-poste}
+
+### 2003-2011 : la dépense budgétaire par poste
+
+Les rapports du ministère des Finances donnent, à partir de 2003, la dépense de compensation en trois postes.
+
+| Année | Produits de base | Carburants | Transport | Total | Rapport |
+|---|---:|---:|---:|---:|---|
+| 2003 | 217,8 | — | 111,0 | 328,8 | 2005 |
+| 2004 | 200,0 | 203,0 | 120,0 | 523,0 | 2005 |
+| 2005 | 244 | 414 | 132 | 790 | 2008 |
+| 2006 | 287 | 500 | 146 | 933 | 2008 |
+| 2007 | 668 | 450 | 163 | 1 281 | 2008 |
+| 2008 | 1 048 | 806 | 182 | 2 036 | 2008 |
+| 2009 | 800,0 | 430,0 | 200,0 | 1 430,0 | 2011 |
+| 2010 | 730,0 | 550,0 | 220,0 | 1 500,0 | 2011 |
+| 2011 | 1 100,0 | 1 536,0 | 233,2 | 2 869,2 | 2011 |
+
+: La dépense budgétaire de compensation par poste, 2003-2011 (millions de dinars courants). Sources : ministère des Finances, rapports sur les finances publiques de 2005, 2008 et 2011 [@minfin-finances-publiques-2005 ; @minfin-finances-publiques-2008 ; @minfin-finances-publiques-2011]. Le poste « carburants » réunit les transferts à l'ETAP, à la STEG et à la STIR. Les totaux de 2003 et 2004 sont la somme des trois postes. Chaque année est donnée dans sa publication la plus récente : le rapport de 2005 donnait pour 2005 des postes de 240,9, 414,0 et 134,0 MD, et l'annexe 23 du rapport de 2008 donne pour 2007 un total de 1 282,4 MD. {#tbl-compensation-2003-2011}
+
+Trois faits s'y lisent. La ligne « carburants » apparaît en 2004, à 203,0 MD : c'est la première inscription budgétaire de ce poste, non l'entrée des produits pétroliers dans la compensation, qui date de 1971 pour la taxe et de 1976 pour le compte de stabilisation (@sec-compensation-1976). Le poste des produits de base passe de 287 MD en 2006 à 1 048 MD en 2008. Enfin la dépense totale passe de 1 500,0 MD en 2010 à 2 869,2 MD en 2011, les carburants de 550,0 à 1 536,0 MD ; le ministère des Finances chiffre la compensation de 2011 à 4,4 % du PIB (@tbl-compensation-pib) et à 61 % des dépenses de développement [@minfin-finances-publiques-2011].
+
+Le détail par produit est connu pour la fin de la période.
+
+
+| Produit | 2009 | 2010 | 2011 |
+|---|---:|---:|---:|
+| Céréales | 687,0 | 613,0 | 833,7 |
+| Huile | 109,0 | 112,7 | 214,4 |
+| Lait | | | 23,1 |
+| Sucre | | | 10,8 |
+| Papier scolaire | | | 4,3 |
+| Autres | | | 13,7 |
+| **Produits de base** | **800,0** | **730,0** | **1 100,0** |
+
+: La compensation des produits de base par produit, 2009-2011 (millions de dinars courants). Source : ministère des Finances [@minfin-finances-publiques-2011]. Le détail des produits autres que les céréales et l'huile n'est donné que pour 2011. {#tbl-compensation-produits-2009-2011}
+
+### 2012-2025 : la dépense budgétaire par poste {#sec-compensation-2012-2025}
+
+Le même tableau du ministère des Finances se prolonge après 2011 dans ses bulletins et sa note d'exécution du budget, puis, à partir de 2019, dans les rapports annuels de la BCT, qui citent le ministère. Chaque année est donnée dans la publication la plus récente qui la porte, avec l'état que cette publication lui donne : « résultats » quand elle le dit, « non précisé » quand la colonne ne porte aucune étiquette.
+
+| Année | Produits de base | Carburants | Transport | Total | État selon la source | Source |
+|---|---:|---:|---:|---:|---|---|
+| 2012 | 1 235,6 | 2 111,0 | 277,5 | 3 624,1 | non précisé | bulletin de janvier 2017 [@minfin-resultats-provisoires-2017-01] |
+| 2013 | 1 450,0 | 3 734,0 | 330,0 | 5 514,0 | non précisé | idem |
+| 2014 | 1 416,7 | 2 353,0 | 384,0 | 4 153,7 | résultats | note à fin 2018 [@minfin-note-execution-2018-12] |
+| 2015 | 1 549,0 | 918,0 | 415,9 | 2 882,9 | résultats | idem |
+| 2016 | 1 580,7 | 197,0 | 433,0 | 2 210,7 | résultats | idem |
+| 2017 | 1 494,0 | 1 550,0 | 448,2 | 3 492,2 | résultats | idem |
+| 2018 | 1 750,0 | 2 700,0 | 450,0 | 4 900,0 | résultats | idem |
+| 2019 | 1 800 | 2 538 | 450 | 4 788 | non précisé | BCT, citant le ministère [@bct-ra-2020, p. 62] |
+| 2020 | 2 416 | 1 470 | 600 | 4 486 | non précisé | BCT, citant le ministère [@bct-ra-2021, p. 57] |
+| 2021 | 2 200,0 | 3 327,0 | 504,0 | 6 031,0 | non précisé | BCT, citant le ministère [@bct-ra-2022, p. 60] |
+| 2022 | 3 771,0 | 7 628,0 | 600,0 | 11 999,0 | non précisé | BCT, citant le ministère [@bct-ra-2023, p. 64] |
+| 2023 | 3 809,5 | 7 030,0 | 640,0 | 11 479,5 | non précisé | BCT, citant le ministère [@bct-ra-2024, p. 65] |
+| 2024 | 3 601,5 | 7 086,0 | 660,0 | 11 347,5 | non précisé | BCT, citant le ministère [@bct-ra-2025, p. 71] |
+| *2025* | *3 801,0* | *7 112,0* | *680,0* | *11 593,0* | non précisé ; montants identiques à ceux de la loi de finances pour 2025 | BCT, citant le ministère [@bct-ra-2025, p. 71 ; @bct-ra-2024, p. 65] |
+| *2026* | *4 079,0* | *4 993,0* | *700,0* | *9 772,0* | prévision de la loi de finances pour 2026 | BCT, citant le ministère [@bct-ra-2025, p. 71] |
+
+: La dépense budgétaire de compensation par poste, 2012-2025, et la prévision pour 2026 (millions de dinars courants). Suite du @tbl-compensation-2003-2011 ; le poste « carburants » réunit les mêmes transferts. Les lignes en italique ne sont pas des dépenses constatées : celle de 2025 reprend, au dixième près, la prévision de la loi de finances pour 2025 ; celle de 2026 est une prévision. Quatre années ont une autre valeur dans une publication antérieure : 2014, 4 154,2 MD dont 384,5 de transport [@bct-ra-2015, p. 45] ; 2015, résultat provisoire de 2 863,9 MD dont 1 530,0 de produits de base [@minfin-resultats-provisoires-2015-12] ; 2019, 4 789,5 MD dont 451,5 de transport [@bct-ra-2019, p. 60] ; 2023, 11 475,0 MD dont 3 805,0 de produits de base [@bct-ra-2023, p. 64]. {#tbl-compensation-2012-2025}
+
+Quatre constats s'y lisent.
+
+- **Le pic de 2013.** La dépense atteint 5 514,0 MD, dont 3 734,0 MD de carburants, contre 2 869,2 MD deux ans plus tôt. La loi de finances pour 2013 en prévoyait 4 200,0 MD, dont 2 520,0 MD de carburants [@minfin-resultats-provisoires-2013-03].
+- **Le creux de 2016.** La dépense revient à 2 210,7 MD. La baisse tient au seul poste des carburants, de 2 353,0 MD en 2014 à 918,0 MD en 2015 et 197,0 MD en 2016, alors que les produits de base et le transport continuent de croître ; elle se lit avec la réserve exposée plus bas (@sec-compensation-rupture-2015).
+- **La reprise de 2017-2018.** Les carburants remontent à 1 550,0 MD puis 2 700,0 MD.
+- **Le changement d'échelle de 2022.** La dépense passe de 6 031,0 MD en 2021 à 11 999,0 MD en 2022 et se maintient au-dessus de 11 000 MD en 2023 et 2024. Les carburants en sont le premier poste — 7 628,0 MD en 2022, plus de 7 000 MD les deux années suivantes —, et les produits de base passent de 2 200,0 MD à 3 771,0 MD. Le rapport précédent de la BCT portait pour 2022 un montant de 7 262 MD, dont 2 891 MD de carburants [@bct-ra-2021, p. 57].
+
+Le transport, lui, croît sans à-coup, de 277,5 MD en 2012 à 660,0 MD en 2024.
+
+## Le poste de l'énergie {#sec-compensation-energie}
+
+Le détail par entreprise du poste « carburants » est connu pour 2011.
+
+| Entreprise | Transfert en 2011 (MD) |
+|---|---:|
+| ETAP | 572,0 |
+| STEG | 540,0 |
+| STIR | 424,0 |
+| **Poste « carburants »** | **1 536,0** |
+
+: Le poste « carburants » en 2011, par entreprise bénéficiaire du transfert (millions de dinars courants). Source : ministère des Finances [@minfin-finances-publiques-2011]. {#tbl-compensation-energie-2011}
+
+### La rupture de périmètre de 2015 {#sec-compensation-rupture-2015}
+
+Les bulletins d'exécution du budget portent, sous le tableau de la dépense par poste, une note : dans le cadre de la loi de finances complémentaire pour 2015, l'hypothèse de prix du baril de pétrole a été révisée de 95 dollars à 62 dollars, « et le principe de séparation des opérations de commercialisation des hydrocarbures a été adopté » [@minfin-resultats-provisoires-2015-12 ; @minfin-resultats-provisoires-2017-01 ; @minfin-resultats-provisoires-2018-07]. La source ne dit pas ce que cette séparation change dans la comptabilisation du poste. La baisse de la ligne « carburants » de 2014 à 2016 mêle donc un effet de prix et un changement de périmètre dont le contenu n'est pas établi ici ; elle ne se lit pas comme un pur effet du prix du pétrole.
+
+<!-- TODO (documentaliste) : contenu de la « séparation des opérations de commercialisation des hydrocarbures » adoptée par la LFC 2015 (ce qui sort du poste « carburants » à partir de 2015) : docs/notes/compensation.md, § 10.4. -->
+
+### Coût budgétaire et coût économique de l'énergie {#sec-compensation-cout-economique}
+
+Le crédit budgétaire « carburants » ne mesure pas tout le soutien à l'énergie. Un rapport daté du 21 juillet 2014, établi par trois corps de contrôle de l'État sur ordre de mission du ministre des finances, raisonne sur les besoins de financement de l'ensemble STEG-STIR-ETAP [@minfin-compensation-carburants-2014, p. 4].
+
+| Année | État | Besoin de financement STEG-STIR-ETAP (MD) | Pour mémoire : crédit « carburants » (MD) |
+|---|---|---:|---:|
+| 2010 | réalisé | 1 065,9 | 550,0 |
+| 2011 | réalisé | 2 543,7 | 1 536,0 |
+| 2012 | loi de finances | 3 095 | |
+| 2012 | loi de finances complémentaire | 4 084,5 | 1 688,0 |
+| 2012 | réalisé | 5 064,4 | 2 111,0 |
+| 2013 | loi de finances complémentaire (prévision) | 5 754 | 3 734,0 |
+
+: Les besoins de financement du système STEG-STIR-ETAP, 2010-2013 (millions de dinars courants). Sources : rapport de contrôle du 21 juillet 2014 [@minfin-compensation-carburants-2014, p. 4] ; pour le crédit budgétaire, @tbl-compensation-2003-2011 et @tbl-compensation-2012-2025, et pour celui de la loi de finances complémentaire pour 2012, le bulletin de mars 2013 [@minfin-resultats-provisoires-2013-03]. Le crédit de 2013 est la valeur de l'année au @tbl-compensation-2012-2025, non celle de la loi de finances complémentaire. Les deux grandeurs ne se substituent pas l'une à l'autre. {#tbl-compensation-besoins-energie}
+
+La mission estime en outre à environ 1 210 MD, sur 2010-2012, le soutien en nature dont bénéficie la STEG au titre de la redevance sur le gaz algérien, qui n'est pas inscrit au budget [@minfin-compensation-carburants-2014, p. 4]. De 2010 à 2012, le besoin de financement réalisé dépasse le crédit budgétaire « carburants » de l'année : 5 064,4 MD contre 2 111,0 MD en 2012.
+
+<!-- TODO (documentaliste) : le rapport de 2014 n'est exploité que pour ses pages 1 à 5 ; ses tableaux chiffrés (pp. 23-180) restent à lire — docs/notes/compensation.md, § 1.3. -->
+
+## Les sources extérieures : Banque mondiale et FMI {#sec-compensation-sources-exterieures}
+
+Les tableaux qui suivent sont repris de rapports de la Banque mondiale et du FMI. Ils sont distincts de la série budgétaire du ministère des Finances : ils ne se raccordent ni entre eux ni à elle.
+
+### Le budget de la Caisse pour 1984 selon la Banque mondiale
+
+Le budget de la Caisse pour 1984, tel que le rapporte la Banque mondiale, se répartit ainsi.
+
+| Produit | Budget 1984 (MD) |
+|---|---:|
+| Céréales | 156,5 |
+| Huile d'olive | 33,5 |
+| Sucre | 15,0 |
+| Engrais | 14,8 |
+| Lait | 6,6 |
+| **Total, autres postes compris** | **251,0** |
+
+: Le budget de la Caisse générale de compensation pour 1984, par produit. Source : Banque mondiale, citant la Caisse [@bm-1985-cem-5328-vol1, tableau 11]. Les céréales en forment 62,4 %. {#tbl-compensation-1982-1984}
+
+### 1988-1998 : les subventions alimentaires selon le FMI
+
+Deux rapports du FMI couvrent la décennie. Le premier donne les subventions alimentaires, d'après le ministère des Finances, et situe leur poids à 4,2 % du PIB en 1988 et 1,8 % en 1994 [@fmi-1996-red] ; le second donne les « subventions aux consommateurs par la CGC ». Les deux se recouvrent en 1994 et y divergent — 247,0 MD contre 319 MD : les périmètres diffèrent, et les deux séries ne se raccordent pas.
+
+| Année | Subventions alimentaires (MD) — FMI 1996 | Subventions aux consommateurs par la CGC (MD) — FMI 2000 | Idem, en % du PIB — FMI 2000 |
+|---|---:|---:|---:|
+| 1991 | 296,3 | | |
+| 1992 | 269,0 | | |
+| 1993 | 260,0 | | |
+| 1994 | 247,0 | 319 | 2,0 |
+| 1995 | 243,0 | 346 | 2,0 |
+| 1996 | | 418 | 2,2 |
+| 1997 | | 378 | 1,8 |
+| 1998 | | 375 | 1,7 |
+
+: Les subventions de la Caisse dans les années 1990, selon deux rapports du FMI (millions de dinars courants). Sources : FMI 1996 [@fmi-1996-red, tableau 24] ; FMI 2000 [@fmi-2000-red, tableau 15]. Deux séries distinctes, non raccordées. {#tbl-compensation-fmi}

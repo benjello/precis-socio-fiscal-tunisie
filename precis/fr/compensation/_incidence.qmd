@@ -1,0 +1,34 @@
+# Les études d'impact : qui bénéficie des subventions alimentaires {#sec-compensation-incidence}
+
+L'[incidence des subventions](#g-incidence-des-subventions) — leur répartition entre les ménages selon leur niveau de vie — est établie ici par une seule étude, conduite par l'Institut national de la statistique avec le Centre de recherches et d'études sociales et la Banque africaine de développement sur l'enquête de consommation de 2010. Elle ne porte que sur les subventions alimentaires [@ins-cres-bad-2013-subventions].
+
+Premier résultat, une part de la dépense n'atteint pas les ménages : sur un budget de la Caisse d'environ 1 150 MD, 888 MD leur reviennent ; 262 MD, soit 22,8 %, vont à des consommations « hors ménages » — restaurants, cafés, hôtels, commerce frontalier. Le budget retenu par l'étude ne coïncide pas avec le poste « produits de base » de 2010 du @tbl-compensation-2003-2011 ; les deux chiffres ne se rapprochent pas sans connaître le périmètre de l'étude.
+
+Deuxième résultat, la subvention reçue par tête varie peu d'un [quintile de niveau de vie](#g-quintile-niveau-de-vie) à l'autre, et croît légèrement avec le revenu.
+
+| | 1^er^ quintile | 2^e^ | 3^e^ | 4^e^ | 5^e^ quintile |
+|---|---:|---:|---:|---:|---:|
+| Subvention alimentaire annuelle par tête (D) | 68,2 | 84,2 | 87,5 | 89,9 | 89,1 |
+| dont gros pain (D) | 20,6 | | | | 28,5 |
+| dont semoule (D) | 17,0 | | | | 12,1 |
+| Indice de ciblage absolu | 0,82 | | | | 1,07 |
+
+: La subvention alimentaire par tête selon le quintile de niveau de vie, 2010. Source : INS, CRES et BAD [@ins-cres-bad-2013-subventions] ; les montants par tête viennent du tableau 1 de l'étude. Les valeurs par produit et l'indice de ciblage ne sont repris que pour les quintiles extrêmes. {#tbl-compensation-incidence}
+
+Les personnes pauvres reçoivent 64,8 D par tête, contre 87,2 D pour les non-pauvres [@ins-cres-bad-2013-subventions, tableau 2]. La semoule est, selon l'étude, le seul produit dont la subvention décroît avec le revenu. Un montant presque égal par tête pèse cependant davantage dans un budget modeste, ce que mesurent les deux derniers résultats de l'étude.
+
+| Indicateur, 2010 | Avec les subventions | Sans les subventions |
+|---|---:|---:|
+| Taux de pauvreté, effet immédiat | 15,5 % | 19,1 % |
+| Taux de pauvreté, après adaptation des consommations | 15,5 % | 16,8 % |
+| Indice de Gini | 37,4 % | 38,5 % |
+
+: L'effet simulé d'une suppression des subventions alimentaires sur la pauvreté et l'inégalité, 2010. Source : INS, CRES et BAD [@ins-cres-bad-2013-subventions]. La pauvreté extrême augmenterait de 1,7 point dans l'effet immédiat. {#tbl-compensation-pauvrete}
+
+Deux constats de l'étude se font ainsi face : sans [ciblage](#g-ciblage), la subvention profite davantage, par tête, au cinquième le plus aisé qu'au cinquième le plus modeste ; et sa suppression relèverait, dans l'effet immédiat, le taux de pauvreté de 3,6 points. C'est le terme de la comparaison avec les transferts monétaires ciblés de l'assistance sociale ([« Les prestations non contributives »](../prestations_sociales/_non_contributives.html#sec-prest-non-contributives)).
+
+L'incidence des subventions à l'énergie n'est pas documentée ici, non plus que celle des subventions alimentaires après 2010.
+
+<!-- TODO (documentaliste) : trois études à lire avant d'écrire l'incidence de l'énergie — Banque mondiale 2013, « Vers une meilleure équité : les subventions énergétiques, le ciblage et la protection sociale en Tunisie » (n° 82712-TN, numéro à vérifier) ; Cuesta, El-Lahga et Lara Ibarra 2015 (Policy Research Working Paper 7312) ; Jouini, Lustig, Moummi et Shimeles 2018 (Review of Income and Wealth, vol. 64). Relever aussi, dans l'étude INS-CRES-BAD, la définition des classes (pauvres, classe moyenne, aisés) avant de citer la répartition du budget entre elles ; et les pages sur l'auto-ciblage des rapports Banque mondiale 1993 et 1995 — docs/notes/compensation.md, § 3. -->
+
+<!-- TODO (documentaliste) : ciblage et transferts monétaires de substitution (1989 et suivantes ; réforme annoncée depuis 2013) : aucun texte n'est établi ; lien à faire avec le PNAFN (docs/notes/prestations-assistance.md) — docs/notes/compensation.md, § 6, point 8. Lois de règlement : à ouvrir pour savoir si leurs tableaux isolent la compensation (§ 6, point 11). -->

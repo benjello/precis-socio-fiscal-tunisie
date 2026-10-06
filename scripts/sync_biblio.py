@@ -13,6 +13,7 @@ The script maps Zotero collections to book directories:
     Collection "Prestations sociales" → precis/{lang}/prestations_sociales/references.json
     Collection "Rémunérations publiques" → precis/{lang}/remunerations_publiques/references.json
     Collection "Cotisations sociales" → precis/{lang}/cotisations_sociales/references.json
+    Collection "Compensation"         → precis/{lang}/compensation/references.json
 
 Items not in any collection (or in "Commun") go to:
     precis/{lang}/references.json     (shared across books)
@@ -47,6 +48,7 @@ COLLECTION_TO_BOOK = {
     "finances locales": "finances_locales",
     "marché du travail": "marche_travail",
     "marche du travail": "marche_travail",
+    "compensation": "compensation",
 }
 
 

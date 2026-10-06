@@ -6,9 +6,9 @@ versionné : c'est ici que les conventions vivent, pas dans la mémoire d'un ass
 
 ## Le dépôt en deux phrases
 
-Huit volumes bilingues — des livres Quarto, `precis/fr/<livre>/` et `precis/ar/<livre>/` — :
+Neuf volumes bilingues — des livres Quarto, `precis/fr/<livre>/` et `precis/ar/<livre>/` — :
 fiscalité, cotisations sociales, prestations sociales, retraites, caisses de sécurité sociale,
-rémunérations publiques, finances locales, marché du travail ; un glossaire bilingue
+rémunérations publiques, finances locales, marché du travail, compensation ; un glossaire bilingue
 engendré depuis `precis/glossaire.yml`, une bibliographie CSL-JSON, et des tableaux de paramètres
 engendrés depuis le dépôt `openfisca-tunisia`, qui porte aussi les retraites depuis sa version 0.93.
 
@@ -30,7 +30,7 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   rattrapage à la main. Conséquence pratique : **quand tu ajoutes un chapitre côté français, ajoute-le
   toi-même au `_quarto.yml` arabe**, une fois sa traduction livrée — sans quoi il ne sera servi dans
   aucune des deux langues. Un fichier malformé ou des chapitres qui dérivent sont attrapés par
-  `rendre-les-livres.yml`, qui rend les seize livres sur chaque PR.
+  `rendre-les-livres.yml`, qui rend les dix-huit livres sur chaque PR.
 - **Ne modifie pas les fichiers engendrés** : `_glossaire.qmd`, `translation_glossary.generated.md`,
   `precis/*/*/tables/*`.
 - **Aucune valeur isolée, aucune date, aucune URL sans source vérifiée.** Une case vide honnête vaut
@@ -221,7 +221,7 @@ scripts/verifier.sh [livre…]                                # glossaire, contr
 uv run python scripts/build_glossary.py                    # verrou de synchro du glossaire
 cd precis/fr/<livre> && uv run quarto render --to html     # zéro citation [?] non résolue
 uv run python scripts/check_pas_de_modele.py               # le précis ne parle pas du modèle
-./build.sh                                                  # les huit volumes, FR et AR
+./build.sh                                                  # les neuf volumes, FR et AR
 ```
 
 **Rends TOUS les livres que la PR touche, pas seulement celui qui l'occupe.** Aucun job de CI ne

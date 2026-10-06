@@ -1,0 +1,62 @@
+project:
+  type: book
+  output-dir: public
+
+lang: fr
+
+book:
+  title: "La compensation"
+  author: "Mahdi Ben Jelloul"
+  repo-url: https://github.com/benjello/precis-socio-fiscal-tunisie/
+  repo-subdir: precis/fr/compensation
+  repo-branch: master
+  repo-actions: [edit, issue]
+  downloads: [pdf]
+  page-footer:
+    center: "[Accueil](../index.html) · [À propos et contribuer](../a-propos.html) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)"
+  chapters:
+    - index.qmd
+    - _institution.qmd
+    - _reformes.qmd
+    - _depense.qmd
+    - _incidence.qmd
+
+  appendices:
+    - _glossaire.qmd
+
+bibliography:
+  - references.json
+  - ../references.json
+  - ../references.bib
+
+# Sans style déclaré, Pandoc applique Chicago author-date. Les entrées `legislation`
+# n'ayant pas d'`author`, citeproc met alors le TITRE INTÉGRAL en position d'auteur : un
+# simple [@loi60-30, art. 34] rend une parenthèse de plus de cent caractères. Ce style
+# emploie `title-short` — « loi n° 60-30 du 14 décembre 1960 » — et garde l'intitulé
+# complet dans la bibliographie.
+csl: ../precis.csl
+
+format:
+  html:
+    theme: [cosmo, ../../legendes.scss]
+    include-after-body: ../../legendes.html
+    fig-cap-location: top
+    tbl-cap-location: top
+    number-depth: 4
+    toc: true
+    toc-depth: 4
+  pdf:
+    documentclass: scrreprt
+    toc: true
+    toc-depth: 4
+    number-sections: true
+    number-depth: 4
+
+# Libellés des légendes et des renvois : Quarto écrivait « Table 2.3: » en anglais, y
+# compris dans les livres arabes. Mise en forme : ../../legendes.scss et legendes.html.
+crossref:
+  tbl-title: "Tableau"
+  fig-title: "Figure"
+  tbl-prefix: "tableau"
+  fig-prefix: "figure"
+  title-delim: "\u00a0—"

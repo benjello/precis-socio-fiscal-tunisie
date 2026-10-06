@@ -1236,7 +1236,7 @@
 
 - id: r-cgc-decret-application-1970
   objet: décret fixant les modalités d'application de l'article 3 de la loi n° 70-26 du 19 mai 1970 (organisation et interventions de la Caisse générale de compensation)
-  ou: [precis/fr/prestations_sociales/_compensation.qmd#sec-compensation-institution]
+  ou: [precis/fr/compensation/_institution.qmd#sec-compensation-institution]
   requetes:
     titres_fts: ['"caisse generale de compensation" OR "caisse de compensation"', compensation]
     titres_like: ['%caisse generale de compensation%']
@@ -1256,7 +1256,7 @@
 
 - id: r-cgc-budgetisation-1992-2003
   objet: texte transférant la dépense de la Caisse générale de compensation des fonds spéciaux du Trésor au budget général de l'État, ou réformant son financement, entre 1992 et 2003
-  ou: [precis/fr/prestations_sociales/_compensation.qmd#sec-compensation-financement]
+  ou: [precis/fr/compensation/_institution.qmd#sec-compensation-financement]
   requetes:
     titres_fts: ['"caisse generale de compensation" OR "caisse de compensation"']
     titres_like: ['%caisse generale de compensation%']
@@ -1278,7 +1278,7 @@
 
 - id: r-carburants-ajustement-apres-2021
   objet: texte modifiant, suspendant ou abrogeant le mécanisme d'ajustement automatique mensuel des prix des carburants après l'arrêté du 7 avril 2021
-  ou: [precis/fr/prestations_sociales/_compensation.qmd#sec-compensation-carburants]
+  ou: [precis/fr/compensation/_reformes.qmd#sec-compensation-carburants]
   requetes:
     titres_fts: ['"ajustement automatique" OR (prix AND carburants) OR ("produits petroliers" AND prix)']
     titres_like: ['%produits petroliers%', '%carburant%', '%ajustement%prix%']
