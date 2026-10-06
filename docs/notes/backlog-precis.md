@@ -323,8 +323,9 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
     8,9 % en 2013 et 7,5 % en 2014) sont citées sans page ; la base du PIB de la Banque
     mondiale est à relever dans sa revue des dépenses publiques de 2020 (le texte dit « n'est
     pas précisée ici »). Le 14,1 % de 2019 de la série (« Min Fin/presse ») n'est ni tracé ni
-    affiché, faute de source. La part de 1997 en base 1983 (10,97 %) vient de la fiche de
-    l'entrepôt, non d'une série : à porter dans une série si elle doit rester citée ;
+    affiché, faute de source. La part de 1997 en base 1983 citée au texte (10,97 %) n'est
+    dans aucune figure : elle se recalcule sur `pib-courant-recouvrements` (2 293,5 /
+    20 898,0) ;
   - **bibliographie** : la clé `imf-tunisia-art4-2020` désigne le rapport n° 21/44, dont le
     titre imprimé est « 2021 Article IV Consultation » (relevé sur la branche de l'annexe) ;
   - **catalogue de l'entrepôt** : `ins-pib-base-2015-2010-2020` manque aux `sources` de
