@@ -73,9 +73,12 @@ COLLOCATIONS = [
     r"(?:du|au)\s+modèle\s+(?:de\s+microsimulation|socio-fiscal)",
     r"modèle\s+de\s+microsimulation",
 ]
-# Deux emplois légitimes se glissent dans ces collocations — « dans le modèle français »,
-# « du modèle de score » — et sont écartés par ce garde.
-LEGITIME = r"(?!\s*(?:français|de\s+score|de\s+\*?scoring|de\s+la\s+déclaration))"
+# Des emplois légitimes se glissent dans ces collocations — « dans le modèle français »,
+# « du modèle de score » — et sont écartés par ce garde. De même les modèles des économistes :
+# « selon le modèle d'équilibre général » d'une étude est un terme d'économie, sans rapport
+# avec l'outil de calcul du précis.
+LEGITIME = (r"(?!\s*(?:français|de\s+score|de\s+\*?scoring|de\s+la\s+déclaration"
+            r"|d['’]équilibre\s+général|économétrique|macroéconomique))")
 MODELE = re.compile("|".join(f"(?:{c}){LEGITIME}" for c in COLLOCATIONS), re.I)
 
 
