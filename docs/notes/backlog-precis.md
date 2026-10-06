@@ -523,6 +523,38 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
   1999). Les deux échelles sont engendrées, avant et après transfert du point
   (`tables/atmp_1995.md`, `tables/atmp_1999.md`). Reste : le financement sous la loi
   n° 57-73 (texte à obtenir pour ce livre ; clé à verser au fonds commun).
+- **Accidents du travail : CNAM et CNSS, classement des employeurs, sinistres déclarés —
+  rédigé le 6 octobre 2026** (`#sec-cot-at-modulation-caisses`,
+  `#sec-cot-at-modulation-application`, `#sec-cot-at-classement`, `#sec-cot-at-declares`),
+  à la suite d'un retour de lecture. Lus : loi n° 2004-71, art. 5, 8 à 10, 16 et 29, à
+  l'image dans les deux éditions ; loi n° 2017-47 ; décret n° 2005-321 en entier (rien sur
+  la prévention ni la modulation) ; décrets n° 96-1050 et 2009-2344 (couche texte française,
+  non relus à l'image). Deux documents publiés, lus et rapportés comme tels : le Profil
+  national de la sécurité et de la santé au travail (ministère des affaires sociales, 2023)
+  et La Lettre du CRES n° 8 (janvier 2023). Ouvert :
+  - **non établi par un texte** : la caisse qui décide la majoration et la réduction depuis
+    2004 ; une commission pour ces décisions (`r-atmp-commission-modulation`) ; la convention
+    de recouvrement entre la CNSS et la CNAM (`r-cnam-cnss-convention-recouvrement`) ;
+    question posée à la relectrice ;
+  - **à lire** : la circulaire n° 20 du ministre des affaires sociales du 19 décembre 2001
+    (comité de veille), connue par le seul Profil, p. 32 ; les annexes des organigrammes de
+    la CNAM (décrets n° 2008-3707 et 2018-747) ; le décret n° 2002-583 ;
+  - **à ranger** : les PDF du Profil et de la Lettre du CRES n° 8 dans `tunisia-data`
+    (`data/raw/`, catalogue `sources/`) — URL et empreintes dans les notes des deux
+    références ; téléchargés le 6 octobre 2026 depuis social.gov.tn et cres.tn ;
+  - **deux tableaux faits main** (`tbl-atmp-declares`, `tbl-atmp-frequence`), à remplacer
+    par une figure quand les séries seront à l'entrepôt et raccordées aux statistiques de
+    la CNAM pour 2021-2023 ; les écarts entre les deux documents pour 2014, 2015 et 2020
+    sont dits dans le texte ;
+  - **non repris, faute de série** : 209 entreprises bénéficiaires d'une réduction jusqu'en
+    2020 et 7 prêts de 2014 à 2019 (Profil, pp. 48-49), cumuls sans source ;
+  - **pour le volume des caisses** : recettes, dépenses et résultats du régime de 2018 à 2022
+    (Profil, annexe 5, p. 92), avec une incohérence sur les dépenses de 2021 (159,755 MD à
+    l'annexe, 222,343 MD au texte p. 28) ; part du régime dans les dépenses de la CNAM de
+    2009 à 2019 (Lettre du CRES, figure 1) ; recettes et dépenses de 2007 à 2018 en
+    graphique sans valeurs (figure 2) ;
+  - **relecteur-ar** : pagination arabe des décrets n° 96-1050 et 2009-2344, et fin du décret
+    n° 2005-321, non relevées.
 - **Accidents du travail : assiette et modulation — rédigé le 5 octobre 2026**
   (`#sec-cot-at-assiette` : `#sec-cot-at-assiette-principe`, `#sec-cot-at-forfaits`,
   `#sec-cot-at-salaire-comparaison` ; `#sec-cot-at-modulation` : `#sec-cot-at-majoration`,
@@ -534,21 +566,15 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
   le décret n° 2000-1439) ; aucun montant en dinars n'est donné. Ouvert :
   - **à relire à l'image** (fascicules français présents au corpus, connus par cette seule édition) :
     loi n° 60-30, art. 42 et 46, rédaction de 1960 (JORT n° 57 de 1960, pp. 1605-1606,
-    impression pâle : paraphrasée, non citée) et son édition arabe ; loi n° 2004-71,
-    art. 8 à 10 et 29 ; décrets n° 96-341, 2003-1098 et 2008-173 (avantages exclus de
+    impression pâle : paraphrasée, non citée) et son édition arabe ; décrets n° 96-341, 2003-1098 et 2008-173 (avantages exclus de
     l'assiette), dont l'édition arabe reste à lire ; le n° 99-1011 est lu dans les deux ;
-  - **à lire** (fascicules présents au corpus le 5 octobre 2026 ; lisibilité de la couche
-    texte non vérifiée — le n° 15 de 2005 en porte une où « 2005-321 » ne se retrouve pas
-    tel quel, donc lecture à l'image ou décodage à prévoir) : décret n° 2005-321
-    (organisation de la CNAM, JORT n° 15 de 2005, `2005/fr/Jo0152005.pdf`, pp. 459-463) —
-    quelle caisse exerce les pouvoirs des art. 10 à 27 et recouvre la cotisation, depuis
-    quand ; loi n° 88-38 du 6 mai 1988, visée par le décret n° 95-538 (JORT n° 33 du
-    13 mai 1988, p. 735 d'après jort_cache, `1988/fr/Jo03388.pdf`) — l'art. 42 entre 1960
-    et 1995 n'est pas vérifié ;
+  - **à lire** (fascicule présent au corpus) : loi n° 88-38 du 6 mai 1988, visée par le
+    décret n° 95-538 (JORT n° 33 du 13 mai 1988, p. 735 d'après jort_cache,
+    `1988/fr/Jo03388.pdf`) — l'art. 42 entre 1960 et 1995 n'est pas vérifié ;
   - **à calculer** : date exécutoire de la loi n° 95-101 et des décrets n° 96-341,
     2003-1098 et 2008-173 (aucune clause d'effet) ;
-  - **à obtenir** : une source administrative (CNSS, CNAM) sur la pratique des forfaits et
-    de la modulation ; rien n'établit qu'ils sont appliqués aujourd'hui ;
+  - **à obtenir** : une source administrative (CNSS, CNAM) sur la pratique des forfaits ;
+    rien n'établit qu'ils sont appliqués aujourd'hui ;
   - **lectures, non textes** : portée du décret n° 2000-1439 sur l'art. 5 (abrogation
     implicite) ; application à l'AT/MP des décrets d'exclusion (par renvoi seulement) ;
     taux applicable aux forfaits des art. 5 (muet) et 7 (« selon les branches ») ;

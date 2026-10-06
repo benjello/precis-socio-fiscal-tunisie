@@ -31,21 +31,53 @@ cesser de fonctionner sans que rien le signale. Le rejouer avant de s'y fier.
 
 ## Les critiques
 
-### Celle d'une relectrice qui a travaillé à l'évaluation du régime (6 octobre 2026)
+### La classification des employeurs par activité (retour de lecture du 6 octobre 2026)
 
-Avis : ne pas retenir le graphique dans sa forme actuelle, et ne pas le présenter comme un moyen
-de comparer directement les taux et la sinistralité par activité.
+Avis d'une relectrice qui a travaillé à l'évaluation du régime : ne pas retenir le graphique dans
+sa forme actuelle, et ne pas le présenter comme un moyen de comparer directement les taux et la
+sinistralité par activité. L'argument a une **source publiée**, citable : La Lettre du CRES n° 8,
+janvier 2023, « Régime de réparation des accidents du travail et des maladies professionnelles :
+quel bilan et quelles perspectives ? » (clé `belloussaief2023-atmp`, p. 6).
 
-- **La classification des employeurs par activité n'est pas fiable.** La CNSS classe les
-  employeurs selon la nomenclature NAT61. Un employeur peut y être rattaché à une activité qui
-  n'est pas son activité réelle. Les statistiques de sinistralité par activité en sont affectées,
-  et le rapprochement risque de donner une image qui ne reflète pas le niveau réel de risque.
-- **Un chantier de fiabilisation est en cours** : rapprochement avec les données de l'INS, en
-  s'appuyant sur la NAT2009 et sur le tableau de correspondance NAT61–NAT2009.
-- **L'analyse gagnerait à être refaite après ce chantier**, sur une classification fiabilisée.
+- **Qui classe.** C'est la CNSS qui classe l'entreprise à son affiliation : elle lui attribue un
+  code d'activité économique, auquel correspond un « code ATMP » qui détermine son taux. La CNAM,
+  qui gère le régime et publie les statistiques d'accidents, ne fait pas ce classement.
+- **Selon quelle nomenclature.** Une nomenclature de 1961 (NAT 1961), qui « ne tient pas compte des
+  évolutions du tissu économique tunisien ». La Lettre recommande de réviser les codes pour
+  s'aligner sur la nomenclature de 2009 (NAT 2009).
+- **Des erreurs de classement dans les deux sens.** Des entreprises sont classées dans une activité
+  au taux inférieur à celui de leur activité réelle, d'autres dans une activité au taux supérieur.
+- **Aucun contrôle systématique.** Les systèmes de gestion des deux caisses ne communiquent pas : la
+  CNAM n'est pas informée des affiliations nouvelles ni des changements de taux. L'écart entre le
+  taux appliqué et l'activité réelle n'apparaît qu'à l'occasion d'une enquête après un sinistre ou
+  d'une visite. Un accord d'échange de données entre les deux caisses date de 2011 ; la Lettre
+  écrit que la CNAM n'a reçu aucune liste depuis sa signature.
 
-Ces constats viennent d'un échange privé. Ils ne sont appuyés ici sur aucun document publié :
-ils ne peuvent pas être cités dans le précis en l'état.
+Conséquence pour l'exercice : l'activité sous laquelle un accident est compté, et celle dont
+l'employeur paie le taux, peuvent ne correspondre ni l'une ni l'autre à l'activité réelle. Les deux
+axes du graphique sont donc affectés, et pas de la même façon : un nuage de points par activité ne
+mesure pas la cohérence du barème avec le risque.
+
+Ce que le retour de lecture ajoute à la publication, et qui n'a pas de source publiée ici : un
+chantier de fiabilisation est en cours, par rapprochement avec les données de l'INS et le tableau
+de correspondance NAT61–NAT2009. L'analyse gagnerait à être refaite après ce chantier.
+
+### Les limites des statistiques elles-mêmes
+
+La même Lettre (p. 5) relève que les statistiques d'accidents fournies par la CNAM « souffrent de
+beaucoup de limites telles que la sous déclaration, la sous reconnaissance des maladies
+professionnelles et la couverture limitée de certains secteurs excluant notamment la fonction
+publique et les indépendants ». La sous-déclaration n'a aucune raison d'être égale d'une activité à
+l'autre : elle biaise la comparaison entre activités, pas seulement les niveaux.
+
+### Ce que la Lettre publie par activité, sans le rapprocher du barème
+
+Elle donne l'indice de fréquence des accidents avec arrêt, de 2012 à 2020, pour les cinq secteurs
+les plus exposés (fonderie et sidérurgie, matériaux de construction, caoutchouc, construction et
+réparation navale, bois et liège ; tableau 2, p. 4), rapporté à la moyenne de tous les secteurs.
+Elle ne confronte pas ces fréquences aux taux de cotisation. C'est la forme la plus prudente de
+l'exercice, et le point de départ d'une reprise : une série de neuf ans, établie par l'institution
+qui a accès aux données.
 
 ### Celles que le texte retiré reconnaissait déjà
 
@@ -61,8 +93,8 @@ ils ne peuvent pas être cités dans le précis en l'état.
 
 ## Ce qu'il faudrait pour le republier
 
-1. Une source **publiée** sur la qualité de la classification des employeurs par activité, ou des
-   statistiques de sinistralité établies sur une classification fiabilisée (NAT2009).
+1. Des statistiques de sinistralité établies sur une classification **fiabilisée** des employeurs
+   (NAT 2009), ou à défaut une mesure publiée de l'ampleur des erreurs de classement.
 2. Un tableau de passage, officiel ou documenté, entre les rubriques de la CNAM et les points du
    barème — par les codes d'activité, non par les libellés.
 3. Si possible, les cotisations effectivement appelées par activité, plutôt que le taux légal.
