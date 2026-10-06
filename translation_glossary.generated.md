@@ -19,6 +19,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | AMEN social | برنامج الأمان الاجتماعي |  |
 | Annuité liquidable | السنة القابلة للتصفية |  |
 | Appui financier occasionnel | الدعم المادي الظرفي |  |
+| Assiette des cotisations | قاعدة الاشتراك |  |
 | Assiette du droit de consommation | قاعدة المعلوم على الاستهلاك |  |
 | Assiette fiscale | الوعاء الضريبي |  |
 | Assujetti | الخاضع للأداء |  |
@@ -85,6 +86,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Convention collective sectorielle des banques et établissements financiers | الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية |  |
 | Coordination des régimes | التنسيق بين أنظمة الضمان الاجتماعي |  |
 | Cotisation de l'assuré | اشتراك المضمون |  |
+| Cotisation supplémentaire | الاشتراك الإضافي |  |
 | Cotisations sociales | المساهمات الاجتماعية |  |
 | Coût du travail | كلفة العمل |  |
 | Crédit de taxe sur la valeur ajoutée | فائض الأداء على القيمة المضافة |  |
@@ -112,6 +114,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Emploi fonctionnel | الخطة الوظيفية |  |
 | Emploi informel | التشغيل غير المنظّم |  |
 | Emploi public | التشغيل العمومي |  |
+| Employés de maison | عمال المنازل |  |
 | Emprunt | الاقتراض |  |
 | Enfant à charge | الطفل المتكفَّل به |  |
 | Entrepositaire | أرباب المخازن |  |
@@ -163,8 +166,10 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Libre administration | التدبير الحر |  |
 | Limite de calcul des prestations | الحدّ الأقصى لاحتساب المنافع |  |
 | Livraison à soi-même | التسليم للنفس |  |
+| Louage | اللواج |  |
 | Magistrat | القاضي |  |
 | Majoration pour salaire unique | منحة الأجر الوحيد |  |
+| Maladie professionnelle | مرض مهني |  |
 | Masse salariale | كتلة الأجور |  |
 | Minimum d'impôt | الضريبة الدنيا |  |
 | Minimum d'impôt sur le chiffre d'affaires | الضريبة الدنيا |  |
@@ -223,6 +228,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Régime statutaire autonome | النظام الأساسي الخاص |  |
 | Régime suspensif de la taxe sur la valeur ajoutée | نظام توقيف العمل بالأداء على القيمة المضافة |  |
 | Règle d'or | القاعدة الذهبية |  |
+| Rémunération à la part | الخلاص بالحصة |  |
 | Rémunération des dirigeants d'entreprises publiques | تأجير رؤساء المؤسسات والمنشآت العمومية |  |
 | Rente compensatrice | الإيراد التعويضي |  |
 | Rente d'accident du travail | إيراد حادث الشغل |  |
@@ -240,6 +246,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Salaire brut | الأجر الخام |  |
 | Salaire conventionnel | الأجر التعاقدي |  |
 | Salaire différentiel | الأجر التفاضلي |  |
+| Salaire forfaitaire | الأجر التقديري |  |
 | Salaire journalier moyen | الأجر اليومي المتوسّط |  |
 | Salaire minimum agricole garanti | الأجر الأدنى الفلاحي المضمون | SMAG |
 | Salaire minimum garanti | الأجر الأدنى المضمون |  |
