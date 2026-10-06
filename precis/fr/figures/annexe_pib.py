@@ -33,8 +33,9 @@ RÈGLES.
     **`fig-pib-volume` est en volume** : un taux y dépend de la base ET de l'année de prix,
     qui ne sont pas la même chose ; chaque jonction dit laquelle des deux change.
   - **Deux familles de sources ne se confondent pas** : les comptes tunisiens (l'INS, et les
-    Nations unies qui publient ce que l'INS leur transmet), en ronds de la couleur de leur
-    base ; la Banque mondiale, source extérieure, en croix grises.
+    Nations unies qui publient ce que l'INS leur transmet), avec la couleur et la marque de
+    leur base (triangle renversé brun quand la base n'est pas dite) ; la Banque mondiale,
+    source extérieure, en croix grises.
   - **Aucun nombre n'est écrit dans ce module** : les écarts de niveau, les taux apparents et
     les taux à l'intérieur d'une base sont lus dans les séries.
   - **Une base garde, d'une vue à l'autre, sa couleur, sa marque et son trait** : base 1983 en
@@ -165,7 +166,6 @@ _L = {
                "ar": "البنك الدولي (مصدر خارجي)"},
     "vol_divergence": {"fr": "1962-1965 : les deux familles de sources divergent",
                        "ar": "1962-1965: تباين بين صنفي المصادر"},
-    "vol_divergence_court": {"fr": "1962-1965 :\ndivergence", "ar": "1962-1965:\nتباين"},
     "j_base": {"fr": "base", "ar": "الأساس"},
     "j_prix": {"fr": "année de prix", "ar": "سنة الأسعار"},
     "j_base_prix": {"fr": "base et année de prix", "ar": "الأساس وسنة الأسعار"},
@@ -607,6 +607,17 @@ def _jonctions_volume() -> list[dict]:
     return out
 
 
+def _style_volume(base) -> tuple[str, str]:
+    """(couleur, marque) d'un taux des comptes tunisiens : celles de sa base."""
+    if base in BASES:
+        return BASES[base]["couleur"], BASES[base]["marker"]
+    return BRUN, "v"
+
+
+def _texte_jonction_volume(j: dict) -> str:
+    return _lab("ib_jonction", a=j["annee"], t=_lab(j["type"]), j=j["texte"])
+
+
 def fig_volume():
     """Taux de croissance en volume : le taux retenu (trait) et tous les taux des sources."""
     figtools.apply_lang_font()
@@ -622,21 +633,29 @@ def fig_volume():
     # La Banque mondiale : source extérieure.
     bm = d[d["famille"] == EXTERIEUR]
     ax.plot(bm["annee"], bm["croissance_volume_pct"], ls="-", lw=0.7, color=GRIS, zorder=2)
+    retenu_bm = {j["annee"]: j for j in _jonctions_volume()
+                 if (ench["annee"] == j["annee"]).any()
+                 and ench.loc[ench["annee"] == j["annee"], "famille"].iloc[0] == EXTERIEUR}
     for r in bm.itertuples(index=False):
         p, = ax.plot([r.annee], [r.croissance_volume_pct], "x", ms=4.2, color=GRIS, zorder=3)
-        figtools.infobulle(p, _lab("ib_vol", a=int(r.annee), s=r.source, b=r.base,
-                                   p=r.annee_de_prix, v=_signe(r.croissance_volume_pct)))
+        texte = _lab("ib_vol", a=int(r.annee), s=r.source, b=r.base, p=r.annee_de_prix,
+                     v=_signe(r.croissance_volume_pct))
+        if int(r.annee) in retenu_bm:   # 1970 : le taux retenu est celui de la Banque mondiale
+            texte += " — " + _texte_jonction_volume(retenu_bm[int(r.annee)])
+        figtools.infobulle(p, texte)
     # Le taux retenu, année par année.
     ax.plot(ench["annee"], ench["croissance_volume_pct"], ls="-", lw=1.6, color=SARCELLE,
             zorder=3)
-    # Les comptes tunisiens : un rond par taux, de la couleur de sa base.
+    # Les comptes tunisiens : une marque par taux, couleur et forme de sa base ; creuse si
+    # la valeur est rétropolée par l'INS, comme dans `fig-pib-bases`.
     tn = d[d["famille"] != EXTERIEUR]
     retenus = {int(r.annee): r for r in ench.itertuples(index=False)}
+    jonctions = {j["annee"]: j for j in _jonctions_volume()}
     for r in tn.itertuples(index=False):
         a = int(r.annee)
-        coul = BASES[r.base]["couleur"] if r.base in BASES else BRUN
-        p, = ax.plot([a], [r.croissance_volume_pct], "o", ms=4.4, color=coul, mfc="white",
-                     mew=1.1, zorder=4)
+        coul, marque = _style_volume(r.base)
+        p, = ax.plot([a], [r.croissance_volume_pct], marque, ms=4.4, color=coul,
+                     mfc="white" if r.retropole == "oui" else coul, mew=1.0, zorder=4)
         texte = _lab("ib_vol", a=a, s=r.source, b=r.base, p=r.annee_de_prix,
                      v=_signe(r.croissance_volume_pct))
         e = retenus.get(a)
@@ -647,20 +666,17 @@ def fig_volume():
             if e.croissance_banque_mondiale_pct == e.croissance_banque_mondiale_pct:  # non NaN
                 texte += _lab("ib_vol_bm", v=_signe(e.croissance_banque_mondiale_pct),
                               e=_nombre(abs(e.ecart_banque_mondiale_points), 2))
+            if a in jonctions:
+                texte += " — " + _texte_jonction_volume(jonctions[a])
         figtools.infobulle(p, texte)
     _cadre(ax, _lab("y_vol"), int(ench["annee"].min()), int(ench["annee"].max()))
     ymin, ymax = ax.get_ylim()
     ax.set_ylim(ymin, ymax + 0.16 * (ymax - ymin))   # la place des étiquettes de jonction
-    if len(gros):
-        ax.annotate(_ft("vol_divergence_court"),
-                    xy=(gros.min() - 0.3, 0), xycoords=("data", "axes fraction"),
-                    xytext=(0, 5), textcoords="offset points", ha="left", va="bottom",
-                    fontsize=7, color=GRIS)
     # Les jonctions : trait vertical, étiquette qui dit ce qui change, infobulle.
     for i, j in enumerate(_jonctions_volume()):
         trait = figtools.marque_rupture(ax, j["annee"])
         quoi = _lab(j["type"])
-        figtools.infobulle(trait, _lab("ib_jonction", a=j["annee"], t=quoi, j=j["texte"]))
+        figtools.infobulle(trait, _texte_jonction_volume(j))
         gauche = j["type"] == "j_source" and i == 0   # 1970, serrée contre 1971
         ax.annotate(figtools.fig_text(_lab("j_etiquette", a=j["annee"], t=quoi)),
                     xy=(j["annee"] - 0.5, 1), xycoords=("data", "axes fraction"),
@@ -674,11 +690,13 @@ def fig_volume():
                label=figtools.fig_text(_lab("vol_bm"))),
         Patch(color="#eaeef2", label=figtools.fig_text(_lab("vol_divergence"))),
         Line2D([], [], color="none", label=figtools.fig_text(_lab("vol_tn"))),
-        Line2D([], [], color=BRUN, marker="o", mfc="white", mew=1.1, ls="", ms=4.4,
+        Line2D([], [], color=BRUN, marker="v", ls="", ms=4.4,
                label=figtools.fig_text(_lab("vol_non_dite"))),
     ]
-    poignees += [Line2D([], [], color=st["couleur"], marker="o", mfc="white", mew=1.1, ls="",
-                        ms=4.4, label=figtools.fig_text(_base(b))) for b, st in BASES.items()]
+    poignees += [Line2D([], [], color=st["couleur"], marker=st["marker"], ls="", ms=4.4,
+                        label=figtools.fig_text(_base(b))) for b, st in BASES.items()]
+    poignees.append(Line2D([], [], color=GRIS, marker="o", mfc="white", ls="", ms=4.4,
+                           label=figtools.fig_text(_lab("retropole_court"))))
     _legende(ax, poignees, ncol=3)
     fig.tight_layout()
     return fig

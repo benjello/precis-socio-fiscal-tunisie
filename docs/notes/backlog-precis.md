@@ -973,12 +973,14 @@ désormais que la série enchaînée n'est qu'une illustration.
   symbolique `precis/ar/figures`), les sorties à côté de la page (`precis/<langue>/_fig/`,
   ignoré, et `precis/<langue>/figdata/`, versionné) ; `build.sh` copie ces deux dossiers dans le
   site. `scripts/verifier.sh` ne rend aucune page de site et ne restaure pas
-  `precis/<langue>/figdata/` : la page se contrôle par `./build.sh --no-pdf`.
+  `precis/<langue>/figdata/` : la page se contrôle par `./build.sh --no-pdf`. Une modification
+  du seul module `precis/fr/figures/annexe_pib.py` ne fait rendre aucun livre
+  (`verifier_livres.livres_touches`), ce qui est exact — mais rien ne rend alors la page.
 - **Reste à faire, en amont.** Les entrées du catalogue portent des libellés `base_pib`
   différents (« 1983 / 1997 / 2015 (colonne base) »…), que la ligne « Source » de chaque figure
-  met bout à bout : à harmoniser dans `tunisia-data` avant la fusion. La colonne `jonction` de
-  `pib-volume-enchaine` n'existe qu'en français : les infobulles de la page arabe la
-  reprendront telle quelle. Divergence de 1962-1965 entre la Banque mondiale et la série des
+  met bout à bout : à harmoniser dans `tunisia-data` avant la fusion. Les colonnes `jonction`,
+  `source`, `base` et `annee_de_prix` des séries en volume n'existent qu'en français : les
+  infobulles de la page arabe les reprendront telles quelles. Divergence de 1962-1965 entre la Banque mondiale et la série des
   Nations unies, et taux de 1970 : à départager sur pièces (rapports annuels de la BCT,
   mémorandums de la Banque mondiale de 1978 et 1985 — `docs/pib-croissance-volume.md` de
   l'entrepôt). Étiquettes à corriger :
