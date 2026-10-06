@@ -6,6 +6,55 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Ajouts à la main du 06/10/2026 (prestations sociales, chapitre « Compensation »)
+
+**Dix-neuf clés neuves** versées dans `precis/fr/prestations_sociales/references.json` et
+`precis/ar/prestations_sociales/references.json`, absentes de Zotero.
+
+- Textes (10) : `loi70-26`, `lf-1971`, `decret70-622`, `lf-1984` (loi n° 83-113, distincte de `lf-1983`),
+  `lfc-1984`, `decret84-259` (porte la subvention de 98 MD de 1984), `lfc-1989`,
+  `arrete-2016-07-15-prix-petroliers`, `arrete-2020-03-31-prix-petroliers`,
+  `arrete-2021-04-07-prix-petroliers`.
+- Sources secondaires (9) : `bm-1985-cem-5328-vol1`, `bm-1985-cem-5328-vol2`, `fmi-2000-red`,
+  `bct-ra-1984`, `ins-cres-bad-2013-subventions`, `minfin-finances-publiques-2005`,
+  `minfin-finances-publiques-2008`, `minfin-finances-publiques-2011`,
+  `minfin-compensation-carburants-2014`.
+
+**Réutilisées** : `lf-2013` (art. 63), `lf-2014` (art. 76) et `loi75-83` (art. 67-68), au fonds commun, dont
+la `note` est complétée ; `loi75-83` : champ `page` FR porté de 2852-2854 à 2852-2857 (signature lue p. 2857),
+à répercuter dans Zotero. **Promue au fonds commun** : `fmi-1996-red` (venue de `retraites`, citée aussi par
+« Compensation ») — dans Zotero, à **déclasser** de la collection « Retraites » (le `controle-rangement` le
+signalera). Non touchées : `bm-1993-social-protection`, `bm-1995-pauvrete-annexes`, `fmi-1997-selected-issues`,
+`bm-1990-cem-8044-vol1` (non citées par le plan).
+
+**Relectures à l'image** (loi n° 70-26 art. 3 ; LF 1976 art. 67-68 et non 67-69 ; subvention de 98 MD, qui est dans le décret n° 84-259
+et non dans la loi n° 84-2) : voir `docs/notes/compensation.md`, § 9.
+
+**Restent à relever / vérifier**
+
+- Entrées arabes : intitulés arabes des dix textes **non lus** (titre français conservé, selon l'usage) ;
+  **champ `page` laissé vide** (pagination arabe non mesurée) ; contenu des fichiers arabes non ouvert.
+- `lf-2013`, `lf-2014`, `loi75-83` (fonds commun, entrées arabes) : leur champ `page` reprend la pagination
+  française (3-135, 3666-3832, 2852-2854) — à mesurer ; idem `loi75-82` (prestations sociales, AR, 2852).
+- `lf-2013` existe aussi dans `cotisations_sociales` (FR et AR), en doublon du fonds commun : préexistant, non touché.
+- `bct-ra` figure dans trois fichiers de livre (`marche_travail`, `remunerations_publiques`, `retraites`) : préexistant, non touché.
+- Pages et articles lus par le documentaliste mais non relus à l'image : `lf-1971` (art. 48, tableau F), `decret70-622`,
+  `lf-1984` (art. 87, tableau F), `lfc-1989` (art. 3-8) ; fin de page des lois de 1970, 1971, 1984, 1989 d'après `jort_cache.db`.
+- `arrete-2016-07-15-prix-petroliers` : aucune notice dans `jort_cache.db` ; URL du fascicule n° 61 tirée des autres
+  enregistrements du même fascicule. `arrete-2020-03-31-prix-petroliers` : URL de notice `/record/143965/…` (l'adresse conventionnelle répond 404),
+  AR non contrôlée.
+- `minfin-compensation-carburants-2014` : pas de couverture (page 1 = préface), titre arabe non lu, titre français du catalogue,
+  éditeur non établi. `minfin-finances-publiques-2011` : capture Wayback tronquée, URL = miroir `dev.finances.gov.tn`
+  (pérennité à surveiller).
+- `fmi-2000-red` : numéro « 00/37 » déduit des métadonnées, page de titre non lue ; aucune capture contrôlée.
+- `bm-1985-cem-5328-vol1`/`-vol2` : tableaux cités (III-1, tableau 11) non relus à l'image ici.
+- `bct-ra-1984` : pas de date de parution imprimée (champ `issued` absent). Autres rapports BCT cités par la note (1980-1988, 2015, 2017, 2019, 2022-2024) :
+  non lus, non versés.
+- **Non versés, non lus** : Banque mondiale 2013 (n° 82712-TN), Cuesta et al. 2015, Jouini et al. 2018, `minfin-execution-budget`.
+  La simulation du dépôt `ceq-tunisie` n'est pas citable.
+- `push_biblio.py --verifier` : voir le résultat dans le rapport de la passe. Le `dry-run` et le `controle-rangement`
+  du workflow `biblio-zotero` restent à lancer après poussée de la branche.
+
 ## Ajouts à la main du 04/10/2026 (finances locales, chapitres des impôts, taxes et redevances)
 
 **Vingt-deux clés neuves** versées dans `precis/fr/finances_locales/references.json` et

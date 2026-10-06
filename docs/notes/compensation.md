@@ -20,14 +20,14 @@
 
 | Date d'effet | Texte | JORT | Contenu (date, valeur) | Niv. |
 |---|---|---|---|---|
-| 1970-05-19 (signature) | loi n° 70-26 du 19 mai 1970, modalités de fixation des prix, art. 3 | n° 27 de 1970, pp. 617-621 | « Il est institué une Caisse Générale de Compensation destinée à agir sur les prix des marchandises, produits et services de première nécessité notamment au moyen de subvention et de péréquation » ; modalités renvoyées à un décret | [T°] |
+| 1970-05-19 (signature) | loi n° 70-26 du 19 mai 1970, modalités de fixation des prix, art. 3 | n° 27 de 1970, pp. 617-621 | « Il est institué une Caisse Générale de Compensation destinée à agir sur les prix des marchandises, produits et services de première nécessité notamment au moyen de subvention et de péréquation » ; modalités renvoyées à un décret | [T] (relu à l'image le 6 oct. 2026) |
 | 1971-01-01 | loi n° 70-66 du 31 décembre 1970 (LF 1971), art. 48 | n° 58, 29-31 déc. 1970, p. 1459 | la CGC « constitue un Fonds Spécial du Trésor » ; ordonnateur : ministre de l'économie nationale ; le fonds « Opérations de compensation » est supprimé, son solde affecté à la CGC ; les taxes et redevances de compensation lui reviennent et « sont instituées et modifiées par décret » | [T] |
 | 1971-01-01 | même loi, tableau F | même n°, p. 1470 | prévision 1971 du fonds CGC : **7 000 000 D** en recettes et en dépenses, sur 20 290 000 D de fonds spéciaux | [T] |
 | 1971-01-01 | décret n° 70-622 du 31 décembre 1970, art. 5 | même n°, pp. 1476-1477 | la taxe de péréquation (arrêté du 5 févr. 1957), la taxe de compensation (arrêté du 28 sept. 1964) et quatre centimes additionnels au droit de consommation sont consolidés en une **taxe unique de compensation** sur les produits pétroliers « perçue au profit de la CGC » : essence 1,378 D/hl, pétrole 0,036 D/hl, gas-oil 0,235 D/hl | [T] |
-| 1976-01-01 | loi n° 75-83 du 30 décembre 1975 (LF 1976), art. 67-69 | n° 87, 30-31 déc. 1975, pp. 2856-2857 | la caisse spéciale de compensation des ciments est supprimée ; les opérations du compte de stabilisation des produits pétroliers finis sont prises en charge par la CGC, solde versé | [T°] |
+| 1976-01-01 | loi n° 75-83 du 30 décembre 1975 (LF 1976), art. 67-68 (et non 67-69 : l'art. 69 crée le fonds de reconversion du vignoble) | n° 87, 30-31 déc. 1975, pp. 2856-2857 | la caisse spéciale de compensation des ciments est supprimée ; les opérations du compte de stabilisation des produits pétroliers finis sont prises en charge par la CGC, solde versé | [T] (relu à l'image le 6 oct. 2026) |
 | 1984-01-01 | loi n° 83-113 du 30 décembre 1983 (LF 1984), art. 87 ; tableau F | n° 86 du 30 déc. 1983, p. 3384 ; p. 3422 | « Le financement des mesures d'accompagnement qui seront prises à la suite de la **suppression de la compensation des céréales et dérivés** sera effectué pour 1984 sur les disponibilités de la CGC » ; prévision 1984 du fonds CGC : **145 000 000 D** (total des fonds spéciaux : 420 577 000 D) | [T] |
 | 1984-03-21 (signature) | loi n° 84-2 du 21 mars 1984 (LFC 1984), art. 27-29 et art. 6 | n° 19, 20-23 mars 1984, pp. 667, 669 | art. 27 : **l'art. 87 de la LF 1984 est abrogé** ; art. 28 : 8 000 000 D prélevés sur le fonds « contribution exceptionnelle de solidarité » au profit de la CGC ; art. 29 : fonds spéciaux portés de 420 577 000 à 534 577 000 D ; art. 6 : 28 % du produit de la taxe sur les bières, vins et alcools affectés à la CGC | [T] |
-| 1984 | même loi, tableau annexé | même n° | « Subvention à la Caisse Générale de Compensation : 98 000 000 » au budget (chapitre IX) — recoupé par le rapport annuel 1984 de la BCT (« subvention de 98 millions de dinars à la CGC ») | [T°] + [S] |
+| 1984-03-21 | **décret n° 84-259 du 21 mars 1984** (répartition des crédits, tableau A modifié), chap. IX, section II, art. 64 — et non la loi n° 84-2 | même n°, pp. 699 et 702 | « Subvention à la Caisse Générale de Compensation : 98 000 000 » D — recoupé par le rapport d'activité 1984 de la BCT (p. 153 imprimée : 106 MD de subventions dont 98 MD à la charge du budget ordinaire et 8 MD de la contribution exceptionnelle de solidarité) | [T] (relu à l'image le 6 oct. 2026) |
 | 1989 | loi n° 89-88 du 3 novembre 1989 (LFC 1989), art. 3-8 | n° 73 du 3 nov. 1989, p. 1718 | **contribution au profit de la CGC** « au titre de l'année 1989 » : 2,2 % du chiffre d'affaires 1988 des hôtels, 0,5 % de celui des autres entreprises, 0,5 % des recettes des professions non commerciales (min. 100 D), 1/30 du revenu de novembre 1989 des salariés à 350 D et plus ; non déductible. Art. 8 : prêt du Trésor de **20 millions de dinars** sans intérêts, dix ans | [T] |
 | 1991, 1992 | loi n° 91-98 (LF 1992), art. 77 ; arrêtés des 11 oct. 1990 et 7 juill. 1992 | n° 90 de 1991, p. 2090 ; n° 68 de 1990 ; n° 47 de 1992 | nouveau prêt du Trésor à la CGC ; relèvements des prévisions du fonds spécial CGC (derniers intitulés qui nomment la CGC avant 2012) | [M] |
 | 2013-01-01 | loi n° 2012-27 du 29 décembre 2012 (LF 2013), art. 63 | n° 1 du 1er janv. 2013, pp. 17-18 | **redevance de compensation** au profit de la CGC : 1 % du chiffre d'affaires des casinos, boîtes de nuit, restaurants classés, cafés de 2e et 3e catégorie, salons de thé et pâtissiers ; 5 000 D à la première immatriculation des voitures de plus de 2 000 cm³ (essence) ou 2 500 cm³ (diesel) ; 2 D par nuitée d'hôtel (à compter du 1er oct. 2013) ; **1 % du revenu annuel des personnes physiques au-delà de 20 000 D de revenu net, plafonné à 2 000 D** | [T] |
@@ -487,3 +487,31 @@ Plan du chapitre (plan type du dépôt) :
 
 Préalables : construire la série dans l'entrepôt avec sa fiche de provenance (§ 2.1, § 2.3) ;
 lire une étude d'incidence sur l'énergie (§ 3) ; verser les trois fiches RECHERCHE (§ 7).
+
+## 9. Relectures à l'image du 6 octobre 2026
+
+Faites par le bibliographe, sur les fascicules français du corpus local, rendus en image (pas d'OCR
+seul). Le détail est porté par la `note` de chaque entrée de `references.json`.
+
+| Point relu | Résultat |
+|---|---|
+| Loi n° 70-26, art. 3 (création de la CGC) | **Confirmé.** JORT n° 27 des 19-22 mai 1970, p. 617 ; le texte cité au § 1.1 est exact, et l'art. 3 renvoie les modalités de fonctionnement à un décret. Fin de la loi à la p. 621 : page de la notice, vue par OCR seulement. |
+| LF 1976 (loi n° 75-83), art. 67-69 | **Corrigé : art. 67 et 68, pas 69.** Art. 67 (p. 2856, suite p. 2857) : suppression de la caisse spéciale de compensation des ciments, solde versé à la CGC qui reprend dépenses et recettes à compter du 1er janvier 1976 ; art. 68 (p. 2857) : compte de stabilisation des produits pétroliers finis pris en charge par la CGC à compter du 1er janvier 1976. L'art. 69 crée le fonds de reconversion du vignoble. La loi se signe p. 2857. |
+| « Subvention de 98 MD » de 1984 | **Confirmé en valeur, corrigé en source.** Le montant n'est pas dans la loi n° 84-2 : c'est le tableau A (budget des dépenses 1984, modifié) du **décret n° 84-259 du 21 mars 1984**, chap. IX, section II, art. 64, p. 702 du JORT n° 19. Le tableau donne le montant inscrit, pas un accroissement. Rapport d'activité 1984 de la BCT, p. 153 imprimée (151e page du PDF, et non la 152e) : 106 MD, dont 98 MD du budget ordinaire et 8 MD de la contribution exceptionnelle de solidarité. |
+| Loi n° 84-2 (LFC 1984), art. 6, 27, 28, 29 | **Confirmé à l'image en passant** : art. 6 p. 667 (28 % de la taxe sur les alcools à la CGC) ; art. 27 à 29 p. 669. |
+
+Autres corrections relevées en versant :
+
+- Arrêté du 15 juillet 2016 : il commence p. 2333 (intitulé), l'art. 5 sur l'ajustement automatique
+  est p. 2334 ; l'intitulé de l'ébauche (« relatif à… ») était inexact et a été remplacé par celui du fascicule.
+- Arrêté du 31 mars 2020 : pages 731-732 confirmées sur le fascicule (la notice `jort_cache.db` donne
+  0831-0832) ; intitulé du sommaire : « ministre de l'énergie et des mines et de la transition énergétique ».
+- Arrêté du 7 avril 2021 : date de signature 7 avril 2021 confirmée sur le texte (la notice donne le
+  31 mars).
+- Rapport de 2014 : la première page du PDF est une préface ; il n'a pas de couverture, donc pas de
+  titre arabe lu.
+- Rapport « Finances publiques » 2011 : la seule capture du Wayback Machine est tronquée ; le fichier
+  est lu sur le miroir `dev.finances.gov.tn`.
+- Sources lues par métadonnées seulement, non versées : Banque mondiale 2013 (n° 82712-TN), Cuesta, El-Lahga et Lara Ibarra
+  2015, Jouini, Lustig, Moummi et Shimeles 2018 ; l'ébauche générique `minfin-execution-budget` et
+  les rapports BCT autres que celui de 1984.
