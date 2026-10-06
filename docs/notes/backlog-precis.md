@@ -135,8 +135,27 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
     (fonds spéciaux du Trésor, budgets par mission, lois de règlement, comptes du Fonds
     tunisien de l'investissement — à obtenir) ; le chapitre ne publie que les paiements
     déclarés du rapport PLF 2021 ;
-  - **études extérieures** : étude IFC-ECOPA de 2012 et annexes 4.2 à 4.6 du rapport de la
-    Banque mondiale (échantillon de l'enquête, sources fiscales) à obtenir ;
+  - **mentions dans les chapitres d'impôt (6 octobre 2026)** : chaque avantage établi par un
+    texte est signalé, avec renvoi à `@sec-depenses-fiscales`, dans `_impot_societes.qmd`
+    (paramètres d'origine, « 2017 », « 2019 », rendement), `_impot_revenu.qmd` (BIC,
+    catégorie III, déductions, rendement), `_tva.qmd` (régime suspensif, rendement) et
+    `_droits_consommation.qmd` (renvoi à l'art. 13 *ter*, rendement). **Non mentionnés,
+    faute de texte établi** — à lire avant d'écrire quoi que ce soit dans ces chapitres :
+    régime des Tunisiens résidents à l'étranger (premier poste du recensement ; le rapport
+    cite la LF 1975, art. 33) ; concessionnaires automobiles (droit de consommation,
+    position 87-03) ; exonérations de TVA et de douane des médicaments, engrais et produits
+    alimentaires ; avantages au titre du réinvestissement après 2017 (art. 72 à 77 du code
+    de l'IRPP et de l'IS) ; sociétés d'investissement à capital risque. Les droits de douane
+    n'ont pas de chapitre : leurs exonérations (loi n° 2017-8, art. 4) restent dans
+    `_depenses_fiscales.qmd`. Dans `_impot_revenu.qmd`, la série du § V de l'art. 39 reste
+    non établie pour les activités qu'il vise depuis 2017 ; l'état de la LF 2019, art. 15
+    (« moitié des revenus » des activités à 13,5 %) n'est pas repris ;
+  - **études extérieures** (PDF collectés le 6 octobre 2026 dans `tunisia-data`, lisibles,
+    contenu non relevé) : annexe 4.2 du volume d'annexes de la Banque mondiale (p. 35) —
+    taille de l'échantillon et libellé des questions de l'enquête ; étude de Ghazouani
+    (2011), tableau 1, p. 7 — méthode et série annuelle 1994-2007, à citer de première main
+    (clé à verser). L'étude IFC-ECOPA de novembre 2012 est un rapport préliminaire non
+    publié : à obtenir ;
   - **calendrier de 2014 — lisible** : LF 2015 (loi n° 2014-59), art. 18, « mesures de
     soutien des entreprises totalement exportatrices », `2014/fr/Jo1052014.pdf` ; à ouvrir
     pour confirmer qu'aucun texte n'a touché à l'échéance du 1er janvier 2014. LF 2014,
@@ -166,9 +185,12 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
     impôt 2020-2023 et par secteur 2017-2019 (tableau n° 6 du rapport 2021, relevé pour 2019
     seulement) non publiées ; ventilation par gouvernorat et délégation (loi n° 2017-8,
     art. 18) : présence dans les rapports non vérifiée ;
-  - **avant 2017** : aucune série homogène ; sources premières des estimations (OMC 2001,
-    FMI 2005 et 2012, Ghazouani 2011) à obtenir ; figures 4.1 et 4.4 du rapport de la Banque
-    mondiale à relever sur l'image ;
+  - **avant 2017** : aucune série homogène. Retirés du chapitre : l'estimation OMC 2000
+    rapportée par la Banque mondiale (note 10 du ch. 4), non retrouvée dans la notification
+    G/SCM/N/71/TUN : à rapprocher de sa section IX (pp. 14-15) ; l'estimation du FMI pour
+    2005 (deux rapports d'assistance technique non publiés) ; une seconde estimation attribuée à
+    Ghazouani par la même note, absente de son étude. Figures 4.1 et 4.4 du rapport de la Banque mondiale à
+    relever sur l'image ;
   - **à croiser avec « Cotisations sociales »** : coût des prises en charge de cotisations
     patronales (code de 1993, art. 25 ; loi n° 99-59, connue par son intitulé).
 - **Forme de `_impot_revenu.qmd` : rien à reprendre.** Ses titres ont été remontés d'un cran
