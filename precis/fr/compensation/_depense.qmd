@@ -10,7 +10,7 @@ Deux réserves valent pour toute la série budgétaire. Elle est tenue en base c
 Les parts données dans ce volume sont calculées ici, sur des dénominateurs sourcés, et non reprises des rapports qui en publient.
 
 - **La part des dépenses de l'État** rapporte la compensation aux dépenses de l'État hors service de la dette, connues depuis 1986. Elle ne dépend d'aucune base des comptes nationaux : c'est la mesure homogène sur toute la période. Elle est donnée chaque fois à côté de la part du [PIB](#g-pib).
-- **La part du PIB** dépend de la base des comptes nationaux, qui a changé en 1983, 1997 et 2015 ; le niveau du PIB n'est pas comparable d'une base à l'autre, et rien n'est chaîné ici. Chaque figure trace cette part par segments et dit, segment par segment, la base employée et si elle est rétropolée ; quand la source du PIB ne le précise pas, la note de la figure le dit. Dans le texte, toute part du PIB est suivie de sa base. Voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures), notamment sur [la rétropolation](../annexe-pib.html#sec-pib-retropolation).
+- **La part du PIB** dépend de la base des comptes nationaux, qui a changé en 1983, 1997 et 2015 ; le niveau du PIB n'est pas comparable d'une base à l'autre, et rien n'est chaîné ici. Chaque figure trace cette part par segments et dit, segment par segment, la base employée et si elle est rétropolée ; quand la source du PIB ne le précise pas, la note de la figure le dit. Dans le texte, toute part du PIB est suivie de sa base. Voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures), notamment sur [la rétropolation](../annexe-pib.html#sec-pib-retropolation). Les parts du PIB citées dans le texte emploient le PIB du ministère des Finances : en base 1983 pour 1992-1996, en base 1997 pour 1997-2001 et 2005-2009, en base 2015 pour 2015-2024. Pour aucun de ces segments la série ne dit si la valeur est celle de la publication d'origine ou une valeur rétropolée.
 
 Les parts que publient les rapports se retrouvent, pour la plupart, à quelques centièmes de point près une fois la dépense rapportée au PIB de la base en vigueur à la date du rapport.
 :::
@@ -100,7 +100,7 @@ Le quart des dépenses de l'État est donc atteint deux fois, en 2013 et en 2022
 Depuis 2003, les documents budgétaires du ministère des Finances répartissent la compensation en trois postes [@minfin-finances-publiques-2008 ; @minfin-finances-publiques-2011].
 
 - Les **produits de base** : c'est la dotation à la Caisse générale de compensation — céréales et huile pour l'essentiel, avec le lait, le sucre et le papier scolaire (@tbl-compensation-charges-produits).
-- Les **carburants** : sous ce nom, la [compensation des carburants](#g-compensation-carburants) réunit les transferts à trois entreprises publiques de l'énergie — l'Entreprise tunisienne d'activités pétrolières (ETAP), la Société tunisienne de l'électricité et du gaz (STEG) et la Société tunisienne des industries de raffinage (STIR). Le poste couvre donc aussi l'électricité et le gaz (@sec-compensation-circuit).
+- Les **carburants** : sous ce nom, la [compensation des carburants](#g-compensation-carburants) réunit les transferts à trois entreprises publiques de l'énergie — l'Entreprise tunisienne d'activités pétrolières (ETAP), la Société tunisienne de l'électricité et du gaz (STEG) et la Société tunisienne des industries de raffinage (STIR) —, dont la liste varie selon les années (@tbl-compensation-carburants-beneficiaires). Le poste couvre donc aussi l'électricité et le gaz (@sec-compensation-circuit).
 - Le **transport** : la [compensation du transport](#g-compensation-transport) est le plus petit des trois postes et le plus régulier.
 
 Le @fig-compensation-par-poste donne les trois postes de 2003 à 2026 et rapporte chacun aux dépenses de l'État, au PIB et au total de la dépense de compensation.
@@ -127,7 +127,8 @@ cm.figure(
         "carburants — en 2003 la série ne compte que les produits de base et le transport ; "
         "2015, où le périmètre du poste des carburants s'élargit : la fin des prix de cession "
         "préférentiels du pétrole brut et du gaz y fait entrer une subvention jusque-là hors budget, "
-        "avec une recette non fiscale en regard ; la baisse de 2015 tient au prix du baril. "
+        "avec une recette non fiscale en regard ; le ministère des Finances attribue la baisse de 2015 "
+        "au prix du baril. "
         "La part des dépenses de l'État ne dépend d'aucune base des comptes nationaux : c'est la "
         "mesure homogène sur la période ; son dénominateur exclut le service de la dette. "
         "La part du PIB change de dénominateur d'un segment à l'autre, et chacun de ces "
@@ -147,7 +148,7 @@ Cinq constats.
 - **2004 : la première ligne de carburants.** Elle apparaît à 203,0 MD. C'est la première inscription budgétaire de ce poste, non l'entrée des produits pétroliers dans la compensation : jusqu'en 1986, la taxe unique sur les carburants finançait la Caisse (@sec-compensation-carburants-recettes).
 - **2007-2008 : les produits de base.** Le poste passe de 287 MD en 2006 à 1 048 MD en 2008.
 - **2011-2013 : les carburants.** La dépense totale passe de 1 500,0 MD en 2010 à 2 869,2 MD en 2011, puis 5 514,0 MD en 2013, dont 3 734,0 MD de carburants.
-- **2014-2016 : le creux.** Le poste des carburants passe de 2 353,0 MD en 2014 à 918,0 MD en 2015 et 197,0 MD en 2016, alors que les produits de base et le transport continuent de croître. La baisse de 2015 tient au prix du baril, et s'obtient malgré un élargissement du périmètre du poste ; les 197,0 MD de 2016 vont à la seule STIR, sans aucun versement à la STEG (@sec-compensation-rupture-2015).
+- **2014-2016 : le creux.** Le poste des carburants passe de 2 353,0 MD en 2014 à 918,0 MD en 2015 et 197,0 MD en 2016, alors que les produits de base et le transport continuent de croître. Le ministère des Finances attribue la baisse de 2015 au prix du baril, obtenue malgré un élargissement du périmètre du poste ; les 197,0 MD de 2016 vont à la seule STIR, sans aucun versement à la STEG (@sec-compensation-rupture-2015).
 - **2022 : le changement d'échelle.** La dépense passe de 6 031,0 MD en 2021 à 11 999,0 MD en 2022 et se maintient au-dessus de 11 000 MD en 2023 et 2024. Les carburants en sont le premier poste — 7 628,0 MD en 2022, plus de 7 000 MD les deux années suivantes —, et les produits de base passent de 2 200,0 MD à 3 771,0 MD.
 
 Le transport, lui, croît sans à-coup, de 111,0 MD en 2003 à 660,0 MD en 2024.
@@ -167,7 +168,7 @@ Les valeurs de la figure, année par année, avec la source et l'état de chacun
 | 2010 | 730,0 | 550,0 | 220,0 | 1 500,0 | 2011 |
 | 2011 | 1 100,0 | 1 536,0 | 233,2 | 2 869,2 | 2011 |
 
-: La dépense budgétaire de compensation par poste, 2003-2011 (millions de dinars courants). Sources : ministère des Finances, rapports sur les finances publiques de 2005, 2008 et 2011 [@minfin-finances-publiques-2005 ; @minfin-finances-publiques-2008 ; @minfin-finances-publiques-2011]. Le poste « carburants » réunit les transferts à l'ETAP, à la STEG et à la STIR. Les totaux de 2003 et 2004 sont la somme des trois postes. Chaque année est donnée dans sa publication la plus récente : le rapport de 2005 donnait pour 2005 des postes de 240,9, 414,0 et 134,0 MD, et l'annexe 23 du rapport de 2008 donne pour 2007 un total de 1 282,4 MD. {#tbl-compensation-2003-2011}
+: La dépense budgétaire de compensation par poste, 2003-2011 (millions de dinars courants). Sources : ministère des Finances, rapports sur les finances publiques de 2005, 2008 et 2011 [@minfin-finances-publiques-2005 ; @minfin-finances-publiques-2008 ; @minfin-finances-publiques-2011]. Le poste « carburants » réunit, selon les années, des transferts à l'ETAP, à la STEG et à la STIR (@tbl-compensation-carburants-beneficiaires). Les totaux de 2003 et 2004 sont la somme des trois postes. Chaque année est donnée dans sa publication la plus récente : le rapport de 2005 donnait pour 2005 des postes de 240,9, 414,0 et 134,0 MD, et l'annexe 23 du rapport de 2008 donne pour 2007 un total de 1 282,4 MD. {#tbl-compensation-2003-2011}
 
 :::
 
@@ -246,6 +247,9 @@ cm.figure(
         "dotation du budget à la Caisse, pour 1989 et 2007, ne sont que dans les données."))
 ```
 
+Sept années en donnent la mesure ; la figure porte toutes les autres.
+
+::: {.callout-note collapse="true" title="La compensation prévue et réalisée, sept années : le tableau"}
 | Année | Prévision | Prévu (MD) | Réalisé (MD) | Écart |
 |---|---|---:|---:|---:|
 | 2013 | loi de finances | 4 200,0 | 5 514,0 | +31 % |
@@ -258,7 +262,9 @@ cm.figure(
 
 : La compensation prévue et réalisée, sept années (millions de dinars courants ; écart en % du prévu). Sources : pour le prévu, bulletins d'exécution du ministère des Finances [@minfin-resultats-provisoires-2013-03 ; @minfin-resultats-provisoires-2015-12 ; @minfin-resultats-provisoires-2017-01 ; @minfin-resultats-provisoires-2018-07], rapport du projet de loi de finances complémentaire pour 2015 [@minfin-projet-lfc-2015] et BCT [@bct-ra-2021, p. 57 ; @bct-ra-2023, p. 64] ; pour le réalisé, @tbl-compensation-2012-2025. La colonne de 2022 n'est pas étiquetée « loi de finances » par la source ; le réalisé de 2013, 2022 et 2024 est une colonne dont la source ne précise pas l'état. Les lois de finances initiales de 2012 et de 2014 ne sont pas dans la série. {#tbl-compensation-prevu-realise}
 
-L'écart vient du poste des carburants. Les dépassements de 2013, 2017, 2018 et 2022 sont les siens : 3 734,0 MD pour 2 520,0 MD prévus en 2013, 1 550,0 MD pour 650,0 MD en 2017, 2 700,0 MD pour 1 500,0 MD en 2018, 7 628,0 MD pour 2 891 MD en 2022. Les sous-exécutions de 2015 et 2016 aussi : 918,0 MD pour 1 826 MD prévus, puis 197,0 MD pour 579,0 MD, deux années de baisse du baril (@sec-compensation-rupture-2015).
+:::
+
+L'écart vient du poste des carburants. Les dépassements de 2013, 2017, 2018 et 2022 sont les siens : 3 734,0 MD pour 2 520,0 MD prévus en 2013, 1 550,0 MD pour 650,0 MD en 2017, 2 700,0 MD pour 1 500,0 MD en 2018, 7 628,0 MD pour 2 891 MD en 2022. Les sous-exécutions de 2015 et 2016 aussi : 918,0 MD pour 1 826 MD prévus, puis 197,0 MD pour 579,0 MD (@sec-compensation-rupture-2015).
 
 Pour la Caisse seule, les rapports de la Banque centrale donnent, de 1986 à 2003, la prévision initiale des charges et leur réalisation : le réalisé y est le plus souvent inférieur au prévu — 218 MD pour 272 MD prévus en 1986, 270 MD pour 292 MD en 1991, 204,5 MD pour 310 MD en 1999, 247,9 MD pour 281 MD en 2001 [@bct-ra-1986 ; @bct-ra-1991 ; @bct-ra-1999 ; @bct-ra-2001] ; la série complète est dans les données de la figure.
 
@@ -278,7 +284,7 @@ Les lois qui approuvent un plan tiennent en un ou deux articles : elles approuve
 
 Les trois plans donnent trois résultats. L'objectif du IX^e^ Plan est tenu dès 1999, deux ans avant l'échéance, quelle que soit la base du PIB retenue ; la Banque centrale l'attribue à la baisse des prix à l'importation [@bct-ra-1999]. Le XI^e^ Plan prévoyait une dépense stable, proche de 900 MD par an : le réalisé est le double du prévu, et l'écart croît chaque année, de 38 % en 2007 à 216 % en 2011. Le plan 2016-2020 prévoyait de ramener la dépense de 19 025 MD sur 2011-2015 à 11 553 MD : elle atteint 1,7 fois le prévu.
 
-Le VI^e^ Plan (1982-1986) n'est connu que par un rapport de la Banque mondiale, et pour un agrégat plus large que la compensation : 2,7 % du PIB prévus pour l'ensemble des comptes spéciaux du Trésor, contre 4,5 % en 1982 et 4,1 % en 1983 selon le même tableau, dont la source déclarée est le ministère des Finances [@bm-1985-cem-5328-vol1, tableau 10]. Ces parts sont celles que le rapport imprime ; elles ne portent pas sur la Caisse seule et ne sont pas reprises dans les séries de ce volume.
+Le VI^e^ Plan (1982-1986) n'est connu que par un rapport de la Banque mondiale, et pour un agrégat plus large que la compensation : l'ensemble des comptes spéciaux du Trésor (@sec-compensation-bm-1985). Il n'est pas repris ici.
 
 Pour les autres plans — des perspectives décennales de 1962 aux VII^e^, VIII^e^, X^e^ et XII^e^ Plans, et pour les plans 2023-2025 et 2026-2030 —, aucune prévision de compensation n'est identifiée ici.
 
