@@ -729,3 +729,227 @@ l'exportation (dix ans plus dix). C'est le partage que le code de 1993 réunit e
 
 La clé `loi-72-38-regime-exportation` existe déjà ; sa note peut désormais porter : « JORT
 n° 17 des 21-25-28 avril 1972, p. 530-532, lu à l'image le 6 octobre 2026 ; 15 articles ».
+
+### 10.2 Ce qui va dans les chapitres des impôts, et ce qui fait la spécificité de celui-ci
+
+#### a) Tableau de renvoi : avantage → impôt → chapitre
+
+Pour chaque ligne, la mention à insérer est courte et renvoie à @sec-depenses-fiscales (ou à
+ses sections `#sec-df-code-1993`, `#sec-df-reformes`, `#sec-df-rapport`). À ce jour, aucun
+des quatre chapitres d'impôt ne renvoie à @sec-depenses-fiscales.
+
+| Avantage | Impôt | Chapitre et section où le mentionner | Ce qui y est déjà dit | Phrase-source (texte lu ou image lue) |
+|---|---|---|---|---|
+| Déduction totale puis partielle des **bénéfices de l'exportation** ; imposition à 10 % votée en 2006, appliquée en 2014 ; abrogation en 2019 | impôt sur les sociétés | `_impot_societes.qmd`, « Les paramètres d'origine » (taux réduit de 10 %, l. 111-113) et « 2019 » | la liste du taux de 10 % « compte davantage » de catégories qu'en 1990 ; rien sur l'exportation avant 2019 ; le palier de 13,5 % | code de 1993, art. 12 § 7 et 22 § 3 ; loi n° 2006-80, art. 5 § 1 (6^e^ tiret ajouté au 3^e^ alinéa de l'art. 49 § I) et art. 6 ; quatre reports (§ 1.3) ; LF 2019, art. 37 et 41 |
+| Déduction des **revenus de l'exportation** : totale dix ans puis 50 % (1993) ; deux tiers (votée 2006, appliquée 2014) | impôt sur le revenu | `_impot_revenu.qmd`, « Bénéfices industriels et commerciaux », l. 325, et `#sec-irpp-deductions`, l. 511 | l. 325 : déduction des deux tiers (art. 39 § V), « la série des valeurs antérieures aux deux tiers n'est pas établie : le régime antérieur relevait du code d'incitation aux investissements de 1993, abrogé et remplacé par la loi n° 2017-8 » | code de 1993, art. 12 § 6 et 22 § 2 ; loi n° 2006-80, art. 5 § 2 (art. 39 § V nouveau) ; loi n° 2017-8, art. 67 du code |
+| Déduction totale des revenus et bénéfices en **zone de développement régional** : dix ans puis 50 % dix ans (1993) ; cinq ou dix ans puis deux tiers / 10 % (2017) | impôt sur le revenu et impôt sur les sociétés | `_impot_societes.qmd`, l. 113 ; `_impot_revenu.qmd`, `#sec-irpp-deductions` | IS : le développement régional cité parmi les « ajouts postérieurs » au taux de 10 %, sans date ni durée ; IRPP : rien, hors l'exonération de l'avantage transport des zones (LF 2020, art. 44) | code de 1993, art. 23 § 2 ; code de l'IRPP et de l'IS, art. 63 et 64 (loi n° 2017-8, art. 1^er^) |
+| Déduction totale dix ans des revenus et bénéfices de l'**agriculture et de la pêche**, puis deux tiers / 10 % | impôt sur le revenu et impôt sur les sociétés | `_impot_revenu.qmd`, « Bénéfices de l'exploitation agricole et de pêche (catégorie III) » ; `_impot_societes.qmd`, l. 111-113 | IS : activité agricole dans les cinq catégories d'origine du taux de 10 % ; « bénéfices agricoles après expiration de la période de déduction totale » cités sans texte ; IRPP : à vérifier dans la section catégorie III | code de 1993, art. 30 § 3 ; code de l'IRPP et de l'IS, art. 65 et 66 |
+| **Entreprises nouvelles** : déduction de 100, 75, 50, 25 % sur quatre ans | impôt sur le revenu et impôt sur les sociétés | `_impot_societes.qmd`, « 2018 » ou nouvelle mention datée 2017 ; `_impot_revenu.qmd`, BIC | rien | code de l'IRPP et de l'IS, art. 71 |
+| Dégrèvement des revenus et bénéfices **réinvestis** (souscription au capital), 35 % du revenu ou bénéfice net (1993) | impôt sur le revenu et impôt sur les sociétés | `_impot_revenu.qmd`, `#sec-irpp-deductions` (plafonnement, art. 12 *bis*) ; `_impot_societes.qmd` (minimum d'impôt des art. 12 et 12 *bis*, l. 117) | IRPP : le plafonnement de l'art. 12 *bis* est décrit, 60 % → 45 % en 2017 ; les paragraphes de l'art. 39 abrogés en 2017 sont listés ; IS : le minimum de l'art. 12 est cité | code de 1993, art. 7 § 1 ; pour l'après-2017 : section II du chapitre IV du code, art. 72 à 77, **non lus dans le détail** |
+| **Minimum d'impôt** au titre des avantages fiscaux, 60 % → 45 % | impôt sur le revenu | `_impot_revenu.qmd`, tableau de l'art. 12 *bis* | déjà complet | loi n° 2017-8, art. 2 § 6 |
+| **Régime suspensif de TVA** des exportateurs : chiffre d'affaires à l'exportation supérieur à 50 % ; entreprises totalement exportatrices pour importations et achats locaux | TVA | `_tva.qmd`, « Déduction, crédit et suspension », l. 151 | le régime suspensif est défini (art. 11) ; la LF 2022 y met fin pour les sociétés de commerce international et les entreprises de services non totalement exportatrices | loi n° 2017-8, art. 3 § 1 (art. 11 § I nouveau du code de la TVA) ; code de 1993, art. 22 § 1 (suspension de la TVA et du droit de consommation pour les exportateurs partiels) |
+| Suspension de la TVA sur les **équipements** de l'investissement ; taux de 6 % pour les équipements sans similaire local | TVA | `_tva.qmd`, même section, et « De 2016 à 2025 » | rien | code de 1993, art. 9 (réduction des droits de douane à 10 %, suspension de la TVA et du droit de consommation) ; loi n° 2017-8, art. 3 § 3 (art. 13 *ter* nouveau) et art. 5 (n° 18 *ter* du tableau B) |
+| Extension au **droit de consommation** des suspensions de la TVA | droit de consommation | `_droits_consommation.qmd`, « Ce que la loi de 1988 ne contient pas », l. 72-74 | la liste des articles du code de la TVA rendus applicables est donnée, avec l'art. 13 *ter*, « rattaché » à la LF 2022 d'après l'état consolidé | loi n° 2017-8, art. 3 § 4 : « Est ajoutée l'expression “13 ter” après l'expression “13” prévue par l'article 6 de la loi n° 88-62 » — **le renvoi à l'art. 13 *ter* date donc de 2017**, à corriger l. 74 |
+| Exonération des **droits de douane** sur les équipements et intrants des régimes ci-dessus | droits de douane | pas de chapitre (index.qmd : « ils n'ont pas de chapitre propre ») → reste dans @sec-depenses-fiscales | — | loi n° 2017-8, art. 4 (§ 7.3 des dispositions préliminaires du tarif) ; code de 1993, art. 9 et 30 § 2 |
+| Poids par impôt des dépenses fiscales (2017-2019) | les cinq | fin de chaque chapitre, section du rendement (« Ce que l'impôt rapporte », « Ce que la TVA rapporte »…) : une phrase et le renvoi à @tbl-df-par-impot | rien | rapport PLF 2021, tableaux n° 3 et n° 4 : 2019, en % des recettes du même impôt — droit de consommation 69,88 ; douane 63,45 ; TVA 19,66 ; IS 9,15 ; IRPP 0,08 |
+
+**Deux corrections que ce tableau fait apparaître dans des chapitres existants** :
+
+1. `_impot_revenu.qmd`, l. 325 : la série antérieure aux deux tiers **est** désormais établie
+   (déduction totale dix ans puis 50 %, code de 1993, art. 12 § 6 et 22 § 2 ; deux tiers votés
+   par la loi n° 2006-80, art. 5 § 2, appliqués aux revenus de 2014 après quatre reports). Et
+   le code de 1993 n'a pas été « abrogé et remplacé par la loi n° 2017-8 » : il est abrogé par
+   la loi n° 2016-71, art. 27 ; la loi n° 2017-8 inscrit les avantages dans le code de
+   l'impôt.
+2. `_droits_consommation.qmd`, l. 74 : l'ajout de l'article 13 *ter* à la liste de l'article 6
+   de la loi n° 88-62 vient de la loi n° 2017-8, art. 3 § 4 (texte lu, JORT n° 15 de 2017,
+   p. 779-780, pagination à contrôler), non de la loi de finances pour 2022.
+
+**Avantages pour lesquels aucun texte lu ne permet la mention** :
+
+- premier et grand poste du recensement, le régime des **Tunisiens résidents à l'étranger**
+  (1 556,7 MD en 2019, surtout droit de consommation et douane au « retour définitif ») :
+  connu par le seul rapport ; le texte fondateur n'est pas lu (le rapport cite en exemple la
+  loi de finances pour 1975, art. 33, pour les « projets » de ces résidents) ;
+- **concessionnaires automobiles** (764,8 MD en 2019, droit de consommation) : montant connu,
+  texte non lu ; `_droits_consommation.qmd` dit lui-même que les taux de la position 87-03
+  ne sont pas établis ;
+- exonérations de TVA et de douane sur **médicaments, engrais, produits alimentaires** :
+  montants du rapport seuls ; le tableau A d'origine est décrit dans `_tva.qmd`, sans lien
+  avec ces lignes ;
+- avantages au titre du **réinvestissement** après 2017 (art. 72 à 77 du code) et régime des
+  **sociétés d'investissement à capital risque** (186,8 MD en 2019) : non lus ;
+- **épargne** (comptes spéciaux, assurance-vie) : déjà traitée dans `_impot_revenu.qmd` ;
+  son coût (intérêts des dépôts et de l'épargne : 26,6 / 30,2 / 2,7 MD) vient du rapport ;
+- taux réduit de **10 %** de l'impôt sur les sociétés : le rapport le tient pour un taux de
+  référence (§ 10.3), il n'est donc **pas** compté comme dépense fiscale — à dire dans
+  `_impot_societes.qmd` si l'on y cite le chiffre de 9,15 %.
+
+#### b) Ce que les textes disent de leur objet (pour l'introduction)
+
+**Code de 1993** (JORT n° 99 du 28 décembre 1993 ; p. 2174-2178 lues à l'image, titres VII à X
+relevés sur l'OCR des p. 2179-2181).
+
+- Loi de promulgation, art. 1^er^ (p. 2174) : « Sont promulgués les textes relatifs aux
+  incitations aux investissements annexés à la présente loi et réunis sous le titre “Code
+  d'incitations aux investissements” ».
+- Loi de promulgation, art. 5 (p. 2174) : sont abrogés, entre autres, le décret du
+  19 septembre 1946 sur la lettre d'établissement, la loi n° 62-75 (réinvestissements), la loi
+  n° 68-3 (Sud tunisien), la loi n° 69-24 (îles Kerkennah), **la loi n° 69-35 portant code des
+  investissements**, **la loi n° 87-51 portant code des investissements industriels**, la loi
+  n° 88-18 (code agricole et de pêche, sauf quelques articles), la loi n° 89-100 (activités de
+  services), la loi n° 90-21 (code touristique, sauf ses articles 3, 5, 6, 7 et 8), et des
+  articles de sept lois de finances. Le code remplace donc une dizaine de lois et de codes
+  sectoriels : c'est ce que « unique » veut dire. La loi n° 72-38 n'est pas dans cette liste ;
+  le texte qui l'a abrogée n'est pas établi (vraisemblablement un texte antérieur à 1993, à
+  chercher dans la loi n° 87-51 ou le décret-loi n° 85-14).
+- Loi de promulgation, art. 2 (p. 2174) : les déductions de l'exportation (art. 12 § 6 et 7,
+  art. 22 § 2 et 3 du code) s'appliquent aux entreprises exportatrices créées avant le code,
+  « à partir du 1^er^ janvier 1994 comme si ces entreprises ont été créées à cette date ».
+  **La loi ne contient aucune clause générale d'entrée en vigueur** : cela lève la lacune 7
+  du § 7 (la mention du 1^er^ janvier 1994 ne vaut que pour ce cas).
+- Code, art. 1^er^ (p. 2174-2175) : il « fixe le régime d'incitations aux investissements et
+  à la création de projets réalisés en Tunisie par des promoteurs tunisiens ou étrangers,
+  résidents ou non résidents, ou en partenariat conformément à la stratégie globale de
+  développement qui vise notamment l'accélération du rythme de la croissance économique et des
+  créations d'emplois », dans quatorze secteurs : agriculture et pêche, industries
+  manufacturières, travaux publics, tourisme, artisanat, transport, éducation et enseignement,
+  formation professionnelle, production et industries de culture, animation pour les jeunes et
+  encadrement de l'enfance, santé, protection de l'environnement, promotion immobilière,
+  autres activités et services non financiers.
+- Art. 2 : investissements « réalisés librement », sur simple déclaration, sauf activités
+  soumises à autorisation ; art. 4 : les incitations « sont accordées sous forme d'incitations
+  communes et d'incitations spécifiques ».
+- Structure : titre I, dispositions générales ; II, incitations communes ; III, incitations à
+  l'exportation ; IV, encouragement au développement régional ; V, développement agricole ;
+  VI, lutte contre la pollution et protection de l'environnement ; VII, promotion de la
+  technologie et de la recherche-développement ; VIII, encouragement des nouveaux promoteurs,
+  des petites entreprises et des petits métiers ; IX, encouragement aux investissements de
+  soutien ; X, dispositions diverses ; 67 articles (les titres VII à X et le nombre d'articles
+  d'après l'OCR).
+
+Ce que cela permet d'écrire : un code distinct des codes d'impôt parce qu'il est organisé
+**par objectif** (exportation, région, agriculture, environnement, technologie, nouveaux
+promoteurs) et non par impôt, et qu'il mêle dans chaque titre des avantages de nature
+différente — déductions d'impôts directs, suspensions d'impôts indirects et de droits de
+douane, primes budgétaires, prise en charge de cotisations sociales (art. 23 à 25 pour le
+seul développement régional), règles de change et de résidence (art. 14), droit du travail
+(art. 18). Le mot « dépense fiscale » n'y figure pas.
+
+**Loi de l'investissement de 2016** (texte lu, p. 3083) : art. 1^er^, elle « a pour objectif
+la promotion de l'investissement et l'encouragement de la création d'entreprises et de leur
+développement selon les priorités de l'économie nationale », à travers quatre objectifs
+(valeur ajoutée, compétitivité et capacité d'exportation ; emploi ; développement régional
+intégré et équilibré ; développement durable) ; art. 2, elle « fixe le régime juridique de
+l'investissement […] dans toutes les activités économiques ». Elle ne contient pas le mot
+« fiscal » dans son objet : liberté d'investir, garanties, gouvernance (conseil, instance,
+fonds), primes.
+
+**Loi de 2017** : son intitulé seul dit son objet — « refonte du dispositif des avantages
+fiscaux » — ; elle n'a pas d'article d'objet. Son article 1^er^ ajoute au code de l'IRPP et de
+l'IS « un chapitre IV intitulé avantages fiscaux », en deux sections : avantages au titre de
+l'exploitation (développement régional, développement agricole, exportation, activités de
+soutien et lutte contre la pollution, entreprises nouvelles — art. 63 à 72) et avantages au
+titre du réinvestissement (art. 73 à 77). Ses articles 3 à 5 font le même mouvement pour la
+TVA, le droit de consommation et le tarif des douanes. La partition de 1993 par objectif
+survit donc comme plan interne d'un chapitre du code de l'impôt.
+
+### 10.3 Les méthodes, source par source
+
+#### a) Le budgétaire et l'évaluation du ministère des Finances
+
+**Rapport annexé au projet de loi de finances pour 2021** (français, texte lu ; pages données
+en pagination imprimée, la page du PDF valant la page imprimée plus quatre).
+
+| Point de méthode | Ce que dit le rapport | Page imprimée |
+|---|---|---|
+| Définition | « toutes les dispositions légales exceptionnelles qui dérogent au système fiscal de référence destinées, essentiellement, à alléger les charges fiscales pour une catégorie déterminée de contribuables ou certaines opérations ou activités économiques entraînant, en contrepartie, un manque de ressources du trésor public » | p. 6 |
+| Exclus par principe | fraude, erreurs de liquidation, mauvaises interprétations, omissions | p. 7 |
+| Système de référence | approche « juridique » (le droit commun tel que les textes le posent), préférée à l'approche « économique » | p. 11-12 |
+| Référence, impôt sur le revenu | barème progressif ; taux libératoires des plus-values foncières ; régime forfaitaire ; déductions pour frais professionnels ; **déduction des deux tiers** des revenus des activités dont les sociétés sont imposées à 10 % ou 13,5 % | p. 13-14 |
+| Référence, impôt sur les sociétés | « taux de référence tels que prévus par l'article 49 […] fixés à 35 %, 25 %, 20 %, 13,5 % et 10 % » ; l'article 46 (exonérations) tenu pour une règle de champ ; les minimums d'impôt des art. 12 et 12 *bis* font partie de l'impôt de référence. **Le taux réduit de 10 % n'est donc pas une dépense fiscale** ; ne le sont pas non plus, par construction, les revenus déduits aux deux tiers | p. 16-17 |
+| Méthode de chiffrage | trois méthodes exposées (perte de recettes initiale, gain de recettes final, dépense budgétaire équivalente), toutes deux premières « avec l'hypothèse que le comportement du contribuable soit maintenu inchangé ». Retenue : « perte de recettes finales » pour les dispositifs en vigueur, « perte de recettes initiales » pour les nouveaux. C'est un manque à gagner à comportement inchangé | p. 10-11 |
+| Champ | cinq impôts de l'État : IRPP, IS, TVA, droit de consommation, droits de douane, « plus que 80 % des ressources fiscales de l'État » ; ni enregistrement, ni fiscalité locale, ni cotisations sociales | p. 10 |
+| Période | en principe trois ans (année précédente, en cours, suivante) ; ce rapport se limite à 2017-2019, sans prévision | p. 9 |
+| Ce qui est chiffré | tableau n° 1 : 347 dépenses inventoriées en 2019, **243 valorisées** (237 en 2017 et 2018), « 70 % » ; 96 « données non disponibles » | p. 23 |
+| Données employées | **non décrites** : le rapport ne dit ni quelles déclarations, ni quels fichiers (impôts, douane) servent au chiffrage des dépenses fiscales | — |
+| Avantages financiers | chapitre distinct : aides « décaissées », d'après « les données transmises par tous les intervenants au processus de l'investissement » (structures qui octroient et contrôlent) ; 232 inventoriés, 200 valorisés ; 932 MD en 2019, dont près de 119 MD de prêts, crédits et apports en capital | p. 91-92 |
+
+Remarque de cohérence interne : la clé de codification imprimée p. 8 (21 = TVA, 22 = taxe de
+consommation, 23 = douane) ne correspond pas aux codes effectivement employés dans les annexes
+et dans la série traitée (21 = douane, 22 = TVA, 23 = droit de consommation).
+
+**Rapports annexés aux projets pour 2022 à 2025** (arabe). Seules l'introduction (p. 7) et la
+table des matières ont été lues, à l'image. Les sommaires des rapports 2022 et 2023 portent
+les mêmes rubriques que le rapport 2021 (cadre institutionnel, notion, formes, codification,
+champ temporel et matériel, évaluation financière, système fiscal de référence) ; ceux de 2024
+et 2025 sont resserrés. **Que la méthode y soit restée la même n'est pas vérifié.** Deux
+différences sont établies : l'exclusion des médicaments et engrais (rapports 2024 et 2025,
+p. 7, note 1) et l'exclusion des prêts et participations du total des avantages financiers
+(mêmes pages, note 2 : 89 MD pour 2022, 66 MD pour 2023).
+
+**Existe-t-il une donnée proprement budgétaire ?**
+
+- Oui, mais indirecte : le second chapitre des rapports (« avantages financiers ») donne des
+  montants **décaissés**, ligne par ligne, dans ses annexes. Rapport 2021, annexe (p. 101-109
+  imprimées), colonnes 2018 et 2019, en MD : prime d'investissement au titre du développement
+  régional (code 011116) 22,5 / 42,6 ; prise en charge de la contribution patronale au régime
+  légal de sécurité sociale (030602) 19,1 / 23,1 ; idem, autre dispositif (030606) 17,6 /
+  8,4 ; prime d'investissement (010801) 0 / 10,9. Par domaine (tableau n° 2, p. 93) : formation
+  et emploi 344,0 / 379,1 ; investissement 242,9 / 186,5 ; industrie et services 177,0 /
+  146,3 ; agriculture et pêche 59,1 / 39,4 ; total 913 / 932. Ce sont des paiements déclarés
+  par les organismes, non des crédits votés.
+- Les **crédits** eux-mêmes sont à chercher dans les tableaux annexés aux lois de finances :
+  fonds spéciaux du Trésor (dans la loi de finances pour 2019 : fonds de développement de la
+  compétitivité dans les secteurs industriel, des services et de l'artisanat ; fonds de
+  développement de la compétitivité dans l'agriculture et la pêche ; fonds de promotion des
+  exportations ; fonds de transition énergétique — intitulés lus, montants non affectés ici
+  à leurs lignes), et dans les budgets par mission des ministères de l'Industrie, de
+  l'Agriculture et de l'Emploi. Rien n'a été dépouillé : ni
+  `~/projets/tunisia-data/data/raw/minfinances/portail_ancien/budgets_ministeres/`, ni
+  `gbo_pap_rap/`, ni les lois de règlement.
+- Pour 2009, la Banque mondiale donne les primes versées par agence (APII 33 MD, APIA 54 MD,
+  ONTT 11 MD) : étude extérieure, mais sur données d'agences.
+
+#### b) Les études extérieures
+
+| Source | Qui, quand | Données et années | Périmètre | Méthode, d'après le document | Page |
+|---|---|---|---|---|---|
+| **IFC et ECOPA (2012)**, *Tunisie : coût/bénéfice des incitations fiscales et financières à l'investissement*, « preliminary report », novembre 2012 | Société financière internationale et un bureau d'études, pour la Banque mondiale | 2008-2011 | incitations du code de 1993 | **document non collecté** ; connu seulement par ce qu'en reprend le rapport de 2014 | Banque mondiale 2014, bibliographie du ch. 4 |
+| **Banque mondiale (2014)**, *The Unfinished Revolution*, ch. 4 | Banque mondiale, d'après IFC-ECOPA | coût : 2009 (tableau 4.2), 2008-2011 en moyenne (tableau 4.3) ; enquête : 2012 | coût « direct » des incitations du code : recettes fiscales renoncées et avantages financiers (primes APII, APIA, ONTT) | coût « net » (tableau 4.2), sans que le chapitre dise de quoi il est net ; la note 9 précise : « only the direct costs ». Les déductions du tableau 4.3 sont « brutes ». La part « redondante » vient d'une **enquête sur les motivations des investisseurs** menée en 2012 par le Groupe de la Banque mondiale avec le gouvernement : à la question directe, 49 % auraient investi sans incitation et 51 % non ; une question de contrôle (les trois premiers motifs de l'investissement) ramène à 21 % la part de ceux qui n'auraient pas investi — d'où « 79 % ». **Taille de l'échantillon non donnée dans le chapitre** (renvoi à une annexe 4.2, non consultée). Le coût par emploi additionnel applique cette part au coût total. La source des données fiscales n'est pas dite dans le chapitre | p. 142-145 ; note 9, p. 164 |
+| **Diaporama de la Banque mondiale, septembre 2014** (J. Loeprick) | même étude, état différent | 2009-2011 | avantages fiscaux et douaniers | décomposition lisible sur le graphique : « déductions impôts redondantes » + « déductions douanes redondantes » − « impôts additionnels » − « droits de porte additionnels » = « coût fiscal net ». Le net est donc **net des recettes supplémentaires** attribuées aux investissements que les incitations auraient suscités. Source indiquée : « Impôts, Douanes, CNSS, API, APIA ». Enquête (p. 15) : trois graphiques, sans effectif ni date ; la diapositive 5 donne pour la Tunisie (2012) un « ratio de redondance » de 25 % et 58 % d'investisseurs influencés. Aucune note de méthode | p. 5, 15-17 |
+| **OCDE (2013)**, *Analysis of the Tunisian Tax Incentives Regime* | Centre de politique et d'administration fiscales de l'OCDE ; « a single five-day Mission », 5-9 novembre 2012 | pas de données de recettes propres | comparaison régime intérieur / régime de l'exportation | **taux effectifs marginaux d'imposition** (méthode de Chen et Mintz, 2008), sur hypothèses : 35,78 % pour l'industrie du régime intérieur, 4,53 % pour l'industrie exportatrice ; l'annexe B avertit que ces calculs sont « for illustrative purpose only », les hypothèses n'étant pas validées par les autorités. Aucune estimation propre du coût | p. 4, 7, 21-23 |
+| **Ghazouani (2011)**, *Évaluation des incitations à l'investissement privé* (CTEE, IACE) | universitaire | 1994-2007 (moyenne de 2,14 % du PIB, selon l'OCDE) ; 2,9 % du PIB sans année (selon la Banque mondiale) | « coût direct des incitations fiscales » | l'OCDE dit seulement : « based on data from the Ministry of Finance ». **Méthode non décrite par la source qui la rapporte.** Les deux sources ne rapportent pas le même chiffre | OCDE 2013, p. 12 ; Banque mondiale 2014, note 10, p. 164 |
+| **OMC (2001)** | examen des politiques commerciales, vraisemblablement — titre non donné | 2000 : 557 MD, « environ 2 % du PIB » | « fiscal costs of incentives » | **méthode non décrite par la source qui la rapporte** | Banque mondiale 2014, note 10, p. 164 |
+| **FMI (2005 et 2012)** | titres non donnés | 2005 : « environ 0,75 % du PIB » | « tax expenditure on incentives » | **méthode non décrite par la source qui la rapporte** ; la note attribue un même chiffre à deux documents | idem |
+
+Trois précisions pour la rédaction :
+
+1. La note 10 de la Banque mondiale écrit elle-même qu'« aucune évaluation d'ensemble n'a été
+   menée avant 2012 » : les chiffres de l'OMC, du FMI et de Ghazouani sont présentés par leur
+   propre rapporteur comme des tentatives partielles.
+2. Le chapitre actuel écrit que le rapport « indique que 79 % des investisseurs auraient
+   investi sans incitation » : c'est le résultat **de la question de contrôle**, non la
+   réponse directe (49 % / 51 %). Trois mesures de la même enquête circulent donc — 49 %
+   (rapport, question directe), 61,2 % (diaporama), 79 % (rapport, question de contrôle) — et
+   le tableau 4.1 donne, pour les seules entreprises du régime de l'exportation, 36 % de
+   « marginaux » contre 64 % d'indifférents aux incitations fiscales (p. 142).
+3. Aucune de ces études ne mesure la même chose que le rapport du ministère : elles évaluent
+   un coût *net d'effets induits* ou *corrigé de l'effet d'aubaine* sur les seules incitations
+   du code ; le ministère chiffre un manque à gagner brut, à comportement inchangé, sur toutes
+   les dérogations de cinq impôts, en tenant le taux de 10 % pour la norme.
+
+### 10.4 Ce qui reste non établi après ces compléments
+
+- Texte qui a abrogé la loi n° 72-38, et date d'entrée en vigueur de celle-ci (aucune clause).
+- Rectificatifs du code de 1969 (JORT n° 25 et 28 de 1969) : non lus.
+- Lois n° 81-56, 85-14, 87-51, 88-18, 90-21 : toujours connues par leur seul intitulé ; la
+  chaîne 1974 → 1981 → 1987 → 1993 du régime du marché intérieur n'est pas établie.
+- Étude IFC-ECOPA de 2012 et annexes 4.2 à 4.6 du rapport de la Banque mondiale (échantillon
+  de l'enquête, sources fiscales) : non collectées.
+- Méthode des rapports 2022 à 2025 : non lue ; données utilisées par le ministère : non
+  décrites dans le rapport 2021.
+- Crédits budgétaires des primes et des prises en charge de cotisations : où chercher est dit
+  au § 10.3 a ; rien n'est dépouillé.
+- Textes des régimes des Tunisiens résidents à l'étranger et des concessionnaires
+  automobiles : non lus.
