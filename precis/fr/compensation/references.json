@@ -429,7 +429,7 @@
         }
       ],
       "archive": "Internet Archive (Wayback Machine)",
-      "note": "citation-key: minfin-compensation-carburants-2014\nDocument retiré du site du ministère des Finances (finances.gov.tn, répond 301 puis 404 depuis 2019 d'après le CDX) ; consulté dans la capture du 25/11/2016 (horodatage 20161125132818 lu dans le CDX le 6 octobre 2026). La capture est identique octet pour octet à la copie locale de tunisia-data (3 483 651 octets, 192 pages). Le PDF n'a pas de page de couverture : la première page est une préface (« تمهيد »), et le titre arabe n'est donc pas relu. Le titre français est celui du catalogue tunisia-data, tiré du nom du fichier ; il reste à contrôler. Rapport de la mission conjointe des trois corps de contrôle (noms arabes lus p. 1 : هيئة الرقابة العامة للمالية، هيئة الرقابة العامة للمصالح العمومية، هيئة الرقابة العامة لأملاك الدولة والشؤون العقارية ; leur rendu en français est celui de la note documentaire), sur ordre de mission du ministre des finances du 16 septembre 2013 ; date (21 juillet 2014) du nom du fichier et de la note documentaire. Éditeur non établi. Lu à l'image : pp. 1-5 (docs/notes/compensation.md, § 1.3) ; les pages à forte densité de chiffres restent à lire. Le nombre de pages (192) n'est pas porté dans un champ number-of-pages, que la conversion vers Zotero ne tolère pas pour un rapport."
+      "note": "citation-key: minfin-compensation-carburants-2014\nDocument retiré du site du ministère des Finances (finances.gov.tn, répond 301 puis 404 depuis 2019 d'après le CDX) ; consulté dans la capture du 25/11/2016 (horodatage 20161125132818 lu dans le CDX le 6 octobre 2026). La capture est identique octet pour octet à la copie locale de tunisia-data (3 483 651 octets, 192 pages). Le PDF n'a pas de page de couverture : la première page est une préface (« تمهيد »), et le titre arabe n'est donc pas relu. Le titre français est celui du catalogue tunisia-data, tiré du nom du fichier ; il reste à contrôler. Rapport de la mission conjointe des trois corps de contrôle (noms arabes lus p. 1 : هيئة الرقابة العامة للمالية، هيئة الرقابة العامة للمصالح العمومية، هيئة الرقابة العامة لأملاك الدولة والشؤون العقارية ; leur rendu en français est celui de la note documentaire), sur ordre de mission du ministre des finances du 16 septembre 2013 ; date (21 juillet 2014) du nom du fichier et de la note documentaire. Éditeur non établi. Lu à l'image : pp. 1-5 (docs/notes/compensation.md, § 1.3) ; les pages à forte densité de chiffres restent à lire. Le nombre de pages (192) n'est pas porté dans un champ number-of-pages, que la conversion vers Zotero ne tolère pas pour un rapport. SUBVENTION UNITAIRE de l'électricité et du gaz : pp. 73-74 et 95-96 (image) : électricité, coût unitaire / prix moyen en millimes le kWh : 2008 : 179 / 113,4 ; 2009 : 150,4 / 121 ; 2010 : 180,1 / 125,3 ; 2011 : 211,6 / 129,2 ; 2012 : 259,6 / 133,0 ; gaz : soutien de 128,3 à 513,2 D/tep de 2009 à 2012 (d'après la note documentaire compensation-archives-energie, § 1.1 d)."
     },
     {
       "id": "minfin-resultats-provisoires-2013-03",
@@ -1863,7 +1863,7 @@
         ]
       },
       "title-short": "ONE, Chiffres clés de l'énergie",
-      "note": "citation-key: one-chiffres-cles-energie\nÉditions 2018 à 2025 (une par an). Partie « Les prix » : prix en vigueur par sous-période de l'année. Preuve : couche texte (documents nés numériques). Huit éditions (2018 à 2025) téléchargées le 6 octobre 2026 sous https://www.energiemines.gov.tn/fileadmin/docs-u1/<fichier> et conservées sous tunisia-data/data/raw/banque-mondiale-rapports/ (ignoré par git, rangé là faute de dossier dédié) : one_chiffres_cles_2018.pdf <- chiffres_cles_energie_2018._Fr.pdf (2 215 727 octets, 23 p., SHA-256 2c82134306a105c692e3222e78000e8a3a0b39ee4a56a5c2eafadee675c7a3a1) ; one_chiffres_cles_2019.pdf <- chiffres_clés_énergie_2019__fr_.pdf (2 158 187 octets, 23 p., SHA-256 ba5c1f42f989b4b1333ba703b867f6802df623069dca806d1deba8ecbd6bd121) ; one_chiffres_cles_2020.pdf <- Chiffres_clés_énergie2020.Fr.pdf (2 188 980 octets, 23 p., SHA-256 b5f998f00dd2d0a128f9c8674218994fa27f173dca685ca769d49cb345807758) ; one_chiffres_cles_2021.pdf <- Chiffres_clés_énergie2021.Fr.pdf (2 133 156 octets, 23 p., SHA-256 dd47cdb21cd71b249eb3b236ffa7b2e46ac47a5cb2045bebe6f3f619381faa0b) ; one_chiffres_cles_2022.pdf <- Chiffres_clés_énergie2022.Fr__Vf_.pdf (2 198 632 octets, 23 p., SHA-256 b22746acc0bcedbaf679406626cdf50d1153e7847139fa5b27da824f9a6729f7) ; one_chiffres_cles_2023.pdf <- Chiffres_clés_énergie2023.Fr.pdf (3 564 911 octets, 23 p., SHA-256 8460c31a99fc4106eb62051e664f4e816c0c56da9e9755025093745345450820) ; one_chiffres_cles_2024.pdf <- Chiffres_clés_énergie_2024.pdf (3 738 449 octets, 23 p., SHA-256 76a0a8de628bc2091790056d27db5bac581b22c8fce732343f17c88a8690892b) ; one_chiffres_cles_2025.pdf <- Chiffres_clés_2025.pdf (4 577 971 octets, 25 p., SHA-256 da4320ac932a26802cf81409add1bdfe6caf24f8358a85f308fa12b71b97f046). Éditions 2014 à 2017 : 2014 sans prix, 2015-2017 introuvables. Chaque édition porte un graphique « Prix annuel moyen de vente de l'essence et du gasoil » (1980 à l'année courante) dont les données ne sont pas publiées."
+      "note": "citation-key: one-chiffres-cles-energie\nÉditions 2018 à 2025 (une par an). Partie « Les prix » : prix en vigueur par sous-période de l'année. Preuve : couche texte (documents nés numériques). Huit éditions (2018 à 2025) téléchargées le 6 octobre 2026 sous https://www.energiemines.gov.tn/fileadmin/docs-u1/<fichier> et conservées sous tunisia-data/data/raw/banque-mondiale-rapports/ (ignoré par git, rangé là faute de dossier dédié) : one_chiffres_cles_2018.pdf <- chiffres_cles_energie_2018._Fr.pdf (2 215 727 octets, 23 p., SHA-256 2c82134306a105c692e3222e78000e8a3a0b39ee4a56a5c2eafadee675c7a3a1) ; one_chiffres_cles_2019.pdf <- chiffres_clés_énergie_2019__fr_.pdf (2 158 187 octets, 23 p., SHA-256 ba5c1f42f989b4b1333ba703b867f6802df623069dca806d1deba8ecbd6bd121) ; one_chiffres_cles_2020.pdf <- Chiffres_clés_énergie2020.Fr.pdf (2 188 980 octets, 23 p., SHA-256 b5f998f00dd2d0a128f9c8674218994fa27f173dca685ca769d49cb345807758) ; one_chiffres_cles_2021.pdf <- Chiffres_clés_énergie2021.Fr.pdf (2 133 156 octets, 23 p., SHA-256 dd47cdb21cd71b249eb3b236ffa7b2e46ac47a5cb2045bebe6f3f619381faa0b) ; one_chiffres_cles_2022.pdf <- Chiffres_clés_énergie2022.Fr__Vf_.pdf (2 198 632 octets, 23 p., SHA-256 b22746acc0bcedbaf679406626cdf50d1153e7847139fa5b27da824f9a6729f7) ; one_chiffres_cles_2023.pdf <- Chiffres_clés_énergie2023.Fr.pdf (3 564 911 octets, 23 p., SHA-256 8460c31a99fc4106eb62051e664f4e816c0c56da9e9755025093745345450820) ; one_chiffres_cles_2024.pdf <- Chiffres_clés_énergie_2024.pdf (3 738 449 octets, 23 p., SHA-256 76a0a8de628bc2091790056d27db5bac581b22c8fce732343f17c88a8690892b) ; one_chiffres_cles_2025.pdf <- Chiffres_clés_2025.pdf (4 577 971 octets, 25 p., SHA-256 da4320ac932a26802cf81409add1bdfe6caf24f8358a85f308fa12b71b97f046). Éditions 2014 à 2017 : 2014 sans prix, 2015-2017 introuvables. Chaque édition porte un graphique « Prix annuel moyen de vente de l'essence et du gasoil » (1980 à l'année courante) dont les données ne sont pas publiées. PRIX MOYEN ET COÛT DE REVIENT (électricité, mill/kWh ; gaz, DT/tep) : tableau des pages « prix » des éditions 2018 à 2025 (édition 2020, p. 41, lue à l'image ; les autres en couche texte, pagination à relever) ; données « provisoires avant audit », révisées d'une décimale d'une édition à l'autre ; l'Observatoire précise que le « résultat unitaire » n'est pas forcément égal à la subvention budgétaire. SÉRIE 1980-2025 : graphique « Prix annuel moyen de vente de l'essence et du gasoil » de l'édition 2025, p. PDF 23, graphique vectoriel dont les coordonnées ont été lues (pdftocairo -svg, extrémités des 44 segments de chaque courbe, calage linéaire sur 36 moyennes du ministère : résidu maximal 1,45 millime) : niveau de preuve « coordonnées lues sur un graphique », pas un tableau publié ; fichier de travail hors entrepôt (SHA-256 577a632501c83f4720a14d3ead6473b386050914ca4ba2eaecad434ae95f306f)."
     },
     {
       "id": "one-conjoncture-energetique",
@@ -1887,7 +1887,7 @@
         ]
       },
       "title-short": "ONE, Conjoncture énergétique",
-      "note": "citation-key: one-conjoncture-energetique\nPublication mensuelle ; numéros lus : 2017, décembre 2019, fin juillet 2026. Tableau « Produits pétroliers : prix import, prix de cession, prix de vente », avec la date du prix en vigueur. Numéro de fin juillet 2026 (« prix de vente en vigueur au public à partir du 24/11/2022 ») : https://www.energiemines.gov.tn/fileadmin/docs-u1/Conjoncture_%C3%A9nerg%C3%A9tique__fin_juillet_2026.pdf, téléchargé le 6 octobre 2026, copie tunisia-data/data/raw/banque-mondiale-rapports/one_conjoncture_2026_07.pdf (4 938 946 octets, 40 p., SHA-256 3677c82247de310bd57f4289703708cc496aae883c14d5d29f3502855ddc8b5d). Numéros de septembre, octobre et décembre 2017 et de décembre 2019 : lus par le documentaliste, adresses non conservées dans la note, copies locales absentes (TODO). Numéros de 2016, 2018 et de janvier à août 2017 : non trouvés à la page des publications. Preuve : couche texte."
+      "note": "citation-key: one-conjoncture-energetique\nPublication mensuelle ; numéros lus : 2017, décembre 2019, fin juillet 2026. Tableau « Produits pétroliers : prix import, prix de cession, prix de vente », avec la date du prix en vigueur. Numéro de fin juillet 2026 (« prix de vente en vigueur au public à partir du 24/11/2022 ») : https://www.energiemines.gov.tn/fileadmin/docs-u1/Conjoncture_%C3%A9nerg%C3%A9tique__fin_juillet_2026.pdf, téléchargé le 6 octobre 2026, copie tunisia-data/data/raw/banque-mondiale-rapports/one_conjoncture_2026_07.pdf (4 938 946 octets, 40 p., SHA-256 3677c82247de310bd57f4289703708cc496aae883c14d5d29f3502855ddc8b5d). Numéros de septembre, octobre et décembre 2017 et de décembre 2019 : lus par le documentaliste, adresses non conservées dans la note, copies locales absentes (TODO). Numéros de 2016, 2018 et de janvier à août 2017 : non trouvés à la page des publications. Preuve : couche texte. STRUCTURE DES PRIX : de septembre 2015 à janvier 2020, le tableau « Produits pétroliers » de chaque numéro donne prix moyen d'import, prix de cession (« sortie de raffinerie Bizerte par voie terrestre ») et prix de vente, avec la date de la structure en vigueur ; à partir de février 2020, aussi « droits et taxes » (droit de consommation, RPD, TVA) et « divers et marges ». 56 numéros de 2015 à 2021 sont conservés sous tunisia-data/data/raw/banque-mondiale-rapports/one_conjoncture_AAAA_MM.pdf (empreintes dans tunisia-data ; liste de téléchargement de la collecte du 6 octobre 2026). Preuve : relevé automatique de la couche texte, contrôlé à la lecture sur une dizaine de numéros, NON relu à l'image ; les numéros de mars à mai 2015 et de novembre 2015 à mars 2016 n'ont pas livré de tableau ; en février et mai 2020 la colonne « prix de cession » est absente ; l'écart « import − cession » (subvention unitaire avant taxes, base STIR) est un CALCUL sur composantes publiées."
     },
     {
       "id": "minenergie-prix-marges-petroliers",
@@ -1951,7 +1951,7 @@
         ]
       },
       "title-short": "Cuesta, El-Lahga et Lara Ibarra (2015), PRWP 7312",
-      "note": "citation-key: bm-2015-wps7312\nPolicy Research Working Paper n° WPS7312. Titre, auteurs et date (« Poverty Global Practice Group, June 2015 ») lus sur la page de titre le 6 octobre 2026. Notice : https://documents.worldbank.org/en/publication/documents-reports/documentdetail/370251468189558300. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/wb_2015_wps7312_energy_reform_simulation.pdf (855 606 octets, 28 pages, SHA-256 cd6b05406cccc70d612bc4b87ac1d03df289694576e375ef6900e9856b93a4e4), ignorée par git. Tableau 3 « valid May 2014 » : prix intérieurs des carburants (source secondaire, d'après le ministère des Finances) ; pagination à relever. Réédition de 2018 sous le n° 125602 non collectée."
+      "note": "citation-key: bm-2015-wps7312\nPolicy Research Working Paper n° WPS7312. Titre, auteurs et date (« Poverty Global Practice Group, June 2015 ») lus sur la page de titre le 6 octobre 2026. Notice : https://documents.worldbank.org/en/publication/documents-reports/documentdetail/370251468189558300. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/wb_2015_wps7312_energy_reform_simulation.pdf (855 606 octets, 28 pages, SHA-256 cd6b05406cccc70d612bc4b87ac1d03df289694576e375ef6900e9856b93a4e4), ignorée par git. Tableau 3 « valid May 2014 » : prix intérieurs des carburants (source secondaire, d'après le ministère des Finances) ; pagination à relever. Réédition de 2018 sous le n° 125602 non collectée. MÉTHODE : simulation SUBSIM (Araar et Verme, 2012) sur l'enquête de 2010, tarifs de 2014 appliqués aux consommations de 2010 ; décrit la grille du 1er mai 2014 mais donne pour les tranches hautes 0,158 / 0,301 / 0,501 D, qui ne sont PAS les 184 / 280 / 350 millimes de la grille de la STEG (écart non résolu) ; mentionne une grille de janvier-avril 2014 ; tableau 3, p. 11 : prix de mai 2014. Rapport extérieur, à ne pas mêler aux séries officielles."
     },
     {
       "id": "bm-1977-revue-ve-plan",
@@ -2599,7 +2599,7 @@
         ]
       },
       "title-short": "BCT, Rapport annuel 2002",
-      "note": "citation-key: bct-ra-2002\n44ème Rapport annuel : lettre introductive lue en couche texte (« 44ème Rapport annuel … en 2002 »), le 6 octobre 2026. Rapport n° 44 de la BCT (catalogue « Rapport Annuel, n° 44 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 3 794 313 octets, 258 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/rapport2002.pdf, SHA-256 c0788cbf0e71359495d8c1dccd27fd12b383187d5b3f6161bf4e17db1c3d196d, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+      "note": "citation-key: bct-ra-2002\n44ème Rapport annuel : lettre introductive lue en couche texte (« 44ème Rapport annuel … en 2002 »), le 6 octobre 2026. Rapport n° 44 de la BCT (catalogue « Rapport Annuel, n° 44 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 3 794 313 octets, 258 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/rapport2002.pdf, SHA-256 c0788cbf0e71359495d8c1dccd27fd12b383187d5b3f6161bf4e17db1c3d196d, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026. AJUSTEMENTS DE 2000-2002 : p. imprimée 168 (couche texte) : « l'augmentation des prix intérieurs des produits pétroliers (mars et août 2000 et novembre 2002) » ; « déficit de commercialisation des hydrocarbures » 2000 / 2001 / 2002 : total −232,5 / −117,1 / −111,0 MDT."
     },
     {
       "id": "bct-ra-2003",
@@ -3381,6 +3381,1073 @@
       "archive_location": "http://v2.portail.finances.gov.tn/index.php?option=com_jdownloads&Itemid=581&view=finish&cid=1605&catid=8&lang=fr",
       "title-short": "Note sur l'exécution du budget de l'État à fin mars 2019",
       "note": "citation-key: minfin-note-execution-2019-03\nDocument de l'ancien portail v2.portail.finances.gov.tn, qui ne répond plus (aucune connexion le 6 octobre 2026) ; capture du 17/07/2019 (horodatage 20190717082916 repris du catalogue tunisia-data sources/minfinances-portail-ancien-urls.csv, NON relu au CDX : à vérifier). Fichier Word en arabe ; copie locale tunisia-data/data/raw/minfinances/portail_ancien/budget_execution/2019_note_sur_execution_provisoire_budget_etat_fin_mars_jd1605.doc (297 984 octets, SHA-256 fc6fada6f37c36b2d109e96e2af4318d82fcba054b40e17dfcb25e8de84160e0), ignorée par git. Titre français du catalogue, titre arabe non relevé. Utilisée par la série des recettes de la commercialisation des carburants (LF 2019 : 624 MD ; redevance sur le gazoduc : 515 MD), lue en couche texte ; pages non relevées ici. Date de parution non lue."
+    },
+    {
+      "id": "arrete-1970-08-07-tarifs-electricite-gaz",
+      "type": "legislation",
+      "title": "Arrêté du ministre d'État chargé de l'économie nationale du 7 août 1970 fixant les tarifs de l'énergie électrique",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "38",
+      "issued": {
+        "date-parts": [
+          [
+            1970,
+            8,
+            7
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1970/1970F/Jo03870.pdf",
+      "title-short": "Arrêté du 7 août 1970 (tarifs de l'électricité)",
+      "page": "1005-1006",
+      "note": "citation-key: arrete-1970-08-07-tarifs-electricite-gaz\nEffet le 1er janvier 1970 d'après la note documentaire. Tarif basse tension résidentiel par heures d'utilisation mensuelle (< 3 kVA : 45, 38, 30, 25 millimes/kWh selon la tranche), dégressif, sans prime fixe. Prononcé sur la délibération du conseil d'administration de la STEG du 13 décembre 1969. Preuve : texte lu à l'image (niveau A)."
+    },
+    {
+      "id": "arrete-1975-04-15-tarifs-electricite-gaz",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 15 avril 1975 fixant les tarifs de l'énergie électrique",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "26",
+      "issued": {
+        "date-parts": [
+          [
+            1975,
+            4,
+            15
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1975/1975F/Jo02675.pdf",
+      "title-short": "Arrêté du 15 avril 1975 (tarifs de l'électricité)",
+      "page": "758",
+      "note": "citation-key: arrete-1975-04-15-tarifs-electricite-gaz\nJORT n° 26 du 18 avril 1975 ; effet le 20 avril 1975 : 0-10 kWh par kVA et par mois : 45 millimes, au-delà : 35 (taxes comprises) ; abonnement de 100 millimes par mois. Preuve : texte lu à l'image (niveau A)."
+    },
+    {
+      "id": "arrete-1978-11-27-tarifs-electricite-gaz",
+      "type": "legislation",
+      "title": "Arrêté des ministres de l'industrie, des mines et de l'énergie et du commerce du 27 novembre 1978 fixant les tarifs de l'électricité et du gaz",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "80",
+      "issued": {
+        "date-parts": [
+          [
+            1978,
+            11,
+            27
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1978/1978F/Jo08078.pdf",
+      "title-short": "Arrêté du 27 novembre 1978 (tarifs de l'électricité et du gaz)",
+      "page": "3415-3417",
+      "note": "citation-key: arrete-1978-11-27-tarifs-electricite-gaz\nArrêté CONJOINT ; JORT n° 80 du 28 novembre 1978 ; effet le 30 novembre 1978 : prix unique de l'éclairage domestique (< 3 kVA), force motrice 46 millimes puis 42 au-delà de 10 kWh par kVA et par mois. Preuve : texte lu à l'image en partie (niveau A partiel : p. 3416 ; second chiffre du prix unique de l'éclairage illisible)."
+    },
+    {
+      "id": "arrete-1981-09-01-tarifs-electricite-gaz",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 1er septembre 1981 portant modification des tarifs de l'électricité et du gaz",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "55",
+      "issued": {
+        "date-parts": [
+          [
+            1981,
+            9,
+            1
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1981/1981F/Jo05581.pdf",
+      "title-short": "Arrêté du 1er septembre 1981 (tarifs de l'électricité et du gaz)",
+      "page": "2051-2052",
+      "note": "citation-key: arrete-1981-09-01-tarifs-electricite-gaz\nEffet le 31 août 1981 : fusion de l'éclairage et de la force motrice en un « tarif BT général » à prix unique, 58 millimes/kWh (taxe comprise). Intitulé d'après jort_cache. Preuve : texte lu à l'image en partie (niveau A partiel : p. 2051 lue)."
+    },
+    {
+      "id": "arrete-1982-09-30-tarifs-electricite-gaz",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 30 septembre 1982 fixant les tarifs de l'électricité et du gaz",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "63",
+      "issued": {
+        "date-parts": [
+          [
+            1982,
+            9,
+            30
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1982/1982F/Jo06382.pdf",
+      "title-short": "Arrêté du 30 septembre 1982 (tarifs de l'électricité et du gaz)",
+      "page": "2072-2073",
+      "note": "citation-key: arrete-1982-09-30-tarifs-electricite-gaz\nJORT n° 63 du 5 octobre 1982 ; effet le 29 septembre 1982 : tarif basse tension unique, 61 millimes/kWh (taxes comprises). Même fascicule que l'arrêté des prix des produits pétroliers du même jour. Preuve : texte lu à l'image (niveau A)."
+    },
+    {
+      "id": "arrete-1984-06-04-tarifs-electricite-gaz",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 4 juin 1984 fixant les tarifs de l'électricité",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "38",
+      "issued": {
+        "date-parts": [
+          [
+            1984,
+            6,
+            4
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1984/1984F/Jo03884.pdf",
+      "title-short": "Arrêté du 4 juin 1984 (tarifs de l'électricité)",
+      "page": "1378-1379",
+      "note": "citation-key: arrete-1984-06-04-tarifs-electricite-gaz\nJORT n° 38 du 15 juin 1984 ; effet le 31 mai 1984 : première apparition relevée de la tranche économique (1-2 kVA, 0-50 kWh par mois) à 51 millimes/kWh ; tranche normale 70 (taxes comprises). Preuve : texte lu à l'image (niveau A)."
+    },
+    {
+      "id": "arrete-1987-06-08-tarifs-electricite-gaz",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'énergie et des mines du 8 juin 1987 fixant les tarifs de l'électricité et du gaz",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "42",
+      "issued": {
+        "date-parts": [
+          [
+            1987,
+            6,
+            8
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1987/1987F/Jo04287.pdf",
+      "title-short": "Arrêté du 8 juin 1987 (tarifs de l'électricité et du gaz)",
+      "page": "757-759",
+      "note": "citation-key: arrete-1987-06-08-tarifs-electricite-gaz\nJORT n° 42 du 12 juin 1987 ; effet le 16 juin 1987 : tranche économique 59, tranche normale 72 (taxe à la production comprise) ; redevance de 100 millimes. Preuve : texte lu à l'image (niveau A)."
+    },
+    {
+      "id": "arrete-1990-12-19-tarifs-electricite-gaz",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie et des finances du 19 décembre 1990 fixant les tarifs de l'électricité et du gaz",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "86",
+      "issued": {
+        "date-parts": [
+          [
+            1990,
+            12,
+            19
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1990/1990F/Jo08690.pdf",
+      "title-short": "Arrêté du 19 décembre 1990 (tarifs de l'électricité et du gaz)",
+      "page": "2252-2253",
+      "note": "citation-key: arrete-1990-12-19-tarifs-electricite-gaz\nJORT n° 86 du 28 décembre 1990 (jort_cache : publication du 31 décembre) ; effet le 1er janvier 1991 : tranche économique 57, tranche normale 70 (hors TVA, 6 %). Dernier arrêté tarifaire de la série. Preuve : texte lu à l'image (niveau A)."
+    },
+    {
+      "id": "decision-1992-08-11-tarifs-electricite-gaz",
+      "type": "legislation",
+      "title": "Décision du ministre de l'économie nationale du 11 août 1992 fixant les tarifs de l'électricité et du gaz",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "56",
+      "issued": {
+        "date-parts": [
+          [
+            1992,
+            8,
+            11
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1992/1992F/Jo05692.pdf",
+      "title-short": "Décision du 11 août 1992 (tarifs de l'électricité et du gaz)",
+      "page": "1101-1102",
+      "note": "citation-key: decision-1992-08-11-tarifs-electricite-gaz\nJORT n° 56 du 28 août 1992, rubrique « avis et communications » ; signée Sadok Rabah ; art. 1 : « Les prix de vente hors taxe de l'électricité et du gaz sont fixés selon les tarifs annexés à la présente décision et applicables sur l'ensemble du territoire de la République » ; visas : loi n° 88-61 (TVA), loi n° 91-64 du 29 juillet 1991 (art. 3), décret-loi n° 62-8 du 3 avril 1962 (STEG), décrets n° 64-9 et 64-10 du 17 janvier 1964 (art. 19 et 20 des cahiers des charges), décret n° 76-826 (art. 36), décret n° 91-1996, arrêté du 19 décembre 1990. Effet le 1er août 1992 : tranche économique 59, tranche normale 76. Dernier acte tarifaire connu des métadonnées du JORT ; les grilles suivantes ne sont connues que par la STEG. Preuve : texte lu à l'image (niveau A ; pp. 17-18 du PDF du corpus local)."
+    },
+    {
+      "id": "decret91-1996",
+      "type": "legislation",
+      "title": "Décret n° 91-1996 du 23 décembre 1991 relatif aux produits et services exclus du régime de la liberté des prix et aux modalités de leur encadrement",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "88",
+      "issued": {
+        "date-parts": [
+          [
+            1991,
+            12,
+            23
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1991/1991F/Jo08891.pdf",
+      "title-short": "Décret n° 91-1996 du 23 décembre 1991",
+      "page": "2052-2056",
+      "note": "citation-key: decret91-1996\nJORT n° 88 du 24 décembre 1991 ; l'article 2 définit l'homologation comme « la fixation préalable par l'administration du niveau des prix ou de leurs variations » ; le tableau A (« Liste des produits et services soumis au régime de l'homologation des prix à tous les stades ») porte au n° 8 : « Électricité, eau et gaz » ; cadre de la décision du 11 août 1992. Rectifié en 1992 (annexes A et C, B). Le décret n° 2015-307 du 1er juin 2015 le modifie (intitulé seul connu). Preuve : texte lu par le documentaliste (art. 2 ; tableau A, n° 8 « Électricité, eau et gaz »)."
+    },
+    {
+      "id": "steg-ra-2007",
+      "type": "report",
+      "title": "Rapport annuel 2007",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport annuel 2007",
+      "URL": "https://web.archive.org/web/20090106042257/http://www.steg.com.tn/fr/institutionnel/publication/rapport_act2007/Rap_STEG_2007.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn/fr/institutionnel/publication/rapport_act2007/Rap_STEG_2007.pdf",
+      "note": "citation-key: steg-ra-2007\nDocument retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture suivante : horodatage 20090106042257 lu dans le CDX le 6 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2007_fr.pdf (3 153 705 octets, 58 pages, SHA-256 c8e4db827c66906ff39f6a64a103a61ebb798c5d766ec2ad1a39cc25c41266ef), ignorée par git. Cité pour : ajustements du 1er juillet et du 1er décembre 2007 (+6 % ; +6,9 % électricité, +8,3 % gaz) ; ventes d'électricité 2007 ; subvention d'exploitation 2007. Preuve : couche texte (états de résultat), à confronter à l'image avant publication ; pagination non relevée. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ra-2008",
+      "type": "report",
+      "title": "Rapport annuel 2008",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport annuel 2008",
+      "URL": "https://web.archive.org/web/20170821094055/http://steg.com.tn/fr/institutionnel/publication/rapport_act2008/Rap_STEG_2008.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://steg.com.tn/fr/institutionnel/publication/rapport_act2008/Rap_STEG_2008.pdf",
+      "note": "citation-key: steg-ra-2008\nDocument retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture suivante : horodatage 20170821094055 lu dans le CDX le 6 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2008_fr.pdf (46 739 241 octets, 62 pages, SHA-256 e66fa7dd6ae32a5a7641df0246f8e2dc459943a5253d598203a74e4d1c08eaca), ignorée par git. Cité pour : ajustements du 1er avril et du 1er septembre 2008 ; états de résultat : subvention d'exploitation 2008 (1 232 411 258 D). Preuve : couche texte (états de résultat), à confronter à l'image avant publication ; pagination non relevée. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ra-2009",
+      "type": "report",
+      "title": "Rapport annuel 2009",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport annuel 2009",
+      "URL": "https://web.archive.org/web/20130626163638/http://www.steg.com.tn:80/fr/institutionnel/publication/rapport_act2009/Rap_STEG_2009.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn:80/fr/institutionnel/publication/rapport_act2009/Rap_STEG_2009.pdf",
+      "note": "citation-key: steg-ra-2009\nDocument retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture suivante : horodatage 20130626163638 lu dans le CDX le 6 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2009_fr.pdf (5 319 017 octets, 64 pages, SHA-256 2a148c7b061ca0020be6339c813c9357caee15ac0621a854c034c2bc1d94b65f), ignorée par git. Cité pour : « il n'y a pas eu d'ajustement tarifaire » en 2009 ; subvention d'exploitation 2009 (560 300 119 D). Preuve : couche texte (états de résultat), à confronter à l'image avant publication ; pagination non relevée. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ra-2010",
+      "type": "report",
+      "title": "Rapport annuel 2010",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport annuel 2010",
+      "URL": "https://web.archive.org/web/20170821060534/http://steg.com.tn/fr/institutionnel/publication/rapport_act2010/Rap_STEG_2010.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://steg.com.tn/fr/institutionnel/publication/rapport_act2010/Rap_STEG_2010.pdf",
+      "note": "citation-key: steg-ra-2010\nDocument retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture suivante : horodatage 20170821060534 lu dans le CDX le 6 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2010_fr.pdf (19 519 422 octets, 66 pages, SHA-256 27e1efa948d560fe30a674aa3dd0943964a861987b129d5289ea778a676cbeaf), ignorée par git. Cité pour : « il n'y a pas eu d'ajustement tarifaire » en 2010 ; subvention d'exploitation 2010 (1 108 291 536 D). Preuve : couche texte (états de résultat), à confronter à l'image avant publication ; pagination non relevée. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ra-2011",
+      "type": "report",
+      "title": "Rapport annuel 2011",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport annuel 2011",
+      "URL": "https://web.archive.org/web/20170821061939/http://steg.com.tn/fr/institutionnel/publication/rapport_act2011/Rap_STEG_2011.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://steg.com.tn/fr/institutionnel/publication/rapport_act2011/Rap_STEG_2011.pdf",
+      "note": "citation-key: steg-ra-2011\nDocument retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture suivante : horodatage 20170821061939 lu dans le CDX le 6 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2011_fr.pdf (10 509 133 octets, 68 pages, SHA-256 75d0a35c10719ce5d3f3acfe93f70c42234c890b48833a4dd3764a7549d7a2c8), ignorée par git. Cité pour : « il n'y a pas eu d'ajustement tarifaire » en 2011 ; subvention d'exploitation 2011 (1 670 852 759 D). Preuve : couche texte (états de résultat), à confronter à l'image avant publication ; pagination non relevée. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ra-2012",
+      "type": "report",
+      "title": "Rapport annuel 2012",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport annuel 2012",
+      "URL": "https://web.archive.org/web/20170204044048/http://www.steg.com.tn/fr/institutionnel/publication/rapport_act2012/RA_2012_Vfr_STEG.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn/fr/institutionnel/publication/rapport_act2012/RA_2012_Vfr_STEG.pdf",
+      "note": "citation-key: steg-ra-2012\nDocument retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture suivante : horodatage 20170204044048 lu dans le CDX le 6 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2012_fr.pdf (6 884 172 octets, 76 pages, SHA-256 404f472dec8fd73665ee68d53f67b5ac3ff11e875a2fe37513ea9038784e22f2), ignorée par git. Cité pour : un ajustement en 2012 ; subvention d'exploitation 2012 (2 733 660 549 D). Preuve : couche texte (états de résultat), à confronter à l'image avant publication ; pagination non relevée. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ra-2013",
+      "type": "report",
+      "title": "Rapport annuel 2013",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport annuel 2013",
+      "URL": "https://web.archive.org/web/20170204044155/http://www.steg.com.tn/fr/institutionnel/publication/rapport_act2013/fr/Rapport_annuel_fr_steg_2013.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn/fr/institutionnel/publication/rapport_act2013/fr/Rapport_annuel_fr_steg_2013.pdf",
+      "note": "citation-key: steg-ra-2013\nDocument retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture suivante : horodatage 20170204044155 lu dans le CDX le 6 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2013_fr.pdf (2 808 111 octets, 72 pages, SHA-256 a8433d06368f597e5f1eab1a2c9c2ad7a757f004c522d890fcb613f7421c1111), ignorée par git. Cité pour : subvention d'exploitation 2013 (2 768 794 154 D). Preuve : couche texte (états de résultat), à confronter à l'image avant publication ; pagination non relevée. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ra-2014",
+      "type": "report",
+      "title": "Rapport annuel 2014",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport annuel 2014",
+      "URL": "https://web.archive.org/web/20170204044330/http://www.steg.com.tn/fr/institutionnel/publication/rapport_act2014/Rapport_Annuel_STEG_2014_fr.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn/fr/institutionnel/publication/rapport_act2014/Rapport_Annuel_STEG_2014_fr.pdf",
+      "note": "citation-key: steg-ra-2014\nDocument retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture suivante : horodatage 20170204044330 lu dans le CDX le 6 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2014_fr.pdf (7 573 808 octets, 76 pages, SHA-256 d05d320e7a45792ddaf61b08af2a0c1f0267164862d46047da1e6849c444ffa4), ignorée par git. Cité pour : subvention d'exploitation 2014 (2 323 093 080 D). Preuve : couche texte (états de résultat), à confronter à l'image avant publication ; pagination non relevée. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ra-2015",
+      "type": "report",
+      "title": "Rapport annuel 2015",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport annuel 2015",
+      "URL": "https://web.archive.org/web/20170821095427/http://steg.com.tn/fr/institutionnel/publication/rapport_act2015/Rapport_Annuel_steg_2015_fr.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://steg.com.tn/fr/institutionnel/publication/rapport_act2015/Rapport_Annuel_steg_2015_fr.pdf",
+      "note": "citation-key: steg-ra-2015\nDocument retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture suivante : horodatage 20170821095427 repris des notes documentaires, NON relu au CDX (archive du web hors service ce jour). Copie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2015_fr.pdf (1 549 951 octets, 78 pages, SHA-256 f126588f0b30ddd2aaeecec3cbf60dd05f2cf5e1aff259145a8ae3560dfa837c), ignorée par git. Cité pour : subvention d'exploitation 2015 (858 000 000 D, égale au dinar à la subvention budgétaire à la STEG). Preuve : couche texte (états de résultat), à confronter à l'image avant publication ; pagination non relevée. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ra-2016",
+      "type": "report",
+      "title": "Rapport annuel 2016",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport annuel 2016",
+      "URL": "https://web.archive.org/web/20180417114837/http://www.steg.com.tn:80/fr/institutionnel/publication/rapport_act2016/Rapport_FR2016.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn:80/fr/institutionnel/publication/rapport_act2016/Rapport_FR2016.pdf",
+      "note": "citation-key: steg-ra-2016\nDocument retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture suivante : horodatage 20180417114837 lu dans le CDX le 6 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2016_fr.pdf (1 087 558 octets, 98 pages, SHA-256 f7c7ac2ccdbd63f4808a2cf3ff0470993debca4199a0aee851f8f0f1f76495fd), ignorée par git. Cité pour : subvention d'exploitation 2016 (0). Preuve : couche texte (états de résultat), à confronter à l'image avant publication ; pagination non relevée. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ra-2017",
+      "type": "report",
+      "title": "Rapport annuel 2017",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport annuel 2017",
+      "URL": "https://web.archive.org/web/20190207101143/http://www.steg.com.tn/fr/institutionnel/publication/rapport_act2017/Rapport_Activite_steg_2017_fr.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn/fr/institutionnel/publication/rapport_act2017/Rapport_Activite_steg_2017_fr.pdf",
+      "note": "citation-key: steg-ra-2017\nDocument retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture suivante : horodatage 20190207101143 lu dans le CDX le 6 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2017_fr.pdf (12 021 653 octets, 97 pages, SHA-256 15c65b9532c07e5179cb17770e2c9bb993eb0a306982f3438fa63086a38db315), ignorée par git. Cité pour : subvention d'exploitation 2017 (593 166 247 D). Preuve : couche texte (états de résultat), à confronter à l'image avant publication ; pagination non relevée. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ra-2018",
+      "type": "report",
+      "title": "Rapport annuel 2018",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport annuel 2018",
+      "URL": "https://web.archive.org/web/20211127000533/https://www.steg.com.tn/fr/institutionnel/publication/rapport_act2018/Rapport_Annuel_steg_2018_fr.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "https://www.steg.com.tn/fr/institutionnel/publication/rapport_act2018/Rapport_Annuel_steg_2018_fr.pdf",
+      "note": "citation-key: steg-ra-2018\nDocument retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture suivante : horodatage 20211127000533 lu dans le CDX le 6 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2018_fr.pdf (81 680 461 octets, 82 pages, SHA-256 3f1176deaea3781f0cdd2873682a3aa394fa94202e95bc0fdf40b77ae76e05d5), ignorée par git. Cité pour : subvention d'exploitation 2018 (1 200 000 000 D). Preuve : couche texte (états de résultat), à confronter à l'image avant publication ; pagination non relevée. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ra-2019",
+      "type": "report",
+      "title": "Rapport annuel 2019",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport annuel 2019",
+      "URL": "https://web.archive.org/web/20210709232913/https://www.steg.com.tn/fr/institutionnel/publication/rapport_act2019/Rapport_Annuel_steg_2019_fr.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "https://www.steg.com.tn/fr/institutionnel/publication/rapport_act2019/Rapport_Annuel_steg_2019_fr.pdf",
+      "note": "citation-key: steg-ra-2019\nDocument retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture suivante : horodatage 20210709232913 lu dans le CDX le 6 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2019_fr.pdf (7 015 669 octets, 82 pages, SHA-256 7c78b4e4c51420e163abeb521f8ce0bbd12b00cf8e5cdf885dc84868f52d8832), ignorée par git. Cité pour : subvention d'exploitation 2019 (1 242 000 000 D) ; ventes d'électricité 2019. Preuve : couche texte (états de résultat), à confronter à l'image avant publication ; pagination non relevée. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ra-2020",
+      "type": "report",
+      "title": "Rapport annuel 2020",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport annuel 2020",
+      "URL": "https://web.archive.org/web/20211126230546/https://www.steg.com.tn/fr/institutionnel/publication/rapport_act2020/Rapport_Annuel_steg_2020_fr.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "https://www.steg.com.tn/fr/institutionnel/publication/rapport_act2020/Rapport_Annuel_steg_2020_fr.pdf",
+      "note": "citation-key: steg-ra-2020\nDocument retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture suivante : horodatage 20211126230546 lu dans le CDX le 6 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2020_fr.pdf (19 190 411 octets, 82 pages, SHA-256 be875766fba948753af1ef72e0390809ce4e24f65c8385006ab93562810d5bb2), ignorée par git. Cité pour : subvention d'exploitation 2020 (100 000 000 D). Preuve : couche texte (états de résultat), à confronter à l'image avant publication ; pagination non relevée. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ra-2021",
+      "type": "report",
+      "title": "Rapport annuel 2021",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport annuel 2021",
+      "URL": "https://www.steg.com.tn/system/files/pdf/Rapport_Annuel_steg_2021_fr.pdf",
+      "note": "citation-key: steg-ra-2021\nDocument en ligne sur le site de la STEG (HTTP 200 le 6 octobre 2026) ; Capture du 01/09/2025 (horodatage 20250901140524) téléchargée le 6 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2021_fr.pdf (10 644 738 octets, 74 pages, SHA-256 bf728757cb1b7ef51cdb66771669660649cb9a6a362604075d44cb07145c75f8), ignorée par git. Cité pour : subvention d'exploitation 2021 (1 368 776 684 D). Preuve : couche texte (états de résultat), à confronter à l'image avant publication ; pagination non relevée. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-grille-2004-05-01",
+      "type": "webpage",
+      "title": "Tarifs de l'électricité et du gaz de la STEG, grille du 1er mai 2004 (page « Tarifs » du site)",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "grille du 1er mai 2004 (page « Tarifs » du site)",
+      "URL": "https://web.archive.org/web/20041029082857/http://www.steg.com.tn:80/fr/clients_res/tarif.html",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn:80/fr/clients_res/tarif.html",
+      "note": "citation-key: steg-grille-2004-05-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; page HTML capturée (grille du 1er mai 2004 pour l'électricité, du 1er août 2004 pour le gaz basse pression) : BT économique ≤ 50 kWh/mois 65, normale 99 millimes/kWh ; redevance 150 ; pas de copie locale (page HTML conservée dans le scratchpad de la collecte, non versée). Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20041029082857 lu dans le CDX le 6 octobre 2026. Aucune copie locale. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+    },
+    {
+      "id": "steg-grille-2006-01-01",
+      "type": "webpage",
+      "title": "Tarifs de l'électricité et du gaz de la STEG, grille du 1er janvier 2006 (page « Tarifs » du site)",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "grille du 1er janvier 2006 (page « Tarifs » du site)",
+      "URL": "https://web.archive.org/web/20060212011520/http://www.steg.com.tn:80/fr/clients_res/tarif.html",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn:80/fr/clients_res/tarif.html",
+      "note": "citation-key: steg-grille-2006-01-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; page HTML capturée : BT économique ≤ 50 kWh 68, au-delà 75 puis 114 ; normale 114 (1-300) et 127 ; redevance 200 ; pas de copie locale. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20060212011520 lu dans le CDX le 6 octobre 2026. Aucune copie locale. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+    },
+    {
+      "id": "steg-grille-2008-09-01",
+      "type": "report",
+      "title": "Tarifs de l'électricité de la STEG, basse tension, grille du 1er septembre 2008",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "basse tension, grille du 1er septembre 2008",
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "URL": "https://web.archive.org/web/20090824044315/http://www.steg.com.tn:80/dwl/tarifsbt01092008.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn:80/dwl/tarifsbt01092008.pdf",
+      "note": "citation-key: steg-grille-2008-09-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT économique 74 ; 90/131 ; 131/174 ; redevance 200. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20090824044315 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_20080901.pdf (54 404 octets, SHA-256 265c7265d8ea92d00b389f2bf2a6c23509bfc64688308deb0ebb32f63eb82fa1), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BP : steg_tarifs_bp_20080901.pdf, capture 20110811140449 de http://www.steg.com.tn/dwl/tarifsbp01092008_fr.pdf, SHA-256 6e4c5f00d7b10b94203e8370c8befaea420c9ce9f57f43f327e05d22d0fdbdd6. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+    },
+    {
+      "id": "steg-grille-2010-06-01",
+      "type": "report",
+      "title": "Tarifs de l'électricité de la STEG, basse tension, grille du 1er juin 2010",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "basse tension, grille du 1er juin 2010",
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "URL": "https://web.archive.org/web/20110626130636/http://www.steg.com.tn:80/dwl/tarifsbt01062010.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn:80/dwl/tarifsbt01062010.pdf",
+      "note": "citation-key: steg-grille-2010-06-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 75 ; 92/133 ; 133/186 ; redevance 200. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20110626130636 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_20100601.pdf (54 117 octets, SHA-256 6c000bf2a9a6307eea42f712b919be1e5a619eb72d758e3c94c7d89cbe2fb938), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BP : steg_tarifs_bp_20100601.pdf, capture 20110626220007 de http://www.steg.com.tn:80/dwl/tarifsbp01062010_fr.pdf, SHA-256 935e0b2d22a51de1d78d42e6baba2a64dc6f737ce78132383d96cb33ae1de3d3; MP : steg_tarifs_mp_20100601.pdf, capture 20111018092743 de http://www.steg.com.tn:80/dwl/tarifsmp01062010.pdf, SHA-256 dffbd79cb0176762965d3aa44fb9f1093becd3b7da07c5387062035d9f55f68c; MT : steg_tarifs_mt_20100601.pdf, capture 20111018092916 de http://www.steg.com.tn:80/dwl/tarifsmt01062010.pdf, SHA-256 aba8d394b6b878081314f2900dfc4b37f24fb66daed453c4dac463e82ad39404. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+    },
+    {
+      "id": "steg-grille-2012-09-01",
+      "type": "report",
+      "title": "Tarifs de l'électricité de la STEG, basse tension, grille du 1er septembre 2012",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "basse tension, grille du 1er septembre 2012",
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "URL": "https://web.archive.org/web/20130320000619/http://www.steg.com.tn:80/dwl/tarifsbt01092012_fr.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn:80/dwl/tarifsbt01092012_fr.pdf",
+      "note": "citation-key: steg-grille-2012-09-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 75 ; 92/135 ; 135/200 ; redevance 300. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20130320000619 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_20120901.pdf (40 567 octets, SHA-256 82319d7f2d31ccdeb4b9a7f337bf5ad9e6cd1492f4894e68bdd2d9d7aec57c74), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : MT : steg_tarifs_mt_20120901.pdf, capture 20130319025048 de http://www.steg.com.tn:80/dwl/tarifsmt01092012.pdf, SHA-256 d8238a18742b75f2df2797bfa40312d0ca633cd68dc9d1389408e87bbe527705. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+    },
+    {
+      "id": "steg-grille-2014-05-01",
+      "type": "report",
+      "title": "Tarifs de l'électricité de la STEG, basse tension, grille du 1er mai 2014",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "basse tension, grille du 1er mai 2014",
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "URL": "https://web.archive.org/web/20161120205355/http://www.steg.com.tn/dwl/tarifs/2014/tarifsbt01052014_fr.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn/dwl/tarifs/2014/tarifsbt01052014_fr.pdf",
+      "note": "citation-key: steg-grille-2014-05-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT ≤ 50 : 75 ; 51-100 : 108 ; 101-200 : 140 ; au-delà 151, 184, 280, 350 ; redevance 500. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20161120205355 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_20140501.pdf (4 031 454 octets, SHA-256 edd6e968809007d02eb4fd293e7c1c9136cb4044775f027c3d081d4548d96f57), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BP : steg_tarifs_bp_20140501.pdf, capture 20240327160857 de https://www.steg.com.tn/dwl/tarifs/2014/tarifsbp01052014_fr.pdf, SHA-256 a1c2d928c003499ac587cf698430fb9a87f96c38c6760a3c9c833f5c7cd90671; HP : steg_tarifs_hp_20140501.pdf, capture 20170820233758 de http://steg.com.tn/dwl/tarifs/2014/tarifshp01052014_fr.pdf, SHA-256 8b8c1436c34ff18179de0e67359d52fbce08dda0cb0657a9a6ece732ed0cac8c; MP : steg_tarifs_mp_20140501.pdf, capture 20240327162957 de https://www.steg.com.tn/dwl/tarifs/2014/tarifsmp01052014_fr.pdf, SHA-256 67bfd37d09dbec30d1f989317f556040b7f8c3b43b6cbb87c4ad0c611fc5c606; MT : steg_tarifs_mt_20140501.pdf, capture 20170808001608 de http://www.steg.com.tn:80/dwl/tarifs/2014/tarifsmt01052014_fr.pdf, SHA-256 f7539fc8a17f158a3e0e9cbcd2ed88a7c49aca1a3ea60eddc8b1b15cd5f42654. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+    },
+    {
+      "id": "steg-grille-2017-01-01",
+      "type": "report",
+      "title": "Tarifs de l'électricité de la STEG, basse tension, grille du 1er janvier 2017",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "basse tension, grille du 1er janvier 2017",
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "URL": "https://web.archive.org/web/20170326125702/http://www.steg.com.tn:80/dwl/tarifs/2017/tarifsbt04012017_fr.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn:80/dwl/tarifs/2017/tarifsbt04012017_fr.pdf",
+      "note": "citation-key: steg-grille-2017-01-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 75 ; 108 ; 162 puis 167, 198, 285, 350 ; redevance 500. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20170326125702 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_20170104.pdf (241 907 octets, SHA-256 8fb6c411f6bc202b90d31784e06d892abe2f245773ec7f235794a9676b5be3e6), ignorée par git. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+    },
+    {
+      "id": "steg-grille-2018-09-01",
+      "type": "report",
+      "title": "Tarifs de l'électricité de la STEG, basse tension, grille du 1er septembre 2018",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "basse tension, grille du 1er septembre 2018",
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "URL": "https://web.archive.org/web/20180921003335/http://www.steg.com.tn:80/dwl/tarifs/2018/tarifsbt_fr.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn:80/dwl/tarifs/2018/tarifsbt_fr.pdf",
+      "note": "citation-key: steg-grille-2018-09-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 75 ; 108 ; au-delà de 100 : 176, 218, 295, 355 ; redevance 700. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20180921003335 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_2018b.pdf (253 346 octets, SHA-256 852e98f749f4396782c0c094f499517a9e54a3ab8e4434566260b714cd1a05b0), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BP : steg_tarifs_bp_2018b.pdf, capture 20180921013937 de http://www.steg.com.tn:80/dwl/tarifs/2018/tarifsbp_fr.pdf, SHA-256 aa246e66066e90a5e20a166b9eb536edfd0143262df8a3fbd37e2aaa7bc9c72f; MP : steg_tarifs_mp_2018b.pdf, capture 20180613124840 de http://www.steg.com.tn:80/dwl/tarifs/2018/tarifsmp_fr.pdf, SHA-256 42572b5c90b19c612ee17963e5d2d2aebce68cf198f507abf58e10cc74e884a3; MT : steg_tarifs_mt_2018b.pdf, capture 20180614020128 de http://www.steg.com.tn:80/dwl/tarifs/2018/tarifsmt_fr.pdf, SHA-256 df4415bdaeb161c2bac2fd1ba7e628abc561cc3f20bdcc220df8576519b37582. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+    },
+    {
+      "id": "steg-grille-2019-06-01",
+      "type": "report",
+      "title": "Tarifs de l'électricité de la STEG, basse tension, grille du 1er juin 2019",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "basse tension, grille du 1er juin 2019",
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "URL": "https://web.archive.org/web/20210118114529/https://www.steg.com.tn/dwl/tarifs/2019/tarifsbt_fr.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "https://www.steg.com.tn/dwl/tarifs/2019/tarifsbt_fr.pdf",
+      "note": "citation-key: steg-grille-2019-06-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 62 ; 96 ; 176 ; 218 ; 341 ; 414 ; redevance 700. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20210118114529 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_2019.pdf (163 723 octets, SHA-256 49fd181337384a1660376d35a655b133ebcf4fcb013b1c26648ed5b8c6f594a9), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BP : steg_tarifs_bp_2019.pdf, capture 20211018094131 de https://www.steg.com.tn/dwl/tarifs/2019/tarifsbp_fr.pdf, SHA-256 63a034a8d40119b533f9cf966c40f524538716954ebe9bd032f1eede132e46e6; MT : steg_tarifs_mt_2019.pdf, capture 20190712163033 de http://www.steg.com.tn:80/dwl/tarifs/2019/tarifsmt_fr.pdf, SHA-256 61fd09c5d78edb1f4397def2b7939e6b49a97a4237481eff1b23135b1612fec3. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+    },
+    {
+      "id": "steg-grille-2022-05-01",
+      "type": "report",
+      "title": "Tarifs de l'électricité de la STEG, basse tension, grille du 1er mai 2022 (en vigueur)",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "basse tension, grille du 1er mai 2022 (en vigueur)",
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "URL": "https://www.steg.com.tn/system/files/pdf/tarifsbt_fr.pdf",
+      "note": "citation-key: steg-grille-2022-05-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 62 ; 96 ; puis prix unique selon la tranche atteinte : 176, 218, 341, 414 ; redevance 700 ; taxe du Fonds de transition énergétique portée de 1 à 5 millimes/kWh au 1er janvier 2024 (même grille, capture 20250331010328 du fichier tarifs_bt.pdf). Fichier encore en ligne sur le site de la STEG (HTTP 200 le 6 octobre 2026) ; capture du 14/06/2025 (horodatage 20250614125406 lu dans le CDX le 6 octobre 2026) téléchargée. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_sys_2025.pdf (197 890 octets, SHA-256 39cb877e0c3636603fc0e2f0fc852b092ac6a92d149dfc3c634a9c7e9071b327), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BT : steg_tarifs_bt_2024.pdf, capture 20250331010328 de https://www.steg.com.tn/dwl/tarifs/2024/tarifs_bt.pdf, SHA-256 73e03125cd7cdbf1bd08de659871d6e3f4cf3dacdd669d03f5277d9d02e1d627; BP : steg_tarifs_bp_sys_2025.pdf, capture 20250614125512 de https://www.steg.com.tn/system/files/pdf/tarifsbp_fr.pdf, SHA-256 69cff53e18d7bed7290f238b1a334eae20584437525b1b60b797b4a6f5f47699; GAZ : steg_tarifs_gaz_2024.pdf, capture 20250331004835 de https://www.steg.com.tn/dwl/tarifs/2024/tarifs_hp_mp_bp.pdf, SHA-256 6c71d378a95c299b5973fabfdb3586317c3a8347b194d9e7b2a1d366bb50ec15. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+    },
+    {
+      "id": "minfin-budget-citoyen-2021",
+      "type": "report",
+      "title": "Budget citoyen 2021",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances"
+        }
+      ],
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "Ministère des finances, Budget citoyen 2021",
+      "URL": "http://www.finances.gov.tn/sites/default/files/2021-03/Budget%20Citoyen%202021%20FR.pdf",
+      "note": "citation-key: minfin-budget-citoyen-2021\nFichier « Budget Citoyen 2021 FR.pdf » encore en ligne sur finances.gov.tn (HTTP 200, PDF, le 6 octobre 2026) ; capture de contrôle horodatage 20210403014525 lu dans le CDX le 6 octobre 2026. Subvention unitaire PRÉVISIONNELLE (à l'hypothèse de baril de la loi de finances), non réalisée ; p. 3 (OCR, passage relu) : bouteille de gaz : coût 18 500 millimes, prix payé 7 700, subvention unitaire 10 800 ; hypothèse de 45 $ le baril, +1 $ = +129 MD ; subvention aux hydrocarbures 401 MD, qui « concerne principalement la bouteille de gaz ». Preuve : voir le passage (image lue ou OCR relu). Document (édition française) téléchargé dans la collecte du 6 octobre 2026 ; copie de travail hors entrepôt, non déposée dans tunisia-data. Titre arabe non relevé. Les éditions 2018 et 2020 n'ont pas été lues (OCR sans résultat) ; l'édition 2014 ne donne que trois postes."
+    },
+    {
+      "id": "minfin-budget-citoyen-2022",
+      "type": "report",
+      "title": "Budget citoyen 2022 (édition arabe)",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances"
+        }
+      ],
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "Ministère des finances, Budget citoyen 2022",
+      "URL": "http://www.finances.gov.tn/sites/default/files/2022-04/Budget%20citoyen%20AR.pdf",
+      "note": "citation-key: minfin-budget-citoyen-2022\nFichier « Budget citoyen AR.pdf » encore en ligne sur finances.gov.tn (HTTP 200, PDF, le 6 octobre 2026) ; capture de contrôle horodatage 20220415165506 lu dans le CDX le 6 octobre 2026. Subvention unitaire PRÉVISIONNELLE (à l'hypothèse de baril de la loi de finances), non réalisée ; p. 4 (image lue) : essence, gasoil, gasoil 50 : coût 3 325 ; 2 754 ; 3 071 millimes le litre, prix payé 2 220 ; 1 705 ; 1 915, subvention unitaire 1 105 ; 1 049 ; 1 156 ; bouteille de gaz 41 D, 7,7 D, 33 D ; baril à 100 $ (budget bâti sur 75 $ ; +1 $ = +137 MD ; dotation 2 891 MD). Preuve : voir le passage (image lue ou OCR relu). Document (édition arabe) téléchargé dans la collecte du 6 octobre 2026 ; copie de travail hors entrepôt, non déposée dans tunisia-data. Titre arabe non relevé. Les éditions 2018 et 2020 n'ont pas été lues (OCR sans résultat) ; l'édition 2014 ne donne que trois postes."
+    },
+    {
+      "id": "minfin-budget-citoyen-2023",
+      "type": "report",
+      "title": "Budget citoyen 2023 (édition arabe)",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances"
+        }
+      ],
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "Ministère des finances, Budget citoyen 2023",
+      "URL": "http://www.finances.gov.tn/sites/default/files/2023-07/Budget%20Citoyen%202023.pdf",
+      "note": "citation-key: minfin-budget-citoyen-2023\nFichier « Budget Citoyen 2023.pdf » encore en ligne sur finances.gov.tn (HTTP 200, PDF, le 6 octobre 2026) ; capture de contrôle horodatage 20230705180956 lu dans le CDX le 6 octobre 2026. Subvention unitaire PRÉVISIONNELLE (à l'hypothèse de baril de la loi de finances), non réalisée ; p. 4 (image lue) : essence : coût 3 396, prix payé 2 525, subvention unitaire 871 ; gasoil, gasoil 50 : 2 820 ; 3 140, 1 985 ; 2 205, 835 ; 935 ; bouteille 42 D, 8,8 D, 33 D ; baril à 89 $ ; +1 $ = +141 MD ; dotation 5 669 MD. Preuve : voir le passage (image lue ou OCR relu). Document (édition arabe) téléchargé dans la collecte du 6 octobre 2026 ; copie de travail hors entrepôt, non déposée dans tunisia-data. Titre arabe non relevé. Les éditions 2018 et 2020 n'ont pas été lues (OCR sans résultat) ; l'édition 2014 ne donne que trois postes."
+    },
+    {
+      "id": "minfin-budget-citoyen-2024",
+      "type": "report",
+      "title": "Budget citoyen 2024 (édition arabe)",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances"
+        }
+      ],
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "Ministère des finances, Budget citoyen 2024",
+      "URL": "https://web.archive.org/web/20240325063532/http://www.finances.gov.tn/sites/default/files/2024-01/%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B7%D9%86%20digitale%20(4).pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.finances.gov.tn/sites/default/files/2024-01/%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B7%D9%86%20digitale%20(4).pdf",
+      "note": "citation-key: minfin-budget-citoyen-2024\nFichier « ميزانية المواطن digitale (4).pdf » retiré du site (l'adresse répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20240325063532 lu dans le CDX le 6 octobre 2026. Subvention unitaire PRÉVISIONNELLE (à l'hypothèse de baril de la loi de finances), non réalisée ; p. 9 (image lue) : essence : coût 3 055, prix payé 2 525, subvention unitaire 530 ; gasoil, gasoil 50 : 2 511 ; 2 813, 1 985 ; 2 205, 526 ; 608 ; bouteille 36 D, 8,8 D, 27 D ; baril à 81 $ ; +1 $ = +144 MD ; +10 millimes de change = +57 MD ; dotation 7 086 MD. Preuve : voir le passage (image lue ou OCR relu). Document (édition arabe) téléchargé dans la collecte du 6 octobre 2026 ; copie de travail hors entrepôt, non déposée dans tunisia-data. Titre arabe non relevé. Les éditions 2018 et 2020 n'ont pas été lues (OCR sans résultat) ; l'édition 2014 ne donne que trois postes."
+    },
+    {
+      "id": "bm-2013-82712",
+      "type": "report",
+      "title": "Vers une meilleure équité : les subventions énergétiques, le ciblage et la protection sociale en Tunisie",
+      "author": [
+        {
+          "literal": "Banque mondiale"
+        }
+      ],
+      "publisher": "Banque mondiale",
+      "publisher-place": "Washington, D.C.",
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            11
+          ]
+        ]
+      },
+      "URL": "https://documents1.worldbank.org/curated/en/915461468308679840/pdf/827120WP0P12850Box0382091B00PUBLIC0.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "Banque mondiale (2013), subventions énergétiques",
+      "note": "citation-key: bm-2013-82712\nNote politique, Rapport n° 82712-TN, novembre 2013, Division Maghreb, Région Moyen-Orient et Afrique du Nord (page de titre lue ; titre anglais de la notice : « Towards greater equity: energy subsidies, targeting and social protection in Tunisia »). Notice : https://documents.worldbank.org/en/publication/documents-reports/documentdetail/915461468308679840 ; PDF HTTP 200 le 6 octobre 2026. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/wb_2013_82712_subventions_energetiques_fr.pdf (3 954 761 octets, 59 pages, SHA-256 a35c9072d4c761481b37139f463e572bc24aba9a33bdb838464e08ca23eb5931), ignorée par git. Famille : rapport extérieur. MÉTHODE : subventions implicites calculées par l'écart de prix (« price-gap […] qui tient compte des différences entre les prix globaux et les prix au détail ») ; incidence d'après l'enquête budget-consommation de l'INS, 2005 et 2010. Pages (couche texte) : tableau 1, p. imprimée 5 (subvention par produit 2013, en avril et prévue en fin d'année) ; tableau 5 (blocs de consommation d'électricité : 0-50 kWh = 1,3 % de la population, 50-300 kWh = 55,1 %, 300 kWh et plus = 43,6 %) ; taux de subvention de l'électricité en avril 2013 : 37 % (tableau 1) ; tableau 16, p. 41 (subvention unitaire en avril 2013) ; incidence par quintile, pp. 22-26 du PDF. Ne pas mêler aux séries officielles."
+    },
+    {
+      "id": "fmi-2002-cr02122",
+      "type": "report",
+      "title": "Tunisia: 2002 Article IV Consultation — Staff Report and Public Information Notice on the Executive Board Discussion",
+      "author": [
+        {
+          "literal": "International Monetary Fund"
+        }
+      ],
+      "collection-title": "IMF Country Report",
+      "publisher": "International Monetary Fund",
+      "publisher-place": "Washington, D.C.",
+      "issued": {
+        "date-parts": [
+          [
+            2002,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.imf.org/external/pubs/ft/scr/2002/cr02122.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "FMI, Country Report n° 02/122",
+      "note": "citation-key: fmi-2002-cr02122\nIMF Country Report n° 02/122 ; titre et date (« June 2002 ») lus par OCR sur la page 1. Adresse imf.org établie par le CDX (captures de 2003 et 2006, HTTP 200) ; imf.org répond 403 aux robots mais sert le document aux lecteurs. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/imf_2002_122_art4_tunisia.pdf (2 065 375 octets, 57 pages, SHA-256 e590da48d0061f6c4723c4a7f024b21e475def2c9204c8015b5404a7d5d2a053), ignorée par git ; PDF image, lu par OCR (tesseract). § 12, p. 13 : « domestic petroleum prices were not raised during the year » (2001) : aucune hausse en 2001, d'où la ligne 2001 du jeu de données ouvertes du ministère, recopie de 2000. Famille : rapport extérieur. Preuve : OCR, passage lu."
+    },
+    {
+      "id": "gtz-1999-fuel-prices",
+      "type": "report",
+      "title": "Fuel Prices and Taxation, with comparative tables for 160 countries",
+      "author": [
+        {
+          "family": "Metschies",
+          "given": "Gerhard P."
+        }
+      ],
+      "publisher": "Deutsche Gesellschaft für Technische Zusammenarbeit (GTZ)",
+      "publisher-place": "Eschborn",
+      "issued": {
+        "date-parts": [
+          [
+            1999,
+            5
+          ]
+        ]
+      },
+      "URL": "https://web.archive.org/web/20050317233048/http://www.internationalfuelprices.com:80/downloads/FuelPrices1999.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.internationalfuelprices.com:80/downloads/FuelPrices1999.pdf",
+      "title-short": "GTZ, Fuel Prices (1999)",
+      "note": "citation-key: gtz-1999-fuel-prices\nPage de titre lue : « mai 1999 », Gerhard P. Metschies, GTZ. Document introuvable à son adresse d'origine (l'adresse ne sert plus le fichier le 6 octobre 2026) ; consulté dans la capture : horodatage 20050317233048 lu dans le CDX le 6 octobre 2026. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/gtz_1999_fuel_prices_taxation.pdf (1 149 624 octets, 96 pages, SHA-256 bc65dc1ad8837b36697ca4f4c2e7dba372a72bfc51e80f4acdd5fcb5cd0ffaa8), ignorée par git. p. 54 (Tunisie), image lue : novembre 1998 : essence normale, super et sans plomb 0,655 D/l ; gasoil 0,357 D/l (relevé des prix affichés dans la capitale, par questionnaire aux bureaux locaux) : confirme les niveaux inférés pour la hausse de 1998. Famille : organisation internationale (relevé des prix affichés), source tertiaire."
+    },
+    {
+      "id": "gtz-2001-fuel-prices",
+      "type": "report",
+      "title": "Fuel Prices and Vehicle Taxation, with comparative tables for more than 160 countries (2e éd.)",
+      "author": [
+        {
+          "family": "Metschies",
+          "given": "Gerhard P."
+        }
+      ],
+      "publisher": "Deutsche Gesellschaft für Technische Zusammenarbeit (GTZ)",
+      "publisher-place": "Eschborn",
+      "issued": {
+        "date-parts": [
+          [
+            2001,
+            10
+          ]
+        ]
+      },
+      "URL": "https://web.archive.org/web/20040401084031/http://www.zietlow.com:80/docs/Fuel%202000.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.zietlow.com:80/docs/Fuel%202000.pdf",
+      "title-short": "GTZ, Fuel Prices (2001)",
+      "note": "citation-key: gtz-2001-fuel-prices\nPage de titre lue : « octobre 2001 », Gerhard P. Metschies, GTZ. Document introuvable à son adresse d'origine (l'adresse ne sert plus le fichier le 6 octobre 2026) ; consulté dans la capture : horodatage 20040401084031 lu dans le CDX le 6 octobre 2026. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/gtz_2001_fuel_prices_vehicle_taxation.pdf (1 352 485 octets, 99 pages, SHA-256 1e39d99b429e3bab05995f9bbd38dd5be402d2de39f63d2d58d55ab53a104bb4), ignorée par git. p. 54 (Tunisie), image lue : novembre 2000 : super 0,71 D/l (concorde) ; gasoil 0,43 D/l (DISCORDANT avec les 415 millimes de la série du ministère). Famille : organisation internationale (relevé des prix affichés), source tertiaire."
     }
   ]
 }
