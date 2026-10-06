@@ -606,7 +606,7 @@ local (scans sans couche texte ; l'océrisation n'a servi qu'à repérer les pag
 
 | Texte | Fascicule | Pages lues |
 |---|---|---|
-| Loi n° 69-35 du 26 juin 1969, portant code des investissements | JORT n° 24 des 20-24-27 juin 1969 | p. 766-769 (20 articles, annexes I et II) ; les deux rectificatifs (n° 25 et 28) ne sont pas lus |
+| Loi n° 69-35 du 26 juin 1969, portant code des investissements | JORT n° 24 des 20-24-27 juin 1969 | p. 766-769 (20 articles, annexes I et II) ; rectificatifs lus à l'image : JORT n° 25 des 1^er^-4 juillet 1969, p. 810, et n° 28 des 25-29 juillet-1^er^ août 1969, p. 912 — corrections de rédaction (art. 6 : « l'égalité devant la loi » ; art. 15, 1° : « déduction » de la taxe à la production ; annexes I et II), aucune ne touche un seuil ni une durée des articles 8 à 14 |
 | Loi n° 72-38 du 27 avril 1972, portant création d'un régime particulier pour les industries produisant pour l'exportation | JORT n° 17 des 21-25-28 avril 1972 | p. 530-532 (15 articles) |
 | Loi n° 74-74 du 3 août 1974, relative aux investissements dans les industries manufacturières | JORT n° 51 des 2-6 août 1974 | p. 1744-1746 (26 articles) |
 
@@ -629,7 +629,7 @@ l'en-tête des pages lues.
 | Contreparties | contrôle administratif et **surveillance douanière permanente**, frais à la charge de l'entreprise ; amende de trois fois le montant de l'infraction, 1 000 dinars au moins, et perte du régime en cas de récidive | 12 et 13 (p. 531) |
 | Personnel étranger | recrutement libre d'agents d'encadrement et de maîtrise étrangers, sous un programme de tunisification approuvé | 14 (p. 531) |
 | **Exportateurs partiels** | toute industrie manufacturière exportant au moins **20 %** de sa production : impôt de la patente au taux réduit de 10 % sur les bénéfices de l'exportation ; assouplissement de l'entrepôt industriel ; achats locaux en suspension des taxes sur le chiffre d'affaires pour la production exportée | 15 (p. 531-532) |
-| Date d'effet | **aucune clause** ; la loi ne dit que « sera publiée […] et exécutée comme loi de l'État » | p. 532 |
+| Date d'effet | **aucune clause** ; la loi ne dit que « sera publiée […] et exécutée comme loi de l'État ». À défaut, règle d'avant 1993 : exécutoire un jour franc après la publication (AGENTS.md, « Dater »). Le fascicule est daté des 21-25-28 avril 1972 ; la loi, signée le 27, n'a pu paraître qu'à l'édition du 28 — déduction, le jour exact n'est pas porté sur les pages lues | p. 532 |
 
 Travaux préparatoires (note de bas de page, p. 530) : discussion et adoption par l'Assemblée
 nationale le 14 avril 1972.
@@ -659,18 +659,19 @@ nationale le 14 avril 1972.
    **destination de la production** : exclusivement l'exportation, ou au moins 20 %.
 3. **La durée et la nature de l'avantage sur les bénéfices.** Exonération de patente de trois
    à cinq ans (dix au plus par renouvellement en catégorie C) en 1969 ; **dix ans
-   d'exonération puis dix ans à 10 %** en 1972, fixés par la loi elle-même. Les vingt ans de
-   stabilité, que le code de 1969 ne donnait que par convention et « au plus », deviennent en
-   1972 la durée légale des avantages de l'article 4.
+   d'exonération puis dix ans à 10 %** en 1972, fixés par la loi elle-même. À rapprocher sans les
+   confondre : le code de 1969 permettait, par convention, un régime garantissant la
+   *stabilité* des impôts pendant vingt ans au plus (art. 15, 4°) ; la loi de 1972 fixe
+   elle-même à vingt ans la durée des *exonérations et taux réduits* de son article 4.
 4. **Les capitaux étrangers.** En 1969 : égalité de traitement et garantie de transfert. En
    1972 : un **statut de non-résident** pour l'entreprise elle-même, au seuil de 66 % de
    capital en devises, qui la dispense de rapatrier ses recettes d'exportation.
 5. **Le rapport au marché intérieur.** Le code de 1969 pouvait accorder un monopole et la
    prohibition des importations concurrentes ; la loi de 1972 traite au contraire les ventes
    en Tunisie de l'entreprise exportatrice comme des opérations de commerce extérieur et la
-   place sous surveillance douanière. Les deux textes séparent ainsi l'entreprise exportatrice
-   du marché local — ce que les études postérieures nomment « offshore », mot absent des
-   textes.
+   place sous surveillance douanière. Le code de 1969 protège donc le producteur du marché local ;
+   la loi de 1972 tient l'entreprise exportatrice hors de ce marché. Les études postérieures
+   nomment ce second régime « offshore », mot absent des textes.
 6. **L'institution.** La loi de 1972 crée l'Agence de promotion des investissements (art. 2).
 
 Continuité jusqu'en 1993, lisible en rapprochant les textes : le seuil de 66 % de capital en
@@ -717,13 +718,13 @@ l'exportation (dix ans plus dix). C'est le partage que le code de 1993 réunit e
    "container-title": "Journal officiel de la République tunisienne", "issue": "24",
    "page": "766-769", "issued": {"date-parts": [[1969, 6, 26]]},
    "URL": "https://www.pist.tn/jort/1969/1969F/Jo02469.pdf",
-   "note": "citation-key: loi-69-35-code-investissements\nJORT n° 24 des 20-24-27 juin 1969. Scan ; p. 766-769 lues à l'image le 6 octobre 2026. Rectificatifs aux n° 25 et 28 non lus. URL dérivée de la règle de nommage, à contrôler."},
+   "note": "citation-key: loi-69-35-code-investissements\nJORT n° 24 des 20-24-27 juin 1969. Scan ; p. 766-769 lues à l'image le 6 octobre 2026. Rectificatifs lus : JORT n° 25, p. 810, et n° 28, p. 912 (rédaction seulement). Existence de l'URL contrôlée le 6 octobre 2026 (200, application/pdf)."},
   {"id": "loi-74-74-industries-manufacturieres", "type": "legislation",
    "title": "Loi n° 74-74 du 3 août 1974, relative aux investissements dans les industries manufacturières",
    "container-title": "Journal officiel de la République tunisienne", "issue": "51",
    "page": "1744-1746", "issued": {"date-parts": [[1974, 8, 3]]},
    "URL": "https://www.pist.tn/jort/1974/1974F/Jo05174.pdf",
-   "note": "citation-key: loi-74-74-industries-manufacturieres\nJORT n° 51 des 2-6 août 1974. Scan ; p. 1744-1746 lues à l'image le 6 octobre 2026. URL dérivée de la règle de nommage, à contrôler."}
+   "note": "citation-key: loi-74-74-industries-manufacturieres\nJORT n° 51 des 2-6 août 1974. Scan ; p. 1744-1746 lues à l'image le 6 octobre 2026. Existence de l'URL contrôlée le 6 octobre 2026 (200, application/pdf)."}
 ]
 ```
 
@@ -741,7 +742,7 @@ des quatre chapitres d'impôt ne renvoie à @sec-depenses-fiscales.
 | Avantage | Impôt | Chapitre et section où le mentionner | Ce qui y est déjà dit | Phrase-source (texte lu ou image lue) |
 |---|---|---|---|---|
 | Déduction totale puis partielle des **bénéfices de l'exportation** ; imposition à 10 % votée en 2006, appliquée en 2014 ; abrogation en 2019 | impôt sur les sociétés | `_impot_societes.qmd`, « Les paramètres d'origine » (taux réduit de 10 %, l. 111-113) et « 2019 » | la liste du taux de 10 % « compte davantage » de catégories qu'en 1990 ; rien sur l'exportation avant 2019 ; le palier de 13,5 % | code de 1993, art. 12 § 7 et 22 § 3 ; loi n° 2006-80, art. 5 § 1 (6^e^ tiret ajouté au 3^e^ alinéa de l'art. 49 § I) et art. 6 ; quatre reports (§ 1.3) ; LF 2019, art. 37 et 41 |
-| Déduction des **revenus de l'exportation** : totale dix ans puis 50 % (1993) ; deux tiers (votée 2006, appliquée 2014) | impôt sur le revenu | `_impot_revenu.qmd`, « Bénéfices industriels et commerciaux », l. 325, et `#sec-irpp-deductions`, l. 511 | l. 325 : déduction des deux tiers (art. 39 § V), « la série des valeurs antérieures aux deux tiers n'est pas établie : le régime antérieur relevait du code d'incitation aux investissements de 1993, abrogé et remplacé par la loi n° 2017-8 » | code de 1993, art. 12 § 6 et 22 § 2 ; loi n° 2006-80, art. 5 § 2 (art. 39 § V nouveau) ; loi n° 2017-8, art. 67 du code |
+| Déduction des **revenus de l'exportation** : totale dix ans puis 50 % (1993) ; deux tiers (votée 2006, appliquée 2014) | impôt sur le revenu | `_impot_revenu.qmd`, « Bénéfices industriels et commerciaux », l. 325, et `#sec-irpp-deductions`, l. 511 | l. 325 : déduction des deux tiers (art. 39 § V) pour les activités de l'art. 49 § I ; l. 511 : « deux tiers des revenus d'exportation (§ V) » — deux états successifs du même paragraphe (voir correction 1) | code de 1993, art. 12 § 6 et 22 § 2 ; loi n° 2006-80, art. 5 § 2 (art. 39 § V : exportation) ; loi n° 2017-8, art. 15 § 1 (art. 39 § V récrit) et art. 67 nouveau du code (exportation) ; LF 2019, art. 37 (abrogation de l'art. 67) |
 | Déduction totale des revenus et bénéfices en **zone de développement régional** : dix ans puis 50 % dix ans (1993) ; cinq ou dix ans puis deux tiers / 10 % (2017) | impôt sur le revenu et impôt sur les sociétés | `_impot_societes.qmd`, l. 113 ; `_impot_revenu.qmd`, `#sec-irpp-deductions` | IS : le développement régional cité parmi les « ajouts postérieurs » au taux de 10 %, sans date ni durée ; IRPP : rien, hors l'exonération de l'avantage transport des zones (LF 2020, art. 44) | code de 1993, art. 23 § 2 ; code de l'IRPP et de l'IS, art. 63 et 64 (loi n° 2017-8, art. 1^er^) |
 | Déduction totale dix ans des revenus et bénéfices de l'**agriculture et de la pêche**, puis deux tiers / 10 % | impôt sur le revenu et impôt sur les sociétés | `_impot_revenu.qmd`, « Bénéfices de l'exploitation agricole et de pêche (catégorie III) » ; `_impot_societes.qmd`, l. 111-113 | IS : activité agricole dans les cinq catégories d'origine du taux de 10 % ; « bénéfices agricoles après expiration de la période de déduction totale » cités sans texte ; IRPP : à vérifier dans la section catégorie III | code de 1993, art. 30 § 3 ; code de l'IRPP et de l'IS, art. 65 et 66 |
 | **Entreprises nouvelles** : déduction de 100, 75, 50, 25 % sur quatre ans | impôt sur le revenu et impôt sur les sociétés | `_impot_societes.qmd`, « 2018 » ou nouvelle mention datée 2017 ; `_impot_revenu.qmd`, BIC | rien | code de l'IRPP et de l'IS, art. 71 |
@@ -755,15 +756,40 @@ des quatre chapitres d'impôt ne renvoie à @sec-depenses-fiscales.
 
 **Deux corrections que ce tableau fait apparaître dans des chapitres existants** :
 
-1. `_impot_revenu.qmd`, l. 325 : la série antérieure aux deux tiers **est** désormais établie
-   (déduction totale dix ans puis 50 %, code de 1993, art. 12 § 6 et 22 § 2 ; deux tiers votés
-   par la loi n° 2006-80, art. 5 § 2, appliqués aux revenus de 2014 après quatre reports). Et
-   le code de 1993 n'a pas été « abrogé et remplacé par la loi n° 2017-8 » : il est abrogé par
-   la loi n° 2016-71, art. 27 ; la loi n° 2017-8 inscrit les avantages dans le code de
-   l'impôt.
+1. `_impot_revenu.qmd`, l. 325 et l. 511 : les deux lignes ne décrivent pas le même état de
+   l'article 39 § V, qui a changé d'objet. Établi sur les textes : (i) la loi n° 2006-80,
+   art. 5 § 2, y loge la déduction des deux tiers des revenus de **l'exportation** (appliquée
+   à partir de 2014) ; (ii) la loi n° 2017-8, art. 15 § 1 (JORT n° 15 de 2017, p. 781,
+   pagination à contrôler), le récrit : deux tiers des revenus « provenant des activités ou
+   des projets prévus aux premier et cinquième tirets du troisième paragraphe du paragraphe I
+   de l'article 49 », l'exportation passant à l'article 67 nouveau ; (iii) la loi de finances
+   pour 2019, art. 15 (p. 4529-4530), en modifie encore le renvoi et y ajoute « la moitié des
+   revenus » des activités du taux de 13,5 %. La l. 325 décrit l'état d'après 2017 ; la l. 511
+   (« deux tiers des revenus d'exportation (§ V) ») décrit l'état de 2014 à mars 2017. La
+   phrase « la série des valeurs antérieures aux deux tiers n'est pas établie » reste vraie
+   pour les activités que vise aujourd'hui le § V (agriculture, artisanat…) : ce que cette
+   note établit, c'est la série de l'exportation. Seule correction sûre : le code de 1993
+   n'a pas été « abrogé et remplacé par la loi n° 2017-8 » ; il est abrogé par la loi
+   n° 2016-71, art. 27, et la loi n° 2017-8 inscrit les avantages dans le code de l'impôt.
 2. `_droits_consommation.qmd`, l. 74 : l'ajout de l'article 13 *ter* à la liste de l'article 6
    de la loi n° 88-62 vient de la loi n° 2017-8, art. 3 § 4 (texte lu, JORT n° 15 de 2017,
-   p. 779-780, pagination à contrôler), non de la loi de finances pour 2022.
+   p. 779-780, pagination à contrôler), non de la loi de finances pour 2022. Seul ce point change : l'abrogation de l'article 13, l'article
+   13 *bis* et le second alinéa gardent l'attribution que le chapitre leur donne.
+
+3. `_depenses_fiscales.qmd`, `tbl-df-cout-2009-2011` : les deux premières lignes s'intitulent,
+   sur la diapositive lue à l'image, « Déductions impôts **redondantes** » et « Déduct.
+   douanes **redondantes** » ; le chapitre écrit « Déductions d'impôts » et « Déductions
+   douanières ». Le total de 1 115 MD n'est donc pas un manque à gagner brut : c'est, d'après
+   la légende, la part redondante des déductions, diminuée des recettes induites. Cela porte
+   aussi sur la phrase qui dit que 1 115 MD (diaporama) et 1 198 MD (rapport) ne se
+   rapprochent pas : ils ne mesurent vraisemblablement pas la même grandeur.
+4. `_depenses_fiscales.qmd`, « 2008-2012 » : « 79 % des investisseurs auraient investi sans
+   incitation » est le résultat de la question de contrôle ; la réponse directe est 49 %
+   (§ 10.3 b).
+5. `_impot_societes.qmd` et `_depenses_fiscales.qmd`, « La répartition par impôt » : dire que
+   le rapport du ministère tient le taux de 10 % (et celui de 13,5 %) pour des taux de
+   référence, ce qui explique la faiblesse des dépenses fiscales comptées sur l'impôt sur les
+   sociétés.
 
 **Avantages pour lesquels aucun texte lu ne permet la mention** :
 
@@ -799,15 +825,20 @@ relevés sur l'OCR des p. 2179-2181).
   investissements**, **la loi n° 87-51 portant code des investissements industriels**, la loi
   n° 88-18 (code agricole et de pêche, sauf quelques articles), la loi n° 89-100 (activités de
   services), la loi n° 90-21 (code touristique, sauf ses articles 3, 5, 6, 7 et 8), et des
-  articles de sept lois de finances. Le code remplace donc une dizaine de lois et de codes
-  sectoriels : c'est ce que « unique » veut dire. La loi n° 72-38 n'est pas dans cette liste ;
-  le texte qui l'a abrogée n'est pas établi (vraisemblablement un texte antérieur à 1993, à
-  chercher dans la loi n° 87-51 ou le décret-loi n° 85-14).
+  articles de cinq lois de finances (pour 1980, 1982, 1986, 1988 et 1989) et de trois autres
+  lois. L'article commence par une clause générale : « Sont abrogées toutes dispositions
+  antérieures contraires à la présente loi et notamment ». Le code remplace donc une dizaine
+  de lois et de codes sectoriels. La loi n° 72-38 n'est pas nommée dans cette liste ; elle a
+  pu être abrogée par un texte antérieur (loi n° 87-51 ou décret-loi n° 85-14, non lus) ou
+  tomber sous la clause générale : ce point n'est pas établi.
 - Loi de promulgation, art. 2 (p. 2174) : les déductions de l'exportation (art. 12 § 6 et 7,
   art. 22 § 2 et 3 du code) s'appliquent aux entreprises exportatrices créées avant le code,
   « à partir du 1^er^ janvier 1994 comme si ces entreprises ont été créées à cette date ».
-  **La loi ne contient aucune clause générale d'entrée en vigueur** : cela lève la lacune 7
-  du § 7 (la mention du 1^er^ janvier 1994 ne vaut que pour ce cas).
+  **La loi ne contient aucune clause générale d'entrée en vigueur** : la mention du
+  1^er^ janvier 1994 ne vaut que pour ce cas, et la règle par défaut s'applique — depuis la
+  loi n° 93-64, cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de
+  Tunis (AGENTS.md, « Dater »). La date du dépôt du n° 99 du 28 décembre 1993 n'est pas
+  connue ici ; la lacune 7 du § 7 se réduit à cette date.
 - Code, art. 1^er^ (p. 2174-2175) : il « fixe le régime d'incitations aux investissements et
   à la création de projets réalisés en Tunisie par des promoteurs tunisiens ou étrangers,
   résidents ou non résidents, ou en partenariat conformément à la stratégie globale de
@@ -828,13 +859,13 @@ relevés sur l'OCR des p. 2179-2181).
   soutien ; X, dispositions diverses ; 67 articles (les titres VII à X et le nombre d'articles
   d'après l'OCR).
 
-Ce que cela permet d'écrire : un code distinct des codes d'impôt parce qu'il est organisé
+Ce que sa structure montre, sans que le texte en donne lui-même la raison : un code organisé
 **par objectif** (exportation, région, agriculture, environnement, technologie, nouveaux
 promoteurs) et non par impôt, et qu'il mêle dans chaque titre des avantages de nature
 différente — déductions d'impôts directs, suspensions d'impôts indirects et de droits de
 douane, primes budgétaires, prise en charge de cotisations sociales (art. 23 à 25 pour le
 seul développement régional), règles de change et de résidence (art. 14), droit du travail
-(art. 18). Le mot « dépense fiscale » n'y figure pas.
+(art. 18). Le mot « dépense fiscale » ne figure pas dans les pages lues.
 
 **Loi de l'investissement de 2016** (texte lu, p. 3083) : art. 1^er^, elle « a pour objectif
 la promotion de l'investissement et l'encouragement de la création d'entreprises et de leur
@@ -909,6 +940,9 @@ p. 7, note 1) et l'exclusion des prêts et participations du total des avantages
   l'Agriculture et de l'Emploi. Rien n'a été dépouillé : ni
   `~/projets/tunisia-data/data/raw/minfinances/portail_ancien/budgets_ministeres/`, ni
   `gbo_pap_rap/`, ni les lois de règlement.
+- Depuis 2017, les primes de la loi de l'investissement sont débloquées par le **Fonds
+  tunisien de l'investissement** (loi n° 2016-71, art. 16 à 18, texte lu) : ses comptes sont
+  le premier endroit où chercher ; ils ne sont pas au corpus.
 - Pour 2009, la Banque mondiale donne les primes versées par agence (APII 33 MD, APIA 54 MD,
   ONTT 11 MD) : étude extérieure, mais sur données d'agences.
 
@@ -918,10 +952,10 @@ p. 7, note 1) et l'exclusion des prêts et participations du total des avantages
 |---|---|---|---|---|---|
 | **IFC et ECOPA (2012)**, *Tunisie : coût/bénéfice des incitations fiscales et financières à l'investissement*, « preliminary report », novembre 2012 | Société financière internationale et un bureau d'études, pour la Banque mondiale | 2008-2011 | incitations du code de 1993 | **document non collecté** ; connu seulement par ce qu'en reprend le rapport de 2014 | Banque mondiale 2014, bibliographie du ch. 4 |
 | **Banque mondiale (2014)**, *The Unfinished Revolution*, ch. 4 | Banque mondiale, d'après IFC-ECOPA | coût : 2009 (tableau 4.2), 2008-2011 en moyenne (tableau 4.3) ; enquête : 2012 | coût « direct » des incitations du code : recettes fiscales renoncées et avantages financiers (primes APII, APIA, ONTT) | coût « net » (tableau 4.2), sans que le chapitre dise de quoi il est net ; la note 9 précise : « only the direct costs ». Les déductions du tableau 4.3 sont « brutes ». La part « redondante » vient d'une **enquête sur les motivations des investisseurs** menée en 2012 par le Groupe de la Banque mondiale avec le gouvernement : à la question directe, 49 % auraient investi sans incitation et 51 % non ; une question de contrôle (les trois premiers motifs de l'investissement) ramène à 21 % la part de ceux qui n'auraient pas investi — d'où « 79 % ». **Taille de l'échantillon non donnée dans le chapitre** (renvoi à une annexe 4.2, non consultée). Le coût par emploi additionnel applique cette part au coût total. La source des données fiscales n'est pas dite dans le chapitre | p. 142-145 ; note 9, p. 164 |
-| **Diaporama de la Banque mondiale, septembre 2014** (J. Loeprick) | même étude, état différent | 2009-2011 | avantages fiscaux et douaniers | décomposition lisible sur le graphique : « déductions impôts redondantes » + « déductions douanes redondantes » − « impôts additionnels » − « droits de porte additionnels » = « coût fiscal net ». Le net est donc **net des recettes supplémentaires** attribuées aux investissements que les incitations auraient suscités. Source indiquée : « Impôts, Douanes, CNSS, API, APIA ». Enquête (p. 15) : trois graphiques, sans effectif ni date ; la diapositive 5 donnerait pour la Tunisie (2012) un « ratio de redondance » de 25 % et 58 % d'investisseurs influencés (d'après l'inventaire du dépôt, non relu à l'image). Aucune note de méthode | p. 5, 15-17 |
+| **Diaporama de la Banque mondiale, septembre 2014** (J. Loeprick) | même étude, état différent | 2009-2011 | avantages fiscaux et douaniers | décomposition lisible sur le graphique : « déductions impôts redondantes » + « déductions douanes redondantes » − « impôts additionnels » − « droits de porte additionnels » = « coût fiscal net ». Deux lectures de la légende, le diaporama ne portant aucune note de méthode : les déductions comptées sont les seules déductions **« redondantes »** (celles des entreprises qui auraient investi de toute façon), et le net en retranche les **recettes supplémentaires** attribuées aux investissements suscités. Source indiquée : « Impôts, Douanes, CNSS, API, APIA ». Enquête (p. 15) : trois graphiques, sans effectif ni date ; la diapositive 5 donnerait pour la Tunisie (2012) un « ratio de redondance » de 25 % et 58 % d'investisseurs influencés (d'après l'inventaire du dépôt, non relu à l'image). Aucune note de méthode | p. 5, 15-17 |
 | **OCDE (2013)**, *Analysis of the Tunisian Tax Incentives Regime* | programme « Tax and Development » de l'OCDE, à la demande du ministère tunisien des Finances ; « a single five-day Mission », 5-9 novembre 2012 | pas de données de recettes propres | comparaison régime intérieur / régime de l'exportation | **taux effectifs marginaux d'imposition** (méthode de Chen et Mintz, 2008), sur hypothèses : 35,78 % pour l'industrie du régime intérieur, 4,53 % pour l'industrie exportatrice ; l'annexe B avertit que ces calculs sont « for illustrative purpose only », les hypothèses n'étant pas validées par les autorités. Aucune estimation propre du coût | p. 4, 7, 21-23 |
 | **Ghazouani (2011)**, *Évaluation des incitations à l'investissement privé* (CTEE, IACE) | universitaire | 1994-2007 (moyenne de 2,14 % du PIB, selon l'OCDE) ; 2,9 % du PIB sans année (selon la Banque mondiale) | « coût direct des incitations fiscales » | l'OCDE dit seulement : « based on data from the Ministry of Finance ». **Méthode non décrite par la source qui la rapporte.** Les deux sources ne rapportent pas le même chiffre | OCDE 2013, p. 12 ; Banque mondiale 2014, note 10, p. 164 |
-| **OMC (2001)** | examen des politiques commerciales, vraisemblablement — titre non donné | 2000 : 557 MD, « environ 2 % du PIB » | « fiscal costs of incentives » | **méthode non décrite par la source qui la rapporte** | Banque mondiale 2014, note 10, p. 164 |
+| **OMC (2001)** | titre non donné : la source écrit seulement « The WTO (2001) » | 2000 : 557 MD, « environ 2 % du PIB » | « fiscal costs of incentives » | **méthode non décrite par la source qui la rapporte** | Banque mondiale 2014, note 10, p. 164 |
 | **FMI (2005 et 2012)** | titres non donnés | 2005 : « environ 0,75 % du PIB » | « tax expenditure on incentives » | **méthode non décrite par la source qui la rapporte** ; la note attribue un même chiffre à deux documents | idem |
 
 Trois précisions pour la rédaction :
@@ -931,7 +965,7 @@ Trois précisions pour la rédaction :
    propre rapporteur comme des tentatives partielles.
 2. Le chapitre actuel écrit que le rapport « indique que 79 % des investisseurs auraient
    investi sans incitation » : c'est le résultat **de la question de contrôle**, non la
-   réponse directe (49 % / 51 %). Trois mesures de la même enquête circulent donc — 49 %
+   réponse directe (49 % / 51 %). Trois mesures, vraisemblablement de la même enquête (le diaporama ne date pas la sienne), circulent donc — 49 %
    (rapport, question directe), 61,2 % (diaporama), 79 % (rapport, question de contrôle) — et
    le tableau 4.1 donne, pour les seules entreprises du régime de l'exportation, 36 % de
    « marginaux » contre 64 % d'indifférents aux incitations fiscales (p. 142).
@@ -943,7 +977,6 @@ Trois précisions pour la rédaction :
 ### 10.4 Ce qui reste non établi après ces compléments
 
 - Texte qui a abrogé la loi n° 72-38, et date d'entrée en vigueur de celle-ci (aucune clause).
-- Rectificatifs du code de 1969 (JORT n° 25 et 28 de 1969) : non lus.
 - Lois n° 81-56, 85-14, 87-51, 88-18, 90-21 : toujours connues par leur seul intitulé ; la
   chaîne 1974 → 1981 → 1987 → 1993 du régime du marché intérieur n'est pas établie.
 - Étude IFC-ECOPA de 2012 et annexes 4.2 à 4.6 du rapport de la Banque mondiale (échantillon
