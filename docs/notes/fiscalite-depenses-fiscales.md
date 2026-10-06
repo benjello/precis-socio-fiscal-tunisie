@@ -590,3 +590,142 @@ en arabe (`/ar/taxonomy/term/121`, cinq PDF déposés en 2021-04, 2022-01, 2023-
   `tunisia-data`.
 - Les deux rapports non collectés et les deux documents étrangers ont été téléchargés dans le
   répertoire temporaire de session pour lecture ; ils ne sont archivés nulle part.
+
+## 10. Compléments du 6 octobre 2026
+
+Trois demandes de l'humain après relecture du chapitre : (A) décrire la loi de 1972 et dire
+en quoi elle rompt ; (B) mentionner chaque avantage dans le chapitre de l'impôt qu'il touche,
+tout en rendant la spécificité de ce chapitre ; (C) séparer, pour les chiffres, le budgétaire
+et l'évaluation du ministère des Finances des études extérieures, en disant la méthode de
+chacune.
+
+### 10.1 La loi n° 72-38 du 27 avril 1972 et ce avec quoi elle rompt
+
+Trois textes ont été **lus à l'image, en entier**, sur les fascicules français du corpus
+local (scans sans couche texte ; l'océrisation n'a servi qu'à repérer les pages) :
+
+| Texte | Fascicule | Pages lues |
+|---|---|---|
+| Loi n° 69-35 du 26 juin 1969, portant code des investissements | JORT n° 24 des 20-24-27 juin 1969 | p. 766-769 (20 articles, annexes I et II) ; les deux rectificatifs (n° 25 et 28) ne sont pas lus |
+| Loi n° 72-38 du 27 avril 1972, portant création d'un régime particulier pour les industries produisant pour l'exportation | JORT n° 17 des 21-25-28 avril 1972 | p. 530-532 (15 articles) |
+| Loi n° 74-74 du 3 août 1974, relative aux investissements dans les industries manufacturières | JORT n° 51 des 2-6 août 1974 | p. 1744-1746 (26 articles) |
+
+Les numéros des fascicules viennent des notices de `jort_cache.db` ; les dates sont celles de
+l'en-tête des pages lues.
+
+#### a) Ce que dit la loi de 1972
+
+| Rubrique | Règle | Article (page) |
+|---|---|---|
+| Objet | « fixer les conditions adéquates pour la constitution et l'exploitation d'entreprises produisant pour l'exportation » | 1^er^ (p. 530) |
+| Champ | entreprises des **industries manufacturières**, à l'exclusion des activités bénéficiant d'une concession de l'État ; s'applique « automatiquement » aux entreprises **nouvelles** agréées ; les entreprises antérieures peuvent obtenir tout ou partie des avantages par convention approuvée par décret | 1^er^ (p. 530) |
+| Condition | établissements « produisant **exclusivement** pour l'exportation » ; ils peuvent être créés « en tous points du territoire » | 2 (p. 530) |
+| Agrément | du ministre de l'Économie nationale, pour chaque établissement, sur avis d'une **Agence de promotion des investissements que la loi crée** | 2 (p. 530) |
+| Impôt sur les bénéfices (patente) | **exonération pendant les dix premières années d'activité**, puis **taux réduit de 10 %** « pendant une nouvelle période de dix ans » | 3 (p. 530-531) |
+| Autres impôts, **pendant les vingt premières années** | exonération de la taxe sur la valeur locative ; exonération de l'impôt sur le revenu des valeurs mobilières dû à raison des emprunts d'investissement ; enregistrement au droit fixe des actes de constitution et d'augmentation de capital ; impôt sur le revenu des valeurs mobilières au taux réduit de 6 % (parts d'intérêt et actions nominatives) ou 8 % (actions au porteur ; agences de sociétés étrangères) sur les bénéfices distribués ; droits réduits sur les cessions d'actif (9 % fonds de commerce, 7 % immeubles, 4 % mobilier et matériel, 2 % marchandises) | 4, 1° à 5° (p. 531) |
+| Impôts indirects et douane, idem | exonération des droits de douane et des taxes sur le chiffre d'affaires à l'importation des équipements, pièces, matières premières, produits semi-finis ; exonération des taxes sur le chiffre d'affaires sur les achats locaux auprès des producteurs ; remboursement des droits et taxes sur les achats locaux auprès de non-producteurs | 4, 6° à 8° (p. 531) |
+| Résidence et change | la personne morale est **non résidente** quand son capital est détenu par des non-résidents au moyen d'une importation de devises convertibles égale à **66 %** du capital ; les non-résidents « ne sont pas tenus de rapatrier les produits de leurs exportations » et transfèrent librement ; les résidents rapatrient la contrevaleur de leurs exportations | 5 à 8 (p. 531) |
+| Régime commercial | importation libre des biens nécessaires à la production, sous déclaration en douane ; **les ventes en Tunisie sont soumises aux formalités du commerce extérieur** — la loi ne fixe aucune part de vente locale ; les exportations ne peuvent se faire dans le cadre des accords de paiement bilatéraux | 9 à 11 (p. 531) |
+| Contreparties | contrôle administratif et **surveillance douanière permanente**, frais à la charge de l'entreprise ; amende de trois fois le montant de l'infraction, 1 000 dinars au moins, et perte du régime en cas de récidive | 12 et 13 (p. 531) |
+| Personnel étranger | recrutement libre d'agents d'encadrement et de maîtrise étrangers, sous un programme de tunisification approuvé | 14 (p. 531) |
+| **Exportateurs partiels** | toute industrie manufacturière exportant au moins **20 %** de sa production : impôt de la patente au taux réduit de 10 % sur les bénéfices de l'exportation ; assouplissement de l'entrepôt industriel ; achats locaux en suspension des taxes sur le chiffre d'affaires pour la production exportée | 15 (p. 531-532) |
+| Date d'effet | **aucune clause** ; la loi ne dit que « sera publiée […] et exécutée comme loi de l'État » | p. 532 |
+
+Travaux préparatoires (note de bas de page, p. 530) : discussion et adoption par l'Assemblée
+nationale le 14 avril 1972.
+
+#### b) Le droit antérieur : le code des investissements de 1969
+
+| Rubrique | Règle | Article (page) |
+|---|---|---|
+| Objet | « créer les conditions favorables aux investissements réalisés en Tunisie » ; investissements de personnes physiques ou morales « quelle que soit leur nationalité » ; extension possible aux investissements à caractère commercial | 1^er^ et 2 (p. 766) |
+| Agrément | toute création, extension, reconversion ou déplacement d'une **entreprise industrielle** : agrément du secrétaire d'État au Plan et à l'Économie nationale, sur avis d'une commission des investissements | 7 à 9 (p. 766-767) |
+| Classement | **par la taille** : catégorie A, apport en capital ≤ 50 000 dinars ; B, au moins 10 emplois permanents et apport de 50 000 à 250 000 dinars ; C, plus de 50 emplois et apport > 250 000 dinars. Le « montant des exportations par rapport au montant du chiffre d'affaires » n'est qu'un des huit éléments d'appréciation | 8 (p. 766-767) |
+| Avantages, catégorie A | réduction d'impôt sur les revenus ou bénéfices **réinvestis** | 10 (p. 767) ; annexe I (p. 768) |
+| Avantages, catégorie B | en plus : exonération de la patente pendant les **trois** premiers exercices ; droit fixe d'enregistrement ; exonération de l'impôt sur le revenu des valeurs mobilières sur les emprunts et sur les bénéfices distribués dans la limite de 6 % du nominal ; extension possible « sur une période n'excédant pas cinq ans » ; suspension des droits et taxes à l'importation des équipements | 11 à 13 (p. 767) |
+| Avantages, catégorie C | les mêmes, accordés d'office pour **cinq ans**, renouvelables une fois pour cinq ans au plus | 14 (p. 767) |
+| Avantages conventionnels | par convention : régime fiscal de longue durée garantissant la stabilité des impôts **vingt ans au plus** ; cession de terrains ; **monopole d'exploitation et de commercialisation** pour une période déterminée ; **prohibition totale ou partielle des importations de produits concurrentiels** ; bonification d'intérêts | 15 (p. 767) |
+| Capitaux étrangers | égalité devant la loi, notamment fiscale et sociale ; garantie de transfert du capital investi en devises et de ses revenus | 6, 16 à 18 (p. 766-767) |
+
+#### c) Ce qui change en 1972, d'après les deux textes
+
+1. **Un régime propre à l'exportation, à côté du code.** La loi de 1972 n'abroge ni ne modifie
+   le code de 1969 : elle ne le cite pas. Elle crée un régime distinct pour un champ plus
+   étroit (industries manufacturières). Le code de 1969 ne cesse de s'appliquer aux industries
+   manufacturières qu'avec la loi n° 74-74 (art. 26, p. 1746), qui laisse subsister la loi de
+   1972.
+2. **Le critère d'accès.** En 1969, l'avantage se gradue selon la taille (capital, emplois),
+   et l'exportation est un élément d'appréciation parmi huit. En 1972, il dépend de la
+   **destination de la production** : exclusivement l'exportation, ou au moins 20 %.
+3. **La durée et la nature de l'avantage sur les bénéfices.** Exonération de patente de trois
+   à cinq ans (dix au plus par renouvellement en catégorie C) en 1969 ; **dix ans
+   d'exonération puis dix ans à 10 %** en 1972, fixés par la loi elle-même. Les vingt ans de
+   stabilité, que le code de 1969 ne donnait que par convention et « au plus », deviennent en
+   1972 la durée légale des avantages de l'article 4.
+4. **Les capitaux étrangers.** En 1969 : égalité de traitement et garantie de transfert. En
+   1972 : un **statut de non-résident** pour l'entreprise elle-même, au seuil de 66 % de
+   capital en devises, qui la dispense de rapatrier ses recettes d'exportation.
+5. **Le rapport au marché intérieur.** Le code de 1969 pouvait accorder un monopole et la
+   prohibition des importations concurrentes ; la loi de 1972 traite au contraire les ventes
+   en Tunisie de l'entreprise exportatrice comme des opérations de commerce extérieur et la
+   place sous surveillance douanière. Les deux textes séparent ainsi l'entreprise exportatrice
+   du marché local — ce que les études postérieures nomment « offshore », mot absent des
+   textes.
+6. **L'institution.** La loi de 1972 crée l'Agence de promotion des investissements (art. 2).
+
+Continuité jusqu'en 1993, lisible en rapprochant les textes : le seuil de 66 % de capital en
+devises (1972, art. 5 ; code de 1993, art. 14), la surveillance douanière permanente (1972,
+art. 12 ; code de 1993, art. 20), le schéma « dix ans d'exonération, puis régime réduit »
+(1972, art. 3 ; code de 1993, art. 12 — sous la forme d'une déduction de 50 % au lieu d'un
+taux de 10 %). Le plafond de 20 % de ventes locales du code de 1993 (art. 16) n'existe pas
+en 1972.
+
+Ce que les textes **ne disent pas**, et qu'il ne faut donc pas écrire sur leur seul
+fondement : les motifs de politique économique de 1972 ; le nombre d'entreprises agréées ;
+l'effet sur l'emploi ou les exportations. La date d'entrée en vigueur n'est pas énoncée.
+
+#### d) En second rang : la loi n° 74-74 du 3 août 1974 (marché intérieur)
+
+- Champ : investissements dans les industries manufacturières (liste par décret), soumis à
+  agrément ou à simple déclaration ; agrément obligatoire pour les investissements de
+  non-résidents ou d'étrangers et pour ceux d'au moins 250 000 dinars (art. 1^er^, 4 à 6,
+  p. 1744-1745).
+- Classement **par l'emploi créé** : cinq catégories, de A (10 à 20 emplois permanents) à E
+  (plus de 150) ; pas d'avantage au-dessous de dix emplois ni de 30 % de fonds propres
+  (art. 7 à 10, p. 1745).
+- Avantage principal : exonération du droit proportionnel de la patente pendant les **cinq**
+  premières années, à concurrence de **40 %, 60 %, 70 %, 80 % ou 90 %** des bénéfices selon
+  la catégorie (art. 12, p. 1745) ; dégrèvement des revenus ou bénéfices investis dans la
+  souscription au capital, limité à 30 % du revenu des personnes physiques et 50 % du bénéfice
+  des personnes morales (art. 11) ; une année supplémentaire d'exonération pour les
+  investissements réalisés dans des zones fixées par décret (art. 15) ou exportant plus de
+  10 % du chiffre d'affaires pendant cinq ans (art. 16, p. 1746) ; subvention
+  d'investissement de 10 % au plus dans ces zones (art. 15, 5°).
+- Art. 26 (p. 1746) : ne sont plus applicables aux industries manufacturières huit textes,
+  dont la loi n° 69-35 portant code des investissements. La loi n° 72-38 n'y figure pas.
+
+Lecture : à partir de 1974, deux lois couvrent l'industrie manufacturière — l'une graduée
+selon l'emploi pour le marché intérieur (cinq ans, exonération partielle), l'autre pour
+l'exportation (dix ans plus dix). C'est le partage que le code de 1993 réunit en un texte.
+
+#### e) Références à créer (ébauches)
+
+```json
+[
+  {"id": "loi-69-35-code-investissements", "type": "legislation",
+   "title": "Loi n° 69-35 du 26 juin 1969, portant code des investissements",
+   "container-title": "Journal officiel de la République tunisienne", "issue": "24",
+   "page": "766-769", "issued": {"date-parts": [[1969, 6, 26]]},
+   "URL": "https://www.pist.tn/jort/1969/1969F/Jo02469.pdf",
+   "note": "citation-key: loi-69-35-code-investissements\nJORT n° 24 des 20-24-27 juin 1969. Scan ; p. 766-769 lues à l'image le 6 octobre 2026. Rectificatifs aux n° 25 et 28 non lus. URL dérivée de la règle de nommage, à contrôler."},
+  {"id": "loi-74-74-industries-manufacturieres", "type": "legislation",
+   "title": "Loi n° 74-74 du 3 août 1974, relative aux investissements dans les industries manufacturières",
+   "container-title": "Journal officiel de la République tunisienne", "issue": "51",
+   "page": "1744-1746", "issued": {"date-parts": [[1974, 8, 3]]},
+   "URL": "https://www.pist.tn/jort/1974/1974F/Jo05174.pdf",
+   "note": "citation-key: loi-74-74-industries-manufacturieres\nJORT n° 51 des 2-6 août 1974. Scan ; p. 1744-1746 lues à l'image le 6 octobre 2026. URL dérivée de la règle de nommage, à contrôler."}
+]
+```
+
+La clé `loi-72-38-regime-exportation` existe déjà ; sa note peut désormais porter : « JORT
+n° 17 des 21-25-28 avril 1972, p. 530-532, lu à l'image le 6 octobre 2026 ; 15 articles ».
