@@ -8,7 +8,7 @@
 
 ## Ajouts à la main du 06/10/2026 (prestations sociales, chapitre « Compensation »)
 
-**Dix-neuf clés neuves** versées dans `precis/fr/prestations_sociales/references.json` et
+**Dix-neuf clés neuves** (puis dix-sept de plus, voir « Versement complémentaire » ci-dessous) versées dans `precis/fr/prestations_sociales/references.json` et
 `precis/ar/prestations_sociales/references.json`, absentes de Zotero.
 
 - Textes (10) : `loi70-26`, `lf-1971`, `decret70-622`, `lf-1984` (loi n° 83-113, distincte de `lf-1983`),
@@ -48,12 +48,46 @@ et non dans la loi n° 84-2) : voir `docs/notes/compensation.md`, § 9.
   (pérennité à surveiller).
 - `fmi-2000-red` : numéro « 00/37 » déduit des métadonnées, page de titre non lue ; aucune capture contrôlée.
 - `bm-1985-cem-5328-vol1`/`-vol2` : tableaux cités (III-1, tableau 11) non relus à l'image ici.
-- `bct-ra-1984` : pas de date de parution imprimée (champ `issued` absent). Autres rapports BCT cités par la note (1980-1988, 2015, 2017, 2019, 2022-2024) :
-  non lus, non versés.
+- `bct-ra-1984` : pas de date de parution imprimée (champ `issued` absent). Les rapports BCT 2015 à 2025 sont versés depuis
+  (voir « Versement complémentaire ») ; ceux de 1980-1983 et 1985-1988, cités par la note, restent non lus, non versés.
 - **Non versés, non lus** : Banque mondiale 2013 (n° 82712-TN), Cuesta et al. 2015, Jouini et al. 2018, `minfin-execution-budget`.
   La simulation du dépôt `ceq-tunisie` n'est pas citable.
 - `push_biblio.py --verifier` : voir le résultat dans le rapport de la passe. Le `dry-run` et le `controle-rangement`
   du workflow `biblio-zotero` restent à lancer après poussée de la branche.
+
+### Versement complémentaire du 06/10/2026 : série 2012-2025 de la compensation
+
+**Dix-sept clés neuves**, versées dans `precis/fr/prestations_sociales/references.json` et
+`precis/ar/prestations_sociales/references.json`, absentes de Zotero. Lectures à l'image : `docs/notes/compensation.md`, § 10.
+
+- Ministère des Finances (6) : `minfin-resultats-provisoires-2013-03`, `-2015-12`, `-2017-01`, `-2018-07` (bulletins,
+  trilingues), `minfin-note-execution-2018-12` (note à fin 2018, fichier Word), `minfin-finances-publiques-2010`
+  (rapport lu pour la part de 2,4 % du PIB en 2010). Convention d'archive : `URL` = capture du Wayback Machine
+  (horodatage lu dans le CDX, capture sha256-identique à la copie locale), `archive`, `archive_location`, `accessed`, motif en `note`.
+  Aucune n'a de `issued` (pas de date de parution sur les couvertures) sauf le rapport 2010 (mai 2012).
+- BCT (11) : `bct-ra-2015` à `bct-ra-2025`, une clé par rapport annuel (même logique que `bct-ra-1984`, distincte du
+  jeu de données générique `bct-ra` des livres « Retraites », « Marché du travail », « Rémunérations publiques »).
+  URL : bct.gov.tn (FR `RA_AAAA_fr.pdf`, `ANNUALREPORT2021FRENCH.pdf` pour 2021) ; entrées arabes : édition arabe
+  (`RA_AAAA_ar.pdf`, `ANNUALREPORT2021ARABIC.pdf` pour 2021), HTTP 200 le 06/10/2026, **absente du corpus local**.
+  Aucun champ `page` ni `number-of-pages` (la pagination est dans la `note`).
+- `bct-ra-1984` : sa `note` (FR et AR) est mise à jour (« les rapports 2015 à 2025 sont versés »).
+- À répercuter dans Zotero : 17 articles à créer (`citation-key:` dans Extra) ; dans la collection du livre « Prestations sociales ».
+
+**Restent à relever / vérifier**
+
+- Entrées arabes des rapports de la BCT : **pagination imprimée de l'édition arabe non mesurée** ; seuls les numéros de page du PDF
+  arabe où se retrouvent les chiffres (couche texte) sont consignés en `note`. Les valeurs ont été lues à l'image sur l'édition
+  **française** seulement.
+- `minfin-note-execution-2018-12` : fichier Word lu après conversion LibreOffice ; ni date de parution ni signataire ; la
+  page citée (7) dépend du rendu. Le texte de la page 1 n'a pas été vu à l'image.
+- `minfin-resultats-provisoires-*` : `title-short` posé à la main ; l'éditeur de couverture est la D.G.R.E. (direction générale des
+  ressources et des équilibres), non portée en `author`.
+- Bulletins 2013-03 et rapport 2010 : le miroir `dev.finances.gov.tn` sert encore un fichier identique ; l'URL retenue est la
+  capture (convention), à revoir si le miroir devient l'adresse officielle.
+- Part du PIB 2011 (4,4 %) non relue ; parts des années 2016-2017, 2019-2021, 2024-2025 « non relevées » (pas de preuve d'absence).
+- Note du ministère à fin mars 2019 (jd1605) : lue en couche texte seulement (LF 2019 4 350,0) ; non versée.
+- `push_biblio.py --verifier` : 769 entrées éprouvées, 2 pertes préexistantes seulement (`dafflon-2021-budget-local`, `minfin-cnf-2013-forfait`) ;
+  aucune perte ajoutée. `dry-run` et `controle-rangement` du workflow `biblio-zotero` : à lancer après poussée de la branche.
 
 ## Ajouts à la main du 04/10/2026 (finances locales, chapitres des impôts, taxes et redevances)
 

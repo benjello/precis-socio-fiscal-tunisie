@@ -161,7 +161,7 @@ Réserves à porter dans la fiche de série :
 - **Base caisse.** Arriérés et régularisations entre l'État et les entreprises (décrets de
   compensation de créances État-ETAP de 2013, 2014 et 2017, État-Office des céréales de 2023
   **[M]**) déplacent la charge d'une année à l'autre.
-- **Lignes 2012-2017 : couche texte**, non relues à l'image ; à relire avant versement.
+- **Lignes 2012-2025 : relues à l'image le 6 octobre 2026**, avec leurs états, leurs sources et leurs écarts : voir le § 10, qui remplace ces lignes (2014, 2015, 2019 et 2023 y sont corrigés ; 2025 y est une valeur « non qualifiée », non un réalisé).
 
 ### 2.2 Détail par produit
 
@@ -514,4 +514,116 @@ Autres corrections relevées en versant :
   est lu sur le miroir `dev.finances.gov.tn`.
 - Sources lues par métadonnées seulement, non versées : Banque mondiale 2013 (n° 82712-TN), Cuesta, El-Lahga et Lara Ibarra
   2015, Jouini, Lustig, Moummi et Shimeles 2018 ; l'ébauche générique `minfin-execution-budget` et
-  les rapports BCT autres que celui de 1984.
+  les rapports BCT autres que celui de 1984 (les rapports 2015 à 2025 sont versés depuis, § 10).
+
+## 10. Série 2012-2025 relue sur pièce (6 octobre 2026)
+
+Relue à l'image (page rendue, pas seulement la couche texte) par le bibliographe, dans les bulletins
+« Résultats provisoires de l'exécution du budget de l'État », la note du ministère des Finances à fin
+2018 et les rapports annuels de la BCT (éditions françaises, 2015 à 2025). **Ce § 10 remplace les lignes
+2012-2025 du § 2.1**, lues alors en couche texte. Montants en millions de dinars courants (MD) ; le total
+est celui que porte la source (la somme des trois postes tombe juste, sauf mention). Règle de retenue :
+une valeur par année, dans la **publication la plus récente** qui la porte ; l'autre lecture est notée
+quand elle diffère. L'état est **recopié de la source** : une colonne annuelle sans étiquette est dite
+« non qualifiée », jamais « réalisé ».
+
+Sigles de sources (clés `references.json`, livre « Prestations sociales ») :
+**B13** `minfin-resultats-provisoires-2013-03` (« à fin 2012 et mars 2013 », p. 16 du PDF) ;
+**B15** `…-2015-12` (p. 10) ; **B17** `…-2017-01` (p. 9) ; **B18** `…-2018-07` (p. 9) — pages non
+numérotées, tableau « Dépenses hors service de la dette », ligne « dont Compensation » ;
+**N18** `minfin-note-execution-2018-12` (note à fin 2018, fichier Word lu après conversion par LibreOffice :
+tableau « توزيع النفقات دون خدمة الدين العمومي », p. 7 du rendu, dépendante du rendu) ;
+**RA AAAA** `bct-ra-AAAA`, tableau « Dépenses hors service de la dette » (n° de tableau, page imprimée /
+page du PDF) : RA 2015 T 2-12 p. 45/57 ; RA 2016 T 2-12 p. 45/53 ; RA 2017 T 2-12 p. 41/51 ; RA 2018 T 2-12
+p. 41/49 ; RA 2019 T 2-12 p. 60/68 ; RA 2020 T 2-12 p. 62/72 ; RA 2021 T 2-11 p. 57/67 ; RA 2022 T 2-11
+p. 60/68 ; RA 2023 T 2-10 p. 64/72 ; RA 2024 T 2-11 p. 65/75 ; RA 2025 T 2-11 p. 71/83.
+
+### 10.1 Valeurs retenues
+
+| Année | Total | Produits de base | Carburants | Transport | État (libellé de la source) | Source retenue | Autre lecture |
+|---|---:|---:|---:|---:|---|---|---|
+| 2012 | 3 624,1 | 1 235,6 | 2 111,0 | 277,5 | colonne « 2012 » non qualifiée ; bulletin intitulé « résultats provisoires à fin 2012 » | B17 (colonne 2012) ; B13 | identique dans B13 et B15 |
+| 2013 | 5 514,0 | 1 450,0 | 3 734,0 | 330,0 | colonne « 2013 » non qualifiée | B17 ; B15 | — |
+| 2014 | 4 153,7 | 1 416,7 | 2 353,0 | 384,0 | « نتائج » (résultats) | N18 | **4 154,2 / transport 384,5** dans B15, B17, B18 et RA 2015 |
+| 2015 | 2 882,9 | 1 549,0 | 918,0 | 415,9 | « نتائج » | N18 ; B17, B18, RA 2016 | provisoire de décembre 2015 : **2 863,9 / produits de base 1 530,0** (B15, RA 2015) |
+| 2016 | 2 210,7 | 1 580,7 | 197,0 | 433,0 | « نتائج » ; « Prov. 2016 » dans B17 | N18 ; B17, RA 2017 | — |
+| 2017 | 3 492,2 | 1 494,0 | 1 550,0 | 448,2 | « نتائج » ; « Prov. 2017 » dans B18 | N18 ; B18, RA 2018 | — |
+| 2018 | 4 900,0 | 1 750,0 | 2 700,0 | 450,0 | « نتائج » (note à fin 2018) | N18 ; RA 2019 (colonne 2018) | la LFC 2018 porte les mêmes montants ; LF 2018 : 3 520,0 |
+| 2019 | 4 788 | 1 800 | 2 538 | 450 | colonne « 2019 » non qualifiée, valeurs arrondies à l'unité | RA 2020 | RA 2019 : **4 789,5 / transport 451,5** (remplace la ligne du § 2.1) |
+| 2020 | 4 486 | 2 416 | 1 470 | 600 | colonne « 2020 » non qualifiée | RA 2021 | identique dans RA 2020 |
+| 2021 | 6 031,0 | 2 200,0 | 3 327,0 | 504,0 | colonne « 2021 » non qualifiée | RA 2022 | identique dans RA 2021 (6 031) |
+| 2022 | 11 999,0 | 3 771,0 | 7 628,0 | 600,0 | colonne « 2022 » non qualifiée | RA 2023 | identique dans RA 2022 |
+| 2023 | 11 479,5 | 3 809,5 | 7 030,0 | 640,0 | colonne « 2023 » non qualifiée | RA 2024 | RA 2023 : **11 475,0 / 3 805,0** |
+| 2024 | 11 347,5 | 3 601,5 | 7 086,0 | 660,0 | colonne « 2024 » non qualifiée | RA 2025 | identique dans RA 2024 |
+| 2025 | 11 593,0 | 3 801,0 | 7 112,0 | 680,0 | colonne « 2025 » **non qualifiée** dans RA 2025 ; **même valeur, au dixième**, que la colonne « 2025* Provisoires (LF 2025) » de RA 2024 | RA 2025 | à ne pas présenter comme un réalisé : le texte de RA 2025 dit « ont enregistré en 2025 » sans étiqueter la colonne |
+| 2026 | 9 772,0 | 4 079,0 | 4 993,0 | 700,0 | « 2026* Provisoires (LF 2026) » | RA 2025 | — |
+
+Aucune case vide : les trois postes et le total sont lisibles pour chaque année, et la somme des trois postes égale
+le total de chaque ligne retenue.
+
+**Écarts à signaler au rédacteur.** (i) 2014 et 2019 : les deux lectures diffèrent de 0,5 à 1,5 MD ; la plus
+récente est retenue, l'ancienne est en dernière colonne. (ii) L'état de 2012 à 2013 et de 2019 à 2025 n'est
+pas dit par la source : le tableau ne doit pas parler de « réalisé » pour ces années. (iii) Les valeurs
+2012-2013 sont lues dans un bulletin de janvier 2017 : aucune publication plus tardive lue ici ne reprend ces deux années.
+
+### 10.2 Autres états lus (lois de finances, prévisions)
+
+| Exercice | État (libellé de la source) | Total | Produits de base | Carburants | Transport | Source |
+|---|---|---:|---:|---:|---:|---|
+| 2012 | LFC 2012 | 3 207,5 | 1 242,0 | 1 688,0 | 277,5 | B13 |
+| 2013 | LF 2013 | 4 200,0 | 1 350,0 | 2 520,0 | 330,0 | B13 |
+| 2015 | LFC 2015 | 3 232,0 | 1 530,0 | 1 286,0 | 416,0 | B15 |
+| 2016 | LF 2016 | 2 612,0 | 1 600,0 | 579,0 | 433,0 | B15 ; RA 2015 (« 2016* Loi de Finances ») |
+| 2016 | LFC 2016 | 2 249,0 | 1 619,0 | 197,0 | 433,0 | B17 |
+| 2017 | LF 2017 | 2 700,0 | 1 600,0 | 650,0 | 450,0 | B17 ; RA 2016 (colonne 2017, non qualifiée) |
+| 2017 | LFC 2017 | 3 450,0 | 1 500,0 | 1 500,0 | 450,0 | B18 |
+| 2018 | LF 2018 | 3 520,0 | 1 570,0 | 1 500,0 | 450,0 | B18 ; N18 |
+| 2018 | LFC 2018 | 4 900,0 | 1 750,0 | 2 700,0 | 450,0 | N18 |
+| 2019 | colonne 2019 de RA 2018, non qualifiée | 4 350,0 | 1 800,0 | 2 100,0 | 450,0 | RA 2018 T 2-12 |
+| 2020 | colonne 2020 de RA 2019, non qualifiée | 4 180,0 | 1 800,0 | 1 880,0 | 500,0 | RA 2019 T 2-12 |
+| 2021 | colonne 2021 de RA 2020, non qualifiée | 3 101 | 2 200 | 401 | 500 | RA 2020 T 2-12 |
+| 2022 | colonne 2022 de RA 2021, non qualifiée | 7 262 | 3 771 | 2 891 | 600 | RA 2021 T 2-11 |
+| 2023 | « 2023* Provisoires » | 8 832 | 2 523 | 5 669 | 640 | RA 2022 T 2-11 |
+| 2024 | « 2024* Provisoires (LF 2024) » | 11 337,0 | 3 591,0 | 7 086,0 | 660,0 | RA 2023 T 2-10 |
+| 2025 | « 2025* Provisoires (LF 2025) » | 11 593,0 | 3 801,0 | 7 112,0 | 680,0 | RA 2024 T 2-11 |
+
+Le § 2.1 appelait « LF 2020 » et « LF 2022 » les colonnes de RA 2019 et RA 2021 : ces colonnes ne portent aucune
+étiquette ; l'appellation « LF » n'est pas lue sur pièce pour 2019-2022. Une note du ministère à fin mars 2019
+(lue en couche texte seulement) étiquette 4 350,0 (1 800,0 / 2 100,0 / 450,0) comme « ق م » (LF 2019).
+Le détail de 2013 montre l'écart prévu / exécuté : 4 200,0 prévus (LF 2013) contre 5 514,0 en 2013 ; de 2012 : 3 207,5 (LFC 2012) contre 3 624,1.
+
+### 10.3 Part de la compensation dans le PIB, quand la source la publie
+
+| Année | Part | Source (page imprimée / page du PDF) | Note |
+|---|---:|---|---|
+| 2010 | 2,4 % | rapport « Finances publiques » 2010 `minfin-finances-publiques-2010`, p. 26 / 32 | le texte la rapproche du déficit budgétaire (1,3 % du PIB) ; compensation de 1 500,0 MD |
+| 2011 | 4,4 % | rapport 2011 (§ 2.4), non relue ici | — |
+| 2013 | 7,3 % (« record ») | RA 2015, p. 33 / 45 | — |
+| 2014 | 5,1 % | RA 2015, p. 33 / 45 | — |
+| 2015 | 3,3 % | RA 2015, p. 33 / 45 | publiée dans le rapport qui donne 2 863,9 MD pour 2015 (provisoire) |
+| 2018 | 4,6 % | RA 2018, p. 31 / 39 | « avec une part de 20,7 % dans les dépenses de fonctionnement » |
+| 2022 | 8,3 % | RA 2022, p. 60 / 68 | **8,6 %** dans RA 2023, p. 56 / 64 (« après 8,6 % en 2022 ») : deux lectures |
+| 2023 | 7,5 % | RA 2023, p. 56 / 64 | — |
+
+Autres années : **non relevée** (une recherche de texte dans les onze rapports n'en a pas trouvé d'autre ; ce n'est
+pas une preuve d'absence). Ne jamais calculer la part à partir du PIB de l'entrepôt.
+
+### 10.4 La rupture de 2015 : libellé exact
+
+Les bulletins de décembre 2015, de janvier 2017 et de juillet 2018 portent, en bas du tableau, une note « (1) »
+(B15 p. 10, B17 p. 9, B18 p. 9), en arabe puis en français (l'arabe est au-dessus du français sur les trois images) :
+
+> « Dans le cadre de la LFC 2015, l'hypothése [sic] de prix du Baril de pétrole a été révisée de 95 $ pour la LF à 62 $ pour la LFC et le principe de séparation des opérations de commercialisation des hydrocarbures a été adopté. »
+>
+> « في إطار قانون المالية التكميلي لسنة 2015 تمت مراجعة فرضية سعر برميل النفط من 95 دولار في قانون المالية الأصلي لـ 62 دولار في قانون المالية التكميلي كما تم اعتماد مبدأ فصل عمليات تسويق المحروقات ».
+
+(Image à 250 dpi : B15 et B17 portent « 95 $ » ; « hypothése » est l'orthographe de B17 et de la couche texte des trois bulletins. Le « (1) » est vu à l'image dans B15 et B17 en tête de la ligne arabe de la note.)
+Dans B15, l'appel « (1) » n'est reporté sur aucune ligne du tableau (non contrôlé dans B17 et B18). B15 porte en outre, sous « Prêts et avances nets du
+Trésor », une ligne « Dont avance sur comp. Carburants » **vide dans toutes les colonnes**, et sous les interventions
+une ligne « Dont compensation Carburants » (579,0 ; 918,0 ; 1 286,0 ; 2 353,0 ; 3 734,0 ; 2 111,0 ; 1 536,0 ; 550,0),
+égale au poste « carburants » : la source ne dit pas ce que l'opération de séparation change dans la comptabilisation.
+Le contenu de la rupture reste donc **non établi** ; la baisse 2014-2016 des carburants (2 353,0 ; 918,0 ; 197,0)
+ne se lit pas comme un pur effet de prix.
+
+Hors du tableau : la note à fin 2018 (N18, p. 1 du rendu, couche texte) dit que les carburants atteignent 2 700 MD
+contre 1 500 MD inscrits en loi de finances (+ 1 200 MD) et les produits de base 1 750 MD contre 1 570 MD (+ 180 MD).

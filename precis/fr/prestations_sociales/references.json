@@ -1461,7 +1461,7 @@
       "publisher-place": "Tunis",
       "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1984.pdf",
       "title-short": "BCT, Rapport d'activité 1984",
-      "note": "citation-key: bct-ra-1984\nTitre lu sur la couverture à l'image le 6 octobre 2026 : « 26ème RAPPORT D'ACTIVITE, Exercice 1984 », présenté au Président de la République au nom du Conseil d'administration par le gouverneur Moncef Belkhodja ; la couverture ne porte aucune date de parution, d'où l'absence de date. Le catalogue de la BCT le range sous « Rapport Annuel, n° 26, Année 1984 ». Le PDF de bct.gov.tn (14 220 655 octets, 210 pages) est identique en taille à la copie locale de tunisia-data (RA_fr_1984.pdf). Page 153 imprimée (151e page du PDF), lue à l'image : « l'octroi à la Caisse générale de compensation d'importantes subventions qui ont totalisé 106 millions de dinars dont 98 millions à la charge du Budget ordinaire et 8 millions par prélèvement sur les disponibilités du Fonds de la contribution exceptionnelle de solidarité » ; dépenses des fonds spéciaux du Trésor passées de 273 millions de dinars en 1983 à 471 millions en 1984. Les rapports d'autres exercices (1980-1988, 2015, 2017, 2019, 2022-2024) ne sont pas versés : aucun n'a été lu. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+      "note": "citation-key: bct-ra-1984\nTitre lu sur la couverture à l'image le 6 octobre 2026 : « 26ème RAPPORT D'ACTIVITE, Exercice 1984 », présenté au Président de la République au nom du Conseil d'administration par le gouverneur Moncef Belkhodja ; la couverture ne porte aucune date de parution, d'où l'absence de date. Le catalogue de la BCT le range sous « Rapport Annuel, n° 26, Année 1984 ». Le PDF de bct.gov.tn (14 220 655 octets, 210 pages) est identique en taille à la copie locale de tunisia-data (RA_fr_1984.pdf). Page 153 imprimée (151e page du PDF), lue à l'image : « l'octroi à la Caisse générale de compensation d'importantes subventions qui ont totalisé 106 millions de dinars dont 98 millions à la charge du Budget ordinaire et 8 millions par prélèvement sur les disponibilités du Fonds de la contribution exceptionnelle de solidarité » ; dépenses des fonds spéciaux du Trésor passées de 273 millions de dinars en 1983 à 471 millions en 1984. Les rapports 2015 à 2025 sont versés sous leurs propres clés (bct-ra-AAAA) ; les rapports des autres exercices (1980-1983, 1985-1988) ne sont pas versés : aucun n'a été lu. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
     },
     {
       "id": "ins-cres-bad-2013-subventions",
@@ -1624,6 +1624,522 @@
       ],
       "archive": "Internet Archive (Wayback Machine)",
       "note": "citation-key: minfin-compensation-carburants-2014\nDocument retiré du site du ministère des Finances (finances.gov.tn, répond 301 puis 404 depuis 2019 d'après le CDX) ; consulté dans la capture du 25/11/2016 (horodatage 20161125132818 lu dans le CDX le 6 octobre 2026). La capture est identique octet pour octet à la copie locale de tunisia-data (3 483 651 octets, 192 pages). Le PDF n'a pas de page de couverture : la première page est une préface (« تمهيد »), et le titre arabe n'est donc pas relu. Le titre français est celui du catalogue tunisia-data, tiré du nom du fichier ; il reste à contrôler. Rapport de la mission conjointe des trois corps de contrôle (noms arabes lus p. 1 : هيئة الرقابة العامة للمالية، هيئة الرقابة العامة للمصالح العمومية، هيئة الرقابة العامة لأملاك الدولة والشؤون العقارية ; leur rendu en français est celui de la note documentaire), sur ordre de mission du ministre des finances du 16 septembre 2013 ; date (21 juillet 2014) du nom du fichier et de la note documentaire. Éditeur non établi. Lu à l'image : pp. 1-5 (docs/notes/compensation.md, § 1.3) ; les pages à forte densité de chiffres restent à lire. Le nombre de pages (192) n'est pas porté dans un champ number-of-pages, que la conversion vers Zotero ne tolère pas pour un rapport."
+    },
+    {
+      "id": "minfin-resultats-provisoires-2013-03",
+      "type": "report",
+      "title": "Résultats provisoires de l'exécution du budget de l'État à fin 2012 et mars 2013",
+      "title-short": "Résultats provisoires de l'exécution du budget, fin 2012 et mars 2013",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances"
+        }
+      ],
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "URL": "https://web.archive.org/web/20130612093948/http://www.portail.finances.gov.tn:80/publications/bulletin-fin-mars-2013.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "note": "citation-key: minfin-resultats-provisoires-2013-03\nSite du ministère des Finances (ancien portail, portail.finances.gov.tn) inaccessible (HTTP 503 le 6 octobre 2026) ; consulté dans la capture du 12/06/2013 (horodatage 20130612093948 lu dans le CDX le 6 octobre 2026). La capture est identique octet pour octet à la copie locale de tunisia-data (1 991 384 octets, 33 pages) et au fichier que sert encore le miroir dev.finances.gov.tn. Titre trilingue lu sur la couverture à l'image : « نتائج وقتية لتنفيذ ميزانية الدولة — إلى موفى سنة 2012 و مارس 2013 », « Résultats provisoires de l'Exécution du Budget de l'Etat — A fin 2012 et Mars 2013 », « Provisional State Budget's Achievement — End 2012 & March 2013 » ; la couverture ne porte pas de date de parution, d'où l'absence de date ; direction générale des ressources et des équilibres (D.G.R.E.). Pages non numérotées. Lu à l'image le 6 octobre 2026 : page 16 du PDF, tableau « Dépenses hors service de la dette », ligne « dont Compensation » (colonnes LF 2013, 2012, LFC 2012, 2011, 2010, 2009 ; la colonne 2012 ne porte aucune mention d'état) : 2012 = 3 624,1 (produits de base 1 235,6 ; carburants 2 111,0 ; transport 277,5) ; LFC 2012 = 3 207,5 (1 242,0 ; 1 688,0 ; 277,5) ; LF 2013 = 4 200,0 (1 350,0 ; 2 520,0 ; 330,0) ; 2011 = 2 869,2 ; 2010 = 1 500,0 ; 2009 = 1 430,0. Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10).",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.portail.finances.gov.tn:80/publications/bulletin-fin-mars-2013.pdf"
+    },
+    {
+      "id": "minfin-resultats-provisoires-2015-12",
+      "type": "report",
+      "title": "Résultats provisoires de l'exécution du budget de l'État à fin décembre 2015",
+      "title-short": "Résultats provisoires de l'exécution du budget, fin décembre 2015",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances"
+        }
+      ],
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "URL": "https://web.archive.org/web/20160527150109/http://finances.gov.tn/images/R%C3%A9sultats_provisoires_dex%C3%A9cution_de_budget_de_lEtat_%C3%A0__fin_d%C3%A9cembre_2015_copie.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "note": "citation-key: minfin-resultats-provisoires-2015-12\nDocument retiré du site du ministère des Finances (finances.gov.tn/images/…, l'adresse répond 404 le 6 octobre 2026) ; consulté dans la capture du 27/05/2016 (horodatage 20160527150109 lu dans le CDX le 6 octobre 2026). La capture est identique octet pour octet à la copie locale de tunisia-data (2 268 590 octets, 24 pages) ; le nom du fichier publié porte « copie ». Titre trilingue lu sur la couverture à l'image : « نتائج وقتية لتنفيذ ميزانية الدولة — إلى موفى ديسمبر 2015 », « Résultats provisoires de l'Exécution du Budget de l'Etat — A fin Décembre 2015 » ; pas de date de parution. Pages non numérotées. Lu à l'image le 6 octobre 2026 : page 10 du PDF, tableau « Dépenses hors service de la dette » (colonnes LF 2016, Prov. 2015, LFC 2015, 2014 à 2010), ligne « dont Compensation » : Prov. 2015 = 2 863,9 (produits de base 1 530,0 ; carburants 918,0 ; transport 415,9) ; LFC 2015 = 3 232,0 (1 530,0 ; 1 286,0 ; 416,0) ; LF 2016 = 2 612,0 (1 600,0 ; 579,0 ; 433,0) ; 2014 = 4 154,2 (1 416,7 ; 2 353,0 ; 384,5) ; 2013 = 5 514,0 (1 450,0 ; 3 734,0 ; 330,0) ; 2012 = 3 624,1 (1 235,6 ; 2 111,0 ; 277,5). Note de bas de page (1) du bulletin : « Dans le cadre de la LFC 2015, l'hypothése [sic] de prix du Baril de pétrole a été révisée de 95 $ pour la LF à 62 $ pour la LFC et le principe de séparation des opérations de commercialisation des hydrocarbures a été adopté. » (version arabe : « في إطار قانون المالية التكميلي لسنة 2015 تمت مراجعة فرضية سعر برميل النفط من 95 دولار في قانون المالية الأصلي لـ 62 دولار في قانون المالية التكميلي كما تم اعتماد مبدأ فصل عمليات تسويق المحروقات »). À l'image, l'appel de note « (1) » n'est reporté sur aucune ligne du tableau. La ligne « Dont avance sur comp. Carburants », sous « Prêts et avances nets du Trésor », est vide dans toutes les colonnes. Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10).",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://finances.gov.tn/images/R%C3%A9sultats_provisoires_dex%C3%A9cution_de_budget_de_lEtat_%C3%A0__fin_d%C3%A9cembre_2015_copie.pdf"
+    },
+    {
+      "id": "minfin-resultats-provisoires-2017-01",
+      "type": "report",
+      "title": "Résultats provisoires de l'exécution du budget de l'État à fin 2016 et à fin janvier 2017",
+      "title-short": "Résultats provisoires de l'exécution du budget, fin 2016 et janvier 2017",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances"
+        }
+      ],
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "URL": "https://web.archive.org/web/20170606104853/http://finances.gov.tn/images/R%C3%A9sultats_provisoires_delex%C3%A9cution_du_budget_de_letat_%C3%A0_fin_2016_et_janvier_2017.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "note": "citation-key: minfin-resultats-provisoires-2017-01\nDocument retiré du site du ministère des Finances (finances.gov.tn/images/…, l'adresse répond 404 le 6 octobre 2026) ; consulté dans la capture du 06/06/2017 (horodatage 20170606104853 lu dans le CDX le 6 octobre 2026). La capture est identique octet pour octet à la copie locale de tunisia-data (1 859 573 octets, 22 pages). Titre trilingue lu sur la couverture à l'image : « نتائج وقتية لتنفيذ ميزانية الدولة — لسنة 2016 وموفى جانفي 2017 », « Résultats provisoires de l'Exécution du Budget de l'Etat — A fin 2016 et à fin Janvier 2017 » ; pas de date de parution. Pages non numérotées. Lu à l'image le 6 octobre 2026 : page 9 du PDF, tableau « Dépenses hors service de la dette » (colonnes LF 2017, Prov. 2016, LFC 2016, fin janvier 2017 et 2016, puis 2015, 2014, 2013, 2012), ligne « dont Compensation » : LF 2017 = 2 700,0 (1 600,0 ; 650,0 ; 450,0) ; Prov. 2016 = 2 210,7 (1 580,7 ; 197,0 ; 433,0) ; LFC 2016 = 2 249,0 (1 619,0 ; 197,0 ; 433,0) ; 2015 = 2 882,9 (1 549,0 ; 918,0 ; 415,9) ; 2014 = 4 154,2 (1 416,7 ; 2 353,0 ; 384,5) ; 2013 = 5 514,0 (1 450,0 ; 3 734,0 ; 330,0) ; 2012 = 3 624,1 (1 235,6 ; 2 111,0 ; 277,5). Note de bas de page (1) du bulletin : « Dans le cadre de la LFC 2015, l'hypothése [sic] de prix du Baril de pétrole a été révisée de 95 $ pour la LF à 62 $ pour la LFC et le principe de séparation des opérations de commercialisation des hydrocarbures a été adopté. » (version arabe : « في إطار قانون المالية التكميلي لسنة 2015 تمت مراجعة فرضية سعر برميل النفط من 95 دولار في قانون المالية الأصلي لـ 62 دولار في قانون المالية التكميلي كما تم اعتماد مبدأ فصل عمليات تسويق المحروقات »). Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10).",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://finances.gov.tn/images/R%C3%A9sultats_provisoires_delex%C3%A9cution_du_budget_de_letat_%C3%A0_fin_2016_et_janvier_2017.pdf"
+    },
+    {
+      "id": "minfin-resultats-provisoires-2018-07",
+      "type": "report",
+      "title": "Résultats provisoires de l'exécution du budget de l'État à fin juillet 2018",
+      "title-short": "Résultats provisoires de l'exécution du budget, fin juillet 2018",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances"
+        }
+      ],
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "URL": "https://web.archive.org/web/20181215191334/http://www.finances.gov.tn/index.php?option=com_jdownloads&Itemid=321&view=finish&cid=1447&catid=8&lang=fr",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "note": "citation-key: minfin-resultats-provisoires-2018-07\nDocument retiré du site du ministère des Finances (l'adresse de téléchargement com_jdownloads cid=1447 ne livre plus le fichier : elle renvoie une page HTML de 84 916 octets le 6 octobre 2026) ; consulté dans la capture du 15/12/2018 (horodatage 20181215191334 lu dans le CDX le 6 octobre 2026). La capture est identique octet pour octet à la copie locale de tunisia-data (1 829 827 octets, 22 pages). Titre trilingue lu sur la couverture à l'image : « نتائج وقتية لتنفيذ ميزانية الدولة — إلى موفى جويلية 2018 », « Résultats provisoires de l'Exécution du Budget de l'Etat — A fin Juillet 2018 » ; pas de date de parution. Pages non numérotées. Lu à l'image le 6 octobre 2026 : page 9 du PDF, tableau « Dépenses hors service de la dette » (colonnes LF 2018, Prov. 2017, LFC 2017, fin juillet 2018 et 2017, fin juin 2018 et 2017, puis 2016, 2015, 2014 sans mention d'état), ligne « dont Compensation » : LF 2018 = 3 520,0 (1 570,0 ; 1 500,0 ; 450,0) ; Prov. 2017 = 3 492,2 (1 494,0 ; 1 550,0 ; 448,2) ; LFC 2017 = 3 450,0 (1 500,0 ; 1 500,0 ; 450,0) ; 2016 = 2 210,7 ; 2015 = 2 882,9 ; 2014 = 4 154,2. Même note de bas de page (1) sur la LFC 2015 que dans le bulletin de décembre 2015. Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10).",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.finances.gov.tn/index.php?option=com_jdownloads&Itemid=321&view=finish&cid=1447&catid=8&lang=fr"
+    },
+    {
+      "id": "minfin-note-execution-2018-12",
+      "type": "report",
+      "title": "مذكرة حول نتائج تنفيذ ميزانية الدولة إلى موفى سنة 2018 (Note sur l'exécution provisoire du budget de l'État à fin décembre 2018)",
+      "title-short": "Note sur l'exécution du budget de l'État à fin 2018",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances"
+        }
+      ],
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "URL": "https://web.archive.org/web/20190718181045/http://v2.portail.finances.gov.tn/index.php?option=com_jdownloads&Itemid=581&view=finish&cid=1603&catid=8&lang=fr",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "note": "citation-key: minfin-note-execution-2018-12\nSite du ministère des Finances (v2.portail.finances.gov.tn) inaccessible (aucune réponse le 6 octobre 2026) ; consulté dans la capture du 18/07/2019 (horodatage 20190718181045 lu dans le CDX le 6 octobre 2026). Fichier Word (.doc, 407 552 octets), identique octet pour octet à la copie locale de tunisia-data ; il a été lu après conversion en PDF par LibreOffice (11 pages), de sorte que la pagination dépend du rendu. Titre lu en première page : « مذكرة حول نتائج تنفيذ ميزانية الدولة إلى موفى سنة 2018 », sous l'en-tête « الجمهورية التونسية — وزارة المالية » ; ni date de parution ni signataire (propriétés Word : créé le 29 mai 2019). Le titre français entre parenthèses est celui du catalogue tunisia-data. Lu à l'image le 6 octobre 2026 : tableau « توزيع النفقات دون خدمة الدين العمومي » (rendu LibreOffice : page 7), colonnes « نتائج » 2014, 2015, 2016, 2017, puis 2018 « نتائج », « ق م ت » (LFC) et « ق م » (LF) ; ligne « الدعم » : 2018 « نتائج » = 4 900,0 (produits de base 1 750,0 ; carburants 2 700,0 ; transport 450,0), LFC 2018 = 4 900,0 (mêmes postes), LF 2018 = 3 520,0 (1 570,0 ; 1 500,0 ; 450,0) ; 2017 = 3 492,2 (1 494,0 ; 1 550,0 ; 448,2) ; 2016 = 2 210,7 (1 580,7 ; 197,0 ; 433,0) ; 2015 = 2 882,9 (1 549,0 ; 918,0 ; 415,9) ; 2014 = 4 153,7 (1 416,7 ; 2 353,0 ; 384,0) — ce dernier total et le transport de 2014 diffèrent de 4 154,2 et 384,5 des bulletins et du rapport 2015 de la BCT. Le texte de la première page (couche texte du rendu, non vue à l'image) rattache la hausse des dépenses de compensation de 2018 (+ 1 380 MD) à + 1 200 MD pour les carburants, à 2 700 MD contre 1 500 MD inscrits à la loi de finances, et + 180 MD pour les produits de base, à 1 750 MD contre 1 570 MD. Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10).",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://v2.portail.finances.gov.tn/index.php?option=com_jdownloads&Itemid=581&view=finish&cid=1603&catid=8&lang=fr"
+    },
+    {
+      "id": "minfin-finances-publiques-2010",
+      "type": "report",
+      "title": "تقرير المالية العمومية لسنة 2010 (Rapport sur les finances publiques 2010)",
+      "title-short": "Rapport sur les finances publiques 2010",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances"
+        }
+      ],
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2012,
+            5
+          ]
+        ]
+      },
+      "URL": "https://web.archive.org/web/20120709215354/http://www.portail.finances.gov.tn:80/publications/Rapport-FP-2010.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "note": "citation-key: minfin-finances-publiques-2010\nSite du ministère des Finances (ancien portail, portail.finances.gov.tn) inaccessible (HTTP 503 le 6 octobre 2026) ; consulté dans la capture du 09/07/2012 (horodatage 20120709215354 lu dans le CDX le 6 octobre 2026). La capture est complète (125 pages) et identique octet pour octet à la copie locale de tunisia-data (3 015 598 octets) et au fichier que sert encore le miroir dev.finances.gov.tn. Titre arabe et date (« ماي 2012 ») lus sur la couverture à l'image le 6 octobre 2026 ; émetteur : وزارة المالية، الإدارة العامة للموارد و التوازنات. Le titre français entre parenthèses est celui du catalogue tunisia-data. Lu à l'image le 6 octobre 2026 : page 26 imprimée (32e page du PDF), § 3 « التدخلات » : tableau « الدعم » (colonnes 2007, 2008, 2009 ق م ت et إنجازات, 2010 ق م et إنجازات) — 2010 = 1 500,0 en loi de finances comme en réalisations (produits de base 730,0 ; carburants 550,0 ; transport 220,0), 2009 = 1 430,0 (800,0 ; 430,0 ; 200,0) ; et, dans le texte, « و تمثل النفقات الموجهة للدعم […] 2,4 % من الناتج المحلي الإجمالي », rapprochée du déficit budgétaire de 1,3 % du PIB. Utilisé pour la part de la compensation dans le PIB en 2010 (docs/notes/compensation.md, § 10).",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.portail.finances.gov.tn:80/publications/Rapport-FP-2010.pdf"
+    },
+    {
+      "id": "bct-ra-2015",
+      "type": "report",
+      "title": "Rapport annuel 2015",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_2015_fr.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2015",
+      "note": "citation-key: bct-ra-2015\nTitre et date (« Rapport Annuel 2015 », « Juin 2016 ») lus dans la couche texte de la page 3 du PDF (les pages 1 et 2 sont vierges ; la couche texte inverse les chiffres de l'année). Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 14 046 469 octets, 284 pages) est identique en taille à la copie locale de tunisia-data. Lu à l'image le 6 octobre 2026 : Tableau 2-12 « Dépenses hors service de la dette », p. 45 imprimée (57e page du PDF), colonnes 2014, 2015, 2016* (« * Loi de Finances ») : compensation 4 154,2 ; 2 863,9 ; 2 612,0 (produits de base 1 416,7 ; 1 530,0 ; 1 600,0 — carburants 2 353,0 ; 918,0 ; 579,0 — transport 384,5 ; 415,9 ; 433,0). Part dans le PIB, p. 33 imprimée (45e page du PDF), lue à l'image : « les dépenses de compensation […] ont poursuivi leur tendance baissière pour passer à 3,3 % du PIB après 5,1 % en 2014 et un record de 7,3 % du PIB en 2013 ». Le tableau ne porte pas de ligne de source. Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 ») et de bct-ra-1984. Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2016",
+      "type": "report",
+      "title": "Rapport annuel 2016",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_2016_fr.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2016",
+      "note": "citation-key: bct-ra-2016\nTitre (« Rapport Annuel 2016 ») et date (« Juin 2017 ») lus sur la couverture, couche texte de la page 1 du PDF. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 8 111 702 octets, 244 pages) est identique en taille à la copie locale de tunisia-data. Lu à l'image le 6 octobre 2026 : Tableau 2-12 « Dépenses hors service de la dette », p. 45 imprimée (53e page du PDF), colonnes 2015, 2016, 2017 : compensation 2 882,9 ; 2 210,7 ; 2 700,0 (produits de base 1 549,0 ; 1 580,7 ; 1 600,0 — carburants 918,0 ; 197,0 ; 650,0 — transport 415,9 ; 433,0 ; 450,0), source « Ministère des Finances ». Le total de 2015 y est révisé (2 882,9, produits de base 1 549,0) par rapport au rapport 2015 (2 863,9 ; 1 530,0). Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 ») et de bct-ra-1984. Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2017",
+      "type": "report",
+      "title": "Rapport annuel 2017",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_2017_fr.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2017",
+      "note": "citation-key: bct-ra-2017\nTitre (« Rapport Annuel 2017 ») et date (« Juin 2018 ») lus sur la couverture, couche texte de la page 1 du PDF. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 8 089 568 octets, 246 pages) est identique en taille à la copie locale de tunisia-data. Lu à l'image le 6 octobre 2026 : Tableau 2-12 « Dépenses hors service de la dette », p. 41 imprimée (51e page du PDF), colonnes 2016, 2017, 2018 : compensation 2 210,7 ; 3 492,2 ; 3 520,0 (produits de base 1 580,7 ; 1 494,0 ; 1 570,0 — carburants 197 ; 1 550,0 ; 1 500,0 — transport 433 ; 448,2 ; 450), source « Ministère des Finances ». Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 ») et de bct-ra-1984. Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2018",
+      "type": "report",
+      "title": "Rapport annuel 2018",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_2018_fr.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2018",
+      "note": "citation-key: bct-ra-2018\nTitre (« Rapport Annuel 2018 ») et date (« Juin 2019 ») lus sur la couverture, couche texte de la page 1 du PDF. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 5 483 903 octets, 265 pages) est identique en taille à la copie locale de tunisia-data. Lu à l'image le 6 octobre 2026 : Tableau 2-12 « Dépenses hors service de la dette », p. 41 imprimée (49e page du PDF), colonnes 2017, 2018, 2019 : compensation 3 492,2 ; 4 900,0 ; 4 350,0 (produits de base 1 494,0 ; 1 750,0 ; 1 800,0 — carburants 1 550,0 ; 2 700,0 ; 2 100,0 — transport 448,2 ; 450,0 ; 450,0). Part dans le PIB, p. 31 imprimée (39e page du PDF), lue à l'image : « les dépenses de compensation ont connu une nette progression de 40,3 %, avec une part de 20,7 % dans les dépenses de fonctionnement et 4,6 % du PIB ». Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 ») et de bct-ra-1984. Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2019",
+      "type": "report",
+      "title": "Rapport annuel 2019",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_2019_fr.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2019",
+      "note": "citation-key: bct-ra-2019\nTitre (« Rapport Annuel 2019 ») et date (« Juin 2020 ») lus sur la couverture, couche texte de la page 1 du PDF. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 8 237 397 octets, 234 pages) est identique en taille à la copie locale de tunisia-data. Lu à l'image le 6 octobre 2026 : Tableau 2-12 « Dépenses hors service de la dette », p. 60 imprimée (68e page du PDF), colonnes 2018, 2019, 2020 : compensation 4 900,0 ; 4 789,5 ; 4 180,0 (produits de base 1 750,0 ; 1 800,0 ; 1 800,0 — carburants 2 700,0 ; 2 538,0 ; 1 880,0 — transport 450,0 ; 451,5 ; 500,0), source « Ministère des Finances ». Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 ») et de bct-ra-1984. Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2020",
+      "type": "report",
+      "title": "Rapport annuel 2020",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_2020_fr.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2020",
+      "note": "citation-key: bct-ra-2020\nTitre (« Rapport Annuel 2020 ») et date (« Juin 2021 ») lus sur la couverture, couche texte de la page 1 du PDF. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 8 682 676 octets, 240 pages) est identique en taille à la copie locale de tunisia-data. Lu à l'image le 6 octobre 2026 : Tableau 2-12 « Dépenses hors service de la dette », p. 62 imprimée (72e page du PDF), colonnes 2019, 2020, 2021 : compensation 4 788 ; 4 486 ; 3 101 (produits de base 1 800 ; 2 416 ; 2 200 — carburants 2 538 ; 1 470 ; 401 — transport 450 ; 600 ; 500), valeurs arrondies à l'unité, source « MEFAI » ; le total de 2019 (4 788, transport 450) diffère de celui du rapport 2019 (4 789,5, transport 451,5). Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 ») et de bct-ra-1984. Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2021",
+      "type": "report",
+      "title": "Rapport annuel 2021",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/ANNUALREPORT2021FRENCH.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2021",
+      "note": "citation-key: bct-ra-2021\nTitre (« Rapport Annuel 2021 ») et date (« Juin 2022 ») lus sur la couverture, couche texte de la page 1 du PDF. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 5 029 641 octets, 230 pages) est identique en taille à la copie locale de tunisia-data. Lu à l'image le 6 octobre 2026 : Tableau 2-11 « Dépenses hors service de la dette », p. 57 imprimée (67e page du PDF), colonnes 2020, 2021, 2022 : « Dont : Compensation » 4 486 ; 6 031 ; 7 262 (produits de base 2 416 ; 2 200 ; 3 771 — carburants 1 470 ; 3 327 ; 2 891 — transport 600 ; 504 ; 600), source « Ministère des Finances » ; aucune mention d'état sur les colonnes. Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 ») et de bct-ra-1984. Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2022",
+      "type": "report",
+      "title": "Rapport annuel 2022",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_2022_fr.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2022",
+      "note": "citation-key: bct-ra-2022\nTitre (« Rapport Annuel 2022 ») et date (« Juin 2023 ») lus sur la couverture, couche texte de la page 1 du PDF. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 6 273 574 octets, 238 pages) est identique en taille à la copie locale de tunisia-data. Lu à l'image le 6 octobre 2026 : Tableau 2-11 « Dépenses hors service de la dette », p. 60 imprimée (68e page du PDF), colonnes 2021, 2022, 2023* (« * Provisoires ») : « Dont : Compensation » 6 031,0 ; 11 999,0 ; 8 832 (produits de base 2 200,0 ; 3 771,0 ; 2 523 — carburants 3 327,0 ; 7 628,0 ; 5 669 — transport 504,0 ; 600,0 ; 640). Part dans le PIB, même page, lue à l'image : « Le reste, soit 11.999 MDT, qui représente 8,3 % du PIB concernent les charges liées à la compensation ». Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 ») et de bct-ra-1984. Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2023",
+      "type": "report",
+      "title": "Rapport annuel 2023",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_2023_fr.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2023",
+      "note": "citation-key: bct-ra-2023\nTitre (« Rapport Annuel 2023 ») et date (« Juin 2024 ») lus sur la couverture, couche texte de la page 1 du PDF. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 7 297 206 octets, 242 pages) est identique en taille à la copie locale de tunisia-data. Lu à l'image le 6 octobre 2026 : Tableau 2-10 « Dépenses hors service de la dette », p. 64 imprimée (72e page du PDF), colonnes 2022, 2023, 2024* (« * Provisoires (LF 2024) ») : « Compensation » 11 999,0 ; 11 475,0 ; 11 337,0 (produits de base 3 771,0 ; 3 805,0 ; 3 591,0 — carburants 7 628,0 ; 7 030,0 ; 7 086,0 — transport 600,0 ; 640,0 ; 660,0). Part dans le PIB, p. 56 imprimée (64e page du PDF), lue à l'image : « les charges de compensation ont affiché une contraction de 4,4 % pour revenir à 7,5 % du PIB, après 8,6 % en 2022 » (le rapport 2022 donnait 8,3 % pour 2022). Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 ») et de bct-ra-1984. Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2024",
+      "type": "report",
+      "title": "Rapport annuel 2024",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_2024_fr.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2024",
+      "note": "citation-key: bct-ra-2024\nTitre (« Rapport Annuel 2024 ») et date (« Juin 2025 ») lus sur la couverture, couche texte de la page 1 du PDF. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 6 410 934 octets, 246 pages) est identique en taille à la copie locale de tunisia-data. Lu à l'image le 6 octobre 2026 : Tableau 2-11 « Dépenses hors service de la dette », p. 65 imprimée (75e page du PDF), colonnes 2023, 2024, 2025* (« * Provisoires (LF 2025) ») : « Dont : Compensation » 11 479,5 ; 11 347,5 ; 11 593,0 (produits de base 3 809,5 ; 3 601,5 ; 3 801,0 — carburants 7 030,0 ; 7 086,0 ; 7 112,0 — transport 640,0 ; 660,0 ; 680,0). Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 ») et de bct-ra-1984. Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2025",
+      "type": "report",
+      "title": "Rapport annuel 2025",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_2025_fr.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2025",
+      "note": "citation-key: bct-ra-2025\nTitre (« Rapport annuel 2025 ») lu à l'image sur la couverture, date (« Juin 2026 ») sur le dos de la couverture. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 6 766 673 octets, 253 pages) est identique en taille à la copie locale de tunisia-data. Lu à l'image le 6 octobre 2026 : Tableau 2-11 « Dépenses hors service de la dette », p. 71 imprimée (83e page du PDF), colonnes 2024, 2025, 2026* (« * Provisoires (LF 2026) ») : « dont : Compensation » 11 347,5 ; 11 593,0 ; 9 772,0 (produits de base 3 601,5 ; 3 801,0 ; 4 079,0 — carburants 7 086,0 ; 7 112,0 ; 4 993,0 — transport 660,0 ; 680,0 ; 700,0), source « Ministère des Finances » ; la colonne 2025 n'est pas qualifiée mais reprend, au dixième, la colonne 2025* « Provisoires (LF 2025) » du rapport 2024, tandis que le texte (p. 71) dit « ont enregistré en 2025 » et ventile 11 593,0 en 61,3 % de carburants, 32,8 % de produits de base, le reste au transport. Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 ») et de bct-ra-1984. Consulté le 6 octobre 2026."
     }
   ]
 }
