@@ -1644,6 +1644,182 @@
     على توزيع الخاضعين لسنة 2022. ثلاثة أنشطة غير مذكورة في جدول الحوادث القاتلة،
     فلا تُسند إليها قيمة صفر. تشمل الحوادث القاتلة حوادث الطريق أيضاً ويمكن تحيينها.
   fiche: sources/cnam-statistiques.md
+- id: pib-courant-enchaine
+  titre: 'PIB aux prix courants sur longue période : série accolée, bases de l''INS,
+    série enchaînée, 1961-2025'
+  sources:
+  - ins-cnat-2015
+  - ins-pib-base-2015-2010-2020
+  - undata-sna
+  - wb-wdi
+  build: tunisia_data.build.pib_enchaine:main
+  raw:
+  - data/processed/ins-comptes-nationaux/pib_courant_par_base.csv
+  - data/processed/ins-comptes-nationaux/pib_croissance_par_base.csv
+  - data/processed/banque-mondiale/wdi_tunisie.csv
+  output: data/processed/ins-comptes-nationaux/pib_courant_enchaine.csv
+  unite: millions de dinars courants ; indice 100 en 2015 ; % par an
+  perimetre: 'cinq variantes (colonne `variante`) : `accolee` (niveaux publiés mis
+    bout à bout, 1961-2025), `ins_base_1983` (1992-2009), `ins_base_1997` (1997-2017)
+    et `ins_base_2015` (2010-2025), sur la profondeur publiée ou recalculée par l''INS,
+    et `enchainee` (indice chaîné sur les taux de `pib-croissance-par-base`, 100 en
+    2015, et niveau à la base 2015, 1961-2025) ; `construction` : publiée, rétropolée
+    par l''INS, enchaînée par nos soins'
+  base_pib: 1983 / 1997 / 2015 (colonnes base et variante)
+  caveats: 'SÉRIE CONSTRUITE POUR ILLUSTRATION ; filtrer `variante`. LA VARIANTE ENCHAÎNÉE
+    EST UNE CONSTRUCTION DU PRÉCIS, NON UNE DONNÉE DE L''INS : elle préserve la croissance,
+    pas les niveaux ni les structures, ne remplace pas une rétropolation et ne doit
+    servir de dénominateur à aucun ratio. La variante accolée porte deux taux FAUX
+    (`croissance_fausse`) : + 20,34 % en 1997 (croissance + 9,61 %, changement de
+    base + 9,79 %) et + 12,72 % en 2010 (croissance + 7,46 %, changement de base +
+    4,89 %). Règle d''enchaînement : le taux de l''année est celui de la base la plus
+    récente qui porte l''année et la précédente ; les années de jonction 2010 et 1997
+    prennent donc leur taux dans l''ancienne base. Voir docs/pib-courant-enchaine.md.'
+  titre_ar: 'الناتج المحلي الإجمالي بالأسعار الجارية على المدى الطويل: سلسلة موصولة
+    دون تصحيح، أسس المعهد الوطني للإحصاء، سلسلة مسلسلة، 1961-2025'
+  unite_ar: بملايين الدنانير الجارية؛ مؤشر 100 في 2015؛ % سنويًا
+  perimetre_ar: 'خمس صيغ (العمود variante): المستويات المنشورة موضوعة الواحدة تلو
+    الأخرى، أسس 1983 و1997 و2015 كما نشرها أو أعاد احتسابها المعهد، ومؤشر مسلسل بنسب
+    النموّ'
+  caveats_ar: 'سلسلة مُعدّة للتوضيح؛ تُفرز حسب العمود variante. الصيغة المسلسلة من
+    إعدادنا وليست معطى من المعهد الوطني للإحصاء: تحفظ النموّ لا المستويات ولا البنية،
+    ولا تعوّض إعادة الاحتساب، ولا تُستعمل مقامًا لأي نسبة. في الصيغة الموصولة دون
+    تصحيح نسبتان خاطئتان: + 20,34 % في 1997 و+ 12,72 % في 2010، بسبب تغيير الأساس.'
+  fiche: docs/pib-courant-enchaine.md
+- id: pib-croissance-par-base
+  titre: Croissance du PIB aux prix courants calculée à l'intérieur de chaque base,
+    1962-2025
+  sources:
+  - ins-cnat-2015
+  - ins-pib-base-2015-2010-2020
+  - undata-sna
+  - wb-wdi
+  build: tunisia_data.build.pib_enchaine:main
+  raw:
+  - data/processed/ins-comptes-nationaux/pib_courant_par_base.csv
+  - data/processed/ins-comptes-nationaux/pib_nominal_editions.csv
+  - data/processed/ins-comptes-nationaux/pib_undata.csv
+  - data/processed/banque-mondiale/wdi_tunisie.csv
+  output: data/processed/ins-comptes-nationaux/pib_croissance_par_base.csv
+  unite: '% par an'
+  perimetre: 'une ligne par (année, base) : base 1983 (1993-2009), base 1997 (1998-2017),
+    base 2015 (2011-2025), et Banque mondiale avant 1992 (1962-1992, base non dite)
+    ; les deux niveaux du taux sont de la même base et, sauf 2015 en base 2015, de
+    la même publication ; colonnes `pib_n_MD`, `pib_n_1_MD`, `source`, `publication`,
+    `meme_publication`, `retropole`, `provenance`'
+  base_pib: 1983 / 1997 / 2015 (colonne base)
+  caveats: 'SÉRIE CONSTRUITE POUR ILLUSTRATION. Plusieurs taux pour une même année
+    : filtrer `base`. Sur les années connues dans deux bases, les taux diffèrent de
+    0,2 à 0,4 point en moyenne (1,32 point au plus, en 2007) alors que les niveaux
+    diffèrent de 5 à 10 %. Avant 1992, aucune base n''est dite : taux de la Banque
+    mondiale. Pour un seul taux par année, voir `cnat-pib-nominal-croissance` et `croissances-revenus-prix`.
+    Voir docs/pib-croissance-par-base.md.'
+  titre_ar: نموّ الناتج المحلي الإجمالي بالأسعار الجارية محسوبًا داخل كل أساس، 1962-2025
+  unite_ar: '% سنويًا'
+  perimetre_ar: 'سطر لكل سنة وأساس: أساس 1983 (1993-2009)، أساس 1997 (1998-2017)،
+    أساس 2015 (2011-2025)، والبنك الدولي قبل 1992 (أساس غير مذكور)'
+  caveats_ar: 'سلسلة مُعدّة للتوضيح. عدّة نسب للسنة الواحدة: تُفرز حسب العمود base.
+    في سنوات التداخل تختلف النسب بين أساسين بـ0,2 إلى 0,4 نقطة في المتوسط، بينما تختلف
+    المستويات بـ5 إلى 10 %.'
+  fiche: docs/pib-croissance-par-base.md
+- id: pib-courant-recouvrements
+  titre: 'PIB aux prix courants : années connues dans deux bases, écart et rapport
+    observés'
+  sources:
+  - ins-cnat-2015
+  - ins-pib-base-2015-2010-2020
+  - undata-sna
+  build: tunisia_data.build.pib:main
+  raw:
+  - data/processed/ins-comptes-nationaux/pib_courant_par_base.csv
+  output: data/processed/ins-comptes-nationaux/pib_courant_recouvrements.csv
+  unite: millions de dinars courants et %
+  perimetre: 'base 1983 et base 1997 : 1997-2009 ; base 1997 et base 2015 : 2010-2017
+    ; pour chaque année, les deux niveaux, l''écart en millions de dinars et en %,
+    le rapport, et si la valeur de la base nouvelle est rétropolée'
+  base_pib: 1983 / 1997 / 2015 (colonnes base_ancienne, base_nouvelle)
+  caveats: 'Écarts OBSERVÉS, jamais extrapolés : de + 9,25 à + 10,91 % (1983 → 1997),
+    de + 4,89 à + 6,12 % (1997 → 2015). Ils ne sont pas constants : ne pas en tirer
+    un coefficient de passage pour d''autres années. Aucune année n''est connue à
+    la fois en base 1983 et en base 2015. Voir docs/pib-courant-par-base.md.'
+  titre_ar: 'الناتج المحلي الإجمالي بالأسعار الجارية: السنوات المعروفة على أساسين،
+    الفارق والنسبة الملاحظان'
+  unite_ar: بملايين الدنانير الجارية وبالنسبة المئوية
+  perimetre_ar: 'أساس 1983 وأساس 1997: 1997-2009؛ أساس 1997 وأساس 2015: 2010-2017'
+  caveats_ar: 'فوارق ملاحظة غير مستقرأة وغير ثابتة: لا يُستخرج منها معامل انتقال لسنوات
+    أخرى.'
+  fiche: docs/pib-courant-par-base.md
+- id: pib-croissance-volume
+  titre: Croissance du PIB en volume, toutes sources, par base et par année de prix,
+    1961-2025
+  sources:
+  - ins-cnat-2015
+  - ins-pib-base-2015-2010-2020
+  - undata-sna
+  - wb-wdi
+  build: tunisia_data.build.pib_enchaine:main
+  raw:
+  - data/processed/ins-comptes-nationaux/pib_volume_editions.csv
+  - data/processed/ins-comptes-nationaux/pib_volume_classeur_ins.csv
+  - data/processed/ins-comptes-nationaux/pib_volume_undata.csv
+  - data/processed/banque-mondiale/wdi_tunisie.csv
+  output: data/processed/ins-comptes-nationaux/pib_croissance_volume.csv
+  unite: '% par an'
+  perimetre: 'une ligne par (année, source, base, année de prix) : éditions des Comptes
+    de la nation (base 1983 aux prix de 1990, 2001-2008 ; base 1997, 2005-2017, et
+    base 2015, 2016-2025, aux prix de l''année précédente), classeur de l''INS du
+    15 août 2021 (base 2015, 2010-2020), UNdata tableau 1.2 (séries 10, 20, 30, 100,
+    1000, 1961-2023, prix de 1966, 1972, 1980, 1990 ou de l''année précédente), Banque
+    mondiale (1962-2025) ; `famille` : INS / institution tunisienne, rapport extérieur
+    ; `mode`, `taux_imprime_pct`, `retropole`, `provenance`'
+  base_pib: 1983 / 1997 / 2015 (colonne base) ; année de prix en colonne annee_de_prix
+  caveats: 'PLUSIEURS TAUX POUR UNE MÊME ANNÉE : filtrer `source`, `base` et `annee_de_prix`.
+    UNE ANNÉE DE PRIX N''EST PAS UNE BASE : un taux en volume dépend de la base des
+    comptes et de l''année dont les prix valorisent le volume. Les sources tunisiennes
+    s''accordent à quelques dixièmes de point ; la Banque mondiale s''en écarte de
+    6 à 22 points en 1962-1965 (signe contraire), de 1 à 2 points en 1986-1990 et
+    en 2001. 1970 n''a de taux que de la Banque mondiale. Taux imprimés à une décimale
+    quand `mode` = imprimé. Voir docs/pib-croissance-volume.md.'
+  titre_ar: نموّ الناتج المحلي الإجمالي بالحجم، كل المصادر، حسب الأساس وسنة الأسعار،
+    1961-2025
+  unite_ar: '% سنويًا'
+  perimetre_ar: 'سطر لكل سنة ومصدر وأساس وسنة أسعار: نشرات الحسابات القومية، مصنّف
+    المعهد الوطني للإحصاء لسنة 2021، قاعدة بيانات الأمم المتحدة، البنك الدولي'
+  caveats_ar: 'عدّة نسب للسنة الواحدة: تُفرز حسب المصدر والأساس وسنة الأسعار. سنة
+    الأسعار ليست أساسًا: نسبة النموّ بالحجم تتعلق بأساس الحسابات وبالسنة التي تُقوَّم
+    بأسعارها الكميات. تتقارب المصادر التونسية، ويبتعد عنها البنك الدولي بـ6 إلى 22
+    نقطة في 1962-1965.'
+  fiche: docs/pib-croissance-volume.md
+- id: pib-volume-enchaine
+  titre: Indice de volume du PIB enchaîné, 100 en 2015, 1960-2025
+  sources:
+  - ins-cnat-2015
+  - ins-pib-base-2015-2010-2020
+  - undata-sna
+  - wb-wdi
+  build: tunisia_data.build.pib_enchaine:main
+  raw:
+  - data/processed/ins-comptes-nationaux/pib_croissance_volume.csv
+  output: data/processed/ins-comptes-nationaux/pib_volume_enchaine.csv
+  unite: indice 100 en 2015 ; % par an
+  perimetre: 'un taux par année, celui de la source la plus autoritaire de `pib-croissance-volume`
+    (INS dans la base la plus récente, puis UNdata, puis Banque mondiale), chaîné
+    depuis 2015 ; pour chaque année : source, base, année de prix, règle à la jonction,
+    taux de la Banque mondiale en regard et écart'
+  base_pib: 1983 / 1997 / 2015 (colonne base)
+  caveats: 'SÉRIE CONSTRUITE POUR ILLUSTRATION : CONSTRUCTION DU PRÉCIS, NON UNE DONNÉE
+    DE L''INS. L''indice chaîne des taux de sept combinaisons de base et d''année
+    de prix (colonne `jonction`) ; il préserve la croissance, pas les niveaux ni les
+    structures, et ne remplace pas une rétropolation. Le taux de 1970 est celui de
+    la Banque mondiale, faute de taux d''origine tunisienne. Voir docs/pib-croissance-volume.md.'
+  titre_ar: مؤشر حجم الناتج المحلي الإجمالي المسلسل، 100 في 2015، 1960-2025
+  unite_ar: مؤشر 100 في 2015؛ % سنويًا
+  perimetre_ar: نسبة واحدة لكل سنة، من المصدر الأوثق (المعهد الوطني للإحصاء في أحدث
+    أساس، ثم بيانات الأمم المتحدة، ثم البنك الدولي)، مسلسلة انطلاقًا من 2015
+  caveats_ar: 'سلسلة مُعدّة للتوضيح: من إعدادنا وليست معطى من المعهد الوطني للإحصاء.
+    يحفظ المؤشر النموّ لا المستويات ولا البنية، ولا يعوّض إعادة الاحتساب. نسبة سنة
+    1970 من البنك الدولي.'
+  fiche: docs/pib-croissance-volume.md
 - id: compensation-parts
   titre: 'Dépense de compensation par poste : niveau, part des dépenses de l''État
     et part du PIB, 1971-2026 (fichier à tracer)'

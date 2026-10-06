@@ -3,7 +3,8 @@
 Frontière : les **séries** viennent du paquet `tunisia_data` (entrepôt) ; ici on
 prépare le **jeu de données de la figure** (figdata), on écrit sa provenance, et on
 fournit la ligne « Source » et le lien de téléchargement. Les figures elles-mêmes
-sont définies **par livre** (`precis/fr/<livre>/figures/`), jamais à la racine.
+sont définies **par livre** (`precis/fr/<livre>/figures/`), jamais à la racine ; celles
+d'une page de site (l'annexe sur le PIB) vivent à côté d'elle, dans `precis/fr/figures/`.
 
 La provenance (sources/clés de citation, unité, périmètre, base, caveats) est tirée
 de `tunisia_data.meta(series_id)` — jamais saisie à la main.
@@ -222,8 +223,12 @@ def _meta(series_id: str) -> dict:
     return meta(series_id)
 
 
-def source_line(*series_ids: str) -> str:
-    """Ligne « Source » d'une figure, assemblée depuis la provenance des séries."""
+def source_line(*series_ids: str, nominal: bool = True) -> str:
+    """Ligne « Source » d'une figure, assemblée depuis la provenance des séries.
+
+    `nominal=False` retire la mention « valeurs courantes (nominal) » : une figure en volume
+    a des séries en %, que la règle ci-dessous prendrait pour monétaires.
+    """
     keys, bases, units = [], set(), set()
     for sid in series_ids:
         m = _meta(sid)
@@ -238,7 +243,7 @@ def source_line(*series_ids: str) -> str:
     # mention « prix courants » seulement pour les séries monétaires (pas les effectifs)
     monetaire = any(k in u for u in units
                     for k in ("dinar", "pib", "dépense", "depense", "%", "budget"))
-    if monetaire:
+    if monetaire and nominal:
         parts.append(t("nominal"))
     return " — ".join(parts)
 
@@ -472,20 +477,23 @@ def infobulle(artiste, texte: str) -> None:
     registre[gid] = texte
 
 
-def marque_rupture(ax, annee: int, texte: str | None = None) -> None:
+def marque_rupture(ax, annee: int, texte: str | None = None):
     """Marque une rupture de série entre `annee - 1` et `annee` (axe des abscisses en années).
 
     Ligne verticale pointillée à mi-chemin des deux années ; `texte`, s'il est donné, est
     posé en haut du cadre, à droite de la ligne. Sert notamment aux changements de base
     des comptes nationaux sous un ratio au PIB : la rupture se montre, elle ne se corrige
     pas — aucune conversion d'une base à l'autre.
+
+    Rend le trait tracé, pour qui veut lui attacher une `infobulle`.
     """
     x = annee - 0.5
-    ax.axvline(x, color="#57606a", ls=(0, (2, 2)), lw=1, zorder=1)
+    trait = ax.axvline(x, color="#57606a", ls=(0, (2, 2)), lw=1, zorder=1)
     if texte:
         ax.annotate(texte, xy=(x, 1), xycoords=("data", "axes fraction"),
                     xytext=(4, -4), textcoords="offset points", ha="left", va="top",
                     fontsize=7, color="#57606a")
+    return trait
 
 
 def _svg_avec_infobulles(fig, chemin: Path) -> str:
@@ -563,7 +571,7 @@ def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
                 caption: str = "", note_lecture: str | None = None,
                 fig_id: str | None = None, figdata_dir: str = "figdata",
                 png_dir: str = "_fig", scroll_y: str = "420px",
-                generated: str | None = None) -> None:
+                generated: str | None = None, nominal: bool = True) -> None:
     """Composant générique : figure en **onglets** Graphique / Données / Sources.
 
     À appeler dans un chunk Quarto `#| output: asis`, **étiqueté** `#| label: fig-…`,
@@ -598,6 +606,8 @@ def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
     `slug`         : identifiant de fichier (png + csv).
     `caption`      : **titre** de la figure (légende numérotée par Quarto).
     `note_lecture` : texte « Comment lire cette figure » (callout). Optionnel.
+    `nominal`      : `False` pour une figure en volume — la ligne « Source » ne dit alors pas
+                     « valeurs courantes (nominal) ».
     `fig_id`       : pour un chunk NON étiqueté seulement — la sortie est alors enveloppée
                      dans sa propre figure `::: {#fig_id}`. Ne jamais le combiner avec
                      `#| label:` : on retomberait sur la figure dans la figure.
@@ -616,7 +626,7 @@ def figure_tabs(fig, df: pd.DataFrame, *series_ids: str, slug: str,
         scrollCollapse=True, paging=False, classes="display compact nowrap",
         connected=True)  # charge DataTables depuis le CDN (figure autoportante)
 
-    src = source_line(*series_ids)
+    src = source_line(*series_ids, nominal=nominal)
     dl = download_button(str(csv_path))
     details = source_details(*series_ids)
     lecture = ""
