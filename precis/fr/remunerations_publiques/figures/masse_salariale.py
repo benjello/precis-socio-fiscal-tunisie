@@ -80,10 +80,9 @@ _L = {
                          "base non précisée par la source",
                    "ar": "فوق الإطار: سنة أساس الناتج لكلّ مقطع؛ «غ. م.»: سنة الأساس غير "
                          "محدَّدة في المصدر"},
-    "lg_dep": {"fr": "Masse salariale en % des dépenses totales de l'État — aucun PIB : mesure "
-                     "homogène sur toute la période",
-               "ar": "كتلة الأجور كنسبة من إجمالي نفقات الدولة — دون ناتج: قياس متجانس على "
-                     "كامل الفترة"},
+    "lg_dep": {"fr": "Masse salariale en % des dépenses totales de l'État — aucun PIB "
+                     "n'intervient",
+               "ar": "كتلة الأجور كنسبة من إجمالي نفقات الدولة — دون ناتج"},
     # bandeau des bases (au-dessus du cadre)
     "b_pib": {"fr": "PIB :", "ar": "الناتج:"},
     "b_base": {"fr": "base {b}", "ar": "أساس {b}"},

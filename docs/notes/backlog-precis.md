@@ -379,6 +379,14 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
 
 ## Rémunérations publiques
 
+- **Masse salariale, rupture du numérateur en 1996 et 2000 — constat fait le 6 octobre 2026, cause à
+  identifier.** La série du ministère des Finances recule de 2 091,0 à 1 993,2 MD en 1996 et
+  bondit de 16,1 % en 2000 ; le détail du fonctionnement (moyens des services, interventions
+  publiques) n'y commence qu'en 1996. Le FMI (Staff Country Reports n° 97/57 et n° 00/37, lisibles
+  dans `tunisia-data/data/raw/banque-mondiale-rapports/`) ne montre aucune baisse. Reste à faire :
+  identifier les dépenses reclassées ; verser les deux clés du FMI (FR et AR) et citer le
+  recoupement dans `index.qmd`, à part du budgétaire ; marquer 1996 et 2000 sur
+  `#fig-masse-salariale-ratios` (colonne `rupture` de la série, côté entrepôt).
 - **PIB par base — fait le 6 octobre 2026** (règle : tout PIB dit sa base et s'il est
   rétropolé ; sinon rupture de série). `#fig-masse-salariale-ratios` trace la part du PIB par
   segments (base 1983 en 1990-1996, présumée pour 1990-1991 ; base 1997 rétropolée par l'INS
