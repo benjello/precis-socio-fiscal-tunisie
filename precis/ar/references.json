@@ -6502,6 +6502,41 @@
         ]
       },
       "title-short": "Arrêté conjoint du ministre des affaires sociales et du ministre des finances du 19 mai 2020"
+    },
+    {
+      "id": "minfin-remunerations",
+      "type": "dataset",
+      "note": "citation-key: minfin-remunerations\nClasseur Excel du ministère des Finances « Série repartition_economique_des_depenses_fr.xls » (finances.gov.tn) : dépenses de l'État par rubrique économique, 1990-2025, en millions de dinars, dont « 1.1 Rémunérations Publiques » et « 4.0 Total » (fiche tunisia-data sources/minfinances-indicateurs.md). Copie locale : tunisia-data/data/raw/minfinances/repartition_depenses.xls (61 440 octets, SHA-256 627af55c477f2154fbb4ae56f069c4532e5c9eebb65c2f7c0b1c504db67d47fc, ignorée par git). Cité par les volumes « Rémunérations publiques » et « Retraites » (masse salariale) et par « La compensation » (dénominateur : dépenses de l'État hors service de la dette) ; promue au fonds commun le 6 octobre 2026. L'adresse précise du fichier n'est pas relevée : l'URL est celle du site.",
+      "publisher": "Ministère des Finances, Tunisie",
+      "title": "Série de répartition économique des dépenses du budget de l'État",
+      "URL": "http://www.finances.gov.tn",
+      "author": [
+        {
+          "literal": "Ministère des Finances, Tunisie"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      }
+    },
+    {
+      "id": "wb-wdi",
+      "type": "dataset",
+      "title": "World Development Indicators",
+      "title-short": "Banque mondiale, WDI",
+      "author": [
+        {
+          "literal": "Banque mondiale"
+        }
+      ],
+      "publisher": "Banque mondiale",
+      "publisher-place": "Washington, D.C.",
+      "URL": "https://datacatalog.worldbank.org/search/dataset/0037712/World-Development-Indicators",
+      "note": "citation-key: wb-wdi\nIndicateurs utilisés pour la Tunisie : NY.GDP.MKTP.CN (« GDP (current LCU) »), SP.POP.TOTL (« Population, total ») et SL.EMP.WORK.ZS (part des salariés dans l'emploi, estimation modélisée du BIT). Séries téléchargées le 21 septembre 2026 par l'API https://api.worldbank.org/v2/country/TUN/indicator/<code>?format=json ; les réponses portent « lastupdated »: « 2026-07-13 ». URL de la fiche du catalogue de données vérifiée le 21 septembre 2026. Réponses conservées dans le dépôt tunisia-data, data/raw/banque-mondiale/."
     }
   ]
 }

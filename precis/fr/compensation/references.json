@@ -186,7 +186,7 @@
       "title": "Arrêté du ministre de l'industrie, de l'énergie et des mines par intérim et du ministre de l'économie, des finances et de l'appui à l'investissement du 7 avril 2021, portant modification de l'arrêté du 31 mars 2020, fixant la composition et le fonctionnement de la commission technique chargée de la fixation et du suivi des prix de vente des produits pétroliers finis importés et ceux raffinés localement",
       "container-title": "Journal officiel de la République tunisienne",
       "issue": "32",
-      "page": "775",
+      "page": "775-776",
       "issued": {
         "date-parts": [
           [
@@ -198,7 +198,7 @@
       },
       "URL": "https://www.pist.tn/jort/2021/2021F/Jo0322021.pdf",
       "title-short": "Arrêté du 7 avril 2021 (prix des produits pétroliers)",
-      "note": "citation-key: arrete-2021-04-07-prix-petroliers\nJORT n° 32 du 8 avril 2021. Intitulé et date (7 avril 2021, signature « Tunis, le 7 avril 2021 ») relus sur le sommaire et le texte de l'édition française le 6 octobre 2026 ; la notice jort_cache.db donne par erreur le 31 mars 2021 comme date de signature. Plafond mensuel de variation porté à 5 % lu par le documentaliste (docs/notes/compensation.md, § 1.2)."
+      "note": "citation-key: arrete-2021-04-07-prix-petroliers\nJORT n° 32 du 8 avril 2021, pp. 775-776 (le texte occupe aussi la page 776 : pagination confirmée par le sommaire). Intitulé et date (7 avril 2021, signature « Tunis, le 7 avril 2021 ») relus sur le sommaire et le texte de l'édition française le 6 octobre 2026 ; la notice jort_cache.db donne par erreur le 31 mars 2021 comme date de signature. Plafond mensuel de variation porté à 5 % lu par le documentaliste (docs/notes/compensation.md, § 1.2)."
     },
     {
       "id": "bm-1985-cem-5328-vol2",
@@ -287,7 +287,7 @@
       "publisher-place": "Tunis",
       "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1984.pdf",
       "title-short": "BCT, Rapport d'activité 1984",
-      "note": "citation-key: bct-ra-1984\nTitre lu sur la couverture à l'image le 6 octobre 2026 : « 26ème RAPPORT D'ACTIVITE, Exercice 1984 », présenté au Président de la République au nom du Conseil d'administration par le gouverneur Moncef Belkhodja ; la couverture ne porte aucune date de parution, d'où l'absence de date. Le catalogue de la BCT le range sous « Rapport Annuel, n° 26, Année 1984 ». Le PDF de bct.gov.tn (14 220 655 octets, 210 pages) est identique en taille à la copie locale de tunisia-data (RA_fr_1984.pdf). Page 153 imprimée (151e page du PDF), lue à l'image : « l'octroi à la Caisse générale de compensation d'importantes subventions qui ont totalisé 106 millions de dinars dont 98 millions à la charge du Budget ordinaire et 8 millions par prélèvement sur les disponibilités du Fonds de la contribution exceptionnelle de solidarité » ; dépenses des fonds spéciaux du Trésor passées de 273 millions de dinars en 1983 à 471 millions en 1984. Les rapports 2015 à 2025 sont versés sous leurs propres clés (bct-ra-AAAA) ; les rapports des autres exercices (1980-1983, 1985-1988) ne sont pas versés : aucun n'a été lu. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+      "note": "citation-key: bct-ra-1984\nTitre lu sur la couverture à l'image le 6 octobre 2026 : « 26ème RAPPORT D'ACTIVITE, Exercice 1984 », présenté au Président de la République au nom du Conseil d'administration par le gouverneur Moncef Belkhodja ; la couverture ne porte aucune date de parution, d'où l'absence de date. Le catalogue de la BCT le range sous « Rapport Annuel, n° 26, Année 1984 ». Le PDF de bct.gov.tn (14 220 655 octets, 210 pages) est identique en taille à la copie locale de tunisia-data (RA_fr_1984.pdf). Page 153 imprimée (151e page du PDF), lue à l'image : « l'octroi à la Caisse générale de compensation d'importantes subventions qui ont totalisé 106 millions de dinars dont 98 millions à la charge du Budget ordinaire et 8 millions par prélèvement sur les disponibilités du Fonds de la contribution exceptionnelle de solidarité » ; dépenses des fonds spéciaux du Trésor passées de 273 millions de dinars en 1983 à 471 millions en 1984. Les rapports 1985 à 2011 (sauf 1987, 1990, 1997 et 2000) et 2015 à 2025 sont versés sous leurs propres clés (bct-ra-AAAA) ; les rapports 1980-1983, 1987, 1990, 1997, 2000 et 2012-2014 ne sont pas versés : aucun n'a été lu. Copie locale : tunisia-data/data/raw/bct-archives/109/RA_fr_1984.pdf (SHA-256 edbd12c1ffc384768fcda49b5e01d105a423de2381374364c19778de08506db9). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
     },
     {
       "id": "ins-cres-bad-2013-subventions",
@@ -966,6 +966,2044 @@
       },
       "title-short": "BCT, Rapport annuel 2025",
       "note": "citation-key: bct-ra-2025\nTitre (« Rapport annuel 2025 ») lu à l'image sur la couverture, date (« Juin 2026 ») sur le dos de la couverture. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 6 766 673 octets, 253 pages) est identique en taille à la copie locale de tunisia-data. Lu à l'image le 6 octobre 2026 : Tableau 2-11 « Dépenses hors service de la dette », p. 71 imprimée (83e page du PDF), colonnes 2024, 2025, 2026* (« * Provisoires (LF 2026) ») : « dont : Compensation » 11 347,5 ; 11 593,0 ; 9 772,0 (produits de base 3 601,5 ; 3 801,0 ; 4 079,0 — carburants 7 086,0 ; 7 112,0 ; 4 993,0 — transport 660,0 ; 680,0 ; 700,0), source « Ministère des Finances » ; la colonne 2025 n'est pas qualifiée mais reprend, au dixième, la colonne 2025* « Provisoires (LF 2025) » du rapport 2024, tandis que le texte (p. 71) dit « ont enregistré en 2025 » et ventile 11 593,0 en 61,3 % de carburants, 32,8 % de produits de base, le reste au transport. Utilisé pour la série 2012-2025 de la compensation (docs/notes/compensation.md, § 10). Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 ») et de bct-ra-1984. Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "arrete-1956-04-07-redevance-huiles",
+      "type": "legislation",
+      "title": "Arrêté du Premier ministre du 7 avril 1956 instituant une redevance compensatrice sur les huiles fluides alimentaires brutes ou raffinées autres que l'huile d'olive, importées ou produites en Tunisie",
+      "container-title": "Journal officiel tunisien",
+      "issue": "31",
+      "issued": {
+        "date-parts": [
+          [
+            1956,
+            4,
+            7
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 7 avril 1956 (redevance sur les huiles)",
+      "page": "552",
+      "URL": "https://www.pist.tn/jort/1956/1956F/Jo03156.pdf",
+      "note": "citation-key: arrete-1956-04-07-redevance-huiles\nJOT n° 31, paru le 17 avril 1956 (date de publication de jort_cache) ; effet au 1er février 1956 ; redevance « au profit de la Caisse de compensation » : différence entre un prix de référence et le prix CAF. La notice jort_cache range cet arrêté sous « ministre des Finances », le relevé du documentaliste sous « Premier ministre » : auteur non tranché. Preuve : OCR seul (tesseract, 200 dpi), non relu à l'image ; intitulé et auteur à relire."
+    },
+    {
+      "id": "arrete-1956-12-27-redevance-sucres",
+      "type": "legislation",
+      "title": "Arrêté du Premier ministre du 27 décembre 1956 instituant une redevance compensatrice sur les sucres importés",
+      "container-title": "Journal officiel tunisien",
+      "issue": "104",
+      "issued": {
+        "date-parts": [
+          [
+            1956,
+            12,
+            27
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 27 décembre 1956 (redevance sur les sucres)",
+      "page": "1753-1754",
+      "URL": "https://www.pist.tn/jort/1956/1956F/Jo10456.pdf",
+      "note": "citation-key: arrete-1956-12-27-redevance-sucres\nJOT n° 104, paru le 28 décembre 1956 (en-tête de page lu) ; effet au 1er janvier 1957 ; 450 F par quintal net, au profit de la Caisse de Compensation ; remplacé par le décret n° 58-163. Preuve : OCR seul (tesseract, 200 dpi), non relu à l'image."
+    },
+    {
+      "id": "decret-1956-03-22-ciments",
+      "type": "legislation",
+      "title": "Décret du 22 mars 1956 modifiant le décret du 15 décembre 1955 créant une surprime applicable aux ciments consommés en Tunisie et instituant une « Caisse professionnelle de compensation des ciments »",
+      "container-title": "Journal officiel tunisien",
+      "issue": "25",
+      "issued": {
+        "date-parts": [
+          [
+            1956,
+            3,
+            22
+          ]
+        ]
+      },
+      "title-short": "Décret du 22 mars 1956 (ciments)",
+      "page": "459",
+      "URL": "https://www.pist.tn/jort/1956/1956F/Jo02556.pdf",
+      "note": "citation-key: decret-1956-03-22-ciments\nJOT n° 25 ; caisse de branche destinée à favoriser l'exportation des ciments, intégrée à la Caisse générale de compensation au 1er janvier 1976 (LF 1976, art. 67, d'après la note documentaire). Preuve : OCR seul (tesseract, 200 dpi), non relu à l'image."
+    },
+    {
+      "id": "arrete-1957-02-05-redevance-hydrocarbures",
+      "type": "legislation",
+      "title": "Arrêté du Premier ministre du 5 février 1957 instituant une redevance compensatrice sur certains hydrocarbures consommés en Tunisie",
+      "container-title": "Journal officiel tunisien",
+      "issue": "12",
+      "issued": {
+        "date-parts": [
+          [
+            1957,
+            2,
+            5
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 5 février 1957 (redevance sur les hydrocarbures)",
+      "page": "166",
+      "URL": "https://www.pist.tn/jort/1957/1957F/Jo11257.pdf",
+      "note": "citation-key: arrete-1957-02-05-redevance-hydrocarbures\nJOT n° 12 du 8 février 1957 ; 300 francs par hectolitre sur l'essence, le white spirit, le pétrole lampant, les carburants de mélange et le gas-oil, « au profit de la Caisse de Compensation » ; visa du décret du 28 juin 1945 ; modifié le 22 janvier 1959 et le 20 juillet 1965. Fascicule de la première série de 1957, absent du corpus local et de jort_cache. Preuve : image lue."
+    },
+    {
+      "id": "decret-1957-03-30-credits-provisoires",
+      "type": "legislation",
+      "title": "Décret du 30 mars 1957 portant ouverture de crédits provisoires au titre du premier trimestre de l'année financière 1957-58 et autorisant la perception des impôts et revenus publics à partir du 1er avril 1957",
+      "container-title": "Journal officiel tunisien",
+      "issue": "26 bis",
+      "issued": {
+        "date-parts": [
+          [
+            1957,
+            3,
+            30
+          ]
+        ]
+      },
+      "title-short": "Décret du 30 mars 1957 (crédits provisoires 1957-58)",
+      "page": "359-378",
+      "URL": "https://www.pist.tn/jort/1957/1957F/Jo22657.pdf",
+      "note": "citation-key: decret-1957-03-30-credits-provisoires\nJOT n° 26 bis du 30 mars 1957 ; l'article 36 change le bénéficiaire des « quatre centimes » de l'article 106 du décret du 31 mars 1955 (compte des hydrocarbures) ; l'état des recettes (ligne 116) porte le prélèvement sur les redevances de la Caisse de Compensation (OCR). Fascicule absent du corpus local et de jort_cache. Preuve : image lue (art. 36, p. 364)."
+    },
+    {
+      "id": "arrete-1964-09-28-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du secrétaire d'État au plan et aux finances du 28 septembre 1964 fixant les prix des produits pétroliers en Tunisie",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "45",
+      "issued": {
+        "date-parts": [
+          [
+            1964,
+            9,
+            28
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 28 septembre 1964 (prix des produits pétroliers)",
+      "page": "1139-1140",
+      "URL": "https://www.pist.tn/jort/1964/1964F/Jo04564.pdf",
+      "note": "citation-key: arrete-1964-09-28-prix-petroliers\nJORT n° 45 des 25-28 septembre 1964 ; pris le jour de la dévaluation du dinar : taxe « au profit de la Caisse de Compensation » de 1 050 millimes/hl (essence), 470 (pétrole lampant), 460 (gas-oil) sur le prix à la pompe ; zone de Tunis : super 90, normale 87, kérosène 38, gas-oil 40 millimes le litre ; visa du décret du 28 juin 1945. Premier arrêté de la série des prix à la pompe. Preuve : image lue pour le tableau des taux, OCR pour les prix à la pompe."
+    },
+    {
+      "id": "arrete-1965-07-20-redevance-hydrocarbures",
+      "type": "legislation",
+      "title": "Arrêté du secrétaire d'État au plan et à l'économie nationale du 20 juillet 1965 portant modification de la redevance compensatrice sur certains hydrocarbures consommés en Tunisie",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "39",
+      "issued": {
+        "date-parts": [
+          [
+            1965,
+            7,
+            20
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 20 juillet 1965 (redevance sur les hydrocarbures)",
+      "page": "924-925",
+      "URL": "https://www.pist.tn/jort/1965/1965F/Jo03965.pdf",
+      "note": "citation-key: arrete-1965-07-20-redevance-hydrocarbures\nJORT n° 39 du 23 juillet 1965 ; redevance de 1957 retarifée : essence 0,300 D/hl à l'importation, 0,260 D/hl à la sortie des usines exercées ; gas-oil 0,240 et 0,200 D/hl. Même fascicule que la loi n° 65-26. Preuve : OCR seul (tesseract, 200 dpi), non relu à l'image."
+    },
+    {
+      "id": "loi65-26",
+      "type": "legislation",
+      "title": "Loi n° 65-26 du 24 juillet 1965 réglementant l'importation, l'exportation, le raffinage, la reprise en raffinerie, la fixation des prix, le stockage et la distribution des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "39",
+      "issued": {
+        "date-parts": [
+          [
+            1965,
+            7,
+            24
+          ]
+        ]
+      },
+      "title-short": "Loi n° 65-26 du 24 juillet 1965",
+      "page": "918-919",
+      "URL": "https://www.pist.tn/jort/1965/1965F/Jo03965.pdf",
+      "note": "citation-key: loi65-26\nJORT n° 39 des 23-27 juillet 1965 ; art. 8 : prix de vente au public fixés par arrêté du secrétaire d'État au plan et à l'économie nationale ; abrogée par la loi n° 91-45, art. 32. Preuve : image lue (art. 8, p. 918) ; p. 919 non lue."
+    },
+    {
+      "id": "decret58-163",
+      "type": "legislation",
+      "title": "Décret n° 58-163 du 30 juin 1958 instituant une redevance compensatrice sur les sucres importés",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "52",
+      "issued": {
+        "date-parts": [
+          [
+            1958,
+            6,
+            30
+          ]
+        ]
+      },
+      "title-short": "Décret n° 58-163 du 30 juin 1958",
+      "page": "697",
+      "URL": "https://www.pist.tn/jort/1958/1958F/Jo05258.pdf",
+      "note": "citation-key: decret58-163\nJORT n° 52 du 1er juillet 1958 ; effet au 1er octobre 1957 : 653 F le quintal (morceaux), 887 F (autres formes) ; suspendue par le décret n° 64-54 du 13 février 1964 (intitulé seul). Preuve : OCR seul (tesseract, 200 dpi), non relu à l'image."
+    },
+    {
+      "id": "loi59-66",
+      "type": "legislation",
+      "title": "Loi n° 59-66 du 19 juin 1959 relative aux prix des produits et services",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "34",
+      "issued": {
+        "date-parts": [
+          [
+            1959,
+            6,
+            19
+          ]
+        ]
+      },
+      "title-short": "Loi n° 59-66 du 19 juin 1959",
+      "page": "650",
+      "URL": "https://www.pist.tn/jort/1959/1959F/Jo03459.pdf",
+      "note": "citation-key: loi59-66\nJORT n° 34 du 23 juin 1959 ; blocage général des prix, « toutes taxes comprises », au niveau du 1er janvier 1959 ; non abrogée expressément par la loi n° 70-26. Preuve : OCR seul (tesseract, 200 dpi), non relu à l'image."
+    },
+    {
+      "id": "decret-loi62-10",
+      "type": "legislation",
+      "title": "Décret-loi n° 62-10 du 3 avril 1962 portant création d'un Office des céréales, légumineuses alimentaires et autres produits agricoles",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "18",
+      "issued": {
+        "date-parts": [
+          [
+            1962,
+            4,
+            3
+          ]
+        ]
+      },
+      "title-short": "Décret-loi n° 62-10 du 3 avril 1962",
+      "page": "371-373",
+      "URL": "https://www.pist.tn/jort/1962/1962F/Jo01862.pdf",
+      "note": "citation-key: decret-loi62-10\nJORT n° 18 du 3 avril 1962 ; monopole des importations et exportations de l'Office ; prix à la production fixés par décret. Un homonyme (loi n° 62-10 du 24 avril 1962, JORT n° 22) existe : ne pas confondre. Preuve : OCR seul (tesseract, 200 dpi), lecture partielle."
+    },
+    {
+      "id": "decret67-99",
+      "type": "legislation",
+      "title": "Décret n° 67-99 du 1er avril 1967 instituant une redevance compensatrice sur les produits repris au chapitre 73 du tarif des droits de douane",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "16",
+      "issued": {
+        "date-parts": [
+          [
+            1967,
+            4,
+            1
+          ]
+        ]
+      },
+      "title-short": "Décret n° 67-99 du 1er avril 1967",
+      "page": "475",
+      "URL": "https://www.pist.tn/jort/1967/1967F/Jo01667.pdf",
+      "note": "citation-key: decret67-99\nJORT n° 16 du 4 avril 1967 ; redevance de 6 % ad valorem au profit de la Caisse de Compensation sur la fonte, le fer et l'acier ; suspendue par le décret n° 75-633 du 15 septembre 1975 (intitulé seul). Preuve : OCR seul (tesseract, 200 dpi), non relu à l'image (l'OCR lit « 67-93 »)."
+    },
+    {
+      "id": "lf-1970",
+      "type": "legislation",
+      "title": "Loi n° 69-64 du 31 décembre 1969 portant loi de finances pour la gestion 1970",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "57",
+      "issued": {
+        "date-parts": [
+          [
+            1969,
+            12,
+            31
+          ]
+        ]
+      },
+      "title-short": "Loi de finances pour 1970 (loi n° 69-64)",
+      "page": "1500-1517",
+      "URL": "https://www.pist.tn/jort/1969/1969F/Jo05769.pdf",
+      "note": "citation-key: lf-1970\nJORT n° 57 du 31 décembre 1969 ; tableau F : fonds spécial « Opérations de compensation », 3 300 000 D en recettes et en dépenses sur 5 900 000 D de fonds spéciaux ; supprimé au 1er janvier 1971 (LF 1971, art. 48). Pagination de la loi d'après jort_cache (1500-1517). Preuve : OCR seul (tableau F, p. 1514), total recoupé par addition."
+    },
+    {
+      "id": "loi91-45",
+      "type": "legislation",
+      "title": "Loi n° 91-45 du 1er juillet 1991 relative aux produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "49",
+      "issued": {
+        "date-parts": [
+          [
+            1991,
+            7,
+            1
+          ]
+        ]
+      },
+      "title-short": "Loi n° 91-45 du 1er juillet 1991",
+      "page": "1264-1266",
+      "URL": "https://www.pist.tn/jort/1991/1991F/Jo04991.pdf",
+      "note": "citation-key: loi91-45\nJORT n° 49 du 9 juillet 1991 ; art. 17 : prix de cession à la raffinerie et à la sortie de raffinerie fixés par une commission ; art. 18 : prix plafonds de vente au public et marge de détail fixés par arrêté du ministre chargé de l'énergie et du commerce ; art. 32 : abroge la loi n° 65-26. Preuve : image lue (art. 17 et 18, p. 1265 ; art. 32, p. 1266)."
+    },
+    {
+      "id": "arrete-1992-02-13-prix-cession",
+      "type": "legislation",
+      "title": "Arrêté des ministres de l'économie nationale et des finances du 13 février 1992 fixant la composition et le fonctionnement de la commission chargée de fixer les prix de cession à la raffinerie du pétrole brut appartenant à l'État et des prix de cession des produits pétroliers finis par l'importateur et à la sortie de la raffinerie",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "13",
+      "issued": {
+        "date-parts": [
+          [
+            1992,
+            2,
+            13
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 13 février 1992 (commission des prix de cession)",
+      "page": "250",
+      "URL": "https://www.pist.tn/jort/1992/1992F/Jo01392.pdf",
+      "note": "citation-key: arrete-1992-02-13-prix-cession\nJORT n° 13 du 28 février 1992 ; effet au 9 janvier 1992 (art. 7) ; art. 6 : les prix de cession sont notifiés aux intéressés par arrêté interne signé conjointement par les ministres des finances et de l'économie nationale ; abroge l'arrêté du 25 octobre 1970. Intitulé repris de la note documentaire ; la notice jort_cache range cet arrêté sous le seul ministre de l'économie nationale. Preuve : image lue."
+    },
+    {
+      "id": "decret74-576",
+      "type": "legislation",
+      "title": "Décret n° 74-576 du 24 mai 1974 portant modification du décret n° 70-622 du 31 décembre 1970 portant consolidation et simplification des droits et taxes perçus sur certains produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "36",
+      "issued": {
+        "date-parts": [
+          [
+            1974,
+            5,
+            24
+          ]
+        ]
+      },
+      "title-short": "Décret n° 74-576 du 24 mai 1974",
+      "page": "1111",
+      "URL": "https://www.pist.tn/jort/1974/1974F/Jo03674.pdf",
+      "note": "citation-key: decret74-576\nJORT n° 36 du 24 mai 1974 ; taxe unique de compensation sur le supercarburant et l'essence normale : 1,378 → 6,150 D/hl, effet le 24 mai 1974. Preuve : image lue (intitulé, articles et signature, p. 1111)."
+    },
+    {
+      "id": "decret80-1641",
+      "type": "legislation",
+      "title": "Décret n° 80-1641 du 29 décembre 1980 modifiant et complétant le décret n° 70-622 du 31 décembre 1970 portant consolidation et simplification des droits et taxes perçus sur certains produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "78",
+      "issued": {
+        "date-parts": [
+          [
+            1980,
+            12,
+            29
+          ]
+        ]
+      },
+      "title-short": "Décret n° 80-1641 du 29 décembre 1980",
+      "page": "3381",
+      "URL": "https://www.pist.tn/jort/1980/1980F/Jo07880.pdf",
+      "note": "citation-key: decret80-1641\nJORT n° 78 des 30-31 décembre 1980 ; taxe unique de compensation : 9,750 D/hl sur les essences, 2,180 D/hl sur le gas-oil (1,525 pour l'agriculture et la pêche), taxe nouvelle de 4 D/t sur le fuel-oil lourd, au 1er janvier 1981. Le sommaire du fascicule annonce la page 3384 ; la page lue porte 3381. Preuve : image lue (p. 3381)."
+    },
+    {
+      "id": "loi77-48",
+      "type": "legislation",
+      "title": "Loi n° 77-48 du 27 juillet 1977 portant approbation du cinquième plan de développement économique et social 1977-1981",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "52",
+      "issued": {
+        "date-parts": [
+          [
+            1977,
+            7,
+            27
+          ]
+        ]
+      },
+      "title-short": "Loi n° 77-48 du 27 juillet 1977 (Ve plan)",
+      "page": "2011",
+      "URL": "https://www.pist.tn/jort/1977/1977F/Jo05277.pdf",
+      "note": "citation-key: loi77-48\nJORT n° 52 du 29 juillet 1977 ; art. 1er : plan « annexé » approuvé comme instrument d'orientation générale (annexe non publiée au Journal officiel) ; art. 2 : rapport annuel d'exécution. Preuve : OCR seul (tesseract), non relu à l'image."
+    },
+    {
+      "id": "loi2017-28",
+      "type": "legislation",
+      "title": "Loi n° 2017-28 du 25 avril 2017 portant approbation du plan de développement (2016-2020)",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "34",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            25
+          ]
+        ]
+      },
+      "title-short": "Loi n° 2017-28 du 25 avril 2017 (plan 2016-2020)",
+      "page": "1549-1550",
+      "URL": "https://www.pist.tn/jort/2017/2017F/Jo0342017.pdf",
+      "note": "citation-key: loi2017-28\nJORT n° 34 du 28 avril 2017 ; deux articles : approbation du plan annexé (non publié), rapport annuel d'exécution. jort_cache ne porte que l'intitulé arabe ; l'intitulé français et les pages sont lus sur le fascicule. Preuve : couche texte."
+    },
+    {
+      "id": "loi2026-16",
+      "type": "legislation",
+      "title": "Loi n° 2026-16 du 20 juillet 2026 portant approbation du plan de développement (2026-2030)",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "73",
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            20
+          ]
+        ]
+      },
+      "title-short": "Loi n° 2026-16 du 20 juillet 2026 (plan 2026-2030)",
+      "page": "1391-1392",
+      "URL": "https://www.pist.tn/jort/2026/2026F/Jo0732026.pdf",
+      "note": "citation-key: loi2026-16\nJORT n° 73 du 21 juillet 2026 ; article unique (p. 1392), plan annexé non publié. jort_cache n'a pas de pdf_fr pour cet enregistrement : l'URL française est celle du fascicule n° 73 de 2026, lue sur les enregistrements voisins (n° 2026-14 et 2026-15). Preuve : couche texte."
+    },
+    {
+      "id": "lfc-2015",
+      "type": "legislation",
+      "title": "Loi n° 2015-30 du 18 août 2015 portant loi de finances complémentaire pour l'année 2015",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "67",
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            8,
+            18
+          ]
+        ]
+      },
+      "title-short": "Loi de finances complémentaire pour 2015 (loi n° 2015-30)",
+      "page": "1886",
+      "URL": "https://www.pist.tn/jort/2015/2015F/Jo0672015.pdf",
+      "note": "citation-key: lfc-2015\nJORT n° 67 du 21 août 2015 ; tableau A, art. 40-01 et 40-03 : p. 1895 ; la loi ne contient aucun article sur la séparation entre sociétés (plein texte du fascicule). Page 1886 : début de la loi, d'après la note documentaire. Preuve : couche texte (fascicule français local)."
+    },
+    {
+      "id": "arrete-1965-12-31-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du secrétaire d'État au plan et à l'économie nationale du 31 décembre 1965 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "66",
+      "issued": {
+        "date-parts": [
+          [
+            1965,
+            12,
+            31
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 31 décembre 1965 (prix des produits pétroliers)",
+      "page": "1735-1736",
+      "URL": "https://www.pist.tn/jort/1965/1965F/Jo06665.pdf",
+      "note": "citation-key: arrete-1965-12-31-prix-petroliers\nJORT n° 66. Zone A (Tunis-Banlieue) ; effet au 1er janvier 1966 : super 100, normale 97 millimes le litre ; taxe portée à 2 050 millimes/hl. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; auteur lu dans le corps du texte (OCR) ; « en Tunisie » de l'intitulé de la notice non reconfirmé."
+    },
+    {
+      "id": "arrete-1966-09-23-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du secrétaire d'État au plan et à l'économie nationale du 23 septembre 1966 modifiant les arrêtés du 28 septembre 1964 et 31 décembre 1965 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "41",
+      "issued": {
+        "date-parts": [
+          [
+            1966,
+            9,
+            23
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 23 septembre 1966 (prix des produits pétroliers)",
+      "page": "1409-1410",
+      "URL": "https://www.pist.tn/jort/1966/1966F/Jo04166.pdf",
+      "note": "citation-key: arrete-1966-09-23-prix-petroliers\nJORT n° 41. Zone A ; effet le 25 septembre 1966 : baisse (super 97, normale 93, pétrole lampant 33,30, gas-oil 35,40) ; scan peu net, prix vérifiés par le calcul de la taxe. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé relu par OCR sur le corps du texte."
+    },
+    {
+      "id": "arrete-1968-12-09-prix-carburants",
+      "type": "legislation",
+      "title": "Arrêté du secrétaire d'État au plan et à l'économie nationale du 9 décembre 1968 fixant les prix des carburants",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "52",
+      "issued": {
+        "date-parts": [
+          [
+            1968,
+            12,
+            9
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 9 décembre 1968 (prix des carburants)",
+      "page": "1291-1292",
+      "URL": "https://www.pist.tn/jort/1968/1968F/Jo05268.pdf",
+      "note": "citation-key: arrete-1968-12-09-prix-carburants\nJORT n° 52. JORT n° 52 des 6-10 décembre 1968 ; premier prix uniforme sur le territoire (forfait de transport uniforme et compte de péréquation géographique, art. 3 et 4) ; super 106, normale 101, pétrole lampant 34, gas-oil 37. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé d'après jort_cache, non reconfirmé sur le fascicule."
+    },
+    {
+      "id": "arrete-1971-09-30-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 30 septembre 1971 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "42",
+      "issued": {
+        "date-parts": [
+          [
+            1971,
+            9,
+            30
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 30 septembre 1971 (prix des produits pétroliers)",
+      "page": "1288-1289",
+      "URL": "https://www.pist.tn/jort/1971/1971F/Jo04271.pdf",
+      "note": "citation-key: arrete-1971-09-30-prix-petroliers\nJORT n° 42. Effet le 1er octobre 1971 : super 115, normale 110, pétrole lampant 36, gas-oil 45 millimes le litre. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé relu par OCR sur le corps du texte (« Les prix limites de vente du supercarburant… »)."
+    },
+    {
+      "id": "arrete-1974-05-24-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 24 mai 1974 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "36",
+      "issued": {
+        "date-parts": [
+          [
+            1974,
+            5,
+            24
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 24 mai 1974 (prix des produits pétroliers)",
+      "page": "1111-1112",
+      "URL": "https://www.pist.tn/jort/1974/1974F/Jo03674.pdf",
+      "note": "citation-key: arrete-1974-05-24-prix-petroliers\nJORT n° 36. Essences seules : +50 millimes le litre (super 165, normale 160) ; le même jour, le décret n° 74-576 porte la taxe unique de compensation de 1,378 à 6,150 D/hl (+47,72 millimes/l). Plus-value de réévaluation des stocks affectée à la Caisse générale de compensation (art. 3). Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé d'après jort_cache, non reconfirmé sur le fascicule."
+    },
+    {
+      "id": "arrete-1976-12-31-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 31 décembre 1976 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "83",
+      "issued": {
+        "date-parts": [
+          [
+            1976,
+            12,
+            31
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 31 décembre 1976 (prix des produits pétroliers)",
+      "page": "3242-3243",
+      "URL": "https://www.pist.tn/jort/1976/1976F/Jo08376.pdf",
+      "note": "citation-key: arrete-1976-12-31-prix-petroliers\nJORT n° 83. Effet le 1er janvier 1977 : super 180, normale 170, pétrole lampant 40, gas-oil 60 ; art. 11 : plus-value de réévaluation des stocks affectée à la Caisse générale de compensation. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé lu au sommaire du fascicule (OCR)."
+    },
+    {
+      "id": "arrete-1978-03-23-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'industrie, des mines et de l'énergie et du commerce du 23 mars 1978 modifiant les prix de certains produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "23",
+      "issued": {
+        "date-parts": [
+          [
+            1978,
+            3,
+            23
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 23 mars 1978 (prix des produits pétroliers)",
+      "page": "817-818",
+      "URL": "https://www.pist.tn/jort/1978/1978F/Jo02378.pdf",
+      "note": "citation-key: arrete-1978-03-23-prix-petroliers\nJORT n° 23. Essences seules, effet le 25 mars 1978 : super 190, normale 180 ; le décret n° 78-316 du même jour porte la taxe unique de 6,150 à 7,120 D/hl. La notice jort_cache attribue cet arrêté au seul ministre du commerce. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé lu au sommaire du fascicule (OCR)."
+    },
+    {
+      "id": "arrete-1978-12-25-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'industrie, des mines et de l'énergie du 25 décembre 1978 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "86",
+      "issued": {
+        "date-parts": [
+          [
+            1978,
+            12,
+            25
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 25 décembre 1978 (prix des produits pétroliers)",
+      "page": "3733-3734",
+      "URL": "https://www.pist.tn/jort/1978/1978F/Jo08678.pdf",
+      "note": "citation-key: arrete-1978-12-25-prix-petroliers\nJORT n° 86. Effet le 27 décembre 1978 : super 205, normale 192, pétrole lampant 45, gas-oil 66 ; GPL 13 kg : 1,700 D. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé lu au sommaire du fascicule (OCR, fin de l'auteur « … Mines et de l'Ener[gie] » tronquée)."
+    },
+    {
+      "id": "arrete-1979-12-27-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté des ministres de l'industrie, des mines et de l'énergie et du commerce du 27 décembre 1979 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "76",
+      "issued": {
+        "date-parts": [
+          [
+            1979,
+            12,
+            27
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 27 décembre 1979 (prix des produits pétroliers)",
+      "page": "3659-3660",
+      "URL": "https://www.pist.tn/jort/1979/1979F/Jo07679.pdf",
+      "note": "citation-key: arrete-1979-12-27-prix-petroliers\nJORT n° 76. Effet le 28 décembre 1979 : super 220, normale 205, pétrole lampant 50, gas-oil 75 ; GPL 13 kg : 1,850 D. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; auteur et objet lus au sommaire du fascicule (OCR)."
+    },
+    {
+      "id": "arrete-1981-06-23-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 23 juin 1981 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "46",
+      "issued": {
+        "date-parts": [
+          [
+            1981,
+            6,
+            23
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 23 juin 1981 (prix des produits pétroliers)",
+      "page": "1593-1595",
+      "URL": "https://www.pist.tn/jort/1981/1981F/Jo04681.pdf",
+      "note": "citation-key: arrete-1981-06-23-prix-petroliers\nJORT n° 46. Effet le 27 juin 1981 : super 280, normale 265, pétrole lampant 60, gas-oil 110 ; GPL 13 kg : 2,100 D ; abroge l'arrêté du 31 décembre 1980 (art. 13), non localisé. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé lu au sommaire du fascicule (OCR)."
+    },
+    {
+      "id": "arrete-1982-01-05-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 5 janvier 1982 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "2",
+      "issued": {
+        "date-parts": [
+          [
+            1982,
+            1,
+            5
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 5 janvier 1982 (prix des produits pétroliers)",
+      "page": "64-66",
+      "URL": "https://www.pist.tn/jort/1983/1983F/Jo00283.pdf",
+      "note": "citation-key: arrete-1982-01-05-prix-petroliers\nJORT n° 2. Effet le 5 janvier 1982 : super 295, normale 280, pétrole lampant 70, gas-oil 125 ; GPL 13 kg : 2,350 D. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé lu au sommaire du fascicule (OCR)."
+    },
+    {
+      "id": "arrete-1982-09-30-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 30 septembre 1982 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "63",
+      "issued": {
+        "date-parts": [
+          [
+            1982,
+            9,
+            30
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 30 septembre 1982 (prix des produits pétroliers)",
+      "page": "2070-2072",
+      "URL": "https://www.pist.tn/jort/1982/1982F/Jo06382.pdf",
+      "note": "citation-key: arrete-1982-09-30-prix-petroliers\nJORT n° 63. Effet le 1er octobre 1982 : super 320, normale 300, pétrole lampant 100, gas-oil 145 ; GPL 13 kg : 2,700 D. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé lu au sommaire du fascicule (OCR)."
+    },
+    {
+      "id": "arrete-1984-02-20-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 20 février 1984 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "12",
+      "issued": {
+        "date-parts": [
+          [
+            1984,
+            2,
+            20
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 20 février 1984 (prix des produits pétroliers)",
+      "page": "403-405",
+      "URL": "https://www.pist.tn/jort/1984/1984F/Jo01284.pdf",
+      "note": "citation-key: arrete-1984-02-20-prix-petroliers\nJORT n° 12. Effet le 22 février 1984 : super 360, normale 340, pétrole lampant 100, gas-oil 160 ; GPL 13 kg : 2,700 D. Un arrêté du même jour sur le prix de la viande bovine figure au n° 15. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé lu au sommaire du fascicule (OCR)."
+    },
+    {
+      "id": "arrete-1984-11-29-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 29 novembre 1984 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "72",
+      "issued": {
+        "date-parts": [
+          [
+            1984,
+            11,
+            29
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 29 novembre 1984 (prix des produits pétroliers)",
+      "page": "2762-2763",
+      "URL": "https://www.pist.tn/jort/1984/1984F/Jo07284.pdf",
+      "note": "citation-key: arrete-1984-11-29-prix-petroliers\nJORT n° 72. Effet le 30 novembre 1984 : super 380, normale 360, pétrole lampant 110, gas-oil 180 ; GPL 13 kg : 3,000 D (pétrole et gas-oil : chiffre des centaines mal imprimé, rétabli par le prix de gros). Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé d'après jort_cache, non reconfirmé sur le fascicule."
+    },
+    {
+      "id": "arrete-1985-06-06-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 6 juin 1985 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "46",
+      "issued": {
+        "date-parts": [
+          [
+            1985,
+            6,
+            6
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 6 juin 1985 (prix des produits pétroliers)",
+      "page": "822-823",
+      "URL": "https://www.pist.tn/jort/1985/1985F/Jo04685.pdf",
+      "note": "citation-key: arrete-1985-06-06-prix-petroliers\nJORT n° 46. Effet le 7 juin 1985 : super 410, normale 390, pétrole lampant 120, gas-oil 210 ; GPL 13 kg : 3,000 D. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé lu au sommaire du fascicule (OCR)."
+    },
+    {
+      "id": "arrete-1985-12-09-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 9 décembre 1985 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "87",
+      "issued": {
+        "date-parts": [
+          [
+            1985,
+            12,
+            9
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 9 décembre 1985 (prix des produits pétroliers)",
+      "page": "1629-1630",
+      "URL": "https://www.pist.tn/jort/1985/1985F/Jo08785.pdf",
+      "note": "citation-key: arrete-1985-12-09-prix-petroliers\nJORT n° 87. Effet le 11 décembre 1985 : super 430, normale 410, pétrole lampant 130, gas-oil 230 ; GPL 13 kg : 3,000 D. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé lu au sommaire du fascicule (OCR ; « le prix des produits pétroliers » au sommaire, « les prix » en tête du texte)."
+    },
+    {
+      "id": "arrete-1986-07-29-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté des ministres de l'industrie et du commerce et de l'énergie et des mines du 29 juillet 1986 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "44",
+      "issued": {
+        "date-parts": [
+          [
+            1986,
+            7,
+            29
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 29 juillet 1986 (prix des produits pétroliers)",
+      "page": "879-880",
+      "URL": "https://www.pist.tn/jort/1986/1986F/Jo04486.pdf",
+      "note": "citation-key: arrete-1986-07-29-prix-petroliers\nJORT n° 44. Effet le 30 juillet 1986 : super 450, normale 430, pétrole lampant 140, gas-oil 250 ; GPL 13 kg : 3,000 D. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; auteur et objet lus au sommaire du fascicule (OCR) ; la notice jort_cache écrit « ministre de la Mines et Energie »."
+    },
+    {
+      "id": "arrete-1987-02-14-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté des ministres de l'industrie et du commerce et de l'énergie et des mines du 14 février 1987 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "13",
+      "issued": {
+        "date-parts": [
+          [
+            1987,
+            2,
+            14
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 14 février 1987 (prix des produits pétroliers)",
+      "page": "259-260",
+      "URL": "https://www.pist.tn/jort/1987/1987F/Jo01387.pdf",
+      "note": "citation-key: arrete-1987-02-14-prix-petroliers\nJORT n° 13. Effet le 11 février 1987 (d'après la note documentaire) : super 470, normale 450, pétrole lampant 150, gas-oil 270 ; GPL 13 kg : 3,000 D. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; auteur et objet lus au sommaire du fascicule (OCR) ; la notice jort_cache écrit « ministre de l'Energie et Mines »."
+    },
+    {
+      "id": "arrete-1988-05-05-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 5 mai 1988 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "31",
+      "issued": {
+        "date-parts": [
+          [
+            1988,
+            5,
+            5
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 5 mai 1988 (prix des produits pétroliers)",
+      "page": "709-711",
+      "URL": "https://www.pist.tn/jort/1988/1988F/Jo03188.pdf",
+      "note": "citation-key: arrete-1988-05-05-prix-petroliers\nJORT n° 31. Effet le 29 avril 1988 : super 490, normale 470, pétrole lampant 160, gas-oil 290 ; GPL 13 kg : 3,200 D ; l'arrêté de 1991 le vise sous la date du « 28 avril 1988 ». Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé d'après jort_cache, non reconfirmé sur le fascicule."
+    },
+    {
+      "id": "arrete-1991-02-05-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie et des finances du 5 février 1991 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "16",
+      "issued": {
+        "date-parts": [
+          [
+            1991,
+            2,
+            5
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 5 février 1991 (prix des produits pétroliers)",
+      "page": "359-360",
+      "URL": "https://www.pist.tn/jort/1991/1991F/Jo01691.pdf",
+      "note": "citation-key: arrete-1991-02-05-prix-petroliers\nJORT n° 16. Effet le 5 février 1991 : super 530, normale 490, pétrole lampant 180, gas-oil 310 ; GPL 13 kg : 3,500 D ; art. 9 : plus-value de réévaluation des stocks affectée à la Caisse générale de compensation. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé lu au sommaire du fascicule (OCR)."
+    },
+    {
+      "id": "arrete-1992-07-10-prix-essence-sans-plomb",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 10 juillet 1992 fixant le prix limite de vente de l'essence sans plomb utilisée comme carburant",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "48",
+      "issued": {
+        "date-parts": [
+          [
+            1992,
+            7,
+            10
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 10 juillet 1992 (prix de l'essence sans plomb)",
+      "page": "925-926",
+      "URL": "https://www.pist.tn/jort/1992/1992F/Jo04892.pdf",
+      "note": "citation-key: arrete-1992-07-10-prix-essence-sans-plomb\nJORT n° 48. Premier prix de l'essence sans plomb : 580 millimes le litre « à la pompe », effet le 1er juillet 1992. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; objet lu au sommaire du fascicule (OCR) ; l'OCR lit « 16 juillet » : date de signature 10 juillet prise de la notice et de la note documentaire, à relire à l'image."
+    },
+    {
+      "id": "arrete-1992-08-18-prix-gpl",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 18 août 1992 fixant le prix des gaz du pétrole liquéfiés",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "57",
+      "issued": {
+        "date-parts": [
+          [
+            1992,
+            8,
+            18
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 18 août 1992 (prix du GPL)",
+      "page": "1125",
+      "URL": "https://www.pist.tn/jort/1992/1992F/Jo05792.pdf",
+      "note": "citation-key: arrete-1992-08-18-prix-gpl\nJORT n° 57. Bouteille de 13 kg : 3,800 D, effet le 4 août 1992 ; valeur lue par OCR seul, non relue à l'image, confirmée par l'arrêté de 1993. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé lu au sommaire du fascicule (OCR)."
+    },
+    {
+      "id": "arrete-1993-10-26-prix-petroliers",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie nationale du 26 octobre 1993 fixant les prix des produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "84",
+      "issued": {
+        "date-parts": [
+          [
+            1993,
+            10,
+            26
+          ]
+        ]
+      },
+      "title-short": "Arrêté du 26 octobre 1993 (prix des produits pétroliers)",
+      "page": "1864-1865",
+      "URL": "https://www.pist.tn/jort/1993/1993F/Jo08493.pdf",
+      "note": "citation-key: arrete-1993-10-26-prix-petroliers\nJORT n° 84. Effet le 9 octobre 1993 : super 570, normale 530, sans plomb 620, pétrole lampant 180, gas-oil 310 ; GPL 13 kg : 3,800 D ; dernier arrêté de prix repéré au Journal officiel. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé d'après jort_cache, non reconfirmé sur le fascicule."
+    },
+    {
+      "id": "ins-annuaire-statistique-prix-detail",
+      "type": "report",
+      "title": "Annuaire statistique de la Tunisie",
+      "author": [
+        {
+          "literal": "Institut national de la statistique"
+        }
+      ],
+      "publisher": "Institut national de la statistique",
+      "publisher-place": "Tunis",
+      "title-short": "INS, Annuaire statistique",
+      "note": "citation-key: ins-annuaire-statistique-prix-detail\nÉditions 1995-2001 à 2019-2023 (vingt-deux éditions). Tableau « Évolution des prix de détail à Tunis (moyenne des 12 mois) », n° 13.4 (éditions 1995-2001 et 2000-2004) puis 13.3 (édition 2010-2014) ; moyennes annuelles de l'essence, du pétrole lampant et de la bouteille de gaz, 1995-2023 ; le gasoil n'y figure pas. Preuve : couche texte, chaque année recoupée sur plusieurs éditions ; une page relue à l'image (édition 2010-2014, p. 216). Rupture de série : « essence normale » jusqu'à l'édition 2001-2005, « essence super » à partir de 2003-2007 (l'édition 2002-2006 garde le libellé « normale » avec les valeurs du super). Vingt-deux éditions locales sous tunisia-data/data/raw/ins-publications/annuaire-statistique/<édition>.pdf (ignoré par git) : 1995-2001 (1 216 262 octets, SHA-256 eac888e3caf5945b256a71aec83d6ec5e019e006f2a34617c8dd6445a9eabd88) ; 1998-2002 (5 373 116 octets, SHA-256 aac92939d8825e366fe60bda16c849fccb8c63e158b1f5b282c3d37231a71322) ; 1999-2003 (5 389 422 octets, SHA-256 bc4a0e208f80ea1ef7e0c500a12da74b829a36a12cc50c0e5bf9aca8454a5572) ; 2000-2004 (7 153 680 octets, SHA-256 5ebc485dbac7666f9fdd681568e67c2b4932adc48d485a2367288e3bef199b4b) ; 2001-2005 (6 044 422 octets, SHA-256 6e40d76892fccf3eeda3dd7c4a1d6bf6aa4e1669ff3addc0f6e756f77835baad) ; 2002-2006 (7 462 965 octets, SHA-256 e52fa905eed23bae248fe261bfd2fb0da54d08b41e971c75f861823f1b2aac21) ; 2003-2007 (5 751 529 octets, SHA-256 a393b827e83fe9204636cda7867fa88e4245c11d569fc22528676b6bae156c77) ; 2004-2008 (5 506 607 octets, SHA-256 c89dfba64e56962a72584772e548a031e3d9f7ed79f7eccf7d4b75c14eb5a612) ; 2005-2009 (4 447 228 octets, SHA-256 daa4ca794de60f84c6f9e740e708e7644a3f41e38a3f6134fab3b6b180dc1ba0) ; 2006-2010 (3 491 652 octets, SHA-256 b15d046a5aec7fb5ab9eb688cb8f173a0159ebac02f62599bc106e9c81f7acc1) ; 2007-2011 (3 801 088 octets, SHA-256 de500e9765951cd88e8c4db9aa50d3f5ed1e8424bebb6f11c3c57aab9ad94cd3) ; 2008-2012 (3 612 220 octets, SHA-256 d3caceb2d62c9cb4c37cfc6df6ce011f7ff5b43f9b93da555f9d0b7d24bf6782) ; 2010-2014 (19 969 503 octets, SHA-256 efac7f5fb5d339401427483e2f7d35b2c690a76a8659a3723bc9310008d69288) ; 2011-2015 (16 362 891 octets, SHA-256 d8fea8cb507c2dc20b7134a359885333abf5a737d570d5c023609d1f04c01d46) ; 2012-2016 (20 572 415 octets, SHA-256 85444af31e0145a506d86f96a5751422fbbb58a742b651270f7850bf53f04baa) ; 2013-2017 (8 307 984 octets, SHA-256 43c1aef356d7684b642ed1484594e8c5e5284cc73fb6105ade874a8659d4867e) ; 2014-2018 (8 498 678 octets, SHA-256 69689afcc20cbedc96c3dc76ac9ffec169e109a60205798e280a4537e92757fb) ; 2015-2019 (13 243 784 octets, SHA-256 f3038fd63d998ac6eeb188ba3273e8f0796306bab856fe4a4a8af94a39543457) ; 2016-2020 (15 736 540 octets, SHA-256 2298535903bdaf6a3dbb0ec7d5445fd39042f7e39fd0dba415430824e7833b43) ; 2017-2021 (6 921 818 octets, SHA-256 e07019f232590f9f207caa72faf710792fe5b79be8f54fcfcd96da403d57f78d) ; 2018-2022 (16 207 125 octets, SHA-256 396abf395a1cde97a38b37a6398e51f364399280391011e7f3921c59d94855be) ; 2019-2023 (16 233 493 octets, SHA-256 45ee5d23797e9cae1de2181c9c6def84b998dc136939689dcb5cd8fe79e77012). Adresse de téléchargement sur ins.tn non vérifiée : URL laissée vide (TODO)."
+    },
+    {
+      "id": "one-chiffres-cles-energie",
+      "type": "report",
+      "title": "Chiffres clés de l'énergie",
+      "author": [
+        {
+          "literal": "Observatoire national de l'énergie et des mines"
+        }
+      ],
+      "publisher": "Ministère de l'Industrie, des Mines et de l'Énergie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.energiemines.gov.tn/fr/tc/publications/",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "ONE, Chiffres clés de l'énergie",
+      "note": "citation-key: one-chiffres-cles-energie\nÉditions 2018 à 2025 (une par an). Partie « Les prix » : prix en vigueur par sous-période de l'année. Preuve : couche texte (documents nés numériques). Huit éditions (2018 à 2025) téléchargées le 6 octobre 2026 sous https://www.energiemines.gov.tn/fileadmin/docs-u1/<fichier> et conservées sous tunisia-data/data/raw/banque-mondiale-rapports/ (ignoré par git, rangé là faute de dossier dédié) : one_chiffres_cles_2018.pdf <- chiffres_cles_energie_2018._Fr.pdf (2 215 727 octets, 23 p., SHA-256 2c82134306a105c692e3222e78000e8a3a0b39ee4a56a5c2eafadee675c7a3a1) ; one_chiffres_cles_2019.pdf <- chiffres_clés_énergie_2019__fr_.pdf (2 158 187 octets, 23 p., SHA-256 ba5c1f42f989b4b1333ba703b867f6802df623069dca806d1deba8ecbd6bd121) ; one_chiffres_cles_2020.pdf <- Chiffres_clés_énergie2020.Fr.pdf (2 188 980 octets, 23 p., SHA-256 b5f998f00dd2d0a128f9c8674218994fa27f173dca685ca769d49cb345807758) ; one_chiffres_cles_2021.pdf <- Chiffres_clés_énergie2021.Fr.pdf (2 133 156 octets, 23 p., SHA-256 dd47cdb21cd71b249eb3b236ffa7b2e46ac47a5cb2045bebe6f3f619381faa0b) ; one_chiffres_cles_2022.pdf <- Chiffres_clés_énergie2022.Fr__Vf_.pdf (2 198 632 octets, 23 p., SHA-256 b22746acc0bcedbaf679406626cdf50d1153e7847139fa5b27da824f9a6729f7) ; one_chiffres_cles_2023.pdf <- Chiffres_clés_énergie2023.Fr.pdf (3 564 911 octets, 23 p., SHA-256 8460c31a99fc4106eb62051e664f4e816c0c56da9e9755025093745345450820) ; one_chiffres_cles_2024.pdf <- Chiffres_clés_énergie_2024.pdf (3 738 449 octets, 23 p., SHA-256 76a0a8de628bc2091790056d27db5bac581b22c8fce732343f17c88a8690892b) ; one_chiffres_cles_2025.pdf <- Chiffres_clés_2025.pdf (4 577 971 octets, 25 p., SHA-256 da4320ac932a26802cf81409add1bdfe6caf24f8358a85f308fa12b71b97f046). Éditions 2014 à 2017 : 2014 sans prix, 2015-2017 introuvables. Chaque édition porte un graphique « Prix annuel moyen de vente de l'essence et du gasoil » (1980 à l'année courante) dont les données ne sont pas publiées."
+    },
+    {
+      "id": "one-conjoncture-energetique",
+      "type": "report",
+      "title": "Conjoncture énergétique",
+      "author": [
+        {
+          "literal": "Observatoire national de l'énergie et des mines"
+        }
+      ],
+      "publisher": "Ministère de l'Industrie, des Mines et de l'Énergie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.energiemines.gov.tn/fr/tc/publications/",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "ONE, Conjoncture énergétique",
+      "note": "citation-key: one-conjoncture-energetique\nPublication mensuelle ; numéros lus : 2017, décembre 2019, fin juillet 2026. Tableau « Produits pétroliers : prix import, prix de cession, prix de vente », avec la date du prix en vigueur. Numéro de fin juillet 2026 (« prix de vente en vigueur au public à partir du 24/11/2022 ») : https://www.energiemines.gov.tn/fileadmin/docs-u1/Conjoncture_%C3%A9nerg%C3%A9tique__fin_juillet_2026.pdf, téléchargé le 6 octobre 2026, copie tunisia-data/data/raw/banque-mondiale-rapports/one_conjoncture_2026_07.pdf (4 938 946 octets, 40 p., SHA-256 3677c82247de310bd57f4289703708cc496aae883c14d5d29f3502855ddc8b5d). Numéros de septembre, octobre et décembre 2017 et de décembre 2019 : lus par le documentaliste, adresses non conservées dans la note, copies locales absentes (TODO). Numéros de 2016, 2018 et de janvier à août 2017 : non trouvés à la page des publications. Preuve : couche texte."
+    },
+    {
+      "id": "minenergie-prix-marges-petroliers",
+      "type": "webpage",
+      "title": "Prix et marges des produits pétroliers",
+      "author": [
+        {
+          "literal": "Ministère de l'Industrie, des Mines et de l'Énergie"
+        }
+      ],
+      "URL": "https://www.energiemines.gov.tn/fr/themes/energie/hydrocarbures/prix-et-marges-des-produits-petroliers/",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "Ministère de l'énergie, Prix et marges des produits pétroliers",
+      "note": "citation-key: minenergie-prix-marges-petroliers\nTableau des comités techniques du 6 avril 2020 au 24 novembre 2022 ; page non datée, lue intégralement le 6 octobre 2026 (couche texte HTML) ; HTTP 200. Page non archivée par nous : le document n'est pas retiré, aucune capture citée."
+    },
+    {
+      "id": "bm-2015-wps7312",
+      "type": "report",
+      "title": "The Socioeconomic Impacts of Energy Reform in Tunisia: A Simulation Approach",
+      "author": [
+        {
+          "family": "Cuesta",
+          "given": "José"
+        },
+        {
+          "family": "El-Lahga",
+          "given": "AbdelRahmen"
+        },
+        {
+          "family": "Lara Ibarra",
+          "given": "Gabriel"
+        }
+      ],
+      "collection-title": "Policy Research Working Paper",
+      "publisher": "World Bank",
+      "publisher-place": "Washington, D.C.",
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            6
+          ]
+        ]
+      },
+      "URL": "https://documents1.worldbank.org/curated/en/370251468189558300/pdf/WPS7312.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "Cuesta, El-Lahga et Lara Ibarra (2015), PRWP 7312",
+      "note": "citation-key: bm-2015-wps7312\nPolicy Research Working Paper n° WPS7312. Titre, auteurs et date (« Poverty Global Practice Group, June 2015 ») lus sur la page de titre le 6 octobre 2026. Notice : https://documents.worldbank.org/en/publication/documents-reports/documentdetail/370251468189558300. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/wb_2015_wps7312_energy_reform_simulation.pdf (855 606 octets, 28 pages, SHA-256 cd6b05406cccc70d612bc4b87ac1d03df289694576e375ef6900e9856b93a4e4), ignorée par git. Tableau 3 « valid May 2014 » : prix intérieurs des carburants (source secondaire, d'après le ministère des Finances) ; pagination à relever. Réédition de 2018 sous le n° 125602 non collectée."
+    },
+    {
+      "id": "bm-1977-revue-ve-plan",
+      "type": "report",
+      "title": "Tunisia: Economic Position and Prospects — Review of the Fifth Development Plan, 1977-1981",
+      "author": [
+        {
+          "literal": "Banque mondiale"
+        }
+      ],
+      "publisher": "Banque mondiale",
+      "publisher-place": "Washington, D.C.",
+      "issued": {
+        "date-parts": [
+          [
+            1977,
+            5,
+            2
+          ]
+        ]
+      },
+      "URL": "https://documents1.worldbank.org/curated/en/439121468115136489/pdf/multi0page.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "Banque mondiale (1977), Review of the Fifth Plan",
+      "note": "citation-key: bm-1977-revue-ve-plan\nRapport n° 1539-TUN. Page de titre lue en couche texte le 6 octobre 2026 (OCR dégradé) : « Report No. 1539-TUN », « Special Economic Report », « May 2,1977 », « Europe, Middle East and North Africa Region », mention « For official use only » portée par la couverture, document aujourd'hui public. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/wb_1977_1539_review_fifth_plan.pdf (7 129 113 octets, 153 pages, SHA-256 fff518bea562aed40c246709336293b71fb3245a040be4bca823b0439083694a), téléchargée le 6 octobre 2026 à l'adresse de l'URL ; fichier ignoré par git. Pages citées : pp. PDF 40 et 76 (couche texte) ; annexe « Price Equalization Fund; Expenditure by Commodity, 1972-1977 » à lire à l'image."
+    },
+    {
+      "type": "report",
+      "author": [
+        {
+          "literal": "International Monetary Fund"
+        }
+      ],
+      "collection-title": "IMF Country Report",
+      "publisher": "International Monetary Fund",
+      "publisher-place": "Washington, D.C.",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "id": "fmi-2014-cr14362",
+      "title": "Tunisia: Fifth Review Under the Stand-By Arrangement, Request for Modification of Performance Criteria, and Rephasing of Access — Staff Report; Press Release; and Statement by the Executive Director for Tunisia",
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            12
+          ]
+        ]
+      },
+      "URL": "https://www.imf.org/external/pubs/ft/scr/2014/cr14362.pdf",
+      "title-short": "FMI, Country Report n° 14/362",
+      "note": "citation-key: fmi-2014-cr14362\nIMF Country Report n° 14/362. Page de titre lue le 6 octobre 2026 : « IMF Country Report No. 14/362, TUNISIA, December 2014 » ; 85 pages. imf.org répond 403 aux téléchargements automatiques mais sert le document à un lecteur : l'URL reste celle de l'éditeur. Copie de vérification : capture Wayback du 12/04/2026 (horodatage 20260412133725 lu dans le CDX), https://web.archive.org/web/20260412133725/https://www.imf.org/external/pubs/ft/scr/2014/cr14362.pdf, téléchargée le 6 octobre 2026 sous tunisia-data/data/raw/banque-mondiale-rapports/imf_2014_362_sba_fifth_review_tunisia.pdf (1 546 961 octets, SHA-256 4ad1b992164436206e64c47a8eccd3ecd2123ffcacd7fee3585e895b9902577b), ignoré par git ; trois captures (2015, 2022, 2026) donnent le même fichier. Mémorandum de politique économique des autorités, § 26, p. 59 du PDF (couche texte) : audit du secteur de l'énergie annoncé pour décembre 2014."
+    },
+    {
+      "type": "report",
+      "author": [
+        {
+          "literal": "International Monetary Fund"
+        }
+      ],
+      "collection-title": "IMF Country Report",
+      "publisher": "International Monetary Fund",
+      "publisher-place": "Washington, D.C.",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "id": "fmi-2016-cr16138",
+      "title": "Tunisia: Request for an Extended Arrangement Under the Extended Fund Facility — Press Release; Staff Report; and Statement by the Executive Director for Tunisia",
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.imf.org/external/pubs/ft/scr/2016/cr16138.pdf",
+      "title-short": "FMI, Country Report n° 16/138",
+      "note": "citation-key: fmi-2016-cr16138\nIMF Country Report n° 16/138. Page de titre lue le 6 octobre 2026 : « IMF Country Report No. 16/138, TUNISIA, June 2016 » (Conseil d'administration du 20 mai 2016) ; 106 pages. Copie locale préexistante de tunisia-data : tunisia-data/data/raw/banque-mondiale-rapports/imf_2016_138_eff_request_tunisia.pdf (2 185 231 octets, SHA-256 274e4edd312a3c852064f553c4055cca092fcd9e100dfec287efdd80b5532ecc), ignorée par git. Tableaux 4a et 4b, pp. 40-41 du PDF (couche texte) : série brute de la subvention à l'énergie reconstituée par les services du FMI (2012-2014 : 2 689 ; 4 434 ; 3 112 MD)."
+    },
+    {
+      "id": "plan-2016-2020-vol1",
+      "type": "report",
+      "title": "Plan de développement 2016-2020, volume I : le contenu global (« Volume Global »)",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère du développement, de l'investissement et de la coopération internationale"
+        }
+      ],
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      },
+      "URL": "https://web.archive.org/web/20250712220027/https://www.mdici.gov.tn/wp-content/uploads/2017/06/Volume_Global.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "https://www.mdici.gov.tn/wp-content/uploads/2017/06/Volume_Global.pdf",
+      "title-short": "Plan 2016-2020, volume I",
+      "note": "citation-key: plan-2016-2020-vol1\nDocument retiré du site du ministère (mdici.gov.tn, l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture du 12/07/2025 (horodatage 20250712220027 lu dans le CDX le 6 octobre 2026, original https://www.mdici.gov.tn/…). Document en arabe, 185 pages (métadonnées du PDF : « Volume Global - Plan 2016-2020 ») ; copie locale tunisia-data/data/raw/banque-mondiale-rapports/mdici_2017_plan_2016_2020_vol1_global_ar.pdf (1 419 567 octets, SHA-256 8816f9f3c559a51757e4ab46792024eb3a1e74f4163fb6806ad6d97752445e94), récupérée le 6 octobre 2026 dans cette capture (téléchargement brut), ignorée par git. Date de parution (2017) d'après la loi d'approbation du 25 avril 2017 et le dossier du site (« 2017/06 »), non lue sur le document. Lu à l'image : p. 81 imprimée (p. 87 du PDF) : compensation 11 553 MD sur 2016-2020, soit 2,1 % du PIB, contre 19 025 MD et 5,1 % en 2011-2015. Titre arabe attribué par le documentaliste : مخطط التنمية 2016-2020 — المجلد الأول : المحتوى الجملي (à relire sur la couverture). Volumes sectoriel et régional : captures signalées, non téléchargées."
+    },
+    {
+      "id": "minfin-projet-lfc-2015",
+      "type": "report",
+      "title": "Projet de loi de finances complémentaire pour l'année 2015 : rapport de présentation, dispositions et tableaux",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances"
+        }
+      ],
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            7
+          ]
+        ]
+      },
+      "URL": "https://web.archive.org/web/20261004184349/http://dev.finances.gov.tn/old/version2/images/LFC2015.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://dev.finances.gov.tn/old/version2/images/LFC2015.pdf",
+      "title-short": "Projet de LFC 2015 (rapport)",
+      "note": "citation-key: minfin-projet-lfc-2015\nDocument retiré du site du ministère des Finances (l'adresse finances.gov.tn/images/LFC2015.pdf répond 404 le 6 octobre 2026) ; consulté dans la capture du 04/10/2026 (horodatage 20261004184349 lu dans le CDX, original dev.finances.gov.tn/old/version2/images/LFC2015.pdf, et non finances.gov.tn/images/… comme l'écrivait la note documentaire). Document en arabe, 76 pages ; copie locale tunisia-data/data/raw/minfinances/portail_ancien/lois_finances/2015_projet_lfc_2015.pdf (1 144 009 octets, SHA-256 8e128d1e1770d9521ed5ab4919a53a249d1b82b0ba6111d0342980c670febf73), ignorée par git. Date « juillet 2015 » d'après la note documentaire. Couche texte inutilisable (police mal encodée) ; lu à l'image : pp. 24-25 du PDF (§ 12-13, recettes non fiscales), p. 27 (§ 17-18), pp. 28-29 (§ 19-20, décomposition de l'écart LF-LFC et séparation entre sociétés). Titre français traduit de l'arabe par le documentaliste. Le nombre de pages n'est pas porté dans un champ number-of-pages, que la conversion vers Zotero ne tolère pas pour un rapport."
+    },
+    {
+      "id": "minfin-rapport-semestriel-2015-12",
+      "type": "report",
+      "title": "Rapport semestriel sur l'exécution du budget de l'État à fin décembre 2015",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances"
+        }
+      ],
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "URL": "https://web.archive.org/web/20161126093022/http://finances.gov.tn/index.php?option=com_jdownloads&Itemid=321&view=finish&cid=1097&catid=8&lang=fr",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://finances.gov.tn/index.php?option=com_jdownloads&Itemid=321&view=finish&cid=1097&catid=8&lang=fr",
+      "title-short": "Rapport semestriel d'exécution du budget, fin décembre 2015",
+      "note": "citation-key: minfin-rapport-semestriel-2015-12\nDocument retiré du site du ministère des Finances (l'adresse de téléchargement redirige vers la page d'accueil le 6 octobre 2026) ; consulté dans la capture du 26/11/2016 (horodatage 20161126093022 lu dans le CDX). Document en arabe, 40 pages ; copie locale tunisia-data/data/raw/minfinances/portail_ancien/budget_execution/2015_rapport_semestriel_execution_budget_etat_fin_decembre_jd1097.pdf (5 061 824 octets, SHA-256 e7032e13239ade4619ef2bc2d26f718ae1d84c739e6295c214e79237b14a6010), ignorée par git. Page du PDF = page imprimée. Lu à l'image : pp. 18, 19, 24, 28, 29. Date de parution non lue. Titre français traduit de l'arabe par le documentaliste. Le nombre de pages n'est pas porté dans un champ number-of-pages, que la conversion vers Zotero ne tolère pas pour un rapport."
+    },
+    {
+      "id": "minfin-rapport-semestriel-2016-06",
+      "type": "report",
+      "title": "Rapport semestriel sur l'exécution du budget de l'État, premier semestre 2016",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances"
+        }
+      ],
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "URL": "https://web.archive.org/web/20161126093457/http://finances.gov.tn/images/Rappot_semestriel_1er_semestre_2016.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://finances.gov.tn/images/Rappot_semestriel_1er_semestre_2016.pdf",
+      "title-short": "Rapport semestriel d'exécution du budget, premier semestre 2016",
+      "note": "citation-key: minfin-rapport-semestriel-2016-06\nDocument retiré du site du ministère des Finances (finances.gov.tn/images/… répond 301 puis 404 le 6 octobre 2026) ; consulté dans la capture du 26/11/2016 (horodatage 20161126093457 lu dans le CDX). Document en arabe, 40 pages ; copie locale tunisia-data/data/raw/minfinances/portail_ancien/budget_execution/2016-06_rapport_semestriel_execution.pdf (3 873 849 octets, SHA-256 88551951b9a3ca5a1222fbf259869442ce87e3b0b16938b18f199b0a8d08fc70), ignorée par git. Lu en couche texte seulement (pp. 18 et 28 imprimées) ; titre arabe à relever sur la couverture ; date de parution non lue. Titre français traduit de l'arabe par le documentaliste. Le nombre de pages n'est pas porté dans un champ number-of-pages, que la conversion vers Zotero ne tolère pas pour un rapport."
+    },
+    {
+      "id": "minfin-rapport-semestriel-2016-12",
+      "type": "report",
+      "title": "Rapport semestriel sur l'exécution du budget de l'État à fin décembre 2016",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances"
+        }
+      ],
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            4
+          ]
+        ]
+      },
+      "URL": "https://web.archive.org/web/20170606203200/http://finances.gov.tn/index.php?option=com_jdownloads&Itemid=581&view=finish&cid=1246&catid=8&lang=ar-AA",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://finances.gov.tn/index.php?option=com_jdownloads&Itemid=581&view=finish&cid=1246&catid=8&lang=ar-AA",
+      "title-short": "Rapport semestriel d'exécution du budget, fin décembre 2016",
+      "note": "citation-key: minfin-rapport-semestriel-2016-12\nDocument retiré du site du ministère des Finances (l'adresse de téléchargement redirige vers la page d'accueil le 6 octobre 2026) ; consulté dans la capture du 06/06/2017 (horodatage 20170606203200 lu dans le CDX). Document en arabe, 41 pages ; copie locale tunisia-data/data/raw/minfinances/portail_ancien/budget_execution/2016_rapport_semestriel_execution_budget_etat_afin_decembre_jd1246.pdf (3 130 774 octets, SHA-256 966e06b067f8097076a5d76da6108ec1d86a1253699d4b13b42bfe6ef752e296), ignorée par git. Pied de page « أفريل 2017 » (d'où la date). Page imprimée = page du PDF - 1. Lu à l'image : pp. 17 et 26 imprimées ; les chiffres de la couche texte sont corrompus (2016 rendu « 2012 »). Titre français traduit de l'arabe par le documentaliste. Le nombre de pages n'est pas porté dans un champ number-of-pages, que la conversion vers Zotero ne tolère pas pour un rapport."
+    },
+    {
+      "id": "minfin-rapport-execution-2018-06",
+      "type": "report",
+      "title": "Rapport sur l'exécution du budget de l'État à fin juin 2018",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances"
+        }
+      ],
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "URL": "https://web.archive.org/web/20190719225152/http://v2.portail.finances.gov.tn/index.php?option=com_jdownloads&Itemid=581&view=finish&cid=1444&catid=8&lang=fr",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://v2.portail.finances.gov.tn/index.php?option=com_jdownloads&Itemid=581&view=finish&cid=1444&catid=8&lang=fr",
+      "title-short": "Rapport d'exécution du budget, fin juin 2018",
+      "note": "citation-key: minfin-rapport-execution-2018-06\nDocument de l'ancien portail v2.portail.finances.gov.tn, qui ne répond plus (aucune connexion le 6 octobre 2026) ; consulté dans la capture du 19/07/2019 (horodatage 20190719225152 lu dans le CDX). Document en arabe, 8 pages ; copie locale tunisia-data/data/raw/minfinances/portail_ancien/budget_execution/2018-06_rapport_execution_fin_juin_ar_jd1444.pdf (461 511 octets, SHA-256 552e5a584d0fe6407a80ca4fe3a3579bf73df61415fe0817386f80f4930bd2fc), ignorée par git. Lu à l'image : p. 5 (avances du Trésor à la STIR, 495 MD, et à la STEG, 195 MD). Titre arabe à relever ; date de parution non lue. Titre français traduit de l'arabe par le documentaliste. Le nombre de pages n'est pas porté dans un champ number-of-pages, que la conversion vers Zotero ne tolère pas pour un rapport."
+    },
+    {
+      "id": "minfin-projet-budget-2016",
+      "type": "report",
+      "title": "Projet de loi de finances pour l'année 2016 : rapport de présentation, version finale du 16 octobre 2015",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances"
+        }
+      ],
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            10,
+            16
+          ]
+        ]
+      },
+      "URL": "https://web.archive.org/web/20151106032837/http://www.finances.gov.tn:80/index.php?option=com_jdownloads&Itemid=721&view=finish&cid=975&catid=9&lang=fr",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.finances.gov.tn:80/index.php?option=com_jdownloads&Itemid=721&view=finish&cid=975&catid=9&lang=fr",
+      "title-short": "Projet de LF 2016 (rapport)",
+      "note": "citation-key: minfin-projet-budget-2016\nDocument retiré du site du ministère des Finances ; consulté dans la capture du 06/11/2015 (horodatage 20151106032837 lu dans le CDX, original http://www.finances.gov.tn:80/…). Document en arabe, 411 pages ; copie locale tunisia-data/data/raw/minfinances/portail_ancien/lois_finances/2016_projet_loi_finances_ar_jd975.pdf (3 011 597 octets, SHA-256 75c2fd319da499aefde969085595d4a30643b30227eb3cdb0d5b88c01f4f2a9a), ignorée par git. Lu en couche texte : pp. 48-49 imprimées (§ 13, subvention des carburants : 579 MD = besoins 689 moins 110 de résultat d'import-raffinage de la STIR). Titre arabe à relever sur la couverture. Titre français traduit de l'arabe par le documentaliste. Le nombre de pages n'est pas porté dans un champ number-of-pages, que la conversion vers Zotero ne tolère pas pour un rapport."
+    },
+    {
+      "id": "bct-ra-1985",
+      "type": "report",
+      "title": "27ème Rapport d'activité. Exercice 1985",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1985.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1985",
+      "note": "citation-key: bct-ra-1985\n27ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 27 de la BCT (catalogue « Rapport Annuel, n° 27 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 12 923 377 octets, 197 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1985.pdf, SHA-256 a7e7425daefeb3e79bfbd78550cd6a46e8b343745d0b61bb452852f61bf80319, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1986",
+      "type": "report",
+      "title": "28ème Rapport d'activité. Exercice 1986",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1986.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1986",
+      "note": "citation-key: bct-ra-1986\n28ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 28 de la BCT (catalogue « Rapport Annuel, n° 28 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 12 920 108 octets, 203 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1986.pdf, SHA-256 79317a95c4f560377964e229ad29cb186dac52389f24330a396f137ed50200f3, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1988",
+      "type": "report",
+      "title": "30ème Rapport d'activité. Exercice 1988",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1988.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1988",
+      "note": "citation-key: bct-ra-1988\n30ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 30 de la BCT (catalogue « Rapport Annuel, n° 30 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 11 976 260 octets, 194 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1988.pdf, SHA-256 40445444fe3a89389cb7b59e5d97966f2a00a05fd7943e58b694261df5c44085, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1989",
+      "type": "report",
+      "title": "31ème Rapport d'activité. Exercice 1989",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1989.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1989",
+      "note": "citation-key: bct-ra-1989\n31ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 31 de la BCT (catalogue « Rapport Annuel, n° 31 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 13 322 641 octets, 229 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1989.pdf, SHA-256 a821cebdf20d7e5fa3e1f06b177a56c841ddaf2b22336a82f8321c746bd76c7d, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1991",
+      "type": "report",
+      "title": "33ème Rapport d'activité. Exercice 1991",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1991.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1991",
+      "note": "citation-key: bct-ra-1991\n33ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 33 de la BCT (catalogue « Rapport Annuel, n° 33 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 12 940 323 octets, 209 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1991.pdf, SHA-256 14b2db957b6428a03515347f42d3a6f65b6b1c1e8d7c362a714fe80a23cfefb3, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1992",
+      "type": "report",
+      "title": "34ème Rapport d'activité. Exercice 1992",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1992.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1992",
+      "note": "citation-key: bct-ra-1992\n34ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 34 de la BCT (catalogue « Rapport Annuel, n° 34 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 11 270 155 octets, 194 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1992.pdf, SHA-256 d1cc849e1bb34500e1fecfd06e676e3419d53cf6ff2dc727ae7a55364fc53446, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1993",
+      "type": "report",
+      "title": "35ème Rapport d'activité. Exercice 1993",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1993.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1993",
+      "note": "citation-key: bct-ra-1993\n35ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 35 de la BCT (catalogue « Rapport Annuel, n° 35 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 9 645 018 octets, 172 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1993.pdf, SHA-256 ab83c17b4da73f0f885b08f93bffe0a73aeed6aa57e892cc95cb84839072dd6d, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1994",
+      "type": "report",
+      "title": "36ème Rapport annuel. Année 1994",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1994.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1994",
+      "note": "citation-key: bct-ra-1994\n36ème Rapport annuel : lettre introductive lue à l'image (« 36ème Rapport annuel … en 1994 ») et couche texte de la page 2 (« trente-sixième Rapport annuel »), le 6 octobre 2026. Rapport n° 36 de la BCT (catalogue « Rapport Annuel, n° 36 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 11 977 562 octets, 209 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1994.pdf, SHA-256 22a9ebdf8a348ef67b5bc236d14e8d50f731f435ff43a21f224455124152c41c, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1995",
+      "type": "report",
+      "title": "37ème Rapport annuel. Année 1995",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1995.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1995",
+      "note": "citation-key: bct-ra-1995\n37ème Rapport annuel : lettre introductive lue en couche texte (« Lettre introductive au 37ème Rapport annuel », « trente-septième Rapport annuel … pour l'année 1995 »), le 6 octobre 2026. Rapport n° 37 de la BCT (catalogue « Rapport Annuel, n° 37 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 12 566 379 octets, 199 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1995.pdf, SHA-256 9639e2df0d895490c0f87f412b0aac4fd7cbf55508f2094bd0976189fd73214f, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1996",
+      "type": "report",
+      "title": "38ème Rapport annuel. Année 1996",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1996.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1996",
+      "note": "citation-key: bct-ra-1996\n38ème Rapport annuel : lettre introductive lue en couche texte (« 38ème Rapport annuel », « trente-huitième »), le 6 octobre 2026. Rapport n° 38 de la BCT (catalogue « Rapport Annuel, n° 38 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 16 271 259 octets, 251 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1996.pdf, SHA-256 e887a9e6294c69f5609c0601fff2894497f5df83e8e9c6e6a5e7f429e5f0ca29, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1998",
+      "type": "report",
+      "title": "40ème Rapport annuel. Année 1998",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1998.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1998",
+      "note": "citation-key: bct-ra-1998\n40ème Rapport annuel : lettre introductive lue en couche texte (« 40ème Rapport annuel », « quarantième rapport annuel … relatif à l'année 1998 »), le 6 octobre 2026. Rapport n° 40 de la BCT (catalogue « Rapport Annuel, n° 40 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 17 852 400 octets, 271 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1998.pdf, SHA-256 73d85e001cffc0aed077b5f6800cc64aa52218e24652983420d3a0a98a9d0021, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1999",
+      "type": "report",
+      "title": "41ème Rapport d'activité. Exercice 1999",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1999.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1999",
+      "note": "citation-key: bct-ra-1999\n41ème Rapport d'activité : page de titre lue en couche texte (« 41ème RAPPORT D'ACTIVITE, Exercice 1999 »), le 6 octobre 2026. Rapport n° 41 de la BCT (catalogue « Rapport Annuel, n° 41 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 15 881 746 octets, 248 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1999.pdf, SHA-256 f668f9f444e0ba7ebe98531c6dcb3e42d27af1ef7397830de880a867b3f89161, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2001",
+      "type": "report",
+      "title": "43ème Rapport annuel. Année 2001",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/rapport2001.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2001",
+      "note": "citation-key: bct-ra-2001\n43ème Rapport annuel : lettre introductive lue en couche texte (« 43ème Rapport annuel … en 2001 »), le 6 octobre 2026. Rapport n° 43 de la BCT (catalogue « Rapport Annuel, n° 43 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 3 627 844 octets, 252 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/rapport2001.pdf, SHA-256 cbc39792599a985b4a65aa3af9f63147208a4f4cf600982afc02a5a6520e0bf1, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2002",
+      "type": "report",
+      "title": "44ème Rapport annuel. Année 2002",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/rapport2002.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2002",
+      "note": "citation-key: bct-ra-2002\n44ème Rapport annuel : lettre introductive lue en couche texte (« 44ème Rapport annuel … en 2002 »), le 6 octobre 2026. Rapport n° 44 de la BCT (catalogue « Rapport Annuel, n° 44 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 3 794 313 octets, 258 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/rapport2002.pdf, SHA-256 c0788cbf0e71359495d8c1dccd27fd12b383187d5b3f6161bf4e17db1c3d196d, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2003",
+      "type": "report",
+      "title": "45ème Rapport d'activité. Exercice 2003",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/rapport2003.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2003",
+      "note": "citation-key: bct-ra-2003\n45ème Rapport d'activité : page de titre lue en couche texte (« 45ème RAPPORT D'ACTIVITE, Exercice 2003 »), le 6 octobre 2026. Rapport n° 45 de la BCT (catalogue « Rapport Annuel, n° 45 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 4 158 012 octets, 270 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/rapport2003.pdf, SHA-256 531f090d1f07bbe4b4a250141a243f271b3b946c7117ced17a4fa57fffd63aab, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2004",
+      "type": "report",
+      "title": "46ème Rapport annuel. Année 2004",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/rapport2004.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2004",
+      "note": "citation-key: bct-ra-2004\n46ème Rapport annuel : lettre introductive lue en couche texte (« 46ème Rapport annuel … en 2004 »), le 6 octobre 2026. Rapport n° 46 de la BCT (catalogue « Rapport Annuel, n° 46 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 5 284 916 octets, 281 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/rapport2004.pdf, SHA-256 6e6a23eb42235402f286a9cc542f37ccaea60ede08fc1ae7f4fb4644587eaa3e, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2005",
+      "type": "report",
+      "title": "47ème Rapport d'activité. Exercice 2005",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/rapport2005.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2005",
+      "note": "citation-key: bct-ra-2005\n47ème Rapport d'activité : page de titre lue en couche texte (« 47ème RAPPORT D'ACTIVITE, Exercice 2005 »), le 6 octobre 2026. Rapport n° 47 de la BCT (catalogue « Rapport Annuel, n° 47 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 14 484 626 octets, 305 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/rapport2005.pdf, SHA-256 99c48d3b5b63e9b87938a63b4732886769c179723694378efce1704376d9a17e, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2006",
+      "type": "report",
+      "title": "Rapport annuel 2006",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2007,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/rapport2006.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2006",
+      "note": "citation-key: bct-ra-2006\nRapport annuel 2006 : couverture lue en couche texte (« RAPPORT ANNUEL 2006, JUIN 2007 ») ; lettre introductive au 48ème rapport, le 6 octobre 2026. Rapport n° 48 de la BCT (catalogue « Rapport Annuel, n° 48 »). Date de parution lue sur la couverture : juin 2007. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 4 876 226 octets, 314 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/rapport2006.pdf, SHA-256 4706db36f5fae30783be7db35f693d5b15d83eaaf655027017c535d08312ec12, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2007",
+      "type": "report",
+      "title": "Rapport annuel 2007",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2008,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/rapport2007.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2007",
+      "note": "citation-key: bct-ra-2007\nRapport annuel 2007 : couverture lue en couche texte (« RAPPORT ANNUEL 2007, JUIN 2008 ») ; lettre introductive au 49ème rapport, le 6 octobre 2026. Rapport n° 49 de la BCT (catalogue « Rapport Annuel, n° 49 »). Date de parution lue sur la couverture : juin 2008. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 5 357 037 octets, 327 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/rapport2007.pdf, SHA-256 f62e7386d8508bdb09fbd723c601831cf61a0237f96d2dc372471f3c7be17fa7, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2008",
+      "type": "report",
+      "title": "Rapport annuel 2008",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/rapport2008.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2008",
+      "note": "citation-key: bct-ra-2008\nRapport annuel 2008 : couverture lue en couche texte (« RAPPORT ANNUEL 2008, Juin 2009 ») ; lettre : « cinquantième rapport », le 6 octobre 2026. Rapport n° 50 de la BCT (catalogue « Rapport Annuel, n° 50 »). Date de parution lue sur la couverture : juin 2009. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 5 549 555 octets, 318 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/rapport2008.pdf, SHA-256 6b34c56340373277f169f0d956f193bb625b32a8cd0bba2b254df285fec7b754, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2009",
+      "type": "report",
+      "title": "51ème Rapport annuel. Année 2009",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/rapport2009.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2009",
+      "note": "citation-key: bct-ra-2009\n51ème Rapport annuel : lettre introductive lue en couche texte (« 51ème Rapport annuel », « cinquante-et-unième »), le 6 octobre 2026. Rapport n° 51 de la BCT (catalogue « Rapport Annuel, n° 51 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 4 260 394 octets, 319 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/rapport2009.pdf, SHA-256 31fa52154ab162dc4afb689620634bdf9f2732d3c78ff0ee4e47d74906ed0c90, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2010",
+      "type": "report",
+      "title": "52ème Rapport annuel. Exercice 2010",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/rapport2010.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2010",
+      "note": "citation-key: bct-ra-2010\n52ème Rapport annuel : lettre introductive lue en couche texte (« 52ème Rapport annuel », « relatif à l'exercice 2010 ») ; le rapport couvre aussi sommairement le premier semestre 2011, le 6 octobre 2026. Rapport n° 52 de la BCT (catalogue « Rapport Annuel, n° 52 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 5 678 102 octets, 132 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/rapport2010.pdf, SHA-256 b7ee0994745b5b5adc73f0fac95bc9a4e1fc257b7fc66ca13bd3b35998589db5, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2011",
+      "type": "report",
+      "title": "53ème Rapport annuel. Année 2011",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/rapport2011.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2011",
+      "note": "citation-key: bct-ra-2011\n53ème Rapport annuel : lettre introductive lue en couche texte (« 53ème Rapport annuel … relatif à l'année 2011 »), le 6 octobre 2026. Rapport n° 53 de la BCT (catalogue « Rapport Annuel, n° 53 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 63 225 569 octets, 165 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/rapport2011.pdf, SHA-256 209dbee108bc284c030450ecd5c70b76993ce57ee008027527c543e3c6993819, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1965",
+      "type": "report",
+      "title": "Rapport d'activité. Exercice 1965",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1965.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport d'activité 1965",
+      "note": "citation-key: bct-ra-1965\nRapport d'activité : image lue (couverture floue : le numéro 7 vient du catalogue de la BCT), le 6 octobre 2026. Rapport n° 7 de la BCT (catalogue « Rapport Annuel, n° 7 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 4 794 944 octets, 106 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1965.pdf, SHA-256 3c703a43ddd246d5a221d047fe3d5a4fcf0b8936e37992efb50825e71894b316, ignorée par git). Utilisé par la note documentaire compensation-avant-1970-et-plans pour : compte « Opérations de compensation » (subventions d'exploitation 1 200 000 D ; versement au budget 800 000 D) d'après la couche texte, p. PDF 58 et 62 environ ; numéros de page calculés sur la couche texte, à confirmer à l'ouverture. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1967",
+      "type": "report",
+      "title": "9ème Rapport d'activité. Exercice 1967",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1967.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport d'activité 1967",
+      "note": "citation-key: bct-ra-1967\n9ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 9 de la BCT (catalogue « Rapport Annuel, n° 9 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 4 901 139 octets, 103 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1967.pdf, SHA-256 3e10e2836dac05cb4d26e90b438ed3e68d467880afddc660e4ae69161f5f84f1, ignorée par git). Utilisé par la note documentaire compensation-avant-1970-et-plans pour : droits de consommation et redevances versés au compte de compensation (couche texte, p. PDF 60) ; numéros de page calculés sur la couche texte, à confirmer à l'ouverture. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1971",
+      "type": "report",
+      "title": "13ème Rapport d'activité. Exercice 1971",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1971.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport d'activité 1971",
+      "note": "citation-key: bct-ra-1971\n13ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 13 de la BCT (catalogue « Rapport Annuel, n° 13 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 5 796 799 octets, 118 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1971.pdf, SHA-256 aed642eaba779d9e769326aacd48f76d2dfbed5a3b2e7a982eb86f6c579e82b4, ignorée par git). Utilisé par la note documentaire compensation-avant-1970-et-plans pour : dépenses de la Caisse générale de compensation 2 053 000 → 3 700 000 D (couche texte, p. PDF 69) ; numéros de page calculés sur la couche texte, à confirmer à l'ouverture. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1974",
+      "type": "report",
+      "title": "16ème Rapport d'activité. Exercice 1974",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1974.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport d'activité 1974",
+      "note": "citation-key: bct-ra-1974\n16ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 16 de la BCT (catalogue « Rapport Annuel, n° 16 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 13 467 639 octets, 167 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1974.pdf, SHA-256 704837e0f935bfda85cb101ec311f49354a2fa6b0d72ccf8e4a47162d79e86e5, ignorée par git). Utilisé par la note documentaire compensation-avant-1970-et-plans pour : première contribution du budget à la Caisse générale de compensation, 5,3 MD (couche texte, p. PDF 95) ; stabilisation des prix (p. PDF 57) ; numéros de page calculés sur la couche texte, à confirmer à l'ouverture. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1975",
+      "type": "report",
+      "title": "17ème Rapport d'activité. Exercice 1975",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1975.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport d'activité 1975",
+      "note": "citation-key: bct-ra-1975\n17ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 17 de la BCT (catalogue « Rapport Annuel, n° 17 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 14 102 000 octets, 184 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1975.pdf, SHA-256 5bfb31831ff8e2f3e5255d90a0646a91493c4ce604d43521505c752b5d284eda, ignorée par git). Utilisé par la note documentaire compensation-avant-1970-et-plans pour : opérations de la Caisse générale de compensation 1974-1975 (couche texte, p. PDF 117) ; numéros de page calculés sur la couche texte, à confirmer à l'ouverture. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1980",
+      "type": "report",
+      "title": "22ème Rapport d'activité. Exercice 1980",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1980.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport d'activité 1980",
+      "note": "citation-key: bct-ra-1980\n22ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 22 de la BCT (catalogue « Rapport Annuel, n° 22 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 14 594 876 octets, 235 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1980.pdf, SHA-256 8a4113ad36a28b8973b57504f2503dea1a129380d799789e5b39d434fa890474, ignorée par git). Utilisé par la note documentaire compensation-avant-1970-et-plans pour : déficit cumulé de la Caisse générale de compensation, près de 125 MD ; prêt du Trésor de 95 MD (couche texte, p. PDF 107) ; numéros de page calculés sur la couche texte, à confirmer à l'ouverture. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
     }
   ]
 }

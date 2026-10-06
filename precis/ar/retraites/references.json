@@ -774,26 +774,6 @@
       }
     },
     {
-      "id": "minfin-remunerations",
-      "type": "dataset",
-      "note": "citation-key: minfin-remunerations",
-      "publisher": "Ministère des Finances, Tunisie",
-      "title": "Série de répartition économique des dépenses du budget de l’État (Rémunérations publiques)",
-      "URL": "http://www.finances.gov.tn",
-      "author": [
-        {
-          "literal": "Ministère des Finances, Tunisie"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2025
-          ]
-        ]
-      }
-    },
-    {
       "id": "ins-annuaire",
       "type": "report",
       "title": "Annuaire statistique de la Tunisie (éditions 1995-2001, 1998-2002, 1999-2003 et 2019-2023)",
@@ -837,21 +817,6 @@
       "publisher-place": "Tunis",
       "URL": "https://www.ins.tn/publication/enquete-nationale-sur-lemploi-2012",
       "note": "citation-key: ins-enpe\nEnsemble de rapports annuels de l'INS. Intitulés lus en couverture : « المسح الوطني حول السكان والتشغيل لسنة 2005 » (daté « أكتوبر 2006 », en arabe) ; « المسح الوطني حول السكان والتشغيل لسنة 2010 » (daté « جوان 2011 », en arabe) ; « Enquête nationale sur la population et l'emploi 2012 » (bilingue, daté « Décembre 2013 »). Le portail de l'INS les intitule « Enquête Nationale sur l'Emploi AAAA ». Utilisés pour les occupés selon la situation dans la profession : rapport 2005, tableau 27 ; rapport 2010, tableau 33 ; rapport 2012, tableau 30. L'URL donnée est la page du rapport 2012 (vérifiée le 21 septembre 2026) ; rapports 2005 et 2010 : https://www.ins.tn/publication/enquete-nationale-sur-lemploi-2005 et https://www.ins.tn/publication/enquete-nationale-sur-lemploi-2010 (vérifiées le 21 septembre 2026). Liste des fichiers : dépôt tunisia-data, sources/ins-enquete-emploi-urls.csv."
-    },
-    {
-      "id": "wb-wdi",
-      "type": "dataset",
-      "title": "World Development Indicators",
-      "title-short": "Banque mondiale, WDI",
-      "author": [
-        {
-          "literal": "Banque mondiale"
-        }
-      ],
-      "publisher": "Banque mondiale",
-      "publisher-place": "Washington, D.C.",
-      "URL": "https://datacatalog.worldbank.org/search/dataset/0037712/World-Development-Indicators",
-      "note": "citation-key: wb-wdi\nIndicateurs utilisés pour la Tunisie : NY.GDP.MKTP.CN (« GDP (current LCU) »), SP.POP.TOTL (« Population, total ») et SL.EMP.WORK.ZS (part des salariés dans l'emploi, estimation modélisée du BIT). Séries téléchargées le 21 septembre 2026 par l'API https://api.worldbank.org/v2/country/TUN/indicator/<code>?format=json ; les réponses portent « lastupdated »: « 2026-07-13 ». URL de la fiche du catalogue de données vérifiée le 21 septembre 2026. Réponses conservées dans le dépôt tunisia-data, data/raw/banque-mondiale/."
     },
     {
       "id": "ins-bms",
