@@ -539,9 +539,10 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
   - **à lire** : la circulaire n° 20 du ministre des affaires sociales du 19 décembre 2001
     (comité de veille), connue par le seul Profil, p. 32 ; les annexes des organigrammes de
     la CNAM (décrets n° 2008-3707 et 2018-747) ; le décret n° 2002-583 ;
-  - **à ranger** : les PDF du Profil et de la Lettre du CRES n° 8 dans `tunisia-data`
-    (`data/raw/`, catalogue `sources/`) — URL et empreintes dans les notes des deux
-    références ; téléchargés le 6 octobre 2026 depuis social.gov.tn et cres.tn ;
+  - **rangés le 6 octobre 2026** : les PDF du Profil et de la Lettre du CRES n° 8, dans
+    `tunisia-data` (`data/raw/caisses/mas/` et `data/raw/caisses/cres/`), fiches
+    `sources/mas-profil-sst-2023.md` et `sources/cres-lettre-8-atmp-2023.md` (tunisia-data#34) ;
+    le PDF du ministère a été téléchargé sans vérification du certificat du site ;
   - **deux tableaux faits main** (`tbl-atmp-declares`, `tbl-atmp-frequence`), à remplacer
     par une figure quand les séries seront à l'entrepôt et raccordées aux statistiques de
     la CNAM pour 2021-2023 ; les écarts entre les deux documents pour 2014, 2015 et 2020
