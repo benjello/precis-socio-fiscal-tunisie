@@ -1,0 +1,5 @@
+series: [compensation-parts]
+sources: [bct-ra-1984, bm-1985-cem-5328-vol1, fmi-1996-red, fmi-2000-red, minfin-indicateurs-fp]
+fiches: [docs/compensation-depense-par-poste.md]
+caveats: [UN SEUL PIB PAR ANNÉE, QUI CHANGE DE BASE : tracer la part du PIB par segments de `segment_pib` (ruptures en 1986, 1997, 2002, 2005, 2010, 2015 et 2025), jamais d'un trait continu ni en groupant par `base_pib` ; pour comparer les bases entre elles, lire `compensation-ratios`. Filtrer `famille` : les familles ne se raccordent pas, et `nature` sépare le budgétaire des rapports extérieurs. Dépenses de l'État hors service de la dette. Carburants : rupture de périmètre en 2015. 2025 et 2026 sont des lois de finances (`etat_norme`). Voir docs/compensation-depense-par-poste.md et docs/compensation-ratios.md.]
+generated: 2026-10-06

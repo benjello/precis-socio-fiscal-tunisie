@@ -642,10 +642,34 @@ identifiants `#sec-compensation-…` et `#tbl-compensation-…` gardés. Note do
   STEG-STIR-ETAP), puis les sources extérieures à part (Banque mondiale 1984, FMI 1988-1998) ;
 - `_incidence.qmd` (`#sec-compensation-incidence`) : l'étude INS-CRES-BAD de 2013.
 
-Aucune figure : les séries ne sont que localisées. Trois fiches dans `docs/recherches.yml` :
+Cinq figures depuis le 6 octobre 2026 (rubrique « Figures » ci-dessous). Trois fiches dans `docs/recherches.yml` :
 `r-cgc-decret-application-1970`, `r-cgc-budgetisation-1992-2003` (toutes deux dans
 `_institution.qmd`), `r-carburants-ajustement-apres-2021` (`_reformes.qmd`).
 
+- **Figures** (`precis/fr/compensation/figures/compensation.py`, appelées par
+  `cm.figure(…)`) : `fig-compensation-longue-periode`, `fig-compensation-prevu-realise`,
+  `fig-compensation-par-poste` et `fig-compensation-sources-exterieures` dans `_depense.qmd` ;
+  `fig-compensation-recettes-caisse` dans `_institution.qmd`, dont le tableau
+  `tbl-compensation-recettes-affectees` est désormais engendré depuis les séries
+  (`cm.tableau_recettes_affectees`), avec les parts des dépenses de l'État et du PIB. Les parts
+  tracées sont celles de l'entrepôt ; aucune part publiée par une source n'est tracée.
+  - **Snapshots à refaire** : `precis/_seriescache/compensation-{parts,prevu-realise,
+    recettes-caisse}.csv` viennent de la branche `data/compensation-serie-longue` de
+    `tunisia-data`, **non fusionnée** au 6 octobre 2026 ; relancer
+    `figtools.refresh_cache(…)` une fois la branche sur `main`, puis rendre le livre.
+  - **Bibliographie à verser** (bibliographe) : `bct-ra-1985`, `-1986`, `-1988`, `-1989`,
+    `-1991` à `-1996`, `-1998`, `-1999`, `-2001` à `-2011` (23 clés, dans aucun volume) ;
+    `minfin-remunerations` et `wb-wdi` (dans d'autres volumes seulement). D'ici là, les figures
+    omettent ces clés de leur ligne « Source » ; elles y reviennent d'elles-mêmes.
+  - **Texte à accorder** (rédacteur) : l'ouverture de `_depense.qmd` (« aucune série
+    continue », années « couvertes par aucune valeur ») et la section « La compensation
+    rapportée au PIB » (parts publiées seules) précèdent les séries et les contredisent en
+    partie ; les tableaux que les figures illustrent sont gardés entiers, à replier ou alléger.
+  - **Annexe sur le PIB** : les notes des figures renvoient à `../annexe-pib.html`
+    (`precis/fr/annexe-pib.qmd`, en cours de rédaction sur une autre branche) ; le lien est
+    mort tant que l'annexe n'est pas fusionnée.
+  - **Arabe** : `precis/ar/compensation/figures` est un lien vers le module français ; ses
+    libellés sont bilingues, non relus par un arabophone.
 - **Arabe** : `precis/ar/compensation/` a son `_quarto.yml` (tenu à la main, chapitres en
   commentaire hors `index.qmd`) et ses références ; le livre est sauté au rendu tant que la
   traduction n'a pas livré `index.qmd`. Décommenter chaque chapitre quand sa traduction est
@@ -676,10 +700,12 @@ Aucune figure : les séries ne sont que localisées. Trois fiches dans `docs/rec
     LFC 2015), que les bulletins énoncent sans dire ce qu'elle change dans le poste
     « carburants » ; l'état (provisoire ou définitif) des colonnes sans étiquette, 2012-2013 et
     2019-2024.
-  - **Série à reconstruire dans l'entrepôt** (coût par poste 2003-2025, en MD et en % du PIB ;
-    temps long depuis 1970), avec sa fiche de provenance : préalable aux figures (TODO rédacteur).
-    PIB : `tunisia-data` (WDI, comptes nationaux de l'INS). Aucun ratio n'est calculé à la main
-    dans le chapitre.
+  - **Série reconstruite dans l'entrepôt le 6 octobre 2026** (par poste 2003-2026 ; charges de
+    la Caisse 1984-2011, dotation du budget 1984-2010 avec des trous ; parts des dépenses de
+    l'État et du PIB), fiches `docs/compensation-depense-par-poste.md` et
+    `docs/compensation-ratios.md` de `tunisia-data` : les figures la tracent. Aucun ratio n'est
+    calculé à la main dans le chapitre. Restent sans valeur : 1972-1981, et la dotation du
+    budget en 1987-1990, 1997, 2000-2001, 2003, 2006, 2008-2009.
   - **Série 1985-2002** : à établir sur les rapports annuels de la BCT (`bct-archives/109/`,
     textuels, chapitre « finances publiques ») ; 1999-2002 : attendus aussi dans les rapports
     « Finances publiques » antérieurs à 2005, **non collectés**. Tableau III-1 de la Banque

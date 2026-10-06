@@ -41,12 +41,56 @@ La Caisse est conçue en 1971 comme un compte équilibré par ses propres taxes.
 
 Ces ressources ne suivent pas la dépense. En 1984, le budget de l'État inscrit une subvention à la Caisse [@decret84-259, tableau A] ; en 1989, le Trésor lui consent un prêt [@lfc-1989, art. 8]. Pour 2009-2011, le rapport du ministère des Finances donne la mesure de l'écart entre les recettes affectées du compte de la Caisse et la dépense.
 
-| | 2009 | 2010 | 2011 |
-|---|---:|---:|---:|
-| Recettes affectées du compte de la CGC (MD) | 36,6 | 30,2 | 31,6 |
-| Dépense de compensation, trois postes (MD) | 1 430,0 | 1 500,0 | 2 869,2 |
+Le @fig-compensation-recettes-caisse met les recettes de la Caisse en regard de la dépense, pour toutes les années où une source les donne.
 
-: Recettes affectées de la Caisse et dépense de compensation, 2009-2011. Source : ministère des Finances [@minfin-finances-publiques-2011]. {#tbl-compensation-recettes-affectees}
+```{python}
+#| label: fig-compensation-recettes-caisse
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import compensation as cm
+cm.figure(
+    "recettes_caisse",
+    caption=("Les recettes de la Caisse générale de compensation face à la dépense, "
+             "1984-2011 : en millions de dinars courants avec le rapport des recettes à la "
+             "dépense, en part des dépenses de l'État hors service de la dette et en part du PIB"),
+    note_lecture=(
+        "Deux séries de recettes, qui ne se raccordent pas : en vert, les recettes propres de la "
+        "Caisse d'après les rapports annuels de la Banque centrale (1984-1986, 1991-1996, "
+        "1998-1999), en regard des charges de la Caisse ; en violet, les recettes affectées du "
+        "compte de la Caisse d'après le ministère des Finances (2009-2011), en regard de la "
+        "dépense budgétaire des trois postes. Aucune valeur n'est connue ici pour 1987-1990, "
+        "1997 et 2000-2008. "
+        "Le graphique du bas donne le rapport des recettes à la dépense en regard. Les montants "
+        "et la part du PIB sont en échelle logarithmique : les recettes sont, à partir de 1991, "
+        "d'un ordre de grandeur inférieur à la dépense. La part des dépenses de l'État, donnée "
+        "pour les recettes depuis 1986, ne dépend d'aucune base des comptes nationaux : c'est la "
+        "mesure homogène. La part du PIB est tracée par segments, et chaque changement de "
+        "segment est une rupture de série qui tient au seul dénominateur "
+        "(voir l'[annexe sur le PIB](../annexe-pib.html)). Le PIB employé est, en 1984-1985, "
+        "celui de la Banque mondiale, qui accole les bases sans les raccorder — base non précisée "
+        "par la source ; ensuite celui du ministère des Finances, en base 1983 présumée pour "
+        "1986-1991, en base 1983 pour 1992-1996, en base 1997 pour 1997-2001 et 2005-2009. Ses "
+        "valeurs de 2010 et 2011 sont rétropolées, supérieures d'environ 5 % à la base 1997 : "
+        "leur base n'est pas précisée par la source (« n. r. »). Pour les segments rattachés à "
+        "une base, la série ne dit pas si la valeur est celle de la publication d'origine ou une "
+        "valeur rétropolée."))
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import compensation as cm
+cm.tableau_recettes_affectees(
+    caption=("Recettes affectées de la Caisse et dépense de compensation, 2009-2011 : montants, "
+             "part des dépenses de l'État hors service de la dette et part du PIB. Source des "
+             "montants : ministère des Finances [@minfin-finances-publiques-2011]. Les deux "
+             "parts placées sous un montant le rapportent aux dépenses de l'État et au PIB que "
+             "donne le ministère des Finances ; son PIB est en base 1997 pour 2009 ; ses valeurs de "
+             "2010 et 2011 sont rétropolées, supérieures d'environ 5 % à la base 1997, et leur "
+             "base n'est pas précisée par la source (voir l'[annexe sur le PIB](../annexe-pib.html))."))
+```
 
 La compensation est alors, pour l'essentiel, une dépense du budget général de l'État. Le texte qui a opéré ce passage — ou la date à laquelle la dépense a quitté les fonds spéciaux du Trésor — n'est pas identifié ici ; la dépense figure en tout cas au budget en 2003, première année du @tbl-compensation-2003-2011.
 
