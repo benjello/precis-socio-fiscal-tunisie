@@ -950,13 +950,47 @@ généraliser : `finances_locales/figures/finances_locales.py` (`_pib`, `_pib_pa
   l'annexe.
 - **Marché du travail** : aucun emploi du PIB relevé.
 
-**En amont (`tunisia-data`, note § 4.3 et § 9)** — séries à créer puis à snapshoter pour la
-figure de l'annexe (un `TODO (rédacteur)` la réserve dans la page) : le PIB en base 2015 de
-2010 à 2020 du classeur de l'INS du 15 août 2021 (clé proposée `ins-pib-base2015-retropole`) ;
-`undata-pib` (base 1983 de 1992 à 2009, base 1997 de 1997 à 2011) ; facultatif, `wdi-tunisie`.
-Étiquettes à corriger : `masse-salariale-ratios` (`base_pib: 2015`), `irpp-ratios`
-(`pib_cnat_MDT`, 2012-2014), `masse-salariale-reconciliation` (« base 2010 »). Une page de site
-ne sait pas encore appeler un module de figure : câblage à écrire avec la figure.
+**Figures de l'annexe — fait le 6 octobre 2026.** `#fig-pib-volume` (sous-section
+`#pib-croissance-volume`), deux vues : tous les taux de croissance en volume de 1961 à 2025
+(comptes tunisiens en ronds de la couleur de leur base, Banque mondiale en croix, taux retenu en
+trait, neuf jonctions étiquetées base / année de prix / série / source, 1962-1965 sur fond gris) ;
+les deux indices enchaînés, prix courants et volume. `#fig-pib-bases` (sous-section
+`#pib-croissance-longue-periode` ; le `TODO (rédacteur)` de `#sec-pib-ecarts` est levé), trois
+vues, toutes aux prix courants : niveaux des bases 1983, 1997 et 2015 sur leurs années (tronçons
+rétropolés par l'INS distingués) ; croissance calculée à l'intérieur de chaque base, 1962-2025 ;
+série accolée et série enchaînée, en indice et en taux, les deux taux faux de 1997 et de 2010
+marqués. Module `precis/fr/figures/annexe_pib.py`. La règle 2 de `#sec-pib-ruptures` dit
+désormais que la série enchaînée n'est qu'une illustration.
+
+- **Snapshots à refaire.** `pib-courant-enchaine`, `pib-croissance-par-base`,
+  `pib-courant-recouvrements`, `pib-croissance-volume` et `pib-volume-enchaine`
+  (`precis/_seriescache/`) viennent de la branche `fix/masse-salariale-build` de
+  `tunisia-data`, **non encore fusionnée** (tête `ad167ba`) :
+  les CSV sont identiques, octet pour octet, à ceux de cette branche. À resnapshoter par
+  `figtools.refresh_cache()` après la fusion sur `main`, puis vérifier que les figures et
+  `precis/fr/figdata/fig_pib_*.csv` ne bougent pas.
+- **Câblage d'une figure de page de site.** Le module est dans `precis/fr/figures/` (lien
+  symbolique `precis/ar/figures`), les sorties à côté de la page (`precis/<langue>/_fig/`,
+  ignoré, et `precis/<langue>/figdata/`, versionné) ; `build.sh` copie ces deux dossiers dans le
+  site. `scripts/verifier.sh` ne rend aucune page de site et ne restaure pas
+  `precis/<langue>/figdata/` : la page se contrôle par `./build.sh --no-pdf`.
+- **Reste à faire, en amont.** Les entrées du catalogue portent des libellés `base_pib`
+  différents (« 1983 / 1997 / 2015 (colonne base) »…), que la ligne « Source » de chaque figure
+  met bout à bout : à harmoniser dans `tunisia-data` avant la fusion. La colonne `jonction` de
+  `pib-volume-enchaine` n'existe qu'en français : les infobulles de la page arabe la
+  reprendront telle quelle. Divergence de 1962-1965 entre la Banque mondiale et la série des
+  Nations unies, et taux de 1970 : à départager sur pièces (rapports annuels de la BCT,
+  mémorandums de la Banque mondiale de 1978 et 1985 — `docs/pib-croissance-volume.md` de
+  l'entrepôt). Étiquettes à corriger :
+  `masse-salariale-ratios` (`base_pib: 2015`), `irpp-ratios` (`pib_cnat_MDT`, 2012-2014),
+  `masse-salariale-reconciliation` (« base 2010 »).
+- **Bibliographie.** `undata-sna` et `wb-wdi` ne sont que dans `retraites/references.json` :
+  les citations de la page se résolvent, mais l'onglet « Sources » de la figure, qui ne lit que
+  le fonds commun, affiche ces deux clés sans titre ni lien. À remonter au fonds commun (voir le
+  `TODO (bibliographe)` de la page).
+- **Arabe.** La page arabe n'existe pas encore ; les libellés arabes de la figure sont dans le
+  module et sont à relire avec la traduction de la page (« سلسلة مسلسلة » pour la série
+  enchaînée, « موصولة دون تصحيح » pour la série accolée, repris du catalogue de l'entrepôt).
 
 **Reste non établi** (note, § 5, L1 à L9) : comptes d'avant la base 1983, date d'entrée en
 service de celle-ci et profondeur de son recalcul ; CD de l'édition 2005-2009 ; méthode du

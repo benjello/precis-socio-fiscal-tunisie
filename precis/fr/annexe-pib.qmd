@@ -8,6 +8,7 @@ format:
     toc-depth: 3
     toc-title: "Sommaire"
     tbl-cap-location: top
+    fig-cap-location: top
 bibliography:
   - references.json
   - retraites/references.json
@@ -16,6 +17,8 @@ csl: precis.csl
 crossref:
   tbl-title: "Tableau"
   tbl-prefix: "tableau"
+  fig-title: "Figure"
+  fig-prefix: "figure"
   title-delim: " —"
 ---
 
@@ -24,7 +27,7 @@ crossref:
 <!-- Identifiants STABLES de cette page, auxquels les volumes renvoient (ne pas les renommer, ne pas les traduire) :
      #sec-pib-pourquoi, #sec-pib-definition, #sec-pib-bases, #pib-base-1983, #pib-base-1997, #pib-base-2015,
      #pib-annee-de-prix, #sec-pib-ecarts, #pib-ecart-1983-1997, #pib-ecart-1997-2015, #pib-ecart-ratio,
-     #sec-pib-retropolation, #pib-series-accolees, #sec-pib-sources, #sec-pib-ruptures, #sec-pib-lire.
+     #sec-pib-retropolation, #pib-series-accolees, #pib-croissance-longue-periode, #fig-pib-bases, #pib-croissance-volume, #fig-pib-volume, #sec-pib-sources, #sec-pib-ruptures, #sec-pib-lire.
      Matière : docs/notes/annexe-pib.md. -->
 
 ## Pourquoi cette annexe {#sec-pib-pourquoi}
@@ -55,7 +58,7 @@ L'INS ne reconnaît que trois bases : « Depuis son instauration dans les année
 
 ### L'année des prix n'est pas une base {#pib-annee-de-prix}
 
-Les comptes sont aussi publiés en volume, c'est-à-dire aux prix d'une année de référence, pour mesurer la croissance hors variation des prix. Cette **année de prix** change plus souvent que la base, et elle ne modifie pas le PIB aux prix courants. Quatre années de prix se rencontrent dans les sources : 1990, 2005, 2010 et 2015.
+Les comptes sont aussi publiés en volume, c'est-à-dire aux prix d'une année de référence, pour mesurer la croissance hors variation des prix. Cette **année de prix** change plus souvent que la base, et elle ne modifie pas le PIB aux prix courants. Quatre années de prix se rencontrent dans les sources depuis la base 1983 : 1990, 2005, 2010 et 2015 ; les séries plus anciennes sont aux prix de 1966, 1972 et 1980 (@fig-pib-volume).
 
 | Année de prix | Base des comptes à laquelle elle appartient | Où elle est attestée |
 |---|---|---|
@@ -133,7 +136,7 @@ La note résume l'ensemble : « peu de changements conceptuels, […] quasi main
 
 Une année publiée dans deux bases a deux PIB. Ces années de recouvrement mesurent ce que le changement de base fait au niveau : treize années pour le passage de la base 1983 à la base 1997, huit pour le passage de la base 1997 à la base 2015.
 
-<!-- TODO (rédacteur) : figure des niveaux par base quand la série du PIB par base sera versée dans l'entrepôt -->
+La première vue de la @fig-pib-bases trace ces niveaux, base par base, avec leurs années de recouvrement.
 
 ### De la base 1983 à la base 1997 : 1997-2009 {#pib-ecart-1983-1997}
 
@@ -257,6 +260,85 @@ Du côté des sources extérieures, la série du PIB en monnaie nationale de la 
 
 Ces pourcentages mesurent l'écart entre les deux niveaux du PIB à la jonction, non un taux de croissance : ils s'ajoutent, cette année-là, à la croissance du PIB.
 
+### La croissance sur longue période : publier, recalculer, enchaîner {#pib-croissance-longue-periode}
+
+La @fig-pib-bases réunit en trois vues ce qui précède : les niveaux de chaque base, sur les années que l'INS a publiées ou recalculées ; la croissance calculée à l'intérieur de chaque base ; et deux façons de faire une série longue, accoler les bases ou les enchaîner. Toutes les grandeurs y sont aux prix courants : la croissance tracée est celle du PIB nominal ; la croissance en volume est à la @fig-pib-volume.
+
+```{python}
+#| label: fig-pib-bases
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_pib
+import figtools
+figtools.figure_tabs(
+    annexe_pib.vues_bases(), annexe_pib.table_bases(),
+    "pib-courant-enchaine", "pib-croissance-par-base", "pib-courant-recouvrements",
+    slug="fig_pib_bases",
+    caption=("Le PIB aux prix courants sur longue période : niveaux et croissance base par "
+             "base, série accolée et série enchaînée, 1961-2025"),
+    note_lecture=(
+        "Tout est aux prix courants ; les niveaux et l'indice sont en échelle logarithmique, "
+        "où un même écart en pourcentage occupe partout la même hauteur. Une base garde sa "
+        "couleur et sa marque d'une vue à l'autre ; une marque creuse et un trait fin "
+        "signalent une valeur rétropolée par l'INS, qui n'a recalculé la base 1997 que "
+        "jusqu'en 1997 et la base 2015 que jusqu'en 2010. Les niveaux ne se comparent pas "
+        "d'une base à l'autre : les traits verticaux marquent les deux jonctions des séries "
+        "accolées, avec l'écart de niveau de l'année. Dans la deuxième vue, les années "
+        "connues dans deux bases sont sur fond gris, et les taux de 1962 à 1992 sont "
+        "calculés sur la série de la Banque mondiale, dont la base n'est pas dite. Dans la "
+        "troisième, "
+        "les croix rouges sont les deux taux faux de la série accolée. La série enchaînée est "
+        "une construction du précis, à fin d'illustration : elle préserve les taux de "
+        "croissance, pas les niveaux ni les structures, ne remplace pas une rétropolation et "
+        "ne sert de dénominateur à aucun ratio du précis."),
+)
+```
+
+**D'une base à l'autre, les niveaux s'écartent, les taux de croissance beaucoup moins.** Sur les années connues dans deux bases, les deux taux diffèrent en moyenne de 0,36 point entre la base 1983 et la base 1997 (1998-2009), avec un maximum de 1,32 point en 2007 (10,28 % et 8,96 %), et de 0,21 point entre la base 1997 et la base 2015 (2011-2017), sans dépasser 0,49 point.
+
+**La série accolée porte deux taux qui ne mesurent pas la croissance.** En 1997, elle passe de 19 066,0 MD en base 1983 à 22 943,9 MD en base 1997, soit + 20,34 % en apparence, alors que le PIB croît de 9,61 % dans la base 1983 et que le changement de base relève le niveau de 9,79 %. En 2010, elle passe de 58 677,2 MD en base 1997 à 66 139,7 MD en base 2015, soit + 12,72 %, pour une croissance de 7,46 % dans la base 1997 et un relèvement de 4,89 %.
+
+**La série enchaînée évite ces deux sauts, sans devenir une rétropolation.** Elle vaut 100 en 2015 et se déduit, année après année, du taux de croissance de la base la plus récente qui porte à la fois l'année et la précédente ; aux deux jonctions, le taux est donc celui de l'ancienne base. C'est une construction du précis, non une donnée de l'INS. Elle conserve les taux de croissance, mais ni les niveaux ni les structures : elle reporte sur toutes les années antérieures l'écart de l'année de jonction — + 4,89 % en 2010, + 9,79 % en 1997 —, alors que les écarts observés varient d'une année à l'autre ([tableaux des écarts](#sec-pib-ecarts)). Elle ne sert de dénominateur à aucun ratio du précis.
+
+### La croissance en volume {#pib-croissance-volume}
+
+Un taux de croissance en volume dépend de deux choses distinctes : la base des comptes et l'[année de prix](#pib-annee-de-prix), c'est-à-dire l'année dont les prix valorisent le volume — une année fixe (1966, 1972, 1980, 1990) dans les séries anciennes, l'année précédente dans les bases 1997 et 2015. Un taux ne se calcule jamais entre deux séries, deux bases ni deux années de prix. La @fig-pib-volume rassemble tous les taux disponibles, de 1961 à 2025, en séparant deux familles de sources : les comptes tunisiens — les éditions des *Comptes de la nation* et le classeur de l'INS, et les séries que l'INS a transmises aux Nations unies — et la Banque mondiale, source extérieure.
+
+```{python}
+#| label: fig-pib-volume
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../scripts")
+from figures import annexe_pib
+import figtools
+figtools.figure_tabs(
+    annexe_pib.vues_volume(), annexe_pib.table_volume(),
+    "pib-croissance-volume", "pib-volume-enchaine", "pib-courant-enchaine",
+    slug="fig_pib_volume", nominal=False,
+    caption=("La croissance du PIB en volume selon les sources, les bases et les années de "
+             "prix, et l'indice de volume enchaîné, 1961-2025"),
+    note_lecture=(
+        "Un taux en volume dépend de la base des comptes et de l'année de prix, qui ne sont "
+        "pas la même chose. Les ronds sont les taux des comptes tunisiens, de la couleur de "
+        "leur base (brun quand la source ne dit pas sa base) ; les croix grises, ceux de la "
+        "Banque mondiale. Le trait relie le taux retenu chaque année pour l'indice enchaîné. "
+        "Chaque trait vertical marque une jonction de cet indice et dit ce qui change : la "
+        "base, l'année de prix, la série ou seulement la source. Le fond gris signale "
+        "1962-1965, où les deux familles de sources divergent. Dans la seconde vue, l'écart "
+        "entre les deux indices est ce que la hausse des prix ajoute à la croissance du "
+        "volume. L'indice enchaîné est une construction du précis, à fin d'illustration : il "
+        "préserve les taux de croissance, pas les niveaux ni les structures, et ne sert de "
+        "dénominateur à aucun ratio du précis."),
+)
+```
+
+**Les comptes tunisiens s'accordent entre eux.** Dans une même base, les éditions de l'INS et les séries transmises aux Nations unies diffèrent de 0,02 à 0,05 point en moyenne. D'une base à l'autre, l'écart reste faible, comme aux prix courants : 0,12 point en moyenne entre la base 1997 et la base 1983 de 1998 à 2009, avec un maximum de 0,39 point en 2000, et de 0,0 à 0,3 point entre la base 2015 et la base 1997 de 2010 à 2017.
+
+**La Banque mondiale s'en écarte sur quelques périodes.** Ses taux sont identiques à ceux des comptes tunisiens de 1991 à 1997 et, à une année près, de 1971 à 1985 ; ils s'en éloignent de 1,3 point en moyenne de 1986 à 1990. De 1962 à 1965, les deux familles de sources divergent de 6 à 22 points : la Banque mondiale donne − 4,6 %, − 10,7 %, − 4,7 % et − 2,5 %, la série transmise aux Nations unies + 1,6 %, + 11,0 %, + 3,8 % et + 3,8 %. Les métadonnées de la Banque mondiale n'en donnent pas l'explication.
+
+**L'indice de volume enchaîné est, comme la série enchaînée aux prix courants, une illustration.** Il vaut 100 en 2015 et retient pour chaque année un seul taux : celui de l'INS dans la base la plus récente, à défaut celui que l'INS a transmis aux Nations unies, et pour la seule année 1970, qui n'a aucun taux d'origine tunisienne, celui de la Banque mondiale (+ 4,67 %). Il chaîne ainsi des taux de sept combinaisons de base et d'année de prix. C'est une construction du précis, non une donnée de l'INS ; il n'a pas de niveau en dinars et ne sert de dénominateur à aucun ratio.
+
 ## Quel PIB dans quelle source {#sec-pib-sources}
 
 Les deux tableaux qui suivent séparent les institutions tunisiennes, qui produisent ou emploient les comptes, des organisations extérieures, qui les publient à leur tour. Quand une source ne nomme pas sa base, le tableau le dit et indique à quelle base ses valeurs coïncident.
@@ -319,7 +401,7 @@ Les métadonnées que la Banque mondiale attache à la Tunisie déclarent 2015 p
 Quand une figure ou un tableau rapporte une grandeur au PIB, le précis suit cinq règles :
 
 1. **La base est nommée.** La légende ou la note dit dans quelle base est le PIB, et s'il est recalculé pour le passé ; quand il ne l'est pas, ou quand la source ne précise pas sa base, elle le dit.
-2. **Les séries sont tracées par segments de base, jamais chaînées.** Aucun raccord n'est calculé entre deux bases : l'écart entre elles n'étant pas constant, un coefficient de passage fabriquerait des valeurs qu'aucune source ne publie.
+2. **Les séries sont tracées par segments de base, jamais chaînées.** Aucun raccord n'est calculé entre deux bases pour rapporter une grandeur au PIB : l'écart entre elles n'étant pas constant, un coefficient de passage fabriquerait des valeurs qu'aucune source ne publie. La série enchaînée de la @fig-pib-bases n'y déroge pas : elle illustre la croissance sur longue période et ne sert de dénominateur à aucun ratio.
 3. **Le changement de base est marqué.** Un trait vertical signale l'année où la série change de base ; la légende renvoie à cette annexe.
 4. **Une année publiée dans deux bases porte deux points**, chacun rapporté au PIB de sa propre base.
 5. **Une part qui ne dépend d'aucune base est donnée à côté**, quand la grandeur s'y prête : la part dans les dépenses de l'État, par exemple, ne fait intervenir aucun PIB et traverse les changements de base sans rupture.
