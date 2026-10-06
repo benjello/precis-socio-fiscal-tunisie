@@ -96,30 +96,47 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
     réintroduction en plénière) : presse seulement, hors du corps faute de pièce de l'ARP
     ou du CNRD.
 - **Dépenses fiscales et régimes d'incitation (`_depenses_fiscales.qmd`, chapitre créé le
-  6 octobre 2026)** sur la note `docs/notes/fiscalite-depenses-fiscales.md`, seule matière du
-  chapitre. Écrit : lois d'avant 1993 (quatre intitulés) ; code de 1993 (art. 7, 9, 10, 12,
-  14, 16, 22, 23, 25, 30) ; imposition de l'exportation votée en 2006 et ses quatre reports ;
-  lois n° 2016-71 et n° 2017-8 ; abrogation du régime de l'exportation (LF 2019) ; coût
-  (estimations d'auteurs avant 2017, agrégats des rapports annexés aux PLF 2021 à 2025) ;
-  bénéficiaires (rapport PLF 2021, Banque mondiale 2014). Disponibilités ci-dessous
-  contrôlées le 6 octobre 2026 (présence du fichier, `pdftotext` sur le fascicule entier) ;
-  la page de l'article n'a pas été ouverte. Restent :
+  6 octobre 2026, repris le même jour après relecture)** sur la note
+  `docs/notes/fiscalite-depenses-fiscales.md`, seule matière du chapitre (§ 10 pour la
+  reprise). Écrit : code de 1969, loi n° 72-38 décrite en entier et ce en quoi elle rompt,
+  loi n° 74-74 ; code de 1993 (objet, abrogations, plan par objectif, art. 7, 9, 10, 12, 14,
+  16, 20, 22, 23, 25, 30) ; imposition de l'exportation votée en 2006 et ses quatre reports ;
+  lois n° 2016-71 et n° 2017-8 ; abrogation du régime de l'exportation (LF 2019) ; coût et
+  bénéficiaires en deux blocs séparés — évaluations du ministère des Finances (méthode du
+  rapport PLF 2021, agrégats 2019-2023, par impôt, bénéficiaires, avantages financiers) et
+  études extérieures (Banque mondiale 2014, diaporama de septembre 2014, OCDE 2013,
+  estimations antérieures), chacune avec sa méthode. Disponibilités ci-dessous contrôlées le
+  6 octobre 2026 (présence du fichier, `pdftotext` sur le fascicule entier) ; la page de
+  l'article n'a pas été ouverte. Restent :
   - **AR** : déclarer `_depenses_fiscales.qmd` dans `precis/ar/fiscalite/_quarto.yml`
     (ligne commentée en place, après `_droits_consommation.qmd`) dès que la traduction est
     livrée ;
-  - **régimes d'avant 1993 — OCR** : taux, durées et dates d'effet non établis, seuls les
-    intitulés sont connus. Les onze fascicules français sont présents au corpus, couche
-    texte vide : `1969/fr/Jo02469.pdf` (loi n° 69-35), `1972/fr/Jo01772.pdf` (n° 72-38),
-    `1974/fr/Jo05174.pdf` (n° 74-74), `1976/fr/Jo04676.pdf` (n° 76-63),
-    `1981/fr/Jo04481.pdf` (n° 81-56), `1982/fr/Jo05482.pdf` (n° 82-67),
-    `1985/fr/Jo07385.pdf` (décret-loi n° 85-14), `1987/fr/Jo05687.pdf` (n° 87-51),
-    `1988/fr/Jo02388.pdf` (n° 88-18), `1990/fr/Jo02190.pdf` (n° 90-21),
-    `1992/fr/Jo05292.pdf` (n° 92-81). Priorité : 1972 et 1987. Sept de ces textes n'ont pas
-    de clé CSL (TODO bibliographe au chapitre) ;
-  - **code de 1993 — OCR** : `1993/fr/Jo09993.pdf` présent, couche texte vide ; date
-    d'entrée en vigueur (loi de promulgation, p. 2174) et dernière page du code à relever
-    sur l'image ; terme de la déduction de 50 % des exportateurs entre 1993 et 2006 non
-    établi (le texte qui l'aurait posé n'est pas localisé) ;
+  - **clés à verser (bibliographe)** : loi n° 69-35 (JORT n° 24 de 1969, p. 766-769) et loi
+    n° 74-74 (JORT n° 51 de 1974, p. 1744-1746), citées en clair au chapitre faute de clé ;
+    ébauches au § 10.1 e de la note ;
+  - **loi n° 72-38** : date d'entrée en vigueur (aucune clause) et texte qui l'a abrogée non
+    établis ; motifs, nombre d'entreprises agréées, effets sur l'emploi et l'exportation :
+    aucune source, rien n'est écrit ;
+  - **textes de 1976 à 1992 — OCR** : taux, durées et dates d'effet non établis, seuls les
+    intitulés sont connus ; la chaîne 1974 → 1981 → 1987 → 1993 du régime du marché intérieur
+    n'est pas établie. Fascicules français présents au corpus, couche texte vide :
+    `1976/fr/Jo04676.pdf` (n° 76-63), `1981/fr/Jo04481.pdf` (n° 81-56),
+    `1982/fr/Jo05482.pdf` (n° 82-67), `1985/fr/Jo07385.pdf` (décret-loi n° 85-14),
+    `1987/fr/Jo05687.pdf` (n° 87-51), `1988/fr/Jo02388.pdf` (n° 88-18),
+    `1990/fr/Jo02190.pdf` (n° 90-21), `1992/fr/Jo05292.pdf` (n° 92-81). Priorité : 1985 et
+    1987 (sort de la loi de 1972). Cinq n'ont pas de clé CSL ;
+  - **code de 1993 — OCR** : `1993/fr/Jo09993.pdf` présent, couche texte vide ; pas de
+    clause générale d'entrée en vigueur : date du dépôt du JORT n° 99 à établir ; intitulés
+    des titres VII à X et nombre d'articles à contrôler sur la page (p. 2179-2181) ; terme
+    de la déduction de 50 % des exportateurs entre 1993 et 2006 non établi ;
+  - **méthode des rapports PLF 2022 à 2025** : non établie (introduction et table des
+    matières seules) ; données employées par le ministère non décrites dans le rapport 2021 ;
+  - **crédits budgétaires** des primes et des prises en charge de cotisations : non relevés
+    (fonds spéciaux du Trésor, budgets par mission, lois de règlement, comptes du Fonds
+    tunisien de l'investissement — à obtenir) ; le chapitre ne publie que les paiements
+    déclarés du rapport PLF 2021 ;
+  - **études extérieures** : étude IFC-ECOPA de 2012 et annexes 4.2 à 4.6 du rapport de la
+    Banque mondiale (échantillon de l'enquête, sources fiscales) à obtenir ;
   - **calendrier de 2014 — lisible** : LF 2015 (loi n° 2014-59), art. 18, « mesures de
     soutien des entreprises totalement exportatrices », `2014/fr/Jo1052014.pdf` ; à ouvrir
     pour confirmer qu'aucun texte n'a touché à l'échéance du 1er janvier 2014. LF 2014,
@@ -144,14 +161,14 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
     (rapports 2024 et 2025) ; cause non établie, à lire dans les rapports 2023 et 2024. Les
     deux ratios du rapport 2021 pour 2019 (16,3 % et 19,15 % des ressources fiscales) sont
     signalés au chapitre ; le dénominateur de l'introduction reste à établir ;
-  - **à vérifier sur les rapports** : décomptes de dispositifs valorisés (243/347 ; 37/57 ;
-    34/63) et sommes par impôt de 2020 et 2021, tenus de la série traitée ; répartition par
+  - **à vérifier sur les rapports** : décomptes de dispositifs valorisés par impôt (37/57 ;
+    34/63, rapport 2025) et sommes par impôt de 2020 et 2021, tenus de la série traitée ; répartition par
     impôt 2020-2023 et par secteur 2017-2019 (tableau n° 6 du rapport 2021, relevé pour 2019
     seulement) non publiées ; ventilation par gouvernorat et délégation (loi n° 2017-8,
     art. 18) : présence dans les rapports non vérifiée ;
   - **avant 2017** : aucune série homogène ; sources premières des estimations (OMC 2001,
-    FMI 2005 et 2012, Ghazouani 2011, IFC-ECOPA 2012) à obtenir ; figures 4.1 et 4.4 du
-    rapport de la Banque mondiale à relever sur l'image ;
+    FMI 2005 et 2012, Ghazouani 2011) à obtenir ; figures 4.1 et 4.4 du rapport de la Banque
+    mondiale à relever sur l'image ;
   - **à croiser avec « Cotisations sociales »** : coût des prises en charge de cotisations
     patronales (code de 1993, art. 25 ; loi n° 99-59, connue par son intitulé).
 - **Forme de `_impot_revenu.qmd` : rien à reprendre.** Ses titres ont été remontés d'un cran
