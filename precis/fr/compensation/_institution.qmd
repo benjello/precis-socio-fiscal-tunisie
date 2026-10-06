@@ -95,7 +95,7 @@ Ce qui pèse sur le budget de l'État n'est donc pas la charge, mais la dotation
 | 1984 | 260,0 | 137,4 | 98,0 | | | [@bct-ra-1984, p. 153 ; @bct-ra-1985, p. 75-76] |
 | 1985 | 265,0 | 138,4 | 83,0 | | | [@bct-ra-1985, p. 76 ; @bct-ra-1986, p. 76] |
 | 1986 | 218,0 | 135,0 | 68,0 | 2,8 | | [@bct-ra-1986, p. 76 ; @bct-ra-1988, p. 69] |
-| 1987 | 195,8 | — | 189,0 | 8,2 | −7 | BCT, rapport annuel 1987, p. 71 ; [@bct-ra-1988, p. 69] |
+| 1987 | 195,8 | — | 189,0 | 8,2 | −7 | [@bct-ra-1987, p. 71] ; [@bct-ra-1988, p. 69] |
 | 1988 | 274,4 | | | | | [@bct-ra-1988, p. 69] |
 | 1989 | 378,0 | | | | | [@bct-ra-1989, p. 75] |
 | 1990 | 317,0 | | | | | [@bct-ra-1991, p. 90] |
@@ -105,7 +105,7 @@ Ce qui pèse sur le budget de l'État n'est donc pas la charge, mais la dotation
 | 1994 | 304,0 | 19,0 | 230,0 | 5,4 | −55 | [@bct-ra-1994, p. 82-83] |
 | 1995 | 342,8 | 25,8 | 215,0 | 4,7 | −85 | [@bct-ra-1995, p. 77-78] |
 | 1996 | 436,4 | 13,0 | 230,0 | 4,7 | −191 | [@bct-ra-1996, p. 95 ; @bct-ra-2001, p. 96] |
-| 1997 | 370,6 | 28,0 | 320,0 | 6,1 | −23 | BCT, rapport annuel 1997, p. 91 ; [@bct-ra-2002, p. 94] |
+| 1997 | 370,6 | 28,0 | 320,0 | 6,1 | −23 | [@bct-ra-1997, p. 91] ; [@bct-ra-2002, p. 94] |
 | 1998 | 332,9 | 28,0 | 320,0 | 5,7 | +12 | [@bct-ra-1998 ; @bct-ra-2003, p. 100] |
 | 1999 | 204,5 | 2,0 | 235,0 | 3,8 | +31 | [@bct-ra-1999 ; @bct-ra-2004] |
 | 2000 | 225,3 | | | | | [@bct-ra-2005, p. 101] |
@@ -122,8 +122,6 @@ Ce qui pèse sur le budget de l'État n'est donc pas la charge, mais la dotation
 | 2011 | 1 149,6 | | | | | [@bct-ra-2011, p. 37] |
 
 : Le compte de la Caisse générale de compensation, 1984-2011 (millions de dinars courants). Source : rapports annuels de la BCT, qui relaient les chiffres de l'administration ; chaque année est donnée dans le rapport le plus récent qui la porte. La part des dépenses de l'État rapporte la dotation aux dépenses de l'État hors service de la dette, connues depuis 1986 ; elle ne dépend d'aucune base des comptes nationaux. Une case vide est une valeur que les rapports ne donnent pas ; le tiret de 1987 marque la fin des recettes propres individualisées. Les charges de 1984, 1985, 1989, 1990 et 1991 sont arrondies par la source ; le déficit de 1996 est une estimation. En 2007, la dotation réunit 313 MD prévus en loi de finances et 285 MD de dotation supplémentaire ; en 2010, 146 MD de la dotation sont reportés sur 2011. S'y ajoutent, hors tableau, 8 MD en 1984 et 7 MD en 1985 et 1986 prélevés sur la contribution exceptionnelle de solidarité, et 17 MD de papier scolaire pris en charge par le Centre national pédagogique en 1995. {#tbl-compensation-compte-caisse}
-
-<!-- TODO (bibliographe) : les rapports annuels de la BCT pour 1987 et 1997 n'ont pas de clé (bct-ra-1987, bct-ra-1997) : ils portent la dotation de 189 MD de 1987 et la citation sur la loi de finances pour 1987 (p. 71), la dotation de 320 MD, les recettes propres et le déficit de 1997 (p. 91). Les verser, puis remplacer les deux mentions en clair du tableau tbl-compensation-compte-caisse et celle de la section sec-compensation-1987. -->
 
 <!-- TODO (figures) : fig-compensation-compte-caisse — le compte de la Caisse, 1984-2011 : charges, recettes propres, dotation du budget, solde, avec la rupture de 1987 marquée ; seconde vue : dotation en % des dépenses de l'État hors service de la dette. Série de l'entrepôt : compensation-compte-caisse. Remplacera le tableau tbl-compensation-compte-caisse, à replier alors. -->
 
@@ -225,7 +223,7 @@ cm.tableau_recettes_affectees(
 
 ## 1987 : les recettes de la Caisse entrent au budget {#sec-compensation-1987}
 
-La rupture la plus forte du compte ne tient pas à son coût. Le rapport annuel de la Banque centrale pour 1987 l'énonce ainsi : « Aux termes de la loi de finances de 1987, les recettes fiscales et para-fiscales destinées à la Caisse générale de compensation ne sont plus individualisées mais intégrées au budget de l'État. Ce dernier a alloué à la Caisse une dotation budgétaire fixée à 189 millions de dinars ». La dotation passe de 68 MD en 1986 à 189 MD en 1987, alors que les charges baissent, de 218,0 MD à 195,8 MD (@tbl-compensation-compte-caisse).
+La rupture la plus forte du compte ne tient pas à son coût. Le rapport annuel de la Banque centrale pour 1987 l'énonce ainsi [@bct-ra-1987, p. 71] : « Aux termes de la loi de finances de 1987, les recettes fiscales et para-fiscales destinées à la Caisse générale de compensation ne sont plus individualisées mais intégrées au budget de l'État. Ce dernier a alloué à la Caisse une dotation budgétaire fixée à 189 millions de dinars ». La dotation passe de 68 MD en 1986 à 189 MD en 1987, alors que les charges baissent, de 218,0 MD à 195,8 MD (@tbl-compensation-compte-caisse).
 
 Le saut de 1987 est donc un changement de mode de financement, non de coût : les taxes qui alimentaient la Caisse — la taxe unique sur les carburants en tête — deviennent des recettes du budget général, et la Caisse reçoit en retour une dotation qui couvre presque toutes ses charges. La compensation devient, à cette date, une dépense du budget de l'État pour l'essentiel de son montant. La loi de finances pour 1987 elle-même n'est pas citée ici dans sa lettre ; et le texte qui a ensuite retiré la Caisse des fonds spéciaux du Trésor n'est pas identifié ici.
 

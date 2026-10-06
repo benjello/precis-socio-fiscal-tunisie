@@ -1788,7 +1788,7 @@
       "note": "citation-key: arrete-1991-02-05-prix-petroliers\nJORT n° 16. Effet le 5 février 1991 : super 530, normale 490, pétrole lampant 180, gas-oil 310 ; GPL 13 kg : 3,500 D ; art. 9 : plus-value de réévaluation des stocks affectée à la Caisse générale de compensation. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé lu au sommaire du fascicule (OCR)."
     },
     {
-      "id": "arrete-1992-07-10-prix-essence-sans-plomb",
+      "id": "arrete-1992-07-10-prix-petroliers",
       "type": "legislation",
       "title": "Arrêté du ministre de l'économie nationale du 10 juillet 1992 fixant le prix limite de vente de l'essence sans plomb utilisée comme carburant",
       "container-title": "Journal officiel de la République tunisienne",
@@ -1805,10 +1805,10 @@
       "title-short": "Arrêté du 10 juillet 1992 (prix de l'essence sans plomb)",
       "page": "925-926",
       "URL": "https://www.pist.tn/jort/1992/1992F/Jo04892.pdf",
-      "note": "citation-key: arrete-1992-07-10-prix-essence-sans-plomb\nJORT n° 48. Premier prix de l'essence sans plomb : 580 millimes le litre « à la pompe », effet le 1er juillet 1992. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; objet lu au sommaire du fascicule (OCR) ; l'OCR lit « 16 juillet » : date de signature 10 juillet prise de la notice et de la note documentaire, à relire à l'image."
+      "note": "citation-key: arrete-1992-07-10-prix-petroliers\nJORT n° 48. Premier prix de l'essence sans plomb : 580 millimes le litre « à la pompe », effet le 1er juillet 1992. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; objet lu au sommaire du fascicule (OCR) ; l'OCR lit « 16 juillet » : date de signature 10 juillet prise de la notice et de la note documentaire, à relire à l'image."
     },
     {
-      "id": "arrete-1992-08-18-prix-gpl",
+      "id": "arrete-1992-08-18-prix-petroliers",
       "type": "legislation",
       "title": "Arrêté du ministre de l'économie nationale du 18 août 1992 fixant le prix des gaz du pétrole liquéfiés",
       "container-title": "Journal officiel de la République tunisienne",
@@ -1825,7 +1825,7 @@
       "title-short": "Arrêté du 18 août 1992 (prix du GPL)",
       "page": "1125",
       "URL": "https://www.pist.tn/jort/1992/1992F/Jo05792.pdf",
-      "note": "citation-key: arrete-1992-08-18-prix-gpl\nJORT n° 57. Bouteille de 13 kg : 3,800 D, effet le 4 août 1992 ; valeur lue par OCR seul, non relue à l'image, confirmée par l'arrêté de 1993. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé lu au sommaire du fascicule (OCR)."
+      "note": "citation-key: arrete-1992-08-18-prix-petroliers\nJORT n° 57. Bouteille de 13 kg : 3,800 D, effet le 4 août 1992 ; valeur lue par OCR seul, non relue à l'image, confirmée par l'arrêté de 1993. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé lu au sommaire du fascicule (OCR)."
     },
     {
       "id": "arrete-1993-10-26-prix-petroliers",
@@ -3004,6 +3004,403 @@
       },
       "title-short": "BCT, Rapport d'activité 1980",
       "note": "citation-key: bct-ra-1980\n22ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 22 de la BCT (catalogue « Rapport Annuel, n° 22 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 14 594 876 octets, 235 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1980.pdf, SHA-256 8a4113ad36a28b8973b57504f2503dea1a129380d799789e5b39d434fa890474, ignorée par git). Utilisé par la note documentaire compensation-avant-1970-et-plans pour : déficit cumulé de la Caisse générale de compensation, près de 125 MD ; prêt du Trésor de 95 MD (couche texte, p. PDF 107) ; numéros de page calculés sur la couche texte, à confirmer à l'ouverture. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1987",
+      "type": "report",
+      "title": "29ème Rapport d'activité. Exercice 1987",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1987.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1987",
+      "note": "citation-key: bct-ra-1987\n29ème Rapport d'activité : couverture lue à l'image (« 29ème RAPPORT D'ACTIVITE, Exercice 1987 »), le 6 octobre 2026. Rapport n° 29 de la BCT (catalogue « Rapport Annuel, n° 29 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 12 457 584 octets, 186 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1987.pdf, SHA-256 7e38ed47793895ecab381d366f0992fb3b2adcbed5c71d8f44e8387f82bebc0f, ignorée par git). Lu à l'image (par l'agent des séries) : p. 71 imprimée (67e page du PDF) : « Aux termes de la loi de finances de 1987, les recettes fiscales et para-fiscales destinées à la Caisse générale de compensation ne sont plus individualisées mais intégrées au budget de l'État » et dotation budgétaire de 189 MD ; seule source de la rupture de 1987. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-1997",
+      "type": "report",
+      "title": "39ème Rapport annuel. Année 1997",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1997.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 1997",
+      "note": "citation-key: bct-ra-1997\n39ème Rapport annuel : lettre introductive lue à l'image (« Lettre introductive au 39ème Rapport annuel … en 1997 », « trente-neuvième rapport annuel … relatif à l'année 1997 »), le 6 octobre 2026. Rapport n° 39 de la BCT (catalogue « Rapport Annuel, n° 39 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 15 658 576 octets, 226 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1997.pdf, SHA-256 0ac7b885e36cc4b4b920d508786e8d66e6fc29f8435228d11159a92d04de6b35, ignorée par git). Lu à l'image (par l'agent des séries) : p. 91 imprimée (97e page du PDF) : dotation de 320 MD, recettes propres et déficit de la Caisse en 1997. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "bct-ra-2000",
+      "type": "report",
+      "title": "42ème Rapport annuel. Année 2000",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "publisher": "Banque centrale de Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_2000.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "BCT, Rapport annuel 2000",
+      "note": "citation-key: bct-ra-2000\n42ème Rapport annuel : lettre introductive lue à l'image (« Lettre introductive au 42ème Rapport annuel … en 2000 », « quarante-deuxième rapport annuel »), le 6 octobre 2026. Rapport n° 42 de la BCT (catalogue « Rapport Annuel, n° 42 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 17 782 930 octets, 244 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_2000.pdf, SHA-256 8c72f5b9758f08489ba3ff881f2cc521f14841d16afa7cce6fbee12ca5fd29e4, ignorée par git). Lu à l'image (par l'agent des séries) : p. 101 imprimée (108e page du PDF) : prévisions initiales de 256 MDT du budget économique pour les produits de base. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "decret78-316",
+      "type": "legislation",
+      "title": "Décret n° 78-316 du 23 mars 1978 portant modification du montant de la taxe unique de compensation perçue sur certains produits pétroliers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "23",
+      "issued": {
+        "date-parts": [
+          [
+            1978,
+            3,
+            23
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1978/1978F/Jo02378.pdf",
+      "title-short": "Décret n° 78-316 du 23 mars 1978",
+      "page": "817",
+      "note": "citation-key: decret78-316\nJORT n° 23 des 21-24 mars 1978 (date de publication de jort_cache : 21 mars). Taxe unique de compensation sur certains produits pétroliers portée de 6,150 à 7,120 D/hl, le même jour que l'arrêté du 23 mars 1978 sur les prix (JORT n° 23, pp. 817-818). Preuve : contenu lu à l'image (note documentaire compensation-prix-carburants) ; intitulé relu au sommaire du fascicule par OCR le 6 octobre 2026."
+    },
+    {
+      "id": "minenergie-opendata-prix-vente-petroliers",
+      "type": "dataset",
+      "title": "Prix de vente des produits pétroliers [moyennes annuelles pondérées, 1990-2016]",
+      "author": [
+        {
+          "literal": "Ministère de l'Industrie, de l'Énergie et des Mines, direction générale de l'énergie"
+        }
+      ],
+      "publisher": "Ministère de l'Industrie, de l'Énergie et des Mines",
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            2,
+            15
+          ]
+        ]
+      },
+      "URL": "http://web.archive.org/web/20191029192123/http://catalog.industrie.gov.tn:80/dataset/63fe3962-976a-4309-ab1b-f3424ad63402/resource/2d6eab8e-f705-49b7-a05f-e49566c18e4f/download/prixdeventedesproduitspetroliers.csv",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://catalog.industrie.gov.tn:80/dataset/63fe3962-976a-4309-ab1b-f3424ad63402/resource/2d6eab8e-f705-49b7-a05f-e49566c18e4f/download/prixdeventedesproduitspetroliers.csv",
+      "title-short": "Ministère de l'énergie, Prix de vente des produits pétroliers (données ouvertes)",
+      "note": "citation-key: minenergie-opendata-prix-vente-petroliers\nPortail de données ouvertes du ministère (catalog.industrie.gov.tn), jeu « TN-Prix de vente des produits péroliers » (sic), organisation « Direction Générale de l'Energie », licence Open Tunisian License, créé le 4 novembre 2014 et modifié le 15 février 2018. Site retiré : le portail du ministère ne répond plus (redirection vers le portail national, dont le certificat ne se vérifie pas) ; consulté dans la capture du 29/10/2019 (horodatage 20191029192123 lu dans le CDX le 6 octobre 2026, original http://catalog.industrie.gov.tn:80/…). Une capture du XLS (valeurs non arrondies) du 22 décembre 2018 existe (horodatage repris de la note documentaire, non relu au CDX). Copie suivie par git dans tunisia-data : data/raw/minenergie/donnees-ouvertes/prix_vente_produits_petroliers_1990-2016.csv (SHA-256 bc2757ec0a7658ec66336da2558c075d2479771dce1d487e8374746e4c692533, identique à la capture) et .xls (SHA-256 9815df4917a6097d645d26fee00a64b7fdeffaece135711a9a02e705afe458e9). Moyennes annuelles pondérées 1990-2016 : essence sans plomb, essence super, gasoil ordinaire, gasoil 50, pétrole lampant, GPL (bouteille). DEUX LIGNES DOUTEUSES, d'après la note documentaire compensation-archives-energie : 2001 est la recopie de 2000 (aucune hausse en 2001 selon le FMI ; le graphique de l'Observatoire porte 710 et 416 en 2001) ; 1990 (480,05 pour l'essence super et 283,50 pour le gasoil) ne concorde ni avec l'arrêté de 1988 (490 et 290, valables en 1989-1990) ni avec le graphique de l'Observatoire. Preuve : fichier de données né numérique, lu intégralement ; contenu identique entre CSV et XLS."
+    },
+    {
+      "id": "presse-wmc-2006-09-07",
+      "type": "webpage",
+      "title": "Pétrole en Tunisie : hausse des prix et baisse de la consommation",
+      "container-title": "WMC",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            9,
+            7
+          ]
+        ]
+      },
+      "URL": "https://www.webmanagercenter.com/2006/09/07/19345/petrole-en-tunisie-hausse-des-prix-et-baisse-de-la-consommation/",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "WMC, 07/09/2006",
+      "note": "citation-key: presse-wmc-2006-09-07\nArticle de presse en ligne, source tertiaire, lu le 6 octobre 2026 (couche texte de la page ; HTTP 200). Tableau « Évolution des prix de vente des carburants au public 2002-2006 », à la suite d'un tableau attribué à l'ANME : seule source des ajustements d'octobre 2002 à avril 2006. Date de publication d'après la note documentaire compensation-prix-carburants-1993-2018, non relue sur la page."
+    },
+    {
+      "id": "presse-kapitalis-2010-12-12",
+      "type": "webpage",
+      "title": "Tunisie. Nouvelle hausse des prix des carburants",
+      "container-title": "Kapitalis",
+      "issued": {
+        "date-parts": [
+          [
+            2010,
+            12,
+            12
+          ]
+        ]
+      },
+      "URL": "https://www.kapitalis.com/archive/191-conso/1980-tunisie-nouvelle-hausse-des-prix-des-carburants.html",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "Kapitalis, 12/12/2010",
+      "note": "citation-key: presse-kapitalis-2010-12-12\nArticle de presse en ligne, source tertiaire, lu le 6 octobre 2026 (couche texte de la page ; HTTP 200). D'après le communiqué du ministère de l'Industrie et de la Technologie : ajustement du 12 décembre 2010. Date de publication d'après la note documentaire compensation-prix-carburants-1993-2018, non relue sur la page."
+    },
+    {
+      "id": "presse-directinfo-2013-03-05",
+      "type": "webpage",
+      "title": "Tunisie : Evolution des prix des l'essence et du gasoil",
+      "container-title": "Directinfo",
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            3,
+            5
+          ]
+        ]
+      },
+      "URL": "https://directinfo.webmanagercenter.com/2013/03/05/tunisie-evolution-des-prix-des-lessence-et-du-gasoil-2009-2013/",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "Directinfo, 05/03/2013",
+      "note": "citation-key: presse-directinfo-2013-03-05\nArticle de presse en ligne, source tertiaire, lu le 6 octobre 2026 (couche texte de la page ; HTTP 200). Niveaux d'essence et de gasoil 2009-2013 (« de 1,320 à 1,270 » en janvier 2009). Date de publication d'après la note documentaire compensation-prix-carburants-1993-2018, non relue sur la page."
+    },
+    {
+      "id": "presse-tekiano-2014-07-03",
+      "type": "webpage",
+      "title": "Tunisie : Liste des nouveaux prix des hydrocarbures à partir du 1er juillet 2014",
+      "container-title": "Tekiano",
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            7,
+            3
+          ]
+        ]
+      },
+      "URL": "https://www.tekiano.com/2014/07/03/tunisie-liste-des-nouveaux-prix-des-hydrocarbures-a-partir-du-1er-juillet-2014/",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "Tekiano, 03/07/2014",
+      "note": "citation-key: presse-tekiano-2014-07-03\nArticle de presse en ligne, source tertiaire, lu le 6 octobre 2026 (couche texte de la page ; HTTP 200). D'après le communiqué du ministère de l'Industrie, de l'Énergie et des Mines : ajustement du 1er juillet 2014. Date de publication d'après la note documentaire compensation-prix-carburants-1993-2018, non relue sur la page."
+    },
+    {
+      "id": "presse-tekiano-2016-01-05",
+      "type": "webpage",
+      "title": "Tunisie: Les Nouveaux prix de l’essence et Gasoil à partir du 06 janvier 2016",
+      "container-title": "Tekiano",
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            5
+          ]
+        ]
+      },
+      "URL": "https://www.tekiano.com/2016/01/05/tunisie-les-nouveaux-prix-de-lessence-et-gasoil-a-partir-du-06-janvier-2016/",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "Tekiano, 05/01/2016",
+      "note": "citation-key: presse-tekiano-2016-01-05\nArticle de presse en ligne, source tertiaire, lu le 6 octobre 2026 (couche texte de la page ; HTTP 200). D'après le communiqué du ministère (essence −20, gasoil 50 −50, gasoil −50, « à partir du mercredi 6 janvier »). Date de publication d'après la note documentaire compensation-prix-carburants-1993-2018, non relue sur la page."
+    },
+    {
+      "id": "presse-webdo-2016-07-14",
+      "type": "webpage",
+      "title": "Tunisie : Baisse des prix du Gasoil et Gasoil 50, l’essence inchangé",
+      "container-title": "Webdo",
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            14
+          ]
+        ]
+      },
+      "URL": "https://web.archive.org/web/20190704075834/http://www.webdo.tn:80/2016/07/14/tunisie-baisse-prix-gasoil-gasoil-50-lessence-inchange/",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "Webdo, 14/07/2016",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.webdo.tn:80/2016/07/14/tunisie-baisse-prix-gasoil-gasoil-50-lessence-inchange/",
+      "note": "citation-key: presse-webdo-2016-07-14\nArticle de presse en ligne, source tertiaire, lu le 6 octobre 2026 (couche texte de la page ; HTTP 200 sur la capture). Le ministre de l'Énergie annonce « ce jeudi 14 juillet 2016 » le gasoil à 1,140 D (−60), le gasoil 50 à 1,420 D, l'essence inchangée à 1,650 D ; page retirée du site (404 le 6 octobre 2026), consultée dans la capture du 04/07/2019 (horodatage 20190704075834 lu dans le CDX). Date de publication d'après la note documentaire compensation-prix-carburants-1993-2018, non relue sur la page."
+    },
+    {
+      "id": "presse-kapitalis-2017-12-30",
+      "type": "webpage",
+      "title": "A partir du 1er janvier 2018 : Augmentation du prix du carburant",
+      "container-title": "Kapitalis",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            12,
+            30
+          ]
+        ]
+      },
+      "URL": "http://kapitalis.com/tunisie/2017/12/30/a-partir-1er-janvier-2018-augmentation-prix-carburant/",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "Kapitalis, 30/12/2017",
+      "note": "citation-key: presse-kapitalis-2017-12-30\nArticle de presse en ligne, source tertiaire, lu le 6 octobre 2026 (couche texte de la page ; HTTP 200). « Augmentera de 50 millimes à partir du 1er janvier 2018 » : ajustement du 1er janvier 2018. Date de publication d'après la note documentaire compensation-prix-carburants-1993-2018, non relue sur la page."
+    },
+    {
+      "id": "presse-tekiano-2018-04-02",
+      "type": "webpage",
+      "title": "Tunisie: Les nouveaux prix de l’essence et Gasoil à partir du 1er avril 2018",
+      "container-title": "Tekiano",
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            2
+          ]
+        ]
+      },
+      "URL": "https://www.tekiano.com/2018/04/02/tunisie-les-nouveaux-prix-de-lessence-et-gasoil-a-partir-du-1er-avril-2018/",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "Tekiano, 02/04/2018",
+      "note": "citation-key: presse-tekiano-2018-04-02\nArticle de presse en ligne, source tertiaire, lu le 6 octobre 2026 (couche texte de la page ; HTTP 200). D'après le communiqué (« à partir de dimanche 1er avril 2018, à zéro heure »). Date de publication d'après la note documentaire compensation-prix-carburants-1993-2018, non relue sur la page."
+    },
+    {
+      "id": "presse-economiste-maghrebin-2018-06-23",
+      "type": "webpage",
+      "title": "Hydrocarbures : augmentation des prix",
+      "container-title": "L'Économiste maghrébin",
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            6,
+            23
+          ]
+        ]
+      },
+      "URL": "https://www.leconomistemaghrebin.com/2018/06/23/augmentation-prix-hydrocarbures/",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "L'Économiste maghrébin, 23/06/2018",
+      "note": "citation-key: presse-economiste-maghrebin-2018-06-23\nArticle de presse en ligne, source tertiaire, lu le 6 octobre 2026 (couche texte de la page ; HTTP 200). D'après le communiqué (+75 millimes) : ajustement du 23 juin 2018. Date de publication d'après la note documentaire compensation-prix-carburants-1993-2018, non relue sur la page."
+    },
+    {
+      "id": "minfin-note-execution-2019-03",
+      "type": "report",
+      "title": "Note sur l'exécution provisoire du budget de l'État à fin mars 2019",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances"
+        }
+      ],
+      "publisher": "Ministère des finances",
+      "publisher-place": "Tunis",
+      "URL": "https://web.archive.org/web/20190717082916/http://v2.portail.finances.gov.tn/index.php?option=com_jdownloads&Itemid=581&view=finish&cid=1605&catid=8&lang=fr",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://v2.portail.finances.gov.tn/index.php?option=com_jdownloads&Itemid=581&view=finish&cid=1605&catid=8&lang=fr",
+      "title-short": "Note sur l'exécution du budget de l'État à fin mars 2019",
+      "note": "citation-key: minfin-note-execution-2019-03\nDocument de l'ancien portail v2.portail.finances.gov.tn, qui ne répond plus (aucune connexion le 6 octobre 2026) ; capture du 17/07/2019 (horodatage 20190717082916 repris du catalogue tunisia-data sources/minfinances-portail-ancien-urls.csv, NON relu au CDX : à vérifier). Fichier Word en arabe ; copie locale tunisia-data/data/raw/minfinances/portail_ancien/budget_execution/2019_note_sur_execution_provisoire_budget_etat_fin_mars_jd1605.doc (297 984 octets, SHA-256 fc6fada6f37c36b2d109e96e2af4318d82fcba054b40e17dfcb25e8de84160e0), ignorée par git. Titre français du catalogue, titre arabe non relevé. Utilisée par la série des recettes de la commercialisation des carburants (LF 2019 : 624 MD ; redevance sur le gazoduc : 515 MD), lue en couche texte ; pages non relevées ici. Date de parution non lue."
     }
   ]
 }

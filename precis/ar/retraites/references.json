@@ -819,21 +819,6 @@
       "note": "citation-key: ins-enpe\nEnsemble de rapports annuels de l'INS. Intitulés lus en couverture : « المسح الوطني حول السكان والتشغيل لسنة 2005 » (daté « أكتوبر 2006 », en arabe) ; « المسح الوطني حول السكان والتشغيل لسنة 2010 » (daté « جوان 2011 », en arabe) ; « Enquête nationale sur la population et l'emploi 2012 » (bilingue, daté « Décembre 2013 »). Le portail de l'INS les intitule « Enquête Nationale sur l'Emploi AAAA ». Utilisés pour les occupés selon la situation dans la profession : rapport 2005, tableau 27 ; rapport 2010, tableau 33 ; rapport 2012, tableau 30. L'URL donnée est la page du rapport 2012 (vérifiée le 21 septembre 2026) ; rapports 2005 et 2010 : https://www.ins.tn/publication/enquete-nationale-sur-lemploi-2005 et https://www.ins.tn/publication/enquete-nationale-sur-lemploi-2010 (vérifiées le 21 septembre 2026). Liste des fichiers : dépôt tunisia-data, sources/ins-enquete-emploi-urls.csv."
     },
     {
-      "id": "ins-bms",
-      "type": "report",
-      "title": "Bulletin mensuel de la statistique (numéros de novembre 2008 à juillet 2026)",
-      "title-short": "INS, Bulletin mensuel de la statistique",
-      "author": [
-        {
-          "literal": "Institut National de la Statistique (INS)"
-        }
-      ],
-      "publisher": "Institut National de la Statistique, Tunisie",
-      "publisher-place": "Tunis",
-      "URL": "https://www.ins.tn/publication/bulletin-mensuel-de-la-statistique-juillet-2026",
-      "note": "citation-key: ins-bms\nPublication mensuelle de l'INS, mise en ligne avec retard (le numéro de juillet 2026 l'a été le 8 septembre 2026). Collection des 213 numéros en ligne, du plus ancien (novembre 2008) au plus récent (juillet 2026). Utilisée pour le tableau 2.2 « Taux d'évolution trimestriel des salaires », renvoi (1) « Salaire dans le secteur privé non agricole » (page 9 de novembre 2008 à juin 2012, page 12 de juillet 2012 à janvier 2023, page 10 depuis février 2023), d'après le registre des salariés déclarés à la Caisse nationale de sécurité sociale. Chaque numéro donne cinq ou six trimestres, et les valeurs sont révisées d'un numéro à l'autre. L'URL donnée est la page du numéro de juillet 2026 (vérifiée le 22 septembre 2026) ; liste des numéros : https://www.ins.tn/publication (vérifiée le 22 septembre 2026). Page du portail « Taux d'évolution du salaire moyen dans le secteur privé non agricole » : https://www.ins.tn/statistiques/99 (vérifiée le 22 septembre 2026), seule source de T3 2020 et de la valeur révisée de T1 2024 ; ses mises à jour successives sont archivées (captures de novembre 2021 à juin 2025, liste : http://web.archive.org/cdx/search/cdx?url=ins.tn/statistiques/99), sauf celle du 10 août 2026. Adresse de la page et du PDF de chaque numéro : dépôt tunisia-data, sources/ins-bms-urls.csv ; fiche : sources/ins-bms-salaires-prive.md."
-    },
-    {
       "id": "ins-guide-salaires-prive-2026",
       "type": "report",
       "title": "Taux d'évolution trimestriel des salaires. Guide méthodologique pour le calcul du taux d'évolution trimestriel des salaires. Secteur privé non agricole",
