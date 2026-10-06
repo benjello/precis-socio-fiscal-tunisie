@@ -89,6 +89,28 @@ et non dans la loi n° 84-2) : voir `docs/notes/compensation.md`, § 9.
 - `push_biblio.py --verifier` : 769 entrées éprouvées, 2 pertes préexistantes seulement (`dafflon-2021-budget-local`, `minfin-cnf-2013-forfait`) ;
   aucune perte ajoutée. `dry-run` et `controle-rangement` du workflow `biblio-zotero` : à lancer après poussée de la branche.
 
+### Passe de clôture du 06/10/2026 : chapitre « La compensation »
+
+- **Résolution** : les 38 clés bibliographiques du chapitre (prose, tableaux, renvois) et les 12 entrées de glossaire du bloc « Compensation »
+  (`references`, `source_definition`, `source_traduction`) résolvent en FR et en AR (fichier du volume ou fonds commun) ; aucune clé manquante.
+  `fmi-1996-red` : une seule entrée, au fonds commun (FR et AR) ; le volume « Retraites » ne la cite plus et se rend sans citation non résolue.
+- **`lf-2014`, art. 76 à 78**, relus sur le fascicule français (JORT n° 105, 31 déc. 2013) : le fond du chapitre est confirmé (tarif de 20 D à
+  850 D, 25 % de la taxe unique, 1 % du revenu annuel net entier au-delà de 20 000 D, retenue à la source, non déductible, années 2014 et 2015).
+  **Pagination corrigée** d'après les pieds de page, vérifiés à l'image : art. 76 pp. 3693-3694 (n° 5 en 3693 ; n° 3, art. 20 bis, en 3694), art. 77 et 78 p. 3694 —
+  et non « pp. 3692-3693 ». Même glissement pour l'art. 73 (p. 3692, non 3691). La `note` FR est complétée ; la `note` AR décrit les articles sans pagination.
+  **À répercuter hors de la bibliographie (non fait, hors périmètre)** : `docs/notes/compensation.md` (l. 34 et 267) et le `TODO` de
+  `_compensation.qmd` (l. 143 : « pp. 3692-3693 » devrait être 3693-3694) donnent encore l'ancienne pagination.
+- **Sondage du tableau 2012-2025** contre le § 10.1 de `docs/notes/compensation.md` : 2013, 2016, 2022 concordent (postes, totaux, sommes), ainsi que les
+  pages des rapports de la BCT citées (RA 2020 p. 62, 2021 p. 57, 2022 p. 60, 2023 p. 64, 2024 p. 65, 2025 p. 71 ; RA 2015 p. 45, RA 2019 p. 60). Aucune discordance.
+- **Contrôles** : `push_biblio.py --verifier` : 769 entrées, 2 pertes préexistantes ; `verifier.sh prestations_sociales retraites` : tout vert.
+- **Prêt à rapatrier sur feu vert humain** (séquence `permissions` → `verifier` → `dry-run` → `pousser-un` → `comparer` → `pousser-tout` → `ranger`) :
+  les 36 clés neuves du chapitre (19 + 17), la note de `lf-2014` (fonds commun) à répercuter, `fmi-1996-red` à déclasser de « Retraites » ;
+  collection du livre « Prestations sociales » à confirmer dans `COLLECTION_TO_BOOK`.
+- **Reste à vérifier** : titres arabes non lus ; paginations arabes non mesurées (`lf-2013`, `lf-2014`, `loi75-83`, rapports de la BCT en AR) ;
+  doublons préexistants hors périmètre entre fonds commun et livres : `lf-2003`, `lf-2011`, `lf-2013` (cotisations), `decret80-75`, `decret80-609`,
+  `decret82-501`, `decret2019-454` (marché du travail).
+- **Non lancés (passent par Zotero, à lancer par l'appelant)** : `dry-run` et `controle-rangement` du workflow `biblio-zotero`.
+
 ## Ajouts à la main du 04/10/2026 (finances locales, chapitres des impôts, taxes et redevances)
 
 **Vingt-deux clés neuves** versées dans `precis/fr/finances_locales/references.json` et
