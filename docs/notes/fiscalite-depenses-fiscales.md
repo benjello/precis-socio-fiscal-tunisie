@@ -318,7 +318,7 @@ concessionnaires automobiles 606,8 / 730,2 / 764,8 ; approvisionnement du march�
 202,5 / 203,4 / 49,7 et développement régional (revenus et bénéfices) 109,9 / 81,7 / 44,8.
 
 Constat pour le rédacteur : dans le recensement officiel, les régimes d'incitation à
-l'investissement pèsent moins d'un dixième du total en 2017 et 4 % en 2019 ; le premier poste
+l'investissement pèsent 11 % du total en 2017 (433,1 sur 3 787,8 MD), 8 % en 2018 et 4 % en 2019 ; le premier poste
 est un avantage accordé aux ménages (franchise au retour des Tunisiens de l'étranger), le
 deuxième une réduction du droit de consommation sur les voitures. Le rapport explique la
 baisse des dépenses d'impôts directs en 2019 (−268 MD) par l'entrée en vigueur de la loi de
