@@ -1,0 +1,18 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-06
+# séries (tunisia_data) : masse-salariale-ratios, pib-courant-recouvrements, masse-salariale-reconciliation
+# sources (citation) : @minfin-remunerations, @minfin-indicateurs-fp, @ins-cnat-2015, @ins-pib-base-2015-2010-2020, @imf-tunisia-art4-2020, @wb-tunisia-per-2020
+# fiches : sources/minfinances-indicateurs.md, docs/pib-courant-par-base.md
+# méthode/hypothèses : Le PIB n'est pas d'une seule base : base 1983 jusqu'en 1996 (présumée pour 1990-1991) ; base 1997 rétropolée par l'INS en 1997-2001 ; valeurs propres au ministère des Finances en 2002-2004 et en 2025, dont la source ne précise pas la base ; base 1997 en 2005-2009 ; base 2015 de l'INS de 2010 à 2024, rétropolée par l'INS pour 2010-2014. Ruptures de série en 1997, 2002, 2005, 2010 et 2025 : la part du PIB se lit à l'intérieur d'un segment, les bases n'étant ni chaînées ni raccordées. La part dans les dépenses de l'État ne dépend d'aucune base., Écarts observés entre les deux bases, de + 4,89 à + 6,12 % : ils ne sont pas constants et ne donnent pas de coefficient de passage pour d'autres années. La base 2015 est rétropolée par l'INS pour 2010-2014., Le PIB « aux prix de 2010 » du FMI est, pour ses niveaux aux prix courants, celui de la base 1997 de l'INS : il n'existe pas de PIB aux prix courants « en base 2010 ». La base du PIB employé par la Banque mondiale n'est pas précisée ici. L'INS n'a publié aucun PIB en base 1997 après 2017.
+# note : Masse salariale du budget de l'État rapportée au PIB de la base 1997 et au PIB de la base 2015, et parts rapportées par la Banque mondiale et le FMI, 2010-2020
+Année,Masse salariale (MD),"PIB, base 2015 (MD)",PIB de la base 2015 rétropolé ?,"Masse salariale, % du PIB de la base 2015","PIB, base 1997 (MD)","Masse salariale, % du PIB de la base 1997",Rapport base 2015 / base 1997,Ratio rapporté par un rapport extérieur (% du PIB),Auteur du ratio rapporté,PIB du ratio rapporté
+2010,6785.2,66139.7,rétropolé par l'INS,10.26,63054.8,10.76,1.04892,,,
+2011,7679.4,67747.3,rétropolé par l'INS,11.34,64492.2,11.91,1.05047,,,
+2012,8655.5,73895.4,rétropolé par l'INS,11.71,70354.4,12.3,1.05033,,,
+2013,9608.0,79096.6,rétropolé par l'INS,12.15,75144.1,12.79,1.0526,,,
+2014,10540.7,85345.7,rétropolé par l'INS,12.35,80865.5,13.03,1.0554,,,
+2015,11581.4,89802.2,non rétropolé,12.9,84689.2,13.68,1.06037,,,
+2016,13163.9,95286.9,non rétropolé,13.82,89792.2,14.66,1.06119,,,
+2017,14352.0,102011.5,non rétropolé,14.07,96324.7,14.9,1.05904,14.7,Banque mondiale,base du PIB non précisée ici
+2018,14776.0,112985.5,non rétropolé,13.08,,,,,,
+2019,16765.0,122969.3,non rétropolé,13.63,,,,,,
+2020,19200.0,119502.1,non rétropolé,16.07,,,,17.6,FMI,PIB de la base 1997 (dite « 2010 » par le FMI)

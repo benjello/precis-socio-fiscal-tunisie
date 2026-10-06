@@ -41,6 +41,9 @@
   raw:
   - data/raw/minfinances/repartition_depenses.xls
   - data/raw/minfinances/indicateurs_fp_2025.xls
+  - data/processed/ins-comptes-nationaux/pib_courant_par_base.csv
+  - data/processed/ins-comptes-nationaux/pib_nominal_editions.csv
+  - data/processed/ins-comptes-nationaux/pib_undata.csv
   output: data/processed/precis/masse_salariale_ratios_longs_1990_2025.csv
   unite: '% du PIB / % des dépenses (nominal, prix courants)'
   perimetre: masse salariale = budget de l'État (Rémunérations publiques), hors entreprises
@@ -49,8 +52,32 @@
     1990-2025'
   unite_ar: '% من الناتج المحلي الإجمالي / % من النفقات (قيم جارية)'
   perimetre_ar: كتلة الأجور = ميزانية الدولة (الأجور العمومية)، باستثناء المنشآت العمومية
-  base_pib: 2015
-  caveats: docs/hypotheses-series-masse-salariale.md
+  base_pib: 1983 / 1997 / 2015 (colonne base_pib)
+  caveats: 'LE PIB N''EST PAS D''UNE SEULE BASE SUR 1990-2025. De 2010 à 2024 : PIB
+    de l''INS en base 2015 (rétropolé par l''INS pour 2010-2014), une seule base.
+    Avant 2010 et en 2025 : PIB du ministère des Finances, dont la base change — base
+    1983 jusqu''en 1996 (présumée avant 1992), base 1997 en 1997-2001 et 2005-2009,
+    valeurs propres au ministère en 2002-2004 et 2025. RUPTURES DE SÉRIE, marquées
+    par la colonne `rupture` : 1997 (base 1983 → base 1997, niveau + 9,8 %), 2002
+    et 2005 (valeurs non rattachées, puis retour à la base 1997), 2010 (base 1997
+    → base 2015, niveau + 4,9 %), 2025. Tracer la part du PIB par segments (`segment_pib`),
+    jamais d''un trait continu ; ne pas comparer les niveaux de part et d''autre d''une
+    rupture. Bases ni chaînées ni raccordées. VALEURS CHANGÉES EN OCTOBRE 2026 : 2012-2014
+    (le fichier portait la base 1997) : 12,30 → 11,71 % ; 12,79 → 12,15 % ; 13,03
+    → 12,35 % ; 2023-2024 (dernière édition des Comptes de la nation) : 14,49 → 14,48
+    % ; 13,94 → 13,93 %. LA PART DANS LES DÉPENSES DE L''ÉTAT NE DÉPEND D''AUCUNE
+    BASE : c''est la mesure homogène sur 1990-2025. Voir docs/hypotheses-series-masse-salariale.md.'
+  caveats_ar: 'الناتج المحلي الإجمالي المعتمد ليس على أساس واحد على 1990-2025. من
+    2010 إلى 2024: ناتج المعهد الوطني للإحصاء على أساس 2015 (معاد الاحتساب من المعهد
+    لسنوات 2010-2014)، أساس واحد. قبل 2010 وفي 2025: ناتج وزارة المالية الذي يتغيّر
+    أساسه — أساس 1983 إلى غاية 1996 (مفترض قبل 1992)، أساس 1997 في 1997-2001 و2005-2009،
+    قيم خاصة بالوزارة في 2002-2004 و2025. انقطاعات في السلسلة يبيّنها العمود rupture:
+    1997 (من أساس 1983 إلى أساس 1997، المستوى + 9,8 %)، 2002 و2005، 2010 (من أساس
+    1997 إلى أساس 2015، المستوى + 4,9 %)، 2025. تُرسم النسبة إلى الناتج مقطعًا مقطعًا
+    لا بخط متصل، ولا تُقارن المستويات على جانبي انقطاع. الأسس غير موصولة. قيم تغيّرت
+    في أكتوبر 2026: 2012-2014: 12,30 ← 11,71 % ؛ 12,79 ← 12,15 % ؛ 13,03 ← 12,35 %
+    ؛ 2023-2024: 14,49 ← 14,48 % ؛ 13,94 ← 13,93 %. أما الحصة من نفقات الدولة فلا
+    تتعلق بأي أساس: هي القياس المتجانس على 1990-2025.'
   fiche: sources/minfinances-indicateurs.md
 - id: masse-salariale-reconciliation
   titre: 'Réconciliation masse salariale/PIB : base 2015 vs base 2010 (FMI/BM)'
@@ -62,6 +89,9 @@
   build: tunisia_data.build.masse_salariale:reconciliation_base
   raw:
   - data/raw/minfinances/repartition_depenses.xls
+  - data/processed/ins-comptes-nationaux/pib_emplois_nominal.csv
+  - data/processed/ins-comptes-nationaux/pib_nominal_editions.csv
+  - data/processed/ins-comptes-nationaux/pib_courant_recouvrements.csv
   output: data/processed/precis/masse_salariale_reconciliation_base.csv
   unite: '% du PIB (nominal)'
   perimetre: administration centrale
@@ -69,7 +99,25 @@
     (صندوق النقد/البنك الدولي)'
   unite_ar: '% من الناتج المحلي الإجمالي (اسمي)'
   perimetre_ar: الإدارة المركزية
-  caveats: docs/reconciliation-masse-salariale-pib.md
+  caveats: 'DEUX PIB PAR ANNÉE, TROIS ANNÉES (2017, 2019, 2020). `pib_base2015_MDT`
+    : Comptes de la nation de l''INS, base 2015, valeur publiée. `pib_base2010_MDT`
+    : LA « BASE 2010 » EST LA BASE 1997 de l''INS (SCN 1993, volumes aux prix de 2010
+    ; le FMI l''écrit dans son rapport n° 21/44) — il n''existe pas de PIB nominal
+    « base 2010 », et le nom de la colonne est celui du fichier d''origine. Valeur
+    publiée par l''INS pour 2017 seulement ; CALCULÉE pour 2019 et 2020 (PIB base
+    2015 ÷ 1,05996), l''INS n''ayant rien publié en base 1997 pour ces années. `rapport_observe_base2015_sur_base1997`
+    donne le rapport observé l''année même (2017 : 1,05904 ; vide en 2019 et 2020)
+    ; les huit années observées, 2010-2017, sont dans `pib-courant-recouvrements`
+    (de 1,049 à 1,061 : pas de facteur constant). Les ratios rapportés (FMI, Banque
+    mondiale, ministère) sont transcrits sans page et n''ont pas été relus. Voir docs/reconciliation-masse-salariale-pib.md.'
+  caveats_ar: 'ناتجان محليان إجماليان لكل سنة، وثلاث سنوات (2017، 2019، 2020). العمود
+    pib_base2015_MDT: الحسابات القومية للمعهد الوطني للإحصاء، أساس 2015، قيمة منشورة.
+    العمود pib_base2010_MDT: «أساس 2010» هو أساس 1997 للمعهد (نظام الحسابات القومية
+    1993، الأحجام بأسعار 2010)، ولا يوجد ناتج اسمي على «أساس 2010»؛ اسم العمود موروث
+    من الملف الأصلي. قيمة منشورة لسنة 2017 فقط، ومحسوبة لسنتي 2019 و2020 (ناتج أساس
+    2015 مقسومًا على 1,05996). النسبة الملاحظة بين الأساسين غير ثابتة (من 1,049 إلى
+    1,061 على 2010-2017). النسب المنقولة عن صندوق النقد الدولي والبنك الدولي والوزارة
+    مدوّنة دون رقم صفحة ولم تُراجع في التقارير.'
   fiche: sources/minfinances-indicateurs.md
 - id: fonction-publique-categories
   titre: Fonctionnaires par catégorie statutaire (A1-D), 2015-2021
