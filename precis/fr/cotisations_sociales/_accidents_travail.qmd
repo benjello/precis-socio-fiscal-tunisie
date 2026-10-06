@@ -273,41 +273,61 @@ figtools.figure_tabs(
 
 ## Les accidents et les maladies déclarés, 2012-2022 {#sec-cot-at-declares}
 
-La cotisation finance la réparation de sinistres dont deux documents publient le nombre sur dix ans. Ce sont des comptages de déclarations à la CNAM, repris ici de ces documents et non de la caisse elle-même.
+La cotisation finance la réparation de sinistres dont deux documents publient le nombre sur dix ans : le rapport du ministère des affaires sociales, pour les accidents de 2013 à 2022 et les maladies professionnelles de 2016 à 2022 [@mas2023-profil-sst, annexes 10, 11 et 15, pp. 99 et 101], et la note du CRES, pour les accidents et les maladies de 2014 à 2020 et pour les indices de fréquence de 2012 à 2020 [@belloussaief2023-atmp, tableaux 1 et 3, pp. 2 et 4]. Ce sont des comptages de déclarations à la CNAM, repris ici de ces documents et non de la caisse elle-même.
 
-Le nombre d'accidents du travail déclarés recule de près de moitié entre 2013 et 2020, année des confinements, et ne remonte que peu ensuite ; celui des maladies professionnelles déclarées augmente presque sans interruption (@tbl-atmp-declares).
+Le nombre d'accidents du travail déclarés recule de près de moitié entre 2013 et 2020, année des confinements, et ne remonte que peu ensuite ; celui des maladies professionnelles déclarées augmente presque sans interruption (@fig-atmp-declares).
 
-| Année | Accidents sur les lieux de travail | Accidents de trajet | Accidents mortels sur les lieux de travail | Accidents de trajet mortels | Maladies professionnelles déclarées |
-|---|---:|---:|---:|---:|---:|
-| 2013 | 44 112 | 2 574 | 131 | 58 | — |
-| 2014 | 42 209 | 2 399 | 92 | 50 | 1 195 |
-| 2015 | 37 376 | 2 074 | 115 | 56 | 1 367 |
-| 2016 | 34 594 | 2 206 | 99 | 57 | 1 551 |
-| 2017 | 33 671 | 2 229 | 112 | 40 | 1 709 |
-| 2018 | 33 505 | 2 295 | 65 | 44 | 1 852 |
-| 2019 | 32 929 | 1 770 | 95 | 37 | 2 025 |
-| 2020 | 23 316 | 1 328 | 96 | 18 | 1 860 |
-| 2021 | 24 172 | 1 440 | 84 | 16 | 2 243 |
-| 2022 | 25 003 | 1 463 | 65 | 28 | 2 895 |
+```{python}
+#| label: fig-atmp-declares
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import atmp_sinistres as ats
+import figtools
+figtools.figure_tabs(
+    [(ats._lab("v_declares"), ats.fig_declares()), (ats._lab("v_mortels"), ats.fig_mortels())],
+    ats.table_declares(), ats.SERIE,
+    slug="fig_atmp_declares", nominal=False,
+    caption="Accidents du travail, accidents de trajet et maladies professionnelles déclarés, 2013-2022",
+    note_lecture=(
+        "**Première vue** : en haut, les accidents déclarés sur les lieux de travail ; en bas, à "
+        "une autre échelle, les accidents de trajet et les maladies professionnelles. Les nombres "
+        "d'accidents sont ceux du rapport du ministère ; un **rond creux** marque, en 2014 et en "
+        "2015, la valeur différente que donne la note du CRES. Les maladies professionnelles de "
+        "2014 et 2015 viennent de cette note, les suivantes du rapport. **Seconde vue** : les "
+        "accidents mortels, ceux des lieux de travail surmontés de ceux du trajet ; le nombre "
+        "au-dessus de chaque barre est leur somme. Ce sont des **déclarations** à la CNAM : la "
+        "fonction publique et les indépendants n'y figurent pas, et la sous-déclaration n'est "
+        "pas mesurée. L'onglet « Données » garde les deux documents côte à côte, page par page."))
+```
 
-: Accidents du travail, accidents de trajet et maladies professionnelles déclarés, 2013-2022. Accidents : [@mas2023-profil-sst, annexes 10 et 11, p. 99] ; maladies professionnelles : 2014 et 2015 [@belloussaief2023-atmp, tableau 1, p. 2], 2016 à 2022 [@mas2023-profil-sst, annexe 15, p. 101] {#tbl-atmp-declares}
+Les deux documents ne concordent pas partout. Pour 2014 et 2015, la note du CRES compte 42 114 puis 38 002 accidents du travail et 2 395 puis 2 098 accidents de trajet, là où le rapport du ministère en donne 42 209 puis 37 376 et 2 399 puis 2 074 ; pour 2020, elle compte 1 327 accidents de trajet contre 1 328. De 2016 à 2019, les deux séries sont identiques. Aucun des deux n'explique ces écarts ; la figure retient la série la plus longue et marque l'autre valeur. Le rapport du ministère ne cite pas la source de ses annexes.
 
-Les deux documents ne concordent pas partout. Pour 2014 et 2015, la note du CRES compte 42 114 puis 38 002 accidents du travail et 2 395 puis 2 098 accidents de trajet, là où le rapport du ministère en donne 42 209 puis 37 376 et 2 399 puis 2 074 ; pour 2020, elle compte 1 327 accidents de trajet contre 1 328. De 2016 à 2019, les deux séries sont identiques. Aucun des deux n'explique ces écarts ; le tableau retient la série la plus longue. Le rapport du ministère ne cite pas la source de ses annexes.
+Rapportés au nombre de salariés, les accidents du travail avec arrêt passent de 22,19 pour 1 000 salariés en 2012 à 11,054 en 2020, tandis que la fréquence des maladies professionnelles s'élève (@fig-atmp-frequence).
 
-Rapportés au nombre de salariés, les accidents du travail avec arrêt passent de 22,19 pour 1 000 salariés en 2012 à 11,054 en 2020, tandis que la fréquence des maladies professionnelles s'élève (@tbl-atmp-frequence).
+```{python}
+#| label: fig-atmp-frequence
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import atmp_sinistres as ats
+import figtools
+figtools.figure_tabs(
+    [(ats._lab("v_arret"), ats.fig_frequence()), (ats._lab("v_gravite"), ats.fig_gravite())],
+    ats.table_frequence(), ats.SERIE,
+    slug="fig_atmp_frequence", nominal=False,
+    caption="Indices de fréquence des accidents du travail, des accidents de trajet et des maladies professionnelles, pour 1 000 salariés, 2012-2020",
+    note_lecture=(
+        "**Chaque point est un indice publié**, pour 1 000 salariés : aucun n'est recalculé ici. "
+        "**Première vue** : les sinistres avec arrêt de travail — accidents du travail en haut ; "
+        "accidents de trajet et maladies professionnelles en bas, à une autre échelle. **Seconde "
+        "vue** : les sinistres les plus graves — avec décès en haut, avec incapacité permanente "
+        "en bas ; ces deux derniers indices ne sont pas publiés pour 2020. Les valeurs de 2019 "
+        "et de 2020 sont imprimées avec trois décimales, les précédentes avec deux."))
+```
 
-| Pour 1 000 salariés | 2012 | 2013 | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Accidents du travail avec arrêt | 22,19 | 20,47 | 19,15 | 19,48 | 17,97 | 16,77 | 16,89 | 15,134 | 11,054 |
-| Accidents du travail avec décès | 0,09 | 0,08 | 0,06 | 0,08 | 0,07 | 0,08 | 0,04 | 0,058 | 0,055 |
-| Accidents de trajet avec arrêt | 1,36 | 1,23 | 1,12 | 1,07 | 1,20 | 1,16 | 1,08 | 0,866 | 0,629 |
-| Accidents de trajet avec décès | 0,05 | 0,04 | 0,03 | 0,04 | 0,04 | 0,03 | 0,03 | 0,023 | 0,011 |
-| Maladies professionnelles | 0,84 | 0,86 | 0,87 | 0,96 | 1,08 | 1,15 | 1,20 | 1,252 | 1,181 |
+Ces chiffres ont des limites que leurs auteurs énoncent. Les statistiques de la CNAM « souffrent de beaucoup de limites telles que la sous déclaration, la sous reconnaissance des maladies professionnelles et la couverture limitée de certains secteurs excluant notamment la fonction publique et les indépendants » [@belloussaief2023-atmp, p. 5]. La hausse des maladies professionnelles déclarées peut tenir à « une meilleure déclaration due à une meilleure information, tant des médecins que des salariés », et à l'élargissement de la liste des maladies reconnues [@belloussaief2023-atmp, p. 3]. La même note donne ailleurs, pour l'ensemble des secteurs, un indice moyen des accidents du travail de 42,28 en 2012 et de 20,06 en 2020, près du double de celui qui est tracé ici, sans dire ce qui distingue les deux mesures [@belloussaief2023-atmp, tableaux 2 et 3, p. 4].
 
-: Indices de fréquence des accidents du travail, des accidents de trajet et des maladies professionnelles, 2012-2020, tels que publiés (source indiquée : CNAM) [@belloussaief2023-atmp, tableau 3, p. 4] {#tbl-atmp-frequence}
-
-Ces chiffres ont des limites que leurs auteurs énoncent. Les statistiques de la CNAM « souffrent de beaucoup de limites telles que la sous déclaration, la sous reconnaissance des maladies professionnelles et la couverture limitée de certains secteurs excluant notamment la fonction publique et les indépendants » [@belloussaief2023-atmp, p. 5]. La hausse des maladies professionnelles déclarées peut tenir à « une meilleure déclaration due à une meilleure information, tant des médecins que des salariés », et à l'élargissement de la liste des maladies reconnues [@belloussaief2023-atmp, p. 3]. La même note donne ailleurs, pour l'ensemble des secteurs, un indice moyen des accidents du travail de 42,28 en 2012 et de 20,06 en 2020, près du double de celui de ce tableau, sans dire ce qui distingue les deux mesures [@belloussaief2023-atmp, tableaux 2 et 3, p. 4].
-
-<!-- TODO (rédacteur) : remplacer ces deux tableaux par une figure quand les séries seront versées à l'entrepôt de données et raccordées aux statistiques de la CNAM pour 2021-2023 (déjà au dépôt de données). -->
+<!-- TODO (rédacteur) : raccorder ces séries aux statistiques de la CNAM pour 2021-2023, déjà à l'entrepôt de données, quand leurs champs auront été comparés. -->
 
 Les ressources et les emplois du régime de réparation, de 1995 à 2004, et ceux de la protection sociale des travailleurs, de 1997 à 2004, sont exposés dans le livre [« Les caisses de sécurité sociale »](../caisses/_comptes_longue_periode.html#sec-caisses-cnss-atmp-pst).

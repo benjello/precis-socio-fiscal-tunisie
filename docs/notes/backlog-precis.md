@@ -543,10 +543,12 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
     `tunisia-data` (`data/raw/caisses/mas/` et `data/raw/caisses/cres/`), fiches
     `sources/mas-profil-sst-2023.md` et `sources/cres-lettre-8-atmp-2023.md` (tunisia-data#34) ;
     le PDF du ministère a été téléchargé sans vérification du certificat du site ;
-  - **deux tableaux faits main** (`tbl-atmp-declares`, `tbl-atmp-frequence`), à remplacer
-    par une figure quand les séries seront à l'entrepôt et raccordées aux statistiques de
-    la CNAM pour 2021-2023 ; les écarts entre les deux documents pour 2014, 2015 et 2020
-    sont dits dans le texte ;
+  - **deux figures** (`fig-atmp-declares`, `fig-atmp-frequence`, module
+    `figures/atmp_sinistres.py`), sur la série `atmp-sinistres-declares-2012-2022-bruts` de
+    l'entrepôt (tunisia-data#34, **à fusionner** : le précis n'en porte que l'instantané) ; les
+    écarts entre les deux documents pour 2014, 2015 et 2020 sont dits dans le texte et gardés
+    dans les données ; reste à raccorder aux statistiques de la CNAM pour 2021-2023 ; les
+    intitulés d'indicateurs de l'onglet « Données » ne sont pas traduits en arabe ;
   - **non repris, faute de série** : 209 entreprises bénéficiaires d'une réduction jusqu'en
     2020 et 7 prêts de 2014 à 2019 (Profil, pp. 48-49), cumuls sans source ;
   - **pour le volume des caisses** : recettes, dépenses et résultats du régime de 2018 à 2022
