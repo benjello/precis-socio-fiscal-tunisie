@@ -31,7 +31,7 @@
 | 1989 | loi n° 89-88 du 3 novembre 1989 (LFC 1989), art. 3-8 | n° 73 du 3 nov. 1989, p. 1718 | **contribution au profit de la CGC** « au titre de l'année 1989 » : 2,2 % du chiffre d'affaires 1988 des hôtels, 0,5 % de celui des autres entreprises, 0,5 % des recettes des professions non commerciales (min. 100 D), 1/30 du revenu de novembre 1989 des salariés à 350 D et plus ; non déductible. Art. 8 : prêt du Trésor de **20 millions de dinars** sans intérêts, dix ans | [T] |
 | 1991, 1992 | loi n° 91-98 (LF 1992), art. 77 ; arrêtés des 11 oct. 1990 et 7 juill. 1992 | n° 90 de 1991, p. 2090 ; n° 68 de 1990 ; n° 47 de 1992 | nouveau prêt du Trésor à la CGC ; relèvements des prévisions du fonds spécial CGC (derniers intitulés qui nomment la CGC avant 2012) | [M] |
 | 2013-01-01 | loi n° 2012-27 du 29 décembre 2012 (LF 2013), art. 63 | n° 1 du 1er janv. 2013, pp. 17-18 | **redevance de compensation** au profit de la CGC : 1 % du chiffre d'affaires des casinos, boîtes de nuit, restaurants classés, cafés de 2e et 3e catégorie, salons de thé et pâtissiers ; 5 000 D à la première immatriculation des voitures de plus de 2 000 cm³ (essence) ou 2 500 cm³ (diesel) ; 2 D par nuitée d'hôtel (à compter du 1er oct. 2013) ; **1 % du revenu annuel des personnes physiques au-delà de 20 000 D de revenu net, plafonné à 2 000 D** | [T] |
-| 2014-01-01 | loi n° 2013-54 du 30 décembre 2013 (LF 2014), art. 76 | n° 105 du 31 déc. 2013, pp. 3692-3693 | redevance étendue aux voitures particulières, de 20 D (4 CV) à 850 D (16 CV et plus), et aux véhicules soumis à la taxe unique de compensation de transports routiers (25 % de cette taxe) | [T] |
+| 2014-01-01 | loi n° 2013-54 du 30 décembre 2013 (LF 2014), art. 76 | n° 105 du 31 déc. 2013, pp. 3693-3694 | redevance étendue aux voitures particulières, de 20 D (4 CV) à 850 D (16 CV et plus), et aux véhicules soumis à la taxe unique de compensation de transports routiers (25 % de cette taxe) | [T] |
 | 2024 | arrêté de la ministre des finances du 10 mai 2024 | n° 61 de 2024, p. 1428 | liste des pâtisseries traditionnelles exclues de la redevance de compensation : la redevance existe encore en 2024 | [M] |
 
 Constats utiles au rédacteur :
@@ -264,7 +264,7 @@ Contrôle fait le 5 octobre 2026 sur tous les `references.json` français.
 
 Pour `lf-2013`, `lf-2014` et `loi75-83`, déjà présentes, seuls les locators sont à ajouter à
 l'appel : art. 63 (JORT n° 1 du 1er janvier 2013, pp. 17-18) ; art. 76 (JORT n° 105 du 31 déc.
-2013, pp. 3692-3693) ; art. 67-69 (JORT n° 87, 30-31 déc. 1975, pp. 2856-2857).
+2013, pp. 3693-3694) ; art. 67-69 (JORT n° 87, 30-31 déc. 1975, pp. 2856-2857).
 
 URL contrôlées le 5 octobre 2026 par `curl -sk` (code 200, `application/pdf`, 280 ko au moins)
 pour toutes les adresses pist.tn ci-dessous, éditions française et arabe ; le contenu des
