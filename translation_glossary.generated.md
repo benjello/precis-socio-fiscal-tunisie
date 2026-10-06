@@ -19,6 +19,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | AMEN social | برنامج الأمان الاجتماعي |  |
 | Annuité liquidable | السنة القابلة للتصفية |  |
 | Appui financier occasionnel | الدعم المادي الظرفي |  |
+| Arrêté interne | قرار داخلي |  |
 | Assiette des cotisations | قاعدة الاشتراك |  |
 | Assiette du droit de consommation | قاعدة المعلوم على الاستهلاك |  |
 | Assiette fiscale | الوعاء الضريبي |  |
@@ -55,6 +56,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Catégorie de grade | صنف الرتبة |  |
 | Catégories à revenu limité | الفئات محدودة الدخل |  |
 | Catégories pauvres | الفئات الفقيرة |  |
+| Centimes additionnels | صانتيمات إضافية |  |
 | Chiffre d'affaires imposable | رقم المعاملات الخاضع |  |
 | Chiffre indiciaire | الرقم القياسي |  |
 | Ciblage | الاستهداف |  |
@@ -122,6 +124,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Emprunt | الاقتراض |  |
 | Enfant à charge | الطفل المتكفَّل به |  |
 | Entrepositaire | أرباب المخازن |  |
+| Entreprise tunisienne d'activités pétrolières | المؤسسة التونسية للأنشطة البترولية | ETAP |
 | Entreprises publiques | المنشآت العمومية |  |
 | Entreprises totalement exportatrices | المؤسسات المصدرة كليا |  |
 | Épargne nette | الادّخار الصافي |  |
@@ -207,6 +210,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prestations familiales | المنح العائلية |  |
 | Prime d'investissement | منحة الاستثمار |  |
 | Prime de rendement | منحة المردودية |  |
+| Prix de cession préférentiel | السعر التفاضلي |  |
 | Prix de référence du mètre carré couvert | الثمن المرجعي للمتر المربع المبني |  |
 | Produit intérieur brut | الناتج المحلي الإجمالي | PIB |
 | Produits de base | المواد الأساسية |  |
@@ -253,6 +257,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Revalorisation des pensions | تعديل الجرايات |  |
 | Revenu annuel net | الدخل السنوي الصافي |  |
 | Revenu forfaitaire | الدخل التقديري |  |
+| Revenus de commercialisation des carburants | مداخيل تسويق المحروقات |  |
 | Revenus fonciers | المداخيل العقارية |  |
 | Salaire brut | الأجر الخام |  |
 | Salaire conventionnel | الأجر التعاقدي |  |
@@ -267,17 +272,23 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Score d'éligibilité | أنموذج التنقيط |  |
 | Secteur public | القطاع العام |  |
 | Sécurité sociale des pêcheurs | الضمان الاجتماعي للصيادين البحريين |  |
+| Séparation des opérations de commercialisation des hydrocarbures | فصل عمليات تسويق المحروقات |  |
 | Service fait | قاعدة الخدمة المنجزة |  |
 | Société de prévoyance des fonctionnaires et employés tunisiens | الجمعية الاحتياطية للموظفين والمستخدمين التونسيين |  |
+| Société tunisienne de l'électricité et du gaz | الشركة التونسية للكهرباء والغاز | STEG |
+| Société tunisienne des industries de raffinage | الشركة التونسية لصناعات التكرير | STIR |
 | Solde (militaire) | المرتّب العسكري |  |
 | Solde de réforme | منحة الإصلاح |  |
 | Souveraineté fiscale | السيادة الجبائية |  |
 | Stage de cotisation | مدة الانخراط الدنيا |  |
 | Statut particulier | النظام الأساسي الخصوصي |  |
+| Structure des prix | تركيبة الأسعار |  |
 | Subsidiarité | التفريع |  |
 | Subvention conditionnelle | المنحة المشروطة |  |
+| Subvention directe | الدعم المباشر |  |
 | Subvention forfaitaire | المنحة الجزافية |  |
 | Subvention globale | المنحة الشاملة |  |
+| Subvention indirecte | الدعم غير المباشر |  |
 | Subvention rationnée | المنحة المحدودة |  |
 | Subvention spécifique | المنحة الخصوصية |  |
 | Surcompensation | الزيادة في تعويض المنح العائلية |  |
@@ -313,7 +324,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Taxe sur les prestations de service | الأداء على الخدمات |  |
 | Taxe sur les terrains non bâtis | المعلوم على الأراضي غير المبنية | TNB |
 | Taxe unique de compensation de transports routiers | المعلوم الوحيد التعويضي على النقل بالطرقات |  |
-| Taxe unique de compensation sur les carburants | الأداء الوحيد للتعويض على المحروقات |  |
+| Taxe unique de compensation sur les produits pétroliers | المعلوم الوحيد التعويضي على منتوجات النفط |  |
 | Territorialité de la TVA | مبدأ الإقليمية |  |
 | Traitement de base | المرتب الأساسي |  |
 | Tranche | شريحة |  |
