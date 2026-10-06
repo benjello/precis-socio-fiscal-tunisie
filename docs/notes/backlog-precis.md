@@ -1,6 +1,6 @@
 # Ce qui reste à faire, livre par livre
 
-**Révisé le 5 octobre 2026.** Cette note rassemble les chantiers encore visibles dans les
+**Révisé le 6 octobre 2026.** Cette note rassemble les chantiers encore visibles dans les
 chapitres, les dossiers documentaires et les issues ; elle permet de choisir le prochain
 texte à lire. Une piste « faisable » signifie que le **support** est accessible, pas que
 son contenu a déjà été vérifié : seul l'article lu autorise à corriger le précis.
@@ -24,7 +24,7 @@ extraits des lois de finances sont dans le dossier voisin `PDFs/Lois_de_Finances
 
 | Livre | État du texte | Première lecture faisable |
 |---|---|---|
-| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées ; déductions, régime suspensif et obligations encore à rédiger | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
+| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et un chapitre transversal sur les dépenses fiscales et les régimes d'incitation (6 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées ; déductions, régime suspensif et obligations encore à rédiger | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; PNAFN historique sans sources pour ses onze dates et montants | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
@@ -95,6 +95,68 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
   - **genèse parlementaire** de l'art. 88 (rejet en commission, suppression puis
     réintroduction en plénière) : presse seulement, hors du corps faute de pièce de l'ARP
     ou du CNRD.
+- **Dépenses fiscales et régimes d'incitation (`_depenses_fiscales.qmd`, chapitre créé le
+  6 octobre 2026)** sur la note `docs/notes/fiscalite-depenses-fiscales.md`, seule matière du
+  chapitre. Écrit : lois d'avant 1993 (quatre intitulés) ; code de 1993 (art. 7, 9, 10, 12,
+  14, 16, 22, 23, 25, 30) ; imposition de l'exportation votée en 2006 et ses quatre reports ;
+  lois n° 2016-71 et n° 2017-8 ; abrogation du régime de l'exportation (LF 2019) ; coût
+  (estimations d'auteurs avant 2017, agrégats des rapports annexés aux PLF 2021 à 2025) ;
+  bénéficiaires (rapport PLF 2021, Banque mondiale 2014). Disponibilités ci-dessous
+  contrôlées le 6 octobre 2026 (présence du fichier, `pdftotext` sur le fascicule entier) ;
+  la page de l'article n'a pas été ouverte. Restent :
+  - **AR** : déclarer `_depenses_fiscales.qmd` dans `precis/ar/fiscalite/_quarto.yml`
+    (ligne commentée en place, après `_droits_consommation.qmd`) dès que la traduction est
+    livrée ;
+  - **régimes d'avant 1993 — OCR** : taux, durées et dates d'effet non établis, seuls les
+    intitulés sont connus. Les onze fascicules français sont présents au corpus, couche
+    texte vide : `1969/fr/Jo02469.pdf` (loi n° 69-35), `1972/fr/Jo01772.pdf` (n° 72-38),
+    `1974/fr/Jo05174.pdf` (n° 74-74), `1976/fr/Jo04676.pdf` (n° 76-63),
+    `1981/fr/Jo04481.pdf` (n° 81-56), `1982/fr/Jo05482.pdf` (n° 82-67),
+    `1985/fr/Jo07385.pdf` (décret-loi n° 85-14), `1987/fr/Jo05687.pdf` (n° 87-51),
+    `1988/fr/Jo02388.pdf` (n° 88-18), `1990/fr/Jo02190.pdf` (n° 90-21),
+    `1992/fr/Jo05292.pdf` (n° 92-81). Priorité : 1972 et 1987. Sept de ces textes n'ont pas
+    de clé CSL (TODO bibliographe au chapitre) ;
+  - **code de 1993 — OCR** : `1993/fr/Jo09993.pdf` présent, couche texte vide ; date
+    d'entrée en vigueur (loi de promulgation, p. 2174) et dernière page du code à relever
+    sur l'image ; terme de la déduction de 50 % des exportateurs entre 1993 et 2006 non
+    établi (le texte qui l'aurait posé n'est pas localisé) ;
+  - **calendrier de 2014 — lisible** : LF 2015 (loi n° 2014-59), art. 18, « mesures de
+    soutien des entreprises totalement exportatrices », `2014/fr/Jo1052014.pdf` ; à ouvrir
+    pour confirmer qu'aucun texte n'a touché à l'échéance du 1er janvier 2014. LF 2014,
+    art. 49-50 et 54 (`2013/fr/`, JORT n° 105) : connus par leur intitulé, non repris ;
+  - **zones de développement régional — lisible** : décret gouvernemental n° 2017-389,
+    `2017/fr/Jo0252017.pdf` ; loi n° 2019-47, `2019/fr/Jo0472019.pdf` (portée fiscale non
+    établie) ;
+  - **rapports annexés aux PLF 2022 et 2023 — à obtenir** : non archivés dans
+    `tunisia-data` (`data/raw/gbo/` ne porte que les rapports 2021, 2024 et 2025) ; adresses
+    sur gbo.tn dans la note, § 2.2, relevées le 5 octobre 2026 et non recontrôlées. Seule
+    leur introduction (p. 7) est connue. Rapport annexé au PLF 2026 : non cherché.
+    Existence d'un rapport pour les PLF 2019 et 2020 : non établie ;
+  - **série du coût à reconstruire, avec sa rupture de périmètre** : les rapports 2024 et
+    2025 excluent les exonérations des médicaments et des engrais, que le rapport 2021
+    compte (274,5 et 249,9 MD en 2019). Les deux CSV traités de `tunisia-data` cousent trois
+    rapports sur cinq et portent cette rupture à la couture 2019/2020 ; le périmètre des
+    rapports 2022 et 2023 reste à lire. `figures/depenses_fiscales.py` n'est donc pas appelé
+    (docstring corrigé le 6 octobre 2026, code inchangé) et aucune figure n'est publiée.
+    La fiche `~/projets/tunisia-data/sources/gbo-depenses-fiscales.md` ne mentionne pas
+    cette exclusion : à corriger dans ce dépôt-là ;
+  - **écart sur l'exercice 2021** : 7 745 MD (rapport 2023) contre 5 871,5 et 5 872,3 MD
+    (rapports 2024 et 2025) ; cause non établie, à lire dans les rapports 2023 et 2024. Les
+    deux ratios du rapport 2021 pour 2019 (16,3 % et 19,15 % des ressources fiscales) sont
+    signalés au chapitre ; le dénominateur de l'introduction reste à établir ;
+  - **à vérifier sur les rapports** : décomptes de dispositifs valorisés (243/347 ; 37/57 ;
+    34/63) et sommes par impôt de 2020 et 2021, tenus de la série traitée ; répartition par
+    impôt 2020-2023 et par secteur 2017-2019 (tableau n° 6 du rapport 2021, relevé pour 2019
+    seulement) non publiées ; ventilation par gouvernorat et délégation (loi n° 2017-8,
+    art. 18) : présence dans les rapports non vérifiée ;
+  - **avant 2017** : aucune série homogène ; sources premières des estimations (OMC 2001,
+    FMI 2005 et 2012, Ghazouani 2011, IFC-ECOPA 2012) à obtenir ; figures 4.1 et 4.4 du
+    rapport de la Banque mondiale à relever sur l'image ;
+  - **recherche ouverte** : arrêté du ministre des Finances du 8 novembre 2017 (fiche
+    `r-arrete-2017-rapport-depenses-fiscales`) ; plein texte des fascicules de novembre et
+    décembre 2017 non lancé ;
+  - **à croiser avec « Cotisations sociales »** : coût des prises en charge de cotisations
+    patronales (code de 1993, art. 25 ; loi n° 99-59, connue par son intitulé).
 - **Forme de `_impot_revenu.qmd` : rien à reprendre.** Ses titres ont été remontés d'un cran
   et il a reçu sa section « La longue période ». La réorganisation par réforme, un temps
   envisagée, a été écartée après lecture — voir « Forme des chapitres » plus bas, qui en
@@ -567,7 +629,7 @@ Revue de ce que les sept volumes ne couvrent pas (sujets à établir sur les tex
 
 6. Droits d'enregistrement et de timbre ; fiscalité des mutations immobilières.
 7. Droits de douane.
-8. Dépenses fiscales et régimes d'incitation (code d'incitation aux investissements, loi de 2016, entreprises totalement exportatrices, développement régional) — documents Banque mondiale 2014 collectés.
+8. Dépenses fiscales et régimes d'incitation (code d'incitation aux investissements, loi de 2016, entreprises totalement exportatrices, développement régional) — **chapitre créé le 6 octobre 2026** (`fiscalite/_depenses_fiscales.qmd`) ; lacunes dans la section « Fiscalité » ci-dessus.
 9. Fiscalité de l'épargne et du capital : retenues libératoires sur les revenus de capitaux mobiliers, plus-values mobilières, épargne exonérée.
 10. Taxes affectées et contributions exceptionnelles (contribution conjoncturelle, contribution au budget de l'État de 2014, FODEC, vignette).
 

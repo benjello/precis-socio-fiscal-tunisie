@@ -1,0 +1,283 @@
+# Les dépenses fiscales et les régimes d'incitation {#sec-depenses-fiscales}
+
+Les cinq chapitres qui précèdent décrivent chaque impôt par sa règle. Celui-ci décrit ce qui y déroge : les [avantages fiscaux](#g-avantage-fiscal) accordés pour orienter l'investissement — vers l'exportation, vers les régions de l'intérieur, vers l'agriculture — et, plus largement, l'ensemble des dérogations que le ministère des Finances recense, pour les exercices 2017 et suivants, sous le nom de [dépenses fiscales](#g-depense-fiscale), c'est-à-dire mesurées par rapport à un [système fiscal de référence](#g-systeme-fiscal-de-reference) [@gbo-depenses-fiscales, rapport annexé au projet de loi de finances pour 2021, section 1, § 2]. Les mêmes rapports comptent à part les [avantages financiers](#g-avantage-financier), versés par le budget et non consentis sur l'impôt.
+
+Le chapitre suit ces régimes sur le temps long : des lois par secteur avant 1993, un code unique de 1993 à 2016, puis des avantages inscrits dans le code de l'[impôt sur le revenu des personnes physiques](#g-irpp) et de l'[impôt sur les sociétés](#g-impot-societes). Il se clôt sur ce qu'ils coûtent et sur ceux qui en bénéficient. Les taux de l'impôt sur les sociétés eux-mêmes sont exposés à leur chapitre (@sec-impot-societes) ; on trouve ici les durées, les déductions, le coût et sa répartition.
+
+## Avant 1993 : des lois par secteur {#sec-df-avant-1993}
+
+Avant 1993, les avantages accordés à l'investissement relèvent de lois distinctes, prises secteur par secteur. Quatre d'entre elles jalonnent la période (@tbl-df-avant-1993). Seul l'intitulé de ces textes est connu ici : ni les taux ni les durées des avantages qu'ils accordaient ne sont établis, et le tableau ne leur en prête pas.
+
+: Quatre lois d'incitation antérieures au code de 1993, d'après leur intitulé {#tbl-df-avant-1993}
+
+| Loi | Objet, d'après l'intitulé |
+|---|---|
+| loi n° 72-38 du 27 avril 1972 | création d'un régime particulier pour les industries produisant pour l'exportation |
+| loi n° 87-51 du 2 août 1987 | code des investissements industriels |
+| loi n° 88-18 du 2 avril 1988 | code des investissements agricoles et de pêche |
+| loi n° 90-21 du 19 mars 1990 | code des investissements touristiques |
+
+Sources : @loi-72-38-regime-exportation ; @loi-87-51-code-investissements-industriels ; @loi-88-18-code-investissements-agricoles ; @loi-90-21-code-investissements-touristiques.
+
+Ces intitulés situent deux traits que le code de 1993 réunit. Dès 1972, une loi isole les industries produisant pour l'exportation. Et de 1987 à 1990, trois codes des investissements sont promulgués l'un après l'autre : pour l'industrie, pour l'agriculture et la pêche, pour le tourisme.
+
+<!-- TODO (documentaliste) : ouvrir les fascicules des lois d'avant 1993 pour établir taux, durées et dates d'effet (note docs/notes/fiscalite-depenses-fiscales.md, § 1.1 et § 7, point 6). Les fascicules français sont au corpus local, sans couche texte : OCR à faire. Priorité : loi n° 72-38 (JORT n° 17 de 1972) et loi n° 87-51 (JORT n° 56 de 1987). -->
+
+<!-- TODO (bibliographe) : sept textes d'avant 1993 relevés par la note documentaire n'ont pas de clé et ne sont donc pas cités — loi n° 69-35 du 26 juin 1969 (code des investissements), loi n° 74-74 du 3 août 1974 (industries manufacturières), loi n° 76-63 du 12 juillet 1976 (organismes financiers et bancaires travaillant avec des non-résidents), loi n° 81-56 du 23 juin 1981 (industries manufacturières et décentralisation industrielle), loi n° 82-67 du 6 août 1982 (agriculture et pêche), décret-loi n° 85-14 du 11 octobre 1985 ratifié par la loi n° 85-96 (industries exportatrices), loi n° 92-81 du 3 août 1992 (zones franches économiques). À verser quand les fascicules seront ouverts ; le tableau tbl-df-avant-1993 pourra alors couvrir 1969-1992. -->
+
+## Le code d'incitations aux investissements de 1993 {#sec-df-code-1993}
+
+La loi n° 93-120 du 27 décembre 1993 promulgue un [code d'incitations aux investissements](#g-code-incitations-investissements) unique [@loi-93-120-code-incitations]. Il réunit des incitations communes à tous les investissements et des régimes propres, dont trois sont suivis ici : l'exportation, le développement régional et le développement agricole (@tbl-df-code-1993). Ces trois régimes ont la même forme : les revenus ou les bénéfices tirés de l'activité sont déduits de l'assiette de l'impôt, en totalité pendant une première période, puis en partie.
+
+: Les principaux avantages du code d'incitations aux investissements, dans son texte de 1993 {#tbl-df-code-1993}
+
+| Régime | Avantage | Durée | Article |
+|---|---|---|---|
+| Incitations communes | dégrèvement des revenus ou bénéfices réinvestis dans la souscription au capital, dans la limite de 35 % des revenus ou bénéfices nets imposables | — | 7 § 1 |
+| Incitations communes, équipements | droits de douane réduits à 10 % ; suspension de la taxe sur la valeur ajoutée et du droit de consommation | — | 9 |
+| [Entreprises totalement exportatrices](#g-entreprise-totalement-exportatrice) | déduction totale des revenus et bénéfices tirés de l'exportation, puis déduction de 50 % | dix premières années à partir de la première opération d'exportation pour la déduction totale ; le texte ne fixe pas de terme à la déduction de 50 % | 12 § 6 et 7 |
+| Entreprises totalement exportatrices | ventes sur le marché local admises dans la limite de 20 % du chiffre d'affaires | — | 16 |
+| Entreprises partiellement exportatrices | même schéma, sur les seuls revenus tirés de l'exportation : déduction totale, puis de 50 % | dix ans pour la déduction totale | 22 § 2 et 3 |
+| Développement régional | déduction totale des revenus et bénéfices, puis déduction de 50 % | dix ans à partir de l'entrée en production, puis dix années suivantes | 23 § 2 |
+| Développement régional | prise en charge par l'État de la contribution patronale de sécurité sociale | cinq ans | 25 |
+| Développement agricole | déduction totale des revenus et bénéfices | dix premières années | 30 § 3 |
+
+Sources : @loi-93-120-code-incitations, art. 7, 9, 12, 16, 22, 23, 25 et 30.
+
+L'article 10 du code définit l'entreprise totalement exportatrice, et l'article 14 lui reconnaît la qualité de non-résidente lorsque 66 % au moins de son capital sont détenus par des non-résidents au moyen de devises [@loi-93-120-code-incitations, art. 10 et 14]. De là vient l'appellation courante de régime « offshore », par opposition au régime « onshore » des entreprises tournées vers le marché local : ces deux mots sont ceux des études de la Banque mondiale et de l'OCDE, le code ne les emploie pas.
+
+Le texte de 1993 ne borne pas la seconde période du régime de l'exportation. La Banque mondiale décrit pourtant ce régime, en 2014, comme une déduction de 50 % « pendant dix autres années » [@banquemondiale2014-revolution-inachevee, ch. 4] ; le texte qui aurait introduit ce terme entre 1993 et 2006 n'est pas établi ici. La date d'entrée en vigueur du code ne l'est pas davantage.
+
+<!-- TODO (documentaliste) : (1) date d'entrée en vigueur du code de 1993 — loi de promulgation, p. 2174 du JORT n° 99 du 28 décembre 1993, à relire sur la page (mention du 1er janvier 1994 pour les entreprises existantes, non confirmée) ; (2) terme de la déduction de 50 % des exportateurs entre 1993 et 2006 (note, § 7, points 7 et 13). -->
+
+Le code de 1993 a été retouché par les lois de finances jusqu'à son abrogation. Ces retouches annuelles ne sont pas suivies ici ; le chapitre ne retient que les ruptures.
+
+## L'évolution, réforme par réforme {#sec-df-reformes}
+
+### 2006-2014 — l'exportation imposée, après quatre reports
+
+La loi n° 2006-80 du 18 décembre 2006 met fin à la déduction des bénéfices tirés de l'exportation : ces bénéfices sont soumis à l'impôt sur les sociétés au taux de 10 %, et les revenus de même origine ne sont plus déductibles de l'assiette de l'impôt sur le revenu qu'à hauteur des deux tiers. Elle fixe l'application de cette règle au 1^er^ janvier 2008 [@loi-2006-80-reduction-taux, art. 5 et 6]. Quatre textes repoussent ensuite l'échéance (@tbl-df-reports).
+
+: L'imposition des bénéfices de l'exportation : la date votée et ses reports, 2006-2014 {#tbl-df-reports}
+
+| Texte | Article | Changement |
+|---|---|---|
+| loi n° 2006-80 du 18 décembre 2006 | 5 et 6 | déduction totale puis de 50 % → impôt sur les sociétés à 10 % et déduction des deux tiers des revenus, à partir du 1^er^ janvier 2008 |
+| loi de finances pour 2008 (loi n° 2007-70 du 27 décembre 2007) | 12 | 1^er^ janvier 2008 → 1^er^ janvier 2011 |
+| loi de finances pour 2011 (loi n° 2010-58 du 17 décembre 2010) | 24 | 1^er^ janvier 2011 → 1^er^ janvier 2012 |
+| loi de finances complémentaire pour 2011 (décret-loi n° 2011-56 du 25 juin 2011) | 11 | 1^er^ janvier 2012 → 1^er^ janvier 2013 |
+| loi de finances pour 2013 (loi n° 2012-27 du 29 décembre 2012) | 20 | 1^er^ janvier 2013 → 1^er^ janvier 2014 |
+
+Sources : @loi-2006-80-reduction-taux, art. 5 et 6 ; @loi-2007-70-lf-2008, art. 12 ; @lf-2011, art. 24 ; @dl-2011-56-lfc-2011, art. 11 ; @lf-2013, art. 20.
+
+La loi de finances pour 2014 ne repousse pas l'échéance une cinquième fois [@lf-2014]. Le taux de 10 %, voté en 2006 pour 2008, régit donc les bénéfices de l'exportation à partir de 2014, six ans après la date d'abord prévue.
+
+<!-- TODO (documentaliste) : le constat « appliqué à partir de 2014 » suppose qu'aucun texte postérieur à la LF 2013 n'a touché à ce calendrier. Ouvrir en premier l'art. 18 de la LF 2015 (loi n° 2014-59, « mesures de soutien des entreprises totalement exportatrices », JORT n° 105 de 2014), dont seul l'intitulé est connu (note, § 7, point 12). Non repris au chapitre, faute de texte : LF 2014, art. 49-50 (taxe sur les établissements étendue au chiffre d'affaires à l'exportation) et art. 54 (redevances) ; estimation de +137 MD du gain attendu (seconde main) ; LFC 2012, art. 7 (clé lfc-2012 : ventes locales portées à 40 % en 2012, mesure conjoncturelle). -->
+
+### 2016-2017 — le code abrogé, les avantages dans le code de l'impôt
+
+La réforme se fait en deux lois. La loi de l'investissement du 30 septembre 2016 abroge le code de 1993, à l'exception de ses articles 14 et 36, et maintient les droits acquis ; elle entre en vigueur le 1^er^ janvier 2017 [@loi-2016-71-investissement, art. 26 à 29]. Hors les projets d'intérêt national, elle ne porte plus elle-même d'avantage fiscal lié à l'exploitation. Elle organise quatre [primes](#g-prime-investissement) versées par le budget — augmentation de la valeur ajoutée et de la compétitivité, développement de la capacité d'employabilité, développement régional, développement durable [@loi-2016-71-investissement, art. 19] — et réserve aux projets d'intérêt national une déduction des bénéfices de l'assiette de l'impôt sur les sociétés dans la limite de dix ans, avec une prime d'investissement plafonnée au tiers du coût du projet [@loi-2016-71-investissement, art. 20].
+
+La matière fiscale est traitée par la loi n° 2017-8 du 14 février 2017, portant refonte du dispositif des avantages fiscaux, applicable à partir du 1^er^ avril 2017. Elle insère dans le code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés un chapitre IV nouveau, articles 63 à 77 [@loi-avantages-fiscaux-2017, art. 1 et 23]. Les avantages quittent ainsi un code de l'investissement pour le code de l'impôt (@tbl-df-1993-2017). La période de déduction totale disparaît pour l'exportation et tombe à cinq ans dans le premier groupe de zones de développement régional ; au-delà de cette période, les trois régimes reçoivent la même règle : deux tiers des revenus déductibles, bénéfices imposés au taux réduit de 10 %.
+
+: Les avantages sur les revenus et les bénéfices, du texte de 1993 à la refonte de 2017 {#tbl-df-1993-2017}
+
+| Régime | Code de 1993, texte d'origine | Code de l'impôt, à partir du 1^er^ avril 2017 | Articles du code de l'impôt |
+|---|---|---|---|
+| Exportation | déduction totale pendant dix ans, puis de 50 % | plus de période de déduction totale : deux tiers des revenus déductibles ; bénéfices au taux réduit de 10 % | 67 |
+| Développement régional | déduction totale pendant dix ans, puis de 50 % pendant dix ans | déduction totale pendant cinq ans (premier groupe de [zones de développement régional](#g-zone-developpement-regional)) ou dix ans (deuxième groupe) ; ensuite deux tiers des revenus déductibles, bénéfices au taux réduit de 10 % | 63 et 64 |
+| Agriculture et pêche | déduction totale pendant dix ans | déduction totale pendant dix ans, inchangée ; ensuite deux tiers des revenus déductibles, bénéfices au taux réduit de 10 % | 65 et 66 |
+| Entreprises nouvelles | — | déduction de 100 %, 75 %, 50 % et 25 % des revenus ou bénéfices au cours des quatre premières années ; en sont exclus la finance, l'énergie hors énergies renouvelables, les mines, la promotion immobilière, la consommation sur place, le commerce et les télécommunications | 71 |
+
+Sources : @loi-93-120-code-incitations, art. 12, 23 et 30 ; @loi-avantages-fiscaux-2017, art. 1 (articles 63 à 67 et 71 nouveaux du code).
+
+Pour l'exportation, la colonne de 1993 n'est plus le droit applicable à la veille de la refonte : depuis 2014, les bénéfices sont déjà imposés à 10 % (@tbl-df-reports). La loi de 2017 reprend cette règle dans le code. Le taux de 10 % auquel renvoient les articles 64, 66 et 67 est le taux réduit de l'impôt sur les sociétés, décrit à son chapitre (@sec-impot-societes). La composition des deux groupes de zones de développement régional n'est pas établie ici.
+
+<!-- TODO (documentaliste) : liste des zones de développement régional (deux groupes de l'art. 63) — vraisemblablement au décret gouvernemental n° 2017-389 du 9 mars 2017 (JORT n° 25 de 2017), dont seul l'intitulé est connu ; portée fiscale de la loi n° 2019-47 du 29 mai 2019 (climat de l'investissement), idem (note, § 7, point 11). -->
+
+La même loi crée l'instrument de mesure. Son article 18 charge le ministère des Finances d'un rapport annuel sur les avantages fiscaux et financiers, ventilés par secteur, par gouvernorat et par délégation, avec les emplois créés et le chiffre d'affaires à l'exportation [@loi-avantages-fiscaux-2017, art. 18]. L'OCDE avait recommandé en 2013 la publication d'un rapport annuel sur les dépenses fiscales [@ocde2013-incitations-fiscales-tunisie]. C'est sur ce rapport que repose la mesure du coût présentée plus bas (@sec-df-rapport).
+
+### 2019-2021 — la fin du régime de l'exportation
+
+La loi de finances pour 2019 abroge les articles 67 à 69 du code de l'impôt, c'est-à-dire le régime de l'exportation tel que la loi de 2017 venait de l'y inscrire [@loi2018-56-lf2019, art. 37]. Les entreprises en activité au 31 décembre 2018 en conservent le bénéfice jusqu'au 31 décembre 2020 [@loi2018-56-lf2019, art. 41].
+
+La suite relève des taux de l'impôt sur les sociétés : le palier de 13,5 % voté en 2018 pour 2021 et qui n'a régi aucun exercice, le taux de 15 % applicable aux bénéfices de 2021, celui de 20 % à partir de 2024. Elle est exposée au chapitre de cet impôt (@sec-impot-societes).
+
+## La longue période : ce que coûtent les avantages {#sec-df-cout}
+
+Deux ensembles de mesures existent, et ils ne se raccordent pas. Avant 2017, des estimations ponctuelles, dues à des auteurs différents, portent sur les incitations du code d'investissement — pour l'essentiel des déductions d'impôts directs. Depuis 2017, les rapports du ministère des Finances recensent toutes les dérogations, où l'imposition indirecte domine. Aucune série homogène ne couvre les deux périodes.
+
+### Avant 2017 : des estimations d'auteurs
+
+Les estimations antérieures à 2017 diffèrent par leur périmètre et leur méthode. Elles sont données ici comme les estimations de leurs auteurs, telles que les rapportent la Banque mondiale et l'OCDE, et ne forment pas une série (@tbl-df-estimations).
+
+: Estimations du coût des incitations à l'investissement antérieures à 2017, par auteur {#tbl-df-estimations}
+
+| Période | Estimation | Périmètre | Auteur de l'estimation | Rapportée par |
+|---|---|---|---|---|
+| 2000 | 557 MD, « environ 2 % du PIB » | coût fiscal des incitations | Organisation mondiale du commerce (2001) | @banquemondiale2014-revolution-inachevee, ch. 4, note 10, p. 164 |
+| 1994-2007, moyenne | 2,14 % du PIB | coût direct des incitations fiscales | K. Ghazouani (2011) | @ocde2013-incitations-fiscales-tunisie, p. 12 |
+| 2005 | « environ 0,75 % du PIB » | dépense fiscale des incitations | Fonds monétaire international (2005 et 2012) | @banquemondiale2014-revolution-inachevee, ch. 4, note 10, p. 164 |
+| 2009 | 1 296 MD, soit 2,2 % du PIB et 8,5 % des recettes ; dont avantages fiscaux 1 198 MD et primes versées par l'APII (33 MD), l'APIA (54 MD) et l'ONTT (11 MD) | coût net total, fiscal et financier, des incitations du code | Banque mondiale, d'après une étude d'IFC et ECOPA (2012) | @banquemondiale2014-revolution-inachevee, ch. 4, tableau 4.2, p. 143-144 |
+
+Pour les années 2009 à 2011, un diaporama de la Banque mondiale présenté à Tunis en septembre 2014 décompose le coût fiscal net de ces avantages (@tbl-df-cout-2009-2011).
+
+: Coût fiscal net des avantages du code d'incitations aux investissements, 2009-2011, selon la Banque mondiale (millions de dinars) {#tbl-df-cout-2009-2011}
+
+| | 2009 | 2010 | 2011 |
+|---|---:|---:|---:|
+| Déductions d'impôts | 839 | 948 | 907 |
+| Déductions douanières | 405 | 504 | 394 |
+| Impôts additionnels | −22 | −23 | −23 |
+| Droits de porte additionnels | −107 | −125 | −120 |
+| **Coût fiscal net** | **1 115** | **1 304** | **1 158** |
+
+Source : @loeprick2014-incitations-fiscales, p. 16.
+
+Les deux documents de la Banque mondiale ne donnent pas le même montant pour 2009 : 1 198 MD d'avantages fiscaux dans le rapport, 1 115 MD de coût fiscal net dans le diaporama. Ce sont deux états de la même étude, que rien ne permet ici de rapprocher.
+
+Selon le même rapport, la déduction des bénéfices des entreprises totalement exportatrices représente à elle seule 826,8 MD par an en moyenne de 2008 à 2011, soit 67 % des déductions ; s'y ajoutent 97,4 MD pour l'exportation hors du code et 87,2 MD pour les exportateurs partiels [@banquemondiale2014-revolution-inachevee, ch. 4, tableau 4.3, p. 144]. De 2008 à 2011, le régime de l'exportation est donc, d'après cette étude, le premier poste du coût des incitations.
+
+<!-- TODO (documentaliste) : la figure 4.4 du rapport de la Banque mondiale (coût net des avantages fiscaux en % du PIB et des recettes, 2009-2011) et sa figure 4.1 (répartition régionale) sont à relever sur la page : l'affectation des valeurs aux années n'est pas sûre (note, § 2.3 et § 7, point 5). Les sources premières — OMC 2001, FMI 2005 et 2012, Ghazouani 2011, IFC-ECOPA 2012 — ne sont pas collectées ; une estimation non datée de Ghazouani (2,9 % du PIB) est écartée du tableau faute de date. -->
+
+### Depuis 2017 : le rapport annexé au projet de loi de finances {#sec-df-rapport}
+
+Le rapport a deux fondements. L'article 18 de la loi du 14 février 2017 en fait une obligation annuelle du ministère des Finances [@loi-avantages-fiscaux-2017, art. 18]. La loi organique du budget du 13 février 2019 range ensuite, parmi les documents qui accompagnent le projet de loi de finances, « un rapport sur les dépenses fiscales et les avantages financiers octroyés », cette obligation devant entrer en vigueur « au plus tard à la fin de l'année 2020 » [@loi-org-2019-15-lob, art. 46 et 70]. Le rapport annexé au projet de loi de finances pour 2021 indique qu'un arrêté du ministre des Finances du 8 novembre 2017 a chargé la direction générale des avantages fiscaux et financiers de l'établir [@gbo-depenses-fiscales, rapport annexé au projet de loi de finances pour 2021, section 1]. Cet arrêté n'est pas identifié ici.
+
+<!-- RECHERCHE r-arrete-2017-rapport-depenses-fiscales : arrêté du ministre des Finances du 8 novembre 2017 chargeant la direction générale des avantages fiscaux et financiers d'établir le rapport sur les dépenses fiscales (voir docs/recherches.yml) -->
+
+La série présentée ici commence avec le rapport annexé au projet de loi de finances pour 2021, qui porte sur les exercices 2017 à 2019. Chaque rapport donne, dans son introduction, les agrégats de l'exercice le plus récent qu'il couvre (@tbl-df-agregats).
+
+<!-- TODO (documentaliste) : l'existence d'un rapport annexé aux projets de loi de finances pour 2019 et 2020 n'est pas établie (note, § 7, point 3) ; le rapport annexé au PLF 2026 n'a pas été cherché. -->
+
+: Avantages fiscaux et avantages financiers publiés en tête des rapports annexés aux projets de loi de finances, exercices 2019 à 2023 {#tbl-df-agregats}
+
+| Exercice | Avantages fiscaux (MD) | % du PIB | % du budget de l'État | % des ressources fiscales | Avantages financiers (MD) | Total (MD) | Total, % du PIB | Rapport annexé au projet de loi de finances pour |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| 2019 | 4 712 | 4,14 | 11,15 | 16,3 ou 19,15 | 932 | 5 644 | 4,96 | 2021 [@gbo-depenses-fiscales, rapport annexé au projet de loi de finances pour 2021, p. 6] |
+| 2020 | 4 225 | 3,6 | 8,95 | 18,06 | 702 | 4 927 | 4,21 | 2022 [@minfin-depenses-fiscales-plf2022, p. 7] |
+| 2021 | 7 745 | 5,92 | 13,95 | 25,13 | 642 | 8 387 | 6,41 | 2023 [@minfin-depenses-fiscales-plf2023, p. 7] |
+| 2022 | 6 361 | 4,40 | 12,49 | 17,94 | 544 | 6 905 | 4,77 | 2024 [@gbo-depenses-fiscales, rapport annexé au projet de loi de finances pour 2024, p. 7] |
+| 2023 | 6 164,7 | 3,89 | 10,31 | 16,20 | 520,7 | 6 685,4 | 4,22 | 2025 [@gbo-depenses-fiscales, rapport annexé au projet de loi de finances pour 2025, p. 7] |
+
+Les cinq lignes de ce tableau viennent de cinq rapports différents. Elles ne se lisent pas comme une série à périmètre constant.
+
+::: {.callout-note title="Comment lire ces montants"}
+**Le périmètre change.** Les rapports annexés aux projets de loi de finances pour 2024 et 2025 précisent que leur montant est donné sans les dépenses fiscales liées à l'exonération des médicaments et des engrais [@gbo-depenses-fiscales, rapport annexé au projet de loi de finances pour 2024, p. 7, et pour 2025, p. 7]. Le rapport annexé au projet pour 2021 les compte : son tableau n° 9 donne, pour 2019, 274,5 MD au titre des médicaments et articles paramédicaux et 249,9 MD au titre des engrais [@gbo-depenses-fiscales, rapport annexé au projet de loi de finances pour 2021, tableau n° 9]. Les lignes 2022 et 2023 ne sont donc pas comparables à la ligne 2019. Le périmètre des rapports annexés aux projets pour 2022 et 2023, d'où viennent les lignes 2020 et 2021, n'est pas établi ici sur ce point.
+
+**Un même exercice reçoit plusieurs valeurs.** Les rapports se chevauchent et se révisent (@tbl-df-revisions). L'exercice 2021 vaut 7 745 MD dans le rapport qui le publie le premier [@minfin-depenses-fiscales-plf2023, p. 7], et environ 5 872 MD dans les deux suivants. L'écart est trop grand pour une simple révision ; sa cause — périmètre ou méthode — n'est pas établie ici.
+
+**Le rapport de 2021 donne deux ratios pour 2019.** Son introduction rapporte les 4 712 MD à 16,3 % des « ressources fiscales » ; son tableau n° 4 les rapporte à 24 602,4 MD de [recettes fiscales](#g-recettes-fiscales), soit 19,15 % [@gbo-depenses-fiscales, rapport annexé au projet de loi de finances pour 2021, p. 6 et tableau n° 4, p. 29]. Le dénominateur retenu par l'introduction n'est pas établi.
+
+**Tout n'est pas chiffré.** Les rapports ne valorisent qu'une partie des dispositifs qu'ils recensent, de l'ordre de sept sur dix dans celui du projet pour 2021 [@gbo-depenses-fiscales]. Les montants publiés sont ceux des seuls dispositifs chiffrés.
+:::
+
+: Un même exercice dans plusieurs rapports : avantages fiscaux des exercices 2020 et 2021 (millions de dinars) {#tbl-df-revisions}
+
+| Exercice | Rapport annexé au projet pour 2022 | pour 2023 | pour 2024 | pour 2025 |
+|---|---:|---:|---:|---:|
+| 2020 | 4 225 | — | 4 795,5 | — |
+| 2021 | — | 7 745 | 5 871,5 | 5 872,3 |
+
+Sources : @minfin-depenses-fiscales-plf2022, p. 7 ; @minfin-depenses-fiscales-plf2023, p. 7 ; @gbo-depenses-fiscales, rapports annexés aux projets de loi de finances pour 2024 et 2025. Les valeurs des rapports pour 2022 et 2023 sont celles de leur introduction ; celles des rapports pour 2024 et 2025 sont la somme de leurs montants par impôt.
+
+<!-- TODO (documentaliste) : archiver dans tunisia-data les rapports annexés aux PLF 2022 (http://www.gbo.tn/sites/default/files/2022-01/ANNEXE_12%20D%C3%A9penses%20fiscales.pdf) et 2023 (http://www.gbo.tn/sites/default/files/2023-01/DOC%20ANNE%208.pdf), dont seule l'introduction (p. 7) est connue ; y lire le périmètre (médicaments, engrais), les exercices couverts et la cause de l'écart sur 2021 (7 745 contre 5 872 MD) ; confirmer le numéro d'annexe du rapport 2023. Vérifier sur les rapports les décomptes de dispositifs valorisés (243/347 ; 37/57 ; 34/63) et les sommes par impôt 4 795,5, 5 871,5 et 5 872,3, tenus de la série traitée (note, § 2.2). -->
+
+<!-- TODO (rédacteur) : aucune figure n'est construite ici, et figures/depenses_fiscales.py n'est pas appelé : sa série coud trois rapports (PLF 2021, 2024, 2025) et porte à la couture 2019/2020 la rupture de périmètre décrite ci-dessus (médicaments et engrais exclus à partir des rapports 2024). À reprendre quand la série aura été reconstruite sur les cinq rapports, périmètre par périmètre. -->
+
+### La répartition par impôt
+
+Le coût se loge d'abord dans l'imposition indirecte. De 2017 à 2019, le droit de consommation, la taxe sur la valeur ajoutée et les droits de douane font ensemble plus des quatre cinquièmes du total ; l'impôt sur les sociétés et l'impôt sur le revenu, où se logent les régimes d'incitation à l'investissement, en font moins d'un cinquième (@tbl-df-par-impot).
+
+: Dépenses fiscales par impôt, 2017-2019, d'après le rapport annexé au projet de loi de finances pour 2021 (millions de dinars) {#tbl-df-par-impot}
+
+| Impôt | 2017 | 2018 | 2019 | 2019, en % des recettes du même impôt |
+|---|---:|---:|---:|---:|
+| Droit de consommation | 1 454,1 | 1 806,4 | 2 007,3 | 69,88 |
+| Taxe sur la valeur ajoutée | 1 326,4 | 1 616,8 | 1 532,8 | 19,66 |
+| Droits de douane | 382,3 | 834,8 | 815,0 | 63,45 |
+| Impôt sur les sociétés | 559,7 | 551,2 | 350,5 | 9,15 |
+| Impôt sur le revenu | 65,3 | 73,5 | 6,7 | 0,08 |
+| **Total** | **3 787,8** | **4 882,7** | **4 712,3** | **19,15** |
+
+Source : @gbo-depenses-fiscales, rapport annexé au projet de loi de finances pour 2021, tableaux n° 3 et n° 4.
+
+Les dépenses fiscales des deux impôts directs passent de 624,7 MD en 2018 à 357,2 MD en 2019. Le rapport attribue cette baisse à l'entrée en vigueur de la loi de 2017, certaines dépenses étant, selon ses termes, « devenues moins préférentielles que le régime fiscal de référence » [@gbo-depenses-fiscales, rapport annexé au projet de loi de finances pour 2021, p. 29].
+
+<!-- TODO (documentaliste) : répartition par impôt des exercices 2020 à 2023, à relever sur les rapports eux-mêmes et à présenter par périmètre ; la série traitée donne pour 2023 (rapport PLF 2025, hors médicaments et engrais) : droit de consommation 2 632,8, TVA 1 565,9, douanes 1 517,4, IS 337,7, IR 110,8 MD (note, § 2.2), non publiés au chapitre tant que la rupture de périmètre n'est pas traitée. -->
+
+## Qui en bénéficie {#sec-df-beneficiaires}
+
+### 2017-2019 : entreprises et ménages, d'après le rapport officiel
+
+Le rapport annexé au projet de loi de finances pour 2021 ventile les dépenses fiscales par bénéficiaire, par objectif et par forme (@tbl-df-beneficiaires). Les entreprises en reçoivent environ la moitié ; la part des ménages passe de 40 % en 2017 à 44 % en 2019.
+
+: Dépenses fiscales par bénéficiaire, par objectif et par forme, 2017-2019 (millions de dinars et part du total) {#tbl-df-beneficiaires}
+
+| Ventilation | 2017 | 2018 | 2019 |
+|---|---:|---:|---:|
+| **Bénéficiaires** : entreprises | 1 937 (51 %) | 2 580 (53 %) | 2 329 (49 %) |
+| ménages | 1 521 (40 %) | 1 907 (39 %) | 2 072 (44 %) |
+| souscripteurs | 232 (6 %) | 239 (5 %) | 240 (5 %) |
+| autres | 97 (3 %) | 156 (3 %) | 72 (2 %) |
+| **Objectifs** : économique | 2 131 (56 %) | 2 748 (56 %) | 2 399 (51 %) |
+| social | 1 636 (43 %) | 2 106 (43 %) | 2 273 (48 %) |
+| **Forme**, dont : exonération | 1 861 (49 %) | 2 655 (54 %) | 2 791 (59 %) |
+| déduction (impôts directs) | 625 (16 %) | 625 (13 %) | 357 (8 %) |
+
+Source : @gbo-depenses-fiscales, rapport annexé au projet de loi de finances pour 2021, tableaux n° 5, n° 7 et n° 8.
+
+La ventilation par domaine situe les régimes d'incitation dans cet ensemble (@tbl-df-domaines).
+
+: Les domaines les plus coûteux des dépenses fiscales, 2017-2019 (millions de dinars) {#tbl-df-domaines}
+
+| Domaine | 2017 | 2018 | 2019 |
+|---|---:|---:|---:|
+| Tunisiens résidents à l'étranger | 1 096,5 | 1 294,6 | 1 556,7 |
+| dont retour définitif | 1 028,5 | 1 183,8 | 1 420,5 |
+| Concessionnaires automobiles | 606,8 | 730,2 | 764,8 |
+| Approvisionnement du marché local | 418,5 | 531,0 | 480,3 |
+| Appui à l'industrie locale | 115,9 | 506,8 | 476,0 |
+| Santé | 234,3 | 299,4 | 323,5 |
+| Encouragement à l'investissement | 433,1 | 414,5 | 192,0 |
+| dont exportation | 202,5 | 203,4 | 49,7 |
+| dont développement régional (revenus et bénéfices) | 109,9 | 81,7 | 44,8 |
+| **Total des dépenses fiscales** | **3 787,8** | **4 882,7** | **4 712,3** |
+
+Source : @gbo-depenses-fiscales, rapport annexé au projet de loi de finances pour 2021, tableaux n° 3 et n° 9.
+
+Dans ce recensement, l'encouragement à l'investissement pèse 11 % du total en 2017, 8 % en 2018 et 4 % en 2019. Le premier domaine est un avantage accordé à des ménages, celui des Tunisiens résidents à l'étranger, qui fait entre un quart et un tiers du total selon l'année ; le deuxième est celui des concessionnaires automobiles.
+
+La ligne « exportation » appelle une précaution. Elle vaut environ 200 MD en 2017 et 2018, quand la Banque mondiale chiffrait à 826,8 MD par an, pour 2008-2011, la seule déduction des entreprises totalement exportatrices. Entre les deux mesures se placent l'imposition à 10 % des bénéfices de l'exportation, appliquée à partir de 2014, et un changement de méthode ; la part de chacun dans l'écart n'est pas établie.
+
+<!-- TODO (documentaliste) : (1) le tableau n° 6 du rapport PLF 2021 (par secteur, 2017-2019) n'est relevé que pour 2019 dans la note : relever les trois années avant de le publier ; (2) les mêmes ventilations existent dans les rapports PLF 2022 à 2025 et ne sont pas relevées ; (3) ventilation par gouvernorat et délégation prévue par l'art. 18 de la loi n° 2017-8 : présence dans les rapports à vérifier (note, § 3.1 et § 7, point 9) ; (4) coût pour la sécurité sociale des prises en charge de cotisations patronales (code de 1993, art. 25), à croiser avec le volume « Cotisations sociales » (§ 7, point 10). -->
+
+### 2008-2012 : la concentration, selon la Banque mondiale
+
+Pour la période antérieure, les seules mesures de répartition disponibles ici sont celles que la Banque mondiale a publiées en 2014, à partir de l'étude déjà citée. Elles portent sur les incitations du code d'investissement, non sur l'ensemble des dépenses fiscales (@tbl-df-concentration).
+
+: La répartition des incitations du code d'investissement selon la Banque mondiale, 2008-2012 {#tbl-df-concentration}
+
+| Mesure | Valeur publiée par la Banque mondiale | Source |
+|---|---|---|
+| Concentration | plus de 90 % des incitations fiscales et douanières vont à environ 2 500 entreprises, sur environ 24 000 bénéficiaires | @banquemondiale2014-revolution-inachevee, ch. 4, p. 144 ; @loeprick2014-incitations-fiscales, p. 17 |
+| Par régime | la déduction des entreprises totalement exportatrices fait 67 % des déductions ; les quatre premiers types d'incitation, sur 68, en font près de 85 % | @banquemondiale2014-revolution-inachevee, ch. 4, tableau 4.3, p. 144 |
+| Par secteur | mines 21 % du total, puis énergie, services (banque) et industrie (textile) | @banquemondiale2014-revolution-inachevee, ch. 4, p. 144 |
+| Par région | les incitations à l'exportation ont profité presque entièrement aux régions côtières | @banquemondiale2014-revolution-inachevee, ch. 4, p. 140-141 |
+| Coût par emploi | 6 362 dinars par an et par emploi ; environ 30 000 dinars par an et par emploi additionnel | @banquemondiale2014-revolution-inachevee, ch. 4, p. 145 ; @loeprick2014-incitations-fiscales, p. 17 |
+
+Le rapport de la Banque mondiale indique en outre que 79 % des investisseurs auraient investi sans incitation [@banquemondiale2014-revolution-inachevee, ch. 4, p. 143-144]. Le diaporama de septembre 2014 donne, pour la même question, d'autres proportions (@tbl-df-aubaine). Les deux documents ne coïncident pas, et le chapitre ne les fond pas en un chiffre.
+
+: Entreprises déclarant qu'elles auraient investi sans incitation, d'après le diaporama de la Banque mondiale de septembre 2014 {#tbl-df-aubaine}
+
+| Entreprises | Auraient investi sans incitation | N'auraient pas investi |
+|---|---:|---:|
+| Ensemble | 61,2 % | 38,8 % |
+| Régime de l'exportation (« off-shore ») | 56,5 % | 43,5 % |
+| Régime intérieur (« on-shore ») | 65,7 % | 34,3 % |
+
+Source : @loeprick2014-incitations-fiscales, p. 15.
+
+L'OCDE, dans son analyse de 2013, ne propose pas d'estimation propre du coût ; elle compare la charge fiscale de l'industrie du régime intérieur à celle de l'industrie exportatrice et recommande la publication d'un rapport annuel sur les dépenses fiscales [@ocde2013-incitations-fiscales-tunisie]. Aucune mesure de la répartition par taille d'entreprise ou par région n'est établie ici pour la période postérieure à 2017.
+
+<!-- TODO (documentaliste) : taux effectifs marginaux d'imposition de l'OCDE (35,78 % pour l'industrie du régime intérieur, 4,53 % pour l'industrie exportatrice, p. 7) non publiés ici faute d'année de référence et de série ; documents de la réforme de 2013-2014 (présentation Louati de juin 2013, document du CNF d'août 2013) connus de seconde main seulement, année non dite (note, § 3.3). -->

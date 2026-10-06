@@ -26,6 +26,8 @@ book:
     #                          Quarto refuse un chapitre déclaré dont le fichier manque.
     - _tva.qmd
     - _droits_consommation.qmd
+    # - _depenses_fiscales.qmd   # À décommenter quand la traduction arabe du chapitre est livrée :
+    #                              Quarto refuse un chapitre déclaré dont le fichier manque.
   appendices:
     - _glossaire.qmd
 
