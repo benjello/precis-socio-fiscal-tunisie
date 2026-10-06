@@ -1886,6 +1886,254 @@ entries:
         قيد الحياة لفائدة القرين واليتامى.
       synonymes: []
 
+  # --- Accidents du travail : assiette et modulation de la cotisation (ticket #364).
+  # Passe 1 du 05/10/2026 : termes seuls ; passe 2 du même jour : définitions, écrites
+  # sur les textes cités par la note documentaire du ticket. Les termes arabes
+  # sont transcrits des scans de l'édition arabe du JORT par le documentaliste, non
+  # relus par un arabophone : d'où `provisoire` et l'absence de `source_traduction`.
+
+  - id: maladie-professionnelle
+    acronyme: null
+    # AR : « الأمراض المهنية » (loi n° 94-28, art. 90 ; décret n° 95-538, art. 10 et 22),
+    # ramené au singulier indéfini comme « حادث شغل ». Passe 2 du 05/10/2026 : l'article 3
+    # est lu — alinéas 3 à 6, éd. française par la couche texte, éd. arabe p. 300 à
+    # l'image : « يعتبر مرضا مهنيا كل ظاهرة اعتلال وكل تعفن جرثومي أو إصابة يكون مصدرها
+    # بالقرينة ناشئا عن النشاط المهني للمتضرر ». Le singulier est donc attesté. Reste
+    # `provisoire` : transcription d'un scan, non relue par un arabophone.
+    statut: provisoire
+    references: []
+    source_definition: {ref: loi94-28, locator: "art. 3"}
+    voir_aussi: [accident-du-travail, rente-accident-travail, cnam]
+    fr:
+      terme: Maladie professionnelle
+      definition: >
+        Toute manifestation morbide, infection microbienne ou affection dont l'origine
+        est imputable par présomption à l'activité professionnelle de la victime. La
+        liste des maladies présumées d'origine professionnelle et des principaux travaux
+        susceptibles d'en être à l'origine est fixée par arrêté conjoint des ministres de
+        la santé publique et des affaires sociales ; elle fixe aussi le délai de prise en
+        charge pendant lequel le travailleur qui n'est plus exposé aux causes de la
+        maladie conserve son droit à réparation, et elle est révisée au moins une fois
+        tous les trois ans.
+      synonymes: []
+    ar:
+      terme: مرض مهني
+      definition: >
+        كلّ ظاهرة اعتلال وكلّ تعفّن جرثومي أو إصابة يكون مصدرها بالقرينة ناشئًا عن النشاط
+        المهني للمتضرّر. وتُضبط قائمة الأمراض المعتبرة ذات مصدر مهني وأهمّ الأعمال التي قد
+        تكون سببًا فيها بقرار مشترك بين وزيري الصحّة العمومية والشؤون الاجتماعية؛ وتحدّد
+        هذه القائمة كذلك المدّة التي يظلّ فيها العامل مستحقًّا للتعويض بعد أن يصبح غير
+        معرّض لمسبّبات المرض، وتقع مراجعتها مرّة كلّ ثلاث سنوات على الأقلّ.
+      synonymes: []
+
+  - id: assiette-cotisations
+    acronyme: null
+    # AR : « قاعدة الإشتراك » (loi n° 95-101, art. 1er, art. 42 nouveau de la loi
+    # n° 60-30, JORT ar. p. 2333 ; le scan porte la hamza, le glossaire écrit
+    # « الاشتراك » comme dans ses définitions existantes). Variante : « قاعدة احتساب
+    # المساهمات » (intitulé du décret n° 2000-1439). À ne pas confondre avec
+    # `assiette-fiscale` (« الوعاء الضريبي »).
+    statut: provisoire
+    references: [loi60-30, loi94-28, decret95-538]
+    source_definition: {ref: loi95-101, locator: "art. 1er (art. 42 nouveau de la loi n° 60-30)"}
+    voir_aussi: [cotisations-sociales, salaire-forfaitaire, salaire-brut, assiette-fiscale]
+    fr:
+      terme: Assiette des cotisations
+      definition: >
+        Base sur laquelle les cotisations sont calculées. Dans le régime général de
+        sécurité sociale, elle comprend, depuis la loi n° 95-101, l'ensemble des éléments
+        des salaires, émoluments, indemnités et tous autres avantages, en espèces ou en
+        nature, liés à la qualité de salarié, accordés directement ou indirectement ; en
+        sont exclus, en tout ou en partie, les avantages revêtant un caractère de
+        remboursement de frais, d'indemnisation ou d'action sociale, culturelle et
+        sportive, dont un décret fixe la liste. Le régime de réparation des accidents du
+        travail et des maladies professionnelles n'a pas d'assiette propre : la loi
+        n° 94-28 (art. 17) et le décret n° 95-538 (art. 3) renvoient à celle de
+        l'article 42 de la loi n° 60-30. Des décrets peuvent lui substituer une
+        évaluation forfaitaire des salaires dans certaines professions.
+      synonymes: [assiette de cotisations]
+    ar:
+      terme: قاعدة الاشتراك
+      definition: >
+        الأساس الذي تُحتسب عليه الاشتراكات. وتشمل في النظام العام للضمان الاجتماعي، منذ
+        القانون عدد 101 لسنة 1995، مجموع عناصر الأجور والرواتب والمنح وغيرها من المنافع
+        النقدية أو العينية المرتبطة بصفة الأجير، الممنوحة بصفة مباشرة أو غير مباشرة؛
+        وتُعفى منها كليًّا أو جزئيًّا المنافع التي تكتسي صبغة استرجاع مصاريف أو تعويضات
+        أو عمل اجتماعي أو ثقافي أو رياضي، وتُضبط قائمتها بأمر. وليس لنظام جبر الأضرار
+        الحاصلة بسبب حوادث الشغل والأمراض المهنية قاعدة خاصّة به: فالقانون عدد 28 لسنة
+        1994 (الفصل 17) والأمر عدد 538 لسنة 1995 (الفصل 3) يحيلان على قاعدة الفصل 42 من
+        القانون عدد 30 لسنة 1960. ويمكن أن يُعوَّض عنها بأمر، بالنسبة لبعض المهن، تقدير
+        جزافي للأجور.
+      synonymes: [قاعدة احتساب المساهمات]
+
+  - id: salaire-forfaitaire
+    acronyme: null
+    # Trois formes arabes selon le texte : « أجر تقديري » (décret n° 95-538, art. 4 à 7,
+    # JORT ar. pp. 691-692) ; « الأجر الجزافي » (décret n° 2000-1439) ; « تقدير جزافي
+    # للأجور والمداخيل » (loi n° 94-28, art. 17, al. 2). Terme principal retenu :
+    # « تقديري », forme du décret qui institue les forfaits et rendu déjà suivi par
+    # `revenu-forfaitaire` et `regime-forfaitaire`. Distinct de `revenu-forfaitaire`,
+    # qui désigne les classes de revenus des non-salariés.
+    statut: provisoire
+    references: [loi94-28, decret99-1010, decret2000-1439]
+    source_definition: {ref: decret95-538, locator: "art. 4 à 7"}
+    voir_aussi: [assiette-cotisations, revenu-forfaitaire, smig, smag]
+    fr:
+      terme: Salaire forfaitaire
+      definition: >
+        Salaire fixé par décret, qui tient lieu des salaires réels pour le calcul des
+        cotisations de certaines catégories ou branches d'activité (loi n° 94-28,
+        art. 17, al. 2). Le décret n° 95-538 en institue quatre pour le régime des
+        accidents du travail et des maladies professionnelles — secteur agricole et pêche
+        à la part, chauffeurs de louage et de taxis et « masseurs » des bains maures,
+        employés de maison, travailleurs employés temporairement auprès des individus —,
+        exprimés en multiples du SMAG ou du SMIG rapportés à une durée de travail et
+        affectés, selon le cas, d'un coefficient. Le décret n° 2000-1439 fixe celui des
+        travailleurs du transport par taxi, louage et transport rural.
+      synonymes: [évaluation forfaitaire des salaires]
+    ar:
+      terme: الأجر التقديري
+      definition: >
+        أجر يُضبط بأمر ويقوم مقام الأجور الفعلية في احتساب اشتراكات بعض الأصناف أو
+        القطاعات (القانون عدد 28 لسنة 1994، الفصل 17، الفقرة 2). وقد أحدث الأمر عدد 538
+        لسنة 1995 أربعة منها في نظام حوادث الشغل والأمراض المهنية — القطاع الفلاحي
+        والصيد البحري بالحصّة، وسائقو سيارات الأجرة والتاكسي وطيّابة الحمّامات التقليدية،
+        وعمال المنازل، والعمال المشتغلون بصفة وقتية لدى الأفراد —، يُعبَّر عنها بمضاعفات
+        الأجر الأدنى الفلاحي المضمون أو الأجر الأدنى المضمون لمختلف المهن منسوبةً إلى مدّة
+        عمل، مع تطبيق ضارب عند الاقتضاء. وضبط الأمر عدد 1439 لسنة 2000 أجر العاملين
+        بقطاع النقل بسيارات التاكسي واللواج والنقل الريفي.
+      synonymes: [الأجر الجزافي, التقدير الجزافي للأجور]
+
+  - id: remuneration-a-la-part
+    acronyme: null
+    # FR : pêcheurs « payés à la part » ; AR : « يقع خلاص العمال فيها بالحصة » (décret
+    # n° 95-538, art. 4, al. 1, JORT ar. p. 691), nominalisé ici par le terminologue.
+    # Les définitions arabes de `revenu-forfaitaire` et `securite-sociale-pecheurs`
+    # écrivent « بالمناب », rendu non attesté : à aligner une fois le terme tranché.
+    statut: provisoire
+    references: []
+    source_definition: {ref: decret95-538, locator: "art. 4"}
+    voir_aussi: [securite-sociale-pecheurs, salaire-forfaitaire]
+    fr:
+      terme: Rémunération à la part
+      definition: >
+        Mode de paiement des pêcheurs que le décret n° 95-538 retient comme critère :
+        les cotisations d'accidents du travail des pêcheurs « payés à la part » et
+        employés sur des bateaux de moins de trente tonneaux de jauge sont calculées sur
+        un salaire forfaitaire, comme celles du secteur agricole, pour les travailleurs
+        dont le salaire n'excède pas deux fois le SMAG. Le décret emploie l'expression
+        sans la définir.
+      synonymes: [pêche à la part]
+    ar:
+      terme: الخلاص بالحصة
+      definition: >
+        طريقة خلاص الصيادين البحريين التي اعتمدها الأمر عدد 538 لسنة 1995 معيارًا: تُحتسب
+        اشتراكات حوادث الشغل على أساس أجر تقديري بالنسبة لمراكب الصيد البحري التي تقلّ
+        حمولتها عن ثلاثين طنًّا حجميًّا والتي يقع خلاص العمال فيها بالحصّة، شأنها شأن
+        القطاع الفلاحي، وذلك للعمال الذين لا تتجاوز أجورهم مرّتين الأجر الأدنى الفلاحي
+        المضمون. ويستعمل الأمر العبارة دون أن يعرّفها.
+      synonymes: []
+
+  - id: employes-de-maison
+    acronyme: null
+    # AR : « عمال المنازل » (décret n° 95-538, art. 6 et 8, JORT ar. p. 692). Le
+    # français du décret dit « employés de maison » (art. 6) et « gens de maison »
+    # (art. 8) ; la loi n° 2021-37 dit « travailleurs domestiques ». Une définition
+    # existante du glossaire écrit « عملة المنازل ».
+    statut: provisoire
+    references: []
+    source_definition: {ref: decret95-538, locator: "art. 6"}
+    voir_aussi: [salaire-forfaitaire, smag]
+    fr:
+      terme: Employés de maison
+      definition: >
+        Catégorie de travailleurs dont le décret n° 95-538 fixe directement la cotisation
+        d'accidents du travail, en pourcentage du SMAG rapporté à 300 jours par an. Il en
+        distingue trois groupes : les aides de ménage, les autres employés de maison
+        sauf les chauffeurs, et les conducteurs de voitures ; les réparations sont
+        calculées sur la même base. Leurs cotisations peuvent être payées annuellement
+        ou au moment de la demande d'affiliation provisoire (art. 8, qui les nomme
+        « gens de maison »). Le décret ne définit pas la catégorie.
+      synonymes: [gens de maison, travailleurs domestiques]
+    ar:
+      terme: عمال المنازل
+      definition: >
+        صنف من العمال يضبط الأمر عدد 538 لسنة 1995 اشتراكهم بعنوان حوادث الشغل مباشرةً،
+        بنسبة مئوية من الأجر الأدنى الفلاحي المضمون المرتبط بمدّة شغل تساوي 300 يوم في
+        السنة. ويميّز فيه ثلاث فئات: معينو ومعينات المنازل، وعمال المنازل الآخرون من غير
+        السوّاق، وسوّاق السيارات؛ وتُحسب التعويضات على نفس الأساس. ويمكن دفع اشتراكاتهم
+        سنويًّا أو عند طلب الانخراط الوقتي (الفصل 8). ولا يعرّف الأمر هذا الصنف.
+      synonymes: []
+
+  - id: louage
+    acronyme: null
+    # AR : « اللواج » (décret n° 2000-1439 : « سيارات التاكسي واللواج وسيارات النقل
+    # الريفي »). Le décret n° 95-538, art. 5, écrit en arabe « سيارات الأجرة والتاكسي »
+    # là où le français dit « louage et taxis ».
+    statut: provisoire
+    references: [decret95-538]
+    source_definition: {ref: decret2000-1439}
+    voir_aussi: [salaire-forfaitaire, smig]
+    fr:
+      terme: Louage
+      definition: >
+        Mode de transport public des personnes que le décret n° 2000-1439 range avec le
+        taxi et le transport rural. Les cotisations de ses travailleurs, aux régimes de
+        sécurité sociale comme au régime des accidents du travail et des maladies
+        professionnelles, sont calculées sur un salaire forfaitaire : le SMIG du régime
+        de 48 heures rapporté à 2 400 heures par an, depuis le 1er juillet 2000. Le décret
+        n° 95-538 (art. 5) soumet à un salaire forfaitaire les « chauffeurs de louage et
+        de taxis » dans son édition française ; son édition arabe ne nomme pas le louage.
+        Aucun de ces deux textes ne définit le louage.
+      synonymes: [voiture de louage]
+    ar:
+      terme: اللواج
+      definition: >
+        نمط من النقل العمومي للأشخاص يذكره الأمر عدد 1439 لسنة 2000 مع سيارات التاكسي
+        وسيارات النقل الريفي. وتُحسب اشتراكات العاملين به، بعنوان أنظمة الضمان الاجتماعي
+        وبعنوان نظام حوادث الشغل والأمراض المهنية، على أساس أجر جزافي: الأجر الأدنى
+        المضمون لمختلف المهن، نظام 48 ساعة، المرتبط بمدّة شغل تساوي 2400 ساعة في السنة،
+        وذلك بداية من غرّة جويلية 2000. ويُخضع الأمر عدد 538 لسنة 1995 (الفصل 5) لأجر
+        تقديري « سائقي سيارات الأجرة والتاكسي » في صيغته العربية، التي لا تذكر اللواج،
+        حيث تقول صيغته الفرنسية « سائقي اللواج والتاكسي ». ولا يعرّف أيّ من النصّين
+        اللواج.
+      synonymes: [سيارات الأجرة]
+
+  - id: cotisation-supplementaire
+    acronyme: null
+    # AR : « الإشتراك الإضافي » et « المساهمات الإضافية » (décret n° 95-538, art. 13 et
+    # 16 à 20, JORT ar. pp. 692-693), par opposition aux « cotisations principales »,
+    # « المساهمات الأصلية » (art. 17, 21 et 24). Graphie sans hamza, comme le reste du
+    # glossaire.
+    statut: provisoire
+    references: [loi94-28]
+    source_definition: {ref: decret95-538, locator: "art. 13 et 16 à 20"}
+    voir_aussi: [accident-du-travail, maladie-professionnelle, cotisations-sociales]
+    fr:
+      terme: Cotisation supplémentaire
+      definition: >
+        Majoration que la caisse peut imposer à l'employeur qui n'a pas remédié, dans le
+        délai qu'elle lui a notifié, aux manquements constatés aux règles d'hygiène, de
+        sécurité et de prévention des risques professionnels. Elle s'ajoute aux
+        cotisations principales d'accidents du travail et de maladies professionnelles
+        et s'exprime en proportion de celles-ci : 50 %, taux qui peut être doublé
+        (art. 17), les cotisations supplémentaires étant portées à 100 % si le refus ou
+        la négligence persistent (art. 18). Elle s'applique à compter du trimestre qui
+        suit celui où la mise en demeure a expiré, et elle est supprimée, en tout ou en
+        partie, quand l'employeur prouve qu'il s'est conformé aux mesures prescrites.
+      synonymes: [majoration de la cotisation]
+    ar:
+      terme: الاشتراك الإضافي
+      definition: >
+        ترفيع يمكن للصندوق أن يفرضه على صاحب العمل الذي لم يتدارك، في الأجل الذي أُعلم به،
+        ما عُوين من إخلال بقواعد حفظ الصحّة والسلامة والوقاية من الأخطار المهنية. ويُضاف
+        إلى المساهمات الأصلية بعنوان حوادث الشغل والأمراض المهنية ويُعبَّر عنه بنسبة
+        منها: 50 بالمائة، ويمكن مضاعفة هذه النسبة (الفصل 17)، وتُرفَّع المساهمات الإضافية
+        إلى 100 بالمائة إذا تواصل الرفض أو الإهمال (الفصل 18). ويُطبَّق بداية من الثلاثية
+        الموالية لتلك التي انتهى فيها أجل التنبيه، ويُحذف كليًّا أو جزئيًّا متى أثبت صاحب
+        العمل امتثاله للإجراءات المطلوبة.
+      synonymes: [المساهمات الإضافية]
+
   - id: ayant-droit
     acronyme: null
     statut: valide
@@ -7761,4 +8009,343 @@ entries:
         حسب مستوى العيش: تضمّ الشريحة الأولى الخُمس الأقلّ دخلًا والشريحة الخامسة
         الخُمس الأيسر حالًا. وتعتمد دراسة المعهد الوطني للإحصاء ومركز البحوث والدراسات
         الاجتماعية والبنك الإفريقي للتنمية (2013) هذا التصنيف حسب الدخل أو الإنفاق.
+
+  # ── Volume « La fiscalité », chapitre « Les dépenses fiscales et les régimes
+  #    d'incitation » (passe 1 du 6 octobre 2026 : termes et sources ; passe 2 du
+  #    même jour : définitions, après l'ancrage dans la prose) ──
+  # Termes arabes relevés le 6 octobre 2026 sur la couche texte des fascicules
+  # arabes du JORT (n° 82 du 7 octobre 2016, n° 15 du 21 février 2017, n° 15 du
+  # 19 février 2019), l'article étant donné par `source_traduction`. Le terme arabe
+  # est celui que le texte emploie, donc au pluriel quand le texte n'emploie que le
+  # pluriel ; le terme français s'y aligne. Les définitions s'en tiennent à ce que
+  # dit le texte cité ; quand celui-ci emploie le terme sans le définir (avantages
+  # fiscaux, zones de développement régional), la définition dit ce que le texte y
+  # attache, et rien de plus. Seul « système fiscal de référence » reste
+  # « provisoire » : son arabe ne vient que des rapports du ministère des Finances.
+  # « Offshore » et « onshore » sont des mots d'usage, absents des textes lus : pas
+  # d'entrée. « Entreprise partiellement exportatrice » n'a pas d'entrée non plus :
+  # l'article 22 du code de 1993 vise « les entreprises qui réalisent des
+  # opérations d'exportation » sans définir ce terme, et le fascicule arabe de
+  # 1993 est un scan sans couche texte.
+
+  - id: depense-fiscale
+    acronyme: null
+    statut: valide
+    references: [gbo-depenses-fiscales, loi-org-2019-15-lob]
+    # Définition : rapport annexé au projet de loi de finances pour 2021 (français),
+    # « 2. La définition des dépenses fiscales ». La loi organique emploie le terme
+    # (art. 46 et 70) sans le définir.
+    source_definition: {ref: gbo-depenses-fiscales, locator: "rapport annexé au projet de loi de finances pour 2021, section 1, § 2"}
+    # Arabe : « تقرير حول النفقات الجبائية والامتيازات المالية الممنوحة », art. 46.
+    # Le singulier « نفقة جبائية » n'est attesté que dans les rapports annexés aux
+    # projets de loi de finances pour 2024 et 2025, non au JORT.
+    source_traduction: {ref: loi-org-2019-15-lob, locator: "art. 46"}
+    voir_aussi: [systeme-fiscal-de-reference, avantage-fiscal, avantage-financier]
+    fr:
+      terme: Dépenses fiscales
+      definition: >
+        Au sens du rapport annexé au projet de loi de finances pour 2021,
+        dispositions légales qui dérogent au système fiscal de référence et
+        allègent la charge fiscale d'une catégorie de contribuables ou de
+        certaines opérations ou activités, au prix d'un manque de ressources pour
+        le Trésor, afin d'atteindre des objectifs économiques, sociaux, culturels
+        ou environnementaux. La loi organique du budget range « un rapport sur les
+        dépenses fiscales et les avantages financiers octroyés » parmi les
+        documents qui accompagnent le projet de loi de finances (art. 46).
+      synonymes: [Dépense fiscale]
+    ar:
+      terme: النفقات الجبائية
+      definition: >
+        حسب التقرير المرفق بمشروع قانون المالية لسنة 2021، الأحكام القانونية
+        الاستثنائية التي تخرج عن النظام الجبائي المرجعي وتخفّف العبء الجبائي عن
+        صنف من المطالبين بالأداء أو عن بعض العمليات أو الأنشطة، مقابل نقص في
+        موارد الخزينة، وذلك لبلوغ أهداف اقتصادية أو اجتماعية أو ثقافية أو بيئية.
+        ويقتضي القانون الأساسي للميزانية أن يُرفق مشروع قانون المالية بـ«تقرير حول
+        النفقات الجبائية والامتيازات المالية الممنوحة» (الفصل 46).
+      synonymes: [نفقة جبائية]
+
+  - id: systeme-fiscal-de-reference
+    acronyme: null
+    # Provisoire : le terme arabe n'est attesté que par les rapports du ministère
+    # des Finances, non par un texte publié au Journal officiel.
+    statut: provisoire
+    references: [gbo-depenses-fiscales]
+    # Définition : « Section II : Le régime fiscal de référence », « 1. La notion du
+    # régime fiscal de référence ». Le rapport écrit tantôt « système », tantôt
+    # « régime » fiscal de référence.
+    source_definition: {ref: gbo-depenses-fiscales, locator: "rapport annexé au projet de loi de finances pour 2021, section II, § 1"}
+    # Arabe : intitulé de section des rapports arabes du ministère des Finances
+    # (« القسم الثاني : النظام الجبائي المرجعي »). Terme d'un rapport officiel, NON du
+    # JORT : aucun texte publié au Journal officiel ne l'emploie parmi ceux lus.
+    source_traduction: {ref: gbo-depenses-fiscales, locator: "rapports annexés aux projets de loi de finances pour 2024 et 2025, intitulé de la section « النظام الجبائي المرجعي »"}
+    voir_aussi: [depense-fiscale]
+    fr:
+      terme: Système fiscal de référence
+      definition: >
+        Au sens du rapport annexé au projet de loi de finances pour 2021, les
+        dispositions de base de chaque impôt, au regard desquelles une mesure est
+        dite dérogatoire et comptée parmi les dépenses fiscales. Le rapport retient
+        l'approche qu'il appelle juridique : le régime de référence y est
+        « l'ensemble des dispositions essentielles prévues par le droit commun »,
+        identifié pour chaque type d'impôt.
+      synonymes: [Régime fiscal de référence]
+    ar:
+      terme: النظام الجبائي المرجعي
+      definition: >
+        حسب التقرير المرفق بمشروع قانون المالية لسنة 2021، الأحكام الأساسية لكل
+        أداء، التي يُعدّ الإجراء الخارج عنها استثنائيا ويُحتسب ضمن النفقات الجبائية.
+        ويعتمد التقرير المقاربة التي يسمّيها قانونية: النظام المرجعي فيها هو مجموع
+        الأحكام الأساسية المنصوص عليها بالقانون العام، ويُضبط بحسب كل صنف من
+        الأداءات.
+      synonymes: []
+
+  - id: avantage-fiscal
+    acronyme: null
+    statut: valide
+    references: [loi-avantages-fiscaux-2017]
+    # Arabe : intitulé de la loi (« مراجعة منظومة الامتيازات الجبائية ») et titre du
+    # chapitre IV nouveau du code (« الامتيازات الجبائية »), art. 1er. Le singulier
+    # défini « الامتياز الجبائي » y figure une fois ; l'indéfini n'y figure pas.
+    # La loi emploie le terme comme intitulé : la définition décrit le contenu du
+    # chapitre IV (titres de ses sections et sous-sections, art. 63 à 67 et 71 lus) :
+    # l'art. 71 ne porte qu'une déduction, l'art. 67 applique déduction et taux
+    # réduit en même temps — d'où « pour plusieurs régimes », sans ordre de succession.
+    source_definition: {ref: loi-avantages-fiscaux-2017, locator: "art. 1er (chapitre IV nouveau du code de l'IRPP et de l'IS, art. 63 à 77)"}
+    source_traduction: {ref: loi-avantages-fiscaux-2017, locator: "intitulé et art. 1er"}
+    voir_aussi: [depense-fiscale, avantage-financier, entreprise-totalement-exportatrice, zone-developpement-regional]
+    fr:
+      terme: Avantages fiscaux
+      definition: >
+        Intitulé du chapitre IV que la loi n° 2017-8 du 14 février 2017 ajoute au
+        code de l'impôt sur le revenu des personnes physiques et de l'impôt sur
+        les sociétés (articles 63 à 77). Il réunit des avantages au titre de
+        l'exploitation — développement régional, développement agricole,
+        exportation, activités de soutien et de lutte contre la pollution,
+        entreprises nouvellement créées — et des avantages au titre du
+        réinvestissement en dehors de l'entreprise. Au titre de l'exploitation,
+        ils consistent en une déduction, totale ou partielle, des revenus ou des
+        bénéfices de l'assiette de l'impôt et, pour plusieurs régimes, en
+        l'imposition des bénéfices au taux réduit de l'impôt sur les sociétés.
+      synonymes: [Avantage fiscal]
+    ar:
+      terme: الامتيازات الجبائية
+      definition: >
+        عنوان الباب الرابع الذي أضافه القانون عدد 8 لسنة 2017 المؤرخ في 14 فيفري
+        2017 إلى مجلة الضريبة على دخل الأشخاص الطبيعيين والضريبة على الشركات
+        (الفصول من 63 إلى 77). ويجمع الامتيازات الجبائية بعنوان الاستغلال —
+        التنمية الجهوية، والتنمية الفلاحية، والتصدير، وأنشطة المساندة ومقاومة
+        التلوث، والمؤسسات جديدة الإحداث — والامتيازات الجبائية بعنوان إعادة
+        الاستثمار خارج المؤسسة. وتتمثّل، بعنوان الاستغلال، في طرح كلي أو جزئي
+        للمداخيل أو الأرباح من أساس الضريبة، وفي إخضاع الأرباح، بالنسبة إلى عدد
+        من الأنظمة، للضريبة على الشركات بالنسبة المنخفضة.
+      synonymes: [الامتياز الجبائي]
+
+  - id: avantage-financier
+    acronyme: null
+    statut: valide
+    references: [gbo-depenses-fiscales, loi-org-2019-15-lob, loi-avantages-fiscaux-2017]
+    # Définition contrôlée le 6 octobre 2026 sur la page elle-même : le titre
+    # « 1.1 Définition des avantages financiers » est à la page 86 de la pagination
+    # imprimée (90e page du fichier), la phrase de définition à la page 87 (91e).
+    # Le sommaire ne donnait que la page 86.
+    source_definition: {ref: gbo-depenses-fiscales, locator: "rapport annexé au projet de loi de finances pour 2021, deuxième partie, section 1, § 1.1 (pages numérotées 86 et 87)"}
+    # Arabe : « النفقات الجبائية والامتيازات المالية الممنوحة », art. 46 ; la loi
+    # n° 2017-8, art. 18, écrit « الامتيازات الجبائية والمالية ». À ne pas confondre
+    # avec les « incitations financières » (الحوافز المالية) de la loi n° 2016-71.
+    source_traduction: {ref: loi-org-2019-15-lob, locator: "art. 46"}
+    voir_aussi: [depense-fiscale, avantage-fiscal, prime-investissement]
+    fr:
+      terme: Avantages financiers
+      definition: >
+        Au sens du rapport annexé au projet de loi de finances pour 2021, toute
+        aide financière, ou ayant un effet financier, ou en nature, que l'État
+        accorde à titre gratuit ou sans contrepartie équivalente à un acteur du
+        secteur commercial et concurrentiel, sous des conditions sélectives, pour
+        un intérêt public d'ordre économique, et qui constitue une charge pour le
+        Trésor. Le rapport relève que la législation en vigueur n'en donne pas de
+        définition. Le terme figure à l'article 46 de la loi organique du budget
+        et à l'article 18 de la loi n° 2017-8.
+      synonymes: [Avantage financier]
+    ar:
+      terme: الامتيازات المالية
+      definition: >
+        حسب التقرير المرفق بمشروع قانون المالية لسنة 2021، كل إعانة مالية، أو لها
+        أثر مالي، أو عينية، تمنحها الدولة مجانا أو دون مقابل معادل لفائدة طرف
+        ناشط في القطاع التجاري والتنافسي، بشروط انتقائية، لتحقيق مصلحة عامة
+        اقتصادية، وتمثّل عبئا على الخزينة. ويلاحظ التقرير أن التشريع الجاري به
+        العمل لا يعرّفها. وترد العبارة بالفصل 46 من القانون الأساسي للميزانية
+        وبالفصل 18 من القانون عدد 8 لسنة 2017.
+      synonymes: []
+
+  - id: entreprise-totalement-exportatrice
+    acronyme: null
+    statut: valide
+    references: [loi-avantages-fiscaux-2017, loi-93-120-code-incitations, loi2018-56-lf2019]
+    # Arabe : « تعتبر مؤسسات مصدرة كليا المؤسسات التي… », art. 69 nouveau du code.
+    # Le code de 1993 (art. 10) portait la notion avant lui ; son fascicule arabe est
+    # un scan sans couche texte, non lu. La définition est celle de l'article 69,
+    # datée : l'article est abrogé par la loi de finances pour 2019.
+    source_definition: {ref: loi-avantages-fiscaux-2017, locator: "art. 1er (art. 69 nouveau du code de l'IRPP et de l'IS)"}
+    source_traduction: {ref: loi-avantages-fiscaux-2017, locator: "art. 1er (art. 69 nouveau du code de l'IRPP et de l'IS)"}
+    voir_aussi: [avantage-fiscal, code-incitations-investissements, impot-societes]
+    fr:
+      terme: Entreprises totalement exportatrices
+      definition: >
+        Entreprises qui vendent la totalité de leurs marchandises ou de leurs
+        produits, ou rendent la totalité de leurs services, à l'étranger, et
+        celles qui rendent la totalité de leurs services en Tunisie pour un usage
+        à l'étranger (article 69 du code de l'impôt sur le revenu des personnes
+        physiques et de l'impôt sur les sociétés, dans la rédaction de la loi
+        n° 2017-8). Le même article les autorise à écouler sur le marché local une
+        part de leur production dans la limite de 30 % de leur chiffre d'affaires
+        à l'export de l'année précédente. La notion vient du code d'incitations
+        aux investissements de 1993 (article 10) ; l'article 69 est abrogé par la
+        loi de finances pour 2019 (article 37).
+      synonymes: [Entreprise totalement exportatrice]
+    ar:
+      terme: المؤسسات المصدرة كليا
+      definition: >
+        المؤسسات التي تبيع كامل سلعها أو منتجاتها أو تسدي كامل خدماتها خارج
+        البلاد التونسية، والتي تنجز كامل خدماتها بالبلاد التونسية ويتم استعمالها
+        بالخارج (الفصل 69 من مجلة الضريبة على دخل الأشخاص الطبيعيين والضريبة على
+        الشركات، في صيغة القانون عدد 8 لسنة 2017). ويجيز لها الفصل نفسه ترويج
+        جزء من إنتاجها بالسوق المحلية في حدود 30 % من رقم معاملاتها عند التصدير
+        للسنة السابقة. ويعود المفهوم إلى مجلة تشجيع الاستثمارات لسنة 1993 (الفصل
+        10)؛ وقد ألغي الفصل 69 بقانون المالية لسنة 2019 (الفصل 37).
+      synonymes: []
+
+  - id: zone-developpement-regional
+    acronyme: null
+    statut: valide
+    references: [loi-avantages-fiscaux-2017, loi-93-120-code-incitations]
+    # Arabe : « بمناطق التنمية الجهوية », art. 63 nouveau du code ; seul le pluriel
+    # est attesté. L'article 63 ne définit pas les zones : il en distingue deux
+    # groupes et renvoie leur liste à un décret gouvernemental. La définition n'en
+    # dit pas plus.
+    source_definition: {ref: loi-avantages-fiscaux-2017, locator: "art. 1er (art. 63 nouveau du code de l'IRPP et de l'IS)"}
+    source_traduction: {ref: loi-avantages-fiscaux-2017, locator: "art. 1er (art. 63 nouveau du code de l'IRPP et de l'IS)"}
+    voir_aussi: [avantage-fiscal, code-incitations-investissements]
+    fr:
+      terme: Zones de développement régional
+      definition: >
+        Zones dans lesquelles les revenus ou les bénéfices tirés des
+        investissements directs sont totalement déductibles de l'assiette de
+        l'impôt sur le revenu des personnes physiques ou de l'impôt sur les
+        sociétés : pendant les cinq premières années à partir de l'entrée en
+        activité effective dans le premier groupe de zones, pendant les dix
+        premières dans le deuxième (article 63 du code, dans la rédaction de la
+        loi n° 2017-8). La loi ne les énumère pas : leur liste est fixée par
+        décret gouvernemental.
+      synonymes: [Zone de développement régional]
+    ar:
+      terme: مناطق التنمية الجهوية
+      definition: >
+        المناطق التي تُطرح فيها كليا من أساس الضريبة على دخل الأشخاص الطبيعيين أو
+        الضريبة على الشركات المداخيل أو الأرباح المتأتية من الاستثمارات
+        المباشرة: خلال الخمس سنوات الأولى ابتداء من تاريخ الدخول طور النشاط
+        الفعلي بالنسبة إلى المجموعة الأولى من المناطق، وخلال العشر سنوات الأولى
+        بالنسبة إلى المجموعة الثانية (الفصل 63 من المجلة، في صيغة القانون عدد 8
+        لسنة 2017). ولا يعدّدها القانون: تُضبط قائمتها بأمر حكومي.
+      synonymes: []
+
+  - id: prime-investissement
+    acronyme: null
+    statut: valide
+    references: [loi-2016-71-investissement]
+    # Arabe : « منحة استثمار في حدود ثلث كلفة الاستثمار » puis « سقف منحة الاستثمار »,
+    # art. 20 (projets d'intérêt national). L'article 19 énumère quatre autres primes
+    # (المنح), chacune sous son nom : ce terme ne les désigne pas. Le chapitre ancre
+    # pourtant la notion sur ces quatre primes : la définition les distingue donc
+    # expressément, pour le lecteur qui arrive par ce lien.
+    source_definition: {ref: loi-2016-71-investissement, locator: "art. 20"}
+    source_traduction: {ref: loi-2016-71-investissement, locator: "art. 20"}
+    voir_aussi: [projet-interet-national, avantage-financier]
+    fr:
+      terme: Prime d'investissement
+      definition: >
+        Prime accordée aux projets d'intérêt national dans la limite du tiers du
+        coût d'investissement, y compris les dépenses des travaux d'infrastructures
+        intra-muros ; son plafond est fixé par décret gouvernemental (loi
+        n° 2016-71, article 20). Elle ne se confond pas avec les quatre primes de
+        l'article 19 de la même loi, nommées chacune par son objet — augmentation
+        de la valeur ajoutée et de la compétitivité, développement de la capacité
+        d'employabilité, développement régional, développement durable.
+      synonymes: []
+    ar:
+      terme: منحة الاستثمار
+      definition: >
+        منحة تُسند للمشاريع ذات الأهمية الوطنية في حدود ثلث كلفة الاستثمار، بما في
+        ذلك المصاريف الناتجة عن أشغال البنية الأساسية الداخلية؛ ويُضبط سقفها بأمر
+        حكومي (القانون عدد 71 لسنة 2016، الفصل 20). وهي غير المنح الأربع المنصوص
+        عليها بالفصل 19 من القانون نفسه، وكل منها مسمّاة بموضوعها — منحة الترفيع
+        من القيمة المضافة والقدرة التنافسية، ومنحة تطوير القدرة التشغيلية، ومنحة
+        التنمية الجهوية، ومنحة التنمية المستدامة.
+      synonymes: []
+
+  - id: projet-interet-national
+    acronyme: null
+    statut: valide
+    references: [loi-2016-71-investissement]
+    # Arabe : « تنتفع المشاريع ذات الأهمية الوطنية بالحوافز التالية », art. 20 (quatre
+    # occurrences dans la loi, toutes au pluriel défini). Le singulier n'y figure
+    # qu'au génitif indéfini (« لكل مشروع ذي أهمية وطنية ») : aucune forme de
+    # citation n'en est reconstruite, d'où l'absence de synonyme arabe.
+    source_definition: {ref: loi-2016-71-investissement, locator: "art. 20"}
+    source_traduction: {ref: loi-2016-71-investissement, locator: "art. 20"}
+    voir_aussi: [prime-investissement, avantage-fiscal, impot-societes]
+    fr:
+      terme: Projets d'intérêt national
+      definition: >
+        Projets désignés par décret gouvernemental d'après la taille de leur
+        investissement ou leur capacité d'employabilité, et qui satisfont à l'un
+        au moins des objectifs de l'article premier de la loi de l'investissement.
+        Ils bénéficient d'une déduction des bénéfices de l'assiette de l'impôt sur
+        les sociétés dans la limite de dix années, d'une prime d'investissement
+        dans la limite du tiers du coût d'investissement et de la participation de
+        l'État aux dépenses des travaux d'infrastructure ; ces incitations sont
+        octroyées à chaque projet par décret gouvernemental (loi n° 2016-71,
+        article 20).
+      synonymes: [Projet d'intérêt national]
+    ar:
+      terme: المشاريع ذات الأهمية الوطنية
+      definition: >
+        مشاريع تُضبط بأمر حكومي بناء على حجمها الاستثماري أو طاقتها التشغيلية
+        واستجابتها على الأقل لأحد الأهداف المنصوص عليها بالفصل الأول من قانون
+        الاستثمار. وتنتفع بطرح الأرباح من قاعدة الضريبة على الشركات في حدود عشر
+        سنوات، وبمنحة استثمار في حدود ثلث كلفة الاستثمار، وبمساهمة الدولة في
+        تحمّل المصاريف الناتجة عن أشغال البنية الأساسية؛ وتُسند هذه الحوافز لكل
+        مشروع بأمر حكومي (القانون عدد 71 لسنة 2016، الفصل 20).
+      synonymes: []
+
+  - id: code-incitations-investissements
+    acronyme: null
+    statut: valide
+    references: [loi-93-120-code-incitations, loi-2016-71-investissement]
+    source_definition: {ref: loi-93-120-code-incitations}
+    # Arabe : « يلغى العمل بمجلة تشجيع الاستثمارات », art. 27 de la loi n° 2016-71 qui
+    # abroge le code. Le terme N'A PAS été lu sur le fascicule arabe de 1993 (JORT
+    # n° 99, scan sans couche texte), mais sur ce texte postérieur et sur la loi
+    # n° 2017-8 : il est attesté au JORT, par deux lois qui nomment le code.
+    # Les lois de 2016 et de 2017 écrivent, en français, « code d'incitation aux
+    # investissements » ; le titre de 1993 porte le pluriel.
+    source_traduction: {ref: loi-2016-71-investissement, locator: "art. 27"}
+    voir_aussi: [avantage-fiscal, entreprise-totalement-exportatrice, zone-developpement-regional]
+    fr:
+      terme: Code d'incitations aux investissements
+      definition: >
+        Code promulgué par la loi n° 93-120 du 27 décembre 1993. Il réunit des
+        incitations communes à tous les investissements et des régimes propres,
+        dont ceux de l'exportation, du développement régional et du développement
+        agricole. La loi de l'investissement l'abroge à compter du 1^er^ janvier
+        2017, à l'exception de ses articles 14 et 36 et sous réserve de
+        dispositions transitoires (loi n° 2016-71, articles 26 à 32).
+      synonymes: [Code d'incitation aux investissements]
+    ar:
+      terme: مجلة تشجيع الاستثمارات
+      definition: >
+        المجلة الصادرة بمقتضى القانون عدد 120 لسنة 1993 المؤرخ في 27 ديسمبر 1993.
+        وتجمع حوافز مشتركة لكل الاستثمارات وأنظمة خاصة، منها أنظمة التصدير
+        والتنمية الجهوية والتنمية الفلاحية. وقد ألغى قانون الاستثمار العمل بها
+        ابتداء من غرة جانفي 2017، باستثناء فصليها 14 و36 ومع مراعاة أحكام
+        انتقالية (القانون عدد 71 لسنة 2016، الفصول من 26 إلى 32).
       synonymes: []

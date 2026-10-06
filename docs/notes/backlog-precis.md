@@ -1,6 +1,6 @@
 # Ce qui reste à faire, livre par livre
 
-**Révisé le 5 octobre 2026.** Cette note rassemble les chantiers encore visibles dans les
+**Révisé le 6 octobre 2026.** Cette note rassemble les chantiers encore visibles dans les
 chapitres, les dossiers documentaires et les issues ; elle permet de choisir le prochain
 texte à lire. Une piste « faisable » signifie que le **support** est accessible, pas que
 son contenu a déjà été vérifié : seul l'article lu autorise à corriger le précis.
@@ -24,7 +24,7 @@ extraits des lois de finances sont dans le dossier voisin `PDFs/Lois_de_Finances
 
 | Livre | État du texte | Première lecture faisable |
 |---|---|---|
-| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées ; déductions, régime suspensif et obligations encore à rédiger | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
+| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et un chapitre transversal sur les dépenses fiscales et les régimes d'incitation (6 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées ; déductions, régime suspensif et obligations encore à rédiger | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; PNAFN historique sans sources pour ses onze dates et montants | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
@@ -95,6 +95,105 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
   - **genèse parlementaire** de l'art. 88 (rejet en commission, suppression puis
     réintroduction en plénière) : presse seulement, hors du corps faute de pièce de l'ARP
     ou du CNRD.
+- **Dépenses fiscales et régimes d'incitation (`_depenses_fiscales.qmd`, chapitre créé le
+  6 octobre 2026, repris le même jour après relecture)** sur la note
+  `docs/notes/fiscalite-depenses-fiscales.md`, seule matière du chapitre (§ 10 pour la
+  reprise). Écrit : code de 1969, loi n° 72-38 décrite en entier et ce en quoi elle rompt,
+  loi n° 74-74 ; code de 1993 (objet, abrogations, plan par objectif, art. 7, 9, 10, 12, 14,
+  16, 20, 22, 23, 25, 30) ; imposition de l'exportation votée en 2006 et ses quatre reports ;
+  lois n° 2016-71 et n° 2017-8 ; abrogation du régime de l'exportation (LF 2019) ; coût et
+  bénéficiaires en deux blocs séparés — évaluations du ministère des Finances (méthode du
+  rapport PLF 2021, agrégats 2019-2023, par impôt, bénéficiaires, avantages financiers) et
+  études extérieures (Banque mondiale 2014, diaporama de septembre 2014, OCDE 2013,
+  estimations antérieures), chacune avec sa méthode. Disponibilités ci-dessous contrôlées le
+  6 octobre 2026 (présence du fichier, `pdftotext` sur le fascicule entier) ; la page de
+  l'article n'a pas été ouverte. Restent :
+  - **AR** : déclarer `_depenses_fiscales.qmd` dans `precis/ar/fiscalite/_quarto.yml`
+    (ligne commentée en place, après `_droits_consommation.qmd`) dès que la traduction est
+    livrée ;
+  - **clés à verser (bibliographe)** : loi n° 69-35 (JORT n° 24 de 1969, p. 766-769) et loi
+    n° 74-74 (JORT n° 51 de 1974, p. 1744-1746), citées en clair au chapitre faute de clé ;
+    ébauches au § 10.1 e de la note ;
+  - **loi n° 72-38** : date d'entrée en vigueur (aucune clause) et texte qui l'a abrogée non
+    établis ; motifs, nombre d'entreprises agréées, effets sur l'emploi et l'exportation :
+    aucune source, rien n'est écrit ;
+  - **textes de 1976 à 1992 — OCR** : taux, durées et dates d'effet non établis, seuls les
+    intitulés sont connus ; la chaîne 1974 → 1981 → 1987 → 1993 du régime du marché intérieur
+    n'est pas établie. Fascicules français présents au corpus, couche texte vide :
+    `1976/fr/Jo04676.pdf` (n° 76-63), `1981/fr/Jo04481.pdf` (n° 81-56),
+    `1982/fr/Jo05482.pdf` (n° 82-67), `1985/fr/Jo07385.pdf` (décret-loi n° 85-14),
+    `1987/fr/Jo05687.pdf` (n° 87-51), `1988/fr/Jo02388.pdf` (n° 88-18),
+    `1990/fr/Jo02190.pdf` (n° 90-21), `1992/fr/Jo05292.pdf` (n° 92-81). Priorité : 1985 et
+    1987 (sort de la loi de 1972). Cinq n'ont pas de clé CSL ;
+  - **code de 1993 — OCR** : `1993/fr/Jo09993.pdf` présent, couche texte vide ; pas de
+    clause générale d'entrée en vigueur : date du dépôt du JORT n° 99 à établir ; intitulés
+    des titres VII à X et nombre d'articles à contrôler sur la page (p. 2179-2181) ; terme
+    de la déduction de 50 % des exportateurs entre 1993 et 2006 non établi ;
+  - **méthode des rapports PLF 2022 à 2025** : non établie (introduction et table des
+    matières seules) ; données employées par le ministère non décrites dans le rapport 2021 ;
+  - **crédits budgétaires** des primes et des prises en charge de cotisations : non relevés
+    (fonds spéciaux du Trésor, budgets par mission, lois de règlement, comptes du Fonds
+    tunisien de l'investissement — à obtenir) ; le chapitre ne publie que les paiements
+    déclarés du rapport PLF 2021 ;
+  - **mentions dans les chapitres d'impôt (6 octobre 2026)** : chaque avantage établi par un
+    texte est signalé, avec renvoi à `@sec-depenses-fiscales`, dans `_impot_societes.qmd`
+    (paramètres d'origine, « 2017 », « 2019 », rendement), `_impot_revenu.qmd` (BIC,
+    catégorie III, déductions, rendement), `_tva.qmd` (régime suspensif, rendement) et
+    `_droits_consommation.qmd` (renvoi à l'art. 13 *ter*, rendement). **Non mentionnés,
+    faute de texte établi** — à lire avant d'écrire quoi que ce soit dans ces chapitres :
+    régime des Tunisiens résidents à l'étranger (premier poste du recensement ; le rapport
+    cite la LF 1975, art. 33) ; concessionnaires automobiles (droit de consommation,
+    position 87-03) ; exonérations de TVA et de douane des médicaments, engrais et produits
+    alimentaires ; avantages au titre du réinvestissement après 2017 (art. 72 à 77 du code
+    de l'IRPP et de l'IS) ; sociétés d'investissement à capital risque. Les droits de douane
+    n'ont pas de chapitre : leurs exonérations (loi n° 2017-8, art. 4) restent dans
+    `_depenses_fiscales.qmd`. Dans `_impot_revenu.qmd`, la série du § V de l'art. 39 reste
+    non établie pour les activités qu'il vise depuis 2017 ; l'état de la LF 2019, art. 15
+    (« moitié des revenus » des activités à 13,5 %) n'est pas repris ;
+  - **études extérieures** (PDF collectés le 6 octobre 2026 dans `tunisia-data`, lisibles,
+    contenu non relevé) : annexe 4.2 du volume d'annexes de la Banque mondiale (p. 35) —
+    taille de l'échantillon et libellé des questions de l'enquête ; étude de Ghazouani
+    (2011) — citée de première main depuis le 6 octobre 2026 (pp. 3-9 lues, tableau 1 repris) ;
+    restent sa figure 2 (coût en MD par année), ses annexes et la cause des creux de 2004-2005
+    (clé à verser). L'étude IFC-ECOPA de novembre 2012 est un rapport préliminaire non
+    publié : à obtenir ;
+  - **calendrier de 2014 — lisible** : LF 2015 (loi n° 2014-59), art. 18, « mesures de
+    soutien des entreprises totalement exportatrices », `2014/fr/Jo1052014.pdf` ; à ouvrir
+    pour confirmer qu'aucun texte n'a touché à l'échéance du 1er janvier 2014. LF 2014,
+    art. 49-50 et 54 (`2013/fr/`, JORT n° 105) : connus par leur intitulé, non repris ;
+  - **zones de développement régional — lisible** : décret gouvernemental n° 2017-389,
+    `2017/fr/Jo0252017.pdf` ; loi n° 2019-47, `2019/fr/Jo0472019.pdf` (portée fiscale non
+    établie) ;
+  - **rapports annexés aux PLF 2022 et 2023 — à obtenir** : non archivés dans
+    `tunisia-data` (`data/raw/gbo/` ne porte que les rapports 2021, 2024 et 2025) ; adresses
+    sur gbo.tn dans la note, § 2.2, relevées le 5 octobre 2026 et non recontrôlées. Seule
+    leur introduction (p. 7) est connue. Rapport annexé au PLF 2026 : non cherché.
+    Existence d'un rapport pour les PLF 2019 et 2020 : non établie ;
+  - **série du coût à reconstruire, avec sa rupture de périmètre** : les rapports 2024 et
+    2025 excluent les exonérations des médicaments et des engrais, que le rapport 2021
+    compte (274,5 et 249,9 MD en 2019). Les deux CSV traités de `tunisia-data` cousent trois
+    rapports sur cinq et portent cette rupture à la couture 2019/2020 ; le périmètre des
+    rapports 2022 et 2023 reste à lire. `figures/depenses_fiscales.py` n'est donc pas appelé
+    (docstring corrigé le 6 octobre 2026, code inchangé) et aucune figure n'est publiée.
+    La fiche `~/projets/tunisia-data/sources/gbo-depenses-fiscales.md` ne mentionne pas
+    cette exclusion : à corriger dans ce dépôt-là ;
+  - **écart sur l'exercice 2021** : 7 745 MD (rapport 2023) contre 5 871,5 et 5 872,3 MD
+    (rapports 2024 et 2025) ; cause non établie, à lire dans les rapports 2023 et 2024. Les
+    deux ratios du rapport 2021 pour 2019 (16,3 % et 19,15 % des ressources fiscales) sont
+    signalés au chapitre ; le dénominateur de l'introduction reste à établir ;
+  - **à vérifier sur les rapports** : décomptes de dispositifs valorisés par impôt (37/57 ;
+    34/63, rapport 2025) et sommes par impôt de 2020 et 2021, tenus de la série traitée ; répartition par
+    impôt 2020-2023 et par secteur 2017-2019 (tableau n° 6 du rapport 2021, relevé pour 2019
+    seulement) non publiées ; ventilation par gouvernorat et délégation (loi n° 2017-8,
+    art. 18) : présence dans les rapports non vérifiée ;
+  - **avant 2017** : aucune série homogène. Retirés du chapitre : l'estimation OMC 2000
+    rapportée par la Banque mondiale (note 10 du ch. 4), non retrouvée dans la notification
+    G/SCM/N/71/TUN : à rapprocher de sa section IX (pp. 14-15) ; l'estimation du FMI pour
+    2005 (deux rapports d'assistance technique non publiés) ; une seconde estimation attribuée à
+    Ghazouani par la même note, absente de son étude. Figures 4.1 et 4.4 du rapport de la Banque mondiale à
+    relever sur l'image ;
+  - **à croiser avec « Cotisations sociales »** : coût des prises en charge de cotisations
+    patronales (code de 1993, art. 25 ; loi n° 99-59, connue par son intitulé).
 - **Forme de `_impot_revenu.qmd` : rien à reprendre.** Ses titres ont été remontés d'un cran
   et il a reçu sa section « La longue période ». La réorganisation par réforme, un temps
   envisagée, a été écartée après lecture — voir « Forme des chapitres » plus bas, qui en
@@ -369,8 +468,10 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
   les dix seules activités retenues. Ce second ratio n'est pas un taux de
   mortalité par travailleur. Le barème de 1999
   n'est pas une série de taux effectivement acquittés de 2021 à 2023 :
-  modificatifs à rechercher (`r-atmp-echelle-modificatifs`) et modulation
-  des taux à documenter (art. 10–27 du décret n° 95-538).
+  aucun modificatif de l'échelle n'est identifié (`r-atmp-echelle-modificatifs`,
+  plein texte parcouru le 5 octobre 2026), et la modulation des art. 10 à 27 du
+  décret n° 95-538, désormais exposée (`#sec-cot-at-modulation`), peut écarter la
+  cotisation due du taux du barème, sans qu'aucune donnée sur sa pratique soit connue.
 - **Autres prélèvements sur les salaires — rédigé le 5 octobre 2026** (`_prelevements_salaires.qmd`,
   `#sec-cot-prelevements-salaires`, après `_taux_global.qmd`) : TFP et contribution au FOPROLOS,
   taux en tableau engendré (`tbl-tfp-foprolos`, openfisca-tunisia 0.119, #478) ; les
@@ -415,11 +516,59 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
 - **Accidents du travail (§ sec-cot-at)** : les décrets n° 95-538 et 99-1010 sont lus
   dans les deux éditions (taux, entrée en vigueur au 1er janvier 1995 et au 1er avril
   1999). Les deux échelles sont engendrées, avant et après transfert du point
-  (`tables/atmp_1995.md`, `tables/atmp_1999.md`). Restent : les forfaits des
-  articles 4 à 7 et la modulation des articles 10 à 27 (openfisca-tunisia#471), dont
-  l'édition arabe des articles 4 à 7 (JORT n° 30 de 1995, pp. 691-692) reste à lire à
-  l'image ; le financement sous la loi n° 57-73. La fiche `r-atmp-echelle-modificatifs`
-  ne couvre que les intitulés : le plein texte reste à parcourir.
+  (`tables/atmp_1995.md`, `tables/atmp_1999.md`). Reste : le financement sous la loi
+  n° 57-73 (texte à obtenir pour ce livre ; clé à verser au fonds commun).
+- **Accidents du travail : assiette et modulation — rédigé le 5 octobre 2026**
+  (`#sec-cot-at-assiette` : `#sec-cot-at-assiette-principe`, `#sec-cot-at-forfaits`,
+  `#sec-cot-at-salaire-comparaison` ; `#sec-cot-at-modulation` : `#sec-cot-at-majoration`,
+  `#sec-cot-at-reduction`, `#sec-cot-at-modulation-recours`). Lus à l'image dans les deux
+  éditions : loi n° 94-28 (art. 17, 18, 88 à 90), décret n° 95-538 (art. 1 à 29), décrets
+  n° 99-1010 et 2000-1439, loi n° 95-101. Trois tableaux **faits main**
+  (`tbl-atmp-forfaits`, `tbl-atmp-journees`, `tbl-atmp-modulation`), à engendrer quand les
+  forfaits et la modulation seront portés en amont (openfisca-tunisia#471, auquel ajouter
+  le décret n° 2000-1439) ; aucun montant en dinars n'est donné. Ouvert :
+  - **à relire à l'image** (fascicules français présents au corpus, connus par cette seule édition) :
+    loi n° 60-30, art. 42 et 46, rédaction de 1960 (JORT n° 57 de 1960, pp. 1605-1606,
+    impression pâle : paraphrasée, non citée) et son édition arabe ; loi n° 2004-71,
+    art. 8 à 10 et 29 ; décrets n° 96-341, 2003-1098 et 2008-173 (avantages exclus de
+    l'assiette), dont l'édition arabe reste à lire ; le n° 99-1011 est lu dans les deux ;
+  - **à lire** (fascicules présents au corpus le 5 octobre 2026 ; lisibilité de la couche
+    texte non vérifiée — le n° 15 de 2005 en porte une où « 2005-321 » ne se retrouve pas
+    tel quel, donc lecture à l'image ou décodage à prévoir) : décret n° 2005-321
+    (organisation de la CNAM, JORT n° 15 de 2005, `2005/fr/Jo0152005.pdf`, pp. 459-463) —
+    quelle caisse exerce les pouvoirs des art. 10 à 27 et recouvre la cotisation, depuis
+    quand ; loi n° 88-38 du 6 mai 1988, visée par le décret n° 95-538 (JORT n° 33 du
+    13 mai 1988, p. 735 d'après jort_cache, `1988/fr/Jo03388.pdf`) — l'art. 42 entre 1960
+    et 1995 n'est pas vérifié ;
+  - **à calculer** : date exécutoire de la loi n° 95-101 et des décrets n° 96-341,
+    2003-1098 et 2008-173 (aucune clause d'effet) ;
+  - **à obtenir** : une source administrative (CNSS, CNAM) sur la pratique des forfaits et
+    de la modulation ; rien n'établit qu'ils sont appliqués aujourd'hui ;
+  - **lectures, non textes** : portée du décret n° 2000-1439 sur l'art. 5 (abrogation
+    implicite) ; application à l'AT/MP des décrets d'exclusion (par renvoi seulement) ;
+    taux applicable aux forfaits des art. 5 (muet) et 7 (« selon les branches ») ;
+  - **relecteur-ar** : termes arabes de l'art. 4 du décret n° 95-538 et de l'art. 18 de la
+    loi n° 94-28, transcrits depuis des pages scannées — les divergences sont dites en
+    français dans le texte (tonneaux de jauge, pêche au feu, caprins, floriculture,
+    malades des hôpitaux psychiatriques), sans citation arabe ;
+  - **bibliographe** : clés à créer pour les décrets n° 96-341, 99-1011, 2003-1098 et
+    2008-173 ; `loi2004-71` sans `page` ni `container-title` ;
+  - **`_assiette.qmd`** : le TODO sur l'art. 42 de la loi n° 60-30 (`#sec-cot-salaire-reel`)
+    est en partie levable avec la même matière (rédactions de 1960 et de 1995, décrets
+    d'exclusion) ; le décret n° 2000-1439 y a aussi sa place, son forfait valant pour les
+    régimes de sécurité sociale ; `tbl-assiettes` n'a pas de ligne AT/MP ;
+  - **glossaire — bloquant** : le chapitre ancre sept notions créées sans définition
+    (`assiette-cotisations`, `salaire-forfaitaire`, `remuneration-a-la-part`,
+    `employes-de-maison`, `louage`, `cotisation-supplementaire`, `maladie-professionnelle`) ;
+    `build_glossary.py` s'arrête sur `KeyError: 'definition'` tant que le terminologue ne
+    les a pas définies (FR et AR), et le `_glossaire.qmd` du livre n'est pas régénéré :
+    neuf liens de glossaire du chapitre restent sans cible (les sept, plus
+    `accident-du-travail` et `smag`, que ce livre n'ancrait pas encore) ;
+  - **recherches** : fiche `r-atmp-assiette-modificatifs` créée (aucun modificatif des
+    art. 3 à 27 autre que les décrets n° 99-1010 et 2000-1439) ; passe de plein texte
+    consignée sur `r-atmp-echelle-modificatifs`. Lacunes communes : édition arabe
+    1995-2004 sans texte exploitable ; 14 fascicules français de 1995-1998 à océriser ;
+    115 fascicules citant la loi n° 94-28 sans le décret, non parcourus un à un.
 - **Lecture immédiate** : l'article 4 du décret n° 2007-1406 (`2007/fr/Jo0492007.pdf`,
   source déjà lue pour la maladie) : établir sur pièce ce qu'il change au partage
   employeur/agent. Le décret-loi n° 2024-4 sur les travailleuses agricoles est désormais
@@ -568,7 +717,7 @@ Revue de ce que les sept volumes ne couvrent pas (sujets à établir sur les tex
 
 6. Droits d'enregistrement et de timbre ; fiscalité des mutations immobilières.
 7. Droits de douane.
-8. Dépenses fiscales et régimes d'incitation (code d'incitation aux investissements, loi de 2016, entreprises totalement exportatrices, développement régional) — documents Banque mondiale 2014 collectés.
+8. Dépenses fiscales et régimes d'incitation (code d'incitation aux investissements, loi de 2016, entreprises totalement exportatrices, développement régional) — **chapitre créé le 6 octobre 2026** (`fiscalite/_depenses_fiscales.qmd`) ; lacunes dans la section « Fiscalité » ci-dessus.
 9. Fiscalité de l'épargne et du capital : retenues libératoires sur les revenus de capitaux mobiliers, plus-values mobilières, épargne exonérée.
 10. Taxes affectées et contributions exceptionnelles (contribution conjoncturelle, contribution au budget de l'État de 2014, FODEC, vignette).
 
@@ -785,6 +934,22 @@ Volume créé le 4 octobre 2026 (`precis/fr/finances_locales/`), d'après le pla
 `docs/notes/fiscalite-locale-plan.md` (quatre mouvements, les notions avant le droit). Le
 livre arabe a son `_quarto.yml` et ses références ; il est sauté au rendu tant que la
 traduction n'a pas livré `index.qmd`.
+
+- **À lire et à intégrer : décret-loi n° 2026-4 du 30 septembre 2026 relatif aux conseils
+  municipaux** (JORT n° 96 du 30 septembre 2026, édition arabe, p. 2058 d'après le sommaire du
+  fascicule ; repéré le 5 octobre 2026). Son article 139 abroge la loi organique n° 2018-29 du
+  9 mai 2018 (code des collectivités locales), sur laquelle s'appuient les chapitres
+  d'institutions, de budgets et de transferts. L'article 136 n'en fixe l'entrée en vigueur
+  qu'après la proclamation des résultats définitifs des premières élections des conseils
+  municipaux qui suivront, sous réserve de l'article 137 ; l'article 134 maintient le fonds
+  d'appui à la décentralisation. **État de lecture** : seuls ces articles ont été lus, sur le
+  texte converti du fascicule arabe, dont les colonnes sont entrelacées — à relire à l'image
+  avant toute citation, puis lire le texte en entier (140 articles, titre III sur le régime
+  financier). **Corpus** : fascicule arabe présent et lisible (`PDFs/JORT/2026/ar/Ja0962026.pdf`) ;
+  édition française à obtenir — le fichier « fr » du corpus est l'arabe
+  (`docs/notes/outillage-sources.md`, § 3). Texte absent de `jort_cache.db`. Rien n'est encore
+  écrit au volume : tant que le texte n'est pas lu, les chapitres décrivent le droit du code de
+  2018, sans mention de son abrogation à venir.
 
 - **Présentation — rédigée le 4 octobre 2026** (`index.qmd`, `#sec-fl-presentation`) : objet
   du volume, quatre mouvements, frontières avec « La fiscalité » (impôt foncier de 2014, IRPP et

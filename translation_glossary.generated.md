@@ -19,6 +19,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | AMEN social | برنامج الأمان الاجتماعي |  |
 | Annuité liquidable | السنة القابلة للتصفية |  |
 | Appui financier occasionnel | الدعم المادي الظرفي |  |
+| Assiette des cotisations | قاعدة الاشتراك |  |
 | Assiette du droit de consommation | قاعدة المعلوم على الاستهلاك |  |
 | Assiette fiscale | الوعاء الضريبي |  |
 | Assujetti | الخاضع للأداء |  |
@@ -29,6 +30,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Avance sur la taxe de formation professionnelle | التسبقة على الأداء على التكوين المهني |  |
 | Avancement d'échelon | الترقّي في الدرجة |  |
 | Avantage en nature | الامتياز العيني |  |
+| Avantages financiers | الامتيازات المالية |  |
+| Avantages fiscaux | الامتيازات الجبائية |  |
 | Ayant droit | ذو الحقّ |  |
 | Barème de l'impôt sur le revenu | جدول الضريبة على الدخل |  |
 | Bénéfice imposable | الربح الخاضع للضريبة |  |
@@ -56,6 +59,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Chiffre indiciaire | الرقم القياسي |  |
 | Ciblage | الاستهداف |  |
 | Classe de revenus | شريحة الدخل |  |
+| Code d'incitations aux investissements | مجلة تشجيع الاستثمارات |  |
 | Code de la fiscalité locale | مجلة الجباية المحلية |  |
 | Collectivité locale | الجماعة المحلية |  |
 | Commerçant détaillant assujetti à la taxe sur la valeur ajoutée | تاجر التفصيل الخاضع للأداء على القيمة المضافة |  |
@@ -86,6 +90,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Convention collective sectorielle des banques et établissements financiers | الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية |  |
 | Coordination des régimes | التنسيق بين أنظمة الضمان الاجتماعي |  |
 | Cotisation de l'assuré | اشتراك المضمون |  |
+| Cotisation supplémentaire | الاشتراك الإضافي |  |
 | Cotisations sociales | المساهمات الاجتماعية |  |
 | Coût du travail | كلفة العمل |  |
 | Crédit de taxe sur la valeur ajoutée | فائض الأداء على القيمة المضافة |  |
@@ -96,6 +101,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Délai de carence | فترة الانتظار |  |
 | Délégation de compétences | تفويض الصلاحيات |  |
 | Délégation spéciale | النيابة الخصوصية |  |
+| Dépenses fiscales | النفقات الجبائية |  |
 | Dépenses obligatoires | النفقات الإجبارية |  |
 | Déséquilibre vertical | الاختلال العمودي |  |
 | Dévolution de compétences | إسناد الصلاحيات الذاتية |  |
@@ -112,10 +118,12 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Emploi fonctionnel | الخطة الوظيفية |  |
 | Emploi informel | التشغيل غير المنظّم |  |
 | Emploi public | التشغيل العمومي |  |
+| Employés de maison | عمال المنازل |  |
 | Emprunt | الاقتراض |  |
 | Enfant à charge | الطفل المتكفَّل به |  |
 | Entrepositaire | أرباب المخازن |  |
 | Entreprises publiques | المنشآت العمومية |  |
+| Entreprises totalement exportatrices | المؤسسات المصدرة كليا |  |
 | Épargne nette | الادّخار الصافي |  |
 | Équilibre réel | التوازن الحقيقي للميزانية |  |
 | Établissement public à caractère administratif | المؤسسة العمومية ذات الصبغة الإدارية | EPA |
@@ -164,8 +172,10 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Libre administration | التدبير الحر |  |
 | Limite de calcul des prestations | الحدّ الأقصى لاحتساب المنافع |  |
 | Livraison à soi-même | التسليم للنفس |  |
+| Louage | اللواج |  |
 | Magistrat | القاضي |  |
 | Majoration pour salaire unique | منحة الأجر الوحيد |  |
+| Maladie professionnelle | مرض مهني |  |
 | Masse salariale | كتلة الأجور |  |
 | Mécanisme d'ajustement automatique des prix des carburants | آلية التعديل الأوتوماتيكي لأسعار المحروقات |  |
 | Minimum d'impôt | الضريبة الدنيا |  |
@@ -195,11 +205,13 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prestation monétaire | المنفعة النقدية |  |
 | Prestation non monétaire | المنفعة غير النقدية |  |
 | Prestations familiales | المنح العائلية |  |
+| Prime d'investissement | منحة الاستثمار |  |
 | Prime de rendement | منحة المردودية |  |
 | Prix de référence du mètre carré couvert | الثمن المرجعي للمتر المربع المبني |  |
 | Produit intérieur brut | الناتج المحلي الإجمالي | PIB |
 | Produits de base | المواد الأساسية |  |
 | Programme national d'aide aux familles nécessiteuses | البرنامج الوطني لمساعدة العائلات المعوزة | PNAFN |
+| Projets d'intérêt national | المشاريع ذات الأهمية الوطنية |  |
 | Promoteur immobilier | الباعث العقاري |  |
 | Promotion | الترقية |  |
 | Protection contre la perte d'emploi | الحماية الاجتماعية للعمال الذين يفقدون شغلهم لأسباب اقتصادية أو فنية |  |
@@ -227,6 +239,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Régime statutaire autonome | النظام الأساسي الخاص |  |
 | Régime suspensif de la taxe sur la valeur ajoutée | نظام توقيف العمل بالأداء على القيمة المضافة |  |
 | Règle d'or | القاعدة الذهبية |  |
+| Rémunération à la part | الخلاص بالحصة |  |
 | Rémunération des dirigeants d'entreprises publiques | تأجير رؤساء المؤسسات والمنشآت العمومية |  |
 | Rente compensatrice | الإيراد التعويضي |  |
 | Rente d'accident du travail | إيراد حادث الشغل |  |
@@ -244,6 +257,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Salaire brut | الأجر الخام |  |
 | Salaire conventionnel | الأجر التعاقدي |  |
 | Salaire différentiel | الأجر التفاضلي |  |
+| Salaire forfaitaire | الأجر التقديري |  |
 | Salaire journalier moyen | الأجر اليومي المتوسّط |  |
 | Salaire minimum agricole garanti | الأجر الأدنى الفلاحي المضمون | SMAG |
 | Salaire minimum garanti | الأجر الأدنى المضمون |  |
@@ -268,6 +282,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Subvention spécifique | المنحة الخصوصية |  |
 | Surcompensation | الزيادة في تعويض المنح العائلية |  |
 | Suspension du droit de consommation | توقيف العمل بالمعلوم على الاستهلاك |  |
+| Système fiscal de référence | النظام الجبائي المرجعي |  |
 | Tableau A du code de la TVA | الجدول « أ » |  |
 | Tableau annexé à la loi n° 88-62 | الجدول المدرج بملحق القانون عدد 62 لسنة 1988 |  |
 | Tableau B bis du code de la TVA | الجدول « ب مكرر » |  |
@@ -310,3 +325,4 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Valeur du point d'indice | قيمة النقطة الاستدلالية |  |
 | Valeur en douane | القيمة المصرح بها لدى الديوانة |  |
 | Validation des services | إدماج الخدمات |  |
+| Zones de développement régional | مناطق التنمية الجهوية |  |

@@ -676,8 +676,57 @@
     couverture: 'jort_cache : intitulés et objets des textes publiés depuis le 1er janvier 1999 visant les accidents du travail ; seuls paraissent des textes sur l''assiette (décret n° 2000-1439), l''extension de la couverture (décret n° 2000-2279), les remises de pénalités (2007, 2008, 2011, 2024, 2025) et le régime des forces de sûreté intérieure (loi n° 2013-50). Aucun texte de taux. Le plein texte des fascicules n''a pas été parcouru.'
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local, iort, visas]
+    couverture: 'Plein texte parcouru sur « 95-538 » et le motif arabe 538/1995 (numéro et année à moins de 12 caractères) : mêmes sources, même couverture et mêmes lacunes que la passe du 5 octobre 2026 de la fiche r-atmp-assiette-modificatifs. Occurrences postérieures à 1999 : visas seulement (2000, 2009, 2017, 2020, 2021, 2024), qui donnent le décret n° 95-538 modifié par le seul décret n° 99-1010. Aucun texte ne modifie les art. 1er et 2 nouveaux.'
+    couvert_jusqu_au: 2026-09-30
+    resultat: aucun
   a_faire:
-  - parcourir le plein texte des fascicules (« 95-538 », « 538 لسنة 1995 ») pour un modificatif dont l'intitulé ne viserait pas le décret
+  - lire à l'image ou océriser les 14 fascicules français de 1995-1998 sans couche texte, et l'édition arabe 1995-2004 (voir la fiche r-atmp-assiette-modificatifs)
+
+- id: r-atmp-assiette-modificatifs
+  objet: texte modifiant l'assiette de la cotisation au régime de réparation des accidents du travail et des maladies professionnelles (loi n° 94-28, art. 17 et 18 ; décret n° 95-538, art. 3 à 9) ou sa modulation (même décret, art. 10 à 27 ; loi n° 94-28, art. 90), autre que le décret n° 99-1010 (art. 4, § 2) et le décret n° 2000-1439 (taxi, louage, transport rural)
+  ou:
+  - precis/fr/cotisations_sociales/_accidents_travail.qmd#sec-cot-at-forfaits
+  - precis/fr/cotisations_sociales/_accidents_travail.qmd#sec-cot-at-modulation
+  requetes:
+    titres_fts:
+    - '"accidents du travail"'
+    - '"95 538"'
+    - '"94 28" AND accidents'
+    - '"حوادث الشغل"'
+    - (forfaitaire OR forfaitaires) AND (salaire OR salaires OR assiette OR cotisations)
+    - '"employes de maison" OR "gens de maison" OR "عملة المنازل" OR "عمال المنازل"'
+    - (taxi OR taxis OR louage) AND (cotisations OR securite OR assiette)
+    titres_like:
+    - '%95-538%'
+    - '%99-1010%'
+    - '%2000-1439%'
+    - '%94-28%'
+    - '%accidents du travail%'
+    - '%538 لسنة 1995%'
+    - '%1439 لسنة 2000%'
+    - '%28 لسنة 1994%'
+    - '%salaire forfaitaire%'
+    - '%evaluation forfaitaire%'
+    - '%الأجر الجزافي%'
+    - '%bains maures%'
+    - '%travail domestique%'
+    iort_ar: [538 لسنة 1995, 1010 لسنة 1999, 1439 لسنة 2000]
+    plein_texte: [95-538, 99-1010, 2000-1439, 538 لسنة 1995, 1439 لسنة 2000]
+    depuis: 1995-04-14
+  passes:
+  - date: 2026-10-05
+    role: documentaliste
+    sources: [jort_cache, corpus_local, iort, visas]
+    couverture: 'jort_cache jusqu''au 30 septembre 2026 (intitulés, LIKE doublés de FTS) ; miroir iort (corps depuis 2000 seulement ; faux positif dec_2007_1351, décret n° 538 de 1973) ; plein texte français 1995 à 2026 n° 95, décalage de 29 décodé pour 1999-2005 ; plein texte arabe 2014 à 2026 n° 96, partiel pour 2005-2013, nul pour 1995-2004 ; motif arabe réellement employé : numéro et année à moins de 12 caractères, plus large que les termes consignés. Textes lus : décrets n° 99-1010 (art. 4, § 2 seul, les art. 5 à 27 intacts) et n° 2000-1439 (salaire forfaitaire taxi, louage, transport rural, 1er juillet 2000, abrogation implicite du coefficient de l''art. 5) ; loi n° 95-103 (art. 7 seul) ; décrets n° 97-2004 et 2000-2279, loi n° 2002-32, décret n° 2002-916, loi n° 2021-37, loi n° 2004-71 : rien sur l''assiette ni sur la modulation. Visas de 2000, 2009, 2017, 2020, 2021 et 2024 : décret n° 95-538 modifié par le seul décret n° 99-1010. Lacunes : édition arabe 1995-2004 ; 289 numéros français non lus (absents, sans texte ou fichier arabe), dont 14 en 1995-1998 lus dans aucune édition (1995 n° 36 ; 1996 n° 23, 24, 37, 84, 95, 97 ; 1997 n° 16, 21, 31, 34, 99 ; 1998 n° 1, 30) ; les 115 fascicules français citant la loi n° 94-28 sans citer le décret n''ont pas été lus un à un ; n° 13 et 14 de 2021 identiques en français.'
+    couvert_jusqu_au: 2026-09-30
+    resultat: aucun
+  a_faire:
+  - lire à l'image ou océriser les 14 fascicules français de 1995-1998 sans couche texte
+  - lire les contextes des occurrences de « 94-28 » (115 fascicules français) pour un texte qui modifierait la loi sans viser le décret
+  - lire le décret n° 2005-321 (organisation de la CNAM) sur l'exercice des pouvoirs des art. 10 à 27
 
 - id: r-cnrps-tutelle-1976-1985
   objet: texte transférant la tutelle de la CNRPS du ministère des Finances (loi n° 75-83, art. 28) à un autre département, entre le décret n° 76-3 du 5 janvier 1976 et le décret n° 85-1611 du 31 décembre 1985, qui la place sous le ministère de la protection sociale
