@@ -74,6 +74,18 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   identifié ici ») et porte une ancre `<!-- RECHERCHE r-… : … -->` vers une fiche rejouable de
   `docs/recherches.yml` — requêtes, sources, couverture datée, résultat. `scripts/recherches.py`
   la vérifie (CI), la relance et l'élargit.
+- **Le budgétaire ne se mêle pas aux rapports extérieurs (FMI, Banque mondiale, OCDE) ni aux
+  évaluations économiques** : pas
+  dans le même tableau, pas sur le même plan, et jamais une étude sans sa méthode (qui, quelles
+  données, quel périmètre, quel calcul). Le budgétaire d'abord, en entonnoir ; les études ensuite,
+  titrées comme telles. Les superposer **sur un graphique** est permis quand elles sont censées
+  traiter des mêmes dispositifs, familles distinguées et ruptures expliquées.
+- **Tout PIB dit sa base, et s'il est rétropolé** ; si la source ne le dit pas, on l'écrit. Jamais
+  deux bases chaînées en silence : la série se trace par segments, le changement de base est une
+  rupture, et la rupture renvoie à l'annexe du site sur le PIB (`precis/fr/annexe-pib.qmd`).
+- **Les études citées sont récupérées** : le PDF de toute étude citée est rangé dans
+  `tunisia-data` (`data/raw/`, hors git, catalogué dans `sources/`). On ne cite pas de seconde
+  main ce qu'on peut obtenir.
 - **Aucun chiffre ponctuel isolé** : toute valeur vient avec sa vue d'évolution datée. Et dans un
   tableau de textes, la colonne de contenu donne le changement concret — article, avant → après —,
   sinon la ligne n'a rien à y faire.
