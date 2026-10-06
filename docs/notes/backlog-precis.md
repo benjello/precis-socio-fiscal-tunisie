@@ -245,14 +245,17 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
   Aucune figure : les séries ne sont que localisées. Trois fiches versées dans
   `docs/recherches.yml` : `r-cgc-decret-application-1970`, `r-cgc-budgetisation-1992-2003`,
   `r-carburants-ajustement-apres-2021`. Lacunes, dans l'état que la note établit :
-  - **Série 2012-2025 non publiée, faute de clés** : bulletins « Résultats provisoires de
-    l'exécution du budget » (mars 2013, décembre 2015, janvier 2017, juillet 2018) et rapports
-    annuels de la BCT (2015, 2017, 2019, 2021 à 2024) sont **collectés** dans `tunisia-data`
-    (ancien portail du ministère, `bct-archives/109/`), mais non versés à la bibliographie ; les
-    lignes 2012-2017 sont à relire à l'image avant versement. La rupture de périmètre de 2015
-    (LFC 2015 : hypothèse de prix du baril révisée, séparation des opérations de
-    commercialisation des hydrocarbures) est dite en prose, sans chiffre ni clé ; son contenu
-    comptable reste à établir.
+  - **Série 2012-2025 publiée le 6 octobre 2026** (`tbl-compensation-2012-2025`, § 10 de la
+    note) : une valeur par année et par poste, dans la publication la plus récente, avec l'état
+    que la source lui donne ; 2025 et 2026 sont présentées comme des montants de loi de finances,
+    non comme des dépenses constatées. Parts dans le PIB : seules celles que les sources
+    publient (`tbl-compensation-pib` : 2010, 2011, 2013-2015, 2018, 2022, 2023). Restent :
+    les **parts dans le PIB des années non relevées** (2012, 2016, 2017, 2019-2021, 2024, 2025),
+    à chercher dans les rapports de la BCT et du ministère, jamais à calculer ; le **contenu de
+    la rupture de 2015** (« séparation des opérations de commercialisation des hydrocarbures »,
+    LFC 2015), que les bulletins énoncent sans dire ce qu'elle change dans le poste
+    « carburants » ; l'état (provisoire ou définitif) des colonnes sans étiquette, 2012-2013 et
+    2019-2024.
   - **Série à reconstruire dans l'entrepôt** (coût par poste 2003-2025, en MD et en % du PIB ;
     temps long depuis 1970), avec sa fiche de provenance : préalable aux figures (TODO rédacteur).
     PIB : `tunisia-data` (WDI, comptes nationaux de l'INS). Aucun ratio n'est calculé à la main
