@@ -75,7 +75,7 @@ Le niveau des prix ne dit pas tout : trois grilles changent la manière de factu
 - **1^er^ septembre 2018.** Le seuil en deçà duquel s'applique le prix unique est ramené de 200 à 100 kWh par mois.
 - **1^er^ mai 2022.** Aucun prix de tranche ne change, mais au-delà de 100 kWh toute la consommation est désormais facturée au prix de la tranche atteinte : un ménage qui franchit un seuil paie le prix supérieur sur l'ensemble de ses kilowattheures, et non sur les seuls kilowattheures qui dépassent.
 
-Entre-temps, la grille du 1^er^ juin 2019 abaisse les tranches basses — de 75 à 62 millimes, de 108 à 96 — et relève les tranches hautes — de 295 à 341, de 355 à 414. Le rapport entre le prix le plus élevé et le prix le plus bas de la grille passe ainsi de moins de deux en 2004 à près de sept depuis 2019 ; ces rapports ne se comparent toutefois pas tels quels d'une date à l'autre, la définition des tranches et le mode de facturation ayant changé en 2006, 2014, 2018 et 2022. Seule une facture type à consommation fixe rend ces réformes comparables.
+Entre-temps, la grille du 1^er^ juin 2019 abaisse les tranches basses — de 75 à 62 millimes, de 108 à 96 — et relève les tranches hautes — de 295 à 341, de 355 à 414. Les prix de tranche ne se comparent toutefois pas tels quels d'une date à l'autre, la définition des tranches et le mode de facturation ayant changé en 2006, 2014, 2018 et 2022. Seule une facture type à consommation fixe rend ces réformes comparables.
 
 ### Les ajustements datés, 1978-2024
 
@@ -104,7 +104,7 @@ Entre-temps, la grille du 1^er^ juin 2019 abaisse les tranches basses — de 75 
 | 1^er^ mai 2022 | facturation de toute la consommation au prix de la tranche atteinte | [@steg-grille-2022-05-01] |
 | 1^er^ janvier 2024 | taxe au profit du Fonds de transition énergétique : de 1 à 5 millimes par kWh | [@steg-grille-2022-05-01] |
 
-: Les ajustements datés du tarif de l'électricité en basse tension, 1978-2024, et leur ampleur quand la source la donne. Sources : *Journal officiel* jusqu'en 1992 ; grilles et rapports annuels de la STEG depuis 2004 ; BCT pour 1993. Aucun ajustement n'est établi entre octobre 1993 et mai 2004. Les ajustements de 2007 et d'avril 2008 sont connus par leur pourcentage, non par leur grille. Pour 2010, la grille de la STEG porte la date d'effet du 1^er^ juin, alors que son rapport annuel écrit qu'il n'y a pas eu d'ajustement tarifaire cette année-là : les deux pièces ne s'accordent pas [@steg-ra-2010]. {#tbl-compensation-eg-ajustements}
+: Les ajustements datés du tarif de l'électricité en basse tension, 1978-2024, et leur ampleur quand la source la donne. Sources : *Journal officiel* jusqu'en 1992 ; grilles et rapports annuels de la STEG depuis 2004 ; BCT pour 1993. Aucune grille n'est établie entre octobre 1993 et mai 2004 ; la BCT mentionne en 1999 une « révision à la baisse des prix de l'eau, de l'électricité et du gaz », dont le bénéficiaire n'est pas établi [@bct-ra-1999]. Les ajustements de 2007 et d'avril 2008 sont connus par leur pourcentage, non par leur grille. Pour 2010, la grille de la STEG porte la date d'effet du 1^er^ juin, alors que son rapport annuel écrit qu'il n'y a pas eu d'ajustement tarifaire cette année-là : les deux pièces ne s'accordent pas [@steg-ra-2010]. {#tbl-compensation-eg-ajustements}
 
 La chronologie se rapproche de celle des carburants (@tbl-compensation-ajustements) : quatre hausses en quatorze mois en 2007-2008 ; puis, à partir de 2014, une série de refontes qui concentrent les hausses sur les fortes consommations.
 
@@ -150,7 +150,7 @@ Le rapport de contrôle du 21 juillet 2014 décompose l'écart entre le coût du
 
 : Le coût et le prix de vente du kilowattheure, et ce que couvre la subvention, 2008-2012 (millimes par kWh). Source : rapport de contrôle du 21 juillet 2014 [@minfin-compensation-carburants-2014, p. 73-74]. {#tbl-compensation-eg-cout-2008-2012}
 
-De 2008 à 2012, le coût du kilowattheure passe de 179 à 259,6 millimes et son prix de vente moyen de 113,4 à 133,0 : en 2012, le soutien représente près de la moitié du coût. Le rapport l'attribue, pour l'ensemble de la période 2007-2013, à la hausse du prix des combustibles, au cours du dollar et à la consommation [@minfin-compensation-carburants-2014, p. 72]. L'essentiel de l'écart est couvert par le soutien indirect, c'est-à-dire par le prix de cession préférentiel du gaz.
+De 2008 à 2012, le coût du kilowattheure passe de 179 à 259,6 millimes et son prix de vente moyen de 113,4 à 133,0 : en 2012, le soutien représente près de la moitié du coût. Le rapport attribue la hausse du soutien total à la STEG, de 2007 à 2013, au prix des combustibles, au cours du dollar et à la consommation [@minfin-compensation-carburants-2014, p. 72]. L'essentiel de l'écart est couvert par le soutien indirect, c'est-à-dire par le prix de cession préférentiel du gaz.
 
 ### Depuis 2017, selon l'Observatoire national de l'énergie
 
@@ -178,17 +178,17 @@ Le budget subventionne l'électricité et le gaz par la ligne « carburants », 
 
 Les comptes de la STEG permettent un rapprochement, que le tableau suivant pose sans le pousser au-delà de ce que les pièces établissent.
 
-| Année | Subvention à la STEG selon le rapport de contrôle de 2014 : directe | Idem : indirecte | Idem : totale | Ligne budgétaire versée à la STEG | « Subvention d'exploitation » aux comptes de la STEG |
+| Année | Subvention à la STEG selon le rapport de contrôle de 2014 : [directe](#g-subvention-directe) | Idem : indirecte | Idem : totale | Ligne budgétaire versée à la STEG | « Subvention d'exploitation » aux comptes de la STEG |
 |---|---:|---:|---:|---:|---:|
 | 2010 | 330 | 778,3 | 1 108,3 | 250 | 1 108,3 |
 | 2011 | 570 | 1 100,8 | 1 670,8 | 540 | 1 670,9 |
 | 2012 | 940 | 1 793,7 | 2 733,7 | 850 | 2 733,7 |
 | 2015 | | | | 858 | 858,0 |
 
-: La subvention à la STEG selon trois pièces, 2010-2012 et 2015 (millions de dinars courants). Sources : rapport de contrôle du 21 juillet 2014, tableau par entreprise [@minfin-compensation-carburants-2014, p. 9 et 72] ; pour la ligne budgétaire, @tbl-compensation-carburants-beneficiaires ; pour la subvention d'exploitation, états de résultat des rapports annuels de la STEG [@steg-ra-2010 ; @steg-ra-2011 ; @steg-ra-2012 ; @steg-ra-2015]. Les montants du rapport de contrôle sont établis sur ses tableaux ; ceux des rapports annuels de la STEG sont repris de leur texte et restent à confronter aux pages des documents. Le rapport de contrôle ne couvre pas 2015. {#tbl-compensation-eg-rapprochement}
+: La subvention à la STEG selon trois pièces, 2010-2012 et 2015 (millions de dinars courants). Sources : rapport de contrôle du 21 juillet 2014, tableau par entreprise [@minfin-compensation-carburants-2014, p. 9 et 72] ; pour la ligne budgétaire, @tbl-compensation-carburants-beneficiaires ; pour la subvention d'exploitation, états de résultat des rapports annuels de la STEG [@steg-ra-2010 ; @steg-ra-2011 ; @steg-ra-2012 ; @steg-ra-2015]. Les montants du rapport de contrôle sont établis sur ses tableaux ; ceux des rapports annuels de la STEG sont repris de leur texte et restent à confronter aux pages des documents. Le rapport de contrôle ne couvre pas 2015. La subvention directe qu'il attribue à la STEG n'est pas la ligne budgétaire versée à l'entreprise : l'écart entre les deux colonnes n'est pas expliqué par les pièces citées. {#tbl-compensation-eg-rapprochement}
 
 De 2010 à 2012, la « subvention d'exploitation » que portent les comptes de la STEG est égale, à un dixième de million près, à la subvention totale — directe et indirecte — que calcule le rapport de contrôle : 2 733,7 MD dans les deux pièces en 2012. Elle dépasse de loin la ligne budgétaire versée à l'entreprise, 850 MD cette année-là. En 2015, première année où la STEG achète son gaz au prix mondial (@sec-compensation-rupture-2015), la subvention d'exploitation de ses comptes coïncide au contraire avec la ligne budgétaire : 858 MD.
 
-Avant 2015, les comptes de la STEG retracent donc un montant égal à la subvention totale, et non la seule subvention versée par le budget ; après 2015, les deux se confondent. C'est, vu depuis l'entreprise, le même élargissement de périmètre que celui de la ligne « carburants ». Le traitement comptable qui produit cette égalité n'est pas établi ici : les notes aux états financiers de la STEG ne sont pas exploitées, et la série de la subvention d'exploitation n'est pas reprise au-delà de ces quatre années.
+Avant 2015, les comptes de la STEG retracent donc un montant égal à la subvention totale, et non la seule subvention versée par le budget ; en 2015, les deux se confondent. Le traitement comptable qui produit cette égalité n'est pas établi ici : les notes aux états financiers de la STEG ne sont pas exploitées, et la série de la subvention d'exploitation n'est pas reprise au-delà de ces quatre années.
 
 <!-- TODO (documentaliste) : confronter aux pages des rapports annuels de la STEG (2007-2021) la « subvention d'exploitation » de leurs états de résultat, lire les notes aux états financiers qui la définissent, puis décider de publier la série entière (docs/notes/compensation-tarifs-electricite-gaz.md, § (ii) et (viii)) ; répartition de la ligne « carburants » entre STIR et STEG de 2022 à 2025 d'après les rapports sur le budget de l'État, à verser avant citation (docs/notes/compensation-archives-energie.md, § 1.1 a). -->
