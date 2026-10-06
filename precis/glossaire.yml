@@ -7427,22 +7427,31 @@ entries:
         المؤتمر الدولي الحادي والعشرين لخبراء إحصاءات العمل، 2023، الفقرة 56).
       synonymes: []
 
-  # ── Volume « La fiscalité », chapitre « Les régimes d'incitation et les dépenses
-  #    fiscales » (passe 1 du 6 octobre 2026 : termes et sources ; les définitions
-  #    viennent en passe 2, après l'ancrage dans la prose) ──
+  # ── Volume « La fiscalité », chapitre « Les dépenses fiscales et les régimes
+  #    d'incitation » (passe 1 du 6 octobre 2026 : termes et sources ; passe 2 du
+  #    même jour : définitions, après l'ancrage dans la prose) ──
   # Termes arabes relevés le 6 octobre 2026 sur la couche texte des fascicules
   # arabes du JORT (n° 82 du 7 octobre 2016, n° 15 du 21 février 2017, n° 15 du
   # 19 février 2019), l'article étant donné par `source_traduction`. Le terme arabe
   # est celui que le texte emploie, donc au pluriel quand le texte n'emploie que le
-  # pluriel ; le terme français s'y aligne. Tout reste « provisoire » tant que les
-  # définitions ne sont pas rédigées. « Offshore » et « onshore » sont des mots
-  # d'usage, absents des textes lus : pas d'entrée.
+  # pluriel ; le terme français s'y aligne. Les définitions s'en tiennent à ce que
+  # dit le texte cité ; quand celui-ci emploie le terme sans le définir (avantages
+  # fiscaux, zones de développement régional), la définition dit ce que le texte y
+  # attache, et rien de plus. Seul « système fiscal de référence » reste
+  # « provisoire » : son arabe ne vient que des rapports du ministère des Finances.
+  # « Offshore » et « onshore » sont des mots d'usage, absents des textes lus : pas
+  # d'entrée. « Entreprise partiellement exportatrice » n'a pas d'entrée non plus :
+  # l'article 22 du code de 1993 vise « les entreprises qui réalisent des
+  # opérations d'exportation » sans définir ce terme, et le fascicule arabe de
+  # 1993 est un scan sans couche texte.
 
   - id: depense-fiscale
     acronyme: null
-    statut: provisoire
+    statut: valide
     references: [gbo-depenses-fiscales, loi-org-2019-15-lob]
-    # Définition : rapport annexé au projet de loi de finances pour 2021 (français).
+    # Définition : rapport annexé au projet de loi de finances pour 2021 (français),
+    # « 2. La définition des dépenses fiscales ». La loi organique emploie le terme
+    # (art. 46 et 70) sans le définir.
     source_definition: {ref: gbo-depenses-fiscales, locator: "rapport annexé au projet de loi de finances pour 2021, section 1, § 2"}
     # Arabe : « تقرير حول النفقات الجبائية والامتيازات المالية الممنوحة », art. 46.
     # Le singulier « نفقة جبائية » n'est attesté que dans les rapports annexés aux
@@ -7451,18 +7460,37 @@ entries:
     voir_aussi: [systeme-fiscal-de-reference, avantage-fiscal, avantage-financier]
     fr:
       terme: Dépenses fiscales
-      definition: ""
+      definition: >
+        Au sens du rapport annexé au projet de loi de finances pour 2021,
+        dispositions légales qui dérogent au système fiscal de référence et
+        allègent la charge fiscale d'une catégorie de contribuables ou de
+        certaines opérations ou activités, au prix d'un manque de ressources pour
+        le Trésor, afin d'atteindre des objectifs économiques, sociaux, culturels
+        ou environnementaux. La loi organique du budget range « un rapport sur les
+        dépenses fiscales et les avantages financiers octroyés » parmi les
+        documents qui accompagnent le projet de loi de finances (art. 46).
       synonymes: [Dépense fiscale]
     ar:
       terme: النفقات الجبائية
-      definition: ""
+      definition: >
+        حسب التقرير المرفق بمشروع قانون المالية لسنة 2021، الأحكام القانونية
+        الاستثنائية التي تخرج عن النظام الجبائي المرجعي وتخفّف العبء الجبائي عن
+        صنف من المطالبين بالأداء أو عن بعض العمليات أو الأنشطة، مقابل نقص في
+        موارد الخزينة، وذلك لبلوغ أهداف اقتصادية أو اجتماعية أو ثقافية أو بيئية.
+        ويقتضي القانون الأساسي للميزانية أن يُرفق مشروع قانون المالية بـ«تقرير حول
+        النفقات الجبائية والامتيازات المالية الممنوحة» (الفصل 46).
       synonymes: [نفقة جبائية]
 
   - id: systeme-fiscal-de-reference
     acronyme: null
+    # Provisoire : le terme arabe n'est attesté que par les rapports du ministère
+    # des Finances, non par un texte publié au Journal officiel.
     statut: provisoire
     references: [gbo-depenses-fiscales]
-    source_definition: {ref: gbo-depenses-fiscales, locator: "rapport annexé au projet de loi de finances pour 2021, section 1, § 2"}
+    # Définition : « Section II : Le régime fiscal de référence », « 1. La notion du
+    # régime fiscal de référence ». Le rapport écrit tantôt « système », tantôt
+    # « régime » fiscal de référence.
+    source_definition: {ref: gbo-depenses-fiscales, locator: "rapport annexé au projet de loi de finances pour 2021, section II, § 1"}
     # Arabe : intitulé de section des rapports arabes du ministère des Finances
     # (« القسم الثاني : النظام الجبائي المرجعي »). Terme d'un rapport officiel, NON du
     # JORT : aucun texte publié au Journal officiel ne l'emploie parmi ceux lus.
@@ -7470,37 +7498,74 @@ entries:
     voir_aussi: [depense-fiscale]
     fr:
       terme: Système fiscal de référence
-      definition: ""
+      definition: >
+        Au sens du rapport annexé au projet de loi de finances pour 2021, les
+        dispositions de base de chaque impôt, au regard desquelles une mesure est
+        dite dérogatoire et comptée parmi les dépenses fiscales. Le rapport retient
+        l'approche qu'il appelle juridique : le régime de référence y est
+        « l'ensemble des dispositions essentielles prévues par le droit commun »,
+        identifié pour chaque type d'impôt.
       synonymes: [Régime fiscal de référence]
     ar:
       terme: النظام الجبائي المرجعي
-      definition: ""
+      definition: >
+        حسب التقرير المرفق بمشروع قانون المالية لسنة 2021، الأحكام الأساسية لكل
+        أداء، التي يُعدّ الإجراء الخارج عنها استثنائيا ويُحتسب ضمن النفقات الجبائية.
+        ويعتمد التقرير المقاربة التي يسمّيها قانونية: النظام المرجعي فيها هو مجموع
+        الأحكام الأساسية المنصوص عليها بالقانون العام، ويُضبط بحسب كل صنف من
+        الأداءات.
       synonymes: []
 
   - id: avantage-fiscal
     acronyme: null
-    statut: provisoire
+    statut: valide
     references: [loi-avantages-fiscaux-2017]
     # Arabe : intitulé de la loi (« مراجعة منظومة الامتيازات الجبائية ») et titre du
     # chapitre IV nouveau du code (« الامتيازات الجبائية »), art. 1er. Le singulier
     # défini « الامتياز الجبائي » y figure une fois ; l'indéfini n'y figure pas.
+    # La loi emploie le terme comme intitulé : la définition décrit le contenu du
+    # chapitre IV (titres de ses sections et sous-sections, art. 63 à 67 et 71 lus) :
+    # l'art. 71 ne porte qu'une déduction, l'art. 67 applique déduction et taux
+    # réduit en même temps — d'où « pour plusieurs régimes », sans ordre de succession.
     source_definition: {ref: loi-avantages-fiscaux-2017, locator: "art. 1er (chapitre IV nouveau du code de l'IRPP et de l'IS, art. 63 à 77)"}
     source_traduction: {ref: loi-avantages-fiscaux-2017, locator: "intitulé et art. 1er"}
     voir_aussi: [depense-fiscale, avantage-financier, entreprise-totalement-exportatrice, zone-developpement-regional]
     fr:
       terme: Avantages fiscaux
-      definition: ""
+      definition: >
+        Intitulé du chapitre IV que la loi n° 2017-8 du 14 février 2017 ajoute au
+        code de l'impôt sur le revenu des personnes physiques et de l'impôt sur
+        les sociétés (articles 63 à 77). Il réunit des avantages au titre de
+        l'exploitation — développement régional, développement agricole,
+        exportation, activités de soutien et de lutte contre la pollution,
+        entreprises nouvellement créées — et des avantages au titre du
+        réinvestissement en dehors de l'entreprise. Au titre de l'exploitation,
+        ils consistent en une déduction, totale ou partielle, des revenus ou des
+        bénéfices de l'assiette de l'impôt et, pour plusieurs régimes, en
+        l'imposition des bénéfices au taux réduit de l'impôt sur les sociétés.
       synonymes: [Avantage fiscal]
     ar:
       terme: الامتيازات الجبائية
-      definition: ""
+      definition: >
+        عنوان الباب الرابع الذي أضافه القانون عدد 8 لسنة 2017 المؤرخ في 14 فيفري
+        2017 إلى مجلة الضريبة على دخل الأشخاص الطبيعيين والضريبة على الشركات
+        (الفصول من 63 إلى 77). ويجمع الامتيازات الجبائية بعنوان الاستغلال —
+        التنمية الجهوية، والتنمية الفلاحية، والتصدير، وأنشطة المساندة ومقاومة
+        التلوث، والمؤسسات جديدة الإحداث — والامتيازات الجبائية بعنوان إعادة
+        الاستثمار خارج المؤسسة. وتتمثّل، بعنوان الاستغلال، في طرح كلي أو جزئي
+        للمداخيل أو الأرباح من أساس الضريبة، وفي إخضاع الأرباح، بالنسبة إلى عدد
+        من الأنظمة، للضريبة على الشركات بالنسبة المنخفضة.
       synonymes: [الامتياز الجبائي]
 
   - id: avantage-financier
     acronyme: null
-    statut: provisoire
+    statut: valide
     references: [gbo-depenses-fiscales, loi-org-2019-15-lob, loi-avantages-fiscaux-2017]
-    source_definition: {ref: gbo-depenses-fiscales, locator: "rapport annexé au projet de loi de finances pour 2021, « Définition des avantages financiers », p. 86"}
+    # Définition contrôlée le 6 octobre 2026 sur la page elle-même : le titre
+    # « 1.1 Définition des avantages financiers » est à la page 86 de la pagination
+    # imprimée (90e page du fichier), la phrase de définition à la page 87 (91e).
+    # Le sommaire ne donnait que la page 86.
+    source_definition: {ref: gbo-depenses-fiscales, locator: "rapport annexé au projet de loi de finances pour 2021, deuxième partie, section 1, § 1.1 (pages numérotées 86 et 87)"}
     # Arabe : « النفقات الجبائية والامتيازات المالية الممنوحة », art. 46 ; la loi
     # n° 2017-8, art. 18, écrit « الامتيازات الجبائية والمالية ». À ne pas confondre
     # avec les « incitations financières » (الحوافز المالية) de la loi n° 2016-71.
@@ -7508,85 +7573,196 @@ entries:
     voir_aussi: [depense-fiscale, avantage-fiscal, prime-investissement]
     fr:
       terme: Avantages financiers
-      definition: ""
+      definition: >
+        Au sens du rapport annexé au projet de loi de finances pour 2021, toute
+        aide financière, ou ayant un effet financier, ou en nature, que l'État
+        accorde à titre gratuit ou sans contrepartie équivalente à un acteur du
+        secteur commercial et concurrentiel, sous des conditions sélectives, pour
+        un intérêt public d'ordre économique, et qui constitue une charge pour le
+        Trésor. Le rapport relève que la législation en vigueur n'en donne pas de
+        définition. Le terme figure à l'article 46 de la loi organique du budget
+        et à l'article 18 de la loi n° 2017-8.
       synonymes: [Avantage financier]
     ar:
       terme: الامتيازات المالية
-      definition: ""
+      definition: >
+        حسب التقرير المرفق بمشروع قانون المالية لسنة 2021، كل إعانة مالية، أو لها
+        أثر مالي، أو عينية، تمنحها الدولة مجانا أو دون مقابل معادل لفائدة طرف
+        ناشط في القطاع التجاري والتنافسي، بشروط انتقائية، لتحقيق مصلحة عامة
+        اقتصادية، وتمثّل عبئا على الخزينة. ويلاحظ التقرير أن التشريع الجاري به
+        العمل لا يعرّفها. وترد العبارة بالفصل 46 من القانون الأساسي للميزانية
+        وبالفصل 18 من القانون عدد 8 لسنة 2017.
       synonymes: []
 
   - id: entreprise-totalement-exportatrice
     acronyme: null
-    statut: provisoire
-    references: [loi-avantages-fiscaux-2017, loi-93-120-code-incitations]
+    statut: valide
+    references: [loi-avantages-fiscaux-2017, loi-93-120-code-incitations, loi2018-56-lf2019]
     # Arabe : « تعتبر مؤسسات مصدرة كليا المؤسسات التي… », art. 69 nouveau du code.
     # Le code de 1993 (art. 10) portait la notion avant lui ; son fascicule arabe est
-    # un scan sans couche texte, non lu.
+    # un scan sans couche texte, non lu. La définition est celle de l'article 69,
+    # datée : l'article est abrogé par la loi de finances pour 2019.
     source_definition: {ref: loi-avantages-fiscaux-2017, locator: "art. 1er (art. 69 nouveau du code de l'IRPP et de l'IS)"}
     source_traduction: {ref: loi-avantages-fiscaux-2017, locator: "art. 1er (art. 69 nouveau du code de l'IRPP et de l'IS)"}
     voir_aussi: [avantage-fiscal, code-incitations-investissements, impot-societes]
     fr:
       terme: Entreprises totalement exportatrices
-      definition: ""
+      definition: >
+        Entreprises qui vendent la totalité de leurs marchandises ou de leurs
+        produits, ou rendent la totalité de leurs services, à l'étranger, et
+        celles qui rendent la totalité de leurs services en Tunisie pour un usage
+        à l'étranger (article 69 du code de l'impôt sur le revenu des personnes
+        physiques et de l'impôt sur les sociétés, dans la rédaction de la loi
+        n° 2017-8). Le même article les autorise à écouler sur le marché local une
+        part de leur production dans la limite de 30 % de leur chiffre d'affaires
+        à l'export de l'année précédente. La notion vient du code d'incitations
+        aux investissements de 1993 (article 10) ; l'article 69 est abrogé par la
+        loi de finances pour 2019 (article 37).
       synonymes: [Entreprise totalement exportatrice]
     ar:
       terme: المؤسسات المصدرة كليا
-      definition: ""
+      definition: >
+        المؤسسات التي تبيع كامل سلعها أو منتجاتها أو تسدي كامل خدماتها خارج
+        البلاد التونسية، والتي تنجز كامل خدماتها بالبلاد التونسية ويتم استعمالها
+        بالخارج (الفصل 69 من مجلة الضريبة على دخل الأشخاص الطبيعيين والضريبة على
+        الشركات، في صيغة القانون عدد 8 لسنة 2017). ويجيز لها الفصل نفسه ترويج
+        جزء من إنتاجها بالسوق المحلية في حدود 30 % من رقم معاملاتها عند التصدير
+        للسنة السابقة. ويعود المفهوم إلى مجلة تشجيع الاستثمارات لسنة 1993 (الفصل
+        10)؛ وقد ألغي الفصل 69 بقانون المالية لسنة 2019 (الفصل 37).
       synonymes: []
 
   - id: zone-developpement-regional
     acronyme: null
-    statut: provisoire
+    statut: valide
     references: [loi-avantages-fiscaux-2017, loi-93-120-code-incitations]
     # Arabe : « بمناطق التنمية الجهوية », art. 63 nouveau du code ; seul le pluriel
-    # est attesté.
+    # est attesté. L'article 63 ne définit pas les zones : il en distingue deux
+    # groupes et renvoie leur liste à un décret gouvernemental. La définition n'en
+    # dit pas plus.
     source_definition: {ref: loi-avantages-fiscaux-2017, locator: "art. 1er (art. 63 nouveau du code de l'IRPP et de l'IS)"}
     source_traduction: {ref: loi-avantages-fiscaux-2017, locator: "art. 1er (art. 63 nouveau du code de l'IRPP et de l'IS)"}
     voir_aussi: [avantage-fiscal, code-incitations-investissements]
     fr:
       terme: Zones de développement régional
-      definition: ""
+      definition: >
+        Zones dans lesquelles les revenus ou les bénéfices tirés des
+        investissements directs sont totalement déductibles de l'assiette de
+        l'impôt sur le revenu des personnes physiques ou de l'impôt sur les
+        sociétés : pendant les cinq premières années à partir de l'entrée en
+        activité effective dans le premier groupe de zones, pendant les dix
+        premières dans le deuxième (article 63 du code, dans la rédaction de la
+        loi n° 2017-8). La loi ne les énumère pas : leur liste est fixée par
+        décret gouvernemental.
       synonymes: [Zone de développement régional]
     ar:
       terme: مناطق التنمية الجهوية
-      definition: ""
+      definition: >
+        المناطق التي تُطرح فيها كليا من أساس الضريبة على دخل الأشخاص الطبيعيين أو
+        الضريبة على الشركات المداخيل أو الأرباح المتأتية من الاستثمارات
+        المباشرة: خلال الخمس سنوات الأولى ابتداء من تاريخ الدخول طور النشاط
+        الفعلي بالنسبة إلى المجموعة الأولى من المناطق، وخلال العشر سنوات الأولى
+        بالنسبة إلى المجموعة الثانية (الفصل 63 من المجلة، في صيغة القانون عدد 8
+        لسنة 2017). ولا يعدّدها القانون: تُضبط قائمتها بأمر حكومي.
       synonymes: []
 
   - id: prime-investissement
     acronyme: null
-    statut: provisoire
+    statut: valide
     references: [loi-2016-71-investissement]
     # Arabe : « منحة استثمار في حدود ثلث كلفة الاستثمار » puis « سقف منحة الاستثمار »,
     # art. 20 (projets d'intérêt national). L'article 19 énumère quatre autres primes
-    # (المنح), chacune sous son nom : ce terme ne les désigne pas.
+    # (المنح), chacune sous son nom : ce terme ne les désigne pas. Le chapitre ancre
+    # pourtant la notion sur ces quatre primes : la définition les distingue donc
+    # expressément, pour le lecteur qui arrive par ce lien.
     source_definition: {ref: loi-2016-71-investissement, locator: "art. 20"}
     source_traduction: {ref: loi-2016-71-investissement, locator: "art. 20"}
-    voir_aussi: [avantage-financier]
+    voir_aussi: [projet-interet-national, avantage-financier]
     fr:
       terme: Prime d'investissement
-      definition: ""
+      definition: >
+        Prime accordée aux projets d'intérêt national dans la limite du tiers du
+        coût d'investissement, y compris les dépenses des travaux d'infrastructures
+        intra-muros ; son plafond est fixé par décret gouvernemental (loi
+        n° 2016-71, article 20). Elle ne se confond pas avec les quatre primes de
+        l'article 19 de la même loi, nommées chacune par son objet — augmentation
+        de la valeur ajoutée et de la compétitivité, développement de la capacité
+        d'employabilité, développement régional, développement durable.
       synonymes: []
     ar:
       terme: منحة الاستثمار
-      definition: ""
+      definition: >
+        منحة تُسند للمشاريع ذات الأهمية الوطنية في حدود ثلث كلفة الاستثمار، بما في
+        ذلك المصاريف الناتجة عن أشغال البنية الأساسية الداخلية؛ ويُضبط سقفها بأمر
+        حكومي (القانون عدد 71 لسنة 2016، الفصل 20). وهي غير المنح الأربع المنصوص
+        عليها بالفصل 19 من القانون نفسه، وكل منها مسمّاة بموضوعها — منحة الترفيع
+        من القيمة المضافة والقدرة التنافسية، ومنحة تطوير القدرة التشغيلية، ومنحة
+        التنمية الجهوية، ومنحة التنمية المستدامة.
+      synonymes: []
+
+  - id: projet-interet-national
+    acronyme: null
+    statut: valide
+    references: [loi-2016-71-investissement]
+    # Arabe : « تنتفع المشاريع ذات الأهمية الوطنية بالحوافز التالية », art. 20 (quatre
+    # occurrences dans la loi, toutes au pluriel défini). Le singulier n'y figure
+    # qu'au génitif indéfini (« لكل مشروع ذي أهمية وطنية ») : aucune forme de
+    # citation n'en est reconstruite, d'où l'absence de synonyme arabe.
+    source_definition: {ref: loi-2016-71-investissement, locator: "art. 20"}
+    source_traduction: {ref: loi-2016-71-investissement, locator: "art. 20"}
+    voir_aussi: [prime-investissement, avantage-fiscal, impot-societes]
+    fr:
+      terme: Projets d'intérêt national
+      definition: >
+        Projets désignés par décret gouvernemental d'après la taille de leur
+        investissement ou leur capacité d'employabilité, et qui satisfont à l'un
+        au moins des objectifs de l'article premier de la loi de l'investissement.
+        Ils bénéficient d'une déduction des bénéfices de l'assiette de l'impôt sur
+        les sociétés dans la limite de dix années, d'une prime d'investissement
+        dans la limite du tiers du coût d'investissement et de la participation de
+        l'État aux dépenses des travaux d'infrastructure ; ces incitations sont
+        octroyées à chaque projet par décret gouvernemental (loi n° 2016-71,
+        article 20).
+      synonymes: [Projet d'intérêt national]
+    ar:
+      terme: المشاريع ذات الأهمية الوطنية
+      definition: >
+        مشاريع تُضبط بأمر حكومي بناء على حجمها الاستثماري أو طاقتها التشغيلية
+        واستجابتها على الأقل لأحد الأهداف المنصوص عليها بالفصل الأول من قانون
+        الاستثمار. وتنتفع بطرح الأرباح من قاعدة الضريبة على الشركات في حدود عشر
+        سنوات، وبمنحة استثمار في حدود ثلث كلفة الاستثمار، وبمساهمة الدولة في
+        تحمّل المصاريف الناتجة عن أشغال البنية الأساسية؛ وتُسند هذه الحوافز لكل
+        مشروع بأمر حكومي (القانون عدد 71 لسنة 2016، الفصل 20).
       synonymes: []
 
   - id: code-incitations-investissements
     acronyme: null
-    statut: provisoire
+    statut: valide
     references: [loi-93-120-code-incitations, loi-2016-71-investissement]
     source_definition: {ref: loi-93-120-code-incitations}
     # Arabe : « يلغى العمل بمجلة تشجيع الاستثمارات », art. 27 de la loi n° 2016-71 qui
     # abroge le code. Le terme N'A PAS été lu sur le fascicule arabe de 1993 (JORT
     # n° 99, scan sans couche texte), mais sur ce texte postérieur et sur la loi
-    # n° 2017-8.
+    # n° 2017-8 : il est attesté au JORT, par deux lois qui nomment le code.
+    # Les lois de 2016 et de 2017 écrivent, en français, « code d'incitation aux
+    # investissements » ; le titre de 1993 porte le pluriel.
     source_traduction: {ref: loi-2016-71-investissement, locator: "art. 27"}
     voir_aussi: [avantage-fiscal, entreprise-totalement-exportatrice, zone-developpement-regional]
     fr:
       terme: Code d'incitations aux investissements
-      definition: ""
-      synonymes: []
+      definition: >
+        Code promulgué par la loi n° 93-120 du 27 décembre 1993. Il réunit des
+        incitations communes à tous les investissements et des régimes propres,
+        dont ceux de l'exportation, du développement régional et du développement
+        agricole. La loi de l'investissement l'abroge à compter du 1^er^ janvier
+        2017, à l'exception de ses articles 14 et 36 et sous réserve de
+        dispositions transitoires (loi n° 2016-71, articles 26 à 32).
+      synonymes: [Code d'incitation aux investissements]
     ar:
       terme: مجلة تشجيع الاستثمارات
-      definition: ""
+      definition: >
+        المجلة الصادرة بمقتضى القانون عدد 120 لسنة 1993 المؤرخ في 27 ديسمبر 1993.
+        وتجمع حوافز مشتركة لكل الاستثمارات وأنظمة خاصة، منها أنظمة التصدير
+        والتنمية الجهوية والتنمية الفلاحية. وقد ألغى قانون الاستثمار العمل بها
+        ابتداء من غرة جانفي 2017، باستثناء فصليها 14 و36 ومع مراعاة أحكام
+        انتقالية (القانون عدد 71 لسنة 2016، الفصول من 26 إلى 32).
       synonymes: []

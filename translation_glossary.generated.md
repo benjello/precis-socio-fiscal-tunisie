@@ -197,6 +197,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prix de référence du mètre carré couvert | الثمن المرجعي للمتر المربع المبني |  |
 | Produit intérieur brut | الناتج المحلي الإجمالي | PIB |
 | Programme national d'aide aux familles nécessiteuses | البرنامج الوطني لمساعدة العائلات المعوزة | PNAFN |
+| Projets d'intérêt national | المشاريع ذات الأهمية الوطنية |  |
 | Promoteur immobilier | الباعث العقاري |  |
 | Promotion | الترقية |  |
 | Protection contre la perte d'emploi | الحماية الاجتماعية للعمال الذين يفقدون شغلهم لأسباب اقتصادية أو فنية |  |
