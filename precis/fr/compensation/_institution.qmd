@@ -1,45 +1,170 @@
-# La Caisse générale de compensation {#sec-compensation-caisse}
+# La Caisse {#sec-compensation-caisse}
 
-## Historique {#sec-compensation-historique}
+Ce chapitre suit l'institution : les mécanismes qui agissaient sur les prix avant 1970, la création de la [Caisse générale de compensation](#g-caisse-generale-compensation) (CGC) en 1970-1971, puis son compte — ses charges, ses ressources, son solde — et ce que la dotation du budget à la Caisse a pesé dans les dépenses de l'État. Tous les chiffres de ce chapitre sont de la famille budgétaire ; quand un rapport annuel de la Banque centrale de Tunisie (BCT) en est le support, il relaie des chiffres de l'administration.
 
-### La création de la Caisse, 1970-1971 {#sec-compensation-institution}
+## Avant 1970 : une caisse de péréquation {#sec-compensation-avant-1970}
 
-La Caisse est créée par la loi sur les prix du 19 mai 1970 : « Il est institué une Caisse Générale de Compensation destinée à agir sur les prix des marchandises, produits et services de première nécessité notamment au moyen de subvention et de péréquation » [@loi70-26, art. 3]. Deux instruments sont ainsi nommés, la subvention et la [péréquation](#g-perequation-des-prix) ; la loi ne les définit pas. Le même article renvoie à un décret les modalités de fonctionnement de la Caisse. Ce décret n'est pas identifié ici : la liste des produits compensés à l'origine et l'organisation de la Caisse ne sont donc pas établies par un texte.
+### Un contrôle des prix et une caisse hérités du Protectorat
+
+La compensation n'est pas née en 1970. La loi du 19 mai 1970 abroge « le décret du 12 août 1943 concernant le contrôle des prix » et l'arrêté du 12 novembre 1953 qui soumettait les marchandises importées à l'homologation [@loi70-26, art. 41] : le régime des prix qu'elle remplace date du Protectorat. Une « Caisse de Compensation » lui est contemporaine. Huit textes pris de 1956 à 1967 visent « le décret du 28 juin 1945 (18 redjeb 1364) portant modification et codification des textes relatifs à la Caisse de Compensation » et instituent des redevances à son profit ; l'arrêté du 5 février 1957 en est un [@arrete-1957-02-05-redevance-hydrocarbures]. Ce décret de 1945 codifie des textes : la caisse lui est donc antérieure.
+
+Les textes de 1943, 1945, 1953, 1954 et 1955 ne sont connus ici que par les visas et les clauses d'abrogation des textes postérieurs ; aucun texte antérieur à 1956 n'est établi dans sa lettre. Le texte qui a créé la Caisse de compensation n'est pas identifié ici.
+
+<!-- RECHERCHE r-caisse-compensation-origine : texte créateur de la Caisse de compensation du Protectorat et décret du 28 juin 1945 (voir docs/recherches.yml) -->
+
+### Des redevances plutôt que des subventions
+
+De 1956 à 1967, cette caisse agit surtout par [péréquation](#g-perequation-des-prix) : elle prélève une redevance sur certains produits pour en soutenir d'autres, ou pour égaliser un prix d'importation et un prix intérieur. Quatre familles de produits sont concernées, d'après l'intitulé même des textes :
+
+- les **huiles de graines** — une redevance compensatrice sur les huiles alimentaires autres que l'huile d'olive, importées ou produites en Tunisie [@arrete-1956-04-07-redevance-huiles] ;
+- le **sucre** — une redevance compensatrice sur les sucres importés [@arrete-1956-12-27-redevance-sucres ; @decret58-163] ;
+- l'**acier** — une redevance compensatrice sur les produits du chapitre 73 du tarif des douanes [@decret67-99] ;
+- les **carburants** — deux prélèvements successifs, détaillés ci-dessous.
+
+<!-- TODO (documentaliste) : les montants de ces redevances (huiles et sucre de 1956, décrets n° 58-163, 58-173 et 67-99, arrêté du 20 juillet 1965), le contenu de la loi n° 59-66 sur les prix et celui de la loi n° 63-13 sur la caisse des transports routiers ne sont connus que par une lecture dégradée : à relire sur les fascicules avant toute publication de chiffre — docs/notes/compensation-avant-1970-et-plans.md, § 8, point 3. -->
+
+Le cas des carburants est établi dans sa lettre. L'arrêté du 5 février 1957 institue, « au profit de la Caisse de Compensation », une « redevance compensatrice de trois cents francs (300 frs) par hectolitre » sur l'essence, le pétrole lampant et le gas-oil ; son produit finance une ristourne versée aux distributeurs de fuel, égale à la hausse de leur prix d'importation [@arrete-1957-02-05-redevance-hydrocarbures, art. 1-4]. L'automobiliste paie pour stabiliser le prix du fuel : c'est une péréquation entre produits pétroliers, non une subvention du budget.
+
+À côté de la Caisse, des caisses de branche redistribuent à l'intérieur d'une filière. Celle des ciments, la « Caisse professionnelle de compensation des ciments », est alimentée par une surprime sur les ciments consommés en Tunisie [@decret-1956-03-22-ciments] ; elle sera absorbée par la Caisse générale en 1976 (@sec-compensation-1976). Les prix eux-mêmes sont administrés par une loi de 1959 et, pour les céréales, par l'Office créé en 1962 [@loi59-66 ; @decret-loi62-10].
+
+### La rupture du 28 septembre 1964
+
+L'arrêté du 28 septembre 1964, pris après la nouvelle définition du dinar, refixe les prix des produits pétroliers et crée une seconde taxe « au profit de la Caisse de Compensation », assise sur le prix à la pompe [@arrete-1964-09-28-prix-petroliers, art. 1]. Les carburants portent dès lors deux prélèvements affectés à la Caisse.
+
+| Date d'effet | Prélèvement | Essence | Pétrole lampant | Gas-oil | Texte |
+|---|---|---:|---:|---:|---|
+| 6 février 1957 | redevance compensatrice | 300 F/hl | 300 F/hl | 300 F/hl | arrêté du 5 février 1957 [@arrete-1957-02-05-redevance-hydrocarbures, art. 1 et 5] |
+| 28 septembre 1964 | taxe au profit de la Caisse | 1,050 D/hl | 0,470 D/hl | 0,460 D/hl | arrêté du 28 septembre 1964 [@arrete-1964-09-28-prix-petroliers, art. 1] |
+
+: Les deux prélèvements sur les carburants affectés à la Caisse de compensation avant 1970. L'unité de compte est le franc en 1957, le dinar en 1964. La suite du tarif — taxe unique de 1971 et ses relèvements — est au @tbl-compensation-taxe-unique. {#tbl-compensation-prelevements-avant-1970}
+
+### Une caisse qui reverse au budget
+
+Les rapports de la Banque centrale donnent deux repères sur le compte « Opérations de compensation » avant 1970, puis sur les premières années de la Caisse générale.
+
+| Année | Grandeur | Montant (MD) | Source |
+|---|---|---:|---|
+| 1965 | subventions d'exploitation versées par le compte des opérations de compensation, hydrocarbures compris | 1,2 | BCT [@bct-ra-1965] |
+| 1965 | versement du même compte au budget de l'État | 0,8 | BCT [@bct-ra-1965] |
+| 1967 | droits de consommation sur les essences et les huiles versés au compte | 1,0 | BCT [@bct-ra-1967] |
+| 1967 | redevances sur les transports versées au compte | 0,45 | BCT [@bct-ra-1967] |
+| 1970 | dépenses de la Caisse générale | 2,053 | BCT [@bct-ra-1971] |
+| 1971 | dépenses de la Caisse générale | 3,7 | BCT [@bct-ra-1971] |
+| 1974 | recettes de la Caisse | 18,4 | BCT [@bct-ra-1975] |
+| 1974 | contribution du budget de l'État à la Caisse, la première | 5,3 | BCT [@bct-ra-1974] |
+| 1974 | dépenses de la Caisse | 27,3 | BCT [@bct-ra-1975] |
+| 1975 | recettes de la Caisse | 52,5 | BCT [@bct-ra-1975] |
+| 1975 | dépenses de la Caisse | 49,2 | BCT [@bct-ra-1975] |
+
+: Le compte de la compensation avant qu'il ne devienne une charge du budget, 1965-1975 (millions de dinars courants). Source : rapports annuels de la BCT, qui relaient les chiffres de l'administration. Aucune série annuelle des recettes et des dépenses n'est établie avant 1970 : seuls ces points le sont. {#tbl-compensation-avant-1975}
+
+Trois faits s'y lisent. En 1965, la caisse distribue 1,2 million de dinars (MD) de subventions et en reverse 0,8 au budget : elle n'est pas une charge pour l'État. Jusqu'en 1971, la Caisse générale ne dépense que quelques millions de dinars. Le changement de nature date de 1974-1975 : les dépenses passent de 27,3 MD à 49,2 MD, et le budget verse en 1974 sa première contribution, que la Banque centrale qualifie d'« intervention nouvelle du budget de l'État » [@bct-ra-1974]. Elle détaille pour la même année les produits soutenus : 15 MD pour le sucre, 10 MD pour les céréales, 6 MD pour l'huile de soja, 0,5 MD pour la viande, et 10 MD pour les engrais azotés [@bct-ra-1974]. La caisse de péréquation devient une caisse de subvention.
+
+Le lien entre la Caisse de compensation de 1945 et le compte « Opérations de compensation » tient aux lignes budgétaires et aux rapports de la Banque centrale ; aucun texte ne l'énonce.
+
+## 1970-1971 : la Caisse générale {#sec-compensation-institution}
+
+La loi sur les prix du 19 mai 1970 substitue au décret de 1943 cinq régimes de prix — taxation, homologation, auto-homologation, liberté contrôlée, liberté totale [@loi70-26, art. 2] — et crée la Caisse générale : « Il est institué une Caisse Générale de Compensation destinée à agir sur les prix des marchandises, produits et services de première nécessité notamment au moyen de subvention et de péréquation » [@loi70-26, art. 3]. Les deux instruments sont nommés, la subvention et la péréquation ; la loi ne les définit pas. Elle ne crée pas la compensation : elle crée une caisse *générale*. Le même article renvoie à un décret les modalités de fonctionnement de la Caisse. Ce décret n'est pas identifié ici : la liste des produits compensés à l'origine et l'organisation de la Caisse ne sont donc pas établies par un texte.
 
 <!-- RECHERCHE r-cgc-decret-application-1970 : décret d'application de l'art. 3 de la loi n° 70-26 (voir docs/recherches.yml) -->
 
 La loi de finances pour 1971 lui donne sa forme budgétaire : la Caisse « constitue un Fonds Spécial du Trésor », c'est-à-dire un compte hors budget général, doté de recettes propres ; l'ancien fonds « Opérations de compensation » est supprimé et son solde lui est affecté ; les taxes et redevances de compensation lui reviennent et « sont instituées et modifiées par décret » [@lf-1971, art. 48]. Le [fonds spécial du Trésor](#g-fonds-special-tresor) ainsi créé est prévu à 7 000 000 D en recettes comme en dépenses, sur 20 290 000 D pour l'ensemble des fonds spéciaux [@lf-1971, tableau F].
 
-La première ressource affectée porte sur les carburants. Le décret n° 70-622 réunit trois prélèvements antérieurs en une seule taxe, à compter du 1^er^ janvier 1971 : « la taxe de péréquation prévue par l'arrêté du 5 février 1957, la taxe de compensation prévue par l'arrêté du 28 septembre 1964 et les quatre centimes additionnels au droit de consommation prévus par le décret du 30 mars 1957 sont consolidés en une taxe unique de compensation perçue au profit de la Caisse Générale de Compensation ». L'expression « centimes additionnels » est celle du décret ; il ne donne le tarif de la taxe nouvelle qu'en dinars par hectolitre [@decret70-622, art. 5 et 6]. À l'origine, les carburants financent donc la compensation ; ils n'en bénéficient pas.
+Sa première ressource affectée réunit les prélèvements sur les carburants. Le décret n° 70-622 dispose, à compter du 1^er^ janvier 1971 : « la taxe de péréquation prévue par l'arrêté du 5 février 1957, la taxe de compensation prévue par l'arrêté du 28 septembre 1964 et les quatre centimes additionnels au droit de consommation prévus par le décret du 30 mars 1957 sont consolidés en une taxe unique de compensation perçue au profit de la Caisse Générale de Compensation » [@decret70-622, art. 5 et 6]. À l'origine, les carburants financent donc la compensation ; ils n'en bénéficient pas.
 
-La Caisse ne naît pas sur un terrain vide : le fonds « Opérations de compensation » qu'elle remplace, les taxes que le décret consolide et la caisse spéciale de compensation des ciments, qu'elle absorbe en 1976, attestent de mécanismes sectoriels antérieurs [@lf-1971, art. 48 ; @decret70-622, art. 5 ; @loi75-83, art. 67].
+::: {.callout-note title="« Quatre centimes additionnels » : ce que l'expression désigne"}
+L'expression est celle du décret de 1970, qui la reprend sans la convertir ; il ne donne le tarif de la taxe nouvelle qu'en dinars par hectolitre. Elle n'emploie pas une monnaie tunisienne : en 1955 comme en 1957, l'unité de compte est le franc, et l'édition arabe du décret translittère le mot. Le décret du 30 mars 1957 auquel renvoie celui de 1970 ne fixe ni assiette ni taux : il désigne le bénéficiaire — le « compte des hydrocarbures » — d'un prélèvement institué par l'article 106 du décret du 31 mars 1955 fixant le budget de l'exercice 1955-1956 [@decret-1957-03-30-credits-provisoires, art. 36]. Cet article 106 n'est pas identifié ici : l'assiette et le taux de ces « quatre centimes » ne sont pas établis.
+:::
 
-### Les grandes étapes
+<!-- RECHERCHE r-centimes-additionnels-art106-1955 : article 106 du décret du 31 mars 1955, assiette et taux des « quatre centimes » (voir docs/recherches.yml) -->
 
-Quatre déplacements marquent ensuite la trajectoire, détaillés dans les chapitres suivants.
+## Le compte de la Caisse {#sec-compensation-compte}
 
-- **L'élargissement du champ.** La Caisse reprend en 1976 la caisse des ciments et le compte de stabilisation des produits pétroliers finis [@loi75-83, art. 67-68]. Un rapport officiel de 2014 date de 1984 l'extension de la compensation au transport public, et de 2004 le début de la subvention des carburants et de l'électricité [@minfin-compensation-carburants-2014, p. 3].
-- **L'épisode de 1984.** La loi de finances pour 1984 prévoit la suppression de la compensation des céréales et dérivés ; la loi de finances complémentaire du 21 mars 1984 abroge cette disposition et procure à la Caisse des ressources nouvelles (@sec-compensation-1984).
-- **Le changement de payeur.** Les ressources affectées cessent de couvrir la dépense dès les années 1980 ; dans les années 2000, la compensation est une dépense du budget général (@sec-compensation-financement).
-- **Le changement d'échelle et de composition.** La dépense budgétaire passe de 328,8 millions de dinars (MD) en 2003 à 2 869,2 MD en 2011, puis à 11 999,0 MD en 2022 ; les carburants, absents du budget en 2003, en forment plus de la moitié en 2011 comme en 2022 (@tbl-compensation-2003-2011 et @tbl-compensation-2012-2025).
+### Comment la Caisse fonctionne
 
-## Ce que la compensation couvre et comment elle est financée {#sec-compensation-description}
+La Caisse ne vend ni n'achète : elle paie aux offices et aux opérateurs la différence entre le coût d'un produit et son prix de vente administré. Son compte se lit en trois lignes.
 
-### Trois postes
+- Les **charges** : ce que la Caisse doit, au titre de l'année, pour les subventions aux [produits de base](#g-produits-de-base) — céréales, huiles, sucre, lait, engrais, papier scolaire. Ce n'est pas une dépense du budget de l'État.
+- Les **ressources** : des recettes propres ou affectées (taxes et redevances que la loi lui attribue) ; une **dotation** du budget de l'État ; des prélèvements ponctuels sur d'autres fonds ; des prêts du Trésor.
+- Le **solde** : un déficit devient un arriéré de la Caisse envers les offices ; un excédent est reporté sur l'année suivante.
 
-Les documents budgétaires du ministère des Finances répartissent la compensation en trois postes [@minfin-finances-publiques-2008 ; @minfin-finances-publiques-2011].
+Ce qui pèse sur le budget de l'État n'est donc pas la charge, mais la dotation. Le tableau suivant met les deux côte à côte et rapporte la dotation aux dépenses de l'État.
 
-- Les **produits de base** : les céréales et l'huile en forment l'essentiel, avec le lait, le sucre et le papier scolaire (@tbl-compensation-produits-2009-2011).
-- Les **carburants** : sous ce nom, la [compensation des carburants](#g-compensation-carburants) réunit les transferts à trois entreprises publiques de l'énergie — l'Entreprise tunisienne d'activités pétrolières (ETAP), la Société tunisienne de l'électricité et du gaz (STEG) et la Société tunisienne des industries de raffinage (STIR). Le poste couvre donc aussi l'électricité et le gaz (@tbl-compensation-energie-2011).
-- Le **transport** : la [compensation du transport](#g-compensation-transport) est le plus petit des trois postes et le plus régulier.
+| Année | Charges | Recettes propres | Dotation du budget | Dotation, en % des dépenses de l'État | Solde | Source |
+|---|---:|---:|---:|---:|---:|---|
+| 1984 | 260,0 | 137,4 | 98,0 | | | [@bct-ra-1984, p. 153 ; @bct-ra-1985, p. 75-76] |
+| 1985 | 265,0 | 138,4 | 83,0 | | | [@bct-ra-1985, p. 76 ; @bct-ra-1986, p. 76] |
+| 1986 | 218,0 | 135,0 | 68,0 | 2,8 | | [@bct-ra-1986, p. 76 ; @bct-ra-1988, p. 69] |
+| 1987 | 195,8 | — | 189,0 | 8,2 | −7 | BCT, rapport annuel 1987, p. 71 ; [@bct-ra-1988, p. 69] |
+| 1988 | 274,4 | | | | | [@bct-ra-1988, p. 69] |
+| 1989 | 378,0 | | | | | [@bct-ra-1989, p. 75] |
+| 1990 | 317,0 | | | | | [@bct-ra-1991, p. 90] |
+| 1991 | 270,0 | 13,0 | 272,0 | 7,7 | | [@bct-ra-1991, p. 91 ; @bct-ra-1992, p. 82] |
+| 1992 | 291,0 | 20,0 | 255,0 | 7,0 | +4,3 | [@bct-ra-1992, p. 83 ; @bct-ra-1993, p. 76] |
+| 1993 | 314,0 | 39,0 | 245,0 | 6,1 | −30 | [@bct-ra-1993, p. 76] |
+| 1994 | 304,0 | 19,0 | 230,0 | 5,4 | −55 | [@bct-ra-1994, p. 82-83] |
+| 1995 | 342,8 | 25,8 | 215,0 | 4,7 | −85 | [@bct-ra-1995, p. 77-78] |
+| 1996 | 436,4 | 13,0 | 230,0 | 4,7 | −191 | [@bct-ra-1996, p. 95 ; @bct-ra-2001, p. 96] |
+| 1997 | 370,6 | 28,0 | 320,0 | 6,1 | −23 | BCT, rapport annuel 1997, p. 91 ; [@bct-ra-2002, p. 94] |
+| 1998 | 332,9 | 28,0 | 320,0 | 5,7 | +12 | [@bct-ra-1998 ; @bct-ra-2003, p. 100] |
+| 1999 | 204,5 | 2,0 | 235,0 | 3,8 | +31 | [@bct-ra-1999 ; @bct-ra-2004] |
+| 2000 | 225,3 | | | | | [@bct-ra-2005, p. 101] |
+| 2001 | 247,9 | | | | | [@bct-ra-2005, p. 101] |
+| 2002 | 226,2 | | 235,0 | 3,1 | +8,8 | [@bct-ra-2002, p. 94 ; @bct-ra-2006, p. 95] |
+| 2003 | 203,9 | | | | | [@bct-ra-2007, p. 106] |
+| 2004 | 261,7 | | 200,0 | 2,4 | | [@bct-ra-2004 ; @bct-ra-2008, p. 109] |
+| 2005 | 243,1 | | 230,0 | 2,5 | | [@bct-ra-2005, p. 101 ; @bct-ra-2009, p. 112] |
+| 2006 | 321,4 | | | | | [@bct-ra-2009, p. 112] |
+| 2007 | 598,0 | | 598,0 | 5,4 | | [@bct-ra-2007, p. 106 ; @bct-ra-2010, p. 25] |
+| 2008 | 1 047,9 | | | | | [@bct-ra-2010, p. 25] |
+| 2009 | 800,0 | | | | | [@bct-ra-2011, p. 37] |
+| 2010 | 583,7 | | 730,0 | 5,1 | | [@bct-ra-2010, p. 25 ; @bct-ra-2011, p. 37] |
+| 2011 | 1 149,6 | | | | | [@bct-ra-2011, p. 37] |
 
-<!-- TODO (documentaliste) : les opérateurs par lesquels passe la compensation (Office des céréales, Office du commerce, sociétés de transport), les bénéficiaires de la compensation du transport (abonnements scolaires et étudiants, tarifs réduits) et les entrées et sorties de produits dans le temps ne sont établis par aucun texte : voir docs/notes/compensation.md, § 6, points 6 et 7. -->
+: Le compte de la Caisse générale de compensation, 1984-2011 (millions de dinars courants). Source : rapports annuels de la BCT, qui relaient les chiffres de l'administration ; chaque année est donnée dans le rapport le plus récent qui la porte. La part des dépenses de l'État rapporte la dotation aux dépenses de l'État hors service de la dette, connues depuis 1986 ; elle ne dépend d'aucune base des comptes nationaux. Une case vide est une valeur que les rapports ne donnent pas ; le tiret de 1987 marque la fin des recettes propres individualisées. Les charges de 1984, 1985, 1989, 1990 et 1991 sont arrondies par la source ; le déficit de 1996 est une estimation. En 2007, la dotation réunit 313 MD prévus en loi de finances et 285 MD de dotation supplémentaire ; en 2010, 146 MD de la dotation sont reportés sur 2011. S'y ajoutent, hors tableau, 8 MD en 1984 et 7 MD en 1985 et 1986 prélevés sur la contribution exceptionnelle de solidarité, et 17 MD de papier scolaire pris en charge par le Centre national pédagogique en 1995. {#tbl-compensation-compte-caisse}
 
-### Le financement : des ressources affectées au budget général {#sec-compensation-financement}
+<!-- TODO (bibliographe) : les rapports annuels de la BCT pour 1987 et 1997 n'ont pas de clé (bct-ra-1987, bct-ra-1997) : ils portent la dotation de 189 MD de 1987 et la citation sur la loi de finances pour 1987 (p. 71), la dotation de 320 MD, les recettes propres et le déficit de 1997 (p. 91). Les verser, puis remplacer les deux mentions en clair du tableau tbl-compensation-compte-caisse et celle de la section sec-compensation-1987. -->
 
-La Caisse est conçue en 1971 comme un compte équilibré par ses propres taxes. Trois générations de ressources affectées se succèdent : la taxe unique de compensation sur les produits pétroliers (1971) ; une part de la taxe sur les alcools et une contribution exceptionnelle sur les entreprises et les salaires dans les années 1980 (@sec-compensation-1984 et @sec-compensation-1989) ; la [redevance de compensation](#g-redevance-compensation) depuis 2013 (@sec-compensation-redevance).
+<!-- TODO (figures) : fig-compensation-compte-caisse — le compte de la Caisse, 1984-2011 : charges, recettes propres, dotation du budget, solde, avec la rupture de 1987 marquée ; seconde vue : dotation en % des dépenses de l'État hors service de la dette. Série de l'entrepôt : compensation-compte-caisse. Remplacera le tableau tbl-compensation-compte-caisse, à replier alors. -->
 
-Ces ressources ne suivent pas la dépense. En 1984, le budget de l'État inscrit une subvention à la Caisse [@decret84-259, tableau A] ; en 1989, le Trésor lui consent un prêt [@lfc-1989, art. 8]. Pour 2009-2011, le rapport du ministère des Finances donne la mesure de l'écart entre les recettes affectées du compte de la Caisse et la dépense.
+### Les charges par produit
+
+Les céréales forment, à toutes les dates, la plus grande part des charges ; l'huile vient ensuite. Le sucre, les engrais et le lait pèsent dans les années 1980, puis s'effacent.
+
+| Produit | 1986 | 1996 | 2001 | 2006 | 2008 | 2011 |
+|---|---:|---:|---:|---:|---:|---:|
+| Céréales et dérivés | 133,4 | 305,1 | 181,2 | 239,5 | 873,0 | 883,2 |
+| Huiles | 24,3 | 70,0 | 34,0 | 69,0 | 167,5 | 214,4 |
+| Sucre | 12,9 | 15,4 | 0,0 | | | 10,8 |
+| Lait | 9,2 | 25,7 | 9,8 | 7,3 | 2,8 | 23,1 |
+| Engrais | 16,9 | | | | | |
+| Papier scolaire | | 16,2 | 15,4 | 5,6 | 4,6 | 4,3 |
+| Autres | 21,3 | 4,0 | 7,5 | | | 13,8 |
+| **Total des charges** | **218,0** | **436,4** | **247,9** | **321,4** | **1 047,9** | **1 149,6** |
+
+: Les charges de la Caisse générale de compensation par produit, à six dates (millions de dinars courants). Sources : rapports annuels de la BCT [@bct-ra-1988, p. 69 ; @bct-ra-2001, p. 96 ; @bct-ra-2005, p. 101 ; @bct-ra-2009, p. 112 ; @bct-ra-2010, p. 25 ; @bct-ra-2011, p. 37]. Le champ des produits change d'une date à l'autre ; en 2011, la ligne « autres » réunit le double concentré de tomate (9,6 MD) et les pâtes alimentaires et le couscous (4,2 MD). Une case vide est un produit que le rapport ne détaille pas à cette date. {#tbl-compensation-charges-produits}
+
+<!-- TODO (figures) : fig-compensation-par-produit — charges de la Caisse par produit, 1986-2011 (céréales, huiles, sucre, lait, engrais, papier scolaire, autres), ruptures de champ marquées (1991, 1992-1994, 1999, 2008, 2011). Série de l'entrepôt : compensation-compte-caisse, sens « charge ». Le tableau tbl-compensation-charges-produits n'en donne que six dates. -->
+
+### Les recettes propres {#sec-compensation-financement}
+
+Jusqu'en 1986, la Caisse vit d'abord de ses propres recettes. Elles couvrent plus de la moitié des charges, et le budget complète.
+
+| Recette propre | 1984 | 1985 |
+|---|---:|---:|
+| Taxe unique sur les carburants | 51,5 | 52,5 |
+| Taxe de formalité douanière à l'importation (40 % versés à la Caisse) | 38,8 | 36,3 |
+| Recettes fiscales affectées (demi-décime sur les recettes budgétaires) | 38,2 | 38,5 |
+| Taxe sur les boissons alcoolisées | 6,7 | 7,4 |
+| Taxe sur le ciment | 0,5 | 1,2 |
+| Autres recettes | 1,7 | 2,5 |
+| **Total** | **137,4** | **138,4** |
+
+: Les recettes propres de la Caisse générale de compensation en 1984 et 1985 (millions de dinars courants). Source : BCT [@bct-ra-1985, p. 76]. {#tbl-compensation-recettes-propres}
+
+Trois générations de ressources affectées se succèdent : la taxe unique de compensation sur les produits pétroliers, de 1971 à 1986 (@sec-compensation-carburants-recettes) ; une part de la taxe sur les alcools et une contribution exceptionnelle sur les entreprises et les salaires dans les années 1980 (@sec-compensation-1984 et @sec-compensation-1989) ; la [redevance de compensation](#g-redevance-compensation) depuis 2013 (@sec-compensation-redevance). Le rendement de cette dernière n'est pas établi ici.
+
+Quand les ressources ne suivent pas, le Trésor prête. À la fin de 1980, le déficit cumulé de la Caisse approche 125 MD, et la loi de finances pour 1981 lui ouvre un prêt du Trésor de 95 MD sur vingt ans, sans intérêt [@bct-ra-1980] ; la loi de finances complémentaire de 1989 en ajoute un de 20 MD, sans intérêts, sur dix ans [@lfc-1989, art. 8].
 
 Le @fig-compensation-recettes-caisse met les recettes de la Caisse en regard de la dépense, pour toutes les années où une source les donne.
 
@@ -67,7 +192,7 @@ cm.figure(
         "pour les recettes depuis 1986, ne dépend d'aucune base des comptes nationaux : c'est la "
         "mesure homogène. La part du PIB est tracée par segments, et chaque changement de "
         "segment est une rupture de série qui tient au seul dénominateur "
-        "(voir l'[annexe sur le PIB](../annexe-pib.html)). Le PIB employé est, en 1984-1985, "
+        "(voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Le PIB employé est, en 1984-1985, "
         "celui de la Banque mondiale, qui accole les bases sans les raccorder — base non précisée "
         "par la source ; ensuite celui du ministère des Finances, en base 1983 présumée pour "
         "1986-1991, en base 1983 pour 1992-1996, en base 1997 pour 1997-2001 et 2005-2009. Ses "
@@ -91,15 +216,32 @@ cm.tableau_recettes_affectees(
              "donne le ministère des Finances ; son PIB est en base 1997 pour 2009 ; ses valeurs de "
              "2010 et 2011 dépassent d'environ 5 % la base 1997 — l'ordre de grandeur d'une "
              "rétropolation de la base 2015, que la source n'annonce pas —, et leur base n'est "
-             "pas précisée par la source (voir l'[annexe sur le PIB](../annexe-pib.html))."))
+             "pas précisée par la source (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures))."))
 ```
 
-La compensation est alors, pour l'essentiel, une dépense du budget général de l'État. Le texte qui a opéré ce passage — ou la date à laquelle la dépense a quitté les fonds spéciaux du Trésor — n'est pas identifié ici ; la dépense figure en tout cas au budget en 2003, première année du @tbl-compensation-2003-2011.
+<!-- TODO (documentaliste) : produit annuel de la redevance de compensation depuis 2013 ; arrêté du 10 mai 2024 (JORT n° 61, p. 1428) qui atteste que la redevance existe encore en 2024, à verser par le bibliographe avant citation. Opérateurs par lesquels passe la compensation (Office des céréales, Office du commerce, sociétés de transport) et entrées et sorties de produits dans le temps : établis par aucun texte — docs/notes/compensation.md, § 6, points 6 et 7. -->
+
+<!-- TODO (bibliographe) : verser la loi de finances pour 1981 (prêt du Trésor de 95 MD), la loi n° 91-98 (LF 1992, art. 77 : nouveau prêt du Trésor à la CGC) et les arrêtés des 11 octobre 1990 et 7 juillet 1992 (relèvement des prévisions du fonds spécial), connus par leur seul intitulé ou par la BCT ; puis les citer ici. -->
+
+## 1987 : les recettes de la Caisse entrent au budget {#sec-compensation-1987}
+
+La rupture la plus forte du compte ne tient pas à son coût. Le rapport annuel de la Banque centrale pour 1987 l'énonce ainsi : « Aux termes de la loi de finances de 1987, les recettes fiscales et para-fiscales destinées à la Caisse générale de compensation ne sont plus individualisées mais intégrées au budget de l'État. Ce dernier a alloué à la Caisse une dotation budgétaire fixée à 189 millions de dinars ». La dotation passe de 68 MD en 1986 à 189 MD en 1987, alors que les charges baissent, de 218,0 MD à 195,8 MD (@tbl-compensation-compte-caisse).
+
+Le saut de 1987 est donc un changement de mode de financement, non de coût : les taxes qui alimentaient la Caisse — la taxe unique sur les carburants en tête — deviennent des recettes du budget général, et la Caisse reçoit en retour une dotation qui couvre presque toutes ses charges. La compensation devient, à cette date, une dépense du budget de l'État pour l'essentiel de son montant. La loi de finances pour 1987 elle-même n'est pas citée ici dans sa lettre ; et le texte qui a ensuite retiré la Caisse des fonds spéciaux du Trésor n'est pas identifié ici.
 
 <!-- RECHERCHE r-cgc-budgetisation-1992-2003 : texte transférant la dépense de la CGC des fonds spéciaux du Trésor au budget général, entre 1992 et 2003 (voir docs/recherches.yml) -->
 
-<!-- TODO (bibliographe) : verser la loi n° 91-98 (LF 1992, art. 77 : nouveau prêt du Trésor à la CGC) et les arrêtés des 11 octobre 1990 et 7 juillet 1992 (relèvement des prévisions du fonds spécial), connus par leur seul intitulé ; puis les citer ici. -->
+<!-- TODO (documentaliste) : établir le numéro de la loi de finances pour 1987 et lire l'article qui intègre au budget les recettes de la Caisse, et le verser. -->
 
-Le rendement de la redevance de compensation depuis 2013 n'est pas établi ici.
+## Ce que la dotation pèse dans les dépenses de l'État {#sec-compensation-dotation-poids}
 
-<!-- TODO (documentaliste) : produit annuel de la redevance de compensation depuis 2013 ; arrêté du 10 mai 2024 (JORT n° 61, p. 1428) qui atteste que la redevance existe encore en 2024, à verser par le bibliographe avant citation. -->
+Rapportée aux dépenses de l'État hors service de la dette, la dotation à la Caisse décrit quatre temps (@tbl-compensation-compte-caisse, cinquième colonne) :
+
+- **2,8 % en 1986**, dernière année où les recettes propres portent l'essentiel de la charge ;
+- **8,2 % en 1987**, par le seul effet de l'intégration des recettes au budget, puis **7,7 % en 1991** ;
+- un reflux continu ensuite, à 4,7 % en 1995 et 1996, 3,8 % en 1999, **3,1 % en 2002** et 2,4 % en 2004, coupé par le relèvement de la dotation à 320 MD en 1997 et 1998 (6,1 % puis 5,7 %) après les déficits de 1993 à 1996 ;
+- une remontée avec les cours mondiaux, à 5,4 % en 2007 et **5,1 % en 2010**.
+
+La dotation n'est pas connue pour dix années : 1988, 1989 et 1990, 2000 et 2001, 2003, 2006, 2008, 2009 et 2011. Pour 2008 et 2009, les rapports de la Banque centrale disent seulement que les charges sont financées en totalité par des subventions du budget, sans en donner le montant [@bct-ra-2008, p. 109 ; @bct-ra-2009, p. 112]. Aucune dotation n'est ici déduite des charges.
+
+À partir de 2003, la dotation à la Caisse se prolonge par le poste « produits de base » de la dépense budgétaire de compensation, auquel s'ajoutent les carburants et le transport : c'est l'objet du chapitre sur la dépense (@sec-compensation-longue-periode), dont la première figure trace la dotation, les charges et la dépense en trois postes sur une même échelle.
