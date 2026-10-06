@@ -809,21 +809,6 @@
       "note": "citation-key: ins-annuaire\nEnsemble d'éditions d'une publication annuelle de l'INS, à édition glissante sur cinq ans ou plus. Titre lu en couverture : « Annuaire statistique de la Tunisie » (édition 1995-2001 : « 2001, N° 44 », ISSN 0066-3689 ; édition 2019-2023 : « نشرية 65 », « Edition 2024 »). Éditions utilisées pour l'indice des prix à la consommation, colonne base 1970 : 1995-2001, 1998-2002 et 1999-2003 (tableau 13.7, « selon les différentes bases ») pour 1976-2003 ; 2019-2023 (tableau 13.6, « selon les différentes années de base ») pour 1999-2023. L'URL donnée est la page de l'édition 2019-2023 sur le portail de l'INS (vérifiée le 21 septembre 2026) ; les autres éditions sont sous https://www.ins.tn/publication/annuaire-statistique-de-la-tunisie-AAAA-AAAA (pages 1995-2001, 1998-2002 et 1999-2003 vérifiées le 21 septembre 2026). Liste des fichiers : dépôt tunisia-data, sources/ins-publications-urls.csv et sources/ins-annuaires-statistiques.md."
     },
     {
-      "id": "undata-sna",
-      "type": "dataset",
-      "title": "National Accounts Official Country Data, Table 4.1 Total Economy (S.1), Tunisia",
-      "title-short": "UNdata, National Accounts Official Country Data",
-      "author": [
-        {
-          "literal": "United Nations Statistics Division (UNSD)"
-        }
-      ],
-      "publisher": "United Nations Statistics Division",
-      "publisher-place": "New York",
-      "URL": "https://data.un.org/Data.aspx?d=SNA&f=group_code%3a401%3bcountry_code%3a788%3bfiscal_year%3a1995",
-      "note": "citation-key: undata-sna\nBase de données des comptes nationaux transmis par les pays aux Nations unies, diffusée sur UNdata ; pour la Tunisie, chiffres de l'INS. Pages consultées le 21 septembre 2026, qui portent « Last update in UNdata: 2025/10/14 ». Utilisée pour la rémunération des salariés versée par les unités résidentes (« Compensation of employees », compte d'exploitation), 1993-1997 : série 30 (SCN 1968, base 1983 de l'INS) ; 1998-2001 : série 100 (SCN 1993, base 1997). Une page par année (paramètre fiscal_year) ; l'URL donnée est celle de 1995 (HTTP 200 le 21 septembre 2026). L'adresse de la base sans filtre (https://data.un.org/Data.aspx?d=SNA) répondait 404 le même jour, et le téléchargement groupé ne fonctionnait pas. Adresse de chaque année : dépôt tunisia-data, scripts/extract_undata_remuneration.py."
-    },
-    {
       "id": "ins-enpe",
       "type": "report",
       "title": "Enquête nationale sur la population et l'emploi (rapports 2005, 2010 et 2012)",
@@ -837,21 +822,6 @@
       "publisher-place": "Tunis",
       "URL": "https://www.ins.tn/publication/enquete-nationale-sur-lemploi-2012",
       "note": "citation-key: ins-enpe\nEnsemble de rapports annuels de l'INS. Intitulés lus en couverture : « المسح الوطني حول السكان والتشغيل لسنة 2005 » (daté « أكتوبر 2006 », en arabe) ; « المسح الوطني حول السكان والتشغيل لسنة 2010 » (daté « جوان 2011 », en arabe) ; « Enquête nationale sur la population et l'emploi 2012 » (bilingue, daté « Décembre 2013 »). Le portail de l'INS les intitule « Enquête Nationale sur l'Emploi AAAA ». Utilisés pour les occupés selon la situation dans la profession : rapport 2005, tableau 27 ; rapport 2010, tableau 33 ; rapport 2012, tableau 30. L'URL donnée est la page du rapport 2012 (vérifiée le 21 septembre 2026) ; rapports 2005 et 2010 : https://www.ins.tn/publication/enquete-nationale-sur-lemploi-2005 et https://www.ins.tn/publication/enquete-nationale-sur-lemploi-2010 (vérifiées le 21 septembre 2026). Liste des fichiers : dépôt tunisia-data, sources/ins-enquete-emploi-urls.csv."
-    },
-    {
-      "id": "wb-wdi",
-      "type": "dataset",
-      "title": "World Development Indicators",
-      "title-short": "Banque mondiale, WDI",
-      "author": [
-        {
-          "literal": "Banque mondiale"
-        }
-      ],
-      "publisher": "Banque mondiale",
-      "publisher-place": "Washington, D.C.",
-      "URL": "https://datacatalog.worldbank.org/search/dataset/0037712/World-Development-Indicators",
-      "note": "citation-key: wb-wdi\nIndicateurs utilisés pour la Tunisie : NY.GDP.MKTP.CN (« GDP (current LCU) »), SP.POP.TOTL (« Population, total ») et SL.EMP.WORK.ZS (part des salariés dans l'emploi, estimation modélisée du BIT). Séries téléchargées le 21 septembre 2026 par l'API https://api.worldbank.org/v2/country/TUN/indicator/<code>?format=json ; les réponses portent « lastupdated »: « 2026-07-13 ». URL de la fiche du catalogue de données vérifiée le 21 septembre 2026. Réponses conservées dans le dépôt tunisia-data, data/raw/banque-mondiale/."
     },
     {
       "id": "ins-bms",

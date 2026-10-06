@@ -1037,6 +1037,130 @@ Pour toute passe qui DÉPLACE de la prose, le **balayage phrase à phrase** de l
 contre le résultat n'est pas optionnel : sur l'impôt sur les sociétés, deux fois plus court,
 il avait rattrapé deux pertes sans citation, donc invisibles au décompte.
 
+## Le PIB et ses changements de base — annexe du site et mise en conformité des volumes (6 octobre 2026)
+
+**Fait.** L'annexe `precis/fr/annexe-pib.qmd` est écrite (page de site, rendue par `build.sh`
+comme `a-propos`, liée depuis l'accueil et le pied de page des huit volumes français). Matière :
+`docs/notes/annexe-pib.md`. Ancres stables auxquelles les volumes renvoient : `#sec-pib-bases`,
+`#sec-pib-ecarts`, `#sec-pib-retropolation`, `#sec-pib-sources`, `#sec-pib-ruptures`,
+`#sec-pib-lire`, `#sec-pib-definition`, et par changement de base `#pib-base-1997`,
+`#pib-base-2015` (plus `#pib-base-1983`, `#pib-annee-de-prix`, `#pib-series-accolees`,
+`#tbl-pib-jonctions`).
+
+**Règle à appliquer partout** : toute grandeur rapportée au PIB nomme la base, dit si le PIB est
+recalculé pour le passé ou non, trace les changements de base et renvoie à l'annexe. Modèle à
+généraliser : `finances_locales/figures/finances_locales.py` (`_pib`, `_pib_par_base`,
+`_ruptures_pib`).
+
+**Inventaire** (note, § 4.2) : 25 emplois du PIB dans six volumes — 4 conformes, 8 partiels,
+13 non conformes. À mettre en conformité **dans des PR distinctes, une par volume** ; rien n'a
+été touché dans les volumes ici.
+
+- **Fiscalité — 8 emplois non conformes.** Les quatre figures de rendement (`figures/irpp.py`,
+  `impot_societes.py`, `tva.py`, `droits_consommation.py`) rapportent les recettes au PIB du
+  ministère des Finances sans dire sa base ni tracer ses changements de niveau (1997, 2002, 2005,
+  2010) ; la légende de l'impôt sur les sociétés présente l'écart de 5 % de 2012-2014 entre ses
+  deux colonnes de PIB sans dire que c'est un écart de base. Quatre phrases chiffrées à reprendre :
+  `_impot_revenu.qmd` (« de 1,9 % à plus de 6 % », 1990-2016), `_impot_societes.qmd` (« 1,86 % …
+  3,77 % »), `_tva.qmd` (« 6,5 % en 1988, 5,1 % en 1997… » : 1997 est l'année du changement de
+  niveau de 9,8 %), `_droits_consommation.qmd` (maximum de 1994 en base 1983 comparé à la suite en
+  base 1997).
+- **Rémunérations publiques — 5 emplois non conformes.** `fig-masse-salariale-ratios` (et sa
+  reprise dans `_demo_figure_onglets.qmd`) annonce un « PIB en base 2015 » alors que 1990-1996
+  n'est pas dans cette base, que 2002-2004 ne se rattache à aucune base et que **2012-2014 sont
+  en base 1997** : la part publiée vaut 12,30 %, 12,79 % et 13,03 % ; rapportée au PIB en base
+  2015 recalculé par l'INS, 11,71 %, 12,15 % et 12,35 % ; le « reflux » de 2014 à 2015 est un
+  effet de base. Phrase de `index.qmd` (« 11 à 12 % … 16,1 % en 2020 … ») à reprendre. Figure B
+  de `masse_salariale.py` : « base 2010 (×1,06) » — il n'existe pas de PIB nominal « base 2010 »,
+  et le coefficient unique est appliqué à 1990-2025 alors qu'il n'est mesuré que sur 2015-2017.
+  Citations du FMI (17,6 % en 2020 : PIB en base 1997, établi) et de la Banque mondiale (14,7 %
+  en 2017, 10,7 % en 2010 ; `_regime_conventionnel.qmd`, transferts aux entreprises publiques,
+  8,9 % en 2013 et 7,5 % en 2014) : dire la base, ou dire qu'elle n'est pas précisée par la
+  source (revue des dépenses publiques de 2020 à relire sur ce point).
+- **Figures de la CNSS, 1990-2004 — 6 figures partielles, même défaut** : le changement de
+  1997 est tracé et dit ; celui de **2002** (valeurs du ministère non rattachées, 2002-2004) ne
+  l'est pas.
+  - **Caisses** (`_comptes_longue_periode.qmd`) : `fig-cnss-regimes`,
+    `fig-cnss-assurances-sociales`, `fig-cnss-atmp-pst`.
+  - **Cotisations** (`_bilan.qmd`) : cotisations par branche ; les modules `cnss_*` du volume
+    sont des liens symboliques vers ceux des caisses — une même PR pour les deux volumes.
+  - **Prestations** (`_prestations_familiales.qmd`) : allocations familiales.
+  - **Retraites** (`_secteur_prive.qmd`) : branche des pensions du RSNA.
+- **Retraites — 1 groupe partiel** : les deux figures du barème d'actualisation
+  (`bareme_actualisation.py`) ; dire les années de la réserve d'avant 1993 (taux de 1970 à cheval
+  sur deux séries ; taux de 1983 et 1985 appuyés sur des valeurs de 1983-1984 propres à la Banque
+  mondiale).
+- **Finances locales — 4 figures conformes, 1 phrase partielle** : `_longue_periode.qmd`, « de
+  0,74 % en 2002 à … 0,66 % en 2019 » traverse trois bases sans le dire dans la phrase ; points
+  de 1985-1991 de `fig-fl-lp-fccl` rapportés au PIB d'un rapport de la Banque mondiale de 1992
+  dont la base n'est pas dite. Remplacer le paragraphe local sur les bases par un renvoi à
+  l'annexe.
+- **Marché du travail** : aucun emploi du PIB relevé.
+
+**Figures de l'annexe — fait le 6 octobre 2026.** `#fig-pib-volume` (sous-section
+`#pib-croissance-volume`), deux vues : tous les taux de croissance en volume de 1961 à 2025
+(comptes tunisiens en ronds de la couleur de leur base, Banque mondiale en croix, taux retenu en
+trait, neuf jonctions étiquetées base / année de prix / série / source, 1962-1965 sur fond gris) ;
+les deux indices enchaînés, prix courants et volume. `#fig-pib-bases` (sous-section
+`#pib-croissance-longue-periode` ; le `TODO (rédacteur)` de `#sec-pib-ecarts` est levé), trois
+vues, toutes aux prix courants : niveaux des bases 1983, 1997 et 2015 sur leurs années (tronçons
+rétropolés par l'INS distingués) ; croissance calculée à l'intérieur de chaque base, 1962-2025 ;
+série accolée et série enchaînée, en indice et en taux, les deux taux faux de 1997 et de 2010
+marqués. Module `precis/fr/figures/annexe_pib.py`. La règle 2 de `#sec-pib-ruptures` dit
+désormais que la série enchaînée n'est qu'une illustration.
+
+- **Snapshots.** `pib-courant-enchaine`, `pib-croissance-par-base`,
+  `pib-courant-recouvrements`, `pib-croissance-volume` et `pib-volume-enchaine`
+  (`precis/_seriescache/`) sont pris sur `main` de `tunisia-data` (`b6e412c`, 6 octobre 2026) :
+  CSV identiques, octet pour octet, à ceux de l'entrepôt.
+- **Câblage d'une figure de page de site.** Le module est dans `precis/fr/figures/` (lien
+  symbolique `precis/ar/figures`), les sorties à côté de la page (`precis/<langue>/_fig/`,
+  ignoré, et `precis/<langue>/figdata/`, versionné) ; `build.sh` copie ces deux dossiers dans le
+  site. `scripts/verifier.sh` ne rend aucune page de site et ne restaure pas
+  `precis/<langue>/figdata/` : la page se contrôle par `./build.sh --no-pdf`. Une modification
+  du seul module `precis/fr/figures/annexe_pib.py` ne fait rendre aucun livre
+  (`verifier_livres.livres_touches`), ce qui est exact — mais rien ne rend alors la page.
+- **Ligne « Source » et onglet « Sources ».** Le module remplace, pour l'affichage, le libellé
+  des bases, le périmètre et les réserves du catalogue de l'entrepôt par un texte pour le
+  lecteur, en français et en arabe (`PROVENANCE_LECTEUR`, comme `masse_salariale.py`) : ni nom
+  de colonne, ni consigne de filtrage, ni chemin de fiche dans la page rendue. À relire si le
+  catalogue change.
+- **Reste à faire, en amont.** Les colonnes `jonction`,
+  `source`, `base` et `annee_de_prix` des séries en volume n'existent qu'en français : les
+  infobulles de la page arabe les reprendront telles quelles. Divergence de 1962-1965 entre la Banque mondiale et la série des
+  Nations unies, et taux de 1970 : à départager sur pièces (rapports annuels de la BCT,
+  mémorandums de la Banque mondiale de 1978 et 1985 — `docs/pib-croissance-volume.md` de
+  l'entrepôt). Étiquettes à corriger :
+  `masse-salariale-ratios` (`base_pib: 2015`), `irpp-ratios` (`pib_cnat_MDT`, 2012-2014),
+  `masse-salariale-reconciliation` (« base 2010 »).
+- **Bibliographie.** `undata-sna` et `wb-wdi` sont promues au fonds commun
+  (`precis/{fr,ar}/references.json`) et retirées de `retraites/references.json` : l'onglet
+  « Sources » affiche leur titre et leur lien. `wb-wdi` est reprise à l'identique de la branche
+  de la compensation, qui la promeut aussi : à la fusion des deux branches, ne garder qu'une
+  entrée. `bct-ra` reste à remonter.
+- **Pied de page.** Le lien vers l'annexe est au pied de page des huit volumes de `master` ; le
+  neuvième volume (la compensation) arrive par une autre PR : y ajouter le même lien à sa
+  fusion.
+- **Arabe.** La page arabe n'existe pas encore ; les libellés arabes de la figure sont dans le
+  module et sont à relire avec la traduction de la page (« سلسلة مسلسلة » pour la série
+  enchaînée, « موصولة دون تصحيح » pour la série accolée, repris du catalogue de l'entrepôt).
+
+**Reste non établi** (note, § 5, L1 à L9) : comptes d'avant la base 1983, date d'entrée en
+service de celle-ci et profondeur de son recalcul ; CD de l'édition 2005-2009 ; méthode du
+recalcul 2010-2014 et toute série en base 2015 avant 2010 ; base du PIB dans la revue des
+dépenses publiques de 2020 ; origine des valeurs 2002-2004 du ministère des Finances ; PIB
+définitif en base 1997 pour 2018-2020 ; termes arabes de « rétropolation » et de « changement
+de base ». Supports : publications de l'INS et rapports de la BCT, hors *Journal officiel* —
+le registre `docs/recherches.yml` ne peut pas les porter sans extension de
+`scripts/recherches.py` ; la page porte des `TODO (documentaliste)` à la place d'ancres.
+
+**Arabe** : `precis/ar/annexe-pib.qmd` viendra de la traduction après fusion (`build.sh` saute
+la page absente). Ensuite, à la main : ajouter le lien d'annexe au pied de page des huit
+`_quarto.yml` arabes et à `precis/ar/index.qmd` s'il n'y est pas ; vérifier que les
+identifiants `{#…}` sont restés tels quels. Glossaire : la page ne peut pas ancrer le glossaire
+(engendré par livre) ; les notions de la note (§ 8) sont définies dans le texte et restent à
+verser par le terminologue quand un volume les emploiera.
+
 ## Ce qui traverse les livres
 
 - **Traductions arabes en retard sur leur code (relevé et rattrapage du 3 octobre 2026).**

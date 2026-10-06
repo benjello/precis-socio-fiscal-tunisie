@@ -6409,6 +6409,136 @@
       "URL": "https://www.pist.tn/jort/2005/2005F/Jo0152005.pdf",
       "note": "citation-key: decret2005-321\nJORT n° 15 du 22 février 2005, pp. 459-463 (édition française : l'intitulé est au bas de la p. 459, les art. 21 et 22 et la signature en tête de la p. 463) ; édition arabe à partir de la p. 476 (fin non relevée). Art. 1er : la caisse exerce les attributions de l'art. 8 de la loi n° 2004-71. Art. 10 (budgets : recettes dont les cotisations et pénalités des régimes AT/MP des secteurs public et privé ; dépenses), 11 (comptabilité commerciale, comptes séparés et fonds de réserve par régime), 13-20 (tutelle, contrôleur d'État). Texte intégral lu en français : rien sur la prévention des risques professionnels, la tarification, la majoration ou la réduction des cotisations, le recouvrement, ni sur une commission. Couche texte décalée, décodée.",
       "title-short": "Décret n° 2005-321 du 16 février 2005"
+    },
+    {
+      "id": "ins-changement-base-2015",
+      "type": "report",
+      "title": "Les comptes nationaux changent de base. Note explicative du changement de base des comptes nationaux tunisiens, base 2015",
+      "title-short": "INS, Les comptes nationaux changent de base",
+      "author": [
+        {
+          "literal": "Institut national de la statistique"
+        }
+      ],
+      "publisher": "Institut national de la statistique, Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            15
+          ]
+        ]
+      },
+      "number-of-pages": "4",
+      "URL": "https://ins.tn/publication/les-comptes-nationaux-changent-de-base",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "note": "citation-key: ins-changement-base-2015\nCommuniqué du 15 août 2021, accompagné d'une note de quatre pages et d'un classeur « Données » qui porte le PIB et ses emplois en base 2015 de 2010 à 2020."
+    },
+    {
+      "id": "ins-pib-base-2015-2010-2020",
+      "type": "dataset",
+      "title": "Comptes nationaux annuels en base 2015, 2010-2020 : valeur ajoutée par secteur et emplois du PIB, aux prix courants et aux prix de l'année précédente",
+      "title-short": "INS, Comptes annuels en base 2015, 2010-2020",
+      "author": [
+        {
+          "literal": "Institut national de la statistique"
+        }
+      ],
+      "publisher": "Institut national de la statistique, Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            15
+          ]
+        ]
+      },
+      "URL": "https://ins.tn/publication/les-comptes-nationaux-changent-de-base",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "note": "citation-key: ins-pib-base-2015-2010-2020\nClasseur « Données » joint au communiqué du 15 août 2021 ; le titre est descriptif, le fichier n'en porte pas. Seule publication lue qui donne 2010-2014 en base 2015."
+    },
+    {
+      "id": "imf-tunisia-art4-2010",
+      "type": "report",
+      "title": "Tunisia: 2010 Article IV Consultation — Staff Report; Public Information Notice on the Executive Board Discussion; and Statement by the Executive Director for Tunisia",
+      "title-short": "FMI, Tunisia: 2010 Article IV Consultation",
+      "author": [
+        {
+          "literal": "International Monetary Fund"
+        }
+      ],
+      "collection-title": "IMF Country Report",
+      "publisher": "Fonds monétaire international",
+      "publisher-place": "Washington, D.C.",
+      "issued": {
+        "date-parts": [
+          [
+            2010,
+            9
+          ]
+        ]
+      },
+      "URL": "https://www.imf.org/external/pubs/ft/scr/2010/cr10282.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "note": "citation-key: imf-tunisia-art4-2010\nIMF Country Report No. 10/282. Annexe 5, « Tunisia's New National Accounts » : adoption début 2010 de comptes 1997-2008 conformes au SCN 1993, PIB nominal relevé d'environ 10 %, tableau des deux séries 2002-2008. Lu dans la copie des archives du web du 4 août 2011."
+    },
+    {
+      "id": "wb-wdi",
+      "type": "dataset",
+      "title": "World Development Indicators",
+      "title-short": "Banque mondiale, WDI",
+      "author": [
+        {
+          "literal": "Banque mondiale"
+        }
+      ],
+      "publisher": "Banque mondiale",
+      "publisher-place": "Washington, D.C.",
+      "URL": "https://datacatalog.worldbank.org/search/dataset/0037712/World-Development-Indicators",
+      "note": "citation-key: wb-wdi\nIndicateurs utilisés pour la Tunisie : NY.GDP.MKTP.CN (« GDP (current LCU) »), SP.POP.TOTL (« Population, total ») et SL.EMP.WORK.ZS (part des salariés dans l'emploi, estimation modélisée du BIT). Séries téléchargées le 21 septembre 2026 par l'API https://api.worldbank.org/v2/country/TUN/indicator/<code>?format=json ; les réponses portent « lastupdated »: « 2026-07-13 ». URL de la fiche du catalogue de données vérifiée le 21 septembre 2026. Réponses conservées dans le dépôt tunisia-data, data/raw/banque-mondiale/."
+    },
+    {
+      "id": "undata-sna",
+      "type": "dataset",
+      "title": "National Accounts Official Country Data, Table 4.1 Total Economy (S.1), Tunisia",
+      "title-short": "UNdata, National Accounts Official Country Data",
+      "author": [
+        {
+          "literal": "United Nations Statistics Division (UNSD)"
+        }
+      ],
+      "publisher": "United Nations Statistics Division",
+      "publisher-place": "New York",
+      "URL": "https://data.un.org/Data.aspx?d=SNA&f=group_code%3a401%3bcountry_code%3a788%3bfiscal_year%3a1995",
+      "note": "citation-key: undata-sna\nBase de données des comptes nationaux transmis par les pays aux Nations unies, diffusée sur UNdata ; pour la Tunisie, chiffres de l'INS. Pages consultées le 21 septembre 2026, qui portent « Last update in UNdata: 2025/10/14 ». Utilisée pour la rémunération des salariés versée par les unités résidentes (« Compensation of employees », compte d'exploitation), 1993-1997 : série 30 (SCN 1968, base 1983 de l'INS) ; 1998-2001 : série 100 (SCN 1993, base 1997). Une page par année (paramètre fiscal_year) ; l'URL donnée est celle de 1995 (HTTP 200 le 21 septembre 2026). L'adresse de la base sans filtre (https://data.un.org/Data.aspx?d=SNA) répondait 404 le même jour, et le téléchargement groupé ne fonctionnait pas. Adresse de chaque année : dépôt tunisia-data, scripts/extract_undata_remuneration.py."
     }
   ]
 }
