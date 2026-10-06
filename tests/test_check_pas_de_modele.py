@@ -116,6 +116,13 @@ class ExclusionTest(FichierTemporaire):
     def test_modele_de_la_declaration(self):
         self.assertEqual(controle(self.ecrire("D'après le modèle de la déclaration.\n")), [])
 
+    def test_modele_d_equilibre_general(self):
+        """Un terme d'économie, sans rapport avec l'outil de calcul."""
+        for phrase in ("Selon le modèle d'équilibre général de l'étude.\n",
+                       "Les effets indirects sont traités par un modèle d'équilibre général.\n",
+                       "D'après le modèle économétrique des auteurs.\n"):
+            self.assertEqual(controle(self.ecrire(phrase)), [])
+
     def test_texte_sans_mention(self):
         self.assertEqual(controle(self.ecrire("Le décret fixe le taux à 5 %.\n")), [])
 

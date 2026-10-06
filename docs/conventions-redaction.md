@@ -30,6 +30,13 @@ que chaque lien répond.
 
 ### Ce qui en découle, cas par cas
 
+**Le mot « modèle » n'est pas interdit ; c'est l'outil de calcul du précis qui l'est.** Les
+modèles des économistes sont des termes de la discipline et s'écrivent tels quels : « modèle
+d'équilibre général », « modèle économétrique » d'une étude citée. De même les emplois du
+droit — « le modèle français de carrière », « le modèle de la déclaration ». On ne les
+maquille pas en « simulation » pour passer le contrôle : `scripts/check_pas_de_modele.py`
+les reconnaît, et c'est lui qu'on corrige s'il se trompe.
+
 **Un fait vrai du seul modèle ne se publie pas comme un état du droit.** Une date qu'un
 paramètre porte à tort, une valeur que le modèle calcule d'une certaine façon, un croisement
 qu'il opère : rien de tout cela n'est un fait de droit. L'unique exception est la conservation

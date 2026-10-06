@@ -76,7 +76,7 @@ La note « Vers une meilleure équité » demande qui bénéficie des subvention
 2. *La dépense par produit.* Elle se lit comme la consommation totale au prix de vente, multipliée par la hausse de prix qu'il faudrait pour supprimer la subvention. Ce rapport se vérifie produit par produit sur le tableau de la note, sauf pour l'électricité.
 3. *L'électricité, à part.* Son montant n'est pas un écart de prix mesuré : la note part de « la subvention d'exploitation que la STEG fait apparaître dans son bilan » et en calcule « l'équivalent-prix ». Elle reconnaît que la structure des subventions aux opérateurs n'a pas pu être identifiée et qu'elle a dû poser des hypothèses sur les taux de subvention de l'électricité. C'est la grandeur comptable du @tbl-compensation-eg-rapprochement.
 4. *Le classement des ménages.* Les personnes sont rangées en quintiles de dépense de consommation par tête. Le bénéfice d'un ménage est sa consommation du produit multipliée par la subvention unitaire ; la note ne dit pas comment les quantités sont tirées de l'enquête.
-5. *Effets directs seulement.* Les parts par quintile et les montants par tête ne comptent que ce que le ménage consomme lui-même, à consommation inchangée. Les effets indirects — le renchérissement des autres biens — sont traités à part, par une simulation d'équilibre général calée sur la matrice de 2005.
+5. *Effets directs seulement.* Les parts par quintile et les montants par tête ne comptent que ce que le ménage consomme lui-même, à consommation inchangée. Les effets indirects — le renchérissement des autres biens — sont traités à part, par un modèle d'équilibre général calé sur la matrice de 2005.
 
 **Les résultats.** La note chiffre d'abord la dépense par produit.
 
