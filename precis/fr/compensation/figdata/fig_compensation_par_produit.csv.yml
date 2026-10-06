@@ -1,0 +1,5 @@
+series: [compensation-compte-caisse]
+sources: [bct-ra-1985, bct-ra-1986, bct-ra-1988, bct-ra-1992, bct-ra-1993, bct-ra-1994, bct-ra-1995, bct-ra-2001, bct-ra-2002, bct-ra-2003, bct-ra-2004, bct-ra-2005, bct-ra-2006, bct-ra-2007, bct-ra-2008, bct-ra-2009, bct-ra-2010, bct-ra-2011]
+fiches: [docs/compensation-compte-caisse.md]
+caveats: [La grandeur qui pèse sur le budget est la dotation, non les charges. Rupture de 1987 : les recettes de la Caisse sont intégrées au budget, la dotation passe de 68 à 189 millions de dinars sans hausse des charges. Dotation non donnée par le rapport en 1988-1990, 2000-2001, 2003, 2006, 2008-2009 et 2011 : laissée vide, jamais déduite des charges. Charges par produit incomplètes pour 1985, 1992, 1993 et 1995. Le champ des produits change. La part du PIB se lit par segments.]
+generated: 2026-10-06

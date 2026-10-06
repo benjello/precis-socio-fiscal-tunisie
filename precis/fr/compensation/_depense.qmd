@@ -265,7 +265,31 @@ L'écart vient du poste des carburants. Les dépassements de 2013, 2017, 2018 et
 
 Pour la Caisse seule, les rapports de la Banque centrale donnent, de 1986 à 2003, la prévision initiale des charges et leur réalisation : le réalisé y est le plus souvent inférieur au prévu — 218 MD pour 272 MD prévus en 1986, 270 MD pour 292 MD en 1991, 204,5 MD pour 310 MD en 1999, 247,9 MD pour 281 MD en 2001 [@bct-ra-1986 ; @bct-ra-1991 ; @bct-ra-1999 ; @bct-ra-2001] ; la série complète est dans les données de la figure.
 
-<!-- TODO (figures) : fig-compensation-prevu-realise-postes — prévu et réalisé PAR POSTE (produits de base, carburants, transport), lois de finances et lois de finances complémentaires, 2012-2026, écart en MD et en % du prévu. Série de l'entrepôt : compensation-prevu-realise (les trois postes de la famille « budget »). Montrera que l'écart du total vient du poste des carburants. -->
+Le @fig-compensation-prevu-realise-postes le montre poste par poste, chacun à son échelle, avec l'écart en millions de dinars.
+
+```{python}
+#| label: fig-compensation-prevu-realise-postes
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import compensation as cm
+cm.figure(
+    "prevu_realise_postes",
+    caption=("La compensation prévue et réalisée par poste, 2012-2026 : lois de finances, "
+             "lois de finances complémentaires et prévisions publiées avant l'exercice "
+             "(millions de dinars courants)"),
+    note_lecture=(
+        "Trois panneaux, un par poste, chacun avec sa propre échelle : en haut, le réalisé en "
+        "barres et le prévu en marque ; en bas, l'écart du réalisé au prévu en millions de "
+        "dinars — positif pour un dépassement. L'écart en pourcentage du prévu est en "
+        "infobulle et dans les données. Un onglet par nature de prévision : lois de finances "
+        "; lois de finances complémentaires ; colonnes d'années à venir des rapports annuels "
+        "de la Banque centrale (2019-2023).\n\n"
+        "Les barres claires sont des colonnes que la source ne qualifie pas. Les lois de "
+        "finances initiales de 2012 et 2014 ne sont pas dans la série ; 2025 et 2026 n'ont "
+        "pas encore de réalisé. Les plans de développement ne chiffrent pas la compensation "
+        "par poste : ils n'ont pas d'onglet ici."))
+```
 
 ### Les plans de développement
 

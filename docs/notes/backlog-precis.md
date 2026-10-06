@@ -819,24 +819,30 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
 `r-operations-compensation-creation`, `r-arrete-1993-10-08-prix-gaz-steg`,
 `r-separation-effet-ex-post`, `r-serie-prix-pompe-1993-2017` (largement résolue).
 
-- **Figures** (`precis/fr/compensation/figures/compensation.py`, non modifié par la réécriture) :
-  `fig-compensation-recettes-caisse` dans `_institution.qmd` ; `fig-compensation-longue-periode`,
-  `fig-compensation-par-poste` et `fig-compensation-prevu-realise` dans `_depense.qmd` ;
-  `fig-compensation-sources-exterieures` dans `_exterieurs.qmd`. Les notes de lecture ont été
-  corrigées dans les `.qmd` pour la rupture de 2015 (« périmètre élargi »), et le libellé de la
-  marque sur les graphiques l'est aussi.
-  - **Figures attendues**, posées en `<!-- TODO (figures) : … -->` : `fig-compensation-compte-caisse`
-    et `fig-compensation-par-produit` (`_institution.qmd`, série `compensation-compte-caisse`) ;
-    `fig-compensation-prevu-realise-postes` (`_depense.qmd`, série `compensation-prevu-realise`) ;
-    `fig-compensation-carburants-beneficiaires`, `fig-compensation-carburants-directe-totale` et
-    `fig-compensation-prix-pompe` (`_carburants.qmd`, séries `compensation-carburants-*`,
-    `prix-carburants`). Quand elles existeront, replier les tableaux qu'elles remplacent
-    (`tbl-compensation-compte-caisse`, `tbl-compensation-besoins-energie`, tableaux de prix déjà
-    repliés).
-  - **Snapshots** : refaits le 7 octobre 2026 depuis `main` de `tunisia-data` (neuf séries
-    `compensation-*` et `prix-carburants*`) ; les notes de lecture disent la base du PIB d'après
-    les colonnes `segment_pib`, `pib_retropole` et `rupture_pib` (2010-2024 : INS, base 2015,
-    rétropolée pour 2010-2014). Rupture de 1987 marquée sur la dotation et les recettes.
+- **Figures** (`precis/fr/compensation/figures/compensation.py`, appelées par `cm.figure(…)`),
+  onze, chacune appelée une fois : `fig-compensation-compte-caisse`,
+  `fig-compensation-par-produit` et `fig-compensation-recettes-caisse` dans `_institution.qmd` ;
+  `fig-compensation-longue-periode`, `fig-compensation-par-poste`,
+  `fig-compensation-prevu-realise` et `fig-compensation-prevu-realise-postes` dans
+  `_depense.qmd` ; `fig-compensation-carburants-beneficiaires`,
+  `fig-compensation-carburants-directe-totale` et `fig-compensation-prix-pompe` dans
+  `_carburants.qmd` ; `fig-compensation-sources-exterieures` dans `_exterieurs.qmd`.
+  - **Snapshots** : refaits le 6 octobre 2026 depuis `main` de `tunisia-data` (neuf séries
+    `compensation-*` et `prix-carburants*`). Les notes de lecture disent la base du PIB d'après
+    `segment_pib`, `pib_retropole` et `rupture_pib` (2010-2024 : INS, base 2015, rétropolée
+    pour 2010-2014). La rupture de 1987 est déclarée dans le module, la colonne `rupture` de
+    l'entrepôt ne la portant pas : à y verser.
+  - **Tableaux à replier** (rédacteur) : `tbl-compensation-compte-caisse` et
+    `tbl-compensation-besoins-energie`, que les figures nouvelles illustrent ; ils sont laissés
+    entiers.
+  - **Prix à la pompe en dinars constants** : vue non faite. `ipc-longue-periode` est
+    snapshoté, mais c'est un indice raccordé (bases 1962 et 1970), annuel et arrêté à 2023,
+    face à des prix datés au jour jusqu'en 2026 : le déflatage demande une règle écrite
+    (année d'effet, prolongement 2024-2026) avant d'être tracé.
+  - **Non tracé, présent dans les données** : relevés mensuels de l'INS et ajustements déduits
+    par le calcul (prix à la pompe) ; lignes de plan en cumul ou en part du PIB et prévisions
+    de dotation de 1989 et 2007 (prévu / réalisé) ; prévisions de besoins de financement de
+    2012-2013 (carburants) ; dépenses du fonds spécial par produit, 1983-1986.
   - **Annexe sur le PIB** : le texte et les notes des figures renvoient à
     `../annexe-pib.html#sec-pib-ruptures` et `#sec-pib-retropolation` ; l'annexe est sur une autre
     branche, les ancres n'ont pas pu être contrôlées ici.

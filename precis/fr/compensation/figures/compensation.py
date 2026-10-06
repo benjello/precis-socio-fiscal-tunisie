@@ -66,6 +66,11 @@ import figtools  # noqa: E402
 SERIE_PARTS = "compensation-parts"
 SERIE_PREVU = "compensation-prevu-realise"
 SERIE_RECETTES = "compensation-recettes-caisse"
+SERIE_COMPTE = "compensation-compte-caisse"
+SERIE_AUDIT = "compensation-carburants-audit-2014"
+SERIE_BENEF = "compensation-carburants-beneficiaires"
+SERIE_PRIX = "prix-carburants"
+SERIE_EVENEMENTS = "prix-carburants-evenements"
 
 # Clés de citation des dénominateurs, d'après le catalogue de l'entrepôt.
 CLE_DEPENSES = "minfin-remunerations"      # classeur « répartition économique des dépenses »
@@ -112,6 +117,79 @@ _L = {
     "vue_struct": {"fr": "En part du total de la compensation", "ar": "كنسبة من مجموع الدعم"},
     "c_part_total_compensation_pct": {"fr": "% du total de la compensation",
                                       "ar": "% من مجموع الدعم"},
+    "pct_charges": {"fr": "En % du total des charges de l'année",
+                    "ar": "% من مجموع أعباء السنة"},
+    "pct_ligne": {"fr": "En % de la ligne « carburants » de l'année",
+                  "ar": "% من سطر المحروقات للسنة"},
+    "ecart_md": {"fr": "Réalisé − prévu (MD)", "ar": "المنجَز − المتوقَّع (م.د)"},
+    "millimes": {"fr": "millimes par litre", "ar": "مليم للتر"},
+    "millimes_log": {"fr": "Millimes par litre, prix courants\n(échelle logarithmique)",
+                     "ar": "مليم للتر، أسعار جارية\n(سلّم لوغاريتمي)"},
+    "vue_charges": {"fr": "En part du total des charges", "ar": "كنسبة من مجموع الأعباء"},
+    "vue_ligne": {"fr": "En part de la ligne", "ar": "كنسبة من السطر"},
+    "vue_h_lf": {"fr": "Lois de finances", "ar": "قوانين المالية"},
+    "vue_h_lfc": {"fr": "Lois de finances complémentaires", "ar": "قوانين المالية التكميلية"},
+    "vue_h_prev": {"fr": "Prévisions publiées avant l'exercice",
+                   "ar": "تقديرات منشورة قبل السنة المالية"},
+    "vue_essence": {"fr": "Essence", "ar": "البنزين"},
+    "vue_gasoil": {"fr": "Gasoil", "ar": "الغازوال"},
+    "solde": {"fr": "Solde de la Caisse", "ar": "رصيد الصندوق"},
+    "lg_solde": {"fr": "Solde de la Caisse (excédent positif, déficit négatif), années où "
+                       "la source le donne",
+                 "ar": "رصيد الصندوق (فائض موجب، عجز سالب)، في السنوات التي يذكره المصدر"},
+    "lg_total_charges": {"fr": "tiret : total des charges de l'année",
+                         "ar": "شرطة: مجموع أعباء السنة"},
+    "lg_rupture_champ": {"fr": "trait vertical : changement du champ des produits "
+                               "(infobulle sur le triangle)",
+                         "ar": "خطّ عمودي: تغيّر في قائمة المواد (التفاصيل عند المثلّث)"},
+    "lg_ligne_carb": {"fr": "Ligne budgétaire « carburants »", "ar": "سطر المحروقات بالميزانية"},
+    "lg_besoins": {"fr": "Besoins de financement de l'ensemble STEG-STIR-ETAP, réalisés",
+                   "ar": "حاجيات تمويل مجموعة الشركات الثلاث، المنجَزة"},
+    "v_rapport_d": {"fr": "Subvention directe, inscrite au budget (rapport de 2014)",
+                    "ar": "الدعم المباشر المرسَّم بالميزانية (تقرير 2014)"},
+    "v_rapport_i": {"fr": "Subvention indirecte, hors budget (rapport de 2014)",
+                    "ar": "الدعم غير المباشر خارج الميزانية (تقرير 2014)"},
+    "v_dgre_d": {"fr": "Subvention directe consommée (ventilation de la DGRE)",
+                 "ar": "الدعم المباشر المستهلَك (توزيع الإدارة العامة للموارد والتوازنات)"},
+    "v_dgre_i": {"fr": "Subvention indirecte (ventilation de la DGRE)",
+                 "ar": "الدعم غير المباشر (توزيع الإدارة العامة للموارد والتوازنات)"},
+    "fp_arretes_essence": {
+        "fr": "Arrêtés de prix publiés au Journal officiel : essence super, prix à sa date "
+              "d'effet (en clair, l'essence normale)",
+        "ar": "قرارات الأسعار المنشورة بالرائد الرسمي: البنزين الممتاز، السعر في تاريخ سريانه "
+              "(باللون الفاتح: البنزين العادي)"},
+    "fp_one_gasoil": {
+        "fr": "Observatoire national de l'énergie : gasoil ordinaire, prix en vigueur à sa "
+              "date, depuis 2017 (en clair, le gasoil sans soufre)",
+        "ar": "المرصد الوطني للطاقة: الغازوال العادي، السعر المعمول به في تاريخه، منذ 2017 "
+              "(باللون الفاتح: الغازوال الخالي من الكبريت)"},
+    "fp_minist_gasoil": {
+        "fr": "Ministère chargé de l'énergie : gasoil ordinaire, moyenne annuelle pondérée, "
+              "1990-2016 (en clair, le gasoil 50)",
+        "ar": "الوزارة المكلّفة بالطاقة: الغازوال العادي، معدّل سنوي مرجَّح، 1990-2016 "
+              "(باللون الفاتح: الغازوال 50)"},
+    "fp_arretes": {"fr": "Arrêtés de prix publiés au Journal officiel : prix à sa date d'effet",
+                   "ar": "قرارات الأسعار المنشورة بالرائد الرسمي: السعر في تاريخ سريانه"},
+    "fp_minist": {"fr": "Ministère chargé de l'énergie : moyenne annuelle pondérée, 1990-2016",
+                  "ar": "الوزارة المكلّفة بالطاقة: معدّل سنوي مرجَّح، 1990-2016"},
+    "fp_ins": {"fr": "INS : moyenne annuelle des prix de détail",
+               "ar": "المعهد الوطني للإحصاء: المعدّل السنوي لأسعار التفصيل"},
+    "fp_ajust_off": {"fr": "Ajustement daté : date officielle (rapport de 2014, BCT)",
+                     "ar": "تعديل مؤرَّخ: تاريخ رسمي (تقرير 2014، البنك المركزي)"},
+    "fp_ajust_presse": {"fr": "Ajustement daté : presse",
+                        "ar": "تعديل مؤرَّخ: الصحافة"},
+    "fp_one": {"fr": "Observatoire national de l'énergie : prix en vigueur à sa date, depuis "
+                     "2017",
+               "ar": "المرصد الوطني للطاقة: السعر المعمول به في تاريخه، منذ 2017"},
+    "fp_bm": {"fr": "Banque mondiale (source extérieure), 2014",
+              "ar": "البنك الدولي (مصدر خارجي)، 2014"},
+    "lg_evenement": {"fr": "triangle rouge, au pied : étape du mécanisme d'ajustement "
+                           "(infobulle)",
+                     "ar": "مثلّث أحمر في الأسفل: مرحلة من آلية التعديل (التفاصيل عند المثلّث)"},
+    "rp_1968": {"fr": "1968 : prix\nuniforme", "ar": "1968: سعر\nموحَّد"},
+    "rp_1992": {"fr": "1992 : essence\nsans plomb", "ar": "1992: بنزين\nخالٍ من الرصاص"},
+    "rp_1995": {"fr": "1995 : moyennes\nannuelles", "ar": "1995: معدّلات\nسنوية"},
+    "rp_2017": {"fr": "2017 : prix\ndatés", "ar": "2017: أسعار\nمؤرَّخة"},
     "pct_ecart": {"fr": "Écart au prévu (%)", "ar": "الفارق عن المتوقَّع (%)"},
     "pct_couv": {"fr": "Recettes / dépense (%)", "ar": "الموارد / النفقات (%)"},
     "vue_dep": {"fr": "En part des dépenses de l'État", "ar": "كنسبة من نفقات الدولة"},
@@ -264,6 +342,20 @@ _L = {
     "c_realise_pct_pib_calcule": {"fr": "Réalisé, % du PIB calculé",
                                   "ar": "المنجَز، % من الناتج المحسوبة"},
     "c_ecart_points_pib": {"fr": "Écart (points de PIB)", "ar": "الفارق (نقاط من الناتج)"},
+    "c_sens": {"fr": "Sens", "ar": "الاتّجاه"},
+    "c_rubrique": {"fr": "Rubrique", "ar": "البند"},
+    "c_part_total_charges_pct": {"fr": "% du total des charges", "ar": "% من مجموع الأعباء"},
+    "c_valeur": {"fr": "Valeur", "ar": "القيمة"},
+    "c_unite": {"fr": "Unité", "ar": "الوحدة"},
+    "c_ligne_carburants_MDT": {"fr": "Ligne « carburants » (MD)", "ar": "سطر المحروقات (م.د)"},
+    "c_part_de_la_ligne_pct": {"fr": "% de la ligne", "ar": "% من السطر"},
+    "c_date_effet": {"fr": "Date d'effet", "ar": "تاريخ السريان"},
+    "c_produit": {"fr": "Produit", "ar": "المنتوج"},
+    "c_prix_millimes": {"fr": "Prix (millimes)", "ar": "السعر (بالمليم)"},
+    "c_nature_du_prix": {"fr": "Nature du prix", "ar": "طبيعة السعر"},
+    "c_reference": {"fr": "Référence", "ar": "المرجع"},
+    "c_date_du_texte": {"fr": "Date du texte", "ar": "تاريخ النصّ"},
+    "c_mecanisme": {"fr": "Mécanisme", "ar": "الآلية"},
     "c_horizon": {"fr": "Horizon de la prévision", "ar": "أفق التقدير"},
     "c_prevu_MDT": {"fr": "Prévu (MD)", "ar": "المتوقَّع (م.د)"},
     "c_etat_prevu": {"fr": "Libellé du prévu", "ar": "تسمية المتوقَّع"},
@@ -331,6 +423,10 @@ def _recettes():
     return figtools.series(SERIE_RECETTES)
 
 
+def _serie(series_id: str):
+    return figtools.series(series_id)
+
+
 def _vide(v) -> bool:
     return v is None or v != v
 
@@ -382,6 +478,33 @@ PROVENANCE_LECTEUR = {
                  "lois de finances initiales de 2012, 2014 et 2015 n'y figurent pas. Un seul "
                  "plan de développement est chiffré, le XIe, par une annexe du ministère des "
                  "Finances.")),
+    SERIE_COMPTE: dict(
+        caveats=("La grandeur qui pèse sur le budget est la dotation, non les charges. "
+                 "Rupture de 1987 : les recettes de la Caisse sont intégrées au budget, la "
+                 "dotation passe de 68 à 189 millions de dinars sans hausse des charges. "
+                 "Dotation non donnée par le rapport en 1988-1990, 2000-2001, 2003, 2006, "
+                 "2008-2009 et 2011 : laissée vide, jamais déduite des charges. Charges par "
+                 "produit incomplètes pour 1985, 1992, 1993 et 1995. Le champ des produits "
+                 "change. La part du PIB se lit par segments.")),
+    SERIE_AUDIT: dict(
+        caveats=("Grandeur distincte de la ligne budgétaire « carburants ». Deux ventilations "
+                 "du même total, qui ne s'additionnent pas. Deux lignes de 2011 sont "
+                 "douteuses dans la source.")),
+    SERIE_BENEF: dict(
+        perimetre=("répartition de la dépense budgétaire de compensation des carburants entre "
+                   "l'ETAP, la STEG et la STIR ; la somme est égale à la ligne « carburants » "
+                   "de l'année"),
+        caveats=("Répartition non connue ici pour 2013 et après 2016. Zéro : « néant » dit "
+                 "par la source. En 2015 l'ETAP sort de la ligne (périmètre élargi : la STEG "
+                 "et la STIR achètent au prix mondial).")),
+    SERIE_PRIX: dict(
+        caveats=("Dix familles de sources, non raccordées : un prix daté, une moyenne "
+                 "annuelle et un relevé mensuel ne sont pas la même grandeur. Ajustements de "
+                 "1997-2000 déduits par le calcul ; ceux de 2002-2018 en partie connus par la "
+                 "presse reprenant les communiqués. Moyenne du ministère pour 2001 suspecte ; "
+                 "moyennes de l'INS pour 2011 fausses de 50 millimes. Ruptures : prix uniforme "
+                 "le 10 décembre 1968, sans plomb en 1992, essence normale puis super dans "
+                 "l'annuaire en 2006. Prix inchangés depuis le 24 novembre 2022.")),
     SERIE_RECETTES: dict(
         caveats=("Deux séries de recettes et deux dépenses en regard, qui ne se raccordent "
                  "pas. Aucune valeur pour 1987-1990, 1997 et 2000-2008. PIB : celui du "
@@ -443,7 +566,8 @@ def _table(d, colonnes):
     out = {}
     for col in colonnes:
         if col == "famille":
-            out[_lab("c_famille")] = d["famille"].map(lambda f: _lab("f_" + f))
+            out[_lab("c_famille")] = d["famille"].map(
+                lambda f: _lab("f_" + f) if "f_" + f in _L else f)
             out[_lab("c_code_famille")] = d["famille"]
         elif col in ("poste", "poste_depense"):
             out[_lab("c_" + col)] = d[col].map(lambda p: _lab("p_" + p))
@@ -458,6 +582,23 @@ def _table(d, colonnes):
         else:
             out[_lab("c_" + col)] = d[col]
     import pandas as pd
+    return pd.DataFrame(out).reset_index(drop=True)
+
+
+def _table_simple(d, colonnes):
+    """Table des séries sans famille ni poste codés : colonnes telles quelles, intitulés
+    traduits, notes et textes passés par les mêmes filtres que `_table`."""
+    import pandas as pd
+    out = {}
+    for col in colonnes:
+        if col == "note":
+            out[_lab("c_note")] = d[col].map(_note)
+        elif col.startswith("page_"):
+            out[_lab("c_" + col)] = d[col].astype("Int64")
+        elif d[col].dtype == object:
+            out[_lab("c_" + col)] = d[col].map(_lisible)
+        else:
+            out[_lab("c_" + col)] = d[col]
     return pd.DataFrame(out).reset_index(drop=True)
 
 
@@ -1138,6 +1279,580 @@ def _figure_sources_exterieures():
             "fig_compensation_sources_exterieures")
 
 
+# --- 6. Le compte de la Caisse -----------------------------------------------------------
+
+DEBUT_COMPTE, FIN_COMPTE = 1984, 2011
+RUB_CHARGES = "total des charges"
+RUB_RECETTES = "recettes propres de la Caisse"
+RUB_DOTATION = "dotation du budget de l'État"
+COLS_COMPTE = ["annee", "sens", "rubrique", "valeur_MDT", "part_total_charges_pct", "famille",
+               "nature", "etat", "part_depenses_etat_pct", "part_pib_pct", "source", "document",
+               "page_imprimee", "page_pdf", "note", "depenses_etat_hors_dette_MDT", "pib_MDT",
+               "source_pib", "base_pib", "segment_pib", "pib_retropole", "rupture"]
+
+
+def _compte():
+    """Le compte de la Caisse, avec la part de chaque charge dans le total des charges de
+    l'année (seule grandeur calculée ici : rubrique / « total des charges », même famille)."""
+    d = _serie(SERIE_COMPTE).copy()
+    tot = d[(d["rubrique"] == RUB_CHARGES)].set_index("annee")["valeur_MDT"]
+    charge = (d["sens"] == "charge") & (d["famille"] == "cgc_charges_bct")
+    d["part_total_charges_pct"] = (100 * d["valeur_MDT"] / d["annee"].map(tot)).where(charge).round(1)
+    return d
+
+
+def _compte_et_budget():
+    """Lignes du compte (totaux, ressources, solde) et, à leur suite, la dépense budgétaire en
+    trois postes lue dans la série des parts, ramenée aux colonnes du compte."""
+    import pandas as pd
+    c = _compte()
+    c = c[(c["sens"] != "charge") | (c["rubrique"] == RUB_CHARGES)]
+    c = c[c["annee"] >= DEBUT_COMPTE]
+    b = _parts()
+    b = b[(b["famille"] == "budget") & (b["poste"] == "total")].copy()
+    b["sens"] = "dépense du budget"
+    b["rubrique"] = "dépense budgétaire de compensation, trois postes"
+    return pd.concat([c, b[[k for k in c.columns if k in b.columns]]], ignore_index=True)
+
+
+def fig_compte_caisse(mesure: str = "md"):
+    figtools.apply_lang_font()
+    fig, ax = plt.subplots(figsize=(9.5, 5.6))
+    if mesure == "md":
+        c = _compte()
+        c = c[(c["annee"] >= DEBUT_COMPTE) & (c["annee"] <= FIN_COMPTE) & c["valeur_MDT"].notna()]
+        solde = c[c["sens"] == "solde"]
+        barres = ax.bar(solde["annee"].astype(int), solde["valeur_MDT"], width=0.6,
+                        color="#afb8c1", edgecolor="#8c959f", zorder=2)
+        for barre, r in zip(barres, solde.itertuples(index=False)):
+            figtools.infobulle(barre, f"{int(r.annee)} · {_lab('solde')} ({r.rubrique}) : "
+                                      f"{_nombre(r.valeur_MDT)}{_unite('md')} — {r.document}")
+        lignes = ((RUB_CHARGES, "cgc_charges_bct", "f_cgc_charges_bct"),
+                  (RUB_DOTATION, "budget_dotation_cgc_bct", "f_budget_dotation_cgc_bct"),
+                  (RUB_RECETTES, None, "f_recettes_propres_cgc_bct"))
+        poignees = []
+        for rub, fam, cle in lignes:
+            st = STYLE_FAMILLE[fam] if fam else dict(color=VERT, ls="-", marker="s", lw=1.5, ms=5)
+            g = c[c["rubrique"] == rub].sort_values("annee")
+            v = dict(zip(g["annee"].astype(int), g["valeur_MDT"]))
+            for suite in _suites(v):
+                ax.plot(suite, [v[a] for a in suite], ls=st["ls"], lw=st["lw"], color=st["color"],
+                        zorder=3)
+            for r in g.itertuples(index=False):
+                p, = ax.plot([int(r.annee)], [r.valeur_MDT], st["marker"], ms=st["ms"],
+                             color=st["color"], zorder=4)
+                figtools.infobulle(p, f"{int(r.annee)} · {_lab(cle)} : {_nombre(r.valeur_MDT)}"
+                                      f"{_unite('md')} — {r.document}")
+            poignees.append(_poignee(cle, color=st["color"], ls=st["ls"], lw=st["lw"],
+                                     marker=st["marker"], ms=st["ms"]))
+        poignees.append(Patch(facecolor="#afb8c1", edgecolor="#8c959f",
+                              label=figtools.fig_text(_lab("lg_solde"))))
+        poignees.append(_poignee("lg_rupture", color=GRIS, ls=(0, (2, 2)), lw=1, marker=7, ms=5))
+        _cadre(ax, "md", DEBUT_COMPTE, FIN_COMPTE)
+        ax.axhline(0, color=NOIR, lw=0.8, zorder=1)
+        ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nombre(v, 0)))
+        ax.set_xticks(range(DEBUT_COMPTE, FIN_COMPTE + 1, 2))
+        ax.set_ylim(top=ax.get_ylim()[1] * 1.1)
+        _marque_ruptures(ax, c, DEBUT_COMPTE, FIN_COMPTE)
+        _legende(ax, poignees, ncol=1, y=-0.12)
+        fig.tight_layout()
+        return fig
+    # Parts : la dotation, et à partir de 2003 la dépense budgétaire en trois postes.
+    d = _parts()
+    d = d[(d["annee"] >= DEBUT_COMPTE)
+          & ((d["famille"] == "budget_dotation_cgc_bct")
+             | ((d["famille"] == "budget") & (d["poste"] == "total")))]
+    col = COLONNE[mesure]
+    traces = [f for f in ("budget_dotation_cgc_bct", "budget") if _trace_famille(ax, d, f, mesure)]
+    trace = d[d[col].notna()]
+    x0, x1 = int(trace["annee"].min()), int(trace["annee"].max())
+    _cadre(ax, YLABEL[mesure], x0, x1)
+    ax.set_ylim(bottom=0)
+    ax.set_ylim(top=ax.get_ylim()[1] * 1.12)
+    _marque_ruptures(ax, trace, x0, x1, pib=(mesure == "pib"), cote={2003: "gauche"})
+    poignees = _legende_familles(traces)
+    poignees.append(_poignee("lg_prevu", color=GRIS, marker="o", mfc="white", ls=(0, (1, 2)),
+                             lw=1.2))
+    poignees.append(_poignee("lg_rupture", color=GRIS, ls=(0, (2, 2)), lw=1, marker=7, ms=5))
+    if mesure == "pib":
+        poignees.append(_poignee_pib(trace))
+    _legende(ax, poignees, ncol=1, y=-0.12)
+    fig.tight_layout()
+    return fig
+
+
+def _figure_compte_caisse():
+    d = _compte_et_budget().sort_values(["sens", "rubrique", "annee"])
+    vues = [(_lab("vue_md"), fig_compte_caisse("md")), (_lab("vue_dep"), fig_compte_caisse("dep")),
+            (_lab("vue_pib"), fig_compte_caisse("pib"))]
+    c = d[d["sens"] != "dépense du budget"]
+    b = d[d["sens"] == "dépense du budget"]
+    cles = {SERIE_COMPTE: list(c["source"]) + [CLE_DEPENSES] + _cles_pib(c),
+            SERIE_PARTS: list(b["source"])}
+    return vues, _table(d, COLS_COMPTE), cles, "fig_compensation_compte_caisse"
+
+
+# --- 7. Les charges de la Caisse par produit ---------------------------------------------
+
+PRODUITS = (("céréales et dérivés", BLEU, ""), ("huiles", ORANGE, "////"),
+            ("sucre", VIOLET, "...."), ("lait", VERT, "xxxx"), ("engrais", BRUN, "\\\\\\\\"),
+            ("papier scolaire", ROUGE, "++"), ("pâtes alimentaires et couscous", "#bf8700", "oo"),
+            ("double concentré de tomate", "#bc4c00", "--"), ("autres", GRIS, ""))
+
+
+def _par_produit():
+    d = _compte()
+    d = d[(d["sens"] == "charge") & (d["famille"] == "cgc_charges_bct")]
+    detail = d[d["rubrique"] != RUB_CHARGES]["annee"].unique()
+    return d[d["annee"].isin(detail) & d["valeur_MDT"].notna()]
+
+
+def fig_par_produit(mesure: str = "md"):
+    figtools.apply_lang_font()
+    d = _par_produit()
+    col = "valeur_MDT" if mesure == "md" else "part_total_charges_pct"
+    fig, ax = plt.subplots(figsize=(9.5, 5.4))
+    annees = sorted(d["annee"].astype(int).unique())
+    presents = []
+    for a in annees:
+        da = d[d["annee"] == a]
+        bas = 0.0
+        for rub, couleur, hachure in PRODUITS:
+            r = da[da["rubrique"] == rub]
+            if r.empty:
+                continue
+            r = next(r.itertuples(index=False))
+            v = float(getattr(r, col))
+            barre = ax.bar([a], [v], bottom=bas, width=0.78, color=couleur, hatch=hachure,
+                           edgecolor="white", linewidth=0.6, zorder=2)
+            figtools.infobulle(barre[0], f"{a} · {rub} : {_nombre(r.valeur_MDT)}{_unite('md')}"
+                                         f" ({_nombre(r.part_total_charges_pct)} %) — {r.document}")
+            bas += v
+            if rub not in presents:
+                presents.append(rub)
+        if mesure == "md":
+            t = da[da["rubrique"] == RUB_CHARGES]
+            if not t.empty:
+                tv = float(t.iloc[0]["valeur_MDT"])
+                p, = ax.plot([a], [tv], "_", ms=11, mew=2, color=NOIR, zorder=4)
+                figtools.infobulle(p, f"{a} · {RUB_CHARGES} : {_nombre(tv)}{_unite('md')}")
+    x0, x1 = annees[0], annees[-1]
+    _cadre(ax, "md" if mesure == "md" else "pct_charges", x0, x1)
+    ax.set_xticks(range(x0, x1 + 1))
+    ax.tick_params(axis="x", labelsize=7, rotation=90)
+    if mesure == "md":
+        ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nombre(v, 0)))
+        ax.set_ylim(top=ax.get_ylim()[1] * 1.08)
+    else:
+        ax.set_ylim(0, 108)
+    # Ruptures de champ : un trait par année, le texte en infobulle sur le triangle.
+    rup = _ruptures_des_donnees(_compte()[_compte()["famille"] == "cgc_charges_bct"])
+    for a in sorted(rup):
+        if "champ" in rup[a] and x0 < a <= x1:
+            figtools.marque_rupture(ax, a)
+            _repere(ax, a, f"{a} · " + " ; ".join(rup[a]["champ"]))
+    poignees = [Patch(facecolor=c, hatch=h, edgecolor="white", label=figtools.fig_text(r))
+                for r, c, h in PRODUITS if r in presents]
+    if mesure == "md":
+        poignees.append(_poignee("lg_total_charges", color=NOIR, marker="_", ms=11, mew=2,
+                                 ls="none"))
+    poignees.append(_poignee("lg_rupture_champ", color=GRIS, ls=(0, (2, 2)), lw=1, marker=7,
+                             ms=5))
+    _legende(ax, poignees, ncol=3, y=-0.15)
+    fig.tight_layout()
+    return fig
+
+
+def _figure_par_produit():
+    d = _par_produit().sort_values(["annee", "rubrique"])
+    vues = [(_lab("vue_md"), fig_par_produit("md")),
+            (_lab("vue_charges"), fig_par_produit("struct"))]
+    return (vues, _table(d, COLS_COMPTE), {SERIE_COMPTE: list(d["source"])},
+            "fig_compensation_par_produit")
+
+
+# --- 8. Prévu et réalisé par poste -------------------------------------------------------
+
+HORIZONS_POSTES = (("loi de finances", "vue_h_lf"),
+                   ("loi de finances complémentaire", "vue_h_lfc"),
+                   ("prévision", "vue_h_prev"))
+
+
+def _prevu_postes():
+    d = _prevu()
+    return d[(d["famille"] == "budget") & d["poste"].isin([p for p, _, _ in POSTES])
+             & d["horizon"].isin([h for h, _ in HORIZONS_POSTES]) & d["prevu_MDT"].notna()]
+
+
+def fig_prevu_realise_postes(horizon: str):
+    """Trois panneaux, un par poste, chacun à son échelle. Haut : réalisé en barres, prévu en
+    marques. Bas : l'écart du réalisé au prévu EN DINARS ; le pourcentage est en infobulle."""
+    figtools.apply_lang_font()
+    d = _prevu_postes()
+    d = d[d["horizon"] == horizon].sort_values("annee")
+    st = STYLE_HORIZON[horizon]
+    mfc = "white" if st["creux"] else st["color"]
+    annees = sorted(d["annee"].astype(int).unique())
+    rang = {a: i for i, a in enumerate(annees)}  # années en rangs : pas de vide entre elles
+    fig, axes = plt.subplots(2, 3, figsize=(11, 5.8), sharex=True,
+                             gridspec_kw=dict(height_ratios=[1.6, 1], hspace=0.1, wspace=0.3))
+    for j, (poste, couleur, hachure) in enumerate(POSTES):
+        ax, bx = axes[0][j], axes[1][j]
+        g = d[d["poste"] == poste]
+        for r in g.itertuples(index=False):
+            a = int(r.annee)
+            x = rang[a]
+            if not _vide(r.realise_MDT):
+                nq = str(r.etat_realise) == "non qualifié"
+                barre = ax.bar([x], [r.realise_MDT], width=0.7, color=couleur, zorder=2,
+                               alpha=0.45 if nq else 0.9, hatch=hachure, edgecolor="white")
+                figtools.infobulle(barre[0], f"{a} · {_lab('p_' + poste)}, "
+                                             f"{_lab('realise_nq' if nq else 'realise')} : "
+                                             f"{_nombre(r.realise_MDT)}{_unite('md')}")
+            bulle = (f"{a} · {_lab('p_' + poste)}, {_lab('h_' + horizon)} : "
+                     f"{_nombre(r.prevu_MDT)}{_unite('md')} — {r.etat_prevu}")
+            p, = ax.plot([x], [r.prevu_MDT], st["marker"], ms=6.5, color=NOIR, mfc=mfc if
+                         st["creux"] else NOIR, zorder=4)
+            figtools.infobulle(p, bulle)
+            if _vide(r.ecart_MDT):
+                continue
+            e = float(r.ecart_MDT)
+            barre = bx.bar([x], [e], width=0.6, color=couleur, zorder=2, hatch=hachure,
+                           edgecolor="white")
+            figtools.infobulle(barre[0], bulle + f" — {_lab('c_ecart_MDT')} : {_nombre(e)} ; "
+                               f"{_lab('c_ecart_pct')} : {_nombre(float(r.ecart_pct))} %")
+            if abs(e) >= 0.5:
+                bx.annotate(("+" if e > 0 else "") + _nombre(e, 0).replace("-", "−"), xy=(x, e),
+                            xytext=(0, 3 if e >= 0 else -3), textcoords="offset points",
+                            ha="center", va="bottom" if e >= 0 else "top", fontsize=5.8,
+                            color=NOIR)
+        ax.set_title(figtools.fig_text(_lab("p_" + poste)), fontsize=9)
+        for z in (ax, bx):
+            z.grid(True, alpha=0.3)
+            z.set_axisbelow(True)
+            z.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nombre(v, 0)))
+            z.tick_params(axis="y", labelsize=7.5)
+        ax.set_ylim(bottom=0)
+        if g["ecart_MDT"].abs().max() < 10:  # petits écarts : une décimale sur l'axe
+            bx.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nombre(v, 1)))
+        bx.axhline(0, color=NOIR, lw=0.8, zorder=1)
+        bx.margins(y=0.3)
+        bx.set_xlim(-0.7, len(annees) - 0.3)
+        bx.set_xticks(range(len(annees)))
+        bx.set_xticklabels([str(a) for a in annees])
+        bx.tick_params(axis="x", labelsize=7, rotation=90)
+    axes[0][0].set_ylabel(_ft("md"), fontsize=8.5)
+    axes[1][0].set_ylabel(_ft("ecart_md"), fontsize=8.5)
+    poignees = [Patch(facecolor=GRIS, alpha=0.9, label=figtools.fig_text(_lab("realise"))),
+                Patch(facecolor=GRIS, alpha=0.45, label=figtools.fig_text(_lab("realise_nq"))),
+                _poignee("h_" + horizon, color=NOIR, marker=st["marker"], ls="none", ms=6.5,
+                         mfc="white" if st["creux"] else NOIR)]
+    fig.legend(handles=poignees, loc="lower center", ncol=3, fontsize=7.5, frameon=False)
+    fig.subplots_adjust(left=0.07, right=0.99, top=0.94, bottom=0.17)
+    return fig
+
+
+def _figure_prevu_realise_postes():
+    d = _prevu_postes().sort_values(["horizon", "poste", "annee"])
+    vues = [(_lab(cle), fig_prevu_realise_postes(h)) for h, cle in HORIZONS_POSTES]
+    cles = list(d["source_prevu"]) + list(d["source_realise"])
+    return (vues, _table(d, COLS_PREVU), {SERIE_PREVU: cles},
+            "fig_compensation_prevu_realise_postes")
+
+
+# --- 9. Carburants : subvention directe et subvention totale -----------------------------
+
+COLS_CARBURANTS = ["annee", "famille", "nature", "rubrique", "valeur", "unite", "etat_norme",
+                   "etat", "part_pib_pct", "source", "document", "page_imprimee", "page_pdf",
+                   "note", "pib_MDT", "source_pib", "base_pib", "segment_pib", "pib_retropole"]
+VENTILATIONS = (
+    ("v_rapport", (("subvention directe (inscrite au budget)", ORANGE, ""),
+                   ("subvention indirecte (hors budget)", ORANGE, "////"))),
+    ("v_dgre", (("subvention directe consommée — ventilation de la DGRE", BRUN, ""),
+                ("subvention indirecte — ventilation de la DGRE", BRUN, "////"))),
+)
+RUB_BESOINS = "besoins de financement du système STEG-STIR-ETAP"
+
+
+def _audit():
+    return _serie(SERIE_AUDIT)
+
+
+def _ligne_carburants():
+    d = _parts()
+    return d[(d["famille"] == "budget") & (d["poste"] == "carburants")]
+
+
+def fig_carburants_directe_totale(mesure: str = "md"):
+    figtools.apply_lang_font()
+    d = _audit()
+    col = "valeur" if mesure == "md" else "part_pib_pct"
+    dec = 1 if mesure == "md" else 2
+    fig, ax = plt.subplots(figsize=(9.5, 5.2))
+    annees = [2010, 2011, 2012]
+    for a in annees:
+        for i, (cle, rubs) in enumerate(VENTILATIONS):
+            x = a + (i - 0.5) * 0.36
+            bas = 0.0
+            for rub, couleur, hachure in rubs:
+                r = d[(d["annee"] == a) & (d["rubrique"] == rub)]
+                if r.empty:
+                    continue
+                v = float(r.iloc[0][col])
+                barre = ax.bar([x], [v], bottom=bas, width=0.32, color=couleur,
+                               alpha=0.9 if not hachure else 0.45, hatch=hachure,
+                               edgecolor="white", zorder=2)
+                figtools.infobulle(barre[0], f"{a} · {rub} : {_nombre(v, dec)}{_unite(mesure)}")
+                bas += v
+            ax.annotate(_nombre(bas, dec if mesure != "md" else 0), xy=(x, bas), xytext=(0, 2),
+                        textcoords="offset points", ha="center", va="bottom", fontsize=6.5)
+    # la ligne budgétaire (série des parts) et les besoins de financement réalisés
+    lb = _ligne_carburants()
+    lb = lb[lb["annee"].isin(annees)]
+    cb = "valeur_MDT" if mesure == "md" else "part_pib_pct"
+    for r in lb.itertuples(index=False):
+        p, = ax.plot([int(r.annee) - 0.43], [getattr(r, cb)], "o", ms=7, color=NOIR, zorder=4)
+        figtools.infobulle(p, f"{int(r.annee)} · {_lab('lg_ligne_carb')} : "
+                              f"{_nombre(getattr(r, cb), dec)}{_unite(mesure)}")
+    bf = d[(d["rubrique"] == RUB_BESOINS) & (d["etat_norme"] == "réalisé")]
+    for r in bf.itertuples(index=False):
+        p, = ax.plot([int(r.annee) + 0.43], [getattr(r, col)], "D", ms=6.5, color=VIOLET, zorder=4)
+        figtools.infobulle(p, f"{int(r.annee)} · {RUB_BESOINS} : {_nombre(getattr(r, col), dec)}"
+                              f"{_unite(mesure)}")
+    _cadre(ax, "md" if mesure == "md" else "pct_pib", 2010, 2012)
+    ax.set_xlim(2009.4, 2012.6)
+    ax.set_xticks(annees)
+    ax.set_ylim(top=ax.get_ylim()[1] * 1.06)
+    if mesure == "md":
+        ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nombre(v, 0)))
+    poignees = [Patch(facecolor=ORANGE, alpha=0.9, label=figtools.fig_text(_lab("v_rapport_d"))),
+                Patch(facecolor=ORANGE, alpha=0.45, hatch="////", edgecolor="white",
+                      label=figtools.fig_text(_lab("v_rapport_i"))),
+                Patch(facecolor=BRUN, alpha=0.9, label=figtools.fig_text(_lab("v_dgre_d"))),
+                Patch(facecolor=BRUN, alpha=0.45, hatch="////", edgecolor="white",
+                      label=figtools.fig_text(_lab("v_dgre_i"))),
+                _poignee("lg_ligne_carb", color=NOIR, marker="o", ls="none", ms=7),
+                _poignee("lg_besoins", color=VIOLET, marker="D", ls="none", ms=6.5)]
+    _legende(ax, poignees, ncol=2, y=-0.12)
+    fig.tight_layout()
+    return fig
+
+
+def _figure_carburants_directe_totale():
+    d = _audit().sort_values(["rubrique", "annee"])
+    vues = [(_lab("vue_md"), fig_carburants_directe_totale("md")),
+            (_lab("vue_pib"), fig_carburants_directe_totale("pib"))]
+    lb = _ligne_carburants()
+    lb = lb[lb["annee"].isin([2010, 2011, 2012])]
+    cles = {SERIE_AUDIT: list(d["source"]) + ["ins-cnat-2015"], SERIE_PARTS: list(lb["source"])}
+    return vues, _table_simple(d, COLS_CARBURANTS), cles, "fig_compensation_carburants_directe_totale"
+
+
+# --- 10. Carburants : la ligne budgétaire par entreprise ---------------------------------
+
+ENTREPRISES = (("ETAP", VIOLET, ""), ("STEG", BRUN, "////"), ("STIR", GRIS, "...."))
+COLS_BENEF = ["annee", "famille", "nature", "rubrique", "valeur", "unite",
+              "ligne_carburants_MDT", "part_de_la_ligne_pct", "etat_norme", "etat", "source",
+              "document", "page_imprimee", "page_pdf", "note"]
+
+
+def fig_carburants_beneficiaires(mesure: str = "md"):
+    figtools.apply_lang_font()
+    d = _serie(SERIE_BENEF)
+    col = "valeur" if mesure == "md" else "part_de_la_ligne_pct"
+    fig, ax = plt.subplots(figsize=(9.5, 5.0))
+    annees = sorted(d["annee"].astype(int).unique())
+    for a in annees:
+        bas = 0.0
+        for ent, couleur, hachure in ENTREPRISES:
+            r = d[(d["annee"] == a) & (d["rubrique"] == ent)]
+            if r.empty or float(r.iloc[0][col]) == 0:
+                continue
+            r = r.iloc[0]
+            v = float(r[col])
+            barre = ax.bar([a], [v], bottom=bas, width=0.7, color=couleur, hatch=hachure,
+                           edgecolor="white", zorder=2)
+            figtools.infobulle(barre[0], f"{a} · {ent} : {_nombre(r['valeur'])}{_unite('md')} "
+                                         f"({_nombre(r['part_de_la_ligne_pct'])} %) — {r['document']}")
+            if mesure != "md" and v >= 6:
+                ax.annotate(_nombre(v, 0), xy=(a, bas + v / 2), ha="center", va="center",
+                            fontsize=7, bbox=dict(facecolor="white", edgecolor="none",
+                                                  alpha=0.75, pad=0.6))
+            bas += v
+        if mesure == "md":
+            ax.annotate(_nombre(bas, 0), xy=(a, bas), xytext=(0, 2), textcoords="offset points",
+                        ha="center", va="bottom", fontsize=7)
+    _cadre(ax, "md" if mesure == "md" else "pct_ligne", annees[0], annees[-1])
+    ax.set_xticks(range(annees[0], annees[-1] + 1))
+    if mesure == "md":
+        ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nombre(v, 0)))
+        ax.set_ylim(top=ax.get_ylim()[1] * 1.15)
+    else:
+        ax.set_ylim(0, 118)
+        ax.set_yticks(range(0, 101, 20))
+    lb = _ligne_carburants()
+    _marque_ruptures(ax, lb[lb["annee"].isin(annees)], annees[0], annees[-1])
+    poignees = [Patch(facecolor=c, hatch=h, edgecolor="white", label=figtools.fig_text(e))
+                for e, c, h in ENTREPRISES]
+    poignees.append(_poignee("lg_rupture", color=GRIS, ls=(0, (2, 2)), lw=1, marker=7, ms=5))
+    _legende(ax, poignees, ncol=4, y=-0.13)
+    fig.tight_layout()
+    return fig
+
+
+def _figure_carburants_beneficiaires():
+    d = _serie(SERIE_BENEF).sort_values(["annee", "rubrique"])
+    vues = [(_lab("vue_md"), fig_carburants_beneficiaires("md")),
+            (_lab("vue_ligne"), fig_carburants_beneficiaires("struct"))]
+    return (vues, _table_simple(d, COLS_BENEF), {SERIE_BENEF: list(d["source"])},
+            "fig_compensation_carburants_beneficiaires")
+
+
+# --- 11. Les prix à la pompe -------------------------------------------------------------
+
+FIN_PRIX = 2026.58  # fin juillet 2026 : dernier constat des prix inchangés (série des événements)
+COLS_PRIX = ["date_effet", "annee", "produit", "prix_millimes", "unite", "famille",
+             "nature_du_prix", "source", "reference", "date_du_texte", "mecanisme", "rupture",
+             "note"]
+# (préfixe de la famille dans la série, clé de libellé, style, tracé)
+FAMILLES_PRIX = (
+    ("arrêté de prix", "fp_arretes", dict(color=NOIR, lw=1.8, marker="o", ms=3), "escalier"),
+    ("ministère chargé de l'énergie, données ouvertes", "fp_minist",
+     dict(color=BLEU, lw=1.2, ls="--", marker="s", ms=3.5), "annuel"),
+    ("INS, moyenne annuelle", "fp_ins", dict(color=VERT, lw=0, ls="", marker="^", ms=4.5),
+     "annuel"),
+    ("ajustement daté : date officielle", "fp_ajust_off",
+     dict(color=BRUN, lw=0, ls="", marker="D", ms=4.5), "points"),
+    ("ajustement daté : presse", "fp_ajust_presse",
+     dict(color=BRUN, lw=0, ls="", marker="D", ms=4.5, mfc="white"), "points"),
+    ("ministère chargé de l'énergie (Observatoire", "fp_one",
+     dict(color=VIOLET, lw=1.8, marker="o", ms=3), "escalier"),
+    ("Banque mondiale", "fp_bm", dict(color=ROUGE, lw=0, ls="", marker="P", ms=7), "points"),
+)
+# Produits tracés par carburant : (produit de la série, trait plein ou tireté)
+PRODUITS_PRIX = {
+    "essence": ("essence super", "essence sans plomb", "essence normale",
+                "essence (ligne « Essence normale » de l'annuaire)",
+                "essence (ligne « Essence super » de l'annuaire)", "essence"),
+    "gasoil": ("gas-oil", "gasoil ordinaire", "gasoil (libellé de l'INS)", "gasoil sans soufre",
+               "gasoil 50", "gasoil à 0,2 % de soufre"),
+}
+SECONDAIRES = ("essence normale", "gasoil sans soufre", "gasoil 50")
+
+
+def _annee_decimale(date) -> float:
+    import datetime as dt
+    j = dt.date.fromisoformat(str(date)[:10]) if len(str(date)) >= 10 else \
+        dt.date.fromisoformat(str(date)[:7] + "-01")
+    return j.year + (j.timetuple().tm_yday - 1) / 365.25
+
+
+def _prix(carburant: str | None = None):
+    d = _serie(SERIE_PRIX)
+    produits = sum(PRODUITS_PRIX.values(), ()) if carburant is None else PRODUITS_PRIX[carburant]
+    return d[d["produit"].isin(produits) & d["unite"].eq("millimes par litre")]
+
+
+def fig_prix_pompe(carburant: str = "essence"):
+    figtools.apply_lang_font()
+    d = _prix(carburant)
+    fig, ax = plt.subplots(figsize=(9.5, 5.8))
+    poignees = []
+    for prefixe, cle, st, trace in FAMILLES_PRIX:
+        f = d[d["famille"].str.startswith(prefixe)]
+        if f.empty:
+            continue
+        for produit in PRODUITS_PRIX[carburant]:
+            g = f[f["produit"] == produit]
+            if g.empty:
+                continue
+            style = dict(st)
+            if produit in SECONDAIRES:  # produit voisin : même famille, trait fin et clair
+                style.update(alpha=0.45, lw=min(st.get("lw", 0), 1.0))
+            marque = dict(marker=style.pop("marker"), ms=style.pop("ms"),
+                          mfc=style.pop("mfc", None))
+            if trace == "annuel":
+                g = g.sort_values("annee")
+                v = dict(zip(g["annee"].astype(int), g["prix_millimes"]))
+                if style.get("lw"):
+                    for suite in _suites(v):
+                        ax.plot([a + 0.5 for a in suite], [v[a] for a in suite], zorder=2,
+                                **style)
+                pts = [(int(r.annee) + 0.5, r) for r in g.itertuples(index=False)]
+            else:
+                g = g[g["date_effet"].notna()].sort_values("date_effet")
+                pts = [(_annee_decimale(r.date_effet), r) for r in g.itertuples(index=False)]
+                if trace == "escalier":
+                    # Un escalier par nature de prix : la zone A de 1964-1966 et le prix
+                    # uniforme de 1968 ne sont pas reliés. Le dernier palier court jusqu'au
+                    # prix suivant de la famille ; celui de l'Observatoire, jusqu'au dernier
+                    # constat des prix inchangés.
+                    for _, h in g.groupby("nature_du_prix", sort=False):
+                        xs = [_annee_decimale(x) for x in h["date_effet"]]
+                        ys = list(h["prix_millimes"])
+                        fin = FIN_PRIX if cle == "fp_one" else xs[-1]
+                        ax.step(xs + [fin], ys + [ys[-1]], where="post", zorder=2,
+                                **{k: v for k, v in style.items() if k != "ls"})
+            for x, r in pts:
+                p, = ax.plot([x], [r.prix_millimes], marque["marker"], ms=marque["ms"],
+                             color=style["color"], mfc=marque["mfc"] or style["color"],
+                             alpha=style.get("alpha", 1), zorder=3)
+                quand = r.date_effet if not _vide(r.date_effet) else int(r.annee)
+                figtools.infobulle(p, f"{quand} · {r.produit} : {_nombre(r.prix_millimes, 0)} "
+                                      f"{_lab('millimes')} — {_lab(cle)} — {r.nature_du_prix}")
+        cle_lg = f"{cle}_{carburant}" if f"{cle}_{carburant}" in _L else cle
+        poignees.append(_poignee(cle_lg, color=st["color"], lw=st.get("lw", 0) or 0,
+                                 ls=st.get("ls", "-") or "none", marker=st["marker"],
+                                 ms=st["ms"] + 1, mfc=st.get("mfc", st["color"])))
+    ax.set_yscale("log")
+    ax.set_yticks([50, 100, 200, 500, 1000, 2000, 3000])
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nombre(v, 0)))
+    ax.set_ylabel(_ft("millimes_log"))
+    ax.set_xlabel(figtools.fig_text(_lab("x")))
+    ax.set_xlim(1963, 2027.5)
+    ax.xaxis.set_major_locator(MaxNLocator(integer=True, nbins=14))
+    ax.grid(True, alpha=0.3)
+    ax.set_ylim(top=ax.get_ylim()[1] * 1.6)
+    # Ruptures de produit ou de nature du prix (colonne `rupture`) : trait et libellé court.
+    vus = set()
+    for i, r in enumerate(d[d["rupture"].notna()].sort_values("annee").itertuples(index=False)):
+        x = _annee_decimale(r.date_effet) if not _vide(r.date_effet) else float(r.annee)
+        if round(x, 1) in vus:
+            continue
+        vus.add(round(x, 1))
+        ax.axvline(x, color=GRIS, ls=(0, (2, 2)), lw=1, zorder=1)
+        p, = ax.plot([x], [1], marker=7, ms=6, color=GRIS, clip_on=False, zorder=4,
+                     transform=ax.get_xaxis_transform())
+        figtools.infobulle(p, f"{int(r.annee)} · {r.rupture}")
+        cle = f"rp_{int(r.annee)}"
+        if cle in _L:
+            ax.annotate(_ft(cle), xy=(x, 1), xycoords=("data", "axes fraction"),
+                        xytext=(3, -4 - 20 * (len(vus) % 2)), textcoords="offset points",
+                        ha="left", va="top", fontsize=6.5, color=GRIS, zorder=5,
+                        bbox=dict(facecolor="white", edgecolor="none", alpha=0.85, pad=1))
+    # Mécanisme d'ajustement : un repère par événement, au pied du cadre.
+    for r in _serie(SERIE_EVENEMENTS).itertuples(index=False):
+        x = _annee_decimale(r.date)
+        p, = ax.plot([x], [0], marker=6, ms=6, color=ROUGE, clip_on=False, zorder=4,
+                     transform=ax.get_xaxis_transform())
+        figtools.infobulle(p, f"{r.date} · {r.evenement}")
+    poignees.append(_poignee("lg_rupture", color=GRIS, ls=(0, (2, 2)), lw=1, marker=7, ms=5))
+    poignees.append(_poignee("lg_evenement", color=ROUGE, marker=6, ms=6, ls="none"))
+    _legende(ax, poignees, ncol=1, y=-0.12, taille=7.2)
+    fig.tight_layout()
+    return fig
+
+
+def _figure_prix_pompe():
+    d = _prix().sort_values(["produit", "famille", "annee", "date_effet"])
+    vues = [(_lab("vue_essence"), fig_prix_pompe("essence")),
+            (_lab("vue_gasoil"), fig_prix_pompe("gasoil"))]
+    trace = d[~d["famille"].str.contains("INFÉRÉ|relevé mensuel")]
+    ev = _serie(SERIE_EVENEMENTS)
+    cles = {SERIE_PRIX: list(trace["source"]), SERIE_EVENEMENTS: list(ev["source"])}
+    return vues, _table_simple(d, COLS_PRIX), cles, "fig_compensation_prix_pompe"
+
+
 # --- point d'entrée des chapitres --------------------------------------------------------
 
 FIGURES = {
@@ -1146,6 +1861,12 @@ FIGURES = {
     "prevu_realise": _figure_prevu_realise,
     "recettes_caisse": _figure_recettes_caisse,
     "sources_exterieures": _figure_sources_exterieures,
+    "compte_caisse": _figure_compte_caisse,
+    "par_produit": _figure_par_produit,
+    "prevu_realise_postes": _figure_prevu_realise_postes,
+    "carburants_directe_totale": _figure_carburants_directe_totale,
+    "carburants_beneficiaires": _figure_carburants_beneficiaires,
+    "prix_pompe": _figure_prix_pompe,
 }
 
 

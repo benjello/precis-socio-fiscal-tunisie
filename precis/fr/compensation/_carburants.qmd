@@ -45,7 +45,25 @@ La ligne « carburants » se répartit entre les trois entreprises, et cette ré
 
 En 2014, l'ETAP reçoit 94 % de la ligne : elle est subventionnée pour l'écart de prix qu'elle supporte en cédant à perte, de sorte que la subvention directe à l'ETAP est une subvention indirecte à la STIR et à la STEG [@minfin-compensation-carburants-2014, p. 6]. En 2015, l'ETAP ne reçoit plus rien et la STEG reçoit 93 % de la ligne. À la fin de juin 2018, la subvention est versée par avances du Trésor : 495 millions de dinars (MD) à la STIR et 195 MD à la STEG [@minfin-rapport-execution-2018-06, p. 5].
 
-<!-- TODO (figures) : fig-compensation-carburants-beneficiaires — la ligne « carburants » par entreprise (ETAP, STEG, STIR), 2010-2012 et 2014-2016, en barres empilées, la rupture de 2015 marquée. Série de l'entrepôt : compensation-carburants-beneficiaires. -->
+Le @fig-compensation-carburants-beneficiaires donne cette répartition année par année.
+
+```{python}
+#| label: fig-compensation-carburants-beneficiaires
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import compensation as cm
+cm.figure(
+    "carburants_beneficiaires",
+    caption=("La ligne budgétaire « carburants » par entreprise bénéficiaire, 2010-2012 et "
+             "2014-2016 : en millions de dinars courants et en part de la ligne"),
+    note_lecture=(
+        "Chaque barre empile les versements du budget à l'ETAP, à la STEG et à la STIR ; le "
+        "nombre qui la surmonte est la ligne « carburants » de l'année. La répartition de "
+        "2013 n'est pas connue ici : l'année reste vide. Le trait vertical marque "
+        "l'élargissement du périmètre de 2015 : l'ETAP, qui reçoit 94 % de la ligne en 2014, "
+        "n'en reçoit plus rien ensuite."))
+```
 
 ## Subvention directe et subvention totale, 2010-2012 {#sec-compensation-cout-economique}
 
@@ -71,7 +89,33 @@ Trois faits s'y lisent. La subvention totale est, chaque année, deux à trois f
 
 Aucune source budgétaire ne donne la subvention indirecte de 2013 et de 2014.
 
-<!-- TODO (figures) : fig-compensation-carburants-directe-totale — ligne budgétaire, subvention directe et indirecte selon l'audit de 2014 (deux ventilations, jamais additionnées), besoins de financement, 2010-2013. Série de l'entrepôt : compensation-carburants-audit-2014. Remplacera le tableau tbl-compensation-besoins-energie, à replier alors. -->
+Le @fig-compensation-carburants-directe-totale met côte à côte les deux ventilations du rapport, la ligne budgétaire et les besoins de financement.
+
+```{python}
+#| label: fig-compensation-carburants-directe-totale
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import compensation as cm
+cm.figure(
+    "carburants_directe_totale",
+    caption=("La subvention des carburants selon le rapport du 21 juillet 2014, 2010-2012 : "
+             "subvention directe et indirecte dans ses deux ventilations, ligne budgétaire "
+             "et besoins de financement, en millions de dinars courants et en part du PIB"),
+    note_lecture=(
+        "Pour chaque année, deux barres qui ne s'additionnent pas : à gauche (orange), la "
+        "ventilation du rapport entre subvention directe, inscrite au budget, et subvention "
+        "indirecte, hors budget ; à droite (brun), celle de la direction générale des "
+        "ressources et des équilibres, entre subvention directe consommée et subvention "
+        "indirecte. Le nombre au-dessus est le total de la ventilation. Le rond noir est la "
+        "ligne budgétaire « carburants » de l'année ; le losange violet, les besoins de "
+        "financement réalisés de l'ensemble STEG-STIR-ETAP. Les prévisions de besoins de 2012 "
+        "et 2013 ne sont que dans les données.\n\n"
+        "Seconde vue : les mêmes grandeurs en part du PIB — celui de l'INS en base 2015, "
+        "rétropolée par l'INS pour 2010-2014 (voir l'[annexe sur le "
+        "PIB](../annexe-pib.html#pib-base-2015)). Aucune part des dépenses de l'État n'est "
+        "donnée : la subvention indirecte n'est pas une dépense du budget."))
+```
 
 <!-- TODO (documentaliste) : le rapport de 2014 n'est exploité que pour ses pages 1 à 10 et 158-159 ; ses tableaux chiffrés restent à lire, et la subvention indirecte de 2013-2014 comme l'effet constaté de la séparation de 2015 à 2018 restent à établir (loi de règlement de 2015, rapports de la Cour des comptes) — docs/notes/compensation-rupture-2015.md, § (vi), points 3 et 4. -->
 
@@ -158,7 +202,39 @@ Le rendement est connu pour trois années : la taxe unique sur les carburants ra
 
 Aucune source ne donne le prix à la pompe d'un seul tenant sur soixante ans. Cinq familles de sources se relaient ; elles ne mesurent pas le même objet — un prix à sa date d'effet, une moyenne annuelle, un relevé — et sont données ici une à une, sans être fondues.
 
-<!-- TODO (figures) : fig-compensation-prix-pompe — prix à la pompe de l'essence et du gasoil, 1964-2026, une couleur ou un trait par famille de sources (arrêtés du Journal officiel en escalier jusqu'en 1993 ; moyennes annuelles du ministère 1990-2016 ; INS ; Observatoire national de l'énergie en escalier depuis 2017 ; ajustements datés 2002-2018), ruptures marquées (prix uniforme en 1968, essence sans plomb en 1992). Séries de l'entrepôt : prix-carburants et prix-carburants-evenements. Les lignes inférées de 1997-2001 ne se tracent pas. -->
+Le @fig-compensation-prix-pompe les superpose pour l'essence et pour le gasoil, chacune avec son tracé.
+
+```{python}
+#| label: fig-compensation-prix-pompe
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import compensation as cm
+cm.figure(
+    "prix_pompe",
+    caption=("Les prix à la pompe de l'essence et du gasoil selon les familles de sources, "
+             "1964-2026 (millimes par litre, prix courants, échelle logarithmique)"),
+    note_lecture=(
+        "Un onglet par carburant. Chaque famille de sources a sa couleur et son tracé, et "
+        "aucune n'est reliée à une autre. En noir, les prix limites fixés par arrêté publié "
+        "au Journal officiel, en marches d'escalier aux dates d'effet (1964-1993). En bleu, "
+        "les moyennes annuelles du ministère chargé de l'énergie, pondérées par les jours "
+        "(1990-2016), placées au milieu de l'année. En vert, les moyennes annuelles des prix "
+        "de détail de l'INS. En brun, les ajustements datés de 2002 à 2018 : losange plein "
+        "quand la date est officielle, creux quand elle vient de la presse. En violet, les "
+        "prix en vigueur publiés par l'Observatoire national de l'énergie depuis 2017, en "
+        "escalier ; le dernier palier est prolongé jusqu'à fin juillet 2026, les prix étant "
+        "inchangés depuis le 24 novembre 2022. La croix rouge est un prix cité par la Banque "
+        "mondiale pour 2014.\n\n"
+        "Les traits verticaux marquent les ruptures de produit ou de nature du prix : prix "
+        "uniforme sur le territoire en 1968, après les prix de la zone de Tunis ; essence "
+        "sans plomb en 1992 ; passage des prix datés aux moyennes annuelles en 1995 ; retour "
+        "des prix datés en 2017. Les triangles rouges au pied du cadre sont les étapes du "
+        "mécanisme d'ajustement, de 2009 à 2022. Les ajustements de 1997 à 2001 déduits par "
+        "le calcul et les relevés mensuels de l'INS ne sont pas tracés ; ils sont dans les "
+        "données. L'échelle logarithmique permet de lire sur une même vue 90 et 2 525 "
+        "millimes."))
+```
 
 ### 1964-1993 : les arrêtés publiés au *Journal officiel*
 

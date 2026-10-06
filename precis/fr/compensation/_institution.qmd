@@ -123,7 +123,46 @@ Ce qui pèse sur le budget de l'État n'est donc pas la charge, mais la dotation
 
 : Le compte de la Caisse générale de compensation, 1984-2011 (millions de dinars courants). Source : rapports annuels de la BCT, qui relaient les chiffres de l'administration ; chaque année est donnée dans le rapport le plus récent qui la porte. La part des dépenses de l'État rapporte la dotation aux dépenses de l'État hors service de la dette, connues depuis 1986 ; elle ne dépend d'aucune base des comptes nationaux. Une case vide est une valeur que les rapports ne donnent pas ; le tiret de 1987 marque la fin des recettes propres individualisées. Les charges de 1984, 1985, 1989, 1990 et 1991 sont arrondies par la source ; le déficit de 1996 est une estimation. En 2007, la dotation réunit 313 MD prévus en loi de finances et 285 MD de dotation supplémentaire ; en 2010, 146 MD de la dotation sont reportés sur 2011. S'y ajoutent, hors tableau, 8 MD en 1984 et 7 MD en 1985 et 1986 prélevés sur la contribution exceptionnelle de solidarité, et 17 MD de papier scolaire pris en charge par le Centre national pédagogique en 1995. {#tbl-compensation-compte-caisse}
 
-<!-- TODO (figures) : fig-compensation-compte-caisse — le compte de la Caisse, 1984-2011 : charges, recettes propres, dotation du budget, solde, avec la rupture de 1987 marquée ; seconde vue : dotation en % des dépenses de l'État hors service de la dette. Série de l'entrepôt : compensation-compte-caisse. Remplacera le tableau tbl-compensation-compte-caisse, à replier alors. -->
+Le @fig-compensation-compte-caisse trace ce compte, puis rapporte la dotation aux dépenses de l'État et au PIB, en la prolongeant par la dépense budgétaire en trois postes qui lui succède en 2003.
+
+```{python}
+#| label: fig-compensation-compte-caisse
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import compensation as cm
+cm.figure(
+    "compte_caisse",
+    caption=("Le compte de la Caisse générale de compensation, 1984-2011, en millions de "
+             "dinars courants ; la dotation du budget à la Caisse puis la dépense budgétaire "
+             "de compensation, 1984-2026, en part des dépenses de l'État hors service de la "
+             "dette et en part du PIB"),
+    note_lecture=(
+        "Première vue : les charges de la Caisse (brun), ses recettes propres (vert), la "
+        "dotation du budget (bleu) et, en barres, le solde pour les années où la source le "
+        "donne. Une année sans valeur interrompt le trait : la dotation manque pour dix "
+        "années de 1988 à 2011, dont 2008 et 2009, où le rapport dit la charge couverte par "
+        "le budget sans donner le montant ; rien n'est interpolé. Le trait vertical de 1987 "
+        "marque l'intégration au budget des recettes fiscales et parafiscales de la Caisse "
+        "par la loi de finances : la dotation passe de 68 à 189 MD sans que le coût change, "
+        "et la série des recettes propres s'interrompt jusqu'en 1991.\n\n"
+        "Deuxième et troisième vues : ce que la compensation pèse dans le budget. La "
+        "dotation, limitée aux produits de base, est suivie à partir de 2003 par la dépense "
+        "budgétaire en trois postes (noir), qui ajoute le transport puis, en 2004, les "
+        "carburants ; son périmètre s'élargit en 2015. Ce sont deux séries distinctes, jamais "
+        "reliées : elles coexistent en 2004, 2005, 2007 et 2010. La part des dépenses de "
+        "l'État, calculable depuis 1986, ne dépend d'aucune base des comptes nationaux : "
+        "c'est la mesure homogène ; son dénominateur exclut le service de la dette.\n\n"
+        "La part du PIB est tracée par segments. Le PIB employé est, segment par segment : "
+        "jusqu'en 1985, celui de la Banque mondiale, qui accole les bases sans les raccorder "
+        "— base non précisée par la source ; ensuite celui du ministère des Finances, en base "
+        "1983 présumée pour 1986-1991, en base 1983 pour 1992-1996, en base 1997, rétropolée "
+        "par l'INS, pour 1997-2001, en base 1997 pour 2005-2009 ; ses valeurs de 2002-2004 et "
+        "de 2025 lui sont propres et ne se rattachent à aucune base (« n. r. ») ; de 2010 à "
+        "2024, celui de l'INS en base 2015, rétropolée par l'INS pour 2010-2014. Chaque "
+        "changement de segment est une rupture de série qui tient au seul dénominateur (voir "
+        "l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures))."))
+```
 
 ### Les charges par produit
 
@@ -142,7 +181,30 @@ Les céréales forment, à toutes les dates, la plus grande part des charges ; l
 
 : Les charges de la Caisse générale de compensation par produit, à six dates (millions de dinars courants). Sources : rapports annuels de la BCT [@bct-ra-1988, p. 69 ; @bct-ra-2001, p. 96 ; @bct-ra-2005, p. 101 ; @bct-ra-2009, p. 112 ; @bct-ra-2010, p. 25 ; @bct-ra-2011, p. 37]. Le champ des produits change d'une date à l'autre ; en 2011, la ligne « autres » réunit le double concentré de tomate (9,6 MD) et les pâtes alimentaires et le couscous (4,2 MD). Une case vide est un produit que le rapport ne détaille pas à cette date. {#tbl-compensation-charges-produits}
 
-<!-- TODO (figures) : fig-compensation-par-produit — charges de la Caisse par produit, 1986-2011 (céréales, huiles, sucre, lait, engrais, papier scolaire, autres), ruptures de champ marquées (1991, 1992-1994, 1999, 2008, 2011). Série de l'entrepôt : compensation-compte-caisse, sens « charge ». Le tableau tbl-compensation-charges-produits n'en donne que six dates. -->
+Le @fig-compensation-par-produit donne les charges par produit pour toutes les années où un rapport les détaille.
+
+```{python}
+#| label: fig-compensation-par-produit
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import compensation as cm
+cm.figure(
+    "par_produit",
+    caption=("Les charges de la Caisse générale de compensation par produit, 1985-2011, pour "
+             "les années où le détail est publié : en millions de dinars courants et en part "
+             "du total des charges"),
+    note_lecture=(
+        "Une barre par année où les rapports annuels de la Banque centrale détaillent les "
+        "charges ; 1989 à 1991 et 1994 n'ont pas de détail et restent vides. Le tiret noir "
+        "est le total des charges de l'année : là où la barre ne l'atteint pas, une partie "
+        "des charges n'est pas ventilée par la source (1985, 1992, 1995). La seconde vue "
+        "rapporte chaque produit à ce total.\n\n"
+        "Les traits verticaux marquent les changements du champ des produits, dont le texte "
+        "est en infobulle : sorties de produits en 1991 et de 1992 à 1994, fin de la "
+        "subvention de certains engrais et du sucre produit localement en 1999, sortie du "
+        "lait en 2008, extension de 2011."))
+```
 
 ### Les recettes propres {#sec-compensation-financement}
 
