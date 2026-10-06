@@ -1474,3 +1474,47 @@
   a_faire:
   - plein texte des fascicules de 1994-1996 et de 2004-2010
   - 'édition arabe : أسعار + المواد البترولية / المحروقات'
+
+- id: r-tarifs-electricite-gaz-apres-1992
+  objet: acte fixant les tarifs de l'électricité et du gaz après la décision du ministre de l'économie nationale du 11 août 1992 (décision ou arrêté du ministre chargé de l'énergie, de l'économie ou du commerce)
+  ou: [precis/fr/compensation/_electricite_gaz.qmd#sec-compensation-eg-autorite]
+  requetes:
+    titres_fts:
+    - (tarif OR tarifs OR tarification OR prix) AND (electricite OR electrique OR gaz OR STEG)
+    - electricite OR STEG OR "energie electrique" OR "gaz naturel"
+    iort_ar: [تعريف, أسعار, كهرب, الغاز]
+    plein_texte: [tarifs de l'électricité, tarif d'électricité]
+    depuis: 1992-08-28
+  passes:
+  - date: 2026-10-06
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Titres de jort_cache, 1956-2026 : 18 textes tarifaires, le dernier du 11 août 1992 ; aucun texte tarifaire dans les titres de 1988 à 2026 portant électricité, STEG ou gaz naturel (seulement TVA, garanties, normes, prix d''achat des renouvelables de 2024-2025). Index matière (termes en tarif ou prix, joints à électricité ou gaz, depuis 1990) : arrêté du 19 décembre 1990 et arrêté du 9 octobre 2024 (prix d''achat du photovoltaïque). Type « décision » à titre tarifaire, 1992-2010 : la seule décision du 11 août 1992. Intitulés arabes du miroir iort (32 118 fichiers) : un seul résultat, le décret n° 61-47. Plein texte des 1 962 fascicules français de 1994 à 2012 : aucune occurrence, mais le contrôle échoue (le décret n° 2004-9 sur la TVA de l''électricité n''est pas atteint par la même méthode) : ce balayage ne prouve rien. Lacunes : la rubrique « avis et communications », où parut la décision de 1992, peut ne pas être indexée ; 1993 sans texte exploitable ; 2013-2026 non balayés au plein texte ; corps arabe des textes non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - lire à l'image les « avis et communications » des JORT n° 75 à 86 de 1993 (5 octobre-12 novembre)
+  - lire le décret n° 2015-307 du 1er juin 2015, qui modifie le décret n° 91-1996
+  - demander à la STEG la nature et la référence de l'acte qui homologue chaque grille depuis 1992
+
+- id: r-tarifs-electricite-grilles-1993-2003
+  objet: grilles tarifaires de l'électricité et du gaz en vigueur entre août 1992 et mai 2004, dont l'ajustement d'octobre 1993 signalé par la Banque centrale
+  ou: [precis/fr/compensation/_electricite_gaz.qmd#sec-compensation-eg-grilles]
+  requetes:
+    titres_fts: [(tarif OR tarifs OR tarification OR prix) AND (electricite OR electrique OR gaz OR STEG)]
+    plein_texte: [électricité, gaz]
+    depuis: 1992-08-28
+  periode:
+    jusqu_au: 2004-05-01
+    motif: la grille de la STEG du 1er mai 2004 est la première grille datée connue après la décision du 11 août 1992
+  passes:
+  - date: 2026-10-06
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache : aucun texte tarifaire après le 11 août 1992. Archives du web du site de la STEG : première capture utile le 26 janvier 2004 ; aucun rapport annuel de la STEG antérieur à 2005. Rapports annuels de la BCT de 1993 à 2003 (motif tarif ou prix avec électricité ou gaz) : deux mentions seulement, octobre 1993 (hausse) et 1999 (révision à la baisse), sans grille. Lacunes : fascicules de 1993 à océriser ; étude de l''ANER de 2000, collectée, non lue ; annuaires de l''INS non cherchés.'
+    couvert_jusqu_au: 2004-05-01
+    resultat: aucun
+  a_faire:
+  - lire l'étude de l'ANER de 2000 sur l'impact des prix de l'énergie
+  - demander à la STEG l'historique des grilles de 1993 à 2003, avec leurs dates d'effet
+  - annuaires statistiques de l'INS, prix de l'électricité

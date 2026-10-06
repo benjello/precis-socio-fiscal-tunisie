@@ -1,0 +1,194 @@
+# L'électricité et le gaz {#sec-compensation-electricite-gaz}
+
+La ligne budgétaire « carburants » ne finance pas que les carburants : une part en revient à la [Société tunisienne de l'électricité et du gaz](#g-steg) (STEG), qui vend l'électricité et le gaz à des tarifs administrés (@sec-compensation-carburants-chapitre). Ce chapitre suit ces tarifs dans le même ordre que le reste du volume : l'autorité qui les fixe ; les grilles, d'après le *Journal officiel* puis d'après la STEG ; le prix de vente moyen et le coût de revient que publient les sources officielles ; enfin le lien avec la compensation. Tout y est de source officielle tunisienne — textes publiés, grilles et rapports de la STEG, rapport de contrôle de 2014, Observatoire national de l'énergie et des mines. Les études de la Banque mondiale sur l'incidence de ces tarifs sont au dernier chapitre (@sec-compensation-incidence-energie).
+
+## Qui fixe les tarifs {#sec-compensation-eg-autorite}
+
+### Jusqu'en 1990 : un arrêté publié, sur proposition de la STEG
+
+De 1970 à 1990, les tarifs sont fixés par un arrêté ministériel publié au *Journal officiel*, qui arrête des « prix de vente maxima ». Les arrêtés de 1970 et de 1975 visent une délibération du conseil d'administration de la STEG : l'entreprise propose, le ministre arrête [@arrete-1970-08-07-tarifs-electricite-gaz ; @arrete-1975-04-15-tarifs-electricite-gaz]. À partir de 1982, les arrêtés visent la loi du 19 mai 1970 sur les prix et ne mentionnent plus cette délibération [@arrete-1982-09-30-tarifs-electricite-gaz]. Tous sont signés d'un seul ministre, sauf celui du 27 novembre 1978, arrêté conjoint des ministres de l'industrie, des mines et de l'énergie et du commerce [@arrete-1978-11-27-tarifs-electricite-gaz].
+
+### 1992 : une décision d'homologation
+
+Le dernier acte tarifaire publié est d'une autre nature. La décision du ministre de l'économie nationale du 11 août 1992, parue à la rubrique des avis et communications, dispose : « Les prix de vente hors taxe de l'électricité et du gaz sont fixés selon les tarifs annexés à la présente décision et applicables sur l'ensemble du territoire de la République » [@decision-1992-08-11-tarifs-electricite-gaz, art. 1]. Elle est prise sous le régime de la loi de 1991 sur la concurrence et les prix : le décret du 23 décembre 1991 range l'électricité, l'eau et le gaz parmi les produits et services soumis à l'homologation des prix à tous les stades, qu'il définit comme « la fixation préalable par l'administration du niveau des prix ou de leurs variations » [@decret91-1996, art. 2 et tableau A].
+
+### Après 1992 : un acte qui n'est pas identifié
+
+Les grilles postérieures ne sont connues que par la STEG, qui les affiche avec leur date d'effet. L'acte qui les fixe n'est pas identifié ici.
+
+<!-- RECHERCHE r-tarifs-electricite-gaz-apres-1992 : acte fixant les tarifs de l'électricité et du gaz après la décision du 11 août 1992 (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : textes tarifaires connus par leur seul intitulé — décret n° 61-47 du 14 janvier 1961, arrêtés des 29 janvier et 25 octobre 1963, 31 août 1976, 16 juin 1977, 27 février 1978, 12 juillet et 10 octobre 1980, 23 janvier 1981 — à lire sur les fascicules (présents au corpus) ; décret n° 2015-307 du 1er juin 2015 modifiant le décret n° 91-1996, pour savoir si l'électricité et le gaz restent soumis à l'homologation — docs/notes/compensation-tarifs-electricite-gaz.md, § (i) et (vii). -->
+
+## Les grilles de l'électricité {#sec-compensation-eg-grilles}
+
+Le tarif suivi ici est celui de la basse tension résidentielle, celui des ménages. Deux blocs de grilles existent, séparés par onze années sans source.
+
+<!-- TODO (figures) : fig-compensation-facture-electricite — facture mensuelle type toutes taxes comprises à consommations fixes (50, 100, 200, 300, 600 kWh), grille par grille, 1970-1992 et 2004-2024 ; série à verser dans l'entrepôt -->
+
+### 1970-1992, d'après le *Journal officiel*
+
+| Date d'effet | Structure du tarif | Prix (millimes par kWh) | Texte |
+|---|---|---|---|
+| 1^er^ janvier 1970 | dégressif, selon les heures d'utilisation mensuelle | 45 ; 38 ; 30 ; 25 | arrêté du 7 août 1970 [@arrete-1970-08-07-tarifs-electricite-gaz] |
+| 20 avril 1975 | dégressif, par kVA souscrit : jusqu'à 10 kWh par mois et par kVA, puis au-delà | 45 ; 35 | arrêté du 15 avril 1975 [@arrete-1975-04-15-tarifs-electricite-gaz] |
+| 30 novembre 1978 | éclairage : prix unique ; force motrice : deux tranches | force motrice : 46 ; 42 | arrêté conjoint du 27 novembre 1978 [@arrete-1978-11-27-tarifs-electricite-gaz] |
+| 31 août 1981 | tarif général unique, qui réunit éclairage et force motrice | 58 | arrêté du 1^er^ septembre 1981 [@arrete-1981-09-01-tarifs-electricite-gaz] |
+| 29 septembre 1982 | tarif unique | 61 | arrêté du 30 septembre 1982 [@arrete-1982-09-30-tarifs-electricite-gaz] |
+| 31 mai 1984 | **tranche économique** (jusqu'à 50 kWh par mois, petits abonnements) et tranche normale | 51 ; 70 | arrêté du 4 juin 1984 [@arrete-1984-06-04-tarifs-electricite-gaz] |
+| 16 juin 1987 | idem | 59 ; 72 | arrêté du 8 juin 1987 [@arrete-1987-06-08-tarifs-electricite-gaz] |
+| 1^er^ janvier 1991 | idem | 57 ; 70 | arrêté du 19 décembre 1990 [@arrete-1990-12-19-tarifs-electricite-gaz] |
+| 1^er^ août 1992 | idem | 59 ; 76 | décision du 11 août 1992 [@decision-1992-08-11-tarifs-electricite-gaz] |
+
+: Le tarif de l'électricité en basse tension pour les ménages, 1970-1992, à chaque date d'effet (millimes par kWh). Source : *Journal officiel*. Les prix sont taxes comprises jusqu'en 1987 et hors taxe sur la valeur ajoutée à partir de 1991 : les niveaux ne se comparent pas de part et d'autre. Le prix unique de l'éclairage de 1978 n'est pas établi. La tranche économique est celle des abonnements de 1 à 2 kVA. {#tbl-compensation-eg-grilles-jo}
+
+Trois faits. Jusqu'en 1975, le tarif est dégressif : le kilowattheure coûte moins cher à mesure que l'on consomme. Il devient un prix unique entre 1978 et 1982. Et la **tranche économique** — un prix réduit pour les cinquante premiers kilowattheures des petits abonnés — apparaît dans la grille du 31 mai 1984 : absente des grilles de 1978, 1981 et 1982, c'est sa première apparition établie ici, des arrêtés de 1980 et de janvier 1981 n'étant connus que par leur intitulé. À partir de 1984, le tarif des ménages est donc progressif.
+
+### 1993-avril 2004 : aucune grille
+
+Entre la décision du 11 août 1992 et la grille du 1^er^ mai 2004, aucune grille n'est identifiée ici : ni le nombre ni la date des ajustements de ces onze années ne sont établis. La Banque centrale signale une hausse des tarifs de l'électricité en octobre 1993, sans en donner l'ampleur [@bct-ra-1993]. Entre les deux bornes, la tranche économique passe de 59 à 65 millimes et la tranche normale de 76 à 99.
+
+<!-- RECHERCHE r-tarifs-electricite-grilles-1993-2003 : grilles tarifaires de l'électricité et du gaz en vigueur entre août 1992 et mai 2004 (voir docs/recherches.yml) -->
+
+### 2004-2024, d'après les grilles de la STEG
+
+| Date d'effet | Tranche économique, jusqu'à 50 kWh par mois | Tranches suivantes (kWh par mois : millimes par kWh) | Grille |
+|---|---:|---|---|
+| 1^er^ mai 2004 | 65 | tranche normale : 99 | [@steg-grille-2004-05-01] |
+| 1^er^ janvier 2006 | 68 | petits abonnés au-delà de 50 : 75, puis 114 ; autres : 1-300 : 114 ; 301 et plus : 127 | [@steg-grille-2006-01-01] |
+| 1^er^ septembre 2008 | 74 | 90, puis 131 ; 1-300 : 131 ; 301 et plus : 174 | [@steg-grille-2008-09-01] |
+| 1^er^ juin 2010 | 75 | 92, puis 133 ; 1-300 : 133 ; 301 et plus : 186 | [@steg-grille-2010-06-01] |
+| 1^er^ septembre 2012 | 75 | 92, puis 135 ; 1-300 : 135 ; 301 et plus : 200 | [@steg-grille-2012-09-01] |
+| 1^er^ mai 2014 | 75 | 51-100 : 108 ; 101-200 : 140 — prix unique sur toute la consommation ; au-delà de 200 : 1-200 : 151 ; 201-300 : 184 ; 301-500 : 280 ; 501 et plus : 350 | [@steg-grille-2014-05-01] |
+| 1^er^ janvier 2017 | 75 | 51-100 : 108 ; 101-200 : 162 ; au-delà de 200 : 167 ; 198 ; 285 ; 350 | [@steg-grille-2017-01-01] |
+| 1^er^ septembre 2018 | 75 | 51-100 : 108 ; au-delà de 100 : 1-200 : 176 ; 201-300 : 218 ; 301-500 : 295 ; 501 et plus : 355 | [@steg-grille-2018-09-01] |
+| 1^er^ juin 2019 | 62 | 51-100 : 96 ; au-delà de 100 : 176 ; 218 ; 341 ; 414 | [@steg-grille-2019-06-01] |
+| 1^er^ mai 2022 | 62 | 51-100 : 96 ; puis prix unique selon la tranche atteinte : 101-200 : 176 ; 201-300 : 218 ; 301-500 : 341 ; plus de 500 : 414 | [@steg-grille-2022-05-01] |
+
+: Le tarif de l'électricité en basse tension pour les ménages, 2004-2022, à chaque date d'effet (millimes par kWh, hors taxes). Source : grilles tarifaires de la STEG, chacune portant sa date d'effet. Ces grilles sont transcrites des documents de la STEG conservés aux archives du web ; la transcription reste à confronter, ligne à ligne, aux documents eux-mêmes. La redevance fixe passe de 150 millimes par kVA et par mois en 2004 à 700 depuis 2018. La grille de 2022 est encore en vigueur en 2024, une taxe au profit du Fonds de transition énergétique passant alors de 1 à 5 millimes par kWh. {#tbl-compensation-eg-grilles-steg}
+
+### Trois réformes de structure
+
+Le niveau des prix ne dit pas tout : trois grilles changent la manière de facturer, et donc ce que paie un ménage à consommation donnée.
+
+- **1^er^ mai 2014.** La grille passe de trois prix à six tranches. En deçà de 200 kWh par mois, un prix unique s'applique à toute la consommation ; au-delà, chaque tranche a son prix.
+- **1^er^ septembre 2018.** Le seuil en deçà duquel s'applique le prix unique est ramené de 200 à 100 kWh par mois.
+- **1^er^ mai 2022.** Aucun prix de tranche ne change, mais au-delà de 100 kWh toute la consommation est désormais facturée au prix de la tranche atteinte : un ménage qui franchit un seuil paie le prix supérieur sur l'ensemble de ses kilowattheures, et non sur les seuls kilowattheures qui dépassent.
+
+Entre-temps, la grille du 1^er^ juin 2019 abaisse les tranches basses — de 75 à 62 millimes, de 108 à 96 — et relève les tranches hautes — de 295 à 341, de 355 à 414. Le rapport entre le prix le plus élevé et le prix le plus bas de la grille passe ainsi de moins de deux en 2004 à près de sept depuis 2019 ; ces rapports ne se comparent toutefois pas tels quels d'une date à l'autre, la définition des tranches et le mode de facturation ayant changé en 2006, 2014, 2018 et 2022. Seule une facture type à consommation fixe rend ces réformes comparables.
+
+### Les ajustements datés, 1978-2024
+
+| Date d'effet | Ce qui change | Source |
+|---|---|---|
+| 30 novembre 1978 | prix unique de l'éclairage ; force motrice 46 et 42 | [@arrete-1978-11-27-tarifs-electricite-gaz] |
+| 31 août 1981 | tarif général unique : 58 | [@arrete-1981-09-01-tarifs-electricite-gaz] |
+| 29 septembre 1982 | tarif unique : 61 | [@arrete-1982-09-30-tarifs-electricite-gaz] |
+| 31 mai 1984 | tranche économique à 51 ; tranche normale à 70 | [@arrete-1984-06-04-tarifs-electricite-gaz] |
+| 16 juin 1987 | 59 et 72 | [@arrete-1987-06-08-tarifs-electricite-gaz] |
+| 1^er^ janvier 1991 | 57 et 70, hors taxe sur la valeur ajoutée | [@arrete-1990-12-19-tarifs-electricite-gaz] |
+| 1^er^ août 1992 | 59 et 76 | [@decision-1992-08-11-tarifs-electricite-gaz] |
+| octobre 1993 | hausse des tarifs de l'électricité, ampleur non donnée | BCT [@bct-ra-1993] |
+| 1^er^ mai 2004 ; 1^er^ août 2004 pour le gaz | 65 et 99 | [@steg-grille-2004-05-01] |
+| 1^er^ janvier 2006 | tranche économique de 65 à 68 ; seconde tranche à partir de 301 kWh | [@steg-grille-2006-01-01] |
+| 1^er^ juillet 2007 | +6 % sur l'électricité et le gaz | STEG, rapport annuel [@steg-ra-2007] |
+| 1^er^ décembre 2007 | +6,9 % sur l'électricité ; +8,3 % sur le gaz | STEG, rapport annuel [@steg-ra-2007] |
+| 1^er^ avril 2008 | +7,76 % sur l'électricité ; +13 % sur le gaz | STEG, rapport annuel [@steg-ra-2008] |
+| 1^er^ septembre 2008 | +6,52 % sur l'électricité ; +13 % sur le gaz | STEG, rapport annuel et grille [@steg-ra-2008 ; @steg-grille-2008-09-01] |
+| 1^er^ juin 2010 | nouvelle grille | [@steg-grille-2010-06-01] |
+| 1^er^ septembre 2012 | +8,3 % sur l'électricité ; +8 % sur le gaz | STEG, rapport annuel et grille [@steg-ra-2012 ; @steg-grille-2012-09-01] |
+| 1^er^ mai 2014 | refonte en six tranches | [@steg-grille-2014-05-01] |
+| 1^er^ janvier 2017 | tranche 101-200 kWh de 140 à 162 | [@steg-grille-2017-01-01] |
+| 1^er^ septembre 2018 | seuil du prix unique ramené à 100 kWh ; hausse au-delà de 200 kWh | [@steg-grille-2018-09-01] |
+| 1^er^ juin 2019 | tranches basses abaissées, tranches hautes relevées | [@steg-grille-2019-06-01] |
+| 1^er^ mai 2022 | facturation de toute la consommation au prix de la tranche atteinte | [@steg-grille-2022-05-01] |
+| 1^er^ janvier 2024 | taxe au profit du Fonds de transition énergétique : de 1 à 5 millimes par kWh | [@steg-grille-2022-05-01] |
+
+: Les ajustements datés du tarif de l'électricité en basse tension, 1978-2024, et leur ampleur quand la source la donne. Sources : *Journal officiel* jusqu'en 1992 ; grilles et rapports annuels de la STEG depuis 2004 ; BCT pour 1993. Aucun ajustement n'est établi entre octobre 1993 et mai 2004. Les ajustements de 2007 et d'avril 2008 sont connus par leur pourcentage, non par leur grille. Pour 2010, la grille de la STEG porte la date d'effet du 1^er^ juin, alors que son rapport annuel écrit qu'il n'y a pas eu d'ajustement tarifaire cette année-là : les deux pièces ne s'accordent pas [@steg-ra-2010]. {#tbl-compensation-eg-ajustements}
+
+La chronologie se rapproche de celle des carburants (@tbl-compensation-ajustements) : quatre hausses en quatorze mois en 2007-2008 ; puis, à partir de 2014, une série de refontes qui concentrent les hausses sur les fortes consommations.
+
+### Le gaz
+
+Le gaz naturel distribué en basse pression suit la même évolution : un prix unique publié au *Journal officiel* jusqu'en 1992, puis des tranches dans les grilles de la STEG.
+
+| Date d'effet | Tarif (millimes par thermie) | Source |
+|---|---|---|
+| 16 juin 1987 | 14 | [@arrete-1987-06-08-tarifs-electricite-gaz] |
+| 1^er^ janvier 1991 | 13,7 | [@arrete-1990-12-19-tarifs-electricite-gaz] |
+| 1^er^ août 1992 | 15,1 | [@decision-1992-08-11-tarifs-electricite-gaz] |
+| 1^er^ septembre 2008 | trois tranches : 22,09 ; 25,10 ; 26,30 | [@steg-grille-2008-09-01] |
+| 1^er^ juin 2010 | 22,40 ; 25,60 ; 27,00 | [@steg-grille-2010-06-01] |
+| 1^er^ mai 2014 | quatre tranches : 23,5 ; 29,5 ; 36,0 ; 42,2 | [@steg-grille-2014-05-01] |
+| 1^er^ janvier 2017 | 24,3 ; 30,5 ; 39,4 ; 46,2 | [@steg-grille-2017-01-01] |
+| 1^er^ septembre 2018 | ménages : 24,3 ; 32,5 ; 42,4 ; 53,0 | [@steg-grille-2018-09-01] |
+| 1^er^ juin 2019 | ménages : 24,3 ; 35,8 ; 47,0 ; 58,6 | [@steg-grille-2019-06-01] |
+| 1^er^ mai 2022 | ménages : 24,3 ; 38,7 ; 58,5 ; 86,7 | [@steg-grille-2022-05-01] |
+
+: Le tarif du gaz naturel en basse pression, 1987-2022, à chaque date d'effet connue (millimes par thermie). Sources : *Journal officiel* jusqu'en 1992 (taxe à la production comprise en 1987) ; grilles de la STEG ensuite, hors taxes, transcrites des documents de l'entreprise comme au @tbl-compensation-eg-grilles-steg. Les grilles de 2004 et de 2006, exprimées par mètre cube, et celle de mars 2013 ne sont pas reprises. À partir de 2018, les grilles distinguent les ménages des autres abonnés. {#tbl-compensation-eg-gaz}
+
+Depuis 2014, la première tranche ne bouge presque plus — de 23,5 à 24,3 millimes la thermie —, tandis que la dernière double, de 42,2 à 86,7 : comme pour l'électricité, les hausses portent sur les fortes consommations.
+
+<!-- TODO (documentaliste) : grilles de la moyenne et de la haute tension (1975-2022) et du gaz en moyenne et haute pression, relevées dans docs/notes/compensation-tarifs-electricite-gaz.md, § (ii), non reprises ici ; taxe sur la valeur ajoutée, surtaxe municipale et taxe du Fonds de transition énergétique à reconstituer pour la facture type ; grille du 1er janvier 2014 et grille résidentielle de mars 2013 non identifiées ; contradiction de juin 2010 à trancher ; étude ANER de 2000, collectée, à lire pour 1993-2000. -->
+
+## Prix de vente moyen et coût de revient {#sec-compensation-eg-cout}
+
+Deux sources officielles mettent en regard ce que l'électricité coûte et ce qu'elle est vendue. Elles ne couvrent pas les mêmes années et ne se raccordent pas.
+
+### 2008-2012, selon le rapport de contrôle de 2014
+
+Le rapport de contrôle du 21 juillet 2014 décompose l'écart entre le coût du kilowattheure et son prix de vente, et dit quelle part en couvre chaque étage de la subvention (@sec-compensation-circuit).
+
+| Millimes par kWh | 2008 | 2009 | 2010 | 2011 | 2012 |
+|---|---:|---:|---:|---:|---:|
+| Coût unitaire (production, transport, distribution) | 179 | 150,4 | 180,1 | 211,6 | 259,6 |
+| Prix de vente moyen, toutes tensions | 113,4 | 121 | 125,3 | 129,2 | 133,0 |
+| Écart | −65,6 | −29,4 | −54,8 | −82,4 | −126,6 |
+| Couvert par le soutien indirect | 50,7 | 26,9 | 36,4 | 50,3 | 78,9 |
+| Couvert par le soutien direct | 11 | 0 | 15,4 | 26,2 | 40,9 |
+| Reste à la charge de la STEG | −3,9 | −2,5 | −3 | −5,9 | −6,8 |
+
+: Le coût et le prix de vente du kilowattheure, et ce que couvre la subvention, 2008-2012 (millimes par kWh). Source : rapport de contrôle du 21 juillet 2014 [@minfin-compensation-carburants-2014, p. 73-74]. {#tbl-compensation-eg-cout-2008-2012}
+
+De 2008 à 2012, le coût du kilowattheure passe de 179 à 259,6 millimes et son prix de vente moyen de 113,4 à 133,0 : en 2012, le soutien représente près de la moitié du coût. Le rapport l'attribue, pour l'ensemble de la période 2007-2013, à la hausse du prix des combustibles, au cours du dollar et à la consommation [@minfin-compensation-carburants-2014, p. 72]. L'essentiel de l'écart est couvert par le soutien indirect, c'est-à-dire par le prix de cession préférentiel du gaz.
+
+### Depuis 2017, selon l'Observatoire national de l'énergie
+
+L'Observatoire national de l'énergie et des mines publie chaque année, dans ses *Chiffres clés*, le prix de vente global hors taxes et le coût de revient de l'électricité et du gaz. Ces données sont dites « provisoires avant audit » [@one-chiffres-cles-energie].
+
+| Année | Électricité : prix de vente (millimes par kWh) | Électricité : coût de revient | Gaz : prix de vente (dinars par tonne équivalent pétrole) | Gaz : coût de revient |
+|---|---:|---:|---:|---:|
+| 2017 | | | 460,4 | 638,1 |
+| 2018 | | | 508,0 | 864,3 |
+| 2019 | 244,0 | | 600,2 | |
+| 2020 | 248,6 | | 616,0 | |
+| 2021 | 244,8 | | 609,1 | |
+| 2022 | 272,6 | 471,9 | 642,9 | 1 545,9 |
+| 2023 | 288,2 | 472,2 | 660,1 | 1 777,9 |
+| 2024 | 290,4 | 480,9 | 647,4 | 1 622,8 |
+| 2025 | 290,7 | 456,3 | 645,2 | 1 497,7 |
+
+: Le prix de vente global hors taxes et le coût de revient de l'électricité et du gaz, 2017-2025. Source : Observatoire national de l'énergie et des mines, *Chiffres clés de l'énergie*, éditions 2018 à 2025, données provisoires avant audit [@one-chiffres-cles-energie]. Une case vide est une valeur que la publication ne donne pas ou qui n'est pas établie ici. Les éditions successives révisent certaines valeurs d'une décimale. {#tbl-compensation-eg-cout-one}
+
+De 2022 à 2025, l'électricité est vendue entre 58 % et 64 % de son coût de revient selon ces données, et le gaz à moins de la moitié. L'Observatoire précise que ce « résultat unitaire » est le « différentiel entre le prix de vente et le coût de revient » et qu'il « n'est pas forcément identique à la subvention budgétaire » : l'écart du tableau ne se lit donc pas comme la subvention versée à la STEG.
+
+## Le lien avec la compensation {#sec-compensation-eg-lien}
+
+Le budget subventionne l'électricité et le gaz par la ligne « carburants », dont la STEG reçoit une part variable : 250 millions de dinars (MD) en 2010, 850 MD en 2012, 53 MD en 2014, puis 858 MD en 2015, soit alors 93 % de la ligne (@tbl-compensation-carburants-beneficiaires). Jusqu'en 2014, elle reçoit en outre son gaz à un [prix de cession préférentiel](#g-prix-de-cession-preferentiel), avantage qui n'est inscrit nulle part en dépense : c'est la [subvention indirecte](#g-subvention-indirecte) (@sec-compensation-cout-economique).
+
+Les comptes de la STEG permettent un rapprochement, que le tableau suivant pose sans le pousser au-delà de ce que les pièces établissent.
+
+| Année | Subvention à la STEG selon le rapport de contrôle de 2014 : directe | Idem : indirecte | Idem : totale | Ligne budgétaire versée à la STEG | « Subvention d'exploitation » aux comptes de la STEG |
+|---|---:|---:|---:|---:|---:|
+| 2010 | 330 | 778,3 | 1 108,3 | 250 | 1 108,3 |
+| 2011 | 570 | 1 100,8 | 1 670,8 | 540 | 1 670,9 |
+| 2012 | 940 | 1 793,7 | 2 733,7 | 850 | 2 733,7 |
+| 2015 | | | | 858 | 858,0 |
+
+: La subvention à la STEG selon trois pièces, 2010-2012 et 2015 (millions de dinars courants). Sources : rapport de contrôle du 21 juillet 2014, tableau par entreprise [@minfin-compensation-carburants-2014, p. 9 et 72] ; pour la ligne budgétaire, @tbl-compensation-carburants-beneficiaires ; pour la subvention d'exploitation, états de résultat des rapports annuels de la STEG [@steg-ra-2010 ; @steg-ra-2011 ; @steg-ra-2012 ; @steg-ra-2015]. Les montants du rapport de contrôle sont établis sur ses tableaux ; ceux des rapports annuels de la STEG sont repris de leur texte et restent à confronter aux pages des documents. Le rapport de contrôle ne couvre pas 2015. {#tbl-compensation-eg-rapprochement}
+
+De 2010 à 2012, la « subvention d'exploitation » que portent les comptes de la STEG est égale, à un dixième de million près, à la subvention totale — directe et indirecte — que calcule le rapport de contrôle : 2 733,7 MD dans les deux pièces en 2012. Elle dépasse de loin la ligne budgétaire versée à l'entreprise, 850 MD cette année-là. En 2015, première année où la STEG achète son gaz au prix mondial (@sec-compensation-rupture-2015), la subvention d'exploitation de ses comptes coïncide au contraire avec la ligne budgétaire : 858 MD.
+
+Avant 2015, les comptes de la STEG retracent donc un montant égal à la subvention totale, et non la seule subvention versée par le budget ; après 2015, les deux se confondent. C'est, vu depuis l'entreprise, le même élargissement de périmètre que celui de la ligne « carburants ». Le traitement comptable qui produit cette égalité n'est pas établi ici : les notes aux états financiers de la STEG ne sont pas exploitées, et la série de la subvention d'exploitation n'est pas reprise au-delà de ces quatre années.
+
+<!-- TODO (documentaliste) : confronter aux pages des rapports annuels de la STEG (2007-2021) la « subvention d'exploitation » de leurs états de résultat, lire les notes aux états financiers qui la définissent, puis décider de publier la série entière (docs/notes/compensation-tarifs-electricite-gaz.md, § (ii) et (viii)) ; répartition de la ligne « carburants » entre STIR et STEG de 2022 à 2025 d'après les rapports sur le budget de l'État, à verser avant citation (docs/notes/compensation-archives-energie.md, § 1.1 a). -->
