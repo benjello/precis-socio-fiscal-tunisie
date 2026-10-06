@@ -24,6 +24,8 @@ index.html
 index_files/
 a-propos.html
 a-propos_files/
+annexe-pib.html
+annexe-pib_files/
 **/.quarto/
 **/public/
 *.log
@@ -33,6 +35,7 @@ pdf_fetcher_shs.md
 
 # Artefacts de build des figures
 precis/*/*/_fig/
+precis/*/_fig/
 precis/*/*/_demo_*.html
 precis/*/*/_demo_*_files/
 .zotero-schema.json

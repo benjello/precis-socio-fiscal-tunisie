@@ -3117,6 +3117,30 @@ deux langues (comme les autres entrées du livre) :
 - [ ] Doublon de clé à trancher : la LF 1991 (loi n° 90-111) porte `lf-1991` en fiscalité et `loi-90-111-lf-1991` en prestations sociales.
 - [ ] Le `dry-run` et le `controle-rangement` du workflow `biblio-zotero` restent à lancer après poussée de la branche (branche locale).
 
+## Passe « Annexe du site — le PIB et ses changements de base » (06/10/2026) — À REPORTER DANS ZOTERO
+
+Note documentaire : `docs/notes/annexe-pib.md`, § 7. Page : `precis/fr/annexe-pib.qmd`, qui lit
+`references.json`, `retraites/references.json` et `remunerations_publiques/references.json`.
+
+- [ ] Nouvelles, fonds commun `precis/{fr,ar}/references.json` (provisoires jusqu'au
+  rapatriement, feu vert requis) : `ins-changement-base-2015`, `ins-pib-base-2015-2010-2020`,
+  `imf-tunisia-art4-2010`. Reprises des ébauches de la note, à deux écarts près, imposés par
+  `push_biblio.py --verifier` : le champ `language` est retiré (non restitué par Zotero), et le
+  numéro du rapport du FMI (`number` : 10/282, non restitué) est porté en tête de la note.
+- [ ] `imf-tunisia-art4-2020` (rémunérations publiques) : c'est le rapport n° 21/44, dont le
+  titre imprimé est « 2021 Article IV Consultation » (février 2021), non « 2020 ».
+- [x] `undata-sna`, `wb-wdi` : remontées des retraites au fonds commun le 6 octobre 2026
+  (entrées inchangées ; `wb-wdi` identique à celle de la branche de la compensation). Dans
+  Zotero : les ranger dans la collection commune.
+- [ ] `bct-ra` (retraites, rémunérations publiques, marché du travail) : à remonter au fonds
+  commun ; `undata-sna` ne vise que le tableau 4.1, l'annexe emploie aussi les tableaux 1.1 et
+  1.2 ; `wb-wdi` gagnerait la mention des métadonnées du pays et de l'indicateur de croissance
+  en volume (NY.GDP.MKTP.KD.ZG).
+- [ ] `minfin-indicateurs-fp` : URL générique, à préciser.
+- [ ] Les pages citées dans l'annexe sont celles des fichiers PDF, non les folios imprimés :
+  à convertir si l'on veut des folios.
+- [ ] Titres arabes des deux entrées de l'INS : à valider par le relecteur-ar.
+
 ## Passe « Fiscalité — dépenses fiscales et régimes d'incitation » (06/10/2026) — À REPORTER DANS ZOTERO
 
 Note documentaire : `docs/notes/fiscalite-depenses-fiscales.md` (§ 5). Chapitre à venir :
