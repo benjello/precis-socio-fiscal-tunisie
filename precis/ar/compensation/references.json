@@ -281,7 +281,7 @@
       },
       "URL": "http://www.cres.tn/uploads/tx_wdbiblio/rapport_impact_des_subvention_01.pdf",
       "title-short": "INS, Impact des subventions alimentaires (2013)",
-      "note": "citation-key: ins-cres-bad-2013-subventions\nTitre, éditeur et date (« Copyright © Institut National de la statistique, Juin 2013 ») lus sur la couche texte de la page de titre le 6 octobre 2026 ; 52 pages. Les remerciements disent que le rapport a été réalisé « sous la Haute direction de l'Institut National de la Statistique en collaboration avec le Centre de Recherche et d'Études sociales [CRES] et l'appui technique de la Banque africaine de développement [BAD] » : l'INS est l'auteur retenu, le CRES et la BAD sont cités ici. Données : enquête nationale sur le budget, la consommation et le niveau de vie des ménages de 2010. Chiffres utilisés d'après la note documentaire (docs/notes/compensation.md, § 3), lus sur couche texte nette. URL servie en HTTP seulement (200, application/pdf, 1 168 269 octets le 6 octobre 2026) ; HTTPS refuse la connexion. Consulté le 6 octobre 2026."
+      "note": "citation-key: ins-cres-bad-2013-subventions\nTitre, éditeur et date (« Copyright © Institut National de la statistique, Juin 2013 ») lus sur la couche texte de la page de titre le 6 octobre 2026 ; 52 pages. Les remerciements disent que le rapport a été réalisé « sous la Haute direction de l'Institut National de la Statistique en collaboration avec le Centre de Recherche et d'Études sociales [CRES] et l'appui technique de la Banque africaine de développement [BAD] » : l'INS est l'auteur retenu, le CRES et la BAD sont cités ici. Données : enquête nationale sur le budget, la consommation et le niveau de vie des ménages de 2010. Chiffres utilisés d'après la note documentaire (docs/notes/compensation.md, § 3), lus sur couche texte nette. URL servie en HTTP seulement (200, application/pdf, 1 168 269 octets le 6 octobre 2026) ; HTTPS refuse la connexion. Consulté le 6 octobre 2026. ÉCHANTILLON ET MÉTHODE (note compensation-etudes-incidence-calculs, § D) : enquête nationale de 2010 sur le budget, la consommation et le niveau de vie : volet budgétaire 11 281 ménages ; volet « accès aux services » (module III) 5 690 ménages, « soit la moitié » (p. 40) ; prix de vente et prix de revient des produits de base fournis par le ministère du Commerce (annexe 1, p. 49) ; subvention reçue = quantité consommée × (prix de revient − prix de vente) à panier constant (annexe 1, p. 49) ; quintiles de dépense par tête ; indices de ciblage, pp. 22-25 ; effet immédiat de la suppression, pp. 32-33 (revenu nominal fixe, consommation inchangée : l'étude écrit qu'il « surestime ») ; effet après adaptation, pp. 35-36 et annexe 2, p. 50 (système de demande quadratique presque idéal, QAIDS) ; solde « hors ménages » (262 MD, 22,8 % ; p. 19) ; la répartition 9,2 / 60,5 / 7,5 / 22,8 % du budget de la Caisse ne définit nulle part les classes « moyenne » et « aisée ». Deux inversions de chiffres dans les tableaux 2 et 5 (78,231 pour 87,231 ; 46,777 pour 64,777)."
     },
     {
       "id": "minfin-finances-publiques-2005",
@@ -1786,7 +1786,7 @@
       "publisher": "Institut national de la statistique",
       "publisher-place": "Tunis",
       "title-short": "INS, Annuaire statistique",
-      "note": "citation-key: ins-annuaire-statistique-prix-detail\nÉditions 1995-2001 à 2019-2023 (vingt-deux éditions). Édition française consultée (édition arabe non examinée). Tableau « Évolution des prix de détail à Tunis (moyenne des 12 mois) », n° 13.4 (éditions 1995-2001 et 2000-2004) puis 13.3 (édition 2010-2014) ; moyennes annuelles de l'essence, du pétrole lampant et de la bouteille de gaz, 1995-2023 ; le gasoil n'y figure pas. Preuve : couche texte, chaque année recoupée sur plusieurs éditions ; une page relue à l'image (édition 2010-2014, p. 216). Rupture de série : « essence normale » jusqu'à l'édition 2001-2005, « essence super » à partir de 2003-2007 (l'édition 2002-2006 garde le libellé « normale » avec les valeurs du super). Vingt-deux éditions locales sous tunisia-data/data/raw/ins-publications/annuaire-statistique/<édition>.pdf (ignoré par git) : 1995-2001 (1 216 262 octets, SHA-256 eac888e3caf5945b256a71aec83d6ec5e019e006f2a34617c8dd6445a9eabd88) ; 1998-2002 (5 373 116 octets, SHA-256 aac92939d8825e366fe60bda16c849fccb8c63e158b1f5b282c3d37231a71322) ; 1999-2003 (5 389 422 octets, SHA-256 bc4a0e208f80ea1ef7e0c500a12da74b829a36a12cc50c0e5bf9aca8454a5572) ; 2000-2004 (7 153 680 octets, SHA-256 5ebc485dbac7666f9fdd681568e67c2b4932adc48d485a2367288e3bef199b4b) ; 2001-2005 (6 044 422 octets, SHA-256 6e40d76892fccf3eeda3dd7c4a1d6bf6aa4e1669ff3addc0f6e756f77835baad) ; 2002-2006 (7 462 965 octets, SHA-256 e52fa905eed23bae248fe261bfd2fb0da54d08b41e971c75f861823f1b2aac21) ; 2003-2007 (5 751 529 octets, SHA-256 a393b827e83fe9204636cda7867fa88e4245c11d569fc22528676b6bae156c77) ; 2004-2008 (5 506 607 octets, SHA-256 c89dfba64e56962a72584772e548a031e3d9f7ed79f7eccf7d4b75c14eb5a612) ; 2005-2009 (4 447 228 octets, SHA-256 daa4ca794de60f84c6f9e740e708e7644a3f41e38a3f6134fab3b6b180dc1ba0) ; 2006-2010 (3 491 652 octets, SHA-256 b15d046a5aec7fb5ab9eb688cb8f173a0159ebac02f62599bc106e9c81f7acc1) ; 2007-2011 (3 801 088 octets, SHA-256 de500e9765951cd88e8c4db9aa50d3f5ed1e8424bebb6f11c3c57aab9ad94cd3) ; 2008-2012 (3 612 220 octets, SHA-256 d3caceb2d62c9cb4c37cfc6df6ce011f7ff5b43f9b93da555f9d0b7d24bf6782) ; 2010-2014 (19 969 503 octets, SHA-256 efac7f5fb5d339401427483e2f7d35b2c690a76a8659a3723bc9310008d69288) ; 2011-2015 (16 362 891 octets, SHA-256 d8fea8cb507c2dc20b7134a359885333abf5a737d570d5c023609d1f04c01d46) ; 2012-2016 (20 572 415 octets, SHA-256 85444af31e0145a506d86f96a5751422fbbb58a742b651270f7850bf53f04baa) ; 2013-2017 (8 307 984 octets, SHA-256 43c1aef356d7684b642ed1484594e8c5e5284cc73fb6105ade874a8659d4867e) ; 2014-2018 (8 498 678 octets, SHA-256 69689afcc20cbedc96c3dc76ac9ffec169e109a60205798e280a4537e92757fb) ; 2015-2019 (13 243 784 octets, SHA-256 f3038fd63d998ac6eeb188ba3273e8f0796306bab856fe4a4a8af94a39543457) ; 2016-2020 (15 736 540 octets, SHA-256 2298535903bdaf6a3dbb0ec7d5445fd39042f7e39fd0dba415430824e7833b43) ; 2017-2021 (6 921 818 octets, SHA-256 e07019f232590f9f207caa72faf710792fe5b79be8f54fcfcd96da403d57f78d) ; 2018-2022 (16 207 125 octets, SHA-256 396abf395a1cde97a38b37a6398e51f364399280391011e7f3921c59d94855be) ; 2019-2023 (16 233 493 octets, SHA-256 45ee5d23797e9cae1de2181c9c6def84b998dc136939689dcb5cd8fe79e77012). Adresse de téléchargement sur ins.tn non vérifiée : URL laissée vide (TODO)."
+      "note": "citation-key: ins-annuaire-statistique-prix-detail\nÉditions 1995-2001 à 2019-2023 (vingt-deux éditions). Édition française consultée (édition arabe non examinée). Tableau « Évolution des prix de détail à Tunis (moyenne des 12 mois) », n° 13.4 (éditions 1995-2001 et 2000-2004) puis 13.3 (édition 2010-2014) ; moyennes annuelles de l'essence, du pétrole lampant et de la bouteille de gaz, 1995-2023 ; le gasoil n'y figure pas. Preuve : couche texte, chaque année recoupée sur plusieurs éditions ; une page relue à l'image (édition 2010-2014, p. 216). Rupture de série : « essence normale » jusqu'à l'édition 2001-2005, « essence super » à partir de 2003-2007 (l'édition 2002-2006 garde le libellé « normale » avec les valeurs du super). Vingt-deux éditions locales sous tunisia-data/data/raw/ins-publications/annuaire-statistique/<édition>.pdf (ignoré par git) : 1995-2001 (1 216 262 octets, SHA-256 eac888e3caf5945b256a71aec83d6ec5e019e006f2a34617c8dd6445a9eabd88) ; 1998-2002 (5 373 116 octets, SHA-256 aac92939d8825e366fe60bda16c849fccb8c63e158b1f5b282c3d37231a71322) ; 1999-2003 (5 389 422 octets, SHA-256 bc4a0e208f80ea1ef7e0c500a12da74b829a36a12cc50c0e5bf9aca8454a5572) ; 2000-2004 (7 153 680 octets, SHA-256 5ebc485dbac7666f9fdd681568e67c2b4932adc48d485a2367288e3bef199b4b) ; 2001-2005 (6 044 422 octets, SHA-256 6e40d76892fccf3eeda3dd7c4a1d6bf6aa4e1669ff3addc0f6e756f77835baad) ; 2002-2006 (7 462 965 octets, SHA-256 e52fa905eed23bae248fe261bfd2fb0da54d08b41e971c75f861823f1b2aac21) ; 2003-2007 (5 751 529 octets, SHA-256 a393b827e83fe9204636cda7867fa88e4245c11d569fc22528676b6bae156c77) ; 2004-2008 (5 506 607 octets, SHA-256 c89dfba64e56962a72584772e548a031e3d9f7ed79f7eccf7d4b75c14eb5a612) ; 2005-2009 (4 447 228 octets, SHA-256 daa4ca794de60f84c6f9e740e708e7644a3f41e38a3f6134fab3b6b180dc1ba0) ; 2006-2010 (3 491 652 octets, SHA-256 b15d046a5aec7fb5ab9eb688cb8f173a0159ebac02f62599bc106e9c81f7acc1) ; 2007-2011 (3 801 088 octets, SHA-256 de500e9765951cd88e8c4db9aa50d3f5ed1e8424bebb6f11c3c57aab9ad94cd3) ; 2008-2012 (3 612 220 octets, SHA-256 d3caceb2d62c9cb4c37cfc6df6ce011f7ff5b43f9b93da555f9d0b7d24bf6782) ; 2010-2014 (19 969 503 octets, SHA-256 efac7f5fb5d339401427483e2f7d35b2c690a76a8659a3723bc9310008d69288) ; 2011-2015 (16 362 891 octets, SHA-256 d8fea8cb507c2dc20b7134a359885333abf5a737d570d5c023609d1f04c01d46) ; 2012-2016 (20 572 415 octets, SHA-256 85444af31e0145a506d86f96a5751422fbbb58a742b651270f7850bf53f04baa) ; 2013-2017 (8 307 984 octets, SHA-256 43c1aef356d7684b642ed1484594e8c5e5284cc73fb6105ade874a8659d4867e) ; 2014-2018 (8 498 678 octets, SHA-256 69689afcc20cbedc96c3dc76ac9ffec169e109a60205798e280a4537e92757fb) ; 2015-2019 (13 243 784 octets, SHA-256 f3038fd63d998ac6eeb188ba3273e8f0796306bab856fe4a4a8af94a39543457) ; 2016-2020 (15 736 540 octets, SHA-256 2298535903bdaf6a3dbb0ec7d5445fd39042f7e39fd0dba415430824e7833b43) ; 2017-2021 (6 921 818 octets, SHA-256 e07019f232590f9f207caa72faf710792fe5b79be8f54fcfcd96da403d57f78d) ; 2018-2022 (16 207 125 octets, SHA-256 396abf395a1cde97a38b37a6398e51f364399280391011e7f3921c59d94855be) ; 2019-2023 (16 233 493 octets, SHA-256 45ee5d23797e9cae1de2181c9c6def84b998dc136939689dcb5cd8fe79e77012). Adresse de téléchargement sur ins.tn non vérifiée : URL laissée vide (TODO). Édition 2001, tableau 13.4, p. 195 : prix de détail de l'électricité et du gaz de ville (couche texte) ; INS, famille officielle."
     },
     {
       "id": "one-chiffres-cles-energie",
@@ -1834,7 +1834,7 @@
         ]
       },
       "title-short": "ONE, Conjoncture énergétique",
-      "note": "citation-key: one-conjoncture-energetique\nPublication mensuelle ; numéros lus : 2017, décembre 2019, fin juillet 2026. Tableau « Produits pétroliers : prix import, prix de cession, prix de vente », avec la date du prix en vigueur. Numéro de fin juillet 2026 (« prix de vente en vigueur au public à partir du 24/11/2022 ») : https://www.energiemines.gov.tn/fileadmin/docs-u1/Conjoncture_%C3%A9nerg%C3%A9tique__fin_juillet_2026.pdf, téléchargé le 6 octobre 2026, copie tunisia-data/data/raw/banque-mondiale-rapports/one_conjoncture_2026_07.pdf (4 938 946 octets, 40 p., SHA-256 3677c82247de310bd57f4289703708cc496aae883c14d5d29f3502855ddc8b5d). Numéros de septembre, octobre et décembre 2017 et de décembre 2019 : lus par le documentaliste, adresses non conservées dans la note, copies locales absentes (TODO). Numéros de 2016, 2018 et de janvier à août 2017 : non trouvés à la page des publications. Preuve : couche texte. Page des publications consultée en français ; édition arabe non examinée. STRUCTURE DES PRIX : de septembre 2015 à janvier 2020, le tableau « Produits pétroliers » de chaque numéro donne prix moyen d'import, prix de cession (« sortie de raffinerie Bizerte par voie terrestre ») et prix de vente, avec la date de la structure en vigueur ; à partir de février 2020, aussi « droits et taxes » (droit de consommation, RPD, TVA) et « divers et marges ». 56 numéros de 2015 à 2021 sont conservés sous tunisia-data/data/raw/banque-mondiale-rapports/one_conjoncture_AAAA_MM.pdf (empreintes dans tunisia-data ; liste de téléchargement de la collecte du 6 octobre 2026). Preuve : relevé automatique de la couche texte, contrôlé à la lecture sur une dizaine de numéros, NON relu à l'image ; les numéros de mars à mai 2015 et de novembre 2015 à mars 2016 n'ont pas livré de tableau ; en février et mai 2020 la colonne « prix de cession » est absente ; l'écart « import − cession » (subvention unitaire avant taxes, base STIR) est un CALCUL sur composantes publiées."
+      "note": "citation-key: one-conjoncture-energetique\nPublication mensuelle ; numéros lus : 2017, décembre 2019, fin juillet 2026. Tableau « Produits pétroliers : prix import, prix de cession, prix de vente », avec la date du prix en vigueur. Numéro de fin juillet 2026 (« prix de vente en vigueur au public à partir du 24/11/2022 ») : https://www.energiemines.gov.tn/fileadmin/docs-u1/Conjoncture_%C3%A9nerg%C3%A9tique__fin_juillet_2026.pdf, téléchargé le 6 octobre 2026, copie tunisia-data/data/raw/banque-mondiale-rapports/one_conjoncture_2026_07.pdf (4 938 946 octets, 40 p., SHA-256 3677c82247de310bd57f4289703708cc496aae883c14d5d29f3502855ddc8b5d). Numéros de septembre, octobre et décembre 2017 et de décembre 2019 : lus par le documentaliste, adresses non conservées dans la note, copies locales absentes (TODO). Numéros de 2016, 2018 et de janvier à août 2017 : non trouvés à la page des publications. Preuve : couche texte. Page des publications consultée en français ; édition arabe non examinée. STRUCTURE DES PRIX : de septembre 2015 à janvier 2020, le tableau « Produits pétroliers » de chaque numéro donne prix moyen d'import, prix de cession (« sortie de raffinerie Bizerte par voie terrestre ») et prix de vente, avec la date de la structure en vigueur ; à partir de février 2020, aussi « droits et taxes » (droit de consommation, RPD, TVA) et « divers et marges ». 56 numéros de 2015 à 2021 sont conservés sous tunisia-data/data/raw/banque-mondiale-rapports/one_conjoncture_AAAA_MM.pdf (empreintes dans tunisia-data ; liste de téléchargement de la collecte du 6 octobre 2026). Preuve : relevé automatique de la couche texte, contrôlé à la lecture sur une dizaine de numéros, NON relu à l'image ; les numéros de mars à mai 2015 et de novembre 2015 à mars 2016 n'ont pas livré de tableau ; en février et mai 2020 la colonne « prix de cession » est absente ; l'écart « import − cession » (subvention unitaire avant taxes, base STIR) est un CALCUL sur composantes publiées. RELECTURE À L'IMAGE (note compensation-structure-prix-relue, 6 octobre 2026) : 78 numéros de septembre 2015 à juillet 2026, 468 lignes (78 numéros × 6 produits), page du tableau rendue à 140 ppp, recadrée et lue ligne à ligne ; niveau « image lue ». Le relevé automatique antérieur comptait 1 ligne fausse sur 288 (fuel lourd, février 2020 : décalage d'une colonne), soit 4 valeurs sur 1 023 comparées ; sept numéros (mars, avril, mai, novembre, décembre 2015 ; janvier, mars 2016) ne contiennent pas le tableau. Numéros de 2023 à 2026 lus par sondage (8) : la structure du 24 novembre 2022 n'a pas changé. Lacunes du corpus : juin à août 2015, octobre 2015, février, mai à juillet 2016, juin à août 2017, janvier à juin 2018. 29 numéros nouveaux téléchargés le 6 octobre 2026 et rangés sous tunisia-data/data/raw/banque-mondiale-rapports/ (ignoré par git, aucun fichier écrasé), nom : origine ; SHA-256 : one_conjoncture_2020_03.pdf : capture Wayback 20211229000851, Conjoncture_%C3%A9nerg%C3%A9tique_Mars_2020.pdf, e3e3f43e2e08a38c5e8349f95021c8559bd7dbda1fdca42d6f2e89d3ff3d6d17 ; one_conjoncture_2020_06.pdf : capture Wayback 20220302190027, Conjoncture_%C3%A9nerg%C3%A9tique_juin_2020.pdf, 564ca3b3e2db656d7bf1c18d554735f2ad73413ea54f8110eae7570a9aec41c9 ; one_conjoncture_2020_07.pdf : capture Wayback 20220308102429, Conjoncture_%C3%A9nerg%C3%A9tique_juillet_2020.pdf, 09031aee935a01f1cd22846cfa1e21b55336f7644b9132a30a12bbdba0fd0869 ; one_conjoncture_2020_08.pdf : capture Wayback 20220308102612, Conjoncture_%C3%A9nerg%C3%A9tique_ao%C3%BBt_2020_FR.pdf, 6067449d2fb89797b255ee3048845987f0acfdab70e065d499ed02658c810cde ; one_conjoncture_2020_09.pdf : capture Wayback 20220302065850, Conjoncture_%C3%A9nerg%C3%A9tique_septembre_2020__fr_.pdf, 27b298fc7d62afbe949751d49c756480bb4ef015590fd87c7f8781fcf603c730 ; one_conjoncture_2020_10.pdf : capture Wayback 20220308102355, Conjoncture_%C3%A9nerg%C3%A9tique_octobre_2020_FR.pdf, baa25149d1db19f28f43c2857307637600934a5e929bbf560ea98b3caf1d0a82 ; one_conjoncture_2020_11.pdf : capture Wayback 20220302070135, Conjoncture_%C3%A9nerg%C3%A9tique_novembre_2020_Fr.pdf, e464548c584f54cf344f5219817b5b120b331df765b5543081c6ad6b29b7572b ; one_conjoncture_2021_03.pdf : capture Wayback 20220302065952, Conjoncture_%C3%A9nerg%C3%A9tique_mars_2021_Fr.vf.pdf, e14cf97f771787bd790ea97425694b528c71505b4c2f53c4cd6796882abac788 ; one_conjoncture_2021_05.pdf : capture Wayback 20220302070226, Conjoncture_%C3%A9nerg%C3%A9tique_mai_2021-_Fr.pdf, 7181b735e2d2b4c1e573d120426b0b303ca2bdb585703e3e58c8cbd7c3bf38c2 ; one_conjoncture_2021_11.pdf : capture Wayback 20220302185956, Conjoncture_%C3%A9nerg%C3%A9tique_novembre_2021.pdf, 58b8b185927053d7c66a7ec1bc8fe266aebcb1c00e16740ad5abdd9208d850c9 ; one_conjoncture_2022_01.pdf : capture Wayback 20220630201424, Conjoncture_%C3%A9nerg%C3%A9tique_Janvier_2022_Fr.pdf, b0da8a8198df4563aa955d74f05babe496cd3cb3438274ff4f4734677ae3712c ; one_conjoncture_2022_02.pdf : capture Wayback 20220416080258, Conjoncture_%C3%A9nerg%C3%A9tique_f%C3%A9vrier_2022-Fr.pdf, 927184c4ec5c0424c68022c98532ac98d8657723a58682a7d63bf30aefc9d282 ; one_conjoncture_2022_03.pdf : capture Wayback 20220630201416, Conjoncture_%C3%A9nerg%C3%A9tique_mars_2022-Fr.pdf, 106fbd79758e5620b8c80bfee6940ed8b87b8542790acf4ea4c0e66505e5dc69 ; one_conjoncture_2022_04.pdf : capture Wayback 20220621050601, Conjoncture_%C3%A9nerg%C3%A9tique__avril_2022-Fr.pdf, f6dc25e41e693da552fe42d87d1cc4be91f99398da81fc90a20324305daa1866 ; one_conjoncture_2022_05.pdf : site du ministère, 2026-10-06, Conjoncture_%C3%A9nerg%C3%A9tique_mai_2022-version_Fr_updated.pdf, aa1f0d62aec651627fe7d7e778b51a5f49fe93e89478697549e89690edca7f79 ; one_conjoncture_2022_06.pdf : site du ministère, 2026-10-06, Conjoncture_%C3%A9nerg%C3%A9tique_juin_2022-version_Fr.pdf, 4eb204088b4f3538c75f824894c8b95b7764de4766ead95077551c84699f69a4 ; one_conjoncture_2022_07.pdf : site du ministère, 2026-10-06, Conjoncture_%C3%A9nerg%C3%A9tique_juillet_2022-version_Fr.pdf, 0448a3fa1f6beb2aef7723f839773c8782f989ec0c40a8ffa19a057982b68f86 ; one_conjoncture_2022_08.pdf : site du ministère, 2026-10-06, Conjoncture_%C3%A9nerg%C3%A9tique_aout_2022-version_Fr.pdf, 6825d5181c6ffed8958ba6a26cf96f6a9dac3b277d0eab9af1a0a7c6b5baa2a9 ; one_conjoncture_2022_09.pdf : site du ministère, 2026-10-06, Conjoncture_%C3%A9nerg%C3%A9tique_septembre_2022-version_Fr.pdf, 7dca368e653193d44e338bfbc0ab2c50dca6b845a2e71fc1a6a84e66bb4213c0 ; one_conjoncture_2022_10.pdf : site du ministère, 2026-10-06, Conjoncture_%C3%A9nerg%C3%A9tique_octobre_2022-version_Fr.pdf, f09f331fe630857ac7fe253e23e7d7bff041755ef5f6bffa1efca2f6202c100d ; one_conjoncture_2022_11.pdf : site du ministère, 2026-10-06, Conjoncture_%C3%A9nerg%C3%A9tique_novembre_2022-version_Fr.pdf, 470b509ad9a1889f004b21dbb987ccd1e5b4200bd81f7a5d0400d26df01f2b42 ; one_conjoncture_2022_12.pdf : site du ministère, 2026-10-06, Conjoncture_%C3%A9nerg%C3%A9tique_d%C3%A9cembre_2022-version_Fr.pdf, 01de09786b48e93e573fba08a2cdf4f77617e18169829af4cd3db30464d9d617 ; one_conjoncture_2023_04.pdf : site du ministère, 2026-10-06, Conjoncture_%C3%A9nerg%C3%A9tique_avril_2023-version_Fr.pdf, 9b951d5252b52ee1d60e591d6d58ab125b99d401d7bf6c0b9d8477a31c464d6a ; one_conjoncture_2023_08.pdf : site du ministère, 2026-10-06, Conjoncture_%C3%A9nerg%C3%A9tique_aout_2023.pdf, 1f3dd63d9b27a175f6d673345fdad52b0a9f78e3c40a1fa10e5861fa5b863dc0 ; one_conjoncture_2023_12.pdf : site du ministère, 2026-10-06, Conjoncture_%C3%A9nerg%C3%A9tique_d%C3%A9cembre_2023___v_f_.pdf, 93e5e2c27dd2b6dce491aa3cf01cf4b087b90ea66ade88db5ce8a16106f2250a ; one_conjoncture_2024_06.pdf : site du ministère, 2026-10-06, Conjoncture_%C3%A9nerg%C3%A9tique_juin_2024.pdf, ebbe341cd7caecec5a760359b0b613ada0c13d44118bc0b87be4e3a643b2a4f2 ; one_conjoncture_2024_11.pdf : site du ministère, 2026-10-06, Conjoncture_%C3%A9nerg%C3%A9tique_%C3%A0_fin_novembre_2024.pdf, 8a4a500d343eede8db7f4a78a9fbdfb14f11f97bf3b4bd2a5738d999e81117bc ; one_conjoncture_2025_07.pdf : site du ministère, 2026-10-06, Conjoncture_%C3%A9nerg%C3%A9tique_%C3%A0_fin__juillet_2025.pdf, 20acf2aa0e11005aa0d183e5d50778c83256127eb53e3bf36ca749fa44fd7660 ; one_conjoncture_2025_12.pdf : site du ministère, 2026-10-06, Conjoncture_%C3%A9nerg%C3%A9tique__d%C3%A9cembre_2025.pdf, 9a736ea9a6fca085ae62f2d7138eff9c3cbc34cf30d85243ccf29c337a2f36eb."
     },
     {
       "id": "minenergie-prix-marges-petroliers",
@@ -2378,7 +2378,7 @@
         ]
       },
       "title-short": "البنك المركزي التونسي، التقرير السنوي 1993",
-      "note": "citation-key: bct-ra-1993\nÉdition arabe du rapport n° 35 (même rapport que l'entrée française) : année lue sur la couverture à l'image (intitulé « التقرير السنوي » lu seulement sur les couvertures de 1988 et 2008 ; ailleurs l'intitulé est celui de la collection) ; HTTP 200 le 6 octobre 2026 (7 636 194 octets, 214 pages) ; adresse retrouvée par sondage et non par un catalogue : voir docs/notes/biblio-a-rapatrier.md. Copie locale : tunisia-data/data/raw/bct-archives/109/ar/Rapport_Annuel_1993_Arabe.pdf (SHA-256 e8b025db6b92299505dab40c186340711d82bb9899c051e738af9178244ec284, ignorée par git). Les chiffres cités sont ceux lus dans l'édition française (voir l'entrée française) ; pagination imprimée de l'édition arabe non mesurée. Distincte de bct-ra et de bct-ra-1984. Consulté le 6 octobre 2026."
+      "note": "citation-key: bct-ra-1993\nÉdition arabe du rapport n° 35 (même rapport que l'entrée française) : année lue sur la couverture à l'image (intitulé « التقرير السنوي » lu seulement sur les couvertures de 1988 et 2008 ; ailleurs l'intitulé est celui de la collection) ; HTTP 200 le 6 octobre 2026 (7 636 194 octets, 214 pages) ; adresse retrouvée par sondage et non par un catalogue : voir docs/notes/biblio-a-rapatrier.md. Copie locale : tunisia-data/data/raw/bct-archives/109/ar/Rapport_Annuel_1993_Arabe.pdf (SHA-256 e8b025db6b92299505dab40c186340711d82bb9899c051e738af9178244ec284, ignorée par git). Les chiffres cités sont ceux lus dans l'édition française (voir l'entrée française) ; pagination imprimée de l'édition arabe non mesurée. Distincte de bct-ra et de bct-ra-1984. Consulté le 6 octobre 2026. Chapitre sur les tarifs : « tarifs de l'électricité à partir du mois d'octobre 1993 » (couche texte) : date de l'ajustement d'octobre 1993 (jour inconnu)."
     },
     {
       "id": "bct-ra-1994",
@@ -2498,7 +2498,7 @@
         ]
       },
       "title-short": "البنك المركزي التونسي، التقرير السنوي 1999",
-      "note": "citation-key: bct-ra-1999\nÉdition arabe du rapport n° 41 (même rapport que l'entrée française) : année lue sur la couverture à l'image (intitulé « التقرير السنوي » lu seulement sur les couvertures de 1988 et 2008 ; ailleurs l'intitulé est celui de la collection) ; HTTP 200 le 6 octobre 2026 (12 609 044 octets, 306 pages) ; adresse retrouvée par sondage et non par un catalogue : voir docs/notes/biblio-a-rapatrier.md. Copie locale : tunisia-data/data/raw/bct-archives/109/ar/Rapport_Annuel_1999_Arabe.pdf (SHA-256 a4ca428d7e9a1a7432ed7e05d14fd2b9a208ddc254c7eb1f93ed62e3682a4e5b, ignorée par git). Les chiffres cités sont ceux lus dans l'édition française (voir l'entrée française) ; pagination imprimée de l'édition arabe non mesurée. Distincte de bct-ra et de bct-ra-1984. Consulté le 6 octobre 2026."
+      "note": "citation-key: bct-ra-1999\nÉdition arabe du rapport n° 41 (même rapport que l'entrée française) : année lue sur la couverture à l'image (intitulé « التقرير السنوي » lu seulement sur les couvertures de 1988 et 2008 ; ailleurs l'intitulé est celui de la collection) ; HTTP 200 le 6 octobre 2026 (12 609 044 octets, 306 pages) ; adresse retrouvée par sondage et non par un catalogue : voir docs/notes/biblio-a-rapatrier.md. Copie locale : tunisia-data/data/raw/bct-archives/109/ar/Rapport_Annuel_1999_Arabe.pdf (SHA-256 a4ca428d7e9a1a7432ed7e05d14fd2b9a208ddc254c7eb1f93ed62e3682a4e5b, ignorée par git). Les chiffres cités sont ceux lus dans l'édition française (voir l'entrée française) ; pagination imprimée de l'édition arabe non mesurée. Distincte de bct-ra et de bct-ra-1984. Consulté le 6 octobre 2026. Chapitre industrie, textile : « révision à la baisse des prix de l'eau, de l'électricité et du gaz » en 1999 : mesure SECTORIELLE pour le textile-habillement, non un ajustement général (couche texte)."
     },
     {
       "id": "bct-ra-2001",
@@ -3928,7 +3928,7 @@
       "URL": "https://web.archive.org/web/20041029082857/http://www.steg.com.tn:80/fr/clients_res/tarif.html",
       "archive": "أرشيف الإنترنت (Wayback Machine)",
       "archive_location": "http://www.steg.com.tn:80/fr/clients_res/tarif.html",
-      "note": "citation-key: steg-grille-2004-05-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; page HTML capturée (grille du 1er mai 2004 pour l'électricité, du 1er août 2004 pour le gaz basse pression) : BT économique ≤ 50 kWh/mois 65, normale 99 millimes/kWh ; redevance 150 ; pas de copie locale (page HTML conservée dans le scratchpad de la collecte, non versée). Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20041029082857 lu dans le CDX le 6 octobre 2026. Aucune copie locale. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+      "note": "citation-key: steg-grille-2004-05-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; page HTML capturée (grille du 1er mai 2004 pour l'électricité, du 1er août 2004 pour le gaz basse pression) : BT économique ≤ 50 kWh/mois 65, normale 99 millimes/kWh ; redevance 150 ; pas de copie locale (page HTML conservée dans le scratchpad de la collecte, non versée). Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20041029082857 lu dans le CDX le 6 octobre 2026. Aucune copie locale. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français. MOYENNE ET HAUTE TENSION, GAZ (note compensation-tarifs-mt-ht-gaz ; niveaux : I = PDF de la STEG lu à l'image, H = page HTML de la STEG archivée, portant sa date d'effet, transcrite mécaniquement) : électricité moyenne tension : fr/clients_ind/tarifs.html, capt. 20040912124736 [H] ; électricité haute tension : tarifs_hp.html, 20040912124756 [H] ; gaz haute pression : tarifs_hp.html, capt. 20040912124756 [H]. Correction de la note précédente : les fichiers steg_tarifs_hp_*.pdf sont des grilles du gaz HAUTE PRESSION, non de l'électricité haute tension (aucun PDF de la haute tension électrique n'existe au dépôt ; toute la HT de 2004 à 2022 est de niveau H)."
     },
     {
       "id": "steg-grille-2006-01-01",
@@ -3952,7 +3952,7 @@
       "URL": "https://web.archive.org/web/20060212011520/http://www.steg.com.tn:80/fr/clients_res/tarif.html",
       "archive": "أرشيف الإنترنت (Wayback Machine)",
       "archive_location": "http://www.steg.com.tn:80/fr/clients_res/tarif.html",
-      "note": "citation-key: steg-grille-2006-01-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; page HTML capturée : BT économique ≤ 50 kWh 68, au-delà 75 puis 114 ; normale 114 (1-300) et 127 ; redevance 200 ; pas de copie locale. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20060212011520 lu dans le CDX le 6 octobre 2026. Aucune copie locale. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+      "note": "citation-key: steg-grille-2006-01-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; page HTML capturée : BT économique ≤ 50 kWh 68, au-delà 75 puis 114 ; normale 114 (1-300) et 127 ; redevance 200 ; pas de copie locale. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20060212011520 lu dans le CDX le 6 octobre 2026. Aucune copie locale. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français. MOYENNE ET HAUTE TENSION, GAZ (note compensation-tarifs-mt-ht-gaz ; niveaux : I = PDF de la STEG lu à l'image, H = page HTML de la STEG archivée, portant sa date d'effet, transcrite mécaniquement) : électricité moyenne tension : id., capt. 20060511033855 [H] ; électricité haute tension : 20060511223807 [H] ; gaz moyenne pression : capt. 20060511033855 (16,57 retrouvé dans la page) [H] ; gaz haute pression : capt. 20060511223807 [H]. Correction de la note précédente : les fichiers steg_tarifs_hp_*.pdf sont des grilles du gaz HAUTE PRESSION, non de l'électricité haute tension (aucun PDF de la haute tension électrique n'existe au dépôt ; toute la HT de 2004 à 2022 est de niveau H)."
     },
     {
       "id": "steg-grille-2008-09-01",
@@ -3977,7 +3977,7 @@
       "URL": "https://web.archive.org/web/20090824044315/http://www.steg.com.tn:80/dwl/tarifsbt01092008.pdf",
       "archive": "أرشيف الإنترنت (Wayback Machine)",
       "archive_location": "http://www.steg.com.tn:80/dwl/tarifsbt01092008.pdf",
-      "note": "citation-key: steg-grille-2008-09-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT économique 74 ; 90/131 ; 131/174 ; redevance 200. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20090824044315 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_20080901.pdf (54 404 octets, SHA-256 265c7265d8ea92d00b389f2bf2a6c23509bfc64688308deb0ebb32f63eb82fa1), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BP : steg_tarifs_bp_20080901.pdf, capture 20110811140449 de http://www.steg.com.tn/dwl/tarifsbp01092008_fr.pdf, SHA-256 6e4c5f00d7b10b94203e8370c8befaea420c9ce9f57f43f327e05d22d0fdbdd6. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+      "note": "citation-key: steg-grille-2008-09-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT économique 74 ; 90/131 ; 131/174 ; redevance 200. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20090824044315 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_20080901.pdf (54 404 octets, SHA-256 265c7265d8ea92d00b389f2bf2a6c23509bfc64688308deb0ebb32f63eb82fa1), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BP : steg_tarifs_bp_20080901.pdf, capture 20110811140449 de http://www.steg.com.tn/dwl/tarifsbp01092008_fr.pdf, SHA-256 6e4c5f00d7b10b94203e8370c8befaea420c9ce9f57f43f327e05d22d0fdbdd6. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français. MOYENNE ET HAUTE TENSION, GAZ (note compensation-tarifs-mt-ht-gaz ; niveaux : I = PDF de la STEG lu à l'image, H = page HTML de la STEG archivée, portant sa date d'effet, transcrite mécaniquement) : électricité moyenne tension : id., capt. 20090106032036 [H] ; électricité haute tension : 20090106024743 [H] ; gaz moyenne pression : capt. 20090106032036 [H] ; gaz haute pression : capt. 20090106024743 [H]. Correction de la note précédente : les fichiers steg_tarifs_hp_*.pdf sont des grilles du gaz HAUTE PRESSION, non de l'électricité haute tension (aucun PDF de la haute tension électrique n'existe au dépôt ; toute la HT de 2004 à 2022 est de niveau H)."
     },
     {
       "id": "steg-grille-2010-06-01",
@@ -4002,7 +4002,7 @@
       "URL": "https://web.archive.org/web/20110626130636/http://www.steg.com.tn:80/dwl/tarifsbt01062010.pdf",
       "archive": "أرشيف الإنترنت (Wayback Machine)",
       "archive_location": "http://www.steg.com.tn:80/dwl/tarifsbt01062010.pdf",
-      "note": "citation-key: steg-grille-2010-06-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 75 ; 92/133 ; 133/186 ; redevance 200. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20110626130636 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_20100601.pdf (54 117 octets, SHA-256 6c000bf2a9a6307eea42f712b919be1e5a619eb72d758e3c94c7d89cbe2fb938), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BP : steg_tarifs_bp_20100601.pdf, capture 20110626220007 de http://www.steg.com.tn:80/dwl/tarifsbp01062010_fr.pdf, SHA-256 935e0b2d22a51de1d78d42e6baba2a64dc6f737ce78132383d96cb33ae1de3d3; MP : steg_tarifs_mp_20100601.pdf, capture 20111018092743 de http://www.steg.com.tn:80/dwl/tarifsmp01062010.pdf, SHA-256 dffbd79cb0176762965d3aa44fb9f1093becd3b7da07c5387062035d9f55f68c; MT : steg_tarifs_mt_20100601.pdf, capture 20111018092916 de http://www.steg.com.tn:80/dwl/tarifsmt01062010.pdf, SHA-256 aba8d394b6b878081314f2900dfc4b37f24fb66daed453c4dac463e82ad39404. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+      "note": "citation-key: steg-grille-2010-06-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 75 ; 92/133 ; 133/186 ; redevance 200. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20110626130636 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_20100601.pdf (54 117 octets, SHA-256 6c000bf2a9a6307eea42f712b919be1e5a619eb72d758e3c94c7d89cbe2fb938), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BP : steg_tarifs_bp_20100601.pdf, capture 20110626220007 de http://www.steg.com.tn:80/dwl/tarifsbp01062010_fr.pdf, SHA-256 935e0b2d22a51de1d78d42e6baba2a64dc6f737ce78132383d96cb33ae1de3d3; MP : steg_tarifs_mp_20100601.pdf, capture 20111018092743 de http://www.steg.com.tn:80/dwl/tarifsmp01062010.pdf, SHA-256 dffbd79cb0176762965d3aa44fb9f1093becd3b7da07c5387062035d9f55f68c; MT : steg_tarifs_mt_20100601.pdf, capture 20111018092916 de http://www.steg.com.tn:80/dwl/tarifsmt01062010.pdf, SHA-256 aba8d394b6b878081314f2900dfc4b37f24fb66daed453c4dac463e82ad39404. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français. MOYENNE ET HAUTE TENSION, GAZ (note compensation-tarifs-mt-ht-gaz ; niveaux : I = PDF de la STEG lu à l'image, H = page HTML de la STEG archivée, portant sa date d'effet, transcrite mécaniquement) : électricité moyenne tension : steg_tarifs_mt_20100601.pdf ; page capt. 20120503044359 [**I** + H] ; électricité haute tension : 20110929172540 ; tarifs_ht.html 20120503041404 [H] ; gaz moyenne pression : steg_tarifs_mp_20100601.pdf ; tarifs_mp.html capt. 20120504033902 [**I** + H] ; gaz haute pression : capt. 20110929172540 [H]. Correction de la note précédente : les fichiers steg_tarifs_hp_*.pdf sont des grilles du gaz HAUTE PRESSION, non de l'électricité haute tension (aucun PDF de la haute tension électrique n'existe au dépôt ; toute la HT de 2004 à 2022 est de niveau H)."
     },
     {
       "id": "steg-grille-2012-09-01",
@@ -4027,7 +4027,7 @@
       "URL": "https://web.archive.org/web/20130320000619/http://www.steg.com.tn:80/dwl/tarifsbt01092012_fr.pdf",
       "archive": "أرشيف الإنترنت (Wayback Machine)",
       "archive_location": "http://www.steg.com.tn:80/dwl/tarifsbt01092012_fr.pdf",
-      "note": "citation-key: steg-grille-2012-09-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 75 ; 92/135 ; 135/200 ; redevance 300. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20130320000619 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_20120901.pdf (40 567 octets, SHA-256 82319d7f2d31ccdeb4b9a7f337bf5ad9e6cd1492f4894e68bdd2d9d7aec57c74), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : MT : steg_tarifs_mt_20120901.pdf, capture 20130319025048 de http://www.steg.com.tn:80/dwl/tarifsmt01092012.pdf, SHA-256 d8238a18742b75f2df2797bfa40312d0ca633cd68dc9d1389408e87bbe527705. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+      "note": "citation-key: steg-grille-2012-09-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 75 ; 92/135 ; 135/200 ; redevance 300. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20130320000619 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_20120901.pdf (40 567 octets, SHA-256 82319d7f2d31ccdeb4b9a7f337bf5ad9e6cd1492f4894e68bdd2d9d7aec57c74), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : MT : steg_tarifs_mt_20120901.pdf, capture 20130319025048 de http://www.steg.com.tn:80/dwl/tarifsmt01092012.pdf, SHA-256 d8238a18742b75f2df2797bfa40312d0ca633cd68dc9d1389408e87bbe527705. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français. MOYENNE ET HAUTE TENSION, GAZ (note compensation-tarifs-mt-ht-gaz ; niveaux : I = PDF de la STEG lu à l'image, H = page HTML de la STEG archivée, portant sa date d'effet, transcrite mécaniquement) : électricité moyenne tension : steg_tarifs_mt_20120901.pdf ; page capt. 20121103154608 [**I** + H] ; électricité haute tension : — [—] ; gaz moyenne pression : — [—] ; gaz haute pression : capt. 20121127144428 [H]. Correction de la note précédente : les fichiers steg_tarifs_hp_*.pdf sont des grilles du gaz HAUTE PRESSION, non de l'électricité haute tension (aucun PDF de la haute tension électrique n'existe au dépôt ; toute la HT de 2004 à 2022 est de niveau H)."
     },
     {
       "id": "steg-grille-2014-05-01",
@@ -4052,7 +4052,7 @@
       "URL": "https://web.archive.org/web/20161120205355/http://www.steg.com.tn/dwl/tarifs/2014/tarifsbt01052014_fr.pdf",
       "archive": "أرشيف الإنترنت (Wayback Machine)",
       "archive_location": "http://www.steg.com.tn/dwl/tarifs/2014/tarifsbt01052014_fr.pdf",
-      "note": "citation-key: steg-grille-2014-05-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT ≤ 50 : 75 ; 51-100 : 108 ; 101-200 : 140 ; au-delà 151, 184, 280, 350 ; redevance 500. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20161120205355 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_20140501.pdf (4 031 454 octets, SHA-256 edd6e968809007d02eb4fd293e7c1c9136cb4044775f027c3d081d4548d96f57), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BP : steg_tarifs_bp_20140501.pdf, capture 20240327160857 de https://www.steg.com.tn/dwl/tarifs/2014/tarifsbp01052014_fr.pdf, SHA-256 a1c2d928c003499ac587cf698430fb9a87f96c38c6760a3c9c833f5c7cd90671; HP : steg_tarifs_hp_20140501.pdf, capture 20170820233758 de http://steg.com.tn/dwl/tarifs/2014/tarifshp01052014_fr.pdf, SHA-256 8b8c1436c34ff18179de0e67359d52fbce08dda0cb0657a9a6ece732ed0cac8c; MP : steg_tarifs_mp_20140501.pdf, capture 20240327162957 de https://www.steg.com.tn/dwl/tarifs/2014/tarifsmp01052014_fr.pdf, SHA-256 67bfd37d09dbec30d1f989317f556040b7f8c3b43b6cbb87c4ad0c611fc5c606; MT : steg_tarifs_mt_20140501.pdf, capture 20170808001608 de http://www.steg.com.tn:80/dwl/tarifs/2014/tarifsmt01052014_fr.pdf, SHA-256 f7539fc8a17f158a3e0e9cbcd2ed88a7c49aca1a3ea60eddc8b1b15cd5f42654. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+      "note": "citation-key: steg-grille-2014-05-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT ≤ 50 : 75 ; 51-100 : 108 ; 101-200 : 140 ; au-delà 151, 184, 280, 350 ; redevance 500. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20161120205355 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_20140501.pdf (4 031 454 octets, SHA-256 edd6e968809007d02eb4fd293e7c1c9136cb4044775f027c3d081d4548d96f57), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BP : steg_tarifs_bp_20140501.pdf, capture 20240327160857 de https://www.steg.com.tn/dwl/tarifs/2014/tarifsbp01052014_fr.pdf, SHA-256 a1c2d928c003499ac587cf698430fb9a87f96c38c6760a3c9c833f5c7cd90671; HP : steg_tarifs_hp_20140501.pdf, capture 20170820233758 de http://steg.com.tn/dwl/tarifs/2014/tarifshp01052014_fr.pdf, SHA-256 8b8c1436c34ff18179de0e67359d52fbce08dda0cb0657a9a6ece732ed0cac8c; MP : steg_tarifs_mp_20140501.pdf, capture 20240327162957 de https://www.steg.com.tn/dwl/tarifs/2014/tarifsmp01052014_fr.pdf, SHA-256 67bfd37d09dbec30d1f989317f556040b7f8c3b43b6cbb87c4ad0c611fc5c606; MT : steg_tarifs_mt_20140501.pdf, capture 20170808001608 de http://www.steg.com.tn:80/dwl/tarifs/2014/tarifsmt01052014_fr.pdf, SHA-256 f7539fc8a17f158a3e0e9cbcd2ed88a7c49aca1a3ea60eddc8b1b15cd5f42654. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français. MOYENNE ET HAUTE TENSION, GAZ (note compensation-tarifs-mt-ht-gaz ; niveaux : I = PDF de la STEG lu à l'image, H = page HTML de la STEG archivée, portant sa date d'effet, transcrite mécaniquement) : électricité moyenne tension : steg_tarifs_mt_20140501.pdf ; page capt. 20170420111255 [**I** + H] ; électricité haute tension : 20170418214311 [H] ; gaz moyenne pression : steg_tarifs_mp_20140501.pdf ; capt. 20170421210723 [**I** + H] ; gaz haute pression : steg_tarifs_hp_20140501.pdf ; capt. 20170516131050 [**I** + H]. Correction de la note précédente : les fichiers steg_tarifs_hp_*.pdf sont des grilles du gaz HAUTE PRESSION, non de l'électricité haute tension (aucun PDF de la haute tension électrique n'existe au dépôt ; toute la HT de 2004 à 2022 est de niveau H)."
     },
     {
       "id": "steg-grille-2017-01-01",
@@ -4077,7 +4077,7 @@
       "URL": "https://web.archive.org/web/20170326125702/http://www.steg.com.tn:80/dwl/tarifs/2017/tarifsbt04012017_fr.pdf",
       "archive": "أرشيف الإنترنت (Wayback Machine)",
       "archive_location": "http://www.steg.com.tn:80/dwl/tarifs/2017/tarifsbt04012017_fr.pdf",
-      "note": "citation-key: steg-grille-2017-01-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 75 ; 108 ; 162 puis 167, 198, 285, 350 ; redevance 500. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20170326125702 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_20170104.pdf (241 907 octets, SHA-256 8fb6c411f6bc202b90d31784e06d892abe2f245773ec7f235794a9676b5be3e6), ignorée par git. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+      "note": "citation-key: steg-grille-2017-01-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 75 ; 108 ; 162 puis 167, 198, 285, 350 ; redevance 500. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20170326125702 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_20170104.pdf (241 907 octets, SHA-256 8fb6c411f6bc202b90d31784e06d892abe2f245773ec7f235794a9676b5be3e6), ignorée par git. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français. MOYENNE ET HAUTE TENSION, GAZ (note compensation-tarifs-mt-ht-gaz ; niveaux : I = PDF de la STEG lu à l'image, H = page HTML de la STEG archivée, portant sa date d'effet, transcrite mécaniquement) : électricité moyenne tension : page capt. 20180112083138 [H] ; électricité haute tension : 20180115190725 [H] ; gaz moyenne pression : tarifs_mp.html, capt. 20180115231552 [H] ; gaz haute pression : steg_tarifs_hp_20180102.pdf ; capt. 20170331002613 [**I** + H]. Correction de la note précédente : les fichiers steg_tarifs_hp_*.pdf sont des grilles du gaz HAUTE PRESSION, non de l'électricité haute tension (aucun PDF de la haute tension électrique n'existe au dépôt ; toute la HT de 2004 à 2022 est de niveau H)."
     },
     {
       "id": "steg-grille-2018-09-01",
@@ -4102,7 +4102,7 @@
       "URL": "https://web.archive.org/web/20180921003335/http://www.steg.com.tn:80/dwl/tarifs/2018/tarifsbt_fr.pdf",
       "archive": "أرشيف الإنترنت (Wayback Machine)",
       "archive_location": "http://www.steg.com.tn:80/dwl/tarifs/2018/tarifsbt_fr.pdf",
-      "note": "citation-key: steg-grille-2018-09-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 75 ; 108 ; au-delà de 100 : 176, 218, 295, 355 ; redevance 700. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20180921003335 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_2018b.pdf (253 346 octets, SHA-256 852e98f749f4396782c0c094f499517a9e54a3ab8e4434566260b714cd1a05b0), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BP : steg_tarifs_bp_2018b.pdf, capture 20180921013937 de http://www.steg.com.tn:80/dwl/tarifs/2018/tarifsbp_fr.pdf, SHA-256 aa246e66066e90a5e20a166b9eb536edfd0143262df8a3fbd37e2aaa7bc9c72f; MP : steg_tarifs_mp_2018b.pdf, capture 20180613124840 de http://www.steg.com.tn:80/dwl/tarifs/2018/tarifsmp_fr.pdf, SHA-256 42572b5c90b19c612ee17963e5d2d2aebce68cf198f507abf58e10cc74e884a3; MT : steg_tarifs_mt_2018b.pdf, capture 20180614020128 de http://www.steg.com.tn:80/dwl/tarifs/2018/tarifsmt_fr.pdf, SHA-256 df4415bdaeb161c2bac2fd1ba7e628abc561cc3f20bdcc220df8576519b37582. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+      "note": "citation-key: steg-grille-2018-09-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 75 ; 108 ; au-delà de 100 : 176, 218, 295, 355 ; redevance 700. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20180921003335 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_2018b.pdf (253 346 octets, SHA-256 852e98f749f4396782c0c094f499517a9e54a3ab8e4434566260b714cd1a05b0), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BP : steg_tarifs_bp_2018b.pdf, capture 20180921013937 de http://www.steg.com.tn:80/dwl/tarifs/2018/tarifsbp_fr.pdf, SHA-256 aa246e66066e90a5e20a166b9eb536edfd0143262df8a3fbd37e2aaa7bc9c72f; MP : steg_tarifs_mp_2018b.pdf, capture 20180613124840 de http://www.steg.com.tn:80/dwl/tarifs/2018/tarifsmp_fr.pdf, SHA-256 42572b5c90b19c612ee17963e5d2d2aebce68cf198f507abf58e10cc74e884a3; MT : steg_tarifs_mt_2018b.pdf, capture 20180614020128 de http://www.steg.com.tn:80/dwl/tarifs/2018/tarifsmt_fr.pdf, SHA-256 df4415bdaeb161c2bac2fd1ba7e628abc561cc3f20bdcc220df8576519b37582. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français. MOYENNE ET HAUTE TENSION, GAZ (note compensation-tarifs-mt-ht-gaz ; niveaux : I = PDF de la STEG lu à l'image, H = page HTML de la STEG archivée, portant sa date d'effet, transcrite mécaniquement) : électricité moyenne tension : page capt. 20181011193337 [H] ; électricité haute tension : 20181011222848 [H] ; gaz moyenne pression : capt. 20181018014622 [H] ; gaz haute pression : capt. 20181011230139 [H]. Correction de la note précédente : les fichiers steg_tarifs_hp_*.pdf sont des grilles du gaz HAUTE PRESSION, non de l'électricité haute tension (aucun PDF de la haute tension électrique n'existe au dépôt ; toute la HT de 2004 à 2022 est de niveau H)."
     },
     {
       "id": "steg-grille-2019-06-01",
@@ -4127,7 +4127,7 @@
       "URL": "https://web.archive.org/web/20210118114529/https://www.steg.com.tn/dwl/tarifs/2019/tarifsbt_fr.pdf",
       "archive": "أرشيف الإنترنت (Wayback Machine)",
       "archive_location": "https://www.steg.com.tn/dwl/tarifs/2019/tarifsbt_fr.pdf",
-      "note": "citation-key: steg-grille-2019-06-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 62 ; 96 ; 176 ; 218 ; 341 ; 414 ; redevance 700. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20210118114529 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_2019.pdf (163 723 octets, SHA-256 49fd181337384a1660376d35a655b133ebcf4fcb013b1c26648ed5b8c6f594a9), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BP : steg_tarifs_bp_2019.pdf, capture 20211018094131 de https://www.steg.com.tn/dwl/tarifs/2019/tarifsbp_fr.pdf, SHA-256 63a034a8d40119b533f9cf966c40f524538716954ebe9bd032f1eede132e46e6; MT : steg_tarifs_mt_2019.pdf, capture 20190712163033 de http://www.steg.com.tn:80/dwl/tarifs/2019/tarifsmt_fr.pdf, SHA-256 61fd09c5d78edb1f4397def2b7939e6b49a97a4237481eff1b23135b1612fec3. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+      "note": "citation-key: steg-grille-2019-06-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 62 ; 96 ; 176 ; 218 ; 341 ; 414 ; redevance 700. Document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture : horodatage 20210118114529 lu dans le CDX le 6 octobre 2026. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_2019.pdf (163 723 octets, SHA-256 49fd181337384a1660376d35a655b133ebcf4fcb013b1c26648ed5b8c6f594a9), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BP : steg_tarifs_bp_2019.pdf, capture 20211018094131 de https://www.steg.com.tn/dwl/tarifs/2019/tarifsbp_fr.pdf, SHA-256 63a034a8d40119b533f9cf966c40f524538716954ebe9bd032f1eede132e46e6; MT : steg_tarifs_mt_2019.pdf, capture 20190712163033 de http://www.steg.com.tn:80/dwl/tarifs/2019/tarifsmt_fr.pdf, SHA-256 61fd09c5d78edb1f4397def2b7939e6b49a97a4237481eff1b23135b1612fec3. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français. MOYENNE ET HAUTE TENSION, GAZ (note compensation-tarifs-mt-ht-gaz ; niveaux : I = PDF de la STEG lu à l'image, H = page HTML de la STEG archivée, portant sa date d'effet, transcrite mécaniquement) : électricité moyenne tension : steg_tarifs_mt_2019.pdf ; page capt. 20190818160727 [**I** + H]. Correction de la note précédente : les fichiers steg_tarifs_hp_*.pdf sont des grilles du gaz HAUTE PRESSION, non de l'électricité haute tension (aucun PDF de la haute tension électrique n'existe au dépôt ; toute la HT de 2004 à 2022 est de niveau H)."
     },
     {
       "id": "steg-grille-2022-05-01",
@@ -4150,7 +4150,7 @@
       "title-short": "basse tension, grille du 1er mai 2022 (en vigueur)",
       "publisher": "Société tunisienne de l'électricité et du gaz",
       "URL": "https://www.steg.com.tn/system/files/pdf/tarifsbt_fr.pdf",
-      "note": "citation-key: steg-grille-2022-05-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 62 ; 96 ; puis prix unique selon la tranche atteinte : 176, 218, 341, 414 ; redevance 700 ; taxe du Fonds de transition énergétique portée de 1 à 5 millimes/kWh au 1er janvier 2024 (même grille, capture 20250331010328 du fichier tarifs_bt.pdf). Fichier encore en ligne sur le site de la STEG (HTTP 200 le 6 octobre 2026) ; capture du 14/06/2025 (horodatage 20250614125406 lu dans le CDX le 6 octobre 2026) téléchargée. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_sys_2025.pdf (197 890 octets, SHA-256 39cb877e0c3636603fc0e2f0fc852b092ac6a92d149dfc3c634a9c7e9071b327), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BT : steg_tarifs_bt_2024.pdf, capture 20250331010328 de https://www.steg.com.tn/dwl/tarifs/2024/tarifs_bt.pdf, SHA-256 73e03125cd7cdbf1bd08de659871d6e3f4cf3dacdd669d03f5277d9d02e1d627; BP : steg_tarifs_bp_sys_2025.pdf, capture 20250614125512 de https://www.steg.com.tn/system/files/pdf/tarifsbp_fr.pdf, SHA-256 69cff53e18d7bed7290f238b1a334eae20584437525b1b60b797b4a6f5f47699; GAZ : steg_tarifs_gaz_2024.pdf, capture 20250331004835 de https://www.steg.com.tn/dwl/tarifs/2024/tarifs_hp_mp_bp.pdf, SHA-256 6c71d378a95c299b5973fabfdb3586317c3a8347b194d9e7b2a1d366bb50ec15. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français."
+      "note": "citation-key: steg-grille-2022-05-01\nGrille tarifaire affichée par la STEG avec sa date d'effet (preuve B : document de la STEG portant sa date d'effet, capturé par Internet Archive) ; BT 62 ; 96 ; puis prix unique selon la tranche atteinte : 176, 218, 341, 414 ; redevance 700 ; taxe du Fonds de transition énergétique portée de 1 à 5 millimes/kWh au 1er janvier 2024 (même grille, capture 20250331010328 du fichier tarifs_bt.pdf). Fichier encore en ligne sur le site de la STEG (HTTP 200 le 6 octobre 2026) ; capture du 14/06/2025 (horodatage 20250614125406 lu dans le CDX le 6 octobre 2026) téléchargée. Copie locale du fichier basse tension : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_bt_sys_2025.pdf (197 890 octets, SHA-256 39cb877e0c3636603fc0e2f0fc852b092ac6a92d149dfc3c634a9c7e9071b327), ignorée par git. Autres pièces de la même grille (BP et MP : gaz, basse et moyenne pression ; MT : moyenne tension ; HP : haute tension et haute pression ; GAZ : gaz, toutes pressions) : BT : steg_tarifs_bt_2024.pdf, capture 20250331010328 de https://www.steg.com.tn/dwl/tarifs/2024/tarifs_bt.pdf, SHA-256 73e03125cd7cdbf1bd08de659871d6e3f4cf3dacdd669d03f5277d9d02e1d627; BP : steg_tarifs_bp_sys_2025.pdf, capture 20250614125512 de https://www.steg.com.tn/system/files/pdf/tarifsbp_fr.pdf, SHA-256 69cff53e18d7bed7290f238b1a334eae20584437525b1b60b797b4a6f5f47699; GAZ : steg_tarifs_gaz_2024.pdf, capture 20250331004835 de https://www.steg.com.tn/dwl/tarifs/2024/tarifs_hp_mp_bp.pdf, SHA-256 6c71d378a95c299b5973fabfdb3586317c3a8347b194d9e7b2a1d366bb50ec15. Aucun acte du JORT ne fixe cette grille après la décision du 11 août 1992 ; l'acte qui la fixe n'est pas identifié. Preuve : lecture de la couche texte ou de la page, transcription par le documentaliste le 6 octobre 2026 ; document en français. MOYENNE ET HAUTE TENSION, GAZ (note compensation-tarifs-mt-ht-gaz ; niveaux : I = PDF de la STEG lu à l'image, H = page HTML de la STEG archivée, portant sa date d'effet, transcrite mécaniquement) : électricité haute tension : 20230330140759 [H] ; gaz moyenne pression : steg_tarifs_gaz_2024.pdf (table du 02-01-2024) ; capt. 20230330150817 [**I** + H] ; gaz haute pression : steg_tarifs_gaz_2024.pdf ; capt. 20230205070803 [**I** + H]. Correction de la note précédente : les fichiers steg_tarifs_hp_*.pdf sont des grilles du gaz HAUTE PRESSION, non de l'électricité haute tension (aucun PDF de la haute tension électrique n'existe au dépôt ; toute la HT de 2004 à 2022 est de niveau H)."
     },
     {
       "id": "minfin-budget-citoyen-2021",
@@ -4384,6 +4384,516 @@
       "archive_location": "http://www.zietlow.com:80/docs/Fuel%202000.pdf",
       "title-short": "GTZ, Fuel Prices (2001)",
       "note": "citation-key: gtz-2001-fuel-prices\nPage de titre lue : « octobre 2001 », Gerhard P. Metschies, GTZ. Document introuvable à son adresse d'origine (l'adresse ne sert plus le fichier le 6 octobre 2026) ; consulté dans la capture : horodatage 20040401084031 lu dans le CDX le 6 octobre 2026. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/gtz_2001_fuel_prices_vehicle_taxation.pdf (1 352 485 octets, 99 pages, SHA-256 1e39d99b429e3bab05995f9bbd38dd5be402d2de39f63d2d58d55ab53a104bb4), ignorée par git. p. 54 (Tunisie), image lue : novembre 2000 : super 0,71 D/l (concorde) ; gasoil 0,43 D/l (DISCORDANT avec les 415 millimes de la série du ministère). Famille : organisation internationale (relevé des prix affichés), source tertiaire. Document en anglais (pas d'édition arabe)."
+    },
+    {
+      "id": "bm-1998-icr-17374",
+      "type": "report",
+      "title": "Implementation Completion Report. Republic of Tunisia. Gas Infrastructure Development Project (Loan 3418-TUN)",
+      "author": [
+        {
+          "literal": "Banque mondiale"
+        }
+      ],
+      "publisher": "Banque mondiale",
+      "publisher-place": "Washington, D.C.",
+      "issued": {
+        "date-parts": [
+          [
+            1998,
+            2,
+            13
+          ]
+        ]
+      },
+      "URL": "https://documents.worldbank.org/curated/en/586711468337766335/pdf/multi-page.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "Banque mondiale (1998), ICR n° 17374",
+      "note": "citation-key: bm-1998-icr-17374\nReport No. 17374, February 13, 1998 (page de titre lue en couche texte) ; Infrastructure Development Group. Famille : rapport extérieur. Tarifs : § 28-31 et tableaux 1.9 à 1.11, pp. 10-12 imprimées (pp. 20-22 du PDF), lus à l'image : ajustements des prix de l'électricité et du gaz « 7 % en août 1992 », « 3 % en octobre 1993 », « 5,9 % en juin 1994 » (gaz : 10 %, 8,6 %, 4,7 %) et aucune hausse en 1995, 1996 et 1997. PDF HTTP 200 le 6 octobre 2026. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/wb_1998_17374_icr_gas_infrastructure.pdf (3 385 639 octets, 67 pages, SHA-256 c57aa9e1d371545b7acae6749137b742fdc1b78a05a34ca66ece071b8490681c), ignorée par git ; une fiche de revue de 2 pages (ICRR 10035) est aussi locale (wb_1998_icrr10035_gas_infrastructure.pdf). Document en anglais (pas d'édition arabe)."
+    },
+    {
+      "id": "esmap-2005-307-electrification-rurale",
+      "type": "report",
+      "title": "Rural Electrification in Tunisia: National Commitment, Efficient Implementation and Sound Finances",
+      "author": [
+        {
+          "literal": "Banque mondiale, Energy Sector Management Assistance Programme (ESMAP)"
+        }
+      ],
+      "collection-title": "ESMAP Report",
+      "publisher": "Banque mondiale",
+      "publisher-place": "Washington, D.C.",
+      "issued": {
+        "date-parts": [
+          [
+            2005,
+            8
+          ]
+        ]
+      },
+      "URL": "https://documents.worldbank.org/curated/en/434461468335385475/pdf/ESM307.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "title-short": "ESMAP (2005), rapport n° 307/05",
+      "note": "citation-key: esmap-2005-307-electrification-rurale\nESMAP Report 307/05, August 2005 (page de titre lue en couche texte) ; auteurs (Cecelski, Ounalli, Aissa, Dunkerley) relevés dans la couche texte, non confirmés sur la page de titre. Famille : rapport extérieur ; origine des tarifs dite : « Source: STEG ». Tableau 6.2 « Electricity Tariffs (Excluding Taxes), 2001 », p. 36 imprimée (p. 42 du PDF), lu à l'image : grille de 2001 (date d'effet 1er août 2001 d'après la BAD, le tableau ne dit que « 2001 ») ; tableau 6.3 (BT 61 / 83 constants de 1994 à 2000) ; § 6.15 : hausses moyennes (3 % en 1993, 4,6 % en 2000, 2,4 % en 2001). PDF HTTP 200 le 6 octobre 2026. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/wb_2005_esm307_rural_electrification.pdf (4 768 391 octets, 90 pages, SHA-256 c76ef9cdfd1e835975bddb771ac159f71fa584544884fe4ccf3b215cc6c52f3e), ignorée par git. Document en anglais (pas d'édition arabe)."
+    },
+    {
+      "id": "bad-2006-rap-electricite-vi",
+      "type": "report",
+      "title": "République tunisienne. Projet d'électrification rurale, Électricité VI. Rapport d'achèvement",
+      "author": [
+        {
+          "literal": "Banque africaine de développement, département Infrastructure (OINF)"
+        }
+      ],
+      "publisher": "Banque africaine de développement",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            8
+          ]
+        ]
+      },
+      "URL": "https://web.archive.org/web/20230817002507/https://www.afdb.org/fileadmin/uploads/afdb/Documents/Project-and-Operations/ADB-BD-IF-2006-220-FR-TUNISIE-ELECTRICITE-VI-RAP_.PDF",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "أرشيف الإنترنت (Wayback Machine)",
+      "archive_location": "https://www.afdb.org/fileadmin/uploads/afdb/Documents/Project-and-Operations/ADB-BD-IF-2006-220-FR-TUNISIE-ELECTRICITE-VI-RAP_.PDF",
+      "title-short": "BAD (2006), RAP Électricité VI",
+      "note": "citation-key: bad-2006-rap-electricite-vi\nPage de titre lue en couche texte : « RAPPORT D'ACHÈVEMENT, DÉPARTEMENT INFRASTRUCTURE (OINF), AOÛT 2006 ». Famille : rapport extérieur. L'adresse d'origine afdb.org répondant 403 aux robots le 6 octobre 2026 : le PDF a été téléchargé dans la capture (horodatage 20230817002507 lu dans le CDX le 6 octobre 2026). § 4.3.15 : « sept (07) ajustements tarifaires » de 2000 au 1er janvier 2006 et liste des barèmes (« 1/01/06 ; 1/07/05 ; 1/02/05 ; 1/05/04 ; 1/04/03 ; 1/08/01 ; 15/08/00 », PDF p. 46) ; tableau 4.4.1 (PDF pp. 20-21) : coût de revient 2000-2004 ; annexe : tarif du 1er juillet 2005 (0,070 D/kWh jusqu'à 50 kWh, 0,108 D au-delà, redevance 2,4 D par an). Preuve : couche texte. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/afdb_2006_electricite_vi_rap_fr.pdf (375 196 octets, 46 pages, SHA-256 66e7b3f8140a041ff84241cf89c7025f73a065eea397cff43a6dea45d808c45e), ignorée par git ; une version anglaise (capture 20151106074031, SHA-256 0fd940c138fedb3e24909183a4bb1ec63ca627245862fe78d2b3eeca70009988) est aussi locale. Document en français."
+    },
+    {
+      "id": "apia-1998-couts-facteurs",
+      "type": "webpage",
+      "title": "Les coûts de facteurs",
+      "author": [
+        {
+          "literal": "Tunisie. Agence de promotion des investissements agricoles (APIA)"
+        }
+      ],
+      "URL": "https://web.archive.org/web/19980123081720/http://www.tunisie.com:80/APIA/couts.html",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "أرشيف الإنترنت (Wayback Machine)",
+      "archive_location": "http://www.tunisie.com:80/APIA/couts.html",
+      "title-short": "Les coûts de facteurs",
+      "note": "citation-key: apia-1998-couts-facteurs\nFamille : source officielle tunisienne (agence publique ou entreprise relayant la grille). Page archivée (niveau P : page HTML capturée, lue) ; le site d'origine ne sert plus cette page (vérification sommaire le 6 octobre 2026) ; consultée dans la capture (horodatage 19980123081720 lu dans le CDX le 6 octobre 2026). Contenu : grille antérieure à 2000 (électricité et gaz), page de l'agence relayant les tarifs de la STEG. Octets bruts de la capture (variante id_) conservés dans le scratchpad de la collecte, hors entrepôt : apia_couts_1998.html, SHA-256 098667cd639447d5fb332cef37423d467a958451cb808eb153e8f8921afbabba. Page en français ; édition arabe non cherchée."
+    },
+    {
+      "id": "fipa-1999-production",
+      "type": "webpage",
+      "title": "Guide de l'investisseur : production (coûts de l'énergie)",
+      "author": [
+        {
+          "literal": "Tunisie. Agence de promotion de l'investissement extérieur (FIPA)"
+        }
+      ],
+      "URL": "https://web.archive.org/web/19990506083603/http://www.investintunisia.com:80/itinerary/production.html",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "أرشيف الإنترنت (Wayback Machine)",
+      "archive_location": "http://www.investintunisia.com:80/itinerary/production.html",
+      "title-short": "Guide de l'investisseur : production",
+      "note": "citation-key: fipa-1999-production\nFamille : source officielle tunisienne (agence publique ou entreprise relayant la grille). Page archivée (niveau P : page HTML capturée, lue) ; le site d'origine ne sert plus cette page (vérification sommaire le 6 octobre 2026) ; consultée dans la capture (horodatage 19990506083603 lu dans le CDX le 6 octobre 2026). Contenu : relais des tarifs en vigueur en 1999. Octets bruts de la capture (variante id_) conservés dans le scratchpad de la collecte, hors entrepôt : fipa_production_1999.html, SHA-256 ebddf8b97737eb4c9f62aaa664c70b9c52cb246922b1ae1a0168d7e42d5f6da5. Page en français ; édition arabe non cherchée."
+    },
+    {
+      "id": "fipa-2001-02-electricite-eng",
+      "type": "webpage",
+      "title": "Investor's guide: Electricity tariffs (« February 28, 1999 »)",
+      "author": [
+        {
+          "literal": "Tunisie. Agence de promotion de l'investissement extérieur (FIPA)"
+        }
+      ],
+      "URL": "https://web.archive.org/web/20010222023543/http://www.investintunisia.com:80/eng/poleA/a0507.htm",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "أرشيف الإنترنت (Wayback Machine)",
+      "archive_location": "http://www.investintunisia.com:80/eng/poleA/a0507.htm",
+      "title-short": "Investor's guide: Electricity tariffs",
+      "note": "citation-key: fipa-2001-02-electricite-eng\nFamille : source officielle tunisienne (agence publique ou entreprise relayant la grille). Page archivée (niveau P : page HTML capturée, lue) ; le site d'origine ne sert plus cette page (vérification sommaire le 6 octobre 2026) ; consultée dans la capture (horodatage 20010222023543 lu dans le CDX le 6 octobre 2026). Contenu : page en anglais, intitulée « February 28, 1999 » : grille de 1994-2000. Octets bruts de la capture (variante id_) conservés dans le scratchpad de la collecte, hors entrepôt : fipa/v_eng_a0507_20010222.htm, SHA-256 73b8d34ee6af8811582c162153a79adb2896e0a8ea150224612c53d25855ee30. Page en français ; édition arabe non cherchée."
+    },
+    {
+      "id": "fipa-2001-05-electricite",
+      "type": "webpage",
+      "title": "Guide de l'investisseur : Électricité (tarifs en hors taxes, août 2000)",
+      "author": [
+        {
+          "literal": "Tunisie. Agence de promotion de l'investissement extérieur (FIPA)"
+        }
+      ],
+      "URL": "https://web.archive.org/web/20010527014743/http://www.investintunisia.com:80/fre/poleA/a0507.htm",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "أرشيف الإنترنت (Wayback Machine)",
+      "archive_location": "http://www.investintunisia.com:80/fre/poleA/a0507.htm",
+      "title-short": "Guide de l'investisseur : Électricité",
+      "note": "citation-key: fipa-2001-05-electricite\nFamille : source officielle tunisienne (agence publique ou entreprise relayant la grille). Page archivée (niveau P : page HTML capturée, lue) ; le site d'origine ne sert plus cette page (vérification sommaire le 6 octobre 2026) ; consultée dans la capture (horodatage 20010527014743 lu dans le CDX le 6 octobre 2026). Contenu : grille du 15 août 2000 (« Tarifs en hors taxes août 2000 »). Octets bruts de la capture (variante id_) conservés dans le scratchpad de la collecte, hors entrepôt : fipa/v_fre_a0507_20010527.htm, SHA-256 0d8651b5251ba4c1fda6e32857f5fad1e9ecda13681d82257e5f63627aa6c9df. Page en français ; édition arabe non cherchée."
+    },
+    {
+      "id": "fipa-2003-08-electricite-avril-2003",
+      "type": "webpage",
+      "title": "Guide de l'investisseur : Électricité (tarifs en hors taxes, avril 2003)",
+      "author": [
+        {
+          "literal": "Tunisie. Agence de promotion de l'investissement extérieur (FIPA)"
+        }
+      ],
+      "URL": "https://web.archive.org/web/20030805143433/http://www.investintunisia.com:80/fre/poleA/a050701.htm",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "أرشيف الإنترنت (Wayback Machine)",
+      "archive_location": "http://www.investintunisia.com:80/fre/poleA/a050701.htm",
+      "title-short": "Guide de l'investisseur : Électricité",
+      "note": "citation-key: fipa-2003-08-electricite-avril-2003\nFamille : source officielle tunisienne (agence publique ou entreprise relayant la grille). Page archivée (niveau P : page HTML capturée, lue) ; le site d'origine ne sert plus cette page (vérification sommaire le 6 octobre 2026) ; consultée dans la capture (horodatage 20030805143433 lu dans le CDX le 6 octobre 2026). Contenu : grille du 1er avril 2003 pour l'électricité ; la date d'effet au jour vient de la BAD. Octets bruts de la capture (variante id_) conservés dans le scratchpad de la collecte, hors entrepôt : fipa/v_a050701_20030805143433.htm, SHA-256 32317007abe84da2dd393d9a026e7148cb2e05ced7ee03bcb0103ed4eb1065fb. Page en français ; édition arabe non cherchée."
+    },
+    {
+      "id": "fipa-2004-11-gaz-mai-2004",
+      "type": "webpage",
+      "title": "Guide de l'investisseur : Gaz naturel (tarifs en hors taxes, « Mai 2004 »)",
+      "author": [
+        {
+          "literal": "Tunisie. Agence de promotion de l'investissement extérieur (FIPA)"
+        }
+      ],
+      "URL": "https://web.archive.org/web/20041104080919/http://www.investintunisia.com:80/fre/poleA/a050702.htm",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "أرشيف الإنترنت (Wayback Machine)",
+      "archive_location": "http://www.investintunisia.com:80/fre/poleA/a050702.htm",
+      "title-short": "Guide de l'investisseur : Gaz naturel",
+      "note": "citation-key: fipa-2004-11-gaz-mai-2004\nFamille : source officielle tunisienne (agence publique ou entreprise relayant la grille). Page archivée (niveau P : page HTML capturée, lue) ; le site d'origine ne sert plus cette page (vérification sommaire le 6 octobre 2026) ; consultée dans la capture (horodatage 20041104080919 lu dans le CDX le 6 octobre 2026). Contenu : gaz « Mai 2004 » : HP 0,1 F − 1,3406 ; MP 15,12 / 14,58 ; BP 18,21 / 17,25 mill/th, grille intermédiaire inconnue de la STEG ; l'étiquette « Mai 2004 » de la grille électrique de la même page n'est pas fiable (c'est encore la grille d'avril 2003). Octets bruts de la capture (variante id_) conservés dans le scratchpad de la collecte, hors entrepôt : fipa/v_a050702_20041104080919.htm, SHA-256 1baac3b8dcc9ce6c3afb3cf8556037aa93bfa5686fef23d37f4ed07b5e6052a8. Page en français ; édition arabe non cherchée."
+    },
+    {
+      "id": "api-2003-04-couts-energie",
+      "type": "webpage",
+      "title": "Coûts des facteurs : Énergie",
+      "author": [
+        {
+          "literal": "Tunisie. Agence de promotion de l'industrie (API)"
+        }
+      ],
+      "URL": "https://web.archive.org/web/20030430011557/http://www.tunisieindustrie.nat.tn:80/html/t_indust/cout66.htm",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "أرشيف الإنترنت (Wayback Machine)",
+      "archive_location": "http://www.tunisieindustrie.nat.tn:80/html/t_indust/cout66.htm",
+      "title-short": "Coûts des facteurs : Énergie",
+      "note": "citation-key: api-2003-04-couts-energie\nFamille : source officielle tunisienne (agence publique ou entreprise relayant la grille). Page archivée (niveau P : page HTML capturée, lue) ; le site d'origine ne sert plus cette page (vérification sommaire le 6 octobre 2026) ; consultée dans la capture (horodatage 20030430011557 lu dans le CDX le 6 octobre 2026). Contenu : grille du 15 août 2000 ; cite la « Décision du Ministre de l'Industrie du 10/08/2000 » (seule trace de l'acte, non retrouvée dans le JORT). Octets bruts de la capture (variante id_) conservés dans le scratchpad de la collecte, hors entrepôt : api_cout66_2003.html, SHA-256 6ab5fdf2e05afcbd7b2f8fa3decfa11939ea0e0eec0d518e63b51c0e089389ad. Page en français ; édition arabe non cherchée."
+    },
+    {
+      "id": "api-2003-10-energie",
+      "type": "webpage",
+      "title": "Coûts des facteurs : Énergie (page de doc.asp)",
+      "author": [
+        {
+          "literal": "Tunisie. Agence de promotion de l'industrie (API)"
+        }
+      ],
+      "URL": "https://web.archive.org/web/20031004185359/http://www.tunisieindustrie.nat.tn:80/fr/doc.asp?mcat=3&mrub=58&msrub=191&dev=true",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "أرشيف الإنترنت (Wayback Machine)",
+      "archive_location": "http://www.tunisieindustrie.nat.tn:80/fr/doc.asp?mcat=3&mrub=58&msrub=191&dev=true",
+      "title-short": "Coûts des facteurs : Énergie",
+      "note": "citation-key: api-2003-10-energie\nFamille : source officielle tunisienne (agence publique ou entreprise relayant la grille). Page archivée (niveau P : page HTML capturée, lue) ; le site d'origine ne sert plus cette page (vérification sommaire le 6 octobre 2026) ; consultée dans la capture (horodatage 20031004185359 lu dans le CDX le 6 octobre 2026). Contenu : même contenu que la page cout66.htm : grille du 15 août 2000 et « Décision du Ministre de l'Industrie du 10/08/2000 » ; captures successives de 20031004185359 à 20040813134836. Octets bruts de la capture (variante id_) conservés dans le scratchpad de la collecte, hors entrepôt : api/energie_20031004185359.html, SHA-256 803cc0fa70b1b2ee0aac967bf6e826941cbb090ef3bd795f611609a879e18deb. Page en français ; édition arabe non cherchée."
+    },
+    {
+      "id": "steg-page-2004-01-tarif",
+      "type": "webpage",
+      "title": "Tarifs de la STEG (page « tarif.htm », grille non datée antérieure à mai 2004)",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "URL": "https://web.archive.org/web/20040126135904/http://www.steg.com.tn:80/tarif.htm",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "أرشيف الإنترنت (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn:80/tarif.htm",
+      "title-short": "Tarifs de la STEG",
+      "note": "citation-key: steg-page-2004-01-tarif\nFamille : source officielle tunisienne (agence publique ou entreprise relayant la grille). Page archivée (niveau P : page HTML capturée, lue) ; le site d'origine ne sert plus cette page (vérification sommaire le 6 octobre 2026) ; consultée dans la capture (horodatage 20040126135904 lu dans le CDX le 6 octobre 2026). Contenu : grille non datée : éclairage 1-2 kVA 65 millimes les 50 premiers kWh et 90 le reste ; ≥ 3 kVA 90 ; gaz de ville 162 / 154 mill/m3 ; première capture utile du site de la STEG (niveau C : page sans date d'effet). Octets bruts de la capture (variante id_) conservés dans le scratchpad de la collecte, hors entrepôt : steg_tarif.htm, SHA-256 02000ef50b7441e302266c35047c36a8e15b347243a906730faa68ee49895012. Page en français ; édition arabe non cherchée."
+    },
+    {
+      "id": "steg-grille-2005-02-01",
+      "type": "webpage",
+      "title": "Tarifs de l'électricité de la STEG, grille du 1er février 2005 (page arabe « ar/clients_res/tarif.html »)",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "URL": "https://web.archive.org/web/20050309065209/http://www.steg.com.tn:80/ar/clients_res/tarif.html",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "أرشيف الإنترنت (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn:80/ar/clients_res/tarif.html",
+      "title-short": "Tarifs de l'électricité de la STEG, grille du 1er février 2005",
+      "note": "citation-key: steg-grille-2005-02-01\nFamille : source officielle tunisienne (agence publique ou entreprise relayant la grille). Page archivée (niveau P : page HTML capturée, lue) ; le site d'origine ne sert plus cette page (vérification sommaire le 6 octobre 2026) ; consultée dans la capture (horodatage 20050309065209 lu dans le CDX le 6 octobre 2026). Contenu : page arabe portant « بداية من 01/02/2005 » : BT tranche économique 66 ; normale 103 ; redevance 200 mill/kVA/mois ; éclairage public 90 ; chauffe-eau 77 ; chauffage-climatisation 113 ; irrigation uniforme 69. Octets bruts de la capture (variante id_) conservés dans le scratchpad de la collecte, hors entrepôt : ar_res_200503.html, SHA-256 fbb866f1fad14d5eef501ed6dabe6f27aa522d7638034557de7279ae1c275136. Page arabe de la STEG. "
+    },
+    {
+      "id": "steg-grille-2013-03-01",
+      "type": "webpage",
+      "title": "Tarifs de l'électricité de la STEG, grille du 1er mars 2013 (moyenne et haute tension ; gaz haute pression)",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            3,
+            1
+          ]
+        ]
+      },
+      "URL": "https://web.archive.org/web/20130512122123/http://www.steg.com.tn/fr/clients_ind/tarifs_mt.html",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "أرشيف الإنترنت (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn/fr/clients_ind/tarifs_mt.html",
+      "title-short": "grille du 1er mars 2013 (moyenne et haute tension ; gaz haute pression",
+      "note": "citation-key: steg-grille-2013-03-01\nGrille de la STEG portant sa date d'effet (famille : source officielle tunisienne). Page ou document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture (horodatage 20130512122123 lu dans le CDX le 6 octobre 2026). MT : jour 132, pointe 197, soir 154, nuit 100, prime 5 000 mill/kW-mois, uniforme 143 (1 200) ; pages compagnes : HT capture 20130531031738 (tarifs_ht.html), gaz HP capture 20130512102554 (tarifs_hp.html) ; niveau H ; aucune copie locale. Date de la table / d'effet d'après la note documentaire compensation-tarifs-mt-ht-gaz. Document en français."
+    },
+    {
+      "id": "steg-grille-2018-05-01",
+      "type": "report",
+      "title": "Table des tarifs de la STEG : électricité moyenne tension et gaz naturel à compter du 1er mai 2018 (hors taxes), réf. FM-53 / IE 02",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            5,
+            29
+          ]
+        ]
+      },
+      "URL": "https://web.archive.org/web/20180614020128/http://www.steg.com.tn:80/dwl/tarifs/2018/tarifsmt_fr.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "أرشيف الإنترنت (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn:80/dwl/tarifs/2018/tarifsmt_fr.pdf",
+      "title-short": "réf. FM-53 / IE 02",
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "note": "citation-key: steg-grille-2018-05-01\nGrille de la STEG portant sa date d'effet (famille : source officielle tunisienne). Page ou document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture (horodatage 20180614020128 lu dans le CDX le 6 octobre 2026). table du 29 mai 2018 (direction des études et de la planification) ; MT : jour 173, pointe 294, soir 252, nuit 133, prime 8 000, uniforme 189 (2 600) ; gaz MP 44,5 / 43,9 mill/th (capture 20180613124840 de tarifsmp_fr.pdf) ; copies locales : tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_mt_2018b.pdf (1 599 703 octets, 1 pages, SHA-256 df4415bdaeb161c2bac2fd1ba7e628abc561cc3f20bdcc220df8576519b37582) et tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_mp_2018b.pdf (1 559 087 octets, 1 pages, SHA-256 42572b5c90b19c612ee17963e5d2d2aebce68cf198f507abf58e10cc74e884a3) ; niveaux I (PDF lu à l'image) et H (pages archivées concordantes). Date de la table / d'effet d'après la note documentaire compensation-tarifs-mt-ht-gaz. Document en français."
+    },
+    {
+      "id": "steg-grille-2022-10-01-mt",
+      "type": "webpage",
+      "title": "Tarifs de l'électricité de la STEG, grille du 1er octobre 2022 (moyenne tension, hors taxes)",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            1
+          ]
+        ]
+      },
+      "URL": "https://web.archive.org/web/20230330151526/https://steg.com.tn/fr/clients_ind/tarifs_mt.html",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "أرشيف الإنترنت (Wayback Machine)",
+      "archive_location": "https://steg.com.tn/fr/clients_ind/tarifs_mt.html",
+      "title-short": "grille du 1er octobre 2022 (moyenne tension, hors taxes)",
+      "note": "citation-key: steg-grille-2022-10-01-mt\nGrille de la STEG portant sa date d'effet (famille : source officielle tunisienne). Page ou document retiré du site de la STEG (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture (horodatage 20230330151526 lu dans le CDX le 6 octobre 2026). MT : jour 290, pointe 417, soir 377, nuit 222, prime 11 000, uniforme 291 (5 000) ; autre capture de la page : 20240519131811 ; niveau H ; aucune copie locale. Date de la table / d'effet d'après la note documentaire compensation-tarifs-mt-ht-gaz. Document en français."
+    },
+    {
+      "id": "steg-regime-horaire-2017",
+      "type": "webpage",
+      "title": "Régime horaire (régime à trois postes horaires sur toute l'année ; régime à quatre postes horaires en été)",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "URL": "https://web.archive.org/web/20170421225223/http://www.steg.com.tn:80/fr/clients_ind/regime_horaire.html",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "أرشيف الإنترنت (Wayback Machine)",
+      "archive_location": "http://www.steg.com.tn:80/fr/clients_ind/regime_horaire.html",
+      "title-short": "STEG, Régime horaire (2017)",
+      "note": "citation-key: steg-regime-horaire-2017\nPage non datée de la STEG, capture du 21 avril 2017 (horodatage 20170421225223 lu dans le CDX le 6 octobre 2026) ; l'image HtMt_L.jpg de la page donne les heures des postes horaires, lue le 6 octobre 2026 (niveau I). Les heures des postes de 2004 à 2013 ne sont pas établies (l'image du régime de 2012 n'est pas archivée). Famille : source officielle tunisienne. Document en français."
+    },
+    {
+      "id": "jouini-lustig-moummi-shimeles-2017-ceq38",
+      "type": "report",
+      "title": "Fiscal Policy, Income Redistribution and Poverty Reduction: Evidence from Tunisia",
+      "author": [
+        {
+          "family": "Jouini",
+          "given": "Nizar"
+        },
+        {
+          "family": "Lustig",
+          "given": "Nora"
+        },
+        {
+          "family": "Moummi",
+          "given": "Ahmed"
+        },
+        {
+          "family": "Shimeles",
+          "given": "Abebe"
+        }
+      ],
+      "collection-title": "CEQ Working Paper",
+      "publisher": "CEQ Institute, Tulane University",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            6
+          ]
+        ]
+      },
+      "URL": "https://web.archive.org/web/20180413124145/http://www.commitmentoequity.org:80/wp-content/uploads/2017/08/CEQ_WP38_Jouini-Lustig-Moummi-Shimeles_June2017.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            6
+          ]
+        ]
+      },
+      "archive": "أرشيف الإنترنت (Wayback Machine)",
+      "archive_location": "http://www.commitmentoequity.org:80/wp-content/uploads/2017/08/CEQ_WP38_Jouini-Lustig-Moummi-Shimeles_June2017.pdf",
+      "title-short": "Jouini et al. (2017), CEQ WP 38",
+      "note": "citation-key: jouini-lustig-moummi-shimeles-2017-ceq38\nCEQ Working Paper n° 38, mai 2016, révisé en juin 2017, 26 p. (page de titre lue ; titre courant : « Fiscal Incidence and Poverty Reduction: Evidence from Tunisia ») ; chapitre 18 du Commitment to Equity Handbook (Lustig éd., 2018) ; l'article de revue (Review of Income and Wealth, 2018) n'est pas collecté. Famille : rapport extérieur. Le site d'origine n'a pas servi le fichier le 6 octobre 2026 (délai de connexion dépassé) : PDF téléchargé dans la capture (horodatage 20180413124145 lu dans le CDX le 6 octobre 2026). Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/ceq_2017_wp38_jouini_lustig_moummi_shimeles_tunisia.pdf (994 762 octets, 26 pages, SHA-256 066ae1ee6c006db2291e6bb1558094bedad2f54652e2e48447f36f1309ba939a), ignorée par git. Enquête de l'INS de 2010 : 23 764 individus, 5 456 ménages (p. 14) ; ce document ne donne AUCUNE répartition par produit : subventions = un seul agrégat (produits de base, énergie, transport) : 2,4 % du PIB en 2010 (1,2 alimentation, 1 énergie, 0,3 transport ; p. 12), 6,9 % en 2013 ; parts par décile, tableau 18-8, p. 21 (alignement des colonnes à contrôler à l'image) ; incohérence : « 2,3 percent of government spending » (p. 21) contre « 2.4 percent of the GDP » (p. 12). Preuve : couche texte. Document en anglais (pas d'édition arabe)."
     }
   ]
 }
