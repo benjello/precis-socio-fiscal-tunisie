@@ -229,44 +229,4 @@ figtools.figure_tabs(
 
 <!-- RECHERCHE r-atmp-echelle-modificatifs : modificatif de l'échelle des taux AT/MP après le décret n° 99-1010 (voir docs/recherches.yml) -->
 
-## Le barème et les accidents observés par activité {#sec-cot-at-sinistralite}
-
-Le barème de cotisation du décret n° 99-1010 et les statistiques d'accidents ne mesurent pas la même chose. Le premier fixe des taux **en pourcentage des salaires**, par activité de l'employeur affilié à la CNSS **après transfert du point** [@decret99-1010, art. 1^er^, art. 2 nouveau du décret n° 95-538] ; les secondes comptent les accidents déclarés à la CNAM et rapportent les **accidents avec arrêt** au nombre de travailleurs assujettis, pour 1 000 travailleurs [@cnam-statistiques-atmp-2023, pp. PDF 4, 13 et 15]. Les décès déclarés comprennent ceux survenus au travail et ceux sur le trajet [@cnam-statistiques-atmp-2023, pp. PDF 24 et 26].
-
-La figure rapproche **dix activités** dont le libellé CNAM correspond à un point précis du barème de 1999, ou à des sous-activités qui portent **toutes le même taux** — c'est le cas des dix branches alimentaires. Elle ne fabrique pas de taux moyen pour la chimie, les transports, les services ou les autres rubriques qui regroupent plusieurs points à taux différents. Deux nuages de points placent le taux du **barème de 1999 en abscisse** : la fréquence des accidents avec arrêt en ordonnée dans le premier, puis le nombre d'accidents mortels **rapporté à 1 000 accidents déclarés** dans le second. Les trois couleurs donnent l'évolution **2021–2023**, avec une droite de tendance et une corrélation calculées séparément pour chaque année ; les nombres d'accidents et de décès restent consultables dans l'onglet « Données ». Ce rapprochement descriptif n'établit ni le taux effectivement payé par chaque employeur ces années-là, ni un effet de la cotisation sur le risque.
-
-```{python}
-#| label: fig-atmp-secteurs
-#| echo: false
-#| output: asis
-import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
-from figures import atmp_secteurs as atsec
-import figtools
-figtools.figure_tabs(
-    [("Accidents avec arrêt", atsec.fig_accidents()),
-     ("Accidents mortels", atsec.fig_mortalite())], atsec.table(),
-    "atmp-echelles-1995-1999", "cnam-atmp-2023-ventilations-brutes",
-    "cnam-atmp-2023-activites-frequence-mortels-bruts",
-    slug="fig_atmp_secteurs",
-    caption="Taux légal AT/MP du barème de 1999 et sinistralité observée par activité, 2021-2023",
-    note_lecture=(
-        "**Chaque point est une activité ; son abscisse est le taux du barème légal de 1999 "
-        "après transfert du point du régime général, en % des salaires.** La première vue "
-        "porte en ordonnée la fréquence des accidents **avec arrêt**, pour 1 000 travailleurs "
-        "assujettis ; la seconde, les accidents **mortels pour 1 000 accidents déclarés**, "
-        "et non pour 1 000 travailleurs. Les lettres renvoient aux activités listées sous "
-        "les graphiques. Gris : 2021 ; orange : 2022 ; bleu : 2023. Les droites pointillées "
-        "sont des ajustements linéaires sur **dix activités seulement** ; « r de Pearson » "
-        "mesure l'association brute, pas un effet causal. Les décès comprennent ceux du "
-        "trajet et peuvent être révisés pendant cinq ans. Le champ de la CNAM inclut "
-        "des travailleurs occasionnels des chantiers publics, alors que le barème légal "
-        "montré vise les employeurs affiliés à la CNSS. La fréquence 2023 utilise la "
-        "ventilation des travailleurs assujettis **de 2022**. Le tableau des accidents "
-        "par secteur totalise un cas de plus que le total national en 2022 ; les valeurs "
-        "sont conservées. Le rapprochement des intitulés avec le décret n'est pas un tableau "
-        "de passage officiel. Quinze autres rubriques sont écartées faute de taux unique, "
-        "de correspondance ou de ligne de décès ; aucune cotisation moyenne n'est inventée."),
-)
-```
-
 Les ressources et les emplois du régime de réparation, de 1995 à 2004, et ceux de la protection sociale des travailleurs, de 1997 à 2004, sont exposés dans le livre [« Les caisses de sécurité sociale »](../caisses/_comptes_longue_periode.html#sec-caisses-cnss-atmp-pst).

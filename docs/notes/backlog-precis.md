@@ -448,8 +448,14 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
 
 ## Cotisations sociales
 
-- **Accidents du travail par activité et taux légal — nuages de points ajoutés le 5 octobre 2026**
-  (`#fig-atmp-secteurs`, chapitre `_accidents_travail.qmd`). Le rapport CNAM
+- **Accidents du travail par activité et taux légal — mis en réserve le 6 octobre 2026**
+  (`docs/reserve/atmp-bareme-sinistralite.md`). Les nuages de points ajoutés la veille
+  (`fig-atmp-secteurs`) sont **retirés du chapitre** `_accidents_travail.qmd` : une relectrice
+  signale que le rattachement des employeurs aux activités (NAT61 à la CNSS) n'est pas fiable,
+  ce qui fausse la sinistralité par activité. Module et données conservés, plus rendus. À
+  reprendre quand une source publiée établira la classification (passage NAT61 → NAT2009) et
+  un tableau de passage par codes d'activité ; conditions détaillées dans la fiche. Constat
+  d'origine, conservé pour la reprise : le rapport CNAM
   2023, PDF arabe lisible, porte la fréquence des accidents avec arrêt par
   activité (PDF 15), le nombre d'accidents (PDF 13) et celui des décès
   (PDF 26) pour 2021–2023 ; les séries sont conservées séparément dans
