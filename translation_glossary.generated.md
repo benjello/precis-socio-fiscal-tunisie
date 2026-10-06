@@ -24,7 +24,6 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Assujetti | الخاضع للأداء |  |
 | Assuré social | المضمون الاجتماعي |  |
 | Augmentation optionnelle de l'âge de mise à la retraite | الترفيع الاختياري في سنّ الإحالة على التقاعد |  |
-| Auto-ciblage | الاستهداف الذاتي |  |
 | Autonomie budgétaire | الاستقلالية في الميزانية |  |
 | Autonomie financière | الاستقلالية المالية |  |
 | Avance sur la taxe de formation professionnelle | التسبقة على الأداء على التكوين المهني |  |
