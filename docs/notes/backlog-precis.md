@@ -24,7 +24,7 @@ extraits des lois de finances sont dans le dossier voisin `PDFs/Lois_de_Finances
 
 | Livre | État du texte | Première lecture faisable |
 |---|---|---|
-| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et un chapitre transversal sur les dépenses fiscales et les régimes d'incitation (6 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées ; déductions, régime suspensif et obligations encore à rédiger | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
+| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et un chapitre transversal sur les dépenses fiscales et les régimes d'incitation (6 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; PNAFN historique sans sources pour ses onze dates et montants | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
@@ -60,10 +60,41 @@ présent localement : vérifier ses annexes sur l'image après OCR. Le code fisc
 1990 a été océrisé le 4 octobre 2026 ; ses annexes II et III (forfait) sont relues à l'image
 (`docs/notes/fiscalite-regime-forfaitaire.md`).
 
-**Rédaction à partir des textes déjà cités, puis vérification des versions.** La TVA
-attend encore trois développements : déductions (art. 9-11), régime suspensif et
-obligations déclaratives/de facturation (art. 18 et suivants) ; voir les `TODO` de
-`precis/fr/fiscalite/_tva.qmd`. Ne pas les confondre avec une simple reprise de forme.
+**TVA — déduction, crédit et suspension (`_tva.qmd`, `@sec-tva-deduction`, rédigé le
+6 octobre 2026)** d'après `docs/notes/fiscalite-tva-deductions-documentation.md`. Restent
+ouverts, avec l'état des sources :
+
+- **séries budgétaires après 2014 et avant 2010** (stock de crédit, restitutions, retenue à
+  la source) : les rapports annuels de la DGI de 2013 et 2014 sont dans `tunisia-data` mais
+  leur texte arabe n'est pas exploitable par recherche — **à lire à l'image**, puis chercher
+  les millésimes suivants ; lois de règlement, rapports de la Cour des comptes et rapports
+  annuels de performance de la mission Finances **non examinés**. Le tableau
+  `@tbl-tva-credit-donnees` est fait main en attendant ;
+- **dates d'effet à relire au fascicule** : lois de finances pour 1991, 1992, 1993 et 1994
+  (art. 50, 66, 68, 114, 31-32 : scans locaux, à relire à l'image — seule la mensualisation
+  de 1994 est écrite au chapitre, sans date ni citation littérale), loi n° 2007-69 (art. 10
+  et 11 : article final à lire, JORT n° 104 de 2007, présent sur pist.tn), loi de finances
+  complémentaire pour 2014 (art. 27) ;
+- **délai de visa de la restitution entre 1998 et 2001** : l'art. 41 de la LF 1998 récrit
+  l'alinéa sans délai, le CDPF ne fixe 90 et 30 jours qu'au 1^er^ janvier 2002 ; droit
+  applicable dans l'intervalle non établi (note commune n° 11/1999 à obtenir) ;
+- **relèvement de la limite de 20 % antérieur à 1996** : le mot « également » de l'art. 41 de
+  la LF 1996 le suggère ; le chapitre n'en dit rien, la fiche
+  `r-tva-limite-restitution-avant-1996` proposée au § 7 de la note n'est donc pas versée ;
+- **relevés sur le seul code consolidé, non écrits au chapitre** : exclusions de l'art. 10-4
+  (LF 2017, art. 34), dons (LF 2004, art. 57), art. 19 *quinquies* (LF 2023, art. 46),
+  déductions de stock sans restitution (LF 2019 et 2022), origine de l'art. 13 *quater* ;
+  à lire au JORT avant de les écrire ;
+- **clés CSL manquantes** : rapport de synthèse du Conseil national de la fiscalité
+  (novembre 2013) et projet des Assises (novembre 2014), source de la valeur de 298,9 MD
+  pour la retenue de 2012 ; rapports sur le projet de budget de l'État pour 2013 et 2014 ;
+- **`docs/notes/fiscalite-tva-reformes.md`, ligne LF 2022, art. 52, à corriger** : la fin du
+  régime suspensif vaut pour les sociétés de commerce international et les entreprises de
+  services **totalement exportatrices comprises** (JORT n° 119 du 28 décembre 2021,
+  p. 3097) ; le chapitre est corrigé ;
+- **mesure du rapport sur le budget 2025** (restitution du crédit des commerçants sur leurs
+  stocks) absente de la loi n° 2024-48 : ni la mesure ni son rendement ne sont écrits.
+
 Les réformes de 1988 à 2026 sont rédigées d'après `docs/notes/fiscalite-tva-reformes.md` ;
 son § 8 énumère ce qui reste non établi, et qui n'est donc pas écrit au chapitre : date
 d'effet des lois de finances pour 1989 à 1993 (lues à l'image, muettes sur une date
@@ -1192,7 +1223,7 @@ l'information.
 | `_impot_societes.qmd` | conforme | — |
 | `_impot_fortune.qmd` | conforme ; s'achève sur une case vide (aucune série de rendement) | traduction arabe à déclarer dans le `_quarto.yml` AR |
 | `_droits_consommation.qmd` | historique remonté en tête | la chronologie du périmètre reste un tableau sans récit texte par texte — signalé, non confirmé |
-| `_tva.qmd` | conforme au plan type : historique, architecture de 1988, évolution réforme par réforme, longue période | déductions, achats en suspension et obligations restent à écrire sur les articles du code ; le tableau des générations de taux est fait main, à engendrer quand la série législative des taux sera complète en amont |
+| `_tva.qmd` | conforme au plan type : historique, architecture de 1988, évolution réforme par réforme, longue période | `@sec-tva-deduction` suit le même plan (mécanisme, textes, données) ; le tableau des données du crédit (`@tbl-tva-credit-donnees`) est fait main, à engendrer quand les séries seront prolongées ; le tableau des générations de taux est fait main, à engendrer quand la série législative des taux sera complète en amont |
 | `_impot_revenu.qmd` | conforme, à sa manière | rien sur la forme ; restent deux sections à ÉCRIRE, voir plus bas |
 | `retraites/_secteur_*.qmd` | **rangés par mécanisme, et c'est bien** | ne pas y appliquer le plan type |
 | `_regime_indiciaire.qmd` | fait le travail sous d'autres noms | ne rien reprendre sur la forme |
