@@ -1492,13 +1492,19 @@
     couverture: 'Titres de jort_cache, 1956-2026 : 18 textes tarifaires, le dernier du 11 août 1992 ; aucun texte tarifaire dans les titres de 1988 à 2026 portant électricité, STEG ou gaz naturel (seulement TVA, garanties, normes, prix d''achat des renouvelables de 2024-2025). Index matière (termes en tarif ou prix, joints à électricité ou gaz, depuis 1990) : arrêté du 19 décembre 1990 et arrêté du 9 octobre 2024 (prix d''achat du photovoltaïque). Type « décision » à titre tarifaire, 1992-2010 : la seule décision du 11 août 1992. Intitulés arabes du miroir iort (32 118 fichiers) : un seul résultat, le décret n° 61-47. Plein texte des 1 962 fascicules français de 1994 à 2012 : aucune occurrence, mais le contrôle échoue (le décret n° 2004-9 sur la TVA de l''électricité n''est pas atteint par la même méthode) : ce balayage ne prouve rien. Lacunes : la rubrique « avis et communications », où parut la décision de 1992, peut ne pas être indexée ; 1993 sans texte exploitable ; 2013-2026 non balayés au plein texte ; corps arabe des textes non parcouru.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-06
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Seconde passe du 6 octobre 2026 : un acte est nommé sans être lu — la « Décision du Ministre de l''Industrie du 10/08/2000 », que l''Agence de promotion de l''industrie cite comme source de la grille électricité et gaz du 15 août 2000 (pages archivées de 2003). Elle n''est pas dans le plein texte de l''édition française du Journal officiel de 1994 à 2006 (1 356 fascicules décodés ; semaines des ajustements de 1994, 2000, 2001, 2003 et 2004 vérifiées une à une), non plus que les actes d''octobre 1993, juin 1994, août 2001, avril 2003 et mai 2004. Lacunes : édition arabe ; 2007-2026 au plein texte décodé ; fascicules à couche faible.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
   a_faire:
   - lire à l'image les « avis et communications » des JORT n° 75 à 86 de 1993 (5 octobre-12 novembre)
   - lire le décret n° 2015-307 du 1er juin 2015, qui modifie le décret n° 91-1996
   - demander à la STEG la nature et la référence de l'acte qui homologue chaque grille depuis 1992
 
 - id: r-tarifs-electricite-grilles-1993-2003
-  objet: grilles tarifaires de l'électricité et du gaz en vigueur entre août 1992 et mai 2004, dont l'ajustement d'octobre 1993 signalé par la Banque centrale
+  objet: grilles tarifaires de l'électricité et du gaz entre août 1992 et mai 2004 — reste, après la passe du 6 octobre 2026, le jour d'effet et la grille complète d'octobre 1993 et de juin 1994, et les grilles du gaz de 2001 à 2003
   ou: [precis/fr/compensation/_electricite_gaz.qmd#sec-compensation-eg-grilles]
   requetes:
     titres_fts: [(tarif OR tarifs OR tarification OR prix) AND (electricite OR electrique OR gaz OR STEG)]
@@ -1512,6 +1518,12 @@
     role: documentaliste
     sources: [jort_cache, corpus_local]
     couverture: 'jort_cache : aucun texte tarifaire après le 11 août 1992. Archives du web du site de la STEG : première capture utile le 26 janvier 2004 ; aucun rapport annuel de la STEG antérieur à 2005. Rapports annuels de la BCT de 1993 à 2003 (motif tarif ou prix avec électricité ou gaz) : deux mentions seulement, octobre 1993 (hausse) et 1999 (révision à la baisse), sans grille. Lacunes : fascicules de 1993 à océriser ; étude de l''ANER de 2000, collectée, non lue ; annuaires de l''INS non cherchés.'
+    couvert_jusqu_au: 2004-05-01
+    resultat: aucun
+  - date: 2026-10-06
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Seconde passe du 6 octobre 2026, résultat partiel : cinq grilles basse tension établies hors Journal officiel (octobre 1993 : 59 / 79 et 1er août 2001 : 63 / 90, par le rapport ESMAP n° 307/05, « Source : STEG » ; juin 1994 : 61 / 83, 15 août 2000 : 62 / 87 et 1er avril 2003 : 65 / 94, par les pages archivées de la FIPA, de l''APIA et de l''API), dates d''effet de 2000 à 2004 par la Banque africaine de développement. Journal officiel : 1993, n° 66 à 100, océrisés en entier, aucun texte tarifaire ; 1994 à 2006, 1 356 fascicules à couche texte décodée, aucun motif tarifaire (kWh absent de tous). Restent : le jour d''effet d''octobre 1993 et de juin 1994 ; la moyenne et la haute tension et le gaz d''octobre 1993 ; les grilles du gaz de 2001 à 2003 ; la contradiction de 2003 (90 sur la page de la STEG, 94 sur celle de la FIPA). Lacunes : édition arabe non ouverte ; 1993 n° 1 à 65 ; fascicules à couche faible listés dans docs/notes/compensation-tarifs-1993-2004.md.'
     couvert_jusqu_au: 2004-05-01
     resultat: aucun
   a_faire:
