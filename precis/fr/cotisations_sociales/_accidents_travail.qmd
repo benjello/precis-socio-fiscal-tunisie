@@ -63,9 +63,145 @@ onglets([
 
 Les deux éditions du texte ne nomment pas toujours le même secteur : le point 14-3 vise « l'industrie du cuir » dans l'édition française et l'industrie de la chaussure (صناعة الأحذية) dans l'édition arabe, qui fait foi ; le taux est le même.
 
-Le même article réécrit la cotisation forfaitaire due, dans le secteur agricole non régi par la loi n° 89-73 et pour les pêcheurs payés à la part sur des bateaux de moins de trente tonnes, au titre des travailleurs dont le salaire n'excède pas deux fois le salaire minimum agricole garanti — l'employeur pouvant opter, irrévocablement, pour les salaires effectifs [@decret95-538, art. 4] : elle passe de 1 % à 0,80 % du salaire minimum agricole garanti journalier, affecté d'un coefficient de 1,5 et multiplié par un nombre de journées de travail fixé par type de culture ou d'activité, dont le tableau est révisé [@decret95-538, art. 4 ; @decret99-1010, art. 1^er^].
+Le même décret réécrit le second paragraphe de l'article 4 du décret n° 95-538, qui fixe la cotisation forfaitaire du secteur agricole et de la pêche à la part : la règle et sa révision sont exposées avec les autres forfaits (@sec-cot-at-forfaits).
 
-<!-- TODO (rédacteur) : présenter les autres cotisations forfaitaires du décret n° 95-538 — chauffeurs de louage et de taxis, employés de maison, travailleurs temporaires (art. 5 à 7) — et la modulation des taux (art. 10 à 27). Le modèle ne les porte pas : openfisca-tunisia#471. -->
+## L'assiette de la cotisation {#sec-cot-at-assiette}
+
+La cotisation d'[accidents du travail](#g-accident-du-travail) et de [maladies professionnelles](#g-maladie-professionnelle) a trois bases, selon la personne employée : en principe, les salaires réels, tels que les définit le régime général de sécurité sociale ; par dérogation, un [salaire forfaitaire](#g-salaire-forfaitaire) fixé par décret pour quelques catégories ; pour les occupations étrangères au contrat de travail ordinaire, enfin, le salaire d'un travailleur comparable.
+
+### Le principe : les salaires de l'article 42 {#sec-cot-at-assiette-principe}
+
+La loi n° 94-28 ne définit pas d'[assiette](#g-assiette-cotisations) propre au régime : « Les cotisations sont calculées et les prestations liquidées sur la base de la totalité des éléments pris en considération pour la détermination des cotisations au titre du régime de sécurité sociale prévu par l'article 42 de la loi n° 60-30 du 14 décembre 1960, relative à l'organisation des régimes de sécurité sociale » [@loi94-28, art. 17, al. 1]. La même base sert donc au prélèvement et à la réparation. Le décret n° 95-538 reprend la règle pour le prélèvement : « Les cotisations sont calculées sur la base des salaires tels que fixés par l'article 42 de la loi susvisée n° 60-30 du 14 décembre 1960 » [@decret95-538, art. 3]. La déclaration trimestrielle de l'employeur « doit comprendre toutes les sommes revenant aux salariés conformément à l'article 17 ci-dessus, qu'elles soient servies effectivement ou estimées » [@loi94-28, art. 18, al. 1].
+
+L'article 42 de la loi n° 60-30, auquel ces deux textes renvoient, a connu au moins deux rédactions. Celle de 1960 énumère ce qu'il faut entendre par salaire, rémunération ou gain pour le calcul des cotisations et des prestations : les sommes en espèces reçues à titre de salaire, de traitement, de commission ou d'accessoires du salaire — heures supplémentaires, jours de congé, primes et indemnités comprises —, les avantages en nature, les pourboires et les participations aux bénéfices [@loi60-30, art. 42]. Les modifications que cet article a pu recevoir entre 1960 et 1995 ne sont pas établies ici.
+
+<!-- TODO (documentaliste) : établir si l'article 42 de la loi n° 60-30 a été modifié entre 1960 et 1995 (le décret n° 95-538 vise la loi n° 60-30 « et notamment la loi n° 88-38 ») ; relire la rédaction de 1960 sur un exemplaire net avant toute citation mot pour mot (JORT n° 57 des 13-16 décembre 1960, éd. française p. 1605, impression pâle) ; lire l'édition arabe de 1960. -->
+
+La loi n° 95-101 du 27 novembre 1995, promulguée la même année que le décret n° 95-538 et après lui, substitue à cette énumération une définition générale : les cotisations « sont assises sur l'ensemble des éléments des salaires, émoluments, indemnités et tous autres avantages, en espèces ou en nature liés à la qualité de salarié, accordés directement ou indirectement, y compris les avantages accordés par l'intermédiaire de structures issues de l'entreprise et ce, quelles que soient les modalités de leur octroi ». Sont exclus, en tout ou en partie, les avantages « revêtant un caractère de remboursement de frais, d'indemnisation ou d'action sociale, culturelle et sportive au profit du salarié », dont un décret fixe la liste, les taux et les plafonds d'exemption [@loi95-101, art. 1^er^, art. 42 nouveau de la loi n° 60-30]. La loi n° 95-101 n'énonce pas de date d'effet.
+
+Les décrets qui dressent cette liste sont pris au titre des régimes de sécurité sociale, sur le fondement de l'article 42, et ne visent pas la loi n° 94-28. Ils n'atteignent la cotisation d'accidents du travail que par le renvoi de l'article 17 de cette loi et de l'article 3 du décret n° 95-538 : c'est une lecture de ces renvois, qu'aucune disposition expresse identifiée ici ne confirme. L'assiette du régime général est présentée au chapitre de l'assiette (@sec-cot-salaire-reel).
+
+<!-- TODO (bibliographe) : créer les clés des décrets fixant la liste des avantages exclus de l'assiette — n° 96-341 du 6 mars 1996 (JORT n° 22, pp. 536-537), n° 99-1011 du 10 mai 1999 (JORT n° 40, pp. 735-736 ; effet au 1er avril 1999), n° 2003-1098 du 19 mai 2003 (JORT n° 41, pp. 1663-1664), n° 2008-173 du 22 janvier 2008 (JORT n° 8) — pour les citer ici et dans _assiette.qmd. -->
+<!-- TODO (documentaliste) : ces décrets, sauf le n° 99-1011, ne sont connus que par l'édition française, à relire à l'image avant citation ; calculer la date exécutoire de la loi n° 95-101 et des décrets n° 96-341, 2003-1098 et 2008-173 (loi n° 93-64, art. 2) ; la loi n° 95-101, art. 3, dernier alinéa, écarte les cotisations AT/MP d'une dispense transitoire dont le contenu reste à exposer. -->
+
+### Les salaires forfaitaires {#sec-cot-at-forfaits}
+
+La dérogation est inscrite dans la loi : « Un décret fixe une évaluation forfaitaire des salaires et revenus sur la base de laquelle sont calculées les cotisations pour certaines catégories ou branches d'activité régies par les dispositions de la présente loi » [@loi94-28, art. 17, al. 2]. Elle a un second fondement dans l'article 42 de la loi n° 60-30, dont le dernier alinéa, déjà présent en 1960 et conservé par la loi n° 95-101, dispose que « Des décrets pourront déterminer une évaluation forfaitaire des salaires, rémunérations ou gains dans certaines professions » [@loi60-30, art. 42 ; @loi95-101, art. 1^er^]. Le décret n° 2000-1439 vise l'un et l'autre article [@decret2000-1439].
+
+Le décret n° 95-538 institue quatre forfaits, exprimés en multiples du [salaire minimum agricole garanti](#g-smag) (SMAG) ou du [salaire minimum interprofessionnel garanti](#g-smig) (SMIG) (@tbl-atmp-forfaits).
+
+- **Le secteur agricole et la pêche à la part.** « Par dérogation aux dispositions des articles 1^er^, 2 et 3 », les cotisations du secteur agricole non régi par la loi n° 89-73 et des pêcheurs [payés à la part](#g-remuneration-a-la-part) sur des bateaux de moins de trente tonneaux de jauge sont calculées sur un salaire forfaitaire, pour les seuls travailleurs dont le salaire n'excède pas deux fois le SMAG. La cotisation annuelle est une fraction du SMAG journalier, affecté d'un coefficient de 1,5 et multiplié par un nombre de journées de travail que le décret fixe par type de culture ou d'activité (@tbl-atmp-journees). Les réparations, elles, ne sont pas calculées sur cette base mais sur un salaire forfaitaire annuel distinct : le SMAG rapporté à 300 jours, affecté d'un coefficient de 1, 1,5 ou 2 selon la spécialité du travailleur. L'employeur peut opter pour les salaires effectifs ; l'option est irrévocable [@decret95-538, art. 4].
+- **Les chauffeurs de [louage](#g-louage) et de taxis et les « masseurs » des bains maures.** Leurs cotisations annuelles sont calculées sur un salaire forfaitaire égal au SMIG du régime de 48 heures, rapporté à 2 400 heures par an et affecté d'un coefficient de 1,5 ; « Les réparations sont calculées sur la même base » [@decret95-538, art. 5].
+- **Les [employés de maison](#g-employes-de-maison).** L'article fixe directement la cotisation, en pourcentage du SMAG rapporté à 300 jours par an, à un taux qui croît des aides de ménage aux conducteurs de voitures ; les réparations sont calculées sur la même base [@decret95-538, art. 6].
+- **Les travailleurs employés temporairement auprès des individus.** Leurs cotisations sont calculées « selon les branches d'activité », sur un salaire forfaitaire équivalent au SMIG rapporté à 200 heures par mois, affecté d'un coefficient de 1 pour les travailleurs ordinaires et de 2 pour les travailleurs qualifiés ; elles sont dues pour la période d'emploi, toute fraction d'un mois commencé comptant pour un mois entier ; les réparations sont calculées sur la même base [@decret95-538, art. 7].
+
+Les quatre articles ne traitent pas le taux de la même façon. Les articles 4 et 6 énoncent un taux qui leur est propre. L'article 7 renvoie aux branches d'activité, sans dire laquelle vaut pour un particulier employeur, ni préciser le régime horaire du SMIG qu'il retient. L'article 5 ne dit rien du taux : il ne rattache les chauffeurs et les masseurs à aucune classe de l'échelle de l'article premier.
+
+| Catégorie | Base de la cotisation | Coefficient | Taux | Base des réparations | État d'origine (1^er^ janvier 1995) | Modifications datées |
+|---|---|---|---|---|---|---|
+| Secteur agricole hors loi n° 89-73 et pêcheurs payés à la part sur bateaux de moins de trente tonneaux de jauge, pour les travailleurs payés au plus deux fois le SMAG [@decret95-538, art. 4] | SMAG journalier × nombre de journées de travail fixé par type de culture ou d'activité (@tbl-atmp-journees) | 1,5 | propre à l'article : 1 %, puis 0,80 % | salaire forfaitaire annuel distinct : SMAG × 300 jours × 1 (travailleurs agricoles ordinaires, pêcheurs), 1,5 (travailleurs et pêcheurs spécialisés, ramendeurs, mécaniciens, seconds des patrons de pêche) ou 2 (travailleurs agricoles qualifiés, patrons de pêche) | taux de 1 % ; tableau des journées de 1995 | **1^er^ avril 1999** : taux de 1 % → 0,80 % ; tableau des journées complété de deux lignes et élargi sur une troisième. Champ, seuil, coefficient, option et base des réparations inchangés [@decret99-1010, art. 1^er^ et 2] |
+| Mêmes employeurs, sur option irrévocable [@decret95-538, art. 4] | salaires effectifs | — | échelle des articles 1^er^ et 2 | droit commun [@loi94-28, art. 17] | échelle de 1995 (@tbl-atmp-1995) | **1^er^ avril 1999** : échelle refondue (@tbl-atmp-1999) |
+| Chauffeurs de louage et de taxis [@decret95-538, art. 5] | SMIG, régime 48 heures, × 2 400 heures par an | 1,5, puis aucun | non fixé par l'article | même base | coefficient 1,5 | **1^er^ juillet 2000** : SMIG, régime 48 heures, × 2 400 heures par an, sans coefficient ; transport rural ajouté. L'article 5 n'est pas nommé : portée déduite de l'abrogation des « dispositions antérieures contraires » [@decret2000-1439, art. 1^er^ à 4] |
+| « Masseurs » des bains maures [@decret95-538, art. 5] | SMIG, régime 48 heures, × 2 400 heures par an | 1,5 | non fixé par l'article | même base | coefficient 1,5 | — |
+| Aides de ménage [@decret95-538, art. 6] | SMAG × 300 jours par an | — | propre à l'article : 0,53 % | même base | taux de 0,53 % | — |
+| Autres employés de maison, sauf les chauffeurs [@decret95-538, art. 6] | SMAG × 300 jours par an | — | propre à l'article : 0,75 % | même base | taux de 0,75 % | — |
+| Conducteurs de voitures, employés de maison [@decret95-538, art. 6] | SMAG × 300 jours par an | 1,5 | propre à l'article : 1 % | même base | taux de 1 % ; coefficient 1,5 | — |
+| Travailleurs employés temporairement auprès des individus [@decret95-538, art. 7] | SMIG, régime horaire non précisé, × 200 heures par mois ; tout mois commencé compte pour un mois | 1 (travailleurs ordinaires) ou 2 (travailleurs qualifiés) | celui de la branche d'activité, que l'article ne désigne pas | même base | coefficients 1 et 2 | — |
+
+: Salaires forfaitaires servant de base à la cotisation d'accidents du travail et de maladies professionnelles, par catégorie, depuis le 1^er^ janvier 1995 [@decret95-538, art. 4 à 7 et 28 ; @decret99-1010 ; @decret2000-1439] {#tbl-atmp-forfaits tbl-colwidths="[17,15,8,10,18,12,20]"}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré. Ces forfaits ne sont pas portés en amont : openfisca-tunisia#471 (auquel ajouter le décret n° 2000-1439). Les montants en dinars se déduiront alors des séries du SMIG et du SMAG ; aucun n'est donné tant qu'ils ne sont pas calculés. -->
+
+Un tiret, dans la dernière colonne, signale qu'aucune modification n'est identifiée ici ; il en va de même de l'article 4 après 1999 et du forfait des chauffeurs après 2000.
+
+<!-- RECHERCHE r-atmp-assiette-modificatifs : texte modifiant l'assiette (décret n° 95-538, art. 3 à 9) ou la modulation (art. 10 à 27) de la cotisation AT/MP, autre que les décrets n° 99-1010 et 2000-1439 (voir docs/recherches.yml) -->
+
+Deux textes ont touché ces forfaits. Le décret n° 99-1010 remplace le seul second paragraphe de l'article 4, à compter du 1^er^ avril 1999 : le taux de la cotisation forfaitaire agricole passe de 1 % à 0,80 % du SMAG journalier, et le tableau des journées reçoit deux lignes nouvelles — l'horticulture de plein champ et la cuniculture —, la ligne des bovins étant étendue aux équins et aux camélidés ; toutes les autres valeurs sont reprises à l'identique [@decret99-1010, art. 1^er^ et 2].
+
+| Type de culture ou d'activité | Unité | 1^er^ janvier 1995 | 1^er^ avril 1999 | Édition arabe, quand elle diffère |
+|---|---|---|---|---|
+| Céréales en sec | jours par hectare | 7 | 7 | |
+| Céréales en irrigué | jours par hectare | 15 | 15 | |
+| Légumineuses et autres grandes cultures en sec | jours par hectare | 15 | 15 | |
+| Cultures industrielles (betterave à sucre et coton) | jours par hectare | 70 | 70 | |
+| Cultures maraîchères de plein champ : solanacées (tomates) | jours par hectare | 150 | 150 | les tomates seules |
+| Cultures maraîchères de plein champ : pommes de terre et autres | jours par hectare | 50 | 50 | |
+| Horticulture de plein champ | jours par hectare | — | 70 | floriculture de plein champ |
+| Oliviers et amandiers | jours par hectare | 17 | 17 | |
+| Vigne de cuve (en sec) | jours par hectare | 20 | 20 | |
+| Vigne de table | jours par hectare | 40 | 40 | |
+| Agrumes | jours par hectare | 90 | 90 | |
+| Arboriculture en sec | jours par hectare | 20 | 20 | arbres fruitiers |
+| Arboriculture en irrigué | jours par hectare | 60 | 60 | |
+| Palmier dattier | jours par hectare | 120 | 120 | |
+| Cultures sous serres | jours par hectare | 300 | 300 | |
+| Culture des bananes sous serres | jours par hectare | 700 | 700 | |
+| Élevage : bovins (1995) ; bovins, équins et camélidés (1999) | jours par tête | 30 | 30 | |
+| Élevage : ovins | jours par tête | 5 | 5 | ovins et caprins |
+| Aviculture | jours pour 1 000 volailles | 36 | 36 | |
+| Cuniculture | jours pour 1 000 lapins | — | 36 | |
+| Pêche côtière | jours par barque | 500 | 500 | |
+| Pêche au chalut | jours par unité | 2 000 | 2 000 | pêche au feu |
+
+: Nombre de journées de travail retenu pour la cotisation forfaitaire du secteur agricole et de la pêche à la part, par type de culture ou d'activité, au 1^er^ janvier 1995 et au 1^er^ avril 1999 [@decret95-538, art. 4 ; @decret99-1010, art. 1^er^] {#tbl-atmp-journees tbl-colwidths="[36,20,12,12,20]"}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré (openfisca-tunisia#471). -->
+
+Les deux éditions de l'article 4 ne concordent pas partout, et l'édition arabe fait foi. Là où le français écrit « bateaux de moins de 30 tonnes », l'arabe vise des tonneaux de jauge ; la dernière ligne du tableau est la « pêche au chalut » en français et la pêche au feu en arabe, en 1995 comme en 1999 — deux métiers distincts ; la ligne des ovins comprend en arabe les caprins ; l'horticulture de plein champ de 1999 y est la floriculture.
+
+<!-- TODO (relecteur-ar) : relire à l'image les termes arabes de l'article 4 (JORT n° 30 de 1995, éd. arabe pp. 691-692 ; JORT n° 40 de 1999, éd. arabe p. 898) et de l'article 18 de la loi n° 94-28 (JORT n° 15 de 1994, éd. arabe p. 301) avant de les citer en arabe dans le texte ; l'alinéa 2 arabe de l'article 4 écrit « salaire journalier agricole garanti » sans « minimum », en 1995 comme en 1999. -->
+
+Le décret n° 2000-1439 du 27 juin 2000 fixe, pour les travailleurs du transport public des personnes par taxi, louage et transport rural, un salaire forfaitaire « déterminé sur la base du salaire minimum interprofessionnel garanti régime 48 heures rapporté à une durée d'occupation de 2400 heures par an », sur lequel sont calculées les cotisations comme les prestations et les réparations, à partir du 1^er^ juillet 2000 [@decret2000-1439, art. 1^er^, 2 et 4]. Ce forfait vaut à la fois pour les régimes de sécurité sociale et pour le régime de réparation des accidents du travail et des maladies professionnelles. Le décret ne nomme pas l'article 5 du décret n° 95-538 : il abroge « toutes dispositions antérieures contraires » [@decret2000-1439, art. 3]. L'abrogation étant implicite, sa portée relève d'une lecture : le coefficient de 1,5 cesserait de s'appliquer aux chauffeurs de taxi et de louage au 1^er^ juillet 2000 ; le transport rural, que l'article 5 ne mentionnait pas, entrerait dans le forfait ; les « masseurs » des bains maures, que le décret de 2000 ne vise pas, resteraient régis par l'article 5 et son coefficient.
+
+Les cotisations sont payées par trimestre, au plus tard le quinzième jour du mois qui suit le trimestre civil ; celles des employés de maison et des travailleurs employés temporairement auprès des individus « peuvent être payées annuellement ou au moment de la demande de l'affiliation provisoire » [@decret95-538, art. 8].
+
+### Le salaire de comparaison {#sec-cot-at-salaire-comparaison}
+
+Une dernière règle, posée par la loi elle-même, n'est pas un forfait. Les employeurs « occupant des volontaires, des détenus, des internés ou toute autre catégorie dont l'occupation est exceptionnelle et dérogatoire aux règles habituelles du contrat de travail » établissent leurs déclarations et calculent leurs cotisations « sur la base des salaires correspondant à ceux des travailleurs de la même qualification professionnelle, exécutant des travaux identiques ou analogues et travaillant dans leurs ateliers, chantiers ou projets ou dans les établissements similaires implantés dans la même région » [@loi94-28, art. 18, al. 2]. La base n'est pas un montant fixé par décret mais le salaire d'un travailleur comparable ; l'alinéa ne fixe que la base de la cotisation. Là où l'édition française écrit « internés », l'édition arabe, qui fait foi, désigne les malades des hôpitaux psychiatriques.
+
+La règle a un précédent dans le régime général : dès 1960, la loi n° 60-30 faisait calculer les cotisations dues pour les détenus et les internés sur des salaires correspondant à ceux des ouvriers et employés de même qualification professionnelle [@loi60-30, art. 46, al. 3].
+
+## La majoration et la réduction de la cotisation {#sec-cot-at-modulation}
+
+La loi permet d'ajuster la cotisation, employeur par employeur : « Les cotisations peuvent être diminuées ou augmentées en fonction des moyens de prévention ou de soins procurés par l'employeur dans l'entreprise, ou en fonction des conséquences de sa négligence et de son refus d'appliquer les mesures de prévention des risques exceptionnels de l'entreprise » ; le décret qui fixe les taux en règle les modalités [@loi94-28, art. 90]. L'article clôt la section que la loi consacre à la prévention des risques professionnels, où la caisse reçoit aussi la charge de recueillir les statistiques des accidents et la faculté d'inviter tout employeur à prendre les mesures de prévention nécessaires [@loi94-28, art. 88 et 89]. Le décret n° 95-538 y consacre dix-huit articles, en vigueur depuis le 1^er^ janvier 1995 [@decret95-538, art. 10 à 28]. Aucun texte les modifiant n'est identifié ici.
+
+<!-- RECHERCHE r-atmp-assiette-modificatifs : texte modifiant l'assiette (décret n° 95-538, art. 3 à 9) ou la modulation (art. 10 à 27) de la cotisation AT/MP, autre que les décrets n° 99-1010 et 2000-1439 (voir docs/recherches.yml) -->
+
+### La majoration {#sec-cot-at-majoration}
+
+**Deux cas.** La caisse « peut imposer à l'employeur une majoration des cotisations […] lorsqu'elle constate des défaillances ou des manquements aux obligations d'hygiène et de sécurité des travailleurs ». Elle peut « également majorer les cotisations précitées en cas de constatation de risques exceptionnels ou d'augmentation sensible du nombre des accidents du travail et des maladies professionnelles ou de leur gravité, due à la négligence ou au refus de l'employeur d'appliquer les règles de prévention des risques professionnels » [@decret95-538, art. 10]. La majoration répond donc à un manquement aux règles de prévention, constaté directement ou révélé par une hausse sensible du nombre ou de la gravité des accidents due à la négligence ou au refus de l'employeur.
+
+**La procédure.** La caisse décide après avis de l'inspection du travail et de l'inspection médicale territorialement compétentes [@decret95-538, art. 11]. Le manquement est constaté par un procès-verbal d'infraction aux règles d'hygiène et de sécurité, dressé par l'inspecteur du travail ou le médecin inspecteur, ou par un procès-verbal d'inexécution des mesures imposées ou d'inobservation des textes de prévention, dressé par les contrôleurs assermentés de la caisse [@decret95-538, art. 12]. La caisse informe l'employeur, par lettre recommandée avec accusé de réception, des anomalies et des infractions relevées et du délai qui lui est donné pour y remédier, fixé après consultation de l'inspection du travail ou de l'inspection médicale ; elle l'avertit que le dépassement de ce délai « l'expose au paiement d'une cotisation supplémentaire » et qu'il peut saisir le ministre des affaires sociales [@decret95-538, art. 13]. Ce recours est formé « dans les huit jours suivant la réception de la lettre recommandée », motivé et accompagné de pièces ; le ministre notifie sa décision « dans un délai n'excédant pas un mois », et « Le défaut de décision dans le délai susvisé équivaut à un rejet du recours » [@decret95-538, art. 14 et 15].
+
+**Le taux.** La [cotisation supplémentaire](#g-cotisation-supplementaire) « s'applique à compter du trimestre qui suit celui au cours duquel a expiré la mise en demeure » [@decret95-538, art. 16]. Elle s'exprime en proportion des cotisations principales de l'employeur, et non en points de taux (@tbl-atmp-modulation) : « Le taux de la cotisation supplémentaire est fixé à 50% des cotisations principales. Ce taux peut être doublé » si l'employeur n'exécute pas les mesures prescrites dans les six mois qui suivent l'expiration du délai, ou en cas de récidive dans les trois ans qui suivent une première cotisation supplémentaire imposée pour un risque de même nature [@decret95-538, art. 17]. Si le refus ou la négligence persistent six mois après l'application de cette majoration, « les cotisations supplémentaires sont portées à 100% des cotisations principales » [@decret95-538, art. 18]. Le décret n'articule pas ces deux dispositions, qui conduisent l'une et l'autre à 100 % des cotisations principales.
+
+**La suppression.** La cotisation supplémentaire est supprimée, en tout ou en partie, lorsque l'employeur prouve qu'il s'est conformé aux mesures prescrites, ce que vérifient les contrôleurs de la caisse, les inspecteurs du travail ou les médecins inspecteurs ; la suppression prend effet « à partir du trimestre suivant celui au cours duquel il y a eu respect des mesures prescrites » [@decret95-538, art. 19 et 20].
+
+### La réduction {#sec-cot-at-reduction}
+
+La caisse peut réduire les cotisations principales de l'employeur « qui accomplit un effort soutenu de prévention des risques professionnels et prend des mesures susceptibles de réduire la fréquence et la gravité des accidents du travail et des maladies professionnelles dans son lieu de travail » [@decret95-538, art. 21]. Quatre conditions sont cumulatives : l'employeur est à jour ; il a acquitté régulièrement les cotisations des quatre trimestres précédents ; aucun risque exceptionnel n'a été constaté ; et il a été constaté, au cours de cette période, « une baisse sensible des accidents du travail ou des maladies professionnelles » [@decret95-538, art. 22]. La réduction est accordée à l'initiative de la caisse ou à la demande de l'employeur, sur rapport motivé des services de prévention de la caisse et après avis de l'inspection du travail ou de l'inspection médicale [@decret95-538, art. 23].
+
+Elle est plafonnée : « la réduction du taux de cotisation principale, pour tout employeur, ne peut dépasser 25% » [@decret95-538, art. 24]. Appliquée dès le trimestre qui suit la décision, elle est « accordée pour une année renouvelable », au vu d'un rapport motivé et après avis des deux inspections ; elle peut être suspendue ou supprimée « à tout moment » si l'une des conditions vient à manquer, après avis des deux inspections [@decret95-538, art. 25 et 26].
+
+| Mesure | Quotité, en proportion des cotisations principales | Condition | Prise d'effet et durée | Article |
+|---|---|---|---|---|
+| Cotisation supplémentaire | 50 % | manquement non corrigé dans le délai notifié par la caisse | à compter du trimestre qui suit l'expiration de la mise en demeure, jusqu'à sa suppression | 16, 17, 19 et 20 |
+| Cotisation supplémentaire doublée | 50 %, doublés | mesures non exécutées dans les six mois qui suivent l'expiration du délai, ou récidive dans les trois ans pour un risque de même nature | — | 17 |
+| Cotisation supplémentaire portée à 100 % | 100 % | refus ou négligence persistant six mois après l'application de la majoration de l'article 17 | — | 18 |
+| Réduction | 25 % au plus | quatre conditions cumulatives, dont une baisse sensible des accidents du travail ou des maladies professionnelles | dès le trimestre qui suit la décision, pour un an renouvelable ; suspension ou suppression à tout moment | 22 à 26 |
+
+: Majoration et réduction de la cotisation d'accidents du travail et de maladies professionnelles, depuis le 1^er^ janvier 1995 [@decret95-538, art. 16 à 20, 22 à 26 et 28] {#tbl-atmp-modulation tbl-colwidths="[18,16,30,26,10]"}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré quand ces quotités seront portées en amont (openfisca-tunisia#471). -->
+
+### Le recours et la caisse compétente {#sec-cot-at-modulation-recours}
+
+L'employeur peut contester les décisions d'augmentation ou de réduction « conformément aux procédures du droit commun », sous réserve des dispositions de la loi n° 60-30 relatives au paiement des cotisations [@decret95-538, art. 27].
+
+Tous ces articles confient la décision à la « caisse nationale de sécurité sociale », la [CNSS](#g-cnss). La loi n° 2004-71 a rangé parmi les missions de la [CNAM](#g-cnam) la gestion des régimes légaux de réparation des dommages résultant des accidents du travail et des maladies professionnelles [@loi2004-71, art. 8], sans que le décret, en l'état des textes identifiés, soit réécrit. La caisse qui exerce depuis lors les pouvoirs de majoration et de réduction, et la date à partir de laquelle elle les exerce, ne sont pas établies ici ; l'application effective de ces dispositions ne l'est pas davantage.
+
+<!-- TODO (documentaliste) : lire le décret n° 2005-321 (organisation de la CNAM, JORT n° 15 de 2005, pp. 459-463) sur l'exercice des pouvoirs des articles 10 à 27 et sur le recouvrement de la cotisation AT/MP ; relire à l'image la loi n° 2004-71, art. 8 à 10 et 29 (art. 29 : le chapitre II du titre II applicable dès la promulgation, le reste au 1er juillet 2005) ; consulter une source administrative (CNSS, CNAM) sur la pratique des forfaits et de la modulation. -->
+<!-- TODO (modeliste) : les salaires forfaitaires des articles 4 à 7 du décret n° 95-538, celui du décret n° 2000-1439 et la modulation des articles 10 à 27 ne sont pas portés par le modèle : openfisca-tunisia#471 (le décret n° 2000-1439 est à y ajouter). -->
 
 ## La longue période {#sec-cot-at-longue-periode}
 

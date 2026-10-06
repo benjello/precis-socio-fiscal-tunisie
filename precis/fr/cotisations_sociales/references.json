@@ -5,7 +5,11 @@
       "type": "report",
       "title": "الإحصائيات العامة لحوادث الشغل والأمراض المهنية 2023 [Statistiques générales des accidents du travail et des maladies professionnelles, 2023]",
       "title-short": "CNAM, statistiques AT/MP 2023",
-      "author": [{"literal": "Caisse nationale d'assurance maladie"}],
+      "author": [
+        {
+          "literal": "Caisse nationale d'assurance maladie"
+        }
+      ],
       "publisher": "Caisse nationale d'assurance maladie",
       "URL": "http://www.cnam.nat.tn/doc/upload/statistiquesAccidentDeTravail2023.pdf",
       "note": "citation-key: cnam-statistiques-atmp-2023\nDocument arabe reçu sur le site CNAM, 39 pages PDF. Tableaux utilisés : accidents déclarés par activité p. PDF 13, fréquence des accidents avec arrêt pour 1 000 assujettis p. PDF 15, accidents mortels par activité p. PDF 26. Année d'édition 2023 ; date de publication non établie. Données arrêtées au premier trimestre 2024, sujettes à révision."
@@ -107,7 +111,7 @@
         ]
       },
       "URL": "https://www.pist.tn/jort/1999/1999F/Jo04099.pdf",
-      "note": "citation-key: decret99-1010\nJORT n° 40 du 18 mai 1999, pp. 732-734 (édition française), pp. 896-898 (édition arabe). Art. 1er : abroge et remplace les articles 1er, 2 et 4, paragraphe 2, du décret n° 95-538. Article premier nouveau : taux de cotisation au régime par 37 secteurs d'activité (82 taux), de 0,50 % à 6 %. Article 2 nouveau : taux des employeurs affiliés à la CNSS après transfert d'un point du régime général, de 0,40 % à 4 %. Article 4, paragraphe 2 nouveau : cotisation forfaitaire agricole ramenée de 1 % à 0,80 % du SMAG journalier × 1,5 × journées de travail, tableau des journées révisé. Art. 2 : entrée en vigueur à compter du 1er avril 1999. Lu à l'image dans les deux éditions ; le point 14-3 vise « l'industrie du cuir » en français, « صناعة الأحذية » (industrie de la chaussure) en arabe.",
+      "note": "citation-key: decret99-1010\nJORT n° 40 du 18 mai 1999, pp. 732-734 (édition française), pp. 896-898 (édition arabe). Art. 1er : abroge et remplace les articles 1er, 2 et 4, paragraphe 2, du décret n° 95-538. Article premier nouveau : taux de cotisation au régime par 37 secteurs d'activité (82 taux), de 0,50 % à 6 %. Article 2 nouveau : taux des employeurs affiliés à la CNSS après transfert d'un point du régime général, de 0,40 % à 4 %. Article 4, paragraphe 2 nouveau : cotisation forfaitaire agricole ramenée de 1 % à 0,80 % du SMAG journalier × 1,5 × journées de travail, tableau des journées révisé. Art. 2 : entrée en vigueur à compter du 1er avril 1999. Pour le reste de l'assiette (art. 3, 5 à 8) et pour la majoration et la réduction (art. 10 à 27), il ne change rien. Lu à l'image dans les deux éditions ; le point 14-3 vise « l'industrie du cuir » en français, « صناعة الأحذية » (industrie de la chaussure) en arabe.",
       "title-short": "Décret n° 99-1010 du 10 mai 1999"
     },
     {
@@ -435,6 +439,46 @@
       "URL": "https://www.pist.tn/jort/2013/2013F/Jo0012013.pdf",
       "note": "citation-key: lf-2013\nissue: 1\nJORT n° 1 du 1er janvier 2013 ; la loi occupe les pages 3-135. Le tome est celui lu sur la couverture du fascicule, « 156ème année » — jort_cache.db porte 157 pour ce numéro, et c'est la pièce qui a été suivie (le fascicule n° 105 de 2013 porte lui aussi 156). Édition française établie sur pièce : la taille distante (content-length, curl -ksI, 16 septembre 2026) est égale à l'octet près au fascicule du corpus local, dont la première page porte « traduction française ». Un code 200 sur un chemin « …F/Jo… » ne suffit pas : pist.tn sert parfois l'édition arabe sous une adresse française.\nDROIT DE CONSOMMATION : ARTICLE 43 LU SUR PIÈCE, en entier, sous l'intitulé « Rationalisation de l'assiette du droit de consommation au titre des opérations de vente de vins et de boissons alcoolisées pour les entreprises dépendantes » : « Est ajouté à l'article 4 de la loi n° 88-62 du 2 juin 1988 […] ce qui suit : Le droit est liquidé sur la base du prix de vente pratiqué par les entrepositaires et les commerçants de gros de boissons alcoolisées et de vins dans les cas où le droit est dû selon un taux ad valorem, et ce, pour les entreprises ayant des liens de dépendance avec lesdits entrepositaires et commerçants de gros au sens du paragraphe II de l'article 2 du code de la taxe sur la valeur ajoutée. » C'est la première règle de prix de transfert propre au droit de consommation ; celle de l'article 57 de la LF 2016 vise, elle, les ventes des fabricants. PAGE IMPRIMÉE DE L'ARTICLE NON RELEVÉE (12e page du PDF). Date d'effet déduite (1er janvier 2013). Édition arabe : https://www.pist.tn/jort/2013/2013A/Ja0012013.pdf\nTFP et FOPROLOS : art. 21 et 22 (p. 7), gratification de fin de service exclue de l'assiette ; art. 79 : effet au 1er janvier 2013. Lu (couche texte) le 5 octobre 2026.",
       "title-short": "Loi n° 2012-27 du 29 décembre 2012"
+    },
+    {
+      "id": "decret2000-1439",
+      "type": "legislation",
+      "title": "Décret n° 2000-1439 du 27 juin 2000, relatif à la détermination de l'assiette des cotisations aux régimes de sécurité sociale et au régime de réparation des préjudices résultant des accidents du travail et des maladies professionnelles concernant les travailleurs du secteur de transport public des personnes par taxi, louage et transport rural",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "52",
+      "page": "1541",
+      "issued": {
+        "date-parts": [
+          [
+            2000,
+            6,
+            27
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2000/2000F/Jo0522000.pdf",
+      "note": "citation-key: decret2000-1439\nJORT n° 52 du 30 juin 2000, p. 1541 (édition française), p. 1569 (édition arabe). Salaire forfaitaire soumis à retenue, pour les régimes de sécurité sociale et pour le régime AT/MP, des travailleurs du transport public de personnes par taxi, louage et transport rural : SMIG (régime de 48 heures) rapporté à 2 400 heures par an (art. 1er). Cotisations, prestations et réparations calculées sur cette même base (art. 2). Art. 3 : « toutes dispositions antérieures contraires » abrogées ; art. 4 : entrée en vigueur le 1er juillet 2000. Le décret ne nomme pas l'article 5 du décret n° 95-538 : son effet sur le forfait de cet article (coefficient 1,5 pour les chauffeurs de taxi et de louage) est une lecture, non un énoncé du texte. Il vise la loi n° 60-30 (art. 42) et la loi n° 94-28 (art. 17). Lu à l'image dans les deux éditions.",
+      "title-short": "Décret n° 2000-1439 du 27 juin 2000"
+    },
+    {
+      "id": "loi95-101",
+      "type": "legislation",
+      "title": "Loi n° 95-101 du 27 novembre 1995, modifiant la loi n° 60-30 du 14 décembre 1960 relative à l'organisation des régimes de sécurité sociale",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "96",
+      "page": "2223",
+      "issued": {
+        "date-parts": [
+          [
+            1995,
+            11,
+            27
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1995/1995F/Jo09695.pdf",
+      "note": "citation-key: loi95-101\nJORT n° 96 du 1er décembre 1995, p. 2223 (édition française), p. 2333 (édition arabe). Art. 1er : rédige l'article 42 (nouveau) de la loi n° 60-30 : assiette des cotisations sur l'ensemble des salaires, émoluments, indemnités et autres avantages en espèces ou en nature liés à la qualité de salarié ; exclusion totale ou partielle des avantages de remboursement de frais, d'indemnisation ou d'action sociale, culturelle et sportive, dont la liste, les taux et plafonds sont fixés par décret ; faculté de décret de forfait pour certaines professions. Art. 3, dernier alinéa : la dispense transitoire de taxation d'office ne s'applique pas aux cotisations du régime de réparation des accidents du travail et des maladies professionnelles. Aucune date d'effet énoncée. Lu à l'image dans les deux éditions (édition arabe lue à la résolution de la page, sans recadrage).",
+      "title-short": "Loi n° 95-101 du 27 novembre 1995"
     }
   ]
 }
