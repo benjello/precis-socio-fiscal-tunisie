@@ -899,77 +899,54 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     moyenne officielle 2017-2018 ; prix de la bouteille de gaz du 18 août 1992 (à relire à
     l'image) ; aucun « arrêté interne » de notification n'a été vu. Tarifs de la taxe unique
     après 1981 : non établis.
-  - **Rédaction finale du 6 octobre 2026** (notes `compensation-tarifs-1993-2004.md`,
-    `compensation-tarifs-mt-ht-gaz.md`, `compensation-structure-prix-relue.md`,
-    `compensation-etudes-incidence-calculs.md`) — ce qui suit dans les trois rubriques
-    ci-dessous est **dépassé sur ces points** : (1) `_electricite_gaz.qmd` : cinq grilles de
-    1993 à 2003 (deux tableaux, relais officiels et rapports extérieurs), frise 1992-2006 avec
-    la famille de chaque source, section moyenne et haute tension et gaz industriel, recette
-    moyenne par kWh donnée comme un calcul, coût de revient 2000-2004 (BAD), basse tension de
-    2008 à 2022 établie sur les documents ; (2) `_carburants.qmd` : valeurs de la structure des
-    prix publiées (lecture du tableau, 24 structures datées, importation et cession 2016-2025) ;
-    (3) `_incidence.qmd` : données, calcul, résultats, limites et incohérences pour quatre études
-    (INS-CRES-BAD, Banque mondiale 2013 et 2015, document de travail de 2017), répartition
-    9,2 / 60,5 / 7,5 / 22,8 publiée avec la mention que deux classes ne sont pas définies.
-    **Restent** : jour d'effet des grilles d'octobre 1993 et de juin 1994, et leur moyenne et
-    haute tension (fiche `r-tarifs-electricite-grilles-1993-2003`, passe consignée) ; grilles du
-    gaz de 2001 à 2003 ; **acte du 10 août 2000 non lu** et actes de 1993, 1994, 2001, 2003, 2004
-    (fiche `r-tarifs-electricite-gaz-apres-1992`, passe consignée) ; contradiction de 2003
-    (90 ou 94) ; **tarifs du Journal officiel 1975-1990 à relire** (moyenne et haute tension,
-    unité de la prime) ; haute tension de septembre 2012 et moyenne pression de 2012-2013 ;
-    heures des postes avant 2014 ; haute tension de 2020 dans les ventes de la STEG ; **structure
-    du 1er avril 2018** et numéros de janvier à juin 2018 de la *Conjoncture énergétique* ;
-    date de la baisse d'août 2020 ; **tableaux d'études à contrôler cellule par cellule**
-    (seuls le tableau 1 et les figures 11 et 12 de la note de 2013 sont établis sur le
-    document) ; **figure de la facture type** (TODO figures) ; grille basse tension du 1er
-    janvier 2014 (source seconde, non publiée) ; décodage des couches texte du JORT des années
-    2000 à verser à `docs/notes/outillage-sources.md`.
-  - **Électricité et gaz — chapitre `_electricite_gaz.qmd` écrit le 6 octobre 2026**
-    (`#sec-compensation-electricite-gaz`, après `_carburants.qmd`), sur
-    `docs/notes/compensation-tarifs-electricite-gaz.md` : autorité tarifaire (arrêtés 1970-1990,
-    décision du 11 août 1992), grilles basse tension des ménages 1970-1992 (Journal officiel) et
-    2004-2022 (STEG), réformes de structure de 2014, 2018 et 2022, ajustements datés 1978-2024,
-    gaz basse pression, coût et prix de vente (rapport de contrôle 2008-2012 ; Observatoire
-    2017-2025), rapprochement de la subvention d'exploitation de la STEG avec la subvention
-    totale (2010-2012) et avec la ligne budgétaire (2015). Restent :
-    **1993-avril 2004, aucune grille** (fiche `r-tarifs-electricite-grilles-1993-2003` ;
-    étude ANER 2000 collectée, à lire ; JORT de 1993 à océriser ; à demander à la STEG) ;
-    **acte tarifaire après 1992 non identifié** (fiche `r-tarifs-electricite-gaz-apres-1992`) ;
-    **figure de la facture type** (`fig-compensation-facture-electricite`, TODO figures : TVA,
-    surtaxe municipale et taxe du Fonds de transition énergétique à reconstituer) ; grilles de la
-    STEG **à confronter aux documents** (transcrites, dit en légende) ; grilles moyenne et haute
-    tension et gaz moyenne et haute pression relevées dans la note, non publiées ; arrêtés de
-    1961, 1963, 1976-1981 connus par leur intitulé (au corpus, à lire) ; grille du 1er janvier
-    2014 et contradiction de juin 2010 ; **série de la subvention d'exploitation de la STEG non
-    publiée** (rapports annuels 2007-2021 à confronter aux documents, notes aux états financiers
-    à lire).
-  - **Structure des prix des carburants — section écrite le 6 octobre 2026**
-    (`#sec-compensation-structure-prix`), sur `docs/notes/compensation-archives-energie.md` :
-    ce que publie la *Conjoncture énergétique*, subvention unitaire prévisionnelle des budgets
-    citoyens 2021-2024, déficit de commercialisation 2000-2002 (BCT), hausses de mars et août
-    2000, aucune en 2001 ; lignes 2001 et 1990 du fichier du ministère dites fautives ;
-    16 juillet 2016 confirmé. Restent : **structure des prix à relire à l'image** (relevé
-    automatique de 294 lignes, aucune valeur publiée) puis tableau de dates repères ; **montant
-    budgétaire par produit pétrolier** (aucune publication officielle) ; **décisions de prix**
-    (aucun « arrêté interne » en ligne ni archivé) ; série 1980-2025 du graphique des *Chiffres
-    clés* (non publiée en valeurs : données à demander à l'Observatoire) ; jour et niveau des
-    ajustements de 1997 à 2000 ; budgets citoyens 2018, 2020 et 2025 ; répartition STIR / STEG
-    de la ligne 2022-2025 (rapports sur le budget, sans clé) ; communiqué du 14 avril 2022
-    (sans clé : la date reste « 14 ou 16 avril » au tableau).
-  - **Plans** : prévision de compensation trouvée pour quatre plans seulement (VIe, par la Banque
-    mondiale et pour tous les comptes spéciaux ; IXe ; XIe ; 2016-2020). Plans 1962-1986 :
-    microfiches à Leyde, non numérisées ; Xe et XIIe Plans, plan 2023-2025 : aucune adresse ;
-    plan 2026-2030 : document non cherché (fiche `r-plans-prevision-compensation`).
-  - **Incidence de l'énergie — section écrite le 6 octobre 2026**
-    (`#sec-compensation-incidence-energie`, titrée rapports extérieurs) : Banque mondiale 2013
-    (méthode ; subvention par produit en 2013, subvention unitaire d'avril 2013, répartition de
-    la population par tranche de consommation d'électricité) et document de travail de 2015
-    (méthode ; subvention unitaire de mai 2014 ; réserve sur ses tranches tarifaires). Restent :
-    **l'incidence par quintile** de la note de 2013 (pp. 22-26, non relevée) et les résultats
-    de la simulation de 2015 ; taux de subvention de l'électricité d'avril 2013 (deux lectures) ;
-    Jouini, Lustig, Moummi et Shimeles 2018 : non lue, rien n'en est écrit ; Banque mondiale
-    n° 47294 (2008) : sans clé. Rien sur l'alimentaire après 2010 ; définition des classes de
-    l'étude INS-CRES-BAD à relever.
+  - **Électricité et gaz** (`_electricite_gaz.qmd`, `#sec-compensation-electricite-gaz`), sur
+    `compensation-tarifs-electricite-gaz.md`, `compensation-tarifs-1993-2004.md` et
+    `compensation-tarifs-mt-ht-gaz.md` — écrit : autorité tarifaire (arrêtés 1970-1990, décision
+    du 11 août 1992, décision du 10 août 2000 citée par l'API) ; grilles des ménages 1970-1992
+    (Journal officiel), cinq grilles de 1993 à 2003 en deux tableaux (relais officiels ; rapport
+    extérieur seul), 2004-2022 (STEG, établies sur ses documents de 2008 à 2022) ; frise
+    1992-2006 avec la famille de chaque source ; moyenne et haute tension, gaz en moyenne et
+    haute pression, tarifs à postes horaires expliqués ; recette moyenne par kWh donnée comme un
+    calcul ; coût et prix de vente (rapport de contrôle 2008-2012 ; Observatoire 2017-2025 ;
+    BAD 2000-2004, rapport extérieur) ; rapprochement avec la subvention d'exploitation de la
+    STEG. **Restent** : jour d'effet des grilles d'octobre 1993 et de juin 1994 (fiche
+    `r-tarifs-electricite-grilles-1993-2003`, passe consignée) ; moyenne et haute tension et gaz
+    de 1994 à 2003, établis par les notes et non publiés ; grilles du gaz de 2001 à 2003 ;
+    **acte du 10 août 2000 non lu**, actes de 1993, 1994, 2001, 2003 et 2004 non identifiés
+    (fiche `r-tarifs-electricite-gaz-apres-1992`, passe consignée) ; contradiction de 2003 (90
+    ou 94) et écart de 2005 avec l'INS ; **tarifs du Journal officiel de 1975 à 1990 à relire**
+    (moyenne et haute tension, unité de la prime) ; haute tension de septembre 2012, moyenne
+    pression de 2012-2013 ; heures des postes avant 2014 ; ventes en haute tension de 2020 ;
+    grille basse tension du 1er janvier 2014 (source seconde, non publiée) ; arrêtés de 1961,
+    1963, 1976-1981 connus par leur intitulé ; **figure de la facture type**
+    (`fig-compensation-facture-electricite`, TODO figures : TVA et surtaxe municipale à
+    reconstituer) ; série de la subvention d'exploitation de la STEG non publiée (notes aux
+    états financiers à lire) ; décodage des couches texte du JORT des années 2000 à verser à
+    `docs/notes/outillage-sources.md`.
+  - **Structure des prix des carburants** (`_carburants.qmd`, `#sec-compensation-structure-prix`),
+    sur `compensation-archives-energie.md` et `compensation-structure-prix-relue.md` — écrit :
+    lecture du tableau de la *Conjoncture énergétique*, 24 structures datées de 2014 à 2022
+    (synthèse en clair, deux tableaux repliés), importation et cession en moyenne annuelle
+    2016-2025 (écart donné comme un calcul), subvention unitaire prévisionnelle des budgets
+    citoyens 2021-2024, déficit de commercialisation 2000-2002, hausses de 2000, aucune en 2001.
+    **Restent** : **structure du 1er avril 2018** et numéros de janvier à juin 2018 ; date de la
+    baisse d'août 2020 ; droits et marges du 6 février 2021 ; composantes séparées (droit de
+    consommation, TVA, chaque marge) ; **montant budgétaire par produit pétrolier** (aucune
+    publication officielle) ; **décisions de prix** (aucun « arrêté interne » en ligne ni
+    archivé) ; série 1980-2025 du graphique des *Chiffres clés* (non publiée en valeurs) ; jour
+    et niveau des ajustements de 1997 à 2000 ; budgets citoyens 2018, 2020 et 2025 ; répartition
+    STIR / STEG de la ligne 2022-2025 (rapports sur le budget, sans clé).
+  - **Études d'impact** (`_incidence.qmd`), sur `compensation-etudes-incidence-calculs.md` —
+    écrit, pour quatre études, les données, le calcul pas à pas, les résultats, les limites et
+    les incohérences : INS-CRES-BAD 2013 (répartition 9,2 / 60,5 / 7,5 / 22,8 publiée avec la
+    mention que deux classes ne sont pas définies), Banque mondiale 2013 (par produit, par
+    quintile, par tête, réforme simulée), document de travail de 2015 (subvention unitaire, par
+    quintile, perte, scénarios), document de travail de 2017 (agrégat de toutes les
+    subventions). **Restent** : **tableaux d'études à contrôler cellule par cellule** (seuls le
+    tableau 1 et les figures 11 et 12 de la note de 2013 sont établis sur le document) ;
+    alignement du tableau 18-8 du document de 2017 ; outil de simulation (Araar et Verme, 2012)
+    non ouvert ; définition des classes moyenne et aisée (rapport INS-BAD-Banque mondiale de
+    2012) ; Banque mondiale n° 47294 (2008), sans clé ; rien sur l'alimentaire après 2010.
   - **Rapports extérieurs** : tableau III-1 de la Banque mondiale 1985 et tableau par produit
     1972-1977 de la revue du Ve Plan : à relire à l'image, aucune valeur publiée ; rétropolation
     de la série « brute » du FMI non détaillée par le rapport ; rapports du FMI de 2015 à 2019
