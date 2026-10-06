@@ -152,9 +152,6 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
   - **avant 2017** : aucune série homogène ; sources premières des estimations (OMC 2001,
     FMI 2005 et 2012, Ghazouani 2011, IFC-ECOPA 2012) à obtenir ; figures 4.1 et 4.4 du
     rapport de la Banque mondiale à relever sur l'image ;
-  - **recherche ouverte** : arrêté du ministre des Finances du 8 novembre 2017 (fiche
-    `r-arrete-2017-rapport-depenses-fiscales`) ; plein texte des fascicules de novembre et
-    décembre 2017 non lancé ;
   - **à croiser avec « Cotisations sociales »** : coût des prises en charge de cotisations
     patronales (code de 1993, art. 25 ; loi n° 99-59, connue par son intitulé).
 - **Forme de `_impot_revenu.qmd` : rien à reprendre.** Ses titres ont été remontés d'un cran
