@@ -1,0 +1,465 @@
+# Les politiques de l'emploi {#sec-mt-politiques-emploi}
+
+Ce chapitre traite de ce que l'État dépense pour l'insertion des demandeurs d'emploi : les stages et contrats dont il verse l'indemnité, les cotisations qu'il prend à sa charge, les chantiers qu'il finance. Les études et les rapports de suivi les réunissent sous le nom de [politiques actives de l'emploi](#g-politique-active-emploi) ; les textes tunisiens, eux, parlent de « promotion de l'emploi des jeunes », puis de « programmes du Fonds national de l'emploi ». Le chapitre suit l'ordre des autres : d'où vient le dispositif, qui le finance, quels programmes se succèdent de 1981 à 2023, puis ce que les chiffres en disent sur la longue période. Il s'en tient à ce qui commande la dépense — le public, la durée, l'indemnité versée par l'État, les cotisations prises en charge — et laisse de côté la procédure.
+
+Les montants sont donnés en dinars (D) et en millions de dinars (MD).
+
+## D'où vient la politique de l'emploi {#sec-mt-pe-origines}
+
+### Des offices à l'agence {#sec-mt-pe-agences}
+
+Le placement des demandeurs d'emploi et la gestion des programmes relèvent, depuis 1967, d'un établissement public dont le périmètre change quatre fois (@tbl-mt-pe-agences).
+
+| Date | Texte | Ce qui change |
+|---|---|---|
+| 8 mars 1967 | loi n° 67-11 [@loi67-11] | création de l'Office de la formation professionnelle et de l'emploi, qui « assure et promeut le placement de la main-d'œuvre » ; les bureaux publics de placement en dépendent ; ses ressources comprennent le produit de la taxe de formation professionnelle |
+| 31 janvier 1973 | loi n° 73-8 [@loi73-8] | l'office devient l'Office des travailleurs tunisiens à l'étranger, de l'emploi et de la formation professionnelle |
+| 9 décembre 1983 | loi n° 83-111 [@loi83-111, art. 1] | l'office est scindé : un office pour la formation et la promotion professionnelle, un autre pour la promotion de l'emploi et les travailleurs tunisiens à l'étranger |
+| 17 février 1993 | loi n° 93-11 [@loi93-11, art. 1, 2 et 5] | création de l'Agence tunisienne de l'emploi, qui « met en œuvre les programmes de promotion de l'emploi et d'insertion des jeunes », et de l'Agence tunisienne de la formation professionnelle ; l'Office de la formation professionnelle et de l'emploi, reconstitué en 1988 [@loi88-60-lfc1988, art. 12 à 15], est dissous |
+| 17 mars 2003 | décret n° 2003-564 [@decret2003-564] | l'agence prend le nom d'[Agence nationale pour l'emploi et le travail indépendant](#g-aneti) (ANETI) ; seul l'intitulé de ce décret est connu ici |
+
+: Les établissements chargés de l'emploi, 1967-2003 {#tbl-mt-pe-agences}
+
+<!-- TODO (bibliographe) : le décret-loi n° 2022-78 du 21 décembre 2022, qui complète la loi
+n° 93-11, n'a ni clé ni contenu établi (note docs/notes/marche-travail-politiques-emploi.md, § 1). -->
+
+### Les fonds d'avant 2000 {#sec-mt-pe-fonds-avant-2000}
+
+Avant le Fonds national de l'emploi, chaque programme a son fonds.
+
+- **Le fonds de l'emploi des jeunes (1981)** finance les subventions du contrat emploi-formation ; sa dotation est fixée chaque année par la loi de finances, et sa gestion confiée à l'office chargé de l'emploi [@loi81-75, art. 4].
+- **Le fonds de concours des stages d'initiation à la vie professionnelle (1987)**, institué auprès du ministre des affaires sociales, sert l'indemnité des stagiaires ; il reçoit une contribution prélevée sur le fonds d'intervention économique et une contribution d'entreprises publiques [@decret87-1190, art. 5].
+- **Le Fonds d'insertion et d'adaptation professionnelle (FIAP)** reçoit une première dotation en 1990 d'après les rapports annuels de la Banque centrale, qui le nomment « Fonds d'initiation et d'adaptation professionnelle » (@fig-mt-pe-dotations). Le texte qui l'institue n'est pas identifié ici. La loi de finances pour 2000 range « les programmes et instruments d'insertion et d'adaptation professionnelles » parmi les dépenses du fonds de la formation qu'elle crée [@lf-2000, art. 17].
+
+<!-- RECHERCHE r-fiap-texte-fondateur : texte instituant le fonds d'insertion et d'adaptation professionnelle, vers 1990-1991 (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : le fonds d'intervention économique est celui de la loi de finances
+pour 1975, art. 57, d'après le décret n° 87-1190 ; la clé `loi74-101-lf1975` existe au fonds
+commun, mais l'article n'y est pas vérifié — le lire avant de la citer ici. -->
+
+## Le financement {#sec-mt-pe-financement}
+
+### Le Fonds national de l'emploi {#sec-mt-pe-fne}
+
+La loi de finances pour 2000 crée un [compte spécial du Trésor](#g-fonds-special-tresor) intitulé « fonds national de l'emploi », destiné à financer « toutes les opérations susceptibles de développer la qualification des demandeurs d'emploi et de favoriser les possibilités d'emploi » : travaux d'intérêt public pour les demandeurs sans qualification, emploi indépendant, programmes d'insertion des diplômés du supérieur, réadaptation [@lf-2000, art. 13]. Les rapports annuels de la Banque centrale le nomment « Fonds national de l'emploi 21-21 ». Le [Fonds national de l'emploi](#g-fonds-national-emploi) est d'abord alimenté par des dons et par une part des produits de privatisation ; des taxes lui sont affectées à partir de 2001 (@tbl-mt-pe-fne-ressources).
+
+| Effet | Texte | Avant → après |
+|---|---|---|
+| 1^er^ janvier 2000 | loi de finances pour 2000 [@lf-2000, art. 13 et 14] | néant → compte spécial du Trésor ; ordonnateur : celui de la présidence de la République ; ressources : dons et subventions des personnes physiques et morales, produits de ses interventions, « une partie du produit revenant à l'État et provenant des opérations de privatisation » |
+| 1^er^ janvier 2001 | loi de finances pour 2001 [@lf-2001, art. 14] | s'y ajoutent six taxes affectées : contribution sur les ventes locales de café et de thé ; taxe sur les contrats conclus avec les artistes étrangers ; taxe sur les voyages à l'étranger ; droit additionnel de première immatriculation des véhicules ; contribution sur la vente du tabac, des allumettes, des cartes à jouer et de la poudre à feu ; contribution sur le tarif des services postaux |
+| 1^er^ janvier 2003 | loi de finances pour 2003 [@lf-2003, art. 27 et 28] | s'y ajoutent le droit compensateur sur le ciment et la redevance sur les ventes de ciment |
+| 2011 | décret-loi n° 2011-16 du 26 mars 2011 [@dl2011-16, art. 1] | ordonnateur : la présidence de la République → « le ministre chargé de l'emploi » |
+
+: Le Fonds national de l'emploi : ressources et ordonnateur, 2000-2011 {#tbl-mt-pe-fne-ressources}
+
+Les dons faits au Fonds sont déductibles de l'assiette de l'impôt sur le revenu et de l'impôt sur les sociétés [@lf-2000, art. 15 et 16]. Depuis 2011, le Fonds supporte aussi des primes à des projets pilotes associant secteur public et secteur privé, et ses propres dépenses de communication [@decret2011-2484, art. 42 bis et 42 ter].
+
+<!-- TODO (documentaliste) : les lois de finances pour 2022 à 2026 imputent des lignes de crédit
+sur les ressources du Fonds (Banque tunisienne de solidarité, catégories vulnérables, personnes
+handicapées, sociétés communautaires) ; articles et montants relevés au fil de l'édition arabe, à
+relire un par un avant de les écrire ici (note, § 2.2). Le décret n° 2000-2279 du 10 octobre 2000
+(couverture sociale des bénéficiaires des « programmes du fonds national de l'emploi 21-21 ») n'a
+pas de clé : TODO (bibliographe). -->
+
+### Le fonds de la formation et la taxe de formation professionnelle {#sec-mt-pe-fonds-formation}
+
+La même loi de finances crée un second compte spécial, le [fonds de promotion de la formation professionnelle et de l'apprentissage](#g-fonds-formation-apprentissage), dont l'ordonnateur est le ministre chargé de la formation professionnelle et dont la ressource est « le produit de la taxe de formation professionnelle net des ristournes » [@lf-2000, art. 17 et 18]. Ses dépenses comprennent, outre la formation initiale et continue, « les programmes de stages d'initiation à la vie professionnelle » et « les contrats emploi-formation » [@lf-2000, art. 17]. La [taxe de formation professionnelle](#g-tfp), son taux, ses ristournes et l'[avance](#g-avance-tfp) qui leur succède sont exposés au volume [« Les cotisations sociales »](../cotisations_sociales/_prelevements_salaires.html#sec-cot-tfp).
+
+Les stages et la ristourne ne se cumulent pas : l'employeur ne peut demander la ristourne de la taxe au titre des stagiaires qu'il accueille, ni la cumuler avec la subvention du contrat emploi-formation [@decret81-1220, art. 16; @decret87-1190, art. 8; @decret88-715, art. 7; @decret93-1049, art. 17].
+
+### Qui finance quoi {#sec-mt-pe-qui-finance}
+
+Les stages et contrats aidés changent trois fois de source de financement (@tbl-mt-pe-qui-finance). De 2000 à 2009, deux fonds coexistent : les stages d'initiation à la vie professionnelle et les contrats emploi-formation relèvent du fonds de la formation, alimenté par la taxe de formation professionnelle, et non du Fonds national de l'emploi. Le décret n° 2009-349 les fait passer à ce dernier, en admettant jusqu'au 31 décembre 2009 l'imputation de leurs dépenses sur le titre II du budget de l'État [@decret2009-349, art. 1 et 43].
+
+| Période | Stages d'initiation et contrats emploi-formation | Autres programmes d'emploi |
+|---|---|---|
+| 1981-1999 | fonds de l'emploi des jeunes pour le contrat emploi-formation [@loi81-75, art. 4] ; fonds de concours pour les stages d'initiation [@decret87-1190, art. 5] | Fonds d'insertion et d'adaptation professionnelle, à partir de 1990 (@sec-mt-pe-fonds-avant-2000) |
+| 2000-2009 | fonds de promotion de la formation professionnelle et de l'apprentissage, alimenté par la taxe de formation professionnelle [@lf-2000, art. 17 et 18] | Fonds national de l'emploi, alimenté par des dons, des recettes de privatisation, puis des taxes affectées [@lf-2000, art. 13 et 14; @lf-2001, art. 14] |
+| depuis 2009 | Fonds national de l'emploi [@decret2009-349, art. 1] | Fonds national de l'emploi |
+
+: Le financement des programmes d'emploi, 1981-2009 {#tbl-mt-pe-qui-finance}
+
+## Les programmes et leur succession {#sec-mt-pe-programmes}
+
+Les programmes se succèdent en cinq temps : le contrat emploi-formation de 1981 ; les stages d'initiation à la vie professionnelle de 1987 et 1988 ; la refonte de 1993 ; les programmes du Fonds national de l'emploi de 2009, que le décret de 2012 devait remplacer et qu'il a maintenus ; la refonte de 2019, modifiée en 2023. Les textes sont réunis, date par date, à la fin de cette section (@tbl-mt-pe-textes), et les programmes dans deux tableaux (@tbl-mt-pe-programmes, @tbl-mt-pe-indemnites).
+
+### 1981-1993 : le contrat emploi-formation et les stages d'initiation {#sec-mt-pe-1981-1993}
+
+La loi n° 81-75 du 9 août 1981 ouvre la série : l'État subventionne l'entreprise qui accueille un jeune en stage, et l'exonère de la part patronale des [cotisations sociales](#g-cotisations-sociales) pendant le stage et pendant les trois années qui suivent le recrutement [@loi81-75, art. 1 et 4]. Son décret d'application organise le contrat de stage d'adaptation professionnelle, dit [contrat emploi-formation](#g-contrat-emploi-formation) : il s'adresse aux jeunes de 17 à 25 ans diplômés du secondaire technique ou de la formation professionnelle, dure un an, et l'entreprise, qui verse le salaire entier, reçoit une subvention [@decret81-1220, art. 2, 7, 11 et 13].
+
+Le [stage d'initiation à la vie professionnelle](#g-sivp) (SIVP) inverse la logique : c'est le stagiaire qui reçoit de l'État une [indemnité de stage](#g-indemnite-de-stage) mensuelle. Le décret n° 87-1190 du 26 août 1987 l'institue pour les diplômés du supérieur, pour un an, deux au plus, dans les entreprises, les administrations et les collectivités [@decret87-1190, art. 1, 3 et 4] ; le décret n° 88-715 du 31 mars 1988 l'étend aux diplômés du second cycle secondaire, pour un an au plus [@decret88-715, art. 1, 3 et 4]. Les rapports de la Banque centrale distinguent depuis lors le « SIVP 1 » et le « SIVP 2 ».
+
+En 1993, la loi n° 93-17 réduit l'exonération qui suit le recrutement — deux ans après un contrat emploi-formation, un an après un stage d'initiation, sous conditions pour les diplômés du supérieur — et soustrait aux cotisations et à l'impôt sur le revenu l'indemnité complémentaire que l'entreprise verse au stagiaire [@loi93-17]. Le décret n° 93-1049 du 3 mai 1993 refond l'ensemble en trois catégories gérées par l'Agence tunisienne de l'emploi : le contrat emploi-formation, pendant lequel l'employeur verse une bourse des deux tiers du salaire minimum garanti en vigueur dans son secteur d'activité, le stage d'initiation des niveaux secondaire et premier cycle du supérieur, et celui des diplômés du supérieur ; la durée est d'un an, prorogeable d'un an pour les spécialités difficiles à placer [@decret93-1049, art. 2, 4, 12, 20, 21, 25, 28 et 29].
+
+::: {.callout-warning appearance="simple"}
+Les chiffres des textes de 1981 à 1993 — montants des subventions et des indemnités, durées, âges, taux — sont donnés sous réserve : ils restent à confirmer sur le texte imprimé du *Journal officiel* (@tbl-mt-pe-montants-1981-1993, et lignes de 1981 à 1993 du @tbl-mt-pe-textes).
+:::
+
+<!-- TODO (documentaliste) : relire au fascicule les chiffres (montants, durées, âges, taux) de 1981 à 1993 (loi n° 81-75,
+décrets n° 81-1220, 87-1190, 88-715, 88-733, 93-1049 ; note, § 3.1 et § 7.1, point 6), puis lever
+la réserve ci-dessus. Le décret n° 88-733 n'est établi qu'en partie (art. 6 à 9). -->
+
+| Texte | Contrat emploi-formation : subvention à l'entreprise | Stage d'initiation des diplômés du supérieur : indemnité mensuelle | Stage d'initiation du secondaire : indemnité mensuelle |
+|---|---|---|---|
+| décret n° 81-1220 [@decret81-1220, art. 17 et 18] | 500 D en trois tranches (150, 150, puis 200 après six mois d'emploi permanent) | — | — |
+| décret n° 87-1190 [@decret87-1190, art. 4] | — | 100 à 250 D, dans la limite de la moitié du salaire de base de l'emploi correspondant dans l'administration | — |
+| décret n° 88-715 [@decret88-715, art. 4] | — | — | 50 à 80 D |
+| décret n° 88-733 [@decret88-733, art. 6 à 9] | 500 D en deux tranches | — | — |
+| décret n° 93-1049 [@decret93-1049, art. 12, 25 et 28] | 300 D d'adaptation et 200 D d'embauche | 100 à 250 D | 60 à 80 D |
+
+: Subventions et indemnités de l'État, 1981-1993 — montants à confirmer sur le texte imprimé {#tbl-mt-pe-montants-1981-1993}
+
+Le décret de 1993 renvoie à un arrêté le barème des indemnités à l'intérieur de ces fourchettes [@decret93-1049, art. 25 et 28]. Cet arrêté n'est pas identifié ici ; le montant effectivement servi aux stagiaires entre 1993 et 2009 n'est donc pas établi.
+
+<!-- RECHERCHE r-sivp-bareme-1993-2009 : arrêtés fixant le barème de l'indemnité des stages d'initiation à la vie professionnelle entre 1993 et 2009 (voir docs/recherches.yml) -->
+
+### 2005-2011 : les programmes du Fonds national de l'emploi {#sec-mt-pe-2009}
+
+Deux mesures précèdent la refonte de 2009 ; elles visent le recrutement des diplômés du supérieur, hors de tout stage.
+
+- **La [prise en charge de la contribution patronale](#g-prise-en-charge-contribution-patronale)** : pour les diplômés recrutés entre le 1^er^ janvier 2005 et le 31 décembre 2009, l'État prend à sa charge la contribution patronale au régime de sécurité sociale pendant sept ans — en totalité les deux premières années, puis à 85 %, 70 %, 55 %, 40 % et 25 % [@lf-2005, art. 20].
+- **La prise en charge d'une part du salaire** : la loi n° 2005-91 met à la charge de l'État, pendant un an, la moitié du salaire du diplômé recruté par le secteur privé, dans la limite de 250 dinars par mois [@loi2005-91, art. 1] ; la loi de finances pour 2010 l'abroge [@lf-2010, art. 19].
+
+Le décret n° 2009-349 du 9 février 2009 abroge le décret de 1993 et fixe six « programmes du Fonds national de l'emploi » [@decret2009-349, art. 1 et 44] :
+
+- le stage d'initiation à la vie professionnelle, réservé aux diplômés du supérieur — le stage du niveau secondaire disparaît ;
+- le [contrat d'insertion des diplômés de l'enseignement supérieur](#g-cides) (CIDES), pour ceux qui sont au chômage depuis plus de trois ans ;
+- le [contrat d'adaptation et d'insertion professionnelle](#g-caip) (CAIP), pour les demandeurs d'emploi qui ne sont pas diplômés du supérieur ;
+- le [contrat de réinsertion dans la vie active](#g-crva) (CRVA), pour les travailleurs licenciés pour raison économique ;
+- le [programme d'accompagnement des promoteurs des petites entreprises](#g-programme-appui-promoteurs) (PAPPE) ;
+- le [contrat emploi-solidarité](#g-contrat-emploi-solidarite), qui finance des initiatives régionales.
+
+Le même printemps, un décret du 13 avril 2009 ajoute une mesure de crise : le Fonds prend en charge la moitié de la contribution patronale pour les salariés des entreprises totalement exportatrices dont l'horaire est réduit d'au moins huit heures par semaine, et la totalité en cas de chômage technique [@decret2009-1052, art. 42 bis à 42 quinquies].
+
+Trois ajouts suivent. Le décret n° 2010-87 crée le **service civil volontaire** : un stage à mi-temps de douze mois dans une association, pour les diplômés du supérieur à la recherche d'un premier emploi [@decret2010-87, art. 40 bis à 40 quinquies]. Les décrets de janvier 2011 ouvrent le CIDES aux diplômés au chômage depuis deux ans et portent la durée maximale du stage d'initiation de dix-huit mois à deux ans [@decret2011-1, art. 19 bis; @decret2011-98]. Le décret n° 2011-621 du 23 mai 2011, enfin, relève les indemnités à compter du 1^er^ mars 2011 et institue le [programme de recherche active d'emploi](#g-programme-amal) — c'est le nom du texte ; « AMAL » est celui de l'usage, que reprennent les rapports de suivi : une indemnité mensuelle servie pendant un an au plus aux demandeurs d'emploi, de 200 dinars pour les diplômés du supérieur et de 100 dinars pour les autres [@decret2011-621, art. 6 et 40 sexies à 40 octies]. Ce programme est abrogé à compter du 1^er^ janvier 2012 et remplacé par un **programme d'encouragement à l'emploi**, réservé aux diplômés depuis deux ans au moins, âgés de 28 ans au moins et dont la famille ne dispose pas d'un revenu supérieur à trois fois le SMIG, et limité au 31 décembre 2013 [@decret2012-953, art. 2 et 40 nonies à 40 quindecies].
+
+### 2012 : des « chèques » qui ne sont pas entrés en application {#sec-mt-pe-2012}
+
+Le décret n° 2012-2369 du 16 octobre 2012 porte le même intitulé que celui de 2009 et l'abroge, « sauf » exceptions. Il crée un chèque d'amélioration de l'employabilité — 200 ou 100 dinars par mois, pendant vingt-quatre mois au plus —, un chèque d'appui à l'emploi — jusqu'à la moitié du salaire et la contribution patronale, pendant un an —, un programme d'appui aux promoteurs et un partenariat avec les régions [@decret2012-2369, art. 1, 5 et 10]. Mais il renvoie l'entrée en vigueur du chèque d'appui et du partenariat au 1^er^ janvier 2015 et maintient « à titre transitoire » le stage d'initiation, le CIDES, le CAIP, le CRVA et le service civil volontaire [@decret2012-2369, art. 40 et 41]. Le décret n° 2013-3766 reporte à son tour le chèque d'amélioration de l'employabilité au 1^er^ janvier 2015 et maintient les programmes de 2009 jusqu'à la fin de l'expérimentation des chèques et à la parution des arrêtés d'application [@decret2013-3766, art. 40 (nouveau) et 41 (nouveau)].
+
+Les arrêtés qui devaient fixer les conditions d'émission des chèques ne sont pas identifiés ici.
+
+<!-- RECHERCHE r-d2012-2369-arretes-cheques : arrêtés conjoints fixant les conditions d'émission des chèques du décret n° 2012-2369 (voir docs/recherches.yml) -->
+
+Trois éléments montrent que les programmes de 2009 ont continué de s'appliquer. Les rapports de suivi de l'Observatoire national de l'emploi et des qualifications pour 2012 et 2013 ne comptent aucun chèque (@tbl-mt-pe-contrats). Ses bulletins de conjoncture comptent encore, pour les neuf premiers mois de 2016 et de 2017, des stages d'initiation et des CAIP (@tbl-mt-pe-partiel-2016). Le décret de 2019, enfin, règle le sort des stages d'initiation, des CIDES et des CAIP en cours à sa date [@decret2019-542, art. 61]. La refonte effective des programmes de 2009 est donc celle de 2019.
+
+### 2016-2023 : FORSATI, le contrat-dignité et la refonte de 2019 {#sec-mt-pe-2019}
+
+Deux programmes sont ajoutés au décret de 2012 avant son remplacement.
+
+- **Le [programme « FORSATI »](#g-programme-forsati)** (2016) est un accompagnement individuel de douze mois, prorogeable de six, assorti d'une indemnité mensuelle, d'une indemnité de déplacement et d'une prime d'insertion [@decret2016-904, art. 23 bis à 23 octies]. Le montant de ces indemnités n'est pas établi ici.
+- **Le [contrat-dignité](#g-contrat-dignite)** (2017) s'adresse aux diplômés du supérieur à la recherche d'un premier emploi et au chômage depuis deux ans au moins. Pendant deux ans, le Fonds prend en charge 400 dinars par mois du salaire, qui ne peut être inférieur à 600 dinars, ainsi que la part patronale et la part salariale des cotisations de sécurité sociale, dans la limite d'un salaire de 600 dinars [@decret2017-358, art. 26 quater à 26 decies].
+
+<!-- TODO (documentaliste) : indemnités de FORSATI (décret gouvernemental n° 2016-904 : 100 D puis
+150 D selon le semestre, 50 D de déplacement — lecture à confirmer) et leur état dans le décret
+n° 2019-542, art. 25 à 30 ; arrêté du 8 août 2017 sur les critères du contrat-dignité (pas de clé :
+TODO bibliographe). -->
+
+Le décret gouvernemental n° 2019-542 du 28 mai 2019 abroge le décret de 2012 et fixe cinq programmes : le [contrat d'initiation à la vie professionnelle](#g-civp) (CIVP), le contrat-dignité, le [contrat de service civil](#g-contrat-service-civil), le programme « FORSATI » et l'appui aux promoteurs des petites entreprises [@decret2019-542, art. 2]. Les nouveaux programmes s'appliquent au plus tard trois mois après l'entrée en vigueur du décret ; les stages et contrats en cours sont revalorisés [@decret2019-542, art. 61]. Le CIVP est ouvert aux demandeurs d'un premier emploi, diplômés du supérieur ou non, pour douze mois renouvelables une fois [@decret2019-542, art. 5 à 11].
+
+Trois appellations changent sans que le programme change de nature ; chacune se date.
+
+- **Stage, puis contrat d'initiation.** Le « stage d'initiation à la vie professionnelle » des décrets de 1987 à 2009 devient un « contrat » en 2019. L'usage et le sigle CIVP disent « contrat d'initiation à la vie professionnelle » ; le décret n° 2023-461 écrit en français « contrat d'insertion à la vie professionnelle » [@decret2023-461].
+- **Service civil.** Le « service civil volontaire » de 2010 [@decret2010-87, art. 40 bis] devient le « contrat de service civil » en 2019 [@decret2019-542, art. 2 et 17].
+- **Contrat-dignité.** Le « contrat-dignité » de 2017 garde ce nom en 2019 [@decret2019-542, art. 12] ; le décret n° 2023-461 lui substitue l'expression « programme d'appui au recrutement pour les titulaires des diplômes supérieurs » [@decret2023-461].
+
+Le décret n° 2023-461 du 5 juin 2023 subordonne en outre l'accueil de nouveaux titulaires d'un CIVP à l'insertion de la moitié de ceux que l'entreprise a accueillis les trois années précédentes, et étend l'appui aux promoteurs aux entreprises de l'économie sociale et solidaire et aux sociétés communautaires : investissement jusqu'à 300 000 dinars, bourse de 20 000 dinars jusqu'au 31 décembre 2025, et 200 dinars par mois et par membre pendant douze mois [@decret2023-461, art. 11 (nouveau), 31 (nouveau), 41 (nouveau) et 43 (nouveau)].
+
+### Les chantiers {#sec-mt-pe-chantiers}
+
+Les chantiers nationaux et régionaux reçoivent, de 1987 à 2000, les plus fortes dotations des programmes d'emploi, et restent ensuite parmi les premières (@fig-mt-pe-dotations). Le texte qui institue les chantiers régionaux n'est pas identifié ici.
+
+<!-- RECHERCHE r-chantiers-regionaux-texte-fondateur : texte instituant ou organisant les chantiers régionaux et nationaux d'emploi, antérieur au décret gouvernemental n° 2021-436 (voir docs/recherches.yml) -->
+
+Leur extinction, elle, est datée. Le décret gouvernemental n° 2021-436 du 17 juin 2021 met fin au mécanisme d'emploi des [ouvriers de chantiers](#g-ouvriers-de-chantiers) régionaux et agricoles : ceux qui étaient en exercice continu au 20 octobre 2020 sont, selon leur âge, intégrés dans la fonction publique, autorisés à poursuivre leur activité jusqu'à 60 ans (au-delà de 55 ans), ou sortent du mécanisme avec une allocation égale au transfert monétaire de base (à 60 ans et plus) [@decret2021-436, art. 4]. Le rapport sur le budget de l'État pour 2025 compte un « chèque de départ » des ouvriers de chantiers parmi les postes du Fonds national de l'emploi (@tbl-mt-pe-fne-postes).
+
+<!-- TODO (documentaliste) : décret n° 2025-459 du 19 novembre 2025, qui modifie le décret
+gouvernemental n° 2021-436 (intitulé seul connu, pas de clé) ; chantiers d'assistance d'avant
+l'indépendance (décret du 9 décembre 1954, loi n° 60-16), connus par leurs seuls intitulés. -->
+
+### Les textes, date par date {#sec-mt-pe-textes}
+
+Le tableau ne retient que les textes qui changent le public, la durée, l'indemnité versée par l'État ou les cotisations prises en charge (@tbl-mt-pe-textes). Lorsque le texte ne fixe pas lui-même sa date d'effet, la colonne « Effet » donne, en italique, le jour où il devient exécutoire : un jour franc après sa publication avant 1993 [@decret-1956-09-13-publication], cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis depuis [@loi93-64, art. 2].
+
+| Effet | Texte et articles | Avant → après |
+|---|---|---|
+| 1981 | loi n° 81-75 [@loi81-75, art. 1 et 4] | néant → subvention de l'État pendant un stage d'un an ; exonération de la part patronale des cotisations pendant le stage et trois ans après le recrutement (un an pour l'apprenti recruté) |
+| 1981 | décret n° 81-1220 [@decret81-1220, art. 2, 7, 11 et 13] | contrat emploi-formation : jeunes de 17 à 25 ans, premier emploi, un an ; l'entreprise verse le salaire entier et reçoit une subvention (@tbl-mt-pe-montants-1981-1993) |
+| *17 septembre 1987* | décret n° 87-1190 [@decret87-1190, art. 1, 3 et 4] | néant → stage d'initiation des diplômés du supérieur : un an, deux au plus ; indemnité mensuelle de l'État |
+| *14 avril 1988* | décret n° 88-715 [@decret88-715, art. 1, 3 et 4] | néant → stage d'initiation des diplômés du second cycle secondaire : un an au plus ; indemnité mensuelle de l'État |
+| *17 avril 1988* | décret n° 88-733 [@decret88-733, art. 6 à 9] | contrat emploi-formation : nouvel accueil de stagiaires subordonné au recrutement de 50 % → 25 % de ceux de l'année précédente |
+| *28 février 1993* | loi n° 93-17 [@loi93-17] | exonération de la part patronale : trois ans après le stage → pendant le stage, puis deux ans après un contrat emploi-formation, un an après un stage d'initiation (sous conditions pour les diplômés du supérieur), un an pour l'apprenti |
+| *16 mai 1993* | décret n° 93-1049 [@decret93-1049, art. 2, 4, 12, 20, 21, 25, 28 et 29] | trois catégories gérées par l'Agence tunisienne de l'emploi ; un an, prorogeable d'un an pour les spécialités difficiles ; bourse de l'employeur des deux tiers du salaire minimum garanti du secteur d'activité pendant le contrat emploi-formation |
+| recrutements du 1^er^ janvier 2005 au 31 décembre 2009 | loi de finances pour 2005 [@lf-2005, art. 20] | néant → contribution patronale prise en charge par l'État pendant sept ans pour le recrutement de diplômés du supérieur : 100 %, 100 %, 85 %, 70 %, 55 %, 40 %, 25 % |
+| *10 octobre 2005* | loi n° 2005-91 [@loi2005-91, art. 1] | néant → l'État prend en charge pendant un an 50 % du salaire du diplômé du supérieur recruté par le secteur privé, dans la limite de 250 D par mois |
+| *16 février 2009* | décret n° 2009-349 [@decret2009-349, art. 1, 8, 13 à 15, 23, 27, 34, 38 et 44] | décret n° 93-1049 abrogé → six programmes du Fonds national de l'emploi : stage d'initiation, CIDES, CAIP, CRVA, PAPPE, contrat emploi-solidarité |
+| *2 avril 2009* | arrêté du 19 mars 2009 [@arrete-2009-03-19-indemnites-fne] | indemnité complémentaire minimale due par l'entreprise, par mois : 150 D (stage d'initiation, CIDES), 50 D (CAIP, CRVA) |
+| *23 avril 2009* | décret n° 2009-1026 [@decret2009-1026, art. 3, 4 et 11] | stage d'initiation dans le secteur public : 150 D par mois ; les contrats en cours sont portés à 150 D |
+| *23 avril 2009* | décret n° 2009-1052 [@decret2009-1052, art. 42 bis à 42 quinquies] | néant → le Fonds prend en charge 50 % de la contribution patronale des entreprises totalement exportatrices en horaire réduit, et la totalité en cas de chômage technique |
+| 1^er^ janvier 2010 | loi de finances pour 2010 [@lf-2010, art. 19] | loi n° 2005-91 abrogée |
+| *28 janvier 2010* | décret n° 2010-87 [@decret2010-87, art. 40 bis à 40 quinquies] | néant → service civil volontaire : diplômés du supérieur à la recherche d'un premier emploi, douze mois à mi-temps dans une association, 150 D par mois ; jusqu'à 60 % du transport urbain |
+| *10 janvier 2011* | décret n° 2011-1 [@decret2011-1, art. 19 bis] | CIDES : s'ajoute une seconde voie, pour les diplômés au chômage depuis deux ans au moins, contrat d'un an |
+| *20 janvier 2011* | décret n° 2011-98 [@decret2011-98] | stage d'initiation : dix-huit mois au plus → deux ans ; contrat emploi-solidarité des diplômés : trois → quatre ans ; service civil prorogeable d'un an |
+| 1^er^ mars 2011 | décret n° 2011-621 [@decret2011-621, art. 6, 23, 34 et 40 quinquies à 40 octies] | CAIP : 80 → 100 D ; PAPPE : 150 → 200 D (diplômés) et 80 → 100 D ; service civil : 150 → 200 D ; néant → programme de recherche active d'emploi (AMAL) : 200 D ou 100 D par mois, un an au plus ; stage d'initiation ouvert sans délai de six mois après le diplôme |
+| 1^er^ janvier 2012 | décret n° 2012-953 [@decret2012-953, art. 2 et 40 nonies à 40 quindecies] | programme de recherche active d'emploi abrogé → programme d'encouragement à l'emploi : 200 D par mois le premier semestre, 150 D le second (150 puis 100 D pour les anciens bénéficiaires d'AMAL) ; prime de 600 D en cas de recrutement ; fin au 31 décembre 2013 |
+| *22 octobre 2012* ; chèque d'appui : 1^er^ janvier 2015 | décret n° 2012-2369 [@decret2012-2369, art. 1, 5, 10, 34 à 36, 40 et 41] | décret n° 2009-349 abrogé, ses programmes étant maintenus à titre transitoire → chèques d'amélioration de l'employabilité et d'appui à l'emploi, non entrés en application (@sec-mt-pe-2012) |
+| *30 septembre 2013* | décret n° 2013-3766 [@decret2013-3766, art. 4, 40 (nouveau) et 41 (nouveau)] | chèque d'amélioration de l'employabilité reporté au 1^er^ janvier 2015 ; programme d'encouragement à l'emploi : âge minimal de 28 → 26 ans |
+| *20 août 2014* | décret n° 2014-2901 [@decret2014-2901, art. 12 et 42] | petites entreprises aidées : investissement de 150 000 D au plus ; contrats emploi-solidarité associatifs prorogés d'un an |
+| *11 avril 2016* | décret gouvernemental n° 2016-445 [@decret2016-445, art. 42] | contrats emploi-solidarité associatifs prorogés d'une nouvelle année |
+| *8 août 2016* | décret gouvernemental n° 2016-904 [@decret2016-904, art. 23 bis à 23 octies] | néant → programme « FORSATI » : douze mois, prorogeables de six |
+| *20 mars 2017* | décret gouvernemental n° 2017-358 [@decret2017-358, art. 26 quater à 26 decies] | néant → contrat-dignité : pendant deux ans, 400 D par mois du salaire et les parts patronale et salariale des cotisations, dans la limite d'un salaire de 600 D |
+| 2019 ; nouveaux programmes au plus tard trois mois après l'entrée en vigueur | décret gouvernemental n° 2019-542 [@decret2019-542, art. 2, 6, 7, 9, 13, 20, 61 et 62] | décret n° 2012-2369 abrogé → cinq programmes : CIVP, contrat-dignité, contrat de service civil, FORSATI, appui aux promoteurs ; stages d'initiation et CIDES en cours portés à 200 D, CAIP en cours à 150 D |
+| *14 juin 2023* | décret n° 2023-461 [@decret2023-461, art. 11 (nouveau), 31 (nouveau), 41 (nouveau) et 43 (nouveau)] | CIVP : nouvel accueil subordonné à l'insertion de 50 % des sortants des trois dernières années ; appui étendu à l'économie sociale et solidaire et aux sociétés communautaires |
+
+: Les textes des programmes d'emploi, 1981-2023 : ce que chacun change {#tbl-mt-pe-textes}
+
+<!-- TODO (documentaliste) : jour de parution des fascicules de 1981 (n° 52, 11-14 août, et n° 59,
+25-29 septembre) pour dater l'effet de la loi n° 81-75 et du décret n° 81-1220 ; date du dépôt du
+JORT n° 51 de 2019 (édition arabe) pour dater le décret gouvernemental n° 2019-542, dont l'édition
+française manque sur pist.tn ; pages du décret n° 2023-461 au-delà de la p. 1552 ; fin des articles
+ajoutés par le décret n° 2011-1 (19 ter et quater). -->
+
+### Les programmes en un tableau {#sec-mt-pe-baremes}
+
+Le premier tableau donne, pour chaque programme postérieur à 2009, son public, sa durée et les cotisations que le Fonds prend à sa charge (@tbl-mt-pe-programmes) ; le second, l'indemnité mensuelle que l'État verse au bénéficiaire, texte après texte (@tbl-mt-pe-indemnites). L'indemnité complémentaire due par l'entreprise n'y est pas comprise.
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré, une fois les indemnités, durées et
+publics des programmes versés et datés en amont. -->
+
+| Programme | Public | Durée | Cotisations prises en charge | Textes |
+|---|---|---|---|---|
+| Stage d'initiation à la vie professionnelle (1987-2019) | diplômés du supérieur, premier emploi | un an, dix-huit mois au plus (2009) → deux ans (2011) | — | [@decret2009-349, art. 8; @decret2011-98] |
+| CIDES (2009-2019) | diplômés du supérieur au chômage depuis plus de trois ans ; depuis deux ans par une seconde voie (2011) | un an | contribution patronale prise en charge par le Fonds sur sept ans (100 %, 100 %, 85 %, 70 %, 55 %, 40 %, 25 %) pour les recrutements de 2009 à 2011 | [@decret2009-349, art. 11 à 19; @decret2011-1, art. 19 bis] |
+| CAIP (2009-2019) | demandeurs d'emploi non diplômés du supérieur, sur offre d'emploi non satisfaite | un an ; formation jusqu'à 400 heures | — | [@decret2009-349, art. 20 à 24] |
+| CRVA (2009) | travailleurs licenciés pour raison économique, permanents ou ayant trois ans d'ancienneté | un an ; adaptation jusqu'à 200 heures | — | [@decret2009-349, art. 25 à 28] |
+| Contrat emploi-solidarité (2009) | tous demandeurs d'emploi, dans le cadre d'initiatives régionales | trois ans (diplômés) → quatre ans (2011) ; un an (autres) | — | [@decret2009-349, art. 36 à 40; @decret2011-98] |
+| Service civil volontaire (2010), contrat de service civil (2019) | diplômés du supérieur à la recherche d'un premier emploi, dans une association | douze mois | — | [@decret2010-87, art. 40 bis; @decret2019-542, art. 17] |
+| Programme de recherche active d'emploi, dit AMAL (2011) | diplômés du supérieur et titulaires d'un brevet de technicien supérieur ; autres niveaux | un an au plus | — | [@decret2011-621, art. 40 sexies à 40 octies] |
+| Programme d'encouragement à l'emploi (2012-2013) | diplômés depuis deux ans au moins, âgés de 28 ans puis de 26 ans au moins | un an | — | [@decret2012-953; @decret2013-3766, art. 4] |
+| Contrat-dignité (2017) | diplômés du supérieur à la recherche d'un premier emploi, au chômage depuis deux ans | deux ans | parts patronale et salariale, dans la limite d'un salaire de 600 D | [@decret2017-358, art. 26 quater à 26 decies; @decret2019-542, art. 12 à 16] |
+| CIVP (2019) | demandeurs d'un premier emploi ; condition levée pour les non-diplômés et les personnes handicapées | douze mois, renouvelables une fois | contribution patronale prise en charge deux ans pour le diplômé recruté en contrat à durée indéterminée | [@decret2019-542, art. 5 à 11] |
+
+: Les programmes du Fonds national de l'emploi depuis 2009 : public, durée, cotisations prises en charge {#tbl-mt-pe-programmes}
+
+| Texte (effet) | Stage d'initiation ; CIVP des diplômés du supérieur (2019) | CAIP ; CIVP des autres bénéficiaires (2019) | CRVA | Service civil | Recherche active d'emploi, puis encouragement à l'emploi | Contrat-dignité |
+|---|---|---|---|---|---|---|
+| décret n° 2009-349 (février 2009) [@decret2009-349, art. 8, 23 et 27] | 150 | 80 | 200 | | | |
+| décret n° 2010-87 (janvier 2010) [@decret2010-87, art. 40 bis à 40 quinquies] | | | | 150 | | |
+| décret n° 2011-621 (1^er^ mars 2011) [@decret2011-621, art. 23 et 40 quinquies à 40 octies] | | 100 | | 200 | 200 (diplômés du supérieur) ; 100 (autres) | |
+| décret n° 2012-953 (1^er^ janvier 2012) [@decret2012-953, art. 40 nonies à 40 quindecies] | | | | | 200 le premier semestre, 150 le second | |
+| décret gouvernemental n° 2017-358 (mars 2017) [@decret2017-358, art. 26 quater] | | | | | | 400 |
+| décret gouvernemental n° 2019-542 (2019) [@decret2019-542, art. 5 à 20 et 61] | 200, stages en cours compris | 150, contrats en cours compris | | 200 | | la moitié du salaire net, 400 au plus |
+
+: Indemnité mensuelle versée par l'État au bénéficiaire, par programme, en dinars, 2009-2019 {#tbl-mt-pe-indemnites}
+
+Chaque ligne ne porte que les montants que le texte fixe ou modifie ; une case vide laisse le montant antérieur inchangé, en l'état des textes identifiés. Dans le CIVP de 2019, l'indemnité est majorée de 50 dinars pour les personnes handicapées [@decret2019-542, art. 5 à 11]. Le contrat emploi-solidarité sert de 150 à 250 dinars par mois aux diplômés et 130 dinars au plus aux autres bénéficiaires [@decret2009-349, art. 36 à 40] ; le CIDES, 150 dinars, majorés de 50 dinars hors du gouvernorat de résidence, auxquels s'ajoute une prime de recrutement de 1 000 dinars versée à l'entreprise [@decret2009-349, art. 11 à 19].
+
+## L'aide aux travailleurs licenciés {#sec-mt-pe-renvoi}
+
+La [protection des travailleurs licenciés](#g-indemnite-perte-emploi) pour des raisons économiques ou technologiques, dont le CRVA est le pendant sous forme de stage indemnisé, est exposée au volume [« Les prestations sociales »](../prestations_sociales/_autres_risques.html#sec-perte-emploi).
+
+## La longue période et les données {#sec-mt-pe-donnees}
+
+Trois familles de chiffres portent sur ces programmes et ne disent pas la même chose : les chiffres budgétaires, les décomptes administratifs de bénéficiaires, et les rapports et évaluations d'institutions extérieures ou d'auteurs. Elles sont présentées séparément. Aucune série continue ne couvre l'ensemble de la période : les dotations relayées par la Banque centrale s'arrêtent en 2008, les prévisions des lois de finances ne se lisent fonds par fonds que de 2011 à 2020, et les décomptes annuels de bénéficiaires réunis ici ne couvrent que 2009 à 2013.
+
+### Les chiffres budgétaires {#sec-mt-pe-budgetaire}
+
+#### Les dotations des programmes, 1987-2008 {#sec-mt-pe-dotations}
+
+De 1988 à 2008, le *Rapport annuel* de la Banque centrale publie un tableau des « programmes de soutien à l'emploi », avec la dotation de chacun (@fig-mt-pe-dotations). La Banque centrale n'en est pas la source : elle relaie les ministères chargés du Plan, puis du Développement, et le Commissariat général au développement régional. La présentation du tableau change pour les données de 1992 : les comparaisons qui suivent partent de cette année, sauf mention. Trois traits s'en dégagent.
+
+- **Les chantiers reçoivent les plus fortes dotations jusqu'en 2000.** Les chantiers nationaux passent de 37,6 MD en 1992 à 73,8 MD en 2008, les chantiers régionaux de 33,2 MD à 46,6 MD, avec une valeur de 92,0 MD en 2003 ; ensemble, ils reçoivent 120,4 MD en 2008. Dans la présentation antérieure, les premiers vont de 10,4 MD en 1987 à 16,7 MD en 1991, les seconds de 17,5 MD à 41,1 MD.
+- **Le Fonds national de l'emploi est la première ligne en 2001 et 2002, puis de 2004 à 2008** : 58,4 MD à sa création en 2000, 80,0 MD de 2001 à 2005, 100,0 MD en 2008.
+- **Les stages d'initiation des diplômés du supérieur changent d'échelle après 2003** : 2,8 MD en 1992, 9,7 MD en 2000 comme en 2003, 38,2 MD en 2008. Le contrat emploi-formation reste, de 1987 à 2008, entre 0,2 et 1,4 MD.
+
+```{python}
+#| label: fig-mt-pe-dotations
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import marche_travail as mt
+import figtools
+figtools.figure_tabs(
+    mt.vues_dotations_emploi(), mt.table_dotations_emploi(), mt.SERIE_EMPLOI,
+    slug="fig_mt_emploi_dotations",
+    caption=("Dotations des programmes de soutien à l'emploi d'après les rapports annuels de la "
+             "Banque centrale, qui relaie les ministères chargés du Plan puis du Développement, "
+             "en millions de dinars courants, 1987-2008"),
+    note_lecture=(
+        "Ce sont des dotations — des enveloppes allouées ou engagées —, non des dépenses "
+        "constatées. La Banque centrale relaie les chiffres des ministères chargés du Plan, "
+        "puis du Développement, et du Commissariat général au développement régional. Chaque "
+        "édition du rapport n'imprime que quelques années : la série réunit 21 éditions, et "
+        "c'est la dernière édition qui imprime une année qui fait foi. Le total est celui du "
+        "tableau : il comprend d'autres lignes, non tracées — développement rural et urbain "
+        "intégrés, fonds de promotion de l'artisanat et des petits métiers, notamment —, et "
+        "n'est donc pas la somme des courbes. Le tableau a trois présentations successives "
+        "(éditions 1988-1990, 1991-1994, 1995-2008) : les lignes tracées viennent de la "
+        "deuxième jusqu'en 1991 et de la troisième ensuite ; le total change de périmètre "
+        "entre 1993 et 1994, et celui de 1992 et de 1993 vient d'une autre édition que les "
+        "lignes de ces deux années. Les chantiers régionaux de 2003 sont de 29,6 MD dans "
+        "l'édition 2003 et de 92,0 MD dans les éditions 2004 à 2006 "
+        "[@bct-ra-2003, p. 103; @bct-ra-2004, p. 101] ; la source n'explique pas cette "
+        "révision. L'échelle logarithmique rend lisibles les petits programmes."),
+)
+```
+
+Le total du tableau passe de 94,5 MD en 1994 à 285,9 MD en 2008 dans sa dernière présentation ; les totaux antérieurs, de 50,8 MD en 1987 à 80,5 MD en 1993, relèvent d'un autre périmètre et ne s'y comparent pas. Pour 2009, la Banque centrale ne publie plus ce tableau ; elle rapporte, d'après le ministère du Développement et de la coopération internationale, 100 MD alloués au Fonds national de l'emploi, 57 MD inscrits au budget de l'État par l'intermédiaire de l'ANETI et 105 MD au titre du plan de relance de la loi de finances complémentaire [@bct-ra-2009].
+
+#### Le Fonds national de l'emploi dans les lois de finances, 2011-2025 {#sec-mt-pe-lf}
+
+À partir de la loi de finances pour 2011, le tableau des comptes spéciaux du Trésor donne la prévision de chaque fonds : ses recettes prévues, égales à ses dépenses autorisées. Les rapports du ministère des Finances sur le budget de l'État donnent ensuite la dotation du Fonds pour 2022, 2024 et 2025, et les lois de règlement, les excédents du Fonds reversés au budget de l'État pour 2016 à 2018 (@tbl-mt-pe-fne-lf).
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré, une fois les prévisions des comptes
+spéciaux versées en série dans l'entrepôt (note, annexe C). -->
+
+| Exercice | Fonds national de l'emploi : prévision de la loi de finances | Fonds de la formation : prévision de la loi de finances | Fonds national de l'emploi : dotation au rapport sur le budget | Excédent du Fonds national de l'emploi transféré au budget | Sources |
+|---|---:|---:|---:|---:|---|
+| 2011 | 200 | 60 | | | [@lf-2011, p. 3481] |
+| 2012 | 420 | 60 | | | [@lf-2012] |
+| 2013 | 520 | 60 | | | [@lf-2013] |
+| 2014 | 350 | 50 | | | [@lf-2014] |
+| 2015 | 330 | 50 | | | [@lf-2015] |
+| 2016 | 330 | | | 324,1 (sous réserve) | [@lf-2016; @loi2018-49] |
+| 2017 | 330 | 37 | | 266,4 | [@lf-2017; @loi2024-18, art. 5] |
+| 2018 | 300 | 25 | | 244,7 | [@lf-2018; @loi2024-19, art. 5] |
+| 2019 | 450 | 40 | | | [@loi2018-56-lf2019] |
+| 2020 | 420 | 70 | | | [@lf-2020] |
+| 2022 | | | 420 | | [@minfin-rapport-budget-2022, p. 115-116] |
+| 2024 | | | 420,5 | | [@minfin-rapport-budget-2024, p. 159-160] |
+| 2025 | | | 420,5 | | [@minfin-rapport-budget-2025, p. 165-167] |
+
+: Le Fonds national de l'emploi et le fonds de la formation au budget de l'État, en millions de dinars, 2011-2025 {#tbl-mt-pe-fne-lf}
+
+Une case vide signale une valeur qui n'est pas établie ici ; les années 2021 et 2023 n'ont aucune valeur établie. Trois précisions commandent la lecture de ce tableau.
+
+- **Ce sont des prévisions et des dotations.** La dépense exécutée du Fonds national de l'emploi n'est établie ici pour aucune année.
+- **Les excédents ne mesurent pas la dépense.** Les lois de règlement donnent, fonds par fonds, les excédents transférés au budget de l'État ; ce sont des soldes accumulés, qui ne disent ni la dépense de l'année ni un taux d'exécution. Les montants, arrondis ici au dixième de million, sont de 324 090 755,028 D pour 2016, 266 423 326,873 D pour 2017 et 244 746 214,082 D pour 2018 ; celui de 2016 est donné sous réserve, la nature exacte de la colonne où il figure restant à confirmer.
+- **Le budget de la mission est plus large que le Fonds.** Le projet annuel de performance de la mission « emploi et formation professionnelle » inscrit, pour le seul programme « Emploi », 387,2 MD de crédits de paiement en 2021 et 385,7 MD en 2022, sur 967,5 MD et 980,0 MD pour la mission entière [@gbo-pap-emploi-2022].
+
+<!-- TODO (documentaliste) : dépense exécutée du Fonds national de l'emploi, par an et par
+programme (rapports annuels de performance de la mission, tableaux annexes des lois de règlement,
+Cour des comptes) ; prévisions du Fonds avant 2011 (tableaux « E » des lois de finances 2000 à
+2010) et depuis 2021 ; fonds de la formation en 2016 ; pages des tableaux des lois de finances 2012
+à 2020, connues à une page près ; intitulé de la colonne de la loi n° 2018-49 ; ligne « 256 580 000 »
+du fascicule n° 55 de 2018 (lois de règlement 2013 à 2015), de gestion et de nature non
+identifiées ; projets annuels de performance 2024 et 2025 (clés `gbo-pap-emploi-2024` et `-2025`),
+dont les tableaux restent à dépouiller. -->
+
+Les rapports sur le budget citent, pour chaque exercice, les principaux postes de la dotation (@tbl-mt-pe-fne-postes). Ils les introduisent par « notamment » : ces postes ne sont pas une décomposition, et ceux de 2022 totalisent 427 MD pour une dotation de 420 MD.
+
+| Poste | 2022 | 2024 | 2025 |
+|---|---|---|---|
+| **Dotation du Fonds** | 420 | 420,5 | 420,5, dont 295,5 pour l'emploi et 125 pour l'initiative privée |
+| CIVP | 175 | 191, pour 104 000 contrats | 180, pour 104 000 contrats en cours et environ 98 000 nouveaux |
+| Contrat-dignité, puis appui au recrutement des diplômés | 140, pour 25 000 diplômés | 63,5, pour 6 800 diplômés | 41, pour environ 6 000 nouveaux contrats et 6 800 en cours |
+| Service civil | | 24,7, pour 11 000 bénéficiaires | 20, pour 10 000 nouveaux bénéficiaires |
+| Microprojets financés par la Banque tunisienne de solidarité | 70 | 60 | |
+| « Nouvelle génération de promoteurs » | 25 | 25 | |
+| Accompagnement des promoteurs et économie sociale et solidaire | 15 | 15 et 10 | |
+| Économie numérique | 2 | 12,5 | |
+| Jeunes pousses | | | 10 |
+| Chèque de départ des ouvriers de chantiers | | | 30, pour environ 1 500 chèques |
+| *Budget de développement de la mission, pour mémoire* | environ 515 | 507,2 | environ 489 |
+
+: Postes de la dotation du Fonds national de l'emploi cités par les rapports sur le budget de l'État, en millions de dinars, et effectifs visés [@minfin-rapport-budget-2022, p. 115-116; @minfin-rapport-budget-2024, p. 159-160; @minfin-rapport-budget-2025, p. 165-167] {#tbl-mt-pe-fne-postes}
+
+Une case vide signale un poste que le rapport de l'année ne cite pas. Entre 2022 et 2025, le poste du contrat-dignité passe de 140 MD à 41 MD, et l'effectif visé de 25 000 diplômés à environ 6 000 nouveaux contrats, tandis que celui du CIVP se maintient entre 175 et 191 MD.
+
+### Les chiffres administratifs {#sec-mt-pe-administratif}
+
+#### Les bénéficiaires en 2007-2009, d'après la Banque centrale {#sec-mt-pe-benef-2009}
+
+La Banque centrale rapporte 117 000 bénéficiaires du Fonds national de l'emploi en 2007 et 123 000 en 2008 [@bct-ra-2008, p. 111], puis une prévision de 130 000 pour 2009 [@bct-ra-2009]. Pour 2009, première année des programmes du décret n° 2009-349, elle donne les bénéficiaires prévus et réalisés par programme, d'après le ministère du Développement et de la coopération internationale (@tbl-mt-pe-benef-2009).
+
+| Programme | Prévus | Réalisés |
+|---|---:|---:|
+| Stage d'initiation à la vie professionnelle | 36 000 | 33 639 |
+| CIDES | 2 500 | 2 387 |
+| CAIP | 16 600 | 20 361 |
+| CRVA | 800 | 223 |
+| PAPPE | 13 700 | 11 443 |
+| Contrat emploi-solidarité | 37 100 | 28 000 |
+| Projets et sources de revenus | 82 500 | 83 426 |
+| **Total** | 189 200 | 179 479 |
+
+: Bénéficiaires des programmes d'emploi en 2009, prévus et réalisés [@bct-ra-2009] {#tbl-mt-pe-benef-2009}
+
+<!-- TODO (documentaliste) : page imprimée du tableau de l'édition 2009 (page 136 du fichier) ;
+contrats signés et bénéficiaires par programme que chaque édition du Rapport annuel donne dans son
+texte, de 1988 à 2008 (par exemple 24 313 contrats de stage d'initiation en 2005), à réunir en
+série ; annuaires statistiques de l'INS (placement). -->
+
+#### Les nouveaux contrats, 2010-2013 {#sec-mt-pe-contrats}
+
+L'Observatoire national de l'emploi et des qualifications (ONEQ), qui relève du ministère chargé de l'emploi, publie pour 2012 et 2013 un rapport de suivi des programmes, établi sur les données de l'ANETI ; l'unité est le contrat nouvellement signé dans l'année (@tbl-mt-pe-contrats).
+
+| | 2010 | 2011 | 2012 | 2013 |
+|---|---:|---:|---:|---:|
+| Stage d'initiation à la vie professionnelle | 45 245 | 45 018 | 55 723 | 62 924 |
+| CAIP | 34 954 | 37 629 | 40 458 | 36 645 |
+| Service civil volontaire | 5 901 | 6 719 | 18 120 | 22 688 |
+| CIDES | 3 996 | 1 018 | 276 | 100 |
+| CRVA | 750 | 621 | 359 | 451 |
+| Prise en charge de 50 % du salaire | | 248 | 303 | 214 |
+| Programme de recherche active d'emploi (AMAL) | — | 203 133 | 17 550 | 0 |
+| Programme d'encouragement à l'emploi | — | 0 | 21 050 | 37 267 |
+| *Bénéficiaires en cours en fin d'année* | 70 537 | 72 002 | 96 425 | 94 989 |
+| *Sortants dans l'année* | 95 549 | 107 696 | 106 246 | 148 681 |
+
+: Nouveaux contrats par programme, 2010-2013 [@oneq-suivi-pae-2012, p. 5; @oneq-suivi-pae-2013, p. 7, 8 et 17] {#tbl-mt-pe-contrats}
+
+Un tiret signale un programme qui n'existe pas encore ; la case vide de 2010, une valeur qui n'est pas établie ici. Le total des nouveaux contrats imprimé par ces rapports n'est pas repris : son périmètre change entre 2012 et 2013, où il inclut le programme d'encouragement à l'emploi. Les mêmes rapports donnent la part des contrats résiliés parmi les contrats terminés : 29,1 % en 2010, 30 % en 2011 et 35,2 % en 2012 [@oneq-suivi-pae-2012].
+
+Le programme de recherche active d'emploi a, pour 2011, deux mesures administratives qui ne se chaînent pas : 203 133 nouveaux contrats dans l'année d'après le rapport de suivi [@oneq-suivi-pae-2013], et 188 497 bénéficiaires cumulés en décembre 2011, dont 144 313 en cours, d'après le rapport que l'ONEQ consacre au programme [@oneq-evaluation-amal-2012, tableau 1].
+
+#### Après 2013 : des périodes partielles {#sec-mt-pe-partiel}
+
+Pour les années entières 2014 à 2022, aucun décompte par programme n'est réuni ici. Les bulletins de conjoncture de l'ONEQ donnent des périodes de neuf mois pour 2016 et 2017, et de six mois pour 2023 et 2024 (@tbl-mt-pe-partiel-2016, @tbl-mt-pe-partiel-2023) ; elles ne se comparent pas aux années entières du tableau précédent.
+
+| Période | Stage d'initiation | CAIP | Service civil | FORSATI | Contrat-dignité | Total imprimé, autres programmes compris |
+|---|---:|---:|---:|---:|---:|---:|
+| janvier-septembre 2016 | 43 435 | 23 461 | 19 382 | 0 | 0 | 97 661 |
+| janvier-septembre 2017 | 39 230 | 27 162 | 16 915 | 26 548 | 9 999 | 130 139 |
+
+: Nouveaux contrats par programme, neuf premiers mois de 2016 et de 2017 [@oneq-conjoncture-2017-t3, p. 11] {#tbl-mt-pe-partiel-2016}
+
+| Période | CIVP | Contrat de service civil | Contrats d'appui au recrutement des diplômés de l'enseignement supérieur | Total de l'emploi salarié |
+|---|---:|---:|---:|---:|
+| premier semestre 2023 | 50 500 | 5 292 | 2 660 | 58 452 |
+| premier semestre 2024 | 43 718 | 4 136 | 2 050 | 49 904 |
+
+: Nouveaux contrats par programme, premiers semestres de 2023 et de 2024 [@oneq-conjoncture-2024-t3, p. 2 et 4] {#tbl-mt-pe-partiel-2023}
+
+Une étude de l'ONEQ et de l'Organisation internationale du travail donne par ailleurs deux cumuls : environ 48 000 bénéficiaires du contrat-dignité de 2017 à la fin de 2021, soit 17 000 contrats par an les deux premières années et près de 6 000 les deux dernières ; 70 000 bénéficiaires du contrat de service civil de 2018 à 2021, de 20 000 en 2018 à 12 000 en 2021 [@oneq-oit-2023-karama-csc].
+
+<!-- TODO (documentaliste) : bénéficiaires par programme, années entières 2014 à 2022 (rapports
+annuels de l'ANETI et de l'ONEQ, non obtenus) ; bulletin du premier trimestre 2018
+(`oneq-conjoncture-2018-t1`) et rapport du premier semestre 2013, à dépouiller ; page de l'étude
+ONEQ-OIT pour les cumuls. -->
+
+### Les rapports de la Banque mondiale {#sec-mt-pe-rapports}
+
+Deux rapports de la Banque mondiale chiffrent la dépense des programmes d'emploi. Leurs périmètres diffèrent de ceux des tableaux qui précèdent, et entre eux.
+
+**Le rapport de 2004 sur la stratégie d'emploi.** La Banque mondiale y calcule la dépense des politiques actives de l'emploi à partir des dotations budgétaires que lui a communiquées le ministère des Finances, complétées par l'Agence tunisienne de l'emploi et les agences de formation, et classées selon la nomenclature de l'OCDE [@bm2004-employment-strategy, p. 69-72]. Le périmètre est large : il comprend la formation professionnelle initiale et le microcrédit, compté en montants bruts. La dépense ainsi mesurée est de 208,85 MD en 1997, 258,79 MD en 1998, 336,19 MD en 1999, 428,31 MD en 2000, 483,16 MD en 2001 et 455,74 MD en 2002, cette dernière valeur étant une prévision. Le rapport l'évalue à « environ 1,5 % du PIB » en 2002, et à environ 1 % hors microcrédits remboursables ; la base des comptes nationaux de ce PIB n'est pas précisée par la source. Il compare aussi les enveloppes de deux plans : 1 716 MD pour le IX^e^ Plan, 2 350 MD prévus pour le X^e^.
+
+**L'ouvrage de 2015 sur la politique du travail.** Son tableau des programmes gérés par l'ANETI en octobre 2011 est descriptif : il reprend les budgets et les effectifs de l'agence, sans calcul propre [@bm2015-labor-policy, p. 71-72]. Il donne, pour 2011, 252,6 MD et 155 000 bénéficiaires pour le programme de recherche active d'emploi, 57 MD et 46 000 bénéficiaires pour le stage d'initiation, 5 MD et 3 000 bénéficiaires pour le CIDES, et 4,2 MD pour le PAPPE. Les auteurs écrivent que le coût des programmes, « 0,8 % du PIB en 2011 », est financé par le Fonds national de l'emploi et géré par l'ANETI [@bm2015-labor-policy, p. 69] ; la source ne précise ni la base de ce PIB ni le mode de calcul du ratio. Les 155 000 bénéficiaires d'octobre 2011 sont une troisième mesure du même programme, distincte des deux décomptes de l'ONEQ (@sec-mt-pe-contrats).
+
+### Les évaluations {#sec-mt-pe-evaluations}
+
+Trois évaluations mesurent l'effet d'un programme sur ceux qui en bénéficient. Chacune a sa méthode, qui commande la portée de son résultat.
+
+**Le stage d'initiation à la vie professionnelle (Broecke, 2013).** L'auteur exploite l'enquête de suivi des diplômés de 2004 — un échantillon représentatif de 4 763 diplômés, interrogés en 2005 et en 2007, dont 3 511 observations sont retenues — et compare les bénéficiaires du stage aux autres diplômés par régression et par appariement ; il souligne que l'entrée dans le programme n'est pas aléatoire [@broecke2013]. Selon ses estimations, les bénéficiaires sont moins souvent sans emploi (7 points de moins) et au chômage (9 points de moins), et bien plus souvent employés dans le secteur privé (29 points de plus) ; ils sont en revanche moins souvent en contrat permanent (24 points de moins) et gagnent 52 dinars de moins, soit près de 9 %. L'auteur estime le coût par emploi créé à environ 18 000 dinars, sous l'hypothèse d'un coût de 1 440 dinars par participant.
+
+**Le contrat-dignité (ONEQ et OIT, 2023).** L'étude repose sur une enquête auprès de la cohorte des bénéficiaires de 2018 et d'un groupe témoin tiré du fichier des demandeurs d'emploi de l'ANETI ; elle estime l'effet du programme par double différence, avec variables de contrôle, un à deux ans après la sortie [@oneq-oit-2023-karama-csc]. Pour le contrat-dignité, elle conclut à un effet de 8 points de moins sur l'emploi total, de 8 points de plus sur l'emploi permanent et de 17 points de moins sur l'emploi non permanent.
+
+**La formation à l'entrepreneuriat (Premand et al., 2012).** Les auteurs affectent au hasard des étudiants de dernière année de licence appliquée à une filière « entrepreneuriat » et observent leur situation un an après le diplôme [@premand2012]. Ils concluent à une hausse de l'emploi indépendant, faible en valeur absolue, et à un taux d'emploi inchangé.
+
+<!-- TODO (documentaliste) : résultats de l'étude ONEQ-OIT pour le contrat de service civil et
+taille de ses échantillons ; chiffres de Premand et al. à relever au texte ; études récupérées et
+à dépouiller avant toute citation — ONEQ : suivi du stage d'initiation (2009), évaluation du
+service civil volontaire (2010), évaluation de la prise en charge de 50 % du salaire (2016) ;
+Banque mondiale : « Building Effective Employment Programs for Unemployed Youth in the Middle East
+and North Africa » (2013), « Tunisia: Breaking the Barriers to Youth Inclusion » (2014), note « The
+AMAL Program » (2011). Études à obtenir : OCDE (2015), « Investir dans la jeunesse : Tunisie ». -->

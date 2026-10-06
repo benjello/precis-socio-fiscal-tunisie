@@ -843,10 +843,84 @@ période. Notes documentaires : `docs/notes/marche-travail-smig-smag.md`,
 `-conventions-collectives.md`, `-negociations.md` (partie privée). Le livre arabe est déclaré
 (`precis/ar/marche_travail/_quarto.yml`) et sauté tant que la traduction n'est pas livrée.
 
+Huitième chapitre ajouté le 6 octobre 2026 (branche `docs/marche-travail-politiques-emploi`) :
+« Les politiques de l'emploi » (`_politiques_emploi.qmd`), placé après la longue période du
+salaire minimum, qui clôt le bloc des salaires ; note documentaire
+`docs/notes/marche-travail-politiques-emploi.md`. Il porte sa propre longue période : figure des
+dotations 1987-2008 (série `bct-programmes-emploi-dotations`, fonction `vues_dotations_emploi` de
+`figures/marche_travail.py`), tableaux budgétaires 2011-2025, décomptes administratifs 2009-2013,
+rapports de la Banque mondiale et évaluations, en blocs séparés.
+
 À faire, avec l'état des sources :
 
-- **Chapitres annoncés, non écrits** : temps de travail et congés ; rupture du contrat de travail ;
-  politiques de l'emploi. À ajouter au `_quarto.yml` français et arabe à leur rédaction.
+- **Chapitres annoncés, non écrits** : temps de travail et congés ; rupture du contrat de travail.
+  À ajouter au `_quarto.yml` français et arabe à leur rédaction.
+- **Politiques de l'emploi — chapitre arabe à déclarer** : `_politiques_emploi.qmd` est déclaré au
+  `_quarto.yml` français seulement. À la livraison de la traduction, l'ajouter à la main à
+  `precis/ar/marche_travail/_quarto.yml` (après `_longue_periode.qmd`) et rendre le livre arabe :
+  la figure y est déjà bilingue (`figures/` est un lien vers le répertoire français).
+- **Politiques de l'emploi — dépense exécutée du Fonds national de l'emploi** : établie pour
+  aucune année. Le chapitre ne donne que des dotations (BCT, 1987-2008), des prévisions de lois de
+  finances (2011-2020), des dotations de rapports sur le budget (2022, 2024, 2025) et des excédents
+  reversés (2016-2018, celui de 2016 sous réserve : intitulé de la colonne de la loi n° 2018-49 à
+  confirmer). À obtenir : rapports annuels de performance de la mission (gbo.tn, adresses non
+  trouvées), tableaux annexes des lois de règlement (images, au corpus, à dépouiller), Cour des
+  comptes. Prévisions du Fonds avant 2011 et depuis 2021 : tableaux des lois de finances au
+  corpus, à relire à l'image ; pages des tableaux 2012-2020 connues à une page près. PAP 2024 et
+  2025 (édition arabe) récupérés, tableaux à dépouiller.
+- **Politiques de l'emploi — bénéficiaires** : années entières 2014 à 2022 absentes (rapports
+  annuels de l'ANETI et de l'ONEQ non obtenus ; `emploi.tn` ne répond pas, captures d'archive
+  partielles) ; seules des périodes partielles sont données (neuf mois 2016-2017, premier semestre
+  2023-2024). Contrats signés et bénéficiaires de 1988 à 2008 : donnés en prose par chaque édition
+  du Rapport annuel de la BCT (au dépôt `tunisia-data`, lisibles), non dépouillés. Annuaires de
+  l'INS non parcourus.
+- **Politiques de l'emploi — études récupérées, non dépouillées** (donc non citées) : ONEQ, suivi
+  du SIVP (2009), évaluation du service civil volontaire (2010), évaluation du « PC50 » (2016),
+  rapport du premier semestre 2013, bulletin du premier trimestre 2018 ; Banque mondiale,
+  *Building Effective Employment Programs…* (2013), *Breaking the Barriers to Youth Inclusion*
+  (2014), note « The AMAL Program » (2011). À relever aussi : résultats du contrat de service civil
+  et tailles d'échantillon de l'étude ONEQ-OIT de 2023 ; chiffres de Premand et al. (2012), dont
+  seuls la méthode et le résultat qualitatif sont écrits. Non obtenue : OCDE (2015), *Investir dans
+  la jeunesse : Tunisie*. Les PDF sont dans `tunisia-data/data/raw/emploi/`, répertoire **non
+  ignoré par git** : à trancher par l'humain avant tout `git add` dans ce dépôt.
+- **Politiques de l'emploi — chiffres de 1981 à 1993 à relire** : subventions, indemnités, durées,
+  âges et taux des
+  décrets n° 81-1220, 87-1190, 88-715, 88-733 et 93-1049, lus sur des fascicules sans couche texte
+  fiable ; le chapitre les donne dans un tableau à part, sous réserve (`tbl-mt-pe-montants-1981-1993`).
+  Relecture à l'image nécessaire, comme pour les indemnités de FORSATI (décret gouvernemental
+  n° 2016-904, colonnes entrelacées), laissées hors du texte. Les lignes de crédit imputées sur le
+  Fonds par les lois de finances 2022 à 2026 (édition arabe) sont aussi à relire avant d'être
+  écrites ; date d'effet des textes de 1981 et du décret gouvernemental n° 2019-542 non établie
+  (édition française du JORT n° 51 de 2019 absente de pist.tn).
+- **Politiques de l'emploi — textes non identifiés** (fiches de `docs/recherches.yml`) : texte
+  instituant le FIAP (`r-fiap-texte-fondateur`) ; barème du SIVP entre 1993 et 2009
+  (`r-sivp-bareme-1993-2009`) ; arrêtés des chèques de 2012 (`r-d2012-2369-arretes-cheques`) ;
+  texte fondateur des chantiers (`r-chantiers-regionaux-texte-fondateur`). Textes connus par leur
+  seul intitulé : décret n° 2003-564 (ANETI), décret-loi n° 2022-78, arrêté du 8 août 2017,
+  décret n° 2025-459, décrets n° 93-1354, 97-1938, 97-1930, 94-494, 98-868, 2001-1722, 2006-2990,
+  2007-1237.
+- **Politiques de l'emploi — bibliographie** : pas de clé pour les éditions 1988-1990, 1997 et
+  2000 du Rapport annuel de la BCT (la clé générique `bct-ra` les couvre dans la figure), ni pour
+  le décret n° 2000-2279, la loi n° 91-4, l'arrêté du 8 août 2017 et le décret n° 2025-459 ;
+  `loi88-60-lfc1988` (restructuration des offices en 1988) n'existe qu'au volume « Les caisses » ;
+  `loi74-101-lf1975` existe au fonds commun, mais son art. 57 (fonds d'intervention économique)
+  n'est pas vérifié.
+- **Politiques de l'emploi — annexe du glossaire, huit citations non résolues** : les entrées
+  `tfp`, `avance-tfp` et `fonds-special-tresor`, ancrées par le chapitre et appelées par le
+  `voir_aussi` des entrées neuves (`fonds-national-emploi`, `fonds-formation-apprentissage`,
+  `contrat-emploi-formation`), citent six clés propres à d'autres volumes :
+  `decret-1956-01-12-formation-professionnelle`, `decret66-527`, `loi-88-145-lf-1989`,
+  `loi2007-69`, `decret2009-292` (cotisations sociales) et `lf-1971` (compensation). À promouvoir
+  au fonds commun, FR et AR (bibliographe) : `scripts/verifier.sh marche_travail` échoue au rendu
+  tant que ce n'est pas fait ; le chapitre lui-même n'a aucune citation non résolue.
+- **Politiques de l'emploi — tableaux faits main** : `tbl-mt-pe-programmes`,
+  `tbl-mt-pe-indemnites` et `tbl-mt-pe-fne-lf` portent un TODO rédacteur (à engendrer une fois les
+  barèmes et les prévisions des comptes spéciaux versés en amont). La prise en charge par l'État de
+  la contribution patronale (LF 2005, art. 20 ; décret n° 2009-349) n'est traitée dans aucun
+  chapitre du volume « Les cotisations sociales » : à y signaler par un renvoi.
+- **Glossaire des politiques de l'emploi** : dix-neuf notions en `provisoire`, sans définition ;
+  « contrat d'initiation » (usage, sigle CIVP) ou « contrat d'insertion » (décret n° 2023-461) à
+  trancher par le terminologue.
 - **Taux des accords-cadres UGTT-UTICA** (1990-2023) : aucun texte au *Journal officiel* ; fiche
   `r-accords-cadres-ugtt-utica`. À obtenir hors corpus (archives d'*Echaab*, ministère des affaires
   sociales, OIT).

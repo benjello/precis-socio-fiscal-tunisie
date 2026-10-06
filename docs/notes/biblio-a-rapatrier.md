@@ -6,6 +6,62 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Ajouts à la main du 06/10/2026 (marché du travail, chapitre « Les politiques de l'emploi »)
+
+**Cinquante-trois clés neuves** dans `precis/fr/marche_travail/references.json` et `precis/ar/marche_travail/references.json`
+(mêmes identifiants), absentes de Zotero. Source : annexe A et renvois de `docs/notes/marche-travail-politiques-emploi.md`.
+
+- Organismes et jeunes (11) : `loi67-11`, `loi73-8`, `loi83-111`, `loi93-11`, `decret2003-564`, `loi81-75`,
+  `decret81-1220`, `decret87-1190`, `decret88-715`, `loi93-17`, `decret93-1049`.
+- Fonds national de l'emploi et programmes (12, plus un décret de chantiers) : `loi2005-91`, `decret2009-349`, `arrete-2009-03-19-indemnites-fne`,
+  `decret2010-87`, `dl2011-16`, `decret2011-621`, `decret2012-953`, `decret2012-2369`, `decret2013-3766`,
+  `decret2016-904`, `decret2019-542`, `decret2023-461` ; chantiers : `decret2021-436`.
+- Décrets modificatifs (9) : `decret88-733`, `decret98-1120`, `decret2009-1026`, `decret2009-1052`, `decret2011-1`,
+  `decret2011-98`, `decret2011-2484`, `decret2014-2901`, `decret2016-445`.
+- Lois de règlement (3) : `loi2018-49`, `loi2024-18`, `loi2024-19`.
+- Budget (6) : `minfin-rapport-budget-2022`, `minfin-rapport-budget-2024`, `minfin-rapport-budget-2025`,
+  `gbo-pap-emploi-2022`, `gbo-pap-emploi-2024`, `gbo-pap-emploi-2025`.
+- ONEQ, captures Wayback (7) : `oneq-suivi-pae-2012`, `oneq-suivi-pae-2013`, `oneq-oit-2023-karama-csc`,
+  `oneq-conjoncture-2017-t3`, `oneq-conjoncture-2018-t1`, `oneq-conjoncture-2024-t3`, `oneq-evaluation-amal-2012`.
+- Études extérieures (4) : `broecke2013`, `premand2012`, `bm2004-employment-strategy`, `bm2015-labor-policy`.
+
+**Lois de finances (complément du 06/10/2026)** : **promues au fonds commun** (déplacées de `fiscalite`, `cotisations_sociales`
+et `caisses`, FR et AR, sans doublon restant) : `lf-1996`, `lf-2000` (copies de `cotisations_sociales` et `fiscalite`
+fusionnées sur la plus complète, pages 2741 et 2748), `lf-2001`, `lf-2010`, `lf-2015`, `lf-2017`, `lf-2020` (copies de
+`fiscalite` et `caisses`) ; dans Zotero, à **déclasser** de ces collections. **Versée** : `lf-2012` (loi n° 2011-7,
+notice recid 109451, pages 3-151 non relues). Restent absentes : `lf-1975` (loi de finances pour 1975, art. 57 ; texte non
+identifié dans `jort_cache.db`) ; la LF 2019 résout par `loi2018-56-lf2019` (fonds commun). Doublons préexistants
+non touchés : `lf-2003`, `lf-2011`, `lf-2013` (fonds commun et `cotisations_sociales`).
+
+**Clôture du chapitre « Les politiques de l'emploi » (06/10/2026)** : **promues au fonds commun** (FR et AR, sans doublon
+restant) pour les entrées de glossaire `tfp`, `avance-tfp`, `fonds-special-tresor` : `decret-1956-01-12-formation-professionnelle`,
+`decret66-527`, `loi2007-69`, `decret2009-292` (venues de `cotisations_sociales`), `loi-88-145-lf-1989` (copies de
+`cotisations_sociales` et `fiscalite` fusionnées sur la plus complète), `lf-1971` (de `compensation`) ; puis `loi88-60-lfc1988`
+(de `caisses`), `bct-ra-1997` et `bct-ra-2000` (de `compensation`). Dans Zotero : à **déclasser** de ces collections.
+**Doublon à réconcilier** : `loi2007-69` (ici) et `loi-2007-69-initiative-economique` (fiscalité, branche parallèle) désignent la
+même loi n° 2007-69 ; garder une seule clé. Reste sans clé : le décret-loi n° 2022-78 et le décret n° 2000-2279 (TODO du chapitre).
+Dry-run : s'arrête sur `dafflon-2021-budget-local` (défaut antérieur) ; `controle-rangement` : voir les « à déclasser » ci-dessus.
+
+**Réutilisée** : `decret2017-358` (fonds commun). **Promues au fonds commun** (venues de `compensation`, citées aussi
+par ce volume : séries 1987-2008) : `bct-ra-1991` à `bct-ra-1996`, `bct-ra-1998`, `bct-ra-1999`, `bct-ra-2001` à
+`bct-ra-2009` (17 clés, FR et AR). Dans Zotero : à **déclasser** de la collection du volume « La compensation »
+(le `controle-rangement` le signalera).
+
+**Sans URL** : `decret2019-542` (FR : édition française absente de pist.tn, intitulé traduit de l'arabe) ;
+`loi2018-49` (FR : `pdf_fr` vide, intitulé traduit de l'arabe) ; `minfin-rapport-budget-2022`, `-2024`, `-2025`
+(adresse d'origine non consignée dans `tunisia-data`).
+
+**À vérifier** : numéros de décret suivis au fascicule (88-733 ; 2023-461), non à la notice (88-773 ; 2023-060) ;
+pages de `loi67-11` (notice), `decret2023-461` et `decret2021-436` (notice, à confirmer) ; `decret2011-2484` p. 2026
+(sommaire du fascicule) ; pages des lois de règlement 2024 omises ; `oneq-conjoncture-2024-t3` : couverture « T2/2024,
+mars 2024 » contredite par le contenu (S1 2024), non datée ; mois de parution de `oneq-suivi-pae-2012` et
+`oneq-oit-2023-karama-csc` repris de la note ; `oneq-suivi-pae-2013`, date de parution à relever ;
+`minfin-rapport-budget-2025`, mois non lu. Entrées arabes : intitulé français conservé, sauf `decret2019-542`
+(intitulé arabe de la notice) ; pagination arabe non mesurée. `bm2015-labor-policy` : directeurs déclarés comme
+auteurs (Zotero ne conserve pas `editor` sur ce type). Aucune clé BCT, ONEQ ou rapport de budget de ce volume n'est
+encore dans une collection Zotero.
+
+
 ## Ajouts à la main du 06/10/2026 (prestations sociales, chapitre « Compensation »)
 
 **Dix-neuf clés neuves** (puis dix-sept de plus, voir « Versement complémentaire » ci-dessous) versées dans `precis/fr/prestations_sociales/references.json` et
