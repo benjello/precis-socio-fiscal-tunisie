@@ -1,43 +1,43 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-26
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-06
 # séries (tunisia_data) : masse-salariale-ratios
-# sources (citation) : @minfin-remunerations, @minfin-indicateurs-fp, @ins-cnat-2015
+# sources (citation) : @minfin-remunerations, @minfin-indicateurs-fp, @ins-cnat-2015, @ins-pib-base-2015-2010-2020
 # fiches : sources/minfinances-indicateurs.md
-# méthode/hypothèses : docs/hypotheses-series-masse-salariale.md
+# méthode/hypothèses : Le PIB n'est pas d'une seule base : base 1983 jusqu'en 1996 (présumée pour 1990-1991) ; base 1997 rétropolée par l'INS en 1997-2001 ; valeurs propres au ministère des Finances en 2002-2004 et en 2025, dont la source ne précise pas la base ; base 1997 en 2005-2009 ; base 2015 de l'INS de 2010 à 2024, rétropolée par l'INS pour 2010-2014. Ruptures de série en 1997, 2002, 2005, 2010 et 2025 : la part du PIB se lit à l'intérieur d'un segment, les bases n'étant ni chaînées ni raccordées. La part dans les dépenses de l'État ne dépend d'aucune base.
 # note : Masse salariale du budget de l'État rapportée au PIB et aux dépenses de l'État, 1990-2025
-Année,% du PIB,% des dépenses totales,% des dépenses de fonctionnement
-1990,11.49,39.07,58.94
-1991,11.71,40.1,61.4
-1992,11.45,42.94,62.62
-1993,11.72,42.8,63.57
-1994,12.06,44.59,65.41
-1995,12.26,45.61,67.2
-1996,10.45,41.03,61.37
-1997,10.0,43.33,63.17
-1998,10.04,44.44,63.9
-1999,9.94,43.89,65.97
-2000,10.67,47.32,71.96
-2001,10.79,47.53,72.8
-2002,11.47,49.02,73.52
-2003,11.46,50.03,74.37
-2004,11.31,49.87,71.94
-2005,10.96,49.95,70.04
-2006,10.78,49.45,69.34
-2007,10.68,47.71,67.4
-2008,10.42,45.04,62.19
-2009,10.7,44.44,67.26
-2010,10.26,47.56,67.85
-2011,11.34,44.8,61.42
-2012,12.3,45.22,59.14
-2013,12.79,43.65,55.07
-2014,13.03,46.95,60.98
-2015,12.9,52.05,67.23
-2016,13.82,54.59,71.46
-2017,14.07,52.6,66.97
-2018,13.08,49.55,62.4
-2019,13.63,51.31,63.47
-2020,16.07,50.92,64.11
-2021,15.34,50.15,64.96
-2022,15.15,45.7,56.06
-2023,14.49,44.62,55.69
-2024,13.94,43.51,55.24
-2025,13.48,44.34,55.02
+Année,% du PIB,Base du PIB,PIB rétropolé ?,Rupture de série,% des dépenses totales,% des dépenses de fonctionnement,Masse salariale (MD),PIB employé (MD),Source du PIB
+1990,11.49,base 1983 présumée,rétropolation non précisée par la source,,39.07,58.94,1243.0,10815.7,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+1991,11.71,base 1983 présumée,rétropolation non précisée par la source,,40.1,61.4,1409.0,12028.8,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+1992,11.45,base 1983,rétropolation non précisée par la source,,42.94,62.62,1570.0,13705.9,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+1993,11.72,base 1983,rétropolation non précisée par la source,,42.8,63.57,1718.0,14662.9,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+1994,12.06,base 1983,rétropolation non précisée par la source,,44.59,65.41,1907.0,15813.8,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+1995,12.26,base 1983,rétropolation non précisée par la source,,45.61,67.2,2091.0,17051.8,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+1996,10.45,base 1983,rétropolation non précisée par la source,,41.03,61.37,1993.2,19066.2,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+1997,10.0,base 1997,rétropolé par l'INS,"base 1983 → base 1997, rétropolée par l'INS (niveau + 9,8 %)",43.33,63.17,2293.5,22943.9,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+1998,10.04,base 1997,rétropolé par l'INS,,44.44,63.9,2491.9,24827.6,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+1999,9.94,base 1997,rétropolé par l'INS,,43.89,65.97,2706.2,27215.9,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+2000,10.67,base 1997,rétropolé par l'INS,,47.32,71.96,3141.0,29433.4,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+2001,10.79,base 1997,rétropolé par l'INS,,47.53,72.8,3424.8,31746.4,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+2002,11.47,base non précisée par la source (valeur propre au ministère des Finances),rétropolation non précisée par la source,"valeur propre au ministère, rattachée à aucune base (− 2,4 % par rapport à la base 1997)",49.02,73.52,3684.0,32112.0,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+2003,11.46,base non précisée par la source (valeur propre au ministère des Finances),rétropolation non précisée par la source,,50.03,74.37,3968.0,34630.0,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+2004,11.31,base non précisée par la source (valeur propre au ministère des Finances),rétropolation non précisée par la source,,49.87,71.94,4252.6,37601.2,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+2005,10.96,base 1997,non rétropolé,retour à la base 1997,49.95,70.04,4591.0,41871.0,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+2006,10.78,base 1997,non rétropolé,,49.45,69.34,4931.7,45756.2,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+2007,10.68,base 1997,non rétropolé,,47.71,67.4,5327.5,49874.2,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+2008,10.42,base 1997,non rétropolé,,45.04,62.19,5761.4,55296.6,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+2009,10.7,base 1997,non rétropolé,,44.44,67.26,6298.7,58883.3,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)
+2010,10.26,base 2015,rétropolé par l'INS,"base 1997 → base 2015, rétropolée par l'INS (niveau + 4,9 %)",47.56,67.85,6785.2,66139.7,"INS, classeur du 15 août 2021, base 2015 rétropolée"
+2011,11.34,base 2015,rétropolé par l'INS,,44.8,61.42,7679.4,67747.3,"INS, classeur du 15 août 2021, base 2015 rétropolée"
+2012,11.71,base 2015,rétropolé par l'INS,,45.22,59.14,8655.5,73895.4,"INS, classeur du 15 août 2021, base 2015 rétropolée"
+2013,12.15,base 2015,rétropolé par l'INS,,43.65,55.07,9608.0,79096.6,"INS, classeur du 15 août 2021, base 2015 rétropolée"
+2014,12.35,base 2015,rétropolé par l'INS,,46.95,60.98,10540.7,85345.7,"INS, classeur du 15 août 2021, base 2015 rétropolée"
+2015,12.9,base 2015,non rétropolé,,52.05,67.23,11581.4,89802.2,"INS, édition 2015-2020"
+2016,13.82,base 2015,non rétropolé,,54.59,71.46,13163.9,95286.9,"INS, édition 2015-2020"
+2017,14.07,base 2015,non rétropolé,,52.6,66.97,14352.0,102011.5,"INS, édition 2017-2021"
+2018,13.08,base 2015,non rétropolé,,49.55,62.4,14776.0,112985.5,"INS, édition 2018-2022"
+2019,13.63,base 2015,non rétropolé,,51.31,63.47,16765.0,122969.3,"INS, édition 2019-2023"
+2020,16.07,base 2015,non rétropolé,,50.92,64.11,19200.0,119502.1,"INS, édition 2020-2024"
+2021,15.34,base 2015,non rétropolé,,50.15,64.96,20175.4,131544.6,"INS, édition 2021-2025"
+2022,15.15,base 2015,non rétropolé,,45.7,56.06,21123.2,139444.5,"INS, édition 2021-2025"
+2023,14.48,base 2015,non rétropolé,,44.62,55.69,21696.6,149793.6,"INS, édition 2021-2025"
+2024,13.93,base 2015,non rétropolé,,43.51,55.24,22268.2,159852.7,"INS, édition 2021-2025"
+2025,13.48,base non précisée par la source (valeur propre au ministère des Finances),rétropolation non précisée par la source,"valeur propre au ministère, rattachée à aucune base (+ 0,6 % par rapport à la base 2015)",44.34,55.02,23275.8,172614.0,ministère des Finances (PIB déduit du déficit publié en dinars et en points de PIB)

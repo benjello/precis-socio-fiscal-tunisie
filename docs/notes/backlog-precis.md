@@ -279,6 +279,62 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
 
 ## Rémunérations publiques
 
+- **PIB par base — fait le 6 octobre 2026** (règle : tout PIB dit sa base et s'il est
+  rétropolé ; sinon rupture de série). `#fig-masse-salariale-ratios` trace la part du PIB par
+  segments (base 1983 en 1990-1996, présumée pour 1990-1991 ; base 1997 rétropolée par l'INS
+  en 1997-2001 ; valeurs propres au ministère, base non précisée par la source, en 2002-2004
+  et 2025 ; base 1997 en 2005-2009 ; base 2015 de l'INS en 2010-2024, rétropolée pour
+  2010-2014), marque les ruptures de 1997, 2002, 2005, 2010 et 2025, et donne à part la part
+  dans les dépenses de l'État, seule mesure homogène. Nouvelle `#fig-masse-salariale-reconciliation`
+  (2010-2020) : la masse salariale rapportée au PIB de la base 1997 et de la base 2015 sur les
+  années publiées dans les deux bases (2010-2017), et les parts du FMI et de la Banque
+  mondiale en marques ; le coefficient 1,06 appliqué à toute la série est supprimé. Le texte de
+  `index.qmd` dit la base de chaque période ; les parts de 2012-2014 ne sont plus citées
+  (elles ont changé dans la série : 12,30 → 11,71 % ; 12,79 → 12,15 % ; 13,03 → 12,35 %).
+  Restent :
+  - **snapshots à refaire après fusion de tunisia-data.** `masse-salariale-ratios`,
+    `masse-salariale-reconciliation` et `pib-courant-recouvrements` (nouvelle dans le cache)
+    sont snapshotées depuis la branche **non fusionnée** `fix/masse-salariale-build` de
+    tunisia-data, commit `18be659` (PIB de 2023-2024 déjà aligné sur l'édition 2021-2025 :
+    14,48 et 13,93 %). Après fusion sur `main` : relancer
+    `figtools.refresh_cache("masse-salariale-ratios", "masse-salariale-reconciliation",
+    "pib-courant-recouvrements")`, vérifier que les CSV sortent identiques, sinon relire le
+    texte et les notes de lecture, qui citent des parts. L'ordre de fusion des deux dépôts
+    est à décider par l'humain. `irpp-ratios`, que la même branche modifie, n'est PAS
+    resnapshotée ici (fiscalité, retraites, prestations, cotisations, caisses la lisent) ;
+  - **conflit prévisible** avec la branche `docs/annexe-pib`, qui snapshote aussi
+    `pib-courant-recouvrements` : `catalog.snapshot.yml` se résout en relançant
+    `refresh_cache` ; les entrées de bibliographie `ins-changement-base-2015`,
+    `ins-pib-base-2015-2010-2020` et `imf-tunisia-art4-2010` sont reprises à l'identique de
+    cette branche (fonds commun FR et AR), pour fusionner sans divergence ;
+  - **liens morts tant que l'annexe n'est pas fusionnée** : `../annexe-pib.html` (ancres
+    `#sec-pib-ruptures`, `#sec-pib-sources`, `#pib-base-2015`), dans `index.qmd` (texte et
+    deux notes de lecture) et `_regime_conventionnel.qmd` ;
+  - **arabe** : `precis/ar/…/index.qmd` porte encore l'ancien texte et l'ancienne note de
+    lecture (« PIB en base 2015 ») sous la figure refaite, et n'a pas la seconde figure,
+    jusqu'à la traduction ; les libellés arabes des figures sont dans le module ;
+  - **helper à mutualiser** : le bandeau des bases au-dessus du cadre, le repère triangulaire
+    à infobulle et le tracé par segments sont écrits deux fois, dans
+    `remunerations_publiques/figures/masse_salariale.py` et dans
+    `compensation/figures/compensation.py` (branche `docs/compensation-documentation`) : à
+    porter dans `figtools` une fois les deux branches fusionnées ;
+  - **rapports extérieurs (documentaliste)** : les parts du FMI (17,6 % en 2020) et de la
+    Banque mondiale (14,7 % en 2017, 10,7 % en 2010 ; transferts aux entreprises publiques,
+    8,9 % en 2013 et 7,5 % en 2014) sont citées sans page ; la base du PIB de la Banque
+    mondiale est à relever dans sa revue des dépenses publiques de 2020 (le texte dit « n'est
+    pas précisée ici »). Le 14,1 % de 2019 de la série (« Min Fin/presse ») n'est ni tracé ni
+    affiché, faute de source. La part de 1997 en base 1983 (10,97 %) vient de la fiche de
+    l'entrepôt, non d'une série : à porter dans une série si elle doit rester citée ;
+  - **bibliographie** : la clé `imf-tunisia-art4-2020` désigne le rapport n° 21/44, dont le
+    titre imprimé est « 2021 Article IV Consultation » (relevé sur la branche de l'annexe) ;
+  - **catalogue de l'entrepôt** : `ins-pib-base-2015-2010-2020` manque aux `sources` de
+    `masse-salariale-ratios` (le module l'ajoute à l'affichage) ; ses `caveats` s'adressent
+    à qui trace la série (noms de colonnes, journal des corrections) : le module les
+    remplace par un texte pour le lecteur (`PROVENANCE_LECTEUR`) ;
+  - `_demo_figure_onglets.qmd` (hors livre, lit l'entrepôt directement) : non repris ;
+  - **autres volumes non conformes** (figures de rendement fiscal, figures de la CNSS
+    1990-2004, retraites, finances locales) : non touchés ici, inventaire sur la branche
+    `docs/annexe-pib`.
 - **Chapitres à étoffer** : régime conventionnel public, marché contrôlé et statutaire
   autonome ; le régime indiciaire est le plus développé. Ne pas réutiliser les
   longueurs des chapitres mesurées avant la relecture des rémunérations.

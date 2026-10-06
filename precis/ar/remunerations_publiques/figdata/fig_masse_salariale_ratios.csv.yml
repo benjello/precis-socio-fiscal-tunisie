@@ -1,5 +1,5 @@
 series: [masse-salariale-ratios]
-sources: [minfin-remunerations, minfin-indicateurs-fp, ins-cnat-2015]
+sources: [minfin-remunerations, minfin-indicateurs-fp, ins-cnat-2015, ins-pib-base-2015-2010-2020]
 fiches: [sources/minfinances-indicateurs.md]
-caveats: [docs/hypotheses-series-masse-salariale.md]
-generated: 2026-10-03
+caveats: [Le PIB n'est pas d'une seule base : base 1983 jusqu'en 1996 (présumée pour 1990-1991) ; base 1997 rétropolée par l'INS en 1997-2001 ; valeurs propres au ministère des Finances en 2002-2004 et en 2025, dont la source ne précise pas la base ; base 1997 en 2005-2009 ; base 2015 de l'INS de 2010 à 2024, rétropolée par l'INS pour 2010-2014. Ruptures de série en 1997, 2002, 2005, 2010 et 2025 : la part du PIB se lit à l'intérieur d'un segment, les bases n'étant ni chaînées ni raccordées. La part dans les dépenses de l'État ne dépend d'aucune base.]
+generated: 2026-10-06
