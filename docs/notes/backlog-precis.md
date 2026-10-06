@@ -1077,13 +1077,10 @@ série accolée et série enchaînée, en indice et en taux, les deux taux faux 
 marqués. Module `precis/fr/figures/annexe_pib.py`. La règle 2 de `#sec-pib-ruptures` dit
 désormais que la série enchaînée n'est qu'une illustration.
 
-- **Snapshots à refaire.** `pib-courant-enchaine`, `pib-croissance-par-base`,
+- **Snapshots.** `pib-courant-enchaine`, `pib-croissance-par-base`,
   `pib-courant-recouvrements`, `pib-croissance-volume` et `pib-volume-enchaine`
-  (`precis/_seriescache/`) viennent de la branche `fix/masse-salariale-build` de
-  `tunisia-data`, **non encore fusionnée** (tête `ad167ba`) :
-  les CSV sont identiques, octet pour octet, à ceux de cette branche. À resnapshoter par
-  `figtools.refresh_cache()` après la fusion sur `main`, puis vérifier que les figures et
-  `precis/fr/figdata/fig_pib_*.csv` ne bougent pas.
+  (`precis/_seriescache/`) sont pris sur `main` de `tunisia-data` (`b6e412c`, 6 octobre 2026) :
+  CSV identiques, octet pour octet, à ceux de l'entrepôt.
 - **Câblage d'une figure de page de site.** Le module est dans `precis/fr/figures/` (lien
   symbolique `precis/ar/figures`), les sorties à côté de la page (`precis/<langue>/_fig/`,
   ignoré, et `precis/<langue>/figdata/`, versionné) ; `build.sh` copie ces deux dossiers dans le
@@ -1091,9 +1088,12 @@ désormais que la série enchaînée n'est qu'une illustration.
   `precis/<langue>/figdata/` : la page se contrôle par `./build.sh --no-pdf`. Une modification
   du seul module `precis/fr/figures/annexe_pib.py` ne fait rendre aucun livre
   (`verifier_livres.livres_touches`), ce qui est exact — mais rien ne rend alors la page.
-- **Reste à faire, en amont.** Les entrées du catalogue portent des libellés `base_pib`
-  différents (« 1983 / 1997 / 2015 (colonne base) »…), que la ligne « Source » de chaque figure
-  met bout à bout : à harmoniser dans `tunisia-data` avant la fusion. Les colonnes `jonction`,
+- **Ligne « Source » et onglet « Sources ».** Le module remplace, pour l'affichage, le libellé
+  des bases, le périmètre et les réserves du catalogue de l'entrepôt par un texte pour le
+  lecteur, en français et en arabe (`PROVENANCE_LECTEUR`, comme `masse_salariale.py`) : ni nom
+  de colonne, ni consigne de filtrage, ni chemin de fiche dans la page rendue. À relire si le
+  catalogue change.
+- **Reste à faire, en amont.** Les colonnes `jonction`,
   `source`, `base` et `annee_de_prix` des séries en volume n'existent qu'en français : les
   infobulles de la page arabe les reprendront telles quelles. Divergence de 1962-1965 entre la Banque mondiale et la série des
   Nations unies, et taux de 1970 : à départager sur pièces (rapports annuels de la BCT,
@@ -1101,10 +1101,14 @@ désormais que la série enchaînée n'est qu'une illustration.
   l'entrepôt). Étiquettes à corriger :
   `masse-salariale-ratios` (`base_pib: 2015`), `irpp-ratios` (`pib_cnat_MDT`, 2012-2014),
   `masse-salariale-reconciliation` (« base 2010 »).
-- **Bibliographie.** `undata-sna` et `wb-wdi` ne sont que dans `retraites/references.json` :
-  les citations de la page se résolvent, mais l'onglet « Sources » de la figure, qui ne lit que
-  le fonds commun, affiche ces deux clés sans titre ni lien. À remonter au fonds commun (voir le
-  `TODO (bibliographe)` de la page).
+- **Bibliographie.** `undata-sna` et `wb-wdi` sont promues au fonds commun
+  (`precis/{fr,ar}/references.json`) et retirées de `retraites/references.json` : l'onglet
+  « Sources » affiche leur titre et leur lien. `wb-wdi` est reprise à l'identique de la branche
+  de la compensation, qui la promeut aussi : à la fusion des deux branches, ne garder qu'une
+  entrée. `bct-ra` reste à remonter.
+- **Pied de page.** Le lien vers l'annexe est au pied de page des huit volumes de `master` ; le
+  neuvième volume (la compensation) arrive par une autre PR : y ajouter le même lien à sa
+  fusion.
 - **Arabe.** La page arabe n'existe pas encore ; les libellés arabes de la figure sont dans le
   module et sont à relire avec la traduction de la page (« سلسلة مسلسلة » pour la série
   enchaînée, « موصولة دون تصحيح » pour la série accolée, repris du catalogue de l'entrepôt).

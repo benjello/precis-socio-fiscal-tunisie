@@ -3129,9 +3129,13 @@ Note documentaire : `docs/notes/annexe-pib.md`, § 7. Page : `precis/fr/annexe-p
   numéro du rapport du FMI (`number` : 10/282, non restitué) est porté en tête de la note.
 - [ ] `imf-tunisia-art4-2020` (rémunérations publiques) : c'est le rapport n° 21/44, dont le
   titre imprimé est « 2021 Article IV Consultation » (février 2021), non « 2020 ».
-- [ ] `undata-sna`, `wb-wdi` (retraites), `bct-ra` (retraites, rémunérations publiques, marché du
-  travail) : à remonter au fonds commun ; `undata-sna` ne vise que le tableau 4.1, l'annexe
-  emploie aussi le tableau 1.1 ; `wb-wdi` gagnerait la mention des métadonnées du pays.
+- [x] `undata-sna`, `wb-wdi` : remontées des retraites au fonds commun le 6 octobre 2026
+  (entrées inchangées ; `wb-wdi` identique à celle de la branche de la compensation). Dans
+  Zotero : les ranger dans la collection commune.
+- [ ] `bct-ra` (retraites, rémunérations publiques, marché du travail) : à remonter au fonds
+  commun ; `undata-sna` ne vise que le tableau 4.1, l'annexe emploie aussi les tableaux 1.1 et
+  1.2 ; `wb-wdi` gagnerait la mention des métadonnées du pays et de l'indicateur de croissance
+  en volume (NY.GDP.MKTP.KD.ZG).
 - [ ] `minfin-indicateurs-fp` : URL générique, à préciser.
 - [ ] Les pages citées dans l'annexe sont celles des fichiers PDF, non les folios imprimés :
   à convertir si l'on veut des folios.

@@ -232,6 +232,180 @@ _L = {
 }
 
 
+# --- provenance affichée -----------------------------------------------------------------
+
+# Le catalogue de l'entrepôt décrit ses séries pour qui les exploite : noms de colonnes,
+# consignes de filtrage, renvois à ses fiches. La ligne « Source » et l'onglet « Sources »
+# s'adressent au lecteur : on y remplace le libellé des bases, le périmètre et les réserves
+# par un texte en clair, dans les deux langues. Titres, sources et fiches restent ceux du
+# catalogue.
+_BASES_LECTEUR = "1983 / 1997 / 2015"
+
+PROVENANCE_LECTEUR = {
+    SERIE_ENCHAINE: dict(
+        base_pib=_BASES_LECTEUR,
+        perimetre=("PIB aux prix courants : les niveaux de la base 1983 (1992-2009), de la "
+                   "base 1997 (1997-2017) et de la base 2015 (2010-2025), sur les années que "
+                   "l'INS a publiées ou recalculées ; la série accolée, qui met ces niveaux "
+                   "bout à bout (1961-2025) ; la série enchaînée, indice 100 en 2015"),
+        caveats=("Trois constructions à ne pas confondre. Publié : le niveau figure dans une "
+                 "publication de l'INS, ou dans les chiffres que l'INS a transmis aux Nations "
+                 "unies. Rétropolé par l'INS : recalculé par l'INS dans une base plus récente, "
+                 "pour 1997-2004 en base 1997 et pour 2010-2014 en base 2015. Enchaîné par nos "
+                 "soins : construction du précis à fin d'illustration, non une donnée de "
+                 "l'INS ; elle préserve les taux de croissance, pas les niveaux ni les "
+                 "structures, ne remplace pas une rétropolation et ne sert de dénominateur à "
+                 "aucun ratio. La série accolée porte deux taux faux, aux années où elle "
+                 "change de base : 1997 et 2010. Avant 1992, les niveaux sont ceux de la "
+                 "Banque mondiale, dont la base n'est pas dite."),
+        perimetre_ar=("الناتج المحلي الإجمالي بالأسعار الجارية: مستويات أساس 1983 "
+                      "(1992-2009) وأساس 1997 (1997-2017) وأساس 2015 (2010-2025)، في السنوات "
+                      "التي نشرها المعهد الوطني للإحصاء أو أعاد احتسابها؛ السلسلة الموصولة "
+                      "دون تصحيح (1961-2025)؛ السلسلة المسلسلة، مؤشّر 100 في 2015"),
+        caveats_ar=("ثلاث طرق إعداد لا ينبغي الخلط بينها. منشور: المستوى وارد في منشور "
+                    "للمعهد الوطني للإحصاء أو في الأرقام التي أحالها المعهد إلى الأمم المتحدة. "
+                    "معاد احتسابه من المعهد: أعاد المعهد حسابه على أساس أحدث، لسنوات 1997-2004 "
+                    "على أساس 1997 ولسنوات 2010-2014 على أساس 2015. مسلسل من إعدادنا: إعداد "
+                    "للتوضيح وليس معطى من المعهد؛ يحفظ نسب النموّ لا المستويات ولا البنية، "
+                    "ولا يعوّض إعادة الاحتساب، ولا يُستعمل مقامًا لأيّ نسبة. تتضمّن السلسلة "
+                    "الموصولة دون تصحيح نسبتين خاطئتين في سنتي تغيير الأساس: 1997 و2010. قبل "
+                    "1992، المستويات من البنك الدولي، وأساسها غير مذكور.")),
+    SERIE_CROISSANCE: dict(
+        base_pib=_BASES_LECTEUR,
+        perimetre=("taux de croissance annuel du PIB aux prix courants, calculé à l'intérieur "
+                   "de chaque base : base 1983 (1993-2009), base 1997 (1998-2017), base 2015 "
+                   "(2011-2025) ; de 1962 à 1992, taux calculé sur les niveaux de la Banque "
+                   "mondiale"),
+        caveats=("Série construite à fin d'illustration à partir de niveaux publiés ou "
+                 "rétropolés par l'INS : chaque taux rapporte deux niveaux de la même base. "
+                 "Une année connue dans deux bases a deux taux, qui diffèrent de 0,2 à "
+                 "0,4 point en moyenne, alors que les niveaux diffèrent de 5 à 10 %. De 1962 à "
+                 "1992, aucune base n'est dite."),
+        perimetre_ar=("نسبة النموّ السنوية للناتج بالأسعار الجارية، محسوبة داخل كلّ أساس: "
+                      "أساس 1983 (1993-2009)، أساس 1997 (1998-2017)، أساس 2015 (2011-2025)؛ من "
+                      "1962 إلى 1992، نسبة محسوبة على مستويات البنك الدولي"),
+        caveats_ar=("سلسلة مُعدّة للتوضيح انطلاقًا من مستويات نشرها المعهد الوطني للإحصاء أو "
+                    "أعاد احتسابها: كلّ نسبة تقارن مستويين من الأساس نفسه. للسنة المعروفة على "
+                    "أساسين نسبتان، تختلفان بـ0,2 إلى 0,4 نقطة في المتوسّط، بينما تختلف "
+                    "المستويات بـ5 إلى 10 %. من 1962 إلى 1992 لا يُذكر أيّ أساس.")),
+    SERIE_RECOUVREMENTS: dict(
+        base_pib=_BASES_LECTEUR,
+        perimetre=("années où le PIB aux prix courants est connu dans deux bases : base 1983 "
+                   "et base 1997 de 1997 à 2009, base 1997 et base 2015 de 2010 à 2017"),
+        caveats=("Écarts observés, de + 9,25 à + 10,91 % entre la base 1983 et la base 1997, "
+                 "de + 4,89 à + 6,12 % entre la base 1997 et la base 2015 : ils ne sont pas "
+                 "constants et ne donnent pas de coefficient de passage pour d'autres années. "
+                 "Aucune année n'est connue à la fois en base 1983 et en base 2015."),
+        perimetre_ar=("السنوات التي يُعرف فيها الناتج بالأسعار الجارية على أساسين: أساس 1983 "
+                      "وأساس 1997 من 1997 إلى 2009، أساس 1997 وأساس 2015 من 2010 إلى 2017"),
+        caveats_ar=("فوارق ملاحظة، من + 9,25 إلى + 10,91 % بين أساس 1983 وأساس 1997، ومن "
+                    "+ 4,89 إلى + 6,12 % بين أساس 1997 وأساس 2015: غير ثابتة، ولا يُستخرج منها "
+                    "معامل انتقال لسنوات أخرى. لا توجد سنة معروفة على أساس 1983 وأساس 2015 "
+                    "معًا.")),
+    SERIE_VOLUME: dict(
+        base_pib=_BASES_LECTEUR,
+        perimetre=("taux de croissance annuel du PIB en volume, source par source : éditions "
+                   "des Comptes de la nation et classeur de l'INS du 15 août 2021, séries que "
+                   "l'INS a transmises aux Nations unies (1961-2023), Banque mondiale "
+                   "(1962-2025)"),
+        caveats=("Une année a plusieurs taux, selon la source, la base et l'année de prix. "
+                 "L'année de prix n'est pas une base : c'est l'année dont les prix valorisent "
+                 "le volume — 1966, 1972, 1980 ou 1990 dans les séries anciennes, l'année "
+                 "précédente dans les bases 1997 et 2015. Les sources tunisiennes s'accordent "
+                 "à quelques dixièmes de point ; la Banque mondiale s'en écarte de 6 à "
+                 "22 points de 1962 à 1965. L'année 1970 n'a de taux que de la Banque "
+                 "mondiale. Les séries antérieures à 1993 ne disent pas leur base."),
+        perimetre_ar=("نسبة النموّ السنوية للناتج بالحجم، مصدرًا بمصدر: نشرات الحسابات "
+                      "القومية ومصنّف المعهد الوطني للإحصاء المؤرّخ في 15 أوت 2021، السلاسل "
+                      "التي أحالها المعهد إلى الأمم المتحدة (1961-2023)، البنك الدولي "
+                      "(1962-2025)"),
+        caveats_ar=("للسنة الواحدة عدّة نسب، حسب المصدر والأساس وسنة الأسعار. سنة الأسعار "
+                    "ليست أساسًا: هي السنة التي تُقوَّم بأسعارها الكمّيات — 1966 أو 1972 أو "
+                    "1980 أو 1990 في السلاسل القديمة، والسنة السابقة في أساسي 1997 و2015. "
+                    "تتقارب المصادر التونسية في حدود أعشار النقطة، ويبتعد عنها البنك الدولي "
+                    "بـ6 إلى 22 نقطة من 1962 إلى 1965. سنة 1970 ليس لها نسبة إلّا من البنك "
+                    "الدولي. السلاسل السابقة لسنة 1993 لا تذكر أساسها.")),
+    SERIE_VOLUME_ENCHAINE: dict(
+        base_pib=_BASES_LECTEUR,
+        perimetre=("indice de volume du PIB, 100 en 2015, de 1960 à 2025 : un taux par année, "
+                   "celui de l'INS dans la base la plus récente, à défaut celui que l'INS a "
+                   "transmis aux Nations unies, et celui de la Banque mondiale pour la seule "
+                   "année 1970"),
+        caveats=("Enchaîné par nos soins : construction du précis à fin d'illustration, non "
+                 "une donnée de l'INS. L'indice chaîne des taux de sept combinaisons de base "
+                 "et d'année de prix ; il préserve les taux de croissance, pas les niveaux ni "
+                 "les structures, ne remplace pas une rétropolation, n'a pas de niveau en "
+                 "dinars et ne sert de dénominateur à aucun ratio."),
+        perimetre_ar=("مؤشّر حجم الناتج، 100 في 2015، من 1960 إلى 2025: نسبة واحدة لكلّ سنة، "
+                      "نسبة المعهد الوطني للإحصاء في أحدث أساس، وإلّا النسبة التي أحالها "
+                      "المعهد إلى الأمم المتحدة، ونسبة البنك الدولي لسنة 1970 وحدها"),
+        caveats_ar=("مسلسل من إعدادنا: إعداد للتوضيح وليس معطى من المعهد الوطني للإحصاء. "
+                    "يسلسل المؤشّر نسبًا من سبع تركيبات بين الأساس وسنة الأسعار؛ يحفظ نسب "
+                    "النموّ لا المستويات ولا البنية، ولا يعوّض إعادة الاحتساب، وليس له مستوى "
+                    "بالدينار، ولا يُستعمل مقامًا لأيّ نسبة.")),
+}
+
+
+# La colonne de provenance des séries désigne les fichiers et les séries de l'entrepôt. Dans
+# le tableau affiché et le fichier téléchargeable, on dit la publication ; la page, la feuille,
+# la cellule et l'adresse en ligne sont conservées.
+_CLASSEUR = "classeur de l'INS du 15 août 2021"
+_EDITIONS = "INS, Les Comptes de la nation"
+_PROVENANCE_LISIBLE = [
+    (r"data/processed/\S+/pib_nominal_editions\.csv", _EDITIONS),
+    (r"data/raw/\S+/INS_2021-08-15_\S+\.xlsx", _CLASSEUR),
+    (r"série wdi-tunisie", "Banque mondiale, World Development Indicators"),
+    (r"série cnat-pib-(?:nominal|volume)", _EDITIONS),
+    (r"série undata-pib(?:-volume)?", "INS, via les Nations unies (UNdata)"),
+    (r"série pib-croissance-par-base, chaînée",
+     "taux de croissance calculés à l'intérieur de chaque base, chaînés"),
+    (r"série pib-courant-par-base \(classeur de l'INS\)", _CLASSEUR),
+    (r"série pib-courant-par-base : ", ""),
+]
+_VARIANTES_LISIBLES = {
+    "accolee": "série accolée", "enchainee": "série enchaînée",
+    "ins_base_1983": "base 1983 de l'INS", "ins_base_1997": "base 1997 de l'INS",
+    "ins_base_2015": "base 2015 de l'INS", "croissance_par_base": "croissance par base",
+}
+_SERIES_LISIBLES = {
+    SERIE_ENCHAINE: "PIB aux prix courants sur longue période",
+    SERIE_CROISSANCE: "croissance aux prix courants, base par base",
+    SERIE_VOLUME: "croissance en volume, toutes sources",
+    SERIE_VOLUME_ENCHAINE: "indice de volume enchaîné",
+}
+
+
+def _lisible(d):
+    """Rend lisibles, dans un tableau de données, la provenance, la variante et la série."""
+    import re
+    def provenance(v):
+        if not isinstance(v, str):
+            return v
+        for motif, texte in _PROVENANCE_LISIBLE:
+            v = re.sub(motif, texte, v)
+        if re.search(r"data/|\.csv|\.xlsx|série [a-z]+-[a-z-]+", v):
+            raise ValueError(f"provenance non traduite pour le lecteur : {v!r}")
+        return v
+    d = d.copy()
+    d["provenance"] = d["provenance"].map(provenance)
+    if "variante" in d:
+        d["variante"] = d["variante"].map(_VARIANTES_LISIBLES)
+    d["serie"] = d["serie"].map(_SERIES_LISIBLES)
+    return d
+
+
+def _declarer() -> None:
+    """Remplace, pour l'affichage, les bases, le périmètre et les réserves du catalogue."""
+    for sid, champs in PROVENANCE_LECTEUR.items():
+        if sid in figtools._DECLAREES:
+            continue
+        origine = {k: v for k, v in figtools.meta(sid).items() if k != "id"}
+        figtools.register_provenance(sid, **{**origine, **champs})
+
+
+_declarer()
+
+
 def _lab(key: str, **valeurs) -> str:
     return _L[key].get(figtools.lang(), _L[key]["fr"]).format(**valeurs)
 
@@ -537,7 +711,7 @@ def table_bases():
     c = _croissance().copy()
     c.insert(1, "serie", SERIE_CROISSANCE)
     c["variante"] = "croissance_par_base"
-    d = pd.concat([e, c], ignore_index=True)
+    d = _lisible(pd.concat([e, c], ignore_index=True))
     colonnes = {
         "annee": "col_annee", "serie": "col_serie", "variante": "col_variante",
         "construction": "col_construction", "base": "col_base", "pib_MD": "col_pib",
@@ -753,7 +927,7 @@ def table_volume():
     n = n.rename(columns={"indice_2015_100": "indice_nominal", "croissance_pct": "taux_nominal",
                           "base_du_taux": "base"})
     n.insert(1, "serie", SERIE_ENCHAINE)
-    d = pd.concat([v, e, n], ignore_index=True)
+    d = _lisible(pd.concat([v, e, n], ignore_index=True))
     colonnes = {
         "annee": "col_annee", "serie": "col_serie", "source": "col_source",
         "famille": "col_famille", "base": "col_base", "annee_de_prix": "col_prix",
