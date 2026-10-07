@@ -19,6 +19,7 @@ on:
       - 'precis/glossaire.yml'
       - 'scripts/check_pas_de_modele.py'
       - 'scripts/check_jargon_depouillement.py'
+      - 'scripts/check_domicile_references.py'
       - 'scripts/recherches.py'
       - 'docs/recherches.yml'
       - 'scripts/build_glossary.py'
@@ -34,6 +35,7 @@ on:
       - 'precis/glossaire.yml'
       - 'scripts/check_pas_de_modele.py'
       - 'scripts/check_jargon_depouillement.py'
+      - 'scripts/check_domicile_references.py'
       - 'scripts/recherches.py'
       - 'docs/recherches.yml'
       - 'scripts/build_glossary.py'
@@ -68,6 +70,13 @@ jobs:
       # chaque ancre a sa fiche et réciproquement, champs obligatoires, dates ISO.
       - name: Chaque recherche infructueuse a sa fiche
         run: uv run python scripts/recherches.py verifier
+
+      # Domicile unique des références de loi : dans une section `.domicile-unique`, la prose
+      # nomme le texte et un lien `#r-…` mène à sa ligne dans un registre replié, qui porte la
+      # référence complète. Le contrôle refuse une loi citée entre crochets dans le fil, un
+      # lien sans ancre, et une ligne de registre qui ne cite rien.
+      - name: Les références de loi ont leur ligne de registre
+        run: uv run python scripts/check_domicile_references.py
 
       # Le glossaire est ENGENDRÉ à partir de `precis/glossaire.yml`, et l'annexe de
       # chaque livre ne retient que les notions auxquelles il renvoie réellement — sa
