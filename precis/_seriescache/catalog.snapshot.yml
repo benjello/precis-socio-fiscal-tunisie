@@ -2382,3 +2382,33 @@
   caveats_ar: الوثيقتان غير متطابقتين في 2014 و2015 و2020؛ بقيت القراءتان منفصلتين
     دون تصحيح.
   fiche: sources/mas-profil-sst-2023.md
+- id: tva-credit-restitutions-sources
+  titre: Crédit de TVA, restitutions et retenue à la source de TVA selon les sources,
+    2009-2014
+  sources:
+  - minfin-cnf-2013-impots-indirects
+  - minfin-cnf-2013-synthese
+  - minfin-controle-fiscal-2016
+  - fmi-2013-modernisation-administration-fiscale
+  build: scripts/extract_tva_credit_restitutions.py:main
+  raw:
+  - data/raw/minfinances/reforme_fiscale_2013_2014/2013-08_cnf_rf_2_ar.pdf
+  - data/raw/minfinances/reforme_fiscale_2013_2014/2013-11_cnf_rapport_synthese_groupes_travail.pdf
+  - data/raw/minfinances/portail_ancien/fiscalite/2016_controle_fiscal_xlsx.xlsx
+  - data/raw/banque-mondiale-rapports/imf_2013_02_modernisation_administration_fiscale_douaniere.pdf
+  output: data/processed/minfinances/tva_credit_restitutions_sources.csv
+  unite: millions de dinars courants
+  perimetre: crédit de TVA enregistré (2010-2012), montants demandés et restitués
+    (2010-2012), restitutions d'impôts de la direction générale des impôts, total
+    et part de la TVA (2010-2014), rendement de la retenue à la source de TVA (2009-2012)
+    ; une ligne par année, grandeur et document
+  caveats: 'SOURCES GARDÉES CÔTE À CÔTE, sans raccord ni arbitrage. Deux séries de
+    TVA restituée ne coïncident pas (320,8 / 349,9 en 2010 ; 301,2 / 268,3 en 2011
+    ; 179,2 / 287,7 en 2012) et la retenue à la source de 2012 a trois valeurs (305,5
+    ; 298,9 ; 272,7, cette dernière arrêtée avant la clôture de l''exercice). AUCUN
+    document ne décrit sa méthode : ni la date d''arrêté du crédit, ni s''il s''agit
+    du crédit reporté ou du seul crédit demandé. Famille « extérieur (relais) » :
+    tableau de l''administration (DGCPR) reproduit par le FMI, donnée administrative
+    et non estimation du FMI. Les diapositives du groupe de travail sont lues à l''image,
+    sans contrôle automatique.'
+  fiche: sources/minfin-tva-credit-restitutions.md

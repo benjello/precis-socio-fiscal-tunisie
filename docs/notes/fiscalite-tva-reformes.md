@@ -233,7 +233,7 @@ pétroliers et l'électricité domestique au-delà de 300 kWh par mois.
 | 1^er^ janv. 1998 | LF 1998, p. 2438 | 36-38 | **retenue à la source** de 50 % de la TVA par l'État, les collectivités et les entreprises publiques (art. 19 bis) ; fait générateur à l'encaissement pour ces marchés (art. 5-6) | [texte] |
 | 1^er^ janv. 1999 | LF 1999, JORT n° 104 du 29/12/1998, p. 2507 | 57 | option ouverte hors champ et aux forfaitaires ; exclue pour les exonérés, sauf exportation et fourniture d'assujettis | [texte] |
 | 1^er^ janv. 2016 | LF 2016, p. 3148 | 34 | retenue à la source TVA : 50 % → 25 % | intitulé lu, texte non lu |
-| 1^er^ janv. 2022 | LF 2022, p. 3097 | 52 | fin de la suspension pour les sociétés de commerce international et les entreprises de services non totalement exportatrices | [texte] |
+| 1^er^ janv. 2022 | LF 2022, p. 3097 | 52 | fin de la suspension pour les sociétés de commerce international et les entreprises de services, qu'elles dépassent le seuil de 50 % d'exportation (art. 11-I, 1^er^ sous-paragraphe) ou qu'elles soient totalement exportatrices (3^e^ sous-paragraphe) | [texte] |
 
 Crédit de TVA, régime suspensif (art. 11, 13 bis-sexies), finance islamique et retenue à la
 source (LF 2003 art. 55-56, LF 2004 art. 72-74, LF 2013 art. 42, etc.) : **seul l'intitulé est

@@ -24,11 +24,13 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Assiette du droit de consommation | قاعدة المعلوم على الاستهلاك |  |
 | Assiette fiscale | الوعاء الضريبي |  |
 | Assujetti | الخاضع للأداء |  |
+| Assujetti partiel | الخاضع جزئيا للأداء على القيمة المضافة |  |
 | Assuré social | المضمون الاجتماعي |  |
 | Augmentation optionnelle de l'âge de mise à la retraite | الترفيع الاختياري في سنّ الإحالة على التقاعد |  |
 | Autonomie budgétaire | الاستقلالية في الميزانية |  |
 | Autonomie financière | الاستقلالية المالية |  |
 | Avance sur la taxe de formation professionnelle | التسبقة على الأداء على التكوين المهني |  |
+| Avance sur restitution du crédit de TVA | تسبقة من فائض الأداء على القيمة المضافة |  |
 | Avancement d'échelon | الترقّي في الدرجة |  |
 | Avantage en nature | الامتياز العيني |  |
 | Avantages financiers | الامتيازات المالية |  |
@@ -63,6 +65,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Classe de revenus | شريحة الدخل |  |
 | Code d'incitations aux investissements | مجلة تشجيع الاستثمارات |  |
 | Code de la fiscalité locale | مجلة الجباية المحلية |  |
+| Code des droits et procédures fiscaux | مجلة الحقوق والإجراءات الجبائية | CDPF |
 | Collectivité locale | الجماعة المحلية |  |
 | Commerçant détaillant assujetti à la taxe sur la valeur ajoutée | تاجر التفصيل الخاضع للأداء على القيمة المضافة |  |
 | Commerçant grossiste | تاجر جملة |  |
@@ -109,8 +112,10 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Dévolution de compétences | إسناد الصلاحيات الذاتية |  |
 | Discipline budgétaire | الانضباط في الميزانية |  |
 | District | الإقليم |  |
+| Droit à déduction | حق الطرح |  |
 | Droit de consommation | المعلوم على الاستهلاك |  |
 | Droit forfaitaire simplifié | الأداء التقديري المبسط |  |
+| Durée de constatation du crédit de TVA | مدة تسجيل فائض الأداء على القيمة المضافة بالتصاريح |  |
 | Échelon | الدرجة |  |
 | Échelonnement indiciaire | التدرّج القياسي |  |
 | Effort fiscal | المجهود الجبائي |  |
@@ -147,6 +152,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fonds spéciaux du Trésor | الحسابات الخاصة في الخزينة |  |
 | Forces de sécurité intérieure | قوات الأمن الداخلي |  |
 | Frais professionnels | المصاريف المهنية |  |
+| Gel du crédit de TVA (1998) | تجميد فائض الأداء على القيمة المضافة (1998) |  |
 | Gestion financière distincte | التصرّف المالي المستقلّ |  |
 | Grade | الرتبة |  |
 | Grille des salaires | شبكة الأجور |  |
@@ -203,6 +209,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Péréquation financière | التعديل المالي |  |
 | Position tarifaire | البند التعريفي |  |
 | Potentiel fiscal | الطاقة الجبائية |  |
+| Pourcentage de déduction | النسبة المائوية للطرح |  |
 | Pouvoir réglementaire local | السلطة الترتيبية |  |
 | Précis socio-fiscal | الملخّص الاجتماعي والجبائي |  |
 | Prestation monétaire | المنفعة النقدية |  |
@@ -243,6 +250,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Régime statutaire autonome | النظام الأساسي الخاص |  |
 | Régime suspensif de la taxe sur la valeur ajoutée | نظام توقيف العمل بالأداء على القيمة المضافة |  |
 | Règle d'or | القاعدة الذهبية |  |
+| Régularisation des déductions | تعديل الطرح |  |
 | Rémunération à la part | الخلاص بالحصة |  |
 | Rémunération des dirigeants d'entreprises publiques | تأجير رؤساء المؤسسات والمنشآت العمومية |  |
 | Rente compensatrice | الإيراد التعويضي |  |
@@ -251,6 +259,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Réserve du fonds commun | مدّخر المال المشترك |  |
 | Réserve technique | الاحتياطي الفنّي |  |
 | Ressources propres | الموارد الذاتية |  |
+| Restitution du crédit de taxe sur la valeur ajoutée | إرجاع فائض الأداء على القيمة المضافة |  |
 | Retenue à la source | الخصم من المورد |  |
 | Retraite anticipée volontaire | التقاعد المبكّر الاختياري |  |
 | Rétribution provisoire ou accidentelle | الأجر الوقتي أو العرضي |  |

@@ -1,0 +1,5 @@
+series: [tva-credit-restitutions-sources, recettes-fiscales-composition]
+sources: [minfin-cnf-2013-impots-indirects, minfin-cnf-2013-synthese, minfin-controle-fiscal-2016, fmi-2013-modernisation-administration-fiscale, minfin-recettes-fiscales]
+fiches: [sources/minfin-tva-credit-restitutions.md, sources/minfinances-recettes-fiscales.md]
+caveats: [Les sources sont gardées côte à côte, sans raccord ni arbitrage. Les deux séries de TVA restituée ne coïncident pas (320,8 et 349,9 MD en 2010 ; 301,2 et 268,3 en 2011 ; 179,2 et 287,7 en 2012), et la retenue à la source de 2012 a trois valeurs (305,5 ; 298,9 ; 272,7 MD, cette dernière arrêtée avant la clôture de l'exercice). Aucun document ne décrit sa méthode : ni la date à laquelle le crédit est arrêté, ni s'il s'agit du crédit reporté ou du seul crédit demandé en restitution. Le tableau « Source DGCPR » est un tableau de l'administration reproduit par le FMI : une donnée administrative, non une estimation du FMI., sources/minfinances-recettes-fiscales.md]
+generated: 2026-10-07

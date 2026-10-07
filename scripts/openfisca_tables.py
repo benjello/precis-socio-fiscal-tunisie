@@ -81,8 +81,13 @@ PAQUETS = {
         # 1995 et la première colonne de celui de 1999 n'existent pas. La 0.119 verse les
         # taux de la taxe de formation professionnelle et de la contribution au FOPROLOS
         # (`prelevements_sociaux/autres/`, openfisca-tunisia#477, PR #478) : en deçà, le
-        # tableau des autres prélèvements sur les salaires n'existe pas.
-        "version_minimale": (0, 119),
+        # tableau des autres prélèvements sur les salaires n'existe pas. La 0.121 date et
+        # source la série des taux de la TVA depuis 1988 et verse le taux intermédiaire et le
+        # taux majoré (openfisca-tunisia#425, PR #480) : en deçà,
+        # `fiscalite_indirecte/tva/taux_intermediaire` et `taux_majore` n'existent pas, et le
+        # tableau des générations de taux comme la série de sa figure ne pourraient être
+        # engendrés.
+        "version_minimale": (0, 121),
     },
 }
 

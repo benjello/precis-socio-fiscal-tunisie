@@ -3354,3 +3354,26 @@ Sources : `compensation-tarifs-1993-2004.md`, `compensation-tarifs-mt-ht-gaz.md`
 - **Complétées** : `one-conjoncture-energetique` (78 numéros relus à l'image, taux d'erreur du relevé 4/1 023 valeurs, lacunes ; 29 numéros nouveaux téléchargés et rangés dans `banque-mondiale-rapports/`, adresses et SHA-256 en note), `ins-annuaire-statistique-prix-detail` (tableau 13.4, éd. 2001, p. 195), `bct-ra-1993`, `bct-ra-1999`, `ins-cres-bad-2013-subventions` (échantillon et pages de la méthode).
 - [ ] **Laissé** : le tarif interruptible de 2013 (`steg_tarifs_interr_2013.pdf`, local, jamais lu) ; `bm-1994-pcr-13172` (non cité pour un fait) ; Araar et Verme (2012, SUBSIM), INS-BAD-Banque mondiale 2012 sur la pauvreté, FMI 2014 sur les subventions, Marouani et Robalino (2012) : cités de seconde main, non ouverts ; le catalogue `sources/banque-mondiale-rapports-urls.csv` de tunisia-data n'a pas été modifié (lignes à y ajouter par qui tient la branche) ; la fiche sur les auteurs d'ESMAP 307/05 (auteurs non confirmés sur la page de titre) ; l'acte du 10 août 2000, seulement cité par l'API.
 - [ ] Vérifier : horodatages de `steg-ra-2015` et `minfin-note-execution-2019-03` au CDX ; page d'origine de `apia-1998-couts-facteurs` (l'adresse répond 200 mais sert autre chose ou rien d'utile : « ne sert plus cette page », vérification sommaire).
+
+## Versement du 06/10/2026 (fiscalité, TVA « Déduction, crédit et suspension »)
+
+Dix-sept clés neuves dans `precis/{fr,ar}/fiscalite/references.json`, absentes de Zotero : `loi-2000-82-cdpf`,
+`loi-2007-69-initiative-economique`, `lfc-2013`, `decret-loi-2020-6-covid-fiscal`, `dgi-nc-33-2002`, `dgi-nc-14-2004`,
+`dgi-nc-18-2005`, `dgi-nc-13-2006`, `dgi-nc-14-2007`, `dgi-nc-29-2008`, `dgi-nc-17-2010`, `dgi-nc-18-2010`,
+`minfin-cnf-2013-impots-indirects`, `minfin-controle-fiscal-2016`, `fmi-2013-modernisation-administration-fiscale`,
+`fmi-2015-article-iv`, `harrison-krelove2005-vat-refunds`.
+**Promue au fonds commun** : `fmi-1997-selected-issues` (venue de `retraites`, citée aussi par la TVA) — dans Zotero,
+à déclasser de la collection « Retraites ».
+
+- [ ] `fmi-2013-modernisation-administration-fiscale` : sans URL (recherche imf.org infructueuse) ; à rechercher de nouveau.
+- [x] `minfin-cnf-2013-impots-indirects` : horodatage 20170616072542 reconfirmé au CDX le 06/10/2026.
+- [ ] `fmi-2015-article-iv`, `fmi-1997-selected-issues` (adresse du PDF) : URL elibrary relevées par recherche, pages non ouvertes (403 aux robots).
+- [ ] `decret-loi-2020-6-covid-fiscal` : pas d'édition française ; intitulé FR « traduction du titre arabe » ; l'AR porte l'intitulé arabe de la notice.
+- [ ] `minfin-controle-fiscal-2016` : `issued` 2017 = date de création du PDF (document non daté).
+- [ ] Les pages portées par les clés de lois de finances existantes sont celles d'autres articles : à donner au localisateur (annexe A.1 de la note).
+
+**Complément du 06/10/2026 (clôture TVA)** : quatre clés neuves dans `precis/{fr,ar}/fiscalite/references.json`, absentes de Zotero :
+`minfin-cnf-2013-synthese` (p. 82), `minfin-assises-2014-projet-reforme` (p. 76 imprimée, 77 du PDF), `minfin-rapport-budget-2013` (p. 33),
+`minfin-rapport-budget-2014` (p. 16) ; captures lues au CDX. TODO du rédacteur soldé dans `_tva.qmd`. Entrées ministérielles :
+`language` omis (perte Zotero connue). Seul le TODO (bibliographe) sur les décrets de 1998 à 2014 reste dans `_tva.qmd`, hors section.
+- [ ] `dry-run` : s'arrête sur `dafflon-2021-budget-local` (type `chapter`, préexistant) avant de convertir les autres références ; à corriger pour que l'action aille au bout.
