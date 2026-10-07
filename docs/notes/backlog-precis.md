@@ -23,6 +23,11 @@ extraits des lois de finances sont dans le dossier voisin `PDFs/Lois_de_Finances
 
 ## Chantier transversal — les ruptures au premier plan, le détail replié
 
+- **Numérotation de l'annexe des tableaux de la TVA** (remarque du propriétaire, 7 octobre 2026) :
+  « Tableau A.1 », « Tableau A.2 » de l'annexe peuvent se confondre avec les tableaux A, B et C
+  du code. Pas de changement pour l'instant ; à reprendre si la confusion gêne (autre lettre
+  d'annexe, ou légendes qui ne commencent pas par « Tableau A »).
+
 Ouvert le 7 octobre 2026 ; note : `docs/notes/chantier-ruptures-au-premier-plan.md`. Prototype sur
 la restitution du crédit de TVA (`_tva.qmd`, `#sec-tva-credit-restitution`) : tableau des ruptures
 et de leur mise en œuvre, puis chronologie complète repliée (bloc `.chronologie-repliable`).

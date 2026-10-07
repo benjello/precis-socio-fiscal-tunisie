@@ -224,3 +224,24 @@ main table td[style*="text-align: right"],
 .tableau-engendre td:first-child {
   white-space: nowrap;
 }
+
+
+// Bouton « Tout déplier » (voir legendes.html) : discret, en tête de page.
+button.tout-deplier {
+  display: inline-block;
+  margin-block: 0.25rem 1rem;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.85rem;
+  color: $body-color;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+button.tout-deplier:hover,
+button.tout-deplier:focus-visible {
+  background: rgba(0, 0, 0, 0.05);
+}
+@media print {
+  button.tout-deplier { display: none; }
+}

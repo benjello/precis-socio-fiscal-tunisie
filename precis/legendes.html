@@ -440,3 +440,65 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
+
+<script>
+// Retrouver ce qu'on cherche dans les blocs repliés. Un paramètre de la législation rangé dans
+// un détail replié doit rester trouvable sans savoir où il est :
+//  1. un bouton « Tout déplier » en tête de page ouvre d'un geste tous les blocs repliés — la
+//     recherche du navigateur (Ctrl+F) ne voit pas, selon le navigateur, un bloc fermé ;
+//  2. en arrivant par la recherche du livre (adresse en ?q=…), les blocs qui contiennent le mot
+//     cherché s'ouvrent d'eux-mêmes ;
+//  3. la recherche du navigateur elle-même ouvre les blocs là où elle le sait (événement
+//     `beforematch`), et Ctrl+F déplie tout là où elle ne le sait pas.
+// L'adresse est lue tout de suite : la recherche du livre retire `?q=…` au chargement.
+const motCherche = (new URLSearchParams(location.search).get("q") || "").trim().toLocaleLowerCase();
+document.addEventListener("DOMContentLoaded", () => {
+  // Les <details> sont créés par les scripts précédents sur ce même événement : on passe après.
+  setTimeout(() => {
+    const blocs = [...document.querySelectorAll("details.chronologie-repliable")];
+    if (!blocs.length) return;
+    const ar = document.documentElement.dir === "rtl" || document.documentElement.lang === "ar";
+    const libelles = ar
+      ? { ouvrir: `فتح كلّ التفاصيل (${blocs.length})`, fermer: "طيّ كلّ التفاصيل" }
+      : { ouvrir: `Tout déplier (${blocs.length} blocs de détail)`, fermer: "Tout replier" };
+    const bouton = document.createElement("button");
+    bouton.type = "button";
+    bouton.className = "tout-deplier";
+    const etat = () => blocs.every(d => d.open);
+    const peindre = () => { bouton.textContent = etat() ? libelles.fermer : libelles.ouvrir; };
+    bouton.addEventListener("click", () => {
+      const ouvrir = !etat();
+      blocs.forEach(d => { d.open = ouvrir; });
+      peindre();
+    });
+    blocs.forEach(d => d.addEventListener("toggle", peindre));
+    peindre();
+    const titre = document.querySelector("main header, main h1");
+    if (titre) titre.insertAdjacentElement("afterend", bouton);
+
+    // 2. Arrivée par la recherche du livre : Quarto surligne les occurrences dans des <mark>.
+    // Le mot cherché est aussi lu dans l'adresse : hors ligne, la recherche du livre ne
+    // surligne rien, et le bloc doit s'ouvrir quand même.
+    const cherche = motCherche;
+    const parRecherche = () => {
+      blocs.forEach(d => {
+        if (d.querySelector("mark") || (cherche && d.textContent.toLocaleLowerCase().includes(cherche))) d.open = true;
+      });
+      peindre();
+    };
+    if (cherche) {
+      parRecherche();
+      setTimeout(parRecherche, 600);
+    }
+
+    // 3. Recherche du navigateur.
+    blocs.forEach(d => d.addEventListener("beforematch", () => { d.open = true; }));
+    document.addEventListener("keydown", (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "f" && !etat()) {
+        blocs.forEach(d => { d.open = true; });
+        peindre();
+      }
+    });
+  }, 0);
+});
+</script>
