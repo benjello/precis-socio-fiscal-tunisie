@@ -438,6 +438,71 @@ liste qui suit le tableau, citations comprises. Restent :
 
 ## Rémunérations publiques
 
+- **Masse salariale, rupture du numérateur en 1996 et 2000 — constat fait le 6 octobre 2026, cause à
+  identifier.** La série du ministère des Finances recule de 2 091,0 à 1 993,2 MD en 1996 et
+  bondit de 16,1 % en 2000 ; le détail du fonctionnement (moyens des services, interventions
+  publiques) n'y commence qu'en 1996. Le FMI (Staff Country Reports n° 97/57 et n° 00/37, lisibles
+  dans `tunisia-data/data/raw/banque-mondiale-rapports/`) ne montre aucune baisse. Reste à faire :
+  identifier les dépenses reclassées ; verser les deux clés du FMI (FR et AR) et citer le
+  recoupement dans `index.qmd`, à part du budgétaire ; marquer 1996 et 2000 sur
+  `#fig-masse-salariale-ratios` (colonne `rupture` de la série, côté entrepôt).
+- **PIB par base — fait le 6 octobre 2026** (règle : tout PIB dit sa base et s'il est
+  rétropolé ; sinon rupture de série). `#fig-masse-salariale-ratios` trace la part du PIB par
+  segments (base 1983 en 1990-1996, présumée pour 1990-1991 ; base 1997 rétropolée par l'INS
+  en 1997-2001 ; valeurs propres au ministère, base non précisée par la source, en 2002-2004
+  et 2025 ; base 1997 en 2005-2009 ; base 2015 de l'INS en 2010-2024, rétropolée pour
+  2010-2014), marque les ruptures de 1997, 2002, 2005, 2010 et 2025, et donne à part la part
+  dans les dépenses de l'État, seule mesure homogène. Nouvelle `#fig-masse-salariale-reconciliation`
+  (2010-2020) : la masse salariale rapportée au PIB de la base 1997 et de la base 2015 sur les
+  années publiées dans les deux bases (2010-2017), et les parts du FMI et de la Banque
+  mondiale en marques ; le coefficient 1,06 appliqué à toute la série est supprimé. Le texte de
+  `index.qmd` dit la base de chaque période ; les parts de 2012-2014 ne sont plus citées
+  (elles ont changé dans la série : 12,30 → 11,71 % ; 12,79 → 12,15 % ; 13,03 → 12,35 %).
+  Restent :
+  - **snapshots à refaire après fusion de tunisia-data.** `masse-salariale-ratios`,
+    `masse-salariale-reconciliation` et `pib-courant-recouvrements` (nouvelle dans le cache)
+    sont snapshotées depuis la branche **non fusionnée** `fix/masse-salariale-build` de
+    tunisia-data, commit `18be659` (PIB de 2023-2024 déjà aligné sur l'édition 2021-2025 :
+    14,48 et 13,93 %). Après fusion sur `main` : relancer
+    `figtools.refresh_cache("masse-salariale-ratios", "masse-salariale-reconciliation",
+    "pib-courant-recouvrements")`, vérifier que les CSV sortent identiques, sinon relire le
+    texte et les notes de lecture, qui citent des parts. L'ordre de fusion des deux dépôts
+    est à décider par l'humain. `irpp-ratios`, que la même branche modifie, n'est PAS
+    resnapshotée ici (fiscalité, retraites, prestations, cotisations, caisses la lisent) ;
+  - **conflit prévisible** avec la branche `docs/annexe-pib`, qui snapshote aussi
+    `pib-courant-recouvrements` : `catalog.snapshot.yml` se résout en relançant
+    `refresh_cache` ; les entrées de bibliographie `ins-changement-base-2015`,
+    `ins-pib-base-2015-2010-2020` et `imf-tunisia-art4-2010` sont reprises à l'identique de
+    cette branche (fonds commun FR et AR), pour fusionner sans divergence ;
+  - **liens morts tant que l'annexe n'est pas fusionnée** : `../annexe-pib.html` (ancres
+    `#sec-pib-ruptures`, `#sec-pib-sources`, `#pib-base-2015`), dans `index.qmd` (texte et
+    deux notes de lecture) et `_regime_conventionnel.qmd` ;
+  - **arabe** : `precis/ar/…/index.qmd` porte encore l'ancien texte et l'ancienne note de
+    lecture (« PIB en base 2015 ») sous la figure refaite, et n'a pas la seconde figure,
+    jusqu'à la traduction ; les libellés arabes des figures sont dans le module ;
+  - **helper à mutualiser** : le bandeau des bases au-dessus du cadre, le repère triangulaire
+    à infobulle et le tracé par segments sont écrits deux fois, dans
+    `remunerations_publiques/figures/masse_salariale.py` et dans
+    `compensation/figures/compensation.py` (branche `docs/compensation-documentation`) : à
+    porter dans `figtools` une fois les deux branches fusionnées ;
+  - **rapports extérieurs (documentaliste)** : les parts du FMI (17,6 % en 2020) et de la
+    Banque mondiale (14,7 % en 2017, 10,7 % en 2010 ; transferts aux entreprises publiques,
+    8,9 % en 2013 et 7,5 % en 2014) sont citées sans page ; la base du PIB de la Banque
+    mondiale est à relever dans sa revue des dépenses publiques de 2020 (le texte dit « n'est
+    pas précisée ici »). Le 14,1 % de 2019 de la série (« Min Fin/presse ») n'est ni tracé ni
+    affiché, faute de source. La part de 1997 en base 1983 citée au texte (10,97 %) n'est
+    dans aucune figure : elle se recalcule sur `pib-courant-recouvrements` (2 293,5 /
+    20 898,0) ;
+  - **bibliographie** : la clé `imf-tunisia-art4-2020` désigne le rapport n° 21/44, dont le
+    titre imprimé est « 2021 Article IV Consultation » (relevé sur la branche de l'annexe) ;
+  - **catalogue de l'entrepôt** : `ins-pib-base-2015-2010-2020` manque aux `sources` de
+    `masse-salariale-ratios` (le module l'ajoute à l'affichage) ; ses `caveats` s'adressent
+    à qui trace la série (noms de colonnes, journal des corrections) : le module les
+    remplace par un texte pour le lecteur (`PROVENANCE_LECTEUR`) ;
+  - `_demo_figure_onglets.qmd` (hors livre, lit l'entrepôt directement) : non repris ;
+  - **autres volumes non conformes** (figures de rendement fiscal, figures de la CNSS
+    1990-2004, retraites, finances locales) : non touchés ici, inventaire sur la branche
+    `docs/annexe-pib`.
 - **Chapitres à étoffer** : régime conventionnel public, marché contrôlé et statutaire
   autonome ; le régime indiciaire est le plus développé. Ne pas réutiliser les
   longueurs des chapitres mesurées avant la relecture des rémunérations.
@@ -837,10 +902,84 @@ période. Notes documentaires : `docs/notes/marche-travail-smig-smag.md`,
 `-conventions-collectives.md`, `-negociations.md` (partie privée). Le livre arabe est déclaré
 (`precis/ar/marche_travail/_quarto.yml`) et sauté tant que la traduction n'est pas livrée.
 
+Huitième chapitre ajouté le 6 octobre 2026 (branche `docs/marche-travail-politiques-emploi`) :
+« Les politiques de l'emploi » (`_politiques_emploi.qmd`), placé après la longue période du
+salaire minimum, qui clôt le bloc des salaires ; note documentaire
+`docs/notes/marche-travail-politiques-emploi.md`. Il porte sa propre longue période : figure des
+dotations 1987-2008 (série `bct-programmes-emploi-dotations`, fonction `vues_dotations_emploi` de
+`figures/marche_travail.py`), tableaux budgétaires 2011-2025, décomptes administratifs 2009-2013,
+rapports de la Banque mondiale et évaluations, en blocs séparés.
+
 À faire, avec l'état des sources :
 
-- **Chapitres annoncés, non écrits** : temps de travail et congés ; rupture du contrat de travail ;
-  politiques de l'emploi. À ajouter au `_quarto.yml` français et arabe à leur rédaction.
+- **Chapitres annoncés, non écrits** : temps de travail et congés ; rupture du contrat de travail.
+  À ajouter au `_quarto.yml` français et arabe à leur rédaction.
+- **Politiques de l'emploi — chapitre arabe à déclarer** : `_politiques_emploi.qmd` est déclaré au
+  `_quarto.yml` français seulement. À la livraison de la traduction, l'ajouter à la main à
+  `precis/ar/marche_travail/_quarto.yml` (après `_longue_periode.qmd`) et rendre le livre arabe :
+  la figure y est déjà bilingue (`figures/` est un lien vers le répertoire français).
+- **Politiques de l'emploi — dépense exécutée du Fonds national de l'emploi** : établie pour
+  aucune année. Le chapitre ne donne que des dotations (BCT, 1987-2008), des prévisions de lois de
+  finances (2011-2020), des dotations de rapports sur le budget (2022, 2024, 2025) et des excédents
+  reversés (2016-2018, celui de 2016 sous réserve : intitulé de la colonne de la loi n° 2018-49 à
+  confirmer). À obtenir : rapports annuels de performance de la mission (gbo.tn, adresses non
+  trouvées), tableaux annexes des lois de règlement (images, au corpus, à dépouiller), Cour des
+  comptes. Prévisions du Fonds avant 2011 et depuis 2021 : tableaux des lois de finances au
+  corpus, à relire à l'image ; pages des tableaux 2012-2020 connues à une page près. PAP 2024 et
+  2025 (édition arabe) récupérés, tableaux à dépouiller.
+- **Politiques de l'emploi — bénéficiaires** : années entières 2014 à 2022 absentes (rapports
+  annuels de l'ANETI et de l'ONEQ non obtenus ; `emploi.tn` ne répond pas, captures d'archive
+  partielles) ; seules des périodes partielles sont données (neuf mois 2016-2017, premier semestre
+  2023-2024). Contrats signés et bénéficiaires de 1988 à 2008 : donnés en prose par chaque édition
+  du Rapport annuel de la BCT (au dépôt `tunisia-data`, lisibles), non dépouillés. Annuaires de
+  l'INS non parcourus.
+- **Politiques de l'emploi — études récupérées, non dépouillées** (donc non citées) : ONEQ, suivi
+  du SIVP (2009), évaluation du service civil volontaire (2010), évaluation du « PC50 » (2016),
+  rapport du premier semestre 2013, bulletin du premier trimestre 2018 ; Banque mondiale,
+  *Building Effective Employment Programs…* (2013), *Breaking the Barriers to Youth Inclusion*
+  (2014), note « The AMAL Program » (2011). À relever aussi : résultats du contrat de service civil
+  et tailles d'échantillon de l'étude ONEQ-OIT de 2023 ; chiffres de Premand et al. (2012), dont
+  seuls la méthode et le résultat qualitatif sont écrits. Non obtenue : OCDE (2015), *Investir dans
+  la jeunesse : Tunisie*. Les PDF sont dans `tunisia-data/data/raw/emploi/`, répertoire **non
+  ignoré par git** : à trancher par l'humain avant tout `git add` dans ce dépôt.
+- **Politiques de l'emploi — chiffres de 1981 à 1993 à relire** : subventions, indemnités, durées,
+  âges et taux des
+  décrets n° 81-1220, 87-1190, 88-715, 88-733 et 93-1049, lus sur des fascicules sans couche texte
+  fiable ; le chapitre les donne dans un tableau à part, sous réserve (`tbl-mt-pe-montants-1981-1993`).
+  Relecture à l'image nécessaire, comme pour les indemnités de FORSATI (décret gouvernemental
+  n° 2016-904, colonnes entrelacées), laissées hors du texte. Les lignes de crédit imputées sur le
+  Fonds par les lois de finances 2022 à 2026 (édition arabe) sont aussi à relire avant d'être
+  écrites ; date d'effet des textes de 1981 et du décret gouvernemental n° 2019-542 non établie
+  (édition française du JORT n° 51 de 2019 absente de pist.tn).
+- **Politiques de l'emploi — textes non identifiés** (fiches de `docs/recherches.yml`) : texte
+  instituant le FIAP (`r-fiap-texte-fondateur`) ; barème du SIVP entre 1993 et 2009
+  (`r-sivp-bareme-1993-2009`) ; arrêtés des chèques de 2012 (`r-d2012-2369-arretes-cheques`) ;
+  texte fondateur des chantiers (`r-chantiers-regionaux-texte-fondateur`). Textes connus par leur
+  seul intitulé : décret n° 2003-564 (ANETI), décret-loi n° 2022-78, arrêté du 8 août 2017,
+  décret n° 2025-459, décrets n° 93-1354, 97-1938, 97-1930, 94-494, 98-868, 2001-1722, 2006-2990,
+  2007-1237.
+- **Politiques de l'emploi — bibliographie** : pas de clé pour les éditions 1988-1990, 1997 et
+  2000 du Rapport annuel de la BCT (la clé générique `bct-ra` les couvre dans la figure), ni pour
+  le décret n° 2000-2279, la loi n° 91-4, l'arrêté du 8 août 2017 et le décret n° 2025-459 ;
+  `loi88-60-lfc1988` (restructuration des offices en 1988) n'existe qu'au volume « Les caisses » ;
+  `loi74-101-lf1975` existe au fonds commun, mais son art. 57 (fonds d'intervention économique)
+  n'est pas vérifié.
+- **Politiques de l'emploi — annexe du glossaire, huit citations non résolues** : les entrées
+  `tfp`, `avance-tfp` et `fonds-special-tresor`, ancrées par le chapitre et appelées par le
+  `voir_aussi` des entrées neuves (`fonds-national-emploi`, `fonds-formation-apprentissage`,
+  `contrat-emploi-formation`), citent six clés propres à d'autres volumes :
+  `decret-1956-01-12-formation-professionnelle`, `decret66-527`, `loi-88-145-lf-1989`,
+  `loi2007-69`, `decret2009-292` (cotisations sociales) et `lf-1971` (compensation). À promouvoir
+  au fonds commun, FR et AR (bibliographe) : `scripts/verifier.sh marche_travail` échoue au rendu
+  tant que ce n'est pas fait ; le chapitre lui-même n'a aucune citation non résolue.
+- **Politiques de l'emploi — tableaux faits main** : `tbl-mt-pe-programmes`,
+  `tbl-mt-pe-indemnites` et `tbl-mt-pe-fne-lf` portent un TODO rédacteur (à engendrer une fois les
+  barèmes et les prévisions des comptes spéciaux versés en amont). La prise en charge par l'État de
+  la contribution patronale (LF 2005, art. 20 ; décret n° 2009-349) n'est traitée dans aucun
+  chapitre du volume « Les cotisations sociales » : à y signaler par un renvoi.
+- **Glossaire des politiques de l'emploi** : dix-neuf notions en `provisoire`, sans définition ;
+  « contrat d'initiation » (usage, sigle CIVP) ou « contrat d'insertion » (décret n° 2023-461) à
+  trancher par le terminologue.
 - **Taux des accords-cadres UGTT-UTICA** (1990-2023) : aucun texte au *Journal officiel* ; fiche
   `r-accords-cadres-ugtt-utica`. À obtenir hors corpus (archives d'*Echaab*, ministère des affaires
   sociales, OIT).

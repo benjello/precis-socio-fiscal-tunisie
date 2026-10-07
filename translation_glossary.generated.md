@@ -11,6 +11,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Abattement sur les pensions et rentes viagères | الطرح بعنوان الجرايات والإيرادات العمرية |  |
 | Accident du travail | حادث شغل |  |
 | Administrations publiques | الإدارات العمومية |  |
+| Agence nationale pour l'emploi et le travail indépendant | الوكالة الوطنية للتشغيل والعمل المستقل | ANETI |
 | Agent temporaire | العون الوقتي |  |
 | Agrément d'une convention collective | المصادقة على الاتفاقية المشتركة |  |
 | Allocation de vieillesse | منحة الشيخوخة |  |
@@ -83,6 +84,13 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Condition de ressources | شرط الموارد |  |
 | Conseil local | المجلس المحلي |  |
 | Conseil supérieur des collectivités locales | المجلس الأعلى للجماعات المحلية |  |
+| Contrat d'adaptation et d'insertion professionnelle | عقد التأهيل والإدماج المهني | CAIP |
+| Contrat d'initiation à la vie professionnelle | عقد الإعداد للحياة المهنية | CIVP |
+| Contrat d'insertion des diplômés de l'enseignement supérieur | عقد إدماج حاملي شهادات التعليم العالي | CIDES |
+| Contrat de réinsertion dans la vie active | عقد إعادة الإدماج في الحياة النشيطة | CRVA |
+| Contrat emploi-formation | عقد التشغيل والتكوين |  |
+| Contrat emploi-solidarité | عقد التشغيل والتضامن |  |
+| Contrat-dignité | عقد الكرامة |  |
 | Contrat-programme | عقد البرنامج |  |
 | Contribution au fonds de promotion du logement pour les salariés | المساهمة الراجعة لصندوق النهوض بالمسكن لفائدة الأجراء | FOPROLOS |
 | Contribution au profit du Fonds national d'amélioration de l'habitat | المساهمة لفائدة الصندوق الوطني لتحسين السكن |  |
@@ -147,8 +155,10 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fonctions astreignantes | الوظائف المرهقة |  |
 | Fonds commun des collectivités locales | المال المشترك للجماعات المحلية | FCCL |
 | Fonds de commerce | الأصول التجارية |  |
+| Fonds de promotion de la formation professionnelle et de l'apprentissage | صندوق النهوض بالتكوين والتدريب المهني |  |
 | Fonds de réserve | صندوق الاحتياط |  |
 | Fonds de sécurité sociale | صناديق الضمان الاجتماعي |  |
+| Fonds national de l'emploi | الصندوق الوطني للتشغيل | FNE |
 | Fonds spéciaux du Trésor | الحسابات الخاصة في الخزينة |  |
 | Forces de sécurité intérieure | قوات الأمن الداخلي |  |
 | Frais professionnels | المصاريف المهنية |  |
@@ -175,6 +185,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Indemnité complémentaire provisoire | المنحة التكميلية الوقتية | ICP |
 | Indemnité de décès | منحة الوفاة |  |
 | Indemnité de revenu unique | منحة الدخل الوحيد |  |
+| Indemnité de stage | منحة التربص |  |
 | Indemnité journalière | التعويض اليومي |  |
 | Indemnité spécifique | المنحة الخصوصية |  |
 | Jouissance différée | الانتفاع المؤجَّل بالجراية |  |
@@ -193,6 +204,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Option pour la qualité d'assujetti | الاختيار للخضوع للأداء |  |
 | Ordonnateur | آمر قبض وصرف |  |
 | Ouvrier de l'État | عامل الدولة |  |
+| Ouvriers de chantiers | عملة الحضائر |  |
 | Part aux recettes | المناب من محصول الأداءات |  |
 | Patrimoine financier | الملك المالي |  |
 | Pension d'ancienneté | جراية التقاعد بالأقدمية |  |
@@ -207,6 +219,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Péréquation des prix | تعديل الأسعار |  |
 | Péréquation des ressources | تعديل الموارد |  |
 | Péréquation financière | التعديل المالي |  |
+| Politique active de l'emploi | السياسة النشيطة للتشغيل |  |
 | Position tarifaire | البند التعريفي |  |
 | Potentiel fiscal | الطاقة الجبائية |  |
 | Pourcentage de déduction | النسبة المائوية للطرح |  |
@@ -217,11 +230,16 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prestations familiales | المنح العائلية |  |
 | Prime d'investissement | منحة الاستثمار |  |
 | Prime de rendement | منحة المردودية |  |
+| Prise en charge par le Fonds national de l'emploi de la contribution patronale au régime légal de sécurité sociale | تكفل الصندوق الوطني للتشغيل بمساهمة الأعراف في النظام القانوني للضمان الاجتماعي |  |
 | Prix de cession préférentiel | السعر التفاضلي |  |
 | Prix de référence du mètre carré couvert | الثمن المرجعي للمتر المربع المبني |  |
 | Produit intérieur brut | الناتج المحلي الإجمالي | PIB |
 | Produits de base | المواد الأساسية |  |
+| Programme d'accompagnement des promoteurs des petites entreprises | برنامج مرافقة باعثي المؤسسات الصغرى | PAPPE |
+| Programme de recherche active d'emploi | برنامج البحث النشيط عن شغل |  |
+| Programme du service civil volontaire | برنامج الخدمة المدنية التطوعية |  |
 | Programme national d'aide aux familles nécessiteuses | البرنامج الوطني لمساعدة العائلات المعوزة | PNAFN |
+| Programme « FORSATI » | برنامج "فرصتي" |  |
 | Projets d'intérêt national | المشاريع ذات الأهمية الوطنية |  |
 | Promoteur immobilier | الباعث العقاري |  |
 | Promotion | الترقية |  |
@@ -289,6 +307,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Solde (militaire) | المرتّب العسكري |  |
 | Solde de réforme | منحة الإصلاح |  |
 | Souveraineté fiscale | السيادة الجبائية |  |
+| Stage d'initiation à la vie professionnelle | تربص الإعداد للحياة المهنية | SIVP |
 | Stage de cotisation | مدة الانخراط الدنيا |  |
 | Statut particulier | النظام الأساسي الخصوصي |  |
 | Structure des prix | تركيبة الأسعار |  |

@@ -41,6 +41,9 @@
   raw:
   - data/raw/minfinances/repartition_depenses.xls
   - data/raw/minfinances/indicateurs_fp_2025.xls
+  - data/processed/ins-comptes-nationaux/pib_courant_par_base.csv
+  - data/processed/ins-comptes-nationaux/pib_nominal_editions.csv
+  - data/processed/ins-comptes-nationaux/pib_undata.csv
   output: data/processed/precis/masse_salariale_ratios_longs_1990_2025.csv
   unite: '% du PIB / % des dépenses (nominal, prix courants)'
   perimetre: masse salariale = budget de l'État (Rémunérations publiques), hors entreprises
@@ -49,8 +52,32 @@
     1990-2025'
   unite_ar: '% من الناتج المحلي الإجمالي / % من النفقات (قيم جارية)'
   perimetre_ar: كتلة الأجور = ميزانية الدولة (الأجور العمومية)، باستثناء المنشآت العمومية
-  base_pib: 2015
-  caveats: docs/hypotheses-series-masse-salariale.md
+  base_pib: 1983 / 1997 / 2015 (colonne base_pib)
+  caveats: 'LE PIB N''EST PAS D''UNE SEULE BASE SUR 1990-2025. De 2010 à 2024 : PIB
+    de l''INS en base 2015 (rétropolé par l''INS pour 2010-2014), une seule base.
+    Avant 2010 et en 2025 : PIB du ministère des Finances, dont la base change — base
+    1983 jusqu''en 1996 (présumée avant 1992), base 1997 en 1997-2001 et 2005-2009,
+    valeurs propres au ministère en 2002-2004 et 2025. RUPTURES DE SÉRIE, marquées
+    par la colonne `rupture` : 1997 (base 1983 → base 1997, niveau + 9,8 %), 2002
+    et 2005 (valeurs non rattachées, puis retour à la base 1997), 2010 (base 1997
+    → base 2015, niveau + 4,9 %), 2025. Tracer la part du PIB par segments (`segment_pib`),
+    jamais d''un trait continu ; ne pas comparer les niveaux de part et d''autre d''une
+    rupture. Bases ni chaînées ni raccordées. VALEURS CHANGÉES EN OCTOBRE 2026 : 2012-2014
+    (le fichier portait la base 1997) : 12,30 → 11,71 % ; 12,79 → 12,15 % ; 13,03
+    → 12,35 % ; 2023-2024 (dernière édition des Comptes de la nation) : 14,49 → 14,48
+    % ; 13,94 → 13,93 %. LA PART DANS LES DÉPENSES DE L''ÉTAT NE DÉPEND D''AUCUNE
+    BASE : c''est la mesure homogène sur 1990-2025. Voir docs/hypotheses-series-masse-salariale.md.'
+  caveats_ar: 'الناتج المحلي الإجمالي المعتمد ليس على أساس واحد على 1990-2025. من
+    2010 إلى 2024: ناتج المعهد الوطني للإحصاء على أساس 2015 (معاد الاحتساب من المعهد
+    لسنوات 2010-2014)، أساس واحد. قبل 2010 وفي 2025: ناتج وزارة المالية الذي يتغيّر
+    أساسه — أساس 1983 إلى غاية 1996 (مفترض قبل 1992)، أساس 1997 في 1997-2001 و2005-2009،
+    قيم خاصة بالوزارة في 2002-2004 و2025. انقطاعات في السلسلة يبيّنها العمود rupture:
+    1997 (من أساس 1983 إلى أساس 1997، المستوى + 9,8 %)، 2002 و2005، 2010 (من أساس
+    1997 إلى أساس 2015، المستوى + 4,9 %)، 2025. تُرسم النسبة إلى الناتج مقطعًا مقطعًا
+    لا بخط متصل، ولا تُقارن المستويات على جانبي انقطاع. الأسس غير موصولة. قيم تغيّرت
+    في أكتوبر 2026: 2012-2014: 12,30 ← 11,71 % ؛ 12,79 ← 12,15 % ؛ 13,03 ← 12,35 %
+    ؛ 2023-2024: 14,49 ← 14,48 % ؛ 13,94 ← 13,93 %. أما الحصة من نفقات الدولة فلا
+    تتعلق بأي أساس: هي القياس المتجانس على 1990-2025.'
   fiche: sources/minfinances-indicateurs.md
 - id: masse-salariale-reconciliation
   titre: 'Réconciliation masse salariale/PIB : base 2015 vs base 2010 (FMI/BM)'
@@ -62,6 +89,9 @@
   build: tunisia_data.build.masse_salariale:reconciliation_base
   raw:
   - data/raw/minfinances/repartition_depenses.xls
+  - data/processed/ins-comptes-nationaux/pib_emplois_nominal.csv
+  - data/processed/ins-comptes-nationaux/pib_nominal_editions.csv
+  - data/processed/ins-comptes-nationaux/pib_courant_recouvrements.csv
   output: data/processed/precis/masse_salariale_reconciliation_base.csv
   unite: '% du PIB (nominal)'
   perimetre: administration centrale
@@ -69,7 +99,25 @@
     (صندوق النقد/البنك الدولي)'
   unite_ar: '% من الناتج المحلي الإجمالي (اسمي)'
   perimetre_ar: الإدارة المركزية
-  caveats: docs/reconciliation-masse-salariale-pib.md
+  caveats: 'DEUX PIB PAR ANNÉE, TROIS ANNÉES (2017, 2019, 2020). `pib_base2015_MDT`
+    : Comptes de la nation de l''INS, base 2015, valeur publiée. `pib_base2010_MDT`
+    : LA « BASE 2010 » EST LA BASE 1997 de l''INS (SCN 1993, volumes aux prix de 2010
+    ; le FMI l''écrit dans son rapport n° 21/44) — il n''existe pas de PIB nominal
+    « base 2010 », et le nom de la colonne est celui du fichier d''origine. Valeur
+    publiée par l''INS pour 2017 seulement ; CALCULÉE pour 2019 et 2020 (PIB base
+    2015 ÷ 1,05996), l''INS n''ayant rien publié en base 1997 pour ces années. `rapport_observe_base2015_sur_base1997`
+    donne le rapport observé l''année même (2017 : 1,05904 ; vide en 2019 et 2020)
+    ; les huit années observées, 2010-2017, sont dans `pib-courant-recouvrements`
+    (de 1,049 à 1,061 : pas de facteur constant). Les ratios rapportés (FMI, Banque
+    mondiale, ministère) sont transcrits sans page et n''ont pas été relus. Voir docs/reconciliation-masse-salariale-pib.md.'
+  caveats_ar: 'ناتجان محليان إجماليان لكل سنة، وثلاث سنوات (2017، 2019، 2020). العمود
+    pib_base2015_MDT: الحسابات القومية للمعهد الوطني للإحصاء، أساس 2015، قيمة منشورة.
+    العمود pib_base2010_MDT: «أساس 2010» هو أساس 1997 للمعهد (نظام الحسابات القومية
+    1993، الأحجام بأسعار 2010)، ولا يوجد ناتج اسمي على «أساس 2010»؛ اسم العمود موروث
+    من الملف الأصلي. قيمة منشورة لسنة 2017 فقط، ومحسوبة لسنتي 2019 و2020 (ناتج أساس
+    2015 مقسومًا على 1,05996). النسبة الملاحظة بين الأساسين غير ثابتة (من 1,049 إلى
+    1,061 على 2010-2017). النسب المنقولة عن صندوق النقد الدولي والبنك الدولي والوزارة
+    مدوّنة دون رقم صفحة ولم تُراجع في التقارير.'
   fiche: sources/minfinances-indicateurs.md
 - id: fonction-publique-categories
   titre: Fonctionnaires par catégorie statutaire (A1-D), 2015-2021
@@ -2334,6 +2382,88 @@
   caveats_ar: الوثيقتان غير متطابقتين في 2014 و2015 و2020؛ بقيت القراءتان منفصلتين
     دون تصحيح.
   fiche: sources/mas-profil-sst-2023.md
+- id: bct-programmes-emploi-dotations
+  titre: Dotations des programmes de soutien à l'emploi, 1987-2008 (tableau du Rapport
+    annuel de la BCT)
+  sources:
+  - bct-ra
+  build: scripts/extract_bct_programmes_emploi.py:main
+  raw:
+  - data/raw/bct-archives/109
+  output: data/processed/bct-archives/programmes_emploi_dotations.csv
+  unite: millions de dinars courants
+  perimetre: 'BCT, rapports annuels 1988 à 2008, chapitre « L''emploi et les salaires
+    », tableau « Programmes de soutien à l''emploi » (« … et de promotion des revenus
+    » de 1988 à 1990) : toutes les lignes du tableau et son total — chantiers nationaux
+    et régionaux (PRD, PCRD, PDRI, autres chantiers), aide à la création et à la consolidation
+    de l''emploi (PDRI, PRD, PDUI, Fonds de solidarité nationale, FONAPRA, Fonds national
+    de l''emploi 21-21), FOPRODI, programmes d''insertion (SIVP 1 et 2, FIAP, CEF)
+    ; une ligne par année et par ligne du tableau, avec l''édition retenue et sa page'
+  caveats: 'SÉRIE RECONSTITUÉE : chaque édition n''imprime que deux à cinq années
+    ; la série est recollée à travers 21 éditions, toutes relues à l''image. ARBITRAGE
+    : la dernière édition qui imprime l''année fait foi, ligne par ligne ; les 301
+    valeurs écartées sont dans programmes_emploi_dotations_conflits.csv et la transcription
+    complète, avec le titre, l''unité, la source et la page de chaque édition, dans
+    programmes_emploi_dotations_editions.csv. RELAIS : la BCT cite la direction générale
+    des ressources humaines du ministère du Plan (1988-1991), le ministère du Plan
+    et du Développement régional « et BCT » (1992-1993), le ministère du Développement
+    économique (1994-1995), puis ce ministère et le Commissariat général au développement
+    régional (1996-2001), puis les ministères du Développement et de la coopération
+    internationale et de l''Emploi (2002-2008). DOTATIONS, NON DÉPENSES CONSTATÉES
+    : le tableau ne qualifie pas la grandeur ; la prose parle de « dotation budgétaire
+    », d''« enveloppe » allouée ou engagée, de « montant alloué ». RÉVISIONS FORTES
+    : chantiers nationaux de 1992 imprimés 23,9, puis 35,1, puis 37,6 ; chantiers
+    régionaux de 2003, 29,6 (édition 2003) puis 92,0 (éditions 2004 à 2006, dont la
+    prose confirme « 144 MDT en 2003 » pour l''ensemble des chantiers) ; Fonds 21-21
+    de 2000, 60,0 puis 58,4. LE TOTAL N''EST PAS LA SOMME DES PROGRAMMES RETENUS :
+    (1) il comprend des programmes de développement régional, rural et urbain et des
+    fonds d''aide à l''artisanat, non les seuls dispositifs d''emploi ; (2) la série
+    arbitrée juxtapose des éditions différentes et ne s''additionne pas dans l''année
+    en 1987-1990 (lignes des tableaux de 1988-1990 à côté du total de 1991-1994),
+    1992-1994 (lignes propres aux tableaux de 1991-1994 à côté de celles de 1995-1997)
+    et 2007 (rubrique d''aide à la création révisée à 119,0 par l''édition 2008, lignes
+    de l''édition 2007 qui font 118,2) ; la colonne `derniere_edition` dit si la ligne
+    vient de la dernière édition qui imprime l''année, et toute addition se fait dans
+    programmes_emploi_dotations_editions.csv, à l''intérieur d''une même édition,
+    où le script et le test vérifient chaque rubrique contre toutes ses lignes. TROIS
+    STRUCTURES (colonne `structure`) : A, éditions 1988-1990 ; B, éditions 1991-1994
+    ; C, éditions 1995-2008 ; leurs totaux ne recouvrent pas le même périmètre (1987
+    : 83,8 dans A, 50,8 dans B) et le total change de composition entre 1993 (B) et
+    1994 (C). PRD ET PDRI SOUS DEUX RUBRIQUES dans la structure C : l''identifiant
+    porte la rubrique, ne pas les additionner sans le vouloir. TOTAL DE 1992 ET 1993
+    : les éditions 1995 et 1996 n''en impriment pas ; le total retenu vient de l''édition
+    1994 (structure B) alors que les lignes de ces années viennent de la structure
+    C. ÉCARTS DE LA SOURCE : dans l''édition 1999, la ligne des chantiers régionaux
+    de 1997 et 1998 n''a pas suivi la révision de ses composantes. « - » ET « .. »
+    imprimés : case vide, signe gardé dans `mention`. Les éditions 1986 et 1987 n''ont
+    pas le tableau, celle de 1985 en a un autre (dépenses directes de l''État, 1983-1985),
+    et il disparaît après l''édition 2008.'
+  titre_ar: اعتمادات برامج دعم التشغيل، 1987-2008 (جدول التقرير السنوي للبنك المركزي
+    التونسي)
+  unite_ar: بملايين الدنانير بالأسعار الجارية
+  perimetre_ar: 'التقارير السنوية للبنك المركزي التونسي من 1988 إلى 2008، باب التشغيل
+    والأجور، جدول «برامج دعم التشغيل»: كلّ أسطر الجدول ومجموعه — الحضائر الوطنية والجهوية،
+    المساعدة على إحداث مواطن الشغل ودعمها (برنامج التنمية الريفية المندمجة، البرنامج
+    الجهوي للتنمية، برنامج التنمية الحضرية المندمجة، صندوق التضامن الوطني، الصندوق
+    الوطني للنهوض بالصناعات التقليدية والمهن الصغرى، الصندوق الوطني للتشغيل 21-21)،
+    وبرامج الإدماج في الحياة المهنية (تربّصات الإعداد للحياة المهنية SIVP 1 و2، صندوق
+    الإدماج والتأهيل المهني FIAP، عقود التشغيل والتكوين CEF)؛ سطر لكلّ سنة ولكلّ بند،
+    مع الطبعة المعتمدة وصفحتها'
+  caveats_ar: 'سلسلة معاد تركيبها: لا تطبع كلّ طبعة سوى سنتين إلى خمس سنوات، وقد جُمعت
+    عبر 21 طبعة قُرئت كلّها على الصورة. الترجيح: تُعتمد آخر طبعة تطبع السنة، بنداً
+    بنداً، وتُدوَّن القيم المستبعدة في ملفّ الاختلافات. البنك المركزي ناقل لا منتج:
+    يذكر تحت الجدول وزارة التخطيط ثمّ وزارة التنمية الاقتصادية والمندوبية العامة للتنمية
+    الجهوية ثمّ وزارتي التنمية والتعاون الدولي والتشغيل. المبالغ اعتمادات مرصودة لا
+    نفقات منجزة. المراجعات كبيرة أحياناً: الحضائر الوطنية لسنة 1992 طُبعت 23,9 ثمّ
+    35,1 ثمّ 37,6. المجموع ليس مجموع البرامج المعتمدة: يشمل برامج تنمية جهوية وريفية
+    وحضرية، ثمّ إنّ السلسلة المرجَّحة تجمع بين طبعات مختلفة فلا تتطابق مجاميعها داخل
+    السنة الواحدة في 1987-1990 و1992-1994 و2007؛ يبيّن العمود derniere_edition هل
+    السطر من آخر طبعة تطبع السنة، ولا يُجمع إلا داخل الطبعة الواحدة في ملفّ الطبعات.
+    للجدول ثلاث هيئات متعاقبة (العمود structure) لا تتطابق مجاميعها، ويتغيّر تركيب
+    المجموع بين 1993 و1994. يرد البرنامج الجهوي للتنمية وبرنامج التنمية الريفية المندمجة
+    تحت بابين. مجموع سنتي 1992 و1993 مأخوذ من طبعة 1994 لأنّ طبعتي 1995 و1996 لا تطبعان
+    مجموعاً. يختفي الجدول بعد طبعة 2008.'
+  fiche: sources/bct-archives.md
 - id: tva-credit-restitutions-sources
   titre: Crédit de TVA, restitutions et retenue à la source de TVA selon les sources,
     2009-2014

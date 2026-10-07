@@ -226,6 +226,20 @@ deux cas.
   vérifié. Le lancement de sous-agents avec un modèle choisi par niveau est, lui, propre à Claude
   Code.
 
+## Rendre compte à l'humain
+
+- **Annonce des heures, pas des durées.** Dès qu'une étape doit prendre plus de trois minutes —
+  un rendu, une vérification, une CI, un sous-agent, une suite d'étapes —, donne son **heure de fin
+  estimée**, à l'horloge (« fin vers 10 h 40 »), et non une durée (« une dizaine de minutes »).
+  Pour une suite d'étapes, donne un tableau : étape, heure de début, heure de fin, état. Lis
+  l'heure avec `date` avant de l'écrire ; ne la calcule pas de tête. Quand une étape déborde,
+  redonne l'heure révisée sans attendre qu'on la demande, et dis ce qui a pris plus longtemps.
+- **Ouvre dans le navigateur ce qui est à relire.** Un rendu prêt pour la relecture — chapitre,
+  figure, prototype, aperçu d'une PR — s'ouvre dans le navigateur, sur l'ancre de la section
+  concernée, à chaque nouvelle version ; un chemin de fichier ne suffit pas. Copie d'abord le rendu
+  sous le répertoire personnel si le navigateur ne lit que lui, et dis dans le message quels
+  onglets ont été ouverts.
+
 ## Vérifier avant de rendre la main
 
 ```

@@ -38,16 +38,16 @@ bibliographe (inbox `docs/notes/biblio-a-rapatrier.md`).
 #| label: fig-masse-salariale
 #| fig-cap: "Poids de la masse salariale publique, 1990-2025."
 #| echo: false
-import sys; sys.path.insert(0, ".")
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import masse_salariale as ms
-ms.prepare(generated="{{< meta date >}}")   # écrit figdata/ sourcés
-ms.fig_A()
+import figtools
+figtools.figure_tabs(ms.fig_A(), ms.ratios_table(), ms.SERIE,
+                     slug="fig_masse_salariale_ratios", caption="…",
+                     generated="{{< meta date >}}")
 ```
-Puis le bouton de téléchargement (le site sert le figdata sourcé, pas le raw) :
-```python
-from figtools import download_button
-download_button("figdata/fig_A_masse_salariale.csv")
-```
+`figure_tabs` écrit lui-même le figdata sourcé (`figdata/<slug>.csv`) et son bouton de
+téléchargement : le site sert le figdata, pas le raw.
 
 ## Build / CI — autonomie de diffusion (décidé 2026-06-09)
 Le build du site est **autonome** : il ne dépend pas du repo privé `tunisia-data`.

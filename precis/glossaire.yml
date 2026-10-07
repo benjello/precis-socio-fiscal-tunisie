@@ -7936,6 +7936,589 @@ entries:
         المؤتمر الدولي الحادي والعشرين لخبراء إحصاءات العمل، 2023، الفقرة 56).
       synonymes: []
 
+  # --- Politiques de l'emploi (volume « Le marché du travail », chapitre « Les politiques
+  # de l'emploi ») ---
+  # Passes 1 et 2 du 6 octobre 2026. Les entrées `valide` ont un terme arabe lu sur
+  # l'édition arabe du texte cité en `source_traduction` : couche texte pour les fascicules
+  # de 2017, 2019 et 2023 ; OCR relu à l'image pour ceux de 1993 (n° 36), 1999 (n° 105),
+  # 2009 (n° 12), 2010 (n° 7) et 2011 (n° 38), dont la couche texte arabe est absente ou
+  # inexploitable. L'entrée porte le nom du texte fondateur ; les appellations
+  # ultérieures sont en synonymes et datées dans la définition.
+  - id: fonds-national-emploi
+    acronyme: FNE
+    statut: valide
+    references: [lf-2001, lf-2003, dl2011-16, decret2009-349, decret2019-542]
+    source_definition: {ref: lf-2000, locator: "art. 13-14"}
+    # Arabe : LF 2000, art. 13 (OCR) et intitulé de l'art. 15 (image) ; décret
+    # n° 2009-349, art. 1er (image) ; décret gouvernemental n° 2019-542, art. 1er.
+    source_traduction: {ref: lf-2000, locator: "art. 15"}
+    voir_aussi: [fonds-special-tresor, fonds-formation-apprentissage, aneti, politique-active-emploi]
+    fr:
+      terme: Fonds national de l'emploi
+      definition: >
+        Compte spécial du Trésor créé par la loi de finances pour 2000 pour financer
+        les opérations qui développent la qualification des demandeurs d'emploi et
+        leurs possibilités d'emploi. Il est alimenté par des dons, par une part des
+        produits de privatisation et, depuis 2001, par des taxes affectées ; son
+        ordonnateur, d'abord celui de la présidence de la République, est depuis 2011
+        le ministre chargé de l'emploi (décret-loi n° 2011-16). Depuis le décret
+        n° 2009-349, tous les stages et contrats aidés sont ses « programmes ». Les
+        rapports de la Banque centrale le nomment « Fonds national de l'emploi 21-21 ».
+      synonymes: [Fonds 21-21]
+    ar:
+      terme: الصندوق الوطني للتشغيل
+      definition: >
+        حساب خاص في الخزينة أحدثه قانون المالية لسنة 2000 لتمويل العمليات التي
+        ترفع من مؤهلات طالبي الشغل وتوفّر إمكانيات التشغيل. وتتأتّى موارده من
+        الهبات ومن قسط من العائدات المتأتية من عمليات التخصيص، ومنذ سنة 2001 من
+        معاليم مخصّصة له؛ وكان يأذن بدفع مصاريفه آمر الصرف لرئاسة الجمهورية ثم
+        صار ذلك منذ سنة 2011 إلى الوزير المكلف بالتشغيل
+        (المرسوم عدد 16 لسنة 2011). ومنذ الأمر عدد 349 لسنة 2009 صارت كلّ
+        التربصات والعقود المدعومة «برامج» له. وتسمّيه تقارير البنك المركزي
+        «الصندوق الوطني للتشغيل 21-21».
+      synonymes: []
+
+  - id: fonds-formation-apprentissage
+    acronyme: null
+    statut: valide
+    references: [lf-2018]
+    source_definition: {ref: lf-2000, locator: "art. 17-18"}
+    # Paire lue à l'image dans les deux éditions de la LF 2000, art. 17 (JORT n° 105 de
+    # 1999). Le tableau des fonds spéciaux de la LF 2018 (JORT n° 101 de 2017) écrit en
+    # français « fonds de promotion de la formation et de l'apprentissage
+    # professionnel », en regard du même terme arabe.
+    source_traduction: {ref: lf-2000, locator: "art. 17"}
+    voir_aussi: [tfp, fonds-special-tresor, fonds-national-emploi, contrat-emploi-formation, sivp]
+    fr:
+      terme: Fonds de promotion de la formation professionnelle et de l'apprentissage
+      definition: >
+        Compte spécial du Trésor créé par la loi de finances pour 2000, dont
+        l'ordonnateur est le ministre chargé de la formation professionnelle et dont
+        la ressource est le produit de la taxe de formation professionnelle net des
+        ristournes. Il finance la formation initiale et continue et l'apprentissage ;
+        de 2000 à 2009, il finance aussi les stages d'initiation à la vie
+        professionnelle et les contrats emploi-formation, passés ensuite au Fonds
+        national de l'emploi. La loi de finances pour 2018 l'intitule « fonds de
+        promotion de la formation et de l'apprentissage professionnel ».
+      synonymes: [Fonds de promotion de la formation et de l'apprentissage professionnel]
+    ar:
+      terme: صندوق النهوض بالتكوين والتدريب المهني
+      definition: >
+        حساب خاص في الخزينة أحدثه قانون المالية لسنة 2000، يأذن بدفع مصاريفه
+        الوزير المكلف بالتكوين المهني، ومورده موارد الأداء على التكوين المهني
+        صافية من العائدات. ويموّل التكوين الأساسي والمستمر والتدريب المهني؛ وموّل كذلك من
+        سنة 2000 إلى سنة 2009 تربصات الإعداد للحياة المهنية وعقود التشغيل
+        والتكوين، قبل أن تُحمل على الصندوق الوطني للتشغيل. ويرد في قانون المالية
+        لسنة 2018 بالتسمية العربية نفسها.
+      synonymes: []
+
+  - id: aneti
+    acronyme: ANETI
+    statut: valide
+    references: [loi93-11]
+    source_definition: {ref: decret2003-564}
+    # Arabe lu au décret n° 2009-349, art. 1er (image) et au décret gouvernemental
+    # n° 2019-542, art. 7 (couche texte) ; l'édition arabe du décret n° 2003-564 n'est
+    # pas lue, et seul l'intitulé de ce décret est connu.
+    source_traduction: {ref: decret2009-349, locator: "art. 1er"}
+    voir_aussi: [fonds-national-emploi, politique-active-emploi, indemnite-de-stage]
+    fr:
+      terme: Agence nationale pour l'emploi et le travail indépendant
+      definition: >
+        Établissement public chargé du placement des demandeurs d'emploi et de la
+        gestion des programmes d'emploi. C'est le nom que prend en 2003 l'Agence
+        tunisienne de l'emploi, créée par la loi n° 93-11 du 17 février 1993. Elle
+        reçoit du Fonds national de l'emploi les crédits des programmes et verse
+        leurs indemnités aux bénéficiaires.
+      synonymes: []
+    ar:
+      terme: الوكالة الوطنية للتشغيل والعمل المستقل
+      definition: >
+        مؤسسة عمومية مكلفة بتوظيف طالبي الشغل وبالتصرف في برامج التشغيل. وهي
+        التسمية التي اتخذتها سنة 2003 الوكالة التونسية للتشغيل المحدثة بالقانون
+        عدد 11 لسنة 1993 المؤرخ في 17 فيفري 1993. وتُحوَّل إليها من الصندوق الوطني
+        للتشغيل اعتمادات البرامج، وتسند منحها إلى المنتفعين.
+      synonymes: []
+
+  - id: politique-active-emploi
+    acronyme: null
+    statut: provisoire
+    references: [decret2012-2369, oneq-suivi-pae-2012]
+    # `source_definition` vide : notion d'analyse, qu'aucun texte ne définit. Français :
+    # « politique active de l'emploi », décret n° 2012-2369, art. 24 (comité d'évaluation
+    # des interventions du fonds). Arabe : même clause, décret gouvernemental n° 2019-542,
+    # art. 53 (couche texte) — deux textes différents, la paire n'est pas lue en regard,
+    # d'où le statut. « Programmes actifs d'emploi » est le terme de l'ONEQ ; son
+    # équivalent arabe n'est pas relevé.
+    source_traduction: {ref: decret2019-542, locator: "art. 53"}
+    voir_aussi: [fonds-national-emploi, aneti, ouvriers-de-chantiers]
+    fr:
+      terme: Politique active de l'emploi
+      definition: >
+        Ensemble des programmes par lesquels l'État finance l'insertion des
+        demandeurs d'emploi : stages et contrats dont il verse l'indemnité, prise en
+        charge de cotisations ou d'une part du salaire, appui à la création
+        d'entreprise, chantiers. Le terme est celui des rapports de suivi et des
+        études ; les textes ne l'emploient qu'à propos de l'évaluation des
+        interventions du Fonds national de l'emploi.
+      synonymes: [politiques actives de l'emploi, programmes actifs d'emploi]
+    ar:
+      terme: السياسة النشيطة للتشغيل
+      definition: >
+        مجموع البرامج التي تموّل بها الدولة إدماج طالبي الشغل: تربصات وعقود تسند
+        الدولة منحتها، وتكفل بالمساهمات الاجتماعية أو بجزء من الأجر، ودعم لبعث
+        المؤسسات، وحضائر. والمصطلح مستعمل في تقارير المتابعة والدراسات؛ ولا يرد في
+        النصوص إلا في باب تقييم تدخلات الصندوق الوطني للتشغيل.
+      synonymes: []
+
+  - id: sivp
+    acronyme: SIVP
+    statut: valide
+    references: [decret88-715, decret93-1049, decret2009-349]
+    source_definition: {ref: decret87-1190, locator: "art. 1"}
+    # Arabe au singulier : décret n° 2009-349, art. 1er (image). Le décret gouvernemental
+    # n° 2019-542 (art. 61) ne l'écrit qu'au pluriel, « تربصات الإعداد للحياة المهنية ».
+    # L'édition arabe du décret n° 87-1190 n'est pas lue.
+    source_traduction: {ref: decret2009-349, locator: "art. 1er"}
+    voir_aussi: [civp, cides, indemnite-de-stage, fonds-formation-apprentissage, fonds-national-emploi]
+    fr:
+      terme: Stage d'initiation à la vie professionnelle
+      definition: >
+        Stage en entreprise ou dans le secteur public pendant lequel l'État verse au
+        stagiaire une indemnité mensuelle. Institué pour les diplômés du supérieur
+        par le décret n° 87-1190 du 26 août 1987, il est étendu en 1988 aux diplômés
+        du second cycle secondaire, puis réservé de nouveau aux diplômés du supérieur
+        par le décret n° 2009-349, qui en fait un programme du Fonds national de
+        l'emploi. Le décret gouvernemental n° 2019-542 le remplace par le contrat
+        d'initiation à la vie professionnelle.
+      synonymes: []
+    ar:
+      terme: تربص الإعداد للحياة المهنية
+      definition: >
+        تربص بمؤسسة أو بالقطاع العمومي تسند الدولة خلاله منحة شهرية للمتربص. أُحدث
+        لفائدة حاملي شهادات التعليم العالي بالأمر عدد 1190 لسنة 1987 المؤرخ في
+        26 أوت 1987، ثم شمل سنة 1988 حاملي شهادات المرحلة الثانية من التعليم
+        الثانوي، وعاد الأمر عدد 349 لسنة 2009 فخصّ به حاملي شهادات التعليم العالي
+        وجعله من برامج الصندوق الوطني للتشغيل. وعوّضه الأمر الحكومي عدد 542 لسنة
+        2019 بعقد الإعداد للحياة المهنية.
+      synonymes: []
+
+  - id: civp
+    acronyme: CIVP
+    statut: valide
+    references: [decret2023-461]
+    source_definition: {ref: decret2019-542, locator: "art. 5-11"}
+    # Le décret gouvernemental n° 2019-542 n'a pas d'édition française en ligne. Le seul
+    # français lu au JORT est celui du décret n° 2023-461, qui écrit « contrat
+    # d'insertion à la vie professionnelle » en regard de « عقد الإعداد للحياة المهنية »,
+    # sans sigle. « Initiation » — qui rend « الإعداد » comme dans le stage de 1987 — est
+    # l'usage et porte le sigle CIVP : il reste en entrée, « insertion » en synonyme.
+    source_traduction: {ref: decret2019-542, locator: "art. 5"}
+    voir_aussi: [sivp, cides, caip, contrat-dignite, indemnite-de-stage]
+    fr:
+      terme: Contrat d'initiation à la vie professionnelle
+      definition: >
+        Programme du Fonds national de l'emploi fixé par le décret gouvernemental
+        n° 2019-542, qui succède au stage d'initiation à la vie professionnelle. Il
+        est ouvert aux demandeurs d'un premier emploi, diplômés du supérieur ou non,
+        pour douze mois renouvelables une fois, avec une indemnité mensuelle de
+        l'État. Le décret n° 2023-461 l'écrit en français « contrat d'insertion à la
+        vie professionnelle » et subordonne l'accueil de nouveaux bénéficiaires à
+        l'insertion de la moitié des précédents.
+      synonymes: [contrat d'insertion à la vie professionnelle]
+    ar:
+      terme: عقد الإعداد للحياة المهنية
+      definition: >
+        برنامج من برامج الصندوق الوطني للتشغيل ضبطه الأمر الحكومي عدد 542 لسنة
+        2019، وهو يخلف تربص الإعداد للحياة المهنية. ويُفتح لطالبي الشغل لأول مرة،
+        من حاملي شهادات التعليم العالي ومن غيرهم، لمدة اثني عشر شهرا قابلة
+        للتجديد مرة واحدة، مع منحة شهرية تسندها الدولة. وقد علّق الأمر عدد 461
+        لسنة 2023 قبول منتفعين جدد على إدماج نصف المنتفعين السابقين.
+      synonymes: []
+
+  - id: cides
+    acronyme: CIDES
+    statut: valide
+    references: [decret2011-1]
+    source_definition: {ref: decret2009-349, locator: "art. 11-19"}
+    source_traduction: {ref: decret2009-349, locator: "art. 1er"}
+    voir_aussi: [sivp, caip, prise-en-charge-contribution-patronale, civp]
+    fr:
+      terme: Contrat d'insertion des diplômés de l'enseignement supérieur
+      definition: >
+        Programme du Fonds national de l'emploi créé par le décret n° 2009-349 pour
+        les diplômés du supérieur au chômage depuis plus de trois ans — depuis deux
+        ans par une seconde voie ouverte en 2011. Le stage dure un an, avec une
+        indemnité mensuelle de l'État ; l'entreprise qui recrute le stagiaire
+        bénéficie de la prise en charge de la contribution patronale. Maintenu à
+        titre transitoire en 2012, il est remplacé en 2019 par le contrat
+        d'initiation à la vie professionnelle.
+      synonymes: []
+    ar:
+      terme: عقد إدماج حاملي شهادات التعليم العالي
+      definition: >
+        برنامج من برامج الصندوق الوطني للتشغيل أحدثه الأمر عدد 349 لسنة 2009
+        لفائدة حاملي شهادات التعليم العالي الذين تجاوزت فترة بطالتهم ثلاث سنوات،
+        وسنتين بصيغة ثانية فُتحت سنة 2011. ويدوم التربص سنة، مع منحة شهرية تسندها
+        الدولة؛ وتنتفع المؤسسة التي تنتدب المتربص بتكفل الصندوق بمساهمة الأعراف.
+        وأُبقي عليه بصفة انتقالية سنة 2012، ثم عوّضه سنة 2019 عقد الإعداد للحياة
+        المهنية.
+      synonymes: []
+
+  - id: caip
+    acronyme: CAIP
+    statut: valide
+    references: [decret2011-621]
+    source_definition: {ref: decret2009-349, locator: "art. 20-24"}
+    source_traduction: {ref: decret2009-349, locator: "art. 1er"}
+    voir_aussi: [sivp, cides, crva, civp]
+    fr:
+      terme: Contrat d'adaptation et d'insertion professionnelle
+      definition: >
+        Programme du Fonds national de l'emploi créé par le décret n° 2009-349 pour
+        les demandeurs d'emploi qui ne sont pas diplômés du supérieur, sur une offre
+        d'emploi restée non satisfaite. Il dure un an, comprend une formation de
+        400 heures au plus et donne lieu à une indemnité mensuelle de l'État.
+        Maintenu à titre transitoire en 2012, il est remplacé en 2019 par le contrat
+        d'initiation à la vie professionnelle.
+      synonymes: []
+    ar:
+      terme: عقد التأهيل والإدماج المهني
+      definition: >
+        برنامج من برامج الصندوق الوطني للتشغيل أحدثه الأمر عدد 349 لسنة 2009
+        لفائدة طالبي الشغل من غير حاملي شهادات التعليم العالي، بناء على عرض شغل
+        لم تقع تلبيته. ويدوم سنة، ويتضمن تكوينا لا يتجاوز 400 ساعة، مع منحة شهرية
+        تسندها الدولة. وأُبقي عليه بصفة انتقالية سنة 2012، ثم عوّضه سنة 2019 عقد
+        الإعداد للحياة المهنية.
+      synonymes: []
+
+  - id: crva
+    acronyme: CRVA
+    statut: valide
+    references: []
+    source_definition: {ref: decret2009-349, locator: "art. 25-28"}
+    # Arabe lu à l'image : intitulé de la section 4 et art. 25, p. 581 de l'édition arabe.
+    source_traduction: {ref: decret2009-349, locator: "art. 25"}
+    voir_aussi: [caip, indemnite-perte-emploi]
+    fr:
+      terme: Contrat de réinsertion dans la vie active
+      definition: >
+        Programme du Fonds national de l'emploi créé par le décret n° 2009-349 pour
+        les travailleurs qui ont perdu leur emploi pour des raisons économiques ou
+        techniques, permanents ou comptant trois ans d'ancienneté. Il dure un an,
+        comprend une adaptation de 200 heures au plus à un poste identifié dans une
+        entreprise privée et donne lieu à une indemnité mensuelle de l'État.
+      synonymes: []
+    ar:
+      terme: عقد إعادة الإدماج في الحياة النشيطة
+      definition: >
+        برنامج من برامج الصندوق الوطني للتشغيل أحدثه الأمر عدد 349 لسنة 2009
+        لفائدة العمال الذين فقدوا شغلهم لأسباب اقتصادية أو فنية، من القارّين أو
+        ممن لهم أقدمية ثلاث سنوات. ويدوم سنة، ويتضمن تأهيلا لا يتجاوز 200 ساعة
+        لموطن عمل مشخّص مسبقا بمؤسسة خاصة، مع منحة شهرية تسندها الدولة.
+      synonymes: []
+
+  - id: contrat-emploi-solidarite
+    acronyme: null
+    statut: valide
+    references: [decret2011-98]
+    source_definition: {ref: decret2009-349, locator: "art. 36-40"}
+    source_traduction: {ref: decret2009-349, locator: "art. 1er"}
+    voir_aussi: [fonds-national-emploi, contrat-service-civil]
+    fr:
+      terme: Contrat emploi-solidarité
+      definition: >
+        Programme du Fonds national de l'emploi créé par le décret n° 2009-349, ouvert
+        à tous les demandeurs d'emploi dans le cadre d'initiatives régionales ou
+        locales. L'État verse au bénéficiaire une indemnité mensuelle, plus élevée
+        pour les diplômés du supérieur, dont le contrat peut durer trois ans — quatre
+        depuis 2011 — contre un an pour les autres.
+      synonymes: []
+    ar:
+      terme: عقد التشغيل والتضامن
+      definition: >
+        برنامج من برامج الصندوق الوطني للتشغيل أحدثه الأمر عدد 349 لسنة 2009،
+        مفتوح لكل طالبي الشغل في إطار مبادرات جهوية أو محلية. وتسند الدولة
+        للمنتفع منحة شهرية أرفع لحاملي شهادات التعليم العالي، الذين يمكن أن يدوم
+        عقدهم ثلاث سنوات، وأربعا منذ سنة 2011، مقابل سنة لغيرهم.
+      synonymes: []
+
+  - id: contrat-service-civil
+    acronyme: null
+    statut: valide
+    references: [decret2011-621, decret2019-542, oneq-oit-2023-karama-csc]
+    source_definition: {ref: decret2010-87, locator: "art. 40 bis"}
+    # Entrée au nom du texte fondateur : « programme du service civil volontaire » /
+    # « برنامج الخدمة المدنية التطوعية », décret n° 2010-87, section 7 et art. 40 bis
+    # (arabe relu à l'image, JORT n° 7 de 2010). Le décret gouvernemental n° 2019-542
+    # (art. 2 et 17), sans édition française en ligne, écrit « عقد الخدمة المدنية »,
+    # que l'usage rend par « contrat de service civil » (CSC).
+    source_traduction: {ref: decret2010-87, locator: "art. 40 bis"}
+    voir_aussi: [contrat-emploi-solidarite, contrat-dignite, indemnite-de-stage]
+    fr:
+      terme: Programme du service civil volontaire
+      definition: >
+        Programme du Fonds national de l'emploi créé par le décret n° 2010-87 : un
+        stage à mi-temps de douze mois dans une association ou une organisation
+        professionnelle, pour les diplômés du supérieur à la recherche d'un premier
+        emploi, avec une indemnité mensuelle de l'État. Le décret gouvernemental
+        n° 2019-542 le reprend sous le nom de contrat de service civil.
+      synonymes: [service civil volontaire, contrat de service civil, CSC]
+    ar:
+      terme: برنامج الخدمة المدنية التطوعية
+      definition: >
+        برنامج من برامج الصندوق الوطني للتشغيل أحدثه الأمر عدد 87 لسنة 2010: تربص
+        لنصف الوقت مدته اثنا عشر شهرا لدى جمعية أو منظمة مهنية، لفائدة حاملي
+        شهادات التعليم العالي طالبي الشغل لأول مرة، مع منحة شهرية تسندها الدولة.
+        وأعاده الأمر الحكومي عدد 542 لسنة 2019 بتسمية عقد الخدمة المدنية.
+      synonymes: [عقد الخدمة المدنية]
+
+  - id: contrat-dignite
+    acronyme: null
+    statut: valide
+    references: [decret2019-542, decret2023-461]
+    # Paire lue en regard au décret gouvernemental n° 2017-358, art. 26 quater (couche
+    # texte des deux éditions, JORT n° 21 de 2017). Le décret n° 2023-461 remplace
+    # l'expression par « Programme d'appui au recrutement pour les titulaires des
+    # diplômes supérieurs » / « برنامج دعم انتداب حاملي الشهادات العليا » (les deux
+    # éditions lues).
+    source_definition: {ref: decret2017-358, locator: "art. 26 quater"}
+    source_traduction: {ref: decret2017-358, locator: "art. 26 quater"}
+    voir_aussi: [civp, prise-en-charge-contribution-patronale]
+    fr:
+      terme: Contrat-dignité
+      definition: >
+        Programme du Fonds national de l'emploi créé par le décret gouvernemental
+        n° 2017-358 pour les diplômés du supérieur à la recherche d'un premier emploi
+        et au chômage depuis deux ans au moins. Pendant deux ans, le Fonds prend en
+        charge une part du salaire versé par l'entreprise qui les recrute, ainsi que
+        des cotisations de sécurité sociale. Le décret gouvernemental n° 2019-542 en
+        garde le nom ; le décret n° 2023-461 lui substitue « programme d'appui au
+        recrutement pour les titulaires des diplômes supérieurs ».
+      synonymes: [contrat dignité, Karama, programme d'appui au recrutement pour les titulaires des diplômes supérieurs]
+    ar:
+      terme: عقد الكرامة
+      definition: >
+        برنامج من برامج الصندوق الوطني للتشغيل أحدثه الأمر الحكومي عدد 358 لسنة
+        2017 لفائدة حاملي شهادات التعليم العالي طالبي الشغل لأول مرة الذين بلغت
+        فترة بطالتهم سنتين على الأقل. ويتكفل الصندوق طيلة سنتين بجزء من الأجر الذي
+        تدفعه المؤسسة المنتدِبة وبمساهمات في الضمان الاجتماعي. وأبقى الأمر الحكومي
+        عدد 542 لسنة 2019 على التسمية؛ وعوّضها الأمر عدد 461 لسنة 2023 بعبارة
+        «برنامج دعم انتداب حاملي الشهادات العليا».
+      synonymes: [برنامج دعم انتداب حاملي الشهادات العليا]
+
+  - id: programme-forsati
+    acronyme: null
+    statut: valide
+    references: [decret2019-542]
+    source_definition: {ref: decret2016-904, locator: "art. 23 bis-23 octies"}
+    # Arabe lu au décret gouvernemental n° 2019-542 (couche texte) ; l'édition arabe du
+    # décret de 2016 n'est pas lue.
+    source_traduction: {ref: decret2019-542, locator: "art. 25"}
+    voir_aussi: [programme-amal, indemnite-de-stage]
+    fr:
+      terme: Programme « FORSATI »
+      definition: >
+        Programme du Fonds national de l'emploi créé par le décret gouvernemental
+        n° 2016-904 : un accompagnement individuel du demandeur d'emploi vers un
+        projet professionnel, de douze mois prorogeables de six, assorti d'une
+        indemnité mensuelle. Le décret gouvernemental n° 2019-542 le reprend.
+      synonymes: [Forsati]
+    ar:
+      terme: برنامج "فرصتي"
+      definition: >
+        برنامج من برامج الصندوق الوطني للتشغيل أحدثه الأمر الحكومي عدد 904 لسنة
+        2016: مرافقة فردية لطالب الشغل نحو مشروع مهني، مدتها اثنا عشر شهرا قابلة
+        للتمديد بستة أشهر، مع منحة شهرية. وأعاده الأمر الحكومي عدد 542 لسنة 2019.
+      synonymes: []
+
+  - id: programme-appui-promoteurs
+    acronyme: PAPPE
+    statut: valide
+    references: [decret2011-621, decret2012-2369, decret2019-542, decret2023-461]
+    source_definition: {ref: decret2009-349, locator: "art. 1er et 34"}
+    # Entrée au nom du texte fondateur, lu en regard à l'art. 1er du décret n° 2009-349
+    # (arabe à l'image). À partir du décret n° 2012-2369, « programme d'appui aux
+    # promoteurs des petites entreprises » ; paire « appui » / « دعم » lue en regard au
+    # décret n° 2023-461 (les deux éditions), qui en étend l'intitulé.
+    source_traduction: {ref: decret2009-349, locator: "art. 1er"}
+    voir_aussi: [fonds-national-emploi, aneti]
+    fr:
+      terme: Programme d'accompagnement des promoteurs des petites entreprises
+      definition: >
+        Programme du Fonds national de l'emploi créé par le décret n° 2009-349 pour
+        ceux qui créent une petite entreprise : sessions de formation, assistance
+        technique et, pendant la première phase d'implantation du projet, une
+        indemnité mensuelle. Il devient en 2012 le « programme d'appui aux promoteurs
+        des petites entreprises », nom que garde le décret gouvernemental
+        n° 2019-542 ; le décret n° 2023-461 l'étend aux entreprises de l'économie
+        sociale et solidaire et aux sociétés communautaires.
+      synonymes: [programme d'appui aux promoteurs des petites entreprises]
+    ar:
+      terme: برنامج مرافقة باعثي المؤسسات الصغرى
+      definition: >
+        برنامج من برامج الصندوق الوطني للتشغيل أحدثه الأمر عدد 349 لسنة 2009
+        لفائدة باعثي المؤسسات الصغرى: دورات تأهيل، ومساعدة فنية، ومنحة شهرية خلال
+        المرحلة الأولى لتركيز المشروع. وصار سنة 2012 «برنامج دعم باعثي المؤسسات
+        الصغرى»، وهي التسمية التي أبقى عليها الأمر الحكومي عدد 542 لسنة 2019؛ ووسّعه
+        الأمر عدد 461 لسنة 2023 ليشمل مؤسسات الاقتصاد الاجتماعي والتضامني
+        والشركات الأهلية.
+      synonymes: [برنامج دعم باعثي المؤسسات الصغرى]
+
+  - id: programme-amal
+    acronyme: null
+    statut: valide
+    references: [decret2012-953]
+    source_definition: {ref: decret2011-621, locator: "art. 40 sexies-40 octies"}
+    # Arabe lu à l'image (édition arabe du JORT n° 38 de 2011, art. 40 sexies et
+    # 40 octies). « AMAL » est le nom d'usage : il ne figure dans aucune des deux
+    # éditions du décret, et sa graphie arabe n'est pas relevée.
+    source_traduction: {ref: decret2011-621, locator: "art. 40 octies"}
+    voir_aussi: [programme-forsati, indemnite-de-stage]
+    fr:
+      terme: Programme de recherche active d'emploi
+      definition: >
+        Programme institué par le décret n° 2011-621 du 23 mai 2011 et connu sous le
+        nom d'usage « AMAL » : une indemnité mensuelle servie pendant un an au plus
+        aux demandeurs d'emploi, plus élevée pour les diplômés du supérieur. Il est abrogé à compter du 1^er^ janvier 2012 et
+        remplacé par un programme d'encouragement à l'emploi (décret n° 2012-953).
+      synonymes: [AMAL, programme AMAL]
+    ar:
+      terme: برنامج البحث النشيط عن شغل
+      definition: >
+        برنامج أحدثه الأمر عدد 621 لسنة 2011 المؤرخ في 23 ماي 2011: منحة شهرية
+        تُسند لمدة أقصاها سنة لطالبي الشغل، وهي أرفع لحاملي شهادات التعليم
+        العالي. وأُلغي ابتداء من غرة جانفي 2012 وعوّضه برنامج
+        آخر بمقتضى الأمر عدد 953 لسنة 2012.
+      synonymes: []
+
+  - id: contrat-emploi-formation
+    acronyme: null
+    statut: valide
+    references: [loi81-75, decret81-1220, loi93-17]
+    source_definition: {ref: decret93-1049, locator: "art. 18-21"}
+    # Arabe lu à l'image (édition arabe du JORT n° 36 de 1993, scan océrisé) : intitulé
+    # du chapitre II et art. 23. La LF 2000 (art. 17, OCR) écrit dans l'ordre inverse
+    # « عقود التكوين والتشغيل ». Les éditions arabes de la loi n° 81-75 et du décret
+    # n° 81-1220 ne sont pas lues.
+    source_traduction: {ref: decret93-1049, locator: "art. 23"}
+    voir_aussi: [sivp, tfp, fonds-formation-apprentissage, salaire-minimum-garanti]
+    fr:
+      terme: Contrat emploi-formation
+      definition: >
+        Contrat de stage d'adaptation professionnelle issu de la loi n° 81-75 du
+        9 août 1981 sur la promotion de l'emploi des jeunes : l'entreprise accueille
+        un jeune pendant un an et reçoit de l'État une subvention, avec une
+        exonération de la part patronale des cotisations sociales. Le décret
+        n° 93-1049 le reprend, l'employeur versant au stagiaire une bourse égale
+        aux deux tiers du salaire minimum garanti en vigueur dans son secteur
+        d'activité. Il disparaît avec le décret n° 2009-349.
+      synonymes: []
+    ar:
+      terme: عقد التشغيل والتكوين
+      definition: >
+        عقد تربص للتأهيل المهني منبثق عن القانون عدد 75 لسنة 1981 المؤرخ في 9 أوت
+        1981: تقبل المؤسسة شابا لمدة سنة وتنتفع بمنحة
+        من الدولة وبإعفاء من مساهمة الأعراف في الضمان الاجتماعي. وأعاده الأمر عدد
+        1049 لسنة 1993، ويسند المشغّل فيه للمتربص منحة تساوي ثلثي الأجر الأدنى
+        المضمون المعمول به في قطاع النشاط الذي ينتمي إليه. وزال بصدور الأمر عدد 349 لسنة 2009.
+      synonymes: []
+
+  - id: ouvriers-de-chantiers
+    acronyme: null
+    statut: provisoire
+    references: []
+    # `source_definition` vide : le texte qui institue le mécanisme n'est pas identifié
+    # (fiche r-chantiers-regionaux-texte-fondateur). Paire lue à l'intitulé du décret
+    # gouvernemental n° 2021-436 : « ouvriers des chantiers régionaux et des chantiers
+    # agricoles » / « عملة الحضائر الجهوية والحضائر الفلاحية » ; l'entrée resserre les
+    # deux formules, d'où le statut.
+    source_traduction: {ref: decret2021-436}
+    voir_aussi: [politique-active-emploi, fonds-national-emploi]
+    fr:
+      terme: Ouvriers de chantiers
+      definition: >
+        Travailleurs employés sur les chantiers régionaux et les chantiers agricoles
+        que l'État finance au titre du soutien à l'emploi. Le décret gouvernemental
+        n° 2021-436 du 17 juin 2021 met fin à ce mécanisme : ceux qui étaient en
+        exercice continu au 20 octobre 2020 sont, selon leur âge, intégrés dans la
+        fonction publique, maintenus en activité jusqu'à 60 ans ou sortis du
+        mécanisme avec une allocation.
+      synonymes: [ouvriers des chantiers régionaux et des chantiers agricoles]
+    ar:
+      terme: عملة الحضائر
+      definition: >
+        عملة مشغَّلون بالحضائر الجهوية والحضائر الفلاحية التي تموّلها الدولة بعنوان
+        دعم التشغيل. وقد أنهى الأمر الحكومي عدد 436 لسنة 2021 المؤرخ في 17 جوان
+        2021 العمل بهذه الآلية: فالمباشرون منهم بصفة مستمرة في 20 أكتوبر 2020
+        يُدمجون، بحسب سنّهم، في الوظيفة العمومية، أو يواصلون نشاطهم إلى سن الستين،
+        أو يغادرون الآلية مع منحة.
+      synonymes: [عملة الحضائر الجهوية والحضائر الفلاحية]
+
+  - id: indemnite-de-stage
+    acronyme: null
+    statut: valide
+    references: [arrete-2009-03-19-indemnites-fne, decret2019-542]
+    source_definition: {ref: decret2009-349, locator: "art. 8 et 45"}
+    # Paire lue en regard à l'art. 45 du décret n° 2009-349 (dispositions transitoires ;
+    # arabe relu à l'image, p. 582 de l'édition arabe) ; « منحة التربص » aussi au décret
+    # gouvernemental n° 2019-542, art. 61. Les articles de fond écrivent « indemnité
+    # mensuelle » / « منحة شهرية » (art. 8).
+    source_traduction: {ref: decret2009-349, locator: "art. 45"}
+    voir_aussi: [sivp, civp, aneti, prise-en-charge-contribution-patronale]
+    fr:
+      terme: Indemnité de stage
+      definition: >
+        Somme que l'État verse chaque mois, par l'intermédiaire de l'agence chargée
+        de l'emploi, au bénéficiaire d'un stage ou d'un contrat d'insertion, pendant
+        toute sa durée. Elle se distingue de l'indemnité complémentaire que
+        l'entreprise d'accueil doit verser de son côté. Son montant, fixé par
+        programme, est modifié par les décrets successifs.
+      synonymes: [indemnité mensuelle]
+    ar:
+      terme: منحة التربص
+      definition: >
+        مبلغ تسنده الدولة شهريا، عن طريق الوكالة المكلفة بالتشغيل، للمنتفع بتربص
+        أو بعقد إدماج طيلة مدته. وهي غير المنحة التكميلية التي تلتزم المؤسسة
+        المحتضنة بإسنادها من جهتها. ويُضبط مقدارها لكل برنامج، وتنقّحه الأوامر
+        المتعاقبة.
+      synonymes: [منحة شهرية]
+
+  - id: prise-en-charge-contribution-patronale
+    acronyme: null
+    statut: valide
+    references: [lf-2005, decret2017-358, decret2019-542]
+    source_definition: {ref: decret2009-349, locator: "art. 15"}
+    # Paire lue en regard à l'art. 15 du décret n° 2009-349 (arabe relu à l'image,
+    # p. 579 de l'édition arabe) ; l'entrée reprend la formule entière des deux éditions.
+    # Même formule arabe, avec « الصندوق » seul, aux art. 9, 13 et 22 du décret
+    # gouvernemental n° 2019-542.
+    source_traduction: {ref: decret2009-349, locator: "art. 15"}
+    voir_aussi: [cotisations-sociales, fonds-national-emploi, cides, civp, contrat-dignite]
+    fr:
+      terme: Prise en charge par le Fonds national de l'emploi de la contribution patronale au régime légal de sécurité sociale
+      definition: >
+        Avantage accordé à l'entreprise qui recrute : le Fonds national de l'emploi
+        paie à sa place, pendant une durée limitée, la part patronale des cotisations
+        de sécurité sociale sur le salaire du nouveau recruté. Pour les diplômés du
+        supérieur recrutés de 2005 à 2009, la loi de finances pour 2005 l'avait mise
+        à la charge de l'État pendant sept ans, à taux dégressif ; le décret
+        n° 2009-349 reprend ce barème pour les recrutements issus d'un contrat
+        d'insertion des diplômés, et les programmes de 2017 et de 2019 la limitent à
+        deux ans.
+      synonymes: [prise en charge de la contribution patronale, prise en charge des cotisations patronales]
+    ar:
+      terme: تكفل الصندوق الوطني للتشغيل بمساهمة الأعراف في النظام القانوني للضمان الاجتماعي
+      definition: >
+        امتياز يُمنح للمؤسسة المنتدِبة: يدفع الصندوق الوطني للتشغيل عوضا عنها، لمدة
+        محدودة، مساهمة الأعراف في الضمان الاجتماعي بعنوان أجر المنتدَب الجديد. وكان
+        قانون المالية لسنة 2005 قد حمّلها على الدولة لمدة سبع سنوات وبنسب تنازلية
+        بالنسبة إلى حاملي شهادات التعليم العالي المنتدبين من سنة 2005 إلى سنة
+        2009؛ وأخذ الأمر عدد 349 لسنة 2009 بالجدول نفسه للانتدابات الناتجة عن عقد
+        إدماج حاملي شهادات التعليم العالي، وحصرتها برامج سنتي 2017 و2019 في
+        سنتين.
+      synonymes: []
+
   # --- Compensation (volume « Prestations sociales », chapitre « La compensation ») ---
   # Passes 1 et 2 du 6 octobre 2026. Les entrées qui portent une `source_traduction`
   # ont un terme arabe lu sur l'édition arabe du texte cité ; les autres non, et

@@ -1,0 +1,29 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-06
+# séries (tunisia_data) : bct-programmes-emploi-dotations
+# sources (citation) : @bct-ra, @bct-ra-1991, @bct-ra-1992, @bct-ra-1993, @bct-ra-1994, @bct-ra-1995, @bct-ra-1996, @bct-ra-1997, @bct-ra-1998, @bct-ra-1999, @bct-ra-2000, @bct-ra-2001, @bct-ra-2002, @bct-ra-2003, @bct-ra-2004, @bct-ra-2005, @bct-ra-2006, @bct-ra-2007, @bct-ra-2008
+# fiches : sources/bct-archives.md
+# méthode/hypothèses : Série reconstituée : chaque édition du Rapport annuel n'imprime que deux à cinq années ; la série réunit 21 éditions, et la dernière édition qui imprime une année fait foi, ligne par ligne. La Banque centrale relaie des chiffres qu'elle ne produit pas : elle cite la direction générale des ressources humaines du ministère du Plan (1988-1991), le ministère du Plan et du Développement régional (1992-1993), le ministère du Développement économique (1994-1995), ce ministère et le Commissariat général au développement régional (1996-2001), puis les ministères du Développement et de la coopération internationale et de l'Emploi (2002-2008). Dotations, non dépenses constatées : le tableau ne qualifie pas la grandeur ; le texte des rapports parle de « dotation budgétaire », d'« enveloppe » ou de « montant alloué ». Le total comprend des programmes de développement régional, rural et urbain et des fonds d'aide à l'artisanat : il n'est pas la somme des programmes tracés. Trois présentations du tableau se succèdent (éditions 1988-1990, 1991-1994, 1995-2008), dont les totaux ne couvrent pas le même périmètre (1987 : 83,8 dans la première, 50,8 dans la deuxième) ; le total de 1992 et de 1993 vient de l'édition 1994, les lignes de ces deux années des éditions 1995 et 1996. Révisions : chantiers nationaux de 1992 imprimés 23,9, puis 35,1, puis 37,6 ; chantiers régionaux de 2003, 29,6 (édition 2003) puis 92,0 (éditions 2004 à 2006), sans explication de la source ; Fonds 21-21 de 2000, 60,0 puis 58,4.
+# note : Dotations des programmes de soutien à l'emploi d'après les rapports annuels de la Banque centrale, qui relaie les ministères chargés du Plan puis du Développement, en millions de dinars courants, 1987-2008
+année,Chantiers nationaux,Chantiers régionaux,Fonds national de l'emploi 21-21,SIVP 1 (diplômés du supérieur),SIVP 2 (secondaire),FIAP,Contrats emploi-formation,Total du tableau,édition retenue (lignes),édition retenue (total)
+1987,10.4,17.5,,,,,0.3,50.8,1991,1991
+1988,11.9,35.3,,1.8,,,0.4,73.3,1992,1992
+1989,11.6,35.2,,2.7,0.6,,0.7,73.3,1993,1993
+1990,21.4,38.0,,2.9,0.7,0.5,1.4,97.5,1994,1994
+1991,16.7,41.1,,2.6,0.7,1.2,1.1,86.7,1994,1994
+1992,37.6,33.2,,2.8,1.0,6.5,1.0,91.8,1995,1994
+1993,40.0,23.7,,2.8,1.0,6.9,1.0,80.5,1996,1994
+1994,43.8,25.8,,3.3,1.3,2.8,1.2,94.5,1997,1997
+1995,44.5,31.5,,4.7,2.4,4.6,0.9,115.2,1998,1998
+1996,40.0,28.4,,3.8,1.8,3.1,0.9,108.1,1999,1999
+1997,50.5,27.9,,2.7,0.8,1.4,0.3,121.8,2000,2000
+1998,60.0,29.4,0.0,4.5,1.2,2.4,0.7,148.4,2001,2001
+1999,55.0,34.4,0.0,6.5,1.5,8.4,0.4,151.5,2002,2002
+2000,59.0,46.9,58.4,9.7,1.6,8.9,0.5,238.8,2003,2003
+2001,60.5,44.7,80.0,8.6,0.9,4.7,0.4,235.6,2004,2004
+2002,40.7,30.5,80.0,7.1,0.8,6.3,0.2,194.8,2005,2005
+2003,52.0,92.0,80.0,9.7,1.5,5.2,0.5,256.3,2006,2006
+2004,66.2,39.4,80.0,12.8,2.5,7.2,0.8,230.9,2007,2007
+2005,59.5,23.3,80.0,18.0,3.0,6.0,1.1,207.2,2008,2008
+2006,55.2,26.1,85.0,25.5,4.0,6.8,0.9,213.1,2008,2008
+2007,62.5,40.1,90.0,33.3,4.3,7.9,0.8,267.9,2008,2008
+2008,73.8,46.6,100.0,38.2,3.9,7.6,0.9,285.9,2008,2008
