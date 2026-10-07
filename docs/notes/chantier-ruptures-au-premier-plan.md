@@ -188,3 +188,12 @@ conversion.
 - La frise de tête ; le PDF (filtre qui change un lien `#r-…` en note de bas de page) ; l'arabe
   (attributs `titre` des blocs, libellés, chapitres en retard de structure).
 - L'ordre des volumes : commencer par les chapitres dont les registres existent déjà.
+
+## Verdict du prototype (7 octobre 2026, 17 h 30)
+
+Le propriétaire a lu le chapitre de la TVA converti puis corrigé : « ce que j'ai lu […] me
+convient, beau travail. Retenir ces principes pour la suite. » Le prototype est accepté ; les
+principes de cette note, de `docs/agents/architecte.md` et de `docs/agents/redacteur.md` valent
+désormais pour tout chapitre. Reste, avant la conversion des autres volumes : fusionner ce
+chantier, brancher le contrôle des références dans `verifier.sh`, inclure les infobulles du
+glossaire dans les dix-huit `_quarto.yml`, et choisir l'ordre des volumes.
