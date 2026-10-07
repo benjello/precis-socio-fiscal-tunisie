@@ -1539,7 +1539,7 @@ un exemple de régime de taux logé dans une loi particulière, que les tableaux
 11. **Retouches de 2008 à 2015 relevées « par recherche »** : trouvées par recherche plein texte
     dans les PDF locaux des lois de finances, non relues en contexte ; les articles 17 et 21 de la
     LF 2008 ont depuis été lus à l'image (p. 4359-4360), et l'article 37 de la LF 2012 est donné par
-    les deux recueils privés (le « § 7 » reste à lire). Les notes du recueil de 2014 (§ 9.4) couvrent
+    les deux recueils non officiels (le « § 7 » reste à lire). Les notes du recueil de 2014 (§ 9.4) couvrent
     désormais 2003 à 2013 : la recherche plein texte n'a plus à être refaite. Les lois de finances
     pour 2003 à 2007, 2009 et 2011 ne livrent aucune mention des tableaux à cette recherche : ce
     silence ne prouve rien (couche texte à police décalée pour 2003 à 2005 ; N2 y signale la LF 2003,
@@ -1735,8 +1735,8 @@ pour mémoire ; c'est la présente section qui est à verser.*
 | Date repère | Source de l'état | Pages | Nature | Grille (normal / intermédiaire / réduit / majoré) |
 |---|---|---|---|---|
 | **1er juillet 1988** | loi n° 88-61, tableaux A, B, C [`loi-88-61-tva`] | 833-846 | JORT lu (image) | 17 % / — / 6 % / 29 % |
-| **Janvier 2008** | « Livre 3. Code de la TVA », recueil privé servi par bm.com.tn, PDF créé le 10 janvier 2008, dernière loi citée : n° 2007-70 [`recueil-tva-bm-2008`] | A : 21-30 ; B : 31-32 ; B bis : 33-34 ; loi n° 2002-103 : 38 | **recueil privé** — « d'après l'édition de 2008 » | 18 % / 12 % / 6 % / — |
-| **Janvier 2014** | Recueil des codes fiscaux, SEFAC, PDF créé le 24 janvier 2014, dernière loi citée : n° 2013-54 [`recueil-codes-sefac-2014`] | A : 160-172 ; B : 174-175 ; B bis : 177-178 | **recueil privé** — « d'après l'édition de 2014 » | 18 % / 12 % / 6 % / — |
+| **Janvier 2008** | « Livre 3. Code de la TVA », recueil non officiel servi par bm.com.tn, PDF créé le 10 janvier 2008, dernière loi citée : n° 2007-70 [`recueil-tva-bm-2008`] | A : 21-30 ; B : 31-32 ; B bis : 33-34 ; loi n° 2002-103 : 38 | **recueil non officiel** — « d'après l'édition de 2008 » | 18 % / 12 % / 6 % / — |
+| **Janvier 2014** | Recueil des codes fiscaux, SEFAC, PDF créé le 24 janvier 2014, dernière loi citée : n° 2013-54 [`recueil-codes-sefac-2014`] | A : 160-172 ; B : 174-175 ; B bis : 177-178 | **recueil non officiel** — « d'après l'édition de 2014 » | 18 % / 12 % / 6 % / — |
 | **1er janvier 2017** | LF 2016, annexes 1 et 1 bis, modifiées par la LF 2017 [`lf-2016`, `lf-2017`] | 3292-3305 ; 3832-3836 | JORT lu (texte) ; non comparé ligne à ligne aux éditions officielles de 2016 et 2017 | 18 % / 12 % / 6 % / — |
 | **1er janvier 2026** | code de la DGELF à jour au 1er janvier 2025 [`dgelf-code-tva-2025`], LF 2026 [`lf-2026`] | A : 49-60 ; B : 62-69 ; art. 7 : 21-22 | édition officielle (arabe) ; lois de 2022, 2024, 2025, 2026 lues | 19 % / 13 % / 7 % / — |
 
@@ -1745,7 +1745,7 @@ existent : (a) elles ne portent aucune date d'édition, seulement l'horodatage d
 mise à jour est inégale d'une page à l'autre — en 2002, la page A3 ne cite aucune loi postérieure à
 1998, la page A2 s'arrête à la loi n° 2000-98, les pages A4 et A5 vont jusqu'à la loi n° 2001-123 ;
 (c) la première capture du tableau B bis est de février 2003, après la loi de finances pour 2003 ;
-(d) c'est un recueil privé sans appareil de notes par article. Un « état de 2002 » assemblé de ces
+(d) c'est un recueil non officiel sans appareil de notes par article. Un « état de 2002 » assemblé de ces
 pages mêlerait des dates. Elles servent ici de contrôle (§ 8.3), pas de colonne.
 
 **Numérotation.** Les colonnes 2008 et 2014 emploient la numérotation de l'ancien tableau A après sa
@@ -1828,65 +1828,65 @@ en 1988.
 ### 9.3 La même information, en format long
 
 Une ligne par catégorie × date × régime. `taux_pct` vide pour l'exonération. `lecture` : `JORT lu`,
-`édition officielle`, `recueil privé`, `déduit`. Douze lignes « déduit » sur 167, toutes signalées. Le bloc est engendré
+`édition officielle`, `recueil non officiel`, `déduit`. Douze lignes « déduit » sur 167, toutes signalées. Le bloc est engendré
 par le même script que le tableau du § 9.2 (aucune ressaisie).
 
 ```csv
 categorie_id,categorie,date_repere,regime,taux_pct,tableau,numeros,source_id,page,lecture
 alim_base,"Produits alimentaires de base (farines, pain, couscous, pâtes, lait, huiles)",1988-07-01,exonéré,,A,1 ; 2 ; 4,loi-88-61-tva,833-836,JORT lu
-alim_base,"Produits alimentaires de base (farines, pain, couscous, pâtes, lait, huiles)",2008-01-01,exonéré,,A,1 ; 1 bis ; 2 ; 4,recueil-tva-bm-2008,21-30,recueil privé
-alim_base,"Produits alimentaires de base (farines, pain, couscous, pâtes, lait, huiles)",2014-01-01,exonéré,,A,1 ; 1 bis ; 2 ; 4,recueil-codes-sefac-2014,160-172,recueil privé
+alim_base,"Produits alimentaires de base (farines, pain, couscous, pâtes, lait, huiles)",2008-01-01,exonéré,,A,1 ; 1 bis ; 2 ; 4,recueil-tva-bm-2008,21-30,recueil non officiel
+alim_base,"Produits alimentaires de base (farines, pain, couscous, pâtes, lait, huiles)",2014-01-01,exonéré,,A,1 ; 1 bis ; 2 ; 4,recueil-codes-sefac-2014,160-172,recueil non officiel
 alim_base,"Produits alimentaires de base (farines, pain, couscous, pâtes, lait, huiles)",2017-01-01,exonéré,,A,I-1 à 5 ; I-41 à 44,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
 alim_base,"Produits alimentaires de base (farines, pain, couscous, pâtes, lait, huiles)",2026-01-01,exonéré,,A,I-1 à 5 ; I-41 à 44,dgelf-code-tva-2025,49-60,édition officielle
 sucre,Sucre,1988-07-01,exonéré,,A,5,loi-88-61-tva,833-836,JORT lu
-sucre,Sucre,2008-01-01,exonéré,,A,5,recueil-tva-bm-2008,21-30,recueil privé
-sucre,Sucre,2014-01-01,exonéré,,A,5,recueil-codes-sefac-2014,160-172,recueil privé
+sucre,Sucre,2008-01-01,exonéré,,A,5,recueil-tva-bm-2008,21-30,recueil non officiel
+sucre,Sucre,2014-01-01,exonéré,,A,5,recueil-codes-sefac-2014,160-172,recueil non officiel
 sucre,Sucre,2017-01-01,taux réduit,6,B,I-9 bis,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
 sucre,Sucre,2026-01-01,taux réduit,7,B,I-9 bis,dgelf-code-tva-2025,62-69,édition officielle
 alim_transformes,"Conserves, fruits et légumes transformés, maïs",1988-07-01,taux réduit,6,B,II-7,loi-88-61-tva,836,JORT lu
-alim_transformes,"Conserves, fruits et légumes transformés, maïs",2008-01-01,taux réduit,6,B,II-7 ; II-11 ; III-11,recueil-tva-bm-2008,31-32,recueil privé
-alim_transformes,"Conserves, fruits et légumes transformés, maïs",2014-01-01,taux réduit,6,B,II-7 ; II-11 ; III-11,recueil-codes-sefac-2014,174-175,recueil privé
+alim_transformes,"Conserves, fruits et légumes transformés, maïs",2008-01-01,taux réduit,6,B,II-7 ; II-11 ; III-11,recueil-tva-bm-2008,31-32,recueil non officiel
+alim_transformes,"Conserves, fruits et légumes transformés, maïs",2014-01-01,taux réduit,6,B,II-7 ; II-11 ; III-11,recueil-codes-sefac-2014,174-175,recueil non officiel
 alim_transformes,"Conserves, fruits et légumes transformés, maïs",2017-01-01,taux réduit,6,B,I-5 ; I-9 ; II-12,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
 alim_transformes,"Conserves, fruits et légumes transformés, maïs",2026-01-01,taux réduit,7,B,I-5 ; I-9 ; I-21 bis ; II-12,dgelf-code-tva-2025,62-69,édition officielle
 alim_tableau_c,"Denrées et boissons de l'ancien tableau C (café, thé, épices, cacao, charcuterie, boissons, tabacs)",1988-07-01,taux majoré,29,C,positions des chapitres 02 à 24,loi-88-61-tva,836-846,JORT lu
 alim_tableau_c,"Denrées et boissons de l'ancien tableau C (café, thé, épices, cacao, charcuterie, boissons, tabacs)",2008-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,loi-2006-80-reduction-taux,4302,déduit
 medicaments,Médicaments et produits pharmaceutiques,1988-07-01,taux réduit,6,B,II-4,loi-88-61-tva,836,JORT lu
-medicaments,Médicaments et produits pharmaceutiques,2008-01-01,taux réduit,6,B,II-4,recueil-tva-bm-2008,31-32,recueil privé
-medicaments,Médicaments et produits pharmaceutiques,2014-01-01,taux réduit,6,B,II-4,recueil-codes-sefac-2014,174-175,recueil privé
+medicaments,Médicaments et produits pharmaceutiques,2008-01-01,taux réduit,6,B,II-4,recueil-tva-bm-2008,31-32,recueil non officiel
+medicaments,Médicaments et produits pharmaceutiques,2014-01-01,taux réduit,6,B,II-4,recueil-codes-sefac-2014,174-175,recueil non officiel
 medicaments,Médicaments et produits pharmaceutiques,2017-01-01,taux réduit,6,B,I-4 ; I-15 à 18,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
 medicaments,Médicaments et produits pharmaceutiques,2026-01-01,taux réduit,7,B,I-4 ; I-15 à 18,dgelf-code-tva-2025,62-69,édition officielle
 sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",1988-07-01,taux réduit,6,B,I (santé) ; III-5,loi-88-61-tva,836,JORT lu
 sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",1988-07-01,exonéré,,A,7,loi-88-61-tva,833-836,JORT lu
-sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2008-01-01,taux réduit,6,B,I ; III-5,recueil-tva-bm-2008,31-32,recueil privé
-sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2008-01-01,exonéré,,A,7 ; 7 bis ; 9 bis,recueil-tva-bm-2008,21-30,recueil privé
-sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2014-01-01,taux réduit,6,B,I ; III-5,recueil-codes-sefac-2014,174-175,recueil privé
-sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2014-01-01,exonéré,,A,7 ; 9 bis,recueil-codes-sefac-2014,160-172,recueil privé
+sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2008-01-01,taux réduit,6,B,I ; III-5,recueil-tva-bm-2008,31-32,recueil non officiel
+sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2008-01-01,exonéré,,A,7 ; 7 bis ; 9 bis,recueil-tva-bm-2008,21-30,recueil non officiel
+sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2014-01-01,taux réduit,6,B,I ; III-5,recueil-codes-sefac-2014,174-175,recueil non officiel
+sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2014-01-01,exonéré,,A,7 ; 9 bis,recueil-codes-sefac-2014,160-172,recueil non officiel
 sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2017-01-01,taux réduit,6,B,II-1 ; II-3,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
 sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2017-01-01,exonéré,,A,I-7 ; II-1,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
 sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2026-01-01,taux réduit,7,B,II-1 ; II-3,dgelf-code-tva-2025,62-69,édition officielle
 sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2026-01-01,exonéré,,A,I-7 ; I-7 bis ; II-1,dgelf-code-tva-2025,49-60,édition officielle
 enseignement,Enseignement et garderies,1988-07-01,exonéré,,A,9,loi-88-61-tva,833-836,JORT lu
-enseignement,Enseignement et garderies,2008-01-01,exonéré,,A,9,recueil-tva-bm-2008,21-30,recueil privé
-enseignement,Enseignement et garderies,2014-01-01,exonéré,,A,9,recueil-codes-sefac-2014,160-172,recueil privé
+enseignement,Enseignement et garderies,2008-01-01,exonéré,,A,9,recueil-tva-bm-2008,21-30,recueil non officiel
+enseignement,Enseignement et garderies,2014-01-01,exonéré,,A,9,recueil-codes-sefac-2014,160-172,recueil non officiel
 enseignement,Enseignement et garderies,2017-01-01,taux réduit,6,B,II-6,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
 enseignement,Enseignement et garderies,2026-01-01,taux réduit,7,B,II-6,dgelf-code-tva-2025,62-69,édition officielle
 livres_presse_culture,"Livres, presse, culture, cinéma",1988-07-01,exonéré,,A,18 ; 19 ; 20 ; 23 ; 24,loi-88-61-tva,833-836,JORT lu
-livres_presse_culture,"Livres, presse, culture, cinéma",2008-01-01,exonéré,,A,19 ; 20 ; 21 ; 23 ; 24,recueil-tva-bm-2008,21-30,recueil privé
-livres_presse_culture,"Livres, presse, culture, cinéma",2008-01-01,taux réduit,6,B,III-9 ; III-12,recueil-tva-bm-2008,31-32,recueil privé
-livres_presse_culture,"Livres, presse, culture, cinéma",2014-01-01,exonéré,,A,19 ; 20 ; 21 ; 23 ; 24,recueil-codes-sefac-2014,160-172,recueil privé
-livres_presse_culture,"Livres, presse, culture, cinéma",2014-01-01,taux réduit,6,B,III-9 ; III-12 ; alinéa final du § III,recueil-codes-sefac-2014,174-175,recueil privé
+livres_presse_culture,"Livres, presse, culture, cinéma",2008-01-01,exonéré,,A,19 ; 20 ; 21 ; 23 ; 24,recueil-tva-bm-2008,21-30,recueil non officiel
+livres_presse_culture,"Livres, presse, culture, cinéma",2008-01-01,taux réduit,6,B,III-9 ; III-12,recueil-tva-bm-2008,31-32,recueil non officiel
+livres_presse_culture,"Livres, presse, culture, cinéma",2014-01-01,exonéré,,A,19 ; 20 ; 21 ; 23 ; 24,recueil-codes-sefac-2014,160-172,recueil non officiel
+livres_presse_culture,"Livres, presse, culture, cinéma",2014-01-01,taux réduit,6,B,III-9 ; III-12 ; alinéa final du § III,recueil-codes-sefac-2014,174-175,recueil non officiel
 livres_presse_culture,"Livres, presse, culture, cinéma",2017-01-01,exonéré,,A,I-18 à 21 ; I-35 ; II-5 ; II-6,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
 livres_presse_culture,"Livres, presse, culture, cinéma",2017-01-01,taux réduit,6,B,I-11 ; I-12 bis ; I-22 ; I-24 ; II-9 ; II-10 ; II-11 ; II-13,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
 livres_presse_culture,"Livres, presse, culture, cinéma",2026-01-01,exonéré,,A,I-18 à 21 ; I-35 ; I-46 ter ; II-5 ; II-6,dgelf-code-tva-2025,49-60,édition officielle
 livres_presse_culture,"Livres, presse, culture, cinéma",2026-01-01,taux réduit,7,B,I-11 ; I-12 bis ; I-22 ; I-24 ; II-9 ; II-10 ; II-11 ; II-13,dgelf-code-tva-2025,62-69,édition officielle
-logement_neuf,Logements neufs vendus par les promoteurs (hors logement social),2008-01-01,exonéré,,A,50,recueil-tva-bm-2008,21-30,recueil privé
-logement_neuf,Logements neufs vendus par les promoteurs (hors logement social),2014-01-01,exonéré,,A,50,recueil-codes-sefac-2014,160-172,recueil privé
+logement_neuf,Logements neufs vendus par les promoteurs (hors logement social),2008-01-01,exonéré,,A,50,recueil-tva-bm-2008,21-30,recueil non officiel
+logement_neuf,Logements neufs vendus par les promoteurs (hors logement social),2014-01-01,exonéré,,A,50,recueil-codes-sefac-2014,160-172,recueil non officiel
 logement_neuf,Logements neufs vendus par les promoteurs (hors logement social),2017-01-01,exonéré,,A,I-53,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
 logement_neuf,Logements neufs vendus par les promoteurs (hors logement social),2026-01-01,taux réduit,7,B,I-31,dgelf-code-tva-2025,62-69,édition officielle
 logement_neuf,Logements neufs vendus par les promoteurs (hors logement social),2026-01-01,taux normal,19,"aucun (art. 7, al. 1er)",—,lf-2025,3449,déduit
 logement_social_location,"Logement social, location d'habitation, intérêts des prêts au logement",1988-07-01,exonéré,,A,31 ; 40 a,loi-88-61-tva,833-836,JORT lu
-logement_social_location,"Logement social, location d'habitation, intérêts des prêts au logement",2008-01-01,exonéré,,A,30 ; 39 a,recueil-tva-bm-2008,21-30,recueil privé
-logement_social_location,"Logement social, location d'habitation, intérêts des prêts au logement",2014-01-01,exonéré,,A,30 ; 39 a,recueil-codes-sefac-2014,160-172,recueil privé
+logement_social_location,"Logement social, location d'habitation, intérêts des prêts au logement",2008-01-01,exonéré,,A,30 ; 39 a,recueil-tva-bm-2008,21-30,recueil non officiel
+logement_social_location,"Logement social, location d'habitation, intérêts des prêts au logement",2014-01-01,exonéré,,A,30 ; 39 a,recueil-codes-sefac-2014,160-172,recueil non officiel
 logement_social_location,"Logement social, location d'habitation, intérêts des prêts au logement",2017-01-01,exonéré,,A,II-12 ; II-15 a,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
 logement_social_location,"Logement social, location d'habitation, intérêts des prêts au logement",2026-01-01,exonéré,,A,I-53 ; II-12 ; II-15 a,dgelf-code-tva-2025,49-60,édition officielle
 electricite_gaz,Électricité (et gaz de réseau en 1988),1988-07-01,taux réduit,6,B,II-2,loi-88-61-tva,836,JORT lu
@@ -1901,84 +1901,84 @@ produits_petroliers,Produits pétroliers et gaz de pétrole,2014-01-01,taux inte
 produits_petroliers,Produits pétroliers et gaz de pétrole,2017-01-01,taux intermédiaire,12,art. 7-3,1er tiret,lf-2017,3835 (LF 2017),JORT lu
 produits_petroliers,Produits pétroliers et gaz de pétrole,2026-01-01,taux intermédiaire,13,art. 7-3,1er tiret,dgelf-code-tva-2025,21-22,édition officielle
 energies_renouvelables,"Solaire, énergies renouvelables, maîtrise de l'énergie",1988-07-01,exonéré,,A,26 ; 41 a,loi-88-61-tva,833-836,JORT lu
-energies_renouvelables,"Solaire, énergies renouvelables, maîtrise de l'énergie",2008-01-01,exonéré,,A,25 ; 40 a,recueil-tva-bm-2008,21-30,recueil privé
-energies_renouvelables,"Solaire, énergies renouvelables, maîtrise de l'énergie",2014-01-01,exonéré,,A,25 ; 40 a,recueil-codes-sefac-2014,160-172,recueil privé
+energies_renouvelables,"Solaire, énergies renouvelables, maîtrise de l'énergie",2008-01-01,exonéré,,A,25 ; 40 a,recueil-tva-bm-2008,21-30,recueil non officiel
+energies_renouvelables,"Solaire, énergies renouvelables, maîtrise de l'énergie",2014-01-01,exonéré,,A,25 ; 40 a,recueil-codes-sefac-2014,160-172,recueil non officiel
 energies_renouvelables,"Solaire, énergies renouvelables, maîtrise de l'énergie",2017-01-01,taux réduit,6,B,I-18 bis ; I-19 ; I-27 ; I-28,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
 energies_renouvelables,"Solaire, énergies renouvelables, maîtrise de l'énergie",2026-01-01,taux réduit,7,B,I-18 bis ; I-18 quater ; I-19 ; I-27 ; I-28,dgelf-code-tva-2025,62-69,édition officielle
 eau,Eau,1988-07-01,exonéré,,A,14 ; 10,loi-88-61-tva,833-836,JORT lu
-eau,Eau,2008-01-01,exonéré,,A,15 ; 11 i ; 10,recueil-tva-bm-2008,21-30,recueil privé
-eau,Eau,2014-01-01,exonéré,,A,15 ; 11 i ; 10,recueil-codes-sefac-2014,160-172,recueil privé
+eau,Eau,2008-01-01,exonéré,,A,15 ; 11 i ; 10,recueil-tva-bm-2008,21-30,recueil non officiel
+eau,Eau,2014-01-01,exonéré,,A,15 ; 11 i ; 10,recueil-codes-sefac-2014,160-172,recueil non officiel
 eau,Eau,2017-01-01,exonéré,,A,I-46 ; II-2,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
 eau,Eau,2026-01-01,exonéré,,A,I-46 ; II-2,dgelf-code-tva-2025,49-60,édition officielle
 transport_services,Services de transport,1988-07-01,taux réduit,6,B,III-3,loi-88-61-tva,836,JORT lu
 transport_services,Services de transport,1988-07-01,exonéré,,A,29,loi-88-61-tva,833-836,JORT lu
-transport_services,Services de transport,2008-01-01,taux réduit,6,B,III-3,recueil-tva-bm-2008,31-32,recueil privé
-transport_services,Services de transport,2008-01-01,taux intermédiaire,12,B bis,II-1,recueil-tva-bm-2008,33-34,recueil privé
-transport_services,Services de transport,2008-01-01,exonéré,,A,28 a à e ; 28 h,recueil-tva-bm-2008,21-30,recueil privé
-transport_services,Services de transport,2014-01-01,taux réduit,6,B,III-3,recueil-codes-sefac-2014,174-175,recueil privé
-transport_services,Services de transport,2014-01-01,taux intermédiaire,12,B bis,II-1,recueil-codes-sefac-2014,177-178,recueil privé
-transport_services,Services de transport,2014-01-01,exonéré,,A,28 a à e ; 28 h,recueil-codes-sefac-2014,160-172,recueil privé
+transport_services,Services de transport,2008-01-01,taux réduit,6,B,III-3,recueil-tva-bm-2008,31-32,recueil non officiel
+transport_services,Services de transport,2008-01-01,taux intermédiaire,12,B bis,II-1,recueil-tva-bm-2008,33-34,recueil non officiel
+transport_services,Services de transport,2008-01-01,exonéré,,A,28 a à e ; 28 h,recueil-tva-bm-2008,21-30,recueil non officiel
+transport_services,Services de transport,2014-01-01,taux réduit,6,B,III-3,recueil-codes-sefac-2014,174-175,recueil non officiel
+transport_services,Services de transport,2014-01-01,taux intermédiaire,12,B bis,II-1,recueil-codes-sefac-2014,177-178,recueil non officiel
+transport_services,Services de transport,2014-01-01,exonéré,,A,28 a à e ; 28 h,recueil-codes-sefac-2014,160-172,recueil non officiel
 transport_services,Services de transport,2017-01-01,taux réduit,6,B,II-2,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
 transport_services,Services de transport,2017-01-01,exonéré,,A,II-7 ; II-8 ; II-10 ; II-11,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
 transport_services,Services de transport,2026-01-01,taux réduit,7,B,II-2,dgelf-code-tva-2025,62-69,édition officielle
 transport_services,Services de transport,2026-01-01,exonéré,,A,II-7 ; II-8 ; II-10 ; II-11,dgelf-code-tva-2025,49-60,édition officielle
 transport_materiel,"Matériel de transport collectif et de pêche (aéronefs, navires, ferroviaire)",1988-07-01,exonéré,,A,21 ; 28,loi-88-61-tva,833-836,JORT lu
-transport_materiel,"Matériel de transport collectif et de pêche (aéronefs, navires, ferroviaire)",2008-01-01,exonéré,,A,12 ; 12 bis ; 27 ; 28 g ; 28 i,recueil-tva-bm-2008,21-30,recueil privé
-transport_materiel,"Matériel de transport collectif et de pêche (aéronefs, navires, ferroviaire)",2014-01-01,exonéré,,A,12 ; 12 bis ; 27 ; 28 g ; 28 i,recueil-codes-sefac-2014,160-172,recueil privé
+transport_materiel,"Matériel de transport collectif et de pêche (aéronefs, navires, ferroviaire)",2008-01-01,exonéré,,A,12 ; 12 bis ; 27 ; 28 g ; 28 i,recueil-tva-bm-2008,21-30,recueil non officiel
+transport_materiel,"Matériel de transport collectif et de pêche (aéronefs, navires, ferroviaire)",2014-01-01,exonéré,,A,12 ; 12 bis ; 27 ; 28 g ; 28 i,recueil-codes-sefac-2014,160-172,recueil non officiel
 transport_materiel,"Matériel de transport collectif et de pêche (aéronefs, navires, ferroviaire)",2017-01-01,taux réduit,6,B,I-13 ; I-13 bis ; I-25 ; II-15 ; II-15 bis,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
 transport_materiel,"Matériel de transport collectif et de pêche (aéronefs, navires, ferroviaire)",2017-01-01,exonéré,,A,I-15 ; II-3,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
 transport_materiel,"Matériel de transport collectif et de pêche (aéronefs, navires, ferroviaire)",2026-01-01,taux réduit,7,B,I-13 ; I-13 bis ; I-13 ter ; II-15 ; II-15 bis,dgelf-code-tva-2025,62-69,édition officielle
 transport_materiel,"Matériel de transport collectif et de pêche (aéronefs, navires, ferroviaire)",2026-01-01,exonéré,,A,I-15 ; II-3,dgelf-code-tva-2025,49-60,édition officielle
 hotellerie_tourisme,Hôtellerie et activités touristiques,1988-07-01,taux réduit,6,B,III-1,loi-88-61-tva,836,JORT lu
 hotellerie_tourisme,Hôtellerie et activités touristiques,1988-07-01,exonéré,,A,22 ; 19 c,loi-88-61-tva,833-836,JORT lu
-hotellerie_tourisme,Hôtellerie et activités touristiques,2008-01-01,taux intermédiaire,12,B bis,II-2 à 9 ; II-16 ; II-17,recueil-tva-bm-2008,33-34,recueil privé
-hotellerie_tourisme,Hôtellerie et activités touristiques,2008-01-01,exonéré,,A,22 ; 20 c ; 28 bis,recueil-tva-bm-2008,21-30,recueil privé
-hotellerie_tourisme,Hôtellerie et activités touristiques,2014-01-01,taux intermédiaire,12,B bis,II-2 à 9 ; II-16 ; II-17,recueil-codes-sefac-2014,177-178,recueil privé
-hotellerie_tourisme,Hôtellerie et activités touristiques,2014-01-01,exonéré,,A,22 ; 20 c ; 28 bis,recueil-codes-sefac-2014,160-172,recueil privé
+hotellerie_tourisme,Hôtellerie et activités touristiques,2008-01-01,taux intermédiaire,12,B bis,II-2 à 9 ; II-16 ; II-17,recueil-tva-bm-2008,33-34,recueil non officiel
+hotellerie_tourisme,Hôtellerie et activités touristiques,2008-01-01,exonéré,,A,22 ; 20 c ; 28 bis,recueil-tva-bm-2008,21-30,recueil non officiel
+hotellerie_tourisme,Hôtellerie et activités touristiques,2014-01-01,taux intermédiaire,12,B bis,II-2 à 9 ; II-16 ; II-17,recueil-codes-sefac-2014,177-178,recueil non officiel
+hotellerie_tourisme,Hôtellerie et activités touristiques,2014-01-01,exonéré,,A,22 ; 20 c ; 28 bis,recueil-codes-sefac-2014,160-172,recueil non officiel
 hotellerie_tourisme,Hôtellerie et activités touristiques,2017-01-01,taux réduit,6,B,I-12 ; II-7 ; II-16 à 26,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
 hotellerie_tourisme,Hôtellerie et activités touristiques,2026-01-01,taux réduit,7,B,I-12 ; II-7 ; II-16 à 26,dgelf-code-tva-2025,62-69,édition officielle
-restauration,Restauration,2008-01-01,taux intermédiaire,12,B bis,II-10,recueil-tva-bm-2008,33-34,recueil privé
-restauration,Restauration,2008-01-01,exonéré,,A,30 bis,recueil-tva-bm-2008,21-30,recueil privé
-restauration,Restauration,2014-01-01,taux intermédiaire,12,B bis,II-10,recueil-codes-sefac-2014,177-178,recueil privé
-restauration,Restauration,2014-01-01,exonéré,,A,30 bis,recueil-codes-sefac-2014,160-172,recueil privé
+restauration,Restauration,2008-01-01,taux intermédiaire,12,B bis,II-10,recueil-tva-bm-2008,33-34,recueil non officiel
+restauration,Restauration,2008-01-01,exonéré,,A,30 bis,recueil-tva-bm-2008,21-30,recueil non officiel
+restauration,Restauration,2014-01-01,taux intermédiaire,12,B bis,II-10,recueil-codes-sefac-2014,177-178,recueil non officiel
+restauration,Restauration,2014-01-01,exonéré,,A,30 bis,recueil-codes-sefac-2014,160-172,recueil non officiel
 restauration,Restauration,2017-01-01,taux réduit,6,B,II-4 ; II-5,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
 restauration,Restauration,2017-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,lf-2017,3836,déduit
 restauration,Restauration,2026-01-01,taux réduit,7,B,II-4 ; II-5,dgelf-code-tva-2025,62-69,édition officielle
 restauration,Restauration,2026-01-01,taux normal,19,"aucun (art. 7, al. 1er)",—,lf-2017,3836,déduit
 professions_liberales,Professions libérales non médicales,1988-07-01,taux réduit,6,B,I,loi-88-61-tva,836,JORT lu
-professions_liberales,Professions libérales non médicales,2008-01-01,taux intermédiaire,12,B bis,II-11,recueil-tva-bm-2008,33-34,recueil privé
-professions_liberales,Professions libérales non médicales,2008-01-01,taux réduit,6,B,"I, dernier tiret",recueil-tva-bm-2008,31-32,recueil privé
-professions_liberales,Professions libérales non médicales,2014-01-01,taux intermédiaire,12,B bis,II-11,recueil-codes-sefac-2014,177-178,recueil privé
-professions_liberales,Professions libérales non médicales,2014-01-01,taux réduit,6,B,"I, dernier tiret",recueil-codes-sefac-2014,174-175,recueil privé
+professions_liberales,Professions libérales non médicales,2008-01-01,taux intermédiaire,12,B bis,II-11,recueil-tva-bm-2008,33-34,recueil non officiel
+professions_liberales,Professions libérales non médicales,2008-01-01,taux réduit,6,B,"I, dernier tiret",recueil-tva-bm-2008,31-32,recueil non officiel
+professions_liberales,Professions libérales non médicales,2014-01-01,taux intermédiaire,12,B bis,II-11,recueil-codes-sefac-2014,177-178,recueil non officiel
+professions_liberales,Professions libérales non médicales,2014-01-01,taux réduit,6,B,"I, dernier tiret",recueil-codes-sefac-2014,174-175,recueil non officiel
 professions_liberales,Professions libérales non médicales,2017-01-01,taux intermédiaire,12,art. 7-3,3e tiret,lf-2017,3835 (LF 2017),JORT lu
 professions_liberales,Professions libérales non médicales,2017-01-01,taux réduit,6,B,II-8,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
 professions_liberales,Professions libérales non médicales,2026-01-01,taux normal,19,"aucun (art. 7, al. 1er)",—,lf-2023,4069 (éd. arabe),déduit
 professions_liberales,Professions libérales non médicales,2026-01-01,taux réduit,7,B,II-8,dgelf-code-tva-2025,62-69,édition officielle
 agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",1988-07-01,exonéré,,A,11 ; 12 ; 13 ; 21 ; 37 ; 39,loi-88-61-tva,833-836,JORT lu
 agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",1988-07-01,taux réduit,6,B,II-1 ; II-3,loi-88-61-tva,836,JORT lu
-agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2008-01-01,exonéré,,A,11 ; 12 ; 13 ; 14 ; 14 bis ; 15 ; 36 ; 38,recueil-tva-bm-2008,21-30,recueil privé
-agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2008-01-01,taux réduit,6,B,II-1 ; II-3,recueil-tva-bm-2008,31-32,recueil privé
-agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2014-01-01,exonéré,,A,11 ; 12 ; 13 ; 14 ; 14 bis ; 15 ; 36 ; 38,recueil-codes-sefac-2014,160-172,recueil privé
-agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2014-01-01,taux réduit,6,B,II-1 ; II-3,recueil-codes-sefac-2014,174-175,recueil privé
+agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2008-01-01,exonéré,,A,11 ; 12 ; 13 ; 14 ; 14 bis ; 15 ; 36 ; 38,recueil-tva-bm-2008,21-30,recueil non officiel
+agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2008-01-01,taux réduit,6,B,II-1 ; II-3,recueil-tva-bm-2008,31-32,recueil non officiel
+agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2014-01-01,exonéré,,A,11 ; 12 ; 13 ; 14 ; 14 bis ; 15 ; 36 ; 38,recueil-codes-sefac-2014,160-172,recueil non officiel
+agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2014-01-01,taux réduit,6,B,II-1 ; II-3,recueil-codes-sefac-2014,174-175,recueil non officiel
 agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2017-01-01,exonéré,,A,I-9 à 16 ; I-31 à 33 ; I-42 ; I-45 ; I-46 ; I-46 bis ; II-2 à 4,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
 agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2017-01-01,taux réduit,6,B,I-1 ; I-1 bis ; I-3 ; I-14,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
 agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2026-01-01,exonéré,,A,I-9 à 16 ; I-31 à 33 ; I-42 ; I-45 ; I-46 ; I-46 bis ; II-2 à 4 ; II-3 bis,dgelf-code-tva-2025,49-60,édition officielle
 agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2026-01-01,taux réduit,7,B,I-1 ; I-1 bis ; I-3 ; I-14,dgelf-code-tva-2025,62-69,édition officielle
 informatique_numerique,"Informatique, services numériques, formation",1988-07-01,taux réduit,6,B,II-5 ; III-7,loi-88-61-tva,836,JORT lu
-informatique_numerique,"Informatique, services numériques, formation",2008-01-01,taux intermédiaire,12,B bis,I-1 ; II-12 ; II-12 bis ; II-13 ; II-14,recueil-tva-bm-2008,33-34,recueil privé
-informatique_numerique,"Informatique, services numériques, formation",2008-01-01,taux réduit,6,B,II-2,recueil-tva-bm-2008,31-32,recueil privé
-informatique_numerique,"Informatique, services numériques, formation",2014-01-01,taux intermédiaire,12,B bis,I-1 ; II-12 ; II-12 bis ; II-13 ; II-14,recueil-codes-sefac-2014,177-178,recueil privé
-informatique_numerique,"Informatique, services numériques, formation",2014-01-01,taux réduit,6,B,II-2,recueil-codes-sefac-2014,174-175,recueil privé
+informatique_numerique,"Informatique, services numériques, formation",2008-01-01,taux intermédiaire,12,B bis,I-1 ; II-12 ; II-12 bis ; II-13 ; II-14,recueil-tva-bm-2008,33-34,recueil non officiel
+informatique_numerique,"Informatique, services numériques, formation",2008-01-01,taux réduit,6,B,II-2,recueil-tva-bm-2008,31-32,recueil non officiel
+informatique_numerique,"Informatique, services numériques, formation",2014-01-01,taux intermédiaire,12,B bis,I-1 ; II-12 ; II-12 bis ; II-13 ; II-14,recueil-codes-sefac-2014,177-178,recueil non officiel
+informatique_numerique,"Informatique, services numériques, formation",2014-01-01,taux réduit,6,B,II-2,recueil-codes-sefac-2014,174-175,recueil non officiel
 informatique_numerique,"Informatique, services numériques, formation",2017-01-01,taux réduit,6,B,I-2 ; I-2 bis,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
 informatique_numerique,"Informatique, services numériques, formation",2017-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,lf-2017,3836,déduit
 informatique_numerique,"Informatique, services numériques, formation",2026-01-01,taux réduit,7,B,I-2 ; I-2 bis ; II-29,dgelf-code-tva-2025,62-69,édition officielle
 informatique_numerique,"Informatique, services numériques, formation",2026-01-01,taux normal,19,"aucun (art. 7, al. 1er)",—,lf-2017,3836,déduit
-equipements_investissement,Équipements d'investissement (sans similaires locaux ou fabriqués localement),2008-01-01,taux intermédiaire,12,B bis,I-3,recueil-tva-bm-2008,33-34,recueil privé
-equipements_investissement,Équipements d'investissement (sans similaires locaux ou fabriqués localement),2014-01-01,taux intermédiaire,12,B bis,I-3,recueil-codes-sefac-2014,177-178,recueil privé
+equipements_investissement,Équipements d'investissement (sans similaires locaux ou fabriqués localement),2008-01-01,taux intermédiaire,12,B bis,I-3,recueil-tva-bm-2008,33-34,recueil non officiel
+equipements_investissement,Équipements d'investissement (sans similaires locaux ou fabriqués localement),2014-01-01,taux intermédiaire,12,B bis,I-3,recueil-codes-sefac-2014,177-178,recueil non officiel
 equipements_investissement,Équipements d'investissement (sans similaires locaux ou fabriqués localement),2026-01-01,taux réduit,7,B,I-18 ter,dgelf-code-tva-2025,62-69,édition officielle
-telecom_poste,"Télécommunications, radio-télédiffusion, poste",2008-01-01,exonéré,,A,48 ; 49,recueil-tva-bm-2008,21-30,recueil privé
+telecom_poste,"Télécommunications, radio-télédiffusion, poste",2008-01-01,exonéré,,A,48 ; 49,recueil-tva-bm-2008,21-30,recueil non officiel
 telecom_poste,"Télécommunications, radio-télédiffusion, poste",2008-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,loi2001-123-lf2002;decret-2002-3356-tva-telecom,4258 ; 3194,déduit
-telecom_poste,"Télécommunications, radio-télédiffusion, poste",2014-01-01,exonéré,,A,48 ; 49,recueil-codes-sefac-2014,160-172,recueil privé
+telecom_poste,"Télécommunications, radio-télédiffusion, poste",2014-01-01,exonéré,,A,48 ; 49,recueil-codes-sefac-2014,160-172,recueil non officiel
 telecom_poste,"Télécommunications, radio-télédiffusion, poste",2014-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,loi2001-123-lf2002;decret-2002-3356-tva-telecom,4258 ; 3194,déduit
 telecom_poste,"Télécommunications, radio-télédiffusion, poste",2017-01-01,taux réduit,6,B,II-10,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
 telecom_poste,"Télécommunications, radio-télédiffusion, poste",2017-01-01,exonéré,,A,II-19,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
@@ -1988,17 +1988,17 @@ telecom_poste,"Télécommunications, radio-télédiffusion, poste",2026-01-01,ex
 telecom_poste,"Télécommunications, radio-télédiffusion, poste",2026-01-01,taux normal,19,"aucun (art. 7, al. 1er)",—,loi2001-123-lf2002;decret-2002-3356-tva-telecom,4258 ; 3194,déduit
 finance_assurance,Finance et assurance,1988-07-01,exonéré,,A,32 ; 34 ; 40,loi-88-61-tva,833-836,JORT lu
 finance_assurance,Finance et assurance,1988-07-01,taux réduit,6,B,III-6,loi-88-61-tva,836,JORT lu
-finance_assurance,Finance et assurance,2008-01-01,exonéré,,A,31 ; 31 bis ; 33 ; 39,recueil-tva-bm-2008,21-30,recueil privé
-finance_assurance,Finance et assurance,2008-01-01,taux réduit,6,B,III-6,recueil-tva-bm-2008,31-32,recueil privé
-finance_assurance,Finance et assurance,2014-01-01,exonéré,,A,31 ; 31 bis ; 33 ; 39 ; 39 bis ; 39 ter,recueil-codes-sefac-2014,160-172,recueil privé
-finance_assurance,Finance et assurance,2014-01-01,taux réduit,6,B,III-6,recueil-codes-sefac-2014,174-175,recueil privé
+finance_assurance,Finance et assurance,2008-01-01,exonéré,,A,31 ; 31 bis ; 33 ; 39,recueil-tva-bm-2008,21-30,recueil non officiel
+finance_assurance,Finance et assurance,2008-01-01,taux réduit,6,B,III-6,recueil-tva-bm-2008,31-32,recueil non officiel
+finance_assurance,Finance et assurance,2014-01-01,exonéré,,A,31 ; 31 bis ; 33 ; 39 ; 39 bis ; 39 ter,recueil-codes-sefac-2014,160-172,recueil non officiel
+finance_assurance,Finance et assurance,2014-01-01,taux réduit,6,B,III-6,recueil-codes-sefac-2014,174-175,recueil non officiel
 finance_assurance,Finance et assurance,2017-01-01,exonéré,,A,I-36 ; II-13 à 18,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
 finance_assurance,Finance et assurance,2017-01-01,taux réduit,6,B,II-14,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
 finance_assurance,Finance et assurance,2026-01-01,exonéré,,A,I-36 ; II-13 à 18 ; II-14 bis,dgelf-code-tva-2025,49-60,édition officielle
 finance_assurance,Finance et assurance,2026-01-01,taux réduit,7,B,II-14,dgelf-code-tva-2025,62-69,édition officielle
 durables_luxe_vehicules,Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers,1988-07-01,taux majoré,29,C,"positions des chapitres 25 à 99, dont EX 87-02 (voitures particulières)",loi-88-61-tva,836-846,JORT lu
 durables_luxe_vehicules,Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers,2008-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,loi-2006-80-reduction-taux,4302,déduit
-durables_luxe_vehicules,Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers,2008-01-01,taux intermédiaire,12,hors tableau (loi n° 2002-103),art. 1er,recueil-tva-bm-2008,38,recueil privé
+durables_luxe_vehicules,Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers,2008-01-01,taux intermédiaire,12,hors tableau (loi n° 2002-103),art. 1er,recueil-tva-bm-2008,38,recueil non officiel
 durables_luxe_vehicules,Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers,2026-01-01,taux réduit,7,B,I-18 quinquies ; I-18 sexies,dgelf-code-tva-2025,62-69,édition officielle
 ```
 
@@ -2142,7 +2142,7 @@ médicaments de la Pharmacie centrale en 2025-2026), ni les décrets de l'articl
 l'électricité et des produits pétroliers. **Une sortie du tableau A n'est pas à elle seule une
 taxation**, et une case vide n'est pas un taux normal. S'y ajoutent, pour cette vue :
 
-- les colonnes 2008 et 2014 valent **« d'après l'édition »** : deux recueils privés, sans discordance relevée
+- les colonnes 2008 et 2014 valent **« d'après l'édition »** : deux recueils non officiels, sans discordance relevée
   entre eux ni avec les dix-huit textes vérifiés, mais non relus numéro par numéro contre le JORT ;
 - un régime qui a existé **entre** deux dates repères n'apparaît pas (télécommunications exonérées de
   1995 à 2002 ; professions libérales à 10 % de 1996 à 2006 ; logement neuf à 13 % de 2018 à 2024) :
@@ -2223,7 +2223,7 @@ URL : l'adresse d'origine des fichiers n'est pas établie — le script
 
 **Ajout de la seconde passe — éditions retrouvées dans les archives du web** (adresses, horodatages
 et empreintes repris de `fiscalite-tva-codes-consolides.md`, § 2 ; fichiers dans
-`tunisia-data/data/raw/minfinances/codes_tva/`). Les deux recueils privés et Jurisite ne sont pas des
+`tunisia-data/data/raw/minfinances/codes_tva/`). Les deux recueils non officiels et Jurisite ne sont pas des
 sources d'un état du droit : ils se citent « d'après l'édition… ».
 
 ```json
@@ -2231,10 +2231,10 @@ sources d'un état du droit : ils se citent « d'après l'édition… ».
   {
     "id": "recueil-tva-bm-2008",
     "type": "document",
-    "title": "Livre 3. Code de la TVA [recueil privé, sans auteur ni éditeur ; état après la loi de finances pour 2008]",
+    "title": "Livre 3. Code de la TVA [recueil non officiel, sans auteur ni éditeur ; état après la loi de finances pour 2008]",
     "issued": {"date-parts": [[2008, 1, 10]]},
     "URL": "https://web.archive.org/web/20161023112429id_/http://www.bm.com.tn:80/ckeditor/files/code_tva.pdf",
-    "title-short": "Recueil privé du code de la TVA, janvier 2008",
+    "title-short": "Recueil non officiel du code de la TVA, janvier 2008",
     "note": "citation-key: recueil-tva-bm-2008\nRECUEIL PRIVÉ, servi par le site du cabinet Best Management (bm.com.tn) ; aucune date d'édition dans le document : la date est celle des métadonnées du PDF (10 janvier 2008) ; loi la plus récente citée : n° 2007-70. 38 pages ; tableau A p. 21-30, tableau B p. 31-32, tableau B bis p. 33-34, loi n° 2002-103 p. 38 ; notes par numéro (article et loi). Tableau C absent. Adresse d'origine : http://www.bm.com.tn/ckeditor/files/code_tva.pdf ; capture du 23 octobre 2016, identique octet pour octet. Copie : tunisia-data/data/raw/minfinances/codes_tva/code_tva_2008_fr.pdf, 167 789 octets, SHA-256 458fed58bdfd432cd3d6dd3de22c86b94e4a750907202f28d5bbdf8d5abf3015. Se cite « d'après l'édition de 2008 » ; ne vaut pas Journal officiel."
   },
   {

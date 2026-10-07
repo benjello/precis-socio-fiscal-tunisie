@@ -753,7 +753,7 @@ def table_taux():
 #     aucun tableau, et relève du taux normal par la règle générale de l'article 7 ;
 #   - une case BLANCHE dit que la catégorie ne figure dans aucun tableau à cette date — ce
 #     qui n'est pas un taux ;
-#   - les colonnes de 2008 et de 2014 viennent de deux éditions privées du code, et un petit
+#   - les colonnes de 2008 et de 2014 viennent de deux recueils non officiels du code, et un petit
 #     cercle le rappelle dans chaque case.
 # Les libellés longs des catégories sont ceux de la série ; la figure emploie des libellés
 # courts, tenus ici dans les deux langues.
@@ -796,8 +796,8 @@ _L.update({
     "exo": {"fr": "exo.", "ar": "معفى"},
     "lg_deduit": {"fr": "Taux que la loi n'écrit pas : règle générale de l'article 7",
                   "ar": "نسبة لا ينصّ عليها القانون: القاعدة العامة للفصل 7"},
-    "lg_prive": {"fr": "D'après une édition privée du code",
-                 "ar": "حسب طبعة خاصة للمجلة"},
+    "lg_prive": {"fr": "D'après un recueil non officiel du code",
+                 "ar": "حسب مجموعة غير رسمية للمجلة"},
     "lg_vide": {"fr": "Catégorie absente des tableaux à cette date",
                 "ar": "صنف غير وارد بالجداول في هذا التاريخ"},
     # Colonnes : date repère, nature de la source.
@@ -807,7 +807,7 @@ _L.update({
     "d_2017-01-01": {"fr": "1er janvier\n2017", "ar": "1 جانفي\n2017"},
     "d_2026-01-01": {"fr": "1er janvier\n2026", "ar": "1 جانفي\n2026"},
     "n_jort": {"fr": "Journal officiel", "ar": "الرائد الرسمي"},
-    "n_prive": {"fr": "édition privée", "ar": "طبعة خاصة"},
+    "n_prive": {"fr": "recueil non officiel", "ar": "مجموعة غير رسمية"},
     "n_officielle": {"fr": "édition officielle\ndu code", "ar": "الطبعة الرسمية\nللمجلة"},
     # Groupes.
     "gr_alimentation": {"fr": "Alimentation", "ar": "التغذية"},
@@ -881,8 +881,8 @@ _L.update({
     "l_JORT lu": {"fr": "Journal officiel", "ar": "الرائد الرسمي"},
     "l_édition officielle": {"fr": "édition du code publiée par le ministère des Finances",
                              "ar": "طبعة المجلة الصادرة عن وزارة المالية"},
-    "l_recueil privé": {"fr": "d'après une édition privée du code",
-                        "ar": "حسب طبعة خاصة للمجلة"},
+    "l_recueil non officiel": {"fr": "d'après un recueil non officiel du code",
+                        "ar": "حسب مجموعة غير رسمية للمجلة"},
     "l_déduit": {"fr": "la loi n'écrit pas le taux : il résulte de la règle générale de "
                        "l'article 7",
                  "ar": "لا ينصّ القانون على النسبة: تنتج عن القاعدة العامة للفصل 7"},
@@ -921,7 +921,7 @@ figtools.register_provenance(
                "les numéros où le régime se lit, la source de l'état et ses pages ; 167 lignes"),
     perimetre_ar=("سطر لكلّ صنف ولكلّ تاريخ مرجعي ولكلّ نظام، مع الجدول والأعداد التي يُقرأ "
                   "فيها النظام ومصدر الحالة وصفحاته؛ 167 سطرا"),
-    caveats=("Les états de janvier 2008 et de janvier 2014 sont ceux de deux éditions privées "
+    caveats=("Les états de janvier 2008 et de janvier 2014 sont ceux de deux recueils non officiels "
              "du code, qui ne valent pas Journal officiel et n'ont pas été rapprochées de lui "
              "numéro par numéro. L'état du 1er janvier 2026 est celui de l'édition du code "
              "publiée par le ministère des Finances à jour au 1er janvier 2025, complétée par "
