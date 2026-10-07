@@ -68,8 +68,10 @@ ouverts, avec l'état des sources :
   la source) : les rapports annuels de la DGI de 2013 et 2014 sont dans `tunisia-data` mais
   leur texte arabe n'est pas exploitable par recherche — **à lire à l'image**, puis chercher
   les millésimes suivants ; lois de règlement, rapports de la Cour des comptes et rapports
-  annuels de performance de la mission Finances **non examinés**. Le tableau
-  `@tbl-tva-credit-donnees` est fait main en attendant ;
+  annuels de performance de la mission Finances **non examinés**. Les séries connues
+  (2009-2014) sont versées dans `tunisia-data` (`tva-credit-restitutions-sources`) et tracées
+  par `@fig-tva-credit-restitutions`, toutes sources côte à côte ; quand la série sera prolongée, élargir les
+  axes des vues (bornes fixées dans `figures/tva.py`) et la légende « 2009-2014 » ;
 - **dates d'effet à relire au fascicule** : lois de finances pour 1991, 1992, 1993 et 1994
   (art. 50, 66, 68, 114, 31-32 : scans locaux, à relire à l'image — seule la mensualisation
   de 1994 est écrite au chapitre, sans date ni citation littérale), loi n° 2007-69 (art. 10
@@ -1223,7 +1225,7 @@ l'information.
 | `_impot_societes.qmd` | conforme | — |
 | `_impot_fortune.qmd` | conforme ; s'achève sur une case vide (aucune série de rendement) | traduction arabe à déclarer dans le `_quarto.yml` AR |
 | `_droits_consommation.qmd` | historique remonté en tête | la chronologie du périmètre reste un tableau sans récit texte par texte — signalé, non confirmé |
-| `_tva.qmd` | conforme au plan type : historique, architecture de 1988, évolution réforme par réforme, longue période | `@sec-tva-deduction` suit le même plan (mécanisme, textes, données) ; le tableau des données du crédit (`@tbl-tva-credit-donnees`) est fait main, à engendrer quand les séries seront prolongées ; le tableau des générations de taux est fait main, à engendrer quand la série législative des taux sera complète en amont |
+| `_tva.qmd` | conforme au plan type : historique, architecture de 1988, évolution réforme par réforme, longue période | `@sec-tva-deduction` suit le même plan (mécanisme, textes, données) ; les données du crédit sont une figure engendrée (`@fig-tva-credit-restitutions`), dont les séries restent à prolonger après 2014 ; le tableau des générations de taux est fait main, à engendrer quand la série législative des taux sera complète en amont |
 | `_impot_revenu.qmd` | conforme, à sa manière | rien sur la forme ; restent deux sections à ÉCRIRE, voir plus bas |
 | `retraites/_secteur_*.qmd` | **rangés par mécanisme, et c'est bien** | ne pas y appliquer le plan type |
 | `_regime_indiciaire.qmd` | fait le travail sous d'autres noms | ne rien reprendre sur la forme |

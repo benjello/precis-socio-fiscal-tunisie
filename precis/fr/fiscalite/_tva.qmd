@@ -257,33 +257,57 @@ La facture, enfin, est la pièce qui fonde la déduction chez l'acheteur : oblig
 
 ### Ce que pèsent le crédit et sa restitution : les données du ministère des Finances {#sec-tva-credit-donnees}
 
-Les données budgétaires identifiées ici tiennent en quelques séries courtes, toutes produites par le ministère des Finances entre 2013 et 2017 et toutes bornées aux exercices 2010 à 2014 (@tbl-tva-credit-donnees). Aucune n'encadre une des réformes de la restitution — 1996, 1999, 2007, 2010 ou 2023 : elles donnent un ordre de grandeur, non la mesure de l'effet d'un texte.
+Les données budgétaires identifiées ici tiennent en quelques séries courtes, toutes produites par le ministère des Finances entre 2013 et 2017 et toutes bornées aux exercices 2010 à 2014 (@fig-tva-credit-restitutions). La figure y joint, distingué comme tel, un tableau de l'administration que reproduit un rapport d'assistance technique présenté plus bas (@sec-tva-credit-etudes). Aucune n'encadre une des réformes de la restitution — 1996, 1999, 2007, 2010 ou 2023 : elles donnent un ordre de grandeur, non la mesure de l'effet d'un texte.
 
-: Crédit de TVA, restitutions et retenue à la source d'après le ministère des Finances, 2010-2014 (millions de dinars courants) {#tbl-tva-credit-donnees}
-
-| Grandeur | 2010 | 2011 | 2012 | 2013 | 2014 | Source |
-|---|---:|---:|---:|---:|---:|---|
-| Crédit de TVA enregistré | 1 415 | 1 502 | 1 694 | — | — | groupe de travail « impôts indirects », août 2013 [@minfin-cnf-2013-impots-indirects, diapositive 18] |
-| Montants demandés en restitution | 375,8 | 359,2 | 203,3 | — | — | même document [@minfin-cnf-2013-impots-indirects, diapositive 19] |
-| Montants restitués | 320,8 | 301,2 | 179,2 | — | — | même document [@minfin-cnf-2013-impots-indirects, diapositive 19] |
-| Impôts restitués par la direction générale des impôts, tous impôts | 428,7 | 381,4 | 411,3 | 670,1 | 427,2 | rapport d'activité sur le contrôle fiscal [@minfin-controle-fiscal-2016, p. 11] |
-| dont au titre de la TVA | 349,9 | 268,3 | 287,7 | 402,3 | 307,2 | même rapport [@minfin-controle-fiscal-2016, p. 11] |
-| Rendement de la retenue à la source de TVA au taux de 50 % | 387,2 | 352,1 | 305,5 | — | — | groupe de travail « impôts indirects », août 2013 [@minfin-cnf-2013-impots-indirects, diapositive 21] |
-| *Pour mémoire* : recettes de TVA réalisées | 3 749,8 | 3 848,4 | 4 375,8 | 4 452,0 | 5 106,5 | série des recettes fiscales [@minfin-recettes-fiscales] |
-
-<!-- TODO (rédacteur) : tableau fait main ; verser ces séries dans tunisia-data et l'engendrer (ou en tirer une figure) quand elles auront été prolongées au-delà de 2014. -->
+```{python}
+#| label: fig-tva-credit-restitutions
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tva as fig_tva
+import figtools
+figtools.figure_tabs(
+    fig_tva.vues_credit_restitutions(), fig_tva.table_credit_restitutions(),
+    fig_tva.SERIE_CREDIT, fig_tva.SERIE_COMPOSITION,
+    slug="fig_tva_credit_restitutions",
+    caption=("Crédit de TVA, restitutions et retenue à la source de TVA selon les sources, en "
+             "millions de dinars courants et en % des recettes de TVA, 2009-2014"),
+    note_lecture=(
+        "**Quatre documents gardés côte à côte : une couleur par document, d'une vue à "
+        "l'autre, et aucun trait ne relie deux documents.** En **bleu**, le groupe de travail "
+        "« impôts indirects » du Conseil national de la fiscalité, août 2013 — crédit "
+        "enregistré, montants demandés et restitués, retenue à la source "
+        "[@minfin-cnf-2013-impots-indirects, diapositives 18, 19 et 21]. En **vert**, le "
+        "rapport de synthèse des groupes de travail, novembre 2013, pour la seule retenue de "
+        "2012 [@minfin-cnf-2013-synthese, p. 82]. En **orange**, le rapport d'activité sur le "
+        "contrôle fiscal — impôts restitués par la direction générale des impôts, total et "
+        "part de la TVA [@minfin-controle-fiscal-2016, p. 11]. En **violet**, hachuré, un "
+        "tableau de l'administration présenté sous la mention « Source DGCPR » et reproduit "
+        "par un rapport d'assistance technique du Fonds monétaire international de février "
+        "2013 [@fmi-2013-modernisation-administration-fiscale, tableau 10] : une donnée de "
+        "l'administration relayée par un rapport extérieur, non une estimation du Fonds. "
+        "Aucun de ces documents ne décrit sa méthode. Les deux séries de TVA restituée ne "
+        "coïncident pas et ne sont pas raccordées. La retenue à la source de 2012 a trois "
+        "valeurs — 305,5, 298,9 et 272,7 MD —, la dernière arrêtée avant la clôture de "
+        "l'exercice. La dernière vue rapporte chaque grandeur aux recettes de TVA de l'année "
+        "[@minfin-recettes-fiscales] ; le crédit, un stock, y a sa propre échelle, et le "
+        "total des restitutions, tous impôts confondus, n'y figure pas. Ces recettes sont, "
+        "selon toute apparence, nettes des restitutions, sans que la série le dise : les "
+        "rapports se lisent sur les recettes telles qu'elles sont publiées."),
+)
+```
 
 <!-- TODO (documentaliste) : prolonger ces séries après 2014 par les rapports annuels de la DGI (2013, 2014 et suivants, à lire sur l'image) ; lois de règlement, rapports de la Cour des comptes et rapports annuels de performance de la mission Finances à examiner. Voir docs/notes/backlog-precis.md. -->
 
-Trois précautions commandent la lecture de ce tableau.
+Trois précautions commandent la lecture de cette figure.
 
-Aucun des deux documents ne décrit sa méthode. Celui du groupe de travail ne dit ni la date à laquelle le stock de crédit est arrêté, ni s'il s'agit du crédit reporté sur les déclarations ou du seul crédit demandé en restitution.
+Aucun de ces documents ne décrit sa méthode. Celui du groupe de travail ne dit ni la date à laquelle le stock de crédit est arrêté, ni s'il s'agit du crédit reporté sur les déclarations ou du seul crédit demandé en restitution.
 
 Les deux séries de TVA restituée ne coïncident pas : 320,8 MD contre 349,9 MD en 2010, 301,2 contre 268,3 en 2011, 179,2 contre 287,7 en 2012. Rien, dans l'un ou l'autre document, ne permet d'en dire la raison ; elles ne se fondent donc pas en une seule série.
 
-Le rendement de la retenue à la source pour 2012 est donné à 305,5 MD par le groupe de travail d'août 2013, et à 298,9 MD par le rapport de synthèse du Conseil national de la fiscalité de novembre 2013, valeur reprise par le projet présenté aux Assises nationales de la fiscalité de novembre 2014 [@minfin-cnf-2013-synthese, p. 82 ; @minfin-assises-2014-projet-reforme, p. 76]. Une troisième valeur, plus basse et antérieure à la clôture de l'exercice, figure dans un rapport d'assistance technique présenté plus bas (@sec-tva-credit-etudes).
+Le rendement de la retenue à la source pour 2012 est donné à 305,5 MD par le groupe de travail d'août 2013, et à 298,9 MD par le rapport de synthèse du Conseil national de la fiscalité de novembre 2013, valeur reprise par le projet présenté aux Assises nationales de la fiscalité de novembre 2014 [@minfin-cnf-2013-synthese, p. 82 ; @minfin-assises-2014-projet-reforme, p. 76]. Une troisième valeur, plus basse et antérieure à la clôture de l'exercice — la barre hachurée de la figure —, vient d'un tableau de l'administration que reproduit un rapport d'assistance technique présenté plus bas (@sec-tva-credit-etudes).
 
-Rapporté aux recettes de TVA de l'année, le crédit enregistré en représente 37,7 % en 2010, 39,0 % en 2011 et 38,7 % en 2012 ; la TVA restituée par la direction générale des impôts, 9,3 % en 2010, 7,0 % en 2011, 6,6 % en 2012, 9,0 % en 2013 et 6,0 % en 2014 ; la retenue à la source, 10,3 % en 2010, 9,1 % en 2011 et 7,0 % en 2012, sur la série du groupe de travail. Le dénominateur appelle lui-même une réserve. Le code des droits et procédures fiscaux dispose que la restitution « s'effectue par prélèvement direct sur les recettes » de l'impôt en cause [@loi-2000-82-cdpf, art. 35, p. 1879] ; les rapports sur le projet de budget de l'État pour 2013 et pour 2014 écrivent, de leur côté, que l'évolution des impôts indirects reste tributaire de la croissance de la TVA et du volume de la restitution du crédit de taxe [@minfin-rapport-budget-2013, p. 33 ; @minfin-rapport-budget-2014, p. 16]. La série des recettes ne dit pas si elle est nette des restitutions, et aucun document budgétaire ne publie ici la recette brute.
+Rapporté aux recettes de TVA de l'année — dernière vue de la figure —, le crédit enregistré en représente 37,7 % en 2010, 39,0 % en 2011 et 38,7 % en 2012 ; la TVA restituée par la direction générale des impôts, 9,3 % en 2010, 7,0 % en 2011, 6,6 % en 2012, 9,0 % en 2013 et 6,0 % en 2014 ; la retenue à la source, 10,3 % en 2010, 9,1 % en 2011 et 7,0 % en 2012, sur la série du groupe de travail. Le dénominateur appelle lui-même une réserve. Le code des droits et procédures fiscaux dispose que la restitution « s'effectue par prélèvement direct sur les recettes » de l'impôt en cause [@loi-2000-82-cdpf, art. 35, p. 1879] ; les rapports sur le projet de budget de l'État pour 2013 et pour 2014 écrivent, de leur côté, que l'évolution des impôts indirects reste tributaire de la croissance de la TVA et du volume de la restitution du crédit de taxe [@minfin-rapport-budget-2013, p. 33 ; @minfin-rapport-budget-2014, p. 16]. La série des recettes ne dit pas si elle est nette des restitutions, et aucun document budgétaire ne publie ici la recette brute.
 
 Un enseignement se dégage néanmoins. Les demandes de restitution ne portent que sur une fraction du crédit enregistré — environ un quart en 2010, un huitième en 2012 : l'essentiel du crédit enregistré n'était pas demandé en restitution. Le groupe de travail du ministère en fait en 2013 un diagnostic : accumulation du crédit, effet négatif sur la trésorerie des entreprises, charge de contrôle pour l'administration, textes qu'il qualifie de peu clairs et de ramifiés. Il propose de supprimer les causes du crédit, de le compenser avec les autres impôts dus, d'unifier le taux de l'avance et d'améliorer les délais [@minfin-cnf-2013-impots-indirects]. La baisse du taux de la retenue à la source, de 50 % à 25 % en 2016, et les textes de 2015 et de 2023 sur les délais sont postérieurs à ce diagnostic (@tbl-tva-restitution).
 
@@ -293,7 +317,7 @@ Les rapports des institutions internationales retenus ici ne fournissent aucune 
 
 **Fonds monétaire international, juillet 1997.** Rapport des services du Fonds préparé pour les consultations, sans donnée chiffrée sur le sujet. Parmi les mesures de rationalisation de la TVA qu'ils recommandent, les services citent la mise en place d'un système de règlement rapide et sans limite des crédits de TVA et l'élimination du stock de crédits en instance [@fmi-1997-selected-issues, § 108]. Le rapport précède de dix-huit mois la loi de finances pour 1999, qui gèle le stock et organise son apurement ; il ne chiffre pas ce stock.
 
-**Fonds monétaire international, département des finances publiques, février 2013.** Rapport d'une mission d'assistance technique auprès de l'administration fiscale, fondé sur des données fournies par celle-ci. Les auteurs relèvent que le contrôle fiscal se concentre sur « la vérification (approfondie) systématique des demandes de restitution de crédits structurels », et que certaines retenues à la source créent des « crédits récurrents (traduisant une mobilisation abusive de trésorerie au détriment des entreprises) » ; ils recommandent de supprimer la vérification approfondie systématique des entreprises de la direction des grandes entreprises qui demandent une restitution [@fmi-2013-modernisation-administration-fiscale, § 80, p. 30]. La loi de finances pour 2015 inscrit cette mesure dans le code (@tbl-tva-restitution). Le rapport reproduit un tableau de l'administration, qu'il présente sous la mention « Source DGCPR », sur le rendement de la retenue à la source de TVA : 362,7 MD en 2009, 387,2 MD en 2010, 352,2 MD en 2011 et 272,7 MD en 2012 [@fmi-2013-modernisation-administration-fiscale, tableau 10]. La valeur de 2012, arrêtée avant la clôture de l'exercice, est inférieure aux deux valeurs publiées ensuite par le ministère (@sec-tva-credit-donnees).
+**Fonds monétaire international, département des finances publiques, février 2013.** Rapport d'une mission d'assistance technique auprès de l'administration fiscale, fondé sur des données fournies par celle-ci. Les auteurs relèvent que le contrôle fiscal se concentre sur « la vérification (approfondie) systématique des demandes de restitution de crédits structurels », et que certaines retenues à la source créent des « crédits récurrents (traduisant une mobilisation abusive de trésorerie au détriment des entreprises) » ; ils recommandent de supprimer la vérification approfondie systématique des entreprises de la direction des grandes entreprises qui demandent une restitution [@fmi-2013-modernisation-administration-fiscale, § 80, p. 30]. La loi de finances pour 2015 inscrit cette mesure dans le code (@tbl-tva-restitution). Le rapport reproduit un tableau de l'administration, qu'il présente sous la mention « Source DGCPR », sur le rendement de la retenue à la source de TVA : 362,7 MD en 2009, 387,2 MD en 2010, 352,2 MD en 2011 et 272,7 MD en 2012 [@fmi-2013-modernisation-administration-fiscale, tableau 10]. La valeur de 2012, arrêtée avant la clôture de l'exercice, est inférieure aux deux valeurs publiées ensuite par le ministère ; la @fig-tva-credit-restitutions porte les trois côte à côte (@sec-tva-credit-donnees).
 
 **Banque mondiale, 2014.** Le rapport *La Révolution inachevée* écrit qu'« en moyenne, le remboursement de la TVA a lieu 200 jours après la soumission de la demande », plus de 270 jours pour les grandes entreprises et 66 jours en moyenne pour les petites [@banquemondiale2014-revolution-inachevee, version française, p. 160 du fichier PDF]. Le passage ne cite pas sa source ; il prend place dans un développement fondé sur les enquêtes menées par la Banque auprès des entreprises en 2012. Il s'agit donc de délais déclarés par des entreprises interrogées, non de délais mesurés par l'administration, et ni l'effectif des répondants ni la question posée ne sont donnés à cet endroit. Le délai légal de l'époque était de 120 jours, et de 60 jours pour les comptes certifiés (@tbl-tva-restitution) ; aucune source administrative identifiée ici ne donne de délai constaté.
 
