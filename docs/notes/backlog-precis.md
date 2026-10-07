@@ -67,6 +67,14 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 - **longue période** : aucune figure nouvelle ; restent la figure du rendement par segments de
   base du PIB avec les réformes marquées, la place dans la fiscalité indirecte, la taxe
   rapportée à la consommation privée, le partage intérieur/importation (plan, § 6.1 à 6.6) ;
+- **domicile unique des références étendu à tout le chapitre** (7 octobre 2026, branche de test
+  `chantier/citations-domicile-unique`, non commité) : `.domicile-unique` sur le titre du chapitre ;
+  176 appels juridiques retirés du fil, remplacés par 164 liens `#r-tva-…` vers les lignes de
+  registre (142 ancres) ; un registre nouveau pour les clauses de date d'application
+  (`tbl-tva-dates-textes`) et la liste des six grilles devenue tableau (`tbl-tva-taux-textes`).
+  À juger :
+  ancres des trajectoires posées dans la cellule de date ; `tbl-tva-reformes` sans liens ;
+  attributs `titre` et libellés des liens à traduire en arabe ;
 - **version arabe** : le chapitre arabe est structurellement en retard jusqu'à la passe de
   traduction ; les attributs `titre` des douze nouveaux blocs repliés sont à traduire.
 
