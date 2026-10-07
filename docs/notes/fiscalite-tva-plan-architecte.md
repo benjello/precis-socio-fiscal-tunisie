@@ -1028,3 +1028,23 @@ Rien n'est de trop. « Trois à six pour l'épine » est désormais clair.
 Ce qui ne change pas : le classement des textes (§ 5, où seuls les sigles de l'épine
 remplacent les anciens), le tableau des données (§ 6), les quatre-vingts unités du registre de
 destination, les identifiants existants, la place des études, les registres repliés.
+
+---
+
+## 11. Décisions du propriétaire sur les points à trancher (7 octobre 2026)
+
+Elles priment sur les § 2, 3 et 7 là où ils diffèrent.
+
+1. **1998-1999 est une grande réforme** de l'épine : elle crée la retenue à la source et gèle
+   le crédit, même si le cœur n'y gagne qu'un point de taux.
+2. **2016-2018 reste en bloc** (lois de finances pour 2016, 2017 et 2018, loi n° 2017-8), le
+   point de 2018 y étant dit relèvement de niveau. *Réponse « oui » à une question posée en
+   alternative : lue comme l'accord au choix par défaut du plan ; à confirmer.*
+3. **Le commerce de détail de 1996 reste dans la réforme de 1995-1996.** *Même réserve.*
+4. **La figure en escalier des taux vient à la fin de l'épine, comme bilan** : elle clôt le
+   récit des réformes, avec ses quatre points de lecture, dans ou juste avant « L'état du droit ».
+   L'épine s'ouvre donc sur la frise, non sur la figure des taux. La section « Les générations de
+   taux » réordonnée (commit `2ba75cc`) est conservée, déplacée.
+5. **Les trajectoires par opération : les deux formes sont à produire** — une fiche, et un
+   simple tableau dans l'état du droit —, pour que le propriétaire choisisse sur pièce. La forme
+   non retenue sera retirée.
