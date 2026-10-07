@@ -898,7 +898,7 @@
           ]
         ]
       },
-      "note": "Version consolidée officielle, en français, avec chaîne d'annotation des modifications. Copie locale : PDFs-legislation-tunisie/PDFs/TVA/Code_de_la_taxe_sur_la_valeur_ajoutée_2023.pdf. Le millésime 2025 n'existe localement qu'en arabe.",
+      "note": "citation-key: dgelf-code-tva-2023\nÉdition officielle de l'administration (Ministère des finances, DGELF), en français, avec chaîne d'annotation des modifications ; code consolidé, qui n'est pas le Journal officiel. Tableau A nouveau p. 61-74 ; tableau B nouveau p. 76-83. Copie locale : PDFs-legislation-tunisie/PDFs/TVA/Code_de_la_taxe_sur_la_valeur_ajoutée_2023.pdf, SHA-256 4d7bb38c97629fa2d626ddb0576bcc58655ab1972730e574ccea41bf47fe4750. Le millésime 2025 n'existe localement qu'en arabe.",
       "title-short": "Code de la TVA et du droit de consommation, éd. 2023"
     },
     {
@@ -2540,6 +2540,254 @@
       "note": "citation-key: minfin-rapport-budget-2014\nDocument retiré du site du ministère des Finances (l'adresse d'origine répond 404 le 6 octobre 2026) ; consulté dans la capture du 19/12/2017 (horodatage 20171219103721 lu dans le CDX le 6 octobre 2026). Texte arabe, 97 p. Lu : p. 16 (p. 22 du PDF), même constat que pour 2013 sur le volume de la restitution du crédit de taxe. Date (octobre 2013) d'après le catalogue tunisia-data.",
       "genre": "Rapport",
       "archive": "Internet Archive (Wayback Machine)"
+    },
+    {
+      "id": "dgelf-code-tva-2019",
+      "type": "book",
+      "title": "Code de la taxe sur la valeur ajoutée, loi relative au droit de consommation, leurs textes d'application et textes connexes — mis à jour au 1er janvier 2019",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "title-short": "Code de la TVA et du droit de consommation, éd. 2019",
+      "note": "citation-key: dgelf-code-tva-2019\nÉdition officielle de l'administration (Ministère des finances, DGELF), en français ; code consolidé, qui n'est pas le Journal officiel. Tableau A nouveau p. 51-62 environ, tableau B nouveau jusqu'à la p. 70 (pagination imprimée relevée dans la couche texte, bornes à relire). Copie locale : PDFs-legislation-tunisie/PDFs/TVA/Code_de_la_Taxe_sur_la_Valeur_Ajoutée_2019.pdf, 295 pages, SHA-256 02a39b9faeecca350ffd8366f37a8c60f7c306c756d61507669e8d95f5530878. Adresse d'origine du fichier non établie : pas d'URL."
+    },
+    {
+      "id": "dgelf-code-tva-2021",
+      "type": "book",
+      "title": "Code de la taxe sur la valeur ajoutée, loi relative au droit de consommation, leurs textes d'application et textes connexes — mis à jour au 1er janvier 2021",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "title-short": "Code de la TVA et du droit de consommation, éd. 2021",
+      "note": "citation-key: dgelf-code-tva-2021\nÉdition officielle de l'administration (Ministère des finances, DGELF), en français ; code consolidé, qui n'est pas le Journal officiel. Tableaux A et B nouveaux p. 52-71 environ (bornes à relire). Copie locale : PDFs-legislation-tunisie/PDFs/TVA/Code_de_la_Taxe_sur_la_Valeur_Ajoutée_2021.pdf, 310 pages, SHA-256 ff41eba7787ecd90438fc4840b3e76d686f7a6d9166c3cdc2d18eff6755f57d2. Adresse d'origine du fichier non établie : pas d'URL."
+    },
+    {
+      "id": "dgelf-code-tva-2025",
+      "type": "book",
+      "title": "مجلة الأداء على القيمة المضافة والقانون المتعلق بالمعلوم على الإستهلاك ونصوصهما التطبيقية ونصوص مختلفة ذات الصلة — محيّنة في غرّة جانفي 2025",
+      "author": [
+        {
+          "literal": "Tunisie. Ministère des finances, Direction générale des études et de la législation fiscales"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "title-short": "Code de la TVA et du droit de consommation, éd. 2025 (arabe)",
+      "note": "citation-key: dgelf-code-tva-2025\nÉdition officielle de l'administration (Ministère des finances, DGELF), EN ARABE SEULEMENT (langue : arabe) ; code consolidé, qui n'est pas le Journal officiel. Titre et mention de mise à jour lus à l'image sur la couverture. Art. 7 p. 21-22 ; tableau A nouveau p. 49-60 ; tableau B nouveau p. 62-69. Copie locale : PDFs-legislation-tunisie/PDFs/TVA/Code_de_la_Taxe_sur_la_Valeur_Ajoutée_2025.pdf, 313 pages, SHA-256 38080adbfefa87609feda473cba07a63d955b70ad46ab12faf9d42eb86d79365. Couche texte : ligatures lam-alif abîmées à l'extraction — toute citation arabe se relit à l'image. Adresse d'origine du fichier non établie : pas d'URL."
+    },
+    {
+      "id": "recueil-tva-bm-2008",
+      "type": "book",
+      "title": "Livre 3. Code de la TVA",
+      "title-short": "Recueil privé du code de la TVA (état après la LF 2008)",
+      "URL": "http://www.bm.com.tn/ckeditor/files/code_tva.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            7
+          ]
+        ]
+      },
+      "note": "citation-key: recueil-tva-bm-2008\nCONSOLIDATION PRIVÉE, NON OFFICIELLE, sans auteur ni éditeur : le PDF ne porte ni l'un ni l'autre, et il est servi par le site du cabinet Best Management (bm.com.tn). Aucune date d'édition dans le document (métadonnées du PDF : créé le 10 janvier 2008) ; état du droit reflété : dernière loi citée en note, n° 2007-70 (loi de finances pour 2008). 38 pages ; tableau A p. 21-30, tableau B p. 31-32, tableau B bis p. 33-34, loi n° 2002-103 p. 38 ; notes par numéro (article et loi). Tableau C absent. Fichier relu à l'adresse indiquée le 7 octobre 2026 (200, application/pdf), identique octet pour octet à la capture du 23 octobre 2016 des archives du web (https://web.archive.org/web/20161023112429/http://www.bm.com.tn:80/ckeditor/files/code_tva.pdf). Copie : tunisia-data/data/raw/minfinances/codes_tva/code_tva_2008_fr.pdf, 167 789 octets, SHA-256 458fed58bdfd432cd3d6dd3de22c86b94e4a750907202f28d5bbdf8d5abf3015. Se cite « d'après le recueil privé de 2008 » ; ne vaut pas Journal officiel."
+    },
+    {
+      "id": "recueil-codes-sefac-2014",
+      "type": "book",
+      "title": "Recueil des codes fiscaux",
+      "publisher": "SEFAC — Société d'Études, de Formation, d'Assistance & de Conseil",
+      "title-short": "Recueil SEFAC des codes fiscaux (état après la LF 2014)",
+      "URL": "http://www.bm.com.tn/ckeditor/files/les_codes_definitifs_2014.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            7
+          ]
+        ]
+      },
+      "note": "citation-key: recueil-codes-sefac-2014\nCONSOLIDATION PRIVÉE, NON OFFICIELLE : recueil de l'impôt sur le revenu et de l'impôt sur les sociétés, de la TVA et du droit de consommation, de l'enregistrement et du timbre, des droits et procédures fiscaux et de la fiscalité locale ; page de garde « SEFAC — Société d'Études, de Formation, d'Assistance & de Conseil » ; servi par le site du cabinet Best Management (bm.com.tn). Aucune mention « à jour au » (métadonnées du PDF : créé le 24 janvier 2014) ; état du droit reflété : dernière loi citée dans la partie TVA, n° 2013-54 (loi de finances pour 2014). 364 pages ; tableau A p. 160-172, tableau B p. 174-175, tableau B bis p. 177-178 ; chaque numéro annoté de l'article et de la loi qui l'a ajouté, modifié ou abrogé. Tableau C absent. Deux discordances relevées contre le JORT : « LF Comp 2012-8 » pour la loi n° 2012-1 ; « Art 27 LF 2013-54 » pour l'article 29 (sukuk). Fichier relu à l'adresse indiquée le 7 octobre 2026 (200, application/pdf), identique octet pour octet à la capture du 8 octobre 2018 des archives du web (https://web.archive.org/web/20181008125535/http://www.bm.com.tn:80/ckeditor/files/les_codes_definitifs_2014.pdf). Copie : tunisia-data/data/raw/minfinances/codes_tva/code_tva_2014_fr.pdf, 1 770 955 octets, SHA-256 e7a199bb824c1850aa4fbff48cf3a401b4ffa2f4661ffa8cf90772a3009e4c22. Se cite « d'après le recueil privé de 2014 »."
+    },
+    {
+      "id": "iort-code-tva-2016",
+      "type": "book",
+      "title": "Code de la taxe sur la valeur ajoutée, loi relative au droit de consommation, leurs textes d'application et textes connexes — 2016",
+      "publisher": "Publications de l'Imprimerie officielle de la République tunisienne",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            2,
+            29
+          ]
+        ]
+      },
+      "title-short": "Code de la TVA, Imprimerie officielle, éd. 2016",
+      "URL": "https://chaexpert.com/documents/2016%20-%20CODE%20TVA%202016.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            7
+          ]
+        ]
+      },
+      "note": "citation-key: iort-code-tva-2016\nÉdition officielle de l'Imprimerie officielle, en français, 542 pages ; mention portée : « Edition revue et corrigée le 29 février 2016 ». Tableaux A, B et B bis « nouveaux » (état après la LF 2016). TABLEAU C IMPRIMÉ EN ENTIER p. 53-74, avec les numéros du tarif (212 lignes), sous le titre des dispositions abrogées par l'article 13 de la loi n° 2006-80 : état du tableau à la veille de sa suppression (retraits de 1989 à 1998 portés : 49 positions éprouvées contre le JORT, note documentaire sur les tableaux, § 8). Fichier servi par un site tiers (chaexpert.com), relu à l'adresse indiquée le 7 octobre 2026 (200, application/pdf), identique octet pour octet à la copie locale ; capture des archives du web du 10 juin 2023 (https://web.archive.org/web/20230610154921/http://chaexpert.com/documents/2016%20-%20CODE%20TVA%202016.pdf). Copie : tunisia-data/data/raw/minfinances/codes_tva/code_tva_2016_fr.pdf, 2 142 282 octets, SHA-256 77203067f2832760bc9da4e63317382925857fdef841affd8b407da3b48c8bfb."
+    },
+    {
+      "id": "iort-code-tva-2017",
+      "type": "book",
+      "title": "Code de la taxe sur la valeur ajoutée, loi relative au droit de consommation, leurs textes d'application et textes connexes — 2017",
+      "publisher": "Publications de l'Imprimerie officielle de la République tunisienne",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            15
+          ]
+        ]
+      },
+      "title-short": "Code de la TVA, Imprimerie officielle, éd. 2017",
+      "URL": "https://web.archive.org/web/20181220234514/http://www.legislation.tn:80/sites/default/files/codes/TVA.pdf",
+      "archive_location": "http://www.legislation.tn:80/sites/default/files/codes/TVA.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            7
+          ]
+        ]
+      },
+      "archive": "Internet Archive (Wayback Machine)",
+      "note": "citation-key: iort-code-tva-2017\nSite de l'Imprimerie officielle (legislation.tn) inaccessible (HTTP 503 le 7 octobre 2026) ; consulté dans la capture du 20/12/2018 (horodatage 20181220234514 lu dans le CDX le 7 octobre 2026). Édition officielle de l'Imprimerie officielle, en français, 471 pages ; mention portée : « Edition revue et corrigée le 15 mars 2017 ». Tableaux A et B nouveaux (état après la LF 2017) ; tableau B bis nouveau imprimé parmi les dispositions abrogées par l'article 27 de la loi n° 2016-78 (vers la p. 79) ; tableau C reproduit. Fichier identique octet pour octet sur un site tiers : https://chaexpert.com/documents/CODE%20TVA.pdf (200 le 7 octobre 2026). Copie : tunisia-data/data/raw/minfinances/codes_tva/code_tva_2017_fr.pdf, 3 826 418 octets, SHA-256 517ae10acf6174da4df8e369d1cf7fe4fc057f425669d652d292c7a8f2097060."
+    },
+    {
+      "id": "jurisite-code-tva",
+      "type": "webpage",
+      "title": "Code de la TVA",
+      "container-title": "Jurisite Tunisie",
+      "URL": "http://www.jurisitetunisie.com/tunisie/codes/tva/tva1000.htm",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            7
+          ]
+        ]
+      },
+      "title-short": "Jurisite Tunisie, code de la TVA (consolidation privée)",
+      "note": "citation-key: jurisite-code-tva\nCONSOLIDATION PRIVÉE, NON OFFICIELLE, sans auteur : pages tva1000 (sommaire), tva1000A1 à A5 (tableau A), tva1000B, tva1000Bbis, tva1000C1 à C5 (tableau C). Aucune date d'édition dans les pages : la seule date sûre est l'horodatage de chaque capture des archives du web (de 2002 à 2017) ; le site n'est plus tenu à jour après la loi n° 2009-71 (dernière loi citée selon la page : n° 2007-70 pour A1 à A3, n° 2008-77 pour A4, n° 2009-71 pour B). L'adresse indiquée répond (200) le 7 octobre 2026, mais les états lus sont ceux des captures, dont la première du sommaire est https://web.archive.org/web/20020618095808/http://jurisitetunisie.com:80/tunisie/codes/tva/tva1000.htm. 113 fichiers et un manifeste (adresse d'origine, horodatage, octets, SHA-256 par fichier) : tunisia-data/data/raw/minfinances/codes_tva/jurisite_html/MANIFESTE.csv. Tableau C sans numéros de tarif. Employé comme contrôle seulement ; mise à jour inégale d'une page à l'autre : ne donne pas un état daté."
+    },
+    {
+      "id": "loi-2002-103-voitures-4cv",
+      "type": "legislation",
+      "title": "Loi n° 2002-103 du 23 décembre 2002, portant institution d'un régime fiscal privilégié concernant les voitures de tourisme dont la puissance ne dépasse pas 4 chevaux vapeur fiscaux",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "104",
+      "issued": {
+        "date-parts": [
+          [
+            2002,
+            12,
+            23
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2002/2002F/Jo1042002.pdf",
+      "title-short": "Loi n° 2002-103 du 23 décembre 2002",
+      "page": "3104",
+      "note": "citation-key: loi-2002-103-voitures-4cv\nJORT n° 104 du 24 décembre 2002. Régime fiscal des voitures de tourisme de 4 chevaux fiscaux au plus, hors tableaux de la TVA (taux de 12 % et droit de consommation de 10 % d'après le recueil privé de 2008, p. 38). Article 4 : abrogation du numéro I-2 du tableau B bis, d'après le recueil de 2014. Sommaire du fascicule français lu ; texte de la loi non relu pour cette entrée. Page : début de la loi d'après jort_cache.db. URL lue dans pdf_fr de jort_cache.db."
+    },
+    {
+      "id": "loi-2006-71-tva-28f",
+      "type": "legislation",
+      "title": "Loi n° 2006-71 du 28 octobre 2006, modifiant le code de la taxe sur la valeur ajoutée",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "88",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            10,
+            28
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2006/2006F/Jo0882006.pdf",
+      "title-short": "Loi n° 2006-71 du 28 octobre 2006",
+      "page": "3870",
+      "note": "citation-key: loi-2006-71-tva-28f\nJORT n° 88 du 3 novembre 2006, p. 3870 (sommaire et pied de page du fascicule français lus). D'après jort_cache.db, l'article 1er remplace le sous-paragraphe 3 du paragraphe f du numéro 28 du tableau A du code de la TVA, tel qu'ajouté par la loi n° 98-111 (loi de finances pour 1999) ; le contenu de l'article n'a pas été relu pour cette entrée. URL lue dans pdf_fr de jort_cache.db."
+    },
+    {
+      "id": "loi-99-70-microcredits",
+      "type": "legislation",
+      "title": "Loi n° 99-70 du 15 juillet 1999, relative aux dispositions fiscales régissant les microcrédits accordés par les associations",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "58",
+      "issued": {
+        "date-parts": [
+          [
+            1999,
+            7,
+            15
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1999/1999F/Jo05899.pdf",
+      "title-short": "Loi n° 99-70 du 15 juillet 1999",
+      "page": "1200",
+      "note": "citation-key: loi-99-70-microcredits\nJORT n° 58 du 20 juillet 1999. Intitulé lu au sommaire du fascicule français (couche texte à police décalée, décodée). Son article 2 est cité par le recueil privé de 2014 parmi les sources du numéro 39 du tableau A (intérêts, microcrédits) ; texte de la loi non relu pour cette entrée. Ne pas confondre avec la loi organique de la même séance relative aux microcrédits accordés par les associations. Page : début de la loi d'après jort_cache.db. URL lue dans pdf_fr de jort_cache.db."
+    },
+    {
+      "id": "loi-2009-32-restauration-formation",
+      "type": "legislation",
+      "title": "Loi n° 2009-32 du 23 juin 2009, relative à l'octroi d'avantages fiscaux aux prestations de restauration au profit des élèves et des apprenants dans les centres de formation professionnelle de base",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "51",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            6,
+            23
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2009/2009F/Jo0512009.pdf",
+      "title-short": "Loi n° 2009-32 du 23 juin 2009",
+      "page": "1660",
+      "note": "citation-key: loi-2009-32-restauration-formation\nJORT n° 51 du 26 juin 2009, p. 1660. Article 3, lu sur le fascicule français : modifie le numéro 30 bis du tableau A du code de la TVA (restauration au profit des étudiants, des élèves et des apprenants des centres de formation professionnelle de base, selon un cahier des charges). Le registre jort_cache.db donne par erreur à cet enregistrement le numéro 2009-39 (recid 109742) ; le numéro imprimé est 2009-32, ce que confirment le sommaire et le texte du fascicule. Ne pas confondre avec la loi n° 2009-39 du 8 juillet 2009 (retraite avant l'âge légal). URL lue dans pdf_fr de jort_cache.db."
     }
   ]
 }
