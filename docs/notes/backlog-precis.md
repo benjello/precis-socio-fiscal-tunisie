@@ -29,11 +29,52 @@ et de leur mise en œuvre, puis chronologie complète repliée (bloc `.chronolog
 À juger avant toute extension ; la liste de contrôle est dans la note. Ensuite : conventions de
 rédaction, consigne du rédacteur, rôle « architecte » à créer, reprise des autres chapitres.
 
+**Prototype étendu à tout le chapitre de la TVA (7 octobre 2026, non commité, en attente du
+jugement du propriétaire).** `_tva.qmd` est réécrit selon
+`docs/notes/fiscalite-tva-plan-architecte.md` (§ 2, corrigé par le § 11) et
+`docs/notes/fiscalite-tva-objets-des-reformes.md` : en bref ; mise en place 1988-1990 ; quatre
+grandes réformes et une clôture « depuis 2018 » ; bilan des taux et état du droit ; huit
+sections de dispositif, chacune avec son registre replié ; longue période. Réorganisation sans
+perte : les 62 clés, les 163 couples (clé, localisateur), les 38 ancres de glossaire, les
+15 identifiants, les 6 TODO et l'ancre RECHERCHE du départ sont tous à l'arrivée. Le texte
+passe de 11 000 à 22 300 mots, dont 13 000 au premier plan (8 300 au départ) : quatorze blocs
+repliés au lieu de deux. Reste à trancher ou à faire :
+
+- **deux formes concurrentes des trajectoires par opération** (`#sec-tva-trajectoires` et
+  `@tbl-tva-trajectoires` dans l'état du droit), signalées par un `TODO (propriétaire)` : la
+  forme non retenue est à retirer ;
+- **frise des réformes** (`TODO (rédacteur)` dans « En bref ») : demande une petite série de
+  jalons à verser (plan, § 6.0) ;
+- **quatre clés à verser par le bibliographe** (entrées CSL au § 6 de la note des objets) :
+  `minfin-plf-2018` (exposés des motifs du projet de loi de finances pour 2018 — le paragraphe
+  de la réforme de 2016-2018 est écrit, attribué, sans appel de citation ; la prévision de
+  313 MD par an n'est pas écrite), `dgelf-nc-2023-05` (note commune n° 5/2023, professions non
+  commerciales), `rectificatif-lf-1993` (JORT n° 33 du 4 mai 1993), `minfin-plf-2014`
+  (exposé des motifs sur les paiements en espèces : à relire à l'image, non écrit) ;
+- **classements à confirmer** : 2014 (achats en espèces) et 2016 (facture électronique) sont
+  portés « rupture » dans leurs registres, que le plan donnait pour « possibles » ;
+  `tbl-tva-suspension-sectorielle` garde sa forme d'origine, sans colonne « Portée » ;
+- **registres bornés à ce que le chapitre établissait** : les lignes que seules les notes
+  `fiscalite-tva-reformes.md` et `fiscalite-tva-deductions-documentation.md` connaissent (plan,
+  § 5 : colonnes « N2 », « N3 ») ne sont pas versées — retouches des tableaux A, B et C de
+  1989 à 1994, lois de finances pour 1997, 2019, 2021 (art. 26), 2024 (art. 50), quatre lignes
+  de la restitution, retouches de l'article 9 connues par le seul code consolidé. Texte présent
+  au corpus pour la plupart ; lectures à confirmer à l'image avant versement ;
+- **état du droit du cœur en 2026** : seule la grille est établie ; tableau A en vigueur et
+  listes des taux de 7 % et de 13 % à établir (`TODO (documentaliste)` dans
+  `#sec-tva-etat-du-droit`) ; contenu des art. 46 et 47 de la loi de finances pour 2026 à
+  détailler au registre `tbl-tva-taux-perimetre` ;
+- **longue période** : aucune figure nouvelle ; restent la figure du rendement par segments de
+  base du PIB avec les réformes marquées, la place dans la fiscalité indirecte, la taxe
+  rapportée à la consommation privée, le partage intérieur/importation (plan, § 6.1 à 6.6) ;
+- **version arabe** : le chapitre arabe est structurellement en retard jusqu'à la passe de
+  traduction ; les attributs `titre` des douze nouveaux blocs repliés sont à traduire.
+
 ## Vue d'ensemble
 
 | Livre | État du texte | Première lecture faisable |
 |---|---|---|
-| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et un chapitre transversal sur les dépenses fiscales et les régimes d'incitation (6 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
+| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et un chapitre transversal sur les dépenses fiscales et les régimes d'incitation (6 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; PNAFN historique sans sources pour ses onze dates et montants | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
@@ -114,6 +155,19 @@ leur présence et leur lisibilité au corpus restent à vérifier fascicule par 
 l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_cache`), et les
 144 décrets de l'article 8 signés de 1988 à 1997, connus par leur seul intitulé. La fiche
 `r-tva-mise-en-application-post-1989` reste ouverte.
+
+**TVA — dates d'effet et objets des lois (7 octobre 2026)**, d'après
+`docs/notes/fiscalite-tva-objets-des-reformes.md`. Écrit au chapitre : les rubriques sous
+lesquelles les lois rangent leurs articles de TVA ; l'absence d'article final de date
+d'application dans les lois de finances pour 1990, 1991 et 1993 ; la clause générale de la loi
+de finances pour 1994 (art. 77), citée dans l'encadré des dates ; le rectificatif du 4 mai 1993
+(art. 102), au registre des forfaits ; pour 2023, « certaines professions non commerciales »
+au lieu de « les professions libérales » (le décret-loi abroge un tiret de l'article 7 sans
+écrire de taux ; les professions de santé restent à 7 %) ; le paragraphe 1 de l'art. 27 de la
+loi de finances pour 2021 (dons, art. 9), au registre de la déduction. Restent : la date
+d'effet de la mensualisation de 1994 (art. 31 et 32), non écrite tant que l'absence de clause
+propre n'est pas confirmée à l'image ; l'édition française du décret-loi n° 2022-79, absente ;
+le texte qui a modifié l'art. 10 de la loi de finances pour 2017.
 
 **TVA — taux dans le temps (7 octobre 2026).** Le tableau des générations de taux
 (`@tbl-tva-taux`) n'est plus fait main : `scripts/generate_bareme_tables.py` l'engendre
@@ -1390,7 +1444,7 @@ l'information.
 | `_impot_societes.qmd` | conforme | — |
 | `_impot_fortune.qmd` | conforme ; s'achève sur une case vide (aucune série de rendement) | traduction arabe à déclarer dans le `_quarto.yml` AR |
 | `_droits_consommation.qmd` | historique remonté en tête | la chronologie du périmètre reste un tableau sans récit texte par texte — signalé, non confirmé |
-| `_tva.qmd` | conforme au plan type : historique, architecture de 1988, évolution réforme par réforme, longue période | `@sec-tva-deduction` suit le même plan (mécanisme, textes, données) ; les données du crédit sont une figure engendrée (`@fig-tva-credit-restitutions`), dont les séries restent à prolonger après 2014 ; le tableau des générations de taux (`@tbl-tva-taux`) et la figure des taux dans le temps (`@fig-tva-taux`) sont engendrés depuis le 7 octobre 2026 |
+| `_tva.qmd` | **prototype du chantier « ruptures au premier plan »** (7 octobre 2026, à juger) : en bref, mise en place, grandes réformes, bilan des taux et état du droit, dispositifs, longue période | voir l'entrée du chantier en tête de ce fichier ; `@sec-tva-deduction` garde ses données et ses études à leur place ; les données du crédit sont une figure engendrée (`@fig-tva-credit-restitutions`), dont les séries restent à prolonger après 2014 ; le tableau des générations de taux (`@tbl-tva-taux`) et la figure des taux dans le temps (`@fig-tva-taux`) sont engendrés depuis le 7 octobre 2026 |
 | `_impot_revenu.qmd` | conforme, à sa manière | rien sur la forme ; restent deux sections à ÉCRIRE, voir plus bas |
 | `retraites/_secteur_*.qmd` | **rangés par mécanisme, et c'est bien** | ne pas y appliquer le plan type |
 | `_regime_indiciaire.qmd` | fait le travail sous d'autres noms | ne rien reprendre sur la forme |
