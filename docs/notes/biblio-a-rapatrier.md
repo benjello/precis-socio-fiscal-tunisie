@@ -3433,3 +3433,30 @@ Dix-sept clés neuves dans `precis/{fr,ar}/fiscalite/references.json`, absentes 
 `minfin-rapport-budget-2014` (p. 16) ; captures lues au CDX. TODO du rédacteur soldé dans `_tva.qmd`. Entrées ministérielles :
 `language` omis (perte Zotero connue). Seul le TODO (bibliographe) sur les décrets de 1998 à 2014 reste dans `_tva.qmd`, hors section.
 - [ ] `dry-run` : s'arrête sur `dafflon-2021-budget-local` (type `chapter`, préexistant) avant de convertir les autres références ; à corriger pour que l'action aille au bout.
+
+## Versement du 07/10/2026 (fiscalité, TVA « tableaux A, B, B bis, C » — temps 1, avant la rédaction) — À REPORTER DANS ZOTERO
+
+Douze clés neuves dans `precis/{fr,ar}/fiscalite/references.json` (mêmes identifiants), absentes de Zotero. Source : annexe A et § 9 de
+`docs/notes/fiscalite-tva-tableaux-produits.md`, § 2 de `docs/notes/fiscalite-tva-codes-consolides.md`.
+
+- Éditions **officielles** du code (4) : `dgelf-code-tva-2019`, `dgelf-code-tva-2021`, `dgelf-code-tva-2025` (arabe seul) — sans URL, adresse d'origine non
+  établie — ; `iort-code-tva-2016` (URL : copie servie par chaexpert.com, identique octet pour octet) ; `iort-code-tva-2017` (site de l'Imprimerie officielle
+  en 503 le 07/10/2026 : capture du 20/12/2018, champs `archive`, `archive_location`, `accessed`). `dgelf-code-tva-2023` : pages des tableaux, empreinte et
+  `citation-key` ajoutés (déjà au dépôt).
+- Consolidations **privées**, non officielles (3) : `recueil-tva-bm-2008` (type `book`, sans auteur ni éditeur, sans date), `recueil-codes-sefac-2014` (éditeur SEFAC,
+  sans date), `jurisite-code-tva` (page web) ; dans les deux recueils, la date de création du PDF et la dernière loi citée sont en note, pas dans `issued`.
+- Lois lues pour les cases et changements datés du § 9 (4) : `loi-2002-103-voitures-4cv`, `loi-2006-71-tva-28f`, `loi-99-70-microcredits`,
+  `loi-2009-32-restauration-formation`. URL lues dans `pdf_fr` / `pdf_ar` de `jort_cache.db`.
+- **`lfc-2015` promue au fonds commun** (FR et AR ; venue de `compensation`, désormais citée par la compensation et la TVA ; notes fusionnées) — dans Zotero,
+  à **déclasser** de la collection « Compensation ». Page de début corrigée : 1887 (la note de la compensation disait 1886).
+- Pages d'articles ajoutées aux notes de `lf-2016`, `lf-2017`, `lf-2022`, `lf-2024`, `lf-2025`, `lf-2026` (champ `page` intact).
+
+- [ ] **Anomalie du registre** : `jort_cache.db` (recid 109742) numérote 2009-39 la loi du 23 juin 2009 sur la restauration dans les centres de formation ; le fascicule imprime
+  **n° 2009-32**. À signaler à `PDFs-legislation-tunisie`. La clé `loi2009-39` du fonds commun (loi du 8 juillet 2009, retraite) est une autre loi.
+- [ ] Lois citées dans les notes de 2014 : seules les clés ci-dessus manquaient ; la « loi 2012-8 » du recueil est la loi n° 2012-1 (`lfc-2012`), pas de clé à créer.
+- [ ] `loi-2002-103-voitures-4cv`, `loi-2006-71-tva-28f`, `loi-99-70-microcredits` : texte non relu pour ces entrées (sommaire du fascicule et notes des recueils) ; l'article 2 de la loi 99-70 et l'article 4 de la loi 2002-103 restent à lire avant d'en faire une source d'état du droit.
+- [ ] Pas d'URL : `dgelf-code-tva-2019`, `-2021`, `-2025` (adresse d'origine non établie ; script `download_tva.py` ne donne que la page d'index de jibaya.tn).
+- [ ] La loi de finances pour 2016 n'a pas d'édition française sur pist.tn (404) : `lf-2016` FR reste sans URL ; `lf-2026` et `lf-2023` (décret-loi) FR idem, arabe seul.
+- [ ] `iort-code-tva-2016` : nombre de lignes du tableau C (212 en annexe A, 210 au § 3 de la note des codes consolidés) et bornes de pages à réconcilier.
+- [ ] Règle d'archive appliquée : `bm.com.tn`, `chaexpert.com` et `jurisitetunisie.com` répondent encore (200) et servent des fichiers identiques aux captures : leur URL reste l'adresse d'origine, la capture n'est citée qu'en note ; seul `iort-code-tva-2017` (503) suit la convention des documents retirés ou inaccessibles. À trancher si l'on préfère l'archive partout.
+- [ ] `push_biblio.py --verifier` : 1043 entrées, 2 pertes préexistantes (`dafflon-2021-budget-local`, `minfin-cnf-2013-forfait`), aucune du fait de ce versement. `dry-run` et `controle-rangement` : à lancer sur la branche poussée (workflow `biblio-zotero`, sans effet sur du non-versionné) ; `ranger` après le rapatriement.

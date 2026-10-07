@@ -31,7 +31,7 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   toi-même au `_quarto.yml` arabe**, une fois sa traduction livrée — sans quoi il ne sera servi dans
   aucune des deux langues. Un fichier malformé ou des chapitres qui dérivent sont attrapés par
   `rendre-les-livres.yml`, qui rend les dix-huit livres sur chaque PR.
-- **Ne modifie pas les fichiers engendrés** : `_glossaire.qmd`, `translation_glossary.generated.md`,
+- **Ne modifie pas les fichiers engendrés** : `_glossaire.qmd`, `_glossaire.infobulles.html`, `translation_glossary.generated.md`,
   `precis/*/*/tables/*`.
 - **Aucune valeur isolée, aucune date, aucune URL sans source vérifiée.** Une case vide honnête vaut
   mieux qu'une valeur plausible. Exception éditoriale : une **série historique importante déjà
@@ -86,12 +86,33 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
 - **Les études citées sont récupérées** : le PDF de toute étude citée est rangé dans
   `tunisia-data` (`data/raw/`, hors git, catalogué dans `sources/`). On ne cite pas de seconde
   main ce qu'on peut obtenir.
+- **Les ruptures au premier plan, le détail replié.** Un chapitre se lit dans cet ordre : vue
+  d'ensemble ; mise en place ; grandes réformes, dans l'ordre des dates, avec ce que la loi
+  cherche dans ses propres mots (rubriques des lois) ; bilan et état du droit ; une section par
+  disposition secondaire ; longue période économique. Dans chaque section : l'essentiel en une
+  phrase, la vue d'ensemble (figure ou tableau court), deux à quatre points, puis le détail dans
+  un bloc `.chronologie-repliable` — le long tableau des textes, entier, avec sa colonne
+  « Portée » (rupture, étape, ajustement). `docs/agents/architecte.md` donne le plan,
+  `docs/agents/redacteur.md` l'écriture, `docs/notes/chantier-ruptures-au-premier-plan.md` le
+  mode d'emploi de la conversion d'un chapitre.
+- **Le texte principal se suffit.** On écrit comme si le lecteur ne lisait que lui, et pas dans
+  l'ordre : une section dit son objet avant son évolution ; une notation se redéfinit là où elle
+  sert ; rien ne dépend d'un bloc replié ; un renvoi vers une autre section se place en tête ;
+  pas de métaphore pour nommer une chose du droit.
+- **Les références de loi sortent du fil de la phrase.** Dans une section `.domicile-unique`, le
+  nom du texte ou la date est un lien `[…](#r-…)` vers sa ligne de registre, qui porte la
+  référence complète (texte, article, page) et alimente l'infobulle ; les autres sources
+  (budget, rapports, études, recueils) restent citées sur place. Un seul modèle de renvoi pour
+  les lois, le glossaire et les sections : signal sur le mot, infobulle où l'on peut cliquer,
+  retour d'un geste. `scripts/check_domicile_references.py` le vérifie.
+- **Un paramètre de la législation se retrouve toujours.** Replié ne veut pas dire caché : le
+  bloc porte un titre qui dit ce qu'il contient, « Tout déplier » l'ouvre, la recherche l'ouvre.
 - **Aucun chiffre ponctuel isolé** : toute valeur vient avec sa vue d'évolution datée. Et dans un
   tableau de textes, la colonne de contenu donne le changement concret — article, avant → après —,
   sinon la ligne n'a rien à y faire.
 
-Les rôles éditoriaux — documentaliste, rédacteur, terminologue, bibliographe, relecteur-ar,
-modeliste — sont décrits dans `docs/agents/<role>.md`, en texte neutre, indépendant de l'outil et
+Les rôles éditoriaux — documentaliste, architecte, rédacteur, terminologue, bibliographe,
+relecteur-ar, modeliste — sont décrits dans `docs/agents/<role>.md`, en texte neutre, indépendant de l'outil et
 du fournisseur de LLM. La chaîne éditoriale va du premier au dernier, et s'arrête pour revue
 humaine. Voir « Économiser » pour le lien vers `.claude/agents/`.
 

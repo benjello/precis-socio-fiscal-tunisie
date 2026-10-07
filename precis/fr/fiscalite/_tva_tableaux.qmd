@@ -1,0 +1,999 @@
+# Les tableaux annexés au code de la taxe sur la valeur ajoutée {#sec-tva-tableaux .domicile-unique}
+
+Le code de la [taxe sur la valeur ajoutée](#g-tva) (TVA) ne nomme pas, dans ses articles, les produits et les services qu'il exonère ou qu'il soumet à un taux particulier : il renvoie à des tableaux qui lui sont annexés. Cette annexe dit ce que sont ces tableaux, ce qu'ils deviennent de 1988 à 2026, et en donne le contenu, numéro par numéro, à trois dates : le 1^er^ juillet 1988, le 1^er^ janvier 2017 — après la refonte opérée par les lois de finances pour 2016 et 2017, dont la première étape, au 1^er^ janvier 2016, est donnée aussi — et le 1^er^ janvier 2026. Le chapitre de la taxe en tire une vue par grandes catégories de produits et de services (@sec-tva-regimes-categories).
+
+Les tableaux ne disent pas tout du régime d'un bien. Ils ne couvrent ni les opérations placées hors du champ de la taxe, ni l'exonération à la revente au détail, ni les [régimes suspensifs](#g-regime-suspensif-tva), ni les réductions accordées par décret (@sec-tva-reductions-annuelles). Un produit qui sort du tableau des exonérations n'est donc pas, de ce seul fait, taxé.
+
+## Quatre tableaux, de 1988 à 2026 {#sec-tva-tableaux-nature}
+
+[Le code de 1988](#r-tva-tab-1988) a trois tableaux, désignés par une lettre. Le [tableau A](#g-tableau-a-tva) énumère les opérations exonérées. Le [tableau B](#g-tableau-b-tva) énumère celles que l'article 7 soumet au [taux réduit](#g-taux-reduit-tva). Le [tableau C](#g-tableau-c-tva) est une liste de positions du tarif des douanes, soumises au [taux majoré](#g-taux-majore-tva). Tout ce qui ne figure dans aucun des trois relève du [taux normal](#g-taux-normal-tva) : c'est la règle générale du premier alinéa de l'article 7, qui vise les biens et services « non soumis à un autre taux ».
+
+Un quatrième tableau s'y ajoute [au 1^er^ janvier 2002](#r-tva-tab-2002) : le [tableau B bis](#g-tableau-b-bis-tva), qui réunit dans le code les opérations soumises au taux de 10 % créé en 1995 hors du code (@sec-tva-reforme-1995-1996). Le tableau C perd son objet [au 1^er^ janvier 2007](#r-tva-tab-2007), avec la suppression du taux majoré.
+
+La refonte de 2016-2017 se fait en deux lois. [La loi de finances pour 2016](#r-tva-tab-2016) remplace les trois tableaux restants par un « tableau A nouveau », un « tableau B nouveau » et un « tableau B bis nouveau », chacun divisé en produits et en services et renuméroté. [La loi de finances pour 2017](#r-tva-tab-2017) réduit encore le tableau A, allonge le tableau B et abroge le tableau B bis : les opérations qui restent au taux de 12 % sont désormais nommées par l'article 7 lui-même, à son numéro 3. Depuis, le code n'a plus que deux tableaux, et le nombre de leurs numéros a évolué comme suit (@tbl-tva-tableaux-decompte).
+
+: Nombre de numéros de chaque tableau annexé au code de la taxe sur la valeur ajoutée, à quatre dates {#tbl-tva-tableaux-decompte}
+
+| Tableau | 1^er^ juillet 1988 | 1^er^ janvier 2016 | 1^er^ janvier 2017 | 1^er^ janvier 2026 |
+|---|---|---|---|---|
+| A — exonérations | 46 numéros | 54 pour les produits, 20 pour les services | 46 et 19 | 47 et 23 |
+| B — taux réduit | trois paragraphes : neuf groupes de professions, 8 produits, 7 activités | 27 pour les produits, 25 pour les services | 34 et 29 | 42 et 30 |
+| B bis — taux intermédiaire | n'existe pas | 32 pour les produits, 8 pour les services | abrogé ; trois tirets à l'article 7, numéro 3 | deux tirets à l'article 7, numéro 3 |
+| C — taux majoré | plus de deux cents positions du tarif des douanes | supprimé depuis 2007 | supprimé | supprimé |
+
+Le tableau A est donc plus long en 2016 qu'en 1988, pour un champ plus étroit : la refonte découpe en numéros distincts ce que le tableau d'origine réunissait, et fait sortir de l'exonération plusieurs opérations qu'elle reclasse au taux réduit. Le décompte est celui des transcriptions données en fin d'annexe (@sec-tva-tableaux-transcriptions).
+
+## Le sort du tableau C {#sec-tva-tableaux-c}
+
+En 1988, le tableau C ne porte pas seulement des denrées importées. Sur une dizaine de pages du *Journal officiel*, il énumère aussi les eaux minérales, les bières, les vins et les alcools, les tabacs, la parfumerie, les fourrures, la soie et les textiles synthétiques, la vaisselle, la bijouterie, l'électroménager, les téléviseurs, les voitures particulières, les motocycles, les bateaux de plaisance, l'horlogerie, les armes, les jouets et les objets d'art.
+
+Le tableau se réduit avant de disparaître. [La loi de finances pour 1992](#r-tva-tab-1992) en récrit la liste, comme celle du tableau A, selon les numéros du tarif douanier établi sur la base du système harmonisé : c'est pourquoi les positions de 1988 ne sont pas celles des états postérieurs pour les mêmes biens. Cinq lois de finances en retirent des positions : celles [pour 1989](#r-tva-tab-1989), [pour 1991](#r-tva-tab-1991) et [pour 1992](#r-tva-tab-1992) ; [celle pour 1995](#r-tva-tab-1995), qui ramène de 29 % à 17 % dix-neuf positions — sanitaires, réfrigérateurs, chauffage, pneumatiques, éclairage — ; [celle pour 1998](#r-tva-tab-1998), qui en ramène quinze à 18 % — cacao et chocolat, eaux minérales, machines à laver le linge, petit électroménager.
+
+L'état du tableau à la veille de sa suppression est connu par une édition du code : celle que l'Imprimerie officielle publie en 2016 l'imprime encore, parmi les dispositions abrogées, sur environ 210 lignes [@iort-code-tva-2016, p. 53-74]. Aucune des 47 positions que retirent les cinq lois citées n'y figure, et les deux positions qu'elles réduisent y figurent dans leur rédaction réduite. Cette édition peut donc être tenue pour l'état du tableau C au 31 décembre 2006, sous trois réserves : c'est une édition du code, non le *Journal officiel* ; les retraits opérés par les lois de finances pour 1993 et 1994 ne sont pas établis ici ; la concordance porte sur des absences, non sur chaque ligne. D'après cette édition, le taux de 29 % ne frappe plus, à la fin de 2006, ni le café et le thé en l'état, ni le cacao, ni les eaux minérales, les bières, les vins et les tabacs, ni les voitures, les réfrigérateurs, les machines à laver le linge, les sanitaires et les pneumatiques. Il reste surtout sur l'habillement et les textiles, la parfumerie, l'horlogerie, l'électronique grand public, les climatiseurs, les épices et les spiritueux. Le texte qui retire du tableau le café, le thé, les bières, les vins, les tabacs, les voitures et les armes n'est pas établi ici.
+
+<!-- TODO (documentaliste) : établir les retraits du tableau C que les cinq listes ne couvrent pas (café, thé, bières, vins, tabacs, voitures, armes) : tableaux « L » et « M » de la loi de finances pour 1992, art. 83, 84, 94 et 109 de la loi de finances pour 1993, art. 50 et 51 et tableau « M » de la loi de finances pour 1994, art. 71 de la loi de finances pour 2005 ; puis rapprocher ligne à ligne l'édition de 2016. Voir docs/notes/fiscalite-tva-tableaux-produits.md, § 8.6. Ce n'est pas une recherche infructueuse : ces textes sont identifiés, leur contenu reste à relever. -->
+
+Au 1^er^ janvier 2007, [la loi n° 2006-80](#r-tva-tab-2007) supprime le taux de 29 % : les biens encore inscrits au tableau C relèvent du taux normal, alors de 18 %. Cinq lignes seulement sont en outre soumises au [droit de consommation](#g-droit-de-consommation), au taux de 10 % : les parfums et eaux de toilette, les produits de beauté et de maquillage, les climatiseurs, les unités de réfrigération dites « split » et les lave-vaisselle [@dgi-nc-24-2007]. Le reste — textiles, horlogerie, électronique grand public, épices, spiritueux — passe au taux normal sans droit de consommation nouveau (@tbl-dc-transfert-2007).
+
+## Les entrées et les sorties les plus notables {#sec-tva-tableaux-mouvements}
+
+Les rapprochements d'une date à l'autre sont faits par désignation, non par numéro : la numérotation du tableau A change en 1992, puis en 2016, et les positions douanières changent avec la nomenclature.
+
+**Le tableau A, de 1988 à 2015.** Peu de sorties avant la refonte : [la loi de finances pour 1991](#r-tva-tab-1991) réduit l'exonération de la vente d'eau à l'eau destinée à l'agriculture ; [celle pour 1992](#r-tva-tab-1992) supprime celle des bicyclettes ; [la loi de finances complémentaire pour 2014](#r-tva-tab-2014) remplace celle des dons de la coopération internationale par une suspension de la taxe. Les entrées sont plus nombreuses : les télécommunications [en 1995](#r-tva-tab-1995), ramenées à la radio-télédiffusion [en 2003](#r-tva-tab-2002) ; les logements vendus par les [promoteurs immobiliers](#g-promoteur-immobilier) [en 2001](#r-tva-tab-2001) ; puis, d'après le recueil non officiel de 2014, les services postaux, les commissions d'assurance et les opérations de la finance islamique [@recueil-codes-sefac-2014, p. 160-172].
+
+**Le tableau A, en 2016 et 2017.** [La loi de finances pour 2016](#r-tva-tab-2016) fait passer de l'exonération au taux de 6 % les peaux brutes, l'enseignement et les garderies — à compter du 1^er^ septembre 2016 —, les papiers de l'agence Tunis Afrique Presse, les dépliants touristiques, les messages de presse, la radio-télédiffusion, les affaires des agences de voyages avec les hôteliers, les chauffe-eau solaires, les aéronefs, le matériel ferroviaire. L'exploitation des douches sort du tableau A sans entrer dans un autre. [La loi de finances pour 2017](#r-tva-tab-2017) fait de même pour le sucre, les équipements de la maîtrise de l'énergie et des énergies renouvelables, les navires de commerce et leur réparation. Elle abroge aussi les numéros des produits de la pêche tunisienne et de la récolte des propriétés frontalières : le régime qui en résulte n'est pas établi ici, ces produits pouvant se trouver hors du champ de la taxe.
+
+**Le tableau A, depuis 2017.** [La loi de finances pour 2018](#r-tva-tab-2018) limite l'exonération des logements aux logements sociaux. [Le décret-loi de finances pour 2022](#r-tva-tab-2022) retire du tableau le matériel d'armement acquis par l'État, placé sous un régime de suspension, et y fait entrer les commissions des paiements électroniques. [La loi de finances pour 2026](#r-tva-tab-2026) y ajoute le papier destiné à la fabrication du livre et du cahier scolaire.
+
+**Le tableau B.** Il change de contenu plus que de longueur. En 1988, il porte les professions libérales, l'électricité et le gaz, les carburants vendus par les distributeurs, le transport, l'hôtellerie et l'informatique. L'informatique, les téléviseurs et le transport de marchandises en sortent [en 1995](#r-tva-tab-1995) ; les professions libérales non médicales, l'hôtellerie, l'électricité et les produits pétroliers, [en 1996](#r-tva-tab-1996). L'hôtellerie et les activités touristiques y reviennent [en 2015](#r-tva-tab-2015). En 2026, le tableau porte surtout ce qui est sorti de l'exonération en 2016 et 2017, le tourisme, la santé, les intrants de l'agriculture et de la pêche, et des mesures plus récentes : l'électricité de l'irrigation, la téléphonie et l'Internet fixes des particuliers, les véhicules électriques [en 2024](#r-tva-tab-2024), les logements dont le prix ne dépasse pas 400 000 dinars et l'électricité domestique jusqu'à 300 kilowattheures par mois [en 2025](#r-tva-tab-2025).
+
+**Le tableau B bis.** À sa création, [en 2002](#r-tva-tab-2002), il compte 3 numéros de produits et 15 de services ; le « tableau B bis nouveau » de 2016 en compte 32 et 8, après l'entrée de l'électricité et des produits pétroliers [en 2015](#r-tva-tab-lf2015) et celle d'une vingtaine d'intrants de l'agriculture et de la pêche en 2016. À son abrogation, [au 1^er^ janvier 2017](#r-tva-tab-2017), ses numéros suivent trois voies. Les intrants agricoles et de la pêche, les cahiers scolaires, les machines informatiques et le transport de marchandises passent au tableau B, à 6 %. Les produits pétroliers, l'électricité et les professions libérales sont inscrits à l'article 7, au même taux de 12 %. Les services informatiques, la certification électronique, la formation, l'Internet fixe, la restauration autre que celle des restaurants et cafés de première catégorie, les véhicules électriques et les produits d'aide à l'arrêt du tabac ne sont repris nulle part. Aucun article ne dit leur taux : il résulte de la règle générale de l'article 7, c'est-à-dire du taux normal.
+
+<!-- TODO (documentaliste) : confirmer sur la note commune d'application de la loi de finances pour 2017 le passage au taux normal des numéros du tableau B bis non repris (docs/notes/fiscalite-tva-tableaux-produits.md, § 2.5 et § 9.5). -->
+
+## Les sources et leur nature {#sec-tva-tableaux-sources}
+
+Les états donnés ici n'ont pas tous la même autorité.
+
+- **Le *Journal officiel*** pour l'état de 1988, pour les tableaux nouveaux de 2016 et pour ce que la loi de finances pour 2017 y change.
+- **L'édition du code publiée par le ministère des Finances**, à jour au 1^er^ janvier 2025 et en langue arabe, pour l'état le plus récent [@dgelf-code-tva-2025, p. 21-22 et 49-69]. Les libellés français viennent de l'édition à jour au 1^er^ janvier 2023 [@dgelf-code-tva-2023, p. 61-83] et, pour ce qui a changé depuis, des lois de finances ; ceux de la loi de finances pour 2026, publiée en arabe, sont traduits. Quand l'article qui a créé ou modifié un numéro n'est connu que par les notes de cette édition, les transcriptions le disent : « d'après l'édition du code ».
+- **L'édition de l'Imprimerie officielle de 2016**, pour le tableau C à la veille de sa suppression [@iort-code-tva-2016, p. 53-74]. Celle de 2017 imprime le tableau B bis nouveau parmi les dispositions abrogées, sans dire le sort des numéros non repris [@iort-code-tva-2017].
+- **Deux recueils non officiels du code**, récupérés en ligne sur le site d'un cabinet de conseil : l'un de janvier 2008, sans auteur ni éditeur [@recueil-tva-bm-2008, p. 21-34], l'autre de janvier 2014, publié par une société d'études et de conseil [@recueil-codes-sefac-2014, p. 160-178]. Ils donnent l'état des anciens tableaux A, B et B bis entre 1988 et 2016, et portent pour chaque numéro l'article et la loi qui l'ont ajouté, modifié ou abrogé. Ils ne valent pas *Journal officiel* : ce qui en vient est dit « d'après le recueil non officiel ». Un troisième recueil non officiel, un site juridique en ligne, donne les libellés du tableau C sans les numéros du tarif ; il n'a servi que de contrôle [@jurisite-code-tva]. Aucune édition officielle du code antérieure à 2016 n'est identifiée ici.
+
+Les textes de loi cités dans cette annexe sont réunis dans un registre (@tbl-tva-tableaux-textes).
+
+:::: {.chronologie-repliable titre="Les textes qui changent les tableaux, cités dans cette annexe"}
+
+: Les textes cités dans l'annexe et ce qu'ils font aux tableaux, 1988-2026 {#tbl-tva-tableaux-textes}
+
+| Date d'effet | Texte et article | Ce que le texte fait aux tableaux |
+|:-----|:---------|:--------------|
+| []{#r-tva-tab-1988}1^er^ juillet 1988 | code de la TVA, art. 4 et 7, tableaux A, B et C [@loi-88-61-tva, art. 4 et 7 ; @loi-88-61-tva, tableaux A, B et C, p. 833-846] | état d'origine : 46 numéros exonérés ; taux réduit de 6 % ; plus de deux cents positions tarifaires au taux majoré de 29 % |
+| []{#r-tva-tab-1989}non établie | loi de finances pour 1989 [@loi-88-145-lf-1989, art. 23 à 25, p. 1794] | tableau A : forage d'eau, huiles végétales alimentaires ; tableau B : restauration, films en salle, fruits et légumes transformés ; tableau C : préparations pour lessives retirées |
+| []{#r-tva-tab-1991}non établie | loi de finances pour 1991 [@lf-1991, art. 33 et 35, p. 2052] | tableau A : la vente d'eau réduite à l'eau destinée à l'agriculture ; tableau C : cinq positions retirées ou réduites |
+| []{#r-tva-tab-1992}non établie | loi de finances pour 1992 [@lf-1992, art. 35 à 43, p. 2085-2086] | tableaux A et C récrits selon les numéros du tarif douanier du système harmonisé (art. 43) ; tableau A : bicyclettes supprimées (art. 40) ; tableau B : huiles acides, manèges, maïs (art. 35) ; tableau C : neuf positions retirées (art. 37) |
+| []{#r-tva-tab-1995}1^er^ janvier 1995 | loi de finances pour 1995 [@lf-1995, art. 56 à 58, p. 2047 ; @lf-1995, art. 85 et 86 et tableau « M bis », p. 2050 et 2150-2151] | tableau B : informatique, téléviseurs et transport de marchandises portés à 10 % ; tableau A : télécommunications exonérées ; tableau C : dix-neuf positions ramenées de 29 % à 17 % |
+| []{#r-tva-tab-1996}1^er^ avril et 1^er^ septembre 1996 ; date fixée par décret pour l'énergie | loi de finances pour 1996 [@lf-1996, art. 37 à 40, p. 2371-2372] | tableau B : professions libérales non médicales, puis hôtellerie et restauration, portées à 10 % ; électricité, gaz et huiles de pétrole retirés |
+| []{#r-tva-tab-1998}1^er^ janvier 1998 | loi de finances pour 1998 [@lf-1998, art. 27 et tableau « L », p. 2437 et 2557] | tableau C : quinze positions ramenées de 29 % à 18 % |
+| []{#r-tva-tab-2001}1^er^ janvier 2001 | loi de finances pour 2001 [@lf-2001, art. 63, p. 3181] | tableau A : logements vendus par les promoteurs immobiliers exonérés |
+| []{#r-tva-tab-2002}1^er^ janvier 2002 ; 1^er^ janvier 2003 pour les télécommunications | loi de finances pour 2002 [@loi2001-123-lf2002, art. 82 à 84 ; @loi2001-123-lf2002, art. 66 à 70] ; décret n° 2002-3356 [@decret-2002-3356-tva-telecom, art. 1] | création du tableau B bis, à 10 % ; tableau A : l'exonération des télécommunications réduite à la radio-télédiffusion |
+| []{#r-tva-tab-2007}1^er^ janvier 2007 | loi n° 2006-80 du 18 décembre 2006 [@loi-2006-80-reduction-taux, art. 13, 14 et 17, p. 4302-4303] | taux de 29 % supprimé : le tableau C n'a plus d'objet ; cinq de ses lignes soumises au droit de consommation ; tableau B bis porté de 10 % à 12 % |
+| []{#r-tva-tab-2014}non établie | loi de finances complémentaire pour 2014 [@lfc-2014, art. 26 et 27, p. 2102-2103] | tableau A : dons de la coopération internationale retirés, placés sous un régime de suspension |
+| []{#r-tva-tab-lf2015}1^er^ janvier 2015 | loi de finances pour 2015 [@lf-2015, art. 36 et 37] | tableau B bis : électricité, produits pétroliers et produits d'aide à l'arrêt du tabac inscrits |
+| []{#r-tva-tab-2015}non établie : la loi ne fixe pas de date d'application | loi de finances complémentaire pour 2015 [@lfc-2015, art. 20, p. 1892] | hôtellerie et activités touristiques : du tableau B bis, à 12 %, au tableau B, à 6 % |
+| []{#r-tva-tab-2016}1^er^ janvier 2016 ; 1^er^ septembre 2016 pour l'enseignement | loi de finances pour 2016 [@lf-2016, art. 30 et 31, p. 3146-3147 ; @lf-2016, annexes 1, 1 bis, 1 ter et 5, p. 3292-3308 et 3331-3332] | tableaux A, B et B bis remplacés par trois tableaux nouveaux ; douze numéros de l'ancien tableau A abrogés en tout ou en partie, la plupart reclassés à 6 % |
+| []{#r-tva-tab-2017}1^er^ janvier 2017 | loi de finances pour 2017 [@lf-2017, art. 16 à 19, 24 à 28 et 70, p. 3832-3836] | tableau A : dix numéros abrogés, un ajouté ; tableau B : un abrogé, douze ajoutés ; tableau B bis abrogé, trois tirets portés à l'article 7, numéro 3 |
+| []{#r-tva-tab-2017-8}1^er^ avril 2017 | loi n° 2017-8 du 14 février 2017 [@loi-avantages-fiscaux-2017, art. 5] | tableau B : équipements d'investissement (numéro 18 ter) |
+| []{#r-tva-tab-2018}1^er^ janvier 2018 | loi de finances pour 2018 [@lf-2018, art. 43 et 44, p. 4281] | taux du tableau B porté de 6 % à 7 % ; tableau A : logements réduits aux logements sociaux ; un quatrième tiret à l'article 7, numéro 3, pour les autres logements |
+| []{#r-tva-tab-2019}2019 à 2021 | lois de finances pour 2019, 2020 et 2021 [@loi2018-56-lf2019, art. 60, 61, 64, 65 et 86 ; @lf-2020, art. 13 ; @lf-2021, art. 26] | articles donnés d'après l'édition du code : tableau A, soutiens-gorge pour malades du cancer du sein, journaux électroniques, assurance Takaful ; tableau B, panneaux solaires, électricité de l'irrigation, téléphonie et Internet fixes des particuliers |
+| []{#r-tva-tab-2022}1^er^ janvier 2022 | décret-loi de finances pour 2022 [@lf-2022, art. 34, 39, 43 et 50, p. 3089-3096] | tableau A : commissions des marchés de gros et des paiements électroniques ajoutées ; matériel d'armement acquis par l'État retiré, placé en suspension |
+| []{#r-tva-tab-2023}1^er^ janvier 2023 | décret-loi de finances pour 2023 [@lf-2023, art. 44 et 61] | article 7, numéro 3 : tiret des professions libérales supprimé ; tableau B : médecine et chirurgie esthétiques exclues ; tableau A : commissions des distributeurs de recharges téléphoniques — articles donnés d'après l'édition du code |
+| []{#r-tva-tab-2024}1^er^ janvier 2024 | loi de finances pour 2024 [@lf-2024, art. 23, 26 et 50, p. 3473-3481] | tableau A : associations ajoutées au numéro 27, moteurs exclus du matériel de pêche ; tableau B : véhicules électriques (numéro 18 quinquies) |
+| []{#r-tva-tab-2025}1^er^ janvier 2025 | loi de finances pour 2025 [@lf-2025, art. 31, 34, 54, 57, 59 et 64, p. 3428-3449] | tableau B : électricité domestique jusqu'à 300 kilowattheures par mois, logements jusqu'à 400 000 dinars, bus du personnel, olives conservées ; intrants pharmaceutiques retirés, placés en suspension ; tableau A : crédits des plateformes de financement participatif |
+| []{#r-tva-tab-2026}1^er^ janvier 2026 | loi de finances pour 2026 [@lf-2026, art. 36, 47 et 64, p. 4238-4247 de l'édition arabe] | tableau A : associations ajoutées au numéro 27, papier du livre et du cahier scolaire ; tableau B : véhicules hybrides rechargeables |
+
+::::
+
+## Les tableaux, numéro par numéro {#sec-tva-tableaux-transcriptions}
+
+Les blocs qui suivent transcrivent les tableaux. Ils se lisent avec les conventions suivantes. Entre crochets, une clause de procédure abrégée : attestation, conditions, liste fixée par décret. « […] » marque une énumération abrégée. « = » signale un numéro inchangé à la date de la colonne, « — » un numéro qui n'existe pas à cette date. « LF » désigne la loi de finances pour l'année indiquée, « LFC » la loi de finances complémentaire. « D'après l'édition du code » signale un article donné par les notes de l'édition publiée par le ministère des Finances. Les libellés suivent l'orthographe de l'imprimé. Les tableaux nouveaux sont donnés en un seul bloc pour leurs trois dates, le 1^er^ janvier 2016, le 1^er^ janvier 2017 et le 1^er^ janvier 2026 : la loi de finances pour 2017 et les lois postérieures ne récrivent pas ces tableaux, elles en retouchent des numéros.
+
+### L'état d'origine, au 1^er^ juillet 1988 {#sec-tva-tableaux-1988}
+
+L'état d'origine est celui des trois tableaux annexés au code par la loi n° 88-61 du 2 juin 1988, appliqué à compter du 1^er^ juillet 1988 : 46 numéros exonérés, trois paragraphes au taux de 6 %, et une liste de positions tarifaires au taux de 29 %, donnée page par page dans la nomenclature douanière de 1988.
+
+:::: {.chronologie-repliable titre="Tableau A au 1er juillet 1988 : les 46 numéros exonérés"}
+
+Intitulé du tableau : « Liste des opérations exonérées de la taxe sur la valeur ajoutée ». Source : @loi-88-61-tva, tableau A, p. 833-836.
+
+: Tableau A annexé au code de la taxe sur la valeur ajoutée, dans sa rédaction de 1988 {#tbl-tva-tableau-a-1988}
+
+| N° | Opération exonérée |
+|:--|:------------------------------|
+| 1 | La fabrication et la vente des farines, des semoules, du pain, du couscous et des pâtes alimentaires de qualité ordinaire. |
+| 2 | L'importation, la fabrication et la vente : a) du lait frais non concentré ni sucré, complet ou écrémé ; b) des farines lactées ; c) des laits conservés, concentrés, sucrés ou non spécialement traités en vue d'en faciliter l'assimilation par les nourrissons ou les malades et dont la liste est établie par décision du ministre des finances après avis du ministre de la santé publique. |
+| 3 | L'importation des peaux brutes. |
+| 4 | a) La production et la vente d'huile d'olives ou de grignon ainsi que les sous produits de la trituration des olives ; b) l'importation, la production et la vente de fèves de soja et d'huile de soja ; c) l'importation par l'office national de l'huile, des huiles végétales en vue de leur mélange avec de l'huile d'olives et de l'huile de grignon d'olive raffinée, et leur vente. |
+| 5 | L'importation, la fabrication et la vente du sucre non additionné d'aromatisants ou de colorants, ainsi que son conditionnement. |
+| 6 | Les affaires effectuées par les œuvres reconnues d'intérêt humanitaire et social, agréées par le ministre des finances. |
+| 7 | L'importation, la fabrication et la vente des appareils destinés à l'usage des handicapés physiques et des appareils et filtres d'hémodialyse repris au tableau ci-après : EX 30-03 Soluté de dialyse ; EX 84-18 Filtres pour hémodialyses ; 87-11 Fauteuils et véhicules similaires pour invalides avec moteur ou autres mécanismes de propulsion ; EX 90-17 Reins artificiels, trousses artérioveineuses intranules cathéteres intraveineux ; EX 90-19 Appareils d'orthopédie (y compris les ceintures médicochirurgicales), articles et appareils pour fractures (attelles, gouttières), prothèses dentaires, oculaires ou autres appareils pour faciliter l'audition aux sourds et autres appareils à tenir à la main, à porter sur les personnes ou à implanter dans l'organisme afin de compenser une déficience ou une infirmité, à l'exclusion des articles et appareils de prothèses dentaires en métaux précieux. |
+| 8 | L'enlèvement des ordures ménagères. |
+| 9 | Les établissements d'enseignement primaire, secondaire, supérieur, technique et professionnel ainsi que les établissements de garderie. |
+| 10 | L'exploitation des douches. |
+| 11 | a) L'importation, la production et la vente du polythylène en feuilles, gaines et rouleaux destiné à l'agriculture forcée sous serre (forçage) et à la conservation de l'humidité des sols (paillage) et ce, dans les conditions ci-après : [achat par le ministère de l'agriculture ou ses établissements publics, ou attestation de destination]. b) L'importation, la fabrication et la vente des éléments suivants entrant dans la fabrication des stations d'irrigation par goutte à goutte : EX 39-07 Goutteurs microjets et accessoires de raccordements ; EX 84-18 Filtres et cartouches pour irrigation par goutte à goutte ; EX 90-26 Compteurs d'eau pour irrigation par goutte à goutte. [conditions] c) L'importation, la production et la vente de l'acide giberellique. d) L'importation, la fabrication et la vente des vernis et fongicides servant au traitement des agrumes et autres fruits. [exonération accordée au GIAF et aux utilisateurs] e) L'importation des engrais minéraux ou chimiques potassiques repris au tableau ci-après : EX 28-39 Nitrites et nitrates de potassium destinés à l'agriculture ; EX 28-40 Phosphate de potassium à usage d'engrais ; EX 28-43 Carbonate et percarbonate de potassium à usage d'engrais ; 31-04 Engrais minéraux ou chimiques potassiques. f) L'importation des animaux reproducteurs de race pure. g) L'importation des naissains d'huitres. h) L'importation du talc à usage agricole, agréé par le ministère de l'agriculture. i) L'importation, la fabrication et la vente des biens d'équipement destinés à l'agriculture, repris au tableau ci-après : 73-21 Serres agricoles ; EX 84-21 Appareils mécaniques (même à main) à projeter, disperser ou pulvériser des matières liquides ou en poudre à usage agricole ; EX 84-24 Machines, appareils et engins agricoles et horticoles pour la préparation et le travail du sol et pour la culture à l'exclusion des rouleaux pour pelouses et terrains de sport ; EX 84-25 Machines, appareils et engins pour la récolte et le battage des produits agricoles, presses à paille et fourrage, tarares et machines similaires pour nettoyage de grains, trieurs à œufs, à fruits et autres produits agricoles à l'exclusion des tondeuses à gazon ; 84-26 Machines à traire et autres machines et appareils de laiterie ; 84-27 Pressoirs, fouloirs et autres appareils de vinification, de cidrerie et similaires ; 84-28 Autres machines et appareils pour l'agriculture, l'horticulture, l'aviculture et l'apiculture y compris les germoirs comportant les dispositifs mécaniques ou thermiques, les couveuses et éleveuses pour l'aviculture ; EX 87-01 Tracteurs agricoles ; EX 87-14 Epandeurs de fumier et d'engrais et distributeurs de fourrage ; EX 88-02 Avions agricoles. Parties et pièces détachées destinées à équiper les avions agricoles. |
+| 12 | L'importation, la production et la vente des plants et semences dont la liste est fixée par décision des ministres des finances et de l'agriculture. |
+| 13 | Les travaux agricoles effectués par des tiers, la location de matériels à usage agricole, le transport des produits agricoles effectué par les agriculteurs pour leur propre compte, la location d'étalages dans les marchés publics ainsi que les services afférents aux produits agricoles. |
+| 14 | La vente d'eau par abonnement ou autrement que par abonnement. |
+| 15 | Les biens, marchandises, travaux et prestations livrés à titre de don dans le cadre de la coopération internationale, à l'Etat, aux collectivités publiques locales, aux établissements publics et associations reconnues d'utilité publique. |
+| 16 | L'importation, l'impression et la vente par l'Etat des timbres et des papiers timbrés ainsi que l'importation de papier filigrane pour le compte de l'Etat. |
+| 17 | L'importation par l'Etat de fonds, billets de banque, billets de loterie, monnaies ayant cours légal, actions et obligations constituant des valeurs de bourse. |
+| 18 | a) L'importation, la composition, l'impression et la vente des livres, brochures et imprimés similaires à l'exclusion de ceux reliés en cuir naturel, artificiel ou reconstitué, des journaux et publications périodiques. b) L'importation, la production et la vente des produits destinés à l'édition des livres, des journaux, des périodiques et des publications et dépliants de propagande touristique repris au tableau ci-après : 37-01 Plaques photographiques et films plans, non impressionnés en autres matières que le papier, le carton ou le tissu ; 37-02 Pellicules sensibilisées, non impressionnées perforées ou non en rouleaux ou en bandes ; 37-03 Papier, cartes et tissus sensibilisés impressionnés ou non mais non développés ; 37-05 Plaques pellicules perforées ou non (autres que les films cinématographiques) impressionnées et développées, négatives ou positives ; 37-08 Produits chimiques pour usage photographique, y compris les produits pour la production de la lumière-éclair ; 76-03 et 76-04 Feuilles d'aluminium servant pour la fabrication des plaques sensibilisées. [attestation du ministre des affaires culturelles ou du ministre de l'information] |
+| 19 | a) L'importation, la fabrication et la vente du papier journal agréé par le ministre de l'information. b) L'importation, la production et la vente des papiers pour machines de bureau et similaires en bandes ou bobines, destinés à l'agence Tunis afrique presse. c) L'importation, la production et la vente des publications et dépliants touristiques, destinés à l'hôtellerie ainsi que des affiches publicitaires gratuites, des formulaires d'importation temporaire ou de circulation internationale. |
+| 20 | La transmission par les agences de presse, de messages de presse aux entreprises de journaux. |
+| 21 | L'importation, la fabrication et la vente des bâteaux autres que ceux de plaisance ou de sport, destinés à la navigation maritime ou à la pêche et de tous matériels destinés à être incorporés à ces bâteaux, ainsi que les engins et filets de pêche. |
+| 22 | Les affaires effectuées par les agences de voyages avec les hôteliers et relatives aux séjours en Tunisie de non résidents. |
+| 23 | L'importation et la production des films cinématographiques impressionnés à caractère culturel ou social sur décision du ministre des finances, après avis du ministre des affaires culturelles, ainsi que les films cinématographiques impressionnés destinés à la projection au public. |
+| 24 | L'importation, la fabrication et la vente des articles culturels suivants : a) instruments de musique, leurs parties et articles servant à leur fabrication et dont la liste est fixée par décret ; b) matériel « son et lumière » de théâtre destiné au ministère des affaires culturelles, aux théâtres municipaux ou aux troupes de théâtre agréés par le ministre des affaires culturelles ainsi que les matériels d'équipement et produits nécessaires à la production cinématographique et aux salles de projection de films pour le public ; c) produits utilisés dans les arts plastiques et dont la liste est fixée par décret. |
+| 25 | L'importation, la production et la vente des bicyclettes (y compris les triporteurs) sans moteurs. |
+| 26 | a) La fabrication et la vente de chauffe-eau solaire. b) L'importation des absorbeurs pour capteurs solaires à usage domestique. |
+| 27 | L'importation, la fabrication et la vente du matériel de forage et de sondage ainsi que leurs parties et pièces détachées. |
+| 28 | L'importation, la fabrication et la vente d'aéronefs destinés au transport public aérien, et de tous matériels destinés à être incorporés à ces aéronefs. |
+| 29 | a) Le transport maritime et la consignation des navires. b) Le transport aérien international. |
+| 30 | a) Le pompage de liquides sur les quais. b) Armement au cabotage. |
+| 31 | La location de locaux d'habitation non meublés. |
+| 32 | Les opérations d'assurances et de réassurances soumises à la taxe unique sur les assurances. |
+| 33 | La fabrication et la vente des produits de l'orfèvrerie et de la bijouterie locales soumis au droit de garantie. |
+| 34 | L'importation des monnaies d'or, de l'or en lingots, en barres, natif et grenailles d'or, argent et alliages d'argent en masses, lingots, grenailles, argent natif, autres cendres, déchets et débris de métaux précieux, platine et alliages de platine bruts en masses, lingots, grenailles. |
+| 35 | Les envois exceptionnels dépourvus de tout caractère commercial admis en franchise de droits de douane et ce, dans les conditions de l'article 170 du code des douanes. |
+| 36 | Les bagages accompagnés ou non de voyageurs et destinés à leur usage personnel. |
+| 37 | Récoltes des propriétés frontalières. |
+| 38 | Marchandises hors commerce importées par colis postaux ou par paquets-poste. |
+| 39 | Les produits de la pêche tunisienne. |
+| 40 | a) Les intérêts sur : prêts consentis et sur emprunts contractés par la caisse nationale d'épargne logement ; prêts pour l'acquisition de logements neufs auprès de promoteurs immobiliers agréés ; prêts à la construction d'immeubles à usage d'habitation ; les dépôts et placements en devises convertibles et en dinars convertibles ; les opérations réalisées dans le cadre du marché monétaire. b) La commission de garantie prélevée au profit du fonds national de garantie. c) La commission de péréquation des changes prélevée au profit du fonds de péréquation des changes et des taux d'intérêt. |
+| 41 | a) L'importation et la vente des équipements et produits nécessaires aux installations expérimentales ainsi que la production des installations commerciales nécessaires à la recherche, à la production et à la commercialisation des énergies renouvelables. b) L'importation, la production et la vente des plates-formes de forage ou d'exploitations flottantes ou submersibles. |
+| 42 | L'exploration et la production des hydrocarbures liquides et gazeux. |
+| 43 | L'importation, la production et la vente des rotochutes et aérodynes à usages militaires, ou pour la formation professionnelle ou pour la lutte contre l'incendie. |
+| 44 | La production et la vente du sulfate de baryum naturel (baryte, barytine). [exonération accordée aux produits destinés aux sociétés pétrolières, sur attestation du ministre de l'économie nationale] |
+| 45 | L'importation, la production et la vente des articles de sport dont la liste est fixée par décision du ministre des finances et du ministre de la jeunesse et des sports. |
+| 46 | L'importation par l'Etat : a) du matériel d'armement et des équipements à caractère militaire et défensif ; b) des véhicules de lutte contre l'incendie ; c) des véhicules équipés spécialement dans le cadre des services de la sûreté. |
+
+::::
+
+:::: {.chronologie-repliable titre="Tableau B au 1er juillet 1988 : les opérations au taux de 6 %"}
+
+Intitulé du tableau : « Taux 6 % ». Source : @loi-88-61-tva, tableau B, p. 836.
+
+**I — Les opérations effectuées par les personnes physiques ou morales au titre des professions
+énumérées ci-après :** les architectes et les ingénieurs-conseils ; les dessinateurs, les géomètres
+et les topographes ; les avocats, les huissiers-notaires, les notaires et les interprètes ; les
+conseils juridiques et les conseils fiscaux ; les entrepreneurs de tenue de comptabilité ; les
+exploitants de laboratoire d'analyse ; les infirmiers et les masseurs ; les médecins, les médecins
+spécialistes, les dentistes, les sages-femmes et les vétérinaires ; les experts quelle que soit
+leur spécialisation.
+
+**II — L'importation, la production et la vente :** 1) des engrais ; 2) de l'électricité et du gaz ;
+3) des aliments composés pour bétail, des tourteaux de soja et des farines de poisson ; 4) des
+produits et articles destinés à l'industrie pharmaceutique ainsi que les produits pharmaceutiques
+finis ; 5) des machines pour le traitement de l'information, leurs pièces et parties ainsi que les
+supports magnétiques informatiques ; 6) des appareils récepteurs de télévision de table ou portatifs
+non combinés, leurs parties et pièces détachées ainsi que les transformateurs et les régulateurs de
+courant électrique destinés à ces appareils ; 7) des conserves de tomate, d'harissa et de sardines ;
+8) du savon ordinaire.
+
+**III — Les activités et produits suivants :** 1) l'hôtellerie y compris les activités qui y sont
+intégrées et notamment : l'hébergement ; la restauration ; les ventes à consommer sur place ;
+l'animation ; 2) les produits de l'artisanat local à l'exception des articles comportant de la
+soie ; 3) le transport de personnes ou de marchandises ; 4) la vente des huiles de pétrole ou de
+minéraux bitumineux (essence de pétrole, pétrole lampant, gaz-oil, fuel-oil) par les entreprises de
+distribution ; 5) l'hébergement, la restauration et les services effectués dans le cadre de leur
+activité par les cliniques et polycliniques médicales ; 6) les intérêts débiteurs ; 7) les services
+réalisés en matière informatique.
+
+::::
+
+:::: {.chronologie-repliable titre="Tableau C au 1er juillet 1988 : les positions tarifaires au taux de 29 %"}
+
+Intitulé du tableau : « Taux 29 % ». Le tableau est une liste de positions du tarif des douanes, dans la nomenclature de 1988 ; elles sont données dans l'ordre de l'imprimé, séparées par un point médian, page par page. Source : @loi-88-61-tva, tableau C, p. 836-846.
+
+*P. 836 —* 02-03 Foies de volailles frais, refrigérés, congelés, salés ou en saumure · 02-06 Viandes
+et abats comestibles de toutes espèces (à l'exclusion des foies de volailles) salés ou en saumure,
+séchés ou fumés · 03-02 Poissons séchés, salés ou en saumure, autres poissons fumés même cuits avant
+ou pendant le fumage · 04-03 Beurre · EX 05-07 Plumes de parure · EX 05-09 Ivoire, poudre et
+déchets d'ivoire · 06-03 Fleurs et boutons de fleurs, coupés pour bouquets ou pour ornements, frais,
+séchés, blanchis, teints, imprégnés ou autrement préparés · 06-04 Feuillages, feuilles, rameaux et
+autres parties de plantes, herbes, mousses et lichens pour bouquets ou pour ornements […].
+
+*P. 837 —* EX 07-01 à EX 07-04 Champignons et truffes · EX 08-01 Ananas, bananes, mangues,
+mangoustes, avocats, goyaves, noix de coco, noix du brésil, noix de cajoux, frais ou secs avec ou
+sans coque · EX 08-04 Raisins secs · EX 08-05 Fruits à coques, frais ou secs, même sans leurs
+coques ou décortiqués à l'exclusion des amandes · EX 08-06 Pommes et poires fraiches · 09-01 Café
+et succédanés du café contenant du café, coques et pellicules de café · 09-02 Thé · EX 09-04
+Poivre · 09-05 Vanille · 09-06 Cannelle et fleurs de cannelier · 09-07 Girofles (antofles, clous et
+griffes) · 09-08 Noix muscade, macis, amomes et cardamomes · 09-10 Thym, laurier, safran et autres
+épices · 11-07 Malt, même torréfié · EX 12-07 Poivre de cubèbe · EX 13-02 Gommes, gommes résines,
+résines et baumes naturels à l'exclusion de la gomme arabique et de la gomme laque · EX 13-03 Sucs
+et extraits de réglisse ; autres mucilages et épaississements dérivés des végétaux à l'exclusion
+des mucilages de caroubes et de farine de graines de caroubes · EX 14-02 Kapok · 16-01 Saucisses,
+saucissons et similaires de foie, de viandes, d'autres abats ou de sang · 16-02 Autres préparations
+et conserves de foie, de viandes, ou d'autres abats · EX 16-03 Extraits et jus de viande · EX 16-04
+Préparations et conserves de poissons à l'exclusion du thon, des sardines et des anchois · 16-05
+Crustacés et mollusques (y compris les coquillages) préparés ou conservés · 17-04 Autres sucreries
+sans cacao · 18-01 Cacao en fève et brisures de fèves, brutes ou torréfiées · 18-02 Coques,
+pelures, pellicules et déchets de cacao · 18-03 Cacao en masse ou en pains (pâte de cacao) même
+dégraissé · 18-04 Beurre de cacao, y compris la graisse et l'huile de cacao.
+
+*P. 838 —* 18-05 Cacao en poudre, non sucré · 18-06 Chocolat et autres préparations alimentaires
+contenant du cacao · EX 19-02 Poudres sucrées ou non à base de farines, semoules, amidons, fécules,
+extraits de malt pour la fabrication des crèmes, puddings, entremets, desserts · 19-05 Produits à
+base de céréales obtenus par le soufflage ou le grillage « puffed-rice », « corn flakes » et
+analogues · EX 19-08 Produits de la pâtisserie, produits de la biscuiterie contenant du cacao
+quelque soit la proportion · EX 20-02 Légumes et plantes potagères préparées ou conservées à l'eau
+de vie ou à l'alcool ainsi que les champignons et truffes préparés sans vinaigre ou acide acétique ·
+EX 20-06 Fruits préparés ou conservés, additionnés d'alcool ; arachides grillés ; ananas et mangues
+préparés ou conservés · EX 20-07 Jus d'ananas · 21-02 Extraits ou essence de café, de thé ou de
+maté et préparations à base de ces extraits ou essences ; chicorée torréfiée et autres succédanés
+torréfiés du café et leurs extraits · EX 21-03 Moutarde préparée · 21-04 Sauces, condiments et
+assaisonnements composés · 21-05 Préparations pour soupes, potages ou bouillons préparés,
+préparations alimentaires composites homogénéisées · EX 21-07 Préparations alimentaires non
+dénommées ni comprises ailleurs à l'exclusion des yaghourts préparés et des laits préparés ·
+EX 22-01 Eaux minérales, naturelles ou artificielles et eaux gazeuses non aromatisées ni sucrées ·
+22-02 Limonades, eaux gazeuses aromatisées (y compris les eaux minérales ainsi traitées) et autres
+boissons non alcoolisées à l'exclusion des jus de fruits et de légumes du n° 20-07 · 22-03 Bières ·
+22-05 Champagnes, vins de liqueur, mistelles ou moûts mutés à l'alcool provenant exclusivement de
+raisins frais et autres vins mousseux ; autres vins provenant exclusivement de la fermentation des
+raisins frais ou de jus de raisins frais · 22-06 Vermouths et autres vins de raisins frais préparés
+à l'aide de plantes ou de matières aromatiques · 22-07 Cidre, poiré, hydromel et autres boissons
+fermentées · EX 22-09 Eau de vie, liqueurs et autres boissons spiritueuses, préparations
+alcooliques composées (dites « extraits concentrés ») pour la fabrication des boissons · 24-01
+Tabacs bruts ou non fabriqués et déchets de tabacs · 24-02 Tabacs fabriqués, extrait ou sauces de
+tabacs (praiss) · 25-15 Marbres blancs (veinés ou non) blancs grisâtres ou roses ; marbres,
+travertins, écaussines et autres pierres calcaires de taille ou de construction d'une densité
+apparente supérieure ou égale à 2,5 et albatre, bruts dégrossis ou simplement débités par sciages ·
+EX 33-01 Extraits (oléo-résines) de vanille.
+
+*P. 839 —* EX 33-06 Produits de parfumerie préparés et cosmétiques préparés à l'exclusion des eaux
+distillées aromatiques et solutions acqueuses d'huiles essentielles même médicinales · EX 34-01
+Savons de parfumerie · EX 34-02 Préparation pour lessives, conditionnées pour la vente au détail et
+contenant des substances organiques · 34-05 Cirage et crème pour chaussures, encaustiques, brillants
+pour métaux, pâtes et poudres à récurer et préparations similaires, à l'exclusion des cires
+préparées du n° 34-04 · 36-01 Poudres à tirer · EX 36-04 Amorces et capsules fulminantes pour armes
+de chasse ou de tir · EX 36-05 Artifices pour divertissements · 36-08 Ferro-cérium et autres
+alliages pyrophoriques sous toutes leurs formes, articles en matières inflammables · EX 39-02
+Articles en matières plastiques pour la décoration des murs et des plafonds fixés sur des supports
+en papiers · EX 39-07 Ouvrages en matières plastiques à l'exclusion des capsules et bouchons, des
+articles de conditionnement, des articles de ménage et d'économie domestique, des paillettes pour
+insémination artificielle, des flotteurs pour filets de pêche, des cornes pour la cueillette des
+olives, des raccords et autres accessoires de tuyauterie · EX 40-11 Bandages pleins ou creux
+(mi-pleins) d'un poids unitaire de plus de 2 kg ; chambres à air d'un poids unitaire supérieur à
+0,500 kg ; pneumatiques y compris ceux ne nécessitant pas de chambre à air d'un poids unitaire
+supérieur à 2 kg à l'exclusion de ceux pour aérodynes et à usage agricole · EX 40-14 Ouvrages en
+caoutchouc vulganisé non durci non destinés aux hôpitaux et assimilés · EX 42-02 Articles de voyage,
+étuis et écrins pour armes, pour jumelles, pour appareils photographiques, pour instruments de
+musique ou autres instruments ou appareils, cartouchières en cuir naturel, artificiel ou
+reconstitué, en fibres vulganisé, en feuilles de matières plastiques, artificielles ou en tissus ·
+EX 42-03 Vêtements et accessoires, à l'exclusion des articles et équipements spéciaux de protection
+pour tous métiers en cuir naturel, artificiel ou reconstitué · 42-05 Autres ouvrages en cuir
+naturel, artificiel ou reconstitué · 43-01 Pellèteries brutes (fourrures) · 43-02 Pellèteries
+tannées ou apprêtées […] (fourrures) · 43-03 Pellèteries œuvrées ou confectionnées (fourrures) ·
+43-04 Pellèteries factices, confectionnées ou non · EX 44-03 Bois fins autres que de conifères pour
+sciage ou placage · EX 44-04 Bois fins simplement équarris · EX 44-05 Bois de chêne, de hêtre, de
+peupliers, de noyer, d'okoumés et autres bois fins, simplement sciés longitudinalement, tranchés ou
+déroulés · Ex 44-15 Bois marquetés ou incrustés · Ex 44-16 Panneaux cellulaires décoratifs en bois ·
+EX 44-23 Panneaux pour parquets.
+
+*P. 840 —* 44-27 Ouvrages de tabletteries et de petite ébénisterie (boîtes, coffrets, étuis,
+écrins, porte-manteaux, lampadaires et autres appareils d'éclairages etc.) objets d'ornements,
+d'étagère et articles de parure en bois, parties en bois de ces ouvrages ou objets · EX 44-28
+Montures et parties de montures, en bois pour éventails et écrans à mains · EX 46-03 Eventails et
+écrans à mains, en vannerie ainsi que leurs feuilles présentées isolément · EX 48-10 Papiers à
+cigarettes en cahiers · EX 48-21 Autres ouvrages en pâtes à papier, papier carton ou ouate de
+cellulose à l'exclusion des cartes statistiques, des papiers et cartons pour mécanique jacquart et
+similaires, des carcasses pour bobinage électrique et des plans de clicherie non matricés ·
+EX 49-01 Livres, brochures et imprimés similaires, même sur feuilles isolées en cuir naturel,
+artificiel ou reconstitué · EX 49-11 Notices techniques, prospectus, catalogues commerciaux et
+autres articles similaires comportant de la publicité, images, gravures, photographies et autres
+imprimés obtenus par tous procédés à l'exclusion des dépliants publicitaires édités à des fins de
+propagande touristique consacrée à l'hôtellerie, des images et gravures et autres imprimés à usage
+scolaire et imprimés utilisés sur les machines pour le traitement automatique de l'information ·
+50-09 Tissus de soie, de bourre de soie (de schappe) ou de déchets de bourre de soie (bourrette) ·
+52-02 Tissus de fils de métal, de filés métalliques ou de fils textiles métallisés du n° 52-01 pour
+l'habillement, l'ameublement et usages similaires · EX 53-11 Tissus de laine ou de poils fins, à
+l'exclusion des tissus de laine pour couvertures · EX 54-05 Tissus de lin ou de ramie · EX 58-02
+Autres tapis, tissus dits « kelim » ou « klim », « schumacks » ou « soumak », « karamanie » et
+similaires mêmes confectionnés à l'exclusion des tapis de laine et des tapis de poils fins ou
+grossiers · EX 58-04 Velours, peluches, tissus bouclés et tissus de chenille en soie, schappe ou
+bourrette de soie ou en autres matières textiles provenant de tous pays · EX 58-05 Rubanneries, et
+rubans sans trame en fils ou fibres parallélisés et encollés (bloducs) […] à l'exclusion des rubans
+vierges à usages techniques · 58-08 Tulles et tissus à mailles nouées (filet) unis · 58-09 Tulles,
+tulles-bobinots et tissus à mailles nouées (filets) façonnés, dentelles à la mécanique ou à la main
+en pièces, en bandes ou en motifs · 58-10 Broderies en pièces, en bandes ou en motifs · 59-10
+Linoléums pour tous usages, découpés ou non ; couvre-parquets consistant en un enduit appliqué sur
+support de matières textiles découpés ou non · 59-11 Tissus caoutchoutés, autres que de
+bonneteries · 59-12 Autres tissus imprégnés ou enduits ; toiles peintes pour décors de théâtres,
+fonds d'ateliers ou usages analogues · EX 60-01 Etoffes de bonneterie non élastiques ni
+caoutchoutées, en pièces en soie, en bourre de soie ou en déchets de bourre de soie · EX 60-02 à
+EX 60-05 Ganterie de bonneterie, bas, sous-bas, chaussettes, sauquettes, protège-bas, sous vêtement
+de bonneterie, vêtements de dessus, accessoires du vêtement et autres articles de bonneterie non
+élastiques ni caoutchoutés : en soie, en bourre de soie, en déchets de bourre de soie ; en autres
+fibres textiles synthétiques provenant de tous pays.
+
+*P. 841 —* EX 60-06 Etoffes en pièces et autres articles (y compris les genouillères et les bas à
+varices) de bonneterie élastique ou caoutchouté de soie, de bourre de soie, de déchets de bourre de
+soie ou en fibres textiles synthétiques provenant de tous pays · EX 61-01 à EX 61-07 Vêtements de
+dessus et vêtements de dessous pour hommes, garçonnets, femmes, fillettes et jeunes enfants,
+mouchoirs et pochettes, châles, écharpes, foulards, cache-nez, cache-cols, mantilles, voiles,
+voilettes, cravates et articles similaires : en soie, bourre de soie, déchets de bourre de soie ;
+en fibres textiles synthétiques provenant de tous pays · EX 61-09 Corsets, ceintures-corsets,
+gaines, soutiens-gorges, bretelles, jarretelles, jarretières, support chaussettes et articles
+similaires : en soie […] ; en fibres textiles synthétiques provenant de tous pays · EX 61-10 à
+EX 61-11 Ganterie, bas, chaussettes, sauquettes et autres accessoires confectionnés de vêtements :
+en soie […] ; en fibres textiles synthétiques provenant de tous pays · EX 62-01 Couvertures
+chauffantes électriques · EX 62-02 Linge de lit, de table, de toilette, d'office ou de cuisine,
+rideaux, vitrages et autres articles d'ameublement en soie, en schappe, en bourrettes de soie ou en
+fibres textiles synthétiques provenant de tous pays · EX 62-05 Articles confectionnés provenant de
+tous pays · EX 64-02 Chaussures à semelles extérieures en cuir naturel, artificiel ou reconstitué
+et chaussures (autres que celles du n° 64-01) à semelles extérieures en caoutchouc ou en matière
+plastique artificielle à dessus en soie, bourre de soie ou en tous tissus ou feutres lamés de métal
+ou brodés · 65-01 Cloches non dressées […] en feutre, pour chapeaux · 65-02 Cloches ou formes pour
+chapeaux, tressées ou obtenues par l'assemblage de bandes […] · 65-03 Chapeaux et autres coiffures
+en feutres fabriqué à l'aide des cloches et des plateaux du n° 65-01, garnis ou non · 65-04
+Chapeaux et autres coiffures, tressés ou fabriqués par l'assemblage de bandes […], garnis ou non ·
+EX 65-05 Chapeaux et autres coiffures (y compris les résilles et filets à cheveux) en bonneterie ou
+confectionnés à l'aide de tissus, de dentelles ou de feutre en pièces […] à l'exclusion des fez,
+chéchia, et coiffures analogues · EX 65-06 Autres chapeaux et coiffures garnis ou non à l'exclusion
+des casques métalliques et casques pour hommes en matières des n° 39-01 à 39-06 · 65-07 Bandes pour
+garnitures intérieures, coiffes, couvre-coiffures, carcasses […] visières et jugulaires pour la
+chapellerie · 66-01 Parapluies, parasols et ombrelles, y compris les parapluies-canes et les
+parasol-tentes et similaires · 66-02 Cannes (y compris les cannes d'alpinistes et les
+cannes-sièges), fouets, cravaches et similaires · 66-03 Parties, garnitures et accessoires pour
+articles des n° 66-01 et 66-02 · 67-01 Autres peaux et autres parties d'oiseaux revêtues de leurs
+plumes ou de leur duvet, plumes, parties de plumes, duvets et articles en ces matières […] à
+l'exclusion des produits du n° 05-07 · 67-02 Fleurs, feuillages et fruits artificiels et leurs
+parties, articles confectionnés en fleurs, feuillages et fruit artificiels.
+
+*P. 842 —* 67-03 Cheveux remis ou autrement préparés, laines, poils et autres matières textiles,
+préparés pour la fabrication de postiches et d'articles similaires · 67-04 Postiches (perruques,
+barbes, sourcils, cils, mèches et articles analogues en cheveux, poils ou textiles, autres ouvrages
+en cheveux y compris les résilles et filets) · 68-02 Ouvrages en pierres de taille ou de
+construction, à l'exclusion de ceux simplement taillés ou sciés à surface plane ou unie, cubes et
+dès pour mosaique à l'exclusion de ceux du n° 68-01 et ceux du chapitre 69 · 69-10 Eviers, lavabos,
+bidets, cuvettes de water-closets, baignoires et autres appareils fixes similaires pour usages
+sanitaires ou hygiéniques · 69-11 Vaisselle et articles de ménage ou de toillette en porcelaine ·
+EX 69-12 Vaisselle et articles de ménage ou de toilette en autres matières céramiques à l'exclusion
+de ceux en terre commune · 69-13 Statuettes, objets de fantaisie, d'ameublement, d'ornementation ou
+de parure · EX 69-14 Autres ouvrages en matière céramique à l'exclusion de ceux en terre commune ou
+en grès · 70-09 Miroirs rétroviseur, autres miroirs en verre, encadrés ou non · EX 70-13 Objets en
+verre pour le service de la table, de la cuisine, de la toilette, pour le bureau, l'ornementation
+des appartements ou usages similaires : en cristal ; en autres verres taillés, dépolis, gravés ou
+décorés autrement que par simple moulage · EX 70-14 Verrerie d'éclairage à l'exclusion des verres
+des lampes et des cheminées d'éclairage et de la verrerie de signalisation et d'optique commune ·
+70-15 Verres d'horlogerie, de lunetterie commune et analogues bombés, cintrés et similaires, y
+compris les boules creuses et les segments · EX 70-19 Perles de verre, imitations de perles fines
+et de pierres gemmes et articles similaires de verroterie […] à l'exclusion des microsphères
+destinées à l'équipement d'articles pour brûlés · EX 71-01 Perles fines brutes ou travaillées […] à
+l'exclusion de celles pour usages industriels · EX 71-02 Pierres gemmes (précieuses ou fines)
+brutes, taillées ou autrement travaillées […] à l'exception des diamants et autres pierres gemmes à
+usage industriel ou technique · EX 71-03 Pierres synthétiques ou reconstituées […] autres qu'à
+usage industriel · EX 71-04 Egrisés et poudres de pierres gemmes et de pierres synthétiques à
+l'exclusion de ceux pour usage industriel · 71-05 Cannetilles et paillettes en argent et alliages
+d'argent · EX 71-07 Or et alliages d'or bruts ou mi-œuvrés autres qu'en lingots et autres que ceux
+destinés à l'usage médico-chirurgical · 71-12 Articles de bijouterie et de joaillerie et leurs
+parties, en métaux précieux ou en plaqués ou doublés de métaux précieux · 71-13 Articles
+d'orfèvrerie et leurs parties en métaux précieux ou en plaqués ou doublés de métaux précieux ·
+EX 71-14 Autres ouvrages en métaux précieux ou en plaqués ou doublés de métaux précieux à
+l'exclusion des creusets et leurs couvercles, des nacelles en platine pour laboratoire d'analyse ·
+71-15 Ouvrages en perles fines, en pierres gemmes ou en pierres synthétiques ou reconstituées.
+
+*P. 843 —* 71-16 Bijouterie de fantaisie · EX 73-36 Poêles, calorifères autres que ceux à gaz, à
+pétrole ou à mazout ; cuisinières autres que celles sans four dites « réchauds plats » ; réchauds ;
+chaudières à foyer d'une puissance exprimée en kilocalories inférieure à 150.000 non électrique en
+fonte, fer ou acier ; appareils de cuisine des types servant à des usages domestiques à l'exclusion
+des chauffe-plats · EX 73-37 Chaudières d'une puissance exprimée en kilo-calories inférieures à
+150.000 et radiateurs, pour le chauffage central, à chauffage non électrique […], générateurs et
+distributeurs d'air chaud […] en fonte, fer ou acier · EX 73-38 Articles de ménage, d'hygiène et
+d'économie domestique en fonte, fer ou acier · EX 73-40 Boîtes à poudre ou à fards (poudriers)
+bombonnières, étuis à cigarettes, boites de poche, étuis à lunettes et à fards, articles similaires
+non gainés en fonte, fer ou acier · EX 74-17 Appareils non électriques de cuisson et de chauffage,
+des types servant à des usages domestiques en cuivre · EX 74-18 Article de ménage, d'hygiène et
+d'économie domestique en cuivre · EX 74-19 Boites à poudre ou à fards […] non gainés en cuivre ·
+EX 76-15 Articles de ménage, d'hygiène et d'économie domestique en aluminium · EX 76-16 Boites à
+poudre ou à fards […] non gainés en aluminium · EX 82-04 Outils domestiques autres que ceux du
+n° 82-08 · EX 82-09 Couteaux de table ou de cuisine à manches en matières plastiques, couteaux à
+manches en autres matières qu'en bois ou en métaux communs non dorés ou argentés · EX 82-11 Rasoirs
+à manche ou à monture en ivoire, nacre, écaille, ambre, ambroide ou en métaux communs dorés ou
+argentés · EX 82-13 Outils de manicure, de pédicure et analogues, y compris les limes à ongles ·
+EX 82-14 Cuillères, louches, fourchettes, pelles à tartes, couteaux spéciaux à poissons ou à
+beurre, pinces à sucre et articles similaires à manches en autres matières qu'en bois ou en métaux
+communs non dorés ni argentés · EX 82-15 Manches en métaux communs pour articles des n° 82-09,
+82-13 et 82-14 dorés ou argentés · EX 83-06 Statuettes et autres objets d'ornement d'intérieur, en
+métaux communs à l'exclusion des médailles · EX 83-07 Appareils à source lumineuse électrique,
+équipés ou non électriquement et leurs parties non électriques en métaux communs · EX 83-09 Perles
+et paillettes découpées en métaux communs · EX 84-06 Moteurs amovibles, types hors-bord, d'une
+puissance supérieure à 5 CV. Autres moteurs pour automobiles et motocycles d'une cylindrée de moins
+de 500 cm3 · EX 84-10 Pompes et moto-pompes distributrices comportant un dispositif mesureur ·
+84-12 Groupes pour le conditionnement de l'air comprenant, réunis en un seul corps, un ventilateur
+à moteur et des dispositifs propres à modifier la température et l'humidité · 84-15 Matériels,
+machines et appareils pour la production du froid, à équipement électrique ou autres.
+
+*P. 844 —* EX 84-17 Chauffe-eau et chauffe-bains non électriques à l'exclusion des chauffe-eau
+solaires · EX 84-19 Machines à laver la vaisselle à chauffage électrique · EX 84-25 Tondeuses à
+gazon · EX 84-40 Machines et appareils à laver le linge à usage domestique d'une capacité unitaire
+exprimée en poids de linge sec inférieur à 6 kgs · EX 85-03 Piles sèches · 85-06 Appareils
+électromécaniques à usage domestique · 85-07 Rasoirs et tondeuses électriques, à moteur incorporé ·
+EX 85-12 Chauffe-eau, chauffe-bains et autres appareils électriques pour le chauffage des locaux,
+thermoplongeurs électriques, appareils électrothermiques, pour la coiffure (sèche-cheveux,
+appareils à friser, chauffe-fers à friser etc.) appareils électrothermiques pour usages
+domestiques, résistances chauffantes à l'exclusion des fers à repasser électriques · EX 85-15
+Récepteurs de télévision à l'exclusion de ceux de table ou portatifs non combinés et de ceux
+destinés à la R.T.T. ; récepteurs de radio-diffusion même combinés avec un phonographe, un
+tourne-disque ou autres appareils incorporés à l'exclusion de ceux destinés à la R.T.T. et des
+récepteurs de radio-diffusion portatifs à piles ou pile secteur non combinés · EX 85-20 Lampes et
+tubes électriques à décharge y compris les tubes fluorescents · EX 85-21 Lampes, tubes et valves
+électroniques (y compris les tubes appareils de prise de vues en télévision) à l'exclusion de ceux
+destinés à la radio-diffusion tunisienne, cellules photoélectriques · EX 87-02 Véhicules de tous
+genres pour le transport des personnes autres que les véhicules pour le transport en commun et les
+ambulances · EX 87-09 Motocyles et vélocipèdes à l'exclusion de ceux à usage utilitaire : d'une
+cylindrée inférieure à 50 cm3, sans pédaliers à usage individuel ; d'une cylindrée comprise entre
+50 cm3 et 125 cm3 ; d'une puissance supérieure à 125 cm3 · EX 89-01 Bateaux de plaisance et de
+sport · 90-02 Lentilles, prismes, miroirs et autres éléments d'optique en toutes matières, montés,
+pour instruments et appareils, à l'exclusion des articles de l'espèce, en verre, non travaillés
+optiquement · 90-03 Montures de lunettes, de lorgnons, de faces à main et d'articles similaires ·
+EX 90-04 Lunettes solaires ainsi que les verres de lunetterie solaire en autres matières que le
+verre · 90-05 Jumelles et longues vues, avec ou sans prismes · EX 90-07 Appareils photographiques y
+compris les lampes et tubes pour la production de la lumière-éclair en photographie à l'exclusion
+de ceux utilisés dans la photographie aérienne importés par l'office de la topographie et de la
+cartographie · 90-08 Appareils cinématographiques (appareil de prise de vues et de prise de son
+même combinés, appareils de projection avec ou sans reproduction du son) · 90-09 Appareils de
+projection fixes, appareils d'agrandissement ou de réduction photographiques · EX 90-13
+Stéréoscopes · EX 90-25 Appareils pour mesures photométriques (indicateurs de temps, de pose,
+exposimètres, etc.) des types utilisés en photographie ou en cinématographie.
+
+*P. 845 —* 91-01 Montres de poche, montres-bracelets et similaires (y compris les compteurs de
+temps des mêmes types) · 91-02 Pendulettes et réveils à mouvement de montre · 91-03 Montres de
+tableaux de bord et similaires pour automobiles, aérodynes, bâteaux et autres véhicules · 91-04
+Horloges, pendules, réveils et appareils d'horlogerie similaires à mouvement autre que montre ·
+91-05 Appareils de contrôle et compteurs de temps à mouvement d'horlogerie ou à moteur synchrone
+[…] · 91-06 Appareils munis d'un mouvement d'horlogerie ou d'un moteur synchrone permettant de
+déclencher un mécanisme à temps donné […] · 91-07 Mouvements de montres terminés · 91-08 Autres
+mouvements d'horlogerie terminés · EX 91-09 Boites de montres du n° 91-01 · EX 91-10 Cages et
+cabinets d'appareils d'horlogerie · 91-11 Autres fournitures d'horlogerie · EX 92-01 Pianos (même
+automatiques, avec ou sans claviers), clavecins et autres instruments à cordes, à clavier à
+l'exclusion des pianos droits et des harpes · EX 92-02 Autres instruments de musique à cordes, à
+l'exception des violons, altos, violoncelles, contrebasses, guitares, luth oriental et « kanoun » ·
+92-03 Orgues à tuyaux, harmoniums et autres instruments similaires à clavier et à anches libres
+métalliques · EX 92-04 Concertinas et harmonicas à bouche · EX 92-05 Autres instruments de musique à
+vent, à l'exclusion des instruments à vent en métal, en bois ou en roseau · EX 92-07 Instruments de
+musiques électromagnétiques, électrostatiques, électroniques et similaires (piano, accordéons etc.)
+à l'exclusion des orgues et guitares de tous genres · 92-08 Instruments de musique non repris dans
+une autre position du présent chapitre (orchestrions, orgues de barbarie, boites à musique,
+oiseaux-chanteurs, scies musicales etc.) appeaux de tous genres et instruments d'appel et de
+signalisation à bouche […] · 92-11 Phonographes, machines à dicter et autres appareils
+d'enregistrement ou de reproduction de son, y compris les tourne-disques, les tournes films et les
+tourne-fils, avec ou sans lecteur de son, appareils d'enregistrement ou de reproduction des images
+et du son en télévision · EX 92-12 Supports préparés pour l'enregistrement du son ou de l'image
+enregistrés ou non (cires, disques, films etc.) à l'exclusion des supports magnétiques autres que
+pour le traitement automatique de l'information ; matrices et moules galvaniques pour la
+fabrication des disques du numéro 92-11 · EX 93-02 Pistolets automatiques · 93-04 Armes à feu
+(autres que celles reprises aux n° 93-02 et 93-03) y compris les engins similaires utilisant la
+déflagration de la poudre […] · 93-05 Autres armes (y compris les fusils, carabines et pistolets à
+ressorts, à air comprimé ou à gaz) · EX 93-07 Munitions pour la chasse et le tir sportif et
+munitions de commerce.
+
+*P. 846 —* EX 95-05 Ecaille, nacre, ivoire et os travaillés (y compris les ouvrages) ; corne, bois
+d'animaux, corail naturel ou reconstitué et autres matières animales à travailler, travaillées (y
+compris les ouvrages) à l'exclusion des buscs pour cosets, pour vêtements ou accessoires de
+vêtements et similaires · EX 95-08 Matières végétales ou minérales à tailler, travaillées (y
+compris les ouvrages) ouvrages moulés ou taillés en cire naturelle (animale ou végétale), minérale
+ou artificielle, en parafine, en stéarine, en gommes ou résines naturelles […] à l'exclusion du
+colophane · 96-05 Houppes et houpettes à poudre et similaires · EX 97-04 Cartes à jouer ; articles
+pour jeux de sociétés (y compris les jeux à moteur ou à mouvement pour lieux publics, les tennis de
+table et les tables spéciales pour jeux de casinos à l'exclusion des billards et filets de tennis) ·
+97-05 Articles pour divertissements et fêtes, accessoires de cotillons et articles surprises,
+articles et accessoires pour arbres de noël et articles similaires pour fêtes de noël […] · 97-06
+Articles et engins pour les jeux de plein air, la gymnastique, l'athlétisme et autres sports à
+l'exclusion des articles du n° 97-04 · 97-08 Manèges, balançoires, stands de tir et autres
+attractions foraines, y compris les cirques, ménagerie et théâtres ambulants · 98-03 Porte-plumes,
+stylographe et porte-mines, porte-crayon et similaires, leurs pièces détachés et accessoires
+(protège-pointes, agrafes, etc.) à l'exception des articles des n° 98-04 et 98-05 · EX 98-04 Plumes
+à écrire et pointes pour plumes en métaux précieux ou en plaqués ou doublés de métaux précieux sur
+métaux communs · 98-10 Briquets et allumeurs (mécaniques, électriques, à catalyseurs etc.) et pièces
+détachées, autres que les pierres et les mèches · 98-11 Pipes (y compris les ébauchons et les
+têtes), fume-cigare et fume-cigarettes, bouts tuyaux et autres pièces détachées · EX 98-12 Peignes
+à coiffer, peignes de coiffures, barrettes et articles similaires en ivoire, écailles ou cornes ·
+EX 98-14 Vaporisateurs de toilette, leurs montures et têtes de montures en métaux précieux ou
+plaqués ou doublés de métaux précieux · 98-16 Mannequins et similaires, automates et scènes animées
+pour étalages · 99-01 Tableaux, peintures et dessins faits entièrement à la main, à l'exclusion des
+dessins industriels du n° 49-06 et des articles manufacturés décorés à la main · 99-02 Gravures,
+estampes et lithographies originales · 99-03 Productions originales de l'art statuaire et de la
+sculpture, en toutes matières · 99-04 Timbres-postes et analogues (entiers postaux, marques
+postales, etc.) timbres fiscaux et analogues, oblitérés, ou bien non oblitérés, mais n'ayant pas
+cours, ni destinés à avoir cours dans le pays de destination · 99-05 Collection et spécimens pour
+collection de zoologie et de botanique, de minéralogie et d'anatomie, objets pour collections
+présentant un intérêt historique, archéologique, paléonthologique, ethnographique et numismatique ·
+99-06 Objets d'antiquité ayant plus de cent ans d'âge.
+
+::::
+
+### Le tableau C à la veille de sa suppression {#sec-tva-tableaux-c-2006}
+
+L'état du tableau C à la fin de 2006 est donné par familles de produits, d'après l'édition du code publiée par l'Imprimerie officielle en 2016, avec les réserves dites plus haut (@sec-tva-tableaux-c). Les positions sont celles de la nomenclature du système harmonisé, en vigueur depuis 1992.
+
+:::: {.chronologie-repliable titre="Tableau C au 31 décembre 2006, par familles, d'après l'édition officielle de 2016"}
+
+Familles encore soumises au taux de 29 % au 31 décembre 2006, par chapitres du système harmonisé [@iort-code-tva-2016, p. 53-74] ; l'ajout de 2004 est celui que cette édition attribue à l'article 71 de la loi de finances pour 2005.
+
+- **Denrées** (chap. 02 à 22, 45 lignes) : foies de volailles, viandes et poissons séchés ou fumés ;
+  fleurs coupées et feuillages ; champignons et truffes ; fruits à coques, bananes, ananas, avocats,
+  mangues, raisins secs, pommes et poires ; poivre, vanille, cannelle, girofles, muscade, gingembre,
+  safran et autres épices ; malt ; gommes et résines ; charcuterie de sang ou de foie, conserves de
+  viande, extraits de viande, conserves de poissons (hors thon, sardines, anchois), crustacés et
+  mollusques préparés ; poudres pour crèmes et desserts, céréales soufflées ; certains légumes et
+  fruits préparés, jus d'ananas ; extraits de café et de thé, sauces et condiments, préparations pour
+  soupes ; **eaux-de-vie, liqueurs et autres boissons spiritueuses** (Ex 22-08).
+- **Parfumerie et toilette** (chap. 33-34) : extraits de vanille, parfums et eaux de toilette,
+  produits de beauté et de maquillage, préparations capillaires hors shampooings, désodorisants et
+  dépilatoires, savons de toilette parfumés.
+- **Poudres et artifices** (chap. 36) ; revêtements muraux en plastique ; ouvrages en caoutchouc.
+- **Fourrures** (chap. 43) ; bois marquetés, coffrets ; éventails ; livres reliés en cuir.
+- **Textiles et habillement** (chap. 50 à 67, la masse du tableau : 70 lignes) : tissus de
+  soie, tapis kilim et autres, velours, tulles, dentelles, broderies, linoléums, étoffes de
+  bonneterie ; vêtements de bonneterie et confectionnés des chapitres 61 et 62 (positions « Ex » : matières et provenances limitées) ; linge de maison, rideaux ; chaussures ;
+  chapeaux ; parapluies ; plumes, fleurs artificielles, perruques.
+- **Céramique, verre, bijouterie** : statuettes, objets en verre pour la table, perles de verre,
+  cannetilles d'argent, bijouterie de fantaisie ; boîtes à poudre et étuis à cigarettes ; statuettes
+  en métaux communs.
+- **Machines et appareils** (chap. 84-85) : moteurs hors-bord, pompes à carburant, **climatiseurs**
+  (Ex 84-15), unités « split » (Ex 84-18, ajout de 2004), **lave-vaisselle** (Ex 84-22), tondeuses à
+  gazon ; rasoirs électriques, tourne-disques, magnétophones, magnétoscopes, supports et disques
+  enregistrés, **récepteurs de radio et de télévision** (Ex 85-27, Ex 85-28), lampes à décharge, tubes
+  électroniques, cellules photovoltaïques.
+- **Optique, photographie, horlogerie, musique** (chap. 90 à 92) : lunettes solaires, jumelles,
+  appareils photographiques, caméras, projecteurs ; montres, réveils, horloges et fournitures ;
+  pianos et instruments non exonérés, boîtes à musique.
+- **Divers** (chap. 94 à 97) : constructions préfabriquées, jeux de casino, articles de fête,
+  matériel de gymnastique ; ivoire travaillé, briquets, pipes, peignes, mannequins ; tableaux,
+  gravures, sculptures, timbres de collection, antiquités.
+
+**Ce qui n'y est plus**, alors que le tableau de 1988 le portait : beurre, café, thé, cacao et chocolat, sucreries, eaux minérales, limonades, bières, vins, tabacs ; lessives, cirages ; articles en cuir et bagages ; bois fins ; sanitaires et vaisselle de porcelaine ; articles de ménage en métal ; chauffage et chaudières ; réfrigérateurs, machines à laver le linge, petit électroménager ; pneumatiques ; **voitures particulières et motocycles** ; bateaux de plaisance ; armes et munitions ; stylos ; manèges.
+
+::::
+
+:::: {.chronologie-repliable titre="Positions retirées du tableau C avant 2007, loi par loi"}
+
+« LF » désigne la loi de finances pour l'année indiquée.
+
+: Positions retirées du tableau C ou réduites par cinq lois de finances, 1989-1998 {#tbl-tva-tableau-c-retraits}
+
+| Loi, article | *Journal officiel*, numéro et page | Positions retirées du tableau C |
+|:------|:-----|:---------------------|
+| LF 1989 (loi n° 88-145) [@loi-88-145-lf-1989], art. 25 | n° 87 des 30-31 décembre 1988, p. 1794 | EX 34-02 préparations pour lessives |
+| LF 1991 (loi n° 90-111) [@lf-1991], art. 35 | n° 86 des 28-31 décembre 1990, p. 2052 | Ex 16-01 saucisses, saucissons et produits similaires de viande, d'abats « à l'exclusion des préparations de sang ou de foie » ; Ex 39-26 articles scolaires ; Ex 40-16 gommes à effacer ; Ex 76-15 articles de ménage et d'économie domestique en aluminium ; Ex 96-08 stylos, crayons, marqueurs, porte-mines |
+| LF 1992 (loi n° 91-98) [@lf-1992], art. 37 | n° 90 du 31 décembre 1991, p. 2085-2086 | Ex 04-03 yaghourt préparé avec du cacao ; Ex 19-05 pâtisserie et biscuiterie contenant du cacao ; Ex 42-02 malles, valises, étuis, sacs ; Ex 42-03 vêtements en cuir ; 42-05 autres ouvrages en cuir ; Ex 44-03 bois bruts fins ; Ex 44-07 bois fins sciés ; Ex 44-18 panneaux pour parquets, panneaux cellulaires décoratifs ; 95-08 manèges et attractions foraines |
+| LF 1995 (loi n° 94-127) [@lf-1995], art. 86 et tableau « M bis » — « Liste des produits dont le taux de la taxe sur la valeur ajoutée a été réduit de 29 % à 17 % » | n° 103 des 30-31 décembre 1994, p. 2150-2151 | 39-22 baignoires, lavabos, bidets en matières plastiques ; EX 39-24 articles d'hygiène ou de toilette en matière plastique ; EX 39-26 autres ouvrages en matières plastiques ; EX 40-11 pneumatiques neufs de plus de 2 kg ; EX 40-13 chambres à air de plus de 0,50 kg ; EX 49-11 notices, prospectus, catalogues, imprimés publicitaires ; 69-10 éviers, lavabos, baignoires, appareils sanitaires en céramique ; 69-11 vaisselle et articles de ménage en porcelaine ; EX 73-21 chaudières à foyer ; 73-22 radiateurs de chauffage central, générateurs d'air chaud ; EX 73-24 articles d'hygiène ou de toilette en fonte, fer ou acier ; EX 74-17 appareils non électriques de cuisson ou de chauffage en cuivre ; EX 74-18 articles de ménage en cuivre ; EX 76-15 articles d'hygiène ou de toilette en aluminium ; EX 84-03 chaudières pour le chauffage central ; EX 84-04 appareils auxiliaires pour chaudières ; 84-18 réfrigérateurs, congélateurs et autres matériels pour la production du froid, pompes à chaleur ; EX 85-16 appareils électriques pour le chauffage des locaux, appareils électrothermiques pour la coiffure ; EX 94-05 appareils d'éclairage, lampes-réclames, enseignes lumineuses |
+| LF 1998 (loi n° 97-88) [@lf-1998], art. 27 et tableau « L » — « Liste des produits soumis à la taxe sur la valeur ajoutée au taux de 18 % au lieu de 29 % » | n° 104 des 30-31 décembre 1997, p. 2557 | EX 17-04 sucreries sans cacao (y compris le chocolat blanc) ; 18-01 à 18-06 cacao en fèves, coques, pâte, beurre, poudre, chocolat ; EX 19-02 pâtes alimentaires farcies ou autrement préparées ; 21-05 glaces de consommation ; EX 22-01 eaux minérales et eaux gazéifiées ; EX 58-01 velours et peluches tissés ; 70-09 miroirs en verre ; EX 84-14 appareils électromécaniques à usage domestique ; EX 84-50 machines à laver le linge de 6 kg au plus ; 85-09 appareils électromécaniques à moteur électrique incorporé, à usage domestique |
+
+::::
+
+### L'origine des numéros des anciens tableaux, d'après le recueil non officiel de 2014 {#sec-tva-tableaux-origine}
+
+Entre 1988 et la refonte de 2016, les tableaux A, B et B bis sont retouchés par une trentaine de lois. Le recueil non officiel de 2014 donne, pour chaque numéro, l'article et la loi qui l'ont ajouté, modifié ou abrogé [@recueil-codes-sefac-2014, p. 160-178]. Ce relevé est repris tel quel ; sa dernière colonne dit pour quels textes l'article a été rapproché du *Journal officiel*. La numérotation est celle des anciens tableaux à la date de cette édition, qui n'est ni celle de 1988 ni celle des tableaux nouveaux.
+
+:::: {.chronologie-repliable titre="Ancien tableau A : l'origine de chaque numéro, d'après le recueil non officiel de 2014"}
+
+: Textes ayant ajouté, modifié ou abrogé les numéros de l'ancien tableau A, d'après le recueil non officiel de 2014 {#tbl-tva-tableau-a-origine}
+
+| N° | Objet | Texte, d'après le recueil non officiel de 2014 | Attesté par |
+|:---|:---------|:------------|:--------|
+| tête | refonte dans la nomenclature du système harmonisé | art. 43 LF 1992 (loi n° 91-98) | le *Journal officiel* (p. 2086) |
+| 1 bis | son et résidus de mouture — ajouté | art. 33 LF 2000 (loi n° 99-101) | le recueil non officiel seule |
+| 2 c | laits pour nourrissons : liste par décret | art. 95 LF 1995 | le recueil non officiel seule |
+| 4 d | huiles végétales alimentaires — ajouté puis modifié | art. 23 LF 1989 ; art. 41 LF 1992 ; art. 38 LF 1999 (loi n° 98-111) | le *Journal officiel* pour 1989 (p. 1794) et 1992 (p. 2086) |
+| 6 | œuvres humanitaires → associations | art. 55 de la LFC 2012 — l'édition écrit « 2012-8 », le *Journal officiel* « loi n° 2012-1 » | le *Journal officiel*, qui porte « loi n° 2012-1 » |
+| 7 bis | soins aux étrangers non-résidents — ajouté, puis abrogé | ajouté art. 46 LF 2005 (loi n° 2004-90), d'après le recueil non officiel de 2008 ; abrogé art. 64 LF 2014 | le *Journal officiel* pour l'abrogation |
+| 8 | ordures : admission en décharge, transformation | art. 60 LF 1994 | le recueil non officiel seule |
+| 9 | enseignement : formation informatique ; auto-écoles | art. 53 LF 2000 ; art. 10 du décret-loi n° 2011-56 | le recueil non officiel seule |
+| 9 bis | établissements pour personnes handicapées — ajouté | art. 39 LF 2008 | les deux recueils non officiels, de 2008 et de 2014 |
+| 11 a | polyéthylène : produits des serres ; foin, ensilage, pépinières | art. 23 LF 1989 ; art. 17 LF 2008 | le *Journal officiel* (p. 1794 et 4359) |
+| 11 e | engrais : ammonitre, super phosphate, NPK — ajoutés | art. 82 LF 1995 | le recueil non officiel seule |
+| 11 i | forage d'eau — ajouté | art. 23 LF 1989 | le *Journal officiel* |
+| 11 k | insecticides, fongicides, herbicides — ajouté ; pièces agricoles et de pêche — ajouté | art. 54 LF 1994 ; art. 81 LF 1995 | le recueil non officiel seule |
+| 12 bis | réparation navale — ajouté, étendu à la pêche | art. 34 LF 2000 ; art. 65 LF 2007 (loi n° 2006-85) | le recueil non officiel seule |
+| 13 | plants et semences : liste par décret | art. 95 LF 1995 | le recueil non officiel seule |
+| 14 | travaux agricoles, services afférents ; liste par décret | art. 23 LF 1989 ; art. 44 LF 2001 ; art. 29 LF 2013 | le *Journal officiel* pour 1989 et 2013 |
+| 14 bis | écailles de glace — ajouté | art. 41 LF 2001 (loi n° 2000-98) | le recueil non officiel seule |
+| 15 | eau : réduite à l'eau destinée à l'agriculture | art. 33 LF 1991 (loi n° 90-111) | le *Journal officiel* (p. 2052) |
+| 16 | dons de la coopération : associations ; achats locaux | art. 47 LF 2012 ; art. 56 LFC 2012 ; art. 103 LF 2004 | le *Journal officiel* pour 2012 |
+| 17 | timbres | art. 78 LF 2004 | le recueil non officiel seule |
+| 20 a | papier journal : caution | art. 60 LF 1991 | le recueil non officiel seule |
+| 23 a, b, c | films : importation ; production ; œuvres théâtrales et plastiques | art. 95 LF 1995 ; art. 39 LF 1992 ; art. 32 LF 2014 | le *Journal officiel* pour 1992 (p. 2086) et 2014 |
+| 25 c | maîtrise de l'énergie, énergies renouvelables — ajouté | art. 88 LF 1995 | le recueil non officiel seule |
+| 28 b | transport aérien : hors vente de billets | art. 21 LF 2008 | le *Journal officiel* (p. 4360) |
+| 28 c | services aériens sous réserve de réciprocité — ajouté | art. 42 LF 1992 | le *Journal officiel* |
+| 28 d ; 28 e, f | transport mixte rural ; transport et véhicules des handicapés | art. 89 et 92 LF 1993 ; art. 49 et 51 LF 1999 ; loi n° 2006-71 [@loi-2006-71-tva-28f] | le recueil non officiel seule |
+| 28 g ; 28 h ; 28 i | location de navires et d'aéronefs ; services portuaires ; matériel ferroviaire | art. 53 LF 1994 ; art. 84 LF 1995 ; art. 37 LF 1999 | le recueil non officiel seule |
+| 28 bis | amarrage de croisière — ajouté | art. 41 de la loi n° 2007-69 [@loi2007-69] (initiative économique) | le recueil non officiel seule |
+| 30 | location : collectivités et non-assujettis ; logements étudiants | art. 52 LF 1994 ; art. 76 LF 1995 | le recueil non officiel seule |
+| 30 bis | restauration des étudiants — ajouté, étendu | art. 58 LF 1998 ; art. 3 de la loi n° 2009-32 [@loi-2009-32-restauration-formation] | le recueil non officiel seule |
+| 31 bis | commissions d'assurance — ajouté | art. 43 LF 2004 | le recueil non officiel seule |
+| 39 a | intérêts : établissements mixtes, affacturage, titrisation ; caisses sociales, fonds sociaux ; pension livrée | art. 32 et 44 LF 2002 ; art. 47 LF 2004 | le recueil non officiel seule |
+| 39 d ; e ; f ; g | intérêts bancaires débiteurs ; CPSCL ; micro-crédits ; prêts universitaires | art. 23 LF 1989 ; art. 61 LF 1994 ; art. 2 de la loi n° 99-70 [@loi-99-70-microcredits] ; art. 60 LF 2000 | le *Journal officiel* pour 1989 |
+| 39 bis ; 39 ter | murabaha, salam, istisna ; sukuk | art. 37 LF 2012 ; « art. 27 » LF 2014 | le *Journal officiel*, qui porte l'article 29 pour les sukuk |
+| 45 | armement : achats locaux de l'État | art. 42 LF 2002 | le recueil non officiel seule |
+| 46 ; 47 | artisanat ; nettoiement des villes — ajoutés | art. 79 et 86 LF 1993 | le recueil non officiel seule |
+| 48 | télécommunications — ajouté, puis réduit à la radio-télédiffusion | art. 85 LF 1995 ; art. 66 LF 2002 | le *Journal officiel* |
+| 49 | services postaux — ajouté | art. 67 LF 1999 | le recueil non officiel seule |
+| 50 | logements des promoteurs — ajouté, précisé | art. 63 LF 2001 ; art. 65 LF 2014 | le *Journal officiel* |
+
+Les numéros 3, 5, 7, 10, 12, 18, 19, 21, 22, 24, 26, 27, 29, 31 à 38, 40 à 44 ne portent aucune note : d'après le recueil non officiel de 2014, leur rédaction est celle de 1988 (aux codes tarifaires près).
+
+::::
+
+:::: {.chronologie-repliable titre="Anciens tableaux B et B bis : l'origine de chaque numéro, d'après le recueil non officiel de 2014"}
+
+: Textes ayant ajouté, modifié ou abrogé les numéros de l'ancien tableau B, d'après le recueil non officiel de 2014 {#tbl-tva-tableau-b-origine}
+
+| N° | Objet | Texte, d'après le recueil non officiel de 2014 | Attesté par |
+|:---|:---------|:------------|:--------|
+| I | liste réduite aux professions de santé et à l'immatriculation foncière agricole ; paramédicaux | art. 38 LF 1996 ; art. 43 LF 2010 | le *Journal officiel* |
+| II-2 | électricité et gaz supprimés, numéro réemployé pour les supports magnétiques | art. 40 LF 1996 ; art. 50 LF 2000 (d'après le recueil non officiel de 2008) | le *Journal officiel* pour 1996 |
+| II-4 | produits pharmaceutiques : sacs de transfusion, réactifs | art. 74 LF 1995 ; art. 62 LF 2000 | le recueil non officiel seule |
+| II-5, II-6 ; III-7 | machines de traitement de l'information, téléviseurs ; services informatiques — abrogés | art. 57 LF 1995 | le *Journal officiel* |
+| II-9, 10, 11 | huiles acides, manèges, maïs — ajoutés | art. 35 LF 1992 | le *Journal officiel* (p. 2085) |
+| II-12 | matières premières de l'artisanat — ajouté | art. 80 LF 1993 | le recueil non officiel seule |
+| III-1, 8, 10, 13 | hôtellerie, restauration, séjours des agences, plongée — abrogés | art. 39 LF 1996 | le *Journal officiel* |
+| III-2 | artisanat local : fin de l'exception de la soie | art. 81 LF 1993 | le recueil non officiel seule |
+| III-3 | transport : personnes et produits agricoles seulement | art. 58 LF 1995 | le *Journal officiel* |
+| III-4 | huiles de pétrole — abrogé | art. 40 LF 1996 | le *Journal officiel* |
+| III-8, 9, 10, 11 | restauration, films, séjours des agences, fruits et légumes transformés — ajoutés | art. 24 LF 1989 | le *Journal officiel* (p. 1794) |
+| III-9 bis | abrogé (contenu non donné par l'édition) | art. 31 LF 2014 | le *Journal officiel* pour l'abrogation |
+| III-11 | fruits et légumes transformés : exclusions | art. 18 de la loi n° 2006-80 [@loi-2006-80-reduction-taux] | le recueil non officiel seule |
+| III-12 | musées — ajouté | art. 31 LF 2000 | le recueil non officiel seule |
+| III-13 | plongée et promenades en mer — ajouté | art. 36 LF 1992 | le *Journal officiel* (p. 2085) |
+| alinéa final | papier des revues | art. 33 LF 2014 | le *Journal officiel* |
+
+: Textes ayant ajouté, modifié ou abrogé les numéros de l'ancien tableau B bis, d'après le recueil non officiel de 2014 {#tbl-tva-tableau-bbis-origine}
+
+| N° | Objet | Texte, d'après le recueil non officiel de 2014 | Attesté par |
+|:---|:---------|:------------|:--------|
+| tête | liste fixée par le tableau « L » de la LF 2002 ; 10 % → 12 % | art. 83 LF 2002 ; art. 17 de la loi n° 2006-80 [@loi-2006-80-reduction-taux] | le *Journal officiel* |
+| I-2 | petites voitures — abrogé | art. 4 de la loi n° 2002-103 [@loi-2002-103-voitures-4cv] | le recueil non officiel et les éditions officielles du code, qui reproduisent la loi |
+| II-3 ; II-16, 17 | excursions ; anneaux des ports de plaisance, campings | art. 34 et 33 LF 2003 (loi n° 2002-101) | le recueil non officiel seule |
+| II-4 | hébergement vendu par les agences | art. 36 LF 2004 | le recueil non officiel seule |
+| II-12 bis | certification électronique — ajouté | art. 41 LF 2006 (loi n° 2005-106) | le recueil non officiel seule |
+
+::::
+
+### Les tableaux nouveaux, en 2016, en 2017 et en 2026 {#sec-tva-tableaux-nouveaux}
+
+Les tableaux nouveaux sont ceux que la loi de finances pour 2016 annexe au code. Pour chaque numéro, la première colonne de libellé donne la rédaction du 1^er^ janvier 2016, la deuxième ce que la loi de finances pour 2017 y change, la troisième l'état au 1^er^ janvier 2026. Le taux du tableau B est de 6 % jusqu'au 31 décembre 2017, de 7 % ensuite.
+
+:::: {.chronologie-repliable titre="Tableau A nouveau : les exonérations en 2016, en 2017 et en 2026"}
+
+Intitulé de l'annexe n° 1 de la loi de finances pour 2016 : « TABLEAU « A » NOUVEAU — LISTE DES MATIERES, EQUIPEMENTS ET SERVICES EXONERES DE LA TAXE SUR LA VALEUR AJOUTEE ». Sources : @lf-2016, annexe 1, p. 3292-3301 ; @lf-2017, art. 16 à 18 et 70, p. 3832-3833 ; @dgelf-code-tva-2025, p. 49-60 ; @dgelf-code-tva-2023, p. 61-74.
+
+**I. Les produits**
+
+**— Importation et vente :**
+
+| N° | Libellé au 1^er^ janvier 2016 (annexe 1) | Au 1^er^ janvier 2017 | Au 1^er^ janvier 2026 |
+|:--|:--------------|:--------|:----------|
+| 1 | du lait frais non concentré ni sucré, complet ou écrémé | = | = |
+| 2 | des farines lactées | = | = |
+| 3 | des laits conservés, concentrés, sucrés ou non, spécialement traités en vue d'en faciliter l'assimilation par les nourrissons ou les malades et dont la liste est fixée par décret gouvernemental | = | = |
+| 4 | de fèves de soja et d'huile de soja | = | = |
+| 5 | des huiles végétales en vue de leur mélange avec de l'huile d'olives, et de l'huile de grignon d'olive raffinée, par l'Office National de l'Huile | = | = |
+| 6 | du sucre non additionné d'aromatisants ou de colorants, ainsi que son conditionnement | **abrogé** (LF 2017, art. 16) ; le sucre passe au tableau B, n° 9 bis (art. 19) | abrogé |
+| 7 | des appareils destinés à l'usage des handicapés physiques et des appareils et filtres d'hémodialyse repris au tableau ci-après : EX 30-04 Soluté de dialyse ; EX 84-21 Filtres pour hémodialyses ; EX 87-13 Fauteuils et véhicules similaires pour invalides avec moteur ou autres mécanismes de propulsion ; EX 90-18 Reins artificiels, trousses artérioveineuses intranules cathétères intraveineux ; EX 90-21 Appareils d'orthopédie […] à l'exclusion des articles et appareils de prothèses dentaires en métaux précieux | = | = |
+| 7 bis | — | — | **ajouté** (LF 2019, art. 61, d'après l'édition du code) : les soutiens-gorge destinés pour les malades du cancer du sein relevant des positions tarifaires Ex 61-12 et Ex 62-12 [attestation du ministère chargé de la santé] |
+| 8 | du polyéthylène en feuilles, gaines et rouleaux destiné à l'agriculture forcée sous serre (forçage) et à la conservation de l'humidité des sols (paillage), et le polyéthylène en feuilles destiné au traitement et au stockage du foin et des ensilages et aux pépinières ainsi que les produits destinés à la fabrication des serres agricoles [conditions] | **abrogé** (art. 16) ; repris, à la vente seulement, au n° 46 bis (art. 17) | abrogé |
+| 9 | des éléments suivants entrant dans la fabrication des stations d'irrigation par goutte à goutte : EX 39-17 Goutteurs microjets et accessoires de raccordements ; EX 84-21 Filtres et cartouches pour irrigation par goutte à goutte ; EX 90-28 Compteurs d'eau pour irrigation par goutte à goutte [conditions] | = | = |
+| 10 | de l'acide gibbérellique | = | = |
+| 11 | des vernis et fongicides servant au traitement des agrumes et autres fruits [GIAF] | = | = |
+| 12 | des biens d'équipement destinés à l'agriculture, repris au tableau ci-après : 73-08 Serres agricoles ; EX 84-24 Appareils mécaniques (même à main) à projeter, disperser ou pulvériser des matières liquides ou en poudre à usage agricole ; EX 84-32 Machines, appareils et engins agricoles et horticoles pour la préparation et le travail du sol et pour la culture […] ; EX 84-33 Machines, appareils et engins pour la récolte et le battage des produits agricoles […] ; 84-34 Machines à traire et autres machines et appareils de laiterie ; 84-35 Presses et pressoirs, fouloirs et machines et appareils analogues pour la fabrication du vin, du cidre, des jus de fruits ou de boissons similaires ; 84-36 Autres machines et appareils pour l'agriculture, l'horticulture, la sylviculture, l'aviculture et l'apiculture […] ; EX 87-01 Tracteurs agricoles ; EX 87-16 Epandeurs de fumier et d'engrais et distributeurs de fourrage ; EX 88-02 Véhicules aériens agricoles (hélicoptères, avions ordinaires) ; EX 88-03 Parties et pièces détachées destinées à équiper les véhicules aériens agricoles | = | = |
+| 13 | des insecticides, fongicides, herbicides, anti rongeurs, inhibiteurs de germination et régulateurs de croissance pour plantes, désinfectants et produits similaires repris à la position 38-08 du tarif des droits de douane à l'importation ainsi que leurs intrants y compris les emballages destinés à leur fabrication et utilisés exclusivement dans l'agriculture | = | = |
+| 14 | des parties, pièces détachées, accessoires et produits utilisés exclusivement dans la réparation, l'entretien ou la fabrication des équipements et appareils agricoles et des bateaux de pêche dont la liste est fixée par décret gouvernemental | = | **modifié** (LF 2022, art. 50, p. 3096) : « des parties, pièces détachées, accessoires et produits utilisés dans la réparation, l'entretien ou la fabrication des équipements et appareils agricoles et des navires et bateaux de pêche dont leurs listes, conditions et procédures de bénéfice de l'exonération […] sont fixées par un décret Présidentiel » |
+| 15 | des bateaux autres que ceux de plaisance ou de sport, destinés à la navigation maritime ou à la pêche et de tous matériels destinés à être incorporés à ces bateaux, ainsi que les engins et filets de pêche | **modifié** (art. 18) : « des bateaux et navires de pêche et tous matériels destinés à y être incorporés ainsi que les engins et filets destinés à la pêche » ; les bateaux de navigation maritime passent au tableau B, n° 13 bis | **modifié** (LF 2022, art. 50 ; LF 2024, art. 26, p. 3474) : « des navires et bateaux de pêche et tous matériels destinés à y être incorporés **à l'exception des moteurs** ainsi que les engins et filets destinés à la pêche » [procédure] |
+| 16 | des plants et semences dont la liste est fixée par décret gouvernemental | = | = |
+| 17 | des timbres postaux et des timbres fiscaux et leur impression par l'Etat ou les établissements publics compétents conformément à la législation en vigueur | = | = |
+| 18 | des livres, brochures et imprimés similaires à l'exclusion de ceux reliés en cuir naturel, artificiel ou reconstitué, des journaux et publications périodiques ainsi que sa composition et impression | = | **modifié** (LF 2019, art. 86, d'après l'édition du code) : « … des journaux ainsi que les journaux électroniques à l'exception des opérations de publicité et publications périodiques ainsi que sa composition et impression » |
+| 19 | des produits destinés à l'édition des livres, des journaux, des périodiques et des publications et dépliants de propagande touristique repris au tableau ci-après : 37-01, 37-02, 37-03, EX 37-04, 37-05, 37-07 (plaques, films, pellicules, papiers photographiques et préparations chimiques pour usages photographiques), 76-06 et 76-07 (feuilles et bandes en aluminium servant pour la fabrication des plaques sensibilisées) [attestation] | = | = |
+| 20 | du papier destiné à l'impression des journaux relevant du numéro de position 48-01 du tarif des droits de douane [exonération accordée aux entreprises de journaux ; caution bancaire pour les autres importateurs] | = | = |
+| 21 | des articles culturels suivants : a. instruments de musique, leurs parties et articles servant à leur fabrication et dont la liste est fixée par décret gouvernemental ; b. matériels « son et lumière » de théâtre destinés au ministère des affaires culturelles, aux théâtres municipaux ou aux troupes de théâtre agréés par le ministère des affaires culturelles ainsi que les matériels d'équipement et produits nécessaires à la production cinématographique et aux salles de projection de films pour le public ; c. produits utilisés dans les arts plastiques et dont la liste est fixée par décret gouvernemental | = | = |
+| 22 | du matériel de forage et de sondage ainsi que leurs parties et pièces détachées | = | **modifié** (LF 2022, art. 50) : « des matériels de forage et de sondage ainsi que leurs parties et pièces détachées dont leurs listes, conditions et procédures de bénéfice de l'exonération […] sont fixées par un décret Présidentiel » |
+| 23 | des équipements et produits nécessaires aux installations expérimentales | = | = |
+| 24 | des plates formes de forage ou d'exploitations flottantes ou submersibles | = | = |
+| 25 | des rotochutes et aérodynes à usages militaires, agricole, ou pour la formation professionnelle ou pour la lutte contre l'incendie | = | = |
+| 26 | au profit de l'Etat : a. du matériel d'armement et des équipements à caractère militaire et défensif ; b. des véhicules de lutte contre l'incendie ; c. des véhicules équipés spécialement dans le cadre des services de la sûreté | = | **abrogé** (LF 2022, art. 39) ; la même liste devient l'article 13 sexies du code (suspension de la taxe, et non plus exonération) |
+| 27 | Les bus repris au numéro 87-02 du tarif des droits de douane et les véhicules automobiles de 8 ou 9 places repris au numéro 87-03 du même tarif, affectés exclusivement au transport des handicapés acquis par les associations qui s'occupent des handicapés et les entreprises et personnes autorisées par les services compétents du ministère des affaires sociales ou acquis par l'Etat pour leur compte [incessibilité cinq ans] | = | **étendu** deux fois : LF 2024, art. 23 (p. 3473) ajoute « les associations œuvrant dans le domaine de soutien et de l'assistance des personnes sans soutien familial et exerçant conformément à la législation les régissant » ; LF 2026, art. 36 § 1 (p. 4238 de l'édition arabe) ajoute les associations d'aide aux enfants atteints de xeroderma pigmentosum et les associations de réhabilitation et d'intégration des personnes atteintes de troubles du spectre de l'autisme (libellé traduit de l'arabe) |
+| 28 | Les matières premières et produits semi-finis servant à la fabrication d'équipements utilisés dans la maîtrise de l'énergie ou dans le domaine des énergies renouvelables ainsi que les équipements utilisés dans la maîtrise de l'énergie et dans le domaine des énergies renouvelables [liste par décret] | **abrogé** (art. 16) ; repris au tableau B, n° 18 bis (art. 19) | abrogé |
+| 29 | des articles de sport dont la liste est fixée par décret gouvernemental | = | = |
+
+**— Importation :**
+
+| N° | Libellé au 1^er^ janvier 2016 | Au 1^er^ janvier 2017 | Au 1^er^ janvier 2026 |
+|:--|:--------------|:--------|:----------|
+| 30 | des engrais minéraux ou chimiques potassiques repris au tableau ci-après : EX 28-34 Nitrites et nitrates de potassium destinés à l'agriculture ; EX 28-35 Phosphate de potassium à usage d'engrais ; EX 28-36 Carbonate et bicarbonate de potassium à usage d'engrais ; EX 31-02 Ammonitre 33,5 % ; EX 31-03 Triple super phosphate 45 % ; 31-04 Engrais minéraux ou chimiques potassiques ; Ex 31-05 Triple engrais composé NPK, Phosphate diammonique | **abrogé** (art. 16) ; les engrais relèvent du tableau B, n° 1 | abrogé |
+| 31 | des animaux reproducteurs de race pure | = | = |
+| 32 | des naissains d'huîtres | = | = |
+| 33 | du talc à usage agricole, agréé par le ministre chargé de l'agriculture | = | = |
+| 34 | de fonds, billets de banque, billets de loterie, monnaies ayant cours légal, actions et obligations constituant des valeurs de bourse par l'Etat | = | = |
+| 35 | des films cinématographiques impressionnés à caractère culturel, social, scientifique ou de formation et ce par décret gouvernemental ainsi que des films cinématographiques impressionnés destinés à la projection au public | = | = |
+| 36 | des monnaies d'or, de l'or en lingots, en barres, natif et grenailles d'or, argent et alliages d'argent en masses, lingots, grenailles, argent natif, autres cendres, déchets et débris de métaux précieux, platine et alliages de platine bruts en masses, lingots, grenailles | = | = |
+| 37 | des envois exceptionnels dépourvus de tout caractère commercial admis en franchise de droits de douane et ce, dans les conditions de l'article 272 du code des douanes | = | = |
+| 38 | des matériels et équipements importés et n'ayant pas de similaires fabriqués localement utilisés dans l'artisanat [liste par décret] | **abrogé** (art. 16) ; non repris nommément ailleurs | abrogé |
+| 39 | des bagages accompagnés ou non de voyageurs et destinés à leur usage personnel | = | = |
+| 40 | de marchandises hors commerce ou importées par colis postaux ou par paquets-poste | = | = |
+
+**— Vente :**
+
+| N° | Libellé au 1^er^ janvier 2016 | Au 1^er^ janvier 2017 | Au 1^er^ janvier 2026 |
+|:--|:--------------|:--------|:----------|
+| 41 | des farines, des semoules, du pain, du couscous et des pâtes alimentaires de qualité ordinaire | = | = |
+| 42 | du son et autres résidus de la mouture ou du traitement des céréales ou des légumineuses relevant du numéro de position 23-02 du tarif des droits de douane | = | = |
+| 43 | d'huile d'olives ou de grignon ainsi que les sous-produits de la trituration des olives | = | = |
+| 44 | des huiles végétales destinées à l'alimentation humaine et leur raffinage et conditionnement ainsi que les dérivés de la production et du raffinage de ces produits | = | = |
+| 45 | des écailles de glace destinées à la conservation et à la réfrigération des produits de la pêche | = | = |
+| 46 | de l'eau destinée à l'agriculture | = | = |
+| 46 bis | — | **ajouté** (art. 17) : du polyéthylène en feuilles, gaines et rouleaux destinés à l'agriculture forcée sous serre (forçage) et à la conservation de l'humidité des sols (paillage), et du polyéthylène en feuilles destiné au traitement et au stockage du foin et des ensilages et aux pépinières ainsi que les produits destinés à la fabrication des serres agricoles [conditions] | = |
+| 46 ter | — | — | **ajouté** (LF 2026, art. 64 § 2, p. 4247 de l'édition arabe) : « 46 ثالثا) الورق المعدّ لصناعة الكتاب والكراس المدرسي » — le papier destiné à la fabrication du livre et du cahier scolaire (libellé traduit de l'arabe) |
+| 47 | des produits de l'orfèvrerie et de la bijouterie locale soumis au droit de garantie | = | = |
+| 48 | récolte des propriétés frontalières | **abrogé** (art. 16) | abrogé |
+| 49 | des produits de la pêche tunisienne | **abrogé** (art. 16) | abrogé |
+| 50 | des installations commerciales nécessaires à la recherche, à la production et à la commercialisation des énergies renouvelables | **abrogé** (art. 16) ; les « équipements relatifs à la recherche, à la production et à la commercialisation des énergies renouvelables » entrent au tableau B, n° 28 | abrogé |
+| 51 | des hydrocarbures liquides et gazeux | = | = |
+| 52 | du sulfate de baryum naturel (baryte, barytine) [produits destinés aux sociétés pétrolières, sur attestation] | = | = |
+| 53 | des immeubles bâtis à usage exclusif d'habitation, réalisés par les promoteurs immobiliers tels que définis par la législation en vigueur, ainsi que leurs dépendances y compris les parkings collectifs attenant à ces immeubles, au profit des personnes physiques ou au profit des promoteurs immobiliers publics | = | **réécrit** (LF 2018, art. 44 § 1, p. 4281) : « Les logements sociaux ainsi que leurs dépendances y compris les parkings collectifs attenant à ces immeubles, financés dans le cadre des interventions du fonds de promotion du logement pour les salariés et acquis auprès des promoteurs immobiliers tels que définis par la législation en vigueur » |
+| 54 | Les matériels et équipements fabriqués localement et utilisés dans l'artisanat [liste par décret] | **abrogé** (art. 16) ; non repris nommément ailleurs | abrogé |
+
+**II. Les activités et les services**
+
+| N° | Libellé au 1^er^ janvier 2016 | Au 1^er^ janvier 2017 | Au 1^er^ janvier 2026 |
+|:--|:--------------|:--------|:----------|
+| 1 | Les établissements privés spécialisés dans l'hébergement et la prise en charge des personnes handicapées, agréés conformément à la législation en vigueur | = | = |
+| 2 | Les opérations relatives au forage d'eau | = | = |
+| 3 | Les opérations de réparation et de maintenance des bateaux destinés au transport maritime et des navires et des bateaux destinés à la pêche | **modifié** (art. 18) : « Les opérations de réparation et de maintenance des bateaux et navires destinés à la pêche » ; le transport maritime passe au tableau B, § II, n° 15 bis | = |
+| 3 bis | — | — | **ajouté** (LF 2022, art. 34, p. 3089) : Les commissions revenant aux concessionnaires des marchés de gros relatives aux produits agricoles et produits de la pêche |
+| 4 | Les travaux agricoles effectués à l'intérieur des exploitations agricoles ainsi que les travaux forestiers, la location de matériels à usage agricole, le transport des produits agricoles effectué par les agriculteurs pour leur propre compte, la location d'étalages dans les marchés publics ainsi que les services afférents aux produits agricoles et de la pêche. La liste des services relatifs aux produits agricoles et de pêche est fixée par décret gouvernemental | = | = |
+| 5 | La production des films cinématographiques et télévisés impressionnés sur bandes cinématographiques ou sur bandes vidéophoniques et destinés à la projection au public ou à la diffusion télévisée | = | = |
+| 6 | La production, la diffusion et la présentation des œuvres théâtrales, scéniques, musicales, littéraires et plastiques à l'exclusion des représentations réalisées dans des espaces servant des repas et des boissons pendant le spectacle | = | = |
+| 7 | a. Le transport maritime et la consignation des navires. b. Le transport aérien international à l'exclusion des services rendus en contrepartie de la vente des billets de voyage. c. Les services aériens sous réserve de réciprocité. d. Le transport mixte rural. e. Le transport des handicapés effectué par les bus relevant du numéro de position 87-02 […] et les véhicules automobiles de 8 ou 9 places relevant du numéro de position 87-03 […] appartenant aux associations qui s'occupent des handicapés et les entreprises et personnes autorisées par les services compétents du ministère des affaires sociales | = | = |
+| 8 | Les services rendus dans les ports tunisiens et relatifs à l'exportation de marchandises, à l'embarquement des voyageurs et au transbordement dans le transport maritime international | = | = |
+| 9 | les services relatifs à l'amarrage des navires et le passage des touristes réalisés par les entreprises qui gèrent une zone portuaire destinée au tourisme de croisière en vertu d'une convention conclue entre le gestionnaire de la zone et le ministre de tutelle, approuvée par décret gouvernemental sur l'avis de la commission supérieure d'investissement | **abrogé** (art. 16 § 2) ; repris au tableau B, § II, n° 26 | abrogé |
+| 10 | Le pompage de liquides sur les quais | = | = |
+| 11 | Armement au cabotage | = | = |
+| 12 | La location de locaux d'habitation non meublés ainsi que la location d'autres immeubles effectuée par les collectivités locales et les personnes physiques non soumises à la taxe sur la valeur ajoutée selon le régime réel au titre d'une autre activité et la location des locaux meublés destinés à l'hébergement des étudiants conformément au cahier des charges établi par le ministère de tutelle | = | = |
+| 13 | Les opérations d'assurances et de réassurances soumises à la taxe unique sur les assurances | = | = |
+| 14 | Les commissions payées par les entreprises d'assurance aux intermédiaires en assurance et qui font partie des éléments de la prime d'assurance soumise à la taxe unique sur les assurances | = | **modifié** (LF 2020, art. 13, d'après l'édition du code) : « les commissions payées par les entreprises d'assurance ou les fonds des adhérents aux intermédiaires en assurance qui font partie des éléments de la prime d'assurance ou des éléments de la cotisation soumise à la taxe unique sur les assurances » |
+| 14 bis | — | — | **ajouté** (LF 2020, art. 13, d'après l'édition du code) : la commission de mandat revenant à l'entreprise d'assurance Takaful qui fait partie des éléments de la cotisation soumise à la taxe unique sur les assurances […] |
+| 15 | a. Les intérêts sur : prêts consentis et sur emprunts contractés par la Caisse Nationale d'Epargne Logement ; prêts pour l'acquisition de logements neufs auprès de promoteurs immobiliers agréés ; prêts à la construction d'immeubles à usage d'habitation ; les dépôts et placements en devises convertibles et en dinars convertibles ; les opérations réalisées dans le cadre du marché monétaire ; prêts consentis par les établissements mixtes de crédits créés par des conventions ratifiées par une loi ; prêts consentis par les établissements financiers d'affacturage ; créances acquises par les fonds communs des créances dans le cadre des opérations de titrisation des créances ; prêts consentis par la caisse nationale de retraite et de prévoyance sociale et la caisse nationale de sécurité sociale ; prêts consentis par les fonds sociaux des entreprises constitués conformément à la législation en vigueur ; les opérations d'achat avec l'engagement de revente des valeurs mobilières et des effets de commerce prévues par la loi n° 2012-24 du 24 septembre 2012 relative la convention de pension livrée. b. La commission de garantie prélevée au profit du fonds national de garantie. c. La commission de péréquation des changes prélevée au profit du fonds de péréquation des changes et des taux d'intérêt. d. Les intérêts bancaires débiteurs. e. Les intérêts des prêts consentis par la Caisse des Prêts et de Soutien des Collectivités Locales. f. Les commissions et intérêts afférents aux micro-crédits accordés par les institutions de micro-finances prévus par le décret-loi 2011-117 du 5 novembre 2011 […]. g. Les commissions et les intérêts relatifs aux prêts universitaires | **f. réécrit** (art. 70 § 1) : « Les commissions, intérêts, la différence entre le prix de cession et le prix d'acquisition au titre des opérations réalisées dans le cadre des contrats de vente murabaha, de vente salam et d'istisna et la marge bénéficiaire réalisée au titre des opérations de financement pour mudharaba dans le cadre des micro finances accordés par les institutions de micro finance […] » | **a. complété** (LF 2025, art. 57 § 4, p. 3448) : « Les crédits destinés au financement des projets à travers les plateformes de « Crowdfunding » » |
+| 15 bis | — | — | **ajouté** (LF 2022, art. 43, p. 3092) : les commissions relatives aux paiements électroniques via les bornes, l'internet et le téléphone mobile |
+| 15 ter | — | — | **ajouté** (LF 2023, art. 61, d'après l'édition du code) : Les commissions et les autres rémunérations revenant à tous les distributeurs au titre des recharges électroniques, des ventes des cartes SIM téléphoniques et des cartes de recharge téléphonique |
+| 16 | La différence entre le prix de cession et le prix d'acquisition au titre des opérations réalisées par les établissements de crédit dans le cadre des contrats de vente murabaha, de vente salam et d'istisna et par les institutions de micro-finance prévues par le décret-loi n° 2011-117 […] et ce à l'exclusion des commissions | **modifié** (art. 70 § 2) : la mention des institutions de micro-finance est supprimée | = |
+| 17 | La marge bénéficiaire réalisée par les établissements de crédit et les institutions de micro-finance prévues par le décret loi n° 2011-117 […] dans le cadre des opérations de financement mudharaba à l'exclusion des commissions | **modifié** (art. 70 § 3) : même suppression | = |
+| 18 | Les montants payés dans le cadre d'une opération d'émission de sukuk conformément à la législation en vigueur et ce, à l'exclusion des commissions | = | = |
+| 19 | Les services relatifs à la collecte, au transport et à la distribution des envois postaux à l'intérieur et à l'extérieur de la Tunisie, les services de l'épargne et des comptes courants postaux et les services relatifs aux mandats postaux, réalisés par les réseaux publics | = | = |
+| 20 | L'enlèvement et l'admission des ordures dans les décharges municipales, ainsi que leur transformation et destruction réalisées par les collectivités locales ou pour leur compte | **modifié** (art. 18 § 3) : « … réalisées par les collectivités locales » ; les opérations réalisées « pour le compte » des collectivités passent au tableau B, § II, n° 27 | = |
+
+**Décompte.** Produits : 54 numéros au 1^er^ janvier 2016 ; 46 au 1^er^ janvier 2017 (neuf abrogés —
+n° 6, 8, 28, 30, 38, 48, 49, 50 et 54 — et un ajouté, le n° 46 bis) ; 47 au 1^er^ janvier 2026 (le
+n° 26 abrogé, les n° 7 bis et 46 ter ajoutés). Services : 20 numéros au 1^er^ janvier 2016 ; 19 au
+1^er^ janvier 2017 (n° 9 abrogé) ; 23 au 1^er^ janvier 2026 (n° 3 bis, 14 bis, 15 bis et 15 ter ajoutés).
+
+::::
+
+:::: {.chronologie-repliable titre="Tableau B nouveau : le taux réduit en 2016, en 2017 et en 2026"}
+
+Intitulé de l'annexe n° 1 bis de la loi de finances pour 2016 : « TABLEAU « B » NOUVEAU — LISTE DES PRODUITS ET SERVICES SOUMIS A LA TAXE SUR LA VALEUR AJOUTEE AU TAUX DE 6% ». Sources : @lf-2016, annexe 1 bis, p. 3302-3305 ; @lf-2017, art. 19 et 24 à 28, p. 3833-3836 ; @dgelf-code-tva-2025, p. 62-69 ; @dgelf-code-tva-2023, p. 76-83.
+
+**I. Les produits**
+
+**— Importation et vente :**
+
+| N° | Libellé au 1^er^ janvier 2016 (annexe 1 bis) | Au 1^er^ janvier 2017 | Au 1^er^ janvier 2026 |
+|:--|:------------|:----------|:----------|
+| 1 | des engrais | = | = |
+| 1 bis | — | **ajouté** (LF 2017, art. 25) : des produits suivants destinés à l'agriculture et à la pêche : Ex 01.06 Bourdons d'abeilles destinés pour la pollinisation ; Ex 25.30 Terreau ; Ex 27.03 Tourbe ; Ex 39.08 Granulés en polyamide destinés pour la fabrication des filets de pêche ; Ex 39.16 Monofilaments en polyamide de 67 décitex et plus […] utilisés dans la pêche ; Ex 39.23 Sacs en plastique utilisés dans le domaine agricole (pour le conditionnement des légumes…) ; Ex 56.08 Filets de pêche utilisés dans les pêcheries fixes […], Cordages utilisés dans les pêcheries fixes […] ; Ex 63.05 Sacs en matières textiles synthétiques ou artificiels utilisés dans le domaine agricole […] ; Ex 73.04 Tuyaux en acier inoxydable alimentaire ; Ex 73.07 Autres accessoires de tuyauterie en acier inoxydable pour équipements de production du lait ; Ex 73.15 Chaînes en acier inoxydable alimentaire ; Ex 73.18 Autres vis […] pour les équipements de la pêche ; Ex 73.20 Autres ressorts […] pour les équipements de la pêche ; Ex 74.15 Rondelles en cuivre pour les équipements de la pêche ; Ex 76.12 Récipients crybiologiques en aluminum ; Ex 83.07 Tuyaux flexibles en fer ou acier pour moteurs marins ; Ex 84.13 Parties d'autres pompes à liquide ; Ex 84.15 Parties d'appareils de conditionnement et de refroidissement de l'air ; Ex 84.21 Autres parties d'appareils pour la filtration ou l'épuration des liquides ou des gaz ; Ex 84.38 Parties de machines et appareils autres que les machines de boulangerie et de pâtisserie ; Ex 85.11 Parties de dynamos et alternateurs pour moteurs marins | = |
+| 2 | des supports magnétiques destinés à être utilisés exclusivement pour le traitement automatique de l'information et les disques laser, non enregistrés, figurant au numéro de position 85-23 du tarif des droits de douane | = | = |
+| 2 bis | — | **ajouté** (art. 25) : des machines pour le traitement de l'information relevant du numéro 84-71 du tarif des droits de douane, leurs pièces et parties relevant des numéros 84-73 et 85-42 et les cartes électroniques destinées à l'extension de la capacité de mémoire des machines pour le traitement de l'information relevant du numéro 85-42 du même tarif | = |
+| 3 | des aliments composés pour bétail, des tourteaux de soja et des farines de poissons | = | = |
+| 4 | des produits et articles destinés à l'industrie pharmaceutique ainsi que les produits pharmaceutiques finis et les sacs pour transfusion sanguine relevant du numéro 90-18 du tarif des droits de douane ainsi que les réactifs de diagnostic relevant des numéros 30-06 et 38-22 du même tarif | = | **réduit** (LF 2025, art. 34 § 3, p. 3430) : l'expression « des produits et articles destinés à l'industrie pharmaceutique ainsi que » est abrogée ; ces intrants relèvent de la suspension de l'article 13 octies nouveau (art. 34 § 4). Restent au n° 4 : les produits pharmaceutiques finis, les sacs pour transfusion sanguine et les réactifs de diagnostic |
+| 5 | des conserves de tomate, d'harissa et de sardines | = | = |
+| 5 bis | — | **ajouté** (art. 25) : des produits repris au tableau suivant : 72.10 Enroulés métalliques destinés à la fabrication des boites d'emballage de la sardine ; 83.09 Couvercles des boites d'emballage de la sardine de forme rectangulaire à ouverture facile | = |
+| 6 | du savon ordinaire | = | = |
+| 7 | des huiles acides utilisées dans la fabrication du savon ordinaire | = | = |
+| 8 | des manèges, balançoires, stands de tir et autres attractions foraines ; cirques, ménageries et théâtres ambulants relevant des numéros 95-08 du tarif des droits de douane | **abrogé** (art. 24) | abrogé |
+| 9 | du maïs | = | = |
+| 9 bis | — | **ajouté** (art. 19) : du sucre non additionné d'aromatisants ou de colorants, y compris le sucre conditionné relevant du numéro Ex 17-02 du tarif des droits de douane | = |
+| 10 | des matières premières destinées au secteur de l'artisanat | = | = |
+| 11 | des papiers pour machines de bureaux et similaires en bandes ou bobines, destinés à l'Agence Tunis Afrique Presse | = | = |
+| 12 | des publications et dépliants touristiques, destinés à l'hôtellerie ainsi que des affiches publicitaires gratuites, des formulaires d'importation temporaire ou de circulation internationale | = | = |
+| 12 bis | — | **ajouté** (art. 25) : des cahiers scolaires numérotés sous les numéros 12, 24, 48 et 72 ainsi que les cahiers de travaux pratiques, de dessin, de récitation et de musique relevant du numéro 482020000 du tarif des droits de douane | = |
+| 13 | d'aéronefs destinés au transport public aérien, et de tous les matériels destinés à être incorporés à ces aéronefs | = | = |
+| 13 bis | — | **ajouté** (art. 19) : des bateaux destinés à la navigation maritime autres que ceux de plaisance ou de sport, ainsi que tous matériels destinés à être incorporés à ces bateaux | = |
+| 13 ter | — | — | **ajouté** (LF 2018, art. 43 § 5, p. 4281) : des équipements et pièces de rechange nécessaires à l'activité du transport ferroviaire (déplacé du n° 25 : la « vente » devient « importation et vente ») |
+| 14 | des additifs alimentaires destinés à la fabrication des aliments composés et relevant des numéros 210210, 230990, 250810, 250840, 253090, 280120, 280490, 281700, 282090, 282110, 2827, 283090, 283325, 283329, 283630, 291529, 292241, 292310, 293040, 2936, 294190 et 350790 du tarif des droits de douane | = | = |
+| 15 | des barrières anti-adhérence stériles utilisées dans la chirurgie ou l'art dentaire relevant du numéro 300610300 du tarif des droits de douane | = | = |
+| 16 | des shampooings à usage médical et les dentifrices à usage médical relevant, respectivement, des numéros 330510 et 330610 du tarif des droits de douane | = | = |
+| 17 | des poches stériles de conservation du sang et des dérivés sanguins et de la moelle osseuse ne contenant pas de solution anticoagulante relevant du numéro 392690 du tarif des droits de douane | = | = |
+| 18 | des seringues destinées au conditionnement des médicaments relevant du numéro 901831900 du tarif des droits de douane | = | = |
+| 18 bis | — | **ajouté** (art. 19) : des matières premières et produits semi-finis servant à la fabrication d'équipements utilisés dans la maîtrise de l'énergie et dans le domaine des énergies renouvelables ainsi que les équipements utilisés dans la maîtrise de l'énergie et dans le domaine des énergies renouvelables | = |
+| 18 ter | — | — (ajouté en cours d'année 2017) | **ajouté** (loi n° 2017-8 du 14 février 2017, art. 5, et LF 2018, art. 43, d'après l'édition du code) : les équipements importés n'ayant pas de similaires fabriqués localement et les équipements fabriqués localement [conditions et listes par décret gouvernemental — le code cite le décret gouvernemental n° 2017-419 du 10 avril 2017] |
+| 18 quater | — | — | **ajouté** (LF 2019, art. 60, d'après l'édition du code) : les panneaux solaires relevant du numéro EX 85-41 du tarif des droits de douane |
+| 18 quinquies | — | — | **ajouté** (LF 2024, art. 50 § 1, p. 3481) : les véhicules automobiles équipés uniquement de moteurs électriques pour la propulsion relevant des numéros du tarif douanier Ex 87.02, Ex 87.03 et Ex 87.04, les bicyclettes relevant du numéro du tarif douanier Ex 87.12 et les motocycles de différents types équipés uniquement de moteurs électriques pour la propulsion relevant du numéro du tarif douanier Ex 87.11 ; **étendu** (LF 2026, art. 47 § 2, p. 4241 de l'édition arabe) aux véhicules automobiles équipés à la fois, pour la propulsion, d'un moteur thermique et d'un moteur électrique rechargeable par branchement à une source extérieure d'énergie électrique (libellé traduit de l'arabe) |
+| 18 sexies | — | — | **ajouté** (LF 2025, art. 54 § 1, p. 3445-3446) : les bus acquis par les entreprises industrielles destinés au transport de leurs employés et relevant du numéro Ex 87.02 du tarif des droits de douane et dont l'âge ne dépasse pas 10 ans à partir de la date de la première mise en circulation [attestation pour les acquisitions locales] |
+
+**— Importation :**
+
+| N° | Libellé au 1^er^ janvier 2016 | Au 1^er^ janvier 2017 | Au 1^er^ janvier 2026 |
+|:--|:------------|:----------|:----------|
+| 19 | des absorbeurs pour capteurs solaires à usage domestique | = | = |
+| 20 | des matériels et équipements n'ayant pas de similaires fabriqués localement destinés au nettoiement des villes, au ramassage et traitement des ordures, aux travaux de voiries et à la protection de l'environnement par les collectivités locales ou les établissements publics municipaux ou pour leur compte | = | = |
+| 21 | des peaux brutes | = | = |
+| 21 bis | — | — | **ajouté** (LF 2025, art. 59, p. 3449) : olives conservées provisoirement, mais impropres à l'alimentation en l'état destinées à des usages autres que la production de l'huile relevant du numéro 07112010 du tarif des droits de douane |
+| 22 | de papier destiné à l'impression de revues relevant du n° 48.10 du tarif des droits de douane, importé ou acquis localement par les entreprises d'impression de revues | = | = (l'édition du code de 2023 imprime : « … relevant du n° 48.10 du tarif des droits de douane, par les entreprises d'impression de revues ») |
+
+**— Vente :**
+
+| N° | Libellé au 1^er^ janvier 2016 | Au 1^er^ janvier 2017 | Au 1^er^ janvier 2026 |
+|:--|:------------|:----------|:----------|
+| 23 | des produits de l'artisanat locale | = | = |
+| 24 | du papier destiné à l'impression de revues relevant du n° 48.10 du tarif des droits de douane, au profit des entreprises d'impression de revues | = | = |
+| 25 | des équipements et pièces de rechange nécessaires à l'activité du transport ferroviaire | = | **supprimé** (LF 2018, art. 43 § 4) ; repris au n° 13 ter |
+| 26 | des matériels et équipements fabriqués localement destinés au nettoiement des villes, au ramassage et traitement des ordures, aux travaux de voirie et à la protection de l'environnement au profit des collectivités locales ou les établissements publics municipaux ou pour leur compte | = | = |
+| 27 | de chauffe-eaux solaires | = | = |
+| 28 | — | **ajouté** (art. 19) : des équipements relatifs à la recherche, à la production et à la commercialisation des énergies renouvelables | = |
+| 29 | — | — | **ajouté** (LF 2019, art. 65, d'après l'édition du code) : L'électricité moyenne et basse tension utilisée pour le fonctionnement des équipements de pompage de l'eau destinée à l'irrigation agricole |
+| 30 | — | — | **ajouté** (LF 2025, art. 31 § 2, p. 3428) : L'électricité basse tension destinée à la consommation domestique au profit des personnes dont la consommation mensuelle ne dépasse pas 300 kilowatts/heure |
+| 31 | — | — | **ajouté** (LF 2025, art. 64 § 2, p. 3449) : des immeubles bâtis à usage exclusif d'habitation, réalisés par les promoteurs immobiliers tels que définis par la législation en vigueur, ainsi que leurs dépendances y compris les parkings collectifs attenant à ces immeubles et dont le prix ne dépasse pas 400.000 dinars hors taxe au profit des personnes physiques ou au profit des promoteurs immobiliers publics sous réserve de l'exonération prévue au numéro 53 du paragraphe I du tableau « A » nouveau |
+
+**II. Les activités et les services**
+
+| N° | Libellé au 1^er^ janvier 2016 | Au 1^er^ janvier 2017 | Au 1^er^ janvier 2026 |
+|:--|:------------|:----------|:----------|
+| 1 | Les services effectués par : les exploitants de laboratoire d'analyse ; les infirmiers, les masseurs, les physiothérapeutes, les ergothérapeutes, les psychomotriciens, les diététiciens, les orthophonistes et les orthoptistes ; les médecins, les médecins spécialistes, les dentistes, les sages-femmes et les vétérinaires | = | **modifié** (LF 2023, art. 44, d'après l'édition du code) : « … les médecins, les médecins spécialistes, les dentistes, les sages-femmes et les vétérinaires à l'exception de la médecine et chirurgie esthétique autre que les actes à caractère thérapeutique » |
+| 2 | le transport de personnes et le transport des produits agricoles et de pêche ainsi que les produits entrant dans leur production | **modifié** (art. 27 § 2) : « Les services de transport sous réserve des exonérations prévues par le tableau « A » nouveau » — le transport de marchandises, jusque-là au tableau B bis, y entre | = |
+| 3 | l'hébergement, la restauration et les services effectués dans le cadre de leur activité par les cliniques et polycliniques médicales | = | = |
+| 4 | Les prestations de restaurants touristiques classés conformément à la réglementation en vigueur | **modifié** (art. 27 § 3) : « Les services rendus par les restaurants et les cafés de première catégorie à l'exclusion des services relatifs aux boissons alcoolisées » | = |
+| 5 | Les prestations de restauration rendues au profit des étudiants, des élèves et des apprenants dans les centres de formation professionnelle de base | = | = |
+| 6 | Les services rendus par les établissements d'enseignement primaire, secondaire, supérieur, technique et professionnel et les centres spécialisés en matière de formation dans le domaines de la conduite des véhicules et les écoles de formation des moniteurs d'enseignement de la conduite des véhicules, les établissements de garderie, ainsi que les services de formation en matière informatique rendus par les entreprises spécialisées agréées conformément à la réglementation en vigueur (**en vigueur au 1^er^ septembre 2016** : art. 31 § 5) | **modifié** (art. 27 § 4) : « Les services des établissements d'enseignement de base, secondaire et supérieur, les crèches, les jardins d'enfants, les garderies scolaires et les services des établissements de formation professionnelle de base et les centres spécialisés en matière de formation des moniteurs d'enseignement de la conduite des véhicules et les écoles de formation de la conduite des véhicules » — la formation informatique des entreprises agréées n'y est plus | = |
+| 7 | Les affaires effectuées par les agences de voyages avec les hôteliers et relatives aux séjours en Tunisie de non-résidents | = | = |
+| 8 | Les services relatifs à l'immatriculation foncière des terres agricoles rendus par les dessinateurs, les géomètres et les topographes | = | = |
+| 9 | la distribution et la projection de films cinématographiques | = | = |
+| 10 | Les services de radio-télédiffusion rendus par les réseaux publics | = | = |
+| 11 | La transmission par les agences de presse, de messages de presse aux entreprises de journaux | = | = |
+| 12 | La transformation des fruits et légumes à l'exclusion : du jus fabriqué à partir des concentrés extraits de ces produits ; du jus et de la confiture d'ananas, de mangue, de kiwi, d'avocat, de goyave et des mélanges de ces produits ; des légumes et fruits préparés ou conservés ou congelés autrement qu'au vinaigre ou à l'acide acétique, contenant de l'alcool | = | = |
+| 13 | L'entrée aux musées | = | = |
+| 14 | les intérêts débiteurs | = | = |
+| 15 | La location des navires et des aéronefs destinés au transport maritime ou aérien international | = | = |
+| 15 bis | — | **ajouté** (art. 19) : les opérations de réparation et de maintenance des bateaux destinés au transport maritime | = |
+| 16 | Les services rendus par les entreprises hôtelières, y compris les activités qui y sont intégrées à savoir l'hébergement, la restauration, les ventes à consommer sur place et l'animation | = | = |
+| 17 | La thalassothérapie et le thermalisme | = | = |
+| 18 | L'exploitation des campings touristiques conformément à un cahier de charges approuvé par arrêté du ministre de tutelle du secteur | = | = |
+| 19 | Les excursions et circuits réalisés à l'intérieur de la Tunisie par les agences de voyage | = | = |
+| 20 | Les opérations de vente relatives à l'hébergement dans les hôtels effectuées par les agences de voyage | = | = |
+| 21 | Les services relatifs à la plongée sous-marine et aux promenades en mer | = | = |
+| 22 | L'entrée aux parcs animaliers | = | = |
+| 23 | L'exploitation des terrains de golf | = | = |
+| 24 | Les jeux de divertissement dans les parcs d'attraction | = | = |
+| 25 | La location des anneaux d'amodiation dans les ports de plaisance | = | = |
+| 26 | — | **ajouté** (art. 19) : les services relatifs à l'amarrage des navires et le passage des touristes réalisés par les entreprises qui gèrent une zone portuaire destinée au tourisme de croisière […] | = |
+| 27 | — | **ajouté** (art. 19) : les opérations d'enlèvement et d'admission des ordures dans les décharges municipales et leur transformation et destruction réalisées pour le compte des collectivités locales | = |
+| 28 | — | **ajouté** (art. 25 § 2) : Les opérations de collecte des déchets en plastique au profit des entreprises de recyclage conformément à un cahier de charges approuvé par arrêté du ministre chargé de l'Environnement | = |
+| 29 | — | — | **ajouté** (LF 2019, art. 64 ; modifié LF 2021, art. 26, d'après l'édition du code) : Les services de la téléphonie fixe et d'internet fixe via les lignes « ADSL » et les périphériques rendus au profit des personnes physiques et non destinés à l'usage professionnel y compris les mêmes services facturés par les opérateurs des réseaux de télécommunication au profit des fournisseurs des services internet |
+
+**Alinéas finals.** 2016 : « La liste des matériels, équipements et pièces de rechange relevant des
+numéros 10, 20, 25 et 26 du paragraphe I du présent tableau ainsi que les conditions du bénéfice du
+taux de 6% sont fixées par décret gouvernemental. Les conditions et les procédures du bénéfice du
+taux de 6% pour les numéros 14, 16 et 18 du paragraphe I du présent tableau sont également fixées
+par décrets gouvernementaux. » 2017 (art. 28) : remplacés par un alinéa visant les numéros 1 bis,
+5 bis, 10, 14, 16, 18, 18 bis, 20, 25 et 26 ; inchangé depuis, au taux près (LF 2018, art. 43).
+
+**Décompte.** Produits : 27 numéros en 2016 ; 34 au 1^er^ janvier 2017 (n° 8 abrogé ; n° 1 bis, 2 bis,
+5 bis, 9 bis, 12 bis, 13 bis, 18 bis et 28 ajoutés) ; 42 au 1^er^ janvier 2026 (n° 25 supprimé ;
+n° 13 ter, 18 ter, 18 quater, 18 quinquies, 18 sexies, 21 bis, 29, 30 et 31 ajoutés). Services :
+25 numéros en 2016 ; 29 au 1^er^ janvier 2017 (n° 15 bis, 26, 27 et 28 ajoutés) ; 30 au 1^er^ janvier
+2026 (n° 29 ajouté).
+
+::::
+
+:::: {.chronologie-repliable titre="Tableau B bis nouveau en 2016, et le sort de chaque numéro au 1er janvier 2017"}
+
+Intitulé de l'annexe n° 1 ter de la loi de finances pour 2016 : « TABLEAU « B bis » NOUVEAU — LISTE DES PRODUITS, ACTIVITES ET SERVICES SOUMIS A LA TAXE SUR LA VALEUR AJOUTEE AU TAUX DE 12% ». Le tableau est abrogé au 1^er^ janvier 2017. La colonne de droite dit où va chaque numéro : dans un numéro du tableau B, à l'article 7, ou nulle part. Dans ce dernier cas, aucun article ne dit le taux : il résulte du premier alinéa de l'article 7. Sources : @lf-2016, annexe 1 ter, p. 3306-3308 ; @lf-2017, art. 25 à 27, p. 3834-3836.
+
+**I. LES PRODUITS — Importation et Vente :**
+
+| N° | Libellé (annexe 1 ter) | Au 1^er^ janvier 2017 |
+|:--|:--------------------|:----------|
+| 1 | des bourdons d'abeilles destinés pour la pollinisation relevant du numéro de position Ex 01.06 | tableau B, n° 1 bis (6 %) |
+| 2 | du terreau relevant du numéro de position Ex 25.30 | idem |
+| 3 | du tourbe relevant du numéro de position Ex 27.03 | idem |
+| 4 | des granulés en polyamide destinés pour la fabrication des filets de pêche relevant du numéro de position Ex 39.08 | idem |
+| 5 | des monofilaments en polyamide de 67 décitex ou plus […] utilisés dans la pêche relevant du numéro de position Ex 39.16 | idem |
+| 6 | des sacs en plastique utilisés dans le domaine agricole (pour le conditionnement des légumes…) relevant du numéro Ex 39.23 | idem |
+| 7 | des cahiers scolaires numérotés sous les numéros 12, 24, 48 et 72 ainsi que sur les cahiers de travaux pratiques, de dessin, de récitation et de musique relevant du numéro 482020000 | tableau B, n° 12 bis (6 %) |
+| 8 | des filets de pêche utilisés dans les pêcheries fixes ayant des nœuds du type knotless et dont la composition comprend du plomb relevant du numéro Ex 56.08 | tableau B, n° 1 bis |
+| 9 | des cordages utilisés dans les pêcheries fixes et dont la composition comprend du plomb relevant du numéro Ex 56.08 | idem |
+| 10 | des sacs en matières textiles synthétiques ou artificiels utilisés dans le domaine agricole […] relevant du numéro de position Ex 63.05 | idem |
+| 11 | des enroulés métalliques importés et destinés à la fabrication des boites d'emballage de la sardine, relevant du numéro 72.10 | tableau B, n° 5 bis (6 %) |
+| 12 | des tuyaux en acier inoxydable alimentaire relevant du numéro Ex 73.04 | tableau B, n° 1 bis |
+| 13 | des autres accessoires de tuyauterie en acier inoxydable pour équipements de production du lait relevant du numéro Ex 73.07 | idem |
+| 14 | Des chaînes en acier inoxydable alimentaire relevant du numéro Ex 73.15 | idem |
+| 15 | Des autres vis en fonte, fer ou acier, rondelles, goupilles, chevilles, clavettes, écrous et goujons pour les équipements de la pêche relevant du numéro Ex 73.18 | idem |
+| 16 | des autres ressorts en fonte, fer ou acier pour les équipements de la pêche relevant du numéro Ex 73.20 | idem |
+| 17 | des rondelles en cuivre pour les équipements de la pêche relevant du numéro Ex 74.15 | idem |
+| 18 | des récipients crybiologiques en aluminium relevant du numéro Ex 76.12 | idem |
+| 19 | des tuyaux flexibles en fer ou acier pour moteurs marins relevant du numéro Ex 83.07 | idem |
+| 20 | des couvercles des boites d'emballage de la sardine de forme rectangulaire à ouverture facile et relevant du numéro 83.09 | tableau B, n° 5 bis |
+| 21 | des parties d'autres pompes à liquide relevant du numéro Ex 84.13 | tableau B, n° 1 bis |
+| 22 | des parties d'appareils de conditionnement et de refroidissement de l'air relevant du numéro Ex 84.15 | idem |
+| 23 | des autres parties d'appareils pour la filtration ou l'épuration des liquides ou des gaz relevant du numéro Ex 84.21 | idem |
+| 24 | des parties de machines et appareils du n° 84-38 autres que les machines de boulangerie et de pâtisserie relevant du numéro Ex 84.38 | idem |
+| 25 | des parties de dynamos et alternateurs pour moteurs marins relevant du numéro Ex 85.11 | idem |
+| 26 | des véhicules à moteur électrique relevant des numéros 870390 et 870490 | non repris : taux normal (la loi ne l'écrit pas : il résulte du premier alinéa de l'article 7) — jusqu'au tableau B, n° 18 quinquies (2024) |
+| 27 | des produits pétroliers relevant des numéros 27-10 et 27-11 du tarif des droits de douane conformément au tableau suivant : EX 27-10 Pétrole lampant, Gaz-oil, Fuel-oil domestique, Fuel-oil léger, Fuel-oil lourd ; EX 27-11 Gaz de pétrole, propane et butane conditionné dans des bouteilles d'un poids net n'excédant pas treize kilogrammes, Gaz de pétrole, propane et butane en vrac ou conditionné dans des bouteilles d'un poids net excédant treize kilogrammes | article 7, n° 3, 1^er^ tiret (12 %) |
+
+**— Importation :**
+
+| N° | Libellé | Au 1^er^ janvier 2017 |
+|:--|:--------------------|:----------|
+| 28 | des machines pour le traitement de l'information figurant au numéro de position 84-71 du tarif des droits de douane, leurs pièces et parties figurant aux numéros de position 84-73 et 85-42 ainsi que les cartes électroniques pour l'extension de la capacité de mémoire […] relevant du numéro de position 85-42 | tableau B, n° 2 bis (6 %), désormais « importation et vente » |
+| 29 | des équipements n'ayant pas de similaires fabriqués localement prévus par l'article 9, l'article 41, le deuxième paragraphe de l'article 50 et l'article 56 du code d'incitation aux investissements et ce nonobstant les dispositions du code d'incitation aux investissements | non repris au 1^er^ janvier 2017 ; tableau B, n° 18 ter (loi n° 2017-8, art. 5), au 1^er^ avril 2017 — régime du premier trimestre 2017 non établi |
+| 30 | des préparations alimentaires, sous forme de comprimés, de gommes à mâcher ou sous d'autres formes destinées à aider les fumeurs à cesser de fumer relevant du numéro Ex 210690 du tarif des droits de douane et les patchs à la nicotine, destinés à aider les fumeurs à arrêter de fumer relevant du numéro 38249058 du même tarif | non repris : taux normal (la loi ne l'écrit pas : il résulte du premier alinéa de l'article 7) |
+
+**— Vente :**
+
+| N° | Libellé | Au 1^er^ janvier 2017 |
+|:--|:--------------------|:----------|
+| 31 | des équipements fabriqués localement prévus par l'article 9, le paragraphe 2 de l'article 50 et l'article 56 du code d'incitation aux investissements acquis à compter de la date effective d'entrée en activité des investissements de création de projets prévus par l'article 5 dudit code […] | comme le n° 29 |
+| 32 | de l'électricité basse tension destinée à la consommation domestique ; de l'électricité moyenne et basse tension utilisée pour le fonctionnement des équipements de pompage de l'eau destinée à l'irrigation agricole | article 7, n° 3, 2^e^ tiret (12 %) |
+
+**II. LES ACTIVITES ET SERVICES**
+
+| N° | Libellé | Au 1^er^ janvier 2017 |
+|:--|:--------------------|:----------|
+| 1 | Le transport de marchandises à l'exclusion des produits agricoles et de pêche ainsi que les produits entrant dans leur production | tableau B, § II, n° 2 réécrit : « Les services de transport » (6 %) |
+| 2 | La restauration | tableau B, § II, n° 4 réécrit, pour « les restaurants et les cafés de première catégorie à l'exclusion des services relatifs aux boissons alcoolisées » (6 %) ; le reste n'est pas repris : taux normal (la loi ne l'écrit pas : il résulte du premier alinéa de l'article 7) |
+| 3 | Les services rendus par : les architectes et les ingénieurs-conseils ; les dessinateurs, les géomètres et les topographes à l'exclusion des services relatifs à l'immatriculation foncière des terres agricoles ; les avocats, les notaires, les huissiers-notaires et les interprètes ; les conseils juridiques et les conseils fiscaux ; les entrepreneurs de tenue de comptabilité ; les experts quelque soit leur spécialisation | article 7, n° 3, 3^e^ tiret (12 %), avec deux retouches : « les conseils fiscaux » (sans « les conseils juridiques ») et « les experts et les conseils quelle que soit leur spécialisation » |
+| 4 | Les services réalisés en matière informatique | non repris : taux normal (la loi ne l'écrit pas : il résulte du premier alinéa de l'article 7) |
+| 5 | Les services de certification électronique | non repris : taux normal (la loi ne l'écrit pas : il résulte du premier alinéa de l'article 7) |
+| 6 | Les services de formation | non repris, hors ce que couvre le tableau B, § II, n° 6 (formation professionnelle de base, auto-écoles) : taux normal (la loi ne l'écrit pas : il résulte du premier alinéa de l'article 7) |
+| 7 | Les services Internet fixe rendus par les opérateurs de réseaux de télécommunication, les fournisseurs des services internet et les centres publics d'Internet agréés conformément à la législation en vigueur | non repris : taux normal (la loi ne l'écrit pas : il résulte du premier alinéa de l'article 7) — jusqu'au tableau B, § II, n° 29 (2019), pour les seuls particuliers |
+| 8 | Les opérations de collecte des déchets de plastiques au profit des entreprises de recyclage réalisées conformément à un cahier de charges approuvé par arrêté du ministre de l'environnement et de l'aménagement du territoire | tableau B, § II, n° 28 (6 %) |
+
+Alinéa final de 2016 : « Les conditions et les procédures de bénéfice du taux de 12% pour les
+matières et produits relevant des numéros 1 à 8 et 10 à 26 du paragraphe I de ce tableau sont
+fixées par décrets gouvernementaux. »
+
+::::
+
+:::: {.chronologie-repliable titre="Article 7, numéro 3 : les opérations au taux intermédiaire depuis 2017"}
+
+Sources : @lf-2017, art. 27, p. 3835 ; @lf-2018, art. 44, p. 4281 ; @lf-2025, art. 31 et 64, p. 3428 et 3449 ; @dgelf-code-tva-2025, p. 21-22.
+
+: Les tirets de l'article 7, numéro 3, du code de la taxe sur la valeur ajoutée, en 2017 et en 2026 {#tbl-tva-article-7-3}
+
+| Tiret | Au 1^er^ janvier 2017 (LF 2017, art. 27 § 1, p. 3835) — 12 % | Au 1^er^ janvier 2026 (édition du code de 2025, p. 21-22) — 13 % |
+|:--|:---------------|:---------------|
+| 1^er^ | L'importation et la vente des produits pétroliers relevant des numéros 27-10 et 27-11 du tarif des droits de douane : EX 27-10 Pétrole lampant, Gaz-oil, Fuel-oil domestique, Fuel-oil léger, Fuel-oil lourd ; EX 27-11 Gaz de pétrole, propane et butane conditionné dans des bouteilles d'un poids net n'excédant pas treize kilogrammes ; Gaz de pétrole, propane et butane en vrac ou conditionné dans des bouteilles d'un poids net excédant treize kilogrammes | = |
+| 2^e^ | La vente de l'électricité basse tension destinée à la consommation domestique et l'électricité moyenne et basse tension utilisée pour le fonctionnement des équipements de pompage de l'eau destinée à l'irrigation agricole | « La vente de l'électricité basse tension destinée à la consommation domestique au profit des personnes dont la consommation mensuelle dépasse 300 kilowatts/heure » (LF 2025, art. 31 § 1, p. 3428) ; l'irrigation en est sortie en 2019 (tableau B, n° 29) |
+| 3^e^ | Les services rendus par : les architectes et les ingénieurs-conseils ; les dessinateurs, les géomètres et les topographes à l'exclusion des services relatifs à l'immatriculation foncière des terres agricoles ; les avocats, les notaires, les huissiers-notaires et les interprètes ; les conseils fiscaux ; les entrepreneurs de tenue de comptabilité ; les experts et les conseils quelle que soit leur spécialisation | **supprimé** (décret-loi de finances pour 2023, art. 44, d'après l'édition du code) : taux normal (la loi ne l'écrit pas : il résulte du premier alinéa de l'article 7) |
+| 4^e^ | — (ajouté au 1^er^ janvier 2018 par LF 2018, art. 44 § 2 : la vente des immeubles bâtis à usage exclusif d'habitation réalisés par les promoteurs immobiliers […] sous réserve de l'exonération du n° 53 du tableau A) | **abrogé** (LF 2025, art. 64 § 1, p. 3449) ; tableau B, n° 31 jusqu'à 400 000 dinars hors taxe |
+
+::::
+
+:::: {.chronologie-repliable titre="Ce que la loi de finances pour 2026 change aux tableaux et aux taux"}
+
+La loi de finances pour 2026 retouche trois numéros des tableaux et porte trois mesures de taux qui ne les touchent pas. Elle est publiée en arabe : les libellés sont traduits. Source : @lf-2026, art. 36, 46, 47, 64 et 75.
+
+: Articles de la loi de finances pour 2026 qui touchent les tableaux ou les taux de la taxe sur la valeur ajoutée {#tbl-tva-tableaux-lf-2026}
+
+| Article, page (édition arabe) | Ce qu'il fait | Tableau touché |
+|:------|:--------------------|:------|
+| art. 36 § 1, p. 4238 | ajoute au 1^er^ et au 3e alinéa du n° 27 les associations d'aide aux enfants atteints de xeroderma pigmentosum et les associations de réhabilitation et d'intégration des personnes atteintes de troubles du spectre de l'autisme | **A, § I, n° 27** |
+| art. 47 § 2, p. 4241 | ajoute au n° 18 quinquies les véhicules à moteur thermique et moteur électrique rechargeable par branchement extérieur | **B, § I, n° 18 quinquies** |
+| art. 64 § 2, p. 4247 | ajoute un n° 46 ter : le papier destiné à la fabrication du livre et du cahier scolaire | **A, § I, n° 46 ter** |
+| art. 46, p. 4241 | exonère de droits de douane et ramène à 7 % la taxe sur les intrants non fabriqués localement nécessaires à la fabrication des batteries au lithium (positions 391910, 392049, 392062, Ex 760719, 850760, Ex 853690, Ex 8537) | aucun (mesure autonome) |
+| art. 47 § 4, p. 4242 | ramène à 7 % la taxe sur les appareils de recharge des voitures électriques (85044055003 et Ex 853710), jusqu'au 31 décembre 2028 | aucun |
+| art. 75, p. 4250 | applique le taux de 7 % aux matériels et équipements de prise de vues cinématographique et photographique et de production audiovisuelle, au profit des établissements et sociétés déclarés | aucun |
+
+::::

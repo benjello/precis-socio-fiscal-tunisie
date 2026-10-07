@@ -9,13 +9,18 @@ Produit :
          precis/ar/<book>/_glossaire.qmd
      Chaque terme porte une ancre commune `#g-<id>` et un lien de bascule vers
      l'autre langue (navigation FR ⇄ AR).
-  2. `translation_glossary.generated.md` : table FR↔AR injectée dans le pipeline
+  2. À côté de chaque annexe, `_glossaire.infobulles.html` : les mêmes notions, en
+     JSON dans un `<script type="application/json" id="glossaire-infobulles">`, pour
+     l'infobulle des liens `#g-…` (voir `precis/legendes.html`). Le fichier est inclus
+     par `include-after-body` dans le `_quarto.yml` du livre — tenu à la main.
+  3. `translation_glossary.generated.md` : table FR↔AR injectée dans le pipeline
      de traduction (translate_sync.py / verify_translation.py) pour garantir la
      bijection des termes et éviter les divergences.
 
 Fichiers générés : NE PAS éditer à la main, modifiez `precis/glossaire.yml`.
 """
 
+import json
 import os
 import re
 import sys
@@ -229,6 +234,82 @@ def render_book(entries, book, lang, retenues=None):
     return "\n".join(lines).rstrip() + "\n"
 
 
+INFOBULLES = "_glossaire.infobulles.html"
+
+
+def texte_nu(texte):
+    """Définition sans balisage Markdown, pour une infobulle : `1^er^` → « 1er »,
+    `*mot*` → « mot », `[texte](adresse)` → « texte », appels `[@clé…]` retirés."""
+    t = clean(texte)
+    t = re.sub(r"\s*\[@[^\]]*\]", "", t)
+    t = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", t)
+    t = re.sub(r"\^([^^\s]+)\^", r"\1", t)
+    t = re.sub(r"\*{1,2}([^*]+)\*{1,2}", r"\1", t)
+    return t
+
+
+def titres_des_references(book, lang):
+    """Clé CSL → titre court, pour le livre et le fonds commun de la langue. Sert à
+    écrire la source d'une définition en clair : une infobulle ne résout pas `[@clé]`."""
+    titres = {}
+    for depot in (os.path.join(ROOT, "precis", lang, "references.json"),
+                  os.path.join(ROOT, "precis", lang, book, "references.json")):
+        if not os.path.isfile(depot):
+            continue
+        with open(depot, encoding="utf-8") as f:
+            donnees = json.load(f)
+        for item in donnees.get("items", donnees) if isinstance(donnees, dict) else donnees:
+            titre = item.get("title-short") or item.get("title")
+            if item.get("id") and titre:
+                titres[item["id"]] = clean(titre)
+    return titres
+
+
+def source_en_clair(source, titres):
+    """« Titre court, art. 5 » ; chaîne vide si la clé n'a pas de titre connu."""
+    if not source:
+        return ""
+    ref = source if isinstance(source, str) else source.get("ref")
+    titre = titres.get(ref)
+    if not titre:
+        return ""
+    locator = None if isinstance(source, str) else source.get("locator")
+    return f"{titre}, {locator}" if locator else titre
+
+
+def render_infobulles(entries, lang, retenues=None, titres=None):
+    """Rend le fichier d'inclusion des infobulles du glossaire d'un livre.
+
+    Les définitions ne sont pas dans la page qui porte le lien, et le livre se relit
+    aussi en `file://`, où `fetch()` est refusé : elles sont donc embarquées dans chaque
+    page, pour les seules notions que le livre rend (`retenues`, comme `render_book`).
+
+    JSON écrit en clair (`ensure_ascii=False`) : pas d'échappement `\\uXXXX`. Seul `</`
+    est neutralisé, pour qu'aucune définition ne puisse fermer le bloc `<script>`.
+    """
+    other = OTHER[lang]
+    titres = titres or {}
+    if retenues is not None:
+        entries = [e for e in entries if e["id"] in retenues]
+    notions = {}
+    for e in sorted(entries, key=lambda e: e["id"]):
+        notion = {
+            "terme": clean(e[lang]["terme"]),
+            "autre": clean(e[other]["terme"]),
+            "definition": texte_nu(e[lang].get("definition") or ""),
+        }
+        if e.get("acronyme"):
+            notion["acronyme"] = e["acronyme"]
+        source = source_en_clair(e.get("source_definition"), titres)
+        if source:
+            notion["source"] = source
+        notions[e["id"]] = notion
+    charge = json.dumps(notions, ensure_ascii=False, indent=1, sort_keys=True)
+    charge = charge.replace("</", "<\\/")
+    return (f"{DO_NOT_EDIT[lang]}\n"
+            f'<script type="application/json" id="glossaire-infobulles">\n{charge}\n</script>\n')
+
+
 def render_translation_table(entries):
     lines = [
         "<!-- Fichier généré par scripts/build_glossary.py — ne pas éditer. Source : precis/glossaire.yml -->",
@@ -291,6 +372,11 @@ def main():
             with open(out_path, "w", encoding="utf-8") as f:
                 f.write(render_book(entries, book, lang, retenues))
             written.append(os.path.relpath(out_path, ROOT))
+            infobulles = os.path.join(out_dir, INFOBULLES)
+            with open(infobulles, "w", encoding="utf-8") as f:
+                f.write(render_infobulles(entries, lang, retenues,
+                                          titres_des_references(book, lang)))
+            written.append(os.path.relpath(infobulles, ROOT))
 
     with open(GENERATED_TABLE, "w", encoding="utf-8") as f:
         f.write(render_translation_table(entries))

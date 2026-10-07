@@ -189,11 +189,12 @@ class DepotReelTest(unittest.TestCase):
             "Régénérer avec : uv run python scripts/sync_agents.py",
         )
 
-    def test_six_roles_editoriaux_presents(self):
+    def test_sept_roles_editoriaux_presents(self):
         config = sync_agents.charger_config()
         self.assertEqual(
             set(config["roles"]),
             {
+                "architecte",
                 "bibliographe",
                 "documentaliste",
                 "modeliste",
@@ -209,6 +210,7 @@ class DepotReelTest(unittest.TestCase):
         self.assertEqual(
             niveaux,
             {
+                "architecte": "raisonnement",
                 "bibliographe": "standard",
                 "documentaliste": "raisonnement",
                 "modeliste": "raisonnement",

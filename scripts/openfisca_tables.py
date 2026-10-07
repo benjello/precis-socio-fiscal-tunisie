@@ -1614,6 +1614,21 @@ def tableau_arborescence(
     return pd.DataFrame(lignes)
 
 
+# COLONNE DE TEXTES. Tout tableau engendré est inséré dans un bloc `.tableau-engendre`. En HTML,
+# le script de `precis/legendes.html` y repère la colonne des textes de loi — celle dont l'en-tête
+# est exactement « Texte » ou « النصّ », les deux seuls qu'emploient les générateurs —, la masque
+# et en reporte le contenu rendu dans une infobulle portée par la première cellule de la ligne.
+# Le snapshot, lui, ne change pas : la colonne reste dans le Markdown, où Pandoc résout ses
+# citations. Sans script, et en PDF, elle s'affiche telle quelle. Un tableau fait main adopte le
+# même comportement en se plaçant dans un bloc de cette classe.
+CLASSE_ENGENDRE = "tableau-engendre"
+
+
+def bloc_engendre(tableau: str) -> str:
+    """Enveloppe un tableau Markdown du bloc `.tableau-engendre`."""
+    return f"::: {{.{CLASSE_ENGENDRE}}}\n\n{tableau.rstrip()}\n\n:::\n"
+
+
 def markdown_avec_legende(
     chemin: str | Path, legende: str, label: str, colonnes: str = "",
     niveau: int = 2, arborescence: bool = False,
@@ -1642,7 +1657,10 @@ def markdown_avec_legende(
     attributs = f"{{#{label}}}" if not colonnes else f"{{#{label} {colonnes}}}"
     tableau = f"{corps}\n\n: {legende} {attributs}\n"
     if arborescence:
-        tableau = f"{_script_arborescence()}::: {{.tableau-arborescence}}\n\n{tableau}\n:::\n"
+        tableau = (f"{_script_arborescence()}::: {{.{CLASSE_ENGENDRE} .tableau-arborescence}}"
+                   f"\n\n{tableau}\n:::\n")
+    else:
+        tableau = bloc_engendre(tableau)
     liens = fichier.with_suffix(".liens.yml")
     if not liens.is_file() or yaml is None:
         return tableau
@@ -1691,6 +1709,7 @@ def markdown_un_tableau_en_onglets(
         if not fichier.is_file():
             return MESSAGE_INDISPONIBLE
         corps = fichier.read_text(encoding="utf-8").rstrip()
+        corps = bloc_engendre(corps).rstrip()
         onglets.append(f"### {titre}\n\n{corps}\n\n{note}\n" if note else f"### {titre}\n\n{corps}\n")
         fichier_liens = fichier.with_suffix(".liens.yml")
         if fichier_liens.is_file() and yaml is not None:

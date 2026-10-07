@@ -651,3 +651,360 @@ def table_taux():
                   "texte": _lab("c_texte"), "jort": _lab("c_jort"),
                   **{e: _lab("e_" + e) for e in ("creation", "changement", "reprise",
                                                  "suppression")}})
+
+
+# --- Les régimes par grande catégorie de produits et de services, à cinq dates -----------
+# Une MATRICE, non une courbe : vingt-cinq catégories en lignes, cinq dates repères en
+# colonnes, une couleur par régime. La série dit, pour chaque catégorie et chaque date, le
+# ou les régimes relevés sur les tableaux annexés au code (A : exonérations ; B : taux
+# réduit ; B bis : taux intermédiaire ; C : taux majoré) ou à l'article 7 :
+#   - une case à plusieurs régimes est PARTAGÉE : la catégorie réunit des opérations que la
+#     loi ne traite pas de la même façon (les soins au taux réduit, les appareils pour
+#     handicapés exonérés) ;
+#   - une case HACHURÉE porte un taux que la loi n'écrit pas : l'opération ne figure dans
+#     aucun tableau, et relève du taux normal par la règle générale de l'article 7 ;
+#   - une case BLANCHE dit que la catégorie ne figure dans aucun tableau à cette date — ce
+#     qui n'est pas un taux ;
+#   - les colonnes de 2008 et de 2014 viennent de deux recueils non officiels du code, et un petit
+#     cercle le rappelle dans chaque case.
+# Les libellés longs des catégories sont ceux de la série ; la figure emploie des libellés
+# courts, tenus ici dans les deux langues.
+SERIE_REGIMES = "tva-regimes-par-categorie"
+
+_DATES_REGIMES = ["1988-07-01", "2008-01-01", "2014-01-01", "2017-01-01", "2026-01-01"]
+
+# Ordre de lecture : du plus léger au plus lourd.
+_REGIMES = {
+    "exonéré": ("exonere", "#e3e6ea", "#3d444d"),
+    "taux réduit": ("reduit", "#b4e0be", "#0f5323"),
+    "taux intermédiaire": ("intermediaire", "#fbd0a5", "#7a3200"),
+    "taux normal": ("normal", "#a9cbe8", "#05386b"),
+    "taux majoré": ("majore", "#cdbbea", "#3f2283"),
+}
+
+# Groupes, dans l'ordre de lecture, et leurs catégories (identifiants de la série).
+_GROUPES_REGIMES = [
+    ("alimentation", ["alim_base", "sucre", "alim_transformes"]),
+    ("sante", ["medicaments", "sante_soins"]),
+    ("education", ["enseignement", "livres_presse_culture"]),
+    ("logement", ["logement_neuf", "logement_social_location"]),
+    ("energie", ["electricite_gaz", "produits_petroliers", "energies_renouvelables", "eau"]),
+    ("transport", ["transport_services", "transport_materiel"]),
+    ("tourisme", ["hotellerie_tourisme", "restauration"]),
+    ("professions", ["professions_liberales"]),
+    ("agriculture", ["agriculture_peche"]),
+    ("numerique", ["informatique_numerique", "equipements_investissement", "telecom_poste"]),
+    ("finance", ["finance_assurance"]),
+    ("tableau_c", ["alim_tableau_c", "durables_luxe_vehicules"]),
+]
+
+_L.update({
+    # Régimes.
+    "r_exonere": {"fr": "Exonéré", "ar": "معفى"},
+    "r_reduit": {"fr": "Taux réduit", "ar": "النسبة المخفضة"},
+    "r_intermediaire": {"fr": "Taux intermédiaire", "ar": "النسبة الوسيطة"},
+    "r_normal": {"fr": "Taux normal", "ar": "النسبة العادية"},
+    "r_majore": {"fr": "Taux majoré", "ar": "النسبة المرتفعة"},
+    "exo": {"fr": "exo.", "ar": "معفى"},
+    "lg_deduit": {"fr": "Taux que la loi n'écrit pas : règle générale de l'article 7",
+                  "ar": "نسبة لا ينصّ عليها القانون: القاعدة العامة للفصل 7"},
+    "lg_prive": {"fr": "D'après un recueil non officiel du code",
+                 "ar": "حسب مجموعة غير رسمية للمجلة"},
+    "lg_vide": {"fr": "Catégorie absente des tableaux à cette date",
+                "ar": "صنف غير وارد بالجداول في هذا التاريخ"},
+    # Colonnes : date repère, nature de la source.
+    "d_1988-07-01": {"fr": "1er juillet\n1988", "ar": "1 جويلية\n1988"},
+    "d_2008-01-01": {"fr": "janvier\n2008", "ar": "جانفي\n2008"},
+    "d_2014-01-01": {"fr": "janvier\n2014", "ar": "جانفي\n2014"},
+    "d_2017-01-01": {"fr": "1er janvier\n2017", "ar": "1 جانفي\n2017"},
+    "d_2026-01-01": {"fr": "1er janvier\n2026", "ar": "1 جانفي\n2026"},
+    "n_jort": {"fr": "Journal officiel", "ar": "الرائد الرسمي"},
+    "n_prive": {"fr": "recueil\nnon officiel", "ar": "مجموعة غير رسمية"},
+    "n_officielle": {"fr": "édition officielle\ndu code", "ar": "الطبعة الرسمية\nللمجلة"},
+    # Groupes.
+    "gr_alimentation": {"fr": "Alimentation", "ar": "التغذية"},
+    "gr_sante": {"fr": "Santé", "ar": "الصحة"},
+    "gr_education": {"fr": "Éducation et culture", "ar": "التعليم والثقافة"},
+    "gr_logement": {"fr": "Logement", "ar": "السكن"},
+    "gr_energie": {"fr": "Énergie et eau", "ar": "الطاقة والماء"},
+    "gr_transport": {"fr": "Transport", "ar": "النقل"},
+    "gr_tourisme": {"fr": "Tourisme", "ar": "السياحة"},
+    "gr_professions": {"fr": "Professions", "ar": "المهن"},
+    "gr_agriculture": {"fr": "Agriculture", "ar": "الفلاحة"},
+    "gr_numerique": {"fr": "Équipements et numérique", "ar": "التجهيزات والرقميات"},
+    "gr_finance": {"fr": "Finance", "ar": "المالية"},
+    "gr_tableau_c": {"fr": "Anciens biens du tableau C", "ar": "مواد الجدول ج سابقا"},
+    # Catégories, en libellés courts.
+    "k_alim_base": {"fr": "Farines, pain, pâtes, lait, huiles",
+                    "ar": "الفارينة والخبز والعجين والحليب والزيوت"},
+    "k_sucre": {"fr": "Sucre", "ar": "السكر"},
+    "k_alim_transformes": {"fr": "Conserves, fruits et légumes transformés, maïs",
+                           "ar": "المصبرات والخضر والغلال المحوّلة والذرة"},
+    "k_medicaments": {"fr": "Médicaments et produits pharmaceutiques",
+                      "ar": "الأدوية والمواد الصيدلية"},
+    "k_sante_soins": {"fr": "Soins, cliniques, appareils pour handicapés",
+                      "ar": "العلاج والمصحات وأجهزة المعوقين"},
+    "k_enseignement": {"fr": "Enseignement et garderies", "ar": "التعليم والمحاضن"},
+    "k_livres_presse_culture": {"fr": "Livres, presse, culture, cinéma",
+                                "ar": "الكتب والصحافة والثقافة والسينما"},
+    "k_logement_neuf": {"fr": "Logements neufs des promoteurs",
+                        "ar": "المساكن الجديدة لدى الباعثين العقاريين"},
+    "k_logement_social_location": {"fr": "Logement social, loyers, prêts au logement",
+                                   "ar": "السكن الاجتماعي والكراء وقروض السكن"},
+    "k_electricite_gaz": {"fr": "Électricité", "ar": "الكهرباء"},
+    "k_produits_petroliers": {"fr": "Produits pétroliers, gaz de pétrole",
+                              "ar": "المواد البترولية وغاز البترول"},
+    "k_energies_renouvelables": {"fr": "Solaire, énergies renouvelables",
+                                 "ar": "الطاقة الشمسية والطاقات المتجددة"},
+    "k_eau": {"fr": "Eau", "ar": "الماء"},
+    "k_transport_services": {"fr": "Services de transport", "ar": "خدمات النقل"},
+    "k_transport_materiel": {"fr": "Aéronefs, navires, matériel ferroviaire",
+                             "ar": "الطائرات والسفن والمعدات الحديدية"},
+    "k_hotellerie_tourisme": {"fr": "Hôtellerie et activités touristiques",
+                              "ar": "النزل والأنشطة السياحية"},
+    "k_restauration": {"fr": "Restauration", "ar": "المطاعم"},
+    "k_professions_liberales": {"fr": "Professions libérales non médicales",
+                                "ar": "المهن الحرة غير الطبية"},
+    "k_agriculture_peche": {"fr": "Agriculture et pêche : intrants, équipements",
+                            "ar": "الفلاحة والصيد البحري: المدخلات والتجهيزات"},
+    "k_informatique_numerique": {"fr": "Informatique, services numériques, formation",
+                                 "ar": "الإعلامية والخدمات الرقمية والتكوين"},
+    "k_equipements_investissement": {"fr": "Équipements d'investissement",
+                                     "ar": "تجهيزات الاستثمار"},
+    "k_telecom_poste": {"fr": "Télécommunications, radio-télévision, poste",
+                        "ar": "الاتصالات والإذاعة والتلفزة والبريد"},
+    "k_finance_assurance": {"fr": "Finance et assurance", "ar": "المالية والتأمين"},
+    "k_alim_tableau_c": {"fr": "Café, thé, épices, cacao, boissons, tabacs",
+                         "ar": "القهوة والشاي والتوابل والكاكاو والمشروبات والتبغ"},
+    "k_durables_luxe_vehicules": {"fr": "Biens durables et de luxe, voitures",
+                                  "ar": "المواد المعمّرة والكمالية والسيارات"},
+    # Colonnes des données.
+    "c_groupe": {"fr": "Groupe", "ar": "المجموعة"},
+    "c_categorie": {"fr": "Catégorie", "ar": "الصنف"},
+    "c_date_repere": {"fr": "Date repère", "ar": "التاريخ المرجعي"},
+    "c_regime": {"fr": "Régime", "ar": "النظام"},
+    "c_taux_pct": {"fr": "Taux (%)", "ar": "النسبة (%)"},
+    "c_tableau": {"fr": "Tableau ou article", "ar": "الجدول أو الفصل"},
+    "c_numeros": {"fr": "Numéros", "ar": "الأعداد"},
+    "c_source_etat": {"fr": "Source de l'état", "ar": "مصدر الحالة"},
+    "c_pages": {"fr": "Pages", "ar": "الصفحات"},
+    "c_nature": {"fr": "Nature de la source", "ar": "طبيعة المصدر"},
+    # Nature de la source, en clair.
+    "l_JORT lu": {"fr": "Journal officiel", "ar": "الرائد الرسمي"},
+    "l_édition officielle": {"fr": "édition du code publiée par le ministère des Finances",
+                             "ar": "طبعة المجلة الصادرة عن وزارة المالية"},
+    "l_recueil non officiel": {"fr": "d'après un recueil non officiel du code",
+                        "ar": "حسب مجموعة غير رسمية للمجلة"},
+    "l_déduit": {"fr": "la loi n'écrit pas le taux : il résulte de la règle générale de "
+                       "l'article 7",
+                 "ar": "لا ينصّ القانون على النسبة: تنتج عن القاعدة العامة للفصل 7"},
+    # Tableau ou article.
+    "tb_A": {"fr": "tableau A", "ar": "الجدول « أ »"},
+    "tb_B": {"fr": "tableau B", "ar": "الجدول « ب »"},
+    "tb_B bis": {"fr": "tableau B bis", "ar": "الجدول « ب مكرر »"},
+    "tb_C": {"fr": "tableau C", "ar": "الجدول « ج »"},
+    "tb_art. 7-3": {"fr": "article 7, numéro 3", "ar": "الفصل 7، العدد 3"},
+    "tb_aucun (art. 7, al. 1er)": {"fr": "aucun tableau (article 7, premier alinéa)",
+                                   "ar": "دون جدول (الفصل 7، الفقرة الأولى)"},
+    "tb_hors tableau (décret annuel, art. 8)": {
+        "fr": "hors tableau (décret annuel, article 8)",
+        "ar": "خارج الجداول (أمر سنوي، الفصل 8)"},
+    "tb_hors tableau (décret, art. 8)": {"fr": "hors tableau (décret, article 8)",
+                                         "ar": "خارج الجداول (أمر، الفصل 8)"},
+    "tb_hors tableau (loi n° 2002-103)": {"fr": "hors tableau (loi n° 2002-103)",
+                                          "ar": "خارج الجداول (القانون عدد 103 لسنة 2002)"},
+    "src_decrets": {"fr": "décrets annuels pris en application de l'article 8 du code",
+                    "ar": "الأوامر السنوية المتخذة تطبيقا للفصل 8 من المجلة"},
+})
+
+figtools.register_provenance(
+    SERIE_REGIMES,
+    titre=("Régimes de taxe sur la valeur ajoutée de vingt-cinq catégories de produits et de "
+           "services à cinq dates repères, du 1er juillet 1988 au 1er janvier 2026, d'après "
+           "les tableaux annexés au code"),
+    titre_ar=("أنظمة الأداء على القيمة المضافة لخمسة وعشرين صنفا من المواد والخدمات في خمسة "
+              "تواريخ مرجعية، من 1 جويلية 1988 إلى 1 جانفي 2026، حسب الجداول الملحقة بالمجلة"),
+    sources=["loi-88-61-tva", "recueil-tva-bm-2008", "recueil-codes-sefac-2014", "lf-2016",
+             "lf-2017", "dgelf-code-tva-2025", "lf-2026", "loi-2006-80-reduction-taux",
+             "loi2001-123-lf2002", "decret-2002-3356-tva-telecom", "lf-2018", "lf-2023", "lf-2025"],
+    unite="régime (exonération ou taux), et taux en pourcentage de la base imposable",
+    unite_ar="النظام (إعفاء أو نسبة)، والنسبة من القاعدة الخاضعة",
+    perimetre=("une ligne par catégorie, par date repère et par régime, avec le tableau et "
+               "les numéros où le régime se lit, la source de l'état et ses pages ; 173 lignes"),
+    perimetre_ar=("سطر لكلّ صنف ولكلّ تاريخ مرجعي ولكلّ نظام، مع الجدول والأعداد التي يُقرأ "
+                  "فيها النظام ومصدر الحالة وصفحاته؛ 173 سطرا"),
+    caveats=("Les états de janvier 2008 et de janvier 2014 sont ceux de deux recueils non officiels "
+             "du code, qui ne valent pas Journal officiel et n'ont pas été rapprochées de lui "
+             "numéro par numéro. L'état du 1er janvier 2026 est celui de l'édition du code "
+             "publiée par le ministère des Finances à jour au 1er janvier 2025, complétée par "
+             "la loi de finances pour 2026. Dix-huit lignes portent un taux que la loi n'écrit "
+             "pas : l'opération ne figure dans aucun tableau et relève du taux normal par la "
+             "règle générale de l'article 7. La série ne couvre ni les opérations hors du "
+             "champ de la taxe, ni l'exonération à la revente au détail, ni les régimes "
+             "suspensifs ; une catégorie absente des tableaux à une date n'a pas de ligne, ce "
+             "qui ne vaut pas taux normal. Un régime appliqué entre deux dates repères "
+             "n'apparaît pas."),
+    caveats_ar=("حالتا جانفي 2008 وجانفي 2014 مأخوذتان من طبعتين خاصتين للمجلة لا تقومان مقام "
+                "الرائد الرسمي ولم تُقابلا به عددا عددا. حالة 1 جانفي 2026 هي حالة طبعة المجلة "
+                "الصادرة عن وزارة المالية والمحيّنة في 1 جانفي 2025، مع إضافة قانون المالية "
+                "لسنة 2026. ثمانية عشر سطرا تحمل نسبة لا ينصّ عليها القانون: العملية غير واردة "
+                "بأيّ جدول وتخضع للنسبة العادية بمقتضى القاعدة العامة للفصل 7. لا تشمل السلسلة "
+                "العمليات الخارجة عن ميدان تطبيق الأداء ولا الإعفاء عند البيع بالتفصيل ولا "
+                "أنظمة توقيف العمل بالأداء؛ والصنف غير الوارد بالجداول في تاريخ ما لا سطر له، "
+                "ولا يعني ذلك خضوعه للنسبة العادية. ولا يظهر نظام طُبّق بين تاريخين مرجعيين."),
+)
+
+
+def _regimes():
+    """{(catégorie, date): [(régime, taux ou None, lecture)]}, régimes du plus léger au plus lourd."""
+    d = figtools.series(SERIE_REGIMES)
+    ordre = list(_REGIMES)
+    cases = {}
+    for cat, date, regime, taux, lecture in zip(
+            d["categorie_id"], d["date_repere"], d["regime"], d["taux_pct"], d["lecture"]):
+        taux = None if taux != taux else float(taux)
+        cases.setdefault((cat, str(date)[:10]), []).append((regime, taux, lecture))
+    for segments in cases.values():
+        segments.sort(key=lambda s: ordre.index(s[0]))
+    return cases
+
+
+def fig_regimes():
+    """La matrice : catégories en lignes, dates repères en colonnes, une couleur par régime."""
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    from matplotlib.patches import Patch, Rectangle
+    from matplotlib.lines import Line2D
+    cases = _regimes()
+    arabe = figtools.lang() == "ar"
+    lignes = [(g, c) for g, cats in _GROUPES_REGIMES for c in cats]
+    m = len(_DATES_REGIMES)
+    L, H, TITRE = 1.42, 1.0, 0.78       # largeur et hauteur d'une case, hauteur d'un titre de groupe
+    ETIQ = 5.3                           # largeur réservée aux libellés des catégories
+    fig, ax = plt.subplots(figsize=(8.8, 13.4))
+    # Ordonnée du haut de chaque ligne ; chaque groupe est précédé de son titre.
+    y, hauts, titres = 0.0, {}, {}
+    for i, (g, c) in enumerate(lignes):
+        if not i or lignes[i - 1][0] != g:
+            titres[g] = y
+            y += TITRE
+        hauts[c] = y
+        y += H
+    total = y
+    signe = -1 if arabe else 1           # en arabe, la matrice se lit de droite à gauche
+
+    def abscisse(j):
+        return signe * j * L - (L if arabe else 0)
+
+    for j, date in enumerate(_DATES_REGIMES):
+        x = abscisse(j)
+        nature = {"1988-07-01": "n_jort", "2017-01-01": "n_jort",
+                  "2026-01-01": "n_officielle"}.get(date, "n_prive")
+        ax.text(x + L / 2, -0.72, ft(_lab("d_" + date)), ha="center", va="bottom",
+                fontsize=10, fontweight="bold", linespacing=1.05)
+        ax.text(x + L / 2, -0.62, ft(_lab(nature)), ha="center", va="top", fontsize=8,
+                color="#57606a", style="italic", linespacing=1.0)
+        for g, c in lignes:
+            y0 = hauts[c]
+            segments = cases.get((c, date), [])
+            if not segments:
+                ax.add_patch(Rectangle((x, y0), L, H, fc="white", ec="#c9d1d9", lw=0.6,
+                                       ls=(0, (2, 2)), zorder=1))
+                continue
+            largeur = L / len(segments)
+            ordre = segments[::-1] if arabe else segments
+            for k, (regime, taux, lecture) in enumerate(ordre):
+                cle, fond, encre = _REGIMES[regime]
+                deduit = lecture == "déduit"
+                p = Rectangle((x + k * largeur, y0), largeur, H, fc=fond, ec="white", lw=1.2,
+                              zorder=2)
+                ax.add_patch(p)
+                if deduit:
+                    ax.add_patch(Rectangle((x + k * largeur, y0), largeur, H, fc="none",
+                                           ec=encre, lw=0, hatch="////", alpha=0.45, zorder=3))
+                texte = _lab("exo") if taux is None else _pct(taux)
+                ax.text(x + (k + 0.5) * largeur, y0 + H / 2, ft(texte), ha="center",
+                        va="center", fontsize=9.6 if len(segments) < 3 else 7.6,
+                        fontweight="bold" if taux is not None else "normal", color=encre,
+                        zorder=5,
+                        bbox=dict(boxstyle="round,pad=0.12", fc=fond, ec="none") if deduit
+                        else None)
+                figtools.infobulle(p, f"{_lab('k_' + c)} · "
+                                      + _lab("d_" + date).replace("\n", " ") + " : "
+                                      f"{_lab('r_' + cle)}"
+                                      + ("" if taux is None else f" {_pct(taux)}")
+                                      + f" · {_lab('l_' + lecture)}")
+            if nature == "n_prive":
+                ax.plot([x + (0.08 if arabe else L - 0.08)], [y0 + 0.14], "o", ms=3.4,
+                        mfc="white", mec="#57606a", mew=0.8, zorder=6)
+    # Libellés des lignes, et titre de chaque groupe au-dessus de ses lignes.
+    bord = abscisse(0) + (L + 0.12 if arabe else -0.12)
+    loin = bord + (ETIQ if arabe else -ETIQ)
+    fin = abscisse(m - 1) + (0 if arabe else L)
+    for g, c in lignes:
+        ax.text(bord, hauts[c] + H / 2, ft(_lab("k_" + c)), ha="left" if arabe else "right",
+                va="center", fontsize=9.6)
+    for g, haut in titres.items():
+        ax.text(loin, haut + TITRE - 0.2, ft(_lab("gr_" + g)),
+                ha="right" if arabe else "left", va="bottom", fontsize=9.8, fontweight="bold",
+                color="#24292f")
+        ax.plot([loin, fin], [haut + TITRE - 0.1, haut + TITRE - 0.1], color="#8b949e", lw=0.8)
+    gauche, droite = sorted([loin, fin])
+    ax.set_xlim(gauche - 0.05, droite + 0.05)
+    ax.set_ylim(total + 0.1, -1.9)
+    ax.axis("off")
+    poignees = [Patch(fc=fond, ec="#8b949e", lw=0.5, label=ft(_lab("r_" + cle)))
+                for cle, fond, _e in _REGIMES.values()]
+    poignees += [
+        Patch(fc="white", ec="#3d444d", lw=0.5, hatch="////", label=ft(_lab("lg_deduit"))),
+        Line2D([], [], ls="none", marker="o", ms=4.5, mfc="white", mec="#57606a", mew=0.9,
+               label=ft(_lab("lg_prive"))),
+        Patch(fc="white", ec="#c9d1d9", lw=0.8, ls=(0, (2, 2)), label=ft(_lab("lg_vide"))),
+    ]
+    fig.legend(handles=poignees[:5], loc="lower center", bbox_to_anchor=(0.5, 0.058),
+               fontsize=9, frameon=False, ncol=5, handlelength=1.5, columnspacing=1.2)
+    fig.legend(handles=poignees[5:], loc="lower center", bbox_to_anchor=(0.5, 0.004),
+               fontsize=9, frameon=False, ncol=1, handlelength=1.5)
+    fig.subplots_adjust(left=0.01, right=0.99, top=0.995, bottom=0.092)
+    return fig
+
+
+def table_regimes():
+    """Les 173 lignes de la série, en mots de lecteur : une par catégorie, date et régime."""
+    import pandas as pd
+    d = figtools.series(SERIE_REGIMES)
+    refs = figtools._ref_index()
+    groupe = {c: g for g, cats in _GROUPES_REGIMES for c in cats}
+    rang = {c: i for i, c in enumerate(c for _g, cats in _GROUPES_REGIMES for c in cats)}
+    ordre = list(_REGIMES)
+
+    def source(cles: str) -> str:
+        noms = []
+        for cle in str(cles).split(";"):
+            cle = cle.strip()
+            if cle.startswith("fiscalite-tva-documentation.md"):
+                # Seule source de la série qui ne soit pas une clé : les décrets annuels.
+                noms.append(_lab("src_decrets"))
+                continue
+            ref = refs[cle]                      # une clé inconnue doit faire échouer le rendu
+            noms.append(ref.get("title-short") or ref.get("title"))
+        return " ; ".join(noms)
+
+    d = d.assign(_rang=d["categorie_id"].map(rang), _reg=d["regime"].map(ordre.index))
+    d = d.sort_values(["_rang", "date_repere", "_reg"])
+    francais = figtools.lang() != "ar"
+    lignes = []
+    for r in d.itertuples(index=False):
+        lignes.append({
+            _lab("c_groupe"): _lab("gr_" + groupe[r.categorie_id]).replace("\n", " "),
+            _lab("c_categorie"): r.categorie if francais else _lab("k_" + r.categorie_id),
+            _lab("c_date_repere"): str(r.date_repere)[:10],
+            _lab("c_regime"): _lab("r_" + _REGIMES[r.regime][0]),
+            _lab("c_taux_pct"): None if r.taux_pct != r.taux_pct else float(r.taux_pct),
+            _lab("c_tableau"): _lab("tb_" + r.tableau),
+            _lab("c_numeros"): r.numeros,
+            _lab("c_source_etat"): source(r.source_id),
+            _lab("c_pages"): r.page,
+            _lab("c_nature"): _lab("l_" + r.lecture),
+        })
+    return pd.DataFrame(lignes)

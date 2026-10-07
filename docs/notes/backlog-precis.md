@@ -20,11 +20,89 @@ corpus avant de citer un texte ou de dire qu'il manque. Les chemins de fascicule
 ci-dessous sont relatifs à `~/projets/PDFs-legislation-tunisie/PDFs/JORT/` ; les
 extraits des lois de finances sont dans le dossier voisin `PDFs/Lois_de_Finances/`.
 
+
+## Chantier transversal — les ruptures au premier plan, le détail replié
+
+- **Numérotation de l'annexe des tableaux de la TVA** (remarque du propriétaire, 7 octobre 2026) :
+  « Tableau A.1 », « Tableau A.2 » de l'annexe peuvent se confondre avec les tableaux A, B et C
+  du code. Pas de changement pour l'instant ; à reprendre si la confusion gêne (autre lettre
+  d'annexe, ou légendes qui ne commencent pas par « Tableau A »).
+
+Ouvert le 7 octobre 2026 ; note : `docs/notes/chantier-ruptures-au-premier-plan.md`. Prototype sur
+la restitution du crédit de TVA (`_tva.qmd`, `#sec-tva-credit-restitution`) : tableau des ruptures
+et de leur mise en œuvre, puis chronologie complète repliée (bloc `.chronologie-repliable`).
+À juger avant toute extension ; la liste de contrôle est dans la note. Ensuite : conventions de
+rédaction, consigne du rédacteur, rôle « architecte » à créer, reprise des autres chapitres.
+
+**Prototype étendu à tout le chapitre de la TVA (7 octobre 2026, non commité, en attente du
+jugement du propriétaire).** `_tva.qmd` est réécrit selon
+`docs/notes/fiscalite-tva-plan-architecte.md` (§ 2, corrigé par le § 11) et
+`docs/notes/fiscalite-tva-objets-des-reformes.md` : en bref ; mise en place 1988-1990 ; quatre
+grandes réformes et une clôture « depuis 2018 » ; bilan des taux et état du droit ; huit
+sections de dispositif, chacune avec son registre replié ; longue période. Réorganisation sans
+perte : les 62 clés, les 163 couples (clé, localisateur), les 38 ancres de glossaire, les
+15 identifiants, les 6 TODO et l'ancre RECHERCHE du départ sont tous à l'arrivée. Le texte
+passe de 11 000 à 22 300 mots, dont 13 000 au premier plan (8 300 au départ) : quatorze blocs
+repliés au lieu de deux. Reste à trancher ou à faire :
+
+- **trajectoires par opération : tranché le 7 octobre 2026** — le propriétaire garde le tableau
+  (`@tbl-tva-trajectoires`, dans `#sec-tva-etat-du-droit`) et la matrice des régimes par
+  catégorie ; la section en prose `#sec-tva-trajectoires` est supprimée. Ce qu'elle seule
+  portait (contrats maintenus à 6 % en 1996, article 7 en 2017, détail de 2023, reports du
+  logement et des médicaments, numéro 48 du tableau A) est en cinq puces sous le tableau, et son
+  registre (`tbl-tva-trajectoires-textes`, 19 ancres) est déplacé sous lui, inchangé. « Les
+  dispositifs qui aménagent la taxe » n'a plus que deux sous-sections ;
+- **frise des réformes** (`TODO (rédacteur)` dans « En bref ») : demande une petite série de
+  jalons à verser (plan, § 6.0) ;
+- **quatre clés à verser par le bibliographe** (entrées CSL au § 6 de la note des objets) :
+  `minfin-plf-2018` (exposés des motifs du projet de loi de finances pour 2018 — le paragraphe
+  de la réforme de 2016-2018 est écrit, attribué, sans appel de citation ; la prévision de
+  313 MD par an n'est pas écrite), `dgelf-nc-2023-05` (note commune n° 5/2023, professions non
+  commerciales), `rectificatif-lf-1993` (JORT n° 33 du 4 mai 1993), `minfin-plf-2014`
+  (exposé des motifs sur les paiements en espèces : à relire à l'image, non écrit) ;
+- **classements à confirmer** : 2014 (achats en espèces) et 2016 (facture électronique) sont
+  portés « rupture » dans leurs registres, que le plan donnait pour « possibles » ;
+  `tbl-tva-suspension-sectorielle` garde sa forme d'origine, sans colonne « Portée » ;
+- **registres bornés à ce que le chapitre établissait** : les lignes que seules les notes
+  `fiscalite-tva-reformes.md` et `fiscalite-tva-deductions-documentation.md` connaissent (plan,
+  § 5 : colonnes « N2 », « N3 ») ne sont pas versées — retouches des tableaux A, B et C de
+  1989 à 1994, lois de finances pour 1997, 2019, 2021 (art. 26), 2024 (art. 50), quatre lignes
+  de la restitution, retouches de l'article 9 connues par le seul code consolidé. Texte présent
+  au corpus pour la plupart ; lectures à confirmer à l'image avant versement ;
+- **état du droit des règles de base en 2026** : la grille est établie ; le tableau A et le
+  tableau B en vigueur sont donnés en annexe (`_tva_tableaux.qmd`), d'après l'édition du code à
+  jour au 1er janvier 2025 et la loi de finances pour 2026 — voir l'entrée « TVA — régimes par
+  catégorie et tableaux annexés » ; contenu des art. 46 et 47 de la loi de finances pour 2026 à
+  détailler au registre `tbl-tva-taux-perimetre` (relevé en annexe, bloc de la loi de finances
+  pour 2026) ;
+- **longue période** : aucune figure nouvelle ; restent la figure du rendement par segments de
+  base du PIB avec les réformes marquées, la place dans la fiscalité indirecte, la taxe
+  rapportée à la consommation privée, le partage intérieur/importation (plan, § 6.1 à 6.6) ;
+- **domicile unique des références étendu à tout le chapitre** (7 octobre 2026, branche de test
+  `chantier/citations-domicile-unique`, non commité) : `.domicile-unique` sur le titre du chapitre ;
+  176 appels juridiques retirés du fil, remplacés par 164 liens `#r-tva-…` vers les lignes de
+  registre (142 ancres) ; un registre nouveau pour les clauses de date d'application
+  (`tbl-tva-dates-textes`) et la liste des six grilles devenue tableau (`tbl-tva-taux-textes`).
+  À juger :
+  ancres des trajectoires posées dans la cellule de date ; `tbl-tva-reformes` sans liens ;
+  attributs `titre` et libellés des liens à traduire en arabe ;
+- **relecture du propriétaire (7 octobre 2026, non commité)** : « En bref » devient « Vue d'ensemble » ;
+  le mot « cœur » ne paraît plus au chapitre (« règles de base », ou l'élément nommé) ; les renvois
+  « traité ailleurs » sont en tête de section ; chaque section de dispositif s'ouvre sur une
+  définition de son objet, avant sa place dans la chronologie ;
+- **texte principal autosuffisant (7 octobre 2026, non commité)** : notations T et D définies dans
+  chaque section qui les emploie ; règles du fait générateur, de l'option, du pourcentage de
+  déduction et de la régularisation dites en clair hors des blocs repliés ; sigles développés et
+  notions du glossaire ancrées dans chaque section de niveau 2 ; plus de tournure de lecture
+  linéaire. Reste : « DGCPR », cité tel que la source l'écrit, sans développement établi ;
+- **version arabe** : le chapitre arabe est structurellement en retard jusqu'à la passe de
+  traduction ; les attributs `titre` des douze nouveaux blocs repliés sont à traduire.
+
 ## Vue d'ensemble
 
 | Livre | État du texte | Première lecture faisable |
 |---|---|---|
-| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et un chapitre transversal sur les dépenses fiscales et les régimes d'incitation (6 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
+| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et un chapitre transversal sur les dépenses fiscales et les régimes d'incitation (6 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; PNAFN historique sans sources pour ses onze dates et montants | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
@@ -105,6 +183,83 @@ leur présence et leur lisibilité au corpus restent à vérifier fascicule par 
 l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_cache`), et les
 144 décrets de l'article 8 signés de 1988 à 1997, connus par leur seul intitulé. La fiche
 `r-tva-mise-en-application-post-1989` reste ouverte.
+
+**TVA — dates d'effet et objets des lois (7 octobre 2026)**, d'après
+`docs/notes/fiscalite-tva-objets-des-reformes.md`. Écrit au chapitre : les rubriques sous
+lesquelles les lois rangent leurs articles de TVA ; l'absence d'article final de date
+d'application dans les lois de finances pour 1990, 1991 et 1993 ; la clause générale de la loi
+de finances pour 1994 (art. 77), citée dans l'encadré des dates ; le rectificatif du 4 mai 1993
+(art. 102), au registre des forfaits ; pour 2023, « certaines professions non commerciales »
+au lieu de « les professions libérales » (le décret-loi abroge un tiret de l'article 7 sans
+écrire de taux ; les professions de santé restent à 7 %) ; le paragraphe 1 de l'art. 27 de la
+loi de finances pour 2021 (dons, art. 9), au registre de la déduction. Restent : la date
+d'effet de la mensualisation de 1994 (art. 31 et 32), non écrite tant que l'absence de clause
+propre n'est pas confirmée à l'image ; l'édition française du décret-loi n° 2022-79, absente ;
+le texte qui a modifié l'art. 10 de la loi de finances pour 2017.
+
+**TVA — régimes par catégorie et tableaux annexés (7 octobre 2026, non commité).** D'après
+`docs/notes/fiscalite-tva-tableaux-produits.md` (§ 1 à 3, 8 et 9) et
+`docs/notes/fiscalite-tva-codes-consolides.md`. Fait :
+
+- **série** `precis/_seriescache/tva-regimes-par-categorie.csv` : les 173 lignes du § 9.3 de la
+  note, versées telles quelles (25 catégories, 5 dates repères) ; provenance déclarée dans
+  `figures/tva.py` ;
+- **figure** `@fig-tva-regimes` (matrice catégories × dates, une couleur par régime, cases
+  partagées, hachures pour les taux que la loi n'écrit pas, cercle pour les éditions privées) et
+  **section** `#sec-tva-regimes-categories`, dans le bilan des taux, avec son registre replié
+  (`tbl-tva-regimes-textes`, 20 lignes, ancres `r-tva-cat-…`) ;
+- **annexe du volume** `precis/fr/fiscalite/_tva_tableaux.qmd` (`#sec-tva-tableaux`,
+  `.domicile-unique`) : texte principal sur les quatre tableaux, le sort du tableau C, les
+  entrées et sorties, la nature des sources ; registre des textes (`tbl-tva-tableaux-textes`,
+  ancres `r-tva-tab-…`) ; onze blocs repliés de transcription — tableaux A, B et C de 1988,
+  tableau C à la fin de 2006 et ses retraits, origine des numéros d'après l'édition privée de
+  2014, tableaux A, B et B bis nouveaux (2016, 2017, 2026), article 7 numéro 3, loi de finances
+  pour 2026 ;
+- `#sec-tva-etat-du-droit` renvoie à l'annexe au lieu de dire le tableau A « non donné ».
+
+Reste :
+
+- **annexe à déclarer côté arabe** : `_tva_tableaux.qmd` est dans les `appendices` du
+  `_quarto.yml` français seulement ; à ajouter au `_quarto.yml` arabe une fois la traduction
+  livrée (traduction différée : 24 000 mots, dont 23 000 de transcription) ; les attributs
+  `titre` des blocs sont à traduire ;
+- **termes arabes posés dans `figures/tva.py`**, hors glossaire, à faire valider par le
+  terminologue : « معفى » (exonéré, dans les cases), libellés des douze groupes et des
+  vingt-cinq catégories, « طبعة خاصة للمجلة » (édition privée du code), « الطبعة الرسمية
+  للمجلة », « صنف غير وارد بالجداول », « القاعدة العامة للفصل 7 » ; la colonne « Numéros » des
+  données reste en français dans le livre arabe (« bis », « tiret », « positions des
+  chapitres ») ;
+- **registre complet numéro par numéro, loi par loi, de 1989 à 2015** : non fait (note, § 6.2) ;
+  l'annexe ne donne, pour les anciens tableaux, que l'état de 1988 et l'origine des numéros
+  d'après l'édition privée de 2014 ; les éditions privées de 2008 et de 2014 ne sont pas
+  transcrites numéro par numéro ;
+- **colonnes intermédiaires de la matrice** : pas d'état vers 1995 ni vers 2002 (aucun état
+  daté n'est disponible ; les pages Jurisite mêlent des dates) ; colonnes de 2008 et de 2014 à
+  rapprocher du Journal officiel ;
+- **lois non relues**, citées seulement « d'après l'édition » : n° 2002-103 (voitures de
+  4 chevaux), n° 2006-71, n° 99-70, n° 2009-32, n° 2007-69 ; articles des lois de finances pour
+  2019, 2020, 2021 et 2023 connus par les seules notes de l'édition du code ; textes présents
+  au corpus pour la plupart ;
+- **passages au taux normal de 2017 à confirmer** : numéros du tableau B bis non repris
+  (services informatiques, certification électronique, formation, Internet fixe, restauration
+  ordinaire, véhicules électriques, sevrage tabagique) — note commune d'application à
+  obtenir (note, § 9.5) ; `TODO (documentaliste)` dans la section et dans l'annexe ;
+- **tableau C** : retraits du café, du thé, des bières, des vins, des tabacs, des voitures et
+  des armes non établis (tableaux « L » et « M » de la loi de finances pour 1992, lois de
+  finances pour 1993 et 1994, art. 71 de la loi de finances pour 2005 : fascicules scannés au
+  corpus, OCR à faire ; note, § 8.6) ; la transcription de 1988 compte 240 positions là où la
+  note en annonce « un peu plus de 210 » : l'annexe écrit « plus de deux cents », écart à
+  lever par la relecture des codes tarifaires ;
+- **essence et gaz naturel distribué, eau potable après 1991** : régime non établi (note,
+  § 9.2, précisions 2 à 4) ;
+- **versement des listes en amont** dans `openfisca-tunisia` (note, annexe C : structure
+  proposée) : rien n'est versé ; la série du précis est un CSV fait de la note, non un
+  snapshot de paramètres ;
+- **anciens biens du tableau C dans la matrice** (arbitrage du 7 octobre 2026) : six lignes
+  « taux normal, déduit » ajoutées à la série et au § 9.3 de la note (2014, 2017, 2026 pour les
+  denrées et pour les biens durables) : 173 lignes, dont 18 au taux que la loi n'écrit pas ;
+  5 cases blanches au lieu de 10 ; les lignes de l'hôtellerie et de l'enseignement du tableau
+  des trajectoires sont complétées jusqu'à 2018 par des liens vers le registre des régimes.
 
 **Paramètres dans le temps (7 octobre 2026).** Deux composants communs, à partir d'une même
 déclaration de paramètres (`ot.ParametreDate`) dans un générateur : le tableau de **l'état du
@@ -1426,7 +1581,7 @@ l'information.
 | `_impot_societes.qmd` | conforme | — |
 | `_impot_fortune.qmd` | conforme ; s'achève sur une case vide (aucune série de rendement) | traduction arabe à déclarer dans le `_quarto.yml` AR |
 | `_droits_consommation.qmd` | historique remonté en tête | la chronologie du périmètre reste un tableau sans récit texte par texte — signalé, non confirmé |
-| `_tva.qmd` | conforme au plan type : historique, architecture de 1988, évolution réforme par réforme, longue période | `@sec-tva-deduction` suit le même plan (mécanisme, textes, données) ; les données du crédit sont une figure engendrée (`@fig-tva-credit-restitutions`), dont les séries restent à prolonger après 2014 ; le tableau des générations de taux (`@tbl-tva-taux`) et la figure des taux dans le temps (`@fig-tva-taux`) sont engendrés depuis le 7 octobre 2026 |
+| `_tva.qmd` | **prototype du chantier « ruptures au premier plan »** (7 octobre 2026, à juger) : en bref, mise en place, grandes réformes, bilan des taux et état du droit, dispositifs, longue période | voir l'entrée du chantier en tête de ce fichier ; `@sec-tva-deduction` garde ses données et ses études à leur place ; les données du crédit sont une figure engendrée (`@fig-tva-credit-restitutions`), dont les séries restent à prolonger après 2014 ; le tableau des générations de taux (`@tbl-tva-taux`) et la figure des taux dans le temps (`@fig-tva-taux`) sont engendrés depuis le 7 octobre 2026 ; vue des régimes par catégorie (`@fig-tva-regimes`) et annexe des tableaux annexés au code (`_tva_tableaux.qmd`, non déclarée côté arabe) ajoutées le 7 octobre 2026 |
 | `_impot_revenu.qmd` | conforme, à sa manière | rien sur la forme ; restent deux sections à ÉCRIRE, voir plus bas |
 | `retraites/_secteur_*.qmd` | **rangés par mécanisme, et c'est bien** | ne pas y appliquer le plan type |
 | `_regime_indiciaire.qmd` | fait le travail sous d'autres noms | ne rien reprendre sur la forme |

@@ -34,6 +34,16 @@ La fiche doit exister, et son champ `ou` désigner ce fichier et sa section :
 `scripts/check_jargon_depouillement.py` refuse les tournures du récit de recherche. Quand une
 fiche devient `resolu`, remplace la réserve par la règle sourcée et retire l'ancre.
 
+## Le texte principal se suffit
+
+Écris comme si le lecteur ne lisait que le texte principal — tout ce qui n'est ni dans un bloc replié, ni dans un encadré repliable, ni en annexe — et pas forcément dans l'ordre : il arrive sur une section par la table des matières ou par un lien.
+
+- **Une notation se définit là où elle sert.** Tout symbole est défini dans le texte principal de chaque section de niveau 3 qui l'emploie, à sa première occurrence, même s'il l'a déjà été plus haut, dans une autre fiche ou dans un bloc replié. Une redite d'une demi-phrase vaut mieux qu'un symbole orphelin ; la notation reste unique dans le chapitre.
+- **Rien du texte principal ne dépend d'un bloc replié** : ni une définition, ni une formule, ni un sigle, ni une règle. Le bloc replié détaille ; il ne porte jamais ce sans quoi le paragraphe ne se lit pas.
+- **Une section dit son objet dans ses premières lignes**, avant d'en raconter l'évolution ; un renvoi `@sec-…` remplace tout « comme on l'a vu » ou « ci-dessus ».
+- **Un renvoi vers une autre section se place en tête** de la section qui exclut le sujet (« l'électricité a sa propre section »), pas à la fin.
+- **Pas de métaphore pour nommer une chose du droit** : on dit « le champ », « les taux », « les règles de base de la taxe », non « le cœur ».
+
 ## Invariants du projet (à respecter absolument)
 - Exécute TOUJOURS les commandes Python via `uv run` (jamais `python3` ni `.venv/bin/python3`).
 - Le français est la **source de vérité**. N'écris JAMAIS de fichier sous `precis/ar/` : la version arabe est générée par le CI (translation-sync). Tu ne touches qu'à `precis/fr/`.

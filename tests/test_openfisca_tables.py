@@ -17,8 +17,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
+import openfisca_tables
 from openfisca_tables import (  # noqa: E402
     _annee,
+    markdown_avec_legende,
+    markdown_un_tableau_en_onglets,
     taux_effectifs_limite_superieure,
     valeur_a_la_date,
 )
@@ -145,6 +148,48 @@ class TauxEffectifsTest(unittest.TestCase):
         """Garde-fou : deux seuils identiques donneraient une division par zéro."""
         self.assertEqual(taux_effectifs_limite_superieure([(0.0, 0.10), (0.0, 0.20)]),
                          [0.0, None])
+
+
+
+class BlocEngendreTest(unittest.TestCase):
+    """Tout tableau engendré est inséré dans un bloc `.tableau-engendre` : c'est ce qui permet,
+    en HTML, de masquer sa colonne « Texte » au profit d'une infobulle. Le snapshot, lui, est
+    repris à l'octet près."""
+
+    CORPS = "| Effet | Taux | Texte |\n|---|---:|---|\n| 1990 | 5 % | [@lf-1990, art. 3] |"
+
+    def setUp(self):
+        import tempfile
+        self._dossier = tempfile.TemporaryDirectory()
+        self.fichier = Path(self._dossier.name) / "taux.md"
+        self.fichier.write_text(self.CORPS + "\n", encoding="utf-8")
+
+    def tearDown(self):
+        self._dossier.cleanup()
+
+    def test_tableau_enveloppe_et_snapshot_intact(self):
+        rendu = markdown_avec_legende(self.fichier, "Taux", "tbl-taux")
+        self.assertEqual(rendu, "::: {.tableau-engendre}\n\n" + self.CORPS
+                         + "\n\n: Taux {#tbl-taux}\n\n:::\n")
+        self.assertEqual(self.fichier.read_text(encoding="utf-8"), self.CORPS + "\n")
+
+    def test_arborescence_un_seul_bloc_deux_classes(self):
+        rendu = markdown_avec_legende(self.fichier, "Taux", "tbl-taux", arborescence=True)
+        self.assertIn("::: {.tableau-engendre .tableau-arborescence}\n\n" + self.CORPS, rendu)
+        self.assertEqual(rendu.count(".tableau-engendre"), 1)
+
+    @unittest.skipIf(openfisca_tables.yaml is None,
+                     "PyYAML absent : l'onglet « Base législative » n'est pas rendu")
+    def test_onglet_base_legislative_hors_du_bloc(self):
+        self.fichier.with_suffix(".liens.yml").write_text(
+            "- libelle: Taux\n  url: https://exemple.invalid/taux\n", encoding="utf-8")
+        rendu = markdown_avec_legende(self.fichier, "Taux", "tbl-taux")
+        self.assertLess(rendu.index("\n:::\n", rendu.index(".tableau-engendre")),
+                        rendu.index("https://exemple.invalid/taux"))
+
+    def test_un_tableau_en_onglets(self):
+        rendu = markdown_un_tableau_en_onglets([("1990", self.fichier, "Note.")], "Taux", "tbl-taux")
+        self.assertIn("### 1990\n\n::: {.tableau-engendre}\n\n" + self.CORPS + "\n\n:::\n\nNote.", rendu)
 
 
 if __name__ == "__main__":

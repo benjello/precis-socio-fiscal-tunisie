@@ -23,6 +23,7 @@ book:
     - _droits_consommation.qmd
     - _depenses_fiscales.qmd
   appendices:
+    - _tva_tableaux.qmd
     - _glossaire.qmd
 
 bibliography:
@@ -37,7 +38,11 @@ csl: ../precis.csl
 format:
   html:
     theme: [cosmo, ../../legendes.scss]
-    include-after-body: ../../legendes.html
+    # Les données des infobulles du glossaire (engendrées par scripts/build_glossary.py)
+    # précèdent le script qui les lit.
+    include-after-body:
+      - _glossaire.infobulles.html
+      - ../../legendes.html
     fig-cap-location: top
     tbl-cap-location: top
     number-depth: 4
