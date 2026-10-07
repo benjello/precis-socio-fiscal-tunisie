@@ -12,10 +12,16 @@ Deux familles de tableaux :
     « Texte » est tirée des métadonnées `reference` du paramètre lui-même. Le tableau publié
     et le paramètre sont ainsi indissociables : corriger l'un corrige l'autre.
 
-Le script émet aussi une SÉRIE pour une figure : `precis/_seriescache/tva-taux.csv`, une
-ligne par taux de la TVA et par date d'effet, avec le texte qui la fixe. Le build du site
-ne lit pas openfisca : la figure des taux lit ce snapshot par `figtools.series()`, et ses
-liens « Base législative » dans `tva-taux.liens.<langue>.yml`, écrits ici.
+LES PARAMÈTRES DANS LE TEMPS. Une liste déclarée de paramètres (`ot.ParametreDate`) donne
+deux sorties, par `ot.ecrire_serie_parametres` et `ot.ecrire_dates_reperes` :
+  - une SÉRIE pour une figure en escalier, `precis/_seriescache/<nom>.csv` — une ligne par
+    paramètre et par date d'effet —, avec ses liens « Base législative » dans
+    `<nom>.liens.<langue>.yml`. Le build du site ne lit pas openfisca : la figure lit ce
+    snapshot par `figtools.series()` ;
+  - le tableau de l'état du droit à des dates repères, `tables/<nom>_dates_reperes.md`.
+Deux déclarations : les taux de la TVA (`tva-taux`, dont la série porte le texte de chaque
+date) et les déductions pour charges de famille de l'impôt sur le revenu
+(`irpp-deductions-famille`).
 
 Exige openfisca-tunisia >= 0.71 : c'est la version où les paramètres d'assiette ont été
 corrigés et où les tarifs de la contribution personnelle d'État ont été ajoutés.
@@ -80,6 +86,10 @@ MOTS = {
         "tva_normal": "Taux normal", "tva_intermediaire": "Taux intermédiaire",
         "tva_reduit": "Taux réduit", "tva_majore": "Taux majoré",
         "tva_lien": "{taux} de la taxe sur la valeur ajoutée",
+        # Déductions pour situation et charges de famille (article 40 du code).
+        "chef_famille": "Chef de famille",
+        "famille_ligne": "Déduction, en dinars par an",
+        "famille_lien": "{nom} — déduction pour charges de famille",
     },
     "ar": {
         "tranche_net": "شريحة الدخل السنوي الصافي (بالدينار)",
@@ -120,6 +130,11 @@ MOTS = {
         "tva_normal": "النسبة العادية", "tva_intermediaire": "النسبة الوسيطة",
         "tva_reduit": "النسبة المخفضة", "tva_majore": "النسبة المرتفعة",
         "tva_lien": "{taux} للأداء على القيمة المضافة",
+        # « رئيس العائلة » : terme de l'article 40 du code, repris de la description du
+        # paramètre ; precis/glossaire.yml n'a pas d'entrée pour lui.
+        "chef_famille": "رئيس العائلة",
+        "famille_ligne": "الطرح، بالدينار في السنة",
+        "famille_lien": "{nom} — الطرح بعنوان الأعباء العائلية",
     },
 }
 
@@ -469,47 +484,60 @@ def tva_taux(langue):
     return df
 
 
-def serie_tva() -> int:
-    """Émet la série des taux de la TVA pour la figure : une ligne par taux et date d'effet.
-
-    Les valeurs sont brutes et n'ont pas de langue : la série est émise une fois. Une ligne
-    sans taux dit la suppression du taux à cette date (taux majoré, 1er janvier 2007) ; une
-    ligne qui répète le taux précédent dit un texte qui le reprend sans le changer (taux de
-    10 %, entré dans le code au 1er janvier 2002). Chaque ligne porte le premier texte que
-    le paramètre cite à cette date et son lien au Journal officiel.
-    """
-    import pandas as pd
-
-    lignes = []
-    for t in TAUX_TVA:
-        ot.releve_note(_chemin_tva(t), f"tva_{t}")
-        for date, valeur, titre, lien in ot.serie_datee(_chemin_tva(t)):
-            if not titre or not lien.startswith("https://www.pist.tn/"):
-                print(f"✗ {SERIE_TVA} : taux {t} au {date} sans texte au Journal officiel.")
-                return 1
-            lignes.append({"taux": t, "date_effet": date,
-                           "valeur": None if valeur is None else round(valeur, 6),
-                           "texte": titre, "lien": lien})
-    if not lignes:
-        print(f"✗ {SERIE_TVA} : série vide, snapshot conservé.")
-        return 1
-    CACHE.mkdir(parents=True, exist_ok=True)
-    pd.DataFrame(lignes).to_csv(CACHE / f"{SERIE_TVA}.csv", index=False)
-    print(f"✓ série {SERIE_TVA} : {len(lignes)} lignes, {len(TAUX_TVA)} taux")
-    return 0
+def parametres_tva() -> list:
+    """Les quatre taux, déclarés pour la série longue et le tableau aux dates repères."""
+    return [ot.ParametreDate(
+        t, _chemin_tva(t), {l: MOTS[l][f"tva_{t}"] for l in LANGUES}, unite="taux",
+        lien={l: MOTS[l]["tva_lien"].format(taux=MOTS[l][f"tva_{t}"]) for l in LANGUES})
+        for t in TAUX_TVA]
 
 
-def serie_tva_avec_liens() -> int:
-    """`serie_tva` sous relevé, puis ses liens « Base législative » dans les deux langues."""
-    code, releve = ot.avec_liens(serie_tva)
-    if code:
-        return code
-    for langue in LANGUES:
-        m = MOTS[langue]
-        ot.ecrire_fichier_liens(
-            CACHE / f"{SERIE_TVA}.liens.{langue}.yml",
-            [(chemin, m["tva_lien"].format(taux=m[cle])) for chemin, cle in releve], langue)
-    return 0
+# Dates repères du tableau de l'état de la grille : les dates d'effet qui en changent un
+# niveau ou la structure, et l'année de la rédaction. Le 1er janvier 2002 n'en est pas : le
+# taux de 10 % y entre dans le code sans changer de valeur.
+REPERES_TVA = ["1988-07-01", "1995-01-01", "1998-01-01", "2007-01-01", "2018-01-01",
+               f"{DERNIERE_ANNEE}-01-01"]
+
+
+# ------------------------------- déductions pour charges de famille : série et dates repères
+#
+# Les sept montants en dinars de l'article 40 du code, que publie déjà, date par date, le
+# tableau `famille_chef_de_famille.md`. Leur historique est complet depuis les revenus de
+# 1990 et aucun n'est supprimé. La série ne porte pas les textes (`avec_textes=False`) : les
+# références du paramètre ne renvoient pas toutes au Journal officiel, et le chapitre cite
+# chaque rupture par sa clé — ce sont elles que la figure donne pour sources.
+SERIE_FAMILLE = "irpp-deductions-famille"
+FAMILLE = (("chef_de_famille", "chef_famille"), ("enf1", "enfant1"), ("enf2", "enfant2"),
+           ("enf3", "enfant3"), ("enf4", "enfant4"), ("infirme", "enfant_infirme"),
+           ("parent_max", "parent"))
+# Années de revenus, de cinq en cinq à partir de la première pleine décennie du code.
+REPERES_FAMILLE = ["1990-01-01", "2005-01-01", "2010-01-01", "2015-01-01", "2020-01-01",
+                   f"{DERNIERE_ANNEE}-01-01"]
+
+
+def parametres_famille() -> list:
+    return [ot.ParametreDate(
+        nom, f"parameters/impot_revenu/deductions/famille/{nom}.yaml",
+        {l: MOTS[l][mot] for l in LANGUES}, unite="dinars",
+        lien={l: MOTS[l]["famille_lien"].format(nom=MOTS[l][mot]) for l in LANGUES})
+        for nom, mot in FAMILLE]
+
+
+def parametres_dans_le_temps() -> int:
+    """Les séries longues et les tableaux aux dates repères. Rend 0, ou 1 au premier échec."""
+    generateur = Path(__file__).name
+    annees = {l: {d: d[:4] for d in REPERES_FAMILLE} for l in LANGUES}
+    return (
+        ot.ecrire_serie_parametres(SERIE_TVA, parametres_tva(), CACHE, colonne="taux")
+        or ot.ecrire_dates_reperes(
+            RACINE, "fiscalite", "tva_taux", parametres_tva(), REPERES_TVA,
+            entete={l: MOTS[l]["taux"] for l in LANGUES}, generateur=generateur)
+        or ot.ecrire_serie_parametres(SERIE_FAMILLE, parametres_famille(), CACHE,
+                                      avec_textes=False)
+        or ot.ecrire_dates_reperes(
+            RACINE, "fiscalite", "deductions_famille", parametres_famille(), REPERES_FAMILLE,
+            entete={l: MOTS[l]["famille_ligne"] for l in LANGUES}, entetes_dates=annees,
+            generateur=generateur))
 
 
 def main() -> int:
@@ -631,7 +659,7 @@ def main() -> int:
         total = (len(TABLEAUX_CPE) + len(evolutions(langue))
                  + len(evolutions_datees(langue)) + len(TABLEAUX) + 1 + len(TABLEAUX_IS) + 1)
         print(f"✓ {langue} : {total} tableaux")
-    return serie_tva_avec_liens()
+    return parametres_dans_le_temps()
 
 
 if __name__ == "__main__":

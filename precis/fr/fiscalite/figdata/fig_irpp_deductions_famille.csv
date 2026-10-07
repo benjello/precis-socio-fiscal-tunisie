@@ -1,0 +1,143 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-07
+# séries (tunisia_data) : irpp-deductions-famille, ipc-longue-periode
+# sources (citation) : @code-irpp-is-1990, @lf-2005, @lf-2010, @lf-2014, @lf-2018, @lf-2020, @bct-ra, @ins-annuaire
+# fiches : sources/bct-archives.md
+# méthode/hypothèses : Les montants, non leurs conditions : la série ne dit ni l'âge limite des enfants à charge, ni la condition de ressources du parent. Les dates sont des années de revenus, au 1er janvier., DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`.
+# note : Déductions pour situation et charges de famille de l'impôt sur le revenu, en dinars courants (revenus de 1990 à 2026) et en dinars de 2023 (1990-2023)
+Grandeur,Année,"Montant en vigueur, moyenne de l'année (dinars courants)",Indice des prix à la consommation,Montant en dinars de 2023
+Enfant infirme,1990,500.0,407.4,2277.5
+Enfant infirme,1991,500.0,439.0,2113.6
+Enfant infirme,1992,500.0,463.4,2002.3
+Enfant infirme,1993,500.0,482.9,1921.4
+Enfant infirme,1994,500.0,504.5,1839.1
+Enfant infirme,1995,500.0,536.0,1731.1
+Enfant infirme,1996,500.0,555.9,1669.1
+Enfant infirme,1997,500.0,576.5,1609.5
+Enfant infirme,1998,500.0,594.5,1560.7
+Enfant infirme,1999,500.0,610.5,1519.8
+Enfant infirme,2000,500.0,628.3,1476.8
+Enfant infirme,2001,500.0,640.5,1448.6
+Enfant infirme,2002,500.0,658.6,1408.8
+Enfant infirme,2003,500.0,676.5,1371.5
+Enfant infirme,2004,750.0,701.0,1985.4
+Enfant infirme,2005,750.0,715.3,1945.7
+Enfant infirme,2006,750.0,745.0,1868.2
+Enfant infirme,2007,750.0,770.6,1806.1
+Enfant infirme,2008,750.0,808.4,1721.6
+Enfant infirme,2009,1000.0,837.0,2217.1
+Enfant infirme,2010,1000.0,873.9,2123.5
+Enfant infirme,2011,1000.0,904.8,2051.0
+Enfant infirme,2012,1000.0,955.1,1942.9
+Enfant infirme,2013,1200.0,1013.5,2197.2
+Enfant infirme,2014,1200.0,1069.0,2083.1
+Enfant infirme,2015,1200.0,1119.5,1989.1
+Enfant infirme,2016,1200.0,1161.2,1917.7
+Enfant infirme,2017,2000.0,1223.0,3034.7
+Enfant infirme,2018,2000.0,1314.2,2824.1
+Enfant infirme,2019,2000.0,1403.5,2644.4
+Enfant infirme,2020,2000.0,1482.6,2503.3
+Enfant infirme,2021,2000.0,1567.2,2368.2
+Enfant infirme,2022,2000.0,1697.4,2186.5
+Enfant infirme,2023,2000.0,1855.7,2000.0
+Chef de famille,1990,150.0,407.4,683.2
+Chef de famille,1991,150.0,439.0,634.1
+Chef de famille,1992,150.0,463.4,600.7
+Chef de famille,1993,150.0,482.9,576.4
+Chef de famille,1994,150.0,504.5,551.7
+Chef de famille,1995,150.0,536.0,519.3
+Chef de famille,1996,150.0,555.9,500.7
+Chef de famille,1997,150.0,576.5,482.8
+Chef de famille,1998,150.0,594.5,468.2
+Chef de famille,1999,150.0,610.5,455.9
+Chef de famille,2000,150.0,628.3,443.0
+Chef de famille,2001,150.0,640.5,434.6
+Chef de famille,2002,150.0,658.6,422.6
+Chef de famille,2003,150.0,676.5,411.5
+Chef de famille,2004,150.0,701.0,397.1
+Chef de famille,2005,150.0,715.3,389.1
+Chef de famille,2006,150.0,745.0,373.6
+Chef de famille,2007,150.0,770.6,361.2
+Chef de famille,2008,150.0,808.4,344.3
+Chef de famille,2009,150.0,837.0,332.6
+Chef de famille,2010,150.0,873.9,318.5
+Chef de famille,2011,150.0,904.8,307.6
+Chef de famille,2012,150.0,955.1,291.4
+Chef de famille,2013,150.0,1013.5,274.6
+Chef de famille,2014,150.0,1069.0,260.4
+Chef de famille,2015,150.0,1119.5,248.6
+Chef de famille,2016,150.0,1161.2,239.7
+Chef de famille,2017,150.0,1223.0,227.6
+Chef de famille,2018,150.0,1314.2,211.8
+Chef de famille,2019,300.0,1403.5,396.7
+Chef de famille,2020,300.0,1482.6,375.5
+Chef de famille,2021,300.0,1567.2,355.2
+Chef de famille,2022,300.0,1697.4,328.0
+Chef de famille,2023,300.0,1855.7,300.0
+1er enfant,1990,90.0,407.4,409.9
+1er enfant,1991,90.0,439.0,380.4
+1er enfant,1992,90.0,463.4,360.4
+1er enfant,1993,90.0,482.9,345.9
+1er enfant,1994,90.0,504.5,331.0
+1er enfant,1995,90.0,536.0,311.6
+1er enfant,1996,90.0,555.9,300.4
+1er enfant,1997,90.0,576.5,289.7
+1er enfant,1998,90.0,594.5,280.9
+1er enfant,1999,90.0,610.5,273.6
+1er enfant,2000,90.0,628.3,265.8
+1er enfant,2001,90.0,640.5,260.8
+1er enfant,2002,90.0,658.6,253.6
+1er enfant,2003,90.0,676.5,246.9
+1er enfant,2004,90.0,701.0,238.2
+1er enfant,2005,90.0,715.3,233.5
+1er enfant,2006,90.0,745.0,224.2
+1er enfant,2007,90.0,770.6,216.7
+1er enfant,2008,90.0,808.4,206.6
+1er enfant,2009,90.0,837.0,199.5
+1er enfant,2010,90.0,873.9,191.1
+1er enfant,2011,90.0,904.8,184.6
+1er enfant,2012,90.0,955.1,174.9
+1er enfant,2013,90.0,1013.5,164.8
+1er enfant,2014,90.0,1069.0,156.2
+1er enfant,2015,90.0,1119.5,149.2
+1er enfant,2016,90.0,1161.2,143.8
+1er enfant,2017,90.0,1223.0,136.6
+1er enfant,2018,90.0,1314.2,127.1
+1er enfant,2019,100.0,1403.5,132.2
+1er enfant,2020,100.0,1482.6,125.2
+1er enfant,2021,100.0,1567.2,118.4
+1er enfant,2022,100.0,1697.4,109.3
+1er enfant,2023,100.0,1855.7,100.0
+4e enfant,1990,45.0,407.4,205.0
+4e enfant,1991,45.0,439.0,190.2
+4e enfant,1992,45.0,463.4,180.2
+4e enfant,1993,45.0,482.9,172.9
+4e enfant,1994,45.0,504.5,165.5
+4e enfant,1995,45.0,536.0,155.8
+4e enfant,1996,45.0,555.9,150.2
+4e enfant,1997,45.0,576.5,144.9
+4e enfant,1998,45.0,594.5,140.5
+4e enfant,1999,45.0,610.5,136.8
+4e enfant,2000,45.0,628.3,132.9
+4e enfant,2001,45.0,640.5,130.4
+4e enfant,2002,45.0,658.6,126.8
+4e enfant,2003,45.0,676.5,123.4
+4e enfant,2004,45.0,701.0,119.1
+4e enfant,2005,45.0,715.3,116.7
+4e enfant,2006,45.0,745.0,112.1
+4e enfant,2007,45.0,770.6,108.4
+4e enfant,2008,45.0,808.4,103.3
+4e enfant,2009,45.0,837.0,99.8
+4e enfant,2010,45.0,873.9,95.6
+4e enfant,2011,45.0,904.8,92.3
+4e enfant,2012,45.0,955.1,87.4
+4e enfant,2013,45.0,1013.5,82.4
+4e enfant,2014,45.0,1069.0,78.1
+4e enfant,2015,45.0,1119.5,74.6
+4e enfant,2016,45.0,1161.2,71.9
+4e enfant,2017,45.0,1223.0,68.3
+4e enfant,2018,45.0,1314.2,63.5
+4e enfant,2019,100.0,1403.5,132.2
+4e enfant,2020,100.0,1482.6,125.2
+4e enfant,2021,100.0,1567.2,118.4
+4e enfant,2022,100.0,1697.4,109.3
+4e enfant,2023,100.0,1855.7,100.0

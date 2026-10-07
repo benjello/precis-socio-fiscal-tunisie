@@ -1,0 +1,5 @@
+series: [irpp-deductions-famille, ipc-longue-periode]
+sources: [code-irpp-is-1990, lf-2005, lf-2010, lf-2014, lf-2018, lf-2020, bct-ra, ins-annuaire]
+fiches: [sources/bct-archives.md]
+caveats: [Les montants, non leurs conditions : la série ne dit ni l'âge limite des enfants à charge, ni la condition de ressources du parent. Les dates sont des années de revenus, au 1er janvier., DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`.]
+generated: 2026-10-07

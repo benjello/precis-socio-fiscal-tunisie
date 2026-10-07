@@ -196,3 +196,77 @@ def fig_rendement():
     ax1.legend(handles=[l0, l1, l2], loc="upper left", fontsize=8.5)
     fig.tight_layout()
     return fig
+
+
+# --- Les déductions pour charges de famille dans le temps, revenus 1990-2026 -----------------
+#
+# UNE DÉCLARATION, PAS UNE FONCTION DE FIGURE. Le tracé est celui du composant commun
+# (`figtools.figure_escalier`) : chaque montant de l'article 40 en escalier, la marche posée
+# à l'année de revenus où il change. La série vient de
+# `_seriescache/irpp-deductions-famille.csv`, émise par `scripts/generate_bareme_tables.py`
+# — une ligne par déduction et par date d'effet.
+#
+# QUATRE DÉDUCTIONS SUR SEPT. Le parent à charge suit le chef de famille à 150 dinars de
+# 1990 à 2018, et les deuxième et troisième enfants s'intercalent entre le premier et le
+# quatrième : leurs traits se recouvriraient. Le tableau du chapitre porte les sept.
+#
+# DINARS COURANTS, PUIS DINARS CONSTANTS. Ces montants ne sont pas indexés : la seconde vue
+# les rapporte à l'indice des prix à la consommation, en dinars de la dernière année de
+# l'indice. L'axe est logarithmique dans les deux vues — de 45 à 2 000 dinars, une échelle
+# linéaire écraserait les déductions par enfant.
+SERIE_FAMILLE = "irpp-deductions-famille"
+FIN_FAMILLE = 2026
+# Année des dinars constants, FIXÉE : la légende et le texte du chapitre citent des montants
+# « en dinars de 2023 », qu'un indice prolongé d'une année ne doit pas déplacer en silence.
+BASE_FAMILLE = 2023
+
+_FAMILLE = {"infirme": "#6639ba", "chef_de_famille": "#08519c", "enf1": "#bc4c00",
+            "enf4": "#1a7f37"}
+
+_L.update({
+    "f_chef_de_famille": {"fr": "Chef de famille", "ar": "رئيس العائلة"},
+    "f_enf1": {"fr": "1er enfant", "ar": "الطفل الأوّل"},
+    "f_enf4": {"fr": "4e enfant", "ar": "الطفل الرابع"},
+    "f_infirme": {"fr": "Enfant infirme", "ar": "الطفل المعوق"},
+    "f_y": {"fr": "Déduction annuelle, en dinars courants (échelle logarithmique)",
+            "ar": "الطرح السنوي، بالدينار الجاري (سلّم لوغاريتمي)"},
+    "f_y_reel": {"fr": "Déduction annuelle, en dinars de {base} (échelle logarithmique)",
+                 "ar": "الطرح السنوي، بدينار سنة {base} (سلّم لوغاريتمي)"},
+    "f_x": {"fr": "Année de revenus", "ar": "سنة المداخيل"},
+    "f_dinar": {"fr": "{} D", "ar": "{} د"},
+})
+
+figtools.register_provenance(
+    SERIE_FAMILLE,
+    titre=("Déductions pour situation et charges de famille de l'impôt sur le revenu, à "
+           "chaque année de revenus où leur montant change, depuis 1990"),
+    titre_ar=("الطرح بعنوان الحالة والأعباء العائلية من الضريبة على الدخل، عند كلّ سنة مداخيل "
+              "يتغيّر فيها مبلغه، منذ 1990"),
+    sources=["code-irpp-is-1990", "lf-2005", "lf-2010", "lf-2014", "lf-2018", "lf-2020"],
+    unite="dinars par an, montant retranché du revenu net global",
+    unite_ar="دينار في السنة، مبلغ يُطرح من الدخل الصافي الجملي",
+    perimetre=("une ligne par déduction et par année de revenus d'effet : chef de famille, "
+               "quatre premiers enfants à charge, enfant infirme, parent à charge"),
+    perimetre_ar=("سطر لكلّ طرح ولكلّ سنة مداخيل يسري فيها: رئيس العائلة، الأطفال الأربعة "
+                  "الأوائل في الكفالة، الطفل المعوق، الوالد المتكفَّل به"),
+    caveats=("Les montants, non leurs conditions : la série ne dit ni l'âge limite des "
+             "enfants à charge, ni la condition de ressources du parent. Les dates sont des "
+             "années de revenus, au 1er janvier."),
+    caveats_ar=("المبالغ لا شروطها: لا تبيّن السلسلة السنّ القصوى للأطفال في الكفالة ولا شرط "
+                "موارد الوالد. التواريخ سنوات مداخيل، في غرّة جانفي."),
+)
+
+
+def _dinars(v: float) -> str:
+    return _lab("f_dinar").format(f"{v:,.0f}".replace(",", chr(0x202F)))
+
+
+def figure_famille(slug: str, caption: str, note_lecture: str | None = None,
+                   generated: str | None = None) -> None:
+    """Les déductions pour charges de famille, en dinars courants et en dinars constants."""
+    figtools.figure_escalier(
+        SERIE_FAMILLE, {cle: (_lab("f_" + cle), couleur) for cle, couleur in _FAMILLE.items()},
+        slug=slug, caption=caption, note_lecture=note_lecture, generated=generated,
+        fin=FIN_FAMILLE, constants=True, base=BASE_FAMILLE, format_valeur=_dinars, log=True,
+        ylabel=_lab("f_y"), ylabel_constants=_lab("f_y_reel"), xlabel=_lab("f_x"),
+        ylim=(30, 4000), yticks=(50, 100, 200, 500, 1000, 2000))

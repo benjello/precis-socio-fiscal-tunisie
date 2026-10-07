@@ -1316,6 +1316,203 @@ def tableau_enchaine(lectures, colonnes, cles, langue="fr", colonne_periode="Eff
     return pd.DataFrame(lignes)
 
 
+# ------------------------------------------------------- les paramètres dans le temps
+#
+# DEUX VUES D'UNE MÊME DÉCLARATION. Un générateur déclare une liste de paramètres numériques
+# — `ParametreDate` : chemin, libellés des deux langues, unité — et en tire :
+#   - la SÉRIE LONGUE `precis/_seriescache/<nom>.csv`, une ligne par paramètre et par date
+#     d'effet, que trace en escalier `figtools.figure_escalier` (`ecrire_serie_parametres`) ;
+#   - le tableau de L'ÉTAT DU DROIT À DES DATES REPÈRES, un paramètre par ligne, une date par
+#     colonne, `tables/<nom>_dates_reperes.md` (`ecrire_dates_reperes`).
+# Les deux se lisent à la même règle : la valeur à une date est la dernière dont la date
+# d'effet est antérieure ou égale ; une valeur nulle dit que le paramètre cesse d'exister, et
+# l'on ne remonte pas au-delà (`etat_a_la_date`).
+#
+# CE QUE LA DÉCLARATION ENGAGE. Une marche d'escalier et une case de date repère affirment
+# toutes deux qu'une valeur court de sa date d'effet à la suivante. Elles ne conviennent donc
+# qu'à un paramètre dont l'historique est COMPLET : aucun texte intermédiaire non versé, et
+# une fin datée quand la valeur a cessé de s'appliquer. Un paramètre qui encode une
+# suppression par 0 plutôt que par une valeur nulle y tracerait une fausse marche à zéro.
+
+
+class ParametreDate:
+    """Un paramètre numérique daté, déclaré pour la série longue et le tableau aux dates repères.
+
+    `cle`     : identifiant court du paramètre dans la série (« normal », « chef_de_famille »).
+    `chemin`  : chemin du YAML, relatif au paquet (« parameters/…/taux.yaml »).
+    `libelle` : {langue: libellé de ligne}.
+    `unite`   : nom d'un formateur de `Formateurs` — « taux », « dinars », « montant »,
+                « millimes », « entier » —, qui porte l'unité dans la case (« 17 % », « 150 D »).
+    `format`  : fonction `(valeur, langue) -> texte`, quand aucun formateur commun ne convient.
+    `lien`    : {langue: libellé du lien « Base législative »} ; à défaut, le libellé de ligne.
+    """
+
+    def __init__(self, cle: str, chemin: str, libelle: dict[str, str], unite: str = "taux",
+                 format: Callable[[float, str], str] | None = None,
+                 lien: dict[str, str] | None = None):
+        self.cle, self.chemin, self.libelle, self.unite = cle, chemin, libelle, unite
+        self.format, self.lien = format, lien or libelle
+
+    def rendre(self, valeur: float | None, langue: str) -> str:
+        """La case : la valeur dans son unité, ou « — » quand le paramètre n'existe pas."""
+        if valeur is None:
+            return VIDE
+        if self.format is not None:
+            return self.format(valeur, langue)
+        return getattr(formateurs(langue), self.unite)(valeur)
+
+    def serie(self) -> list[tuple[str, float | None, str, str]]:
+        """(date d'effet, valeur, titre, lien) — paramètre scalaire ou barème à une tranche."""
+        return serie_datee(self.chemin) or taux_datee(self.chemin)
+
+
+def etat_a_la_date(serie, date: str) -> float | None:
+    """Valeur en vigueur à `date` (ISO) dans une série de `serie_datee`, ou None.
+
+    None dans deux cas, que le tableau rend tous deux par « — » : le paramètre n'est pas
+    encore créé (aucune date d'effet antérieure ou égale), ou il est abrogé (la dernière
+    valeur d'effet est nulle). Le jour même d'une date d'effet, c'est la valeur nouvelle
+    qui vaut ; la veille, la précédente.
+    """
+    point = en_vigueur(serie, date)
+    return None if point is None else point[1]
+
+
+def lignes_serie_longue(series, colonne: str = "parametre",
+                        avec_textes: bool = True) -> list[dict[str, Any]]:
+    """Lignes de la série longue : une par paramètre et par date d'effet. Fonction pure.
+
+    `series` : [(clé, série de `serie_datee`)], dans l'ordre de la déclaration — la série
+    garde cet ordre, puis celui des dates. `colonne` : nom de la colonne qui porte la clé.
+    Une ligne sans valeur dit la suppression du paramètre à cette date ; une ligne qui
+    répète la valeur précédente dit un texte qui la reprend sans la changer.
+
+    `avec_textes` : chaque ligne porte le premier texte que le paramètre cite à cette date
+    et son lien au Journal officiel ; une date sans texte, ou dont le lien n'est pas sur
+    pist.tn, lève une erreur — la série ne s'écrit pas avec une ligne sans source. Sans
+    `avec_textes`, la série ne porte que les valeurs : ses textes sont alors ceux que cite
+    la figure qui la trace.
+    """
+    lignes = []
+    for cle, serie in series:
+        for date, valeur, titre, lien in serie:
+            ligne = {colonne: cle, "date_effet": date,
+                     "valeur": None if valeur is None else round(valeur, 6)}
+            if avec_textes:
+                if not titre or not lien.startswith("https://www.pist.tn/"):
+                    raise ValueError(f"{cle} au {date} sans texte au Journal officiel.")
+                ligne["texte"], ligne["lien"] = titre, lien
+            lignes.append(ligne)
+    return lignes
+
+
+def ecrire_csv_serie(fichier: str | Path, lignes: list[dict[str, Any]]) -> None:
+    """Écrit la série longue en CSV, une valeur absente donnant une case vide.
+
+    Par le module `csv`, et non par pandas : l'écriture se teste sans dépendance, et rend
+    les mêmes octets (nombres par `repr`, guillemets au besoin seulement, fin de ligne LF).
+    """
+    import csv
+
+    with Path(fichier).open("w", encoding="utf-8", newline="") as f:
+        ecrivain = csv.DictWriter(f, fieldnames=list(lignes[0]), lineterminator="\n")
+        ecrivain.writeheader()
+        for ligne in lignes:
+            ecrivain.writerow({c: "" if v is None else v for c, v in ligne.items()})
+
+
+def ecrire_serie_parametres(nom: str, parametres: list[ParametreDate], cache: str | Path,
+                            colonne: str = "parametre", avec_textes: bool = True,
+                            langues: tuple[str, ...] = ("fr", "ar")) -> int:
+    """Émet la série longue `<cache>/<nom>.csv` et ses liens `<nom>.liens.<langue>.yml`.
+
+    Les valeurs sont brutes et n'ont pas de langue : la série est émise une fois ; seuls les
+    libellés des liens « Base législative » sont écrits dans chaque langue. Rend 0, ou 1
+    après avoir dit pourquoi la série n'est pas écrite — le snapshot existant est conservé.
+    """
+    series = [(p.cle, p.serie()) for p in parametres]
+    vides = [p.chemin for p, (_c, s) in zip(parametres, series) if not s]
+    if vides:
+        print(f"✗ {nom} : paramètre introuvable ou vide : {vides}")
+        return 1
+    try:
+        lignes = lignes_serie_longue(series, colonne=colonne, avec_textes=avec_textes)
+    except ValueError as erreur:
+        print(f"✗ {nom} : {erreur}")
+        return 1
+    cache = Path(cache)
+    cache.mkdir(parents=True, exist_ok=True)
+    ecrire_csv_serie(cache / f"{nom}.csv", lignes)
+    for langue in langues:
+        ecrire_fichier_liens(cache / f"{nom}.liens.{langue}.yml",
+                             [(p.chemin, p.lien[langue]) for p in parametres], langue)
+    print(f"✓ série {nom} : {len(lignes)} lignes, {len(parametres)} paramètres")
+    return 0
+
+
+def tableau_dates_reperes(
+    parametres: list[ParametreDate],
+    dates: list[str],
+    langue: str = "fr",
+    entete: str = "Paramètre",
+    entetes_dates: dict[str, str] | None = None,
+) -> "pd.DataFrame | None":
+    """L'état du droit à des dates repères : un paramètre par ligne, une date par colonne.
+
+    `dates` : dates ISO choisies par l'appelant, dans l'ordre des colonnes. Ce sont des
+    CONSTANTES : une date mobile — celle du jour — ferait différer le snapshot d'une semaine
+    à l'autre, et le contrôle de fraîcheur échouerait sans que rien n'ait changé.
+    `entetes_dates` : date -> en-tête de colonne ; à défaut, la date au jour près
+    (« 1^er^ juillet 1988 »). Une case rend la valeur en vigueur à la date, ou « — » quand
+    le paramètre n'existe pas encore ou n'existe plus (`etat_a_la_date`).
+
+    Chaque paramètre est noté au relevé sous le libellé de son lien : l'onglet « Base
+    législative » du tableau mène à toutes ses valeurs datées et à leurs références.
+    """
+    if pd is None:
+        return None
+    lignes = []
+    for p in parametres:
+        serie = p.serie()
+        if not serie:
+            print(f"✗ paramètre introuvable ou vide : {p.chemin}")
+            return None
+        releve_note(p.chemin, p.lien[langue])
+        ligne = {entete: p.libelle[langue]}
+        for date in dates:
+            colonne = (entetes_dates or {}).get(date) or formate_date(date, langue)
+            ligne[colonne] = p.rendre(etat_a_la_date(serie, date), langue)
+        lignes.append(ligne)
+    return pd.DataFrame(lignes)
+
+
+def ecrire_dates_reperes(racine: str | Path, livre: str, nom: str,
+                         parametres: list[ParametreDate], dates: list[str],
+                         entete: dict[str, str], generateur: str,
+                         entetes_dates: dict[str, dict[str, str]] | None = None,
+                         langues: tuple[str, ...] = ("fr", "ar")) -> int:
+    """Écrit `precis/<langue>/<livre>/tables/<nom>_dates_reperes.md` et ses liens.
+
+    `racine` : le dossier `precis`. `entete` : {langue: en-tête de la colonne des
+    paramètres}. `entetes_dates` : {langue: {date: en-tête}}. `generateur` : nom du script
+    appelant, inscrit dans le commentaire d'en-tête du snapshot. Rend 0, ou 1 en cas d'échec.
+    """
+    for langue in langues:
+        df, liens = avec_liens(lambda: tableau_dates_reperes(
+            parametres, dates, langue, entete=entete[langue],
+            entetes_dates=(entetes_dates or {}).get(langue)))
+        if df is None:
+            print(f"échec : {langue}/{nom}_dates_reperes.md")
+            return 1
+        ecrire_tableau(
+            Path(racine) / langue / livre / "tables" / f"{nom}_dates_reperes.md", df, liens,
+            langue,
+            entete=f"<!-- Généré par scripts/{generateur} — ne pas éditer à la main.\n"
+                   f"     État en vigueur aux dates : {', '.join(dates)}.\n"
+                   f"     Paramètres : {', '.join(p.chemin for p in parametres)} -->\n\n")
+    return 0
+
+
 def _enfants(chemin_noeud: str) -> list[tuple[str, bool]]:
     """Enfants d'un nœud de paramètres : [(nom, est_un_nœud)], dans l'ordre de son index.
 

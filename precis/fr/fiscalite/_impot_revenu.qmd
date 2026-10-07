@@ -561,14 +561,51 @@ Trois traits de cette série peuvent être relevés sans lui ajouter d'apprécia
 
 D'abord, **une immobilité nominale de vingt-neuf exercices sur le noyau du dispositif** : la déduction du chef de famille reste à 150 dinars des revenus de 1990 aux revenus de 2018 inclus, les déductions pour les quatre premiers enfants à 90, 75, 60 et 45 dinars sur la même période, et le plafond de la déduction pour parent à charge également à 150 dinars. Ces montants ne sont pas indexés. La période recouvre celle de l'immobilité du barème, de sorte que les deux dérives portent sur les mêmes exercices.
 
-<!-- TODO : construire la série des déductions pour charges de famille rapportées au SMIG et à
-l'indice des prix à la consommation, 1990-2026 (figure), en regard de celle déjà prévue pour le
-seuil de la tranche à 0 %. Source pressentie : dépôt tunisia-data (INS, BCT). Tant que la série
-n'est pas disponible, aucune appréciation de la portée réelle de ces montants n'est avancée. -->
+<!-- TODO : rapporter aussi les déductions pour charges de famille au SMIG, 1990-2026, en regard
+de la série déjà prévue pour le seuil de la tranche à 0 %. La lecture à l'indice des prix est
+faite (fig-irpp-deductions-famille) ; elle s'arrête à 2023, dernière année de l'indice. -->
 
 Ensuite, **un basculement de logique aux revenus de 2019** : le barème dégressif par rang d'enfant — 90, 75, 60 puis 45 dinars, l'avantage décroissant avec le rang — est remplacé par un **montant uniforme de 100 dinars** par enfant, dans la limite des quatre premiers [@lf-2018, art. 54]. Trois ruptures se produisent cette même année de revenus, alors qu'elles proviennent de deux lois différentes : la loi de finances pour 2018 pour le chef de famille et les enfants, la loi de finances pour 2020 pour le parent à charge [@lf-2020, art. 41].
 
 Enfin, **la déduction pour parent à charge a été modifiée dans ses deux paramètres à la fois** par l'article 41 de la loi de finances pour 2020 : son plafond passe de 150 à 450 dinars par parent, et la condition de ressources du parent — dont le revenu, augmenté du montant de la déduction, ne doit pas excéder un seuil — passe du SMIG au **double** du SMIG [@lf-2020, art. 41; @dgi-nc-3-2020]. Lorsque la charge est assurée par plusieurs enfants, le montant est réparti entre eux.
+
+Deux lectures complètent le tableau des ruptures. La première donne l'état des sept déductions à des années de revenus fixes, de 1990 à 2026, plutôt qu'aux dates où l'une d'elles change (@tbl-charges-famille-reperes).
+
+```{python}
+#| echo: false
+#| output: asis
+table("deductions_famille_dates_reperes",
+      "Déductions au titre de la situation et des charges de famille en vigueur à six années de revenus repères, 1990-2026",
+      "tbl-charges-famille-reperes")
+```
+
+La seconde trace quatre de ces montants dans le temps, en dinars courants puis en dinars de 2023 (@fig-irpp-deductions-famille). Rapportée à l'indice des prix à la consommation, la déduction du chef de famille passe de 683 dinars de 2023 pour les revenus de 1990 à 212 dinars pour ceux de 2018, dernière année du montant de 150 dinars ; le doublement de 2019 la porte à 397 dinars, et elle vaut 300 dinars en 2023. La déduction pour le premier enfant passe de 410 dinars de 2023 en 1990 à 100 dinars en 2023. Celle de l'enfant infirme, relevée quatre fois, se retrouve en 2023 à 2 000 dinars, contre 2 277 dinars de 2023 en 1990.
+
+```{python}
+#| label: fig-irpp-deductions-famille
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import irpp as fig_irpp
+fig_irpp.figure_famille(
+    slug="fig_irpp_deductions_famille",
+    caption=("Déductions pour situation et charges de famille de l'impôt sur le revenu, en "
+             "dinars courants (revenus de 1990 à 2026) et en dinars de 2023 (1990-2023)"),
+    note_lecture=(
+        "**Un montant légal vaut de l'année de revenus de son effet à la veille du "
+        "suivant : dans la première vue, chaque déduction est tracée en escalier, la marche "
+        "posée à l'année de revenus où elle change**, que portent aussi les graduations de "
+        "l'axe horizontal. Les premier et quatrième enfants se rejoignent à 100 dinars à "
+        "partir des revenus de 2019 : leurs traits se confondent. **La seconde vue rapporte "
+        "chaque montant à l'indice des prix à la consommation** : le montant de l'année, "
+        "multiplié par le rapport de l'indice de 2023 à celui de l'année. Entre deux "
+        "relèvements, la courbe descend au rythme des prix ; un relèvement la remonte d'un "
+        "coup. Elle s'arrête en 2023, dernière année de l'indice. **L'axe vertical est "
+        "logarithmique dans les deux vues** : un même écart vertical y vaut une même "
+        "variation en pourcentage. Quatre déductions sur sept sont tracées ; celle du parent "
+        "à charge suit celle du chef de famille jusqu'aux revenus de 2018, et les deuxième "
+        "et troisième enfants s'intercalent entre le premier et le quatrième."))
+```
 
 ## L'évolution du minimum d'impôt {#sec-irpp-minimum}
 
