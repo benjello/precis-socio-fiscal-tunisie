@@ -44,6 +44,11 @@ class DomicileUniqueTest(unittest.TestCase):
                  "[@lf-1999, art. 56].\n" + REGISTRE)
         self.assertEqual(len(erreurs(self.tmp, texte)), 1)
 
+    def test_loi_en_note_admise(self):
+        texte = ("## Crédit {#sec-c .domicile-unique}\n\nLa loi de finances pour 1999"
+                 "^[[@lf-1999, art. 56, p. 2507].] porte la part à 50 %.\n" + REGISTRE)
+        self.assertEqual(erreurs(self.tmp, texte), [])
+
     def test_hors_section_la_citation_reste_permise(self):
         texte = ("## Crédit {#sec-c .domicile-unique}\n\nTexte.\n" + REGISTRE +
                  "\n## Autre section\n\nLa part passe à 50 % [@lf-1999, art. 56].\n")
