@@ -277,15 +277,106 @@ print(ot.markdown_avec_legende(Path.cwd() / "tables" / "tva_taux.md",
 
 ::::
 
+### Ce qui est taxé, et à quel taux : les régimes par catégorie {#sec-tva-regimes-categories}
+
+Un taux ne dit pas à quoi il s'applique. Cette section donne, pour vingt-cinq grandes catégories de produits et de services, le régime que la loi leur réserve à cinq dates, de 1988 à 2026 : l'[exonération](#g-exoneration-tva), le [taux réduit](#g-taux-reduit-tva), le taux intermédiaire, le [taux normal](#g-taux-normal-tva) ou, jusqu'en 2006, le [taux majoré](#g-taux-majore-tva). Le taux intermédiaire est celui de 10 % créé en 1995 entre le taux réduit et le taux normal, porté à 12 % en 2007 puis à 13 % en 2018 ; ce n'est pas un terme du code (@sec-tva-reforme-1995-1996).
+
+Le régime d'une opération se lit dans des tableaux annexés au code : le [tableau A](#g-tableau-a-tva) énumère les opérations exonérées, le [tableau B](#g-tableau-b-tva) celles du taux réduit, le [tableau B bis](#g-tableau-b-bis-tva), de 2002 à 2016, celles du taux intermédiaire, et le [tableau C](#g-tableau-c-tva), jusqu'en 2006, les biens du taux majoré. Ce qui ne figure dans aucun tableau relève du taux normal : c'est la règle générale de l'article 7 du code, qui y soumet les biens et services « non soumis à un autre taux ». Le contenu de ces tableaux est donné en annexe, numéro par numéro (@sec-tva-tableaux).
+
+En trente-huit ans, la liste des exonérations change peu ; ce sont les trois autres régimes qui changent de contenu. Le taux majoré disparaît. Le taux réduit, qui était en 1988 celui des professions, de l'énergie, du transport et de l'informatique, devient surtout celui des opérations sorties de l'exonération en 2016 et 2017. Le taux intermédiaire, qui avait recueilli entre-temps les professions, l'énergie, le tourisme et l'informatique, ne garde en 2026 que les produits pétroliers et une part de l'électricité domestique (@fig-tva-regimes).
+
+```{python}
+#| label: fig-tva-regimes
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tva as fig_tva
+import figtools
+figtools.figure_tabs(
+    fig_tva.fig_regimes(), fig_tva.table_regimes(), fig_tva.SERIE_REGIMES,
+    slug="fig_tva_regimes", nominal=False, scroll_y="520px",
+    caption=("Régimes de taxe sur la valeur ajoutée de vingt-cinq catégories de produits et "
+             "de services à cinq dates repères, du 1^er^ juillet 1988 au 1^er^ janvier 2026"),
+    note_lecture=(
+        "**Chaque case donne le ou les régimes d'une catégorie à une date repère, avec le "
+        "taux alors en vigueur.** Une case partagée dit que la catégorie réunit des "
+        "opérations que la loi ne traite pas de la même façon : en 1988, les soins sont au "
+        "taux réduit et les appareils pour handicapés exonérés. La largeur des parts ne "
+        "mesure rien. **Une case hachurée porte un taux que la loi n'écrit pas** : "
+        "l'opération ne figure plus dans aucun tableau, et relève du taux normal par la "
+        "règle générale de l'article 7. **Une case blanche n'est pas un taux** : la "
+        "catégorie ne figure dans aucun tableau à cette date. C'est le cas des anciens "
+        "biens du tableau C après 2008 : ils relèvent du taux normal, mais aucun tableau ne "
+        "le dit. En 2026, la case à 7 % de la ligne des biens durables ne porte que sur les "
+        "véhicules électriques ou hybrides rechargeables, les bicyclettes et les bus de "
+        "transport du personnel. **Les colonnes n'ont pas la "
+        "même autorité.** Celles de 1988 et de 2017 viennent du *Journal officiel*. Celles "
+        "de 2008 et de 2014, marquées d'un petit cercle, viennent de deux éditions privées "
+        "du code. Celle de 2026 vient de l'édition du code publiée par le ministère des "
+        "Finances, à jour au 1^er^ janvier 2025, complétée par la loi de finances pour 2026. "
+        "**La matrice ne couvre ni** les opérations placées hors du champ de la taxe, **ni** "
+        "l'exonération à la revente au détail, **ni** les régimes suspensifs : une sortie du "
+        "tableau des exonérations n'est pas, à elle seule, une taxation. Un régime appliqué "
+        "entre deux dates repères n'y apparaît pas, comme le taux de 10 % de 1995 à 2006 ou "
+        "celui de 13 % sur le logement neuf de 2018 à 2024. Entre 2017 et 2026, le passage "
+        "de 6 % à 7 % et de 12 % à 13 % tient au relèvement de tous les taux au 1^er^ "
+        "janvier 2018, non à un changement de régime. La ligne de l'eau porte, en 1988, sur "
+        "la vente d'eau ; aux dates suivantes, sur la seule eau destinée à l'agriculture."))
+```
+
+- **Une liste d'exonérations stable.** Les farines, le pain, le couscous, les pâtes, le lait et les huiles alimentaires, les livres et les journaux, les intrants et les équipements de l'agriculture et de la pêche, le transport maritime et le transport aérien international, les assurances soumises à la taxe unique, les intérêts des prêts au logement, les appareils pour handicapés et l'hémodialyse sont exonérés [dès 1988](#r-tva-cat-1988) et le sont encore en 2026, dans des termes presque identiques.
+- **Les anciens biens du tableau C : du taux majoré au taux normal.** En 1988, le taux de 29 % frappe des denrées, des boissons et les tabacs, mais aussi l'habillement, la parfumerie, l'électroménager, les téléviseurs et les voitures particulières. Des biens en sortent avant sa suppression : les sanitaires, les réfrigérateurs et les pneumatiques passent à 17 % [en 1995](#r-tva-cat-1995-tableau-c), le cacao, les eaux minérales et les machines à laver le linge à 18 % [en 1998](#r-tva-cat-1998). [Au 1^er^ janvier 2007](#r-tva-cat-2007), le taux majoré est supprimé et ce qui restait au tableau relève du taux normal ; cinq lignes seulement sont en outre soumises au [droit de consommation](#g-droit-de-consommation). L'histoire de ce tableau est donnée en annexe (@sec-tva-tableaux-c).
+- **Le tourisme : de 6 % à 12 %, puis retour au taux réduit.** L'hôtellerie est au taux réduit en 1988. Elle passe à 10 % [au 1^er^ septembre 1996](#r-tva-cat-1996-tourisme), avec la restauration et certaines activités touristiques, puis à 12 % [en 2007](#r-tva-cat-2007). [La loi de finances complémentaire pour 2015](#r-tva-cat-2015) la ramène au taux réduit de 6 %, sans fixer de date d'application propre ; ce taux est de 7 % [depuis 2018](#r-tva-taux-2018).
+- **L'enseignement et le sucre sortent de l'exonération.** Exonérés depuis 1988, l'enseignement et les garderies sont taxés à 6 % [à compter du 1^er^ septembre 2016](#r-tva-cat-2016), le sucre [au 1^er^ janvier 2017](#r-tva-cat-2017). Les mêmes lois reclassent au taux réduit les aéronefs, les navires de commerce, les chauffe-eau solaires et les équipements des énergies renouvelables, les messages de presse et la radio-télédiffusion. C'est l'élargissement du champ de la réforme de 2016-2018 (@sec-tva-reforme-2016-2018).
+- **Les professions non médicales : un cran à chaque réforme.** Architectes, avocats, notaires, comptables, conseils et experts sont au taux réduit en 1988, à 10 % [au 1^er^ avril 1996](#r-tva-cat-1996-professions), à 12 % [en 2007](#r-tva-cat-2007), à 13 % [en 2018](#r-tva-taux-2018). [Au 1^er^ janvier 2023](#r-tva-cat-2023), le texte qui les nommait est supprimé : la loi n'écrit pas leur nouveau taux, qui est le taux normal de 19 % par la règle générale de l'article 7. Les professions de santé, elles, restent au taux réduit de bout en bout.
+- **L'énergie et le logement neuf : des régimes partagés.** L'électricité, au taux réduit en 1988, est retirée du tableau B par [la loi de finances pour 1996](#r-tva-cat-1996-energie) ; son taux, de 12 % en 2008 et en 2014, tient alors à des décrets annuels (@sec-tva-reductions-annuelles). [Depuis le 1^er^ janvier 2025](#r-tva-cat-2025), l'électricité domestique est à 7 % jusqu'à 300 kilowattheures par mois et à 13 % au-delà. Les logements neufs vendus par les [promoteurs immobiliers](#g-promoteur-immobilier), exonérés [en 2001](#r-tva-cat-2001), sont taxés à 13 % [en 2018](#r-tva-cat-2018), hors logements sociaux ; depuis 2025, ils le sont à 7 % jusqu'à 400 000 dinars hors taxe, et au taux normal au-delà.
+
+La matrice ne montre que cinq dates. Pour quelques opérations — professions libérales, logement, télécommunications, médicaments au détail —, la suite complète des régimes, états intermédiaires et reports compris, est donnée en tableau (@tbl-tva-trajectoires) et en récit (@sec-tva-trajectoires).
+
+:::: {.chronologie-repliable titre="Les changements de régime d'une catégorie, texte par texte, de 1988 à 2025"}
+
+Le registre ne porte que les textes qui font passer une catégorie d'un régime à un autre. La colonne « Portée » dit de chaque ligne si elle est une rupture, une étape — et de quelle réforme — ou un ajustement. Trois lois de finances antérieures à 1994 ne fixent pas leur date d'application : leur date d'effet n'est pas établie.
+
+: Les changements de régime des catégories de produits et de services : les textes et ce qu'ils changent, 1988-2025 {#tbl-tva-regimes-textes}
+
+| Date d'effet | Catégorie | Portée | Texte et article | Avant → après |
+|---|---|---|---|---|
+| []{#r-tva-cat-1988}1^er^ juillet 1988 | toutes | point de départ — mise en place | code de la TVA, art. 4 et 7, tableaux A, B et C [@loi-88-61-tva, art. 4 et 7 ; @loi-88-61-tva, tableaux A, B et C, p. 833-846] | — → exonérations du tableau A ; 6 % pour les opérations du tableau B ; 29 % pour les biens du tableau C ; 17 % pour le reste |
+| []{#r-tva-cat-1989}non établie | restauration ; films en salle ; fruits et légumes transformés | ajustement | loi de finances pour 1989 [@loi-88-145-lf-1989, art. 24, p. 1794] | absents des tableaux → 6 % (tableau B) |
+| []{#r-tva-cat-1991}non établie | eau potable | ajustement | loi de finances pour 1991 [@lf-1991, art. 33, p. 2052] | exonérée → hors du tableau A, dont le numéro ne couvre plus que l'eau destinée à l'agriculture |
+| []{#r-tva-cat-1992}non établie | bicyclettes ; maïs | ajustement | loi de finances pour 1992 [@lf-1992, art. 35 et 40, p. 2085-2086] | bicyclettes : exonérées → hors du tableau A ; maïs : → 6 % (tableau B) |
+| []{#r-tva-cat-1995}1^er^ janvier 1995 | informatique, téléviseurs, transport de marchandises | **rupture** — réforme de 1995-1996 | loi de finances pour 1995 [@lf-1995, art. 56 à 58, p. 2047] | 6 % → 10 % |
+| []{#r-tva-cat-1995-tableau-c}1^er^ janvier 1995 | sanitaires, réfrigérateurs et congélateurs, chauffage, pneumatiques, éclairage | ajustement | loi de finances pour 1995 [@lf-1995, art. 86 et tableau « M bis », p. 2050 et 2150-2151] | 29 % → 17 % (dix-neuf positions du tableau C) |
+| []{#r-tva-cat-1995-telecom}1^er^ janvier 1995 | télécommunications | ajustement | loi de finances pour 1995 [@lf-1995, art. 85] | → exonérées |
+| []{#r-tva-cat-1996-professions}1^er^ avril 1996 | professions libérales non médicales | étape — réforme de 1995-1996 | loi de finances pour 1996 [@lf-1996, art. 37 § 6 et 38, p. 2371-2372] | 6 % → 10 % |
+| []{#r-tva-cat-1996-tourisme}1^er^ septembre 1996 | hôtellerie, activités touristiques, restauration | étape — réforme de 1995-1996 | loi de finances pour 1996 [@lf-1996, art. 37 § 1 à 5 et 39] | 6 % → 10 % |
+| []{#r-tva-cat-1996-energie}date fixée par décret | électricité, gaz, huiles de pétrole | **rupture** — réductions annuelles | loi de finances pour 1996 [@lf-1996, art. 40] | 6 % (tableau B) → hors tableau (@tbl-tva-reductions-textes) |
+| []{#r-tva-cat-1998}1^er^ janvier 1998 | cacao et chocolat, eaux minérales, machines à laver le linge, petit électroménager | ajustement | loi de finances pour 1998 [@lf-1998, art. 27 et tableau « L », p. 2437 et 2557] | 29 % → 18 % (quinze positions du tableau C) |
+| []{#r-tva-cat-2001}1^er^ janvier 2001 | logements neufs vendus par les promoteurs | ajustement | loi de finances pour 2001 [@lf-2001, art. 63, p. 3181] | → exonérés |
+| []{#r-tva-cat-2003}1^er^ janvier 2003 | télécommunications | ajustement | loi de finances pour 2002 [@loi2001-123-lf2002, art. 66 à 70] ; décret n° 2002-3356 [@decret-2002-3356-tva-telecom, art. 1] | exonérées → taux normal de 18 % |
+| []{#r-tva-cat-2007}1^er^ janvier 2007 | biens du tableau C ; opérations au taux intermédiaire | **rupture** — réforme de 2007 | loi n° 2006-80 du 18 décembre 2006 [@loi-2006-80-reduction-taux, art. 13 et 17, p. 4302-4303] | 29 % → taux normal de 18 % ; 10 % → 12 % |
+| []{#r-tva-cat-2015}non établie : la loi ne fixe pas de date d'application | hôtellerie et activités touristiques | ajustement — retour sur une étape de 1996 | loi de finances complémentaire pour 2015 [@lfc-2015, art. 20, p. 1892] | 12 % → 6 % |
+| []{#r-tva-cat-2016}1^er^ janvier 2016 ; 1^er^ septembre 2016 pour l'enseignement | aéronefs, chauffe-eau solaires, presse, radio-télédiffusion ; enseignement et garderies | **rupture** — réforme de 2016-2018 | loi de finances pour 2016 [@lf-2016, art. 30 et 31, p. 3146-3147] | exonérés → 6 % |
+| []{#r-tva-cat-2017}1^er^ janvier 2017 | sucre, énergies renouvelables, navires de commerce ; intrants agricoles, machines informatiques, transport de marchandises | étape — réforme de 2016-2018 | loi de finances pour 2017 [@lf-2017, art. 16 à 19, 25 et 27, p. 3832-3836] | exonérés → 6 % ; 12 % → 6 % |
+| []{#r-tva-cat-2018}1^er^ janvier 2018 | logements neufs, hors logements sociaux | étape — réforme de 2016-2018 | loi de finances pour 2018 [@lf-2018, art. 44, p. 4281] | exonérés → 13 % |
+| []{#r-tva-cat-2023}1^er^ janvier 2023 | professions libérales non médicales | ajustement | décret-loi de finances pour 2023 [@lf-2023, art. 44, p. 4069 de l'édition arabe ; @dgelf-code-tva-2023, art. 7] | 13 % → taux normal de 19 %, que la loi n'écrit pas : il résulte de la suppression du texte qui nommait ces professions |
+| []{#r-tva-cat-2025}1^er^ janvier 2025 | logements neufs ; électricité domestique | ajustement | loi de finances pour 2025 [@lf-2025, art. 31 et 64, p. 3428 et 3449] | logements : 13 % → 7 % jusqu'à 400 000 dinars hors taxe, taux normal au-delà ; électricité : 13 % → 7 % jusqu'à 300 kilowattheures par mois |
+
+<!-- TODO (documentaliste) : les passages au taux normal, au 1er janvier 2017, des numéros du tableau B bis non repris (services informatiques, certification électronique, formation, Internet fixe, restauration ordinaire) ne sont pas au registre : aucun article ne les écrit, et ils restent à confirmer sur la note commune d'application (docs/notes/fiscalite-tva-tableaux-produits.md, § 9.5). Les colonnes de 2008 et de 2014 de la matrice restent à rapprocher du Journal officiel numéro par numéro. -->
+
+::::
+
 ### L'état du droit en 2026 {#sec-tva-etat-du-droit}
 
 **Ce qui est établi.** La grille en vigueur est celle du 1^er^ janvier 2018 : 19 %, 13 % et 7 % (@tbl-tva-taux). L'état de chaque dispositif est donné dans sa section, au dernier texte qui l'a retouché : la restitution du crédit, en 2023 (@sec-tva-restitution-chronologie), le régime suspensif (@sec-tva-regime-suspensif), la [retenue à la source](#g-retenue-a-la-source) (@sec-tva-retenue-source), la facture électronique (@sec-tva-declaration-facture).
 
-**Ce qui ne l'est pas.** Pour le champ, les [exonérations](#g-exoneration-tva) et la liste des opérations de chaque taux, ce chapitre établit les changements, texte par texte (@sec-tva-coeur-textes), non la rédaction en vigueur. La liste des opérations exonérées en 2026 — le [tableau A](#g-tableau-a-tva) dans sa rédaction actuelle — n'est pas donnée ici, non plus que la liste complète des opérations taxées à 7 % et à 13 %.
+**Ce qui l'est sous réserve.** La liste des opérations exonérées — le [tableau A](#g-tableau-a-tva) — et celle des opérations taxées à 7 % et à 13 % sont données en annexe, numéro par numéro, dans leur état au 1^er^ janvier 2026 (@sec-tva-tableaux). Cet état est celui de l'édition du code publiée par le ministère des Finances, à jour au 1^er^ janvier 2025, complétée par la loi de finances pour 2026 ; il a l'autorité de cette édition, non celle du *Journal officiel* pour chaque numéro. Une vue par grandes catégories en est tirée (@sec-tva-regimes-categories).
 
-<!-- TODO (documentaliste) : tableau A en vigueur, poste par poste, et listes des taux de 7 % et de 13 % en 2026 ; contenu des numéros du tableau A abrogés par la loi de finances pour 2017, art. 16. Voir docs/notes/fiscalite-tva-plan-architecte.md, § 9, question 4. -->
+**Ce qui ne l'est pas.** Pour le champ et les [exonérations](#g-exoneration-tva) qui ne tiennent pas aux tableaux, ce chapitre établit les changements, texte par texte (@sec-tva-coeur-textes), non la rédaction en vigueur.
 
-Pour quelques opérations, la suite des régimes est connue de bout en bout (@tbl-tva-trajectoires).
+<!-- TODO (documentaliste) : rapprocher du Journal officiel, numéro par numéro, l'état au 1er janvier 2026 des tableaux A et B donné en annexe ; les articles des lois de finances pour 2019, 2020, 2021 et 2023 n'y sont connus que par les notes de l'édition du code. Voir docs/notes/fiscalite-tva-tableaux-produits.md, § 6. -->
+
+Pour quelques opérations, la suite des régimes est connue de bout en bout, états intermédiaires et reports compris (@tbl-tva-trajectoires). La vue par catégories en donne l'état à cinq dates pour vingt-cinq catégories (@sec-tva-regimes-categories), et le récit en est fait plus loin (@sec-tva-trajectoires).
 
 <!-- TODO (propriétaire) : deux formes concurrentes des trajectoires, à départager -->
 
@@ -465,7 +556,7 @@ Ce registre ne porte que les textes dont le contenu est établi dans ce chapitre
 
 <!-- TODO (propriétaire) : deux formes concurrentes des trajectoires, à départager -->
 
-Une trajectoire est la suite des régimes — exonération, puis tel ou tel taux — qu'une même opération a connus depuis 1988. Cette section lit donc les réformes en travers : elle suit une opération d'un bout à l'autre, là où le récit des réformes suit la grille et le champ. L'électricité et les produits pétroliers n'y figurent pas : ils ont leur propre section (@sec-tva-reductions-annuelles). Aucune trajectoire n'a de rupture propre : chacune est faite d'étapes des grandes réformes et d'ajustements. Le tableau qui les résume est placé dans l'état du droit (@tbl-tva-trajectoires).
+Une trajectoire est la suite des régimes — exonération, puis tel ou tel taux — qu'une même opération a connus depuis 1988. Cette section lit donc les réformes en travers : elle suit une opération d'un bout à l'autre, là où le récit des réformes suit la grille et le champ. L'électricité et les produits pétroliers n'y figurent pas : ils ont leur propre section (@sec-tva-reductions-annuelles). Aucune trajectoire n'a de rupture propre : chacune est faite d'étapes des grandes réformes et d'ajustements. Le tableau qui les résume est placé dans l'état du droit (@tbl-tva-trajectoires). La vue par catégories donne, pour vingt-cinq catégories et à cinq dates, le régime en vigueur, sans les états intermédiaires (@sec-tva-regimes-categories).
 
 **Les professions libérales.** Elles offrent la trajectoire la plus complète : 6 % [à l'origine](#r-tva-trajectoires-professions-1988), 10 % [au 1^er^ avril 1996](#r-tva-trajectoires-professions-1996) — avec maintien transitoire à 6 % de certains contrats enregistrés avant cette date —, 12 % [au 1^er^ janvier 2007](#r-tva-trajectoires-professions-2007), 13 % [au 1^er^ janvier 2018](#r-tva-trajectoires-professions-2018). Leur inscription directe à l'article 7 [en 2017](#r-tva-trajectoires-professions-2017) ne constitue pas un changement de taux : elle remplace le tableau B bis à 12 % par une liste portée dans l'article lui-même, au même taux.
 

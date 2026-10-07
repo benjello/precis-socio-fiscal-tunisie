@@ -60,10 +60,12 @@ repliés au lieu de deux. Reste à trancher ou à faire :
   1989 à 1994, lois de finances pour 1997, 2019, 2021 (art. 26), 2024 (art. 50), quatre lignes
   de la restitution, retouches de l'article 9 connues par le seul code consolidé. Texte présent
   au corpus pour la plupart ; lectures à confirmer à l'image avant versement ;
-- **état du droit du cœur en 2026** : seule la grille est établie ; tableau A en vigueur et
-  listes des taux de 7 % et de 13 % à établir (`TODO (documentaliste)` dans
-  `#sec-tva-etat-du-droit`) ; contenu des art. 46 et 47 de la loi de finances pour 2026 à
-  détailler au registre `tbl-tva-taux-perimetre` ;
+- **état du droit des règles de base en 2026** : la grille est établie ; le tableau A et le
+  tableau B en vigueur sont donnés en annexe (`_tva_tableaux.qmd`), d'après l'édition du code à
+  jour au 1er janvier 2025 et la loi de finances pour 2026 — voir l'entrée « TVA — régimes par
+  catégorie et tableaux annexés » ; contenu des art. 46 et 47 de la loi de finances pour 2026 à
+  détailler au registre `tbl-tva-taux-perimetre` (relevé en annexe, bloc de la loi de finances
+  pour 2026) ;
 - **longue période** : aucune figure nouvelle ; restent la figure du rendement par segments de
   base du PIB avec les réformes marquées, la place dans la fiscalité indirecte, la taxe
   rapportée à la consommation privée, le partage intérieur/importation (plan, § 6.1 à 6.6) ;
@@ -185,6 +187,71 @@ loi de finances pour 2021 (dons, art. 9), au registre de la déduction. Restent 
 d'effet de la mensualisation de 1994 (art. 31 et 32), non écrite tant que l'absence de clause
 propre n'est pas confirmée à l'image ; l'édition française du décret-loi n° 2022-79, absente ;
 le texte qui a modifié l'art. 10 de la loi de finances pour 2017.
+
+**TVA — régimes par catégorie et tableaux annexés (7 octobre 2026, non commité).** D'après
+`docs/notes/fiscalite-tva-tableaux-produits.md` (§ 1 à 3, 8 et 9) et
+`docs/notes/fiscalite-tva-codes-consolides.md`. Fait :
+
+- **série** `precis/_seriescache/tva-regimes-par-categorie.csv` : les 167 lignes du § 9.3 de la
+  note, versées telles quelles (25 catégories, 5 dates repères) ; provenance déclarée dans
+  `figures/tva.py` ;
+- **figure** `@fig-tva-regimes` (matrice catégories × dates, une couleur par régime, cases
+  partagées, hachures pour les taux que la loi n'écrit pas, cercle pour les éditions privées) et
+  **section** `#sec-tva-regimes-categories`, dans le bilan des taux, avec son registre replié
+  (`tbl-tva-regimes-textes`, 20 lignes, ancres `r-tva-cat-…`) ;
+- **annexe du volume** `precis/fr/fiscalite/_tva_tableaux.qmd` (`#sec-tva-tableaux`,
+  `.domicile-unique`) : texte principal sur les quatre tableaux, le sort du tableau C, les
+  entrées et sorties, la nature des sources ; registre des textes (`tbl-tva-tableaux-textes`,
+  ancres `r-tva-tab-…`) ; onze blocs repliés de transcription — tableaux A, B et C de 1988,
+  tableau C à la fin de 2006 et ses retraits, origine des numéros d'après l'édition privée de
+  2014, tableaux A, B et B bis nouveaux (2016, 2017, 2026), article 7 numéro 3, loi de finances
+  pour 2026 ;
+- `#sec-tva-etat-du-droit` renvoie à l'annexe au lieu de dire le tableau A « non donné ».
+
+Reste :
+
+- **annexe à déclarer côté arabe** : `_tva_tableaux.qmd` est dans les `appendices` du
+  `_quarto.yml` français seulement ; à ajouter au `_quarto.yml` arabe une fois la traduction
+  livrée (traduction différée : 24 000 mots, dont 23 000 de transcription) ; les attributs
+  `titre` des blocs sont à traduire ;
+- **termes arabes posés dans `figures/tva.py`**, hors glossaire, à faire valider par le
+  terminologue : « معفى » (exonéré, dans les cases), libellés des douze groupes et des
+  vingt-cinq catégories, « طبعة خاصة للمجلة » (édition privée du code), « الطبعة الرسمية
+  للمجلة », « صنف غير وارد بالجداول », « القاعدة العامة للفصل 7 » ; la colonne « Numéros » des
+  données reste en français dans le livre arabe (« bis », « tiret », « positions des
+  chapitres ») ;
+- **registre complet numéro par numéro, loi par loi, de 1989 à 2015** : non fait (note, § 6.2) ;
+  l'annexe ne donne, pour les anciens tableaux, que l'état de 1988 et l'origine des numéros
+  d'après l'édition privée de 2014 ; les éditions privées de 2008 et de 2014 ne sont pas
+  transcrites numéro par numéro ;
+- **colonnes intermédiaires de la matrice** : pas d'état vers 1995 ni vers 2002 (aucun état
+  daté n'est disponible ; les pages Jurisite mêlent des dates) ; colonnes de 2008 et de 2014 à
+  rapprocher du Journal officiel ;
+- **lois non relues**, citées seulement « d'après l'édition » : n° 2002-103 (voitures de
+  4 chevaux), n° 2006-71, n° 99-70, n° 2009-32, n° 2007-69 ; articles des lois de finances pour
+  2019, 2020, 2021 et 2023 connus par les seules notes de l'édition du code ; textes présents
+  au corpus pour la plupart ;
+- **passages au taux normal de 2017 à confirmer** : numéros du tableau B bis non repris
+  (services informatiques, certification électronique, formation, Internet fixe, restauration
+  ordinaire, véhicules électriques, sevrage tabagique) — note commune d'application à
+  obtenir (note, § 9.5) ; `TODO (documentaliste)` dans la section et dans l'annexe ;
+- **tableau C** : retraits du café, du thé, des bières, des vins, des tabacs, des voitures et
+  des armes non établis (tableaux « L » et « M » de la loi de finances pour 1992, lois de
+  finances pour 1993 et 1994, art. 71 de la loi de finances pour 2005 : fascicules scannés au
+  corpus, OCR à faire ; note, § 8.6) ; la transcription de 1988 compte 240 positions là où la
+  note en annonce « un peu plus de 210 » : l'annexe écrit « plus de deux cents », écart à
+  lever par la relecture des codes tarifaires ;
+- **essence et gaz naturel distribué, eau potable après 1991** : régime non établi (note,
+  § 9.2, précisions 2 à 4) ;
+- **versement des listes en amont** dans `openfisca-tunisia` (note, annexe C : structure
+  proposée) : rien n'est versé ; la série du précis est un CSV fait de la note, non un
+  snapshot de paramètres ;
+- **trajectoires par opération** : la nouvelle section rend redondantes, dans
+  `@tbl-tva-trajectoires` et `#sec-tva-trajectoires`, les lignes de l'hôtellerie, de
+  l'enseignement privé et de l'électricité, et l'essentiel de celles des professions et du
+  logement ; ces deux formes gardent seules les reports (logement, médicaments), l'exonération
+  des médicaments au détail et les télécommunications exonérées de 1995 à 2002. À départager
+  par le propriétaire.
 
 **TVA — taux dans le temps (7 octobre 2026).** Le tableau des générations de taux
 (`@tbl-tva-taux`) n'est plus fait main : `scripts/generate_bareme_tables.py` l'engendre
@@ -1461,7 +1528,7 @@ l'information.
 | `_impot_societes.qmd` | conforme | — |
 | `_impot_fortune.qmd` | conforme ; s'achève sur une case vide (aucune série de rendement) | traduction arabe à déclarer dans le `_quarto.yml` AR |
 | `_droits_consommation.qmd` | historique remonté en tête | la chronologie du périmètre reste un tableau sans récit texte par texte — signalé, non confirmé |
-| `_tva.qmd` | **prototype du chantier « ruptures au premier plan »** (7 octobre 2026, à juger) : en bref, mise en place, grandes réformes, bilan des taux et état du droit, dispositifs, longue période | voir l'entrée du chantier en tête de ce fichier ; `@sec-tva-deduction` garde ses données et ses études à leur place ; les données du crédit sont une figure engendrée (`@fig-tva-credit-restitutions`), dont les séries restent à prolonger après 2014 ; le tableau des générations de taux (`@tbl-tva-taux`) et la figure des taux dans le temps (`@fig-tva-taux`) sont engendrés depuis le 7 octobre 2026 |
+| `_tva.qmd` | **prototype du chantier « ruptures au premier plan »** (7 octobre 2026, à juger) : en bref, mise en place, grandes réformes, bilan des taux et état du droit, dispositifs, longue période | voir l'entrée du chantier en tête de ce fichier ; `@sec-tva-deduction` garde ses données et ses études à leur place ; les données du crédit sont une figure engendrée (`@fig-tva-credit-restitutions`), dont les séries restent à prolonger après 2014 ; le tableau des générations de taux (`@tbl-tva-taux`) et la figure des taux dans le temps (`@fig-tva-taux`) sont engendrés depuis le 7 octobre 2026 ; vue des régimes par catégorie (`@fig-tva-regimes`) et annexe des tableaux annexés au code (`_tva_tableaux.qmd`, non déclarée côté arabe) ajoutées le 7 octobre 2026 |
 | `_impot_revenu.qmd` | conforme, à sa manière | rien sur la forme ; restent deux sections à ÉCRIRE, voir plus bas |
 | `retraites/_secteur_*.qmd` | **rangés par mécanisme, et c'est bien** | ne pas y appliquer le plan type |
 | `_regime_indiciaire.qmd` | fait le travail sous d'autres noms | ne rien reprendre sur la forme |
