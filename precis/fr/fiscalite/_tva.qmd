@@ -248,6 +248,20 @@ figtools.figure_tabs(
 - **1998 et 2018 : des relèvements de niveau.** Le taux normal passe de 17 % à 18 % [en 1998](#r-tva-taux-1998) ; [en 2018](#r-tva-taux-2018), les trois taux gagnent un point.
 - **Des taux stables, un périmètre qui ne l'est pas.** Depuis 2018, les trois taux restent inchangés, mais des opérations passent encore d'un taux à l'autre ou de l'exonération à l'imposition, [en 2025](#r-tva-perimetre-2025) comme [en 2026](#r-tva-perimetre-2026).
 
+Lue à dates fixes, la même grille donne l'état des quatre taux à six dates repères, du 1^er^ juillet 1988 au 1^er^ janvier 2026 ; un tiret signale un taux qui n'existe pas encore ou qui n'existe plus (@tbl-tva-taux-reperes).
+
+```{python}
+#| echo: false
+#| output: asis
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "tva_taux_dates_reperes.md",
+                               "Taux de la taxe sur la valeur ajoutée en vigueur à six dates repères, 1988-2026",
+                               "tbl-tva-taux-reperes"))
+```
+
 :::: {.chronologie-repliable titre="Les six grilles, texte par texte, de 1988 à 2026"}
 
 Chaque ligne du tableau répond à un texte, et donne la grille en vigueur à compter de sa date d'effet, jusqu'à la veille de la ligne suivante (@tbl-tva-taux).
