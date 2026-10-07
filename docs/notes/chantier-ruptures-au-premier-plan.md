@@ -86,3 +86,13 @@ hiérarchie se dit alors dans le texte.
   non) sera fixée dans la doctrine de l'architecte, dans un second temps. D'ici là, l'architecte
   ne leur cherche pas de place nouvelle : il laisse là où ils sont ceux que le chapitre porte
   déjà, et le récit économique se construit d'abord sur le budgétaire.
+- **7 octobre 2026 — l'épine chronologique.** Le premier plan de l'architecte pour la TVA rangeait
+  tout par dispositif et réduisait la chronologie à un tableau : refusé. Il faut garder la
+  dimension chronologique, bien expliquer la mise en place et les grandes réformes, et s'appuyer
+  dessus pour décrire les dispositifs. Doctrine retenue (« Parfait ») : une épine chronologique
+  — mise en place, puis grandes réformes dans l'ordre — qui suit le cœur du dispositif et annonce
+  chaque nouveau dispositif à sa naissance ; puis une fiche par disposition secondaire, qui garde
+  sa section ; un fait raconté une seule fois en entier. Nouveau plan type : en bref ; mise en
+  place ; grandes réformes ; état du droit ; dispositifs ; longue période. Versé dans
+  `docs/agents/architecte.md`, avec le retour du premier essai (registre de destination, deux
+  niveaux de ruptures, questions au documentaliste, degrés de lecture).
