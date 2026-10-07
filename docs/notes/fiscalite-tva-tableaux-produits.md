@@ -50,6 +50,26 @@
 
 ## 1. Résultat principal
 
+> **Mise à jour du 7 octobre 2026 (seconde passe)**, après la récupération d'éditions consolidées
+> (`fiscalite-tva-codes-consolides.md`). Trois choses changent ; le détail est aux § 8 et 9.
+> (a) **L'édition officielle de 2016 peut être tenue pour l'état du tableau C à la veille de sa
+> suppression** :
+> 49 positions retirées par les lois de finances pour 1989, 1991, 1992, 1995 et 1998, lues au JORT,
+> n'y figurent plus. Fin 2006, le taux de 29 % ne frappait plus ni le café et le thé en l'état (leurs
+> extraits et essences y restent), ni le cacao, les eaux minérales, les bières, les vins et les tabacs, ni les voitures, les réfrigérateurs, les
+> machines à laver le linge, les sanitaires et les pneumatiques ; il restait surtout sur
+> l'habillement, la parfumerie, l'horlogerie, l'électronique grand public, les climatiseurs, les
+> épices et les spiritueux (§ 8.4). Le point 2 ci-dessous est corrigé en ce sens.
+> (b) **La vue par catégories est refaite sur des états lus** — 1988, janvier 2008, janvier 2014,
+> 1er janvier 2017, 1er janvier 2026 —, en 25 lignes et 167 lignes de données (§ 9) ; elle remplace
+> celle du § 4, dont les colonnes 1995 et 2007 étaient dérivées.
+> (c) **Cinq lacunes du § 6.1 sont levées ou réduites** : la numérotation de l'ancien tableau A et la
+> lecture de l'article 31 § 1 de la LF 2016 ; l'eau potable (sortie de l'exonération par la LF 1991,
+> art. 33, lu) ; les textes d'entrée de la plupart des numéros (notes du recueil de 2014, § 9.4) ; la
+> date d'effet de la loi n° 2015-30 (la loi n'en fixe aucune) ; le contenu des articles 23 à 25 de la
+> LF 1989, lus à l'image.
+
+
 1. **Le tableau C (29 %) est beaucoup plus vaste que ne le disait N1.** Il court de la p. 836 à la
    p. 846 du JORT : un peu plus de 210 lignes tarifaires, dont les denrées (seule partie résumée jusqu'ici)
    ne sont que le premier tiers. S'y trouvent aussi les eaux minérales, limonades, bières, vins et
@@ -62,8 +82,10 @@
 2. **Le taux majoré disparaît au 1er janvier 2007** (loi n° 2006-80, art. 13) : ce qui restait au
    tableau C passe au taux normal de 18 % ; cinq lignes seulement sont en outre soumises au droit de
    consommation, à 10 % (parfums, produits de beauté, climatiseurs, unités « split », lave-vaisselle).
-   Le contenu du tableau C au 31 décembre 2006 n'est pas établi : il avait été allégé par les lois
-   de finances pour 1989, 1991 à 1995 et 1998, dont les listes ne sont pas lues.
+   Le contenu du tableau C au 31 décembre 2006 peut être tenu pour celui de l'édition officielle de
+   2016, qui
+   porte les retraits des lois de finances pour 1989, 1991, 1992, 1995 et 1998 (§ 8) : environ 210
+   lignes, dans la nomenclature du système harmonisé, dont 70 de textiles et d'habillement.
 3. **Le tableau A de 1988 compte 46 numéros ; le « tableau A nouveau » de 2016 en compte 54 en
    produits et 20 en services** — plus long, mais pour un champ plus étroit : la refonte de
    2016-2017 fait sortir de l'exonération l'enseignement, les garderies, le sucre, les peaux
@@ -1004,6 +1026,13 @@ n'ont été lus que dans la couche texte.
 
 ## 3. Entrées et sorties
 
+> **Mise à jour (seconde passe).** Les mentions « texte non identifié ici » et « [OCR] » de cette
+> section datent de la première passe. Le § 9.4 les remplace pour la plupart : il donne, d'après le
+> recueil de 2014, l'article de chaque entrée (son, écailles de glace, établissements pour personnes
+> handicapées, réparation navale, commissions d'assurance, amarrage de croisière, musées…), et les
+> articles lus depuis à l'image (LF 1989, art. 23 à 25 ; LF 1991, art. 33 et 35 ; LF 1992, art. 35 à
+> 43 : eau, bicyclettes, huiles acides, manèges, maïs, plongée, raffinage des huiles, films).
+
 Les rapprochements sont faits **par désignation**. Une « sortie » est constatée entre deux
 photographies ; sa date n'est donnée que lorsqu'un texte lu la fixe. « Texte non identifié ici »
 signifie que le texte existe certainement dans l'intervalle et n'a pas été cherché : c'est la
@@ -1473,26 +1502,28 @@ un exemple de régime de taux logé dans une loi particulière, que les tableaux
 
 ### 6.1 Lacunes de la présente note
 
-1. **État du tableau C entre 1989 et 2006.** Aucune des listes de retrait n'est lue : lessives
-   (LF 1989), LF 1991 à 1994, tableau « M bis » (LF 1995), tableau « L » (LF 1998). La colonne 1995
-   de la vue par catégories ne peut donc pas dire ce qui restait à 29 %, et l'on ignore la
-   composition du tableau au jour de sa suppression.
-2. **État du tableau A entre 1989 et 2015.** La numérotation a glissé (avertissement 3) ; les
-   numéros abrogés par l'article 31 § 1 de la LF 2016 ne sont pas rapprochés de leur contenu, faute
-   d'un tableau consolidé à la fin de 2015. Les sorties de 2016 données au § 3.1 sont établies par
-   l'article 30 (qui nomme ce qu'il reclasse) et par la comparaison des photographies, non par
-   l'article 31 § 1.
-3. **Huit entrées au tableau A et une au tableau B sans texte identifié** (§ 3.1 et 3.4) : son,
+1. **État du tableau C entre 1989 et 2006.** *Réduite (§ 8).* L'état final est connu d'après
+   l'édition officielle de 2016 ; cinq listes de retrait sont lues à l'image (LF 1989 art. 25,
+   LF 1991 art. 35, LF 1992 art. 37, tableau « M bis » de la LF 1995, tableau « L » de la
+   LF 1998). Restent non lus : les tableaux « L » et « M » de la LF 1992 (le tableau C réécrit), les
+   listes des LF 1993 et 1994, l'article 71 de la LF 2005 ; et les états intermédiaires année par
+   année ne sont pas reconstitués.
+2. **État du tableau A entre 1989 et 2015.** *Levée, d'après le recueil de 2014 (§ 9.1).* La
+   numérotation de l'ancien tableau A après 1992 est connue (n° 1 à 50), et les numéros abrogés par
+   l'article 31 § 1 de la LF 2016 s'y lisent sans reste. Réserve : trois lois séparent janvier 2014
+   de la refonte (LFC 2014, LF 2015, LFC 2015), et le n° 6 (associations) disparaît entre les deux
+   sans figurer parmi les numéros abrogés par l'article 31 § 1 — texte non identifié.
+3. *(Levée pour l'essentiel : le recueil de 2014 nomme l'article de chaque entrée — § 9.4 —, à vérifier.)* **Huit entrées au tableau A et une au tableau B sans texte identifié** (§ 3.1 et 3.4) : son,
    écailles de glace, établissements pour handicapés, réparation des bateaux, production de films,
    amarrage de croisière, commissions d'assurance, plusieurs tirets des intérêts, musées, exclusions
    du n° B II-12.
 4. **Sortie des associations** (n° 6 de 1988, réécrit deux fois en 2012) : texte non identifié.
-5. **Eau potable** : régime non établi de 1991 à aujourd'hui ; la case « TN [déd.] » de 2018 et 2026
+5. **Eau potable** *(réduite : la sortie de l'exonération est établie — LF 1991, art. 33, JORT lu, § 9.4)* : régime non établi de 1991 à aujourd'hui ; la case « TN [déd.] » de 2018 et 2026
    ne vaut que si aucun texte hors code ne s'y applique, ce qui n'a pas été recherché.
 6. **Les sept « non repris » de 2017** (§ 2.5) : passage à 18 % par déduction, non confirmé par la
    doctrine. De même le régime des produits de la pêche tunisienne et des récoltes frontalières
    après leur retrait du tableau A.
-7. **Date d'effet de la LFC 2015, art. 20** (tourisme, 12 % → 6 %) : non établie. La recherche de
+7. **Date d'effet de la LFC 2015, art. 20** (tourisme, 12 % → 6 %) *(précisée : la loi, lue jusqu'à sa formule finale, ne fixe aucune date — § 9.4)* : non établie. La recherche de
    « à compter », « vigueur » et « applicables à partir » dans la couche texte de la loi ne rend
    aucune clause générale ; la fin de la loi n'a pas été lue à l'image.
 7 bis. **Suspensions de la LF 2016, art. 75** (annexe 4 : produits à taxe suspendue, où la LF 2017,
@@ -1506,8 +1537,10 @@ un exemple de régime de taux logé dans une loi particulière, que les tableaux
 10. **Codes tarifaires du tableau C de 1988** : transcrits à l'image en une passe, sans relecture
     croisée ; un peu plus de 210 lignes.
 11. **Retouches de 2008 à 2015 relevées « par recherche »** : trouvées par recherche plein texte
-    dans les PDF locaux des lois de finances, non relues en contexte ; les numéros d'article de la
-    LF 2012 (art. 37 § 7) et de la LF 2008 (art. 17 et 21) sont à confirmer. Les lois de finances
+    dans les PDF locaux des lois de finances, non relues en contexte ; les articles 17 et 21 de la
+    LF 2008 ont depuis été lus à l'image (p. 4359-4360), et l'article 37 de la LF 2012 est donné par
+    les deux recueils privés (le « § 7 » reste à lire). Les notes du recueil de 2014 (§ 9.4) couvrent
+    désormais 2003 à 2013 : la recherche plein texte n'a plus à être refaite. Les lois de finances
     pour 2003 à 2007, 2009 et 2011 ne livrent aucune mention des tableaux à cette recherche : ce
     silence ne prouve rien (couche texte à police décalée pour 2003 à 2005 ; N2 y signale la LF 2003,
     art. 52, la LF 2004, art. 36, la LF 2005, art. 71 et 72, la LF 2006, art. 41).
@@ -1544,11 +1577,579 @@ modifications, abrogation, avec le texte, l'article, la page et la date d'effet.
    vues.
 4. Contrôler chaque date d'effet sur la clause finale de la loi (règle de N2, § 8 et 9).
 
-**Effort estimé.** Environ 150 articles de loi et 8 à 10 listes annexées, dont un tiers à l'image.
+**Révision de l'estimation (seconde passe).** Avec les deux recueils et l'édition de 2016, le
+repérage est acquis pour A, B et B bis jusqu'en 2013 (§ 9.4 : 60 lignes de notes relevées, dont 28 déjà
+vérifiées au JORT en tout ou partie) et l'état final du tableau C est connu (§ 8). Il reste à **vérifier** une
+quarantaine de renvois nommés par le recueil et non encore vérifiés, à lire les trois lois de 2014-2015 et, pour le
+tableau C, trois fascicules (§ 8.6). Ordre de grandeur, non mesuré : **15 à 20 heures** pour A, B et
+B bis, **6 à 9 heures** pour le tableau C, au lieu de 25 à 35 et 8 à 12.
+
+**Effort estimé (première passe).** Environ 150 articles de loi et 8 à 10 listes annexées, dont un tiers à l'image.
 À raison de la cadence constatée ici (une loi lue et dépouillée par heure pour les fascicules à
 couche texte, deux à trois heures pour un fascicule scanné avec liste tarifaire), **25 à 35 heures
 de dépouillement** pour les tableaux A, B et B bis, **plus 8 à 12 heures** pour l'histoire du
 tableau C de 1989 à 2006, hors décrets de l'article 8. Estimation de travail, non mesurée.
+
+---
+
+## 8. L'épreuve du tableau C
+
+*Ajout du 7 octobre 2026 (seconde passe), après la récupération d'éditions consolidées
+(`fiscalite-tva-codes-consolides.md`). La note n'a pas de § 7 : les numéros 8 et 9 sont ceux de la
+commande.*
+
+### 8.1 La question, et le verdict
+
+**Question.** Le tableau C qu'imprime l'édition officielle de 2016 (Imprimerie officielle, « édition
+revue et corrigée le 29 février 2016 », p. 53-74, sous le titre « Les dispositions du code de la TVA
+abrogées en vertu de l'article 13 de la loi n° 2006-80 ») reproduit-il le tableau de 1988, ou
+porte-t-il les retraits des années 1990 ?
+
+**Verdict : il porte les retraits.** Ce n'est pas le tableau de 1988. C'est le tableau **réécrit dans
+la nomenclature du système harmonisé** par l'article 43 de la loi de finances pour 1992 — la note de
+tête de l'édition le dit, et l'article a été lu au JORT —, **diminué des retraits postérieurs** et
+augmenté de l'ajout de 2004 (unités « split »). Sur **49 positions tarifaires** retirées ou réduites par cinq
+lois de finances lues à l'image, **aucune ne figure** dans le tableau de l'édition 2016 ; deux
+positions réduites y figurent dans leur rédaction réduite. Les pages Jurisite de 2002 à 2006, qui
+donnent les libellés sans les numéros, concordent sur les mots-clés testés.
+
+**Portée du verdict.** L'édition de 2016 peut être tenue pour **l'état du tableau C à la veille de
+sa suppression** (31 décembre 2006), avec trois réserves : (a) c'est une édition consolidée, non le
+*Journal officiel* ; (b) les listes de retrait des lois de finances pour 1993 et 1994 (tableau « M »)
+n'ont pas été ouvertes ; (c) l'épreuve porte sur des **absences** : elle montre que les retraits testés sont portés,
+non que le tableau est exact ligne à ligne.
+
+### 8.2 Les listes ouvertes au JORT
+
+| Loi, article | JORT, page | Lecture | Positions retirées du tableau C | Dans l'édition 2016 |
+|---|---|---|---|---|
+| LF 1989 (loi n° 88-145) [`loi-88-145-lf-1989`], art. 25 | n° 87 des 30-31 décembre 1988, p. 1794 | image | EX 34-02 préparations pour lessives | absente (aucune position 34-02 ; nomenclature de 1988) |
+| LF 1991 (loi n° 90-111) [`lf-1991`], art. 35 | n° 86 des 28-31 décembre 1990, p. 2052 | image | Ex 16-01 saucisses, saucissons et produits similaires de viande, d'abats « à l'exclusion des préparations de sang ou de foie » ; Ex 39-26 articles scolaires ; Ex 40-16 gommes à effacer ; Ex 76-15 articles de ménage et d'économie domestique en aluminium ; Ex 96-08 stylos, crayons, marqueurs, porte-mines | Ex 39-26, Ex 76-15, Ex 96-08 : **absentes**. Ex 16-01 : présente, réduite aux « saucisses, saucissons et similaires de sang ou de foie ». Ex 40-16 : présente, « à l'exclusion […] des gommes à effacer ». Les deux réductions sont donc portées |
+| LF 1992 (loi n° 91-98) [`lf-1992`], art. 37 | n° 90 du 31 décembre 1991, p. 2085-2086 | image (l'article commence au bas de la p. 2085, la liste est p. 2086) | Ex 04-03 yaghourt préparé avec du cacao ; Ex 19-05 pâtisserie et biscuiterie contenant du cacao ; Ex 42-02 malles, valises, étuis, sacs ; Ex 42-03 vêtements en cuir ; 42-05 autres ouvrages en cuir ; Ex 44-03 bois bruts fins ; Ex 44-07 bois fins sciés ; Ex 44-18 panneaux pour parquets, panneaux cellulaires décoratifs ; 95-08 manèges et attractions foraines | **toutes absentes** (9 sur 9) |
+| LF 1995 (loi n° 94-127) [`lf-1995`], art. 86 et tableau « M bis » — « Liste des produits dont le taux de la taxe sur la valeur ajoutée a été réduit de 29 % à 17 % » | n° 103 des 30-31 décembre 1994, p. 2150-2151 (pages 110-111 du PDF) | image | 39-22 baignoires, lavabos, bidets en matières plastiques ; EX 39-24 articles d'hygiène ou de toilette en matière plastique ; EX 39-26 autres ouvrages en matières plastiques ; EX 40-11 pneumatiques neufs de plus de 2 kg ; EX 40-13 chambres à air de plus de 0,50 kg ; EX 49-11 notices, prospectus, catalogues, imprimés publicitaires ; 69-10 éviers, lavabos, baignoires, appareils sanitaires en céramique ; 69-11 vaisselle et articles de ménage en porcelaine ; EX 73-21 chaudières à foyer ; 73-22 radiateurs de chauffage central, générateurs d'air chaud ; EX 73-24 articles d'hygiène ou de toilette en fonte, fer ou acier ; EX 74-17 appareils non électriques de cuisson ou de chauffage en cuivre ; EX 74-18 articles de ménage en cuivre ; EX 76-15 articles d'hygiène ou de toilette en aluminium ; EX 84-03 chaudières pour le chauffage central ; EX 84-04 appareils auxiliaires pour chaudières ; 84-18 réfrigérateurs, congélateurs et autres matériels pour la production du froid, pompes à chaleur ; EX 85-16 appareils électriques pour le chauffage des locaux, appareils électrothermiques pour la coiffure ; EX 94-05 appareils d'éclairage, lampes-réclames, enseignes lumineuses | **toutes absentes** (19 sur 19). La seule position 84-18 de l'édition est « Ex 84-18 Unités de réfrigération des machines et appareils pour le conditionnement de l'air du type « Split System » », notée « Ajouté par art. 71 de la L.F. n° 2004-90 » : autre bien, autre texte |
+| LF 1998 (loi n° 97-88) [`lf-1998`], art. 27 et tableau « L » — « Liste des produits soumis à la taxe sur la valeur ajoutée au taux de 18 % au lieu de 29 % » | n° 104 des 30-31 décembre 1997, p. 2557 (page 125 du PDF) | image | EX 17-04 sucreries sans cacao (y compris le chocolat blanc) ; 18-01 à 18-06 cacao en fèves, coques, pâte, beurre, poudre, chocolat ; EX 19-02 pâtes alimentaires farcies ou autrement préparées ; 21-05 glaces de consommation ; EX 22-01 eaux minérales et eaux gazéifiées ; EX 58-01 velours et peluches tissés ; 70-09 miroirs en verre ; EX 84-14 appareils électromécaniques à usage domestique ; EX 84-50 machines à laver le linge de 6 kg au plus ; 85-09 appareils électromécaniques à moteur électrique incorporé, à usage domestique | **toutes absentes** (15 sur 15) |
+
+Décompte : 1 + 3 + 9 + 19 + 15 = 47 positions absentes, plus 2 positions réduites et portées comme
+telles, soit 49 positions éprouvées. La position EX 76-15 est comptée deux fois (1991 et 1995, deux
+libellés). **Aucun contre-exemple.**
+
+**Trouvaille annexe.** L'article 43 de la loi de finances pour 1992 (p. 2086, image) dispose que « la
+liste des produits repris aux tableaux « A » et « C » […] est modifiée selon les numéros du tarif
+douanier élaboré sur la base du système harmonisé […] conformément aux tableaux « L » et « M » annexés
+à la deuxième partie de la présente loi ». C'est donc cette loi qui **renumérote** les positions
+tarifaires des deux tableaux — et l'on comprend que les codes de 1988 (87-11, 90-19) ne soient pas
+ceux de 2016 (87-13, 90-21). Les tableaux « L » et « M » de cette loi n'ont pas été lus.
+
+### 8.3 Contrôle sur les pages Jurisite (libellés sans numéros)
+
+Captures de 2002, 2004, 2005 et 2006 des pages `tva1000C1` à `C5` (archives du web, horodatages au
+`MANIFESTE.csv`). Recherche de mots dans le texte : « chocolat », « eaux minérales », « pneumatiques »,
+« lessive », « bière », « tabac », « café », « laver le linge », « réfrigérateurs », « baignoires », « éviers », « malles », « valises », « manèges » : **zéro occurrence** dans toutes les
+captures ; « cacao » : une occurrence, dans le libellé des poudres pour crèmes et desserts « contenant
+ou non du cacao » (position Ex 19-01 de l'édition 2016) ; « conditionnement de l'air » et « laver la
+vaisselle » : présents ; la note « art. 71 de la loi 2004-90 » apparaît à partir de la capture de 2006.
+Jurisite et l'édition 2016 donnent donc le même état, par deux voies indépendantes de consolidation.
+Jurisite ne peut pas servir seul : pas de numéros de tarif, pas de date d'édition.
+
+### 8.4 L'état du tableau C à la veille de sa suppression (d'après l'édition de 2016)
+
+Environ 210 lignes à numéro de tarif (212 comptées dans la couche texte, p. 53-74). Familles **encore
+à 29 % au 31 décembre 2006**, par chapitres du système harmonisé :
+
+- **Denrées** (chap. 02 à 22, 45 lignes) : foies de volailles, viandes et poissons séchés ou fumés ;
+  fleurs coupées et feuillages ; champignons et truffes ; fruits à coques, bananes, ananas, avocats,
+  mangues, raisins secs, pommes et poires ; poivre, vanille, cannelle, girofles, muscade, gingembre,
+  safran et autres épices ; malt ; gommes et résines ; charcuterie de sang ou de foie, conserves de
+  viande, extraits de viande, conserves de poissons (hors thon, sardines, anchois), crustacés et
+  mollusques préparés ; poudres pour crèmes et desserts, céréales soufflées ; certains légumes et
+  fruits préparés, jus d'ananas ; extraits de café et de thé, sauces et condiments, préparations pour
+  soupes ; **eaux-de-vie, liqueurs et autres boissons spiritueuses** (Ex 22-08).
+- **Parfumerie et toilette** (chap. 33-34) : extraits de vanille, parfums et eaux de toilette,
+  produits de beauté et de maquillage, préparations capillaires hors shampooings, désodorisants et
+  dépilatoires, savons de toilette parfumés.
+- **Poudres et artifices** (chap. 36) ; revêtements muraux en plastique ; ouvrages en caoutchouc.
+- **Fourrures** (chap. 43) ; bois marquetés, coffrets ; éventails ; livres reliés en cuir.
+- **Textiles et habillement** (chap. 50 à 67, la masse du tableau : 70 lignes) : tissus de
+  soie, tapis kilim et autres, velours, tulles, dentelles, broderies, linoléums, étoffes de
+  bonneterie ; vêtements de bonneterie et confectionnés des chapitres 61 et 62 (positions « Ex » :
+  matières et provenances limitées, non relues ici) ; linge de maison, rideaux ; chaussures ;
+  chapeaux ; parapluies ; plumes, fleurs artificielles, perruques.
+- **Céramique, verre, bijouterie** : statuettes, objets en verre pour la table, perles de verre,
+  cannetilles d'argent, bijouterie de fantaisie ; boîtes à poudre et étuis à cigarettes ; statuettes
+  en métaux communs.
+- **Machines et appareils** (chap. 84-85) : moteurs hors-bord, pompes à carburant, **climatiseurs**
+  (Ex 84-15), unités « split » (Ex 84-18, ajout de 2004), **lave-vaisselle** (Ex 84-22), tondeuses à
+  gazon ; rasoirs électriques, tourne-disques, magnétophones, magnétoscopes, supports et disques
+  enregistrés, **récepteurs de radio et de télévision** (Ex 85-27, Ex 85-28), lampes à décharge, tubes
+  électroniques, cellules photovoltaïques.
+- **Optique, photographie, horlogerie, musique** (chap. 90 à 92) : lunettes solaires, jumelles,
+  appareils photographiques, caméras, projecteurs ; montres, réveils, horloges et fournitures ;
+  pianos et instruments non exonérés, boîtes à musique.
+- **Divers** (chap. 94 à 97) : constructions préfabriquées, jeux de casino, articles de fête,
+  matériel de gymnastique ; ivoire travaillé, briquets, pipes, peignes, mannequins ; tableaux,
+  gravures, sculptures, timbres de collection, antiquités.
+
+**Ce qui n'y est plus**, alors que le tableau de 1988 le portait (§ 2.2) : beurre, café, thé, cacao
+et chocolat, sucreries, eaux minérales, limonades, bières, vins, tabacs ; lessives, cirages ;
+articles en cuir et bagages ; bois fins ; sanitaires et vaisselle de porcelaine ; articles de ménage
+en métal ; chauffage et chaudières ; réfrigérateurs, machines à laver le linge, petit
+électroménager ; pneumatiques ; **voitures particulières et motocycles** ; bateaux de plaisance ;
+armes et munitions ; stylos ; manèges. Pour ceux de ces biens que les cinq listes lues ne couvrent
+pas (café, thé, bières, vins, tabacs, voitures, armes), **le texte du retrait n'est pas identifié
+ici** : l'article 43 de la loi de finances pour 1992 et ses tableaux « L » et « M », non lus, sont les
+premiers candidats, avec les lois de finances pour 1993 et 1994.
+
+### 8.5 Ce que la loi n° 2006-80 fait de ces biens
+
+Article 13 : suppression du n° 2 du deuxième paragraphe de l'article 7 — le taux de 29 % disparaît au
+1er janvier 2007, et les biens de la liste ci-dessus relèvent du **taux normal de 18 %**. Article 14 :
+cinq lignes sont en outre soumises au droit de consommation, au taux de 10 % — **33-03** parfums et
+eaux de toilette, **33-04** produits de beauté ou de maquillage, **84-15** climatiseurs, **Ex 84-18**
+unités « split », **Ex 84-22** lave-vaisselle. Ces cinq positions sont **toutes les cinq présentes**
+dans le tableau C de l'édition de 2016 : le transfert porte bien sur des biens encore à 29 % la
+veille, ce qui est un indice de plus de l'actualité de cette édition [`loi-2006-80-reduction-taux`,
+art. 13 et 14, p. 4302 ; `dgi-nc-24-2007`]. Tout le reste — textiles, horlogerie, électronique grand
+public, épices, spiritueux — passe à 18 % sans droit de consommation nouveau.
+
+### 8.6 Ce qu'il resterait à lire pour passer de « tenu pour » à « établi »
+
+1. Les tableaux « L » et « M » de la loi de finances pour 1992 (JORT n° 90 de 1991, deuxième partie) :
+   le tableau C réécrit, point de départ de l'édition de 2016.
+2. Les articles 83, 84, 94 et 109 de la loi de finances pour 1993 et 50-51 de la loi de finances pour
+   1994, avec le tableau « M » de cette dernière.
+3. L'article 71 de la loi de finances pour 2005 (loi n° 2004-90) : l'ajout des unités « split ».
+4. Un rapprochement ligne à ligne de l'édition de 2016 avec (1) rejoué de (2) et des listes déjà lues.
+
+Trois fascicules scannés, deux à trois heures chacun : l'histoire du tableau C tombe de « 8 à 12
+heures » (§ 6.2) à **six à neuf heures**, et elle n'est plus une reconstitution mais un contrôle.
+
+---
+
+## 9. La vue par catégories, consolidée
+
+*Remplace la vue du § 4, dont les colonnes 1995 et 2007 étaient dérivées. Le § 4 est laissé en place
+pour mémoire ; c'est la présente section qui est à verser.*
+
+### 9.1 Dates repères, sources, lecture
+
+| Date repère | Source de l'état | Pages | Nature | Grille (normal / intermédiaire / réduit / majoré) |
+|---|---|---|---|---|
+| **1er juillet 1988** | loi n° 88-61, tableaux A, B, C [`loi-88-61-tva`] | 833-846 | JORT lu (image) | 17 % / — / 6 % / 29 % |
+| **Janvier 2008** | « Livre 3. Code de la TVA », recueil privé servi par bm.com.tn, PDF créé le 10 janvier 2008, dernière loi citée : n° 2007-70 [`recueil-tva-bm-2008`] | A : 21-30 ; B : 31-32 ; B bis : 33-34 ; loi n° 2002-103 : 38 | **recueil privé** — « d'après l'édition de 2008 » | 18 % / 12 % / 6 % / — |
+| **Janvier 2014** | Recueil des codes fiscaux, SEFAC, PDF créé le 24 janvier 2014, dernière loi citée : n° 2013-54 [`recueil-codes-sefac-2014`] | A : 160-172 ; B : 174-175 ; B bis : 177-178 | **recueil privé** — « d'après l'édition de 2014 » | 18 % / 12 % / 6 % / — |
+| **1er janvier 2017** | LF 2016, annexes 1 et 1 bis, modifiées par la LF 2017 [`lf-2016`, `lf-2017`] | 3292-3305 ; 3832-3836 | JORT lu (texte) ; non comparé ligne à ligne aux éditions officielles de 2016 et 2017 | 18 % / 12 % / 6 % / — |
+| **1er janvier 2026** | code de la DGELF à jour au 1er janvier 2025 [`dgelf-code-tva-2025`], LF 2026 [`lf-2026`] | A : 49-60 ; B : 62-69 ; art. 7 : 21-22 | édition officielle (arabe) ; lois de 2022, 2024, 2025, 2026 lues | 19 % / 13 % / 7 % / — |
+
+**Pas de colonne 1995** : aucun état lu. **Pas de colonne 2002** non plus, bien que les pages Jurisite
+existent : (a) elles ne portent aucune date d'édition, seulement l'horodatage de la capture ; (b) leur
+mise à jour est inégale d'une page à l'autre — en 2002, la page A3 ne cite aucune loi postérieure à
+1998, la page A2 s'arrête à la loi n° 2000-98, les pages A4 et A5 vont jusqu'à la loi n° 2001-123 ;
+(c) la première capture du tableau B bis est de février 2003, après la loi de finances pour 2003 ;
+(d) c'est un recueil privé sans appareil de notes par article. Un « état de 2002 » assemblé de ces
+pages mêlerait des dates. Elles servent ici de contrôle (§ 8.3), pas de colonne.
+
+**Numérotation.** Les colonnes 2008 et 2014 emploient la numérotation de l'ancien tableau A après sa
+refonte de 1992 (n° 1 à 50), qui n'est ni celle de 1988 ni celle du tableau A nouveau : par exemple
+les bateaux sont au n° 21 en 1988, au n° 12 en 2008 et 2014, au n° I-15 depuis 2016.
+
+**Contrôle des deux recueils l'un par l'autre et contre le JORT.** Les tableaux de 2008 et de 2014
+ont la même charpente ; les différences relevées (les deux recueils n'ont pas été comparés mot à
+mot) répondent à une loi intermédiaire nommée en note
+(n° 6, 7 bis, 9, 23 c, 39 bis, 39 ter, 50 ; paramédicaux et papier des revues au tableau B). Les
+numéros que l'article 31 § 1 de la LF 2016 abroge se lisent sans reste sur le recueil de 2014 : 3
+peaux brutes, 9 enseignement, 10 douches, 20 b et c papiers TAP et dépliants touristiques, 21 messages
+de presse, 22 agences de voyages, 25 a et b chauffe-eau et absorbeurs solaires, 27 aéronefs, 28 g
+location de navires et d'aéronefs, 28 i matériel ferroviaire, 30 bis restauration des étudiants, 47
+matériels de nettoiement, 48 radio-télédiffusion. À deux écarts près, c'est ce que l'article 30 de la
+même loi ajoute au tableau B : les douches (n° 10) sortent du tableau A sans y entrer, et les
+restaurants touristiques classés y entrent sans venir du tableau A. **La lacune 2 du § 6.1 est
+levée**, d'après le recueil de 2014.
+
+### 9.2 Le tableau
+
+Chaque case : le ou les régimes, le taux à la date, le tableau et les numéros. « — » : case vide
+(rien de lu sur un tableau à cette date). *[déduit]* : régime qui ne se lit dans aucun tableau.
+
+| Catégorie | 1er juillet 1988 | Janvier 2008 | Janvier 2014 | 1er janvier 2017 | 1er janvier 2026 |
+|---|---|---|---|---|---|
+| **Produits alimentaires de base (farines, pain, couscous, pâtes, lait, huiles)** | **exonéré** : A 1 ; 2 ; 4 | **exonéré** : A 1 ; 1 bis ; 2 ; 4 | **exonéré** : A 1 ; 1 bis ; 2 ; 4 | **exonéré** : A I-1 à 5 ; I-41 à 44 | **exonéré** : A I-1 à 5 ; I-41 à 44 |
+| **Sucre** | **exonéré** : A 5 | **exonéré** : A 5 | **exonéré** : A 5 | **taux réduit 6 %** : B I-9 bis | **taux réduit 7 %** : B I-9 bis |
+| **Conserves, fruits et légumes transformés, maïs** | **taux réduit 6 %** : B II-7 (conserves de tomate, d'harissa, de sardines) | **taux réduit 6 %** : B II-7 ; II-11 ; III-11 (conserves ; maïs ; transformation des fruits et légumes) | **taux réduit 6 %** : B II-7 ; II-11 ; III-11 (idem) | **taux réduit 6 %** : B I-5 ; I-9 ; II-12 (idem) | **taux réduit 7 %** : B I-5 ; I-9 ; I-21 bis ; II-12 (idem, plus olives conservées provisoirement) |
+| **Denrées et boissons de l'ancien tableau C (café, thé, épices, cacao, charcuterie, boissons, tabacs)** | **taux majoré 29 %** : C positions des chapitres 02 à 24 | **taux normal 18 %** — aucun (art. 7, al. 1er) (tableau C supprimé au 1er janvier 2007 (loi n° 2006-80, art. 13)) *[déduit]* | — | — | — |
+| **Médicaments et produits pharmaceutiques** | **taux réduit 6 %** : B II-4 (produits pharmaceutiques finis et intrants de l'industrie pharmaceutique) | **taux réduit 6 %** : B II-4 (idem, plus sacs de transfusion et réactifs) | **taux réduit 6 %** : B II-4 (idem) | **taux réduit 6 %** : B I-4 ; I-15 à 18 (idem, plus dispositifs médicaux de l'annexe 5) | **taux réduit 7 %** : B I-4 ; I-15 à 18 (produits finis seulement ; intrants en suspension (art. 13 octies)) |
+| **Soins, professions de santé, cliniques, appareils pour handicapés** | **taux réduit 6 %** : B I (santé) ; III-5 (laboratoires, infirmiers, médecins, dentistes, vétérinaires ; cliniques) ; **exonéré** : A 7 (appareils pour handicapés, dialyse) | **taux réduit 6 %** : B I ; III-5 ; **exonéré** : A 7 ; 7 bis ; 9 bis (plus soins aux étrangers non-résidents ; établissements pour handicapés) | **taux réduit 6 %** : B I ; III-5 (avec les paramédicaux) ; **exonéré** : A 7 ; 9 bis (n° 7 bis abrogé) | **taux réduit 6 %** : B II-1 ; II-3 ; **exonéré** : A I-7 ; II-1 | **taux réduit 7 %** : B II-1 ; II-3 (hors médecine et chirurgie esthétiques non thérapeutiques) ; **exonéré** : A I-7 ; I-7 bis ; II-1 |
+| **Enseignement et garderies** | **exonéré** : A 9 | **exonéré** : A 9 | **exonéré** : A 9 | **taux réduit 6 %** : B II-6 (depuis le 1er septembre 2016) | **taux réduit 7 %** : B II-6 |
+| **Livres, presse, culture, cinéma** | **exonéré** : A 18 ; 19 ; 20 ; 23 ; 24 (livres, journaux, papier journal, messages de presse, films, articles culturels) | **exonéré** : A 19 ; 20 ; 21 ; 23 ; 24 ; **taux réduit 6 %** : B III-9 ; III-12 (films en salle ; musées) | **exonéré** : A 19 ; 20 ; 21 ; 23 ; 24 (plus œuvres théâtrales, musicales, plastiques (23 c)) ; **taux réduit 6 %** : B III-9 ; III-12 ; alinéa final du § III (plus papier des revues) | **exonéré** : A I-18 à 21 ; I-35 ; II-5 ; II-6 ; **taux réduit 6 %** : B I-11 ; I-12 bis ; I-22 ; I-24 ; II-9 ; II-10 ; II-11 ; II-13 (papiers TAP, cahiers scolaires, papier des revues, films en salle, radio-télédiffusion, messages de presse, musées) | **exonéré** : A I-18 à 21 ; I-35 ; I-46 ter ; II-5 ; II-6 (plus journaux électroniques ; papier du livre et du cahier scolaire (LF 2026)) ; **taux réduit 7 %** : B I-11 ; I-12 bis ; I-22 ; I-24 ; II-9 ; II-10 ; II-11 ; II-13 |
+| **Logements neufs vendus par les promoteurs (hors logement social)** | — | **exonéré** : A 50 | **exonéré** : A 50 (au profit des personnes physiques ou des promoteurs publics) | **exonéré** : A I-53 | **taux réduit 7 %** : B I-31 (prix jusqu'à 400 000 dinars hors taxe) ; **taux normal 19 %** — aucun (art. 7, al. 1er) (au-delà de 400 000 dinars (LF 2025, art. 64)) *[déduit]* |
+| **Logement social, location d'habitation, intérêts des prêts au logement** | **exonéré** : A 31 ; 40 a (location non meublée ; intérêts des prêts au logement) | **exonéré** : A 30 ; 39 a | **exonéré** : A 30 ; 39 a | **exonéré** : A II-12 ; II-15 a | **exonéré** : A I-53 ; II-12 ; II-15 a (I-53 réduit aux logements sociaux du FOPROLOS) |
+| **Électricité (et gaz de réseau en 1988)** | **taux réduit 6 %** : B II-2 (« de l'électricité et du gaz ») | **taux intermédiaire 12 %** — hors tableau (décret annuel, art. 8) (électricité basse tension domestique et irrigation) | **taux intermédiaire 12 %** — hors tableau (décret annuel, art. 8) (idem) | **taux intermédiaire 12 %** : art. 7-3 2e tiret (domestique basse tension et irrigation) | **taux réduit 7 %** : B I-29 ; I-30 (irrigation ; domestique jusqu'à 300 kWh par mois) ; **taux intermédiaire 13 %** : art. 7-3 2e tiret (domestique au-delà de 300 kWh par mois) |
+| **Produits pétroliers et gaz de pétrole** | **taux réduit 6 %** : B III-4 (essence, pétrole lampant, gaz-oil, fuel-oil vendus par les distributeurs) | **taux intermédiaire 12 %** — hors tableau (décret, art. 8) (liste du décret) | **taux intermédiaire 12 %** — hors tableau (décret annuel, art. 8) (idem) | **taux intermédiaire 12 %** : art. 7-3 1er tiret (pétrole lampant, gaz-oil, fuel-oils, gaz de pétrole (EX 27-10, EX 27-11) ; l'essence n'y figure pas) | **taux intermédiaire 13 %** : art. 7-3 1er tiret (idem) |
+| **Solaire, énergies renouvelables, maîtrise de l'énergie** | **exonéré** : A 26 ; 41 a | **exonéré** : A 25 ; 40 a | **exonéré** : A 25 ; 40 a | **taux réduit 6 %** : B I-18 bis ; I-19 ; I-27 ; I-28 | **taux réduit 7 %** : B I-18 bis ; I-18 quater ; I-19 ; I-27 ; I-28 (plus panneaux solaires) |
+| **Eau** | **exonéré** : A 14 ; 10 (vente d'eau ; douches) | **exonéré** : A 15 ; 11 i ; 10 (eau destinée à l'agriculture ; forage d'eau ; douches) | **exonéré** : A 15 ; 11 i ; 10 (idem) | **exonéré** : A I-46 ; II-2 (eau destinée à l'agriculture ; forage d'eau) | **exonéré** : A I-46 ; II-2 (idem) |
+| **Services de transport** | **taux réduit 6 %** : B III-3 (personnes ou marchandises) ; **exonéré** : A 29 (maritime ; aérien international) | **taux réduit 6 %** : B III-3 (personnes ; produits agricoles et de pêche) ; **taux intermédiaire 12 %** : B bis II-1 (autres marchandises) ; **exonéré** : A 28 a à e ; 28 h (maritime, aérien international, mixte rural, handicapés, services portuaires) | **taux réduit 6 %** : B III-3 (idem) ; **taux intermédiaire 12 %** : B bis II-1 (idem) ; **exonéré** : A 28 a à e ; 28 h (idem, services portuaires) | **taux réduit 6 %** : B II-2 (tous les services de transport) ; **exonéré** : A II-7 ; II-8 ; II-10 ; II-11 | **taux réduit 7 %** : B II-2 ; **exonéré** : A II-7 ; II-8 ; II-10 ; II-11 |
+| **Matériel de transport collectif et de pêche (aéronefs, navires, ferroviaire)** | **exonéré** : A 21 ; 28 (bateaux de commerce et de pêche ; aéronefs) | **exonéré** : A 12 ; 12 bis ; 27 ; 28 g ; 28 i (plus réparation navale, location de navires et d'aéronefs, matériel ferroviaire) | **exonéré** : A 12 ; 12 bis ; 27 ; 28 g ; 28 i | **taux réduit 6 %** : B I-13 ; I-13 bis ; I-25 ; II-15 ; II-15 bis (aéronefs, navires de commerce, ferroviaire) ; **exonéré** : A I-15 ; II-3 (bateaux de pêche et leur réparation) | **taux réduit 7 %** : B I-13 ; I-13 bis ; I-13 ter ; II-15 ; II-15 bis ; **exonéré** : A I-15 ; II-3 (moteurs exclus (2024)) |
+| **Hôtellerie et activités touristiques** | **taux réduit 6 %** : B III-1 ; **exonéré** : A 22 ; 19 c (agences-hôteliers (non-résidents) ; dépliants) | **taux intermédiaire 12 %** : B bis II-2 à 9 ; II-16 ; II-17 ; **exonéré** : A 22 ; 20 c ; 28 bis (agences-hôteliers ; dépliants ; amarrage de croisière) | **taux intermédiaire 12 %** : B bis II-2 à 9 ; II-16 ; II-17 ; **exonéré** : A 22 ; 20 c ; 28 bis (plus amarrage de croisière) | **taux réduit 6 %** : B I-12 ; II-7 ; II-16 à 26 | **taux réduit 7 %** : B I-12 ; II-7 ; II-16 à 26 |
+| **Restauration** | — | **taux intermédiaire 12 %** : B bis II-10 ; **exonéré** : A 30 bis (restauration des étudiants) | **taux intermédiaire 12 %** : B bis II-10 ; **exonéré** : A 30 bis (étudiants, élèves, apprenants) | **taux réduit 6 %** : B II-4 ; II-5 (restaurants et cafés de première catégorie hors alcool ; étudiants) ; **taux normal 18 %** — aucun (art. 7, al. 1er) (autre restauration : B bis II-2 abrogé sans reprise (LF 2017, art. 27 § 5)) *[déduit]* | **taux réduit 7 %** : B II-4 ; II-5 ; **taux normal 19 %** — aucun (art. 7, al. 1er) (autre restauration : non reprise depuis 2017) *[déduit]* |
+| **Professions libérales non médicales** | **taux réduit 6 %** : B I (architectes, ingénieurs-conseils, avocats, notaires, conseils, comptables, experts, géomètres) | **taux intermédiaire 12 %** : B bis II-11 ; **taux réduit 6 %** : B I, dernier tiret (immatriculation foncière des terres agricoles) | **taux intermédiaire 12 %** : B bis II-11 ; **taux réduit 6 %** : B I, dernier tiret (idem) | **taux intermédiaire 12 %** : art. 7-3 3e tiret ; **taux réduit 6 %** : B II-8 (idem) | **taux normal 19 %** — aucun (art. 7, al. 1er) (3e tiret supprimé (décret-loi n° 2022-79, art. 44)) *[déduit]* ; **taux réduit 7 %** : B II-8 (idem) |
+| **Agriculture et pêche (intrants, équipements, travaux)** | **exonéré** : A 11 ; 12 ; 13 ; 21 ; 37 ; 39 ; **taux réduit 6 %** : B II-1 ; II-3 (engrais ; aliments du bétail) | **exonéré** : A 11 ; 12 ; 13 ; 14 ; 14 bis ; 15 ; 36 ; 38 ; **taux réduit 6 %** : B II-1 ; II-3 | **exonéré** : A 11 ; 12 ; 13 ; 14 ; 14 bis ; 15 ; 36 ; 38 ; **taux réduit 6 %** : B II-1 ; II-3 | **exonéré** : A I-9 à 16 ; I-31 à 33 ; I-42 ; I-45 ; I-46 ; I-46 bis ; II-2 à 4 ; **taux réduit 6 %** : B I-1 ; I-1 bis ; I-3 ; I-14 | **exonéré** : A I-9 à 16 ; I-31 à 33 ; I-42 ; I-45 ; I-46 ; I-46 bis ; II-2 à 4 ; II-3 bis ; **taux réduit 7 %** : B I-1 ; I-1 bis ; I-3 ; I-14 |
+| **Informatique, services numériques, formation** | **taux réduit 6 %** : B II-5 ; III-7 (machines et supports ; services informatiques) | **taux intermédiaire 12 %** : B bis I-1 ; II-12 ; II-12 bis ; II-13 ; II-14 (machines ; services informatiques ; certification ; formation ; Internet) ; **taux réduit 6 %** : B II-2 (supports magnétiques) | **taux intermédiaire 12 %** : B bis I-1 ; II-12 ; II-12 bis ; II-13 ; II-14 ; **taux réduit 6 %** : B II-2 | **taux réduit 6 %** : B I-2 ; I-2 bis (supports ; machines) ; **taux normal 18 %** — aucun (art. 7, al. 1er) (services informatiques, certification, formation, Internet fixe : B bis II-4 à 7 abrogés sans reprise) *[déduit]* | **taux réduit 7 %** : B I-2 ; I-2 bis ; II-29 (plus Internet fixe des particuliers) ; **taux normal 19 %** — aucun (art. 7, al. 1er) (services informatiques, certification, formation ; Internet fixe hors particuliers : non repris depuis 2017) *[déduit]* |
+| **Équipements d'investissement (sans similaires locaux ou fabriqués localement)** | — | **taux intermédiaire 12 %** : B bis I-3 | **taux intermédiaire 12 %** : B bis I-3 | — | **taux réduit 7 %** : B I-18 ter |
+| **Télécommunications, radio-télédiffusion, poste** | — | **exonéré** : A 48 ; 49 (radio-télédiffusion publique ; services postaux publics) ; **taux normal 18 %** — aucun (art. 7, al. 1er) (télécommunications : n° 48 du tableau A réduit à la radio-télédiffusion au 1er janvier 2003) *[déduit]* | **exonéré** : A 48 ; 49 ; **taux normal 18 %** — aucun (art. 7, al. 1er) (télécommunications : n° 48 du tableau A réduit à la radio-télédiffusion au 1er janvier 2003) *[déduit]* | **taux réduit 6 %** : B II-10 (radio-télédiffusion publique) ; **exonéré** : A II-19 (services postaux) ; **taux normal 18 %** — aucun (art. 7, al. 1er) (télécommunications : n° 48 du tableau A réduit à la radio-télédiffusion au 1er janvier 2003) *[déduit]* | **taux réduit 7 %** : B II-10 ; II-29 (plus téléphonie et Internet fixes des particuliers) ; **exonéré** : A II-19 ; II-15 bis ; II-15 ter (poste ; commissions des paiements électroniques et des recharges) ; **taux normal 19 %** — aucun (art. 7, al. 1er) (télécommunications : n° 48 du tableau A réduit à la radio-télédiffusion au 1er janvier 2003) *[déduit]* |
+| **Finance et assurance** | **exonéré** : A 32 ; 34 ; 40 ; **taux réduit 6 %** : B III-6 (intérêts débiteurs) | **exonéré** : A 31 ; 31 bis ; 33 ; 39 ; **taux réduit 6 %** : B III-6 | **exonéré** : A 31 ; 31 bis ; 33 ; 39 ; 39 bis ; 39 ter (plus murabaha, salam, istisna ; sukuk) ; **taux réduit 6 %** : B III-6 | **exonéré** : A I-36 ; II-13 à 18 ; **taux réduit 6 %** : B II-14 | **exonéré** : A I-36 ; II-13 à 18 ; II-14 bis (plus Takaful, financement participatif) ; **taux réduit 7 %** : B II-14 |
+| **Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers** | **taux majoré 29 %** : C positions des chapitres 25 à 99, dont EX 87-02 (voitures particulières) | **taux normal 18 %** — aucun (art. 7, al. 1er) (tableau C supprimé au 1er janvier 2007) *[déduit]* ; **taux intermédiaire 12 %** : hors tableau (loi n° 2002-103) art. 1er (voitures de 4 chevaux fiscaux au plus, sous conditions) | — | — | **taux réduit 7 %** : B I-18 quinquies ; I-18 sexies (véhicules électriques, hybrides rechargeables (LF 2026), bicyclettes, bus du personnel) |
+
+**Décompte des 125 cases** (25 catégories × 5 dates) : 103 lues sur un tableau ; 11 lues avec une
+part déduite (logement neuf 2026 ; restauration 2017 et 2026 ; professions libérales 2026 ;
+informatique 2017 et 2026 ; télécommunications 2008, 2014, 2017 et 2026 ; biens durables 2008) ; 1 entièrement déduite (denrées de l'ancien tableau C en 2008) ; **10 vides**.
+Les cases vides : denrées de l'ancien tableau C en 2014, 2017 et 2026 et biens durables en 2014 et
+2017 (absents de tout tableau : le taux normal s'y applique, mais ce n'est pas une lecture) ; logement neuf et restauration
+autonome en 1988 ; équipements d'investissement en 1988 et au 1er janvier 2017 ; télécommunications
+en 1988.
+
+**Six précisions de lecture.**
+1. **Électricité et produits pétroliers, 2008 et 2014** : le taux de 12 % ne vient d'aucun tableau
+   mais des décrets annuels de l'article 8 (N1, § 4, décrets lus). La note de tête du tableau B bis du
+   recueil de 2014 le rappelle, dans une rédaction arrêtée à 2002.
+2. **Essence** : la liste de l'article 7, n° 3 (2017, 2026) nomme le pétrole lampant, le gaz-oil, les
+   fuel-oils et les gaz de pétrole ; l'essence, nommée au tableau B de 1988, n'y figure pas. Son
+   régime n'a pas été cherché.
+3. **Gaz** : « l'électricité et le gaz » sont ensemble au tableau B de 1988 ; ensuite seuls les gaz de
+   pétrole (EX 27-11) se lisent, avec les produits pétroliers. Le gaz naturel distribué n'est lu nulle
+   part.
+4. **Eau potable** : exonérée en 1988 (A 14) ; depuis la LF 1991, art. 33 (JORT lu), le n° 14 ne
+   couvre plus que « la vente de l'eau destinée à l'agriculture ». L'eau potable est ensuite absente
+   des tableaux à toutes les dates : case non remplie.
+5. **Voitures de 4 chevaux au plus** : hors tableaux depuis la loi n° 2002-103 ; taux de 12 % et
+   droit de consommation de 10 % d'après le recueil de 2008 (p. 38), 7 % et exonération du droit de
+   consommation dans la rédaction reproduite par le code de 2023 (modifiée par la LF 2019, art. 57).
+6. **Colonne 2026** : la source portée au CSV est le code à jour au 1er janvier 2025 ; trois numéros
+   viennent de la LF 2026, lue à l'image (A I-27, A I-46 ter, B I-18 quinquies).
+
+### 9.3 La même information, en format long
+
+Une ligne par catégorie × date × régime. `taux_pct` vide pour l'exonération. `lecture` : `JORT lu`,
+`édition officielle`, `recueil privé`, `déduit`. Douze lignes « déduit » sur 167, toutes signalées. Le bloc est engendré
+par le même script que le tableau du § 9.2 (aucune ressaisie).
+
+```csv
+categorie_id,categorie,date_repere,regime,taux_pct,tableau,numeros,source_id,page,lecture
+alim_base,"Produits alimentaires de base (farines, pain, couscous, pâtes, lait, huiles)",1988-07-01,exonéré,,A,1 ; 2 ; 4,loi-88-61-tva,833-836,JORT lu
+alim_base,"Produits alimentaires de base (farines, pain, couscous, pâtes, lait, huiles)",2008-01-01,exonéré,,A,1 ; 1 bis ; 2 ; 4,recueil-tva-bm-2008,21-30,recueil privé
+alim_base,"Produits alimentaires de base (farines, pain, couscous, pâtes, lait, huiles)",2014-01-01,exonéré,,A,1 ; 1 bis ; 2 ; 4,recueil-codes-sefac-2014,160-172,recueil privé
+alim_base,"Produits alimentaires de base (farines, pain, couscous, pâtes, lait, huiles)",2017-01-01,exonéré,,A,I-1 à 5 ; I-41 à 44,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
+alim_base,"Produits alimentaires de base (farines, pain, couscous, pâtes, lait, huiles)",2026-01-01,exonéré,,A,I-1 à 5 ; I-41 à 44,dgelf-code-tva-2025,49-60,édition officielle
+sucre,Sucre,1988-07-01,exonéré,,A,5,loi-88-61-tva,833-836,JORT lu
+sucre,Sucre,2008-01-01,exonéré,,A,5,recueil-tva-bm-2008,21-30,recueil privé
+sucre,Sucre,2014-01-01,exonéré,,A,5,recueil-codes-sefac-2014,160-172,recueil privé
+sucre,Sucre,2017-01-01,taux réduit,6,B,I-9 bis,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
+sucre,Sucre,2026-01-01,taux réduit,7,B,I-9 bis,dgelf-code-tva-2025,62-69,édition officielle
+alim_transformes,"Conserves, fruits et légumes transformés, maïs",1988-07-01,taux réduit,6,B,II-7,loi-88-61-tva,836,JORT lu
+alim_transformes,"Conserves, fruits et légumes transformés, maïs",2008-01-01,taux réduit,6,B,II-7 ; II-11 ; III-11,recueil-tva-bm-2008,31-32,recueil privé
+alim_transformes,"Conserves, fruits et légumes transformés, maïs",2014-01-01,taux réduit,6,B,II-7 ; II-11 ; III-11,recueil-codes-sefac-2014,174-175,recueil privé
+alim_transformes,"Conserves, fruits et légumes transformés, maïs",2017-01-01,taux réduit,6,B,I-5 ; I-9 ; II-12,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
+alim_transformes,"Conserves, fruits et légumes transformés, maïs",2026-01-01,taux réduit,7,B,I-5 ; I-9 ; I-21 bis ; II-12,dgelf-code-tva-2025,62-69,édition officielle
+alim_tableau_c,"Denrées et boissons de l'ancien tableau C (café, thé, épices, cacao, charcuterie, boissons, tabacs)",1988-07-01,taux majoré,29,C,positions des chapitres 02 à 24,loi-88-61-tva,836-846,JORT lu
+alim_tableau_c,"Denrées et boissons de l'ancien tableau C (café, thé, épices, cacao, charcuterie, boissons, tabacs)",2008-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,loi-2006-80-reduction-taux,4302,déduit
+medicaments,Médicaments et produits pharmaceutiques,1988-07-01,taux réduit,6,B,II-4,loi-88-61-tva,836,JORT lu
+medicaments,Médicaments et produits pharmaceutiques,2008-01-01,taux réduit,6,B,II-4,recueil-tva-bm-2008,31-32,recueil privé
+medicaments,Médicaments et produits pharmaceutiques,2014-01-01,taux réduit,6,B,II-4,recueil-codes-sefac-2014,174-175,recueil privé
+medicaments,Médicaments et produits pharmaceutiques,2017-01-01,taux réduit,6,B,I-4 ; I-15 à 18,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
+medicaments,Médicaments et produits pharmaceutiques,2026-01-01,taux réduit,7,B,I-4 ; I-15 à 18,dgelf-code-tva-2025,62-69,édition officielle
+sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",1988-07-01,taux réduit,6,B,I (santé) ; III-5,loi-88-61-tva,836,JORT lu
+sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",1988-07-01,exonéré,,A,7,loi-88-61-tva,833-836,JORT lu
+sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2008-01-01,taux réduit,6,B,I ; III-5,recueil-tva-bm-2008,31-32,recueil privé
+sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2008-01-01,exonéré,,A,7 ; 7 bis ; 9 bis,recueil-tva-bm-2008,21-30,recueil privé
+sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2014-01-01,taux réduit,6,B,I ; III-5,recueil-codes-sefac-2014,174-175,recueil privé
+sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2014-01-01,exonéré,,A,7 ; 9 bis,recueil-codes-sefac-2014,160-172,recueil privé
+sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2017-01-01,taux réduit,6,B,II-1 ; II-3,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
+sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2017-01-01,exonéré,,A,I-7 ; II-1,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
+sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2026-01-01,taux réduit,7,B,II-1 ; II-3,dgelf-code-tva-2025,62-69,édition officielle
+sante_soins,"Soins, professions de santé, cliniques, appareils pour handicapés",2026-01-01,exonéré,,A,I-7 ; I-7 bis ; II-1,dgelf-code-tva-2025,49-60,édition officielle
+enseignement,Enseignement et garderies,1988-07-01,exonéré,,A,9,loi-88-61-tva,833-836,JORT lu
+enseignement,Enseignement et garderies,2008-01-01,exonéré,,A,9,recueil-tva-bm-2008,21-30,recueil privé
+enseignement,Enseignement et garderies,2014-01-01,exonéré,,A,9,recueil-codes-sefac-2014,160-172,recueil privé
+enseignement,Enseignement et garderies,2017-01-01,taux réduit,6,B,II-6,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
+enseignement,Enseignement et garderies,2026-01-01,taux réduit,7,B,II-6,dgelf-code-tva-2025,62-69,édition officielle
+livres_presse_culture,"Livres, presse, culture, cinéma",1988-07-01,exonéré,,A,18 ; 19 ; 20 ; 23 ; 24,loi-88-61-tva,833-836,JORT lu
+livres_presse_culture,"Livres, presse, culture, cinéma",2008-01-01,exonéré,,A,19 ; 20 ; 21 ; 23 ; 24,recueil-tva-bm-2008,21-30,recueil privé
+livres_presse_culture,"Livres, presse, culture, cinéma",2008-01-01,taux réduit,6,B,III-9 ; III-12,recueil-tva-bm-2008,31-32,recueil privé
+livres_presse_culture,"Livres, presse, culture, cinéma",2014-01-01,exonéré,,A,19 ; 20 ; 21 ; 23 ; 24,recueil-codes-sefac-2014,160-172,recueil privé
+livres_presse_culture,"Livres, presse, culture, cinéma",2014-01-01,taux réduit,6,B,III-9 ; III-12 ; alinéa final du § III,recueil-codes-sefac-2014,174-175,recueil privé
+livres_presse_culture,"Livres, presse, culture, cinéma",2017-01-01,exonéré,,A,I-18 à 21 ; I-35 ; II-5 ; II-6,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
+livres_presse_culture,"Livres, presse, culture, cinéma",2017-01-01,taux réduit,6,B,I-11 ; I-12 bis ; I-22 ; I-24 ; II-9 ; II-10 ; II-11 ; II-13,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
+livres_presse_culture,"Livres, presse, culture, cinéma",2026-01-01,exonéré,,A,I-18 à 21 ; I-35 ; I-46 ter ; II-5 ; II-6,dgelf-code-tva-2025,49-60,édition officielle
+livres_presse_culture,"Livres, presse, culture, cinéma",2026-01-01,taux réduit,7,B,I-11 ; I-12 bis ; I-22 ; I-24 ; II-9 ; II-10 ; II-11 ; II-13,dgelf-code-tva-2025,62-69,édition officielle
+logement_neuf,Logements neufs vendus par les promoteurs (hors logement social),2008-01-01,exonéré,,A,50,recueil-tva-bm-2008,21-30,recueil privé
+logement_neuf,Logements neufs vendus par les promoteurs (hors logement social),2014-01-01,exonéré,,A,50,recueil-codes-sefac-2014,160-172,recueil privé
+logement_neuf,Logements neufs vendus par les promoteurs (hors logement social),2017-01-01,exonéré,,A,I-53,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
+logement_neuf,Logements neufs vendus par les promoteurs (hors logement social),2026-01-01,taux réduit,7,B,I-31,dgelf-code-tva-2025,62-69,édition officielle
+logement_neuf,Logements neufs vendus par les promoteurs (hors logement social),2026-01-01,taux normal,19,"aucun (art. 7, al. 1er)",—,lf-2025,3449,déduit
+logement_social_location,"Logement social, location d'habitation, intérêts des prêts au logement",1988-07-01,exonéré,,A,31 ; 40 a,loi-88-61-tva,833-836,JORT lu
+logement_social_location,"Logement social, location d'habitation, intérêts des prêts au logement",2008-01-01,exonéré,,A,30 ; 39 a,recueil-tva-bm-2008,21-30,recueil privé
+logement_social_location,"Logement social, location d'habitation, intérêts des prêts au logement",2014-01-01,exonéré,,A,30 ; 39 a,recueil-codes-sefac-2014,160-172,recueil privé
+logement_social_location,"Logement social, location d'habitation, intérêts des prêts au logement",2017-01-01,exonéré,,A,II-12 ; II-15 a,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
+logement_social_location,"Logement social, location d'habitation, intérêts des prêts au logement",2026-01-01,exonéré,,A,I-53 ; II-12 ; II-15 a,dgelf-code-tva-2025,49-60,édition officielle
+electricite_gaz,Électricité (et gaz de réseau en 1988),1988-07-01,taux réduit,6,B,II-2,loi-88-61-tva,836,JORT lu
+electricite_gaz,Électricité (et gaz de réseau en 1988),2008-01-01,taux intermédiaire,12,"hors tableau (décret annuel, art. 8)",—,fiscalite-tva-documentation.md § 4,—,JORT lu
+electricite_gaz,Électricité (et gaz de réseau en 1988),2014-01-01,taux intermédiaire,12,"hors tableau (décret annuel, art. 8)",—,fiscalite-tva-documentation.md § 4,—,JORT lu
+electricite_gaz,Électricité (et gaz de réseau en 1988),2017-01-01,taux intermédiaire,12,art. 7-3,2e tiret,lf-2017,3835 (LF 2017),JORT lu
+electricite_gaz,Électricité (et gaz de réseau en 1988),2026-01-01,taux réduit,7,B,I-29 ; I-30,dgelf-code-tva-2025,62-69,édition officielle
+electricite_gaz,Électricité (et gaz de réseau en 1988),2026-01-01,taux intermédiaire,13,art. 7-3,2e tiret,dgelf-code-tva-2025,21-22,édition officielle
+produits_petroliers,Produits pétroliers et gaz de pétrole,1988-07-01,taux réduit,6,B,III-4,loi-88-61-tva,836,JORT lu
+produits_petroliers,Produits pétroliers et gaz de pétrole,2008-01-01,taux intermédiaire,12,"hors tableau (décret, art. 8)",—,fiscalite-tva-documentation.md § 4,—,JORT lu
+produits_petroliers,Produits pétroliers et gaz de pétrole,2014-01-01,taux intermédiaire,12,"hors tableau (décret annuel, art. 8)",—,fiscalite-tva-documentation.md § 4,—,JORT lu
+produits_petroliers,Produits pétroliers et gaz de pétrole,2017-01-01,taux intermédiaire,12,art. 7-3,1er tiret,lf-2017,3835 (LF 2017),JORT lu
+produits_petroliers,Produits pétroliers et gaz de pétrole,2026-01-01,taux intermédiaire,13,art. 7-3,1er tiret,dgelf-code-tva-2025,21-22,édition officielle
+energies_renouvelables,"Solaire, énergies renouvelables, maîtrise de l'énergie",1988-07-01,exonéré,,A,26 ; 41 a,loi-88-61-tva,833-836,JORT lu
+energies_renouvelables,"Solaire, énergies renouvelables, maîtrise de l'énergie",2008-01-01,exonéré,,A,25 ; 40 a,recueil-tva-bm-2008,21-30,recueil privé
+energies_renouvelables,"Solaire, énergies renouvelables, maîtrise de l'énergie",2014-01-01,exonéré,,A,25 ; 40 a,recueil-codes-sefac-2014,160-172,recueil privé
+energies_renouvelables,"Solaire, énergies renouvelables, maîtrise de l'énergie",2017-01-01,taux réduit,6,B,I-18 bis ; I-19 ; I-27 ; I-28,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
+energies_renouvelables,"Solaire, énergies renouvelables, maîtrise de l'énergie",2026-01-01,taux réduit,7,B,I-18 bis ; I-18 quater ; I-19 ; I-27 ; I-28,dgelf-code-tva-2025,62-69,édition officielle
+eau,Eau,1988-07-01,exonéré,,A,14 ; 10,loi-88-61-tva,833-836,JORT lu
+eau,Eau,2008-01-01,exonéré,,A,15 ; 11 i ; 10,recueil-tva-bm-2008,21-30,recueil privé
+eau,Eau,2014-01-01,exonéré,,A,15 ; 11 i ; 10,recueil-codes-sefac-2014,160-172,recueil privé
+eau,Eau,2017-01-01,exonéré,,A,I-46 ; II-2,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
+eau,Eau,2026-01-01,exonéré,,A,I-46 ; II-2,dgelf-code-tva-2025,49-60,édition officielle
+transport_services,Services de transport,1988-07-01,taux réduit,6,B,III-3,loi-88-61-tva,836,JORT lu
+transport_services,Services de transport,1988-07-01,exonéré,,A,29,loi-88-61-tva,833-836,JORT lu
+transport_services,Services de transport,2008-01-01,taux réduit,6,B,III-3,recueil-tva-bm-2008,31-32,recueil privé
+transport_services,Services de transport,2008-01-01,taux intermédiaire,12,B bis,II-1,recueil-tva-bm-2008,33-34,recueil privé
+transport_services,Services de transport,2008-01-01,exonéré,,A,28 a à e ; 28 h,recueil-tva-bm-2008,21-30,recueil privé
+transport_services,Services de transport,2014-01-01,taux réduit,6,B,III-3,recueil-codes-sefac-2014,174-175,recueil privé
+transport_services,Services de transport,2014-01-01,taux intermédiaire,12,B bis,II-1,recueil-codes-sefac-2014,177-178,recueil privé
+transport_services,Services de transport,2014-01-01,exonéré,,A,28 a à e ; 28 h,recueil-codes-sefac-2014,160-172,recueil privé
+transport_services,Services de transport,2017-01-01,taux réduit,6,B,II-2,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
+transport_services,Services de transport,2017-01-01,exonéré,,A,II-7 ; II-8 ; II-10 ; II-11,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
+transport_services,Services de transport,2026-01-01,taux réduit,7,B,II-2,dgelf-code-tva-2025,62-69,édition officielle
+transport_services,Services de transport,2026-01-01,exonéré,,A,II-7 ; II-8 ; II-10 ; II-11,dgelf-code-tva-2025,49-60,édition officielle
+transport_materiel,"Matériel de transport collectif et de pêche (aéronefs, navires, ferroviaire)",1988-07-01,exonéré,,A,21 ; 28,loi-88-61-tva,833-836,JORT lu
+transport_materiel,"Matériel de transport collectif et de pêche (aéronefs, navires, ferroviaire)",2008-01-01,exonéré,,A,12 ; 12 bis ; 27 ; 28 g ; 28 i,recueil-tva-bm-2008,21-30,recueil privé
+transport_materiel,"Matériel de transport collectif et de pêche (aéronefs, navires, ferroviaire)",2014-01-01,exonéré,,A,12 ; 12 bis ; 27 ; 28 g ; 28 i,recueil-codes-sefac-2014,160-172,recueil privé
+transport_materiel,"Matériel de transport collectif et de pêche (aéronefs, navires, ferroviaire)",2017-01-01,taux réduit,6,B,I-13 ; I-13 bis ; I-25 ; II-15 ; II-15 bis,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
+transport_materiel,"Matériel de transport collectif et de pêche (aéronefs, navires, ferroviaire)",2017-01-01,exonéré,,A,I-15 ; II-3,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
+transport_materiel,"Matériel de transport collectif et de pêche (aéronefs, navires, ferroviaire)",2026-01-01,taux réduit,7,B,I-13 ; I-13 bis ; I-13 ter ; II-15 ; II-15 bis,dgelf-code-tva-2025,62-69,édition officielle
+transport_materiel,"Matériel de transport collectif et de pêche (aéronefs, navires, ferroviaire)",2026-01-01,exonéré,,A,I-15 ; II-3,dgelf-code-tva-2025,49-60,édition officielle
+hotellerie_tourisme,Hôtellerie et activités touristiques,1988-07-01,taux réduit,6,B,III-1,loi-88-61-tva,836,JORT lu
+hotellerie_tourisme,Hôtellerie et activités touristiques,1988-07-01,exonéré,,A,22 ; 19 c,loi-88-61-tva,833-836,JORT lu
+hotellerie_tourisme,Hôtellerie et activités touristiques,2008-01-01,taux intermédiaire,12,B bis,II-2 à 9 ; II-16 ; II-17,recueil-tva-bm-2008,33-34,recueil privé
+hotellerie_tourisme,Hôtellerie et activités touristiques,2008-01-01,exonéré,,A,22 ; 20 c ; 28 bis,recueil-tva-bm-2008,21-30,recueil privé
+hotellerie_tourisme,Hôtellerie et activités touristiques,2014-01-01,taux intermédiaire,12,B bis,II-2 à 9 ; II-16 ; II-17,recueil-codes-sefac-2014,177-178,recueil privé
+hotellerie_tourisme,Hôtellerie et activités touristiques,2014-01-01,exonéré,,A,22 ; 20 c ; 28 bis,recueil-codes-sefac-2014,160-172,recueil privé
+hotellerie_tourisme,Hôtellerie et activités touristiques,2017-01-01,taux réduit,6,B,I-12 ; II-7 ; II-16 à 26,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
+hotellerie_tourisme,Hôtellerie et activités touristiques,2026-01-01,taux réduit,7,B,I-12 ; II-7 ; II-16 à 26,dgelf-code-tva-2025,62-69,édition officielle
+restauration,Restauration,2008-01-01,taux intermédiaire,12,B bis,II-10,recueil-tva-bm-2008,33-34,recueil privé
+restauration,Restauration,2008-01-01,exonéré,,A,30 bis,recueil-tva-bm-2008,21-30,recueil privé
+restauration,Restauration,2014-01-01,taux intermédiaire,12,B bis,II-10,recueil-codes-sefac-2014,177-178,recueil privé
+restauration,Restauration,2014-01-01,exonéré,,A,30 bis,recueil-codes-sefac-2014,160-172,recueil privé
+restauration,Restauration,2017-01-01,taux réduit,6,B,II-4 ; II-5,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
+restauration,Restauration,2017-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,lf-2017,3836,déduit
+restauration,Restauration,2026-01-01,taux réduit,7,B,II-4 ; II-5,dgelf-code-tva-2025,62-69,édition officielle
+restauration,Restauration,2026-01-01,taux normal,19,"aucun (art. 7, al. 1er)",—,lf-2017,3836,déduit
+professions_liberales,Professions libérales non médicales,1988-07-01,taux réduit,6,B,I,loi-88-61-tva,836,JORT lu
+professions_liberales,Professions libérales non médicales,2008-01-01,taux intermédiaire,12,B bis,II-11,recueil-tva-bm-2008,33-34,recueil privé
+professions_liberales,Professions libérales non médicales,2008-01-01,taux réduit,6,B,"I, dernier tiret",recueil-tva-bm-2008,31-32,recueil privé
+professions_liberales,Professions libérales non médicales,2014-01-01,taux intermédiaire,12,B bis,II-11,recueil-codes-sefac-2014,177-178,recueil privé
+professions_liberales,Professions libérales non médicales,2014-01-01,taux réduit,6,B,"I, dernier tiret",recueil-codes-sefac-2014,174-175,recueil privé
+professions_liberales,Professions libérales non médicales,2017-01-01,taux intermédiaire,12,art. 7-3,3e tiret,lf-2017,3835 (LF 2017),JORT lu
+professions_liberales,Professions libérales non médicales,2017-01-01,taux réduit,6,B,II-8,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
+professions_liberales,Professions libérales non médicales,2026-01-01,taux normal,19,"aucun (art. 7, al. 1er)",—,lf-2023,4069 (éd. arabe),déduit
+professions_liberales,Professions libérales non médicales,2026-01-01,taux réduit,7,B,II-8,dgelf-code-tva-2025,62-69,édition officielle
+agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",1988-07-01,exonéré,,A,11 ; 12 ; 13 ; 21 ; 37 ; 39,loi-88-61-tva,833-836,JORT lu
+agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",1988-07-01,taux réduit,6,B,II-1 ; II-3,loi-88-61-tva,836,JORT lu
+agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2008-01-01,exonéré,,A,11 ; 12 ; 13 ; 14 ; 14 bis ; 15 ; 36 ; 38,recueil-tva-bm-2008,21-30,recueil privé
+agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2008-01-01,taux réduit,6,B,II-1 ; II-3,recueil-tva-bm-2008,31-32,recueil privé
+agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2014-01-01,exonéré,,A,11 ; 12 ; 13 ; 14 ; 14 bis ; 15 ; 36 ; 38,recueil-codes-sefac-2014,160-172,recueil privé
+agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2014-01-01,taux réduit,6,B,II-1 ; II-3,recueil-codes-sefac-2014,174-175,recueil privé
+agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2017-01-01,exonéré,,A,I-9 à 16 ; I-31 à 33 ; I-42 ; I-45 ; I-46 ; I-46 bis ; II-2 à 4,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
+agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2017-01-01,taux réduit,6,B,I-1 ; I-1 bis ; I-3 ; I-14,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
+agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2026-01-01,exonéré,,A,I-9 à 16 ; I-31 à 33 ; I-42 ; I-45 ; I-46 ; I-46 bis ; II-2 à 4 ; II-3 bis,dgelf-code-tva-2025,49-60,édition officielle
+agriculture_peche,"Agriculture et pêche (intrants, équipements, travaux)",2026-01-01,taux réduit,7,B,I-1 ; I-1 bis ; I-3 ; I-14,dgelf-code-tva-2025,62-69,édition officielle
+informatique_numerique,"Informatique, services numériques, formation",1988-07-01,taux réduit,6,B,II-5 ; III-7,loi-88-61-tva,836,JORT lu
+informatique_numerique,"Informatique, services numériques, formation",2008-01-01,taux intermédiaire,12,B bis,I-1 ; II-12 ; II-12 bis ; II-13 ; II-14,recueil-tva-bm-2008,33-34,recueil privé
+informatique_numerique,"Informatique, services numériques, formation",2008-01-01,taux réduit,6,B,II-2,recueil-tva-bm-2008,31-32,recueil privé
+informatique_numerique,"Informatique, services numériques, formation",2014-01-01,taux intermédiaire,12,B bis,I-1 ; II-12 ; II-12 bis ; II-13 ; II-14,recueil-codes-sefac-2014,177-178,recueil privé
+informatique_numerique,"Informatique, services numériques, formation",2014-01-01,taux réduit,6,B,II-2,recueil-codes-sefac-2014,174-175,recueil privé
+informatique_numerique,"Informatique, services numériques, formation",2017-01-01,taux réduit,6,B,I-2 ; I-2 bis,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
+informatique_numerique,"Informatique, services numériques, formation",2017-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,lf-2017,3836,déduit
+informatique_numerique,"Informatique, services numériques, formation",2026-01-01,taux réduit,7,B,I-2 ; I-2 bis ; II-29,dgelf-code-tva-2025,62-69,édition officielle
+informatique_numerique,"Informatique, services numériques, formation",2026-01-01,taux normal,19,"aucun (art. 7, al. 1er)",—,lf-2017,3836,déduit
+equipements_investissement,Équipements d'investissement (sans similaires locaux ou fabriqués localement),2008-01-01,taux intermédiaire,12,B bis,I-3,recueil-tva-bm-2008,33-34,recueil privé
+equipements_investissement,Équipements d'investissement (sans similaires locaux ou fabriqués localement),2014-01-01,taux intermédiaire,12,B bis,I-3,recueil-codes-sefac-2014,177-178,recueil privé
+equipements_investissement,Équipements d'investissement (sans similaires locaux ou fabriqués localement),2026-01-01,taux réduit,7,B,I-18 ter,dgelf-code-tva-2025,62-69,édition officielle
+telecom_poste,"Télécommunications, radio-télédiffusion, poste",2008-01-01,exonéré,,A,48 ; 49,recueil-tva-bm-2008,21-30,recueil privé
+telecom_poste,"Télécommunications, radio-télédiffusion, poste",2008-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,loi2001-123-lf2002;decret-2002-3356-tva-telecom,4258 ; 3194,déduit
+telecom_poste,"Télécommunications, radio-télédiffusion, poste",2014-01-01,exonéré,,A,48 ; 49,recueil-codes-sefac-2014,160-172,recueil privé
+telecom_poste,"Télécommunications, radio-télédiffusion, poste",2014-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,loi2001-123-lf2002;decret-2002-3356-tva-telecom,4258 ; 3194,déduit
+telecom_poste,"Télécommunications, radio-télédiffusion, poste",2017-01-01,taux réduit,6,B,II-10,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
+telecom_poste,"Télécommunications, radio-télédiffusion, poste",2017-01-01,exonéré,,A,II-19,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
+telecom_poste,"Télécommunications, radio-télédiffusion, poste",2017-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,loi2001-123-lf2002;decret-2002-3356-tva-telecom,4258 ; 3194,déduit
+telecom_poste,"Télécommunications, radio-télédiffusion, poste",2026-01-01,taux réduit,7,B,II-10 ; II-29,dgelf-code-tva-2025,62-69,édition officielle
+telecom_poste,"Télécommunications, radio-télédiffusion, poste",2026-01-01,exonéré,,A,II-19 ; II-15 bis ; II-15 ter,dgelf-code-tva-2025,49-60,édition officielle
+telecom_poste,"Télécommunications, radio-télédiffusion, poste",2026-01-01,taux normal,19,"aucun (art. 7, al. 1er)",—,loi2001-123-lf2002;decret-2002-3356-tva-telecom,4258 ; 3194,déduit
+finance_assurance,Finance et assurance,1988-07-01,exonéré,,A,32 ; 34 ; 40,loi-88-61-tva,833-836,JORT lu
+finance_assurance,Finance et assurance,1988-07-01,taux réduit,6,B,III-6,loi-88-61-tva,836,JORT lu
+finance_assurance,Finance et assurance,2008-01-01,exonéré,,A,31 ; 31 bis ; 33 ; 39,recueil-tva-bm-2008,21-30,recueil privé
+finance_assurance,Finance et assurance,2008-01-01,taux réduit,6,B,III-6,recueil-tva-bm-2008,31-32,recueil privé
+finance_assurance,Finance et assurance,2014-01-01,exonéré,,A,31 ; 31 bis ; 33 ; 39 ; 39 bis ; 39 ter,recueil-codes-sefac-2014,160-172,recueil privé
+finance_assurance,Finance et assurance,2014-01-01,taux réduit,6,B,III-6,recueil-codes-sefac-2014,174-175,recueil privé
+finance_assurance,Finance et assurance,2017-01-01,exonéré,,A,I-36 ; II-13 à 18,lf-2016;lf-2017,3292-3301 (LF 2016) ; 3832-3833 (LF 2017),JORT lu
+finance_assurance,Finance et assurance,2017-01-01,taux réduit,6,B,II-14,lf-2016;lf-2017,3302-3305 (LF 2016) ; 3833-3836 (LF 2017),JORT lu
+finance_assurance,Finance et assurance,2026-01-01,exonéré,,A,I-36 ; II-13 à 18 ; II-14 bis,dgelf-code-tva-2025,49-60,édition officielle
+finance_assurance,Finance et assurance,2026-01-01,taux réduit,7,B,II-14,dgelf-code-tva-2025,62-69,édition officielle
+durables_luxe_vehicules,Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers,1988-07-01,taux majoré,29,C,"positions des chapitres 25 à 99, dont EX 87-02 (voitures particulières)",loi-88-61-tva,836-846,JORT lu
+durables_luxe_vehicules,Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers,2008-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,loi-2006-80-reduction-taux,4302,déduit
+durables_luxe_vehicules,Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers,2008-01-01,taux intermédiaire,12,hors tableau (loi n° 2002-103),art. 1er,recueil-tva-bm-2008,38,recueil privé
+durables_luxe_vehicules,Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers,2026-01-01,taux réduit,7,B,I-18 quinquies ; I-18 sexies,dgelf-code-tva-2025,62-69,édition officielle
+```
+
+`source_id` : clés de l'annexe A, sauf `fiscalite-tva-documentation.md § 4` (décrets annuels de
+l'article 8, établis par N1). Pour la date `2017-01-01`, la page distingue les deux lois.
+
+### 9.4 Les changements datés, mis à jour
+
+**Ce que les notes du recueil de 2014 apportent.** Chaque numéro y porte l'article et la loi qui l'a
+ajouté, modifié ou abrogé. Relevé complet ci-dessous pour les tableaux A, B et B bis ; « JORT » :
+l'article a été lu au *Journal officiel* (ici ou par N1 et N2) ; « recueil » : repris du seul recueil,
+à vérifier. Deux discordances sont signalées.
+
+**Tableau A** (numérotation de 2014)
+
+| N° | Objet | Texte d'après le recueil de 2014 | Vérifié |
+|---|---|---|---|
+| tête | refonte dans la nomenclature du système harmonisé | art. 43 LF 1992 (loi n° 91-98) | **JORT** (image, p. 2086) |
+| 1 bis | son et résidus de mouture — ajouté | art. 33 LF 2000 (loi n° 99-101) | recueil |
+| 2 c | laits pour nourrissons : liste par décret | art. 95 LF 1995 | recueil |
+| 4 d | huiles végétales alimentaires — ajouté puis modifié | art. 23 LF 1989 ; art. 41 LF 1992 ; art. 38 LF 1999 (loi n° 98-111) | **JORT** pour 1989 (p. 1794) et 1992 (p. 2086) |
+| 6 | œuvres humanitaires → associations | art. 55 de la LFC 2012 — le recueil écrit « 2012-8 », le JORT « loi n° 2012-1 » | **JORT** (texte) ; **discordance de numéro** |
+| 7 bis | soins aux étrangers non-résidents — ajouté, puis abrogé | ajouté art. 46 LF 2005 (loi n° 2004-90), d'après le recueil de 2008 ; abrogé art. 64 LF 2014 | abrogation : **JORT** (texte) |
+| 8 | ordures : admission en décharge, transformation | art. 60 LF 1994 | recueil |
+| 9 | enseignement : formation informatique ; auto-écoles | art. 53 LF 2000 ; art. 10 du décret-loi n° 2011-56 | recueil |
+| 9 bis | établissements pour personnes handicapées — ajouté | art. 39 LF 2008 | recueil (deux recueils) |
+| 11 a | polyéthylène : produits des serres ; foin, ensilage, pépinières | art. 23 LF 1989 ; art. 17 LF 2008 | **JORT** (images, p. 1794 et 4359) |
+| 11 e | engrais : ammonitre, super phosphate, NPK — ajoutés | art. 82 LF 1995 | recueil |
+| 11 i | forage d'eau — ajouté | art. 23 LF 1989 | **JORT** (image) |
+| 11 k | insecticides, fongicides, herbicides — ajouté ; pièces agricoles et de pêche — ajouté | art. 54 LF 1994 ; art. 81 LF 1995 | recueil |
+| 12 bis | réparation navale — ajouté, étendu à la pêche | art. 34 LF 2000 ; art. 65 LF 2007 (loi n° 2006-85) | recueil |
+| 13 | plants et semences : liste par décret | art. 95 LF 1995 | recueil |
+| 14 | travaux agricoles, services afférents ; liste par décret | art. 23 LF 1989 ; art. 44 LF 2001 ; art. 29 LF 2013 | **JORT** pour 1989 et 2013 |
+| 14 bis | écailles de glace — ajouté | art. 41 LF 2001 (loi n° 2000-98) | recueil |
+| 15 | eau : réduite à l'eau destinée à l'agriculture | art. 33 LF 1991 (loi n° 90-111) | **JORT** (image, p. 2052) |
+| 16 | dons de la coopération : associations ; achats locaux | art. 47 LF 2012 ; art. 56 LFC 2012 ; art. 103 LF 2004 | **JORT** pour 2012 (texte) |
+| 17 | timbres | art. 78 LF 2004 | recueil |
+| 20 a | papier journal : caution | art. 60 LF 1991 | recueil |
+| 23 a, b, c | films : importation ; production ; œuvres théâtrales et plastiques | art. 95 LF 1995 ; art. 39 LF 1992 ; art. 32 LF 2014 | **JORT** pour 1992 (p. 2086) et 2014 |
+| 25 c | maîtrise de l'énergie, énergies renouvelables — ajouté | art. 88 LF 1995 | recueil |
+| 28 b | transport aérien : hors vente de billets | art. 21 LF 2008 | **JORT** (image, p. 4360) |
+| 28 c | services aériens sous réserve de réciprocité — ajouté | art. 42 LF 1992 | **JORT** (image) |
+| 28 d ; 28 e, f | transport mixte rural ; transport et véhicules des handicapés | art. 89 et 92 LF 1993 ; art. 49 et 51 LF 1999 ; loi n° 2006-71 | recueil |
+| 28 g ; 28 h ; 28 i | location de navires et d'aéronefs ; services portuaires ; matériel ferroviaire | art. 53 LF 1994 ; art. 84 LF 1995 ; art. 37 LF 1999 | recueil |
+| 28 bis | amarrage de croisière — ajouté | art. 41 de la loi n° 2007-69 (initiative économique) | recueil |
+| 30 | location : collectivités et non-assujettis ; logements étudiants | art. 52 LF 1994 ; art. 76 LF 1995 | recueil |
+| 30 bis | restauration des étudiants — ajouté, étendu | art. 58 LF 1998 ; art. 3 de la loi n° 2009-32 | recueil |
+| 31 bis | commissions d'assurance — ajouté | art. 43 LF 2004 | recueil |
+| 39 a | intérêts : établissements mixtes, affacturage, titrisation ; caisses sociales, fonds sociaux ; pension livrée | art. 32 et 44 LF 2002 ; art. 47 LF 2004 | recueil |
+| 39 d ; e ; f ; g | intérêts bancaires débiteurs ; CPSCL ; micro-crédits ; prêts universitaires | art. 23 LF 1989 ; art. 61 LF 1994 ; art. 2 de la loi n° 99-70 ; art. 60 LF 2000 | **JORT** pour 1989 |
+| 39 bis ; 39 ter | murabaha, salam, istisna ; sukuk | art. 37 LF 2012 ; « art. 27 » LF 2014 | **JORT** (texte) : le JORT porte l'**article 29** pour les sukuk — **discordance** |
+| 45 | armement : achats locaux de l'État | art. 42 LF 2002 | recueil |
+| 46 ; 47 | artisanat ; nettoiement des villes — ajoutés | art. 79 et 86 LF 1993 | recueil |
+| 48 | télécommunications — ajouté, puis réduit à la radio-télédiffusion | art. 85 LF 1995 ; art. 66 LF 2002 | **JORT** (N2) |
+| 49 | services postaux — ajouté | art. 67 LF 1999 | recueil |
+| 50 | logements des promoteurs — ajouté, précisé | art. 63 LF 2001 ; art. 65 LF 2014 | **JORT** (N2 ; texte) |
+
+Les numéros 3, 5, 7, 10, 12, 18, 19, 21, 22, 24, 26, 27, 29, 31 à 38, 40 à 44 ne portent aucune note :
+d'après le recueil, leur rédaction est celle de 1988 (aux codes tarifaires près).
+
+**Tableau B**
+
+| N° | Objet | Texte d'après le recueil de 2014 | Vérifié |
+|---|---|---|---|
+| I | liste réduite aux professions de santé et à l'immatriculation foncière agricole ; paramédicaux | art. 38 LF 1996 ; art. 43 LF 2010 | **JORT** (N1 ; texte) |
+| II-2 | électricité et gaz supprimés, numéro réemployé pour les supports magnétiques | art. 40 LF 1996 ; art. 50 LF 2000 (d'après le recueil de 2008) | **JORT** pour 1996 (N1) |
+| II-4 | produits pharmaceutiques : sacs de transfusion, réactifs | art. 74 LF 1995 ; art. 62 LF 2000 | recueil |
+| II-5, II-6 ; III-7 | machines de traitement de l'information, téléviseurs ; services informatiques — abrogés | art. 57 LF 1995 | **JORT** (N2) |
+| II-9, 10, 11 | huiles acides, manèges, maïs — ajoutés | art. 35 LF 1992 | **JORT** (image, p. 2085) |
+| II-12 | matières premières de l'artisanat — ajouté | art. 80 LF 1993 | recueil |
+| III-1, 8, 10, 13 | hôtellerie, restauration, séjours des agences, plongée — abrogés | art. 39 LF 1996 | **JORT** (N2) |
+| III-2 | artisanat local : fin de l'exception de la soie | art. 81 LF 1993 | recueil |
+| III-3 | transport : personnes et produits agricoles seulement | art. 58 LF 1995 | **JORT** (N2) |
+| III-4 | huiles de pétrole — abrogé | art. 40 LF 1996 | **JORT** (N1) |
+| III-8, 9, 10, 11 | restauration, films, séjours des agences, fruits et légumes transformés — ajoutés | art. 24 LF 1989 | **JORT** (image, p. 1794) |
+| III-9 bis | abrogé (contenu non donné par le recueil) | art. 31 LF 2014 | **JORT** (texte) pour l'abrogation |
+| III-11 | fruits et légumes transformés : exclusions | art. 18 de la loi n° 2006-80 | recueil |
+| III-12 | musées — ajouté | art. 31 LF 2000 | recueil |
+| III-13 | plongée et promenades en mer — ajouté | art. 36 LF 1992 | **JORT** (image, p. 2085) |
+| alinéa final | papier des revues | art. 33 LF 2014 | **JORT** (texte) |
+
+**Tableau B bis**
+
+| N° | Objet | Texte d'après le recueil de 2014 | Vérifié |
+|---|---|---|---|
+| tête | liste fixée par le tableau « L » de la LF 2002 ; 10 % → 12 % | art. 83 LF 2002 ; art. 17 de la loi n° 2006-80 | **JORT** (N1) |
+| I-2 | petites voitures — abrogé | art. 4 de la loi n° 2002-103 | recueil et codes officiels (texte reproduit) |
+| II-3 ; II-16, 17 | excursions ; anneaux des ports de plaisance, campings | art. 34 et 33 LF 2003 (loi n° 2002-101) | recueil |
+| II-4 | hébergement vendu par les agences | art. 36 LF 2004 | recueil |
+| II-12 bis | certification électronique — ajouté | art. 41 LF 2006 (loi n° 2005-106) | recueil |
+
+**Les changements qui portent une catégorie d'un régime à l'autre, vérifiés au JORT.** Dix-huit,
+dont six lus pour cette seconde passe (marqués ★).
+
+| Date d'effet | Catégorie | Avant → après | Texte, article, page | Lecture |
+|---|---|---|---|---|
+| non établie (LF 1989, sans clause) | restauration ; films en salle ; fruits et légumes transformés | absents des tableaux → 6 % (tableau B, § III, n° 8, 9, 11) | ★ loi n° 88-145, art. 24, JORT n° 87 de 1988, p. 1794 | image |
+| non établie (LF 1991) | eau potable | exonérée → hors du tableau A (n° 14 réduit à l'eau agricole) | ★ loi n° 90-111, art. 33, JORT n° 86 de 1990, p. 2052 | image |
+| non établie (LF 1992) | bicyclettes ; maïs | exonérées → hors du tableau A (n° 25 supprimé) ; maïs à 6 % | ★ loi n° 91-98, art. 40 et 35, JORT n° 90 de 1991, p. 2085-2086 | image |
+| 1er janvier 1995 | informatique, téléviseurs, transport de marchandises | 6 % → 10 % | loi n° 94-127, art. 56 à 58, p. 2047 | texte (N2) |
+| 1er janvier 1995 | sanitaires, froid domestique, chauffage, pneumatiques, éclairage | 29 % → 17 % (19 positions du tableau « M bis ») | ★ loi n° 94-127, art. 86 et tableau « M bis », p. 2050 et 2150-2151 | image |
+| 1er janvier 1995 | télécommunications | → exonérées (n° 48) | loi n° 94-127, art. 85 | texte (N2) |
+| 1er avril 1996 | professions libérales | 6 % → 10 % | loi n° 95-109, art. 37 § 6 et 38, p. 2371-2372 | texte (N1) |
+| 1er septembre 1996 | hôtellerie, tourisme, restauration | 6 % → 10 % | loi n° 95-109, art. 37 § 1 à 5 et 39 | texte (N2) |
+| fixée par décret | électricité, gaz, huiles de pétrole | 6 % → hors tableau | loi n° 95-109, art. 40 | texte (N1) |
+| 1er janvier 1998 | cacao et chocolat, eaux minérales, lave-linge, petit électroménager | 29 % → 18 % (15 positions du tableau « L ») | ★ loi n° 97-88, art. 27 et tableau « L », p. 2437 et 2557 | image |
+| 1er janvier 2001 | logements neufs des promoteurs | → exonérés (n° 50) | loi n° 2000-98, art. 63, p. 3181 | texte (N2) |
+| 1er janvier 2003 | télécommunications | exonérées → 18 % | loi n° 2001-123, art. 66 à 70 ; décret n° 2002-3356 | texte (N2) |
+| 1er janvier 2007 | biens du tableau C ; opérations à 10 % | 29 % → 18 % ; 10 % → 12 % | loi n° 2006-80, art. 13 et 17, p. 4302-4303 | texte (N1) |
+| non établie (aucune clause dans la loi) | hôtellerie et activités touristiques | 12 % → 6 % | ★ loi n° 2015-30, art. 20, JORT n° 67 du 21 août 2015, p. 1892 ; dernier article (art. 27, p. 1893) lu : la loi ne porte aucune date d'application | texte |
+| 1er janvier et 1er septembre 2016 | aéronefs, solaire, presse, radio-télédiffusion ; enseignement | exonérés → 6 % | loi n° 2015-53, art. 30 et 31, p. 3146-3147 | texte |
+| 1er janvier 2017 | sucre, énergies renouvelables, navires de commerce ; intrants agricoles, machines informatiques, transport de marchandises | exonérés → 6 % ; 12 % → 6 % | loi n° 2016-78, art. 16 à 19, 25 et 27, p. 3832-3836 | texte |
+| 1er janvier 2018 | logements neufs hors logement social | exonérés → 13 % | loi n° 2017-66, art. 44, p. 4281 | texte |
+| 1er janvier 2025 | logements neufs ; électricité domestique | 13 % → 7 % jusqu'à 400 000 dinars ; 13 % → 7 % jusqu'à 300 kWh | loi n° 2024-48, art. 64 et 31, p. 3449 et 3428 | texte |
+
+Reste lu en arabe seulement, non compté : professions libérales, 13 % → taux normal (décret-loi
+n° 2022-79, art. 44, 1er janvier 2023).
+
+**Date d'effet de la loi n° 2015-30.** Lue jusqu'à sa formule finale : aucun article ne fixe de date
+d'application, ni pour l'article 20 ni en général. La date d'effet résulte donc de la règle de droit
+commun (loi n° 93-64) ; elle n'est pas calculée ici, le jour du dépôt du fascicule du 21 août 2015
+n'étant pas relevé. Dans la vue, le changement tombe entre les colonnes 2014 et 2017.
+
+### 9.5 Les passages au taux normal de 2017 : ni confirmés ni infirmés
+
+L'édition officielle de 2017 (« revue et corrigée le 15 mars 2017 ») imprime le tableau B bis nouveau
+**parmi les dispositions abrogées** (vers la p. 79), sous le rappel de l'article 27 § 5 de la
+LF 2017, sans note sur le sort des numéros non repris ; son tableau B nouveau ne contient ni les
+services informatiques, ni la certification électronique, ni les services de formation, ni l'Internet
+fixe, ni la restauration ordinaire, ni les véhicules électriques. Elle **confirme la lettre** — ces
+numéros ne sont repris nulle part — et ne dit rien du taux qui en résulte. Les lignes « déduit » de 2017
+(restauration ordinaire, services informatiques et numériques) restent donc des déductions, à confirmer sur la note commune d'application.
+
+### 9.6 Réserves de portée
+
+Celles du § 4.1 valent entièrement : la vue ne couvre ni le **hors-champ** (produits agricoles et de
+la pêche vendus en l'état par le producteur ; commerce de détail avant 1996), ni l'**exonération au
+détail** de l'article 1er, II-11 (produits alimentaires, médicaments, produits homologués), ni les
+**suspensions** (articles 11 et 13 bis à 13 octies ; annexes 4 et 7 de la LF 2016 ; café, thé,
+médicaments de la Pharmacie centrale en 2025-2026), ni les décrets de l'article 8 autres que ceux de
+l'électricité et des produits pétroliers. **Une sortie du tableau A n'est pas à elle seule une
+taxation**, et une case vide n'est pas un taux normal. S'y ajoutent, pour cette vue :
+
+- les colonnes 2008 et 2014 valent **« d'après l'édition »** : deux recueils privés, sans discordance relevée
+  entre eux ni avec les dix-huit textes vérifiés, mais non relus numéro par numéro contre le JORT ;
+- un régime qui a existé **entre** deux dates repères n'apparaît pas (télécommunications exonérées de
+  1995 à 2002 ; professions libérales à 10 % de 1996 à 2006 ; logement neuf à 13 % de 2018 à 2024) :
+  il se lit au § 9.4 ;
+- les numéros « dont la liste est fixée par décret » (plants et semences, articles de sport,
+  équipements du n° 18 ter, matières premières de l'artisanat) ne disent pas les produits : la vue
+  s'arrête au libellé de la loi.
 
 ---
 
@@ -1616,6 +2217,67 @@ URL : l'adresse d'origine des fichiers n'est pas établie — le script
     "page": "1887",
     "URL": "https://www.pist.tn/jort/2015/2015F/Jo0672015.pdf",
     "note": "citation-key: lfc-2015\nJORT n° 67 du 21 août 2015 ; la loi commence p. 1887 (pied de page lu dans la couche texte de la copie locale PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_de_Finances_complémentaire_2015.pdf). Art. 13 (p. 1890) : Internet fixe au tableau B bis. Art. 20 (p. 1892) : hôtellerie et neuf activités touristiques ajoutées au § III du tableau B (n° 14 à 23) ; n° 2 à 9, 16 et 17 du § II du tableau B bis abrogés — 12 % → 6 %. Date d'effet non relevée. URL : champ pdf_fr de jort_cache.db, testée le 7 octobre 2026 (200, application/pdf, 1 602 283 octets ; fichier ouvert : édition française, loi n° 2015-30 en tête)."
+  }
+]
+```
+
+**Ajout de la seconde passe — éditions retrouvées dans les archives du web** (adresses, horodatages
+et empreintes repris de `fiscalite-tva-codes-consolides.md`, § 2 ; fichiers dans
+`tunisia-data/data/raw/minfinances/codes_tva/`). Les deux recueils privés et Jurisite ne sont pas des
+sources d'un état du droit : ils se citent « d'après l'édition… ».
+
+```json
+[
+  {
+    "id": "recueil-tva-bm-2008",
+    "type": "document",
+    "title": "Livre 3. Code de la TVA [recueil privé, sans auteur ni éditeur ; état après la loi de finances pour 2008]",
+    "issued": {"date-parts": [[2008, 1, 10]]},
+    "URL": "https://web.archive.org/web/20161023112429id_/http://www.bm.com.tn:80/ckeditor/files/code_tva.pdf",
+    "title-short": "Recueil privé du code de la TVA, janvier 2008",
+    "note": "citation-key: recueil-tva-bm-2008\nRECUEIL PRIVÉ, servi par le site du cabinet Best Management (bm.com.tn) ; aucune date d'édition dans le document : la date est celle des métadonnées du PDF (10 janvier 2008) ; loi la plus récente citée : n° 2007-70. 38 pages ; tableau A p. 21-30, tableau B p. 31-32, tableau B bis p. 33-34, loi n° 2002-103 p. 38 ; notes par numéro (article et loi). Tableau C absent. Adresse d'origine : http://www.bm.com.tn/ckeditor/files/code_tva.pdf ; capture du 23 octobre 2016, identique octet pour octet. Copie : tunisia-data/data/raw/minfinances/codes_tva/code_tva_2008_fr.pdf, 167 789 octets, SHA-256 458fed58bdfd432cd3d6dd3de22c86b94e4a750907202f28d5bbdf8d5abf3015. Se cite « d'après l'édition de 2008 » ; ne vaut pas Journal officiel."
+  },
+  {
+    "id": "recueil-codes-sefac-2014",
+    "type": "book",
+    "title": "Recueil des codes fiscaux [impôt sur le revenu et impôt sur les sociétés, taxe sur la valeur ajoutée et droit de consommation, enregistrement et timbre, droits et procédures fiscaux, fiscalité locale]",
+    "publisher": "SEFAC — Société d'études, de formation, d'assistance et de conseil",
+    "issued": {"date-parts": [[2014, 1, 24]]},
+    "URL": "https://web.archive.org/web/20181008125535id_/http://www.bm.com.tn:80/ckeditor/files/les_codes_definitifs_2014.pdf",
+    "title-short": "Recueil SEFAC des codes fiscaux, janvier 2014",
+    "note": "citation-key: recueil-codes-sefac-2014\nRECUEIL PRIVÉ ; aucune mention « à jour au » : la date est celle des métadonnées du PDF (24 janvier 2014) ; loi la plus récente citée dans la partie TVA : n° 2013-54. 364 pages ; tableau A p. 160-172, tableau B p. 174-175, tableau B bis p. 177-178 ; chaque numéro annoté de l'article et de la loi qui l'a ajouté, modifié ou abrogé. Tableau C absent. Deux discordances relevées contre le JORT : « LF Comp 2012-8 » pour la loi n° 2012-1 ; « Art 27 LF 2013-54 » pour l'article 29 (sukuk). Adresse d'origine : http://www.bm.com.tn/ckeditor/files/les_codes_definitifs_2014.pdf ; capture du 8 octobre 2018, identique octet pour octet. Copie : …/code_tva_2014_fr.pdf, 1 770 955 octets, SHA-256 e7a199bb824c1850aa4fbff48cf3a401b4ffa2f4661ffa8cf90772a3009e4c22. Se cite « d'après l'édition de 2014 »."
+  },
+  {
+    "id": "iort-code-tva-2016",
+    "type": "book",
+    "title": "Code de la taxe sur la valeur ajoutée, loi relative au droit de consommation, leurs textes d'application et textes connexes — 2016",
+    "publisher": "Publications de l'Imprimerie officielle de la République tunisienne",
+    "publisher-place": "Tunis",
+    "edition": "Édition revue et corrigée le 29 février 2016",
+    "issued": {"date-parts": [[2016, 2, 29]]},
+    "URL": "https://web.archive.org/web/20230610154921/http://chaexpert.com/documents/2016%20-%20CODE%20TVA%202016.pdf",
+    "title-short": "Code de la TVA, Imprimerie officielle, éd. 2016",
+    "note": "citation-key: iort-code-tva-2016\nÉdition officielle, en français, 542 pages. Tableaux A, B et B bis « nouveaux » (état après la LF 2016). TABLEAU C IMPRIMÉ EN ENTIER p. 53-74, avec les numéros du tarif (212 lignes), sous le titre des dispositions abrogées par l'article 13 de la loi n° 2006-80 : état du tableau à la veille de sa suppression (retraits de 1989 à 1998 portés : 49 positions éprouvées contre le JORT, note des tableaux § 8). Fichier pris sur un site tiers (chaexpert.com) ; capture Wayback du 10 juin 2023, non comparée octet pour octet ; l'adresse d'archive, composée de l'horodatage et de l'adresse d'origine, répond (200, application/pdf, testée le 7 octobre 2026). Copie : …/code_tva_2016_fr.pdf, 2 142 282 octets, SHA-256 77203067f2832760bc9da4e63317382925857fdef841affd8b407da3b48c8bfb."
+  },
+  {
+    "id": "iort-code-tva-2017",
+    "type": "book",
+    "title": "Code de la taxe sur la valeur ajoutée, loi relative au droit de consommation, leurs textes d'application et textes connexes — 2017",
+    "publisher": "Publications de l'Imprimerie officielle de la République tunisienne",
+    "publisher-place": "Tunis",
+    "edition": "Édition revue et corrigée le 15 mars 2017",
+    "issued": {"date-parts": [[2017, 3, 15]]},
+    "URL": "https://web.archive.org/web/20181220234514id_/http://www.legislation.tn:80/sites/default/files/codes/TVA.pdf",
+    "title-short": "Code de la TVA, Imprimerie officielle, éd. 2017",
+    "note": "citation-key: iort-code-tva-2017\nÉdition officielle, en français, 471 pages. Tableaux A et B nouveaux (état après la LF 2017) ; tableau B bis nouveau imprimé parmi les dispositions abrogées par l'article 27 de la loi n° 2016-78 (vers la p. 79) ; tableau C reproduit. Adresse d'origine : http://www.legislation.tn/sites/default/files/codes/TVA.pdf ; capture du 20 décembre 2018. Copie : …/code_tva_2017_fr.pdf, 3 826 418 octets, SHA-256 517ae10acf6174da4df8e369d1cf7fe4fc057f425669d652d292c7a8f2097060."
+  },
+  {
+    "id": "jurisite-code-tva",
+    "type": "webpage",
+    "title": "Code de la TVA [pages tva1000A1 à A5, tva1000B, tva1000Bbis, tva1000C1 à C5]",
+    "container-title": "Jurisite Tunisie",
+    "URL": "https://web.archive.org/web/20020618095808id_/http://www.jurisitetunisie.com/tunisie/codes/tva/tva1000.htm",
+    "note": "citation-key: jurisite-code-tva\nSITE PRIVÉ ; pages sans date d'édition : seule date sûre, l'horodatage de chaque capture des archives du web (de 2002 à 2017 ; le site n'est plus tenu à jour après la loi n° 2009-71). 113 fichiers et un manifeste (adresse d'origine, adresse d'archive https://web.archive.org/web/<horodatage>id_/…, octets, SHA-256 par fichier) : tunisia-data/data/raw/minfinances/codes_tva/jurisite_html/MANIFESTE.csv. Tableau C sans numéros de tarif. Employé ici comme contrôle seulement (note des tableaux § 8.3) ; mise à jour inégale d'une page à l'autre : ne donne pas un état daté."
   }
 ]
 ```
