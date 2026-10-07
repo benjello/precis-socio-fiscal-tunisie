@@ -6,6 +6,22 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Versement du 07/10/2026 (marché du travail, objets des réformes de la politique de l'emploi)
+
+Source : `docs/notes/marche-travail-politiques-emploi-objets-des-reformes.md`, § 9. **Neuf clés neuves** dans
+`precis/{fr,ar}/marche_travail/references.json` (mêmes identifiants, URL pist.tn lues dans `pdf_fr` / `pdf_ar` de
+`jort_cache.db`, éditions F et A de tailles distinctes) : `decret94-494`, `decret98-868`, `decret2002-13`, `loi97-79`,
+`loi2009-35`, `loi2009-82`, `dl2011-9`, `decret2001-1722`, `decret72-58`. Absentes de Zotero.
+
+- **Promue au fonds commun** : `lf-2004` (de `fiscalite`, FR et AR, sans copie restante ; rendu FR de `fiscalite` sans `[?]`) ;
+  la note reprend l'art. 16 (p. 3723). Dans Zotero : à **déclasser** de la collection `fiscalite`.
+- **Textes non lus** (mention dans la note d'entrée) : `decret94-494`, `decret98-868`, `decret2002-13`, `loi2009-82`,
+  `dl2011-9`, `decret2001-1722`, `decret72-58`. `loi2009-82` et `dl2011-9` sont à lire pour dater la fin du relais de l'État.
+- `decret72-58` : pagination de la notice (`0265-0226`) incohérente, non reprise.
+- **Non versé** : décret n° 2024-182 (la notice de `jort_cache.db`, recid 185440, porte sur les incitations de la loi de
+  l'investissement, non sur le décret n° 2019-542 : à vérifier à la lecture avant toute clé) et l'arrêté du 16 août 2024
+  (JORT n° 100), non identifié ici. `lf-2026` existe au fonds commun (inchangée).
+
 ## Ajouts à la main du 06/10/2026 (marché du travail, chapitre « Les politiques de l'emploi »)
 
 **Cinquante-trois clés neuves** dans `precis/fr/marche_travail/references.json` et `precis/ar/marche_travail/references.json`

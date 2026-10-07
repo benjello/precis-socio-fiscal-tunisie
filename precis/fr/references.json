@@ -7541,6 +7541,27 @@
       "page": "1887",
       "URL": "https://www.pist.tn/jort/2015/2015F/Jo0672015.pdf",
       "note": "citation-key: lfc-2015\nJORT n° 67 du 21 août 2015 ; la loi commence p. 1887 (pied de page de la première page lu dans la couche texte de la copie locale PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_de_Finances_complémentaire_2015.pdf ; la note de la compensation donnait 1886, corrigée). Compensation : tableau A, art. 40-01 et 40-03 : p. 1895 ; la loi ne contient aucun article sur la séparation entre sociétés (plein texte du fascicule). TVA : art. 13 (p. 1890) : Internet fixe au tableau B bis. Art. 20 (p. 1892) : hôtellerie et neuf activités touristiques ajoutées au § III du tableau B (n° 14 à 23) ; n° 2 à 9, 16 et 17 du § II du tableau B bis abrogés — 12 % → 6 %. Aucun article ne fixe de date d'application (dernier article, art. 27, p. 1893, lu) : date d'effet non relevée. Pages de l'édition française ; preuve : couche texte du fascicule français local. URL lue dans pdf_fr de jort_cache.db, testée le 7 octobre 2026 (200, application/pdf ; fichier ouvert : édition française, loi n° 2015-30 en tête)."
+    },
+    {
+      "id": "lf-2004",
+      "type": "legislation",
+      "title": "Loi n° 2003-80 du 29 décembre 2003, portant loi de finances pour l'année 2004",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "104",
+      "volume": "146",
+      "page": "3721",
+      "issued": {
+        "date-parts": [
+          [
+            2003,
+            12,
+            29
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2003/2003F/Jo1042003.pdf",
+      "note": "citation-key: lf-2004\nissue: 104\nJORT n° 104 du 30 décembre 2003, tome 146 ; la loi commence page 3721. Édition française établie sur pièce : la taille distante (content-length, curl -ksI, 16 septembre 2026) est égale à l'octet près au fascicule du corpus local, dont la première page porte « traduction française ». Un code 200 sur un chemin « …F/Jo… » ne suffit pas : pist.tn sert parfois l'édition arabe sous une adresse française.\nDROIT DE CONSOMMATION : même encodage décalé que le fascicule de 2002 — lettres lisibles, CHIFFRES PERDUS. Trois dispositions sont identifiées par leur intitulé, dont deux par les notices de jort_cache.db : « Maîtrise de l'application du droit de consommation dû sur les pneumatiques en caoutchouc » (page 3726), « Allègement de la fiscalité des véhicules automobiles aménagés spécialement à l'usage des handicapés » (page 3730) et « Révision de la fiscalité des véhicules tout terrain » (page 3731). Le texte de la première, lu par déchiffrement, ajoute à l'article premier de la loi n° 88-62 une règle sur les produits d'une position « Ex » importés montés sur roues entières, avec calcul sur la valeur totale de la roue à défaut de mention séparée. NUMÉRO D'ARTICLE NON ÉTABLI (la liste DGELF porte l'article 37). Date d'effet déduite (1er janvier 2004). Édition arabe : https://www.pist.tn/jort/2003/2003A/Ja1042003.pdf\nArt. 16 (encouragement du secteur privé à recruter les diplômés de l'enseignement supérieur : 50 % du salaire, 250 D), p. 3723 (notice de jort_cache.db, recid 110996) ; abrogé par l'article 2 de la loi n° 2005-91.",
+      "title-short": "Loi n° 2003-80 du 29 décembre 2003"
     }
   ]
 }
