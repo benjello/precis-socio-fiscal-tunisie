@@ -52,6 +52,10 @@ fiche devient `resolu`, remplace la réserve par la règle sourcée et retire l'
 - **Une section dit son objet dans ses premières lignes**, avant d'en raconter l'évolution ; un renvoi `@sec-…` remplace tout « comme on l'a vu » ou « ci-dessus ».
 - **Un renvoi vers une autre section se place en tête** de la section qui exclut le sujet (« l'électricité a sa propre section »), pas à la fin.
 - **Pas de métaphore pour nommer une chose du droit** : on dit « le champ », « les taux », « les règles de base de la taxe », non « le cœur ».
+- **On annonce ce que l'on présente, jamais ce que l'on ne fait pas.** Un guide de lecture dit ce que le chapitre donne (« pour chaque programme : le public, la durée, l'indemnité, les cotisations »), sans « s'en tient à », « laisse de côté », « ne traite que ».
+- **L'état du droit se dit par sa date** (« en juin 2023 »), pas par la façon dont il a été établi (« au dernier texte identifié ») : la fabrication n'intéresse pas le lecteur. La réserve — aucun texte postérieur identifié — s'écrit une seule fois, là où l'état du droit est exposé, avec son ancre `RECHERCHE`.
+- **On décrit ce qui est, pas ce que font les textes.** Le sujet de la phrase est l'État, le fonds, le programme, le bénéficiaire, l'entreprise : « l'État crée en 2009 six programmes », non « le décret de 2009 crée six programmes ». Le texte reste sujet quand il est lui-même l'information — ses mots cités, ce qu'il abroge nommément ou ne nomme pas —, mais jamais deux phrases de suite, et un paragraphe ne s'ouvre pas sur « Les textes… ».
+- **Une colonne, une chose.** Dans un tableau, l'année de la réforme et ses dates d'effet ont chacune leur colonne ; une date ne se coupe pas et s'écrit seule sur sa ligne (`[16 février 2009]{.insecable}`).
 
 ## Invariants du projet (à respecter absolument)
 - Exécute TOUJOURS les commandes Python via `uv run` (jamais `python3` ni `.venv/bin/python3`).
