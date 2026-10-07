@@ -2788,6 +2788,41 @@
       "title-short": "Loi n° 2009-32 du 23 juin 2009",
       "page": "1660",
       "note": "citation-key: loi-2009-32-restauration-formation\nJORT n° 51 du 26 juin 2009, p. 1660. Article 3, lu sur le fascicule français : modifie le numéro 30 bis du tableau A du code de la TVA (restauration au profit des étudiants, des élèves et des apprenants des centres de formation professionnelle de base, selon un cahier des charges). Le registre jort_cache.db donne par erreur à cet enregistrement le numéro 2009-39 (recid 109742) ; le numéro imprimé est 2009-32, ce que confirment le sommaire et le texte du fascicule. Ne pas confondre avec la loi n° 2009-39 du 8 juillet 2009 (retraite avant l'âge légal). URL lue dans pdf_fr de jort_cache.db."
+    },
+    {
+      "id": "bct-ra",
+      "type": "dataset",
+      "note": "citation-key: bct-ra\nTitre relevé en couverture des fascicules (« Rapport Annuel 2024 ») et confirmé sur bct.gov.tn ; les métadonnées PDF portent un code de service interne, inutilisable. Publication annuelle depuis 1959. Le tableau « Principaux indicateurs de l'emploi » ne figure toutefois que dans 14 rapports sur 66, d'où une série d'emploi limitée à 2007-2024.",
+      "publisher": "Banque Centrale de Tunisie",
+      "title": "Rapport Annuel",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/page.jsp?id=77",
+      "author": [
+        {
+          "literal": "Banque Centrale de Tunisie (BCT)"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ins-annuaire",
+      "type": "report",
+      "title": "Annuaire statistique de la Tunisie (éditions 1995-2001, 1998-2002, 1999-2003 et 2019-2023)",
+      "title-short": "INS, Annuaire statistique de la Tunisie",
+      "author": [
+        {
+          "literal": "Institut National de la Statistique (INS)"
+        }
+      ],
+      "publisher": "Institut National de la Statistique, Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.ins.tn/publication/annuaire-statistique-de-la-tunisie-2019-2023",
+      "note": "citation-key: ins-annuaire\nEnsemble d'éditions d'une publication annuelle de l'INS, à édition glissante sur cinq ans ou plus. Titre lu en couverture : « Annuaire statistique de la Tunisie » (édition 1995-2001 : « 2001, N° 44 », ISSN 0066-3689 ; édition 2019-2023 : « نشرية 65 », « Edition 2024 »). Éditions utilisées pour l'indice des prix à la consommation, colonne base 1970 : 1995-2001, 1998-2002 et 1999-2003 (tableau 13.7, « selon les différentes bases ») pour 1976-2003 ; 2019-2023 (tableau 13.6, « selon les différentes années de base ») pour 1999-2023. L'URL donnée est la page de l'édition 2019-2023 sur le portail de l'INS (vérifiée le 21 septembre 2026) ; les autres éditions sont sous https://www.ins.tn/publication/annuaire-statistique-de-la-tunisie-AAAA-AAAA (pages 1995-2001, 1998-2002 et 1999-2003 vérifiées le 21 septembre 2026). Liste des fichiers : dépôt tunisia-data, sources/ins-publications-urls.csv et sources/ins-annuaires-statistiques.md."
     }
   ]
 }
