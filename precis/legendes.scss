@@ -200,3 +200,21 @@ button.retour-au-texte {
   button.retour-au-texte { display: none; }
   a.renvoi-infobulle { text-decoration: none; }
 }
+
+
+// Césure dans les tableaux. Dans une cellule étroite, un lien ou un mot long était coupé au
+// milieu, lettre par lettre (« l'inscriptio / n au code »). Un mot ne se coupe qu'à une césure
+// de la langue de la page (`lang` est posé par Quarto), jamais ailleurs ; la première colonne —
+// une date, une période, un libellé de rupture — garde une largeur qui tient « 1990 → 2003 » ou
+// « 1er janvier 2015 » sur une ligne.
+main table td,
+main table th,
+main table a {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: auto;
+}
+main table td:first-child,
+main table th:first-child {
+  min-width: 7em;
+}
