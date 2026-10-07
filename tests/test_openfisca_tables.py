@@ -17,6 +17,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
+import openfisca_tables
 from openfisca_tables import (  # noqa: E402
     _annee,
     markdown_avec_legende,
@@ -177,6 +178,8 @@ class BlocEngendreTest(unittest.TestCase):
         self.assertIn("::: {.tableau-engendre .tableau-arborescence}\n\n" + self.CORPS, rendu)
         self.assertEqual(rendu.count(".tableau-engendre"), 1)
 
+    @unittest.skipIf(openfisca_tables.yaml is None,
+                     "PyYAML absent : l'onglet « Base législative » n'est pas rendu")
     def test_onglet_base_legislative_hors_du_bloc(self):
         self.fichier.with_suffix(".liens.yml").write_text(
             "- libelle: Taux\n  url: https://exemple.invalid/taux\n", encoding="utf-8")
