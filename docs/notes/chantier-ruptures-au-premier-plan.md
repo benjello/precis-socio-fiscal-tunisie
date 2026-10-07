@@ -78,3 +78,11 @@ hiérarchie se dit alors dans le texte.
 4. Reprise des chapitres, par ordre d'intérêt : politiques de l'emploi (cadres de 1993, 2009,
    2019 ; tableau des textes) ; salaire minimum ; compensation (réformes) ; cotisations (taux) ;
    retraites.
+
+## Décisions du propriétaire, au fil du test
+
+- **7 octobre 2026 — les études extérieures ne sont pas urgentes.** La place des rapports
+  extérieurs et des études d'incidence dans le plan d'un chapitre (où, à quel niveau, repliés ou
+  non) sera fixée dans la doctrine de l'architecte, dans un second temps. D'ici là, l'architecte
+  ne leur cherche pas de place nouvelle : il laisse là où ils sont ceux que le chapitre porte
+  déjà, et le récit économique se construit d'abord sur le budgétaire.
