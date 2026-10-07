@@ -60,12 +60,127 @@ details.chronologie-repliable[open] > summary {
 
 // Domicile unique des références (voir legendes.html et scripts/check_domicile_references.py) :
 // dans une section `.domicile-unique`, la prose nomme le texte de loi et le lien mène à sa ligne
-// du registre replié, qui porte la référence complète. Le lien se distingue d'un lien de
-// glossaire par un soulignement pointillé ; la ligne visée est surlignée.
-a[href^="#r-"] {
-  text-decoration: underline dotted;
-  text-underline-offset: 0.18em;
-}
+// du registre replié, qui porte la référence complète. La ligne visée est surlignée.
 tr.ligne-visee > td {
   background: rgba(255, 213, 79, 0.35);
+}
+
+
+// RENVOIS HOMOGÈNES (voir legendes.html). Tout mot qui porte une infobulle — texte de loi,
+// notion du glossaire, renvoi à une section, un tableau ou une figure, référence — reçoit le
+// même signal : un soulignement pointillé, plein au survol. Une seule nuance par famille, sur
+// la couleur du trait ; le texte garde la couleur des liens. Les liens ordinaires, vers
+// l'extérieur, ne sont pas concernés. Le PDF non plus.
+$renvoi-loi: #b7791f;
+$renvoi-notion: #2f855a;
+$renvoi-interne: $link-color;
+$renvoi-reference: #6c757d;
+
+a.renvoi-infobulle {
+  text-decoration: underline dotted;
+  text-decoration-thickness: 0.09em;
+  text-underline-offset: 0.2em;
+  text-decoration-color: $renvoi-interne;
+  &[data-famille="loi"] { text-decoration-color: $renvoi-loi; }
+  &[data-famille="notion"] { text-decoration-color: $renvoi-notion; }
+  &[data-famille="reference"] { text-decoration-color: $renvoi-reference; }
+  &:hover,
+  &:focus-visible,
+  &[aria-expanded="true"] {
+    text-decoration-style: solid;
+  }
+  // Le mot d'où l'on est parti, au retour : un éclat bref, pour que l'œil le retrouve.
+  &.retour-origine {
+    background: rgba(255, 213, 79, 0.55);
+    border-radius: 0.2em;
+    transition: background 0.6s ease;
+  }
+}
+
+// Une seule apparence d'infobulle : celles de Quarto (renvois, citations) et celles des lois et
+// des notions partagent le thème « quarto », habillé ici. Filet de couleur du côté du début de
+// ligne, selon la famille ; contenu borné en hauteur et défilable (un tableau entier peut y
+// loger).
+div[data-tippy-root] > .tippy-box[data-theme~="quarto"] {
+  border-radius: 0.375rem;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-inline-start: 3px solid $renvoi-interne;
+  box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.14);
+  color: #212529;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.45;
+  text-align: start;
+  > .tippy-content {
+    padding: 0.6rem 0.8rem;
+    max-height: min(22rem, 60vh);
+    overflow: auto;
+  }
+}
+div[data-tippy-root][data-famille="loi"] > .tippy-box[data-theme~="quarto"] { border-inline-start-color: $renvoi-loi; }
+div[data-tippy-root][data-famille="notion"] > .tippy-box[data-theme~="quarto"] { border-inline-start-color: $renvoi-notion; }
+div[data-tippy-root][data-famille="reference"] > .tippy-box[data-theme~="quarto"] { border-inline-start-color: $renvoi-reference; }
+
+.infobulle-famille {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6c757d;
+  margin-block-end: 0.25rem;
+}
+.infobulle-titre {
+  font-weight: 600;
+}
+.infobulle-meta,
+.infobulle-source {
+  color: #495057;
+  font-size: 0.8125rem;
+}
+// Le terme de l'autre langue garde son sens d'écriture, mais s'aligne comme le reste.
+.infobulle-autre {
+  text-align: left;
+  [dir="rtl"] :not([dir="ltr"]) > & { text-align: right; }
+}
+.infobulle-corps {
+  margin-block: 0.35rem;
+}
+.infobulle-pied {
+  margin-block-start: 0.45rem;
+  padding-block-start: 0.35rem;
+  border-block-start: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+// Les infobulles de Quarto reprennent un extrait de la page : on en resserre les marges.
+.infobulle-native {
+  > p:last-of-type, > .csl-entry:last-of-type { margin-block-end: 0; }
+  table { font-size: 0.8rem; }
+  figcaption { font-size: 0.9rem !important; margin-block-start: 0 !important; }
+}
+
+// Bouton de retour après un saut dans la page : flottant, en bas, au centre.
+button.retour-au-texte {
+  position: fixed;
+  inset-block-end: 1.25rem;
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
+  z-index: 1080;
+  padding: 0.45rem 0.95rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+  background: #fff;
+  color: #212529;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  &[hidden] { display: none; }
+  &:hover, &:focus-visible { background: #fff8e1; border-color: $renvoi-loi; }
+}
+[dir="rtl"] button.retour-au-texte { transform: translateX(50%); }
+@media print {
+  button.retour-au-texte { display: none; }
+  a.renvoi-infobulle { text-decoration: none; }
 }

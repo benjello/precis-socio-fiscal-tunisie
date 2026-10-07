@@ -2,16 +2,20 @@
 """Domicile unique des références juridiques : contrôle des sections qui l'adoptent.
 
 Dans une section dont le titre porte la classe `.domicile-unique`, la prose ne cite plus un
-texte de loi entre crochets dans le fil de la phrase : elle le nomme, et la référence complète
-(texte, article, page) va soit dans une note `^[[@clé, art. …].]` — infobulle au survol en HTML,
-note de bas de page en PDF —, soit sur une ligne d'un bloc `.chronologie-repliable`, atteinte par
-un lien `[…](#r-…)`. Ce contrôle vérifie que la précision n'a pas été perdue en route :
+texte de loi entre crochets : elle le nomme, et le nom porte un lien `[…](#r-…)` vers sa ligne
+dans un bloc `.chronologie-repliable`, qui porte la référence complète (texte, article, page).
+En HTML, le lien ouvre au survol une infobulle tirée de cette ligne, et le clic y mène, avec un
+retour d'un geste (`precis/legendes.html`). La référence ne va pas non plus en note
+`^[[@clé…].]` : l'exposant numéroté est réservé au PDF, où il sera tiré du lien lui-même. Ce
+contrôle vérifie que la précision n'a pas été perdue en route :
 
-1. dans une telle section, aucun appel `[@clé…]` à une référence de type `legislation` dans le
-   fil de la prose : il est en note, ou dans un bloc `.chronologie-repliable` ;
+1. dans une telle section, aucun appel `[@clé…]` à une référence de type `legislation` hors d'un
+   bloc `.chronologie-repliable` — ni dans le fil de la phrase, ni en note ;
 2. tout lien `(#r-…)` d'un fichier mène à une ancre `{#r-…}` du même fichier ;
 3. toute ancre `{#r-…}` est dans un bloc `.chronologie-repliable`, sur une ligne qui cite au
    moins une référence.
+
+Les citations d'études (`report`, `article-journal`…) restent permises dans la prose.
 
 Usage : uv run python scripts/check_domicile_references.py [fichiers.qmd…]
 Sans argument : tous les `.qmd` de `precis/fr/`. Sort en 1 s'il trouve une erreur.
@@ -31,7 +35,8 @@ CITATION = re.compile(r"@([A-Za-z0-9][A-Za-z0-9_:.-]*[A-Za-z0-9])")
 LIEN = re.compile(r"\]\(#(r-[A-Za-z0-9-]+)\)")
 ANCRE = re.compile(r"\{#(r-[A-Za-z0-9-]+)[^}]*\}")
 RENVOIS = ("tbl-", "fig-", "sec-", "eq-")
-# Note en ligne `^[ … ]`, crochets internes d'un niveau compris (`^[[@clé, art. 3].]`).
+# Note en ligne `^[ … ]`, crochets internes d'un niveau compris (`^[[@clé, art. 3].]`) : elle ne
+# sert qu'à dire, dans le message, où la citation fautive se trouve.
 NOTE = re.compile(r"\^\[(?:[^\[\]]|\[[^\[\]]*\])*\]")
 
 
@@ -73,17 +78,18 @@ def controler(fichier: Path, types: dict[str, str] | None = None) -> list[str]:
         elif dans_registre and fermeture and fermeture.group(1) == ouverture:
             dans_registre = False
         cles = [c for c in CITATION.findall(ligne) if not c.startswith(RENVOIS)]
-        hors_notes = NOTE.sub("", ligne)
-        cles_au_fil = [c for c in CITATION.findall(hors_notes) if not c.startswith(RENVOIS)]
         for ancre in ANCRE.findall(ligne):
             ancres[ancre] = (numero, dans_registre, bool(cles))
         liens += [(numero, cible) for cible in LIEN.findall(ligne)]
         if niveau_section and not dans_registre and not ligne.lstrip().startswith("<!--"):
-            for cle in cles_au_fil:
+            for cle in cles:
                 if types.get(cle) == "legislation":
+                    lieu = "en note" if NOTE.search(ligne) and cle not in CITATION.findall(
+                        NOTE.sub("", ligne)) else "dans la prose"
                     erreurs.append(
-                        f"{fichier}:{numero} : « @{cle} » cité dans la prose d'une section "
-                        f"à domicile unique — nommer le texte et mettre la référence en note")
+                        f"{fichier}:{numero} : « @{cle} » cité {lieu} d'une section à domicile "
+                        f"unique — nommer le texte et lier ce nom à sa ligne de registre "
+                        f"`[…](#r-…)`, sans crochet de citation ni note")
     for numero, cible in liens:
         if cible not in ancres:
             erreurs.append(f"{fichier}:{numero} : lien vers « #{cible} », ancre introuvable")

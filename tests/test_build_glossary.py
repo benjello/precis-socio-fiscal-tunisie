@@ -24,7 +24,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
 import build_glossary  # noqa: E402
-from build_glossary import ancres_utilisees, cite, clean, validate  # noqa: E402
+from build_glossary import (ancres_utilisees, cite, clean, render_infobulles,  # noqa: E402
+                            source_en_clair, texte_nu, validate)
 
 
 class CiteTest(unittest.TestCase):
@@ -172,6 +173,53 @@ class AncresUtiliseesTest(unittest.TestCase):
 
     def test_livre_inexistant(self):
         self.assertEqual(ancres_utilisees("livre-absent"), set())
+
+
+
+class InfobullesTest(unittest.TestCase):
+    """Le fichier d'inclusion des infobulles : embarqué dans chaque page du livre."""
+
+    ENTREES = [
+        {"id": "tva", "acronyme": "TVA", "source_definition": {"ref": "code", "locator": "art. 1"},
+         "fr": {"terme": "Taxe sur la valeur ajoutée",
+                "definition": "Impôt né le 1^er^ juillet 1988, dit *général* </script> [@code]."},
+         "ar": {"terme": "الأداء على القيمة المضافة", "definition": "أداء عام."}},
+        {"id": "autre-livre", "fr": {"terme": "Ailleurs", "definition": "Hors du livre."},
+         "ar": {"terme": "هناك", "definition": "خارج الكتاب."}},
+    ]
+
+    def charge(self, lang):
+        import json
+        rendu = render_infobulles(self.ENTREES, lang, {"tva"}, {"code": "Code de la TVA"})
+        self.assertEqual(rendu.count("</script"), 1)  # la balise fermante, et elle seule
+        self.assertNotIn("\\u", rendu)  # l'arabe est écrit en clair
+        debut = rendu.index(">", rendu.index("<script")) + 1
+        return json.loads(rendu[debut:rendu.rindex("</script>")])
+
+    def test_seules_les_notions_rendues(self):
+        self.assertEqual(list(self.charge("fr")), ["tva"])
+
+    def test_contenu_francais(self):
+        notion = self.charge("fr")["tva"]
+        self.assertEqual(notion["terme"], "Taxe sur la valeur ajoutée")
+        self.assertEqual(notion["autre"], "الأداء على القيمة المضافة")
+        self.assertEqual(notion["acronyme"], "TVA")
+        self.assertEqual(notion["source"], "Code de la TVA, art. 1")
+        self.assertEqual(notion["definition"],
+                         "Impôt né le 1er juillet 1988, dit général </script>.")
+
+    def test_contenu_arabe(self):
+        notion = self.charge("ar")["tva"]
+        self.assertEqual(notion["terme"], "الأداء على القيمة المضافة")
+        self.assertEqual(notion["autre"], "Taxe sur la valeur ajoutée")
+
+    def test_texte_nu(self):
+        self.assertEqual(texte_nu("Le [code](#g-code) du 1^er^ mai, **ferme**."),
+                         "Le code du 1er mai, ferme.")
+
+    def test_source_sans_titre_connu_est_omise(self):
+        self.assertEqual(source_en_clair({"ref": "inconnue"}, {}), "")
+        self.assertEqual(source_en_clair("code", {"code": "Code"}), "Code")
 
 
 if __name__ == "__main__":

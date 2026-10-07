@@ -94,3 +94,300 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("beforeprint", () => blocs.forEach(d => { d.open = true; }));
 });
 </script>
+
+<script>
+// Renvois homogènes : un seul modèle d'interaction pour tout ce qui, dans la phrase, renvoie
+// ailleurs — texte de loi (`#r-…`, ligne d'une chronologie), notion du glossaire (`#g-…`),
+// section, tableau ou figure (`a.quarto-xref`), référence bibliographique.
+//   1. le mot porte un soulignement pointillé (classe `renvoi-infobulle`, legendes.scss) ;
+//   2. au survol et au focus clavier, une infobulle donne l'essentiel ;
+//   3. l'infobulle est interactive : son pied porte un lien « Voir… » ; le clic sur le mot
+//      mène au même endroit ;
+//   4. tout saut DANS la page fait paraître un bouton « Revenir au texte » ; Échap et le
+//      bouton « précédent » du navigateur ramènent au même point.
+// Les infobulles des lois et des notions sont construites ici, avec la configuration que
+// Quarto donne aux siennes (thème « quarto ») ; celles des renvois et des citations restent
+// celles de Quarto, complétées d'une étiquette et d'un pied. Sans tippy, le mot reçoit un
+// attribut `title` ; sans la ligne de registre ou sans les données du glossaire
+// (`_glossaire.infobulles.html`, engendré par scripts/build_glossary.py), rien ne se passe.
+document.addEventListener("DOMContentLoaded", () => {
+  const principal = document.querySelector("main") || document.body;
+  const ar = document.documentElement.dir === "rtl" || document.documentElement.lang === "ar";
+  const L = ar ? {
+    loi: "نص قانوني", notion: "المعجم", tbl: "جدول", fig: "شكل", sec: "قسم", ref: "مرجع",
+    voirLoi: "انظر في التسلسل الزمني", voirNotion: "انظر في المعجم", voirTbl: "انظر الجدول",
+    voirFig: "انظر الشكل", voirSec: "انظر القسم", voirRef: "انظر المرجع", voir: "انظر",
+    source: "المصدر", retour: "↪ العودة إلى النص", fleche: " ←", deux: " : ",
+  } : {
+    loi: "Texte de loi", notion: "Glossaire", tbl: "Tableau", fig: "Figure", sec: "Section",
+    ref: "Référence", voirLoi: "Voir dans la chronologie", voirNotion: "Voir au glossaire",
+    voirTbl: "Voir le tableau", voirFig: "Voir la figure", voirSec: "Voir la section",
+    voirRef: "Voir la référence", voir: "Voir", source: "Source",
+    retour: "↩ Revenir au texte", fleche: " →", deux: " : ",
+  };
+
+  // ── Petits outils ─────────────────────────────────────────────────────────────────
+  const el = (balise, classe, texte) => {
+    const e = document.createElement(balise);
+    if (classe) e.className = classe;
+    if (texte) e.textContent = texte;
+    return e;
+  };
+  // Coupe à la fin d'un mot, sans jamais rendre plus de `n` caractères.
+  const abreger = (texte, n) => {
+    const t = (texte || "").replace(/\s+/g, " ").trim();
+    if (t.length <= n) return t;
+    const coupe = t.slice(0, n);
+    return coupe.slice(0, Math.max(coupe.lastIndexOf(" "), n - 40)).replace(/[\s,;:(«—–-]+$/, "") + "…";
+  };
+  // Un contenu cloné ne doit garder aucun `id` : l'infobulle est insérée près du mot, donc
+  // AVANT la cible dans la page, et `getElementById` rendrait la copie au lieu de l'original.
+  const sansIds = (noeud) => {
+    noeud.querySelectorAll("[id]").forEach(e => e.removeAttribute("id"));
+    noeud.querySelectorAll(".renvoi-infobulle").forEach(e => e.classList.remove("renvoi-infobulle"));
+    return noeud;
+  };
+  const pied = (href, libelle) => {
+    const p = el("div", "infobulle-pied");
+    const a = el("a", "", libelle + L.fleche);
+    a.setAttribute("href", href);
+    p.appendChild(a);
+    return p;
+  };
+  const cibleDe = (a) => {
+    const href = a.getAttribute("href") || "";
+    if (!href.startsWith("#") || href.length < 2) return null;
+    try { return document.getElementById(decodeURIComponent(href.slice(1))); } catch { return null; }
+  };
+
+  // ── Contenu des infobulles ────────────────────────────────────────────────────────
+  // Texte de loi : la ligne du registre visée — sa date (cellule de l'ancre), sa référence
+  // complète telle que rendue (première cellule qui porte une citation), et le changement
+  // (dernière cellule), abrégé.
+  const contenuLoi = (a) => {
+    const cible = cibleDe(a);
+    const ligne = cible && cible.closest("tr");
+    if (!ligne) return null;
+    const cellules = [...ligne.children];
+    const cDate = cible.closest("td, th");
+    const cRef = cellules.find(c => c.querySelector(".citation")) || null;
+    const cFin = cellules[cellules.length - 1];
+    const entetes = [...(ligne.closest("table")?.querySelectorAll("thead th") || [])];
+    const boite = el("div", "infobulle infobulle-loi");
+    boite.appendChild(el("div", "infobulle-famille", L.loi));
+    if (cRef) {
+      const titre = el("div", "infobulle-titre");
+      titre.innerHTML = cRef.innerHTML;
+      boite.appendChild(sansIds(titre));
+    }
+    if (cDate && cDate !== cRef) {
+      const entete = entetes[cellules.indexOf(cDate)]?.textContent.trim();
+      boite.appendChild(el("div", "infobulle-meta",
+        (entete ? entete + L.deux : "") + cDate.textContent.trim()));
+    }
+    if (cFin && cFin !== cRef && cFin !== cDate) {
+      boite.appendChild(el("div", "infobulle-corps", abreger(cFin.textContent, 260)));
+    }
+    boite.appendChild(pied(a.getAttribute("href"), L.voirLoi));
+    return boite;
+  };
+
+  // Notion du glossaire : terme, équivalent dans l'autre langue, définition abrégée, source.
+  let notions = {};
+  try {
+    const bloc = document.getElementById("glossaire-infobulles");
+    if (bloc) notions = JSON.parse(bloc.textContent) || {};
+  } catch { notions = {}; }
+  const notionDe = (a) => {
+    const m = (a.getAttribute("href") || "").match(/#g-([a-z0-9-]+)$/);
+    return m ? notions[m[1]] : undefined;
+  };
+  const contenuNotion = (a) => {
+    const n = notionDe(a);
+    if (!n) return null;
+    const boite = el("div", "infobulle infobulle-notion");
+    boite.appendChild(el("div", "infobulle-famille", L.notion));
+    const titre = el("div", "infobulle-titre", n.acronyme ? `${n.terme} (${n.acronyme})` : n.terme);
+    boite.appendChild(titre);
+    if (n.autre) {
+      const autre = el("div", "infobulle-meta infobulle-autre", n.autre);
+      autre.setAttribute("lang", ar ? "fr" : "ar");
+      autre.setAttribute("dir", ar ? "ltr" : "rtl");
+      boite.appendChild(autre);
+    }
+    if (n.definition) boite.appendChild(el("div", "infobulle-corps", abreger(n.definition, 340)));
+    if (n.source) boite.appendChild(el("div", "infobulle-source", L.source + L.deux + n.source));
+    boite.appendChild(pied(a.getAttribute("href"), L.voirNotion));
+    return boite;
+  };
+
+  // ── Pose des infobulles ───────────────────────────────────────────────────────────
+  // Même configuration que les infobulles de Quarto (fonction `tippyHover` de la page), au
+  // placement près : popper lit « start » comme « gauche », d'où « end » en arabe.
+  const placement = ar ? "bottom-end" : "bottom-start";
+  const armes = new WeakSet();  // écrans tactiles : liens dont l'infobulle vient d'être ouverte
+  const marquer = (a, famille) => {
+    a.classList.add("renvoi-infobulle");
+    a.dataset.famille = famille;
+  };
+  const poser = (a, famille, construire) => {
+    if (a._tippy) return;
+    marquer(a, famille);
+    if (!window.tippy) {
+      // Repli sans tippy : l'essentiel en infobulle native du navigateur.
+      const c = construire(a);
+      if (c) {
+        c.querySelector(".infobulle-pied")?.remove();
+        a.setAttribute("title", [...c.children].map(e => e.textContent.trim()).filter(Boolean).join(" — "));
+      }
+      return;
+    }
+    window.tippy(a, {
+      allowHTML: true, maxWidth: 500, delay: 100, arrow: false, interactive: true,
+      interactiveBorder: 10, theme: "quarto", placement,
+      appendTo: (r) => r.parentElement,
+      content: "",
+      onCreate: (i) => { i.popper.dataset.famille = famille; },
+      // Le contenu n'est construit qu'à la première ouverture : une page porte des centaines
+      // de liens de glossaire.
+      onShow: (i) => {
+        if (i._construit) return;
+        const c = construire(a);
+        if (!c) return false;
+        i.setContent(c);
+        i._construit = true;
+      },
+      onHidden: () => armes.delete(a),
+    });
+  };
+  const dansLeTexte = (a) => !a.classList.contains("anchorjs-link") && !a.closest("nav, .tippy-box");
+  principal.querySelectorAll('a[href^="#r-"]').forEach(a => {
+    if (dansLeTexte(a) && cibleDe(a)?.closest("tr")) poser(a, "loi", contenuLoi);
+  });
+  principal.querySelectorAll('a[href*="#g-"]').forEach(a => {
+    // Le lien de bascule vers l'autre langue (« ../../ar/… ») n'est pas un renvoi de notion.
+    if (dansLeTexte(a) && !a.getAttribute("href").startsWith("../") && notionDe(a)) {
+      poser(a, "notion", contenuNotion);
+    }
+  });
+
+  // Infobulles de Quarto (renvois et citations) : posées par un script qui s'exécute APRÈS
+  // celui-ci, d'où le report. On ne touche ni à leur contenu ni à leur déclenchement : à
+  // l'ouverture, on leur ajoute l'étiquette de famille et le pied « Voir… », et l'on retire
+  // les `id` du contenu cloné. Un renvoi vers un AUTRE chapitre est lu par `fetch()`, refusé
+  // en `file://` : son infobulle se réduit alors à l'étiquette et au pied.
+  const habiller = (a, famille, etiquette, voir) => {
+    marquer(a, famille);
+    const i = a._tippy;
+    if (!i) return;
+    i.popper.dataset.famille = famille;
+    i.setProps({
+      placement,
+      onMount: (inst) => {
+        const contenu = inst.popper.querySelector(".tippy-content");
+        if (!contenu || contenu.querySelector(":scope > .infobulle-pied")) return;
+        // Renvoi vers un élément d'un AUTRE chapitre : Quarto ne sait pas en extraire la
+        // cible (il rend le début du chapitre, ou rien en `file://`). On s'en tient au nom
+        // du renvoi et au lien.
+        const href = a.getAttribute("href") || "";
+        if (!href.startsWith("#") && href.includes("#")) {
+          contenu.replaceChildren(el("div", "infobulle-titre", a.textContent.trim()));
+        }
+        sansIds(contenu);
+        contenu.classList.add("infobulle", "infobulle-native");
+        contenu.prepend(el("div", "infobulle-famille", etiquette));
+        contenu.appendChild(pied(a.getAttribute("href"), voir));
+      },
+      onHidden: () => armes.delete(a),
+    });
+  };
+  setTimeout(() => {
+    principal.querySelectorAll("a.quarto-xref").forEach(a => {
+      if (!dansLeTexte(a)) return;
+      const m = (a.getAttribute("href") || "").match(/#(tbl|fig|sec)-/);
+      const sorte = m ? m[1] : "sec";
+      habiller(a, "renvoi", L[sorte], L["voir" + sorte[0].toUpperCase() + sorte.slice(1)]);
+    });
+    principal.querySelectorAll('a[role="doc-biblioref"]').forEach(a => {
+      if (dansLeTexte(a)) habiller(a, "reference", L.ref, L.voirRef);
+    });
+  }, 0);
+
+  // ── Écrans tactiles ───────────────────────────────────────────────────────────────
+  // Le premier toucher ouvre l'infobulle sans suivre le lien ; le lien du pied, ou un second
+  // toucher sur le mot, mène à la cible. En phase de capture, pour précéder les autres écoutes.
+  let tactile = false;
+  document.addEventListener("pointerdown", (e) => { tactile = e.pointerType === "touch"; }, true);
+  document.addEventListener("click", (e) => {
+    if (!tactile || !e.target.closest) return;
+    const a = e.target.closest("a.renvoi-infobulle");
+    if (!a || !a._tippy || armes.has(a)) return;
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    armes.add(a);
+    a._tippy.show();
+  }, true);
+
+  // ── Aller et revenir ──────────────────────────────────────────────────────────────
+  // Un clic sur un lien qui mène ailleurs DANS la page (ligne de registre, tableau, figure,
+  // section, référence, note) mémorise le mot d'où l'on part et sa hauteur à l'écran. Le
+  // retour passe toujours par l'historique : le bouton et Échap appellent `history.back()`,
+  // de sorte que le bouton « précédent » du navigateur fait exactement la même chose.
+  const pile = [];
+  const bouton = el("button", "retour-au-texte", L.retour);
+  bouton.type = "button";
+  bouton.hidden = true;
+  document.body.appendChild(bouton);
+  const revenir = () => { if (pile.length) history.back(); };
+  bouton.addEventListener("click", revenir);
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+    // Échap dans un champ de saisie (la recherche du livre) garde son sens habituel.
+    if (e.target.closest && e.target.closest("input, textarea, select, [contenteditable], #quarto-search, .aa-Panel")) return;
+    if (window.tippy?.hideAll) window.tippy.hideAll({ duration: 0 });
+    if (!bouton.hidden) revenir();
+  });
+  document.addEventListener("click", (e) => {
+    if (e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    const a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a || !principal.contains(a) || a.closest("nav")) return;
+    if (a.classList.contains("anchorjs-link") || a.getAttribute("role") === "doc-backlink") return;
+    if (!cibleDe(a)) return;
+    // Un lien cliqué dans une infobulle : on part du mot qui la porte.
+    const racine = a.closest("[data-tippy-root]");
+    const origine = (racine && racine._tippy && racine._tippy.reference) || a;
+    if (racine && racine._tippy) racine._tippy.hide();
+    history.replaceState({ ...(history.state || {}), precisRetour: pile.length }, "");
+    pile.push({ el: origine, haut: origine.getBoundingClientRect().top });
+    // Même adresse qu'à l'instant (second clic sur le même lien) : le navigateur n'empilerait
+    // rien, et « précédent » quitterait la page.
+    if (location.hash === a.getAttribute("href")) history.pushState(null, "", location.hash);
+    bouton.hidden = false;
+  }, true);  // en capture : la hauteur se mesure AVANT que les autres écoutes ne fassent défiler
+  window.addEventListener("popstate", (e) => {
+    const n = e.state && e.state.precisRetour;
+    if (!Number.isInteger(n) || !pile[n]) return;
+    const depart = pile[n];
+    pile.length = n;
+    bouton.hidden = pile.length === 0;
+    document.querySelectorAll("tr.ligne-visee").forEach(tr => tr.classList.remove("ligne-visee"));
+    // Deux passes : le navigateur restaure lui-même un défilement, avant ou après l'événement
+    // selon les moteurs, et le dépliage d'une chronologie a pu déplacer le texte.
+    const recaler = () => {
+      window.scrollTo(window.scrollX, window.scrollY + depart.el.getBoundingClientRect().top - depart.haut);
+    };
+    recaler();
+    requestAnimationFrame(recaler);
+    setTimeout(() => {
+      recaler();
+      // Le focus revient au mot sans rouvrir son infobulle.
+      const bulle = depart.el._tippy;
+      if (bulle) bulle.disable();
+      depart.el.focus({ preventScroll: true });
+      if (bulle) setTimeout(() => bulle.enable(), 0);
+      depart.el.classList.add("retour-origine");
+      setTimeout(() => depart.el.classList.remove("retour-origine"), 1800);
+    }, 60);
+  });
+});
+</script>

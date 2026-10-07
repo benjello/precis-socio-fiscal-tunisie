@@ -44,9 +44,17 @@ class DomicileUniqueTest(unittest.TestCase):
                  "[@lf-1999, art. 56].\n" + REGISTRE)
         self.assertEqual(len(erreurs(self.tmp, texte)), 1)
 
-    def test_loi_en_note_admise(self):
+    def test_loi_en_note_refusee(self):
+        # L'exposant numéroté est réservé au PDF : en HTML, le nom du texte porte le lien.
         texte = ("## Crédit {#sec-c .domicile-unique}\n\nLa loi de finances pour 1999"
                  "^[[@lf-1999, art. 56, p. 2507].] porte la part à 50 %.\n" + REGISTRE)
+        trouvees = erreurs(self.tmp, texte)
+        self.assertEqual(len(trouvees), 1)
+        self.assertIn("en note", trouvees[0])
+
+    def test_etude_en_note_admise(self):
+        texte = ("## Crédit {#sec-c .domicile-unique}\n\nUne étude le chiffre"
+                 "^[[@etude-2014, p. 3].].\n" + REGISTRE)
         self.assertEqual(erreurs(self.tmp, texte), [])
 
     def test_hors_section_la_citation_reste_permise(self):

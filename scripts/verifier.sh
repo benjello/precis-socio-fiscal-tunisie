@@ -66,7 +66,7 @@ etape() {
 # vient de régénérer un glossaire à jour, pas encore commité. On compare donc
 # l'empreinte des fichiers engendrés AVANT et APRÈS l'appel : un écart dit
 # seulement qu'ils viennent de changer, pas que quelque chose est cassé.
-GLOSSAIRE_CIBLES=(precis/*/*/_glossaire.qmd translation_glossary.generated.md)
+GLOSSAIRE_CIBLES=(precis/*/*/_glossaire.qmd precis/*/*/_glossaire.infobulles.html translation_glossary.generated.md)
 AVANT=$(sha256sum "${GLOSSAIRE_CIBLES[@]}" 2>/dev/null)
 if uv run python scripts/build_glossary.py >>"$LOG" 2>&1; then
   APRES=$(sha256sum "${GLOSSAIRE_CIBLES[@]}" 2>/dev/null)

@@ -31,7 +31,7 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   toi-même au `_quarto.yml` arabe**, une fois sa traduction livrée — sans quoi il ne sera servi dans
   aucune des deux langues. Un fichier malformé ou des chapitres qui dérivent sont attrapés par
   `rendre-les-livres.yml`, qui rend les dix-huit livres sur chaque PR.
-- **Ne modifie pas les fichiers engendrés** : `_glossaire.qmd`, `translation_glossary.generated.md`,
+- **Ne modifie pas les fichiers engendrés** : `_glossaire.qmd`, `_glossaire.infobulles.html`, `translation_glossary.generated.md`,
   `precis/*/*/tables/*`.
 - **Aucune valeur isolée, aucune date, aucune URL sans source vérifiée.** Une case vide honnête vaut
   mieux qu'une valeur plausible. Exception éditoriale : une **série historique importante déjà
