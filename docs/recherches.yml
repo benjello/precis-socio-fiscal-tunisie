@@ -1574,3 +1574,82 @@
   - lire l'étude de l'ANER de 2000 sur l'impact des prix de l'énergie
   - demander à la STEG l'historique des grilles de 1993 à 2003, avec leurs dates d'effet
   - annuaires statistiques de l'INS, prix de l'électricité
+
+- id: r-fiap-texte-fondateur
+  objet: texte instituant le fonds d'insertion et d'adaptation professionnelle (FIAP), vers 1990-1991
+  ou: [precis/fr/marche_travail/_politiques_emploi.qmd#sec-mt-pe-fonds-avant-2000]
+  requetes:
+    titres_fts:
+    - '"insertion et d adaptation professionnelle" OR "insertion et l adaptation professionnelle"'
+    - '"fonds d insertion" OR ("adaptation professionnelle" AND fonds)'
+    plein_texte: [insertion et d'adaptation prof]
+    depuis: 1988-01-01
+  passes:
+  - date: 2026-10-06
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'intitulés de jort_cache en entier : un seul texte, la loi n° 91-4 (ratification du prêt BIRD) ; plein texte limité aux fascicules déjà convertis de 1990 à 1994 (markdown_output), aucun résultat ; fascicules scannés non océrisés non parcourus ; intitulés arabes non interrogés'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [lire la loi de finances pour 1991 et le fascicule de la loi n° 91-4, interroger iort_ar]
+
+- id: r-sivp-bareme-1993-2009
+  objet: arrêtés fixant le barème de l'indemnité des stages d'initiation à la vie professionnelle (décret n° 93-1049, art. 25 et 28) et texte l'ayant modifiée avant le décret n° 2009-349
+  ou: [precis/fr/marche_travail/_politiques_emploi.qmd#sec-mt-pe-1981-1993]
+  requetes:
+    titres_fts:
+    - '"initiation a la vie professionnelle"'
+    - '"emploi des jeunes"'
+    - '"bareme des indemnites" OR (indemnite AND stagiaires AND "vie professionnelle")'
+    depuis: 1993-05-03
+  periode:
+    jusqu_au: 2009-02-10
+    motif: barème antérieur au décret n° 2009-349, publié le 10 février 2009
+  passes:
+  - date: 2026-10-06
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'intitulés de jort_cache : candidats non lus, l''arrêté du 15 juin 1995 (JORT n° 50 de 1995) et le décret n° 2000-1786 ; aucun arrêté de barème à l''intitulé'
+    couvert_jusqu_au: 2009-02-10
+    resultat: aucun
+  a_faire: [lire l'arrêté du 15 juin 1995 et le décret n° 2000-1786]
+
+- id: r-d2012-2369-arretes-cheques
+  objet: arrêtés conjoints fixant les conditions d'émission du chèque d'amélioration de l'employabilité et du chèque d'appui à l'emploi (décret n° 2012-2369, art. 6, 9 et 11)
+  ou: [precis/fr/marche_travail/_politiques_emploi.qmd#sec-mt-pe-2012]
+  requetes:
+    titres_fts: ['"cheque d amelioration" OR "cheque d appui"']
+    iort_ar: [صك تحسين, صك دعم التشغيل]
+    depuis: 2012-10-16
+  passes:
+  - date: 2026-10-06
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: intitulés français (FTS) et arabes (LIKE) de jort_cache jusqu'au n° 107 de 2026 ; aucun fascicule lu ; les fascicules que la base ignore ne sont pas couverts
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-chantiers-regionaux-texte-fondateur
+  objet: texte instituant ou organisant les chantiers régionaux et nationaux d'emploi, antérieur au décret gouvernemental n° 2021-436
+  ou: [precis/fr/marche_travail/_politiques_emploi.qmd#sec-mt-pe-chantiers]
+  requetes:
+    titres_fts:
+    - '"chantiers" AND (emploi OR chomage OR ouvriers)'
+    - '"lutte contre le sous-developpement" OR "sous developpement"'
+    - '"chantiers regionaux" OR "chantiers nationaux"'
+    iort_ar: [الحضائر]
+    depuis: 1956-01-01
+  periode:
+    jusqu_au: 2021-06-18
+    motif: texte antérieur au décret gouvernemental n° 2021-436, publié le 18 juin 2021
+  passes:
+  - date: 2026-10-06
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'intitulés de jort_cache : décrets de prorogation de 1956-1957, lois n° 57-70 et n° 60-16, loi n° 62-31, puis rien avant 2021 ; deux intitulés arabes contiennent « الحضائر » (LIKE sur titre) : LF 2013, art. 77 (encouragement du secteur privé à recruter des ouvriers de chantiers) et LF 2024, art. 12 (régularisation des ouvriers de 45 à 55 ans, qui modifie l''art. 18 bis d''une loi n° 2021-27) — aucun n''institue le mécanisme ; visas du décret n° 2021-436 non exploités'
+    couvert_jusqu_au: 2021-06-17
+    resultat: aucun
+  a_faire:
+  - relever les visas du décret n° 2021-436
+  - identifier la loi n° 2021-27 et son art. 18 bis
+  - lire la loi n° 58-45 art. 29 (lutte contre le chômage)
