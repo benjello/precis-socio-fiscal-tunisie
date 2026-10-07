@@ -164,6 +164,14 @@ conversion.
   dessus en conflit sur tout ce qu'elles partagent ; prendre la version de master pour ce que
   la branche du dessus ne modifie pas, la sienne pour le reste, puis vérifier le diff.
 - **Deux agents, jamais le même worktree.** Chaque étape a eu sa branche et son répertoire.
+- **Lancer les tests comme la CI avant d'ouvrir la PR.** `uv run pytest` installe les dépendances
+  du projet ; la CI lance `uv run --isolated --no-project python -m unittest discover -s tests`,
+  sans PyYAML ni pandas. Un test qui en a besoin doit se sauter quand elles manquent. Le
+  7 octobre, un seul test de ce genre a retardé la fusion du chantier d'un quart d'heure.
+- **Regrouper les branches empilées avant de fusionner.** Trois PR en brouillon empilées ont été
+  réunies sur une branche à jour de master et fusionnées en une fois (#383) ; un commit poussé
+  sur une branche du milieu APRÈS que celle du dessus l'a absorbée reste dehors : vérifier, pour
+  chaque branche, qu'elle est contenue dans la tête de la PR avant de la supprimer.
 
 ### Ce que la relecture du propriétaire a ajouté (7 octobre 2026, après-midi)
 
@@ -188,3 +196,12 @@ conversion.
 - La frise de tête ; le PDF (filtre qui change un lien `#r-…` en note de bas de page) ; l'arabe
   (attributs `titre` des blocs, libellés, chapitres en retard de structure).
 - L'ordre des volumes : commencer par les chapitres dont les registres existent déjà.
+
+## Verdict du prototype (7 octobre 2026, 17 h 30)
+
+Le propriétaire a lu le chapitre de la TVA converti puis corrigé : « ce que j'ai lu […] me
+convient, beau travail. Retenir ces principes pour la suite. » Le prototype est accepté ; les
+principes de cette note, de `docs/agents/architecte.md` et de `docs/agents/redacteur.md` valent
+désormais pour tout chapitre. Fusionné dans master le 7 octobre 2026 (PR #383), avec le contrôle des références branché dans
+`verifier.sh` et la CI et les infobulles du glossaire dans les dix-huit `_quarto.yml`. Reste,
+avant la conversion des autres volumes : choisir leur ordre.
