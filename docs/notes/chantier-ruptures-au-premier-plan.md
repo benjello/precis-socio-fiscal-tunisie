@@ -96,3 +96,81 @@ hiérarchie se dit alors dans le texte.
   place ; grandes réformes ; état du droit ; dispositifs ; longue période. Versé dans
   `docs/agents/architecte.md`, avec le retour du premier essai (registre de destination, deux
   niveaux de ruptures, questions au documentaliste, degrés de lecture).
+
+## Ce que la conversion de la TVA a appris — mode d'emploi pour les autres chapitres
+
+Écrit le 7 octobre 2026, après la conversion complète du chapitre de la TVA (11 000 mots, 62
+références, une matinée). À relire avant de convertir un autre chapitre ; à corriger à chaque
+conversion.
+
+### L'ordre qui a marché
+
+1. **L'architecte d'abord, sur le chapitre tel qu'il est.** Il rend une fiche de plan :
+   frontière entre le cœur et le secondaire, épine (mise en place, grandes réformes), fiches,
+   classement des textes, et surtout le **registre de destination** — chaque section, tableau,
+   figure, `TODO` et ancre du chapitre, avec sa place dans le nouveau plan. Sans ce registre,
+   « ne rien perdre » ne se prouve pas. Compter une demi-heure, et un second passage : le premier
+   plan a été refusé (tout par dispositif, la chronologie réduite à un tableau).
+2. **Le propriétaire tranche** les points que l'architecte laisse ouverts (bornes des réformes,
+   place d'une figure, forme d'un tableau). Cinq questions courtes ont suffi.
+3. **Le documentaliste comble « ce que la loi cherche ».** Les notes documentaires ne relèvent
+   presque jamais les rubriques sous lesquelles les lois rangent leurs articles : quatre des cinq
+   réformes n'avaient pas d'objet. Un ticket borné (liste d'articles, rubriques mot pour mot,
+   dates d'effet douteuses) a pris une demi-heure et a aussi corrigé trois erreurs des notes.
+   À l'avenir, **le documentaliste relève ces rubriques dès la première passe**.
+4. **Le rédacteur réorganise, il ne récrit pas.** Consigne : une réorganisation, aucun fait
+   nouveau hors de la note complémentaire, tous les identifiants conservés. Les passages
+   inchangés se recopient mécaniquement depuis une copie de départ. Une demi-heure.
+5. **Le domicile unique vient en dernier, sur le chapitre déjà réorganisé** : ancres sur les
+   lignes des registres, puis les références de loi sortent du fil de la prose. Un quart
+   d'heure, parce que les registres existaient déjà.
+
+### Les contrôles à ne pas sauter
+
+- **Mesurer avant.** Mots, appels de citation, clés distinctes, couples (clé, localisateur),
+  ancres de glossaire, identifiants, `TODO`, ancres `RECHERCHE` — sur une copie de départ
+  gardée hors du dépôt. À l'arrivée : toutes les clés, tous les couples, toutes les ancres, tous
+  les identifiants ; chaque manque justifié un par un.
+- **`scripts/check_domicile_references.py`** : aucune loi citée dans le fil d'une section
+  `.domicile-unique`, tout lien `#r-…` a son ancre, toute ancre est sur une ligne qui cite.
+- **Voir dans un vrai navigateur.** Le rendu ne suffit pas : les infobulles, le dépliage et le
+  retour se vérifient avec Playwright (`uv run --with playwright`, Firefox, en `file://`, qui
+  est le mode de relecture du propriétaire). Le Chromium du système, lancé sans tête, rend des
+  pages blanches.
+- **`scripts/verifier.sh --sans-reseau <livre>`** après chaque étape ; la numérotation refuse
+  une section à une seule sous-section, ce que la réorganisation produit facilement.
+
+### Les pièges rencontrés
+
+- **Le chapitre grossit.** 11 000 → 22 000 mots, le premier plan + 57 % : registres nouveaux,
+  rubriques citées, phrases de situation. Le propriétaire l'accepte tant que le détail est
+  replié ; à surveiller, et à dire.
+- **Les références s'empilent dans les cellules de registre** quand on y regroupe les appels
+  de plusieurs phrases : la même loi trois fois, avec des articles presque identiques. Dédoublonner
+  (un localisateur contenu dans un autre disparaît) avant de regarder les infobulles.
+- **Un tableau engendré ne porte pas d'ancre.** Lui adjoindre, dans le même bloc replié, un petit
+  tableau de textes fait main (date d'effet — texte et article — ce qui change).
+- **Des références n'ont pas de ligne où loger** (clauses de date, textes cités une fois pour
+  situer) : prévoir un registre de plus plutôt que de laisser la citation dans le fil.
+- **Un texte sert plusieurs dispositifs.** Une ligne dans chaque registre ; le lien de la prose va
+  au registre du dispositif dont parle la phrase.
+- **Les exposants de note ne conviennent pas en HTML** (essayés, refusés) ; un lien vers le
+  tableau sans retour non plus. Le modèle retenu : signal sur le mot, infobulle où l'on peut
+  cliquer, bouton « Revenir au texte ». Les notes de bas de page ne reviendront que pour le PDF.
+- **Le glossaire est sur une autre page**, et `fetch()` ne marche pas en `file://` : les
+  définitions sont embarquées par `build_glossary.py` (`_glossaire.infobulles.html`), et chaque
+  livre doit l'inclure dans son `_quarto.yml`, dans les deux langues, à la main.
+- **Squash et branches empilées.** Fusionner en squash la branche de dessous met la branche du
+  dessus en conflit sur tout ce qu'elles partagent ; prendre la version de master pour ce que
+  la branche du dessus ne modifie pas, la sienne pour le reste, puis vérifier le diff.
+- **Deux agents, jamais le même worktree.** Chaque étape a eu sa branche et son répertoire.
+
+### Ce qui reste à décider avant de généraliser
+
+- Brancher `check_domicile_references.py` dans `verifier.sh` et la CI.
+- Inclure les infobulles du glossaire dans les dix-huit `_quarto.yml`.
+- La colonne « Texte » des tableaux engendrés, à remplacer par une infobulle.
+- La place des études et des rapports extérieurs dans le plan (doctrine de l'architecte).
+- La frise de tête ; le PDF (filtre qui change un lien `#r-…` en note de bas de page) ; l'arabe
+  (attributs `titre` des blocs, libellés, chapitres en retard de structure).
+- L'ordre des volumes : commencer par les chapitres dont les registres existent déjà.
