@@ -37,6 +37,16 @@ Tu fixes, pour chaque chapitre, **la frontière entre le cœur et le secondaire*
 | Naissance d'un dispositif secondaire | dans l'épine, en bref : pourquoi, pour qui | la fiche dit comment, en détail |
 | Évolution ultérieure d'un dispositif secondaire | dans sa fiche | l'épine ne la mentionne que si elle appartient à une grande réforme |
 
+Cas que la charpente ne règle pas d'elle-même :
+
+- **Les entre-temps.** Entre deux grandes réformes, l'épine porte une phrase qui dit ce qui se passe — des ajustements, des étapes — et renvoie aux registres ; elle ne les raconte pas.
+- **Le cœur a ses registres aussi.** À la fin de l'épine, une chronologie repliée par élément du cœur (ici : le champ, les taux, les exonérations), entière et dans l'ordre des dates.
+- **Une réforme qui ne touche pas le cœur** mais crée un dispositif est une grande réforme : c'est l'arrivée du dispositif qui fait la rupture.
+- **Les naissances groupées.** Quand le texte fondateur porte déjà plusieurs dispositifs secondaires, la mise en place les annonce ensemble, une ligne chacun, et renvoie aux fiches.
+- **Une rupture propre à une fiche, hors de toute grande réforme**, reste dans la fiche ; la frise de tête la porte, l'épine la signale dans l'entre-temps.
+- **Le cœur vu par une opération ou un public** (la suite des taux d'une profession, d'un produit) : l'épine dit la règle générale et ne nomme l'opération que d'une proposition ; la suite complète est dans une fiche ou un tableau.
+- **Un découpage qu'on te donne se vérifie borne par borne.** Une grande réforme tient à un texte, ou à des textes voisins de même objet, dont la note a lu les articles — pas à une commodité de période. Refuse une borne qui ne tient pas, et dis pourquoi.
+
 Il y a donc deux niveaux de ruptures : celles du chapitre, qui découpent l'épine (trois à six), et celles propres à une fiche (deux ou trois au plus). Le lecteur doit pouvoir suivre un gros dispositif de bout en bout : par sa fiche, et par sa chronologie repliée.
 
 ## Ce que tu mets au premier plan, et ce que tu replies
@@ -65,7 +75,7 @@ Une **fiche de plan**, dans un fichier à part à côté des notes documentaires
 - les **questions au documentaliste** que le plan fait naître (intitulé d'un article, date d'effet, texte connu par son seul intitulé) ;
 - les désaccords de classement possibles et les risques du plan (ce que le repli pourrait cacher à tort), à faire trancher.
 
-Tu n'écris aucun `.qmd`, tu ne touches ni à la bibliographie ni au glossaire, tu n'ajoutes aucun fait : tout ce que tu classes vient des notes documentaires, avec leur degré de certitude. Une rupture ne peut reposer que sur un texte dont la note a lu l'article ; un texte connu par son seul intitulé, ou par une lecture que la note dit non relue, peut avoir sa ligne au registre, signalée comme telle, mais ne porte pas une rupture. Quand la note ne dit pas ce que la loi cherche, écris « objet non relevé » et pose la question au documentaliste ; ne le déduis pas des effets.
+Tu n'écris aucun `.qmd`, tu ne touches ni à la bibliographie ni au glossaire, tu n'ajoutes aucun fait : tout ce que tu classes vient des notes documentaires, avec leur degré de certitude. Une rupture ne peut reposer que sur un texte dont la note a lu l'article — dans l'édition française ou, à défaut, dans l'édition arabe — ; un texte connu par son seul intitulé, ou par une lecture que la note dit non relue, peut avoir sa ligne au registre, signalée comme telle, mais ne porte pas une rupture. Quand la note ne dit pas ce que la loi cherche, écris « objet non relevé » et pose la question au documentaliste ; ne le déduis pas des effets. Ce que la loi cherche se dit d'abord par ses propres mots : l'intitulé de la loi, la rubrique sous laquelle l'article est placé, à défaut un exposé des motifs officiel, cité comme tel.
 
 ## Invariants du projet (à respecter absolument)
 
