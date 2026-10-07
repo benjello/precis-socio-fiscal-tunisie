@@ -18,6 +18,11 @@
 # un autre outil tant que son format de sous-agent n'est pas vérifié ici.
 
 roles:
+  architecte:
+    description: "Donne le plan d'ensemble d'un chapitre ou d'une grande section du précis socio-fiscal : repère les ruptures de politique publique et leur mise en œuvre progressive, décide de ce qui est mis au premier plan et de ce qui passe en détail replié ou en annexe. Intervient APRÈS la note documentaire, le versement du bibliographe et la passe « termes » du terminologue, AVANT le rédacteur. EXIGE la note documentaire ; GARANTIT une fiche de plan que le rédacteur suit. N'écrit aucun .qmd."
+    tools: [Read, Grep, Glob, Bash]
+    niveau: raisonnement
+
   bibliographe:
     description: "Tient la bibliographie du précis socio-fiscal. Intervient en DEUX temps — « versement » AVANT le terminologue et le rédacteur (les clés CSL doivent exister avant d'être citées), puis « clôture » après la rédaction (résolution des [@clés] et dry-run Zotero obligatoire). EXIGE la note documentaire ; GARANTIT que toute clé citable existe et résout, dans les deux langues."
     tools: [Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch]
@@ -51,7 +56,7 @@ roles:
 # Niveaux abstraits : « raisonnement » pour la lecture d'un texte de loi et la
 # rédaction (le jugement porte), « standard » pour un rôle qui applique une
 # méthode réglée sans arbitrage juridique, « mécanique » — réservé aux tâches
-# d'intégration (fusions, régénérations, rendus), aucun des six rôles
+# d'intégration (fusions, régénérations, rendus), aucun des sept rôles
 # éditoriaux ci-dessus n'y est aujourd'hui rangé (voir AGENTS.md, « Économiser »).
 modeles:
   claude-code:

@@ -68,13 +68,12 @@ hiérarchie se dit alors dans le texte.
 1. `docs/conventions-redaction.md` : le plan type d'un dispositif devient — historique ;
    description ; **ruptures et mise en œuvre** ; chronologie repliée ; longue période et données.
 2. `docs/agents/redacteur.md` : la consigne ci-dessus, avec le critère de la rupture.
-3. Un rôle nouveau, en amont du rédacteur — nom proposé : **architecte**. Il lit la note
+3. Un rôle nouveau, en amont du rédacteur : **architecte** (nom validé par le propriétaire le 7 octobre 2026 ; rôle écrit dans `docs/agents/architecte.md` et déclaré dans `roles.yml`, sur cette branche — il n'entre dans la chaîne `/rediger` qu'après le verdict du prototype). Il lit la note
    documentaire et rend un plan d'ensemble : les grandes sections ; ce qui est au premier plan
    (ruptures, publics, objectifs, ordres de grandeur) ; ce qui passe en détail escamotable ou en
    annexe ; les figures attendues. Il n'écrit pas le texte. Place dans la chaîne : documentaliste
    → bibliographe (versement) → terminologue (termes) → **architecte** → rédacteur → … Niveau
-   « raisonnement ». À créer dans `docs/agents/architecte.md` et `docs/agents/roles.yml`, puis
-   `scripts/sync_agents.py`. Autres noms envisagés : « éditeur » (ambigu avec l'éditeur d'un
+   « raisonnement ».  Autres noms envisagés : « éditeur » (ambigu avec l'éditeur d'un
    livre), « planificateur » (ne dit pas la hiérarchie des plans).
 4. Reprise des chapitres, par ordre d'intérêt : politiques de l'emploi (cadres de 1993, 2009,
    2019 ; tableau des textes) ; salaire minimum ; compensation (réformes) ; cotisations (taux) ;

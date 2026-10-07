@@ -90,8 +90,8 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   tableau de textes, la colonne de contenu donne le changement concret — article, avant → après —,
   sinon la ligne n'a rien à y faire.
 
-Les rôles éditoriaux — documentaliste, rédacteur, terminologue, bibliographe, relecteur-ar,
-modeliste — sont décrits dans `docs/agents/<role>.md`, en texte neutre, indépendant de l'outil et
+Les rôles éditoriaux — documentaliste, architecte, rédacteur, terminologue, bibliographe,
+relecteur-ar, modeliste — sont décrits dans `docs/agents/<role>.md`, en texte neutre, indépendant de l'outil et
 du fournisseur de LLM. La chaîne éditoriale va du premier au dernier, et s'arrête pour revue
 humaine. Voir « Économiser » pour le lien vers `.claude/agents/`.
 
