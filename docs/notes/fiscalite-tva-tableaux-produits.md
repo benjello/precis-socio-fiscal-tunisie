@@ -61,7 +61,7 @@
 > l'habillement, la parfumerie, l'horlogerie, l'électronique grand public, les climatiseurs, les
 > épices et les spiritueux (§ 8.4). Le point 2 ci-dessous est corrigé en ce sens.
 > (b) **La vue par catégories est refaite sur des états lus** — 1988, janvier 2008, janvier 2014,
-> 1er janvier 2017, 1er janvier 2026 —, en 25 lignes et 167 lignes de données (§ 9) ; elle remplace
+> 1er janvier 2017, 1er janvier 2026 —, en 25 lignes et 173 lignes de données (§ 9 ; 167 avant l'ajout, le 7 octobre 2026, des six lignes au taux normal des anciens biens du tableau C) ; elle remplace
 > celle du § 4, dont les colonnes 1995 et 2007 étaient dérivées.
 > (c) **Cinq lacunes du § 6.1 sont levées ou réduites** : la numérotation de l'ancien tableau A et la
 > lecture de l'article 31 § 1 de la LF 2016 ; l'eau potable (sortie de l'exonération par la LF 1991,
@@ -1775,7 +1775,7 @@ Chaque case : le ou les régimes, le taux à la date, le tableau et les numéros
 | **Produits alimentaires de base (farines, pain, couscous, pâtes, lait, huiles)** | **exonéré** : A 1 ; 2 ; 4 | **exonéré** : A 1 ; 1 bis ; 2 ; 4 | **exonéré** : A 1 ; 1 bis ; 2 ; 4 | **exonéré** : A I-1 à 5 ; I-41 à 44 | **exonéré** : A I-1 à 5 ; I-41 à 44 |
 | **Sucre** | **exonéré** : A 5 | **exonéré** : A 5 | **exonéré** : A 5 | **taux réduit 6 %** : B I-9 bis | **taux réduit 7 %** : B I-9 bis |
 | **Conserves, fruits et légumes transformés, maïs** | **taux réduit 6 %** : B II-7 (conserves de tomate, d'harissa, de sardines) | **taux réduit 6 %** : B II-7 ; II-11 ; III-11 (conserves ; maïs ; transformation des fruits et légumes) | **taux réduit 6 %** : B II-7 ; II-11 ; III-11 (idem) | **taux réduit 6 %** : B I-5 ; I-9 ; II-12 (idem) | **taux réduit 7 %** : B I-5 ; I-9 ; I-21 bis ; II-12 (idem, plus olives conservées provisoirement) |
-| **Denrées et boissons de l'ancien tableau C (café, thé, épices, cacao, charcuterie, boissons, tabacs)** | **taux majoré 29 %** : C positions des chapitres 02 à 24 | **taux normal 18 %** — aucun (art. 7, al. 1er) (tableau C supprimé au 1er janvier 2007 (loi n° 2006-80, art. 13)) *[déduit]* | — | — | — |
+| **Denrées et boissons de l'ancien tableau C (café, thé, épices, cacao, charcuterie, boissons, tabacs)** | **taux majoré 29 %** : C positions des chapitres 02 à 24 | **taux normal 18 %** — aucun (art. 7, al. 1er) (tableau C supprimé au 1er janvier 2007 (loi n° 2006-80, art. 13)) *[déduit]* | **taux normal 18 %** — aucun (art. 7, al. 1er) (taux normal de l'article 7, le tableau C étant supprimé depuis le 1er janvier 2007) *[déduit]* | **taux normal 18 %** — aucun (art. 7, al. 1er) (taux normal de l'article 7, le tableau C étant supprimé depuis le 1er janvier 2007) *[déduit]* | **taux normal 19 %** — aucun (art. 7, al. 1er) (taux normal de l'article 7, porté à 19 % au 1er janvier 2018 (LF 2018, art. 43)) *[déduit]* |
 | **Médicaments et produits pharmaceutiques** | **taux réduit 6 %** : B II-4 (produits pharmaceutiques finis et intrants de l'industrie pharmaceutique) | **taux réduit 6 %** : B II-4 (idem, plus sacs de transfusion et réactifs) | **taux réduit 6 %** : B II-4 (idem) | **taux réduit 6 %** : B I-4 ; I-15 à 18 (idem, plus dispositifs médicaux de l'annexe 5) | **taux réduit 7 %** : B I-4 ; I-15 à 18 (produits finis seulement ; intrants en suspension (art. 13 octies)) |
 | **Soins, professions de santé, cliniques, appareils pour handicapés** | **taux réduit 6 %** : B I (santé) ; III-5 (laboratoires, infirmiers, médecins, dentistes, vétérinaires ; cliniques) ; **exonéré** : A 7 (appareils pour handicapés, dialyse) | **taux réduit 6 %** : B I ; III-5 ; **exonéré** : A 7 ; 7 bis ; 9 bis (plus soins aux étrangers non-résidents ; établissements pour handicapés) | **taux réduit 6 %** : B I ; III-5 (avec les paramédicaux) ; **exonéré** : A 7 ; 9 bis (n° 7 bis abrogé) | **taux réduit 6 %** : B II-1 ; II-3 ; **exonéré** : A I-7 ; II-1 | **taux réduit 7 %** : B II-1 ; II-3 (hors médecine et chirurgie esthétiques non thérapeutiques) ; **exonéré** : A I-7 ; I-7 bis ; II-1 |
 | **Enseignement et garderies** | **exonéré** : A 9 | **exonéré** : A 9 | **exonéré** : A 9 | **taux réduit 6 %** : B II-6 (depuis le 1er septembre 2016) | **taux réduit 7 %** : B II-6 |
@@ -1796,15 +1796,21 @@ Chaque case : le ou les régimes, le taux à la date, le tableau et les numéros
 | **Équipements d'investissement (sans similaires locaux ou fabriqués localement)** | — | **taux intermédiaire 12 %** : B bis I-3 | **taux intermédiaire 12 %** : B bis I-3 | — | **taux réduit 7 %** : B I-18 ter |
 | **Télécommunications, radio-télédiffusion, poste** | — | **exonéré** : A 48 ; 49 (radio-télédiffusion publique ; services postaux publics) ; **taux normal 18 %** — aucun (art. 7, al. 1er) (télécommunications : n° 48 du tableau A réduit à la radio-télédiffusion au 1er janvier 2003) *[déduit]* | **exonéré** : A 48 ; 49 ; **taux normal 18 %** — aucun (art. 7, al. 1er) (télécommunications : n° 48 du tableau A réduit à la radio-télédiffusion au 1er janvier 2003) *[déduit]* | **taux réduit 6 %** : B II-10 (radio-télédiffusion publique) ; **exonéré** : A II-19 (services postaux) ; **taux normal 18 %** — aucun (art. 7, al. 1er) (télécommunications : n° 48 du tableau A réduit à la radio-télédiffusion au 1er janvier 2003) *[déduit]* | **taux réduit 7 %** : B II-10 ; II-29 (plus téléphonie et Internet fixes des particuliers) ; **exonéré** : A II-19 ; II-15 bis ; II-15 ter (poste ; commissions des paiements électroniques et des recharges) ; **taux normal 19 %** — aucun (art. 7, al. 1er) (télécommunications : n° 48 du tableau A réduit à la radio-télédiffusion au 1er janvier 2003) *[déduit]* |
 | **Finance et assurance** | **exonéré** : A 32 ; 34 ; 40 ; **taux réduit 6 %** : B III-6 (intérêts débiteurs) | **exonéré** : A 31 ; 31 bis ; 33 ; 39 ; **taux réduit 6 %** : B III-6 | **exonéré** : A 31 ; 31 bis ; 33 ; 39 ; 39 bis ; 39 ter (plus murabaha, salam, istisna ; sukuk) ; **taux réduit 6 %** : B III-6 | **exonéré** : A I-36 ; II-13 à 18 ; **taux réduit 6 %** : B II-14 | **exonéré** : A I-36 ; II-13 à 18 ; II-14 bis (plus Takaful, financement participatif) ; **taux réduit 7 %** : B II-14 |
-| **Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers** | **taux majoré 29 %** : C positions des chapitres 25 à 99, dont EX 87-02 (voitures particulières) | **taux normal 18 %** — aucun (art. 7, al. 1er) (tableau C supprimé au 1er janvier 2007) *[déduit]* ; **taux intermédiaire 12 %** : hors tableau (loi n° 2002-103) art. 1er (voitures de 4 chevaux fiscaux au plus, sous conditions) | — | — | **taux réduit 7 %** : B I-18 quinquies ; I-18 sexies (véhicules électriques, hybrides rechargeables (LF 2026), bicyclettes, bus du personnel) |
+| **Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers** | **taux majoré 29 %** : C positions des chapitres 25 à 99, dont EX 87-02 (voitures particulières) | **taux normal 18 %** — aucun (art. 7, al. 1er) (tableau C supprimé au 1er janvier 2007) *[déduit]* ; **taux intermédiaire 12 %** : hors tableau (loi n° 2002-103) art. 1er (voitures de 4 chevaux fiscaux au plus, sous conditions) | **taux normal 18 %** — aucun (art. 7, al. 1er) (taux normal de l'article 7, le tableau C étant supprimé depuis le 1er janvier 2007) *[déduit]* | **taux normal 18 %** — aucun (art. 7, al. 1er) (taux normal de l'article 7, le tableau C étant supprimé depuis le 1er janvier 2007) *[déduit]* | **taux réduit 7 %** : B I-18 quinquies ; I-18 sexies (véhicules électriques, hybrides rechargeables (LF 2026), bicyclettes, bus du personnel) ; **taux normal 19 %** — aucun (art. 7, al. 1er) (taux normal de l'article 7, porté à 19 % au 1er janvier 2018 (LF 2018, art. 43)) *[déduit]* |
 
-**Décompte des 125 cases** (25 catégories × 5 dates) : 103 lues sur un tableau ; 11 lues avec une
+**Décompte des 125 cases** (25 catégories × 5 dates) : 102 lues sur un tableau ; 12 lues avec une
 part déduite (logement neuf 2026 ; restauration 2017 et 2026 ; professions libérales 2026 ;
-informatique 2017 et 2026 ; télécommunications 2008, 2014, 2017 et 2026 ; biens durables 2008) ; 1 entièrement déduite (denrées de l'ancien tableau C en 2008) ; **10 vides**.
-Les cases vides : denrées de l'ancien tableau C en 2014, 2017 et 2026 et biens durables en 2014 et
-2017 (absents de tout tableau : le taux normal s'y applique, mais ce n'est pas une lecture) ; logement neuf et restauration
-autonome en 1988 ; équipements d'investissement en 1988 et au 1er janvier 2017 ; télécommunications
-en 1988.
+informatique 2017 et 2026 ; télécommunications 2008, 2014, 2017 et 2026 ; biens durables 2008 et
+2026) ; 6 entièrement déduites (denrées de l'ancien tableau C en 2008, 2014, 2017 et 2026 ; biens
+durables en 2014 et 2017) ; **5 vides**.
+Les cases vides : logement neuf et restauration autonome en 1988 ; équipements d'investissement en
+1988 et au 1er janvier 2017 ; télécommunications en 1988.
+
+*Arbitrage du propriétaire, 7 octobre 2026.* Les anciens biens du tableau C ne sont plus laissés en
+case vide après 2008 : absents de tout tableau, ils relèvent du taux normal par la règle générale de
+l'article 7, alinéa 1er, comme en 2008 — 18 % en janvier 2014 et au 1er janvier 2017 (loi
+n° 2006-80), 19 % au 1er janvier 2026 (LF 2018, art. 43). Six lignes « déduit » sont ajoutées à la
+série ; une case vide les faisait lire, à tort, comme non taxés.
 
 **Six précisions de lecture.**
 1. **Électricité et produits pétroliers, 2008 et 2014** : le taux de 12 % ne vient d'aucun tableau
@@ -1828,7 +1834,7 @@ en 1988.
 ### 9.3 La même information, en format long
 
 Une ligne par catégorie × date × régime. `taux_pct` vide pour l'exonération. `lecture` : `JORT lu`,
-`édition officielle`, `recueil non officiel`, `déduit`. Douze lignes « déduit » sur 167, toutes signalées. Le bloc est engendré
+`édition officielle`, `recueil non officiel`, `déduit`. Dix-huit lignes « déduit » sur 173, toutes signalées. Le bloc est engendré
 par le même script que le tableau du § 9.2 (aucune ressaisie).
 
 ```csv
@@ -1850,6 +1856,9 @@ alim_transformes,"Conserves, fruits et légumes transformés, maïs",2017-01-01,
 alim_transformes,"Conserves, fruits et légumes transformés, maïs",2026-01-01,taux réduit,7,B,I-5 ; I-9 ; I-21 bis ; II-12,dgelf-code-tva-2025,62-69,édition officielle
 alim_tableau_c,"Denrées et boissons de l'ancien tableau C (café, thé, épices, cacao, charcuterie, boissons, tabacs)",1988-07-01,taux majoré,29,C,positions des chapitres 02 à 24,loi-88-61-tva,836-846,JORT lu
 alim_tableau_c,"Denrées et boissons de l'ancien tableau C (café, thé, épices, cacao, charcuterie, boissons, tabacs)",2008-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,loi-2006-80-reduction-taux,4302,déduit
+alim_tableau_c,"Denrées et boissons de l'ancien tableau C (café, thé, épices, cacao, charcuterie, boissons, tabacs)",2014-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,loi-2006-80-reduction-taux,4302,déduit
+alim_tableau_c,"Denrées et boissons de l'ancien tableau C (café, thé, épices, cacao, charcuterie, boissons, tabacs)",2017-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,loi-2006-80-reduction-taux,4302,déduit
+alim_tableau_c,"Denrées et boissons de l'ancien tableau C (café, thé, épices, cacao, charcuterie, boissons, tabacs)",2026-01-01,taux normal,19,"aucun (art. 7, al. 1er)",—,lf-2018,4281,déduit
 medicaments,Médicaments et produits pharmaceutiques,1988-07-01,taux réduit,6,B,II-4,loi-88-61-tva,836,JORT lu
 medicaments,Médicaments et produits pharmaceutiques,2008-01-01,taux réduit,6,B,II-4,recueil-tva-bm-2008,31-32,recueil non officiel
 medicaments,Médicaments et produits pharmaceutiques,2014-01-01,taux réduit,6,B,II-4,recueil-codes-sefac-2014,174-175,recueil non officiel
@@ -1999,7 +2008,10 @@ finance_assurance,Finance et assurance,2026-01-01,taux réduit,7,B,II-14,dgelf-c
 durables_luxe_vehicules,Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers,1988-07-01,taux majoré,29,C,"positions des chapitres 25 à 99, dont EX 87-02 (voitures particulières)",loi-88-61-tva,836-846,JORT lu
 durables_luxe_vehicules,Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers,2008-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,loi-2006-80-reduction-taux,4302,déduit
 durables_luxe_vehicules,Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers,2008-01-01,taux intermédiaire,12,hors tableau (loi n° 2002-103),art. 1er,recueil-tva-bm-2008,38,recueil non officiel
+durables_luxe_vehicules,Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers,2014-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,loi-2006-80-reduction-taux,4302,déduit
+durables_luxe_vehicules,Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers,2017-01-01,taux normal,18,"aucun (art. 7, al. 1er)",—,loi-2006-80-reduction-taux,4302,déduit
 durables_luxe_vehicules,Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers,2026-01-01,taux réduit,7,B,I-18 quinquies ; I-18 sexies,dgelf-code-tva-2025,62-69,édition officielle
+durables_luxe_vehicules,Biens durables et de luxe de l'ancien tableau C ; véhicules particuliers,2026-01-01,taux normal,19,"aucun (art. 7, al. 1er)",—,lf-2018,4281,déduit
 ```
 
 `source_id` : clés de l'annexe A, sauf `fiscalite-tva-documentation.md § 4` (décrets annuels de

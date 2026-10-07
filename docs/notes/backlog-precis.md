@@ -45,9 +45,13 @@ perte : les 62 clés, les 163 couples (clé, localisateur), les 38 ancres de glo
 passe de 11 000 à 22 300 mots, dont 13 000 au premier plan (8 300 au départ) : quatorze blocs
 repliés au lieu de deux. Reste à trancher ou à faire :
 
-- **deux formes concurrentes des trajectoires par opération** (`#sec-tva-trajectoires` et
-  `@tbl-tva-trajectoires` dans l'état du droit), signalées par un `TODO (propriétaire)` : la
-  forme non retenue est à retirer ;
+- **trajectoires par opération : tranché le 7 octobre 2026** — le propriétaire garde le tableau
+  (`@tbl-tva-trajectoires`, dans `#sec-tva-etat-du-droit`) et la matrice des régimes par
+  catégorie ; la section en prose `#sec-tva-trajectoires` est supprimée. Ce qu'elle seule
+  portait (contrats maintenus à 6 % en 1996, article 7 en 2017, détail de 2023, reports du
+  logement et des médicaments, numéro 48 du tableau A) est en cinq puces sous le tableau, et son
+  registre (`tbl-tva-trajectoires-textes`, 19 ancres) est déplacé sous lui, inchangé. « Les
+  dispositifs qui aménagent la taxe » n'a plus que deux sous-sections ;
 - **frise des réformes** (`TODO (rédacteur)` dans « En bref ») : demande une petite série de
   jalons à verser (plan, § 6.0) ;
 - **quatre clés à verser par le bibliographe** (entrées CSL au § 6 de la note des objets) :
@@ -197,7 +201,7 @@ le texte qui a modifié l'art. 10 de la loi de finances pour 2017.
 `docs/notes/fiscalite-tva-tableaux-produits.md` (§ 1 à 3, 8 et 9) et
 `docs/notes/fiscalite-tva-codes-consolides.md`. Fait :
 
-- **série** `precis/_seriescache/tva-regimes-par-categorie.csv` : les 167 lignes du § 9.3 de la
+- **série** `precis/_seriescache/tva-regimes-par-categorie.csv` : les 173 lignes du § 9.3 de la
   note, versées telles quelles (25 catégories, 5 dates repères) ; provenance déclarée dans
   `figures/tva.py` ;
 - **figure** `@fig-tva-regimes` (matrice catégories × dates, une couleur par régime, cases
@@ -251,12 +255,11 @@ Reste :
 - **versement des listes en amont** dans `openfisca-tunisia` (note, annexe C : structure
   proposée) : rien n'est versé ; la série du précis est un CSV fait de la note, non un
   snapshot de paramètres ;
-- **trajectoires par opération** : la nouvelle section rend redondantes, dans
-  `@tbl-tva-trajectoires` et `#sec-tva-trajectoires`, les lignes de l'hôtellerie, de
-  l'enseignement privé et de l'électricité, et l'essentiel de celles des professions et du
-  logement ; ces deux formes gardent seules les reports (logement, médicaments), l'exonération
-  des médicaments au détail et les télécommunications exonérées de 1995 à 2002. À départager
-  par le propriétaire.
+- **anciens biens du tableau C dans la matrice** (arbitrage du 7 octobre 2026) : six lignes
+  « taux normal, déduit » ajoutées à la série et au § 9.3 de la note (2014, 2017, 2026 pour les
+  denrées et pour les biens durables) : 173 lignes, dont 18 au taux que la loi n'écrit pas ;
+  5 cases blanches au lieu de 10 ; les lignes de l'hôtellerie et de l'enseignement du tableau
+  des trajectoires sont complétées jusqu'à 2018 par des liens vers le registre des régimes.
 
 **TVA — taux dans le temps (7 octobre 2026).** Le tableau des générations de taux
 (`@tbl-tva-taux`) n'est plus fait main : `scripts/generate_bareme_tables.py` l'engendre

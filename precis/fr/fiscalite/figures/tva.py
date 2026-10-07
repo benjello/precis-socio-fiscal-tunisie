@@ -807,7 +807,7 @@ _L.update({
     "d_2017-01-01": {"fr": "1er janvier\n2017", "ar": "1 جانفي\n2017"},
     "d_2026-01-01": {"fr": "1er janvier\n2026", "ar": "1 جانفي\n2026"},
     "n_jort": {"fr": "Journal officiel", "ar": "الرائد الرسمي"},
-    "n_prive": {"fr": "recueil non officiel", "ar": "مجموعة غير رسمية"},
+    "n_prive": {"fr": "recueil\nnon officiel", "ar": "مجموعة غير رسمية"},
     "n_officielle": {"fr": "édition officielle\ndu code", "ar": "الطبعة الرسمية\nللمجلة"},
     # Groupes.
     "gr_alimentation": {"fr": "Alimentation", "ar": "التغذية"},
@@ -914,18 +914,18 @@ figtools.register_provenance(
               "تواريخ مرجعية، من 1 جويلية 1988 إلى 1 جانفي 2026، حسب الجداول الملحقة بالمجلة"),
     sources=["loi-88-61-tva", "recueil-tva-bm-2008", "recueil-codes-sefac-2014", "lf-2016",
              "lf-2017", "dgelf-code-tva-2025", "lf-2026", "loi-2006-80-reduction-taux",
-             "loi2001-123-lf2002", "decret-2002-3356-tva-telecom", "lf-2023", "lf-2025"],
+             "loi2001-123-lf2002", "decret-2002-3356-tva-telecom", "lf-2018", "lf-2023", "lf-2025"],
     unite="régime (exonération ou taux), et taux en pourcentage de la base imposable",
     unite_ar="النظام (إعفاء أو نسبة)، والنسبة من القاعدة الخاضعة",
     perimetre=("une ligne par catégorie, par date repère et par régime, avec le tableau et "
-               "les numéros où le régime se lit, la source de l'état et ses pages ; 167 lignes"),
+               "les numéros où le régime se lit, la source de l'état et ses pages ; 173 lignes"),
     perimetre_ar=("سطر لكلّ صنف ولكلّ تاريخ مرجعي ولكلّ نظام، مع الجدول والأعداد التي يُقرأ "
-                  "فيها النظام ومصدر الحالة وصفحاته؛ 167 سطرا"),
+                  "فيها النظام ومصدر الحالة وصفحاته؛ 173 سطرا"),
     caveats=("Les états de janvier 2008 et de janvier 2014 sont ceux de deux recueils non officiels "
              "du code, qui ne valent pas Journal officiel et n'ont pas été rapprochées de lui "
              "numéro par numéro. L'état du 1er janvier 2026 est celui de l'édition du code "
              "publiée par le ministère des Finances à jour au 1er janvier 2025, complétée par "
-             "la loi de finances pour 2026. Douze lignes portent un taux que la loi n'écrit "
+             "la loi de finances pour 2026. Dix-huit lignes portent un taux que la loi n'écrit "
              "pas : l'opération ne figure dans aucun tableau et relève du taux normal par la "
              "règle générale de l'article 7. La série ne couvre ni les opérations hors du "
              "champ de la taxe, ni l'exonération à la revente au détail, ni les régimes "
@@ -935,7 +935,7 @@ figtools.register_provenance(
     caveats_ar=("حالتا جانفي 2008 وجانفي 2014 مأخوذتان من طبعتين خاصتين للمجلة لا تقومان مقام "
                 "الرائد الرسمي ولم تُقابلا به عددا عددا. حالة 1 جانفي 2026 هي حالة طبعة المجلة "
                 "الصادرة عن وزارة المالية والمحيّنة في 1 جانفي 2025، مع إضافة قانون المالية "
-                "لسنة 2026. اثنا عشر سطرا تحمل نسبة لا ينصّ عليها القانون: العملية غير واردة "
+                "لسنة 2026. ثمانية عشر سطرا تحمل نسبة لا ينصّ عليها القانون: العملية غير واردة "
                 "بأيّ جدول وتخضع للنسبة العادية بمقتضى القاعدة العامة للفصل 7. لا تشمل السلسلة "
                 "العمليات الخارجة عن ميدان تطبيق الأداء ولا الإعفاء عند البيع بالتفصيل ولا "
                 "أنظمة توقيف العمل بالأداء؛ والصنف غير الوارد بالجداول في تاريخ ما لا سطر له، "
@@ -1058,7 +1058,7 @@ def fig_regimes():
 
 
 def table_regimes():
-    """Les 167 lignes de la série, en mots de lecteur : une par catégorie, date et régime."""
+    """Les 173 lignes de la série, en mots de lecteur : une par catégorie, date et régime."""
     import pandas as pd
     d = figtools.series(SERIE_REGIMES)
     refs = figtools._ref_index()
