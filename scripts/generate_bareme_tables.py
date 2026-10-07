@@ -12,6 +12,11 @@ Deux familles de tableaux :
     « Texte » est tirée des métadonnées `reference` du paramètre lui-même. Le tableau publié
     et le paramètre sont ainsi indissociables : corriger l'un corrige l'autre.
 
+Le script émet aussi une SÉRIE pour une figure : `precis/_seriescache/tva-taux.csv`, une
+ligne par taux de la TVA et par date d'effet, avec le texte qui la fixe. Le build du site
+ne lit pas openfisca : la figure des taux lit ce snapshot par `figtools.series()`, et ses
+liens « Base législative » dans `tva-taux.liens.<langue>.yml`, écrits ici.
+
 Exige openfisca-tunisia >= 0.71 : c'est la version où les paramètres d'assiette ont été
 corrigés et où les tarifs de la contribution personnelle d'État ont été ajoutés.
 """
@@ -70,6 +75,11 @@ MOTS = {
         "bareme_cpe": "Barème de la contribution personnelle d\u2019État",
         "revenus_depuis": "Revenus réalisés à compter du",
         "plafond_cpe": "Plafond de la cotisation effective (part du revenu global imposable)",
+        # Taux de la taxe sur la valeur ajoutée.
+        "effet": "Date d'effet",
+        "tva_normal": "Taux normal", "tva_intermediaire": "Taux intermédiaire",
+        "tva_reduit": "Taux réduit", "tva_majore": "Taux majoré",
+        "tva_lien": "{taux} de la taxe sur la valeur ajoutée",
     },
     "ar": {
         "tranche_net": "شريحة الدخل السنوي الصافي (بالدينار)",
@@ -104,6 +114,12 @@ MOTS = {
         "bareme_cpe": "جدول الضريبة الشخصية للدولة",
         "revenus_depuis": "المداخيل المحقّقة ابتداء من",
         "plafond_cpe": "سقف الضريبة الشخصية للدولة (نسبة من الدخل الجملي الخاضع للضريبة)",
+        # « النسبة العادية », « المخفضة », « المرتفعة » : termes de precis/glossaire.yml. Le
+        # glossaire n'a pas d'entrée pour le taux intermédiaire, que le code ne nomme pas.
+        "effet": "تاريخ النفاذ",
+        "tva_normal": "النسبة العادية", "tva_intermediaire": "النسبة الوسيطة",
+        "tva_reduit": "النسبة المخفضة", "tva_majore": "النسبة المرتفعة",
+        "tva_lien": "{taux} للأداء على القيمة المضافة",
     },
 }
 
@@ -407,6 +423,95 @@ def tableau_is(tableau: str, langue: str):
                         columns=entetes)
 
 
+# ------------------------------------------------- taux de la taxe sur la valeur ajoutée
+
+TVA = "parameters/fiscalite_indirecte/tva"
+# Dans l'ordre des colonnes du tableau, du taux de droit commun aux taux dérogatoires. Le
+# « taux nul » du même répertoire n'est pas un taux du droit — le code ne fixe aucun taux
+# de 0 %, il exonère — : ni le tableau ni la série ne le portent.
+TAUX_TVA = ("normal", "intermediaire", "reduit", "majore")
+# Date d'effet -> clé de citation et articles. Chaque date de la série DOIT y figurer : une
+# date nouvelle versée en amont fait échouer la génération tant que son texte n'est pas
+# versé à la bibliographie et inscrit ici, plutôt que de publier une ligne sans citation.
+CLES_TVA = {
+    "1988-07-01": "loi-88-61-tva, art. 7",
+    "1995-01-01": "lf-1995, art. 56 à 58 et 100",
+    "1998-01-01": "lf-1998, art. 25 et 90",
+    "2002-01-01": "loi2001-123-lf2002, art. 82 à 84 et 97",
+    "2007-01-01": "loi-2006-80-reduction-taux, art. 13, 17 et 19",
+    "2018-01-01": "lf-2018, art. 43 et 67",
+}
+SERIE_TVA = "tva-taux"
+CACHE = RACINE / "_seriescache"
+
+
+def _chemin_tva(taux: str) -> str:
+    return f"{TVA}/taux_{taux}/taux.yaml"
+
+
+def tva_taux(langue):
+    """Les générations de la grille des taux : une ligne par date d'effet, au jour près."""
+    m = MOTS[langue]
+    taux = ot.formateurs(langue).taux
+    specs = [(_chemin_tva(t), m[f"tva_{t}"], taux) for t in TAUX_TVA]
+    dates = {d for chemin, _e, _f in specs for d, *_ in ot.serie_datee(chemin)}
+    sans_cle = sorted(dates - set(CLES_TVA))
+    if sans_cle:
+        raise ValueError(f"taux de la TVA : date d'effet sans clé de citation : {sans_cle}")
+    df = ot.tableau_evolution_datee(specs, cles=CLES_TVA, langue=langue,
+                                    colonne_periode=m["effet"], colonne_texte=m["texte"])
+    if df is None:
+        return None
+    # Le relevé prend l'en-tête de colonne pour libellé ; le lien, lu hors du tableau,
+    # doit dire de quelle taxe il s'agit.
+    for t in TAUX_TVA:
+        ot.releve_note(_chemin_tva(t), m["tva_lien"].format(taux=m[f"tva_{t}"]))
+    return df
+
+
+def serie_tva() -> int:
+    """Émet la série des taux de la TVA pour la figure : une ligne par taux et date d'effet.
+
+    Les valeurs sont brutes et n'ont pas de langue : la série est émise une fois. Une ligne
+    sans taux dit la suppression du taux à cette date (taux majoré, 1er janvier 2007) ; une
+    ligne qui répète le taux précédent dit un texte qui le reprend sans le changer (taux de
+    10 %, entré dans le code au 1er janvier 2002). Chaque ligne porte le premier texte que
+    le paramètre cite à cette date et son lien au Journal officiel.
+    """
+    import pandas as pd
+
+    lignes = []
+    for t in TAUX_TVA:
+        ot.releve_note(_chemin_tva(t), f"tva_{t}")
+        for date, valeur, titre, lien in ot.serie_datee(_chemin_tva(t)):
+            if not titre or not lien.startswith("https://www.pist.tn/"):
+                print(f"✗ {SERIE_TVA} : taux {t} au {date} sans texte au Journal officiel.")
+                return 1
+            lignes.append({"taux": t, "date_effet": date,
+                           "valeur": None if valeur is None else round(valeur, 6),
+                           "texte": titre, "lien": lien})
+    if not lignes:
+        print(f"✗ {SERIE_TVA} : série vide, snapshot conservé.")
+        return 1
+    CACHE.mkdir(parents=True, exist_ok=True)
+    pd.DataFrame(lignes).to_csv(CACHE / f"{SERIE_TVA}.csv", index=False)
+    print(f"✓ série {SERIE_TVA} : {len(lignes)} lignes, {len(TAUX_TVA)} taux")
+    return 0
+
+
+def serie_tva_avec_liens() -> int:
+    """`serie_tva` sous relevé, puis ses liens « Base législative » dans les deux langues."""
+    code, releve = ot.avec_liens(serie_tva)
+    if code:
+        return code
+    for langue in LANGUES:
+        m = MOTS[langue]
+        ot.ecrire_fichier_liens(
+            CACHE / f"{SERIE_TVA}.liens.{langue}.yml",
+            [(chemin, m["tva_lien"].format(taux=m[cle])) for chemin, cle in releve], langue)
+    return 0
+
+
 def main() -> int:
     if not ot.openfisca_utilisable():
         version = ot.version_openfisca()
@@ -505,10 +610,28 @@ def main() -> int:
                        "qui sert de garde-fou. -->\n\n",
                 a_gauche=True)
 
+        try:
+            df, liens = ot.avec_liens(lambda: tva_taux(langue))
+        except ValueError as erreur:
+            print(f"échec : {langue}/tva_taux.md : {erreur}", file=sys.stderr)
+            return 1
+        if df is None:
+            print(f"échec : {langue}/tva_taux.md", file=sys.stderr)
+            return 1
+        manquantes = ot.cles_manquantes(df, RACINE / langue / "fiscalite")
+        if manquantes:
+            print(f"échec : {langue}/tva_taux.md : clés absentes de la bibliographie : "
+                  f"{manquantes}", file=sys.stderr)
+            return 1
+        ot.ecrire_tableau(
+            sortie / "tva_taux.md", df, liens, langue,
+            entete="<!-- Généré par scripts/generate_bareme_tables.py — ne pas éditer à la main.\n"
+                   f"     Paramètres : {TVA}/taux_*/taux.yaml -->\n\n")
+
         total = (len(TABLEAUX_CPE) + len(evolutions(langue))
-                 + len(evolutions_datees(langue)) + len(TABLEAUX) + 1 + len(TABLEAUX_IS))
+                 + len(evolutions_datees(langue)) + len(TABLEAUX) + 1 + len(TABLEAUX_IS) + 1)
         print(f"✓ {langue} : {total} tableaux")
-    return 0
+    return serie_tva_avec_liens()
 
 
 if __name__ == "__main__":
