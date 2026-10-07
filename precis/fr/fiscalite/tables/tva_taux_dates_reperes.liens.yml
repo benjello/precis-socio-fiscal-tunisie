@@ -1,0 +1,12 @@
+- libelle: Taux normal de la taxe sur la valeur ajoutée
+  parametre: parameters/fiscalite_indirecte/tva/taux_normal/taux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.tva.taux_normal.taux/table/
+- libelle: Taux intermédiaire de la taxe sur la valeur ajoutée
+  parametre: parameters/fiscalite_indirecte/tva/taux_intermediaire/taux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.tva.taux_intermediaire.taux/table/
+- libelle: Taux réduit de la taxe sur la valeur ajoutée
+  parametre: parameters/fiscalite_indirecte/tva/taux_reduit/taux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.tva.taux_reduit.taux/table/
+- libelle: Taux majoré de la taxe sur la valeur ajoutée
+  parametre: parameters/fiscalite_indirecte/tva/taux_majore/taux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.tva.taux_majore.taux/table/

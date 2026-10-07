@@ -106,6 +106,49 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
 144 décrets de l'article 8 signés de 1988 à 1997, connus par leur seul intitulé. La fiche
 `r-tva-mise-en-application-post-1989` reste ouverte.
 
+**Paramètres dans le temps (7 octobre 2026).** Deux composants communs, à partir d'une même
+déclaration de paramètres (`ot.ParametreDate`) dans un générateur : le tableau de **l'état du
+droit à des dates repères** (`ot.ecrire_dates_reperes` → `tables/<nom>_dates_reperes.md`) et la
+**figure en escalier** (`figtools.figure_escalier`, sur la série longue
+`_seriescache/<nom>.csv` qu'écrit `ot.ecrire_serie_parametres`), avec une lecture en dinars
+constants pour les montants (indice `ipc-longue-periode`, jusqu'en 2023). Appliqués au volume
+fiscal : la figure des taux de la TVA passe par le composant, image inchangée, et son tableau
+aux dates repères est engendré (`tva_taux_dates_reperes.md`) mais **pas encore inséré** dans
+`_tva.qmd`, en réécriture sur une autre branche ; les déductions pour charges de famille de
+l'impôt sur le revenu ont les deux (`@tbl-charges-famille-reperes`,
+`@fig-irpp-deductions-famille`). Restent :
+
+- **insérer** `tva_taux_dates_reperes.md` dans `_tva.qmd` quand sa réécriture est fusionnée ;
+- **droits de consommation** : le tarif pétrolier n'a reçu ni l'un ni l'autre. Sa série de
+  1988, 1991 et 1999 a des trous que le chapitre connaît — décret n° 94-816, date d'effet non
+  établie ; décret n° 98-952, au 6 mai 1998 ; changements postérieurs à 1999, non datés — :
+  une marche ou une case y affirmerait une valeur en vigueur qui ne l'est pas. Textes
+  présents au corpus pour 94-816 (`Jo03094`) et 98-952 (`Jo03598`), à relever ; constat
+  consigné dans `backlog-modele.md` ;
+- **étendre aux autres volumes** : cotisations (taux par régime), prestations (allocations,
+  plafonds), retraites (âges, taux, planchers), marché du travail — `ParametreDate.serie()`
+  lit aussi les barèmes à une tranche ;
+- **atlas par volume** : une page qui réunit, pour un volume, l'état de tous ses paramètres
+  aux mêmes dates repères ;
+- **TVA, tableaux A, B, B bis et C** : à verser en amont comme listes datées d'opérations,
+  pour que le périmètre de chaque taux se lise dans le temps comme son niveau ;
+- **paramètres écartés d'office** : ceux qui disent une suppression par 0 et non par une
+  valeur nulle (déduction supplémentaire des salariés au SMIG, 2014), qui traceraient une
+  marche à zéro ; ceux dont un plafond absent vaut l'infini (frais professionnels avant
+  2017), à rendre par un format propre ;
+- **bibliographie** : `bct-ra` et `ins-annuaire`, sources de l'indice des prix, sont copiés à
+  la main dans `fiscalite/references.json` (FR et AR) depuis le volume « marché du travail » ;
+  rangement Zotero à faire par le bibliographe ;
+- **provenance de l'indice des prix** : l'entrée `ipc-longue-periode` de
+  `_seriescache/catalog.snapshot.yml` s'intitule encore « 1962-2003 » et renvoie, au-delà de
+  2003, à `bct-ipc-base2015`, alors que la série va jusqu'à 2023 (annuaire 2019-2023) ;
+  l'onglet « Sources » des figures en dinars constants — ici et au volume « marché du
+  travail » — affiche donc un titre périmé. À corriger dans le catalogue de `tunisia-data`,
+  puis à resnapshoter ;
+- **arabe** : « رئيس العائلة » (chef de famille) est posé d'après l'article 40 du code, sans
+  entrée au glossaire ; le chapitre arabe de l'impôt sur le revenu recevra le tableau et la
+  figure à la prochaine synchronisation de traduction.
+
 **TVA — taux dans le temps (7 octobre 2026).** Le tableau des générations de taux
 (`@tbl-tva-taux`) n'est plus fait main : `scripts/generate_bareme_tables.py` l'engendre
 (`tables/tva_taux.md`), avec la série `precis/_seriescache/tva-taux.csv` que trace
@@ -266,9 +309,11 @@ liste qui suit le tableau, citations comprises. Restent :
   régionaux de l'évaluation forfaitaire agricole, le plafond de l'assurance-vie entre
   ses deux bornes connues et la contribution au budget de l'État. L'article 16 de la
   loi de finances pour 2019 pose encore un problème de lecture des éditions.
-- **Séries à construire** : le seuil de la tranche à 0 % et les déductions pour charges de
-  famille, rapportés au SMIG et à l'indice des prix, 1990-2026 ; les tarifs successifs de la
-  contribution des patentes ; le plafond de déduction des primes d'assurance-vie.
+- **Séries à construire** : le seuil de la tranche à 0 %, rapporté au SMIG et à l'indice des
+  prix, 1990-2026 ; les déductions pour charges de famille rapportées au SMIG — leur lecture
+  à l'indice des prix est faite (`@fig-irpp-deductions-famille`, 7 octobre 2026) ; les tarifs
+  successifs de la contribution des patentes ; le plafond de déduction des primes
+  d'assurance-vie.
 - **Lectures externes ou sous autre édition** : notes communes de la DGI sur la réforme
   de 2025 ; articles 56 et 91 de la LF 2026 lus en arabe, à confirmer sur une édition
   française effectivement disponible. Le fichier local « français » du JORT n° 148 de

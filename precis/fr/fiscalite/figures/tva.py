@@ -616,126 +616,38 @@ figtools.register_provenance(
 )
 
 
-def _abscisse(date_iso: str) -> float:
-    """Date d'effet -> année décimale : le 1er juillet 1988 tombe au milieu de 1988."""
-    import datetime
-    d = datetime.date.fromisoformat(date_iso)
-    return d.year + (d.timetuple().tm_yday - 1) / (366 if d.year % 4 == 0 else 365)
-
-
-def _taux():
-    """La série, par taux : [(date ISO, taux en % ou None, état, texte, lien)], dates croissantes.
-
-    L'état se déduit de la valeur précédente : `creation`, `changement`, `reprise` (même
-    valeur, autre texte) ou `suppression` (plus de valeur).
-    """
-    d = figtools.series(SERIE_TAUX)
-    sortie = {}
-    for nom in _TAUX:
-        s = d[d["taux"] == nom].sort_values("date_effet")
-        lignes, precedente = [], None
-        for date, v, texte, lien in zip(s["date_effet"], s["valeur"], s["texte"], s["lien"]):
-            v = None if v != v else round(100 * float(v), 4)
-            if v is None:
-                etat = "suppression"
-            elif precedente is None:
-                etat = "creation"
-            else:
-                etat = "reprise" if v == precedente else "changement"
-            lignes.append((str(date)[:10], v, etat, texte, lien))
-            precedente = v
-        if lignes:
-            sortie[nom] = lignes
-    return sortie
-
-
 def _pct(v: float) -> str:
     return f"{v:g}".replace(".", ",") + " %"
 
 
+def _courbes_taux() -> dict:
+    return {nom: (_lab("t_" + nom), couleur) for nom, couleur in _TAUX.items()}
+
+
 def fig_taux():
-    """Les quatre taux en escalier, chaque marche étiquetée de sa valeur."""
-    figtools.apply_lang_font()
-    ft = figtools.fig_text
-    from matplotlib.lines import Line2D
-    from matplotlib.ticker import FuncFormatter
-    series = _taux()
-    fin = FIN_TAUX + 1.0  # le 31 décembre de la dernière année tracée
-    fig, ax = plt.subplots(figsize=(9.5, 5.6))
-    poignees, dates = [], set()
-    for nom, couleur in _TAUX.items():
-        lignes = series.get(nom, [])
-        for i, (date, v, etat, texte, _lien) in enumerate(lignes):
-            x = _abscisse(date)
-            dates.add(date)
-            bulle = f"{date} · {_lab('t_' + nom)} : "
-            if v is None:
-                # Fin du taux : marqueur creux sur le dernier niveau, le trait ne va pas plus loin.
-                dernier = lignes[i - 1][1]
-                p, = ax.plot([x], [dernier], "o", color=couleur, mfc="white", ms=7, mew=1.8,
-                             zorder=4)
-                figtools.infobulle(p, bulle + f"{_lab('ib_suppression')} · {texte}")
-                ax.annotate(ft(_lab("fin_majore")), xy=(x, dernier), xytext=(9, 0),
-                            textcoords="offset points", ha="left", va="center", fontsize=7.5,
-                            color=couleur)
-                continue
-            x_suivant = _abscisse(lignes[i + 1][0]) if i + 1 < len(lignes) else fin
-            ax.plot([x, x_suivant], [v, v], color=couleur, lw=2.2, solid_capstyle="butt",
-                    zorder=2)
-            suivant = lignes[i + 1][1] if i + 1 < len(lignes) else None
-            if suivant is not None and suivant != v:
-                ax.plot([x_suivant, x_suivant], [v, suivant], color=couleur, lw=1.2, zorder=2)
-            if etat == "reprise":
-                p, = ax.plot([x], [v], "D", color=couleur, mfc="white", ms=5.5, mew=1.5,
-                             zorder=4)
-                # À droite du losange : la mention de 1995 occupe déjà la gauche.
-                ax.annotate(ft(_lab("dans_code")), xy=(x, v), xytext=(-4, -8),
-                            textcoords="offset points", ha="left", va="top", fontsize=7.5,
-                            color=couleur)
-            else:
-                p, = ax.plot([x], [v], "o", color=couleur, ms=5, zorder=4)
-                ax.annotate(_pct(v), xy=(x, v), xytext=(4, 4), textcoords="offset points",
-                            ha="left", va="bottom", fontsize=8.5, fontweight="bold",
-                            color=couleur, zorder=5)
-                if nom == "intermediaire" and etat == "creation":
-                    ax.annotate(ft(_lab("hors_code")), xy=(x, v), xytext=(-4, -8),
-                                textcoords="offset points", ha="left", va="top",
-                                fontsize=7.5, color=couleur)
-            figtools.infobulle(p, bulle + f"{_pct(v)} · {texte}")
-        if lignes:
-            poignees.append(Line2D([], [], color=couleur, lw=2.2, marker="o", ms=5,
-                                   label=ft(_lab("t_" + nom))))
-    # Les graduations sont les dates d'effet elles-mêmes, et la dernière année tracée.
-    graduations = sorted(dates)
-    ax.set_xticks([_abscisse(g) for g in graduations] + [FIN_TAUX])
-    ax.set_xticklabels([ft(_lab("x_1988")) if g == "1988-07-01" else g[:4]
-                        for g in graduations] + [str(FIN_TAUX)])
-    for g in graduations:
-        ax.axvline(_abscisse(g), color="#8b949e", lw=0.6, ls=(0, (1, 3)), zorder=1)
-    ax.set_xlim(1987.3, fin + 0.6)
-    ax.set_ylim(0, 32)
-    ax.set_yticks(range(0, 31, 5))
-    ax.yaxis.set_major_formatter(FuncFormatter(lambda y, _p: f"{y:g}"))
-    ax.set_xlabel(ft(_lab("x_effet")))
-    ax.set_ylabel(ft(_lab("y_taux")))
-    ax.grid(True, axis="y", alpha=0.3)
-    _legende(ax, poignees, ncol=4)
-    fig.tight_layout()
-    return fig
+    """Les quatre taux en escalier, chaque marche étiquetée de sa valeur.
+
+    Le tracé est celui du composant commun (`figtools.fig_escalier`) ; ne sont dites ici que
+    les mentions propres à la taxe : le taux de 10 % créé hors du code, son entrée dans le
+    code, la suppression du taux majoré.
+    """
+    return figtools.fig_escalier(
+        SERIE_TAUX, _courbes_taux(), colonne="taux", echelle=100, fin=FIN_TAUX,
+        format_valeur=_pct, ylabel=_lab("y_taux"), xlabel=_lab("x_effet"),
+        etiquettes_x={"1988-07-01": _lab("x_1988")},
+        annotations={("intermediaire", "1995-01-01"): _lab("hors_code"),
+                     ("intermediaire", "2002-01-01"): _lab("dans_code"),
+                     ("majore", "2007-01-01"): _lab("fin_majore")},
+        xlim=(1987.3, FIN_TAUX + 1.6), ylim=(0, 32), yticks=range(0, 31, 5), ncol=4,
+        supprime=_lab("ib_suppression"))
 
 
 def table_taux():
     """Une ligne par taux et par date d'effet, avec ce que fait le texte et sa référence."""
-    import pandas as pd
-    lignes = []
-    for nom, serie in _taux().items():
-        for date, v, etat, texte, lien in serie:
-            lignes.append({
-                _lab("c_taux"): _lab("t_" + nom),
-                _lab("c_effet"): date,
-                _lab("c_valeur_pct"): v,
-                _lab("c_etat"): _lab("e_" + etat),
-                _lab("c_texte"): texte,
-                _lab("c_jort"): lien,
-            })
-    return pd.DataFrame(lignes)
+    return figtools.table_escalier(
+        SERIE_TAUX, _courbes_taux(), colonne="taux", echelle=100,
+        libelles={"parametre": _lab("c_taux"), "effet": _lab("c_effet"),
+                  "valeur": _lab("c_valeur_pct"), "etat": _lab("c_etat"),
+                  "texte": _lab("c_texte"), "jort": _lab("c_jort"),
+                  **{e: _lab("e_" + e) for e in ("creation", "changement", "reprise",
+                                                 "suppression")}})

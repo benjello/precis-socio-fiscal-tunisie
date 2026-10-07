@@ -1,0 +1,12 @@
+- libelle: النسبة العادية للأداء على القيمة المضافة
+  parametre: parameters/fiscalite_indirecte/tva/taux_normal/taux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.tva.taux_normal.taux/table/
+- libelle: النسبة الوسيطة للأداء على القيمة المضافة
+  parametre: parameters/fiscalite_indirecte/tva/taux_intermediaire/taux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.tva.taux_intermediaire.taux/table/
+- libelle: النسبة المخفضة للأداء على القيمة المضافة
+  parametre: parameters/fiscalite_indirecte/tva/taux_reduit/taux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.tva.taux_reduit.taux/table/
+- libelle: النسبة المرتفعة للأداء على القيمة المضافة
+  parametre: parameters/fiscalite_indirecte/tva/taux_majore/taux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.tva.taux_majore.taux/table/
