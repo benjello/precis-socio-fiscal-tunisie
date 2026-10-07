@@ -271,6 +271,55 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // Colonne de textes des tableaux ENGENDRÉS (bloc `.tableau-engendre`, posé par
+  // scripts/openfisca_tables.py) : la colonne dont l'en-tête est exactement « Texte » ou
+  // « النصّ » est masquée, et son contenu rendu — citations résolues, liens compris — passe
+  // dans une infobulle « Texte de loi » portée par la première cellule non vide de la ligne,
+  // rendue focalisable. Une cellule de textes vide ou réduite à « — » ne pose aucun signal.
+  // Sans ce script, à l'impression et en PDF, la colonne reste visible. Pour les lecteurs
+  // d'écran, la référence est reprise en texte masqué à la suite de la cellule porteuse.
+  const ENTETES_TEXTES = ["Texte", "النصّ"];
+  const propre = (c) => c.textContent.replace(/\s+/g, " ").trim();
+  document.querySelectorAll(".tableau-engendre table").forEach(table => {
+    const entetes = [...table.querySelectorAll("thead tr:first-child > th")];
+    const k = entetes.findIndex(th => ENTETES_TEXTES.includes(propre(th)));
+    // Rien à faire sans colonne de textes, ni si elle est la seule ou la première utile.
+    if (k < 0 || entetes.length < 2) return;
+    // Une cellule fusionnée décalerait les colonnes : on laisse alors le tableau tel quel.
+    const lignes = [...table.querySelectorAll("tbody > tr")];
+    if ([...table.querySelectorAll("th, td")].some(c => c.colSpan > 1 || c.rowSpan > 1)) return;
+    if (lignes.some(tr => tr.cells.length !== entetes.length)) return;
+    const libelle = propre(entetes[k]);
+    lignes.forEach(tr => {
+      const source = tr.cells[k];
+      const texte = propre(source);
+      if (!texte || /^[—–-]$/.test(texte)) return;
+      const porteuse = [...tr.cells].find((c, i) => i !== k && propre(c) && !/^[—–-]$/.test(propre(c)));
+      if (!porteuse) return;
+      // Le contenu de la cellule porteuse est enveloppé (hors bascule d'arborescence) : le
+      // soulignement et l'infobulle s'attachent au texte, non à toute la case.
+      const mot = el("span");
+      mot.tabIndex = 0;
+      [...porteuse.childNodes].filter(n => !(n.classList && n.classList.contains("bascule")))
+        .forEach(n => mot.appendChild(n));
+      porteuse.appendChild(mot);
+      const lu = el("span", "visually-hidden", ` (${libelle}${L.deux}${texte})`);
+      porteuse.appendChild(lu);
+      poser(mot, "loi", () => {
+        const boite = el("div", "infobulle infobulle-loi");
+        boite.appendChild(el("div", "infobulle-famille", L.loi));
+        const titre = el("div", "infobulle-titre");
+        titre.innerHTML = source.innerHTML;
+        boite.appendChild(sansIds(titre));
+        return boite;
+      });
+    });
+    table.classList.add("colonne-textes-reportee");
+    [entetes[k], ...lignes.map(tr => tr.cells[k])].forEach(c => c.classList.add("colonne-textes"));
+    const cols = table.querySelectorAll("colgroup > col");
+    if (cols.length === entetes.length) cols[k].classList.add("colonne-textes");
+  });
+
   // Infobulles de Quarto (renvois et citations) : posées par un script qui s'exécute APRÈS
   // celui-ci, d'où le report. On ne touche ni à leur contenu ni à leur déclenchement : à
   // l'ouverture, on leur ajoute l'étiquette de famille et le pied « Voir… », et l'on retire
