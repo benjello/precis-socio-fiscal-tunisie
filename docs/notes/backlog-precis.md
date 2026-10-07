@@ -20,6 +20,15 @@ corpus avant de citer un texte ou de dire qu'il manque. Les chemins de fascicule
 ci-dessous sont relatifs à `~/projets/PDFs-legislation-tunisie/PDFs/JORT/` ; les
 extraits des lois de finances sont dans le dossier voisin `PDFs/Lois_de_Finances/`.
 
+
+## Chantier transversal — les ruptures au premier plan, le détail replié
+
+Ouvert le 7 octobre 2026 ; note : `docs/notes/chantier-ruptures-au-premier-plan.md`. Prototype sur
+la restitution du crédit de TVA (`_tva.qmd`, `#sec-tva-credit-restitution`) : tableau des ruptures
+et de leur mise en œuvre, puis chronologie complète repliée (bloc `.chronologie-repliable`).
+À juger avant toute extension ; la liste de contrôle est dans la note. Ensuite : conventions de
+rédaction, consigne du rédacteur, rôle « architecte » à créer, reprise des autres chapitres.
+
 ## Vue d'ensemble
 
 | Livre | État du texte | Première lecture faisable |

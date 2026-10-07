@@ -49,3 +49,39 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
+
+<script>
+// Chronologies repliables. Un bloc `.chronologie-repliable` (attribut `titre`) — la longue
+// liste des textes d'un dispositif, date par date — est placé dans un <details> replié ; les
+// ruptures qu'il détaille restent au premier plan, au-dessus. Un renvoi ou une adresse vers un
+// élément du bloc (#tbl-…) le déplie avant de défiler ; l'impression le déplie aussi. Sans
+// script, et en PDF, le bloc reste simplement visible.
+document.addEventListener("DOMContentLoaded", () => {
+  const blocs = [...document.querySelectorAll("div.chronologie-repliable")].map(div => {
+    const details = document.createElement("details");
+    details.className = "chronologie-repliable";
+    const summary = document.createElement("summary");
+    summary.textContent = div.dataset.titre || div.getAttribute("titre") || "…";
+    details.appendChild(summary);
+    div.parentNode.insertBefore(details, div);
+    details.appendChild(div);
+    return details;
+  });
+  if (!blocs.length) return;
+  const ouvrir = (id) => {
+    const cible = id && document.getElementById(id);
+    const details = cible && blocs.find(d => d.contains(cible));
+    if (details) {
+      details.open = true;
+      cible.scrollIntoView();
+    }
+  };
+  ouvrir(decodeURIComponent(location.hash.slice(1)));
+  window.addEventListener("hashchange", () => ouvrir(decodeURIComponent(location.hash.slice(1))));
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest('a[href^="#"]');
+    if (a) ouvrir(decodeURIComponent(a.getAttribute("href").slice(1)));
+  });
+  window.addEventListener("beforeprint", () => blocs.forEach(d => { d.open = true; }));
+});
+</script>
