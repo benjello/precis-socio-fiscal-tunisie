@@ -75,6 +75,15 @@ repliés au lieu de deux. Reste à trancher ou à faire :
   À juger :
   ancres des trajectoires posées dans la cellule de date ; `tbl-tva-reformes` sans liens ;
   attributs `titre` et libellés des liens à traduire en arabe ;
+- **relecture du propriétaire (7 octobre 2026, non commité)** : « En bref » devient « Vue d'ensemble » ;
+  le mot « cœur » ne paraît plus au chapitre (« règles de base », ou l'élément nommé) ; les renvois
+  « traité ailleurs » sont en tête de section ; chaque section de dispositif s'ouvre sur une
+  définition de son objet, avant sa place dans la chronologie ;
+- **texte principal autosuffisant (7 octobre 2026, non commité)** : notations T et D définies dans
+  chaque section qui les emploie ; règles du fait générateur, de l'option, du pourcentage de
+  déduction et de la régularisation dites en clair hors des blocs repliés ; sigles développés et
+  notions du glossaire ancrées dans chaque section de niveau 2 ; plus de tournure de lecture
+  linéaire. Reste : « DGCPR », cité tel que la source l'écrit, sans développement établi ;
 - **version arabe** : le chapitre arabe est structurellement en retard jusqu'à la passe de
   traduction ; les attributs `titre` des douze nouveaux blocs repliés sont à traduire.
 

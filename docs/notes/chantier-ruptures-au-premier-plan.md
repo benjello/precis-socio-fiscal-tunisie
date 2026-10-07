@@ -165,6 +165,20 @@ conversion.
   la branche du dessus ne modifie pas, la sienne pour le reste, puis vérifier le diff.
 - **Deux agents, jamais le même worktree.** Chaque étape a eu sa branche et son répertoire.
 
+### Ce que la relecture du propriétaire a ajouté (7 octobre 2026, après-midi)
+
+- **« Il faut faire comme si le lecteur ne lit que le texte principal. »** Une notation gardée
+  (T, D) se redéfinit dans le texte principal de chaque section qui l'emploie, quitte à redire.
+- Un titre de synthèse se dit « Vue d'ensemble », pas « En bref ».
+- Pas de métaphore : « le cœur de la taxe » devient « les règles de base » ; « épine », « fiche »
+  et « cœur » restent des mots de travail.
+- Un renvoi vers la section qui traite un sujet exclu se place au début, pas à la fin.
+- Chaque section de dispositif définit son objet avant d'en décrire l'évolution.
+- Dans les tableaux : pas de mot coupé hors césure, une ligne par rangée, la colonne des textes
+  en infobulle.
+- Un aperçu périmé laissé sur le disque finit par être lu : un seul dossier d'aperçu courant,
+  les anciens mis de côté.
+
 ### Ce qui reste à décider avant de généraliser
 
 - Brancher `check_domicile_references.py` dans `verifier.sh` et la CI.
