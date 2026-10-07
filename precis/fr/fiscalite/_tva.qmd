@@ -113,20 +113,55 @@ Les dernières modifications ne changent pas la grille elle-même. Au **1^er^ ja
 
 ### Les générations de taux
 
-: Générations successives de la grille des taux de la taxe sur la valeur ajoutée, 1988-2026 {#tbl-tva-taux}
+```{python}
+#| echo: false
+#| output: asis
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "tva_taux.md",
+                               "Générations successives de la grille des taux de la taxe sur la valeur ajoutée, 1988-2026",
+                               "tbl-tva-taux"))
+```
 
-| Période | Taux normal | Taux réduits | Taux majoré | Changement juridique |
-|---|---:|---:|---:|---|
-| 1^er^ juillet 1988 → 31 déc. 1994 | 17 % | 6 % | 29 % | grille d'origine de l'article 7 [@loi-88-61-tva, art. 7] |
-| 1^er^ janv. 1995 → 31 déc. 1997 | 17 % | 6 %; 10 % hors du code | 29 % | création législative du taux de 10 % [@lf-1995, art. 56 à 58 et 100] |
-| 1^er^ janv. 1998 → 31 déc. 2001 | 18 % | 6 %; 10 % hors du code | 29 % | relèvement du taux normal [@lf-1998, art. 25 et 90] |
-| 1^er^ janv. 2002 → 31 déc. 2006 | 18 % | 6 %; 10 % au tableau B bis | 29 % | incorporation du taux de 10 % au code [@loi2001-123-lf2002, art. 82 à 84 et 97] |
-| 1^er^ janv. 2007 → 31 déc. 2017 | 18 % | 6 %; 12 % | — | suppression du taux majoré et passage de 10 % à 12 % [@loi-2006-80-reduction-taux, art. 13, 17 et 19] |
-| 1^er^ janv. 2018 → 2026 | 19 % | 7 %; 13 % | — | relèvement d'un point des trois taux [@lf-2018, art. 43 et 67 ; @lf-2025, art. 31 et 64 ; @lf-2026, art. 46 et 47] |
+Chaque ligne du tableau répond à un texte, et donne la grille en vigueur à compter de sa date d'effet, jusqu'à la veille de la ligne suivante. Le taux de 10 % créé en 1995, porté à 12 % puis à 13 %, y figure dans une colonne propre, sous le nom de taux intermédiaire, qui n'est pas un terme du code : l'article 7 ne désigne chaque taux que par sa valeur.
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré quand la série législative complète des taux sera disponible dans la source du générateur. -->
+- **1^er^ juillet 1988** — grille d'origine de l'article 7 du code : 17 %, 6 % pour les opérations du tableau B, 29 % pour les biens du tableau C [@loi-88-61-tva, art. 7 ; @decret-88-1109-calendrier-tva, art. 1].
+- **1^er^ janvier 1995** — création législative du taux de 10 %. Il est posé par la loi de finances elle-même, hors du code, dont l'article 7 n'est pas modifié ; il y reste extérieur jusqu'au 31 décembre 2001 [@lf-1995, art. 56 à 58 et 100].
+- **1^er^ janvier 1998** — relèvement du taux normal de 17 % à 18 % [@lf-1998, art. 25 et 90].
+- **1^er^ janvier 2002** — incorporation du taux de 10 % au code, au tableau B bis. Sa valeur ne change pas : la ligne du tableau répète la grille de 1998 [@loi2001-123-lf2002, art. 82 à 84 et 97].
+- **1^er^ janvier 2007** — suppression du taux majoré, appliqué pour la dernière fois le 31 décembre 2006, et passage du taux de 10 % à 12 % [@loi-2006-80-reduction-taux, art. 13, 17 et 19].
+- **1^er^ janvier 2018** — relèvement d'un point des trois taux : 19 %, 13 % et 7 % [@lf-2018, art. 43 et 67].
 
-La grille connaît donc deux transformations de structure : l'apparition d'un taux de 10 % en 1995, d'abord extérieur au code puis incorporé en 2002, et la disparition du taux majoré en 2007. Depuis 2018, les trois taux restent inchangés, mais leur stabilité ne signifie pas celle de leur périmètre : des opérations passent encore d'un taux à l'autre ou de l'exonération à l'imposition [@lf-1995, art. 56 à 58 ; @loi2001-123-lf2002, art. 82 à 84 ; @loi-2006-80-reduction-taux, art. 13 et 17 ; @lf-2018, art. 43 ; @lf-2025, art. 31 et 64 ; @lf-2026, art. 46 et 47].
+La grille connaît donc deux transformations de structure : l'apparition d'un taux de 10 % en 1995, d'abord extérieur au code puis incorporé en 2002, et la disparition du taux majoré en 2007 (@fig-tva-taux). Depuis 2018, les trois taux restent inchangés, mais leur stabilité ne signifie pas celle de leur périmètre : des opérations passent encore d'un taux à l'autre ou de l'exonération à l'imposition [@lf-1995, art. 56 à 58 ; @loi2001-123-lf2002, art. 82 à 84 ; @loi-2006-80-reduction-taux, art. 13 et 17 ; @lf-2018, art. 43 ; @lf-2025, art. 31 et 64 ; @lf-2026, art. 46 et 47].
+
+```{python}
+#| label: fig-tva-taux
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tva as fig_tva
+import figtools
+figtools.figure_tabs(
+    fig_tva.fig_taux(), fig_tva.table_taux(), fig_tva.SERIE_TAUX,
+    slug="fig_tva_taux", nominal=False,
+    caption=("Taux de la taxe sur la valeur ajoutée à leurs dates d'effet, du 1^er^ juillet "
+             "1988 à 2026"),
+    note_lecture=(
+        "**Un taux légal vaut du jour de son effet à la veille du suivant : chaque taux est "
+        "tracé en escalier, la marche posée à la date d'effet**, que portent aussi les "
+        "graduations de l'axe horizontal. La première est le **1^er^ juillet 1988**, les "
+        "suivantes sont des 1^er^ janvier. **Deux transformations changent la structure de "
+        "la grille, et non seulement ses niveaux.** Le taux de 10 % apparaît au 1^er^ "
+        "janvier 1995, d'abord hors du code ; le losange creux marque son entrée dans le "
+        "code au 1^er^ janvier 2002, sans marche, puisque sa valeur ne change pas. Le taux "
+        "majoré de 29 % disparaît au 1^er^ janvier 2007 : son trait s'arrête sur un cercle "
+        "creux, le 31 décembre 2006 étant son dernier jour d'application. **La figure montre "
+        "les taux, non ce qu'ils frappent** : un trait horizontal ne dit rien du périmètre "
+        "des opérations soumises à chaque taux, qui a continué de changer pendant que les "
+        "taux restaient stables. L'exonération, qui n'est pas un taux, n'est pas tracée."))
+```
 
 ### Des trajectoires différentes selon les opérations
 

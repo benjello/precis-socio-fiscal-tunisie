@@ -106,6 +106,23 @@ l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_c
 144 décrets de l'article 8 signés de 1988 à 1997, connus par leur seul intitulé. La fiche
 `r-tva-mise-en-application-post-1989` reste ouverte.
 
+**TVA — taux dans le temps (7 octobre 2026).** Le tableau des générations de taux
+(`@tbl-tva-taux`) n'est plus fait main : `scripts/generate_bareme_tables.py` l'engendre
+(`tables/tva_taux.md`), avec la série `precis/_seriescache/tva-taux.csv` que trace
+`@fig-tva-taux` — openfisca-tunisia 0.121, borne relevée. Les six lignes concordent, valeur
+par valeur, avec le tableau remplacé ; sa colonne « Changement juridique » est devenue la
+liste qui suit le tableau, citations comprises. Restent :
+
+- **terme arabe du taux intermédiaire** : `precis/glossaire.yml` n'a pas d'entrée pour ce
+  taux, que le code ne désigne que par sa valeur ; le tableau et la figure arabes portent
+  « النسبة الوسيطة », posé par le générateur et à valider par le terminologue (les trois
+  autres en-têtes sont ceux du glossaire) ;
+- **titres des textes en français dans l'onglet « Données » du livre arabe** : la série
+  porte le titre que la source donne à chaque texte, en français seulement ;
+- **périmètre de chaque taux** : ni le tableau ni la figure ne disent quelles opérations
+  relèvent de chaque taux ; les trajectoires par opération restent en prose
+  (« Des trajectoires différentes selon les opérations »).
+
 - **Impôt sur la fortune (`_impot_fortune.qmd`, chapitre ouvert le 4 octobre 2026)** sur la
   note `docs/notes/fiscalite-impot-fortune.md`. Textes lus : LF 2014 art. 55 et LFC 2014
   art. 38 (fascicules FR et AR locaux, lisibles) ; DL 2022-79 art. 23 et 76 (édition arabe
@@ -1225,7 +1242,7 @@ l'information.
 | `_impot_societes.qmd` | conforme | — |
 | `_impot_fortune.qmd` | conforme ; s'achève sur une case vide (aucune série de rendement) | traduction arabe à déclarer dans le `_quarto.yml` AR |
 | `_droits_consommation.qmd` | historique remonté en tête | la chronologie du périmètre reste un tableau sans récit texte par texte — signalé, non confirmé |
-| `_tva.qmd` | conforme au plan type : historique, architecture de 1988, évolution réforme par réforme, longue période | `@sec-tva-deduction` suit le même plan (mécanisme, textes, données) ; les données du crédit sont une figure engendrée (`@fig-tva-credit-restitutions`), dont les séries restent à prolonger après 2014 ; le tableau des générations de taux est fait main, à engendrer quand la série législative des taux sera complète en amont |
+| `_tva.qmd` | conforme au plan type : historique, architecture de 1988, évolution réforme par réforme, longue période | `@sec-tva-deduction` suit le même plan (mécanisme, textes, données) ; les données du crédit sont une figure engendrée (`@fig-tva-credit-restitutions`), dont les séries restent à prolonger après 2014 ; le tableau des générations de taux (`@tbl-tva-taux`) et la figure des taux dans le temps (`@fig-tva-taux`) sont engendrés depuis le 7 octobre 2026 |
 | `_impot_revenu.qmd` | conforme, à sa manière | rien sur la forme ; restent deux sections à ÉCRIRE, voir plus bas |
 | `retraites/_secteur_*.qmd` | **rangés par mécanisme, et c'est bien** | ne pas y appliquer le plan type |
 | `_regime_indiciaire.qmd` | fait le travail sous d'autres noms | ne rien reprendre sur la forme |

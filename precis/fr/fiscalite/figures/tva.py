@@ -545,3 +545,197 @@ def table_credit_restitutions():
         _lab("c_famille"): [_lab("fam_relais" if _SOURCES[s][1] else "fam_budgetaire")
                             for s in d["source_id"]],
     })
+
+
+# --- Les taux de la TVA dans le temps, 1988-2026 ---------------------------------------------
+#
+# DES MARCHES, PAS DES PENTES. Un taux légal vaut du jour de son effet à la veille du suivant :
+# chaque taux est tracé en escalier, la marche posée à la date d'effet. La série vient de
+# `_seriescache/tva-taux.csv`, émise par `scripts/generate_bareme_tables.py` — une ligne par
+# taux et par date d'effet, avec le texte qui la fixe. Deux lignes n'y sont pas des marches :
+#   - une ligne SANS valeur dit la suppression du taux à cette date (taux majoré, 1er janvier
+#     2007) : le trait s'arrête, sur un marqueur creux ;
+#   - une ligne qui RÉPÈTE la valeur précédente dit un texte qui reprend le taux sans le
+#     changer (le taux de 10 %, entré dans le code au 1er janvier 2002) : un losange creux
+#     sur le trait, sans marche.
+# L'exonération n'est pas un taux : la série ne la porte pas, la figure non plus.
+SERIE_TAUX = "tva-taux"
+
+# Dernière année tracée : celle de la rédaction, comme le tableau des générations de taux.
+FIN_TAUX = 2026
+
+_TAUX = {"normal": BLEU, "intermediaire": ORANGE, "reduit": VERT, "majore": VIOLET}
+
+_L.update({
+    "t_normal": {"fr": "Taux normal", "ar": "النسبة العادية"},
+    "t_intermediaire": {"fr": "Taux intermédiaire", "ar": "النسبة الوسيطة"},
+    "t_reduit": {"fr": "Taux réduit", "ar": "النسبة المخفضة"},
+    "t_majore": {"fr": "Taux majoré", "ar": "النسبة المرتفعة"},
+    "y_taux": {"fr": "Taux de la taxe, en %", "ar": "نسبة الأداء، %"},
+    "x_effet": {"fr": "Date d'effet", "ar": "تاريخ النفاذ"},
+    "x_1988": {"fr": "1er juil.\n1988", "ar": "1 جويلية\n1988"},
+    "fin_majore": {"fr": "supprimé au 1er janvier 2007\n(dernier jour : 31 décembre 2006)",
+                   "ar": "أُلغيت في 1 جانفي 2007\n(آخر يوم: 31 ديسمبر 2006)"},
+    "hors_code": {"fr": "1995 : créé hors du code", "ar": "1995: أُحدثت خارج المجلة"},
+    "dans_code": {"fr": "2002 : entre dans le code\n(tableau B bis), sans changer",
+                  "ar": "2002: أُدرجت في المجلة\n(الجدول « ب مكرر ») دون تغيير"},
+    "c_taux": {"fr": "Taux", "ar": "النسبة"},
+    "c_effet": {"fr": "Date d'effet", "ar": "تاريخ النفاذ"},
+    "c_valeur_pct": {"fr": "Valeur (%)", "ar": "القيمة (%)"},
+    "c_etat": {"fr": "Ce que fait le texte", "ar": "أثر النصّ"},
+    "c_texte": {"fr": "Texte", "ar": "النصّ"},
+    "c_jort": {"fr": "Journal officiel", "ar": "الرائد الرسمي"},
+    "e_creation": {"fr": "fixe le taux", "ar": "يضبط النسبة"},
+    "e_changement": {"fr": "change le taux", "ar": "يغيّر النسبة"},
+    "e_reprise": {"fr": "reprend le taux sans le changer", "ar": "يُبقي النسبة دون تغيير"},
+    "e_suppression": {"fr": "supprime le taux", "ar": "يلغي النسبة"},
+    "ib_suppression": {"fr": "supprimé", "ar": "أُلغيت"},
+})
+
+figtools.register_provenance(
+    SERIE_TAUX,
+    titre=("Taux de la taxe sur la valeur ajoutée à chaque date d'effet, depuis le "
+           "1er juillet 1988 : taux normal, taux intermédiaire, taux réduit, taux majoré"),
+    titre_ar=("نسب الأداء على القيمة المضافة عند كلّ تاريخ نفاذ، منذ 1 جويلية 1988: النسبة "
+              "العادية والنسبة الوسيطة والنسبة المخفضة والنسبة المرتفعة"),
+    sources=["loi-88-61-tva", "decret-88-1109-calendrier-tva", "lf-1995", "lf-1998",
+             "loi2001-123-lf2002", "loi-2006-80-reduction-taux", "lf-2018"],
+    unite="taux de la taxe, en pourcentage de la base imposable",
+    unite_ar="نسبة الأداء من القاعدة الخاضعة",
+    perimetre=("une ligne par taux et par date d'effet, avec le texte du Journal officiel qui "
+               "la fixe ; l'exonération, qui n'est pas un taux, n'y figure pas"),
+    perimetre_ar=("سطر لكلّ نسبة ولكلّ تاريخ نفاذ، مع نصّ الرائد الرسمي الذي يضبطها؛ ولا يرد "
+                  "فيها الإعفاء، وهو ليس نسبة"),
+    caveats=("Les taux, non leur périmètre : la série ne dit pas quelles opérations relèvent "
+             "de chaque taux, ni les réductions annuelles accordées par décret. Le taux de "
+             "10 % est posé hors du code de 1995 à 2001 ; la ligne du 1er janvier 2002 marque "
+             "son entrée dans le code, à valeur inchangée."),
+    caveats_ar=("النسب لا مجال تطبيقها: لا تبيّن السلسلة العمليات الخاضعة لكلّ نسبة ولا "
+                "التخفيضات السنوية الممنوحة بأمر. نسبة 10 % وُضعت خارج المجلة من 1995 إلى "
+                "2001؛ وسطر 1 جانفي 2002 يوافق إدراجها في المجلة دون تغيير قيمتها."),
+)
+
+
+def _abscisse(date_iso: str) -> float:
+    """Date d'effet -> année décimale : le 1er juillet 1988 tombe au milieu de 1988."""
+    import datetime
+    d = datetime.date.fromisoformat(date_iso)
+    return d.year + (d.timetuple().tm_yday - 1) / (366 if d.year % 4 == 0 else 365)
+
+
+def _taux():
+    """La série, par taux : [(date ISO, taux en % ou None, état, texte, lien)], dates croissantes.
+
+    L'état se déduit de la valeur précédente : `creation`, `changement`, `reprise` (même
+    valeur, autre texte) ou `suppression` (plus de valeur).
+    """
+    d = figtools.series(SERIE_TAUX)
+    sortie = {}
+    for nom in _TAUX:
+        s = d[d["taux"] == nom].sort_values("date_effet")
+        lignes, precedente = [], None
+        for date, v, texte, lien in zip(s["date_effet"], s["valeur"], s["texte"], s["lien"]):
+            v = None if v != v else round(100 * float(v), 4)
+            if v is None:
+                etat = "suppression"
+            elif precedente is None:
+                etat = "creation"
+            else:
+                etat = "reprise" if v == precedente else "changement"
+            lignes.append((str(date)[:10], v, etat, texte, lien))
+            precedente = v
+        if lignes:
+            sortie[nom] = lignes
+    return sortie
+
+
+def _pct(v: float) -> str:
+    return f"{v:g}".replace(".", ",") + " %"
+
+
+def fig_taux():
+    """Les quatre taux en escalier, chaque marche étiquetée de sa valeur."""
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    from matplotlib.lines import Line2D
+    from matplotlib.ticker import FuncFormatter
+    series = _taux()
+    fin = FIN_TAUX + 1.0  # le 31 décembre de la dernière année tracée
+    fig, ax = plt.subplots(figsize=(9.5, 5.6))
+    poignees, dates = [], set()
+    for nom, couleur in _TAUX.items():
+        lignes = series.get(nom, [])
+        for i, (date, v, etat, texte, _lien) in enumerate(lignes):
+            x = _abscisse(date)
+            dates.add(date)
+            bulle = f"{date} · {_lab('t_' + nom)} : "
+            if v is None:
+                # Fin du taux : marqueur creux sur le dernier niveau, le trait ne va pas plus loin.
+                dernier = lignes[i - 1][1]
+                p, = ax.plot([x], [dernier], "o", color=couleur, mfc="white", ms=7, mew=1.8,
+                             zorder=4)
+                figtools.infobulle(p, bulle + f"{_lab('ib_suppression')} · {texte}")
+                ax.annotate(ft(_lab("fin_majore")), xy=(x, dernier), xytext=(9, 0),
+                            textcoords="offset points", ha="left", va="center", fontsize=7.5,
+                            color=couleur)
+                continue
+            x_suivant = _abscisse(lignes[i + 1][0]) if i + 1 < len(lignes) else fin
+            ax.plot([x, x_suivant], [v, v], color=couleur, lw=2.2, solid_capstyle="butt",
+                    zorder=2)
+            suivant = lignes[i + 1][1] if i + 1 < len(lignes) else None
+            if suivant is not None and suivant != v:
+                ax.plot([x_suivant, x_suivant], [v, suivant], color=couleur, lw=1.2, zorder=2)
+            if etat == "reprise":
+                p, = ax.plot([x], [v], "D", color=couleur, mfc="white", ms=5.5, mew=1.5,
+                             zorder=4)
+                # À droite du losange : la mention de 1995 occupe déjà la gauche.
+                ax.annotate(ft(_lab("dans_code")), xy=(x, v), xytext=(-4, -8),
+                            textcoords="offset points", ha="left", va="top", fontsize=7.5,
+                            color=couleur)
+            else:
+                p, = ax.plot([x], [v], "o", color=couleur, ms=5, zorder=4)
+                ax.annotate(_pct(v), xy=(x, v), xytext=(4, 4), textcoords="offset points",
+                            ha="left", va="bottom", fontsize=8.5, fontweight="bold",
+                            color=couleur, zorder=5)
+                if nom == "intermediaire" and etat == "creation":
+                    ax.annotate(ft(_lab("hors_code")), xy=(x, v), xytext=(-4, -8),
+                                textcoords="offset points", ha="left", va="top",
+                                fontsize=7.5, color=couleur)
+            figtools.infobulle(p, bulle + f"{_pct(v)} · {texte}")
+        if lignes:
+            poignees.append(Line2D([], [], color=couleur, lw=2.2, marker="o", ms=5,
+                                   label=ft(_lab("t_" + nom))))
+    # Les graduations sont les dates d'effet elles-mêmes, et la dernière année tracée.
+    graduations = sorted(dates)
+    ax.set_xticks([_abscisse(g) for g in graduations] + [FIN_TAUX])
+    ax.set_xticklabels([ft(_lab("x_1988")) if g == "1988-07-01" else g[:4]
+                        for g in graduations] + [str(FIN_TAUX)])
+    for g in graduations:
+        ax.axvline(_abscisse(g), color="#8b949e", lw=0.6, ls=(0, (1, 3)), zorder=1)
+    ax.set_xlim(1987.3, fin + 0.6)
+    ax.set_ylim(0, 32)
+    ax.set_yticks(range(0, 31, 5))
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda y, _p: f"{y:g}"))
+    ax.set_xlabel(ft(_lab("x_effet")))
+    ax.set_ylabel(ft(_lab("y_taux")))
+    ax.grid(True, axis="y", alpha=0.3)
+    _legende(ax, poignees, ncol=4)
+    fig.tight_layout()
+    return fig
+
+
+def table_taux():
+    """Une ligne par taux et par date d'effet, avec ce que fait le texte et sa référence."""
+    import pandas as pd
+    lignes = []
+    for nom, serie in _taux().items():
+        for date, v, etat, texte, lien in serie:
+            lignes.append({
+                _lab("c_taux"): _lab("t_" + nom),
+                _lab("c_effet"): date,
+                _lab("c_valeur_pct"): v,
+                _lab("c_etat"): _lab("e_" + etat),
+                _lab("c_texte"): texte,
+                _lab("c_jort"): lien,
+            })
+    return pd.DataFrame(lignes)
