@@ -56,3 +56,16 @@ details.chronologie-repliable > summary {
 details.chronologie-repliable[open] > summary {
   margin-block-end: 0.75rem;
 }
+
+
+// Domicile unique des références (voir legendes.html et scripts/check_domicile_references.py) :
+// dans une section `.domicile-unique`, la prose nomme le texte de loi et le lien mène à sa ligne
+// du registre replié, qui porte la référence complète. Le lien se distingue d'un lien de
+// glossaire par un soulignement pointillé ; la ligne visée est surlignée.
+a[href^="#r-"] {
+  text-decoration: underline dotted;
+  text-underline-offset: 0.18em;
+}
+tr.ligne-visee > td {
+  background: rgba(255, 213, 79, 0.35);
+}

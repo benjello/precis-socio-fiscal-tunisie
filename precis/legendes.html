@@ -73,7 +73,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const details = cible && blocs.find(d => d.contains(cible));
     if (details) {
       details.open = true;
-      cible.scrollIntoView();
+      // Une ligne de registre visée (#r-…) est centrée et surlignée, pour qu'on la retrouve
+      // dans un tableau de vingt lignes.
+      const ligne = cible.closest("tr");
+      document.querySelectorAll("tr.ligne-visee").forEach(tr => tr.classList.remove("ligne-visee"));
+      if (ligne) {
+        ligne.classList.add("ligne-visee");
+        ligne.scrollIntoView({ block: "center" });
+      } else {
+        cible.scrollIntoView();
+      }
     }
   };
   ouvrir(decodeURIComponent(location.hash.slice(1)));
