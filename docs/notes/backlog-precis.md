@@ -1101,6 +1101,16 @@ dotations 1987-2008 (série `bct-programmes-emploi-dotations`, fonction `vues_do
 `figures/marche_travail.py`), tableaux budgétaires 2011-2025, décomptes administratifs 2009-2013,
 rapports de la Banque mondiale et évaluations, en blocs séparés.
 
+Chapitre converti le 7 octobre 2026 (branche `chantier/conversion-politiques-emploi`) selon les
+principes « ruptures au premier plan, détail replié » : vue d'ensemble ; mise en place
+(1967-1988) ; cinq grandes réformes (1993, 2000, 2009, 2012, 2019 complétée en juin 2023) ; bilan
+et état du droit daté de juin 2023 (six programmes) ; quinze sections de programme rangées par
+type de soutien, chacune avec son registre replié ; longue période inchangée. Plan :
+`docs/notes/marche-travail-politiques-emploi-plan-architecte.md` ; complément documentaire :
+`docs/notes/marche-travail-politiques-emploi-objets-des-reformes.md`, dont les vingt corrections
+sont appliquées. Le chapitre passe de 10 936 à environ 30 000 mots, dont 9 000 dans vingt et un
+blocs repliés.
+
 À faire, avec l'état des sources :
 
 - **Chapitres annoncés, non écrits** : temps de travail et congés ; rupture du contrat de travail.
@@ -1136,38 +1146,77 @@ rapports de la Banque mondiale et évaluations, en blocs séparés.
 - **Politiques de l'emploi — chiffres de 1981 à 1993 à relire** : subventions, indemnités, durées,
   âges et taux des
   décrets n° 81-1220, 87-1190, 88-715, 88-733 et 93-1049, lus sur des fascicules sans couche texte
-  fiable ; le chapitre les donne dans un tableau à part, sous réserve (`tbl-mt-pe-montants-1981-1993`).
-  Relecture à l'image nécessaire, comme pour les indemnités de FORSATI (décret gouvernemental
-  n° 2016-904, colonnes entrelacées), laissées hors du texte. Les lignes de crédit imputées sur le
-  Fonds par les lois de finances 2022 à 2026 (édition arabe) sont aussi à relire avant d'être
-  écrites ; date d'effet des textes de 1981 et du décret gouvernemental n° 2019-542 non établie
-  (édition française du JORT n° 51 de 2019 absente de pist.tn).
+  fiable ; le chapitre les donne dans un tableau à part, replié, sous réserve
+  (`tbl-mt-pe-montants-1981-1993`), et le dit en clair dans la mise en place et dans les sections
+  du contrat emploi-formation et du stage d'initiation. L'objet de ces textes, leurs intitulés et
+  leurs abrogations sont établis (lus à l'image, complément du 7 octobre 2026) ; seuls les chiffres
+  restent à relire à l'image, au corpus. De même pour les indemnités de FORSATI (décret
+  gouvernemental n° 2016-904, colonnes entrelacées ; décret n° 2019-542, art. 26 à 30), laissées
+  hors du texte. Les lignes de crédit imputées sur le Fonds par les lois de finances 2022 à 2026
+  ne sont connues que par les intitulés des notices : à relire avant d'être écrites (seul l'art. 14
+  de la loi de finances pour 2026, qui élargit l'objet du Fonds, est établi et écrit). Jour d'effet
+  des deux textes de 1981 toujours non établi (fascicules datés de deux jours). **Clos** : date
+  d'effet du décret gouvernemental n° 2019-542 (2 juillet 2019, dérivée du dépôt du 27 juin lu à
+  l'édition arabe) ; pages du décret n° 2023-461 (1552-1558) ; fin du contrat emploi-formation
+  (déduite, 16 février 2009).
+- **Politiques de l'emploi — lacunes ouvertes par la conversion du 7 octobre 2026** (toutes dites
+  « non établi ici » dans le chapitre, avec un TODO documentaliste dans la section) :
+  - *terme du relais du maintien dans l'emploi* : la mesure du décret n° 2009-1052 finit le 30 juin
+    2009 ; l'État la reprend le 1^er^ juillet (loi n° 2009-35, lue) ; pour dater la fin du relais,
+    lire la loi n° 2009-82 (JORT n° 1 de 2010) et le décret-loi n° 2011-9 (JORT n° 14 de 2011),
+    au corpus, clés versées (`loi2009-82`, `dl2011-9`), non citées tant qu'elles ne sont pas lues ;
+    contenu d'origine de la loi n° 2008-79 à lire aussi (sans clé) ;
+  - *article 43 d'origine du code d'incitation aux investissements* (loi n° 93-120) : public et
+    taux non établis ; une modification de l'article 43 bis entre 1997 et 2004 n'est pas
+    recherchée ; à lire au corpus ;
+  - *montants du contrat de réinsertion de 2023* : décret n° 2023-461, art. 11 ter à 11 sexies
+    (indemnité, avantage de l'entreprise), et articles 31, 41, 43, 44, 45, 48, 49 et 52 récrits :
+    couche texte fiable, à relever ;
+  - *décret n° 2002-13* (modifie le décret n° 98-868) : seul l'intitulé est connu ; clé
+    `decret2002-13` versée, non citée ; fascicule au corpus (JORT n° 4 de 2002), à lire ;
+  - *financeur des stages d'initiation et du contrat emploi-formation de 2003 à février 2009* :
+    la loi de finances pour 2003 (art. 12) les retire des dépenses du fonds de la formation ;
+    aucun texte lu ne dit qui les paie ensuite ; à chercher dans les lois de finances 2003-2009
+    (tableaux des comptes spéciaux) et les rapports de la Banque centrale ;
+  - *sort de l'article 22 de la loi de finances pour 2005* (contrat de réinsertion dans la vie
+    professionnelle) après le décret n° 2009-349 ; contenu des décrets n° 2001-1722, n° 2006-2990
+    et n° 72-58, connus par leurs seuls intitulés ; articles 16 et 17 du décret n° 2009-349
+    modifiés par le décret n° 2010-87 ; objet de l'article 39 § 2 modifié par le décret n° 2011-98 ;
+    art. 22 du décret n° 2019-542 ; plafond de la contribution patronale du contrat d'initiation ;
+  - *pages des lois de finances pour 2005 et 2010* : le complément donne pp. 3433-3434 et p. 3914,
+    les entrées `lf-2005` et `lf-2010` du fonds commun p. 3440 et p. 3919 ; aucune page n'est donc
+    écrite aux registres pour ces deux lois : à accorder (bibliographe) ;
+  - *figure* : frise des réformes (`fig-mt-pe-frise`) et marques de 1993 et de 2000 sur
+    `fig-mt-pe-dotations` non faites (TODO rédacteur dans le chapitre).
 - **Politiques de l'emploi — textes non identifiés** (fiches de `docs/recherches.yml`) : texte
   instituant le FIAP (`r-fiap-texte-fondateur`) ; barème du SIVP entre 1993 et 2009
   (`r-sivp-bareme-1993-2009`) ; arrêtés des chèques de 2012 (`r-d2012-2369-arretes-cheques`) ;
-  texte fondateur des chantiers (`r-chantiers-regionaux-texte-fondateur`). Textes connus par leur
+  texte fondateur des chantiers (`r-chantiers-regionaux-texte-fondateur`) ; modificatif du décret
+  gouvernemental n° 2019-542 postérieur à juin 2023 (`r-d2019-542-modificatifs-apres-2023`, fiche
+  versée le 7 octobre 2026, couverte jusqu'au 6 octobre 2026). Textes connus par leur
   seul intitulé : décret n° 2003-564 (ANETI), décret-loi n° 2022-78, arrêté du 8 août 2017,
-  décret n° 2025-459, décrets n° 93-1354, 97-1938, 97-1930, 94-494, 98-868, 2001-1722, 2006-2990,
-  2007-1237.
+  décret n° 2025-459, décrets n° 93-1354, 97-1938, 97-1930, 2001-1722, 2002-13, 2006-2990,
+  2007-1237, 72-58 ; loi n° 2008-79. Les décrets n° 94-494 et n° 98-868 sont désormais lus (art. 1
+  à 5 et 1 à 4) et cités au registre des prises en charge.
 - **Politiques de l'emploi — bibliographie** : pas de clé pour les éditions 1988-1990, 1997 et
   2000 du Rapport annuel de la BCT (la clé générique `bct-ra` les couvre dans la figure), ni pour
-  le décret n° 2000-2279, la loi n° 91-4, l'arrêté du 8 août 2017 et le décret n° 2025-459 ;
+  le décret n° 2000-2279, la loi n° 91-4, l'arrêté du 8 août 2017, le décret n° 2025-459, le
+  décret n° 2024-182 et l'arrêté conjoint du 16 août 2024 (qui visent le décret de 2019 modifié en
+  2023 : non écrits dans le chapitre faute de clé), les décrets n° 2006-2990 et n° 2005-1857, la
+  loi n° 2008-79 ;
   `loi88-60-lfc1988` (restructuration des offices en 1988) n'existe qu'au volume « Les caisses » ;
   `loi74-101-lf1975` existe au fonds commun, mais son art. 57 (fonds d'intervention économique)
   n'est pas vérifié.
-- **Politiques de l'emploi — annexe du glossaire, huit citations non résolues** : les entrées
-  `tfp`, `avance-tfp` et `fonds-special-tresor`, ancrées par le chapitre et appelées par le
-  `voir_aussi` des entrées neuves (`fonds-national-emploi`, `fonds-formation-apprentissage`,
-  `contrat-emploi-formation`), citent six clés propres à d'autres volumes :
-  `decret-1956-01-12-formation-professionnelle`, `decret66-527`, `loi-88-145-lf-1989`,
-  `loi2007-69`, `decret2009-292` (cotisations sociales) et `lf-1971` (compensation). À promouvoir
-  au fonds commun, FR et AR (bibliographe) : `scripts/verifier.sh marche_travail` échoue au rendu
-  tant que ce n'est pas fait ; le chapitre lui-même n'a aucune citation non résolue.
 - **Politiques de l'emploi — tableaux faits main** : `tbl-mt-pe-programmes`,
   `tbl-mt-pe-indemnites` et `tbl-mt-pe-fne-lf` portent un TODO rédacteur (à engendrer une fois les
-  barèmes et les prévisions des comptes spéciaux versés en amont). La prise en charge par l'État de
-  la contribution patronale (LF 2005, art. 20 ; décret n° 2009-349) n'est traitée dans aucun
-  chapitre du volume « Les cotisations sociales » : à y signaler par un renvoi.
+  barèmes et les prévisions des comptes spéciaux versés en amont). Depuis la conversion, les mêmes
+  montants sont écrits à la main en trois lieux (ces tableaux, le registre général
+  `tbl-mt-pe-textes`, le registre de chaque programme) : une correction doit les toucher tous. La
+  prise en charge par l'État de la contribution patronale (née de la loi n° 97-79, art. 43 bis du
+  code d'incitation aux investissements ; récrite par la LF 2005, art. 20 ; reprise par les décrets
+  n° 2009-349, 2010-87 et 2012-2369 jusqu'au 31 décembre 2014) n'est traitée dans aucun
+  chapitre du volume « Les cotisations sociales » : à y signaler par un renvoi vers
+  `#sec-mt-pe-prise-en-charge`.
 - **Glossaire des politiques de l'emploi** : dix-neuf notions en `provisoire`, sans définition ;
   « contrat d'initiation » (usage, sigle CIVP) ou « contrat d'insertion » (décret n° 2023-461) à
   trancher par le terminologue.

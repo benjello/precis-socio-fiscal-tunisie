@@ -245,3 +245,9 @@ button.tout-deplier:focus-visible {
 @media print {
   button.tout-deplier { display: none; }
 }
+
+// Un mot court dans une colonne étroite (« insertion », « licenciés ») ne se coupe pas.
+main table .insecable {
+  white-space: nowrap;
+  hyphens: none;
+}

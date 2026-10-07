@@ -1653,3 +1653,31 @@
   - relever les visas du décret n° 2021-436
   - identifier la loi n° 2021-27 et son art. 18 bis
   - lire la loi n° 58-45 art. 29 (lutte contre le chômage)
+
+- id: r-d2019-542-modificatifs-apres-2023
+  objet: texte postérieur au décret n° 2023-461 du 5 juin 2023 modifiant, complétant ou remplaçant le décret gouvernemental n° 2019-542 (programmes du Fonds national de l'emploi)
+  ou: [precis/fr/marche_travail/_politiques_emploi.qmd#sec-mt-pe-etat-du-droit]
+  requetes:
+    titres_fts:
+    - '"fonds national de l emploi" OR "2019-542" OR "الصندوق الوطني للتشغيل" OR "agence nationale pour l emploi"'
+    titres_like:
+    - '%fonds national de l_emploi%'
+    - '%2019-542%'
+    - '%الصندوق الوطني للتشغيل%'
+    - '%542 لسنة 2019%'
+    - '%vie professionnelle%'
+    - '%service civil%'
+    - '%contrat-dignit%'
+    - '%contrat dignit%'
+    - '%promoteurs des petites entreprises%'
+    - '%2023-461%'
+    - '%461 لسنة 2023%'
+    plein_texte: [2019-542]
+    depuis: 2023-06-09
+  passes:
+  - date: 2026-10-07
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist]
+    couverture: 'intitulés de jort_cache, textes publiés après le 9 juin 2023, jusqu''au n° 97 du 2 octobre 2026 ; plein texte des fascicules du corpus local de 2023 à 2026 (522 fichiers français, 555 arabes, jusqu''au n° 97 de 2026), plus le n° 98 du 6 octobre 2026 pris sur pist.tn. Plein texte en deux passes : la première, ligne par ligne (« 2019-542 », « 542 *لسنة *2019 », « عدد *542 »), écartée — elle manquait les numéros coupés en fin de ligne et, en arabe, les marques bidirectionnelles ; la seconde, qui fait foi, sur le texte remis sur une ligne, par expressions régulières : « 2019 ?[-‐–]? ?542 » (fichiers français), « 542 *لسنة *2019 » ou « برامج *الصندوق *الوطني *للتشغيل » (fichiers arabes, marques bidirectionnelles retirées). Aucun modificatif. Candidats lus et écartés : lois de finances pour 2024, 2025 et 2026 (lignes de crédit ; art. 14 de la loi de finances pour 2026, qui modifie la loi de finances pour 2000 et non le décret) ; décret n° 2024-182 et arrêté conjoint du 16 août 2024 (simples visas). Lacunes : fascicules inconnus de la base (parcourus en plein texte seulement) ; faux fascicules français (parcourus par leur jumeau arabe) ; pages sans couche texte ; citation arabe coupée par un saut de ligne ; un texte qui remplacerait le décret sans le citer et sans nommer le Fonds dans son intitulé. Note : docs/notes/marche-travail-politiques-emploi-objets-des-reformes.md, § 6 et § 11.1.'
+    couvert_jusqu_au: 2026-10-06
+    resultat: aucun
