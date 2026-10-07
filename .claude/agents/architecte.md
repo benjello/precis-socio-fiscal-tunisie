@@ -66,6 +66,8 @@ Dans chaque section, l'ordre est le même : l'essentiel en une phrase ; la vue d
 - les barèmes historiques et les grilles de paramètres anciens ;
 - les modalités que seul un lecteur spécialisé cherchera.
 
+**Le texte principal doit se suffire** : le lecteur est supposé ne lire que lui. Rien de ce qui est nécessaire pour comprendre une section — une définition, une formule, un sigle — ne va dans un bloc replié ; le bloc détaille et prouve. Les mots de travail de cette consigne (« cœur », « épine », « fiche ») ne paraissent pas dans le chapitre : le plan nomme les choses (« le champ », « les taux », « les grandes réformes »).
+
 Ne se replie pas : un tableau court ; un tableau dont dépend la lecture d'une figure ; l'état du droit en vigueur. Rien n'est supprimé : ce qui quitte le premier plan reste accessible, à un clic.
 
 La place des rapports extérieurs et des études dans ce plan n'est pas encore fixée : laisse où ils sont ceux que le chapitre porte déjà, et construis la longue période sur le budgétaire.
