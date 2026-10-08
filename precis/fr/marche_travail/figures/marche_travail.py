@@ -581,11 +581,9 @@ SERIE_INS_TAUX = "ins-salaires-prive-annuel"
 SERIE_MICRO = "ins-micro-entreprises-salaries-smig"
 SERIE_EES = "ins-ees-salaire-base-permanents-smig"
 
-# Salariés déclarés les quatre trimestres de 2013 et leur masse salariale : annuaire
-# statistique 2013 de la CNSS, page 36 du fichier PDF (colonne « 4 trimestres » du tableau
-# selon le nombre de trimestres déclarés). Seule année où ce quotient se calcule ; il n'est
-# pas dans la série de l'entrepôt.
-QUATRE_TRIMESTRES_2013 = {"annee": 2013, "salaries": 800_558, "masse": 8_834_648_773}
+SERIE_TRIMESTRES = "cnss-pyramide-trimestres-declares-2013"
+SERIE_QUANTILES = "cnss-quantiles-salaires-approches"
+SERIE_REPERES = "cnss-pyramide-dinars-reperes"
 # Dernière année échue du SMIG en moyenne annuelle (les montants de 2026 à 2028 sont fixés
 # d'avance) et première année de l'indice de la figure des évolutions.
 ANNEE_BASE_INDICE, FIN_INDICES = 2001, 2025
@@ -628,7 +626,105 @@ figtools.register_provenance(SERIE_PYRAMIDE, **{
                    "طريقة حساب الأجر الشهري."),
 })
 
+figtools.register_provenance(SERIE_QUANTILES, **{
+    **figtools.meta(SERIE_QUANTILES),
+    "sources": ["cnss-annuaire-2013", "cnss-annuaire-2018"],
+    "titre_ar": ("الصندوق الوطني للضمان الاجتماعي: كمّيات تقريبية للأجر الشهري المصرّح به، "
+                 "بالاستيفاء داخل شرائح الأجر بالدينار — سلسلة مشتقّة"),
+    "unite_ar": "دينار جارٍ في الشهر",
+    "perimetre_ar": ("الربيع الأول، الوسيط، الربيع الثالث والعُشير التاسع، لكلّ عمود من كلّ "
+                     "طبعة من هرم الأجور بالدينار، وللأجراء المصرّح بهم في الثلاثيات الأربع "
+                     "سنة 2013"),
+    "caveats_ar": ("سلسلة مشتقّة لا ينشرها المصدر: استيفاء خطّي داخل الشريحة، والخطأ دون عرض "
+                   "الشريحة (20 إلى 40 دينارًا في طبعة 2013، ثمّ 50 دينارًا). لا تُقرأ "
+                   "الاتّجاهات إلّا داخل المقطع الواحد: الطبعات لا تعطي التوزيع نفسه للسنة "
+                   "نفسها."),
+})
+figtools.register_provenance(SERIE_TRIMESTRES, **{
+    **figtools.meta(SERIE_TRIMESTRES),
+    "sources": ["cnss-annuaire-2013"],
+})
+
 _L.update({
+    "vue_indices": {"fr": f"Indices, {ANNEE_BASE_INDICE} = 100",
+                    "ar": f"أرقام قياسية، {ANNEE_BASE_INDICE} = 100"},
+    "vue_pa": {"fr": f"Pouvoir d'achat, {ANNEE_BASE_INDICE} = 100",
+               "ar": f"القدرة الشرائية، {ANNEE_BASE_INDICE} = 100"},
+    "y_pa": {"fr": f"Indice rapporté à celui des prix, base 100 en {ANNEE_BASE_INDICE}",
+             "ar": f"الرقم القياسي منسوبًا إلى الأسعار، أساس 100 سنة {ANNEE_BASE_INDICE}"},
+    "y_smig_pct": {"fr": "SMIG de 48 heures, en % du salaire moyen déclaré",
+                   "ar": "الأجر الأدنى (48 ساعة)، بالنسبة المائوية من معدّل الأجر المصرّح به"},
+    "ss_2006": {"fr": "Annuaire 2006 (1970-1999 et 2002-2006)", "ar": "دليل 2006 (1970-1999 و2002-2006)"},
+    "ss_2018": {"fr": "Annuaire 2018 (2000-2018)", "ar": "دليل 2018 (2000-2018)"},
+    "ss_4t": {"fr": "Salaire moyen des déclarés quatre trimestres, 2013",
+              "ar": "معدّل أجر المصرّح بهم في الثلاثيات الأربع، 2013"},
+    "ss_gel": {"fr": "SMIG sans relèvement", "ar": "الأجر الأدنى دون ترفيع"},
+    "ss_1974": {"fr": "1974 : institution\ndu SMIG, indemnité\nde cherté de vie\ncomprise",
+                "ar": "1974: إحداث الأجر\nالأدنى المضمون\nشاملاً منحة\nغلاء المعيشة"},
+    "ss_2003": {"fr": "2003 : taxis\net louages\n(décret de 2002)",
+                "ar": "2003: سيارات\nالأجرة واللواج\n(أمر 2002)"},
+    "ss_2016": {"fr": "2016 : hausse\nà effet rétroactif", "ar": "2016: ترفيع\nبمفعول رجعي"},
+    "c_ss_2006": {"fr": "SMIG / salaire moyen déclaré, annuaire 2006 (%)",
+                  "ar": "الأجر الأدنى / معدّل الأجر المصرّح به، دليل 2006 (%)"},
+    "c_ss_2018": {"fr": "SMIG / salaire moyen déclaré, annuaire 2018 (%)",
+                  "ar": "الأجر الأدنى / معدّل الأجر المصرّح به، دليل 2018 (%)"},
+    "c_ss_4t": {"fr": "SMIG / salaire moyen des déclarés quatre trimestres (%)",
+                "ar": "الأجر الأدنى / معدّل أجر المصرّح بهم في الثلاثيات الأربع (%)"},
+    "c_a_2006": {"fr": "salaire annuel moyen déclaré, annuaire 2006 (D courants)",
+                 "ar": "معدّل الأجر السنوي المصرّح به، دليل 2006 (د جارية)"},
+    "c_a_2018": {"fr": "salaire annuel moyen déclaré, annuaire 2018 (D courants)",
+                 "ar": "معدّل الأجر السنوي المصرّح به، دليل 2018 (د جارية)"},
+    "c_r_2006": {"fr": f"salaire mensuel moyen déclaré, annuaire 2006 (D de {ANNEE_BASE})",
+                 "ar": f"معدّل الأجر الشهري المصرّح به، دليل 2006 (د {ANNEE_BASE})"},
+    "c_r_2018": {"fr": f"salaire mensuel moyen déclaré, annuaire 2018 (D de {ANNEE_BASE})",
+                 "ar": f"معدّل الأجر الشهري المصرّح به، دليل 2018 (د {ANNEE_BASE})"},
+    "c_r_4t": {"fr": f"salaire mensuel moyen des déclarés quatre trimestres (D de {ANNEE_BASE})",
+               "ar": f"معدّل الأجر الشهري للمصرّح بهم في الثلاثيات الأربع (د {ANNEE_BASE})"},
+    "c_pa_salaire": {"fr": f"pouvoir d'achat, panel de l'INS ({ANNEE_BASE_INDICE} = 100)",
+                     "ar": f"القدرة الشرائية، عيّنة المعهد ({ANNEE_BASE_INDICE} = 100)"},
+    "c_pa_cnss": {"fr": f"pouvoir d'achat, salaire moyen déclaré à la CNSS ({ANNEE_BASE_INDICE} = 100)",
+                  "ar": f"القدرة الشرائية، معدّل الأجر المصرّح به ({ANNEE_BASE_INDICE} = 100)"},
+    "c_pa_smig": {"fr": f"pouvoir d'achat, SMIG 48 h ({ANNEE_BASE_INDICE} = 100)",
+                  "ar": f"القدرة الشرائية، الأجر الأدنى 48 ساعة ({ANNEE_BASE_INDICE} = 100)"},
+    "c_p_smig_ref": {"fr": "SMIG de référence de la CNSS (D par mois)",
+                     "ar": "الأجر الأدنى المرجعي لدى الصندوق (د في الشهر)"},
+    # Quantiles approchés.
+    "q_Q1": {"fr": "Premier quartile", "ar": "الربيع الأول"},
+    "q_médiane": {"fr": "Médiane", "ar": "الوسيط"},
+    "q_Q3": {"fr": "Troisième quartile", "ar": "الربيع الثالث"},
+    "q_D9": {"fr": "Neuvième décile", "ar": "العُشير التاسع"},
+    "q_d12": {"fr": "Salaire de l'année divisé par douze, années incomplètes comprises",
+              "ar": "أجر السنة مقسومًا على اثني عشر، بما فيه السنوات غير الكاملة"},
+    "q_mois": {"fr": "Autre mesure du salaire mensuel (annuaires 2016 à 2018, années 2010-2016)",
+               "ar": "قيس آخر للأجر الشهري (أدلّة 2016 إلى 2018، سنوات 2010-2016)"},
+    "q_4t": {"fr": "Salariés déclarés les quatre trimestres, 2013",
+             "ar": "الأجراء المصرّح بهم في الثلاثيات الأربع، 2013"},
+    "c_q_ed": {"fr": "annuaire de la CNSS", "ar": "دليل الصندوق"},
+    "c_q_seg": {"fr": "segment", "ar": "المقطع"},
+    "c_q_mesure": {"fr": "mesure du salaire mensuel", "ar": "قيس الأجر الشهري"},
+    "c_q_pop": {"fr": "population", "ar": "الفئة"},
+    "pop_tous": {"fr": "tous les salariés déclarés", "ar": "كلّ الأجراء المصرّح بهم"},
+    "pop_4t": {"fr": "déclarés les quatre trimestres", "ar": "المصرّح بهم في الثلاثيات الأربع"},
+    "m_d12": {"fr": "année\u00a0÷\u00a012", "ar": "السنة ÷ 12"},
+    "m_mois": {"fr": "autre mesure", "ar": "قيس آخر"},
+    "c_q_courant": {"fr": "{q} (D courants par mois)", "ar": "{q} (د جارية في الشهر)"},
+    "c_q_reel": {"fr": "{q} (D de {a} par mois)", "ar": "{q} (د {a} في الشهر)"},
+    "ti_annees": {"fr": "Années", "ar": "السنوات"},
+    "ti_ed": {"fr": "Annuaire", "ar": "الدليل"},
+    "ti_mesure": {"fr": "Salaire mensuel", "ar": "الأجر الشهري"},
+    "ti_debut": {"fr": "{r}, début", "ar": "{r}، البداية"},
+    "ti_fin": {"fr": "{r}, fin", "ar": "{r}، النهاية"},
+    "ti_q3q1": {"fr": "Q3/Q1", "ar": "الربيع 3 / الربيع 1"},
+    "ti_mq1": {"fr": "Médiane/Q1", "ar": "الوسيط / الربيع 1"},
+    "ti_d9m": {"fr": "D9/médiane", "ar": "العُشير 9 / الوسيط"},
+    "t13_pop": {"fr": "Population, 2013", "ar": "الفئة، 2013"},
+    "t13_n": {"fr": "Salariés", "ar": "الأجراء"},
+    "t13_moy": {"fr": "Salaire annuel moyen (D)", "ar": "معدّل الأجر السنوي (د)"},
+    "t13_q1": {"fr": "Premier quartile (D par mois)", "ar": "الربيع الأول (د في الشهر)"},
+    "t13_med": {"fr": "Médiane (D par mois)", "ar": "الوسيط (د في الشهر)"},
+    "t13_q3": {"fr": "Troisième quartile (D par mois)", "ar": "الربيع الثالث (د في الشهر)"},
+    "t13_300": {"fr": "Moins de 300 D par mois", "ar": "أقلّ من 300 د في الشهر"},
+    "t13_330": {"fr": "De 300 à 330 D par mois", "ar": "من 300 إلى 330 د في الشهر"},
     "y_indice": {"fr": f"Indice, base 100 en {ANNEE_BASE_INDICE}",
                  "ar": f"رقم قياسي، أساس 100 سنة {ANNEE_BASE_INDICE}"},
     "y_rapport_smig": {"fr": "Salaire moyen déclaré, en SMIG de 48 heures",
@@ -660,34 +756,46 @@ _L.update({
     "c_sd_rapport": {"fr": "salaire moyen déclaré / SMIG 48 h",
                      "ar": "معدّل الأجر المصرّح به / الأجر الأدنى 48 ساعة"},
     "seg_4t": {"fr": "déclarés les quatre trimestres", "ar": "مصرّح بهم في الثلاثيات الأربع"},
-    "i_salaire": {"fr": "Salaire moyen du privé non agricole, panel de salariés permanents (INS)",
-                  "ar": "معدّل الأجر في القطاع الخاص غير الفلاحي، عيّنة قارّة من الأجراء (المعهد)"},
+    "i_salaire": {"fr": ("Salaire moyen, salariés déclarés cinq trimestres de suite, quatrième "
+                         "trimestre (INS, d'après la CNSS)"),
+                  "ar": ("معدّل الأجر، عيّنة قارّة من الأجراء، الثلاثي الرابع (المعهد، حسب "
+                         "تصاريح الصندوق)")},
+    "i_cnss": {"fr": ("Salaire moyen déclaré, tous les salariés déclarés dans l'année "
+                      "(CNSS, annuaire 2018)"),
+               "ar": ("معدّل الأجر المصرّح به، كلّ الأجراء المصرّح بهم في السنة (الصندوق، "
+                      "دليل 2018)")},
+    "ri_2003": {"fr": "2003 : taxis et louages\n(salaire moyen déclaré)",
+                "ar": "2003: سيارات الأجرة واللواج\n(الأجر المصرّح به لدى الصندوق)"},
+    "c_i_cnss_niveau": {"fr": "salaire annuel moyen déclaré à la CNSS, annuaire 2018 (D courants)",
+                        "ar": "معدّل الأجر السنوي المصرّح به لدى الصندوق، دليل 2018 (د جارية)"},
+    "c_i_cnss": {"fr": f"salaire moyen déclaré à la CNSS (indice, {ANNEE_BASE_INDICE} = 100)",
+                 "ar": f"معدّل الأجر المصرّح به لدى الصندوق (رقم قياسي، {ANNEE_BASE_INDICE} = 100)"},
     "i_prov": {"fr": "2025 : taux provisoire", "ar": "2025: نسبة وقتية"},
     "i_smig": {"fr": "SMIG, régime de 48 heures, moyenne annuelle",
                "ar": "الأجر الأدنى المضمون، نظام 48 ساعة، المعدّل السنوي"},
     "i_prix": {"fr": "Prix à la consommation", "ar": "أسعار الاستهلاك"},
-    "c_i_taux": {"fr": "salaire du privé non agricole : taux chaîné de l'année (%)",
-                 "ar": "أجر القطاع الخاص غير الفلاحي: النسبة السنوية المتسلسلة (%)"},
+    "c_i_taux": {"fr": "panel de l'INS : taux chaîné de l'année (%)",
+                 "ar": "عيّنة المعهد: النسبة السنوية المتسلسلة (%)"},
     "c_i_prov": {"fr": "taux provisoire", "ar": "نسبة وقتية"},
-    "c_i_salaire": {"fr": f"salaire du privé non agricole (indice, {ANNEE_BASE_INDICE} = 100)",
-                    "ar": f"أجر القطاع الخاص غير الفلاحي (رقم قياسي، {ANNEE_BASE_INDICE} = 100)"},
+    "c_i_salaire": {"fr": f"panel de l'INS, quatrième trimestre (indice, {ANNEE_BASE_INDICE} = 100)",
+                    "ar": f"عيّنة المعهد، الثلاثي الرابع (رقم قياسي، {ANNEE_BASE_INDICE} = 100)"},
     "c_i_smig": {"fr": f"SMIG 48 h, moyenne annuelle (indice, {ANNEE_BASE_INDICE} = 100)",
                  "ar": f"الأجر الأدنى 48 ساعة، المعدّل السنوي (رقم قياسي، {ANNEE_BASE_INDICE} = 100)"},
     "c_i_prix": {"fr": f"prix à la consommation (indice, {ANNEE_BASE_INDICE} = 100)",
                  "ar": f"أسعار الاستهلاك (رقم قياسي، {ANNEE_BASE_INDICE} = 100)"},
     "oui": {"fr": "oui", "ar": "نعم"},
-    "p_inf1": {"fr": "Moins de 1 SMIG", "ar": "أقلّ من مرّة واحدة الأجر الأدنى"},
-    "p_1_15": {"fr": "De 1 à 1,5 SMIG", "ar": "من 1 إلى 1,5 مرّة الأجر الأدنى"},
-    "p_sup15": {"fr": "Plus de 1,5 SMIG", "ar": "أكثر من 1,5 مرّة الأجر الأدنى"},
-    "p_t1": {"fr": "Salariés déclarés au\npremier trimestre 2018 :\n{v} % sous 1 SMIG",
-             "ar": "الأجراء المصرّح بهم في\nالثلاثي الأول 2018:\n{v} % دون الأجر الأدنى"},
+    "p_inf1": {"fr": "Moins de 1 SMIG de référence de la CNSS", "ar": "أقلّ من مرّة واحدة الأجر الأدنى المرجعي لدى الصندوق"},
+    "p_1_15": {"fr": "De 1 à 1,5 SMIG de référence", "ar": "من 1 إلى 1,5 مرّة الأجر الأدنى المرجعي"},
+    "p_sup15": {"fr": "Plus de 1,5 SMIG de référence", "ar": "أكثر من 1,5 مرّة الأجر الأدنى المرجعي"},
+    "p_t1": {"fr": "Salariés déclarés au\npremier trimestre 2018 :\n{v} % sous 1 SMIG\nde référence",
+             "ar": "الأجراء المصرّح بهم في\nالثلاثي الأول 2018:\n{v} % دون الأجر\nالأدنى المرجعي"},
     "c_mesure": {"fr": "mesure", "ar": "القيس"},
     "m_annuelle": {"fr": "annuelle", "ar": "سنوي"},
     "m_trim": {"fr": "trimestre {t} de 2018", "ar": "الثلاثي {t} من 2018"},
     "c_p_total": {"fr": "salariés déclarés", "ar": "الأجراء المصرّح بهم"},
-    "c_p_inf1": {"fr": "moins de 1 SMIG (%)", "ar": "أقلّ من 1 (%)"},
-    "c_p_1_15": {"fr": "de 1 à 1,5 SMIG (%)", "ar": "من 1 إلى 1,5 (%)"},
-    "c_p_sup15": {"fr": "plus de 1,5 SMIG (%)", "ar": "أكثر من 1,5 (%)"},
+    "c_p_inf1": {"fr": "moins de 1 SMIG de référence (%)", "ar": "أقلّ من 1 (%)"},
+    "c_p_1_15": {"fr": "de 1 à 1,5 SMIG de référence (%)", "ar": "من 1 إلى 1,5 (%)"},
+    "c_p_sup15": {"fr": "plus de 1,5 SMIG de référence (%)", "ar": "أكثر من 1,5 (%)"},
     # Tableau des enquêtes de l'INS.
     "t_enquete": {"fr": "Enquête de l'INS et champ", "ar": "مسح المعهد الوطني للإحصاء ومجاله"},
     "t_annee": {"fr": "Année", "ar": "السنة"},
@@ -711,6 +819,13 @@ _L.update({
               "ar": ("التشغيل والأجور: المؤسسات العمومية والمؤسسات الخاصة التي تشغّل ستة أجراء "
                      "فأكثر؛ الأجراء القارّون")},
     "t_rep_micro": {"fr": "{n} entreprises sans comptabilité", "ar": "{n} مؤسسة لا تمسك محاسبة"},
+    "t_part_court": {"fr": "Salaire inférieur au SMIG", "ar": "أجر دون الأجر الأدنى"},
+    "t_moitie_court": {"fr": "dont inférieur à la moitié du SMIG", "ar": "منها دون نصف الأجر الأدنى"},
+    "t_base_court": {"fr": "Salaire de base moyen (D)", "ar": "معدّل الأجر الأساسي (د)"},
+    "t_smig_court": {"fr": "SMIG retenu par l'INS (D)", "ar": "الأجر الأدنى المعتمد (د)"},
+    "t_repondantes": {"fr": "Entreprises répondantes", "ar": "المؤسسات المجيبة"},
+    "t_taux": {"fr": "Taux de réponse", "ar": "نسبة الإجابة"},
+    "t_source": {"fr": "Source", "ar": "المصدر"},
     "t_rep_ees": {"fr": "taux de réponse de {n}", "ar": "نسبة إجابة {n}"},
 })
 
@@ -744,14 +859,28 @@ def _salaire_declare():
     return lignes
 
 
+def _trimestres_2013(classement: str):
+    """Tableau de 2013 selon le nombre de trimestres déclarés, classes en dinars ou en SMIG."""
+    t = figtools.series(SERIE_TRIMESTRES)
+    return t[t["classement"] == classement]
+
+
 def _quatre_trimestres():
-    """Le salaire moyen des salariés déclarés les quatre trimestres de 2013, mêmes grandeurs."""
-    q = QUATRE_TRIMESTRES_2013
+    """Le salaire moyen des salariés déclarés les quatre trimestres de 2013, mêmes grandeurs.
+
+    Quotient de la masse par l'effectif de la ligne TOTAL de la colonne « 4 trimestres »
+    (annuaire 2013, page 35 du fichier PDF) : l'annuaire imprime les deux, non le quotient.
+    """
+    t = _trimestres_2013("dinars")
+    l = t[(t["trimestres_declares"] == "4") & (t["classe"] == "TOTAL")].iloc[0]
+    q = {"annee": int(l["annee"]), "salaries": int(l["salaries_declares"]),
+         "masse": int(l["masse_salariale_D"])}
     annee, ipc = q["annee"], _ipc()
     s = _moyenne_annuelle(_serie(), "smig_48h_mensuel", annee)
     annuel = q["masse"] / q["salaries"]
     coef = ipc[ANNEE_BASE] / ipc[annee]
     return {"annee": annee, "edition": 2013, "segment": _lab("seg_4t"), "annuel": annuel,
+            "salaries": q["salaries"],
             "mensuel": annuel / 12, "smig": s, "mensuel_reel": annuel / 12 * coef,
             "smig_reel": s * coef, "rapport": annuel / (12 * s)}
 
@@ -797,29 +926,176 @@ def _fig_salaire_declare(rapport: bool):
     return fig
 
 
-def vues_salaire_declare():
+def _par_annee():
+    """Une ligne par année, 1970-2025 : les deux éditions de l'annuaire côte à côte, le point
+    de 2013 des déclarés quatre trimestres, puis les indices et leur rapport aux prix."""
+    sd, q = _salaire_declare(), _quatre_trimestres()
+    ind = {l["annee"]: l for l in _indices()}
+    lignes = []
+    for annee in range(min(l["annee"] for l in sd), max(ind) + 1):
+        ed = {l["edition"]: l for l in sd if l["annee"] == annee}
+        un = next(iter(ed.values()), None)
+        i = ind.get(annee, {})
+        prix = i.get("prix")
+
+        def pa(cle):
+            return None if i.get(cle) is None or prix is None else 100 * i[cle] / prix
+        lignes.append({
+            "annee": annee,
+            "a2006": ed[2006]["annuel"] if 2006 in ed else None,
+            "a2018": ed[2018]["annuel"] if 2018 in ed else None,
+            "smig": un["smig"] if un else None,
+            "r2006": ed[2006]["mensuel_reel"] if 2006 in ed else None,
+            "r2018": ed[2018]["mensuel_reel"] if 2018 in ed else None,
+            "r4t": q["mensuel_reel"] if annee == q["annee"] else None,
+            "smig_reel": un["smig_reel"] if un else None,
+            "ss2006": 100 * ed[2006]["smig"] / ed[2006]["mensuel"] if 2006 in ed else None,
+            "ss2018": 100 * ed[2018]["smig"] / ed[2018]["mensuel"] if 2018 in ed else None,
+            "ss4t": 100 * q["smig"] / q["mensuel"] if annee == q["annee"] else None,
+            "taux": i.get("taux"), "provisoire": bool(i.get("provisoire")),
+            "i_salaire": i.get("salaire"), "i_cnss": i.get("cnss"), "i_smig": i.get("smig"),
+            "i_prix": prix, "pa_salaire": pa("salaire"), "pa_cnss": pa("cnss"),
+            "pa_smig": pa("smig")})
+    return lignes
+
+
+def _arr(v, d=1):
+    return None if v is None else round(v, d)
+
+
+def fig_pouvoir_achat():
+    """Les indices rapportés à celui des prix : pouvoir d'achat, base 100 en 2001."""
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    r = [l for l in _par_annee() if l["annee"] >= ANNEE_BASE_INDICE]
+    fig, ax = plt.subplots(figsize=(10, 5.6))
+    for cle, lib, style in (("pa_salaire", "i_salaire", dict(color=BLEU, lw=2, marker="o", ms=3)),
+                            ("pa_cnss", "i_cnss", dict(color=VIOLET, lw=1.8, ls=(0, (5, 2)),
+                                                       marker="^", ms=4)),
+                            ("pa_smig", "i_smig", dict(color=ORANGE, lw=1.8, marker="s", ms=3))):
+        pts = [(l["annee"], l[cle]) for l in r if l[cle] is not None]
+        ax.plot([a for a, _ in pts], [v for _, v in pts], label=ft(_lab(lib)), **style)
+        dessus = cle == "pa_cnss"
+        ax.annotate(_fr(pts[-1][1], 0), xy=pts[-1], xytext=(0, 8) if dessus else (6, 0),
+                    textcoords="offset points", va="bottom" if dessus else "center",
+                    ha="center" if dessus else "left", fontsize=8, color=style["color"])
+    figtools.marque_rupture(ax, 2003, _ft_lignes(_lab("ri_2003")))
+    ax.axhline(100, color=GRIS, lw=0.8)
+    ax.set_xlim(ANNEE_BASE_INDICE - 0.5, FIN_INDICES + 1.6)
+    ax.set_xticks(range(ANNEE_BASE_INDICE, FIN_INDICES + 1, 3))
+    ax.set_xlabel(ft(_lab("x_annee")))
+    ax.set_ylabel(ft(_lab("y_pa")))
+    ax.grid(True, alpha=0.3)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.12), fontsize=8, frameon=False, ncol=1)
+    fig.tight_layout()
+    return fig
+
+
+def vues_pouvoir_achat():
+    """Le salaire moyen, le SMIG et les prix : niveaux en dinars constants depuis 1970, puis
+    indices et pouvoir d'achat depuis 2001."""
+    controle_texte()
     return [(_lab("vue_constants"), _fig_salaire_declare(False)),
-            (_lab("vue_rapport"), _fig_salaire_declare(True))]
+            (_lab("vue_indices"), fig_indices()),
+            (_lab("vue_pa"), fig_pouvoir_achat())]
 
 
-def table_salaire_declare():
+def table_pouvoir_achat():
     import pandas as pd
-    r = _salaire_declare() + [_quatre_trimestres()]
+    r = _par_annee()
     return pd.DataFrame({
         _lab("c_annee"): [l["annee"] for l in r],
-        _lab("c_edition"): [l["edition"] for l in r],
-        _lab("c_segment"): [l["segment"] for l in r],
-        _lab("c_sd_annuel"): [round(l["annuel"]) for l in r],
-        _lab("c_sd_mensuel"): [round(l["mensuel"], 3) for l in r],
-        _lab("c_48_moy"): [round(l["smig"], 3) for l in r],
-        _lab("c_sd_reel"): [round(l["mensuel_reel"], 1) for l in r],
-        _lab("c_48_reel"): [round(l["smig_reel"], 1) for l in r],
-        _lab("c_sd_rapport"): [round(l["rapport"], 2) for l in r],
+        _lab("c_a_2006"): [_arr(l["a2006"], 0) for l in r],
+        _lab("c_a_2018"): [_arr(l["a2018"], 0) for l in r],
+        _lab("c_48_moy"): [_arr(l["smig"], 3) for l in r],
+        _lab("c_r_2006"): [_arr(l["r2006"]) for l in r],
+        _lab("c_r_2018"): [_arr(l["r2018"]) for l in r],
+        _lab("c_r_4t"): [_arr(l["r4t"]) for l in r],
+        _lab("c_48_reel"): [_arr(l["smig_reel"]) for l in r],
+        _lab("c_i_taux"): [l["taux"] for l in r],
+        _lab("c_i_prov"): [_lab("oui") if l["provisoire"] else "" for l in r],
+        _lab("c_i_salaire"): [_arr(l["i_salaire"]) for l in r],
+        _lab("c_i_cnss"): [_arr(l["i_cnss"]) for l in r],
+        _lab("c_i_smig"): [_arr(l["i_smig"]) for l in r],
+        _lab("c_i_prix"): [_arr(l["i_prix"]) for l in r],
+        _lab("c_pa_salaire"): [_arr(l["pa_salaire"]) for l in r],
+        _lab("c_pa_cnss"): [_arr(l["pa_cnss"]) for l in r],
+        _lab("c_pa_smig"): [_arr(l["pa_smig"]) for l in r],
+    })
+
+
+# Périodes sans relèvement du SMIG dans la période tracée (du 1er janvier 1983 au 1er juillet
+# 1986 ; du 1er juillet 2012 au 1er mai 2014), en années décimales.
+_SANS_RELEVEMENT = ((1983.0, 1986.5), (2012.5, 2014.33))
+
+
+def fig_smig_salaire():
+    """Le SMIG mensuel de 48 heures en % du salaire mensuel moyen déclaré, par segments, avec
+    les éléments de législation que le chapitre identifie."""
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    r, q = _salaire_declare(), _quatre_trimestres()
+    fig, ax = plt.subplots(figsize=(10, 5.8))
+    for i, (debut, fin) in enumerate(_SANS_RELEVEMENT):
+        ax.axvspan(debut, fin, color=JAUNE, alpha=0.22, lw=0,
+                   label=ft(_lab("ss_gel")) if i == 0 else None)
+    deja = set()
+    for segment in dict.fromkeys((l["edition"], l["segment"]) for l in r):
+        edition = segment[0]
+        pts = [(l["annee"], 100 * l["smig"] / l["mensuel"]) for l in r
+               if (l["edition"], l["segment"]) == segment]
+        style = (dict(color=BLEU, marker="o", ms=3.2) if edition == 2006
+                 else dict(color=ORANGE, marker="s", ms=3.2))
+        ax.plot([a for a, _ in pts], [v for _, v in pts], lw=1.8,
+                label=None if edition in deja else ft(_lab(f"ss_{edition}")), **style)
+        deja.add(edition)
+    ax.plot([q["annee"]], [100 * q["smig"] / q["mensuel"]], ls="none", marker="D", ms=6,
+            mfc="white", mec=VIOLET, mew=1.6, label=ft(_lab("ss_4t")))
+    for annee, cle in ((1974, "ss_1974"), (1981, "rs_1981"), (1988, "rs_1988"), (2003, "ss_2003")):
+        figtools.marque_rupture(ax, annee, _ft_lignes(_lab(cle)))
+    v2016 = next(100 * l["smig"] / l["mensuel"] for l in r if l["annee"] == 2016)
+    ax.annotate(_ft_lignes(_lab("ss_2016")), xy=(2016, v2016), xytext=(0, 34),
+                textcoords="offset points", ha="center", va="bottom", fontsize=7,
+                color="#57606a", arrowprops={"arrowstyle": "-", "color": "#57606a", "lw": 0.8})
+    ax.set_ylim(0, 115)
+    ax.set_xlim(1968.5, 2019.5)
+    ax.set_xticks(range(1970, 2019, 4))
+    ax.set_xlabel(ft(_lab("x_annee")))
+    ax.set_ylabel(ft(_lab("y_smig_pct")))
+    ax.grid(True, alpha=0.3)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.12), fontsize=8, frameon=False, ncol=2)
+    fig.tight_layout()
+    return fig
+
+
+def vues_smig_salaire():
+    return fig_smig_salaire()
+
+
+def table_smig_salaire():
+    import pandas as pd
+    r = [l for l in _par_annee() if l["smig"] is not None]
+    return pd.DataFrame({
+        _lab("c_annee"): [l["annee"] for l in r],
+        _lab("c_48_moy"): [_arr(l["smig"], 3) for l in r],
+        _lab("c_a_2006"): [_arr(l["a2006"], 0) for l in r],
+        _lab("c_a_2018"): [_arr(l["a2018"], 0) for l in r],
+        _lab("c_ss_2006"): [_arr(l["ss2006"]) for l in r],
+        _lab("c_ss_2018"): [_arr(l["ss2018"]) for l in r],
+        _lab("c_ss_4t"): [_arr(l["ss4t"]) for l in r],
     })
 
 
 def _indices():
-    """Indices base 100 en 2001 : salaire du privé (taux chaîné de l'INS), SMIG, prix."""
+    """Indices base 100 en 2001 : salaire du privé (taux chaîné de l'INS), salaire moyen
+    déclaré à la CNSS (édition 2018 de l'annuaire, la seule qui porte 2001), SMIG, prix.
+
+    Les deux salaires ne sont pas la même mesure : l'INS suit un panel de salariés permanents,
+    de quatrième trimestre en quatrième trimestre ; l'annuaire divise la masse déclarée de
+    l'année par tous les salariés déclarés au moins une fois. Aucun raccord entre éditions.
+    """
+    cnss = {int(l.annee): float(l.salaire_annuel_moyen_declare_D)
+            for l in figtools.series(SERIE_SALAIRE).itertuples() if "2018" in l.edition}
     taux = {int(l.annee): (float(l.taux_chaine), str(l.provisoire) == "oui")
             for l in figtools.series(SERIE_INS_TAUX).itertuples()}
     smig, ipc = _serie(), _ipc()
@@ -834,6 +1110,8 @@ def _indices():
             "taux": taux[annee][0] if annee in taux else None,
             "provisoire": annee in taux and taux[annee][1],
             "salaire": niveau if annee in taux else None,
+            "cnss_niveau": cnss.get(annee),
+            "cnss": 100 * cnss[annee] / cnss[ANNEE_BASE_INDICE] if annee in cnss else None,
             "smig": None if s is None else 100 * s / s0,
             "prix": 100 * ipc[annee] / ipc[ANNEE_BASE_INDICE] if annee in ipc else None})
     return lignes
@@ -844,13 +1122,22 @@ def fig_indices():
     ft = figtools.fig_text
     r = _indices()
     fig, ax = plt.subplots(figsize=(10, 5.6))
+    # Deux mesures du salaire, deux tracés distincts : le panel de l'INS en trait plein, le
+    # salaire moyen déclaré de l'annuaire en tirets et triangles, d'une autre couleur.
     for cle, lib, style in (("salaire", "i_salaire", dict(color=BLEU, lw=2, marker="o", ms=3)),
+                            ("cnss", "i_cnss", dict(color=VIOLET, lw=1.8, ls=(0, (5, 2)),
+                                                    marker="^", ms=4)),
                             ("smig", "i_smig", dict(color=ORANGE, lw=1.8, marker="s", ms=3)),
                             ("prix", "i_prix", dict(color=GRIS, lw=1.6, ls="--"))):
         pts = [(l["annee"], l[cle]) for l in r if l[cle] is not None]
         ax.plot([a for a, _ in pts], [v for _, v in pts], label=ft(_lab(lib)), **style)
-        ax.annotate(_fr(pts[-1][1], 0), xy=pts[-1], xytext=(6, 0), textcoords="offset points",
-                    va="center", fontsize=8, color=style["color"])
+        dessus = cle == "cnss"  # la série s'arrête en 2018, au milieu du cadre
+        ax.annotate(_fr(pts[-1][1], 0), xy=pts[-1], xytext=(0, 8) if dessus else (6, 0),
+                    textcoords="offset points", va="bottom" if dessus else "center",
+                    ha="center" if dessus else "left", fontsize=8, color=style["color"])
+    # Rupture du seul salaire déclaré à la CNSS ; la légende passe sous le cadre pour lui
+    # laisser le haut.
+    figtools.marque_rupture(ax, 2003, _ft_lignes(_lab("ri_2003")))
     prov = [(l["annee"], l["salaire"]) for l in r if l["provisoire"]]
     if prov:
         ax.plot([a for a, _ in prov], [v for _, v in prov], ls="none", marker="o", ms=7,
@@ -861,29 +1148,9 @@ def fig_indices():
     ax.set_xlabel(ft(_lab("x_annee")))
     ax.set_ylabel(ft(_lab("y_indice")))
     ax.grid(True, alpha=0.3)
-    ax.legend(loc="upper left", fontsize=8, frameon=False)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.12), fontsize=8, frameon=False, ncol=2)
     fig.tight_layout()
     return fig
-
-
-def vues_indices():
-    return fig_indices()
-
-
-def table_indices():
-    import pandas as pd
-    r = _indices()
-
-    def arrondi(v):
-        return None if v is None else round(v, 1)
-    return pd.DataFrame({
-        _lab("c_annee"): [l["annee"] for l in r],
-        _lab("c_i_taux"): [l["taux"] for l in r],
-        _lab("c_i_prov"): [_lab("oui") if l["provisoire"] else "" for l in r],
-        _lab("c_i_salaire"): [arrondi(l["salaire"]) for l in r],
-        _lab("c_i_smig"): [arrondi(l["smig"]) for l in r],
-        _lab("c_i_prix"): [arrondi(l["prix"]) for l in r],
-    })
 
 
 _TRANCHES = (("<1", "inf1"), ("1-1.5", "1_15"), (">1.5", "sup15"))
@@ -951,14 +1218,23 @@ def vues_bas_distribution():
     return fig_bas_distribution()
 
 
+def _smig_de_reference() -> dict[int, float]:
+    """Le SMIG mensuel que la CNSS imprime sous sa pyramide en dinars (« 6 fois SMIG mensuel
+    en D » ÷ 6), par année, dans l'édition la plus récente qui porte l'année."""
+    d = figtools.series(SERIE_REPERES).sort_values("source_id")
+    return {int(l.annee): float(l.smig_mensuel_de_la_source_D) for l in d.itertuples()}
+
+
 def table_bas_distribution():
     import pandas as pd
     r = _pyramide()
+    ref = _smig_de_reference()
     return pd.DataFrame({
         _lab("c_annee"): [l["annee"] for l in r],
         _lab("c_mesure"): [_lab("m_annuelle") if l["trimestre"] is None
                            else _lab("m_trim").format(t=l["trimestre"]) for l in r],
         _lab("c_p_total"): [l["total"] for l in r],
+        _lab("c_p_smig_ref"): [ref.get(l["annee"]) for l in r],
         _lab("c_p_inf1"): [round(l["inf1"], 1) for l in r],
         _lab("c_p_1_15"): [round(l["1_15"], 1) for l in r],
         _lab("c_p_sup15"): [round(l["sup15"], 1) for l in r],
@@ -972,58 +1248,318 @@ _REPONDANTES_MICRO = {2007: 7144, 2012: 5572, 2016: 7179}
 _REPONSE_EES = {2012: "38,6 %", 2014: "46,6 %", 2022: "58 %"}
 
 
-def tableau_enquetes() -> str:
-    """Tableau Markdown des deux enquêtes de l'INS, une ligne par enquête et par année.
+def _enquete(enquete: str):
+    """Lignes, colonnes et références paginées d'une des deux enquêtes de l'INS.
 
-    Valeurs lues dans les séries ; champ et taux de réponse contrôlés sur les citations que
-    les séries portent (colonnes `champ` et `taux_de_reponse`).
+    Valeurs lues dans les séries ; entreprises répondantes et taux de réponse contrôlés sur les
+    citations que les séries portent (colonnes `champ` et `taux_de_reponse`).
     """
-    m, e = figtools.series(SERIE_MICRO), figtools.series(SERIE_EES)
-    m = m[(m["branche"] == "Ensemble") & (m["sexe"] == "ensemble") & (m["grandeur"] == "part")]
-    lignes = []
+    def pct(v, decimales=1):
+        return f"{_fr(float(v), decimales)}\u00a0%"
 
-    def pct(v):
-        return f"{_fr(float(v))} %"
+    lignes, pages = [], {}
 
-    for annee in (2007, 2012, 2016):
-        propre = m[m["source_id"] == f"ins-micro-entreprises-{annee}"]
-        part = propre[(propre["annee"] == annee) & (propre["tranche"] == "<1")]
-        # La moitié du SMIG : 2007 n'est imprimée que par le rapport 2012 (tableau 8).
-        moitie = m[(m["annee"] == annee) & (m["tranche"] == "<0.5")]
-        assert part["valeur"].nunique() == 1 and moitie["valeur"].nunique() == 1, annee
-        assert str(_REPONDANTES_MICRO[annee]) in propre["champ"].iloc[0], annee
-        page = int(part["page_pdf"].min())
-        du_rapport = moitie[moitie["source_id"] == f"ins-micro-entreprises-{annee}"]
-        if du_rapport.empty:
-            autre = moitie.iloc[0]
-            cite = (f"[@ins-micro-entreprises-{annee}, p. {page}; "
-                    f"@{autre['source_id']}, p. {int(autre['page_pdf'])}]")
-        else:
-            cite = (f"[@ins-micro-entreprises-{annee}, p. {page}, "
-                    f"{int(du_rapport['page_pdf'].min())}]")
-        champ = _lab("t_micro") + (_lab("t_micro_2016") if annee == 2016 else "")
-        lignes.append((f"{champ} {cite}", annee, pct(part["valeur"].iloc[0]),
-                       pct(moitie["valeur"].iloc[0]), "—", "—",
-                       int(part["smig_retenu_par_la_source_D"].iloc[0]),
-                       _lab("t_rep_micro").format(n=_fr(_REPONDANTES_MICRO[annee], 0))))
-    e = e[(e["section"] == "Total") & (e["categorie"] == "Total")]
-    for annee in (2012, 2014, 2022):
-        g = e[e["annee"] == annee]
-        niveau = g[~g["grandeur"].str.contains("pourcentage")]
-        rapport = g[g["grandeur"].str.contains("pourcentage")]
-        assert len(niveau) == 1 and len(rapport) == 1, annee
-        assert _REPONSE_EES[annee].replace(" ", "") in g["taux_de_reponse"].iloc[0], annee
-        cite = f"[@ins-ees-{annee}, p. {int(niveau['page_pdf'].iloc[0])}]"
-        lignes.append((f"{_lab('t_ees')} {cite}", annee, "—", "—",
-                       _fr(float(niveau["valeur"].iloc[0]), 0),
-                       f"{_fr(float(rapport['valeur'].iloc[0]), 0)} %",
-                       int(niveau["smig_retenu_par_la_source_D"].iloc[0]),
-                       _lab("t_rep_ees").format(n=_REPONSE_EES[annee])))
-    entetes = [_lab(c) for c in ("t_enquete", "t_annee", "t_part", "t_moitie", "t_base",
-                                 "t_base_pct", "t_smig", "t_reponse")]
-    sortie = ["| " + " | ".join(entetes) + " |", "|:---|---|---:|---:|---:|---:|---:|:---|"]
+    def cite(cle, page):
+        pages.setdefault(cle, set()).add(int(page))
+
+    if enquete == "micro":
+        m = figtools.series(SERIE_MICRO)
+        m = m[(m["branche"] == "Ensemble") & (m["sexe"] == "ensemble") & (m["grandeur"] == "part")]
+        for annee in (2007, 2012, 2016):
+            cle = f"ins-micro-entreprises-{annee}"
+            propre = m[m["source_id"] == cle]
+            part = propre[(propre["annee"] == annee) & (propre["tranche"] == "<1")]
+            # La moitié du SMIG : 2007 n'est imprimée que par le rapport 2012 (tableau 8).
+            moitie = m[(m["annee"] == annee) & (m["tranche"] == "<0.5")]
+            assert part["valeur"].nunique() == 1 and moitie["valeur"].nunique() == 1, annee
+            assert str(_REPONDANTES_MICRO[annee]) in propre["champ"].iloc[0], annee
+            cite(cle, part["page_pdf"].min())
+            du_rapport = moitie[moitie["source_id"] == cle]
+            autre = moitie.iloc[0] if du_rapport.empty else du_rapport.sort_values("page_pdf").iloc[0]
+            cite(autre["source_id"], autre["page_pdf"])
+            lignes.append((annee, pct(part["valeur"].iloc[0]), pct(moitie["valeur"].iloc[0]),
+                           int(part["smig_retenu_par_la_source_D"].iloc[0]),
+                           _fr(_REPONDANTES_MICRO[annee], 0)))
+        cles = ("t_annee", "t_part_court", "t_moitie_court", "t_smig_court", "t_repondantes")
+    else:
+        e = figtools.series(SERIE_EES)
+        e = e[(e["section"] == "Total") & (e["categorie"] == "Total")]
+        for annee in (2012, 2014, 2022):
+            g = e[e["annee"] == annee]
+            niveau = g[~g["grandeur"].str.contains("pourcentage")]
+            rapport = g[g["grandeur"].str.contains("pourcentage")]
+            assert len(niveau) == 1 and len(rapport) == 1, annee
+            assert _REPONSE_EES[annee].replace(" ", "") in g["taux_de_reponse"].iloc[0], annee
+            cite(f"ins-ees-{annee}", niveau["page_pdf"].iloc[0])
+            lignes.append((annee, _fr(float(niveau["valeur"].iloc[0]), 0),
+                           pct(rapport["valeur"].iloc[0], 0),
+                           int(niveau["smig_retenu_par_la_source_D"].iloc[0]),
+                           _REPONSE_EES[annee]))
+        cles = ("t_annee", "t_base_court", "t_base_pct", "t_smig_court", "t_taux")
+    return lignes, cles, pages
+
+
+def tableau_enquetes(enquete: str) -> str:
+    """Tableau Markdown d'une des deux enquêtes de l'INS (`"micro"` ou `"ees"`), une ligne par
+    année. Le champ se dit dans la légende, les références dans `sources_enquetes`."""
+    lignes, cles, _ = _enquete(enquete)
+    sortie = ["| " + " | ".join(_lab(c) for c in cles) + " |", "|:---|---:|---:|---:|---:|"]
     sortie += ["| " + " | ".join(str(c) for c in l) + " |" for l in lignes]
     return "\n".join(sortie)
+
+
+def sources_enquetes(enquete: str) -> str:
+    """La ligne « Source » d'un tableau d'enquête : chaque rapport cité une fois, avec ses pages."""
+    _, _, pages = _enquete(enquete)
+    refs = "; ".join(f"@{cle}, p. {', '.join(str(p) for p in sorted(pp))}"
+                     for cle, pp in sorted(pages.items()))
+    return f"::: {{.figure-source}}\n{_lab('t_source')} : [{refs}]\n:::"
+
+
+# ---------------------------------------------------------------- quantiles approchés (CNSS)
+#
+# La CNSS ne publie aucun quantile : ceux-ci sont interpolés dans les classes de la pyramide en
+# dinars (série dérivée de l'entrepôt). LES ÉDITIONS DE L'ANNUAIRE NE DONNENT PAS LA MÊME
+# DISTRIBUTION POUR LA MÊME ANNÉE : la figure trace des SEGMENTS, sans raccord, chacun à mesure
+# du salaire mensuel et à grille de classes constantes.
+#   (édition, première année, dernière année, mesure)
+#   « d12 » : même mesure que la pyramide en SMIG — salaire de l'année ÷ 12, années incomplètes
+#   comprises (vérifié par l'entrepôt en 2013) ; « mois » : autre mesure (salaire rapporté aux
+#   mois déclarés, vérifié en 2016).
+_SEGMENTS_QUANTILES = ((2013, 2000, 2009, "d12"), (2013, 2011, 2013, "d12"),
+                       (2018, 2010, 2016, "mois"), (2018, 2017, 2018, "d12"))
+_QUANTILES = (("Q1", ORANGE), ("médiane", BLEU), ("Q3", VERT), ("D9", GRIS))
+
+
+def _quantiles():
+    """Une ligne par segment (ou population) et par année : quantiles courants et constants."""
+    d = figtools.series(SERIE_QUANTILES)
+    d = d[d["mesure"] == "annuelle"]
+    ipc = _ipc()
+    lignes = []
+
+    def ligne(bloc, annee, edition, segment, mesure, population):
+        v = {q: bloc.loc[bloc["quantile"] == q, "valeur_D"].iloc[0] for q, _ in _QUANTILES}
+        v = {q: None if x != x else float(x) for q, x in v.items()}
+        coef = ipc[ANNEE_BASE] / ipc[annee]
+        return {"annee": annee, "edition": edition, "segment": segment, "mesure": mesure,
+                "population": population, **v,
+                **{f"{q}_reel": None if x is None else x * coef for q, x in v.items()}}
+
+    tous = d[d["population"].str.contains("au titre")]
+    for edition, debut, fin, mesure in _SEGMENTS_QUANTILES:
+        e = tous[tous["source_id"] == f"cnss-annuaire-{edition}"]
+        for annee in range(debut, fin + 1):
+            bloc = e[e["annee"] == annee]
+            # La mesure du segment est celle que l'entrepôt constate sur chaque colonne.
+            assert (bloc["coherent_avec_pyramide_smig"] == ("oui" if mesure == "d12" else "non")).all()
+            lignes.append(ligne(bloc, annee, edition, f"{debut}-{fin}", mesure, "tous"))
+    q4 = d[d["population"].str.contains("quatre trimestres")]
+    lignes.append(ligne(q4, 2013, 2013, "2013", "d12", "4t"))
+    return lignes
+
+
+def fig_quantiles():
+    from matplotlib.lines import Line2D
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    r = _quantiles()
+    fig, ax = plt.subplots(figsize=(10, 6))
+    styles = {"d12": dict(ls="-", marker="o", ms=3), "mois": dict(ls=(0, (5, 2)), marker="s", ms=3)}
+    for *segment, mesure in _SEGMENTS_QUANTILES:
+        for q, couleur in _QUANTILES:
+            pts = [(l["annee"], l[f"{q}_reel"]) for l in r
+                   if l["population"] == "tous" and (l["edition"], l["segment"]) ==
+                   (segment[0], f"{segment[1]}-{segment[2]}") and l[f"{q}_reel"] is not None]
+            if pts:
+                ax.plot([a for a, _ in pts], [v for _, v in pts], color=couleur, lw=1.7,
+                        **styles[mesure])
+    q4 = next(l for l in r if l["population"] == "4t")
+    for q, couleur in _QUANTILES:
+        if q4[f"{q}_reel"] is not None:
+            ax.plot([2013], [q4[f"{q}_reel"]], ls="none", marker="D", ms=6.5, mfc="white",
+                    mec=couleur, mew=1.6, zorder=5)
+    poignees = [Line2D([], [], color=c, lw=2, label=ft(_lab(f"q_{q}"))) for q, c in _QUANTILES]
+    poignees += [Line2D([], [], color="black", lw=1.4, label=ft(_lab("q_d12")), **styles["d12"]),
+                 Line2D([], [], color="black", lw=1.4, label=ft(_lab("q_mois")), **styles["mois"]),
+                 Line2D([], [], ls="none", marker="D", ms=6.5, mfc="white", mec="black", mew=1.4,
+                        label=ft(_lab("q_4t")))]
+    ax.set_ylim(0, None)
+    ax.set_xlim(1999.3, 2018.7)
+    ax.set_xticks(range(2000, 2019))
+    ax.tick_params(axis="x", labelsize=8)
+    ax.set_xlabel(ft(_lab("x_annee")))
+    ax.set_ylabel(ft(_lab("y_reel")))
+    ax.grid(True, alpha=0.3)
+    ax.legend(handles=poignees, loc="upper center", bbox_to_anchor=(0.5, -0.12), fontsize=8,
+              frameon=False, ncol=2)
+    fig.tight_layout()
+    return fig
+
+
+def vues_quantiles():
+    return fig_quantiles()
+
+
+def table_quantiles():
+    import pandas as pd
+    r = _quantiles()
+    colonnes = {
+        _lab("c_annee"): [l["annee"] for l in r],
+        _lab("c_q_ed"): [l["edition"] for l in r],
+        _lab("c_q_seg"): [l["segment"] for l in r],
+        _lab("c_q_mesure"): [_lab(f"m_{l['mesure']}") for l in r],
+        _lab("c_q_pop"): [_lab(f"pop_{'4t' if l['population'] == '4t' else 'tous'}") for l in r],
+    }
+    for q, _ in _QUANTILES:
+        colonnes[_lab("c_q_courant").format(q=_lab(f"q_{q}"))] = [_arr(l[q]) for l in r]
+    for q, _ in _QUANTILES:
+        colonnes[_lab("c_q_reel").format(q=_lab(f"q_{q}"), a=ANNEE_BASE)] = [
+            _arr(l[f"{q}_reel"]) for l in r]
+    return pd.DataFrame(colonnes)
+
+
+def _interquantiles():
+    """Par segment : les trois rapports interquantiles à sa première et à sa dernière année."""
+    r = [l for l in _quantiles() if l["population"] == "tous"]
+    lignes = []
+    for edition, debut, fin, mesure in _SEGMENTS_QUANTILES:
+        seg = {l["annee"]: l for l in r if (l["edition"], l["segment"]) == (edition, f"{debut}-{fin}")}
+
+        def rapport(annee, haut, bas):
+            h, b = seg[annee][haut], seg[annee][bas]
+            return None if h is None or b is None else h / b
+        lignes.append({"debut": debut, "fin": fin, "edition": edition, "mesure": mesure,
+                       **{f"{nom}_{quand}": rapport(annee, haut, bas)
+                          for nom, haut, bas in (("q3q1", "Q3", "Q1"), ("mq1", "médiane", "Q1"),
+                                                 ("d9m", "D9", "médiane"))
+                          for quand, annee in (("debut", debut), ("fin", fin))}})
+    return lignes
+
+
+def tableau_interquantiles() -> str:
+    """Tableau Markdown des rapports interquantiles, un segment par ligne."""
+    def f(v):
+        return "—" if v is None else _fr(v, 2)
+    entetes = [_lab("ti_annees"), _lab("ti_ed"), _lab("ti_mesure")]
+    for nom in ("q3q1", "mq1", "d9m"):
+        entetes += [_lab("ti_debut").format(r=_lab(f"ti_{nom}")),
+                    _lab("ti_fin").format(r=_lab(f"ti_{nom}"))]
+    sortie = ["| " + " | ".join(entetes) + " |", "|:---|:---|:---|---:|---:|---:|---:|---:|---:|"]
+    for l in _interquantiles():
+        sortie.append("| " + " | ".join(
+            [f"{l['debut']}-{l['fin']}", str(l["edition"]), _lab(f"m_{l['mesure']}")]
+            + [f(l[f"{nom}_{quand}"]) for nom in ("q3q1", "mq1", "d9m")
+               for quand in ("debut", "fin")]) + " |")
+    return "\n".join(sortie)
+
+
+def _deux_populations_2013():
+    """2013 : tous les salariés déclarés et ceux qui le sont les quatre trimestres."""
+    t = _trimestres_2013("dinars")
+    quant = {l["population"]: l for l in _quantiles() if l["annee"] == 2013 and l["edition"] == 2013}
+    annuel_tous = next(l["annuel"] for l in _salaire_declare()
+                       if l["annee"] == 2013 and l["edition"] == 2018)
+    lignes = []
+    for colonne, pop, annuel in (("total", "tous", annuel_tous),
+                                 ("4", "4t", _quatre_trimestres()["annuel"])):
+        c = t[t["trimestres_declares"] == colonne]
+        total = int(c.loc[c["classe"] == "TOTAL", "salaries_declares"].iloc[0])
+        classes = c[c["classe"] != "TOTAL"]
+        sous_300 = classes.loc[classes["borne_sup"].astype(float) <= 300, "salaries_declares"].sum()
+        de_300_330 = classes.loc[classes["borne_inf"].astype(float) == 300, "salaries_declares"]
+        assert len(de_300_330) == 1 and float(classes.loc[de_300_330.index[0], "borne_sup"]) == 330
+        lignes.append({"pop": pop, "salaries": total, "annuel": annuel,
+                       "q1": quant[pop]["Q1"], "mediane": quant[pop]["médiane"],
+                       "q3": quant[pop]["Q3"], "sous_300": 100 * sous_300 / total,
+                       "de_300_330": 100 * int(de_300_330.iloc[0]) / total})
+    return lignes
+
+
+def tableau_2013() -> str:
+    """Tableau Markdown des deux populations de 2013."""
+    cles = ("t13_pop", "t13_n", "t13_moy", "t13_q1", "t13_med", "t13_q3", "t13_300", "t13_330")
+    sortie = ["| " + " | ".join(_lab(c) for c in cles) + " |", "|:---|---:|---:|---:|---:|---:|---:|---:|"]
+    for l in _deux_populations_2013():
+        sortie.append("| " + " | ".join([
+            _lab(f"pop_{l['pop']}").capitalize(), _fr(l["salaries"], 0), _fr(l["annuel"], 0),
+            _fr(l["q1"]), _fr(l["mediane"]), _fr(l["q3"]),
+            f"{_fr(l['sous_300'])} %", f"{_fr(l['de_300_330'])} %"]) + " |")
+    return "\n".join(sortie)
+
+
+# ---------------------------------------------------------------- contrôle des chiffres du texte
+
+def controle_texte() -> None:
+    """Chaque chiffre que la section écrit en clair est recalculé ici depuis les séries.
+
+    Appelé au rendu de la première figure de la section : si un snapshot change, le rendu
+    s'arrête sur l'écart au lieu de laisser le texte dire autre chose que la figure.
+    """
+    def egal(obtenu, attendu, d=0):
+        assert obtenu is not None and round(obtenu, d) == attendu, (obtenu, attendu)
+
+    an = {l["annee"]: l for l in _par_annee()}
+    q = _quatre_trimestres()
+    # Salaire annuel moyen de 2013, deux populations.
+    egal(an[2013]["a2018"], 8495)
+    egal(q["annuel"], 11036)
+    assert q["salaries"] == 800_558
+    # Dinars de 2024 : salaire mensuel moyen déclaré et SMIG.
+    for annee, cle, attendu in ((1970, "r2006", 609), (1980, "r2006", 933), (1988, "r2006", 903),
+                                (1999, "r2006", 1040), (2004, "r2018", 1031), (2018, "r2018", 1457),
+                                (1970, "smig_reel", 347), (1980, "smig_reel", 582),
+                                (1988, "smig_reel", 609), (1999, "smig_reel", 578),
+                                (2004, "smig_reel", 608), (2018, "smig_reel", 561)):
+        egal(an[annee][cle], attendu)
+    # Pouvoir d'achat, indices rapportés aux prix.
+    for annee, cle, attendu in ((2016, "pa_smig", 100), (2024, "pa_smig", 81),
+                                (2017, "pa_salaire", 129), (2024, "pa_salaire", 116),
+                                (2018, "pa_salaire", 127), (2018, "pa_cnss", 153),
+                                (2004, "pa_cnss", 109)):
+        egal(an[annee][cle], attendu)
+    assert max(l["pa_salaire"] for l in an.values() if l["pa_salaire"]) == an[2017]["pa_salaire"]
+    # Le SMIG en % du salaire moyen déclaré.
+    for annee, cle, attendu in ((1970, "ss2006", 57.0), (1973, "ss2006", 48.6),
+                                (1974, "ss2006", 64.9), (1980, "ss2006", 62.3),
+                                (1982, "ss2006", 90.9), (1986, "ss2006", 82.0),
+                                (1987, "ss2006", 84.4), (1988, "ss2006", 67.4),
+                                (2002, "ss2006", 52.8), (2002, "ss2018", 61.9),
+                                (2006, "ss2006", 55.5), (2006, "ss2018", 55.2),
+                                (2004, "ss2018", 59.0), (2018, "ss2018", 38.5),
+                                (2013, "ss4t", 32.8)):
+        egal(an[annee][cle], attendu, 1)
+    # 2013 : les deux populations.
+    tous, quatre = _deux_populations_2013()
+    assert (tous["pop"], quatre["pop"]) == ("tous", "4t") and quatre["salaries"] == 800_558
+    for obtenu, attendu in ((quatre["sous_300"], 6.6), (quatre["de_300_330"], 5.2),
+                            (tous["q1"], 260.9), (quatre["q1"], 427.1),
+                            (tous["mediane"], 468.1), (quatre["mediane"], 590.2)):
+        egal(obtenu, attendu, 1)
+    egal(an[2013]["smig"], 301.808, 3)
+    assert 300 <= an[2013]["smig"] < 330
+    egal(_smig_de_reference()[2013], 290.2, 3)
+    # Pyramide en SMIG de référence.
+    p = {(l["annee"], l["trimestre"]): l for l in _pyramide()}
+    for cle, nom, attendu in (((2000, None), "inf1", 40.8), ((2018, None), "inf1", 24.0),
+                              ((2018, 1), "inf1", 9.5), ((2000, None), "sup15", 34.4),
+                              ((2018, None), "sup15", 58.2)):
+        egal(p[cle][nom], attendu, 1)
+    # Rapports interquantiles et médianes de 2013 selon l'édition.
+    seg = {(l["debut"], l["fin"]): l for l in _interquantiles()}
+    for cle, nom, attendu in (((2000, 2009), "q3q1_debut", 3.00), ((2000, 2009), "q3q1_fin", 3.12),
+                              ((2000, 2009), "d9m_debut", 2.90), ((2000, 2009), "d9m_fin", 3.29),
+                              ((2010, 2016), "q3q1_debut", 2.22), ((2010, 2016), "q3q1_fin", 2.47),
+                              ((2010, 2016), "mq1_debut", 1.43), ((2010, 2016), "mq1_fin", 1.48)):
+        egal(seg[cle][nom], attendu, 2)
+    med = {l["edition"]: l["médiane"] for l in _quantiles()
+           if l["annee"] == 2013 and l["population"] == "tous"}
+    egal(med[2013], 468.1, 1)
+    egal(med[2018], 502.1, 1)
+    # Enquêtes de l'INS.
+    micro, ees = _enquete("micro")[0], _enquete("ees")[0]
+    assert [l[1].replace(" ", " ") for l in micro] == ["54,5 %", "49,9 %", "32,3 %"]
+    assert [l[2].replace(" ", " ") for l in ees] == ["178 %", "188 %", "201 %"]
 
 
 # ------------------------------------------------ conventions collectives
