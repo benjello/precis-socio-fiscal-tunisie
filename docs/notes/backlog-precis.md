@@ -1153,8 +1153,8 @@ négociations : domicile unique au niveau du chapitre, un registre replié par c
 seize et quatorze lignes, colonne « Portée »). Institutions : code de 1966 et changements de
 1968, 1973 et 1996 ; organisations et commissions ; fondement des décrets de 2026. Conventions :
 convention cadre de 1973 ; trois étages ; conventions de branche, avec un tableau par période
-(au moins 64 agréments ou approbations de 1969 à 2025, avenants exclus, borne basse) et la liste
-repliée des branches agréées de 1974 à 1977. Négociations : tableau de tête « qui fixe la
+et, à la conversion, un compte d'« au moins 64 » agréments et une liste repliée des branches de
+1974 à 1977, remplacés depuis (voir « Conventions — enrichissement du 8 octobre 2026 »). Négociations : tableau de tête « qui fixe la
 hausse », rounds de 1973 à 2023, accords-cadres, hausse fixée par décret en 2026. Une erreur
 corrigée au passage : le chapitre des institutions annonçait « quatre » dispositions du code et
 en donnait trois.
@@ -1177,14 +1177,61 @@ en donnait trois.
 - **Salaire minimum — dates d'effet non établies** : loi n° 66-27, décret n° 73-247, décret
   n° 74-493, loi n° 96-62 et article 15 de la loi de finances pour 2026 figurent aux registres
   sans date d'effet (tiret) ; textes lus, date d'exécution à calculer par le documentaliste.
-- **Conventions — compte des agréments sans référence** : le nombre d'au moins 64 agréments ou
-  approbations (1969-2025) et les nombres annuels d'avenants (`tbl-mt-cc-periodes`) viennent du
-  relevé de la note `marche-travail-conventions-collectives.md`, § 2, sans clé de référence. À
-  établir : la liste des conventions, arrêté par arrêté, et une série annuelle, pour un tableau
-  engendré (TODO documentaliste dans `_conventions.qmd`). Arrêtés au corpus (JORT), non lus.
-- **Conventions — clés manquantes** : les arrêtés d'agrément de 1975 à 1977 (`tbl-mt-cc-branches`,
-  trente et une branches hors celles de 1974) n'ont pas de clé dans `references.json` ; seuls ceux du 29 août 1974
-  en ont une (TODO bibliographe dans `_conventions.qmd`). Arrêtés au corpus, non lus.
+- **Conventions — enrichissement du 8 octobre 2026** (branche `chantier/conventions-collectives-fond`,
+  note `marche-travail-conventions-collectives-fond.md`) : le compte des agréments est corrigé
+  (61 agréments de conventions sectorielles dans 56 branches, une 57e connue par ses seuls
+  avenants ; borne basse) et sourcé par deux séries de `tunisia-data` ; figure des agréments par
+  année (`fig-mt-cc-agrements`) et inventaire engendré des 57 branches (`tbl-mt-cc-inventaire`,
+  qui remplace la liste faite main des branches de 1974-1977) ; section nouvelle « Ce que les
+  conventions ajoutent au SMIG » (`#sec-mt-cc-smig` : salaire d'entrée du textile et du
+  bâtiment-travaux publics, 1974-2026, par segments) ; section « La couverture, d'après
+  l'Organisation internationale du travail » (`#sec-mt-cc-couverture`, 2010-2019). Clos : le
+  compte « au moins 64 » et les nombres annuels d'avenants sans référence ; l'absence de toute
+  source de couverture.
+- **Conventions — grilles de 1996 à 2010 et bâtiment après 2019 : clos le 8 octobre 2026.** La
+  série du salaire d'entrée est continue de 1994 à 2026 pour le textile (avenants n° 5 à 18) et de
+  1996 à 2024 pour le bâtiment (avenants n° 5 à 16) ; note
+  `marche-travail-conventions-collectives-grilles-1996-2022.md`. L'avenant n° 16 du bâtiment est lu
+  sur une reproduction, par un site tiers, des pages de l'édition arabe : fiche
+  `r-btp-avenant-16-grilles` résolue ; le fascicule (n° 132 de 2022) et un second exemplaire
+  restent à obtenir. Un avenant postérieur n'est pas identifié : fiche `r-btp-avenant-17`
+  (sommaires arabes de 2023-2026 à parcourir).
+- **Conventions — grilles restant à établir** : textile, sentence arbitrale de 1983 et avenants
+  n° 2 (1989) et n° 4 (1993) ; bâtiment, avenants n° 1, 2, 4 et suite du n° 3 (1991-1992) — scans
+  français au corpus, OCR à lancer. Montant de l'indemnité complémentaire provisoire (décrets
+  n° 81-437 et n° 82-501, au corpus) pour comparer 1983-1993 au SMIG.
+- **Conventions — hauts de grille et pages à contrôler** : hauts de grille manquants (textile
+  1999-2001, 2003-2007 et septembre 2015 ; bâtiment 2005-2007 : pages identifiées, édition arabe au
+  corpus, une lecture à l'image chacune) ; pages de 1996, de 1999 et du n° 97 de 2002, déduites
+  d'un décalage constant ; haut de grille du textile de 1996 à 1998 (sous-catégorie) ; raison de la
+  date d'effet du 15 juin 2005 (texte de l'avenant n° 9 du textile) ; date d'effet du textile en
+  2011, montants et pages du textile de 2015 à 2020 ; date d'effet des conventions de 1974 et de
+  1975 ; régime horaire du textile. Les dix clés des avenants de 1996 à 2009 et de 2022 sont
+  versées sans URL (adresses pist.tn de l'édition arabe à vérifier ; pist.tn ne sert pas le n° 132
+  de 2022) ; l'intitulé français des neuf premières est à confirmer sur les visas.
+- **Conventions — autres branches** : commerce, hôtellerie, mécanique et électricité (conventions
+  d'origine en scans français au corpus ; avenants depuis 1996 dans l'édition arabe). Coût et
+  fascicules dans la note, § D.
+- **Conventions — hausse par décret de 2026** : aucun texte ne publie les grilles issues du décret
+  n° 2026-68, ni ne dit comment sa hausse se combine avec la grille du textile déjà fixée au
+  1er janvier 2026 ; le chapitre pose les deux faits sans conclure (fiche
+  `r-grilles-decret-2026-68` ; à parcourir : édition arabe de 2026, circulaires du ministère des
+  affaires sociales).
+- **Conventions — couverture** : la série de l'OIT ne précise ni son producteur national ni sa
+  méthode (fiche de métadonnées par pays d'ILOSTAT à obtenir) ; aucun nombre de salariés couverts
+  par convention sectorielle, par branche (annuaires statistiques du ministère des affaires
+  sociales, non ouverts ; la rubrique « conventions » de son site porte sur les conventions
+  internationales).
+- **Conventions — inventaire** : rattachement des avenants aux branches fait d'après les mots des
+  intitulés, à relire ligne à ligne (quatre doubles comptes signalés au tableau) ; avenants de
+  1996-2012 et de 2022 à compter sur l'édition arabe ; année du fascicule de la convention des
+  constructeurs et concessionnaires de véhicules (n° 14, arrêté du 21 décembre 1983) à contrôler.
+- **Conventions — clés manquantes** : seuls les arrêtés d'agrément de 1969, de 1971, du 29 août
+  1974 et du 4 février 2025 ont une clé dans `references.json` ; les autres agréments de
+  l'inventaire sont donnés par leur fascicule, sans clé (TODO bibliographe dans
+  `_conventions.qmd`). Les clés `avenants-1990-textile-btp` et `avenants-2014-textile-btp`
+  réunissent chacune deux arrêtés : à scinder, dans `tunisia-data` d'abord (le catalogue les cite
+  ainsi). Arrêtés au corpus.
 - **Négociations — matière de la note non reprise** : la chronologie des rounds déduite des
   décrets d'augmentation du secteur public (1993-1995 à 2011-2012) et la position de l'UGTT sur
   la fixation par décret de 2026 ne sont pas au chapitre, faute de clés de référence ; le décret

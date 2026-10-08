@@ -403,25 +403,34 @@ entries:
     acronyme: null
     statut: provisoire
     references: [loi85-78]
-    voir_aussi: [regime-conventionnel-public, convention-collective-banques, entreprises-publiques, epic]
+    voir_aussi: [convention-collective-cadre, agrement-convention-collective, avenant-convention-collective, grille-de-salaires-conventionnelle, regime-conventionnel-public, convention-collective-banques, entreprises-publiques, epic]
     fr:
       terme: Convention collective sectorielle
       definition: >
-        Accord négocié entre employeurs et organisations syndicales, fixant les
+        Accord négocié entre organisations d'employeurs et de salariés, fixant les
         conditions d'emploi et de rémunération (classification des emplois,
-        grilles, primes) pour un secteur d'activité donné. L'article 2 de la loi
-        n° 85-78 permettait, à titre transitoire, à certaines sociétés à capital
-        partiellement public de choisir entre le régime statutaire et les conventions
-        collectives du secteur.
-      synonymes: []
+        grilles de salaires, indemnités) pour une branche d'activité donnée.
+        Agréée par arrêté, elle s'impose à tous les employeurs et à tous les
+        travailleurs de la branche. De 1969 à 2025, d'après les intitulés des
+        arrêtés publiés au Journal officiel, 61 conventions sectorielles sont
+        agréées dans 56 branches, et une cinquante-septième branche n'est connue
+        que par ses avenants ; ce décompte est une borne basse. L'article 2 de la
+        loi n° 85-78 permettait, à titre transitoire, à certaines sociétés à
+        capital partiellement public de choisir entre le régime statutaire et les
+        conventions collectives du secteur.
+      synonymes: [convention de branche, convention collective nationale]
     ar:
       terme: الاتفاقية المشتركة القطاعية
       definition: >
-        اتفاق متفاوَض عليه بين الأعراف والمنظمات النقابية، يضبط شروط الشغل
-        والتأجير (تصنيف المواطن الشغلية والسلالم والمنح) لقطاع نشاط معيَّن. وقد
+        اتفاق متفاوَض عليه بين منظمات المؤجرين ومنظمات الأجراء، يضبط شروط الشغل
+        والتأجير (تصنيف المواطن الشغلية وجداول الأجور والمنح) لقطاع نشاط معيَّن.
+        وبالمصادقة عليها بقرار تصبح منطبقة على جميع المؤجرين وجميع العمال في
+        القطاع. ومن سنة 1969 إلى سنة 2025، وحسب عناوين القرارات المنشورة بالرائد
+        الرسمي، تمّت المصادقة على 61 اتفاقية مشتركة قطاعية في 56 قطاعًا، ولا يُعرف
+        قطاع سابع وخمسون إلا من خلال ملاحقه التعديلية؛ وهذا العدد حدّ أدنى. وقد
         أتاح الفصل 2 من القانون عدد 85-78، بصفة انتقالية، لبعض الشركات ذات رأس
         المال العمومي الجزئي الاختيار بين النظام الأساسي والاتفاقيات المشتركة للقطاع.
-      synonymes: []
+      synonymes: [الاتفاقية المشتركة القومية]
 
   - id: convention-collective-banques
     acronyme: null
@@ -7732,7 +7741,7 @@ entries:
     statut: provisoire
     references: [arrete-1973-05-29-convention-cadre]
     source_definition: {ref: decret73-247, locator: "art. 1 et 2"}
-    voir_aussi: [salaire-minimum-garanti, convention-collective-sectorielle, convention-collective-cadre]
+    voir_aussi: [salaire-minimum-garanti, convention-collective-sectorielle, convention-collective-cadre, grille-de-salaires-conventionnelle]
     fr:
       terme: Salaire conventionnel
       definition: >
@@ -7780,7 +7789,7 @@ entries:
     statut: provisoire
     references: []
     source_definition: {ref: loi66-27, locator: "art. 37 et 38"}
-    voir_aussi: [convention-collective-sectorielle, convention-collective-cadre]
+    voir_aussi: [convention-collective-sectorielle, convention-collective-cadre, avenant-convention-collective]
     fr:
       terme: Agrément d'une convention collective
       definition: >
@@ -7788,13 +7797,169 @@ entries:
         conventions collectives, une convention est rendue
         applicable à tous les employeurs et à tous les travailleurs de la branche
         qu'elle vise, signataires ou non (code du travail de 1966, art. 37 et 38).
-      synonymes: []
+        Les avenants d'une convention sont agréés de la même façon. Les intitulés
+        du Journal officiel disent tantôt « agrément », tantôt « approbation ».
+      synonymes: [arrêté d'agrément, approbation d'une convention collective]
     ar:
       terme: المصادقة على الاتفاقية المشتركة
       definition: >
         قرار تُجعل به اتفاقيةٌ، بعد رأي اللجنة الاستشارية للاتفاقيات المشتركة،
         منطبقةً على جميع المؤجرين وجميع العمال في القطاع الذي
         تشمله، موقّعين كانوا أم لا (مجلة الشغل لسنة 1966، الفصلان 37 و38).
+        وتتمّ المصادقة على الملاحق التعديلية للاتفاقية بالطريقة نفسها. وتستعمل
+        عناوين الرائد الرسمي في نصّها الفرنسي تارة لفظ « agrément » وتارة لفظ
+        « approbation ».
+      synonymes: [قرار المصادقة]
+
+  - id: avenant-convention-collective
+    acronyme: null
+    statut: valide
+    references: [loi66-27, arretes-1996-07-24-avenants-quarante-conventions]
+    source_definition: {ref: avenant18-textile-2024}
+    source_traduction: {ref: avenant18-textile-2024}
+    voir_aussi: [convention-collective-sectorielle, agrement-convention-collective, grille-de-salaires-conventionnelle]
+    fr:
+      terme: Avenant à une convention collective
+      definition: >
+        Accord qui révise une convention collective, en particulier ses grilles de
+        salaires et ses indemnités. Agréé par arrêté comme la convention, il
+        s'impose à toute la branche. Ainsi l'avenant n° 18 à la convention du
+        textile, signé le 29 février 2024 et agréé le 8 avril 2024, fixe les
+        grilles des 1er janvier 2024, 2025 et 2026. Depuis 1996, les grilles des
+        avenants ne paraissent plus que dans l'édition arabe du Journal officiel.
+      synonymes: [avenant]
+    ar:
+      terme: الملحق التعديلي
+      definition: >
+        اتفاق ينقّح اتفاقية مشتركة، وخاصة جداول الأجور والمنح الواردة بها. وتتمّ
+        المصادقة عليه بقرار شأنه شأن الاتفاقية، فيصبح منطبقًا على كامل القطاع.
+        ومثال ذلك الملحق التعديلي عدد 18 للاتفاقية المشتركة القطاعية للنسيج،
+        الممضى في 29 فيفري 2024 والمصادق عليه في 8 أفريل 2024، الذي يضبط جداول
+        الأجور في غرّة جانفي 2024 و2025 و2026. ومنذ سنة 1996، لم تعد جداول
+        أجور الملاحق التعديلية تُنشر إلا في النسخة العربية من الرائد الرسمي.
+      synonymes: []
+
+  - id: grille-de-salaires-conventionnelle
+    acronyme: null
+    statut: provisoire
+    references: [convention-textile-1974, convention-btp-1975]
+    source_definition: {ref: arrete-1973-05-29-convention-cadre, locator: "art. 1 et 50"}
+    voir_aussi: [salaire-conventionnel, salaire-de-base-conventionnel, salaire-d-entree-conventionnel, avenant-convention-collective, convention-collective-sectorielle]
+    fr:
+      terme: Grille de salaires conventionnelle
+      definition: >
+        Tableau annexé à une convention collective de branche ou à l'un de ses
+        avenants, qui donne le salaire de base de chaque catégorie professionnelle
+        et, quand la grille en comporte, de chaque échelon. La convention
+        collective cadre de 1973 renvoie les grilles de salaires et les indemnités
+        aux conventions de branche (art. 1 et 50). Une convention peut porter
+        plusieurs grilles : celle du textile de 1974 porte une grille des agents
+        payés à l'heure, par catégorie et par échelon ; celle du bâtiment et des
+        travaux publics de 1975 donne au personnel occasionnel un salaire horaire
+        par catégorie, sans échelon.
+      synonymes: [grille conventionnelle]
+    ar:
+      terme: جدول الأجور
+      definition: >
+        جدول ملحق باتفاقية مشتركة قطاعية أو بأحد ملاحقها التعديلية، يضبط الأجر
+        الأساسي لكلّ صنف مهني، ولكلّ درجة إن كان الجدول يتضمّن درجات. وتحيل
+        الاتفاقية المشتركة الإطارية لسنة 1973 جداول الأجور والمنح إلى الاتفاقيات
+        القطاعية (الفصلان 1 و50). ويمكن أن تتضمّن الاتفاقية الواحدة عدّة جداول:
+        فاتفاقية النسيج لسنة 1974 تتضمّن جدولًا للأعوان الخالصين بالساعة حسب الصنف
+        والدرجة، واتفاقية البناء والأشغال العامة لسنة 1975 تضبط للعملة العرضيين
+        أجرًا بالساعة لكلّ صنف، دون درجات.
+      synonymes: [شبكات الأجور]
+
+  - id: salaire-de-base-conventionnel
+    acronyme: null
+    statut: provisoire
+    references: [avenant5-textile-1994]
+    source_definition: {ref: decret2026-68, locator: "art. 1"}
+    voir_aussi: [grille-de-salaires-conventionnelle, salaire-conventionnel, indemnite-complementaire-provisoire]
+    fr:
+      terme: Salaire de base (grilles conventionnelles)
+      definition: >
+        Montant qu'une grille de salaires conventionnelle inscrit pour une
+        catégorie et un échelon, hors les indemnités de la convention —
+        de transport et de présence notamment —, qui s'y ajoutent. Dans le
+        textile, l'indemnité complémentaire provisoire est intégrée aux salaires
+        de base à compter du 1er mai 1994 (avenant n° 5). Le décret n° 2026-68 du
+        30 avril 2026 applique une hausse de 5 % par an, en 2026, 2027 et 2028,
+        aux salaires de base de tous les échelons des dernières grilles annexées
+        aux conventions sectorielles, ainsi qu'aux indemnités de transport et de
+        présence.
+      synonymes: []
+    ar:
+      terme: الأجر الأساسي
+      definition: >
+        المبلغ الذي يضبطه جدول الأجور الملحق باتفاقية مشتركة لصنف ودرجة
+        معيَّنين، دون منح الاتفاقية — وخاصة منحة النقل ومنحة الحضور — التي
+        تُضاف إليه. وفي قطاع النسيج، أُدمجت المنحة الإضافية المؤقتة في الأجور
+        الأساسية بداية من غرّة ماي 1994 (الملحق التعديلي عدد 5). ويقرّ الأمر عدد
+        68 لسنة 2026 المؤرخ في 30 أفريل 2026 زيادة بـ5 % سنويًا، في سنوات 2026
+        و2027 و2028، في الأجور الأساسية لكلّ الدرجات بآخر جداول الأجور الملحقة
+        بالاتفاقيات المشتركة القطاعية، وكذلك في منحتي النقل والحضور.
+      synonymes: []
+
+  - id: salaire-d-entree-conventionnel
+    acronyme: null
+    statut: provisoire
+    references: [convention-textile-1974, convention-btp-1975, avenant18-textile-2024, avenant16-btp-2022]
+    voir_aussi: [grille-de-salaires-conventionnelle, salaire-de-base-conventionnel, smig]
+    fr:
+      terme: Salaire d'entrée d'une grille conventionnelle
+      definition: >
+        Salaire de base de la catégorie et de l'échelon les plus bas d'une grille
+        de salaires conventionnelle, hors indemnités ; c'est le bas de la grille,
+        que l'on rapporte au SMIG horaire du régime de 48 heures pour mesurer ce
+        qu'une convention ajoute au salaire minimum. Dans le textile, c'est le
+        salaire horaire de l'agent payé à l'heure de la catégorie I, à l'échelon
+        de confirmation, connu de 1974 à 2026 et sans interruption de 1994 à
+        2026 ; dans le bâtiment et les travaux publics, celui du manœuvre
+        ordinaire, dans la grille du personnel occasionnel, connu de 1975 à 2024
+        et sans interruption de 1996 à 2024.
+      synonymes: [salaire d'entrée, bas de grille]
+    ar:
+      terme: أدنى أجر في جدول الأجور
+      definition: >
+        الأجر الأساسي لأدنى صنف وأدنى درجة في جدول أجور ملحق باتفاقية مشتركة،
+        دون المنح؛ وهو أسفل الجدول، ويُقارَن بالأجر الأدنى المضمون لمختلف المهن
+        بالساعة في نظام 48 ساعة لقياس ما تضيفه الاتفاقية إلى الأجر الأدنى. وفي
+        قطاع النسيج، هو أجر الساعة للعون الخالص بالساعة من الصنف الأول في درجة
+        الترسيم، وهو معروف من 1974 إلى 2026 ودون انقطاع من 1994 إلى 2026؛ وفي
+        قطاع البناء والأشغال العامة، هو أجر العامل العادي في جدول العملة
+        العرضيين، وهو معروف من 1975 إلى 2024 ودون انقطاع من 1996 إلى 2024.
+      synonymes: []
+
+  - id: taux-de-couverture-negociation-collective
+    acronyme: null
+    statut: provisoire
+    references: []
+    source_definition: {ref: oit-ilostat-couverture-negociation-collective}
+    voir_aussi: [convention-collective-sectorielle, agrement-convention-collective]
+    fr:
+      terme: Taux de couverture de la négociation collective
+      definition: >
+        Part des salariés que couvre une convention collective, en pourcentage du
+        nombre de salariés. L'Organisation internationale du travail la publie
+        pour la Tunisie dans sa base ILOSTAT, de 2010 à 2019, sans l'année 2015,
+        sous l'intitulé « Collective bargaining coverage rate (%) » ; elle
+        déclare pour source des fichiers administratifs, sans en préciser le
+        producteur national ni la méthode, et ne publie ni le numérateur ni le
+        dénominateur. Le taux porte sur les salariés pris ensemble : il ne mesure
+        pas la part des salariés du secteur privé qu'une convention sectorielle
+        couvre.
+      synonymes: [taux de couverture conventionnelle]
+    ar:
+      terme: نسبة تغطية المفاوضة الجماعية
+      definition: >
+        نسبة الأجراء الذين تشملهم اتفاقية مشتركة، من مجموع عدد الأجراء. وتنشرها
+        منظمة العمل الدولية بالنسبة إلى تونس في قاعدة بياناتها ILOSTAT، من سنة
+        2010 إلى سنة 2019 باستثناء سنة 2015، تحت عنوان « Collective bargaining
+        coverage rate (%) »؛ وتصرّح بأنّ مصدرها سجلات إدارية، دون تحديد الجهة
+        الوطنية المنتجة لها ولا المنهجية، ولا تنشر البسط ولا المقام. وتتعلّق هذه
+        النسبة بالأجراء مجتمعين: فهي لا تقيس نسبة أجراء القطاع الخاص الذين
+        تشملهم اتفاقية مشتركة قطاعية.
       synonymes: []
 
   - id: indemnite-complementaire-provisoire

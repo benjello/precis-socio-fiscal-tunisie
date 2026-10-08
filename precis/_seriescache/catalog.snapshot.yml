@@ -2778,3 +2778,165 @@
     ; les deux colonnes `seuils_encadres_sans_tolerance_…` refont l''encadrement avec
     le SMIG de la source puis avec le SMIG mensuel de 48 heures.'
   fiche: sources/cnss-annuaires.md
+- id: jort-conventions-collectives-agrements-par-annee
+  titre: 'Conventions collectives sectorielles : notices d''agrément de conventions
+    et d''avenants au Journal officiel, par année, 1969-2025'
+  sources:
+  - arretes-1996-07-24-avenants-quarante-conventions
+  build: scripts/build_jort_conventions_collectives.py:main
+  raw:
+  - sources/transcriptions/conventions-collectives-avenants-par-annee-note.csv
+  - sources/transcriptions/conventions-collectives-notices-agrement.csv
+  output: data/processed/jort/conventions_collectives_agrements_par_annee.csv
+  unite: nombre de notices du Journal officiel ; à part, nombre d'arrêtés repérés
+    au plein texte de l'édition française
+  perimetre: 'relevé administratif : notices de `jort_cache.db` (dernière publication
+    indexée le 2 octobre 2026) dont le titre désigne une convention collective, classées
+    par mots du titre ; une ligne par année du fascicule, 1969-2025 ; notices d''agrément
+    ou d''approbation de convention (66, dont 61 conventions sectorielles), notices
+    d''agrément d''avenant (512, dont 353 à titre français et 159 à titre arabe seul)
+    ; colonne distincte : arrêtés individuels d''avenant au plein texte français,
+    1994-2025'
+  caveats: 'BORNE BASSE, DÉCOMPTE DE TEXTES ET NON DE SALARIÉS. DEUX MESURES DES AVENANTS,
+    À NE NI ADDITIONNER NI FONDRE : notices de la base ; arrêtés repérés au plein
+    texte français (transcrits de la note du précis du 8 octobre 2026, non rejoués
+    ici ; vide avant 1994). La requête ne voit que les titres indexés : un titre hors
+    formule lui échappe (banques, 1975, ajouté par une requête de contrôle), une convention
+    n''a aucune notice d''agrément (jardins d''enfants et crèches). 1996-2012 SOUS-COMPTÉES
+    : l''édition française ne publie qu''un avis collectif par fascicule (« quarante
+    conventions » en 1996, « vingt » en 1999), le nombre exact ne s''obtient que sur
+    l''édition arabe. 2022 SOUS-COMPTÉE : 4 notices, 35 arrêtés au plein texte. Une
+    année à 0 ne prouve pas qu''aucun avenant n''a paru. Année = `jort_annee` de la
+    base, qui diffère de l''année de la notice pour deux agréments (n° 13 de 1976-1977,
+    n° 14 de 1983-1984). Sorties tirées de copies figées ; la base, si elle est présente,
+    est rejouée et le script s''arrête sur tout écart.'
+  fiche: sources/jort-conventions-collectives.md
+- id: jort-conventions-collectives-branches
+  titre: 'Conventions collectives sectorielles : inventaire par branche — agrément,
+    Journal officiel, avenants repérés'
+  sources:
+  - convention-textile-1974
+  - convention-btp-1975
+  - arretes-1996-07-24-avenants-quarante-conventions
+  build: scripts/build_jort_conventions_collectives.py:main
+  raw:
+  - sources/transcriptions/conventions-collectives-branches-note.csv
+  output: data/processed/jort/conventions_collectives_branches.csv
+  unite: une ligne par branche ; dates, numéros et pages du Journal officiel ; nombre
+    de notices
+  perimetre: 'relevé administratif : 57 branches (56 ayant au moins un agrément, une
+    connue par ses seuls avenants), 61 agréments de conventions sectorielles ; date
+    du premier arrêté d''agrément et fascicule (numéro, date de notice, pages), agréments
+    ultérieurs, texte de la convention publié à part, notices d''avenant rattachées,
+    numéro maximal d''avenant repéré, date du dernier arrêté d''avenant ; hors convention
+    collective cadre et conventions cadres de secteur'
+  caveats: 'RATTACHEMENT PAR MOTS-CLÉS, NON RELU ligne à ligne : le nombre de notices
+    par branche est indicatif (quatre notices sont comptées dans deux branches : la
+    colonne se somme à 469 pour 465 notices distinctes rattachées ; pétrole et assurances
+    surestimés, date de leur dernier avenant à relire) ; le numéro maximal d''avenant,
+    lu dans le titre, est fiable. LA DATE DU FASCICULE EST CELLE DE LA NOTICE, non
+    le pied de page : à contrôler avant citation. Date de signature de la convention
+    non précisée par la source hors textile et bâtiment. Lisibilité au corpus dite
+    par époque du fascicule, d''après la note, non vérifiée branche par branche. Les
+    branches ne sont pas des conventions en vigueur : celle de 1969 des hôtels-restaurants-cafés
+    et celle de 1974 de la mécanique-électricité sont relayées par d''autres. Borne
+    basse (titres indexés seuls ; avenants de 1996-2012 et de 2022 sous-indexés).'
+  fiche: sources/jort-conventions-collectives.md
+- id: conventions-collectives-salaire-entree
+  titre: Salaire conventionnel d'entrée du textile (1974-2026) et du bâtiment-travaux
+    publics (1975-2024), par date d'effet lue, et rapport au SMIG de 48 heures
+  sources:
+  - convention-textile-1974
+  - convention-btp-1975
+  - avenants-1990-textile-btp
+  - avenant5-textile-1994
+  - avenant5-btp-1996
+  - avenant6-textile-1996
+  - avenant7-textile-1999
+  - avenant6-btp-1999
+  - avenant8-textile-2002
+  - avenant7-btp-2002
+  - avenant9-textile-2006
+  - avenant8-btp-2006
+  - avenant10-textile-2009
+  - avenant9-btp-2009
+  - avenant11-textile-2011
+  - avenant10-btp-2011
+  - avenant12-textile-2013
+  - avenant11-btp-2013
+  - avenants-2014-textile-btp
+  - avenant14-textile-2016
+  - avenant13-btp-2016
+  - avenant15-textile-2017
+  - avenant14-btp-2017
+  - avenant15-btp-2018
+  - avenant16-textile-2019
+  - avenant17-textile-2022
+  - avenant16-btp-2022
+  - avenant18-textile-2024
+  build: scripts/build_conventions_salaire_entree.py:main
+  raw:
+  - sources/transcriptions/conventions-collectives-grilles-entree-note.csv
+  - sources/transcriptions/conventions-collectives-grilles-entree-note-1996-2022.csv
+  - data/processed/jort/smig_smag.csv
+  output: data/processed/jort/conventions_collectives_salaire_entree.csv
+  unite: dinars courants par heure (salaire de base, SMIG) ; rapport sans unité
+  perimetre: 'texte des conventions : grilles de salaires annexées aux conventions
+    sectorielles du textile et du bâtiment-travaux publics et à leurs avenants, publiées
+    au Journal officiel ; une ligne par branche et par date d''effet lue (textile
+    : 34 ; bâtiment : 28) ; salaire horaire de base du bas de grille (textile : agents
+    payés à l''heure, catégorie I, échelon 0 ; bâtiment : personnel occasionnel, manœuvre
+    ordinaire) et du haut (catégorie IV-2, échelon 0 ; chef d''équipe, 3e degré) ;
+    segments : conventions d''origine (1974, 1975), grilles de 1990-1992 hors indemnité
+    complémentaire provisoire, puis un segment continu par branche (textile 1994-2026,
+    avenants n° 5 à 18 ; bâtiment 1996-2024, avenants n° 5 à 16) ; colonnes calculées
+    : SMIG horaire du régime de 48 heures en vigueur à la date d''effet (dernière
+    ligne antérieure ou égale de la série `smig-smag`) et rapport bas de grille ÷
+    SMIG'
+  caveats: 'TRANSCRIPTION de deux notes documentaires du précis du 8 octobre 2026,
+    qui ont lu les grilles au Journal officiel ; fascicules non relus ici. TROIS ORIGINES
+    DE LECTURE, JAMAIS FONDUES (`origine_lecture`) : édition française ; édition arabe
+    (corpus local) ; pour l''avenant n° 16 du bâtiment (1er décembre 2021, 1er janvier
+    2023, 1er janvier 2024), REPRODUCTION DE L''ÉDITION ARABE SUR UN SITE TIERS (paie-tunisie.com,
+    pages 3709-3714 du n° 132 du 2 décembre 2022, fascicule absent du corpus et de
+    pist.tn ; adresse et empreinte dans la série). AUCUN RACCORD NI INTERPOLATION
+    : série en paliers, une ligne par date d''effet lue ; tracé en escalier permis
+    à l''intérieur d''un segment, jamais d''un segment à l''autre. Les grilles de
+    1990-1992 excluent l''indemnité complémentaire provisoire (décrets n° 81-437 et
+    n° 82-501) et ne se comparent pas au SMIG (`comparable_au_smig` = non, rapport
+    vide) ; non lus : avenants antérieurs à 1990, 1993, bâtiment 1991-1995. Date d''effet
+    des conventions de 1974 et 1975 non relevée : SMIG de la ligne du 1er juin 1974
+    que donne la note. SALAIRES DE BASE, hors indemnités conventionnelles. Régime
+    horaire du textile à confirmer. Haut de grille vide quand il n''est pas lu (textile
+    1999-2001, 2003-2007, septembre 2015 ; bâtiment 2005-2007). Valeurs à contrôler
+    avant citation signalées dans `reserve` (pages de 1996, 1999 et du n° 97 de 2002
+    déduites d''un décalage ; sous-catégorie du haut du textile 1996-1998 ; grille
+    du textile du 15 juin 2005 « à titre exceptionnel » ; date d''effet de 2011, pages
+    arabes de 2017 et 2019, lectures à résolution réduite de 2015-2020). SMIG : montants
+    de la série `smig-smag`, décrets non relus. Deux branches seulement. Ligne du
+    textile au 1er janvier 2026 : grille de l''avenant n° 18 ; effet du décret n°
+    2026-68 non tranché.'
+  fiche: sources/conventions-collectives-grilles.md
+- id: oit-ilostat-couverture-negociation-collective
+  titre: Taux de couverture de la négociation collective, Tunisie, 2010-2019 (OIT,
+    ILOSTAT)
+  sources:
+  - oit-ilostat-couverture-negociation-collective
+  build: scripts/extract_ilostat_negociation_collective.py:main
+  raw:
+  - data/raw/oit/ilostat/ilostat_cbct_tun.csv
+  - data/raw/oit/ilostat/ilostat_cbct_tun_label.csv
+  output: data/processed/oit/ilostat_couverture_negociation_collective.csv
+  unite: pourcentage du nombre de salariés
+  perimetre: 'source extérieure : indicateur ILOSTAT « Collective bargaining coverage
+    rate (%) » (ILR_CBCT_NOC_RT), Tunisie, annuel ; neuf années, 2010-2014 et 2016-2019
+    ; note de source de l''OIT : « Reference group coverage: Employees »'
+  caveats: 'SOURCE EXTÉRIEURE (organisation internationale), à ne mêler ni aux décomptes
+    du Journal officiel ni aux grilles. PRODUCTEUR NATIONAL ET MÉTHODE : NON PRÉCISÉS
+    PAR LA SOURCE (source déclarée : « ADM - Other Administrative records and related
+    sources » ; ni numérateur ni dénominateur publiés). 2015 manque et n''a pas de
+    ligne ; la série s''arrête en 2019 ; le saut de 2014 à 2016 (56,9 → 64,3) n''est
+    pas expliqué. Ensemble des salariés, périmètre public/privé non précisé : ce n''est
+    pas la part des salariés du privé couverts par une convention sectorielle. Extraits
+    bruts non versionnés (empreintes dans la fiche), relevés le 8 octobre 2026.'
+  fiche: sources/oit-ilostat-negociation-collective.md

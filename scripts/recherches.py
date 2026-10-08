@@ -87,6 +87,7 @@ SOURCES_CONNUES = {
     "mcp_jort",      # serveur MCP `jort` (métadonnées)
     "visas",         # seconde voie : visas des textes ultérieurs
     "presse",        # source secondaire
+    "web",           # site tiers ou archives du web : reproduction d'un texte, page d'un site
 }
 RE_ID = re.compile(r"^r-[a-z0-9][a-z0-9.-]*$")
 RE_ISO = re.compile(r"^\d{4}-\d{2}-\d{2}$")

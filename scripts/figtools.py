@@ -250,11 +250,17 @@ def source_line(*series_ids: str, nominal: bool = True) -> str:
 
     `nominal=False` retire la mention « valeurs courantes (nominal) » : une figure en volume
     a des séries en %, que la règle ci-dessous prendrait pour monétaires.
+
+    Une série qui a des dizaines de sources — une grille par avenant — peut déclarer une
+    `source_ligne` (ou `source_ligne_<langue>`) : ce texte Markdown, citations comprises,
+    tient alors lieu de ses clés dans cette seule ligne. L'onglet « Sources » et l'en-tête
+    du figdata gardent la liste entière de `sources` : aucune référence n'est perdue.
     """
     keys, bases, units = [], set(), set()
     for sid in series_ids:
         m = _meta(sid)
-        keys += [f"@{k}" for k in m.get("sources", [])]
+        ligne = m.get(f"source_ligne_{lang()}") or m.get("source_ligne")
+        keys += [ligne] if ligne else [f"@{k}" for k in m.get("sources", [])]
         if m.get("base_pib"):
             bases.add(str(m["base_pib"]))
         if m.get("unite"):

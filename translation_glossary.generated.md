@@ -36,6 +36,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Avantage en nature | الامتياز العيني |  |
 | Avantages financiers | الامتيازات المالية |  |
 | Avantages fiscaux | الامتيازات الجبائية |  |
+| Avenant à une convention collective | الملحق التعديلي |  |
 | Ayant droit | ذو الحقّ |  |
 | Barème de l'impôt sur le revenu | جدول الضريبة على الدخل |  |
 | Bénéfice imposable | الربح الخاضع للضريبة |  |
@@ -165,6 +166,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Gel du crédit de TVA (1998) | تجميد فائض الأداء على القيمة المضافة (1998) |  |
 | Gestion financière distincte | التصرّف المالي المستقلّ |  |
 | Grade | الرتبة |  |
+| Grille de salaires conventionnelle | جدول الأجور |  |
 | Grille des salaires | شبكة الأجور |  |
 | Habitation principale | المسكن الرئيسي |  |
 | Haute instance des finances locales | الهيئة العليا للمالية المحلية |  |
@@ -290,6 +292,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Revenus fonciers | المداخيل العقارية |  |
 | Salaire brut | الأجر الخام |  |
 | Salaire conventionnel | الأجر التعاقدي |  |
+| Salaire d'entrée d'une grille conventionnelle | أدنى أجر في جدول الأجور |  |
+| Salaire de base (grilles conventionnelles) | الأجر الأساسي |  |
 | Salaire déclaré | الأجر المصرّح به |  |
 | Salaire différentiel | الأجر التفاضلي |  |
 | Salaire forfaitaire | الأجر التقديري |  |
@@ -335,6 +339,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Tableau C du code de la TVA | الجدول « ج » |  |
 | Taux ad valorem | نسبة من القيمة |  |
 | Taux d'autonomie financière | نسبة الاستقلالية المالية |  |
+| Taux de couverture de la négociation collective | نسبة تغطية المفاوضة الجماعية |  |
 | Taux de facturation | نسبة الإصدار |  |
 | Taux de liquidation | نسبة تصفية الجراية |  |
 | Taux de recouvrement | نسبة الاستخلاص |  |

@@ -306,3 +306,25 @@ class VuesTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class LigneSourceTest(unittest.TestCase):
+    """La ligne « Source » sous une figure : toutes les clés, ou le résumé déclaré."""
+
+    def tearDown(self):
+        figtools._DECLAREES.pop("serie-de-test", None)
+
+    def test_toutes_les_cles_par_defaut(self):
+        figtools.register_provenance("serie-de-test", sources=["cle-a", "cle-b"], unite="nombre")
+        self.assertIn("@cle-a, @cle-b", figtools.source_line("serie-de-test"))
+
+    def test_le_resume_declare_remplace_les_cles_dans_la_ligne_seule(self):
+        figtools.register_provenance(
+            "serie-de-test", sources=["cle-a", "cle-b"], unite="nombre",
+            source_ligne="@cle-a et ses avenants")
+        ligne = figtools.source_line("serie-de-test")
+        self.assertIn("@cle-a et ses avenants", ligne)
+        self.assertNotIn("@cle-b", ligne)
+        # La provenance, elle, garde toutes les clés : onglet « Sources » et figdata.
+        self.assertEqual(figtools.meta("serie-de-test")["sources"], ["cle-a", "cle-b"])
+

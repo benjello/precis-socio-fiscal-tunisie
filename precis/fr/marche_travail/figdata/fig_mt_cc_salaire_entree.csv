@@ -1,0 +1,69 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-08
+# séries (tunisia_data) : conventions-collectives-salaire-entree, marche-travail-smig-smag
+# sources (citation) : @convention-textile-1974, @convention-btp-1975, @avenants-1990-textile-btp, @avenant5-textile-1994, @avenant5-btp-1996, @avenant6-textile-1996, @avenant7-textile-1999, @avenant6-btp-1999, @avenant8-textile-2002, @avenant7-btp-2002, @avenant9-textile-2006, @avenant8-btp-2006, @avenant10-textile-2009, @avenant9-btp-2009, @avenant11-textile-2011, @avenant10-btp-2011, @avenant12-textile-2013, @avenant11-btp-2013, @avenants-2014-textile-btp, @avenant14-textile-2016, @avenant13-btp-2016, @avenant15-textile-2017, @avenant14-btp-2017, @avenant15-btp-2018, @avenant16-textile-2019, @avenant17-textile-2022, @avenant16-btp-2022, @avenant18-textile-2024, @decret61-145, @decret74-63, @decret74-571, @decret81-437, @decret92-1299, @decret2026-66, @decret2026-67
+# fiches : sources/conventions-collectives-grilles.md
+# méthode/hypothèses : Trois origines : l'édition française du Journal officiel (conventions d'origine, avenants de 1990, de 1994 pour le textile et de 1996 pour le bâtiment), son édition arabe ensuite, et, pour l'avenant n° 16 du bâtiment (grilles du 1er décembre 2021, du 1er janvier 2023 et du 1er janvier 2024), une reproduction par un site tiers des pages 3709 à 3714 de l'édition arabe du n° 132 du 2 décembre 2022. Aucun raccord ni interpolation : une ligne par date d'effet, la grille valant jusqu'à la suivante du même segment. Les grilles de 1990 à 1992 excluent l'indemnité complémentaire provisoire et n'ont pas de rapport au SMIG ; les grilles antérieures à 1990, celles de 1993 et celles du bâtiment de 1991 à 1995 ne sont pas établies. La date d'effet des conventions de 1974 et de 1975 n'est pas établie : leur rapport retient le SMIG de 0,130 dinar. Salaires de base, hors indemnités conventionnelles. Deux branches seulement. Montants ou dates d'effet à confirmer : textile, 2011 et 2015 à 2020 ; le haut de la grille manque à quelques dates., Avant le 1er mai 1968, minimum de la première zone seulement. De 1971 à 1973, l'indemnité de cherté de vie de 0,020 D l'heure, servie en sus du minimum et hors assiette sociale, n'est pas comprise ; le SMIG l'intègre le 1er janvier 1974. Avant 1974, les montants mensuels sont la conversion du minimum horaire. Les indemnités spéciales de 1989 et de 1991 ne sont pas comprises.
+# note : Salaire horaire d'entrée des conventions du textile et du bâtiment-travaux publics et SMIG horaire du régime de 48 heures, en dinars courants ; rapport du salaire d'entrée au SMIG ; 1974-2026
+branche,date d'effet de la grille,convention ou avenant,salaire horaire d'entrée (D),haut de la grille (D par heure),SMIG horaire 48 h (D),salaire d'entrée / SMIG,édition du Journal officiel,réserve
+textile,,convention de 1974,0.13,0.25,0.13,1.0,édition française,date d'effet non établie
+textile,1990-05-01,avenant n° 3,0.431,0.589,0.577,,édition française,hors indemnité complémentaire provisoire
+textile,1991-05-01,avenant n° 3,0.479,0.671,0.577,,édition française,hors indemnité complémentaire provisoire
+textile,1992-05-01,avenant n° 3,0.527,0.753,0.639,,édition française,hors indemnité complémentaire provisoire
+textile,1994-05-01,avenant n° 5,0.749,1.005,0.697,1.07,édition française,
+textile,1995-05-01,avenant n° 5,0.787,1.053,0.741,1.06,édition française,
+textile,1996-05-01,avenant n° 6,0.825,1.116,0.77,1.07,édition arabe,page à confirmer ; haut de la grille à confirmer
+textile,1997-05-01,avenant n° 6,0.863,1.179,0.78,1.11,édition arabe,page à confirmer ; haut de la grille à confirmer
+textile,1998-05-01,avenant n° 6,0.901,1.242,0.819,1.1,édition arabe,page à confirmer ; haut de la grille à confirmer
+textile,1999-05-01,avenant n° 7,0.939,,0.86,1.09,édition arabe,page à confirmer
+textile,2000-05-01,avenant n° 7,0.977,,0.899,1.09,édition arabe,page à confirmer
+textile,2001-05-01,avenant n° 7,1.015,,0.899,1.13,édition arabe,page à confirmer
+textile,2002-05-01,avenant n° 8,1.053,1.494,0.94,1.12,édition arabe,page à confirmer
+textile,2003-05-01,avenant n° 8,1.094,,0.974,1.12,édition arabe,page à confirmer
+textile,2004-05-01,avenant n° 8,1.14,,1.015,1.12,édition arabe,page à confirmer
+textile,2005-06-15,avenant n° 9,1.178,,1.049,1.12,édition arabe,date d'effet fixée « à titre exceptionnel »
+textile,2006-05-01,avenant n° 9,1.221,,1.078,1.13,édition arabe,
+textile,2007-05-01,avenant n° 9,1.264,,1.112,1.14,édition arabe,
+textile,2008-05-01,avenant n° 10,1.327,1.912,1.153,1.15,édition arabe,
+textile,2009-05-01,avenant n° 10,1.39,1.998,1.211,1.15,édition arabe,
+textile,2010-05-01,avenant n° 10,1.46,2.093,1.253,1.17,édition arabe,
+textile,2011-05-01,avenant n° 11,1.533,2.192,1.375,1.11,édition arabe,date d'effet à confirmer
+textile,2012-05-01,avenant n° 12,1.625,2.323,1.375,1.18,édition arabe,
+textile,2014-05-01,avenant n° 13,1.722,2.462,1.538,1.12,édition arabe,
+textile,2015-09-01,avenant n° 14,1.826,,1.625,1.12,édition arabe,montant à confirmer
+textile,2016-08-01,avenant n° 15,1.935,2.767,1.717,1.13,édition arabe,montant à confirmer ; page à confirmer
+textile,2018-01-01,avenant n° 15,2.051,2.933,1.717,1.19,édition arabe,montant à confirmer ; page à confirmer
+textile,2019-01-01,avenant n° 16,2.195,3.138,1.82,1.21,édition arabe,montant à confirmer ; page à confirmer
+textile,2020-01-01,avenant n° 16,2.348,3.358,1.938,1.21,édition arabe,montant à confirmer ; page à confirmer
+textile,2021-09-01,avenant n° 17,2.501,3.576,2.064,1.21,édition arabe,
+textile,2022-05-01,avenant n° 17,2.676,3.826,2.064,1.3,édition arabe,
+textile,2024-01-01,avenant n° 18,2.85,4.075,2.208,1.29,édition arabe,
+textile,2025-01-01,avenant n° 18,3.035,4.34,2.54,1.19,édition arabe,
+textile,2026-01-01,avenant n° 18,3.248,4.644,2.667,1.22,édition arabe,
+bâtiment et travaux publics,,convention de 1975,0.14,0.315,0.13,1.08,édition française,date d'effet non établie
+bâtiment et travaux publics,1990-05-01,avenant n° 3,0.441,0.661,0.577,,édition française,hors indemnité complémentaire provisoire
+bâtiment et travaux publics,1996-05-01,avenant n° 5,0.862,1.285,0.77,1.12,édition française,
+bâtiment et travaux publics,1997-05-01,avenant n° 5,0.906,1.358,0.78,1.16,édition française,
+bâtiment et travaux publics,1998-05-01,avenant n° 5,0.95,1.431,0.819,1.16,édition française,
+bâtiment et travaux publics,1999-05-01,avenant n° 6,0.989,1.501,0.86,1.15,édition arabe,page à confirmer
+bâtiment et travaux publics,2000-05-01,avenant n° 6,1.028,1.571,0.899,1.14,édition arabe,page à confirmer
+bâtiment et travaux publics,2001-05-01,avenant n° 6,1.067,1.641,0.899,1.19,édition arabe,page à confirmer
+bâtiment et travaux publics,2002-05-01,avenant n° 7,1.103,1.711,0.94,1.17,édition arabe,
+bâtiment et travaux publics,2003-05-01,avenant n° 7,1.141,1.781,0.974,1.17,édition arabe,
+bâtiment et travaux publics,2004-05-01,avenant n° 7,1.181,1.853,1.015,1.16,édition arabe,
+bâtiment et travaux publics,2005-05-01,avenant n° 8,1.221,,1.049,1.16,édition arabe,
+bâtiment et travaux publics,2006-05-01,avenant n° 8,1.261,,1.078,1.17,édition arabe,
+bâtiment et travaux publics,2007-05-01,avenant n° 8,1.303,,1.112,1.17,édition arabe,
+bâtiment et travaux publics,2008-05-01,avenant n° 9,1.371,2.221,1.153,1.19,édition arabe,
+bâtiment et travaux publics,2009-05-01,avenant n° 9,1.439,2.365,1.211,1.19,édition arabe,
+bâtiment et travaux publics,2010-05-01,avenant n° 9,1.509,2.511,1.253,1.2,édition arabe,
+bâtiment et travaux publics,2011-05-01,avenant n° 10,1.588,2.685,1.375,1.15,édition arabe,date du fascicule à confirmer
+bâtiment et travaux publics,2012-05-01,avenant n° 11,1.683,2.846,1.375,1.22,édition arabe,
+bâtiment et travaux publics,2014-05-01,avenant n° 12,1.784,3.017,1.538,1.16,édition arabe,
+bâtiment et travaux publics,2015-09-01,avenant n° 13,1.891,3.198,1.625,1.16,édition arabe,
+bâtiment et travaux publics,2016-08-01,avenant n° 14,2.004,3.39,1.717,1.17,édition arabe,
+bâtiment et travaux publics,2017-05-01,avenant n° 14,2.125,3.593,1.717,1.24,édition arabe,
+bâtiment et travaux publics,2018-05-01,avenant n° 15,2.263,3.827,1.82,1.24,édition arabe,
+bâtiment et travaux publics,2019-05-01,avenant n° 15,2.41,4.076,1.938,1.24,édition arabe,
+bâtiment et travaux publics,2021-12-01,avenant n° 16,2.567,4.34,2.064,1.24,"édition arabe, pages reproduites par un site tiers (paie-tunisie.com)",
+bâtiment et travaux publics,2023-01-01,avenant n° 16,2.74,4.633,2.208,1.24,"édition arabe, pages reproduites par un site tiers (paie-tunisie.com)",
+bâtiment et travaux publics,2024-01-01,avenant n° 16,2.925,4.946,2.208,1.32,"édition arabe, pages reproduites par un site tiers (paie-tunisie.com)",
