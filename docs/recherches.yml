@@ -1332,9 +1332,15 @@
     couverture: 'jort_cache : aucun titre de 2011 ne nomme l''indemnité (seuls 2010-1973 et 2012-2959 encadrent la période). Plein texte des 87 fascicules français de 2011 présents au corpus local (n° 1 à 89, sauf 62 et 73), couche texte lisible pour tous : aucune mention de l''indemnité ; les mentions d''« augmentation globale » relevées sont des visas de décrets de 2005 à 2010 sur d''autres indemnités. Les n° 62, 73 et 90 à 99 de 2011 manquent en français ; leurs fascicules arabes ont une couche texte inexploitable (encodage propre). 2012 parcouru par les titres seulement.'
     couvert_jusqu_au: 2012-12-07
     resultat: aucun
+  - date: 2026-10-08
+    role: rédacteur
+    sources: [jort_cache, corpus_local, pist]
+    couverture: 'trouvé par l''intitulé ARABE de la notice de jort_cache (« منحة التصرف والتنفيذ … بعنوان سنة 2011 ») : décret n° 2011-2281 du 21 septembre 2011, JORT n° 73 du 27 septembre 2011. Les requêtes de la fiche, en français, ne pouvaient pas l''atteindre : la notice n''a ni intitulé français ni adresse française (pdf_fr vide), et la passe précédente tenait le fascicule arabe pour inexploitable. Texte lu à l''image dans l''édition arabe (corpus local, 2011/ar/Ja0732011.pdf, pages 5 et 6 du fichier ; pp. 1961-1962), fichier identique à celui de pist.tn (réponse 200, 298 981 octets) : effet au 1er juillet 2011, montants par grade et par unité d''ouvriers relevés. Édition française non obtenue : absente du corpus local, 404 de pist.tn à l''adresse homologue 2011F/Jo0732011.pdf et à quatre variantes ; pagination et intitulé français non établis.'
+    couvert_jusqu_au: 2012-12-07
+    resultat: decret2011-2281
   a_faire:
-  - lire les JORT n° 62, 73 et 90 à 99 de 2011 (fascicules français à obtenir, ou arabes à l'image)
-  - parcourir le plein texte des fascicules de 2012 antérieurs au n° 97
+  - obtenir l'édition française du JORT n° 73 du 27 septembre 2011 (intitulé et pagination français du décret n° 2011-2281)
+  resolu: decret2011-2281
 
 - id: r-accords-cadres-ugtt-utica
   objet: accords-cadres UGTT-UTICA de négociation salariale du secteur privé (taux et dates par round), postérieurs à la convention collective cadre de 1973
