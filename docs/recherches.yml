@@ -1709,3 +1709,37 @@
     couverture: 'intitulés de jort_cache, textes publiés après le 9 juin 2023, jusqu''au n° 97 du 2 octobre 2026 ; plein texte des fascicules du corpus local de 2023 à 2026 (522 fichiers français, 555 arabes, jusqu''au n° 97 de 2026), plus le n° 98 du 6 octobre 2026 pris sur pist.tn. Plein texte en deux passes : la première, ligne par ligne (« 2019-542 », « 542 *لسنة *2019 », « عدد *542 »), écartée — elle manquait les numéros coupés en fin de ligne et, en arabe, les marques bidirectionnelles ; la seconde, qui fait foi, sur le texte remis sur une ligne, par expressions régulières : « 2019 ?[-‐–]? ?542 » (fichiers français), « 542 *لسنة *2019 » ou « برامج *الصندوق *الوطني *للتشغيل » (fichiers arabes, marques bidirectionnelles retirées). Aucun modificatif. Candidats lus et écartés : lois de finances pour 2024, 2025 et 2026 (lignes de crédit ; art. 14 de la loi de finances pour 2026, qui modifie la loi de finances pour 2000 et non le décret) ; décret n° 2024-182 et arrêté conjoint du 16 août 2024 (simples visas). Lacunes : fascicules inconnus de la base (parcourus en plein texte seulement) ; faux fascicules français (parcourus par leur jumeau arabe) ; pages sans couche texte ; citation arabe coupée par un saut de ligne ; un texte qui remplacerait le décret sans le citer et sans nommer le Fonds dans son intitulé. Note : docs/notes/marche-travail-politiques-emploi-objets-des-reformes.md, § 6 et § 11.1.'
     couvert_jusqu_au: 2026-10-06
     resultat: aucun
+
+- id: r-btp-avenant-16-grilles
+  objet: texte et grilles de l'avenant n° 16 à la convention collective sectorielle du bâtiment et des travaux publics (arrêté du 25 novembre 2022), et tout avenant postérieur
+  ou: [precis/fr/marche_travail/_conventions.qmd#sec-mt-cc-2026]
+  requetes:
+    titres_like: ['%avenant%batiment et des travaux publics%', '%avenant%bâtiment et des travaux publics%', '%للبناء والأشغال%']
+    plein_texte: [bâtiment et des travaux publics]
+    depuis: 2019-01-11
+  passes:
+  - date: 2026-10-08
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist]
+    couverture: 'notice trouvée (JORT n° 132 du 2 décembre 2022, p. 3387) mais fascicule absent du corpus local en français et en arabe, et réponse 404 de pist.tn aux adresses 2022F/Jo1322022.pdf et 2022A/Ja1322022.pdf ; plein texte français 2023-2026 (n° 1 à 97 de 2026) sans avenant n° 17 ; cache texte des 141 fascicules arabes de 2022, motif normalisé « عدد 16 للاتفاقية المشتركة القطاعية للبناء والأشغال » : aucun ; miroir iort (data/iort/textes/md) : aucun fichier ne porte « للبناء والأشغال » (il n''indexe pas les arrêtés d''avenant) ; sommaires arabes de 2023-2026 non lus'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - obtenir le JORT n° 132 du 2 décembre 2022 par une autre voie (autre miroir, copie de l'UGTT, archives du web)
+  - sommaires arabes de 2023-2026, pour un avenant n° 17
+
+- id: r-grilles-decret-2026-68
+  objet: texte publiant les grilles de salaires des conventions sectorielles résultant du décret n° 2026-68 (5 % par an, 2026-2028), ou circulaire d'application disant comment la hausse se combine avec une grille conventionnelle déjà fixée pour 2026
+  ou: [precis/fr/marche_travail/_conventions.qmd#sec-mt-cc-2026]
+  requetes:
+    titres_like: ['%avenant%convention collective%']
+    plein_texte: [grilles des salaires, avenant n°]
+    depuis: 2026-04-30
+  passes:
+  - date: 2026-10-08
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: notices de jort_cache jusqu'au 2 octobre 2026 ; plein texte français des fascicules de 2026 présents au cache (90 sur 94 ; le n° 96 français est le fichier arabe) ; édition arabe de 2026 non parcourue ; circulaires du ministère des affaires sociales non cherchées
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [édition arabe du Journal officiel de 2026, circulaires du ministère des affaires sociales]

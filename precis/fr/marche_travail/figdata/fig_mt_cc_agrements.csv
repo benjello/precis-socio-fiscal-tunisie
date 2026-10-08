@@ -1,0 +1,64 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-08
+# séries (tunisia_data) : jort-conventions-collectives-agrements-par-annee
+# sources (citation) : @arretes-1996-07-24-avenants-quarante-conventions
+# fiches : sources/jort-conventions-collectives.md
+# méthode/hypothèses : Borne basse : un décompte de textes, non de salariés. Un intitulé qui s'écarte de la formule usuelle n'est pas compté. De 1996 à 2012, l'édition française ne publie qu'un avis collectif par fascicule — « agréments d'avenants à quarante conventions collectives nationales » le 24 juillet 1996 —, et les avenants ne sont pas comptés un par un. En 2022, 4 intitulés pour 35 arrêtés dans l'édition française. Les deux décomptes des avenants ne s'additionnent pas. Une année à zéro n'établit pas qu'aucun avenant n'a paru.
+# note : Conventions sectorielles agréées et avenants agréés, par année, d'après les intitulés des arrêtés publiés au Journal officiel, 1969-2025
+année,conventions sectorielles agréées,avenants agréés (intitulés publiés au Journal officiel),année sous-comptée pour les avenants,autre décompte : arrêtés d'avenant de l'édition française (1994-2025)
+1969,1,0,,
+1970,0,0,,
+1971,1,0,,
+1972,0,0,,
+1973,0,0,,
+1974,4,1,,
+1975,24,0,,
+1976,6,0,,
+1977,5,0,,
+1978,0,1,,
+1979,0,0,,
+1980,0,0,,
+1981,0,1,,
+1982,0,0,,
+1983,3,35,,
+1984,0,0,,
+1985,3,2,,
+1986,0,0,,
+1987,2,0,,
+1988,0,0,,
+1989,1,43,,
+1990,0,39,,
+1991,0,6,,
+1992,0,0,,
+1993,1,51,,
+1994,0,3,,3
+1995,0,0,,0
+1996,0,11,oui,5
+1997,3,1,oui,1
+1998,0,0,oui,0
+1999,1,9,oui,1
+2000,1,1,oui,1
+2001,0,0,oui,0
+2002,0,9,oui,1
+2003,0,2,oui,2
+2004,0,1,oui,2
+2005,0,0,oui,0
+2006,0,10,oui,1
+2007,0,1,oui,1
+2008,0,0,oui,0
+2009,0,14,oui,5
+2010,0,0,oui,0
+2011,0,38,oui,0
+2012,0,2,oui,0
+2013,1,40,,41
+2014,3,36,,23
+2015,0,9,,15
+2016,0,42,,39
+2017,0,42,,39
+2018,0,28,,6
+2019,0,20,,19
+2020,0,0,,0
+2021,0,0,,0
+2022,0,4,oui,35
+2023,0,5,,5
+2024,0,3,,3
+2025,1,2,,4

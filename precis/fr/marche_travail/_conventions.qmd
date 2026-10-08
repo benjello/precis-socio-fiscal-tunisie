@@ -1,6 +1,18 @@
 # Les conventions collectives {#sec-mt-conventions .domicile-unique}
 
-Une convention collective est un accord conclu entre des organisations d'employeurs et de salariés ; agréée par l'État, elle fixe, branche par branche, l'échelle des salaires au-dessus du salaire minimum. Ce chapitre présente la convention cadre de 1973, sur laquelle reposent toutes les autres ; les trois étages de salaires qui en résultent — salaire minimum, grilles conventionnelles, décrets pour les salariés que nulle convention ne couvre ; puis les conventions de branche, de 1969 à 2025, et les avenants qui révisent leurs grilles, jusqu'à la hausse fixée par décret en 2026.
+Une convention collective est un accord conclu entre des organisations d'employeurs et de salariés ; agréée par l'État, elle fixe, branche par branche, l'échelle des salaires au-dessus du salaire minimum. Ce chapitre présente la convention cadre de 1973, sur laquelle reposent toutes les autres ; les trois étages de salaires qui en résultent — salaire minimum, grilles conventionnelles, décrets pour les salariés que nulle convention ne couvre ; les conventions de branche et leurs avenants, de 1969 à 2025, comptés année par année et inventoriés branche par branche ; ce que les grilles de deux branches, le textile et le bâtiment-travaux publics, ajoutent au SMIG, de 1974 à 2026, année où l'État fixe par décret la hausse des grilles ; et la part des salariés couverts par une convention, de 2010 à 2019, d'après l'Organisation internationale du travail.
+
+```{python}
+#| echo: false
+#| output: false
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+sys.path.insert(0, ".")
+import figtools
+from figures import marche_travail as mt
+```
 
 ## La convention collective cadre de 1973 {#sec-mt-cadre-1973}
 
@@ -30,47 +42,65 @@ Le [salaire conventionnel](#g-salaire-conventionnel) d'une catégorie ne peut ê
 
 Une convention de branche porte, en annexe, des **grilles de salaires** par catégorie et par échelon, et des **indemnités** — de transport et de présence notamment. Ses **avenants** révisent ces grilles et ces indemnités ; agréés à leur tour, ils s'imposent à toute la branche.
 
-De 1969 à 2025, l'État agrée ou approuve au moins 64 conventions, avenants non comptés ; ce nombre est une borne basse, non un total (@tbl-mt-cc-periodes).
+De 1969 à 2025, l'État agrée 61 conventions sectorielles, dans 56 branches ; une cinquante-septième branche, celle des jardins d'enfants et des crèches, n'est connue que par ses avenants (@fig-mt-cc-agrements, @tbl-mt-cc-inventaire). Ce décompte est celui des intitulés des arrêtés publiés au *Journal officiel* : c'est une borne basse, non un total.
 
-<!-- TODO (documentaliste) : le compte de 64 agréments ou approbations (1969-2025, avenants exclus)
-et les nombres annuels d'avenants viennent du relevé de la note
-docs/notes/marche-travail-conventions-collectives.md, § 2 ; ils n'ont pas de clé de référence. À
-établir : la liste des conventions, arrêté par arrêté, et une série annuelle des agréments et des
-avenants, pour remplacer ce tableau par un tableau engendré. -->
+```{python}
+#| label: fig-mt-cc-agrements
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    mt.vues_cc_agrements(), mt.table_cc_agrements(), mt.SERIE_CC_AGREMENTS,
+    slug="fig_mt_cc_agrements", nominal=False,
+    caption=("Conventions sectorielles agréées et avenants agréés, par année, d'après les "
+             "intitulés des arrêtés publiés au Journal officiel, 1969-2025"),
+    note_lecture=(
+        "Chaque barre compte les arrêtés d'agrément de l'année, d'après leur intitulé publié "
+        "au Journal officiel : c'est une borne basse. Les barres hachurées sont des années "
+        "sous-comptées pour les avenants : de 1996 à 2012, l'édition française ne publie "
+        "qu'un avis collectif par fascicule ; en 2022, le décompte porte sur 4 intitulés, "
+        "quand l'édition française compte 35 arrêtés d'avenant (onglet « Données »). Une "
+        "année sans barre n'établit pas qu'aucun avenant n'a paru. Les deux grandeurs ne "
+        "s'additionnent pas."),
+)
+```
 
-| Période | Ce que l'État agrée | Textes publiés |
-|---|---|---|
-| 1969-1971 | les deux premières conventions de branche, avant la convention cadre : hôtels, restaurants et cafés ([1969](#r-mt-cc-1969)) ; salines ([1971](#r-mt-cc-1971)) | 2 |
-| 1974-1977 | les conventions de branche conclues après la convention cadre (@tbl-mt-cc-branches) ; quatre d'entre elles [le 29 août 1974](#r-mt-cc-1974) : construction métallique, textile, mécanique générale et électricité, imprimerie | la plus grande part des 64 conventions au moins agréées de 1969 à 2025 |
-| 1983-2014 | des avenants, par vagues | 35 en 1983 ; 45 en 1989 et 41 en 1990 ; 53 en 1993 ; 12 en 1996 ; 9 en 1999 ; 11 en 2002 ; 20 en 2006 ; 16 en 2009 ; 44 en 2013 et 40 en 2014 |
-| 2019-2025 | les avenants n° 15 à 18 des branches anciennes ; une convention nouvelle, celle des grands, moyens et petits espaces commerciaux ([4 février 2025](#r-mt-cc-2025)) | 3 à 8 par an |
+| Période | Ce que l'État agrée |
+|---|---|
+| 1969-1971 | les deux premières conventions de branche, avant la convention cadre : hôtels, restaurants et cafés ([1969](#r-mt-cc-1969)) ; salines ([1971](#r-mt-cc-1971)) |
+| 1974-1977 | 39 conventions de branche, conclues après la convention cadre ; quatre d'entre elles [le 29 août 1974](#r-mt-cc-1974) : construction métallique, textile, mécanique générale et électricité, imprimerie |
+| 1983-2019 | des avenants, par vagues ; 19 conventions de branche, de 1983 à 2014 |
+| 2022-2025 | des avenants ; une convention nouvelle, celle des grands, moyens et petits espaces commerciaux ([4 février 2025](#r-mt-cc-2025)) |
 
 : Agréments de conventions de branche et d'avenants, par période, 1969-2025 {#tbl-mt-cc-periodes}
 
-- **Les avenants viennent ensuite par vagues**, de 1983 à 2014, au rythme des négociations salariales (@sec-mt-rounds).
-- **En 2026, l'État fixe lui-même la hausse des grilles** : [le décret n° 2026-68](#r-mt-cc-2026-68) applique une hausse de 5 % par an, en 2026, 2027 et 2028, aux salaires de base de tous les échelons des dernières grilles annexées et aux indemnités de transport et de présence (@sec-mt-2026).
+- **Trente-neuf des 61 conventions sont agréées de 1974 à 1977**, dont 24 en 1975.
+- **Les avenants viennent ensuite par vagues**, au rythme des négociations salariales (@sec-mt-rounds) : 35 en 1983, 43 en 1989, 51 en 1993, 40 en 2013, 42 en 2016 et autant en 2017.
+- **Depuis 1996, les grilles ne paraissent plus que dans l'édition arabe du *Journal officiel*.** [Le 24 juillet 1996](#r-mt-cc-1996-arabe), l'édition française annonce d'un seul avis les avenants à quarante conventions et renvoie à l'édition arabe ; quelques avenants y paraissent encore, grilles comprises, jusqu'en octobre 1996. Les avenants de 1996 à 2012 et ceux de 2022 sont sous-comptés.
+- **En 2026, l'État fixe lui-même la hausse des grilles** : [le décret n° 2026-68](#r-mt-cc-2026-68) applique une hausse de 5 % par an, en 2026, 2027 et 2028, aux salaires de base de tous les échelons des dernières grilles annexées et aux indemnités de transport et de présence (@sec-mt-cc-2026, @sec-mt-2026).
 
-<!-- TODO (documentaliste) : la couverture conventionnelle — nombre de salariés couverts par une
-convention agréée, part de l'emploi salarié privé — n'a pas de source dans la note
-docs/notes/marche-travail-conventions-collectives.md (§ 2, § 8). Pistes : rapports du ministère des
-affaires sociales, ILOSTAT (« collective bargaining coverage rate »). Lire aussi une grille par
-branche (textile, BTP, commerce, hôtellerie) pour situer le bas de grille par rapport au SMIG, et
-dresser la liste des conventions en vigueur depuis les arrêtés d'agrément. -->
+:::: {.chronologie-repliable titre="Conventions de branche : inventaire des 57 branches — agrément, Journal officiel, avenants, 1969-2025"}
 
-:::: {.chronologie-repliable titre="Conventions de branche agréées de 1974 à 1977 : branches, année par année"}
+```{python}
+#| echo: false
+#| output: asis
+print(mt.tableau_cc_inventaire())
+print("\n: Les 57 branches à convention collective sectorielle : premier agrément, agréments "
+      "suivants et avenants, 1969-2025 {#tbl-mt-cc-inventaire}\n")
+```
 
-| Année de l'agrément | Branches |
-|---|---|
-| 1974 | construction métallique ; textile ; mécanique générale et électricité ; imprimerie |
-| 1975 | bâtiment et travaux publics ; pétrole ; pâtes ; boissons ; cuirs ; ports ; matériaux ; lait ; bonneterie et confection ; confiserie ; chaussure ; hôtellerie ; conserves ; savonneries ; peinture ; minoterie ; explosifs ; presse ; fonderie et métallurgie ; assurances ; commerce de matériaux |
-| 1976 | boulangerie ; commerce de gros et de détail ; pharmacies ; plastique ; teintureries |
-| 1977 | produits d'entretien ; parfumerie ; cafés, bars et restaurants ; bois et meuble ; cinémas |
+Le nombre d'avenants d'une branche est indicatif : chaque avenant est rattaché à une branche d'après les mots de son intitulé. Quatre avenants sont ainsi comptés dans deux branches (astérisques) : trois avenants de la mécanique générale et des stations de vente de carburant le sont aussi au pétrole, un avenant du gardiennage aussi aux assurances ; le dernier avenant de ces deux branches n'est pas daté ici. La dernière colonne donne, quand elle est postérieure, l'année du dernier arrêté d'avenant que porte l'édition française du *Journal officiel*.
 
-: Les branches dont la convention est agréée de 1974 à 1977 {#tbl-mt-cc-branches}
+Deux conventions sont relayées par d'autres : celle des hôtels, restaurants et cafés (1969) par celles de l'industrie hôtelière (1975) et des cafés, bars et restaurants (1977) ; celle de la mécanique générale et de l'électricité (1974) par celles de l'électricité et de l'électronique (1999) et de la mécanique générale et des stations de vente de carburant (2000). La convention collective cadre de 1973 (@sec-mt-cadre-1973) et la convention cadre du secteur agricole, agréée en 2015, sont hors de ce tableau.
 
-<!-- TODO (bibliographe) : les arrêtés d'agrément de 1975 à 1977 n'ont pas de clé dans
-`references.json` (seuls les quatre arrêtés du 29 août 1974 en ont une) ; les créer depuis la note
-docs/notes/marche-travail-conventions-collectives.md, § 2 et § 4, une fois les arrêtés lus. -->
+<!-- TODO (bibliographe) : seuls les arrêtés d'agrément de 1969, de 1971, du 29 août 1974 et du
+4 février 2025 ont une clé dans `references.json` ; les autres agréments de l'inventaire sont
+donnés par leur fascicule (numéro, année, pages), sans clé. Créer les clés une fois les arrêtés
+lus ; l'année du fascicule de la convention des constructeurs et concessionnaires de véhicules
+(n° 14, arrêté du 21 décembre 1983) est à contrôler au fascicule. -->
+
+<!-- TODO (documentaliste) : rattachement des avenants aux branches à relire ligne à ligne
+(quatre doubles comptes, fiche sources/jort-conventions-collectives.md de tunisia-data) ; avenants
+de 1996 à 2012 et de 2022 à compter sur l'édition arabe. -->
 
 ::::
 
@@ -88,9 +118,14 @@ docs/notes/marche-travail-conventions-collectives.md, § 2 et § 4, une fois les
 | []{#r-mt-cc-cadre-base}[29 mai 1973]{.insecable} | **rupture** | convention collective cadre [@arrete-1973-05-29-convention-cadre, art. 1 et 50] | base de chaque convention de branche ; grilles de salaires et indemnités renvoyées aux conventions de branche |
 | []{#r-mt-cc-cadre-smig}[29 mai 1973]{.insecable} | **rupture** | convention collective cadre [@arrete-1973-05-29-convention-cadre, préambule] | salaires fixés compte tenu d'un SMIG établi sur la base du coût de la vie |
 | []{#r-mt-cc-cadre-revision}[29 mai 1973]{.insecable} | **rupture** | convention collective cadre [@arrete-1973-05-29-convention-cadre, art. 3] | dénonciation ou révision au plus tôt trois ans après l'entrée en vigueur, puis par périodes de deux années civiles ; arbitrage du Gouvernement à défaut d'accord |
+| []{#r-mt-cc-1974-textile}[26 juillet 1974]{.insecable} | étape — grille d'origine | convention collective nationale du textile [@convention-textile-1974, p. 2729] | grille des agents payés à l'heure : 0,130 dinar l'heure à la catégorie I, échelon de confirmation |
 | []{#r-mt-cc-1974}[29 août 1974]{.insecable} | étapes — vague d'agréments | quatre arrêtés d'agrément [@arrete-1974-08-29-cc-construction-metallique; @arrete-1974-08-29-cc-textile; @arrete-1974-08-29-cc-mecanique; @arrete-1974-08-29-cc-imprimerie] | agrément des conventions de la construction métallique, du textile, de la mécanique générale et de l'électricité, et de l'imprimerie |
+| []{#r-mt-cc-1975-btp}[12 mars 1975]{.insecable} | étape — grille d'origine | convention collective nationale du bâtiment et des travaux publics, agréée à cette date [@convention-btp-1975, p. 570] | grille du personnel occasionnel : 0,140 dinar l'heure pour le manœuvre ordinaire |
+| []{#r-mt-cc-1994-icp}[22 septembre 1994]{.insecable} | **rupture** | arrêté d'agrément de l'avenant n° 5 à la convention du textile [@avenant5-textile-1994, p. 1637] | grilles hors indemnité complémentaire provisoire → indemnité intégrée aux salaires de base à compter du 1^er^ mai 1994 |
 | []{#r-mt-cc-1996}[15 juillet 1996]{.insecable} | étape | loi n° 96-62 [@loi96-62, art. 134 (nouveau)] | rémunération fixée par accord ou par convention « dans le respect du salaire minimum garanti fixé par décret » ; dans les secteurs non couverts, elle « peut être fixée par décret » |
 | []{#r-mt-cc-1996-minimum}[15 juillet 1996]{.insecable} | étape | loi n° 96-62 [@loi96-62, art. 134 (nouveau) et 134-3] | le salaire conventionnel d'une catégorie ne peut être inférieur au salaire minimum |
+| []{#r-mt-cc-1996-arabe}[24 juillet 1996]{.insecable} | étape — publication | arrêtés d'agrément d'avenants à quarante conventions [@arretes-1996-07-24-avenants-quarante-conventions, p. 1606] | avenants et grilles publiés dans l'édition française → « Les arrêtés et avenants sont publiés dans l'édition originale arabe » |
+| []{#r-mt-cc-2024-textile}[8 avril 2024]{.insecable} | étape | arrêté d'agrément de l'avenant n° 18 à la convention du textile [@avenant18-textile-2024] | avenant signé le 29 février 2024, publié dans l'édition arabe ; grilles des 1^er^ janvier 2024, 2025 et 2026 |
 | []{#r-mt-cc-2025}[4 février 2025]{.insecable} | étape | arrêté d'agrément [@arrete-2025-02-04-cc-espaces-commerciaux] | agrément de la convention sectorielle des grands, moyens et petits espaces commerciaux |
 | []{#r-mt-cc-2026-68}[30 avril 2026]{.insecable} | **rupture** | décret n° 2026-68 [@decret2026-68, art. 1] | grilles révisées par avenant agréé → hausse de 5 % par an, en 2026, 2027 et 2028, fixée par décret sur les salaires de base de tous les échelons des dernières grilles annexées et sur les indemnités de transport et de présence |
 | []{#r-mt-cc-2026-69}[30 avril 2026]{.insecable} | étape | décret n° 2026-69 [@decret2026-69, art. 1] | majoration des salaires des secteurs non couverts, par catégorie |
@@ -98,3 +133,119 @@ docs/notes/marche-travail-conventions-collectives.md, § 2 et § 4, une fois les
 : Les textes des conventions collectives, 1966-2026 {#tbl-mt-cc-textes}
 
 ::::
+
+## Ce que les conventions ajoutent au SMIG {#sec-mt-cc-smig}
+
+Cette section mesure l'écart entre le bas d'une grille conventionnelle et le salaire minimum. Elle compare au [SMIG](#g-smig) horaire du régime de 48 heures le salaire horaire d'entrée — celui de la catégorie et de l'échelon les plus bas — de deux conventions, celle du textile et celle du bâtiment et des travaux publics, de 1974 à 2026. Ce sont deux branches, non l'ensemble du secteur privé ; et ce sont des salaires de base, auxquels s'ajoutent les indemnités de chaque convention.
+
+### Le salaire d'entrée du textile et du bâtiment, 1974-2026 {#sec-mt-cc-entree}
+
+Dans le textile, le salaire d'entrée est celui de l'agent payé à l'heure de la catégorie I, à l'échelon de confirmation ; dans le bâtiment et les travaux publics, celui du manœuvre ordinaire, dans la grille du personnel occasionnel (@fig-mt-cc-salaire-entree, @tbl-mt-cc-reperes).
+
+- **À l'origine, le salaire d'entrée est le SMIG ou presque.** [La convention du textile de 1974](#r-mt-cc-1974-textile) le fixe à 0,130 dinar l'heure, soit 1,00 SMIG ; [celle du bâtiment de 1975](#r-mt-cc-1975-btp), à 0,140 dinar, soit 1,08 fois le SMIG en vigueur à son agrément.
+- **De 1994 à 1998, il vaut de 1,06 à 1,16 SMIG** : 1,07 puis 1,06 dans le textile en 1994 et en 1995 ; de 1,12 à 1,16 dans le bâtiment de 1996 à 1998. Les grilles de 1990 à 1992 ne se comparent pas au SMIG : elles excluent l'[indemnité complémentaire provisoire](#g-indemnite-complementaire-provisoire), que [l'avenant n° 5 du textile](#r-mt-cc-1994-icp) intègre aux salaires de base le 1^er^ mai 1994.
+- **Depuis 2011, il vaut, à la date d'effet de chaque grille, de 1,11 à 1,30 SMIG dans le textile et de 1,15 à 1,24 dans le bâtiment**, où la dernière grille établie est celle du 1^er^ mai 2019.
+- **Le rapport monte entre deux relèvements du SMIG et retombe à chacun** : les avenants relèvent la grille de 6 à 7 % par an, le SMIG l'est à des dates irrégulières. Dans le textile, il passe de 1,21 en septembre 2021 à 1,30 en mai 2022, le SMIG restant inchangé, puis à 1,19 en janvier 2025, quand le SMIG est porté à 2,540 dinars l'heure.
+
+```{python}
+#| label: fig-mt-cc-salaire-entree
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    mt.vues_cc_salaire_entree(), mt.table_cc_salaire_entree(), mt.SERIE_CC_GRILLES,
+    "marche-travail-smig-smag",
+    slug="fig_mt_cc_salaire_entree",
+    caption=("Salaire horaire d'entrée des conventions du textile et du bâtiment-travaux "
+             "publics et SMIG horaire du régime de 48 heures, en dinars courants ; rapport du "
+             "salaire d'entrée au SMIG ; par segments, 1974-2026"),
+    note_lecture=(
+        "Chaque point est le salaire horaire de base du bas d'une grille, à sa date d'effet, "
+        "hors indemnités de la convention. Une grille vaut jusqu'à la suivante du même "
+        "segment : le rapport change à chaque grille et à chaque relèvement du SMIG. Aucun "
+        "trait ne relie deux segments, et les années sans grille établie restent vides : "
+        "dans le textile de 1996 à 2010, dans le bâtiment de 1999 à 2010 et après 2019 ; "
+        "depuis les avenants de 1996, les grilles ne paraissent plus que dans l'édition arabe "
+        "du Journal officiel, d'où viennent celles de 2011 à 2026. Les grilles de 1990 à "
+        "1992, hors indemnité complémentaire provisoire, sont tracées en pointillé et ne "
+        "portent pas de rapport. Les deux conventions d'origine, dont la date d'effet n'est "
+        "pas établie, sont placées à la date de leur agrément. Un marqueur creux signale un "
+        "montant ou une date d'effet à confirmer : textile, 2011 et 2015 à 2020."),
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+print(mt.tableau_cc_reperes())
+print("\n: Salaire horaire d'entrée des conventions du textile et du bâtiment-travaux publics, "
+      "SMIG horaire du régime de 48 heures et rapport du premier au second, à des dates "
+      "repères, 1974-2026 {#tbl-mt-cc-reperes}\n")
+```
+
+<!-- TODO (documentaliste) : grilles à établir — textile, sentence arbitrale de 1983 et avenants
+n° 2, 4 et 6 à 10 (1996-2010, édition arabe) ; bâtiment, avenants n° 1, 2, 4, suite du n° 3
+(1991-1992) et n° 6 à 9 (1999-2010). Montant de l'indemnité complémentaire provisoire (décrets
+n° 81-437 et n° 82-501) pour comparer 1983-1993 au SMIG. Date d'effet des conventions de 1974 et
+de 1975 ; régime horaire du textile ; montants et dates marqués « à confirmer » (textile, 2011 et
+2015 à 2020). Autres branches : commerce, hôtellerie, mécanique et électricité. Note
+docs/notes/marche-travail-conventions-collectives-fond.md, § B et D. -->
+
+:::: {.chronologie-repliable titre="Salaire horaire d'entrée et haut de grille des conventions du textile et du bâtiment-travaux publics : montants, avenant et Journal officiel, date par date, 1974-2026"}
+
+```{python}
+#| echo: false
+#| output: asis
+print(mt.tableau_cc_grilles())
+print("\n: Grilles des conventions du textile et du bâtiment-travaux publics : salaire horaire "
+      "d'entrée, haut de la grille, SMIG horaire du régime de 48 heures et rapport, par date "
+      "d'effet, 1974-2026 {#tbl-mt-cc-grilles}\n")
+```
+
+Le haut de la grille est le salaire horaire de la catégorie IV-2, échelon 0, dans le textile, et celui du chef d'équipe du troisième degré dans le bâtiment et les travaux publics. La colonne « Référence » donne la convention ou l'arrêté d'agrément de l'avenant ; la page est celle de la grille, dans l'édition indiquée du *Journal officiel*.
+
+::::
+
+### 2026 : une grille conventionnelle et une hausse par décret {#sec-mt-cc-2026}
+
+Pour 2026, deux règles portent sur les salaires de base des grilles. Par [le décret n° 2026-68](#r-mt-cc-2026-68), l'État relève de 5 % par an, en 2026, 2027 et 2028, les salaires de base de tous les échelons des dernières grilles annexées aux conventions sectorielles (@sec-mt-2026). Dans le textile, [l'avenant n° 18](#r-mt-cc-2024-textile), agréé le 8 avril 2024, fixe déjà la grille du 1^er^ janvier 2026 : 3,248 dinars l'heure à l'entrée, contre 3,035 dinars au 1^er^ janvier 2025, soit 7 % de plus (@tbl-mt-cc-grilles).
+
+Aucun texte publiant les grilles issues du décret, ou disant comment sa hausse se combine avec une grille conventionnelle déjà fixée pour la même année, n'est identifié ici.
+
+<!-- RECHERCHE r-grilles-decret-2026-68 : texte publiant les grilles des conventions sectorielles issues du décret n° 2026-68, ou circulaire disant comment sa hausse se combine avec une grille conventionnelle déjà fixée pour 2026 (voir docs/recherches.yml) -->
+
+Dans le bâtiment et les travaux publics, la dernière grille établie est celle du 1^er^ mai 2019 : les grilles de l'avenant n° 16, agréé en 2022, ne sont pas identifiées ici.
+
+<!-- RECHERCHE r-btp-avenant-16-grilles : texte et grilles de l'avenant n° 16 à la convention du bâtiment et des travaux publics (arrêté du 25 novembre 2022), et tout avenant postérieur (voir docs/recherches.yml) -->
+
+## La couverture, d'après l'Organisation internationale du travail {#sec-mt-cc-couverture}
+
+Cette section donne la part des salariés que couvre une convention collective, de 2010 à 2019, telle que la publie l'Organisation internationale du travail (OIT). C'est une source extérieure, d'une autre nature que les décomptes et les grilles du *Journal officiel* des sections précédentes.
+
+L'OIT publie dans sa base ILOSTAT, pour la Tunisie, un indicateur intitulé « Collective bargaining coverage rate (%) » — taux de couverture de la négociation collective —, avec pour seule précision « Reference group coverage: Employees » : le groupe de référence est celui des salariés [@oit-ilostat-couverture-negociation-collective]. L'OIT déclare pour source des fichiers administratifs (« ADM - Other Administrative records and related sources ») ; ni le producteur national des données ni la méthode ne sont précisés par la source, qui ne publie ni le numérateur ni le dénominateur.
+
+- **Le taux passe de 54,9 % en 2010 à 56,9 % en 2014, puis de 64,3 % en 2016 à 62,9 % en 2019** (@fig-mt-cc-couverture). L'année 2015 manque, et la source n'explique pas l'écart entre 2014 et 2016.
+- **Ce taux porte sur les salariés pris ensemble** ; la source ne précise pas si le secteur public y est compris. Il ne mesure pas la part des salariés du secteur privé qu'une convention sectorielle couvre.
+
+```{python}
+#| label: fig-mt-cc-couverture
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    mt.vues_cc_couverture(), mt.table_cc_couverture(), mt.SERIE_CC_COUVERTURE,
+    slug="fig_mt_cc_couverture", nominal=False,
+    caption=("Taux de couverture de la négociation collective en Tunisie, en % du nombre de "
+             "salariés, d'après l'Organisation internationale du travail (ILOSTAT), 2010-2019"),
+    note_lecture=(
+        "Chaque barre est la valeur annuelle de l'indicateur « Collective bargaining coverage "
+        "rate (%) » de la base ILOSTAT de l'OIT, en pourcentage du nombre de salariés. L'OIT "
+        "déclare pour source des fichiers administratifs, sans nommer l'administration qui "
+        "les produit ni décrire la méthode. L'année 2015 n'a pas de valeur ; la série s'arrête "
+        "en 2019."),
+)
+```
+
+<!-- TODO (documentaliste) : méthode nationale de la série de l'OIT (administration productrice,
+numérateur, dénominateur ; fiche de métadonnées par pays d'ILOSTAT) ; nombre de salariés couverts
+par convention sectorielle, par branche (ministère des affaires sociales : rubrique « conventions »
+de son site, archives du web ; annuaires statistiques) ; effectifs salariés par branche. Note
+docs/notes/marche-travail-conventions-collectives-fond.md, § C. -->
