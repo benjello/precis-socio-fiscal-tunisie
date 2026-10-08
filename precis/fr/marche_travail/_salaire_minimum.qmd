@@ -456,7 +456,7 @@ figtools.figure_tabs(
 
 ### Deux enquêtes de l'INS auprès des entreprises, 2007-2022 {#sec-mt-sp-enquetes}
 
-Deux enquêtes de l'INS interrogent les entreprises sur les salaires qu'elles versent ; leurs champs diffèrent de celui de la CNSS, et l'un de l'autre (@tbl-mt-sp-enquetes).
+Deux enquêtes de l'INS interrogent les entreprises sur les salaires qu'elles versent ; leurs champs diffèrent de celui de la CNSS, et l'un de l'autre (@tbl-mt-sp-enquetes, @tbl-mt-sp-enquetes-ees).
 
 - **Dans les micro-entreprises** — moins de six salariés, sans comptabilité —, 54,5 % des salariés permanents ont un salaire inférieur au SMIG en 2007, 49,9 % en 2012 et 32,3 % en 2016 ; ces parts ne s'entendent pas à durée du travail égale.
 - **Dans les entreprises de six salariés et plus, publiques comprises**, le salaire de base moyen des permanents, hors primes et heures supplémentaires, vaut 178 % du SMIG en 2012, 188 % en 2014 et 201 % en 2022.
@@ -464,10 +464,15 @@ Deux enquêtes de l'INS interrogent les entreprises sur les salaires qu'elles ve
 ```{python}
 #| echo: false
 #| output: asis
-print(mt.tableau_enquetes())
-print("\n: Enquêtes de l'INS auprès des entreprises : salariés dont le salaire est inférieur au "
-      "SMIG dans les micro-entreprises, 2007, 2012 et 2016 ; salaire de base moyen des permanents dans "
-      "les entreprises de six salariés et plus, 2012, 2014 et 2022 {#tbl-mt-sp-enquetes}\n")
+print(mt.tableau_enquetes("micro"))
+print("\n: Micro-entreprises (INS) : part des salariés permanents dont le salaire est inférieur "
+      "au SMIG, 2007, 2012 et 2016. Champ : entreprises non agricoles de moins de six salariés, "
+      "sans comptabilité ; en 2016, chiffre d'affaires inférieur à un million de dinars "
+      "{#tbl-mt-sp-enquetes}\n")
+print(mt.tableau_enquetes("ees"))
+print("\n: Entreprises de six salariés et plus (INS, enquête « Emploi et salaires ») : salaire "
+      "de base moyen des salariés permanents, 2012, 2014 et 2022. Champ : entreprises publiques "
+      "et entreprises privées de six salariés et plus {#tbl-mt-sp-enquetes-ees}\n")
 ```
 
 Le SMIG est celui que l'INS retient dans chaque rapport, sans préciser son régime horaire ; l'enquête « Emploi et salaires » ne précise ni la périodicité du salaire de base ni la pondération de sa moyenne.

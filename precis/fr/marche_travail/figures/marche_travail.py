@@ -711,6 +711,13 @@ _L.update({
               "ar": ("التشغيل والأجور: المؤسسات العمومية والمؤسسات الخاصة التي تشغّل ستة أجراء "
                      "فأكثر؛ الأجراء القارّون")},
     "t_rep_micro": {"fr": "{n} entreprises sans comptabilité", "ar": "{n} مؤسسة لا تمسك محاسبة"},
+    "t_part_court": {"fr": "Salaire inférieur au SMIG", "ar": "أجر دون الأجر الأدنى"},
+    "t_moitie_court": {"fr": "dont inférieur à la moitié du SMIG", "ar": "منها دون نصف الأجر الأدنى"},
+    "t_base_court": {"fr": "Salaire de base moyen (D par mois)", "ar": "معدّل الأجر الأساسي (د في الشهر)"},
+    "t_smig_court": {"fr": "SMIG retenu par l'INS (D)", "ar": "الأجر الأدنى المعتمد (د)"},
+    "t_repondantes": {"fr": "Entreprises répondantes", "ar": "المؤسسات المجيبة"},
+    "t_taux": {"fr": "Taux de réponse", "ar": "نسبة الإجابة"},
+    "t_source": {"fr": "Source", "ar": "المصدر"},
     "t_rep_ees": {"fr": "taux de réponse de {n}", "ar": "نسبة إجابة {n}"},
 })
 
@@ -972,55 +979,56 @@ _REPONDANTES_MICRO = {2007: 7144, 2012: 5572, 2016: 7179}
 _REPONSE_EES = {2012: "38,6 %", 2014: "46,6 %", 2022: "58 %"}
 
 
-def tableau_enquetes() -> str:
-    """Tableau Markdown des deux enquêtes de l'INS, une ligne par enquête et par année.
+def tableau_enquetes(enquete: str) -> str:
+    """Tableau Markdown d'une des deux enquêtes de l'INS (`"micro"` ou `"ees"`), une ligne par
+    année. Le champ de l'enquête se dit une fois, dans la légende, non dans chaque ligne.
 
-    Valeurs lues dans les séries ; champ et taux de réponse contrôlés sur les citations que
-    les séries portent (colonnes `champ` et `taux_de_reponse`).
+    Valeurs lues dans les séries ; entreprises répondantes et taux de réponse contrôlés sur les
+    citations que les séries portent (colonnes `champ` et `taux_de_reponse`).
     """
-    m, e = figtools.series(SERIE_MICRO), figtools.series(SERIE_EES)
-    m = m[(m["branche"] == "Ensemble") & (m["sexe"] == "ensemble") & (m["grandeur"] == "part")]
+    def pct(v, decimales=1):
+        return f"{_fr(float(v), decimales)} %"
+
     lignes = []
-
-    def pct(v):
-        return f"{_fr(float(v))} %"
-
-    for annee in (2007, 2012, 2016):
-        propre = m[m["source_id"] == f"ins-micro-entreprises-{annee}"]
-        part = propre[(propre["annee"] == annee) & (propre["tranche"] == "<1")]
-        # La moitié du SMIG : 2007 n'est imprimée que par le rapport 2012 (tableau 8).
-        moitie = m[(m["annee"] == annee) & (m["tranche"] == "<0.5")]
-        assert part["valeur"].nunique() == 1 and moitie["valeur"].nunique() == 1, annee
-        assert str(_REPONDANTES_MICRO[annee]) in propre["champ"].iloc[0], annee
-        page = int(part["page_pdf"].min())
-        du_rapport = moitie[moitie["source_id"] == f"ins-micro-entreprises-{annee}"]
-        if du_rapport.empty:
-            autre = moitie.iloc[0]
-            cite = (f"[@ins-micro-entreprises-{annee}, p. {page}; "
-                    f"@{autre['source_id']}, p. {int(autre['page_pdf'])}]")
-        else:
-            cite = (f"[@ins-micro-entreprises-{annee}, p. {page}, "
-                    f"{int(du_rapport['page_pdf'].min())}]")
-        champ = _lab("t_micro") + (_lab("t_micro_2016") if annee == 2016 else "")
-        lignes.append((f"{champ} {cite}", annee, pct(part["valeur"].iloc[0]),
-                       pct(moitie["valeur"].iloc[0]), "—", "—",
-                       int(part["smig_retenu_par_la_source_D"].iloc[0]),
-                       _lab("t_rep_micro").format(n=_fr(_REPONDANTES_MICRO[annee], 0))))
-    e = e[(e["section"] == "Total") & (e["categorie"] == "Total")]
-    for annee in (2012, 2014, 2022):
-        g = e[e["annee"] == annee]
-        niveau = g[~g["grandeur"].str.contains("pourcentage")]
-        rapport = g[g["grandeur"].str.contains("pourcentage")]
-        assert len(niveau) == 1 and len(rapport) == 1, annee
-        assert _REPONSE_EES[annee].replace(" ", "") in g["taux_de_reponse"].iloc[0], annee
-        cite = f"[@ins-ees-{annee}, p. {int(niveau['page_pdf'].iloc[0])}]"
-        lignes.append((f"{_lab('t_ees')} {cite}", annee, "—", "—",
-                       _fr(float(niveau["valeur"].iloc[0]), 0),
-                       f"{_fr(float(rapport['valeur'].iloc[0]), 0)} %",
-                       int(niveau["smig_retenu_par_la_source_D"].iloc[0]),
-                       _lab("t_rep_ees").format(n=_REPONSE_EES[annee])))
-    entetes = [_lab(c) for c in ("t_enquete", "t_annee", "t_part", "t_moitie", "t_base",
-                                 "t_base_pct", "t_smig", "t_reponse")]
-    sortie = ["| " + " | ".join(entetes) + " |", "|:---|---|---:|---:|---:|---:|---:|:---|"]
+    if enquete == "micro":
+        m = figtools.series(SERIE_MICRO)
+        m = m[(m["branche"] == "Ensemble") & (m["sexe"] == "ensemble") & (m["grandeur"] == "part")]
+        for annee in (2007, 2012, 2016):
+            propre = m[m["source_id"] == f"ins-micro-entreprises-{annee}"]
+            part = propre[(propre["annee"] == annee) & (propre["tranche"] == "<1")]
+            # La moitié du SMIG : 2007 n'est imprimée que par le rapport 2012 (tableau 8).
+            moitie = m[(m["annee"] == annee) & (m["tranche"] == "<0.5")]
+            assert part["valeur"].nunique() == 1 and moitie["valeur"].nunique() == 1, annee
+            assert str(_REPONDANTES_MICRO[annee]) in propre["champ"].iloc[0], annee
+            page = int(part["page_pdf"].min())
+            du_rapport = moitie[moitie["source_id"] == f"ins-micro-entreprises-{annee}"]
+            if du_rapport.empty:
+                autre = moitie.iloc[0]
+                cite = (f"[@ins-micro-entreprises-{annee}, p. {page}; "
+                        f"@{autre['source_id']}, p. {int(autre['page_pdf'])}]")
+            else:
+                cite = (f"[@ins-micro-entreprises-{annee}, p. {page}, "
+                        f"{int(du_rapport['page_pdf'].min())}]")
+            lignes.append((annee, pct(part["valeur"].iloc[0]), pct(moitie["valeur"].iloc[0]),
+                           int(part["smig_retenu_par_la_source_D"].iloc[0]),
+                           _fr(_REPONDANTES_MICRO[annee], 0), cite))
+        cles = ("t_annee", "t_part_court", "t_moitie_court", "t_smig_court", "t_repondantes",
+                "t_source")
+    else:
+        e = figtools.series(SERIE_EES)
+        e = e[(e["section"] == "Total") & (e["categorie"] == "Total")]
+        for annee in (2012, 2014, 2022):
+            g = e[e["annee"] == annee]
+            niveau = g[~g["grandeur"].str.contains("pourcentage")]
+            rapport = g[g["grandeur"].str.contains("pourcentage")]
+            assert len(niveau) == 1 and len(rapport) == 1, annee
+            assert _REPONSE_EES[annee].replace(" ", "") in g["taux_de_reponse"].iloc[0], annee
+            cite = f"[@ins-ees-{annee}, p. {int(niveau['page_pdf'].iloc[0])}]"
+            lignes.append((annee, _fr(float(niveau["valeur"].iloc[0]), 0),
+                           pct(rapport["valeur"].iloc[0], 0),
+                           int(niveau["smig_retenu_par_la_source_D"].iloc[0]),
+                           _REPONSE_EES[annee], cite))
+        cles = ("t_annee", "t_base_court", "t_base_pct", "t_smig_court", "t_taux", "t_source")
+    sortie = ["| " + " | ".join(_lab(c) for c in cles) + " |", "|:---|---:|---:|---:|---:|:---|"]
     sortie += ["| " + " | ".join(str(c) for c in l) + " |" for l in lignes]
     return "\n".join(sortie)
