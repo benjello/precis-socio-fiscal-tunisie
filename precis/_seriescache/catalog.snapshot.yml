@@ -2565,12 +2565,20 @@
     de la masse salariale et des effectifs à 6 SMIG et plus). Une seule année trimestrielle
     : pas une série. FILTRER SUR `niveau` avant toute somme : les trois regroupements
     calculés s''ajoutent aux treize classes de la source, et le code `1-1.5` existe
-    aux deux niveaux. NON PRÉCISÉ PAR LA SOURCE : SMIG de référence (40 ou 48 heures),
-    calcul du salaire mensuel déclaré. La classe 1 à 1,5 SMIG ne permet pas d''isoler
-    le salarié payé au SMIG. Les éditions 2010, 2013 et 2018 sont identiques sur leurs
-    années communes (contrôle du script) : `serie_2000_2018 = oui` marque un parcours
-    sans doublon (édition 2013 pour 2000-2004, édition 2018 ensuite), sans raccord
-    de valeurs. NE PAS MÊLER à l''édition 2006 (`cnss-annuaire-2006-pyramide-smig-brut`),
+    aux deux niveaux. LE MONTANT DU SMIG DE RÉFÉRENCE EST IMPRIMÉ sous la pyramide
+    en dinars (« 6 fois SMIG mensuel en D », série `cnss-pyramide-dinars-2000-2018`)
+    ; NON PRÉCISÉ PAR LA SOURCE : son régime (40 ou 48 heures), le calcul du salaire
+    mensuel déclaré. CONSTAT : ce SMIG vaut 200 heures au taux horaire du régime de
+    48 heures (290,200 D en 2013), non le SMIG mensuel de 208 heures (301,808 D),
+    et les classes en sont des multiples (encadrement sans tolérance : 111 seuils
+    sur 120, contre 40 avec le SMIG mensuel). Un salarié payé toute l''année le SMIG
+    mensuel de 48 heures se range donc vers 1,04 SMIG, dans la classe 1 à 1,5 ; au
+    SMIG mensuel de 40 heures, vers 0,89, dans la classe 2/3 à 1 : « MOINS DE 1 SMIG
+    » NE VEUT PAS DIRE « SOUS LE SALAIRE MINIMUM LÉGAL ». La classe 1 à 1,5 SMIG ne
+    permet pas d''isoler le salarié payé au SMIG. Les éditions 2010, 2013 et 2018
+    sont identiques sur leurs années communes (contrôle du script) : `serie_2000_2018
+    = oui` marque un parcours sans doublon (édition 2013 pour 2000-2004, édition 2018
+    ensuite), sans raccord de valeurs. NE PAS MÊLER à l''édition 2006 (`cnss-annuaire-2006-pyramide-smig-brut`),
     autre univers. La pyramide en dinars de l''édition 2018 (PDF 24) imprime 1 149
     959 salariés en 2012, celle en SMIG 1 149 956. Parts calculées, sans arrondi ;
     les parts imprimées (2013, 2018) sont gardées à côté.'
@@ -2690,3 +2698,83 @@
     pas une série annuelle. Détail par section et quartiles non versés. Le nom du
     PDF de 2014 porte un « ê » décomposé (e + U+0302).'
   fiche: sources/ins-emploi-salaires-entreprises.md
+- id: cnss-quantiles-salaires-approches
+  titre: 'CNSS : quantiles approchés du salaire mensuel déclaré (RSNA), par interpolation
+    dans les classes en dinars — série dérivée'
+  sources:
+  - cnss-annuaires-statistiques
+  build: scripts/build_cnss_quantiles_salaires.py:main
+  raw:
+  - data/processed/caisses/cnss_pyramide_dinars_2000_2018.csv
+  - data/processed/caisses/cnss_pyramide_selon_trimestres_declares_2013.csv
+  output: data/processed/caisses/cnss_quantiles_salaires_approches.csv
+  unite: dinars courants par mois
+  perimetre: premier décile, premier quartile, médiane, troisième quartile, neuvième
+    décile ; pour chaque colonne de chaque édition de la pyramide en dinars (38 colonnes
+    annuelles, 12 trimestrielles) et pour les salariés déclarés quatre trimestres
+    en 2013
+  caveats: 'SÉRIE DÉRIVÉE, NON PUBLIÉE PAR LA SOURCE. Interpolation linéaire dans
+    la classe (répartition uniforme supposée) ; erreur bornée par `largeur_D` (20
+    à 40 D dans l''édition 2013, 50 D ensuite). VIDE quand le quantile tombe dans
+    une classe ouverte : neuvième décile de 2014 à 2018, premier décile annuel de
+    2017 et 2018. LES COLONNES N''ONT PAS TOUTES LA MÊME DÉFINITION DU SALAIRE MENSUEL
+    (`definition_deduite`, `coherent_avec_pyramide_smig`) : une tendance ne se lit
+    qu''à définition et grille égales — 2000-2009 puis 2011-2013 (édition 2013) ;
+    2010-2016 (éditions 2016 à 2018) ; trimestres de 2017 et 2018. BIAIS DES ANNÉES
+    INCOMPLÈTES dans la mesure annuelle ÷ 12 : en 2013, médiane de 468,1 D pour l''ensemble,
+    590,2 D pour les déclarés quatre trimestres. Dinars courants : aucune déflation
+    ici.'
+  fiche: docs/cnss-quantiles-salaires-approches.md
+- id: cnss-pyramide-trimestres-declares-2013
+  titre: 'CNSS 2013 : salariés du RSNA et masse salariale selon le nombre de trimestres
+    déclarés dans l''année, par classe de salaire en dinars et en SMIG'
+  sources:
+  - cnss-annuaires-statistiques
+  build: scripts/extract_cnss_trimestres_declares_2013.py:main
+  raw:
+  - data/raw/caisses/cnss/annuaires/annuaire2013fr.pdf
+  output: data/processed/caisses/cnss_pyramide_selon_trimestres_declares_2013.csv
+  unite: salariés déclarés ; dinars courants (masse salariale de l'année ; salaire
+    annuel moyen calculé)
+  perimetre: 'régime des salariés non agricoles, année 2013 ; édition 2013, PDF 35
+    (57 classes en dinars) et PDF 36 (13 classes en SMIG) ; colonnes : un, deux, trois,
+    quatre trimestres déclarés au titre de l''année, et total ; ligne TOTAL comprise'
+  caveats: 'UNE SEULE ANNÉE. Seule édition où les colonnes sont le NOMBRE DE TRIMESTRES
+    DÉCLARÉS (partition : 123 341 + 110 687 + 124 069 + 800 558 = 1 158 655) ; les
+    tableaux de même titre des éditions 2016 à 2018 sont par trimestre civil. Déclarés
+    quatre trimestres : 800 558 salariés, 8 834 648 773 D. LE SALAIRE MOYEN PAR NOMBRE
+    DE TRIMESTRES N''EST PAS IMPRIMÉ : `salaire_annuel_moyen_calcule_D` est masse
+    ÷ effectif (11 035,61 D pour quatre trimestres). DÉFAUT DE LA SOURCE AU PDF 36
+    (classes en SMIG), gardé : aucune ligne ne se somme à sa colonne TOTAL (1,5 à
+    2 SMIG : −94 185 ; 2 à 2,5 : +94 084), alors que les colonnes et les masses bouclent
+    ; n''utiliser ces deux lignes qu''avec cette réserve. Le PDF 35 (dinars) boucle
+    en lignes et en colonnes. Salaire mensuel = masse annuelle ÷ 12, vérifié dans
+    les 285 cellules du PDF 35 : non écrit par la source.'
+  fiche: sources/cnss-annuaires.md
+- id: cnss-pyramide-dinars-reperes
+  titre: 'CNSS : contrôles de la pyramide en dinars, par édition et par année (concordance
+    entre éditions, cohérence avec la pyramide en SMIG)'
+  sources:
+  - cnss-annuaires-statistiques
+  build: scripts/extract_cnss_pyramide_dinars.py:main
+  raw:
+  - data/processed/caisses/cnss_pyramide_dinars_2000_2018.csv
+  - data/processed/caisses/cnss_pyramide_smig_2000_2018.csv
+  - data/processed/jort/smig_smag.csv
+  output: data/processed/caisses/cnss_pyramide_dinars_reperes.csv
+  unite: salariés déclarés (effectifs cumulés sous neuf bornes communes) ; dinars
+    (SMIG de la source) ; % de l'effectif total (écart d'encadrement)
+  perimetre: 'une ligne par édition et par année de la mesure annuelle (38 lignes)
+    : total imprimé, SMIG mensuel de la source, effectifs cumulés sous 200, 300, 450,
+    600, 750, 900, 1 050, 1 200 et 1 350 D, nombre de seuils de SMIG testés et hors
+    encadrement, écart maximal'
+  caveats: 'FICHIER DE CONTRÔLE, CALCULÉ. L''encadrement compare l''effectif cumulé
+    de la pyramide en SMIG (sous 2/3, 1, 1,5 … 4 SMIG) aux effectifs cumulés des deux
+    bornes de la classe en dinars qui contient le seuil ; tolérance de 1 % de l''effectif
+    total. Écart maximal : 0,7 % au plus pour les colonnes cohérentes, 7,8 à 11,8
+    % pour les autres. Il établit que deux mesures coexistent, non leur définition.
+    `smig_de_la_source_egale` compare le SMIG imprimé à la série `smig-smag` du dépôt
+    (200 heures au taux horaire du régime de 48 heures, de fin d''année ou en moyenne)
+    ; les deux colonnes `seuils_encadres_sans_tolerance_…` refont l''encadrement avec
+    le SMIG de la source puis avec le SMIG mensuel de 48 heures.'
+  fiche: sources/cnss-annuaires.md
