@@ -68,7 +68,7 @@ figtools.figure_tabs(
 )
 ```
 
-**Comment le chapitre se lit.** Il suit l'ordre des dates : la mise en place, des minima par zone de 1961 à l'institution du SMIG et du SMAG en 1974 (@sec-mt-mise-en-place) ; les ruptures, de 1977 à 2026 (@sec-mt-ruptures) ; l'état du droit en 2026, avec les montants date par date et la composition du SMIG (@sec-mt-sm-etat-du-droit). La dernière section suit le salaire minimum sur la longue période, de 1961 à 2028 : en dinars courants, en dinars constants, et dans le rapport entre les deux régimes horaires et le SMAG (@sec-mt-longue-periode).
+**Comment le chapitre se lit.** Il suit l'ordre des dates : la mise en place, des minima par zone de 1961 à l'institution du SMIG et du SMAG en 1974 (@sec-mt-mise-en-place) ; les ruptures, de 1977 à 2026 (@sec-mt-ruptures) ; l'état du droit en 2026, avec les montants date par date et la composition du SMIG (@sec-mt-sm-etat-du-droit). Une section suit le salaire minimum sur la longue période, de 1961 à 2028 : en dinars courants, en dinars constants, et dans le rapport entre les deux régimes horaires et le SMAG (@sec-mt-longue-periode) ; la dernière le rapporte aux salaires versés dans le secteur privé, de 1970 à 2025 (@sec-mt-salaires-prive).
 
 ## La mise en place, 1961-1974 {#sec-mt-mise-en-place .domicile-unique}
 
@@ -284,12 +284,7 @@ table("indemnites_speciales",
 
 ## La longue période, 1961-2028 {#sec-mt-longue-periode}
 
-Cette section suit le salaire minimum de 1961 à 2028 : en dinars courants, en dinars constants, et dans le rapport qu'entretiennent les deux régimes horaires du SMIG et le SMAG. Ce sont des minima légaux, ceux des décrets (@tbl-mt-smig, @tbl-mt-smag). Trois ruptures sont marquées sur les figures : l'institution du SMIG et du SMAG en 1974, la divergence des taux horaires des deux régimes en 1981 et les décrets pluriannuels de 2026.
-
-<!-- TODO (rédacteur) : section sur les salaires effectivement versés dans le secteur privé et la
-part des salariés payés au SMIG, d'après la note docs/notes/marche-travail-salaires-effectifs-prive.md
-(salaire moyen déclaré à la CNSS, 1970-2018, et son rapport au SMIG ; série en cours de versement
-dans tunisia-data). -->
+Cette section suit le salaire minimum de 1961 à 2028 : en dinars courants, en dinars constants, et dans le rapport qu'entretiennent les deux régimes horaires du SMIG et le SMAG. Ce sont des minima légaux, ceux des décrets (@tbl-mt-smig, @tbl-mt-smag) ; les salaires versés dans le secteur privé ont leur propre section (@sec-mt-salaires-prive). Trois ruptures sont marquées sur les figures : l'institution du SMIG et du SMAG en 1974, la divergence des taux horaires des deux régimes en 1981 et les décrets pluriannuels de 2026.
 
 ### Le SMIG en dinars courants {#sec-mt-lp-nominal}
 
@@ -327,3 +322,157 @@ figtools.figure_tabs(
         "régime."),
 )
 ```
+
+## Les salaires versés dans le secteur privé, 1970-2025 {#sec-mt-salaires-prive}
+
+Cette section rapporte le salaire minimum aux salaires que les employeurs du secteur privé non agricole déclarent à la Caisse nationale de sécurité sociale (CNSS). Elle donne le salaire moyen déclaré et son rapport au [SMIG](#g-smig) de 1970 à 2018, l'évolution des salaires, du SMIG et des prix de 2001 à 2025, puis la répartition des salariés déclarés selon leur salaire exprimé en SMIG, de 2000 à 2018. Deux enquêtes de l'Institut national de la statistique (INS), de 2007 à 2022, sont données à part.
+
+### Ce que mesure le salaire déclaré {#sec-mt-sp-mesure}
+
+Le salaire déclaré est celui que l'employeur déclare à la CNSS, au titre du régime des salariés non agricoles. L'annuaire statistique de la caisse en publie la masse et le nombre de salariés déclarés ; le salaire annuel moyen déclaré est leur quotient, et le salaire mensuel moyen, ce quotient divisé par douze.
+
+Ce quotient compte tout salarié déclaré au moins une fois dans l'année : il est inférieur au salaire d'un emploi occupé toute l'année. En 2013, il est de 8 495 dinars par an pour l'ensemble des salariés déclarés, et de 11 036 dinars pour ceux qui le sont les quatre trimestres [@cnss-annuaire-2013, p. 26 et 36] (@fig-mt-sp-salaire-declare, onglet « Données »).
+
+La série s'arrête en 2018 : aucun niveau du salaire déclaré n'est publié pour les années suivantes.
+
+<!-- TODO (documentaliste) : le salaire moyen des salariés déclarés les quatre trimestres de 2013
+(800 558 salariés, 8 834 648 773 D, annuaire 2013, PDF p. 36) est une constante du module de
+figures, faute de série : verser dans tunisia-data la ventilation par nombre de trimestres déclarés
+(annuaires 2013, 2016, 2018 ; définitions des colonnes différentes d'une édition à l'autre, note
+docs/notes/marche-travail-salaires-effectifs-prive.md § 2.2), puis lire la série. -->
+
+<!-- TODO (documentaliste) : tout niveau du salaire déclaré après 2018 (aucun annuaire de la CNSS
+postérieur ; voies essayées dans la note, § 5.4) ; lignes 2000 et 2001 de l'édition 2006, masquées
+par le pli de l'exemplaire numérisé. -->
+
+### Le salaire moyen déclaré face au SMIG, 1970-2018 {#sec-mt-sp-niveau}
+
+Le salaire mensuel moyen déclaré se compare au SMIG du régime de 48 heures en dinars de 2024, puis par leur rapport (@fig-mt-sp-salaire-declare). Elle se lit par segments : le contenu du SMIG change en 1974 et en 1981, celui des salaires déclarés en 1988 et en 2003.
+
+- **Le salaire moyen déclaré vaut 1,76 SMIG en 1970, 1,60 en 1980 et 2,60 en 2018.** En dinars de 2024, il passe de 609 dinars par mois en 1970 à 933 en 1980, et de 1 031 en 2004 à 1 457 en 2018 ; le SMIG, de 608 dinars en 2004 à 561 en 2018.
+- **De 1981 à 1987, le rapport est abaissé par construction**, entre 1,10 et 1,40 : l'[indemnité complémentaire provisoire](#g-indemnite-complementaire-provisoire) entre dans le SMIG en 1981 et [reste hors de l'assiette des cotisations](#r-mt-sm-icp-assiette), donc des salaires déclarés. À partir de 1988, l'annuaire compte dans les salaires déclarés cette indemnité et un élément qu'il désigne par le sigle « MIT » ; le salaire annuel moyen est de 1 435 dinars en 1987 et de 1 936 en 1988, le rapport de 1,19 et de 1,48 [@cnss-annuaire-2006, p. 14].
+- **Les années 2002 à 2006 ont deux valeurs, une par édition de l'annuaire.** Le salaire annuel moyen de 2002 est de 4 525 dinars dans l'édition 2006 et de 3 856 dinars dans l'édition 2018, soit 1,89 et 1,61 SMIG ; les deux éditions se rejoignent en 2006, à 1,80 et 1,81 SMIG [@cnss-annuaire-2006, p. 14; @cnss-annuaire-2018, p. 16]. L'annuaire n'explique pas cet écart.
+
+<!-- TODO (documentaliste) : identifier le texte qui, vers 1988, fait entrer l'indemnité
+complémentaire provisoire dans l'assiette des cotisations (aucune recherche lancée : ouvrir une
+fiche r-… dans docs/recherches.yml à la première passe) ; développer le sigle « MIT » du tableau de
+l'annuaire 2006 ; citer le texte du changement d'assujettissement des taxis et louages de 2003
+(décret n° 2002-3018 selon la fiche sources/cnss-annuaires.md de tunisia-data, non lu, sans clé). -->
+
+```{python}
+#| label: fig-mt-sp-salaire-declare
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    mt.vues_salaire_declare(), mt.table_salaire_declare(), mt.SERIE_SALAIRE,
+    "marche-travail-smig-smag", "ipc-longue-periode", "bct-ipc-base2015",
+    slug="fig_mt_sp_salaire_declare", nominal=False,
+    caption=("Salaire mensuel moyen déclaré à la CNSS, régime des salariés non agricoles, et "
+             "SMIG du régime de 48 heures, en dinars de 2024 ; rapport du premier au second ; "
+             "par segments, 1970-2018"),
+    note_lecture=(
+        "Chaque point est le salaire annuel moyen déclaré qu'imprime l'annuaire statistique de "
+        "la CNSS — la masse des salaires déclarés divisée par le nombre de salariés déclarés "
+        "dans l'année —, divisé par douze. Le SMIG est la moyenne des montants mensuels du "
+        "régime de 48 heures en vigueur au premier jour des douze mois de l'année. Les dinars "
+        "de 2024 sont le montant de l'année multiplié par le rapport de l'indice des prix à la "
+        "consommation de 2024 à celui de l'année. Aucun trait ne relie deux segments. En 1974, "
+        "le SMIG intègre l'indemnité de cherté de vie, servie de 1971 à 1973 en sus du minimum "
+        "et absente de la courbe du SMIG : le rapport passe de 2,06 en 1973 à 1,54 en 1974. En "
+        "1981, l'indemnité complémentaire provisoire entre dans le SMIG et reste hors de "
+        "l'assiette des cotisations, donc des salaires déclarés. À partir de 1988, l'annuaire "
+        "la compte dans les salaires déclarés, avec un élément qu'il désigne par le sigle "
+        "« MIT » sans le développer. En 2003, il signale un changement du régime "
+        "d'assujettissement des taxis et louages. L'édition 2006 de l'annuaire porte les "
+        "années 1970 à 1999 et 2002 à 2006, l'édition 2018 les années 2000 à 2018 : les années "
+        "2002 à 2006 sont tracées deux fois, avec les valeurs de chaque édition. Le losange est "
+        "le salaire moyen des seuls salariés déclarés les quatre trimestres de 2013."),
+)
+```
+
+### L'évolution des salaires, du SMIG et des prix, 2001-2025 {#sec-mt-sp-evolution}
+
+L'INS publie le taux d'évolution trimestriel du salaire moyen du secteur privé non agricole, de 2001 à 2025 [@ins-portail-2006-salaires-prive; @ins-portail-2009-salaires-prive; @ins-bms]. Ce taux suit un panel de salariés permanents, déclarés à la CNSS cinq trimestres de suite [@ins-guide-salaires-prive-2026] : il mesure la progression du salaire de salariés restés en emploi, à composition constante, et ne donne aucun niveau. Chaîné en indice, il se compare au SMIG et aux prix à la consommation (@fig-mt-sp-indices).
+
+- **De 2001 à 2024, l'indice du salaire passe de 100 à 360, celui des prix à 310, celui du SMIG à 251.** En 2025, l'indice du salaire atteint 381, sur un taux provisoire, et celui du SMIG 276.
+- **Le SMIG suit les prix jusqu'en 2016, puis progresse moins vite qu'eux** : les deux indices valent 181 en 2016.
+- **L'indice du panel progresse moins vite que le salaire moyen déclaré.** De 2004 à 2018, il passe de 116 à 261, quand le salaire annuel moyen déclaré passe de 4 368 à 11 567 dinars (@fig-mt-sp-salaire-declare, onglet « Données ») : le premier suit les mêmes salariés d'un trimestre au suivant ; le second, tous les salariés déclarés de l'année.
+
+```{python}
+#| label: fig-mt-sp-indices
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    mt.vues_indices(), mt.table_indices(), mt.SERIE_INS_TAUX, "marche-travail-smig-smag",
+    "ipc-longue-periode", "bct-ipc-base2015",
+    slug="fig_mt_sp_indices", nominal=False,
+    caption=("Salaire moyen du secteur privé non agricole — panel de salariés permanents, "
+             "évolution à composition constante —, SMIG du régime de 48 heures et prix à la "
+             "consommation : indices base 100 en 2001, 2001-2025"),
+    note_lecture=(
+        "L'indice du salaire chaîne les taux d'évolution trimestriels publiés par l'INS : il "
+        "vaut 100 au quatrième trimestre 2001, et chaque point est le niveau du quatrième "
+        "trimestre de l'année. Le SMIG et les prix sont des moyennes annuelles. Le panel "
+        "réunit les salariés déclarés à la CNSS cinq trimestres de suite ; les salaires "
+        "trimestriels inférieurs à 300 dinars ou supérieurs à 60 000 dinars et les évolutions "
+        "individuelles inférieures à −5 % ou supérieures à +10 % en sont exclus. Cette méthode "
+        "est celle du guide que l'INS publie en 2026 ; celle des années 2001 à 2007 n'est pas "
+        "documentée. L'indice suit la progression du salaire de salariés restés en emploi : "
+        "une évolution à composition constante, pas un niveau ; il ne prolonge pas le salaire "
+        "moyen déclaré de la figure précédente. Le taux de 2025 est provisoire. L'indice des "
+        "prix va jusqu'en 2024, dernière année publiée ; celui du SMIG jusqu'en 2025, dernière "
+        "année échue."),
+)
+```
+
+### Le bas de la distribution, 2000-2018 {#sec-mt-sp-distribution}
+
+L'annuaire de la CNSS répartit les salariés déclarés selon leur salaire mensuel déclaré, exprimé en SMIG, sans préciser le régime horaire du SMIG de référence ni le calcul du salaire mensuel (@fig-mt-sp-distribution).
+
+- **La part des salariés déclarés sous 1 SMIG recule de 40,8 % en 2000 à 24,0 % en 2018** ; celle de 1 à 1,5 SMIG, de 24,8 % à 17,8 % ; celle au-delà de 1,5 SMIG passe de 34,4 % à 58,2 %.
+- **Cette mesure annuelle ne donne pas la part des salariés payés moins que le SMIG** : elle compte aussi les salariés déclarés une partie de l'année seulement. Parmi les salariés déclarés au premier trimestre 2018, 9,5 % sont sous 1 SMIG, contre 24,0 % dans la mesure annuelle [@cnss-annuaire-2018, p. 26 et 27] ; l'écart vient des années incomplètes.
+- **La classe de 1 à 1,5 SMIG réunit 21,9 % des salariés déclarés au premier trimestre 2018**, sans distinguer le salarié payé au SMIG de celui qui gagne moitié plus.
+
+```{python}
+#| label: fig-mt-sp-distribution
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    mt.vues_bas_distribution(), mt.table_bas_distribution(), mt.SERIE_PYRAMIDE,
+    slug="fig_mt_sp_distribution", nominal=False,
+    caption=("Salariés déclarés à la CNSS, régime des salariés non agricoles, selon leur "
+             "salaire mensuel déclaré exprimé en SMIG : moins de 1 SMIG, de 1 à 1,5 SMIG, plus "
+             "de 1,5 SMIG, en % ; mesure annuelle, 2000-2018"),
+    note_lecture=(
+        "Chaque barre répartit les salariés déclarés au titre de l'année ; les nombres sont "
+        "des pourcentages arrondis à l'unité. La mesure annuelle compte aussi les salariés "
+        "déclarés une partie de l'année seulement : la bande du bas ne mesure pas la part des "
+        "salariés payés moins que le SMIG. Le losange donne, pour 2018, l'autre mesure de "
+        "l'annuaire, qui porte sur les salariés déclarés à chaque trimestre : au premier "
+        "trimestre, 9,5 % sont sous 1 SMIG, contre 24,0 % sur l'année. Les quatre trimestres "
+        "de 2018 sont à l'onglet « Données »."),
+)
+```
+
+### Deux enquêtes de l'INS auprès des entreprises, 2007-2022 {#sec-mt-sp-enquetes}
+
+Deux enquêtes de l'INS interrogent les entreprises sur les salaires qu'elles versent ; leurs champs diffèrent de celui de la CNSS, et l'un de l'autre (@tbl-mt-sp-enquetes).
+
+- **Dans les micro-entreprises** — moins de six salariés, sans comptabilité —, 54,5 % des salariés permanents ont un salaire inférieur au SMIG en 2007, 49,9 % en 2012 et 32,3 % en 2016 ; ces parts ne s'entendent pas à durée du travail égale.
+- **Dans les entreprises de six salariés et plus, publiques comprises**, le salaire de base moyen des permanents, hors primes et heures supplémentaires, vaut 178 % du SMIG en 2012, 188 % en 2014 et 201 % en 2022.
+
+```{python}
+#| echo: false
+#| output: asis
+print(mt.tableau_enquetes())
+print("\n: Enquêtes de l'INS auprès des entreprises : salariés dont le salaire est inférieur au "
+      "SMIG dans les micro-entreprises, 2007, 2012 et 2016 ; salaire de base moyen des permanents dans "
+      "les entreprises de six salariés et plus, 2012, 2014 et 2022 {#tbl-mt-sp-enquetes}\n")
+```
+
+Le SMIG est celui que l'INS retient dans chaque rapport, sans préciser son régime horaire ; l'enquête « Emploi et salaires » ne précise ni la périodicité du salaire de base ni la pondération de sa moyenne.
+
+<!-- TODO (documentaliste) : enquêtes sur les micro-entreprises de 1997, 2002 et 2022 (rapports non
+obtenus ; part sous le SMIG de 2002 absente des trois rapports lus) ; quartiles de l'enquête
+« Emploi et salaires » (à lire à l'image) ; enquête CRES-BIT sur la structure des salaires, avril
+2011 (distribution individuelle, salaires nets, une année ; hors de cette section). -->

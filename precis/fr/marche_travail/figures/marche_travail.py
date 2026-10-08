@@ -555,3 +555,472 @@ def table_dotations_emploi():
     colonnes[_lab("c_ed_lignes")] = [l["edition_lignes"] for l in r]
     colonnes[_lab("c_ed_total")] = [l["edition_total"] for l in r]
     return pd.DataFrame(colonnes)
+
+
+# ---------------------------------------------------------------- salaires versés dans le privé
+#
+# Trois figures de la section « Les salaires versés dans le secteur privé » du chapitre du
+# salaire minimum. Séries snapshotées depuis l'entrepôt `tunisia-data` :
+#
+#   - `cnss-salaire-moyen-declare-smig` : salaire moyen déclaré à la CNSS (régime des salariés
+#     non agricoles), 1970-2018, une ligne par année ET par édition de l'annuaire, livrée par
+#     segments. AUCUN RACCORD : chaque segment est tracé par son propre appel, et les années
+#     2002-2006, imprimées par les deux éditions, sont tracées deux fois ;
+#   - `cnss-pyramide-smig-2000-2018` : salariés déclarés par classe de salaire en SMIG ;
+#   - `ins-salaires-prive-annuel` : taux d'évolution du salaire du privé non agricole (INS),
+#     chaîné sur les quatre trimestres de l'année ;
+#   - `ins-micro-entreprises-salaries-smig`, `ins-ees-salaire-base-permanents-smig` : deux
+#     enquêtes de l'INS, données en TABLEAU, jamais superposées aux séries de la CNSS.
+#
+# Le SMIG est celui du chapitre (`marche-travail-smig-smag`, moyenne annuelle du régime de
+# 48 heures) ; `_salaire_declare` contrôle qu'il coïncide avec la colonne de la série de la CNSS.
+
+SERIE_SALAIRE = "cnss-salaire-moyen-declare-smig"
+SERIE_PYRAMIDE = "cnss-pyramide-smig-2000-2018"
+SERIE_INS_TAUX = "ins-salaires-prive-annuel"
+SERIE_MICRO = "ins-micro-entreprises-salaries-smig"
+SERIE_EES = "ins-ees-salaire-base-permanents-smig"
+
+# Salariés déclarés les quatre trimestres de 2013 et leur masse salariale : annuaire
+# statistique 2013 de la CNSS, page 36 du fichier PDF (colonne « 4 trimestres » du tableau
+# selon le nombre de trimestres déclarés). Seule année où ce quotient se calcule ; il n'est
+# pas dans la série de l'entrepôt.
+QUATRE_TRIMESTRES_2013 = {"annee": 2013, "salaries": 800_558, "masse": 8_834_648_773}
+# Dernière année échue du SMIG en moyenne annuelle (les montants de 2026 à 2028 sont fixés
+# d'avance) et première année de l'indice de la figure des évolutions.
+ANNEE_BASE_INDICE, FIN_INDICES = 2001, 2025
+JAUNE, BLEU_CLAIR = "#d4a72c", "#6baed6"
+
+# Les annuaires dont viennent les valeurs tracées, à la place de la clé générique du catalogue.
+figtools.register_provenance(SERIE_SALAIRE, **{
+    **figtools.meta(SERIE_SALAIRE),
+    "sources": ["cnss-annuaire-2006", "cnss-annuaire-2018", "cnss-annuaire-2013",
+                "decret61-145", "decret74-63", "decret81-437", "decret92-1299"],
+    "titre_ar": ("الصندوق الوطني للضمان الاجتماعي، الأجراء في القطاع غير الفلاحي: معدّل الأجر "
+                 "المصرّح به ونسبته إلى الأجر الأدنى المضمون لنظام 48 ساعة، 1970-2018، حسب "
+                 "المقاطع"),
+    "unite_ar": "دينار جارٍ (كتلة الأجور؛ الأجر في السنة وفي الشهر)، أشخاص، نسبة",
+    "perimetre_ar": ("نظام الأجراء في القطاع غير الفلاحي؛ سطر لكلّ سنة ولكلّ طبعة من الدليل "
+                     "الإحصائي (طبعة 2006: 1970-1999 و2002-2006؛ طبعة 2018: 2000-2018)؛ معدّل "
+                     "الأجر السنوي المصرّح به = كتلة الأجور المصرّح بها ÷ الأجراء المصرّح بهم؛ "
+                     "الأجر الشهري = ÷ 12"),
+    "caveats_ar": ("سلسلة محسوبة تُقرأ حسب المقاطع، دون وصل ولا تصحيح. طبعتان للسنوات "
+                   "2002-2006 بقيم مختلفة، وكلتاهما محفوظة. انقطاعات: 1974، إدماج منحة غلاء "
+                   "المعيشة في الأجر الأدنى؛ 1981، المنحة التكميلية الوقتية تدخل الأجر الأدنى "
+                   "وتبقى خارج قاعدة الاشتراكات؛ 1988، الدليل يدرجها في الأجور المصرّح بها؛ "
+                   "2003، سيارات الأجرة واللواج. المقام يشمل كلّ أجير صُرّح به مرّة واحدة على "
+                   "الأقلّ في السنة، فالأجر الشهري والنسبة مشدودان إلى الأسفل. تتوقّف السلسلة "
+                   "سنة 2018."),
+})
+figtools.register_provenance(SERIE_PYRAMIDE, **{
+    **figtools.meta(SERIE_PYRAMIDE),
+    "sources": ["cnss-annuaire-2013", "cnss-annuaire-2018"],
+    "titre_ar": ("الصندوق الوطني للضمان الاجتماعي: أجراء القطاع غير الفلاحي حسب شريحة الأجر "
+                 "الشهري المصرّح به بحساب الأجر الأدنى المضمون، 2000-2018"),
+    "unite_ar": "أجراء مصرّح بهم؛ % من المجموع المطبوع (محسوبة)",
+    "perimetre_ar": ("نظام الأجراء في القطاع غير الفلاحي؛ ثلاث مجموعات محسوبة (أقلّ من مرّة "
+                     "واحدة الأجر الأدنى؛ من 1 إلى 1,5؛ أكثر من 1,5)؛ طبعة 2013 للسنوات "
+                     "2000-2004 وطبعة 2018 بعدها؛ قيس سنوي، وقيس حسب الثلاثي لسنة 2018"),
+    "caveats_ar": ("قيسان لا يُخلطان. السنوي: كلّ الأجراء المصرّح بهم بعنوان السنة، والشريحة "
+                   "الدنيا فيه منتفخة بالسنوات غير الكاملة، فلا يقيس أجراء يتقاضون أقلّ من "
+                   "الأجر الأدنى (24,0 % سنة 2018). الثلاثي: الأجراء المصرّح بهم في كلّ ثلاثي من "
+                   "2018 (9,5 % في الثلاثي الأول). لا يبيّن المصدر الأجر الأدنى المرجعي ولا "
+                   "طريقة حساب الأجر الشهري."),
+})
+
+_L.update({
+    "y_indice": {"fr": f"Indice, base 100 en {ANNEE_BASE_INDICE}",
+                 "ar": f"رقم قياسي، أساس 100 سنة {ANNEE_BASE_INDICE}"},
+    "y_rapport_smig": {"fr": "Salaire moyen déclaré, en SMIG de 48 heures",
+                       "ar": "معدّل الأجر المصرّح به، بعدد مرّات الأجر الأدنى (48 ساعة)"},
+    "y_part": {"fr": "% des salariés déclarés", "ar": "% من الأجراء المصرّح بهم"},
+    "vue_rapport": {"fr": "Rapport au SMIG", "ar": "النسبة إلى الأجر الأدنى المضمون"},
+    "sd_2006": {"fr": "Salaire moyen déclaré, annuaire 2006 (1970-1999 et 2002-2006)",
+                "ar": "معدّل الأجر المصرّح به، دليل 2006 (1970-1999 و2002-2006)"},
+    "sd_2018": {"fr": "Salaire moyen déclaré, annuaire 2018 (2000-2018)",
+                "ar": "معدّل الأجر المصرّح به، دليل 2018 (2000-2018)"},
+    "sd_smig": {"fr": "SMIG, régime de 48 heures, moyenne annuelle",
+                "ar": "الأجر الأدنى المضمون، نظام 48 ساعة، المعدّل السنوي"},
+    "sd_4t": {"fr": "Salariés déclarés les quatre trimestres, 2013",
+              "ar": "الأجراء المصرّح بهم في الثلاثيات الأربع، 2013"},
+    "rs_1974": {"fr": "1974 : indemnité\nde cherté de vie\ndans le SMIG",
+                "ar": "1974: منحة غلاء\nالمعيشة ضمن\nالأجر الأدنى"},
+    "rs_1981": {"fr": "1981 : indemnité\ncomplémentaire\ndans le SMIG,\nhors assiette",
+                "ar": "1981: المنحة التكميلية\nفي الأجر الأدنى،\nخارج قاعدة\nالاشتراكات"},
+    "rs_1988": {"fr": "1988 : indemnité\ndans l'assiette", "ar": "1988: المنحة في\nقاعدة الاشتراكات"},
+    "rs_2003": {"fr": "2003 : taxis\net louages", "ar": "2003: سيارات\nالأجرة واللواج"},
+    "c_edition": {"fr": "annuaire de la CNSS", "ar": "دليل الصندوق"},
+    "c_segment": {"fr": "segment", "ar": "المقطع"},
+    "c_sd_annuel": {"fr": "salaire annuel moyen déclaré (D courants)",
+                    "ar": "معدّل الأجر السنوي المصرّح به (د جارية)"},
+    "c_sd_mensuel": {"fr": "salaire mensuel moyen déclaré (D courants)",
+                     "ar": "معدّل الأجر الشهري المصرّح به (د جارية)"},
+    "c_sd_reel": {"fr": f"salaire mensuel moyen déclaré (D de {ANNEE_BASE})",
+                  "ar": f"معدّل الأجر الشهري المصرّح به (د {ANNEE_BASE})"},
+    "c_sd_rapport": {"fr": "salaire moyen déclaré / SMIG 48 h",
+                     "ar": "معدّل الأجر المصرّح به / الأجر الأدنى 48 ساعة"},
+    "seg_4t": {"fr": "déclarés les quatre trimestres", "ar": "مصرّح بهم في الثلاثيات الأربع"},
+    "i_salaire": {"fr": "Salaire moyen du privé non agricole, panel de salariés permanents (INS)",
+                  "ar": "معدّل الأجر في القطاع الخاص غير الفلاحي، عيّنة قارّة من الأجراء (المعهد)"},
+    "i_prov": {"fr": "2025 : taux provisoire", "ar": "2025: نسبة وقتية"},
+    "i_smig": {"fr": "SMIG, régime de 48 heures, moyenne annuelle",
+               "ar": "الأجر الأدنى المضمون، نظام 48 ساعة، المعدّل السنوي"},
+    "i_prix": {"fr": "Prix à la consommation", "ar": "أسعار الاستهلاك"},
+    "c_i_taux": {"fr": "salaire du privé non agricole : taux chaîné de l'année (%)",
+                 "ar": "أجر القطاع الخاص غير الفلاحي: النسبة السنوية المتسلسلة (%)"},
+    "c_i_prov": {"fr": "taux provisoire", "ar": "نسبة وقتية"},
+    "c_i_salaire": {"fr": f"salaire du privé non agricole (indice, {ANNEE_BASE_INDICE} = 100)",
+                    "ar": f"أجر القطاع الخاص غير الفلاحي (رقم قياسي، {ANNEE_BASE_INDICE} = 100)"},
+    "c_i_smig": {"fr": f"SMIG 48 h, moyenne annuelle (indice, {ANNEE_BASE_INDICE} = 100)",
+                 "ar": f"الأجر الأدنى 48 ساعة، المعدّل السنوي (رقم قياسي، {ANNEE_BASE_INDICE} = 100)"},
+    "c_i_prix": {"fr": f"prix à la consommation (indice, {ANNEE_BASE_INDICE} = 100)",
+                 "ar": f"أسعار الاستهلاك (رقم قياسي، {ANNEE_BASE_INDICE} = 100)"},
+    "oui": {"fr": "oui", "ar": "نعم"},
+    "p_inf1": {"fr": "Moins de 1 SMIG", "ar": "أقلّ من مرّة واحدة الأجر الأدنى"},
+    "p_1_15": {"fr": "De 1 à 1,5 SMIG", "ar": "من 1 إلى 1,5 مرّة الأجر الأدنى"},
+    "p_sup15": {"fr": "Plus de 1,5 SMIG", "ar": "أكثر من 1,5 مرّة الأجر الأدنى"},
+    "p_t1": {"fr": "Salariés déclarés au\npremier trimestre 2018 :\n{v} % sous 1 SMIG",
+             "ar": "الأجراء المصرّح بهم في\nالثلاثي الأول 2018:\n{v} % دون الأجر الأدنى"},
+    "c_mesure": {"fr": "mesure", "ar": "القيس"},
+    "m_annuelle": {"fr": "annuelle", "ar": "سنوي"},
+    "m_trim": {"fr": "trimestre {t} de 2018", "ar": "الثلاثي {t} من 2018"},
+    "c_p_total": {"fr": "salariés déclarés", "ar": "الأجراء المصرّح بهم"},
+    "c_p_inf1": {"fr": "moins de 1 SMIG (%)", "ar": "أقلّ من 1 (%)"},
+    "c_p_1_15": {"fr": "de 1 à 1,5 SMIG (%)", "ar": "من 1 إلى 1,5 (%)"},
+    "c_p_sup15": {"fr": "plus de 1,5 SMIG (%)", "ar": "أكثر من 1,5 (%)"},
+    # Tableau des enquêtes de l'INS.
+    "t_enquete": {"fr": "Enquête de l'INS et champ", "ar": "مسح المعهد الوطني للإحصاء ومجاله"},
+    "t_annee": {"fr": "Année", "ar": "السنة"},
+    "t_part": {"fr": "Salariés dont le salaire est inférieur au SMIG",
+               "ar": "أجراء يقلّ أجرهم عن الأجر الأدنى"},
+    "t_moitie": {"fr": "dont inférieur à la moitié du SMIG",
+                 "ar": "منهم من يقلّ أجره عن نصف الأجر الأدنى"},
+    "t_base": {"fr": "Salaire de base moyen des permanents (dinars)",
+               "ar": "معدّل الأجر الأساسي للقارّين (دينار)"},
+    "t_base_pct": {"fr": "en % du SMIG", "ar": "بالنسبة المائوية من الأجر الأدنى"},
+    "t_smig": {"fr": "SMIG retenu par l'INS (dinars)", "ar": "الأجر الأدنى الذي اعتمده المعهد (دينار)"},
+    "t_reponse": {"fr": "Réponses à l'enquête", "ar": "الإجابات عن المسح"},
+    "t_micro": {"fr": ("Micro-entreprises : entreprises non agricoles de moins de six salariés, "
+                       "sans comptabilité ; salariés permanents"),
+                "ar": ("المؤسسات الصغرى: مؤسسات غير فلاحية تشغّل أقلّ من ستة أجراء ولا تمسك "
+                       "محاسبة؛ الأجراء القارّون")},
+    "t_micro_2016": {"fr": " ; chiffre d'affaires inférieur à un million de dinars",
+                     "ar": "؛ رقم معاملات دون مليون دينار"},
+    "t_ees": {"fr": ("Emploi et salaires : entreprises publiques et entreprises privées de six "
+                     "salariés et plus ; salariés permanents"),
+              "ar": ("التشغيل والأجور: المؤسسات العمومية والمؤسسات الخاصة التي تشغّل ستة أجراء "
+                     "فأكثر؛ الأجراء القارّون")},
+    "t_rep_micro": {"fr": "{n} entreprises sans comptabilité", "ar": "{n} مؤسسة لا تمسك محاسبة"},
+    "t_rep_ees": {"fr": "taux de réponse de {n}", "ar": "نسبة إجابة {n}"},
+})
+
+
+def _fr(v: float, d: int = 1) -> str:
+    """Nombre à la française : virgule décimale, espace insécable des milliers."""
+    return f"{v:,.{d}f}".replace(",", " ").replace(".", ",")
+
+
+def _ft_lignes(texte: str) -> str:
+    return "\n".join(figtools.fig_text(x) for x in texte.split("\n"))
+
+
+def _salaire_declare():
+    """Une ligne par année et par édition : niveaux courants, constants, et rapport au SMIG."""
+    d, smig, ipc = figtools.series(SERIE_SALAIRE), _serie(), _ipc()
+    lignes = []
+    for r in d.itertuples():
+        annee = int(r.annee)
+        s = _moyenne_annuelle(smig, "smig_48h_mensuel", annee)
+        # Le SMIG du chapitre et celui de la série de la CNSS sont une même grandeur.
+        assert abs(s - r.smig_48h_mensuel_moyen_annuel_D) < 0.001, annee
+        coef = ipc[ANNEE_BASE] / ipc[annee]
+        lignes.append({
+            "annee": annee, "edition": 2006 if "2006" in r.edition else 2018,
+            "segment": r.segment.split(" (")[0],
+            "annuel": float(r.salaire_annuel_moyen_declare_D),
+            "mensuel": float(r.salaire_mensuel_moyen_declare_D), "smig": s,
+            "mensuel_reel": float(r.salaire_mensuel_moyen_declare_D) * coef,
+            "smig_reel": s * coef, "rapport": float(r.rapport_salaire_moyen_smig)})
+    return lignes
+
+
+def _quatre_trimestres():
+    """Le salaire moyen des salariés déclarés les quatre trimestres de 2013, mêmes grandeurs."""
+    q = QUATRE_TRIMESTRES_2013
+    annee, ipc = q["annee"], _ipc()
+    s = _moyenne_annuelle(_serie(), "smig_48h_mensuel", annee)
+    annuel = q["masse"] / q["salaries"]
+    coef = ipc[ANNEE_BASE] / ipc[annee]
+    return {"annee": annee, "edition": 2013, "segment": _lab("seg_4t"), "annuel": annuel,
+            "mensuel": annuel / 12, "smig": s, "mensuel_reel": annuel / 12 * coef,
+            "smig_reel": s * coef, "rapport": annuel / (12 * s)}
+
+
+def _fig_salaire_declare(rapport: bool):
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    r, q = _salaire_declare(), _quatre_trimestres()
+    cle = "rapport" if rapport else "mensuel_reel"
+    fig, ax = plt.subplots(figsize=(10, 5.8))
+    if not rapport:
+        smig = {l["annee"]: l["smig_reel"] for l in r}
+        ax.plot(sorted(smig), [smig[a] for a in sorted(smig)], color=GRIS, lw=1.6,
+                label=ft(_lab("sd_smig")))
+    # Un appel par segment : aucun trait ne relie deux segments.
+    deja = set()
+    for segment in dict.fromkeys((l["edition"], l["segment"]) for l in r):
+        edition = segment[0]
+        pts = [(l["annee"], l[cle]) for l in r if (l["edition"], l["segment"]) == segment]
+        style = (dict(color=BLEU, marker="o", ms=3.2) if edition == 2006
+                 else dict(color=ORANGE, marker="s", ms=3.2))
+        ax.plot([a for a, _ in pts], [v for _, v in pts], lw=1.8,
+                label=None if edition in deja else ft(_lab(f"sd_{edition}")), **style)
+        deja.add(edition)
+    ax.plot([q["annee"]], [q[cle]], ls="none", marker="D", ms=6, mfc="white", mec=VIOLET,
+            mew=1.6, label=ft(_lab("sd_4t")))
+    for annee, cle_r, decale in ((1974, "rs_1974", 0), (1981, "rs_1981", 0), (1988, "rs_1988", 0),
+                                 (2003, "rs_2003", 0)):
+        figtools.marque_rupture(ax, annee, "\n" * decale + _ft_lignes(_lab(cle_r)))
+    if rapport:
+        ax.axhline(1, color=GRIS, lw=0.8)
+        ax.set_ylim(0, 3.6)
+        ax.set_ylabel(ft(_lab("y_rapport_smig")))
+    else:
+        ax.set_ylim(0, None)
+        ax.set_ylabel(ft(_lab("y_reel")))
+    ax.set_xlim(1968.5, 2019.5)
+    ax.set_xticks(range(1970, 2019, 4))
+    ax.set_xlabel(ft(_lab("x_annee")))
+    ax.grid(True, alpha=0.3)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.12), fontsize=8, frameon=False, ncol=2)
+    fig.tight_layout()
+    return fig
+
+
+def vues_salaire_declare():
+    return [(_lab("vue_constants"), _fig_salaire_declare(False)),
+            (_lab("vue_rapport"), _fig_salaire_declare(True))]
+
+
+def table_salaire_declare():
+    import pandas as pd
+    r = _salaire_declare() + [_quatre_trimestres()]
+    return pd.DataFrame({
+        _lab("c_annee"): [l["annee"] for l in r],
+        _lab("c_edition"): [l["edition"] for l in r],
+        _lab("c_segment"): [l["segment"] for l in r],
+        _lab("c_sd_annuel"): [round(l["annuel"]) for l in r],
+        _lab("c_sd_mensuel"): [round(l["mensuel"], 3) for l in r],
+        _lab("c_48_moy"): [round(l["smig"], 3) for l in r],
+        _lab("c_sd_reel"): [round(l["mensuel_reel"], 1) for l in r],
+        _lab("c_48_reel"): [round(l["smig_reel"], 1) for l in r],
+        _lab("c_sd_rapport"): [round(l["rapport"], 2) for l in r],
+    })
+
+
+def _indices():
+    """Indices base 100 en 2001 : salaire du privé (taux chaîné de l'INS), SMIG, prix."""
+    taux = {int(l.annee): (float(l.taux_chaine), str(l.provisoire) == "oui")
+            for l in figtools.series(SERIE_INS_TAUX).itertuples()}
+    smig, ipc = _serie(), _ipc()
+    lignes, niveau = [], 100.0
+    s0 = _moyenne_annuelle(smig, "smig_48h_mensuel", ANNEE_BASE_INDICE)
+    for annee in range(ANNEE_BASE_INDICE, max(max(taux), FIN_INDICES) + 1):
+        if annee > ANNEE_BASE_INDICE and annee in taux:
+            niveau *= 1 + taux[annee][0] / 100
+        s = _moyenne_annuelle(smig, "smig_48h_mensuel", annee) if annee <= FIN_INDICES else None
+        lignes.append({
+            "annee": annee,
+            "taux": taux[annee][0] if annee in taux else None,
+            "provisoire": annee in taux and taux[annee][1],
+            "salaire": niveau if annee in taux else None,
+            "smig": None if s is None else 100 * s / s0,
+            "prix": 100 * ipc[annee] / ipc[ANNEE_BASE_INDICE] if annee in ipc else None})
+    return lignes
+
+
+def fig_indices():
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    r = _indices()
+    fig, ax = plt.subplots(figsize=(10, 5.6))
+    for cle, lib, style in (("salaire", "i_salaire", dict(color=BLEU, lw=2, marker="o", ms=3)),
+                            ("smig", "i_smig", dict(color=ORANGE, lw=1.8, marker="s", ms=3)),
+                            ("prix", "i_prix", dict(color=GRIS, lw=1.6, ls="--"))):
+        pts = [(l["annee"], l[cle]) for l in r if l[cle] is not None]
+        ax.plot([a for a, _ in pts], [v for _, v in pts], label=ft(_lab(lib)), **style)
+        ax.annotate(_fr(pts[-1][1], 0), xy=pts[-1], xytext=(6, 0), textcoords="offset points",
+                    va="center", fontsize=8, color=style["color"])
+    prov = [(l["annee"], l["salaire"]) for l in r if l["provisoire"]]
+    if prov:
+        ax.plot([a for a, _ in prov], [v for _, v in prov], ls="none", marker="o", ms=7,
+                mfc="white", mec=BLEU, mew=1.6, label=ft(_lab("i_prov")))
+    ax.axhline(100, color=GRIS, lw=0.8)
+    ax.set_xlim(ANNEE_BASE_INDICE - 0.5, r[-1]["annee"] + 1.6)
+    ax.set_xticks(range(ANNEE_BASE_INDICE, r[-1]["annee"] + 1, 3))
+    ax.set_xlabel(ft(_lab("x_annee")))
+    ax.set_ylabel(ft(_lab("y_indice")))
+    ax.grid(True, alpha=0.3)
+    ax.legend(loc="upper left", fontsize=8, frameon=False)
+    fig.tight_layout()
+    return fig
+
+
+def vues_indices():
+    return fig_indices()
+
+
+def table_indices():
+    import pandas as pd
+    r = _indices()
+
+    def arrondi(v):
+        return None if v is None else round(v, 1)
+    return pd.DataFrame({
+        _lab("c_annee"): [l["annee"] for l in r],
+        _lab("c_i_taux"): [l["taux"] for l in r],
+        _lab("c_i_prov"): [_lab("oui") if l["provisoire"] else "" for l in r],
+        _lab("c_i_salaire"): [arrondi(l["salaire"]) for l in r],
+        _lab("c_i_smig"): [arrondi(l["smig"]) for l in r],
+        _lab("c_i_prix"): [arrondi(l["prix"]) for l in r],
+    })
+
+
+_TRANCHES = (("<1", "inf1"), ("1-1.5", "1_15"), (">1.5", "sup15"))
+
+
+def _pyramide():
+    """Parts des trois regroupements : mesure annuelle 2000-2018, puis trimestres de 2018."""
+    d = figtools.series(SERIE_PYRAMIDE)
+    d = d[d["niveau"] == "regroupement (calculé)"]
+    lignes = []
+    annuel = d[(d["mesure"] == "annuelle") & (d["serie_2000_2018"] == "oui")]
+    trim = d[d["mesure"] == "trimestre civil"]
+    for bloc, cles in ((annuel, ["annee"]), (trim, ["annee", "trimestre"])):
+        for cle, g in bloc.groupby(cles, sort=True):
+            parts = {t: float(g.loc[g["tranche_salaire_mensuel_en_smig"] == t, "part_pct"].iloc[0])
+                     for t, _ in _TRANCHES}
+            assert abs(sum(parts.values()) - 100) < 0.01, cle
+            lignes.append({"annee": int(cle[0]),
+                           "trimestre": int(cle[1]) if len(cle) > 1 else None,
+                           "total": int(g["total_imprime"].iloc[0]),
+                           **{nom: parts[t] for t, nom in _TRANCHES}})
+    return lignes
+
+
+def fig_bas_distribution():
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    r = _pyramide()
+    an = [l for l in r if l["trimestre"] is None]
+    t1 = next(l for l in r if l["trimestre"] == 1)
+    fig, ax = plt.subplots(figsize=(10, 5.6))
+    x = [l["annee"] for l in an]
+    bas = [0.0] * len(an)
+    for nom, lib, couleur, encre in (("inf1", "p_inf1", ORANGE, "white"),
+                                     ("1_15", "p_1_15", JAUNE, "black"),
+                                     ("sup15", "p_sup15", BLEU_CLAIR, "black")):
+        y = [l[nom] for l in an]
+        ax.bar(x, y, bottom=bas, width=0.8, color=couleur, label=ft(_lab(lib)))
+        for xi, yi, bi in zip(x, y, bas):
+            # En haut de la bande : le bas de la première reçoit le repère du trimestre.
+            ax.text(xi, bi + yi - 3, _fr(yi, 0), ha="center", va="center", fontsize=7,
+                    color=encre)
+        bas = [b + v for b, v in zip(bas, y)]
+    # L'autre mesure de la même source, une seule année : marquée, non empilée.
+    ax.plot([t1["annee"]], [t1["inf1"]], ls="none", marker="D", ms=7, mfc="white", mec="black",
+            mew=1.4, zorder=5)
+    ax.annotate(_ft_lignes(_lab("p_t1").format(v=_fr(t1["inf1"]))),
+                xy=(t1["annee"], t1["inf1"]), xytext=(2019.2, t1["inf1"]), va="center",
+                ha="left", fontsize=8,
+                arrowprops={"arrowstyle": "-", "color": "black", "lw": 0.8})
+    ax.set_xlim(1999.3, 2023.2)
+    ax.set_ylim(0, 100)
+    ax.set_xticks(x)
+    ax.tick_params(axis="x", labelsize=8)
+    ax.set_xlabel(ft(_lab("x_annee")))
+    ax.set_ylabel(ft(_lab("y_part")))
+    ax.grid(True, axis="y", alpha=0.3)
+    ax.set_axisbelow(True)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.12), fontsize=8, frameon=False, ncol=3)
+    fig.tight_layout()
+    return fig
+
+
+def vues_bas_distribution():
+    return fig_bas_distribution()
+
+
+def table_bas_distribution():
+    import pandas as pd
+    r = _pyramide()
+    return pd.DataFrame({
+        _lab("c_annee"): [l["annee"] for l in r],
+        _lab("c_mesure"): [_lab("m_annuelle") if l["trimestre"] is None
+                           else _lab("m_trim").format(t=l["trimestre"]) for l in r],
+        _lab("c_p_total"): [l["total"] for l in r],
+        _lab("c_p_inf1"): [round(l["inf1"], 1) for l in r],
+        _lab("c_p_1_15"): [round(l["1_15"], 1) for l in r],
+        _lab("c_p_sup15"): [round(l["sup15"], 1) for l in r],
+    })
+
+
+# Entreprises répondantes sans comptabilité, sur lesquelles portent les résultats de l'enquête
+# auprès des micro-entreprises (rapport 2007, p. 8 ; 2012, p. 10 ; 2016, p. 9 du fichier PDF ;
+# citations dans la colonne `champ` de la série).
+_REPONDANTES_MICRO = {2007: 7144, 2012: 5572, 2016: 7179}
+_REPONSE_EES = {2012: "38,6 %", 2014: "46,6 %", 2022: "58 %"}
+
+
+def tableau_enquetes() -> str:
+    """Tableau Markdown des deux enquêtes de l'INS, une ligne par enquête et par année.
+
+    Valeurs lues dans les séries ; champ et taux de réponse contrôlés sur les citations que
+    les séries portent (colonnes `champ` et `taux_de_reponse`).
+    """
+    m, e = figtools.series(SERIE_MICRO), figtools.series(SERIE_EES)
+    m = m[(m["branche"] == "Ensemble") & (m["sexe"] == "ensemble") & (m["grandeur"] == "part")]
+    lignes = []
+
+    def pct(v):
+        return f"{_fr(float(v))} %"
+
+    for annee in (2007, 2012, 2016):
+        propre = m[m["source_id"] == f"ins-micro-entreprises-{annee}"]
+        part = propre[(propre["annee"] == annee) & (propre["tranche"] == "<1")]
+        # La moitié du SMIG : 2007 n'est imprimée que par le rapport 2012 (tableau 8).
+        moitie = m[(m["annee"] == annee) & (m["tranche"] == "<0.5")]
+        assert part["valeur"].nunique() == 1 and moitie["valeur"].nunique() == 1, annee
+        assert str(_REPONDANTES_MICRO[annee]) in propre["champ"].iloc[0], annee
+        page = int(part["page_pdf"].min())
+        du_rapport = moitie[moitie["source_id"] == f"ins-micro-entreprises-{annee}"]
+        if du_rapport.empty:
+            autre = moitie.iloc[0]
+            cite = (f"[@ins-micro-entreprises-{annee}, p. {page}; "
+                    f"@{autre['source_id']}, p. {int(autre['page_pdf'])}]")
+        else:
+            cite = (f"[@ins-micro-entreprises-{annee}, p. {page}, "
+                    f"{int(du_rapport['page_pdf'].min())}]")
+        champ = _lab("t_micro") + (_lab("t_micro_2016") if annee == 2016 else "")
+        lignes.append((f"{champ} {cite}", annee, pct(part["valeur"].iloc[0]),
+                       pct(moitie["valeur"].iloc[0]), "—", "—",
+                       int(part["smig_retenu_par_la_source_D"].iloc[0]),
+                       _lab("t_rep_micro").format(n=_fr(_REPONDANTES_MICRO[annee], 0))))
+    e = e[(e["section"] == "Total") & (e["categorie"] == "Total")]
+    for annee in (2012, 2014, 2022):
+        g = e[e["annee"] == annee]
+        niveau = g[~g["grandeur"].str.contains("pourcentage")]
+        rapport = g[g["grandeur"].str.contains("pourcentage")]
+        assert len(niveau) == 1 and len(rapport) == 1, annee
+        assert _REPONSE_EES[annee].replace(" ", "") in g["taux_de_reponse"].iloc[0], annee
+        cite = f"[@ins-ees-{annee}, p. {int(niveau['page_pdf'].iloc[0])}]"
+        lignes.append((f"{_lab('t_ees')} {cite}", annee, "—", "—",
+                       _fr(float(niveau["valeur"].iloc[0]), 0),
+                       f"{_fr(float(rapport['valeur'].iloc[0]), 0)} %",
+                       int(niveau["smig_retenu_par_la_source_D"].iloc[0]),
+                       _lab("t_rep_ees").format(n=_REPONSE_EES[annee])))
+    entetes = [_lab(c) for c in ("t_enquete", "t_annee", "t_part", "t_moitie", "t_base",
+                                 "t_base_pct", "t_smig", "t_reponse")]
+    sortie = ["| " + " | ".join(entetes) + " |", "|:---|---|---:|---:|---:|---:|---:|:---|"]
+    sortie += ["| " + " | ".join(str(c) for c in l) + " |" for l in lignes]
+    return "\n".join(sortie)

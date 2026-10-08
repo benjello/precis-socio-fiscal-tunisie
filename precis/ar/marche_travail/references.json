@@ -2620,6 +2620,311 @@
       "URL": "https://www.pist.tn/jort/2024/2024A/Ja1002024.pdf",
       "note": "citation-key: arrete-2024-08-16-cession-immeubles\nJORT n° 100 du 16 août 2024, p. 2260 (page contrôlée sur le fascicule, édition française ; notice de jort_cache.db recid 187131, numéro du texte vide). URL tirée du champ pdf_ar de la notice. Vise le décret gouvernemental n° 2019-542 « tel que modifié et complété » par le décret n° 2023-461 ; n'en modifie aucune disposition.",
       "title-short": "Arrêté conjoint du 16 août 2024"
+    },
+    {
+      "id": "ins-guide-salaires-prive-2026",
+      "type": "report",
+      "title": "Taux d'évolution trimestriel des salaires. Guide méthodologique pour le calcul du taux d'évolution trimestriel des salaires. Secteur privé non agricole",
+      "title-short": "INS, Guide méthodologique du taux d'évolution trimestriel des salaires (2026)",
+      "author": [
+        {
+          "literal": "Institut National de la Statistique (INS)"
+        }
+      ],
+      "publisher": "Institut National de la Statistique, Tunisie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            10
+          ]
+        ]
+      },
+      "URL": "https://www.ins.tn/sites/default/files-ftp3/files/2026-08/note_taux_trimestriel_salaire%20non%20agricole_FR.pdf",
+      "note": "citation-key: ins-guide-salaires-prive-2026\nNote méthodologique de 4 pages, en français. Titre lu en tête de la première page, sur trois lignes : « Taux d'évolution trimestriel des salaires », « Guide méthodologique pour le calcul du taux d'évolution trimestriel des salaires », « Secteur privé non agricole ». Aucune date n'est imprimée sur le document : la date retenue est celle des métadonnées du fichier (création le 10 août 2026), concordante avec le répertoire de publication (2026-08) et avec la mise à jour du 10/08/2026 affichée sur la page du portail https://www.ins.tn/statistiques/99. Décrit la source (registre de la Caisse nationale de sécurité sociale), le panel des « salariés permanents » déclarés sans interruption sur les cinq derniers trimestres, l'épuration des valeurs aberrantes et la périodicité de publication (Bulletin mensuel de la statistique). URL vérifiée le 22 septembre 2026 (PDF de 147 458 octets). Consulté le 22 septembre 2026."
+    },
+    {
+      "id": "ins-portail-2006-salaires-prive",
+      "type": "webpage",
+      "title": "Taux d’évolution trimestriel du salaire moyen dans le secteur privé non agricole",
+      "title-short": "INS, premier portail, salaires du secteur privé non agricole (2006)",
+      "author": [
+        {
+          "literal": "Institut National de la Statistique (INS)"
+        }
+      ],
+      "container-title": "Institut National de la Statistique - Tunisie (www.ins.nat.tn)",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            10,
+            6
+          ]
+        ]
+      },
+      "URL": "http://web.archive.org/web/20061129142926/http://www.ins.nat.tn/fr/donnee_conjoncturelle1.php?Code_indicateur=0402040",
+      "note": "citation-key: ins-portail-2006-salaires-prive\nPage française du premier portail de l'INS (www.ins.nat.tn), rubrique « Données Conjoncturelles », sous-rubrique « Données sur les Salaires », code indicateur 0402040. Intitulé lu sur la page : « Indicateur : Taux d’évolution trimestriel du salaire moyen dans le secteur privé non agricole » ; « Unité : Pourcentage ». Taux trimestriels de T1 2001 à T2 2006. Pied de page : « Date de mise à jour : 06-10-2006 » (date retenue) ; « Source : Institut National de la Statistique (INS) ». Dans la liste des données conjoncturelles du même portail (capture du 29 novembre 2006, http://web.archive.org/web/20061129142343/http://www.ins.nat.tn/fr/donnee_conjoncturelle.php), c'est la seule ligne sous « Salaires » : « Évolution trimestriel des salaires dans le secteur privé ». Page disparue : l'URL donnée est la capture des archives du web du 29 novembre 2006, seule capture de la page française (liste des captures : http://web.archive.org/cdx/search/cdx?url=ins.nat.tn&matchType=domain&filter=original:.*0402040.*) ; réponse HTTP 200 vérifiée le 22 septembre 2026. Page encodée en windows-1256. Copie : dépôt tunisia-data, data/raw/ins-bms/fr2006_0402040.html ; fiche : sources/ins-bms-salaires-prive.md. Consulté le 22 septembre 2026."
+    },
+    {
+      "id": "ins-portail-2009-salaires-prive",
+      "type": "webpage",
+      "title": "نسبة التطور الثلاثي للأجور في القطاع الخاص الغير الفلاحي",
+      "title-short": "INS, premier portail, salaires du secteur privé non agricole (2009)",
+      "author": [
+        {
+          "literal": "Institut National de la Statistique (INS)"
+        }
+      ],
+      "container-title": "المعهد الوطني للإحصاء - تونس (www.ins.nat.tn)",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            6,
+            30
+          ]
+        ]
+      },
+      "URL": "http://web.archive.org/web/20090713025533/http://www.ins.nat.tn:80/ar/donnee_conjoncturelle1.php?Code_indicateur=0402040",
+      "note": "citation-key: ins-portail-2009-salaires-prive\nPage en arabe du premier portail de l'INS (www.ins.nat.tn), code indicateur 0402040 ; aucune version française de cette mise à jour n'est archivée. Intitulé original lu sur la page : « المؤشر : نسبة التطور الثلاثي للأجور في القطاع الخاص الغير الفلاحي » ; « الوحدة : بالمائة ». Le titre français donné ici en est la traduction littérale ; la page française du même indicateur, en 2006, l'intitulait « Taux d’évolution trimestriel du salaire moyen dans le secteur privé non agricole » (voir ins-portail-2006-salaires-prive). Rubrique « معطيات ظرفية » (données conjoncturelles), sous-rubrique « معطيات عن الأجور » (données sur les salaires). Taux trimestriels de T1 2001 à T1 2009. Pied de page : « تاريخ آخر تحيين: 30-06-2009 » (date de dernière mise à jour, retenue) ; « المصدر : المعهد الوطني للإحصاء » (source : Institut national de la statistique). Page disparue : l'URL donnée est la capture des archives du web du 13 juillet 2009, seule capture de la page arabe (liste des captures : http://web.archive.org/cdx/search/cdx?url=ins.nat.tn&matchType=domain&filter=original:.*0402040.*) ; réponse HTTP 200 vérifiée le 22 septembre 2026. Page encodée en windows-1256. Copie : dépôt tunisia-data, data/raw/ins-bms/ar2009_0402040.html ; fiche : sources/ins-bms-salaires-prive.md. Consulté le 22 septembre 2026."
+    },
+    {
+      "id": "cnss-annuaire-2006",
+      "type": "report",
+      "title": "Annuaire statistique 2006",
+      "title-short": "CNSS, annuaire statistique 2006",
+      "author": [
+        {
+          "literal": "Caisse nationale de sécurité sociale"
+        }
+      ],
+      "publisher": "Caisse nationale de sécurité sociale",
+      "publisher-place": "Tunis",
+      "note": "citation-key: cnss-annuaire-2006\nالطبعة الفرنسية من الدليل الإحصائي للصندوق الوطني للضمان الاجتماعي، نسخة ممسوحة ضوئيًا من 201 صفحة؛ لا يُعرف لهذه الطبعة عنوان على الواب ولا تاريخ نشر. الصفحة المقروءة (الصفحة المطبوعة / صفحة الملف): نظام الأجراء في القطاع غير الفلاحي، المؤجرون والأجراء المصرّح بهم وكتلة الأجور ومعدّل الأجر، 1970-1999 و2002-2006، ص. 1 / ص. 14؛ وسطرا 2000 و2001 محجوبان بطيّة التجليد. البطاقة: مستودع tunisia-data، sources/cnss-annuaires.md."
+    },
+    {
+      "id": "cnss-annuaire-2013",
+      "type": "report",
+      "title": "Annuaire statistique 2013",
+      "title-short": "CNSS, annuaire statistique 2013",
+      "author": [
+        {
+          "literal": "Caisse nationale de sécurité sociale"
+        }
+      ],
+      "publisher": "Caisse nationale de sécurité sociale",
+      "publisher-place": "Tunis",
+      "URL": "https://www.cnss.tn/documents/10156/25253/annuaire2013fr.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            8
+          ]
+        ]
+      },
+      "note": "citation-key: cnss-annuaire-2013\nالطبعة الفرنسية من الدليل الإحصائي للصندوق الوطني للضمان الاجتماعي، 397 صفحة، سلاسل 2000-2013؛ تاريخ النشر غير ثابت. الصفحات المقروءة (صفحة ملف PDF): نظام الأجراء في القطاع غير الفلاحي، الأجراء المصرّح بهم وكتلة الأجور ومعدّل الأجر، ص. 26؛ الأجراء وكتلة الأجور حسب عدد الثلاثيات المصرّح بها سنة 2013، ص. 36؛ هرم الأجور المصرّح بها بحساب الأجر الأدنى المضمون، 2000-2013، ص. 37. تمّ التحقّق من الرابط في 8 أكتوبر 2026؛ نسخة أرشيف الواب: http://web.archive.org/web/20190716124119id_/http://www.cnss.tn:80/documents/10156/25253/annuaire2013fr.pdf. البطاقة: مستودع tunisia-data، sources/cnss-annuaires.md."
+    },
+    {
+      "id": "cnss-annuaire-2018",
+      "type": "report",
+      "title": "Annuaire statistique 2018",
+      "title-short": "CNSS, annuaire statistique 2018",
+      "author": [
+        {
+          "literal": "Caisse nationale de sécurité sociale"
+        }
+      ],
+      "publisher": "Caisse nationale de sécurité sociale",
+      "publisher-place": "Tunis",
+      "note": "citation-key: cnss-annuaire-2018\nالطبعة الفرنسية من الدليل الإحصائي للصندوق الوطني للضمان الاجتماعي، 387 صفحة، سلاسل 2000-2018؛ لا يُعرف لهذه الطبعة عنوان على الواب ولا تاريخ نشر. الصفحات المقروءة (صفحة ملف PDF): نظام الأجراء في القطاع غير الفلاحي، المؤجرون والأجراء المصرّح بهم وكتلة الأجور ومعدّل الأجر، 2000-2018، ص. 16؛ الأجراء حسب شريحة الأجر بحساب الأجر الأدنى المضمون في كلّ ثلاثي من سنة 2018، ص. 26؛ هرم الأجور المصرّح بها بحساب الأجر الأدنى المضمون، 2005-2018، ص. 27. وهي آخر طبعة معروفة من الدليل. البطاقة: مستودع tunisia-data، sources/cnss-annuaires.md."
+    },
+    {
+      "id": "ins-micro-entreprises-2007",
+      "type": "report",
+      "title": "Résultats de l'enquête auprès des micro-entreprises en 2007",
+      "title-short": "المعهد الوطني للإحصاء، مسح المؤسسات الصغرى 2007",
+      "author": [
+        {
+          "literal": "المعهد الوطني للإحصاء"
+        }
+      ],
+      "publisher": "المعهد الوطني للإحصاء، تونس",
+      "publisher-place": "تونس",
+      "URL": "https://www.ins.tn/sites/default/files/publication/pdf/micro_entreprise%202007.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            8
+          ]
+        ]
+      },
+      "note": "citation-key: ins-micro-entreprises-2007\nتقرير المسح الخماسي للمعهد الوطني للإحصاء لدى المؤسسات الصغرى، سنة 2007 (بالفرنسية). المجال: المؤسسات غير الفلاحية التي تشغّل أقلّ من ستة أجراء والمدرجة بالسجل الوطني للمؤسسات؛ وتخصّ النتائج المؤسسات المجيبة التي لا تمسك محاسبة وأجراءها القارّين. 124 صفحة؛ تاريخ النشر غير ثابت. الصفحات المقروءة (صفحة ملف PDF): المجال، ص. 7-8؛ نسبة الأجراء الذين يتقاضون أقلّ من الأجر الأدنى المضمون، ص. 10. تمّ التحقّق من الرابط في 8 أكتوبر 2026. البطاقة: مستودع tunisia-data، sources/ins-micro-entreprises.md."
+    },
+    {
+      "id": "ins-micro-entreprises-2012",
+      "type": "report",
+      "title": "Enquête sur les micro-entreprises en 2012",
+      "title-short": "المعهد الوطني للإحصاء، مسح المؤسسات الصغرى 2012",
+      "author": [
+        {
+          "literal": "المعهد الوطني للإحصاء"
+        }
+      ],
+      "publisher": "المعهد الوطني للإحصاء، تونس",
+      "publisher-place": "تونس",
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            12,
+            29
+          ]
+        ]
+      },
+      "URL": "https://www.ins.tn/sites/default/files-ftp3/files/publication/pdf/micro_entreprises%202012.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            8
+          ]
+        ]
+      },
+      "note": "citation-key: ins-micro-entreprises-2012\nتقرير المسح الخماسي للمعهد الوطني للإحصاء لدى المؤسسات الصغرى، سنة 2012 (بالفرنسية). المجال: المؤسسات غير الفلاحية التي تشغّل أقلّ من ستة أجراء والمدرجة بالسجل الوطني للمؤسسات؛ وتخصّ النتائج المؤسسات المجيبة التي لا تمسك محاسبة وأجراءها القارّين. 125 صفحة؛ التاريخ المعتمد هو تاريخ الوضع على الخطّ الذي يعرضه المعهد (29 ديسمبر 2014). الصفحات المقروءة (صفحة ملف PDF): المجال، ص. 9-10؛ نسبة الأجراء الذين يتقاضون أقلّ من الأجر الأدنى المضمون، ص. 11 و18 (الجدول 8) و34 و38-40. تمّ التحقّق من الرابط في 8 أكتوبر 2026. البطاقة: مستودع tunisia-data، sources/ins-micro-entreprises.md."
+    },
+    {
+      "id": "ins-micro-entreprises-2016",
+      "type": "report",
+      "title": "Le secteur des micro-entreprises en Tunisie 2016",
+      "title-short": "المعهد الوطني للإحصاء، مسح المؤسسات الصغرى 2016",
+      "author": [
+        {
+          "literal": "المعهد الوطني للإحصاء"
+        }
+      ],
+      "publisher": "المعهد الوطني للإحصاء، تونس",
+      "publisher-place": "تونس",
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            9,
+            18
+          ]
+        ]
+      },
+      "URL": "https://www.ins.tn/sites/default/files-ftp3/files/publication/pdf/micro-entreprises%202016.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            8
+          ]
+        ]
+      },
+      "note": "citation-key: ins-micro-entreprises-2016\nتقرير المسح الخماسي للمعهد الوطني للإحصاء لدى المؤسسات الصغرى، سنة 2016 (بالفرنسية). المجال: المؤسسات غير الفلاحية التي تشغّل أقلّ من ستة أجراء والمدرجة بالسجل الوطني للمؤسسات؛ وتخصّ النتائج المؤسسات المجيبة التي لا تمسك محاسبة وأجراءها القارّين؛ وفي 2016 يُضاف إلى المجال سقف لرقم المعاملات بمليون دينار. 175 صفحة؛ التاريخ المعتمد هو تاريخ الوضع على الخطّ الذي يعرضه المعهد (18 سبتمبر 2018). الصفحات المقروءة (صفحة ملف PDF): المجال، ص. 9-10؛ نسبة الأجراء الذين يتقاضون أقلّ من الأجر الأدنى المضمون، ص. 10 و17 (الجدول 8) و35 و39-41. تمّ التحقّق من الرابط في 8 أكتوبر 2026. البطاقة: مستودع tunisia-data، sources/ins-micro-entreprises.md."
+    },
+    {
+      "id": "ins-ees-2012",
+      "type": "report",
+      "title": "Enquête Emploi et Salaires auprès des Entreprises en 2012",
+      "title-short": "المعهد الوطني للإحصاء، مسح التشغيل والأجور لدى المؤسسات 2012",
+      "author": [
+        {
+          "literal": "المعهد الوطني للإحصاء"
+        }
+      ],
+      "publisher": "المعهد الوطني للإحصاء، تونس",
+      "publisher-place": "تونس",
+      "issued": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      },
+      "URL": "https://www.ins.tn/sites/default/files-ftp3/files/publication/pdf/enquete%20emploi%20salaire%202012.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            8
+          ]
+        ]
+      },
+      "note": "citation-key: ins-ees-2012\nتقرير من 42 صفحة (بالفرنسية). لا يحمل المستند تاريخًا مطبوعًا: السنة المعتمدة هي سنة إنشاء ملف PDF (2015). المجال: المؤسسات العمومية والمؤسسات الخاصة التي تشغّل ستة أجراء فأكثر، المسحوبة من السجل الوطني للمؤسسات؛ نسبة الإجابة 38,6 %. الصفحات المقروءة: معدّل الأجر الأساسي المدفوع للقارّين حسب قسم النشاط، بالدينار وبالنسبة المائوية من الأجر الأدنى المضمون، الجدولان 15 et 16، ص. 15. تمّ التحقّق من الرابط في 8 أكتوبر 2026. البطاقة: مستودع tunisia-data، sources/ins-emploi-salaires-entreprises.md."
+    },
+    {
+      "id": "ins-ees-2014",
+      "type": "report",
+      "title": "Enquête Emploi et Salaires auprès des Entreprises en 2014",
+      "title-short": "المعهد الوطني للإحصاء، مسح التشغيل والأجور لدى المؤسسات 2014",
+      "author": [
+        {
+          "literal": "المعهد الوطني للإحصاء"
+        }
+      ],
+      "publisher": "المعهد الوطني للإحصاء، تونس",
+      "publisher-place": "تونس",
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "URL": "https://www.ins.tn/sites/default/files-ftp3/files/publication/pdf/enque%CC%82te%20emploi%20salaires%202014.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            8
+          ]
+        ]
+      },
+      "note": "citation-key: ins-ees-2014\nتقرير من 44 صفحة (بالفرنسية). لا يحمل المستند تاريخًا مطبوعًا: السنة المعتمدة هي سنة إنشاء ملف PDF (2016). المجال: المؤسسات العمومية والمؤسسات الخاصة التي تشغّل ستة أجراء فأكثر، المسحوبة من السجل الوطني للمؤسسات؛ نسبة الإجابة 46,6 %. الصفحات المقروءة: معدّل الأجر الأساسي المدفوع للقارّين حسب قسم النشاط، بالدينار وبالنسبة المائوية من الأجر الأدنى المضمون، الجدولان 15 et 16، ص. 14. تمّ التحقّق من الرابط في 8 أكتوبر 2026. البطاقة: مستودع tunisia-data، sources/ins-emploi-salaires-entreprises.md."
+    },
+    {
+      "id": "ins-ees-2022",
+      "type": "report",
+      "title": "Enquête Emploi et Salaires auprès des Entreprises en 2022",
+      "title-short": "المعهد الوطني للإحصاء، مسح التشغيل والأجور لدى المؤسسات 2022",
+      "author": [
+        {
+          "literal": "المعهد الوطني للإحصاء"
+        }
+      ],
+      "publisher": "المعهد الوطني للإحصاء، تونس",
+      "publisher-place": "تونس",
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "URL": "https://www.ins.tn/sites/default/files-ftp3/files/publication/pdf/enqu%C3%AAte%20empl%20salair-2022_0.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            8
+          ]
+        ]
+      },
+      "note": "citation-key: ins-ees-2022\nتقرير من 37 صفحة (بالفرنسية). لا يحمل المستند تاريخًا مطبوعًا: السنة المعتمدة هي سنة إنشاء ملف PDF (2024). المجال: المؤسسات العمومية والمؤسسات الخاصة التي تشغّل ستة أجراء فأكثر، المسحوبة من السجل الوطني للمؤسسات؛ نسبة الإجابة 58 %. الصفحات المقروءة: معدّل الأجر الأساسي المدفوع للقارّين حسب قسم النشاط، بالدينار وبالنسبة المائوية من الأجر الأدنى المضمون، الجدولان 13 et 14، ص. 13. تمّ التحقّق من الرابط في 8 أكتوبر 2026. البطاقة: مستودع tunisia-data، sources/ins-emploi-salaires-entreprises.md."
     }
   ]
 }

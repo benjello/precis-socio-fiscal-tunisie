@@ -1284,14 +1284,35 @@ premier plan et 1 400 dans six blocs repliés, hors tableaux engendrés.
 - **Code du travail de 1966** : fascicules n° 20-22 de 1966 sans couche texte (OCR requis pour
   citer les art. 31-52 mot pour mot) ; rectificatif du n° 27/1966 non lu.
 - **Socle du SMAG avant 1974** : arrêté et décret du 30 avril 1956 (JORT n° 35/1956) non lus.
-- **Salaires effectifs du secteur privé** et part des salariés au SMIG : note documentaire
-  `docs/notes/marche-travail-salaires-effectifs-prive.md` (8 octobre 2026). Un niveau existe déjà
-  dans `tunisia-data` : salaire annuel moyen déclaré à la CNSS, 1970-2018 (deux annuaires, quatre
-  ruptures à ne pas chaîner : 1981, 1988, 2003, millésimes de 2000-2006) ; le rapport au SMIG se
-  trace sur cette période. Restent à faire : la série et sa fiche dans `tunisia-data`, la figure
-  et la section de `_longue_periode.qmd` ; à collecter : tout niveau après 2018, la part au SMIG
-  sur un champ propre (pyramide de la CNSS 2011-2018 et enquêtes de l'INS déjà téléchargées, non
-  extraites).
+- **Salaires effectifs du secteur privé** — section écrite le 8 octobre 2026
+  (`#sec-mt-salaires-prive`, dernière section de `_salaire_minimum.qmd`), d'après la note
+  `docs/notes/marche-travail-salaires-effectifs-prive.md`. Trois figures : salaire moyen déclaré à
+  la CNSS face au SMIG, 1970-2018, par segments (`#fig-mt-sp-salaire-declare`) ; indices du salaire
+  du panel de l'INS, du SMIG et des prix, 2001-2025 (`#fig-mt-sp-indices`) ; salariés déclarés par
+  classe de salaire en SMIG, 2000-2018 (`#fig-mt-sp-distribution`) ; un tableau des enquêtes de
+  l'INS (`#tbl-mt-sp-enquetes`). Séries snapshotées le 8 octobre 2026 :
+  `cnss-salaire-moyen-declare-smig`, `cnss-pyramide-smig-2000-2018`, `ins-salaires-prive-annuel`,
+  `ins-micro-entreprises-salaries-smig`, `ins-ees-salaire-base-permanents-smig`. Restent :
+  - **tout niveau après 2018** : aucun annuaire de la CNSS postérieur — à obtenir ;
+  - **salaire moyen des salariés déclarés toute l'année** : une seule année (2013), portée en
+    constante dans `figures/marche_travail.py` (annuaire 2013, PDF p. 36) — lisible dans
+    `tunisia-data` (annuaires 2013, 2016, 2018, couche texte), à verser en série ; les colonnes
+    n'ont pas la même définition d'une édition à l'autre (note, § 2.2) ;
+  - **lignes 2000 et 2001 de l'annuaire 2006** : masquées par le pli du scan — à relire sur
+    l'original ;
+  - **texte de 1988** qui fait entrer l'indemnité complémentaire provisoire dans l'assiette des
+    cotisations, sigle « MIT » de l'annuaire 2006, décret de 2003 sur les taxis et louages : non
+    lus, aucune recherche lancée (fiche `r-…` à ouvrir) ;
+  - **part au SMIG sur un champ propre, en série** : la mesure par trimestre n'existe que pour
+    2018 ; pyramide en dinars (annuaires 2013 et 2018) lisible, non extraite ;
+  - **enquêtes** : micro-entreprises 1997, 2002 et 2022 à obtenir ; quartiles de l'enquête
+    « Emploi et salaires » à lire à l'image ; enquête CRES-BIT de 2011 rangée dans `tunisia-data`,
+    non exploitée ;
+  - **bibliographie** : douze clés versées à la main dans `marche_travail/references.json` (FR et
+    AR), à remonter dans Zotero ; `cnss-annuaire-2006` et `cnss-annuaire-2018` sans URL (aucune
+    adresse d'origine établie) ;
+  - **glossaire** : « salaire déclaré », « salarié permanent » (deux sens : panel de l'INS,
+    enquête « Emploi et salaires »), « salaire de base », « micro-entreprise » sans entrée.
 - **Glossaire** : dix notions neuves en `provisoire` — termes arabes à confirmer sur le *Journal
   officiel* arabe (الأجر التعاقدي, الاتفاقية المشتركة الإطارية, المصادقة على الاتفاقية المشتركة,
   المنحة التكميلية الوقتية, الأجر الخام/الصافي, التشغيل غير المنظّم).
