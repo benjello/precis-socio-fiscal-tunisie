@@ -1184,8 +1184,14 @@ rapports de la Banque mondiale et évaluations, en blocs séparés.
 - **Code du travail de 1966** : fascicules n° 20-22 de 1966 sans couche texte (OCR requis pour
   citer les art. 31-52 mot pour mot) ; rectificatif du n° 27/1966 non lu.
 - **Socle du SMAG avant 1974** : arrêté et décret du 30 avril 1956 (JORT n° 35/1956) non lus.
-- **Salaires effectifs du secteur privé** et part des salariés au SMIG : aucune série réunie
-  (`tunisia-data`) ; TODO documentaliste dans `_longue_periode.qmd`.
+- **Salaires effectifs du secteur privé** et part des salariés au SMIG : note documentaire
+  `docs/notes/marche-travail-salaires-effectifs-prive.md` (8 octobre 2026). Un niveau existe déjà
+  dans `tunisia-data` : salaire annuel moyen déclaré à la CNSS, 1970-2018 (deux annuaires, quatre
+  ruptures à ne pas chaîner : 1981, 1988, 2003, millésimes de 2000-2006) ; le rapport au SMIG se
+  trace sur cette période. Restent à faire : la série et sa fiche dans `tunisia-data`, la figure
+  et la section de `_longue_periode.qmd` ; à collecter : tout niveau après 2018, la part au SMIG
+  sur un champ propre (pyramide de la CNSS 2011-2018 et enquêtes de l'INS déjà téléchargées, non
+  extraites).
 - **Glossaire** : dix notions neuves en `provisoire` — termes arabes à confirmer sur le *Journal
   officiel* arabe (الأجر التعاقدي, الاتفاقية المشتركة الإطارية, المصادقة على الاتفاقية المشتركة,
   المنحة التكميلية الوقتية, الأجر الخام/الصافي, التشغيل غير المنظّم).
