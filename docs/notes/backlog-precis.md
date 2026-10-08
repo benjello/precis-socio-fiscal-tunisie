@@ -754,6 +754,48 @@ liste qui suit le tableau, citations comprises. Restent :
 - **Chronologies à construire** : indemnité de magistrature (décrets identifiés au JORT) ;
   textes de rémunération des magistrats de l'ordre judiciaire, des forces de sécurité
   intérieure et des douanes, absents du livre.
+- **Présentation des trois chapitres courts — fait le 8 octobre 2026** (`_regime_statutaire_autonome`,
+  `_regime_conventionnel`, `_regime_marche_controle`) : vue d'ensemble en tête, trame du volume
+  conservée, section « Repères historiques » avec tableau des dates, registres repliés à colonne
+  « Portée » ; `.domicile-unique` sur `#sec-statutaire-champ`, `#sec-statutaire-remuneration` et
+  `#sec-augmentations-ep` seulement. Restent :
+  - **clés à créer (bibliographe)**, faute desquelles ces textes sont nommés sans ligne de
+    registre ni appel de citation : lois n° 70-46 et n° 2009-47 ; décrets n° 97-2133 et
+    n° 97-2134 ; modificatifs du décret n° 79-96 (n° 87-878 à n° 2010-2935) ; décrets n° 78-885
+    et n° 2014-12 (dirigeants) ; lois n° 67-51 et n° 2001-65 (banques) ; arrêté d'agrément de
+    1975 et avenant n° 5 de 2022 de la convention des banques ; décret n° 2019-1132
+    (magistrats) ;
+  - **décret n° 2026-65 (magistrats, 2026-2028)** : porté au registre de
+    `#sec-statutaire-remuneration` par son seul intitulé ; fascicule JORT n° 44 de 2026
+    **à lire** pour les montants ;
+  - **intitulé du décret n° 79-96** : le chapitre cite « grille indiciaire de la fonction
+    publique », l'entrée `decret-79-96` de `references.json` porte « grille des salaires
+    mensuels » ; JORT n° 5 de 1979 au corpus, **scan sans couche texte** : OCR ;
+  - **`index.qmd`** : la liste des corps du régime statutaire autonome (annonce des chapitres
+    et tableau des sous-périmètres) omet les agents des douanes, que le chapitre couvre ;
+  - **Banque mondiale, transferts aux entreprises publiques (8,9 % et 7,5 % du PIB)** : ni page,
+    ni base du PIB, ni méthode de l'évaluation au chapitre ; revue des dépenses publiques de
+    2020 à relire ;
+  - **sociétés d'assurance — fait le 8 octobre 2026** (`#sec-marche-controle-assurances`, note
+    `docs/notes/remunerations-convention-collective-assurances.md`) : champ, classification,
+    bas et haut de la grille de 1975 à 2021 face au SMIG, chaîne des quinze avenants, dix-sept
+    clés `cc-assurances-*` (FR et AR), fiche `r-cc-assurances-avenant-16`. Restent :
+    liste des assureurs à capital public (le rapport sur les entreprises publiques n'en nomme
+    aucun ; rapports du Comité général des assurances, de la FTUSA et des participations de
+    l'État **à obtenir** ; pas de fiche de recherche) ; grille du 1er juin 2014 (avenant n° 11),
+    annoncée et **non imprimée** — rectificatif à chercher dans les fascicules arabes de 2015,
+    **lisibles** ; grilles entières (28, pages identifiées, **lecture à l'image**) pour le
+    versement en paramètres ; valeurs à confirmer de 1989, 1990 et 1991 (éditions arabes au
+    corpus, non ouvertes) et hauts de 2018 et 2019 (calculés) ; protocole du 8 juin 1984,
+    probablement non publié ; dates de signature contradictoires au *Journal officiel*
+    (convention révisée : 10 novembre 1982 ou 13 avril 1983 ; avenants n° 1, 7 et 9) ;
+    « révision du 24 juillet 1997 » visée par cinq arrêtés (fiche `r-cc-assurances-revision-1997`
+    proposée par la note, non versée faute d'ancre au chapitre) ; édition de la loi de finances
+    pour 2022 du rapport sur les entreprises publiques sans clé ; intitulés arabes des
+    dix-sept entrées à relever ; montants en dinars constants ; articulation avec le décret
+    n° 2026-68 ;
+  - **marché contrôlé** : aucune rupture datée ; les dates de 1967, 1975, 1978, 2001, 2014
+    (décret n° 2014-12) et 2022 reposent sur des textes non versés à la bibliographie.
 - **Augmentations générales (5 octobre 2026)** : les tranches de l'indemnité de gestion et
   d'exécution de 1993 à 2013 sont lues et relevées (`augmentations/augmentations-ige.csv`,
   § des cycles du régime indiciaire) ; les décrets des entreprises publiques de 1991 à 2026
@@ -771,7 +813,8 @@ liste qui suit le tableau, citations comprises. Restent :
     entreprises publiques, communiqués conjoints de 1996 et 1999) ;
   - décrets des entreprises publiques entre 2013 et 2026 (fiche
     `r-augmentations-ep-2013-2025`) : plein texte 2014-2025 **lisible**, non parcouru ;
-  - magistrats (décrets n° 2019-1132 et 2026-65) : à porter au régime statutaire autonome ;
+  - magistrats : le décret n° 2026-65 est porté au régime statutaire autonome par son
+    intitulé (8 octobre 2026) ; le décret n° 2019-1132 reste à identifier et à verser ;
   - poids budgétaire par cycle : aucun texte ne le donne.
 - **Séries** : effectifs et masse salariale par régime ; dépenses de défense ; effectifs du
   secteur financier public. Substituer des sources tunisiennes officielles aux chiffres du
