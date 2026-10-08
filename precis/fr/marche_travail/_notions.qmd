@@ -1,16 +1,21 @@
 # Les notions {#sec-mt-notions}
 
-Ce chapitre définit les notions que les chapitres suivants mobilisent. Chacune est définie une fois, d'après le texte tunisien qui la fonde ou, à défaut, d'après le standard statistique international, et reçoit son entrée au glossaire.
+Ce chapitre définit les notions qui servent à décrire la formation des salaires du secteur privé : le salaire minimum légal et le salaire conventionnel ; la négociation collective et l'agrément des conventions ; l'emploi formel et l'emploi informel ; le salaire brut, le salaire net et le coût du travail ; l'indexation et la revalorisation. Chaque section donne d'abord la définition, d'après le code du travail ou, pour les notions statistiques, d'après les résolutions de la Conférence internationale des statisticiens du travail, puis ce qu'elle emporte pour les salaires.
 
 ## Salaire minimum légal et salaire conventionnel {#sec-mt-notions-minimum}
 
-Le code du travail distingue deux façons de fixer la rémunération : « soit par accord direct entre les parties, soit par voie de convention collective, dans le respect du salaire minimum garanti fixé par décret » [@loi96-62, art. 134 (nouveau)]. Le [salaire minimum garanti](#g-salaire-minimum-garanti) y est défini comme « le seuil minimum au dessous duquel il n'est pas possible de rémunérer un travailleur chargé d'accomplir des travaux ne nécessitant pas une qualification professionnelle » [@loi96-62, art. 134-2]. Il prend deux formes : le [salaire minimum interprofessionnel garanti](#g-smig) (SMIG), pour les secteurs non agricoles, fixé à l'heure et au mois pour deux régimes de durée du travail ; le [salaire minimum agricole garanti](#g-smag) (SMAG), fixé par journée de travail.
+Le [salaire minimum garanti](#g-salaire-minimum-garanti) est, selon le code du travail, « le seuil minimum au dessous duquel il n'est pas possible de rémunérer un travailleur chargé d'accomplir des travaux ne nécessitant pas une qualification professionnelle » [@loi96-62, art. 134-2]. Le [salaire conventionnel](#g-salaire-conventionnel) est celui que fixe, par catégorie professionnelle, une convention collective de branche ou ses avenants.
 
-Le [salaire conventionnel](#g-salaire-conventionnel) est celui que fixe, par catégorie professionnelle, une convention collective de branche ou ses avenants. Le décret n° 73-247 du 26 mai 1973 en fait l'étage supérieur d'un même édifice : les conventions collectives fixent les salaires, leurs accessoires et les classifications, sur la base d'un SMIG fixé par décret [@decret73-247, art. 1 et 2]. Le salaire minimum fixe donc le plancher de l'échelle, et la convention fixe l'échelle elle-même.
+Les deux notions répondent aux deux façons de fixer la rémunération que distingue le code du travail : « soit par accord direct entre les parties, soit par voie de convention collective, dans le respect du salaire minimum garanti fixé par décret » [@loi96-62, art. 134 (nouveau)].
+
+- **Le salaire minimum prend deux formes** : le [salaire minimum interprofessionnel garanti](#g-smig) (SMIG), pour les secteurs non agricoles, fixé à l'heure et au mois pour deux régimes de durée du travail ; le [salaire minimum agricole garanti](#g-smag) (SMAG), fixé par journée de travail.
+- **Le salaire conventionnel se fixe au-dessus du salaire minimum.** Depuis 1973, les conventions collectives fixent les salaires, leurs accessoires et les classifications, sur la base d'un SMIG fixé par décret [@decret73-247, art. 1 et 2]. Le salaire minimum fixe donc le plancher de l'échelle des salaires, et la convention fixe l'échelle elle-même.
 
 ## Négociation collective et agrément {#sec-mt-notions-negociation}
 
-La négociation collective produit des conventions collectives, conclues entre les organisations d'employeurs et de salariés. Le code du travail de 1966 en règle la portée : une convention [agréée](#g-agrement-convention-collective) par arrêté, après avis de la commission consultative des conventions collectives, s'impose à tous les employeurs et à tous les travailleurs de la branche, qu'ils l'aient signée ou non [@loi66-27, art. 37 et 38]. C'est par l'agrément qu'une convention négociée par quelques organisations devient la règle de toute une branche. La [convention collective cadre](#g-convention-collective-cadre) de 1973 est la base commune des conventions de branche ; les [conventions sectorielles](#g-convention-collective-sectorielle) en fixent les grilles (@sec-mt-conventions).
+La négociation collective est la discussion par laquelle les organisations d'employeurs et de salariés concluent des conventions collectives. L'[agrément](#g-agrement-convention-collective) est l'acte par lequel l'État rend une convention obligatoire : une convention agréée par arrêté, après avis de la commission consultative des conventions collectives, s'impose à tous les employeurs et à tous les travailleurs de la branche, qu'ils l'aient signée ou non [@loi66-27, art. 37 et 38]. C'est par l'agrément qu'une convention négociée par quelques organisations devient la règle de toute une branche.
+
+Les conventions sont de deux sortes : la [convention collective cadre](#g-convention-collective-cadre) de 1973 est la base commune des conventions de branche ; les [conventions sectorielles](#g-convention-collective-sectorielle) en fixent les grilles (@sec-mt-conventions).
 
 ## Emploi formel et emploi informel {#sec-mt-notions-informel}
 
@@ -20,14 +25,20 @@ Par cette définition même, le salarié dont l'emploi est informel n'a pas d'ac
 
 ## Salaire brut, salaire net, coût du travail {#sec-mt-notions-brut-net}
 
-Le code du travail définit la rémunération comme « ce qui est dû au travailleur en contrepartie du travail réalisé au profit de son employeur » : le salaire de base et ses accessoires, indemnités et avantages en espèces ou en nature, à l'exception des indemnités ayant le caractère de remboursement de frais [@loi96-62, art. 134-2]. Le bulletin de paie en donne trois montants : la rémunération brute, la nature et le montant des retenues opérées sur elle, et la rémunération nette effectivement perçue [@loi96-62, art. 143 (nouveau)].
+Trois montants décrivent un même salaire, selon qu'on le mesure avant les retenues, après elles, ou du côté de l'employeur.
 
 - Le [salaire brut](#g-salaire-brut) est la rémunération avant toute retenue. C'est la notion que retient la statistique internationale des gains : la rémunération totale avant les retenues de l'employeur au titre des impôts et des cotisations du salarié [@oit-cist12-1973-salaires, § 9].
 - Le [salaire net](#g-salaire-net) est ce qui reste au salarié après ces retenues : sa part des cotisations sociales et l'impôt sur le revenu retenu à la source.
 - Le [coût du travail](#g-cout-du-travail) est ce que l'emploi coûte à l'employeur : la rémunération, augmentée notamment de ses dépenses de sécurité sociale et des impôts assis sur l'emploi ou les salaires [@oit-cist11-1966-cout-travail, § 3].
 
+Le code du travail définit la rémunération comme « ce qui est dû au travailleur en contrepartie du travail réalisé au profit de son employeur » : le salaire de base et ses accessoires, indemnités et avantages en espèces ou en nature, à l'exception des indemnités ayant le caractère de remboursement de frais [@loi96-62, art. 134-2]. Le bulletin de paie en donne trois montants : la rémunération brute, la nature et le montant des retenues opérées sur elle, et la rémunération nette effectivement perçue [@loi96-62, art. 143 (nouveau)].
+
 L'écart entre le salaire net, le salaire brut et le coût du travail est donc fait, pour l'essentiel, des cotisations sociales des deux parts et de l'impôt ; le volume [« Les cotisations sociales »](../cotisations_sociales/_taux_global.html#sec-cot-coin) en donne les taux par régime.
 
 ## Indexation et revalorisation {#sec-mt-notions-indexation}
 
-Deux voies peuvent faire évoluer le salaire minimum : une règle qui le lie à un indice des prix, ou une décision qui le relève. Le premier décret fixant le SMIG ouvrait la première : il prévoyait une variation du salaire minimum selon le coût de la vie, par arrêté, après avis de la [commission nationale du salaire minimum garanti](#g-commission-nationale-smig) [@decret74-63, art. 4]. Les hausses présentées au chapitre du salaire minimum ont été fixées par décret, chacun arrêtant sa date d'effet et ses montants (@sec-mt-salaire-minimum). La revalorisation des pensions, elle, est indexée sur la hausse du SMIG dans le régime des salariés non agricoles depuis 1981 (voir le volume [« Les retraites »](../retraites/_secteur_prive.html#sec-rsna-reforme-1981)).
+L'indexation est une règle qui lie un montant à un indice, des prix par exemple ; la revalorisation est une décision qui le relève. Ce sont les deux voies par lesquelles le salaire minimum peut évoluer.
+
+- **L'indexation, prévue en 1974.** Lorsqu'il fixe le SMIG pour la première fois, l'État prévoit de le faire varier selon le coût de la vie, par arrêté, après avis de la [commission nationale du salaire minimum garanti](#g-commission-nationale-smig) [@decret74-63, art. 4].
+- **La revalorisation, voie suivie.** Les hausses que présente le chapitre du salaire minimum sont fixées par décret, chacun arrêtant sa date d'effet et ses montants (@sec-mt-salaire-minimum).
+- **Une indexation sur le SMIG.** La revalorisation des pensions est indexée sur la hausse du SMIG dans le régime des salariés non agricoles depuis 1981 (voir le volume [« Les retraites »](../retraites/_secteur_prive.html#sec-rsna-reforme-1981)).
