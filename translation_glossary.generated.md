@@ -182,7 +182,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Incidence des subventions | توزيع منافع الدعم |  |
 | Indemnité à caractère familial | المنحة ذات الصبغة العائلية |  |
 | Indemnité compensatrice | المنحة التعويضية |  |
-| Indemnité complémentaire provisoire | المنحة التكميلية الوقتية | ICP |
+| Indemnité complémentaire provisoire | المنحة الإضافية المؤقتة | ICP |
+| Indemnité de cherté de vie | منحة لغلو المعاش |  |
 | Indemnité de décès | منحة الوفاة |  |
 | Indemnité de revenu unique | منحة الدخل الوحيد |  |
 | Indemnité de stage | منحة التربص |  |

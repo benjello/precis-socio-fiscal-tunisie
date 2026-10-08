@@ -1129,9 +1129,14 @@ premier plan et 1 400 dans six blocs repliés, hors tableaux engendrés.
   (SMIG des deux régimes et SMAG, dont les paliers de 2026, 2027 et 2028), par `tableau_a_la_date`
   (TODO rédacteur dans `_salaire_minimum.qmd`, `#sec-mt-montants`) ; il demande un snapshot
   nouveau dans `tables/`.
-- **Salaire minimum — clé manquante** : le décret n° 2024-420 du 9 juillet 2024 (SMAG, paliers de
-  2024 et de 2025 ; JORT n° 85 de 2024, au corpus) n'a pas de clé dans `references.json` ; le
-  tableau engendré le cite par un lien brut (TODO bibliographe dans `_salaire_minimum.qmd`).
+- **Salaire minimum — tableau du SMAG** : la clé `decret2024-420` est versée (8 octobre 2026) ; le
+  tableau engendré cite encore ce décret par un lien brut : à faire citer par le générateur.
+- **Glossaire — indemnité complémentaire provisoire** : le terme arabe est désormais celui du
+  décret n° 81-437 (المنحة الإضافية المؤقتة). La même expression française nomme un élément de
+  rémunération publique des décrets de 1982, que les chapitres arabes rendent par
+  منحة تكميلية وقتية : deux entrées ou un qualificatif, à trancher avant la reprise de la
+  traduction. Terme arabe de l'indemnité de cherté de vie (décret n° 71-164) à fixer par un
+  arabophone.
 - **Salaire minimum — dates d'effet non établies** : loi n° 66-27, décret n° 73-247, décret
   n° 74-493, loi n° 96-62 et article 15 de la loi de finances pour 2026 figurent aux registres
   sans date d'effet (tiret) ; textes lus, date d'exécution à calculer par le documentaliste.
