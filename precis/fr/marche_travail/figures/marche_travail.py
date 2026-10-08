@@ -660,17 +660,29 @@ _L.update({
     "c_sd_rapport": {"fr": "salaire moyen déclaré / SMIG 48 h",
                      "ar": "معدّل الأجر المصرّح به / الأجر الأدنى 48 ساعة"},
     "seg_4t": {"fr": "déclarés les quatre trimestres", "ar": "مصرّح بهم في الثلاثيات الأربع"},
-    "i_salaire": {"fr": "Salaire moyen du privé non agricole, panel de salariés permanents (INS)",
-                  "ar": "معدّل الأجر في القطاع الخاص غير الفلاحي، عيّنة قارّة من الأجراء (المعهد)"},
+    "i_salaire": {"fr": ("Salaire moyen, panel de salariés permanents, quatrième trimestre "
+                         "(INS, d'après la CNSS)"),
+                  "ar": ("معدّل الأجر، عيّنة قارّة من الأجراء، الثلاثي الرابع (المعهد، حسب "
+                         "تصاريح الصندوق)")},
+    "i_cnss": {"fr": ("Salaire moyen déclaré, tous les salariés déclarés dans l'année "
+                      "(CNSS, annuaire 2018)"),
+               "ar": ("معدّل الأجر المصرّح به، كلّ الأجراء المصرّح بهم في السنة (الصندوق، "
+                      "دليل 2018)")},
+    "ri_2003": {"fr": "2003 : taxis et louages\n(salaire déclaré à la CNSS)",
+                "ar": "2003: سيارات الأجرة واللواج\n(الأجر المصرّح به لدى الصندوق)"},
+    "c_i_cnss_niveau": {"fr": "salaire annuel moyen déclaré à la CNSS, annuaire 2018 (D courants)",
+                        "ar": "معدّل الأجر السنوي المصرّح به لدى الصندوق، دليل 2018 (د جارية)"},
+    "c_i_cnss": {"fr": f"salaire moyen déclaré à la CNSS (indice, {ANNEE_BASE_INDICE} = 100)",
+                 "ar": f"معدّل الأجر المصرّح به لدى الصندوق (رقم قياسي، {ANNEE_BASE_INDICE} = 100)"},
     "i_prov": {"fr": "2025 : taux provisoire", "ar": "2025: نسبة وقتية"},
     "i_smig": {"fr": "SMIG, régime de 48 heures, moyenne annuelle",
                "ar": "الأجر الأدنى المضمون، نظام 48 ساعة، المعدّل السنوي"},
     "i_prix": {"fr": "Prix à la consommation", "ar": "أسعار الاستهلاك"},
-    "c_i_taux": {"fr": "salaire du privé non agricole : taux chaîné de l'année (%)",
-                 "ar": "أجر القطاع الخاص غير الفلاحي: النسبة السنوية المتسلسلة (%)"},
+    "c_i_taux": {"fr": "panel de l'INS : taux chaîné de l'année (%)",
+                 "ar": "عيّنة المعهد: النسبة السنوية المتسلسلة (%)"},
     "c_i_prov": {"fr": "taux provisoire", "ar": "نسبة وقتية"},
-    "c_i_salaire": {"fr": f"salaire du privé non agricole (indice, {ANNEE_BASE_INDICE} = 100)",
-                    "ar": f"أجر القطاع الخاص غير الفلاحي (رقم قياسي، {ANNEE_BASE_INDICE} = 100)"},
+    "c_i_salaire": {"fr": f"panel de l'INS, quatrième trimestre (indice, {ANNEE_BASE_INDICE} = 100)",
+                    "ar": f"عيّنة المعهد، الثلاثي الرابع (رقم قياسي، {ANNEE_BASE_INDICE} = 100)"},
     "c_i_smig": {"fr": f"SMIG 48 h, moyenne annuelle (indice, {ANNEE_BASE_INDICE} = 100)",
                  "ar": f"الأجر الأدنى 48 ساعة، المعدّل السنوي (رقم قياسي، {ANNEE_BASE_INDICE} = 100)"},
     "c_i_prix": {"fr": f"prix à la consommation (indice, {ANNEE_BASE_INDICE} = 100)",
@@ -713,7 +725,7 @@ _L.update({
     "t_rep_micro": {"fr": "{n} entreprises sans comptabilité", "ar": "{n} مؤسسة لا تمسك محاسبة"},
     "t_part_court": {"fr": "Salaire inférieur au SMIG", "ar": "أجر دون الأجر الأدنى"},
     "t_moitie_court": {"fr": "dont inférieur à la moitié du SMIG", "ar": "منها دون نصف الأجر الأدنى"},
-    "t_base_court": {"fr": "Salaire de base moyen (D par mois)", "ar": "معدّل الأجر الأساسي (د في الشهر)"},
+    "t_base_court": {"fr": "Salaire de base moyen (D)", "ar": "معدّل الأجر الأساسي (د)"},
     "t_smig_court": {"fr": "SMIG retenu par l'INS (D)", "ar": "الأجر الأدنى المعتمد (د)"},
     "t_repondantes": {"fr": "Entreprises répondantes", "ar": "المؤسسات المجيبة"},
     "t_taux": {"fr": "Taux de réponse", "ar": "نسبة الإجابة"},
@@ -826,7 +838,15 @@ def table_salaire_declare():
 
 
 def _indices():
-    """Indices base 100 en 2001 : salaire du privé (taux chaîné de l'INS), SMIG, prix."""
+    """Indices base 100 en 2001 : salaire du privé (taux chaîné de l'INS), salaire moyen
+    déclaré à la CNSS (édition 2018 de l'annuaire, la seule qui porte 2001), SMIG, prix.
+
+    Les deux salaires ne sont pas la même mesure : l'INS suit un panel de salariés permanents,
+    de quatrième trimestre en quatrième trimestre ; l'annuaire divise la masse déclarée de
+    l'année par tous les salariés déclarés au moins une fois. Aucun raccord entre éditions.
+    """
+    cnss = {int(l.annee): float(l.salaire_annuel_moyen_declare_D)
+            for l in figtools.series(SERIE_SALAIRE).itertuples() if "2018" in l.edition}
     taux = {int(l.annee): (float(l.taux_chaine), str(l.provisoire) == "oui")
             for l in figtools.series(SERIE_INS_TAUX).itertuples()}
     smig, ipc = _serie(), _ipc()
@@ -841,6 +861,8 @@ def _indices():
             "taux": taux[annee][0] if annee in taux else None,
             "provisoire": annee in taux and taux[annee][1],
             "salaire": niveau if annee in taux else None,
+            "cnss_niveau": cnss.get(annee),
+            "cnss": 100 * cnss[annee] / cnss[ANNEE_BASE_INDICE] if annee in cnss else None,
             "smig": None if s is None else 100 * s / s0,
             "prix": 100 * ipc[annee] / ipc[ANNEE_BASE_INDICE] if annee in ipc else None})
     return lignes
@@ -851,13 +873,22 @@ def fig_indices():
     ft = figtools.fig_text
     r = _indices()
     fig, ax = plt.subplots(figsize=(10, 5.6))
+    # Deux mesures du salaire, deux tracés distincts : le panel de l'INS en trait plein, le
+    # salaire moyen déclaré de l'annuaire en tirets et triangles, d'une autre couleur.
     for cle, lib, style in (("salaire", "i_salaire", dict(color=BLEU, lw=2, marker="o", ms=3)),
+                            ("cnss", "i_cnss", dict(color=VIOLET, lw=1.8, ls=(0, (5, 2)),
+                                                    marker="^", ms=4)),
                             ("smig", "i_smig", dict(color=ORANGE, lw=1.8, marker="s", ms=3)),
                             ("prix", "i_prix", dict(color=GRIS, lw=1.6, ls="--"))):
         pts = [(l["annee"], l[cle]) for l in r if l[cle] is not None]
         ax.plot([a for a, _ in pts], [v for _, v in pts], label=ft(_lab(lib)), **style)
-        ax.annotate(_fr(pts[-1][1], 0), xy=pts[-1], xytext=(6, 0), textcoords="offset points",
-                    va="center", fontsize=8, color=style["color"])
+        dessus = cle == "cnss"  # la série s'arrête en 2018, au milieu du cadre
+        ax.annotate(_fr(pts[-1][1], 0), xy=pts[-1], xytext=(0, 8) if dessus else (6, 0),
+                    textcoords="offset points", va="bottom" if dessus else "center",
+                    ha="center" if dessus else "left", fontsize=8, color=style["color"])
+    # Rupture du seul salaire déclaré à la CNSS ; la légende passe sous le cadre pour lui
+    # laisser le haut.
+    figtools.marque_rupture(ax, 2003, _ft_lignes(_lab("ri_2003")))
     prov = [(l["annee"], l["salaire"]) for l in r if l["provisoire"]]
     if prov:
         ax.plot([a for a, _ in prov], [v for _, v in prov], ls="none", marker="o", ms=7,
@@ -868,7 +899,7 @@ def fig_indices():
     ax.set_xlabel(ft(_lab("x_annee")))
     ax.set_ylabel(ft(_lab("y_indice")))
     ax.grid(True, alpha=0.3)
-    ax.legend(loc="upper left", fontsize=8, frameon=False)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.12), fontsize=8, frameon=False, ncol=2)
     fig.tight_layout()
     return fig
 
@@ -888,6 +919,9 @@ def table_indices():
         _lab("c_i_taux"): [l["taux"] for l in r],
         _lab("c_i_prov"): [_lab("oui") if l["provisoire"] else "" for l in r],
         _lab("c_i_salaire"): [arrondi(l["salaire"]) for l in r],
+        _lab("c_i_cnss_niveau"): [None if l["cnss_niveau"] is None else round(l["cnss_niveau"])
+                                  for l in r],
+        _lab("c_i_cnss"): [arrondi(l["cnss"]) for l in r],
         _lab("c_i_smig"): [arrondi(l["smig"]) for l in r],
         _lab("c_i_prix"): [arrondi(l["prix"]) for l in r],
     })
@@ -979,41 +1013,39 @@ _REPONDANTES_MICRO = {2007: 7144, 2012: 5572, 2016: 7179}
 _REPONSE_EES = {2012: "38,6 %", 2014: "46,6 %", 2022: "58 %"}
 
 
-def tableau_enquetes(enquete: str) -> str:
-    """Tableau Markdown d'une des deux enquêtes de l'INS (`"micro"` ou `"ees"`), une ligne par
-    année. Le champ de l'enquête se dit une fois, dans la légende, non dans chaque ligne.
+def _enquete(enquete: str):
+    """Lignes, colonnes et références paginées d'une des deux enquêtes de l'INS.
 
     Valeurs lues dans les séries ; entreprises répondantes et taux de réponse contrôlés sur les
     citations que les séries portent (colonnes `champ` et `taux_de_reponse`).
     """
     def pct(v, decimales=1):
-        return f"{_fr(float(v), decimales)} %"
+        return f"{_fr(float(v), decimales)}\u00a0%"
 
-    lignes = []
+    lignes, pages = [], {}
+
+    def cite(cle, page):
+        pages.setdefault(cle, set()).add(int(page))
+
     if enquete == "micro":
         m = figtools.series(SERIE_MICRO)
         m = m[(m["branche"] == "Ensemble") & (m["sexe"] == "ensemble") & (m["grandeur"] == "part")]
         for annee in (2007, 2012, 2016):
-            propre = m[m["source_id"] == f"ins-micro-entreprises-{annee}"]
+            cle = f"ins-micro-entreprises-{annee}"
+            propre = m[m["source_id"] == cle]
             part = propre[(propre["annee"] == annee) & (propre["tranche"] == "<1")]
             # La moitié du SMIG : 2007 n'est imprimée que par le rapport 2012 (tableau 8).
             moitie = m[(m["annee"] == annee) & (m["tranche"] == "<0.5")]
             assert part["valeur"].nunique() == 1 and moitie["valeur"].nunique() == 1, annee
             assert str(_REPONDANTES_MICRO[annee]) in propre["champ"].iloc[0], annee
-            page = int(part["page_pdf"].min())
-            du_rapport = moitie[moitie["source_id"] == f"ins-micro-entreprises-{annee}"]
-            if du_rapport.empty:
-                autre = moitie.iloc[0]
-                cite = (f"[@ins-micro-entreprises-{annee}, p. {page}; "
-                        f"@{autre['source_id']}, p. {int(autre['page_pdf'])}]")
-            else:
-                cite = (f"[@ins-micro-entreprises-{annee}, p. {page}, "
-                        f"{int(du_rapport['page_pdf'].min())}]")
+            cite(cle, part["page_pdf"].min())
+            du_rapport = moitie[moitie["source_id"] == cle]
+            autre = moitie.iloc[0] if du_rapport.empty else du_rapport.sort_values("page_pdf").iloc[0]
+            cite(autre["source_id"], autre["page_pdf"])
             lignes.append((annee, pct(part["valeur"].iloc[0]), pct(moitie["valeur"].iloc[0]),
                            int(part["smig_retenu_par_la_source_D"].iloc[0]),
-                           _fr(_REPONDANTES_MICRO[annee], 0), cite))
-        cles = ("t_annee", "t_part_court", "t_moitie_court", "t_smig_court", "t_repondantes",
-                "t_source")
+                           _fr(_REPONDANTES_MICRO[annee], 0)))
+        cles = ("t_annee", "t_part_court", "t_moitie_court", "t_smig_court", "t_repondantes")
     else:
         e = figtools.series(SERIE_EES)
         e = e[(e["section"] == "Total") & (e["categorie"] == "Total")]
@@ -1023,12 +1055,27 @@ def tableau_enquetes(enquete: str) -> str:
             rapport = g[g["grandeur"].str.contains("pourcentage")]
             assert len(niveau) == 1 and len(rapport) == 1, annee
             assert _REPONSE_EES[annee].replace(" ", "") in g["taux_de_reponse"].iloc[0], annee
-            cite = f"[@ins-ees-{annee}, p. {int(niveau['page_pdf'].iloc[0])}]"
+            cite(f"ins-ees-{annee}", niveau["page_pdf"].iloc[0])
             lignes.append((annee, _fr(float(niveau["valeur"].iloc[0]), 0),
                            pct(rapport["valeur"].iloc[0], 0),
                            int(niveau["smig_retenu_par_la_source_D"].iloc[0]),
-                           _REPONSE_EES[annee], cite))
-        cles = ("t_annee", "t_base_court", "t_base_pct", "t_smig_court", "t_taux", "t_source")
-    sortie = ["| " + " | ".join(_lab(c) for c in cles) + " |", "|:---|---:|---:|---:|---:|:---|"]
+                           _REPONSE_EES[annee]))
+        cles = ("t_annee", "t_base_court", "t_base_pct", "t_smig_court", "t_taux")
+    return lignes, cles, pages
+
+
+def tableau_enquetes(enquete: str) -> str:
+    """Tableau Markdown d'une des deux enquêtes de l'INS (`"micro"` ou `"ees"`), une ligne par
+    année. Le champ se dit dans la légende, les références dans `sources_enquetes`."""
+    lignes, cles, _ = _enquete(enquete)
+    sortie = ["| " + " | ".join(_lab(c) for c in cles) + " |", "|:---|---:|---:|---:|---:|"]
     sortie += ["| " + " | ".join(str(c) for c in l) + " |" for l in lignes]
     return "\n".join(sortie)
+
+
+def sources_enquetes(enquete: str) -> str:
+    """La ligne « Source » d'un tableau d'enquête : chaque rapport cité une fois, avec ses pages."""
+    _, _, pages = _enquete(enquete)
+    refs = "; ".join(f"@{cle}, p. {', '.join(str(p) for p in sorted(pp))}"
+                     for cle, pp in sorted(pages.items()))
+    return f"::: {{.figure-source}}\n{_lab('t_source')} : [{refs}]\n:::"

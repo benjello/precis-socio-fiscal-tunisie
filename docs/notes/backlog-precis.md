@@ -1317,7 +1317,8 @@ en donnait trois.
   (`#sec-mt-salaires-prive`, dernière section de `_salaire_minimum.qmd`), d'après la note
   `docs/notes/marche-travail-salaires-effectifs-prive.md`. Trois figures : salaire moyen déclaré à
   la CNSS face au SMIG, 1970-2018, par segments (`#fig-mt-sp-salaire-declare`) ; indices du salaire
-  du panel de l'INS, du SMIG et des prix, 2001-2025 (`#fig-mt-sp-indices`) ; salariés déclarés par
+  du panel de l'INS, du salaire moyen déclaré (annuaire 2018, 2001-2018), du SMIG et des prix,
+  2001-2025 (`#fig-mt-sp-indices`) ; salariés déclarés par
   classe de salaire en SMIG, 2000-2018 (`#fig-mt-sp-distribution`) ; un tableau des enquêtes de
   l'INS (`#tbl-mt-sp-enquetes`). Séries snapshotées le 8 octobre 2026 :
   `cnss-salaire-moyen-declare-smig`, `cnss-pyramide-smig-2000-2018`, `ins-salaires-prive-annuel`,

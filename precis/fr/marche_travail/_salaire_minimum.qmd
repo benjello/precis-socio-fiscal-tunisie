@@ -325,15 +325,34 @@ figtools.figure_tabs(
 
 ## Les salaires versés dans le secteur privé, 1970-2025 {#sec-mt-salaires-prive}
 
-Cette section rapporte le salaire minimum aux salaires que les employeurs du secteur privé non agricole déclarent à la Caisse nationale de sécurité sociale (CNSS). Elle donne le salaire moyen déclaré et son rapport au [SMIG](#g-smig) de 1970 à 2018, l'évolution des salaires, du SMIG et des prix de 2001 à 2025, puis la répartition des salariés déclarés selon leur salaire exprimé en SMIG, de 2000 à 2018. Deux enquêtes de l'Institut national de la statistique (INS), de 2007 à 2022, sont données à part.
+Cette section rapporte le salaire minimum aux salaires versés dans le secteur privé non agricole, d'après cinq sources : trois viennent des déclarations des employeurs à la Caisse nationale de sécurité sociale (CNSS), deux sont des enquêtes de l'Institut national de la statistique (INS) auprès des entreprises. Elle dit d'abord ce que chaque source mesure et ce qu'on peut en attendre (@tbl-mt-sp-sources), puis donne le salaire moyen déclaré et son rapport au [SMIG](#g-smig) de 1970 à 2018, l'évolution des salaires, du SMIG et des prix de 2001 à 2025, la répartition des salariés déclarés selon leur salaire exprimé en SMIG de 2000 à 2018, et les résultats des deux enquêtes, de 2007 à 2022.
 
-### Ce que mesure le salaire déclaré {#sec-mt-sp-mesure}
+### Cinq sources : ce qu'elles mesurent, ce qu'on peut en attendre {#sec-mt-sp-mesure}
 
-Le salaire déclaré est celui que l'employeur déclare à la CNSS, au titre du régime des salariés non agricoles. L'annuaire statistique de la caisse en publie la masse et le nombre de salariés déclarés ; le salaire annuel moyen déclaré est leur quotient, et le salaire mensuel moyen, ce quotient divisé par douze.
+Aucune des cinq sources ne donne à elle seule le salaire versé dans le secteur privé : chacune mesure une grandeur, sur un périmètre et une période qui lui sont propres.
 
-Ce quotient compte tout salarié déclaré au moins une fois dans l'année : il est inférieur au salaire d'un emploi occupé toute l'année. En 2013, il est de 8 495 dinars par an pour l'ensemble des salariés déclarés, et de 11 036 dinars pour ceux qui le sont les quatre trimestres [@cnss-annuaire-2013, p. 26 et 36] (@fig-mt-sp-salaire-declare, onglet « Données »).
+| Source | Ce qu'elle mesure | Périmètre | Période | Ce qu'on peut en attendre | Limite principale |
+|:---|:---|:---|:---|:---|:---|
+| CNSS, annuaire statistique : salaire moyen déclaré | masse des salaires déclarés, divisée par le nombre de salariés déclarés | salariés non agricoles déclarés au moins une fois dans l'année | 1970-2018 | un niveau, et son rapport au SMIG | compte les années incomplètes |
+| INS, d'après les déclarations à la CNSS : taux d'évolution du salaire moyen | variation trimestrielle du salaire moyen d'un panel | salariés du secteur privé non agricole déclarés cinq trimestres de suite | 2001-2025 | une évolution, à composition constante | aucun niveau |
+| CNSS, annuaire statistique : pyramide des salaires déclarés | salariés déclarés par classe de salaire mensuel, en SMIG | salariés non agricoles déclarés au titre de l'année | 2000-2018 | une distribution | classe basse gonflée par les années incomplètes |
+| INS, enquête sur les micro-entreprises | part des salariés dont le salaire est inférieur au SMIG | entreprises non agricoles de moins de six salariés, sans comptabilité | 2007, 2012, 2016 | la part des bas salaires, à trois dates | durée du travail non contrôlée |
+| INS, enquête « Emploi et salaires » | salaire de base moyen des salariés permanents | entreprises de six salariés et plus, publiques comprises | 2012, 2014, 2022 | un niveau, à trois dates | salaire de base, hors primes et heures supplémentaires |
 
-La série s'arrête en 2018 : aucun niveau du salaire déclaré n'est publié pour les années suivantes.
+: Les cinq sources de la section : mesure, périmètre, période, usage et limite principale {#tbl-mt-sp-sources}
+
+::: {.figure-source}
+Sources : [@cnss-annuaire-2006, p. 14; @cnss-annuaire-2013, p. 36, 37; @cnss-annuaire-2018, p. 16, 26, 27; @ins-bms; @ins-guide-salaires-prive-2026; @ins-micro-entreprises-2007, p. 7-8; @ins-micro-entreprises-2012, p. 9-10; @ins-micro-entreprises-2016, p. 9-10; @ins-ees-2012, p. 5-7; @ins-ees-2014, p. 5-6; @ins-ees-2022, p. 5]
+:::
+
+Quatre différences comptent pour la lecture.
+
+- **Un niveau ou une évolution.** L'annuaire de la CNSS et l'enquête « Emploi et salaires » donnent un salaire en dinars ; le taux de l'INS ne donne qu'une évolution.
+- **Tous les salariés déclarés ou des salariés permanents.** L'annuaire compte tout salarié déclaré au moins une fois dans l'année ; le taux de l'INS ne suit que des salariés déclarés cinq trimestres de suite. En 2013, le salaire annuel moyen déclaré est de 8 495 dinars pour l'ensemble des salariés déclarés et de 11 036 dinars pour ceux qui le sont les quatre trimestres [@cnss-annuaire-2013, p. 26 et 36] (@fig-mt-sp-salaire-declare, onglet « Données »). Les deux enquêtes portent sur des salariés permanents en un autre sens : ceux que l'entreprise interrogée dit employer de façon permanente.
+- **Un registre administratif ou une enquête.** Les trois premières sources viennent des déclarations des employeurs à la CNSS et ne portent, par construction, que sur des salariés déclarés ; les deux enquêtes interrogent des entreprises inscrites au répertoire national des entreprises.
+- **Deux champs d'enquête disjoints.** L'une porte sur les entreprises de moins de six salariés sans comptabilité, l'autre sur les entreprises de six salariés et plus, publiques comprises : leurs résultats ne s'additionnent pas.
+
+Le salaire moyen déclaré et la pyramide s'arrêtent en 2018 : aucun niveau du salaire déclaré n'est publié pour les années suivantes, et seul le taux de l'INS va jusqu'en 2025.
 
 <!-- TODO (documentaliste) : le salaire moyen des salariés déclarés les quatre trimestres de 2013
 (800 558 salariés, 8 834 648 773 D, annuaire 2013, PDF p. 36) est une constante du module de
@@ -392,34 +411,43 @@ figtools.figure_tabs(
 
 ### L'évolution des salaires, du SMIG et des prix, 2001-2025 {#sec-mt-sp-evolution}
 
-L'INS publie le taux d'évolution trimestriel du salaire moyen du secteur privé non agricole, de 2001 à 2025 [@ins-portail-2006-salaires-prive; @ins-portail-2009-salaires-prive; @ins-bms]. Ce taux suit un panel de salariés permanents, déclarés à la CNSS cinq trimestres de suite [@ins-guide-salaires-prive-2026] : il mesure la progression du salaire de salariés restés en emploi, à composition constante, et ne donne aucun niveau. Chaîné en indice, il se compare au SMIG et aux prix à la consommation (@fig-mt-sp-indices).
+Quatre indices, base 100 en 2001, se comparent : deux mesures du salaire, le SMIG du régime de 48 heures et les prix à la consommation (@fig-mt-sp-indices). Les deux mesures du salaire n'ont ni le même champ ni la même construction (@tbl-mt-sp-sources). Le taux de l'INS suit un panel de salariés déclarés cinq trimestres de suite, de quatrième trimestre en quatrième trimestre, à composition constante [@ins-portail-2006-salaires-prive; @ins-portail-2009-salaires-prive; @ins-bms; @ins-guide-salaires-prive-2026]. Le salaire moyen déclaré de l'annuaire de la CNSS rapporte la masse déclarée dans l'année à tous les salariés déclarés au moins une fois, dont la composition change d'une année à l'autre [@cnss-annuaire-2018, p. 16].
 
-- **De 2001 à 2024, l'indice du salaire passe de 100 à 360, celui des prix à 310, celui du SMIG à 251.** En 2025, l'indice du salaire atteint 381, sur un taux provisoire, et celui du SMIG 276.
+- **De 2001 à 2024, l'indice du panel de l'INS passe de 100 à 360, celui des prix à 310, celui du SMIG à 251.** En 2025, l'indice du panel atteint 381, sur un taux provisoire, et celui du SMIG 276.
 - **Le SMIG suit les prix jusqu'en 2016, puis progresse moins vite qu'eux** : les deux indices valent 181 en 2016.
-- **L'indice du panel progresse moins vite que le salaire moyen déclaré.** De 2004 à 2018, il passe de 116 à 261, quand le salaire annuel moyen déclaré passe de 4 368 à 11 567 dinars (@fig-mt-sp-salaire-declare, onglet « Données ») : le premier suit les mêmes salariés d'un trimestre au suivant ; le second, tous les salariés déclarés de l'année.
+- **En 2018, l'indice du salaire moyen déclaré à la CNSS vaut 315, celui du panel de l'INS 261.** Le premier franchit la rupture de 2003, année où le régime d'assujettissement des taxis et louages change ; de 2004 à 2018, il passe de 119 à 315, et celui du panel de 116 à 261.
+- **L'écart entre les deux indices tient à ce qu'ils ne mesurent pas la même chose.** Il peut refléter le changement de composition des salariés déclarés et de la durée qu'ils déclarent dans l'année, que le panel écarte par construction ; les deux sources ne permettent pas d'en mesurer la part.
 
 ```{python}
 #| label: fig-mt-sp-indices
 #| echo: false
 #| output: asis
 figtools.figure_tabs(
-    mt.vues_indices(), mt.table_indices(), mt.SERIE_INS_TAUX, "marche-travail-smig-smag",
-    "ipc-longue-periode", "bct-ipc-base2015",
+    mt.vues_indices(), mt.table_indices(), mt.SERIE_INS_TAUX, mt.SERIE_SALAIRE,
+    "marche-travail-smig-smag", "ipc-longue-periode", "bct-ipc-base2015",
     slug="fig_mt_sp_indices", nominal=False,
-    caption=("Salaire moyen du secteur privé non agricole — panel de salariés permanents, "
-             "évolution à composition constante —, SMIG du régime de 48 heures et prix à la "
-             "consommation : indices base 100 en 2001, 2001-2025"),
+    caption=("Deux mesures du salaire du secteur privé non agricole — panel de salariés "
+             "permanents de l'INS, 2001-2025 ; salaire moyen déclaré à la CNSS, 2001-2018 —, "
+             "SMIG du régime de 48 heures et prix à la consommation : indices base 100 en 2001"),
     note_lecture=(
-        "L'indice du salaire chaîne les taux d'évolution trimestriels publiés par l'INS : il "
-        "vaut 100 au quatrième trimestre 2001, et chaque point est le niveau du quatrième "
-        "trimestre de l'année. Le SMIG et les prix sont des moyennes annuelles. Le panel "
+        "Deux courbes mesurent le salaire, sur deux champs. Le trait plein bleu chaîne les "
+        "taux d'évolution trimestriels publiés par l'INS : il vaut 100 au quatrième trimestre "
+        "2001, et chaque point est le niveau du quatrième trimestre de l'année. Les tirets "
+        "violets sont le salaire annuel moyen déclaré de l'annuaire 2018 de la CNSS — masse "
+        "des salaires déclarés dans l'année divisée par le nombre de salariés déclarés au "
+        "moins une fois —, rapporté à sa valeur de 2001 ; cette courbe s'arrête en 2018, "
+        "dernière année de l'annuaire, et les valeurs de l'édition 2006, différentes sur "
+        "2002-2006, n'y entrent pas. En 2003, l'annuaire signale un changement du régime "
+        "d'assujettissement des taxis et louages : la rupture ne concerne que cette courbe, "
+        "tracée d'un seul trait de part et d'autre. Le SMIG et les prix sont des moyennes "
+        "annuelles. Le panel "
         "réunit les salariés déclarés à la CNSS cinq trimestres de suite ; les salaires "
         "trimestriels inférieurs à 300 dinars ou supérieurs à 60 000 dinars et les évolutions "
         "individuelles inférieures à −5 % ou supérieures à +10 % en sont exclus. Cette méthode "
         "est celle du guide que l'INS publie en 2026 ; celle des années 2001 à 2007 n'est pas "
-        "documentée. L'indice suit la progression du salaire de salariés restés en emploi : "
-        "une évolution à composition constante, pas un niveau ; il ne prolonge pas le salaire "
-        "moyen déclaré de la figure précédente. Le taux de 2025 est provisoire. L'indice des "
+        "documentée. L'indice du panel suit la progression du salaire de salariés restés en "
+        "emploi : une évolution à composition constante, pas un niveau ; il ne prolonge pas "
+        "le salaire moyen déclaré après 2018. Le taux de 2025 est provisoire. L'indice des "
         "prix va jusqu'en 2024, dernière année publiée ; celui du SMIG jusqu'en 2025, dernière "
         "année échue."),
 )
@@ -427,7 +455,7 @@ figtools.figure_tabs(
 
 ### Le bas de la distribution, 2000-2018 {#sec-mt-sp-distribution}
 
-L'annuaire de la CNSS répartit les salariés déclarés selon leur salaire mensuel déclaré, exprimé en SMIG, sans préciser le régime horaire du SMIG de référence ni le calcul du salaire mensuel (@fig-mt-sp-distribution).
+L'annuaire de la CNSS répartit les salariés déclarés selon leur salaire mensuel déclaré, exprimé en SMIG (@fig-mt-sp-distribution).
 
 - **La part des salariés déclarés sous 1 SMIG recule de 40,8 % en 2000 à 24,0 % en 2018** ; celle de 1 à 1,5 SMIG, de 24,8 % à 17,8 % ; celle au-delà de 1,5 SMIG passe de 34,4 % à 58,2 %.
 - **Cette mesure annuelle ne donne pas la part des salariés payés moins que le SMIG** : elle compte aussi les salariés déclarés une partie de l'année seulement. Parmi les salariés déclarés au premier trimestre 2018, 9,5 % sont sous 1 SMIG, contre 24,0 % dans la mesure annuelle [@cnss-annuaire-2018, p. 26 et 27] ; l'écart vient des années incomplètes.
@@ -450,16 +478,17 @@ figtools.figure_tabs(
         "salariés payés moins que le SMIG. Le losange donne, pour 2018, l'autre mesure de "
         "l'annuaire, qui porte sur les salariés déclarés à chaque trimestre : au premier "
         "trimestre, 9,5 % sont sous 1 SMIG, contre 24,0 % sur l'année. Les quatre trimestres "
-        "de 2018 sont à l'onglet « Données »."),
+        "de 2018 sont à l'onglet « Données ». L'annuaire ne précise ni le régime horaire du "
+        "SMIG de référence ni le calcul du salaire mensuel déclaré."),
 )
 ```
 
 ### Deux enquêtes de l'INS auprès des entreprises, 2007-2022 {#sec-mt-sp-enquetes}
 
-Deux enquêtes de l'INS interrogent les entreprises sur les salaires qu'elles versent ; leurs champs diffèrent de celui de la CNSS, et l'un de l'autre (@tbl-mt-sp-enquetes, @tbl-mt-sp-enquetes-ees).
+Les deux enquêtes de l'INS donnent, chacune sur son champ, un repère à trois dates (@tbl-mt-sp-enquetes, @tbl-mt-sp-enquetes-ees).
 
-- **Dans les micro-entreprises** — moins de six salariés, sans comptabilité —, 54,5 % des salariés permanents ont un salaire inférieur au SMIG en 2007, 49,9 % en 2012 et 32,3 % en 2016 ; ces parts ne s'entendent pas à durée du travail égale.
-- **Dans les entreprises de six salariés et plus, publiques comprises**, le salaire de base moyen des permanents, hors primes et heures supplémentaires, vaut 178 % du SMIG en 2012, 188 % en 2014 et 201 % en 2022.
+- **Dans les micro-entreprises**, 54,5 % des salariés permanents ont un salaire inférieur au SMIG en 2007, 49,9 % en 2012 et 32,3 % en 2016 ; ces parts ne s'entendent pas à durée du travail égale.
+- **Dans les entreprises de six salariés et plus**, le salaire de base moyen des permanents vaut 178 % du SMIG en 2012, 188 % en 2014 et 201 % en 2022.
 
 ```{python}
 #| echo: false
@@ -469,10 +498,12 @@ print("\n: Micro-entreprises (INS) : part des salariés permanents dont le salai
       "au SMIG, 2007, 2012 et 2016. Champ : entreprises non agricoles de moins de six salariés, "
       "sans comptabilité ; en 2016, chiffre d'affaires inférieur à un million de dinars "
       "{#tbl-mt-sp-enquetes}\n")
+print(mt.sources_enquetes("micro") + "\n")
 print(mt.tableau_enquetes("ees"))
 print("\n: Entreprises de six salariés et plus (INS, enquête « Emploi et salaires ») : salaire "
       "de base moyen des salariés permanents, 2012, 2014 et 2022. Champ : entreprises publiques "
       "et entreprises privées de six salariés et plus {#tbl-mt-sp-enquetes-ees}\n")
+print(mt.sources_enquetes("ees") + "\n")
 ```
 
 Le SMIG est celui que l'INS retient dans chaque rapport, sans préciser son régime horaire ; l'enquête « Emploi et salaires » ne précise ni la périodicité du salaire de base ni la pondération de sa moyenne.
