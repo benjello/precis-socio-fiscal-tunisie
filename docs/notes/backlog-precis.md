@@ -629,6 +629,60 @@ liste qui suit le tableau, citations comprises. Restent :
 
 ## Rémunérations publiques
 
+- **Régime indiciaire converti aux principes de présentation — 8 octobre 2026 (non commité, à
+  relire).** `_regime_indiciaire.qmd` suit `docs/notes/remunerations-regime-indiciaire-plan-architecte.md` :
+  « Vue d'ensemble » (tableau court `tbl-ri-reformes`), champ, construction (état du droit),
+  prélèvements, repères historiques (mise en place, ancien système, 1998, 2007, augmentations
+  générales 1993-2028), repères budgétaires et statistiques. Classe `.domicile-unique` sur tout
+  le chapitre ; onze blocs repliés, huit registres de textes faits main (64 lignes à ancre).
+  Les 22 identifiants, les 13 `TODO`, les 16 ancres de glossaire, les 60 clés et les 87 couples
+  (clé, localisateur) du départ sont à l'arrivée ; six clés déjà versées entrent par le
+  registre des augmentations (`decret2015-462`, `decret2016-1`, `decret2019-209`,
+  `decret2019-1133`, `decret2020-767`, `lf-2026`). Restent :
+  - **la grille des traitements de base n'est pas montrée** (P8 de la fiche) : le chapitre en
+    donne la structure et un seul exemple (inspecteur central, « environ 203 » puis 611 D).
+    Tableau attendu `tbl-ri-grille-reperes` (premier et dernier échelon de quelques grades par
+    catégorie, 1998 et 2007), à engendrer depuis les annexes des décrets n° 97-1832 et
+    n° 2007-268 — **à documenter d'abord** : les annexes ne sont ni dans le chapitre ni dans
+    `precis/_seriescache/` ; relever au passage le montant exact de l'exemple ;
+  - **la grille depuis le 1er avril 2007** (Q3) : aucun texte postérieur n'est cité, et le
+    chapitre ne dit pas sur quel élément de la rémunération les augmentations générales sont
+    servies depuis 2016. L'état du droit est daté « au 1er avril 2007 » sans être dit inchangé ;
+    aucune recherche n'a été menée, donc aucune fiche `RECHERCHE` — à créer si la recherche
+    est faite sans résultat ;
+  - **objet et dates d'effet des textes de structure** (Q1, Q4) : intitulés et rubriques des
+    décrets n° 97-1832, n° 97-2127, n° 2007-267, n° 2007-268 ; dates d'effet des lois n° 83-112
+    et n° 97-83 (tiret au tableau de la vue d'ensemble) ; fascicules de 1997 et de 2007 au
+    corpus, **texte lisible** ; celui de 1983 à vérifier ;
+  - **article du décret gouvernemental n° 2016-1** (Q0) : il décide si 2016 est une étape
+    (rangement actuel, sans ligne au tableau de la vue d'ensemble) ou une rupture ; relever
+    aussi ce que dispose l'article 15 de la loi de finances pour 2026, nommé sans contenu ;
+  - **deux fiches de recherche créées** (`docs/recherches.yml`) : `r-epa-regime-propre`
+    (établissement administratif à régime entièrement propre) et `r-indemnite-residence`
+    (indemnité de résidence commune). Une seule passe chacune, **par les titres de
+    `jort_cache` seulement**, le 8 octobre 2026 ; plein texte non parcouru, textes de création
+    des établissements non lus ;
+  - **hypothèse retirée du texte rendu** (P5) : en 2024, la catégorie D passe d'environ 28 400
+    à 39 800 agents quand la première unité d'ouvriers recule d'environ 48 900 à 35 400 ; la
+    source n'explique ni l'un ni l'autre. Un reclassement d'ouvriers en catégorie D n'est
+    qu'une hypothèse, non attribuée : à documenter (texte de reclassement, note de l'INS)
+    avant de l'écrire ;
+  - **code des collectivités locales** : le texte n'affirme plus qu'il « ne substitue pas un
+    régime de rémunération propre » ; il dit que ce point n'est pas établi. Lecture de
+    l'édition arabe toujours à faire (voir plus bas) ;
+  - **outillage des tableaux d'augmentations** (P4) : registres `tbl-ri-ige-textes` et
+    `tbl-ri-augmentations-textes` faits main ; à remplacer par un rendu « registre » de
+    `scripts/augmentations.py` (ancres et citations depuis le CSV) et par un rendu « total par
+    cycle et par catégorie », en dinars courants et constants, qui prendrait la place des
+    grilles à onze et treize colonnes, repliées telles quelles ;
+  - **renvoi de la partition en trois tableaux** : elle n'est appuyée que sur l'article 2 bis
+    inséré en 2007 (décret n° 2007-268) ; vérifier à l'annexe du décret n° 97-1832 que la
+    grille de 1998 a déjà trois tableaux ;
+  - **date du 1er février 1959 de `tbl-cnrps-retraite`** : antérieure à la loi n° 59-18
+    (5 février 1959), qui n'énonce pas de date d'effet pour son article 5 — constat porté à
+    `docs/notes/backlog-modele.md` ;
+  - **version arabe** : les attributs `titre` des onze blocs sont à traduire ; rien n'est écrit
+    sous `precis/ar/`.
 - **Masse salariale, rupture du numérateur en 1996 et 2000 — constat fait le 6 octobre 2026, cause à
   identifier.** La série du ministère des Finances recule de 2 091,0 à 1 993,2 MD en 1996 et
   bondit de 16,1 % en 2000 ; le détail du fonctionnement (moyens des services, interventions
@@ -1847,7 +1901,7 @@ l'information.
 | `_tva.qmd` | **prototype du chantier « ruptures au premier plan »** (7 octobre 2026, à juger) : en bref, mise en place, grandes réformes, bilan des taux et état du droit, dispositifs, longue période | voir l'entrée du chantier en tête de ce fichier ; `@sec-tva-deduction` garde ses données et ses études à leur place ; les données du crédit sont une figure engendrée (`@fig-tva-credit-restitutions`), dont les séries restent à prolonger après 2014 ; le tableau des générations de taux (`@tbl-tva-taux`) et la figure des taux dans le temps (`@fig-tva-taux`) sont engendrés depuis le 7 octobre 2026 ; vue des régimes par catégorie (`@fig-tva-regimes`) et annexe des tableaux annexés au code (`_tva_tableaux.qmd`, non déclarée côté arabe) ajoutées le 7 octobre 2026 |
 | `_impot_revenu.qmd` | conforme, à sa manière | rien sur la forme ; restent deux sections à ÉCRIRE, voir plus bas |
 | `retraites/_secteur_*.qmd` | **rangés par mécanisme, et c'est bien** | ne pas y appliquer le plan type |
-| `_regime_indiciaire.qmd` | fait le travail sous d'autres noms | ne rien reprendre sur la forme |
+| `_regime_indiciaire.qmd` | **converti le 8 octobre 2026** aux principes « ruptures au premier plan » : trame du volume gardée, vue d'ensemble, registres repliés, domicile unique | voir l'entrée « Rémunérations publiques » ; à relire |
 
 ### Ce que `_impot_revenu.qmd` a appris sur les limites du plan type
 

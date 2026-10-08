@@ -1,35 +1,96 @@
-# Le régime indiciaire {#sec-regime-indiciaire}
+# Le régime indiciaire {#sec-regime-indiciaire .domicile-unique}
 
-Le [régime indiciaire](#g-regime-indiciaire) est l'héritier direct du modèle français de carrière. Il concerne les **sous-secteurs juridiques** suivants : la fonction publique de l'État, les collectivités locales et les établissements publics à caractère administratif (EPA), tous régis par la loi n°83-112 du 12 décembre 1983 [@loi83-112]. La rémunération y est construite à partir d'un [grade](#g-grade) et d'un [échelon](#g-echelon) auxquels les textes réglementaires associent directement un **traitement de base mensuel exprimé en dinars**, complété d'indemnités et de primes. La notion de « point d'indice », héritée du modèle de carrière, subsiste dans le vocabulaire et dans certains décrets de classement des corps, mais elle n'opère pas, en droit positif actuel, comme un paramètre multiplicateur : aucun texte en vigueur ne publie de « valeur du point » qui, appliquée à un indice, déterminerait le traitement ; ce sont les grilles annexées aux décrets qui fixent les montants directement. Le nom du régime est donc un héritage — jusqu'à la réforme de 1997, un mécanisme indiciaire opérant existait bel et bien, décrit plus bas (voir [L'ancien système indiciaire](#sec-ancien-systeme-indiciaire)).
+Le [régime indiciaire](#g-regime-indiciaire) est le régime de rémunération des agents de l'État, des collectivités locales et des établissements publics à caractère administratif. Un [grade](#g-grade) et un [échelon](#g-echelon) y donnent un **traitement de base mensuel fixé en dinars**, complété d'indemnités et de primes, et relevé par des augmentations générales elles aussi fixées en dinars.
 
-Sur le plan **historique**, c'est le régime le plus directement façonné par les grandes étapes de la politique salariale publique : construction de l'administration nationale après 1956, refonte de la grille de base à la fin des années 1990, puis intégration partielle de l'indemnitaire dans le traitement de base en 2007. Sur le plan **budgétaire**, il porte l'essentiel des effectifs et de la masse salariale du budget de l'État. Ces repères, esquissés ici, sont précisés dans les sous-sections qui suivent.
+## Vue d'ensemble {#sec-ri-vue-ensemble}
 
-## Champ d'application
+**Qui en relève.** Trois **sous-secteurs juridiques**, tous régis par le [statut général de 1983](#r-ri-statut-1983) : la fonction publique de l'État, les collectivités locales et les établissements publics à caractère administratif (@sec-ri-champ).
 
-Le régime indiciaire est défini par le statut général des personnels de l'État, des collectivités locales et des établissements publics à caractère administratif, fixé par la loi n°83-112 du 12 décembre 1983 [@loi83-112]. Ce statut général, décliné pour chaque corps par des statuts particuliers pris par décret, couvre trois **sous-secteurs juridiques** distincts, examinés tour à tour ci-dessous : la fonction publique de l'État, les personnels des collectivités locales et les établissements publics à caractère administratif.
+**Un nom hérité.** Le régime est l'héritier direct du modèle français de carrière. Son nom vient du mécanisme en vigueur jusqu'au 31 décembre 1997 : un chiffre indiciaire attaché à l'emploi, converti en dinars par un décret distinct (@sec-ancien-systeme-indiciaire). Depuis le 1^er^ janvier 1998, aucune « valeur du point » n'opère : les grilles annexées aux décrets fixent directement les montants. Le point d'indice ne subsiste que dans le vocabulaire et dans certains décrets de classement des corps.
 
-### L'État
+**Trois textes en fixent la structure** : le statut général de 1983 et deux réformes de la grille, en 1998 et en 2007.
 
-La fonction publique de l'État constitue le cœur du régime indiciaire. Les agents de l'État sont régis par le statut général de la loi n°83-112 du 12 décembre 1983 [@loi83-112], décliné, corps par corps, par des statuts particuliers pris par décret qui précisent les conditions de recrutement, d'avancement et les obligations propres à chaque corps.
+| Réforme | Date d'effet | Avant → après | Section |
+|---|---|---|---|
+| [Statut général de 1983](#r-ri-s-1983) | — | statut général de 1968 → statut général en vigueur, qui définit le champ du régime | @sec-ri-statuts-generaux |
+| [Grille en dinars de 1998](#r-ri-g-1998) | [1^er^ janvier 1998]{.insecable} | chiffre indiciaire converti en dinars, complété de deux indemnités → traitement de base lu sur une grille en dinars | @sec-ri-reforme-1998 |
+| [Intégration de 2007](#r-ri-g-2007) | [1^er^ avril 2007]{.insecable} | indemnités spécifiques de corps hors du traitement de base → une partie intégrée au traitement de base | @sec-ri-reforme-2007 |
 
-La structuration des grades en [catégories](#g-categorie-de-grade) repose sur le décret n°99-12 du 4 janvier 1999, qui définit les catégories de grades de la fonction publique [@decret-99-12], modifié par le décret n°2003-2338 du 11 novembre 2003. Son article premier répartit les grades en **quatre catégories — A, B, C et D**, la catégorie A étant elle-même subdivisée en trois sous-catégories (A1, A2, A3). Le critère de classement est le **niveau de diplôme exigé au recrutement par concours externe** : c'est ce niveau, fixé aux articles 2 à 5 du décret, qui situe chaque grade dans la hiérarchie et, par là, sur la grille de traitement de base décrite ci-après.
+: Les trois textes qui fixent la structure du régime indiciaire, 1983-2007 {#tbl-ri-reformes}
 
-| Catégorie | Diplôme minimal exigé au recrutement par concours externe (décret n°99-12) | Niveau de fonction (désignation usuelle) |
+Un tiret dans la colonne « Date d'effet » signale une date qui n'est pas établie ici ; 1983 est l'année de la loi.
+
+<!-- TODO (documentaliste) : relever la date d'effet de la loi n° 83-112 (et celle de la loi n° 97-83), absentes du chapitre ; relever aussi les intitulés et l'objet des décrets n° 97-1832, n° 97-2127, n° 2007-267 et n° 2007-268, pour dire « ce que le texte cherche » dans ses propres mots (fiche de plan de l'architecte, § 10, Q1 et Q4). -->
+
+**Ce qui fait évoluer le niveau.** Les deux réformes modifient la structure de la rémunération davantage que son niveau. Celui-ci évolue par les augmentations générales des salaires : négociées par cycles entre l'UGTT et le gouvernement, fixées par décret en dinars, elles sont servies par corps, sur l'indemnité propre à chacun, puis par catégorie (@sec-cycles-revalorisation).
+
+**Son poids.** Le régime porte l'essentiel des effectifs et de la masse salariale du budget de l'État (@fig-effectifs-fp ; @fig-masse-salariale-ratios).
+
+**Comment le chapitre se lit.** D'abord l'état du droit : champ (@sec-ri-champ), construction de la rémunération (@sec-ri-construction), prélèvements (@sec-ri-prelevements). Puis l'histoire, dans l'ordre des dates (@sec-reperes-historiques-indiciaire). Enfin les salaires et les effectifs, de 2010 à 2025 (@sec-ri-reperes-budgetaires).
+
+## Champ d'application {#sec-ri-champ}
+
+Relèvent du régime indiciaire les agents que désigne l'[article premier du statut général de 1983](#r-ri-champ-art1) : ceux de l'État, des collectivités publiques locales et des établissements publics à caractère administratif, à l'exclusion des établissements industriels et commerciaux. Leurs grades sont classés en six catégories, de A1 à D (@sec-ri-categories).
+
+### L'État {#sec-ri-etat}
+
+La fonction publique de l'État est le premier des trois sous-secteurs. Le statut général y est décliné, corps par corps, par des statuts particuliers pris par décret, qui précisent les conditions de recrutement, d'avancement et les obligations propres à chaque corps.
+
+### Les collectivités locales {#sec-ri-collectivites}
+
+Les agents des communes et des régions relèvent du **même** statut général que les agents de l'État : son [article premier](#r-ri-champ-art1) vise expressément les « collectivités publiques locales ». Ils n'ont pas de statut général propre ; comme pour l'État, seuls existent des **statuts particuliers de corps**. Leur rémunération se construit sur la même [grille des salaires](#r-ri-champ-grille) et sur la même [structure de catégories](#r-ri-cat-1999) que celle des agents de l'État.
+
+Le [Code des collectivités locales de 2018](#r-ri-champ-ccl) organise la **gouvernance** et la libre administration des communes et des régions. Ce qu'il dispose de la rémunération de leurs agents n'est pas établi ici.
+
+<!-- TODO : confirmer, par une lecture des passages pertinents du Code des collectivités
+locales (loi organique n° 2018-29), l'absence de grille ou de statut de rémunération propre au
+personnel communal.
+
+Reconnaissance faite le 20 septembre 2026, qui resserre la tâche et signale un risque :
+
+- l'édition FRANÇAISE du JORT n° 39 de 2018 est ABSENTE du corpus local ; l'édition ARABE y est,
+  et sa couche texte s'extrait intégralement (740 000 caractères). La lecture est donc possible,
+  mais elle se fera en arabe ;
+- un balayage lexical de cette édition arabe montre que le code n'est PAS muet sur la
+  rémunération : seize occurrences de « مرتب », quatorze de « تأجير », onze de « منحة ». Ces
+  termes visent vraisemblablement les indemnités des ÉLUS et non la paie des agents, mais cela
+  reste à établir en lisant les passages, article par article ;
+- conséquence : l'affirmation du texte ci-dessus — le code « ne substitue pas un régime de
+  rémunération propre » — ne peut PAS être confirmée par une recherche par mots-clés, qui donne
+  au contraire des occurrences. Ne pas conclure d'un décompte. -->
+
+<!-- TODO (documentaliste) : le texte rendu n'affirme plus que le code de 2018 « ne substitue pas un régime de rémunération propre » (décision du 8 octobre 2026 : ne pas affirmer ce que la consigne ci-dessus dit non confirmé). La phrase « n'est pas établi ici » tombe dès que les passages du code sont lus. -->
+
+### Les établissements publics à caractère administratif {#sec-ri-epa}
+
+Les établissements publics à caractère industriel et commercial ont leur chapitre : [Le régime conventionnel public](_regime_conventionnel.qmd).
+
+L'[article premier](#r-ri-champ-art1) du statut général inclut dans son champ l'ensemble des « établissements publics à caractère administratif ». Le rattachement repose donc sur un **critère légal — la nature administrative de l'établissement** —, et non sur une liste nominative annexée à un décret : le caractère administratif d'un établissement résulte de son propre texte de création. Le même article exclut expressément les personnels des **établissements publics à caractère industriel et commercial**, « régis par des textes particuliers ».
+
+Aucun établissement public à caractère administratif dont le personnel serait régi par un régime entièrement propre, hors du statut général, n'est identifié ici. Les **statuts particuliers dérogatoires**, pris par décret pour certains corps de ces établissements, sont autre chose : ils dérogent à des dispositions du statut général sans en sortir ([article 2](#r-ri-champ-art2)).
+
+<!-- RECHERCHE r-epa-regime-propre : établissement public à caractère administratif dont le personnel est régi par un régime entièrement propre, hors du statut général (voir docs/recherches.yml) -->
+
+<!-- TODO : investiguer, sur source primaire, l'existence éventuelle d'EPA dont le personnel relèverait d'un régime entièrement propre (hors statut général) ; non établie à ce stade. -->
+
+### Les catégories de grades, de A1 à D {#sec-ri-categories}
+
+Les grades des trois sous-secteurs sont répartis en [catégories](#g-categorie-de-grade) depuis le [décret du 4 janvier 1999](#r-ri-cat-1999) : **quatre catégories — A, B, C et D**, la catégorie A étant elle-même subdivisée en trois sous-catégories (A1, A2, A3). Le critère de classement est le **niveau de diplôme exigé au recrutement par concours externe**, qui situe chaque grade dans la hiérarchie et, par là, sur la grille des traitements de base (@sec-ri-traitement-base).
+
+| Catégorie | Diplôme minimal exigé au recrutement par concours externe | Niveau de fonction (désignation usuelle) |
 |-----------|------------------------------------------------------------------------------|-------------------------------------------|
-| **A1** | Mastère au moins, ou diplôme national d'ingénieur, ou diplôme équivalent (les anciens diplômes d'études approfondies et de troisième cycle antérieurs à la réforme LMD restent admis) [@decret-2003-2338, art. 2] | Conception (cadres supérieurs) |
-| **A2** | Maîtrise au moins, ou diplôme équivalent [@decret-99-12, art. 2] | Encadrement |
-| **A3** | Diplôme du premier cycle de l'enseignement supérieur au moins, ou équivalent [@decret-99-12, art. 2] | Encadrement |
-| **B** | Baccalauréat au moins, ou diplôme équivalent [@decret-99-12, art. 3] | Maîtrise |
-| **C** | Cycle primaire achevé et 6^e^ année secondaire au moins, ou diplôme de fin d'études de l'enseignement de base et 3^e^ année secondaire [@decret-99-12, art. 4] | Exécution qualifiée |
-| **D** | Cycle primaire achevé et 3^e^ année secondaire au moins, ou diplôme de fin d'études de l'enseignement de base [@decret-99-12, art. 5] | Exécution |
+| **A1** | Mastère au moins, ou diplôme national d'ingénieur, ou diplôme équivalent (les anciens diplômes d'études approfondies et de troisième cycle antérieurs à la réforme LMD restent admis) — [rédaction de 2003](#r-ri-cat-2003) | Conception (cadres supérieurs) |
+| **A2** | Maîtrise au moins, ou diplôme équivalent — [article 2](#r-ri-cat-art2) | Encadrement |
+| **A3** | Diplôme du premier cycle de l'enseignement supérieur au moins, ou équivalent — [article 2](#r-ri-cat-art2) | Encadrement |
+| **B** | Baccalauréat au moins, ou diplôme équivalent — [article 3](#r-ri-cat-bcd) | Maîtrise |
+| **C** | Cycle primaire achevé et 6^e^ année secondaire au moins, ou diplôme de fin d'études de l'enseignement de base et 3^e^ année secondaire — [article 4](#r-ri-cat-bcd) | Exécution qualifiée |
+| **D** | Cycle primaire achevé et 3^e^ année secondaire au moins, ou diplôme de fin d'études de l'enseignement de base — [article 5](#r-ri-cat-bcd) | Exécution |
 
 : Catégories hiérarchiques des grades de la fonction publique et niveau de recrutement correspondant (décret n°99-12 du 4 janvier 1999). {#tbl-categories-grades}
 
-Le niveau de recrutement de la sous-catégorie A1 a été **réécrit par le décret n°2003-2338 du 11 novembre 2003** pour tenir compte de la réforme des diplômes universitaires (système LMD) : le **mastère** y figure désormais à côté du diplôme national d'ingénieur, les anciens diplômes de troisième cycle demeurant admis [@decret-2003-2338, art. 2]. Les sous-catégories A2 et A3 ainsi que les catégories B, C et D conservent, quant à elles, la rédaction de 1999 [@decret-99-12].
+Les libellés de la dernière colonne — conception, encadrement, maîtrise, exécution — sont la désignation usuelle des niveaux de fonction ; le décret, lui, ne fixe que le niveau de diplôme requis.
 
-Pour chaque catégorie, le recrutement est également ouvert, en alternative au diplôme académique, aux titulaires d'un **diplôme de formation homologué** au niveau correspondant [@decret-99-12]. Les grades non accessibles par concours externe sont répartis entre ces catégories par les statuts particuliers [@decret-99-12, art. 6], la liste des grades de chaque catégorie étant arrêtée par le Premier ministre [@decret-99-12, art. 7]. Les libellés de la dernière colonne — conception, encadrement, maîtrise, exécution — sont la désignation usuelle des niveaux de fonction ; le décret, lui, ne fixe que le niveau de diplôme requis.
-
-Cette population n'est pas homogène : la statistique de la fonction publique ventile les fonctionnaires de l'État par **catégorie statutaire**, de la catégorie A1 (cadres supérieurs et conception) à la catégorie D (exécution). La hiérarchie des qualifications y pèse lourd : en 2025, la catégorie **A** (A1, A2 et A3) regroupe à elle seule près des **trois quarts** des fonctionnaires, la seule catégorie **A1** en représentant environ **37 %** [@ins-fonction-publique-2025]. La période 2015-2025 est en outre marquée par une recomposition : les effectifs de catégorie **A1** doublent entre 2015 et 2021 (d'environ 99 000 à 198 000) puis se stabilisent autour de 195 000, tandis que la catégorie **A3** recule d'environ 78 000 à 33 000, sous l'effet conjugué des recrutements de cadres et des reclassements. En 2024, la catégorie **D** passe brusquement d'environ 28 400 à 39 800 agents, l'année même où la première des trois unités d'ouvriers recule d'environ 48 900 à 35 400 agents ; la source n'explique ni l'un ni l'autre mouvement, et un reclassement d'ouvriers en catégorie D n'est qu'une hypothèse.
+La statistique de la fonction publique ventile les fonctionnaires de l'État par **catégorie statutaire**, de la catégorie A1 (cadres supérieurs et conception) à la catégorie D (exécution) (@fig-categories-statutaires). La hiérarchie des qualifications y pèse lourd : en 2025, la catégorie **A** (A1, A2 et A3) regroupe à elle seule près des **trois quarts** des fonctionnaires, la seule catégorie **A1** en représentant environ **37 %** [@ins-fonction-publique-2025]. La période 2015-2025 est en outre marquée par une recomposition : les effectifs de catégorie **A1** doublent entre 2015 et 2021 (d'environ 99 000 à 198 000) puis se stabilisent autour de 195 000, tandis que la catégorie **A3** recule d'environ 78 000 à 33 000, sous l'effet conjugué des recrutements de cadres et des reclassements. En 2024, la catégorie **D** passe brusquement d'environ 28 400 à 39 800 agents, l'année même où la première des trois unités d'ouvriers recule d'environ 48 900 à 35 400 agents ; la source n'explique ni l'un ni l'autre mouvement.
 
 ```{python}
 #| label: fig-categories-statutaires
@@ -63,124 +124,118 @@ figtools.figure_tabs(
 )
 ```
 
-### Les collectivités locales
+:::: {.chronologie-repliable titre="Champ du statut général et catégories de grades A1 à D : textes et articles, 1983-2018"}
 
-Le régime indiciaire est étendu aux personnels des communes et des régions. Le statut général de la loi n°83-112 vise expressément, à côté des personnels de l'État, ceux des collectivités publiques locales [@loi83-112], de sorte que la construction de leur rémunération obéit à la même logique de grade et d'échelon convertis en traitement de base.
+| Texte et articles | Portée | Ce que le texte dispose |
+|---|---|---|
+| []{#r-ri-statut-1983}loi n° 83-112 du 12 décembre 1983 [@loi83-112] | texte fondateur | statut général des personnels de l'État, des collectivités publiques locales et des établissements publics à caractère administratif, décliné pour chaque corps par des statuts particuliers pris par décret |
+| []{#r-ri-champ-art1}loi n° 83-112 [@loi83-112, art. 1er] | texte fondateur | champ : personnels de l'État, des « collectivités publiques locales » et des « établissements publics à caractère administratif » ; les personnels des établissements publics à caractère industriel et commercial, « régis par des textes particuliers », en sont exclus |
+| []{#r-ri-champ-art2}loi n° 83-112 [@loi83-112, art. 2] | texte fondateur | des statuts particuliers pris par décret peuvent déroger à des dispositions du statut général |
+| []{#r-ri-cat-1999}décret n° 99-12 du 4 janvier 1999 [@decret-99-12] | étape | définition des catégories de grades : A (A1, A2, A3), B, C et D, selon le diplôme exigé au concours externe (articles 1 à 5) ; recrutement ouvert, pour chaque catégorie, aux titulaires d'un diplôme de formation homologué au niveau correspondant |
+| []{#r-ri-cat-art2}décret n° 99-12 [@decret-99-12, art. 2] | étape | A2 : maîtrise au moins ; A3 : diplôme du premier cycle de l'enseignement supérieur au moins |
+| []{#r-ri-cat-bcd}décret n° 99-12 [@decret-99-12, art. 3] ; [@decret-99-12, art. 4] ; [@decret-99-12, art. 5] | étape | B : baccalauréat au moins (article 3) ; C : cycle primaire achevé et 6^e^ année secondaire, ou diplôme de fin d'études de l'enseignement de base et 3^e^ année secondaire (article 4) ; D : cycle primaire achevé et 3^e^ année secondaire, ou diplôme de fin d'études de l'enseignement de base (article 5) |
+| []{#r-ri-cat-art6-7}décret n° 99-12 [@decret-99-12, art. 6] ; [@decret-99-12, art. 7] | étape | les grades non accessibles par concours externe sont répartis entre les catégories par les statuts particuliers (article 6) ; la liste des grades de chaque catégorie est arrêtée par le Premier ministre (article 7) |
+| []{#r-ri-cat-2003}décret n° 2003-2338 du 11 novembre 2003 [@decret-2003-2338, art. 2] | ajustement | sous-catégorie A1 : le mastère figure à côté du diplôme national d'ingénieur ; les anciens diplômes de troisième cycle demeurent admis |
+| []{#r-ri-champ-grille}décret n° 97-1832 du 16 septembre 1997 [@decret-97-1832] | renvoi | grille des salaires commune aux personnels de l'État, des collectivités publiques locales et des établissements publics à caractère administratif (@tbl-ri-grille-textes) |
+| []{#r-ri-champ-ccl}loi organique n° 2018-29 du 9 mai 2018, Code des collectivités locales [@loi-org-2018-29-ccl] | hors de la rémunération | gouvernance et libre administration des communes et des régions |
 
-Il n'existe pas, en droit positif, de statut général autonome propre aux agents des collectivités locales : les agents communaux permanents relèvent du **même** statut général que les agents de l'État. L'article premier de la loi n°83-112 vise en effet expressément les « collectivités publiques locales » au titre de son champ d'application [@loi83-112, art. 1er], et leur rémunération est construite à partir de la **même grille indiciaire** (décret n°97-1832 [@decret-97-1832]) et de la même structure de catégories (décret n°99-12 [@decret-99-12]) que celle des agents de l'État. Comme pour l'État, seuls existent des **statuts particuliers de corps**, et non un statut général distinct.
+: Le champ du statut général et les catégories de grades, texte par texte, 1983-2018 {#tbl-ri-champ-textes}
 
-Le Code des collectivités locales (loi organique n°2018-29 du 9 mai 2018) organise la **gouvernance** et la libre administration des communes et des régions [@loi-org-2018-29-ccl] ; il ne substitue pas un régime de rémunération propre au statut général de 1983. La rémunération des agents communaux demeure ainsi indiciaire, régie par la grille de la fonction publique.
+Le niveau de recrutement de la sous-catégorie A1 a été **réécrit par le décret n°2003-2338 du 11 novembre 2003** pour tenir compte de la réforme des diplômes universitaires (système LMD) : le **mastère** y figure désormais à côté du diplôme national d'ingénieur, les anciens diplômes de troisième cycle demeurant admis. Les sous-catégories A2 et A3 ainsi que les catégories B, C et D conservent, quant à elles, la rédaction de 1999.
 
-<!-- TODO : confirmer, par une lecture des passages pertinents du Code des collectivités
-locales (loi organique n° 2018-29), l'absence de grille ou de statut de rémunération propre au
-personnel communal.
+Pour chaque catégorie, le recrutement est également ouvert, en alternative au diplôme académique, aux titulaires d'un **diplôme de formation homologué** au niveau correspondant. Les grades non accessibles par concours externe sont répartis entre ces catégories par les statuts particuliers, la liste des grades de chaque catégorie étant arrêtée par le Premier ministre.
 
-Reconnaissance faite le 20 septembre 2026, qui resserre la tâche et signale un risque :
+::::
 
-- l'édition FRANÇAISE du JORT n° 39 de 2018 est ABSENTE du corpus local ; l'édition ARABE y est,
-  et sa couche texte s'extrait intégralement (740 000 caractères). La lecture est donc possible,
-  mais elle se fera en arabe ;
-- un balayage lexical de cette édition arabe montre que le code n'est PAS muet sur la
-  rémunération : seize occurrences de « مرتب », quatorze de « تأجير », onze de « منحة ». Ces
-  termes visent vraisemblablement les indemnités des ÉLUS et non la paie des agents, mais cela
-  reste à établir en lisant les passages, article par article ;
-- conséquence : l'affirmation du texte ci-dessus — le code « ne substitue pas un régime de
-  rémunération propre » — ne peut PAS être confirmée par une recherche par mots-clés, qui donne
-  au contraire des occurrences. Ne pas conclure d'un décompte. -->
+## La construction de la rémunération {#sec-ri-construction}
 
-### Les établissements publics à caractère administratif (EPA)
+L'ancien système indiciaire et les deux réformes de la grille, en 1998 et en 2007, sont racontés aux repères historiques (@sec-reperes-historiques-indiciaire) ; les augmentations générales des salaires y ont leur section (@sec-cycles-revalorisation).
 
-Les établissements publics à caractère administratif (EPA) relèvent également du régime indiciaire. L'article premier de la loi n°83-112 inclut dans son champ d'application l'ensemble des « établissements publics à caractère administratif » [@loi83-112, art. 1er]. Le rattachement au statut général repose donc sur un **critère légal — la nature administrative de l'établissement** —, et non sur une liste nominative annexée à un décret : le caractère administratif d'un établissement résulte de son propre texte de création.
+La rémunération est due après service fait et fixée par décret. Elle se compose d'un traitement de base, lu sur une grille en dinars selon le grade et l'échelon, d'indemnités et de primes, dont aucune n'est accordée sans décret, et des augmentations générales des salaires.
 
-Le même article premier exclut en revanche expressément du statut général les personnels des **établissements publics à caractère industriel et commercial (EPIC)**, « régis par des textes particuliers » [@loi83-112, art. 1er]. Ces derniers relèvent du régime conventionnel public, traité au chapitre [Le régime conventionnel public](_regime_conventionnel.qmd). Le pivot du champ d'application est ainsi la distinction **EPA / EPIC**.
+### Le droit à rémunération : service fait et fixation par décret {#sec-ri-droit-remuneration}
 
-L'existence éventuelle d'EPA dont le personnel serait régi par un régime entièrement propre, en dehors du statut général, n'a pas été établie dans le corpus sourcé et reste à vérifier. Il convient de ne pas la confondre avec les **statuts particuliers dérogatoires** pris par décret pour certains corps d'EPA, qui peuvent déroger à des dispositions du statut général sans en sortir, conformément à son article 2 [@loi83-112, art. 2].
+Le statut général énonce dans un même [article](#r-ri-art13) la condition et l'acte : les agents de l'État, des collectivités publiques locales ou des établissements publics à caractère administratif « ont droit, après [service fait](#g-service-fait), à une rémunération », laquelle « est fixée par décret pris sur avis du ministre des finances ».
 
-<!-- TODO : investiguer, sur source primaire, l'existence éventuelle d'EPA dont le personnel relèverait d'un régime entièrement propre (hors statut général) ; non établie à ce stade. -->
+La première règle est celle du **service fait** : le droit à rémunération naît de l'exécution effective du service, et non de la seule qualité d'agent. Elle prolonge un principe général des finances publiques, énoncé par le [Code de la comptabilité publique](#r-ri-ccp41) : « Aucun paiement ne peut être effectué qu'au véritable créancier justifiant de ses droits et **pour l'acquittement d'un service fait** ».
 
-## La construction de la rémunération
-
-### Le droit à rémunération : service fait et base réglementaire
-
-Avant d'exposer comment la rémunération se calcule, il faut dire à quelle condition elle est due et par quel véhicule elle est fixée. Le statut général répond aux deux questions en un seul article : les agents de l'État, des collectivités publiques locales ou des établissements publics à caractère administratif « ont droit, après [service fait](#g-service-fait), à une rémunération », laquelle « est fixée par décret pris sur avis du ministre des finances » ; le même article ajoute qu'ils bénéficient en outre des régimes de retraite et de prévoyance dans les conditions prévues par la loi [@loi83-112, art. 13].
-
-Le premier principe est la règle du **service fait** : le droit à rémunération naît de l'exécution effective du service, et non de la seule qualité d'agent. Cette règle n'est pas propre à la fonction publique — elle prolonge un principe général des finances publiques, énoncé par le Code de la comptabilité publique : « Aucun paiement ne peut être effectué qu'au véritable créancier justifiant de ses droits et **pour l'acquittement d'un service fait** » [@loi73-81, art. 41]. La réserve que ce texte ménage — les avances et acomptes des articles 108 à 118 — vise les marchés et conventions passés avec des entrepreneurs ou des fournisseurs, et non la rémunération des agents publics : elle ne tempère donc pas la règle du côté qui nous occupe ici.
-
-Le second est le principe de **légalité de la rémunération** : celle-ci est fixée par décret, pris sur avis du ministre des finances. Une rémunération ne peut donc être instituée ni modifiée par un autre véhicule. L'article 14 en tire la conséquence pour l'accessoire : aucune indemnité ou allocation « de quelque nature que ce soit » ne peut être accordée à un agent régi par le statut général si elle n'a fait l'objet d'un décret pris après avis du ministre des finances [@loi83-112, art. 14]. Ce principe n'est pas une simple précaution de méthode : il fonde la règle suivie dans tout ce chapitre, selon laquelle la source opposable d'un montant de rémunération est le décret publié au JORT, et il éclaire l'articulation entre les accords de négociation salariale et les décrets qui les rendent exécutoires (voir [Les cycles de revalorisation salariale](#sec-cycles-revalorisation)).
+La seconde est la **légalité de la rémunération** : fixée par décret, elle ne peut être instituée ni modifiée par un autre acte. Il en va de même de ses accessoires : aucune indemnité ou allocation « de quelque nature que ce soit » ne peut être accordée sans un décret pris après avis du ministre des finances ([article 14](#r-ri-art14)). Le décret publié au *Journal officiel* est donc la source opposable d'un montant de rémunération, et un accord salarial n'a d'effet qu'une fois repris par décret (@sec-cycles-revalorisation).
 
 <!-- TODO : la doctrine signale des exceptions jurisprudentielles au service fait (interruption d'activité pour motifs de sécurité, suspension conservatoire ordonnée par le juge, annulation juridictionnelle d'un licenciement) ; aucune décision n'ayant été identifiée, ces exceptions ne sont pas rapportées ici. À sourcer sur la jurisprudence du Tribunal administratif. -->
 
-### L'ancien système indiciaire (avant 1998) {#sec-ancien-systeme-indiciaire}
+### Le traitement de base : une grille en dinars {#sec-ri-traitement-base}
 
-Le nom du régime demeure « indiciaire » alors que plus aucun indice n'entre aujourd'hui dans le calcul du traitement. Cet apparent paradoxe s'explique par l'histoire : jusqu'à la fin des années 1990, la rémunération de base des agents publics était bien calculée à partir d'un **[chiffre indiciaire](#g-chiffre-indiciaire)** attaché à chaque emploi, converti en dinars par un texte distinct. La réforme de 1997 a supprimé cette conversion sans changer le nom du régime.
+À chaque couple **grade × échelon** correspond un **[traitement de base](#g-traitement-de-base) mensuel libellé directement en dinars**, lu sur la grille des salaires annexée au [décret du 16 septembre 1997](#r-ri-c-grille). La grille couvre plusieurs centaines de grades, chacun déployé sur ses échelons d'ancienneté, en **trois tableaux distincts** — fonctionnaires, agents temporaires et ouvriers ([article 2 bis](#r-ri-c-2bis)).
 
-Le mécanisme comportait deux étages, dont les textes sont distincts et bien identifiés.
+Aucun indice n'entre dans ce calcul : aucun texte en vigueur ne publie de « valeur du point » qui, appliquée à un indice, déterminerait le traitement. Le régime doit son nom au mécanisme en vigueur jusqu'au 31 décembre 1997, où un chiffre indiciaire était converti en dinars (@sec-ancien-systeme-indiciaire).
 
-Le premier étage classait les emplois. Des décrets « relatifs au **classement hiérarchique et à l'échelonnement indiciaire** » applicables à tel corps ou à telle catégorie de fonctionnaires attribuaient à chaque grade son indice. Cette série est longue et continue : elle remonte au moins au décret n°60-328 du 17 septembre 1960 [@decret-60-328] et se poursuit corps par corps pendant plus de trente ans — la formule survit d'ailleurs à la réforme de 1997, puisque des décrets du 10 novembre 1997 modifient encore des textes de classement de cette famille.
+La composition de la grille est celle du 1^er^ avril 2007 (@sec-ri-reforme-2007). Le chapitre en donne la structure — trois tableaux, un montant par grade et par échelon — et un exemple de montant, celui du premier échelon de l'inspecteur central des affaires économiques.
 
-Le second étage donnait à l'indice sa valeur en dinars. Ce rôle — celui que joue, dans le modèle français, la « valeur du point » — était tenu par une série de décrets « fixant le **traitement global annuel** », périodiquement revalorisés : décret n°75-353 du 3 juin 1975 [@decret-75-353], puis décrets n°77-122 du 16 février 1977, n°78-53 du 25 janvier 1978, n°78-923 du 23 octobre 1978, n°79-93 du 11 janvier 1979 [@decret-79-93] et n°80-128 du 12 février 1980. Il existait donc bien, avant 1997, un instrument opérant de conversion indice → dinars ; c'est cet instrument, et non la notion d'indice elle-même, que la réforme a fait disparaître.
+<!-- TODO (documentaliste) : établir si un texte postérieur au 1er avril 2007 modifie la grille des traitements de base, et sur quel élément de la rémunération les augmentations générales sont servies depuis 2016 ; le chapitre ne cite aucun texte postérieur. Tant que ce n'est pas fait, l'état du droit se date « au 1er avril 2007 » sans dire qu'il est inchangé ; si une recherche est menée sans résultat, créer la fiche RECHERCHE correspondante (fiche de plan de l'architecte, § 10, Q3). -->
+<!-- TODO (rédacteur) : le chapitre ne montre pas la grille des traitements de base, hors l'exemple de l'inspecteur central. Tableau attendu `tbl-ri-grille-reperes` (premier et dernier échelon de quelques grades par catégorie, en 1998 et en 2007), à engendrer et non à recopier une fois les annexes des décrets n° 97-1832 et n° 2007-268 datées et sourcées. Voir docs/notes/backlog-precis.md. -->
 
-Ce dispositif ne couvrait pas une population homogène, mais trois, dotées chacune de sa propre chaîne de textes — partition qui explique la structure des grilles postérieures à 1997 :
+### L'avancement d'échelon et la promotion {#sec-ri-avancement-promotion}
 
-| Population | Texte de référence du classement et de la rémunération |
-|---|---|
-| **Fonctionnaires** | décrets de classement hiérarchique par corps, valorisés par les décrets « traitement global annuel » [@decret-79-93] |
-| **[Agents temporaires](#g-agent-temporaire)** | décret n°73-316 du 27 juin 1973, relatif au classement hiérarchique et à l'échelonnement indiciaire qui leur sont applicables [@decret-73-316] |
-| **[Ouvriers de l'État](#g-ouvrier-de-l-etat)** | décret n°73-384 du 10 août 1973, fixant le statut du personnel ouvrier [@decret-73-384], modifié par le décret n°79-94 du 11 janvier 1979 [@decret-79-94] |
+La progression de la rémunération dans la carrière emprunte **deux mécanismes distincts**, que le statut général traite séparément.
 
-: Les trois chaînes de textes du régime indiciaire antérieur à 1997. {#tbl-chaines-indiciaires}
+Le premier est l'[avancement d'échelon](#g-avancement-echelon), qui fait progresser l'agent *à l'intérieur* de son grade. Il a lieu d'un échelon à l'échelon immédiatement supérieur et s'opère **automatiquement, selon les cadences déterminées par les statuts particuliers** de chaque corps ([articles 23 et 24](#r-ri-art23-24)). Le statut général ne fixe donc pas de cadence chiffrée unique : la durée de passage est arrêtée corps par corps.
 
-Ce que percevait effectivement l'agent ne se réduisait pas au seul produit de l'indice. Le décret de 1997 énumère, en décrivant ce que le nouveau traitement de base vient remplacer, les trois éléments dont se composait l'ancienne rémunération de base des fonctionnaires et des agents temporaires : le **traitement indiciaire** proprement dit, une **indemnité complémentaire** et une **indemnité provisoire complémentaire**, auxquelles s'ajoutait, pour les agents rangés à un indice égal ou inférieur à 200, une exonération partielle de cotisation retraite fixée à 7 dinars [@decret-97-1832, art. 3 et 6]. Le mécanisme indiciaire ne portait donc qu'une part de la rémunération de base, le reste ayant pris la forme d'indemnités venues corriger l'érosion de la grille.
+Le second est la **[promotion](#g-promotion)**, qui fait changer l'agent *de* grade : elle est « l'accession du fonctionnaire au grade immédiatement supérieur à celui dont il est titulaire », par concours, examen ou cycle de formation, ou au choix sur une liste d'aptitude ([article 28](#r-ri-art28)).
 
-Sur l'**origine** du dispositif, le texte fondateur est identifié, mais son contenu n'est pas établi ici. Son existence et sa nature sont attestées par le décret de 1997 lui-même, qui vise en tête « le décret du 23 mai 1949, portant fixation du budget de l'exercice 1949-1950 » [@decret-1949-budget; @decret-97-1832] : le système des chiffres indiciaires procède donc bien d'un **texte budgétaire de 1949**, encore en vigueur près d'un demi-siècle plus tard, puisqu'il fallait le viser pour l'abroger. Sur son contenu, ce précis s'en remet à une source doctrinale : selon Salah Eddine Chérif et Maher Kammoun, ses articles 103 à 105 auraient affecté à chaque emploi un indice variant de 100 à 800 — certains emplois supérieurs pouvant être classés hors catégories au-delà de 800 —, réparti les emplois en **quatre catégories** correspondant aux plages d'indices 225-800 (A), 185-360 (B), 130-250 (C) et 100-195 (D), et renvoyé à des décisions du directeur des finances pour la valeur des indices [@cherif-kammoun-tajir]. Si cette description se confirmait sur le texte lui-même, la partition en quatre catégories A, B, C et D que retient aujourd'hui le décret n°99-12 [@decret-99-12] serait antérieure d'un demi-siècle à ce décret, le **critère** de classement ayant seul changé — l'indice hiérarchique cédant la place au niveau de diplôme. Ce rapprochement est présenté comme une hypothèse attribuée, et non comme un fait établi.
+Le **reclassement** consécutif à une promotion est régi par une règle protectrice du statut général : l'agent promu est rangé à l'échelon correspondant au traitement de base d'origine immédiatement supérieur à celui qu'il percevait dans son ancienne position ; toutefois, « l'augmentation obtenue suite à la promotion ne peut être inférieure à l'avantage que lui aurait procuré un avancement normal dans son ancienne position » ([article 33](#r-ri-art33)). Une promotion ne peut donc jamais rapporter moins qu'un simple avancement d'échelon — garantie introduite dans sa rédaction actuelle par la [loi n°97-83 du 20 décembre 1997](#r-ri-c-loi97), et que le [décret](#r-ri-c-art10) applique sans y déroger.
 
-<!-- TODO : lire les articles 103 à 105 du décret du 23 mai 1949 (budget de l'exercice 1949-1950) ; le texte est identifié par le visa du décret n°97-1832 mais le corpus JORT local ne remonte pas à 1949. Seul son contenu reste attribué à la source doctrinale. -->
-<!-- TODO : compléter la série « traitement global annuel » en amont de 1975 et en aval de 1980 (recherche JORT par intitulé), afin d'en faire une véritable chronologie. -->
+### Les indemnités et primes {#sec-ri-indemnites}
 
-### Le traitement de base et la grille en dinars
+Les augmentations générales des salaires, servies par corps sur une indemnité puis par catégorie, ont leur section : @sec-cycles-revalorisation.
 
-La grille de [traitement de base](#g-traitement-de-base) aujourd'hui en vigueur procède du décret n°97-1832 du 16 septembre 1997, qui en fixe la structure [@decret-97-1832]. Le principe est le suivant : à chaque couple **grade × échelon** correspond un **traitement de base mensuel libellé directement en dinars**. La grille complète couvre plusieurs centaines de grades, chacun déployé sur ses échelons d'ancienneté. C'est ce texte qui met fin au mécanisme indiciaire décrit ci-dessus : la conversion d'un indice en dinars disparaît, et la grille annexée devient le barème lui-même. Le traitement de base est « fixé à compter du **1^er^ janvier 1998**, conformément à la grille des salaires telle que fixée par l'annexe ci-jointe » [@decret-97-1832, art. 2] ; le décret entre en vigueur à cette même date et abroge, à compter d'elle, toutes dispositions antérieures contraires [@decret-97-1832, art. 11 et 12]. La grille se déploie en **trois tableaux distincts** — fonctionnaires, agents temporaires et ouvriers [@decret-2007-268] —, partition qui prolonge exactement les trois chaînes de textes antérieures (@tbl-chaines-indiciaires).
+Au traitement de base s'ajoute un ensemble indemnitaire dont l'architecture combine principalement : des **indemnités spécifiques** propres à chaque corps, une **prime de rendement** et des **indemnités de sujétions**. Ces composantes sont souvent exclusives les unes des autres. Depuis le 1^er^ avril 2007, une fraction des indemnités spécifiques est intégrée au traitement de base (@sec-ri-reforme-2007).
 
-Le passage d'un système à l'autre n'a pas été neutre au niveau individuel, et le pouvoir réglementaire l'a anticipé. Chaque agent en exercice est reclassé au traitement de base **égal** à la somme de son traitement indiciaire, de son indemnité complémentaire et de son indemnité provisoire complémentaire ; si aucun échelon de la nouvelle grille ne correspond exactement à ce total, il est rangé au traitement immédiatement inférieur et perçoit une **[indemnité compensatrice](#g-indemnite-compensatrice)** égale à la différence, en conservant l'ancienneté acquise dans son échelon et dans son grade [@decret-97-1832, art. 6]. Cette indemnité est soumise aux mêmes retenues sociales que le traitement [@decret-97-1832, art. 9].
+Aucune indemnité n'est accordée sans décret (@sec-ri-droit-remuneration). Aucun décret instituant et chiffrant une **indemnité de résidence** commune à tous les corps (taux, zones géographiques) n'est identifié ici. Le régime n'a donc, en l'état des textes identifiés, pas d'indemnité de résidence générale comparable à celle du modèle français de carrière.
 
-Le décret n°97-2127 du 10 novembre 1997 en règle le sort dans le temps, et l'on y lit la logique de la réforme : l'indemnité compensatrice n'est pas un complément pérenne mais un **différentiel appelé à se résorber**. Elle est maintenue lors des avancements d'échelon, mais cesse d'être servie dans trois cas — au terme de la période passée au niveau de rémunération supérieur au dernier échelon du grade, à la suite d'une promotion, ou lors du passage d'une grille à une autre —, l'agent étant alors rangé au traitement de base immédiatement supérieur à la somme de son ancien traitement et de son indemnité [@decret-97-2127, art. 1 et 2]. Le même décret institue une **seconde indemnité**, propre aux agents rangés à un indice égal ou inférieur à 200, destinée à compenser la perte nette résultant de l'assujettissement de leur nouveau traitement à la cotisation retraite ; elle se résorbe à hauteur de tout avancement et s'éteint définitivement à des niveaux de rémunération fixés catégorie par catégorie [@decret-97-2127, art. 5 à 7].
-
-Ce décret appartient à un lot de textes du 10 novembre 1997 consacrés à l'accompagnement de la réforme, qui ajustent au même moment le classement de plusieurs corps et divers régimes indemnitaires. On retrouvera ce même souci de neutralité individuelle dans la recomposition de 2007, décrite ci-après.
-
-Cette réforme s'accompagne, la même année, d'une révision du statut général lui-même : la loi n°97-83 du 20 décembre 1997 modifie plusieurs dispositions de la loi n°83-112 [@loi97-83], dont celles relatives à la promotion et au reclassement examinées plus bas.
-
-Deux décrets du 12 février 2007 ont recomposé cette grille, à effet du 1^er^ avril 2007 [@decret-2007-268, art. 3]. Le décret n°2007-267 a transféré une partie des indemnités spécifiques de corps vers le traitement de base [@decret-2007-267]. Le décret n°2007-268 n'a pas institué une grille nouvelle : il **modifie et complète le décret n°97-1832**, qui demeure le texte de base. Il y insère un **article 2 bis** disposant que les montants transférés sont intégrés au traitement de base et que la grille des salaires des fonctionnaires, des agents temporaires et des ouvriers est fixée conformément aux annexes — confirmant que les montants sont arrêtés en annexes, et non calculés à partir d'un point d'indice — et il **abroge et remplace l'article 10** du décret de 1997, relatif au reclassement consécutif à une promotion [@decret-2007-268, art. 1 et 2].
-
-À titre d'illustration de cette recomposition, et non d'une hausse nette de rémunération : pour le grade d'inspecteur central des affaires économiques, le traitement de base mensuel du premier échelon s'établissait à environ 203 DT sous la grille antérieure [@decret-97-1832], puis à 611 DT à compter du 1er avril 2007 après l'intégration d'une partie de l'indemnitaire dans la base [@decret-2007-268]. L'écart traduit pour l'essentiel le basculement d'indemnités spécifiques vers le traitement de base — opération à somme largement constante au niveau de la rémunération globale — et non un relèvement du salaire net.
-
-La progression de la rémunération dans la carrière emprunte **deux mécanismes distincts**, que le statut général traite séparément et qu'il ne faut pas confondre.
-
-Le premier est l'[avancement d'échelon](#g-avancement-echelon), qui fait progresser l'agent *à l'intérieur* de son grade. Il a lieu d'un échelon à l'échelon immédiatement supérieur [@loi83-112, art. 23] et s'opère **automatiquement, selon les cadences déterminées par les statuts particuliers** de chaque corps [@loi83-112, art. 24]. Le droit commun ne fixe donc pas de cadence chiffrée unique : la durée de passage d'un échelon à l'autre est arrêtée corps par corps par les statuts particuliers, sans rythme général sourçable au niveau du statut général.
-
-Le second est la **[promotion](#g-promotion)**, qui fait changer l'agent *de* grade : elle est « l'accession du fonctionnaire au grade immédiatement supérieur à celui dont il est titulaire » et emprunte deux voies — d'une part le concours interne, l'examen professionnel ou le cycle de formation organisé par l'administration ; d'autre part le choix, au profit des fonctionnaires inscrits par ordre de mérite sur une liste d'aptitude établie après consultation de la commission administrative paritaire compétente [@loi83-112, art. 28]. Là où l'avancement d'échelon récompense l'ancienneté de façon automatique, la promotion fait intervenir la sélection et la manière de servir.
-
-Le **reclassement** consécutif à une promotion est régi par une règle protectrice du statut général : l'agent promu est rangé à l'échelon correspondant au traitement de base d'origine immédiatement supérieur à celui qu'il percevait dans son ancienne position ; toutefois, « l'augmentation obtenue suite à la promotion ne peut être inférieure à l'avantage que lui aurait procuré un avancement normal dans son ancienne position » [@loi83-112, art. 33]. Autrement dit, une promotion ne peut jamais rapporter moins qu'un simple avancement d'échelon — garantie introduite dans sa rédaction actuelle par la loi n°97-83 du 20 décembre 1997 [@loi97-83].
-
-Le niveau réglementaire **applique** cette règle sans y déroger, en la déclinant selon la portée de la promotion. L'article 10 du décret n°97-1832, dans sa rédaction issue du décret n°2007-268, distingue la promotion **au sein d'une même catégorie ou sous-catégorie** — l'agent est reclassé au traitement de base immédiatement supérieur à celui qu'il percevait, en conservant son ancienneté — et la promotion **à un grade de la catégorie immédiatement supérieure**, pour laquelle le reclassement s'opère au niveau de rémunération correspondant au traitement de base immédiatement supérieur. Dans les deux cas, l'alinéa final reprend mot pour mot la garantie de l'article 33 du statut général [@decret-2007-268, art. 2]. La règle statutaire et sa déclinaison réglementaire disent donc la même chose, la seconde ajoutant seulement la distinction entre promotion intra-catégorielle et changement de catégorie.
-
-
-### Les indemnités et primes
-
-Au traitement de base s'ajoute un ensemble indemnitaire dont l'architecture combine principalement : des **indemnités spécifiques** propres à chaque corps, une **prime de rendement** et des **indemnités de sujétions**. Ces composantes sont souvent exclusives les unes des autres. L'intégration partielle de 2007 a précisément consisté à transférer une fraction de cet indemnitaire vers le traitement de base [@decret-2007-267], modifiant la part respective de la base et des indemnités dans la rémunération globale sans, par construction, en bouleverser le montant total.
-
-Le statut général pose, sur ce point, un principe d'encadrement : aucune indemnité ou allocation, de quelque nature que ce soit, ne peut être accordée à un agent si elle n'a fait l'objet d'un décret pris après avis du ministre des finances [@loi83-112, art. 14]. Ce principe n'institue toutefois aucun barème par lui-même. En particulier, aucun décret instituant et chiffrant une **indemnité de résidence** transversale (taux, zones géographiques) n'a été identifié dans le corpus sourcé : à la différence du modèle français, un tel dispositif permanent ne paraît pas avoir d'équivalent général en droit positif tunisien. Cette lacune est signalée sans être comblée — aucun taux n'est avancé ici.
+<!-- RECHERCHE r-indemnite-residence : décret instituant et chiffrant une indemnité de résidence commune aux agents régis par le statut général (voir docs/recherches.yml) -->
 
 <!-- TODO : vérifier l'existence éventuelle d'un décret instituant une indemnité de résidence transversale (taux/zones) ; non identifié dans le corpus à ce stade — lacune assumée, ne pas inventer de taux. -->
 
-Ces indemnités et primes ne comptent pas toutes pour la pension. La contribution au régime des pensions civiles et militaires, et avec elle la rémunération sur laquelle la pension est liquidée, ne porte que sur les éléments permanents de la rémunération, en espèces ou en nature, dont la liste est fixée par décret [@loi85-12, art. 10]. Le livre « Retraites » expose le contenu de cette liste et son évolution depuis 1985 : voir [Les éléments soumis à retenue](../retraites/_secteur_public.html#sec-cnrps-elements-retenue).
+**L'indemnité familiale** ne passe pas par la [Caisse nationale de retraite et de prévoyance sociale](#g-cnrps) (CNRPS). Ni la [loi n° 88-39](#r-ri-c-famille), ni le [décret n° 96-1906](#r-ri-c-famille) qui en fixe les taux ne mentionnent la CNRPS. C'est une **indemnité de rémunération portée par le budget de l'employeur**, non une prestation de sécurité sociale, et son montant est fixé en dinars par décret plutôt qu'en pourcentage d'un salaire. Le livre « Prestations sociales » en donne les montants et la chronologie.
 
-## Les prélèvements sur la rémunération
+Ces indemnités et primes ne comptent pas toutes pour la pension : la contribution, et avec elle la rémunération sur laquelle la pension est liquidée, ne porte que sur les éléments permanents de la rémunération, en espèces ou en nature, dont la liste est fixée par décret ([loi n° 85-12, article 10](#r-ri-c-pension)). Le livre « Retraites » en expose le contenu et l'évolution depuis 1985 : [Les éléments soumis à retenue](../retraites/_secteur_public.html#sec-cnrps-elements-retenue).
 
-La rémunération brute du régime indiciaire supporte plusieurs prélèvements, dont le détail relève des livres « Cotisations sociales » et « Fiscalité ». On se borne ici à les identifier et à renvoyer le lecteur aux chapitres correspondants.
+:::: {.chronologie-repliable titre="Droit à rémunération, traitement de base, avancement, promotion, indemnités : textes et articles en vigueur, 1973-2007"}
 
-- **Cotisations de sécurité sociale (CNRPS).** Les agents relèvent du régime de la [Caisse nationale de retraite et de prévoyance sociale](#g-cnrps), organisé par la loi n°85-12 du 5 mars 1985 [@loi85-12]. La part salariale de la cotisation retraite a suivi une trajectoire ascendante depuis 1994, dans le cadre des réformes de redressement des caisses (@tbl-cnrps-retraite). Le détail des taux, de leur assiette et de leur calendrier est traité dans le livre « Cotisations sociales » (secteur public) ; la pension elle-même relève du livre « Retraites ».
-- **Assurance maladie (CNAM).** La couverture maladie ne se déduit pas de la caisse de rattachement. Depuis la loi n°2004-71 du 2 août 2004 portant institution d'un régime d'assurance maladie [@loi2004-71], elle relève d'un régime unifié géré par la [Caisse nationale d'assurance maladie](#g-cnam), commun aux affiliés de la CNRPS et de la CNSS. Rattacher l'assurance maladie des agents publics à la CNRPS, comme le faisait le droit antérieur, n'est donc plus exact ; les modalités de ce régime sont traitées dans le livre consacré à la santé.
-- **Accidents du travail et maladies professionnelles.** Le secteur public dispose d'un **régime particulier**, distinct de celui des salariés du privé : la loi n°95-56 du 28 juin 1995 porte régime particulier de réparation des préjudices résultant des accidents du travail et des maladies professionnelles dans le secteur public [@loi95-56]. Son champ d'application ne se déduit pas de la seule qualité d'agent public : la liste des entreprises et établissements publics qui y sont soumis est fixée par décret et a été révisée à plusieurs reprises. La liste des employeurs publics qui y sont soumis n'est pas dans la loi : elle est fixée par le **décret n° 95-2487 du 18 décembre 1995** [@decret-95-2487], puis modifiée par les décrets n° 2000-908 [@decret-2000-908] et n° 2001-1446 [@decret-2001-1446], et complétée par les décrets n° 2006-2777 [@decret-2006-2777] et n° 2012-2586 [@decret-2012-2586]. Les deux premiers modificatifs remplacent des lignes de la liste, les deux derniers y ajoutent : le champ du régime particulier s'est élargi sans jamais être refondu.
+| Texte et articles | Portée | Ce que le texte dispose |
+|---|---|---|
+| []{#r-ri-art13}loi n° 83-112 du 12 décembre 1983, statut général [@loi83-112, art. 13] | texte fondateur | droit à rémunération « après service fait » ; rémunération « fixée par décret pris sur avis du ministre des finances » ; les agents bénéficient en outre des régimes de retraite et de prévoyance dans les conditions prévues par la loi |
+| []{#r-ri-art14}loi n° 83-112 [@loi83-112, art. 14] | texte fondateur | aucune indemnité ou allocation « de quelque nature que ce soit » ne peut être accordée à un agent régi par le statut général si elle n'a fait l'objet d'un décret pris après avis du ministre des finances |
+| []{#r-ri-ccp41}loi n° 73-81 du 31 décembre 1973, Code de la comptabilité publique [@loi73-81, art. 41] | principe antérieur | paiement au véritable créancier, « pour l'acquittement d'un service fait », sous réserve des avances et acomptes des articles 108 à 118 |
+| []{#r-ri-c-grille}décret n° 97-1832 du 16 septembre 1997 [@decret-97-1832, art. 2] | état du droit de la grille | traitement de base fixé « conformément à la grille des salaires telle que fixée par l'annexe ci-jointe » (@tbl-ri-grille-textes) |
+| []{#r-ri-c-2bis}décret n° 2007-268 du 12 février 2007 [@decret-2007-268] | état du droit de la grille | article 2 bis inséré dans le décret n° 97-1832 : la grille des salaires des fonctionnaires, des agents temporaires et des ouvriers est fixée conformément aux annexes |
+| []{#r-ri-art23-24}loi n° 83-112 [@loi83-112, art. 23] ; [@loi83-112, art. 24] | texte fondateur | avancement d'un échelon à l'échelon immédiatement supérieur (article 23), automatique, selon les cadences déterminées par les statuts particuliers (article 24) |
+| []{#r-ri-art28}loi n° 83-112 [@loi83-112, art. 28] | texte fondateur | promotion : accession au grade immédiatement supérieur, par concours interne, examen professionnel ou cycle de formation, ou au choix sur liste d'aptitude |
+| []{#r-ri-art33}loi n° 83-112 [@loi83-112, art. 33] | texte fondateur | reclassement après promotion : l'augmentation obtenue ne peut être inférieure à l'avantage d'un avancement normal dans l'ancienne position |
+| []{#r-ri-c-loi97}loi n° 97-83 du 20 décembre 1997 [@loi97-83] | étape | rédaction actuelle de la garantie de l'article 33 du statut général |
+| []{#r-ri-c-art10}décret n° 2007-268 [@decret-2007-268, art. 2] | état du droit de la grille | nouvelle rédaction de l'article 10 du décret n° 97-1832 : reclassement consécutif à une promotion, au sein d'une catégorie ou vers la catégorie immédiatement supérieure |
+| []{#r-ri-c-famille}loi n° 88-39 du 6 mai 1988 ; décret n° 96-1906 du 16 octobre 1996 [@loi88-39 ; @decret96-1906] | renvoi au livre « Prestations sociales » | la loi fait servir l'indemnité familiale aux agents publics « *autres que ceux soumis au régime de sécurité sociale institué par la loi n° 60-30* » ; le décret vise « *les indemnités familiales dues aux fonctionnaires et agents de l'État, des collectivités publiques locales et des établissements publics à caractère administratif* » ; ni l'un ni l'autre ne mentionne la CNRPS |
+| []{#r-ri-c-pension}loi n° 85-12 du 5 mars 1985 [@loi85-12, art. 10] | renvoi au livre « Retraites » | la contribution au régime des pensions civiles et militaires et la pension portent sur les éléments permanents de la rémunération, en espèces ou en nature, dont la liste est fixée par décret |
+
+: Le droit à rémunération et la construction de la rémunération, texte par texte, 1973-2007 {#tbl-ri-construction-textes}
+
+**Les deux voies de la promotion.** La promotion emprunte deux voies — d'une part le concours interne, l'examen professionnel ou le cycle de formation organisé par l'administration ; d'autre part le choix, au profit des fonctionnaires inscrits par ordre de mérite sur une liste d'aptitude établie après consultation de la commission administrative paritaire compétente. Là où l'avancement d'échelon récompense l'ancienneté de façon automatique, la promotion fait intervenir la sélection et la manière de servir.
+
+**Les avances et acomptes.** La réserve que le Code de la comptabilité publique ménage à la règle du service fait — les avances et acomptes des articles 108 à 118 — vise les marchés et conventions passés avec des entrepreneurs ou des fournisseurs, et non la rémunération des agents publics : elle ne tempère donc pas la règle pour ces derniers.
+
+**Le reclassement après promotion, selon la portée de la promotion.** L'article 10 du décret n°97-1832, dans sa rédaction issue du décret n°2007-268, distingue la promotion **au sein d'une même catégorie ou sous-catégorie** — l'agent est reclassé au traitement de base immédiatement supérieur à celui qu'il percevait, en conservant son ancienneté — et la promotion **à un grade de la catégorie immédiatement supérieure**, pour laquelle le reclassement s'opère au niveau de rémunération correspondant au traitement de base immédiatement supérieur. Dans les deux cas, l'alinéa final reprend mot pour mot la garantie de l'article 33 du statut général. La règle statutaire et sa déclinaison réglementaire disent donc la même chose, la seconde ajoutant seulement la distinction entre promotion intra-catégorielle et changement de catégorie.
+
+::::
+
+## Les prélèvements sur la rémunération {#sec-ri-prelevements}
+
+La rémunération brute supporte quatre prélèvements — retenue pour pension, cotisation d'assurance maladie, retenue à la source de l'impôt sur le revenu, contribution sociale de solidarité —, auxquels s'ajoute un régime d'accidents du travail propre au secteur public. L'histoire de chacun est dans un autre volume, indiqué à chaque fois.
+
+- **Retenue pour pension (CNRPS).** Les agents relèvent du régime de la [Caisse nationale de retraite et de prévoyance sociale](#g-cnrps), organisé par la [loi n°85-12 du 5 mars 1985](#r-ri-p-1985). La retenue de l'agent est de 7 % sous la loi de 1959, de 5 % de 1975 à 1994, puis monte par paliers : 6 % en 1994, 7 % en 2004, 8,2 % en 2009, 9,2 % depuis le 1^er^ janvier 2020 (@tbl-cnrps-retraite). L'assiette et le calendrier sont au livre « Cotisations sociales » ([Le secteur public](../cotisations_sociales/_pensions.html#sec-cot-pensions-public)), la pension au livre « Retraites ».
+- **Assurance maladie (CNAM).** Depuis la [loi n°2004-71 du 2 août 2004](#r-ri-p-2004), la couverture maladie ne dépend plus de la caisse de rattachement : elle relève d'un régime unifié géré par la [Caisse nationale d'assurance maladie](#g-cnam), commun aux affiliés de la CNRPS et de la CNSS. La cotisation des agents publics est au livre « Cotisations sociales » ([L'assurance maladie, le secteur public](../cotisations_sociales/_maladie.html#sec-cot-maladie-public)).
+- **Accidents du travail et maladies professionnelles.** Le secteur public dispose d'un **régime particulier**, distinct de celui des salariés du privé ([loi n°95-56 du 28 juin 1995](#r-ri-p-1995)). La liste des entreprises et établissements publics soumis est fixée par un [décret de 1995](#r-ri-p-liste), [modifié en 2000 et en 2001](#r-ri-p-liste-modif) puis [complété en 2006 et en 2012](#r-ri-p-liste-ajouts), sans jamais être refondue.
+- **Retenue à la source de l'impôt sur le revenu (IRPP).** Le traitement et les indemnités imposables sont soumis à la retenue à la source de l'[impôt sur le revenu des personnes physiques](#g-irpp), régi par le [code de l'IRPP et de l'IS](#r-ri-p-irpp) de 1989 ; le barème est au livre consacré à la fiscalité.
+- **Contribution sociale de solidarité (CSS).** Créée par la [loi de finances pour 2018](#r-ri-p-css-2018), la [contribution sociale de solidarité](#g-css) des personnes physiques majore d'un point chaque taux de tranche du barème de l'impôt sur le revenu ; la [loi de finances pour 2023](#r-ri-p-css-2023) ramène cette majoration à un demi-point pour les revenus déclarés en 2023, 2024 et 2025, et en dispense les seuls salariés et pensionnés dont le revenu annuel net n'excède pas 5 000 dinars (@tbl-css-salarie). L'histoire de son taux et son affectation aux caisses sont au livre [« Les caisses de sécurité sociale »](../caisses/_etat_caisses.html#sec-caisses-financeur), son assiette et son calcul au livre consacré à la fiscalité.
 
 <!-- TODO : établir sur textes la liste exacte des branches financées par les cotisations
 CNRPS (retraite, prévoyance) et la ventilation des taux entre elles. La loi n° 85-12 porte la
@@ -194,10 +249,6 @@ DEUX POINTS DE CETTE CONSIGNE SONT CLOS, vérifiés le 20 septembre 2026 :
   fascicule par fascicule, les cinq textes sont cités et ont leur clé dans les deux langues.
   Piège rencontré : jort_cache.db porte DEUX enregistrements sous le numéro 95-2487 dans le
   même fascicule ; seul celui de la page 2344 concerne la loi n° 95-56. -->
-- **Indemnité familiale.** Elle ne passe pas par la caisse. La loi n° 88-39 la fait servir aux agents publics « *autres que ceux soumis au régime de sécurité sociale institué par la loi n° 60-30* », et le décret n° 96-1906 vise « *les indemnités familiales dues aux fonctionnaires et agents de l'État, des collectivités publiques locales et des établissements publics à caractère administratif* » : ni l'un ni l'autre ne mentionne la CNRPS [@loi88-39 ; @decret96-1906]. C'est une **indemnité de rémunération portée par le budget de l'employeur**, non une prestation de sécurité sociale, et son montant est fixé en dinars par décret plutôt qu'en pourcentage d'un salaire. Le livre « Prestations sociales » en donne les montants et la chronologie.
-
-- **Retenue à la source de l'impôt sur le revenu (IRPP).** Le traitement et les indemnités imposables sont soumis à la retenue à la source au titre de l'[impôt sur le revenu des personnes physiques](#g-irpp), régi par le code de l'IRPP et de l'IS issu de la loi n°89-114 du 30 décembre 1989 [@loi-irpp-is-1989]. Le barème et ses modalités sont exposés dans le livre consacré à la fiscalité.
-- **Contribution sociale de solidarité (CSS).** La [contribution sociale de solidarité](#g-css) a été créée par l'article 53 de la loi n°2017-66 du 18 décembre 2017 portant loi de finances pour 2018 [@lf-2018, art. 53]. Pour les personnes physiques, elle est calculée en majorant d'un point chaque taux de tranche du barème de l'impôt sur le revenu ; la loi de finances pour 2023 ramène cette majoration à un demi-point pour les revenus dont la déclaration échoit en 2023, 2024 et 2025, et en dispense les seuls salariés et pensionnés dont le revenu annuel net n'excède pas 5 000 dinars [@lf-2023, art. 22] (@tbl-css-salarie). L'histoire de son taux et son affectation aux caisses sont exposées dans le livre [« Les caisses de sécurité sociale »](../caisses/_etat_caisses.html#sec-caisses-financeur), son assiette et son calcul dans le livre consacré à la fiscalité.
 
 <!-- TODO (rédacteur) : le tableau tbl-css-salarie, engendré, présente la CSS comme un « taux applicable aux salariés » de 1 % puis 0,5 % au 1er janvier 2023, sans dire qu'il s'agit d'une majoration en points des taux du barème, ni que le demi-point ne vaut que pour les revenus déclarés en 2023-2025 (loi de finances pour 2023, art. 22, § 2). Voir docs/notes/backlog-modele.md. -->
 
@@ -222,53 +273,163 @@ print(ot.markdown_avec_legende(
     "tbl-css-salarie"))
 ```
 
-Le premier millésime de la cotisation retraite, au 1^er^ février 1959, est une convention : la loi n° 59-18 n'énonce pas de date d'effet pour son article 5 [@loi59-18, art. 5].
+La loi n° 59-18 n'énonce pas de date d'effet pour son [article 5](#r-ri-p-1959), qui fixe la première retenue pour pension.
+
+<!-- TODO (rédacteur) : le tableau tbl-cnrps-retraite, engendré, date la première retenue du 1er février 1959, alors que la loi n° 59-18 est du 5 février 1959 et n'énonce pas de date d'effet pour son article 5 : cette date ne peut pas être celle où la loi devient exécutoire. L'ancien texte la disait « une convention » ; le texte rendu ne dit plus que ce que la loi énonce. Constat porté à docs/notes/backlog-modele.md. -->
+
+:::: {.chronologie-repliable titre="Prélèvements sur la rémunération des agents publics — pension, maladie, accidents du travail, impôt, contribution sociale de solidarité : textes et articles, 1959-2023"}
+
+| Texte et articles | Portée | Ce que le texte dispose |
+|---|---|---|
+| []{#r-ri-p-1959}loi n° 59-18 du 5 février 1959 [@loi59-18, art. 5] | histoire au livre « Cotisations sociales » | première retenue pour pension de l'agent ; aucune date d'effet énoncée pour cet article |
+| []{#r-ri-p-1985}loi n° 85-12 du 5 mars 1985 [@loi85-12] | histoire au livre « Cotisations sociales » | régime des pensions civiles et militaires de retraite et des survivants dans le secteur public |
+| []{#r-ri-p-2004}loi n° 2004-71 du 2 août 2004 [@loi2004-71] | histoire au livre « Cotisations sociales » | institution d'un régime d'assurance maladie unifié, géré par la Caisse nationale d'assurance maladie |
+| []{#r-ri-p-1995}loi n° 95-56 du 28 juin 1995 [@loi95-56] | régime propre au secteur public | régime particulier de réparation des préjudices résultant des accidents du travail et des maladies professionnelles dans le secteur public |
+| []{#r-ri-p-liste}décret n° 95-2487 du 18 décembre 1995 [@decret-95-2487] | étape | liste des entreprises et établissements publics soumis à la loi n° 95-56 |
+| []{#r-ri-p-liste-modif}décret n° 2000-908 [@decret-2000-908] ; décret n° 2001-1446 [@decret-2001-1446] | ajustements du champ | des lignes de la liste sont remplacées |
+| []{#r-ri-p-liste-ajouts}décret n° 2006-2777 [@decret-2006-2777] ; décret n° 2012-2586 [@decret-2012-2586] | ajustements du champ | des lignes sont ajoutées à la liste |
+| []{#r-ri-p-irpp}loi n° 89-114 du 30 décembre 1989 [@loi-irpp-is-1989] | histoire au livre de la fiscalité | promulgation du code de l'IRPP et de l'IS |
+| []{#r-ri-p-css-2018}loi n° 2017-66 du 18 décembre 2017, loi de finances pour 2018 [@lf-2018, art. 53] | histoire au livre de la fiscalité | création de la contribution sociale de solidarité : un point de plus sur chaque taux de tranche du barème de l'impôt sur le revenu |
+| []{#r-ri-p-css-2023}décret-loi n° 2022-79 du 22 décembre 2022, loi de finances pour 2023 [@lf-2023, art. 22] | histoire au livre de la fiscalité | majoration ramenée à un demi-point pour les revenus dont la déclaration échoit en 2023, 2024 et 2025 ; dispense des salariés et pensionnés dont le revenu annuel net n'excède pas 5 000 dinars |
+
+: Les prélèvements sur la rémunération des agents publics, texte par texte, 1959-2023 {#tbl-ri-prelevements-textes}
+
+**La liste des employeurs soumis au régime des accidents du travail du secteur public.** Le champ du régime ne se déduit pas de la seule qualité d'agent public, et la liste n'est pas dans la loi : elle est fixée par le **décret n° 95-2487 du 18 décembre 1995**, puis modifiée par les décrets n° 2000-908 et n° 2001-1446, et complétée par les décrets n° 2006-2777 et n° 2012-2586. Les deux premiers modificatifs remplacent des lignes de la liste, les deux derniers y ajoutent.
+
+::::
 
 ## Repères historiques {#sec-reperes-historiques-indiciaire}
 
-### La généalogie des statuts généraux
+Après la mise en place des statuts généraux, de 1956 à 1983, deux réformes touchent la grille, au 1^er^ janvier 1998 et au 1^er^ avril 2007. Elles modifient la **structure** de la rémunération davantage que son niveau, et s'accompagnent chacune d'un dispositif destiné à préserver les situations individuelles. Le niveau, lui, évolue par les augmentations générales des salaires, suivies ici de 1993 à 2028 (@sec-cycles-revalorisation).
 
-Le statut général de 1983 n'est pas le premier du genre : il clôt une série de textes dont l'ordre éclaire une particularité durable du régime indiciaire. Un décret du 15 novembre 1956 fixe d'abord le statut général des **ouvriers permanents** employés par l'État, les collectivités publiques locales et les établissements publics ; la loi n°59-12 du 5 février 1959 fixe ensuite le statut des **fonctionnaires** de l'État [@loi59-12]. Ces deux textes sont abrogés et remplacés par un statut général unique, la loi n°68-12 du 3 juin 1968 [@loi68-12], elle-même remplacée par la loi n°83-112 du 12 décembre 1983 aujourd'hui en vigueur [@loi83-112].
+### La mise en place : les statuts généraux, 1956-1983 {#sec-ri-statuts-generaux}
 
-De cette double origine subsiste une ligne de partage qui traverse tout le chapitre : **ouvriers et fonctionnaires n'ont jamais été rémunérés sur la même grille**. On la retrouve dans les textes indiciaires des années 1970 (@tbl-chaines-indiciaires), dans les grilles distinctes annexées au décret n°97-1832, et jusque dans les accords salariaux contemporains, où les « ouvriers » apparaissent en catégorie propre, rattachés par unités aux sous-catégories statutaires (@tbl-ugtt-2022).
+Le statut général de 1983 clôt une série de textes. Un décret du 15 novembre 1956 fixe d'abord le statut général des **ouvriers permanents** employés par l'État, les collectivités publiques locales et les établissements publics ; la [loi n°59-12 du 5 février 1959](#r-ri-s-1959) fixe ensuite le statut des **fonctionnaires** de l'État. Ces deux textes sont abrogés et remplacés par un statut général unique, la [loi n°68-12 du 3 juin 1968](#r-ri-s-1968), elle-même remplacée par la [loi n°83-112 du 12 décembre 1983](#r-ri-s-1983), aujourd'hui en vigueur.
+
+De cette double origine subsiste une séparation : **ouvriers et fonctionnaires n'ont jamais été rémunérés sur la même grille**. Elle se retrouve dans les textes indiciaires des années 1970 (@tbl-chaines-indiciaires), dans les grilles distinctes annexées au décret n°97-1832 (@sec-ri-traitement-base), et jusque dans les accords salariaux contemporains, où les « ouvriers » apparaissent en catégorie propre, rattachés par unités aux sous-catégories statutaires (@tbl-ugtt-2022).
 
 <!-- TODO : retrouver le décret du 15 novembre 1956 sur les ouvriers permanents (numéro, JORT) ; l'obstacle invoqué ici a disparu : le corpus JORT local (~/projets/PDFs-legislation-tunisie/PDFs/JORT) remonte désormais à 1956, vérifié le 20 septembre 2026. Les fascicules de novembre 1956 sont donc consultables, mais ce sont des scans sans couche texte : leur lecture demande une océrisation. Référence non créée tant que le texte n'est pas identifié. -->
 
-### Les jalons de la rémunération
+:::: {.chronologie-repliable titre="Statuts généraux de la fonction publique : textes, 1956-1997"}
 
-L'évolution de la rémunération indiciaire proprement dite se lit à travers quelques jalons réglementaires : la longue période indiciaire ouverte au milieu du XX^e^ siècle et ses décrets de « traitement global annuel » (voir [L'ancien système indiciaire](#sec-ancien-systeme-indiciaire)) ; la substitution, par le décret n°97-1832 de 1997, d'une grille en dinars au calcul par indice, assortie d'indemnités compensatrices [@decret-97-1832; @decret-97-2127] ; puis la recomposition de 2007 transférant une part de l'indemnitaire vers le traitement de base [@decret-2007-267; @decret-2007-268]. Les deux dernières opérations partagent un même trait : elles modifient la **structure** de la rémunération davantage que son niveau, et s'accompagnent chacune d'un dispositif destiné à préserver les situations individuelles.
+| Texte | Portée | Ce que le texte dispose |
+|---|---|---|
+| décret du 15 novembre 1956 | mise en place | statut général des ouvriers permanents employés par l'État, les collectivités publiques locales et les établissements publics ; seul l'énoncé de ce texte est connu ici |
+| []{#r-ri-s-1959}loi n° 59-12 du 5 février 1959 [@loi59-12] | mise en place | statut des fonctionnaires de l'État |
+| []{#r-ri-s-1968}loi n° 68-12 du 3 juin 1968 [@loi68-12] | mise en place | statut général unique des personnels de l'État, des collectivités publiques locales et des établissements publics à caractère administratif ; abroge et remplace les deux statuts précédents |
+| []{#r-ri-s-1983}loi n° 83-112 du 12 décembre 1983 [@loi83-112] | texte fondateur du droit en vigueur | statut général des personnels de l'État, des collectivités publiques locales et des établissements publics à caractère administratif ; remplace le statut de 1968 |
+| []{#r-ri-s-1997}loi n° 97-83 du 20 décembre 1997 [@loi97-83] | étape | modifie plusieurs dispositions du statut général, dont celles relatives à la promotion et au reclassement |
 
-Au-delà de ces textes, les cycles de gel et de revalorisation salariale font l'objet d'appréciations divergentes que ce précis se borne à rapporter, sans trancher. Le Fonds monétaire international et la Banque mondiale mettent en avant l'enjeu de **soutenabilité budgétaire** de la masse salariale de l'administration centrale [@imf-tunisia-art4-2020; @wb-tunisia-per-2020] ; le gouvernement justifie les arbitrages successifs au regard des contraintes des finances publiques ; les organisations syndicales, au premier rang desquelles l'UGTT, mettent en avant le pouvoir d'achat des agents.
+: Les statuts généraux de la fonction publique, texte par texte, 1956-1997 {#tbl-ri-statuts-textes}
 
-### Les cycles de revalorisation salariale {#sec-cycles-revalorisation}
+::::
 
-La revalorisation salariale dans la fonction publique procède de **cycles de négociation** entre l'UGTT et le gouvernement, traduits, lorsqu'ils aboutissent, par des **décrets d'augmentation générale des salaires** publiés au JORT. Ce détour par le décret n'est pas une formalité : il découle du principe de légalité de la rémunération examiné plus haut, selon lequel celle-ci est fixée par décret pris sur avis du ministre des finances [@loi83-112, art. 13]. Un accord salarial, si complet et si solennel soit-il, **ne produit par lui-même aucun effet de droit** sur la rémunération des agents ; c'est pourquoi les pouvoirs publics en reprennent le contenu dans un texte réglementaire, seul à même de lui conférer force exécutoire.
+### L'ancien système indiciaire, jusqu'en 1997 {#sec-ancien-systeme-indiciaire}
 
-Il en résulte une conséquence pratique pour ce précis : la source opposable est le décret JORT, qui fixe le programme et les montants ; les accords du dialogue social en constituent le cadre, connu principalement par des sources documentaires (communiqués, procès-verbaux syndicaux, presse) et non par un texte publié au JORT. Cette articulation invite à présenter ces revalorisations comme une **chronologie de cycles** plutôt que par des montants isolés, et à ne retenir que les montants effectivement fixés par un décret identifié.
+Jusqu'au 31 décembre 1997, la rémunération de base des agents publics est calculée à partir d'un **[chiffre indiciaire](#g-chiffre-indiciaire)** attaché à chaque emploi, converti en dinars par un texte distinct. Le régime en garde le nom, alors que plus aucun indice n'entre dans le calcul du traitement depuis le 1^er^ janvier 1998 (@sec-ri-reforme-1998).
 
-: Cycles de revalorisation salariale dans la fonction publique et décrets d'augmentation correspondants. Chaque décret est désigné par sa forme abrégée ; son intitulé officiel complet apparaît au survol. {#tbl-augmentations}
+Le mécanisme comporte deux étages.
 
-```{python}
-#| echo: false
-#| output: asis
-import sys; sys.path.insert(0, "../../../scripts")
-import augmentations
-augmentations.imprime("augmentations/augmentations-fonction-publique.csv", "cycles")
-```
+- **Le classement des emplois.** Des décrets « relatifs au **classement hiérarchique et à l'échelonnement indiciaire** » attribuent à chaque grade son indice, corps par corps. Cette série remonte au moins au [décret n°60-328 du 17 septembre 1960](#r-ri-a-1960) et se poursuit pendant plus de trente ans.
+- **La valeur de l'indice en dinars.** Ce rôle — celui de la « valeur du point » dans le modèle français — est tenu par des décrets « fixant le **traitement global annuel** », périodiquement revalorisés : six sont connus, de [1975](#r-ri-a-1975) à 1980.
 
-Les montants que ces décrets fixent, catégorie par catégorie et date par date, sont rassemblés dans la grille suivante. Une cellule vide signifie que le décret ne vise pas cette catégorie à cette date ; elle n'est pas comblée.
+C'est cet instrument de conversion, et non la notion d'indice, qui disparaît au 1^er^ janvier 1998. Le dispositif couvre trois populations, dotées chacune de sa propre chaîne de textes — partition qui explique la structure des grilles postérieures :
 
-: Montants mensuels de l'augmentation, par catégorie statutaire et par date d'effet, en dinars. {#tbl-augmentations-montants}
+| Population | Texte de référence du classement et de la rémunération |
+|---|---|
+| **Fonctionnaires** | décrets de classement hiérarchique par corps, valorisés par les [décrets « traitement global annuel »](#r-ri-a-1979) |
+| **[Agents temporaires](#g-agent-temporaire)** | [décret n°73-316 du 27 juin 1973](#r-ri-a-temporaires), relatif au classement hiérarchique et à l'échelonnement indiciaire qui leur sont applicables |
+| **[Ouvriers de l'État](#g-ouvrier-de-l-etat)** | [décret n°73-384 du 10 août 1973](#r-ri-a-ouvriers), fixant le statut du personnel ouvrier, modifié par le [décret n°79-94 du 11 janvier 1979](#r-ri-a-ouvriers-1979) |
 
-```{python}
-#| echo: false
-#| output: asis
-import sys; sys.path.insert(0, "../../../scripts")
-import augmentations
-augmentations.imprime("augmentations/augmentations-fonction-publique.csv", "montants")
-```
+: Les trois chaînes de textes du régime indiciaire en vigueur jusqu'au 31 décembre 1997. {#tbl-chaines-indiciaires}
 
-Rapportées les unes aux autres, ces tranches dessinent l'écart que douze années de revalorisations ont creusé entre le haut et le bas de la grille.
+Ce que percevait l'agent ne se réduisait pas au produit de l'indice. L'ancienne rémunération de base des fonctionnaires et des agents temporaires se composait de trois éléments, que le [décret de 1997](#r-ri-a-elements) énumère : le **traitement indiciaire** proprement dit, une **indemnité complémentaire** et une **indemnité provisoire complémentaire**, auxquelles s'ajoutait, pour les agents rangés à un indice égal ou inférieur à 200, une exonération partielle de cotisation retraite fixée à 7 dinars.
+
+Le système procède d'un **texte budgétaire de 1949**, « le décret du 23 mai 1949, portant fixation du budget de l'exercice 1949-1950 », que le décret de 1997 [vise](#r-ri-a-1949) encore près d'un demi-siècle plus tard. Son contenu n'est pas établi ici sur le texte lui-même : selon Salah Eddine Chérif et Maher Kammoun, ses articles 103 à 105 auraient affecté à chaque emploi un indice variant de 100 à 800 et réparti les emplois en **quatre catégories**, A, B, C et D [@cherif-kammoun-tajir].
+
+<!-- TODO : lire les articles 103 à 105 du décret du 23 mai 1949 (budget de l'exercice 1949-1950) ; le texte est identifié par le visa du décret n°97-1832 mais le corpus JORT local ne remonte pas à 1949. Seul son contenu reste attribué à la source doctrinale. -->
+<!-- TODO : compléter la série « traitement global annuel » en amont de 1975 et en aval de 1980 (recherche JORT par intitulé), afin d'en faire une véritable chronologie. -->
+
+:::: {.chronologie-repliable titre="Ancien système indiciaire : décrets de classement et de traitement global annuel, 1949-1980, et le décret de 1949 d'après la doctrine"}
+
+| Texte et articles | Portée | Ce que le texte dispose |
+|---|---|---|
+| []{#r-ri-a-1949}décret du 23 mai 1949, portant fixation du budget de l'exercice 1949-1950 [@decret-1949-budget; @decret-97-1832] | origine | texte visé en tête du décret n° 97-1832, donc encore en vigueur en 1997, puisqu'il fallait le viser pour l'abroger ; son contenu n'est connu ici que par la doctrine |
+| []{#r-ri-a-1960}décret n° 60-328 du 17 septembre 1960 [@decret-60-328] | classement | classement hiérarchique et échelonnements indiciaires de certaines catégories de fonctionnaires ; premier texte connu de la série |
+| []{#r-ri-a-temporaires}décret n° 73-316 du 27 juin 1973 [@decret-73-316] | classement — agents temporaires | classement hiérarchique et échelonnement indiciaire applicables aux agents temporaires |
+| []{#r-ri-a-ouvriers}décret n° 73-384 du 10 août 1973 [@decret-73-384] | classement — ouvriers | statut du personnel ouvrier de l'État, des collectivités publiques locales et des établissements publics à caractère administratif |
+| []{#r-ri-a-ouvriers-1979}décret n° 79-94 du 11 janvier 1979 [@decret-79-94] | ajustement — ouvriers | modifie le décret n° 73-384 |
+| []{#r-ri-a-1975}décret n° 75-353 du 3 juin 1975 [@decret-75-353] | valeur en dinars | fixe le « traitement global annuel » |
+| décrets n° 77-122 du 16 février 1977, n° 78-53 du 25 janvier 1978 et n° 78-923 du 23 octobre 1978 | ajustements | revalorisations du « traitement global annuel » ; seul l'intitulé de ces textes est connu ici |
+| []{#r-ri-a-1979}décret n° 79-93 du 11 janvier 1979 [@decret-79-93] | ajustement | fixe le « traitement global annuel » |
+| décret n° 80-128 du 12 février 1980 | ajustement | revalorisation du « traitement global annuel » ; seul l'intitulé de ce texte est connu ici |
+| []{#r-ri-a-elements}décret n° 97-1832 du 16 septembre 1997 [@decret-97-1832, art. 3 et 6] | description de l'ancien système | ancienne rémunération de base : traitement indiciaire, indemnité complémentaire, indemnité provisoire complémentaire ; exonération partielle de cotisation retraite de 7 dinars pour les indices égaux ou inférieurs à 200 |
+| décrets du 10 novembre 1997 modifiant des textes de classement | ajustements | la formule du « classement hiérarchique » est encore employée après le décret n° 97-1832 |
+
+: L'ancien système indiciaire, texte par texte, 1949-1997 {#tbl-ri-ancien-systeme-textes}
+
+**Une part seulement de la rémunération de base.** Le mécanisme indiciaire ne portait qu'une part de la rémunération de base, le reste ayant pris la forme d'indemnités venues corriger l'érosion de la grille.
+
+**Les deux séries de décrets.** La formule du classement survit au décret de 1997, puisque des décrets du 10 novembre 1997 modifient encore des textes de classement de cette famille. La série des décrets « fixant le traitement global annuel » comprend le décret n°75-353 du 3 juin 1975, puis les décrets n°77-122 du 16 février 1977, n°78-53 du 25 janvier 1978, n°78-923 du 23 octobre 1978, n°79-93 du 11 janvier 1979 et n°80-128 du 12 février 1980. Il existait donc bien, jusqu'au 31 décembre 1997, un instrument opérant de conversion de l'indice en dinars.
+
+**Le décret de 1949, d'après la doctrine.** Selon Salah Eddine Chérif et Maher Kammoun, les articles 103 à 105 du décret du 23 mai 1949 auraient affecté à chaque emploi un indice variant de 100 à 800 — certains emplois supérieurs pouvant être classés hors catégories au-delà de 800 —, réparti les emplois en **quatre catégories** correspondant aux plages d'indices 225-800 (A), 185-360 (B), 130-250 (C) et 100-195 (D), et renvoyé à des décisions du directeur des finances pour la valeur des indices [@cherif-kammoun-tajir]. Si cette description se confirmait sur le texte lui-même, la partition en quatre catégories A, B, C et D que retient aujourd'hui le décret n°99-12 [@decret-99-12] serait antérieure d'un demi-siècle à ce décret, le **critère** de classement ayant seul changé — l'indice hiérarchique cédant la place au niveau de diplôme. Ce rapprochement est présenté comme une hypothèse attribuée, et non comme un fait établi.
+
+::::
+
+### 1998 : la grille en dinars remplace l'indice {#sec-ri-reforme-1998}
+
+Au 1^er^ janvier 1998, la conversion d'un indice en dinars disparaît : la grille annexée au [décret n°97-1832 du 16 septembre 1997](#r-ri-g-1998) devient le barème lui-même. Le traitement de base est « fixé à compter du **1^er^ janvier 1998**, conformément à la grille des salaires telle que fixée par l'annexe ci-jointe » ; le décret [abroge](#r-ri-g-abrogation), à compter de cette date, toutes dispositions antérieures contraires.
+
+Quatre dispositions accompagnent le passage d'un système à l'autre.
+
+- **Un reclassement à rémunération égale.** Chaque agent en exercice est reclassé au traitement de base **égal** à la somme de son traitement indiciaire, de son indemnité complémentaire et de son indemnité provisoire complémentaire ; à défaut d'échelon correspondant exactement à ce total, il est rangé au traitement immédiatement inférieur et perçoit une **[indemnité compensatrice](#g-indemnite-compensatrice)** égale à la différence, en conservant son ancienneté d'échelon et de grade ([article 6](#r-ri-g-reclassement)).
+- **Une indemnité compensatrice appelée à se résorber.** Elle n'est pas un complément pérenne : maintenue lors des avancements d'échelon, elle cesse d'être servie dans trois cas, dont la promotion ([décret n°97-2127 du 10 novembre 1997](#r-ri-g-compensatrice)).
+- **Une seconde indemnité, pour les indices jusqu'à 200.** Les agents rangés à un indice égal ou inférieur à 200 reçoivent une [seconde indemnité](#r-ri-g-seconde), destinée à compenser la perte nette résultant de l'assujettissement de leur nouveau traitement à la cotisation retraite ; elle se résorbe à hauteur de tout avancement.
+- **Une révision du statut général, la même année.** La [loi n°97-83 du 20 décembre 1997](#r-ri-g-loi97) modifie plusieurs dispositions du statut général, dont celles relatives à la promotion et au reclassement (@sec-ri-avancement-promotion).
+
+### 2007 : une part des indemnités entre dans le traitement de base {#sec-ri-reforme-2007}
+
+Au 1^er^ avril 2007, une partie des indemnités spécifiques de corps est transférée dans le traitement de base, par [deux décrets du 12 février 2007](#r-ri-g-2007) ; le décret de 1997 reste le texte de base.
+
+- **Aucune grille nouvelle.** Le second de ces décrets **modifie et complète le décret n°97-1832**. Il y insère un [**article 2 bis**](#r-ri-g-2bis) : les montants transférés sont intégrés au traitement de base, et la grille des salaires est fixée conformément aux annexes — non calculée à partir d'un point d'indice.
+- **Une nouvelle rédaction du reclassement après promotion.** Le même décret **abroge et remplace l'article 10** du décret de 1997 (@sec-ri-avancement-promotion).
+- **Une recomposition, non une hausse nette de rémunération.** Pour le grade d'inspecteur central des affaires économiques, le traitement de base mensuel du premier échelon s'établissait à environ 203 DT sous la [grille antérieure](#r-ri-g-exemple), puis à 611 DT à compter du 1er avril 2007 après l'intégration d'une partie de l'indemnitaire dans la base. L'écart traduit pour l'essentiel le basculement d'indemnités spécifiques vers le traitement de base — opération à somme largement constante au niveau de la rémunération globale — et non un relèvement du salaire net.
+
+<!-- TODO (documentaliste) : l'exemple de l'inspecteur central donne « environ 203 DT » pour un montant que fixe l'annexe du décret n° 97-1832 : relever le montant exact à l'annexe, et le replacer dans le tableau attendu de la grille (tbl-ri-grille-reperes). -->
+
+:::: {.chronologie-repliable titre="Grille des traitements de base en dinars : passage de 1998, indemnités compensatrices et intégration de 2007 — textes et articles, date par date, 1997-2007"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-ri-g-1998}[1^er^ janvier 1998]{.insecable} | **rupture** | décret n° 97-1832 du 16 septembre 1997 [@decret-97-1832, art. 2] | chiffre indiciaire converti en dinars par un décret de « traitement global annuel », complété de deux indemnités → traitement de base « fixé à compter du 1^er^ janvier 1998, conformément à la grille des salaires telle que fixée par l'annexe ci-jointe » |
+| []{#r-ri-g-abrogation}[1^er^ janvier 1998]{.insecable} | étape de 1998 | décret n° 97-1832 [@decret-97-1832, art. 11 et 12] | entrée en vigueur du décret ; abrogation, à compter de cette date, de toutes dispositions antérieures contraires |
+| []{#r-ri-g-reclassement}[1^er^ janvier 1998]{.insecable} | étape de 1998 | décret n° 97-1832 [@decret-97-1832, art. 6] | reclassement au traitement de base égal à la somme du traitement indiciaire et des deux indemnités ; à défaut, traitement immédiatement inférieur et indemnité compensatrice égale à la différence, ancienneté conservée |
+| [1^er^ janvier 1998]{.insecable} | étape de 1998 | décret n° 97-1832 [@decret-97-1832, art. 9] | l'indemnité compensatrice est soumise aux mêmes retenues sociales que le traitement |
+| []{#r-ri-g-compensatrice}— | étape de 1998 | décret n° 97-2127 du 10 novembre 1997 [@decret-97-2127, art. 1 et 2] | indemnité compensatrice maintenue lors des avancements d'échelon ; elle cesse d'être servie dans trois cas |
+| []{#r-ri-g-seconde}— | étape de 1998 | décret n° 97-2127 [@decret-97-2127, art. 5 à 7] | seconde indemnité, pour les agents rangés à un indice égal ou inférieur à 200 |
+| — | ajustements de 1998 | textes du 10 novembre 1997, dont le décret n° 97-2127 [@decret-97-2127] | classement de plusieurs corps et divers régimes indemnitaires ajustés |
+| []{#r-ri-g-loi97}— | étape de 1998 | loi n° 97-83 du 20 décembre 1997 [@loi97-83] | plusieurs dispositions du statut général modifiées, dont la promotion et le reclassement |
+| []{#r-ri-g-2007}[1^er^ avril 2007]{.insecable} | **rupture** | décret n° 2007-267 du 12 février 2007 [@decret-2007-267] ; décret n° 2007-268 du 12 février 2007 [@decret-2007-268, art. 3] | indemnités spécifiques de corps hors du traitement de base → une partie transférée dans le traitement de base ; effet au 1^er^ avril 2007 (article 3 du second décret) |
+| []{#r-ri-g-2bis}[1^er^ avril 2007]{.insecable} | étape de 2007 | décret n° 2007-268 [@decret-2007-268, art. 1 et 2] | article 2 bis inséré dans le décret n° 97-1832 ; article 10 du même décret abrogé et remplacé |
+| []{#r-ri-g-exemple}[1^er^ janvier 1998]{.insecable}<br>[1^er^ avril 2007]{.insecable} | exemple | grilles annexées aux décrets n° 97-1832 [@decret-97-1832] et n° 2007-268 [@decret-2007-268] | inspecteur central des affaires économiques, premier échelon : environ 203 dinars → 611 dinars par mois |
+
+: La grille des traitements de base, texte par texte, 1997-2007 {#tbl-ri-grille-textes}
+
+Un tiret dans la colonne « Effet » signale un texte dont la date d'effet n'est pas établie ici ; la date qui suit son numéro est celle du texte.
+
+**Le sort de l'indemnité compensatrice.** Le décret n°97-2127 du 10 novembre 1997 en règle le sort dans le temps. Elle est maintenue lors des avancements d'échelon, mais cesse d'être servie dans trois cas — au terme de la période passée au niveau de rémunération supérieur au dernier échelon du grade, à la suite d'une promotion, ou lors du passage d'une grille à une autre —, l'agent étant alors rangé au traitement de base immédiatement supérieur à la somme de son ancien traitement et de son indemnité. Cette indemnité est soumise aux mêmes retenues sociales que le traitement.
+
+**La seconde indemnité.** Propre aux agents rangés à un indice égal ou inférieur à 200, elle compense la perte nette résultant de l'assujettissement de leur nouveau traitement à la cotisation retraite ; elle se résorbe à hauteur de tout avancement et s'éteint définitivement à des niveaux de rémunération fixés catégorie par catégorie.
+
+**Les textes du 10 novembre 1997.** Le décret n°97-2127 appartient à un lot de textes du 10 novembre 1997 consacrés à l'accompagnement de la réforme, qui ajustent au même moment le classement de plusieurs corps et divers régimes indemnitaires.
+
+::::
+
+### Les augmentations générales des salaires, 1993-2028 {#sec-cycles-revalorisation}
+
+La rémunération des agents est relevée par **cycles de négociation** entre l'UGTT et le gouvernement, traduits, lorsqu'ils aboutissent, par des **décrets d'augmentation** publiés au *Journal officiel*, qui fixent le programme et les montants, en dinars par mois. De 1993 à 2013, la majoration porte sur l'indemnité propre à chaque corps (@sec-ri-augmentations-ige) ; à compter du 1^er^ janvier 2016, une augmentation générale est fixée par catégorie statutaire (@sec-ri-augmentations-generales).
+
+Les tranches de 2016 à 2028 — celles de 2026 à 2028 sont programmées — se cumulent ainsi par catégorie ; l'écart entre le haut et le bas de la grille y est un écart en dinars par mois, non un rapport entre salaires (@sec-ri-salaires-categories).
 
 ```{python}
 #| label: fig-augmentations
@@ -329,29 +490,14 @@ figtools.figure_tabs(
 )
 ```
 
-Les montants sont ceux que fixent les décrets, en dinars par mois et par catégorie ; aucun des décrets cités n'exprime l'augmentation en pourcentage. Le décret n°2019-209 est cité d'après l'édition arabe du *Journal officiel*, de même que l'article 15 de la loi de finances pour 2026. Le décret n°2026-63 est le premier de la série à déclarer son augmentation « applicable aux pensions des retraités conformément à la législation en vigueur » [@decret2026-63, art. 4] ; le livre « Retraites » expose la péréquation qui transmet ces augmentations aux pensions. Avant 2015, les augmentations étaient accordées par corps, sur l'indemnité propre à chacun, en tranches annuelles de cycles triennaux.
+- **Un accord n'a pas d'effet de droit sans décret.** La rémunération étant fixée par décret (@sec-ri-droit-remuneration), un accord salarial, si complet et si solennel soit-il, **ne produit par lui-même aucun effet de droit** sur la rémunération des agents : un texte réglementaire en reprend le contenu, seul à même de lui conférer force exécutoire. Les accords sont connus par des communiqués, des procès-verbaux syndicaux et la presse, non par le *Journal officiel*.
+- **Des montants en dinars, jamais en pourcentage.** Les montants sont ceux que fixent les décrets, en dinars par mois et par catégorie ; aucun des décrets cités n'exprime l'augmentation en pourcentage.
+- **En pouvoir d'achat, un recul puis une reprise.** En dinars constants de 2015, le cumul des augmentations recule entre octobre 2022 et janvier 2024, puis remonte au 1^er^ janvier 2025 (@fig-augmentations-reel).
+- **Un programme en cours jusqu'en 2028, étendu aux pensions.** Le [décret n°2026-63](#r-ri-aug-2026) est le premier de la série à déclarer son augmentation « applicable aux pensions des retraités conformément à la législation en vigueur » ; le livre « Retraites » expose la péréquation qui transmet ces augmentations aux pensions.
 
-Pour ce seul cycle 2023-2025, le procès-verbal d'accord publié par l'UGTT éclaire la ventilation de l'augmentation par sous-catégorie statutaire. Ces montants sont rassemblés dans l'encadré ci-dessous.
+#### De 1993 à 2013 : la majoration de l'indemnité de chaque corps {#sec-ri-augmentations-ige}
 
-::: {.callout-note collapse="true"}
-## Augmentations générales issues de l'accord UGTT–gouvernement (cycle 2023-2025)
-
-L'UGTT, **partie à la négociation**, a publié le procès-verbal d'accord fixant la ventilation de l'augmentation générale des salaires de la fonction publique au titre de 2023, 2024 et 2025. L'augmentation est servie en **trois tranches** et croît avec la catégorie statutaire. Les montants ci-dessous sont rapportés *selon l'UGTT* ; ils recoupent le programme fixé par le décret n°2022-797 [@decret-2022-797], qui demeure la **source juridique opposable** — le PV n'en constituant que le cadre de dialogue social.
-
-| Sous-catégorie | Tranche 1 (oct. 2022) | Tranche 2 (janv. 2024) | Tranche 3 (janv. 2025) | Total mensuel |
-|----------------|-----------------------|------------------------|------------------------|---------------|
-| **A1** | 100 | 100 | 100 | **300 DT** |
-| **A2** | 90 | 90 | 90 | **270 DT** |
-| **A3** | 73 | 73 | 74 | **220 DT** |
-| **B** (et ouvriers de la 3^e^ unité) | 70 | 70 | 70 | **210 DT** |
-| **C et D** (et reste des ouvriers) | 65 | 65 | 65 | **195 DT** |
-
-: Augmentation générale des salaires de la fonction publique, cycle 2023-2025, par tranche et sous-catégorie — montants en dinars par mois, *selon le PV publié par l'UGTT* [@ugtt-pv-augmentation-2022]. {#tbl-ugtt-2022}
-
-**Réserve de date.** Le PV publié par l'UGTT date la séance de négociation du **14 septembre 2022**, là où d'autres sources mentionnent le 15 septembre ; l'écart est rapporté sans être tranché.
-:::
-
-En amont de 2015, les cycles se lisent dans l'**indemnité de gestion et d'exécution**, celle du corps administratif commun et des grades équivalents. De 1993 à 2010, ils durent trois ans. Le décret qui ouvre un cycle fixe le montant global de la majoration sur la période et en alloue la première tranche ; un décret annuel sert chacune des deux suivantes. Le décret n°93-2062 fixe à lui seul les trois tranches du cycle 1993-1995 [@decret93-2062, art. 1]. Le décret n°96-1907 ouvre le cycle 1996-1998 en fixant « l'augmentation globale des salaires durant la période 1996-1998 » [@decret96-1907, art. 2] ; les décrets n°97-1174 et n°98-1292 en servent les deux tranches suivantes [@decret97-1174, art. 1; @decret98-1292, art. 1]. Le même schéma se répète pour 1999-2001, 2002-2004, 2005-2007 et 2008-2010 (@tbl-augmentations-ige).^[Cycle 1999-2001 [@decret99-2015; @decret2000-1199; @decret2001-1557] ; cycle 2002-2004 [@decret2002-2672; @decret2003-1568; @decret2004-1538] ; cycle 2005-2007 [@decret2005-3137; @decret2006-2182; @decret2007-1671] ; cycle 2008-2010 [@decret2008-4047; @decret2009-2145; @decret2010-1973].] Chaque tranche prend effet au 1^er^ juillet, quelle que soit la date de signature du décret : celui qui ouvre le cycle 2008-2010, signé le 30 décembre 2008, alloue la première tranche « à compter du 1^er^ juillet 2008 » [@decret2008-4047, art. 2].
+Avant 2015, les augmentations sont accordées par corps, sur l'indemnité propre à chacun. Elles se lisent ici dans l'**indemnité de gestion et d'exécution**, celle du corps administratif commun et des grades équivalents. De 1993 à 2010, les cycles durent trois ans : le décret qui ouvre un cycle fixe le montant global de la majoration et en alloue la première tranche ; un décret annuel sert chacune des deux suivantes. Le [décret n°93-2062](#r-ri-ige-1993) fixe à lui seul les trois tranches de 1993-1995 ; le schéma vaut ensuite pour [1996-1998](#r-ri-ige-1996), [1999-2001](#r-ri-ige-1999), [2002-2004](#r-ri-ige-2002), [2005-2007](#r-ri-ige-2005) et [2008-2010](#r-ri-ige-2008) (@tbl-augmentations-ige). Chaque tranche prend effet au 1^er^ juillet, quelle que soit la date de signature du décret : celui du 30 décembre 2008 alloue la première tranche « à compter du 1^er^ juillet 2008 ».
 
 : Cycles de majoration de l'indemnité de gestion et d'exécution, 1993-2013. Chaque décret est désigné par sa forme abrégée ; son intitulé officiel complet apparaît au survol. {#tbl-augmentations-ige}
 
@@ -363,7 +509,15 @@ import augmentations
 augmentations.imprime("augmentations/augmentations-ige.csv", "cycles")
 ```
 
-Comme après 2015, les montants sont fixés en dinars, jamais en pourcentage, et ils décroissent du haut au bas de la grille. Sur le cycle 1993-1995, la majoration globale va de 95 dinars pour les grades de la sous-catégorie A1 à 40 dinars pour la catégorie D [@decret93-2062, art. 1]. Sur le cycle 2008-2010, elle va de 226 dinars pour l'administrateur général à 66 dinars pour la catégorie D, et c'est le seul cycle du relevé où les trois grades de A1 reçoivent des montants distincts [@decret2008-4047, art. 1]. L'augmentation de 2012 rompt avec cette progression : deux tranches de 35 dinars, au 1^er^ juillet 2012 et au 1^er^ janvier 2013, identiques pour toutes les catégories et pour les ouvriers [@decret2012-2959, art. 1].
+Comme après 2015, les montants décroissent du haut au bas de la grille. Sur le cycle 1993-1995, la majoration globale va de 95 dinars pour les grades de la sous-catégorie A1 à 40 dinars pour la catégorie D. Sur le [cycle 2008-2010](#r-ri-ige-2008), elle va de 226 dinars pour l'administrateur général à 66 dinars pour la catégorie D, et c'est le seul cycle, de 1993 à 2013, où les trois grades de A1 reçoivent des montants distincts. L'[augmentation de 2012](#r-ri-ige-2012) rompt avec cette progression : deux tranches de 35 dinars, au 1^er^ juillet 2012 et au 1^er^ janvier 2013, identiques pour toutes les catégories et pour les ouvriers.
+
+Ces montants ne valent que pour les bénéficiaires de l'indemnité de gestion et d'exécution : les autres corps recevaient leur majoration par des décrets parallèles, chacun sur son indemnité propre et avec ses propres montants. Ils ne sont donc pas ceux de toute la fonction publique, et ne se raccordent pas aux augmentations générales servies depuis 2015. Aucune majoration de cette indemnité au titre de l'année 2011 n'est identifiée ici. Les entreprises publiques suivent les mêmes cycles par un autre circuit, décrit à la @sec-augmentations-ep.
+
+<!-- RECHERCHE r-ige-2011 : majoration de l'indemnité de gestion et d'exécution au titre de l'année 2011 (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : les décrets des cycles 2015-2028 sont identifiés et lus (docs/notes/retraites-revalorisation.md, § 6.2) ; ceux de l'indemnité de gestion et d'exécution, de 1993 à 2013, aussi (docs/notes/remunerations-accords-salariaux-publics.md). Restent à lire les décrets n° 90-1001 et 91-803 (cycle 1990-1992 ?), les décrets parallèles des autres corps, et à confirmer l'effet du décret n°2015-462, qui n'énonce pas de date. -->
+
+:::: {.chronologie-repliable titre="Indemnité de gestion et d'exécution : montants de la majoration par grade et décrets, date par date, 1993-2013"}
 
 : Montants mensuels de la majoration de l'indemnité de gestion et d'exécution, par grade ou catégorie et par date d'effet, en dinars. {#tbl-augmentations-ige-montants}
 
@@ -375,21 +529,107 @@ import augmentations
 augmentations.imprime("augmentations/augmentations-ige.csv", "montants")
 ```
 
-Ces montants ne valent que pour les bénéficiaires de l'indemnité de gestion et d'exécution. Les autres corps recevaient leur majoration par des décrets parallèles, chacun sur son indemnité propre et avec ses propres montants : ce relevé n'est pas celui de toute la fonction publique, et il ne se raccorde pas aux augmentations générales servies depuis 2015. Aucune majoration de cette indemnité au titre de l'année 2011 n'est identifiée ici. Les entreprises publiques suivent les mêmes cycles par un autre circuit, décrit à la @sec-augmentations-ep.
+| Effet | Portée | Texte et articles | Ce qui change |
+|---|---|---|---|
+| — | antérieur | décret n° 82-505 du 16 mars 1982 | institue l'indemnité de gestion et d'exécution ; ce texte n'est connu ici que par l'intitulé des décrets qui le majorent |
+| []{#r-ri-ige-1993}[1^er^ juillet 1993]{.insecable}<br>[1^er^ juillet 1994]{.insecable}<br>[1^er^ juillet 1995]{.insecable} | point de départ | décret n° 93-2062 du 11 octobre 1993 [@decret93-2062, art. 1] | trois tranches fixées par un seul décret ; majoration globale de 95 dinars (sous-catégorie A1) à 40 dinars (catégorie D) |
+| []{#r-ri-ige-1996}[1^er^ juillet 1996]{.insecable}<br>[1^er^ juillet 1997]{.insecable}<br>[1^er^ juillet 1998]{.insecable} | étapes | décret n° 96-1907 du 16 octobre 1996 [@decret96-1907, art. 2] ; décrets n° 97-1174 et n° 98-1292 [@decret97-1174, art. 1; @decret98-1292, art. 1] | le premier décret fixe « l'augmentation globale des salaires durant la période 1996-1998 » et sert la première tranche ; un décret annuel sert chacune des deux suivantes |
+| []{#r-ri-ige-1999}[1^er^ juillet 1999]{.insecable}<br>[1^er^ juillet 2000]{.insecable}<br>[1^er^ juillet 2001]{.insecable} | étapes | décrets n° 99-2015, n° 2000-1199 et n° 2001-1557 [@decret99-2015; @decret2000-1199; @decret2001-1557] | cycle 1999-2001, même schéma |
+| []{#r-ri-ige-2002}[1^er^ juillet 2002]{.insecable}<br>[1^er^ juillet 2003]{.insecable}<br>[1^er^ juillet 2004]{.insecable} | étapes | décrets n° 2002-2672, n° 2003-1568 et n° 2004-1538 [@decret2002-2672; @decret2003-1568; @decret2004-1538] | cycle 2002-2004, même schéma |
+| []{#r-ri-ige-2005}[1^er^ juillet 2005]{.insecable}<br>[1^er^ juillet 2006]{.insecable}<br>[1^er^ juillet 2007]{.insecable} | étapes | décrets n° 2005-3137, n° 2006-2182 et n° 2007-1671 [@decret2005-3137; @decret2006-2182; @decret2007-1671] | cycle 2005-2007, même schéma |
+| []{#r-ri-ige-2008}[1^er^ juillet 2008]{.insecable}<br>[1^er^ juillet 2009]{.insecable}<br>[1^er^ juillet 2010]{.insecable} | étapes | décrets n° 2008-4047, n° 2009-2145 et n° 2010-1973 [@decret2008-4047; @decret2009-2145; @decret2010-1973] ; pour le premier, montants [@decret2008-4047, art. 1] et date d'effet [@decret2008-4047, art. 2] | cycle 2008-2010 ; majoration globale de 226 dinars (administrateur général) à 66 dinars (catégorie D), trois montants distincts dans A1 ; décret signé le 30 décembre 2008, première tranche « à compter du 1^er^ juillet 2008 » |
+| []{#r-ri-ige-2012}[1^er^ juillet 2012]{.insecable}<br>[1^er^ janvier 2013]{.insecable} | ajustement | décret n° 2012-2959 du 29 novembre 2012 [@decret2012-2959, art. 1] | deux tranches de 35 dinars, identiques pour toutes les catégories et pour les ouvriers |
 
-<!-- RECHERCHE r-ige-2011 : majoration de l'indemnité de gestion et d'exécution au titre de l'année 2011 (voir docs/recherches.yml) -->
+: Les majorations de l'indemnité de gestion et d'exécution, cycle par cycle, 1993-2013 {#tbl-ri-ige-textes}
 
-<!-- TODO (documentaliste) : les décrets des cycles 2015-2028 sont identifiés et lus (docs/notes/retraites-revalorisation.md, § 6.2) ; ceux de l'indemnité de gestion et d'exécution, de 1993 à 2013, aussi (docs/notes/remunerations-accords-salariaux-publics.md). Restent à lire les décrets n° 90-1001 et 91-803 (cycle 1990-1992 ?), les décrets parallèles des autres corps, et à confirmer l'effet du décret n°2015-462, qui n'énonce pas de date. -->
+<!-- TODO (rédacteur) : registre fait main en attendant un outillage — un rendu « registre » de scripts/augmentations.py (ancres et citations tirées du CSV) et un rendu « total par cycle et par catégorie », en dinars courants et constants, qui remplacerait la grille à treize colonnes. Voir docs/notes/backlog-precis.md. -->
 
-## Repères budgétaires et statistiques
+::::
 
-Le régime indiciaire concentre l'essentiel des effectifs et de la masse salariale de la fonction publique. Il n'existe toutefois pas, à ce jour, de masse salariale ni d'effectifs **ventilés par régime de rémunération** : les sources statistiques disponibles agrègent la fonction publique sans distinguer le régime indiciaire des autres régimes (cf. introduction du présent livre). Aucune série propre au seul régime indiciaire ne peut donc être construite à partir des données sourcées.
+#### Depuis 2016 : une augmentation générale par catégorie {#sec-ri-augmentations-generales}
 
-Pour situer le poids de ce régime, on renvoie aux agrégats présentés en introduction, avec leurs réserves de périmètre : l'évolution des effectifs de la fonction publique (@fig-effectifs-fp), leur répartition par catégorie statutaire (@fig-categories-statutaires) et la trajectoire de la masse salariale rapportée au PIB et aux dépenses de l'État (@fig-masse-salariale-ratios). Ces ordres de grandeur, documentés par l'INS, le ministère des Finances, le FMI et la Banque mondiale [@ins-fonction-publique-2021; @ins-fonction-publique-2025; @minfin-remunerations; @minfin-indicateurs-fp; @imf-tunisia-art4-2020; @wb-tunisia-per-2020], portent sur la fonction publique dans son ensemble et non sur le seul régime indiciaire.
+À compter du [1^er^ janvier 2016](#r-ri-aug-2016), l'augmentation est fixée par catégorie statutaire, de A1 à D, et pour les ouvriers. Quatre cycles se succèdent jusqu'en 2028 (@tbl-augmentations).
 
-Deux éclairages complémentaires peuvent toutefois être apportés, l'un sur la hiérarchie des rémunérations, l'autre sur le poids de la fonction publique civile dans l'emploi total.
+: Cycles de revalorisation salariale dans la fonction publique et décrets d'augmentation correspondants. Chaque décret est désigné par sa forme abrégée ; son intitulé officiel complet apparaît au survol. {#tbl-augmentations}
 
-Le salaire moyen de l'ensemble des agents en donne d'abord le niveau. L'INS le publie sous trois notions, explicitement nommées dans les tableaux d'ensemble : le **salaire brut + contributions** (`Sal brut + contrib.` dans le tableau par ministère de 2020 ; « salaire mensuel brut avec contributions » dans les tableaux d'évolution), le **salaire brut** (`Sal brut`, ou « sans contributions » dans les tableaux d'évolution) et le **salaire net** (`Sal net`) [@ins-fonction-publique-2021; @ins-fonction-publique-2025]. La première notion peut être suivie depuis 2010 à travers les rapports successifs de l'INS ; les deux autres ne sont reprises ici qu'à partir de 2015. La source ne ventile pas ces contributions ; le précis conserve donc les trois libellés statistiques de l'INS sans les requalifier en cotisations salariales ou patronales.
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../../scripts")
+import augmentations
+augmentations.imprime("augmentations/augmentations-fonction-publique.csv", "cycles")
+```
+
+Le cycle 2015-2018 comprend aussi une majoration des indemnités spécifiques au titre de l'année 2014, dont le [décret](#r-ri-aug-2015) n'énonce aucune date d'effet. Pour le cycle 2023-2025, le [décret n°2022-797](#r-ri-aug-2022) fixe trois tranches : au total, de 300 dinars par mois pour la sous-catégorie A1 à 195 dinars pour les catégories C et D. Le procès-verbal d'accord publié par l'UGTT donne la même ventilation [@ugtt-pv-augmentation-2022] ; le décret demeure la source juridique opposable. Le programme 2026-2028 fixe trois tranches, aux 1^er^ janvier 2026, 2027 et 2028.
+
+:::: {.chronologie-repliable titre="Augmentations générales des salaires : montants par catégorie et décrets, date par date, 2015-2028"}
+
+: Montants mensuels de l'augmentation, par catégorie statutaire et par date d'effet, en dinars. Une case vide : le décret ne vise pas cette catégorie à cette date. {#tbl-augmentations-montants}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../../scripts")
+import augmentations
+augmentations.imprime("augmentations/augmentations-fonction-publique.csv", "montants")
+```
+
+| Effet | Portée | Texte et articles | Ce qui change |
+|---|---|---|---|
+| []{#r-ri-aug-2015}— | transition | décret gouvernemental n° 2015-462 du 24 juin 2015 [@decret2015-462] | majoration des indemnités spécifiques au titre de l'année 2014 ; aucune date d'effet énoncée |
+| []{#r-ri-aug-2016}[1^er^ janvier 2016]{.insecable}<br>[1^er^ juillet 2016]{.insecable}<br>[1^er^ janvier 2017]{.insecable}<br>[1^er^ avril 2017]{.insecable}<br>[1^er^ avril 2018]{.insecable} | étape — changement d'instrument | décret gouvernemental n° 2016-1 du 5 janvier 2016 [@decret2016-1] | majoration de l'indemnité propre à chaque corps → augmentation générale et augmentation spécifique, fixées par catégorie statutaire |
+| [1^er^ mars 2019]{.insecable} | étape | décret gouvernemental n° 2019-209 du 5 mars 2019 [@decret2019-209] | première tranche du cycle 2019-2020 ; décret cité d'après l'édition arabe du *Journal officiel* |
+| [1^er^ juillet 2019]{.insecable}<br>[1^er^ janvier 2020]{.insecable} | étape | décret gouvernemental n° 2019-1133 du 12 décembre 2019 [@decret2019-1133] | deuxième et troisième tranches |
+| [1^er^ août 2020]{.insecable} | étape | décret gouvernemental n° 2020-767 du 18 septembre 2020 [@decret2020-767] | augmentation des salaires et fixation de ses montants |
+| []{#r-ri-aug-2022}[1^er^ octobre 2022]{.insecable}<br>[1^er^ janvier 2024]{.insecable}<br>[1^er^ janvier 2025]{.insecable} | étape | décret n° 2022-797 du 8 novembre 2022 [@decret-2022-797] | trois tranches ; au total, de 300 dinars (A1) à 195 dinars (C et D) par mois |
+| []{#r-ri-aug-2026}[1^er^ janvier 2026]{.insecable}<br>[1^er^ janvier 2027]{.insecable}<br>[1^er^ janvier 2028]{.insecable} | étape | décret n° 2026-63 du 30 avril 2026 [@decret2026-63, art. 4] | programme 2026-2028 ; premier décret de la série à déclarer son augmentation « applicable aux pensions des retraités conformément à la législation en vigueur » |
+| — | étape | loi n° 2025-17 du 12 décembre 2025, loi de finances pour 2026 [@lf-2026, art. 15] | article cité, avec le programme 2026-2028, d'après l'édition arabe du *Journal officiel* |
+
+: Les augmentations générales des salaires, décret par décret, 2015-2028 {#tbl-ri-augmentations-textes}
+
+Un tiret dans la colonne « Effet » signale un texte dont la date d'effet n'est pas établie ici ; la date qui suit son numéro est celle du texte.
+
+<!-- TODO (documentaliste) : relever l'article du décret gouvernemental n° 2016-1 qui fixe l'augmentation générale par catégorie : c'est lui qui décide si 2016 est une étape (rangement actuel) ou une rupture (fiche de plan de l'architecte, § 10, Q0). Relever aussi ce que dispose l'article 15 de la loi de finances pour 2026, que le chapitre nomme sans en dire le contenu. -->
+<!-- TODO (rédacteur) : registre fait main en attendant un outillage — voir le TODO du registre de l'indemnité de gestion et d'exécution. -->
+
+::::
+
+:::: {.chronologie-repliable titre="Accord UGTT-gouvernement de septembre 2022 : montants par tranche et par sous-catégorie, 2022-2025"}
+
+L'UGTT, **partie à la négociation**, a publié le procès-verbal d'accord fixant la ventilation de l'augmentation générale des salaires de la fonction publique au titre de 2023, 2024 et 2025. L'augmentation est servie en **trois tranches** et croît avec la catégorie statutaire. Les montants ci-dessous sont rapportés *selon l'UGTT* ; ils recoupent le programme fixé par le décret n°2022-797 [@decret-2022-797], qui demeure la **source juridique opposable** — le PV n'en constituant que le cadre de dialogue social.
+
+| Sous-catégorie | Tranche 1, octobre 2022<br>(D par mois) | Tranche 2, janvier 2024<br>(D par mois) | Tranche 3, janvier 2025<br>(D par mois) | Total<br>(D par mois) |
+|----------------|-----------------------|------------------------|------------------------|---------------|
+| **A1** | 100 | 100 | 100 | **300** |
+| **A2** | 90 | 90 | 90 | **270** |
+| **A3** | 73 | 73 | 74 | **220** |
+| **B** (et ouvriers de la 3^e^ unité) | 70 | 70 | 70 | **210** |
+| **C et D** (et reste des ouvriers) | 65 | 65 | 65 | **195** |
+
+: Augmentation générale des salaires de la fonction publique, cycle 2023-2025, par tranche et sous-catégorie — montants en dinars par mois, *selon le PV publié par l'UGTT* [@ugtt-pv-augmentation-2022]. {#tbl-ugtt-2022}
+
+**Réserve de date.** Le PV publié par l'UGTT date la séance de négociation du **14 septembre 2022**, là où d'autres sources mentionnent le 15 septembre ; l'écart est rapporté sans être tranché.
+
+::::
+
+Au-delà de ces textes, les cycles de gel et de revalorisation salariale font l'objet d'appréciations divergentes. Le Fonds monétaire international et la Banque mondiale mettent en avant l'enjeu de **soutenabilité budgétaire** de la masse salariale de l'administration centrale [@imf-tunisia-art4-2020; @wb-tunisia-per-2020] ; le gouvernement justifie les arbitrages successifs au regard des contraintes des finances publiques ; les organisations syndicales, au premier rang desquelles l'UGTT, mettent en avant le pouvoir d'achat des agents.
+
+## Repères budgétaires et statistiques {#sec-ri-reperes-budgetaires}
+
+Aucune source ne ventile les effectifs ni la masse salariale par régime de rémunération. Deux sources situent le régime indiciaire, chacune sur son champ.
+
+- **La masse salariale** est celle du budget de l'État entier, rapportée au PIB et aux dépenses de l'État (@fig-masse-salariale-ratios), d'après les séries du ministère des Finances [@minfin-remunerations; @minfin-indicateurs-fp].
+- **Les effectifs et les salaires** sont ceux de la fonction publique civile, publiés par l'INS [@ins-fonction-publique-2021; @ins-fonction-publique-2025] (@fig-effectifs-fp ; @fig-categories-statutaires) : des fonctionnaires classés de A1 à D, des ouvriers et des contractuels ; ni militaires, ni agents des forces de sécurité intérieure, ni magistrats (@sec-ventilation-ministere).
+
+Les rapports extérieurs sont d'un autre ordre : ceux du Fonds monétaire international et de la Banque mondiale [@imf-tunisia-art4-2020; @wb-tunisia-per-2020] portent sur la masse salariale de l'administration ; l'introduction du volume en donne le périmètre.
+
+Sur ce champ civil, trois constats : le rapport entre les salaires de A1 et de D se resserre en 2018-2019 ; en pouvoir d'achat, toutes les catégories finissent 2025 sous leur niveau de 2018 (@sec-ri-salaires-categories) ; les fonctionnaires forment de 76 à 80 % des agents (@sec-ri-emploi).
+
+<!-- TODO : construire, si des données ventilées par régime deviennent disponibles, une série propre au régime indiciaire (effectifs, masse salariale). -->
+
+### Le salaire moyen {#sec-ri-salaire-moyen}
+
+Le salaire moyen de l'ensemble des agents donne d'abord le niveau. L'INS le publie sous trois notions, explicitement nommées dans les tableaux d'ensemble : le **salaire brut + contributions** (« Sal brut + contrib. » dans le tableau par ministère de 2020 ; « salaire mensuel brut avec contributions » dans les tableaux d'évolution), le **salaire brut** (« Sal brut », ou « sans contributions » dans les tableaux d'évolution) et le **salaire net** (« Sal net ») [@ins-fonction-publique-2021; @ins-fonction-publique-2025]. La première notion peut être suivie depuis 2010 à travers les rapports successifs de l'INS ; les deux autres ne sont reprises ici qu'à partir de 2015. La source ne ventile pas ces contributions ; les trois libellés statistiques de l'INS sont donc repris tels quels, sans être requalifiés en cotisations salariales ou patronales.
 
 ```{python}
 #| label: fig-salaire-moyen
@@ -425,7 +665,9 @@ figtools.figure_tabs(
 )
 ```
 
-La grille décrite plus haut classe les grades en six catégories selon le niveau de diplôme exigé au recrutement (@tbl-categories-grades). Les deux publications de l'INS permettent de suivre, sur cette même nomenclature, le salaire brut effectivement perçu — mais les tableaux par catégorie ne portent que l'intitulé général « salaire mensuel brut ». Le rapprochement avec les tableaux d'ensemble permet de préciser la notion : pondérés par les effectifs de chaque catégorie, les montants de l'enquête 2010-2021 redonnent, de proche en proche, le **salaire brut + contributions** qu'elle publie pour l'ensemble des agents ; ceux du rapport 2018-2025 redonnent le **salaire brut sans contributions** du tableau 10. Pour des effectifs par catégorie identiques dans les deux publications sur 2018-2020, les montants de la première dépassent ceux de la seconde de 14 à 20 % selon la catégorie et l'année : aucun coefficient ne passe de l'une à l'autre, et les deux séries ne se raccordent pas. Elles sont donc présentées côte à côte, chacune dans sa notion.
+### La hiérarchie des salaires par catégorie {#sec-ri-salaires-categories}
+
+Les deux publications de l'INS suivent le salaire brut effectivement perçu dans les six catégories de grades (@tbl-categories-grades), mais dans deux notions : le **salaire brut + contributions** pour l'enquête 2010-2021, le **salaire brut sans contributions** pour le rapport 2018-2025. Sur 2018-2020, à effectifs identiques, les montants de la première dépassent ceux de la seconde de 14 à 20 % selon la catégorie et l'année : aucun coefficient ne passe de l'une à l'autre, et les deux séries sont présentées côte à côte, sans raccord.
 
 ```{python}
 #| label: fig-salaires-categories
@@ -517,7 +759,15 @@ figtools.figure_tabs(
 )
 ```
 
-Rapportés à l'emploi total, ces effectifs donnent enfin la mesure du poids de la fonction publique dans l'économie tunisienne.
+:::: {.chronologie-repliable titre="Salaire brut par catégorie : les deux notions publiées par l'INS et leur rapprochement, 2015-2025"}
+
+Les tableaux par catégorie des deux publications de l'INS ne portent que l'intitulé général « salaire mensuel brut ». Les effectifs par catégorie sont identiques dans les deux publications sur 2018-2020. Le rapprochement avec les tableaux d'ensemble permet de préciser la notion : pondérés par les effectifs de chaque catégorie, les montants de l'enquête 2010-2021 redonnent, de proche en proche, le **salaire brut + contributions** qu'elle publie pour l'ensemble des agents ; ceux du rapport 2018-2025 redonnent le **salaire brut sans contributions** du tableau 10.
+
+::::
+
+### Le poids dans l'emploi {#sec-ri-emploi}
+
+Rapportés à la population active occupée, les effectifs de la fonction publique civile donnent la mesure de son poids dans l'emploi total (@fig-emploi-public). Deux effectifs s'y lisent : tous les agents — fonctionnaires, ouvriers et contractuels — et les seuls fonctionnaires, qui en forment de 76 à 79 % de 2015 à 2023, puis 80 % en 2024.
 
 ```{python}
 #| label: fig-emploi-public
@@ -562,9 +812,9 @@ figtools.figure_tabs(
 )
 ```
 
-## La ventilation par ministère et ses limites {#sec-ventilation-ministere}
+### La ventilation par ministère {#sec-ventilation-ministere}
 
-L'enquête de l'INS sur les agents de la fonction publique [@ins-fonction-publique-2021] propose une ventilation des effectifs par ministère, sur la période 2015-2021, ainsi que des salaires moyens par ministère ; le rapport qui la prolonge en donne une nouvelle pour 2018-2025 [@ins-fonction-publique-2025]. Cette ventilation porte sur la fonction publique civile : les agents y sont entièrement répartis dans les catégories statutaires A1 à D, c'est-à-dire selon la grille du statut général, ce qui en fait une statistique du **régime indiciaire**. À ce titre, elle éclaire la répartition des agents indiciaires entre les administrations, mais elle appelle une réserve importante dès lors qu'on s'intéresse à certains ministères.
+L'enquête de l'INS sur les agents de la fonction publique [@ins-fonction-publique-2021] ventile les effectifs par ministère, sur la période 2015-2021, ainsi que les salaires moyens ; le rapport qui la prolonge en donne une nouvelle ventilation pour 2018-2025 [@ins-fonction-publique-2025]. Elle porte sur la fonction publique civile, dont les fonctionnaires sont classés dans les catégories statutaires A1 à D, et se lit sous trois réserves.
 
 ```{python}
 #| label: fig-ministeres
@@ -600,15 +850,24 @@ figtools.figure_tabs(
 )
 ```
 
-Plusieurs ministères emploient en effet, **à côté de leurs agents indiciaires, des corps relevant d'un régime statutaire autonome** : les ministères de la Défense, de l'Intérieur et de la Justice comptent respectivement des militaires, des agents des forces de sécurité intérieure et des magistrats, qui sont régis par des statuts propres et des grilles distinctes de la grille indiciaire (voir [le régime statutaire autonome](_regime_statutaire_autonome.qmd)). Or ces corps n'entrent dans aucune des catégories A1 à D et n'apparaissent donc pas dans cette statistique. Le recoupement le confirme : pour le ministère de la Défense, la somme des agents classés de A1 à D coïncide avec le total des fonctionnaires que l'enquête lui rattache, ce qui établit que la population recensée est celle du personnel civil indiciaire, à l'exclusion des militaires de carrière. Les effectifs ministériels de l'INS recensent ainsi, pour ces ministères, leur personnel civil indiciaire — et non l'ensemble de leurs agents. Ils ne permettent donc pas d'évaluer le poids des corps à statut autonome, dont la documentation chiffrée fait défaut (voir [le régime statutaire autonome](_regime_statutaire_autonome.qmd)).
+**Les corps à statut autonome n'y sont pas.** Plusieurs ministères emploient, **à côté de leurs agents régis par le statut général, des corps relevant d'un régime statutaire autonome** : les ministères de la Défense, de l'Intérieur et de la Justice comptent respectivement des militaires, des agents des forces de sécurité intérieure et des magistrats, régis par des statuts propres et des grilles distinctes (voir [le régime statutaire autonome](_regime_statutaire_autonome.qmd)). Ces corps n'entrent dans aucune des catégories A1 à D et n'apparaissent donc pas dans cette statistique, qui ne permet pas d'évaluer leur poids.
 
-Une seconde réserve tient à la **construction même de la série**. Les annexes annuelles de l'enquête ne retiennent pas d'une année sur l'autre la même nomenclature ministérielle : celle de 2017 ne compte que douze postes et regroupe la Défense, l'Intérieur et les collectivités locales dans une rubrique « autres ministères », tandis que celle de 2018 désigne les collectivités locales sous le nom de « communes » et que les intitulés composites — agriculture et ressources hydrauliques, équipement et habitat — apparaissent puis disparaissent au gré des remaniements. La série 2015-2021 de l'enquête est la **reconstitution que l'INS établit par-dessus ces variations**, et non la juxtaposition des décomptes annuels tels qu'ils ont été publiés. Elle se recoupe avec les annexes partout où les deux se laissent comparer, mais elle ne doit pas être lue comme une suite de relevés homogènes : la ventilation par ministère supporte mal la comparaison fine d'une année à l'autre, et c'est sur les ordres de grandeur et les tendances longues qu'elle est fiable.
+**La série 2015-2021 est une reconstitution de l'INS.** Les annexes annuelles ne retiennent pas d'une année sur l'autre la même nomenclature ministérielle : la série est fiable sur les ordres de grandeur et les tendances longues, non pour la comparaison fine d'une année à l'autre.
 
-Une troisième réserve interdit de joindre les deux publications. Sur les années qu'elles ont en commun, 2018-2021, le rapport 2018-2025 répartit autrement un total inchangé : environ 9 000 agents que l'enquête rangeait parmi les « autres établissements » y sont rattachés au ministère de l'Intérieur — en 2018, 96 286 agents à l'Intérieur au lieu d'environ 87 300, et 46 892 dans les autres établissements au lieu d'environ 55 600 —, tandis que de moindres déplacements touchent la Présidence du gouvernement, la Justice, les Finances et la Santé [@ins-fonction-publique-2021; @ins-fonction-publique-2025]. La Défense, l'Éducation, l'Agriculture et les collectivités locales concordent. Ce reclassement ressort de la comparaison des deux publications. Les deux séries sont donc présentées l'une et l'autre, sans être jointes, et l'évolution d'un ministère ne se lit qu'à l'intérieur de chacune.
+**Les deux publications ne se joignent pas.** Sur les années qu'elles ont en commun, 2018-2021, le rapport 2018-2025 répartit autrement un total inchangé, au profit surtout du ministère de l'Intérieur [@ins-fonction-publique-2021; @ins-fonction-publique-2025]. Les deux séries sont donc présentées l'une et l'autre, sans être jointes, et l'évolution d'un ministère ne se lit qu'à l'intérieur de chacune.
 
 Les effectifs rattachés au ministère de la Défense progressent de près de 35 % entre 2015 et 2018, passant d'environ 63 000 à près de 85 000 agents. Cette progression est corroborée par deux publications distinctes de l'INS, les annexes annuelles et la série d'ensemble [@ins-fonction-publique-2021], et le rapport 2018-2025 en retrouve le point d'arrivée (84 971 agents en 2018), suivi d'une quasi-stabilité jusqu'en 2025 (87 765 agents) [@ins-fonction-publique-2025]. Le champ de l'enquête exclut les militaires de carrière : ce mouvement porte donc sur le personnel **civil** du ministère.
 
 <!-- TODO (rédacteur) : documenter, avant toute explication dans le texte visible, le lien éventuel entre cette hausse du personnel civil de la Défense et le renforcement des moyens de sécurité après les attentats de 2015 : source budgétaire, rapport administratif ou texte d'organisation, en distinguant recrutements, transferts et couverture statistique. -->
 
-<!-- TODO : construire, si des données ventilées par régime deviennent disponibles, une série propre au régime indiciaire (effectifs, masse salariale). -->
 <!-- TODO (documentaliste) : chercher ce qui explique la hausse des effectifs civils de la Défense entre 2015 et 2018 (+35 %) — rapports d'activité du ministère, lois de finances, transferts de personnel depuis un autre ministère. Réserve écrite en attendant. -->
+
+:::: {.chronologie-repliable titre="Effectifs par ministère : nomenclatures annuelles et écarts entre les deux publications de l'INS, 2015-2025"}
+
+**Le personnel civil seul.** Les grilles des corps à statut autonome sont distinctes de la grille du statut général. Le recoupement confirme leur absence : pour le ministère de la Défense, la somme des agents classés de A1 à D coïncide avec le total des fonctionnaires que l'enquête lui rattache, ce qui établit que la population recensée est celle du personnel civil, à l'exclusion des militaires de carrière. Les effectifs ministériels de l'INS recensent ainsi, pour ces ministères, leur personnel civil — et non l'ensemble de leurs agents. Ils ne permettent donc pas d'évaluer le poids des corps à statut autonome, dont la documentation chiffrée fait défaut (voir [le régime statutaire autonome](_regime_statutaire_autonome.qmd)).
+
+**Les nomenclatures annuelles.** Les annexes annuelles de l'enquête ne retiennent pas d'une année sur l'autre la même nomenclature ministérielle : celle de 2017 ne compte que douze postes et regroupe la Défense, l'Intérieur et les collectivités locales dans une rubrique « autres ministères », tandis que celle de 2018 désigne les collectivités locales sous le nom de « communes » et que les intitulés composites — agriculture et ressources hydrauliques, équipement et habitat — apparaissent puis disparaissent au gré des remaniements. La série 2015-2021 de l'enquête est la **reconstitution que l'INS établit par-dessus ces variations**, et non la juxtaposition des décomptes annuels tels qu'ils ont été publiés. Elle se recoupe avec les annexes partout où les deux se laissent comparer, mais elle ne doit pas être lue comme une suite de relevés homogènes : la ventilation par ministère supporte mal la comparaison fine d'une année à l'autre, et c'est sur les ordres de grandeur et les tendances longues qu'elle est fiable.
+
+**Les écarts entre les deux publications.** Sur les années qu'elles ont en commun, 2018-2021, le rapport 2018-2025 répartit autrement un total inchangé : environ 9 000 agents que l'enquête rangeait parmi les « autres établissements » y sont rattachés au ministère de l'Intérieur — en 2018, 96 286 agents à l'Intérieur au lieu d'environ 87 300, et 46 892 dans les autres établissements au lieu d'environ 55 600 —, tandis que de moindres déplacements touchent la Présidence du gouvernement, la Justice, les Finances et la Santé [@ins-fonction-publique-2021; @ins-fonction-publique-2025]. La Défense, l'Éducation, l'Agriculture et les collectivités locales concordent. Ce reclassement ressort de la comparaison des deux publications.
+
+::::

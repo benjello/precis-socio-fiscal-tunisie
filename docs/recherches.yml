@@ -1765,3 +1765,38 @@
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
   a_faire: [sommaires arabes de 2023-2026]
+
+- id: r-epa-regime-propre
+  objet: établissement public à caractère administratif dont le personnel est régi par un régime entièrement propre, hors du statut général (loi n° 83-112), à distinguer des statuts particuliers dérogatoires de l'article 2
+  ou: [precis/fr/remunerations_publiques/_regime_indiciaire.qmd#sec-ri-epa]
+  requetes:
+    titres_like:
+    - '%statut particulier%etablissement public a caractere administratif%'
+    - '%statut%personnel%non soumis%statut general%'
+    depuis: 1983-12-12
+  passes:
+  - date: 2026-10-08
+    role: rédacteur
+    sources: [jort_cache]
+    couverture: 'titres et objets de jort_cache seulement, par les deux motifs LIKE, du 12 décembre 1983 au 2 octobre 2026 : aucun candidat. Le chapitre disait déjà ce point « non établi », sans requête ni couverture consignées : cette passe est la première tracée. Aucun texte de création d''établissement ni aucun statut particulier lu ; plein texte des fascicules non parcouru ; une recherche par intitulé ne peut pas établir l''absence d''un tel régime.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - lire les textes de création des établissements publics à caractère administratif et leurs statuts particuliers
+  - plein texte des fascicules non parcouru
+
+- id: r-indemnite-residence
+  objet: décret instituant et chiffrant une indemnité de résidence (taux, zones géographiques) commune aux agents régis par le statut général (loi n° 83-112)
+  ou: [precis/fr/remunerations_publiques/_regime_indiciaire.qmd#sec-ri-indemnites]
+  requetes:
+    titres_fts: [indemnite AND residence]
+    titres_like: ['%indemnite de residence%']
+    depuis: 1956-03-20
+  passes:
+  - date: 2026-10-08
+    role: rédacteur
+    sources: [jort_cache]
+    couverture: 'titres et objets de jort_cache seulement (FTS « indemnite AND residence » et LIKE), du 20 mars 1956 au 2 octobre 2026 : aucun candidat ; contrôle par une seconde requête SQL directe (les quinze titres qui portent « indemnit » et « sidence » visent tous la présidence). Le chapitre disait déjà ce décret « non identifié », sans requête ni couverture consignées : cette passe est la première tracée. Plein texte des fascicules non parcouru ; textes antérieurs à 1956 hors de la base.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [plein texte des fascicules non parcouru]
