@@ -1035,13 +1035,18 @@ entries:
       terme: Salaire minimum interprofessionnel garanti
       definition: >
         Rémunération horaire ou mensuelle minimale légale applicable aux
-        salariés des secteurs non agricoles.
+        salariés des secteurs non agricoles régis par le code du travail. L'État
+        le fixe par décret depuis le 1er janvier 1974. Il est fixé à l'heure et au
+        mois, pour deux régimes de durée du travail : 48 heures et 40 heures par
+        semaine.
       synonymes: [SMIG]
     ar:
       terme: الأجر الأدنى المضمون لمختلف المهن
       definition: >
         الحدّ الأدنى القانوني للأجر بالساعة أو بالشهر المطبَّق على أجراء
-        القطاعات غير الفلاحية.
+        القطاعات غير الفلاحية الخاضعة لمجلة الشغل. تضبطه الدولة بأمر منذ غرّة
+        جانفي 1974. ويُضبط بالساعة وبالشهر، في نظامين لمدة العمل: نظام عمل
+        48 ساعة ونظام عمل 40 ساعة في الأسبوع.
       synonymes: []
 
   - id: cnss
@@ -7785,9 +7790,10 @@ entries:
 
   - id: indemnite-complementaire-provisoire
     acronyme: ICP
-    statut: provisoire
+    statut: valide
     references: [decret82-501, decret2026-67]
-    source_definition: {ref: decret81-437}
+    source_definition: {ref: decret81-437, locator: "art. 3"}
+    source_traduction: {ref: decret81-437}
     voir_aussi: [smig]
     fr:
       terme: Indemnité complémentaire provisoire
@@ -7795,17 +7801,47 @@ entries:
         Indemnité instituée le 1er avril 1981 par le décret n° 81-437, servie en
         sus du salaire de base des salariés des secteurs non agricoles régis par le
         code du travail, et majorée au 1er février 1982 par le décret n° 82-501.
-        Elle fait partie du SMIG, que les décrets successifs décomposent en salaire
-        de base et indemnité complémentaire provisoire.
+        Depuis 1981, elle est une composante du SMIG : les décrets qui le fixent,
+        ainsi en 1992 et en 2000, le décomposent en salaire de base et indemnité
+        complémentaire provisoire, et celui de 2026 précise encore qu'il la
+        comprend.
       synonymes: []
     ar:
-      terme: المنحة التكميلية الوقتية
+      terme: المنحة الإضافية المؤقتة
       definition: >
         منحة أُحدثت بداية من غرّة أفريل 1981 بالأمر عدد 437 لسنة 1981، تُصرف
         زيادة على الأجر الأساسي لأجراء القطاعات غير الفلاحية الخاضعة لمجلة الشغل،
         وتمّ الترفيع فيها بداية من غرّة فيفري 1982 بالأمر عدد 501 لسنة 1982. وهي
-        جزء من الأجر الأدنى المضمون الذي تفصّله الأوامر المتعاقبة إلى أجر أساسي
-        ومنحة تكميلية وقتية.
+        منذ سنة 1981 أحد مكوّنات الأجر الأدنى المضمون لمختلف المهن: فالأوامر التي
+        تضبطه، كما في سنتي 1992 و2000، تفصّله إلى أجر أساسي ومنحة إضافية مؤقتة،
+        ويوضّح أمر سنة 2026 أنه يتضمّنها.
+      synonymes: []
+
+  - id: indemnite-cherte-de-vie
+    acronyme: null
+    statut: provisoire
+    references: [decret74-63]
+    source_definition: {ref: decret71-164, locator: "art. 2 et 5"}
+    voir_aussi: [smig, indemnite-complementaire-provisoire]
+    fr:
+      terme: Indemnité de cherté de vie
+      definition: >
+        Indemnité instituée le 1er mai 1971 par le décret n° 71-164 dans
+        l'industrie, le commerce et les professions libérales : 0,020 dinar
+        l'heure, soit 4 dinars par mois pour les salariés payés au mois, en sus
+        du salaire minimum. Elle n'entre ni dans l'assiette des cotisations ni
+        dans le calcul des prestations sociales. Le SMIG fixé au 1er janvier 1974
+        par le décret n° 74-63 l'intègre.
+      synonymes: []
+    ar:
+      terme: منحة لغلو المعاش
+      definition: >
+        منحة أُحدثت بداية من غرّة ماي 1971 بالأمر عدد 164 لسنة 1971 في الصناعة
+        والتجارة والمهن الحرة: 0,020 دينار في الساعة، أي 4 دنانير في الشهر
+        للأجراء الخالصين بالشهر، زيادة على الأجر الأدنى. ولا تدخل في قاعدة
+        المساهمات ولا في احتساب المنافع الاجتماعية. وقد أُدمجت في الأجر الأدنى
+        المضمون لمختلف المهن المضبوط بداية من غرّة جانفي 1974 بالأمر عدد 63
+        لسنة 1974.
       synonymes: []
 
   - id: commission-nationale-smig
@@ -7817,21 +7853,24 @@ entries:
     fr:
       terme: Commission nationale du salaire minimum garanti
       definition: >
-        Commission instituée par le décret n° 74-493 du 20 avril 1974, où
-        siègent l'État, le Parti socialiste destourien, l'Union tunisienne de
-        l'industrie, du commerce et de l'artisanat, l'Union nationale des
-        agriculteurs et l'Union générale tunisienne du travail. Le SMIG peut
-        varier après son avis (décret n° 74-63, art. 4) ; le SMIG et le SMAG sont
-        déterminés par décret.
+        Commission instituée par le décret n° 74-493 du 20 avril 1974. À son
+        institution, en 1974, y siègent l'État, le Parti socialiste destourien,
+        l'Union tunisienne de l'industrie, du commerce et de l'artisanat, l'Union
+        nationale des agriculteurs et l'Union générale tunisienne du travail. Le
+        même décret pose que le SMIG et le SMAG sont déterminés par décret. En
+        1974, le décret n° 74-63 (art. 4) prévoit que le SMIG varie selon le coût
+        de la vie, par arrêté, après avis de la commission.
       synonymes: []
     ar:
       terme: اللجنة الوطنية للأجر الأدنى المضمون
       definition: >
-        لجنة أُحدثت بالأمر عدد 493 لسنة 1974 المؤرخ في 20 أفريل 1974، تضمّ الدولة
-        والحزب الاشتراكي الدستوري والاتحاد التونسي للصناعة والتجارة والصناعات
-        التقليدية والاتحاد القومي للفلاحين والاتحاد العام التونسي للشغل. ويمكن
-        تعديل الأجر الأدنى بعد رأيها (الأمر عدد 63 لسنة 1974، الفصل 4)؛ ويُضبط
-        الأجر الأدنى المضمون لمختلف المهن والأجر الأدنى الفلاحي المضمون بأمر.
+        لجنة أُحدثت بالأمر عدد 493 لسنة 1974 المؤرخ في 20 أفريل 1974. وتضمّ عند
+        إحداثها سنة 1974 الدولة والحزب الاشتراكي الدستوري والاتحاد التونسي
+        للصناعة والتجارة والصناعات التقليدية والاتحاد القومي للفلاحين والاتحاد
+        العام التونسي للشغل. وينصّ الأمر نفسه على أن الأجر الأدنى المضمون لمختلف
+        المهن والأجر الأدنى الفلاحي المضمون يُضبطان بأمر. وفي سنة 1974، ينصّ الأمر
+        عدد 63 لسنة 1974 (الفصل 4) على تعديل الأجر الأدنى المضمون لمختلف المهن
+        بحسب كلفة المعيشة، بقرار، بعد أخذ رأي اللجنة.
       synonymes: []
 
   - id: salaire-brut
