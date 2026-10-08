@@ -500,7 +500,7 @@ La CNSS ne publie pas de quantiles. Ils sont approchés ici par interpolation li
 - **De 2000 à 2009, le haut de la distribution s'écarte** : le rapport du troisième au premier quartile passe de 3,00 à 3,12, celui du neuvième décile à la médiane de 2,90 à 3,29.
 - **De 2010 à 2016, sur une autre mesure du salaire mensuel, l'écart entre quartiles s'ouvre** : le rapport du troisième au premier quartile passe de 2,22 à 2,47, celui de la médiane au premier quartile de 1,43 à 1,48.
 - **D'un segment à l'autre, rien ne se compare** : la médiane de 2013 est de 468,1 dinars par mois dans l'annuaire 2013 et de 502,1 dinars dans l'annuaire 2018.
-- **Le bas de la distribution mesure la durée déclarée autant que le salaire.** En 2013, le premier quartile est de 260,9 dinars par mois pour l'ensemble des salariés déclarés et de 427,1 dinars pour ceux qui le sont les quatre trimestres ; la médiane, de 468,1 et de 590,2 dinars (@tbl-mt-sp-2013).
+- **Le bas de la distribution mesure la durée déclarée autant que le salaire.** En 2013, le premier quartile est de 261 dinars par mois pour l'ensemble des salariés déclarés et de 427 dinars pour ceux qui le sont les quatre trimestres, soit 511 et 837 dinars de 2024 ; la médiane, de 468 et de 590 dinars, soit 917 et 1 157 dinars de 2024 (@tbl-mt-sp-2013).
 
 ```{python}
 #| label: fig-mt-sp-quantiles
@@ -541,8 +541,8 @@ print("\n: Rapports interquantiles du salaire mensuel déclaré à la CNSS, par 
       "{#tbl-mt-sp-interquantiles}\n")
 print(mt.tableau_2013())
 print("\n: Salariés déclarés à la CNSS en 2013, secteur privé non agricole : ensemble des "
-      "salariés déclarés et salariés déclarés les quatre trimestres ; quartiles approchés "
-      "{#tbl-mt-sp-2013}\n")
+      "salariés déclarés et salariés déclarés les quatre trimestres, en dinars de 2013 et en "
+      "dinars de 2024 ; quartiles approchés {#tbl-mt-sp-2013}\n")
 print("::: {.figure-source}\nSource : [@cnss-annuaire-2013, p. 26, 34, 35]\n:::\n")
 ```
 
