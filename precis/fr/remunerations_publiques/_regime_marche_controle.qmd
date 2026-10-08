@@ -4,7 +4,7 @@
 
 Le [« régime de marché contrôlé »](#g-regime-marche-controle) est la catégorie retenue dans ce livre pour les entreprises publiques **financières**. Le **sous-secteur juridique** documenté est celui des banques à capital public, sociétés anonymes où l'État et les actionnaires publics détiennent la majorité du capital.
 
-- **Qui il couvre.** Les agents des banques à capital public, couverts par la convention collective sectorielle des banques et établissements financiers, commune aux établissements publics et privés.
+- **Qui il couvre.** Les agents des banques à capital public, couverts par la convention collective sectorielle des banques et établissements financiers, commune aux établissements publics et privés ; et ceux des sociétés d'assurance, couverts par une convention collective propre à leur branche (@sec-marche-controle-assurances).
 - **Comment la rémunération s'y fixe.** Celle des agents, par cette convention ; celle des **dirigeants**, par voie réglementaire, l'État exerçant ses prérogatives d'actionnaire.
 - **À quelle caisse cotisent les agents.** En principe à la Caisse nationale de sécurité sociale.
 - **Ce que l'on en mesure.** Le *Rapport sur les entreprises publiques* du ministère chargé des finances donne le capital et la part publique des principales banques [@minfin-ep].
@@ -14,6 +14,8 @@ Le chapitre présente le champ du régime (@sec-marche-controle-champ), la const
 ## Champ d'application {#sec-marche-controle-champ}
 
 Le périmètre actionnarial du régime de marché contrôlé n'est pas différent de celui du régime conventionnel public (@sec-regime-conventionnel) : il s'agit d'entreprises publiques au sens de l'article 8 de la loi n°89-9 du 1^er^ février 1989 — entreprises dont l'État, les collectivités ou les établissements publics détiennent directement ou indirectement la totalité du capital, ou une participation au moins égale à la moitié de celui-ci [@loi89-9, art. 8]. La spécificité du sous-secteur ne tient donc pas au périmètre du capital, mais à l'**activité financière** exercée — activité bancaire, de crédit ou d'assurance.
+
+### Les banques à capital public {#sec-marche-controle-banques}
 
 - **Un chapitre distinct dans le rapport du ministère.** Le *Rapport sur les entreprises publiques* annexé à la loi de finances, publié par le ministère chargé des finances, consacre un chapitre aux « entreprises publiques actives dans le secteur financier et assimilé », où figurent les banques publiques [@minfin-ep].
 - **Une activité régie par une loi sectorielle.** La loi n°2016-48 du 11 juillet 2016 relative aux banques et aux établissements financiers définit l'activité bancaire et ses conditions d'exercice [@loi2016-48] ; elle ne distingue pas le capital public du capital privé et ne régit pas la rémunération des agents. Elle délimite le champ « financier » du chapitre.
@@ -42,7 +44,17 @@ Le même Rapport classe également dans le « secteur financier et assimilé » 
 
 ::::
 
-<!-- TODO: intégration éventuelle des sociétés d'assurance publiques (code des assurances, loi n°92-24) et des institutions financières spécialisées / filiales (sociétés de leasing publiques, etc.) — à cadrer si le précis veut les couvrir. -->
+### Les sociétés d'assurance {#sec-marche-controle-assurances}
+
+L'assurance appartient au même sous-secteur financier que la banque, avec sa propre convention collective.
+
+- **Une convention de branche distincte de celle des banques.** La convention collective nationale des assurances est agréée par un arrêté du 24 décembre 1975 [@cc-assurances-1975], le jour même où l'est celle des banques.
+- **Révisée en 1983, puis modifiée par avenants.** Une convention révisée est agréée le 23 août 1983 [@cc-assurances-1983] ; des avenants la modifient ensuite, dont les n° 10 et 11, agréés ensemble le 16 décembre 2014 [@cc-assurances-avenants-10-11].
+- **Comme pour les banques, la convention vaut pour la branche**, sociétés à capital public et sociétés privées confondues : c'est l'effet de l'arrêté d'agrément.
+
+Seul l'intitulé de ces trois arrêtés est repris ici.
+
+<!-- TODO (documentaliste) : liste des sociétés d'assurance à capital public et part publique de chacune (Rapport sur les entreprises publiques ; code des assurances, loi n° 92-24) ; grille et classification de la convention collective nationale des assurances (JORT n° 7 du 30 janvier 1976, p. 270-279, pour le texte d'origine ; avenants n° 1 à 11) ; rémunération de leurs dirigeants. Institutions financières spécialisées et filiales (sociétés de leasing publiques, etc.) : à cadrer si le précis veut les couvrir. -->
 <!-- TODO: parts de capital des banques spécialisées/mixtes (BTS, BFPME, BTE, BTL, TSB) à sourcer une à une sur leurs textes fondateurs JORT (pist.tn) si l'on veut l'exhaustivité de l'encadré. -->
 
 ## La construction de la rémunération {#sec-marche-controle-remuneration}
@@ -74,11 +86,12 @@ Le trait constant du régime est la convention collective sectorielle commune au
 | Année | Ce qui change | Portée |
 |---|---|---|
 | 1967 | la profession bancaire est réglementée par la loi n°67-51 du 7 décembre 1967 | point de départ |
-| 1975 | un arrêté agrée la convention collective du personnel des banques dont procède la convention en vigueur | point de départ |
+| 1975 | un arrêté agrée la convention collective du personnel des banques dont procède la convention en vigueur ; un autre, du même jour, la convention collective nationale des assurances [@cc-assurances-1975] | point de départ |
 | 1978 | le décret n°78-885 du 11 octobre 1978 porte sur la rémunération des dirigeants | point de départ |
+| 1983 | la convention collective nationale des assurances, révisée, est agréée le 23 août [@cc-assurances-1983] | étape |
 | 1990 | le décret n°90-1855 du 10 novembre 1990 fixe le régime de rémunération des chefs d'entreprises à majorité publique [@decret90-1855] | étape |
 | 2001 | l'activité est régie par la loi n°2001-65 du 10 juillet 2001 relative aux établissements de crédit | étape |
-| 2014 | le décret n°2014-12 du 10 janvier 2014 porte sur la rémunération des dirigeants ; la convention collective révisée est agréée le 17 février [@cc-banques-2014] | étape |
+| 2014 | le décret n°2014-12 du 10 janvier 2014 porte sur la rémunération des dirigeants ; la convention collective révisée est agréée le 17 février [@cc-banques-2014] ; les avenants n° 10 et 11 de la convention des assurances le sont le 16 décembre [@cc-assurances-avenants-10-11] | étape |
 | 2015 | le décret n°2015-2217 fixe les taux des éléments de rémunération des dirigeants [@decret2015-2217] | étape |
 | 2016 | l'activité est régie par la loi n°2016-48 relative aux banques et aux établissements financiers [@loi2016-48] | étape |
 | 2022 | la convention collective reçoit son avenant n°5 | ajustement |
