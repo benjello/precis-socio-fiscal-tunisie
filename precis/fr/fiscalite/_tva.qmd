@@ -22,7 +22,7 @@ Le code de 1988 ne fixe pas lui-même sa date d'effet : [son article 6](#r-tva-d
 À partir de [la loi de finances pour 1994](#r-tva-dates-1994), les textes examinés fixent en principe leur application au 1^er^ janvier de l'exercice, sous réserve de dispositions spéciales. [La loi de finances pour 1996](#r-tva-dates-1996) suit cette règle générale par son article 68, mais certains de ses changements de TVA prennent effet aux 1^er^ avril, 1^er^ juillet ou 1^er^ septembre 1996.
 :::
 
-:::: {.chronologie-repliable titre="Les clauses de date d'application, texte par texte, de 1988 à 1996"}
+:::: {.chronologie-repliable titre="Dates d'application des textes de TVA : les clauses, texte par texte, 1988-1996"}
 
 : Ce que les textes disent de leur date d'application, 1988-1996 {#tbl-tva-dates-textes}
 
@@ -53,7 +53,7 @@ Les ventes commerciales n'entrent donc dans le champ que dans [les cas énumér�
 
 **Les assujettis.** Selon [l'article 2 du code](#r-tva-champ-1988), sont [assujetties](#g-assujetti) les personnes physiques ou morales qui réalisent les opérations entrant dans le champ, celles qui mentionnent la taxe sur leurs factures et celles qui [optent pour la qualité d'assujetti](#g-option-assujettissement), pour tout ou partie de leurs activités. Celui qui facture la taxe en devient redevable du seul fait de cette mention. L'option engage pour quatre ans, et se reconduit tacitement. Le [fait générateur](#g-fait-generateur-tva) fixe le moment où la taxe devient exigible et le taux applicable : c'est, selon l'opération, le dédouanement, la livraison, la réalisation du service ou l'exécution des travaux. Le détail de ces deux règles est donné, replié, sous ce paragraphe (@tbl-tva-fait-generateur).
 
-:::: {.chronologie-repliable titre="L'option et le fait générateur dans la rédaction de 1988"}
+:::: {.chronologie-repliable titre="TVA : l'option pour l'assujettissement et le fait générateur, rédaction de 1988"}
 
 Dans la rédaction de 1988, l'option prend effet le premier jour du mois suivant son acceptation. Elle est irrévocable jusqu'au 31 décembre de la quatrième année qui suit sa prise d'effet, puis reconduite tacitement par périodes de quatre ans sauf dénonciation trois mois avant l'expiration. La sortie suppose le paiement de la taxe sur les stocks et le reversement de la taxe déduite sur les biens d'équipement et les bâtiments [@loi-88-61-tva, art. 2]. Les entreprises dépendantes d'entreprises assujetties ainsi que les entrepositaires et marchands en gros de boissons alcoolisées, de vins et de bières complètent la liste [@loi-88-61-tva, art. 2].
 
@@ -262,7 +262,7 @@ print(ot.markdown_avec_legende(Path.cwd() / "tables" / "tva_taux_dates_reperes.m
                                "tbl-tva-taux-reperes"))
 ```
 
-:::: {.chronologie-repliable titre="Les six grilles, texte par texte, de 1988 à 2026"}
+:::: {.chronologie-repliable titre="Taux de la TVA : les six grilles successives et leurs textes, 1988-2026"}
 
 Chaque ligne du tableau répond à un texte, et donne la grille en vigueur à compter de sa date d'effet, jusqu'à la veille de la ligne suivante (@tbl-tva-taux).
 
@@ -348,7 +348,7 @@ figtools.figure_tabs(
 
 La matrice ne montre que cinq dates. Pour quelques opérations — professions libérales, logement, télécommunications, médicaments au détail —, la suite complète des régimes, états intermédiaires et reports compris, est donnée dans l'état du droit (@tbl-tva-trajectoires).
 
-:::: {.chronologie-repliable titre="Les changements de régime d'une catégorie, texte par texte, de 1988 à 2025"}
+:::: {.chronologie-repliable titre="Catégories de produits et de services : les changements de régime de TVA, texte par texte, 1988-2025"}
 
 Le registre ne porte que les textes qui font passer une catégorie d'un régime à un autre. La colonne « Portée » dit de chaque ligne si elle est une rupture, une étape — et de quelle réforme — ou un ajustement. Trois lois de finances antérieures à 1994 ne fixent pas leur date d'application : leur date d'effet n'est pas établie.
 
@@ -415,7 +415,7 @@ Cinq de ces trajectoires demandent une précision que le tableau ne porte pas.
 
 <!-- TODO (bibliographe) : verser la clé `dgelf-nc-2023-05` (note commune n° 5/2023, p. 1 à 5 ; entrée CSL proposée au § 6 de docs/notes/fiscalite-tva-objets-des-reformes.md) et la citer à la fin de l'alinéa qui précède ; le contenu du tiret abrogé vient du code édité par le ministère en 2021 (art. 7, numéro 3), qui n'a pas de clé. -->
 
-:::: {.chronologie-repliable titre="Les trajectoires, texte par texte"}
+:::: {.chronologie-repliable titre="Opérations qui changent de régime de TVA : la trajectoire de chacune, texte par texte, 1988-2025"}
 
 : Trajectoires par opération : les textes et ce qu'ils changent, 1988-2025 {#tbl-tva-trajectoires-textes}
 
@@ -580,7 +580,7 @@ De 1998 à 2014, le taux de la taxe sur l'électricité domestique et sur certai
 - **2004 et 2007 : la reprise, puis 12 %.** Le taux réduit de TVA sur les produits pétroliers est ainsi interrompu jusqu'à sa reprise au [**1^er^ août 2004**](#r-tva-reductions-2004), tandis que la réduction sur l'électricité est reconduite annuellement. Au [**1^er^ janvier 2007**](#r-tva-reductions-2007), le taux de ces réductions passe de 10 % à 12 % par l'effet de la loi, non par celui des décrets annuels.
 - **2015 : l'inscription au code.** Au [**1^er^ janvier 2015**](#r-tva-reductions-2015), l'électricité basse tension domestique, l'électricité moyenne et basse tension destinée à l'irrigation agricole et les produits pétroliers sont inscrits au tableau B bis au taux de 12 %. Leur régime cesse ainsi de dépendre de réductions reconduites chaque année par décret, et leur reconduction annuelle devient sans objet. Au [**1^er^ janvier 2025**](#r-tva-reductions-2025), l'électricité basse tension domestique relève de 7 % lorsque la consommation mensuelle ne dépasse pas 300 kilowattheures et de 13 % au-delà.
 
-:::: {.chronologie-repliable titre="Les textes des réductions annuelles, de 1988 à 2025"}
+:::: {.chronologie-repliable titre="Réductions de TVA sur l'électricité et les produits pétroliers : les textes, 1988-2025"}
 
 : Réductions de taxe sur la valeur ajoutée sur l'électricité et les produits pétroliers : les textes et ce qu'ils changent, 1988-2025 {#tbl-tva-reductions-textes}
 
@@ -621,7 +621,7 @@ Lorsque la taxe due ne permet pas d'imputer toute la taxe déductible, le reliqu
 - **2014 : les achats réglés en espèces.** [La loi de finances pour 2014](#r-tva-deduction-2014) ajoute une exclusion d'une autre nature, qui fait du droit à déduction un instrument de lutte contre les paiements en espèces : la taxe n'est plus déductible sur les achats réglés en espèces à partir d'un montant hors taxe de 20 000 dinars au 1^er^ janvier 2014, abaissé à 10 000 dinars au 1^er^ janvier 2015 et à 5 000 dinars au 1^er^ janvier 2016. L'article est rangé sous la rubrique « Rationalisation des opérations commerciales effectuées en espèces ».
 - **Le pourcentage de déduction et la régularisation.** Celui qui n'acquitte pas la taxe sur la totalité de ses affaires — l'[assujetti partiel](#g-assujetti-partiel-tva) — ne déduit qu'une fraction de la taxe d'amont. Ce [pourcentage de déduction](#g-prorata-deduction-tva) est le rapport, calculé sur l'exercice précédent, entre les recettes qui ouvrent droit à déduction — recettes taxées, exportations, ventes en suspension — et l'ensemble des recettes, exonérées et hors du champ comprises. L'exportation et les ventes en suspension figurent donc au numérateur : elles n'amputent pas le droit à déduction, alors même qu'elles ne donnent lieu à aucune collecte de taxe. La [régularisation](#g-regularisation-deductions-tva) corrige la déduction quand la situation de l'assujetti ou du bien change : la taxe déduite est alors reversée, diminuée d'un cinquième par année de détention pour les équipements et d'un dixième pour les bâtiments. La formule, en symboles, et le détail des règles sont donnés, repliés, sous ce paragraphe.
 
-:::: {.chronologie-repliable titre="Le pourcentage de déduction et la régularisation"}
+:::: {.chronologie-repliable titre="Déduction de la TVA : le pourcentage de déduction et la régularisation, règles et formule"}
 
 L'[assujetti partiel](#g-assujetti-partiel-tva) — celui qui n'acquitte pas la taxe sur la totalité de ses affaires — ne déduit qu'une fraction de la taxe d'amont. Ce [pourcentage de déduction](#g-prorata-deduction-tva) est le rapport, calculé sur l'exercice précédent :
 
@@ -635,7 +635,7 @@ La [régularisation des déductions](#g-regularisation-deductions-tva) corrige l
 
 ::::
 
-:::: {.chronologie-repliable titre="Le droit à déduction, texte par texte, de 1988 à 2022"}
+:::: {.chronologie-repliable titre="Droit à déduction de la TVA : ses limites, texte par texte, 1988-2022"}
 
 : Limites du droit à déduction de la taxe sur la valeur ajoutée : les textes et ce qu'ils changent, 1988-2022 {#tbl-tva-deduction-textes}
 
@@ -684,7 +684,7 @@ Dix-neuf textes ont retouché la restitution depuis 1988. Trois seulement change
 
 À l'issue de ces textes, en 2023, le crédit de l'exportation est restituable sur une seule déclaration et dans 7 jours ; celui des ventes en suspension et de la retenue à la source, sur une seule déclaration et dans 30 jours ; celui de l'investissement direct et de la mise à niveau, après trois mois et dans 21 jours ; le crédit de droit commun, après six mois, avec une avance de 15 % et un délai de 90 jours, ou une avance de 50 % et un délai de 60 jours lorsque les comptes sont certifiés.
 
-:::: {.chronologie-repliable titre="Tous les textes, date par date : 19 étapes de 1988 à 2023"}
+:::: {.chronologie-repliable titre="Crédit de TVA et restitution : tous les textes, date par date, 1988-2023 (19 étapes)"}
 
 : Restitution du crédit de taxe sur la valeur ajoutée : les textes et ce qu'ils changent, 1988-2023 {#tbl-tva-restitution}
 
@@ -813,7 +813,7 @@ La déclaration et la facture sont dans le code dès 1988 (article 18). La factu
 
 <!-- TODO (documentaliste) : art. 31 et 32 de la LF 1994 (JORT n° 100 du 31 décembre 1993, p. 2197) à relire sur l'image du fascicule ; la loi fixe son application au 1er janvier 1994 par une clause générale (art. 77, p. 2202), mais l'absence de clause propre à ces deux articles reste à confirmer sur l'image : aucune date n'est donc écrite au chapitre. Date d'effet non relevée non plus pour les art. 50 (LF 1991), 66 et 68 (LF 1992) et 114 (LF 1993), qui ne sont pas repris au chapitre. -->
 
-:::: {.chronologie-repliable titre="Déclaration et facture, texte par texte, de 1988 à 2026"}
+:::: {.chronologie-repliable titre="Déclaration et facture de TVA : les textes, 1988-2026"}
 
 : Déclaration et facture : les textes et ce qu'ils changent, 1988-2026 {#tbl-tva-declaration-textes}
 
