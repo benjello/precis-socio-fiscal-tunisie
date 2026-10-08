@@ -365,6 +365,7 @@ _LIGNES_EMPLOI = [
 # Année de données où les lignes passent de la deuxième à la troisième présentation du tableau
 # (éditions 1995 et suivantes), et année où le total y passe à son tour.
 RUPTURE_LIGNES, RUPTURE_TOTAL = 1992, 1994
+BLEU_REFORME = "#0550ae"
 
 _L.update({
     "y_md": {"fr": "Millions de dinars courants", "ar": "بملايين الدنانير الجارية"},
@@ -380,6 +381,8 @@ _L.update({
                 "ar": "مجموع الجدول (بما فيه بنود أخرى)"},
     "r_lignes": {"fr": "lignes : tableau refondu", "ar": "البنود: جدول بهيئة جديدة"},
     "r_total": {"fr": "total : autre périmètre", "ar": "المجموع: نطاق آخر"},
+    "ref_1993": {"fr": "réforme de 1993", "ar": "إصلاح 1993"},
+    "ref_2000": {"fr": "Fonds national de l'emploi, 2000", "ar": "الصندوق الوطني للتشغيل، 2000"},
     "r_2003": {"fr": "2003 : 29,6 dans l'édition 2003,\n92,0 dans les suivantes",
                "ar": "2003: 29,6 في طبعة 2003،\nثمّ 92,0 في الطبعات اللاحقة"},
     "c_ed_lignes": {"fr": "édition retenue (lignes)", "ar": "الطبعة المعتمدة (البنود)"},
@@ -431,6 +434,18 @@ def _fig_dotations_emploi(log: bool):
                 marker="o", ms=2.5, label=ft(_lab(cle)))
     figtools.marque_rupture(ax, RUPTURE_LIGNES, ft(_lab("r_lignes")))
     figtools.marque_rupture(ax, RUPTURE_TOTAL, "\n" + ft(_lab("r_total")))
+    # Les deux réformes que couvre la série : un trait plein, étiqueté là où les courbes
+    # laissent de la place — au pied du cadre en échelle logarithmique, en haut sinon.
+    for annee, cle, a_gauche in ((1993, "ref_1993", False), (2000, "ref_2000", True)):
+        ax.axvline(annee, color=BLEU_REFORME, lw=0.9, alpha=0.6, zorder=1)
+        if log:
+            pos = dict(xy=(annee, 0), xytext=(3, 4), ha="left", va="bottom")
+        elif a_gauche:
+            pos = dict(xy=(annee, 0.93), xytext=(-3, 0), ha="right", va="center")
+        else:
+            pos = dict(xy=(annee, 0.80), xytext=(3, 0), ha="left", va="center")
+        ax.annotate(ft(_lab(cle)), xycoords=("data", "axes fraction"),
+                    textcoords="offset points", fontsize=7, color=BLEU_REFORME, **pos)
     cr2003 = next(l["chantiers_regionaux"] for l in r if l["annee"] == 2003)
     ax.annotate("\n".join(ft(x) for x in _lab("r_2003").split("\n")), xy=(2003, cr2003),
                 xytext=(-20, -70) if log else (-12, 34), textcoords="offset points",

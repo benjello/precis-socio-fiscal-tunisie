@@ -98,7 +98,10 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
 - **Le texte principal se suffit.** On écrit comme si le lecteur ne lisait que lui, et pas dans
   l'ordre : une section dit son objet avant son évolution ; une notation se redéfinit là où elle
   sert ; rien ne dépend d'un bloc replié ; un renvoi vers une autre section se place en tête ;
-  pas de métaphore pour nommer une chose du droit.
+  pas de métaphore pour nommer une chose du droit. On annonce ce que l'on présente, jamais ce que
+  l'on laisse de côté ; l'état du droit se dit par sa date, pas par la façon dont il a été établi ;
+  et l'on décrit ce qui est — le sujet de la phrase est l'État, le programme, le bénéficiaire —
+  plutôt que ce que font les textes.
 - **Les références de loi sortent du fil de la phrase.** Dans une section `.domicile-unique`, le
   nom du texte ou la date est un lien `[…](#r-…)` vers sa ligne de registre, qui porte la
   référence complète (texte, article, page) et alimente l'infobulle ; les autres sources

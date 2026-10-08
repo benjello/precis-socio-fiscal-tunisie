@@ -7947,7 +7947,7 @@ entries:
   - id: fonds-national-emploi
     acronyme: FNE
     statut: valide
-    references: [lf-2001, lf-2003, dl2011-16, decret2009-349, decret2019-542]
+    references: [lf-2001, lf-2003, dl2011-16, decret2009-349, decret2012-2369, decret2019-542]
     source_definition: {ref: lf-2000, locator: "art. 13-14"}
     # Arabe : LF 2000, art. 13 (OCR) et intitulé de l'art. 15 (image) ; décret
     # n° 2009-349, art. 1er (image) ; décret gouvernemental n° 2019-542, art. 1er.
@@ -7961,9 +7961,12 @@ entries:
         leurs possibilités d'emploi. Il est alimenté par des dons, par une part des
         produits de privatisation et, depuis 2001, par des taxes affectées ; son
         ordonnateur, d'abord celui de la présidence de la République, est depuis 2011
-        le ministre chargé de l'emploi (décret-loi n° 2011-16). Depuis le décret
-        n° 2009-349, tous les stages et contrats aidés sont ses « programmes ». Les
-        rapports de la Banque centrale le nomment « Fonds national de l'emploi 21-21 ».
+        le ministre chargé de l'emploi (décret-loi n° 2011-16). Depuis février 2009,
+        il finance seul les programmes que fixent les décrets successifs (décret
+        n° 2009-349, puis décrets de 2012 et de 2019) ; de 2003 à février 2009, le
+        fonds qui paie les stages d'initiation à la vie professionnelle et le contrat
+        emploi-formation n'est pas établi. Les rapports de la Banque centrale le
+        nomment « Fonds national de l'emploi 21-21 ».
       synonymes: [Fonds 21-21]
     ar:
       terme: الصندوق الوطني للتشغيل
@@ -7973,15 +7976,17 @@ entries:
         الهبات ومن قسط من العائدات المتأتية من عمليات التخصيص، ومنذ سنة 2001 من
         معاليم مخصّصة له؛ وكان يأذن بدفع مصاريفه آمر الصرف لرئاسة الجمهورية ثم
         صار ذلك منذ سنة 2011 إلى الوزير المكلف بالتشغيل
-        (المرسوم عدد 16 لسنة 2011). ومنذ الأمر عدد 349 لسنة 2009 صارت كلّ
-        التربصات والعقود المدعومة «برامج» له. وتسمّيه تقارير البنك المركزي
-        «الصندوق الوطني للتشغيل 21-21».
+        (المرسوم عدد 16 لسنة 2011). ومنذ فيفري 2009 صار يموّل وحده البرامج التي
+        تضبطها الأوامر المتعاقبة (الأمر عدد 349 لسنة 2009 ثم أمرا سنتي 2012
+        و2019)؛ أما من سنة 2003 إلى فيفري 2009 فالصندوق الذي يتحمّل نفقات تربصات
+        الإعداد للحياة المهنية وعقد التشغيل والتكوين غير ثابت. وتسمّيه تقارير
+        البنك المركزي «الصندوق الوطني للتشغيل 21-21».
       synonymes: []
 
   - id: fonds-formation-apprentissage
     acronyme: null
     statut: valide
-    references: [lf-2018]
+    references: [lf-2003, lf-2018]
     source_definition: {ref: lf-2000, locator: "art. 17-18"}
     # Paire lue à l'image dans les deux éditions de la LF 2000, art. 17 (JORT n° 105 de
     # 1999). Le tableau des fonds spéciaux de la LF 2018 (JORT n° 101 de 2017) écrit en
@@ -7996,9 +8001,12 @@ entries:
         l'ordonnateur est le ministre chargé de la formation professionnelle et dont
         la ressource est le produit de la taxe de formation professionnelle net des
         ristournes. Il finance la formation initiale et continue et l'apprentissage ;
-        de 2000 à 2009, il finance aussi les stages d'initiation à la vie
-        professionnelle et les contrats emploi-formation, passés ensuite au Fonds
-        national de l'emploi. La loi de finances pour 2018 l'intitule « fonds de
+        de 2000 à 2002, il finance aussi les stages d'initiation à la vie
+        professionnelle et les contrats emploi-formation, que la loi de finances
+        pour 2003 ne nomme plus parmi ses dépenses. De 2003 à février 2009, le fonds
+        qui les paie n'est pas établi ; en février 2009, seul le stage des diplômés
+        du supérieur passe au Fonds national de l'emploi, et le contrat
+        emploi-formation cesse. La loi de finances pour 2018 l'intitule « fonds de
         promotion de la formation et de l'apprentissage professionnel ».
       synonymes: [Fonds de promotion de la formation et de l'apprentissage professionnel]
     ar:
@@ -8007,9 +8015,12 @@ entries:
         حساب خاص في الخزينة أحدثه قانون المالية لسنة 2000، يأذن بدفع مصاريفه
         الوزير المكلف بالتكوين المهني، ومورده موارد الأداء على التكوين المهني
         صافية من العائدات. ويموّل التكوين الأساسي والمستمر والتدريب المهني؛ وموّل كذلك من
-        سنة 2000 إلى سنة 2009 تربصات الإعداد للحياة المهنية وعقود التشغيل
-        والتكوين، قبل أن تُحمل على الصندوق الوطني للتشغيل. ويرد في قانون المالية
-        لسنة 2018 بالتسمية العربية نفسها.
+        سنة 2000 إلى سنة 2002 تربصات الإعداد للحياة المهنية وعقود التشغيل
+        والتكوين، ولم يعد قانون المالية لسنة 2003 يذكرها ضمن نفقاته. ومن سنة 2003
+        إلى فيفري 2009 الصندوق الذي يتحمّل نفقاتها غير ثابت؛ وفي فيفري 2009 لم
+        يُحمل على الصندوق الوطني للتشغيل سوى تربص حاملي شهادات التعليم العالي،
+        وانتهى العمل بعقد التشغيل والتكوين. ويرد في قانون المالية لسنة 2018
+        بالتسمية العربية نفسها.
       synonymes: []
 
   - id: aneti
@@ -8089,8 +8100,10 @@ entries:
         par le décret n° 87-1190 du 26 août 1987, il est étendu en 1988 aux diplômés
         du second cycle secondaire, puis réservé de nouveau aux diplômés du supérieur
         par le décret n° 2009-349, qui en fait un programme du Fonds national de
-        l'emploi. Le décret gouvernemental n° 2019-542 le remplace par le contrat
-        d'initiation à la vie professionnelle.
+        l'emploi ; le stage du niveau secondaire cesse alors. En juillet 2019, le
+        décret gouvernemental n° 2019-542 en fait un contrat, ouvert aussi à ceux
+        qui ne sont pas diplômés du supérieur : le contrat d'initiation à la vie
+        professionnelle.
       synonymes: []
     ar:
       terme: تربص الإعداد للحياة المهنية
@@ -8099,8 +8112,10 @@ entries:
         لفائدة حاملي شهادات التعليم العالي بالأمر عدد 1190 لسنة 1987 المؤرخ في
         26 أوت 1987، ثم شمل سنة 1988 حاملي شهادات المرحلة الثانية من التعليم
         الثانوي، وعاد الأمر عدد 349 لسنة 2009 فخصّ به حاملي شهادات التعليم العالي
-        وجعله من برامج الصندوق الوطني للتشغيل. وعوّضه الأمر الحكومي عدد 542 لسنة
-        2019 بعقد الإعداد للحياة المهنية.
+        وجعله من برامج الصندوق الوطني للتشغيل، وانتهى حينئذ العمل بتربص مستوى
+        التعليم الثانوي. وفي جويلية 2019 جعله الأمر الحكومي عدد 542 لسنة 2019
+        عقدا مفتوحا كذلك لغير حاملي شهادات التعليم العالي: عقد الإعداد للحياة
+        المهنية.
       synonymes: []
 
   - id: civp
@@ -8118,28 +8133,32 @@ entries:
     fr:
       terme: Contrat d'initiation à la vie professionnelle
       definition: >
-        Programme du Fonds national de l'emploi fixé par le décret gouvernemental
-        n° 2019-542, qui succède au stage d'initiation à la vie professionnelle. Il
+        Programme du Fonds national de l'emploi fixé en juillet 2019 par le décret
+        gouvernemental n° 2019-542 : c'est le stage d'initiation à la vie
+        professionnelle, devenu un contrat. Il
         est ouvert aux demandeurs d'un premier emploi, diplômés du supérieur ou non,
         pour douze mois renouvelables une fois, avec une indemnité mensuelle de
-        l'État. Le décret n° 2023-461 l'écrit en français « contrat d'insertion à la
-        vie professionnelle » et subordonne l'accueil de nouveaux bénéficiaires à
-        l'insertion de la moitié des précédents.
+        l'État. En juin 2023, le décret n° 2023-461 l'écrit en français « contrat
+        d'insertion à la vie professionnelle » et subordonne l'accueil de nouveaux
+        bénéficiaires à l'insertion de la moitié de ceux que l'entreprise a
+        accueillis les trois années précédentes.
       synonymes: [contrat d'insertion à la vie professionnelle]
     ar:
       terme: عقد الإعداد للحياة المهنية
       definition: >
-        برنامج من برامج الصندوق الوطني للتشغيل ضبطه الأمر الحكومي عدد 542 لسنة
-        2019، وهو يخلف تربص الإعداد للحياة المهنية. ويُفتح لطالبي الشغل لأول مرة،
+        برنامج من برامج الصندوق الوطني للتشغيل ضبطه في جويلية 2019 الأمر الحكومي
+        عدد 542 لسنة 2019: هو تربص الإعداد للحياة المهنية وقد صار عقدا. ويُفتح
+        لطالبي الشغل لأول مرة،
         من حاملي شهادات التعليم العالي ومن غيرهم، لمدة اثني عشر شهرا قابلة
-        للتجديد مرة واحدة، مع منحة شهرية تسندها الدولة. وقد علّق الأمر عدد 461
-        لسنة 2023 قبول منتفعين جدد على إدماج نصف المنتفعين السابقين.
+        للتجديد مرة واحدة، مع منحة شهرية تسندها الدولة. وفي جوان 2023 علّق الأمر
+        عدد 461 لسنة 2023 قبول منتفعين جدد على إدماج نصف من قبلتهم المؤسسة خلال
+        السنوات الثلاث السابقة.
       synonymes: []
 
   - id: cides
     acronyme: CIDES
     statut: valide
-    references: [decret2011-1]
+    references: [decret2011-1, decret2012-2369, decret2019-542]
     source_definition: {ref: decret2009-349, locator: "art. 11-19"}
     source_traduction: {ref: decret2009-349, locator: "art. 1er"}
     voir_aussi: [sivp, caip, prise-en-charge-contribution-patronale, civp]
@@ -8149,10 +8168,11 @@ entries:
         Programme du Fonds national de l'emploi créé par le décret n° 2009-349 pour
         les diplômés du supérieur au chômage depuis plus de trois ans — depuis deux
         ans par une seconde voie ouverte en 2011. Le stage dure un an, avec une
-        indemnité mensuelle de l'État ; l'entreprise qui recrute le stagiaire
-        bénéficie de la prise en charge de la contribution patronale. Maintenu à
-        titre transitoire en 2012, il est remplacé en 2019 par le contrat
-        d'initiation à la vie professionnelle.
+        indemnité mensuelle de l'État ; pour les recrutements de 2009 à 2011,
+        l'entreprise qui recrute le stagiaire bénéficie de la prise en charge de la
+        contribution patronale. Maintenu à titre transitoire en 2012, il cesse le
+        2 juillet 2019 avec l'abrogation du décret qui le maintenait, sans être
+        nommé et sans successeur ; les contrats en cours sont menés à leur terme.
       synonymes: []
     ar:
       terme: عقد إدماج حاملي شهادات التعليم العالي
@@ -8160,15 +8180,17 @@ entries:
         برنامج من برامج الصندوق الوطني للتشغيل أحدثه الأمر عدد 349 لسنة 2009
         لفائدة حاملي شهادات التعليم العالي الذين تجاوزت فترة بطالتهم ثلاث سنوات،
         وسنتين بصيغة ثانية فُتحت سنة 2011. ويدوم التربص سنة، مع منحة شهرية تسندها
-        الدولة؛ وتنتفع المؤسسة التي تنتدب المتربص بتكفل الصندوق بمساهمة الأعراف.
-        وأُبقي عليه بصفة انتقالية سنة 2012، ثم عوّضه سنة 2019 عقد الإعداد للحياة
-        المهنية.
+        الدولة؛ وتنتفع المؤسسة التي تنتدب المتربص، بالنسبة إلى انتدابات سنوات
+        2009 إلى 2011، بتكفل الصندوق بمساهمة الأعراف. وأُبقي عليه بصفة انتقالية
+        سنة 2012، ثم انتهى العمل به في 2 جويلية 2019 بإلغاء الأمر الذي أبقى عليه،
+        دون أن يُذكر بالاسم ودون أن يخلفه برنامج آخر؛ وتتواصل العقود الجارية إلى
+        نهاية مدتها.
       synonymes: []
 
   - id: caip
     acronyme: CAIP
     statut: valide
-    references: [decret2011-621]
+    references: [decret2011-621, decret2012-2369, decret2019-542]
     source_definition: {ref: decret2009-349, locator: "art. 20-24"}
     source_traduction: {ref: decret2009-349, locator: "art. 1er"}
     voir_aussi: [sivp, cides, crva, civp]
@@ -8179,8 +8201,9 @@ entries:
         les demandeurs d'emploi qui ne sont pas diplômés du supérieur, sur une offre
         d'emploi restée non satisfaite. Il dure un an, comprend une formation de
         400 heures au plus et donne lieu à une indemnité mensuelle de l'État.
-        Maintenu à titre transitoire en 2012, il est remplacé en 2019 par le contrat
-        d'initiation à la vie professionnelle.
+        Maintenu à titre transitoire en 2012, il cesse le 2 juillet 2019 avec
+        l'abrogation du décret qui le maintenait, sans être nommé et sans
+        successeur ; les contrats en cours sont menés à leur terme.
       synonymes: []
     ar:
       terme: عقد التأهيل والإدماج المهني
@@ -8188,14 +8211,15 @@ entries:
         برنامج من برامج الصندوق الوطني للتشغيل أحدثه الأمر عدد 349 لسنة 2009
         لفائدة طالبي الشغل من غير حاملي شهادات التعليم العالي، بناء على عرض شغل
         لم تقع تلبيته. ويدوم سنة، ويتضمن تكوينا لا يتجاوز 400 ساعة، مع منحة شهرية
-        تسندها الدولة. وأُبقي عليه بصفة انتقالية سنة 2012، ثم عوّضه سنة 2019 عقد
-        الإعداد للحياة المهنية.
+        تسندها الدولة. وأُبقي عليه بصفة انتقالية سنة 2012، ثم انتهى العمل به في
+        2 جويلية 2019 بإلغاء الأمر الذي أبقى عليه، دون أن يُذكر بالاسم ودون أن
+        يخلفه برنامج آخر؛ وتتواصل العقود الجارية إلى نهاية مدتها.
       synonymes: []
 
   - id: crva
     acronyme: CRVA
     statut: valide
-    references: []
+    references: [decret2001-1722, lf-2005, decret2012-2369, decret2019-542, decret2023-461]
     source_definition: {ref: decret2009-349, locator: "art. 25-28"}
     # Arabe lu à l'image : intitulé de la section 4 et art. 25, p. 581 de l'édition arabe.
     source_traduction: {ref: decret2009-349, locator: "art. 25"}
@@ -8203,25 +8227,41 @@ entries:
     fr:
       terme: Contrat de réinsertion dans la vie active
       definition: >
-        Programme du Fonds national de l'emploi créé par le décret n° 2009-349 pour
+        Programme du Fonds national de l'emploi, créé deux fois. Il naît sous ce nom
+        avec le décret n° 2009-349, pour
         les travailleurs qui ont perdu leur emploi pour des raisons économiques ou
-        techniques, permanents ou comptant trois ans d'ancienneté. Il dure un an,
-        comprend une adaptation de 200 heures au plus à un poste identifié dans une
-        entreprise privée et donne lieu à une indemnité mensuelle de l'État.
+        techniques, permanents ou comptant trois ans d'ancienneté : il dure alors un
+        an, comprend une adaptation de 200 heures au plus à un poste identifié dans
+        une entreprise privée et donne lieu à une indemnité mensuelle de l'État.
+        Deux dispositifs le précèdent, sans lien établi avec lui : un système de
+        contrats de formation aux fins de réinsertion, institué en 2001, et un
+        « contrat de réinsertion dans la vie professionnelle », créé par la loi de
+        finances pour 2005. Maintenu à titre transitoire en 2012, il cesse le
+        2 juillet 2019 avec l'abrogation du décret qui le maintenait, sans être
+        nommé. En juin 2023, le décret n° 2023-461 le recrée, pour les personnes
+        ayant perdu leur emploi dans une entreprise du secteur privé et pour douze
+        mois au plus.
       synonymes: []
     ar:
       terme: عقد إعادة الإدماج في الحياة النشيطة
       definition: >
-        برنامج من برامج الصندوق الوطني للتشغيل أحدثه الأمر عدد 349 لسنة 2009
+        برنامج من برامج الصندوق الوطني للتشغيل أُحدث مرتين. أحدثه بهذه التسمية
+        الأمر عدد 349 لسنة 2009
         لفائدة العمال الذين فقدوا شغلهم لأسباب اقتصادية أو فنية، من القارّين أو
-        ممن لهم أقدمية ثلاث سنوات. ويدوم سنة، ويتضمن تأهيلا لا يتجاوز 200 ساعة
-        لموطن عمل مشخّص مسبقا بمؤسسة خاصة، مع منحة شهرية تسندها الدولة.
+        ممن لهم أقدمية ثلاث سنوات: يدوم حينئذ سنة، ويتضمن تأهيلا لا يتجاوز 200 ساعة
+        لموطن عمل مشخّص مسبقا بمؤسسة خاصة، مع منحة شهرية تسندها الدولة. وسبقته
+        آليتان لم تثبت صلتهما به: نظام عقود تكوين لإعادة الإدماج أُحدث سنة 2001،
+        وعقد لإعادة الإدماج في الحياة المهنية أحدثه قانون المالية لسنة 2005.
+        وأُبقي عليه بصفة انتقالية سنة 2012، ثم انتهى العمل به في 2 جويلية 2019
+        بإلغاء الأمر الذي أبقى عليه، دون أن يُذكر بالاسم. وفي جوان 2023 أعاد
+        إحداثه الأمر عدد 461 لسنة 2023، لفائدة من فقدوا شغلهم بمؤسسات القطاع
+        الخاص ولمدة أقصاها اثنا عشر شهرا.
       synonymes: []
 
   - id: contrat-emploi-solidarite
     acronyme: null
     statut: valide
-    references: [decret2011-98]
+    references: [decret2011-98, decret2012-2369, decret2019-542]
     source_definition: {ref: decret2009-349, locator: "art. 36-40"}
     source_traduction: {ref: decret2009-349, locator: "art. 1er"}
     voir_aussi: [fonds-national-emploi, contrat-service-civil]
@@ -8232,7 +8272,9 @@ entries:
         à tous les demandeurs d'emploi dans le cadre d'initiatives régionales ou
         locales. L'État verse au bénéficiaire une indemnité mensuelle, plus élevée
         pour les diplômés du supérieur, dont le contrat peut durer trois ans — quatre
-        depuis 2011 — contre un an pour les autres.
+        depuis 2011 — contre un an pour les autres. Maintenu à titre transitoire en
+        2012, il cesse le 2 juillet 2019 avec l'abrogation du décret qui le
+        maintenait, sans être nommé ; les contrats en cours sont menés à leur terme.
       synonymes: []
     ar:
       terme: عقد التشغيل والتضامن
@@ -8240,7 +8282,10 @@ entries:
         برنامج من برامج الصندوق الوطني للتشغيل أحدثه الأمر عدد 349 لسنة 2009،
         مفتوح لكل طالبي الشغل في إطار مبادرات جهوية أو محلية. وتسند الدولة
         للمنتفع منحة شهرية أرفع لحاملي شهادات التعليم العالي، الذين يمكن أن يدوم
-        عقدهم ثلاث سنوات، وأربعا منذ سنة 2011، مقابل سنة لغيرهم.
+        عقدهم ثلاث سنوات، وأربعا منذ سنة 2011، مقابل سنة لغيرهم. وأُبقي عليه
+        بصفة انتقالية سنة 2012، ثم انتهى العمل به في 2 جويلية 2019 بإلغاء الأمر
+        الذي أبقى عليه، دون أن يُذكر بالاسم؛ وتتواصل العقود الجارية إلى نهاية
+        مدتها.
       synonymes: []
 
   - id: contrat-service-civil
@@ -8261,8 +8306,9 @@ entries:
         Programme du Fonds national de l'emploi créé par le décret n° 2010-87 : un
         stage à mi-temps de douze mois dans une association ou une organisation
         professionnelle, pour les diplômés du supérieur à la recherche d'un premier
-        emploi, avec une indemnité mensuelle de l'État. Le décret gouvernemental
-        n° 2019-542 le reprend sous le nom de contrat de service civil.
+        emploi, avec une indemnité mensuelle de l'État. En juillet 2019, le décret
+        gouvernemental n° 2019-542 le reprend sous le nom de contrat de service
+        civil.
       synonymes: [service civil volontaire, contrat de service civil, CSC]
     ar:
       terme: برنامج الخدمة المدنية التطوعية
@@ -8270,7 +8316,8 @@ entries:
         برنامج من برامج الصندوق الوطني للتشغيل أحدثه الأمر عدد 87 لسنة 2010: تربص
         لنصف الوقت مدته اثنا عشر شهرا لدى جمعية أو منظمة مهنية، لفائدة حاملي
         شهادات التعليم العالي طالبي الشغل لأول مرة، مع منحة شهرية تسندها الدولة.
-        وأعاده الأمر الحكومي عدد 542 لسنة 2019 بتسمية عقد الخدمة المدنية.
+        وفي جويلية 2019 أعاده الأمر الحكومي عدد 542 لسنة 2019 بتسمية عقد الخدمة
+        المدنية.
       synonymes: [عقد الخدمة المدنية]
 
   - id: contrat-dignite
@@ -8293,8 +8340,9 @@ entries:
         et au chômage depuis deux ans au moins. Pendant deux ans, le Fonds prend en
         charge une part du salaire versé par l'entreprise qui les recrute, ainsi que
         des cotisations de sécurité sociale. Le décret gouvernemental n° 2019-542 en
-        garde le nom ; le décret n° 2023-461 lui substitue « programme d'appui au
-        recrutement pour les titulaires des diplômes supérieurs ».
+        garde le nom ; en juin 2023, le décret n° 2023-461 lui substitue
+        « programme d'appui au recrutement pour les titulaires des diplômes
+        supérieurs », sans récrire les articles du programme.
       synonymes: [contrat dignité, Karama, programme d'appui au recrutement pour les titulaires des diplômes supérieurs]
     ar:
       terme: عقد الكرامة
@@ -8303,8 +8351,9 @@ entries:
         2017 لفائدة حاملي شهادات التعليم العالي طالبي الشغل لأول مرة الذين بلغت
         فترة بطالتهم سنتين على الأقل. ويتكفل الصندوق طيلة سنتين بجزء من الأجر الذي
         تدفعه المؤسسة المنتدِبة وبمساهمات في الضمان الاجتماعي. وأبقى الأمر الحكومي
-        عدد 542 لسنة 2019 على التسمية؛ وعوّضها الأمر عدد 461 لسنة 2023 بعبارة
-        «برنامج دعم انتداب حاملي الشهادات العليا».
+        عدد 542 لسنة 2019 على التسمية؛ وفي جوان 2023 عوّضها الأمر عدد 461 لسنة
+        2023 بعبارة «برنامج دعم انتداب حاملي الشهادات العليا»، دون تنقيح فصول
+        البرنامج.
       synonymes: [برنامج دعم انتداب حاملي الشهادات العليا]
 
   - id: programme-forsati
@@ -8349,20 +8398,21 @@ entries:
         Programme du Fonds national de l'emploi créé par le décret n° 2009-349 pour
         ceux qui créent une petite entreprise : sessions de formation, assistance
         technique et, pendant la première phase d'implantation du projet, une
-        indemnité mensuelle. Il devient en 2012 le « programme d'appui aux promoteurs
-        des petites entreprises », nom que garde le décret gouvernemental
-        n° 2019-542 ; le décret n° 2023-461 l'étend aux entreprises de l'économie
-        sociale et solidaire et aux sociétés communautaires.
+        indemnité mensuelle. En octobre 2012, le « programme d'appui aux promoteurs
+        des petites entreprises » le remplace, nom que garde le décret
+        gouvernemental n° 2019-542 ; en juin 2023, le décret n° 2023-461 l'étend aux
+        entreprises de l'économie sociale et solidaire et aux sociétés
+        communautaires.
       synonymes: [programme d'appui aux promoteurs des petites entreprises]
     ar:
       terme: برنامج مرافقة باعثي المؤسسات الصغرى
       definition: >
         برنامج من برامج الصندوق الوطني للتشغيل أحدثه الأمر عدد 349 لسنة 2009
         لفائدة باعثي المؤسسات الصغرى: دورات تأهيل، ومساعدة فنية، ومنحة شهرية خلال
-        المرحلة الأولى لتركيز المشروع. وصار سنة 2012 «برنامج دعم باعثي المؤسسات
-        الصغرى»، وهي التسمية التي أبقى عليها الأمر الحكومي عدد 542 لسنة 2019؛ ووسّعه
-        الأمر عدد 461 لسنة 2023 ليشمل مؤسسات الاقتصاد الاجتماعي والتضامني
-        والشركات الأهلية.
+        المرحلة الأولى لتركيز المشروع. وعوّضه في أكتوبر 2012 «برنامج دعم باعثي
+        المؤسسات الصغرى»، وهي التسمية التي أبقى عليها الأمر الحكومي عدد 542 لسنة
+        2019؛ وفي جوان 2023 وسّعه الأمر عدد 461 لسنة 2023 ليشمل مؤسسات الاقتصاد
+        الاجتماعي والتضامني والشركات الأهلية.
       synonymes: [برنامج دعم باعثي المؤسسات الصغرى]
 
   - id: programme-amal
@@ -8395,7 +8445,7 @@ entries:
   - id: contrat-emploi-formation
     acronyme: null
     statut: valide
-    references: [loi81-75, decret81-1220, loi93-17]
+    references: [loi81-75, decret81-1220, loi93-17, decret2009-349]
     source_definition: {ref: decret93-1049, locator: "art. 18-21"}
     # Arabe lu à l'image (édition arabe du JORT n° 36 de 1993, scan océrisé) : intitulé
     # du chapitre II et art. 23. La LF 2000 (art. 17, OCR) écrit dans l'ordre inverse
@@ -8412,7 +8462,9 @@ entries:
         exonération de la part patronale des cotisations sociales. Le décret
         n° 93-1049 le reprend, l'employeur versant au stagiaire une bourse égale
         aux deux tiers du salaire minimum garanti en vigueur dans son secteur
-        d'activité. Il disparaît avec le décret n° 2009-349.
+        d'activité. Il cesse le 16 février 2009, avec l'abrogation du décret de 1993
+        par le décret n° 2009-349, qui ne le nomme pas, ne le compte pas parmi ses
+        programmes et ne le fait pas passer au Fonds national de l'emploi.
       synonymes: []
     ar:
       terme: عقد التشغيل والتكوين
@@ -8421,7 +8473,9 @@ entries:
         1981: تقبل المؤسسة شابا لمدة سنة وتنتفع بمنحة
         من الدولة وبإعفاء من مساهمة الأعراف في الضمان الاجتماعي. وأعاده الأمر عدد
         1049 لسنة 1993، ويسند المشغّل فيه للمتربص منحة تساوي ثلثي الأجر الأدنى
-        المضمون المعمول به في قطاع النشاط الذي ينتمي إليه. وزال بصدور الأمر عدد 349 لسنة 2009.
+        المضمون المعمول به في قطاع النشاط الذي ينتمي إليه. وانتهى العمل به في
+        16 فيفري 2009 بإلغاء أمر سنة 1993 بمقتضى الأمر عدد 349 لسنة 2009، الذي لم
+        يذكره بالاسم ولم يجعله من برامجه ولم يحمله على الصندوق الوطني للتشغيل.
       synonymes: []
 
   - id: ouvriers-de-chantiers
@@ -8487,7 +8541,7 @@ entries:
   - id: prise-en-charge-contribution-patronale
     acronyme: null
     statut: valide
-    references: [lf-2005, decret2017-358, decret2019-542]
+    references: [loi97-79, lf-2004, lf-2005, decret2010-87, decret2012-2369, decret2017-358, decret2019-542]
     source_definition: {ref: decret2009-349, locator: "art. 15"}
     # Paire lue en regard à l'art. 15 du décret n° 2009-349 (arabe relu à l'image,
     # p. 579 de l'édition arabe) ; l'entrée reprend la formule entière des deux éditions.
@@ -8498,25 +8552,33 @@ entries:
     fr:
       terme: Prise en charge par le Fonds national de l'emploi de la contribution patronale au régime légal de sécurité sociale
       definition: >
-        Avantage accordé à l'entreprise qui recrute : le Fonds national de l'emploi
-        paie à sa place, pendant une durée limitée, la part patronale des cotisations
-        de sécurité sociale sur le salaire du nouveau recruté. Pour les diplômés du
-        supérieur recrutés de 2005 à 2009, la loi de finances pour 2005 l'avait mise
-        à la charge de l'État pendant sept ans, à taux dégressif ; le décret
-        n° 2009-349 reprend ce barème pour les recrutements issus d'un contrat
-        d'insertion des diplômés, et les programmes de 2017 et de 2019 la limitent à
-        deux ans.
+        Avantage accordé à l'entreprise qui recrute : la part patronale des
+        cotisations de sécurité sociale sur le salaire du nouveau recruté est payée
+        à sa place, pendant une durée limitée, par l'État puis par le Fonds national
+        de l'emploi. La mesure naît en novembre 1997 (loi n° 97-79) : l'État la
+        prend à sa charge pendant cinq ans pour le recrutement de diplômés du
+        supérieur. La loi de finances pour 2005 la porte à sept ans, à taux
+        dégressif, pour les recrutements de 2005 à 2009 ; une prise en charge d'une
+        part du salaire existe à côté d'elle depuis 2004. Le décret n° 2009-349
+        applique le même barème, à la charge du Fonds, aux recrutements issus d'un
+        contrat d'insertion des diplômés. Le Fonds reprend la mesure en janvier
+        2010, et son terme est fixé au 31 décembre 2014. Les programmes de 2017 et
+        de 2019 comportent une prise en charge limitée à deux ans.
       synonymes: [prise en charge de la contribution patronale, prise en charge des cotisations patronales]
     ar:
       terme: تكفل الصندوق الوطني للتشغيل بمساهمة الأعراف في النظام القانوني للضمان الاجتماعي
       definition: >
-        امتياز يُمنح للمؤسسة المنتدِبة: يدفع الصندوق الوطني للتشغيل عوضا عنها، لمدة
-        محدودة، مساهمة الأعراف في الضمان الاجتماعي بعنوان أجر المنتدَب الجديد. وكان
-        قانون المالية لسنة 2005 قد حمّلها على الدولة لمدة سبع سنوات وبنسب تنازلية
-        بالنسبة إلى حاملي شهادات التعليم العالي المنتدبين من سنة 2005 إلى سنة
-        2009؛ وأخذ الأمر عدد 349 لسنة 2009 بالجدول نفسه للانتدابات الناتجة عن عقد
-        إدماج حاملي شهادات التعليم العالي، وحصرتها برامج سنتي 2017 و2019 في
-        سنتين.
+        امتياز يُمنح للمؤسسة المنتدِبة: تُدفع عوضا عنها، لمدة محدودة، مساهمة
+        الأعراف في الضمان الاجتماعي بعنوان أجر المنتدَب الجديد، تتكفل بها الدولة
+        ثم الصندوق الوطني للتشغيل. وقد أُحدث هذا الامتياز في نوفمبر 1997 (القانون
+        عدد 79 لسنة 1997): تتكفل الدولة بالمساهمة لمدة خمس سنوات عند انتداب
+        حاملي شهادات التعليم العالي. ورفع قانون المالية لسنة 2005 المدة إلى سبع
+        سنوات وبنسب تنازلية بالنسبة إلى المنتدبين من سنة 2005 إلى سنة 2009؛
+        ويوجد إلى جانبه منذ سنة 2004 تكفل الدولة بجزء من الأجر. وأخذ الأمر عدد
+        349 لسنة 2009 بالجدول نفسه، على حساب الصندوق، للانتدابات الناتجة عن عقد
+        إدماج حاملي شهادات التعليم العالي. وتولّى الصندوق هذا الامتياز في جانفي
+        2010، وحُدّد أجله بيوم 31 ديسمبر 2014. وتتضمن برامج سنتي 2017 و2019
+        تكفلا محصورا في سنتين.
       synonymes: []
 
   # --- Compensation (volume « Prestations sociales », chapitre « La compensation ») ---
