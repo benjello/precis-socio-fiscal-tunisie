@@ -147,6 +147,8 @@ Dans le textile, le salaire d'entrée est celui de l'agent payé à l'heure de l
 - **Depuis 2011, il vaut, à la date d'effet de chaque grille, de 1,11 à 1,30 SMIG dans le textile et de 1,15 à 1,24 dans le bâtiment**, où la dernière grille établie est celle du 1^er^ mai 2019.
 - **Le rapport monte entre deux relèvements du SMIG et retombe à chacun** : les avenants relèvent la grille de 6 à 7 % par an, le SMIG l'est à des dates irrégulières. Dans le textile, il passe de 1,21 en septembre 2021 à 1,30 en mai 2022, le SMIG restant inchangé, puis à 1,19 en janvier 2025, quand le SMIG est porté à 2,540 dinars l'heure.
 
+**Comment lire les marches de la vue « Rapport au SMIG ».** Le salaire d'entrée et le SMIG ne changent pas le même jour. Le trait suit leur rapport jour après jour, et il ne bouge que dans deux cas : il **monte** le jour où un avenant relève la grille de la branche, et il **descend** le jour où un décret relève le SMIG, la grille restant la même. Entre deux de ces dates, il reste à plat. Un point marque chaque date d'effet d'une grille ; une marche sans point est donc une hausse du SMIG. Le textile de 2022 à 2024 en donne quatre de suite : la grille du 1^er^ mai 2022 porte le rapport à 1,30 ; le relèvement du SMIG du 1^er^ octobre 2022 le ramène à 1,21 ; la grille du 1^er^ janvier 2024 le remonte à 1,29 ; le relèvement du SMIG du 1^er^ mai 2024 le ramène à 1,21.
+
 ```{python}
 #| label: fig-mt-cc-salaire-entree
 #| echo: false
@@ -160,9 +162,11 @@ figtools.figure_tabs(
              "salaire d'entrée au SMIG ; par segments, 1974-2026"),
     note_lecture=(
         "Chaque point est le salaire horaire de base du bas d'une grille, à sa date d'effet, "
-        "hors indemnités de la convention. Une grille vaut jusqu'à la suivante du même "
-        "segment : le rapport change à chaque grille et à chaque relèvement du SMIG. Aucun "
-        "trait ne relie deux segments, et les années sans grille établie restent vides : "
+        "hors indemnités de la convention. Dans la vue du rapport, le trait en escalier divise "
+        "la grille en vigueur par le SMIG horaire en vigueur le même jour : une marche qui "
+        "monte, marquée d'un point, est une nouvelle grille ; une marche qui descend, sans "
+        "point, est un relèvement du SMIG. Le trait s'arrête à la dernière grille de chaque "
+        "segment. Aucun trait ne relie deux segments, et les années sans grille établie restent vides : "
         "dans le textile de 1996 à 2010, dans le bâtiment de 1999 à 2010 et après 2019 ; "
         "depuis les avenants de 1996, les grilles ne paraissent plus que dans l'édition arabe "
         "du Journal officiel, d'où viennent celles de 2011 à 2026. Les grilles de 1990 à "
