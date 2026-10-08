@@ -33,6 +33,36 @@ Le salaire minimum est le montant au-dessous duquel un salarié ne peut être pa
 
 **Deux régimes horaires.** Le SMIG est fixé pour deux régimes de durée du travail, 48 heures et 40 heures par semaine. Jusqu'en mars 1981, son taux horaire est le même dans les deux ; depuis le 1^er^ avril 1981, le salarié du régime de 40 heures est mieux payé à l'heure, et moins au mois (@sec-mt-regimes-horaires).
 
+**Son évolution.** En dinars de 2024, le SMIG mensuel du régime de 48 heures vaut 413 dinars en 1962, 765 dinars à son plus haut en 1983 et 481 dinars en 2024 ; avant 1974, la figure porte aussi le minimum de la seconde zone et l'indemnité de cherté de vie (@fig-mt-sm-evolution).
+
+```{python}
+#| label: fig-mt-sm-evolution
+#| echo: false
+#| output: asis
+sys.path.insert(0, ".")
+from figures import marche_travail as mt
+import figtools
+figtools.figure_tabs(
+    mt.vues_evolution(), mt.table_reel(), "marche-travail-smig-smag", "ipc-longue-periode",
+    "bct-ipc-base2015",
+    slug="fig_mt_sm_evolution",
+    caption=("Salaire minimum mensuel, en dinars courants (1961-2028) et en dinars de 2024 "
+             "(1962-2024) : minima par zone, SMIG des régimes de 48 et de 40 heures, SMAG "
+             "rapporté à vingt-six journées"),
+    note_lecture=(
+        "En dinars courants, chaque marche est une date d'effet ; les paliers de 2027 et de "
+        "2028 sont déjà fixés. En dinars de 2024, chaque point est la moyenne des montants en "
+        "vigueur au premier jour des douze mois de l'année, multipliée par le rapport de "
+        "l'indice des prix à la consommation de 2024 à celui de l'année ; la série s'arrête à "
+        "la dernière année dont l'indice est publié. Avant le 1er mai 1968, le trait plein "
+        "est le minimum de la première zone et le pointillé bleu celui de la seconde ; de "
+        "1971 à 1973, le trait violet ajoute au minimum l'indemnité de cherté de vie. Avant "
+        "1974, les montants mensuels sont le minimum horaire rapporté à 208 heures, et le "
+        "minimum agricole journalier à vingt-six journées. Le détail des séries et de "
+        "l'indice est au chapitre de la longue période."),
+)
+```
+
 **Comment le chapitre se lit.** Il suit l'ordre des dates : la mise en place, des minima par zone de 1961 à l'institution du SMIG et du SMAG en 1974 (@sec-mt-mise-en-place) ; les ruptures, de 1977 à 2026 (@sec-mt-ruptures) ; l'état du droit en 2026, avec les montants date par date et la composition du SMIG (@sec-mt-sm-etat-du-droit). L'évolution du salaire minimum en dinars courants et en dinars constants, de 1961 à 2028, est tracée au chapitre de la longue période (@fig-mt-lp-nominal, @sec-mt-longue-periode).
 
 ## La mise en place, 1961-1974 {#sec-mt-mise-en-place .domicile-unique}

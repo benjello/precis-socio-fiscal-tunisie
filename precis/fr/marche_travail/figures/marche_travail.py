@@ -45,7 +45,17 @@ import figtools  # noqa: E402
 
 SERIE = "marche-travail-smig-smag"
 SERIE_IPC = "ipc-longue-periode"
-ANNEE_BASE = 2023
+SERIE_IPC_RECENT = "bct-ipc-base2015"
+# Année des dinars constants : la dernière dont l'indice des prix est publié, jamais une année
+# à venir.
+ANNEE_BASE = 2024
+# Avant le SMIG. Seconde zone : plancher horaire jusqu'à sa suppression le 1er mai 1968
+# (décrets n° 61-145, art. 6, et n° 65-561, art. 5 ; n° 68-97). Indemnité de cherté de vie :
+# 0,020 D l'heure en sus du minimum, du 1er mai 1971 à l'institution du SMIG (décret n° 71-164).
+HEURES_48H = 208
+ZONE_II = [(dt.date(1961, 4, 1), 0.060), (dt.date(1966, 1, 1), 0.066)]
+FIN_ZONE_II = dt.date(1968, 5, 1)
+ICV_HORAIRE, DEBUT_ICV, FIN_ICV = 0.020, dt.date(1971, 5, 1), dt.date(1974, 1, 1)
 
 BLEU, ORANGE, VERT, GRIS = "#08519c", "#bc4c00", "#1a7f37", "#6e7781"
 
@@ -87,7 +97,19 @@ _L = {
                      "ar": "الأجر الأدنى الفلاحي / 8 ساعات بالأجر الأدنى بالساعة (48 ساعة)"},
     "vue_lin": {"fr": "Échelle linéaire", "ar": "سلّم خطّي"},
     "vue_log": {"fr": "Échelle logarithmique", "ar": "سلّم لوغاريتمي"},
-    "r_1974": {"fr": "SMIG", "ar": "الأجر الأدنى"},
+    "r_1974": {"fr": "institution du SMIG et du SMAG", "ar": "إحداث الأجر الأدنى المضمون"},
+    "lg_zone2": {"fr": "Minimum de la seconde zone, 1961-1968",
+                 "ar": "الأجر الأدنى بالمنطقة الثانية، 1961-1968"},
+    "lg_icv": {"fr": "Minimum et indemnité de cherté de vie, 1971-1973",
+               "ar": "الأجر الأدنى مع منحة غلاء المعيشة، 1971-1973"},
+    "c_zone2_reel": {"fr": f"Seconde zone, moyenne annuelle (D de {ANNEE_BASE})",
+                     "ar": f"المنطقة الثانية، المعدّل السنوي (د {ANNEE_BASE})"},
+    "c_icv_reel": {"fr": f"Minimum et indemnité de cherté de vie (D de {ANNEE_BASE})",
+                   "ar": f"الأجر الأدنى مع منحة غلاء المعيشة (د {ANNEE_BASE})"},
+    "vue_courants": {"fr": "Dinars courants", "ar": "بالدينار الجاري"},
+    "vue_courants_log": {"fr": "Dinars courants, échelle logarithmique",
+                         "ar": "بالدينار الجاري، سلّم لوغاريتمي"},
+    "vue_constants": {"fr": f"Dinars de {ANNEE_BASE}", "ar": f"بدينار سنة {ANNEE_BASE}"},
     "r_1981": {"fr": "deux taux horaires", "ar": "نسبتان بالساعة"},
     "r_2026": {"fr": "décrets de 2026", "ar": "أوامر 2026"},
     # Colonnes des données.
@@ -136,8 +158,29 @@ def _moyenne_annuelle(d, colonne: str, annee: int):
 
 
 def _ipc() -> dict[int, float]:
-    return {int(r.annee): float(r.indice_base1970)
-            for r in figtools.series(SERIE_IPC).itertuples()}
+    """Indice des prix, base 1970 ; prolongé au-delà de sa dernière année par la variation de
+    l'indice en base 2015 que relaie la Banque centrale."""
+    ipc = {int(r.annee): float(r.indice_base1970)
+           for r in figtools.series(SERIE_IPC).itertuples()}
+    recent = {int(r.annee): float(r.valeur)
+              for r in figtools.series(SERIE_IPC_RECENT).itertuples()}
+    fin = max(ipc)
+    for annee in sorted(a for a in recent if a > fin and fin in recent):
+        ipc[annee] = ipc[fin] * recent[annee] / recent[fin]
+    return ipc
+
+
+def _zone2_mensuel(jour: dt.date):
+    """Minimum mensuel (208 heures) de la seconde zone ; celui de la première après sa suppression."""
+    if jour >= FIN_ZONE_II:
+        return None
+    taux = [v for d0, v in ZONE_II if d0 <= jour]
+    return taux[-1] * HEURES_48H if taux else None
+
+
+def _moyenne_mois(f, annee: int):
+    mois = [f(dt.date(annee, m, 1)) for m in range(1, 13)]
+    return None if any(v is None for v in mois) else sum(mois) / 12
 
 
 def _escaliers(ax, d, colonne, facteur=1.0, **kw):
@@ -151,7 +194,9 @@ def _ruptures(ax, en_dates=True):
     for annee, cle in ((1974, "r_1974"), (1981, "r_1981"), (2026, "r_2026")):
         x = dt.datetime(annee, 1, 1) if en_dates else annee - 0.5
         ax.axvline(x, color="#57606a", ls=(0, (2, 2)), lw=1, zorder=1)
-        ax.annotate(figtools.fig_text(_lab(cle)), xy=(x, 1), xycoords=("data", "axes fraction"),
+        # Deux ruptures voisines : l'étiquette de la seconde passe à la ligne du dessous.
+        texte = ("\n" if annee == 1981 else "") + figtools.fig_text(_lab(cle))
+        ax.annotate(texte, xy=(x, 1), xycoords=("data", "axes fraction"),
                     xytext=(4, -4), textcoords="offset points", ha="left", va="top",
                     fontsize=7, color="#57606a")
 
@@ -167,6 +212,14 @@ def _fig_nominal(log: bool):
     _escaliers(ax, d, "smig_40h_mensuel", color=ORANGE, lw=1.6, label=ft(_lab("lg_40")))
     _escaliers(ax, d, "smag_journalier", facteur=26, color=VERT, lw=1.4, ls="--",
                label=ft(_lab("lg_smag26")))
+    # Avant 1974 : la seconde zone, et le minimum augmenté de l'indemnité de cherté de vie.
+    z = [(dt.datetime(d0.year, d0.month, d0.day), v * HEURES_48H) for d0, v in ZONE_II]
+    z.append((dt.datetime(FIN_ZONE_II.year, FIN_ZONE_II.month, 1), z[-1][1]))
+    ax.plot([a for a, _ in z], [b for _, b in z], drawstyle="steps-post", color=BLEU, lw=1.2,
+            ls=":", label=ft(_lab("lg_zone2")))
+    base = _en_vigueur(d, "smig_48h_mensuel", DEBUT_ICV) + ICV_HORAIRE * HEURES_48H
+    ax.plot([dt.datetime(DEBUT_ICV.year, DEBUT_ICV.month, 1), dt.datetime(FIN_ICV.year, 1, 1)],
+            [base, base], color=VIOLET, lw=1.6, label=ft(_lab("lg_icv")))
     _ruptures(ax)
     if log:
         ax.set_yscale("log")
@@ -207,8 +260,15 @@ def _reel():
         smig = _moyenne_annuelle(d, "smig_48h_mensuel", annee)
         smag = _moyenne_annuelle(d, "smag_journalier", annee)
         coef = ipc[ANNEE_BASE] / ipc[annee]
+        zone2 = _moyenne_mois(_zone2_mensuel, annee) if annee < FIN_ZONE_II.year else None
+        icv = None
+        if DEBUT_ICV.year <= annee < FIN_ICV.year:
+            icv = _moyenne_mois(lambda j: _en_vigueur(d, "smig_48h_mensuel", j)
+                                + (ICV_HORAIRE * HEURES_48H if j >= DEBUT_ICV else 0), annee)
         lignes.append((annee, smig, None if smig is None else smig * coef,
-                       None if smag is None else smag * 26 * coef, ipc[annee]))
+                       None if smag is None else smag * 26 * coef, ipc[annee],
+                       None if zone2 is None else zone2 * coef,
+                       None if icv is None else icv * coef))
     return lignes
 
 
@@ -217,11 +277,15 @@ def fig_reel():
     ft = figtools.fig_text
     r = _reel()
     fig, ax = plt.subplots(figsize=(10, 5.6))
-    ax.plot([a for a, *_ in r], [v for _, _, v, _, _ in r], "-o", ms=3, color=BLEU, lw=2,
+    ax.plot([l[0] for l in r], [l[2] for l in r], "-o", ms=3, color=BLEU, lw=2,
             label=ft(_lab("lg_48")))
-    pts = [(a, s) for a, _, _, s, _ in r if s is not None]
+    pts = [(l[0], l[3]) for l in r if l[3] is not None]
     ax.plot([a for a, _ in pts], [s for _, s in pts], "--", color=VERT, lw=1.4,
             label=ft(_lab("lg_smag26")))
+    for k, cle, style in ((5, "lg_zone2", dict(color=BLEU, ls=":", lw=1.2, marker="o", ms=2)),
+                          (6, "lg_icv", dict(color=VIOLET, lw=1.6, marker="o", ms=2.5))):
+        pts = [(l[0], l[k]) for l in r if l[k] is not None]
+        ax.plot([a for a, _ in pts], [s for _, s in pts], label=ft(_lab(cle)), **style)
     _ruptures(ax, en_dates=False)
     ax.set_ylim(0, None)
     ax.set_xlabel(ft(_lab("x_annee")))
@@ -236,15 +300,24 @@ def vues_reel():
     return fig_reel()
 
 
+def vues_evolution():
+    """Le salaire minimum en une figure : dinars courants (deux échelles) et dinars constants."""
+    return [(_lab("vue_courants"), _fig_nominal(False)),
+            (_lab("vue_constants"), fig_reel()),
+            (_lab("vue_courants_log"), _fig_nominal(True))]
+
+
 def table_reel():
     import pandas as pd
     r = _reel()
     return pd.DataFrame({
         _lab("c_annee"): [a for a, *_ in r],
-        _lab("c_48_moy"): [None if v is None else round(v, 3) for _, v, *_ in r],
-        _lab("c_ipc"): [i for *_, i in r],
-        _lab("c_48_reel"): [None if v is None else round(v, 1) for _, _, v, _, _ in r],
-        _lab("c_smag_reel"): [None if v is None else round(v, 1) for _, _, _, v, _ in r],
+        _lab("c_48_moy"): [None if l[1] is None else round(l[1], 3) for l in r],
+        _lab("c_ipc"): [round(l[4], 1) for l in r],
+        _lab("c_48_reel"): [None if l[2] is None else round(l[2], 1) for l in r],
+        _lab("c_smag_reel"): [None if l[3] is None else round(l[3], 1) for l in r],
+        _lab("c_zone2_reel"): [None if l[5] is None else round(l[5], 1) for l in r],
+        _lab("c_icv_reel"): [None if l[6] is None else round(l[6], 1) for l in r],
     })
 
 

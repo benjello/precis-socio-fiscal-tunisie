@@ -27,8 +27,9 @@ figtools.figure_tabs(
     caption=("SMIG mensuel des régimes de 48 et de 40 heures et SMAG rapporté à vingt-six "
              "journées, en dinars courants, 1961-2028"),
     note_lecture=(
-        "Chaque marche est une date d'effet. Avant le 1er mai 1968, le montant est celui de "
-        "la première zone ; de 1971 à 1973, l'indemnité de cherté de vie s'y ajoute. Les "
+        "Chaque marche est une date d'effet. Avant le 1er mai 1968, le trait plein est le "
+        "minimum de la première zone et le pointillé bleu celui de la seconde ; de 1971 à "
+        "1973, le trait violet ajoute au minimum l'indemnité de cherté de vie. Les "
         "paliers de 2027 et de 2028 sont fixés par les décrets de 2026. L'échelle "
         "logarithmique montre les rythmes de hausse : une pente égale est une hausse "
         "égale en pourcentage."),
@@ -37,12 +38,12 @@ figtools.figure_tabs(
 
 ## Le SMIG en dinars constants {#sec-mt-lp-reel}
 
-Déflaté par l'indice des prix à la consommation, le SMIG du régime de 48 heures, en moyenne annuelle et en dinars de 2023, connaît quatre phases (@fig-mt-lp-reel).
+Déflaté par l'indice des prix à la consommation, le SMIG du régime de 48 heures, en moyenne annuelle et en dinars de 2024, connaît quatre phases (@fig-mt-lp-reel).
 
-- **De 1962 à 1973, il recule**, de 386 à 287 dinars de 2023 : le minimum horaire n'est relevé qu'une fois, en 1966 ; l'indemnité de cherté de vie servie à partir de 1971, qui s'y ajoute sans le modifier, n'est pas comptée.
-- **De 1974 à 1983, il progresse** : l'institution du SMIG le porte à 426 dinars en 1974, et les hausses de 1977 à 1983 à son plus haut, 715 dinars en 1983.
-- **De 1984 à 1991, il recule** à 507 dinars, faute de hausse entre le 1er janvier 1983 et le 1er juillet 1986, puis de hausses inférieures aux prix.
-- **De 1992 à 2017, il se maintient** entre 518 et 577 dinars ; **depuis 2018, il recule de nouveau**, jusqu'à 459 dinars en 2023, son niveau le plus bas depuis 1976.
+- **De 1962 à 1973, il recule**, de 413 à 307 dinars de 2024 : le minimum horaire n'est relevé qu'une fois, en 1966. Dans la seconde zone, supprimée en 1968, il vaut 326 dinars en 1962. L'indemnité de cherté de vie servie à partir de 1971 s'y ajoute sans le modifier : avec elle, le salarié au minimum touche 380 dinars en 1973.
+- **De 1974 à 1983, il progresse** : l'institution du SMIG le porte à 456 dinars en 1974, et les hausses de 1977 à 1983 à son plus haut, 765 dinars en 1983.
+- **De 1984 à 1991, il recule** à 543 dinars, faute de hausse entre le 1er janvier 1983 et le 1er juillet 1986, puis de hausses inférieures aux prix.
+- **De 1992 à 2017, il se maintient** entre 555 et 618 dinars ; **depuis 2018, il recule de nouveau**, jusqu'à 481 dinars en 2024, son niveau le plus bas depuis 1976.
 
 ```{python}
 #| label: fig-mt-lp-reel
@@ -50,17 +51,21 @@ Déflaté par l'indice des prix à la consommation, le SMIG du régime de 48 heu
 #| output: asis
 figtools.figure_tabs(
     mt.vues_reel(), mt.table_reel(), "marche-travail-smig-smag", "ipc-longue-periode",
+    "bct-ipc-base2015",
     slug="fig_mt_reel",
     caption=("SMIG mensuel du régime de 48 heures et SMAG rapporté à vingt-six journées, "
-             "moyenne annuelle en dinars de 2023, 1962-2023"),
+             "moyenne annuelle en dinars de 2024, 1962-2024"),
     note_lecture=(
         "La moyenne annuelle est celle des montants en vigueur au premier jour de chacun "
-        "des douze mois : une hausse du 1er mai compte pour huit mois. Les dinars de 2023 "
+        "des douze mois : une hausse du 1er mai compte pour huit mois. Les dinars de 2024 "
         "s'obtiennent en multipliant cette moyenne par le rapport de l'indice des prix de "
-        "2023 à celui de l'année. L'indice raccorde, en 1970, l'indice du coût de la vie de "
+        "2024 à celui de l'année. L'indice raccorde, en 1970, l'indice du coût de la vie de "
         "la Banque centrale (1962-1975) et l'indice des prix à la consommation familiale de "
-        "l'INS (1976-2023), lu dans ses annuaires statistiques ; la série s'arrête en 2023, "
-        "dernière année de l'annuaire 2019-2023."),
+        "l'INS (1976-2023), lu dans ses annuaires statistiques ; l'année 2024, que le dernier "
+        "annuaire ne porte pas, prolonge la série par la variation de l'indice en base 2015 "
+        "que relaie la Banque centrale. La série s'arrête à la dernière année dont l'indice "
+        "est publié. Avant 1974, le pointillé bleu est le minimum de la seconde zone et le "
+        "trait violet le minimum augmenté de l'indemnité de cherté de vie."),
 )
 ```
 
