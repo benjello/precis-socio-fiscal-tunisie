@@ -329,14 +329,14 @@ Cette section rapporte le salaire minimum aux salaires du secteur privé non agr
 
 ### Ce que l'on mesure {#sec-mt-sp-mesure}
 
-Trois sources viennent des déclarations des employeurs à la Caisse nationale de sécurité sociale (CNSS) ; deux sont des enquêtes de l'Institut national de la statistique (INS) (@tbl-mt-sp-sources).
+Trois sources viennent des déclarations des employeurs à la [Caisse nationale de sécurité sociale](#g-cnss) (CNSS) ; deux sont des enquêtes de l'Institut national de la statistique (INS) (@tbl-mt-sp-sources).
 
 | Source | Type de salaire | Périmètre | Période | Ce qu'on peut en attendre |
 |:---|:---|:---|:---|:---|
-| CNSS, annuaire statistique : salaire moyen déclaré | salaire déclaré à la caisse ; masse de l'année divisée par le nombre de salariés déclarés | secteur privé non agricole : salariés du régime des salariés non agricoles déclarés au moins une fois dans l'année | 1970-2018 | un niveau |
+| CNSS, annuaire statistique : [salaire moyen déclaré](#g-salaire-moyen-declare) | [salaire déclaré](#g-salaire-declare) à la caisse ; masse de l'année divisée par le nombre de salariés déclarés | secteur privé non agricole : salariés du [régime des salariés non agricoles](#g-rsna) déclarés au moins une fois dans l'année | 1970-2018 | un niveau |
 | INS, d'après les déclarations à la CNSS : taux d'évolution du salaire moyen | salaire déclaré à la CNSS | secteur privé non agricole : salariés déclarés cinq trimestres de suite | 2001-2025 | une évolution, à composition constante ; aucun niveau |
-| CNSS, annuaire statistique : pyramide des salaires déclarés | salaire mensuel déclaré, par classes en dinars et en multiples d'un SMIG de référence | secteur privé non agricole : salariés déclarés au titre de l'année | 2000-2018 | une distribution, par segments |
-| INS, enquête sur les micro-entreprises | non précisé par les rapports | entreprises non agricoles de moins de six salariés, sans comptabilité ; salariés permanents | 2007, 2012, 2016 | la part des salaires inférieurs au SMIG, à trois dates |
+| CNSS, annuaire statistique : pyramide des salaires déclarés | salaire mensuel déclaré, par classes en dinars et en multiples d'un [SMIG de référence](#g-smig-reference-cnss) | secteur privé non agricole : salariés déclarés au titre de l'année | 2000-2018 | une distribution, par segments |
+| INS, enquête sur les [micro-entreprises](#g-micro-entreprise) | non précisé par les rapports | entreprises non agricoles de moins de six salariés, sans comptabilité ; [salariés permanents](#g-salarie-permanent) | 2007, 2012, 2016 | la part des salaires inférieurs au SMIG, à trois dates |
 | INS, enquête « Emploi et salaires » | salaire de base, hors primes et heures supplémentaires | entreprises de six salariés et plus, publiques comprises ; salariés permanents | 2012, 2014, 2022 | un niveau, à trois dates |
 
 : Les cinq sources de la section : type de salaire, périmètre, période et usage {#tbl-mt-sp-sources}
@@ -500,7 +500,7 @@ La CNSS ne publie pas de quantiles. Ils sont approchés ici par interpolation li
 - **De 2000 à 2009, le haut de la distribution s'écarte** : le rapport du troisième au premier quartile passe de 3,00 à 3,12, celui du neuvième décile à la médiane de 2,90 à 3,29.
 - **De 2010 à 2016, sur une autre mesure du salaire mensuel, l'écart entre quartiles s'ouvre** : le rapport du troisième au premier quartile passe de 2,22 à 2,47, celui de la médiane au premier quartile de 1,43 à 1,48.
 - **D'un segment à l'autre, rien ne se compare** : la médiane de 2013 est de 468,1 dinars par mois dans l'annuaire 2013 et de 502,1 dinars dans l'annuaire 2018.
-- **Le bas de la distribution mesure la durée déclarée autant que le salaire.** En 2013, le premier quartile est de 260,9 dinars par mois pour l'ensemble des salariés déclarés et de 427,1 dinars pour ceux qui le sont les quatre trimestres ; la médiane, de 468,1 et de 590,2 dinars (@tbl-mt-sp-2013).
+- **Le bas de la distribution mesure la durée déclarée autant que le salaire.** En 2013, le premier quartile est de 261 dinars par mois pour l'ensemble des salariés déclarés et de 427 dinars pour ceux qui le sont les quatre trimestres, soit 511 et 837 dinars de 2024 ; la médiane, de 468 et de 590 dinars, soit 917 et 1 157 dinars de 2024 (@tbl-mt-sp-2013).
 
 ```{python}
 #| label: fig-mt-sp-quantiles
@@ -541,7 +541,9 @@ print("\n: Rapports interquantiles du salaire mensuel déclaré à la CNSS, par 
       "{#tbl-mt-sp-interquantiles}\n")
 print(mt.tableau_2013())
 print("\n: Salariés déclarés à la CNSS en 2013, secteur privé non agricole : ensemble des "
-      "salariés déclarés et salariés déclarés les quatre trimestres ; quartiles approchés "
+      "salariés déclarés et salariés déclarés les quatre trimestres, en dinars de 2013 et en "
+      "dinars de 2024 ; quartiles approchés ; les deux dernières lignes donnent la part des "
+      "salariés dont le salaire mensuel est sous 300 dinars, puis de 300 à 330 dinars "
       "{#tbl-mt-sp-2013}\n")
 print("::: {.figure-source}\nSource : [@cnss-annuaire-2013, p. 26, 34, 35]\n:::\n")
 ```

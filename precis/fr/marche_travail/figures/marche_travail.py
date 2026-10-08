@@ -717,14 +717,20 @@ _L.update({
     "ti_q3q1": {"fr": "Q3/Q1", "ar": "الربيع 3 / الربيع 1"},
     "ti_mq1": {"fr": "Médiane/Q1", "ar": "الوسيط / الربيع 1"},
     "ti_d9m": {"fr": "D9/médiane", "ar": "العُشير 9 / الوسيط"},
-    "t13_pop": {"fr": "Population, 2013", "ar": "الفئة، 2013"},
+    "t13_grandeur": {"fr": "2013", "ar": "2013"},
+    "t13_ens": {"fr": "Ensemble<br>(D de 2013)", "ar": "جملة المصرّح بهم<br>(د 2013)"},
+    "t13_ens_reel": {"fr": f"Ensemble<br>(D de {ANNEE_BASE})",
+                     "ar": f"جملة المصرّح بهم<br>(د {ANNEE_BASE})"},
+    "t13_4t": {"fr": "Quatre trimestres<br>(D de 2013)", "ar": "الثلاثيات الأربع<br>(د 2013)"},
+    "t13_4t_reel": {"fr": f"Quatre trimestres<br>(D de {ANNEE_BASE})",
+                    "ar": f"الثلاثيات الأربع<br>(د {ANNEE_BASE})"},
     "t13_n": {"fr": "Salariés", "ar": "الأجراء"},
-    "t13_moy": {"fr": "Salaire annuel moyen (D)", "ar": "معدّل الأجر السنوي (د)"},
-    "t13_q1": {"fr": "Premier quartile (D par mois)", "ar": "الربيع الأول (د في الشهر)"},
-    "t13_med": {"fr": "Médiane (D par mois)", "ar": "الوسيط (د في الشهر)"},
-    "t13_q3": {"fr": "Troisième quartile (D par mois)", "ar": "الربيع الثالث (د في الشهر)"},
-    "t13_300": {"fr": "Moins de 300 D par mois", "ar": "أقلّ من 300 د في الشهر"},
-    "t13_330": {"fr": "De 300 à 330 D par mois", "ar": "من 300 إلى 330 د في الشهر"},
+    "t13_moy": {"fr": "Salaire moyen<br>(par an)", "ar": "معدّل الأجر السنوي"},
+    "t13_q1": {"fr": "Premier quartile<br>(par mois)", "ar": "الربيع الأول، في الشهر"},
+    "t13_med": {"fr": "Médiane<br>(par mois)", "ar": "الوسيط، في الشهر"},
+    "t13_q3": {"fr": "Troisième quartile<br>(par mois)", "ar": "الربيع الثالث، في الشهر"},
+    "t13_300": {"fr": "Moins de 300 D de 2013<br>(part des salariés)", "ar": "أقلّ من 300 د في الشهر"},
+    "t13_330": {"fr": "De 300 à 330 D de 2013<br>(part des salariés)", "ar": "من 300 إلى 330 د في الشهر"},
     "y_indice": {"fr": f"Indice, base 100 en {ANNEE_BASE_INDICE}",
                  "ar": f"رقم قياسي، أساس 100 سنة {ANNEE_BASE_INDICE}"},
     "y_rapport_smig": {"fr": "Salaire moyen déclaré, en SMIG de 48 heures",
@@ -1477,14 +1483,34 @@ def _deux_populations_2013():
 
 
 def tableau_2013() -> str:
-    """Tableau Markdown des deux populations de 2013."""
-    cles = ("t13_pop", "t13_n", "t13_moy", "t13_q1", "t13_med", "t13_q3", "t13_300", "t13_330")
-    sortie = ["| " + " | ".join(_lab(c) for c in cles) + " |", "|:---|---:|---:|---:|---:|---:|---:|---:|"]
-    for l in _deux_populations_2013():
+    """Tableau Markdown des deux populations de 2013 : une grandeur par ligne, et pour chaque
+    population le montant en dinars de 2013 et en dinars de l'année de base."""
+    ens, qt = _deux_populations_2013()
+    ipc = _ipc()
+    coef = ipc[ANNEE_BASE] / ipc[2013]
+    entetes = ["t13_grandeur", "t13_ens", "t13_ens_reel", "t13_4t", "t13_4t_reel"]
+    def nom(cle):
+        """Nom de la grandeur d'un seul tenant, unité entre parenthèses à la ligne."""
+        haut, _, bas = _lab(cle).partition("<br>")
+        return f"[{haut}]{{.insecable}}" + (f"<br>{bas}" if bas else "")
+
+    # Les tirets fixent les largeurs relatives : la colonne des noms est la plus large.
+    sortie = ["| " + " | ".join(nom(c) for c in entetes) + " |",
+              "|:----------|------:|------:|------:|------:|"]
+
+    def ligne(cle, a, b, decimales, reel=True):
+        def f(v, k=1.0):
+            return _fr(v * k, decimales)
         sortie.append("| " + " | ".join([
-            _lab(f"pop_{l['pop']}").capitalize(), _fr(l["salaries"], 0), _fr(l["annuel"], 0),
-            _fr(l["q1"]), _fr(l["mediane"]), _fr(l["q3"]),
-            f"{_fr(l['sous_300'])} %", f"{_fr(l['de_300_330'])} %"]) + " |")
+            nom(cle), f(a), f(a, coef) if reel else "—", f(b), f(b, coef) if reel else "—"]) + " |")
+
+    ligne("t13_n", ens["salaries"], qt["salaries"], 0, reel=False)
+    ligne("t13_moy", ens["annuel"], qt["annuel"], 0)
+    ligne("t13_q1", ens["q1"], qt["q1"], 0)
+    ligne("t13_med", ens["mediane"], qt["mediane"], 0)
+    ligne("t13_q3", ens["q3"], qt["q3"], 0)
+    for cle, k in (("t13_300", "sous_300"), ("t13_330", "de_300_330")):
+        sortie.append("| " + " | ".join([nom(cle), f"{_fr(ens[k])} %", "—", f"{_fr(qt[k])} %", "—"]) + " |")
     return "\n".join(sortie)
 
 

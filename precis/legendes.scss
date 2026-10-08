@@ -214,9 +214,12 @@ main table a {
   word-break: normal;
   hyphens: auto;
 }
+// La première colonne porte le nom des lignes : ses mots ne se coupent pas, le tableau lui
+// donne la largeur qu'il faut tant qu'il reste de la place.
 main table td:first-child,
 main table th:first-child {
   min-width: 7em;
+  hyphens: manual;
 }
 // Une valeur chiffrée (« 1 200 D », « 12,5 % ») et la première cellule d'un tableau engendré
 // (une période, une date) ne se replient jamais sur deux lignes.
