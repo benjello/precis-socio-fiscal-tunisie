@@ -1,13 +1,22 @@
-# Les négociations salariales {#sec-mt-negociations}
+# Les négociations salariales {#sec-mt-negociations .domicile-unique}
 
-Les salaires du secteur privé se révisent par rounds de négociation entre l'UTICA et l'UGTT. Ce chapitre traite du secteur privé ; les augmentations des agents de l'État, des collectivités locales et des établissements publics, négociées entre l'UGTT et le Gouvernement, relèvent du volume [« Les rémunérations dans le secteur public »](../remunerations_publiques/_regime_indiciaire.html#sec-cycles-revalorisation). Il montre comment les rounds se lisent au *Journal officiel*, ce qu'on sait de leurs taux, et la rupture de 2026, où la hausse des salaires conventionnels est fixée par décret.
+Les salaires du secteur privé se révisent par rounds de négociation entre l'Union tunisienne de l'industrie, du commerce et de l'artisanat (UTICA) et l'Union générale tunisienne du travail (UGTT). Ce chapitre traite du secteur privé ; les augmentations des agents de l'État, des collectivités locales et des établissements publics, négociées entre l'UGTT et le Gouvernement, relèvent du volume [« Les rémunérations dans le secteur public »](../remunerations_publiques/_regime_indiciaire.html#sec-cycles-revalorisation). Il présente, dans l'ordre des dates, les textes que produit chaque round de 1973 à 2023, avec les majorations des secteurs qu'aucune convention ne couvre ; les accords-cadres ; puis la hausse de 2026, que l'État fixe par décret pour trois ans (@tbl-mt-neg-ruptures).
 
-## Les rounds au *Journal officiel* {#sec-mt-rounds}
+| Période | Qui fixe la hausse | Par quels actes |
+|:---|:---|:---|
+| depuis 1973 | les organisations d'employeurs et de salariés, par rounds | avenants des conventions sectorielles, agréés par arrêté |
+| 1977-1980 | l'État, pour tous les salaires | décrets du salaire minimum, qui majorent d'un montant uniforme tous les salaires |
+| 1989-2023 | l'État, pour les secteurs non couverts par une convention | décrets de majoration par catégorie, à chaque round |
+| 2026-2028 | l'État, pour les salaires conventionnels aussi | décret appliquant un pourcentage annuel aux grilles des conventions |
 
-Le rythme des rounds procède de la convention collective cadre, révisable au plus tôt trois ans après son entrée en vigueur, puis par périodes de deux années civiles [@arrete-1973-05-29-convention-cadre, art. 3]. Un round produit deux familles de textes publiés.
+: Qui fixe les hausses de salaires du secteur privé, 1973-2028 {#tbl-mt-neg-ruptures}
+
+## Les rounds et leurs textes, 1973-2023 {#sec-mt-rounds}
+
+Un round est une négociation des salaires entre l'UTICA et l'UGTT. Son rythme procède de la [convention collective cadre](#r-mt-neg-cadre), révisable au plus tôt trois ans après son entrée en vigueur, le 1^er^ juin 1973, puis par périodes de deux années civiles. Un round produit deux familles de textes publiés.
 
 - **Les avenants des conventions sectorielles**, qui révisent les grilles de salaires et les indemnités de chaque branche, et qu'un arrêté agrée (@sec-mt-sectorielles).
-- **Les décrets de majoration des salaires dans les secteurs non couverts** par une convention sectorielle ou par un statut particulier ; depuis 1996, le code du travail dispose que la rémunération de ces secteurs peut être fixée par décret, après consultation des organisations les plus représentatives [@loi96-62, art. 134 (nouveau)]. Ils fixent, par catégorie d'agents — exécution, maîtrise, cadres —, une majoration horaire et mensuelle. Il en paraît en 1989, 1990, 1992, 1993, 1995, 1996, 2000, 2003, 2006, 2009, 2013, 2017, 2019 et 2023, notamment [@decret89-513; @decret90-1522; @decret92-1317; @decret93-1839; @decret95-902; @decret96-2456; @decret2000-951; @decret2003-1693; @decret2006-1446; @decret2009-693; @decret2013-2889; @decret2017-670; @decret2019-456; @decret2023-161], puis en 2026 [@decret2026-69].
+- **Les décrets de majoration des salaires dans les secteurs non couverts** par une convention sectorielle ou par un statut particulier ; [depuis 1996](#r-mt-neg-1996), le code du travail dispose que la rémunération de ces secteurs peut être fixée par décret, après consultation des organisations les plus représentatives. L'État y fixe, par catégorie d'agents — exécution, maîtrise, cadres —, une majoration horaire et mensuelle. Il en paraît en 1989, 1990, 1992, 1993, 1995, 1996, 2000, 2003, 2006, 2009, 2013, 2017, 2019 et 2023, notamment, puis en 2026 ([décrets de 1989 à 2026](#r-mt-neg-non-couverts)).
 
 Les majorations de ces décrets donnent un ordre de grandeur des hausses de chaque round pour les salariés que ne couvre aucune convention (@tbl-mt-non-couverts).
 
@@ -17,30 +26,60 @@ Les majorations de ces décrets donnent un ordre de grandeur des hausses de chaq
 
 | Effet | Agents d'exécution | Agents de maîtrise | Cadres | Texte |
 |---|---:|---:|---:|---|
-| 1^er^ avril 2009 | 0,065 à 0,083 | 0,095 | 0,124 | [@decret2009-693] |
-| 1^er^ mai 2019 | 0,155 à 0,199 | 0,228 | 0,298 | [@decret2019-456, art. 1] |
-| 1^er^ janvier 2026 | 0,174 à 0,224 | 0,256 | 0,335 | [@decret2026-69, art. 1] |
-| 1^er^ janvier 2027 | 0,183 à 0,235 | 0,269 | 0,352 | [@decret2026-69, art. 1] |
-| 1^er^ janvier 2028 | 0,192 à 0,247 | 0,282 | 0,370 | [@decret2026-69, art. 1] |
+| [1^er^ avril 2009]{.insecable} | 0,065 à 0,083 | 0,095 | 0,124 | [décret n° 2009-693](#r-mt-neg-2009) |
+| [1^er^ mai 2019]{.insecable} | 0,155 à 0,199 | 0,228 | 0,298 | [décret n° 2019-456](#r-mt-neg-2019) |
+| [1^er^ janvier 2026]{.insecable} | 0,174 à 0,224 | 0,256 | 0,335 | [décret n° 2026-69](#r-mt-neg-2026-69) |
+| [1^er^ janvier 2027]{.insecable} | 0,183 à 0,235 | 0,269 | 0,352 | [décret n° 2026-69](#r-mt-neg-2026-69) |
+| [1^er^ janvier 2028]{.insecable} | 0,192 à 0,247 | 0,282 | 0,370 | [décret n° 2026-69](#r-mt-neg-2026-69) |
 
 : Majoration horaire des salaires dans les secteurs non couverts par une convention sectorielle, par catégorie, en dinars par heure {#tbl-mt-non-couverts}
 
-Pour les agents d'exécution, la majoration est modulée selon la qualification, l'emploi occupé ou le salaire perçu, et les salariés payés au SMIG en sont exclus ; de 2026 à 2028, la majoration horaire est la même dans les régimes de 48 et de 40 heures [@decret2026-69, art. 1].
+Pour les agents d'exécution, la majoration est modulée selon la qualification, l'emploi occupé ou le salaire perçu, et les salariés payés au salaire minimum interprofessionnel garanti (SMIG) en sont exclus ; de 2026 à 2028, la majoration horaire est la même dans les régimes de 48 et de 40 heures ([décret n° 2026-69](#r-mt-neg-2026-69)).
 
 ## Les accords-cadres et leurs taux {#sec-mt-accords-cadres}
 
-Hormis la convention cadre de 1973, publiée avec son arrêté d'approbation, les accords salariaux conclus entre l'UGTT et l'UTICA à chaque round ne sont pas identifiés ici, ni leurs taux. Les hausses négociées pour le secteur privé ne se lisent donc, sur pièce, que dans leurs textes d'application : avenants agréés et décrets des secteurs non couverts.
+Un accord-cadre est l'accord salarial que l'UGTT et l'UTICA concluent à chaque round. Hormis la convention cadre de 1973, publiée avec son arrêté d'approbation, ces accords ne sont pas identifiés ici, ni leurs taux. Les hausses négociées pour le secteur privé ne se lisent donc que dans leurs textes d'application : avenants agréés et décrets des secteurs non couverts.
 
 <!-- RECHERCHE r-accords-cadres-ugtt-utica : accords-cadres UGTT-UTICA de négociation salariale du secteur privé, taux et dates par round (voir docs/recherches.yml) -->
 
 ## 2026 : la hausse fixée par décret {#sec-mt-2026}
 
-L'article 15 de la loi de finances pour 2026 prévoit l'augmentation des salaires et traitements des secteurs public et privé au titre de 2026, 2027 et 2028, l'étend aux pensions des retraités et renvoie à un décret le soin de la fixer ; il ne fixe lui-même aucun taux [@lf-2026, art. 15]. Les décrets du 30 avril 2026 pris à son visa couvrent les trois étages des salaires du secteur privé (@tbl-mt-trois-etages).
+En 2026, l'État fixe par décret, pour 2026, 2027 et 2028, la hausse des salaires des trois étages du secteur privé : salaire minimum, salaires conventionnels, salaires des secteurs non couverts (@tbl-mt-trois-etages). Les agents de l'État, des collectivités locales et des établissements publics administratifs reçoivent, par [un décret du même jour](#r-mt-neg-2026-63), une augmentation sur les mêmes années ; elle est exposée au volume des rémunérations publiques.
 
-- **Le salaire minimum** : le SMIG et le SMAG sont relevés aux 1er janvier 2026, 2027 et 2028, et la hausse s'applique aux pensions de retraite [@decret2026-67, art. 1 et 6; @decret2026-66, art. 1 et 5] (@sec-mt-ruptures).
-- **Les salaires conventionnels** : une augmentation de 5 % par an au titre de 2026, 2027 et 2028, à compter du 1er janvier 2026, s'applique aux salaires de base de tous les échelons des dernières grilles annexées aux conventions sectorielles et aux indemnités de transport et de présence ; celle de 2027 et celle de 2028 portent sur les montants majorés l'année précédente, soit 15,8 % en trois ans [@decret2026-68, art. 1]. En sont exclus les salariés des entreprises qui ont accordé, la même année, une augmentation générale égale ou supérieure [@decret2026-68, art. 4].
-- **Les secteurs non couverts** : des majorations par catégorie, en trois paliers (@tbl-mt-non-couverts) [@decret2026-69, art. 1].
+[L'article 15 de la loi de finances pour 2026](#r-mt-neg-lf-2026) prévoit l'augmentation des salaires et traitements des secteurs public et privé au titre de 2026, 2027 et 2028, l'étend aux pensions des retraités et renvoie à un décret le soin de la fixer ; il ne fixe lui-même aucun taux. Trois hausses sont fixées par les décrets du 30 avril 2026 pris à son visa.
 
-La fixation par décret d'une hausse de tous les salaires a un précédent. De 1977 à 1980, les décrets qui fixaient le SMIG majoraient aussi d'un montant uniforme tous les salaires « légaux, conventionnels ou statutaires » : 48 millimes l'heure et 10 dinars par mois en 1977 [@decret77-115, art. 2], puis de même en 1978, 1979 et 1980 [@decret78-441; @decret79-473; @decret80-75; @decret80-609]. Ce qui distingue 2026 est la forme de la hausse — un pourcentage, et non un montant, appliqué aux grilles des conventions sur trois années — et son fondement, une disposition de loi de finances.
+- **Le salaire minimum** : le [SMIG](#r-mt-neg-2026-smig) et le salaire minimum agricole garanti ([SMAG](#r-mt-neg-2026-smag)) sont relevés aux 1^er^ janvier 2026, 2027 et 2028, et la hausse s'applique aux pensions de retraite (@sec-mt-ruptures).
+- **Les salaires conventionnels** : une augmentation de [5 % par an](#r-mt-neg-2026-68) au titre de 2026, 2027 et 2028, à compter du 1^er^ janvier 2026, s'applique aux salaires de base de tous les échelons des dernières grilles annexées aux conventions sectorielles et aux indemnités de transport et de présence ; celle de 2027 et celle de 2028 portent sur les montants majorés l'année précédente, soit 15,8 % en trois ans. En sont [exclus](#r-mt-neg-2026-68-exclusion) les salariés des entreprises qui ont accordé, la même année, une augmentation générale égale ou supérieure.
+- **Les secteurs non couverts** : des [majorations par catégorie](#r-mt-neg-2026-69), en trois paliers (@tbl-mt-non-couverts).
 
-Les agents de l'État, des collectivités locales et des établissements publics administratifs reçoivent, par un décret du même jour, une augmentation sur les mêmes années [@decret2026-63] ; elle est exposée au volume des rémunérations publiques.
+La fixation par décret d'une hausse de tous les salaires a un précédent. De 1977 à 1980, l'État, en fixant le SMIG, majorait aussi d'un montant uniforme tous les salaires « légaux, conventionnels ou statutaires » : 48 millimes l'heure et 10 dinars par mois en [1977](#r-mt-neg-1977), puis de même en [1978, 1979 et 1980](#r-mt-neg-1978-1980). Ce qui distingue 2026 est la forme de la hausse — un pourcentage, et non un montant, appliqué aux grilles des conventions sur trois années — et son fondement, une disposition de loi de finances.
+
+:::: {.chronologie-repliable titre="Hausses de salaires du secteur privé, rounds, secteurs non couverts et décrets de 2026 : textes, articles et majorations, date par date, 1973-2028"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-mt-neg-cadre}[1^er^ juin 1973]{.insecable} | point de départ | convention collective cadre, approuvée par l'arrêté du 29 mai 1973 [@arrete-1973-05-29-convention-cadre, art. 3] | dénonciation ou révision au plus tôt trois ans après l'entrée en vigueur, puis par périodes de deux années civiles |
+| []{#r-mt-neg-1977}[1^er^ février 1977]{.insecable} | **rupture** — hausse uniforme | décret n° 77-115 [@decret77-115, art. 2] | majoration uniforme de tous les salaires « légaux, conventionnels ou statutaires » : 48 millimes l'heure, 10 dinars par mois |
+| []{#r-mt-neg-1978-1980}[1^er^ mai 1978]{.insecable}<br>[1^er^ mai 1979]{.insecable}<br>[1^er^ février 1980]{.insecable}<br>[1^er^ mai 1980]{.insecable} | étapes — hausse uniforme | décrets n° 78-441, n° 79-473, n° 80-75 et n° 80-609 [@decret78-441; @decret79-473; @decret80-75; @decret80-609] | même procédé : le décret qui fixe le SMIG majore d'un montant uniforme tous les salaires |
+| []{#r-mt-neg-non-couverts}— | étapes — secteurs non couverts | décrets de majoration de 1989, 1990, 1992, 1993, 1995, 1996, 2000, 2003, 2006, 2009, 2013, 2017, 2019 et 2023 [@decret89-513; @decret90-1522; @decret92-1317; @decret93-1839; @decret95-902; @decret96-2456; @decret2000-951; @decret2003-1693; @decret2006-1446; @decret2009-693; @decret2013-2889; @decret2017-670; @decret2019-456; @decret2023-161], puis de 2026 [@decret2026-69] | à chaque décret, une majoration horaire et mensuelle par catégorie d'agents : exécution, maîtrise, cadres |
+| []{#r-mt-neg-1996}— | étape — secteurs non couverts | loi n° 96-62 du 15 juillet 1996 [@loi96-62, art. 134 (nouveau)] | la rémunération des secteurs non couverts « peut être fixée par décret », après consultation des organisations les plus représentatives |
+| []{#r-mt-neg-2009}[1^er^ avril 2009]{.insecable} | étape — secteurs non couverts | décret n° 2009-693 [@decret2009-693] | majoration horaire : 0,065 à 0,083 dinar (exécution), 0,095 dinar (maîtrise), 0,124 dinar (cadres) |
+| []{#r-mt-neg-2019}[1^er^ mai 2019]{.insecable} | étape — secteurs non couverts | décret n° 2019-456 [@decret2019-456, art. 1] | majoration horaire : 0,155 à 0,199 dinar (exécution), 0,228 dinar (maîtrise), 0,298 dinar (cadres) |
+| []{#r-mt-neg-lf-2026}— | **rupture** — hausse fixée par décret | loi de finances pour 2026, du 12 décembre 2025 [@lf-2026, art. 15] | augmentation des salaires et traitements des secteurs public et privé au titre de 2026, 2027 et 2028, étendue aux pensions des retraités et renvoyée à un décret ; aucun taux |
+| []{#r-mt-neg-2026-smig}[1^er^ janvier 2026]{.insecable}<br>[1^er^ janvier 2027]{.insecable}<br>[1^er^ janvier 2028]{.insecable} | étape — salaire minimum | décret n° 2026-67 [@decret2026-67, art. 1 et 6] | trois paliers du SMIG ; hausse appliquée aux pensions de retraite |
+| []{#r-mt-neg-2026-smag}[1^er^ janvier 2026]{.insecable}<br>[1^er^ janvier 2027]{.insecable}<br>[1^er^ janvier 2028]{.insecable} | étape — salaire minimum | décret n° 2026-66 [@decret2026-66, art. 1 et 5] | trois paliers du SMAG ; hausse appliquée aux pensions de retraite |
+| []{#r-mt-neg-2026-68}[1^er^ janvier 2026]{.insecable} | **rupture** — salaires conventionnels | décret n° 2026-68 [@decret2026-68, art. 1] | grilles révisées par avenant → hausse de 5 % par an au titre de 2026, 2027 et 2028 sur les salaires de base de tous les échelons des dernières grilles annexées aux conventions sectorielles et sur les indemnités de transport et de présence ; chaque hausse porte sur les montants majorés l'année précédente |
+| []{#r-mt-neg-2026-68-exclusion}[1^er^ janvier 2026]{.insecable} | ajustement — salaires conventionnels | décret n° 2026-68 [@decret2026-68, art. 4] | exclusion des salariés des entreprises qui ont accordé, la même année, une augmentation générale égale ou supérieure |
+| []{#r-mt-neg-2026-69}[1^er^ janvier 2026]{.insecable}<br>[1^er^ janvier 2027]{.insecable}<br>[1^er^ janvier 2028]{.insecable} | étape — secteurs non couverts | décret n° 2026-69 [@decret2026-69, art. 1] | majoration horaire en trois paliers : 0,174 à 0,224 dinar, puis 0,183 à 0,235 et 0,192 à 0,247 dinar (exécution, selon la qualification, l'emploi ou le salaire ; salariés payés au SMIG exclus) ; 0,256, 0,269 et 0,282 dinar (maîtrise) ; 0,335, 0,352 et 0,370 dinar (cadres) ; même majoration horaire dans les régimes de 48 et de 40 heures |
+| []{#r-mt-neg-2026-63}— | étape — secteur public | décret n° 2026-63 du 30 avril 2026 [@decret2026-63] | augmentation des salaires des agents de l'État, des collectivités locales et des établissements publics administratifs sur les mêmes années |
+
+: Les textes des hausses de salaires du secteur privé, 1973-2028 {#tbl-mt-neg-textes}
+
+Un tiret dans la colonne « Effet » signale un texte dont la date d'effet n'est pas établie ici, ou un ensemble de textes aux dates d'effet distinctes ; la date qui suit le nom d'un texte est celle du texte.
+
+<!-- TODO (bibliographe) : le décret n° 2018-674 du 7 août 2018 (secteurs non couverts ; note
+docs/notes/marche-travail-negociations.md, a.2) n'a pas de clé dans `references.json` ; il n'est
+pas cité au chapitre. La position de l'UGTT sur la fixation par décret de 2026 (même note, a.3)
+n'a pas non plus de référence versée. -->
+
+::::
