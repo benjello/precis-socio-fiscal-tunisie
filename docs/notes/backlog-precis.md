@@ -1139,9 +1139,25 @@ ruptures dans l'ordre des dates (hausses uniformes de 1977-1980, deux taux horai
 intervalles sans hausse, effets rétroactifs, décrets pluriannuels) ; état du droit en 2026
 (montants, composition du SMIG). Quatre registres repliés portent les références de loi
 (trente lignes) ; les tableaux engendrés du SMIG et du SMAG sont repliés, celui des indemnités
-spéciales reste au premier plan. La longue période reste un chapitre à part
-(`_longue_periode.qmd`, inchangé), auquel la vue d'ensemble renvoie. Environ 1 800 mots au
-premier plan et 1 400 dans six blocs repliés, hors tableaux engendrés.
+spéciales reste au premier plan. La longue période, d'abord chapitre à part, est devenue la
+dernière section du chapitre (`#sec-mt-longue-periode`) ; `_longue_periode.qmd` n'existe plus.
+Environ 1 800 mots au premier plan et 1 400 dans six blocs repliés, hors tableaux engendrés et
+hors longue période.
+
+Les quatre chapitres courts restants convertis le 8 octobre 2026 (branche
+`chantier/conversion-marche-travail-reste`), sans fiche d'architecte et sans matière nouvelle
+hors des notes documentaires. Notions : chapitre de définitions, une section par notion qui
+définit d'abord ; références laissées sur place (sept appels à des textes de loi, pour
+l'essentiel des citations mot pour mot), pas de domicile unique. Institutions, conventions,
+négociations : domicile unique au niveau du chapitre, un registre replié par chapitre (quinze,
+seize et quatorze lignes, colonne « Portée »). Institutions : code de 1966 et changements de
+1968, 1973 et 1996 ; organisations et commissions ; fondement des décrets de 2026. Conventions :
+convention cadre de 1973 ; trois étages ; conventions de branche, avec un tableau par période
+(au moins 64 agréments ou approbations de 1969 à 2025, avenants exclus, borne basse) et la liste
+repliée des branches agréées de 1974 à 1977. Négociations : tableau de tête « qui fixe la
+hausse », rounds de 1973 à 2023, accords-cadres, hausse fixée par décret en 2026. Une erreur
+corrigée au passage : le chapitre des institutions annonçait « quatre » dispositions du code et
+en donnait trois.
 
 À faire, avec l'état des sources :
 
@@ -1161,11 +1177,24 @@ premier plan et 1 400 dans six blocs repliés, hors tableaux engendrés.
 - **Salaire minimum — dates d'effet non établies** : loi n° 66-27, décret n° 73-247, décret
   n° 74-493, loi n° 96-62 et article 15 de la loi de finances pour 2026 figurent aux registres
   sans date d'effet (tiret) ; textes lus, date d'exécution à calculer par le documentaliste.
+- **Conventions — compte des agréments sans référence** : le nombre d'au moins 64 agréments ou
+  approbations (1969-2025) et les nombres annuels d'avenants (`tbl-mt-cc-periodes`) viennent du
+  relevé de la note `marche-travail-conventions-collectives.md`, § 2, sans clé de référence. À
+  établir : la liste des conventions, arrêté par arrêté, et une série annuelle, pour un tableau
+  engendré (TODO documentaliste dans `_conventions.qmd`). Arrêtés au corpus (JORT), non lus.
+- **Conventions — clés manquantes** : les arrêtés d'agrément de 1975 à 1977 (`tbl-mt-cc-branches`,
+  trente et une branches hors celles de 1974) n'ont pas de clé dans `references.json` ; seuls ceux du 29 août 1974
+  en ont une (TODO bibliographe dans `_conventions.qmd`). Arrêtés au corpus, non lus.
+- **Négociations — matière de la note non reprise** : la chronologie des rounds déduite des
+  décrets d'augmentation du secteur public (1993-1995 à 2011-2012) et la position de l'UGTT sur
+  la fixation par décret de 2026 ne sont pas au chapitre, faute de clés de référence ; le décret
+  n° 2018-674 (secteurs non couverts) n'a pas de clé non plus (TODO bibliographe dans
+  `_negociations.qmd`).
 - **Chapitres annoncés, non écrits** : temps de travail et congés ; rupture du contrat de travail.
   À ajouter au `_quarto.yml` français et arabe à leur rédaction.
 - **Politiques de l'emploi — chapitre arabe à déclarer** : `_politiques_emploi.qmd` est déclaré au
   `_quarto.yml` français seulement. À la livraison de la traduction, l'ajouter à la main à
-  `precis/ar/marche_travail/_quarto.yml` (après `_longue_periode.qmd`) et rendre le livre arabe :
+  `precis/ar/marche_travail/_quarto.yml` (en dernier chapitre, après `_negociations.qmd`) et rendre le livre arabe :
   la figure y est déjà bilingue (`figures/` est un lien vers le répertoire français).
 - **Politiques de l'emploi — dépense exécutée du Fonds national de l'emploi** : établie pour
   aucune année. Le chapitre ne donne que des dotations (BCT, 1987-2008), des prévisions de lois de
