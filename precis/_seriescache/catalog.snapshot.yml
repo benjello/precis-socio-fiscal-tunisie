@@ -2755,14 +2755,23 @@
     basse (titres indexés seuls ; avenants de 1996-2012 et de 2022 sous-indexés).'
   fiche: sources/jort-conventions-collectives.md
 - id: conventions-collectives-salaire-entree
-  titre: Salaire conventionnel d'entrée du textile et du bâtiment-travaux publics,
-    par date d'effet lue (1974-2026), et rapport au SMIG de 48 heures
+  titre: Salaire conventionnel d'entrée du textile (1974-2026) et du bâtiment-travaux
+    publics (1975-2024), par date d'effet lue, et rapport au SMIG de 48 heures
   sources:
   - convention-textile-1974
   - convention-btp-1975
   - avenants-1990-textile-btp
   - avenant5-textile-1994
   - avenant5-btp-1996
+  - avenant6-textile-1996
+  - avenant7-textile-1999
+  - avenant6-btp-1999
+  - avenant8-textile-2002
+  - avenant7-btp-2002
+  - avenant9-textile-2006
+  - avenant8-btp-2006
+  - avenant10-textile-2009
+  - avenant9-btp-2009
   - avenant11-textile-2011
   - avenant10-btp-2011
   - avenant12-textile-2013
@@ -2775,36 +2784,50 @@
   - avenant15-btp-2018
   - avenant16-textile-2019
   - avenant17-textile-2022
+  - avenant16-btp-2022
   - avenant18-textile-2024
   build: scripts/build_conventions_salaire_entree.py:main
   raw:
   - sources/transcriptions/conventions-collectives-grilles-entree-note.csv
+  - sources/transcriptions/conventions-collectives-grilles-entree-note-1996-2022.csv
   - data/processed/jort/smig_smag.csv
   output: data/processed/jort/conventions_collectives_salaire_entree.csv
   unite: dinars courants par heure (salaire de base, SMIG) ; rapport sans unité
   perimetre: 'texte des conventions : grilles de salaires annexées aux conventions
     sectorielles du textile et du bâtiment-travaux publics et à leurs avenants, publiées
     au Journal officiel ; une ligne par branche et par date d''effet lue (textile
-    : 19 ; bâtiment : 13) ; salaire horaire de base du bas de grille (textile : agents
+    : 34 ; bâtiment : 28) ; salaire horaire de base du bas de grille (textile : agents
     payés à l''heure, catégorie I, échelon 0 ; bâtiment : personnel occasionnel, manœuvre
     ordinaire) et du haut (catégorie IV-2, échelon 0 ; chef d''équipe, 3e degré) ;
-    colonnes calculées : SMIG horaire du régime de 48 heures en vigueur à la date
-    d''effet (dernière ligne antérieure ou égale de la série `smig-smag`) et rapport
-    bas de grille ÷ SMIG'
-  caveats: 'TRANSCRIPTION de la note documentaire du précis du 8 octobre 2026, qui
-    a lu les grilles au Journal officiel ; fascicules non relus ici. AUCUN RACCORD
-    NI INTERPOLATION : les dates non lues n''ont pas de ligne (textile 1996-2010 ;
-    bâtiment 1991-1995, 1999-2010 et après le 1er mai 2019) — ne jamais tracer d''un
-    trait continu. RUPTURE AU 1er MAI 1994 : les grilles de 1990-1992 excluent l''indemnité
-    complémentaire provisoire (décrets n° 81-437 et n° 82-501) et ne se comparent
-    pas au SMIG (`comparable_au_smig` = non, rapport vide). Date d''effet des conventions
-    de 1974 et 1975 non relevée : SMIG de la ligne du 1er juin 1974 que donne la note.
-    SALAIRES DE BASE, hors indemnités conventionnelles. Régime horaire du textile
-    à confirmer. Valeurs à contrôler avant citation signalées dans `reserve` (date
-    d''effet de 2011, pages arabes de 2017 et 2019, lectures à résolution réduite
-    de 2015-2020). SMIG : montants de la série `smig-smag`, décrets non relus. Deux
-    branches seulement. Ligne du textile au 1er janvier 2026 : grille de l''avenant
-    n° 18 ; effet du décret n° 2026-68 non tranché.'
+    segments : conventions d''origine (1974, 1975), grilles de 1990-1992 hors indemnité
+    complémentaire provisoire, puis un segment continu par branche (textile 1994-2026,
+    avenants n° 5 à 18 ; bâtiment 1996-2024, avenants n° 5 à 16) ; colonnes calculées
+    : SMIG horaire du régime de 48 heures en vigueur à la date d''effet (dernière
+    ligne antérieure ou égale de la série `smig-smag`) et rapport bas de grille ÷
+    SMIG'
+  caveats: 'TRANSCRIPTION de deux notes documentaires du précis du 8 octobre 2026,
+    qui ont lu les grilles au Journal officiel ; fascicules non relus ici. TROIS ORIGINES
+    DE LECTURE, JAMAIS FONDUES (`origine_lecture`) : édition française ; édition arabe
+    (corpus local) ; pour l''avenant n° 16 du bâtiment (1er décembre 2021, 1er janvier
+    2023, 1er janvier 2024), REPRODUCTION DE L''ÉDITION ARABE SUR UN SITE TIERS (paie-tunisie.com,
+    pages 3709-3714 du n° 132 du 2 décembre 2022, fascicule absent du corpus et de
+    pist.tn ; adresse et empreinte dans la série). AUCUN RACCORD NI INTERPOLATION
+    : série en paliers, une ligne par date d''effet lue ; tracé en escalier permis
+    à l''intérieur d''un segment, jamais d''un segment à l''autre. Les grilles de
+    1990-1992 excluent l''indemnité complémentaire provisoire (décrets n° 81-437 et
+    n° 82-501) et ne se comparent pas au SMIG (`comparable_au_smig` = non, rapport
+    vide) ; non lus : avenants antérieurs à 1990, 1993, bâtiment 1991-1995. Date d''effet
+    des conventions de 1974 et 1975 non relevée : SMIG de la ligne du 1er juin 1974
+    que donne la note. SALAIRES DE BASE, hors indemnités conventionnelles. Régime
+    horaire du textile à confirmer. Haut de grille vide quand il n''est pas lu (textile
+    1999-2001, 2003-2007, septembre 2015 ; bâtiment 2005-2007). Valeurs à contrôler
+    avant citation signalées dans `reserve` (pages de 1996, 1999 et du n° 97 de 2002
+    déduites d''un décalage ; sous-catégorie du haut du textile 1996-1998 ; grille
+    du textile du 15 juin 2005 « à titre exceptionnel » ; date d''effet de 2011, pages
+    arabes de 2017 et 2019, lectures à résolution réduite de 2015-2020). SMIG : montants
+    de la série `smig-smag`, décrets non relus. Deux branches seulement. Ligne du
+    textile au 1er janvier 2026 : grille de l''avenant n° 18 ; effet du décret n°
+    2026-68 non tranché.'
   fiche: sources/conventions-collectives-grilles.md
 - id: oit-ilostat-couverture-negociation-collective
   titre: Taux de couverture de la négociation collective, Tunisie, 2010-2019 (OIT,

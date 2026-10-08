@@ -25,7 +25,7 @@
 #   passes    liste de :
 #             date              AAAA-MM-JJ, jour de la passe
 #             role              documentaliste, rédacteur…
-#             sources           parmi jort_cache, iort, corpus_local, pist, mcp_jort, visas, presse
+#             sources           parmi jort_cache, iort, corpus_local, pist, mcp_jort, visas, presse, web
 #             couverture        texte libre : jusqu'où, et les LACUNES (fascicules non lus…)
 #             couvert_jusqu_au  AAAA-MM-JJ : date de publication jusqu'à laquelle la passe vaut ;
 #                               c'est ce champ que `lister --perimees` et `relancer` utilisent.
@@ -1711,7 +1711,7 @@
     resultat: aucun
 
 - id: r-btp-avenant-16-grilles
-  objet: texte et grilles de l'avenant n° 16 à la convention collective sectorielle du bâtiment et des travaux publics (arrêté du 25 novembre 2022), et tout avenant postérieur
+  objet: texte et grilles de l'avenant n° 16 à la convention collective sectorielle du bâtiment et des travaux publics (arrêté du 25 novembre 2022)
   ou: [precis/fr/marche_travail/_conventions.qmd#sec-mt-cc-2026]
   requetes:
     titres_like: ['%avenant%batiment et des travaux publics%', '%avenant%bâtiment et des travaux publics%', '%للبناء والأشغال%']
@@ -1724,9 +1724,15 @@
     couverture: 'notice trouvée (JORT n° 132 du 2 décembre 2022, p. 3387) mais fascicule absent du corpus local en français et en arabe, et réponse 404 de pist.tn aux adresses 2022F/Jo1322022.pdf et 2022A/Ja1322022.pdf ; plein texte français 2023-2026 (n° 1 à 97 de 2026) sans avenant n° 17 ; cache texte des 141 fascicules arabes de 2022, motif normalisé « عدد 16 للاتفاقية المشتركة القطاعية للبناء والأشغال » : aucun ; miroir iort (data/iort/textes/md) : aucun fichier ne porte « للبناء والأشغال » (il n''indexe pas les arrêtés d''avenant) ; sommaires arabes de 2023-2026 non lus'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-08
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist, web]
+    couverture: 'texte et grilles de l''avenant n° 16 lus sur la reproduction, par le site paie-tunisie.com, des pages 3709 à 3714 du JORT n° 132 du 2 décembre 2022, édition arabe ; fascicule toujours absent du corpus local et de pist.tn ; second exemplaire indépendant non obtenu ; la recherche d''un avenant postérieur passe à la fiche r-btp-avenant-17. Note : docs/notes/marche-travail-conventions-collectives-grilles-1996-2022.md, § E.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: avenant16-btp-2022
   a_faire:
-  - obtenir le JORT n° 132 du 2 décembre 2022 par une autre voie (autre miroir, copie de l'UGTT, archives du web)
-  - sommaires arabes de 2023-2026, pour un avenant n° 17
+  - obtenir le fascicule lui-même (JORT n° 132 du 2 décembre 2022), ou un second exemplaire indépendant de ses pages 3709 à 3714
+  resolu: avenant16-btp-2022
 
 - id: r-grilles-decret-2026-68
   objet: texte publiant les grilles de salaires des conventions sectorielles résultant du décret n° 2026-68 (5 % par an, 2026-2028), ou circulaire d'application disant comment la hausse se combine avec une grille conventionnelle déjà fixée pour 2026
@@ -1743,3 +1749,19 @@
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
   a_faire: [édition arabe du Journal officiel de 2026, circulaires du ministère des affaires sociales]
+
+- id: r-btp-avenant-17
+  objet: avenant à la convention collective sectorielle du bâtiment et des travaux publics postérieur à l'avenant n° 16 (arrêté du 25 novembre 2022)
+  ou: [precis/fr/marche_travail/_conventions.qmd#sec-mt-cc-2026]
+  requetes:
+    titres_like: ['%avenant%batiment et des travaux publics%', '%avenant%bâtiment et des travaux publics%', '%للبناء والأشغال%']
+    plein_texte: [bâtiment et des travaux publics]
+    depuis: 2022-11-25
+  passes:
+  - date: 2026-10-08
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'notices de jort_cache jusqu''au 2 octobre 2026 ; plein texte français des fascicules de 2023 à 2026 (n° 1 à 97 de 2026), « bâtiment et des travaux publics », lignes recollées : aucun avenant n° 17 ; sommaires arabes de 2023-2026 non lus'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [sommaires arabes de 2023-2026]

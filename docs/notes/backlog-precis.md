@@ -1188,16 +1188,27 @@ en donnait trois.
   l'Organisation internationale du travail » (`#sec-mt-cc-couverture`, 2010-2019). Clos : le
   compte « au moins 64 » et les nombres annuels d'avenants sans référence ; l'absence de toute
   source de couverture.
-- **Conventions — grilles à établir** : textile, 1996-2010 (avenants n° 6 à 10, édition arabe,
-  fascicules au corpus, pages en image : lecture de l'arabe à l'image, pas d'OCR arabe installé),
-  sentence arbitrale de 1983 et avenants n° 2 et 4 (scans français au corpus, OCR à lancer) ;
-  bâtiment, avenants n° 1, 2, 4 et suite du n° 3 (scans français, OCR), n° 6 à 9 (1999-2010,
-  édition arabe en image), et avenant n° 16 de 2022, dont le fascicule (n° 132 de 2022) reste à
-  obtenir : fiche `r-btp-avenant-16-grilles`, recherche en cours sur le site de l'UGTT et dans les
-  archives du web. Montant de l'indemnité complémentaire provisoire (décrets n° 81-437 et
-  n° 82-501, au corpus) pour comparer 1983-1993 au SMIG. À confirmer à l'image : date d'effet du
-  textile en 2011, montants et pages du textile de 2015 à 2020 ; date d'effet des conventions de
-  1974 et de 1975 ; régime horaire du textile.
+- **Conventions — grilles de 1996 à 2010 et bâtiment après 2019 : clos le 8 octobre 2026.** La
+  série du salaire d'entrée est continue de 1994 à 2026 pour le textile (avenants n° 5 à 18) et de
+  1996 à 2024 pour le bâtiment (avenants n° 5 à 16) ; note
+  `marche-travail-conventions-collectives-grilles-1996-2022.md`. L'avenant n° 16 du bâtiment est lu
+  sur une reproduction, par un site tiers, des pages de l'édition arabe : fiche
+  `r-btp-avenant-16-grilles` résolue ; le fascicule (n° 132 de 2022) et un second exemplaire
+  restent à obtenir. Un avenant postérieur n'est pas identifié : fiche `r-btp-avenant-17`
+  (sommaires arabes de 2023-2026 à parcourir).
+- **Conventions — grilles restant à établir** : textile, sentence arbitrale de 1983 et avenants
+  n° 2 (1989) et n° 4 (1993) ; bâtiment, avenants n° 1, 2, 4 et suite du n° 3 (1991-1992) — scans
+  français au corpus, OCR à lancer. Montant de l'indemnité complémentaire provisoire (décrets
+  n° 81-437 et n° 82-501, au corpus) pour comparer 1983-1993 au SMIG.
+- **Conventions — hauts de grille et pages à contrôler** : hauts de grille manquants (textile
+  1999-2001, 2003-2007 et septembre 2015 ; bâtiment 2005-2007 : pages identifiées, édition arabe au
+  corpus, une lecture à l'image chacune) ; pages de 1996, de 1999 et du n° 97 de 2002, déduites
+  d'un décalage constant ; haut de grille du textile de 1996 à 1998 (sous-catégorie) ; raison de la
+  date d'effet du 15 juin 2005 (texte de l'avenant n° 9 du textile) ; date d'effet du textile en
+  2011, montants et pages du textile de 2015 à 2020 ; date d'effet des conventions de 1974 et de
+  1975 ; régime horaire du textile. Les dix clés des avenants de 1996 à 2009 et de 2022 sont
+  versées sans URL (adresses pist.tn de l'édition arabe à vérifier ; pist.tn ne sert pas le n° 132
+  de 2022) ; l'intitulé français des neuf premières est à confirmer sur les visas.
 - **Conventions — autres branches** : commerce, hôtellerie, mécanique et électricité (conventions
   d'origine en scans français au corpus ; avenants depuis 1996 dans l'édition arabe). Coût et
   fascicules dans la note, § D.
@@ -1208,8 +1219,9 @@ en donnait trois.
   affaires sociales).
 - **Conventions — couverture** : la série de l'OIT ne précise ni son producteur national ni sa
   méthode (fiche de métadonnées par pays d'ILOSTAT à obtenir) ; aucun nombre de salariés couverts
-  par convention sectorielle, par branche (site du ministère des affaires sociales, rubrique
-  « conventions », à ouvrir dans les archives du web ; annuaires statistiques du ministère).
+  par convention sectorielle, par branche (annuaires statistiques du ministère des affaires
+  sociales, non ouverts ; la rubrique « conventions » de son site porte sur les conventions
+  internationales).
 - **Conventions — inventaire** : rattachement des avenants aux branches fait d'après les mots des
   intitulés, à relire ligne à ligne (quatre doubles comptes signalés au tableau) ; avenants de
   1996-2012 et de 2022 à compter sur l'édition arabe ; année du fascicule de la convention des
