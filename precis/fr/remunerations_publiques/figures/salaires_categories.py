@@ -126,12 +126,12 @@ _L = {
     "c_avec": {"fr": "Brut avec contributions (INS, enquête 2010-2021)",
                "ar": "خام مع المساهمات (المعهد الوطني للإحصاء، مسح 2010-2021)"},
     "titre_reel": {"fr": "Salaire brut sans contributions par catégorie, en dinars "
-                         "constants de 2015, 2018-2024",
+                         "constants de 2015, 2018-{fin}",
                    "ar": "الأجر الخام دون المساهمات حسب الصنف، بالدينار الثابت لسنة 2015، "
-                         "2018-2024"},
-    "p_sans_reel": {"fr": "Brut sans contributions, 2018-2024\n(indice des prix "
-                          "publié jusqu'en 2024)",
-                    "ar": "خام دون المساهمات، 2018-2024\n(مؤشّر الأسعار منشور حتى 2024)"},
+                         "2018-{fin}"},
+    "p_sans_reel": {"fr": "Brut sans contributions, 2018-{fin}\n(indice des prix "
+                          "publié jusqu'en {ipc})",
+                    "ar": "خام دون المساهمات، 2018-{fin}\n(مؤشّر الأسعار منشور حتى {ipc})"},
     "y_reel": {"fr": "Dinars constants de 2015 par mois",
                "ar": "دينار ثابت لسنة 2015 في الشهر"},
 }
@@ -157,8 +157,8 @@ def _ipc():
 def _reel(w):
     """La même grille, en dinars constants de l'année de base.
 
-    Une année sans indice est ÉCARTÉE, non extrapolée : l'indice s'arrête à 2024 et il
-    n'existe pas de prix pour les années à venir.
+    Une année sans indice est ÉCARTÉE, non extrapolée : l'indice s'arrête à sa dernière
+    année publiée et il n'existe pas de prix pour les années à venir.
     """
     w, ipc = w.copy(), _ipc()
     w = w[w["annee"].isin(ipc)]
@@ -238,10 +238,13 @@ def fig_salaires_reel():
     """Le pendant déflaté : ce que la figure nominale ne peut pas montrer.
 
     En dinars courants la grille monte partout. Déflatée, la série sans contributions
-    (2018-2024, l'indice s'arrêtant en 2024) progresse jusqu'en 2020 puis recule dans
-    toutes les catégories : en 2024, toutes sont sous leur niveau réel de 2018, A1 et C
-    le plus nettement. Le panneau « pour mémoire » garde la lecture 2015-2020 du concept
+    (de 2018 à la dernière année dont l'indice est publié) progresse jusqu'en 2020 puis
+    recule dans toutes les catégories : en 2025, toutes sont sous leur niveau réel de 2018,
+    C et A1 le plus nettement. Les bornes des libellés viennent des séries, non du code. Le panneau « pour mémoire » garde la lecture 2015-2020 du concept
     avec contributions, où A1 perd du pouvoir d'achat quand B en gagne près d'un tiers.
     """
-    return _deux_panneaux(_reel(_wide(SERIE_AVEC)), _reel(_wide(SERIE)),
-                          _lab("titre_reel"), _lab("p_sans_reel"), _lab("y_reel"))
+    sans = _reel(_wide(SERIE))
+    bornes = {"fin": int(sans["annee"].max()), "ipc": max(_ipc())}
+    return _deux_panneaux(_reel(_wide(SERIE_AVEC)), sans,
+                          _lab("titre_reel").format(**bornes),
+                          _lab("p_sans_reel").format(**bornes), _lab("y_reel"))

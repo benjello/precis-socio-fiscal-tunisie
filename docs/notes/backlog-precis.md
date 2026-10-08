@@ -1415,6 +1415,24 @@ en donnait trois.
   cherté de vie (TODO rédacteur dans `_salaire_minimum.qmd`).
 - **Catalogue de `ipc-longue-periode`** (tunisia-data) : titre et réserves disent « 1962-2003 »,
   alors que la série va jusqu'en 2023 (annuaire 2019-2023, tableau 13.6).
+- **Dinars constants : année de base 2025 — fait le 8 octobre 2026.** `ANNEE_BASE = 2025` dans
+  `figures/marche_travail.py` ; `bct-ipc-base2015` snapshotée avec 2025 = 186,3 (Rapport annuel
+  2025 de la BCT, tableau 2-1, p. 57). L'indice de l'INS (annuaires, jusqu'en 2023) est prolongé
+  pour 2024 et 2025 par la variation de cet indice. Tous les chiffres en dinars constants de
+  `_salaire_minimum.qmd` sont recalculés et contrôlés par `controle_texte()`, qui s'arrête si
+  l'année de base change sans que le texte suive. Restent :
+  - **écart de la source** : 186,3 ÷ 176,8 donne +5,4 %, quand le même rapport imprime 5,3 %
+    d'inflation moyenne ; non expliqué, rien n'est corrigé (réserve de la série, onglet
+    « Sources » des figures) ;
+  - **2025 ne repose que sur un rapport** (colonne `rapports_concordants`) : à recouper à la
+    parution de l'annuaire de l'INS qui portera 2024 et 2025 ;
+  - **volume « Rémunérations publiques » — accordé le 8 octobre 2026** : il reste en dinars
+    constants de 2015 (base de l'indice), et ses deux séries déflatées vont maintenant jusqu'en
+    2025 (`#fig-augmentations-reel`, `#fig-salaires-categories-reel`) ; texte, légendes et
+    libellés des modules mis d'accord, les bornes des libellés de `salaires_categories.py` étant
+    lues dans les séries ;
+  - **`prestations_sociales`, non touché** : ses modules gardent leurs propres années de base
+    (`cnss_allocations_familiales.py` : 1990 ; `pnafn.py` : 1987) et ne lisent pas cette série.
 
 ## La compensation
 

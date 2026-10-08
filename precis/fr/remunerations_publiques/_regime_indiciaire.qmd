@@ -311,13 +311,15 @@ figtools.figure_tabs(
     caption="Augmentations générales cumulées par catégorie, en dinars constants de 2015",
     note_lecture=(
         "**La même chose que @fig-augmentations, déflatée.** En dinars courants le cumul "
-        "ne fait que monter ; en pouvoir d'achat il **plafonne puis recule**. Pour la "
-        "catégorie A1, le cumul atteint **423,6 dinars constants au 1^er^ octobre 2022**, "
-        "puis retombe à **418,6 au 1^er^ janvier 2024** — alors que le cumul nominal, lui, "
-        "passe de 640 à 740 dinars. L'inflation de l'intervalle a mangé davantage que la "
-        "tranche servie, et toutes les catégories reculent entre ces deux dates.\n\n"
-        "**Trois réserves.** La courbe **s'arrête en 2024** : l'indice des prix n'existe "
-        "pas pour les années à venir, si bien que les tranches programmées jusqu'en 2028 "
+        "ne fait que monter ; en pouvoir d'achat il **recule entre octobre 2022 et "
+        "janvier 2024, puis remonte au 1^er^ janvier 2025**. Pour la catégorie A1, le cumul "
+        "atteint **423,6 dinars constants au 1^er^ octobre 2022**, retombe à **418,6 au "
+        "1^er^ janvier 2024** — alors que le cumul nominal, lui, passe de 640 à 740 "
+        "dinars —, puis s'établit à **450,9 au 1^er^ janvier 2025**, pour un cumul nominal "
+        "de 840 dinars. Toutes les catégories reculent entre les deux premières dates et "
+        "remontent à la troisième.\n\n"
+        "**Trois réserves.** La courbe **s'arrête en 2025** : l'indice des prix n'existe "
+        "pas pour les années à venir, si bien que les tranches programmées de 2026 à 2028 "
         "n'ont pas d'équivalent réel — elles ne sont pas omises, elles sont "
         "**indéterminées**. Les dates en cours d'année sont déflatées par l'indice "
         "**annuel moyen**, ce qui est une approximation. Enfin l'année 2015 vaut 100 "
@@ -471,11 +473,11 @@ figtools.figure_tabs(
 )
 ```
 
-Ces montants sont nominaux. Déflatés par l'indice des prix, publié jusqu'en 2024, ils changent la lecture.
+Ces montants sont nominaux. Déflatés par l'indice des prix, publié jusqu'en 2025, ils changent la lecture.
 
 ```{python}
 #| label: fig-salaires-categories-reel
-#| fig-cap: "Salaire brut par catégorie statutaire, en dinars constants de 2015 : sans contributions 2018-2024, et pour mémoire avec contributions 2015-2020 (sources INS et BCT)."
+#| fig-cap: "Salaire brut par catégorie statutaire, en dinars constants de 2015 : sans contributions 2018-2025, et pour mémoire avec contributions 2015-2020 (sources INS et BCT)."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
@@ -487,7 +489,7 @@ figtools.figure_tabs(
     "bct-ipc-base2015",
     slug="fig_salaires_categories_reel",
     caption=("Salaire mensuel brut par catégorie statutaire, en dinars constants de 2015 : "
-             "sans contributions 2018-2024, et pour mémoire avec contributions 2015-2020"),
+             "sans contributions 2018-2025, et pour mémoire avec contributions 2015-2020"),
     note_lecture=(
         "**La même grille que @fig-salaires-categories, déflatée.** En dinars courants "
         "toutes les catégories progressent ; en pouvoir d'achat, la série sans "
@@ -495,9 +497,10 @@ figtools.figure_tabs(
         "- de **2018 à 2020**, toutes les catégories gagnent, le bas davantage que le "
         "haut : **D +20,3 %**, A3 +18,4 %, B +17,8 %, A2 +14,3 %, C +13,2 %, "
         "**A1 +6,6 %** ;\n"
-        "- de **2020 à 2024**, toutes reculent, de **−14,9 % (A1)** à **−18,9 % (C)**.\n\n"
-        "Sur l'ensemble de la période 2018-2024, toutes finissent **sous** leur pouvoir "
-        "d'achat de 2018, de **−1,7 % (D)** à **−9,3 % (A1)**.\n\n"
+        "- de **2020 à 2025**, toutes reculent, chaque année, de **−15,8 % (A1)** à "
+        "**−21,0 % (C)**.\n\n"
+        "Sur l'ensemble de la période 2018-2025, toutes finissent **sous** leur pouvoir "
+        "d'achat de 2018, de **−2,7 % (D)** à **−10,6 % (C)** ; A1 perd 10,2 %.\n\n"
         "Le panneau de gauche garde, pour mémoire, la lecture de l'enquête précédente, "
         "dans la notion avec contributions : entre 2015 et 2020, **A1 −3,2 %** quand "
         "**B +30,7 %**. Le resserrement de la grille n'y est pas un simple rattrapage "
@@ -506,8 +509,8 @@ figtools.figure_tabs(
         "(@tbl-augmentations-montants).\n\n"
         "**Réserves.** Déflateur : indice des prix à la consommation familiale, base 100 "
         "en 2015, publié par la Banque centrale ; l'année de base vaut 100 **par "
-        "définition**, aucune publication ne la tabulant. L'indice s'arrête en **2024** : "
-        "la série déflatée s'arrête un an avant la série nominale. Les salaires restent "
+        "définition**, aucune publication ne la tabulant. L'indice est publié jusqu'en **2025**, "
+        "dernière année de la série des salaires. Les salaires restent "
         "des **moyennes** par catégorie, recouvrant des corps hétérogènes."
     ),
     generated="{{< meta date >}}",

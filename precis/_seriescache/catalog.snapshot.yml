@@ -305,7 +305,7 @@
     1,14 إلى 1,20 حسب الصنف والسنة، فلا معامل يصل السلسلتين.'
   fiche: sources/ins-fonction-publique-salaires-2010-2021.md
 - id: bct-ipc-base2015
-  titre: Indice des prix à la consommation, base 100 = 2015, 2015-2024
+  titre: Indice des prix à la consommation, base 100 = 2015, 2015-2025
   sources:
   - bct-ra
   build: scripts/extract_bct_ipc.py:main
@@ -318,21 +318,30 @@
     base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir
     docs/tables-a-extraire-pdf.md §1. L''ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION,
     non lue : aucun rapport ne tabule son année de base, tous ne publiant que les
-    millésimes récents. Série RECONSTITUÉE en recollant six rapports, chacun n''en
-    publiant que trois millésimes ; toutes les années communes concordent, et le script
-    LÈVE en cas de divergence — un indice de prix ne se révise pas d''une publication
-    à l''autre, contrairement aux effectifs. S''ARRÊTE EN 2024 : aucune déflation
-    n''est possible au-delà, ce qui laisse sans équivalent réel les tranches d''augmentation
+    millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025
+    (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis
+    le 2026-10-08), chacun n''en publiant que trois millésimes ; toutes les années
+    communes concordent, et le script LÈVE en cas de divergence — un indice de prix
+    ne se révise pas d''une publication à l''autre, contrairement aux effectifs. La
+    colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025
+    (186,3) n''en a qu''UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend
+    2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne
+    +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d''inflation
+    moyenne ; l''arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé
+    5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu''à la limite (5,32 à
+    5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé,
+    non expliqué, rien n''est corrigé. S''ARRÊTE EN 2025 : aucune déflation n''est
+    possible au-delà, ce qui laisse sans équivalent réel les tranches d''augmentation
     programmées jusqu''en 2028. Déflater une date en cours d''année par l''indice
     ANNUEL MOYEN est une approximation.'
-  titre_ar: مؤشر أسعار الاستهلاك، أساس 100 = 2015، 2015-2024
+  titre_ar: مؤشر أسعار الاستهلاك، أساس 100 = 2015، 2015-2025
   unite_ar: مؤشر أساس 100 = 2015
   perimetre_ar: أسعار الاستهلاك العائلي، مجموع الأسر التونسية
   caveats_ar: 'مستخرج من التقرير السنوي لا من النشرة: عنوان النشرة («أساس 100 سنة
     2010») متقادم وقيمها الحديثة على أساس 2015. سنة الأساس 2015 = 100 موضوعة بالتعريف
     لا مقروءة، إذ لا يورد أيّ تقرير سنة أساسه. سلسلة معاد تركيبها من ستة تقارير، ينشر
     كلّ منها ثلاث سنوات فقط؛ وتتطابق كلّ السنوات المشتركة، ويتوقّف النصّ البرمجي عند
-    أيّ اختلاف لأنّ مؤشّر الأسعار لا يُراجَع بين نشرة وأخرى. تنتهي السلسلة سنة 2024،
+    أيّ اختلاف لأنّ مؤشّر الأسعار لا يُراجَع بين نشرة وأخرى. تنتهي السلسلة سنة 2025،
     فلا إمكان لأيّ تصحيح للأسعار بعدها. وتصحيح تاريخ داخل السنة بالمؤشّر السنوي المتوسّط
     تقريبٌ.'
   fiche: sources/bct-archives.md

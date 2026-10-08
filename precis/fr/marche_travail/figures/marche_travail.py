@@ -2,7 +2,7 @@
 
     from figures import marche_travail as mt
     mt.vues_nominal(), mt.table_nominal()   # SMIG des deux régimes, au mois, dinars courants
-    mt.vues_reel(), mt.table_reel()         # SMIG 48 h et SMAG, moyenne annuelle, dinars de 2023
+    mt.vues_reel(), mt.table_reel()         # SMIG 48 h et SMAG, moyenne annuelle, dinars de ANNEE_BASE
     mt.vues_rapports(), mt.table_rapports() # 40 h / 48 h à l'heure ; SMAG / journée de 8 h au SMIG
     mt.vues_dotations_emploi(), mt.table_dotations_emploi()  # programmes d'emploi, 1987-2008
 
@@ -22,7 +22,7 @@ D'OÙ VIENNENT LES DONNÉES. Le module ne lit que `figtools.series()` :
 CONVENTIONS.
   - Moyenne annuelle : moyenne des montants en vigueur au premier jour de chacun des douze
     mois. Une hausse du 1er mai compte donc pour huit mois de l'année.
-  - Dinars constants : moyenne annuelle × IPC(2023) / IPC(année). 2023 est la dernière année
+  - Dinars constants : moyenne annuelle × IPC(ANNEE_BASE) / IPC(année). ANNEE_BASE est la dernière année
     de l'indice.
   - SMAG rapporté au SMIG : le SMAG d'une journée, divisé par huit heures au SMIG horaire du
     régime de 48 heures (le régime de 48 heures compte 208 heures par mois, soit 26 journées
@@ -48,7 +48,7 @@ SERIE_IPC = "ipc-longue-periode"
 SERIE_IPC_RECENT = "bct-ipc-base2015"
 # Année des dinars constants : la dernière dont l'indice des prix est publié, jamais une année
 # à venir.
-ANNEE_BASE = 2024
+ANNEE_BASE = 2025
 # Avant le SMIG. Seconde zone : plancher horaire jusqu'à sa suppression le 1er mai 1968
 # (décrets n° 61-145, art. 6, et n° 65-561, art. 5 ; n° 68-97). Indemnité de cherté de vie :
 # 0,020 D l'heure en sus du minimum, du 1er mai 1971 à l'institution du SMIG (décret n° 71-164).
@@ -1531,15 +1531,39 @@ def controle_texte() -> None:
     egal(an[2013]["a2018"], 8495)
     egal(q["annuel"], 11036)
     assert q["salaries"] == 800_558
-    # Dinars de 2024 : salaire mensuel moyen déclaré et SMIG.
-    for annee, cle, attendu in ((1970, "r2006", 609), (1980, "r2006", 933), (1988, "r2006", 903),
-                                (1999, "r2006", 1040), (2004, "r2018", 1031), (2018, "r2018", 1457),
-                                (1970, "smig_reel", 347), (1980, "smig_reel", 582),
-                                (1988, "smig_reel", 609), (1999, "smig_reel", 578),
-                                (2004, "smig_reel", 608), (2018, "smig_reel", 561)):
+    # Les chiffres en dinars constants du texte sont écrits pour cette année de base : la
+    # changer oblige à les réécrire, et les contrôles ci-dessous le rappellent.
+    assert ANNEE_BASE == 2025 and max(_ipc()) == ANNEE_BASE, (ANNEE_BASE, max(_ipc()))
+    # Dinars de 2025 : salaire mensuel moyen déclaré et SMIG.
+    for annee, cle, attendu in ((1970, "r2006", 642), (1980, "r2006", 983), (1988, "r2006", 952),
+                                (1999, "r2006", 1095), (2004, "r2018", 1087), (2018, "r2018", 1535),
+                                (1970, "smig_reel", 366), (1980, "smig_reel", 613),
+                                (1988, "smig_reel", 642), (1999, "smig_reel", 609),
+                                (2004, "smig_reel", 641), (2018, "smig_reel", 591)):
         egal(an[annee][cle], attendu)
+    # Dinars de 2025 : le SMIG sur la longue période (vue d'ensemble et section de la longue
+    # période) — SMIG, seconde zone, minimum et indemnité de cherté de vie.
+    lp = {l[0]: l for l in _reel()}
+    for annee, k, attendu in ((1962, 2, 435), (1973, 2, 323), (1974, 2, 481), (1983, 2, 806),
+                              (1991, 2, 572), (2024, 2, 507), (2025, 2, 528), (1962, 5, 344),
+                              (1973, 6, 400)):
+        egal(lp[annee][k], attendu)
+    assert max(lp, key=lambda a: lp[a][2]) == 1983 and max(lp) == 2025
+    assert min(lp[a][2] for a in range(1984, 1992)) == lp[1991][2]
+    egal(min(lp[a][2] for a in range(1992, 2018)), 585)
+    egal(max(lp[a][2] for a in range(1992, 2018)), 651)
+    # 2024 : le plus bas depuis 1976 ; 2025 au-dessus de 2024.
+    assert all(lp[a][2] > lp[2024][2] for a in range(1977, 2024)) and lp[1976][2] < lp[2024][2]
+    assert lp[2025][2] > lp[2024][2]
+    # 2013 en dinars de 2025 : quartiles et médianes des deux populations.
+    k13 = _ipc()[ANNEE_BASE] / _ipc()[2013]
+    t13, q13 = _deux_populations_2013()
+    for obtenu, attendu in ((t13["q1"] * k13, 539), (q13["q1"] * k13, 882),
+                            (t13["mediane"] * k13, 967), (q13["mediane"] * k13, 1219)):
+        egal(obtenu, attendu)
     # Pouvoir d'achat, indices rapportés aux prix.
     for annee, cle, attendu in ((2016, "pa_smig", 100), (2024, "pa_smig", 81),
+                                (2025, "pa_smig", 85), (2025, "pa_salaire", 117),
                                 (2017, "pa_salaire", 129), (2024, "pa_salaire", 116),
                                 (2018, "pa_salaire", 127), (2018, "pa_cnss", 153),
                                 (2004, "pa_cnss", 109)):
