@@ -3857,8 +3857,12 @@ entries:
     fr:
       terme: Régime des salariés non agricoles
       definition: >
-        Régime de sécurité sociale des salariés du secteur non agricole, institué par
-        la loi n° 60-30 du 14 décembre 1960 et géré par la CNSS. Sa branche des
+        Régime de sécurité sociale des salariés du secteur privé non agricole,
+        institué par la loi n° 60-30 du 14 décembre 1960 et géré par la CNSS.
+        L'article 34 de cette loi en fixe le champ par énumération : salariés des
+        établissements industriels et commerciaux, des professions libérales, des
+        coopératives, des sociétés civiles, des syndicats et des associations,
+        personnels des transports, salariés du commerce et du bâtiment. Sa branche des
         pensions de vieillesse, d'invalidité et de survivants est régie par le décret
         n° 74-499 du 27 avril 1974, en vigueur au 1^er^ janvier 1974, auquel
         renvoient les régimes des travailleurs non salariés et des Tunisiens à
@@ -3867,12 +3871,17 @@ entries:
     ar:
       terme: نظام الأجراء غير الفلاحيين
       definition: >
-        نظام الضمان الاجتماعي لأجراء القطاع غير الفلاحي، أحدثه القانون عدد 30 لسنة 1960
-        المؤرّخ في 14 ديسمبر 1960 ويديره الصندوق الوطني للضمان الاجتماعي. ويخضع فرعه
+        نظام الضمان الاجتماعي لأجراء القطاع الخاصّ غير الفلاحي، أحدثه القانون عدد 30
+        لسنة 1960 المؤرّخ في 14 ديسمبر 1960 ويديره الصندوق الوطني للضمان الاجتماعي.
+        ويضبط الفصل 34 من هذا القانون ميدانه بالتعداد: أجراء المؤسسات الصناعية
+        والتجارية والمهن الحرّة والتعاضديات والشركات المدنية والنقابات والجمعيات،
+        وأعوان النقل، وأجراء التجارة والبناء. ويخضع فرعه
         الخاصّ بجرايات الشيخوخة والعجز والباقين على قيد الحياة للأمر عدد 499 لسنة 1974
         المؤرّخ في 27 أفريل 1974، النافذ منذ غرّة جانفي 1974، والذي تحيل إليه أنظمة
         العملة غير الأجراء والعملة التونسيين بالخارج.
-      synonymes: []
+      # Synonyme attesté : CNSS, annuaire statistique 2010 (édition arabe), intitulé du
+      # titre III (« الباب الثالث : نظام الأجراء في القطاع غير الفلاحي ») ; idem édition 2013.
+      synonymes: [نظام الأجراء في القطاع غير الفلاحي]
 
   - id: rsa
     acronyme: RSA
@@ -7871,6 +7880,189 @@ entries:
         المهن والأجر الأدنى الفلاحي المضمون يُضبطان بأمر. وفي سنة 1974، ينصّ الأمر
         عدد 63 لسنة 1974 (الفصل 4) على تعديل الأجر الأدنى المضمون لمختلف المهن
         بحسب كلفة المعيشة، بقرار، بعد أخذ رأي اللجنة.
+      synonymes: []
+
+  - id: salaire-declare
+    acronyme: null
+    # AR : « الأجور المصرح بها » — CNSS, annuaire statistique 2010 (édition arabe),
+    # table des matières et tableaux du titre III (« كتلة الأجور المصرح بها »,
+    # « هرم الأجور المصرح بها للصندوق الوطني للضمان الاجتماعي ») ; même libellé dans
+    # l'édition arabe 2013. Aucune clé bibliographique pour une édition arabe : pas de
+    # source_traduction. Statut provisoire : la définition de l'assiette (art. 42 de la
+    # loi n° 60-30) n'est pas établie sur texte ; pas de source_definition.
+    statut: provisoire
+    references: [cnss-annuaire-2006, cnss-annuaire-2018]
+    voir_aussi: [salaire-moyen-declare, assiette-cotisations, cnss, rsna, indemnite-complementaire-provisoire, salaire-brut]
+    fr:
+      terme: Salaire déclaré
+      definition: >
+        Salaire qu'un employeur déclare à la CNSS pour un salarié, et sur lequel
+        les cotisations sont calculées. Dans le régime des salariés non agricoles,
+        cette assiette comprend, depuis la loi n° 95-101 (article 42 nouveau de la
+        loi n° 60-30), l'ensemble des éléments du salaire, primes et avantages
+        compris, sans plafond. Les annuaires statistiques de la CNSS, qui publient la masse
+        et la distribution des salaires déclarés de 1970 à 2018, ne définissent pas
+        le terme et ne le disent ni brut ni net. L'indemnité complémentaire
+        provisoire, entrée dans le SMIG en 1981, reste alors hors de l'assiette des
+        cotisations ; l'annuaire la compte dans les salaires déclarés à partir de
+        1988.
+      synonymes: [salaire déclaré à la CNSS]
+    ar:
+      terme: الأجر المصرّح به
+      definition: >
+        الأجر الذي يصرّح به المؤجّر للصندوق الوطني للضمان الاجتماعي عن كلّ أجير،
+        وعليه تُحتسب الاشتراكات. وفي نظام الأجراء غير الفلاحيين، تشمل هذه
+        القاعدة، منذ القانون عدد 101 لسنة 1995 (الفصل 42 جديد من القانون عدد 30
+        لسنة 1960)، مجموع عناصر الأجر، بما فيها المنح والمنافع، دون سقف. والنشريات
+        الإحصائية السنوية للصندوق، التي تنشر كتلة الأجور المصرّح بها وتوزيعها من
+        سنة 1970 إلى سنة 2018، لا تعرّف هذه العبارة ولا تبيّن إن كان الأجر خامًا
+        أو صافيًا. أمّا المنحة الإضافية المؤقتة، التي أُدرجت في الأجر الأدنى
+        المضمون لمختلف المهن سنة 1981، فقد بقيت حينها خارج قاعدة الاشتراكات، ولا
+        تحتسبها النشرية ضمن الأجور المصرّح بها إلّا بداية من سنة 1988.
+      synonymes: [الأجور المصرّح بها]
+
+  - id: salaire-moyen-declare
+    acronyme: null
+    # AR attesté : « معدل الأجر السنوي المصرح به » — CNSS, annuaire statistique 2010
+    # (édition arabe), table des matières et tableau « تطور عدد المؤجرين النشيطين،
+    # الأجراء المصرح بهم، كتلة الأجور ومعدل الأجر » ; même libellé dans l'édition arabe
+    # 2013. Aucune clé bibliographique pour une édition arabe : pas de source_traduction.
+    statut: valide
+    references: [cnss-annuaire-2006, cnss-annuaire-2013, ins-guide-salaires-prive-2026]
+    source_definition: {ref: cnss-annuaire-2018, locator: "p. 16"}
+    voir_aussi: [salaire-declare, salarie-permanent, rsna, cnss]
+    fr:
+      terme: Salaire moyen déclaré
+      definition: >
+        Quotient que l'annuaire statistique de la CNSS imprime pour le régime des
+        salariés non agricoles : la masse des salaires déclarés de l'année divisée
+        par le nombre de salariés déclarés au moins une fois dans l'année, en
+        dinars par an. Les années incomplètes l'abaissent : en 2013, il est de
+        8 495 dinars pour l'ensemble des salariés déclarés et de 11 036 dinars pour
+        ceux qui le sont les quatre trimestres. Les annuaires le donnent de 1970 à
+        2018, dans deux éditions qui ne se raccordent pas : celle de 2006 pour
+        1970-1999 et 2002-2006, celle de 2018 pour 2000-2018. Il ne se confond pas
+        avec le taux d'évolution du salaire moyen que l'INS tire des mêmes
+        déclarations de 2001 à 2025 : ce taux suit des salariés déclarés cinq
+        trimestres de suite et ne donne aucun niveau.
+      synonymes: [salaire annuel moyen déclaré]
+    ar:
+      terme: معدّل الأجر السنوي المصرّح به
+      definition: >
+        حاصل قسمة تنشره النشرية الإحصائية السنوية للصندوق الوطني للضمان الاجتماعي
+        بعنوان نظام الأجراء غير الفلاحيين: كتلة الأجور المصرّح بها خلال السنة
+        مقسومة على عدد الأجراء المصرّح بهم مرّة واحدة على الأقلّ خلال السنة،
+        بالدينار في السنة. وتخفّضه السنوات غير الكاملة: ففي سنة 2013 يبلغ
+        8 495 دينارًا لمجموع الأجراء المصرّح بهم و11 036 دينارًا للمصرّح بهم طيلة
+        الثلاثيات الأربع. وتورده النشريات من سنة 1970 إلى سنة 2018، في طبعتين لا
+        تتّصل سلسلتاهما: طبعة 2006 للفترتين 1970-1999 و2002-2006، وطبعة 2018
+        للفترة 2000-2018. ولا يُخلط بينه وبين نسبة تطوّر معدّل الأجر التي يستخرجها
+        المعهد الوطني للإحصاء من التصاريح نفسها من سنة 2001 إلى سنة 2025: فهذه
+        النسبة تتابع أجراء مصرّحًا بهم خمس ثلاثيات متتالية ولا تعطي أيّ مستوى
+        للأجر.
+      synonymes: []
+
+  - id: salarie-permanent
+    acronyme: null
+    # AR provisoire : aucun texte arabe de l'INS lu (le guide de 2026 et les rapports de
+    # l'enquête « Emploi et salaires » consultés sont en français).
+    statut: provisoire
+    references: [ins-ees-2012, ins-micro-entreprises-2012, ins-micro-entreprises-2016]
+    source_definition: {ref: ins-guide-salaires-prive-2026, locator: "§ 3"}
+    voir_aussi: [salaire-moyen-declare, micro-entreprise, salaire-declare]
+    fr:
+      terme: Salarié permanent
+      definition: >
+        Terme que deux sources de l'INS emploient en deux sens. Pour le taux
+        d'évolution trimestriel des salaires du secteur privé non agricole, c'est
+        le salarié déclaré à la CNSS de manière continue au cours des cinq derniers
+        trimestres : ces salariés forment l'échantillon fixe sur lequel le taux est
+        calculé, selon le guide méthodologique que l'INS publie en 2026. Dans
+        l'enquête « Emploi et salaires » auprès des entreprises de six salariés et
+        plus, dont le rapport de 2012 donne la définition, c'est le salarié qui
+        fait partie intégrante de l'entreprise, par opposition à l'occasionnel,
+        recruté à titre temporaire pour renforcer l'effectif ; la distinction ne
+        repose pas sur le type de contrat. Les rapports de l'enquête sur les
+        micro-entreprises (2012, 2016) ne définissent pas le terme : ils opposent
+        les personnes employées de façon permanente dans l'entreprise à l'emploi
+        occasionnel.
+      synonymes: [permanent]
+    ar:
+      terme: أجير قارّ
+      definition: >
+        عبارة يستعملها مصدران للمعهد الوطني للإحصاء بمعنيين. ففي نسبة التطوّر
+        الثلاثية للأجور في القطاع الخاصّ غير الفلاحي، هو الأجير المصرّح به لدى
+        الصندوق الوطني للضمان الاجتماعي بصفة متواصلة خلال الثلاثيات الخمس الأخيرة:
+        ويكوّن هؤلاء الأجراء العيّنة الثابتة التي تُحتسب عليها النسبة، حسب الدليل
+        المنهجي الذي نشره المعهد سنة 2026. وفي مسح « التشغيل والأجور » لدى
+        المؤسسات التي تشغّل ستّة أجراء فأكثر، الذي يورد تقريره لسنة 2012 التعريف،
+        هو الأجير الذي يُعدّ جزءًا لا يتجزّأ من المؤسسة، مقابل الأجير الوقتي
+        المنتدب بصفة ظرفية لتدعيم عدد العاملين؛ ولا يقوم هذا التمييز على نوع
+        العقد. أمّا تقارير المسح حول المؤسسات الصغرى (2012 و2016) فلا تعرّف
+        العبارة: وإنّما تقابل بين الأشخاص المشغَّلين بصفة قارّة في المؤسسة والتشغيل
+        الوقتي.
+      synonymes: []
+
+  - id: micro-entreprise
+    acronyme: null
+    # AR provisoire : aucun rapport arabe de l'enquête de l'INS lu.
+    statut: provisoire
+    references: [ins-micro-entreprises-2007, ins-micro-entreprises-2012]
+    source_definition: {ref: ins-micro-entreprises-2016, locator: "p. 9-10"}
+    voir_aussi: [salarie-permanent, emploi-informel]
+    fr:
+      terme: Micro-entreprise
+      definition: >
+        Dans les enquêtes de l'INS, entreprise non agricole employant moins de six
+        salariés. Les rapports des enquêtes de 2007, 2012 et 2016 portent sur celles
+        qui ne tiennent pas de comptabilité ; en 2016, le champ est en outre limité
+        aux entreprises dont le chiffre d'affaires est inférieur à un million de
+        dinars. Les entreprises de six salariés et plus relèvent d'une autre
+        enquête de l'INS, l'enquête « Emploi et salaires ».
+      synonymes: []
+    ar:
+      terme: مؤسسة صغرى
+      definition: >
+        في مسوح المعهد الوطني للإحصاء، مؤسسة غير فلاحية تشغّل أقلّ من ستّة أجراء.
+        وتتناول تقارير مسوح سنوات 2007 و2012 و2016 المؤسسات التي لا تمسك محاسبة؛
+        وفي سنة 2016 يقتصر الميدان كذلك على المؤسسات التي يقلّ رقم معاملاتها عن
+        مليون دينار. أمّا المؤسسات التي تشغّل ستّة أجراء فأكثر فيشملها مسح آخر
+        للمعهد، هو مسح « التشغيل والأجور ».
+      synonymes: []
+
+  - id: smig-reference-cnss
+    acronyme: null
+    # Notion analytique du précis : l'annuaire ne nomme pas ce montant. AR provisoire.
+    # Pour mémoire, l'annuaire arabe 2010 de la CNSS intitule sa pyramide « حسب الأجر
+    # الأدنى المضمون مهنيا في القطاع غير الفلاحي », là où le JORT écrit « الأجر الأدنى
+    # المضمون لمختلف المهن » (terme du glossaire, entrée `smig`).
+    statut: provisoire
+    references: [cnss-annuaire-2013]
+    source_definition: {ref: cnss-annuaire-2018, locator: "p. 24-27"}
+    voir_aussi: [smig, salaire-declare, salaire-minimum-garanti]
+    fr:
+      terme: SMIG de référence de la CNSS
+      definition: >
+        Montant que l'annuaire statistique de la CNSS imprime sous sa pyramide des
+        salaires déclarés en dinars, et qui sert d'unité à sa pyramide exprimée en
+        SMIG, de 2000 à 2018. Il vaut 200 heures au taux horaire du SMIG du régime
+        de 48 heures — 290,200 dinars en 2013 —, ce que l'annuaire n'écrit pas et
+        que les montants établissent. Il est inférieur au SMIG mensuel de ce
+        régime, qui compte 208 heures, soit 301,808 dinars en 2013 : un salaire
+        déclaré inférieur à un SMIG de référence n'est pas pour autant inférieur au
+        salaire minimum légal.
+      synonymes: [SMIG de référence]
+    ar:
+      terme: الأجر الأدنى المرجعي المعتمد لدى الصندوق الوطني للضمان الاجتماعي
+      definition: >
+        المبلغ الذي تورده النشرية الإحصائية السنوية للصندوق الوطني للضمان
+        الاجتماعي أسفل هرم الأجور المصرّح بها بالدينار، وتتّخذه وحدةً لهرمها
+        المعبَّر عنه بالأجر الأدنى، من سنة 2000 إلى سنة 2018. ويساوي 200 ساعة
+        بأجر الساعة للأجر الأدنى المضمون لمختلف المهن في نظام عمل 48 ساعة، أي
+        290,200 دينارًا سنة 2013، وهو ما لا تذكره النشرية وتثبته المبالغ. وهو
+        أقلّ من الأجر الأدنى الشهري لهذا النظام، المحتسب على 208 ساعات، أي
+        301,808 دينارًا سنة 2013: فالأجر المصرّح به الذي يقلّ عن أجر أدنى مرجعي
+        واحد ليس بالضرورة أقلّ من الأجر الأدنى القانوني.
       synonymes: []
 
   - id: salaire-brut

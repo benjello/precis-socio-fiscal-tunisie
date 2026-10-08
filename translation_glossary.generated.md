@@ -199,6 +199,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Maladie professionnelle | مرض مهني |  |
 | Masse salariale | كتلة الأجور |  |
 | Mécanisme d'ajustement automatique des prix des carburants | آلية التعديل الأوتوماتيكي لأسعار المحروقات |  |
+| Micro-entreprise | مؤسسة صغرى |  |
 | Minimum d'impôt | الضريبة الدنيا |  |
 | Minimum d'impôt sur le chiffre d'affaires | الضريبة الدنيا |  |
 | Mise à la retraite d'office | الإحالة الوجوبية على التقاعد |  |
@@ -289,6 +290,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Revenus fonciers | المداخيل العقارية |  |
 | Salaire brut | الأجر الخام |  |
 | Salaire conventionnel | الأجر التعاقدي |  |
+| Salaire déclaré | الأجر المصرّح به |  |
 | Salaire différentiel | الأجر التفاضلي |  |
 | Salaire forfaitaire | الأجر التقديري |  |
 | Salaire journalier moyen | الأجر اليومي المتوسّط |  |
@@ -296,12 +298,15 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Salaire minimum garanti | الأجر الأدنى المضمون |  |
 | Salaire minimum interprofessionnel garanti | الأجر الأدنى المضمون لمختلف المهن | SMIG |
 | Salaire moyen de référence | الأجر المتوسط المرجعي |  |
+| Salaire moyen déclaré | معدّل الأجر السنوي المصرّح به |  |
 | Salaire net | الأجر الصافي |  |
+| Salarié permanent | أجير قارّ |  |
 | Score d'éligibilité | أنموذج التنقيط |  |
 | Secteur public | القطاع العام |  |
 | Sécurité sociale des pêcheurs | الضمان الاجتماعي للصيادين البحريين |  |
 | Séparation des opérations de commercialisation des hydrocarbures | فصل عمليات تسويق المحروقات |  |
 | Service fait | قاعدة الخدمة المنجزة |  |
+| SMIG de référence de la CNSS | الأجر الأدنى المرجعي المعتمد لدى الصندوق الوطني للضمان الاجتماعي |  |
 | Société de prévoyance des fonctionnaires et employés tunisiens | الجمعية الاحتياطية للموظفين والمستخدمين التونسيين |  |
 | Société tunisienne de l'électricité et du gaz | الشركة التونسية للكهرباء والغاز | STEG |
 | Société tunisienne des industries de raffinage | الشركة التونسية لصناعات التكرير | STIR |

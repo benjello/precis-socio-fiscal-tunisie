@@ -329,14 +329,14 @@ Cette section rapporte le salaire minimum aux salaires du secteur privé non agr
 
 ### Ce que l'on mesure {#sec-mt-sp-mesure}
 
-Trois sources viennent des déclarations des employeurs à la Caisse nationale de sécurité sociale (CNSS) ; deux sont des enquêtes de l'Institut national de la statistique (INS) (@tbl-mt-sp-sources).
+Trois sources viennent des déclarations des employeurs à la [Caisse nationale de sécurité sociale](#g-cnss) (CNSS) ; deux sont des enquêtes de l'Institut national de la statistique (INS) (@tbl-mt-sp-sources).
 
 | Source | Type de salaire | Périmètre | Période | Ce qu'on peut en attendre |
 |:---|:---|:---|:---|:---|
-| CNSS, annuaire statistique : salaire moyen déclaré | salaire déclaré à la caisse ; masse de l'année divisée par le nombre de salariés déclarés | secteur privé non agricole : salariés du régime des salariés non agricoles déclarés au moins une fois dans l'année | 1970-2018 | un niveau |
+| CNSS, annuaire statistique : [salaire moyen déclaré](#g-salaire-moyen-declare) | [salaire déclaré](#g-salaire-declare) à la caisse ; masse de l'année divisée par le nombre de salariés déclarés | secteur privé non agricole : salariés du [régime des salariés non agricoles](#g-rsna) déclarés au moins une fois dans l'année | 1970-2018 | un niveau |
 | INS, d'après les déclarations à la CNSS : taux d'évolution du salaire moyen | salaire déclaré à la CNSS | secteur privé non agricole : salariés déclarés cinq trimestres de suite | 2001-2025 | une évolution, à composition constante ; aucun niveau |
-| CNSS, annuaire statistique : pyramide des salaires déclarés | salaire mensuel déclaré, par classes en dinars et en multiples d'un SMIG de référence | secteur privé non agricole : salariés déclarés au titre de l'année | 2000-2018 | une distribution, par segments |
-| INS, enquête sur les micro-entreprises | non précisé par les rapports | entreprises non agricoles de moins de six salariés, sans comptabilité ; salariés permanents | 2007, 2012, 2016 | la part des salaires inférieurs au SMIG, à trois dates |
+| CNSS, annuaire statistique : pyramide des salaires déclarés | salaire mensuel déclaré, par classes en dinars et en multiples d'un [SMIG de référence](#g-smig-reference-cnss) | secteur privé non agricole : salariés déclarés au titre de l'année | 2000-2018 | une distribution, par segments |
+| INS, enquête sur les [micro-entreprises](#g-micro-entreprise) | non précisé par les rapports | entreprises non agricoles de moins de six salariés, sans comptabilité ; [salariés permanents](#g-salarie-permanent) | 2007, 2012, 2016 | la part des salaires inférieurs au SMIG, à trois dates |
 | INS, enquête « Emploi et salaires » | salaire de base, hors primes et heures supplémentaires | entreprises de six salariés et plus, publiques comprises ; salariés permanents | 2012, 2014, 2022 | un niveau, à trois dates |
 
 : Les cinq sources de la section : type de salaire, périmètre, période et usage {#tbl-mt-sp-sources}
