@@ -1868,7 +1868,7 @@
           ]
         ]
       },
-      "title-short": "Ministère de l'énergie, Prix et marges des produits pétroliers",
+      "title-short": "Ministère de l'Énergie, Prix et marges des produits pétroliers",
       "note": "citation-key: minenergie-prix-marges-petroliers\nTableau des comités techniques du 6 avril 2020 au 24 novembre 2022 ; page non datée, lue intégralement le 6 octobre 2026 (couche texte HTML) ; HTTP 200. Page non archivée par nous : le document n'est pas retiré, aucune capture citée."
     },
     {
@@ -2588,7 +2588,7 @@
       },
       "archive": "Internet Archive (Wayback Machine)",
       "archive_location": "http://catalog.industrie.gov.tn:80/dataset/63fe3962-976a-4309-ab1b-f3424ad63402/resource/2d6eab8e-f705-49b7-a05f-e49566c18e4f/download/prixdeventedesproduitspetroliers.csv",
-      "title-short": "Ministère de l'énergie, Prix de vente des produits pétroliers (données ouvertes)",
+      "title-short": "Ministère de l'Énergie, Prix de vente des produits pétroliers (données ouvertes)",
       "note": "citation-key: minenergie-opendata-prix-vente-petroliers\nPortail de données ouvertes du ministère (catalog.industrie.gov.tn), jeu « TN-Prix de vente des produits péroliers » (sic), organisation « Direction Générale de l'Energie », licence Open Tunisian License, créé le 4 novembre 2014 et modifié le 15 février 2018. Site retiré : le portail du ministère ne répond plus (redirection vers le portail national, dont le certificat ne se vérifie pas) ; consulté dans la capture du 29/10/2019 (horodatage 20191029192123 lu dans le CDX le 6 octobre 2026, original http://catalog.industrie.gov.tn:80/…). Une capture du XLS (valeurs non arrondies) du 22 décembre 2018 existe (horodatage repris de la note documentaire, non relu au CDX). Copie suivie par git dans tunisia-data : data/raw/minenergie/donnees-ouvertes/prix_vente_produits_petroliers_1990-2016.csv (SHA-256 bc2757ec0a7658ec66336da2558c075d2479771dce1d487e8374746e4c692533, identique à la capture) et .xls (SHA-256 9815df4917a6097d645d26fee00a64b7fdeffaece135711a9a02e705afe458e9). Moyennes annuelles pondérées 1990-2016 : essence sans plomb, essence super, gasoil ordinaire, gasoil 50, pétrole lampant, GPL (bouteille). DEUX LIGNES DOUTEUSES, d'après la note documentaire compensation-archives-energie : 2001 est la recopie de 2000 (aucune hausse en 2001 selon le FMI ; le graphique de l'Observatoire porte 710 et 416 en 2001) ; 1990 (480,05 pour l'essence super et 283,50 pour le gasoil) ne concorde ni avec l'arrêté de 1988 (490 et 290, valables en 1989-1990) ni avec le graphique de l'Observatoire. Preuve : fichier de données né numérique, lu intégralement ; contenu identique entre CSV et XLS."
     },
     {
@@ -2702,7 +2702,7 @@
     {
       "id": "presse-tekiano-2016-01-05",
       "type": "webpage",
-      "title": "Tunisie: Les Nouveaux prix de l’essence et Gasoil à partir du 06 janvier 2016",
+      "title": "Tunisie : Les nouveaux prix de l’essence et gasoil à partir du 06 janvier 2016",
       "container-title": "Tekiano",
       "issued": {
         "date-parts": [
@@ -2729,7 +2729,7 @@
     {
       "id": "presse-webdo-2016-07-14",
       "type": "webpage",
-      "title": "Tunisie : Baisse des prix du Gasoil et Gasoil 50, l’essence inchangé",
+      "title": "Tunisie : Baisse des prix du gasoil et gasoil 50, l’essence inchangé",
       "container-title": "Webdo",
       "issued": {
         "date-parts": [
@@ -2785,7 +2785,7 @@
     {
       "id": "presse-tekiano-2018-04-02",
       "type": "webpage",
-      "title": "Tunisie: Les nouveaux prix de l’essence et Gasoil à partir du 1er avril 2018",
+      "title": "Tunisie : Les nouveaux prix de l’essence et gasoil à partir du 1er avril 2018",
       "container-title": "Tekiano",
       "issued": {
         "date-parts": [
@@ -3716,7 +3716,7 @@
           ]
         ]
       },
-      "title-short": "Ministère des finances, Budget citoyen 2021",
+      "title-short": "Ministère des Finances, Budget citoyen 2021",
       "URL": "http://www.finances.gov.tn/sites/default/files/2021-03/Budget%20Citoyen%202021%20FR.pdf",
       "note": "citation-key: minfin-budget-citoyen-2021\nFichier « Budget Citoyen 2021 FR.pdf » encore en ligne sur finances.gov.tn (HTTP 200, PDF, le 6 octobre 2026) ; capture de contrôle horodatage 20210403014525 lu dans le CDX le 6 octobre 2026. Subvention unitaire PRÉVISIONNELLE (à l'hypothèse de baril de la loi de finances), non réalisée ; p. 3 (OCR, passage relu) : bouteille de gaz : coût 18 500 millimes, prix payé 7 700, subvention unitaire 10 800 ; hypothèse de 45 $ le baril, +1 $ = +129 MD ; subvention aux hydrocarbures 401 MD, qui « concerne principalement la bouteille de gaz ». Preuve : voir le passage (image lue ou OCR relu). Document (édition française) téléchargé dans la collecte du 6 octobre 2026 ; copie de travail hors entrepôt, non déposée dans tunisia-data. Titre arabe non relevé. Les éditions 2018 et 2020 n'ont pas été lues (OCR sans résultat) ; l'édition 2014 ne donne que trois postes."
     },
@@ -3740,7 +3740,7 @@
           ]
         ]
       },
-      "title-short": "Ministère des finances, Budget citoyen 2022",
+      "title-short": "Ministère des Finances, Budget citoyen 2022",
       "URL": "http://www.finances.gov.tn/sites/default/files/2022-04/Budget%20citoyen%20AR.pdf",
       "note": "citation-key: minfin-budget-citoyen-2022\nFichier « Budget citoyen AR.pdf » encore en ligne sur finances.gov.tn (HTTP 200, PDF, le 6 octobre 2026) ; capture de contrôle horodatage 20220415165506 lu dans le CDX le 6 octobre 2026. Subvention unitaire PRÉVISIONNELLE (à l'hypothèse de baril de la loi de finances), non réalisée ; p. 4 (image lue) : essence, gasoil, gasoil 50 : coût 3 325 ; 2 754 ; 3 071 millimes le litre, prix payé 2 220 ; 1 705 ; 1 915, subvention unitaire 1 105 ; 1 049 ; 1 156 ; bouteille de gaz 41 D, 7,7 D, 33 D ; baril à 100 $ (budget bâti sur 75 $ ; +1 $ = +137 MD ; dotation 2 891 MD). Preuve : voir le passage (image lue ou OCR relu). Document (édition arabe) téléchargé dans la collecte du 6 octobre 2026 ; copie de travail hors entrepôt, non déposée dans tunisia-data. Titre arabe non relevé. Les éditions 2018 et 2020 n'ont pas été lues (OCR sans résultat) ; l'édition 2014 ne donne que trois postes."
     },
@@ -3764,7 +3764,7 @@
           ]
         ]
       },
-      "title-short": "Ministère des finances, Budget citoyen 2023",
+      "title-short": "Ministère des Finances, Budget citoyen 2023",
       "URL": "http://www.finances.gov.tn/sites/default/files/2023-07/Budget%20Citoyen%202023.pdf",
       "note": "citation-key: minfin-budget-citoyen-2023\nFichier « Budget Citoyen 2023.pdf » encore en ligne sur finances.gov.tn (HTTP 200, PDF, le 6 octobre 2026) ; capture de contrôle horodatage 20230705180956 lu dans le CDX le 6 octobre 2026. Subvention unitaire PRÉVISIONNELLE (à l'hypothèse de baril de la loi de finances), non réalisée ; p. 4 (image lue) : essence : coût 3 396, prix payé 2 525, subvention unitaire 871 ; gasoil, gasoil 50 : 2 820 ; 3 140, 1 985 ; 2 205, 835 ; 935 ; bouteille 42 D, 8,8 D, 33 D ; baril à 89 $ ; +1 $ = +141 MD ; dotation 5 669 MD. Preuve : voir le passage (image lue ou OCR relu). Document (édition arabe) téléchargé dans la collecte du 6 octobre 2026 ; copie de travail hors entrepôt, non déposée dans tunisia-data. Titre arabe non relevé. Les éditions 2018 et 2020 n'ont pas été lues (OCR sans résultat) ; l'édition 2014 ne donne que trois postes."
     },
@@ -3788,7 +3788,7 @@
           ]
         ]
       },
-      "title-short": "Ministère des finances, Budget citoyen 2024",
+      "title-short": "Ministère des Finances, Budget citoyen 2024",
       "URL": "https://web.archive.org/web/20240325063532/http://www.finances.gov.tn/sites/default/files/2024-01/%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B7%D9%86%20digitale%20(4).pdf",
       "archive": "Internet Archive (Wayback Machine)",
       "archive_location": "http://www.finances.gov.tn/sites/default/files/2024-01/%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B7%D9%86%20digitale%20(4).pdf",
@@ -4103,7 +4103,7 @@
     {
       "id": "fipa-2001-05-electricite",
       "type": "webpage",
-      "title": "Guide de l'investisseur : Électricité (tarifs en hors taxes, août 2000)",
+      "title": "Guide de l'investisseur : électricité (tarifs en hors taxes, août 2000)",
       "author": [
         {
           "literal": "Agence de promotion de l'investissement extérieur"
@@ -4121,13 +4121,13 @@
       },
       "archive": "Internet Archive (Wayback Machine)",
       "archive_location": "http://www.investintunisia.com:80/fre/poleA/a0507.htm",
-      "title-short": "Guide de l'investisseur : Électricité",
+      "title-short": "Guide de l'investisseur : électricité",
       "note": "citation-key: fipa-2001-05-electricite\nFamille : source officielle tunisienne (agence publique ou entreprise relayant la grille). Page archivée (niveau P : page HTML capturée, lue) ; le site d'origine ne sert plus cette page (vérification sommaire le 6 octobre 2026) ; consultée dans la capture (horodatage 20010527014743 lu dans le CDX le 6 octobre 2026). Contenu : grille du 15 août 2000 (« Tarifs en hors taxes août 2000 »). Octets bruts de la capture (variante id_) conservés dans le scratchpad de la collecte, hors entrepôt : fipa/v_fre_a0507_20010527.htm, SHA-256 0d8651b5251ba4c1fda6e32857f5fad1e9ecda13681d82257e5f63627aa6c9df. "
     },
     {
       "id": "fipa-2003-08-electricite-avril-2003",
       "type": "webpage",
-      "title": "Guide de l'investisseur : Électricité (tarifs en hors taxes, avril 2003)",
+      "title": "Guide de l'investisseur : électricité (tarifs en hors taxes, avril 2003)",
       "author": [
         {
           "literal": "Agence de promotion de l'investissement extérieur"
@@ -4145,13 +4145,13 @@
       },
       "archive": "Internet Archive (Wayback Machine)",
       "archive_location": "http://www.investintunisia.com:80/fre/poleA/a050701.htm",
-      "title-short": "Guide de l'investisseur : Électricité",
+      "title-short": "Guide de l'investisseur : électricité",
       "note": "citation-key: fipa-2003-08-electricite-avril-2003\nFamille : source officielle tunisienne (agence publique ou entreprise relayant la grille). Page archivée (niveau P : page HTML capturée, lue) ; le site d'origine ne sert plus cette page (vérification sommaire le 6 octobre 2026) ; consultée dans la capture (horodatage 20030805143433 lu dans le CDX le 6 octobre 2026). Contenu : grille du 1er avril 2003 pour l'électricité ; la date d'effet au jour vient de la BAD. Octets bruts de la capture (variante id_) conservés dans le scratchpad de la collecte, hors entrepôt : fipa/v_a050701_20030805143433.htm, SHA-256 32317007abe84da2dd393d9a026e7148cb2e05ced7ee03bcb0103ed4eb1065fb. "
     },
     {
       "id": "fipa-2004-11-gaz-mai-2004",
       "type": "webpage",
-      "title": "Guide de l'investisseur : Gaz naturel (tarifs en hors taxes, « Mai 2004 »)",
+      "title": "Guide de l'investisseur : gaz naturel (tarifs en hors taxes, « mai 2004 »)",
       "author": [
         {
           "literal": "Agence de promotion de l'investissement extérieur"
@@ -4169,13 +4169,13 @@
       },
       "archive": "Internet Archive (Wayback Machine)",
       "archive_location": "http://www.investintunisia.com:80/fre/poleA/a050702.htm",
-      "title-short": "Guide de l'investisseur : Gaz naturel",
+      "title-short": "Guide de l'investisseur : gaz naturel",
       "note": "citation-key: fipa-2004-11-gaz-mai-2004\nFamille : source officielle tunisienne (agence publique ou entreprise relayant la grille). Page archivée (niveau P : page HTML capturée, lue) ; le site d'origine ne sert plus cette page (vérification sommaire le 6 octobre 2026) ; consultée dans la capture (horodatage 20041104080919 lu dans le CDX le 6 octobre 2026). Contenu : gaz « Mai 2004 » : HP 0,1 F − 1,3406 ; MP 15,12 / 14,58 ; BP 18,21 / 17,25 mill/th, grille intermédiaire inconnue de la STEG ; l'étiquette « Mai 2004 » de la grille électrique de la même page n'est pas fiable (c'est encore la grille d'avril 2003). Octets bruts de la capture (variante id_) conservés dans le scratchpad de la collecte, hors entrepôt : fipa/v_a050702_20041104080919.htm, SHA-256 1baac3b8dcc9ce6c3afb3cf8556037aa93bfa5686fef23d37f4ed07b5e6052a8. "
     },
     {
       "id": "api-2003-04-couts-energie",
       "type": "webpage",
-      "title": "Coûts des facteurs : Énergie",
+      "title": "Coûts des facteurs : énergie",
       "author": [
         {
           "literal": "Agence de promotion de l'industrie"
@@ -4193,13 +4193,13 @@
       },
       "archive": "Internet Archive (Wayback Machine)",
       "archive_location": "http://www.tunisieindustrie.nat.tn:80/html/t_indust/cout66.htm",
-      "title-short": "Coûts des facteurs : Énergie",
+      "title-short": "Coûts des facteurs : énergie",
       "note": "citation-key: api-2003-04-couts-energie\nFamille : source officielle tunisienne (agence publique ou entreprise relayant la grille). Page archivée (niveau P : page HTML capturée, lue) ; le site d'origine ne sert plus cette page (vérification sommaire le 6 octobre 2026) ; consultée dans la capture (horodatage 20030430011557 lu dans le CDX le 6 octobre 2026). Contenu : grille du 15 août 2000 ; cite la « Décision du Ministre de l'Industrie du 10/08/2000 » (seule trace de l'acte, non retrouvée dans le JORT). Octets bruts de la capture (variante id_) conservés dans le scratchpad de la collecte, hors entrepôt : api_cout66_2003.html, SHA-256 6ab5fdf2e05afcbd7b2f8fa3decfa11939ea0e0eec0d518e63b51c0e089389ad. "
     },
     {
       "id": "api-2003-10-energie",
       "type": "webpage",
-      "title": "Coûts des facteurs : Énergie (page de doc.asp)",
+      "title": "Coûts des facteurs : énergie (page de doc.asp)",
       "author": [
         {
           "literal": "Agence de promotion de l'industrie"
@@ -4217,7 +4217,7 @@
       },
       "archive": "Internet Archive (Wayback Machine)",
       "archive_location": "http://www.tunisieindustrie.nat.tn:80/fr/doc.asp?mcat=3&mrub=58&msrub=191&dev=true",
-      "title-short": "Coûts des facteurs : Énergie",
+      "title-short": "Coûts des facteurs : énergie",
       "note": "citation-key: api-2003-10-energie\nFamille : source officielle tunisienne (agence publique ou entreprise relayant la grille). Page archivée (niveau P : page HTML capturée, lue) ; le site d'origine ne sert plus cette page (vérification sommaire le 6 octobre 2026) ; consultée dans la capture (horodatage 20031004185359 lu dans le CDX le 6 octobre 2026). Contenu : même contenu que la page cout66.htm : grille du 15 août 2000 et « Décision du Ministre de l'Industrie du 10/08/2000 » ; captures successives de 20031004185359 à 20040813134836. Octets bruts de la capture (variante id_) conservés dans le scratchpad de la collecte, hors entrepôt : api/energie_20031004185359.html, SHA-256 803cc0fa70b1b2ee0aac967bf6e826941cbb090ef3bd795f611609a879e18deb. "
     },
     {
