@@ -33,6 +33,11 @@ Quand un document n'a pu être lu que dans une capture d'Internet Archive, parce
 
 Ces champs survivent à l'aller-retour Zotero (`archive`/`archiveLocation` natifs pour le rapport et le livre, ligne d'Extra pour la page web ; `accessed` ↔ `accessDate`) : `push_biblio.py --verifier` doit rendre 0 perte. `precis.csl` les affiche après l'URL : `[Internet Archive (Wayback Machine), adresse d’origine : …]`.
 
+## Auteurs : typographie française
+- Un auteur personne s'écrit **prénom puis nom** (« Salah Eddine Chérif ») ; la liste des références le classe à son nom.
+- Un auteur institutionnel suit les règles typographiques françaises, **sans abus de majuscules** : majuscule au premier nom seulement (« Institut national de la statistique », « Banque centrale de Tunisie », « Caisse nationale de sécurité sociale », « Organisation internationale du travail ») ; « Ministère des Finances » — majuscule au domaine —, et « direction générale des impôts », « service des statistiques » en minuscules quand ils suivent le nom de l'organisme. Ni sigle entre parenthèses, ni « Tunisie. » en tête, ni « (Tunisie) » : un organisme a **une seule graphie** dans tout le précis. Les noms d'organismes étrangers gardent leur graphie d'origine (« World Bank », « International Monetary Fund »).
+- Ces graphies se corrigent aussi dans Zotero, sans quoi la prochaine synchronisation descendante les rétablirait.
+
 ## Source canonique = Zotero (point central)
 - La bibliographie est, à terme, **tirée de Zotero** (groupe `6529669`) par `scripts/sync_biblio.py` (Zotero → `references.json`). Une clé Zotero en **écriture** existe côté projet (issue #17).
 - Conséquence : toute référence ajoutée à la main dans un `references.json` est **provisoire** et risque d'être écrasée par un sync. Elle doit être **remontée dans Zotero** (champ « Extra » : `citation-key: <clé>`) pour devenir pérenne.
