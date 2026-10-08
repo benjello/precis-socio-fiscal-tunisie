@@ -2494,3 +2494,287 @@
     et non estimation du FMI. Les diapositives du groupe de travail sont lues à l''image,
     sans contrôle automatique.'
   fiche: sources/minfin-tva-credit-restitutions.md
+- id: cnss-salaire-moyen-declare-smig
+  titre: 'CNSS, salariés non agricoles : salaire moyen déclaré et rapport au SMIG
+    de 48 heures, 1970-2018, par segments'
+  sources:
+  - cnss-annuaires-statistiques
+  - decret61-145
+  - decret74-63
+  - decret74-571
+  - decret81-437
+  - decret92-1299
+  build: scripts/build_cnss_salaire_moyen_smig.py:main
+  raw:
+  - data/processed/caisses/cnss_annuaire_2006_brut.csv
+  - data/processed/caisses/cnss_annuaire_2018_brut.csv
+  - data/processed/jort/smig_smag.csv
+  - data/processed/jort/smig_48h_moyenne_annuelle.csv
+  output: data/processed/caisses/cnss_salaire_moyen_declare_smig.csv
+  unite: dinars courants (masse ; salaire par an et par mois ; SMIG par mois), personnes,
+    rapport sans unité
+  perimetre: 'régime des salariés non agricoles de la CNSS ; une ligne par année et
+    par édition de l''annuaire (2006 : 1970-1999 et 2002-2006 ; 2018 : 2000-2018)
+    ; salaire annuel moyen déclaré imprimé = masse salariale déclarée ÷ salariés déclarés
+    ; salaire mensuel = ÷ 12 ; rapport = salaire annuel moyen ÷ (12 × SMIG mensuel
+    du régime de 48 heures, moyenne des montants en vigueur au premier jour de chacun
+    des douze mois)'
+  caveats: 'SÉRIE CALCULÉE, LIVRÉE PAR SEGMENTS (colonne `segment`), SANS RACCORD
+    NI CORRECTION : ne jamais tracer d''un trait continu ni comparer les niveaux de
+    part et d''autre d''une rupture. DEUX MILLÉSIMES SUR 2002-2006, LES DEUX GARDÉS,
+    une ligne par édition (2002 : 4 525 D et rapport de 1,89 dans l''édition 2006
+    ; 3 856 D et 1,61 dans l''édition 2018 ; 2006 : 4 926 et 4 954 D) ; l''écart n''est
+    expliqué par aucune note de la source. RUPTURES : 1981, l''indemnité complémentaire
+    provisoire entre dans le SMIG mais reste hors de l''assiette des cotisations (décret
+    n° 81-437, art. 7), d''où un rapport abaissé par construction de 1981 à 1987 ;
+    1988, l''annuaire signale l''inclusion de l''ICP et de « MIT » (sigle non précisé
+    par la source), salaire moyen + 34,9 % ; 2000 et 2001 masquées par le pli du scan
+    de l''édition 2006, non reconstituées ; 2003, taxis et louages ; 1974, à l''intérieur
+    du premier segment, le SMIG intègre l''indemnité de cherté de vie (décret n° 74-63),
+    rapport de 2,06 en 1973 et de 1,54 en 1974. BIAIS DU DÉNOMINATEUR : tout salarié
+    déclaré au moins une fois dans l''année est compté, le salaire mensuel et le rapport
+    sont tirés vers le bas par les années incomplètes. Édition 2006 lue à l''image.
+    SMIG : montants par date d''effet de la série `smig-smag` de ce dépôt (décrets
+    tels que le précis socio-fiscal les réunit, non relus ici) ; avant 1974, conversion
+    du minimum horaire ; indemnité de cherté de vie de 1971-1973 et indemnités spéciales
+    de 1989 et de 1991 non comprises. S''ARRÊTE EN 2018 : aucun annuaire postérieur.'
+  fiche: docs/salaire-moyen-declare-smig.md
+- id: cnss-pyramide-smig-2000-2018
+  titre: 'CNSS : salariés du RSNA par classe de salaire mensuel déclaré en multiples
+    du SMIG, 2000-2018, mesure annuelle et mesure trimestrielle de 2018'
+  sources:
+  - cnss-annuaires-statistiques
+  build: scripts/extract_cnss_pyramide_smig_2000_2018.py:main
+  raw:
+  - data/raw/caisses/cnss/annuaires/annuaire2013fr.pdf
+  - data/raw/caisses/cnss/annuaires/annuaire_statistique_2018_fr.pdf
+  output: data/processed/caisses/cnss_pyramide_smig_2000_2018.csv
+  unite: salariés déclarés ; % du total imprimé de la colonne (calculé)
+  perimetre: régime des salariés non agricoles ; treize classes de la source et trois
+    regroupements calculés (moins de 1 SMIG ; 1 à 1,5 ; plus de 1,5) ; édition 2013,
+    PDF 37 (2000-2013) ; édition 2018, PDF 27 (2005-2018) et PDF 26 (quatre trimestres
+    de 2018) ; une ligne par année, mesure, trimestre, classe et édition
+  caveats: 'DEUX MESURES, À NE PAS MÊLER (colonne `mesure`). « annuelle » : tous les
+    salariés déclarés au titre de l''année ; la classe basse y est gonflée par les
+    années incomplètes, et cette lecture NE MESURE PAS des salariés payés sous le
+    SMIG (24,0 % sous 1 SMIG en 2018). « trimestre civil » : effectif déclaré à chaque
+    trimestre de 2018 (9,5 % sous 1 SMIG au premier trimestre) ; le titre de la source
+    dit « selon le nombre de trimestres déclarés », la lecture par trimestre civil
+    est DÉDUITE de ce que les colonnes dépassent l''effectif annuel de la classe ;
+    le quatrième trimestre porte vraisemblablement les primes de fin d''année (DÉDUIT
+    de la masse salariale et des effectifs à 6 SMIG et plus). Une seule année trimestrielle
+    : pas une série. FILTRER SUR `niveau` avant toute somme : les trois regroupements
+    calculés s''ajoutent aux treize classes de la source, et le code `1-1.5` existe
+    aux deux niveaux. LE MONTANT DU SMIG DE RÉFÉRENCE EST IMPRIMÉ sous la pyramide
+    en dinars (« 6 fois SMIG mensuel en D », série `cnss-pyramide-dinars-2000-2018`)
+    ; NON PRÉCISÉ PAR LA SOURCE : son régime (40 ou 48 heures), le calcul du salaire
+    mensuel déclaré. CONSTAT : ce SMIG vaut 200 heures au taux horaire du régime de
+    48 heures (290,200 D en 2013), non le SMIG mensuel de 208 heures (301,808 D),
+    et les classes en sont des multiples (encadrement sans tolérance : 111 seuils
+    sur 120, contre 40 avec le SMIG mensuel). Un salarié payé toute l''année le SMIG
+    mensuel de 48 heures se range donc vers 1,04 SMIG, dans la classe 1 à 1,5 ; au
+    SMIG mensuel de 40 heures, vers 0,89, dans la classe 2/3 à 1 : « MOINS DE 1 SMIG
+    » NE VEUT PAS DIRE « SOUS LE SALAIRE MINIMUM LÉGAL ». La classe 1 à 1,5 SMIG ne
+    permet pas d''isoler le salarié payé au SMIG. Les éditions 2010, 2013 et 2018
+    sont identiques sur leurs années communes (contrôle du script) : `serie_2000_2018
+    = oui` marque un parcours sans doublon (édition 2013 pour 2000-2004, édition 2018
+    ensuite), sans raccord de valeurs. NE PAS MÊLER à l''édition 2006 (`cnss-annuaire-2006-pyramide-smig-brut`),
+    autre univers. La pyramide en dinars de l''édition 2018 (PDF 24) imprime 1 149
+    959 salariés en 2012, celle en SMIG 1 149 956. Parts calculées, sans arrondi ;
+    les parts imprimées (2013, 2018) sont gardées à côté.'
+  fiche: sources/cnss-annuaires.md
+- id: ins-salaires-prive-annuel
+  titre: Taux annuel des salaires déclarés à la CNSS, secteur privé non agricole,
+    2001-2025, par chaînage des taux trimestriels
+  sources:
+  - ins-bms
+  - ins-guide-salaires-prive-2026
+  - ins-portail-2006-salaires-prive
+  - ins-portail-2009-salaires-prive
+  build: scripts/extract_ins_bms_salaires.py:main
+  raw:
+  - data/raw/ins-bms
+  output: data/processed/ins-bms/salaires_prive_annuel.csv
+  unite: '% par an'
+  perimetre: (1 + t1)(1 + t2)(1 + t3)(1 + t4) − 1 sur les quatre taux trimestriels
+    retenus de l'année (quatrième trimestre sur quatrième trimestre) ; pour contrôle,
+    moyenne annuelle sur moyenne annuelle d'un indice chaîné, et taux annuels publiés
+    par l'INS (2010-2022)
+  caveats: 'L''INS NE DIT PAS COMMENT IL CALCULE SON TAUX ANNUEL ; le chaînage le
+    redonne à 0,22 point près de 2010 à 2021 (écart de −0,02 à +0,22), la moyenne
+    annuelle s''en écarte jusqu''à 1,37 point : le chaînage est retenu. 2022 : 5,61
+    % contre 4,6 % publié, taux provisoire de l''INS calculé avant la révision des
+    trimestres de 2022. Le taux de 2025 est provisoire. PÉRIODE T1 2001 - T1 2007,
+    PREMIER PORTAIL DE L''INS (www.ins.nat.tn, indicateur 0402040, pages mises à jour
+    le 06/10/2006 et le 30/06/2009, seules captures des archives du web) : (a) ces
+    pages ne nomment pas la CNSS (« Source : Institut National de la Statistique (INS)
+    ») : l''appui sur les salaires déclarés à la CNSS pour 2001-2006 est DÉDUIT de
+    la continuité de l''indicateur (même code, mêmes valeurs que le BMS sur T2 2007
+    - T1 2009, redressement de 2009 compris), non affirmé par la source ; (b) la méthode
+    de la période ancienne n''est pas documentée : le panel de salariés permanents
+    et les seuils viennent du guide de 2026 et ne peuvent être remontés à 2001 ; le
+    libellé de 2006 dit « salaire moyen » ; (c) on ignore si l''indicateur commence
+    en 2001 ou si l''affichage était tronqué ; (d) aucune autre version archivée (recherche
+    CDX sur le code 0402040 et les familles de pages conjoncturelles) ; les URL d''origine
+    ne répondent plus. T2 2006 vaut 1,69 dans la mise à jour de 2006, 1,45 dans celle
+    de 2009, retenue ; T1 2007 (1,11) n''est dans aucun BMS en ligne.'
+  titre_ar: النسبة السنوية لتطوّر الأجور المصرّح بها لدى الصندوق الوطني للضمان الاجتماعي،
+    القطاع الخاص غير الفلاحي، 2001-2025، بتسلسل النسب الثلاثية
+  unite_ar: '% سنوياً'
+  perimetre_ar: جداء النسب الثلاثية الأربع للسنة (الثلاثي الرابع مقارنة بالثلاثي الرابع)،
+    مع المقارنة بالنسب السنوية التي نشرها المعهد (2010-2022)
+  caveats_ar: 'لا يبيّن المعهد طريقة حساب نسبته السنوية؛ يُعيدها التسلسل بفارق لا
+    يتجاوز 0,22 نقطة من 2010 إلى 2021، فاعتُمد. نسبة 2022 المنشورة (4,6 %) وقتية وسابقة
+    لمراجعة ثلاثيات تلك السنة. نسبة 2025 وقتية. الفترة من الثلاثي الأول 2001 إلى الثلاثي
+    الأول 2007، البوابة الأولى للمعهد (www.ins.nat.tn، المؤشر 0402040، صفحتان حُيّنتا
+    في 06/10/2006 و30/06/2009، وهما النسختان الوحيدتان في أرشيف الواب): (أ) لا تذكر
+    هاتان الصفحتان الصندوق الوطني للضمان الاجتماعي («المصدر: المعهد الوطني للإحصاء»)،
+    فاستناد سنوات 2001-2006 إلى الأجور المصرّح بها لدى الصندوق مستنتَج من استمرارية
+    المؤشر (الرمز نفسه والقيم نفسها في النشرية الشهرية من الثلاثي الثاني 2007 إلى
+    الثلاثي الأول 2009، بما في ذلك تعديل 2009)، لا مصرّح به في المصدر؛ (ب) طريقة الفترة
+    القديمة غير موثّقة: عيّنة الأجراء القارّين وعتباتها مأخوذة من دليل 2026 ولا يمكن
+    إرجاعها إلى 2001، وعنوان صفحة 2006 يذكر «معدّل الأجر»؛ (ج) لا يُعرف هل يبدأ المؤشر
+    سنة 2001 أم كان العرض مبتوراً؛ (د) لا توجد نسخة مؤرشفة أخرى (بحث CDX عن الرمز
+    0402040 وعن عائلات صفحات المعطيات الظرفية)، والعناوين الأصلية لم تعد تستجيب. الثلاثي
+    الثاني 2006: 1,69 في تحيين 2006، و1,45 في تحيين 2009 وهي المعتمدة؛ الثلاثي الأول
+    2007 (1,11) غير موجود في أيّ عدد متاح من النشرية.'
+  fiche: sources/ins-bms-salaires-prive.md
+- id: ins-micro-entreprises-salaries-smig
+  titre: 'INS, micro-entreprises : salariés selon le salaire rapporté au SMIG, 2007,
+    2012, 2016'
+  sources:
+  - ins-micro-entreprises-2007
+  - ins-micro-entreprises-2012
+  - ins-micro-entreprises-2016
+  build: scripts/extract_ins_micro_entreprises_smig.py:main
+  raw:
+  - data/raw/ins-publications/micro-entreprises/ins_micro_2007.pdf
+  - data/raw/ins-publications/micro-entreprises/ins_micro_2012.pdf
+  - data/raw/ins-publications/micro-entreprises/ins_micro_2016.pdf
+  output: data/processed/ins-micro-entreprises/salaries_selon_smig_2007_2016.csv
+  unite: '% des salariés ; salariés (effectifs extrapolés par l''INS)'
+  perimetre: entreprises non agricoles de moins de 6 salariés du répertoire national
+    des entreprises, n'ayant pas de comptabilité ; salariés employés de façon permanente
+    ; part sous le SMIG (ensemble, hommes, femmes), tableau 8 par grande branche,
+    ligne « Ensemble » des tableaux 2.7.1 à 2.7.3 (cinq tranches) ; une ligne par
+    valeur imprimée, avec son document, sa page et son tableau
+  caveats: 'VALEURS TRANSCRITES, aucune calculée. Part des salariés sous le SMIG :
+    54.5 % (2007), 49,9 % (2012), 32,3 % (2016). 2007 VIENT DE DEUX DOCUMENTS (phrase
+    du rapport 2007 ; tableau 8 du rapport 2012) et 2012 est repris par le rapport
+    2016 : toutes les lignes sont gardées, filtrer sur `source_id`. Une cellule diffère
+    entre rapports (textile, moins de 0,5 SMIG, 2012 : « 0.9 » puis « 9,9 »). SMIG
+    retenu par l''INS : 240, 301, 357 dinars ; RÉGIME NON PRÉCISÉ PAR LA SOURCE ;
+    le rapport 2012 écrit aussi 302 dinars. La durée du travail n''est pas contrôlée
+    dans ces tableaux : « sous le SMIG » ne s''entend pas à durée égale. En 2016 le
+    champ ajoute un plafond de chiffre d''affaires d''un million de dinars. Le rapport
+    2016 intitule « >0,5 SMIG » la colonne des moins de 0,5 SMIG (libellé gardé).
+    Part de 2002 : non trouvée dans ces documents. NE PAS MÊLER à la pyramide de la
+    CNSS ni à l''enquête Emploi et salaires : autres champs.'
+  fiche: sources/ins-micro-entreprises.md
+- id: ins-ees-salaire-base-permanents-smig
+  titre: 'INS, enquête Emploi et salaires auprès des entreprises : salaire de base
+    moyen des permanents, en dinars et en % du SMIG, 2012, 2014, 2022'
+  sources:
+  - ins-ees-2012
+  - ins-ees-2014
+  - ins-ees-2022
+  build: scripts/extract_ins_emploi_salaires_entreprises.py:main
+  raw:
+  - data/raw/ins-enquete-emploi/enquete_emploi_salaire_2012.pdf
+  - data/raw/ins-enquete-emploi/enquête_emploi_salaires_2014.pdf
+  - data/raw/ins-enquete-emploi/enquête_empl_salair-2022_0.pdf
+  output: data/processed/ins-enquete-emploi/salaire_base_permanents_smig_2012_2022.csv
+  unite: dinars courants ; % du SMIG retenu par la source
+  perimetre: entreprises publiques et entreprises privées de 6 salariés et plus (répertoire
+    national des entreprises) ; salariés permanents ; salaire de base (hors heures
+    supplémentaires et primes) ; ligne « Total » des tableaux par section d'activité,
+    cinq colonnes (cadres, professions intermédiaires, employés, ouvriers, total)
+  caveats: 'ENTREPRISES PUBLIQUES COMPRISES : ce n''est pas le seul secteur privé.
+    Salaire de BASE des PERMANENTS, non salaire brut de tous les salariés. Le pourcentage
+    du SMIG est celui que l''INS imprime (178 %, 188 %, 201 %), avec son SMIG (301,
+    320, 460 dinars). NON PRÉCISÉ PAR LA SOURCE : régime du SMIG (40 ou 48 heures),
+    périodicité du salaire (le SMIG de comparaison est mensuel), pondération de la
+    moyenne. Taux de réponse : 38,6 %, 46,6 %, 58 %. Trois années espacées : des repères,
+    pas une série annuelle. Détail par section et quartiles non versés. Le nom du
+    PDF de 2014 porte un « ê » décomposé (e + U+0302).'
+  fiche: sources/ins-emploi-salaires-entreprises.md
+- id: cnss-quantiles-salaires-approches
+  titre: 'CNSS : quantiles approchés du salaire mensuel déclaré (RSNA), par interpolation
+    dans les classes en dinars — série dérivée'
+  sources:
+  - cnss-annuaires-statistiques
+  build: scripts/build_cnss_quantiles_salaires.py:main
+  raw:
+  - data/processed/caisses/cnss_pyramide_dinars_2000_2018.csv
+  - data/processed/caisses/cnss_pyramide_selon_trimestres_declares_2013.csv
+  output: data/processed/caisses/cnss_quantiles_salaires_approches.csv
+  unite: dinars courants par mois
+  perimetre: premier décile, premier quartile, médiane, troisième quartile, neuvième
+    décile ; pour chaque colonne de chaque édition de la pyramide en dinars (38 colonnes
+    annuelles, 12 trimestrielles) et pour les salariés déclarés quatre trimestres
+    en 2013
+  caveats: 'SÉRIE DÉRIVÉE, NON PUBLIÉE PAR LA SOURCE. Interpolation linéaire dans
+    la classe (répartition uniforme supposée) ; erreur bornée par `largeur_D` (20
+    à 40 D dans l''édition 2013, 50 D ensuite). VIDE quand le quantile tombe dans
+    une classe ouverte : neuvième décile de 2014 à 2018, premier décile annuel de
+    2017 et 2018. LES COLONNES N''ONT PAS TOUTES LA MÊME DÉFINITION DU SALAIRE MENSUEL
+    (`definition_deduite`, `coherent_avec_pyramide_smig`) : une tendance ne se lit
+    qu''à définition et grille égales — 2000-2009 puis 2011-2013 (édition 2013) ;
+    2010-2016 (éditions 2016 à 2018) ; trimestres de 2017 et 2018. BIAIS DES ANNÉES
+    INCOMPLÈTES dans la mesure annuelle ÷ 12 : en 2013, médiane de 468,1 D pour l''ensemble,
+    590,2 D pour les déclarés quatre trimestres. Dinars courants : aucune déflation
+    ici.'
+  fiche: docs/cnss-quantiles-salaires-approches.md
+- id: cnss-pyramide-trimestres-declares-2013
+  titre: 'CNSS 2013 : salariés du RSNA et masse salariale selon le nombre de trimestres
+    déclarés dans l''année, par classe de salaire en dinars et en SMIG'
+  sources:
+  - cnss-annuaires-statistiques
+  build: scripts/extract_cnss_trimestres_declares_2013.py:main
+  raw:
+  - data/raw/caisses/cnss/annuaires/annuaire2013fr.pdf
+  output: data/processed/caisses/cnss_pyramide_selon_trimestres_declares_2013.csv
+  unite: salariés déclarés ; dinars courants (masse salariale de l'année ; salaire
+    annuel moyen calculé)
+  perimetre: 'régime des salariés non agricoles, année 2013 ; édition 2013, PDF 35
+    (57 classes en dinars) et PDF 36 (13 classes en SMIG) ; colonnes : un, deux, trois,
+    quatre trimestres déclarés au titre de l''année, et total ; ligne TOTAL comprise'
+  caveats: 'UNE SEULE ANNÉE. Seule édition où les colonnes sont le NOMBRE DE TRIMESTRES
+    DÉCLARÉS (partition : 123 341 + 110 687 + 124 069 + 800 558 = 1 158 655) ; les
+    tableaux de même titre des éditions 2016 à 2018 sont par trimestre civil. Déclarés
+    quatre trimestres : 800 558 salariés, 8 834 648 773 D. LE SALAIRE MOYEN PAR NOMBRE
+    DE TRIMESTRES N''EST PAS IMPRIMÉ : `salaire_annuel_moyen_calcule_D` est masse
+    ÷ effectif (11 035,61 D pour quatre trimestres). DÉFAUT DE LA SOURCE AU PDF 36
+    (classes en SMIG), gardé : aucune ligne ne se somme à sa colonne TOTAL (1,5 à
+    2 SMIG : −94 185 ; 2 à 2,5 : +94 084), alors que les colonnes et les masses bouclent
+    ; n''utiliser ces deux lignes qu''avec cette réserve. Le PDF 35 (dinars) boucle
+    en lignes et en colonnes. Salaire mensuel = masse annuelle ÷ 12, vérifié dans
+    les 285 cellules du PDF 35 : non écrit par la source.'
+  fiche: sources/cnss-annuaires.md
+- id: cnss-pyramide-dinars-reperes
+  titre: 'CNSS : contrôles de la pyramide en dinars, par édition et par année (concordance
+    entre éditions, cohérence avec la pyramide en SMIG)'
+  sources:
+  - cnss-annuaires-statistiques
+  build: scripts/extract_cnss_pyramide_dinars.py:main
+  raw:
+  - data/processed/caisses/cnss_pyramide_dinars_2000_2018.csv
+  - data/processed/caisses/cnss_pyramide_smig_2000_2018.csv
+  - data/processed/jort/smig_smag.csv
+  output: data/processed/caisses/cnss_pyramide_dinars_reperes.csv
+  unite: salariés déclarés (effectifs cumulés sous neuf bornes communes) ; dinars
+    (SMIG de la source) ; % de l'effectif total (écart d'encadrement)
+  perimetre: 'une ligne par édition et par année de la mesure annuelle (38 lignes)
+    : total imprimé, SMIG mensuel de la source, effectifs cumulés sous 200, 300, 450,
+    600, 750, 900, 1 050, 1 200 et 1 350 D, nombre de seuils de SMIG testés et hors
+    encadrement, écart maximal'
+  caveats: 'FICHIER DE CONTRÔLE, CALCULÉ. L''encadrement compare l''effectif cumulé
+    de la pyramide en SMIG (sous 2/3, 1, 1,5 … 4 SMIG) aux effectifs cumulés des deux
+    bornes de la classe en dinars qui contient le seuil ; tolérance de 1 % de l''effectif
+    total. Écart maximal : 0,7 % au plus pour les colonnes cohérentes, 7,8 à 11,8
+    % pour les autres. Il établit que deux mesures coexistent, non leur définition.
+    `smig_de_la_source_egale` compare le SMIG imprimé à la série `smig-smag` du dépôt
+    (200 heures au taux horaire du régime de 48 heures, de fin d''année ou en moyenne)
+    ; les deux colonnes `seuils_encadres_sans_tolerance_…` refont l''encadrement avec
+    le SMIG de la source puis avec le SMIG mensuel de 48 heures.'
+  fiche: sources/cnss-annuaires.md

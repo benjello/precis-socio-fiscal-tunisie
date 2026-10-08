@@ -1,0 +1,30 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-08
+# séries (tunisia_data) : cnss-pyramide-smig-2000-2018
+# sources (citation) : @cnss-annuaire-2013, @cnss-annuaire-2018
+# fiches : sources/cnss-annuaires.md
+# méthode/hypothèses : DEUX MESURES, À NE PAS MÊLER (colonne `mesure`). « annuelle » : tous les salariés déclarés au titre de l'année ; la classe basse y est gonflée par les années incomplètes, et cette lecture NE MESURE PAS des salariés payés sous le SMIG (24,0 % sous 1 SMIG en 2018). « trimestre civil » : effectif déclaré à chaque trimestre de 2018 (9,5 % sous 1 SMIG au premier trimestre) ; le titre de la source dit « selon le nombre de trimestres déclarés », la lecture par trimestre civil est DÉDUITE de ce que les colonnes dépassent l'effectif annuel de la classe ; le quatrième trimestre porte vraisemblablement les primes de fin d'année (DÉDUIT de la masse salariale et des effectifs à 6 SMIG et plus). Une seule année trimestrielle : pas une série. FILTRER SUR `niveau` avant toute somme : les trois regroupements calculés s'ajoutent aux treize classes de la source, et le code `1-1.5` existe aux deux niveaux. LE MONTANT DU SMIG DE RÉFÉRENCE EST IMPRIMÉ sous la pyramide en dinars (« 6 fois SMIG mensuel en D », série `cnss-pyramide-dinars-2000-2018`) ; NON PRÉCISÉ PAR LA SOURCE : son régime (40 ou 48 heures), le calcul du salaire mensuel déclaré. CONSTAT : ce SMIG vaut 200 heures au taux horaire du régime de 48 heures (290,200 D en 2013), non le SMIG mensuel de 208 heures (301,808 D), et les classes en sont des multiples (encadrement sans tolérance : 111 seuils sur 120, contre 40 avec le SMIG mensuel). Un salarié payé toute l'année le SMIG mensuel de 48 heures se range donc vers 1,04 SMIG, dans la classe 1 à 1,5 ; au SMIG mensuel de 40 heures, vers 0,89, dans la classe 2/3 à 1 : « MOINS DE 1 SMIG » NE VEUT PAS DIRE « SOUS LE SALAIRE MINIMUM LÉGAL ». La classe 1 à 1,5 SMIG ne permet pas d'isoler le salarié payé au SMIG. Les éditions 2010, 2013 et 2018 sont identiques sur leurs années communes (contrôle du script) : `serie_2000_2018 = oui` marque un parcours sans doublon (édition 2013 pour 2000-2004, édition 2018 ensuite), sans raccord de valeurs. NE PAS MÊLER à l'édition 2006 (`cnss-annuaire-2006-pyramide-smig-brut`), autre univers. La pyramide en dinars de l'édition 2018 (PDF 24) imprime 1 149 959 salariés en 2012, celle en SMIG 1 149 956. Parts calculées, sans arrondi ; les parts imprimées (2013, 2018) sont gardées à côté.
+# note : Salariés du secteur privé non agricole déclarés à la CNSS, selon leur salaire mensuel déclaré rapporté au SMIG de référence de la caisse : moins de 1, de 1 à 1,5, plus de 1,5, en % ; mesure annuelle, 2000-2018
+année,mesure,salariés déclarés,SMIG de référence de la CNSS (D par mois),moins de 1 SMIG de référence (%),"de 1 à 1,5 SMIG de référence (%)","plus de 1,5 SMIG de référence (%)"
+2000,annuelle,771884,179.8,40.8,24.8,34.4
+2001,annuelle,821248,188.0,39.7,25.0,35.3
+2002,annuelle,841865,194.8,39.6,25.3,35.2
+2003,annuelle,844770,203.0,38.9,24.1,37.0
+2004,annuelle,870441,209.8,38.9,23.9,37.2
+2005,annuelle,896588,215.6,38.0,24.6,37.3
+2006,annuelle,936103,219.0,36.6,23.1,40.3
+2007,annuelle,991864,226.5,36.0,23.6,40.4
+2008,annuelle,1061592,236.4,35.9,24.9,39.2
+2009,annuelle,1110817,245.7,36.2,22.8,41.0
+2010,annuelle,1163358,256.3,34.9,22.5,42.6
+2011,annuelle,1161896,270.667,33.0,21.3,45.8
+2012,annuelle,1149956,282.6,30.2,21.4,48.4
+2013,annuelle,1158655,290.2,27.8,18.1,54.0
+2014,annuelle,1172664,301.8,27.3,19.5,53.3
+2015,annuelle,1177375,319.2,26.5,19.8,53.7
+2016,annuelle,1181327,332.667,25.9,16.0,58.1
+2017,annuelle,1228941,343.4,24.4,17.5,58.1
+2018,annuelle,1289940,364.0,24.0,17.8,58.2
+2018,trimestre 1 de 2018,1085758,364.0,9.5,21.9,68.7
+2018,trimestre 2 de 2018,1106904,364.0,9.6,22.2,68.2
+2018,trimestre 3 de 2018,1117539,364.0,10.6,21.8,67.6
+2018,trimestre 4 de 2018,1123883,364.0,8.5,17.6,73.9
