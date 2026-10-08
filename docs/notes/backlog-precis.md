@@ -759,18 +759,20 @@ liste qui suit le tableau, citations comprises. Restent :
   conservée, section « Repères historiques » avec tableau des dates, registres repliés à colonne
   « Portée » ; `.domicile-unique` sur `#sec-statutaire-champ`, `#sec-statutaire-remuneration` et
   `#sec-augmentations-ep` seulement. Restent :
-  - **clés à créer (bibliographe)**, faute desquelles ces textes sont nommés sans ligne de
-    registre ni appel de citation : lois n° 70-46 et n° 2009-47 ; décrets n° 97-2133 et
-    n° 97-2134 ; modificatifs du décret n° 79-96 (n° 87-878 à n° 2010-2935) ; décrets n° 78-885
-    et n° 2014-12 (dirigeants) ; lois n° 67-51 et n° 2001-65 (banques) ; arrêté d'agrément de
-    1975 et avenant n° 5 de 2022 de la convention des banques ; décret n° 2019-1132
-    (magistrats) ;
+  - **clés versées le 8 octobre 2026 (bibliographe)** : lois n° 70-46, n° 2009-47, n° 67-51 et
+    n° 2001-65 ; décrets n° 97-2133, n° 97-2134, n° 78-885, n° 2014-12 et n° 2019-1132 ; les huit
+    modificatifs du décret n° 79-96 ; arrêté d'agrément de 1975 et avenant n° 5 de 2022 de la
+    convention des banques (`docs/notes/biblio-a-rapatrier.md`) ; les mentions du chapitre
+    statutaire autonome et du chapitre du marché contrôlé portent l'appel de citation ; **restent**
+    le texte arabe de l'arrêté de 1975 (fichier arabe du fascicule tronqué) et le décret n° 2019-1132,
+    versé mais non cité (aucune mention au chapitre) ;
   - **décret n° 2026-65 (magistrats, 2026-2028)** : porté au registre de
     `#sec-statutaire-remuneration` par son seul intitulé ; fascicule JORT n° 44 de 2026
     **à lire** pour les montants ;
-  - **intitulé du décret n° 79-96** : le chapitre cite « grille indiciaire de la fonction
-    publique », l'entrée `decret-79-96` de `references.json` porte « grille des salaires
-    mensuels » ; JORT n° 5 de 1979 au corpus, **scan sans couche texte** : OCR ;
+  - **intitulé du décret n° 79-96** : lu à l'image sur le JORT n° 5 de 1979 (p. 199) — « fixant
+    la solde des militaires non classés dans la **grille indiciaire** de la fonction publique et
+    le régime de l'alimentation dans l'armée ». Le chapitre est exact ; l'entrée `decret-79-96`
+    est corrigée ; le TODO du chapitre sur cet intitulé est périmé ;
   - **`index.qmd`** : la liste des corps du régime statutaire autonome (annonce des chapitres
     et tableau des sous-périmètres) omet les agents des douanes, que le chapitre couvre ;
   - **Banque mondiale, transferts aux entreprises publiques (8,9 % et 7,5 % du PIB)** : ni page,
@@ -791,11 +793,12 @@ liste qui suit le tableau, citations comprises. Restent :
     (convention révisée : 10 novembre 1982 ou 13 avril 1983 ; avenants n° 1, 7 et 9) ;
     « révision du 24 juillet 1997 » visée par cinq arrêtés (fiche `r-cc-assurances-revision-1997`
     proposée par la note, non versée faute d'ancre au chapitre) ; édition de la loi de finances
-    pour 2022 du rapport sur les entreprises publiques sans clé ; intitulés arabes des
+    pour 2022 du rapport sur les entreprises publiques : clé `minfin-ep-2022` versée le
+    8 octobre 2026 (aucun assureur nommé non plus) ; intitulés arabes des
     dix-sept entrées à relever ; montants en dinars constants ; articulation avec le décret
     n° 2026-68 ;
-  - **marché contrôlé** : aucune rupture datée ; les dates de 1967, 1975, 1978, 2001, 2014
-    (décret n° 2014-12) et 2022 reposent sur des textes non versés à la bibliographie.
+  - **marché contrôlé** : aucune rupture datée ; les textes des dates de 1967, 1975, 1978, 2001,
+    2014 (décret n° 2014-12) et 2022 sont versés à la bibliographie depuis le 8 octobre 2026.
 - **Augmentations générales (5 octobre 2026)** : les tranches de l'indemnité de gestion et
   d'exécution de 1993 à 2013 sont lues et relevées (`augmentations/augmentations-ige.csv`,
   § des cycles du régime indiciaire) ; les décrets des entreprises publiques de 1991 à 2026
@@ -814,7 +817,8 @@ liste qui suit le tableau, citations comprises. Restent :
   - décrets des entreprises publiques entre 2013 et 2026 (fiche
     `r-augmentations-ep-2013-2025`) : plein texte 2014-2025 **lisible**, non parcouru ;
   - magistrats : le décret n° 2026-65 est porté au régime statutaire autonome par son
-    intitulé (8 octobre 2026) ; le décret n° 2019-1132 reste à identifier et à verser ;
+    intitulé (8 octobre 2026) ; le décret n° 2019-1132 est versé (clé `decret2019-1132`,
+    8 octobre 2026), non encore cité au chapitre ;
   - poids budgétaire par cycle : aucun texte ne le donne.
 - **Séries** : effectifs et masse salariale par régime ; dépenses de défense ; effectifs du
   secteur financier public. Substituer des sources tunisiennes officielles aux chiffres du

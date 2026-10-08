@@ -434,8 +434,8 @@
     {
       "id": "decret-79-96",
       "type": "legislation",
-      "note": "citation-key: decret-79-96",
-      "title": "Décret n°79-96 du 11 janvier 1979, fixant la solde des militaires non classés dans la grille des salaires mensuels de la fonction publique et le régime de l'alimentation dans l'armée",
+      "note": "citation-key: decret-79-96\nJournal officiel n° 5 du 16 janvier 1979, édition française, p. 199-201. Intitulé relu sur le texte du fascicule (scan, lecture à l'image) : « grille indiciaire de la fonction publique ».",
+      "title": "Décret n° 79-96 du 11 janvier 1979, fixant la solde des militaires non classés dans la grille indiciaire de la fonction publique et le régime de l'alimentation dans l'armée",
       "URL": "https://www.pist.tn/jort/1979/1979F/Jo00579.pdf",
       "issued": {
         "date-parts": [
@@ -446,7 +446,10 @@
           ]
         ]
       },
-      "title-short": "Décret n° 79-96 du 11 janvier 1979"
+      "title-short": "Décret n° 79-96 du 11 janvier 1979",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "5",
+      "page": "199-201"
     },
     {
       "id": "decret-79-94",
@@ -918,7 +921,7 @@
     {
       "id": "cc-assurances-avenants-10-11",
       "type": "legislation",
-      "note": "citation-key: cc-assurances-avenants-10-11\nJournal officiel n° 3 du 9 janvier 2015, p. 69-70 (arrêté seul). Avenants signés le 24 novembre 2014 ; texte et grille au 1er juin 2012 lus dans l'édition arabe, p. 86-91. La grille du 1er juin 2014 n'y est pas imprimée.",
+      "note": "citation-key: cc-assurances-avenants-10-11\nJournal officiel n° 3 du 9 janvier 2015, p. 70-71 (arrêté seul ; le texte de l'avenant n'est publié qu'en arabe). Avenants signés le 24 novembre 2014 ; texte et grille au 1er juin 2012 lus dans l'édition arabe, p. 86-91. La grille du 1er juin 2014 n'y est pas imprimée.",
       "title": "Arrêté du ministre des affaires sociales du 16 décembre 2014, portant agrément des avenants n° 10 et n° 11 à la convention collective sectorielle des assurances",
       "URL": "https://www.pist.tn/jort/2015/2015F/Jo0032015.pdf",
       "issued": {
@@ -1035,7 +1038,7 @@
     {
       "id": "cc-assurances-avenant5-1999",
       "type": "legislation",
-      "note": "citation-key: cc-assurances-avenant5-1999\nJournal officiel n° 48 du 15 juin 1999. L'édition française ne porte que l'arrêté ou un avis ; texte de l'avenant et grilles lus dans l'édition arabe, p. 1179-1183. Intitulé français reconstitué d'après les visas. Avenant signé le 28 mai 1999. Grilles p. 1181-1183 de l'édition arabe. Édition française : avis collectif p. 947 d'après l'index seul, page non contrôlée.",
+      "note": "citation-key: cc-assurances-avenant5-1999\nJournal officiel n° 48 du 15 juin 1999. L'édition française ne porte que l'arrêté ou un avis ; texte de l'avenant et grilles lus dans l'édition arabe, p. 1179-1183. Intitulé français reconstitué d'après les visas. Avenant signé le 28 mai 1999. Grilles p. 1181-1183 de l'édition arabe. Édition française : avis collectif p. 947 page contrôlée sur le fascicule français (avis collectif sans nom de convention).",
       "title": "Arrêté du ministre des affaires sociales du 9 juin 1999, portant agrément de l'avenant n° 5 à la convention collective nationale des assurances",
       "container-title": "Journal officiel de la République tunisienne",
       "issue": "48",
@@ -1048,12 +1051,14 @@
           ]
         ]
       },
-      "title-short": "Arrêté du ministre des affaires sociales du 9 juin 1999"
+      "title-short": "Arrêté du ministre des affaires sociales du 9 juin 1999",
+      "URL": "https://www.pist.tn/jort/1999/1999F/Jo04899.pdf",
+      "page": "947"
     },
     {
       "id": "cc-assurances-avenant6-2002",
       "type": "legislation",
-      "note": "citation-key: cc-assurances-avenant6-2002\nJournal officiel n° 98 du 3 décembre 2002. L'édition française ne porte que l'arrêté ou un avis ; texte de l'avenant et grilles lus dans l'édition arabe, p. 3072-3077. Intitulé français reconstitué d'après les visas. Avenant signé le 14 novembre 2002. Grilles p. 3075-3077 de l'édition arabe. Édition française : avis collectif p. 2804 d'après l'index seul, page non contrôlée.",
+      "note": "citation-key: cc-assurances-avenant6-2002\nJournal officiel n° 98 du 3 décembre 2002. L'édition française ne porte que l'arrêté ou un avis ; texte de l'avenant et grilles lus dans l'édition arabe, p. 3072-3077. Intitulé français reconstitué d'après les visas. Avenant signé le 14 novembre 2002. Grilles p. 3075-3077 de l'édition arabe. Édition française : avis collectif p. 2804 page contrôlée sur le fascicule français (avis collectif sans nom de convention).",
       "title": "Arrêté du ministre des affaires sociales et de la solidarité du 25 novembre 2002, portant agrément de l'avenant n° 6 à la convention collective nationale des assurances",
       "container-title": "Journal officiel de la République tunisienne",
       "issue": "98",
@@ -1066,7 +1071,9 @@
           ]
         ]
       },
-      "title-short": "Arrêté du ministre des affaires sociales et de la solidarité du 25 novembre 2002"
+      "title-short": "Arrêté du ministre des affaires sociales et de la solidarité du 25 novembre 2002",
+      "URL": "https://www.pist.tn/jort/2002/2002F/Jo0982002.pdf",
+      "page": "2804"
     },
     {
       "id": "cc-assurances-avenant7-2007",
@@ -1171,12 +1178,12 @@
     {
       "id": "cc-assurances-avenant14-2019",
       "type": "legislation",
-      "note": "citation-key: cc-assurances-avenant14-2019\nJournal officiel n° 11 du 5 février 2019, p. 322. L'édition française ne porte que l'arrêté ou un avis ; texte de l'avenant et grilles lus dans l'édition arabe, p. 398-401. Page française relevée au sommaire, à contrôler. Avenant signé le 24 décembre 2018. Grilles p. 400-401 de l'édition arabe.",
+      "note": "citation-key: cc-assurances-avenant14-2019\nJournal officiel n° 11 du 5 février 2019, p. 322-323. L'édition française ne porte que l'arrêté ou un avis ; texte de l'avenant et grilles lus dans l'édition arabe, p. 398-401. Page française contrôlée : l'arrêté débute p. 322 (sommaire) et son article premier figure p. 323. Avenant signé le 24 décembre 2018. Grilles p. 400-401 de l'édition arabe.",
       "title": "Arrêté du ministre des affaires sociales du 25 janvier 2019, portant agrément de l'avenant n° 14 à la convention collective sectorielle des assurances",
       "URL": "https://www.pist.tn/jort/2019/2019F/Jo0112019.pdf",
       "container-title": "Journal officiel de la République tunisienne",
       "issue": "11",
-      "page": "322",
+      "page": "322-323",
       "issued": {
         "date-parts": [
           [
@@ -1191,12 +1198,12 @@
     {
       "id": "cc-assurances-avenant15-2022",
       "type": "legislation",
-      "note": "citation-key: cc-assurances-avenant15-2022\nJournal officiel n° 116 du 28 octobre 2022, p. 2872-2873. L'édition française ne porte que l'arrêté ou un avis ; texte de l'avenant et grilles lus dans l'édition arabe, p. 3169-3173. Avenant signé le 22 août 2022. Grilles p. 3172-3173 de l'édition arabe.",
+      "note": "citation-key: cc-assurances-avenant15-2022\nJournal officiel n° 116 du 28 octobre 2022, p. 2874. L'édition française ne porte que l'arrêté ou un avis ; texte de l'avenant et grilles lus dans l'édition arabe, p. 3169-3173. Avenant signé le 22 août 2022. Grilles p. 3172-3173 de l'édition arabe.",
       "title": "Arrêté du ministre des affaires sociales du 20 octobre 2022, portant agrément de l'avenant n° 15 à la convention collective sectorielle des assurances",
       "URL": "https://www.pist.tn/jort/2022/2022F/Jo1162022.pdf",
       "container-title": "Journal officiel de la République tunisienne",
       "issue": "116",
-      "page": "2872-2873",
+      "page": "2874",
       "issued": {
         "date-parts": [
           [
@@ -1207,6 +1214,386 @@
         ]
       },
       "title-short": "Arrêté du ministre des affaires sociales du 20 octobre 2022"
+    },
+    {
+      "id": "loi70-46",
+      "type": "legislation",
+      "note": "citation-key: loi70-46\nJournal officiel n° 53 des 20-24 novembre 1970, édition française, p. 1563.",
+      "title": "Loi n° 70-46 du 20 novembre 1970, portant ratification du décret-loi n° 70-6 du 26 septembre 1970, portant statut des membres de la Cour des comptes",
+      "URL": "https://www.pist.tn/jort/1970/1970F/Jo05370.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "53",
+      "page": "1563",
+      "issued": {
+        "date-parts": [
+          [
+            1970,
+            11,
+            20
+          ]
+        ]
+      },
+      "title-short": "Loi n° 70-46 du 20 novembre 1970"
+    },
+    {
+      "id": "loi2009-47",
+      "type": "legislation",
+      "note": "citation-key: loi2009-47\nJournal officiel n° 55 du 10 juillet 2009, édition française, p. 1845-1846.",
+      "title": "Loi n° 2009-47 du 8 juillet 2009, modifiant et complétant la loi n° 67-20 du 31 mai 1967, portant statut général des militaires",
+      "URL": "https://www.pist.tn/jort/2009/2009F/Jo0552009.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "55",
+      "page": "1845-1846",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            7,
+            8
+          ]
+        ]
+      },
+      "title-short": "Loi n° 2009-47 du 8 juillet 2009"
+    },
+    {
+      "id": "loi67-51",
+      "type": "legislation",
+      "note": "citation-key: loi67-51\nJournal officiel n° 52 du 12 décembre 1967, édition française, p. 1560-1563.",
+      "title": "Loi n° 67-51 du 7 décembre 1967, réglementant la profession bancaire",
+      "URL": "https://www.pist.tn/jort/1967/1967F/Jo05267.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "52",
+      "page": "1560-1563",
+      "issued": {
+        "date-parts": [
+          [
+            1967,
+            12,
+            7
+          ]
+        ]
+      },
+      "title-short": "Loi n° 67-51 du 7 décembre 1967"
+    },
+    {
+      "id": "loi2001-65",
+      "type": "legislation",
+      "note": "citation-key: loi2001-65\nJournal officiel n° 55 du 10 juillet 2001, édition française, p. 1671-1679.",
+      "title": "Loi n° 2001-65 du 10 juillet 2001, relative aux établissements de crédit",
+      "URL": "https://www.pist.tn/jort/2001/2001F/Jo0552001.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "55",
+      "page": "1671-1679",
+      "issued": {
+        "date-parts": [
+          [
+            2001,
+            7,
+            10
+          ]
+        ]
+      },
+      "title-short": "Loi n° 2001-65 du 10 juillet 2001"
+    },
+    {
+      "id": "decret-97-2133",
+      "type": "legislation",
+      "note": "citation-key: decret-97-2133\nJournal officiel n° 93 du 21 novembre 1997, édition française, p. 2084.",
+      "title": "Décret n° 97-2133 du 10 novembre 1997, modifiant le décret n° 73-58 du 14 février 1973, relatif aux indemnités servies aux membres du Tribunal administratif, tel que modifié par le décret n° 96-1542 du 9 septembre 1996",
+      "URL": "https://www.pist.tn/jort/1997/1997F/Jo09397.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "93",
+      "page": "2084",
+      "issued": {
+        "date-parts": [
+          [
+            1997,
+            11,
+            10
+          ]
+        ]
+      },
+      "title-short": "Décret n° 97-2133 du 10 novembre 1997"
+    },
+    {
+      "id": "decret-97-2134",
+      "type": "legislation",
+      "note": "citation-key: decret-97-2134\nJournal officiel n° 93 du 21 novembre 1997, édition française, p. 2085.",
+      "title": "Décret n° 97-2134 du 10 novembre 1997, modifiant le décret n° 71-222 du 29 mai 1971, portant fixation de la rémunération du personnel de la Cour des comptes, tel que modifié par le décret n° 85-1090 du 7 septembre 1985",
+      "URL": "https://www.pist.tn/jort/1997/1997F/Jo09397.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "93",
+      "page": "2085",
+      "issued": {
+        "date-parts": [
+          [
+            1997,
+            11,
+            10
+          ]
+        ]
+      },
+      "title-short": "Décret n° 97-2134 du 10 novembre 1997"
+    },
+    {
+      "id": "decret-78-885",
+      "type": "legislation",
+      "note": "citation-key: decret-78-885\nJournal officiel n° 68 du 13 octobre 1978, édition française, p. 2844-2845.",
+      "title": "Décret n° 78-885 du 11 octobre 1978, fixant le régime de la rémunération des chefs d'entreprise publique",
+      "URL": "https://www.pist.tn/jort/1978/1978F/Jo06878.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "68",
+      "page": "2844-2845",
+      "issued": {
+        "date-parts": [
+          [
+            1978,
+            10,
+            11
+          ]
+        ]
+      },
+      "title-short": "Décret n° 78-885 du 11 octobre 1978"
+    },
+    {
+      "id": "decret2014-12",
+      "type": "legislation",
+      "note": "citation-key: decret2014-12\nJournal officiel n° 5 du 17 janvier 2014, édition française, p. 118-119.",
+      "title": "Décret n° 2014-12 du 10 janvier 2014, fixant les taux des éléments de rémunération des chefs d'établissements et entreprises publiques et de sociétés à majorité publique",
+      "URL": "https://www.pist.tn/jort/2014/2014F/Jo0052014.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "5",
+      "page": "118-119",
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            1,
+            10
+          ]
+        ]
+      },
+      "title-short": "Décret n° 2014-12 du 10 janvier 2014"
+    },
+    {
+      "id": "decret2019-1132",
+      "type": "legislation",
+      "note": "citation-key: decret2019-1132\nJournal officiel n° 100 du 13 décembre 2019, édition française, p. 4275-4277.",
+      "title": "Décret gouvernemental n° 2019-1132 du 12 décembre 2019, portant octroi de la deuxième et la troisième tranche de l'augmentation des salaires au profit des magistrats de l'ordre judiciaire, des magistrats du Tribunal administratif et des magistrats de la Cour des comptes et la fixation de ses montants",
+      "URL": "https://www.pist.tn/jort/2019/2019F/Jo1002019.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "100",
+      "page": "4275-4277",
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            12,
+            12
+          ]
+        ]
+      },
+      "title-short": "Décret gouvernemental n° 2019-1132 du 12 décembre 2019"
+    },
+    {
+      "id": "decret-87-878",
+      "type": "legislation",
+      "note": "citation-key: decret-87-878\nJournal officiel n° 46 du 26 juin 1987, édition française, p. 824-825.",
+      "title": "Décret n° 87-878 du 18 juin 1987, modifiant le décret n° 79-96 du 11 janvier 1979, fixant la solde des militaires non classés dans la grille indiciaire de la fonction publique et le régime de l'alimentation dans l'armée",
+      "URL": "https://www.pist.tn/jort/1987/1987F/Jo04687.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "46",
+      "page": "824-825",
+      "issued": {
+        "date-parts": [
+          [
+            1987,
+            6,
+            18
+          ]
+        ]
+      },
+      "title-short": "Décret n° 87-878 du 18 juin 1987"
+    },
+    {
+      "id": "decret-88-263",
+      "type": "legislation",
+      "note": "citation-key: decret-88-263\nJournal officiel n° 17 des 8-11 mars 1988, édition française, p. 355-356.",
+      "title": "Décret n° 88-263 du 26 février 1988, modifiant le décret n° 79-96 du 11 janvier 1979, fixant la solde des militaires non classés dans la grille indiciaire de la fonction publique et le régime de l'alimentation dans l'armée",
+      "URL": "https://www.pist.tn/jort/1988/1988F/Jo01788.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "17",
+      "page": "355-356",
+      "issued": {
+        "date-parts": [
+          [
+            1988,
+            2,
+            26
+          ]
+        ]
+      },
+      "title-short": "Décret n° 88-263 du 26 février 1988"
+    },
+    {
+      "id": "decret-88-909",
+      "type": "legislation",
+      "note": "citation-key: decret-88-909\nJournal officiel n° 33 des 13-17 mai 1988, édition française, p. 743-744.",
+      "title": "Décret n° 88-909 du 26 avril 1988, modifiant et complétant le décret n° 79-96 du 11 janvier 1979, fixant la solde des militaires non classés dans la grille indiciaire de la fonction publique et le régime de l'alimentation dans l'armée",
+      "URL": "https://www.pist.tn/jort/1988/1988F/Jo03388.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "33",
+      "page": "743-744",
+      "issued": {
+        "date-parts": [
+          [
+            1988,
+            4,
+            26
+          ]
+        ]
+      },
+      "title-short": "Décret n° 88-909 du 26 avril 1988"
+    },
+    {
+      "id": "decret2002-1973",
+      "type": "legislation",
+      "note": "citation-key: decret2002-1973\nJournal officiel n° 73 du 6 septembre 2002, édition française, p. 2089-2090.",
+      "title": "Décret n° 2002-1973 du 30 août 2002, modifiant le décret n° 79-96 du 11 janvier 1979, fixant la solde des militaires non classés dans la grille indiciaire de la fonction publique et le régime de l'alimentation dans l'armée",
+      "URL": "https://www.pist.tn/jort/2002/2002F/Jo0732002.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "73",
+      "page": "2089-2090",
+      "issued": {
+        "date-parts": [
+          [
+            2002,
+            8,
+            30
+          ]
+        ]
+      },
+      "title-short": "Décret n° 2002-1973 du 30 août 2002"
+    },
+    {
+      "id": "decret2004-2127",
+      "type": "legislation",
+      "note": "citation-key: decret2004-2127\nJournal officiel n° 74 du 14 septembre 2004, édition française, p. 2671-2672.",
+      "title": "Décret n° 2004-2127 du 2 septembre 2004, modifiant le décret n° 79-96 du 11 janvier 1979, fixant la solde des militaires non classés dans la grille indiciaire de la fonction publique et le régime de l'alimentation dans l'armée",
+      "URL": "https://www.pist.tn/jort/2004/2004F/Jo0742004.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "74",
+      "page": "2671-2672",
+      "issued": {
+        "date-parts": [
+          [
+            2004,
+            9,
+            2
+          ]
+        ]
+      },
+      "title-short": "Décret n° 2004-2127 du 2 septembre 2004"
+    },
+    {
+      "id": "decret2005-3382",
+      "type": "legislation",
+      "note": "citation-key: decret2005-3382\nJournal officiel n° 1 du 3 janvier 2006, édition française, p. 7-8.",
+      "title": "Décret n° 2005-3382 du 26 décembre 2005, modifiant le décret n° 79-96 du 11 janvier 1979, fixant la solde des militaires non classés dans la grille indiciaire de la fonction publique et le régime de l'alimentation dans l'armée",
+      "URL": "https://www.pist.tn/jort/2006/2006F/Jo0012006.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "1",
+      "page": "7-8",
+      "issued": {
+        "date-parts": [
+          [
+            2005,
+            12,
+            26
+          ]
+        ]
+      },
+      "title-short": "Décret n° 2005-3382 du 26 décembre 2005"
+    },
+    {
+      "id": "decret2007-2408",
+      "type": "legislation",
+      "note": "citation-key: decret2007-2408\nJournal officiel n° 81 du 9 octobre 2007, édition française, p. 3412-3413.",
+      "title": "Décret n° 2007-2408 du 2 octobre 2007, modifiant le décret n° 79-96 du 11 janvier 1979, fixant la solde des militaires non classés dans la grille indiciaire de la fonction publique et le régime de l'alimentation dans l'armée",
+      "URL": "https://www.pist.tn/jort/2007/2007F/Jo0812007.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "81",
+      "page": "3412-3413",
+      "issued": {
+        "date-parts": [
+          [
+            2007,
+            10,
+            2
+          ]
+        ]
+      },
+      "title-short": "Décret n° 2007-2408 du 2 octobre 2007"
+    },
+    {
+      "id": "decret2010-2935",
+      "type": "legislation",
+      "note": "citation-key: decret2010-2935\nJournal officiel n° 91 du 12 novembre 2010, édition française, p. 3135-3136.",
+      "title": "Décret n° 2010-2935 du 9 novembre 2010, modifiant et complétant le décret n° 79-96 du 11 janvier 1979, fixant la solde des militaires non classés dans la grille indiciaire de la fonction publique et le régime de l'alimentation dans l'armée",
+      "URL": "https://www.pist.tn/jort/2010/2010F/Jo0912010.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "91",
+      "page": "3135-3136",
+      "issued": {
+        "date-parts": [
+          [
+            2010,
+            11,
+            9
+          ]
+        ]
+      },
+      "title-short": "Décret n° 2010-2935 du 9 novembre 2010"
+    },
+    {
+      "id": "cc-banques-1975",
+      "type": "legislation",
+      "note": "citation-key: cc-banques-1975\nJournal officiel n° 87 des 30-31 décembre 1975, édition française, p. 2898. Le même jour, l'arrêté agréant la convention collective nationale des assurances figure à la même page (clé cc-assurances-1975).",
+      "title": "Arrêté du ministre des affaires sociales du 24 décembre 1975, portant agrément de la convention collective nationale des banques et des établissements financiers",
+      "URL": "https://www.pist.tn/jort/1975/1975F/Jo08775.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "87",
+      "page": "2898",
+      "issued": {
+        "date-parts": [
+          [
+            1975,
+            12,
+            24
+          ]
+        ]
+      },
+      "title-short": "Arrêté du ministre des affaires sociales du 24 décembre 1975"
+    },
+    {
+      "id": "cc-banques-avenant5-2022",
+      "type": "legislation",
+      "note": "citation-key: cc-banques-avenant5-2022\nJournal officiel n° 126 du 22 novembre 2022, édition française, p. 3137 (arrêté seul : le texte de l'avenant n'est publié qu'en arabe). Avenant signé le 22 août 2022.",
+      "title": "Arrêté du ministre des affaires sociales du 17 novembre 2022, portant agrément de l'avenant n° 5 à la convention collective sectorielle du personnel des banques et des établissements financiers",
+      "URL": "https://www.pist.tn/jort/2022/2022F/Jo1262022.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "126",
+      "page": "3137",
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            17
+          ]
+        ]
+      },
+      "title-short": "Arrêté du ministre des affaires sociales du 17 novembre 2022"
     }
   ]
 }

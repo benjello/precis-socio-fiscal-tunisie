@@ -7577,6 +7577,27 @@
       "URL": "https://www.pist.tn/jort/2003/2003A/Ja1042003.pdf",
       "note": "citation-key: lf-2004\nissue: 104\nJORT n° 104 du 30 décembre 2003, tome 146 ; la loi commence page 3721. Édition française établie sur pièce : la taille distante (content-length, curl -ksI, 16 septembre 2026) est égale à l'octet près au fascicule du corpus local, dont la première page porte « traduction française ». Un code 200 sur un chemin « …F/Jo… » ne suffit pas : pist.tn sert parfois l'édition arabe sous une adresse française.\nDROIT DE CONSOMMATION : même encodage décalé que le fascicule de 2002 — lettres lisibles, CHIFFRES PERDUS. Trois dispositions sont identifiées par leur intitulé, dont deux par les notices de jort_cache.db : « Maîtrise de l'application du droit de consommation dû sur les pneumatiques en caoutchouc » (page 3726), « Allègement de la fiscalité des véhicules automobiles aménagés spécialement à l'usage des handicapés » (page 3730) et « Révision de la fiscalité des véhicules tout terrain » (page 3731). Le texte de la première, lu par déchiffrement, ajoute à l'article premier de la loi n° 88-62 une règle sur les produits d'une position « Ex » importés montés sur roues entières, avec calcul sur la valeur totale de la roue à défaut de mention séparée. NUMÉRO D'ARTICLE NON ÉTABLI (la liste DGELF porte l'article 37). Date d'effet déduite (1er janvier 2004). Édition arabe : https://www.pist.tn/jort/2003/2003A/Ja1042003.pdf\nArt. 16 (encouragement du secteur privé à recruter les diplômés de l'enseignement supérieur : 50 % du salaire, 250 D), p. 3723 (notice de jort_cache.db, recid 110996) ; abrogé par l'article 2 de la loi n° 2005-91.",
       "title-short": "Loi n° 2003-80 du 29 décembre 2003"
+    },
+    {
+      "id": "minfin-ep-2022",
+      "type": "report",
+      "note": "citation-key: minfin-ep-2022\nAdresse vérifiée le 08/10/2026 (réponse 200, application/pdf, 2 612 958 octets).",
+      "publisher": "وزارة المالية",
+      "publisher-place": "تونس",
+      "title": "التقرير حول المنشآت العمومية (الملحق 9 لقانون المالية لسنة 2022)",
+      "URL": "https://www.finances.gov.tn/sites/default/files/2022-02/ANNEXE_09.pdf",
+      "author": [
+        {
+          "literal": "وزارة المالية"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
     }
   ]
 }

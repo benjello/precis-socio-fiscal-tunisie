@@ -3476,3 +3476,28 @@ Douze clés neuves dans `precis/{fr,ar}/fiscalite/references.json` (mêmes ident
 - [ ] `iort-code-tva-2016` : nombre de lignes du tableau C (212 en annexe A, 210 au § 3 de la note des codes consolidés) et bornes de pages à réconcilier.
 - [ ] Règle d'archive appliquée : `bm.com.tn`, `chaexpert.com` et `jurisitetunisie.com` répondent encore (200) et servent des fichiers identiques aux captures : leur URL reste l'adresse d'origine, la capture n'est citée qu'en note ; seul `iort-code-tva-2017` (503) suit la convention des documents retirés ou inaccessibles. À trancher si l'on préfère l'archive partout.
 - [ ] `push_biblio.py --verifier` : 1043 entrées, 2 pertes préexistantes (`dafflon-2021-budget-local`, `minfin-cnf-2013-forfait`), aucune du fait de ce versement. `dry-run` et `controle-rangement` : à lancer sur la branche poussée (workflow `biblio-zotero`, sans effet sur du non-versionné) ; `ranger` après le rapatriement.
+
+## Versement du 08/10/2026 (rémunérations publiques, clôture bibliographique des quatre chapitres) — À REPORTER DANS ZOTERO
+
+Vingt et une clés neuves dans `precis/{fr,ar}/remunerations_publiques/references.json` (mêmes identifiants), plus `minfin-ep-2022` dans le fonds commun
+(`precis/{fr,ar}/references.json`), absentes de Zotero. Adresses pist.tn lues dans `pdf_fr` / `pdf_ar` de `jort_cache.db`, **vérifiées le 08/10/2026**
+par requête d'en-tête (200, `application/pdf`, taille égale à celle du fascicule du corpus, FR et AR). Pages : FR lues sur le fascicule français,
+AR sur l'arabe (la pagination arabe diffère de la française avant 2000 et sur certains fascicules plus récents).
+
+- Lois : `loi70-46`, `loi2009-47`, `loi67-51`, `loi2001-65`. Décrets : `decret-97-2133`, `decret-97-2134`, `decret-78-885`, `decret2014-12`, `decret2019-1132`.
+- Modificatifs du décret n° 79-96 : `decret-87-878`, `decret-88-263`, `decret-88-909`, `decret2002-1973`, `decret2004-2127`, `decret2005-3382`,
+  `decret2007-2408`, `decret2010-2935`. **`decret-79-96` corrigé** : l'intitulé exact est « fixant la solde des militaires non classés dans la **grille indiciaire**
+  de la fonction publique et le régime de l'alimentation dans l'armée » (lu à l'image, JORT n° 5 de 1979, p. 199) ; l'entrée portait « grille des salaires mensuels ».
+- Banques : `cc-banques-1975` (arrêté du 24 décembre 1975, JORT n° 87, p. 2898, lu à l'image), `cc-banques-avenant5-2022`.
+- `minfin-ep-2022` (annexe 9 à la loi de finances pour 2022, arabe seul) : année 2022 = mise en ligne (fichier créé le 14/01/2022) ; les éditions voisines portent l'année
+  de préparation (LF − 1) — **à arbitrer** pour l'ensemble de la série.
+- Corrections aux dix-sept clés `cc-assurances-*` : `cc-assurances-avenants-10-11` p. 70-71 (et non 69-70) ; `cc-assurances-avenant15-2022` FR p. 2874 (et non 2872-2873) ;
+  `cc-assurances-avenant14-2019` FR p. 322-323 ; `cc-assurances-avenant5-1999` et `-avenant6-2002` : URL française et page (947 ; 2804) ajoutées, pages contrôlées.
+
+- [ ] AR 1975 : le fichier arabe du fascicule n° 87 (`Ja08775.pdf`, 36 pages) s'arrête à la p. 3490 ; le sommaire arabe place les arrêtés d'agrément (banques, assurances,
+  matériaux de construction) aux p. 3517-3518. `cc-banques-1975` et `cc-assurances-1975` gardent l'adresse arabe de l'enregistrement (`pdf_ar`), avec la mention de la troncature
+  en note ; le texte arabe est à obtenir (exemplaire complet du fascicule). Intitulé arabe de `cc-assurances-1975` toujours à relever.
+- [x] Pages FR de `decret-88-909` (743), `decret2002-1973` (2089), `decret2004-2127` (2671) : page de début relue à l'image ; page de fin d'après l'index du JORT. `cc-assurances-avenant12-2016` (1148) et `-avenant13-2017` (2331) relues : exactes.
+- [ ] `cc-assurances-avenant8-2009` et `-avenant9-2012` AR, `-avenant4-1996` AR : début de page arabe non relu (sommaire illisible).
+- [ ] `cherif-kammoun-tajir` : éditeur, année et ISBN **non complétés**. Notices : BNT (https://www.bibliotheque.nat.tn/BNTK/doc/SYRACUSE/764026) — tome 4 « أنظمة التأجير والتقاعد والحماية الاجتماعية في الوظيفة العمومية », Tunis, Dar Ishamat fi adabiyyat al-mu'assasa, 2011, ISBN 9789973450142 ; ARP (https://bibliotheque.arp.tn/opac_css/index.php?lvl=notice_display&id=80739) — même titre et même éditeur, **2006**, 117 p., ISBN 978-9973-45-014-2. Années en désaccord, et titre différent de celui de l'entrée (« نظام التأجير بالوظيفة العمومية ») : à trancher sur la page de titre du scan avant de compléter.
+- [ ] Le TODO du chapitre `_regime_statutaire_autonome.qmd` (clés à verser) est périmé : toutes les clés qu'il liste existent désormais.

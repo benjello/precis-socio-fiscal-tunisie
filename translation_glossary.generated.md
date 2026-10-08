@@ -27,6 +27,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Assujetti | الخاضع للأداء |  |
 | Assujetti partiel | الخاضع جزئيا للأداء على القيمة المضافة |  |
 | Assuré social | المضمون الاجتماعي |  |
+| Augmentation générale des salaires | الزيادة العامة في الأجور |  |
 | Augmentation optionnelle de l'âge de mise à la retraite | الترفيع الاختياري في سنّ الإحالة على التقاعد |  |
 | Autonomie budgétaire | الاستقلالية في الميزانية |  |
 | Autonomie financière | الاستقلالية المالية |  |
@@ -101,6 +102,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Contrôleur d'État | مراقب الدولة |  |
 | Convention collective cadre | الاتفاقية المشتركة الإطارية |  |
 | Convention collective sectorielle | الاتفاقية المشتركة القطاعية |  |
+| Convention collective sectorielle des assurances | الاتفاقية المشتركة القطاعية للتأمين |  |
 | Convention collective sectorielle des banques et établissements financiers | الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية |  |
 | Coordination des régimes | التنسيق بين أنظمة الضمان الاجتماعي |  |
 | Cotisation de l'assuré | اشتراك المضمون |  |
@@ -187,6 +189,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Indemnité complémentaire provisoire | المنحة الإضافية المؤقتة | ICP |
 | Indemnité de cherté de vie | منحة لغلو المعاش |  |
 | Indemnité de décès | منحة الوفاة |  |
+| Indemnité de gestion et d'exécution | منحة التصرف والتنفيذ |  |
 | Indemnité de revenu unique | منحة الدخل الوحيد |  |
 | Indemnité de stage | منحة التربص |  |
 | Indemnité journalière | التعويض اليومي |  |

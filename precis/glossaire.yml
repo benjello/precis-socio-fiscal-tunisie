@@ -148,13 +148,15 @@ entries:
       definition: >
         Organisme public doté de la personnalité morale et de l'autonomie
         financière, exerçant une mission administrative ; son personnel relève
-        généralement de la fonction publique.
+        du statut général de la fonction publique, dont l'article premier vise
+        l'ensemble de ces établissements (loi n°83-112).
       synonymes: [EPA]
     ar:
       terme: المؤسسة العمومية ذات الصبغة الإدارية
       definition: >
         هيكل عمومي يتمتّع بالشخصية المعنوية والاستقلال المالي، يمارس مهمّة
-        إدارية؛ وينتمي أعوانه عمومًا إلى الوظيفة العمومية.
+        إدارية؛ ويخضع أعوانه للنظام الأساسي العام للوظيفة العمومية، الذي يشمل
+        فصله الأول جميع هذه المؤسسات (القانون عدد 83-112).
       synonymes: []
 
   - id: epna
@@ -208,57 +210,68 @@ entries:
     fr:
       terme: Régime indiciaire
       definition: >
-        Régime de rémunération de la fonction publique, des collectivités
-        locales et d'une partie des établissements publics à caractère
-        administratif, fondé sur un grade et un échelon. En droit positif
-        tunisien, à chaque couple grade × échelon correspond un traitement de
-        base mensuel fixé directement en dinars par les grilles annexées aux
-        décrets (décret n°97-1832, décret n°2007-268) ; le « point d'indice »,
-        hérité du modèle français de carrière, subsiste dans le vocabulaire
-        mais n'opère pas comme paramètre multiplicateur.
+        Régime de rémunération des agents de l'État, des collectivités locales
+        et des établissements publics à caractère administratif, régis par le
+        statut général (loi n°83-112), fondé sur un grade et un échelon. Depuis
+        le 1er janvier 1998, à chaque couple grade × échelon correspond un
+        traitement de base mensuel fixé directement en dinars par la grille
+        annexée au décret n°97-1832 ; depuis le 1er avril 2007, une partie des
+        indemnités spécifiques y est intégrée (décret n°2007-268, art. 2 bis).
+        Le régime doit son nom au mécanisme en vigueur jusqu'au 31 décembre
+        1997, où un chiffre indiciaire attaché à l'emploi était converti en
+        dinars par un décret distinct ; depuis, aucune « valeur du point »
+        n'opère, et le point d'indice ne subsiste que dans le vocabulaire et
+        dans certains décrets de classement des corps.
       synonymes: []
     ar:
       terme: النظام الاستدلالي للتأجير
       definition: >
-        نظام تأجير الوظيفة العمومية والجماعات المحلية وجزء من المؤسسات العمومية
-        ذات الصبغة الإدارية، يقوم على رتبة ودرجة. وفي القانون الوضعي التونسي،
-        يقابل كلَّ ثنائي رتبة × درجة مرتبٌ أساسي شهري محدَّد مباشرة بالدينار في
-        الشبكات المُلحقة بالأوامر (الأمر عدد 97-1832 والأمر عدد 2007-268)؛ أمّا
-        «النقطة الاستدلالية» الموروثة عن النموذج الفرنسي للمسار المهني فلا تزال
-        قائمة في المصطلحات لكنّها لا تعمل كمُعامِل ضربٍ.
+        نظام تأجير أعوان الدولة والجماعات المحلية والمؤسسات العمومية ذات الصبغة
+        الإدارية، الخاضعين للنظام الأساسي العام (القانون عدد 83-112)، يقوم على
+        رتبة ودرجة. ومنذ غرّة جانفي 1998، يقابل كلَّ ثنائي رتبة × درجة مرتبٌ
+        أساسي شهري محدَّد مباشرة بالدينار في الشبكة المُلحقة بالأمر عدد 97-1832؛
+        ومنذ غرّة أفريل 2007، أُدمج فيه جزء من المنح الخصوصية (الأمر عدد
+        2007-268، الفصل 2 مكرّر). ويستمدّ النظام اسمه من الآليّة التي كانت سارية
+        إلى 31 ديسمبر 1997، حيث كان رقم قياسي مُسنَد إلى الخطّة يُحوَّل إلى
+        دنانير بأمر مستقلّ؛ ومنذ ذلك التاريخ لا تعمل أيّ «قيمة للنقطة»، ولم تبق
+        النقطة الاستدلالية إلا في المصطلحات وفي بعض أوامر تصنيف الأسلاك.
       synonymes: []
 
   - id: regime-statutaire-autonome
     acronyme: null
     statut: provisoire
-    references: [loi83-112, loi67-29, loi67-20, loi82-70]
+    references: [loi83-112, loi67-29, loi67-20, loi82-70, loi95-46]
     source_definition: {ref: loi83-112, locator: "art. 1er"}
     voir_aussi: [regime-indiciaire, fonction-publique, forces-de-securite-interieure, statut-particulier, magistrat, solde-militaire, pensions-civiles-militaires]
     fr:
       terme: Régime statutaire autonome
       definition: >
-        Régime de rémunération propre à des corps dotés d'un statut spécial
-        (magistrats, militaires, forces de sécurité intérieure), détaché du
-        statut commun de la fonction publique. Ce détachement procède d'une
-        clause d'exclusion de champ, et non d'une sortie progressive : l'article
-        premier de la loi n°83-112 portant statut général écarte ces corps de
-        son champ d'application
-        et les renvoie à leurs textes propres — loi n°67-29 (magistrats de
-        l'ordre judiciaire), loi n°67-20 (militaires), loi n°82-70 (forces de
-        sécurité intérieure). Le corps des agents des douanes relève, lui, d'un
-        statut séparé encore (loi n°95-46).
+        Catégorie retenue dans ce précis pour les corps régis par un statut
+        propre, distinct du statut général de la fonction publique : magistrats,
+        militaires, forces de sécurité intérieure et agents des douanes. Chaque
+        corps reçoit un traitement ou une solde de base, complété d'indemnités,
+        sur des grilles qui lui sont propres. Pour les trois premiers, le
+        détachement procède d'une clause d'exclusion de champ, et non d'une
+        sortie progressive : l'article premier de la loi n°83-112 portant statut
+        général les écarte de son champ d'application et les renvoie à leurs
+        textes propres — loi n°67-29 (magistrats de l'ordre judiciaire), loi
+        n°67-20 (militaires), loi n°82-70 (forces de sécurité intérieure).
+        L'autonomie des agents des douanes repose sur leur statut général
+        propre (loi n°95-46 du 15 mai 1995).
       synonymes: [statut spécial]
     ar:
       terme: النظام الأساسي الخاص
       definition: >
-        نظام تأجير خاصّ بأسلاك تتمتّع بنظام أساسي خاصّ (القضاة، العسكريون، قوات
-        الأمن الداخلي)، منفصل عن النظام الأساسي العام للوظيفة العمومية. وهذا
-        الانفصال ناتج عن بند استثناء من مجال التطبيق، لا عن خروج تدريجي: فالفصل
-        الأول من القانون عدد 83-112 المتعلّق بالنظام الأساسي العام يُخرج هذه
-        الأسلاك من مجال تطبيقه
-        ويحيلها إلى نصوصها الخاصّة — القانون عدد 67-29 (القضاة العدليون)،
-        والقانون عدد 67-20 (العسكريون)، والقانون عدد 82-70 (قوات الأمن الداخلي).
-        أمّا سلك أعوان الديوانة فيخضع لنظام أساسي منفصل آخر (القانون عدد 95-46).
+        فئة معتمدة في هذا الملخّص للأسلاك الخاضعة لنظام أساسي خاصّ بها، متميّز
+        عن النظام الأساسي العام للوظيفة العمومية: القضاة والعسكريون وقوات الأمن
+        الداخلي وأعوان الديوانة. ويتقاضى كلّ سلك مرتّبًا أساسيًا تُضاف إليه منح،
+        وفق شبكات خاصّة به. وبالنسبة إلى الأسلاك الثلاثة الأولى، ينتج هذا
+        الانفصال عن بند استثناء من مجال التطبيق، لا عن خروج تدريجي: فالفصل
+        الأول من القانون عدد 83-112 المتعلّق بالنظام الأساسي العام يُخرجها من
+        مجال تطبيقه ويحيلها إلى نصوصها الخاصّة — القانون عدد 67-29 (القضاة
+        العدليون)، والقانون عدد 67-20 (العسكريون)، والقانون عدد 82-70 (قوات
+        الأمن الداخلي). أمّا استقلالية أعوان الديوانة فتستند إلى نظامهم الأساسي
+        العام الخاصّ بهم (القانون عدد 95-46 المؤرّخ في 15 ماي 1995).
       synonymes: []
 
   - id: magistrat
@@ -301,22 +314,23 @@ entries:
       terme: Solde (militaire)
       definition: >
         Rémunération de base des militaires, équivalent du traitement de base de
-        la fonction publique mais établi hors de la grille indiciaire de droit
-        commun. Le décret n°79-96 du 11 janvier 1979 fixe la solde des
-        militaires « non classés dans la grille des salaires mensuels de la
-        fonction publique » ; l'intitulé même atteste que la rémunération
-        militaire n'est pas adossée à la grille indiciaire. À cette solde
-        s'ajoutent des indemnités liées aux sujétions du service.
+        la fonction publique mais établi hors de la grille de droit commun. Le
+        décret n°79-96 du 11 janvier 1979 fixe la solde des militaires non
+        classés dans la grille de la fonction publique, ainsi que le régime de
+        l'alimentation dans l'armée ; il est modifié à plusieurs reprises, de
+        1987 à 2010. À cette solde s'ajoutent des indemnités liées aux
+        sujétions du service ; celles des personnels de l'armée de terre sont
+        fixées par le décret n°67-158 du 31 mai 1967.
       synonymes: []
     ar:
       terme: المرتّب العسكري
       definition: >
         الأجر الأساسي للعسكريين، المقابل للمرتّب الأساسي في الوظيفة العمومية لكن
-        المضبوط خارج الشبكة الاستدلالية للقانون العام. يضبط الأمر عدد 79-96
-        المؤرّخ في 11 جانفي 1979 مرتّب العسكريين «غير المصنّفين في شبكة الأجور
-        الشهرية للوظيفة العمومية»؛ ويشهد العنوان ذاته على أنّ التأجير العسكري لا
-        يستند إلى الشبكة الاستدلالية. وتُضاف إلى هذا المرتّب منحٌ مرتبطة بأعباء
-        الخدمة.
+        المضبوط خارج شبكة القانون العام. يضبط الأمر عدد 79-96 المؤرّخ في 11
+        جانفي 1979 مرتّب العسكريين غير المصنّفين في شبكة الوظيفة العمومية،
+        وكذلك نظام التغذية في الجيش؛ وقد نُقّح عدّة مرّات، من سنة 1987 إلى سنة
+        2010. وتُضاف إلى هذا المرتّب منحٌ مرتبطة بأعباء الخدمة؛ ويضبط الأمر عدد
+        67-158 المؤرّخ في 31 ماي 1967 منح أعوان جيش البرّ.
       synonymes: []
 
   - id: pensions-civiles-militaires
@@ -353,26 +367,37 @@ entries:
   - id: statut-particulier
     acronyme: null
     statut: provisoire
-    references: [loi83-112, decret-statut-caisses-2022]
-    voir_aussi: [fonction-publique, regime-statutaire-autonome, cnss, cnrps, cnam]
+    references: [loi83-112, loi85-78, decret-statut-caisses-1999, decret-statut-caisses-2022]
+    voir_aussi: [fonction-publique, regime-statutaire-autonome, regime-conventionnel-public, cnss, cnrps, cnam]
     fr:
       terme: Statut particulier
       definition: >
-        Statut dérogatoire applicable à une catégorie d'agents publics, fixé par
-        un texte propre (souvent un décret) par opposition au statut général de
-        la fonction publique (loi n°83-112). Le statut particulier des agents des
-        caisses sociales (CNSS, CNRPS, CNAM), adopté par décret en 2022, en est
-        un exemple : un régime sui generis, ni statut général ni convention
-        collective de droit commun.
+        Texte, pris ou approuvé par décret, qui fixe les règles propres à un
+        corps ou au personnel d'un organisme. Dans la fonction publique, les
+        statuts particuliers déclinent corps par corps le statut général (loi
+        n°83-112) : conditions de recrutement, d'avancement et obligations ;
+        les statuts particuliers dérogatoires de son article 2 dérogent à
+        certaines de ses dispositions sans en sortir. Dans les entreprises
+        publiques, la loi n°85-78 régit les agents permanents des offices, des
+        établissements industriels et commerciaux et des sociétés à capital
+        entièrement public par des statuts particuliers approuvés par décret.
+        Le personnel des organismes de sécurité sociale relève d'un statut
+        approuvé par décret en 1999, puis d'un statut particulier approuvé par
+        le décret présidentiel n°2022-76, qui abroge le précédent.
       synonymes: []
     ar:
       terme: النظام الأساسي الخصوصي
       definition: >
-        نظام استثنائي يُطبَّق على صنف من الأعوان العموميين، يُضبَط بنصّ خاصّ (أمر
-        في الغالب) خلافًا للنظام الأساسي العام للوظيفة العمومية (القانون عدد
-        83-112). ومن أمثلته النظام الأساسي الخصوصي لأعوان صناديق الضمان الاجتماعي
-        (CNSS وCNRPS وCNAM) المعتمَد بأمر سنة 2022: نظام ذو طبيعة خاصّة، لا هو
-        نظام أساسي عام ولا اتفاقية مشتركة عامة.
+        نصّ يُتَّخذ أو يُصادَق عليه بأمر، يضبط القواعد الخاصّة بسلك أو بأعوان
+        هيكل. ففي الوظيفة العمومية، تفصّل الأنظمة الأساسية الخصوصية النظام
+        الأساسي العام (القانون عدد 83-112) سلكًا سلكًا: شروط الانتداب والترقية
+        والواجبات؛ أمّا الأنظمة الأساسية الخصوصية الاستثنائية الواردة بفصله 2
+        فتخالف بعض أحكامه دون الخروج عنه. وفي المنشآت العمومية، يُخضع القانون
+        عدد 85-78 الأعوان القارّين للدواوين والمؤسسات الصناعية والتجارية
+        والشركات ذات رأس المال العمومي الكامل لأنظمة أساسية خصوصية مصادق عليها
+        بأمر. ويخضع أعوان مؤسسات الضمان الاجتماعي لنظام أساسي صودق عليه بأمر
+        سنة 1999، ثمّ لنظام أساسي خاصّ صودق عليه بالأمر الرئاسي عدد 2022-76
+        الذي ألغى سابقه.
       synonymes: []
 
   - id: forces-de-securite-interieure
@@ -446,9 +471,9 @@ entries:
         classification des emplois et la rémunération des agents des banques et
         établissements financiers, publics comme privés, agréée par arrêté du
         ministre des Affaires sociales en application du Code du travail. Sa
-        lignée remonte à un agrément de 1975 ; la version en vigueur est la
-        convention révisée agréée par arrêté du 17 février 2014, complétée par
-        des avenants successifs. Son champ commun aux banques publiques et privées
+        lignée remonte à un agrément de 1975 ; la convention révisée est agréée
+        par arrêté du 17 février 2014, puis complétée par des avenants jusqu'à
+        l'avenant n°5, de 2022. Son champ commun aux banques publiques et privées
         établit l'unité du cadre conventionnel, sans permettre à lui seul de comparer
         leurs niveaux effectifs de rémunération.
       synonymes: [convention collective des banques]
@@ -458,11 +483,45 @@ entries:
         اتفاقية مشتركة من القانون العام للشغل تضبط تصنيف المواطن الشغلية وتأجير
         أعوان البنوك والمؤسسات المالية، العمومية منها والخاصة، مصادَق عليها بقرار
         من وزير الشؤون الاجتماعية تطبيقًا لمجلة الشغل. تعود نشأتها إلى مصادقة سنة
-        1975؛ والنسخة السارية هي الاتفاقية المنقَّحة المصادَق عليها بقرار مؤرَّخ
-        في 17 فيفري 2014، المستكمَلة بملاحق متتالية. ويثبت شمولها المشترك للبنوك
+        1975؛ وقد صودق على الاتفاقية المنقَّحة بقرار مؤرَّخ في 17 فيفري 2014،
+        ثمّ استُكملت بملاحق تعديلية إلى الملحق عدد 5 لسنة 2022. ويثبت شمولها المشترك للبنوك
         العمومية والخاصة وحدة الإطار الاتفاقي، دون أن يسمح بمفرده بمقارنة مستويات
         التأجير الفعلية بينها.
       synonymes: []
+
+  - id: convention-collective-assurances
+    acronyme: null
+    statut: valide
+    references: [cc-assurances-1975, cc-assurances-1983, cc-assurances-avenant5-1999, cc-assurances-avenant15-2022]
+    source_definition: {ref: cc-assurances-texte-1975}
+    source_traduction: {ref: cc-assurances-avenant7-2007}
+    voir_aussi: [convention-collective-sectorielle, convention-collective-banques, regime-marche-controle, grille-de-salaires-conventionnelle, avenant-convention-collective]
+    fr:
+      terme: Convention collective sectorielle des assurances
+      definition: >
+        Convention collective de branche qui régit la classification et la
+        rémunération des agents des sociétés d'assurance, publiques et privées
+        confondues. Agréée par arrêté du 24 décembre 1975, elle prend effet au
+        1er janvier 1975 et vaut pour « l'ensemble du secteur des Assurances
+        exerçant en Tunisie » ; sa révision est agréée le 23 août 1983, et
+        quinze avenants suivent, de 1989 à 2022. D'abord dite « nationale »,
+        elle est dite « sectorielle » depuis l'avenant n° 7, agréé le 24 mai
+        2007. Sa grille donne un salaire mensuel pour 40 heures par semaine,
+        sur 21 échelles — en 7 catégories, puis en 5 depuis 1983 — et 12
+        échelons d'ancienneté, 14 depuis le 1er juin 1999.
+      synonymes: [convention collective nationale des assurances, convention collective des assurances]
+    ar:
+      terme: الاتفاقية المشتركة القطاعية للتأمين
+      definition: >
+        اتفاقية مشتركة قطاعية تضبط تصنيف وتأجير أعوان شركات التأمين، العمومية
+        منها والخاصة. صودق عليها بقرار مؤرَّخ في 24 ديسمبر 1975، وبدأ العمل بها
+        في غرّة جانفي 1975، وهي تنطبق على كامل قطاع التأمين بالبلاد التونسية؛
+        وصودق على تنقيحها في 23 أوت 1983، وتلاها خمسة عشر ملحقًا تعديليًا من سنة
+        1989 إلى سنة 2022. وكانت تُسمّى «القومية» ثمّ صارت تُسمّى «القطاعية» منذ
+        الملحق التعديلي عدد 7 المصادق عليه في 24 ماي 2007. ويضبط جدول أجورها
+        أجرًا شهريًا لنظام 40 ساعة في الأسبوع، على 21 سلّمًا — في 7 أصناف ثمّ في
+        5 منذ سنة 1983 — و12 درجة أقدمية، صارت 14 منذ غرّة جوان 1999.
+      synonymes: [الاتفاقية المشتركة القومية للتأمين]
 
   - id: remuneration-dirigeants-entreprises-publiques
     acronyme: null
@@ -476,10 +535,10 @@ entries:
       definition: >
         Rémunération des chefs d'établissements et entreprises publics et de
         sociétés à majorité publique, encadrée et plafonnée par voie réglementaire
-        au titre des prérogatives de l'État actionnaire. Le texte en vigueur est le décret n°2015-2217 du
-        11 décembre 2015 fixant les taux des éléments de cette rémunération ; il
-        s'inscrit dans une chaîne réglementaire continue (décrets n°78-885,
-        n°90-1855, n°2014-12). Ce plafonnement constitue le versant « contrôle »
+        au titre des prérogatives de l'État actionnaire. Le décret n°2015-2217 du
+        11 décembre 2015 fixe les taux des éléments de cette rémunération, à la
+        suite des décrets n°78-885 (1978), n°90-1855 (1990) et n°2014-12
+        (2014). Ce plafonnement constitue le versant « contrôle »
         du régime de marché contrôlé, par contraste avec l'autonomie
         conventionnelle de marché des agents.
       synonymes: []
@@ -487,10 +546,10 @@ entries:
       terme: تأجير رؤساء المؤسسات والمنشآت العمومية
       definition: >
         تأجير رؤساء المؤسسات والمنشآت العمومية والشركات ذات الأغلبية العمومية —
-        المضبوط والمسقَّف عن طريق التنظيم بعنوان صلاحيات الدولة المساهمة. والنصّ الساري هو الأمر الحكومي
-        عدد 2015-2217 المؤرّخ في 11 ديسمبر 2015 الذي يضبط نسب عناصر هذا التأجير؛
-        وهو يندرج ضمن سلسلة تنظيمية متّصلة (الأوامر عدد 78-885 وعدد 90-1855 وعدد
-        2014-12). ويشكّل هذا التسقيف الشقَّ «الرقابي» من نظام السوق الموجَّه، في
+        المضبوط والمسقَّف عن طريق التنظيم بعنوان صلاحيات الدولة المساهمة. ويضبط الأمر الحكومي
+        عدد 2015-2217 المؤرّخ في 11 ديسمبر 2015 نسب عناصر هذا التأجير، إثر
+        الأوامر عدد 78-885 (1978) وعدد 90-1855 (1990) وعدد 2014-12
+        (2014). ويشكّل هذا التسقيف الشقَّ «الرقابي» من نظام السوق الموجَّه، في
         مقابل الاستقلالية الاتفاقية السوقية لأعوانها.
       synonymes: []
 
@@ -523,52 +582,63 @@ entries:
   - id: regime-marche-controle
     acronyme: null
     statut: provisoire
-    references: [loi89-9]
-    voir_aussi: [entreprises-publiques, convention-collective-banques, remuneration-dirigeants-entreprises-publiques, regime-conventionnel-public, cnss]
+    references: [loi89-9, cc-banques-2014, cc-assurances-1975, decret2015-2217]
+    voir_aussi: [entreprises-publiques, convention-collective-banques, convention-collective-assurances, remuneration-dirigeants-entreprises-publiques, regime-conventionnel-public, cnss]
     fr:
       terme: Régime de marché contrôlé
       definition: >
         Catégorie d'analyse retenue dans ce précis pour les entreprises publiques
-        financières, documentée principalement pour les banques. Les agents des banques
-        publiques et privées sont couverts par une même convention collective
-        sectorielle ; la rémunération des dirigeants des entreprises publiques relève
-        par ailleurs d'un encadrement réglementaire. Le cas des assurances et des autres
-        institutions financières publiques reste à établir.
+        financières : banques et sociétés d'assurance. La rémunération des agents
+        s'y fixe par la convention collective de leur branche, commune aux
+        établissements publics et privés : celle des banques et établissements
+        financiers, révisée et agréée le 17 février 2014 ; celle des assurances,
+        agréée le 24 décembre 1975 pour le secteur entier, révisée en 1983 et
+        suivie de quinze avenants de 1989 à 2022. La rémunération des dirigeants
+        est, elle, encadrée par décret (décret n°2015-2217 du 11 décembre 2015).
+        La convention des assurances ne nomme aucune société.
       synonymes: []
     ar:
       terme: نظام السوق الموجَّه
       definition: >
-        فئة تحليلية معتمدة في هذا الدليل للمنشآت العمومية المالية، وهي موثقة أساسًا
-        بالنسبة إلى البنوك. ويخضع أعوان البنوك العمومية والخاصة لاتفاقية مشتركة
-        قطاعية واحدة، فيما يخضع تأجير رؤساء المنشآت العمومية لتأطير ترتيبي. ويبقى
-        وضع شركات التأمين وسائر المؤسسات المالية العمومية بحاجة إلى إثبات.
+        فئة تحليلية معتمدة في هذا الملخّص للمنشآت العمومية المالية: البنوك وشركات
+        التأمين. ويُضبَط تأجير الأعوان فيها بالاتفاقية المشتركة لقطاعهم، وهي
+        مشتركة بين المؤسسات العمومية والخاصة: اتفاقية أعوان البنوك والمؤسسات
+        المالية، المنقَّحة والمصادق عليها في 17 فيفري 2014؛ واتفاقية التأمين،
+        المصادق عليها في 24 ديسمبر 1975 للقطاع بأسره، والمنقَّحة سنة 1983
+        والمتبوعة بخمسة عشر ملحقًا تعديليًا من سنة 1989 إلى سنة 2022. أمّا تأجير
+        رؤساء المنشآت فيؤطَّر بأمر (الأمر الحكومي عدد 2015-2217 المؤرّخ في 11
+        ديسمبر 2015). ولا تسمّي اتفاقية التأمين أيّ شركة.
       synonymes: []
 
   - id: point-indice
     acronyme: null
     statut: provisoire
-    references: [decret-2007-268]
+    references: [decret-97-1832, decret-2007-268]
     voir_aussi: [regime-indiciaire, traitement-de-base, grille-des-salaires, chiffre-indiciaire]
     fr:
       terme: Valeur du point d'indice
       definition: >
-        Notion héritée du modèle français de carrière, NON OPÉRANTE en droit
-        positif tunisien actuel. À la différence du système français, aucun
-        texte en vigueur ne publie de « valeur du point » qui, multipliée par
-        un indice, déterminerait le traitement de base : ce sont les grilles
-        annexées aux décrets qui fixent les montants directement en dinars
-        (cf. décret n°2007-268, art. 2 bis). Le terme subsiste dans le
-        vocabulaire et dans certains décrets de classement.
+        Notion héritée du modèle français de carrière, qui n'opère pas en
+        Tunisie depuis le 1er janvier 1998. Jusqu'au 31 décembre 1997, des
+        décrets « fixant le traitement global annuel » tenaient ce rôle, en
+        donnant sa valeur en dinars au chiffre indiciaire de chaque emploi.
+        Depuis, aucun texte ne publie de « valeur du point » qui, appliquée à
+        un indice, déterminerait le traitement de base : la grille annexée au
+        décret n°97-1832 fixe les montants directement en dinars (art. 2 bis,
+        inséré par le décret n°2007-268). Le terme subsiste dans le vocabulaire
+        et dans certains décrets de classement des corps.
       synonymes: [point d'indice]
     ar:
       terme: قيمة النقطة الاستدلالية
       definition: >
-        مفهوم موروث عن النموذج الفرنسي للمسار المهني، غير معمولٍ به في القانون
-        الوضعي التونسي الحالي. فخلافًا للنظام الفرنسي، لا ينشر أيّ نصّ ساري
-        المفعول «قيمةً للنقطة» تُضرب في رقم استدلالي لتحديد المرتب الأساسي: بل
-        إنّ الشبكات المُلحقة بالأوامر هي التي تضبط المبالغ مباشرة بالدينار
-        (انظر الأمر عدد 2007-268، الفصل 2 مكرّر). ولا يزال المصطلح قائمًا في
-        المصطلحات وفي بعض أوامر التصنيف.
+        مفهوم موروث عن النموذج الفرنسي للمسار المهني، غير معمولٍ به في تونس
+        منذ غرّة جانفي 1998. فإلى 31 ديسمبر 1997، كانت أوامر «ضبط المرتّب
+        الجملي السنوي» تقوم بهذا الدور، إذ تحدّد قيمة الرقم القياسي لكلّ خطّة
+        بالدينار. ومنذ ذلك التاريخ، لا ينشر أيّ نصّ «قيمةً للنقطة» تُطبَّق على
+        رقم قياسي لتحديد المرتب الأساسي: فالشبكة المُلحقة بالأمر عدد 97-1832
+        هي التي تضبط المبالغ مباشرة بالدينار (الفصل 2 مكرّر، المُدرَج بالأمر
+        عدد 2007-268). ولا يزال المصطلح قائمًا في المصطلحات وفي بعض أوامر
+        تصنيف الأسلاك.
       synonymes: []
 
   - id: traitement-de-base
@@ -582,21 +652,22 @@ entries:
       terme: Traitement de base
       definition: >
         Part principale de la rémunération d'un agent public du régime
-        indiciaire, avant indemnités et primes. En droit positif tunisien, son
+        indiciaire, avant indemnités et primes. Depuis le 1er janvier 1998, son
         montant mensuel est fixé directement en dinars, pour chaque couple
-        grade × échelon, par les grilles annexées aux décrets (décret
-        n°97-1832, puis décret n°2007-268, art. 2 bis), et non calculé à partir
-        d'une valeur du point d'indice.
+        grade × échelon, par la grille des salaires annexée au décret
+        n°97-1832, et non calculé à partir d'une valeur du point d'indice.
+        Depuis le 1er avril 2007, une partie des indemnités spécifiques de
+        corps y est intégrée (décret n°2007-268, art. 2 bis).
       synonymes: []
     ar:
       terme: المرتب الأساسي
       definition: >
         الجزء الرئيسي من أجر العون العمومي الخاضع للنظام الاستدلالي، قبل المنح
-        والمكافآت. وفي القانون الوضعي التونسي، يُضبَط مبلغه الشهري مباشرة
-        بالدينار، لكلّ ثنائي رتبة × درجة، في الشبكات المُلحقة بالأوامر (الأمر
-        عدد 97-1832 ثمّ الأمر عدد 2007-268، الفصل 2 مكرّر)، ولا يُحتسب انطلاقًا
-        من قيمة نقطة استدلالية.
-      synonymes: [الأجر الأساسي]
+        والمكافآت. ومنذ غرّة جانفي 1998، يُضبَط مبلغه الشهري مباشرة بالدينار،
+        لكلّ ثنائي رتبة × درجة، في شبكة الأجور المُلحقة بالأمر عدد 97-1832،
+        ولا يُحتسب انطلاقًا من قيمة نقطة استدلالية. ومنذ غرّة أفريل 2007، أُدمج
+        فيه جزء من المنح الخصوصية للأسلاك (الأمر عدد 2007-268، الفصل 2 مكرّر).
+      synonymes: []
 
   - id: grade
     acronyme: null
@@ -680,7 +751,10 @@ entries:
         décret n°99-12 du 4 janvier 1999 (modifié), qui répartit les grades en
         quatre catégories A, B, C et D selon le niveau de diplôme exigé au
         recrutement par concours externe ; ce classement sert de support à la
-        grille de traitement de base.
+        grille de traitement de base. La catégorie A étant subdivisée en trois
+        sous-catégories, les grades se rangent en six catégories, de A1 à D ;
+        les augmentations générales des salaires sont fixées selon elles depuis
+        le 1er janvier 2016.
         La catégorie A (art. 2) comprend trois sous-catégories : A1, recrutement
         au niveau du mastère au moins, ou du diplôme national d'ingénieur, ou
         équivalent (les anciens diplômes de troisième cycle — DEA/DESS —
@@ -704,7 +778,9 @@ entries:
         تصنيف هرمي لرتب الوظيفة العمومية يُضبَط بمقتضى الأمر عدد 99-12 المؤرّخ في
         4 جانفي 1999 (المنقَّح)، يوزّع الرتب على أربعة أصناف A وB وC وD حسب مستوى
         الشهادة المطلوبة عند الانتداب عن طريق المناظرة الخارجية؛ ويُتّخذ هذا
-        التصنيف أساسًا لشبكة المرتّب الأساسي.
+        التصنيف أساسًا لشبكة المرتّب الأساسي. ولمّا كان الصنف A مقسَّمًا إلى
+        ثلاثة أصناف فرعية، فإنّ الرتب تتوزّع على ستّة أصناف، من A1 إلى D؛ وتُضبَط
+        الزيادات العامة في الأجور حسبها منذ غرّة جانفي 2016.
         يشمل الصنف A (الفصل 2) ثلاثة أصناف فرعية: A1، الانتداب في مستوى الماجستير
         على الأقلّ، أو الشهادة الوطنية للمهندس، أو ما يعادلها (مع قبول شهادات
         الدراسات العليا في المرحلة الثالثة — الدراسات المعمّقة والدراسات المعمّقة
@@ -731,22 +807,30 @@ entries:
     fr:
       terme: Grille des salaires
       definition: >
-        Barème, annexé aux décrets, fixant directement en dinars le traitement
-        de base mensuel pour chaque couple grade × échelon. En droit positif
-        tunisien, l'article 2 bis du décret n°2007-268 dispose que « la grille
-        des salaires […] est fixée conformément aux annexes ci-jointes » : les
-        montants sont arrêtés en annexes, et non calculés à partir d'un point
-        d'indice.
-      synonymes: [grille indiciaire]
+        Barème annexé au décret n°97-1832 du 16 septembre 1997, qui fixe
+        directement en dinars, depuis le 1er janvier 1998, le traitement de
+        base mensuel pour chaque couple grade × échelon. Elle comprend trois
+        tableaux distincts : fonctionnaires, agents temporaires et ouvriers.
+        Sa composition est celle du 1er avril 2007 : l'article 2 bis, inséré
+        par le décret n°2007-268, y intègre une partie des indemnités
+        spécifiques et dispose que la grille est fixée conformément aux
+        annexes, et non calculée à partir d'un point d'indice. Elle ne se
+        confond pas avec la grille indiciaire en vigueur jusqu'au 31 décembre
+        1997, qui attribuait à chaque emploi un chiffre indiciaire converti en
+        dinars par un décret distinct.
+      synonymes: []
     ar:
       terme: شبكة الأجور
       definition: >
-        سُلَّمٌ مُلحَق بالأوامر، يضبط مباشرة بالدينار المرتبَ الأساسي الشهري
-        لكلّ ثنائي رتبة × درجة. وفي القانون الوضعي التونسي، ينصّ الفصل 2 مكرّر
-        من الأمر عدد 2007-268 على أنّ «شبكة الأجور […] تُضبَط وفقًا للملاحق
-        المصاحبة»: فالمبالغ محدَّدة في الملاحق، لا محتسَبة انطلاقًا من نقطة
-        استدلالية.
-      synonymes: [الشبكة الاستدلالية]
+        سُلَّمٌ مُلحَق بالأمر عدد 97-1832 المؤرّخ في 16 سبتمبر 1997، يضبط مباشرة
+        بالدينار، منذ غرّة جانفي 1998، المرتبَ الأساسي الشهري لكلّ ثنائي رتبة ×
+        درجة. وتتضمّن ثلاثة جداول مستقلّة: الموظفون والأعوان الوقتيون والعملة.
+        وتركيبتها هي تركيبة غرّة أفريل 2007: فالفصل 2 مكرّر، المُدرَج بالأمر
+        عدد 2007-268، يُدمج فيها جزءًا من المنح الخصوصية وينصّ على أنّ الشبكة
+        تُضبَط وفقًا للملاحق، لا محتسَبة انطلاقًا من نقطة استدلالية. ولا تُخلَط
+        بالشبكة الاستدلالية التي كانت سارية إلى 31 ديسمبر 1997، والتي كانت
+        تُسنِد لكلّ خطّة رقمًا قياسيًا يُحوَّل إلى دنانير بأمر مستقلّ.
+      synonymes: []
 
   - id: echelonnement-indiciaire
     acronyme: null
@@ -812,6 +896,76 @@ entries:
       definition: >
         مكوّن مِنَحي من أجر النظام الاستدلالي، يُضاف إلى المرتب الأساسي وإلى
         المنح الخصوصية؛ وكثيرًا ما تكون هذه المكوّنات متنافية فيما بينها.
+      synonymes: []
+
+  - id: augmentation-generale-des-salaires
+    acronyme: null
+    statut: valide
+    references: [decret2016-1, decret-2022-797, decret2026-63, decret91-246, decret2026-64]
+    source_definition: {ref: decret2016-1}
+    source_traduction: {ref: decret-2022-797}
+    voir_aussi: [regime-indiciaire, categorie-de-grade, indemnite-de-gestion-et-d-execution, indemnite-specifique, entreprises-publiques, regime-conventionnel-public]
+    fr:
+      terme: Augmentation générale des salaires
+      definition: >
+        Relèvement de la rémunération des agents publics, négocié par cycles
+        entre l'Union générale tunisienne du travail (UGTT) et le gouvernement
+        et fixé par décret, en dinars par mois et non en pourcentage ; un accord
+        salarial n'a d'effet qu'une fois repris par décret. Dans la fonction
+        publique, de 1993 à 2013, la majoration porte sur l'indemnité propre à
+        chaque corps ; à compter du 1er janvier 2016, l'augmentation est fixée
+        par catégorie, de A1 à D, et pour les ouvriers (décret gouvernemental
+        n°2016-1) ; le programme de 2026 à 2028 est fixé par le décret
+        n°2026-63. Pour les agents des entreprises publiques, un décret
+        approuve, de 1991 à 2013, des augmentations dont il ne publie pas le
+        montant ; le décret n°2026-64 en fixe lui-même le programme et les
+        montants, par corps.
+      synonymes: [augmentation des salaires]
+    ar:
+      terme: الزيادة العامة في الأجور
+      definition: >
+        ترفيع في أجور الأعوان العموميين، يُتفاوَض عليه على دورات بين الاتحاد
+        العام التونسي للشغل والحكومة ويُضبَط بأمر، بالدينار في الشهر لا بنسبة
+        مائوية؛ ولا يكون للاتفاق الأجري أثر إلا بعد إقراره بأمر. ففي الوظيفة
+        العمومية، كان الترفيع من سنة 1993 إلى سنة 2013 يُجرى على المنحة الخاصّة
+        بكلّ سلك؛ وابتداءً من غرّة جانفي 2016، تُضبَط الزيادة حسب الصنف، من A1
+        إلى D، وللعملة (الأمر الحكومي عدد 2016-1)؛ ويضبط الأمر عدد 2026-63
+        برنامج سنوات 2026 و2027 و2028. أمّا أعوان المنشآت العمومية، فقد كان أمرٌ
+        يصادق، من سنة 1991 إلى سنة 2013، على زيادات لا ينشر مقاديرها؛ ثمّ ضبط
+        الأمر عدد 2026-64 بنفسه برنامجها ومقاديرها حسب السلك.
+      synonymes: [الزيادة في الأجور]
+
+  # Terme arabe relevé sur l'intitulé arabe du décret n°2011-2281 du 21 septembre
+  # 2011 (jort_cache.db) ; ce décret n'a pas de clé : pas de source_traduction, et
+  # l'entrée reste provisoire.
+  - id: indemnite-de-gestion-et-d-execution
+    acronyme: null
+    statut: provisoire
+    references: [decret93-2062, decret2012-2959]
+    source_definition: {ref: decret93-2062}
+    voir_aussi: [augmentation-generale-des-salaires, indemnite-specifique, regime-indiciaire]
+    fr:
+      terme: Indemnité de gestion et d'exécution
+      definition: >
+        Indemnité du corps administratif commun et des grades équivalents de la
+        fonction publique, instituée par le décret n°82-505 du 16 mars 1982. De
+        1993 à 2013, les augmentations des salaires de ses bénéficiaires prennent
+        la forme d'une majoration de cette indemnité : par cycles de trois ans
+        de 1993 à 2010, chaque tranche prenant effet au 1er juillet ; puis par
+        deux tranches de 35 dinars, au 1er juillet 2012 et au 1er janvier 2013
+        (décret n°2012-2959). Les autres corps reçoivent leur majoration sur
+        leur indemnité propre, par des décrets parallèles.
+      synonymes: []
+    ar:
+      terme: منحة التصرف والتنفيذ
+      definition: >
+        منحة السلك الإداري المشترك والرتب المماثلة في الوظيفة العمومية، أُحدثت
+        بالأمر عدد 82-505 المؤرّخ في 16 مارس 1982. ومن سنة 1993 إلى سنة 2013،
+        اتّخذت الزيادات في أجور المنتفعين بها شكل ترفيع في هذه المنحة: على
+        دورات بثلاث سنوات من 1993 إلى 2010، يبدأ مفعول كلّ قسط منها في غرّة
+        جويلية؛ ثمّ بقسطين بـ35 دينارًا في غرّة جويلية 2012 وغرّة جانفي 2013
+        (الأمر عدد 2012-2959). أمّا بقية الأسلاك فيُرفَّع لها في منحها الخاصّة
+        بأوامر موازية.
       synonymes: []
 
   - id: retenue-a-la-source
@@ -1286,21 +1440,23 @@ entries:
       terme: Chiffre indiciaire
       definition: >
         Nombre affecté à chaque emploi ou grade dans le système de rémunération
-        en vigueur avant 1998, et à partir duquel le traitement était calculé.
-        Les décrets de « classement hiérarchique et échelonnement indiciaire »
-        attribuaient l'indice, tandis que des décrets « fixant le traitement
-        global annuel » lui donnaient sa valeur en dinars. Ce mécanisme de
-        conversion a disparu avec le décret n°97-1832, sans que le régime cesse
-        d'être appelé « indiciaire ».
+        en vigueur jusqu'au 31 décembre 1997, et à partir duquel le traitement
+        était calculé. Les décrets de « classement hiérarchique et
+        échelonnement indiciaire » attribuaient l'indice, tandis que des décrets
+        « fixant le traitement global annuel » lui donnaient sa valeur en
+        dinars. Ce mécanisme de conversion disparaît au 1er janvier 1998, avec
+        la grille en dinars du décret n°97-1832, sans que le régime cesse d'être
+        appelé « indiciaire ».
       synonymes: [indice]
     ar:
       terme: الرقم القياسي
       definition: >
-        عددٌ يُسنَد إلى كلّ خطّة أو رتبة في نظام التأجير الذي كان ساريًا قبل
-        سنة 1998، ويُحتسَب على أساسه المرتّب. فأوامر «التصنيف الهرمي والتدرّج
-        القياسي» كانت تُسنِد الرقم، في حين أنّ أوامر «ضبط المرتّب الجملي
-        السنوي» كانت تحدّد قيمته بالدينار. وقد زالت آليّة التحويل هذه بمقتضى
-        الأمر عدد 97-1832، دون أن يكفّ النظام عن تسميته «استدلاليًّا».
+        عددٌ يُسنَد إلى كلّ خطّة أو رتبة في نظام التأجير الذي كان ساريًا إلى
+        31 ديسمبر 1997، ويُحتسَب على أساسه المرتّب. فأوامر «التصنيف الهرمي
+        والتدرّج القياسي» كانت تُسنِد الرقم، في حين أنّ أوامر «ضبط المرتّب
+        الجملي السنوي» كانت تحدّد قيمته بالدينار. وقد زالت آليّة التحويل هذه في
+        غرّة جانفي 1998، بالشبكة المحرَّرة بالدينار الملحقة بالأمر عدد 97-1832،
+        دون أن يكفّ النظام عن تسميته «استدلاليًّا».
       synonymes: []
 
   - id: indemnite-compensatrice

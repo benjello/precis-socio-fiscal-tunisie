@@ -1,12 +1,12 @@
 # Le régime indiciaire {#sec-regime-indiciaire .domicile-unique}
 
-Le [régime indiciaire](#g-regime-indiciaire) est le régime de rémunération des agents de l'État, des collectivités locales et des établissements publics à caractère administratif. Un [grade](#g-grade) et un [échelon](#g-echelon) y donnent un **traitement de base mensuel fixé en dinars**, complété d'indemnités et de primes, et relevé par des augmentations générales elles aussi fixées en dinars.
+Le [régime indiciaire](#g-regime-indiciaire) est le régime de rémunération des agents de l'État, des collectivités locales et des [établissements publics à caractère administratif](#g-epa). Un [grade](#g-grade) et un [échelon](#g-echelon) y donnent un **traitement de base mensuel fixé en dinars**, complété d'indemnités et de primes, et relevé par des [augmentations générales](#g-augmentation-generale-des-salaires) elles aussi fixées en dinars.
 
 ## Vue d'ensemble {#sec-ri-vue-ensemble}
 
 **Qui en relève.** Trois **sous-secteurs juridiques**, tous régis par le [statut général de 1983](#r-ri-statut-1983) : la fonction publique de l'État, les collectivités locales et les établissements publics à caractère administratif (@sec-ri-champ).
 
-**Un nom hérité.** Le régime est l'héritier direct du modèle français de carrière. Son nom vient du mécanisme en vigueur jusqu'au 31 décembre 1997 : un chiffre indiciaire attaché à l'emploi, converti en dinars par un décret distinct (@sec-ancien-systeme-indiciaire). Depuis le 1^er^ janvier 1998, aucune « valeur du point » n'opère : les grilles annexées aux décrets fixent directement les montants. Le point d'indice ne subsiste que dans le vocabulaire et dans certains décrets de classement des corps.
+**Un nom hérité.** Le régime est l'héritier direct du modèle français de carrière. Son nom vient du mécanisme en vigueur jusqu'au 31 décembre 1997 : un chiffre indiciaire attaché à l'emploi, converti en dinars par un décret distinct (@sec-ancien-systeme-indiciaire). Depuis le 1^er^ janvier 1998, aucune [« valeur du point »](#g-point-indice) n'opère : les grilles annexées aux décrets fixent directement les montants. Le point d'indice ne subsiste que dans le vocabulaire et dans certains décrets de classement des corps.
 
 **Trois textes en fixent la structure** : le statut général de 1983 et deux réformes de la grille, en 1998 et en 2007.
 
@@ -34,7 +34,7 @@ Relèvent du régime indiciaire les agents que désigne l'[article premier du st
 
 ### L'État {#sec-ri-etat}
 
-La fonction publique de l'État est le premier des trois sous-secteurs. Le statut général y est décliné, corps par corps, par des statuts particuliers pris par décret, qui précisent les conditions de recrutement, d'avancement et les obligations propres à chaque corps.
+La fonction publique de l'État est le premier des trois sous-secteurs. Le statut général y est décliné, corps par corps, par des [statuts particuliers](#g-statut-particulier) pris par décret, qui précisent les conditions de recrutement, d'avancement et les obligations propres à chaque corps.
 
 ### Les collectivités locales {#sec-ri-collectivites}
 
@@ -165,7 +165,7 @@ La seconde est la **légalité de la rémunération** : fixée par décret, elle
 
 ### Le traitement de base : une grille en dinars {#sec-ri-traitement-base}
 
-À chaque couple **grade × échelon** correspond un **[traitement de base](#g-traitement-de-base) mensuel libellé directement en dinars**, lu sur la grille des salaires annexée au [décret du 16 septembre 1997](#r-ri-c-grille). La grille couvre plusieurs centaines de grades, chacun déployé sur ses échelons d'ancienneté, en **trois tableaux distincts** — fonctionnaires, agents temporaires et ouvriers ([article 2 bis](#r-ri-c-2bis)).
+À chaque couple **grade × échelon** correspond un **[traitement de base](#g-traitement-de-base) mensuel libellé directement en dinars**, lu sur la [grille des salaires](#g-grille-des-salaires) annexée au [décret du 16 septembre 1997](#r-ri-c-grille). La grille couvre plusieurs centaines de grades, chacun déployé sur ses échelons d'ancienneté, en **trois tableaux distincts** — fonctionnaires, agents temporaires et ouvriers ([article 2 bis](#r-ri-c-2bis)).
 
 Aucun indice n'entre dans ce calcul : aucun texte en vigueur ne publie de « valeur du point » qui, appliquée à un indice, déterminerait le traitement. Le régime doit son nom au mécanisme en vigueur jusqu'au 31 décembre 1997, où un chiffre indiciaire était converti en dinars (@sec-ancien-systeme-indiciaire).
 
@@ -188,7 +188,7 @@ Le **reclassement** consécutif à une promotion est régi par une règle protec
 
 Les augmentations générales des salaires, servies par corps sur une indemnité puis par catégorie, ont leur section : @sec-cycles-revalorisation.
 
-Au traitement de base s'ajoute un ensemble indemnitaire dont l'architecture combine principalement : des **indemnités spécifiques** propres à chaque corps, une **prime de rendement** et des **indemnités de sujétions**. Ces composantes sont souvent exclusives les unes des autres. Depuis le 1^er^ avril 2007, une fraction des indemnités spécifiques est intégrée au traitement de base (@sec-ri-reforme-2007).
+Au traitement de base s'ajoute un ensemble indemnitaire dont l'architecture combine principalement : des **[indemnités spécifiques](#g-indemnite-specifique)** propres à chaque corps, une **[prime de rendement](#g-prime-de-rendement)** et des **indemnités de sujétions**. Ces composantes sont souvent exclusives les unes des autres. Depuis le 1^er^ avril 2007, une fraction des indemnités spécifiques est intégrée au traitement de base (@sec-ri-reforme-2007).
 
 Aucune indemnité n'est accordée sans décret (@sec-ri-droit-remuneration). Aucun décret instituant et chiffrant une **indemnité de résidence** commune à tous les corps (taux, zones géographiques) n'est identifié ici. Le régime n'a donc, en l'état des textes identifiés, pas d'indemnité de résidence générale comparable à celle du modèle français de carrière.
 
@@ -330,7 +330,7 @@ Jusqu'au 31 décembre 1997, la rémunération de base des agents publics est cal
 
 Le mécanisme comporte deux étages.
 
-- **Le classement des emplois.** Des décrets « relatifs au **classement hiérarchique et à l'échelonnement indiciaire** » attribuent à chaque grade son indice, corps par corps. Cette série remonte au moins au [décret n°60-328 du 17 septembre 1960](#r-ri-a-1960) et se poursuit pendant plus de trente ans.
+- **Le classement des emplois.** Des décrets « relatifs au **[classement hiérarchique et à l'échelonnement indiciaire](#g-echelonnement-indiciaire)** » attribuent à chaque grade son indice, corps par corps. Cette série remonte au moins au [décret n°60-328 du 17 septembre 1960](#r-ri-a-1960) et se poursuit pendant plus de trente ans.
 - **La valeur de l'indice en dinars.** Ce rôle — celui de la « valeur du point » dans le modèle français — est tenu par des décrets « fixant le **traitement global annuel** », périodiquement revalorisés : six sont connus, de [1975](#r-ri-a-1975) à 1980.
 
 C'est cet instrument de conversion, et non la notion d'indice, qui disparaît au 1^er^ janvier 1998. Le dispositif couvre trois populations, dotées chacune de sa propre chaîne de textes — partition qui explique la structure des grilles postérieures :
@@ -497,7 +497,7 @@ figtools.figure_tabs(
 
 #### De 1993 à 2013 : la majoration de l'indemnité de chaque corps {#sec-ri-augmentations-ige}
 
-Avant 2015, les augmentations sont accordées par corps, sur l'indemnité propre à chacun. Elles se lisent ici dans l'**indemnité de gestion et d'exécution**, celle du corps administratif commun et des grades équivalents. De 1993 à 2010, les cycles durent trois ans : le décret qui ouvre un cycle fixe le montant global de la majoration et en alloue la première tranche ; un décret annuel sert chacune des deux suivantes. Le [décret n°93-2062](#r-ri-ige-1993) fixe à lui seul les trois tranches de 1993-1995 ; le schéma vaut ensuite pour [1996-1998](#r-ri-ige-1996), [1999-2001](#r-ri-ige-1999), [2002-2004](#r-ri-ige-2002), [2005-2007](#r-ri-ige-2005) et [2008-2010](#r-ri-ige-2008) (@tbl-augmentations-ige). Chaque tranche prend effet au 1^er^ juillet, quelle que soit la date de signature du décret : celui du 30 décembre 2008 alloue la première tranche « à compter du 1^er^ juillet 2008 ».
+Avant 2015, les augmentations sont accordées par corps, sur l'indemnité propre à chacun. Elles se lisent ici dans l'**[indemnité de gestion et d'exécution](#g-indemnite-de-gestion-et-d-execution)**, celle du corps administratif commun et des grades équivalents. De 1993 à 2010, les cycles durent trois ans : le décret qui ouvre un cycle fixe le montant global de la majoration et en alloue la première tranche ; un décret annuel sert chacune des deux suivantes. Le [décret n°93-2062](#r-ri-ige-1993) fixe à lui seul les trois tranches de 1993-1995 ; le schéma vaut ensuite pour [1996-1998](#r-ri-ige-1996), [1999-2001](#r-ri-ige-1999), [2002-2004](#r-ri-ige-2002), [2005-2007](#r-ri-ige-2005) et [2008-2010](#r-ri-ige-2008) (@tbl-augmentations-ige). Chaque tranche prend effet au 1^er^ juillet, quelle que soit la date de signature du décret : celui du 30 décembre 2008 alloue la première tranche « à compter du 1^er^ juillet 2008 ».
 
 : Cycles de majoration de l'indemnité de gestion et d'exécution, 1993-2013. Chaque décret est désigné par sa forme abrégée ; son intitulé officiel complet apparaît au survol. {#tbl-augmentations-ige}
 
