@@ -33,7 +33,7 @@ Le salaire minimum est le montant au-dessous duquel un salarié ne peut être pa
 
 **Deux régimes horaires.** Le SMIG est fixé pour deux régimes de durée du travail, 48 heures et 40 heures par semaine. Jusqu'en mars 1981, son taux horaire est le même dans les deux ; depuis le 1^er^ avril 1981, le salarié du régime de 40 heures est mieux payé à l'heure, et moins au mois (@sec-mt-regimes-horaires).
 
-**Son évolution.** En dinars de 2024, le SMIG mensuel du régime de 48 heures vaut 413 dinars en 1962, 765 dinars à son plus haut en 1983 et 481 dinars en 2024 ; avant 1974, la figure porte aussi le minimum de la seconde zone et l'indemnité de cherté de vie (@fig-mt-sm-evolution).
+**Son évolution.** En dinars de 2024, le SMIG mensuel du régime de 48 heures vaut 413 dinars en 1962, 765 dinars à son plus haut en 1983 et 481 dinars en 2024 ; avant 1974, la figure porte aussi le minimum de la seconde zone et l'[indemnité de cherté de vie](#g-indemnite-cherte-de-vie) (@fig-mt-sm-evolution).
 
 ```{python}
 #| label: fig-mt-sm-evolution
@@ -186,9 +186,8 @@ Depuis 2024, un même décret fixe le salaire minimum à plusieurs dates success
 
 Un tiret dans la colonne « Effet » signale un texte dont la date d'effet n'est pas établie ici ; la date qui suit son numéro est celle du texte.
 
-<!-- TODO (bibliographe) : le décret n° 2024-420 du 9 juillet 2024, qui fixe les deux paliers du SMAG
-de 2024 et de 2025 (note docs/notes/marche-travail-smig-smag.md, § 1.6), n'a pas de clé dans
-`references.json` ; le tableau engendré du SMAG le cite par un lien brut. -->
+<!-- TODO (rédacteur) : le tableau engendré du SMAG cite le décret n° 2024-420 par un lien brut ;
+la clé `decret2024-420` existe depuis le 8 octobre 2026 : à faire citer par le générateur. -->
 
 ::::
 

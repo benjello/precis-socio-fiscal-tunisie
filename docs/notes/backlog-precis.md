@@ -1145,9 +1145,14 @@ en donnait trois.
   (SMIG des deux régimes et SMAG, dont les paliers de 2026, 2027 et 2028), par `tableau_a_la_date`
   (TODO rédacteur dans `_salaire_minimum.qmd`, `#sec-mt-montants`) ; il demande un snapshot
   nouveau dans `tables/`.
-- **Salaire minimum — clé manquante** : le décret n° 2024-420 du 9 juillet 2024 (SMAG, paliers de
-  2024 et de 2025 ; JORT n° 85 de 2024, au corpus) n'a pas de clé dans `references.json` ; le
-  tableau engendré le cite par un lien brut (TODO bibliographe dans `_salaire_minimum.qmd`).
+- **Salaire minimum — tableau du SMAG** : la clé `decret2024-420` est versée (8 octobre 2026) ; le
+  tableau engendré cite encore ce décret par un lien brut : à faire citer par le générateur.
+- **Glossaire — indemnité complémentaire provisoire** : le terme arabe est désormais celui du
+  décret n° 81-437 (المنحة الإضافية المؤقتة). La même expression française nomme un élément de
+  rémunération publique des décrets de 1982, que les chapitres arabes rendent par
+  منحة تكميلية وقتية : deux entrées ou un qualificatif, à trancher avant la reprise de la
+  traduction. Terme arabe de l'indemnité de cherté de vie (décret n° 71-164) à fixer par un
+  arabophone.
 - **Salaire minimum — dates d'effet non établies** : loi n° 66-27, décret n° 73-247, décret
   n° 74-493, loi n° 96-62 et article 15 de la loi de finances pour 2026 figurent aux registres
   sans date d'effet (tiret) ; textes lus, date d'exécution à calculer par le documentaliste.
@@ -1287,8 +1292,14 @@ en donnait trois.
 - **Code du travail de 1966** : fascicules n° 20-22 de 1966 sans couche texte (OCR requis pour
   citer les art. 31-52 mot pour mot) ; rectificatif du n° 27/1966 non lu.
 - **Socle du SMAG avant 1974** : arrêté et décret du 30 avril 1956 (JORT n° 35/1956) non lus.
-- **Salaires effectifs du secteur privé** et part des salariés au SMIG : aucune série réunie
-  (`tunisia-data`) ; TODO rédacteur dans `_salaire_minimum.qmd` (`#sec-mt-longue-periode`).
+- **Salaires effectifs du secteur privé** et part des salariés au SMIG : note documentaire
+  `docs/notes/marche-travail-salaires-effectifs-prive.md` (8 octobre 2026). Un niveau existe déjà
+  dans `tunisia-data` : salaire annuel moyen déclaré à la CNSS, 1970-2018 (deux annuaires, quatre
+  ruptures à ne pas chaîner : 1981, 1988, 2003, millésimes de 2000-2006) ; le rapport au SMIG se
+  trace sur cette période. Restent à faire : la série et sa fiche dans `tunisia-data`, la figure
+  et la section de `_longue_periode.qmd` ; à collecter : tout niveau après 2018, la part au SMIG
+  sur un champ propre (pyramide de la CNSS 2011-2018 et enquêtes de l'INS déjà téléchargées, non
+  extraites).
 - **Glossaire** : dix notions neuves en `provisoire` — termes arabes à confirmer sur le *Journal
   officiel* arabe (الأجر التعاقدي, الاتفاقية المشتركة الإطارية, المصادقة على الاتفاقية المشتركة,
   المنحة التكميلية الوقتية, الأجر الخام/الصافي, التشغيل غير المنظّم).
