@@ -776,6 +776,24 @@ liste qui suit le tableau, citations comprises. Restent :
   - **Banque mondiale, transferts aux entreprises publiques (8,9 % et 7,5 % du PIB)** : ni page,
     ni base du PIB, ni méthode de l'évaluation au chapitre ; revue des dépenses publiques de
     2020 à relire ;
+  - **sociétés d'assurance — fait le 8 octobre 2026** (`#sec-marche-controle-assurances`, note
+    `docs/notes/remunerations-convention-collective-assurances.md`) : champ, classification,
+    bas et haut de la grille de 1975 à 2021 face au SMIG, chaîne des quinze avenants, dix-sept
+    clés `cc-assurances-*` (FR et AR), fiche `r-cc-assurances-avenant-16`. Restent :
+    liste des assureurs à capital public (le rapport sur les entreprises publiques n'en nomme
+    aucun ; rapports du Comité général des assurances, de la FTUSA et des participations de
+    l'État **à obtenir** ; pas de fiche de recherche) ; grille du 1er juin 2014 (avenant n° 11),
+    annoncée et **non imprimée** — rectificatif à chercher dans les fascicules arabes de 2015,
+    **lisibles** ; grilles entières (28, pages identifiées, **lecture à l'image**) pour le
+    versement en paramètres ; valeurs à confirmer de 1989, 1990 et 1991 (éditions arabes au
+    corpus, non ouvertes) et hauts de 2018 et 2019 (calculés) ; protocole du 8 juin 1984,
+    probablement non publié ; dates de signature contradictoires au *Journal officiel*
+    (convention révisée : 10 novembre 1982 ou 13 avril 1983 ; avenants n° 1, 7 et 9) ;
+    « révision du 24 juillet 1997 » visée par cinq arrêtés (fiche `r-cc-assurances-revision-1997`
+    proposée par la note, non versée faute d'ancre au chapitre) ; édition de la loi de finances
+    pour 2022 du rapport sur les entreprises publiques sans clé ; intitulés arabes des
+    dix-sept entrées à relever ; montants en dinars constants ; articulation avec le décret
+    n° 2026-68 ;
   - **marché contrôlé** : aucune rupture datée ; les dates de 1967, 1975, 1978, 2001, 2014
     (décret n° 2014-12) et 2022 reposent sur des textes non versés à la bibliographie.
 - **Augmentations générales (5 octobre 2026)** : les tranches de l'indemnité de gestion et

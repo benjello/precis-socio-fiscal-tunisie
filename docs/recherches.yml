@@ -1800,3 +1800,23 @@
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
   a_faire: [plein texte des fascicules non parcouru]
+
+- id: r-cc-assurances-avenant-16
+  objet: avenant n° 16 (ou tout avenant postérieur au n° 15 du 22 août 2022) à la convention collective sectorielle des assurances, et son arrêté d'agrément
+  ou: [precis/fr/remunerations_publiques/_regime_marche_controle.qmd#sec-marche-controle-assurances]
+  requetes:
+    titres_fts: [avenant AND assurances AND collective]
+    titres_like:
+    - titre like '%convention collective%' and titre like '%assuranc%'
+    - titre like '%للتأمين%' and (titre like '%المشتركة%' or titre like '%الملحق%')
+    - date_publication >= '2022-11-01' and (titre like '%convention collective sectorielle%' or titre like '%المشتركة القطاعية%')
+    plein_texte:
+    - القطاعية للتأمين (couche texte normalisée NFKC, espaces réduits, sens direct et inversé), fascicules arabes du corpus local
+    depuis: 2022-10-28
+  passes:
+  - date: 2026-10-08
+    role: documentaliste
+    sources: [jort_cache, corpus_local, web]
+    couverture: 'titres de jort_cache jusqu''au n° 97 du 2 octobre 2026 ; plein texte des 581 fascicules arabes du corpus du n° 116/2022 au n° 97/2026 (2022 : 26 ; 2023 : 146 ; 2024 : 158 ; 2025 : 156 ; 2026 : 95) — la requête retrouve bien l''avenant n° 15 au n° 116/2022, seul résultat ; fascicules arabes absents du corpus, donc non parcourus : n° 130 et 132 de 2022, n° 45, 122 et 146 de 2023, n° 9 de 2024, n° 3 et 58 de 2026 (2025 complet jusqu''au n° 156 ; derniers numéros présents : 143, 149, 159, 156, 97) ; cinq fascicules à couche texte très courte non contrôlés à l''image (Ja0842024, Ja1252024, Ja0372025, Ja0672025, Ja0702025) ; grilles et pages numérisées sans couche texte hors d''atteinte de la requête ; page du tiers paie-tunisie.com (8 octobre 2026) : dernier document proposé = avenant n° 15'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
