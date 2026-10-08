@@ -113,7 +113,8 @@ def _ipc():
 def _serie_reelle(rangs, categorie, ipc):
     """(date, cumul en dinars constants de 2015) — les années sans indice sont ÉCARTÉES.
 
-    L'indice s'arrête en 2024 : les tranches programmées jusqu'en 2028 n'ont pas de prix,
+    L'indice s'arrête à sa dernière année publiée (2025 au 8 octobre 2026) : les tranches
+    programmées au-delà, jusqu'en 2028, n'ont pas de prix,
     et il n'est pas question d'en supposer. La courbe réelle s'arrête donc avant la
     nominale, et c'est un fait à montrer, non un trou à combler.
     """
@@ -136,9 +137,10 @@ def table_reel():
 def fig_augmentations_reel():
     """Le cumul déflaté — ce que la courbe nominale ne peut pas dire.
 
-    En dinars courants le cumul ne fait que monter. Déflaté, il PLAFONNE puis RECULE :
-    pour A1, 423,6 D constants en octobre 2022 puis 418,6 D en janvier 2024, alors que le
-    cumul nominal passe de 640 à 740 D. L'inflation a mangé davantage que la tranche.
+    En dinars courants le cumul ne fait que monter. Déflaté, il RECULE entre deux tranches
+    puis REMONTE : pour A1, 423,6 D constants en octobre 2022, 418,6 D en janvier 2024 —
+    alors que le cumul nominal passe de 640 à 740 D —, puis 450,9 D en janvier 2025 (840 D
+    en nominal).
     """
     figtools.apply_lang_font()
     ft = figtools.fig_text

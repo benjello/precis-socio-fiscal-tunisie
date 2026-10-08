@@ -33,7 +33,7 @@ Le salaire minimum est le montant au-dessous duquel un salarié ne peut être pa
 
 **Deux régimes horaires.** Le SMIG est fixé pour deux régimes de durée du travail, 48 heures et 40 heures par semaine. Jusqu'en mars 1981, son taux horaire est le même dans les deux ; depuis le 1^er^ avril 1981, le salarié du régime de 40 heures est mieux payé à l'heure, et moins au mois (@sec-mt-regimes-horaires).
 
-**Son évolution.** En dinars de 2024, le SMIG mensuel du régime de 48 heures vaut 413 dinars en 1962, 765 dinars à son plus haut en 1983 et 481 dinars en 2024 ; avant 1974, la figure porte aussi le minimum de la seconde zone et l'[indemnité de cherté de vie](#g-indemnite-cherte-de-vie) (@fig-mt-sm-evolution).
+**Son évolution.** En dinars de 2025, le SMIG mensuel du régime de 48 heures vaut 435 dinars en 1962, 806 dinars à son plus haut en 1983 et 528 dinars en 2025 ; avant 1974, la figure porte aussi le minimum de la seconde zone et l'[indemnité de cherté de vie](#g-indemnite-cherte-de-vie) (@fig-mt-sm-evolution).
 
 ```{python}
 #| label: fig-mt-sm-evolution
@@ -46,23 +46,24 @@ figtools.figure_tabs(
     mt.vues_evolution(), mt.table_reel(), "marche-travail-smig-smag", "ipc-longue-periode",
     "bct-ipc-base2015",
     slug="fig_mt_sm_evolution",
-    caption=("Salaire minimum mensuel, en dinars courants (1961-2028) et en dinars de 2024 "
-             "(1962-2024) : minima par zone, SMIG des régimes de 48 et de 40 heures, SMAG "
+    caption=("Salaire minimum mensuel, en dinars courants (1961-2028) et en dinars de 2025 "
+             "(1962-2025) : minima par zone, SMIG des régimes de 48 et de 40 heures, SMAG "
              "rapporté à vingt-six journées"),
     note_lecture=(
         "En dinars courants, chaque marche est une date d'effet ; les paliers de 2027 et de "
-        "2028 sont déjà fixés. En dinars de 2024, chaque point est la moyenne des montants en "
+        "2028 sont déjà fixés. En dinars de 2025, chaque point est la moyenne des montants en "
         "vigueur au premier jour des douze mois de l'année, multipliée par le rapport de "
-        "l'indice des prix à la consommation de 2024 à celui de l'année ; la série s'arrête à "
-        "la dernière année dont l'indice est publié. Avant le 1er mai 1968, le trait plein "
+        "l'indice des prix à la consommation de 2025 à celui de l'année ; 2025 est la dernière "
+        "année dont l'indice est publié. Avant le 1er mai 1968, le trait plein "
         "est le minimum de la première zone et le pointillé bleu celui de la seconde ; de "
         "1971 à 1973, le trait violet ajoute au minimum l'indemnité de cherté de vie. Avant "
         "1974, les montants mensuels sont le minimum horaire rapporté à 208 heures, et le "
         "minimum agricole journalier à vingt-six journées. L'indice des prix raccorde, en "
         "1970, l'indice du coût de la vie de la Banque centrale (1962-1975) et l'indice des "
         "prix à la consommation familiale de l'INS (1976-2023), lu dans ses annuaires "
-        "statistiques ; l'année 2024, que le dernier annuaire ne porte pas, prolonge la série "
-        "par la variation de l'indice en base 2015 que relaie la Banque centrale. L'échelle "
+        "statistiques ; les années 2024 et 2025, que le dernier annuaire ne porte pas, "
+        "prolongent la série par la variation de l'indice en base 2015 que publie la Banque "
+        "centrale. L'échelle "
         "logarithmique montre les rythmes de hausse : une pente égale est une hausse égale "
         "en pourcentage."),
 )
@@ -292,12 +293,12 @@ Le minimum horaire de 1961, 76 millimes, représente 15,808 dinars sur 208 heure
 
 ### Le SMIG en dinars constants {#sec-mt-lp-reel}
 
-Déflaté par l'indice des prix à la consommation, le SMIG du régime de 48 heures, en moyenne annuelle et en dinars de 2024, connaît quatre phases (@fig-mt-sm-evolution, vue « Dinars de 2024 »).
+Déflaté par l'indice des prix à la consommation, le SMIG du régime de 48 heures, en moyenne annuelle et en dinars de 2025, connaît quatre phases (@fig-mt-sm-evolution, vue « Dinars de 2025 »).
 
-- **De 1962 à 1973, il recule**, de 413 à 307 dinars de 2024 : le minimum horaire n'est relevé qu'une fois, en 1966. Dans la seconde zone, supprimée en 1968, il vaut 326 dinars en 1962. L'indemnité de cherté de vie servie à partir de 1971 s'y ajoute sans le modifier : avec elle, le salarié au minimum touche 380 dinars en 1973.
-- **De 1974 à 1983, il progresse** : l'institution du SMIG le porte à 456 dinars en 1974, et les hausses de 1977 à 1983 à son plus haut, 765 dinars en 1983.
-- **De 1984 à 1991, il recule** à 543 dinars, faute de hausse entre le 1er janvier 1983 et le 1er juillet 1986, puis de hausses inférieures aux prix.
-- **De 1992 à 2017, il se maintient** entre 555 et 618 dinars ; **depuis 2018, il recule de nouveau**, jusqu'à 481 dinars en 2024, son niveau le plus bas depuis 1976.
+- **De 1962 à 1973, il recule**, de 435 à 323 dinars de 2025 : le minimum horaire n'est relevé qu'une fois, en 1966. Dans la seconde zone, supprimée en 1968, il vaut 344 dinars en 1962. L'indemnité de cherté de vie servie à partir de 1971 s'y ajoute sans le modifier : avec elle, le salarié au minimum touche 400 dinars en 1973.
+- **De 1974 à 1983, il progresse** : l'institution du SMIG le porte à 481 dinars en 1974, et les hausses de 1977 à 1983 à son plus haut, 806 dinars en 1983.
+- **De 1984 à 1991, il recule** à 572 dinars, faute de hausse entre le 1er janvier 1983 et le 1er juillet 1986, puis de hausses inférieures aux prix.
+- **De 1992 à 2017, il se maintient** entre 585 et 651 dinars ; **de 2018 à 2024, il recule de nouveau**, jusqu'à 507 dinars en 2024, son niveau le plus bas depuis 1976 ; il remonte à 528 dinars en 2025.
 
 ### Les deux régimes et le SMAG {#sec-mt-lp-rapports}
 
@@ -364,12 +365,12 @@ postérieur ; voies essayées dans la note docs/notes/marche-travail-salaires-ef
 
 ### Le pouvoir d'achat du salaire moyen et celui du SMIG {#sec-mt-sp-pouvoir-achat}
 
-Le salaire mensuel moyen déclaré et le SMIG du régime de 48 heures se comparent en dinars de 2024 de 1970 à 2018, puis en indices avec les prix depuis 2001 (@fig-mt-sp-pouvoir-achat). Le salaire moyen se lit par segments, sans raccord.
+Le salaire mensuel moyen déclaré et le SMIG du régime de 48 heures se comparent en dinars de 2025 de 1970 à 2018, puis en indices avec les prix depuis 2001 (@fig-mt-sp-pouvoir-achat). Le salaire moyen se lit par segments, sans raccord.
 
-- **De 1970 à 1980, le pouvoir d'achat du salaire moyen et celui du SMIG augmentent** : le salaire mensuel moyen déclaré passe de 609 à 933 dinars de 2024, le SMIG de 347 à 582 dinars, indemnité de cherté de vie comprise à partir de 1974.
-- **De 1988 à 1999, le salaire moyen progresse et le SMIG recule** : de 903 à 1 040 dinars pour le premier, de 609 à 578 dinars pour le second.
-- **De 2004 à 2018, l'écart se creuse** : le salaire moyen déclaré passe de 1 031 à 1 457 dinars, le SMIG de 608 à 561 dinars.
-- **Depuis 2001, le pouvoir d'achat du SMIG se maintient jusqu'en 2016, puis recule.** Rapporté à l'indice des prix, base 100 en 2001, l'indice du SMIG vaut 100 en 2016 et 81 en 2024. Celui du salaire des salariés suivis par l'INS atteint 129 en 2017 et revient à 116 en 2024.
+- **De 1970 à 1980, le pouvoir d'achat du salaire moyen et celui du SMIG augmentent** : le salaire mensuel moyen déclaré passe de 642 à 983 dinars de 2025, le SMIG de 366 à 613 dinars, indemnité de cherté de vie comprise à partir de 1974.
+- **De 1988 à 1999, le salaire moyen progresse et le SMIG recule** : de 952 à 1 095 dinars pour le premier, de 642 à 609 dinars pour le second.
+- **De 2004 à 2018, l'écart se creuse** : le salaire moyen déclaré passe de 1 087 à 1 535 dinars, le SMIG de 641 à 591 dinars.
+- **Depuis 2001, le pouvoir d'achat du SMIG se maintient jusqu'en 2016, recule jusqu'en 2024, puis remonte en 2025.** Rapporté à l'indice des prix, base 100 en 2001, l'indice du SMIG vaut 100 en 2016, 81 en 2024 et 85 en 2025. Celui du salaire des salariés suivis par l'INS atteint 129 en 2017 et revient à 116 en 2024 ; il vaut 117 en 2025, sur un taux provisoire.
 - **Les deux mesures du salaire moyen ne progressent pas au même rythme.** En 2018, rapporté aux prix, l'indice du salaire moyen déclaré vaut 153 — rupture de 2003 comprise ; 109 en 2004 —, celui de l'INS 127. L'écart peut refléter le changement de composition des salariés déclarés et de leur durée déclarée, que la mesure de l'INS écarte par construction.
 
 ```{python}
@@ -382,16 +383,18 @@ figtools.figure_tabs(
     slug="fig_mt_sp_pouvoir_achat", nominal=False,
     caption=("Salaire moyen du secteur privé non agricole, SMIG du régime de 48 heures et prix "
              "à la consommation : salaire mensuel moyen déclaré à la CNSS et SMIG en dinars de "
-             "2024, par segments, 1970-2018 ; indices base 100 en 2001 et pouvoir d'achat, "
+             "2025, par segments, 1970-2018 ; indices base 100 en 2001 et pouvoir d'achat, "
              "2001-2025"),
     note_lecture=(
-        "Vue « Dinars de 2024 ». Chaque point est le salaire annuel moyen déclaré qu'imprime "
+        "Vue « Dinars de 2025 ». Chaque point est le salaire annuel moyen déclaré qu'imprime "
         "l'annuaire statistique de la CNSS pour le régime des salariés non agricoles — la "
         "masse des salaires déclarés divisée par le nombre de salariés déclarés dans l'année —, "
         "divisé par douze. Le SMIG est la moyenne des montants mensuels du régime de 48 heures "
-        "en vigueur au premier jour des douze mois. Les dinars de 2024 sont le montant de "
-        "l'année multiplié par le rapport de l'indice des prix à la consommation de 2024 à "
-        "celui de l'année. Aucun trait ne relie deux segments du salaire. En 1974, le SMIG "
+        "en vigueur au premier jour des douze mois. Les dinars de 2025 sont le montant de "
+        "l'année multiplié par le rapport de l'indice des prix à la consommation de 2025 à "
+        "celui de l'année ; l'indice de l'INS, lu dans ses annuaires jusqu'en 2023, est "
+        "prolongé pour 2024 et 2025 par la variation de l'indice en base 2015 que publie la "
+        "Banque centrale. Aucun trait ne relie deux segments du salaire. En 1974, le SMIG "
         "intègre l'indemnité de cherté de vie, servie de 1971 à 1973 en sus du minimum et "
         "absente de sa courbe. En 1981, l'indemnité complémentaire provisoire entre dans le "
         "SMIG et reste hors de l'assiette des cotisations ; à partir de 1988, l'annuaire la "
@@ -411,7 +414,7 @@ figtools.figure_tabs(
         "annuel moyen déclaré de l'annuaire 2018, rapporté à sa valeur de 2001 ; la rupture "
         "de 2003 ne concerne que cette courbe. Le SMIG et les prix sont des moyennes "
         "annuelles. Le pouvoir d'achat est l'indice divisé par celui des prix ; il s'arrête "
-        "en 2024, dernière année de l'indice des prix."),
+        "en 2025, dernière année dont l'indice des prix est publié."),
 )
 ```
 
@@ -500,7 +503,7 @@ La CNSS ne publie pas de quantiles. Ils sont approchés ici par interpolation li
 - **De 2000 à 2009, le haut de la distribution s'écarte** : le rapport du troisième au premier quartile passe de 3,00 à 3,12, celui du neuvième décile à la médiane de 2,90 à 3,29.
 - **De 2010 à 2016, sur une autre mesure du salaire mensuel, l'écart entre quartiles s'ouvre** : le rapport du troisième au premier quartile passe de 2,22 à 2,47, celui de la médiane au premier quartile de 1,43 à 1,48.
 - **D'un segment à l'autre, rien ne se compare** : la médiane de 2013 est de 468,1 dinars par mois dans l'annuaire 2013 et de 502,1 dinars dans l'annuaire 2018.
-- **Le bas de la distribution mesure la durée déclarée autant que le salaire.** En 2013, le premier quartile est de 261 dinars par mois pour l'ensemble des salariés déclarés et de 427 dinars pour ceux qui le sont les quatre trimestres, soit 511 et 837 dinars de 2024 ; la médiane, de 468 et de 590 dinars, soit 917 et 1 157 dinars de 2024 (@tbl-mt-sp-2013).
+- **Le bas de la distribution mesure la durée déclarée autant que le salaire.** En 2013, le premier quartile est de 261 dinars par mois pour l'ensemble des salariés déclarés et de 427 dinars pour ceux qui le sont les quatre trimestres, soit 539 et 882 dinars de 2025 ; la médiane, de 468 et de 590 dinars, soit 967 et 1 219 dinars de 2025 (@tbl-mt-sp-2013).
 
 ```{python}
 #| label: fig-mt-sp-quantiles
@@ -511,7 +514,7 @@ figtools.figure_tabs(
     "ipc-longue-periode", "bct-ipc-base2015",
     slug="fig_mt_sp_quantiles", nominal=False,
     caption=("Quantiles approchés du salaire mensuel déclaré à la CNSS, secteur privé non "
-             "agricole, en dinars de 2024 : premier quartile, médiane, troisième quartile et "
+             "agricole, en dinars de 2025 : premier quartile, médiane, troisième quartile et "
              "neuvième décile, par segments, 2000-2018"),
     note_lecture=(
         "Quantiles calculés, non publiés par la CNSS : interpolation linéaire dans la classe "
@@ -527,8 +530,8 @@ figtools.figure_tabs(
         "et en 2016. Les années 2011 à 2013 portent les deux mesures. Le neuvième décile "
         "manque quand il tombe dans la dernière classe, ouverte. Les losanges sont les "
         "quantiles des seuls salariés déclarés les quatre trimestres de 2013. Dinars de "
-        "2024 : montant de l'année multiplié par le rapport de l'indice des prix à la "
-        "consommation de 2024 à celui de l'année."),
+        "2025 : montant de l'année multiplié par le rapport de l'indice des prix à la "
+        "consommation de 2025, dernière année publiée, à celui de l'année."),
 )
 ```
 
@@ -542,7 +545,7 @@ print("\n: Rapports interquantiles du salaire mensuel déclaré à la CNSS, par 
 print(mt.tableau_2013())
 print("\n: Salariés déclarés à la CNSS en 2013, secteur privé non agricole : ensemble des "
       "salariés déclarés et salariés déclarés les quatre trimestres, en dinars de 2013 et en "
-      "dinars de 2024 ; quartiles approchés ; les deux dernières lignes donnent la part des "
+      "dinars de 2025 ; quartiles approchés ; les deux dernières lignes donnent la part des "
       "salariés dont le salaire mensuel est sous 300 dinars, puis de 300 à 330 dinars "
       "{#tbl-mt-sp-2013}\n")
 print("::: {.figure-source}\nSource : [@cnss-annuaire-2013, p. 26, 34, 35]\n:::\n")
