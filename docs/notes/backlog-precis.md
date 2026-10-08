@@ -913,7 +913,13 @@ liste qui suit le tableau, citations comprises. Restent :
   - **comité de veille** : composition donnée par la réponse du ministère (avec la CNAM, sans la
     CNSS), nom arabe « لجنة اليقظة لمتابعة تطور حوادث الشغل والأمراض المهنية », circulaire dite en
     cours d'actualisation — non repris dans le texte ; `r-atmp-comite-veille-2001` ;
-  - **relecture demandée** à la relectrice du chapitre.
+  - **relu le 8 octobre 2026** par la relectrice du chapitre, et nuancé en conséquence : les
+    constats sont rattachés à la période contrôlée (2015-2019) ; la majoration et la réduction
+    restent appliquées, rarement, d'après le fichier des employeurs (2010-2023) — précision
+    signalée comme telle dans le texte, sans source publiée ; les chiffres détaillés de la Cour
+    sur le classement (taux non mis à jour, corrections de codes, montants) sont **retirés du
+    texte**, seul le constat général restant ; à reprendre si une source publiée plus récente
+    paraît sur le classement des employeurs et la mise à jour des taux.
 - **Accidents du travail : CNAM et CNSS, classement des employeurs, sinistres déclarés —
   rédigé le 6 octobre 2026** (`#sec-cot-at-modulation-caisses`,
   `#sec-cot-at-modulation-application`, `#sec-cot-at-classement`, `#sec-cot-at-declares`),
