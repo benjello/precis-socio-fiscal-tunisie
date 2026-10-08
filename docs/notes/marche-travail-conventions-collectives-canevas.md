@@ -105,20 +105,35 @@ ne portent pas de rapport (cas des grilles de 1990-1992).
 Liste courte : numéros d'avenant non lus, pages à contrôler, éléments non précisés par le texte.
 C'est elle qui alimente `docs/notes/backlog-precis.md`.
 
-## Forme proposée
+## Destination : les paramètres d'openfisca-tunisia et une grande annexe
 
-Deux voies, à choisir avant de remplir la première fiche.
+Décision du propriétaire, le 8 octobre 2026 : les fiches de branche iront **dans les paramètres
+d'`openfisca-tunisia`** et **dans une grande annexe** du volume.
 
-- **Un fichier de données par branche**, dans `tunisia-data`
-  (`sources/transcriptions/conventions/<branche>.yml`), que des scripts déversent dans les séries
-  existantes et dans une série nouvelle des indemnités. Avantage : une seule saisie, des contrôles
-  automatiques (numéros d'avenant consécutifs, dates croissantes, rapports recalculés). C'est la
-  voie recommandée.
-- **Une note par branche**, dans `docs/notes/`. Plus rapide à écrire, mais elle oblige à ressaisir
-  les valeurs pour les séries.
-
-Dans les deux cas, la fiche de la branche engendre dans le chapitre : une ligne de l'inventaire,
-ses points sur la figure du salaire d'entrée, et un bloc replié « texte par texte ».
+- **Les paramètres.** Chaque élément chiffré et daté d'une convention devient un paramètre, sous
+  une arborescence par branche (par exemple
+  `marche_travail/conventions_collectives/<branche>/salaire_base/<categorie>/<echelon>`, et de même
+  pour les indemnités) : une valeur par date d'effet, la référence de l'avenant et du *Journal
+  officiel* à chaque date. Les conventions du dépôt s'y appliquent telles quelles : date d'effet
+  énoncée par le texte reprise sans report, sinon date d'exécution avec son calcul en note ;
+  aucune valeur antérieure non sourcée ; unités déclarées ; aucune mention de variable ni de
+  formule dans un fichier de paramètre. Une lecture faite sur une reproduction se dit dans la
+  note de la valeur. Les sections 1 et 2 du canevas (identité, création) vont dans la description
+  et les métadonnées du nœud de la branche.
+- **L'annexe.** Elle est **engendrée depuis ces paramètres** par un générateur
+  (`scripts/generate_*_tables.py`), comme tout tableau de paramètres du précis : une section par
+  branche — sa création, sa grille à chaque date d'effet, ses avenants datés —, avec les
+  composants déjà en place (état du droit à des dates repères, figure en escalier, onglet « Base
+  législative »). Le chapitre garde le récit et les figures de synthèse, et renvoie à l'annexe
+  pour le détail.
+- **L'ordre.** Paramètres versés et datés dans une PR du modèle, version publiée, borne de version
+  relevée dans `scripts/openfisca_tables.py`, puis annexe engendrée : jamais l'inverse. Les séries
+  de `tunisia-data` versées le 8 octobre 2026 (salaire d'entrée du textile et du bâtiment) servent
+  entre-temps aux figures du chapitre, et de contrôle : les paramètres devront redonner les mêmes
+  valeurs aux mêmes dates.
+- **Ce que cela implique pour la lecture.** Verser une grille en paramètres demande **toute la
+  grille** — chaque catégorie et chaque échelon —, non le seul bas de grille relevé jusqu'ici pour
+  le textile et le bâtiment. Le coût par branche est donc supérieur à celui observé le 8 octobre.
 
 ## Par où commencer
 
@@ -151,7 +166,9 @@ par branche pour la chaîne complète des avenants, hors indemnités.
 
 ## Questions à trancher
 
-1. Fichier de données par branche dans `tunisia-data`, ou note par branche dans le précis ?
+1. Grille entière ou grille résumée dans les paramètres : toutes les catégories et tous les
+   échelons, ou le bas, le haut et une catégorie médiane ? La première voie permet de calculer un
+   salaire conventionnel ; la seconde suffit aux figures.
 2. Les indemnités forfaitaires entrent-elles dans le salaire comparé au SMIG, ou restent-elles à
    part comme aujourd'hui ?
 3. Jusqu'où remonter : aux conventions d'origine seulement, ou aux sentences et règlements de
