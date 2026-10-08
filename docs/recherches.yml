@@ -751,9 +751,37 @@
     couverture: 'Intitulés jusqu''au 2 octobre 2026 (FTS seule). Plein texte français : termes ci-dessus sur 2004-2026 ; motif « commission » à 120 caractères de « risques professionnels », deux ordres, sur 1995-2026 (seule réponse : annexe sur les prêts, n° 79 de 2009). Arabe exploitable de 2014 à 2026 seulement. Lus : décret n° 95-538 (aucune commission ; français sur couche texte, arabe à l''image) ; décrets n° 96-1001 et 2007-2383 (conseil national consultatif, sans compétence sur les cotisations) ; décrets n° 96-1050 et 2009-2344 (commission des prêts et primes, auprès de la CNSS puis de la CNAM, sans compétence sur les cotisations). Non lus en entier : décrets n° 91-1761, 91-1936, 2002-583, 2009-2375. Une commission créée par décision interne d''une caisse ne paraîtrait pas au Journal officiel.'
     couvert_jusqu_au: 2026-09-30
     resultat: aucun
+  - date: 2026-10-07
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Hors JORT : 32e rapport annuel de la Cour des comptes (février 2021), chapitre accidents du travail, 56 pages lues à l''image. La Cour nomme une commission compétente pour examiner l''application de la majoration des taux (p. 19) et la CNAM une commission chargée de la majoration (p. 53), sans texte de création, composition ni pouvoir ; seul l''article 22 du décret n° 95-538 est cité, pour la réduction. Intitulés jort_cache jusqu''au 2 octobre 2026 sur veille et santé et sécurité au travail : rien. Plein texte non relancé.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
   a_faire:
   - lire à l'image les décrets n° 91-1761 et 91-1936 (fascicules n° 82 et 89 de 1991)
   - consulter les rapports d'activité de la CNAM sur la procédure de réduction
+
+- id: r-atmp-comite-veille-2001
+  objet: circulaire n° 20 du ministre des affaires sociales du 19 décembre 2001 créant un comité de veille en matière de santé et de sécurité au travail (connue par le Profil national SST de 2023, pp. 32-33, et par la réponse du ministère au 32e rapport de la Cour des comptes, pp. 49-50), ou tout texte publié fixant sa composition et son rôle à l'égard de la réduction et de la majoration de la cotisation d'accidents du travail
+  ou: [precis/fr/cotisations_sociales/_accidents_travail.qmd#sec-cot-at-modulation-application]
+  requetes:
+    titres_fts:
+    - '"comite de veille" OR "cellule de veille" OR "commission de veille"'
+    - veille AND (travail OR sante OR securite)
+    - اليقظة OR يقظة
+    titres_like: ['%veille%', '%يقظة%']
+    depuis: 2001-12-19
+  passes:
+  - date: 2026-10-07
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés jort_cache jusqu''au 2 octobre 2026 (FTS et LIKE, français et arabe) ; fenêtre du 1er décembre 2001 au 31 mars 2002 pour le ministère des affaires sociales : 3 textes, hors sujet. Lacunes : les 275 textes de type Circulaire non filtrés par date ni numéro ; aucun plein texte ; archives du web de social.tn, social.gov.tn, isst.nat.tn et cnam.nat.tn non consultées ; NATLEX et LEGOSH non interrogés. Hors JORT : Profil SST 2023 (pp. 29, 32, 33), profil ISST de 2007 (aucune mention), 32e rapport de la Cour des comptes (nom arabe du comité et composition dans la réponse du ministère, pp. 49-50 ; circulaire dite en cours d''actualisation). Une circulaire ministérielle ne paraît en principe pas au Journal officiel.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - filtrer les textes de type Circulaire de jort_cache (décembre 2001, numéro 20)
+  - 'plein texte du corpus : « comité de veille », « circulaire n° 20 », « لجنة اليقظة », « منشور عدد 20 »'
+  - archives du web de social.tn, social.gov.tn, isst.nat.tn et cnam.nat.tn
 
 - id: r-cnam-cnss-convention-recouvrement
   objet: convention conclue entre la CNSS (et, jusqu'en 2017, la CNRPS) et la CNAM fixant les modalités et procédures du recouvrement et du transfert des cotisations, dont celles du régime des accidents du travail et des maladies professionnelles (loi n° 2004-71, art. 16, puis art. 16 bis ajouté par la loi n° 2017-47)

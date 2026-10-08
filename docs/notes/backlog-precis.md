@@ -684,6 +684,27 @@ liste qui suit le tableau, citations comprises. Restent :
   1999). Les deux échelles sont engendrées, avant et après transfert du point
   (`tables/atmp_1995.md`, `tables/atmp_1999.md`). Reste : le financement sous la loi
   n° 57-73 (texte à obtenir pour ce livre ; clé à verser au fonds commun).
+- **Accidents du travail : le constat de la Cour des comptes — rédigé le 8 octobre 2026**
+  (`#sec-cot-at-modulation-cour`, et un paragraphe dans `#sec-cot-at-classement`). Source : 32e
+  rapport annuel général (février 2021), chapitre « حوادث الشغل والأمراض المهنية », 56 pages lues à
+  l'image, réponses du ministère et de la CNAM comprises ; clé `courdescomptes2021-rapport32` ;
+  PDF à l'entrepôt (`tunisia-data`, `data/raw/cour-des-comptes/84/rapport32.pdf`, et le chapitre
+  seul sous `76/`). Retenus, attribués à la Cour : majoration non appliquée depuis 2009, réductions
+  accordées, commission, taux non mis à jour et erreurs de codes. Ouvert :
+  - **écartés à dessein** : les réponses et engagements de la CNAM et du ministère, invérifiables ;
+    le montant d'indemnités attribué aux 496 entreprises (137,611 MD), supérieur au total que le
+    même rapport donne pour le régime (131,311 MD) ; les formules de la synthèse (« أبرز ملاحظات »),
+    qui arrondit et regroupe deux constats ;
+  - **non rapprochés** : les décomptes d'accidents de la Cour (environ 165 000 déclarations sur
+    2015-2019, maladies comprises ; 264 966 sur 2011-2019) et la série de la figure
+    `fig-atmp-declares` — périmètres différents (secteur privé seul, déclarations saisies) ;
+  - **non repris, hors de ces sections** : prêts de prévention (117 depuis 1995, 9,731 MD), rentes
+    (48,327 MD en 2015, 57,518 MD en 2019), indemnités journalières, délais et erreurs de
+    liquidation — matière pour le volume des caisses et celui des prestations ;
+  - **comité de veille** : composition donnée par la réponse du ministère (avec la CNAM, sans la
+    CNSS), nom arabe « لجنة اليقظة لمتابعة تطور حوادث الشغل والأمراض المهنية », circulaire dite en
+    cours d'actualisation — non repris dans le texte ; `r-atmp-comite-veille-2001` ;
+  - **relecture demandée** à la relectrice du chapitre.
 - **Accidents du travail : CNAM et CNSS, classement des employeurs, sinistres déclarés —
   rédigé le 6 octobre 2026** (`#sec-cot-at-modulation-caisses`,
   `#sec-cot-at-modulation-application`, `#sec-cot-at-classement`, `#sec-cot-at-declares`),
@@ -698,7 +719,7 @@ liste qui suit le tableau, citations comprises. Restent :
     de recouvrement entre la CNSS et la CNAM (`r-cnam-cnss-convention-recouvrement`) ;
     question posée à la relectrice ;
   - **à lire** : la circulaire n° 20 du ministre des affaires sociales du 19 décembre 2001
-    (comité de veille), connue par le seul Profil, p. 32 ; les annexes des organigrammes de
+    (comité de veille), non identifiée (`r-atmp-comite-veille-2001`) ; les annexes des organigrammes de
     la CNAM (décrets n° 2008-3707 et 2018-747) ; le décret n° 2002-583 ;
   - **rangés le 6 octobre 2026** : les PDF du Profil et de la Lettre du CRES n° 8, dans
     `tunisia-data` (`data/raw/caisses/mas/` et `data/raw/caisses/cres/`), fiches
