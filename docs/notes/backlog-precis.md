@@ -1183,11 +1183,14 @@ blocs repliés.
     et n° 72-58, connus par leurs seuls intitulés ; articles 16 et 17 du décret n° 2009-349
     modifiés par le décret n° 2010-87 ; objet de l'article 39 § 2 modifié par le décret n° 2011-98 ;
     art. 22 du décret n° 2019-542 ; plafond de la contribution patronale du contrat d'initiation ;
-  - *pages des lois de finances pour 2005 et 2010* : le complément donne pp. 3433-3434 et p. 3914,
-    les entrées `lf-2005` et `lf-2010` du fonds commun p. 3440 et p. 3919 ; aucune page n'est donc
-    écrite aux registres pour ces deux lois : à accorder (bibliographe) ;
-  - *figure* : frise des réformes (`fig-mt-pe-frise`) et marques de 1993 et de 2000 sur
-    `fig-mt-pe-dotations` non faites (TODO rédacteur dans le chapitre).
+  - *figure* : frise des réformes (`fig-mt-pe-frise`) non faite (TODO rédacteur dans le chapitre) ;
+    le tableau `tbl-mt-pe-reformes` en tient lieu ;
+  - *bibliographie* : les entrées `lf-2005` et `lf-2010` du fonds commun portent p. 3440 et
+    p. 3919, qui sont les pages d'autres articles (49-50 ; 39-40) ; les registres du chapitre
+    donnent la page de chaque article cité (3433, 3434 ; 3914, 3923). Champ de page des deux
+    entrées à revoir (bibliographe) ; `dafflon-2021-budget-local` (type non pris en charge)
+    interrompt le dry-run Zotero de tout le lot, et `minfin-cnf-2013-forfait` perd sa langue à
+    l'aller-retour.
 - **Politiques de l'emploi — textes non identifiés** (fiches de `docs/recherches.yml`) : texte
   instituant le FIAP (`r-fiap-texte-fondateur`) ; barème du SIVP entre 1993 et 2009
   (`r-sivp-bareme-1993-2009`) ; arrêtés des chèques de 2012 (`r-d2012-2369-arretes-cheques`) ;
