@@ -83,6 +83,9 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
 - **Tout PIB dit sa base, et s'il est rétropolé** ; si la source ne le dit pas, on l'écrit. Jamais
   deux bases chaînées en silence : la série se trace par segments, le changement de base est une
   rupture, et la rupture renvoie à l'annexe du site sur le PIB (`precis/fr/annexe-pib.qmd`).
+  La règle vaut pour un PIB que le précis **emploie lui-même** — série, ratio calculé, figure. Un
+  ratio au PIB simplement **cité** d'une étude ou d'un rapport, entre guillemets et avec sa
+  référence, se donne tel quel : on n'écrit pas que la source n'en précise ni la base ni le calcul.
 - **Les études citées sont récupérées** : le PDF de toute étude citée est rangé dans
   `tunisia-data` (`data/raw/`, hors git, catalogué dans `sources/`). On ne cite pas de seconde
   main ce qu'on peut obtenir.
