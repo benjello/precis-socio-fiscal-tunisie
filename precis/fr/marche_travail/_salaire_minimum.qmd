@@ -542,7 +542,9 @@ print("\n: Rapports interquantiles du salaire mensuel déclaré à la CNSS, par 
 print(mt.tableau_2013())
 print("\n: Salariés déclarés à la CNSS en 2013, secteur privé non agricole : ensemble des "
       "salariés déclarés et salariés déclarés les quatre trimestres, en dinars de 2013 et en "
-      "dinars de 2024 ; quartiles approchés {#tbl-mt-sp-2013}\n")
+      "dinars de 2024 ; quartiles approchés ; les deux dernières lignes donnent la part des "
+      "salariés dont le salaire mensuel est sous 300 dinars, puis de 300 à 330 dinars "
+      "{#tbl-mt-sp-2013}\n")
 print("::: {.figure-source}\nSource : [@cnss-annuaire-2013, p. 26, 34, 35]\n:::\n")
 ```
 
