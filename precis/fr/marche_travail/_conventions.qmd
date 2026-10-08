@@ -16,9 +16,9 @@ from figures import marche_travail as mt
 
 ## La convention collective cadre de 1973 {#sec-mt-cadre-1973}
 
-La [convention collective cadre](#g-convention-collective-cadre) est l'accord, commun à toutes les activités non agricoles, sur lequel repose chaque convention de branche. L'Union tunisienne de l'industrie, du commerce et de l'artisanat (UTICA) et l'Union générale tunisienne du travail (UGTT) la signent le 20 mars 1973 ; le ministre des affaires sociales l'approuve par [un arrêté du 29 mai 1973](#r-mt-cc-cadre), qui la rend obligatoire pour toutes les activités non agricoles, et elle entre en vigueur le 1^er^ juin 1973. Trois de ses clauses commandent la formation des salaires.
+La [convention collective cadre](#g-convention-collective-cadre) est l'accord, commun à toutes les activités non agricoles, sur lequel repose chaque [convention de branche](#g-convention-collective-sectorielle). L'Union tunisienne de l'industrie, du commerce et de l'artisanat (UTICA) et l'Union générale tunisienne du travail (UGTT) la signent le 20 mars 1973 ; le ministre des affaires sociales l'approuve par [un arrêté du 29 mai 1973](#r-mt-cc-cadre), qui la rend obligatoire pour toutes les activités non agricoles, et elle entre en vigueur le 1^er^ juin 1973. Trois de ses clauses commandent la formation des salaires.
 
-- **Elle est la base de chaque convention de branche** et renvoie à celles-ci les grilles de salaires et les indemnités ([articles 1 et 50](#r-mt-cc-cadre-base)).
+- **Elle est la base de chaque convention de branche** et renvoie à celles-ci les [grilles de salaires](#g-grille-de-salaires-conventionnelle) et les indemnités ([articles 1 et 50](#r-mt-cc-cadre-base)).
 - **Elle rattache les salaires au salaire minimum** : ils sont fixés compte tenu d'un salaire minimum interprofessionnel garanti (SMIG) établi sur la base du coût de la vie ([préambule](#r-mt-cc-cadre-smig)).
 - **Elle fixe un rythme de révision** : la convention ne peut être dénoncée ou révisée qu'au plus tôt trois ans après son entrée en vigueur, puis par périodes de deux années civiles ; à défaut d'accord, le Gouvernement arbitre ([article 3](#r-mt-cc-cadre-revision)).
 
@@ -36,11 +36,11 @@ Depuis 1973, l'échelle des salaires du secteur privé non agricole compte trois
 
 : Les trois étages des salaires du secteur privé non agricole {#tbl-mt-trois-etages}
 
-Le [salaire conventionnel](#g-salaire-conventionnel) d'une catégorie ne peut être inférieur au salaire minimum ([code du travail](#r-mt-cc-1996-minimum)) ; une hausse du SMIG relève donc mécaniquement le bas des grilles dont les premiers échelons l'atteignent, sans relever les autres.
+Le [salaire conventionnel](#g-salaire-conventionnel) d'une catégorie ne peut être inférieur au [salaire minimum](#g-salaire-minimum-garanti) ([code du travail](#r-mt-cc-1996-minimum)) ; une hausse du SMIG relève donc mécaniquement le bas des grilles dont les premiers échelons l'atteignent, sans relever les autres.
 
 ## Les conventions de branche et leurs avenants {#sec-mt-sectorielles}
 
-Une convention de branche porte, en annexe, des **grilles de salaires** par catégorie et par échelon, et des **indemnités** — de transport et de présence notamment. Ses **avenants** révisent ces grilles et ces indemnités ; agréés à leur tour, ils s'imposent à toute la branche.
+Une convention de branche porte, en annexe, des **grilles de salaires** par catégorie et par échelon, et des **indemnités** — de transport et de présence notamment. Ses **[avenants](#g-avenant-convention-collective)** révisent ces grilles et ces indemnités ; [agréés](#g-agrement-convention-collective) à leur tour, ils s'imposent à toute la branche.
 
 De 1969 à 2025, l'État agrée 61 conventions sectorielles, dans 56 branches ; une cinquante-septième branche, celle des jardins d'enfants et des crèches, n'est connue que par ses avenants (@fig-mt-cc-agrements, @tbl-mt-cc-inventaire). Ce décompte est celui des intitulés des arrêtés publiés au *Journal officiel* : c'est une borne basse, non un total.
 
@@ -76,7 +76,7 @@ figtools.figure_tabs(
 - **Trente-neuf des 61 conventions sont agréées de 1974 à 1977**, dont 24 en 1975.
 - **Les avenants viennent ensuite par vagues**, au rythme des négociations salariales (@sec-mt-rounds) : 35 en 1983, 43 en 1989, 51 en 1993, 40 en 2013, 42 en 2016 et autant en 2017.
 - **Depuis 1996, les grilles ne paraissent plus que dans l'édition arabe du *Journal officiel*.** [Le 24 juillet 1996](#r-mt-cc-1996-arabe), l'édition française annonce d'un seul avis les avenants à quarante conventions et renvoie à l'édition arabe ; quelques avenants y paraissent encore, grilles comprises, jusqu'en octobre 1996. Les avenants de 1996 à 2012 et ceux de 2022 sont sous-comptés.
-- **En 2026, l'État fixe lui-même la hausse des grilles** : [le décret n° 2026-68](#r-mt-cc-2026-68) applique une hausse de 5 % par an, en 2026, 2027 et 2028, aux salaires de base de tous les échelons des dernières grilles annexées et aux indemnités de transport et de présence (@sec-mt-cc-2026, @sec-mt-2026).
+- **En 2026, l'État fixe lui-même la hausse des grilles** : [le décret n° 2026-68](#r-mt-cc-2026-68) applique une hausse de 5 % par an, en 2026, 2027 et 2028, aux [salaires de base](#g-salaire-de-base-conventionnel) de tous les échelons des dernières grilles annexées et aux indemnités de transport et de présence (@sec-mt-cc-2026, @sec-mt-2026).
 
 :::: {.chronologie-repliable titre="Conventions de branche : inventaire des 57 branches — agrément, Journal officiel, avenants, 1969-2025"}
 
@@ -137,7 +137,7 @@ de 1996 à 2012 et de 2022 à compter sur l'édition arabe. -->
 
 ## Ce que les conventions ajoutent au SMIG {#sec-mt-cc-smig}
 
-Cette section mesure l'écart entre le bas d'une grille conventionnelle et le salaire minimum. Elle compare au [SMIG](#g-smig) horaire du régime de 48 heures le salaire horaire d'entrée — celui de la catégorie et de l'échelon les plus bas — de deux conventions, celle du textile, de 1974 à 2026, et celle du bâtiment et des travaux publics, de 1975 à 2024 ; de 1994 à 2026 dans la première et de 1996 à 2024 dans la seconde, les grilles se suivent sans interruption. Ce sont deux branches, non l'ensemble du secteur privé ; et ce sont des salaires de base, auxquels s'ajoutent les indemnités de chaque convention.
+Cette section mesure l'écart entre le bas d'une grille conventionnelle et le salaire minimum. Elle compare au [SMIG](#g-smig) horaire du régime de 48 heures le [salaire horaire d'entrée](#g-salaire-d-entree-conventionnel) — celui de la catégorie et de l'échelon les plus bas — de deux conventions, celle du textile, de 1974 à 2026, et celle du bâtiment et des travaux publics, de 1975 à 2024 ; de 1994 à 2026 dans la première et de 1996 à 2024 dans la seconde, les grilles se suivent sans interruption. Ce sont deux branches, non l'ensemble du secteur privé ; et ce sont des salaires de base, auxquels s'ajoutent les indemnités de chaque convention.
 
 ### Le salaire d'entrée du textile et du bâtiment, 1974-2026 {#sec-mt-cc-entree}
 
@@ -232,7 +232,7 @@ Dans le bâtiment et les travaux publics, la dernière grille est celle du 1^er^
 
 Cette section donne la part des salariés que couvre une convention collective, de 2010 à 2019, telle que la publie l'Organisation internationale du travail (OIT). C'est une source extérieure, d'une autre nature que les décomptes et les grilles du *Journal officiel* des sections précédentes.
 
-L'OIT publie dans sa base ILOSTAT, pour la Tunisie, un indicateur intitulé « Collective bargaining coverage rate (%) » — taux de couverture de la négociation collective —, avec pour seule précision « Reference group coverage: Employees » : le groupe de référence est celui des salariés [@oit-ilostat-couverture-negociation-collective]. L'OIT déclare pour source des fichiers administratifs (« ADM - Other Administrative records and related sources ») ; ni le producteur national des données ni la méthode ne sont précisés par la source, qui ne publie ni le numérateur ni le dénominateur.
+L'OIT publie dans sa base ILOSTAT, pour la Tunisie, un indicateur intitulé « Collective bargaining coverage rate (%) » — [taux de couverture de la négociation collective](#g-taux-de-couverture-negociation-collective) —, avec pour seule précision « Reference group coverage: Employees » : le groupe de référence est celui des salariés [@oit-ilostat-couverture-negociation-collective]. L'OIT déclare pour source des fichiers administratifs (« ADM - Other Administrative records and related sources ») ; ni le producteur national des données ni la méthode ne sont précisés par la source, qui ne publie ni le numérateur ni le dénominateur.
 
 - **Le taux passe de 54,9 % en 2010 à 56,9 % en 2014, puis de 64,3 % en 2016 à 62,9 % en 2019** (@fig-mt-cc-couverture). L'année 2015 manque, et la source n'explique pas l'écart entre 2014 et 2016.
 - **Ce taux porte sur les salariés pris ensemble** ; la source ne précise pas si le secteur public y est compris. Il ne mesure pas la part des salariés du secteur privé qu'une convention sectorielle couvre.
