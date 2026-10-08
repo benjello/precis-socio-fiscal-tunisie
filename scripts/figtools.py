@@ -629,13 +629,16 @@ def fig_escalier(series_id: str, courbes: dict, *, fin: int, colonne: str = "par
                  xlabel: str | None = None, annotations: dict | None = None,
                  etiquettes_x: dict | None = None, xlim=None, ylim=None, yticks=None,
                  log: bool = False, figsize=(9.5, 5.6), ncol: int | None = None,
-                 supprime: str | None = None):
+                 supprime: str | None = None, format_infobulle=None):
     """Les grandeurs d'une série longue en escalier, chaque marche étiquetée de sa valeur.
 
     `courbes`       : {clé: (libellé de légende, couleur)}, dans l'ordre du tracé.
     `fin`           : dernière année tracée ; les traits courent jusqu'à son 31 décembre. À
                       n'employer que si la dernière valeur de chaque grandeur vaut encore.
     `format_valeur` : valeur -> étiquette de marche (« 17 % », « 150 D ») ; à défaut `%g`.
+    `format_infobulle` : valeur -> montant de l'infobulle ; à défaut `format_valeur`. Sert
+                      quand les marches, trop nombreuses, ne sont pas étiquetées
+                      (`format_valeur` rendant une chaîne vide) : le survol garde le montant.
     `annotations`   : {(clé, date d'effet): texte} — les mentions propres à la figure
                       (« créé hors du code », « supprimé au… »), posées sous le point, ou à
                       sa droite pour une suppression. Un dictionnaire `{"texte": …, "xytext":
@@ -655,6 +658,7 @@ def fig_escalier(series_id: str, courbes: dict, *, fin: int, colonne: str = "par
     apply_lang_font()
     ft = fig_text
     formate = format_valeur or (lambda v: f"{v:g}".replace(".", ","))
+    formate_bulle = format_infobulle or formate
     annotations = annotations or {}
 
     def mention(cle, date, xy, couleur, suppression=False):
@@ -705,7 +709,7 @@ def fig_escalier(series_id: str, courbes: dict, *, fin: int, colonne: str = "par
                                 textcoords="offset points", ha="left", va="bottom",
                                 fontsize=8.5, fontweight="bold", color=couleur, zorder=5)
             mention(cle, date, (x, v), couleur)
-            infobulle(p, bulle + formate(v) + suite)
+            infobulle(p, bulle + formate_bulle(v) + suite)
         if lignes:
             poignees.append(Line2D([], [], color=couleur, lw=2.2, marker="o", ms=5,
                                    label=ft(libelle)))

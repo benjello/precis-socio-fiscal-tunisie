@@ -86,8 +86,12 @@ PAQUETS = {
         # taux majoré (openfisca-tunisia#425, PR #480) : en deçà,
         # `fiscalite_indirecte/tva/taux_intermediaire` et `taux_majore` n'existent pas, et le
         # tableau des générations de taux comme la série de sa figure ne pourraient être
-        # engendrés.
-        "version_minimale": (0, 121),
+        # engendrés. La 0.122 verse les grilles de salaires de trois conventions collectives
+        # sectorielles — textile, bâtiment et travaux publics, assurances —, sous
+        # `marche_travail/conventions_collectives/` (openfisca-tunisia PR #482) : en deçà, ce
+        # nœud n'existe pas, et l'annexe « Les conventions collectives, branche par branche »
+        # du volume « Marché du travail » ne pourrait être engendrée.
+        "version_minimale": (0, 122),
     },
 }
 
@@ -328,19 +332,47 @@ def charge_parametre(chemin_relatif: str, paquet: str | None = None) -> dict[str
     """Charge un YAML de paramètre, chemin relatif à la racine du paquet.
 
     Exemple : "parameters/impot_revenu/bareme.yaml".
+
+    PARAMÈTRE LOGÉ DANS UN FICHIER DE NŒUD. Un fichier peut porter plusieurs paramètres, un
+    par clé — `…/salaire_base/echelle_1.yaml` porte `echelon_1`. Un tel paramètre se désigne
+    comme s'il avait son fichier, `…/salaire_base/echelle_1/echelon_1.yaml` : quand ce
+    fichier n'existe pas, le fichier du nœud est chargé et l'on y descend clé par clé. Le
+    chemin reste ainsi celui de la page publique du paramètre (`url_parametre`).
     """
     if yaml is None:
         return None
     racine = _racine_paquet(paquet)
     if racine is None:
         return None
-    try:
+
+    def lit(elements):
         ref = racine
-        for element in chemin_relatif.split("/"):
+        for element in elements:
             ref = ref / element
         return yaml.safe_load(ref.read_text(encoding="utf-8"))
+
+    elements = chemin_relatif.split("/")
+    try:
+        return lit(elements)
     except Exception:
-        return None
+        pass
+    noms = elements[:-1] + [elements[-1].removesuffix(".yaml")]
+    for coupe in range(len(noms) - 1, 0, -1):
+        try:
+            donnees = lit(noms[:coupe - 1] + [f"{noms[coupe - 1]}.yaml"])
+        except Exception:
+            continue
+        return descend(donnees, noms[coupe:])
+    return None
+
+
+def descend(donnees: Any, cles: list[str]) -> dict[str, Any] | None:
+    """Le paramètre logé sous `cles` dans un fichier de nœud déjà chargé, ou None. Pure."""
+    for cle in cles:
+        if not isinstance(donnees, dict) or cle not in donnees:
+            return None
+        donnees = donnees[cle]
+    return donnees if isinstance(donnees, dict) else None
 
 
 # ------------------------------------------------------------------- lecture datée
@@ -1345,13 +1377,29 @@ class ParametreDate:
                 « millimes », « entier » —, qui porte l'unité dans la case (« 17 % », « 150 D »).
     `format`  : fonction `(valeur, langue) -> texte`, quand aucun formateur commun ne convient.
     `lien`    : {langue: libellé du lien « Base législative »} ; à défaut, le libellé de ligne.
+    `sans_valeur` : {langue: mention} d'une date d'effet SANS VALEUR — la valeur change ce
+                jour-là sans qu'un texte en publie le montant (« non publiée »). À défaut,
+                une telle date se rend par « — », comme une abrogation : c'est le sens d'une
+                valeur nulle pour un taux ou un montant que la loi supprime.
     """
 
     def __init__(self, cle: str, chemin: str, libelle: dict[str, str], unite: str = "taux",
                  format: Callable[[float, str], str] | None = None,
-                 lien: dict[str, str] | None = None):
+                 lien: dict[str, str] | None = None,
+                 sans_valeur: dict[str, str] | None = None):
         self.cle, self.chemin, self.libelle, self.unite = cle, chemin, libelle, unite
-        self.format, self.lien = format, lien or libelle
+        self.format, self.lien, self.sans_valeur = format, lien or libelle, sans_valeur
+
+    def case(self, serie, date: str, langue: str) -> str:
+        """La case du paramètre à `date` : sa valeur, « — », ou la mention `sans_valeur`.
+
+        « — » avant la première date d'effet ; la mention, si elle est déclarée, à compter
+        d'une date d'effet sans valeur.
+        """
+        point = en_vigueur(serie, date)
+        if point is not None and point[1] is None and self.sans_valeur:
+            return self.sans_valeur[langue]
+        return self.rendre(None if point is None else point[1], langue)
 
     def rendre(self, valeur: float | None, langue: str) -> str:
         """La case : la valeur dans son unité, ou « — » quand le paramètre n'existe pas."""
@@ -1481,7 +1529,7 @@ def tableau_dates_reperes(
         ligne = {entete: p.libelle[langue]}
         for date in dates:
             colonne = (entetes_dates or {}).get(date) or formate_date(date, langue)
-            ligne[colonne] = p.rendre(etat_a_la_date(serie, date), langue)
+            ligne[colonne] = p.case(serie, date, langue)
         lignes.append(ligne)
     return pd.DataFrame(lignes)
 

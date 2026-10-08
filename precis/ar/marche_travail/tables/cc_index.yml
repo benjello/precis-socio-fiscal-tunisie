@@ -1,0 +1,141 @@
+# Généré par scripts/generate_conventions_collectives_tables.py — ne pas éditer à la main.
+- branche: assurances
+  libelle: Assurances
+  description: Convention collective nationale, puis sectorielle, des assurances
+  serie: cc-grille-assurances
+  reperes: cc_assurances_dates_reperes.md
+  dates_reperes:
+  - '1993-06-01'
+  - '2000-01-01'
+  - '2010-01-01'
+  - '2020-01-01'
+  - '2025-01-01'
+  - '2026-01-01'
+  cases:
+  - cle: salaire_base.echelle_1.echelon_1
+    libelle: Échelle 1, échelon 1
+    grandeur: Salaire de base
+    unite: دينار في الشهر
+    description: 'Assurances - échelle 1, échelon 1 : salaire mensuel de base'
+    tableau: cc_assurances_salaire_base_echelle_1_echelon_1.md
+    parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_1/echelon_1.yaml
+    debut: '1993-06-01'
+    derniere_valeur: '2021-06-01'
+    dates: 29
+    valeurs: 28
+    sans_valeur: 1
+  - cle: salaire_base.echelle_21.echelon_12
+    libelle: Échelle 21, échelon 12
+    grandeur: Salaire de base
+    unite: دينار في الشهر
+    description: 'Assurances - échelle 21, 12e échelon : salaire mensuel de base'
+    tableau: cc_assurances_salaire_base_echelle_21_echelon_12.md
+    parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_21/echelon_12.yaml
+    debut: '1993-06-01'
+    derniere_valeur: '2021-06-01'
+    dates: 29
+    valeurs: 28
+    sans_valeur: 1
+  - cle: salaire_base.echelle_21.echelon_13
+    libelle: Échelle 21, échelon 13
+    grandeur: Salaire de base
+    unite: دينار في الشهر
+    description: 'Assurances - échelle 21, 13e échelon : salaire mensuel de base'
+    tableau: cc_assurances_salaire_base_echelle_21_echelon_13.md
+    parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_21/echelon_13.yaml
+    debut: '1999-06-01'
+    derniere_valeur: '2021-06-01'
+    dates: 23
+    valeurs: 22
+    sans_valeur: 1
+  - cle: salaire_base.echelle_21.echelon_14
+    libelle: Échelle 21, échelon 14
+    grandeur: Salaire de base
+    unite: دينار في الشهر
+    description: 'Assurances - échelle 21, 14e échelon : salaire mensuel de base'
+    tableau: cc_assurances_salaire_base_echelle_21_echelon_14.md
+    parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_21/echelon_14.yaml
+    debut: '1999-06-01'
+    derniere_valeur: '2021-06-01'
+    dates: 23
+    valeurs: 22
+    sans_valeur: 1
+- branche: batiment
+  libelle: Bâtiment et travaux publics
+  description: Convention collective nationale, puis sectorielle, du bâtiment et des
+    travaux publics
+  serie: cc-grille-batiment
+  reperes: cc_batiment_dates_reperes.md
+  dates_reperes:
+  - '1996-05-01'
+  - '2000-01-01'
+  - '2010-01-01'
+  - '2020-01-01'
+  - '2025-01-01'
+  - '2026-01-01'
+  cases:
+  - cle: salaire_base.personnel_occasionnel.manoeuvre_ordinaire
+    libelle: Personnel occasionnel, manœuvre ordinaire
+    grandeur: Salaire de base
+    unite: دينار في الساعة
+    description: 'Bâtiment et travaux publics - personnel occasionnel - manœuvre ordinaire
+      : salaire horaire de base'
+    tableau: cc_batiment_salaire_base_personnel_occasionnel_manoeuvre_ordinaire.md
+    parametre: parameters/marche_travail/conventions_collectives/batiment/salaire_base/personnel_occasionnel/manoeuvre_ordinaire.yaml
+    debut: '1996-05-01'
+    derniere_valeur: '2024-01-01'
+    dates: 27
+    valeurs: 26
+    sans_valeur: 1
+  - cle: salaire_base.personnel_occasionnel.chef_equipe_3e_degre
+    libelle: Personnel occasionnel, chef d'équipe du 3e degré
+    grandeur: Salaire de base
+    unite: دينار في الساعة
+    description: 'Bâtiment et travaux publics - personnel occasionnel - chef d''équipe
+      du 3e degré : salaire horaire de base'
+    tableau: cc_batiment_salaire_base_personnel_occasionnel_chef_equipe_3e_degre.md
+    parametre: parameters/marche_travail/conventions_collectives/batiment/salaire_base/personnel_occasionnel/chef_equipe_3e_degre.yaml
+    debut: '1996-05-01'
+    derniere_valeur: '2024-01-01'
+    dates: 27
+    valeurs: 26
+    sans_valeur: 1
+- branche: textile
+  libelle: Textile
+  description: Convention collective nationale, puis sectorielle, du textile
+  serie: cc-grille-textile
+  reperes: cc_textile_dates_reperes.md
+  dates_reperes:
+  - '1994-05-01'
+  - '2000-01-01'
+  - '2010-01-01'
+  - '2020-01-01'
+  - '2025-01-01'
+  - '2026-01-01'
+  cases:
+  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_0
+    libelle: Agents payés à l'heure, catégorie I, échelon 0
+    grandeur: Salaire de base
+    unite: دينار في الساعة
+    description: 'Textile - agents payés à l''heure - catégorie I, échelon 0 (confirmation)
+      : salaire horaire de base'
+    tableau: cc_textile_salaire_base_agents_payes_a_l_heure_categorie_1_echelon_0.md
+    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_0.yaml
+    debut: '1994-05-01'
+    derniere_valeur: '2026-01-01'
+    dates: 30
+    valeurs: 30
+    sans_valeur: 0
+  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_0
+    libelle: Agents payés à l'heure, catégorie IV-2, échelon 0
+    grandeur: Salaire de base
+    unite: دينار في الساعة
+    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 0 (confirmation)
+      : salaire horaire de base'
+    tableau: cc_textile_salaire_base_agents_payes_a_l_heure_categorie_4_2_echelon_0.md
+    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_0.yaml
+    debut: '1994-05-01'
+    derniere_valeur: '2026-01-01'
+    dates: 30
+    valeurs: 30
+    sans_valeur: 0

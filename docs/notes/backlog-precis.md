@@ -1223,6 +1223,59 @@ Revue de ce que les sept volumes ne couvrent pas (sujets à établir sur les tex
 Ligne éditoriale rappelée par l'humain : le précis vise l'**impact économique, distributif et budgétaire**, l'**évolution sur le temps long** et les **ruptures de réforme** ; on retient d'un texte sa **date, sa valeur et sa source**, sans les détails administratifs sans impact (modalités de déclaration, de recouvrement, procédures). Les chapitres déjà écrits en contiennent beaucoup (par exemple le recouvrement des impôts locaux dans le volume VII). Chantier à mener plus tard, **sans forcément réécrire le texte** : réduire la visibilité de ces sections (encadrés repliés, niveau de titre plus bas) ou les **repousser en annexe** du volume. Une passe par volume, à décider avec l'humain. Les nouveaux chapitres appliquent la règle dès leur rédaction.
 ## Le marché du travail
 
+### Annexe « Les conventions collectives, branche par branche » (8 octobre 2026, premier jet, non commité)
+
+`precis/fr/marche_travail/_annexe_conventions.qmd` (`#sec-mt-cc-annexe`), déclarée dans les
+`appendices` du `_quarto.yml` français, avant le glossaire. Décision du propriétaire du 8 octobre
+2026 (canevas, « Destination »). Elle est **engendrée** : `scripts/generate_conventions_collectives_tables.py`
+(appelé par `generate_marche_travail_tables.py`, donc gardé par le contrôle de fraîcheur) parcourt
+`marche_travail/conventions_collectives` d'`openfisca-tunisia` 0.122 sans nommer de branche, et
+écrit `tables/cc_*.md`, leurs `.liens.yml`, `tables/cc_index.yml` et les séries
+`_seriescache/cc-grille-<branche>.csv`. Trois branches, huit cases, 212 valeurs, 6 dates sans
+valeur (« non publiée », au 1er janvier 2026, bâtiment et assurances). La création de chaque
+convention et la suite des avenants viennent des notes, non des paramètres.
+
+Ce qui lui manque :
+
+- **les pages de la base législative** : les liens des onglets « Base législative » répondent
+  (contrôle `scripts/verifier_liens_base_legislative.py` du 8 octobre 2026, 22 h 36 : 1 128 liens,
+  aucun mort) ; une heure plus tôt, avant le redéploiement du site des paramètres sur la 0.122,
+  ils rendaient 404 ;
+- **les grilles entières** : chaque branche n'a que deux à quatre cases (bas et haut). Restent
+  toutes les autres catégories et échelons, la grille mensuelle du textile (17 catégories) et celle
+  du bâtiment (19 catégories, 11 échelons), les 21 échelles des assurances ; à verser en amont, la
+  page suit sans changement ;
+- **les indemnités** (transport, présence, assiduité) : relevées en partie dans les notes, pas
+  dans les paramètres ; le générateur les prendra sous un nœud frère de `salaire_base` ;
+- **les autres branches** : commerce, industrie hôtelière, mécanique et électricité d'abord
+  (canevas, « Par où commencer »). Une branche versée en amont a ses tableaux à la régénération,
+  mais sa section (création, grille, avenants) reste à écrire dans l'annexe ;
+- **textile et bâtiment avant 1990** : sentence arbitrale de 1983, avenants n° 2 et n° 4 du textile,
+  avenants n° 1, n° 2 et n° 4 du bâtiment — sans clé bibliographique, grilles non établies ;
+  fascicules de l'édition française présents au corpus, à ouvrir ; grilles de 1990-1992 hors
+  indemnité complémentaire provisoire (données au chapitre, non à l'annexe) ; pages des arrêtés et
+  des avenants n° 6 à 18 dans l'édition arabe ;
+- **bâtiment, avenant n° 16** : second exemplaire du JORT n° 132 du 2 décembre 2022 à obtenir (les
+  trois grilles sont données d'après la reproduction d'un site tiers, sans lien) ;
+- **assurances** : clé `cc-assurances-avenant11-grille-2015` à créer (grille du 1er juin 2014,
+  JORT n° 4 du 13 janvier 2015, édition arabe, p. 151) ; application du décret n° 2026-68 à la
+  branche non établie ; les dix-sept clés `cc-assurances-*` sont recopiées du volume des
+  rémunérations publiques (FR et AR) — deux copies à tenir ensemble. La section
+  `#sec-marche-controle-assurances` de ce volume, à laquelle l'annexe renvoie pour la chaîne des
+  avenants, dit encore la grille de 2014 « annoncée, non imprimée » : correction attendue de la PR
+  qui y reporte les relectures ;
+- **côté arabe** : l'annexe n'est **pas** déclarée dans `precis/ar/marche_travail/_quarto.yml` —
+  à faire à la livraison de sa traduction. Les tableaux arabes sont engendrés, en-têtes et
+  mentions en arabe, mais les noms des branches et des cases y restent en français (les
+  `short_label` du modèle n'existent qu'en français) et le lien garde l'édition que cite la page :
+  à trancher avec le relecteur de l'arabe ;
+- **figures** : une figure en escalier par branche, par le composant commun ; dans celle des
+  assurances, les trois échelons de l'échelle 21 se confondent — à juger (échelle, ou une seule
+  case du haut) ; pas de lecture en dinars constants ni de rapport au SMIG dans l'annexe ;
+- **chapitre** : le tableau fait main `@tbl-mt-cc-grilles` et la série `tunisia-data` du salaire
+  d'entrée doublent désormais les tableaux engendrés pour 1994-2026 ; à réduire aux grilles que
+  les paramètres ne portent pas (1974-1975, 1990-1992) une fois l'annexe jugée.
+
 Volume créé le 5 octobre 2026 (branche `docs/marche-travail-volume`), sept chapitres : présentation,
 notions, institutions, salaire minimum, conventions collectives, négociations salariales, longue
 période. Notes documentaires : `docs/notes/marche-travail-smig-smag.md`,
