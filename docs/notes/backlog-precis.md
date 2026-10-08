@@ -783,11 +783,14 @@ liste qui suit le tableau, citations comprises. Restent :
     clés `cc-assurances-*` (FR et AR), fiche `r-cc-assurances-avenant-16`. Restent :
     liste des assureurs à capital public (le rapport sur les entreprises publiques n'en nomme
     aucun ; rapports du Comité général des assurances, de la FTUSA et des participations de
-    l'État **à obtenir** ; pas de fiche de recherche) ; grille du 1er juin 2014 (avenant n° 11),
-    annoncée et **non imprimée** — rectificatif à chercher dans les fascicules arabes de 2015,
-    **lisibles** ; grilles entières (28, pages identifiées, **lecture à l'image**) pour le
-    versement en paramètres ; valeurs à confirmer de 1989, 1990 et 1991 (éditions arabes au
-    corpus, non ouvertes) et hauts de 2018 et 2019 (calculés) ; protocole du 8 juin 1984,
+    l'État **à obtenir** ; pas de fiche de recherche) ; **clos par la relecture à l'image du
+    8 octobre 2026** (`…-assurances-relecture-2026-10-08.md`) : grille du 1er juin 2014
+    (avenant n° 11) trouvée au n° 4 du 13 janvier 2015, édition arabe, p. 151 (clé
+    `cc-assurances-avenant11-grille-2015`), hauts de 2018 et 2019 lus, bas de 1990 et de 1991
+    corrigés d'un millime ; **reste** : bas du 1er janvier 1989, illisible dans les deux éditions
+    (autre source **à obtenir** : recueil de la FTUSA, exemplaire papier), page française de la
+    grille de 2014 (fascicule **lisible**, non ouvert) ; grilles entières (28, pages identifiées,
+    **lecture à l'image**) pour le versement en paramètres ; protocole du 8 juin 1984,
     probablement non publié ; dates de signature contradictoires au *Journal officiel*
     (convention révisée : 10 novembre 1982 ou 13 avril 1983 ; avenants n° 1, 7 et 9) ;
     « révision du 24 juillet 1997 » visée par cinq arrêtés (fiche `r-cc-assurances-revision-1997`
@@ -1315,15 +1318,18 @@ en donnait trois.
   n° 2 (1989) et n° 4 (1993) ; bâtiment, avenants n° 1, 2, 4 et suite du n° 3 (1991-1992) — scans
   français au corpus, OCR à lancer. Montant de l'indemnité complémentaire provisoire (décrets
   n° 81-437 et n° 82-501, au corpus) pour comparer 1983-1993 au SMIG.
-- **Conventions — hauts de grille et pages à contrôler** : hauts de grille manquants (textile
-  1999-2001, 2003-2007 et septembre 2015 ; bâtiment 2005-2007 : pages identifiées, édition arabe au
-  corpus, une lecture à l'image chacune) ; pages de 1996, de 1999 et du n° 97 de 2002, déduites
-  d'un décalage constant ; haut de grille du textile de 1996 à 1998 (sous-catégorie) ; raison de la
-  date d'effet du 15 juin 2005 (texte de l'avenant n° 9 du textile) ; date d'effet du textile en
-  2011, montants et pages du textile de 2015 à 2020 ; date d'effet des conventions de 1974 et de
-  1975 ; régime horaire du textile. Les dix clés des avenants de 1996 à 2009 et de 2022 sont
-  versées sans URL (adresses pist.tn de l'édition arabe à vérifier ; pist.tn ne sert pas le n° 132
-  de 2022) ; l'intitulé français des neuf premières est à confirmer sur les visas.
+- **Conventions — hauts de grille, pages et points à confirmer : clos le 8 octobre 2026** par la
+  relecture à l'image (`marche-travail-conventions-collectives-relecture-2026-10-08.md`) : douze
+  hauts de grille lus, six points du textile confirmés sans correction, pages de 1996 à 2004
+  confirmées, date d'effet des deux conventions d'origine au 1er juin 1974 (articles 53 et 58).
+  **Restent** : la raison de la date d'effet du 15 juin 2005 (texte de l'avenant n° 9 du textile,
+  au corpus, en image) ; un rappel éventuel des grilles d'origine depuis le 1er juin 1974 ; le
+  régime horaire du textile ; la date du fascicule n° 81 de 2011 (bâtiment) ; l'avenant n° 16 du
+  bâtiment sur le fascicule lui-même (n° 132 de 2022, **à obtenir**) ou sur un second exemplaire ;
+  les grilles entières des deux branches (seuls le bas et le haut sont établis). Les dix clés des
+  avenants de 1996 à 2009 et de 2022 sont versées sans URL (adresses pist.tn de l'édition arabe à
+  vérifier ; pist.tn ne sert pas le n° 132 de 2022) ; l'intitulé français des neuf premières est à
+  confirmer sur les visas.
 - **Conventions — autres branches** : commerce, hôtellerie, mécanique et électricité (conventions
   d'origine en scans français au corpus ; avenants depuis 1996 dans l'édition arabe). Coût et
   fascicules dans la note, § D.

@@ -2887,6 +2887,7 @@
   raw:
   - sources/transcriptions/conventions-collectives-grilles-entree-note.csv
   - sources/transcriptions/conventions-collectives-grilles-entree-note-1996-2022.csv
+  - sources/transcriptions/conventions-collectives-grilles-relecture.csv
   - data/processed/jort/smig_smag.csv
   output: data/processed/jort/conventions_collectives_salaire_entree.csv
   unite: dinars courants par heure (salaire de base, SMIG) ; rapport sans unité
@@ -2903,28 +2904,32 @@
     ligne antérieure ou égale de la série `smig-smag`) et rapport bas de grille ÷
     SMIG'
   caveats: 'TRANSCRIPTION de deux notes documentaires du précis du 8 octobre 2026,
-    qui ont lu les grilles au Journal officiel ; fascicules non relus ici. TROIS ORIGINES
-    DE LECTURE, JAMAIS FONDUES (`origine_lecture`) : édition française ; édition arabe
-    (corpus local) ; pour l''avenant n° 16 du bâtiment (1er décembre 2021, 1er janvier
-    2023, 1er janvier 2024), REPRODUCTION DE L''ÉDITION ARABE SUR UN SITE TIERS (paie-tunisie.com,
-    pages 3709-3714 du n° 132 du 2 décembre 2022, fascicule absent du corpus et de
-    pist.tn ; adresse et empreinte dans la série). AUCUN RACCORD NI INTERPOLATION
-    : série en paliers, une ligne par date d''effet lue ; tracé en escalier permis
-    à l''intérieur d''un segment, jamais d''un segment à l''autre. Les grilles de
-    1990-1992 excluent l''indemnité complémentaire provisoire (décrets n° 81-437 et
-    n° 82-501) et ne se comparent pas au SMIG (`comparable_au_smig` = non, rapport
-    vide) ; non lus : avenants antérieurs à 1990, 1993, bâtiment 1991-1995. Date d''effet
-    des conventions de 1974 et 1975 non relevée : SMIG de la ligne du 1er juin 1974
-    que donne la note. SALAIRES DE BASE, hors indemnités conventionnelles. Régime
-    horaire du textile à confirmer. Haut de grille vide quand il n''est pas lu (textile
-    1999-2001, 2003-2007, septembre 2015 ; bâtiment 2005-2007). Valeurs à contrôler
-    avant citation signalées dans `reserve` (pages de 1996, 1999 et du n° 97 de 2002
-    déduites d''un décalage ; sous-catégorie du haut du textile 1996-1998 ; grille
-    du textile du 15 juin 2005 « à titre exceptionnel » ; date d''effet de 2011, pages
-    arabes de 2017 et 2019, lectures à résolution réduite de 2015-2020). SMIG : montants
-    de la série `smig-smag`, décrets non relus. Deux branches seulement. Ligne du
-    textile au 1er janvier 2026 : grille de l''avenant n° 18 ; effet du décret n°
-    2026-68 non tranché.'
+    qui ont lu les grilles au Journal officiel, et d''une relecture à l''image du
+    même jour appliquée en surcouche (douze hauts de grille lus, réserves levées,
+    date d''effet des conventions d''origine) ; fascicules non relus ici. Mêmes valeurs
+    que les paramètres d''openfisca-tunisia (`marche_travail/conventions_collectives`),
+    comparées par un test. TROIS ORIGINES DE LECTURE, JAMAIS FONDUES (`origine_lecture`)
+    : édition française ; édition arabe (corpus local) ; pour l''avenant n° 16 du
+    bâtiment (1er décembre 2021, 1er janvier 2023, 1er janvier 2024), REPRODUCTION
+    DE L''ÉDITION ARABE SUR UN SITE TIERS (paie-tunisie.com, pages 3709-3714 du n°
+    132 du 2 décembre 2022, fascicule absent du corpus et de pist.tn ; adresse et
+    empreinte dans la série). AUCUN RACCORD NI INTERPOLATION : série en paliers, une
+    ligne par date d''effet lue ; tracé en escalier permis à l''intérieur d''un segment,
+    jamais d''un segment à l''autre. Les grilles de 1990-1992 excluent l''indemnité
+    complémentaire provisoire (décrets n° 81-437 et n° 82-501) et ne se comparent
+    pas au SMIG (`comparable_au_smig` = non, rapport vide) ; non lus : avenants antérieurs
+    à 1990, 1993, bâtiment 1991-1995. Conventions d''origine : date d''effet du 1er
+    juin 1974 pour les deux (articles 53 et 58), qui est celle de la convention et
+    non une date imprimée sur la grille. SALAIRES DE BASE, hors indemnités conventionnelles.
+    Régime horaire du textile à confirmer. Aucune case vide. Ce qui reste à contrôler
+    est dans `reserve` (grille du textile du 15 juin 2005 « à titre exceptionnel »
+    ; avenant n° 16 du bâtiment lu sur une reproduction tierce ; date de notice du
+    fascicule du bâtiment de 2011) ; ce que la relecture a lu ou confirmé est dans
+    `relecture`. Les assurances (salaire mensuel, régime de 40 heures) sont dans la
+    série sœur `conventions-collectives-assurances-salaire`. SMIG : montants de la
+    série `smig-smag`, décrets non relus. Deux branches seulement. Ligne du textile
+    au 1er janvier 2026 : grille de l''avenant n° 18 ; effet du décret n° 2026-68
+    non tranché.'
   fiche: sources/conventions-collectives-grilles.md
 - id: oit-ilostat-couverture-negociation-collective
   titre: Taux de couverture de la négociation collective, Tunisie, 2010-2019 (OIT,

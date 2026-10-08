@@ -1,5 +1,24 @@
 # Convention collective nationale (puis sectorielle) des assurances — fiche de branche, 1975-2022
 
+> **Corrigé par la relecture du 8 octobre 2026** —
+> `docs/notes/remunerations-convention-collective-assurances-relecture-2026-10-08.md` (relecture à
+> l'image). Cette note n'est pas récrite ; ce que la relecture change :
+>
+> - § 0, § 4 (avenant n° 11), § 5.2 (1er juin 2014) et § 7 : la grille du 1er juin 2014 n'est pas
+>   « annoncée mais non imprimée » ; elle paraît à part au JORT n° 4 du 13 janvier 2015, édition
+>   arabe, p. 151 — bas 749,617 D, haut 1 652,900 D ; rapport au SMIG de 40 heures : 2,73 ; clé
+>   `cc-assurances-avenant11-grille-2015`. La hausse du bas de 2015 est de 11,9 % sur 2014 ;
+> - § 5.1 : bas du 1er juin 1990, grille n° 1 : 108,483 → 108,488 ; bas du 1er juin 1991 :
+>   124,195 → 124,196 ; hauts de 1989 et de 1990 (grille n° 1) confirmés ; le bas du 1er janvier
+>   1989 reste douteux (« 82,6?2 », illisible dans les deux éditions) ;
+> - § 5.2 : hauts de 2018 et de 2019 lus (2 296,900 et 2 484,900 D), mention « calculé » à retirer ;
+> - 803,276 D (échelle 21, échelon 12, 1er juin 1999) confirmé ; les échelons 12, 13 et 14 de
+>   l'échelle 21 sont lus aux 22 dates de 1999 à 2021.
+>
+> Le § 5 de la relecture désigne la présente note par son nom de travail,
+> `note-convention-assurances.md`.
+
+
 > Note du documentaliste, 8 octobre 2026 (passe commencée à 14 h 34, note écrite à 15 h 44, retouchée vers 15 h 52 — heures lues par `date`). Aucun dépôt modifié. Canevas :
 > `docs/notes/marche-travail-conventions-collectives-canevas.md`, sections 1 à 4 (plus le calcul de la section 5).
 > Sources : corpus local `~/projets/PDFs-legislation-tunisie/PDFs/JORT/<année>/{fr,ar}/` (fascicules identiques, octet pour

@@ -1,5 +1,26 @@
 # Conventions collectives sectorielles : ce que publient l'UGTT, le ministère et les archives du web — et le trou de 1996-2010
 
+> **Corrigé par la relecture du 8 octobre 2026** —
+> `docs/notes/marche-travail-conventions-collectives-relecture-2026-10-08.md` (relecture à l'image du
+> textile et du bâtiment). Cette note n'est pas récrite ; ce que la relecture change :
+>
+> - § B.1 et B.2, cases « n. l. » : les douze hauts de grille sont lus — textile, catégorie IV-2,
+>   échelon 0 : 1,305 (1999), 1,368 (2000), 1,431 (2001), 1,559 (2003), 1,629 (2004), 1,692
+>   (15 juin 2005), 1,759 (2006), 1,826 (2007) ; bâtiment, chef d'équipe du 3e degré : 1,927 (2005),
+>   2,001 (2006), 2,077 (2007). Le douzième, textile au 1er septembre 2015 (2,610), relève de la
+>   note de fond ;
+> - § B.1, « à contrôler avant citation », points (ii) et (iii) : les pages de 1996, de 1999 et de
+>   2002 sont confirmées au pied de page, sans changement ; le haut de 1996-1998 est bien la
+>   sous-catégorie IV-2, échelon 0 ; le point (i), la raison de la date du 15 juin 2005, reste ouvert ;
+> - « Références candidates » : les pages des clés de 1996 à 2004 sont confirmées ;
+> - « Lacunes et suites », contrôles à l'image restants : levés, hors la raison de la date du
+>   15 juin 2005, la grille mensuelle de 2021 et le second exemplaire de l'avenant n° 16 du bâtiment.
+>
+> La même relecture lève, dans la note de fond (`…-conventions-collectives-fond.md`), les six points
+> du textile « à confirmer » de 2011 et de 2015 à 2020 (aucune valeur corrigée) et établit la date
+> d'effet des deux conventions d'origine : 1er juin 1974 (articles 53 et 58).
+
+
 > Note du documentaliste, 8 octobre 2026. Prolonge `docs/notes/marche-travail-conventions-collectives-fond.md`
 > (« note de fond »). Aucun dépôt modifié. Fichiers téléchargés : `data/raw/emploi/conventions-collectives-archives/` de `tunisia-data` (hors git) (manifeste
 > `manifeste.tsv` : fichier, code HTTP, taille, SHA-256, adresse, date ; version tableau `manifeste.md`).
