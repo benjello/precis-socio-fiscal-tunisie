@@ -759,18 +759,19 @@ liste qui suit le tableau, citations comprises. Restent :
   conservée, section « Repères historiques » avec tableau des dates, registres repliés à colonne
   « Portée » ; `.domicile-unique` sur `#sec-statutaire-champ`, `#sec-statutaire-remuneration` et
   `#sec-augmentations-ep` seulement. Restent :
-  - **clés à créer (bibliographe)**, faute desquelles ces textes sont nommés sans ligne de
-    registre ni appel de citation : lois n° 70-46 et n° 2009-47 ; décrets n° 97-2133 et
-    n° 97-2134 ; modificatifs du décret n° 79-96 (n° 87-878 à n° 2010-2935) ; décrets n° 78-885
-    et n° 2014-12 (dirigeants) ; lois n° 67-51 et n° 2001-65 (banques) ; arrêté d'agrément de
-    1975 et avenant n° 5 de 2022 de la convention des banques ; décret n° 2019-1132
-    (magistrats) ;
+  - **clés versées le 8 octobre 2026 (bibliographe)** : lois n° 70-46, n° 2009-47, n° 67-51 et
+    n° 2001-65 ; décrets n° 97-2133, n° 97-2134, n° 78-885, n° 2014-12 et n° 2019-1132 ; les huit
+    modificatifs du décret n° 79-96 ; arrêté d'agrément de 1975 et avenant n° 5 de 2022 de la
+    convention des banques (`docs/notes/biblio-a-rapatrier.md`) ; les mentions du chapitre
+    statutaire autonome et du chapitre du marché contrôlé portent l'appel de citation ; **restent**
+    le texte arabe de l'arrêté de 1975 (fichier arabe du fascicule tronqué), le décret n° 2019-1132,
+    versé mais non cité (aucune mention au chapitre), et le décret gouvernemental n° 2016-742 du
+    10 mai 2016 (magistrats, JORT n° 50 du 21 juin 2016, intitulé arabe seul à l'index, adresses
+    française et arabe renseignées) : ni lu ni versé, inscrit au `TODO` du chapitre statutaire ;
+    les lois n° 70-46 et n° 2009-47 ont leur ligne de registre et leur lien depuis le 8 octobre 2026 ;
   - **décret n° 2026-65 (magistrats, 2026-2028)** : porté au registre de
     `#sec-statutaire-remuneration` par son seul intitulé ; fascicule JORT n° 44 de 2026
     **à lire** pour les montants ;
-  - **intitulé du décret n° 79-96** : le chapitre cite « grille indiciaire de la fonction
-    publique », l'entrée `decret-79-96` de `references.json` porte « grille des salaires
-    mensuels » ; JORT n° 5 de 1979 au corpus, **scan sans couche texte** : OCR ;
   - **`index.qmd`** : la liste des corps du régime statutaire autonome (annonce des chapitres
     et tableau des sous-périmètres) omet les agents des douanes, que le chapitre couvre ;
   - **Banque mondiale, transferts aux entreprises publiques (8,9 % et 7,5 % du PIB)** : ni page,
@@ -791,11 +792,12 @@ liste qui suit le tableau, citations comprises. Restent :
     (convention révisée : 10 novembre 1982 ou 13 avril 1983 ; avenants n° 1, 7 et 9) ;
     « révision du 24 juillet 1997 » visée par cinq arrêtés (fiche `r-cc-assurances-revision-1997`
     proposée par la note, non versée faute d'ancre au chapitre) ; édition de la loi de finances
-    pour 2022 du rapport sur les entreprises publiques sans clé ; intitulés arabes des
-    dix-sept entrées à relever ; montants en dinars constants ; articulation avec le décret
-    n° 2026-68 ;
-  - **marché contrôlé** : aucune rupture datée ; les dates de 1967, 1975, 1978, 2001, 2014
-    (décret n° 2014-12) et 2022 reposent sur des textes non versés à la bibliographie.
+    pour 2022 du rapport sur les entreprises publiques : clé `minfin-ep-2022` versée le
+    8 octobre 2026 (aucun assureur nommé non plus) ; intitulés arabes des
+    dix-sept entrées à relever ; articulation avec le décret n° 2026-68 (pas de colonne en
+    dinars constants au tableau des assurances : le propriétaire a répondu non, 8 octobre 2026) ;
+  - **marché contrôlé** : aucune rupture datée ; les textes des dates de 1967, 1975, 1978, 2001,
+    2014 (décret n° 2014-12) et 2022 sont versés à la bibliographie depuis le 8 octobre 2026.
 - **Augmentations générales (5 octobre 2026)** : les tranches de l'indemnité de gestion et
   d'exécution de 1993 à 2013 sont lues et relevées (`augmentations/augmentations-ige.csv`,
   § des cycles du régime indiciaire) ; les décrets des entreprises publiques de 1991 à 2026
@@ -806,15 +808,25 @@ liste qui suit le tableau, citations comprises. Restent :
     ou OCR ;
   - décrets parallèles des autres corps (ingénieurs, enseignants, santé, greffes…) :
     fascicules au corpus, **texte lisible** à partir de 1996 ; non relevés ;
-  - majoration de l'IGE au titre de 2011 (fiche `r-ige-2011`) : JORT n° 62, 73 et 90 à 99
-    de 2011 **à obtenir** en français (l'arabe n'a pas de couche texte exploitable) ;
+  - majoration de l'IGE au titre de 2011 — **trouvée le 8 octobre 2026** : décret n° 2011-2281 du
+    21 septembre 2011 (JORT n° 73 du 27 septembre 2011, édition arabe, pp. 1961-1962), repéré
+    par son intitulé arabe à l'index et **lu à l'image** ; effet au 1er juillet 2011, de 91 D
+    (administrateur général) à 27 D (catégorie D). Clé `decret2011-2281` versée (FR, AR), ligne
+    au registre `tbl-ri-ige-textes`, fiche `r-ige-2011` résolue. Restent : l'édition française
+    du fascicule, **à obtenir** (absente du corpus, 404 sur pist.tn) pour l'intitulé et la
+    pagination français ; le versement de 2011 au relevé `augmentations-ige.csv` et à
+    `scripts/augmentations.py` (les deux tableaux engendrés ne la portent pas — `TODO
+    (modéliste)`, `docs/notes/backlog-modele.md`). Leçon : une recherche par titres français
+    manque les notices dont l'index ne porte qu'un intitulé arabe — ajouter `iort_ar` ou un
+    motif arabe dans `titres_like` aux fiches du même genre ;
   - montants arrêtés par la commission supérieure pour les entreprises publiques, 1991-2012
     (fiche `r-montants-ep-commission`) : **à obtenir** hors JORT (rapports sur les
     entreprises publiques, communiqués conjoints de 1996 et 1999) ;
   - décrets des entreprises publiques entre 2013 et 2026 (fiche
     `r-augmentations-ep-2013-2025`) : plein texte 2014-2025 **lisible**, non parcouru ;
   - magistrats : le décret n° 2026-65 est porté au régime statutaire autonome par son
-    intitulé (8 octobre 2026) ; le décret n° 2019-1132 reste à identifier et à verser ;
+    intitulé (8 octobre 2026) ; le décret n° 2019-1132 est versé (clé `decret2019-1132`,
+    8 octobre 2026), non encore cité au chapitre ;
   - poids budgétaire par cycle : aucun texte ne le donne.
 - **Séries** : effectifs et masse salariale par régime ; dépenses de défense ; effectifs du
   secteur financier public. Substituer des sources tunisiennes officielles aux chiffres du
