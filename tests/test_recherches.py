@@ -337,7 +337,9 @@ class OutilsTest(unittest.TestCase):
     def test_normalisation_commune(self):
         self.assertEqual(r.sans_accents("Sécurité  SOCIALE"), "securite sociale")
         # Marques bidirectionnelles de pdftotext, chadda, tatweel.
-        self.assertEqual(r.sans_accents("عدد ‪4‬ لسنة ‪2024‬"), "عدد 4 لسنة 2024")
+        # (la ta marbouta se plie sur le ha : voir IntitulesArabesTest)
+        self.assertEqual(r.sans_accents("عدد ‪4‬ لسنة ‪2024‬"), "عدد 4 لسنه 2024")
+        self.assertEqual(r.sans_accents("عدد ‪4‬ لسنة ‪2024‬"), r.sans_accents("عدد 4 لسنة 2024"))
         self.assertEqual(r.sans_accents("الجمهوريّة"), r.sans_accents("الجمهورية"))
         self.assertEqual(r.sans_accents("الفلاحـيات"), r.sans_accents("الفلاحيات"))
 
@@ -388,6 +390,159 @@ class OutilsTest(unittest.TestCase):
         r.ajoute_passe(f, "decret2026-12", "lu", "2026-09-30", ["pist"], date="2026-10-01")
         self.assertEqual(f["resolu"], "decret2026-12")
         self.assertEqual(len(f["passes"]), 3)
+
+
+class AvertissementArabeTest(unittest.TestCase):
+    """Une part des notices de l'index n'a qu'un intitulé arabe (aucune avant 2011, 80 % en
+    2018) : la fiche qui croise ces années sans terme arabe ne les a jamais interrogées.
+    C'est un AVERTISSEMENT — le décret n° 2011-2281 avait été manqué ainsi —, pas une
+    erreur : `verifier` reste en succès."""
+
+    JOUR = __import__("datetime").date(2026, 10, 9)
+
+    def avert(self, f):
+        return r.avertissement_fiche(f, self.JOUR)
+
+    def test_fiche_exposee_sans_terme_arabe(self):
+        a = self.avert(fiche())  # depuis 2024-10-23, période ouverte
+        self.assertIn("r-exemple", a)
+        self.assertIn("2024-2026", a)
+        self.assertIn("iort_ar", a)
+        self.assertEqual(r.erreurs_fiche(fiche()), [])  # un avertissement n'est pas une erreur
+        self.assertEqual(r.avertissements([fiche(), fiche(resolu="decret-2026-12")], self.JOUR), [a])
+
+    def test_fiche_exposee_avec_terme_arabe(self):
+        f = fiche()
+        f["requetes"]["iort_ar"] = ["العاملات الفلاحيات"]
+        self.assertIsNone(self.avert(f))
+        f = fiche()  # glissé dans un champ de titres : joué sur l'index, donc compté
+        f["requetes"]["titres_like"].append("%العاملات الفلاحيات%")
+        self.assertIsNone(self.avert(f))
+
+    def test_terme_arabe_du_plein_texte_ne_lit_pas_l_index(self):
+        f = fiche()
+        f["requetes"]["plein_texte"] = ["العاملات الفلاحيات"]
+        self.assertIsNotNone(self.avert(f))
+
+    def test_fiche_close_avant_2011(self):
+        f = fiche(periode={"jusqu_au": "2010-12-31", "motif": "texte antérieur au décret n° 2011-1"})
+        f["requetes"]["depuis"] = "1990-01-01"
+        self.assertIsNone(self.avert(f))
+        f["periode"]["jusqu_au"] = "2011-12-31"
+        self.assertIn("2011", self.avert(f))
+
+    def test_2012_n_est_pas_exposee(self):
+        f = fiche(periode={"jusqu_au": "2012-12-31", "motif": "texte antérieur au décret n° 2013-1"})
+        f["requetes"]["depuis"] = "2012-01-01"
+        self.assertIsNone(self.avert(f))
+
+    def test_fiche_resolue(self):
+        self.assertIsNone(self.avert(fiche(resolu="decret-2026-12")))
+
+    def test_sans_depuis_la_recherche_part_de_1956(self):
+        f = fiche()
+        del f["requetes"]["depuis"]
+        self.assertIn("2011, 2013-2026", self.avert(f))
+
+    def test_annee_posterieure_a_la_table_tenue_pour_exposee(self):
+        f = fiche()
+        f["requetes"]["depuis"] = "2027-01-01"
+        jour = self.JOUR.replace(year=max(r.ANNEES_INTITULES_ARABES) + 2)
+        self.assertIsNotNone(r.avertissement_fiche(f, jour))
+
+    def test_fiche_malformee_ne_plante_pas(self):
+        self.assertIsNone(r.avertissement_fiche("pas une fiche", self.JOUR))
+        self.assertIsNotNone(self.avert({"id": "r-x", "requetes": "à refaire", "periode": []}))
+
+
+class IntitulesArabesTest(BaseTest):
+    """Les notices à intitulé arabe : pliage, référence « N لسنة AAAA », chiffres bornés."""
+
+    LIGNES = [
+        # Type en français devant un intitulé arabe (2016-2018), qui cite « 2012-2369 ».
+        (10, "Decret gouvernemental", "2017-358", "Decret gouvernemental n° 2017-358 du 09 Mars 2017, "
+         "يتعلق بإتمام الأمر عدد 2369 لسنة 2012 المتعلق بالجماعات المحليّة", "2017-03-14"),
+        # Même suite de chiffres, autre texte : « 12369 لسنة 2012 » n'est pas « 2369 لسنة 2012 ».
+        (11, "Arrete", None, "قرار يتعلق بالأمر عدد 12369 لسنة 2012", "2017-03-15"),
+        # Saisie avec ha final et ya final (« المحليه », « علي »).
+        (12, "Arrete", None, "قرار يتعلق بالمصادقة علي ميزانية الجماعات المحليه", "2018-05-02"),
+    ]
+
+    def setUp(self):
+        super().setUp()
+        self.cnx.close()
+        cnx = sqlite3.connect(self.base)
+        for recid, type_, numero, titre, date in self.LIGNES:
+            cnx.execute("insert into textes (recid, type, numero, titre, objet, date_publication, "
+                        "jort_annee, jort_numero, pages) values (?,?,?,?,?,?,?,?,?)",
+                        (recid, type_, numero, titre, titre, date, int(date[:4]), 20, "1"))
+            cnx.execute("insert into textes_fts (rowid, titre, objet, numero) values (?,?,?,?)",
+                        (recid, titre, titre, numero))
+        cnx.commit()
+        cnx.close()
+        self.cnx = r.ouvre_base(self.base)
+
+    def trouves(self, **requetes):
+        candidats, avert = r.cherche_base(self.cnx, requetes, "2011-01-01")
+        self.assertEqual(avert, [])
+        return candidats
+
+    def test_pliage_ta_marbouta_et_alif_maqsoura(self):
+        self.assertEqual(r.sans_accents("المحلية"), r.sans_accents("المحليه"))
+        self.assertEqual(r.sans_accents("على"), r.sans_accents("علي"))
+        self.assertTrue(r.motif("الجماعات المحلية").search(r.sans_accents("والجماعات المحليّه")))
+        # Pas plus loin : le ta ouvert et le ha ne se confondent pas avec autre chose.
+        self.assertNotEqual(r.sans_accents("المحلية"), r.sans_accents("المحليت"))
+
+    def test_pliage_dans_la_voie_like(self):
+        trouves = self.trouves(iort_ar=["الجماعات المحلية"])
+        self.assertEqual(sorted(trouves), [10, 12])
+        self.assertTrue(any(v.startswith("like ") for v in trouves[12][1]), trouves[12][1])
+        self.assertIn(12, self.trouves(iort_ar=["المصادقة على ميزانية"]))
+
+    def test_references_arabes(self):
+        req = {"titres_fts": ['"2012-2369"', '"décret 81-6" OR "2012-2369"'],
+               "titres_like": ["%74-499%", "%plan 2023-2025%", "%du 2024-10-23%", "%12-5%"],
+               "plein_texte": ["2024-4"]}
+        self.assertEqual(r.references_arabes(req), [
+            ("2012-2369", "2369 لسنة 2012"), ("81-6", "6 لسنة 1981"),
+            ("74-499", "499 لسنة 1974"), ("2024-4", "4 لسنة 2024")])
+        self.assertEqual(r.references_arabes({"iort_ar": ["العاملات"]}), [])
+
+    def test_reference_francaise_trouve_l_intitule_arabe(self):
+        trouves = self.trouves(titres_fts=['"2012-2369"'])
+        self.assertEqual(sorted(trouves), [10])  # ni le n° 12369, ni rien d'autre
+        self.assertTrue(all("forme arabe de 2012-2369" in v for v in trouves[10][1]), trouves[10][1])
+
+    def test_chiffres_bornes_dans_la_voie_like(self):
+        self.assertEqual(sorted(self.trouves(iort_ar=["2369 لسنة 2012"])), [10])
+        self.assertEqual(sorted(self.trouves(iort_ar=["369 لسنة 2012"])), [])
+        # « 2026-1 » n'est ni « 2026-12 » ni « 2026-13 » ; « 2026-12 » reste trouvé.
+        self.assertEqual(sorted(self.trouves(titres_like=["%2026-1%"])), [])
+        self.assertEqual(sorted(self.trouves(titres_like=["%2026-12%"])), [2])
+        # Un joker intérieur garde le LIKE tel qu'il est écrit.
+        self.assertFalse(r.est_borne("decret%2026-1"))
+        self.assertEqual(sorted(self.trouves(titres_like=["%decret%2026-1%"])), [2])
+
+    def sortie(self, f):
+        sortie = io.StringIO()
+        with contextlib.redirect_stdout(sortie):
+            r.relance(f, base=self.base, corpus=self.dossier / "corpus", plein_texte=False)
+        return sortie.getvalue()
+
+    def test_relance_compte_les_intitules_arabes(self):
+        f = fiche()
+        f["requetes"]["depuis"] = "2017-01-01"
+        texte = self.sortie(f)  # la dernière passe couvre 2025 : le décompte part de 2017
+        self.assertIn("intitulés arabes seuls : 3 notice(s) sur 7 du 2017-01-01 au 2026-03-02", texte)
+        self.assertIn("aucun terme arabe dans la fiche", texte)
+        f["requetes"]["iort_ar"] = ["الجماعات المحلية"]
+        texte = self.sortie(f)
+        self.assertIn("intitulés arabes seuls : 3 notice(s)", texte)
+        self.assertNotIn("aucun terme arabe dans la fiche", texte)
+
+    def test_relance_sans_intitule_arabe_dans_la_periode(self):
+        self.assertNotIn("intitulés arabes seuls", self.sortie(fiche()))  # depuis 2024-10-23
 
 
 class PeriodeCloseTest(BaseTest):

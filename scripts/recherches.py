@@ -11,7 +11,7 @@ L'ancre renvoie à une fiche de `docs/recherches.yml`, dont la trace est une REQ
 une phrase : ce qu'on a cherché, dans quelles sources, jusqu'où, avec quel résultat. Ce
 script la tient et la rejoue :
 
-    uv run python scripts/recherches.py verifier
+    uv run python scripts/recherches.py verifier [--avertissements]
     uv run python scripts/recherches.py lister [--perimees]
     uv run python scripts/recherches.py relancer <id> | --perimees [--depuis AAAA-MM-JJ] \\
         [--sans-plein-texte] [--sonder-pist]
@@ -35,6 +35,14 @@ arabe (pist.tn sert parfois le même fichier aux deux adresses) est compté « F
 (fichier arabe) », non comme lu. `relancer --sonder-pist` teste sur pist.tn, sans
 télécharger, les numéros que `jort_cache` ignore (`docs/notes/outillage-sources.md`, § 1 f) ;
 la vérification TLS n'y est désactivée que pour www.pist.tn (`pist_tls.py`).
+
+Intitulés arabes. Une part des notices de `jort_cache` n'a qu'un intitulé arabe — aucune
+avant 2011, jusqu'à 80 % en 2018 (`ANNEES_INTITULES_ARABES`) : une requête française sur
+les titres ne les atteint pas. `requetes.iort_ar` se joue aussi sur les titres de l'index ;
+`verifier` AVERTIT (sans échouer) de toute fiche non résolue dont la période croise ces
+années sans porter aucun terme arabe, `relancer` compte les notices en cause, et toute
+référence « AAAA-N » ou « AA-N » d'une fiche est aussi cherchée sous sa forme arabe,
+« N لسنة AAAA ».
 
 Réécriture du registre. `ruamel.yaml` n'est pas une dépendance du projet : `elargir` et
 `passe` réécrivent donc `docs/recherches.yml` sous une forme CANONIQUE (ordre des clés
@@ -315,6 +323,63 @@ def erreurs_fiche(fiche) -> list[str]:
     return err
 
 
+# Part (en %) des notices de `jort_cache` (table `textes`, doublons compris) dont le titre
+# est en caractères arabes, par année de publication. Mesure du 8 octobre 2026 sur l'index
+# (dernière publication indexée : 2 octobre 2026) : 5 352 notices sur 79 602. Aucune avant
+# 2011 (14 notices isolées en 1974, 1991 et 2005) ni en 2012 ; en 2011, toutes au second
+# semestre (JORT n° 61 à 99). De 2016 à 2018 le type reste en français devant un intitulé
+# arabe ; à partir de 2019 tout le titre est arabe. Table figée : `verifier` ne lit pas la
+# base, que la CI n'a pas. Une année postérieure à la table est tenue pour exposée.
+ANNEES_INTITULES_ARABES = {
+    2011: 37, 2013: 5, 2014: 9, 2015: 40, 2016: 70, 2017: 53, 2018: 80, 2019: 76,
+    2020: 14, 2021: 9, 2022: 13, 2023: 16, 2024: 8, 2025: 9, 2026: 8,
+}
+# Les champs que `cherche_base` joue sur les titres de l'index ; un terme arabe de
+# `plein_texte` ne lit que les fascicules, pas les notices.
+SOURCES_DE_TITRES = ["titres_fts", "titres_like", "iort_ar"]
+
+
+def termes_arabes(fiche: dict) -> list[str]:
+    """Termes en caractères arabes que la fiche joue sur les titres de l'index."""
+    req = fiche.get("requetes")
+    if not isinstance(req, dict):
+        return []
+    return [t for s in SOURCES_DE_TITRES for t in (req.get(s) or [])
+            if isinstance(t, str) and _ARABE.search(t)]
+
+
+def annees_exposees(fiche: dict, aujourd_hui: dt.date | None = None) -> list[int]:
+    """Années à intitulés arabes que croise la période de RECHERCHE de la fiche : de
+    `requetes.depuis` (1956 à défaut) à `periode.jusqu_au` (aujourd'hui à défaut)."""
+    req = fiche.get("requetes") if isinstance(fiche.get("requetes"), dict) else {}
+    per = fiche.get("periode") if isinstance(fiche.get("periode"), dict) else {}
+    debut = int((iso(req.get("depuis")) or "1956")[:4])
+    fin = int((iso(per.get("jusqu_au")) or (aujourd_hui or dt.date.today()).isoformat())[:4])
+    derniere = max(ANNEES_INTITULES_ARABES)
+    return [a for a in range(max(debut, min(ANNEES_INTITULES_ARABES)), fin + 1)
+            if a in ANNEES_INTITULES_ARABES or a > derniere]
+
+
+def avertissement_fiche(fiche, aujourd_hui: dt.date | None = None) -> str | None:
+    """Un avertissement, pas une erreur : la fiche non résolue dont la période croise des
+    années à intitulés arabes et qui ne porte aucun terme arabe n'a jamais interrogé ces
+    notices."""
+    if not isinstance(fiche, dict) or fiche.get("resolu") or termes_arabes(fiche):
+        return None
+    annees = annees_exposees(fiche, aujourd_hui)
+    if not annees:
+        return None
+    pire = max(annees, key=lambda a: ANNEES_INTITULES_ARABES.get(a, -1))
+    part = (f" (jusqu'à {ANNEES_INTITULES_ARABES[pire]} % des notices, en {pire})"
+            if pire in ANNEES_INTITULES_ARABES else "")
+    return (f"{fiche.get('id', '(sans id)')} : aucun terme arabe, alors que la période croise "
+            f"{compacte(annees)}, années à intitulés arabes seuls{part} — remplir requetes.iort_ar")
+
+
+def avertissements(fiches: list, aujourd_hui: dt.date | None = None) -> list[str]:
+    return [a for a in (avertissement_fiche(f, aujourd_hui) for f in fiches) if a]
+
+
 def verifie(fiches: list, racine: Path = RACINE, fichiers: list[Path] | None = None) -> list[str]:
     """Toutes les incohérences entre le registre et les ancres des `.qmd` français."""
     fichiers = fichiers_qmd(racine) if fichiers is None else fichiers
@@ -370,12 +435,17 @@ _BIDI = {
     0xFEFF: None,
 }
 _ESPACES = re.compile(r"\s+")
+# Deux pliages arabes, et pas davantage : ta marbouta et ha finaux, alif maqsoura et ya
+# s'échangent d'une saisie à l'autre (« المحلية » / « المحليه », « على » / « علي »). Plier
+# plus loin (les hamzas hors NFKD, les alifs) rapprocherait des mots distincts.
+_PLIAGE_ARABE = str.maketrans({"ة": "ه", "ى": "ي"})
 _APOSTROPHES = str.maketrans({"’": "'", "‘": "'", "ʼ": "'", "–": "-", "—": "-", "‑": "-"})
 
 
 def sans_accents(texte) -> str:
     """Minuscules, sans diacritiques (accents français, harakat et chadda arabes), sans
-    marques bidirectionnelles ni tatweel, espaces réduites à une seule.
+    marques bidirectionnelles ni tatweel, ta marbouta pliée sur ha et alif maqsoura sur
+    ya, espaces réduites à une seule.
 
     C'est la même normalisation pour ce qu'on cherche et pour ce qu'on parcourt : une
     requête `LIKE` accentuée ne manque plus les titres non accentués de `jort_cache`
@@ -386,7 +456,8 @@ def sans_accents(texte) -> str:
         return ""
     t = unicodedata.normalize("NFKD", str(texte).translate(_BIDI))
     t = "".join(c for c in t if unicodedata.category(c) != "Mn")
-    return _ESPACES.sub(" ", t.translate(_APOSTROPHES)).strip().lower()
+    t = t.translate(_APOSTROPHES).translate(_PLIAGE_ARABE)
+    return _ESPACES.sub(" ", t).strip().lower()
 
 
 def motif(terme: str) -> re.Pattern:
@@ -419,6 +490,43 @@ def like_depuis_fts(expr: str) -> str | None:
     return None
 
 
+# Une référence « AAAA-N » ou « AA-N » (« 2012-2369 », « 81-6 ») ; ni une date
+# (« 2024-10-23 »), ni un morceau de nombre plus long.
+RE_REFERENCE = re.compile(r"(?<![\d-])(\d{4}|\d{2})-(\d{1,4})(?![\d-])")
+
+
+def references_arabes(requetes: dict) -> list[tuple[str, str]]:
+    """[(référence, « N لسنة AAAA »)] pour chaque référence chiffrée des termes de la fiche.
+
+    Les intitulés arabes de l'index citent les textes sous cette forme : « 2369 لسنة 2012 »
+    trouve les modificatifs que « 2012-2369 » ne peut pas voir. Une année à deux chiffres
+    est du XXe siècle (56 à 99 ; la numérotation passe à quatre chiffres en 2000). Une
+    plage d'années (« 2023-2025 », un plan) n'est pas une référence : écartée quand N, à
+    quatre chiffres, suit l'année de dix ans au plus."""
+    derivees = {}
+    for source in SOURCES_DE_TERMES:
+        for terme in requetes.get(source) or []:
+            for m in RE_REFERENCE.finditer(str(terme)):
+                annee, numero = m.group(1), int(m.group(2))
+                if len(annee) == 2:
+                    if int(annee) < 56:
+                        continue
+                    annee = "19" + annee
+                if not 1956 <= int(annee) <= 2100 or numero == 0:
+                    continue
+                if len(m.group(2)) == 4 and int(annee) < numero <= int(annee) + 10:
+                    continue
+                derivees.setdefault(m.group(0), f"{numero} لسنة {annee}")
+    return list(derivees.items())
+
+
+def est_borne(noyau: str) -> bool:
+    """Un motif LIKE sans joker intérieur, qui commence ou finit par un chiffre, se borne
+    comme `motif()` borne le plein texte."""
+    return bool(noyau) and "%" not in noyau and "_" not in noyau \
+        and (noyau[0].isdigit() or noyau[-1].isdigit())
+
+
 # ---------------------------------------------------------------------------
 # Sources
 # ---------------------------------------------------------------------------
@@ -432,6 +540,8 @@ def ouvre_base(chemin: Path) -> sqlite3.Connection:
     """Lecture seule, sans verrou (`immutable=1`), avec la normalisation en SQL."""
     cnx = sqlite3.connect(f"file:{chemin}?immutable=1", uri=True)
     cnx.create_function("sans_accents", 1, sans_accents, deterministic=True)
+    cnx.create_function("en_arabe", 1, lambda t: int(bool(_ARABE.search(t or ""))),
+                        deterministic=True)
     cnx.row_factory = sqlite3.Row
     return cnx
 
@@ -443,7 +553,17 @@ def derniere_publication(cnx: sqlite3.Connection) -> str | None:
 
 
 COLONNES = ("t.recid, t.type, coalesce(t.numero, '') as numero, t.titre, t.date_publication, "
-            "t.jort_annee, t.jort_numero, t.pages, t.pdf_fr, t.pdf_ar")
+            "t.jort_annee, t.jort_numero, t.pages, t.pdf_fr, t.pdf_ar, t.objet")
+
+
+def notices_arabes(cnx: sqlite3.Connection, debut: str, fin: str | None = None) -> tuple[int, int]:
+    """(notices à intitulé arabe, notices) de `textes` publiées de `debut` à `fin`, bornes
+    incluses, doublons compris — la mesure de `ANNEES_INTITULES_ARABES`."""
+    arabes, toutes = cnx.execute(
+        "select coalesce(sum(en_arabe(titre)), 0), count(*) from textes "
+        "where date_publication between ? and ? and jort_annee between 1956 and 2100",
+        (debut, fin or "9999")).fetchone()
+    return arabes, toutes
 
 
 def cherche_base(cnx: sqlite3.Connection, requetes: dict, seuil: str,
@@ -451,7 +571,10 @@ def cherche_base(cnx: sqlite3.Connection, requetes: dict, seuil: str,
     """Rend ({recid: (ligne, [voies])}, [avertissements]) pour les textes publiés à partir
     de `seuil` et, pour une période close, jusqu'à `fin` (bornes incluses). Chaque terme est cherché par DEUX voies — FTS (insensible aux
     accents) et LIKE sur titre et objet normalisés — pour qu'un faux négatif de l'une ne
-    fasse pas conclure à l'absence."""
+    fasse pas conclure à l'absence. Dans la voie LIKE, un motif qui commence ou finit par un
+    chiffre ne se prolonge pas en chiffres (`est_borne`) : « 6 لسنة 1981 » ne répond pas sur
+    « 526 لسنة 1981 », ni « 2024-4 » sur « 2024-48 ». Toute référence chiffrée de la fiche
+    est aussi cherchée sous sa forme arabe (`references_arabes`)."""
     candidats: dict[int, tuple[sqlite3.Row, list[str]]] = {}
     avert = []
     fin = fin or "9999"
@@ -471,27 +594,36 @@ def cherche_base(cnx: sqlite3.Connection, requetes: dict, seuil: str,
         except sqlite3.OperationalError as e:
             avert.append(f"requête FTS refusée par SQLite ({voie}) : {e}")
 
-    def like(motif, voie):
-        m = sans_accents(motif)
+    def like(modele, voie):
+        m = sans_accents(modele)
         if "%" not in m:
             m = f"%{m}%"
-        ajoute(cnx.execute(
+        lignes = cnx.execute(
             f"select {COLONNES} from textes t where t.date_publication between ? and ? "
             "and t.jort_annee between 1956 and 2100 "
             "and (sans_accents(t.titre) like ? or sans_accents(t.objet) like ?)",
-            (seuil, fin, m, m)), voie)
+            (seuil, fin, m, m)).fetchall()
+        noyau = m.strip("%")
+        if est_borne(noyau):
+            borne = motif(noyau)
+            lignes = [l for l in lignes if borne.search(sans_accents(l["titre"]))
+                      or borne.search(sans_accents(l["objet"]))]
+        ajoute(lignes, voie)
 
     for expr in requetes.get("titres_fts") or []:
         fts(expr, f"fts {expr}")
         derive = like_depuis_fts(expr)
         if derive:
             like(derive, f"like {derive} (doublant fts)")
-    for motif in requetes.get("titres_like") or []:
-        like(motif, f"like {motif}")
-        fts(phrase_fts(motif), f"fts {phrase_fts(motif)} (doublant like)")
+    for modele in requetes.get("titres_like") or []:
+        like(modele, f"like {modele}")
+        fts(phrase_fts(modele), f"fts {phrase_fts(modele)} (doublant like)")
     for terme in requetes.get("iort_ar") or []:
         like(terme, f"like {terme} (titre arabe)")
         fts(phrase_fts(terme), f"fts {phrase_fts(terme)} (titre arabe)")
+    for reference, terme in references_arabes(requetes):
+        like(terme, f"like {terme} (forme arabe de {reference})")
+        fts(phrase_fts(terme), f"fts {phrase_fts(terme)} (forme arabe de {reference})")
     return candidats, avert
 
 
@@ -979,6 +1111,17 @@ def relance(fiche: dict, depuis: str | None = None, plein_texte: bool = True,
                     print(f"      {cle} : {PIST}{l[cle]}")
             print(f"      trouvé par : {' | '.join(dict.fromkeys(voies))}")
         print(f"  {len(candidats)} candidat(s).")
+        # Sur toute la période de recherche, non depuis la dernière passe : des notices
+        # qu'aucun terme arabe n'a interrogées ne sont couvertes par aucune passe.
+        naissance = iso(req.get("depuis")) or "1956-01-01"
+        arabes, toutes = notices_arabes(cnx, naissance, fin_objet)
+        if arabes:
+            au = fin_objet or fin
+            print(f"  intitulés arabes seuls : {arabes} notice(s) sur {toutes} du {naissance} au {au}"
+                  " — une requête française sur les titres ne les atteint pas.")
+            if not termes_arabes(fiche):
+                print("  ! aucun terme arabe dans la fiche : ces notices n'ont pas été interrogées "
+                      "(elargir --source iort_ar repart de la naissance de l'objet).")
         if plein_texte or sonder:
             dates = {(a, n): d for a, n, d in cnx.execute(
                 "select jort_annee, jort_numero, min(date_publication) from textes "
@@ -1081,7 +1224,9 @@ def _date_iso(texte: str) -> str:
 def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     sub = ap.add_subparsers(dest="commande", required=True)
-    sub.add_parser("verifier", help="registre et ancres cohérents (CI)")
+    p = sub.add_parser("verifier", help="registre et ancres cohérents (CI)")
+    p.add_argument("--avertissements", action="store_true",
+                   help="lister les fiches exposées aux intitulés arabes sans terme arabe")
     p = sub.add_parser("lister", help="fiches, ancres, dernières passes")
     p.add_argument("--perimees", action="store_true")
     p = sub.add_parser("relancer", help="rejouer les requêtes d'une fiche")
@@ -1117,6 +1262,14 @@ def main(argv: list[str]) -> int:
             return 1
         n = len(ancres(fichiers_qmd()))
         print(f"{len(fiches)} fiche(s), {n} ancre(s) RECHERCHE : registre cohérent.")
+        avert = avertissements(fiches)
+        if avert:
+            print(f"{len(avert)} avertissement(s) : fiche(s) non résolue(s) sans terme arabe, dont "
+                  "la période croise des années à intitulés arabes seuls"
+                  + (" :" if args.avertissements else " (liste : verifier --avertissements)."))
+            if args.avertissements:
+                for a in avert:
+                    print(f"  ! {a}")
         return 0
     if args.commande == "lister":
         return cmd_lister(fiches, args.perimees)
