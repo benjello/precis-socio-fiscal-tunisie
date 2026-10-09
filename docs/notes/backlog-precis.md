@@ -105,7 +105,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et un chapitre transversal sur les dépenses fiscales et les régimes d'incitation (6 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
-| Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; plan de conversion du volume dans `docs/notes/prestations-sociales-plan-architecte.md` | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
+| Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; plan de conversion du volume dans `docs/notes/prestations-sociales-plan-architecte.md` | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
 | Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences à convertir | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
 
@@ -661,19 +661,40 @@ liste qui suit le tableau, citations comprises. Restent :
     **locaux et textuels** : `arrete-2026-04-21-transferts` (`2026/fr/Jo0402026.pdf`, p. 786),
     `decret-2025-426-allocation-familiale-6-18` (`2025/fr/Jo1212025.pdf`, p. 2518),
     `arrete-2025-11-03-allocation-familiale-6-18` (`2025/fr/Jo1322025.pdf`, p. 2963) ;
-  - **reste, pour le documentaliste** (TODO du chapitre) : la portée de la majoration pour
-    handicap lourd de l'article 5 (les quatre paliers ou le premier seul ; décret lisible dans
-    `2020/fr/Jo0452020.pdf`, p. 1093, et dans l'édition arabe) ; le cumul de l'allocation des
-    6 à 18 ans avec le supplément de 10 D par enfant, qu'aucun texte lu ne règle ; ce qui est dû
-    de janvier à novembre 2025 (institution au 1er janvier 2025, montant exécutoire le
-    9 novembre) ; le fondement des enfants de 6 à 18 ans aidés en 2023 selon le rapport du
-    ministère ; le seuil de score (circulaire n° 12 du 12 mai 2022, hors *Journal officiel*, à
-    obtenir) : il n'est pas au chapitre ;
+  - **reprise du 9 octobre 2026, d'après `docs/notes/prestations-sociales-lectures-2026-10-09.md`** (réponses D0 à D5, D11 ; six passages,
+    rien de réorganisé) : l'allocation des 6 à 18 ans est décrite comme un programme pilote sur
+    don depuis 2022 (rapport du ministère pour 2023, UNICEF 2024, Banque mondiale 2026), puis
+    instituée par le décret n° 2025-426, qui ne vise que la Constitution ; le supplément de 10 D
+    est dit borné aux 6 à 18 ans depuis le 1er février 2022, non supprimé ; la majoration pour
+    handicap lourd est dite valoir pour les quatre paliers, avec la divergence « à charge » de
+    l'édition arabe ; le seuil de score est dit fixé par aucun texte publié ; les visas de
+    l'arrêté du 5 août 2026 (textes de pensions) sont signalés, avec renvoi au livre
+    « Retraites ». Trois clés créées en français et en arabe (`mas-amen-social-2023`, sans
+    adresse publique vérifiée ; `unicef2024allocations618` ; `banquemondiale2026ppiaf000292`),
+    PDF rangés dans `tunisia-data` ; trois fiches de recherche créées
+    (`r-amen-smig-regime`, `r-amen-seuil-score-circulaires`, `r-amen-cumul-supplement-6-18`) ;
+  - **reste, pour la relecture humaine** : valider la lecture D3 (décompte des alinéas de
+    l'article 5, appuyé sur l'article 7 ; décret lisible dans `2020/fr/Jo0452020.pdf`, p. 1093,
+    et dans l'édition arabe, p. 1248) avant d'engendrer les plafonds majorés ; dire si l'édition
+    arabe fait foi pour la condition « à charge », et sur quel texte ;
+  - **reste, pour le documentaliste** (TODO et ancres du chapitre) : relire **à l'image** les
+    pages du rapport du ministère pour 2023 sur l'allocation des 6 à 18 ans (PDF 36-38, lues sur
+    la seule couche texte arabe : convention du 28 septembre 2022, 191, 188 et 124,6 millions de
+    dinars, effectifs de décembre 2023, phrase des 20 D du don et des 10 D du budget) — le PDF
+    est local, aucune OCR à lancer ; ce qui a été servi au titre de 2025 (institution au
+    1er janvier, montant exécutoire le 9 novembre) ; la règle de cumul du supplément de 10 D et
+    de l'allocation de 30 D depuis 2025 (`r-amen-cumul-supplement-6-18`, aucun texte identifié) ;
+    le régime du salaire minimum des plafonds (`r-amen-smig-regime`) ; les circulaires du score,
+    mai 2022 et octobre 2025, hors *Journal officiel*, **à obtenir**
+    (`r-amen-seuil-score-circulaires`) ; les six études citées de seconde main par les pièces
+    de la Banque mondiale (§ 1.10 de la note), à récupérer avant toute section d'études ;
   - **reste, pour le terminologue** : la définition de « allocation familiale non
     contributive » au glossaire ne connaît que les moins de six ans ;
   - **non fait ici** (conversion du chapitre, `docs/notes/prestations-sociales-plan-architecte.md`) :
     figures de l'aide permanente, des bénéficiaires et des crédits ; séries du rapport de suivi
-    du ministère pour 2023, à instantaner ; rapports extérieurs rangés mais non dépouillés.
+    du ministère pour 2023, à instantaner — dont les enfants de 6 à 18 ans allocataires, à tracer en deux
+    segments, don puis budget (juillet 2022, décembre 2023, mai 2026 ; § 1.11 de la note de lectures) ;
+    rapports extérieurs dépouillés dans la note de lectures, section d'études non écrite.
 
 - **Tableau engendré — fait le 3 octobre 2026** : les indemnités familiales du secteur public
   (`tbl-indemnites-familiales-public`) sont désormais le tableau du livre « Retraites », émis
