@@ -667,7 +667,8 @@ liste qui suit le tableau, citations comprises. Restent :
     du ministère pour 2023, à instantaner — dont les enfants de 6 à 18 ans allocataires, à tracer en deux
     segments, don puis budget (juillet 2022, décembre 2023, mai 2026 ; § 1.11 de la note de lectures) ;
     rapports extérieurs dépouillés dans la note de lectures, section d'études non écrite.
-    → **clos par la conversion ci-dessous**, sauf la figure des enfants.
+    → **clos par la conversion ci-dessous** ; la figure des enfants l'est par
+    `fig-nc-montee-en-charge` (retouches du 9 octobre 2026).
 - **Assistance sociale convertie aux principes de présentation — 9 octobre 2026 (non commité, à
   relire)** (`_non_contributives.qmd`, `#sec-prest-non-contributives`, titre « L'assistance
   sociale : du programme d'aide aux familles nécessiteuses à l'Amen social », chapitre en
@@ -715,12 +716,32 @@ liste qui suit le tableau, citations comprises. Restent :
     gouvernemental n° 2018-626 ; les décrets n° 93-529, n° 94-1738 et n° 99-1372 ; le décompte
     « onze décrets de prorogation sur seize » de la note, non repris faute de lecture des
     quatre décrets de la chaîne de la carte de soins gratuits ;
+  - **retouches du 9 octobre 2026 après lecture du rendu (non commité, à relire)** :
+    `tbl-nc-rentree-scolaire` refait en trois dates d'effet (25 mai 2020, décembre 2022,
+    1^er^ septembre 2024), montant et enfants visés, avec son registre replié
+    (`r-nc-rs-2020/2022/2024`, arrêté, article, page) ; deux séries versées au cache
+    (`amen-social-effectifs-suivi`, `pnafn-transfert-smig-banque-mondiale`) ; figure de la
+    montée en charge (`fig-nc-montee-en-charge`, deux vues : transfert permanent 2010-2026,
+    enfants allocataires 2022-2026, familles de sources non reliées, dates de droit et rupture
+    de série du 27 mars 2026) — **clôt** « la figure des enfants » et le versement des séries
+    d'effectifs ; quinze valeurs annuelles de la Banque mondiale ajoutées à part sur
+    `fig-pnafn-allocation`, le texte disant que le pouvoir d'achat de l'aide n'est pas établi
+    avant 2009 ; « transferts financiers directs » réservé aux citations de la loi organique
+    (art. 11 : « des transferts financiers directs versés chaque mois »), la prose et le
+    glossaire disant « transferts monétaires mensuels » ;
+    **reste, rédacteur** : engendrer `tbl-nc-effectifs`, `tbl-nc-enfants` et
+    `tbl-nc-suivi-projet` depuis `amen-social-effectifs-suivi` ; verser `amen-social-cout-pib`
+    et engendrer `tbl-nc-pib` ; libellés arabes de la figure de la montée en charge ;
+    **reste, documentaliste** : date exécutoire de l'arrêté du 8 décembre 2022 (dépôt du
+    fascicule n° 136 non établi : le chapitre écrit « décembre 2022 ») ; **à trancher** : la
+    colonne « Texte » des tableaux engendrés du chapitre (`tbl-aides-ponctuelles`,
+    `tbl-amen-base`, `tbl-amen-vs-afnc`…) rend l'intitulé entier de l'arrêté dans chaque
+    case — forme commune à tout `generate_prestations_tables.py`, non modifiée ici ;
   - **reste, bibliographe** : treize clés pour les décrets de prorogation des cartes de soins
     (`tbl-nc-cartes-prorogations`, sans citation) ; type CSL de l'accord de prêt n° 9230-TN ;
     adresses des cinq notices à rouvrir (reprises du catalogue de `tunisia-data`) ;
   - **non fait** : part des crédits du ministère dans le PIB (trois points ; demande de dire
-    la base et de renvoyer à l'annexe du PIB) ; figure des enfants allocataires en deux
-    segments, don puis budget.
+    la base et de renvoyer à l'annexe du PIB).
 
 - **Tableau engendré — fait le 3 octobre 2026** : les indemnités familiales du secteur public
   (`tbl-indemnites-familiales-public`) sont désormais le tableau du livre « Retraites », émis

@@ -43,10 +43,12 @@ En 2026, l'État verse aux ménages que le programme Amen social classe parmi le
 #| output: asis
 figtools.figure_tabs(
     fig_as.fig_aide_permanente(), fig_as.table_aide_permanente(),
-    fig_as.SERIE_PNAFN, *fig_as.SERIES_IPC,
+    fig_as.SERIE_PNAFN, fig_as.SERIE_PNAFN_BM, *fig_as.SERIES_IPC,
     slug="fig_pnafn_allocation",
     caption=("Allocation mensuelle du programme national d'aide aux familles nécessiteuses, "
-             "en dinars courants et en dinars constants de 2025, 1987-2024"),
+             "en dinars courants et en dinars constants de 2025, 1987-2024 : série du "
+             "chapitre et, à part, quinze valeurs annuelles d'une figure de la Banque "
+             "mondiale, 1987-2021"),
     note_lecture=(
         "La courbe grise retrace les onze paliers de l'allocation en dinars courants, de "
         "7,7 dinars en 1987 à 180 dinars en 2018. La courbe orange donne le pouvoir d'achat "
@@ -61,15 +63,32 @@ figtools.figure_tabs(
         "date de sa publication : la figure le prolonge jusqu'à cette année. Cet arrêté ne "
         "dit pas depuis quand ce montant est servi, et la date du 1^er^ avril 2018 à laquelle "
         "la série le place n'est établie par aucun texte identifié. Les sources "
-        "administratives de toutes les dates et des autres montants restent à établir. Le "
-        "transfert de l'Amen social, de 180 dinars en 2020 à 280 dinars en 2026, est au "
-        "tableau de son montant de base."),
+        "administratives de toutes les dates et des autres montants restent à établir. "
+        "Les carrés bleus et les triangles violets sont une seconde famille, jamais reliée "
+        "à la première : les quinze valeurs annuelles du transfert mensuel du programme "
+        "qu'une figure de la Banque mondiale de 2022 imprime, en dinars courants puis "
+        "converties en dinars de 2025 par le même indice. Chaque point est placé au milieu "
+        "de son année ; rien n'est interpolé entre deux points. Cette figure donne pour "
+        "source « l'Institut national de la statistique et le ministère des Affaires "
+        "sociales », sans citer de texte. Les deux familles concordent en 1987 (7,7 "
+        "dinars), en 2000 (36,3), en 2015 (150) et de 2019 à 2021 (180) ; en 2012, 2013 et "
+        "2014, la valeur de la Banque mondiale (92,5 ; 105 ; 115) égale la moyenne sur "
+        "l'année des deux paliers de la série. Elles divergent ailleurs : 15 dinars en 1990 "
+        "et 25,8 en 1995, quand la série tient 7,7 dinars de 1987 à 2000 ; 43,3 en 2005, "
+        "quand elle tient 36,3 de 2000 à 2009 ; 56,7 en 2010, 68,3 en 2011 et 180 en 2018, "
+        "années où la série passe de 56,7 à 63,3, de 63,3 à 70 et de 150 à 180. En dinars "
+        "de 2025, l'écart est de 77,1 contre 39,6 en 1990, de 100,7 contre 30,1 en 1995 et "
+        "de 126,7 contre 106,2 en 2005. Aucune des deux familles n'est établie par un "
+        "texte : la figure ne tranche pas. Le transfert de l'Amen social, de 180 dinars en "
+        "2020 à 280 dinars en 2026, est au tableau de son montant de base."),
     generated="{{< meta date >}}",
 )
 ```
 
 <!-- TODO (documentaliste) : fiabiliser les onze montants et dates de la série PNAFN ;
-voir https://github.com/openfisca/openfisca-tunisia/issues/462. -->
+voir https://github.com/openfisca/openfisca-tunisia/issues/462. Les quinze valeurs annuelles de la figure 4 du PAD4815 de la
+Banque mondiale (série `pnafn-transfert-smig-banque-mondiale`), tracées à part, contredisent la série en 1990, 1995 et 2005 et
+ne coïncident pas en 2010, 2011 et 2018 : constat inscrit à docs/notes/backlog-modele.md. -->
 
 <!-- TODO (rédacteur) : prolonger cette figure par la base du transfert de l'Amen social (2020-2026) et la renommer alors
 `fig-nc-aide-permanente` ; il manque une série du cache (`precis/_seriescache/`) pour le montant de base, à écrire par
@@ -97,7 +116,7 @@ voir https://github.com/openfisca/openfisca-tunisia/issues/462. -->
 ::::
 
 - **Qui y a droit.** Le transfert est ouvert au demandeur dont le revenu mensuel moyen ne dépasse pas un plafond qui va de deux tiers du salaire minimum pour une personne seule à deux salaires minimums pour un ménage de cinq personnes et plus (@tbl-amen-plafonds ; en dinars, @tbl-nc-plafonds-dinars), sous deux conditions de patrimoine et après classement par un score dont aucun texte publié ne donne le seuil (@sec-nc-eligibilite).
-- **Combien d'allocataires, quels crédits.** Le ministère des Affaires sociales compte 242 833 allocataires du transfert mensuel en décembre 2018 et 337 199 en décembre 2023 ; les crédits affectés au programme passent de 735,1 MD en 2021 à 1 015,5 MD en 2023 (@sec-nc-administration).
+- **Combien d'allocataires, quels crédits.** Le ministère des Affaires sociales compte 242 833 allocataires du transfert mensuel en décembre 2018 et 337 199 en décembre 2023 ; les décomptes que rapporte la Banque mondiale vont de 367 550 ménages au 30 novembre 2024 à 386 351 au 22 mai 2026 (@fig-nc-montee-en-charge). Les crédits affectés au programme passent de 735,1 MD en 2021 à 1 015,5 MD en 2023 (@sec-nc-administration).
 - **Qui finance.** Le budget de l'État, après une contribution des caisses de sécurité sociale de 8 MD en 1986 puis un prélèvement de 2,5 MD par an à partir de 1988 (@sec-nc-mise-en-place) ; depuis 2021, des prêts de la Banque internationale pour la reconstruction et le développement et des dons financent une partie des transferts et des allocations pour enfants (@sec-nc-financement-exterieur).
 - **Deux aides permanentes coexistent.** La loi organique de 2019 maintient les programmes antérieurs jusqu'à leur adaptation : l'allocation du programme d'aide aux familles nécessiteuses est relevée, de 2024 à 2026, dans la limite du transfert de l'Amen social (@sec-nc-pnafn-allocation).
 - **Ce que les études estiment.** Le ciblage, l'effet sur la pauvreté et le coût rapporté au PIB ne sont connus que par des simulations et des estimations de la Banque mondiale et par une enquête de l'UNICEF, présentées à part avec leur méthode (@sec-nc-etudes).
@@ -149,7 +168,7 @@ Deux réformes changent le public et la nature de l'assistance : la loi organiqu
 
 ### 1988-2019 : des montants relevés sans texte publié, des cartes de soins contingentées {#sec-nc-entre-temps}
 
-De 1987 à 2018, l'allocation mensuelle du programme d'aide aux familles nécessiteuses passe de 7,7 à 180 dinars en onze paliers, dont aucun n'est fondé sur un texte identifié (@fig-pnafn-allocation, @sec-nc-pnafn-allocation). En 1998, deux décrets remplacent les livrets de soins par des cartes attribuées dans la limite d'un nombre global et de quotas régionaux (@sec-nc-cartes-1998). Le programme sert alors de liste à l'aide médicale : les bénéficiaires de ses aides permanentes entrent en compte pour l'attribution des cartes de soins gratuits, en 1998 puis en 2012, et un décret de 2014 engage la constitution d'une banque de données sur les familles nécessiteuses et à revenu limité (@sec-nc-listes).
+De 1987 à 2018, l'allocation mensuelle du programme d'aide aux familles nécessiteuses passe de 7,7 à 180 dinars ; la série du chapitre compte onze paliers, dont aucun n'est fondé sur un texte identifié, et une figure de la Banque mondiale donne d'autres montants pour 1990, 1995 et 2005 (@fig-pnafn-allocation, @sec-nc-pnafn-allocation). En 1998, deux décrets remplacent les livrets de soins par des cartes attribuées dans la limite d'un nombre global et de quotas régionaux (@sec-nc-cartes-1998). Le programme sert alors de liste à l'aide médicale : les bénéficiaires de ses aides permanentes entrent en compte pour l'attribution des cartes de soins gratuits, en 1998 puis en 2012, et un décret de 2014 engage la constitution d'une banque de données sur les familles nécessiteuses et à revenu limité (@sec-nc-listes).
 
 ### 2019-2020 : l'Amen social {#sec-nc-amen-2019}
 
@@ -165,7 +184,7 @@ De 1987 à 2018, l'allocation mensuelle du programme d'aide aux familles nécess
 
 **Deux publics, définis par la privation.** [L'article 2](#r-nc-lo-2) retient une définition multidimensionnelle de la pauvreté : sont visés « les individus ou les familles qui souffrent d'une privation multidimensionnelle touchant le revenu, la santé, l'éducation, le logement, l'accès aux services publics et les conditions de vie ». Le ministère chargé des affaires sociales met en place un modèle de score, fixé par arrêté, qui identifie les éligibles et les classe en catégories pauvres et en catégories à revenu limité. Le [ciblage](#g-ciblage) change ainsi de forme pour la troisième fois : condition d'état sans barème dans les textes des années 1980 et 1990 (« tout tunisien indigent »), condition de revenu chiffrée en multiples du salaire minimum, puis, depuis 2020, [score](#g-score-eligibilite).
 
-**Quatre familles de prestations.** La loi prévoit [des transferts financiers directs mensuels](#r-nc-lo-11) aux catégories pauvres, dont le mode de calcul et le montant sont fixés par arrêté conjoint (@sec-nc-transfert) ; un [soutien financier occasionnel](#g-appui-financier-occasionnel) (@sec-nc-aides) ; des prestations de soins dans les structures publiques (@sec-nc-aide-medicale) ; [des priorités d'accès](#r-nc-lo-14) au logement social, à la formation, à l'emploi et à l'enseignement. [Les bénéficiaires](#r-nc-lo-8) sont les Tunisiens et les étrangers résidant légalement, sous condition de réciprocité. Un [registre de données](#r-nc-lo-18), mis à jour au moins tous les deux ans, recense les deux catégories.
+**Quatre familles de prestations.** La loi prévoit [des transferts monétaires mensuels](#r-nc-lo-11) aux catégories pauvres, dont le mode de calcul et le montant sont fixés par arrêté conjoint (@sec-nc-transfert) ; un [soutien financier occasionnel](#g-appui-financier-occasionnel) (@sec-nc-aides) ; des prestations de soins dans les structures publiques (@sec-nc-aide-medicale) ; [des priorités d'accès](#r-nc-lo-14) au logement social, à la formation, à l'emploi et à l'enseignement. [Les bénéficiaires](#r-nc-lo-8) sont les Tunisiens et les étrangers résidant légalement, sous condition de réciprocité. Un [registre de données](#r-nc-lo-18), mis à jour au moins tous les deux ans, recense les deux catégories.
 
 **Les programmes antérieurs sont maintenus.** [L'article 23](#r-nc-lo-23) dispose que les programmes d'aides sociales en vigueur à la date de la promulgation de la loi « demeurent exécutoires jusqu'à leur adaptation » avec ses dispositions : l'Amen social se superpose à l'aide antérieure, il ne la remplace pas (@sec-nc-pnafn-allocation).
 
@@ -180,7 +199,7 @@ De 1987 à 2018, l'allocation mensuelle du programme d'aide aux familles nécess
 | []{#r-nc-lo-5}art. 5 et 6 | même loi [@loi-amen-social-2019, art. 5-6] | Conseil supérieur du développement social, présidé par le chef du gouvernement (art. 5) ; Agence nationale de l'intégration et du développement social, établissement public à créer par décret gouvernemental (art. 6) |
 | []{#r-nc-lo-7}art. 7 | même loi [@loi-amen-social-2019, art. 7] | les cinq buts du programme, cités au texte |
 | []{#r-nc-lo-8}art. 8 | même loi [@loi-amen-social-2019, art. 8] | bénéficiaires : les Tunisiens et les étrangers résidant légalement, sous condition de réciprocité ; les prestations indûment attribuées sont récupérables ; les conditions et procédures sont renvoyées à un décret gouvernemental |
-| []{#r-nc-lo-11}art. 11 à 13 | même loi [@loi-amen-social-2019, art. 11-13] | transferts financiers directs mensuels aux catégories pauvres, mode de calcul et montant fixés par arrêté conjoint (art. 11) ; soutien financier occasionnel, cas d'octroi et montants fixés par arrêté conjoint (art. 12) ; prestations de soins dans les structures publiques (art. 13) |
+| []{#r-nc-lo-11}art. 11 à 13 | même loi [@loi-amen-social-2019, art. 11-13] | « des transferts financiers directs versés chaque mois » aux catégories pauvres, mode de calcul et montant fixés par arrêté conjoint (art. 11) ; soutien financier occasionnel, cas d'octroi et montants fixés par arrêté conjoint (art. 12) ; prestations de soins dans les structures publiques (art. 13) |
 | []{#r-nc-lo-14}art. 14 à 17 | même loi [@loi-amen-social-2019, art. 14-17] | priorités d'accès au logement social, à la formation, à l'emploi et à l'enseignement |
 | []{#r-nc-lo-18}art. 18 à 22 | même loi [@loi-amen-social-2019, art. 18 à 22] | registre de données sur les catégories pauvres et les catégories à revenu limité, mis à jour au moins tous les deux ans ; rapport annuel adressé au président du parlement et au chef du gouvernement ; le secret professionnel et fiscal est déclaré inopposable aux structures détentrices de bases publiques |
 | []{#r-nc-lo-23}art. 23 | même loi [@loi-amen-social-2019, art. 23] | les programmes d'aides sociales en vigueur à la date de la promulgation « demeurent exécutoires jusqu'à leur adaptation » |
@@ -518,8 +537,8 @@ Pour les enfants des familles qui perçoivent le transfert monétaire, le rappor
 tableau 13) ne sont lues que sur la couche texte arabe, dont l'ordre des mots est perturbé : confirmer à l'image la date de la
 convention, les montants de 191, 188 et 124,6 millions de dinars, les effectifs de décembre 2023 et surtout la phrase des 20 D du don
 et des 10 D du budget (PDF 37), avant toute citation littérale (docs/notes/prestations-sociales-lectures-2026-10-09.md, § 1.1 et § 5).
-Série à instantaner pour une figure en deux segments, don puis budget : enfants de 6 à 18 ans allocataires, juillet 2022 et
-décembre 2023 (UNICEF), décembre 2023 (ministère), mai 2026 (Banque mondiale, ISR08116 : 463 903). -->
+La série des enfants de 6 à 18 ans allocataires est tracée à la figure de la montée en charge (`fig-nc-montee-en-charge`), pilote
+et allocation instituée séparés par une rupture de série. -->
 
 **[Le décret n° 2025-426 du 2 octobre 2025](#r-nc-af-2025-decret) l'institue ensuite.** Il crée « une allocation familiale au profit des familles pauvres et à faible revenu au titre des enfants âgés de 6 ans à 18 ans », renvoie ses conditions d'attribution et son montant à un arrêté conjoint des ministres chargés des affaires sociales et des finances, et fait entrer cette institution en vigueur **à compter du 1^er^ janvier 2025**. Il ne vise que la Constitution, et non la loi organique de 2019, dont l'article 11 bis ne connaît que les enfants de moins de six ans. Le décret ne fixe lui-même aucun montant.
 
@@ -567,13 +586,25 @@ table("aides_ponctuelles",
       "tbl-aides-ponctuelles")
 ```
 
-Le tableau donne les montants **fixés en 2022** ; l'arrêté de 2025 n'en change qu'un, celui de l'aide de rentrée scolaire. Il s'agit de la même aide à deux dates, non de deux aides : 50 dinars par enfant dans les arrêtés de 2020 et de 2022, 100 dinars à compter du 1^er^ septembre 2024, les quatre autres montants restant ceux de 2022.
+Le tableau donne les montants **fixés en 2022** ; l'arrêté de 2025 n'en change qu'un, celui de l'aide de rentrée scolaire. Il s'agit de la même aide à trois dates, non de deux aides : 50 dinars par enfant dans les arrêtés de 2020 et de 2022, 100 dinars à compter du 1^er^ septembre 2024 (@tbl-nc-rentree-scolaire), les quatre autres montants restant ceux de 2022.
 
-| Aide de rentrée scolaire | [État fixé en 2022](#r-nc-ap-2022)<br>(D) | [Nouvel état, effet au 1^er^ septembre 2024](#r-nc-ap-2025)<br>(D) |
-|---|---:|---:|
-| Par enfant relevant des catégories visées par l'arrêté | 50 | **100** |
+| Date d'effet | Montant par enfant<br>(D) | Enfants visés |
+|:----------|-------:|:-------------------------------|
+| [[25 mai 2020]{.insecable}](#r-nc-rs-2020) | 50 | enfants scolarisés des catégories pauvres et des catégories à revenu limité |
+| [décembre 2022](#r-nc-rs-2022) | 50 | les mêmes, et les enfants inscrits dans un établissement public de formation ou d'apprentissage professionnel ou dans un centre d'éducation spécialisée, public ou associatif |
+| [[1^er^ septembre 2024]{.insecable}](#r-nc-rs-2024) | 100 | les mêmes, et les enfants inscrits en classe préparatoire publique, dans un kouttab ou dans un centre d'éducation spécialisée, de réadaptation ou de formation professionnelle des personnes handicapées |
 
-: Aide de rentrée scolaire de l'Amen social, par enfant : montant de 2022 et montant applicable à compter du 1^er^ septembre 2024 {#tbl-nc-rentree-scolaire}
+: Aide de rentrée scolaire de l'Amen social : montant par enfant et enfants visés, aux trois dates d'effet, 2020-2024 {#tbl-nc-rentree-scolaire tbl-colwidths="[23,17,60]"}
+
+:::: {.chronologie-repliable titre="Aide de rentrée scolaire de l'Amen social : arrêtés, articles et pages du Journal officiel, montants de 2020, 2022 et 2024"}
+
+| Date d'effet | Texte | Ce qu'il établit |
+|---|---|---|
+| []{#r-nc-rs-2020}[25 mai 2020]{.insecable} | arrêté conjoint du 19 mai 2020 [@arrete-2020-05-19-appui-occasionnel, art. 4], *Journal officiel* n° 45 du 20 mai 2020, p. 1097 | 50 D par enfant scolarisé, au début de l'année scolaire ; aide ouverte aux catégories pauvres et aux catégories à revenu limité |
+| []{#r-nc-rs-2022}décembre 2022 | arrêté conjoint du 8 décembre 2022 [@arrete-2022-12-08-appui-occasionnel, art. 3-5], *Journal officiel* n° 136 du 9 décembre 2022, p. 3446-3447 | même montant de 50 D (art. 4) ; champ étendu aux établissements publics de formation et d'apprentissage professionnel et aux centres d'éducation spécialisée, publics et associatifs (art. 3) ; abroge l'arrêté de 2020 (art. 5) |
+| []{#r-nc-rs-2024}[1^er^ septembre 2024]{.insecable} | arrêté conjoint du 10 juillet 2025 [@arrete-2025-07-10-appui-occasionnel, art. 1 et 3], *Journal officiel* n° 88 de 2025, édition arabe, p. 2058-2059 | 50 → 100 D par enfant ; champ étendu aux classes préparatoires publiques, aux kouttab et aux centres des personnes handicapées (art. 1) ; effet au 1^er^ septembre 2024 (art. 3) |
+
+::::
 
 <!-- TODO (rédacteur) : remplacer par un tableau engendré, quand le palier de 100 D au
 1er septembre 2024 sera daté et sourcé en amont (constat inscrit à docs/notes/backlog-modele.md) ;
@@ -660,6 +691,8 @@ La loi organique de 2019 maintient les programmes d'aides sociales antérieurs �
 
 L'allocation est une somme mensuelle versée aux familles inscrites au programme. La série disponible comporte onze paliers entre 1987 et 2018, de 7,7 à 180 dinars par mois (@fig-pnafn-allocation) ; aucun de ces paliers n'est fondé sur un texte identifié. À partir de 2024, trois arrêtés conjoints constatent son montant et organisent son relèvement dans la limite du transfert de l'Amen social.
 
+**Deux séries qui ne concordent pas avant 2012.** Une figure du document de financement additionnel de la Banque mondiale de 2022 imprime le transfert mensuel du programme pour quinze années, de 1987 à 2021, avec pour source « l'Institut national de la statistique et le ministère des Affaires sociales », sans texte de droit [@banquemondiale2022pad4815, fig. 4]. Elle donne 7,7 dinars en 1987, 15 en 1990, 25,8 en 1995, 36,3 en 2000, 43,3 en 2005, 56,7 en 2010, puis 180 dinars de 2018 à 2021. La série à onze paliers tient, elle, 7,7 dinars de 1987 à 2000 et 36,3 dinars de 2000 à 2009 : les deux concordent en 1987, en 2000, en 2015 et de 2019 à 2021, et divergent en 1990, 1995 et 2005 (@fig-pnafn-allocation). La conséquence porte sur le pouvoir d'achat de l'aide : en dinars de 2025, l'allocation de 1995 vaut 30,1 dinars selon la série à paliers et 100,7 selon la valeur de la Banque mondiale ; celle de 2005, 106,2 ou 126,7. Aucun des montants antérieurs à 2024 n'étant établi par un texte identifié, le pouvoir d'achat de l'aide n'est pas établi avant 2000, ni de 2000 à 2009 ; l'érosion que la série à paliers montre de 1987 à 1999 ne se retrouve pas dans les valeurs de la Banque mondiale, qui montent de 48,7 dinars de 2025 en 1987 à 120,9 en 2000.
+
 | Arrêté conjoint | Montant constaté à la publication<br>(D par mois) | Limite du relèvement<br>(D par mois) | Effet |
 |---|---:|---:|---|
 | [10 juillet 2024](#r-nc-pn-2024) | 180 | 240 | publication |
@@ -723,7 +756,51 @@ et aux personnes handicapées à partir des arrêtés correspondants. -->
 
 ## Ce que l'administration constate {#sec-nc-administration}
 
-Cette section réunit les décomptes de l'administration : allocataires, enfants aidés, crédits. Ils viennent de deux familles de documents. La première est le rapport de suivi et d'évaluation de l'Amen social du ministère des Affaires sociales pour 2023 [@mas-amen-social-2023] : il compte les allocataires actifs inscrits en décembre de chaque année d'après les fichiers de paiement, et donne des crédits « affectés » par intervention, non des dépenses exécutées. La seconde est celle des rapports d'exécution du projet que finance la Banque mondiale [@banquemondiale2025isr04716 ; @banquemondiale2026isr08116] : leurs indicateurs sont des décomptes du ministère, renseignés par son unité de gestion et rapportés par la Banque. Aucun de ces chiffres n'est une estimation ; les simulations et les enquêtes sont à la section suivante (@sec-nc-etudes).
+Cette section réunit les décomptes de l'administration : allocataires, enfants aidés, crédits. Ils viennent de deux familles de documents. La première est le rapport de suivi et d'évaluation de l'Amen social du ministère des Affaires sociales pour 2023 [@mas-amen-social-2023] : il compte les allocataires actifs inscrits en décembre de chaque année d'après les fichiers de paiement, et donne des crédits « affectés » par intervention, non des dépenses exécutées. La seconde est celle des rapports d'exécution du projet que finance la Banque mondiale [@banquemondiale2025isr04716 ; @banquemondiale2026isr08116] : leurs indicateurs sont des décomptes du ministère, renseignés par son unité de gestion et rapportés par la Banque. S'y ajoutent, pour les enfants de 6 à 18 ans, les données du programme que reproduit l'UNICEF [@unicef2024allocations618, p. 20]. La figure qui suit en donne la vue d'ensemble : la montée en charge du transfert permanent de 2010 à 2026, puis celle des allocations pour enfants de 2022 à 2026. Aucun de ces chiffres n'est une estimation ; les simulations et les enquêtes sont à la section suivante (@sec-nc-etudes).
+
+```{python}
+#| label: fig-nc-montee-en-charge
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    fig_as.vues_montee_en_charge(), fig_as.table_montee_en_charge(),
+    fig_as.SERIE_ALLOCATAIRES, fig_as.SERIE_SUIVI,
+    slug="fig_nc_montee_en_charge",
+    caption=("La montée en charge de l'aide permanente et des allocations pour enfants : "
+             "allocataires et ménages du transfert permanent, 2010-2026, et enfants "
+             "allocataires par tranche d'âge, 2022-2026, par famille de sources"),
+    note_lecture=(
+        "Trois familles de décomptes sont tracées, jamais reliées entre elles. Le ministère "
+        "des Affaires sociales compte des allocataires — individus ou familles — inscrits "
+        "en décembre : c'est la seule série annuelle, et la seule que relie un trait. Les "
+        "documents de la Banque mondiale rapportent des décomptes du ministère en ménages, "
+        "et l'UNICEF des données du programme : ce sont des points isolés, tracés sans "
+        "trait. Allocataires et ménages ne sont pas la même unité : un écart entre un point "
+        "bleu et un carré orange ne mesure rien. Un décompte daté au jour est placé à son "
+        "jour, un décompte daté au mois au milieu du mois, un décompte daté de la seule "
+        "année au milieu de l'année. Les discordances sont laissées telles quelles : pour "
+        "2010, 124 000 ménages selon deux documents de la Banque mondiale et 130 000 selon "
+        "un troisième ; en 2025, 385 231 ménages datés de septembre dans un commentaire et "
+        "du 31 octobre au tableau du même rapport, 383 192 datés d'octobre puis de "
+        "novembre ; en avril 2026, 386 351 et 387 668 dans le même rapport ; pour les "
+        "enfants de 6 à 18 ans en décembre 2023, 422 542 selon le ministère et 422 683 "
+        "selon l'UNICEF. Deux valeurs des pièces ne sont pas tracées et figurent à "
+        "l'onglet « Données » : « plus de 150 000 » enfants de moins de six ans en mars "
+        "2025, qui est une borne, et le zéro du 27 mars 2026. Ce zéro est le départ d'un "
+        "indicateur créé ce jour-là pour l'allocation instituée en 2025 : le trait rouge "
+        "mixte marque cette rupture de série, les décomptes antérieurs des 6 à 18 ans "
+        "étant ceux du programme pilote financé par un don, dont le départ est daté de "
+        "juillet ou de septembre 2022 selon les sources. Les traits pointillés numérotés "
+        "sont des dates de droit : ils situent les décomptes, ils n'établissent pas de "
+        "lien de cause entre un texte et une variation."),
+    generated="{{< meta date >}}",
+    nominal=False,
+)
+```
+
+- **Le transfert permanent.** Le ministère compte 242 833 allocataires en décembre 2018, 261 802 en décembre 2020, année où les prestations de l'Amen social sont ouvertes, et 337 199 en décembre 2023 [@mas-amen-social-2023, tabl. 4] ; les décomptes que rapporte la Banque mondiale, en ménages, vont de 124 000 ou 130 000 en 2010 à 260 000 en 2020, 367 550 au 30 novembre 2024 et 386 351 au 22 mai 2026 (@tbl-nc-effectifs).
+- **Les enfants de moins de six ans.** 138 266 allocataires en décembre 2022, année où l'allocation est créée, 156 418 en décembre 2023 et 158 779 au 30 novembre 2024, puis 143 806 au 31 octobre 2025 et 137 014 au 22 mai 2026 (@tbl-nc-enfants).
+- **Les enfants de 6 à 18 ans.** 111 682 en juillet 2022 et 422 683 en décembre 2023 selon l'UNICEF, pour le programme pilote ; 463 903 au 22 mai 2026 selon les rapports d'exécution de la Banque mondiale, pour l'allocation instituée au 1^er^ janvier 2025 — deux dispositifs que la figure sépare par une rupture de série (@sec-nc-enfants-constat).
 
 ```{python}
 #| label: fig-nc-beneficiaires
@@ -760,17 +837,17 @@ figtools.figure_tabs(
 | décembre 2021 | 268 258 | 265 000 en 2021 | [@mas-amen-social-2023, tabl. 4] ; [@banquemondiale2022pad4815, § 11] |
 | décembre 2022 | 305 930 | | [@mas-amen-social-2023, tabl. 4] |
 | décembre 2023 | 337 199 | | [@mas-amen-social-2023, tabl. 4] |
-| 30 novembre 2024 | | 367 550 | [@banquemondiale2025isr04716, p. 5] |
+| [30 novembre 2024]{.insecable} | | 367 550 | [@banquemondiale2025isr04716, p. 5] |
 | septembre 2025 | | 385 231 | [@banquemondiale2025isr04716, p. 5 et 7] |
 | octobre 2025 | | 383 192 | [@banquemondiale2025isr04716, p. 2 et 5] |
 | avril 2026 | | 386 351 ; 387 668 | [@banquemondiale2026isr08116, p. 2, 5 et 9] |
 
-: Allocataires de l'aide monétaire permanente, par date et par source, 2010-2026 : stocks de décembre du ministère des Affaires sociales et décomptes rapportés par la Banque mondiale {#tbl-nc-effectifs}
+: Allocataires de l'aide monétaire permanente, par date et par source, 2010-2026 : stocks de décembre du ministère des Affaires sociales et décomptes rapportés par la Banque mondiale {#tbl-nc-effectifs tbl-colwidths="[22,18,21,39]"}
 
-<!-- TODO (documentaliste) : séries à verser au dépôt de données, puis au cache des séries, pour remplacer ce tableau fait main et
-le suivant par des figures : ménages du transfert permanent, enfants de 0 à 5 ans et de 6 à 18 ans allocataires, ménages vérifiés
-par la nouvelle procédure, ménages payés par moyen numérique, ménages inscrits au registre, enquêtes sociales réalisées, d'après les rapports ISR04716 et ISR08116 de la Banque mondiale et le
-rapport UNICEF de 2024 (docs/notes/prestations-sociales-lectures-2026-10-09.md, § 1.11). -->
+<!-- TODO (rédacteur) : la série `amen-social-effectifs-suivi` est versée au cache et tracée à la figure de la montée en charge
+(ménages du transfert, enfants de 0 à 5 ans et de 6 à 18 ans). Restent des tableaux faits main, à engendrer depuis la même série :
+celui-ci, celui des enfants et celui du suivi du projet (ménages vérifiés par la nouvelle procédure, ménages payés par moyen
+numérique, inscrits au registre, enquêtes sociales). -->
 
 - **Un nombre d'allocataires en hausse de 39 % en cinq ans.** De 242 833 en décembre 2018 à 337 199 en décembre 2023 selon le ministère ; l'essentiel de la hausse vient de 2022 et de 2023, où les entrées dépassent 44 000 par an (@fig-nc-beneficiaires).
 - **Deux unités, deux sources.** Le ministère compte des allocataires, individus ou familles ; les documents de la Banque mondiale comptent des ménages. Les deux colonnes du tableau ne se raccordent pas.
@@ -846,11 +923,11 @@ Trois sources comptent les enfants pour lesquels une allocation est versée : le
 | juillet 2022 | | 111 682 | données du programme, selon l'UNICEF [@unicef2024allocations618, p. 20] |
 | décembre 2022 | 138 266 | | ministère [@mas-amen-social-2023] |
 | décembre 2023 | 156 418 | 422 542 ; 422 683 | ministère [@mas-amen-social-2023, tabl. 13] ; 422 683 selon l'UNICEF [@unicef2024allocations618, p. 20] |
-| 30 novembre 2024 | 158 779 | | décomptes du ministère rapportés par la Banque mondiale [@banquemondiale2025isr04716, p. 4] |
-| 31 octobre 2025 | 143 806 | | [@banquemondiale2025isr04716, p. 4] |
+| [30 novembre 2024]{.insecable} | 158 779 | | décomptes du ministère rapportés par la Banque mondiale [@banquemondiale2025isr04716, p. 4] |
+| [31 octobre 2025]{.insecable} | 143 806 | | [@banquemondiale2025isr04716, p. 4] |
 | 22 mai 2026 | 137 014 | 463 903 | [@banquemondiale2026isr08116, p. 4-5] |
 
-: Enfants allocataires des allocations de l'Amen social, par date et par source, 2022-2026 {#tbl-nc-enfants}
+: Enfants allocataires des allocations de l'Amen social, par date et par source, 2022-2026 {#tbl-nc-enfants tbl-colwidths="[22,18,18,42]"}
 
 - **Avant six ans.** 138 266 enfants de 96 366 familles en décembre 2022 et 156 418 enfants de 110 848 familles en décembre 2023, selon le ministère [@mas-amen-social-2023] ; 137 014 en mai 2026. La Banque mondiale rapporte que la baisse tient au passage d'enfants à l'allocation des 6 à 18 ans et à la baisse de la natalité [@banquemondiale2026isr08116, p. 4] ; en octobre 2025, les 143 806 enfants aidés sont 73,3 % des 196 202 enfants de cet âge inscrits au registre, l'écart tenant aux contrôles croisés avec les caisses de sécurité sociale [@banquemondiale2025isr04716, p. 7-8].
 - **De 6 à 18 ans.** 422 542 enfants de 217 157 familles en décembre 2023 selon le ministère, soit en moyenne deux allocations par famille, et 463 903 en mai 2026, pour une cible de 450 000 [@banquemondiale2026isr08116, p. 5]. Ce dernier indicateur part de zéro au 27 mars 2026 : il ne compte que l'allocation instituée en 2025, non le programme pilote.
@@ -876,8 +953,8 @@ Les colonnes d'âge ne s'additionnent pas pour donner le total publié, que le r
 
 Les rapports d'exécution du projet donnent, à trois dates, des indicateurs que le ministère renseigne et que la Banque mondiale rapporte, avec la cible fixée par le projet.
 
-| Indicateur | 30 novembre 2024 | 31 octobre 2025 | 22 mai 2026 | Cible |
-|---|---:|---:|---:|---:|
+| Indicateur | [30 novembre 2024]{.insecable} | [31 octobre 2025]{.insecable} | [22 mai 2026]{.insecable} | Cible |
+|:---|---:|---:|---:|---:|
 | Ménages du transfert permanent | 367 550 | 383 192 | 386 351 | 370 000 |
 | dont vérifiés par la nouvelle procédure | 85 925 | 85 930 | 128 326 | 270 000 |
 | Enfants de moins de six ans allocataires | 158 779 | 143 806 | 137 014 | 120 000 |
@@ -885,7 +962,7 @@ Les rapports d'exécution du projet donnent, à trois dates, des indicateurs que
 | Ménages payés par un moyen numérique | | 198 400 | 209 600 | 300 000 |
 | Ménages ayant reçu un transfert temporaire | 896 675 | 896 675 | | 900 000 |
 
-: Indicateurs de suivi du projet d'appui à la protection sociale, 2024-2026 : décomptes du ministère des Affaires sociales rapportés par la Banque mondiale [@banquemondiale2025isr04716, p. 2 à 8 ; @banquemondiale2026isr08116, p. 2 à 9] {#tbl-nc-suivi-projet}
+: Indicateurs de suivi du projet d'appui à la protection sociale, 2024-2026 : décomptes du ministère des Affaires sociales rapportés par la Banque mondiale [@banquemondiale2025isr04716, p. 2 à 8 ; @banquemondiale2026isr08116, p. 2 à 9] {#tbl-nc-suivi-projet tbl-colwidths="[36,17,17,15,15]"}
 
 - **Les dates.** Le nombre de ménages du transfert est celui d'octobre 2025 et d'avril 2026 ; les mêmes rapports donnent aussi 385 231 pour septembre 2025 et 387 668 pour avril 2026 (@tbl-nc-effectifs). Les ménages payés par un moyen numérique sont ceux d'août 2025, soit 46 % des ménages, contre 43 % au 30 novembre 2024.
 - **Les cibles.** Celles du rapport de juillet 2026, fixées pour mars 2030 ; le rapport de novembre 2025 visait 310 000 ménages au transfert, dont 248 000 vérifiés par la nouvelle procédure, et 80 % de ménages payés par un moyen numérique. La cible de 900 000 ménages pour les transferts temporaires est celle du projet d'origine.
