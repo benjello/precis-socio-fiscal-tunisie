@@ -603,7 +603,7 @@
 
 - id: r-lf2025-art17-decret
   objet: décret fixant les conditions et procédures de gestion du fonds d'assurance contre la perte de postes de travail pour raisons économiques (loi n° 2024-48, loi de finances pour 2025, art. 17)
-  ou: [precis/fr/prestations_sociales/_autres_risques.qmd]
+  ou: [precis/fr/prestations_sociales/_autres_risques.qmd#sec-ar-cessation-2025]
   requetes:
     titres_like: ['%perte%', '%licenci%', '%perte d%emploi%']
     iort_ar: [فقدان]
@@ -622,6 +622,24 @@
     couvert_jusqu_au: 2025-12-31
     resultat: aucun
   a_faire: ['lire les fascicules FR et AR postérieurs au 10 avril 2026 (corpus local, pist.tn)']
+
+- id: r-loi2024-44-application
+  objet: texte d'application de la loi n° 2024-44 du 12 août 2024 (congés de maternité et de paternité), ou texte modifiant l'article 78 de la loi n° 60-30, réglant l'articulation des durées de congé de 2024 avec le stage exigé pour l'indemnité de couches (un an d'immatriculation, 150 jours de travail)
+  ou: [precis/fr/prestations_sociales/_autres_risques.qmd#sec-ar-conges-2024]
+  requetes:
+    titres_like: ['%2024-44%', '%maternit%', '%paternit%', '%allaitement%', '%couches%']
+    iort_ar: [الأمومة, الأبوة, 44 لسنة 2024]
+    depuis: 2024-08-12
+  passes:
+  - date: 2026-10-09
+    role: rédacteur
+    sources: [jort_cache]
+    couverture: 'jort_cache, titres et objets des textes publiés du 12 août 2024 au 2 octobre 2026 (dernière date de l''index), motifs LIKE « 2024-44 », « maternit », « paternit », « allaitement », « couches » et, en arabe, « الأمومة », « الأبوة », « 44 لسنة 2024 » : seule la loi n° 2024-44 elle-même répond. Lacunes : aucun fascicule lu en plein texte ; aucune circulaire de la CNSS ou de la CNRPS consultée ; les articles de la loi sont connus par la note docs/notes/prestations-contributif.md, § 3.2 (lacune L3).'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - chercher en plein texte, dans les fascicules postérieurs au 12 août 2024, les visas de la loi n° 2024-44
+  - consulter les circulaires et notes de la CNSS et de la CNRPS sur l'application des congés de 2024
 
 - id: r-amg-cartes-quotas
   objet: arrêtés conjoints des ministres des affaires sociales et de la santé publique fixant le nombre global des cartes de soins gratuits (décret n° 98-1812, art. 2) et à tarifs réduits, et les quotas régionaux
