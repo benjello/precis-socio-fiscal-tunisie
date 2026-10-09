@@ -111,6 +111,8 @@ Sur 2018-2023, le ratio le plus large, $a$, va de 53 % (2018) à 40 % (2021), pu
 
 ## Le rendement des impôts locaux {#sec-fl-lp-impots}
 
+Cette section compare les quatre impôts locaux des communes et porte les seuls points antérieurs à 2008, tirés d'un rapport de la Banque mondiale. Le produit de la taxe sur les immeubles bâtis et de la taxe sur les terrains non bâtis, et le taux de recouvrement de la première, sont lus au chapitre des impôts sur les immeubles (@sec-fl-immeubles-rendement, @sec-fl-immeubles-recouvrement-donnees) ; celui de la taxe sur les établissements et de la taxe hôtelière, de 2008 à 2023, au chapitre des impôts sur l'activité (@sec-fl-activite-longue-periode).
+
 La Direction générale publie de 2008 à 2019 le produit de la taxe sur les immeubles bâtis, de la taxe sur les terrains non bâtis, de la taxe sur les établissements à caractère industriel, commercial ou professionnel et de la taxe hôtelière [@dgct-donnees-ouvertes] ; les budgets par commune les donnent à l'article pour 2022 et 2023 (articles 1101, 1102, 1201 et 1202). Le rapport de 1997 donne les deux taxes sur l'activité pour cinq années de 1990 à 1996 ; la ligne de la taxe locative, devenue taxe sur les immeubles bâtis en 1997, manque à son tableau imprimé [@wb-mdp2-1997, annexe 4, tabl. 2].
 
 ```{python}
@@ -121,25 +123,23 @@ import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import finances_locales as fl
 import figtools
 figtools.figure_tabs(
-    fl.vues_impots(), fl.table_impots(),
+    fl.vues_impots(recouvrement=False), fl.table_impots(recouvrement=False),
     "finances-locales-communes-agregats", "finances-locales-bm-1997", "cnat-pib-nominal",
     slug="fig_fl_impots",
     caption=("Rendement des impôts locaux des communes, en millions de dinars courants, en "
-             "part des recettes de fonctionnement et en % du PIB, et taux de recouvrement "
-             "publié de la taxe sur les immeubles bâtis, 1990-2023"),
+             "part des recettes de fonctionnement et en % du PIB, 1990-2023"),
     note_lecture=(
         "Les courbes s'interrompent en 2020 et 2021 : les budgets par commune de ces années "
-        "ne détaillent pas les impôts, et rien n'est interpolé. La quatrième vue reproduit "
-        "le taux de recouvrement que publie la Direction générale pour la taxe sur les "
-        "immeubles bâtis, sans en donner la définition."),
+        "ne détaillent pas les impôts, et rien n'est interpolé. Les carrés reliés en "
+        "pointillé sont les points du rapport de la Banque mondiale de 1997, pour la taxe "
+        "sur les établissements et la taxe hôtelière ; ce rapport ne publie pas de PIB, et "
+        "ses points n'ont pas de vue au PIB."),
 )
 ```
 
-La taxe sur les établissements domine et croît le plus vite : de 8 % des recettes courantes des communes en 1990 à 13 % en 1996 selon le rapport de 1997, puis de 19 % en 2008 à 28 % en 2017 selon la Direction générale, et 26 % à 28 % en 2022-2023 selon les budgets par commune ; rapportée au PIB, de 0,16 % en 2008 à 0,27 % en 2023. Les deux impôts sur les immeubles restent faibles : la taxe sur les immeubles bâtis représente de 7 % à 7,5 % des recettes de fonctionnement en 2008-2010, de 3,6 % à 4,8 % de 2011 à 2018, et 3,2 % puis 2,9 % en 2022-2023 ; la taxe sur les terrains non bâtis, de 2 % à 3 % sur toute la période. La taxe hôtelière, de 3,4 % à 4,6 % des recettes de fonctionnement de 1990 à 2010, tombe à 2,1 % en 2011 et reste ensuite entre 1,5 % et 2,7 %.
+Selon le rapport de 1997, la taxe sur les établissements passe de 8 % des recettes courantes des communes en 1990 à 13 % en 1996, et la taxe hôtelière se tient entre 3,4 % et 4,3 %.
 
-Deux années s'écartent de ces tendances. En 2011, toutes les taxes reculent en montant : la taxe sur les immeubles bâtis passe de 39 à 20 MD, la taxe hôtelière de 22 à 12 MD. En 2019, la taxe sur les immeubles bâtis atteint 76 MD, contre 46 MD en 2018 et 44 MD en 2022 selon les budgets par commune ; les sources lues ici n'en donnent pas l'explication.
-
-Le taux de recouvrement de la taxe sur les immeubles bâtis publié par la Direction générale baisse de 24 % en 2008 à 11 % en 2011 et se tient entre 11 % et 14 % jusqu'en 2018, avant 18 % en 2019 [@dgct-donnees-ouvertes]. La définition n'en est pas publiée : rien n'établit qu'il s'agisse du rapport $\rho$ entre l'encaissé et le facturé de l'année que définit le chapitre des notions, plutôt que d'un rapport qui inclut les restes à recouvrer des années antérieures.
+Les lectures de 2008 à 2023, sur les seules sources budgétaires, sont aux deux chapitres qui traitent ces impôts (@sec-fl-activite-longue-periode, @sec-fl-immeubles-rendement).
 
 ## Le fonds commun et la dotation qui lui succède {#sec-fl-lp-fccl}
 
@@ -263,6 +263,6 @@ Les sources se recoupent sur plusieurs années. Les écarts relevés sont réuni
 | $Q$ | ressources hors emprunt et hors épargne reportée | @sec-fl-lp-autonomie |
 | $S$ | subventions d'équipement | @sec-fl-lp-autonomie |
 | $K$ | crédits transférés | @sec-fl-lp-autonomie |
-| $\rho$ | taux de recouvrement | @sec-fl-lp-impots |
+| $\rho$ | taux de recouvrement | @sec-fl-immeubles-recouvrement-donnees |
 
 : Les symboles du chapitre {#tbl-fl-lp-notations}

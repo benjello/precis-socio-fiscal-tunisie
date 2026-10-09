@@ -1,9 +1,13 @@
-"""Figures du chapitre « La longue période » du livre *Les finances locales*.
+"""Figures du livre *Les finances locales* : chapitre « La longue période » et, depuis la
+conversion des chapitres d'impôts, le rendement de chaque impôt dans son chapitre.
 
     from figures import finances_locales as fl
     fl.vues_ressources()  ; fl.table_ressources()   # recettes de fonctionnement des communes
     fl.fig_autonomie()    ; fl.table_autonomie()    # ratios d'autonomie, publiés et calculés
     fl.vues_impots()      ; fl.table_impots()       # TIB, TNB, TCL, taxe hôtelière
+    fl.vues_immeubles_rendement() ; fl.table_immeubles_rendement()   # TIB et TNB, 2008-2023
+    fl.fig_immeubles_recouvrement() ; fl.table_recouvrement_tib()    # recouvrement publié
+    fl.vues_activite_rendement()  ; fl.table_activite_rendement()    # TCL, taxe hôtelière
     fl.vues_fccl()        ; fl.table_fccl()         # fonds commun des collectivités locales
     fl.vues_cpscl()       ; fl.table_cpscl()        # flux et impayés de la CPSCL
     fl.vues_ins()         ; fl.table_ins()          # épargne brute et FBCF, comptes nationaux
@@ -203,6 +207,19 @@ _L = {
     "rup_fccl": {"fr": "suppression du\nfonds commun (2018)",
                  "ar": "حذف المال\nالمشترك (2018)"},
     "rup_pib": {"fr": "PIB : base {b}", "ar": "الناتج: أساس {b}"},
+    # textes marqués sur les figures des chapitres d'impôts
+    "mq_abandon_2012": {"fr": "abandon d'arriérés\n(loi de 2012)",
+                        "ar": "التخلّي عن متخلّدات\n(قانون 2012)"},
+    "mq_baremes_2017": {"fr": "barèmes relevés\n(1er janvier 2017)",
+                        "ar": "الترفيع في التعريفات\n(1 جانفي 2017)"},
+    "mq_abandon_2019": {"fr": "abandon d'arriérés\n(loi de 2019)",
+                        "ar": "التخلّي عن متخلّدات\n(قانون 2019)"},
+    "mq_plafond_2012": {"fr": "fin du maximum annuel\n(1er janvier 2012)",
+                        "ar": "إلغاء الحدّ الأقصى السنوي\n(1 جانفي 2012)"},
+    "mq_assiette_2014": {"fr": "assiette étendue\n(1er janvier 2014)",
+                         "ar": "توسيع القاعدة\n(1 جانفي 2014)"},
+    "lg_marque_texte": {"fr": "trait rouge : texte de loi ou décret, placé à sa date d'effet",
+                        "ar": "خطّ أحمر: نصّ قانوني في تاريخ نفاذه"},
     # titres
     "t_ressources": {"fr": "Recettes de fonctionnement des communes : recettes propres et "
                            "transferts de l'État",
@@ -211,6 +228,11 @@ _L = {
                     "ar": "الاستقلالية المالية للبلديات: نسب منشورة ومحسوبة"},
     "t_impots": {"fr": "Rendement des impôts locaux des communes",
                  "ar": "مردود الجباية المحلية للبلديات"},
+    "t_immeubles_rendement": {"fr": "Produit des deux taxes sur les immeubles, communes",
+                              "ar": "مردود المعلومين على العقارات، البلديات"},
+    "t_activite_rendement": {"fr": "Produit de la taxe sur les établissements et de la taxe "
+                                   "hôtelière, communes",
+                             "ar": "مردود المعلوم على المؤسسات والمعلوم على النزل، البلديات"},
     "t_fccl": {"fr": "Le fonds commun des collectivités locales et la dotation qui lui succède",
                "ar": "المال المشترك للجماعات المحلية والمنحة التي خلفته"},
     "t_cpscl": {"fr": "La Caisse des prêts et de soutien des collectivités locales",
@@ -524,6 +546,32 @@ def fig_autonomie():
 # --- 3. Impôts locaux --------------------------------------------------------------------
 
 IMPOTS = (("tcl", VIOLET), ("tib", BLEU), ("tnb", VERT), ("taxe_hoteliere", BRUN))
+# Les deux vues par chapitre : le budgétaire seul (agrégats de la DGCT, somme des budgets par
+# commune), sans les points du rapport de la Banque mondiale de 1997, qui restent dans la figure
+# à quatre impôts de la longue période.
+IMPOTS_IMMEUBLES = (("tib", BLEU), ("tnb", VERT))
+IMPOTS_ACTIVITE = (("tcl", VIOLET), ("taxe_hoteliere", BRUN))
+SOURCES_IMPOTS = ("bm1997", "dgct", "somme")
+SOURCES_BUDGETAIRES = ("dgct", "somme")
+
+# Textes marqués sur les figures des chapitres d'impôts : (année, libellé, hauteur du libellé
+# en fraction du cadre). La marque situe un texte dans la série ; elle ne dit pas une cause.
+# Le trait s'arrête à la hauteur de son libellé, sous ceux des ruptures de série, posés en haut
+# du cadre ; un libellé proche du bord droit, ou qui recouvrirait le libellé précédent, passe
+# à gauche du trait.
+#   - immeubles : abandons d'arriérés de la loi de finances complémentaire pour 2012 (art. 17)
+#     et de la loi de finances pour 2019 (art. 72) ; barèmes relevés au 1er janvier 2017
+#     (décrets gouvernementaux n° 2017-396 et 2017-397) ;
+#   - activité : fin du maximum annuel au 1er janvier 2012 (loi de finances complémentaire pour
+#     2012, art. 50) ; assiette étendue au 1er janvier 2014 (loi de finances pour 2014,
+#     art. 49 et 50).
+MARQUES_IMMEUBLES = ((2012, "mq_abandon_2012", 0.86), (2017, "mq_baremes_2017", 0.86),
+                     (2019, "mq_abandon_2019", 0.9))
+# La figure du recouvrement s'arrête en 2019 : le libellé de 2019 passe à gauche de son trait,
+# donc plus bas que celui de 2017.
+MARQUES_RECOUVREMENT = ((2012, "mq_abandon_2012", 0.86), (2017, "mq_baremes_2017", 0.86),
+                        (2019, "mq_abandon_2019", 0.68))
+MARQUES_ACTIVITE = ((2012, "mq_plafond_2012", 0.97), (2014, "mq_assiette_2014", 0.88))
 
 
 def _impots() -> list[dict]:
@@ -544,32 +592,77 @@ def _impots() -> list[dict]:
     return lignes
 
 
-def table_impots():
-    import pandas as pd
-    pib = _pib()
+def _impots_retenus(impots=IMPOTS, sources=SOURCES_IMPOTS) -> list[dict]:
+    """Les lignes de `_impots()` pour un sous-ensemble d'impôts et de sources."""
+    cles = {k for k, _ in impots}
+    return [l for l in _impots() if l["impot"] in cles and l["source"] in sources]
+
+
+def _lignes_recouvrement() -> list[dict]:
     c = _communes()
-    recouvrement = [{
+    return [{
         _lab("col_annee"): a, _lab("col_grandeur"): _lab("recouvrement_tib"),
         _lab("col_source"): _lab("src_dgct"),
         _lab("col_pct"): round(100 * c["dgct"][("taux_recouvrement_tib", a)][0])}
         for a in range(2008, 2020)]
-    return pd.DataFrame(recouvrement + [{
-        _lab("col_annee"): l["annee"], _lab("col_grandeur"): _lab(l["impot"]),
-        _lab("col_source"): _lab("src_" + l["source"]),
-        _lab("col_md"): None if l["v"] is None else round(l["v"], 1),
-        _lab("col_pct_r1"): None if l["v"] is None else round(100 * l["v"] / l["r1"], 1),
-        _lab("col_pct_pib"): (None if l["v"] is None or l["annee"] not in pib
-                              else round(100 * l["v"] / pib[l["annee"]][0], 3)),
-        _lab("col_statut"): l["statut"]} for l in _impots()])
 
 
-def fig_impots(mesure: str = "md"):
+def table_impots(impots=IMPOTS, sources=SOURCES_IMPOTS, recouvrement=True, base_pib=False):
+    """Données de la figure des impôts. `recouvrement` place en tête le taux de recouvrement
+    publié de la TIB (figure d'origine, à quatre vues) ; `base_pib` ajoute la base des comptes
+    nationaux du PIB employé, année par année."""
+    import pandas as pd
+    pib = _pib()
+    lignes = []
+    for l in _impots_retenus(impots, sources):
+        ligne = {
+            _lab("col_annee"): l["annee"], _lab("col_grandeur"): _lab(l["impot"]),
+            _lab("col_source"): _lab("src_" + l["source"]),
+            _lab("col_md"): None if l["v"] is None else round(l["v"], 1),
+            _lab("col_pct_r1"): None if l["v"] is None else round(100 * l["v"] / l["r1"], 1),
+            _lab("col_pct_pib"): (None if l["v"] is None or l["annee"] not in pib
+                                  else round(100 * l["v"] / pib[l["annee"]][0], 3))}
+        if base_pib:
+            ligne[_lab("col_base")] = (pib[l["annee"]][1]
+                                       if l["v"] is not None and l["annee"] in pib else None)
+        ligne[_lab("col_statut")] = l["statut"]
+        lignes.append(ligne)
+    return pd.DataFrame((_lignes_recouvrement() if recouvrement else []) + lignes)
+
+
+def _marques_textes(ax, marques, x0, x1):
+    """Marque des textes du chapitre sur une figure : trait plein fin (les ruptures de série
+    gardent le pointillé de `figtools.marque_rupture`), libellé à la hauteur donnée."""
+    for annee, cle, hauteur in marques:
+        if not x0 < annee <= x1:
+            continue
+        trait = figtools.marque_rupture(ax, annee)
+        trait.set_linestyle("-")
+        trait.set_linewidth(0.8)
+        trait.set_color(ROUGE)
+        trait.set_alpha(0.55)
+        trait.set_ydata([0, hauteur + 0.01])
+        figtools.infobulle(trait, _lab(cle).replace("\n", " "))
+        gauche = annee - 0.5 > x1 - 2  # près du bord droit : libellé à gauche du trait
+        ax.annotate(_ft(cle), xy=(annee - 0.5, hauteur), xycoords=("data", "axes fraction"),
+                    xytext=(-4 if gauche else 4, 0), textcoords="offset points",
+                    ha="right" if gauche else "left", va="top", fontsize=7, color=ROUGE)
+
+
+def _legende_marques() -> Line2D:
+    return Line2D([], [], color=ROUGE, lw=0.8, alpha=0.55,
+                  label=figtools.fig_text(_lab("lg_marque_texte")))
+
+
+def fig_impots(mesure: str = "md", impots=IMPOTS, sources=SOURCES_IMPOTS,
+               titre: str = "t_impots", marques=()):
     figtools.apply_lang_font()
     pib = _pib()
-    lignes = _impots()
+    lignes = _impots_retenus(impots, sources)
     fig, ax = plt.subplots(figsize=(9.5, 5.4))
-    for k, coul in IMPOTS:
-        for s in ("bm1997", "dgct", "somme"):
+    tracees = []
+    for k, coul in impots:
+        for s in sources:
             ls = [l for l in lignes if l["impot"] == k and l["source"] == s]
             if not ls:
                 continue
@@ -589,22 +682,28 @@ def fig_impots(mesure: str = "md"):
                 creux = {l["annee"] for l in ls if l["statut"] not in ("definitif", "publie", "")}
                 _courbe(ax, pts, coul, s, _lab(k), mesure, dec=3 if mesure == "pib" else 1,
                         creux=creux)
+                if s not in tracees and any(v is not None for v in pts.values()):
+                    tracees.append(s)
     annees = sorted({l["annee"] for l in lignes if mesure != "pib" or l["annee"] in pib})
     ylabel = {"md": "md", "r1": "pct_r1", "pib": "pct_pib"}[mesure]
-    _cadre(ax, _lab("t_impots"), _lab(ylabel), annees[0], annees[-1])
+    _cadre(ax, _lab(titre), _lab(ylabel), annees[0], annees[-1])
+    if marques:  # de la place en haut du cadre pour les libellés des textes
+        ax.set_ylim(0, ax.get_ylim()[1] * 1.3)
     _ruptures(ax, mesure, annees)
-    poignees = _legende_grandeurs(IMPOTS)
-    poignees += _legende_sources(["bm1997", "dgct", "somme"] if mesure != "pib"
-                                 else ["dgct", "somme"])
+    _marques_textes(ax, marques, annees[0], annees[-1])
+    poignees = _legende_grandeurs(impots)
+    poignees += _legende_sources([s for s in sources if s in tracees])
     poignees.append(Line2D([], [], color=GRIS, marker="o", mfc="white", ls="",
                            label=figtools.fig_text(_lab("lg_creux"))))
+    if marques:
+        poignees.append(_legende_marques())
     ax.legend(handles=poignees, loc="upper center", bbox_to_anchor=(0.5, -0.13), ncol=2,
               fontsize=7.5, frameon=False)
     fig.tight_layout()
     return fig
 
 
-def fig_recouvrement_tib():
+def fig_recouvrement_tib(marques=()):
     """Le « taux de recouvrement » de la TIB tel que la DGCT le publie, sans définition."""
     figtools.apply_lang_font()
     c = _communes()
@@ -612,19 +711,64 @@ def fig_recouvrement_tib():
     fig, ax = plt.subplots(figsize=(9.5, 4.6))
     _courbe(ax, pts, BLEU, "dgct", _lab("recouvrement_tib"), "pct", dec=0)
     _cadre(ax, _lab("t_recouvrement"), _lab("pct"), 2008, 2019)
-    ax.set_ylim(0, 30)
+    ax.set_ylim(0, 40 if marques else 30)
     _ruptures(ax, "pct", list(pts))
-    ax.legend(handles=_legende_grandeurs([("recouvrement_tib", BLEU)])
-              + _legende_sources(["dgct"]), loc="upper center",
+    _marques_textes(ax, marques, 2008, 2019)
+    poignees = _legende_grandeurs([("recouvrement_tib", BLEU)]) + _legende_sources(["dgct"])
+    if marques:
+        poignees.append(_legende_marques())
+    ax.legend(handles=poignees, loc="upper center",
               bbox_to_anchor=(0.5, -0.15), ncol=2, fontsize=7.5, frameon=False)
     fig.tight_layout()
     return fig
 
 
-def vues_impots():
-    return [(_lab("vue_md"), fig_impots("md")), (_lab("vue_r1"), fig_impots("r1")),
-            (_lab("vue_pib"), fig_impots("pib")),
-            (_lab("vue_recouvrement"), fig_recouvrement_tib())]
+def table_recouvrement_tib():
+    import pandas as pd
+    return pd.DataFrame(_lignes_recouvrement())
+
+
+def vues_impots(impots=IMPOTS, sources=SOURCES_IMPOTS, recouvrement=True,
+                titre: str = "t_impots", marques=()):
+    """Les vues de la figure des impôts : millions de dinars, part des recettes de
+    fonctionnement, % du PIB — et, si `recouvrement`, le taux de recouvrement publié de la
+    TIB. Sans argument : la figure d'origine, à quatre impôts et quatre vues."""
+    vues = [(_lab("vue_md"), fig_impots("md", impots, sources, titre, marques)),
+            (_lab("vue_r1"), fig_impots("r1", impots, sources, titre, marques)),
+            (_lab("vue_pib"), fig_impots("pib", impots, sources, titre, marques))]
+    if recouvrement:
+        vues.append((_lab("vue_recouvrement"), fig_recouvrement_tib()))
+    return vues
+
+
+# Chapitre des impôts sur les immeubles : `fig-fl-immeubles-rendement` et
+# `fig-fl-immeubles-recouvrement`.
+
+def vues_immeubles_rendement():
+    return vues_impots(IMPOTS_IMMEUBLES, SOURCES_BUDGETAIRES, recouvrement=False,
+                       titre="t_immeubles_rendement", marques=MARQUES_IMMEUBLES)
+
+
+def table_immeubles_rendement():
+    return table_impots(IMPOTS_IMMEUBLES, SOURCES_BUDGETAIRES, recouvrement=False,
+                        base_pib=True)
+
+
+def fig_immeubles_recouvrement():
+    return fig_recouvrement_tib(marques=MARQUES_RECOUVREMENT)
+
+
+# Chapitre des impôts sur l'activité : `fig-fl-activite-rendement` (à insérer à la conversion
+# du chapitre). Sans la série `finances-locales-bm-1997`.
+
+def vues_activite_rendement():
+    return vues_impots(IMPOTS_ACTIVITE, SOURCES_BUDGETAIRES, recouvrement=False,
+                       titre="t_activite_rendement", marques=MARQUES_ACTIVITE)
+
+
+def table_activite_rendement():
+    return table_impots(IMPOTS_ACTIVITE, SOURCES_BUDGETAIRES, recouvrement=False,
+                        base_pib=True)
 
 
 # --- 4. Fonds commun ---------------------------------------------------------------------
