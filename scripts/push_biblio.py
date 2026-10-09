@@ -50,6 +50,7 @@ TYPES = {
     "webpage": "webpage",
     "article-newspaper": "newspaperArticle",
     "article-journal": "journalArticle",
+    "chapter": "bookSection",
 }
 
 # Champs communs. Les alias par type (statute.nameOfAct pour `title`, par exemple) sont
@@ -66,6 +67,12 @@ CHAMPS = {
     "title-short": "shortTitle",
     "DOI": "DOI",
     "URL": "url",
+    # `language` est natif pour les huit types visés. Absent de cette table, il était
+    # écarté à l'envoi sans erreur : la langue d'un rapport arabe ne remontait jamais.
+    "language": "language",
+    # Le livre, le chapitre et le rapport ont `ISBN` ; les autres types ne l'ont pas, et
+    # une entrée qui en porterait un serait refusée nommément plutôt qu'amputée.
+    "ISBN": "ISBN",
     # Provenance d'un document tiré des archives du web : `URL` porte la capture,
     # `archive_location` l'adresse d'origine. Le rapport et le livre ont ces champs ;
     # la page web et le texte législatif ne les ont pas, d'où leur place dans
@@ -80,6 +87,21 @@ ALIAS = {
     "report": {"publisher": "institution"},
     "dataset": {"publisher": "repository", "place": "repositoryLocation"},
     "webpage": {"publicationTitle": "websiteTitle"},
+    # Le titre de l'ouvrage collectif : `bookTitle` a `publicationTitle` pour champ de base.
+    "bookSection": {"publicationTitle": "bookTitle"},
+}
+
+# Rôles de créateurs, CSL -> Zotero (`csl.names` du même schéma, lu à l'envers). Écrit en
+# clair plutôt qu'inversé par le code : `creator` et `author` y pointent tous deux vers
+# `author`. Chaque type n'admet qu'une partie de ces rôles — le texte législatif n'a pas
+# d'éditeur scientifique —, ce que `roles_du_type` contrôle avant l'envoi.
+ROLES = {
+    "author": "author",
+    "editor": "editor",
+    "translator": "translator",
+    "contributor": "contributor",
+    "container-author": "bookAuthor",
+    "collection-editor": "seriesEditor",
 }
 
 # Champs CSL qu'aucun champ Zotero ne peut accueillir pour le type visé. Zotero relit les
@@ -101,6 +123,13 @@ def champs_du_type(type_zotero: str, schema: dict) -> set[str]:
     for t in schema["itemTypes"]:
         if t["itemType"] == type_zotero:
             return {f["field"] for f in t["fields"]}
+    return set()
+
+
+def roles_du_type(type_zotero: str, schema: dict) -> set[str]:
+    for t in schema["itemTypes"]:
+        if t["itemType"] == type_zotero:
+            return {c["creatorType"] for c in t["creatorTypes"]}
     return set()
 
 
@@ -174,13 +203,26 @@ def csl_vers_zotero(entree: dict, schema: dict) -> dict:
     if "accessed" in entree and "accessDate" in disponibles:
         item["accessDate"] = date_csl_vers_zotero(entree["accessed"])
 
-    if "author" in entree:
-        item["creators"] = [
-            {"creatorType": "author", "name": a["literal"]} if "literal" in a
-            else {"creatorType": "author",
+    # Les auteurs d'abord, puis les autres rôles dans l'ordre de ROLES : l'ordre des
+    # créateurs est celui que Zotero affiche, et une entrée sans autre rôle que l'auteur
+    # donne exactement l'élément d'avant.
+    admis = roles_du_type(type_zotero, schema)
+    createurs = []
+    for role_csl, role_zotero in ROLES.items():
+        if role_csl not in entree:
+            continue
+        if role_zotero not in admis:
+            raise ValueError(
+                f"{entree.get('id')} : le rôle « {role_csl} » n'existe pas pour {type_zotero}"
+            )
+        createurs += [
+            {"creatorType": role_zotero, "name": a["literal"]} if "literal" in a
+            else {"creatorType": role_zotero,
                   "firstName": a.get("given", ""), "lastName": a.get("family", "")}
-            for a in entree["author"]
+            for a in entree[role_csl]
         ]
+    if createurs or "author" in entree:
+        item["creators"] = createurs
 
     # `citation-key:` en minuscules : c'est ce que lit extract_citation_key de
     # sync_biblio.py. La convention « Citation Key: » de Better BibTeX est une AUTRE
@@ -242,12 +284,16 @@ def zotero_vers_csl(item: dict, schema: dict) -> dict:
         else:
             note.append(ligne)
         lignes.append(ligne)
-    if item.get("creators"):
-        entree["author"] = [
+    for role_csl, role_zotero in ROLES.items():
+        noms = [
             {"literal": c["name"]} if "name" in c
             else {"given": c.get("firstName", ""), "family": c.get("lastName", "")}
-            for c in item["creators"] if c.get("creatorType") == "author"
+            for c in item.get("creators") or [] if c.get("creatorType") == role_zotero
         ]
+        # Un rôle sans nom n'est pas émis : un ouvrage collectif qui n'a que des
+        # éditeurs scientifiques ne doit pas revenir avec un `author` vide.
+        if noms:
+            entree[role_csl] = noms
     note_texte = "\n".join(note).strip()
     if note_texte:
         entree["note"] = f"citation-key: {entree.get('id','')}\n{note_texte}"
