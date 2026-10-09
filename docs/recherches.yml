@@ -1825,3 +1825,36 @@
     couverture: 'titres de jort_cache jusqu''au n° 97 du 2 octobre 2026 ; plein texte des 581 fascicules arabes du corpus du n° 116/2022 au n° 97/2026 (2022 : 26 ; 2023 : 146 ; 2024 : 158 ; 2025 : 156 ; 2026 : 95) — la requête retrouve bien l''avenant n° 15 au n° 116/2022, seul résultat ; fascicules arabes absents du corpus, donc non parcourus : n° 130 et 132 de 2022, n° 45, 122 et 146 de 2023, n° 9 de 2024, n° 3 et 58 de 2026 (2025 complet jusqu''au n° 156 ; derniers numéros présents : 143, 149, 159, 156, 97) ; cinq fascicules à couche texte très courte non contrôlés à l''image (Ja0842024, Ja1252024, Ja0372025, Ja0672025, Ja0702025) ; grilles et pages numérisées sans couche texte hors d''atteinte de la requête ; page du tiers paie-tunisie.com (8 octobre 2026) : dernier document proposé = avenant n° 15'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+
+- id: r-ccl-2018-decrets-art391
+  objet: décret gouvernemental pris en vertu de l'art. 391, al. 2, du code des collectivités locales (loi organique n° 2018-29), fixant, sur avis de la Haute instance des finances locales, le droit de licence sur les débits de boissons, la redevance de légalisation de signature, la redevance de certification conforme ou la délivrance de certificats et actes ; ou tout décret de tarifs postérieur au décret gouvernemental n° 2016-805
+  ou: [precis/fr/finances_locales/_taxes_redevances.qmd#sec-fl-moduler-droits]
+  requetes:
+    titres_fts: ['"المالية المحلية"', '"معلوم الإجازة"', '"تعريفة المعاليم"', '"الجباية المحلية"']
+    titres_like:
+    - '%للمالية المحلية%'
+    - '%معلوم الإجازة%'
+    - '%التعريف بالإمضاء%'
+    - '%مطابقة النسخ%'
+    - '%المرخص للجماعات%'
+    - '%الجباية المحلية%'
+    - '%fiscalite locale%'
+    - '%tarif des taxes%'
+    plein_texte:
+    - الهيئة العليا للمالية المحلية
+    - معلوم الإجازة
+    - تعريفة المعاليم المرخص
+    - عدد 805 لسنة 2016
+    - مجلة الجباية المحلية
+    depuis: 2018-05-15
+  passes:
+  - date: 2026-10-09
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache : titres et objets des années 2016 à 2026 (12 182 notices), comparés après normalisation de l''arabe (formes de présentation, hamzas, tā'' marbūṭa, diacritiques), puis requêtes LIKE et FTS ci-dessus rejouées telles quelles en SQL sur 2018-2026 — ne répondent que le décret gouvernemental n° 2016-805, le code de 2018 et des articles de lois de finances (LF 2021, 2023, 2024, 2025, 2026). Plein texte arabe de 1 128 fascicules du corpus local, de 2018 au n° 97 de 2026 (30 septembre 2026) : candidats lus un à un — lois de finances et arrêtés d''amnistie, nomenclature budgétaire (décret gouvernemental n° 2020-52), nomination et indemnités de la Haute instance (JORT 2019 n° 31, 2020 n° 6), visas d''un arrêté du 30 janvier 2023 citant le décret n° 2016-805 comme en vigueur. Lacunes : 44 fascicules arabes à couche texte illisible, non lus à l''image (2020 n° 59, 114 ; 2021 n° 67, 69, 71, 74, 78, 89, 93 ; 2022 n° 35, 50, 61, 86, 88, 91, 92, 95, 107 ; 2023 n° 5, 49, 57, 95, 120 ; 2024 n° 21, 38, 65, 82, 84, 120, 125, 126, 132 ; 2025 n° 16, 37, 49, 58, 64, 67, 70, 72, 77, 81, 142, 152) ; fascicules de 2018-2026 absents du corpus non recensés (relancer --sonder-pist non lancé) ; relance par recherches.py non faite ; Journal officiel des collectivités locales, hors corpus. Note : docs/notes/finances-locales-impots-lectures-2026-10-09.md, § D.2 et § 10.'
+    couvert_jusqu_au: 2026-09-30
+    resultat: aucun
+  a_faire:
+  - lire à l'image les 44 fascicules arabes à couche texte illisible de 2020 à 2025
+  - recenser les fascicules de 2018-2026 absents du corpus
+  - chercher les délibérations tarifaires au Journal officiel des collectivités locales
