@@ -12,7 +12,9 @@ Quatre figures, toutes lues par `figtools.series()` :
   - les allocataires du transfert mensuel, stock de décembre, entrées et sorties, 2018-2023
     (`mas-amen-social-2023-beneficiaires-bruts`) ;
   - les crédits affectés au programme Amen social par intervention, 2021-2023
-    (`mas-amen-social-2023-credits-bruts`).
+    (`mas-amen-social-2023-credits-bruts`), en millions de dinars puis, pour le total et le
+    transfert mensuel, en part du PIB aux prix courants des comptes de la nation
+    (`cnat-pib-nominal`) : les trois années relèvent de la seule base 2015, rien n'est chaîné.
 
 Le déflateur est celui du volume « Le marché du travail » : le module est chargé PAR SON
 CHEMIN, sans être déplacé (deux paquets `figures` portent le même nom ; un import par
@@ -38,6 +40,7 @@ HERE = Path(__file__).resolve().parent
 SERIE_PNAFN = "pnafn-allocation"
 SERIE_ALLOCATAIRES = "mas-amen-social-2023-beneficiaires-bruts"
 SERIE_CREDITS = "mas-amen-social-2023-credits-bruts"
+SERIE_PIB = "cnat-pib-nominal"
 SERIE_PNAFN_BM = "pnafn-transfert-smig-banque-mondiale"
 SERIE_SUIVI = "amen-social-effectifs-suivi"
 # Dernière année où le montant du dernier palier est constaté par un texte : l'arrêté conjoint
@@ -547,6 +550,7 @@ INTERVENTIONS = [
     ("microprojets personnes handicapées", "Projets des personnes handicapées", GRIS),
 ]
 TOTAL = "total crédits Amen social"
+TRANSFERT = "transfert mensuel direct"
 
 
 def donnees_credits() -> dict[str, dict[int, float]]:
@@ -564,13 +568,74 @@ def table_credits():
     import pandas as pd
     d = donnees_credits()
     annees = sorted(d[TOTAL])
-    lignes = [{"Intervention (crédits affectés, MD courants)": lib,
+    lignes = [{"Crédits affectés (MD courants, sauf mention)": lib,
                **{str(a): (_fr(d[ind][a], 1) if a in d[ind] else "—")
                   for a in annees}}
               for ind, lib, _ in INTERVENTIONS]
-    lignes.append({"Intervention (crédits affectés, MD courants)": "Total",
+    lignes.append({"Crédits affectés (MD courants, sauf mention)": "Total",
                    **{str(a): _fr(d[TOTAL][a], 1) for a in annees}})
+    pib, base = pib_credits()
+    parts = parts_pib_credits()
+    lignes.append({"Crédits affectés (MD courants, sauf mention)":
+                   f"PIB aux prix courants, comptes de la nation, base {base} (MD)",
+                   **{str(a): _fr(pib[a], 1) for a in annees}})
+    for cle, lib in ((TOTAL, "Total"), (TRANSFERT, "Transfert mensuel")):
+        lignes.append({"Crédits affectés (MD courants, sauf mention)":
+                       f"{lib}, en % du PIB (base {base})",
+                       **{str(a): _fr(parts[cle][a], 2) for a in annees}})
     return pd.DataFrame(lignes)
+
+
+def pib_credits() -> tuple[dict[int, float], int]:
+    """({année: PIB aux prix courants, en MD}, base) pour les années des crédits : l'édition
+    la plus récente des comptes de la nation qui porte l'année. Les années doivent relever
+    d'UNE SEULE base : aucune base n'est chaînée, et un changement de base arrête le calcul."""
+    df = figtools.series(SERIE_PIB).copy()
+    df["fin"] = df["edition"].str[-4:].astype(int)
+    df = df.sort_values("fin").groupby("annee").last()
+    annees = sorted(donnees_credits()[TOTAL])
+    bases = {int(str(df.loc[a, "base"]).split()[-1]) for a in annees}
+    if len(bases) != 1:
+        raise ValueError(f"PIB des années {annees} : plusieurs bases {sorted(bases)}")
+    return {a: float(df.loc[a, "valeur"]) for a in annees}, bases.pop()
+
+
+def parts_pib_credits() -> dict[str, dict[int, float]]:
+    """Crédits affectés en % du PIB : total du programme et transfert mensuel."""
+    d = donnees_credits()
+    pib, _ = pib_credits()
+    return {cle: {a: 100 * d[cle][a] / pib[a] for a in pib} for cle in (TOTAL, TRANSFERT)}
+
+
+def fig_credits_pib():
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    parts = parts_pib_credits()
+    _, base = pib_credits()
+    annees = sorted(parts[TOTAL])
+    fig, ax = plt.subplots(figsize=(9.5, 5))
+    largeur = 0.32
+    for cle, lib, couleur, decalage in (
+            (TOTAL, "Total des crédits affectés au programme", GRIS, -largeur / 2),
+            (TRANSFERT, "dont transfert mensuel", BLEU, largeur / 2)):
+        ax.bar([a + decalage for a in annees], [parts[cle][a] for a in annees], largeur,
+               color=couleur, label=ft(lib))
+        for a in annees:
+            ax.annotate(_fr(parts[cle][a], 2) + " %", xy=(a + decalage, parts[cle][a]),
+                        xytext=(0, 4), textcoords="offset points", ha="center", fontsize=9)
+    ax.set_xticks(annees)
+    ax.set_ylim(0, max(parts[TOTAL].values()) * 1.15)
+    ax.set_ylabel(ft(f"Crédits affectés, en % du PIB aux prix courants (base {base})"))
+    ax.set_xlabel(ft("Année"))
+    ax.grid(True, axis="y", alpha=0.3)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.13), ncol=2, fontsize=8,
+              frameon=False)
+    fig.tight_layout()
+    return fig
+
+
+def vues_credits():
+    return [("En millions de dinars", fig_credits()), ("En % du PIB", fig_credits_pib())]
 
 
 def fig_credits():

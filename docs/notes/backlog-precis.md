@@ -740,8 +740,17 @@ liste qui suit le tableau, citations comprises. Restent :
   - **reste, bibliographe** : treize clés pour les décrets de prorogation des cartes de soins
     (`tbl-nc-cartes-prorogations`, sans citation) ; type CSL de l'accord de prêt n° 9230-TN ;
     adresses des cinq notices à rouvrir (reprises du catalogue de `tunisia-data`) ;
-  - **non fait** : part des crédits du ministère dans le PIB (trois points ; demande de dire
-    la base et de renvoyer à l'annexe du PIB).
+  - **fait le 9 octobre 2026** : part des crédits du ministère dans le PIB, seconde vue de
+    `#fig-nc-credits` (`figures/assistance.py`, `vues_credits`) — total 0,56 %, 0,59 % et
+    0,68 % du PIB en 2021, 2022 et 2023, transfert mensuel 0,49 %, 0,49 % et 0,58 % ; PIB aux
+    prix courants de la série `cnat-pib-nominal`, édition 2021-2025 des comptes de la nation,
+    base 2015 seule, années non rétropolées, renvoi à l'annexe du PIB ; crédits affectés, non
+    dépenses exécutées. Les 0,6 % (2021) et 0,61 % (2022) de la Banque mondiale pour le seul
+    transfert, base non dite, restent à `#sec-nc-etudes-pib`, hors de la figure : écart
+    constaté, non expliqué (**reste** : dépenses exécutées, absentes du rapport du ministère ;
+    le PIB employé par la Banque mondiale). Si une édition ultérieure des comptes révise le
+    PIB de 2021-2023, relire la note de lecture et les deux phrases du chapitre, qui citent
+    les parts à la main.
 
 - **Tableau engendré — fait le 3 octobre 2026** : les indemnités familiales du secteur public
   (`tbl-indemnites-familiales-public`) sont désormais le tableau du livre « Retraites », émis

@@ -1,5 +1,5 @@
-series: [mas-amen-social-2023-credits-bruts]
-sources: [mas-amen-social-2023]
-fiches: [sources/mas-amen-social-2023.md]
-caveats: [Case 2021 enfants moins de 6 ans non imprimée : aucune valeur créée. Le texte PDF 36 annonce une autre dépense pour les enfants en 2023 ; ni l'une ni l'autre n'est substituée.]
+series: [mas-amen-social-2023-credits-bruts, cnat-pib-nominal]
+sources: [mas-amen-social-2023, ins-cnat-2015]
+fiches: [sources/mas-amen-social-2023.md, docs/croissances-revenus-prix.md]
+caveats: [Case 2021 enfants moins de 6 ans non imprimée : aucune valeur créée. Le texte PDF 36 annonce une autre dépense pour les enfants en 2023 ; ni l'une ni l'autre n'est substituée., LES NIVEAUX NE SE COMPARENT PAS D'UNE ÉDITION À L'AUTRE : ils changent de base (la base 1997 est d'environ 10 % au-dessus de la base 1983, la base 2015 d'environ 6 % au-dessus de la base 1997). Contrôles : huit valeurs lues à la main ; dans chaque édition, le taux calculé sur les niveaux lus redonne le taux imprimé à 0,1 point près ; chaque valeur d'UNdata de même base se retrouve dans l'une des éditions à 0,1 % près. L'édition 2015-2020 porte six colonnes. Voir `pib_nominal_croissance.csv` pour une série de taux.]
 generated: 2026-10-09

@@ -852,7 +852,7 @@ numérique, inscrits au registre, enquêtes sociales). -->
 - **Un nombre d'allocataires en hausse de 39 % en cinq ans.** De 242 833 en décembre 2018 à 337 199 en décembre 2023 selon le ministère ; l'essentiel de la hausse vient de 2022 et de 2023, où les entrées dépassent 44 000 par an (@fig-nc-beneficiaires).
 - **Deux unités, deux sources.** Le ministère compte des allocataires, individus ou familles ; les documents de la Banque mondiale comptent des ménages. Les deux colonnes du tableau ne se raccordent pas.
 - **Des chiffres discordants, donnés tels quels.** Pour 2010, 124 000 ménages selon deux documents de la Banque mondiale, 130 000 selon un troisième ; pour avril 2026, 386 351 et 387 668 dans le même rapport.
-- **Plus d'un milliard de dinars de crédits affectés en 2023.** 735,1 MD en 2021, 818,5 MD en 2022, 1 015,5 MD en 2023, dont 867,0 MD pour le transfert mensuel (@fig-nc-credits).
+- **Plus d'un milliard de dinars de crédits affectés en 2023.** 735,1 MD en 2021, 818,5 MD en 2022, 1 015,5 MD en 2023, dont 867,0 MD pour le transfert mensuel ; soit 0,56 %, 0,59 % et 0,68 % du PIB aux prix courants, base 2015 non rétropolée pour ces années (@fig-nc-credits).
 
 ### Les allocataires du transfert mensuel, 2018-2023 {#sec-nc-allocataires}
 
@@ -882,21 +882,32 @@ Les définitions de ces indicateurs sont au tableau 3 du rapport.
 
 ### Les crédits, 2021-2023 {#sec-nc-credits}
 
-Le rapport du ministère donne les crédits affectés à chaque intervention du programme pour trois années [@mas-amen-social-2023, tabl. 1].
+Le rapport du ministère donne les crédits affectés à chaque intervention du programme pour trois années [@mas-amen-social-2023, tabl. 1]. La @fig-nc-credits les donne en millions de dinars, puis, pour le total et pour le transfert mensuel, en part du PIB aux prix courants des comptes de la nation de l'Institut national de la statistique [@ins-cnat-2015].
 
 ```{python}
 #| label: fig-nc-credits
 #| echo: false
 #| output: asis
 figtools.figure_tabs(
-    fig_as.fig_credits(), fig_as.table_credits(),
-    fig_as.SERIE_CREDITS,
+    fig_as.vues_credits(), fig_as.table_credits(),
+    fig_as.SERIE_CREDITS, fig_as.SERIE_PIB,
     slug="fig_nc_credits",
     caption=("Crédits affectés au programme Amen social, par intervention, en millions de "
-             "dinars courants, 2021-2023, selon le ministère des Affaires sociales"),
+             "dinars courants, puis total et transfert mensuel en part du PIB (base 2015), "
+             "2021-2023, selon le ministère des Affaires sociales"),
     note_lecture=(
-        "Chaque barre empile les crédits affectés aux interventions du programme ; ce sont "
-        "des crédits affectés, non des dépenses exécutées. Le rapport n'imprime pas de "
+        "Première vue : chaque barre empile les crédits affectés aux interventions du "
+        "programme. Seconde vue : le total des crédits et, parmi eux, le transfert mensuel, "
+        "rapportés au PIB aux prix courants des comptes de la nation de l'Institut national "
+        "de la statistique, base 2015 — 0,56 % du PIB en 2021, 0,59 % en 2022 et 0,68 % en "
+        "2023 pour le total ; 0,49 %, 0,49 % et 0,58 % pour le transfert mensuel. Les trois "
+        "années relèvent de cette seule base et y sont établies directement, sans "
+        "rétropolation ; leur PIB est celui de l'édition 2021-2025 des comptes de la nation "
+        "(voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Dans les deux "
+        "vues, ce sont des crédits affectés, non des dépenses exécutées. Les documents de la "
+        "Banque mondiale donnent pour le seul transfert 0,6 % du PIB en 2021 et 0,61 % en "
+        "2022, sans dire la base de leur PIB : ces estimations ne sont pas tracées ici, et "
+        "l'écart avec les parts calculées sur les crédits est constaté, non expliqué. Le rapport n'imprime pas de "
         "crédit pour l'allocation des enfants de moins de six ans en 2021 : aucune valeur "
         "n'est tracée. Pour la même allocation en 2023, le tableau du rapport donne 45,8 MD, "
         "tracés ici, et son texte un autre montant. Les soins — cartes de soins gratuits et "
@@ -908,6 +919,7 @@ figtools.figure_tabs(
 ```
 
 - **Le transfert mensuel fait 84 % à 88 % du total.** 645,0 MD sur 735,1 en 2021, 687,4 sur 818,5 en 2022, 867,0 sur 1 015,5 en 2023.
+- **En part du PIB.** Rapporté au PIB aux prix courants des comptes de la nation, base 2015, années établies directement dans cette base et non rétropolées ([annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)), le total des crédits affectés fait 0,56 % en 2021, 0,59 % en 2022 et 0,68 % en 2023 ; le transfert mensuel, 0,49 %, 0,49 % et 0,58 %. Les documents de la Banque mondiale donnent pour le seul transfert 0,6 % du PIB en 2021 et 0,61 % en 2022, sans dire la base de leur PIB (@sec-nc-etudes-pib) : l'écart est constaté, non expliqué.
 - **Les aides de rentrée et des fêtes.** 51,0 MD puis 53,9 et 60,9 MD pour la rentrée scolaire et universitaire ; 27,1 MD puis 26,7 et 30,5 MD pour les fêtes.
 - **L'allocation des moins de six ans.** 40,1 MD en 2022 et 45,8 MD en 2023 au tableau des crédits ; le texte du même rapport imprime un autre montant pour 2023, sans rapprocher les deux.
 - **Hors de ce tableau.** Les soins, dont le budget est géré par le ministère de la Santé [@banquemondiale2022pad4815, encadré 1] ; l'allocation des 6 à 18 ans, pour laquelle le rapport donne un crédit de 124,6 MD financé par un don en 2023 (@sec-nc-af-6-18).
@@ -1053,7 +1065,7 @@ Ces résultats combinent une enquête de 2021 et des règles de 2024 : ils simul
 
 ### Le coût rapporté au PIB {#sec-nc-etudes-pib}
 
-Les trois documents de la Banque mondiale rapportent le coût du transfert permanent au PIB. Aucun ne dit la base des comptes nationaux qu'il emploie, ni si la série est rétropolée ; les changements de base du PIB sont décrits à l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures). Ces valeurs viennent de trois documents écrits à trois dates : elles ne forment pas une série et ne se comparent pas aux crédits du ministère (@sec-nc-credits).
+Les trois documents de la Banque mondiale rapportent le coût du transfert permanent au PIB. Aucun ne dit la base des comptes nationaux qu'il emploie, ni si la série est rétropolée ; les changements de base du PIB sont décrits à l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures). Ces valeurs viennent de trois documents écrits à trois dates : elles ne forment pas une série et ne se raccordent pas aux crédits du ministère, dont la part du PIB en base 2015 est donnée à part (@sec-nc-credits).
 
 | Année | Transfert permanent<br>(% du PIB, base non dite par la source) | Document |
 |---|---:|---|

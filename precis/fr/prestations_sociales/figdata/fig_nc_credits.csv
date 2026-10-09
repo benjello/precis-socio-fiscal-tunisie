@@ -1,10 +1,10 @@
 # Figure-data du précis socio-fiscal tunisien — généré le 2026-10-09
-# séries (tunisia_data) : mas-amen-social-2023-credits-bruts
-# sources (citation) : @mas-amen-social-2023
-# fiches : sources/mas-amen-social-2023.md
-# méthode/hypothèses : Case 2021 enfants moins de 6 ans non imprimée : aucune valeur créée. Le texte PDF 36 annonce une autre dépense pour les enfants en 2023 ; ni l'une ni l'autre n'est substituée.
-# note : Crédits affectés au programme Amen social, par intervention, en millions de dinars courants, 2021-2023, selon le ministère des Affaires sociales
-"Intervention (crédits affectés, MD courants)",2021,2022,2023
+# séries (tunisia_data) : mas-amen-social-2023-credits-bruts, cnat-pib-nominal
+# sources (citation) : @mas-amen-social-2023, @ins-cnat-2015
+# fiches : sources/mas-amen-social-2023.md, docs/croissances-revenus-prix.md
+# méthode/hypothèses : Case 2021 enfants moins de 6 ans non imprimée : aucune valeur créée. Le texte PDF 36 annonce une autre dépense pour les enfants en 2023 ; ni l'une ni l'autre n'est substituée., LES NIVEAUX NE SE COMPARENT PAS D'UNE ÉDITION À L'AUTRE : ils changent de base (la base 1997 est d'environ 10 % au-dessus de la base 1983, la base 2015 d'environ 6 % au-dessus de la base 1997). Contrôles : huit valeurs lues à la main ; dans chaque édition, le taux calculé sur les niveaux lus redonne le taux imprimé à 0,1 point près ; chaque valeur d'UNdata de même base se retrouve dans l'une des éditions à 0,1 % près. L'édition 2015-2020 porte six colonnes. Voir `pib_nominal_croissance.csv` pour une série de taux.
+# note : Crédits affectés au programme Amen social, par intervention, en millions de dinars courants, puis total et transfert mensuel en part du PIB (base 2015), 2021-2023, selon le ministère des Affaires sociales
+"Crédits affectés (MD courants, sauf mention)",2021,2022,2023
 Transfert mensuel,"645,0","687,4","867,0"
 Allocation des enfants de moins de six ans,—,"40,1","45,8"
 Aides des fêtes,"27,1","26,7","30,5"
@@ -13,3 +13,6 @@ Transport des enfants,"2,9","2,8","3,4"
 Projets des familles pauvres et à revenu limité,"4,8","4,6","5,1"
 Projets des personnes handicapées,"4,4","3,0","2,7"
 Total,"735,1","818,5","1 015,5"
+"PIB aux prix courants, comptes de la nation, base 2015 (MD)","131 544,6","139 444,5","149 793,6"
+"Total, en % du PIB (base 2015)","0,56","0,59","0,68"
+"Transfert mensuel, en % du PIB (base 2015)","0,49","0,49","0,58"
