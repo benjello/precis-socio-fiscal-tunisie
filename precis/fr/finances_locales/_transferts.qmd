@@ -19,23 +19,36 @@ from figures import finances_locales as fl
 import figtools
 figtools.figure_tabs(
     fl.vues_fccl(), fl.table_fccl(),
-    "finances-locales-communes-agregats", "finances-locales-bm-1985-2012",
+    "finances-locales-communes-agregats", "finances-locales-fccl-lois-de-finances",
+    "finances-locales-bm-1985-2012",
     "finances-locales-bm-1992", "finances-locales-bm-1997", "cnat-pib-nominal",
     slug="fig_fl_fccl",
     caption=("Le fonds commun des collectivités locales, puis les subventions annuelles du "
-             "budget de l'État, en millions de dinars courants et en % du PIB, 1985-2023"),
+             "budget de l'État, en millions de dinars courants et en % du PIB, 1976-2023"),
     note_lecture=(
-        "Chaque source est tracée à part. Les ronds sont les agrégats de la Direction "
-        "générale des collectivités locales : crédit global et ses trois parts. Le trait "
+        "Chaque source est tracée à part. Les croix violettes sont le montant du fonds "
+        "inscrit aux lois de finances pour 1976 à 1995 : le fonds entier — toutes "
+        "collectivités, réserve comprise —, tel qu'il est voté et non tel qu'il est versé. "
+        "Elles forment deux segments, que le trait pointillé de 1987 sépare et que rien ne "
+        "relie : jusqu'en 1986, l'évaluation des parts d'impôts affectées au fonds ; de 1987 "
+        "à 1995, le total de ses recettes, soit la subvention du budget de l'État et les "
+        "recettes propres du fonds. L'année 1979 manque. À partir de la loi de finances pour "
+        "1996, le tableau des fonds spéciaux du Trésor n'imprime plus le montant du fonds : "
+        "aucun trait ne joint 1995 à 2008. Les ronds sont les agrégats de la Direction "
+        "générale des collectivités locales : crédit global et ses trois parts. Seul le "
+        "crédit global, en rouge, porte comme le montant voté sur le fonds entier ; mais "
+        "c'est un agrégat publié par l'administration, non une prévision votée, et les deux "
+        "séries n'ont aucune année commune : elles ne se raccordent pas. Le trait "
         "pointillé de 2018 est une rupture de série : le fonds est supprimé au 1^er^ janvier "
         "2018, et les subventions annuelles de 2018 et 2019, en points creux, se partagent "
         "sur une autre base ; elles ne sont pas reliées à 2017, et la ligne grise n'y est "
         "plus la réserve, bien que la source en garde l'intitulé. Les losanges bleus sont les "
         "quotes-parts de la subvention annuelle inscrites aux budgets des communes ; 2023 est "
         "provisoire. En orange, la ligne « fonds commun » de trois documents de la Banque "
-        "mondiale ; l'écart de 1990 entre deux d'entre eux n'est pas tranché. Les traits "
-        "rouges placent deux textes à leur date d'effet (gestion 1987, 1^er^ janvier 2014) "
-        "sans établir de lien de cause. Dans la vue au PIB, le dénominateur est le PIB des "
+        "mondiale ; l'écart de 1990 entre deux d'entre eux n'est pas tranché. Le trait "
+        "rouge place un texte à sa date d'effet (1^er^ janvier 2014) sans établir de lien "
+        "de cause. La vue au PIB ne porte pas les montants votés de 1976 à 1995 : les "
+        "comptes de la nation retenus ici commencent en 2001. Le dénominateur est le PIB des "
         "comptes de la nation de l'Institut national de la statistique, pris dans la "
         "dernière édition qui porte l'année : base 1983 de 2002 à 2004, base 1997 de 2005 à "
         "2014, base 2015 ensuite. Aucune valeur n'est rétropolée et les bases ne sont pas "
@@ -56,7 +69,7 @@ figtools.figure_tabs(
 
 : Le fonds commun et ce qui lui succède : mise en place, trois grandes réformes et second temps de la dernière ; entre guillemets, les mots des lois {#tbl-fl-transferts-reformes}
 
-- **Combien.** 162 MD en 2008 et 394 MD en 2017 pour le fonds ; 440 puis 480 MD de subventions annuelles en 2018 et 2019 (@sec-fl-lp-fccl).
+- **Combien.** Le fonds voté passe de 13 MD en 1976 à 109 MD en 1995, en dinars courants ; de 1996 à 2007, la loi de finances n'en imprime plus le montant. 162 MD en 2008 et 394 MD en 2017 pour le fonds, selon les agrégats de l'administration ; 440 puis 480 MD de subventions annuelles en 2018 et 2019 (@sec-fl-lp-fccl).
 - **Qui reçoit.** De 2007 à 2017, les communes ont 70,5 % du fonds, les conseils régionaux 11,5 % et la réserve 18 % (@sec-fl-transferts-textes, @sec-fl-fccl-reserve) ; au titre de la seule part de gestion, les communes ont 75,65 % des subventions annuelles en 2018, 77,85 % en 2021 (@sec-fl-transferts-etat-du-droit).
 - **Quelle part des ressources.** Le fonds et les autres transferts de fonctionnement de l'État font environ 25 % des recettes de fonctionnement des communes de 2008 à 2010, 52 % en 2011, 30 % en 2017 (@fig-fl-lp-ressources).
 
@@ -145,7 +158,7 @@ Trois réformes changent le financement du fonds en 1987, son public en 2001, so
 À partir de la gestion 1987, le fonds ne reçoit plus de parts d'impôts : son montant est un crédit du budget de l'État, voté chaque année. Le partage entre collectivités reste le même.
 
 - **Ce que la loi cherche.** [L'article 92 de la loi de finances pour 1987](#r-fl-transf-1987) a pour rubrique « Intégration au budget de l'État des recettes fiscales et para-fiscales revenant aux fonds spéciaux du Trésor ». Il vise douze fonds spéciaux, dont le fonds commun.
-- **Des prélèvements annuels.** De 1987 à 1991, les lois de finances prélèvent sur ce crédit de 3,2 à 8,5 MD par an, pour la caisse de prêts, la protection civile et les agents des collectivités (@tbl-fl-fccl-prelevements). Le seul crédit voté relevé ici est celui de 1990 (@sec-fl-transferts-1990).
+- **Des prélèvements annuels.** De 1987 à 1991, les lois de finances prélèvent sur ce crédit de 3,2 à 8,5 MD par an, pour la caisse de prêts, la protection civile et les agents des collectivités (@tbl-fl-fccl-prelevements). Les montants votés de 1987 à 1995 sont à la longue période (@sec-fl-lp-fccl).
 
 :::: {.chronologie-repliable titre="Fonds commun des collectivités locales : prélèvements autorisés par les lois de finances au profit de la caisse de prêts, de la protection civile et des agents, montants par gestion, 1987-1991"}
 
@@ -161,7 +174,7 @@ Trois réformes changent le financement du fonds en 1987, son public en 2001, so
 
 L'article 94 de la loi de finances pour 1987 a pour rubrique « Prélèvement sur les ressources du fonds commun des collectivités locales au profit de la caisse des prêts et de soutien aux collectivités locales ».
 
-<!-- TODO (documentaliste) : relire à l'image les montants de 1990 et 1991 au profit de la caisse (lus par océrisation) ; lire les prélèvements des lois de finances pour 1977 à 1979 et le montant du fonds, loi de finances par loi de finances, de 1987 à 2017 (tableaux des fonds spéciaux puis des comptes spéciaux), pour en faire une série datée au JORT : note docs/notes/finances-locales-transferts.md, § 3 et 11. -->
+<!-- TODO (documentaliste) : relire à l'image les montants de 1990 et 1991 au profit de la caisse (lus par océrisation) ; lire les prélèvements des lois de finances pour 1977 à 1979. Le montant du fonds, loi de finances par loi de finances, est versé de 1976 à 1995 sauf 1979 (série finances-locales-fccl-lois-de-finances, tracée dans fig-fl-lp-fccl) ; restent 1979 (tableau à localiser dans la loi n° 78-59) et 1996-2017, où le tableau des fonds spéciaux n'imprime plus le montant (1996 et 1997 lus ; 1998-2010 à vérifier) : chercher dans le budget du ministère de l'Intérieur par chapitre, les lois de règlement et les décrets de répartition ; l'exécution de 1976-1982 est aux rapports annuels de la Banque centrale, non versée : note docs/notes/finances-locales-transferts.md, § 3 et 11. -->
 
 ::::
 
@@ -438,22 +451,26 @@ Une évaluation de la Banque mondiale donne d'autres montants pour trois exercic
 
 ## La longue période {#sec-fl-transferts-longue-periode}
 
-Les sources du volume et leurs ruptures sont présentées au chapitre des budgets (@sec-fl-lp-sources) ; les séries de la caisse sont dans sa section (@sec-fl-lp-cpscl). Aucune série ne couvre seule 1985-2023 : trois sources se relaient, tracées à part (@fig-fl-lp-fccl).
+Les sources du volume et leurs ruptures sont présentées au chapitre des budgets (@sec-fl-lp-sources) ; les séries de la caisse sont dans sa section (@sec-fl-lp-cpscl). Aucune série ne couvre seule 1976-2023 : quatre sources se relaient, tracées à part (@fig-fl-lp-fccl) — les montants votés des lois de finances de 1976 à 1995, les agrégats de l'administration de 2008 à 2019, les budgets des communes en 2022 et 2023, et les rapports de la Banque mondiale de 1985 à 2012. De 1996 à 2007, aucune source budgétaire ne donne ici le montant du fonds.
 
-### Le fonds, puis les subventions annuelles, 1985-2023 {#sec-fl-lp-fccl}
+### Le fonds, puis les subventions annuelles, 1976-2023 {#sec-fl-lp-fccl}
 
-- **2008-2017, le fonds.** Selon les agrégats de la Direction générale des collectivités locales [@dgct-donnees-ouvertes], le crédit global passe de 162 MD en 2008 à 394 MD en 2017, dont 114 puis 278 MD pour les communes. La réserve y vaut 18 % à l'arrondi près, et la quote-part des communes de 70,4 % à 70,7 % : les taux légaux du 1^er^ janvier 2007 (@tbl-fl-fccl-repartition).
+- **1976-1995, le fonds voté.** Selon les lois de finances pour 1976 à 1995 (tableaux des fonds spéciaux du Trésor), le montant inscrit au fonds entier — toutes collectivités, réserve comprise — passe de 13 MD en 1976 à 70 MD en 1985 et en 1986, quand le fonds reçoit des parts d'impôts ; puis de 72,5 MD en 1987 à 109 MD en 1995, total des recettes du fonds, dont la subvention du budget fait 55 MD en 1987 et la totalité en 1995. Ce sont des dinars courants et des prévisions votées, non des montants versés ; l'année 1979 manque, et les deux périodes ne mesurent pas la même chose (@sec-fl-fccl-1987).
+- **1996-2007, aucun montant.** À partir de la loi de finances pour 1996, le tableau des fonds spéciaux du Trésor n'imprime plus le montant du fonds ; seuls des rapports de la Banque mondiale portent une ligne pour ces années (@sec-fl-transferts-1990).
+- **2008-2017, le fonds.** Selon les agrégats de la Direction générale des collectivités locales [@dgct-donnees-ouvertes], le crédit global passe de 162 MD en 2008 à 394 MD en 2017, dont 114 puis 278 MD pour les communes. Le crédit global est, comme le montant voté de 1976-1995, celui du fonds entier ; mais c'est un agrégat publié, non une prévision votée, et aucune année n'est commune aux deux séries : la figure ne les relie pas. La réserve y vaut 18 % à l'arrondi près, et la quote-part des communes de 70,4 % à 70,7 % : les taux légaux du 1^er^ janvier 2007 (@tbl-fl-fccl-repartition).
 - **2018-2019, les subventions annuelles.** 440 puis 480 MD, dont 75,7 % et 75,6 % aux communes, 9,3 % et 9,4 % aux conseils régionaux, et 15,0 % à la ligne que la source intitule encore « réserve » : au million près, les parts de l'arrêté de 2018 — un rapprochement calculé, non une définition publiée. La série change de base : la figure ne relie pas 2017 à 2018.
 - **2022-2023, les budgets des communes.** Ils isolent la quote-part de la subvention annuelle au titre de la gestion (article 6101) et de l'investissement (article 8002) : 591 MD en 2022 et 611 MD en 2023 [@dgct-donnees-ouvertes]. Rien n'établit que ces articles portent toute la subvention annuelle et elle seule : ces montants ne se comparent pas sans réserve à ceux de 2018-2019.
-- **En part du PIB.** Le crédit global du fonds passe de 0,29 % du PIB en 2008 à 0,40 % en 2014, en base 1997 des comptes nationaux ; en base 2015, il fait 0,41 % en 2015 et 0,39 % en 2016 et 2017. Les subventions annuelles font 0,39 % en 2018 et 2019, en base 2015. Les deux bases ne sont pas raccordées (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)).
+- **En part du PIB.** Les montants votés de 1976 à 1995 ne sont pas rapportés au PIB : les comptes de la nation retenus pour ce volume commencent en 2001. Le crédit global du fonds passe de 0,29 % du PIB en 2008 à 0,40 % en 2014, en base 1997 des comptes nationaux ; en base 2015, il fait 0,41 % en 2015 et 0,39 % en 2016 et 2017. Les subventions annuelles font 0,39 % en 2018 et 2019, en base 2015. Les deux bases ne sont pas raccordées (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)).
 
 ### Selon les rapports de la Banque mondiale, 1985-2012 {#sec-fl-transferts-1990}
 
-Trois documents de la Banque mondiale portent une ligne « fonds commun », tracée en orange (@fig-fl-lp-fccl). Pour 1990, deux d'entre eux donnent 82 MD et 50,8 MD, quand [la loi de finances](#r-fl-transf-1990) inscrit au fonds 80 MD, en prévision : la divergence n'est pas tranchée. De 2008 à 2011, ceux de 2014 sont inférieurs de 2 MD environ aux agrégats de la Direction générale.
+Trois documents de la Banque mondiale portent une ligne « fonds commun », tracée en orange (@fig-fl-lp-fccl). Pour 1990, deux d'entre eux donnent 82 MD et 50,8 MD, quand [la loi de finances](#r-fl-transf-1990) inscrit au fonds 80 MD, en prévision : la divergence n'est pas tranchée. De 1985 à 1995, les montants votés concordent avec le rapport de 1992 certaines années et s'en écartent d'autres, et le rapport de 1997 donne environ 64 % des montants votés. De 2008 à 2011, ceux de 2014 sont inférieurs de 2 MD environ aux agrégats de la Direction générale.
 
-:::: {.chronologie-repliable titre="Fonds commun : les chiffres des rapports de la Banque mondiale de 1992, 1997 et 2014, leurs sources et leurs écarts avec le budgétaire, 1990 et 2008-2012"}
+:::: {.chronologie-repliable titre="Fonds commun : les chiffres des rapports de la Banque mondiale de 1992, 1997 et 2014, leurs sources et leurs écarts avec le budgétaire, 1985-1995 et 2008-2012"}
 
 **1990.** Deux rapports d'évaluation de projets municipaux donnent 82 MD, en 1992, et 50,8 MD, en 1997 [@wb-msip-1992, fig. 6; @wb-mdp2-1997, annexe 4, tabl. 2]. Le premier est proche du montant voté ; le second se rapproche de la part des communes que donnent les critères légaux, 75 % × 86 % du fonds, soit 51,6 MD sur 80 MD, mais ce calcul n'est imprimé nulle part et la réserve de 1990 n'est pas connue ici. Les autres écarts entre ces deux rapports sont au chapitre des budgets (@tbl-fl-lp-ecarts-bm).
+
+**1985-1995.** Les montants votés aux lois de finances et la ligne du rapport de 1992 coïncident en 1988 (75 MD) et en 1991 (87 MD) ; le rapport donne 65 et 66 MD en 1985 et 1986, quand la loi de finances inscrit 70 MD chacune des deux années [@wb-msip-1992, fig. 6]. Le rapport de 1997 donne 50,8, 62,5, 66,3 et 70,2 MD en 1990, 1992, 1994 et 1995 [@wb-mdp2-1997, annexe 4, tabl. 2], soit de 63,5 % à 65,1 % des 80, 96, 103 et 109 MD votés : l'ordre de grandeur de la part légale des communes, 75 % × 86 %, soit 64,5 %. C'est un constat, non une explication établie : aucun des deux rapports ne dit comment sa ligne est construite.
 
 **2008-2012.** Le document d'évaluation d'un programme de développement urbain publie les budgets agrégés des communes de 2002 à 2012, avec une ligne « fonds commun » [@wb-pforr-pad-2014, tabl. 1]. L'évaluation technique du même programme donne pour cette ligne 112,2, 119,3, 131,4, 144,3 et 176,3 MD de 2008 à 2012 [@wb-pforr-ta-2014, p. 47, tabl. 2.5] ; les agrégats de la Direction générale donnent 114, 121, 133, 147 et 176 MD de quote-part des communes [@dgct-donnees-ouvertes]. L'évaluation technique rejoint le document d'évaluation, non la Direction générale.
 
