@@ -14,7 +14,7 @@ chaque figure est montée dans le chapitre de sa règle (budgets, impôts, trans
     fl.fig_remunerations() ; fl.table_remunerations()  # rémunérations / recettes du titre I
     fl.vues_depenses()    ; fl.table_depenses()     # dépenses des deux titres, service de la dette
 
-D'OÙ VIENNENT LES DONNÉES. Six séries de `tunisia-data`, toutes lues par `figtools.series()`
+D'OÙ VIENNENT LES DONNÉES. Sept séries de `tunisia-data`, toutes lues par `figtools.series()`
 (l'entrepôt s'il est installé, sinon le cache `precis/_seriescache/`) :
 
   - `finances-locales-communes-agregats` : agrégats publiés par la DGCT (2008-2019) et somme
@@ -25,6 +25,9 @@ D'OÙ VIENNENT LES DONNÉES. Six séries de `tunisia-data`, toutes lues par `fig
     1992 (fig. 6, 1985-1991) et de 1997 (annexe 4, tabl. 2, 1990-1996). L'entrée du catalogue
     de l'entrepôt ne désigne que le fichier de 2014 ; ces deux fichiers sont snapshotés par
     `scripts/snapshot_finances_locales_bm.py`, et leur provenance est déclarée ci-dessous ;
+  - `finances-locales-fccl-lois-de-finances` : montant du fonds commun inscrit au tableau des
+    fonds spéciaux du Trésor des lois de finances pour 1976 à 1995 (sauf 1979) : une prévision
+    votée, pour le fonds entier ;
   - `finances-locales-cpscl` : états financiers de la CPSCL, 2005-2024 ;
   - `finances-locales-ins-comptes` : compte des collectivités locales des comptes de la nation,
     trois bases ;
@@ -43,6 +46,7 @@ RÈGLES COMMUNES À TOUTES LES FIGURES.
     25 décembre 2021) et 2023 (provisoire au 10 janvier 2024).
   - **Les ruptures sont tracées** (`figtools.marque_rupture`) : décrets gouvernementaux du
     26 mai 2016 créant et étendant des communes (le périmètre passe de 264 à 350 communes) ;
+    passage du fonds commun des parts d'impôts à la subvention du budget, à la gestion 1987 ;
     suppression du fonds commun au 1er janvier 2018 ; changements de base des comptes
     nationaux, jamais raccordés.
   - **Le PIB** est celui des comptes de la nation de l'INS, pris pour chaque année dans
@@ -68,6 +72,7 @@ SERIE_COMMUNES = "finances-locales-communes-agregats"
 SERIE_BM2014 = "finances-locales-bm-1985-2012"
 SERIE_BM1992 = "finances-locales-bm-1992"
 SERIE_BM1997 = "finances-locales-bm-1997"
+SERIE_FCCL_LF = "finances-locales-fccl-lois-de-finances"
 SERIE_CPSCL = "finances-locales-cpscl"
 SERIE_INS = "finances-locales-ins-comptes"
 SERIE_PIB = "cnat-pib-nominal"
@@ -84,6 +89,12 @@ RUPTURE_COMMUNES = 2016
 # (82 % aux collectivités, dont 86 % aux communes ; 18 % de réserve). Les lignes de 2018-2019
 # sont donc des grandeurs distinctes (`sub_…`), jamais reliées à celles de 2008-2017.
 RUPTURE_FCCL = 2018
+# Loi de finances pour 1987, art. 92 : les parts d'impôts affectées au fonds commun reviennent
+# au budget de l'État, qui lui verse une subvention. C'est une RUPTURE DE DÉFINITION du montant
+# voté : jusqu'en 1986, le tableau des fonds spéciaux du Trésor imprime une évaluation de
+# recettes affectées ; à partir de 1987, une subvention du budget, des recettes propres et leur
+# total. Les deux segments ne sont jamais reliés ; la ligne est tracée entre 1986 et 1987.
+RUPTURE_FCCL_1987 = 1987
 
 # Les deux fichiers de la Banque mondiale que le catalogue de l'entrepôt ne désigne pas.
 figtools.register_provenance(
@@ -120,6 +131,43 @@ figtools.register_provenance(
     fiche="sources/finances-locales-banque-mondiale.md",
 )
 
+# La série des lois de finances. Le catalogue de l'entrepôt la rattache à vingt et une clés,
+# une par loi de finances, que la bibliographie du volume ne porte pas : la source se dit en
+# une ligne, et chaque valeur garde sa loi, son fascicule et sa page dans les colonnes
+# `texte`, `jort_numero` et `page` du fichier de la série. Les libellés arabes sont ceux du
+# catalogue.
+_M_LF = figtools.meta(SERIE_FCCL_LF)
+figtools.register_provenance(
+    SERIE_FCCL_LF,
+    titre=("Fonds commun des collectivités locales : montants inscrits aux lois de finances, "
+           "1976-1995 (tableau des fonds spéciaux du Trésor)"),
+    titre_ar=_M_LF.get("titre_ar"),
+    sources=[],
+    source_ligne=("lois de finances pour 1976 à 1995, tableaux des fonds spéciaux du Trésor "
+                  "(*Journal officiel*, édition française)"),
+    source_ligne_ar="قوانين المالية لسنوات 1976 إلى 1995، جداول الحسابات الخاصة في الخزينة",
+    unite="millions de dinars courants",
+    unite_ar=_M_LF.get("unite_ar"),
+    perimetre=("ligne « Fonds commun des collectivités locales » du tableau des fonds spéciaux "
+               "du Trésor annexé à chaque loi de finances, de 1976 à 1978 et de 1980 à 1995 ; "
+               "fonds entier — toutes collectivités, réserve et prélèvements compris ; "
+               "1976-1986 : évaluation des recettes affectées au fonds, égale à celle de ses "
+               "dépenses ; 1987-1995 : total des recettes du fonds, soit la subvention du "
+               "budget et les recettes propres, égal à ses dépenses"),
+    perimetre_ar=_M_LF.get("perimetre_ar"),
+    caveats=("Montants votés avec la loi de finances initiale, non montants versés : ni les "
+             "lois de finances complémentaires ni les lois de règlement ne sont reprises. "
+             "Deux définitions, jamais reliées : parts d'impôts jusqu'en 1986, subvention du "
+             "budget à partir de 1987. Aucune valeur pour 1979. À partir de la loi de finances "
+             "pour 1996, le tableau n'imprime plus le montant du fonds : la série s'arrête en "
+             "1995, le fonds dure jusqu'au 1er janvier 2018. Aucune année commune avec les "
+             "agrégats de la Direction générale des collectivités locales (2008-2023) : les "
+             "deux séries ne sont pas raccordées. Série séparée des rapports de la Banque "
+             "mondiale, dont elle s'écarte en 1985, 1986 et 1990."),
+    caveats_ar=_M_LF.get("caveats_ar"),
+    fiche="sources/finances-locales-fccl-lois-de-finances.md",
+)
+
 BLEU, ORANGE, VERT, VIOLET, ROUGE, GRIS, BRUN = (
     "#0969da", "#d1600f", "#1a7f37", "#8250df", "#cf222e", "#57606a", "#9a6700")
 
@@ -130,6 +178,7 @@ STYLE_SOURCE = {
     "bm2014": dict(marker="^", ls="--", ms=4.5, lw=1.3),
     "dgct": dict(marker="o", ls="-", ms=4.5, lw=1.8),
     "somme": dict(marker="D", ls="-", ms=4, lw=1.2),
+    "lf": dict(marker="P", ls=(0, (6, 1.5)), ms=5, lw=1.4),
 }
 STYLE_BASE = {1983: ":", 1997: "--", 2015: "-"}
 
@@ -158,6 +207,8 @@ _L = {
     "src_dgct": {"fr": "DGCT, agrégats publiés", "ar": "الإدارة العامة، المجاميع المنشورة"},
     "src_somme": {"fr": "Somme des budgets des communes",
                   "ar": "مجموع ميزانيات البلديات"},
+    "src_lf": {"fr": "Lois de finances, montant voté (fonds spéciaux du Trésor)",
+               "ar": "قوانين المالية، المبلغ المصادق عليه (الحسابات الخاصة في الخزينة)"},
     "src_cpscl": {"fr": "CPSCL, états financiers", "ar": "الصندوق، القوائم المالية"},
     # grandeurs
     "propres": {"fr": "Recettes propres de fonctionnement",
@@ -184,6 +235,15 @@ _L = {
                      "ar": "المال المشترك: مناب المجالس الجهوية"},
     "fccl_reserve": {"fr": "Fonds commun : réserve", "ar": "المال المشترك: الاحتياطي"},
     "fccl_bm": {"fr": "Fonds commun (ligne du rapport)", "ar": "المال المشترك (سطر التقرير)"},
+    "fccl_vote": {"fr": "Fonds commun voté, fonds entier (1976-1995)",
+                  "ar": "المال المشترك المصادق عليه، بأكمله (1976-1995)"},
+    "fccl_vote_parts": {"fr": "Fonds commun voté, fonds entier : évaluation des recettes "
+                              "affectées (parts d'impôts)",
+                        "ar": "المال المشترك المصادق عليه، بأكمله: تقدير الموارد المخصّصة"},
+    "fccl_vote_total": {"fr": "Fonds commun voté, fonds entier : total des recettes "
+                              "(subvention du budget et recettes propres)",
+                        "ar": "المال المشترك المصادق عليه، بأكمله: مجموع الموارد "
+                              "(منحة الميزانية والموارد الذاتية)"},
     "sub_credit_global": {"fr": "Subventions annuelles : crédit global",
                           "ar": "الدعم المالي السنوي: الاعتماد الجملي"},
     "sub_communes": {"fr": "Subventions annuelles : part des communes",
@@ -222,6 +282,9 @@ _L = {
                      "ar": "إحداث بلديات وتوسيعها\n(أوامر 26 ماي 2016)"},
     "rup_fccl": {"fr": "rupture de série :\nfonds supprimé,\nautre base (2018)",
                  "ar": "انقطاع السلسلة:\nحذف المال المشترك،\nقاعدة أخرى (2018)"},
+    "rup_fccl_1987": {"fr": "rupture de définition :\nparts d'impôts, puis\n"
+                            "subvention du budget (1987)",
+                      "ar": "تغيّر التعريف:\nموارد جبائية مخصّصة ثمّ\nمنحة من الميزانية (1987)"},
     "rup_pib": {"fr": "PIB : base {b}", "ar": "الناتج: أساس {b}"},
     # textes marqués sur les figures des chapitres d'impôts
     "mq_abandon_2012": {"fr": "abandon d'arriérés\n(loi de 2012)",
@@ -234,10 +297,10 @@ _L = {
                         "ar": "إلغاء الحدّ الأقصى السنوي\n(1 جانفي 2012)"},
     "mq_assiette_2014": {"fr": "assiette étendue\n(1er janvier 2014)",
                          "ar": "توسيع القاعدة\n(1 جانفي 2014)"},
-    "mq_fccl_1987": {"fr": "subvention du budget\n(gestion 1987)",
-                     "ar": "منحة من الميزانية\n(تصرف 1987)"},
     "mq_fccl_2014": {"fr": "critères révisés\n(1er janvier 2014)",
                      "ar": "مراجعة المقاييس\n(1 جانفي 2014)"},
+    "lg_absence_fccl": {"fr": "1996-2007 : la loi de finances n'imprime plus le montant du fonds",
+                        "ar": "1996-2007: قانون المالية لا يذكر مبلغ المال المشترك"},
     "lg_marque_texte": {"fr": "trait rouge : texte de loi ou décret, placé à sa date d'effet",
                         "ar": "خطّ أحمر: نصّ قانوني في تاريخ نفاذه"},
     # dépenses, rémunérations et dette (chapitre des budgets)
@@ -352,6 +415,26 @@ def _bm1997() -> dict[tuple[str, int], float]:
     return {(r.variable, int(r.annee)): float(r.valeur_md) for r in d.itertuples(index=False)}
 
 
+def _fccl_lf() -> dict[int, tuple[float, str]]:
+    """{année: (montant voté du fonds entier en MD, grandeur)} — lois de finances, 1976-1995.
+
+    1976-1986 : la colonne « Recettes » (égale à « Dépenses »), évaluation des recettes
+    affectées. 1987-1995 : le « Total des recettes » (égal à « Dépenses »), que la fiche de
+    la série désigne comme le total du fonds — subvention du budget et recettes propres —,
+    et non la seule subvention. Les années sans valeur (1979, 1996 et suivantes) sont omises.
+    """
+    d = figtools.series(SERIE_FCCL_LF)
+    d = d[(d["ligne"] == "fccl") & d["valeur_md"].notna()]
+    retenue = {"avant_1987_parts_d_impots": ("recettes", "fccl_vote_parts"),
+               "depuis_1987_subvention_du_budget": ("total_recettes", "fccl_vote_total")}
+    out = {}
+    for r in d.itertuples(index=False):
+        grandeur, cle = retenue.get(r.regime, (None, None))
+        if r.grandeur == grandeur:
+            out[int(r.annee)] = (float(r.valeur_md), cle)
+    return out
+
+
 def _base(texte) -> int:
     return int(str(texte).split()[-1])
 
@@ -428,6 +511,8 @@ def _ruptures(ax, mesure, annees, communes=True, fccl=False):
     x0, x1 = min(annees), max(annees)
     if communes and x0 < RUPTURE_COMMUNES <= x1:
         figtools.marque_rupture(ax, RUPTURE_COMMUNES, _ft("rup_communes"))
+    if fccl and x0 < RUPTURE_FCCL_1987 <= x1:
+        figtools.marque_rupture(ax, RUPTURE_FCCL_1987, _ft("rup_fccl_1987"))
     if fccl and x0 < RUPTURE_FCCL <= x1:
         figtools.marque_rupture(ax, RUPTURE_FCCL, _ft("rup_fccl"))
     if mesure == "pib":
@@ -827,15 +912,21 @@ def table_activite_rendement():
 
 FCCL_DGCT = (("fccl_credit_global", ROUGE), ("fccl_communes", ORANGE),
              ("fccl_regions", VERT), ("fccl_reserve", GRIS))
-# Textes placés à leur date d'effet sur la figure du fonds (trait rouge plein) : la fin des
-# parts d'impôts (loi de finances pour 1987, art. 92) et la révision des critères (loi de
-# finances pour 2014, art. 12). Ils situent ces textes ; ils ne disent pas une cause.
-MARQUES_FCCL = ((1987, "mq_fccl_1987", 0.97), (2014, "mq_fccl_2014", 0.84))
+# Texte placé à sa date d'effet sur la figure du fonds (trait rouge plein) : la révision des
+# critères (loi de finances pour 2014, art. 12). Il situe ce texte ; il ne dit pas une cause.
+# La fin des parts d'impôts (loi de finances pour 1987, art. 92) n'est plus une simple marque
+# de texte : c'est une rupture de définition de la série votée (`RUPTURE_FCCL_1987`).
+MARQUES_FCCL = ((2014, "mq_fccl_2014", 0.84),)
+VOTE = VIOLET
 
 
 def _fccl() -> list[dict]:
     c = _communes()
     lignes = []
+    # Montants votés, 1976-1995 : deux grandeurs, une par définition, donc deux courbes que
+    # rien ne relie. Aucun PIB n'est attaché : voir `fig_fccl`.
+    for a, (v, g) in sorted(_fccl_lf().items()):
+        lignes.append(dict(grandeur=g, source="lf", annee=a, v=v, statut="vote"))
     for a in range(2008, 2020):
         for k, _ in FCCL_DGCT:
             # 2018-2019 : même colonne de la source, autre grandeur (voir RUPTURE_FCCL).
@@ -866,6 +957,11 @@ def _fccl() -> list[dict]:
 def _pib_ligne(l, pib):
     if "pib" in l:
         return l["pib"]
+    # Les montants votés de 1976-1995 n'ont pas de vue au PIB : les comptes de la nation lus
+    # ici commencent en 2001, et avant 1992 le seul PIB courant disponible est d'une base non
+    # dite. On ne rapporte pas une série budgétaire à un dénominateur sans base.
+    if l["source"] == "lf":
+        return None
     return pib[l["annee"]][0] if l["annee"] in pib else None
 
 
@@ -888,7 +984,8 @@ def fig_fccl(mesure: str = "md"):
     pib = _pib()
     lignes = _fccl()
     fig, ax = plt.subplots(figsize=(9.5, 5.6))
-    couleurs = dict(FCCL_DGCT, fccl_bm=ORANGE, dotation_annuelle=BLEU)
+    couleurs = dict(FCCL_DGCT, fccl_bm=ORANGE, dotation_annuelle=BLEU,
+                    fccl_vote_parts=VOTE, fccl_vote_total=VOTE)
     couleurs.update({k.replace("fccl_", "sub_"): c for k, c in FCCL_DGCT})
     for (g, s) in dict.fromkeys((l["grandeur"], l["source"]) for l in lignes):
         ls = [l for l in lignes if l["grandeur"] == g and l["source"] == s]
@@ -901,7 +998,10 @@ def fig_fccl(mesure: str = "md"):
                 if p is not None:
                     pts[l["annee"]] = 100 * l["v"] / p
         if pts:
-            creux = {l["annee"] for l in ls if l["statut"] not in ("definitif", "publie")}
+            creux = {l["annee"] for l in ls
+                     if l["statut"] not in ("definitif", "publie", "vote")}
+            if s == "lf":  # une année sans valeur (1979) interrompt le trait
+                pts.update({a: None for a in range(min(pts), max(pts)) if a not in pts})
             # Les deux années DGCT qui suivent la suppression du fonds : autre grandeur,
             # tracée à part (jamais reliée à 2017) et en points creux.
             if s == "dgct":
@@ -915,10 +1015,15 @@ def fig_fccl(mesure: str = "md"):
     _ruptures(ax, mesure, annees, communes=False, fccl=True)
     ax.set_ylim(0, ax.get_ylim()[1] * 1.18)  # de la place en haut pour les libellés
     _marques_textes(ax, MARQUES_FCCL, annees[0], annees[-1])
-    poignees = _legende_grandeurs(list(FCCL_DGCT) + [("fccl_bm", ORANGE),
-                                                     ("dotation_annuelle", BLEU)])
-    poignees += _legende_sources(["bm1992", "bm1997", "bm2014", "dgct", "somme"]
-                                 if mesure == "md" else ["bm1992", "bm2014", "dgct", "somme"])
+    vote = mesure == "md"  # la série votée n'a pas de vue au PIB
+    if vote:  # le trou de 1996-2007 est dit sur la figure, là où il se voit
+        ax.annotate(_ft("lg_absence_fccl").replace(" : ", " :\n"), xy=(2001.5, 0.30),
+                    xycoords=("data", "axes fraction"), ha="center", va="center",
+                    fontsize=7, color=GRIS, style="italic")
+    poignees = _legende_grandeurs(([("fccl_vote", VOTE)] if vote else []) + list(FCCL_DGCT)
+                                  + [("fccl_bm", ORANGE), ("dotation_annuelle", BLEU)])
+    poignees += _legende_sources(["lf", "bm1992", "bm1997", "bm2014", "dgct", "somme"]
+                                 if vote else ["bm1992", "bm2014", "dgct", "somme"])
     poignees.append(Line2D([], [], color=GRIS, marker="o", mfc="white", ls="",
                            label=figtools.fig_text(_lab("lg_creux_fccl"))))
     poignees.append(_legende_marques())

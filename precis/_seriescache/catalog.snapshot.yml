@@ -2954,3 +2954,73 @@
     pas la part des salariés du privé couverts par une convention sectorielle. Extraits
     bruts non versionnés (empreintes dans la fiche), relevés le 8 octobre 2026.'
   fiche: sources/oit-ilostat-negociation-collective.md
+- id: finances-locales-fccl-lois-de-finances
+  titre: 'Fonds commun des collectivités locales : montants inscrits aux lois de finances,
+    1976-1995 (tableau des fonds spéciaux du Trésor)'
+  sources:
+  - loi-75-83-lf-1976
+  - loi-76-115-lf-1977
+  - loi-77-81-lf-1978
+  - loi-79-66-lf-1980
+  - loi-80-88-lf-1981
+  - loi-81-100-lf-1982
+  - loi-82-91-lf-1983
+  - loi-83-113-lf-1984
+  - loi-84-84-lf-1985
+  - loi-85-109-lf-1986
+  - loi-86-106-lf-1987
+  - loi-87-83-lf-1988
+  - loi-88-145-lf-1989
+  - loi-89-115-lf-1990
+  - loi-90-111-lf-1991
+  - loi-91-98-lf-1992
+  - loi-92-122-lf-1993
+  - loi-93-125-lf-1994
+  - loi-94-127-lf-1995
+  - loi-95-109-lf-1996
+  - loi-96-113-lf-1997
+  build: uv run python scripts/build_finances_locales_fccl_lois_de_finances.py
+  raw:
+  - sources/transcriptions/finances-locales-fccl-lois-de-finances.csv
+  - data/processed/finances_locales/bm1992_communes_1985_1991.csv
+  - data/processed/finances_locales/bm1997_communes_1990_1996.csv
+  output: data/processed/finances_locales/fccl_lois_de_finances.csv
+  unite: dinars courants, tels qu'imprimés ; valeur_md en millions de dinars
+  perimetre: 'texte des lois de finances : ligne « Fonds commun des collectivités
+    locales » et ligne de total du tableau des fonds spéciaux du Trésor annexé à la
+    loi de finances, édition française du Journal officiel ; années budgétaires 1976-1978
+    et 1980-1995 (dix-neuf années) ; fonds entier, toutes collectivités, réserve et
+    prélèvements compris ; une ligne par année et par grandeur ; recoupements avec
+    la Banque mondiale (rapports de 1992 et de 1997) dans fccl_lois_de_finances_recoupements.csv'
+  caveats: 'PRÉVISIONS VOTÉES, NON EXÉCUTION : loi de finances initiale ; ni loi complémentaire
+    ni loi de règlement lues. TROIS RÉGIMES, JAMAIS FONDUS (colonne `regime`) : 1976-1986,
+    fonds spécial alimenté par des parts d''impôts, colonnes recettes et dépenses
+    ; 1987-1995, subvention du budget + recettes propres (17,5 MD en 1987 et 1988,
+    que la page ne détaille pas) = total des recettes ; À PARTIR DE 1996 LE TABLEAU
+    NE CHIFFRE PLUS LE FONDS (tiret lu à l''image en 1996 et 1997 ; ligne sans somme
+    en 2014-2015, couche texte) : LA SÉRIE S''ARRÊTE EN 1995, le fonds, lui, dure
+    jusqu''au 1er janvier 2018. AUCUN RACCORD NI INTERPOLATION : 1979 non localisé,
+    sans valeur ; colonne des recettes propres de 1989 illisible (chiffre de tête
+    effacé), laissée vide, la différence 3,3 MD n''est pas versée ; un tiret dans
+    cette colonne (1990, 1991, 1993-1995) est versé 0. LU À L''IMAGE, l''océrisation
+    n''ayant servi qu''à trouver la page ; année = en-tête du tableau, le fascicule
+    est de décembre précédent. 1998-2010 non lus. Le « Fonds de coopération des collectivités
+    locales » (100 MD, 2013-2015) est un autre fonds, hors série. Écarts avec la Banque
+    mondiale signalés, non corrigés : rapport de 1992, 65 contre 70 en 1985, 66 contre
+    70 en 1986, 82 contre 80 en 1990 ; rapport de 1997 (fonds parmi les recettes des
+    communes), 0,635 à 0,651 du montant voté en 1990, 1992, 1994, 1995. Aucune année
+    commune avec la série de la Direction générale (2008-2023). Somme des lignes de
+    chaque tableau non contrôlée (seules deux lignes transcrites). Montants courants.'
+  titre_ar: 'المال المشترك للجماعات المحلية: المبالغ المرسّمة بقوانين المالية، 1976-1995
+    (جدول الحسابات الخاصة في الخزينة)'
+  unite_ar: بالدينار الجاري كما هو مطبوع؛ وبملايين الدنانير في عمود valeur_md
+  perimetre_ar: سطر «المال المشترك للجماعات المحلية» وسطر المجموع من جدول الحسابات
+    الخاصة في الخزينة الملحق بقانون المالية، النشرة الفرنسية للرائد الرسمي؛ السنوات
+    1976-1978 و1980-1995
+  caveats_ar: 'تقديرات مصادق عليها وليست تنفيذاً. ثلاثة أنظمة لا تُدمج: 1976-1986
+    موارد جبائية مخصّصة، و1987-1995 منحة من الميزانية وموارد ذاتية، ومنذ 1996 لم يعد
+    الجدول يذكر مبلغ المال المشترك فتتوقّف السلسلة سنة 1995. لا ربط ولا استكمال: سنة
+    1979 دون قيمة، وعمود الموارد الذاتية لسنة 1989 غير مقروء. قُرئت الأرقام من الصورة.
+    لم تُقرأ قوانين المالية لسنوات 1998-2010. الفوارق مع أرقام البنك الدولي مُشار
+    إليها دون تصحيح.'
+  fiche: sources/finances-locales-fccl-lois-de-finances.md
