@@ -28,7 +28,7 @@ import openfisca_tables as ot  # noqa: E402
 
 TABLES = Path.cwd() / "tables"
 
-# Une couleur par case, dans l'ordre de l'index (palette des figures du volume).
+# Une couleur par case tracée, de la plus basse à la plus haute (palette des figures du volume).
 COULEURS = ("#08519c", "#d94801", "#238b45", "#6a51a3", "#a50f15", "#525252")
 
 SANS_VALEUR = {"fr": "non publiée", "ar": "غير منشورة"}
@@ -61,24 +61,25 @@ def _unites(entree: dict) -> str:
     return " ou ".join(dict.fromkeys(c["unite"] for c in entree["cases"] if c["unite"]))
 
 
-def tableau_branches(faits: dict[str, tuple[str, str, str, str]]) -> str:
+def tableau_branches(faits: dict[str, tuple[str, str, str]]) -> str:
     """Le tableau d'ouverture : une ligne par branche de l'index.
 
-    `faits` : branche -> (convention, agrément, date d'effet, avenants) — ce que les
-    paramètres ne portent pas, écrit dans l'annexe avec ses références. Les cases données et
-    leur période viennent de l'index.
+    `faits` : branche -> (convention, agrément, date d'effet) — la création de la convention,
+    que l'index ne porte pas, écrite dans l'annexe avec ses références. Les cases données et
+    leur période viennent de l'index. Rien n'y est dit des avenants : leur suite est au
+    tableau de chaque branche.
     """
-    lignes = ["| Branche | Convention | Arrêté d'agrément | Date d'effet | Textes qui la "
-              "révisent | Cases de la grille données ici |", "|:---|:---|:---|:---|:---|:---|"]
+    lignes = ["| Branche | Convention | Arrêté d'agrément | Date d'effet | "
+              "Cases de la grille données ici |", "|:---|:---|:---|:---|:---|"]
     # L'ordre des lignes est celui de l'annexe ; une branche que l'annexe ne décrit pas
     # encore suit, avec ses cases et des tirets.
     rang = {nom: i for i, nom in enumerate(faits)}
     for entree in sorted(index(), key=lambda e: rang.get(e["branche"], len(rang))):
-        convention, agrement, effet, avenants = faits.get(entree["branche"], ("—",) * 4)
+        convention, agrement, effet = faits.get(entree["branche"], ("—",) * 3)
         cases = "<br>".join(f"{_minuscule(c['libelle'])}, {_periode(c)}"
                             for c in entree["cases"])
         lignes.append(f"| [{entree['libelle']}](#sec-mt-cc-annexe-{entree['branche']}) | "
-                      f"{convention} | {agrement} | {effet} | {avenants} | {cases} |")
+                      f"{convention} | {agrement} | {effet} | {cases} |")
     return "\n".join(lignes)
 
 
@@ -112,33 +113,68 @@ def cases(nom: str) -> str:
     return "\n".join(blocs)
 
 
-def _courbes(entree: dict) -> dict:
+def _tracees(entree: dict, d) -> list[dict]:
+    """Les cases que la figure trace : pour chaque unité, la plus basse et la plus haute,
+    d'après leur dernière valeur. Une case située entre les deux — un échelon voisin du
+    sommet, dont le trait se confondrait avec lui — reste dans les tableaux."""
+    derniere = {}
+    for case in entree["cases"]:
+        s = d[(d["case"] == case["cle"]) & d["valeur"].notna()].sort_values("date_effet")
+        derniere[case["cle"]] = float(s.iloc[-1]["valeur"])
+    gardees = set()
+    for unite in {c["unite"] for c in entree["cases"]}:
+        cles = [c["cle"] for c in entree["cases"] if c["unite"] == unite]
+        gardees |= {min(cles, key=derniere.get), max(cles, key=derniere.get)}
+    return [c for c in entree["cases"] if c["cle"] in gardees]
+
+
+def _courbes(tracees: list[dict]) -> dict:
     return {c["cle"]: (c["libelle"], COULEURS[i % len(COULEURS)])
-            for i, c in enumerate(entree["cases"])}
+            for i, c in enumerate(tracees)}
+
+
+EN_LETTRES = {1: "une", 2: "deux", 3: "trois", 4: "quatre", 5: "cinq", 6: "six"}
+
+
+def _legende_figure(entree: dict, tracees: list[dict]) -> str:
+    """La légende de la figure, écrite d'après l'index : nombre de cases tracées, unité,
+    première date d'effet et dernière date qui porte une valeur."""
+    nombre = len(tracees)
+    cases = f"{EN_LETTRES.get(nombre, nombre)} case{'s' if nombre > 1 else ''}"
+    unite = _unites({"cases": tracees}).replace("dinars", "dinars courants")
+    debut = min(c["debut"] for c in tracees)[:4]
+    fin = max(c["derniere_valeur"] for c in tracees)[:4]
+    return (f"{entree['description']} : {_minuscule(tracees[0]['grandeur'])} de {cases} de la "
+            f"grille, à chaque date d'effet, en {unite}, {debut}-{fin}")
 
 
 def _millimes(v: float) -> str:
     return f"{v:,.3f}".replace(",", " ").replace(".", ",")
 
 
-def figure(nom: str, caption: str, sources: list[str], note_lecture: str | None = None,
-           caveats: str = "", generated: str | None = None) -> None:
+def figure(nom: str, sources: list[str], note_lecture: str | None = None,
+           caveats: str = "", generated: str | None = None,
+           caption: str | None = None) -> None:
     """La grille de la branche en escalier (composant commun `figtools.figure_escalier`).
 
     Une marche par date d'effet ; seules la première et la dernière valeur de chaque case
     sont écrites, et une graduation sur cinq : une grille change chaque année ou presque.
     Le cercle creux marque la date à compter de laquelle le montant n'est pas publié.
+    La figure trace la plus basse et la plus haute des cases données (`_tracees`) ; sa légende est écrite
+    d'après l'index, sauf si `caption` la donne.
     """
     entree = branche(nom)
     serie = entree["serie"]
     d = figtools.series(serie)
+    tracees = _tracees(entree, d)
+    d = d[d["case"].isin([c["cle"] for c in tracees])]
     dates = sorted({str(x)[:10] for x in d["date_effet"]})
     sommet = float(d["valeur"].max())
     # Mentions candidates : première et dernière valeur de chaque case, et la date sans
     # valeur. Deux cases voisines — deux échelons d'une même échelle — porteraient leurs
     # mentions l'une sur l'autre : à une même date, seule la plus haute est écrite.
     candidates = []
-    for case in entree["cases"]:
+    for case in tracees:
         s = d[d["case"] == case["cle"]].sort_values("date_effet")
         valuees = s[s["valeur"].notna()]
         for rang, dy in ((0, -8), (-1, 8)):
@@ -167,21 +203,23 @@ def figure(nom: str, caption: str, sources: list[str], note_lecture: str | None 
         ecrites.add(annee)
     figtools.register_provenance(
         serie,
-        titre=(f"{entree['description']} : salaires de base des cases données de la grille, "
-               f"à chaque date d'effet"),
+        titre=(f"{entree['description']} : salaires de base de la plus basse et de la plus "
+               f"haute des cases données de la grille, à chaque date d'effet"),
         sources=sources,
         source_ligne=("grilles annexées à la convention et à ses avenants, publiées au "
                       "*Journal officiel* (liste dans l'onglet « Sources »)"),
-        unite=_unites(entree),
+        unite=_unites({"cases": tracees}),
         perimetre=("une ligne par case de la grille et par date d'effet ; "
-                   + " ; ".join(_minuscule(c["libelle"]) for c in entree["cases"])),
+                   + " ; ".join(_minuscule(c["libelle"]) for c in tracees)),
         caveats=caveats,
     )
     figtools.figure_escalier(
-        serie, _courbes(entree), slug=f"fig_mt_cc_annexe_{nom}", caption=caption,
+        serie, _courbes(tracees), slug=f"fig_mt_cc_annexe_{nom}",
+        caption=caption or _legende_figure(entree, tracees),
         note_lecture=note_lecture, generated=generated, fin=fin, colonne="case",
         nominal=True, format_valeur=lambda v: "", format_infobulle=_millimes,
         annotations=annotations,
-        etiquettes_x=etiquettes, ylim=(0, 1.1 * sommet), ylabel=f"{entree['cases'][0]['grandeur']}, en {_unites(entree)}",
+        etiquettes_x=etiquettes, ylim=(0, 1.1 * sommet),
+        ylabel=f"{tracees[0]['grandeur']}, en {_unites({'cases': tracees})}",
         supprime=SANS_VALEUR[figtools.lang()],
         libelles={"parametre": "Case de la grille", "suppression": "montant non publié"})

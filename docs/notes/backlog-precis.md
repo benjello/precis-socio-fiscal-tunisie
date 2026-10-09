@@ -1226,7 +1226,7 @@ Revue de ce que les sept volumes ne couvrent pas (sujets à établir sur les tex
 Ligne éditoriale rappelée par l'humain : le précis vise l'**impact économique, distributif et budgétaire**, l'**évolution sur le temps long** et les **ruptures de réforme** ; on retient d'un texte sa **date, sa valeur et sa source**, sans les détails administratifs sans impact (modalités de déclaration, de recouvrement, procédures). Les chapitres déjà écrits en contiennent beaucoup (par exemple le recouvrement des impôts locaux dans le volume VII). Chantier à mener plus tard, **sans forcément réécrire le texte** : réduire la visibilité de ces sections (encadrés repliés, niveau de titre plus bas) ou les **repousser en annexe** du volume. Une passe par volume, à décider avec l'humain. Les nouveaux chapitres appliquent la règle dès leur rédaction.
 ## Le marché du travail
 
-### Annexe « Les conventions collectives, branche par branche » (8 octobre 2026, premier jet, non commité)
+### Annexe « Les conventions collectives, branche par branche » (8 octobre 2026, premier jet ; repris le 9 octobre 2026)
 
 `precis/fr/marche_travail/_annexe_conventions.qmd` (`#sec-mt-cc-annexe`), déclarée dans les
 `appendices` du `_quarto.yml` français, avant le glossaire. Décision du propriétaire du 8 octobre
@@ -1258,12 +1258,18 @@ Ce qui lui manque :
   fascicules de l'édition française présents au corpus, à ouvrir ; grilles de 1990-1992 hors
   indemnité complémentaire provisoire (données au chapitre, non à l'annexe) ; pages des arrêtés et
   des avenants n° 6 à 18 dans l'édition arabe ;
-- **bâtiment, avenant n° 16** : second exemplaire du JORT n° 132 du 2 décembre 2022 à obtenir (les
-  trois grilles sont données d'après la reproduction d'un site tiers, sans lien) ;
-- **assurances** : clé `cc-assurances-avenant11-grille-2015` à créer (grille du 1er juin 2014,
-  JORT n° 4 du 13 janvier 2015, édition arabe, p. 151) ; application du décret n° 2026-68 à la
-  branche non établie ; les dix-sept clés `cc-assurances-*` sont recopiées du volume des
-  rémunérations publiques (FR et AR) — deux copies à tenir ensemble. La section
+- **bâtiment, avenant n° 16** : second exemplaire du JORT n° 132 du 2 décembre 2022 à obtenir (ses
+  grilles sont données d'après la reproduction d'un site tiers, sans lien) ;
+- **assurances** : application du décret n° 2026-68 à la branche non établie. Les dix-huit clés
+  `cc-assurances-*` — dont `cc-assurances-avenant11-grille-2015`, citée au registre
+  `#r-cc-assurances-grille-2014` — sont tenues en double, à l'identique, dans les
+  `references.json` du marché du travail et des rémunérations publiques (FR et AR) ;
+  `tests/test_references_communes.py` contrôle que toute clé commune à ces deux livres y a la
+  même notice (9 octobre 2026 : la notice `cc-assurances-avenants-10-11`, corrigée dans le seul
+  volume des rémunérations publiques, a été recopiée). D'autres clés communes à d'autres
+  volumes divergent, hors du contrôle : `loi86-106-lf1987`, `loi57-73`, `loi-2007-70-lf-2008`,
+  `lfc-2012`, `ins-annuaire` ; en arabe aussi `loi59-45` et `loi86-86` — à réconcilier avec le
+  bibliographe. La section
   `#sec-marche-controle-assurances` de ce volume, à laquelle l'annexe renvoie pour la chaîne des
   avenants, dit encore la grille de 2014 « annoncée, non imprimée » : correction attendue de la PR
   qui y reporte les relectures ;
@@ -1272,12 +1278,34 @@ Ce qui lui manque :
   mentions en arabe, mais les noms des branches et des cases y restent en français (les
   `short_label` du modèle n'existent qu'en français) et le lien garde l'édition que cite la page :
   à trancher avec le relecteur de l'arabe ;
-- **figures** : une figure en escalier par branche, par le composant commun ; dans celle des
-  assurances, les trois échelons de l'échelle 21 se confondent — à juger (échelle, ou une seule
-  case du haut) ; pas de lecture en dinars constants ni de rapport au SMIG dans l'annexe ;
-- **chapitre** : le tableau fait main `@tbl-mt-cc-grilles` et la série `tunisia-data` du salaire
-  d'entrée doublent désormais les tableaux engendrés pour 1994-2026 ; à réduire aux grilles que
-  les paramètres ne portent pas (1974-1975, 1990-1992) une fois l'annexe jugée.
+- **figures** : une figure en escalier par branche, par le composant commun. Chaque figure
+  trace, par unité, la case la plus basse et la plus haute d'après leur dernière valeur
+  (`_tracees` de `figures/conventions.py`) : dans celle des assurances, l'échelle 1, échelon 1,
+  et le quatorzième échelon de l'échelle 21 ; les douzième et treizième échelons restent dans
+  les tableaux. La légende de chaque figure est écrite d'après `cc_index.yml`. Pas de lecture
+  en dinars constants ni de rapport au SMIG dans l'annexe ;
+- **prose de l'annexe** (9 octobre 2026) : ni compte ni montant saisi — les nombres d'avenants,
+  de cases et de dates d'effet, et les montants, ne sont que dans les tableaux et figures
+  engendrés ; le tableau d'ouverture ne porte plus que la création (signature, agrément, date
+  d'effet) et les cases de l'index. Les tableaux des avenants du textile et du bâtiment restent
+  faits main, avec leur titre de bloc et leurs bornes : à engendrer quand les avenants seront
+  versés en amont ;
+- **chapitre** (9 octobre 2026) : le tableau replié `@tbl-mt-cc-grilles` (62 grilles, 1974-2026)
+  est retiré ; la section `#sec-mt-cc-smig` renvoie à l'annexe pour 1994-2026 et ne garde, replié,
+  que `@tbl-mt-cc-grilles-hors-series` — les six grilles que l'annexe ne porte pas (origine de
+  1974, 1990-1992 hors indemnité complémentaire provisoire), engendré depuis la série
+  `tunisia-data` du salaire d'entrée (`tableau_cc_grilles_hors_series`). Le rapport au SMIG de
+  chaque grille, le haut de la grille et les précisions de lecture (date « à titre
+  exceptionnel » du 15 juin 2005, date du fascicule n° 81 de 2011 à confirmer) restent à
+  l'onglet « Données » de `@fig-mt-cc-salaire-entree` ; la date du 15 juin 2005 est aussi dite
+  dans l'annexe. À verser en amont : les grilles de 1974 et de 1990-1992, pour que ce dernier
+  tableau rejoigne l'annexe.
+- **largeur des tableaux repliés** (mesure du 9 octobre 2026, fenêtre de 1 300 px) : les deux
+  tableaux faits main des avenants (`tbl-cc-textile-avenants`, `tbl-cc-btp-avenants`) dépassent
+  leur bloc de 62 et 58 px, et l'inventaire des 57 branches du chapitre (`tbl-mt-cc-inventaire`)
+  de 142 px ; aucun dépassement à 1 800 px. Les dates insécables fixent la largeur minimale : à
+  régler dans le thème commun (`precis/legendes.scss`, défilement horizontal du bloc replié),
+  ce qui fait rendre tous les livres.
 
 Volume créé le 5 octobre 2026 (branche `docs/marche-travail-volume`), sept chapitres : présentation,
 notions, institutions, salaire minimum, conventions collectives, négociations salariales, longue

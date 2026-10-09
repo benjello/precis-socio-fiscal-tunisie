@@ -1,9 +1,9 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-08
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-09
 # séries (tunisia_data) : cc-grille-batiment
 # sources (citation) : @avenant5-btp-1996, @avenant6-btp-1999, @avenant7-btp-2002, @avenant8-btp-2006, @avenant9-btp-2009, @avenant10-btp-2011, @avenant11-btp-2013, @avenants-2014-textile-btp, @avenant13-btp-2016, @avenant14-btp-2017, @avenant15-btp-2018, @avenant16-btp-2022, @paie-tunisie-2022-reproduction-jort-132, @decret2026-68
 # fiches : 
-# méthode/hypothèses : Les trois grilles de l'avenant n° 16 (1er décembre 2021, 1er janvier 2023, 1er janvier 2024) sont celles des pages 3712 à 3714 de l'édition arabe du Journal officiel n° 132 du 2 décembre 2022, telles qu'un site tiers les reproduit.
-# note : Convention collective du bâtiment et des travaux publics : salaire horaire de base de deux cases de la grille du personnel occasionnel, à chaque date d'effet, en dinars courants, 1996-2024
+# méthode/hypothèses : Les grilles de l'avenant n° 16 (1er décembre 2021, 1er janvier 2023, 1er janvier 2024) sont celles des pages 3712 à 3714 de l'édition arabe du Journal officiel n° 132 du 2 décembre 2022, telles qu'un site tiers les reproduit.
+# note : Convention collective nationale, puis sectorielle, du bâtiment et des travaux publics : salaire de base de deux cases de la grille, à chaque date d'effet, en dinars courants par heure, 1996-2024
 Case de la grille,Date d'effet,Valeur,Ce que fait le texte
 "Personnel occasionnel, manœuvre ordinaire",1996-05-01,0.862,fixe la valeur
 "Personnel occasionnel, manœuvre ordinaire",1997-05-01,0.906,change la valeur
