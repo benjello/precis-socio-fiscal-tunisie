@@ -1639,8 +1639,11 @@ _CC_DOUBLE_COMPTE = {"Pétrole (commerce et distribution)": 3, "Assurances": 1}
 # 1996 à 2010 sont établis, chaque branche a un segment continu.
 _CC_SEGMENTS = {
     "textile": [(1974, 1974), (1990, 1992), (1994, 2026)],
-    "bâtiment et travaux publics": [(1975, 1975), (1990, 1990), (1996, 2024)],
+    "bâtiment et travaux publics": [(1974, 1974), (1990, 1990), (1996, 2024)],
 }
+# Les deux conventions d'origine prennent effet le 1er juin 1974 (textile, article 53 ;
+# bâtiment et travaux publics, article 58, convention signée et agréée en 1975).
+_CC_EFFET_ORIGINE = dt.date(1974, 6, 1)
 # Les trois origines de la lecture d'une grille (colonne `origine_lecture`), dites pour le
 # lecteur. La troisième ne vaut que pour l'avenant n° 16 du bâtiment.
 _CC_ORIGINES = {
@@ -1663,8 +1666,6 @@ _CC_EXTREMES = {
     "textile": ((dt.date(1997, 11, 7), 1.05), (dt.date(2022, 5, 1), 1.30)),
     "bâtiment et travaux publics": ((dt.date(2015, 5, 1), 1.10), (dt.date(2024, 1, 1), 1.32)),
 }
-_CC_BRANCHE_INVENTAIRE = {"textile": "Textile",
-                          "bâtiment et travaux publics": "Bâtiment et travaux publics"}
 # Clé de référence du texte qui porte chaque grille : (branche, convention ou avenant).
 _CC_CLES = {
     ("textile", "convention"): "convention-textile-1974",
@@ -1759,10 +1760,10 @@ figtools.register_provenance(SERIE_CC_BRANCHES, **{
 figtools.register_provenance(SERIE_CC_GRILLES, **{
     **figtools.meta(SERIE_CC_GRILLES),
     "titre": ("Salaire horaire d'entrée des conventions du textile (1974-2026) et du "
-              "bâtiment-travaux publics (1975-2024), par date d'effet des grilles, et rapport "
+              "bâtiment-travaux publics (1974-2024), par date d'effet des grilles, et rapport "
               "au SMIG horaire du régime de 48 heures"),
     "titre_ar": ("أجر الساعة عند الدخول في اتفاقيتي النسيج (1974-2026) والبناء والأشغال العامة "
-                 "(1975-2024)، حسب تاريخ سريان جداول الأجور، ونسبته إلى الأجر الأدنى المضمون "
+                 "(1974-2024)، حسب تاريخ سريان جداول الأجور، ونسبته إلى الأجر الأدنى المضمون "
                  "بالساعة لنظام 48 ساعة"),
     # Sous la figure, deux clés et un renvoi : chaque grille a sa référence au tableau des
     # grilles, et la liste entière reste à l'onglet « Sources » et dans le figdata.
@@ -1796,11 +1797,11 @@ figtools.register_provenance(SERIE_CC_GRILLES, **{
                 "date d'effet, la grille valant jusqu'à la suivante du même segment. Les "
                 "grilles de 1990 à 1992 excluent l'indemnité complémentaire provisoire et "
                 "n'ont pas de rapport au SMIG ; les grilles antérieures à 1990, celles de 1993 "
-                "et celles du bâtiment de 1991 à 1995 ne sont pas établies. La date d'effet "
-                "des conventions de 1974 et de 1975 n'est pas établie : leur rapport retient "
-                "le SMIG de 0,130 dinar. Salaires de base, hors indemnités conventionnelles. "
-                "Deux branches seulement. Montants ou dates d'effet à confirmer : textile, "
-                "2011 et 2015 à 2020 ; le haut de la grille manque à quelques dates."),
+                "et celles du bâtiment de 1991 à 1995 ne sont pas établies. Les deux "
+                "conventions d'origine entrent en vigueur le 1er juin 1974 : cette date est "
+                "celle de la convention, non une date imprimée sur la grille ; leur rapport "
+                "retient le SMIG de 0,130 dinar en vigueur ce jour-là. Salaires de base, hors "
+                "indemnités conventionnelles. Deux branches seulement."),
     "caveats_ar": ("ثلاثة مصادر للقراءة: الطبعة الفرنسية من الرائد الرسمي، ثم طبعته العربية، "
                    "ونسخة لصفحات من الطبعة العربية على موقع آخر بالنسبة إلى الملحق عدد 16 "
                    "لاتفاقية البناء. دون وصل ولا استكمال. جداول 1990-1992 لا تشمل المنحة "
@@ -1857,8 +1858,6 @@ _L.update({
                 "ar": "الأجر الأدنى المضمون بالساعة، نظام 48 ساعة"},
     "cc_hors_icp": {"fr": "Grilles de 1990 à 1992, hors indemnité complémentaire provisoire",
                     "ar": "جداول 1990-1992، دون المنحة التكميلية المؤقتة"},
-    "cc_a_confirmer": {"fr": "Montant ou date d'effet à confirmer",
-                       "ar": "مبلغ أو تاريخ سريان في انتظار التأكيد"},
     "cc_r_1994": {"fr": "1er mai 1994 :\nindemnité complémentaire\nprovisoire dans les grilles",
                   "ar": "غرّة ماي 1994:\nالمنحة التكميلية المؤقتة\nضمن جداول الأجور"},
     "cc_copie": {"fr": "Bâtiment, 2021 à 2024 : grilles lues sur une reproduction du Journal officiel",
@@ -2011,32 +2010,27 @@ def tableau_cc_inventaire() -> str:
 
 # ---- ce que les conventions ajoutent au SMIG : salaire d'entrée de deux branches
 
-def _reserve_claire(reserve) -> tuple[str, bool]:
-    """Réserve de la série dite pour le lecteur, et si elle porte sur le montant ou la date
-    d'effet (marqueur creux de la figure). Une réserve de la série peut en réunir plusieurs.
-    Le haut de grille manquant se lit à sa case vide ; l'origine de la lecture a sa colonne."""
+def _reserve_claire(reserve) -> str:
+    """Réserve de la série dite pour le lecteur ; une réserve de la série peut en réunir
+    plusieurs. L'origine de la lecture a sa colonne : elle n'est pas redite ici."""
     if _vide(reserve):
-        return "", False
-    textes, marque, reconnu = [], False, False
-    for motif, texte, creux in (
-            ("non comparable au SMIG", "hors indemnité complémentaire provisoire", False),
-            ("date d'effet non relevée", "date d'effet non établie", False),
-            ("date d'effet lue", "date d'effet à confirmer", True),
-            ("à titre exceptionnel", "date d'effet fixée « à titre exceptionnel »", False),
-            ("montage lu", "montant à confirmer", True),
-            ("page arabe déduite", "page à confirmer", False),
-            ("numéro de page déduit", "page à confirmer", False),
-            ("haut de grille : sous-catégorie", "haut de la grille à confirmer", False),
-            ("date du fascicule", "date du fascicule à confirmer", False),
-            ("haut de grille non lu", None, False),
-            ("lu sur la reproduction", None, False)):
+        return ""
+    textes, reconnu = [], False
+    for motif, texte in (
+            ("non comparable au SMIG", "hors indemnité complémentaire provisoire"),
+            ("date d'effet de la convention (article 53",
+             "date d'effet de la convention (article 53), non imprimée sur la grille"),
+            ("date d'effet de la convention (article 58",
+             "date d'effet de la convention (article 58), non imprimée sur la grille"),
+            ("à titre exceptionnel", "date d'effet fixée « à titre exceptionnel »"),
+            ("date du fascicule", "date du fascicule à confirmer"),
+            ("lu sur la reproduction", None)):
         if motif in reserve:
             reconnu = True
-            marque = marque or creux
             if texte and texte not in textes:
                 textes.append(texte)
     assert reconnu, reserve
-    return " ; ".join(textes), marque
+    return " ; ".join(textes)
 
 
 def _cc_date_fascicule(mention: str) -> str:
@@ -2049,22 +2043,22 @@ def _cc_date_fascicule(mention: str) -> str:
 
 
 def _cc_grilles():
-    """Une ligne par branche et par date d'effet, avec son segment ; les conventions d'origine,
-    sans date d'effet, sont placées à la date de leur arrêté d'agrément."""
+    """Une ligne par branche et par date d'effet, avec son segment ; les deux conventions
+    d'origine sont à leur date d'effet, le 1er juin 1974."""
     d = figtools.series(SERIE_CC_GRILLES)
-    b = figtools.series(SERIE_CC_BRANCHES).set_index("branche")
     lignes = []
     for r in d.itertuples():
-        origine = _vide(r.date_effet)
-        jour = (b.loc[_CC_BRANCHE_INVENTAIRE[r.branche], "date_arrete_agrement"] if origine
-                else r.date_effet)
+        origine = r.avenant == "convention"
+        jour = r.date_effet
+        assert origine == (dt.date.fromisoformat(jour) == _CC_EFFET_ORIGINE), (r.branche, jour)
         comparable = r.comparable_au_smig == "oui"
         assert comparable != _vide(r.rapport_bas_smig), (r.branche, jour)
-        reserve, marque = _reserve_claire(r.reserve)
+        assert not _vide(r.salaire_horaire_haut), (r.branche, jour)
         lignes.append({
             "branche": r.branche, "origine_convention": origine, "jour": dt.date.fromisoformat(jour),
+            "annee_convention": int(r.jort_annee) if origine else None,
             "x": figtools.abscisse_date(jour), "bas": float(r.salaire_horaire_bas),
-            "haut": None if _vide(r.salaire_horaire_haut) else float(r.salaire_horaire_haut),
+            "haut": float(r.salaire_horaire_haut),  # lu à toutes les dates
             "comparable": comparable, "smig": float(r.smig_48h_horaire),
             "rapport": float(r.rapport_bas_smig) if comparable else None,
             "texte": r.avenant, "cle": _CC_CLES[(r.branche, r.avenant)],
@@ -2072,7 +2066,7 @@ def _cc_grilles():
                         + f", p. {int(r.jort_page)}"),
             "origine": _CC_ORIGINES[r.origine_lecture][0],
             "edition": _CC_ORIGINES[r.origine_lecture][1], "nom_segment": r.segment,
-            "reserve": reserve, "a_confirmer": marque})
+            "reserve": _reserve_claire(r.reserve)})
     lignes.sort(key=lambda l: (l["branche"] != "textile", l["jour"]))
     # Segments : ceux de la série, dans l'ordre des dates ; leurs bornes sont contrôlées.
     for branche, attendus in _CC_SEGMENTS.items():
@@ -2162,14 +2156,12 @@ def _fig_cc_salaire_entree(rapport: bool):
                 ax.plot([l["x"]], [l[cle]], ls="none",
                         marker="x" if hors else "^" if copie else marqueur,
                         ms=5 if hors else 7 if copie else 4, mew=1.3, mec=couleur,
-                        mfc="white" if l["a_confirmer"] else couleur, zorder=4)
+                        mfc=couleur, zorder=4)
             if i == 0:
                 ax.plot([], [], color=couleur, lw=1.8, marker=marqueur, ms=4.5, label=ft(_lab(lib)))
     if not rapport:
         ax.plot([], [], color="black", lw=1.2, ls=":", marker="x", ms=5,
                 label=ft(_lab("cc_hors_icp")))
-    ax.plot([], [], ls="none", marker="o", ms=4.5, mew=1.4, mec="black", mfc="white",
-            label=ft(_lab("cc_a_confirmer")))
     ax.plot([], [], ls="none", marker="^", ms=7, mec=ORANGE, mfc=ORANGE,
             label=ft(_lab("cc_copie")))
     for jour, cle_r, cote in (("1994-05-01", "cc_r_1994", "right"),):
@@ -2209,7 +2201,14 @@ def _cc_branche(l) -> str:
 
 
 def _cc_effet(l) -> str:
-    return _lab("cc_origine").format(a=l["jour"].year) if l["origine_convention"] else _date_fr(l["jour"])
+    return _date_fr(l["jour"])
+
+
+def _cc_texte(l) -> str:
+    """« convention de 1975 » pour une convention d'origine, sinon l'avenant."""
+    if l["origine_convention"]:
+        return _lab("cc_origine").format(a=l["annee_convention"])
+    return l["texte"]
 
 
 def table_cc_salaire_entree():
@@ -2217,8 +2216,8 @@ def table_cc_salaire_entree():
     r = _cc_grilles()
     return pd.DataFrame({
         _lab("cc_c_branche"): [_cc_branche(l) for l in r],
-        _lab("cc_c_effet"): ["" if l["origine_convention"] else l["jour"].isoformat() for l in r],
-        _lab("cc_c_texte"): [_cc_effet(l) if l["origine_convention"] else l["texte"] for l in r],
+        _lab("cc_c_effet"): [l["jour"].isoformat() for l in r],
+        _lab("cc_c_texte"): [_cc_texte(l) for l in r],
         _lab("cc_c_bas"): [l["bas"] for l in r],
         _lab("cc_c_haut"): [l["haut"] for l in r],
         _lab("cc_c_smig"): [l["smig"] for l in r],
@@ -2240,10 +2239,10 @@ def tableau_cc_reperes() -> str:
     for branche, effet in _CC_REPERES:
         l = next(l for l in r if l["branche"] == branche
                  and (l["origine_convention"] if effet is None else l["jour"].isoformat() == effet))
-        lignes.append([_cc_branche(l), _cc_effet(l)] + _cc_ligne_montants(l))
-    entetes = ["Branche", "Grille", "Salaire horaire d'entrée (dinars)",
+        lignes.append([_cc_branche(l), _cc_effet(l), _cc_texte(l)] + _cc_ligne_montants(l))
+    entetes = ["Branche", "Date d'effet de la grille", "Convention ou avenant", "Salaire horaire d'entrée (dinars)",
                "SMIG horaire, régime de 48 heures (dinars)", "Salaire d'entrée, en SMIG"]
-    sortie = ["| " + " | ".join(entetes) + " |", "|:---|:---|---:|---:|---:|"]
+    sortie = ["| " + " | ".join(entetes) + " |", "|:---|:---|:---|---:|---:|---:|"]
     sortie += ["| " + " | ".join(l) + " |" for l in lignes]
     return "\n".join(sortie)
 
@@ -2254,9 +2253,8 @@ def tableau_cc_grilles() -> str:
     lignes = []
     for l in r:
         bas, smig, rapport = _cc_ligne_montants(l)
-        lignes.append([_cc_branche(l), _cc_effet(l), bas,
-                       "—" if l["haut"] is None else _fr(l["haut"], 3), smig, rapport,
-                       l["texte"], l["journal"], l["edition"],
+        lignes.append([_cc_branche(l), _cc_effet(l), bas, _fr(l["haut"], 3), smig, rapport,
+                       _cc_texte(l), l["journal"], l["edition"],
                        f"[@{l['cle']}; @{_CC_CLE_COPIE}]" if l["origine"] == "copie"
                        else f"[@{l['cle']}]",
                        l["reserve"] or "—"])
