@@ -1916,10 +1916,23 @@ trois grandes réformes (2007, budgets de 2008 ; 2018, budgets communaux de 2019
 du droit au 18 mars 2025 ; seuil de l'approbation ministérielle ; nomenclature ; comptable et
 comptes ; longue période (sources, recettes propres et transferts, autonomie, dépenses, quatre
 impôts, comptes de la nation, rapports de la Banque mondiale). Treize blocs repliés, dont dix
-registres à ancres `r-fl-budg-…`. **Il accueille le chapitre « La longue période », supprimé**
+registres à ancres `r-fl-budg-…`. **Premier plan resserré le 9 octobre 2026** (retour de
+lecture : « plus court, replier le comptable, la procédure, les vérifications ») : de 6 465 à
+3 991 mots au premier plan, légendes et notes de lecture des figures comprises (repliés : de
+3 927 à 5 619 mots) ; quatorze blocs au lieu de treize, toujours vingt tableaux, dont trois au premier plan au lieu
+de cinq (`tbl-fl-budg-reformes`, `tbl-fl-budg-controle`, `tbl-fl-budg-art135`). Passent dans
+les blocs, sans perte d'article ni de clé : le détail de l'approbation de 1975 et du recours
+de 2018, l'assiette du seuil, le seuil du délégué et l'agrément des investissements,
+`tbl-fl-budg-nomenclature` et l'histoire de la nomenclature, le comptable et les comptes,
+`tbl-fl-lp-sources`, les exercices non clos, les notations et le calcul des deux ratios
+d'autonomie, les écarts du ratio publié, le détail des rapports de la Banque mondiale. Le bloc
+des définitions des transferts (`tbl-fl-lp-transferts-definition`) quitte la vue d'ensemble
+pour `#sec-fl-lp-ressources` ; un bloc nouveau, sous `#sec-fl-lp-autonomie`, porte le calcul
+du dénominateur et les écarts du ratio publié. Les sections « Nomenclature » et « Comptable et comptes » se
+réduisent chacune à un paragraphe et un bloc. **Il accueille le chapitre « La longue période », supprimé**
 (`_longue_periode.qmd`) : `fig-fl-lp-ressources` en vue d'ensemble ; `fig-fl-lp-autonomie`,
-`fig-fl-lp-impots` et `fig-fl-lp-ins` dans sa longue période ; `tbl-fl-lp-sources` au premier
-plan, l'administration d'abord ; `tbl-fl-lp-ecarts` réparti par famille de sources (trois
+`fig-fl-lp-impots` et `fig-fl-lp-ins` dans sa longue période ; `tbl-fl-lp-sources` replié
+sous `#sec-fl-lp-sources`, l'administration d'abord ; `tbl-fl-lp-ecarts` réparti par famille de sources (trois
 lignes de l'administration, deux lignes dans `tbl-fl-lp-ecarts-bm`, une phrase sur 2008-2012
 dans la section titrée « Selon les rapports de la Banque mondiale », une phrase sur la taxe sur
 les immeubles bâtis de 2006-2007 au chapitre 6) ; la table des notations est dissoute, chaque
