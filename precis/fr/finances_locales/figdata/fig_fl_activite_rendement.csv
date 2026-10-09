@@ -1,0 +1,39 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-09
+# séries (tunisia_data) : finances-locales-communes-agregats, cnat-pib-nominal
+# sources (citation) : @dgct-donnees-ouvertes, @ins-cnat-2015
+# fiches : sources/finances-locales-communes.md, docs/croissances-revenus-prix.md
+# méthode/hypothèses : DEUX SOURCES, GARDÉES TOUTES DEUX SUR 2018-2019 (colonne `retenu` : DGCT jusqu'en 2019, somme des communes ensuite). Les recettes concordent à l'arrondi près ; LES DÉPENSES NON (titre 1 : +1,7 MD en 2018, +7,2 MD en 2019 ; titre 2 : +0,6 et +5,9), écart non expliqué, figé dans les tests. 2021 = SITUATION AU 25/12/2021, non définitive (droits et redevances 54,8 MD contre 90-114 les autres années). 2023 = PROVISOIRE (arrêté au 10/01/2024). IMPÔTS UN À UN (TIB, TNB, TCL, taxe hôtelière, marchés) VIDES EN 2020-2021 : fichiers par commune sans détail d'article ; rien n'est interpolé. Le FCCL est supprimé au 1er janvier 2018 mais la DGCT garde l'intitulé « subventions annuelles » en 2018-2019 : rupture de nature ; réserve à 18 % jusqu'en 2017, 15 % ensuite. Les recettes du titre 2 comprennent l'épargne et les excédents reportés du titre 1 : T1 + T2 n'est pas un total consolidé. Recettes fiscales = catégories 1 et 2 (nomenclature 2018-2022), qui exclut les catégories 3-4 rangées parmi les recettes fiscales en 2023. PÉRIMÈTRE NON CONSTANT : 264 communes en 2012, 350 à partir de 2016-2017. Montants courants., LES NIVEAUX NE SE COMPARENT PAS D'UNE ÉDITION À L'AUTRE : ils changent de base (la base 1997 est d'environ 10 % au-dessus de la base 1983, la base 2015 d'environ 6 % au-dessus de la base 1997). Contrôles : huit valeurs lues à la main ; dans chaque édition, le taux calculé sur les niveaux lus redonne le taux imprimé à 0,1 point près ; chaque valeur d'UNdata de même base se retrouve dans l'une des éditions à 0,1 % près. L'édition 2015-2020 porte six colonnes. Voir `pib_nominal_croissance.csv` pour une série de taux.
+# note : Produit de la taxe sur les établissements et de la taxe hôtelière des communes, en millions de dinars courants, en part des recettes de fonctionnement et en % du PIB, 2008-2023
+Année,Grandeur,Source,Montant (MD),% des recettes de fonctionnement,% du PIB,Base du PIB ou du compte,Statut
+2008,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",89.0,19.4,0.161,1997.0,definitif
+2008,Taxe hôtelière,"DGCT, agrégats publiés",21.0,4.6,0.038,1997.0,definitif
+2009,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",94.0,19.6,0.16,1997.0,definitif
+2009,Taxe hôtelière,"DGCT, agrégats publiés",20.0,4.2,0.034,1997.0,definitif
+2010,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",111.0,20.7,0.176,1997.0,definitif
+2010,Taxe hôtelière,"DGCT, agrégats publiés",22.0,4.1,0.035,1997.0,definitif
+2011,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",93.0,16.6,0.144,1997.0,definitif
+2011,Taxe hôtelière,"DGCT, agrégats publiés",12.0,2.1,0.019,1997.0,definitif
+2012,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",138.0,21.5,0.196,1997.0,definitif
+2012,Taxe hôtelière,"DGCT, agrégats publiés",15.0,2.3,0.021,1997.0,definitif
+2013,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",154.0,22.2,0.205,1997.0,definitif
+2013,Taxe hôtelière,"DGCT, agrégats publiés",15.0,2.2,0.02,1997.0,definitif
+2014,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",179.0,24.2,0.221,1997.0,definitif
+2014,Taxe hôtelière,"DGCT, agrégats publiés",19.0,2.6,0.023,1997.0,definitif
+2015,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",222.0,27.3,0.247,2015.0,definitif
+2015,Taxe hôtelière,"DGCT, agrégats publiés",13.0,1.6,0.014,2015.0,definitif
+2016,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",232.0,27.2,0.243,2015.0,definitif
+2016,Taxe hôtelière,"DGCT, agrégats publiés",13.0,1.5,0.014,2015.0,definitif
+2017,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",262.0,28.4,0.257,2015.0,definitif
+2017,Taxe hôtelière,"DGCT, agrégats publiés",17.0,1.8,0.017,2015.0,definitif
+2018,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",292.0,27.9,0.258,2015.0,definitif
+2018,Taxe hôtelière,"DGCT, agrégats publiés",24.0,2.3,0.021,2015.0,definitif
+2019,Taxe sur les établissements (TCL),"DGCT, agrégats publiés",314.0,26.9,0.255,2015.0,definitif
+2019,Taxe hôtelière,"DGCT, agrégats publiés",29.0,2.5,0.024,2015.0,definitif
+2020,Taxe sur les établissements (TCL),Somme des budgets des communes,,,,,definitif
+2020,Taxe hôtelière,Somme des budgets des communes,,,,,definitif
+2021,Taxe sur les établissements (TCL),Somme des budgets des communes,,,,,situation_au_2021-12-25
+2021,Taxe hôtelière,Somme des budgets des communes,,,,,situation_au_2021-12-25
+2022,Taxe sur les établissements (TCL),Somme des budgets des communes,359.9,26.0,0.258,2015.0,definitif
+2022,Taxe hôtelière,Somme des budgets des communes,24.7,1.8,0.018,2015.0,definitif
+2023,Taxe sur les établissements (TCL),Somme des budgets des communes,400.1,27.5,0.267,2015.0,provisoire_au_2024-01-10
+2023,Taxe hôtelière,Somme des budgets des communes,39.8,2.7,0.027,2015.0,provisoire_au_2024-01-10
