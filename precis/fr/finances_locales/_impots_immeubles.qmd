@@ -1,24 +1,69 @@
-# Les impôts sur les immeubles {#sec-fl-immeubles}
+# Les impôts sur les immeubles {#sec-fl-immeubles .domicile-unique}
 
 Deux prélèvements du [code de la fiscalité locale](#g-code-fiscalite-locale) frappent la propriété immobilière : la [taxe sur les immeubles bâtis](#g-taxe-immeubles-batis) et la [taxe sur les terrains non bâtis](#g-taxe-terrains-non-batis). Le code les appelle « taxes », et l'arabe « معلوم » ; au sens du chapitre des notions, ce sont des impôts : obligatoires, sans contrepartie individuelle et sans affectation (@sec-fl-impot-taxe-redevance). Ce chapitre mobilise aussi la [souveraineté fiscale](#g-souverainete-fiscale), c'est-à-dire ce que la collectivité décide elle-même de l'assiette ou du taux (@sec-fl-autonomie), et la distinction entre l'impôt facturé et l'impôt encaissé (@sec-fl-recouvrement).
 
-Il suit le plan commun aux chapitres de ce volume : les origines, l'institution par le code de 1997, les barèmes fixés par décret, les réformes une à une, puis la longue période. Les articles cités sans autre précision sont ceux du code ; ceux de la loi qui le promulgue sont désignés comme tels. Un texte qui ne fixe pas lui-même sa date d'effet est daté du jour où il devient exécutoire, cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis, jour du dépôt non compté [@loi93-64, art. 2].
+Pour chacune des deux taxes, le chapitre donne qui paie, sur quelle assiette, à quel taux et selon quel barème en dinars, ce que la collectivité décide elle-même, et ce que la taxe rapporte aux communes.
 
-## Les origines {#sec-fl-immeubles-origines}
+## Vue d'ensemble {#sec-fl-immeubles-vue-ensemble}
 
-Le code de 1997 réunit des prélèvements plus anciens. La loi qui le promulgue en abroge les textes, parmi lesquels le décret du 16 septembre 1902 sur la taxe sur la valeur locative des immeubles, les décrets du 21 avril 1920 et du 28 octobre 1948 sur la taxe d'entretien et d'assainissement, et le décret du 15 décembre 1919 sur la contribution foncière sur les terrains non bâtis [@loi97-11, art. 3 de la loi]. Elle substitue l'expression « taxe sur les immeubles bâtis » aux deux premières taxes dans tous les textes en vigueur ; dans ceux du Fonds national d'amélioration de l'habitat, la « valeur locative » devient l'« assiette de la taxe sur les immeubles bâtis » [@loi97-11, art. 5 de la loi].
+La taxe sur les immeubles bâtis et la taxe sur les terrains non bâtis sont deux impôts annuels sur la propriété, dus par le propriétaire et encaissés par la collectivité locale sur le territoire de laquelle le bien se trouve. La première se calcule sur la superficie couverte de l'immeuble et sur un prix au mètre carré fixé par l'administration ; la seconde sur la valeur vénale du terrain ou, à défaut, sur un tarif au mètre carré. Depuis [1997](#r-fl-imm-1997-loi-effet), ni l'assiette ni les taux n'ont changé : l'État a agi sur la perception de ces deux taxes, et non sur leur calcul (@tbl-fl-immeubles-reformes).
 
-Seul l'objet de ces textes anciens est connu ici, d'après la liste de la loi de 1997 ; leurs règles d'assiette et de taux ne sont pas exposées.
+| Réforme | Ce que la loi cherche | Avant → après | Mise en œuvre |
+|---|---|---|---|
+| [**1997 — le code de la fiscalité locale**](#r-fl-imm-1997-loi-effet) | loi « portant promulgation du code de la fiscalité locale » | trois taxes régies par des décrets de 1902, 1919, 1920 et 1948 → deux taxes d'un même code | effet au [1^er^ janvier 1997]{.insecable} ; recensement des immeubles dans l'année ; premiers barèmes le [13 mars 1997]{.insecable} ; modalités du dégrèvement le [24 juin 1998]{.insecable} ; barèmes relevés au [1^er^ janvier 2008]{.insecable} et au [1^er^ janvier 2017]{.insecable} |
+| [**2002 — un premier abandon d'arriérés**](#r-fl-imm-abandon-2002) | loi « relative à l'institution de mesures d'allégement de la charge fiscale et d'amélioration des ressources des collectivités locales » | arriérés dus en entier, avec leurs pénalités → abandon des anciennes taxes de 1996 et des années antérieures jusqu'à 30 D par article de rôle, et des pénalités de 2001 et des années antérieures contre le paiement de 20 % du principal | quatre lois renouvellent la mesure, sur des années plus récentes : en 2012, 2019, 2024 et 2025 |
+| [**2006-2009 — la perception**](#r-fl-imm-perception-2007) | loi de 2007 « pour l'amélioration des modalités de perception des taxes revenant aux collectivités locales » ; en 2009, un article rangé sous une rubrique consacrée à l'amélioration du recouvrement des deux taxes | attestation de paiement exigée pour la seule autorisation de bâtir ; immeuble déclaré par le seul contribuable → attestation exigée pour sept actes ; toute location déclarée à la collectivité dans les huit jours, sous peine d'amende | attestation étendue au [1^er^ janvier 2006]{.insecable} et au [1^er^ janvier 2009]{.insecable} ; déclaration des locations le [16 août 2007]{.insecable} ; nouvelle extension au [1^er^ janvier 2013]{.insecable} |
+
+: Les taxes sur les immeubles : la mise en place et les deux grandes réformes {#tbl-fl-immeubles-reformes}
+
+<!-- TODO (rédacteur) : frise de la mise en place, des deux réformes et des relèvements de barèmes ; plan de l'architecte, § 0.4. D'ici là, le tableau `tbl-fl-immeubles-reformes` en tient lieu. -->
+
+<!-- TODO (documentaliste) : relever mot pour mot la rubrique de l'art. 33 de la loi de finances pour 2009 (la note documentaire la donne avec les sigles « TIB » et « TNB », qui ne sont sans doute pas ceux du texte) et celle des art. 53, 56 et 57 de la loi de finances pour 2006 ; plan de l'architecte, § 8, A. -->
+
+- **Le calcul n'a pas changé depuis 1997.** La taxe sur les immeubles bâtis est égale à un taux de 8 à 14 %, selon les services dont bénéficie l'immeuble, appliqué à 2 % d'un prix de référence au mètre carré multiplié par la superficie couverte (@sec-fl-tib-1997) ; la taxe sur les terrains non bâtis à 0,3 % de la valeur vénale du terrain (@sec-fl-tnb-1997). Seuls les barèmes en dinars ont été relevés, deux fois, en 2008 et en 2017 (@sec-fl-immeubles-baremes).
+- **La collectivité décide peu.** Elle choisit son prix de référence dans une fourchette que fixe un décret, et accorde le dégrèvement ; l'assiette, les taux et les exonérations sont dans la loi (@sec-fl-tib-prix-reference, @sec-fl-immeubles-degrevement).
+- **Cinq lois ont abandonné des arriérés**, de 2002 à 2025, contre un paiement partiel ou le règlement des années récentes (@sec-fl-immeubles-abandons).
+- **Les deux taxes pèsent peu dans les budgets communaux.** La taxe sur les immeubles bâtis fournit 7 % des recettes de fonctionnement des communes en 2008, 5 % en 2012 et 3 % en 2023 ; la taxe sur les terrains non bâtis, de 2,1 % à 3,1 % sur toute la période (@fig-fl-immeubles-rendement). Le taux de recouvrement publié de la première va de 24 % en 2008 à 11 % en 2011 et 18 % en 2019 (@fig-fl-immeubles-recouvrement).
+
+Les articles cités sans autre précision sont ceux du code ; ceux de la loi qui le promulgue sont désignés comme tels. Les montants sont en dinars (D) et en millions de dinars (MD). Un texte qui ne fixe pas lui-même sa date d'effet est daté du jour où il devient exécutoire, [cinq jours après le dépôt du *Journal officiel*](#r-fl-imm-dates-regle) au siège du gouvernorat de Tunis, jour du dépôt non compté.
+
+:::: {.chronologie-repliable titre="Dates d'application des textes des taxes sur les immeubles : la règle générale et les clauses propres, 1997-2025"}
+
+| Date d'effet | Texte et article | Ce que le texte dit de sa date d'application |
+|---|---|---|
+| []{#r-fl-imm-dates-regle}règle générale, depuis 1993 | loi n° 93-64 [@loi93-64, art. 2] | un texte sans clause d'effet devient exécutoire cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis, jour du dépôt non compté |
+| []{#r-fl-imm-dates-1997}[1^er^ janvier 1997]{.insecable} | loi n° 97-11 [@loi97-11, art. 3 de la loi, p. 173] | clause propre : le code entre en vigueur au 1^er^ janvier 1997, alors que la loi paraît au *Journal officiel* du 7 février 1997 |
+| []{#r-fl-imm-dates-1999}[1^er^ janvier 1997]{.insecable} | loi de finances pour 1999 [@lf-1999, art. 52, p. 2507] | clause propre de l'article : l'exonération qu'il accorde remonte au 1^er^ janvier 1997 |
+| []{#r-fl-imm-dates-lois-finances}1^er^ janvier de l'année | lois de finances pour 2002, 2003, 2005, 2006, 2007, 2009, 2013, 2014, 2019, 2022, 2023, 2024 et 2025 [@loi2001-123-lf2002, art. 97 ; @lf-2003, art. 87 ; @lf-2005, art. 89 ; @lf-2006, art. 62 ; @lf-2007, art. 88 ; @lf-2009, art. 39 ; @lf-2013, art. 79 ; @lf-2014, art. 95 ; @loi2018-56-lf2019, art. 90 ; @lf-2022, art. 73 ; @lf-2023, art. 76 ; @lf-2024, art. 70 ; @lf-2025, art. 84] | clause générale : la loi s'applique au 1^er^ janvier de l'année, pour l'ensemble de ses dispositions, sauf mention contraire |
+| []{#r-fl-imm-dates-2012}[24 mai 2012]{.insecable} | loi de finances complémentaire pour 2012 [@lfc-2012, art. 17, p. 924] | aucune clause générale : la loi, déposée le 19 mai 2012, est exécutoire cinq jours plus tard |
+
+: Dates d'application des textes des taxes sur les immeubles {#tbl-fl-immeubles-dates}
+
+::::
+
+## La mise en place, 1997 {#sec-fl-immeubles-code}
+
+Le code de la fiscalité locale, en vigueur au 1^er^ janvier 1997, réunit sous deux noms des taxes plus anciennes et fixe, pour chacune, le redevable, l'assiette, le taux et les exonérations. Ses articles et leurs pages sont réunis à la fin de cette section (@tbl-fl-immeubles-code-1997).
+
+### Ce que le code remplace {#sec-fl-immeubles-origines}
+
+Le code de 1997 réunit trois taxes plus anciennes sous deux noms. [La loi qui le promulgue](#r-fl-imm-1997-loi-effet) en abroge les textes, parmi lesquels le décret du 16 septembre 1902 sur la taxe sur la valeur locative des immeubles, les décrets du 21 avril 1920 et du 28 octobre 1948 sur la taxe d'entretien et d'assainissement, et le décret du 15 décembre 1919 sur la contribution foncière sur les terrains non bâtis. [Elle substitue](#r-fl-imm-1997-loi-substitution) l'expression « taxe sur les immeubles bâtis » aux deux premières taxes dans tous les textes en vigueur ; dans ceux du Fonds national d'amélioration de l'habitat, la « valeur locative » devient l'« assiette de la taxe sur les immeubles bâtis ».
+
+Seul l'objet de ces textes anciens est connu ici, d'après la liste d'abrogation de la loi de 1997 : une taxe assise sur la valeur locative, une taxe d'entretien et d'assainissement, une contribution foncière sur les terrains non bâtis.
 
 <!-- TODO (documentaliste) : lire les décrets du 16 septembre 1902, du 15 décembre 1919, du 21 avril 1920 et du 28 octobre 1948, pour écrire l'histoire des taxes immobilières avant 1997 (renvoi au futur chapitre d'histoire des collectivités). -->
 
-## L'institution par le code de 1997 {#sec-fl-immeubles-code}
-
 ### Le code de la fiscalité locale {#sec-fl-code-1997}
 
-La loi n° 97-11 du 3 février 1997 promulgue le code de la fiscalité locale, « مجلة الجباية المحلية » dans l'édition arabe. Publiée au *Journal officiel* du 7 février 1997, elle fixe elle-même son entrée en vigueur au 1er janvier 1997, avec un effet rétroactif de cinq semaines [@loi97-11, art. 3 de la loi]. Le code s'applique aux droits et redevances qu'il prévoit et à ceux que des lois spéciales ont institués ou institueront au profit des collectivités locales [@loi97-11, art. 2 de la loi]. La loi charge enfin les collectivités de recenser, dans l'année de la promulgation, tous les immeubles bâtis et non bâtis de leur territoire [@loi97-11, art. 4 de la loi].
+Le code de la fiscalité locale, « مجلة الجباية المحلية » dans l'édition arabe, est une loi de 95 articles répartis en huit chapitres, un par prélèvement, le dernier réunissant tout le reste. [La loi n° 97-11 du 3 février 1997](#r-fl-imm-1997-loi-effet) le promulgue ; publiée au *Journal officiel* du 7 février 1997, elle fixe elle-même son entrée en vigueur au 1^er^ janvier 1997, avec un effet rétroactif de cinq semaines.
 
-Le code compte 95 articles répartis en huit chapitres, un par prélèvement, le dernier réunissant tout le reste (@tbl-fl-code-chapitres). Il ne classe pas ses prélèvements en impôts, taxes et redevances : l'arabe les nomme presque tous « معلوم », là où le français dit selon les cas taxe, droit, redevance ou contribution.
+Les huit chapitres portent sur la taxe sur les immeubles bâtis et la taxe sur les terrains non bâtis, objet de ce chapitre ; sur la taxe sur les établissements à caractère industriel, commercial ou professionnel et la taxe hôtelière, traitées au chapitre des impôts sur l'activité (@sec-fl-activite) ; sur la taxe sur les spectacles, la contribution des propriétaires riverains, les droits de licence sur les débits de boissons et les taxes et redevances diverses, traités au chapitre des taxes et redevances (@sec-fl-taxes).
+
+- **Le champ.** Le code s'applique aux droits et redevances qu'il prévoit et à ceux que des lois spéciales ont institués ou institueront au profit des collectivités locales ([article 2 de la loi](#r-fl-imm-1997-loi-champ)).
+- **Un recensement dans l'année.** La loi charge les collectivités de recenser, dans l'année de la promulgation, tous les immeubles bâtis et non bâtis de leur territoire ([article 4 de la loi](#r-fl-imm-1997-loi-recensement)).
+- **Pas de classement en impôts, taxes et redevances.** L'arabe nomme presque tous les prélèvements du code « معلوم », là où le français dit selon les cas taxe, droit, redevance ou contribution.
+
+:::: {.chronologie-repliable titre="Code de la fiscalité locale : les huit chapitres, intitulés français et arabes, articles, rédaction de 1997"}
 
 | Chapitre | Intitulé | Intitulé arabe | Articles | Traité au chapitre |
 |---|---|---|---|---|
@@ -33,44 +78,72 @@ Le code compte 95 articles répartis en huit chapitres, un par prélèvement, le
 
 : Les huit chapitres du code de la fiscalité locale, dans sa rédaction de 1997 {#tbl-fl-code-chapitres}
 
-Source : @loi97-11, p. 173-181, éditions française et arabe.
+Source : code de la fiscalité locale, p. 173-181 des éditions française et arabe du *Journal officiel* [@loi97-11].
+
+::::
 
 ### La taxe sur les immeubles bâtis {#sec-fl-tib-1997}
 
-**Champ et redevable.** La taxe frappe les immeubles bâtis situés dans les zones relevant des collectivités locales, à l'exception de ceux qui sont affectés à une activité soumise à la taxe sur les établissements ou à la taxe hôtelière. Elle est due au 1er janvier ; les constructions nouvelles, les extensions, les surélévations et les changements d'affectation sont imposables dès leur réalisation [@loi97-11, art. 1]. Elle est à la charge du propriétaire ou de l'usufruitier, à défaut du possesseur ou de l'occupant [@loi97-11, art. 2].
-
-**Exonérations.** Sont exonérés les immeubles de l'État, des établissements publics administratifs et des collectivités locales tant qu'ils ne sont pas loués ; les mosquées, lieux de culte et zaouïas ; les immeubles des États étrangers, sous réserve de réciprocité, et ceux des organismes internationaux à statut diplomatique ; enfin ceux des associations de bienfaisance, de secourisme ou reconnues d'utilité publique, affectés à leur activité [@loi97-11, art. 3].
-
-**Assiette et taux.** L'assiette est égale à 2 % du [prix de référence du mètre carré couvert](#g-prix-reference-m2) de la catégorie de l'immeuble, multiplié par sa superficie couverte. Le code distingue quatre catégories de superficie couverte : jusqu'à 100 m², de 100 à 200 m², de 200 à 400 m², plus de 400 m². Les vérandas non couvertes, les garages, les caves non aménagées et les patios n'entrent pas dans la superficie couverte, que la collectivité fixe sur déclaration ; faute d'éléments, l'immeuble est classé dans la catégorie supérieure. Pour un immeuble loué sous le régime du maintien dans les lieux, l'assiette ne peut dépasser le loyer [@loi97-11, art. 4]. Le taux dépend du nombre de services dont bénéficie l'immeuble, parmi six : le nettoiement, l'éclairage public, les chaussées goudronnées, les trottoirs dallés, l'évacuation des eaux usées et celle des eaux pluviales [@loi97-11, art. 5]. La taxe s'écrit :
+La taxe sur les immeubles bâtis est égale à un taux, fonction des services dont bénéficie l'immeuble, appliqué à 2 % d'un prix de référence au mètre carré multiplié par la superficie couverte :
 
 $$
 T = \tau\,\alpha\,p\,s
 $$
 
-où $T$ est la taxe annuelle, $\tau$ le taux, fonction du nombre de services, $\alpha$ le taux d'assiette, $p$ le prix de référence du mètre carré couvert de la catégorie de l'immeuble et $s$ sa superficie couverte. Depuis le 1er janvier 1997, $\alpha = 2\,\%$ et $\tau$ va de 8 à 14 % (@tbl-fl-tib-taux) [@loi97-11, art. 4 et 5] ; les valeurs de $p$ sont au @tbl-fl-tib-prix-reference.
+où $T$ est la taxe annuelle, $\tau$ le taux, fonction du nombre de services, $\alpha$ le taux d'assiette, $p$ le [prix de référence du mètre carré couvert](#g-prix-reference-m2) de la catégorie de l'immeuble et $s$ sa superficie couverte. Depuis le 1^er^ janvier 1997, $\alpha = 2\,\%$ ([article 4](#r-fl-imm-1997-assiette)) et $\tau$ va de 8 à 14 % ([article 5](#r-fl-imm-1997-taux), @tbl-fl-tib-taux) ; les valeurs de $p$ sont au @tbl-fl-tib-prix-reference.
 
-| Services dont bénéficie l'immeuble | Taux $\tau$ |
+| Services dont bénéficie l'immeuble | Taux $\tau$<br>(% de l'assiette) |
 |---|---|
-| un ou deux | 8 % |
-| trois ou quatre | 10 % |
-| plus de quatre | 12 % |
-| plus de quatre, et services supplémentaires | 14 % |
+| un ou deux | 8 |
+| trois ou quatre | 10 |
+| plus de quatre | 12 |
+| plus de quatre, et services supplémentaires | 14 |
 
-: Taux de la taxe sur les immeubles bâtis selon le nombre de services, depuis le 1er janvier 1997 {#tbl-fl-tib-taux}
-
-Source : @loi97-11, art. 5.
+: Taux de la taxe sur les immeubles bâtis selon le nombre de services, depuis le 1^er^ janvier 1997 {#tbl-fl-tib-taux}
 
 <!-- TODO (rédacteur) : remplacer par un tableau engendré quand ces taux seront datés et sourcés dans la base de paramètres. -->
 
-**Dégrèvements.** Le code en prévoyait deux : un dégrèvement partiel de 25 %, après une année entière d'inoccupation, et un dégrèvement total pour les contribuables à faible revenu bénéficiant de l'aide de l'État ou des collectivités. Le président de la collectivité les accorde par arrêté, sur délibération du conseil et après avis de la commission de révision ; leurs modalités sont renvoyées à un décret [@loi97-11, art. 6].
+- **Qui paie.** La taxe frappe les immeubles bâtis situés dans les zones relevant des collectivités locales, à l'exception de ceux qui sont affectés à une activité soumise à la taxe sur les établissements ou à la taxe hôtelière. Elle est due au 1^er^ janvier ; les constructions nouvelles, les extensions, les surélévations et les changements d'affectation sont imposables dès leur réalisation. Elle est à la charge du propriétaire ou de l'usufruitier, à défaut du possesseur ou de l'occupant ([articles 1 et 2](#r-fl-imm-1997-champ)).
+- **Quatre catégories de superficie.** L'assiette est égale à 2 % du prix de référence du mètre carré couvert de la catégorie de l'immeuble, multiplié par sa superficie couverte. [Le code](#r-fl-imm-1997-assiette) distingue quatre catégories : jusqu'à 100 m², de 100 à 200 m², de 200 à 400 m², plus de 400 m². Les fourchettes du prix de référence s'élèvent d'une catégorie à la suivante (@tbl-fl-tib-prix-reference).
+- **Six services, quatre taux.** Le taux dépend du nombre de services dont bénéficie l'immeuble, parmi six : le nettoiement, l'éclairage public, les chaussées goudronnées, les trottoirs dallés, l'évacuation des eaux usées et celle des eaux pluviales ([article 5](#r-fl-imm-1997-taux)).
+- **Qui est exonéré.** Sont exonérés les immeubles de l'État, des établissements publics administratifs et des collectivités locales tant qu'ils ne sont pas loués ; les mosquées, lieux de culte et zaouïas ; les immeubles des États étrangers, sous réserve de réciprocité, et ceux des organismes internationaux à statut diplomatique ; enfin ceux des associations de bienfaisance, de secourisme ou reconnues d'utilité publique, affectés à leur activité ([article 3](#r-fl-imm-1997-exonerations)).
+- **Ce que la collectivité fixe.** Elle arrête la superficie couverte, sur déclaration du contribuable, et choisit son prix de référence, par arrêté motivé, entre le minimum et le maximum qu'un décret fixe pour chaque catégorie (@sec-fl-tib-prix-reference). Le taux d'assiette et les quatre taux sont dans la loi.
 
-**Recensement, recouvrement, contentieux.** Les immeubles sont recensés tous les dix ans, sur annonce par affichage ou au *Journal officiel* [@loi97-11, art. 7-9]. La taxe est recouvrée par les receveurs des finances, sur un rôle annuel rendu exécutoire par le président de la collectivité ; les indivisaires et les héritiers sont solidaires, et l'autorisation de bâtir est subordonnée à une attestation de paiement [@loi97-11, art. 10-13]. Le contribuable déclare son immeuble lors du recensement, puis tout changement dans les trente jours ; l'acquéreur est solidaire, et l'ancien propriétaire l'est aussi tant qu'il n'a pas déclaré la mutation [@loi97-11, art. 14-18]. Le retard est sanctionné d'une pénalité mensuelle de 1,25 %, et le défaut de déclaration ou la déclaration inexacte d'une pénalité de 25 dinars [@loi97-11, art. 19-20]. Les réclamations passent devant une commission de révision présidée par le président de la collectivité, puis devant le tribunal cantonal, dans les soixante jours, qui statue en dernier ressort [@loi97-11, art. 21-26]. La prescription et le délai de restitution sont de trois ans [@loi97-11, art. 27-28]. L'évolution de la pénalité de retard est au @tbl-fl-penalite-retard.
+<!-- TODO (documentaliste) : la note documentaire (§ 2.1) annonce « six tirets » à l'art. 3 du code et en énumère cinq ; relire l'article pour établir le nombre d'exonérations d'origine et, s'il y en a une sixième, son objet (plan de l'architecte, § 7, point 8). -->
+
+Le code prévoit deux dégrèvements : un dégrèvement partiel de 25 %, après une année entière d'inoccupation, et un dégrèvement total pour les contribuables à faible revenu aidés par l'État ou les collectivités. Leur régime, et la suppression du premier en 2003, sont exposés à la section du dégrèvement (@sec-fl-immeubles-degrevement).
+
+La taxe est perçue par les receveurs des finances, sur un rôle annuel que le président de la collectivité rend exécutoire ; dès 1997, l'autorisation de bâtir est subordonnée à une attestation de paiement, et le retard est sanctionné d'une pénalité de 1,25 % par mois ([articles 7 à 28](#r-fl-imm-1997-perception)). L'attestation est l'objet de la réforme de 2006-2009 (@sec-fl-immeubles-recouvrement), la pénalité d'une section propre (@sec-fl-immeubles-penalite).
+
+:::: {.chronologie-repliable titre="Taxe sur les immeubles bâtis : superficie couverte, classement d'office et plafond du loyer, rédaction de 1997 (art. 4)"}
+
+- **Superficie couverte.** Les vérandas non couvertes, les garages, les caves non aménagées et les patios n'entrent pas dans la superficie couverte, que la collectivité fixe sur déclaration.
+- **Classement d'office.** Faute d'éléments, l'immeuble est classé dans la catégorie supérieure.
+- **Plafond du loyer.** Pour un immeuble loué sous le régime du maintien dans les lieux, l'assiette ne peut dépasser le loyer.
+- **Prix de référence.** Un décret fixe tous les trois ans, pour chaque catégorie, un minimum et un maximum ; dans ces limites, la collectivité fixe son prix par arrêté motivé, selon les services rendus.
+
+Source : code de la fiscalité locale, rédaction de 1997 [@loi97-11, art. 4].
+
+::::
+
+:::: {.chronologie-repliable titre="Taxe sur les immeubles bâtis : recensement, rôle, déclarations, sanctions et contentieux, rédaction de 1997 (art. 7 à 28)"}
+
+| Objet | Règle de 1997 | Articles |
+|---|---|---|
+| Recensement | les immeubles sont recensés tous les dix ans, sur annonce par affichage ou au *Journal officiel* | [@loi97-11, art. 7-9] |
+| Rôle et recouvrement | la taxe est recouvrée par les receveurs des finances, sur un rôle annuel rendu exécutoire par le président de la collectivité ; les indivisaires et les héritiers sont solidaires ; l'autorisation de bâtir est subordonnée à une attestation de paiement | [@loi97-11, art. 10-13] |
+| Déclarations | le contribuable déclare son immeuble lors du recensement, puis tout changement dans les trente jours ; l'acquéreur est solidaire, et l'ancien propriétaire l'est aussi tant qu'il n'a pas déclaré la mutation | [@loi97-11, art. 14-18] |
+| Sanctions | le retard est sanctionné d'une pénalité mensuelle de 1,25 %, et le défaut de déclaration ou la déclaration inexacte d'une pénalité de 25 dinars | [@loi97-11, art. 19-20] |
+| Contentieux | les réclamations passent devant une commission de révision présidée par le président de la collectivité, puis devant le tribunal cantonal, dans les soixante jours, qui statue en dernier ressort | [@loi97-11, art. 21-26] |
+| Prescription | la prescription et le délai de restitution sont de trois ans | [@loi97-11, art. 27-28] |
+
+: Perception de la taxe sur les immeubles bâtis : les règles du code de 1997 {#tbl-fl-tib-perception-1997}
+
+::::
 
 ### La taxe sur les terrains non bâtis {#sec-fl-tnb-1997}
 
-La taxe frappe les terrains non bâtis des zones relevant des collectivités locales ; elle est due au 1er janvier, ou à la date d'entrée dans le champ, par le propriétaire ou l'usufruitier, à défaut le possesseur ou l'occupant [@loi97-11, art. 30-31]. Le code de 1997 en exonère sept catégories : les jardins enclos attenant aux immeubles, les terrains agricoles, les terrains enclos exploités dans une activité industrielle, commerciale ou professionnelle, les terrains de l'État, des établissements publics administratifs et des collectivités, les terrains situés en zone d'interdiction de bâtir, les lotissements tant qu'ils ne sont pas cédés par le lotisseur, enfin les réserves foncières et les périmètres d'intervention foncière [@loi97-11, art. 32].
-
-La taxe est égale à 0,3 % de la valeur vénale réelle du terrain, « القيمة التجارية الحقيقية » ; à défaut, elle est calculée selon un tarif au mètre carré, progressif selon la densité urbaine de la zone du plan d'aménagement urbain, que fixe un décret tous les trois ans [@loi97-11, art. 33]. Elle s'écrit :
+La taxe sur les terrains non bâtis est égale à 0,3 % de la valeur vénale réelle du terrain, « القيمة التجارية الحقيقية » ; à défaut, elle est calculée selon un tarif au mètre carré, progressif selon la densité urbaine de la zone du plan d'aménagement urbain, que fixe un décret tous les trois ans ([article 33](#r-fl-imm-1997-tnb-taux)). Elle s'écrit :
 
 $$
 T = \theta\,V
@@ -82,218 +155,437 @@ $$
 T = q\,\sigma
 $$
 
-où $\theta$ est le taux appliqué à la valeur vénale, $V$ la valeur vénale réelle du terrain, $q$ le tarif au mètre carré de la zone et $\sigma$ la superficie du terrain. Depuis le 1er janvier 1997, $\theta = 0{,}3\,\%$ [@loi97-11, art. 33] ; les valeurs de $q$ sont au @tbl-fl-tnb-tarif. Le recensement, le recouvrement, les obligations, les sanctions et le contentieux suivent les règles de la taxe sur les immeubles bâtis [@loi97-11, art. 34].
+où $T$ est la taxe annuelle, $\theta$ le taux appliqué à la valeur vénale, $V$ la valeur vénale réelle du terrain, $q$ le tarif au mètre carré de la zone et $\sigma$ la superficie du terrain. Depuis le 1^er^ janvier 1997, $\theta = 0{,}3\,\%$ ; les valeurs de $q$ sont au @tbl-fl-tnb-tarif.
 
-## Les barèmes fixés par décret {#sec-fl-immeubles-baremes}
+- **Qui paie.** La taxe frappe les terrains non bâtis des zones relevant des collectivités locales ; elle est due au 1^er^ janvier, ou à la date d'entrée dans le champ, par le propriétaire ou l'usufruitier, à défaut le possesseur ou l'occupant ([articles 30 et 31](#r-fl-imm-1997-tnb-champ)).
+- **Sept exonérations.** [Le code de 1997](#r-fl-imm-1997-tnb-exonerations) exonère sept catégories : les jardins enclos attenant aux immeubles, les terrains agricoles, les terrains enclos exploités dans une activité industrielle, commerciale ou professionnelle, les terrains de l'État, des établissements publics administratifs et des collectivités, les terrains situés en zone d'interdiction de bâtir, les lotissements tant qu'ils ne sont pas cédés par le lotisseur, enfin les réserves foncières et les périmètres d'intervention foncière.
+- **Les règles de perception de la taxe sur les immeubles bâtis.** Le recensement, le recouvrement, les obligations, les sanctions et le contentieux suivent les règles de la taxe sur les immeubles bâtis ([article 34](#r-fl-imm-1997-tnb-regles)).
 
-Le code ne chiffre pas lui-même les deux grandeurs qui déterminent le montant de ces taxes : le prix de référence du mètre carré couvert et le tarif au mètre carré des terrains non bâtis. Il les renvoie l'un et l'autre à un décret pris tous les trois ans [@loi97-11, art. 4 et 33]. Trois générations de décrets sont identifiées, en 1997, 2007 et 2017 ; chacune abroge la précédente.
+:::: {.chronologie-repliable titre="Taxes sur les immeubles : le code de 1997, articles et pages"}
 
-### Le prix de référence du mètre carré couvert {#sec-fl-tib-prix-reference}
-
-Le décret fixe, pour chaque catégorie de superficie, un minimum et un maximum ; dans ces limites, la collectivité fixe son prix de référence par arrêté motivé, selon les services rendus [@loi97-11, art. 4]. Les fourchettes ont été relevées deux fois : au 1er janvier 2008, minimums et maximums, sauf le minimum de la première catégorie ; au 1er janvier 2017, les seuls maximums (@tbl-fl-tib-prix-reference). Dans le décret de 2017, les fourchettes se chevauchent : le maximum d'une catégorie dépasse le minimum de la suivante, dans les deux éditions du *Journal officiel*.
-
-::: {#tbl-fl-tib-prix-reference}
-
-::: {.panel-tabset}
-
-#### Depuis le 1er janvier 2017
-
-| Catégorie (superficie couverte) | Minimum (D/m²) | Maximum (D/m²) |
+| Objet | Texte et article | Ce que dit l'article |
 |---|---|---|
-| 1 : jusqu'à 100 m² | 100 | 178 |
-| 2 : de 100 à 200 m² | 163 | 238 |
-| 3 : de 200 à 400 m² | 217 | 297 |
-| 4 : plus de 400 m² | 271 | 356 |
+| []{#r-fl-imm-1997-loi-champ}Champ du code | loi n° 97-11 [@loi97-11, art. 2 de la loi, p. 173] | le code s'applique aux droits et redevances qu'il prévoit et à ceux que des lois spéciales instituent au profit des collectivités locales |
+| []{#r-fl-imm-1997-loi-effet}Abrogations et entrée en vigueur | loi n° 97-11 du 3 février 1997 [@loi97-11, art. 3 de la loi, p. 173] | abrogation des textes antérieurs, dont les décrets de 1902, 1919, 1920 et 1948 ; entrée en vigueur au 1^er^ janvier 1997 |
+| []{#r-fl-imm-1997-loi-recensement}Recensement initial | loi n° 97-11 [@loi97-11, art. 4 de la loi, p. 173] | recensement de tous les immeubles bâtis et non bâtis dans l'année de la promulgation |
+| []{#r-fl-imm-1997-loi-substitution}Substitution des noms | loi n° 97-11 [@loi97-11, art. 5 de la loi, p. 173] | « taxe sur les immeubles bâtis » remplace les deux anciennes taxes ; dans les textes du Fonds national d'amélioration de l'habitat, « valeur locative » devient « assiette de la taxe sur les immeubles bâtis » |
+| []{#r-fl-imm-1997-champ}Immeubles bâtis : champ et redevable | code, art. 1 et 2 [@loi97-11, art. 1 et 2, p. 173] | immeubles bâtis des zones relevant des collectivités locales, hors ceux affectés à une activité soumise à la taxe sur les établissements ou à la taxe hôtelière ; propriétaire ou usufruitier, à défaut possesseur ou occupant |
+| []{#r-fl-imm-1997-exonerations}Immeubles bâtis : exonérations | code, art. 3 [@loi97-11, art. 3] | immeubles publics non loués, lieux de culte, immeubles des États étrangers et des organismes internationaux, immeubles des associations affectés à leur activité |
+| []{#r-fl-imm-1997-assiette}Immeubles bâtis : assiette | code, art. 4 [@loi97-11, art. 4] | 2 % du prix de référence du mètre carré couvert, multiplié par la superficie couverte ; quatre catégories de superficie ; prix de référence fixé par la collectivité dans la fourchette d'un décret pris tous les trois ans |
+| []{#r-fl-imm-1997-taux}Immeubles bâtis : taux | code, art. 5 [@loi97-11, art. 5] | 8, 10, 12 ou 14 % selon le nombre de services, parmi six |
+| []{#r-fl-imm-1997-degrevement}Immeubles bâtis : dégrèvements | code, art. 6 [@loi97-11, art. 6] | dégrèvement partiel de 25 % et dégrèvement total ; arrêté du président de la collectivité ; modalités renvoyées à un décret |
+| []{#r-fl-imm-1997-perception}Immeubles bâtis : perception | code, art. 7 à 28 [@loi97-11, art. 7-28, p. 173-176] | recensement décennal, rôle annuel, attestation de paiement, déclarations, pénalités, commission de révision, prescription (@tbl-fl-tib-perception-1997) |
+| []{#r-fl-imm-1997-tnb-champ}Terrains non bâtis : champ et redevable | code, art. 30 et 31 [@loi97-11, art. 30-31, p. 176] | terrains non bâtis des zones relevant des collectivités locales ; propriétaire ou usufruitier, à défaut possesseur ou occupant |
+| []{#r-fl-imm-1997-tnb-exonerations}Terrains non bâtis : exonérations | code, art. 32 [@loi97-11, art. 32, p. 176] | sept catégories de terrains exonérés |
+| []{#r-fl-imm-1997-tnb-taux}Terrains non bâtis : taux et tarif | code, art. 33 [@loi97-11, art. 33, p. 176] | 0,3 % de la valeur vénale réelle ; à défaut, tarif au mètre carré par zone, fixé par décret tous les trois ans |
+| []{#r-fl-imm-1997-tnb-regles}Terrains non bâtis : perception | code, art. 34 [@loi97-11, art. 34, p. 176] | application des règles de la taxe sur les immeubles bâtis |
 
-Décret gouvernemental n° 2017-397 du 28 mars 2017, art. 1 ; effet au 1er janvier 2017, art. 3 [@decret2017-397].
+: Les taxes sur les immeubles dans le code de 1997 : articles et pages {#tbl-fl-immeubles-code-1997}
 
-#### Du 1er janvier 2008 au 31 décembre 2016
+Le chapitre I^er^ du code, sur la taxe sur les immeubles bâtis, occupe les pages 173 à 176 du *Journal officiel* n° 11 du 7 février 1997 ; le chapitre II, sur la taxe sur les terrains non bâtis, la page 176.
 
-| Catégorie (superficie couverte) | Minimum (D/m²) | Maximum (D/m²) |
-|---|---|---|
-| 1 : jusqu'à 100 m² | 100 | 162 |
-| 2 : de 100 à 200 m² | 163 | 216 |
-| 3 : de 200 à 400 m² | 217 | 270 |
-| 4 : plus de 400 m² | 271 | 324 |
+::::
 
-Décret n° 2007-1185 du 14 mai 2007, art. 1 ; effet au 1er janvier 2008, art. 3 [@decret2007-1185].
+## Les grandes réformes {#sec-fl-immeubles-reformes}
 
-#### Du 13 mars 1997 au 31 décembre 2007
+Depuis 1997, l'État n'a touché ni à l'assiette ni aux taux de ces deux taxes. Il en a retouché les exonérations, le dégrèvement et les sanctions, et surtout la perception : deux réformes changent ce que la loi cherche, en 2002 et de 2006 à 2009. La série du produit des deux taxes commence en 2008 (@sec-fl-immeubles-longue-periode) : elle ne montre ni l'avant ni l'après de ces deux réformes.
 
-| Catégorie (superficie couverte) | Minimum (D/m²) | Maximum (D/m²) |
-|---|---|---|
-| 1 : jusqu'à 100 m² | 100 | 150 |
-| 2 : de 100 à 200 m² | 151 | 200 |
-| 3 : de 200 à 400 m² | 201 | 250 |
-| 4 : plus de 400 m² | 251 | 300 |
+### 2002 : un premier abandon d'arriérés, contre un paiement partiel {#sec-fl-immeubles-abandon-2002}
 
-Décret n° 97-431 du 3 mars 1997 ; sans clause d'effet, exécutoire le 13 mars 1997 [@decret97-431].
+En 2002, l'État abandonne pour la première fois des arriérés de taxe, à la condition que le contribuable paie une part de ce qu'il doit. [La loi du 23 juillet 2002](#r-fl-imm-abandon-2002), exécutoire le 1^er^ août 2002, dit son objet dans son intitulé : des « mesures d'allégement de la charge fiscale et d'amélioration des ressources des collectivités locales ». Elle abandonne les anciennes taxes de 1996 et des années antérieures, celles que le code a remplacées, jusqu'à 30 D de principal par article de rôle ; et, pour la taxe sur les immeubles bâtis de 2001 et des années antérieures, les pénalités et les frais de poursuite, contre le paiement de 20 % du principal et un calendrier de deux ans et demi.
 
-:::
+La mesure s'adresse aux contribuables en retard. Quatre lois la renouvellent, chaque fois sur des années plus récentes, en 2012, 2019, 2024 et 2025 : leur détail est à la section des abandons d'arriérés (@sec-fl-immeubles-abandons).
 
-Prix de référence du mètre carré couvert de la taxe sur les immeubles bâtis : minimum et maximum par catégorie, en dinars
+### 2006-2009 : l'attestation de paiement et la déclaration des locations {#sec-fl-immeubles-recouvrement}
 
-:::
+De 2006 à 2009, la collectivité obtient deux moyens de perception : nul n'obtient un permis, ni l'un des actes que le code énumère, sans attestation de paiement de la taxe, et toute location d'un immeuble lui est déclarée (@tbl-fl-immeubles-attestation).
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré (ot.markdown_un_tableau_en_onglets) quand les fourchettes seront datées et sourcées dans la base de paramètres. -->
+| Depuis le | Actes que le texte de cette date subordonne à l'attestation de paiement |
+|---|---|
+| [[1^er^ janvier 1997]{.insecable}](#r-fl-imm-perception-1997) | autorisation de bâtir |
+| [[1^er^ janvier 2006]{.insecable}](#r-fl-imm-perception-2006) | permis de bâtir ou de clôture ; changement d'affectation d'un logement en local commercial ou professionnel ; arrêté de lotissement |
+| [[1^er^ janvier 2009]{.insecable}](#r-fl-imm-perception-2009) | inscription au rôle ; habitation principale ; procès-verbal de récolement ; permis d'occuper |
+| [[1^er^ janvier 2013]{.insecable}](#r-fl-imm-perception-2013) | légalisation de signature des actes de mutation, d'hypothèque, de location ou de jouissance d'immeubles ; permis de démolir |
 
-Aucun décret n'est identifié entre celui de 1997 et celui de 2007, ni depuis celui de 2017, bien que le code prévoie une révision tous les trois ans. Le dernier état connu est donc celui du 1er janvier 2017. Les arrêtés par lesquels chaque collectivité fixe son prix dans la fourchette ne sont pas identifiés ici.
+: Les actes subordonnés à l'attestation de paiement de la taxe sur les immeubles bâtis, 1997-2013 {#tbl-fl-immeubles-attestation}
+
+- **Les actes concernés.** En 1997, seule l'autorisation de bâtir est subordonnée à l'attestation. [Au 1^er^ janvier 2006](#r-fl-imm-perception-2006), elle devient exigible pour le permis de bâtir ou de clôture, pour le changement d'affectation d'un logement en local commercial ou professionnel et pour l'arrêté de lotissement ; [au 1^er^ janvier 2009](#r-fl-imm-perception-2009), pour l'inscription au rôle, l'habitation principale, le procès-verbal de récolement et le permis d'occuper.
+- **La déclaration des locations.** [La loi du 8 août 2007](#r-fl-imm-perception-2007), exécutoire le 16 août 2007, ajoute au code un article 17 bis : le propriétaire, le locataire et l'occupant d'un immeuble bâti, même inachevé, déclarent à la collectivité toute location ou occupation dans les huit jours, sauf l'occupation par un ascendant ou un descendant du propriétaire ; les gestionnaires pour compte de tiers y sont tenus aussi. Le manquement est puni d'une amende égale à trois fois le prix de référence maximum du mètre carré de la catégorie supérieure, dont le locataire ou l'occupant est solidaire. Jusque-là, seul le contribuable déclarait son immeuble.
+- **Le rôle individuel.** Depuis [2006](#r-fl-imm-perception-2006), le recouvrement se fait au vu d'un extrait du rôle individuel visé par le receveur des finances.
+- **Ce que disent les lois.** La loi de 2007 complète le code, selon son intitulé, « pour l'amélioration des modalités de perception des taxes revenant aux collectivités locales » ; l'article de la loi de finances pour 2009 est rangé sous une rubrique consacrée à l'amélioration du recouvrement des deux taxes.
+
+### Entre les réformes, et depuis 2009 {#sec-fl-immeubles-attestation}
+
+Les autres changements règlent une grandeur, une exonération ou une sanction, sans changer ce que la loi cherche.
+
+- **Les barèmes en dinars** sont relevés au 1^er^ janvier 2008 et au 1^er^ janvier 2017 (@sec-fl-immeubles-baremes).
+- **Le dégrèvement partiel** pour inoccupation est supprimé au 1^er^ janvier 2003 (@sec-fl-immeubles-degrevement).
+- **Le prélèvement au profit du Fonds national d'amélioration de l'habitat** est refondu au 1^er^ janvier 2005 en une contribution de 4 % de l'assiette de la taxe sur les immeubles bâtis (@sec-fl-immeubles-fnah).
+- **Les exonérations** sont retouchées trois fois. [La loi de finances pour 2002](#r-fl-imm-exo-2002) exonère pendant deux ans les terrains aménagés acquis par les promoteurs immobiliers. [Celle de 2005](#r-fl-imm-exo-2005) remplace, pour les terrains non bâtis, l'exonération des jardins enclos par trois exonérations : les jardins enclos attenant aux immeubles individuels, dans la limite de 1 000 m² ; les jardins attenant aux immeubles collectifs ; les terrains enclos et boisés attenant aux immeubles. [Au 1^er^ janvier 2014](#r-fl-imm-exo-2014), les immeubles et les terrains de l'État, des collectivités et des établissements publics administratifs transférés dans une émission de *sukuk* sont exonérés des deux taxes.
+- **L'attestation de paiement** est étendue [au 1^er^ janvier 2013](#r-fl-imm-perception-2013) à la légalisation de signature des actes de mutation, d'hypothèque, de location ou de jouissance d'immeubles et au permis de démolir.
+- **Un impôt foncier d'État**, calculé sur ces deux taxes, est institué par la loi de finances pour 2014 ; il est exposé, avec sa suppression la même année, dans le volume [« La fiscalité »](../fiscalite/_impot_fortune.html#sec-fortune-avant).
+- **La pénalité de retard** est modifiée quatre fois, en 2002, 2007, 2022 et 2023 (@sec-fl-immeubles-penalite).
+- **Les abandons d'arriérés** sont renouvelés en 2012, 2019, 2024 et 2025 (@sec-fl-immeubles-abandons).
+- **Le code des collectivités locales de 2018** ne change aucune règle des deux taxes, qui restent des impôts fixés par la loi (@sec-fl-ccl-categories) ; ce que les collectivités peuvent moduler est exposé au chapitre des taxes et redevances (@sec-fl-moduler).
+
+[]{#sec-fl-immeubles-textes}
+
+:::: {.chronologie-repliable titre="Exonérations de la taxe sur les immeubles bâtis et de la taxe sur les terrains non bâtis : textes, date par date, 1997-2014"}
+
+| Date d'effet | Portée | Texte et article | Avant → après |
+|---|---|---|---|
+| []{#r-fl-imm-exo-1997-tib}[1^er^ janvier 1997]{.insecable} | point de départ | code, art. 3 [@loi97-11, art. 3] | — → immeubles bâtis exonérés : ceux de l'État, des établissements publics administratifs et des collectivités locales, non loués ; lieux de culte ; États étrangers et organismes internationaux ; associations de bienfaisance, de secourisme ou reconnues d'utilité publique |
+| []{#r-fl-imm-exo-1997-tnb}[1^er^ janvier 1997]{.insecable} | point de départ | code, art. 32 [@loi97-11, art. 32] | — → sept catégories de terrains non bâtis exonérés |
+| []{#r-fl-imm-exo-2002}[1^er^ janvier 2002]{.insecable} | ajustement | loi de finances pour 2002 [@loi2001-123-lf2002, art. 43, p. 4256] | art. 32 : exonération de deux ans des terrains aménagés acquis par les promoteurs immobiliers |
+| []{#r-fl-imm-exo-2005}[1^er^ janvier 2005]{.insecable} | ajustement | loi de finances pour 2005 [@lf-2005, art. 82, p. 3445] | art. 32 : le premier tiret devient trois exonérations de jardins et terrains boisés |
+| []{#r-fl-imm-exo-2014}[1^er^ janvier 2014]{.insecable} | ajustement | loi de finances pour 2014 [@lf-2014, art. 30, p. 3674] | art. 3 et 32 : exonération des biens publics transférés dans une émission de *sukuk* |
+
+: Les exonérations des deux taxes sur les immeubles : textes, 1997-2014 {#tbl-fl-immeubles-exonerations}
+
+::::
+
+:::: {.chronologie-repliable titre="Perception des taxes sur les immeubles — attestation de paiement, rôle, déclaration des locations : textes, date par date, 1997-2013"}
+
+| Date d'effet | Portée | Texte et article | Avant → après |
+|---|---|---|---|
+| []{#r-fl-imm-perception-1997}[1^er^ janvier 1997]{.insecable} | point de départ | code, art. 10 à 18 [@loi97-11, art. 10-18] | — → rôle annuel ; autorisation de bâtir subordonnée à une attestation de paiement ; immeuble déclaré par le contribuable |
+| []{#r-fl-imm-perception-2006}[1^er^ janvier 2006]{.insecable} | **rupture** — la perception | loi de finances pour 2006 [@lf-2006, art. 53, 56 et 57, p. 3603-3604] | art. 13 : attestation pour le permis de bâtir ou de clôture, le changement d'affectation, l'arrêté de lotissement ; rôle dit « جدول تحصيل » au lieu de « زمام » dans l'édition arabe ; recouvrement au vu d'un extrait du rôle individuel |
+| []{#r-fl-imm-perception-2007}[16 août 2007]{.insecable} | **rupture** — la perception | loi n° 2007-53 du 8 août 2007 [@loi2007-53, art. 1-3, p. 2732-2733] | art. 17 bis : déclaration des locations dans les 8 jours ; art. 19 : amende de trois fois le prix de référence maximum |
+| []{#r-fl-imm-perception-2009}[1^er^ janvier 2009]{.insecable} | **rupture** — la perception | loi de finances pour 2009 [@lf-2009, art. 33, p. 4279] | art. 13 : attestation pour l'inscription au rôle, l'habitation principale, le récolement et le permis d'occuper |
+| []{#r-fl-imm-perception-2013}[1^er^ janvier 2013]{.insecable} | étape — de 2006-2009 | loi de finances pour 2013 [@lf-2013, art. 55, p. 16] | art. 13 : attestation pour la légalisation de signature des actes immobiliers et le permis de démolir |
+
+: Les textes qui ont modifié la perception de la taxe sur les immeubles bâtis et de la taxe sur les terrains non bâtis depuis 1997 {#tbl-fl-immeubles-textes}
+
+Les textes des autres dispositions sont réunis, chacun dans sa section, aux registres du dégrèvement, de la contribution au Fonds national d'amélioration de l'habitat, de la pénalité de retard et des abandons d'arriérés.
+
+::::
+
+## L'état du droit en 2025 {#sec-fl-immeubles-etat-du-droit}
+
+En 2025, les deux taxes se calculent comme en 1997, sur les barèmes en vigueur depuis le 1^er^ janvier 2017. Le code prévoit une révision des barèmes tous les trois ans ; aucun décret n'est identifié entre ceux de 1997 et ceux de 2007, ni depuis ceux de 2017. Les barèmes de 2017 sont donc tenus ici pour ceux de 2025.
 
 <!-- RECHERCHE r-cfl-prix-reference-1998-2006 : décret fixant le prix de référence de la TIB, le tarif de la TNB ou le minimum de la TCL entre 1997 et 2007 (voir docs/recherches.yml) -->
 
 <!-- RECHERCHE r-cfl-prix-reference-tib-apres-2017 : décret fixant le prix de référence de la TIB après le décret gouvernemental n° 2017-397 (voir docs/recherches.yml) -->
 
-<!-- TODO (documentaliste) : chercher les arrêtés communaux fixant le prix de référence (Journal officiel des collectivités locales, publications des communes), hors du corpus du JORT. -->
-
-### Le tarif au mètre carré des terrains non bâtis {#sec-fl-tnb-tarif}
-
-Le tarif, applicable quand la valeur vénale réelle fait défaut, distingue trois zones du plan d'aménagement urbain selon leur densité : haute (« ذات كثافة عمرانية مرتفعة »), moyenne et basse. Il a été relevé au 1er janvier 2008, puis au 1er janvier 2017 (@tbl-fl-tnb-tarif).
-
-::: {#tbl-fl-tnb-tarif}
-
-::: {.panel-tabset}
-
-#### Depuis le 1er janvier 2017
-
-| Zone du plan d'aménagement urbain | Tarif (D/m²) |
-|---|---|
-| haute densité | 0,385 |
-| moyenne densité | 0,115 |
-| basse densité | 0,040 |
-
-Décret gouvernemental n° 2017-396 du 28 mars 2017 ; effet au 1er janvier 2017, art. 3 [@decret2017-396].
-
-#### Du 1er janvier 2008 au 31 décembre 2016
-
-| Zone du plan d'aménagement urbain | Tarif (D/m²) |
-|---|---|
-| haute densité | 0,318 |
-| moyenne densité | 0,095 |
-| basse densité | 0,032 |
-
-Décret n° 2007-1186 du 14 mai 2007 ; effet au 1er janvier 2008, art. 3 [@decret2007-1186].
-
-#### Du 13 mars 1997 au 31 décembre 2007
-
-| Zone du plan d'aménagement urbain | Tarif (D/m²) |
-|---|---|
-| haute densité | 0,300 |
-| moyenne densité | 0,090 |
-| basse densité | 0,030 |
-
-Décret n° 97-432 du 3 mars 1997 ; sans clause d'effet, exécutoire le 13 mars 1997 [@decret97-432].
-
-:::
-
-Tarif au mètre carré de la taxe sur les terrains non bâtis, par zone, en dinars
-
-:::
-
-<!-- TODO (rédacteur) : remplacer par un tableau engendré (ot.markdown_un_tableau_en_onglets) quand les tarifs seront datés et sourcés dans la base de paramètres. -->
-
-Comme pour le prix de référence, aucun décret n'est identifié entre 1997 et 2007, ni depuis 2017.
-
 <!-- RECHERCHE r-cfl-tarif-tnb-apres-2017 : décret fixant le tarif au m² de la TNB après le décret gouvernemental n° 2017-396 (voir docs/recherches.yml) -->
 
-<!-- RECHERCHE r-cfl-prix-reference-1998-2006 : décret fixant le prix de référence de la TIB, le tarif de la TNB ou le minimum de la TCL entre 1997 et 2007 (voir docs/recherches.yml) -->
+<!-- TODO (documentaliste) : confirmer l'état du droit pour 2026 — la loi de finances pour 2026 (JORT n° 148 de 2025, édition arabe) a-t-elle été inventoriée pour tous les articles du code de la fiscalité locale, ou seulement pour les art. 41 à 45 et les amnisties ? Si oui, le titre et la première phrase de cette section passent à 2026 (plan de l'architecte, § 8, H). -->
 
-## Les réformes, une à une {#sec-fl-immeubles-reformes}
+### Les règles en vigueur {#sec-fl-immeubles-regles}
 
-Les textes identifiés depuis 1997 ne touchent ni l'assiette ni les taux de ces deux taxes. Ils portent sur leurs exonérations, sur les dégrèvements, sur les sanctions et, surtout, sur le recouvrement. Elles sont exposées par étape ; le @tbl-fl-immeubles-textes les reprend texte par texte.
+Le @tbl-fl-immeubles-etat réunit, pour chacune des deux taxes, les règles applicables en 2025 ; chaque ligne renvoie à la section qui la détaille.
 
-### 1998-2003 : le dégrèvement, organisé puis restreint {#sec-fl-immeubles-degrevement}
-
-Le décret n° 98-1254 du 8 juin 1998, exécutoire le 24 juin 1998, organise les deux dégrèvements de l'article 6. Le dégrèvement partiel exige une inoccupation d'une année entière, à l'exclusion des immeubles loués, des déclarations trimestrielles et une attestation de paiement ; il est accordé après procès-verbal de deux agents et avis de la commission de révision, et s'impute sur la taxe de l'année suivante. Le dégrèvement total exige une aide permanente de l'État ou d'une collectivité, et la demande suspend le recouvrement [@decret98-1254, art. 2-12]. La loi de finances pour 1999 exonère en outre les bénéficiaires du dégrèvement total de la taxe perçue au profit du Fonds national d'amélioration de l'habitat, avec effet au 1er janvier 1997 [@lf-1999, art. 52].
-
-La loi de finances pour 2003 abroge le dégrèvement partiel à compter du 1er janvier 2003 ; seul demeure le dégrèvement total [@lf-2003, art. 77-78].
-
-### 2002-2007 : sanctions, abandons et obligations déclaratives {#sec-fl-immeubles-recouvrement}
-
-La pénalité de retard est réduite deux fois : de 1,25 % à 1 % par mois au 1er janvier 2002 [@loi2001-123-lf2002, art. 87], puis à 0,75 % au 1er janvier 2007, désormais à compter du 1er janvier de l'année qui suit celle de l'exigibilité [@lf-2007, art. 54].
-
-La loi n° 2002-76 du 23 juillet 2002, exécutoire le 1er août 2002, abandonne les anciennes taxes locatives et d'assainissement de 1996 et des années antérieures dont le principal ne dépasse pas 30 dinars par article de rôle, avec la contribution correspondante au Fonds national d'amélioration de l'habitat. Elle abandonne aussi les pénalités et les frais de poursuite sur la taxe de 2001 et des années antérieures, contre le paiement de 20 % du principal et un calendrier de deux ans et demi, la mesure restant ouverte jusqu'à la fin d'octobre 2002 [@loi2002-76, art. 1-2].
-
-Au 1er janvier 2005, la loi de finances pour 2005 refond le prélèvement au profit du Fonds national d'amélioration de l'habitat en une [contribution](#g-contribution-fnah) égale à 4 % de l'assiette de la taxe sur les immeubles bâtis, pour les immeubles d'habitation, recouvrée et contentieuse selon les règles de cette taxe ; les immeubles exonérés par l'article 3 du code et les bénéficiaires du dégrèvement total en sont exonérés. La même loi recrée le fonds comme fonds spécial du Trésor et abroge le décret beylical du 23 août 1956 [@lf-2005, art. 11-16]. Pour les terrains non bâtis, elle remplace le premier tiret de l'article 32 par trois exonérations : les jardins enclos attenant aux immeubles individuels, dans la limite de 1 000 m² ; les jardins attenant aux immeubles collectifs ; les terrains enclos et boisés attenant aux immeubles [@lf-2005, art. 82]. Trois ans plus tôt, la loi de finances pour 2002 avait exonéré pendant deux ans les terrains aménagés acquis par les promoteurs immobiliers [@loi2001-123-lf2002, art. 43].
-
-Au 1er janvier 2006, l'attestation de paiement devient exigible pour le permis de bâtir ou de clôture, pour le changement d'affectation d'un logement en local commercial ou professionnel et pour l'arrêté de lotissement ; l'édition arabe nomme désormais le rôle « جدول تحصيل » au lieu de « زمام », et le recouvrement se fait au vu d'un extrait du rôle individuel visé par le receveur des finances [@lf-2006, art. 53, 56 et 57].
-
-La loi n° 2007-53 du 8 août 2007, exécutoire le 16 août 2007, ajoute un article 17 bis : le propriétaire, le locataire et l'occupant d'un immeuble bâti, même inachevé, déclarent à la collectivité toute location ou occupation dans les huit jours, sauf l'occupation par un ascendant ou un descendant du propriétaire ; les gestionnaires pour compte de tiers y sont tenus aussi. Le manquement est puni d'une amende égale à trois fois le prix de référence maximum du mètre carré de la catégorie supérieure, dont le locataire ou l'occupant est solidaire [@loi2007-53, art. 1-3].
-
-### 2009-2014 : l'attestation de paiement étendue {#sec-fl-immeubles-attestation}
-
-L'attestation de paiement est exigée, au 1er janvier 2009, pour l'inscription au rôle, l'habitation principale, le procès-verbal de récolement et le permis d'occuper [@lf-2009, art. 33], puis, au 1er janvier 2013, pour la légalisation de signature des actes de mutation, d'hypothèque, de location ou de jouissance d'immeubles et pour le permis de démolir [@lf-2013, art. 55]. La loi de finances complémentaire pour 2012, exécutoire le 24 mai 2012, abandonne la taxe et la contribution au fonds de 2007 et des années antérieures dont le reliquat ne dépasse pas 50 dinars par an, et la moitié des montants de 2010 et des années antérieures dont le reliquat ne dépasse pas 100 dinars, à condition de payer la taxe de 2012 et de souscrire un calendrier de trois ans au plus [@lfc-2012, art. 17].
-
-Au 1er janvier 2014, les immeubles et les terrains de l'État, des collectivités et des établissements publics administratifs transférés dans une émission de *sukuk* sont exonérés des deux taxes [@lf-2014, art. 30]. La même loi institue un impôt foncier d'État, calculé sur ces deux taxes ; il est exposé, avec sa suppression la même année, dans le volume [« La fiscalité »](../fiscalite/_impot_fortune.html#sec-fortune-avant).
-
-### 2019-2025 : abandons de créances et pénalités {#sec-fl-immeubles-abandons}
-
-Quatre lois de finances abandonnent des arriérés, sous condition de paiement de l'année en cours :
-
-- la loi de finances pour 2019 abandonne la taxe sur les immeubles bâtis et la contribution au fonds de 2016 et des années antérieures, pénalités et frais compris, à condition de régler 2017 et 2018 avant la fin de 2019 [@loi2018-56-lf2019, art. 72] ;
-- la loi de finances pour 2024 abandonne, pour les personnes physiques, ces deux prélèvements et la taxe sur les terrains non bâtis de 2021 et des années antérieures, et, pour les personnes morales, les seules pénalités de 2023 et des années antérieures [@lf-2024, art. 59] ;
-- la loi de finances pour 2025 renouvelle l'abandon des arriérés de 2021 et des années antérieures, et des pénalités de 2024 et des années antérieures, contre le règlement de 2022 à 2024 ou un calendrier dont la première tranche échoit avant le 1er janvier 2026 [@lf-2025, art. 76].
-
-La pénalité de retard est plafonnée au principal à compter du 1er janvier 2022 [@lf-2022, art. 68]. Le décret-loi portant loi de finances pour 2023 la porte de 0,75 % à 1,25 % par mois au 1er janvier 2023, mais son paragraphe 10 écarte l'ensemble de l'article pour les sommes de déclarations déposées spontanément, de vérifications notifiées et de taxations d'office notifiées avant le 1er avril 2023 [@lf-2023, art. 59]. La portée de cette réserve pour une taxe recouvrée par voie de rôle n'est pas établie ici.
-
-<!-- TODO (rédacteur) : trancher la portée du § 10 de l'art. 59 du décret-loi n° 2022-79 pour la TIB, recouvrée par voie de rôle (note documentaire, § 10.2, point 2). -->
-
-| Date d'effet | Pénalité de retard (art. 19 § I) | Texte |
+| Élément | Taxe sur les immeubles bâtis | Taxe sur les terrains [non bâtis]{.insecable} |
 |---|---|---|
-| 1er janvier 1997 | 1,25 % par mois | [@loi97-11, art. 19] |
-| 1er janvier 2002 | 1 % par mois | [@loi2001-123-lf2002, art. 87] |
-| 1er janvier 2007 | 0,75 % par mois, à compter du 1er janvier de l'année suivant l'exigibilité | [@lf-2007, art. 54] |
-| 1er janvier 2022 | inchangée, plafonnée au principal | [@lf-2022, art. 68] |
-| 1er janvier 2023 | 1,25 % par mois, sous la réserve du § 10 de l'article | [@lf-2023, art. 59] |
+| Redevable | propriétaire ou usufruitier, à défaut possesseur ou occupant ([depuis 1997](#r-fl-imm-1997-champ)) | propriétaire ou usufruitier, à défaut possesseur ou occupant ([depuis 1997](#r-fl-imm-1997-tnb-champ)) |
+| Assiette | 2 % du prix de référence du mètre carré couvert, multiplié par la superficie couverte ([depuis 1997](#r-fl-imm-1997-assiette)) | valeur vénale réelle du terrain ; à défaut, superficie ([depuis 1997](#r-fl-imm-1997-tnb-taux)) |
+| Taux | 8, 10, 12 ou 14 % de l'assiette, selon le nombre de services (@tbl-fl-tib-taux) | 0,3 % de la valeur vénale ; à défaut, tarif au mètre carré |
+| Barème en dinars | prix de référence : de 100 à 356 D par mètre carré selon la catégorie, [depuis le 1^er^ janvier 2017](#r-fl-imm-prix-2017) (@tbl-fl-tib-prix-reference) | tarif : 0,385 D, 0,115 D ou 0,040 D par mètre carré selon la zone, [depuis le 1^er^ janvier 2017](#r-fl-imm-tarif-2017) (@tbl-fl-tnb-tarif) |
+| Exonérations | immeubles publics non loués, lieux de culte, États étrangers et organismes internationaux, associations ; biens publics transférés dans une émission de *sukuk* ([depuis 2014](#r-fl-imm-exo-2014)) | catégories de 1997, modifiées [en 2002](#r-fl-imm-exo-2002), [en 2005](#r-fl-imm-exo-2005) et [en 2014](#r-fl-imm-exo-2014) |
+| Dégrèvement | total, pour les contribuables aidés par l'État ou une collectivité ; le dégrèvement partiel est supprimé [depuis 2003](#r-fl-imm-degrevement-2003) | — |
+| Contribution adossée | 4 % de l'assiette, pour les immeubles d'habitation, au profit du Fonds national d'amélioration de l'habitat ([depuis 2005](#r-fl-imm-fnah-2005)) | — |
+| Pénalité de retard | 1,25 % par mois, dans la limite du principal ([depuis 2023](#r-fl-imm-penalite-2023)), sous la réserve du paragraphe 10 de l'article (@sec-fl-immeubles-penalite) | la même |
+
+: Les deux taxes sur les immeubles : les règles en vigueur en 2025 {#tbl-fl-immeubles-etat}
+
+- **La collectivité qui encaisse** est celle du lieu de l'immeuble ; elle ne fixe que le prix de référence, dans la fourchette du décret, et accorde le dégrèvement.
+- **L'attestation de paiement** conditionne les permis et les actes énumérés de 2006 à 2013, du permis de bâtir au permis de démolir (@tbl-fl-immeubles-attestation).
+- **Toute location** d'un immeuble bâti est déclarée à la collectivité dans les huit jours, depuis 2007 (@sec-fl-immeubles-recouvrement).
+
+### Les barèmes fixés par décret {#sec-fl-immeubles-baremes}
+
+Le code ne chiffre pas lui-même les deux grandeurs en dinars qui déterminent le montant de ces taxes : le prix de référence du mètre carré couvert, pour les immeubles bâtis, et le tarif au mètre carré, pour les terrains non bâtis dont la valeur vénale fait défaut. Il les renvoie l'un et l'autre à un décret pris tous les trois ans. Trois générations de décrets sont identifiées, en 1997, 2007 et 2017 ; chacune abroge la précédente.
+
+#### Le prix de référence du mètre carré couvert {#sec-fl-tib-prix-reference}
+
+Le prix de référence du mètre carré couvert est le prix au mètre carré sur lequel se calcule l'assiette de la taxe sur les immeubles bâtis. Le décret fixe, pour chacune des quatre catégories de superficie, un minimum et un maximum ; dans ces limites, la collectivité fixe son prix par arrêté motivé, selon les services rendus (@tbl-fl-tib-prix-reference).
+
+| Catégorie<br>(superficie couverte) | Minimum<br>[1997](#r-fl-imm-prix-1997)<br>(D/m²) | Maximum<br>[1997](#r-fl-imm-prix-1997)<br>(D/m²) | Minimum<br>[2008](#r-fl-imm-prix-2008)<br>(D/m²) | Maximum<br>[2008](#r-fl-imm-prix-2008)<br>(D/m²) | Minimum<br>[2017](#r-fl-imm-prix-2017)<br>(D/m²) | Maximum<br>[2017](#r-fl-imm-prix-2017)<br>(D/m²) |
+|---|--:|--:|--:|--:|--:|--:|
+| 1 : jusqu'à 100 m² | 100 | 150 | 100 | 162 | 100 | 178 |
+| 2 : de 100 à 200 m² | 151 | 200 | 163 | 216 | 163 | 238 |
+| 3 : de 200 à 400 m² | 201 | 250 | 217 | 270 | 217 | 297 |
+| 4 : plus de 400 m² | 251 | 300 | 271 | 324 | 271 | 356 |
+
+: Prix de référence du mètre carré couvert de la taxe sur les immeubles bâtis : minimum et maximum par catégorie, à compter du 13 mars 1997, du 1^er^ janvier 2008 et du 1^er^ janvier 2017 {#tbl-fl-tib-prix-reference}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré quand les fourchettes seront datées et sourcées dans la base de paramètres ; la forme compacte retenue ici (une colonne par grandeur et par date) est celle de l'état du droit à des dates repères. -->
+
+- **Le minimum de la première catégorie n'a pas bougé** : 100 D par mètre carré depuis 1997.
+- **Au 1^er^ janvier 2008**, minimums et maximums sont relevés, sauf ce minimum : de 8 % pour les autres bornes.
+- **Au 1^er^ janvier 2017**, seuls les maximums montent, de 10 %.
+- **Depuis 2017, les fourchettes se chevauchent** : le maximum d'une catégorie dépasse le minimum de la suivante, dans les deux éditions du *Journal officiel*.
+
+Les arrêtés par lesquels chaque collectivité fixe son prix dans la fourchette ne sont pas identifiés ici.
+
+<!-- TODO (documentaliste) : chercher les arrêtés communaux fixant le prix de référence (Journal officiel des collectivités locales, publications des communes), hors du corpus du JORT. -->
+
+:::: {.chronologie-repliable titre="Prix de référence du mètre carré couvert : les trois décrets, dates d'effet, abrogations et pages, 1997-2017"}
+
+| Date d'effet | Portée | Texte et article | Ce que fait le décret |
+|---|---|---|---|
+| []{#r-fl-imm-prix-1997}[13 mars 1997]{.insecable} | point de départ | décret n° 97-431 du 3 mars 1997, p. 389 [@decret97-431] | premières fourchettes ; sans clause d'effet, exécutoire le 13 mars 1997 |
+| []{#r-fl-imm-prix-2008}[1^er^ janvier 2008]{.insecable} | étape — de 1997 | décret n° 2007-1185 du 14 mai 2007 ; effet, art. 3 [@decret2007-1185, art. 1 et 3, p. 1646-1647] | fourchettes relevées, sauf le minimum de la première catégorie ; abroge le décret de 1997 |
+| []{#r-fl-imm-prix-2017}[1^er^ janvier 2017]{.insecable} | étape — de 1997 | décret gouvernemental n° 2017-397 du 28 mars 2017 ; effet, art. 3 [@decret2017-397, art. 1 et 3, p. 1191-1192] | maximums relevés, minimums inchangés ; abroge le décret de 2007 |
+
+: Les trois décrets du prix de référence du mètre carré couvert {#tbl-fl-tib-prix-reference-decrets}
+
+L'obligation de réviser les fourchettes tous les trois ans vient du code [@loi97-11, art. 4].
+
+::::
+
+#### Le tarif au mètre carré des terrains non bâtis {#sec-fl-tnb-tarif}
+
+Le tarif au mètre carré sert à calculer la taxe sur les terrains non bâtis quand la valeur vénale réelle du terrain fait défaut : la taxe est alors égale au tarif de la zone multiplié par la superficie. Il distingue trois zones du plan d'aménagement urbain selon leur densité : haute (« ذات كثافة عمرانية مرتفعة »), moyenne et basse (@tbl-fl-tnb-tarif).
+
+| Zone du plan d'aménagement urbain | Tarif<br>[1997](#r-fl-imm-tarif-1997)<br>(D/m²) | Tarif<br>[2008](#r-fl-imm-tarif-2008)<br>(D/m²) | Tarif<br>[2017](#r-fl-imm-tarif-2017)<br>(D/m²) |
+|---|--:|--:|--:|
+| haute densité | 0,300 | 0,318 | 0,385 |
+| moyenne densité | 0,090 | 0,095 | 0,115 |
+| basse densité | 0,030 | 0,032 | 0,040 |
+
+: Tarif au mètre carré de la taxe sur les terrains non bâtis, par zone, à compter du 13 mars 1997, du 1^er^ janvier 2008 et du 1^er^ janvier 2017 {#tbl-fl-tnb-tarif}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré quand les tarifs seront datés et sourcés dans la base de paramètres ; même forme compacte, une colonne par date. -->
+
+- **Un rapport de un à dix** sépare la zone de basse densité de la zone de haute densité, aux trois dates.
+- **Le relèvement de 2008** est de 6 % environ ; **celui de 2017**, de 21 à 25 %.
+
+:::: {.chronologie-repliable titre="Tarif au mètre carré des terrains non bâtis : les trois décrets, dates d'effet et pages, 1997-2017"}
+
+| Date d'effet | Portée | Texte et article | Ce que fait le décret |
+|---|---|---|---|
+| []{#r-fl-imm-tarif-1997}[13 mars 1997]{.insecable} | point de départ | décret n° 97-432 du 3 mars 1997, p. 389 [@decret97-432] | premier tarif ; sans clause d'effet, exécutoire le 13 mars 1997 |
+| []{#r-fl-imm-tarif-2008}[1^er^ janvier 2008]{.insecable} | étape — de 1997 | décret n° 2007-1186 du 14 mai 2007 ; effet, art. 3 [@decret2007-1186, art. 3, p. 1647] | tarif relevé dans les trois zones ; abroge le décret de 1997 |
+| []{#r-fl-imm-tarif-2017}[1^er^ janvier 2017]{.insecable} | étape — de 1997 | décret gouvernemental n° 2017-396 du 28 mars 2017 ; effet, art. 3 [@decret2017-396, art. 3, p. 1190-1191] | tarif relevé dans les trois zones ; abroge le décret de 2007 |
+
+: Les trois décrets du tarif au mètre carré des terrains non bâtis {#tbl-fl-tnb-tarif-decrets}
+
+L'obligation de réviser le tarif tous les trois ans vient du code [@loi97-11, art. 33].
+
+::::
+
+## Dégrèvement, contribution au fonds de l'habitat, pénalité et abandons {#sec-fl-immeubles-dispositifs}
+
+Quatre dispositions aménagent les deux taxes pour un public ou une situation : le dégrèvement, pour les contribuables aidés ; la contribution au Fonds national d'amélioration de l'habitat, prélèvement adossé à l'assiette de la taxe sur les immeubles bâtis et versé à un autre bénéficiaire ; la pénalité de retard et les abandons d'arriérés, pour les contribuables qui ne paient pas à l'échéance.
+
+### Le dégrèvement {#sec-fl-immeubles-degrevement}
+
+Le dégrèvement est la remise, totale ou partielle, de la taxe sur les immeubles bâtis due par un contribuable. Depuis 2003, un seul subsiste : le dégrèvement total, pour les contribuables à faible revenu aidés par l'État ou une collectivité (@tbl-fl-immeubles-degrevement).
+
+| Dégrèvement | Taux<br>(% de la taxe) | Bénéficiaire | En vigueur |
+|---|--:|---|---|
+| partiel | 25 | propriétaire d'un immeuble inoccupé pendant une année entière, immeubles loués exclus | du [[1^er^ janvier 1997]{.insecable}](#r-fl-imm-degrevement-1997) au [[31 décembre 2002]{.insecable}](#r-fl-imm-degrevement-2003) |
+| total | 100 | contribuable à faible revenu bénéficiant d'une aide permanente de l'État ou d'une collectivité | depuis le [[1^er^ janvier 1997]{.insecable}](#r-fl-imm-degrevement-1997) |
+
+: Les deux dégrèvements de la taxe sur les immeubles bâtis {#tbl-fl-immeubles-degrevement}
+
+- **Deux dégrèvements en 1997.** [Le code](#r-fl-imm-degrevement-1997) en institue deux, et renvoie leurs modalités à un décret.
+- **Organisés en 1998.** [Le décret du 8 juin 1998](#r-fl-imm-degrevement-1998), exécutoire le 24 juin 1998, fixe les conditions de chacun : pour le dégrèvement partiel, des déclarations trimestrielles et une attestation de paiement ; pour le dégrèvement total, une aide permanente, la demande suspendant le recouvrement.
+- **Le dégrèvement partiel supprimé en 2003.** [La loi de finances pour 2003](#r-fl-imm-degrevement-2003) l'abroge à compter du 1^er^ janvier 2003 ; seul demeure le dégrèvement total.
+- **Qui décide.** Le président de la collectivité accorde le dégrèvement par arrêté, sur délibération du conseil et après avis de la commission de révision. C'est, avec le choix du prix de référence, l'une des deux décisions que la loi laisse à la collectivité.
+
+Les bénéficiaires du dégrèvement total sont aussi exonérés du prélèvement au profit du Fonds national d'amélioration de l'habitat (@sec-fl-immeubles-fnah).
+
+:::: {.chronologie-repliable titre="Dégrèvement de la taxe sur les immeubles bâtis : conditions et textes, date par date, 1997-2003"}
+
+| Date d'effet | Portée | Texte et article | Avant → après |
+|---|---|---|---|
+| []{#r-fl-imm-degrevement-1997}[1^er^ janvier 1997]{.insecable} | point de départ | code, art. 6 [@loi97-11, art. 6] | — → dégrèvement partiel de 25 %, après une année entière d'inoccupation ; dégrèvement total pour les contribuables à faible revenu bénéficiant de l'aide de l'État ou des collectivités ; arrêté du président de la collectivité, sur délibération du conseil et après avis de la commission de révision ; modalités renvoyées à un décret |
+| []{#r-fl-imm-degrevement-1998}[24 juin 1998]{.insecable} | étape — de 1997 | décret n° 98-1254 du 8 juin 1998 [@decret98-1254, art. 2-12, p. 1307-1308] | modalités des deux dégrèvements de l'art. 6. Partiel : inoccupation d'une année entière, à l'exclusion des immeubles loués ; déclarations trimestrielles et attestation de paiement ; procès-verbal de deux agents et avis de la commission de révision ; imputation sur la taxe de l'année suivante. Total : aide permanente de l'État ou d'une collectivité ; la demande suspend le recouvrement |
+| []{#r-fl-imm-degrevement-1999}[1^er^ janvier 1997]{.insecable}, clause propre de l'article | ajustement | loi de finances pour 1999 [@lf-1999, art. 52, p. 2507] | hors code : bénéficiaires du dégrèvement total exonérés de la taxe au profit du Fonds national d'amélioration de l'habitat |
+| []{#r-fl-imm-degrevement-2003}[1^er^ janvier 2003]{.insecable} | **rupture** — propre au dégrèvement | loi de finances pour 2003 [@lf-2003, art. 77-78, p. 2887] | art. 6 § I abrogé : fin du dégrèvement partiel de 25 % ; § III limité au dégrèvement total |
+
+: Le dégrèvement de la taxe sur les immeubles bâtis : textes, 1997-2003 {#tbl-fl-immeubles-degrevement-textes}
+
+::::
+
+### La contribution au Fonds national d'amélioration de l'habitat {#sec-fl-immeubles-fnah}
+
+La [contribution](#g-contribution-fnah) au Fonds national d'amélioration de l'habitat est un prélèvement adossé à la taxe sur les immeubles bâtis : depuis 2005, les immeubles d'habitation supportent, en plus de la taxe, 4 % de la même assiette, qui vont à un fonds spécial du Trésor et non à la collectivité (@tbl-fl-immeubles-fnah).
+
+| Depuis le | Prélèvement | Assiette | Taux<br>(% de l'assiette) | Exonérés |
+|---|---|---|---|---|
+| [[1^er^ janvier 1997]{.insecable}](#r-fl-imm-fnah-1997) | taxe au profit du fonds | assiette de la taxe sur les immeubles bâtis, à la place de la valeur locative | non établi ici | [bénéficiaires du dégrèvement total](#r-fl-imm-fnah-1999) |
+| [[1^er^ janvier 2005]{.insecable}](#r-fl-imm-fnah-2005) | contribution au profit du fonds | assiette de la taxe sur les immeubles bâtis, pour les immeubles d'habitation | 4 | immeubles exonérés de la taxe ; bénéficiaires du dégrèvement total |
+
+: Le prélèvement au profit du Fonds national d'amélioration de l'habitat, avant et depuis 2005 {#tbl-fl-immeubles-fnah}
+
+<!-- TODO (documentaliste) : taux et régime de la taxe au profit du Fonds national d'amélioration de l'habitat avant 2005 (décret beylical du 23 août 1956, abrogé par la loi de finances pour 2005) ; produit de la contribution depuis 2005 : aucune série identifiée (plan de l'architecte, § 5.2). -->
+
+- **Avant 2005, une taxe au profit du fonds.** Elle existe avant le code : [la loi de 1997](#r-fl-imm-fnah-1997) se borne à remplacer, dans les textes du fonds, la « valeur locative » par l'« assiette de la taxe sur les immeubles bâtis ». [La loi de finances pour 1999](#r-fl-imm-fnah-1999) en exonère les bénéficiaires du dégrèvement total, avec effet au 1^er^ janvier 1997.
+- **La refonte de 2005.** [Au 1^er^ janvier 2005](#r-fl-imm-fnah-2005), le prélèvement devient une contribution égale à 4 % de l'assiette de la taxe sur les immeubles bâtis, pour les immeubles d'habitation. La même loi recrée le fonds comme fonds spécial du Trésor et abroge le décret beylical du 23 août 1956.
+- **Les règles de la taxe.** La contribution est recouvrée et contestée selon les règles de la taxe sur les immeubles bâtis ; les immeubles que l'article 3 du code exonère et les bénéficiaires du dégrèvement total en sont exonérés.
+- **Comprise dans les abandons.** Les lois qui abandonnent des arriérés de taxe abandonnent avec eux la contribution correspondante (@sec-fl-immeubles-abandons).
+
+:::: {.chronologie-repliable titre="Contribution au Fonds national d'amélioration de l'habitat : textes, date par date, 1997-2005"}
+
+| Date d'effet | Portée | Texte et article | Avant → après |
+|---|---|---|---|
+| []{#r-fl-imm-fnah-1997}[1^er^ janvier 1997]{.insecable} | point de départ | loi n° 97-11 [@loi97-11, art. 5 de la loi] | dans les textes du fonds, « valeur locative » → « assiette de la taxe sur les immeubles bâtis » |
+| []{#r-fl-imm-fnah-1999}[1^er^ janvier 1997]{.insecable}, clause propre de l'article | ajustement | loi de finances pour 1999 [@lf-1999, art. 52] | hors code : bénéficiaires du dégrèvement total exonérés de la taxe au profit du Fonds national d'amélioration de l'habitat |
+| []{#r-fl-imm-fnah-2005}[1^er^ janvier 2005]{.insecable} | **rupture** — propre à la contribution | loi de finances pour 2005 [@lf-2005, art. 11-16, p. 3433] | hors code : contribution au Fonds national d'amélioration de l'habitat, 4 % de l'assiette de la taxe sur les immeubles bâtis, pour les immeubles d'habitation ; fonds recréé comme fonds spécial du Trésor ; décret beylical du 23 août 1956 abrogé |
+
+: La contribution au Fonds national d'amélioration de l'habitat : textes, 1997-2005 {#tbl-fl-immeubles-fnah-textes}
+
+::::
+
+### La pénalité de retard {#sec-fl-immeubles-penalite}
+
+La pénalité de retard est la majoration, comptée par mois, que supporte le contribuable qui ne paie pas la taxe à l'échéance ; elle vaut pour la taxe sur les immeubles bâtis et, par renvoi, pour la taxe sur les terrains non bâtis. De 1,25 % par mois en 1997, elle descend à 1 % en 2002 et à 0,75 % en 2007, puis revient à 1,25 % en 2023 (@tbl-fl-penalite-retard).
+
+| Date d'effet | Taux<br>(% par mois) | Ce qui change par ailleurs |
+|---|--:|---|
+| [[1^er^ janvier 1997]{.insecable}](#r-fl-imm-penalite-1997) | 1,25 | — |
+| [[1^er^ janvier 2002]{.insecable}](#r-fl-imm-penalite-2002) | 1 | — |
+| [[1^er^ janvier 2007]{.insecable}](#r-fl-imm-penalite-2007) | 0,75 | la pénalité court à compter du 1^er^ janvier de l'année suivant l'exigibilité |
+| [[1^er^ janvier 2022]{.insecable}](#r-fl-imm-penalite-2022) | 0,75 | la pénalité est plafonnée au principal |
+| [[1^er^ janvier 2023]{.insecable}](#r-fl-imm-penalite-2023) | 1,25 | sous la réserve du paragraphe 10 de l'article |
 
 : Pénalité de retard de la taxe sur les immeubles bâtis, applicable aussi à la taxe sur les terrains non bâtis {#tbl-fl-penalite-retard}
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré quand la pénalité sera datée et sourcée dans la base de paramètres. -->
+<!-- TODO (rédacteur) : remplacer par un tableau engendré quand la pénalité sera datée et sourcée dans la base de paramètres ; figure en escalier (figtools.fig_escalier) après versement (plan de l'architecte, § 5.2 et 6). -->
 
-## Les textes, en un tableau {#sec-fl-immeubles-textes}
+- **Deux baisses, puis un retour au taux d'origine.** La pénalité est réduite [au 1^er^ janvier 2002](#r-fl-imm-penalite-2002), puis [au 1^er^ janvier 2007](#r-fl-imm-penalite-2007) ; [le décret-loi portant loi de finances pour 2023](#r-fl-imm-penalite-2023) la reporte de 0,75 % à 1,25 % par mois.
+- **Un plafond depuis 2022.** [À compter du 1^er^ janvier 2022](#r-fl-imm-penalite-2022), la pénalité ne peut dépasser le principal.
+- **Une réserve dont la portée n'est pas établie.** Le paragraphe 10 de l'article de 2023 écarte l'ensemble de l'article pour les sommes de déclarations déposées spontanément, de vérifications notifiées et de taxations d'office notifiées avant le 1^er^ avril 2023. La portée de cette réserve pour une taxe recouvrée par voie de rôle n'est pas établie ici.
 
-| Texte | Article | Changement | Date d'effet |
+<!-- TODO (rédacteur) : trancher la portée du § 10 de l'art. 59 du décret-loi n° 2022-79 pour la TIB, recouvrée par voie de rôle (note documentaire, § 10.2, point 2). -->
+
+:::: {.chronologie-repliable titre="Pénalité de retard des taxes sur les immeubles : textes, date par date, 1997-2023"}
+
+| Date d'effet | Portée | Texte et article | Avant → après |
 |---|---|---|---|
-| Loi de finances pour 1999 [@lf-1999] | 52 | Hors code : bénéficiaires du dégrèvement total exonérés de la taxe au profit du Fonds national d'amélioration de l'habitat | 1er janvier 1997, clause propre de l'article |
-| Décret n° 98-1254 [@decret98-1254] | 2-12 | Modalités des dégrèvements partiel et total de l'art. 6 | 24 juin 1998 |
-| Loi de finances pour 2002 [@loi2001-123-lf2002] | 43 | Art. 32 : exonération de deux ans des terrains aménagés acquis par les promoteurs immobiliers | 1er janvier 2002 |
-| idem | 87 | Art. 19 § I : pénalité de retard 1,25 % → 1 % par mois | 1er janvier 2002 |
-| Loi n° 2002-76 [@loi2002-76] | 1-2 | Hors code : abandon des anciennes taxes de 1996 et antérieures ≤ 30 D, et des pénalités de 2001 et antérieures | 1er août 2002 |
-| Loi de finances pour 2003 [@lf-2003] | 77-78 | Art. 6 § I abrogé : fin du dégrèvement partiel de 25 % ; § III limité au dégrèvement total | 1er janvier 2003 |
-| Loi de finances pour 2005 [@lf-2005] | 11-16 | Hors code : contribution au Fonds national d'amélioration de l'habitat, 4 % de l'assiette | 1er janvier 2005 |
-| idem | 82 | Art. 32 : le 1er tiret devient trois exonérations de jardins et terrains boisés | 1er janvier 2005 |
-| Loi de finances pour 2006 [@lf-2006] | 53, 56, 57 | Art. 13 : attestation pour permis de bâtir, changement d'affectation, lotissement ; rôle dit « جدول تحصيل » ; extrait de rôle individuel | 1er janvier 2006 |
-| Loi de finances pour 2007 [@lf-2007] | 54 | Art. 19 § I : 1 % → 0,75 % par mois, à compter de l'année suivant l'exigibilité | 1er janvier 2007 |
-| Loi n° 2007-53 [@loi2007-53] | 1-3 | Art. 17 bis : déclaration des locations dans les 8 jours ; art. 19 : amende de trois fois le prix de référence maximum | 16 août 2007 |
-| Loi de finances pour 2009 [@lf-2009] | 33 | Art. 13 : attestation pour l'inscription au rôle, l'habitation principale, le récolement et le permis d'occuper | 1er janvier 2009 |
-| Loi de finances complémentaire pour 2012 [@lfc-2012] | 17 | Hors code : abandon des reliquats de 2007 et antérieures ≤ 50 D par an, et de moitié de 2010 et antérieures ≤ 100 D | 24 mai 2012 |
-| Loi de finances pour 2013 [@lf-2013] | 55 | Art. 13 : attestation pour la légalisation de signature des actes immobiliers et le permis de démolir | 1er janvier 2013 |
-| Loi de finances pour 2014 [@lf-2014] | 30 | Art. 3 et 32 : exonération des biens publics transférés dans une émission de *sukuk* | 1er janvier 2014 |
-| Loi de finances pour 2019 [@loi2018-56-lf2019] | 72 | Hors code : abandon de la taxe et de la contribution de 2016 et antérieures | 1er janvier 2019 |
-| Loi de finances pour 2022 [@lf-2022] | 68 | Art. 19 § I : pénalités plafonnées au principal | 1er janvier 2022 |
-| Loi de finances pour 2023 [@lf-2023] | 59 | Art. 19 § I : 0,75 % → 1,25 % par mois, sous la réserve du § 10 | 1er janvier 2023 |
-| Loi de finances pour 2024 [@lf-2024] | 59 | Hors code : abandon, pour les personnes physiques, de 2021 et antérieures, taxe sur les terrains non bâtis comprise | 1er janvier 2024 |
-| Loi de finances pour 2025 [@lf-2025] | 76 | Hors code : nouvel abandon de 2021 et antérieures, et des pénalités de 2024 et antérieures | 1er janvier 2025 |
+| []{#r-fl-imm-penalite-1997}[1^er^ janvier 1997]{.insecable} | point de départ | code, art. 19 [@loi97-11, art. 19] | — → 1,25 % par mois |
+| []{#r-fl-imm-penalite-2002}[1^er^ janvier 2002]{.insecable} | ajustement | loi de finances pour 2002 [@loi2001-123-lf2002, art. 87, p. 4260] | art. 19 § I : pénalité de retard 1,25 % → 1 % par mois |
+| []{#r-fl-imm-penalite-2007}[1^er^ janvier 2007]{.insecable} | ajustement | loi de finances pour 2007 [@lf-2007, art. 54, p. 4389] | art. 19 § I : 1 % → 0,75 % par mois, à compter de l'année suivant l'exigibilité |
+| []{#r-fl-imm-penalite-2022}[1^er^ janvier 2022]{.insecable} | ajustement | décret-loi portant loi de finances pour 2022 [@lf-2022, art. 68, p. 3106] | art. 19 § I : pénalités plafonnées au principal |
+| []{#r-fl-imm-penalite-2023}[1^er^ janvier 2023]{.insecable} | ajustement | décret-loi portant loi de finances pour 2023 [@lf-2023, art. 59] | art. 19 § I : 0,75 % → 1,25 % par mois, sous la réserve du § 10 |
 
-: Les textes qui ont modifié la taxe sur les immeubles bâtis, la taxe sur les terrains non bâtis et leurs règles communes depuis 1997 {#tbl-fl-immeubles-textes}
+: La pénalité de retard des taxes sur les immeubles : textes, 1997-2023 {#tbl-fl-penalite-retard-textes}
 
-Les dates d'effet sont celles que fixe chaque loi de finances pour l'ensemble de ses dispositions, sauf mention contraire.
+<!-- TODO (documentaliste) : relire l'art. 88 de la loi de finances pour 2002 — la même loi ramène la pénalité de la taxe sur les immeubles bâtis de 1,25 % à 1 % (art. 87) et celle des commissionnaires de 1,25 % à 0,75 % (art. 88) ; l'écart mérite confirmation (plan de l'architecte, § 7, point 9). -->
 
-## La longue période {#sec-fl-immeubles-longue-periode}
+::::
 
-Sur près de trente ans, les textes identifiés laissent l'assiette et les taux de ces deux taxes à leur état de 1997 ; seuls les barèmes en dinars ont été relevés, deux fois, en 2008 et en 2017. Le rendement de chacune, son taux de recouvrement et la part qu'elle représente dans les ressources des collectivités ne sont pas encore réunis ici. Ils le seront au chapitre de la longue période, qui suivra ces grandeurs dans la durée.
+### Les abandons d'arriérés {#sec-fl-immeubles-abandons}
 
-## Notations {#sec-fl-immeubles-notations}
+Un abandon d'arriérés est la renonciation, par la loi, à des taxes ou à des pénalités d'années passées restées impayées. Cinq lois, de 2002 à 2025, en accordent, chacune à la condition que le contribuable paie une part du principal ou règle les années récentes (@tbl-fl-immeubles-abandons). Le dispositif naît de la loi de 2002 (@sec-fl-immeubles-abandon-2002).
 
-| Symbole | Grandeur | Section |
-|---|---|---|
-| $T$ | montant annuel de la taxe | [@sec-fl-tib-1997] |
-| $\tau$ | taux de la taxe sur les immeubles bâtis | [@sec-fl-tib-1997] |
-| $\alpha$ | taux d'assiette appliqué au prix de référence | [@sec-fl-tib-1997] |
-| $p$ | prix de référence du mètre carré couvert | [@sec-fl-tib-1997] |
-| $s$ | superficie couverte de l'immeuble | [@sec-fl-tib-1997] |
-| $\theta$ | taux appliqué à la valeur vénale du terrain | [@sec-fl-tnb-1997] |
-| $V$ | valeur vénale réelle du terrain | [@sec-fl-tnb-1997] |
-| $q$ | tarif au mètre carré de la zone | [@sec-fl-tnb-1997] |
-| $\sigma$ | superficie du terrain | [@sec-fl-tnb-1997] |
+| Loi | Ce qui est abandonné | Années<br>[couvertes]{.insecable} | Plafond | Condition |
+|---|---|---|---|---|
+| [loi du 23 juillet 2002](#r-fl-imm-abandon-2002) | anciennes taxes locatives et d'assainissement, et contribution correspondante au Fonds national d'amélioration de l'habitat | 1996 et antérieures | 30 D de principal par article de rôle | — |
+| la même | pénalités et frais de poursuite de la taxe sur les immeubles bâtis | 2001 et antérieures | — | payer 20 % du principal ; calendrier de deux ans et demi ; avant la fin d'octobre 2002 |
+| [loi de finances complémentaire pour 2012](#r-fl-imm-abandon-2012) | taxe sur les immeubles bâtis et contribution au fonds | 2007 et antérieures | reliquat de 50 D par an | payer la taxe de 2012 ; calendrier de trois ans au plus |
+| la même | la moitié de la taxe et de la contribution | 2010 et antérieures | reliquat de 100 D | les mêmes |
+| [loi de finances pour 2019](#r-fl-imm-abandon-2019) | taxe sur les immeubles bâtis et contribution au fonds, pénalités et frais compris | 2016 et antérieures | aucun : abandon total | payer 2019 ; régler 2017 et 2018 avant la fin de 2019 |
+| [loi de finances pour 2024](#r-fl-imm-abandon-2024), personnes physiques | taxe sur les immeubles bâtis, contribution au fonds et taxe sur les terrains non bâtis | 2021 et antérieures | — | payer 2024 ; régler 2022 et 2023, ou souscrire un calendrier de deux ans |
+| la même, personnes morales | pénalités seules | 2023 et antérieures | — | non établie ici |
+| [loi de finances pour 2025](#r-fl-imm-abandon-2025) | arriérés des mêmes prélèvements | 2021 et antérieures | — | payer 2025 ; régler 2022 à 2024, ou souscrire un calendrier dont la première tranche échoit avant le 1^er^ janvier 2026 |
+| la même | pénalités | 2024 et antérieures | — | les mêmes |
 
-: Les symboles du chapitre {#tbl-fl-immeubles-notations}
+: Les abandons d'arriérés des taxes sur les immeubles, 2002-2025 {#tbl-fl-immeubles-abandons}
+
+- **Des plafonds en dinars à l'abandon total.** Les lois de 2002 et de 2012 n'abandonnent que de petits montants : 30 D par article de rôle, puis un reliquat de 50 D par an ou de 100 D. La loi de finances pour 2019 abandonne toute la dette des années couvertes, pénalités et frais compris.
+- **Des années de plus en plus récentes.** L'abandon de 2002 s'arrête aux taxes de 1996 ; celui de 2012 à celles de 2007 ; celui de 2019 à celles de 2016 ; ceux de 2024 et 2025 à celles de 2021.
+- **Les terrains non bâtis depuis 2024.** Jusqu'en 2019, les abandons ne portent que sur la taxe sur les immeubles bâtis et la contribution au fonds.
+- **Personnes physiques et personnes morales.** La loi de finances pour 2024 n'abandonne le principal qu'aux personnes physiques ; les personnes morales n'obtiennent que l'abandon des pénalités.
+
+:::: {.chronologie-repliable titre="Abandons d'arriérés des taxes sur les immeubles : les cinq lois, articles, conditions et pages, 2002-2025"}
+
+| Date d'effet | Portée | Texte et article | Ce que la loi abandonne |
+|---|---|---|---|
+| []{#r-fl-imm-abandon-2002}[1^er^ août 2002]{.insecable} | **rupture** — un premier abandon | loi n° 2002-76 du 23 juillet 2002 [@loi2002-76, art. 1-2, p. 1715] | hors code : abandon des anciennes taxes de 1996 et antérieures ≤ 30 D, et des pénalités de 2001 et antérieures ; mesure ouverte jusqu'à la fin d'octobre 2002 |
+| []{#r-fl-imm-abandon-2012}[24 mai 2012]{.insecable} | étape — de 2002 | loi de finances complémentaire pour 2012 [@lfc-2012, art. 17, p. 924] | hors code : abandon des reliquats de 2007 et antérieures ≤ 50 D par an, et de moitié de 2010 et antérieures ≤ 100 D ; à condition de payer la taxe de 2012 et de souscrire un calendrier de trois ans au plus |
+| []{#r-fl-imm-abandon-2019}[1^er^ janvier 2019]{.insecable} | étape — de 2002 | loi de finances pour 2019 [@loi2018-56-lf2019, art. 72] | hors code : abandon de la taxe et de la contribution de 2016 et antérieures, pénalités et frais compris, à condition de régler 2017 et 2018 avant la fin de 2019 |
+| []{#r-fl-imm-abandon-2024}[1^er^ janvier 2024]{.insecable} | étape — de 2002 | loi de finances pour 2024 [@lf-2024, art. 59] | hors code : abandon, pour les personnes physiques, de 2021 et antérieures, taxe sur les terrains non bâtis comprise ; pour les personnes morales, des seules pénalités de 2023 et antérieures |
+| []{#r-fl-imm-abandon-2025}[1^er^ janvier 2025]{.insecable} | étape — de 2002 | loi de finances pour 2025 [@lf-2025, art. 76] | hors code : nouvel abandon de 2021 et antérieures, et des pénalités de 2024 et antérieures, contre le règlement de 2022 à 2024 ou un calendrier dont la première tranche échoit avant le 1^er^ janvier 2026 |
+
+: Les abandons d'arriérés des taxes sur les immeubles : textes, 2002-2025 {#tbl-fl-immeubles-abandons-textes}
+
+<!-- TODO (documentaliste) : pages des art. 72 (loi de finances pour 2019), 59 (décret-loi de finances pour 2023), 59 (loi de finances pour 2024) et 76 (loi de finances pour 2025) : la note documentaire ne les donne que dans l'édition arabe (p. 5464, 4075-4076, 6453, 6452), et les deux dernières, presque identiques dans deux fascicules différents, sont à confirmer avant d'entrer au registre. -->
+
+::::
+
+## La longue période : ce que rapportent les deux taxes {#sec-fl-immeubles-longue-periode}
+
+Le produit des deux taxes est connu pour les communes de 2008 à 2023, par deux sources budgétaires : les agrégats que publie la Direction générale des collectivités locales, de 2008 à 2019, et les budgets par commune, sommés ici, pour 2022 et 2023 (articles 1101 et 1102) [@dgct-donnees-ouvertes]. Les sources du volume et leurs ruptures sont présentées au chapitre de la longue période (@sec-fl-lp-sources).
+
+Trois réserves valent pour les deux figures. Le périmètre communal change en 2016 : des décrets du 26 mai 2016 créent des communes et en étendent d'autres, et les agrégats ne sont pas à périmètre constant. Les budgets par commune de 2020 et 2021 ne détaillent pas les impôts un à un : ces deux années restent vides, sans interpolation. Ceux de 2023 sont une situation provisoire au 10 janvier 2024, marquée d'un point creux.
+
+### Le rendement {#sec-fl-immeubles-rendement}
+
+Les deux taxes fournissent ensemble 9,6 % des recettes de fonctionnement des communes en 2008, 10,4 % en 2009, 5,7 % en 2011, 9,3 % en 2019 et 5,4 % en 2023, et la part de la taxe sur les immeubles bâtis a diminué de plus de moitié entre 2008 et 2023 (@fig-fl-immeubles-rendement).
+
+```{python}
+#| label: fig-fl-immeubles-rendement
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import finances_locales as fl
+import figtools
+figtools.figure_tabs(
+    fl.vues_immeubles_rendement(), fl.table_immeubles_rendement(),
+    "finances-locales-communes-agregats", "cnat-pib-nominal",
+    slug="fig_fl_immeubles_rendement",
+    caption=("Produit de la taxe sur les immeubles bâtis et de la taxe sur les terrains non "
+             "bâtis des communes, en millions de dinars courants, en part des recettes de "
+             "fonctionnement et en % du PIB, 2008-2023"),
+    note_lecture=(
+        "Chaque source a sa marque : rond pour les agrégats de la Direction générale des "
+        "collectivités locales (2008-2019), losange pour la somme des budgets par commune "
+        "(2022-2023). Les courbes s'interrompent en 2020 et 2021 : les budgets par commune de "
+        "ces années ne détaillent pas les impôts, et rien n'est interpolé. Le point creux de "
+        "2023 est une situation provisoire au 10 janvier 2024. Le trait pointillé gris marque "
+        "les décrets du 26 mai 2016, qui créent des communes et en étendent d'autres : la "
+        "série n'est pas à périmètre constant. Les traits rouges placent trois textes à leur "
+        "date d'effet — l'abandon d'arriérés de 2012, le relèvement des barèmes au 1^er^ janvier "
+        "2017, l'abandon d'arriérés de 2019 ; ils situent ces textes dans la série et "
+        "n'établissent aucun lien de cause : les sources ne disent pas ce que chacun a "
+        "rapporté ou coûté. Dans la vue au PIB, le dénominateur est le PIB des comptes de la "
+        "nation de l'Institut national de la statistique, pris pour chaque année dans la "
+        "dernière édition qui la porte : base 1997 de 2008 à 2014, base 2015 depuis 2015. "
+        "Aucune valeur rétropolée n'est employée et les deux bases ne sont pas raccordées ; "
+        "le passage de l'une à l'autre, marqué d'un trait, est une rupture de série qui tient "
+        "au seul dénominateur (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures))."),
+)
+```
+
+- **La taxe sur les immeubles bâtis** rapporte de 33 à 39 MD de 2008 à 2010, soit de 7,2 % à 7,5 % des recettes de fonctionnement des communes ; de 30 à 46 MD de 2012 à 2018, soit de 4,4 % à 4,8 % ; puis 44 MD en 2022 et 43 MD en 2023, soit 3,2 % et 2,9 %. Rapportée au PIB, elle passe de 0,06 % en 2008-2010 à 0,04 % de 2012 à 2014, en base 1997 des comptes nationaux ; puis, en base 2015, de 0,04 % de 2015 à 2018 à 0,03 % en 2022-2023. Les deux bases ne sont pas raccordées : le passage de l'une à l'autre est une rupture de série (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)).
+- **La taxe sur les terrains non bâtis** croît plus régulièrement, de 11 MD en 2008 à 33 MD en 2019, puis 43,5 MD en 2022 et 36 MD en 2023 ; sa part des recettes de fonctionnement reste comprise entre 2,1 % et 3,1 %. En 2022, elle rapporte presque autant que la taxe sur les immeubles bâtis.
+- **Deux années s'écartent de ces tendances.** En 2011, la taxe sur les immeubles bâtis passe de 39 à 20 MD, et sa part de 7,3 % à 3,6 % ; la taxe sur les terrains non bâtis recule de 15 à 12 MD. En 2019, la taxe sur les immeubles bâtis atteint 76 MD, contre 46 MD en 2018 et 44 MD en 2022 selon les budgets par commune ; les sources lues ici n'en donnent pas l'explication.
+- **Les deux réformes de perception précèdent la série**, qui commence en 2008 : la figure ne permet pas d'en mesurer l'effet.
+
+Pour 2006 et 2007, une évaluation de la Banque mondiale donne d'autres montants pour la taxe sur les immeubles bâtis ; ils sont rapprochés des séries budgétaires, avec les autres écarts entre sources, au chapitre de la longue période (@tbl-fl-lp-ecarts), où figure aussi la comparaison des quatre impôts locaux (@fig-fl-lp-impots).
+
+### Le recouvrement {#sec-fl-immeubles-recouvrement-donnees}
+
+Le taux de recouvrement $\rho$ est, au sens du chapitre des notions, le rapport entre l'impôt encaissé et l'impôt facturé de l'année (@sec-fl-recouvrement). La Direction générale des collectivités locales publie, de 2008 à 2019, un taux de recouvrement de la taxe sur les immeubles bâtis, qui ne dépasse jamais un quart (@fig-fl-immeubles-recouvrement).
+
+```{python}
+#| label: fig-fl-immeubles-recouvrement
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import finances_locales as fl
+import figtools
+figtools.figure_tabs(
+    fl.fig_immeubles_recouvrement(), fl.table_recouvrement_tib(),
+    "finances-locales-communes-agregats",
+    slug="fig_fl_tib_recouvrement",
+    caption=("Taux de recouvrement de la taxe sur les immeubles bâtis publié par la Direction "
+             "générale des collectivités locales, communes, 2008-2019"),
+    nominal=False,
+    note_lecture=(
+        "Le taux est reproduit tel que la Direction générale des collectivités locales le "
+        "publie, sans définition. Le trait pointillé gris marque les décrets du 26 mai 2016, "
+        "qui étendent le périmètre communal. Les traits rouges placent trois textes à leur "
+        "date d'effet — l'abandon d'arriérés de 2012, le relèvement des barèmes au 1^er^ janvier "
+        "2017, l'abandon d'arriérés de 2019 ; ils n'établissent aucun lien de cause."),
+)
+```
+
+- **Un taux divisé par deux en 2011.** Le taux publié baisse de 24 % en 2008 à 22 % en 2009 et 2010, puis à 11 % en 2011.
+- **Entre 11 % et 14 % de 2011 à 2018**, puis 18 % en 2019 [@dgct-donnees-ouvertes].
+- **Une définition qui n'est pas publiée.** Rien n'établit qu'il s'agisse du rapport $\rho$ entre l'encaissé et le facturé de l'année, plutôt que d'un rapport qui inclut les restes à recouvrer des années antérieures.
