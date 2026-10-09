@@ -658,6 +658,59 @@
   - 'requêtes de la passe d''origine non consignées : rejouer celles-ci et l''élargir'
   - étendre la recherche à la carte de soins à tarifs réduits (décret n° 98-409, AMG2), que la note ne couvre pas
 
+- id: r-amen-smig-regime
+  objet: texte, circulaire ou formulaire de demande disant quel régime du salaire minimum interprofessionnel garanti (48 ou 40 heures) sert de référence aux plafonds de ressources de l'article 5 du décret gouvernemental n° 2020-317 du 19 mai 2020 (et aux « 30 fois le salaire minimum » de l'article 7)
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd]
+  requetes:
+    titres_like: ['%2020-317%', '%AMEN SOCIAL%']
+    iort_ar: [317 لسنة 2020, الأمان الاجتماعي]
+    depuis: 2020-05-20
+  passes:
+  - date: 2026-10-09
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'lus à l''image : art. 5 et 7 du décret dans les deux éditions (JORT n° 45 de 2020, p. 1093 en français, p. 1248 en arabe) — « salaire minimum interprofessionnel garanti des différentes professions », sans régime. Titres de jort_cache 2022-2026 portant « AMEN SOCIAL » ou « الأمان الاجتماعي » (index au 2 octobre 2026) : aucun modificatif du décret parmi les intitulés listés. Lacunes : la requête par numéro (« 2020-317 », « 317 لسنة 2020 ») sur les titres n''a pas été lancée en tant que telle ; aucune circulaire ni formulaire lu (site du ministère inaccessible ce jour). Note : docs/notes/prestations-sociales-lectures-2026-10-09.md, § 2 et § 8.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - lancer la requête par numéro (« 2020-317 », « 317 لسنة 2020 ») sur les titres de jort_cache et sur le miroir iort
+  - obtenir les circulaires et le formulaire de demande du ministère des affaires sociales
+
+- id: r-amen-seuil-score-circulaires
+  objet: circulaire du ministre des affaires sociales fixant le seuil de score ouvrant le transfert monétaire permanent de l'Amen social — circulaire n° 12 de mai 2022 (datée du 12 mai par une première mention, du 10 mai par une seconde, aucune des deux vérifiée), puis circulaire d'octobre 2025 révisant les critères (« Circular No. 5 on October 3, 2025 » selon le rapport de suivi ISR04716 de la Banque mondiale, « Ministerial Circular No. 53, issued in October 2025 » selon le document PPIAF000292)
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd]
+  requetes:
+    titres_like: ['%AMEN SOCIAL%', '%modèle de scor%']
+    iort_ar: [الأمان الاجتماعي, أنموذج التنقيط]
+    depuis: 2019-02-05
+  passes:
+  - date: 2026-10-09
+    role: documentaliste
+    sources: [jort_cache, corpus_local, web]
+    couverture: 'Journal officiel : titres français et arabes de jort_cache 2019-2026 (index au 2 octobre 2026) ; lus : loi organique n° 2019-10, art. 2 ; arrêté du 19 mai 2020 sur le modèle de score (édition arabe, p. 1251) ; décret gouvernemental n° 2020-317, art. 9 — aucun seuil, aucune pondération. Hors Journal officiel : http://www.ijtimaia.tn/fileadmin/Nouveau%20dossier/Circulaire12.PDF, redirection 302 vers une adresse mal formée ; https://www.social.gov.tn/fileadmin/Nouveau%20dossier/Circulaire12.PDF, certificat non vérifiable (non contourné) ; archives du web, 404 sur l''adresse directe et 429 sur l''interface de disponibilité ; rubrique « التشريعات » du site du ministère non ouverte (certificat). Lacunes : aucune circulaire lue ; fascicules inconnus de jort_cache non parcourus en plein texte. Note : docs/notes/prestations-sociales-lectures-2026-10-09.md, § 4 et § 8.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - obtenir la circulaire n° 12 de mai 2022 et la circulaire d'octobre 2025 (site du ministère des affaires sociales, archives du web) ; établir le numéro de la seconde (5 ou 53)
+
+- id: r-amen-cumul-supplement-6-18
+  objet: texte, circulaire ou document du ministère disant si le supplément de 10 dinars par enfant de 6 à 18 ans (arrêté conjoint du 19 mai 2020, art. 2, alinéa 2 dans sa rédaction de l'arrêté du 1er avril 2022) se cumule avec l'allocation familiale de 30 dinars des 6 à 18 ans (décret n° 2025-426 ; arrêté conjoint du 3 novembre 2025), ou tout arrêté abrogeant ou modifiant cet alinéa 2
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd#sec-af-non-contributive]
+  requetes:
+    titres_like: ['%AMEN SOCIAL%', '%allocation familiale%', '%pauvres%']
+    iort_ar: [الأمان الاجتماعي, المنحة العائلية, منحة إضافية, التحويلات المالية المباشرة]
+    depuis: 2022-04-08
+  passes:
+  - date: 2026-10-09
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'titres de jort_cache 2022-2026 (index au 2 octobre 2026). Lus au fascicule français : arrêtés du 1er avril 2022 (JORT n° 38, p. 972-973), du 3 avril 2023 (n° 34), du 28 février 2024 (n° 33), du 29 janvier 2025 (n° 12), du 21 avril 2026 (n° 40), décret n° 2025-426 (n° 121 de 2025), arrêté du 3 novembre 2025 (n° 132) : seul l''alinéa 1 de l''article 2 est modifié après 2022 ; l''arrêté de 2025 ne vise pas l''arrêté de 2020. Pratique du programme pilote de 2022-2023 connue par le rapport du ministère pour 2023 (PDF 37, couche texte arabe, à confirmer à l''image ; copie dans tunisia-data) : 20 D du don ajoutés aux 10 D du budget. Lacunes : aucun document postérieur à 2023 ; fascicules inconnus de jort_cache non parcourus ; termes arabes de la fiche ajoutés à sa création, non encore joués. Note : docs/notes/prestations-sociales-lectures-2026-10-09.md, § 5 et § 8.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - jouer les termes arabes sur le miroir iort et sur les titres de jort_cache, 2022-2026
+  - obtenir les rapports annuels de l'Amen social pour 2024 et 2025 et les circulaires du ministère des affaires sociales
+
 - id: r-lf2025-art15-decret
   objet: décret fixant les modalités de fonctionnement du fonds de protection sociale des travailleuses agricoles et les conditions de ses interventions (loi n° 2024-48, loi de finances pour 2025, art. 15, 1), al. 2)
   ou: [precis/fr/retraites/_secteur_prive.qmd#sec-travailleuses-agricoles]
