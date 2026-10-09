@@ -36,7 +36,10 @@ le fiscal.** Le volume avance donc en quatre mouvements, annoncés par la prése
    l'histoire, les compétences, les budgets.
 3. **Les ressources** — ce qui les finance : leurs impôts, leurs taxes et redevances, puis les
    transferts de l'État.
-4. **Les chiffres** — la longue période.
+4. **Les chiffres** — la longue période. *Fondu le 9 octobre 2026* : le chapitre 10 est
+   dissous, chaque chapitre porte ses séries ; les sources, les recettes, l'autonomie, les
+   dépenses et les comptes de la nation sont au chapitre des budgets (`#sec-fl-budg-longue-periode`).
+   Le volume a neuf chapitres et trois mouvements.
 
 Chaque chapitre des mouvements 2 à 4 s'ouvre sur un court rappel des notions qu'il mobilise, avec
 renvoi au chapitre 2, puis suit le plan type (origines → institution → réformes → longue période).

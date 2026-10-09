@@ -1191,7 +1191,7 @@
 
 - id: r-ccl-2018-nomenclature-art167
   objet: décret gouvernemental fixant la nomenclature des budgets (art. 167), les missions et programmes (art. 156) ou le système comptable (art. 191) du code des collectivités locales
-  ou: [precis/fr/finances_locales/_budgets.qmd#sec-fl-budg-ccl-principes]
+  ou: [precis/fr/finances_locales/_budgets.qmd#sec-fl-budg-nomenclature]
   requetes:
     titres_fts: [تبويب, المحاسبي AND الجماعات, nomenclature AND collectivites, comptable AND collectivites AND locales]
     depuis: 2018-05-15
@@ -1202,6 +1202,13 @@
     couverture: 'titres jort_cache de mai 2018 au 18 septembre 2026 : seuls des textes relatifs au budget de l''État répondent ; plein texte non parcouru. Note : docs/notes/finances-locales-budgets.md § 6.'
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
+  - date: 2026-10-09
+    role: rédacteur
+    sources: [corpus_local, pist]
+    couverture: 'décret gouvernemental n° 2020-52 du 23 janvier 2020, portant approbation du modèle de la nomenclature budgétaire des communes (JORT n° 9 du 31 janvier 2020, FR p. 367-368, AR p. 368 et modèle annexé, publié en arabe seulement) : dispositif lu en couche texte dans les deux éditions du corpus local, adresses pist.tn vérifiées (200). Il vise les art. 155, 159, 167 et 383 du code et répond à l''objet pour la nomenclature (art. 167), communes seules. La requête sur les titres l''avait manqué : l''intitulé dit « nomenclature budgétaire des communes », non « collectivités ». Signalé par les notes docs/notes/finances-locales-transferts-budgets-lectures-2026-10-09.md et finances-locales-impots-lectures-2026-10-09.md. Restent hors de cette fiche, sans texte identifié à la passe du 5 octobre 2026 : le décret des missions et programmes (art. 156) et celui du système comptable (art. 191), portés par un TODO documentaliste à precis/fr/finances_locales/_budgets.qmd#sec-fl-budg-ccl-comptes ; modèle annexé non transcrit.'
+    couvert_jusqu_au: 2020-01-31
+    resultat: decret-gouv2020-52
+  resolu: decret-gouv2020-52
 
 - id: r-fl-dissolutions-2011
   objet: liste et nombre des conseils municipaux dissous et des délégations spéciales nommées en 2011-2012
