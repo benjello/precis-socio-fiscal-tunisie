@@ -667,6 +667,60 @@ liste qui suit le tableau, citations comprises. Restent :
     du ministère pour 2023, à instantaner — dont les enfants de 6 à 18 ans allocataires, à tracer en deux
     segments, don puis budget (juillet 2022, décembre 2023, mai 2026 ; § 1.11 de la note de lectures) ;
     rapports extérieurs dépouillés dans la note de lectures, section d'études non écrite.
+    → **clos par la conversion ci-dessous**, sauf la figure des enfants.
+- **Assistance sociale convertie aux principes de présentation — 9 octobre 2026 (non commité, à
+  relire)** (`_non_contributives.qmd`, `#sec-prest-non-contributives`, titre « L'assistance
+  sociale : du programme d'aide aux familles nécessiteuses à l'Amen social », chapitre en
+  `.domicile-unique`) :
+  - **fait** : vue d'ensemble, état du droit en 2026, mise en place (1986-1988), deux réformes
+    (2019-2020, 2022 et son étape de 2025), une section par dispositif, détail en vingt-deux
+    blocs repliés ; buts de l'article 7 de la loi organique cités ; section administrative
+    (`#sec-nc-administration` : allocataires 2018-2023, crédits 2021-2023, enfants 2022-2026,
+    indicateurs de suivi 2024-2026, financement extérieur) et section d'études
+    (`#sec-nc-etudes` : ciblage simulé sur l'enquête de 2015, incidence CEQ de 2026, coût en part
+    du PIB sans base dite, transfert rapporté au salaire minimum, enquête de l'UNICEF) ; deux
+    séries du ministère versées au cache (`mas-amen-social-2023-beneficiaires-bruts`,
+    `…-credits-bruts`) et deux figures (`fig-nc-beneficiaires`, `fig-nc-credits`) ; figure de
+    l'allocation du PNAFN passée en dinars de 2025 et prolongée jusqu'au constat de 2024
+    (`figures/assistance.py`, déflateur du volume « Marché du travail » chargé par son chemin) ;
+    plafonds de ressources convertis en dinars aux deux régimes du salaire minimum
+    (`tbl-nc-plafonds-dinars`, calculé depuis `marche-travail-smig-smag`) ; décrets de
+    prorogation des cartes de soins portés au chapitre (`tbl-nc-cartes-prorogations`) ; cinq
+    clés créées en français et en arabe (`banquemondiale2021pad4414`,
+    `banquemondiale2022pad4815`, `banquemondiale2025isr04716`, `banquemondiale2026isr08116`,
+    `banquemondiale2021pret9230tn`), `bct-ra` recopiée du volume « Marché du travail » ;
+  - **reste, rédacteur** : prolonger la figure de l'aide permanente par la base du transfert de
+    l'Amen social et la renommer `fig-nc-aide-permanente` — il manque une série du cache pour
+    `amen_social/allocation_base`, à écrire par `generate_prestations_tables.py`
+    (`ecrire_serie_parametres`) ; raccorder `figures/assistance.py` au déflateur partagé quand
+    il sera sous `scripts/` ; libellés arabes des trois figures (repli sur le français) ;
+    `figures/pnafn.py` n'est plus appelé que par le chapitre arabe, à retirer quand celui-ci
+    sera resynchronisé ;
+  - **reste, documentaliste — séries à verser à `tunisia-data`** (tableaux faits main
+    `tbl-nc-effectifs`, `tbl-nc-enfants`, `tbl-nc-suivi-projet`, `tbl-nc-pib`,
+    `tbl-nc-ciblage-simule`, sourcés ligne à ligne ; PDF locaux et textuels) : ménages du
+    transfert permanent (2024-2026), enfants de 0 à 5 ans et de 6 à 18 ans allocataires,
+    ménages vérifiés par la nouvelle procédure, ménages payés par moyen numérique, budget de
+    2021 en dollars, parts du PIB (à ne pas chaîner), couverture par décile (2015), pauvreté
+    selon le nombre d'enfants (2021) ; **à relire à l'image avant tout versement** : transfert
+    et salaire minimum 1987-2021 (PAD4815, figure 4), couverture de la carte de soins par
+    décile (figure 7), répartition par décile de cinq interventions (PAD4414, tableau 6, dont
+    la source est une étude UNICEF de 2019) ;
+  - **reste, documentaliste — à obtenir** : les six études citées de seconde main (CRES-BAD
+    2017, d'où viennent le taux d'exclusion de 53,1 %, les 40 % au premier quintile et l'effet
+    de −0,8 point, **non repris au chapitre** faute de méthode dans les documents qui les rapportent ;
+    CRES-Banque mondiale 2021 ; *Tunisia Economic Monitor* de l'automne 2025 ; analyse CEQ ;
+    rapport annuel de l'Amen social pour 2022 ; UNICEF 2019) ; l'arrêté d'application du
+    décret n° 2022-919 ; les conditions du candidat à l'autonomisation économique ; le décret
+    gouvernemental n° 2018-626 ; les décrets n° 93-529, n° 94-1738 et n° 99-1372 ; le décompte
+    « onze décrets de prorogation sur seize » de la note, non repris faute de lecture des
+    quatre décrets de la chaîne de la carte de soins gratuits ;
+  - **reste, bibliographe** : treize clés pour les décrets de prorogation des cartes de soins
+    (`tbl-nc-cartes-prorogations`, sans citation) ; type CSL de l'accord de prêt n° 9230-TN ;
+    adresses des cinq notices à rouvrir (reprises du catalogue de `tunisia-data`) ;
+  - **non fait** : part des crédits du ministère dans le PIB (trois points ; demande de dire
+    la base et de renvoyer à l'annexe du PIB) ; figure des enfants allocataires en deux
+    segments, don puis budget.
 
 - **Tableau engendré — fait le 3 octobre 2026** : les indemnités familiales du secteur public
   (`tbl-indemnites-familiales-public`) sont désormais le tableau du livre « Retraites », émis
