@@ -361,6 +361,58 @@ def tableaux(langue):
     }
 
 
+# ----------------------------- prestations familiales : la série longue des figures
+#
+# Les grandeurs en dinars et en taux des prestations familiales, à chaque date d'effet, avec
+# le texte et le lien au Journal officiel que porte chaque date : taux par rang, plafond de
+# l'assiette trimestrielle et rangs servis des allocations familiales ; majoration pour
+# salaire unique ; contribution aux frais de crèche ; indemnités à caractère familial du
+# secteur public. Les figures du chapitre (`figures/prestations_familiales.py`) la lisent par
+# `figtools.series()` et en tirent ce qu'elles tracent — l'allocation maximale est un taux
+# multiplié par le plafond, calculé par la figure et non écrit ici.
+SERIE_PF = "prestations-familiales-parametres"
+INDEMNITES_PUBLIC = "parameters/retraite/cnrps/accessoires/indemnites_familiales"
+_RANGS = {"fr": ("1ᵉʳ", "2ᵉ", "3ᵉ", "4ᵉ"), "ar": ("الأوّل", "الثاني", "الثالث", "الرابع")}
+_LIBELLES_PF = {
+    "taux": {"fr": "Allocations familiales — taux pour le {rang} enfant",
+             "ar": "المنح العائلية — النسبة للطفل {rang}"},
+    "plafond": {"fr": "Allocations familiales — plafond de l'assiette trimestrielle",
+                "ar": "المنح العائلية — الحدّ الأقصى للوعاء الثلاثي"},
+    "rangs": {"fr": "Allocations familiales — nombre de rangs servis",
+              "ar": "المنح العائلية — عدد الترتيبات المصروفة"},
+    "msu": {"fr": "Majoration pour salaire unique — {n} enfant(s) à charge",
+            "ar": "الزيادة بعنوان الأجر الوحيد — {n} طفل متكفَّل به"},
+    "creche": {"fr": "Contribution aux frais de crèche — montant par enfant et par mois",
+               "ar": "المساهمة في مصاريف المحاضن — المبلغ عن كلّ طفل وكلّ شهر"},
+    "public": {"fr": "Indemnité à caractère familial du secteur public — {rang} enfant",
+               "ar": "المنحة ذات الصبغة العائلية بالقطاع العمومي — الطفل {rang}"},
+}
+
+
+def parametres_prestations_familiales() -> list:
+    def libelle(cle, **mots):
+        return {l: _LIBELLES_PF[cle][l].format(**{k: (v[l] if isinstance(v, dict) else v)
+                                                 for k, v in mots.items()}) for l in LANGUES}
+
+    rang = [{l: _RANGS[l][i] for l in LANGUES} for i in range(4)]
+    return (
+        [ot.ParametreDate(f"taux_rang{i + 1}", f"{AF}/af/taux/enf{i + 1}.yaml",
+                          libelle("taux", rang=rang[i])) for i in range(4)]
+        + [ot.ParametreDate("plafond_trimestriel", f"{AF}/af/plaf_trim.yaml",
+                            libelle("plafond"), unite="montant"),
+           ot.ParametreDate("rangs_servis", f"{AF}/af/nb_enfants_max.yaml",
+                            libelle("rangs"), unite="entier")]
+        + [ot.ParametreDate(f"salaire_unique_{i}", f"{AF}/salaire_unique/enf{i}.yaml",
+                            libelle("msu", n=("3 et plus" if i == 3 else str(i))),
+                            unite="montant") for i in (1, 2, 3)]
+        + [ot.ParametreDate("creche_montant", f"{AF}/creche/montant.yaml",
+                            libelle("creche"), unite="montant")]
+        + [ot.ParametreDate(f"public_rang{i + 1}", f"{INDEMNITES_PUBLIC}/rang_{i + 1}.yaml",
+                            libelle("public", rang=rang[i]), unite="montant")
+           for i in range(4)]
+    )
+
+
 def main() -> int:
     if not ot.openfisca_utilisable():
         print(
@@ -396,7 +448,7 @@ def main() -> int:
         encoding="utf-8",
     )
     print(f"✓ série pnafn-allocation : {len(serie)} paliers")
-    return 0
+    return ot.ecrire_serie_parametres(SERIE_PF, parametres_prestations_familiales(), cache)
 
 
 if __name__ == "__main__":
