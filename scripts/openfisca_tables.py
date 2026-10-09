@@ -90,8 +90,12 @@ PAQUETS = {
         # sectorielles — textile, bâtiment et travaux publics, assurances —, sous
         # `marche_travail/conventions_collectives/` (openfisca-tunisia PR #482) : en deçà, ce
         # nœud n'existe pas, et l'annexe « Les conventions collectives, branche par branche »
-        # du volume « Marché du travail » ne pourrait être engendrée.
-        "version_minimale": (0, 122),
+        # du volume « Marché du travail » ne pourrait être engendrée. La 0.125 verse les
+        # paramètres de la fiscalité locale — taxe sur les immeubles bâtis et taxe sur les
+        # terrains non bâtis, sous `fiscalite_locale/` (openfisca-tunisia PR #485) : en deçà,
+        # ce nœud n'existe pas, et les barèmes du chapitre « Les impôts sur les immeubles » du
+        # volume « Finances locales » ne pourraient être engendrés.
+        "version_minimale": (0, 125),
     },
 }
 

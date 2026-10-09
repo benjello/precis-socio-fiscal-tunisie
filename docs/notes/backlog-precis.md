@@ -2085,8 +2085,16 @@ ancres `r-fl-imm-…`. Trois fiches : `r-cfl-prix-reference-1998-2006`,
 `r-cfl-prix-reference-tib-apres-2017`, `r-cfl-tarif-tnb-apres-2017`. **Mis à jour le 9 octobre
 2026 avec la dissolution de la longue période** : la phrase de l'évaluation de la Banque
 mondiale sur 2006-2007 (53,5 puis 28,2 MD) y est écrite, sous son titre ; renvoi à
-`@fig-fl-lp-impots` au chapitre des budgets. **À reprendre, d'après les lectures du 9 octobre
-2026** (`finances-locales-impots-lectures-2026-10-09.md`), non fait :
+`@fig-fl-lp-impots` au chapitre des budgets. **Tableaux engendrés le 9 octobre 2026** : les
+taux selon les services (`tbl-fl-tib-taux`), le prix de référence du mètre carré couvert
+(`tbl-fl-tib-prix-reference`) et le tarif des terrains non bâtis (`tbl-fl-tnb-tarif`) viennent
+de `scripts/generate_finances_locales_tables.py`, avec leur onglet « Base législative » ; les
+valeurs et les dates d'effet faites main concordaient toutes (37 valeurs). Les registres repliés
+des décrets restent écrits dans le chapitre. Restent faits main, faute de paramètres : la
+pénalité de retard (`tbl-fl-penalite-retard`) et la contribution au fonds de l'habitat
+(`tbl-fl-immeubles-fnah`). Une figure des deux barèmes, en dinars courants et en dinars de
+2025, est désormais faisable (séries complètes de 1997 à 2017) : non faite. **À reprendre,
+d'après les lectures du 9 octobre 2026** (`finances-locales-impots-lectures-2026-10-09.md`), non fait :
 - l'état du droit y est dit pour 2025 avec un `TODO` de confirmation, alors que la loi de
   finances pour 2026 est inventoriée (aucun article du code modifié, aucun abandon
   d'arriérés) : titre et section à passer à 2026 ;
