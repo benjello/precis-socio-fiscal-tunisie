@@ -1886,29 +1886,72 @@ traduction n'a pas livré `index.qmd`.
   n° 25 (2017) ; voir `docs/notes/biblio-fiscalite-locale.md`.
 - **Questions du plan restées ouvertes** : chapitre propre aux régions ; taxes affectées à
   des fonds hors budgets locaux.
-- **Transferts de l'État — rédigé le 5 octobre 2026** (`_transferts.qmd`, `#sec-fl-transferts`),
-  d'après la note `docs/notes/finances-locales-transferts.md`, close par anticipation : lois
-  n° 75-36 et 75-37, LF 1982 (art. 27), 1985 (art. 63), 1986 (art. 68), 1987 (art. 44, 92, 94),
-  1988-1991 (prélèvements et reconduction de la réserve), 1990 (tableau « L » : 80 MD), 1992
-  (art. 80), décret n° 92-308, loi n° 95-45, loi n° 2000-60, LF 2007 (art. 11), LF 2014 (art. 12)
-  lus au fascicule ; tableau de la répartition légale 1976-2017 fait main (TODO de tableau
-  engendré). L'ancre des notions passe de `#sec-fl-transferts` à `#sec-fl-notions-transferts`.
-  Fiche `r-fccl-repartition-reserve-2014-2017`. **Lacunes, toutes lisibles dans le corpus** :
-  - décrets de répartition de la réserve 1993-2013 (vingt-deux, non lus ; les AR postérieurs
-    à 2000 sont aussi sur le miroir iort) ; décret n° 92-308 à relire à l'image (océrisation) ;
-  - montant du fonds, LF par LF, 1987-2017 (seul 1990 est lu) ; LF 1977-1979 et arrêtés de
-    1975-1983 ; clauses d'effet des LF 1982, 1985, 1986 et 1992 ; pages AR de la plupart des
-    textes lus ;
-  - LF 2018, art. 11 (texte, effet) ; code des collectivités locales (ressources transférées,
-    péréquation, art. 392) ; LF 2013 art. 13-15, décret n° 2013-2797, LF 2021 art. 13 :
-    seuls leurs intitulés sont cités ;
-  - texte fondant la réserve de 15 % des agrégats DGCT de 2018-2019 ;
-  - décrets et arrêtés de la CPSCL (77-212 … 2016-367, loi n° 2001-56) ;
+- **Transferts de l'État — converti au format « ruptures au premier plan, détail replié » le
+  9 octobre 2026** (`_transferts.qmd`, `#sec-fl-transferts`, `.domicile-unique`), d'après
+  `docs/notes/finances-locales-transferts-budgets-plan-architecte.md`, corrigé par
+  `docs/notes/finances-locales-transferts-budgets-lectures-2026-10-09.md` : vue d'ensemble ;
+  mise en place de 1975 ; trois grandes réformes (1987, 2001, 2018 avec son second temps de
+  2021) ; répartition légale 1976-2017 ; état du droit au 14 juillet 2021 ; réserve ; caisse ;
+  longue période. Treize blocs repliés. `fig-fl-lp-fccl` et `fig-fl-lp-cpscl` y sont montées
+  depuis `_longue_periode.qmd`, avec leurs lectures ; la figure du fonds marque 2018 comme
+  rupture de série (2018-2019 tracées à part) et place deux textes (gestion 1987, 1er janvier
+  2014). La date de suppression du fonds est corrigée (1er janvier 2018, LF 2018, art. 11 et
+  67) ; « dotation annuelle » remplacé par « subvention annuelle ». Références versées :
+  arrêtés du 22 juin 2018, du 29 mars 2019 et du 29 juin 2021 ; titre de `loi2000-60` corrigé
+  (14 mai 1975). Fiches : `r-fccl-repartition-reserve-2014-2017`,
+  `r-fl-criteres-subventions-apres-2021`, `r-fl-decret-fonds-appui-decentralisation`.
+  **Lacunes** :
+  - décrets de répartition de la réserve 1993-2013 (vingt-deux, connus par leur intitulé) :
+    **lisibles dans le corpus** ;
+  - montant du fonds, LF par LF, 1987-2017 (seul 1990 est lu), et montant annuel des
+    subventions dans les LF de 2018 et suivantes ; LF 1977-1979 et arrêtés de 1975-1983 ;
+    montants de 1990-1991 au profit de la caisse à relire à l'image : **lisibles dans le
+    corpus** ; les tableaux des LF de 2022 à 2026 semblent en image — **OCR à prévoir** ;
+  - décret n° 2013-2797 (fonds de coopération, maintenu pour 10 % par la LF 2021, art. 13,
+    § 5) et LF 2013, art. 13-15, pour ce chapitre : **lisibles dans le corpus**, sans clé pour
+    le décret ; base des proportions de 90 % et 10 % : non dite par la loi ;
+  - code des collectivités locales, art. 146-151 et 392 : lus en arabe seulement ; édition
+    française du JORT n° 39 de 2018 (et du n° 51 de 2018, arrêté du 22 juin 2018) **à
+    obtenir** (absente de pist.tn et du corpus) ;
+  - décret du fonds d'appui (LF 2021, art. 13, § 4) et modificatif de l'arrêté après le
+    29 juin 2021 : non identifiés (deux fiches ; fascicules sans couche texte à océriser) ;
+  - contenu des articles 6101 et 8002 des budgets communaux de 2022-2023 au regard des parts
+    de 90 % et 10 % : non établi — le modèle de nomenclature du décret gouvernemental
+    n° 2020-52 (édition arabe, non lu) peut le trancher ;
+  - ce que cherchent la loi n° 2000-60 et la loi organique n° 2007-65 : débats parlementaires
+    des 8 juin 2000 et 12 et 15 décembre 2007, hors corpus, **à obtenir** (archives en ligne,
+    presse) — pas de requête rejouable, donc pas de fiche ;
+  - définitions des ratios publiés par la Direction générale des collectivités locales
+    (autonomie, rémunération, recouvrement), 2008-2019 : non publiées ; pistes non ouvertes :
+    étude « transferts financiers » de la bibliothèque du portail, archives du web de la page
+    des indicateurs — pas de requête rejouable, donc pas de fiche (chapitre des budgets) ;
+  - décrets et arrêtés de la CPSCL (77-212 … 2016-367, loi n° 2001-56) : **lisibles dans le
+    corpus** ;
   - subventions d'investissement, PIC, PRD, dotation exceptionnelle 2011-2012 : aucune source
     primaire lue ;
-  - divergence 82 / 50,8 MD du fonds en 1990 : non tranchée (le JORT donne 80 MD votés).
+  - divergence 82 / 50,8 MD du fonds en 1990 : non tranchée (le JORT donne 80 MD votés) ;
+  - décret-loi n° 2026-4 (art. 134 : fonds maintenu et renommé) : rien au chapitre tant qu'il
+    n'est pas en vigueur ; notice à créer ;
+  - glossaire : entrées à créer par le terminologue — subvention annuelle du budget de
+    l'État, subvention d'équilibre, fonds d'appui à la décentralisation, fonds de coopération
+    des collectivités locales ;
+  - `tunisia-data` : les réserves du catalogue des séries (`finances-locales-communes-agregats`,
+    fichiers Banque mondiale), reprises par l'onglet « Sources » de `fig-fl-lp-fccl`, disent
+    encore « réserve à 18 % jusqu'en 2017, 15 % ensuite » et « vraisemblablement fonds total
+    contre quote-part des communes » : à aligner sur le chapitre (les 15 % de 2018-2019 ne
+    sont plus la réserve ; la divergence de 1990 n'est pas tranchée), puis snapshot à refaire ;
+  - tableaux faits main à engendrer : partage et critères du fonds (1976-2017), critères de
+    l'arrêté de 2018-2021 — constat à porter à `docs/notes/backlog-modele.md` ;
+  - à faire au chapitre des budgets, qui dissout `_longue_periode.qmd` : y reprendre la ligne
+    « Fonds commun, 1990 » de `tbl-fl-lp-ecarts` (formulation « vraisemblablement » à aligner
+    sur « non tranchée »), le renvoi `@tbl-fl-lp-ecarts` de `#sec-fl-transferts-1990` et les
+    renvois `@sec-fl-lp-sources` et `@fig-fl-lp-ressources` de ce chapitre ; `index.qmd`
+    annonce encore le fonds et la caisse au dernier chapitre ; `_impots_activite.qmd` porte un
+    `TODO` périmé sur le nom du fonds de 2021, désormais aligné.
 - **Longue période — rédigé le 5 octobre 2026** (`_longue_periode.qmd`,
-  `#sec-fl-longue-periode`) : six figures à onglets (`figures/finances_locales.py`), lues par
+  `#sec-fl-longue-periode`) ; le 9 octobre 2026, les sections du fonds commun et de la caisse
+  de prêts, leurs deux figures et deux lignes de `tbl-fl-lp-ecarts` sont parties au chapitre
+  des transferts ; le reste attend la conversion du chapitre des budgets : six figures à onglets (`figures/finances_locales.py`), lues par
   `figtools.series()` sur les séries de tunisia-data snapshotées dans `precis/_seriescache/`
   (communes 2008-2023, CPSCL 2005-2024, INS trois bases, Banque mondiale 1985-2012, PIB des
   comptes de la nation) ; les fichiers Banque mondiale 1992 et 1997, absents du catalogue de
@@ -1996,9 +2039,6 @@ traduction n'a pas livré `index.qmd`.
     1997 ?) : **lisible dans le corpus**, non relue ;
   - doctrine administrative sur le chiffre d'affaires brut « local », 1997-2013 : **à
     obtenir** (notes communes de la Direction générale des impôts, archives du web) ;
-  - nom français du fonds de 2021 : le chapitre des transferts (`#sec-fl-fccl-2018`) le
-    traduit de l'arabe, le chapitre 7 cite la rubrique française de la LF 2021, art. 13 — à
-    aligner à la seconde vague ;
   - produit de la taxe et écrêtement : rien n'établit si l'article 1201 des budgets communaux
     et l'agrégat de la Direction générale comptent, depuis 2013, la part au-delà de 100 000 D
     affectée au fonds ; aucune série du montant écrêté — **à obtenir** ;
@@ -2197,9 +2237,10 @@ généraliser : `finances_locales/figures/finances_locales.py` (`_pib`, `_pib_pa
   sur deux séries ; taux de 1983 et 1985 appuyés sur des valeurs de 1983-1984 propres à la Banque
   mondiale).
 - **Finances locales — 4 figures conformes, 1 phrase partielle** : `_longue_periode.qmd`, « de
-  0,74 % en 2002 à … 0,66 % en 2019 » traverse trois bases sans le dire dans la phrase ; points
-  de 1985-1991 de `fig-fl-lp-fccl` rapportés au PIB d'un rapport de la Banque mondiale de 1992
-  dont la base n'est pas dite. Remplacer le paragraphe local sur les bases par un renvoi à
+  0,74 % en 2002 à … 0,66 % en 2019 » traverse trois bases sans le dire dans la phrase  ; les points
+  de 1985-1991 de `fig-fl-lp-fccl` (désormais au chapitre des transferts) sont rapportés au
+  PIB d'un rapport de la Banque mondiale de 1992 dont la base n'est pas dite — la note de
+  lecture le dit depuis le 9 octobre 2026. Remplacer le paragraphe local sur les bases par un renvoi à
   l'annexe.
 - **Marché du travail** : aucun emploi du PIB relevé.
 

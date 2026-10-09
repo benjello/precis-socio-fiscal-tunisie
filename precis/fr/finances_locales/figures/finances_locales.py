@@ -75,7 +75,12 @@ SERIE_PIB = "cnat-pib-nominal"
 # extension des périmètres communaux. La ligne est tracée entre 2015 et 2016.
 RUPTURE_COMMUNES = 2016
 # Suppression du fonds commun des collectivités locales au 1er janvier 2018 (loi de finances
-# pour 2018) : la ligne est tracée entre 2017 et 2018.
+# pour 2018, art. 11 et 67) : la ligne est tracée entre 2017 et 2018. C'est une RUPTURE DE
+# SÉRIE, et pas seulement un changement de nom : les subventions annuelles qui succèdent au
+# fonds se partagent selon l'arrêté conjoint du 22 juin 2018 (85 % de gestion, dont 89 % aux
+# communes ; 15 % d'investissement et de besoins spécifiques), non plus selon la loi n° 75-36
+# (82 % aux collectivités, dont 86 % aux communes ; 18 % de réserve). Les lignes de 2018-2019
+# sont donc des grandeurs distinctes (`sub_…`), jamais reliées à celles de 2008-2017.
 RUPTURE_FCCL = 2018
 
 # Les deux fichiers de la Banque mondiale que le catalogue de l'entrepôt ne désigne pas.
@@ -177,8 +182,18 @@ _L = {
                      "ar": "المال المشترك: مناب المجالس الجهوية"},
     "fccl_reserve": {"fr": "Fonds commun : réserve", "ar": "المال المشترك: الاحتياطي"},
     "fccl_bm": {"fr": "Fonds commun (ligne du rapport)", "ar": "المال المشترك (سطر التقرير)"},
-    "dotation_annuelle": {"fr": "Dotation annuelle aux communes (fonctionnement et investissement)",
-                          "ar": "المنحة السنوية للبلديات (تسيير واستثمار)"},
+    "sub_credit_global": {"fr": "Subventions annuelles : crédit global",
+                          "ar": "الدعم المالي السنوي: الاعتماد الجملي"},
+    "sub_communes": {"fr": "Subventions annuelles : part des communes",
+                     "ar": "الدعم المالي السنوي: مناب البلديات"},
+    "sub_regions": {"fr": "Subventions annuelles : part des conseils régionaux",
+                    "ar": "الدعم المالي السنوي: مناب المجالس الجهوية"},
+    "sub_reserve": {"fr": "Subventions annuelles : ligne que la source intitule encore "
+                          "« réserve »",
+                    "ar": "الدعم المالي السنوي: السطر الذي يسمّيه المصدر «المدّخر»"},
+    "dotation_annuelle": {"fr": "Subvention annuelle : quote-parts inscrites aux budgets des "
+                                "communes",
+                          "ar": "الدعم المالي السنوي: المنابات المرسّمة بميزانيات البلديات"},
     "dotations_recues_etat": {"fr": "Dotations reçues de l'État",
                               "ar": "الاعتمادات المتأتية من الدولة"},
     "subventions_accordees_cl": {"fr": "Subventions accordées aux collectivités",
@@ -197,15 +212,14 @@ _L = {
     "provisoire": {"fr": "exercice non clos", "ar": "سنة غير مختومة"},
     "lg_creux": {"fr": "point creux : exercice non clos (2021, 2023)",
                  "ar": "نقطة فارغة: سنة غير مختومة (2021 و2023)"},
-    "lg_creux_fccl": {"fr": "point creux : 2018-2019 (même intitulé, fonds supprimé) ; "
-                            "2023 provisoire",
-                      "ar": "نقطة فارغة: 2018-2019 (التسمية نفسها بعد الحذف)؛ 2023 وقتية"},
+    "lg_creux_fccl": {"fr": "point creux : 2018-2019, subventions annuelles ; 2023, provisoire",
+                      "ar": "نقطة فارغة: 2018-2019، الدعم المالي السنوي؛ 2023 وقتية"},
     "lg_creux_ins": {"fr": "point creux : valeur semi-définitive ou provisoire",
                      "ar": "نقطة فارغة: قيمة شبه نهائية أو وقتية"},
     "rup_communes": {"fr": "communes créées et étendues\n(décrets du 26 mai 2016)",
                      "ar": "إحداث بلديات وتوسيعها\n(أوامر 26 ماي 2016)"},
-    "rup_fccl": {"fr": "suppression du\nfonds commun (2018)",
-                 "ar": "حذف المال\nالمشترك (2018)"},
+    "rup_fccl": {"fr": "rupture de série :\nfonds supprimé,\nautre base (2018)",
+                 "ar": "انقطاع السلسلة:\nحذف المال المشترك،\nقاعدة أخرى (2018)"},
     "rup_pib": {"fr": "PIB : base {b}", "ar": "الناتج: أساس {b}"},
     # textes marqués sur les figures des chapitres d'impôts
     "mq_abandon_2012": {"fr": "abandon d'arriérés\n(loi de 2012)",
@@ -218,6 +232,10 @@ _L = {
                         "ar": "إلغاء الحدّ الأقصى السنوي\n(1 جانفي 2012)"},
     "mq_assiette_2014": {"fr": "assiette étendue\n(1er janvier 2014)",
                          "ar": "توسيع القاعدة\n(1 جانفي 2014)"},
+    "mq_fccl_1987": {"fr": "subvention du budget\n(gestion 1987)",
+                     "ar": "منحة من الميزانية\n(تصرف 1987)"},
+    "mq_fccl_2014": {"fr": "critères révisés\n(1er janvier 2014)",
+                     "ar": "مراجعة المقاييس\n(1 جانفي 2014)"},
     "lg_marque_texte": {"fr": "trait rouge : texte de loi ou décret, placé à sa date d'effet",
                         "ar": "خطّ أحمر: نصّ قانوني في تاريخ نفاذه"},
     # titres
@@ -233,8 +251,8 @@ _L = {
     "t_activite_rendement": {"fr": "Produit de la taxe sur les établissements et de la taxe "
                                    "hôtelière, communes",
                              "ar": "مردود المعلوم على المؤسسات والمعلوم على النزل، البلديات"},
-    "t_fccl": {"fr": "Le fonds commun des collectivités locales et la dotation qui lui succède",
-               "ar": "المال المشترك للجماعات المحلية والمنحة التي خلفته"},
+    "t_fccl": {"fr": "Le fonds commun des collectivités locales, puis les subventions annuelles",
+               "ar": "المال المشترك للجماعات المحلية ثمّ الدعم المالي السنوي"},
     "t_cpscl": {"fr": "La Caisse des prêts et de soutien des collectivités locales",
                 "ar": "صندوق القروض ومساعدة الجماعات المحلية"},
     "t_ins": {"fr": "Épargne brute et investissement des collectivités locales "
@@ -775,6 +793,10 @@ def table_activite_rendement():
 
 FCCL_DGCT = (("fccl_credit_global", ROUGE), ("fccl_communes", ORANGE),
              ("fccl_regions", VERT), ("fccl_reserve", GRIS))
+# Textes placés à leur date d'effet sur la figure du fonds (trait rouge plein) : la fin des
+# parts d'impôts (loi de finances pour 1987, art. 92) et la révision des critères (loi de
+# finances pour 2014, art. 12). Ils situent ces textes ; ils ne disent pas une cause.
+MARQUES_FCCL = ((1987, "mq_fccl_1987", 0.97), (2014, "mq_fccl_2014", 0.84))
 
 
 def _fccl() -> list[dict]:
@@ -782,7 +804,9 @@ def _fccl() -> list[dict]:
     lignes = []
     for a in range(2008, 2020):
         for k, _ in FCCL_DGCT:
-            lignes.append(dict(grandeur=k, source="dgct", annee=a, v=c["dgct"][(k, a)][0],
+            # 2018-2019 : même colonne de la source, autre grandeur (voir RUPTURE_FCCL).
+            g = k if a < RUPTURE_FCCL else k.replace("fccl_", "sub_")
+            lignes.append(dict(grandeur=g, source="dgct", annee=a, v=c["dgct"][(k, a)][0],
                                statut="definitif"))
     for a in (2022, 2023):
         s = c["somme"]
@@ -831,6 +855,7 @@ def fig_fccl(mesure: str = "md"):
     lignes = _fccl()
     fig, ax = plt.subplots(figsize=(9.5, 5.6))
     couleurs = dict(FCCL_DGCT, fccl_bm=ORANGE, dotation_annuelle=BLEU)
+    couleurs.update({k.replace("fccl_", "sub_"): c for k, c in FCCL_DGCT})
     for (g, s) in dict.fromkeys((l["grandeur"], l["source"]) for l in lignes):
         ls = [l for l in lignes if l["grandeur"] == g and l["source"] == s]
         pts = {}
@@ -843,8 +868,8 @@ def fig_fccl(mesure: str = "md"):
                     pts[l["annee"]] = 100 * l["v"] / p
         if pts:
             creux = {l["annee"] for l in ls if l["statut"] not in ("definitif", "publie")}
-            # Les deux années DGCT qui suivent la suppression du fonds : même intitulé,
-            # autre nature — points creux.
+            # Les deux années DGCT qui suivent la suppression du fonds : autre grandeur,
+            # tracée à part (jamais reliée à 2017) et en points creux.
             if s == "dgct":
                 creux |= {a for a in pts if a >= RUPTURE_FCCL}
             _courbe(ax, pts, couleurs[g], s, _lab(g), mesure, dec=3 if mesure == "pib" else 1,
@@ -854,12 +879,15 @@ def fig_fccl(mesure: str = "md"):
     _cadre(ax, _lab("t_fccl"), _lab("md" if mesure == "md" else "pct_pib"),
            annees[0], annees[-1])
     _ruptures(ax, mesure, annees, communes=False, fccl=True)
+    ax.set_ylim(0, ax.get_ylim()[1] * 1.18)  # de la place en haut pour les libellés
+    _marques_textes(ax, MARQUES_FCCL, annees[0], annees[-1])
     poignees = _legende_grandeurs(list(FCCL_DGCT) + [("fccl_bm", ORANGE),
                                                      ("dotation_annuelle", BLEU)])
     poignees += _legende_sources(["bm1992", "bm1997", "bm2014", "dgct", "somme"]
                                  if mesure == "md" else ["bm1992", "bm2014", "dgct", "somme"])
     poignees.append(Line2D([], [], color=GRIS, marker="o", mfc="white", ls="",
                            label=figtools.fig_text(_lab("lg_creux_fccl"))))
+    poignees.append(_legende_marques())
     ax.legend(handles=poignees, loc="upper center", bbox_to_anchor=(0.5, -0.13), ncol=2,
               fontsize=7.2, frameon=False)
     fig.tight_layout()

@@ -1,6 +1,6 @@
 # La longue période {#sec-fl-longue-periode}
 
-Ce chapitre calcule dans la durée les grandeurs que le chapitre des notions a définies : la part des [ressources propres](#g-ressources-propres) et celle des transferts dans les recettes des communes, le [taux d'autonomie financière](#g-taux-autonomie-financiere) (@sec-fl-taux-autonomie), le rendement de chaque impôt local et son recouvrement (@sec-fl-recouvrement), les transferts du fonds commun et de la caisse de prêts, enfin l'épargne et l'investissement des collectivités dans les comptes de la nation. Les règles qui fondent ces flux sont exposées aux chapitres précédents : les impôts aux chapitres des immeubles (@sec-fl-immeubles), de l'activité (@sec-fl-activite) et des taxes (@sec-fl-taxes), les transferts au chapitre qui les traite (@sec-fl-transferts).
+Ce chapitre calcule dans la durée les grandeurs que le chapitre des notions a définies : la part des [ressources propres](#g-ressources-propres) et celle des transferts dans les recettes des communes, le [taux d'autonomie financière](#g-taux-autonomie-financiere) (@sec-fl-taux-autonomie), le rendement de chaque impôt local et son recouvrement (@sec-fl-recouvrement), enfin l'épargne et l'investissement des collectivités dans les comptes de la nation. Les règles qui fondent ces flux sont exposées aux chapitres précédents : les impôts aux chapitres des immeubles (@sec-fl-immeubles), de l'activité (@sec-fl-activite) et des taxes (@sec-fl-taxes), les transferts au chapitre qui les traite (@sec-fl-transferts), où sont aussi suivis le fonds commun, les subventions annuelles qui lui succèdent (@sec-fl-lp-fccl) et la caisse de prêts (@sec-fl-lp-cpscl).
 
 Aucune série ne couvre seule la période. Le chapitre présente d'abord les sources et leurs ruptures, puis chaque grandeur, et rassemble à la fin les écarts constatés entre sources. Les montants sont en millions de dinars courants (MD).
 
@@ -25,7 +25,7 @@ Les budgets par commune de 2021 sont une situation arrêtée au 25 décembre 202
 Trois ruptures traversent les séries, et chaque figure les marque.
 
 - **Le périmètre communal.** Trois décrets gouvernementaux du 26 mai 2016 créent de nouvelles communes dans vingt gouvernorats et modifient les limites territoriales de communes existantes [@decret2016-600; @decret2016-601; @decret2016-602]. Publiés au *Journal officiel* du 27 mai 2016 et sans clause d'effet, ils sont exécutoires le 1er juin 2016. La liste des communes de la Direction générale en compte 350 : 77 anciennes, 187 étendues et 86 créées [@dgct-donnees-ouvertes]. Les agrégats de 2008-2019 ne sont donc pas à périmètre constant.
-- **La suppression du fonds commun des collectivités locales** au 1er janvier 2018 [@lf-2018] : les transferts de fonctionnement changent de nature, sinon d'intitulé (@sec-fl-lp-fccl).
+- **La suppression du fonds commun des collectivités locales** au 1er janvier 2018 [@lf-2018] : les subventions annuelles qui lui succèdent se partagent sur une autre base, fixée par arrêté (@sec-fl-lp-fccl).
 - **Les bases des comptes nationaux.** Le compte des collectivités locales et le PIB sont publiés en base 1983, puis 1997, puis 2015 ; une année publiée dans deux bases y a deux valeurs, et les bases ne sont jamais raccordées. Le PIB qui sert de dénominateur est celui de l'édition la plus récente qui porte l'année : base 1983 jusqu'en 2004, base 1997 de 2005 à 2014, base 2015 ensuite [@ins-cnat-2015].
 
 ## Recettes propres et transferts {#sec-fl-lp-ressources}
@@ -141,68 +141,6 @@ Selon le rapport de 1997, la taxe sur les établissements passe de 8 % des recet
 
 Les lectures de 2008 à 2023, sur les seules sources budgétaires, sont aux deux chapitres qui traitent ces impôts (@sec-fl-activite-longue-periode, @sec-fl-immeubles-rendement).
 
-## Le fonds commun et la dotation qui lui succède {#sec-fl-lp-fccl}
-
-La Direction générale publie, de 2008 à 2019, le crédit global du fonds commun et sa répartition entre la réserve, les communes et les conseils régionaux [@dgct-donnees-ouvertes]. La réserve y vaut 18 % du crédit global de 2008 à 2017, à l'arrondi près, puis 15 % en 2018 et 2019 ; la quote-part des communes 70,4 % à 70,7 %, soit 86 % du crédit hors réserve. Ce sont, à l'arrondi près, les taux que fixe la loi de finances pour 2007 : réserve de 18 %, communes 86 % des 82 % restants (@sec-fl-fccl-2001-2007). Le crédit global passe de 162 MD en 2008 à 394 MD en 2017. Pour 2018 et 2019, la Direction générale garde l'intitulé « subventions annuelles » alors que le fonds est supprimé au 1er janvier 2018 : les deux années sont marquées d'un point creux. Les budgets par commune de 2022 et 2023 isolent la quote-part de la dotation annuelle au fonctionnement (article 6101) et à l'investissement (article 8002), 591 MD en 2022 et 611 MD en 2023 [@dgct-donnees-ouvertes]. Les règles de chacun de ces transferts sont exposées au chapitre des transferts (@sec-fl-transferts).
-
-```{python}
-#| label: fig-fl-lp-fccl
-#| echo: false
-#| output: asis
-import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
-from figures import finances_locales as fl
-import figtools
-figtools.figure_tabs(
-    fl.vues_fccl(), fl.table_fccl(),
-    "finances-locales-communes-agregats", "finances-locales-bm-1985-2012",
-    "finances-locales-bm-1992", "finances-locales-bm-1997", "cnat-pib-nominal",
-    slug="fig_fl_fccl",
-    caption=("Le fonds commun des collectivités locales et la dotation qui lui succède, en "
-             "millions de dinars courants et en % du PIB, 1985-2023"),
-    note_lecture=(
-        "En orange, la ligne « fonds commun » de chaque rapport de la Banque mondiale : celle "
-        "du rapport de 1992 se situe au-dessus de celle du rapport de 1997 pour l'année "
-        "commune 1990 (82 MD contre 50,8 MD), vraisemblablement parce que la première est le "
-        "fonds entier et la seconde la quote-part des communes. Les lignes de la Direction "
-        "générale détaillent le crédit global et ses trois parts ; les points creux de 2018 "
-        "et 2019 portent le même intitulé après la suppression du fonds. En bleu, la dotation "
-        "annuelle des budgets par commune de 2022 et 2023. Le rapport de 1992 rapporte sa "
-        "ligne à son propre PIB."),
-)
-```
-
-Pour 1990, la loi de finances inscrit une subvention de 80 MD au fonds ; la divergence entre les deux rapports de la Banque mondiale n'est pas tranchée pour autant (@sec-fl-transferts-longue-periode).
-
-<!-- TODO (documentaliste) : relever le montant du fonds commun loi de finances par loi de finances, de 1987 à 2017 (tableaux des fonds spéciaux puis des comptes spéciaux), pour en faire une série datée au JORT (note docs/notes/finances-locales-transferts.md, § 3 et 11). -->
-
-## La caisse de prêts et de soutien {#sec-fl-lp-cpscl}
-
-Les états financiers de la caisse donnent, pour chaque exercice de 2005 à 2024, les dotations reçues de l'État, les subventions et les prêts accordés aux collectivités, les remboursements de prêts reçus, et, à l'actif, les annuités échues et impayées et leurs provisions [@cpscl-etats-financiers]. Chaque exercice y est publié deux fois, dans l'état de l'année puis, retraité, dans celui de l'année suivante ; la figure retient le second.
-
-```{python}
-#| label: fig-fl-lp-cpscl
-#| echo: false
-#| output: asis
-import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
-from figures import finances_locales as fl
-import figtools
-figtools.figure_tabs(
-    fl.vues_cpscl(), fl.table_cpscl(), "finances-locales-cpscl",
-    slug="fig_fl_cpscl",
-    caption=("La Caisse des prêts et de soutien des collectivités locales : flux de l'année "
-             "et impayés, en millions de dinars courants, 2005-2024"),
-    note_lecture=(
-        "Les montants sont ceux des états de flux de trésorerie et du bilan de la caisse, en "
-        "valeur absolue : les états portent les décaissements et les provisions en négatif. "
-        "Ce sont des flux de trésorerie de la caisse ; ils ne se comparent pas sans précaution "
-        "aux transferts inscrits au budget de l'État ou reçus par les communes."),
-)
-```
-
-Les dotations reçues de l'État restent entre 30 et 62 MD de 2005 à 2012, puis s'élèvent par paliers, à 135 MD en 2015, 216 MD en 2018 et 338 MD en 2021, avant de redescendre à 155 MD en 2024. Les subventions accordées suivent le même mouvement, de 23 à 64 MD jusqu'en 2013 puis 141 à 278 MD de 2018 à 2021. Les prêts accordés, eux, restent compris entre 22 et 56 MD sur les vingt exercices, et les remboursements reçus entre 38 et 73 MD.
-
-Les annuités échues et impayées tombent de 67,2 MD en 2006 à 16,9 MD en 2007, et les provisions de 53,4 à 7,7 MD ; les états ne commentent pas ce mouvement, qui coïncide avec l'apparition au passif d'une provision sur créances rééchelonnées [@cpscl-etats-financiers]. Les impayés remontent ensuite à 86 MD en 2011 et restent entre 85 et 107 MD jusqu'en 2024.
-
 ## Le compte des collectivités locales dans les comptes de la nation {#sec-fl-lp-ins}
 
 L'Institut national de la statistique publie, dans chaque édition des comptes de la nation, un compte des collectivités locales, sous-secteur des administrations publiques qui réunit communes et conseils régionaux, puis régions [@ins-cnat-2015]. Ce n'est pas le budget des communes : le compte décrit la production, les revenus, l'épargne et l'investissement selon les règles de la comptabilité nationale. Il ne détaille pas les impôts locaux un à un. Le @fig-fl-lp-ins en retient deux soldes : l'épargne brute et la formation brute de capital fixe.
@@ -239,12 +177,10 @@ Les sources se recoupent sur plusieurs années. Les écarts relevés sont réuni
 | Recettes du titre 1, 2018-2019 | agrégats de la Direction générale : 1 046 et 1 169 MD | somme des budgets par commune : 1 046,5 et 1 168,9 MD | concordance à l'arrondi près [@dgct-donnees-ouvertes] |
 | Dépenses des titres 1 et 2, 2018-2019 | agrégats : titre 1, 788 et 933 MD | somme : 789,7 et 940,2 MD | écart de 1,7 et 7,2 MD au titre 1, de 0,6 et 5,9 MD au titre 2, non expliqué [@dgct-donnees-ouvertes] |
 | Budgets agrégés, 2008-2012 | document de 2014 [@wb-pforr-pad-2014, tabl. 1] | agrégats de la Direction générale | recettes du titre 1 concordantes ; écarts de 10 à 14 MD sur les dépenses du titre 1 (2010-2012) et les ressources du titre 2 (2009-2010) ; fonds commun inférieur de 2 MD de 2008 à 2011 |
-| Fonds commun, 2008-2012 | évaluation technique de 2014 : 112,2 ; 119,3 ; 131,4 ; 144,3 ; 176,3 MD [@wb-pforr-ta-2014, p. 47, tabl. 2.5] | agrégats : 114, 121, 133, 147, 176 MD | l'évaluation technique rejoint le document de 2014, non la Direction générale |
 | Impôts et fonds commun, 2010 | tableau de l'Unité des finances locales du ministère des Finances, repris par Dafflon et Gilbert : taxe sur les établissements 111,1 ; taxe sur les immeubles bâtis 39,4 ; terrains non bâtis 14,9 ; quote-part au fonds commun 131,4 MD [@dafflon-gilbert-2018, p. 186-187, tabl. 20] | agrégats : 111, 39, 15, 133 MD | concordance des impôts ; fonds commun inférieur de 1,6 MD |
 | Taxe sur les immeubles bâtis, 2006-2007 | évaluation technique de 2014 : 53,5 puis 28,2 MD [@wb-pforr-ta-2014, p. 47, tabl. 2.5] | — | baisse de moitié en un an, ni confirmée ni infirmée : les agrégats de la Direction générale commencent en 2008 |
 | Fonds commun, 1990 | rapport de 1992 : 82 MD [@wb-msip-1992, fig. 6] | rapport de 1997 : 50,8 MD [@wb-mdp2-1997, annexe 4, tabl. 2] | vraisemblablement le fonds entier contre la quote-part des communes ; le rapport de 1992 donne pour 1988 un fonds de 75 MD pour 112 MD de recettes courantes, soit 67 %, alors que son texte dit que le fonds finance 47 % des budgets de fonctionnement cette année-là [@wb-msip-1992, § 1.18] |
 | Recettes courantes des communes, 1990 | rapport de 1992 : 119 MD | rapport de 1997 : 124,9 MD | recettes « courantes » contre recettes « totales » ; les valeurs de 1990-1991 du rapport de 1992 sont vraisemblablement des estimations de la mission |
-| Subventions et prêts de la CPSCL, 2006-2009 | évaluation technique de 2014 : subventions 2006, 29,8 MD ; prêts 2007, 28,6 MD ; prêts 2009, 52,4 MD [@wb-pforr-ta-2014, p. 52, tabl. 2.11] | états financiers retraités de l'année suivante : 26,3 ; 31,4 ; 42,8 MD [@cpscl-etats-financiers] | l'évaluation technique reprend l'état de l'exercice lui-même, avant retraitement |
 
 : Les écarts entre sources sur les années communes {#tbl-fl-lp-ecarts}
 
