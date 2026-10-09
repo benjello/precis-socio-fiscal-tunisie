@@ -34,10 +34,11 @@ print("\n: Les conventions de branche de l'annexe : signature, agrément, date d
 ```
 
 - **Chaque figure trace le bas et le haut de la grille.** Une grille compte des dizaines de cases — une par catégorie et par échelon. La figure d'une branche en suit, à chaque date d'effet, la plus basse et une case du haut de la grille.
+- **Chaque figure a deux vues.** En dinars courants, une marche par date d'effet. En dinars constants — ceux de la dernière année dont l'indice des prix à la consommation est publié —, un point par année : la moyenne des montants en vigueur dans l'année, rapportée aux prix de l'année de référence, selon la règle suivie pour le salaire minimum (@fig-mt-sm-evolution). Cette seconde vue dit ce que la grille permet d'acheter : entre deux grilles, la courbe descend au rythme des prix.
 - **Une valeur vaut de sa date d'effet à la veille de la suivante.** La date d'effet est celle que la grille énonce elle-même ; elle précède souvent de plusieurs mois la signature de l'avenant et l'arrêté qui l'agrée.
 - **Ce sont des salaires de base.** Les indemnités et les primes de chaque convention s'y ajoutent. Les séries commencent à la première grille qui comprend l'[indemnité complémentaire provisoire](#g-indemnite-complementaire-provisoire) : les grilles antérieures ne mesurent pas la même grandeur.
 - **« Non publiée » n'est ni zéro ni la valeur précédente.** [Le décret n° 2026-68](#r-cc-annexe-2026-68) relève de 5 %, à compter du 1^er^ janvier 2026, les [salaires de base](#g-salaire-de-base-conventionnel) de tous les échelons des dernières grilles annexées aux conventions sectorielles. Pour le bâtiment et pour les assurances, la grille qui en résulte n'est pas donnée ici : la dernière grille n'est pas prolongée au-delà du 31 décembre 2025, et le trait de la figure s'arrête au 1^er^ janvier 2026, sur un cercle creux qui porte « non publiée » (@sec-mt-cc-2026). Pour les assurances, la façon dont ce décret s'applique à la branche n'est pas établie ici.
-- **Sous chaque figure, la base législative de la grille.** Un lien mène à la page de la grille, qui donne les cases de la grille à toutes leurs dates d'effet, avec le texte et la référence de chaque montant. Les valeurs tracées sont aussi dans l'onglet « Données » de la figure.
+- **Sous chaque figure, la base législative de la grille.** Un lien mène à la page de la grille, qui donne les cases de la grille à toutes leurs dates d'effet, avec le texte et la référence de chaque montant. L'onglet « Données » de la figure donne, année par année, les cases tracées : leur moyenne en dinars courants, l'indice des prix et le montant en dinars constants.
 
 :::: {.chronologie-repliable titre="Textes communs aux branches de l'annexe : publication des avenants dans l'édition arabe (1996) et hausse des grilles par décret (2026)"}
 
@@ -87,9 +88,9 @@ cc.figure(
              "avenant14-textile-2016", "avenant15-textile-2017", "avenant16-textile-2019",
              "avenant17-textile-2022", "avenant18-textile-2024"],
     note_lecture=(
-        "Chaque marche est une grille : le trait court de sa date d'effet à la veille de la "
+        "En dinars courants, chaque marche est une grille : le trait court de sa date d'effet à la veille de la "
         "suivante. Seules la première et la dernière valeur de chaque case sont écrites ; "
-        "les autres se lisent au survol d'un point ou dans l'onglet « Données ». Ce sont des salaires de base, hors indemnités de "
+        "les autres se lisent au survol d'un point ou dans la base législative de la grille, sous la figure. Ce sont des salaires de base, hors indemnités de "
         "la convention."),
     generated="{{< meta date >}}",
 )
@@ -185,9 +186,9 @@ cc.figure(
              "Journal officiel n° 132 du 2 décembre 2022, telles qu'un site tiers les "
              "reproduit."),
     note_lecture=(
-        "Chaque marche est une grille : le trait court de sa date d'effet à la veille de la "
+        "En dinars courants, chaque marche est une grille : le trait court de sa date d'effet à la veille de la "
         "suivante. Seules la première et la dernière valeur de chaque case sont écrites ; "
-        "les autres se lisent au survol d'un point ou dans l'onglet « Données ». Le cercle creux du 1er janvier 2026 marque la date "
+        "les autres se lisent au survol d'un point ou dans la base législative de la grille, sous la figure. Le cercle creux du 1er janvier 2026 marque la date "
         "à compter de laquelle le montant n'est pas publié : le trait s'y arrête. Les marches "
         "du 1er décembre 2021, du 1er janvier 2023 et du 1er janvier 2024 sont les grilles "
         "de l'avenant n° 16, données d'après la reproduction de l'édition arabe du Journal "
@@ -285,12 +286,12 @@ cc.figure(
              "cc-assurances-avenant12-2016", "cc-assurances-avenant13-2017",
              "cc-assurances-avenant14-2019", "cc-assurances-avenant15-2022", "decret2026-68"],
     note_lecture=(
-        "Chaque marche est une grille : le trait court de sa date d'effet à la veille de la "
+        "En dinars courants, chaque marche est une grille : le trait court de sa date d'effet à la veille de la "
         "suivante. Le trait du bas est le salaire le plus bas de la grille ; celui du haut, "
         "le plus élevé, commence le 1er juin 1999, date de création du quatorzième échelon. "
         "Les douzième et treizième échelons de l'échelle 21 se lisent dans la base "
         "législative de la grille, sous la figure. Seules la première et la dernière valeur de chaque case sont "
-        "écrites ; les autres se lisent au survol d'un point ou dans l'onglet « Données ». Le "
+        "écrites ; les autres se lisent au survol d'un point ou dans la base législative de la grille, sous la figure. Le "
         "cercle creux du 1er janvier 2026 marque la date à compter de laquelle le montant "
         "n'est pas publié : le trait s'y arrête."),
     generated="{{< meta date >}}",

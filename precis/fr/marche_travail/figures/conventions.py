@@ -5,8 +5,10 @@ L'annexe ne nomme aucune case de grille : elle lit `tables/cc_index.yml`, que
 ses grilles et ses cases dans l'ordre de l'index. Une case ajoutée en amont entre dans la
 page à la régénération, sans que l'annexe change.
 
-Elle ne reproduit pas les grilles : pour chaque branche, une figure en escalier trace la plus
-basse et la plus haute des cases de l'index, et un renvoi « Base législative » mène à la page
+Elle ne reproduit pas les grilles : pour chaque branche, une figure trace la plus basse et la
+plus haute des cases de l'index — en dinars courants, en escalier, une marche par date
+d'effet ; en dinars constants, un point par année, avec l'indice et l'année de base du volume
+(`deflateur.py`) —, et un renvoi « Base législative » mène à la page
 de chaque grille — ses cases, à toutes leurs dates, avec leurs références. Ce renvoi
 est engendré avec l'index (`tables/cc_<branche>_grilles.liens.yml`), jamais écrit ici.
 
@@ -29,6 +31,8 @@ matplotlib.use("Agg")
 sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "scripts"))
 
 import figtools  # noqa: E402
+
+from . import deflateur  # noqa: E402
 
 TABLES = Path.cwd() / "tables"
 
@@ -132,16 +136,112 @@ def _courbes(tracees: list[dict]) -> dict:
 EN_LETTRES = {1: "une", 2: "deux", 3: "trois", 4: "quatre", 5: "cinq", 6: "six"}
 
 
-def _legende_figure(entree: dict, tracees: list[dict]) -> str:
-    """La légende de la figure, écrite d'après l'index : nombre de cases tracées, unité,
-    première date d'effet et dernière date qui porte une valeur."""
+def _legende_figure(entree: dict, tracees: list[dict], constants: list, base: int) -> str:
+    """La légende de la figure, écrite d'après l'index et la série : nombre de cases tracées,
+    unité, première date d'effet et dernière date qui porte une valeur ; première et
+    dernière année de la vue en dinars constants."""
     nombre = len(tracees)
     cases = f"{EN_LETTRES.get(nombre, nombre)} case{'s' if nombre > 1 else ''}"
     unite = _unites({"cases": tracees}).replace("dinars", "dinars courants")
     debut = min(c["debut"] for c in tracees)[:4]
     fin = max(c["derniere_valeur"] for c in tracees)[:4]
+    annees = [annee for _cle, annee, *_ in constants]
     return (f"{entree['description']} : {_minuscule(tracees[0]['grandeur'])} de {cases} de la "
-            f"grille, à chaque date d'effet, en {unite}, {debut}-{fin}")
+            f"grille, en {unite} à chaque date d'effet ({debut}-{fin}) et en "
+            f"{_unite_constante(tracees, base)}, en moyenne de l'année "
+            f"({min(annees)}-{max(annees)})")
+
+
+DINAR = {"fr": ("dinars", "dinars de {base}"), "ar": ("دينار", "دينار سنة {base}")}
+
+METHODE_CONSTANTS = {
+    "fr": ("En dinars de {base}, chaque point est la moyenne des montants en vigueur au "
+           "premier jour des douze mois de l'année, multipliée par le rapport de l'indice des "
+           "prix à la consommation de {base} à celui de l'année — la règle de la figure du "
+           "salaire minimum (@fig-mt-sm-evolution). Entre deux grilles, la courbe descend "
+           "donc au rythme des prix, et une grille la remonte. Une année dont la grille ne "
+           "couvre pas les douze mois n'a pas de point ; {base} est la dernière année dont "
+           "l'indice est publié, et la vue s'y arrête."),
+    "ar": ("بدينار سنة {base}، كلّ نقطة هي معدّل المبالغ النافذة في اليوم الأوّل من كلّ شهر من "
+           "أشهر السنة الاثني عشر، مضروبًا في نسبة الرقم القياسي لأسعار الاستهلاك لسنة {base} "
+           "إلى رقم السنة — وهي قاعدة شكل الأجر الأدنى (@fig-mt-sm-evolution). بين شبكتين "
+           "ينزل المنحنى إذن بنسق الأسعار، وترفعه الشبكة الجديدة. السنة التي لا تغطّي "
+           "الشبكة أشهرها الاثني عشر لا نقطة لها؛ و{base} آخر سنة نُشر رقمها "
+           "القياسي، وعندها تقف القراءة."),
+}
+
+LECTURE_CONSTANTS = {
+    "fr": ("{case} : {v0} en {a0}, {vfin} en {afin}", " ; plus haut niveau, {vmax}, en {amax}",
+           " ; plus haut niveau en {amax}", "En {unite} — ", " ; ", "."),
+    "ar": ("{case}: {v0} سنة {a0}، {vfin} سنة {afin}", "؛ أعلى مستوى، {vmax}، سنة {amax}",
+           "؛ أعلى مستوى سنة {amax}", "ب{unite} — ", "؛ ", "."),
+}
+
+
+# Intitulés de la vue en dinars constants — colonnes de l'onglet « Données », la grandeur
+# et son unité entre parenthèses ; axe vertical.
+COLONNES = {
+    "fr": {"moyenne": "{grandeur}, moyenne de l'année ({courant})",
+           "ipc": "Indice des prix à la consommation (base 100 en 1970)",
+           "reel": "{grandeur} ({constant})", "axe": "{grandeur}, en {constant}"},
+    "ar": {"moyenne": "{grandeur}، المعدّل السنوي ({courant})",
+           "ipc": "الرقم القياسي لأسعار الاستهلاك (أساس 100 سنة 1970)",
+           "reel": "{grandeur} ({constant})", "axe": "{grandeur}، ب{constant}"},
+}
+
+
+def _intitules(tracees: list[dict], base: int) -> dict:
+    courant = _unites({"cases": tracees})
+    if figtools.lang() == "fr":
+        courant = courant.replace("dinars", "dinars courants")
+    return {cle: modele.format(grandeur=tracees[0]["grandeur"], courant=courant,
+                               constant=_unite_constante(tracees, base))
+            for cle, modele in COLONNES[figtools.lang()].items()}
+
+
+def _unite_constante(tracees: list[dict], base: int) -> str:
+    """« dinars de 2025 par heure » : l'unité de l'index, le dinar daté de l'année de base."""
+    courant, constant = DINAR[figtools.lang()]
+    return _unites({"cases": tracees}).replace(courant, constant.format(base=base))
+
+
+def _decimales(sommet: float) -> int:
+    """Un salaire horaire se lit au millime ; un salaire mensuel, au dixième de dinar."""
+    return 3 if sommet < 20 else 1
+
+
+def _constants(serie: str, tracees: list[dict]):
+    """Les cases tracées en dinars constants, par année : (lignes, année de base), avec
+    l'indice et l'année de base du volume (`figtools.constants_escalier`)."""
+    return figtools.constants_escalier(serie, _courbes(tracees), colonne="case",
+                                       base=deflateur.ANNEE_BASE, ipc=deflateur.ipc())
+
+
+def lecture_constants(tracees: list[dict], constants: list, base: int) -> str:
+    """La phrase de lecture en dinars constants, calculée sur les points que la figure
+    trace : pour chaque case, le niveau de la première année, celui de la dernière, et le
+    plus haut avec son année."""
+    case_fmt, haut, haut_borne, tete, separateur, point = LECTURE_CONSTANTS[figtools.lang()]
+    sommet = max(reel for *_, reel in constants)
+    d = _decimales(sommet)
+
+    def montant(v: float) -> str:
+        return f"{v:,.{d}f}".replace(",", " ").replace(".", ",")
+
+    phrases = []
+    for case in tracees:
+        points = [(annee, reel) for cle, annee, _m, _i, reel in constants if cle == case["cle"]]
+        if not points:
+            continue
+        (a0, v0), (afin, vfin) = points[0], points[-1]
+        amax, vmax = max(points, key=lambda p: p[1])
+        phrase = case_fmt.format(case=_minuscule(case["libelle"]), v0=montant(v0), a0=a0,
+                                 vfin=montant(vfin), afin=afin)
+        phrase += (haut_borne if amax in (a0, afin) else haut).format(vmax=montant(vmax),
+                                                                     amax=amax)
+        phrases.append(phrase)
+    return (tete.format(unite=_unite_constante(tracees, base)) + separateur.join(phrases)
+            + point)
 
 
 def _millimes(v: float) -> str:
@@ -151,7 +251,12 @@ def _millimes(v: float) -> str:
 def figure(nom: str, sources: list[str], note_lecture: str | None = None,
            caveats: str = "", generated: str | None = None,
            caption: str | None = None) -> None:
-    """La grille de la branche en escalier (composant commun `figtools.figure_escalier`).
+    """La grille de la branche, en deux vues (composant commun `figtools.figure_escalier`) :
+    dinars courants, en escalier ; dinars de l'année de base du volume, un point par année.
+
+    La note de lecture reçue décrit la vue en dinars courants ; la règle des dinars constants
+    et la phrase de lecture qui en donne les niveaux s'y ajoutent ici, calculées. L'onglet
+    « Données » porte la série annuelle : moyenne en dinars courants, indice, dinars constants.
 
     Une marche par date d'effet ; seules la première et la dernière valeur de chaque case
     sont écrites, et une graduation sur cinq : une grille change chaque année ou presque.
@@ -209,13 +314,23 @@ def figure(nom: str, sources: list[str], note_lecture: str | None = None,
                    + " ; ".join(_minuscule(c["libelle"]) for c in tracees)),
         caveats=caveats,
     )
+    constants, base = _constants(serie, tracees)
+    langue = figtools.lang()
+    intitules = _intitules(tracees, base)
+    note = " ".join(filter(None, [
+        note_lecture, METHODE_CONSTANTS[langue].format(base=base),
+        lecture_constants(tracees, constants, base)]))
     figtools.figure_escalier(
         serie, _courbes(tracees), slug=f"fig_mt_cc_annexe_{nom}",
-        caption=caption or _legende_figure(entree, tracees),
-        note_lecture=note_lecture, generated=generated, fin=fin, colonne="case",
-        nominal=True, format_valeur=lambda v: "", format_infobulle=_millimes,
+        caption=caption or _legende_figure(entree, tracees, constants, base),
+        note_lecture=note, generated=generated, fin=fin, colonne="case",
+        constants=True, base=base, ipc=deflateur.ipc(), series_ipc=deflateur.SERIES_IPC,
+        decimales_constants=_decimales(sommet),
+        ylabel_constants=intitules["axe"],
+        format_valeur=lambda v: "", format_infobulle=_millimes,
         annotations=annotations,
         etiquettes_x=etiquettes, ylim=(0, 1.1 * sommet),
         ylabel=f"{tracees[0]['grandeur']}, en {_unites({'cases': tracees})}",
         supprime=SANS_VALEUR[figtools.lang()],
-        libelles={"parametre": "Case de la grille", "suppression": "montant non publié"})
+        libelles={"parametre": "Case de la grille", "suppression": "montant non publié",
+                  **intitules})

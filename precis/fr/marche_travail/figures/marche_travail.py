@@ -44,11 +44,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "scripts"))
 import figtools  # noqa: E402
 
 SERIE = "marche-travail-smig-smag"
-SERIE_IPC = "ipc-longue-periode"
-SERIE_IPC_RECENT = "bct-ipc-base2015"
-# Année des dinars constants : la dernière dont l'indice des prix est publié, jamais une année
-# à venir.
-ANNEE_BASE = 2025
+# L'indice des prix et l'année des dinars constants sont ceux du volume (`deflateur.py`),
+# communs à ce module et à celui des conventions collectives.
+from .deflateur import ANNEE_BASE, SERIE_IPC, SERIE_IPC_RECENT  # noqa: E402, F401
+from .deflateur import ipc as _ipc  # noqa: E402
 # Avant le SMIG. Seconde zone : plancher horaire jusqu'à sa suppression le 1er mai 1968
 # (décrets n° 61-145, art. 6, et n° 65-561, art. 5 ; n° 68-97). Indemnité de cherté de vie :
 # 0,020 D l'heure en sus du minimum, du 1er mai 1971 à l'institution du SMIG (décret n° 71-164).
@@ -155,19 +154,6 @@ def _moyenne_annuelle(d, colonne: str, annee: int):
     if any(v is None for v in mois):
         return None
     return sum(mois) / 12
-
-
-def _ipc() -> dict[int, float]:
-    """Indice des prix, base 1970 ; prolongé au-delà de sa dernière année par la variation de
-    l'indice en base 2015 que relaie la Banque centrale."""
-    ipc = {int(r.annee): float(r.indice_base1970)
-           for r in figtools.series(SERIE_IPC).itertuples()}
-    recent = {int(r.annee): float(r.valeur)
-              for r in figtools.series(SERIE_IPC_RECENT).itertuples()}
-    fin = max(ipc)
-    for annee in sorted(a for a in recent if a > fin and fin in recent):
-        ipc[annee] = ipc[fin] * recent[annee] / recent[fin]
-    return ipc
 
 
 def _zone2_mensuel(jour: dt.date):
