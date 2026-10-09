@@ -33,6 +33,13 @@ la note : c'est une **fiche rejouable** (`docs/conventions-redaction.md`, § 2).
   `relancer --perimees` sur toutes celles que `jort_cache` a dépassées ;
 - `elargir <id> --terme "…" --source titres_fts|titres_like|iort_ar|plein_texte` ajoute un terme
   et le rejoue depuis la naissance de l'objet ;
+- **remplis `iort_ar` pour toute recherche dont la période croise 2011 ou 2013 et après** : une
+  part des notices de `jort_cache` n'y a qu'un intitulé arabe (37 % en 2011, 40 à 80 % de 2015 à
+  2019, 8 à 16 % depuis ; `docs/notes/outillage-sources.md`, § 1 g), qu'aucune requête française
+  n'atteint. Le champ se joue sur les titres de l'index autant que sur le miroir iort. Prends les
+  termes au glossaire, puis aux intitulés arabes des textes d'ancrage et des notices voisines ;
+  la forme arabe d'une référence (« 2369 لسنة 2012 ») est dérivée par l'outil. `verifier
+  --avertissements` liste les fiches exposées sans terme arabe, et `relancer` le rappelle ;
 - **après lecture des candidats au fascicule**, consigne la passe :
   `passe <id> --resultat aucun --couverture "…" --couvert-jusqu-au AAAA-MM-JJ --sources …`.
   La couverture dit jusqu'où ET les lacunes (fascicules absents, numéros non lus) ;

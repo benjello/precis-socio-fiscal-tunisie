@@ -118,6 +118,7 @@ forme canonique et ne conserve que son en-tête.
 
 ```
 uv run python scripts/recherches.py verifier            # ancres ⇔ fiches (lancé en CI)
+uv run python scripts/recherches.py verifier --avertissements   # fiches exposées sans terme arabe
 uv run python scripts/recherches.py lister --perimees   # couvertes moins loin que jort_cache
 uv run python scripts/recherches.py relancer <id> [--depuis AAAA-MM-JJ] [--sonder-pist]
 uv run python scripts/recherches.py elargir <id> --terme "…" --source iort_ar
@@ -131,7 +132,11 @@ conclusion : chacun se lit au fascicule. Il dit aussi ce qu'il n'a pas pu parcou
 arrêtée avant la période ; avec `--sonder-pist`, fascicules parus que la base ignore). Un
 objet borné dans le temps — « texte antérieur au décret n° 81-939 » — porte une `periode`
 (`jusqu_au`, et le `motif` tiré de l'objet) : la fiche cesse d'être périmée quand sa dernière
-passe atteint la borne, et `relancer` ne cherche pas au-delà. Quand le texte est
+passe atteint la borne, et `relancer` ne cherche pas au-delà. Une recherche dont la période
+croise 2011 ou 2013 et après porte des termes arabes dans `iort_ar`, joué aussi sur les titres
+de l'index : une part des notices n'y a qu'un intitulé arabe
+(`docs/notes/outillage-sources.md`, § 1 g) ; `verifier` avertit, sans échouer, des fiches qui
+n'en portent aucun. Quand le texte est
 trouvé, la passe porte sa clé CSL, la fiche devient `resolu`, et la réserve du `.qmd` cède
 la place à la règle sourcée ; `verifier` refuse une ancre qui survit à sa fiche résolue.
 `check_jargon_depouillement.py` refuse, dans le texte rendu, les tournures du récit de

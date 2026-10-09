@@ -21,7 +21,7 @@ jort_annee, jort_numero, jort_tome, pages, pdf_fr, pdf_ar`. Plus `keywords` (ind
 C'est elle qui donne, pour chaque texte, **le fascicule et la page** — donc le ciblage exact
 d'une océrisation.
 
-### Six pièges, tous mesurés
+### Sept pièges, tous mesurés
 
 **a) 42 % des textes ont un `numero` NULL.** 33 014 sur 78 953, dont **31 259 arrêtés**. Toute
 concaténation `||` non protégée par `coalesce()` les fait disparaître silencieusement. Or ce sont
@@ -72,6 +72,51 @@ connaître le dernier numéro d'une année. Une relance qui dit « absent du cor
 sur pist.tn (requête HEAD, sans télécharger) les numéros absents de la base entre 1 et le
 dernier numéro cohérent, plus cinq, et les liste comme « existants sur pist.tn, inconnus de
 jort_cache ».
+
+**g) Des notices à intitulé arabe seul** (mesuré le 8 octobre 2026, dernière publication indexée
+le 2 octobre). Sur 79 602 notices de `textes`, 5 352 ont un `titre` en caractères arabes (et un
+`objet` qui le reprend) : une requête française sur les titres ne les atteint pas. C'est ainsi que
+le décret n° 2011-2281 avait été manqué. La part dépend de l'année de publication :
+
+| Année | Part des notices | Année | Part des notices |
+|---|---:|---|---:|
+| avant 2011 | 0 (14 notices isolées) | 2019 | 76 % |
+| 2011 (second semestre : JORT n° 61 à 99) | 37 % | 2020 | 14 % |
+| 2012 | 0 | 2021 | 9 % |
+| 2013 | 5 % | 2022 | 13 % |
+| 2014 (à partir du 28 octobre) | 9 % | 2023 | 16 % |
+| 2015 | 40 % | 2024 | 8 % |
+| 2016 | 70 % | 2025 | 9 % |
+| 2017 | 53 % | 2026 (au 2 octobre) | 8 % |
+| 2018 | 80 % | | |
+
+De 2016 à 2018 le type reste écrit en français (« Decret gouvernemental n° … ») devant un
+intitulé arabe ; à partir de 2019 tout le titre est arabe, et `numero` porte parfois le numéro du
+fascicule : la référence se cherche alors par « N لسنة AAAA ».
+
+→ Toute recherche dont la période croise 2011 ou 2013 et après porte des **termes arabes**, dans
+`requetes.iort_ar` : malgré son nom, ce champ se joue aussi sur les titres de `jort_cache`, par
+`LIKE` normalisé puis par FTS. Ce que fait `scripts/recherches.py` :
+
+- `verifier` **avertit**, sans échouer, de toute fiche non résolue exposée qui ne porte aucun
+  terme arabe (`verifier --avertissements` les liste). La table des années exposées est figée dans
+  le script (`ANNEES_INTITULES_ARABES`) — la CI n'a pas la base — et se remesure ici ;
+- `relancer` affiche le nombre de notices à intitulé arabe de la période de recherche, et
+  « aucun terme arabe dans la fiche » le cas échéant ;
+- toute référence « AAAA-N » ou « AA-N » des termes d'une fiche est aussi cherchée sous sa forme
+  arabe (« 2012-2369 » → « 2369 لسنة 2012 », qui trouve les modificatifs à intitulé arabe) ; une
+  plage d'années (« 2023-2025 ») n'est pas prise pour une référence ;
+- dans la voie `LIKE`, un motif qui commence ou finit par un chiffre est borné : « 6 لسنة 1981 »
+  ne répond plus sur « 526 لسنة 1981 » (un motif à joker intérieur reste tel qu'il est écrit) ;
+- la normalisation retire chadda et voyelles (« المحليّة »), et plie ة sur ه et ى sur ي — pas
+  davantage : plier plus loin rapproche des mots distincts.
+
+Le `LIKE` l'emporte sur le FTS pour l'arabe : `unicode61` indexe par mots entiers, et l'article ou
+les particules collées (ال، بال، لل، و) font manquer des réponses (« منحة » : 152 par FTS, 187 par
+`LIKE`). Les termes se prennent, dans l'ordre, au glossaire (`precis/glossaire.yml`), aux intitulés
+arabes du miroir iort des textes d'ancrage, aux intitulés arabes voisins de l'index ; une
+traduction de son cru ne sert qu'à défaut. Piste non suivie : un alias `titres_ar` de `iort_ar`,
+qui dirait mieux ce que le champ interroge, mais toucherait toutes les fiches.
 
 ### Mettre la base à jour
 
