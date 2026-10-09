@@ -1,135 +1,360 @@
-# Taxes, redevances et autonomie fiscale {#sec-fl-taxes}
+# Taxes, redevances et autonomie fiscale {#sec-fl-taxes .domicile-unique}
 
-Les quatre impôts des deux chapitres précédents n'épuisent pas le [code de la fiscalité locale](#g-code-fiscalite-locale). Ses chapitres V à VIII réunissent des prélèvements de nature plus diverse : une taxe sur les spectacles, une contribution des riverains aux travaux de voirie, un droit de licence sur les débits de boissons, et une trentaine d'articles de « taxes et redevances diverses ». Le chapitre des notions distingue l'impôt, prélevé sans contrepartie, la taxe, due par celui qui demande l'accès à un service, et la redevance d'utilisation, prix d'un service proportionné à son coût (@sec-fl-impot-taxe-redevance) ; les mots du code ne suivent pas cette classification, et chaque prélèvement est confronté ici à la notion qu'il recouvre. Le chapitre examine enfin ce que les collectivités peuvent décider elles-mêmes, sur l'assiette, le taux ou le tarif de leurs ressources, au regard des degrés d'autonomie définis au chapitre des notions (@sec-fl-autonomie), et le changement qu'apporte le code des collectivités locales de 2018.
+À côté de leurs quatre impôts (@sec-fl-immeubles, @sec-fl-activite), les collectivités locales perçoivent des prélèvements plus divers, que le [code de la fiscalité locale](#g-code-fiscalite-locale) réunit dans ses chapitres V à VIII : une taxe sur les spectacles, une contribution des riverains aux travaux de voirie, un droit de licence sur les débits de boissons et une trentaine d'articles de « taxes et redevances diverses ». Le code ne suit pas la classification du chapitre des notions entre l'impôt, la taxe et la [redevance d'utilisation](#g-redevance-utilisation) (@sec-fl-impot-taxe-redevance).
 
-Les articles cités sans autre précision sont ceux du code de la fiscalité locale ; les textes sans clause d'effet sont datés du jour où ils deviennent exécutoires [@loi93-64, art. 2].
+Le chapitre dit qui fixe chaque prélèvement — la loi, un décret ou la collectivité —, ce que le code des collectivités locales de 2018 y change, puis, pour chaque prélèvement, qui le paie, sur quoi et combien.
 
-## Les origines {#sec-fl-taxes-origines}
+## Vue d'ensemble {#sec-fl-taxes-vue-ensemble}
 
-La loi qui promulgue le code abroge les textes qui régissaient jusque-là ces prélèvements : le décret du 31 janvier 1887 sur la contribution des propriétaires riverains ; le décret du 15 janvier 1914, pour ses dispositions sur la taxe d'abattage, l'occupation temporaire de la voie publique et la taxe sur les véhicules ; le décret du 24 février 1914 sur les droits de voirie ; le décret du 4 septembre 1947 sur la taxe de compensation ; le décret du 1er juin 1951 sur la taxe sur les spectacles ; le décret du 22 mars 1956 sur le droit de licence ; enfin plusieurs articles de la loi n° 71-41 du 28 juillet 1971 sur le pesage et le mesurage publics [@loi97-11, art. 3 de la loi]. Seul l'objet de ces textes est connu ici, d'après cette liste ; leurs règles ne sont pas exposées.
+Depuis [1997](#r-fl-tax-dates-1997), la loi énumère les droits et redevances des collectivités locales et un décret en fixe les tarifs ; le code des collectivités locales de [2018](#r-fl-tax-ccl-137) confie ces tarifs aux conseils élus (@tbl-fl-taxes-reformes).
 
-<!-- TODO (documentaliste) : lire les textes abrogés par l'art. 3 de la loi n° 97-11 (décrets de 1887, 1914, 1947, 1951 et 1956, loi n° 71-41), pour le futur chapitre d'histoire des collectivités. -->
+| Réforme | Ce que la loi cherche | Avant → après | Mise en œuvre |
+|---|---|---|---|
+| [**1997 — le code de la fiscalité locale**](#r-fl-tax-1997-loi) | loi « portant promulgation du code de la fiscalité locale » | sept textes de 1887 à 1971 → quatre chapitres d'un même code ; la loi fixe la liste des prélèvements, un décret leur tarif | effet au [1^er^ janvier 1997]{.insecable} ; premier décret de tarifs le [1^er^ août 1998]{.insecable}, remplacé le [5 juillet 2016]{.insecable} |
+| [**2018 — les droits et redevances confiés aux conseils élus**](#r-fl-tax-ccl-131) | faire progressivement des ressources propres la part la plus importante des ressources de chaque collectivité | tarif fixé par décret, ou par la collectivité quand le décret le lui laisse → montant, tarif, exonérations et réductions délibérés par chaque conseil élu | communes élues en 2018 ; conseils municipaux dissous le [14 mars 2023]{.insecable} |
 
-## Les taxes et redevances du code de 1997 {#sec-fl-taxes-code}
+: Les droits et redevances des collectivités locales : la mise en place et la grande réforme {#tbl-fl-taxes-reformes}
 
-### La taxe sur les spectacles {#sec-fl-spectacles}
+<!-- TODO (rédacteur) : frise de la mise en place, des deux décrets de tarifs et du code de 2018 ; plan de l'architecte, § 0.4. D'ici là, le tableau `tbl-fl-taxes-reformes` en tient lieu. -->
 
-La taxe sur les spectacles, « المعلوم على العروض », est due par les organisateurs de spectacles occasionnels. Elle est calculée sur la moitié des recettes prévisionnelles, compte tenu du nombre de places et du prix des billets, au taux de 6 %, et payée avant la délivrance de l'autorisation ; le défaut de paiement entraîne une pénalité égale au double du droit [@loi97-11, art. 46-51]. Sont exonérés les spectacles organisés au profit d'organisations de bienfaisance subventionnées par l'État, ceux des associations artistiques agréées sans artiste professionnel, les foires et manifestations gratuites, et les spectacles dont le prix d'entrée n'excède pas un montant fixé par décret [@loi97-11, art. 47]. Ce montant est fixé par le décret n° 97-530, exécutoire le 7 avril 1997 (@tbl-fl-taxes-baremes) [@decret97-530].
+- **Aucune collectivité ne fixe le taux d'un impôt** : elle choisit seulement le prix de référence de la taxe sur les immeubles bâtis, dans une fourchette, et accorde le dégrèvement (@sec-fl-moduler-impots).
+- **Sur les droits et redevances, elle décide davantage** : dès 1998, le décret lui laisse treize tarifs (@sec-fl-taxes-tarifs) ; en 2018, le code des collectivités locales les confie tous au conseil élu (@sec-fl-ccl-2018).
+- **Depuis le 14 mars 2023, les communes n'ont plus de conseil élu** : l'autorité qui arrête un tarif en 2026 est l'objet de l'état du droit (@sec-fl-moduler-droits).
 
-Assise sur une recette et sans contrepartie pour l'organisateur, cette taxe est un impôt au sens du chapitre des notions, comme les deux impôts sur l'activité (@sec-fl-activite).
+Les articles cités sans autre précision sont ceux du code de la fiscalité locale ; les montants sont en dinars (D). Un texte qui ne fixe pas lui-même sa date d'effet est daté du jour où il devient exécutoire, [cinq jours après le dépôt du *Journal officiel*](#r-fl-tax-dates-regle) au siège du gouvernorat de Tunis, jour du dépôt non compté.
 
-### La contribution des propriétaires riverains {#sec-fl-riverains}
+:::: {.chronologie-repliable titre="Dates d'application des textes des taxes et redevances : la règle générale et les clauses propres, 1997-2026"}
 
-Les propriétaires riverains contribuent aux travaux de premier établissement et de grosses réparations des voies, des trottoirs et des conduites d'évacuation des eaux usées, ainsi qu'à l'aménagement des quartiers résidentiels et des zones industrielles et touristiques. Les travaux et la perception ne peuvent commencer qu'après un décret qui les déclare d'utilité publique [@loi97-11, art. 52]. La contribution est fixée sur le montant des travaux adjugés, répartie selon la longueur des façades pour les voies et les trottoirs, à parts égales pour les autres travaux [@loi97-11, art. 53]. La collectivité peut la réduire de moitié au plus, en supportant le reliquat, pour les cas sociaux [@loi97-11, art. 53] ; depuis le 1er août 2002, ces contribuables bénéficient d'un dégrèvement total, selon les règles de la taxe sur les immeubles bâtis [@loi2002-76, art. 3]. Une avance de 10 à 30 %, dont le président de la collectivité fixe le taux par arrêté, est exigée ; le reliquat est payé sans intérêt en cinq annuités à partir de l'achèvement des travaux, sous peine d'une pénalité annuelle de 10 % ; l'avance est restituée si les travaux ne sont pas réalisés dans les deux ans [@loi97-11, art. 59-60].
+| Date d'effet | Texte et article | Ce que le texte dit de sa date d'application |
+|---|---|---|
+| []{#r-fl-tax-dates-regle}règle générale, depuis 1993 | loi sur la publication des textes [@loi93-64, art. 2] | un texte sans clause d'effet devient exécutoire cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis, jour du dépôt non compté |
+| []{#r-fl-tax-dates-1997}[1^er^ janvier 1997]{.insecable} | loi de promulgation du code [@loi97-11, art. 3 de la loi, p. 173] | clause propre : le code entre en vigueur au [1^er^ janvier 1997]{.insecable}, alors que la loi paraît au *Journal officiel* du [7 février 1997]{.insecable} |
+| []{#r-fl-tax-dates-decrets-1997}[13 mars 1997]{.insecable} et [7 avril 1997]{.insecable} | décrets de tarif du droit de licence et de prix d'entrée des spectacles [@decret97-434 ; @decret97-530] | aucune clause : exécutoires cinq jours après le dépôt ; le second est déposé le [2 avril 1997]{.insecable} |
+| []{#r-fl-tax-dates-1998}[1^er^ août 1998]{.insecable} | premier décret de tarifs [@decret98-1428] | aucune clause : *Journal officiel* du [24 juillet 1998]{.insecable}, déposé le [27 juillet 1998]{.insecable} |
+| []{#r-fl-tax-dates-lois-finances}1^er^ janvier de l'année | lois de finances pour 2002, 2003, 2013 et 2026 [@loi2001-123-lf2002, art. 97 ; @lf-2003, art. 87 ; @lf-2013, art. 79 ; @lf-2026, art. 110] | clause générale : la loi s'applique au 1^er^ janvier de l'année, sauf mention contraire ; article 110 de la loi de finances pour 2026 à la page 4258 de l'édition arabe |
+| []{#r-fl-tax-dates-2002}[1^er^ août 2002]{.insecable} | loi d'allégement de la charge fiscale [@loi2002-76] | aucune clause : exécutoire cinq jours après le dépôt |
+| []{#r-fl-tax-dates-2016}[5 juillet 2016]{.insecable} | second décret de tarifs [@decret2016-805] | aucune clause : *Journal officiel* du [29 juin 2016]{.insecable}, déposé le [30 juin 2016]{.insecable} |
+| []{#r-fl-tax-dates-2018}[22 mai 2018]{.insecable} | code des collectivités locales [@loi-org-2018-29-ccl, art. 383] | *Journal officiel* du [15 mai 2018]{.insecable}, déposé le [17 mai 2018]{.insecable} ; clause propre : chaque catégorie de collectivités après ses élections, et les dispositions budgétaires au 1^er^ janvier de l'année suivante |
+| []{#r-fl-tax-dates-2023}[14 mars 2023]{.insecable} | dissolution des conseils municipaux [@decretloi2023-9] | aucune clause : *Journal officiel* du [9 mars 2023]{.insecable}, déposé le même jour |
+| []{#r-fl-tax-dates-2026}après les prochaines élections municipales | décret-loi relatif aux conseils municipaux [@decretloi2026-4, art. 136, p. 2074] | clause propre : entrée en vigueur dès la proclamation des résultats définitifs des premières élections municipales qui suivent sa publication |
 
-Liée à des travaux dont le riverain bénéficie, et calculée sur leur coût, la contribution se rapproche de la redevance d'utilisation du chapitre des notions ; elle en diffère en ce qu'elle est obligatoire pour tout riverain.
+: Dates d'application des textes des taxes et redevances {#tbl-fl-taxes-dates}
 
-### Le droit de licence sur les débits de boissons {#sec-fl-licence}
+::::
 
-Le droit de licence est dû par les exploitants de cafés, de bars, de salons de thé et, plus généralement, de tout établissement vendant des boissons à consommer sur place, selon un tarif fixé par décret pour chaque catégorie d'établissement [@loi97-11, art. 61]. Il est déclaré en janvier à la recette des finances, ou avec la déclaration d'impôt pour les forfaitaires, et dû pour l'année entière ; une retenue de 10 % revient au budget de l'État [@loi97-11, art. 62]. Le tarif est fixé par le décret n° 97-434, exécutoire le 13 mars 1997 (@tbl-fl-taxes-baremes) [@decret97-434].
+## La mise en place, 1997 {#sec-fl-taxes-mise-en-place}
 
-### Les taxes et redevances diverses {#sec-fl-taxes-diverses}
+Le code de la fiscalité locale, en vigueur au 1^er^ janvier 1997, est présenté au chapitre des impôts sur les immeubles (@sec-fl-code-1997) ; quatre de ses huit chapitres portent sur les prélèvements de ce chapitre (@tbl-fl-taxes-code-1997).
 
-Le chapitre VIII, « معاليم مختلفة », compte six sections [@loi97-11, art. 64-95] :
+### Ce que le code remplace {#sec-fl-taxes-origines}
 
-- les redevances sur les formalités administratives : légalisation de signature, certification conforme des copies, délivrance de certificats et d'actes d'état civil (art. 64-67) ;
-- la taxe sur les autorisations administratives : abattage hors abattoir, occupation de la voie publique pour l'exercice de certains métiers, fêtes, permis de bâtir, inhumation, permis de circulation des taxis et voitures de transport public, distributeurs de carburant, et toute autre autorisation délivrée par la collectivité (art. 68) ;
-- les droits perçus dans les marchés : stationnement, taxe sur le chiffre d'affaires des commissionnaires et approvisionneurs du marché de gros, criée, pesage et mesurage, colportage, abri et gardiennage, contrôle sanitaire des produits de la mer (art. 69-81) ;
-- les taxes et redevances sur le domaine de la collectivité : abattage, contrôle sanitaire des viandes, occupation temporaire de la voie publique, occupation du domaine public maritime, concessions funéraires, et contribution à la réalisation de parkings collectifs (art. 82-90) ;
-- les redevances pour prestations publiques payantes : entretien des conduites, fourrière, contribution aux travaux d'électrification et d'éclairage public, perçue sur les factures d'électricité et de gaz, enlèvement des déchets non ménagers, et toute autre prestation individuelle (art. 91) ;
-- des dispositions communes (art. 92-95).
+[La loi qui promulgue le code](#r-fl-tax-1997-loi) abroge sept textes, de 1887 à 1971, qui régissaient la contribution des riverains, l'abattage, l'occupation de la voie publique, les véhicules, les droits de voirie, la taxe de compensation, les spectacles, le droit de licence, le pesage et le mesurage publics. Seul leur objet est connu ici, d'après cette liste. Le tarif par décret précède lui aussi le code : le [décret de tarifs de 1998](#r-fl-tax-1998-tarifs) en abroge un du 28 novembre 1990.
 
-Les tarifs des cinq premières sections sont fixés par décret, à l'exception de la contribution aux parkings, dont le code fixe lui-même le barème [@loi97-11, art. 92]. Le tarif de l'enlèvement des déchets non ménagers est fixé par arrêté de la collectivité, approuvé par l'autorité de tutelle, et une convention annuelle est conclue avec chaque bénéficiaire [@loi97-11, art. 93]. Ces prélèvements sont perçus par le receveur des finances ou par le mandataire du marché, contre reçu [@loi97-11, art. 94].
+<!-- TODO (documentaliste) : lire les textes abrogés par l'art. 3 de la loi n° 97-11 (décrets de 1887, 1914, 1947, 1951 et 1956, loi n° 71-41), pour le futur chapitre d'histoire des collectivités ; lire aussi le décret n° 90-1960 du 28 novembre 1990 (JORT n° 79 du 4 décembre 1990, p. 1848-1854 d'après la base de métadonnées) et son modificatif n° 95-1121 : la faculté laissée à la collectivité d'arrêter un tarif peut être antérieure à 1998. -->
 
-Sous un même chapitre, ces prélèvements relèvent de notions différentes. Les redevances sur prestations, perçues sur le bénéficiaire du service, se rapprochent de la redevance d'utilisation ; la taxe sur les autorisations, due par celui qui demande l'autorisation, de la taxe au sens du chapitre des notions ; la taxe sur le chiffre d'affaires des commissionnaires du marché de gros, assise sur leurs ventes, d'un impôt.
+### Quatre chapitres du code, et des tarifs fixés par décret {#sec-fl-taxes-architecture}
 
-**La contribution aux parkings.** Elle est due par le propriétaire d'une construction nouvelle, agrandie ou transformée qui ne peut satisfaire aux normes de stationnement, dans des zones fixées par arrêté conjoint des ministres de l'intérieur et de l'urbanisme [@loi97-11, art. 89]. Le code de 1997 la fixait par place de stationnement selon la population de la commune, et la doublait pour les places manquantes ou réaffectées sans autorisation [@loi97-11, art. 90]. La loi de finances pour 2003 a récrit ce barème au 1er janvier 2003, en croisant la part des places manquantes et la population [@lf-2003, art. 79].
+Les chapitres V à VIII du code reprennent ces prélèvements : la loi en fixe la liste, le redevable et, pour la taxe sur les spectacles, la contribution des riverains et les parkings, le calcul ; un décret fixe les autres montants, sauf ceux qu'il laisse à la collectivité (@tbl-fl-qui-fixe).
 
-| Population de la commune | Contribution par place de stationnement |
-|---|---|
-| plus de 20 000 et au plus 50 000 habitants | 100 D |
-| plus de 50 000 et au plus 100 000 habitants | 250 D |
-| plus de 100 000 habitants | 500 D |
+- **Les tarifs par décret.** [L'article 92](#r-fl-tax-1997-tarifs) renvoie à un décret les tarifs du chapitre VIII, sauf le barème des parkings, que le code fixe lui-même (@sec-fl-parkings) ; le premier décret est exécutoire le 1^er^ août 1998 (@sec-fl-taxes-tarifs).
+- **Ce que la collectivité décide dès 1997.** Le tarif de l'enlèvement des déchets non ménagers, sous l'approbation de l'autorité de tutelle ([article 93](#r-fl-tax-1997-dechets)) ; la réduction de la contribution des riverains et le taux de son avance (@sec-fl-riverains).
+- **Qui encaisse.** Le receveur des finances ou le mandataire du marché, contre reçu ([article 94](#r-fl-tax-1997-perception)).
+- **Trois notions sous un même vocabulaire.** Sans contrepartie pour le redevable, la taxe sur les spectacles et la taxe sur le chiffre d'affaires des commissionnaires du marché de gros sont des impôts au sens du chapitre des notions ; la taxe sur les autorisations est une taxe. Les redevances pour prestations et la contribution des riverains, obligatoire pour tout riverain, se rapprochent de la redevance d'utilisation.
 
-: Contribution à la réalisation de parkings collectifs, du 1er janvier 1997 au 31 décembre 2002 ; montant doublé pour les places manquantes ou réaffectées {#tbl-fl-parkings-1997}
+:::: {.chronologie-repliable titre="Chapitres V à VIII du code de la fiscalité locale — spectacles, riverains, licence, taxes et redevances diverses : articles, rédaction de 1997"}
 
-Source : @loi97-11, art. 90.
+| Objet | Texte et article | Ce que dit l'article |
+|---|---|---|
+| []{#r-fl-tax-1997-loi}Abrogations et entrée en vigueur | loi de promulgation [@loi97-11, art. 3 de la loi] | abrogation des textes antérieurs : décret du [31 janvier 1887]{.insecable} (contribution des propriétaires riverains) ; décret du [15 janvier 1914]{.insecable} (taxe d'abattage, occupation temporaire de la voie publique, taxe sur les véhicules) ; décret du [24 février 1914]{.insecable} (droits de voirie) ; décret du [4 septembre 1947]{.insecable} (taxe de compensation) ; décret du [1^er^ juin 1951]{.insecable} (taxe sur les spectacles) ; décret du [22 mars 1956]{.insecable} (droit de licence) ; plusieurs articles de la loi n° 71-41 du [28 juillet 1971]{.insecable} (pesage et mesurage publics) ; entrée en vigueur au [1^er^ janvier 1997]{.insecable} |
+| []{#r-fl-tax-1997-spectacles}Spectacles : ensemble | code, art. 46 à 51 [@loi97-11, art. 46-51] | taxe due par les organisateurs de spectacles occasionnels, payée avant la délivrance de l'autorisation ; pénalité égale au double du droit |
+| []{#r-fl-tax-1997-spectacles-exo}Spectacles : exonérations | code, art. 47 [@loi97-11, art. 47] | spectacles au profit d'organisations de bienfaisance subventionnées par l'État ; associations artistiques agréées sans artiste professionnel ; foires et manifestations gratuites ; prix d'entrée n'excédant pas un montant fixé par décret |
+| []{#r-fl-tax-1997-spectacles-assiette}Spectacles : assiette | code, art. 48 [@loi97-11, art. 48] | 50 % des recettes prévisionnelles, compte tenu du nombre de places et du prix des billets |
+| []{#r-fl-tax-1997-spectacles-taux}Spectacles : taux | code, art. 49 [@loi97-11, art. 49] | 6 % |
+| []{#r-fl-tax-1997-riverains}Riverains : travaux | code, art. 52 [@loi97-11, art. 52] | premier établissement et grosses réparations des voies, des trottoirs et des conduites d'évacuation des eaux usées ; aménagement des quartiers résidentiels et des zones industrielles et touristiques ; décret déclarant les travaux d'utilité publique |
+| []{#r-fl-tax-1997-riverains-calcul}Riverains : calcul et réduction | code, art. 53 [@loi97-11, art. 53] | montant des travaux adjugés, réparti selon la longueur des façades pour les voies et les trottoirs, à parts égales pour les autres travaux ; réduction de moitié au plus pour les cas sociaux, le reliquat à la charge de la collectivité |
+| []{#r-fl-tax-1997-riverains-avance}Riverains : avance | code, art. 59 [@loi97-11, art. 59] | avance de 10 à 30 %, dont le président de la collectivité fixe le taux par arrêté |
+| []{#r-fl-tax-1997-riverains-paiement}Riverains : paiement | code, art. 59 et 60 [@loi97-11, art. 59-60] | reliquat payé sans intérêt en cinq annuités à partir de l'achèvement des travaux ; pénalité annuelle de 10 % ; avance restituée si les travaux ne sont pas réalisés dans les deux ans |
+| []{#r-fl-tax-1997-riverains-collectivite}Riverains : ce que la collectivité décide | code, art. 53 et 59 [@loi97-11, art. 53 et 59] | la réduction, jusqu'à la moitié ; le taux de l'avance, entre 10 et 30 % |
+| []{#r-fl-tax-1997-licence}Licence : redevable et tarif | code, art. 61 [@loi97-11, art. 61] | exploitants de cafés, de bars, de salons de thé et de tout établissement vendant des boissons à consommer sur place ; tarif fixé par décret pour chaque catégorie |
+| []{#r-fl-tax-1997-licence-declaration}Licence : déclaration et retenue | code, art. 62 [@loi97-11, art. 62] | déclaration en janvier à la recette des finances, ou avec la déclaration d'impôt pour les forfaitaires ; droit dû pour l'année entière ; retenue de 10 % au profit du budget de l'État |
+| []{#r-fl-tax-1997-diverses}Taxes et redevances diverses : ensemble | code, art. 64 à 95 [@loi97-11, art. 64-95] | six sections : formalités (art. 64-67), autorisations (art. 68), marchés (art. 69-81), domaine (art. 82-90), prestations (art. 91), dispositions communes (art. 92-95) |
+| []{#r-fl-tax-1997-commissionnaires}Commissionnaires : pénalité de retard | code, art. 74 [@loi97-11, art. 74] | 1,25 % par mois |
+| []{#r-fl-tax-1997-parkings}Parkings : redevable | code, art. 89 [@loi97-11, art. 89] | propriétaire d'une construction nouvelle, agrandie ou transformée qui ne peut satisfaire aux normes de stationnement, dans des zones fixées par arrêté conjoint des ministres de l'intérieur et de l'urbanisme |
+| []{#r-fl-tax-1997-parkings-bareme}Parkings : barème | code, art. 90 [@loi97-11, art. 90] | 100, 250 ou 500 D par place selon la population de la commune ; montant doublé pour les places manquantes ou réaffectées sans autorisation (p. 181) |
+| []{#r-fl-tax-1997-tarifs}Tarifs | code, art. 92 [@loi97-11, art. 92] | tarifs des cinq premières sections fixés par décret, sauf la contribution aux parkings |
+| []{#r-fl-tax-1997-dechets}Déchets non ménagers | code, art. 93 [@loi97-11, art. 93] | tarif fixé par arrêté de la collectivité, approuvé par l'autorité de tutelle ; convention annuelle avec chaque bénéficiaire |
+| []{#r-fl-tax-1997-perception}Perception | code, art. 94 [@loi97-11, art. 94] | receveur des finances ou mandataire du marché, contre reçu |
+| []{#r-fl-tax-1997-immeubles}Immeubles bâtis : ce que la collectivité décide | code [@loi97-11, art. 4 et 6] | prix de référence du mètre carré couvert, par arrêté motivé, dans la fourchette du décret ; dégrèvement, sur délibération du conseil |
 
-<!-- TODO (documentaliste) : transcrire le barème de l'art. 90 récrit par l'art. 79 de la LF 2003 (JORT n° 102 de 2002, FR p. 2887), pour en faire un tableau à deux onglets (1997, 2003). -->
+: Les chapitres V à VIII du code de 1997 : articles {#tbl-fl-taxes-code-1997}
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré, à onglets, quand les deux états du barème seront datés et sourcés dans la base de paramètres. -->
+Le code occupe les pages 173 à 181 du *Journal officiel* n° 11 du 7 février 1997.
 
-### Les tarifs fixés par décret {#sec-fl-taxes-tarifs}
+::::
 
-Les tarifs des formalités, des autorisations, des marchés, du domaine et des prestations ont d'abord été fixés par le décret n° 98-1428 du 13 juillet 1998. Le décret gouvernemental n° 2016-805 du 13 juin 2016, exécutoire le 5 juillet 2016, l'abroge et fixe ces tarifs dans un tableau annexé [@decret2016-805, art. 1 et 2]. Ce tableau mêle deux formes de tarif. Pour la plupart des formalités et des autorisations, il fixe un montant. Pour d'autres prélèvements — l'occupation de la voie publique par les métiers, les terrasses ou les chantiers, le stationnement dans les marchés et sur la voie publique, la publicité, le domaine public maritime, la fourrière, l'enlèvement de certains déchets —, il dispose que le tarif « est fixé par arrêté de la collectivité locale concernée », entre un minimum et un maximum, ou au-dessus d'un minimum [@decret2016-805, annexe].
+## Les grandes réformes {#sec-fl-taxes-reformes}
 
-<!-- TODO (documentaliste) : transcrire les tarifs du décret n° 98-1428 et de ses modificatifs, puis ceux du décret gouvernemental n° 2016-805, pour un tableau daté à onglets ; lire l'édition arabe du décret de 2016, qui fait foi. -->
+De 1997 à 2018, ces prélèvements ne connaissent que des ajustements de tarif, de pénalité ou d'exonération. Le code des collectivités locales de 2018 change, lui, l'autorité qui les fixe.
 
-| Prélèvement | Élément | Valeur | Texte | En vigueur depuis |
+### Entre 1997 et 2018 : des ajustements, un nouveau décret de tarifs {#sec-fl-taxes-1997-2018}
+
+Huit textes règlent une grandeur ou une exonération sans déplacer le pouvoir de fixer : deux décrets d'application en 1997, deux décrets de tarifs, en 1998 et en 2016 (@sec-fl-taxes-tarifs), et quatre ajustements, en 2002, 2003 et 2013, décrits à la section de chaque prélèvement (@sec-fl-taxes-code).
+
+:::: {.chronologie-repliable titre="Taxes et redevances des chapitres V à VIII du code de la fiscalité locale : textes, date par date, 1997-2026"}
+
+| Date d'effet | Prélèvement | Portée | Texte et article | Avant → après |
 |---|---|---|---|---|
-| Taxe sur les spectacles | assiette | 50 % des recettes prévisionnelles | [@loi97-11, art. 48] | 1er janvier 1997 |
-| Taxe sur les spectacles | taux | 6 % | [@loi97-11, art. 49] | 1er janvier 1997 |
-| Taxe sur les spectacles | prix d'entrée maximal ouvrant droit à l'exonération | 5 D | [@decret97-530] | 7 avril 1997 |
-| Contribution des riverains | réduction possible pour les cas sociaux | jusqu'à 50 % | [@loi97-11, art. 53] | 1er janvier 1997 |
-| Contribution des riverains | avance | de 10 à 30 % | [@loi97-11, art. 59] | 1er janvier 1997 |
-| Droit de licence | tarif annuel, catégories 1, 2 et 3 | 25 D, 150 D, 300 D | [@decret97-434] | 13 mars 1997 |
-| Droit de licence | retenue au profit du budget de l'État | 10 % | [@loi97-11, art. 62] | 1er janvier 1997 |
-| Taxe sur le chiffre d'affaires des commissionnaires | pénalité de retard, par mois | 1,25 % | [@loi97-11, art. 74] | 1er janvier 1997 |
-| idem | idem | 0,75 % | [@loi2001-123-lf2002, art. 88] | 1er janvier 2002 |
+| []{#r-fl-tax-1997-licence-tarif}[13 mars 1997]{.insecable} | droit de licence | étape — de 1997 | tarif du droit de licence [@decret97-434] | — → 25, 150 et 300 D par an pour les catégories 1, 2 et 3 (*Journal officiel* n° 19, p. 390) |
+| []{#r-fl-tax-1997-spectacles-prix}[7 avril 1997]{.insecable} | taxe sur les spectacles | étape — de 1997 | prix d'entrée exonéré [@decret97-530] | — → exonération des spectacles dont le prix d'entrée n'excède pas 5 D (*Journal officiel* n° 26, p. 531) |
+| []{#r-fl-tax-1998-tarifs}[1^er^ août 1998]{.insecable} | taxes et redevances diverses | étape — de 1997 | premier décret de tarifs [@decret98-1428, art. 1 et 2 et annexe, p. 1621-1626] | décret n° 90-1960 du [28 novembre 1990]{.insecable}, abrogé → tableau annexé en cinq parties, une par section du chapitre VIII ; treize tarifs, dans onze rubriques, laissés à un arrêté de la collectivité |
+| []{#r-fl-tax-2002-commissionnaires}[1^er^ janvier 2002]{.insecable} | taxe sur le chiffre d'affaires des commissionnaires | ajustement | loi de finances pour 2002 [@loi2001-123-lf2002, art. 88] | art. 74 : pénalité de retard 1,25 % → 0,75 % par mois |
+| []{#r-fl-tax-2002-riverains}[1^er^ août 2002]{.insecable} | contribution des riverains | ajustement | loi d'allégement de la charge fiscale [@loi2002-76, art. 3] | art. 53 : dégrèvement total pour les contribuables à faible revenu, selon les règles de la taxe sur les immeubles bâtis (p. 1715) |
+| []{#r-fl-tax-2003-parkings}[1^er^ janvier 2003]{.insecable} | contribution aux parkings | ajustement | loi de finances pour 2003 [@lf-2003, art. 79] | art. 90 : barème selon la population → barème croisant la part des places manquantes et la population (p. 2887) |
+| []{#r-fl-tax-2013-hydrauliques}[1^er^ janvier 2013]{.insecable} | redevances pour prestations | ajustement | loi de finances pour 2013 [@lf-2013, art. 74] | art. 91 : groupements hydrauliques exonérés de la contribution aux travaux d'électrification et d'éclairage public (p. 28) |
+| []{#r-fl-tax-2016-tarifs}[5 juillet 2016]{.insecable} | taxes et redevances diverses | étape — de 1997 | second décret de tarifs [@decret2016-805, art. 1 et 2 et annexe] | décret n° 98-1428, abrogé → nouveau tableau annexé ; tarif tantôt fixé, tantôt laissé à un arrêté de la collectivité |
+| []{#r-fl-tax-2026-amnistie}[1^er^ janvier 2026]{.insecable} | droit de licence | ajustement, hors code | loi de finances pour 2026 [@lf-2026, art. 69] | abandon des pénalités et des frais de poursuite, étendu au droit de licence, contre un paiement en une fois ou un calendrier dont la première échéance tombe au plus tard le [30 juin 2026]{.insecable} (édition arabe, p. 4248-4249) |
+| []{#r-fl-tax-2026-fourriere}[1^er^ janvier 2026]{.insecable} | fourrière municipale | ajustement, hors code | loi de finances pour 2026 [@lf-2026, art. 82] | biens déposés en fourrière régularisés contre 30 % des droits municipaux dus, avant le [31 décembre 2027]{.insecable} (édition arabe, p. 4252) |
 
-: Taux et tarifs des chapitres V à VIII du code, dans l'état fixé par les textes identifiés {#tbl-fl-taxes-baremes}
+: Les textes des taxes et redevances des chapitres V à VIII du code, 1997-2026 {#tbl-fl-taxes-textes}
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré quand ces valeurs seront datées et sourcées dans la base de paramètres. -->
+<!-- TODO (documentaliste) : page de l'art. 88 de la loi de finances pour 2002 — la note du 4 octobre 2026 donne p. 4260, la lecture du 9 octobre p. 4261 ; relire aussi les deux taux à l'image. -->
 
-## Les réformes, une à une {#sec-fl-taxes-reformes}
+<!-- TODO (documentaliste) : lire les six modificatifs du décret n° 98-1428 (décrets n° 2000-232, 2000-1692, 2003-1346, 2004-80, 2012-1958 et 2013-3236), connus par leur seul intitulé, pour les inscrire à ce registre ; aucune clé bibliographique n'existe pour eux. -->
 
-Les textes identifiés modifient peu ces prélèvements depuis 1997. Au 1er janvier 2002, la pénalité de retard de la taxe sur le chiffre d'affaires des commissionnaires passe de 1,25 % à 0,75 % par mois [@loi2001-123-lf2002, art. 88]. Au 1er août 2002, la loi n° 2002-76 ouvre le dégrèvement total de la contribution des riverains aux contribuables à faible revenu [@loi2002-76, art. 3]. Au 1er janvier 2003, le barème de la contribution aux parkings est récrit [@lf-2003, art. 79]. Au 1er janvier 2013, les groupements hydrauliques sont exonérés de la contribution aux travaux d'électrification et d'éclairage public [@lf-2013, art. 74]. Au 5 juillet 2016, enfin, un nouveau décret de tarifs remplace celui de 1998 [@decret2016-805].
+::::
 
-## Ce que les collectivités peuvent moduler {#sec-fl-moduler}
+### 2018 : les droits et redevances confiés aux conseils élus {#sec-fl-ccl-2018}
 
-Dans le code de 1997, la loi fixe l'assiette et le taux des quatre impôts, et un décret leurs barèmes en dinars ; les tarifs des taxes et redevances diverses sont fixés par décret. Le code laisse aux collectivités cinq décisions (@tbl-fl-qui-fixe) :
+Le code des collectivités locales, promulgué par la [loi organique du 9 mai 2018](#r-fl-tax-ccl-137), rattache le pouvoir de fixer un prélèvement à sa nature : l'impôt relève de la loi, les droits et redevances de la délibération du conseil élu. Il charge l'État de faire progressivement des ressources propres la part la plus importante des ressources de chaque collectivité ([article 131](#r-fl-tax-ccl-131)). Seule son édition arabe est identifiée ici ; ses articles sont résumés en français, les termes arabes entre guillemets.
 
-- le prix de référence du mètre carré couvert de la taxe sur les immeubles bâtis, par arrêté motivé, dans la fourchette du décret (@sec-fl-tib-prix-reference) [@loi97-11, art. 4] ;
-- le dégrèvement de cette taxe, sur délibération du conseil [@loi97-11, art. 6] ;
-- la réduction de la contribution des riverains, jusqu'à la moitié, et le taux de son avance, entre 10 et 30 % [@loi97-11, art. 53 et 59] ;
-- le tarif de l'enlèvement des déchets non ménagers, sous l'approbation de la tutelle [@loi97-11, art. 93] ;
-- depuis le 5 juillet 2016, le tarif de plusieurs redevances, dans les limites que fixe le décret [@decret2016-805, annexe].
+#### Deux catégories de ressources {#sec-fl-ccl-categories}
+
+[L'article 137](#r-fl-tax-ccl-137) distingue, parmi les ressources du budget local, les impôts et taxes locaux que fixe la loi, « الأداءات والمعاليم المحلية التي يقرها القانون », et les divers droits, redevances et taxes, « المعاليم والرسوم والحقوق », qui n'ont pas le caractère d'impôt ou de contribution au sens de l'article 65 de la Constitution et dont les conseils élus fixent les montants ou les taux.
+
+- **Ce que le conseil élu fixe.** Le montant ou le tarif de ces droits et redevances, et les cas d'exonération ou de réduction ([article 139](#r-fl-tax-ccl-139)).
+- **Les droits des communes.** [L'article 140](#r-fl-tax-ccl-140) y range les prélèvements de ce chapitre, de la taxe sur les spectacles à la contribution aux parkings, et la publicité. Les quatre impôts — sur les immeubles bâtis, les terrains non bâtis, les établissements et l'hôtellerie — n'y figurent pas : ils restent fixés par la loi.
+- **Les droits des régions.** [L'article 141](#r-fl-tax-ccl-141) les énumère ; il est abrogé le 18 mars 2025, avec les dispositions du code relatives à la région (@sec-fl-budg-2025).
+- **Un contrôle par le juge.** Le gouverneur, à qui les décisions tarifaires sont transmises, peut en contester la légalité devant le tribunal administratif ([article 143](#r-fl-tax-ccl-143)).
+
+#### La transition {#sec-fl-ccl-transition}
+
+Le code organise le passage du décret à la délibération, collectivité par collectivité ([article 391](#r-fl-tax-ccl-391)).
+
+- **La fin du décret, commune par commune.** Les articles 46 à 95 du code de la fiscalité locale et leurs textes d'application, donc le décret de tarifs, cessent de s'appliquer progressivement, « تباعا », à mesure qu'entrent en vigueur les décisions tarifaires de chaque collectivité.
+- **Quatre droits fixés par l'État, cinq ans au plus.** Par exception, des décrets gouvernementaux pris sur avis de la Haute instance des finances locales fixent le droit de licence, la légalisation de signature, la certification conforme et la délivrance de certificats et d'actes, pendant cinq ans au plus à compter de l'entrée en vigueur des dispositions budgétaires du code.
+- **Pour les communes, un délai de 2019 à 2024.** Ces dispositions s'appliquent au 1^er^ janvier 2019 aux communes élues en 2018 ([article 383](#r-fl-tax-ccl-383), @sec-fl-budg-ccl-vigueur) ; à lire les deux articles ensemble, le délai de cinq ans court de cette date et s'achève le 1^er^ janvier 2024.
+
+[L'article 392](#r-fl-tax-ccl-392) règle le sort du Fonds de coopération entre les collectivités locales, exposé au chapitre des transferts (@sec-fl-fccl-2018).
+
+:::: {.chronologie-repliable titre="Code des collectivités locales de 2018 : les articles sur les ressources propres et leur transition (art. 131, 137, 139 à 141, 143, 383, 391 et 392), édition arabe"}
+
+| Article | Texte et article | Ce que dit l'article |
+|---|---|---|
+| []{#r-fl-tax-ccl-131}Art. 131 : objectif | code des collectivités locales [@loi-org-2018-29-ccl, art. 131, p. 1725] | l'État fait progressivement des ressources propres la part la plus importante des ressources de chaque collectivité locale |
+| []{#r-fl-tax-ccl-137}Art. 137 : ressources du budget | code des collectivités locales [@loi-org-2018-29-ccl, art. 137] | impôts et taxes locaux que fixe la loi ; droits, redevances et taxes dont les conseils élus fixent les montants ou les taux (p. 1726) |
+| []{#r-fl-tax-ccl-139}Art. 139 : pouvoir des conseils | code des collectivités locales [@loi-org-2018-29-ccl, art. 139] | les conseils élus fixent le montant ou le tarif des droits, redevances et participations aux dépenses de travaux, et les cas d'exonération ou de réduction (p. 1726) |
+| []{#r-fl-tax-ccl-140}Art. 140 : droits des communes | code des collectivités locales [@loi-org-2018-29-ccl, art. 140] | énumération des droits des communes ; les quatre impôts n'y figurent pas |
+| []{#r-fl-tax-ccl-141}Art. 141 : droits des régions | code des collectivités locales [@loi-org-2018-29-ccl, art. 141] ; loi sur les conseils locaux, régionaux et de districts [@loi-org2025-4, art. 10, p. 707] | énumération des droits des régions (p. 1727) ; abrogé le [18 mars 2025]{.insecable} avec les dispositions du code relatives à la région et au district |
+| []{#r-fl-tax-ccl-143}Art. 143 : contrôle | code des collectivités locales [@loi-org-2018-29-ccl, art. 143, p. 1727] | transmission au gouverneur et au trésorier régional dans les dix jours ; recours du gouverneur devant le tribunal administratif de première instance, dans le mois |
+| []{#r-fl-tax-ccl-383}Art. 383 : entrée en vigueur | code des collectivités locales [@loi-org-2018-29-ccl, art. 383, p. 1759] | dispositions budgétaires en vigueur au 1^er^ janvier de l'année qui suit la proclamation des résultats définitifs des élections de chaque catégorie de collectivités |
+| []{#r-fl-tax-ccl-391}Art. 391 : transition | code des collectivités locales [@loi-org-2018-29-ccl, art. 391] | fin progressive des art. 46 à 95 du code de la fiscalité locale et de leurs textes d'application ; décrets gouvernementaux pour quatre droits, cinq ans au plus (p. 1760) |
+| []{#r-fl-tax-ccl-392}Art. 392 : fonds de coopération | code des collectivités locales [@loi-org-2018-29-ccl, art. 392] | sort du Fonds de coopération entre les collectivités locales |
+
+: Le code des collectivités locales de 2018 : les articles sur les ressources propres {#tbl-fl-taxes-ccl-articles}
+
+Les pages sont celles de l'édition arabe du *Journal officiel* n° 39 du 15 mai 2018.
+
+::::
+
+## Qui fixe quoi : l'état du droit en 2026 {#sec-fl-moduler}
+
+En 2026, les quatre impôts restent fixés comme en 1997 ; pour les droits et redevances, le pouvoir donné aux conseils élus en 2018 n'a plus de conseil municipal pour l'exercer. La loi de finances pour 2026 ne modifie aucun article du code de la fiscalité locale.
+
+### Les quatre impôts : la loi et le décret {#sec-fl-moduler-impots}
+
+La loi fixe l'assiette et le taux des quatre impôts, un décret leurs barèmes en dinars (@tbl-fl-qui-fixe).
 
 | Prélèvement | Fixé par la loi | Fixé par décret | Laissé à la collectivité |
 |---|---|---|---|
 | Taxe sur les immeubles bâtis | champ, exonérations, assiette, taux selon les services | minimum et maximum du prix de référence | prix de référence dans la fourchette ; dégrèvement |
 | Taxe sur les terrains non bâtis | champ, exonérations, taux sur la valeur vénale | tarif au mètre carré par zone | — |
-| Taxe sur les établissements | champ, exonérations, assiette, taux | minimum par mètre carré ; maximum jusqu'au 31 décembre 2011 | — |
+| Taxe sur les établissements | champ, exonérations, assiette, taux | minimum par mètre carré ; maximum jusqu'au [31 décembre 2011]{.insecable} | — |
 | Taxe hôtelière | champ, assiette, taux | — | — |
 | Taxe sur les spectacles | champ, assiette, taux | prix d'entrée maximal de l'exonération | — |
 | Contribution des riverains | principe, bornes de la réduction et de l'avance | utilité publique des travaux | réduction ; taux de l'avance |
 | Droit de licence | principe, retenue de l'État | tarif par catégorie | — |
-| Taxes et redevances diverses | liste des prélèvements ; barème des parkings | tarifs, dont certains en fourchette | tarif dans la fourchette ; déchets non ménagers |
+| Taxes et redevances diverses | liste des prélèvements ; barème des parkings | tarifs, dont certains bornés par un minimum ou un maximum | tarif des droits que le décret lui laisse ; déchets non ménagers |
 
 : Qui fixe quoi dans le code de la fiscalité locale, avant l'application du code des collectivités locales {#tbl-fl-qui-fixe}
 
-Au regard des notions, aucune collectivité ne fixe le taux d'un impôt : la flexibilité fiscale, qui consiste à décider du taux ou du coefficient d'un impôt dont les autres éléments sont communs (@sec-fl-autonomie), n'est pas prévue par le code. La seule prise sur l'assiette d'un impôt passe par le prix de référence de la taxe sur les immeubles bâtis, dans une fourchette fixée par décret. Le reste de la marge porte sur des redevances.
+- **Pas de flexibilité fiscale.** Aucune collectivité ne fixe le taux d'un impôt : la [flexibilité fiscale](#g-flexibilite-fiscale), qui consiste à décider du taux ou du coefficient d'un impôt dont les autres éléments sont communs (@sec-fl-autonomie), n'est pas prévue par le code.
+- **Une marge sur des redevances.** Hors le prix de référence de la taxe sur les immeubles bâtis et son dégrèvement, la collectivité ne décide que de la contribution des riverains et de tarifs de redevances (@sec-fl-taxes-tarifs).
 
-## Le code des collectivités locales de 2018 {#sec-fl-ccl-2018}
+### Les droits et redevances : du décret à la délibération {#sec-fl-moduler-droits}
 
-### Deux catégories de ressources {#sec-fl-ccl-categories}
+Trois textes se superposent en 2026 : le décret de tarifs de 2016, le code de 2018 et le décret-loi de 2023 qui dissout les conseils municipaux (@tbl-fl-taxes-pouvoir).
 
-Le code des collectivités locales, promulgué par la loi organique n° 2018-29 du 9 mai 2018, distingue deux catégories de ressources propres. Son édition arabe est seule identifiée ici ; les passages cités sont traduits par nous. Parmi les ressources du budget local, l'article 137 énumère d'une part « les impôts et taxes locaux que fixe la loi » (« الأداءات والمعاليم المحلية التي يقرها القانون »), d'autre part « les divers droits, redevances et taxes (« المعاليم والرسوم والحقوق ») qui n'ont pas le caractère d'impôt ou de contribution au sens de l'article 65 de la Constitution, et dont les collectivités locales fixent les montants ou les taux par leurs conseils élus » [@loi-org-2018-29-ccl, art. 137]. Les conseils élus fixent ainsi le montant ou le tarif de ces droits et redevances, et les cas d'exonération ou de réduction [@loi-org-2018-29-ccl, art. 139].
+| Date d'effet | Qui fixe le tarif d'un droit communal | Contrôle |
+|---|---|---|
+| [[1^er^ août 1998]{.insecable}](#r-fl-tax-1998-tarifs) | un décret ; la collectivité, par arrêté, pour treize tarifs | approbation de la tutelle pour les déchets non ménagers |
+| [[5 juillet 2016]{.insecable}](#r-fl-tax-2016-tarifs) | un nouveau décret ; la collectivité, par arrêté, pour les tarifs qu'il lui laisse | — |
+| [2018, après la proclamation des résultats des élections municipales](#r-fl-tax-dates-2018) | le conseil élu, dont les décisions écartent le décret commune par commune ; des décrets pour quatre droits, cinq ans au plus | recours du gouverneur devant le tribunal administratif |
+| [[14 mars 2023]{.insecable}](#r-fl-tax-2023-dissolution) | conseils municipaux dissous ; le secrétaire général gère les affaires courantes | supervision du gouverneur |
+| [après les prochaines élections municipales](#r-fl-tax-2026-conseils) | le conseil municipal | approbation préalable du gouverneur |
 
-L'article 140 énumère les droits des communes : on y retrouve la taxe sur les spectacles, la contribution des riverains, le droit de licence, les redevances de légalisation et les autres formalités, les autorisations administratives, les droits de marché, l'abattage, l'occupation du domaine, la publicité et les parkings. La taxe sur les immeubles bâtis, la taxe sur les terrains non bâtis, la taxe sur les établissements et la taxe hôtelière n'y figurent pas : elles restent des impôts fixés par la loi [@loi-org-2018-29-ccl, art. 140]. L'article 141 énumère les droits des régions [@loi-org-2018-29-ccl, art. 141].
+: Qui fixe le tarif des droits et redevances des communes, selon les textes, 1998-2026 {#tbl-fl-taxes-pouvoir}
 
-Le code rattache ainsi le pouvoir de fixer un prélèvement à sa nature : l'impôt relève de la loi, les droits et redevances de la délibération locale. Pour ceux-ci, la collectivité passe d'un tarif fixé par décret à un tarif qu'elle délibère, selon le calendrier qui suit.
+- **Ce qui est établi.** [Le décret-loi du 8 mars 2023](#r-fl-tax-2023-dissolution) ne dit pas si arrêter un tarif relève des affaires courantes, « الشؤون العادية », qu'il confie au secrétaire général de la commune (@sec-fl-comp-dissolution-2023). Le décret de tarifs de 2016 est encore visé par [un arrêté du 30 janvier 2023](#r-fl-tax-2023-arrete).
+- **Ce qui ne l'est pas.** Aucun décret pris pour l'article 391 du code de 2018 n'est identifié ici, ni aucune décision tarifaire d'un conseil municipal. L'autorité qui arrête en 2026 le tarif d'un droit communal n'est donc pas établie, en l'état des textes identifiés.
+- **Un texte publié, qui n'est pas en vigueur.** [Le décret-loi du 30 septembre 2026](#r-fl-tax-2026-conseils) relatif aux conseils municipaux abroge le code de 2018, mais n'entre en vigueur qu'après les prochaines élections municipales. Le conseil municipal y fixe les droits et redevances, par une délibération qui n'est exécutoire qu'après l'approbation du gouverneur. Le décret-loi ne cite pas le code de la fiscalité locale et n'énumère aucun droit.
 
-### La transition, et ce qui reste à établir {#sec-fl-ccl-transition}
+<!-- RECHERCHE r-ccl-2018-decrets-art391 : décret gouvernemental pris en vertu de l'art. 391, al. 2, du code des collectivités locales, ou décret de tarifs postérieur au décret gouvernemental n° 2016-805 (voir docs/recherches.yml) -->
 
-Le code organise une transition. Les articles 46 à 95 du code de la fiscalité locale, c'est-à-dire tous ses chapitres hors les quatre impôts, cessent de s'appliquer progressivement (« تباعا »), collectivité par collectivité, à mesure qu'entrent en vigueur ses propres délibérations tarifaires. Pendant cinq ans au plus après l'entrée en vigueur des dispositions budgétaires du code, des décrets gouvernementaux pris sur avis de la Haute instance des finances locales (« الهيئة العليا للمالية المحلية ») fixent toutefois le droit de licence, la légalisation de signature, la certification conforme et la délivrance d'actes [@loi-org-2018-29-ccl, art. 391]. L'article 392 règle le sort du Fonds de coopération entre les collectivités locales, qui relève des transferts de l'État, objet d'un chapitre à venir [@loi-org-2018-29-ccl, art. 392].
+<!-- TODO (documentaliste) : repérer, au Journal officiel des collectivités locales (hors corpus), les délibérations tarifaires des communes prises de 2019 à 2023 ; établir comment un tarif communal est arrêté depuis le décret-loi n° 2023-9 (décisions du secrétaire général, circulaires). -->
 
-Trois points restent à établir. La date d'entrée en vigueur des dispositions budgétaires du code, dont dépend le délai de cinq ans, n'est pas établie ici. Les décrets transitoires pris en vertu de l'article 391 ne sont pas identifiés ici. Les délibérations tarifaires des communes ne sont pas identifiées ici. Faute de ces trois éléments, ce chapitre ne dit pas quelle part des taxes et redevances relève aujourd'hui de la délibération des conseils, et quelle part du décret de 2016.
+<!-- TODO (documentaliste) : décret-loi n° 2026-4 — art. 14 à 27, 35 à 56 et 100 à 131 à lire en suivi ; édition française à obtenir ; sort du code de la fiscalité locale et du décret n° 2016-805 à son entrée en vigueur, que le texte ne règle pas (l'art. 391 du code de 2018 sera abrogé avec lui). -->
 
-<!-- TODO (documentaliste) : lire les dispositions finales du code des collectivités locales (édition arabe, JORT n° 39 de 2018) pour dater l'entrée en vigueur de ses dispositions budgétaires ; chercher les décrets gouvernementaux pris en vertu de l'art. 391 ; repérer, au Journal officiel des collectivités locales, les premières délibérations tarifaires. -->
+:::: {.chronologie-repliable titre="Pouvoir de fixer les droits des communes après la dissolution des conseils municipaux : textes et articles, 2023-2026"}
 
-<!-- TODO (documentaliste) : lire l'art. 7 de la loi organique du budget des collectivités locales, modifiée par la loi organique n° 2007-65 du 18 décembre 2007, qui fonde la classification budgétaire des ressources (note documentaire, § 10.2, point 4). -->
+| Date | Texte et article | Ce que dit le texte |
+|---|---|---|
+| []{#r-fl-tax-2023-arrete}[30 janvier 2023]{.insecable}, date de l'arrêté | arrêté conjoint du [30 janvier 2023]{.insecable} sur la redevance d'occupation temporaire du domaine public maritime [@arrete2023-dpm-redevance, p. 282] | ses visas citent ensemble les articles 139 et 140 du code de 2018, l'article 86 du code de la fiscalité locale et le décret gouvernemental n° 2016-805 |
+| []{#r-fl-tax-2023-dissolution}[14 mars 2023]{.insecable} | dissolution des conseils municipaux [@decretloi2023-9, art. 1-3, p. 694] | dissolution de tous les conseils municipaux jusqu'à l'élection de nouveaux conseils ; gestion des affaires courantes par le chargé du secrétariat général, sous la supervision du gouverneur ; abrogation des dispositions contraires |
+| []{#r-fl-tax-2026-conseils}après les prochaines élections municipales | décret-loi relatif aux conseils municipaux [@decretloi2026-4, art. 12, 30, 136 et 139] | art. 12 (p. 2059) : le conseil délibère sur les droits, redevances et taxes, la participation aux dépenses de travaux, leurs exonérations et réductions ; art. 30 (p. 2062) : délibération exécutoire après l'approbation du gouverneur ; art. 136 (p. 2074) : entrée en vigueur après les prochaines élections municipales, le décret-loi n° 2023-9 restant applicable jusque-là ; art. 139 (p. 2074) : abrogation du code de 2018 |
+
+: Les textes sur le pouvoir de fixer les droits des communes, 2023-2026 {#tbl-fl-taxes-textes-2023-2026}
+
+Les trois textes sont parus en arabe ; les pages sont celles de l'édition arabe du *Journal officiel*.
+
+::::
+
+## Les prélèvements, un à un {#sec-fl-taxes-code}
+
+Pour chaque prélèvement des chapitres V à VIII, cette partie donne qui paie, sur quoi, et ce que la collectivité décide ; les taux et les tarifs en dinars des chapitres V à VII sont réunis au @tbl-fl-taxes-baremes.
+
+| Prélèvement | Grandeur | Valeur | En vigueur depuis |
+|---|---|---|---|
+| Taxe sur les spectacles | part des recettes prévisionnelles retenue (%) | 50 | [[1^er^ janvier 1997]{.insecable}](#r-fl-tax-1997-spectacles-assiette) |
+| Taxe sur les spectacles | taux (% de l'assiette) | 6 | [[1^er^ janvier 1997]{.insecable}](#r-fl-tax-1997-spectacles-taux) |
+| Taxe sur les spectacles | prix d'entrée maximal exonéré (D) | 5 | [[7 avril 1997]{.insecable}](#r-fl-tax-1997-spectacles-prix) |
+| Contribution des riverains | réduction maximale pour les cas sociaux (%) | 50 | [[1^er^ janvier 1997]{.insecable}](#r-fl-tax-1997-riverains-calcul) |
+| Contribution des riverains | avance, minimum et maximum (% de la contribution) | 10 à 30 | [[1^er^ janvier 1997]{.insecable}](#r-fl-tax-1997-riverains-avance) |
+| Droit de licence | tarif annuel, catégorie 1 (D) | 25 | [[13 mars 1997]{.insecable}](#r-fl-tax-1997-licence-tarif) |
+| Droit de licence | tarif annuel, catégorie 2 (D) | 150 | [[13 mars 1997]{.insecable}](#r-fl-tax-1997-licence-tarif) |
+| Droit de licence | tarif annuel, catégorie 3 (D) | 300 | [[13 mars 1997]{.insecable}](#r-fl-tax-1997-licence-tarif) |
+| Droit de licence | retenue au profit du budget de l'État (%) | 10 | [[1^er^ janvier 1997]{.insecable}](#r-fl-tax-1997-licence-declaration) |
+
+: Taux et tarifs des chapitres V à VII du code de la fiscalité locale, et leur date d'effet {#tbl-fl-taxes-baremes}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré quand ces valeurs seront datées et sourcées dans la base de paramètres. -->
+
+<!-- TODO (documentaliste) : la loi n° 2002-76, art. 3, récrit l'art. 53 § 3 du code (dégrèvement total) ; établir si la réduction de moitié au plus pour les cas sociaux subsiste après le 1er août 2002, ou si le dégrèvement total la remplace — le tableau et la section des riverains la donnent comme en vigueur depuis 1997, sans date de fin. -->
+
+### La taxe sur les spectacles {#sec-fl-spectacles}
+
+La taxe sur les spectacles, « المعلوم على العروض », est due par les organisateurs de spectacles occasionnels avant la délivrance de l'autorisation, sous peine d'une pénalité égale au double du droit. Elle est égale à 6 % de la moitié des recettes prévisionnelles ([articles 46 à 51](#r-fl-tax-1997-spectacles)). [Quatre catégories de spectacles](#r-fl-tax-1997-spectacles-exo) sont exonérées, dont ceux dont le prix d'entrée n'excède pas 5 D (@tbl-fl-taxes-baremes). La collectivité n'en fixe aucun élément.
+
+### La contribution des propriétaires riverains {#sec-fl-riverains}
+
+Les propriétaires riverains contribuent aux travaux de premier établissement et de grosses réparations des voies, des trottoirs et des conduites d'évacuation des eaux usées, et à l'aménagement des quartiers résidentiels et des zones industrielles et touristiques, une fois ces travaux déclarés d'utilité publique par décret ([article 52](#r-fl-tax-1997-riverains)). Le montant des travaux adjugés est réparti entre eux selon la longueur des façades pour les voies et les trottoirs, à parts égales pour le reste ([article 53](#r-fl-tax-1997-riverains-calcul)).
+
+- **Ce que la collectivité décide.** La réduction de la contribution pour les cas sociaux, de moitié au plus, et le taux de l'avance, entre 10 et 30 % ([article 59](#r-fl-tax-1997-riverains-avance)).
+- **Le dégrèvement total.** Depuis le [1^er^ août 2002](#r-fl-tax-2002-riverains), les contribuables à faible revenu en bénéficient, selon les règles de la taxe sur les immeubles bâtis (@sec-fl-immeubles-degrevement).
+
+### Le droit de licence sur les débits de boissons {#sec-fl-licence}
+
+Le droit de licence est dû chaque année par les exploitants de cafés, de bars, de salons de thé et de tout établissement vendant des boissons à consommer sur place ([article 61](#r-fl-tax-1997-licence)), selon un tarif qu'un décret fixe pour chacune des trois catégories d'établissement : 25, 150 et 300 D (@tbl-fl-taxes-baremes). Déclaré en janvier à la recette des finances, il supporte une retenue de 10 % au profit du budget de l'État ([article 62](#r-fl-tax-1997-licence-declaration)).
+
+Hors code, [la loi de finances pour 2026](#r-fl-tax-2026-amnistie) lui étend, comme à la taxe sur les établissements et à la taxe hôtelière (@sec-fl-activite), l'abandon des pénalités contre un paiement en une fois ou selon un calendrier.
+
+### Les taxes et redevances diverses {#sec-fl-taxes-diverses}
+
+Le chapitre VIII, « معاليم مختلفة », réunit les prélèvements dus pour un acte, une autorisation, l'usage d'un marché ou du domaine, ou un service ([articles 64 à 95](#r-fl-tax-1997-diverses)) : redevances sur les formalités, comme la légalisation de signature ; taxe sur les autorisations, dont le permis de bâtir ; droits de marché ; taxes sur le domaine, dont l'occupation de la voie publique ; redevances pour prestations, dont la fourrière et l'enlèvement des déchets non ménagers (@tbl-fl-taxes-chapitre-viii). Leurs tarifs sont fixés par décret ou, quand le décret le prévoit, par la collectivité (@sec-fl-taxes-tarifs).
+
+- **La pénalité des commissionnaires.** La pénalité de retard de la taxe sur le chiffre d'affaires des commissionnaires du marché de gros, de [1,25 % par mois en 1997](#r-fl-tax-1997-commissionnaires), passe à 0,75 % au [1^er^ janvier 2002](#r-fl-tax-2002-commissionnaires).
+- **Les groupements hydrauliques.** Ils sont exonérés de la contribution aux travaux d'électrification et d'éclairage public depuis le [1^er^ janvier 2013](#r-fl-tax-2013-hydrauliques).
+- **Les fourrières municipales.** Hors code, [la loi de finances pour 2026](#r-fl-tax-2026-fourriere) permet de régulariser, avant le 31 décembre 2027, les biens déposés en fourrière municipale, contre 30 % des droits municipaux dus.
+
+:::: {.chronologie-repliable titre="Chapitre VIII du code de la fiscalité locale : les six sections et leurs prélèvements, articles 64 à 95, rédaction de 1997"}
+
+| Section | Articles | Prélèvements |
+|---|---|---|
+| Redevances sur les formalités administratives | 64-67 | légalisation de signature, certification conforme des copies, délivrance de certificats et d'actes d'état civil |
+| Taxe sur les autorisations administratives | 68 | abattage hors abattoir, occupation de la voie publique pour l'exercice de certains métiers, fêtes, permis de bâtir, inhumation, permis de circulation des taxis et voitures de transport public, distributeurs de carburant, et toute autre autorisation délivrée par la collectivité |
+| Droits perçus dans les marchés | 69-81 | stationnement, taxe sur le chiffre d'affaires des commissionnaires et approvisionneurs du marché de gros, criée, pesage et mesurage, colportage, abri et gardiennage, contrôle sanitaire des produits de la mer |
+| Taxes et redevances sur le domaine de la collectivité | 82-90 | abattage, contrôle sanitaire des viandes, occupation temporaire de la voie publique, occupation du domaine public maritime, concessions funéraires, contribution à la réalisation de parkings collectifs |
+| Redevances pour prestations publiques payantes | 91 | entretien des conduites, fourrière, contribution aux travaux d'électrification et d'éclairage public, perçue sur les factures d'électricité et de gaz, enlèvement des déchets non ménagers, et toute autre prestation individuelle |
+| Dispositions communes | 92-95 | tarifs, déchets non ménagers, perception |
+
+: Les six sections du chapitre VIII du code de la fiscalité locale, dans sa rédaction de 1997 {#tbl-fl-taxes-chapitre-viii}
+
+Source : code de la fiscalité locale, rédaction de 1997 [@loi97-11, art. 64-95].
+
+::::
+
+### La contribution aux parkings collectifs {#sec-fl-parkings}
+
+Le propriétaire d'une construction nouvelle, agrandie ou transformée qui ne peut satisfaire aux normes de stationnement paie une contribution par place manquante ([article 89](#r-fl-tax-1997-parkings)). C'est le seul prélèvement du chapitre VIII dont la loi fixe elle-même le barème ; la collectivité n'en décide rien.
+
+- **De 1997 à 2002 : un barème selon la population.** [Le code de 1997](#r-fl-tax-1997-parkings-bareme) fixe la contribution à 100, 250 ou 500 D par place selon la population de la commune, et la double pour les places manquantes ou réaffectées sans autorisation.
+- **Depuis 2003 : un barème à deux entrées.** [La loi de finances pour 2003](#r-fl-tax-2003-parkings) récrit ce barème au 1^er^ janvier 2003, en croisant la part des places manquantes et la population de la commune.
+
+:::: {.chronologie-repliable titre="Contribution à la réalisation de parkings collectifs : barème par place selon la population de la commune, 1997-2002"}
+
+| Population de la commune | Contribution par place de stationnement<br>(D) |
+|---|---|
+| plus de 20 000 et au plus 50 000 habitants | 100 |
+| plus de 50 000 et au plus 100 000 habitants | 250 |
+| plus de 100 000 habitants | 500 |
+
+: Contribution à la réalisation de parkings collectifs, du 1^er^ janvier 1997 au 31 décembre 2002 ; montant doublé pour les places manquantes ou réaffectées {#tbl-fl-parkings-1997}
+
+Source : code de la fiscalité locale, rédaction de 1997, p. 181 du *Journal officiel* [@loi97-11, art. 90].
+
+<!-- TODO (documentaliste) : transcrire le barème de l'art. 90 récrit par l'art. 79 de la LF 2003 (JORT n° 102 de 2002, FR p. 2887), pour en faire un tableau à deux onglets (1997, 2003) ; relever aussi les listes de communes des arrêtés du 4 mars 1997 et du 30 mai 2003. -->
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré, à onglets, quand les deux états du barème seront datés et sourcés dans la base de paramètres. -->
+
+::::
+
+### Les tarifs fixés par décret {#sec-fl-taxes-tarifs}
+
+Deux décrets fixent successivement, dans un tableau annexé, les tarifs du chapitre VIII : celui du [13 juillet 1998](#r-fl-tax-1998-tarifs), exécutoire le 1^er^ août 1998, puis celui du [13 juin 2016](#r-fl-tax-2016-tarifs), exécutoire le 5 juillet 2016, qui l'abroge.
+
+- **Deux formes de tarif.** Pour la plupart des formalités et des autorisations, l'un et l'autre fixent un montant ; pour d'autres prélèvements, le tarif est fixé « par arrêté de la collectivité locale concernée », librement ou dans des bornes.
+- **Treize tarifs en 1998, six domaines en 2016.** Le décret de 1998 laisse à la collectivité treize tarifs, dans onze rubriques, de l'occupation de la voie publique à l'enlèvement des déchets non ménagers (@tbl-fl-taxes-arretes-1998) ; celui de 2016 fait de même dans six domaines, dont quatre lui étaient déjà laissés en 1998.
+- **Après 2018.** Le code des collectivités locales met fin au décret pour chaque collectivité dès que ses propres décisions tarifaires entrent en vigueur (@sec-fl-ccl-transition).
+
+:::: {.chronologie-repliable titre="Décrets de tarifs de 1998 et de 2016 : les tarifs laissés à un arrêté de la collectivité, rubrique par rubrique"}
+
+| Rubrique de l'annexe de 1998 | Tarif laissé à un arrêté de la collectivité | Page |
+|---|---|---|
+| II-2. Autorisation d'occupation de la voie publique pour l'exercice de certains métiers | entre deux bornes, par an | 1622 |
+| II-3. Autorisation des fêtes : cérémonies familiales | sous un maximum, par jour ou par nuit | 1622 |
+| III-1. Droit général de stationnement dans les marchés quotidiens, hebdomadaires ou occasionnels | entre deux bornes, par mètre carré et par jour | 1623 |
+| III-3. Droit particulier de stationnement | par arrêté | 1623 |
+| IV-3. Occupation temporaire de la voie publique par les cafetiers, restaurateurs et étalagistes | au-dessus d'un minimum, par mètre carré et par jour | 1624 |
+| IV-4. Stationnement des véhicules de transport public de personnes ou de marchandises | entre deux bornes, par véhicule et par jour | 1624 |
+| IV-4. Stationnement sur les emplacements équipés d'un compteur automatique | au-dessus d'un minimum, par véhicule et par heure | 1625 |
+| IV-4. Stationnement dans les parkings et emplacements aménagés | au-dessus d'un minimum, par véhicule et par jour | 1625 |
+| IV-5. Occupation de la voie publique par les chantiers de construction | entre deux bornes, par mètre carré et par jour | 1625 |
+| IV-6. Travaux au-dessous de la voie publique | entre deux bornes, par mètre carré et par jour | 1625 |
+| IV-8. Occupation du domaine public maritime | au-dessus de minimums | 1625 |
+| V-4. Enlèvement des déchets non ménagers des établissements commerciaux, industriels ou professionnels | librement ; c'est le tarif de l'article 93 du code | 1626 |
+| V-6. Location d'un corbillard | entre deux bornes | 1626 |
+
+: Les treize tarifs que le décret du 13 juillet 1998 laisse à un arrêté de la collectivité locale {#tbl-fl-taxes-arretes-1998}
+
+Source : annexe du décret n° 98-1428 du 13 juillet 1998, en cinq parties — formalités, autorisations, marchés, domaine, prestations [@decret98-1428, annexe, p. 1622-1626].
+
+En 2016, l'annexe laisse à un arrêté de la collectivité des tarifs de six domaines : l'occupation de la voie publique par les métiers, les terrasses ou les chantiers, le stationnement dans les marchés et sur la voie publique, la publicité, le domaine public maritime, la fourrière et l'enlèvement de certains déchets [@decret2016-805, annexe]. Quatre d'entre eux — la voie publique, les marchés, le domaine public maritime et les déchets — lui étaient déjà laissés en 1998 ; la publicité n'avait alors qu'un maximum, et la fourrière un tarif variable selon le volume.
+
+<!-- TODO (documentaliste) : transcrire les tarifs du décret n° 98-1428 et de ses modificatifs, puis ceux du décret gouvernemental n° 2016-805, pour un tableau daté à onglets ; l'annexe française de 1998 est rognée sur la colonne des tarifs (lire l'édition arabe du JORT n° 59 de 1998) ; lire l'édition arabe du décret de 2016, qui fait foi, et comparer les deux annexes ligne à ligne. -->
+
+::::
 
 ## La longue période {#sec-fl-taxes-longue-periode}
 
-Le produit des taxes et redevances, rapporté à celui des impôts et aux ressources totales des collectivités, n'est pas encore réuni ici ; c'est lui qui dirait le poids réel des marges décrites dans ce chapitre. Il sera suivi, avec le taux d'autonomie financière défini au chapitre des notions (@sec-fl-taux-autonomie), au chapitre de la longue période.
+Les budgets des communes classent leurs recettes par article de nomenclature ; la correspondance entre ces articles et les prélèvements du code n'est pas établie ici. Les catégories de ressources du budget local — parmi lesquelles les droits, redevances et prix des services, et l'occupation du domaine — sont présentées au chapitre des budgets (@sec-fl-budg-ccl-principes).
+
+<!-- TODO (rédacteur) : figure du produit des droits et redevances des communes, rapporté aux recettes de fonctionnement, quand la correspondance entre la nomenclature budgétaire de 2023 et les prélèvements du code sera établie (annexe du décret gouvernemental n° 2020-52, non parcourue ; `docs/notes/backlog-precis.md`). Aucun chiffre n'est donné ici d'ici là. -->
