@@ -174,7 +174,8 @@ ARABE = re.compile(r"[\u0600-\u06FF]")
 # Les URL du JORT sont dérivées par édition ; la page INS à URL arabe distincte est
 # préservée par `preserve_urls_arabes`. Dates, pages et numéros suivent Zotero.
 CHAMPS_TRADUITS = ("title", "title-short", "container-title", "publisher",
-                   "publisher-place", "authority", "author", "editor", "archive", "note")
+                   "publisher-place", "authority", "author", "editor", "translator",
+                   "container-author", "collection-editor", "archive", "note")
 
 # Le JORT paraît en deux éditions, et pist.tn les sert sous deux chemins qui ne diffèrent
 # que par une lettre de répertoire et un préfixe de fichier, les chiffres étant identiques :
@@ -400,7 +401,8 @@ def normalise_auteurs(csl_items):
     Le `given` vide est la signature de ce cas.
     """
     for item in csl_items:
-        for role in ("author", "editor", "contributor", "translator"):
+        for role in ("author", "editor", "contributor", "translator",
+                     "container-author", "collection-editor"):
             for nom in item.get(role) or []:
                 if isinstance(nom, dict) and nom.get("family") and not nom.get("given"):
                     nom["literal"] = nom.pop("family")

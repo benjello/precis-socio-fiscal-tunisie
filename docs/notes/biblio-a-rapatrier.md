@@ -3448,7 +3448,7 @@ Dix-sept clés neuves dans `precis/{fr,ar}/fiscalite/references.json`, absentes 
 `minfin-cnf-2013-synthese` (p. 82), `minfin-assises-2014-projet-reforme` (p. 76 imprimée, 77 du PDF), `minfin-rapport-budget-2013` (p. 33),
 `minfin-rapport-budget-2014` (p. 16) ; captures lues au CDX. TODO du rédacteur soldé dans `_tva.qmd`. Entrées ministérielles :
 `language` omis (perte Zotero connue). Seul le TODO (bibliographe) sur les décrets de 1998 à 2014 reste dans `_tva.qmd`, hors section.
-- [ ] `dry-run` : s'arrête sur `dafflon-2021-budget-local` (type `chapter`, préexistant) avant de convertir les autres références ; à corriger pour que l'action aille au bout.
+- [ ] `dry-run` : s'arrêtait sur `dafflon-2021-budget-local` (type `chapter`, préexistant) avant de convertir les autres références. Corrigé dans `push_biblio.py` le 09/10/2026 (`chapter` → `bookSection`, rôles de créateurs, `language` natif ; `tests/test_push_biblio.py` passe toutes les entrées du dépôt) ; reste à relancer l'action `dry-run` du workflow après fusion. La « perte Zotero connue » de `language` n'existe plus : le champ peut être rétabli sur les entrées où il avait été omis.
 
 ## Versement du 07/10/2026 (fiscalité, TVA « tableaux A, B, B bis, C » — temps 1, avant la rédaction) — À REPORTER DANS ZOTERO
 
