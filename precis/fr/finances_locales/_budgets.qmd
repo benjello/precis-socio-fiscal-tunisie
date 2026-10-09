@@ -1,14 +1,14 @@
 # Budgets et comptes {#sec-fl-budgets-comptes .domicile-unique}
 
-Ce chapitre expose les règles du budget des collectivités locales — sa forme, son équilibre, l'emprunt, son contrôle — et ce que montrent les comptes des communes. Il mobilise plusieurs notions du chapitre des notions. Le budget décentralisé de référence met en regard chaque catégorie de dépenses et la ressource qui devrait la couvrir ; l'emprunt n'y figure pas parmi les ressources (@sec-fl-budget-decentralise). La [règle d'or](#g-regle-d-or) demande l'équilibre du budget de fonctionnement, service de la dette compris, et réserve l'[emprunt](#g-emprunt) au financement des investissements ; elle fonde la [discipline budgétaire](#g-discipline-budgetaire) (@sec-fl-regle-or). La [tutelle](#g-tutelle) se distingue selon qu'elle porte sur la légalité ou sur l'opportunité, et selon qu'elle intervient avant ou après la décision (@sec-fl-tutelle).
+Ce chapitre expose les règles du budget des collectivités locales — équilibre, emprunt, contrôle — et ce que montrent les comptes des communes. Trois notions y servent : le budget décentralisé de référence, où l'emprunt n'est pas une ressource (@sec-fl-budget-decentralise) ; la [règle d'or](#g-regle-d-or), qui équilibre le fonctionnement, service de la dette compris, réserve l'[emprunt](#g-emprunt) à l'investissement et fonde la [discipline budgétaire](#g-discipline-budgetaire) (@sec-fl-regle-or) ; la [tutelle](#g-tutelle), de légalité ou d'opportunité, *a priori* ou *a posteriori* (@sec-fl-tutelle).
 
-Les montants sont en dinars (D) et en millions de dinars courants (MD). Le code des collectivités locales de 2018 n'a d'édition identifiée qu'en arabe : ses mots sont cités en arabe, et leur traduction, donnée sans guillemets, est la nôtre. Un texte qui ne fixe pas lui-même sa date d'effet est daté du jour où il devient exécutoire ; les dates et leur calcul sont [au registre](#r-fl-budg-dates-1993).
+Les montants sont en dinars (D) et en millions de dinars courants (MD). Le code des collectivités locales de 2018 n'a d'édition identifiée qu'en arabe : sa traduction, sans guillemets, est la nôtre. Un texte sans date d'effet propre est daté du jour où il devient exécutoire ([registre des dates](#r-fl-budg-dates-1993)).
 
 ## Vue d'ensemble {#sec-fl-budg-vue-ensemble}
 
-Le budget d'une collectivité locale est voté en deux titres, le fonctionnement et l'investissement. De 1976 à 2018, il ne s'exécute qu'approuvé par l'autorité de tutelle ; depuis les budgets de 2019, celui d'une commune s'exécute sans approbation, sous le contrôle du juge financier, et l'emprunt n'y finance que l'investissement (@tbl-fl-budg-reformes).
+Le budget d'une collectivité locale est voté en deux titres, le fonctionnement et l'investissement. De 1976 à 2018, il ne s'exécute qu'approuvé par l'autorité de tutelle, gouverneur ou ministres ; depuis les budgets de 2019, celui d'une commune s'exécute sans approbation, sous le contrôle du juge financier, et l'emprunt n'y finance que l'investissement (@tbl-fl-budg-reformes, @tbl-fl-budg-controle).
 
-Les recettes de fonctionnement des communes — le titre I du budget — se partagent entre les transferts de fonctionnement reçus de l'État et, par différence, les recettes propres (@fig-fl-lp-ressources) ; les sources et le calcul sont à la longue période (@sec-fl-lp-sources, @sec-fl-lp-ressources).
+Les recettes de fonctionnement des communes, le titre I du budget, se partagent entre les transferts de l'État et, par différence, les recettes propres (@fig-fl-lp-ressources, @sec-fl-lp-ressources).
 
 ```{python}
 #| label: fig-fl-lp-ressources
@@ -26,22 +26,14 @@ figtools.figure_tabs(
              "l'État, en millions de dinars courants, en part des recettes de fonctionnement "
              "et en % du PIB, 1990-2023"),
     note_lecture=(
-        "Chaque source est tracée à part, avec sa marque ; en bleu les recettes propres de "
-        "fonctionnement, en orange les transferts de fonctionnement de l'État. Les ronds et "
-        "les losanges sont les deux sources budgétaires : agrégats de la Direction générale "
-        "des collectivités locales et somme des budgets par commune. Sur 2018-2019, la "
-        "seconde donne des transferts plus élevés que la première, parce que sa catégorie 6 "
-        "comprend d'autres transferts que les subventions annuelles. Les triangles et les "
-        "carrés sont les tableaux de deux documents de la Banque mondiale ; sur 2008-2012, "
-        "celui de 2014 se superpose presque aux agrégats. La ligne verticale de 2016 marque "
-        "les décrets du 26 mai 2016 qui étendent le périmètre communal. Dans la vue au PIB, "
-        "le dénominateur est le PIB des comptes de la nation de l'Institut national de la "
-        "statistique, pris dans la dernière édition qui porte l'année : base 1983 de 2002 à "
-        "2004, base 1997 de 2005 à 2014, base 2015 ensuite. Aucune valeur n'est rétropolée "
-        "et les bases ne sont pas raccordées : chaque changement, marqué d'un trait, est une "
-        "rupture du seul dénominateur (voir l'[annexe sur le PIB]"
-        "(../annexe-pib.html#sec-pib-ruptures)). Le rapport de 1997 ne publie pas de PIB : "
-        "ses points n'ont pas de vue au PIB."),
+        "En bleu les recettes propres, en orange les transferts de l'État. Chaque source a "
+        "sa marque : ronds, agrégats de la Direction générale des collectivités locales ; "
+        "losanges, somme des budgets par commune ; triangles et carrés, documents de la "
+        "Banque mondiale. La ligne de 2016 marque l'extension du périmètre communal. Vue au "
+        "PIB : comptes de la nation, base 1983 de 2002 à 2004, 1997 de 2005 à 2014, 2015 "
+        "ensuite, sans rétropolation ni raccord ; chaque changement de base est une rupture "
+        "(voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Le rapport de "
+        "1997 ne publie pas de PIB : ses points n'ont pas de vue au PIB."),
 )
 ```
 
@@ -54,25 +46,8 @@ figtools.figure_tabs(
 
 : Le budget des collectivités locales : mise en place et trois grandes réformes ; entre guillemets, les mots des lois ; l'objet du code de 2018, paru en arabe, est traduit {#tbl-fl-budg-reformes}
 
-- **L'équilibre.** Chaque titre est voté en équilibre depuis 1976 ; depuis les budgets de 2008, la dépense ordonnancée ne peut dépasser la recette encaissée ; depuis ceux de 2019, le budget de fonctionnement d'une commune couvre le service de la dette, et deux plafonds de moitié bornent les rémunérations et le remboursement du principal (@tbl-fl-budg-art135).
-- **Le contrôle.** Jusqu'en 2018, le gouverneur approuve le budget communal, ou les ministres au-delà d'un seuil de recettes : 0,5 MD en 1976, 18 MD en juin 2017 (@sec-fl-budg-seuils). Sous le code, le gouverneur ne peut que saisir la chambre de la Cour des comptes (@tbl-fl-budg-controle).
-- **Les montants.** Les recettes de fonctionnement des communes passent de 458 MD en 2008 à 1 169 MD en 2019 selon les agrégats de la Direction générale des collectivités locales, et valent 1 456 MD en 2023, année provisoire, selon la somme des budgets par commune ; leurs dépenses de fonctionnement, de 375 MD en 2008 à 933 MD en 2019, dont 201 puis 544 MD de rémunérations (@sec-fl-budg-depenses).
-- **La part des transferts.** Environ 25 % des recettes de fonctionnement de 2008 à 2010, 52 % en 2011, 30 % en 2017 selon les agrégats ; de 35 % à 43 % de 2018 à 2023 selon la somme des budgets par commune, sur une autre définition (@sec-fl-lp-ressources).
-
-:::: {.chronologie-repliable titre="Recettes propres et transferts des communes : définition des transferts de fonctionnement selon la source, 1990-2023"}
-
-| Source | Années | Ce qui est compté comme transfert de fonctionnement |
-|---|---|---|
-| Direction générale des collectivités locales, agrégats publiés [@dgct-donnees-ouvertes] | 2008-2019 | la quote-part des communes au fonds commun, puis aux subventions annuelles, et la dotation exceptionnelle |
-| Même source, budgets par commune [@dgct-donnees-ouvertes] | 2018-2023 | la catégorie 6 des recettes, « transferts de l'État au titre du fonctionnement » |
-| Banque mondiale, document de 2014 [@wb-pforr-pad-2014, tabl. 1] | 2002-2012 | le fonds commun et les transferts exceptionnels ; le tableau donne lui-même les recettes du titre 1 comme la somme des ressources propres et de ces transferts |
-| Banque mondiale, rapport de 1997 [@wb-mdp2-1997, annexe 4, tabl. 2] | 1990, 1992, 1994-1996 | le fonds commun |
-
-: Les transferts de fonctionnement retenus, source par source {#tbl-fl-lp-transferts-definition}
-
-Les recettes propres sont, pour chaque source, les recettes du titre 1 moins ces transferts.
-
-::::
+- **La règle.** Chaque titre est voté en équilibre depuis 1976 ; depuis les budgets de 2008, la dépense ordonnancée ne peut dépasser la recette encaissée ; depuis ceux de 2019, deux plafonds de moitié bornent les rémunérations et le remboursement du principal d'une commune (@tbl-fl-budg-art135).
+- **Les comptes.** Les recettes de fonctionnement des communes passent de 458 MD en 2008 à 1 169 MD en 2019 selon les agrégats de la Direction générale des collectivités locales, et valent 1 456 MD en 2023, année provisoire, selon la somme des budgets par commune. La longue période donne la part des transferts de l'État (@sec-fl-lp-ressources), les dépenses et le service de la dette (@sec-fl-budg-depenses).
 
 :::: {.chronologie-repliable titre="Dates d'application des textes du budget local : règles générales, clauses propres et dates calculées, 1975-2026"}
 
@@ -96,24 +71,19 @@ Les dates des retouches de 1980 à 1997 et celles des décrets de seuil sont dan
 
 ## La mise en place : la loi organique du budget de 1975 {#sec-fl-budg-1975}
 
-Au 1^er^ janvier 1976, le budget d'une commune ou d'un conseil de gouvernorat a deux titres, dont chacun doit être équilibré, et il n'est exécutoire qu'approuvé par l'autorité de tutelle.
+Au 1^er^ janvier 1976, le budget d'une commune ou d'un conseil de gouvernorat a deux titres, chacun en équilibre, et n'est exécutoire qu'approuvé par l'autorité de tutelle ([loi organique du 14 mai 1975](#r-fl-budg-1975)).
 
 ### Deux titres, chacun en équilibre {#sec-fl-budg-1975-texte}
 
-[La loi organique du budget des collectivités publiques locales](#r-fl-budg-1975), du 14 mai 1975, remplace les dispositions budgétaires d'un décret de 1937, d'une loi de 1961 et de la loi de 1963 sur les conseils de gouvernorat, [qu'elle abroge](#r-fl-budg-1975-abrogations). Le budget « prévoit et autorise pour chaque année l'ensemble des charges et des ressources » de la collectivité, pour l'année civile.
-
-- **Deux titres.** Le titre I réunit les dépenses et les recettes courantes, le titre II les dépenses et les recettes en capital. « Chaque titre doit être équilibré en recettes et en dépenses ».
-- **Du fonctionnement à l'équipement.** Les dépenses courantes comprennent une « contribution du titre I aux dépenses du titre II » : l'excédent du fonctionnement finance l'équipement.
-- **L'emprunt.** Son produit est rangé parmi les « ressources propres » du titre II, avec cette contribution, les subventions d'équipement et le prélèvement sur le fonds de réserve ([articles 4 à 7](#r-fl-budg-1975-recettes)) — à rebours du budget de référence, où l'emprunt n'est pas une ressource (@sec-fl-budget-decentralise).
-- **Les dépenses obligatoires.** La loi dresse la liste des [dépenses obligatoires](#g-depenses-obligatoires), parmi lesquelles la rémunération du personnel, « l'acquittement des dettes exigibles et des annuités d'emprunts » et l'entretien des voies et des égouts ([article 10](#r-fl-budg-1975-obligatoires)).
+- **Deux titres.** Le titre I réunit les dépenses et les recettes courantes, le titre II celles en capital. « Chaque titre doit être équilibré en recettes et en dépenses » ; une « contribution du titre I aux dépenses du titre II » verse l'excédent du fonctionnement à l'équipement.
+- **L'emprunt.** Son produit est rangé parmi les « ressources propres » du titre II ([articles 4 à 7](#r-fl-budg-1975-recettes)), à rebours du budget de référence (@sec-fl-budget-decentralise).
+- **Les dépenses obligatoires.** Parmi les [dépenses obligatoires](#g-depenses-obligatoires) : la rémunération du personnel, « l'acquittement des dettes exigibles et des annuités d'emprunts », l'entretien des voies et des égouts ([article 10](#r-fl-budg-1975-obligatoires)).
 
 ### L'approbation par la tutelle {#sec-fl-budg-procedure}
 
-Le budget voté par le conseil ne s'exécute qu'après l'approbation de l'autorité de tutelle, qui peut aussi le modifier.
+Le gouverneur approuve le budget d'une commune ; les ministres de l'Intérieur et des Finances, celui dont les recettes dépassent un seuil fixé par décret ou dont le dernier compte laisse un déficit non apuré (@sec-fl-budg-seuils) ; le ministre de l'Intérieur, celui d'un conseil de gouvernorat ([articles 13 et 14](#r-fl-budg-1975-approbation)). La tutelle peut rejeter ou réduire une dépense, inscrire d'office une dépense obligatoire et arrêter d'office le budget qui n'est pas voté en équilibre ([articles 17 à 19 et 24](#r-fl-budg-1975-tutelle)).
 
-- **Qui approuve.** Pour une commune, le gouverneur. Les ministres de l'Intérieur et des Finances approuvent conjointement si le dernier compte laisse un déficit non apuré ou si les recettes dépassent un seuil fixé par décret (@sec-fl-budg-seuils) ; en deçà d'un second seuil, jusqu'en 1985, le délégué de la circonscription approuve. Le ministre de l'Intérieur approuve le budget du conseil de gouvernorat ([articles 13 et 14](#r-fl-budg-1975-approbation)).
-- **Ce que peut la tutelle.** Rejeter ou réduire une dépense, mais non l'augmenter ni en introduire, sauf les dépenses obligatoires, qu'elle inscrit d'office. Elle arrête d'office le budget que le conseil ne vote pas en équilibre après une seconde délibération ; quand le dernier compte est en déficit et les mesures du conseil insuffisantes, les deux ministres l'arrêtent, sans pouvoir créer d'impositions nouvelles ([articles 17 à 19 et 24](#r-fl-budg-1975-tutelle)).
-- **Au regard des notions.** C'est une tutelle *a priori*, qui porte sur le contenu du budget autant que sur sa procédure. Dafflon et Gilbert y voient une tutelle de légalité sur la procédure, prolongée par une tutelle de contenu qui porte surtout sur l'équilibre [@dafflon-gilbert-2018, p. 77].
+Cette tutelle s'exerce *a priori*. Dafflon et Gilbert y voient une tutelle de légalité sur la procédure, prolongée par une tutelle de contenu qui porte surtout sur l'équilibre [@dafflon-gilbert-2018, p. 77].
 
 :::: {.chronologie-repliable titre="Budget des collectivités locales sous la loi de 1975 : recettes, dépenses, dépenses obligatoires, calendrier, approbation et compte financier, article par article"}
 
@@ -134,7 +104,7 @@ Le budget voté par le conseil ne s'exécute qu'après l'approbation de l'autori
 
 ## Les grandes réformes {#sec-fl-budg-reformes}
 
-Trois réformes changent la règle d'équilibre en 2007, le contrôle en 2018, le champ du code en 2025. []{#sec-fl-budg-1979-1997}Entre-temps, quatre textes retouchent la loi de 1975 sans en changer l'équilibre ni le principe de l'approbation : les dépenses courantes sont regroupées en cinq parties à la [gestion 1980](#r-fl-budg-1980), l'approbation par le délégué disparaît en [1985](#r-fl-budg-1985), des crédits de programme apparaissent en [1994](#r-fl-budg-1994), et les recettes de fonctionnement sont renvoyées au code de la fiscalité locale en [1997](#r-fl-budg-1997).
+Trois réformes changent la règle d'équilibre en 2007, le contrôle en 2018, le champ du code en 2025. []{#sec-fl-budg-1979-1997}De 1980 à 1997, quatre textes retouchent la loi de 1975 sans en changer l'équilibre ni le principe de l'approbation (@tbl-fl-budg-modifications).
 
 :::: {.chronologie-repliable titre="Loi organique du budget des collectivités locales : modifications de 1980 à 1997, texte par texte, avec leur portée"}
 
@@ -155,12 +125,10 @@ La loi de 2007 énumère ces quatre textes dans son visa [@loi-org2007-65, art. 
 
 ### 2007 : la dépense limitée aux recettes réalisées {#sec-fl-budg-2007}
 
-À partir du budget de 2008, une collectivité ne peut ordonnancer plus de dépenses qu'elle n'a encaissé de recettes, et engager au titre I au-delà des recettes réalisées de ce titre est une faute de gestion.
+À partir du budget de 2008, une collectivité ne peut ordonnancer plus de dépenses qu'elle n'a encaissé de recettes, ni engager au titre I au-delà des recettes réalisées de ce titre. [La loi organique du 18 décembre 2007](#r-fl-budg-2007), sans rubrique ni exposé, ne dit pas ce qu'elle cherche.
 
-- **Ce que la loi cherche.** [La loi organique du 18 décembre 2007](#r-fl-budg-2007) ne le dit pas : sans rubrique ni exposé, son intitulé annonce qu'elle modifie et complète la loi de 1975, dont elle récrit et renumérote les articles. Le budget s'inscrit désormais « dans le cadre des objectifs du plan de développement économique et social », et la loi devient « loi organique du budget des collectivités locales », sans le mot « publiques ».
-- **Deux règles d'exécution.** « Le montant total des dépenses ordonnancées doit être limité aux recettes effectivement réalisées », et les engagements du titre I sont plafonnés aux recettes du titre I effectivement réalisées. La violation de la seconde règle est une [faute de gestion](#g-faute-de-gestion), qui engage la responsabilité des [ordonnateurs](#g-ordonnateur) ([articles 21 bis et 23 bis](#r-fl-budg-2007-execution)).
-- **Deux titres redéfinis.** Le titre I réunit les dépenses de gestion et les intérêts de la dette ; le titre II, les dépenses de développement, le remboursement du principal de la dette et les dépenses sur crédits transférés (@sec-fl-budg-nomenclature).
-- **L'équilibre réel.** L'exigence d'[équilibre réel](#g-equilibre-reel) — autorisations de dépenses et prévisions de recettes « présentées et votées en équilibre réel compte tenu des engagements de la gestion précédente » — date de 1975 ; elle [change seulement de numéro](#r-fl-budg-2007-renumerotation). Dafflon et Gilbert relèvent que la loi ne définit pas cet « équilibre réel » [@dafflon-gilbert-2018, p. 84].
+- **Deux règles d'exécution.** « Le montant total des dépenses ordonnancées doit être limité aux recettes effectivement réalisées », et les engagements du titre I sont plafonnés aux recettes effectivement réalisées de ce titre. Violer la seconde règle est une [faute de gestion](#g-faute-de-gestion), qui engage la responsabilité des [ordonnateurs](#g-ordonnateur) ([articles 21 bis et 23 bis](#r-fl-budg-2007-execution)).
+- **L'équilibre réel.** L'exigence d'un budget voté « en équilibre réel compte tenu des engagements de la gestion précédente » date de 1975 ; Dafflon et Gilbert relèvent que la loi ne définit pas cet [équilibre réel](#g-equilibre-reel) [@dafflon-gilbert-2018, p. 84].
 
 :::: {.chronologie-repliable titre="Budget des collectivités locales dans la rédaction de 2007 : objet, règles d'exécution, calendrier, douzièmes et renumérotation des articles"}
 
@@ -177,18 +145,16 @@ La loi de 2007 énumère ces quatre textes dans son visa [@loi-org2007-65, art. 
 
 ### 2018 : le code des collectivités locales {#sec-fl-budg-ccl}
 
-Le code des collectivités locales supprime l'approbation du budget, interdit d'emprunter pour le fonctionnement et plafonne à la moitié les rémunérations et le remboursement de la dette ; ces règles s'appliquent aux communes à partir des budgets de 2019. [Le code](#r-fl-budg-ccl), promulgué par la loi organique du 9 mai 2018, consacre au régime financier une division de son livre premier, « في النظام المالي للجماعات المحلية » : du régime financier des collectivités locales.
+[Le code des collectivités locales](#r-fl-budg-ccl), promulgué le 9 mai 2018, supprime l'approbation du budget, interdit d'emprunter pour le fonctionnement et plafonne à la moitié les rémunérations et le remboursement de la dette ; ces règles s'appliquent aux communes à partir des budgets de 2019.
 
 #### Principes et équilibre {#sec-fl-budg-ccl-principes}
 
-- **Ce que le code cherche.** L'État s'y engage à faire progressivement des [ressources propres](#g-ressources-propres) la part la plus importante des ressources de chaque collectivité. Le code en donne une définition légale : les impôts locaux fixés par la loi, les parts d'impôts partagés, les droits et redevances fixés par les conseils, les parts reçues au titre de la péréquation et de la solidarité ([articles 131 et 132](#r-fl-budg-ccl-ressources)). Dafflon et Gilbert préviennent qu'une telle définition peut englober des ressources sur le niveau desquelles la collectivité n'a aucun pouvoir (@sec-fl-taux-autonomie).
-- **Les principes.** La légalité financière et « قاعدة التوازن الحقيقي للميزانية », la règle de l'équilibre réel du budget ; un budget global, unifié et clair, établi sur des prévisions réalistes, sincères et loyales ([articles 126 et 130](#r-fl-budg-ccl-principes)).
-- **L'équilibre.** Le budget est équilibré lorsque les dépenses de gestion et de développement sont approuvées en équilibre, compte tenu de tous les engagements antérieurs, service de la dette compris.
-- **La règle d'or.** Les ressources d'emprunt sont obligatoirement affectées au financement des investissements, et il n'est pas permis d'emprunter pour financer le budget de fonctionnement. Sept règles de prévision s'y ajoutent, dont les deux plafonds de moitié ([articles 133 à 135](#r-fl-budg-ccl-equilibre), @tbl-fl-budg-art135). Le code retient ainsi les deux principes de la règle d'or du chapitre des notions (@sec-fl-regle-or).
+- **Ce que le code cherche.** L'État s'y engage à faire progressivement des [ressources propres](#g-ressources-propres) la part la plus importante des ressources de chaque collectivité. Il range parmi elles les impôts locaux fixés par la loi, les parts d'impôts partagés, les droits et redevances fixés par les conseils, les parts reçues au titre de la péréquation et de la solidarité ([articles 131 et 132](#r-fl-budg-ccl-ressources)) ; Dafflon et Gilbert préviennent qu'une telle définition peut englober des ressources sur le niveau desquelles la collectivité n'a aucun pouvoir (@sec-fl-taux-autonomie).
+- **L'équilibre et la règle d'or.** Le budget est équilibré compte tenu de tous les engagements antérieurs, service de la dette compris ; les ressources d'emprunt sont affectées aux investissements, et il n'est pas permis d'emprunter pour le budget de fonctionnement. Ce sont les deux principes de la règle d'or (@sec-fl-regle-or). Sept règles de prévision s'y ajoutent, dont les deux plafonds de moitié ([articles 133 à 135](#r-fl-budg-ccl-equilibre), @tbl-fl-budg-art135).
 
 #### De l'approbation au recours devant le juge financier {#sec-fl-budg-ccl-controle}
 
-Le budget voté n'est plus approuvé : il est transmis au gouverneur et au trésorier régional, et s'exécute (@tbl-fl-budg-controle). Au regard des notions, la tutelle passe d'une approbation *a priori*, portant sur le contenu, à un contrôle *a posteriori*, exercé par un juge.
+Le budget voté n'est plus approuvé : il s'exécute, et le gouverneur ne peut que saisir le juge financier (@tbl-fl-budg-controle). La tutelle passe d'une approbation *a priori*, portant sur le contenu, à un contrôle *a posteriori*, exercé par un juge.
 
 | Étape | [Loi de 1975, rédaction de 2007](#r-fl-budg-2007-calendrier) | [Code de 2018](#r-fl-budg-ccl-controle) |
 |---|---|---|
@@ -199,15 +165,11 @@ Le budget voté n'est plus approuvé : il est transmis au gouverneur et au trés
 
 : Le contrôle du budget communal, avant et après le code des collectivités locales {#tbl-fl-budg-controle}
 
-- **Le recours.** Dans les dix jours, le gouverneur peut saisir la chambre de la Cour des comptes territorialement compétente, s'il estime le budget en déséquilibre ou s'il y manque une dépense obligatoire ; les décisions de la chambre s'imposent. Le représentant de l'autorité centrale et les contribuables locaux peuvent de même contester devant elle les décisions de préparation, d'exécution et d'équilibre du budget.
-- **Le budget non adopté.** Au 31 décembre, il s'exécute par douzièmes des dépenses obligatoires ; à la fin de mars, le conseil est dissous de plein droit.
-- **En cours d'exercice.** Les dépenses ordonnancées restent limitées aux encaissements, comme depuis 2008. Un déficit d'exécution supérieur à 5 % conduit à inviter la collectivité à le résorber ; à défaut, la chambre de la Cour des comptes ordonne les mesures nécessaires ([articles 177, 181 et 182](#r-fl-budg-ccl-execution)).
+En exécution, les dépenses ordonnancées restent limitées aux encaissements, comme depuis 2008.
 
 #### Entrée en vigueur {#sec-fl-budg-ccl-vigueur}
 
-Le code est exécutoire le 22 mai 2018, mais ses dispositions s'appliquent à chaque catégorie de collectivités après la proclamation des résultats définitifs de ses élections ; celles qui portent sur la préparation et l'adoption du budget, au 1^er^ janvier de l'année qui suit ([article 383](#r-fl-budg-dates-2018)). Les résultats des élections municipales ayant été proclamés commune par commune à partir du 17 mai 2018, le régime budgétaire du code s'applique aux communes à partir des budgets de 2019. Aucune élection régionale n'ayant eu lieu sous le code, ses dispositions budgétaires n'ont pas été appliquées aux régions, avant d'être abrogées en 2025 (@sec-fl-budg-2025).
-
-Le code n'abroge pas la loi organique de 1975, qui continue de régir ce qu'il ne règle pas.
+Exécutoire le 22 mai 2018, le code s'applique à chaque catégorie de collectivités après la proclamation des résultats définitifs de ses élections, et ses dispositions sur la préparation et l'adoption du budget au 1^er^ janvier de l'année qui suit ([article 383](#r-fl-budg-dates-2018)) : pour les communes, à partir des budgets de 2019 ; pour les régions, jamais, faute d'élections régionales avant l'abrogation de 2025 (@sec-fl-budg-2025). Il n'abroge pas la loi organique de 1975, qui continue de régir ce qu'il ne règle pas.
 
 :::: {.chronologie-repliable titre="Régime financier du code des collectivités locales de 2018 : intitulés des divisions, articles par objet et pages de l'édition arabe"}
 
@@ -238,13 +200,20 @@ Le régime financier est la quatrième division du livre premier, « الأحك�
 
 : Le régime financier du code des collectivités locales, articles par objet {#tbl-fl-budg-ccl-articles}
 
+
+Le budget voté est transmis au gouverneur et au trésorier régional. Il est équilibré lorsque les dépenses de gestion et de développement sont approuvées en équilibre, compte tenu de tous les engagements antérieurs, service de la dette compris ; les ressources d'emprunt sont obligatoirement affectées au financement des investissements.
+
+- **Le recours.** Dans les dix jours, le gouverneur peut saisir la chambre de la Cour des comptes territorialement compétente, s'il estime le budget en déséquilibre ou s'il y manque une dépense obligatoire ; les décisions de la chambre s'imposent. Le représentant de l'autorité centrale et les contribuables locaux peuvent de même contester devant elle les décisions de préparation, d'exécution et d'équilibre du budget.
+- **Le budget non adopté.** Au 31 décembre, il s'exécute par douzièmes des dépenses obligatoires ; à la fin de mars, le conseil est dissous de plein droit.
+- **En cours d'exercice.** Les dépenses ordonnancées restent limitées aux encaissements, comme depuis 2008. Un déficit d'exécution supérieur à 5 % conduit à inviter la collectivité à le résorber ; à défaut, la chambre de la Cour des comptes ordonne les mesures nécessaires ([articles 177, 181 et 182](#r-fl-budg-ccl-execution)).
+
 La nomenclature et les comptes ont leurs registres (@sec-fl-budg-nomenclature, @sec-fl-budg-ccl-comptes).
 
 ::::
 
 ### 2025 : deux régimes budgétaires {#sec-fl-budg-2025}
 
-Depuis le 18 mars 2025, le budget des conseils locaux, régionaux et de districts relève de la loi de 1975, et non du code. [La loi organique du 12 mars 2025](#r-fl-budg-2025) soumet sa préparation et son approbation à la loi organique du budget, « dans la mesure où elles ne sont pas contraires » à ses propres dispositions ; le président de chaque conseil est ordonnateur. Elle abroge les dispositions du code relatives à la région et au district. Le code reste le régime des communes.
+Depuis le 18 mars 2025, le budget des conseils locaux, régionaux et de districts relève de la loi de 1975, et non du code. [La loi organique du 12 mars 2025](#r-fl-budg-2025) y soumet sa préparation et son approbation, « dans la mesure où elles ne sont pas contraires » à ses propres dispositions, fait du président de chaque conseil l'ordonnateur et abroge les dispositions du code relatives à la région et au district. Le code reste le régime des communes.
 
 ## L'état du droit au 18 mars 2025 {#sec-fl-budg-etat-du-droit}
 
@@ -262,11 +231,11 @@ Au 18 mars 2025, deux régimes coexistent : le code de 2018 pour les communes, l
 
 : Les règles de prévision du budget communal dans le code des collectivités locales, depuis les budgets de 2019 {#tbl-fl-budg-art135}
 
-- **Pour les communes.** Ces règles valent depuis les budgets de 2019 (@sec-fl-budg-ccl-vigueur) ; aucune modification n'en est identifiée. Le budget s'exécute sans approbation (@tbl-fl-budg-controle). Le plafond du remboursement est un ratio de la famille de ceux que Dafflon et Gilbert jugent nécessaires mais non suffisants, faute de compter les coûts récurrents de l'investissement [@dafflon-gilbert-2018, p. 83-84] ; les comptes le situent loin des montants remboursés (@sec-fl-budg-depenses).
-- **Pour les nouveaux conseils.** Le budget des conseils locaux, régionaux et de districts est préparé et approuvé selon la loi de 1975 (@sec-fl-budg-2025).
+- **Pour les communes.** Ces règles valent depuis les budgets de 2019 (@sec-fl-budg-ccl-vigueur), sans modification identifiée, et le budget s'exécute sans approbation (@tbl-fl-budg-controle). Dafflon et Gilbert jugent les ratios de la famille du plafond de remboursement nécessaires mais non suffisants, faute de compter les coûts récurrents de l'investissement [@dafflon-gilbert-2018, p. 83-84] ; les montants remboursés sont loin du plafond (@sec-fl-budg-depenses).
+- **Pour les nouveaux conseils.** Le budget est préparé et approuvé selon la loi de 1975 (@sec-fl-budg-2025).
 - **Le seuil de l'approbation ministérielle.** Fixé pour le budget communal, il est de 18 MD depuis le 26 juin 2017 et ne vaut que pour les budgets encore approuvés selon la loi de 1975 (@sec-fl-budg-seuils).
 - **Sans conseil élu.** Les conseils municipaux étant dissous depuis le 14 mars 2023, les budgets communaux sont préparés sans conseil élu (@sec-fl-comp-dissolution-2023).
-- **Un texte publié, qui n'est pas en vigueur.** [Le décret-loi du 30 septembre 2026](#r-fl-budg-2026) relatif aux conseils municipaux abroge le code de 2018, mais n'entre en vigueur qu'après les prochaines élections municipales. La délibération du conseil municipal sur le budget n'y est exécutoire qu'après l'approbation du gouverneur, comme celle qui fixe les droits et redevances (@sec-fl-moduler-droits).
+- **Un texte publié, qui n'est pas en vigueur.** [Le décret-loi du 30 septembre 2026](#r-fl-budg-2026) relatif aux conseils municipaux abroge le code de 2018, mais n'entre en vigueur qu'après les prochaines élections municipales. La délibération sur le budget n'y est exécutoire qu'après l'approbation du gouverneur, comme celle qui fixe les droits et redevances (@sec-fl-moduler-droits).
 
 <!-- TODO (documentaliste) : établir comment sont votés les budgets communaux depuis le décret-loi n° 2023-9 (décisions du secrétaire général sous la supervision du gouverneur, circulaires, lois de finances). -->
 
@@ -293,16 +262,13 @@ Au 18 mars 2025, deux régimes coexistent : le code de 2018 pour les communes, l
 
 ## Le seuil de l'approbation ministérielle {#sec-fl-budg-seuils}
 
-Sous la loi de 1975, le budget d'une commune dont les recettes dépassent un seuil fixé par décret est approuvé par les ministres de l'Intérieur et des Finances, et non par le gouverneur. Ce seuil passe de 0,5 MD au 1^er^ janvier 1976 à 1 MD en 1977, 2 MD en 1989, 4 MD en 1997 et 6 MD en 2010 ; il est ensuite relevé cinq fois, jusqu'à [18 MD le 26 juin 2017](#r-fl-budg-seuil-2017) (@tbl-fl-budg-seuils).
-
-- **L'assiette change deux fois.** Les prévisions de recettes courantes et en capital de la gestion précédente, d'abord ; les recettes courantes réalisées, en [1986](#r-fl-budg-seuil-1986) ; les prévisions de recettes courantes, depuis [1989](#r-fl-budg-seuil-1989).
-- **Un second seuil, jusqu'en 1985.** En deçà de 75 000 D, le délégué approuvait le budget à la place du gouverneur ; ce niveau disparaît le [2 mai 1985](#r-fl-budg-1985).
-- **L'agrément des investissements.** Sous la même loi, un projet d'investissement d'au moins 100 000 D, dans une commune dont le budget relève des ministres, ou d'au moins 50 000 D, dans les autres communes et les conseils de gouvernorat, exige l'agrément conjoint des deux ministres ([décret du 6 novembre 1975](#r-fl-budg-agrement-1975)).
-- **En juin 2017.** Le seuil de 18 MD ne vaut que pour les budgets encore approuvés selon la loi de 1975. Aucun décret postérieur n'est identifié ici.
+Sous la loi de 1975, le budget d'une commune dont les recettes dépassent un seuil fixé par décret est approuvé par les ministres de l'Intérieur et des Finances, et non par le gouverneur. Ce seuil passe de 0,5 MD au 1^er^ janvier 1976 à 1 MD en 1977, 2 MD en 1989, 4 MD en 1997 et 6 MD en 2010 ; il est ensuite relevé cinq fois, jusqu'à [18 MD le 26 juin 2017](#r-fl-budg-seuil-2017) (@tbl-fl-budg-seuils). Ce dernier seuil ne vaut que pour les budgets encore approuvés selon la loi de 1975. Aucun décret postérieur n'est identifié ici.
 
 <!-- RECHERCHE r-lob-cl-seuil-approbation-apres-2017 : décret fixant le seuil de l'art. 16, 2e sous-paragraphe, de la loi n° 75-35, postérieur au décret gouvernemental n° 2017-758 (voir docs/recherches.yml) -->
 
-:::: {.chronologie-repliable titre="Seuil de recettes au-delà duquel le budget communal est approuvé par les ministres : montants, assiette et décrets, date par date, 1976-2017"}
+:::: {.chronologie-repliable titre="Seuil de recettes au-delà duquel le budget communal est approuvé par les ministres : montants, assiette et décrets, date par date, 1976-2017 ; seuil d'approbation par le délégué, jusqu'en 1985 ; agrément des projets d'investissement, 1975"}
+
+L'assiette du seuil change deux fois : les prévisions de recettes courantes et en capital de la gestion précédente, d'abord ; les recettes courantes réalisées, en [1986](#r-fl-budg-seuil-1986) ; les prévisions de recettes courantes, depuis [1989](#r-fl-budg-seuil-1989).
 
 | Date d'effet | Portée | Seuil<br>(D) | Assiette | Décret |
 |---|---|--:|---|---|
@@ -322,6 +288,10 @@ Sous la loi de 1975, le budget d'une commune dont les recettes dépassent un seu
 
 Chaque décret abroge le précédent. Celui de 1975 s'applique avec la loi ; celui de 1989 fixe lui-même sa date d'effet ; les autres sont datés du jour où ils deviennent exécutoires. Jusqu'en 1985, les décrets de 1975 et de 1977 fixent aussi à 75 000 D le seuil en deçà duquel le délégué approuve [@decret75-485 ; @decret77-320, art. 3].
 
+Ce second seuil disparaît le [2 mai 1985](#r-fl-budg-1985), quand le gouverneur approuve tous les budgets communaux hors les cas réservés aux ministres.
+
+Sous la même loi, un projet d'investissement d'au moins 100 000 D, dans une commune dont le budget relève des ministres, ou d'au moins 50 000 D, dans les autres communes et les conseils de gouvernorat, exige l'agrément conjoint des deux ministres ([décret du 6 novembre 1975](#r-fl-budg-agrement-1975)).
+
 | Date d'effet | Objet | Seuils<br>(D) | Décret |
 |---|---|---|---|
 | []{#r-fl-budg-agrement-1975}[13 novembre 1975]{.insecable} | agrément conjoint des ministres de l'Intérieur et des Finances pour tout projet d'investissement | 100 000 dans les communes dont le budget est approuvé par les ministres ; 50 000 dans les autres communes et les conseils de gouvernorat | pris pour l'article 15 de la loi [@loi75-35, art. 15 ; @decret75-782] |
@@ -338,7 +308,9 @@ Le décret de 1975 sur l'agrément, publié le 11 novembre 1975, est exécutoire
 
 ## La nomenclature du budget {#sec-fl-budg-nomenclature}
 
-La nomenclature range les recettes par catégories et les dépenses par parties ; les séries du chapitre se lisent dans celle qui s'applique depuis le budget de 2008 (@tbl-fl-budg-nomenclature).
+La nomenclature range les recettes par catégories et les dépenses par parties. Les séries du chapitre se lisent dans celle du budget de 2008 : au titre I, les dépenses de gestion — rémunérations, moyens des services, interventions — et les intérêts de la dette ; au titre II, l'investissement et le remboursement du principal de la dette. Dans le code de 2018, les transferts de fonctionnement de l'État forment une catégorie de recettes du titre I, la sixième.
+
+:::: {.chronologie-repliable titre="Nomenclature du budget des collectivités locales : titres, sections, catégories de ressources et parties de dépenses depuis le budget de 2008 ; loi de 1975, refonte de 2007, arrêté de 2008, code de 2018 et décret de 2020, textes et articles"}
 
 | Titre | Section | Ressources : catégories | Dépenses : parties |
 |---|---|---|---|
@@ -356,8 +328,6 @@ La nomenclature range les recettes par catégories et les dépenses par parties 
 - **Pour les communes, un modèle de 2020.** [Un décret gouvernemental du 23 janvier 2020](#r-fl-budg-nomenclature-2020), exécutoire le 6 février 2020, approuve le modèle de la nomenclature budgétaire des communes que le code renvoyait à un décret ; ce modèle n'est publié qu'en arabe.
 - **Une appréciation.** Dafflon juge la déclinaison du code « pratiquement identique » à celle de 2007, à deux changements près — des droits et redevances passés du fiscal au non fiscal, et une partie nouvelle pour les fonds de concours —, et relève l'absence de toute classification fonctionnelle [@dafflon-2021-budget-local].
 
-:::: {.chronologie-repliable titre="Nomenclature du budget des collectivités locales : loi de 1975, refonte de 2007, arrêté de 2008, code de 2018 et décret de 2020, textes et articles"}
-
 | Date d'effet | Texte et article | Ce que dit le texte |
 |---|---|---|
 | []{#r-fl-budg-nomenclature-1975}[1^er^ janvier 1976]{.insecable} | loi n° 75-35 [@loi75-35, art. 1] | la forme et la nomenclature du budget sont fixées par arrêté conjoint des ministres de l'Intérieur et des Finances ; l'arrêté du 6 novembre 1975 est connu ici par son intitulé |
@@ -374,14 +344,14 @@ La nomenclature range les recettes par catégories et les dépenses par parties 
 
 ## Comptable public et reddition des comptes {#sec-fl-budg-ccl-comptes}
 
-Un comptable de l'État paie les dépenses et tient les comptes de la collectivité ; le compte de l'exercice est approuvé par la tutelle sous la loi de 1975, arrêté par le conseil et transmis au juge financier sous le code.
+Un [comptable](#g-comptable-public) de l'État paie les dépenses de la collectivité et tient ses comptes ; il contrôle la légalité des dépenses, non leur opportunité. Le [compte financier](#g-compte-financier) de l'exercice est approuvé par la tutelle sous la loi de 1975 ; sous le code, il est arrêté par le conseil et transmis à la chambre de la Cour des comptes. La Haute instance des finances locales suit l'endettement des collectivités et analyse leurs états financiers (@sec-fl-comp-instances).
+
+:::: {.chronologie-repliable titre="Comptable et comptes des collectivités locales : compte financier et fonds de réserve sous la loi de 1975 ; sous le code de 2018, comptable, comptabilité, dates de clôture, d'arrêt et de transmission, publication et inspection, article par article"}
 
 - **Sous la loi de 1975.** Le compte financier, examiné par le conseil, est approuvé par l'autorité de tutelle ; le résultat va au fonds de réserve, utilisable pour l'équipement ou pour résorber un déficit ([articles 25 et 26](#r-fl-budg-1975-compte)).
-- **Le comptable, sous le code.** Le [comptable](#g-comptable-public) de la collectivité est un comptable public de l'État, nommé par arrêté du ministre des Finances. Il contrôle la légalité des dépenses, non leur opportunité ; l'ordonnateur peut le requérir de payer, et la réquisition est transmise à la chambre de la Cour des comptes ([articles 129 et 186](#r-fl-budg-comptes-comptable)).
-- **Les comptes.** Le code prévoit une comptabilité en partie double et en droits constatés, selon un système à adopter dans les quatre ans. Le conseil arrête le compte, et une copie du [compte financier](#g-compte-financier) va à la chambre de la Cour des comptes ([articles 191 à 196](#r-fl-budg-comptes-dates)).
-- **Publicité et suivi.** Le code prévoit la publication en ligne des documents budgétaires et le droit des habitants de demander des explications ([articles 165, 171 et 176](#r-fl-budg-comptes-publication)) ; Dafflon y voit l'un des instruments de la démocratie participative [@dafflon-2021-budget-local]. La Haute instance des finances locales suit l'endettement des collectivités et analyse leurs états financiers (@sec-fl-comp-instances).
-
-:::: {.chronologie-repliable titre="Comptes des collectivités locales sous le code de 2018 : comptable, comptabilité, dates de clôture, d'arrêt et de transmission, publication, article par article"}
+- **Le comptable, sous le code.** Le comptable de la collectivité est un comptable public de l'État, nommé par arrêté du ministre des Finances. Il contrôle la légalité des dépenses, non leur opportunité ; l'ordonnateur peut le requérir de payer, et la réquisition est transmise à la chambre de la Cour des comptes ([articles 129 et 186](#r-fl-budg-comptes-comptable)).
+- **Les comptes.** Le code prévoit une comptabilité en partie double et en droits constatés, selon un système à adopter dans les quatre ans. Le conseil arrête le compte, et une copie du compte financier va à la chambre de la Cour des comptes ([articles 191 à 196](#r-fl-budg-comptes-dates)).
+- **Publicité et suivi.** Le code prévoit la publication en ligne des documents budgétaires et le droit des habitants de demander des explications ([articles 165, 171 et 176](#r-fl-budg-comptes-publication)) ; Dafflon y voit l'un des instruments de la démocratie participative [@dafflon-2021-budget-local].
 
 | Objet | Texte et article | Ce que dit l'article |
 |---|---|---|
@@ -397,11 +367,21 @@ Un comptable de l'État paie les dépenses et tient les comptes de la collectivi
 
 ## La longue période {#sec-fl-budg-longue-periode}
 
-[]{#sec-fl-longue-periode}Les séries disponibles portent sur les communes ; aucune ne couvre seule la période. Les sources budgétaires viennent d'abord — recettes, autonomie, dépenses, impôts —, puis les comptes de la nation, enfin les rapports de la Banque mondiale, sous un titre qui les nomme. Le fonds commun, les subventions annuelles et la caisse de prêts sont suivis au chapitre des transferts (@sec-fl-lp-fccl, @sec-fl-lp-cpscl), le produit de chaque impôt dans son chapitre (@sec-fl-immeubles-longue-periode, @sec-fl-activite-longue-periode). Les montants sont en millions de dinars courants (MD).
+[]{#sec-fl-longue-periode}Les séries portent sur les communes ; aucune ne couvre seule la période. Le fonds commun, les subventions annuelles et la caisse de prêts sont suivis au chapitre des transferts (@sec-fl-lp-fccl, @sec-fl-lp-cpscl), le produit de chaque impôt dans son chapitre (@sec-fl-immeubles-longue-periode, @sec-fl-activite-longue-periode).
 
 ### Les sources et leurs ruptures {#sec-fl-lp-sources}
 
-Six sources sont mobilisées dans le volume (@tbl-fl-lp-sources). Elles ne mesurent ni le même périmètre ni la même chose : un budget communal exécuté, des états financiers, un compte de la comptabilité nationale, un tableau d'un rapport de projet. Elles ne sont donc jamais fusionnées : chaque figure trace chaque source séparément, avec sa propre marque, et laisse voir les écarts sur les années communes.
+Les séries du volume viennent de trois sources de l'administration — la Direction générale des collectivités locales, par ses agrégats (2008-2019) et ses budgets par commune (2018-2023), la caisse des prêts et de soutien des collectivités locales (2005-2024), les comptes de la nation (2001-2025) — et de trois documents de la Banque mondiale (1985-1991, 1990-1996, 2002-2012) (@tbl-fl-lp-sources). Elles ne mesurent ni le même périmètre ni la même chose, et ne sont jamais fusionnées : chaque figure trace chaque source à part, avec sa marque.
+
+Trois ruptures les traversent.
+
+- **Le périmètre communal.** [Au 1^er^ juin 2016](#r-fl-budg-communes-2016), des communes sont créées et d'autres étendues : sur 350 communes, 77 anciennes, 187 étendues et 86 créées [@dgct-donnees-ouvertes]. Les agrégats de 2008-2019 ne sont donc pas à périmètre constant.
+- **La fin du fonds commun.** [Au 1^er^ janvier 2018](#r-fl-budg-fonds-2018), les subventions annuelles lui succèdent, partagées sur une autre base (@sec-fl-fccl-2018).
+- **Les bases des comptes nationaux.** Le PIB pris pour dénominateur est en base 1983 jusqu'en 2004, 1997 de 2005 à 2014, 2015 ensuite, sans rétropolation ni raccord : chaque changement est une rupture ([annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)).
+
+[]{#sec-fl-lp-ecarts}Les exercices 2021 et 2023 des budgets par commune, non clos, sont marqués d'un point creux. Sur leurs années communes, les sources de l'administration concordent à quelques millions de dinars près (@tbl-fl-lp-ecarts).
+
+:::: {.chronologie-repliable titre="Sources des séries du volume : ce que mesure chacune et sur quelles années, 1985-2025 ; exercices non clos ; écarts entre les agrégats de la Direction générale, la somme des budgets par commune et le tableau du ministère des Finances, 2010 et 2018-2019"}
 
 | Source | Années | Ce qu'elle mesure |
 |---|---|---|
@@ -417,17 +397,10 @@ Six sources sont mobilisées dans le volume (@tbl-fl-lp-sources). Elles ne mesur
 
 : Les sources des séries du volume {#tbl-fl-lp-sources}
 
-Les budgets par commune de 2021 sont une situation arrêtée au 25 décembre 2021, ceux de 2023 une situation provisoire au 10 janvier 2024 [@dgct-donnees-ouvertes] : les figures marquent ces deux années d'un point creux. Pour 2020 et 2021, ils ne descendent pas sous la catégorie de recettes : les impôts n'y sont pas détaillés un à un, et les figures laissent ces années vides, sans interpolation.
+Ces sources mesurent un budget communal exécuté, des états financiers, un compte de la comptabilité nationale, un tableau d'un rapport de projet.
 
-Trois ruptures traversent les séries.
+Les budgets par commune de 2021 sont une situation arrêtée au 25 décembre 2021, ceux de 2023 une situation provisoire au 10 janvier 2024 [@dgct-donnees-ouvertes]. Pour 2020 et 2021, ils ne descendent pas sous la catégorie de recettes : les impôts n'y sont pas détaillés un à un, et les figures laissent ces années vides, sans interpolation.
 
-- **Le périmètre communal.** [Trois décrets gouvernementaux du 26 mai 2016](#r-fl-budg-communes-2016), exécutoires le 1^er^ juin 2016, créent des communes dans vingt gouvernorats et modifient les limites de communes existantes. La liste de la Direction générale compte 350 communes : 77 anciennes, 187 étendues et 86 créées [@dgct-donnees-ouvertes]. Les agrégats de 2008-2019 ne sont donc pas à périmètre constant.
-- **La fin du fonds commun.** [Au 1^er^ janvier 2018](#r-fl-budg-fonds-2018), le fonds commun des collectivités locales est supprimé ; les subventions annuelles qui lui succèdent se partagent sur une autre base, fixée par arrêté (@sec-fl-fccl-2018).
-- **Les bases des comptes nationaux.** Le compte des collectivités locales et le PIB sont publiés en base 1983, puis 1997, puis 2015. Le PIB pris pour dénominateur est celui de la dernière édition qui porte l'année : base 1983 jusqu'en 2004, base 1997 de 2005 à 2014, base 2015 ensuite. Aucune valeur n'est rétropolée et les bases ne sont pas raccordées : chaque changement est une rupture, que les figures marquent (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)).
-
-[]{#sec-fl-lp-ecarts}Sur les années qu'elles ont en commun, les sources de l'administration concordent à quelques millions de dinars près (@tbl-fl-lp-ecarts) ; les écarts entre les rapports de la Banque mondiale sont dans leur section (@sec-fl-lp-bm).
-
-:::: {.chronologie-repliable titre="Finances des communes : écarts entre les agrégats de la Direction générale, la somme des budgets par commune et le tableau du ministère des Finances, 2010 et 2018-2019"}
 
 | Grandeur et années | Source A | Source B | Constat |
 |---|---|---|---|
@@ -436,6 +409,7 @@ Trois ruptures traversent les séries.
 | Impôts et fonds commun, 2010 | tableau de l'Unité des finances locales du ministère des Finances, connu ici par Dafflon et Gilbert, qui le reprennent : taxe sur les établissements 111,1 ; taxe sur les immeubles bâtis 39,4 ; terrains non bâtis 14,9 ; quote-part au fonds commun 131,4 MD [@dafflon-gilbert-2018, p. 186-187, tabl. 20] | agrégats : 111, 39, 15, 133 MD | concordance des impôts ; fonds commun inférieur de 1,6 MD |
 
 : Les écarts entre sources de l'administration sur les années communes {#tbl-fl-lp-ecarts}
+
 
 ::::
 
@@ -452,7 +426,24 @@ Trois ruptures traversent les séries.
 
 ### Recettes propres et transferts {#sec-fl-lp-ressources}
 
-La figure est en tête du chapitre (@fig-fl-lp-ressources). Les sources ne permettent de suivre sur toute la période que le titre 1 du budget communal, celui des recettes de fonctionnement. []{#sec-fl-lp-notations}On y distingue les transferts de fonctionnement reçus de l'État et, par différence, les recettes propres :
+Seul le titre 1 du budget communal, celui des recettes de fonctionnement, se suit sur toute la période (@fig-fl-lp-ressources). []{#sec-fl-lp-notations}Les recettes propres y sont les recettes du titre 1 moins les transferts de fonctionnement de l'État, tels que chaque source les compte (@tbl-fl-lp-transferts-definition).
+
+- **2008-2017, selon les agrégats de la Direction générale.** Les transferts font autour de 25 % des recettes de fonctionnement de 2008 à 2010, puis 52 % en 2011 avec la dotation exceptionnelle de 147 MD aux communes ; leur part décroît ensuite, à 38 % en 2013 et 30 % en 2017, à mesure que la dotation s'éteint (@fig-fl-lp-fccl).
+- **2018-2023, selon la somme des budgets par commune.** De 35 % à 43 %, sur un périmètre et une définition des transferts différents : 32 % et 31 % en 2018 et 2019 selon les agrégats.
+- **En part du PIB.** Les recettes propres font de 0,61 % à 0,64 % du PIB de 2008 à 2010, 0,41 % en 2011 et 0,59 % en 2014, en base 1997 des comptes nationaux ; en base 2015, 0,60 % en 2015 et 0,66 % en 2019 selon les agrégats, et de 0,52 % à 0,61 % de 2018 à 2023 selon la somme des budgets par commune. Les deux bases ne sont pas raccordées ([annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)).
+
+:::: {.chronologie-repliable titre="Recettes propres et transferts des communes : définition des transferts de fonctionnement selon la source et notations, 1990-2023"}
+
+| Source | Années | Ce qui est compté comme transfert de fonctionnement |
+|---|---|---|
+| Direction générale des collectivités locales, agrégats publiés [@dgct-donnees-ouvertes] | 2008-2019 | la quote-part des communes au fonds commun, puis aux subventions annuelles, et la dotation exceptionnelle |
+| Même source, budgets par commune [@dgct-donnees-ouvertes] | 2018-2023 | la catégorie 6 des recettes, « transferts de l'État au titre du fonctionnement » |
+| Banque mondiale, document de 2014 [@wb-pforr-pad-2014, tabl. 1] | 2002-2012 | le fonds commun et les transferts exceptionnels ; le tableau donne lui-même les recettes du titre 1 comme la somme des ressources propres et de ces transferts |
+| Banque mondiale, rapport de 1997 [@wb-mdp2-1997, annexe 4, tabl. 2] | 1990, 1992, 1994-1996 | le fonds commun |
+
+: Les transferts de fonctionnement retenus, source par source {#tbl-fl-lp-transferts-definition}
+
+Les recettes propres sont, pour chaque source, les recettes du titre 1 moins ces transferts.
 
 $$
 P_1 = R_1 - T_1
@@ -462,19 +453,13 @@ $$
 
 où $R_1$ est le total des recettes du titre 1, $T_1$ les transferts de fonctionnement de l'État, $P_1$ les recettes propres de fonctionnement et $a_1$ leur part dans les recettes de fonctionnement. Ce que chaque source compte dans $T_1$ est au @tbl-fl-lp-transferts-definition.
 
-- **2008-2017, selon les agrégats de la Direction générale.** La part des transferts se tient autour de 25 % de 2008 à 2010. En 2011, la dotation exceptionnelle de 147 MD aux communes la porte à 52 % ; elle décroît ensuite, à 38 % en 2013 et 30 % en 2017, à mesure que la dotation s'éteint (@fig-fl-lp-fccl).
-- **2018-2023, selon la somme des budgets par commune.** De 35 % à 43 %, sur un périmètre et une définition des transferts différents : 32 % et 31 % en 2018 et 2019 selon les agrégats.
-- **En part du PIB.** Les recettes propres de fonctionnement font de 0,61 % à 0,64 % du PIB de 2008 à 2010, 0,41 % en 2011 et 0,59 % en 2014, en base 1997 des comptes nationaux ; en base 2015, 0,60 % en 2015 et 0,66 % en 2019 selon les agrégats, et de 0,52 % à 0,61 % de 2018 à 2023 selon la somme des budgets par commune. Les deux bases ne sont pas raccordées (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)).
+Sur 2018-2019, la somme des budgets par commune donne des transferts plus élevés que les agrégats de la Direction générale, parce que sa catégorie 6 comprend d'autres transferts que les subventions annuelles. Sur 2008-2012, le tableau du document de la Banque mondiale de 2014 se superpose presque aux agrégats.
+
+::::
 
 ### L'autonomie financière {#sec-fl-lp-autonomie}
 
-Le chapitre des notions définit le [taux d'autonomie financière](#g-taux-autonomie-financiere) comme la part des recettes propres dans les ressources hors emprunt, $a = P/Q$ (@sec-fl-taux-autonomie). Le budget communal ne se prête pas directement à ce calcul : les recettes du titre 2 comprennent l'épargne et les excédents du titre 1 reportés, 436 MD en 2018 et 634 MD en 2023 selon la somme des budgets par commune [@dgct-donnees-ouvertes], si bien que la somme des deux titres compte deux fois l'excédent de fonctionnement. Le ratio n'est calculé que pour 2018-2023, seules années où les budgets par commune détaillent le titre 2, avec un dénominateur qui écarte l'emprunt et l'épargne reportée :
-
-$$
-Q = R_1 + S + K
-$$
-
-où $R_1$ est le total des recettes du titre 1, $S$ le montant des subventions d'équipement (catégorie 7 des recettes) et $K$ celui des crédits transférés (catégorie 12) ; $P$ est pris égal aux recettes propres de fonctionnement $P_1$, soit $R_1$ moins les transferts de fonctionnement de l'État, les ressources propres du titre 2 n'étant pas isolées avant 2022. La part des recettes propres dans les seules recettes de fonctionnement est notée $a_1 = P_1/R_1$.
+Le [taux d'autonomie financière](#g-taux-autonomie-financiere) est la part des recettes propres dans les ressources hors emprunt (@sec-fl-taux-autonomie). Deux ratios en approchent. Le premier, $a_1 = P_1/R_1$, rapporte les recettes propres de fonctionnement $P_1$ aux recettes du titre 1, $R_1$, pour chaque source. Le second, $a = P_1/Q$, ajoute au dénominateur $Q$ les subventions d'équipement et les crédits transférés du titre 2, sans l'emprunt ni l'épargne reportée ; les budgets par commune ne le permettent que de 2018 à 2023.
 
 ```{python}
 #| label: fig-fl-lp-autonomie
@@ -491,24 +476,37 @@ figtools.figure_tabs(
     caption="Autonomie financière des communes : ratio publié et ratios calculés, 1990-2023",
     note_lecture=(
         "En gris, le ratio que publie la Direction générale, sans définition. En bleu, la part "
-        "des recettes propres dans les recettes de fonctionnement, calculée pour chaque "
-        "source : ronds et losanges pour les deux sources budgétaires, triangles et carrés "
-        "pour les documents de la Banque mondiale. En vert, la part des recettes propres dans "
-        "les ressources hors emprunt et hors épargne reportée, calculable seulement sur les "
-        "budgets par commune de 2018 à 2023 : elle est plus basse, parce que son dénominateur "
-        "ajoute les subventions d'équipement et les crédits transférés, qui sont des "
-        "transferts."),
+        "des recettes propres dans les recettes de fonctionnement, par source : ronds et "
+        "losanges pour les deux sources budgétaires, triangles et carrés pour les documents "
+        "de la Banque mondiale. En vert, la part des recettes propres dans les ressources "
+        "hors emprunt et hors épargne reportée, de 2018 à 2023."),
 )
 ```
 
-- **Le ratio publié.** La Direction générale publie, de 2008 à 2019, un ratio d'« autonomie financière » dont elle ne donne pas la définition [@dgct-donnees-ouvertes]. Il s'écarte de moins d'un point de $a_1$ calculé sur ses propres agrégats en 2008-2010, 2012-2014 et 2018-2019, d'un point en 2015, mais de 6,4 points en 2011 (54 % publié, 47,6 % calculé), de 2,6 points en 2016 et de 3,8 points en 2017.
-- **Le ratio le plus large.** Sur 2018-2023, $a$ va de 53 % (2018) à 40 % (2021), puis 44 % en 2022 et 2023 : l'écart avec $a_1$, de 11 à 18 points, mesure le poids des subventions d'équipement et des crédits transférés au titre 2.
+- **Le ratio publié.** Le ratio d'« autonomie financière » que la Direction générale publie de 2008 à 2019, sans définition [@dgct-donnees-ouvertes], suit $a_1$ à un point près, sauf en 2011 (54 % publié, 47,6 % calculé), 2016 et 2017.
+- **Le ratio le plus large.** Sur 2018-2023, $a$ va de 53 % (2018) à 40 % (2021), puis 44 % en 2022 et 2023 : l'écart avec $a_1$, de 11 à 18 points, mesure le poids des subventions d'équipement et des crédits transférés.
 
 <!-- TODO (documentaliste) : définitions des ratios publiés par la Direction générale (autonomie financière, rémunération, recouvrement) : non publiées avec les séries ; fiche proposée `r-fl-dgct-definitions-ratios`, non versée au registre (docs/notes/finances-locales-transferts-budgets-lectures-2026-10-09.md, Q8) — pistes : étude sur les transferts financiers de la bibliothèque du portail, archives du web. -->
 
+:::: {.chronologie-repliable titre="Autonomie financière des communes : calcul du dénominateur, 2018-2023, et écarts entre le ratio publié et le ratio calculé, année par année, 2008-2019"}
+
+**Le dénominateur du taux d'autonomie.** Le budget communal ne se prête pas directement au calcul du taux d'autonomie financière, $a = P/Q$ : les recettes du titre 2 comprennent l'épargne et les excédents du titre 1 reportés, 436 MD en 2018 et 634 MD en 2023 selon la somme des budgets par commune [@dgct-donnees-ouvertes], si bien que la somme des deux titres compte deux fois l'excédent de fonctionnement. Le ratio n'est calculé que pour 2018-2023, seules années où les budgets par commune détaillent le titre 2, avec un dénominateur qui écarte l'emprunt et l'épargne reportée :
+
+$$
+Q = R_1 + S + K
+$$
+
+où $R_1$ est le total des recettes du titre 1, $S$ le montant des subventions d'équipement (catégorie 7 des recettes) et $K$ celui des crédits transférés (catégorie 12) ; $P$ est pris égal aux recettes propres de fonctionnement $P_1$, soit $R_1$ moins les transferts de fonctionnement de l'État, les ressources propres du titre 2 n'étant pas isolées avant 2022. La part des recettes propres dans les seules recettes de fonctionnement est notée $a_1 = P_1/R_1$.
+
+**Le ratio publié, année par année.** Le ratio d'« autonomie financière » de la Direction générale s'écarte de moins d'un point de $a_1$ calculé sur ses propres agrégats en 2008-2010, 2012-2014 et 2018-2019, d'un point en 2015, mais de 6,4 points en 2011 (54 % publié, 47,6 % calculé), de 2,6 points en 2016 et de 3,8 points en 2017.
+
+Le ratio $a$ est plus bas que $a_1$ parce que son dénominateur ajoute les subventions d'équipement et les crédits transférés, qui sont des transferts.
+
+::::
+
 ### Dépenses, rémunérations et service de la dette {#sec-fl-budg-depenses}
 
-Deux sources budgétaires donnent les dépenses des communes : les agrégats de la Direction générale, de 2008 à 2019, pour les deux titres et les rémunérations ; la somme des budgets par commune, de 2018 à 2023, qui détaille aussi le service de la dette [@dgct-donnees-ouvertes].
+Les dépenses des communes se suivent par titre de 2008 à 2023, leur service de la dette de 2018 à 2023 [@dgct-donnees-ouvertes].
 
 ```{python}
 #| label: fig-fl-budg-depenses
@@ -524,20 +522,17 @@ figtools.figure_tabs(
     caption=("Dépenses des communes par titre, service de la dette et emprunt, en millions "
              "de dinars courants, 2002-2023"),
     note_lecture=(
-        "Chaque source est tracée à part. Les ronds sont les agrégats de la Direction "
-        "générale des collectivités locales, les losanges la somme des budgets par commune ; "
-        "2021 et 2023, non clos, sont en points creux. Les triangles sont le tableau du "
-        "document de la Banque mondiale de 2014, où les dépenses du titre II comprennent le "
-        "remboursement du capital. Le titre I réunit les dépenses de gestion et les intérêts "
-        "de la dette ; le titre II, les dépenses de développement et le remboursement du "
-        "principal. La ligne pointillée de 2016 marque l'extension du périmètre communal. "
-        "Les traits rouges placent deux textes à leur date d'effet (budgets de 2008, budgets "
-        "communaux de 2019) sans établir de lien de cause."),
+        "Ronds : agrégats de la Direction générale des collectivités locales ; losanges : "
+        "somme des budgets par commune, 2021 et 2023 non clos en points creux ; triangles : "
+        "document de la Banque mondiale de 2014, où le titre II comprend le remboursement "
+        "du capital. La ligne pointillée de 2016 marque l'extension du périmètre communal. "
+        "Les traits rouges placent deux textes à leur date d'effet (budgets de 2008, "
+        "budgets communaux de 2019) sans établir de lien de cause."),
 )
 ```
 
-- **Les deux titres.** Les dépenses du titre I passent de 375 MD en 2008 à 933 MD en 2019 selon les agrégats ; elles valent 1 145 MD en 2022 et 1 082 MD en 2023, année provisoire, selon la somme des budgets par commune. Celles du titre II restent entre 128 et 188 MD de 2008 à 2013, puis entre 275 et 333 MD de 2014 à 2019 ; elles atteignent 426 MD en 2022.
-- **Le service de la dette.** De 2018 à 2023, les communes remboursent chaque année de 37 à 48 MD de principal et paient de 21 à 29 MD d'intérêts ; elles mobilisent de 40 à 55 MD d'emprunts intérieurs. Le remboursement du principal fait de 3,7 % à 5,7 % des dépenses du titre I de la même année : très en deçà du plafond de moitié que le code rapporte au budget de fonctionnement (@tbl-fl-budg-art135).
+- **Les deux titres.** Les dépenses du titre I, gestion et intérêts, passent de 375 MD en 2008 à 933 MD en 2019 selon les agrégats ; elles valent 1 145 MD en 2022 et 1 082 MD en 2023, année provisoire, selon la somme des budgets par commune. Celles du titre II, développement et remboursement du principal, restent entre 128 et 188 MD de 2008 à 2013, entre 275 et 333 MD de 2014 à 2019, et atteignent 426 MD en 2022.
+- **Le service de la dette.** De 2018 à 2023, les communes remboursent chaque année de 37 à 48 MD de principal, paient de 21 à 29 MD d'intérêts et mobilisent de 40 à 55 MD d'emprunts intérieurs. Le remboursement du principal fait de 3,7 % à 5,7 % des dépenses du titre I de la même année, très en deçà du plafond de moitié du code (@tbl-fl-budg-art135).
 
 ```{python}
 #| label: fig-fl-budg-remunerations
@@ -555,23 +550,19 @@ figtools.figure_tabs(
     note_lecture=(
         "En gris, le ratio « Rémunération » que publie la Direction générale des "
         "collectivités locales, sans définition. En bleu, les rémunérations rapportées aux "
-        "recettes du titre I de la même année ; en vert, aux recettes du titre I de l'année "
-        "précédente. Ronds : agrégats de la Direction générale ; losanges : somme des "
-        "budgets par commune, qui ne donne les rémunérations que pour 2022 et 2023. Le trait "
-        "rouge horizontal est le plafond de moitié, tracé depuis les budgets de 2019 : la "
-        "règle porte sur les prévisions du budget et se rapporte aux recettes de l'année "
-        "écoulée, alors que les trois courbes sont des réalisations. Un point creux a un "
-        "exercice non clos au numérateur ou au dénominateur. La ligne pointillée de 2016 "
-        "marque l'extension du périmètre communal."),
+        "recettes du titre I de la même année ; en vert, à celles de l'année précédente. "
+        "Ronds : agrégats ; losanges : somme des budgets par commune, 2022 et 2023 "
+        "seulement. Trait rouge : plafond de moitié, depuis les budgets de 2019. Un point "
+        "creux a un exercice non clos au numérateur ou au dénominateur."),
 )
 ```
 
 - **Les rémunérations.** 201 MD en 2008 et 544 MD en 2019 selon les agrégats ; 693 MD en 2022 et 689 MD en 2023 selon la somme des budgets par commune. Rapportées aux recettes du titre I de la même année, elles en font de 43 % à 50 % de 2008 à 2019 — à l'arrondi près, le ratio « Rémunération » que publie la Direction générale —, puis 50,1 % en 2022 et 47,4 % en 2023.
-- **Face au plafond de moitié.** Le plafond du code se rapporte aux recettes du titre I de l'année écoulée, et il porte sur les prévisions. Calculé sur les réalisations, le rapport des rémunérations aux recettes du titre I de l'année précédente va de 46 % à 57 % de 2009 à 2019, dont 52,0 % en 2019, première année où la règle s'applique aux communes ; il vaut 59 % en 2022, sur un dénominateur de 2021 non clos, et 49,8 % en 2023. Ce rapport compare des réalisations : il ne dit pas si les budgets votés respectent la règle.
+- **Face au plafond de moitié.** Le plafond du code porte sur les prévisions et se rapporte aux recettes du titre I de l'année écoulée. Sur les réalisations, ce rapport va de 46 % à 57 % de 2009 à 2019, dont 52,0 % en 2019, première année où la règle s'applique aux communes ; il vaut 59 % en 2022, sur un dénominateur de 2021 non clos, et 49,8 % en 2023. Il ne dit pas si les budgets votés respectent la règle.
 
 ### Les quatre impôts locaux : sources budgétaires et rapport de la Banque mondiale de 1997 {#sec-fl-lp-impots}
 
-Le produit de chaque impôt est lu dans son chapitre : la taxe sur les immeubles bâtis, la taxe sur les terrains non bâtis et le taux de recouvrement de la première au chapitre des impôts sur les immeubles (@sec-fl-immeubles-rendement, @sec-fl-immeubles-recouvrement-donnees) ; la taxe sur les établissements et la taxe hôtelière au chapitre des impôts sur l'activité (@sec-fl-activite-longue-periode). Les quatre sont réunis ici sur une même figure.
+Le produit de chaque impôt est lu dans son chapitre : les deux taxes foncières et le recouvrement de la taxe sur les immeubles bâtis (@sec-fl-immeubles-rendement, @sec-fl-immeubles-recouvrement-donnees), la taxe sur les établissements et la taxe hôtelière (@sec-fl-activite-longue-periode). Les quatre sont réunis ici sur une figure, de 2008 à 2019 selon les agrégats de la Direction générale, en 2022 et 2023 selon les budgets par commune, aux articles 1101, 1102, 1201 et 1202 [@dgct-donnees-ouvertes].
 
 ```{python}
 #| label: fig-fl-lp-impots
@@ -587,24 +578,20 @@ figtools.figure_tabs(
     caption=("Rendement des impôts locaux des communes, en millions de dinars courants, en "
              "part des recettes de fonctionnement et en % du PIB, 1990-2023"),
     note_lecture=(
-        "Les ronds et les losanges sont les deux sources budgétaires, de 2008 à 2023. Les "
-        "courbes s'interrompent en 2020 et 2021 : les budgets par commune de ces années ne "
-        "détaillent pas les impôts, et rien n'est interpolé. Les carrés reliés en pointillé "
-        "sont les points du rapport de la Banque mondiale de 1997, pour la taxe sur les "
-        "établissements et la taxe hôtelière ; ce rapport ne publie pas de PIB, et ses "
-        "points n'ont pas de vue au PIB. Dans cette vue, le dénominateur est le PIB des "
-        "comptes de la nation, en base 1997 de 2008 à 2014 et en base 2015 ensuite ; les "
-        "deux bases ne sont pas raccordées (voir l'[annexe sur le PIB]"
-        "(../annexe-pib.html#sec-pib-ruptures))."),
+        "Ronds et losanges : les deux sources budgétaires, de 2008 à 2023 ; les budgets par "
+        "commune de 2020 et 2021 ne détaillent pas les impôts, et rien n'est interpolé. "
+        "Carrés en pointillé : rapport de la Banque mondiale de 1997, qui ne publie pas de "
+        "PIB et n'a donc pas de vue au PIB. Dans cette vue, PIB des comptes de la nation, en "
+        "base 1997 de 2008 à 2014 et en base 2015 ensuite, non raccordées (voir "
+        "l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures))."),
 )
 ```
 
-- **2008-2023, les sources budgétaires.** La Direction générale publie de 2008 à 2019 le produit de la taxe sur les immeubles bâtis, de la taxe sur les terrains non bâtis, de la taxe sur les établissements à caractère industriel, commercial ou professionnel et de la taxe hôtelière ; les budgets par commune les donnent à l'article pour 2022 et 2023 (articles 1101, 1102, 1201 et 1202) [@dgct-donnees-ouvertes].
-- **1990-1996, selon le rapport de la Banque mondiale de 1997.** Ce rapport d'évaluation d'un projet municipal donne les deux taxes sur l'activité pour cinq années : la taxe sur les établissements passe de 8 % des recettes courantes des communes en 1990 à 13 % en 1996, et la taxe hôtelière se tient entre 3,4 % et 4,3 %. La ligne de la taxe locative, devenue taxe sur les immeubles bâtis en 1997, manque à son tableau imprimé [@wb-mdp2-1997, annexe 4, tabl. 2].
+Pour cinq années de 1990 à 1996, un rapport d'évaluation de projet municipal de la Banque mondiale, de 1997, donne les deux taxes sur l'activité : la taxe sur les établissements passe de 8 % des recettes courantes des communes en 1990 à 13 % en 1996, la taxe hôtelière se tient entre 3,4 % et 4,3 % ; la ligne de la taxe locative, devenue taxe sur les immeubles bâtis en 1997, manque à son tableau imprimé [@wb-mdp2-1997, annexe 4, tabl. 2].
 
 ### Épargne et investissement dans les comptes de la nation {#sec-fl-lp-ins}
 
-L'Institut national de la statistique publie, dans chaque édition des comptes de la nation, un compte des collectivités locales, sous-secteur des administrations publiques qui réunit communes et conseils régionaux, puis régions [@ins-cnat-2015]. Ce n'est pas le budget des communes : le compte décrit la production, les revenus, l'épargne et l'investissement selon les règles de la comptabilité nationale, sans détailler les impôts locaux. La @fig-fl-lp-ins en retient deux soldes : l'épargne brute et la formation brute de capital fixe.
+Les comptes de la nation de l'Institut national de la statistique portent un compte des collectivités locales, communes et conseils régionaux, puis régions [@ins-cnat-2015]. Ce n'est pas le budget des communes : il suit les règles de la comptabilité nationale et ne détaille pas les impôts locaux. La @fig-fl-lp-ins en retient l'épargne brute et la formation brute de capital fixe.
 
 ```{python}
 #| label: fig-fl-lp-ins
@@ -628,20 +615,20 @@ figtools.figure_tabs(
 )
 ```
 
-- **Deux bases, deux valeurs.** L'épargne brute de 2015 vaut 198 MD en base 1997 et 359 MD en base 2015 [@ins-cnat-2015].
+- **Deux bases, deux valeurs.** L'épargne brute de 2015 vaut 198 MD en base 1997, 359 MD en base 2015 [@ins-cnat-2015].
 - **L'investissement.** En base 2015, la formation brute de capital fixe passe de 0,51 % du PIB en 2016 à 0,29 % en 2023 et 2024, puis 0,36 % en 2025, année provisoire.
 - **Une valeur reproduite telle quelle.** En base 1997, la formation brute de capital fixe de 2013 est égale, au dixième près, aux salaires bruts de la même année (276,8 MD), dans les cinq éditions qui la publient ; le compte boucle avec cette valeur.
 
 ### Selon les rapports de la Banque mondiale, 1990-2012 {#sec-fl-lp-bm}
 
-Trois documents de la Banque mondiale publient des tableaux des budgets des communes : deux rapports d'évaluation de projets municipaux, de 1992 et de 1997, et le document d'évaluation d'un programme de développement urbain, de 2014 (@tbl-fl-lp-sources). Leurs points sont tracés à part sur les figures du chapitre.
+Trois documents de la Banque mondiale publient des tableaux des budgets des communes, tracés à part sur les figures : deux rapports d'évaluation de projets municipaux (1992, 1997) et le document d'évaluation d'un programme de développement urbain (2014) (@tbl-fl-lp-sources). Selon le rapport de 1997, le fonds commun fait 41 % des recettes de fonctionnement des communes en 1990 et 33 % en 1996 ; selon le document de 2014, la part des transferts descend de 28 % en 2002 à 24 % en 2010, puis atteint 52 % en 2011, et les recettes du titre 1 concordent avec les agrégats de la Direction générale de 2008 à 2012.
+
+:::: {.chronologie-repliable titre="Finances des communes selon la Banque mondiale : chiffres des rapports de 1992, 1997 et 2014, écarts avec les agrégats de la Direction générale (2008-2012) et entre les rapports de 1992 et de 1997 (1990)"}
 
 - **1990-1996.** Selon le rapport de 1997, le fonds commun fait 41 % des recettes de fonctionnement des communes en 1990 et 33 % en 1996 [@wb-mdp2-1997, annexe 4, tabl. 2].
 - **2002-2012.** Selon le document de 2014, la part des transferts descend de 28 % en 2002 à 24 % en 2010, puis atteint 52 % en 2011. Les dépenses du titre I passent de 258 MD en 2002 à 502 MD en 2012, et le remboursement du capital de la dette de 25 à 60 MD [@wb-pforr-pad-2014, tabl. 1]. Les recettes propres de fonctionnement font 0,75 % du PIB en 2002, en base 1983 des comptes nationaux, puis 0,67 % en 2005 et 0,64 % en 2010, en base 1997 : le dénominateur est celui de l'Institut national de la statistique, non celui du document, et les deux bases ne sont pas raccordées (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)).
 - **Face aux agrégats de la Direction générale, 2008-2012.** Les recettes du titre 1 concordent ; les écarts sont de 10 à 14 MD sur les dépenses du titre 1, de 2010 à 2012, et sur les ressources du titre 2, en 2009 et 2010 ; le fonds commun du document est inférieur de 2 MD de 2008 à 2011 (@sec-fl-transferts-1990).
 - **1990, deux rapports.** Les rapports de 1992 et de 1997 ne donnent pas les mêmes montants pour 1990 ; la divergence n'est pas tranchée (@tbl-fl-lp-ecarts-bm).
-
-:::: {.chronologie-repliable titre="Finances des communes en 1990 selon la Banque mondiale : écarts entre le rapport de 1992 et celui de 1997, fonds commun et recettes courantes"}
 
 | Grandeur | Rapport de 1992 | Rapport de 1997 | Constat |
 |---|---|---|---|
