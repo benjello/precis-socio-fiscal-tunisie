@@ -400,18 +400,18 @@ base : dans une base constante, la part monte de 12,35 à 12,90.
 | 18 | Rémunérations publiques | `masse_salariale.py`, fig. B et figdata `fig_B_reconciliation.csv` | « Recalculé en PIB base 2010 (×1,06) » ; `FACTOR = 1.060` | `masse-salariale-reconciliation` | « base 2010 » : n'existe pas comme base nominale (§ 1.5) ; coefficient unique appliqué à 1990-2025 | — | — | **non** |
 | 19 | Rémunérations publiques | `index.qmd` l. 44, 103, 117 | FMI : 17,6 % du PIB en 2020 ; Banque mondiale : 14,7 % en 2017, 10,7 % en 2010 | PIB des rapports | non dite dans le texte | — | — | **non** (à dire : FMI, base 1997, établi § 1.5 ; Banque mondiale, non relu) |
 | 20 | Rémunérations publiques | `_regime_conventionnel.qmd` l. 83 | Banque mondiale : transferts aux entreprises publiques, 8,9 % du PIB en 2013, 7,5 % en 2014 | PIB du rapport | non dite | — | — | **non** |
-| 21 | Finances locales | `_longue_periode.qmd` | fig-fl-lp-ressources, 1990-2023 | `cnat-pib-nominal`, édition la plus récente | dite, exacte : « base 1983 jusqu'en 2004, base 1997 de 2005 à 2014, base 2015 ensuite » | non | oui (`_ruptures_pib`) | oui |
+| 21 | Finances locales | `_budgets.qmd` (chapitre de la longue période dissous le 9 octobre 2026) | fig-fl-lp-ressources, 1990-2023 | `cnat-pib-nominal`, édition la plus récente | dite, exacte : « base 1983 jusqu'en 2004, base 1997 de 2005 à 2014, base 2015 ensuite » | non | oui (`_ruptures_pib`) | oui |
 | 22 | Finances locales | idem | fig-fl-lp-impots | idem | idem | non | oui | oui |
-| 23 | Finances locales | idem | fig-fl-lp-fccl, 1985-2023 ; points de 1985-1991 rapportés au « PIB du même rapport » (Banque mondiale, 1992) | idem ; PIB du rapport pour 1985-1991 | dite pour l'INS ; non dite pour le rapport de 1992 | non | oui | oui, sauf 1985-1991 |
-| 24 | Finances locales | idem | fig-fl-lp-ins, compte des collectivités locales | `cnat-pib-nominal` par base | dite : « chaque valeur est rapportée au PIB de sa propre base » | non | oui, deux points par année commune | oui |
-| 25 | Finances locales | `_longue_periode.qmd` l. 73 | « de 0,74 % en 2002 à 0,61-0,64 % en 2008-2010 […] 0,41 % en 2011 […] 0,66 % en 2019 » | idem | dite au § des ruptures, pas dans la phrase : 2002 en base 1983, 2008-2011 en base 1997, 2019 en base 2015 | non | — | partiel |
+| 23 | Finances locales | `_transferts.qmd` | fig-fl-lp-fccl, 1985-2023 ; points de 1985-1991 rapportés au « PIB du même rapport » (Banque mondiale, 1992) | idem ; PIB du rapport pour 1985-1991 | dite pour l'INS ; non dite pour le rapport de 1992 | non | oui | oui, sauf 1985-1991 |
+| 24 | Finances locales | `_budgets.qmd` | fig-fl-lp-ins, compte des collectivités locales | `cnat-pib-nominal` par base | dite : « chaque valeur est rapportée au PIB de sa propre base » | non | oui, deux points par année commune | oui |
+| 25 | Finances locales | `_budgets.qmd`, `#sec-fl-lp-ressources` et `#sec-fl-lp-bm` (ancienne l. 73 de `_longue_periode.qmd`) | recettes propres de fonctionnement en % du PIB : 2008-2014 puis 2015-2023 (sources budgétaires) ; 2002, 2005, 2010 (document de la Banque mondiale de 2014) | idem | dite dans la phrase depuis le 9 octobre 2026 : base 1997 pour 2008-2014, base 2015 ensuite ; base 1983 pour 2002 | non | — | oui |
 
 **Bilan** : 25 emplois relevés (17 figures ou groupes de figures, 8 phrases chiffrées) dans six
 volumes ; aucun dans « Marché du travail » ni dans les deux autres figures de longue période des
-finances locales (autonomie, caisse des prêts), qui n'ont pas de vue au PIB. **Conformes : 4** (les quatre figures des finances
-locales). **Partiels : 8** (six figures de la CNSS 1990-2004, où 1997 est tracée mais non 2002 ;
-les figures du barème d'actualisation, pour 1970 et 1983-1985 ; une phrase des finances
-locales). **Non conformes :
+finances locales (autonomie, caisse des prêts), qui n'ont pas de vue au PIB. **Conformes : 5** (les quatre figures des finances
+locales et, depuis le 9 octobre 2026, la phrase sur les recettes propres, récrite base par base).
+**Partiels : 7** (six figures de la CNSS 1990-2004, où 1997 est tracée mais non 2002 ;
+les figures du barème d'actualisation, pour 1970 et 1983-1985). **Non conformes :
 13** : les quatre figures de rendement de la fiscalité et leurs quatre phrases, la figure de la masse
 salariale, sa phrase et sa « réconciliation », et les deux passages qui citent le FMI et la Banque
 mondiale.

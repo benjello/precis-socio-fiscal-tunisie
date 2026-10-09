@@ -1,0 +1,94 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-09
+# séries (tunisia_data) : finances-locales-communes-agregats, finances-locales-bm-1985-2012
+# sources (citation) : @dgct-donnees-ouvertes, @wb-msip-1992, @wb-mdp2-1997, @wb-pforr-pad-2014
+# fiches : sources/finances-locales-communes.md, sources/finances-locales-banque-mondiale.md
+# méthode/hypothèses : DEUX SOURCES, GARDÉES TOUTES DEUX SUR 2018-2019 (colonne `retenu` : DGCT jusqu'en 2019, somme des communes ensuite). Les recettes concordent à l'arrondi près ; LES DÉPENSES NON (titre 1 : +1,7 MD en 2018, +7,2 MD en 2019 ; titre 2 : +0,6 et +5,9), écart non expliqué, figé dans les tests. 2021 = SITUATION AU 25/12/2021, non définitive (droits et redevances 54,8 MD contre 90-114 les autres années). 2023 = PROVISOIRE (arrêté au 10/01/2024). IMPÔTS UN À UN (TIB, TNB, TCL, taxe hôtelière, marchés) VIDES EN 2020-2021 : fichiers par commune sans détail d'article ; rien n'est interpolé. Le FCCL est supprimé au 1er janvier 2018 mais la DGCT garde l'intitulé « subventions annuelles » en 2018-2019 : rupture de nature ; réserve à 18 % jusqu'en 2017, 15 % ensuite. Les recettes du titre 2 comprennent l'épargne et les excédents reportés du titre 1 : T1 + T2 n'est pas un total consolidé. Recettes fiscales = catégories 1 et 2 (nomenclature 2018-2022), qui exclut les catégories 3-4 rangées parmi les recettes fiscales en 2023. PÉRIMÈTRE NON CONSTANT : 264 communes en 2012, 350 à partir de 2016-2017. Montants courants., SÉRIES SÉPARÉES, JAMAIS FUSIONNÉES entre elles ni avec la série DGCT : périmètres et nomenclatures différents, sources primaires tunisiennes non publiées. Valeurs SAISIES depuis la page indiquée, lues à l'image pour 1992 (couche OCR fautive : 2 561 et non 2 661) et 1997. LA LIGNE TL/TIB MANQUE AU TABLEAU IMPRIMÉ DE 1997 : résidus des totaux publiés comme `residu_calcule`, jamais comme TL. FCCL 1990 : 82 (1992) contre 50,8 (1997), vraisemblablement fonds total contre quote-part des communes (indices : 63 % des transferts aux communes, 47 % des budgets de fonctionnement en 1988) — NON TRANCHÉ. 1990-1991 de 1992 probablement estimations de mission. PAD 2014 contre DGCT 2008-2012 : recettes T1 concordantes, écarts de 10-14 MD sur dépenses T1 et ressources T2 ; dépenses T2 2012 dépassent de 10 MD investissements + remboursement.
+# note : Dépenses des communes par titre, service de la dette et emprunt, en millions de dinars courants, 2002-2023
+Année,Grandeur,Source,Montant (MD),Statut
+2002,Dépenses du titre I,"Banque mondiale, document de 2014",258.0,publie
+2002,Dépenses du titre II,"Banque mondiale, document de 2014",154.0,publie
+2002,Remboursement du principal de la dette,"Banque mondiale, document de 2014",25.0,publie
+2003,Dépenses du titre I,"Banque mondiale, document de 2014",272.0,publie
+2003,Dépenses du titre II,"Banque mondiale, document de 2014",130.0,publie
+2003,Remboursement du principal de la dette,"Banque mondiale, document de 2014",32.0,publie
+2004,Dépenses du titre I,"Banque mondiale, document de 2014",289.0,publie
+2004,Dépenses du titre II,"Banque mondiale, document de 2014",166.0,publie
+2004,Remboursement du principal de la dette,"Banque mondiale, document de 2014",31.0,publie
+2005,Dépenses du titre I,"Banque mondiale, document de 2014",306.0,publie
+2005,Dépenses du titre II,"Banque mondiale, document de 2014",160.0,publie
+2005,Remboursement du principal de la dette,"Banque mondiale, document de 2014",34.0,publie
+2006,Dépenses du titre I,"Banque mondiale, document de 2014",332.0,publie
+2006,Dépenses du titre II,"Banque mondiale, document de 2014",149.0,publie
+2006,Remboursement du principal de la dette,"Banque mondiale, document de 2014",34.0,publie
+2007,Dépenses du titre I,"Banque mondiale, document de 2014",350.0,publie
+2007,Dépenses du titre II,"Banque mondiale, document de 2014",141.0,publie
+2007,Remboursement du principal de la dette,"Banque mondiale, document de 2014",40.0,publie
+2008,Dépenses du titre I,"Banque mondiale, document de 2014",376.0,publie
+2008,Dépenses du titre II,"Banque mondiale, document de 2014",132.0,publie
+2008,Remboursement du principal de la dette,"Banque mondiale, document de 2014",43.0,publie
+2009,Dépenses du titre I,"Banque mondiale, document de 2014",403.0,publie
+2009,Dépenses du titre II,"Banque mondiale, document de 2014",188.0,publie
+2009,Remboursement du principal de la dette,"Banque mondiale, document de 2014",45.0,publie
+2010,Dépenses du titre I,"Banque mondiale, document de 2014",428.0,publie
+2010,Dépenses du titre II,"Banque mondiale, document de 2014",194.0,publie
+2010,Remboursement du principal de la dette,"Banque mondiale, document de 2014",48.0,publie
+2011,Dépenses du titre I,"Banque mondiale, document de 2014",460.0,publie
+2011,Dépenses du titre II,"Banque mondiale, document de 2014",140.0,publie
+2011,Remboursement du principal de la dette,"Banque mondiale, document de 2014",54.0,publie
+2012,Dépenses du titre I,"Banque mondiale, document de 2014",502.0,publie
+2012,Dépenses du titre II,"Banque mondiale, document de 2014",129.0,publie
+2012,Remboursement du principal de la dette,"Banque mondiale, document de 2014",60.0,publie
+2008,Dépenses du titre I,"DGCT, agrégats publiés",375.0,definitif
+2008,Dépenses du titre II,"DGCT, agrégats publiés",132.0,definitif
+2009,Dépenses du titre I,"DGCT, agrégats publiés",398.0,definitif
+2009,Dépenses du titre II,"DGCT, agrégats publiés",185.0,definitif
+2010,Dépenses du titre I,"DGCT, agrégats publiés",414.0,definitif
+2010,Dépenses du titre II,"DGCT, agrégats publiés",188.0,definitif
+2011,Dépenses du titre I,"DGCT, agrégats publiés",446.0,definitif
+2011,Dépenses du titre II,"DGCT, agrégats publiés",138.0,definitif
+2012,Dépenses du titre I,"DGCT, agrégats publiés",513.0,definitif
+2012,Dépenses du titre II,"DGCT, agrégats publiés",128.0,definitif
+2013,Dépenses du titre I,"DGCT, agrégats publiés",530.0,definitif
+2013,Dépenses du titre II,"DGCT, agrégats publiés",171.0,definitif
+2014,Dépenses du titre I,"DGCT, agrégats publiés",547.0,definitif
+2014,Dépenses du titre II,"DGCT, agrégats publiés",289.0,definitif
+2015,Dépenses du titre I,"DGCT, agrégats publiés",624.0,definitif
+2015,Dépenses du titre II,"DGCT, agrégats publiés",281.0,definitif
+2016,Dépenses du titre I,"DGCT, agrégats publiés",658.0,definitif
+2016,Dépenses du titre II,"DGCT, agrégats publiés",275.0,definitif
+2017,Dépenses du titre I,"DGCT, agrégats publiés",730.0,definitif
+2017,Dépenses du titre II,"DGCT, agrégats publiés",315.0,definitif
+2018,Dépenses du titre I,"DGCT, agrégats publiés",788.0,definitif
+2018,Dépenses du titre II,"DGCT, agrégats publiés",333.0,definitif
+2019,Dépenses du titre I,"DGCT, agrégats publiés",933.0,definitif
+2019,Dépenses du titre II,"DGCT, agrégats publiés",327.0,definitif
+2018,Dépenses du titre I,Somme des budgets des communes,789.7,definitif
+2018,Dépenses du titre II,Somme des budgets des communes,333.6,definitif
+2018,Remboursement du principal de la dette,Somme des budgets des communes,45.1,definitif
+2018,Intérêts de la dette,Somme des budgets des communes,25.2,definitif
+2018,Emprunts intérieurs mobilisés,Somme des budgets des communes,53.2,definitif
+2019,Dépenses du titre I,Somme des budgets des communes,940.2,definitif
+2019,Dépenses du titre II,Somme des budgets des communes,332.9,definitif
+2019,Remboursement du principal de la dette,Somme des budgets des communes,43.5,definitif
+2019,Intérêts de la dette,Somme des budgets des communes,26.2,definitif
+2019,Emprunts intérieurs mobilisés,Somme des budgets des communes,47.4,definitif
+2020,Dépenses du titre I,Somme des budgets des communes,975.9,definitif
+2020,Dépenses du titre II,Somme des budgets des communes,279.8,definitif
+2020,Remboursement du principal de la dette,Somme des budgets des communes,37.0,definitif
+2020,Intérêts de la dette,Somme des budgets des communes,21.2,definitif
+2020,Emprunts intérieurs mobilisés,Somme des budgets des communes,40.2,definitif
+2021,Dépenses du titre I,Somme des budgets des communes,993.6,situation_au_2021-12-25
+2021,Dépenses du titre II,Somme des budgets des communes,308.3,situation_au_2021-12-25
+2021,Remboursement du principal de la dette,Somme des budgets des communes,43.2,situation_au_2021-12-25
+2021,Intérêts de la dette,Somme des budgets des communes,27.9,situation_au_2021-12-25
+2021,Emprunts intérieurs mobilisés,Somme des budgets des communes,39.6,situation_au_2021-12-25
+2022,Dépenses du titre I,Somme des budgets des communes,1145.1,definitif
+2022,Dépenses du titre II,Somme des budgets des communes,426.1,definitif
+2022,Remboursement du principal de la dette,Somme des budgets des communes,48.3,definitif
+2022,Intérêts de la dette,Somme des budgets des communes,28.7,definitif
+2022,Emprunts intérieurs mobilisés,Somme des budgets des communes,54.6,definitif
+2023,Dépenses du titre I,Somme des budgets des communes,1082.1,provisoire_au_2024-01-10
+2023,Dépenses du titre II,Somme des budgets des communes,362.5,provisoire_au_2024-01-10
+2023,Remboursement du principal de la dette,Somme des budgets des communes,40.1,provisoire_au_2024-01-10
+2023,Intérêts de la dette,Somme des budgets des communes,25.6,provisoire_au_2024-01-10
+2023,Emprunts intérieurs mobilisés,Somme des budgets des communes,54.8,provisoire_au_2024-01-10

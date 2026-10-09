@@ -1,5 +1,5 @@
-"""Figures du livre *Les finances locales* : chapitre « La longue période » et, depuis la
-conversion des chapitres d'impôts, le rendement de chaque impôt dans son chapitre.
+"""Figures du livre *Les finances locales*. Le chapitre « La longue période » est dissous :
+chaque figure est montée dans le chapitre de sa règle (budgets, impôts, transferts).
 
     from figures import finances_locales as fl
     fl.vues_ressources()  ; fl.table_ressources()   # recettes de fonctionnement des communes
@@ -11,6 +11,8 @@ conversion des chapitres d'impôts, le rendement de chaque impôt dans son chapi
     fl.vues_fccl()        ; fl.table_fccl()         # fonds commun des collectivités locales
     fl.vues_cpscl()       ; fl.table_cpscl()        # flux et impayés de la CPSCL
     fl.vues_ins()         ; fl.table_ins()          # épargne brute et FBCF, comptes nationaux
+    fl.fig_remunerations() ; fl.table_remunerations()  # rémunérations / recettes du titre I
+    fl.vues_depenses()    ; fl.table_depenses()     # dépenses des deux titres, service de la dette
 
 D'OÙ VIENNENT LES DONNÉES. Six séries de `tunisia-data`, toutes lues par `figtools.series()`
 (l'entrepôt s'il est installé, sinon le cache `precis/_seriescache/`) :
@@ -238,6 +240,38 @@ _L = {
                      "ar": "مراجعة المقاييس\n(1 جانفي 2014)"},
     "lg_marque_texte": {"fr": "trait rouge : texte de loi ou décret, placé à sa date d'effet",
                         "ar": "خطّ أحمر: نصّ قانوني في تاريخ نفاذه"},
+    # dépenses, rémunérations et dette (chapitre des budgets)
+    "vue_depenses": {"fr": "Dépenses des deux titres", "ar": "نفقات العنوانين"},
+    "vue_dette": {"fr": "Service de la dette et emprunt", "ar": "خدمة الدين والاقتراض"},
+    "depenses_t1": {"fr": "Dépenses du titre I", "ar": "نفقات العنوان الأوّل"},
+    "depenses_t2": {"fr": "Dépenses du titre II", "ar": "نفقات العنوان الثاني"},
+    "interets_dette": {"fr": "Intérêts de la dette", "ar": "فوائد الدين"},
+    "remboursement_principal": {"fr": "Remboursement du principal de la dette",
+                                "ar": "تسديد أصل الدين"},
+    "emprunts_interieurs": {"fr": "Emprunts intérieurs mobilisés",
+                            "ar": "موارد الاقتراض الداخلي"},
+    "rem_ratio_dgct": {"fr": "Ratio « Rémunération » publié par la DGCT",
+                       "ar": "نسبة «التأجير» المنشورة"},
+    "rem_meme_annee": {"fr": "Rémunérations / recettes du titre I de la même année",
+                       "ar": "التأجير / موارد العنوان الأوّل لنفس السنة"},
+    "rem_annee_prec": {"fr": "Rémunérations / recettes du titre I de l'année précédente",
+                       "ar": "التأجير / موارد العنوان الأوّل للسنة السابقة"},
+    "lg_plafond_moitie": {"fr": "plafond de la moitié, règle de prévision des budgets "
+                                "communaux depuis 2019",
+                          "ar": "سقف النصف، قاعدة تقديرية لميزانيات البلديات منذ 2019"},
+    "lg_creux_budg": {"fr": "point creux : exercice non clos au numérateur ou au "
+                            "dénominateur (2021, 2023)",
+                      "ar": "نقطة فارغة: سنة غير مختومة في البسط أو المقام (2021 و2023)"},
+    "mq_budg_2008": {"fr": "dépense limitée aux\nrecettes réalisées\n(budgets de 2008)",
+                     "ar": "حصر النفقات في\nالمقابيض المحقّقة\n(ميزانيات 2008)"},
+    "mq_budg_2019": {"fr": "code de 2018\n(budgets de 2019)",
+                     "ar": "مجلة 2018\n(ميزانيات 2019)"},
+    "t_remunerations": {"fr": "Rémunérations des communes rapportées aux recettes du titre I",
+                        "ar": "تأجير أعوان البلديات نسبةً إلى موارد العنوان الأوّل"},
+    "t_depenses": {"fr": "Dépenses des communes, par titre",
+                   "ar": "نفقات البلديات حسب العنوان"},
+    "t_dette": {"fr": "Service de la dette et emprunt des communes",
+                "ar": "خدمة الدين والاقتراض للبلديات"},
     # titres
     "t_ressources": {"fr": "Recettes de fonctionnement des communes : recettes propres et "
                            "transferts de l'État",
@@ -1022,3 +1056,158 @@ def fig_ins(mesure: str = "md"):
 
 def vues_ins():
     return [(_lab("vue_md"), fig_ins("md")), (_lab("vue_pib"), fig_ins("pib"))]
+
+
+# --- 7. Dépenses, rémunérations et service de la dette (chapitre des budgets) --------------
+#
+# Deux textes du chapitre sont placés à leur date d'effet (trait rouge plein) : la refonte de
+# 2007, qui s'applique aux budgets de 2008, et le code de 2018, dont les règles budgétaires
+# s'appliquent aux communes à partir des budgets de 2019. Ils situent ces textes ; ils ne
+# disent pas une cause.
+MARQUES_BUDGETS = ((2008, "mq_budg_2008", 0.97), (2019, "mq_budg_2019", 0.80))
+# Le plafond des rémunérations (code de 2018, art. 135) porte sur les PRÉVISIONS et se
+# rapporte aux recettes du titre I de l'ANNÉE ÉCOULÉE. Les séries sont des réalisations : la
+# ligne des 50 % est un repère, tracé de 2019 seulement, non un constat de respect.
+PLAFOND_REMUNERATIONS = 50.0
+ANNEE_CCL_BUDGETS = 2019
+
+
+def _remunerations() -> list[dict]:
+    """Trois ratios, jamais fusionnés : le ratio publié ; rémunérations / recettes du titre I
+    de la même année ; rémunérations / recettes du titre I de l'année précédente."""
+    c = _communes()
+    lignes = []
+    for a in range(2008, 2020):
+        d = c["dgct"]
+        lignes.append(dict(grandeur="rem_ratio_dgct", source="dgct", annee=a,
+                           v=100 * d[("ratio_remunerations", a)][0], statut="definitif"))
+        lignes.append(dict(grandeur="rem_meme_annee", source="dgct", annee=a,
+                           v=100 * d[("remunerations", a)][0] / d[("recettes_t1", a)][0],
+                           statut="definitif"))
+        if ("recettes_t1", a - 1) in d:
+            lignes.append(dict(grandeur="rem_annee_prec", source="dgct", annee=a,
+                               v=100 * d[("remunerations", a)][0] / d[("recettes_t1", a - 1)][0],
+                               statut="definitif"))
+    s = c["somme"]
+    for a in sorted(a for (v, a) in s if v == "remunerations"):
+        rem, st = s[("remunerations", a)]
+        r1, st1 = s[("recettes_t1", a)]
+        lignes.append(dict(grandeur="rem_meme_annee", source="somme", annee=a,
+                           v=100 * rem / r1, statut=st if st != "definitif" else st1))
+        if ("recettes_t1", a - 1) in s:
+            r0, st0 = s[("recettes_t1", a - 1)]
+            lignes.append(dict(grandeur="rem_annee_prec", source="somme", annee=a,
+                               v=100 * rem / r0, statut=st if st != "definitif" else st0))
+    return lignes
+
+
+def table_remunerations():
+    import pandas as pd
+    return pd.DataFrame([{
+        _lab("col_annee"): l["annee"], _lab("col_grandeur"): _lab(l["grandeur"]),
+        _lab("col_source"): _lab("src_" + l["source"]), _lab("col_pct"): round(l["v"], 1),
+        _lab("col_statut"): l["statut"]} for l in _remunerations()])
+
+
+def fig_remunerations():
+    figtools.apply_lang_font()
+    lignes = _remunerations()
+    fig, ax = plt.subplots(figsize=(9.5, 5.4))
+    couleurs = {"rem_ratio_dgct": GRIS, "rem_meme_annee": BLEU, "rem_annee_prec": VERT}
+    for g in couleurs:
+        for s in ("dgct", "somme"):
+            ls = [l for l in lignes if l["grandeur"] == g and l["source"] == s]
+            if ls:
+                creux = {l["annee"] for l in ls if l["statut"] != "definitif"}
+                _courbe(ax, {l["annee"]: l["v"] for l in ls}, couleurs[g], s, _lab(g), "pct",
+                        creux=creux)
+    annees = sorted({l["annee"] for l in lignes})
+    _cadre(ax, _lab("t_remunerations"), _lab("pct_r1"), annees[0], annees[-1])
+    ax.set_ylim(30, 65)
+    plafond, = ax.plot([ANNEE_CCL_BUDGETS - 0.5, annees[-1] + 0.8],
+                       [PLAFOND_REMUNERATIONS] * 2, color=ROUGE, lw=1.2, zorder=1)
+    figtools.infobulle(plafond, _lab("lg_plafond_moitie"))
+    _ruptures(ax, "pct", annees)
+    _marques_textes(ax, ((2019, "mq_budg_2019", 0.97),), annees[0], annees[-1])
+    poignees = _legende_grandeurs(list(couleurs.items()))
+    poignees.append(Line2D([], [], color=ROUGE, lw=1.2,
+                           label=figtools.fig_text(_lab("lg_plafond_moitie"))))
+    poignees += _legende_sources(["dgct", "somme"])
+    poignees.append(Line2D([], [], color=GRIS, marker="o", mfc="white", ls="",
+                           label=figtools.fig_text(_lab("lg_creux_budg"))))
+    poignees.append(_legende_marques())
+    ax.legend(handles=poignees, loc="upper center", bbox_to_anchor=(0.5, -0.13), ncol=2,
+              fontsize=7.2, frameon=False)
+    fig.tight_layout()
+    return fig
+
+
+DEPENSES_TITRES = (("depenses_t1", BLEU), ("depenses_t2", ORANGE))
+DEPENSES_DETTE = (("remboursement_principal", ROUGE), ("interets_dette", VIOLET),
+                  ("emprunts_interieurs", VERT))
+
+
+def _depenses() -> list[dict]:
+    """Lignes (vue, grandeur, source, année, MD, statut) ; les sources restent séparées."""
+    c = _communes()
+    lignes = []
+    b = _bm2014()
+    for a in range(2002, 2013):
+        for k, _ in DEPENSES_TITRES:
+            lignes.append(dict(vue="depenses", grandeur=k, source="bm2014", annee=a,
+                               v=b[(k, a)], statut="publie"))
+        lignes.append(dict(vue="dette", grandeur="remboursement_principal", source="bm2014",
+                           annee=a, v=b[("remboursement_capital", a)], statut="publie"))
+    for a in range(2008, 2020):
+        for k, _ in DEPENSES_TITRES:
+            lignes.append(dict(vue="depenses", grandeur=k, source="dgct", annee=a,
+                               v=c["dgct"][(k, a)][0], statut="definitif"))
+    for a in range(2018, 2024):
+        for vue, grandeurs in (("depenses", DEPENSES_TITRES), ("dette", DEPENSES_DETTE)):
+            for k, _ in grandeurs:
+                v, st = c["somme"][(k, a)]
+                lignes.append(dict(vue=vue, grandeur=k, source="somme", annee=a, v=v,
+                                   statut=st))
+    return lignes
+
+
+def table_depenses():
+    import pandas as pd
+    return pd.DataFrame([{
+        _lab("col_annee"): l["annee"], _lab("col_grandeur"): _lab(l["grandeur"]),
+        _lab("col_source"): _lab("src_" + l["source"]), _lab("col_md"): round(l["v"], 1),
+        _lab("col_statut"): l["statut"]} for l in _depenses()])
+
+
+def fig_depenses(vue: str = "depenses"):
+    figtools.apply_lang_font()
+    lignes = [l for l in _depenses() if l["vue"] == vue]
+    grandeurs = DEPENSES_TITRES if vue == "depenses" else DEPENSES_DETTE
+    sources = ("bm2014", "dgct", "somme") if vue == "depenses" else ("bm2014", "somme")
+    fig, ax = plt.subplots(figsize=(9.5, 5.4))
+    for k, coul in grandeurs:
+        for s in sources:
+            ls = [l for l in lignes if l["grandeur"] == k and l["source"] == s]
+            if ls:
+                creux = {l["annee"] for l in ls if l["statut"] not in ("definitif", "publie")}
+                _courbe(ax, {l["annee"]: l["v"] for l in ls}, coul, s, _lab(k), "md",
+                        creux=creux)
+    annees = sorted({l["annee"] for l in lignes})
+    _cadre(ax, _lab("t_depenses" if vue == "depenses" else "t_dette"), _lab("md"),
+           annees[0], annees[-1])
+    ax.set_ylim(0, ax.get_ylim()[1] * 1.22)  # de la place en haut pour les libellés
+    _ruptures(ax, "md", annees)
+    _marques_textes(ax, MARQUES_BUDGETS, annees[0], annees[-1])
+    poignees = _legende_grandeurs(list(grandeurs)) + _legende_sources(list(sources))
+    poignees.append(Line2D([], [], color=GRIS, marker="o", mfc="white", ls="",
+                           label=figtools.fig_text(_lab("lg_creux"))))
+    poignees.append(_legende_marques())
+    ax.legend(handles=poignees, loc="upper center", bbox_to_anchor=(0.5, -0.13), ncol=2,
+              fontsize=7.5, frameon=False)
+    fig.tight_layout()
+    return fig
+
+
+def vues_depenses():
+    return [(_lab("vue_depenses"), fig_depenses("depenses")),
+            (_lab("vue_dette"), fig_depenses("dette"))]

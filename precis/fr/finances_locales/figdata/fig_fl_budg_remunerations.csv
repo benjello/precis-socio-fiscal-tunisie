@@ -1,0 +1,46 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-09
+# séries (tunisia_data) : finances-locales-communes-agregats
+# sources (citation) : @dgct-donnees-ouvertes
+# fiches : sources/finances-locales-communes.md
+# méthode/hypothèses : DEUX SOURCES, GARDÉES TOUTES DEUX SUR 2018-2019 (colonne `retenu` : DGCT jusqu'en 2019, somme des communes ensuite). Les recettes concordent à l'arrondi près ; LES DÉPENSES NON (titre 1 : +1,7 MD en 2018, +7,2 MD en 2019 ; titre 2 : +0,6 et +5,9), écart non expliqué, figé dans les tests. 2021 = SITUATION AU 25/12/2021, non définitive (droits et redevances 54,8 MD contre 90-114 les autres années). 2023 = PROVISOIRE (arrêté au 10/01/2024). IMPÔTS UN À UN (TIB, TNB, TCL, taxe hôtelière, marchés) VIDES EN 2020-2021 : fichiers par commune sans détail d'article ; rien n'est interpolé. Le FCCL est supprimé au 1er janvier 2018 mais la DGCT garde l'intitulé « subventions annuelles » en 2018-2019 : rupture de nature ; réserve à 18 % jusqu'en 2017, 15 % ensuite. Les recettes du titre 2 comprennent l'épargne et les excédents reportés du titre 1 : T1 + T2 n'est pas un total consolidé. Recettes fiscales = catégories 1 et 2 (nomenclature 2018-2022), qui exclut les catégories 3-4 rangées parmi les recettes fiscales en 2023. PÉRIMÈTRE NON CONSTANT : 264 communes en 2012, 350 à partir de 2016-2017. Montants courants.
+# note : Rémunérations des communes rapportées aux recettes du titre I, et plafond de moitié du code des collectivités locales, en %, 2008-2023
+Année,Grandeur,Source,Valeur (%),Statut
+2008,Ratio « Rémunération » publié par la DGCT,"DGCT, agrégats publiés",44.0,definitif
+2008,Rémunérations / recettes du titre I de la même année,"DGCT, agrégats publiés",43.9,definitif
+2009,Ratio « Rémunération » publié par la DGCT,"DGCT, agrégats publiés",46.0,definitif
+2009,Rémunérations / recettes du titre I de la même année,"DGCT, agrégats publiés",46.1,definitif
+2009,Rémunérations / recettes du titre I de l'année précédente,"DGCT, agrégats publiés",48.3,definitif
+2010,Ratio « Rémunération » publié par la DGCT,"DGCT, agrégats publiés",43.0,definitif
+2010,Rémunérations / recettes du titre I de la même année,"DGCT, agrégats publiés",43.6,definitif
+2010,Rémunérations / recettes du titre I de l'année précédente,"DGCT, agrégats publiés",48.6,definitif
+2011,Ratio « Rémunération » publié par la DGCT,"DGCT, agrégats publiés",49.0,definitif
+2011,Rémunérations / recettes du titre I de la même année,"DGCT, agrégats publiés",49.4,definitif
+2011,Rémunérations / recettes du titre I de l'année précédente,"DGCT, agrégats publiés",51.8,definitif
+2012,Ratio « Rémunération » publié par la DGCT,"DGCT, agrégats publiés",50.0,definitif
+2012,Rémunérations / recettes du titre I de la même année,"DGCT, agrégats publiés",50.0,definitif
+2012,Rémunérations / recettes du titre I de l'année précédente,"DGCT, agrégats publiés",57.2,definitif
+2013,Ratio « Rémunération » publié par la DGCT,"DGCT, agrégats publiés",45.0,definitif
+2013,Rémunérations / recettes du titre I de la même année,"DGCT, agrégats publiés",45.3,definitif
+2013,Rémunérations / recettes du titre I de l'année précédente,"DGCT, agrégats publiés",48.9,definitif
+2014,Ratio « Rémunération » publié par la DGCT,"DGCT, agrégats publiés",43.0,definitif
+2014,Rémunérations / recettes du titre I de la même année,"DGCT, agrégats publiés",43.0,definitif
+2014,Rémunérations / recettes du titre I de l'année précédente,"DGCT, agrégats publiés",45.9,definitif
+2015,Ratio « Rémunération » publié par la DGCT,"DGCT, agrégats publiés",45.0,definitif
+2015,Rémunérations / recettes du titre I de la même année,"DGCT, agrégats publiés",45.3,definitif
+2015,Rémunérations / recettes du titre I de l'année précédente,"DGCT, agrégats publiés",49.9,definitif
+2016,Ratio « Rémunération » publié par la DGCT,"DGCT, agrégats publiés",47.0,definitif
+2016,Rémunérations / recettes du titre I de la même année,"DGCT, agrégats publiés",47.5,definitif
+2016,Rémunérations / recettes du titre I de l'année précédente,"DGCT, agrégats publiés",49.8,definitif
+2017,Ratio « Rémunération » publié par la DGCT,"DGCT, agrégats publiés",47.0,definitif
+2017,Rémunérations / recettes du titre I de la même année,"DGCT, agrégats publiés",46.7,definitif
+2017,Rémunérations / recettes du titre I de l'année précédente,"DGCT, agrégats publiés",50.4,definitif
+2018,Ratio « Rémunération » publié par la DGCT,"DGCT, agrégats publiés",43.0,definitif
+2018,Rémunérations / recettes du titre I de la même année,"DGCT, agrégats publiés",43.0,definitif
+2018,Rémunérations / recettes du titre I de l'année précédente,"DGCT, agrégats publiés",48.9,definitif
+2019,Ratio « Rémunération » publié par la DGCT,"DGCT, agrégats publiés",46.0,definitif
+2019,Rémunérations / recettes du titre I de la même année,"DGCT, agrégats publiés",46.5,definitif
+2019,Rémunérations / recettes du titre I de l'année précédente,"DGCT, agrégats publiés",52.0,definitif
+2022,Rémunérations / recettes du titre I de la même année,Somme des budgets des communes,50.1,definitif
+2022,Rémunérations / recettes du titre I de l'année précédente,Somme des budgets des communes,59.4,situation_au_2021-12-25
+2023,Rémunérations / recettes du titre I de la même année,Somme des budgets des communes,47.4,provisoire_au_2024-01-10
+2023,Rémunérations / recettes du titre I de l'année précédente,Somme des budgets des communes,49.8,provisoire_au_2024-01-10

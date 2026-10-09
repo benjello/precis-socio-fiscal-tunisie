@@ -107,7 +107,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; PNAFN historique sans sources pour ses onze dates et montants | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
-| Finances locales | Les dix chapitres rédigés : présentation, notions et ressources propres (4 octobre 2026) ; institutions (histoire, compétences, budgets), transferts de l'État et longue période (5 octobre 2026) | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
+| Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions, histoire et compétences à convertir | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
 
 Les `TODO` des `.qmd` détaillent chaque lacune, y compris celles que ce tableau ne peut pas
 résumer. Ici, **lisible** veut dire que le fascicule est présent avec une couche texte
@@ -1751,381 +1751,290 @@ Une même référence revient parfois à chaque phrase : le code de l'IRPP et de
 ## Les finances locales
 
 Volume créé le 4 octobre 2026 (`precis/fr/finances_locales/`), d'après le plan
-`docs/notes/fiscalite-locale-plan.md` (quatre mouvements, les notions avant le droit). Le
-livre arabe a son `_quarto.yml` et ses références ; il est sauté au rendu tant que la
-traduction n'a pas livré `index.qmd`.
+`docs/notes/fiscalite-locale-plan.md`. **Neuf chapitres** depuis le 9 octobre 2026 : le
+chapitre « La longue période » est dissous, chaque chapitre porte ses séries. Une entrée par
+chapitre ci-dessous, dans l'ordre du volume ; les `TODO` des `.qmd` détaillent chaque lacune.
 
-- **À lire et à intégrer : décret-loi n° 2026-4 du 30 septembre 2026 relatif aux conseils
-  municipaux** (JORT n° 96 du 30 septembre 2026, édition arabe, p. 2058 d'après le sommaire du
-  fascicule ; repéré le 5 octobre 2026). Son article 139 abroge la loi organique n° 2018-29 du
-  9 mai 2018 (code des collectivités locales), sur laquelle s'appuient les chapitres
-  d'institutions, de budgets et de transferts. L'article 136 n'en fixe l'entrée en vigueur
-  qu'après la proclamation des résultats définitifs des premières élections des conseils
-  municipaux qui suivront, sous réserve de l'article 137 ; l'article 134 maintient le fonds
-  d'appui à la décentralisation. **État de lecture (9 octobre 2026)** : art. 1 à 13, 28 à 34,
-  57 à 99 et 132 à 140 lus à l'image (`finances-locales-impots-lectures-2026-10-09.md`, § D.5) ;
-  art. 14 à 27, 35 à 56 et 100 à 131 parcourus au plein texte pour les mots de la fiscalité,
-  à lire en suivi. Le texte ne cite pas le code de la fiscalité locale et n'énumère aucun
-  droit ; le conseil fixe les droits sous approbation du gouverneur (art. 12 et 30). **Corpus** : fascicule arabe présent et lisible (`PDFs/JORT/2026/ar/Ja0962026.pdf`) ;
-  édition française à obtenir — le fichier « fr » du corpus est l'arabe
-  (`docs/notes/outillage-sources.md`, § 3). Texte absent de `jort_cache.db`. **Écrit au volume
-  (9 octobre 2026)** : le chapitre des taxes et redevances le présente comme un texte publié qui
-  n'est pas en vigueur (`#sec-fl-moduler-droits`, clé `decretloi2026-4`) ; les chapitres
-  d'institutions, de budgets et de transferts décrivent encore le droit du code de 2018, sans
-  mention de son abrogation à venir. **Non réglé par le texte** : le sort du code de la
-  fiscalité locale et du décret de tarifs n° 2016-805 à son entrée en vigueur (l'art. 391 du
-  code de 2018 sera abrogé avec lui).
+**État d'ensemble (9 octobre 2026).** Convertis au format « ruptures au premier plan, détail
+replié », avec domicile unique des références : budgets (ch. 5), impôts sur les immeubles
+(ch. 6), impôts sur l'activité (ch. 7), taxes et redevances (ch. 8), transferts (ch. 9).
+**Non convertis** (troisième vague) : notions (ch. 2), histoire (ch. 3), compétences (ch. 4).
+Plans : `finances-locales-impots-plan-architecte.md`,
+`finances-locales-transferts-budgets-plan-architecte.md` ; lectures du 9 octobre 2026 :
+`finances-locales-impots-lectures-2026-10-09.md`,
+`finances-locales-transferts-budgets-lectures-2026-10-09.md`.
 
-- **Présentation — rédigée le 4 octobre 2026** (`index.qmd`, `#sec-fl-presentation`) : objet
-  du volume, quatre mouvements, frontières avec « La fiscalité » (impôt foncier de 2014, IRPP et
-  IS) et avec « Rémunérations publiques ». Les trois chapitres des ressources propres y sont
-  renvoyés par `@sec-` ; les chapitres d'institutions, des transferts et de la longue période
-  restent annoncés sans renvoi, faute d'exister. La phrase sur la TCL s'appuie désormais sur le
-  code de la fiscalité locale (art. 35 et 37), et non plus sur Dafflon et Gilbert.
-- **Trois chapitres des ressources propres — rédigés le 4 octobre 2026**, d'après la note
-  `docs/notes/finances-locales-impots-locaux.md` (textes lus au JORT, valeurs relues à l'image
-  en FR et en AR) : `_impots_immeubles.qmd` (`#sec-fl-immeubles` : TIB et TNB, structure du
-  code, barèmes de 1997, 2008 et 2017 en tableaux à onglets, réformes de 1998 à 2025, pénalité
-  de retard), `_impots_activite.qmd` (`#sec-fl-activite` : TCL et taxe hôtelière, minimum en
-  onglets, maximum jusqu'en 2011, réformes de 2002 à 2024, taux), `_taxes_redevances.qmd`
-  (`#sec-fl-taxes` : chapitres V à VIII du code, décret de tarifs n° 2016-805 lu le 4 octobre
-  2026 en français, marges laissées aux collectivités, code des collectivités locales,
-  art. 137, 139-141, 391-392). Tous les tableaux de paramètres sont faits main et portent le
-  TODO de remplacement par un tableau engendré : aucun de ces paramètres n'est dans la base.
-  Cinq fiches RECHERCHE versées (`r-cfl-*`) : prix de référence, tarif TNB et minimum TCL
-  après 2017 ; décrets intermédiaires 1997-2007 ; modificatifs de la taxe hôtelière.
-- **Lacunes des chapitres des ressources** (TODO des `.qmd`), toutes **lisibles dans le
-  corpus** sauf mention :
-  - code des collectivités locales : décrets transitoires de l'art. 391, **cherchés le
-    9 octobre 2026, aucun identifié** (fiche `r-ccl-2018-decrets-art391`, 44 fascicules arabes
-    à couche texte illisible restant à lire à l'image) ; délibérations tarifaires communales,
-    au *Journal officiel des collectivités locales*, **hors corpus** — la date d'entrée en
-    vigueur des dispositions budgétaires est établie (art. 383, renvoi à
-    `#sec-fl-budg-ccl-vigueur`) ;
-  - portée du § 10 de l'art. 59 du décret-loi n° 2022-79 sur la pénalité de 1,25 % de la TIB
-    (texte lu, interprétation à trancher) ;
-  - barème des parkings récrit par la LF 2003, art. 79, à transcrire (JORT n° 102 de 2002,
-    FR p. 2887 ; aperçu le 9 octobre 2026, aucune valeur publiée) ; les trois valeurs de 1997
-    (100, 250 et 500 D) sont confirmées (art. 90, p. 181) ;
-  - grilles du décret n° 98-1428 et de ses modificatifs, et du décret n° 2016-805 (lu, non
-    transcrit ; l'édition arabe fait foi) ;
-  - antécédents abrogés en 1997 (décrets de 1887 à 1956, lois n° 71-41, 75-34 et 75-39) ; les
-    fascicules de 1975 sont au corpus, ceux d'avant 1956 restent à obtenir ;
-  - art. 39 de la LF 1993 et décrets des zones municipales touristiques ; art. 7 initial du
-    décret-loi n° 2020-33 ; art. 7 de la loi organique du budget des collectivités locales ;
-  - articles d'amnistie de la LF 2026, de la loi n° 2006-25 et du décret-loi n° 2006-1 ;
-  - arrêtés communaux fixant le prix de référence de la TIB, **hors corpus**.
-- **Trois chapitres des institutions — rédigés le 5 octobre 2026** (branche
-  `docs/finances-locales-institutions`), d'après trois notes documentaires établies sur le JORT :
-  `_histoire.qmd` (`#sec-fl-histoire`, note `finances-locales-histoire.md` : loi municipale de
-  1957, conseils de gouvernorat de 1957 et 1963, Constitution de 1959 et art. 71 de 2002, lois du
-  14 mai 1975, conseils régionaux de 1989, 2011, Constitution de 2014, carte communale, code de
-  2018, Constitution de 2022, décrets-lois de 2023, loi organique n° 2025-4) ;
-  `_competences.qmd` (`#sec-fl-competences`, note `finances-locales-competences.md` : loi organique
-  des communes, loi n° 89-11, catégories de compétences du code, art. 11-28, 234-244, 293-298,
-  356-358, instances nationales, contrôle des actes, depuis 2023) ; `_budgets.qmd`
-  (`#sec-fl-budgets-comptes`, note `finances-locales-budgets.md` : loi n° 75-35 lue à l'image,
-  modifications de 1979 à 1997, refonte de 2007, série des seuils d'approbation de 1975 à 2017
-  — décrets n° 77-320, 86-1036 et 89-280 relus à l'image le 5 octobre 2026, effet du décret
-  n° 89-280 au 1er janvier 1989 —, code de 2018, art. 126-199 et 383, loi organique n° 2025-4).
-  Entrée en vigueur des règles budgétaires du code pour les communes : budgets de 2019, les
-  résultats définitifs des municipales ayant été proclamés par les décisions de l'ISIE n° 2018-12
-  et suivantes, du 17 mai au 12 juin 2018 (JORT n° 46 à 50 de 2018, lus le 5 octobre 2026). Le
-  tableau des seuils est fait main et porte le TODO de remplacement par un tableau engendré.
-  Sept fiches RECHERCHE versées : `r-fl-loi-competences-partagees`,
-  `r-fl-elections-municipales-apres-2023`, `r-lob-cl-seuil-approbation-apres-2017`,
-  `r-ccl-2018-nomenclature-art167`, `r-fl-dissolutions-2011`,
-  `r-fl-constitution-2014-numero-special`, `r-fl-nombre-communes`. Quinze notions au glossaire
-  (compétences propres, partagées, transférées ; district ; conseil local ; délégation spéciale ;
-  instances nationales ; notions budgétaires), dont trois `valide`. Les renvois de `index.qmd`
-  vers ces chapitres restent à poser à la réunion des branches.
-- **Lacunes des chapitres des institutions** (TODO des `.qmd`), **lisibles dans le corpus** sauf
-  mention :
-  - lois organiques n° 85-43, 91-24, 95-68 et 2006-48 (modificatifs de la loi organique des
-    communes) ; fin du texte et édition arabe de la loi n° 75-33 ; sort de la loi n° 75-33 après
-    le code de 2018 ;
-  - art. 38-41 de la LF 1980 (lus sur OCR, à relire à l'image) ; date de dépôt du JORT n° 38 de
-    1994 (loi organique n° 94-44) ; date de publication du décret n° 75-485 au pied du fascicule ;
-  - textes de création des agences nationales citées par Dafflon et Gilbert et décret
-    n° 2004-1182 (Centre de formation et d'appui à la décentralisation, couche texte décalée) ;
-  - vote des budgets communaux depuis la dissolution de 2023 ;
-  - numéro spécial du JORT du 10 février 2014 (Constitution), **à obtenir** (absent de pist.tn
-    et de jort_cache) ; texte arabe de la Constitution de 2014 ;
-  - nombre des conseils municipaux dissous en 2011-2012 et nombre de communes entre 1957 et 2014 ;
-  - code de la comptabilité publique et lois sur la Cour des comptes, non lus.
-- **Lacunes des chapitres des ressources levées par ces notes — reportées au chapitre 8 le
-  9 octobre 2026** (renvoi à `#sec-fl-budg-ccl-vigueur` ; TODO sur l'art. 7 retiré) :
-  l'entrée en vigueur des dispositions budgétaires du code pour les communes (premier point du
-  TODO de `_taxes_redevances.qmd`, § « La transition ») est établie au 1er janvier 2019 ; l'art. 7
-  de la loi organique du budget est lu (note `finances-locales-budgets.md`, § 1.1 et 1.3). Les
-  chapitres 6 à 8 n'ont pas été modifiés.
-- **Livre arabe** : les trois chapitres sont déclarés en commentaire dans
-  `precis/ar/finances_locales/_quarto.yml`, à décommenter quand la traduction sera livrée.
-- **Notions — rédigé le 4 octobre 2026** (`_notions.qmd`, `#sec-fl-notions`) : décentraliser,
-  budget local, ressources propres, transferts, mesurer, et tableau des notations. Source
-  unique : Dafflon et Gilbert, AFD 2018 (`dafflon-gilbert-2018`), lue dans l'exemplaire HAL
-  (p. 11-30, 64-69, 79, 81-86, 150-157, 195-207, 251-252). Les manuscrits de 2013 (encadrés 4-5
-  et 4-6, § 5.1) ont été comparés : ils sont repris à l'identique dans le livre, qui seul est
-  cité. Aucune valeur tunisienne.
-- **Notions non définies faute de source lue** : épargne brute (le livre ne la définit
-  qu'en droit tunisien, comme solde du titre I, p. 84) ; dépendance aux transferts ; fonds
-  commun, comme notion générale ; établissement public. À sourcer dans Dafflon et Madiès, AFD,
-  *Notes et documents* n° 42 (2008) — le fichier téléchargé le 4 octobre 2026 n'en contient que
-  six pages, à obtenir en entier — ou à traiter dans les chapitres de droit.
-- **Glossaire — 40 notions, toutes `provisoire`** : les termes arabes ne sont mis en regard
-  des notions par aucun texte bilingue. Treize figurent, à la lettre ou presque, dans l'édition
-  arabe du code des collectivités locales (JORT n° 39 de 2018 ; article en commentaire de
-  chaque entrée), dont l'édition française n'est pas identifiée (absente de jort_cache, du
-  corpus local et de pist.tn le 4 octobre 2026). Les autres sont proposés sans attestation.
-  À trancher par un arabophone : « التعديل » pour péréquation (le code emploie aussi
-  « التسوية », et Dafflon et Gilbert rendent l'article 136 de la Constitution de 2014 par
-  « régulation et adéquation », p. 205) ; « الرسم » pour la taxe au sens des finances
-  publiques ; « معلوم الاستعمال » pour la redevance d'utilisation.
-- **Références à lire avant les chapitres suivants** : Dafflon et Gilbert, PARD 2021
-  (transferts) et 2022 ; Hammami, Dafflon et Gilbert, PARD 2021 (compétences) ; Dafflon, RTF
-  n° 25 (2017) ; voir `docs/notes/biblio-fiscalite-locale.md`.
-- **Questions du plan restées ouvertes** : chapitre propre aux régions ; taxes affectées à
-  des fonds hors budgets locaux.
-- **Transferts de l'État — converti au format « ruptures au premier plan, détail replié » le
-  9 octobre 2026** (`_transferts.qmd`, `#sec-fl-transferts`, `.domicile-unique`), d'après
-  `docs/notes/finances-locales-transferts-budgets-plan-architecte.md`, corrigé par
-  `docs/notes/finances-locales-transferts-budgets-lectures-2026-10-09.md` : vue d'ensemble ;
-  mise en place de 1975 ; trois grandes réformes (1987, 2001, 2018 avec son second temps de
-  2021) ; répartition légale 1976-2017 ; état du droit au 14 juillet 2021 ; réserve ; caisse ;
-  longue période. Treize blocs repliés. `fig-fl-lp-fccl` et `fig-fl-lp-cpscl` y sont montées
-  depuis `_longue_periode.qmd`, avec leurs lectures ; la figure du fonds marque 2018 comme
-  rupture de série (2018-2019 tracées à part) et place deux textes (gestion 1987, 1er janvier
-  2014). La date de suppression du fonds est corrigée (1er janvier 2018, LF 2018, art. 11 et
-  67) ; « dotation annuelle » remplacé par « subvention annuelle ». Références versées :
-  arrêtés du 22 juin 2018, du 29 mars 2019 et du 29 juin 2021 ; titre de `loi2000-60` corrigé
-  (14 mai 1975). Fiches : `r-fccl-repartition-reserve-2014-2017`,
-  `r-fl-criteres-subventions-apres-2021`, `r-fl-decret-fonds-appui-decentralisation`.
-  **Lacunes** :
-  - décrets de répartition de la réserve 1993-2013 (vingt-deux, connus par leur intitulé) :
-    **lisibles dans le corpus** ;
-  - montant du fonds, LF par LF, 1987-2017 (seul 1990 est lu), et montant annuel des
-    subventions dans les LF de 2018 et suivantes ; LF 1977-1979 et arrêtés de 1975-1983 ;
-    montants de 1990-1991 au profit de la caisse à relire à l'image : **lisibles dans le
-    corpus** ; les tableaux des LF de 2022 à 2026 semblent en image — **OCR à prévoir** ;
-  - décret n° 2013-2797 (fonds de coopération, maintenu pour 10 % par la LF 2021, art. 13,
-    § 5) et LF 2013, art. 13-15, pour ce chapitre : **lisibles dans le corpus**, sans clé pour
-    le décret ; base des proportions de 90 % et 10 % : non dite par la loi ;
-  - code des collectivités locales, art. 146-151 et 392 : lus en arabe seulement ; édition
-    française du JORT n° 39 de 2018 (et du n° 51 de 2018, arrêté du 22 juin 2018) **à
-    obtenir** (absente de pist.tn et du corpus) ;
-  - décret du fonds d'appui (LF 2021, art. 13, § 4) et modificatif de l'arrêté après le
-    29 juin 2021 : non identifiés (deux fiches ; fascicules sans couche texte à océriser) ;
-  - contenu des articles 6101 et 8002 des budgets communaux de 2022-2023 au regard des parts
-    de 90 % et 10 % : non établi — le modèle de nomenclature du décret gouvernemental
-    n° 2020-52 (édition arabe, non lu) peut le trancher ;
-  - ce que cherchent la loi n° 2000-60 et la loi organique n° 2007-65 : débats parlementaires
-    des 8 juin 2000 et 12 et 15 décembre 2007, hors corpus, **à obtenir** (archives en ligne,
-    presse) — pas de requête rejouable, donc pas de fiche ;
-  - définitions des ratios publiés par la Direction générale des collectivités locales
-    (autonomie, rémunération, recouvrement), 2008-2019 : non publiées ; pistes non ouvertes :
-    étude « transferts financiers » de la bibliothèque du portail, archives du web de la page
-    des indicateurs — pas de requête rejouable, donc pas de fiche (chapitre des budgets) ;
-  - décrets et arrêtés de la CPSCL (77-212 … 2016-367, loi n° 2001-56) : **lisibles dans le
-    corpus** ;
-  - subventions d'investissement, PIC, PRD, dotation exceptionnelle 2011-2012 : aucune source
-    primaire lue ;
-  - divergence 82 / 50,8 MD du fonds en 1990 : non tranchée (le JORT donne 80 MD votés) ;
-  - décret-loi n° 2026-4 (art. 134 : fonds maintenu et renommé) : rien au chapitre tant qu'il
-    n'est pas en vigueur ; notice à créer ;
-  - glossaire : entrées à créer par le terminologue — subvention annuelle du budget de
-    l'État, subvention d'équilibre, fonds d'appui à la décentralisation, fonds de coopération
-    des collectivités locales ;
-  - `tunisia-data` : les réserves du catalogue des séries (`finances-locales-communes-agregats`,
-    fichiers Banque mondiale), reprises par l'onglet « Sources » de `fig-fl-lp-fccl`, disent
-    encore « réserve à 18 % jusqu'en 2017, 15 % ensuite » et « vraisemblablement fonds total
-    contre quote-part des communes » : à aligner sur le chapitre (les 15 % de 2018-2019 ne
-    sont plus la réserve ; la divergence de 1990 n'est pas tranchée), puis snapshot à refaire ;
-  - tableaux faits main à engendrer : partage et critères du fonds (1976-2017), critères de
-    l'arrêté de 2018-2021 — constat à porter à `docs/notes/backlog-modele.md` ;
-  - à faire au chapitre des budgets, qui dissout `_longue_periode.qmd` : y reprendre la ligne
-    « Fonds commun, 1990 » de `tbl-fl-lp-ecarts` (formulation « vraisemblablement » à aligner
-    sur « non tranchée »), le renvoi `@tbl-fl-lp-ecarts` de `#sec-fl-transferts-1990` et les
-    renvois `@sec-fl-lp-sources` et `@fig-fl-lp-ressources` de ce chapitre ; `index.qmd`
-    annonce encore le fonds et la caisse au dernier chapitre ; `_impots_activite.qmd` porte un
-    `TODO` périmé sur le nom du fonds de 2021, désormais aligné.
-- **Longue période — rédigé le 5 octobre 2026** (`_longue_periode.qmd`,
-  `#sec-fl-longue-periode`) ; le 9 octobre 2026, les sections du fonds commun et de la caisse
-  de prêts, leurs deux figures et deux lignes de `tbl-fl-lp-ecarts` sont parties au chapitre
-  des transferts ; le reste attend la conversion du chapitre des budgets : six figures à onglets (`figures/finances_locales.py`), lues par
-  `figtools.series()` sur les séries de tunisia-data snapshotées dans `precis/_seriescache/`
-  (communes 2008-2023, CPSCL 2005-2024, INS trois bases, Banque mondiale 1985-2012, PIB des
-  comptes de la nation) ; les fichiers Banque mondiale 1992 et 1997, absents du catalogue de
-  l'entrepôt sous un identifiant propre, sont snapshotés par
-  `scripts/snapshot_finances_locales_bm.py` et déclarés par `register_provenance` — à retirer
-  quand tunisia-data les déclarera. Références versées : `dgct-donnees-ouvertes`,
-  `cpscl-etats-financiers`, `wb-msip-1992`, `wb-mdp2-1997`, `wb-pforr-pad-2014`,
-  `wb-pforr-ta-2014`, décrets n° 2016-600 à 602 ; `ins-cnat-2015` couvre déjà les éditions en
-  bases 1983 et 1997 (pas de clé séparée). **Lacunes** : dépenses, investissement et
-  endettement des communes non encore suivis (données présentes) ; définitions du ratio
-  d'autonomie et du taux de recouvrement de la TIB publiés par la DGCT ; explication de la TIB
-  de 2019 (76 MD) ; écart DGCT / somme des communes sur les dépenses 2018-2019.
-- **Impôts sur les immeubles — converti au format « ruptures au premier plan, détail replié »
-  le 9 octobre 2026** (`_impots_immeubles.qmd`, `#sec-fl-immeubles`, `.domicile-unique`),
-  d'après `docs/notes/finances-locales-impots-plan-architecte.md` : vue d'ensemble ; mise en
-  place de 1997 ; deux grandes réformes, toutes deux de perception (2002, 2006-2009) ; état du
-  droit en 2025 ; quatre dispositions (dégrèvement, contribution au fonds de l'habitat,
-  pénalité, abandons) ; longue période, avec deux figures nouvelles sur le seul budgétaire
-  (`fig-fl-immeubles-rendement`, `fig-fl-immeubles-recouvrement`). Treize blocs repliés, dont
-  dix registres à ancres `r-fl-imm-…` ; barèmes au premier plan, une colonne par grandeur et
-  par date. Réorganisation sans fait nouveau : les seuls ajouts viennent de la note
-  documentaire (pages du JORT, clauses d'effet des lois de finances, conditions des abandons
-  de 2019, 2024 et 2025) et de calculs sur les valeurs déjà publiées (hausses en % des
-  barèmes, parts des recettes de fonctionnement). **Tâches closes** : la phrase qui promettait
-  les chiffres « au chapitre de la longue période » ; la section « Notations » ; la double
-  occurrence de l'ancre `r-cfl-prix-reference-1998-2006` (une seule, à
-  `#sec-fl-immeubles-etat-du-droit`, `docs/recherches.yml` mis à jour).
-  **Lacunes nouvelles ou maintenues**, toutes **lisibles dans le corpus** sauf mention :
-  - rubriques des lois de finances (« ce que la loi cherche ») : celle de l'art. 33 de la LF
-    2009 n'est connue que par la note, avec des sigles ; celles des art. 53, 56 et 57 de la LF
-    2006 ne sont pas relevées — la réforme de 2006-2009 est paraphrasée, non citée (ticket du
-    plan de l'architecte, § 8, A) ;
-  - état du droit dit pour 2025 : la LF 2026 (JORT n° 148 de 2025, édition arabe) est à
-    inventorier pour tous les articles du code avant de passer le titre à 2026 (§ 8, H) ;
-  - art. 3 du code : la note annonce six exonérations et en énumère cinq — à relire (JORT
-    n° 11 de 1997, p. 173) ;
-  - pages des art. 72 (LF 2019), 59 (LF 2023), 59 (LF 2024) et 76 (LF 2025) : la note ne les
-    donne que dans l'édition arabe, et deux d'entre elles sont presque identiques dans deux
-    fascicules — laissées hors du registre, à confirmer ;
-  - LF 2002, art. 88 (pénalité des commissionnaires, 0,75 %) à relire en regard de l'art. 87
-    (1 %) ;
-  - condition de l'abandon des pénalités des personnes morales (LF 2024, art. 59) : non
-    relevée ;
-  - taxe au profit du Fonds national d'amélioration de l'habitat avant 2005 (décret beylical
-    du 23 août 1956) : taux et régime non lus ; produit de la contribution depuis 2005 :
-    aucune série identifiée — **à obtenir** ;
-  - décrets de 1902, 1919, 1920 et 1948 (taxes d'avant le code), arrêtés communaux du prix de
-    référence (**hors corpus**), portée du § 10 de l'art. 59 du décret-loi n° 2022-79 :
-    inchangés ;
-  - frise de tête : non faite, le tableau des réformes en tient lieu.
-- **Figures des impôts locaux — scindées le 9 octobre 2026** (`figures/finances_locales.py`) :
-  `vues_impots()` et `table_impots()` reçoivent la liste des impôts, les sources et l'option
-  du recouvrement (sans argument : la figure d'origine, inchangée) ; `vues_immeubles_rendement()`,
-  `fig_immeubles_recouvrement()` et leurs tables servent le chapitre des immeubles ;
-  `vues_activite_rendement()` et `table_activite_rendement()` sont **insérées** au chapitre des
-  impôts sur l'activité (`fig-fl-activite-rendement`, slug `fig_fl_activite_rendement`). Les
-  marques des textes (trait rouge, sans lien de cause) sont déclarées dans `MARQUES_IMMEUBLES`
-  et `MARQUES_ACTIVITE`. `#sec-fl-lp-impots` est allégée : il n'y reste que la figure à quatre
-  impôts, les points de 1990-1996 du rapport de la Banque mondiale et deux renvois (seconde
-  vague). La ligne « taxe sur les immeubles bâtis, 2006-2007 » de `tbl-fl-lp-ecarts`
-  (évaluation de la Banque mondiale) reste à la longue période ; le chapitre 6 y renvoie.
-- **Impôts sur l'activité — chapitre converti le 9 octobre 2026** (`_impots_activite.qmd`,
-  `.domicile-unique`) : vue d'ensemble, mise en place en deux temps (lois n° 75-39 et 75-34 de
-  1975, code de 1997), deux grandes réformes (2012-2013, 2013-2014) avec les rubriques des
-  lois de finances, état du droit **en 2026**, cinq sections de dispositions (taxe hôtelière,
-  forfaits, partage, déclaration, amnisties), longue période avec `fig-fl-activite-rendement`.
-  Lectures : `docs/notes/finances-locales-impots-lectures-2026-10-09.md` ; clés `loi75-34` et
-  `loi75-39` versées (FR et AR). **Tâches closes** : « même plan que le précédent » ; « objet
-  d'un chapitre à venir » ; la promesse de chiffres « au chapitre de la longue période » ;
-  « ne sont pas exposés » et « ne sont pas détaillées ici » ; la section « Notations » ; le
-  tableau des taux qui mêlait la taxe hôtelière et l'auto-entrepreneur ; rubriques des lois de
-  2012 à 2014 ; sens du mot « local » ; seuil « pour chaque établissement » ; inventaire de la
-  loi de finances pour 2026 ; LF 2014, art. 49 et 50, relus sur la couche texte du JORT n° 105
-  de 2013 (quatre catégories au taux de 0,1 %, quatre régimes d'exonération d'où la taxe est
-  retirée, et non trois comme l'écrivait la note du 4 octobre). `docs/recherches.yml` : `ou` de `r-cfl-minimum-tcl-apres-2017` et
-  de `r-cfl-prix-reference-1998-2006` à `#sec-fl-activite-etat-du-droit`, de
-  `r-cfl-taxe-hoteliere-modificatifs` à `#sec-fl-taxe-hoteliere-1997`.
-  **Lacunes nouvelles ou maintenues** :
-  - loi n° 75-34, art. 9 : année de la date d'effet à confirmer sur l'édition arabe du JORT
-    n° 34 de 1975 (**à lire à l'image** ; fascicule scanné) — la date n'est pas écrite ;
-  - plafond de la taxe de 1976 à 1996 : décret d'application de 1975-1976 (n° 75-485, 75-782
-    ou 76-2) et lois de finances pour 1976, 1980 et 1992 **non lus**, lisibles au corpus à
-    l'image ;
-  - unité du maximum dans les décrets n° 2003-1345 et 2006-3360 (« par année » seul, comme en
-    1997 ?) : **lisible dans le corpus**, non relue ;
-  - doctrine administrative sur le chiffre d'affaires brut « local », 1997-2013 : **à
-    obtenir** (notes communes de la Direction générale des impôts, archives du web) ;
-  - produit de la taxe et écrêtement : rien n'établit si l'article 1201 des budgets communaux
-    et l'agrégat de la Direction générale comptent, depuis 2013, la part au-delà de 100 000 D
-    affectée au fonds ; aucune série du montant écrêté — **à obtenir** ;
-  - amnisties de 2012, 2019, 2024 et 2025 : ce qui est abandonné, années et conditions non
-    relevés (2019 à 2025 : édition arabe seule) ; loi n° 2006-25 et décret-loi n° 2006-1 non
-    lus ; arrêté de calendrier de l'amnistie de 2026 (JORT n° 155 de 2025) : intitulé et page
-    non relevés — **lisibles dans le corpus** ;
-  - pages françaises des art. 37 (LF 2016), 42 (LF 2019), 52 et 57 (LF 2023), 67 et 69
-    (LF 2024) : éditions arabes seules, pages laissées hors des registres ;
-  - LF 1993, art. 39, rédaction initiale, et décrets des zones municipales touristiques
-    (n° 94-822 et compléments) ; art. 7 initial du décret-loi n° 2020-33 : inchangés ;
-  - tableaux faits main (`tbl-fl-tcl-minimum`, `tbl-fl-tcl-maximum`, `tbl-fl-tcl-taux`) : à
-    engendrer après versement des valeurs dans la base de paramètres ; frise de tête non
-    faite ;
-  - premier plan : 3 595 → 5 208 mots (+ 45 %), dont 410 pour la longue période venue de
-    `_longue_periode.qmd` et 330 pour les lois de 1975.
-- **À reprendre au chapitre 6 après les lectures du 9 octobre 2026, non touché ici** : l'état
-  du droit y est dit pour 2025 avec un TODO de confirmation, alors que la loi de finances pour
-  2026 est inventoriée (aucun article du code modifié, aucun abandon d'arriérés) ; le TODO sur
-  l'art. 88 de la LF 2002 est levé par la note (1 % à l'art. 87, 0,75 % à l'art. 88, taux à
-  relire à l'image) ; rubriques de la LF 2006 (art. 53, 56, 57) et de la LF 2009 (art. 33)
-  relevées mot pour mot.
-- **À reprendre au chapitre 8, non touché ici** : ses renvois « objet d'un chapitre à venir »
-  et sa promesse de chiffres « au chapitre de la longue période » sont périmés (plan de
-  l'architecte, § 7, points 4 et 5) ; la note du 9 octobre 2026 (§ D et E) répond au ticket.
-- **À reprendre au chapitre 7, non touché ici** (le chapitre 8 est repris le 9 octobre 2026,
-  entrée suivante) : `_impots_activite.qmd`, l. 5, dit
-  suivre « le même plan que le précédent », ce qui n'est plus vrai tant qu'il n'est pas
-  converti ; ses renvois « objet d'un chapitre à venir » et les promesses de chiffres « au
-  chapitre de la longue période » du chapitre 7 sont périmés (plan de l'architecte,
-  § 7, points 4 et 5).
-- **Taxes, redevances et autonomie fiscale — converti au format « ruptures au premier plan,
-  détail replié » le 9 octobre 2026** (`_taxes_redevances.qmd`, `#sec-fl-taxes`,
-  `.domicile-unique`, branche `chantier/conversion-finances-locales-taxes`), d'après
-  `finances-locales-impots-plan-architecte.md` (§ 3) corrigé par
-  `finances-locales-impots-lectures-2026-10-09.md` (points D, E, F, H) : vue d'ensemble ; mise
-  en place de 1997 ; une grande réforme (2018, les droits et redevances confiés aux conseils
-  élus), les décrets de tarifs de 1998 et de 2016 étant des étapes de 1997 ; « Qui fixe quoi :
-  l'état du droit en 2026 » ; six sections de prélèvements, la contribution aux parkings ayant
-  la sienne ; longue période réduite à un renvoi au chapitre des budgets. Huit blocs repliés, dont cinq registres à ancres `r-fl-tax-…`. **C'est une réorganisation et une mise à jour
-  bornée, sur un droit en mouvement** : tout ce que le chapitre dit des conseils élus sera à
-  récrire à l'entrée en vigueur du décret-loi n° 2026-4. **Corrections** : la faculté laissée
-  à la collectivité d'arrêter un tarif est datée du 1er août 1998 (décret n° 98-1428, treize
-  lignes de l'annexe, onze rubriques) et non plus du 5 juillet 2016 ; l'entrée en vigueur des
-  dispositions budgétaires du code de 2018 n'est plus dite « non établie » (renvoi à
-  `#sec-fl-budg-ccl-vigueur`) ; la dissolution des conseils municipaux de 2023 et le
-  décret-loi n° 2026-4 entrent au chapitre ; les traductions de l'arabe ne sont plus entre
-  guillemets. **Tâches closes** : la promesse de chiffres « au chapitre de la longue
-  période » ; le classement suspendu du décret n° 2016-805 ; le TODO sur l'art. 7 de la loi
-  organique du budget, lu pour le chapitre des budgets (`#sec-fl-budg-2007`). Fiche de
-  recherche versée, **toujours ouverte** : `r-ccl-2018-decrets-art391` (décrets de l'art. 391,
-  aucun identifié ; 44 fascicules arabes à lire à l'image). Clés créées, FR et AR : `decret98-1428`, `decretloi2026-4`,
-  `arrete2023-dpm-redevance`. **Lacunes nouvelles ou maintenues**, **lisibles dans le corpus**
-  sauf mention :
-  - **figure du produit des droits et redevances : non faite.** Il faut d'abord établir la
-    correspondance entre la nomenclature budgétaire des communes (budgets par commune de 2022
-    et 2023, articles par nature) et les prélèvements du code : l'annexe du décret
-    gouvernemental n° 2020-52 du 23 janvier 2020 (JORT n° 9 de 2020, AR p. 368), qui classe
-    les recettes par article (« 12.02 المعلوم على النزل », « 12.03 معلوم الإجازة »), est à
-    lire ; travail de données dans `tunisia-data` avant tout travail de figure ;
-  - annexes des décrets de tarifs : aucune valeur transcrite — l'annexe française de 1998 est
-    rognée sur la colonne des tarifs (lire l'édition arabe du JORT n° 59 de 1998, **demande une
-    lecture à l'image**) ; l'annexe de 2016 est à transcrire et à comparer ligne à ligne ; les
-    six modificatifs du décret de 1998 (n° 2000-232, 2000-1692, 2003-1346, 2004-80, 2012-1958,
-    2013-3236) sont connus par leur seul intitulé, sans clé bibliographique ;
-  - décret n° 90-1960 du 28 novembre 1990 (JORT n° 79 de 1990, p. 1848-1854) et son
-    modificatif n° 95-1121 : à lire — la faculté tarifaire de la collectivité peut être
-    antérieure à 1998 ;
-  - loi n° 2002-76, art. 3 : établir si la réduction de moitié de la contribution des
-    riverains pour les cas sociaux subsiste après le 1er août 2002 (le chapitre la donne
-    depuis 1997, sans date de fin) ;
-  - LF 2002, art. 88 : page à trancher (4260 ou 4261) et taux à relire à l'image ;
-  - qui arrête un tarif communal depuis le décret-loi n° 2023-9 : non établi (décisions des
-    secrétaires généraux, circulaires : **à obtenir**) ;
-  - décret-loi n° 2026-4 : édition française **à obtenir** ; art. 14 à 27, 35 à 56 et 100 à
-    131 à lire en suivi ;
-  - arrêtés du 4 mars 1997 et du 30 mai 2003 (communes soumises à la contribution aux
-    parkings) : connus par leur date ;
-  - frise de tête : non faite, le tableau des réformes en tient lieu ;
-  - dates dans la prose : la classe `.insecable` n'agit que dans les tableaux
-    (`precis/legendes.scss`) ; une date peut encore se couper en fin de ligne dans le texte
-    courant, ici comme au chapitre des immeubles — à trancher pour tout le volume ;
-  - `_competences.qmd` cite l'art. 237 du code de 2018 pour le pouvoir du conseil de fixer les
-    droits, ce chapitre l'art. 139 : à rapprocher (non touché, hors périmètre).
-- **Livre arabe** : `_transferts.qmd` et `_longue_periode.qmd` déclarés en commentaire dans
-  `precis/ar/finances_locales/_quarto.yml`. Glossaire : `fonds-commun-collectivites-locales`,
-  `reserve-fonds-commun`, `cpscl` (termes arabes du JORT).
+**Livre arabe.** `precis/ar/finances_locales/` a son `_quarto.yml` et ses références ; il est
+sauté au rendu tant que la traduction n'a pas livré `index.qmd`. Les chapitres 3 à 9 y sont
+déclarés en commentaire, à décommenter à la livraison de chaque traduction ; la ligne de
+`_longue_periode.qmd` en est retirée. Les blocs repliés (attribut `titre`) et les libellés des
+figures nouvelles restent à traduire.
+
+### Ce qui traverse le volume
+
+- **Décret-loi n° 2026-4 du 30 septembre 2026, relatif aux conseils municipaux** (JORT n° 96
+  de 2026, édition arabe, p. 2058-2074 ; clé `decretloi2026-4`). Il abroge le code des
+  collectivités locales de 2018 (art. 139) mais n'entre en vigueur qu'après les prochaines
+  élections municipales (art. 136). **État de lecture** : art. 1 à 13, 28 à 34, 57 à 99 et 132
+  à 140 lus à l'image (`finances-locales-impots-lectures-2026-10-09.md`, § D.5) ; art. 14 à 27,
+  35 à 56 et 100 à 131 parcourus, à lire en suivi. **Écrit au volume** : signalé une fois, comme
+  texte publié qui n'est pas en vigueur, au chapitre des taxes (`#sec-fl-moduler-droits`) et à
+  celui des budgets (`#sec-fl-budg-etat-du-droit`, ligne `r-fl-budg-2026` : art. 30, 71, 136,
+  137 et 139). **Reste** : relever pour le chapitre des budgets les art. 57 à 99 (budget,
+  équilibre, emprunt, exécution, comptes), lus mais non relevés ; rien n'est dit au chapitre
+  des transferts de l'art. 134 (fonds de 2021 maintenu et renommé) ; les chapitres d'histoire
+  et des compétences ne le mentionnent pas (troisième vague) ; sort du code de la fiscalité
+  locale et du décret de tarifs n° 2016-805 à son entrée en vigueur, que le texte ne règle
+  pas. **Corpus** : fascicule arabe lisible (`PDFs/JORT/2026/ar/Ja0962026.pdf`) ; édition
+  française **à obtenir** (le fichier « fr » est l'arabe) ; absent de `jort_cache.db`. À
+  l'entrée en vigueur, tout ce que le volume dit des conseils élus et du budget communal est à
+  récrire.
+- **Code des collectivités locales (loi organique n° 2018-29)** : lu dans l'édition arabe du
+  JORT n° 39 de 2018 ; édition française **à obtenir** (absente de pist.tn et du corpus, comme
+  celle du n° 51 de 2018). Les traductions du volume sont de travail, sans guillemets. Le nom
+  français des niveaux (« باب », « قسم ») n'est pas établi.
+- **Art. 237 ou art. 139 ?** `_competences.qmd` cite l'art. 237 du code pour le pouvoir du
+  conseil de fixer droits, redevances et taxes, `_taxes_redevances.qmd` l'art. 139 (lu à
+  l'image). Non tranché ; un `TODO (documentaliste)` aux deux endroits. **Lisible dans le
+  corpus.**
+- **Tableaux de paramètres** : tous faits main, avec leur `TODO (rédacteur)` ; aucun paramètre
+  des finances locales dans la base. Constats versés à `docs/notes/backlog-modele.md`.
+- **Sources des séries** : présentées une fois, `#sec-fl-lp-sources` (ch. 5). Six séries de
+  `tunisia-data`, lues par `figtools.series()` dans `precis/_seriescache/`. Les fichiers Banque
+  mondiale de 1992 et 1997 sont snapshotés par `scripts/snapshot_finances_locales_bm.py` et
+  déclarés par `register_provenance` — à retirer quand `tunisia-data` les déclarera. Les
+  réserves du catalogue disent encore « réserve à 18 % jusqu'en 2017, 15 % ensuite » et
+  « vraisemblablement fonds total contre quote-part des communes » : à aligner sur le volume
+  (les 15 % de 2018-2019 ne sont plus la réserve ; la divergence de 1990 n'est pas tranchée),
+  puis snapshot à refaire.
+- **Figures** : un seul module, `figures/finances_locales.py` ; chaque source a sa marque, les
+  textes placés à leur date d'effet ont un trait rouge distinct des ruptures de série, sans lien
+  de cause (`MARQUES_IMMEUBLES`, `MARQUES_ACTIVITE`, `MARQUES_FCCL`, `MARQUES_BUDGETS`). Libellés
+  arabes écrits dans le module, non relus par le relecteur-ar pour les deux figures du 9 octobre.
+- **Définitions des ratios publiés par la Direction générale des collectivités locales**
+  (autonomie, rémunération, recouvrement de la taxe sur les immeubles bâtis, 2008-2019) : non
+  publiées avec les séries. Pistes non ouvertes : étude « transferts financiers » de la
+  bibliothèque du portail, archives du web de la page des indicateurs. Fiche proposée
+  `r-fl-dgct-definitions-ratios`, **non versée** (pas de requête rejouable sur le JORT) : à
+  trancher par l'architecte ou le propriétaire. **À obtenir.**
+- **Dates dans la prose** : la classe `.insecable` n'agit que dans les tableaux
+  (`precis/legendes.scss`) ; une date ou un nombre à espace (« 1 169 MD ») peut encore se
+  couper en fin de ligne dans le texte courant — à trancher pour tout le volume.
+- **Frise de tête** : faite dans aucun chapitre ; le tableau des réformes en tient lieu.
+- **Glossaire** : 40 notions du chapitre des notions, toutes `provisoire` (termes arabes sans
+  texte bilingue ; à trancher par un arabophone : « التعديل » pour péréquation, « الرسم » pour
+  la taxe, « معلوم الاستعمال » pour la redevance d'utilisation) ; quinze notions d'institutions
+  et de budget, dont trois `valide` ; `fonds-commun-collectivites-locales`,
+  `reserve-fonds-commun`, `cpscl` (termes du JORT). **Entrées à créer par le terminologue** :
+  subvention annuelle du budget de l'État, subvention d'équilibre, fonds d'appui à la
+  décentralisation, fonds de coopération des collectivités locales.
+- **Références à lire** : Dafflon et Gilbert, PARD 2021 (transferts) et 2022 ; Hammami, Dafflon
+  et Gilbert, PARD 2021 (compétences) ; Dafflon, RTF n° 25 (2017) ; Dafflon et Madiès, AFD,
+  *Notes et documents* n° 42 (2008), dont le fichier téléchargé n'a que six pages — **à
+  obtenir** ; voir `docs/notes/biblio-fiscalite-locale.md`.
+- **Questions du plan restées ouvertes** : chapitre propre aux régions ; taxes affectées à des
+  fonds hors budgets locaux ; chronologie des textes en annexe (annoncée par la présentation
+  jusqu'au 9 octobre 2026, retirée du texte faute d'exister).
+
+### Chapitre 1 — Présentation (`index.qmd`)
+
+Rédigée le 4 octobre 2026, **mise à jour le 9 octobre 2026** : trois mouvements (notions,
+institutions, ressources) au lieu de quatre ; le mouvement « Les chiffres » et le renvoi au
+chapitre de la longue période sont retirés ; le fonds commun est suivi des « subventions
+annuelles » ; la phrase qui disait les chapitres d'institutions « à écrire » est remplacée par
+le plan commun des cinq chapitres convertis et un renvoi aux sources (`@sec-fl-lp-sources`).
+**Reste** : la phrase sur le plan commun ne vaut pas pour les chapitres 2 à 4 tant qu'ils ne
+sont pas convertis.
+
+### Chapitre 2 — Les notions (`_notions.qmd`) — non converti
+
+Rédigé le 4 octobre 2026. Source unique : Dafflon et Gilbert, AFD 2018 (`dafflon-gilbert-2018`,
+exemplaire HAL). Aucune valeur tunisienne. Garde sa section « Notations ». **Lacunes** :
+notions non définies faute de source lue — épargne brute, dépendance aux transferts, fonds
+commun comme notion générale, établissement public (Dafflon et Madiès 2008, **à obtenir**).
+
+### Chapitre 3 — Histoire (`_histoire.qmd`) — non converti
+
+Rédigé le 5 octobre 2026 (note `finances-locales-histoire.md`). **Mis à jour le 9 octobre
+2026** sur un seul point : sa longue période renvoie au chapitre des budgets
+(`@sec-fl-budg-longue-periode`) au lieu de promettre un chapitre. Quatre fiches RECHERCHE :
+`r-fl-dissolutions-2011`, `r-fl-constitution-2014-numero-special`, `r-fl-nombre-communes`,
+`r-fl-elections-municipales-apres-2023`. **Lacunes**, lisibles dans le corpus sauf mention :
+lois organiques n° 85-43, 91-24, 95-68 et 2006-48 (modificatifs de la loi organique des
+communes) ; numéro spécial du JORT du 10 février 2014 (Constitution), **à obtenir** ; nombre
+des conseils dissous en 2011-2012 et nombre de communes de 1957 à 2014 ; texte arabe de la
+Constitution de 2014 ; décrets d'avant 1956, **à obtenir**.
+
+### Chapitre 4 — Compétences (`_competences.qmd`) — non converti
+
+Rédigé le 5 octobre 2026 (note `finances-locales-competences.md`). **Mis à jour le 9 octobre
+2026** sur deux points : sa longue période ne promet plus de chiffres « au chapitre de la
+longue période » — elle dit qu'aucune classification fonctionnelle n'existe (Dafflon) et
+renvoie aux dépenses par nature du chapitre des budgets ; un `TODO` pose la question de
+l'art. 237. Fiches : `r-fl-loi-competences-partagees`, `r-fl-elections-municipales-apres-2023`.
+**Lacunes** : modificatifs, fin du texte et édition arabe de la loi n° 75-33, et son sort après
+2018 ; textes de création des agences citées par Dafflon et Gilbert et décret n° 2004-1182
+(couche texte décalée) ; **dépenses par fonction et part dans la dépense publique : aucune
+série identifiée**, à chercher dans les rapports de la Haute instance des finances locales —
+**à obtenir**.
+
+### Chapitre 5 — Budgets et comptes (`_budgets.qmd`) — converti le 9 octobre 2026
+
+`.domicile-unique`, d'après `finances-locales-transferts-budgets-plan-architecte.md` (§ 3 et 4)
+corrigé par les lectures du 9 octobre 2026. Plan : vue d'ensemble ; mise en place de 1975 ;
+trois grandes réformes (2007, budgets de 2008 ; 2018, budgets communaux de 2019 ; 2025) ; état
+du droit au 18 mars 2025 ; seuil de l'approbation ministérielle ; nomenclature ; comptable et
+comptes ; longue période (sources, recettes propres et transferts, autonomie, dépenses, quatre
+impôts, comptes de la nation, rapports de la Banque mondiale). Treize blocs repliés, dont dix
+registres à ancres `r-fl-budg-…`. **Il accueille le chapitre « La longue période », supprimé**
+(`_longue_periode.qmd`) : `fig-fl-lp-ressources` en vue d'ensemble ; `fig-fl-lp-autonomie`,
+`fig-fl-lp-impots` et `fig-fl-lp-ins` dans sa longue période ; `tbl-fl-lp-sources` au premier
+plan, l'administration d'abord ; `tbl-fl-lp-ecarts` réparti par famille de sources (trois
+lignes de l'administration, deux lignes dans `tbl-fl-lp-ecarts-bm`, une phrase sur 2008-2012
+dans la section titrée « Selon les rapports de la Banque mondiale », une phrase sur la taxe sur
+les immeubles bâtis de 2006-2007 au chapitre 6) ; la table des notations est dissoute, chaque
+symbole défini où il sert. Identifiants `fig-fl-lp-…`, `tbl-fl-lp-…`, `sec-fl-lp-…` gardés.
+**Deux figures nouvelles** (`figures/finances_locales.py`, sans série ajoutée au cache) :
+`fig-fl-budg-depenses` (dépenses des deux titres 2002-2023, service de la dette et emprunt
+2002-2012 et 2018-2023) et `fig-fl-budg-remunerations` (rémunérations rapportées aux recettes
+du titre I, 2008-2023, et plafond de moitié tracé depuis 2019). **Faits nouveaux** : intitulés
+du régime financier du code (édition arabe, traductions de travail) ; date de la loi organique
+n° 94-44 (23 mai 1994) ; décret gouvernemental n° 2020-52 du 23 janvier 2020 (modèle de la
+nomenclature budgétaire des communes, clé `decret-gouv2020-52`, FR et AR) ; décret-loi
+n° 2026-4, signalé une fois. **Fiches** : `r-ccl-2018-nomenclature-art167` **résolue** par le
+décret n° 2020-52 (passe du 9 octobre 2026, ancre retirée) ;
+`r-lob-cl-seuil-approbation-apres-2017` toujours ouverte (`#sec-fl-budg-seuils`). **Tâches
+closes** : la promesse de chiffres « au chapitre de la longue période » ; « en l'état des
+textes identifiés, le dernier fixé » (l'état du droit est dit par sa date) ; les dépenses et
+le service de la dette, non suivis jusque-là ; la phrase qui traversait trois bases du PIB
+sans le dire (récrite base par base, avec renvoi à l'annexe). **Lacunes**, lisibles dans le
+corpus sauf mention :
+- ce que cherche la loi organique n° 2007-65 : ni rubrique ni exposé ; débats des 12 et
+  15 décembre 2007 hors corpus, **à obtenir** (pas de requête rejouable, donc pas de fiche) ;
+- modèle annexé au décret n° 2020-52 (édition arabe, p. 368 et suivantes) : **non lu** — il
+  donnerait la correspondance entre articles budgétaires et prélèvements du code (figure du
+  chapitre 8) et le contenu des articles 6101 et 8002 (chapitre 9) ;
+- décrets des missions et programmes (code, art. 156) et du système comptable (art. 191) :
+  aucun signalé par la recherche sur les titres du 5 octobre 2026 ; ils ont quitté l'objet de
+  la fiche résolue et ne sont portés que par un `TODO` — à chercher au plein texte ;
+- vote des budgets communaux depuis la dissolution de 2023 : non établi, **à obtenir**
+  (décisions des secrétaires généraux, circulaires) ;
+- art. 38-41 de la LF 1980 (lus par océrisation, à relire à l'image) et clause d'effet de
+  cette loi ; date de publication du décret n° 75-485 ; arrêté de nomenclature du 6 novembre
+  1975 et modèles de l'arrêté du 31 mars 2008 ; texte postérieur au décret n° 75-782 sur
+  l'agrément des investissements ;
+- code de la comptabilité publique (loi n° 73-81) et loi n° 68-8 sur la Cour des comptes :
+  non lus ; l'emprunt avant 2018 (loi n° 75-38, LF 1980, art. 37) n'est pas au chapitre ;
+- le plafond de moitié des rémunérations porte sur les prévisions : la figure ne compare que
+  des réalisations ; les prévisions des budgets par commune (2018-2023) sont dans
+  `tunisia-data` et permettraient le rapport de la règle — **travail de données** ;
+- écart entre les agrégats et la somme des budgets par commune sur les dépenses de 2018-2019,
+  non expliqué ;
+- figure en escalier du seuil : après versement des onze valeurs dans la base de paramètres ;
+- les dates d'exécution des lois de finances pour 1982, 1986 et 1992 (2 janvier) ne sont pas
+  au registre de ce chapitre, qui ne cite pas ces lois : elles sont à celui des transferts
+  (`#r-fl-transf-dates-gestions`).
+
+### Chapitre 6 — Impôts sur les immeubles (`_impots_immeubles.qmd`) — converti le 9 octobre 2026
+
+`.domicile-unique`, d'après `finances-locales-impots-plan-architecte.md` : vue d'ensemble ; mise
+en place de 1997 ; deux grandes réformes de perception (2002, 2006-2009) ; état du droit en
+2025 ; quatre dispositions (dégrèvement, contribution au fonds de l'habitat, pénalité,
+abandons) ; longue période, avec `fig-fl-immeubles-rendement` et
+`fig-fl-immeubles-recouvrement` sur le seul budgétaire. Treize blocs repliés, dix registres à
+ancres `r-fl-imm-…`. Trois fiches : `r-cfl-prix-reference-1998-2006`,
+`r-cfl-prix-reference-tib-apres-2017`, `r-cfl-tarif-tnb-apres-2017`. **Mis à jour le 9 octobre
+2026 avec la dissolution de la longue période** : la phrase de l'évaluation de la Banque
+mondiale sur 2006-2007 (53,5 puis 28,2 MD) y est écrite, sous son titre ; renvoi à
+`@fig-fl-lp-impots` au chapitre des budgets. **À reprendre, d'après les lectures du 9 octobre
+2026** (`finances-locales-impots-lectures-2026-10-09.md`), non fait :
+- l'état du droit y est dit pour 2025 avec un `TODO` de confirmation, alors que la loi de
+  finances pour 2026 est inventoriée (aucun article du code modifié, aucun abandon
+  d'arriérés) : titre et section à passer à 2026 ;
+- rubriques de la LF 2006 (art. 53, 56, 57) et de la LF 2009 (art. 33), relevées mot pour mot
+  par la note : la réforme de 2006-2009 est encore paraphrasée ;
+- LF 2002, art. 88 : la note donne 1 % à l'art. 87 et 0,75 % à l'art. 88, taux à relire à
+  l'image, page à trancher (4260 ou 4261).
+
+**Lacunes**, lisibles dans le corpus sauf mention : art. 3 du code (six exonérations annoncées,
+cinq énumérées) ; pages françaises des art. 72 (LF 2019), 59 (LF 2023), 59 (LF 2024) et 76
+(LF 2025) ; condition de l'abandon des pénalités des personnes morales (LF 2024, art. 59) ;
+taxe au profit du Fonds national d'amélioration de l'habitat avant 2005 et produit de la
+contribution depuis 2005 — **à obtenir** ; décrets de 1902, 1919, 1920 et 1948 — **à obtenir**
+pour ceux d'avant 1956 ; arrêtés communaux du prix de référence, **hors corpus** ; portée du
+§ 10 de l'art. 59 du décret-loi n° 2022-79 ; explication du produit de 2019 (76 MD).
+
+### Chapitre 7 — Impôts sur l'activité (`_impots_activite.qmd`) — converti le 9 octobre 2026
+
+`.domicile-unique` : vue d'ensemble ; mise en place en deux temps (lois n° 75-39 et 75-34, code
+de 1997) ; deux grandes réformes (2012-2013, 2013-2014) avec les rubriques des lois de
+finances ; état du droit en 2026 ; cinq dispositions (taxe hôtelière, forfaits, partage,
+déclaration, amnisties) ; longue période avec `fig-fl-activite-rendement`. Trois fiches :
+`r-cfl-minimum-tcl-apres-2017`, `r-cfl-prix-reference-1998-2006`,
+`r-cfl-taxe-hoteliere-modificatifs`. **Mis à jour le 9 octobre 2026** : le `TODO` sur le nom du
+fonds de 2021, devenu sans objet, est retiré ; le renvoi à la comparaison des quatre impôts
+vise le chapitre des budgets. **Lacunes** : loi n° 75-34, art. 9, année de la date d'effet à
+confirmer sur l'édition arabe (**à lire à l'image**) ; plafond de la taxe de 1976 à 1996
+(décrets de 1975-1976 et LF 1976, 1980, 1992, non lus) ; unité du maximum dans les décrets
+n° 2003-1345 et 2006-3360 ; doctrine administrative sur le chiffre d'affaires brut « local »,
+1997-2013, **à obtenir** ; produit de la taxe avant ou après écrêtement au profit du fonds
+depuis 2013, et série du montant écrêté, **à obtenir** ; amnisties de 2012, 2019, 2024 et 2025
+(objet, années, conditions), loi n° 2006-25, décret-loi n° 2006-1, arrêté de calendrier de
+2026 ; pages françaises des art. 37 (LF 2016), 42 (LF 2019), 52 et 57 (LF 2023), 67 et 69
+(LF 2024) ; LF 1993, art. 39, et décrets des zones municipales touristiques ; art. 7 initial
+du décret-loi n° 2020-33.
+
+### Chapitre 8 — Taxes, redevances et autonomie fiscale (`_taxes_redevances.qmd`) — converti le 9 octobre 2026
+
+`.domicile-unique` : vue d'ensemble ; mise en place de 1997 ; une grande réforme (2018, les
+droits et redevances confiés aux conseils élus), les décrets de tarifs de 1998 et 2016 étant
+des étapes ; « Qui fixe quoi : l'état du droit en 2026 » ; six sections de prélèvements ;
+longue période réduite à un renvoi à la nomenclature du chapitre des budgets
+(`@sec-fl-budg-nomenclature`, mis à jour le 9 octobre 2026). Huit blocs repliés, cinq registres
+à ancres `r-fl-tax-…`. Fiche ouverte : `r-ccl-2018-decrets-art391` (44 fascicules arabes à
+lire à l'image). **Lacunes**, lisibles dans le corpus sauf mention :
+- **figure du produit des droits et redevances : non faite** ; il faut d'abord la
+  correspondance entre les articles des budgets par commune et les prélèvements du code
+  (modèle annexé au décret n° 2020-52, non lu) — travail de données dans `tunisia-data` ;
+- annexes des décrets de tarifs : aucune valeur transcrite (annexe française de 1998 rognée,
+  édition arabe du JORT n° 59 de 1998 **à lire à l'image** ; annexe de 2016 à transcrire) ;
+  six modificatifs du décret de 1998 connus par leur intitulé, sans clé ;
+- décret n° 90-1960 du 28 novembre 1990 et son modificatif n° 95-1121 : la faculté tarifaire
+  de la collectivité peut être antérieure à 1998 ;
+- loi n° 2002-76, art. 3 (réduction de moitié pour les cas sociaux après le 1er août 2002) ;
+  barème des parkings de la LF 2003, art. 79, à transcrire ; arrêtés du 4 mars 1997 et du
+  30 mai 2003 ; antécédents abrogés en 1997 (décrets de 1887 à 1956, **à obtenir** ; loi
+  n° 71-41) ;
+- qui arrête un tarif communal depuis le décret-loi n° 2023-9 : non établi ; délibérations
+  tarifaires de 2019 à 2023 au *Journal officiel des collectivités locales*, **hors corpus**.
+
+### Chapitre 9 — Les transferts de l'État (`_transferts.qmd`) — converti le 9 octobre 2026
+
+`.domicile-unique` : vue d'ensemble ; mise en place de 1975 ; trois grandes réformes (1987,
+2001, 2018 avec son second temps de 2021) ; répartition légale 1976-2017 ; état du droit au
+14 juillet 2021 ; réserve ; caisse ; longue période. Treize blocs repliés. `fig-fl-lp-fccl` et
+`fig-fl-lp-cpscl` y sont montées. Fiches : `r-fccl-repartition-reserve-2014-2017`,
+`r-fl-criteres-subventions-apres-2021`, `r-fl-decret-fonds-appui-decentralisation`. **Mis à
+jour le 9 octobre 2026 avec la dissolution de la longue période** : ses renvois aux sources et
+aux écarts de 1990 visent le chapitre des budgets (`@sec-fl-lp-sources`,
+`@tbl-fl-lp-ecarts-bm`). **Lacunes**, lisibles dans le corpus sauf mention :
+- décrets de répartition de la réserve de 1993 à 2013 (vingt-deux, connus par leur intitulé) ;
+- montant du fonds, LF par LF, de 1987 à 2017 (seul 1990 est lu) et montant annuel des
+  subventions depuis 2018 ; LF 1977-1979 et arrêtés de 1975-1983 ; montants de 1990-1991 au
+  profit de la caisse à relire à l'image ; les tableaux des LF de 2022 à 2026 semblent en
+  image — **OCR à prévoir** ;
+- décret n° 2013-2797 (fonds de coopération) et LF 2013, art. 13-15, sans clé pour le décret ;
+  base des proportions de 90 % et 10 % : non dite par la loi ;
+- décret du fonds d'appui et modificatif de l'arrêté après le 29 juin 2021 : non identifiés
+  (deux fiches ; fascicules sans couche texte à océriser) ;
+- ce que cherche la loi n° 2000-60 : débats du 8 juin 2000, **à obtenir** ;
+- décrets et arrêtés de la caisse (n° 77-212 … 2016-367, loi n° 2001-56) ;
+- subventions d'investissement, programmes d'investissement communal et régionaux, dotation
+  exceptionnelle de 2011-2012 : aucune source primaire lue ;
+- divergence 82 / 50,8 MD du fonds en 1990 : non tranchée (le JORT donne 80 MD votés).
+- code des collectivités locales, art. 146-151 et 392 : lus en arabe seulement ;
+- contenu des articles 6101 et 8002 des budgets communaux de 2022-2023 au regard des parts de
+  90 % et 10 % : non établi (modèle annexé au décret n° 2020-52, non lu).
 
 ## Forme des chapitres — le plan type, et où il ne s'applique pas
 
@@ -2236,12 +2145,14 @@ généraliser : `finances_locales/figures/finances_locales.py` (`_pib`, `_pib_pa
   (`bareme_actualisation.py`) ; dire les années de la réserve d'avant 1993 (taux de 1970 à cheval
   sur deux séries ; taux de 1983 et 1985 appuyés sur des valeurs de 1983-1984 propres à la Banque
   mondiale).
-- **Finances locales — 4 figures conformes, 1 phrase partielle** : `_longue_periode.qmd`, « de
-  0,74 % en 2002 à … 0,66 % en 2019 » traverse trois bases sans le dire dans la phrase  ; les points
-  de 1985-1991 de `fig-fl-lp-fccl` (désormais au chapitre des transferts) sont rapportés au
-  PIB d'un rapport de la Banque mondiale de 1992 dont la base n'est pas dite — la note de
-  lecture le dit depuis le 9 octobre 2026. Remplacer le paragraphe local sur les bases par un renvoi à
-  l'annexe.
+- **Finances locales — conformes depuis le 9 octobre 2026** : la phrase qui traversait trois bases
+  est récrite base par base (`_budgets.qmd`, `#sec-fl-lp-ressources` et `#sec-fl-lp-bm`) ; le
+  paragraphe local sur les bases renvoie à l'annexe ; les notes de lecture de
+  `fig-fl-lp-ressources`, `fig-fl-lp-impots` et `fig-fl-lp-ins` disent la base par segment. Les
+  points de 1985-1991 de `fig-fl-lp-fccl` (chapitre des transferts) restent rapportés au PIB d'un
+  rapport de la Banque mondiale de 1992 dont la base n'est pas dite — la note de lecture et le
+  tableau des sources le disent. Les deux figures nouvelles des dépenses et des rémunérations
+  n'ont pas de vue au PIB.
 - **Marché du travail** : aucun emploi du PIB relevé.
 
 **Figures de l'annexe — fait le 6 octobre 2026.** `#fig-pib-volume` (sous-section
