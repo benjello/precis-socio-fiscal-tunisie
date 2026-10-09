@@ -2158,8 +2158,22 @@ jour le 9 octobre 2026 avec la dissolution de la longue période** : ses renvois
 aux écarts de 1990 visent le chapitre des budgets (`@sec-fl-lp-sources`,
 `@tbl-fl-lp-ecarts-bm`). **Lacunes**, lisibles dans le corpus sauf mention :
 - décrets de répartition de la réserve de 1993 à 2013 (vingt-deux, connus par leur intitulé) ;
-- montant du fonds, LF par LF, de 1987 à 2017 (seul 1990 est lu) et montant annuel des
-  subventions depuis 2018 ; LF 1977-1979 et arrêtés de 1975-1983 ; montants de 1990-1991 au
+- montant du fonds, LF par LF : **versé de 1976 à 1995 sauf 1979** (série
+  `finances-locales-fccl-lois-de-finances`, snapshotée le 9 octobre 2026 et tracée dans
+  `fig-fl-lp-fccl` en famille à part, deux segments séparés par la rupture de définition de
+  1987 ; grandeur retenue pour 1987-1995 : le total des recettes du fonds, non la seule
+  subvention). **Restent** : 1979 (tableau des fonds spéciaux de la loi n° 78-59 non localisé,
+  numérisation dégradée — OCR ou relecture à l'image) ; 1996-2017, où le tableau n'imprime plus
+  le montant (1996 et 1997 lus, 1998-2010 à vérifier dans le corpus) : à chercher au budget du
+  ministère de l'Intérieur par chapitre, aux lois de règlement et aux décrets de répartition ;
+  exécution de 1976-1982 aux rapports annuels de la Banque centrale, repérée, non versée. La
+  série votée n'a **pas de vue au PIB** : `cnat-pib-nominal` commence en 2001, et avant 1992
+  le seul PIB courant du cache (`pib-courant-enchaine`, variante accolée) est d'une base non
+  dite ; la base 1983 publiée ne couvre que 1992-1995. La série a vingt et une clés de loi de
+  finances au catalogue des données, absentes de la bibliographie du volume : le module de
+  figures déclare sa provenance avec une ligne de source unique (**à verser par le
+  bibliographe** si l'on veut les citer une à une) ;
+- montant annuel des subventions depuis 2018 ; LF 1977-1979 et arrêtés de 1975-1983 ; montants de 1990-1991 au
   profit de la caisse à relire à l'image ; les tableaux des LF de 2022 à 2026 semblent en
   image — **OCR à prévoir** ;
 - décret n° 2013-2797 (fonds de coopération) et LF 2013, art. 13-15, sans clé pour le décret ;
@@ -2170,7 +2184,17 @@ aux écarts de 1990 visent le chapitre des budgets (`@sec-fl-lp-sources`,
 - décrets et arrêtés de la caisse (n° 77-212 … 2016-367, loi n° 2001-56) ;
 - subventions d'investissement, programmes d'investissement communal et régionaux, dotation
   exceptionnelle de 2011-2012 : aucune source primaire lue ;
-- divergence 82 / 50,8 MD du fonds en 1990 : non tranchée (le JORT donne 80 MD votés).
+- divergence 82 / 50,8 MD du fonds en 1990 : non tranchée (le JORT donne 80 MD votés) ; le
+  rapport de 1997 vaut de 63,5 % à 65,1 % des montants votés en 1990, 1992, 1994 et 1995,
+  ordre de grandeur de la part légale des communes (75 % × 86 %) — constat dit au chapitre,
+  clé non vérifiée ;
+- l'onglet « Sources » de `fig-fl-lp-fccl` reprend les réserves du catalogue des données pour
+  `finances-locales-communes-agregats` (« réserve à 18 % jusqu'en 2017, 15 % ensuite ») et
+  pour `finances-locales-bm-1985-2012` (« vraisemblablement fonds total contre quote-part des
+  communes ») : à accorder, dans le dépôt des données, avec le chapitre, qui dit que la ligne
+  de 2018-2019 n'est plus la réserve et ne tranche pas l'écart de 1990 ;
+- vue au PIB de `fig-fl-lp-fccl` : le libellé « PIB : base 2015 » chevauche les courbes de
+  2012-2014 (antérieur à l'ajout de la série votée) ;
 - code des collectivités locales, art. 146-151 et 392 : lus en arabe seulement ;
 - contenu des articles 6101 et 8002 des budgets communaux de 2022-2023 au regard des parts de
   90 % et 10 % : non établi (modèle annexé au décret n° 2020-52, non lu).
@@ -2290,7 +2314,8 @@ généraliser : `finances_locales/figures/finances_locales.py` (`_pib`, `_pib_pa
   `fig-fl-lp-ressources`, `fig-fl-lp-impots` et `fig-fl-lp-ins` disent la base par segment. Les
   points de 1985-1991 de `fig-fl-lp-fccl` (chapitre des transferts) restent rapportés au PIB d'un
   rapport de la Banque mondiale de 1992 dont la base n'est pas dite — la note de lecture et le
-  tableau des sources le disent. Les deux figures nouvelles des dépenses et des rémunérations
+  tableau des sources le disent. Les montants votés de 1976-1995, ajoutés à cette figure le
+  9 octobre 2026, n'y sont tracés qu'en dinars courants, faute de PIB à base dite avant 1992. Les deux figures nouvelles des dépenses et des rémunérations
   n'ont pas de vue au PIB.
 - **Marché du travail** : aucun emploi du PIB relevé.
 
