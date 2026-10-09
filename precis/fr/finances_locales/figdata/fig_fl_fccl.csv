@@ -1,9 +1,9 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-04
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-09
 # séries (tunisia_data) : finances-locales-communes-agregats, finances-locales-bm-1985-2012, finances-locales-bm-1992, finances-locales-bm-1997, cnat-pib-nominal
 # sources (citation) : @dgct-donnees-ouvertes, @wb-msip-1992, @wb-mdp2-1997, @wb-pforr-pad-2014, @ins-cnat-2015
 # fiches : sources/finances-locales-communes.md, sources/finances-locales-banque-mondiale.md, docs/croissances-revenus-prix.md
 # méthode/hypothèses : DEUX SOURCES, GARDÉES TOUTES DEUX SUR 2018-2019 (colonne `retenu` : DGCT jusqu'en 2019, somme des communes ensuite). Les recettes concordent à l'arrondi près ; LES DÉPENSES NON (titre 1 : +1,7 MD en 2018, +7,2 MD en 2019 ; titre 2 : +0,6 et +5,9), écart non expliqué, figé dans les tests. 2021 = SITUATION AU 25/12/2021, non définitive (droits et redevances 54,8 MD contre 90-114 les autres années). 2023 = PROVISOIRE (arrêté au 10/01/2024). IMPÔTS UN À UN (TIB, TNB, TCL, taxe hôtelière, marchés) VIDES EN 2020-2021 : fichiers par commune sans détail d'article ; rien n'est interpolé. Le FCCL est supprimé au 1er janvier 2018 mais la DGCT garde l'intitulé « subventions annuelles » en 2018-2019 : rupture de nature ; réserve à 18 % jusqu'en 2017, 15 % ensuite. Les recettes du titre 2 comprennent l'épargne et les excédents reportés du titre 1 : T1 + T2 n'est pas un total consolidé. Recettes fiscales = catégories 1 et 2 (nomenclature 2018-2022), qui exclut les catégories 3-4 rangées parmi les recettes fiscales en 2023. PÉRIMÈTRE NON CONSTANT : 264 communes en 2012, 350 à partir de 2016-2017. Montants courants., SÉRIES SÉPARÉES, JAMAIS FUSIONNÉES entre elles ni avec la série DGCT : périmètres et nomenclatures différents, sources primaires tunisiennes non publiées. Valeurs SAISIES depuis la page indiquée, lues à l'image pour 1992 (couche OCR fautive : 2 561 et non 2 661) et 1997. LA LIGNE TL/TIB MANQUE AU TABLEAU IMPRIMÉ DE 1997 : résidus des totaux publiés comme `residu_calcule`, jamais comme TL. FCCL 1990 : 82 (1992) contre 50,8 (1997), vraisemblablement fonds total contre quote-part des communes (indices : 63 % des transferts aux communes, 47 % des budgets de fonctionnement en 1988) — NON TRANCHÉ. 1990-1991 de 1992 probablement estimations de mission. PAD 2014 contre DGCT 2008-2012 : recettes T1 concordantes, écarts de 10-14 MD sur dépenses T1 et ressources T2 ; dépenses T2 2012 dépassent de 10 MD investissements + remboursement., Valeurs lues à l'image ; 1990-1991 vraisemblablement estimées par la mission. Série séparée, jamais fusionnée avec les autres., Valeurs lues à l'image ; la ligne de la taxe locative manque au tableau imprimé. Série séparée, jamais fusionnée avec les autres., LES NIVEAUX NE SE COMPARENT PAS D'UNE ÉDITION À L'AUTRE : ils changent de base (la base 1997 est d'environ 10 % au-dessus de la base 1983, la base 2015 d'environ 6 % au-dessus de la base 1997). Contrôles : huit valeurs lues à la main ; dans chaque édition, le taux calculé sur les niveaux lus redonne le taux imprimé à 0,1 point près ; chaque valeur d'UNdata de même base se retrouve dans l'une des éditions à 0,1 % près. L'édition 2015-2020 porte six colonnes. Voir `pib_nominal_croissance.csv` pour une série de taux.
-# note : Le fonds commun des collectivités locales et la dotation qui lui succède, en millions de dinars courants et en % du PIB, 1985-2023
+# note : Le fonds commun des collectivités locales, puis les subventions annuelles du budget de l'État, en millions de dinars courants et en % du PIB, 1985-2023
 Année,Grandeur,Source,Montant (MD),% du PIB,Statut
 2008,Fonds commun : crédit global,"DGCT, agrégats publiés",162.0,0.293,definitif
 2008,Fonds commun : quote-part des communes,"DGCT, agrégats publiés",114.0,0.206,definitif
@@ -45,16 +45,16 @@ Année,Grandeur,Source,Montant (MD),% du PIB,Statut
 2017,Fonds commun : quote-part des communes,"DGCT, agrégats publiés",278.0,0.273,definitif
 2017,Fonds commun : quote-part des conseils régionaux,"DGCT, agrégats publiés",45.0,0.044,definitif
 2017,Fonds commun : réserve,"DGCT, agrégats publiés",71.0,0.07,definitif
-2018,Fonds commun : crédit global,"DGCT, agrégats publiés",440.0,0.389,definitif
-2018,Fonds commun : quote-part des communes,"DGCT, agrégats publiés",333.0,0.295,definitif
-2018,Fonds commun : quote-part des conseils régionaux,"DGCT, agrégats publiés",41.0,0.036,definitif
-2018,Fonds commun : réserve,"DGCT, agrégats publiés",66.0,0.058,definitif
-2019,Fonds commun : crédit global,"DGCT, agrégats publiés",480.0,0.39,definitif
-2019,Fonds commun : quote-part des communes,"DGCT, agrégats publiés",363.0,0.295,definitif
-2019,Fonds commun : quote-part des conseils régionaux,"DGCT, agrégats publiés",45.0,0.037,definitif
-2019,Fonds commun : réserve,"DGCT, agrégats publiés",72.0,0.059,definitif
-2022,Dotation annuelle aux communes (fonctionnement et investissement),Somme des budgets des communes,590.6,0.424,definitif
-2023,Dotation annuelle aux communes (fonctionnement et investissement),Somme des budgets des communes,611.2,0.408,provisoire_au_2024-01-10
+2018,Subventions annuelles : crédit global,"DGCT, agrégats publiés",440.0,0.389,definitif
+2018,Subventions annuelles : part des communes,"DGCT, agrégats publiés",333.0,0.295,definitif
+2018,Subventions annuelles : part des conseils régionaux,"DGCT, agrégats publiés",41.0,0.036,definitif
+2018,Subventions annuelles : ligne que la source intitule encore « réserve »,"DGCT, agrégats publiés",66.0,0.058,definitif
+2019,Subventions annuelles : crédit global,"DGCT, agrégats publiés",480.0,0.39,definitif
+2019,Subventions annuelles : part des communes,"DGCT, agrégats publiés",363.0,0.295,definitif
+2019,Subventions annuelles : part des conseils régionaux,"DGCT, agrégats publiés",45.0,0.037,definitif
+2019,Subventions annuelles : ligne que la source intitule encore « réserve »,"DGCT, agrégats publiés",72.0,0.059,definitif
+2022,Subvention annuelle : quote-parts inscrites aux budgets des communes,Somme des budgets des communes,590.6,0.424,definitif
+2023,Subvention annuelle : quote-parts inscrites aux budgets des communes,Somme des budgets des communes,611.2,0.408,provisoire_au_2024-01-10
 2002,Fonds commun (ligne du rapport),"Banque mondiale, document de 2014",86.0,0.287,publie
 2003,Fonds commun (ligne du rapport),"Banque mondiale, document de 2014",90.0,0.28,publie
 2004,Fonds commun (ligne du rapport),"Banque mondiale, document de 2014",92.0,0.261,publie

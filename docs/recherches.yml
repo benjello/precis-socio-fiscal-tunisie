@@ -1088,6 +1088,49 @@
     resultat: aucun
   a_faire: [elargir avec le terme المدخر (titres_like), plein texte 2014-2017]
 
+- id: r-fl-criteres-subventions-apres-2021
+  objet: arrêté modifiant ou remplaçant, après celui du 29 juin 2021, l'arrêté conjoint du 22 juin 2018 fixant les critères de répartition des subventions annuelles du budget de l'État entre les collectivités locales (loi de finances pour 2018, art. 11, § 3 ; loi de finances pour 2021, art. 13, § 5)
+  ou: [precis/fr/finances_locales/_transferts.qmd#sec-fl-transferts-etat-du-droit]
+  requetes:
+    titres_fts: [subventions AND annuelles AND budget AND collectivites]
+    titres_like:
+    - '%subventions annuelles du budget%'
+    - '%criteres de repartition%'
+    - '%مقاييس توزيع%'
+    - '%الدعم المالي السنوي%'
+    - '%مبالغ الدعم%'
+    plein_texte: [subventions annuelles du budget, الدعم المالي السنوي]
+    depuis: 2021-07-10
+  passes:
+  - date: 2026-10-09
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'titres FR et AR de jort_cache (FTS et LIKE) jusqu''à la dernière publication indexée, 2 octobre 2026 : seuls les arrêtés de 2019 et 2021. Plein texte par un script de circonstance (pdftotext, texte arabe normalisé, motifs fixes ; non par recherches.py) sur les fascicules FR et AR du corpus local, 2021 à 2026 jusqu''au n° 97 du 2 octobre 2026, 1 578 fichiers : les deux termes de la fiche, plus deux conditions composées (« 22 juin 2018 » et « critères de répartition » dans le même fascicule ; leur équivalent arabe). Seul le n° 58 de 2021 répond, dans les deux langues : le détecteur retrouve le positif connu. Lacunes : fascicules sans couche texte dans aucune édition présente, non lus — 2022 n° 35, 91, 92 ; 2024 n° 120, 125 ; 2025 n° 67, 70. Numéros absents du corpus, existence non vérifiée sur pist.tn — 2022 n° 132 ; 2023 n° 122 ; 2026 n° 58. Quatorze fichiers « fr » sont en fait l''édition arabe : pour eux seule l''édition arabe vaut. pist.tn non sondé. Une première tentative de balayage, au motif mal formé, n''a rien testé et n''est pas comptée. Note : docs/notes/finances-locales-transferts-budgets-lectures-2026-10-09.md, Q7.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - océriser 2022 n° 35 91 92 puis 2024 n° 120 125 puis 2025 n° 67 70
+  - relancer --sonder-pist pour 2022 n° 132 et 2023 n° 122 et 2026 n° 58
+
+- id: r-fl-decret-fonds-appui-decentralisation
+  objet: décret gouvernemental fixant les conditions d'application de la répartition des crédits du fonds d'appui à la décentralisation, de péréquation, de régularisation et de solidarité entre les collectivités locales (loi de finances pour 2021, art. 13, § 4 ; code des collectivités locales, art. 150)
+  ou: [precis/fr/finances_locales/_transferts.qmd#sec-fl-transferts-etat-du-droit]
+  requetes:
+    titres_fts: [decentralisation AND fonds]
+    titres_like: ['%appui a la decentralisation%', '%perequation%', '%دعم اللامركزية%']
+    plein_texte: ['appui à la décentralisation, de péréquation', صندوق دعم اللامركزية]
+    depuis: 2020-12-25
+  passes:
+  - date: 2026-10-09
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'titres FR et AR de jort_cache jusqu''au 2 octobre 2026 : seule la notice de l''article 13 de la loi n° 2020-46 répond. Plein texte par le même script de circonstance sur les fascicules FR et AR de 2020 à 2026, jusqu''au n° 97 du 2 octobre 2026 : répondent le n° 128 de 2020 (la loi de finances pour 2021, FR et AR — positif connu retrouvé), le n° 9 de 2020 (décret gouvernemental n° 2020-52, nomenclature budgétaire des communes, qui nomme le fonds) et le n° 96 de 2026 (décret-loi n° 2026-4, art. 134, qui maintient et renomme le fonds et renvoie ses critères à un arrêté conjoint). Aucun décret d''application. Lacunes : les mêmes fascicules sans couche texte et numéros absents que la fiche r-fl-criteres-subventions-apres-2021 ; les tableaux des lois de finances de 2022 à 2026 ne répondent pas au nom du fonds, ce qui laisse penser qu''ils sont en image — non vérifié.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - océriser les fascicules sans couche texte
+  - lire les tableaux des comptes et fonds spéciaux des lois de finances de 2021 à 2026 à l'image pour le montant du fonds
+
 - id: r-fl-loi-competences-partagees
   objet: loi fixant les conditions et procédures d'exercice des compétences partagées (code des collectivités locales, art. 13, al. 2) ou loi de transfert de compétences (art. 16)
   ou: [precis/fr/finances_locales/_competences.qmd#sec-fl-comp-categories]

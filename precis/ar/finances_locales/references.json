@@ -953,7 +953,7 @@
     {
       "id": "loi2000-60",
       "type": "legislation",
-      "title": "Loi n° 2000-60 du 13 juin 2000, modifiant la loi n° 75-36 du 13 mai 1975, relative au fonds commun des collectivités locales",
+      "title": "Loi n° 2000-60 du 13 juin 2000, modifiant la loi n° 75-36 du 14 mai 1975, relative au fonds commun des collectivités locales",
       "title-short": "Loi n° 2000-60 du 13 juin 2000",
       "container-title": "Journal officiel de la République tunisienne",
       "issue": "48",
@@ -967,7 +967,7 @@
           ]
         ]
       },
-      "note": "citation-key: loi2000-60\nJORT n° 48 du 16 juin 2000, FR p. 1461, AR p. 1489 (lue à l'image). Entrée en vigueur le 1er janvier 2001 (art. 2). L'intitulé du texte date la loi n° 75-36 du « 13 mai 1975 » ; elle est du 14 mai.",
+      "note": "citation-key: loi2000-60\nJORT n° 48 du 16 juin 2000, FR p. 1461, AR p. 1489 (lue à l'image). Entrée en vigueur le 1er janvier 2001 (art. 2). Ni rubrique ni exposé ; travaux préparatoires : séance de la chambre des députés du 8 juin 2000. Intitulé relu à l'image le 9 octobre 2026 : le fascicule imprime « loi n° 75-36 du 14 mai 1975 » (l'entrée portait « 13 mai » par erreur).",
       "URL": "https://www.pist.tn/jort/2000/2000A/Ja04800.pdf"
     },
     {
@@ -1968,6 +1968,66 @@
       },
       "note": "citation-key: arrete2023-dpm-redevance\nJORT n° 10 du 31 janvier 2023, édition arabe p. 282 (pagination arabe). Intitulé français : notre traduction, d'après l'arabe « يتعلق بضبط طريقة وقاعدة احتساب ومراجعة المعلوم السنوي للإشغال الوقتي للملك العمومي البحري ». Cité pour ses seuls visas, qui mentionnent ensemble les art. 139 et 140 de la loi organique n° 2018-29, l'art. 86 du code de la fiscalité locale et le décret gouvernemental n° 2016-805 (note docs/notes/finances-locales-impots-lectures-2026-10-09.md, § D.2). Pas d'URL française.",
       "URL": "https://www.pist.tn/jort/2023/2023A/Ja0102023.pdf"
+    },
+    {
+      "id": "arrete2018-criteres-subventions",
+      "type": "legislation",
+      "title": "Arrêté du ministre des finances et du ministre des affaires locales et de l'environnement du 22 juin 2018, fixant les critères de répartition des subventions annuelles du budget de l'État entre les collectivités locales",
+      "title-short": "Arrêté du 22 juin 2018",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "51",
+      "page": "3098",
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            6,
+            22
+          ]
+        ]
+      },
+      "note": "citation-key: arrete2018-criteres-subventions\nJORT n° 51 du 26 juin 2018, ÉDITION ARABE, p. 3098 (page 50 du PDF), lue à l'image en entier. L'édition française de ce numéro n'est pas en ligne sur pist.tn (404 le 9 octobre 2026) ; intitulé français repris des arrêtés modificatifs de 2019 et 2021. Pris en application de l'art. 11 de la loi n° 2017-66. Sans clause d'effet : déposé le 2 juillet 2018, exécutoire le 7 juillet 2018. Note : docs/notes/finances-locales-transferts-budgets-lectures-2026-10-09.md, Q7.",
+      "URL": "https://www.pist.tn/jort/2018/2018A/Ja0512018.pdf"
+    },
+    {
+      "id": "arrete2019-criteres-subventions",
+      "type": "legislation",
+      "title": "Arrêté du ministre des finances et du ministre des affaires locales et de l'environnement du 29 mars 2019, modifiant l'arrêté du ministre des finances et le ministre des affaires locales et de l'environnement du 22 juin 2018, fixant les critères de répartition des subventions annuelles du budget de l'Etat entre les collectivités locales",
+      "title-short": "Arrêté du 29 mars 2019",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "28",
+      "page": "1021",
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            29
+          ]
+        ]
+      },
+      "note": "citation-key: arrete2019-criteres-subventions\nJORT n° 28 du 5 avril 2019, édition française p. 918-919 (dispositif lu à l'image, p. 919), édition arabe p. 1021. Aucun pourcentage modifié : années de référence de l'art. 3 ; les deux éditions ne disent pas la même chose. Sans clause d'effet : déposé le 6 avril 2019, exécutoire le 11 avril 2019. Note : docs/notes/finances-locales-transferts-budgets-lectures-2026-10-09.md, Q7.",
+      "URL": "https://www.pist.tn/jort/2019/2019A/Ja0282019.pdf"
+    },
+    {
+      "id": "arrete2021-criteres-subventions",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie, des finances et de l'appui à l'investissement et du ministre des affaires locales et de l'environnement du 29 juin 2021, portant modification de l'arrêté du ministre des finances et du ministre des affaires locales et de l'environnement du 22 juin 2018, portant fixation des critères de répartition des subventions annuelles du budget de l'Etat entre les collectivités locales",
+      "title-short": "Arrêté du 29 juin 2021",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "58",
+      "page": "1926",
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            29
+          ]
+        ]
+      },
+      "note": "citation-key: arrete2021-criteres-subventions\nJORT n° 58 du 9 juillet 2021, édition française p. 1841-1842 (dispositif lu à l'image, p. 1842), édition arabe p. 1926. Vise l'art. 13 de la loi n° 2020-46. Sans clause d'effet : déposé le 9 juillet 2021, exécutoire le 14 juillet 2021. Note : docs/notes/finances-locales-transferts-budgets-lectures-2026-10-09.md, Q7.",
+      "URL": "https://www.pist.tn/jort/2021/2021A/Ja0582021.pdf"
     }
   ]
 }
