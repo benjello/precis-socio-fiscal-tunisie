@@ -1,0 +1,65 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-09
+# séries (tunisia_data) : cc-grille-batiment-salaire-base-personnel-administratif-technique, ipc-longue-periode, bct-ipc-base2015
+# sources (citation) : @avenant5-btp-1996, @avenant6-btp-1999, @avenant7-btp-2002, @avenant8-btp-2006, @avenant9-btp-2009, @avenant10-btp-2011, @avenant11-btp-2013, @avenants-2014-textile-btp, @avenant13-btp-2016, @avenant14-btp-2017, @avenant15-btp-2018, @avenant16-btp-2022, @paie-tunisie-2022-reproduction-jort-132, @decret2026-68, @bct-ra, @ins-annuaire
+# fiches : sources/bct-archives.md
+# méthode/hypothèses : Les grilles de l'avenant n° 16 (1er décembre 2021, 1er janvier 2023, 1er janvier 2024) sont celles des pages 3712 à 3714 de l'édition arabe du Journal officiel n° 132 du 2 décembre 2022, telles qu'un site tiers les reproduit : toutes leurs cases en viennent., DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Convention collective nationale, puis sectorielle, du bâtiment et des travaux publics, personnel administratif et technique : salaire de base du bas et du haut de la grille, en dinars courants par mois à chaque date d'effet (1996-2024) et en dinars de 2025 par mois, en moyenne de l'année (1997-2025)
+Case de la grille,Année,"Salaire de base, moyenne de l'année (dinars courants par mois)",Indice des prix à la consommation (base 100 en 1970),Salaire de base (dinars de 2025 par mois)
+"Catégorie 1, échelon 1",1997,180.032,576.5,653.5
+"Catégorie 1, échelon 1",1998,189.032,594.5,665.4
+"Catégorie 1, échelon 1",1999,197.365,610.5,676.5
+"Catégorie 1, échelon 1",2000,205.365,628.3,684.0
+"Catégorie 1, échelon 1",2001,213.365,640.5,697.1
+"Catégorie 1, échelon 1",2002,221.032,658.6,702.3
+"Catégorie 1, échelon 1",2003,228.799,676.5,707.8
+"Catégorie 1, échelon 1",2004,236.965,701.0,707.4
+"Catégorie 1, échelon 1",2005,245.279,715.3,717.6
+"Catégorie 1, échelon 1",2006,253.599,745.0,712.4
+"Catégorie 1, échelon 1",2007,262.196,770.6,712.0
+"Catégorie 1, échelon 1",2008,274.537,808.4,710.7
+"Catégorie 1, échelon 1",2009,288.681,837.0,721.8
+"Catégorie 1, échelon 1",2010,302.825,873.9,725.2
+"Catégorie 1, échelon 1",2011,318.479,904.8,736.6
+"Catégorie 1, échelon 1",2012,336.906,955.1,738.2
+"Catégorie 1, échelon 1",2013,343.385,1013.5,709.0
+"Catégorie 1, échelon 1",2014,357.12,1069.0,699.1
+"Catégorie 1, échelon 1",2015,371.268,1119.5,694.0
+"Catégorie 1, échelon 1",2016,395.473,1161.2,712.7
+"Catégorie 1, échelon 1",2017,425.336,1223.0,727.8
+"Catégorie 1, échelon 1",2018,452.301,1314.2,720.2
+"Catégorie 1, échelon 1",2019,481.701,1403.5,718.2
+"Catégorie 1, échelon 1",2020,491.704,1482.6,694.0
+"Catégorie 1, échelon 1",2021,494.367,1567.2,660.1
+"Catégorie 1, échelon 1",2022,523.665,1697.4,645.6
+"Catégorie 1, échelon 1",2023,559.012,1855.7,630.4
+"Catégorie 1, échelon 1",2024,596.745,1986.0,628.8
+"Catégorie 1, échelon 1",2025,596.745,2092.7,596.7
+"Catégorie 19, échelon 11",1997,620.269,576.5,2251.6
+"Catégorie 19, échelon 11",1998,645.269,594.5,2271.4
+"Catégorie 19, échelon 11",1999,669.602,610.5,2295.3
+"Catégorie 19, échelon 11",2000,693.602,628.3,2310.2
+"Catégorie 19, échelon 11",2001,717.602,640.5,2344.6
+"Catégorie 19, échelon 11",2002,741.602,658.6,2356.5
+"Catégorie 19, échelon 11",2003,766.269,676.5,2370.4
+"Catégorie 19, échelon 11",2004,791.935,701.0,2364.2
+"Catégorie 19, échelon 11",2005,817.149,715.3,2390.7
+"Catégorie 19, échelon 11",2006,841.969,745.0,2365.1
+"Catégorie 19, échelon 11",2007,868.114,770.6,2357.5
+"Catégorie 19, échelon 11",2008,923.717,808.4,2391.2
+"Catégorie 19, échelon 11",2009,993.717,837.0,2484.5
+"Catégorie 19, échelon 11",2010,1063.717,873.9,2547.3
+"Catégorie 19, échelon 11",2011,1146.274,904.8,2651.2
+"Catégorie 19, échelon 11",2012,1219.057,955.1,2671.1
+"Catégorie 19, échelon 11",2013,1240.642,1013.5,2561.7
+"Catégorie 19, échelon 11",2014,1286.402,1069.0,2518.3
+"Catégorie 19, échelon 11",2015,1333.535,1119.5,2492.8
+"Catégorie 19, échelon 11",2016,1414.176,1161.2,2548.6
+"Catégorie 19, échelon 11",2017,1513.667,1223.0,2590.1
+"Catégorie 19, échelon 11",2018,1603.503,1314.2,2553.4
+"Catégorie 19, échelon 11",2019,1701.45,1403.5,2537.0
+"Catégorie 19, échelon 11",2020,1734.777,1482.6,2448.7
+"Catégorie 19, échelon 11",2021,1743.65,1567.2,2328.3
+"Catégorie 19, échelon 11",2022,1841.256,1697.4,2270.1
+"Catégorie 19, échelon 11",2023,1959.018,1855.7,2209.2
+"Catégorie 19, échelon 11",2024,2084.729,1986.0,2196.7
+"Catégorie 19, échelon 11",2025,2084.729,2092.7,2084.7
