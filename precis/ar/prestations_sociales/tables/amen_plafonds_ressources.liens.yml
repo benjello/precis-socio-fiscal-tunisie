@@ -1,0 +1,12 @@
+- libelle: سقف الدخل الشهري — فرد
+  parametre: parameters/prestations/non_contributives/amen_social/eligibilite/un_membre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.non_contributives.amen_social.eligibilite.un_membre/table/
+- libelle: سقف الدخل الشهري — شخصان
+  parametre: parameters/prestations/non_contributives/amen_social/eligibilite/deux_membres.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.non_contributives.amen_social.eligibilite.deux_membres/table/
+- libelle: سقف الدخل الشهري — 3 أو 4 أشخاص
+  parametre: parameters/prestations/non_contributives/amen_social/eligibilite/trois_quatre_membres.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.non_contributives.amen_social.eligibilite.trois_quatre_membres/table/
+- libelle: سقف الدخل الشهري — 5 أشخاص فأكثر
+  parametre: parameters/prestations/non_contributives/amen_social/eligibilite/plus_de_cinq_membres.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.non_contributives.amen_social.eligibilite.plus_de_cinq_membres/table/

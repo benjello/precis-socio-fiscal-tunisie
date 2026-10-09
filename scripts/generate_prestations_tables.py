@@ -27,6 +27,7 @@ ponctuelles de l'AMEN social sont désormais générées avec leur référence �
 from __future__ import annotations
 
 import sys
+from fractions import Fraction
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -69,7 +70,12 @@ MOTS = {
         "age_min": "Âge minimal", "age_max": "Âge maximal",
         "age_etudiant": "Âge maximal en études, apprentissage ou formation",
         "amen_transfert": "Base mensuelle du transfert AMEN",
-        "afnc": "Allocation familiale non contributive, par enfant",
+        "afnc": "Allocation familiale non contributive, par enfant de moins de 6 ans",
+        "afnc_6_18": "Allocation familiale, par enfant de 6 à 18 ans",
+        "menage": "Composition du ménage", "plafond_revenu": "Plafond de revenu mensuel",
+        "menage1": "Individu", "menage2": "2 personnes", "menage34": "3 ou 4 personnes",
+        "menage5": "5 personnes et plus",
+        "plafond_menage": "Plafond de revenu mensuel — {menage}",
     },
     "ar": {
         "effet": "بداية السريان", "date_etat": "تاريخ الحالة", "texte": "النصّ",
@@ -98,15 +104,22 @@ MOTS = {
         "age_min": "السنّ الدنيا", "age_max": "السنّ القصوى",
         "age_etudiant": "السنّ القصوى في حالة الدراسة أو التمهين أو التكوين",
         "amen_transfert": "القاعدة الشهرية لتحويل الأمان الاجتماعي",
-        "afnc": "المنحة العائلية غير المساهماتية عن كلّ طفل",
+        "afnc": "المنحة العائلية غير المساهماتية عن كلّ طفل دون 6 سنوات",
+        "afnc_6_18": "المنحة العائلية عن كلّ طفل بين 6 سنوات و18 سنة",
+        "menage": "تركيبة الأسرة", "plafond_revenu": "سقف الدخل الشهري",
+        "menage1": "فرد", "menage2": "شخصان", "menage34": "3 أو 4 أشخاص",
+        "menage5": "5 أشخاص فأكثر",
+        "plafond_menage": "سقف الدخل الشهري — {menage}",
     },
 }
 
 UNITES = {
     "fr": {"dinar": " D", "aucune": "aucune",
-           "smig": "{n} fois le salaire minimum garanti", "vide": "—"},
+           "smig": "{n} fois le salaire minimum garanti",
+           "part_smig": "{n} × salaire minimum", "vide": "—"},
     "ar": {"dinar": " د", "aucune": "لا شيء",
-           "smig": "{n} ضعف الأجر الأدنى المضمون", "vide": "—"},
+           "smig": "{n} ضعف الأجر الأدنى المضمون",
+           "part_smig": "{n} × الأجر الأدنى", "vide": "—"},
 }
 
 def formateurs(langue):
@@ -128,8 +141,22 @@ def formateurs(langue):
     def coefficient(v):
         return u["vide"] if v is None else f"× {int(v)}"
 
+    def part_smig(v):
+        """Un multiple du salaire minimum qui peut être une fraction : le texte dit « deux
+        tiers », le paramètre porte 0,666… — la case rend 2/3, non un développement décimal."""
+        if v is None:
+            return u["vide"]
+        fraction = Fraction(float(v)).limit_denominator(12)
+        if fraction.denominator == 1:
+            n = str(fraction.numerator)
+        elif fraction.denominator == 3:
+            n = f"{fraction.numerator}/{fraction.denominator}"
+        else:
+            n = f"{float(v):g}".replace(".", ",")
+        return u["part_smig"].format(n=n)
+
     # `montant` : les prestations s'écrivent en millimes, mais seulement s'il y en a.
-    return f.montant, f.taux, f.entier, f.duree("mois"), ans, smig, coefficient
+    return f.montant, f.taux, f.entier, f.duree("mois"), ans, smig, coefficient, part_smig
 
 
 # Clés de citation du précis, par date d'effet : elles raccrochent chaque rupture à la
@@ -151,19 +178,20 @@ CLES_CRECHE = {
 CLES_SALAIRE_UNIQUE = dict.fromkeys(
     (f"{AF}/salaire_unique/enf{i}.yaml" for i in (1, 2, 3)), "loi80-36, art. 1"
 )
+# Les textes de mai 2020 n'ont pas de clause d'effet : ils sont datés du 25 mai 2020, jour où
+# ils deviennent exécutoires (fascicule déposé le 20 mai, cinq jours, loi n° 93-64, art. 2).
 CLES_AMEN = {
-    "2020-05-20": "arrete-2020-05-19-transferts, art. 2",
+    "2020-05-25": "arrete-2020-05-19-transferts, art. 2",
     "2022-01-01": "arrete-2022-04-01-transferts, art. 1",
     "2023-01-01": "arrete-2023-04-03-transferts, art. 1-2",
     "2024-01-01": "arrete-2024-02-28-transferts, art. 1-2",
     "2025-01-01": "arrete-2025-01-29-transferts, art. 1-2",
+    "2026-01-01": "arrete-2026-04-21-transferts, art. 1-2",
 }
 CLES_SUPPLEMENT = {
-    "2020-05-20": "arrete-2020-05-19-transferts, art. 2",
+    "2020-05-25": "arrete-2020-05-19-transferts, art. 2",
     "2022-02-01": "arrete-2022-04-01-transferts, art. 1",
 }
-# L'allocation familiale non contributive naît le 8 avril 2022, entre deux revalorisations
-# du transfert : sa ligne a sa propre clé.
 CLE_APPUI = "arrete-2022-12-08-appui-occasionnel, art. 4"
 CLES_APPUI = dict.fromkeys(
     (
@@ -175,14 +203,29 @@ CLES_APPUI = dict.fromkeys(
     ),
     CLE_APPUI,
 )
+# L'allocation familiale des moins de six ans naît le 8 avril 2022 et celle des 6 à 18 ans
+# reçoit son montant le 9 novembre 2025, l'une et l'autre entre deux revalorisations du
+# transfert : leurs lignes ont leur propre clé.
 CLES_AMEN_ET_AFNC = dict(
-    CLES_AMEN, **{"2022-04-08": "arrete-2022-04-01-allocation-familiale, art. 2-3"}
+    CLES_AMEN, **{
+        "2022-04-08": "arrete-2022-04-01-allocation-familiale, art. 2-3",
+        "2025-11-09": "arrete-2025-11-03-allocation-familiale-6-18, art. 2",
+    }
+)
+# Plafonds de ressources de l'article 5 du décret gouvernemental n° 2020-317. Les mêmes
+# plafonds majorés pour un membre lourdement handicapé (`eligibilite/handicap_lourd/`) ne
+# sont PAS engendrés : la portée de la majoration attend une lecture du documentaliste.
+ELIGIBILITE = f"{NC}/amen_social/eligibilite"
+CLES_ELIGIBILITE = dict.fromkeys(
+    (f"{ELIGIBILITE}/{nom}.yaml" for nom in
+     ("un_membre", "deux_membres", "trois_quatre_membres", "plus_de_cinq_membres")),
+    "decret-gouv-2020-317-amen, art. 5",
 )
 
 
 def tableaux(langue):
     m = MOTS[langue]
-    dinars, taux, entier, mois, ans, smig, coefficient = formateurs(langue)
+    dinars, taux, entier, mois, ans, smig, coefficient, part_smig = formateurs(langue)
     entetes_verticales = (m["parametre"], m["valeur"], m["texte"])
 
     def af_evolution():
@@ -226,7 +269,7 @@ def tableaux(langue):
                 (f"{base}/scolarite/rentree_universitaire.yaml",
                  m["rentree_universitaire"], dinars),
             ],
-            "2022-12-09",
+            "2022-12-14",  # jour où l'arrêté du 8 décembre 2022 devient exécutoire
             cles=CLES_APPUI,
             entetes=(m["occasion"], m["montant"], m["texte"]),
         )
@@ -246,6 +289,24 @@ def tableaux(langue):
         )
         if df is not None:
             df[m["texte"]] = "—"
+        return df
+
+    def amen_plafonds_ressources():
+        """Plafonds de ressources de l'Amen social selon la taille du ménage (art. 5)."""
+        lignes = [
+            ("un_membre", "menage1"), ("deux_membres", "menage2"),
+            ("trois_quatre_membres", "menage34"), ("plus_de_cinq_membres", "menage5"),
+        ]
+        df = ot.tableau_a_la_date(
+            [(f"{ELIGIBILITE}/{nom}.yaml", m[cle], part_smig) for nom, cle in lignes],
+            "2020-05-25", cles=CLES_ELIGIBILITE, colonne_effet=m["effet"], langue=langue,
+            entetes=(m["menage"], m["plafond_revenu"], m["texte"]),
+        )
+        # « Individu » ne nomme pas seul la grandeur : le lien vers la base législative
+        # reçoit un libellé explicite.
+        for nom, cle in lignes:
+            ot.releve_note(f"{ELIGIBILITE}/{nom}.yaml",
+                           m["plafond_menage"].format(menage=m[cle]))
         return df
 
     return {
@@ -270,6 +331,7 @@ def tableaux(langue):
             "1994-10-01", cles=CLES_CRECHE, entetes=entetes_verticales,
         ),
         "pnafn_allocation.md": pnafn_allocation,
+        "amen_plafonds_ressources.md": amen_plafonds_ressources,
         "amen_base.md": lambda: ot.tableau_evolution_datee(
             [(f"{NC}/amen_social/allocation_base.yaml", m["amen_base"], dinars)],
             cles=CLES_AMEN, langue=langue,
@@ -291,6 +353,7 @@ def tableaux(langue):
             [
                 (f"{NC}/amen_social/allocation_base.yaml", m["amen_transfert"], dinars),
                 (f"{NC}/allocation_familiale.yaml", m["afnc"], dinars),
+                (f"{NC}/allocation_familiale_6_18.yaml", m["afnc_6_18"], dinars),
             ],
             cles=CLES_AMEN_ET_AFNC, langue=langue,
             colonne_periode=m["date_etat"], colonne_texte=m["texte"],
