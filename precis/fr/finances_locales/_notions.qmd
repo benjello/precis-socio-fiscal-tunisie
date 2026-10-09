@@ -1,36 +1,45 @@
 # Les notions {#sec-fl-notions}
 
-Ce chapitre définit les notions dont le volume se sert, avant tout texte tunisien. Il ne décrit pas le droit en vigueur : il fixe le sens des mots, pour que les chapitres suivants puissent y renvoyer au lieu de les redéfinir. Les définitions sont celles de Bernard Dafflon et Guy Gilbert, dans l'ouvrage qu'ils ont consacré à la décentralisation en Tunisie [@dafflon-gilbert-2018]. Ils les tirent, pour les principes, de la Charte européenne de l'autonomie locale du Conseil de l'Europe, de 1986, et précisent qu'elles peuvent être nuancées pour mieux s'adapter à un pays : ce qui compte, selon eux, est que les acteurs de la décentralisation s'accordent d'abord sur le sens des mots [@dafflon-gilbert-2018, p. 17].
+Ce chapitre fixe le sens des notions dont le volume se sert, pour que les chapitres suivants y renvoient au lieu de les redéfinir. Les définitions sont celles de Bernard Dafflon et Guy Gilbert, dans l'ouvrage qu'ils ont consacré à la décentralisation en Tunisie [@dafflon-gilbert-2018]. Ils les tirent, pour les principes, de la Charte européenne de l'autonomie locale du Conseil de l'Europe, de 1986, et précisent qu'elles peuvent être nuancées selon le pays : ce qui compte, selon eux, est que les acteurs de la décentralisation s'accordent d'abord sur le sens des mots [@dafflon-gilbert-2018, p. 17].
 
-Les mots du droit tunisien ne recouvrent pas toujours ces notions. Les auteurs relèvent, par exemple, que les textes tunisiens appellent « taxe » des prélèvements qui sont des impôts au sens des finances publiques [@dafflon-gilbert-2018, p. 151]. Chaque chapitre du volume confronte donc le terme employé par le texte à la notion définie ici.
+Les mots du droit tunisien ne recouvrent pas toujours ces notions. Les auteurs relèvent, par exemple, que les textes tunisiens appellent « taxe » des prélèvements qui sont des impôts au sens des finances publiques [@dafflon-gilbert-2018, p. 151]. Chaque chapitre confronte donc le terme du texte à la notion définie ici.
 
-Le chapitre suit l'ordre du volume : décentraliser (@sec-fl-decentraliser), puis le budget local (@sec-fl-budget), les ressources propres (@sec-fl-ressources-propres), les transferts (@sec-fl-notions-transferts), enfin la mesure de ces grandeurs (@sec-fl-mesurer). Les symboles des formules sont récapitulés à la fin du chapitre (@sec-fl-notations).
+Le chapitre suit l'ordre du volume : décentraliser (@sec-fl-decentraliser), puis le budget local (@sec-fl-budget), les ressources propres (@sec-fl-ressources-propres), les transferts (@sec-fl-notions-transferts), enfin la mesure de ces grandeurs (@sec-fl-mesurer). Chaque section donne les définitions, les tableaux et les formules, puis, dans un bloc à déplier, les nuances qu'y ajoutent les auteurs.
 
 ## Décentraliser {#sec-fl-decentraliser}
 
 ### Déconcentration, délégation, dévolution {#sec-fl-trois-volets}
 
-Dafflon et Gilbert définissent la [décentralisation](#g-decentralisation) comme le transfert d'autorité et de responsabilités — compétences, tâches et fonctions — du gouvernement central vers des gouvernements et des autorités de niveau intermédiaire ou local, ou vers des organismes ou des agences presque autonomes [@dafflon-gilbert-2018, p. 17]. Ils distinguent, après les études canadiennes qu'ils citent, trois volets : la déconcentration, la délégation et la dévolution. Le premier s'oppose aux deux autres.
+Dafflon et Gilbert définissent la [décentralisation](#g-decentralisation) comme le transfert d'autorité et de responsabilités — compétences, tâches et fonctions — du gouvernement central vers des autorités de niveau intermédiaire ou local, ou vers des organismes presque autonomes [@dafflon-gilbert-2018, p. 17]. Ils y distinguent trois volets, selon ce que le centre conserve.
 
-- Dans la [déconcentration](#g-deconcentration), l'État central garde ses responsabilités et ses compétences, mais les fait exécuter par des antennes régionales ou locales, qui lui sont hiérarchiquement subordonnées et n'ont pas de marge de manœuvre [@dafflon-gilbert-2018, p. 17].
-- Dans la [délégation](#g-delegation-competences), des compétences sont transférées aux collectivités, mais l'échelon central fixe des normes ou des standards, quantitatifs ou qualitatifs, que la collectivité doit respecter ; elle choisit seulement les modalités de mise en œuvre. Si elle offre davantage que la norme, elle devrait, selon les auteurs, en supporter seule le coût. Ils ajoutent que, lorsque la norme est élevée et les ressources allouées insuffisantes, la délégation devient en fait une déconcentration [@dafflon-gilbert-2018, p. 17-18].
-- Dans la [dévolution](#g-devolution-competences), les collectivités reçoivent des compétences propres, qu'elles exercent avec les pleins pouvoirs et sans tutelle d'un échelon supérieur. Elle suppose, selon les auteurs, que les collectivités disposent de ressources propres, notamment fiscales, dont elles ont la maîtrise au moins à hauteur des compétences dévolues [@dafflon-gilbert-2018, p. 17].
+- **La [déconcentration](#g-deconcentration).** L'État central garde ses compétences et les fait exécuter par des antennes régionales ou locales, qui lui sont subordonnées et n'ont pas de marge de manœuvre [@dafflon-gilbert-2018, p. 17].
+- **La [délégation](#g-delegation-competences).** Des compétences sont transférées aux collectivités, mais le centre fixe des normes, quantitatives ou qualitatives ; la collectivité ne choisit que les modalités de mise en œuvre [@dafflon-gilbert-2018, p. 17-18].
+- **La [dévolution](#g-devolution-competences).** Les collectivités reçoivent des compétences propres, qu'elles exercent avec les pleins pouvoirs et sans tutelle, ce qui suppose des ressources propres, notamment fiscales, dont elles ont la maîtrise à hauteur de ces compétences [@dafflon-gilbert-2018, p. 17].
 
-La décentralisation, dans ce vocabulaire, prend donc deux formes, la délégation et la dévolution ; la déconcentration n'en est pas une.
+La décentralisation prend donc deux formes, la délégation et la dévolution ; la déconcentration n'en est pas une.
 
 ### La collectivité locale et la libre administration {#sec-fl-libre-administration}
 
-Une [collectivité locale](#g-collectivite-locale) s'entend ici d'une entité publique territoriale qui exerce, par des organes élus et sur un budget propre, une part des affaires publiques au profit de ses résidents. C'est le contenu que Dafflon et Gilbert donnent au principe de [libre administration](#g-libre-administration) : le droit et la capacité effective, pour les collectivités, de régler et de gérer une part importante des affaires publiques au profit de leurs résidents, ce qui limite la tutelle de l'État central ; un droit exercé par des conseils ou des assemblées élus au suffrage direct et universel, qui peuvent disposer d'organes exécutifs responsables devant eux [@dafflon-gilbert-2018, p. 16].
+Une [collectivité locale](#g-collectivite-locale) s'entend ici d'une entité publique territoriale qui exerce, par des organes élus et sur un budget propre, une part des affaires publiques au profit de ses résidents. Le principe de [libre administration](#g-libre-administration) lui en reconnaît le droit et la capacité effective, ce qui limite la tutelle de l'État central [@dafflon-gilbert-2018, p. 16]. Il a, pour Dafflon et Gilbert, deux volets [@dafflon-gilbert-2018, p. 18] :
 
-Le principe a, pour les auteurs, deux volets. Le premier tient à l'élection : les compétences dévolues et déléguées sont exercées par une autorité élue au suffrage universel, et l'élection périodique ne suffit pas ; des décisions plus fréquentes doivent porter sur les politiques locales, notamment à l'occasion du budget annuel. Le second tient à la tutelle du centre, exposée avec le budget (@sec-fl-tutelle) [@dafflon-gilbert-2018, p. 18].
-
-Les auteurs placent à côté de la libre administration deux autres principes. La coopération est le droit, pour des collectivités, de s'associer pour exercer ensemble des tâches d'intérêt commun ; ils y voient un complément de la subsidiarité et une protection contre la centralisation [@dafflon-gilbert-2018, p. 16 et 22]. La solidarité, qui demande de corriger les disparités entre territoires, conduit à la péréquation (@sec-fl-perequation).
+- l'élection : les compétences dévolues et déléguées sont exercées par une autorité élue au suffrage direct et universel ;
+- la tutelle du centre, dont les formes sont exposées avec le budget (@sec-fl-tutelle).
 
 ### La subsidiarité, et les fonctions avant les finances {#sec-fl-subsidiarite}
 
-Selon la formule que retiennent Dafflon et Gilbert, la [subsidiarité](#g-subsidiarite) veut que l'exercice des responsabilités publiques incombe, de façon générale, aux autorités les plus proches des citoyens et les plus à même de les remplir, l'attribution d'une responsabilité à une autre autorité devant tenir compte de l'ampleur et de la nature de la tâche et des exigences d'efficacité et d'économie [@dafflon-gilbert-2018, p. 16]. Dans son sens premier, historique, le principe attribue à l'échelon le plus bas toute compétence qui n'a pas encore été attribuée. Les auteurs le jugent « ouvert » : énoncé seul, il ne fournit pas les critères qui permettent d'attribuer une responsabilité à un niveau de gouvernement plutôt qu'à un autre, et doit être précisé [@dafflon-gilbert-2018, p. 19-20].
+La [subsidiarité](#g-subsidiarite) veut que l'exercice des responsabilités publiques incombe, de façon générale, aux autorités les plus proches des citoyens et les plus à même de les remplir, compte tenu de l'ampleur et de la nature de la tâche et des exigences d'efficacité et d'économie [@dafflon-gilbert-2018, p. 16].
 
-Ils en tirent une règle d'ordre, qu'ils résument par trois mots : fonctions, finances, fonctionnaires. On attribue d'abord les tâches aux collectivités ; les finances suivent, à proportion des tâches attribuées ; les élus s'appuient enfin sur une administration formée à les exercer. Décentraliser d'abord des ressources, puis se demander ce qu'elles financeront, inverse selon eux cet ordre [@dafflon-gilbert-2018, p. 25-26 et 29].
+Dafflon et Gilbert y ajoutent une règle d'ordre, en trois mots : fonctions, finances, fonctionnaires. On attribue d'abord les tâches aux collectivités ; les finances suivent, à proportion des tâches ; les élus s'appuient enfin sur une administration formée à les exercer. Décentraliser d'abord des ressources, puis se demander ce qu'elles financeront, inverse selon eux cet ordre [@dafflon-gilbert-2018, p. 25-26 et 29].
+
+:::: {.chronologie-repliable titre="Décentralisation, libre administration et subsidiarité selon Dafflon et Gilbert : délégation qui tourne à la déconcentration, coopération et solidarité, sens historique de la subsidiarité"}
+
+- **L'origine des trois volets.** Les auteurs distinguent la déconcentration, la délégation et la dévolution après les études canadiennes qu'ils citent ; les antennes de la déconcentration sont hiérarchiquement subordonnées à l'État central [@dafflon-gilbert-2018, p. 17].
+- **La délégation qui tourne à la déconcentration.** Si la collectivité offre davantage que la norme, elle devrait, selon les auteurs, en supporter seule le coût. Ils ajoutent que, lorsque la norme est élevée et les ressources allouées insuffisantes, la délégation devient en fait une déconcentration [@dafflon-gilbert-2018, p. 17-18].
+- **Les organes de la libre administration.** Le droit de régler et de gérer une part importante des affaires publiques est exercé par des conseils ou des assemblées élus au suffrage direct et universel, qui peuvent disposer d'organes exécutifs responsables devant eux [@dafflon-gilbert-2018, p. 16]. L'élection périodique ne suffit pas, pour les auteurs : des décisions plus fréquentes doivent porter sur les politiques locales, notamment à l'occasion du budget annuel [@dafflon-gilbert-2018, p. 18].
+- **La coopération et la solidarité.** Les auteurs placent ces deux principes à côté de la libre administration. La coopération est le droit, pour des collectivités, de s'associer pour exercer ensemble des tâches d'intérêt commun ; ils y voient un complément de la subsidiarité et une protection contre la centralisation [@dafflon-gilbert-2018, p. 16 et 22]. La solidarité, qui demande de corriger les disparités entre territoires, conduit à la péréquation (@sec-fl-perequation).
+- **Le sens historique de la subsidiarité.** Dans son sens premier, historique, le principe attribue à l'échelon le plus bas toute compétence qui n'a pas encore été attribuée. Les auteurs le jugent « ouvert » : énoncé seul, il ne fournit pas les critères qui permettent d'attribuer une responsabilité à un niveau de gouvernement plutôt qu'à un autre, et doit être précisé [@dafflon-gilbert-2018, p. 19-20].
+
+::::
 
 ## Le budget local {#sec-fl-budget}
 
@@ -41,7 +50,7 @@ Dafflon et Gilbert décrivent un budget de référence, le « budget décentrali
 | Dépenses : ce que la collectivité fait | Ressources qui devraient les couvrir |
 |---|---|
 | Biens collectifs locaux choisis en propre : les compétences dévolues | Ressources propres : impôts exclusifs ou partagés, et choix entre impôts et redevances d'utilisation |
-| Patrimoine financier : les biens dont la collectivité est propriétaire à titre privé | Rendement de ce patrimoine |
+| [Patrimoine financier](#g-patrimoine-financier) : les biens dont la collectivité est propriétaire à titre privé | Rendement de ce patrimoine |
 | Tâches spécifiques, dévolues ou déléguées | Redevances d'utilisation |
 | Tâches déléguées | Dotations non affectées ou parts aux impôts ; subventions spécifiques, pour les tâches que le centre veut encourager |
 
@@ -49,15 +58,15 @@ Dafflon et Gilbert décrivent un budget de référence, le « budget décentrali
 
 Source : @dafflon-gilbert-2018, p. 64-65, schéma 11.
 
-L'emprunt ne figure pas parmi ces ressources : les auteurs le tiennent pour un moyen de paiement des investissements et non pour un revenu, puisqu'il faudra un jour lever par l'impôt de quoi le rembourser [@dafflon-gilbert-2018, p. 66]. Le [patrimoine financier](#g-patrimoine-financier) s'oppose au patrimoine administratif : le premier, capitaux et immeubles détenus à titre privé, pourrait être vendu sans nuire aux services ; le second, comme un bâtiment d'école, sert à les produire et n'a pas de valeur de marché [@dafflon-gilbert-2018, p. 64].
-
-Quand les ressources attribuées aux collectivités ne correspondent pas aux tâches qui leur sont confiées, les auteurs parlent de [déséquilibre vertical](#g-desequilibre-vertical) : la discordance tient à la répartition entre les niveaux de gouvernement, et vaut pour toutes les collectivités à la fois. Ils le distinguent des déséquilibres locaux, propres à une collectivité — effets de débordement sur ses voisines, besoins ou coûts plus élevés, base fiscale insuffisante —, qui appellent d'autres corrections [@dafflon-gilbert-2018, p. 65 et 197-198].
+- **L'emprunt n'y figure pas parmi les ressources.** Les auteurs le tiennent pour un moyen de paiement des investissements et non pour un revenu, puisqu'il faudra un jour lever par l'impôt de quoi le rembourser [@dafflon-gilbert-2018, p. 66].
+- **Le [déséquilibre vertical](#g-desequilibre-vertical).** Quand les ressources attribuées aux collectivités ne correspondent pas aux tâches qui leur sont confiées, la discordance tient à la répartition entre les niveaux de gouvernement, et vaut pour toutes les collectivités à la fois [@dafflon-gilbert-2018, p. 65 et 197-198].
 
 ### Fonctionnement, investissement et règle d'or {#sec-fl-regle-or}
 
-Un budget peut être global, couvrant ensemble le fonctionnement et les investissements, ou dédoublé, avec un budget de fonctionnement et un budget d'investissement soumis à des procédures et à des responsabilités distinctes. La distinction, selon Dafflon et Gilbert, n'a de portée que si l'investissement est clairement défini et s'accompagne d'une politique d'amortissement et de gestion de la dette [@dafflon-gilbert-2018, p. 66].
+Les auteurs appellent [discipline budgétaire](#g-discipline-budgetaire) la situation où une loi impose aux collectivités des règles contraignantes sur le résultat de leur budget et de leurs comptes [@dafflon-gilbert-2018, p. 81]. La règle qui la fonde est la [règle d'or](#g-regle-d-or), qui combine, dans la forme qu'ils nomment « règle d'or revisitée », deux principes [@dafflon-gilbert-2018, p. 28 et 82] :
 
-Les auteurs appellent [discipline budgétaire](#g-discipline-budgetaire) la situation où une loi impose aux collectivités des règles contraignantes sur le résultat de leur budget et de leurs comptes. Ils la distinguent de la responsabilité budgétaire, qui est l'attitude spontanément prudente d'élus visant l'équilibre sans règle extérieure [@dafflon-gilbert-2018, p. 81]. La règle qui fonde la discipline est la [règle d'or](#g-regle-d-or). Dans la forme qu'ils nomment « règle d'or revisitée », elle combine deux principes : l'équilibre du budget et du compte de fonctionnement, service de la dette compris ; le financement des investissements selon l'utilisation (*pay-as-you-use*), l'[emprunt](#g-emprunt) étant remboursé sur la durée de vie de l'investissement qu'il finance, au rythme de son amortissement [@dafflon-gilbert-2018, p. 28 et 82]. L'emprunt n'est donc, là encore, qu'une source de financement : selon leur formule, « l'emprunt aujourd'hui est promesse d'impôt demain ! » [@dafflon-gilbert-2018, p. 28].
+- l'équilibre du budget et du compte de fonctionnement, service de la dette compris ;
+- le financement des investissements selon l'utilisation (*pay-as-you-use*) : l'[emprunt](#g-emprunt) ne finance que des investissements, et il est remboursé sur leur durée de vie, au rythme de leur amortissement.
 
 Ils en déduisent la [capacité d'emprunt](#g-capacite-emprunt) d'une collectivité, c'est-à-dire le nouvel emprunt que son budget de fonctionnement peut supporter :
 
@@ -66,14 +75,14 @@ $$
 $$
 
 $$
-\Delta D = \frac{E - (M + O) + (R + F)}{i + d}
+\Delta D = \frac{E - (M + O) + (R + X)}{i + d}
 $$
 
-où $\Delta I$ est le nouvel investissement, $\Delta D$ le nouvel emprunt, $S$ la subvention d'investissement, $E$ l'[épargne nette](#g-epargne-nette), c'est-à-dire l'excédent du compte de fonctionnement après paiement des intérêts et de l'amortissement des investissements existants, $M$ les coûts de maintenance du nouvel équipement, $O$ les coûts de fonctionnement du service nouveau qu'il permet, $R$ les recettes que procure le nouvel investissement, $F$ les financements extérieurs de fonctionnement qui s'y rattachent, $i$ le taux d'intérêt de la dette et $d$ le taux d'amortissement de l'investissement, égal au taux de remboursement du capital emprunté [@dafflon-gilbert-2018, p. 82-83]. Le taux d'amortissement correspond à la durée d'utilisation économique de l'équipement, sur laquelle l'emprunt est remboursé [@dafflon-gilbert-2018, p. 82]. Les auteurs insistent sur les termes $M$ et $O$ : un plafonnement de l'endettement par de simples ratios, sans compter les coûts récurrents que l'investissement engendre, est à leurs yeux nécessaire, mais pas suffisant [@dafflon-gilbert-2018, p. 83-84].
+où $\Delta I$ est le nouvel investissement, $\Delta D$ le nouvel emprunt, $S$ la subvention d'investissement, $E$ l'[épargne nette](#g-epargne-nette), c'est-à-dire l'excédent du compte de fonctionnement après paiement des intérêts et de l'amortissement des investissements existants, $M$ les coûts de maintenance du nouvel équipement, $O$ les coûts de fonctionnement du service nouveau qu'il permet, $R$ les recettes que procure le nouvel investissement, $X$ les financements extérieurs de fonctionnement qui s'y rattachent, $i$ le taux d'intérêt de la dette et $d$ le taux d'amortissement de l'investissement, égal au taux de remboursement du capital emprunté [@dafflon-gilbert-2018, p. 82-83].
 
 ### La tutelle {#sec-fl-tutelle}
 
-La [tutelle](#g-tutelle) est le contrôle qu'exerce l'échelon central sur les décisions des collectivités. Dafflon et Gilbert la décrivent selon deux critères : son contenu, qui peut être la seule légalité de la décision — le respect de la procédure — ou son opportunité — l'objet de la décision, son contenu, sa priorité — ; et son moment, avant ou après la décision (@tbl-fl-tutelles).
+La [tutelle](#g-tutelle) est le contrôle qu'exerce l'échelon central sur les décisions des collectivités. Dafflon et Gilbert la décrivent selon deux critères : son contenu — la légalité de la décision, c'est-à-dire le respect de la procédure, ou son opportunité — et son moment, avant ou après la décision (@tbl-fl-tutelles).
 
 | Moment du contrôle | Tutelle de légalité | Tutelle d'opportunité |
 |---|---|---|
@@ -84,7 +93,17 @@ La [tutelle](#g-tutelle) est le contrôle qu'exerce l'échelon central sur les d
 
 Source : @dafflon-gilbert-2018, p. 18-19, tableau 1.
 
-Selon les auteurs, l'expérience internationale ne dégage pas de modèle unique, mais une tendance au contrôle de légalité *a posteriori*. Le contrôle d'opportunité est plus rare, sauf pour vérifier le respect de la norme dans les tâches déléguées. On trouve en revanche assez souvent un contrôle *a priori* des décisions financées par l'emprunt, qui porte moins sur l'opportunité de la dépense que sur la capacité de la collectivité à en supporter les conséquences — ce qui relève, selon eux, davantage d'une règle budgétaire que d'un contrôle [@dafflon-gilbert-2018, p. 18-19].
+:::: {.chronologie-repliable titre="Budget local selon Dafflon et Gilbert : place de l'emprunt et coûts récurrents, patrimoine financier et administratif, déséquilibres locaux, budget global ou dédoublé, pratiques de tutelle observées"}
+
+- **La place de l'emprunt.** L'emprunt n'est, pour les auteurs, qu'une source de financement : selon leur formule, « l'emprunt aujourd'hui est promesse d'impôt demain ! » [@dafflon-gilbert-2018, p. 28]. Le taux d'amortissement $d$ de la formule de la capacité d'emprunt correspond à la durée d'utilisation économique de l'équipement, sur laquelle l'emprunt est remboursé [@dafflon-gilbert-2018, p. 82].
+- **Les coûts récurrents dans la capacité d'emprunt.** Les auteurs insistent sur les coûts de maintenance et de fonctionnement, $M$ et $O$ dans la formule : un plafonnement de l'endettement par de simples ratios, sans compter les coûts récurrents que l'investissement engendre, est à leurs yeux nécessaire, mais pas suffisant [@dafflon-gilbert-2018, p. 83-84].
+- **Le patrimoine financier et le patrimoine administratif.** Le premier, capitaux et immeubles détenus à titre privé, pourrait être vendu sans nuire aux services ; le second, comme un bâtiment d'école, sert à les produire et n'a pas de valeur de marché [@dafflon-gilbert-2018, p. 64].
+- **Les déséquilibres locaux.** Les auteurs distinguent du déséquilibre vertical les déséquilibres propres à une collectivité — effets de débordement sur ses voisines, besoins ou coûts plus élevés, base fiscale insuffisante —, qui appellent d'autres corrections [@dafflon-gilbert-2018, p. 65 et 197-198].
+- **Le budget global ou dédoublé.** Un budget peut être global, couvrant ensemble le fonctionnement et les investissements, ou dédoublé, avec un budget de fonctionnement et un budget d'investissement soumis à des procédures et à des responsabilités distinctes. La distinction, selon les auteurs, n'a de portée que si l'investissement est clairement défini et s'accompagne d'une politique d'amortissement et de gestion de la dette [@dafflon-gilbert-2018, p. 66].
+- **La discipline et la responsabilité budgétaires.** Les auteurs distinguent de la discipline, imposée par la loi, la responsabilité budgétaire, qui est l'attitude spontanément prudente d'élus visant l'équilibre sans règle extérieure [@dafflon-gilbert-2018, p. 81].
+- **Les pratiques de tutelle observées.** Selon les auteurs, l'expérience internationale ne dégage pas de modèle unique, mais une tendance au contrôle de légalité *a posteriori*. Le contrôle d'opportunité est plus rare, sauf pour vérifier le respect de la norme dans les tâches déléguées. On trouve en revanche assez souvent un contrôle *a priori* des décisions financées par l'emprunt, qui porte moins sur l'opportunité de la dépense que sur la capacité de la collectivité à en supporter les conséquences — ce qui relève, selon eux, davantage d'une règle budgétaire que d'un contrôle [@dafflon-gilbert-2018, p. 18-19].
+
+::::
 
 ## Les ressources propres {#sec-fl-ressources-propres}
 
@@ -92,21 +111,17 @@ Selon les auteurs, l'expérience internationale ne dégage pas de modèle unique
 
 Les [ressources propres](#g-ressources-propres) d'une collectivité sont, dans le budget de référence, ses impôts, exclusifs ou partagés, ses redevances d'utilisation et le rendement de son patrimoine (@tbl-fl-budget-decentralise) [@dafflon-gilbert-2018, p. 65 et 68]. Dafflon et Gilbert distinguent trois catégories de prélèvements, selon trois critères : le paiement est-il obligatoire ? a-t-il une contrepartie ? son produit est-il affecté ?
 
-- L'[impôt](#g-impot-local) est un prélèvement obligatoire, sans contrepartie pour le contribuable, qui ne peut revendiquer aucune prestation particulière en sa faveur, et sans affectation : son produit va au compte général de la collectivité et finance l'ensemble de ses politiques [@dafflon-gilbert-2018, p. 152].
-- La [taxe](#g-taxe-finances-publiques), au sens où l'entendent les auteurs, est un prélèvement obligatoire que la collectivité perçoit comme fournisseur exclusif de l'accès à un service. Elle n'est due que par celui qui demande l'accès, qui peut s'en exclure. Son produit va au budget général, sans affectation, et son montant ne dépend ni du volume de la prestation ni de son coût [@dafflon-gilbert-2018, p. 152].
-- La [redevance d'utilisation](#g-redevance-utilisation) est le prix d'un service rendu, proportionné à l'avantage que l'usager en retire. Elle est affectée à la tâche qu'elle finance et ne doit pas en dépasser le coût total ; un excédent durable serait, selon les auteurs, un impôt déguisé. Elle finance donc une tâche, et n'accroît pas la marge de manœuvre globale de la collectivité [@dafflon-gilbert-2018, p. 64 et 152-153].
-
-Une collectivité ne peut, selon eux, prélever une redevance d'utilisation que si quatre conditions sont réunies : les bénéficiaires peuvent être identifiés sans confusion ; le prix permet d'exclure celui qui ne paie pas ; la tarification peut tenir compte des limites de capacité ; les effets de débordement sont faibles, de sorte que décideurs, usagers et payeurs coïncident [@dafflon-gilbert-2018, p. 153].
+- **L'[impôt](#g-impot-local)** est obligatoire, sans contrepartie pour le contribuable et sans affectation : son produit finance l'ensemble des politiques de la collectivité [@dafflon-gilbert-2018, p. 152].
+- **La [taxe](#g-taxe-finances-publiques)**, au sens des auteurs, est perçue par la collectivité comme fournisseur exclusif de l'accès à un service. Elle n'est due que par celui qui demande l'accès ; son produit n'est pas affecté, et son montant ne dépend ni du volume de la prestation ni de son coût [@dafflon-gilbert-2018, p. 152].
+- **La [redevance d'utilisation](#g-redevance-utilisation)** est le prix d'un service rendu, proportionné à l'avantage que l'usager en retire. Elle est affectée à la tâche qu'elle finance, sans en dépasser le coût : elle n'accroît donc pas la marge de manœuvre de la collectivité [@dafflon-gilbert-2018, p. 64 et 152-153].
 
 ### L'autonomie, budgétaire, financière et fiscale {#sec-fl-autonomie}
 
 Dafflon et Gilbert distinguent trois autonomies, qu'ils jugent souvent confondues [@dafflon-gilbert-2018, p. 67-68].
 
-- L'[autonomie budgétaire](#g-autonomie-budgetaire) porte sur les dépenses : c'est la capacité d'une collectivité de décider seule des catégories, de la quantité et de la qualité des prestations qu'elle offre à ses résidents. Les compétences dévolues en sont le véritable espace ; pour les fonctions déléguées, la collectivité n'a qu'une influence partielle [@dafflon-gilbert-2018, p. 68].
-- L'[autonomie financière](#g-autonomie-financiere) porte sur les ressources : elle est réalisée lorsqu'une collectivité obtient par ses propres moyens les ressources dont elle a besoin, sans dépendre d'autres collectivités de niveau supérieur ou égal. Elle prend en compte toutes les ressources propres — impôts et taxes, redevances d'utilisation, revenus du patrimoine — ; l'autonomie fiscale, plus étroite, ne prend en compte que les impôts et les taxes [@dafflon-gilbert-2018, p. 68].
-- La [souveraineté fiscale](#g-souverainete-fiscale) mesure le pouvoir de la collectivité sur l'impôt lui-même. Elle est totale lorsqu'elle définit le cercle des assujettis, l'assiette, le mode de calcul et le barème des taux ; partielle lorsqu'elle n'en fixe qu'une partie. Dans un régime de [flexibilité fiscale](#g-flexibilite-fiscale), elle ne décide que du taux ou du coefficient d'impôt, les autres éléments étant identiques pour toutes les collectivités : c'est le cas des systèmes de centimes additionnels. Dans la fiscalité obligatoire, enfin, elle ne peut modifier aucune des règles fixées par l'échelon supérieur [@dafflon-gilbert-2018, p. 68 et 153-154].
-
-Les auteurs classent ainsi les ressources par degré décroissant d'autonomie : d'abord l'impôt dont l'assiette et le barème sont fixés au centre mais sur lequel la collectivité établit son propre prélèvement, ainsi que les redevances d'utilisation ; puis la part, fixée par la loi, des recettes d'un impôt de l'État ; puis la dotation globale, dont la collectivité reste maîtresse de l'usage ; enfin les transferts spécifiques et conditionnels, qui réduisent son autonomie budgétaire [@dafflon-gilbert-2018, p. 20]. Une dotation globale financée par une proportion fixe d'une recette de l'État confère, selon eux, une autonomie financière « de second rang », alternative à un impôt propre [@dafflon-gilbert-2018, p. 27-28].
+- **L'[autonomie budgétaire](#g-autonomie-budgetaire)** porte sur les dépenses : la collectivité décide seule des prestations qu'elle offre à ses résidents. Les compétences dévolues en sont le véritable espace [@dafflon-gilbert-2018, p. 68].
+- **L'[autonomie financière](#g-autonomie-financiere)** porte sur les ressources : la collectivité obtient par ses propres moyens celles dont elle a besoin. Elle compte toutes les ressources propres ; l'autonomie fiscale, plus étroite, ne compte que les impôts et les taxes [@dafflon-gilbert-2018, p. 68].
+- **La [souveraineté fiscale](#g-souverainete-fiscale)** porte sur l'impôt lui-même. Elle est totale lorsque la collectivité définit les assujettis, l'assiette, le mode de calcul et le barème, partielle lorsqu'elle n'en fixe qu'une partie. Dans la [flexibilité fiscale](#g-flexibilite-fiscale), elle ne décide que du taux ou du coefficient, comme dans les centimes additionnels ; dans la fiscalité obligatoire, elle ne peut modifier aucune des règles fixées par l'échelon supérieur [@dafflon-gilbert-2018, p. 68 et 153-154].
 
 ### Impôt exclusif, impôt partagé, part aux recettes {#sec-fl-impot-partage}
 
@@ -114,30 +129,35 @@ Un même impôt peut appartenir à un seul niveau de gouvernement ou à plusieur
 
 - l'[impôt exclusif](#g-impot-exclusif), dont un seul niveau de gouvernement exploite l'assiette et perçoit l'intégralité du produit ;
 - l'[impôt partagé](#g-impot-partage), dont plusieurs échelons exploitent la même assiette, chacun pouvant, le cas échéant, choisir son taux ;
-- la [part aux recettes](#g-part-aux-recettes), ou partage de l'impôt : l'échelon supérieur fixe l'assiette et le taux et encaisse l'impôt, mais une proportion fixe de son produit revient aux collectivités. Le partage entre elles se fait soit selon le produit perçu sur le territoire de chacune — le critère d'origine, ou principe de dérivation —, soit selon une clé de répartition, qui peut tenir compte de la population ou viser à réduire les écarts de potentiel fiscal ; dans ce dernier cas, il s'agit d'une péréquation des ressources.
+- la [part aux recettes](#g-part-aux-recettes), ou partage de l'impôt : l'échelon supérieur fixe l'assiette et le taux et encaisse l'impôt, mais une proportion fixe de son produit revient aux collectivités.
 
-Quand plusieurs collectivités ou plusieurs niveaux exploitent la même base, la décision fiscale de l'un affecte la situation de l'autre : les auteurs parlent d'externalité fiscale, horizontale entre collectivités voisines, verticale entre niveaux qui prélèvent des centimes additionnels sur la même base [@dafflon-gilbert-2018, p. 154].
+:::: {.chronologie-repliable titre="Ressources propres selon Dafflon et Gilbert : quatre conditions de la redevance, classement des ressources par degré d'autonomie, partage selon l'origine ou selon une clé, externalités fiscales"}
+
+- **Les quatre conditions de la redevance.** Une collectivité ne peut, selon les auteurs, prélever une redevance d'utilisation que si quatre conditions sont réunies : les bénéficiaires peuvent être identifiés sans confusion ; le prix permet d'exclure celui qui ne paie pas ; la tarification peut tenir compte des limites de capacité ; les effets de débordement sont faibles, de sorte que décideurs, usagers et payeurs coïncident [@dafflon-gilbert-2018, p. 153]. Un excédent durable de la redevance sur le coût total de la tâche serait, selon eux, un impôt déguisé [@dafflon-gilbert-2018, p. 64 et 152-153].
+- **Le classement des ressources par degré d'autonomie.** Pour les fonctions déléguées, la collectivité n'a qu'une influence partielle sur la dépense [@dafflon-gilbert-2018, p. 68]. Les auteurs classent les ressources par degré décroissant d'autonomie : d'abord l'impôt dont l'assiette et le barème sont fixés au centre mais sur lequel la collectivité établit son propre prélèvement, ainsi que les redevances d'utilisation ; puis la part, fixée par la loi, des recettes d'un impôt de l'État ; puis la dotation globale, dont la collectivité reste maîtresse de l'usage ; enfin les transferts spécifiques et conditionnels, qui réduisent son autonomie budgétaire [@dafflon-gilbert-2018, p. 20]. Une dotation globale financée par une proportion fixe d'une recette de l'État confère, selon eux, une autonomie financière « de second rang », alternative à un impôt propre [@dafflon-gilbert-2018, p. 27-28].
+- **Le partage selon l'origine ou selon une clé.** La part aux recettes se répartit entre les collectivités soit selon le produit perçu sur le territoire de chacune — le critère d'origine, ou principe de dérivation —, soit selon une clé de répartition, qui peut tenir compte de la population ou viser à réduire les écarts de potentiel fiscal ; dans ce dernier cas, il s'agit d'une péréquation des ressources [@dafflon-gilbert-2018, p. 153-154].
+- **Les externalités fiscales.** Quand plusieurs collectivités ou plusieurs niveaux exploitent la même base, la décision fiscale de l'un affecte la situation de l'autre : les auteurs parlent d'externalité fiscale, horizontale entre collectivités voisines, verticale entre niveaux qui prélèvent des centimes additionnels sur la même base [@dafflon-gilbert-2018, p. 154].
+
+::::
 
 ## Les transferts {#sec-fl-notions-transferts}
 
 ### Pourquoi transférer {#sec-fl-transferts-objectifs}
 
-Rien n'impose, selon Dafflon et Gilbert, que les dépenses des collectivités soient couvertes en totalité par des ressources propres. Les tâches qu'elles choisissent devraient l'être ; les tâches spécifiques devraient l'être par des redevances ; mais les dépenses des compétences déléguées par le centre doivent être financées par des impôts transférés ou par des [transferts financiers](#g-transfert-financier) de l'État [@dafflon-gilbert-2018, p. 195-196]. Les auteurs ajoutent que, pour corriger un déséquilibre, on peut aussi revoir la répartition des tâches ou celle des impôts, mais que le transfert est l'ajustement le plus facile à mettre en œuvre, politiquement et institutionnellement [@dafflon-gilbert-2018, p. 198].
-
-Ils rangent les transferts en quatre catégories, selon leur objectif [@dafflon-gilbert-2018, p. 198-201] :
+Rien n'impose, selon Dafflon et Gilbert, que les dépenses des collectivités soient couvertes en totalité par des ressources propres : celles des compétences déléguées par le centre doivent être financées par des impôts transférés ou par des [transferts financiers](#g-transfert-financier) de l'État [@dafflon-gilbert-2018, p. 195-196]. Ils rangent les transferts en quatre catégories, selon leur objectif [@dafflon-gilbert-2018, p. 198-201] :
 
 - les transferts généraux, qui financent les tâches déléguées et corrigent le déséquilibre vertical ;
-- les subventions d'incitation, qui orientent les choix budgétaires des collectivités vers les prestations que souhaite le niveau qui paie ;
-- les subventions correctrices, qui compensent les effets de débordement, lorsque les bénéficiaires d'un service dépassent le territoire de la collectivité qui le fournit et le paie ;
+- les subventions d'incitation, qui orientent les choix des collectivités vers les prestations que souhaite le niveau qui paie ;
+- les subventions correctrices, qui compensent les effets de débordement, lorsque les bénéficiaires d'un service dépassent le territoire de la collectivité qui le paie ;
 - les subventions péréquatives, qui corrigent les déséquilibres horizontaux entre collectivités (@sec-fl-perequation).
 
 ### Trois critères de classement {#sec-fl-transferts-criteres}
 
 Dafflon et Gilbert classent les subventions selon trois critères, qui se combinent [@dafflon-gilbert-2018, p. 201-203] :
 
-- selon l'utilisation : la [subvention globale](#g-subvention-globale) est à la libre disposition de la collectivité qui la reçoit ; la [subvention spécifique](#g-subvention-specifique) est affectée à une tâche ou à une dépense désignée par la collectivité qui la verse ;
-- selon le mode de calcul : la [subvention conditionnelle](#g-subvention-conditionnelle), ou proportionnelle, varie avec la dépense subventionnée ou avec la part que la collectivité bénéficiaire est prête à y consacrer ; la [subvention forfaitaire](#g-subvention-forfaitaire) est un montant fixe, quelle que soit la participation de la collectivité ;
-- selon la limitation des fonds : la [subvention rationnée](#g-subvention-rationnee), dite à guichet fermé, puise dans une enveloppe limitée, ce qui oblige à fixer des critères de sélection ; la subvention non rationnée, à guichet ouvert, est due dès que ses conditions sont remplies, quelle que soit la situation financière de la collectivité qui la verse.
+- l'utilisation : la [subvention globale](#g-subvention-globale) est à la libre disposition de la collectivité qui la reçoit ; la [subvention spécifique](#g-subvention-specifique) est affectée à une tâche désignée par celle qui la verse ;
+- le mode de calcul : la [subvention conditionnelle](#g-subvention-conditionnelle), ou proportionnelle, varie avec la dépense subventionnée ; la [subvention forfaitaire](#g-subvention-forfaitaire) est un montant fixe ;
+- la limitation des fonds : la [subvention rationnée](#g-subvention-rationnee), dite à guichet fermé, puise dans une enveloppe limitée ; la subvention non rationnée, à guichet ouvert, est due dès que ses conditions sont remplies.
 
 En croisant ces critères avec les objectifs, les auteurs obtiennent cinq types (@tbl-fl-types-subventions).
 
@@ -153,18 +173,26 @@ En croisant ces critères avec les objectifs, les auteurs obtiennent cinq types 
 
 Source : @dafflon-gilbert-2018, p. 202-205, schéma 18.
 
-Le partage des ressources et la péréquation ne diffèrent, dans ce classement, que par leur critère de répartition : le partage respecte l'origine des fonds, la péréquation tient compte de la capacité financière de la collectivité bénéficiaire [@dafflon-gilbert-2018, p. 205]. Les auteurs relèvent enfin que toute subvention conditionnelle favorise les collectivités financièrement fortes, capables de réunir la part qui leur revient, au détriment de celles qui ont souvent les besoins les plus grands [@dafflon-gilbert-2018, p. 203].
+Le partage des ressources et la péréquation ne diffèrent, dans ce classement, que par leur critère de répartition : le partage respecte l'origine des fonds, la péréquation tient compte de la capacité financière de la collectivité bénéficiaire [@dafflon-gilbert-2018, p. 205].
 
 ### La péréquation {#sec-fl-perequation}
 
-La [péréquation](#g-perequation-financiere) procède du principe de solidarité. Dafflon et Gilbert distinguent les différences, que la décentralisation admet par nature, des disparités, qu'il faut compenser. Relèvent des disparités, parce qu'elles échappent au contrôle des collectivités, les écarts d'assiette fiscale, de besoins à norme donnée et de coûts unitaires des services obligatoires ; relèvent au contraire de l'autonomie, et n'ont pas à être compensés, les préférences locales pour des services propres ou pour certaines formes d'impôt, et les choix entre impôts et redevances [@dafflon-gilbert-2018, p. 20-21].
+La [péréquation](#g-perequation-financiere) compense les disparités entre collectivités qui échappent à leur contrôle — d'assiette fiscale, de besoins, de coûts —, en application du principe de solidarité [@dafflon-gilbert-2018, p. 20-21]. Dafflon et Gilbert en distinguent deux objets et deux formes [@dafflon-gilbert-2018, p. 201 et 252].
 
-Ils en distinguent deux objets [@dafflon-gilbert-2018, p. 201 et 252] :
+- **Selon ce qu'elle compense.** La [péréquation des ressources](#g-perequation-ressources) réduit les écarts de [potentiel fiscal](#g-potentiel-fiscal), c'est-à-dire du produit que chaque collectivité tirerait de ses bases au taux moyen national (@sec-fl-potentiel-effort). La [péréquation des besoins](#g-perequation-besoins), ou des coûts, compense les écarts de besoins ou de coûts par rapport à la norme, selon des critères démographiques, géographiques ou topographiques.
+- **Selon qui la finance.** La péréquation est verticale lorsque le fonds est doté par le seul gouvernement central, horizontale lorsque les collectivités au potentiel fiscal supérieur à la moyenne contribuent elles-mêmes au fonds dont bénéficient les autres [@dafflon-gilbert-2018, p. 252].
 
-- la [péréquation des ressources](#g-perequation-ressources) réduit les écarts de [potentiel fiscal](#g-potentiel-fiscal) : elle donne davantage aux collectivités dont la base d'imposition est inférieure à la moyenne ;
-- la [péréquation des besoins](#g-perequation-besoins), ou des coûts, compense les écarts de besoins ou de coûts par rapport à la norme, selon des critères démographiques, géographiques ou topographiques, qui doivent avoir un lien de causalité plausible avec la dépense ; les auteurs la jugent nettement plus difficile à réaliser.
+:::: {.chronologie-repliable titre="Transferts et péréquation selon Dafflon et Gilbert : autres corrections du déséquilibre, effet des subventions conditionnelles, différences et disparités, conditions d'accès"}
 
-Ils en distinguent aussi deux formes, selon qui la finance : la péréquation est verticale lorsque le fonds est doté par le seul gouvernement central, horizontale lorsque les collectivités au potentiel fiscal supérieur à la moyenne contribuent elles-mêmes au fonds dont bénéficient les autres [@dafflon-gilbert-2018, p. 252]. L'accès à la péréquation peut, selon eux, être soumis à des conditions, tel un [effort fiscal](#g-effort-fiscal) minimal [@dafflon-gilbert-2018, p. 205].
+- **Ce que les ressources propres devraient couvrir.** Les tâches que les collectivités choisissent devraient, selon les auteurs, être couvertes par des ressources propres, et les tâches spécifiques par des redevances [@dafflon-gilbert-2018, p. 195-196].
+- **Les autres corrections du déséquilibre.** Pour corriger un déséquilibre, on peut aussi revoir la répartition des tâches ou celle des impôts, mais le transfert est, pour les auteurs, l'ajustement le plus facile à mettre en œuvre, politiquement et institutionnellement [@dafflon-gilbert-2018, p. 198].
+- **Les subventions conditionnelles, forfaitaires et rationnées.** La subvention spécifique peut être affectée à une tâche ou à une dépense ; la subvention conditionnelle varie aussi avec la part que la collectivité bénéficiaire est prête à consacrer à la dépense. La subvention forfaitaire est versée quelle que soit la participation de la collectivité ; la subvention rationnée oblige à fixer des critères de sélection, et la subvention non rationnée est due quelle que soit la situation financière de la collectivité qui la verse [@dafflon-gilbert-2018, p. 201-203].
+- **L'effet des subventions conditionnelles.** Les auteurs relèvent que toute subvention conditionnelle favorise les collectivités financièrement fortes, capables de réunir la part qui leur revient, au détriment de celles qui ont souvent les besoins les plus grands [@dafflon-gilbert-2018, p. 203].
+- **Les différences et les disparités.** Les auteurs distinguent les différences, que la décentralisation admet par nature, des disparités, qu'il faut compenser. Relèvent des disparités, parce qu'elles échappent au contrôle des collectivités, les écarts d'assiette fiscale, de besoins à norme donnée et de coûts unitaires des services obligatoires ; relèvent au contraire de l'autonomie, et n'ont pas à être compensés, les préférences locales pour des services propres ou pour certaines formes d'impôt, et les choix entre impôts et redevances [@dafflon-gilbert-2018, p. 20-21].
+- **La péréquation des ressources et celle des besoins.** La première donne davantage aux collectivités dont la base d'imposition est inférieure à la moyenne. Les critères de la seconde doivent avoir un lien de causalité plausible avec la dépense ; les auteurs la jugent nettement plus difficile à réaliser que celle des ressources [@dafflon-gilbert-2018, p. 201 et 252].
+- **Les conditions d'accès.** L'accès à la péréquation peut, selon les auteurs, être soumis à des conditions, tel un [effort fiscal](#g-effort-fiscal) minimal [@dafflon-gilbert-2018, p. 205].
+
+::::
 
 ## Mesurer {#sec-fl-mesurer}
 
@@ -183,10 +211,10 @@ où $a$ est le [taux d'autonomie financière](#g-taux-autonomie-financiere), $P$
 Le [potentiel fiscal](#g-potentiel-fiscal) — ou « richesse », ou « force » fiscale — d'une collectivité est, selon Dafflon et Gilbert, le produit fiscal qu'elle collecterait si elle appliquait à ses bases d'imposition le taux moyen national [@dafflon-gilbert-2018, p. 252] :
 
 $$
-\Pi = \bar{t}\,B
+\Pi = \bar{\tau}\,B
 $$
 
-où $\Pi$ est le potentiel fiscal de la collectivité, $B$ sa base d'imposition et $\bar{t}$ le taux moyen national. Le taux moyen est, pour les auteurs, l'effort fiscal moyen : l'[effort fiscal](#g-effort-fiscal) d'une collectivité est le taux qu'elle applique à ses propres bases. Une collectivité à faible base doit consentir un effort fiscal supérieur à la moyenne pour obtenir le même produit que les autres ; c'est cet écart, et lui seul, que la péréquation des ressources devrait compenser. Les auteurs ajoutent qu'un produit fiscal élevé n'est pas nécessairement le signe d'un effort élevé : il peut tenir à l'abondance des bases [@dafflon-gilbert-2018, p. 251-252].
+où $\Pi$ est le potentiel fiscal de la collectivité, $B$ sa base d'imposition et $\bar{\tau}$ le taux moyen national. L'[effort fiscal](#g-effort-fiscal) d'une collectivité est le taux qu'elle applique à ses propres bases ; le taux moyen national est l'effort fiscal moyen. Une collectivité à faible base doit consentir un effort supérieur à la moyenne pour obtenir le même produit que les autres [@dafflon-gilbert-2018, p. 251-252].
 
 ### Facturation et recouvrement {#sec-fl-recouvrement}
 
@@ -198,31 +226,11 @@ $$
 \rho = \frac{C}{\Phi}
 $$
 
-où $\varphi$ est le [taux de facturation](#g-taux-de-facturation), $\Phi$ le montant effectivement facturé au titre d'un impôt, $\rho$ le [taux de recouvrement](#g-taux-de-recouvrement) et $C$ le montant effectivement encaissé. Le premier rapporte ce que la collectivité facture à ce que rapporterait la base de l'impôt exploitée de manière efficace ; le second, ce qu'elle encaisse à ce qu'elle a facturé.
+où $\varphi$ est le [taux de facturation](#g-taux-de-facturation), $\Phi$ le montant effectivement facturé au titre d'un impôt, $\Pi$ le potentiel fiscal (@sec-fl-potentiel-effort), entendu ici comme ce que rapporterait la base de l'impôt exploitée de manière efficace, $\rho$ le [taux de recouvrement](#g-taux-de-recouvrement) et $C$ le montant effectivement encaissé. Le premier taux rapporte ce que la collectivité facture à ce potentiel ; le second, ce qu'elle encaisse à ce qu'elle a facturé.
 
-## Notations {#sec-fl-notations}
+:::: {.chronologie-repliable titre="Mesure de l'effort fiscal selon Dafflon et Gilbert : écart que la péréquation des ressources compense, produit élevé et effort élevé"}
 
-| Symbole | Grandeur | Section |
-|---|---|---|
-| $\Delta I$ | nouvel investissement | @sec-fl-regle-or |
-| $\Delta D$ | nouvel emprunt | @sec-fl-regle-or |
-| $S$ | subvention d'investissement | @sec-fl-regle-or |
-| $E$ | épargne nette du compte de fonctionnement | @sec-fl-regle-or |
-| $M$ | coûts de maintenance du nouvel équipement | @sec-fl-regle-or |
-| $O$ | coûts de fonctionnement du service nouveau | @sec-fl-regle-or |
-| $R$ | recettes procurées par le nouvel investissement | @sec-fl-regle-or |
-| $F$ | financements extérieurs de fonctionnement rattachés au service nouveau | @sec-fl-regle-or |
-| $i$ | taux d'intérêt de la dette | @sec-fl-regle-or |
-| $d$ | taux d'amortissement, égal au taux de remboursement du capital emprunté | @sec-fl-regle-or |
-| $a$ | taux d'autonomie financière | @sec-fl-taux-autonomie |
-| $P$ | recettes propres | @sec-fl-taux-autonomie |
-| $Q$ | ressources hors emprunt | @sec-fl-taux-autonomie |
-| $\Pi$ | potentiel fiscal | @sec-fl-potentiel-effort |
-| $B$ | base d'imposition | @sec-fl-potentiel-effort |
-| $\bar{t}$ | taux moyen national | @sec-fl-potentiel-effort |
-| $\varphi$ | taux de facturation | @sec-fl-recouvrement |
-| $\Phi$ | montant facturé | @sec-fl-recouvrement |
-| $\rho$ | taux de recouvrement | @sec-fl-recouvrement |
-| $C$ | montant encaissé | @sec-fl-recouvrement |
+- **L'écart que la péréquation compense.** L'effort supérieur à la moyenne que doit consentir une collectivité à faible base pour obtenir le même produit que les autres est, pour les auteurs, l'écart, et le seul, que la péréquation des ressources devrait compenser [@dafflon-gilbert-2018, p. 251-252].
+- **Produit élevé et effort élevé.** Les auteurs ajoutent qu'un produit fiscal élevé n'est pas nécessairement le signe d'un effort élevé : il peut tenir à l'abondance des bases [@dafflon-gilbert-2018, p. 251-252].
 
-: Les symboles du chapitre {#tbl-fl-notations}
+::::

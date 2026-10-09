@@ -107,7 +107,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; PNAFN historique sans sources pour ses onze dates et montants | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
-| Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions, histoire et compétences à convertir | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
+| Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences à convertir | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
 
 Les `TODO` des `.qmd` détaillent chaque lacune, y compris celles que ce tableau ne peut pas
 résumer. Ici, **lisible** veut dire que le fascicule est présent avec une couche texte
@@ -1854,7 +1854,8 @@ chapitre ci-dessous, dans l'ordre du volume ; les `TODO` des `.qmd` détaillent 
 **État d'ensemble (9 octobre 2026).** Convertis au format « ruptures au premier plan, détail
 replié », avec domicile unique des références : budgets (ch. 5), impôts sur les immeubles
 (ch. 6), impôts sur l'activité (ch. 7), taxes et redevances (ch. 8), transferts (ch. 9).
-**Non convertis** (troisième vague) : notions (ch. 2), histoire (ch. 3), compétences (ch. 4).
+Resserré le même jour, sans registre (il ne cite aucune loi) : notions (ch. 2).
+**Non convertis** (troisième vague) : histoire (ch. 3), compétences (ch. 4).
 Plans : `finances-locales-impots-plan-architecte.md`,
 `finances-locales-transferts-budgets-plan-architecte.md` ; lectures du 9 octobre 2026 :
 `finances-locales-impots-lectures-2026-10-09.md`,
@@ -1942,12 +1943,41 @@ le plan commun des cinq chapitres convertis et un renvoi aux sources (`@sec-fl-l
 **Reste** : la phrase sur le plan commun ne vaut pas pour les chapitres 2 à 4 tant qu'ils ne
 sont pas convertis.
 
-### Chapitre 2 — Les notions (`_notions.qmd`) — non converti
+### Chapitre 2 — Les notions (`_notions.qmd`) — resserré le 9 octobre 2026
 
-Rédigé le 4 octobre 2026. Source unique : Dafflon et Gilbert, AFD 2018 (`dafflon-gilbert-2018`,
-exemplaire HAL). Aucune valeur tunisienne. Garde sa section « Notations ». **Lacunes** :
-notions non définies faute de source lue — épargne brute, dépendance aux transferts, fonds
-commun comme notion générale, établissement public (Dafflon et Madiès 2008, **à obtenir**).
+Rédigé le 4 octobre 2026, resserré le 9 octobre 2026 d'après
+`finances-locales-histoire-competences-notions-plan-architecte.md` (§ 2.5, arbitrages A3 et A4) :
+définitions, trois tableaux et six formules au premier plan (2 576 mots contre 4 103), les
+développements de Dafflon et Gilbert dans cinq blocs repliés, un par section (1 476 mots). Source
+unique : Dafflon et Gilbert, AFD 2018 (`dafflon-gilbert-2018`, exemplaire HAL). Aucune valeur
+tunisienne, aucune loi citée : ni registre ni domicile unique. La section « Notations » et son
+tableau sont supprimés (`sec-fl-notations`, `tbl-fl-notations`, appelés par personne) ; chaque
+symbole est défini sous la formule où il sert. Les 21 autres identifiants et les 42 liens de
+glossaire sont inchangés.
+
+- **Notation** : deux symboles renommés pour s'aligner sur les chapitres convertis — les
+  financements extérieurs de fonctionnement passent de $F$ à $X$ ($F$ est le montant du fonds
+  commun au chapitre des transferts), le taux moyen national de $\bar{t}$ à $\bar{\tau}$ ($\tau$
+  est le taux dans les chapitres des impôts). Restent à arbitrer pour tout le volume : $B$ (base
+  d'imposition ici, moyenne triennale des recettes des taxes sur la propriété bâtie $B_j$ aux
+  transferts), $R$ (recettes du nouvel investissement ici, $R_1$ recettes du titre 1 aux
+  budgets), $\mu$ (part des communes aux transferts, minimum par mètre carré aux impôts sur
+  l'activité).
+- **Deux titres de blocs s'écartent du plan** : celui du budget ajoute « et coûts récurrents » ;
+  celui de la mesure ne nomme plus le périmètre des recettes propres, resté au premier plan
+  parce que le chapitre des budgets y renvoie.
+- **Charte européenne de l'autonomie locale** : le chapeau la date de 1986 ; date à vérifier
+  (1985 ou 1986) sur Dafflon et Gilbert, p. 17, et sur le texte de la Charte.
+- **Glossaire (terminologue)** : douze notions définies au fil du texte sans entrée —
+  coopération, solidarité, responsabilité budgétaire, patrimoine administratif, déséquilibres
+  locaux, effets de débordement, externalité fiscale, principe de dérivation, autonomie fiscale,
+  péréquation verticale et horizontale, subventions d'incitation et correctrices.
+- **Lacunes** : notions non définies faute de source lue — épargne brute, dépendance aux
+  transferts, fonds commun comme notion générale, établissement public (Dafflon et Madiès 2008,
+  **à obtenir**). Aucun exemple chiffré : le chapitre n'en porte pas, et aucune série ne s'y
+  prête sans sortir des définitions.
+- **Livre arabe** : le chapitre traduit date d'avant le resserrement ; les cinq attributs
+  `titre` des blocs sont à traduire.
 
 ### Chapitre 3 — Histoire (`_histoire.qmd`) — non converti
 
