@@ -1,0 +1,65 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-09
+# séries (tunisia_data) : cc-grille-batiment, ipc-longue-periode, bct-ipc-base2015
+# sources (citation) : @avenant5-btp-1996, @avenant6-btp-1999, @avenant7-btp-2002, @avenant8-btp-2006, @avenant9-btp-2009, @avenant10-btp-2011, @avenant11-btp-2013, @avenants-2014-textile-btp, @avenant13-btp-2016, @avenant14-btp-2017, @avenant15-btp-2018, @avenant16-btp-2022, @paie-tunisie-2022-reproduction-jort-132, @decret2026-68, @bct-ra, @ins-annuaire
+# fiches : sources/bct-archives.md
+# méthode/hypothèses : Les grilles de l'avenant n° 16 (1er décembre 2021, 1er janvier 2023, 1er janvier 2024) sont celles des pages 3712 à 3714 de l'édition arabe du Journal officiel n° 132 du 2 décembre 2022, telles qu'un site tiers les reproduit., DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Convention collective nationale, puis sectorielle, du bâtiment et des travaux publics : salaire de base de deux cases de la grille, en dinars courants par heure à chaque date d'effet (1996-2024) et en dinars de 2025 par heure, en moyenne de l'année (1997-2025)
+Case de la grille,Année,"Salaire de base, moyenne de l'année (dinars courants par heure)",Indice des prix à la consommation (base 100 en 1970),Salaire de base (dinars de 2025 par heure)
+"Personnel occasionnel, manœuvre ordinaire",1997,0.891,576.5,3.236
+"Personnel occasionnel, manœuvre ordinaire",1998,0.935,594.5,3.292
+"Personnel occasionnel, manœuvre ordinaire",1999,0.976,610.5,3.346
+"Personnel occasionnel, manœuvre ordinaire",2000,1.015,628.3,3.381
+"Personnel occasionnel, manœuvre ordinaire",2001,1.054,640.5,3.444
+"Personnel occasionnel, manœuvre ordinaire",2002,1.091,658.6,3.467
+"Personnel occasionnel, manœuvre ordinaire",2003,1.128,676.5,3.49
+"Personnel occasionnel, manœuvre ordinaire",2004,1.168,701.0,3.486
+"Personnel occasionnel, manœuvre ordinaire",2005,1.208,715.3,3.533
+"Personnel occasionnel, manœuvre ordinaire",2006,1.248,745.0,3.505
+"Personnel occasionnel, manœuvre ordinaire",2007,1.289,770.6,3.501
+"Personnel occasionnel, manœuvre ordinaire",2008,1.348,808.4,3.49
+"Personnel occasionnel, manœuvre ordinaire",2009,1.416,837.0,3.541
+"Personnel occasionnel, manœuvre ordinaire",2010,1.486,873.9,3.558
+"Personnel occasionnel, manœuvre ordinaire",2011,1.562,904.8,3.612
+"Personnel occasionnel, manœuvre ordinaire",2012,1.651,955.1,3.618
+"Personnel occasionnel, manœuvre ordinaire",2013,1.683,1013.5,3.475
+"Personnel occasionnel, manœuvre ordinaire",2014,1.75,1069.0,3.427
+"Personnel occasionnel, manœuvre ordinaire",2015,1.82,1119.5,3.402
+"Personnel occasionnel, manœuvre ordinaire",2016,1.938,1161.2,3.493
+"Personnel occasionnel, manœuvre ordinaire",2017,2.085,1223.0,3.567
+"Personnel occasionnel, manœuvre ordinaire",2018,2.217,1314.2,3.53
+"Personnel occasionnel, manœuvre ordinaire",2019,2.361,1403.5,3.52
+"Personnel occasionnel, manœuvre ordinaire",2020,2.41,1482.6,3.402
+"Personnel occasionnel, manœuvre ordinaire",2021,2.423,1567.2,3.236
+"Personnel occasionnel, manœuvre ordinaire",2022,2.567,1697.4,3.165
+"Personnel occasionnel, manœuvre ordinaire",2023,2.74,1855.7,3.09
+"Personnel occasionnel, manœuvre ordinaire",2024,2.925,1986.0,3.082
+"Personnel occasionnel, manœuvre ordinaire",2025,2.925,2092.7,2.925
+"Personnel occasionnel, chef d'équipe du 3e degré",1997,1.334,576.5,4.841
+"Personnel occasionnel, chef d'équipe du 3e degré",1998,1.407,594.5,4.952
+"Personnel occasionnel, chef d'équipe du 3e degré",1999,1.478,610.5,5.065
+"Personnel occasionnel, chef d'équipe du 3e degré",2000,1.548,628.3,5.155
+"Personnel occasionnel, chef d'équipe du 3e degré",2001,1.618,640.5,5.285
+"Personnel occasionnel, chef d'équipe du 3e degré",2002,1.688,658.6,5.363
+"Personnel occasionnel, chef d'équipe du 3e degré",2003,1.758,676.5,5.437
+"Personnel occasionnel, chef d'équipe du 3e degré",2004,1.829,701.0,5.46
+"Personnel occasionnel, chef d'équipe du 3e degré",2005,1.902,715.3,5.566
+"Personnel occasionnel, chef d'équipe du 3e degré",2006,1.976,745.0,5.552
+"Personnel occasionnel, chef d'équipe du 3e degré",2007,2.052,770.6,5.572
+"Personnel occasionnel, chef d'équipe du 3e degré",2008,2.173,808.4,5.625
+"Personnel occasionnel, chef d'équipe du 3e degré",2009,2.317,837.0,5.793
+"Personnel occasionnel, chef d'équipe du 3e degré",2010,2.462,873.9,5.897
+"Personnel occasionnel, chef d'équipe du 3e degré",2011,2.627,904.8,6.076
+"Personnel occasionnel, chef d'équipe du 3e degré",2012,2.792,955.1,6.118
+"Personnel occasionnel, chef d'équipe du 3e degré",2013,2.846,1013.5,5.877
+"Personnel occasionnel, chef d'équipe du 3e degré",2014,2.96,1069.0,5.795
+"Personnel occasionnel, chef d'équipe du 3e degré",2015,3.077,1119.5,5.753
+"Personnel occasionnel, chef d'équipe du 3e degré",2016,3.278,1161.2,5.908
+"Personnel occasionnel, chef d'équipe du 3e degré",2017,3.525,1223.0,6.032
+"Personnel occasionnel, chef d'équipe du 3e degré",2018,3.749,1314.2,5.97
+"Personnel occasionnel, chef d'équipe du 3e degré",2019,3.993,1403.5,5.954
+"Personnel occasionnel, chef d'équipe du 3e degré",2020,4.076,1482.6,5.753
+"Personnel occasionnel, chef d'équipe du 3e degré",2021,4.098,1567.2,5.472
+"Personnel occasionnel, chef d'équipe du 3e degré",2022,4.34,1697.4,5.351
+"Personnel occasionnel, chef d'équipe du 3e degré",2023,4.633,1855.7,5.225
+"Personnel occasionnel, chef d'équipe du 3e degré",2024,4.946,1986.0,5.212
+"Personnel occasionnel, chef d'équipe du 3e degré",2025,4.946,2092.7,4.946

@@ -1,0 +1,65 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-09
+# séries (tunisia_data) : cc-grille-assurances, ipc-longue-periode, bct-ipc-base2015
+# sources (citation) : @cc-assurances-avenant3-1993, @cc-assurances-avenant4-1996, @cc-assurances-avenant5-1999, @cc-assurances-avenant6-2002, @cc-assurances-avenant7-2007, @cc-assurances-avenant8-2009, @cc-assurances-avenant9-2012, @cc-assurances-avenants-10-11, @cc-assurances-avenant11-grille-2015, @cc-assurances-avenant12-2016, @cc-assurances-avenant13-2017, @cc-assurances-avenant14-2019, @cc-assurances-avenant15-2022, @decret2026-68, @bct-ra, @ins-annuaire
+# fiches : sources/bct-archives.md
+# méthode/hypothèses : DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Convention collective nationale, puis sectorielle, des assurances : salaire de base de deux cases de la grille, en dinars courants par mois à chaque date d'effet (1993-2021) et en dinars de 2025 par mois, en moyenne de l'année (1994-2025)
+Case de la grille,Année,"Salaire de base, moyenne de l'année (dinars courants par mois)",Indice des prix à la consommation (base 100 en 1970),Salaire de base (dinars de 2025 par mois)
+"Échelle 1, échelon 1",1994,187.985,504.5,779.8
+"Échelle 1, échelon 1",1995,199.725,536.0,779.8
+"Échelle 1, échelon 1",1996,215.117,555.9,809.8
+"Échelle 1, échelon 1",1997,233.117,576.5,846.2
+"Échelle 1, échelon 1",1998,251.117,594.5,884.0
+"Échelle 1, échelon 1",1999,270.867,610.5,928.5
+"Échelle 1, échelon 1",2000,291.867,628.3,972.1
+"Échelle 1, échelon 1",2001,312.867,640.5,1022.2
+"Échelle 1, échelon 1",2002,334.45,658.6,1062.7
+"Échelle 1, échelon 1",2003,356.45,676.5,1102.7
+"Échelle 1, échelon 1",2004,378.45,701.0,1129.8
+"Échelle 1, échelon 1",2005,401.034,715.3,1173.3
+"Échelle 1, échelon 1",2006,424.034,745.0,1191.1
+"Échelle 1, échelon 1",2007,447.034,770.6,1214.0
+"Échelle 1, échelon 1",2008,475.867,808.4,1231.9
+"Échelle 1, échelon 1",2009,508.867,837.0,1272.3
+"Échelle 1, échelon 1",2010,541.867,873.9,1297.6
+"Échelle 1, échelon 1",2011,584.784,904.8,1352.5
+"Échelle 1, échelon 1",2012,643.534,955.1,1410.0
+"Échelle 1, échelon 1",2013,670.617,1013.5,1384.7
+"Échelle 1, échelon 1",2014,716.7,1069.0,1403.0
+"Échelle 1, échelon 1",2015,801.534,1119.5,1498.3
+"Échelle 1, échelon 1",2016,896.95,1161.2,1616.5
+"Échelle 1, échelon 1",2017,996.95,1223.0,1705.9
+"Échelle 1, échelon 1",2018,1114.45,1314.2,1774.6
+"Échelle 1, échelon 1",2019,1244.45,1403.5,1855.6
+"Échelle 1, échelon 1",2020,1333.617,1482.6,1882.4
+"Échelle 1, échelon 1",2021,1531.95,1567.2,2045.6
+"Échelle 1, échelon 1",2022,1598.617,1697.4,1970.9
+"Échelle 1, échelon 1",2023,1598.617,1855.7,1802.8
+"Échelle 1, échelon 1",2024,1598.617,1986.0,1684.5
+"Échelle 1, échelon 1",2025,1598.617,2092.7,1598.6
+"Échelle 21, échelon 14",2000,858.567,628.3,2859.7
+"Échelle 21, échelon 14",2001,890.567,640.5,2909.8
+"Échelle 21, échelon 14",2002,923.15,658.6,2933.3
+"Échelle 21, échelon 14",2003,956.15,676.5,2957.8
+"Échelle 21, échelon 14",2004,989.15,701.0,2952.9
+"Échelle 21, échelon 14",2005,1026.817,715.3,3004.1
+"Échelle 21, échelon 14",2006,1067.817,745.0,2999.5
+"Échelle 21, échelon 14",2007,1108.817,770.6,3011.2
+"Échelle 21, échelon 14",2008,1160.9,808.4,3005.2
+"Échelle 21, échelon 14",2009,1220.9,837.0,3052.6
+"Échelle 21, échelon 14",2010,1280.9,873.9,3067.4
+"Échelle 21, échelon 14",2011,1364.817,904.8,3156.7
+"Échelle 21, échelon 14",2012,1474.567,955.1,3230.9
+"Échelle 21, échelon 14",2013,1522.9,1013.5,3144.5
+"Échelle 21, échelon 14",2014,1598.733,1069.0,3129.7
+"Échelle 21, échelon 14",2015,1734.567,1119.5,3242.5
+"Échelle 21, échelon 14",2016,1885.067,1161.2,3397.3
+"Échelle 21, échelon 14",2017,2043.067,1223.0,3496.0
+"Échelle 21, échelon 14",2018,2218.567,1314.2,3532.8
+"Échelle 21, échelon 14",2019,2406.567,1403.5,3588.4
+"Échelle 21, échelon 14",2020,2534.4,1482.6,3577.4
+"Échelle 21, échelon 14",2021,2819.983,1567.2,3765.6
+"Échelle 21, échelon 14",2022,2917.9,1697.4,3597.5
+"Échelle 21, échelon 14",2023,2917.9,1855.7,3290.6
+"Échelle 21, échelon 14",2024,2917.9,1986.0,3074.7
+"Échelle 21, échelon 14",2025,2917.9,2092.7,2917.9

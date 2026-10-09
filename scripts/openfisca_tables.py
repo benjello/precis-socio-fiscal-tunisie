@@ -86,8 +86,12 @@ PAQUETS = {
         # taux majoré (openfisca-tunisia#425, PR #480) : en deçà,
         # `fiscalite_indirecte/tva/taux_intermediaire` et `taux_majore` n'existent pas, et le
         # tableau des générations de taux comme la série de sa figure ne pourraient être
-        # engendrés.
-        "version_minimale": (0, 121),
+        # engendrés. La 0.122 verse les grilles de salaires de trois conventions collectives
+        # sectorielles — textile, bâtiment et travaux publics, assurances —, sous
+        # `marche_travail/conventions_collectives/` (openfisca-tunisia PR #482) : en deçà, ce
+        # nœud n'existe pas, et l'annexe « Les conventions collectives, branche par branche »
+        # du volume « Marché du travail » ne pourrait être engendrée.
+        "version_minimale": (0, 122),
     },
 }
 
@@ -328,19 +332,47 @@ def charge_parametre(chemin_relatif: str, paquet: str | None = None) -> dict[str
     """Charge un YAML de paramètre, chemin relatif à la racine du paquet.
 
     Exemple : "parameters/impot_revenu/bareme.yaml".
+
+    PARAMÈTRE LOGÉ DANS UN FICHIER DE NŒUD. Un fichier peut porter plusieurs paramètres, un
+    par clé — `…/salaire_base/echelle_1.yaml` porte `echelon_1`. Un tel paramètre se désigne
+    comme s'il avait son fichier, `…/salaire_base/echelle_1/echelon_1.yaml` : quand ce
+    fichier n'existe pas, le fichier du nœud est chargé et l'on y descend clé par clé. Le
+    chemin reste ainsi celui de la page publique du paramètre (`url_parametre`).
     """
     if yaml is None:
         return None
     racine = _racine_paquet(paquet)
     if racine is None:
         return None
-    try:
+
+    def lit(elements):
         ref = racine
-        for element in chemin_relatif.split("/"):
+        for element in elements:
             ref = ref / element
         return yaml.safe_load(ref.read_text(encoding="utf-8"))
+
+    elements = chemin_relatif.split("/")
+    try:
+        return lit(elements)
     except Exception:
-        return None
+        pass
+    noms = elements[:-1] + [elements[-1].removesuffix(".yaml")]
+    for coupe in range(len(noms) - 1, 0, -1):
+        try:
+            donnees = lit(noms[:coupe - 1] + [f"{noms[coupe - 1]}.yaml"])
+        except Exception:
+            continue
+        return descend(donnees, noms[coupe:])
+    return None
+
+
+def descend(donnees: Any, cles: list[str]) -> dict[str, Any] | None:
+    """Le paramètre logé sous `cles` dans un fichier de nœud déjà chargé, ou None. Pure."""
+    for cle in cles:
+        if not isinstance(donnees, dict) or cle not in donnees:
+            return None
+        donnees = donnees[cle]
+    return donnees if isinstance(donnees, dict) else None
 
 
 # ------------------------------------------------------------------- lecture datée

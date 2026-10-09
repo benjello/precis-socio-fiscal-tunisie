@@ -20,6 +20,9 @@ pas encore engendrée : ses pages publiques n'existent pas avant la publication 
   - La série brute `marche-travail-smig-smag` (`_seriescache/`), que lisent les figures de
     la longue période, et ses liens « Base législative » en deux langues.
 
+  - Les grilles des conventions collectives de branche, case par case, pour l'annexe du
+    volume : `generate_conventions_collectives_tables.py`, appelé en fin de `main()`.
+
 CE QUI NE L'EST PAS. La composition du SMIG — salaire de base et indemnité complémentaire
 provisoire — est exposée d'après les textes, en prose : la série du salaire de base ne couvre
 que 2008-2014.
@@ -37,6 +40,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 import openfisca_tables as ot  # noqa: E402
+import generate_conventions_collectives_tables as conventions  # noqa: E402
 
 MT = "parameters/marche_travail"
 RACINE = Path(__file__).parent.parent / "precis"
@@ -271,7 +275,10 @@ def main() -> int:
             return 1
         print(f"✓ {langue} : SMIG ({len(PERIODES_SMIG)} périodes), SMAG "
               f"({len(PERIODES_SMAG)} périodes), indemnités spéciales")
-    return serie_figures()
+    # Les grilles des conventions collectives de branche : un générateur à part, qui
+    # parcourt son nœud sans nommer de branche ; lancé d'ici pour être gardé par le
+    # contrôle de fraîcheur, qui n'appelle que ce script pour le livre.
+    return serie_figures() or conventions.main()
 
 
 if __name__ == "__main__":

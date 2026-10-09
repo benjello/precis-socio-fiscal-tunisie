@@ -547,6 +547,17 @@ def marque_rupture(ax, annee: int, texte: str | None = None):
 IPC_ESCALIER = ("ipc-longue-periode", "annee", "indice_base1970")
 
 
+def _indice_escalier(ipc) -> dict[int, float]:
+    """L'indice des prix par année : lu dans une série (série, colonne de l'année, colonne
+    de l'indice), ou repris tel quel d'un dictionnaire {année: indice} — celui d'un livre qui
+    prolonge l'indice au-delà de sa dernière année, par exemple."""
+    if isinstance(ipc, dict):
+        return {int(a): float(i) for a, i in ipc.items()}
+    serie_ipc, col_annee, col_indice = ipc
+    return {int(a): float(i) for a, i in zip(series(serie_ipc)[col_annee],
+                                             series(serie_ipc)[col_indice])}
+
+
 def abscisse_date(date_iso: str) -> float:
     """Date d'effet -> année décimale : le 1er juillet 1988 tombe au milieu de 1988."""
     d = _dt.date.fromisoformat(str(date_iso)[:10])
@@ -629,13 +640,16 @@ def fig_escalier(series_id: str, courbes: dict, *, fin: int, colonne: str = "par
                  xlabel: str | None = None, annotations: dict | None = None,
                  etiquettes_x: dict | None = None, xlim=None, ylim=None, yticks=None,
                  log: bool = False, figsize=(9.5, 5.6), ncol: int | None = None,
-                 supprime: str | None = None):
+                 supprime: str | None = None, format_infobulle=None):
     """Les grandeurs d'une série longue en escalier, chaque marche étiquetée de sa valeur.
 
     `courbes`       : {clé: (libellé de légende, couleur)}, dans l'ordre du tracé.
     `fin`           : dernière année tracée ; les traits courent jusqu'à son 31 décembre. À
                       n'employer que si la dernière valeur de chaque grandeur vaut encore.
     `format_valeur` : valeur -> étiquette de marche (« 17 % », « 150 D ») ; à défaut `%g`.
+    `format_infobulle` : valeur -> montant de l'infobulle ; à défaut `format_valeur`. Sert
+                      quand les marches, trop nombreuses, ne sont pas étiquetées
+                      (`format_valeur` rendant une chaîne vide) : le survol garde le montant.
     `annotations`   : {(clé, date d'effet): texte} — les mentions propres à la figure
                       (« créé hors du code », « supprimé au… »), posées sous le point, ou à
                       sa droite pour une suppression. Un dictionnaire `{"texte": …, "xytext":
@@ -655,6 +669,7 @@ def fig_escalier(series_id: str, courbes: dict, *, fin: int, colonne: str = "par
     apply_lang_font()
     ft = fig_text
     formate = format_valeur or (lambda v: f"{v:g}".replace(".", ","))
+    formate_bulle = format_infobulle or formate
     annotations = annotations or {}
 
     def mention(cle, date, xy, couleur, suppression=False):
@@ -705,15 +720,23 @@ def fig_escalier(series_id: str, courbes: dict, *, fin: int, colonne: str = "par
                                 textcoords="offset points", ha="left", va="bottom",
                                 fontsize=8.5, fontweight="bold", color=couleur, zorder=5)
             mention(cle, date, (x, v), couleur)
-            infobulle(p, bulle + formate(v) + suite)
+            infobulle(p, bulle + formate_bulle(v) + suite)
         if lignes:
             poignees.append(Line2D([], [], color=couleur, lw=2.2, marker="o", ms=5,
                                    label=ft(libelle)))
     # Les graduations sont les dates d'effet elles-mêmes, et la dernière année tracée.
     graduations = sorted(dates)
-    ax.set_xticks([abscisse_date(g) for g in graduations] + [fin])
-    ax.set_xticklabels([ft((etiquettes_x or {}).get(g, g[:4])) for g in graduations]
-                       + [str(fin)])
+    positions = [abscisse_date(g) for g in graduations]
+    etiquettes = [ft((etiquettes_x or {}).get(g, g[:4])) for g in graduations]
+    if fin in positions:
+        # Une date d'effet au 1er janvier de la dernière année : une seule graduation. Deux
+        # graduations au même point recevraient la même étiquette, écrite deux fois.
+        etiquettes[positions.index(fin)] = str(fin)
+    else:
+        positions.append(fin)
+        etiquettes.append(str(fin))
+    ax.set_xticks(positions)
+    ax.set_xticklabels(etiquettes)
     for g in graduations:
         ax.axvline(abscisse_date(g), color="#8b949e", lw=0.6, ls=(0, (1, 3)), zorder=1)
     if xlim is None:
@@ -765,7 +788,8 @@ def table_escalier(series_id: str, courbes: dict, *, colonne: str = "parametre",
 
 
 def constants_escalier(series_id: str, courbes: dict, *, colonne: str = "parametre",
-                       base: int | None = None, ipc: tuple[str, str, str] = IPC_ESCALIER):
+                       base: int | None = None,
+                       ipc: tuple[str, str, str] | dict = IPC_ESCALIER):
     """Les montants d'une série longue en dinars constants : (lignes, année de base).
 
     Lignes : [(clé, année, moyenne annuelle en dinars courants, indice, montant en dinars de
@@ -773,10 +797,9 @@ def constants_escalier(series_id: str, courbes: dict, *, colonne: str = "paramet
     par défaut la dernière année de l'indice. Dinars constants : moyenne annuelle × indice de
     l'année de base ÷ indice de l'année ; la moyenne est celle de `moyenne_annuelle_escalier`.
     NE VAUT QUE POUR DES MONTANTS EN DINARS : un taux ne se déflate pas.
+    `ipc` : la série de l'indice, ou un dictionnaire {année: indice} (`_indice_escalier`).
     """
-    serie_ipc, col_annee, col_indice = ipc
-    indice = {int(a): float(i) for a, i in zip(series(serie_ipc)[col_annee],
-                                               series(serie_ipc)[col_indice])}
+    indice = _indice_escalier(ipc)
     base = base or max(indice)
     lignes = []
     for cle, serie in serie_escalier(series_id, courbes, colonne=colonne).items():
@@ -792,7 +815,7 @@ def constants_escalier(series_id: str, courbes: dict, *, colonne: str = "paramet
 def fig_escalier_constants(series_id: str, courbes: dict, *, colonne: str = "parametre",
                            base: int | None = None, format_valeur=None, ylabel: str = "",
                            log: bool = False, figsize=(9.5, 5.6), ncol: int | None = None,
-                           ipc: tuple[str, str, str] = IPC_ESCALIER):
+                           ipc: tuple[str, str, str] | dict = IPC_ESCALIER):
     """Les mêmes grandeurs en dinars de l'année de base : un point par année.
 
     Entre deux relèvements, la courbe descend au rythme des prix ; un relèvement la remonte
@@ -840,15 +863,28 @@ def fig_escalier_constants(series_id: str, courbes: dict, *, colonne: str = "par
 
 def table_escalier_constants(series_id: str, courbes: dict, *, colonne: str = "parametre",
                              base: int | None = None,
-                             ipc: tuple[str, str, str] = IPC_ESCALIER):
-    """Une ligne par grandeur et par année : moyenne courante, indice, dinars constants."""
+                             ipc: tuple[str, str, str] | dict = IPC_ESCALIER,
+                             libelles: dict | None = None, decimales: int = 1):
+    """Une ligne par grandeur et par année : moyenne courante, indice, dinars constants.
+
+    `libelles` remplace des intitulés — `parametre`, `moyenne`, `ipc`, `reel` —, pour dire
+    l'unité de la grandeur (dinars par heure, par mois) et la base de l'indice ; `decimales` arrondit l'indice et le montant
+    en dinars constants (1 par défaut ; 3 pour un salaire horaire, en millimes).
+    """
     import pandas as pd
 
     lignes, base = constants_escalier(series_id, courbes, colonne=colonne, base=base, ipc=ipc)
+    indice_brut = not isinstance(ipc, dict)  # l'indice d'une série s'écrit tel qu'elle le donne
+
+    def mot(cle):
+        return ((libelles or {}).get(cle) or t(f"esc_{cle}")).format(base=base)
+
     return pd.DataFrame([{
-        t("esc_parametre"): courbes[cle][0], t("esc_annee"): annee,
-        t("esc_moyenne"): round(moyenne, 3), t("esc_ipc"): indice,
-        t("esc_reel").format(base=base): round(reel, 1),
+        mot("parametre"): courbes[cle][0],
+        t("esc_annee"): annee,
+        mot("moyenne"): round(moyenne, 3),
+        mot("ipc"): indice if indice_brut else round(indice, 1),
+        mot("reel"): round(reel, decimales),
     } for cle, annee, moyenne, indice, reel in lignes])
 
 
@@ -856,7 +892,9 @@ def figure_escalier(series_id: str, courbes: dict, *, slug: str, caption: str, f
                     note_lecture: str | None = None, constants: bool = False,
                     base: int | None = None, ylabel_constants: str = "",
                     libelles: dict | None = None, generated: str | None = None,
-                    nominal: bool = False, **options) -> None:
+                    nominal: bool = False, ipc: tuple[str, str, str] | dict = IPC_ESCALIER,
+                    series_ipc: tuple[str, ...] = (IPC_ESCALIER[0],),
+                    decimales_constants: int = 1, **options) -> None:
     """LA DÉCLARATION : trace une série longue en escalier et la rend par `figure_tabs`.
 
     À appeler comme `figure_tabs`, dans un chunk `#| output: asis` étiqueté `fig-…`. La
@@ -876,7 +914,10 @@ def figure_escalier(series_id: str, courbes: dict, *, slug: str, caption: str, f
     (`base`, par défaut la dernière année de l'indice des prix), un point par année —, les
     données deviennent la série annuelle (`table_escalier_constants`) et l'indice des prix
     s'ajoute aux séries sourcées. `ylabel_constants` peut porter `{base}`. L'indice est celui d'`IPC_ESCALIER` ; ses clés de citation
-    doivent figurer dans la bibliographie du livre.
+    doivent figurer dans la bibliographie du livre. Un livre qui prolonge l'indice au-delà
+    de sa dernière année le passe par `ipc` — un dictionnaire {année: indice} — et nomme par
+    `series_ipc` les séries dont il le tire, citées dans l'onglet « Sources ».
+    `decimales_constants` arrondit les dinars constants de l'onglet « Données ».
     """
     communs = {c: options[c] for c in ("colonne",) if c in options}
     fig = fig_escalier(series_id, courbes, fin=fin, **options)
@@ -886,14 +927,16 @@ def figure_escalier(series_id: str, courbes: dict, *, slug: str, caption: str, f
         figure_tabs(fig, table, series_id, slug=slug, caption=caption,
                     note_lecture=note_lecture, generated=generated, nominal=nominal)
         return
-    _lignes, base = constants_escalier(series_id, courbes, base=base, **communs)
+    _lignes, base = constants_escalier(series_id, courbes, base=base, ipc=ipc, **communs)
     reel = fig_escalier_constants(
-        series_id, courbes, base=base, ylabel=ylabel_constants.format(base=base),
+        series_id, courbes, base=base, ipc=ipc, ylabel=ylabel_constants.format(base=base),
         **{c: options[c] for c in ("colonne", "format_valeur", "log", "figsize", "ncol")
            if c in options})
     figure_tabs([(t("esc_courants"), fig), (t("esc_constants").format(base=base), reel)],
-                table_escalier_constants(series_id, courbes, base=base, **communs),
-                series_id, IPC_ESCALIER[0], slug=slug, caption=caption,
+                table_escalier_constants(series_id, courbes, base=base, ipc=ipc,
+                                         libelles=libelles, decimales=decimales_constants,
+                                         **communs),
+                series_id, *series_ipc, slug=slug, caption=caption,
                 note_lecture=note_lecture, generated=generated, nominal=False)
 
 

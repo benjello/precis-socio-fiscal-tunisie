@@ -1,0 +1,326 @@
+# Les conventions collectives, branche par branche {#sec-mt-cc-annexe .domicile-unique}
+
+Cette annexe donne, pour les conventions collectives de branche du textile, du bâtiment et des travaux publics, et des assurances, le salaire de base du bas et du haut de la grille à chacune de ses dates d'effet, et mène, pour chaque grille, à sa base législative : ses cases, date par date, avec le texte qui fixe chaque montant. Elle dit aussi, pour chaque branche, comment la convention est née, ce qu'est sa grille et quels avenants l'ont révisée. La lecture d'ensemble — la convention cadre de 1973, les trois étages de salaires, l'inventaire des branches et l'écart entre le bas des grilles et le salaire minimum — est au chapitre des conventions collectives (@sec-mt-conventions, @sec-mt-cc-smig).
+
+```{python}
+#| echo: false
+#| output: false
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+sys.path.insert(0, ".")
+from figures import conventions as cc
+```
+
+## Ce que l'annexe donne, et comment la lire {#sec-mt-cc-annexe-lecture}
+
+Les branches, la création de leur convention et les cases de la grille tracées ici tiennent en un tableau (@tbl-cc-annexe-branches).
+
+```{python}
+#| echo: false
+#| output: asis
+print(cc.tableau_branches({
+    "textile": ("signée le [26 juillet 1974]{.insecable}", "[29 août 1974]{.insecable}",
+                "[1^er^ juin 1974]{.insecable}"),
+    "batiment": ("signée le [16 janvier 1975]{.insecable}", "[12 mars 1975]{.insecable}",
+                 "[1^er^ juin 1974]{.insecable}"),
+    "assurances": ("signée le [24 juillet 1975]{.insecable}",
+                   "[24 décembre 1975]{.insecable}", "[1^er^ janvier 1975]{.insecable}"),
+}))
+print("\n: Les conventions de branche de l'annexe : signature, agrément, date d'effet et "
+      "cases de la grille tracées, avec leur période {#tbl-cc-annexe-branches "
+      "tbl-colwidths=\"[14,18,15,14,39]\"}\n")
+```
+
+- **Chaque figure trace le bas et le haut de la grille.** Une grille compte des dizaines de cases — une par catégorie et par échelon. La figure d'une branche en suit, à chaque date d'effet, la plus basse et une case du haut de la grille.
+- **Chaque figure a deux vues.** En dinars courants, une marche par date d'effet. En dinars constants — ceux de la dernière année dont l'indice des prix à la consommation est publié —, un point par année : la moyenne des montants en vigueur dans l'année, rapportée aux prix de l'année de référence, selon la règle suivie pour le salaire minimum (@fig-mt-sm-evolution). Cette seconde vue dit ce que la grille permet d'acheter : entre deux grilles, la courbe descend au rythme des prix.
+- **Une valeur vaut de sa date d'effet à la veille de la suivante.** La date d'effet est celle que la grille énonce elle-même ; elle précède souvent de plusieurs mois la signature de l'avenant et l'arrêté qui l'agrée.
+- **Ce sont des salaires de base.** Les indemnités et les primes de chaque convention s'y ajoutent. Les séries commencent à la première grille qui comprend l'[indemnité complémentaire provisoire](#g-indemnite-complementaire-provisoire) : les grilles antérieures ne mesurent pas la même grandeur.
+- **« Non publiée » n'est ni zéro ni la valeur précédente.** [Le décret n° 2026-68](#r-cc-annexe-2026-68) relève de 5 %, à compter du 1^er^ janvier 2026, les [salaires de base](#g-salaire-de-base-conventionnel) de tous les échelons des dernières grilles annexées aux conventions sectorielles. Pour le bâtiment et pour les assurances, la grille qui en résulte n'est pas donnée ici : la dernière grille n'est pas prolongée au-delà du 31 décembre 2025, et le trait de la figure s'arrête au 1^er^ janvier 2026, sur un cercle creux qui porte « non publiée » (@sec-mt-cc-2026). Pour les assurances, la façon dont ce décret s'applique à la branche n'est pas établie ici.
+- **Sous chaque figure, la base législative de la grille.** Un lien mène à la page de la grille, qui donne les cases de la grille à toutes leurs dates d'effet, avec le texte et la référence de chaque montant. L'onglet « Données » de la figure donne, année par année, les cases tracées : leur moyenne en dinars courants, l'indice des prix et le montant en dinars constants.
+
+:::: {.chronologie-repliable titre="Textes communs aux branches de l'annexe : publication des avenants dans l'édition arabe (1996) et hausse des grilles par décret (2026)"}
+
+| Date du texte | Texte | Ce qu'il change pour les grilles |
+|---|---|---|
+| []{#r-cc-annexe-1996-arabe}[24 juillet 1996]{.insecable} | arrêtés d'agrément d'avenants à quarante conventions [@arretes-1996-07-24-avenants-quarante-conventions, p. 1606] | avenants et grilles publiés dans l'édition française du *Journal officiel* → publiés dans la seule édition arabe |
+| []{#r-cc-annexe-2026-68}[30 avril 2026]{.insecable} | décret n° 2026-68 [@decret2026-68, art. 1] | grilles révisées par avenant agréé → hausse de 5 % par an, en 2026, 2027 et 2028, des salaires de base de tous les échelons des dernières grilles annexées, à compter du 1^er^ janvier 2026 |
+
+: Les textes communs aux branches de l'annexe, 1996-2026 {#tbl-cc-annexe-communs}
+
+::::
+
+## Le textile {#sec-mt-cc-annexe-textile}
+
+La convention collective nationale du textile fixe, depuis 1974, les salaires des agents payés à l'heure et des agents payés au mois de la branche ; une sentence arbitrale, puis des avenants numérotés, la révisent (@sec-mt-cc-annexe-textile-avenants).
+
+### Création {#sec-mt-cc-annexe-textile-creation}
+
+- **Signature et agrément.** La convention est [signée le 26 juillet 1974](#r-cc-textile-convention) et [agréée par arrêté du ministre des affaires sociales du 29 août 1974](#r-cc-textile-agrement). Son texte paraît au *Journal officiel* en décembre 1974.
+- **Date d'effet.** [Son article 53](#r-cc-textile-effet) la fait entrer en vigueur le 1^er^ juin 1974, avant sa signature.
+- **Intitulé.** Les avenants l'appellent « convention collective sectorielle du textile » à partir de [l'avenant n° 9](#r-cc-textile-av9), agréé en 2006.
+
+### La grille {#sec-mt-cc-annexe-textile-grille}
+
+Chaque avenant de salaires porte deux grilles par date d'effet.
+
+- **La grille des agents payés à l'heure**, celle du personnel d'exécution, en dinars par heure. Elle compte sept catégories — I, II, III-1, III-2, III-3, IV-1 et IV-2 — et, dans chacune, des échelons numérotés à partir de 0, l'échelon 0 étant celui de la confirmation. Les échelons vont de 0 à 16 dans [la convention de 1974](#r-cc-textile-convention), et de 0 à 20 dans les grilles de [2011](#r-cc-textile-av11) et des années suivantes ; la date du passage de 16 à 20 échelons n'est pas établie ici. La grille ne dit pas à quelle durée hebdomadaire du travail elle se rapporte.
+- **La grille des agents payés au mois**, en dinars par mois, de dix-sept catégories.
+- **Ce que le salaire de base comprend.** [L'avenant n° 5](#r-cc-textile-av5) intègre l'indemnité complémentaire provisoire aux salaires de base à compter du 1^er^ mai 1994 : c'est la première grille des séries de cette section (@sec-mt-cc-annexe-textile-evolution). La grille d'origine et celles de 1990 à 1992, qui ne la comprennent pas, sont données au chapitre (@tbl-mt-cc-grilles-hors-series).
+
+### Le bas et le haut de la grille, à chaque date d'effet {#sec-mt-cc-annexe-textile-evolution}
+
+La figure suit, dans la grille des agents payés à l'heure, la catégorie I, échelon 0, qui est le salaire le plus bas de la grille ; et la catégorie IV-2, échelon 0, qui est l'entrée de la catégorie la plus élevée — le sommet de la grille étant le dernier échelon de cette catégorie (@fig-mt-cc-annexe-textile). Sous la figure, la base législative de la grille en donne les cases, date par date.
+
+- **La grille de 2005 prend effet le 15 juin**, quand les autres grilles de 1994 à 2012 prennent effet un 1^er^ mai : la grille de [l'avenant n° 9](#r-cc-textile-av9) porte cette date « à titre exceptionnel ».
+- **La grille du 1^er^ janvier 2026 est publiée** : [l'avenant n° 18](#r-cc-textile-av18), agréé en 2024, la fixe à l'avance, avant le décret de 2026 (@sec-mt-cc-2026).
+
+```{python}
+#| label: fig-mt-cc-annexe-textile
+#| echo: false
+#| output: asis
+cc.figure(
+    "textile",
+    sources=["avenant5-textile-1994", "avenant6-textile-1996", "avenant7-textile-1999",
+             "avenant8-textile-2002", "avenant9-textile-2006", "avenant10-textile-2009",
+             "avenant11-textile-2011", "avenant12-textile-2013", "avenants-2014-textile-btp",
+             "avenant14-textile-2016", "avenant15-textile-2017", "avenant16-textile-2019",
+             "avenant17-textile-2022", "avenant18-textile-2024"],
+    note_lecture=(
+        "En dinars courants, chaque marche est une grille : le trait court de sa date d'effet à la veille de la "
+        "suivante. Seules la première et la dernière valeur de chaque case sont écrites ; "
+        "les autres se lisent au survol d'un point ou dans la base législative de la grille, sous la figure. Ce sont des salaires de base, hors indemnités de "
+        "la convention."),
+    generated="{{< meta date >}}",
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+print(cc.base_legislative("textile"))
+```
+
+### Les avenants {#sec-mt-cc-annexe-textile-avenants}
+
+La convention est révisée par une sentence arbitrale en 1983, puis, à partir de 1989, par des avenants numérotés à partir de 2 ; aucun texte ne porte le numéro 1. De 1996 à 2010, chaque avenant fixe à l'avance les grilles de trois années. Depuis [l'avenant n° 6](#r-cc-textile-av6), agréé [le 24 juillet 1996](#r-cc-annexe-1996-arabe), les avenants et leurs grilles ne paraissent que dans l'édition arabe du *Journal officiel*.
+
+:::: {.chronologie-repliable titre="Convention collective du textile : la convention de 1974, la sentence arbitrale de 1983 et les avenants n° 2 à 18 — signature, arrêté d'agrément, Journal officiel et dates d'effet des grilles, 1974-2024"}
+
+| Texte | Signature | Arrêté d'agrément | *Journal officiel* | Dates d'effet des grilles tracées |
+|---|---|---|---|---|
+| []{#r-cc-textile-agrement}Convention, arrêté d'agrément | [26 juillet 1974]{.insecable} | [29 août 1974]{.insecable} [@arrete-1974-08-29-cc-textile] | n° 55 du [30 août 1974]{.insecable}, p. 1936 | — |
+| []{#r-cc-textile-convention}Convention, texte et grilles | [26 juillet 1974]{.insecable} | [29 août 1974]{.insecable} | n° 76 des 10 et [12 décembre 1974]{.insecable}, p. 2715-2733 ; grille horaire p. 2729 [@convention-textile-1974, p. 2729] | — |
+| []{#r-cc-textile-effet}Convention, article 53 | [26 juillet 1974]{.insecable} | [29 août 1974]{.insecable} | même numéro, p. 2720 [@convention-textile-1974, art. 53, p. 2720] | entrée en vigueur de la convention : [1^er^ juin 1974]{.insecable} |
+| Sentence arbitrale (chaussure, textile, confection, bonneterie) | [27 juin 1983]{.insecable} | [27 juin 1983]{.insecable} | n° 57 des 30 août et [2 septembre 1983]{.insecable} | — |
+| Avenant n° 2 | [22 février 1989]{.insecable} | [22 mars 1989]{.insecable} | n° 21 du [24 mars 1989]{.insecable}, p. 524-528 | — |
+| Avenant n° 3 | [14 juillet 1990]{.insecable} | [16 août 1990]{.insecable} [@avenants-1990-textile-btp] | n° 54 des 21 et [24 août 1990]{.insecable}, p. 1102-1109 | — |
+| Avenant n° 4 | [12 août 1993]{.insecable} | [7 septembre 1993]{.insecable} | n° 70 du [17 septembre 1993]{.insecable}, p. 1518-1525 | — |
+| []{#r-cc-textile-av5}Avenant n° 5 | [12 août 1994]{.insecable} | [22 septembre 1994]{.insecable} [@avenant5-textile-1994, p. 1637] | n° 78 du [4 octobre 1994]{.insecable}, p. 1637-1641 | 1^er^ mai 1994 et 1995 |
+| []{#r-cc-textile-av6}Avenant n° 6 | [23 juillet 1996]{.insecable} | [24 juillet 1996]{.insecable} [@avenant6-textile-1996] | n° 60 du [26 juillet 1996]{.insecable}, édition arabe | 1^er^ mai 1996, 1997 et 1998 |
+| Avenant n° 7 | [28 mai 1999]{.insecable} | [9 juin 1999]{.insecable} [@avenant7-textile-1999] | n° 48 du [15 juin 1999]{.insecable}, édition arabe | 1^er^ mai 1999, 2000 et 2001 |
+| Avenant n° 8 | [14 novembre 2002]{.insecable} | [25 novembre 2002]{.insecable} [@avenant8-textile-2002] | n° 97 du [29 novembre 2002]{.insecable}, édition arabe | 1^er^ mai 2002, 2003 et 2004 |
+| []{#r-cc-textile-av9}Avenant n° 9 | [29 décembre 2005]{.insecable} | [17 janvier 2006]{.insecable} [@avenant9-textile-2006] | n° 7 du [24 janvier 2006]{.insecable}, édition arabe | [15 juin 2005]{.insecable}, date fixée « à titre exceptionnel » ; 1^er^ mai 2006 et 2007 |
+| Avenant n° 10 | [28 janvier 2009]{.insecable} | [17 février 2009]{.insecable} [@avenant10-textile-2009] | n° 16 du [24 février 2009]{.insecable}, édition arabe | 1^er^ mai 2008, 2009 et 2010 |
+| []{#r-cc-textile-av11}Avenant n° 11 | [23 septembre 2011]{.insecable} | [11 octobre 2011]{.insecable} [@avenant11-textile-2011] | n° 78 du [14 octobre 2011]{.insecable}, édition arabe | [1^er^ mai 2011]{.insecable} |
+| Avenant n° 12 | [29 janvier 2013]{.insecable} | [19 février 2013]{.insecable} [@avenant12-textile-2013] | n° 16 du [22 février 2013]{.insecable}, édition arabe | [1^er^ mai 2012]{.insecable} |
+| Avenant n° 13 | [2 octobre 2014]{.insecable} | [17 octobre 2014]{.insecable} [@avenants-2014-textile-btp] | n° 90 du [7 novembre 2014]{.insecable}, édition arabe | [1^er^ mai 2014]{.insecable} |
+| Avenant n° 14 | [22 mars 2016]{.insecable} | [8 avril 2016]{.insecable} [@avenant14-textile-2016] | n° 30 du [12 avril 2016]{.insecable}, édition arabe | [1^er^ septembre 2015]{.insecable} |
+| Avenant n° 15 | [18 juillet 2017]{.insecable} | [14 août 2017]{.insecable} [@avenant15-textile-2017] | n° 66 du [18 août 2017]{.insecable}, édition arabe | [1^er^ août 2016]{.insecable} ; [1^er^ janvier 2018]{.insecable} |
+| Avenant n° 16 | [27 décembre 2018]{.insecable} | [21 janvier 2019]{.insecable} [@avenant16-textile-2019] | n° 11 du [5 février 2019]{.insecable}, édition arabe | 1^er^ janvier 2019 et 2020 |
+| Avenant n° 17 | [12 mai 2022]{.insecable} | [23 juin 2022]{.insecable} [@avenant17-textile-2022] | n° 71 du [24 juin 2022]{.insecable}, édition arabe | [1^er^ septembre 2021]{.insecable} ; [1^er^ mai 2022]{.insecable} |
+| []{#r-cc-textile-av18}Avenant n° 18 | [29 février 2024]{.insecable} | [8 avril 2024]{.insecable} [@avenant18-textile-2024] | n° 49 du [16 avril 2024]{.insecable}, édition arabe | 1^er^ janvier 2024, 2025 et 2026 |
+
+: La convention collective du textile et les textes qui la révisent, 1974-2024 {#tbl-cc-textile-avenants .sm tbl-colwidths="[14,21,21,22,22]"}
+
+Les dates de signature et d'agrément de la sentence arbitrale et des avenants sont celles que rappelle l'arrêté d'agrément de l'avenant n° 18. La dernière colonne donne les dates d'effet des grilles que trace la figure de la branche (@fig-mt-cc-annexe-textile) ; un tiret y marque un texte antérieur à cette série.
+
+<!-- TODO (documentaliste) : la sentence arbitrale de 1983 et les avenants n° 2 (1989) et n° 4
+(1993) n'ont pas de clé dans `references.json` ; leurs grilles ne sont pas établies. Pages des
+avenants n° 6 à 18 dans l'édition arabe : seules celles des grilles sont versées en amont,
+avec chaque valeur ; les pages de l'arrêté et de l'avenant restent à verser. Extension du champ par arrêté du
+5 mai 1976 (JORT n° 31 de 1976, p. 1048) : intitulé seul, à ouvrir avant de l'écrire. Notes
+docs/notes/marche-travail-conventions-collectives-fond.md, § B.1, et …-grilles-1996-2022.md. -->
+
+::::
+
+## Le bâtiment et les travaux publics {#sec-mt-cc-annexe-batiment}
+
+La convention collective nationale du bâtiment et des travaux publics fixe, depuis 1975, les salaires du personnel occasionnel, payé à l'heure, et du personnel administratif et technique, payé au mois ; des avenants numérotés la révisent depuis 1983 (@sec-mt-cc-annexe-batiment-avenants).
+
+### Création {#sec-mt-cc-annexe-batiment-creation}
+
+- **Signature et agrément.** La convention est [signée le 16 janvier 1975 et agréée par arrêté du ministre des affaires sociales du 12 mars 1975](#r-cc-btp-convention). Son texte paraît au *Journal officiel* le 25 mars 1975.
+- **Date d'effet.** [Son article 58](#r-cc-btp-effet) la fait entrer en application le 1^er^ juin 1974, avant sa signature.
+- **Intitulé.** Les avenants l'appellent « convention collective sectorielle du bâtiment et des travaux publics » à partir de [l'avenant n° 8](#r-cc-btp-av8), agréé en 2006.
+
+### La grille {#sec-mt-cc-annexe-batiment-grille}
+
+Chaque avenant de salaires porte deux grilles par date d'effet.
+
+- **La grille du personnel occasionnel**, en dinars par heure : un salaire par catégorie, sans échelon. Les catégories sont le manœuvre ordinaire, le manœuvre spécialisé, l'aide-ouvrier, l'ouvrier qualifié de première puis de deuxième catégorie, l'ouvrier hautement qualifié et le chef d'équipe, à trois degrés. L'ouvrier hautement qualifié n'a qu'une ligne dans les grilles de 1999 à 2007 ; [celle du 1^er^ mai 2008](#r-cc-btp-av9) le divise en deux niveaux. La grille ne dit pas à quelle durée hebdomadaire du travail elle se rapporte.
+- **La grille du personnel administratif et technique à traitement mensuel**, en dinars par mois, de dix-neuf catégories et onze échelons ; [en 1975](#r-cc-btp-convention), elle porte la mention « base : 48 heures/semaine ».
+- **Ce que le salaire de base comprend.** Chaque grille des séries de cette section (@sec-mt-cc-annexe-batiment-evolution) mentionne que ses salaires comprennent l'indemnité complémentaire provisoire. Les indemnités de présence et de transport de la convention s'y ajoutent. La grille d'origine et celle de 1990 sont données au chapitre (@tbl-mt-cc-grilles-hors-series).
+
+### Le bas et le haut de la grille, à chaque date d'effet {#sec-mt-cc-annexe-batiment-evolution}
+
+La figure suit, dans la grille du personnel occasionnel, le manœuvre ordinaire, qui est le salaire le plus bas de la grille, et le chef d'équipe du troisième degré, qui en est le plus élevé (@fig-mt-cc-annexe-batiment). Sous la figure, la base législative de la grille en donne les cases, date par date.
+
+- **Les grilles de [l'avenant n° 16](#r-cc-btp-av16) — 1^er^ décembre 2021, 1^er^ janvier 2023 et 1^er^ janvier 2024 — sont données d'après une reproduction.** Le fascicule de l'édition arabe qui les porte n'est pas en ligne ; ses pages sont reproduites par un site tiers.
+- **À compter du 1^er^ janvier 2026, le montant n'est pas publié** (@sec-mt-cc-annexe-lecture, @sec-mt-cc-2026).
+
+```{python}
+#| label: fig-mt-cc-annexe-batiment
+#| echo: false
+#| output: asis
+cc.figure(
+    "batiment",
+    sources=["avenant5-btp-1996", "avenant6-btp-1999", "avenant7-btp-2002",
+             "avenant8-btp-2006", "avenant9-btp-2009", "avenant10-btp-2011",
+             "avenant11-btp-2013", "avenants-2014-textile-btp", "avenant13-btp-2016",
+             "avenant14-btp-2017", "avenant15-btp-2018", "avenant16-btp-2022",
+             "paie-tunisie-2022-reproduction-jort-132", "decret2026-68"],
+    caveats=("Les grilles de l'avenant n° 16 (1er décembre 2021, 1er janvier 2023, "
+             "1er janvier 2024) sont celles des pages 3712 à 3714 de l'édition arabe du "
+             "Journal officiel n° 132 du 2 décembre 2022, telles qu'un site tiers les "
+             "reproduit."),
+    note_lecture=(
+        "En dinars courants, chaque marche est une grille : le trait court de sa date d'effet à la veille de la "
+        "suivante. Seules la première et la dernière valeur de chaque case sont écrites ; "
+        "les autres se lisent au survol d'un point ou dans la base législative de la grille, sous la figure. Le cercle creux du 1er janvier 2026 marque la date "
+        "à compter de laquelle le montant n'est pas publié : le trait s'y arrête. Les marches "
+        "du 1er décembre 2021, du 1er janvier 2023 et du 1er janvier 2024 sont les grilles "
+        "de l'avenant n° 16, données d'après la reproduction de l'édition arabe du Journal "
+        "officiel par un site tiers."),
+    generated="{{< meta date >}}",
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+print(cc.base_legislative("batiment"))
+```
+
+### Les avenants {#sec-mt-cc-annexe-batiment-avenants}
+
+Des avenants numérotés à partir de 1 révisent la convention depuis 1983. [L'avenant n° 5](#r-cc-btp-av5), agréé en octobre 1996, paraît encore en français, grilles comprises ; les suivants ne paraissent que dans l'édition arabe du *Journal officiel*. De 1996 à 2010, chaque avenant fixe à l'avance les grilles de trois années.
+
+:::: {.chronologie-repliable titre="Convention collective du bâtiment et des travaux publics : la convention de 1975 et les avenants n° 1 à 16 — signature, arrêté d'agrément, Journal officiel et dates d'effet des grilles, 1975-2022"}
+
+| Texte | Signature | Arrêté d'agrément | *Journal officiel* | Dates d'effet des grilles tracées |
+|---|---|---|---|---|
+| []{#r-cc-btp-convention}Convention, texte et grilles | [16 janvier 1975]{.insecable} | [12 mars 1975]{.insecable} | arrêté : n° 18 du [14 mars 1975]{.insecable}, p. 504 ; texte : n° 20 du [25 mars 1975]{.insecable}, p. 557-571 ; grilles p. 570 [@convention-btp-1975, p. 570] | — |
+| []{#r-cc-btp-effet}Convention, article 58 | [16 janvier 1975]{.insecable} | [12 mars 1975]{.insecable} | n° 20 du [25 mars 1975]{.insecable}, p. 565 [@convention-btp-1975, art. 58, p. 565] | entrée en application de la convention : [1^er^ juin 1974]{.insecable} |
+| Avenant n° 1 | [8 mars 1983]{.insecable} | [14 avril 1983]{.insecable} | n° 38 du [20 mai 1983]{.insecable} | — |
+| Avenant n° 2 | [12 juillet 1989]{.insecable} | [10 août 1989]{.insecable} | n° 58 du [29 août 1989]{.insecable}, p. 1312-1313 | — |
+| Avenant n° 3 | [14 juillet 1990]{.insecable} | [16 août 1990]{.insecable} [@avenants-1990-textile-btp] | n° 54 des 21 et [24 août 1990]{.insecable}, p. 1095-1101 | — |
+| Avenant n° 4 | [12 août 1993]{.insecable} | [7 septembre 1993]{.insecable} | n° 69 du [14 septembre 1993]{.insecable}, p. 1491-1497 | — |
+| []{#r-cc-btp-av5}Avenant n° 5 | [24 septembre 1996]{.insecable} | [16 octobre 1996]{.insecable} [@avenant5-btp-1996] | n° 86 du [25 octobre 1996]{.insecable}, édition française, p. 2148-2152 | 1^er^ mai 1996, 1997 et 1998 |
+| Avenant n° 6 | [28 mai 1999]{.insecable} | [9 juin 1999]{.insecable} [@avenant6-btp-1999] | n° 48 du [15 juin 1999]{.insecable}, édition arabe | 1^er^ mai 1999, 2000 et 2001 |
+| Avenant n° 7 | [14 novembre 2002]{.insecable} | [25 novembre 2002]{.insecable} [@avenant7-btp-2002] | n° 98 du [3 décembre 2002]{.insecable}, édition arabe | 1^er^ mai 2002, 2003 et 2004 |
+| []{#r-cc-btp-av8}Avenant n° 8 | [29 décembre 2005]{.insecable} | [17 janvier 2006]{.insecable} [@avenant8-btp-2006] | n° 7 du [24 janvier 2006]{.insecable}, édition arabe | 1^er^ mai 2005, 2006 et 2007 |
+| []{#r-cc-btp-av9}Avenant n° 9 | [28 janvier 2009]{.insecable} | [17 février 2009]{.insecable} [@avenant9-btp-2009] | n° 16 du [24 février 2009]{.insecable}, édition arabe | 1^er^ mai 2008, 2009 et 2010 |
+| Avenant n° 10 | [5 octobre 2011]{.insecable} | [14 octobre 2011]{.insecable} [@avenant10-btp-2011] | n° 81 du [25 octobre 2011]{.insecable}, édition arabe | [1^er^ mai 2011]{.insecable} |
+| Avenant n° 11 | [25 février 2013]{.insecable} | [8 mars 2013]{.insecable} [@avenant11-btp-2013] | n° 22 du [15 mars 2013]{.insecable}, édition arabe | [1^er^ mai 2012]{.insecable} |
+| Avenant n° 12 | [10 octobre 2014]{.insecable} | [27 octobre 2014]{.insecable} [@avenants-2014-textile-btp] | n° 90 du [7 novembre 2014]{.insecable}, édition arabe | [1^er^ mai 2014]{.insecable} |
+| Avenant n° 13 | [13 avril 2016]{.insecable} | [2 mai 2016]{.insecable} [@avenant13-btp-2016] | n° 37 du [6 mai 2016]{.insecable}, édition arabe | [1^er^ septembre 2015]{.insecable} |
+| Avenant n° 14 | [11 juillet 2017]{.insecable} | [30 août 2017]{.insecable} [@avenant14-btp-2017] | n° 72 du [8 septembre 2017]{.insecable}, édition arabe | [1^er^ août 2016]{.insecable} ; [1^er^ mai 2017]{.insecable} |
+| Avenant n° 15 | [26 novembre 2018]{.insecable} | [17 décembre 2018]{.insecable} [@avenant15-btp-2018] | n° 4 du [11 janvier 2019]{.insecable}, édition arabe | 1^er^ mai 2018 et 2019 |
+| []{#r-cc-btp-av16}Avenant n° 16 | [27 octobre 2022]{.insecable} | [25 novembre 2022]{.insecable} [@avenant16-btp-2022, p. 3712-3714] | n° 132 du [2 décembre 2022]{.insecable}, édition arabe, d'après sa reproduction [@paie-tunisie-2022-reproduction-jort-132] | [1^er^ décembre 2021]{.insecable} ; 1^er^ janvier 2023 et 2024 |
+
+: La convention collective du bâtiment et des travaux publics et ses avenants, 1975-2022 {#tbl-cc-btp-avenants .sm tbl-colwidths="[14,21,21,22,22]"}
+
+Les dates de signature des avenants n° 1 à 15 sont celles que rappelle le préambule de l'avenant n° 15 ; les dates d'agrément des avenants n° 6 à 9, celles que rappelle l'arrêté d'agrément de l'avenant n° 16. La dernière colonne donne les dates d'effet des grilles que trace la figure de la branche (@fig-mt-cc-annexe-batiment) ; un tiret y marque un texte antérieur à cette série.
+
+<!-- TODO (documentaliste) : les avenants n° 1 (1983), n° 2 (1989) et n° 4 (1993) n'ont pas de clé
+dans `references.json`, et l'arrêté d'agrément du 12 mars 1975 n'a pas de clé distincte de celle
+du texte de la convention ; grilles de 1991 à 1995 non établies. Date du fascicule n° 81 de 2011 :
+celle de son intitulé, à contrôler au fascicule. Second exemplaire du n° 132 du 2 décembre 2022 à
+obtenir. Rectificatif de la convention (JORT n° 28 du 25 avril 1975, p. 824) : intitulé seul.
+Notes docs/notes/marche-travail-conventions-collectives-fond.md, § B.1, et
+…-grilles-1996-2022.md, § B.3 et E. -->
+
+::::
+
+## Les assurances {#sec-mt-cc-annexe-assurances}
+
+La convention collective nationale des assurances fixe, depuis 1975, les salaires mensuels du personnel du secteur, sociétés publiques et privées confondues ; elle est révisée en 1983, puis par des avenants numérotés. Ses avenants, ses accessoires de salaire et sa place parmi les rémunérations du secteur public sont exposés dans le volume [« Les rémunérations dans le secteur public »](../remunerations_publiques/_regime_marche_controle.html#sec-marche-controle-assurances), qui en donne la chaîne entière, avenant par avenant.
+
+### Création {#sec-mt-cc-annexe-assurances-creation}
+
+- **Signature et agrément.** La convention est [signée le 24 juillet 1975](#r-cc-assurances-texte) et [agréée par arrêté du ministre des affaires sociales du 24 décembre 1975](#r-cc-assurances-agrement). Son texte paraît au *Journal officiel* le 30 janvier 1976.
+- **Date d'effet.** [Son article 70](#r-cc-assurances-effet) la fait entrer en vigueur à compter du 1^er^ janvier 1975.
+- **Révision de 1983.** La convention révisée est [agréée par arrêté du 23 août 1983](#r-cc-assurances-1983) ; ses dispositions pécuniaires prennent effet le 1^er^ janvier 1983.
+- **Champ.** Elle vaut pour l'ensemble du personnel du secteur des assurances ; [la convention révisée de 1983](#r-cc-assurances-1983) en exclut les agents généraux d'assurance et leurs employés, les concierges des immeubles de rapport et les agents contractuels.
+- **Intitulé.** [L'arrêté du 24 mai 2007](#r-cc-assurances-2007) remplace l'appellation « nationale » par « sectorielle ».
+
+### La grille {#sec-mt-cc-annexe-assurances-grille}
+
+La convention n'a qu'une grille de salaires, mensuelle, par échelle et par échelon.
+
+- **Vingt et une échelles**, numérotées de 1 à 21 depuis [la convention de 1975](#r-cc-assurances-texte). Elles sont regroupées en sept catégories, de A à G, en 1975, puis en cinq [à compter du 1^er^ janvier 1983](#r-cc-assurances-1983) : V, agents de services et assimilés (échelles 1 à 3 et hors classe) ; IV, agents d'exécution (échelles 4 à 9) ; III, personnel d'encadrement (10 à 12) ; II, cadres supérieurs (13 à 15) ; I, cadres de direction (16 à 21).
+- **Douze échelons d'ancienneté par échelle jusqu'au 31 mai 1999, quatorze ensuite** : [l'avenant n° 5](#r-cc-assurances-av5) crée les treizième et quatorzième échelons au 1^er^ juin 1999, le quatorzième étant atteint au terme de trente-trois ans de service.
+- **Unité et durée du travail.** Le salaire est mensuel, pour 40 heures par semaine, soit 2 080 heures par an ([article 30 de la convention révisée](#r-cc-assurances-1983)).
+- **Ce que le salaire de base comprend.** Depuis la grille du 1^er^ juin 1993, celle de [l'avenant n° 3](#r-cc-assurances-av3), il comprend l'indemnité complémentaire provisoire : c'est la première grille des séries de cette section (@sec-mt-cc-annexe-assurances-evolution). Il ne comprend ni l'indemnité de transport, ni les treizième et quatorzième mois, ni la prime de rendement, que la convention sert en sus.
+
+### Le bas et le haut de la grille, à chaque date d'effet {#sec-mt-cc-annexe-assurances-evolution}
+
+La figure suit l'échelle 1, échelon 1, qui est le salaire le plus bas de la grille, et le quatorzième échelon de l'échelle 21, qui en est le plus élevé depuis sa création, le 1^er^ juin 1999 (@fig-mt-cc-annexe-assurances). Jusqu'au 31 mai 1999, le salaire le plus élevé est le douzième échelon de l'échelle 21 : il se lit, comme le treizième, dans la base législative de la grille, sous la figure.
+
+- **La grille du 1^er^ juin 2014 paraît à part de son avenant** : l'avenant n° 11 est publié sans elle, et [elle l'est au numéro suivant du *Journal officiel*, celui du 13 janvier 2015](#r-cc-assurances-grille-2014).
+- **À compter du 1^er^ janvier 2026, le montant n'est pas publié** (@sec-mt-cc-annexe-lecture).
+
+```{python}
+#| label: fig-mt-cc-annexe-assurances
+#| echo: false
+#| output: asis
+cc.figure(
+    "assurances",
+    sources=["cc-assurances-avenant3-1993", "cc-assurances-avenant4-1996",
+             "cc-assurances-avenant5-1999", "cc-assurances-avenant6-2002",
+             "cc-assurances-avenant7-2007", "cc-assurances-avenant8-2009",
+             "cc-assurances-avenant9-2012", "cc-assurances-avenants-10-11",
+             "cc-assurances-avenant11-grille-2015",
+             "cc-assurances-avenant12-2016", "cc-assurances-avenant13-2017",
+             "cc-assurances-avenant14-2019", "cc-assurances-avenant15-2022", "decret2026-68"],
+    note_lecture=(
+        "En dinars courants, chaque marche est une grille : le trait court de sa date d'effet à la veille de la "
+        "suivante. Le trait du bas est le salaire le plus bas de la grille ; celui du haut, "
+        "le plus élevé, commence le 1er juin 1999, date de création du quatorzième échelon. "
+        "Les douzième et treizième échelons de l'échelle 21 se lisent dans la base "
+        "législative de la grille, sous la figure. Seules la première et la dernière valeur de chaque case sont "
+        "écrites ; les autres se lisent au survol d'un point ou dans la base législative de la grille, sous la figure. Le "
+        "cercle creux du 1er janvier 2026 marque la date à compter de laquelle le montant "
+        "n'est pas publié : le trait s'y arrête."),
+    generated="{{< meta date >}}",
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+print(cc.base_legislative("assurances"))
+```
+
+### Les textes de création et les avenants qui changent la grille {#sec-mt-cc-annexe-assurances-textes}
+
+La chaîne des avenants — arrêtés d'agrément, pages du *Journal officiel*, objet et dates d'effet de chacun — est donnée dans le volume [« Les rémunérations dans le secteur public »](../remunerations_publiques/_regime_marche_controle.html#sec-marche-controle-assurances). Le tableau replié donne les textes cités dans cette section.
+
+:::: {.chronologie-repliable titre="Convention collective des assurances : arrêtés d'agrément de 1975 et de 1983, avenants qui changent la structure de la grille et grille de 2014 publiée à part, 1975-2015"}
+
+| Date de l'arrêté | Texte | *Journal officiel* | Ce qu'il fixe |
+|---|---|---|---|
+| []{#r-cc-assurances-agrement}[24 décembre 1975]{.insecable} | arrêté d'agrément de la convention [@cc-assurances-1975] | n° 87 des 30 et [31 décembre 1975]{.insecable}, p. 2898-2899 | agrément de la convention collective nationale des assurances |
+| []{#r-cc-assurances-texte}[24 décembre 1975]{.insecable} | convention signée le [24 juillet 1975]{.insecable}, texte et grilles [@cc-assurances-texte-1975] | n° 7 du [30 janvier 1976]{.insecable}, p. 270-279 | 21 échelles en 7 catégories, 12 échelons ; salaire mensuel |
+| []{#r-cc-assurances-effet}[24 décembre 1975]{.insecable} | convention, article 70 [@cc-assurances-texte-1975, art. 70] | même numéro | entrée en vigueur à compter du [1^er^ janvier 1975]{.insecable} |
+| []{#r-cc-assurances-1983}[23 août 1983]{.insecable} | arrêté d'agrément de la convention révisée [@cc-assurances-1983] | n° 74 des 15 et [18 novembre 1983]{.insecable}, p. 2935-2947 | 7 catégories → 5 catégories ; champ : agents généraux, concierges des immeubles de rapport et agents contractuels exclus ; 40 heures par semaine (art. 30) ; effet pécuniaire au [1^er^ janvier 1983]{.insecable} |
+| []{#r-cc-assurances-av3}[7 septembre 1993]{.insecable} | arrêté d'agrément de l'avenant n° 3 [@cc-assurances-avenant3-1993] | n° 72 du [24 septembre 1993]{.insecable}, p. 1597-1602 | grilles hors indemnité complémentaire provisoire → grilles qui la comprennent, à compter du [1^er^ juin 1993]{.insecable} |
+| []{#r-cc-assurances-av5}[9 juin 1999]{.insecable} | arrêté d'agrément de l'avenant n° 5 [@cc-assurances-avenant5-1999] | n° 48 du [15 juin 1999]{.insecable}, édition arabe, p. 1179-1183 | 12 échelons → 14 échelons, à compter du [1^er^ juin 1999]{.insecable} |
+| []{#r-cc-assurances-2007}[24 mai 2007]{.insecable} | arrêté d'agrément de l'avenant n° 7 [@cc-assurances-avenant7-2007] | n° 44 du [1^er^ juin 2007]{.insecable}, édition arabe, p. 1920-1925 | convention « nationale » → convention « sectorielle » |
+| []{#r-cc-assurances-grille-2014}[16 décembre 2014]{.insecable} | grille des salaires de l'avenant n° 11, agréé à cette date [@cc-assurances-avenant11-grille-2015, p. 151] | n° 4 du [13 janvier 2015]{.insecable}, édition arabe, p. 151 | grille des salaires à compter du [1^er^ juin 2014]{.insecable} : 21 échelles, 14 échelons ; l'avenant n° 11 paraît sans elle au n° 3 du [9 janvier 2015]{.insecable} [@cc-assurances-avenants-10-11] |
+
+: Convention collective des assurances : les textes qui la créent, ceux qui changent la structure de sa grille et la grille de 2014, 1975-2015 {#tbl-cc-assurances-textes}
+
+::::

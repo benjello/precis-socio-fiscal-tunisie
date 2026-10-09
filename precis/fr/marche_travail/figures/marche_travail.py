@@ -44,11 +44,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "scripts"))
 import figtools  # noqa: E402
 
 SERIE = "marche-travail-smig-smag"
-SERIE_IPC = "ipc-longue-periode"
-SERIE_IPC_RECENT = "bct-ipc-base2015"
-# Année des dinars constants : la dernière dont l'indice des prix est publié, jamais une année
-# à venir.
-ANNEE_BASE = 2025
+# L'indice des prix et l'année des dinars constants sont ceux du volume (`deflateur.py`),
+# communs à ce module et à celui des conventions collectives.
+from .deflateur import ANNEE_BASE, SERIE_IPC, SERIE_IPC_RECENT  # noqa: E402, F401
+from .deflateur import ipc as _ipc  # noqa: E402
 # Avant le SMIG. Seconde zone : plancher horaire jusqu'à sa suppression le 1er mai 1968
 # (décrets n° 61-145, art. 6, et n° 65-561, art. 5 ; n° 68-97). Indemnité de cherté de vie :
 # 0,020 D l'heure en sus du minimum, du 1er mai 1971 à l'institution du SMIG (décret n° 71-164).
@@ -155,19 +154,6 @@ def _moyenne_annuelle(d, colonne: str, annee: int):
     if any(v is None for v in mois):
         return None
     return sum(mois) / 12
-
-
-def _ipc() -> dict[int, float]:
-    """Indice des prix, base 1970 ; prolongé au-delà de sa dernière année par la variation de
-    l'indice en base 2015 que relaie la Banque centrale."""
-    ipc = {int(r.annee): float(r.indice_base1970)
-           for r in figtools.series(SERIE_IPC).itertuples()}
-    recent = {int(r.annee): float(r.valeur)
-              for r in figtools.series(SERIE_IPC_RECENT).itertuples()}
-    fin = max(ipc)
-    for annee in sorted(a for a in recent if a > fin and fin in recent):
-        ipc[annee] = ipc[fin] * recent[annee] / recent[fin]
-    return ipc
 
 
 def _zone2_mensuel(jour: dt.date):
@@ -1652,8 +1638,6 @@ _CC_ORIGINES = {
     "reproduction de l'édition arabe du Journal officiel sur un site tiers (paie-tunisie.com)":
         ("copie", "édition arabe, pages reproduites par un site tiers (paie-tunisie.com)"),
 }
-# Le document réellement lu pour l'avenant n° 16 du bâtiment : cité à côté de l'arrêté.
-_CC_CLE_COPIE = "paie-tunisie-2022-reproduction-jort-132"
 # Bornes que le chapitre écrit, contrôlées sur la série : rapport du salaire d'entrée au SMIG
 # aux dates d'effet (branche, première année, dernière année) -> (minimum, maximum), et
 # extrêmes du rapport suivi jour après jour sur le segment continu (minimum, maximum).
@@ -1666,38 +1650,14 @@ _CC_EXTREMES = {
     "textile": ((dt.date(1997, 11, 7), 1.05), (dt.date(2022, 5, 1), 1.30)),
     "bâtiment et travaux publics": ((dt.date(2015, 5, 1), 1.10), (dt.date(2024, 1, 1), 1.32)),
 }
-# Clé de référence du texte qui porte chaque grille : (branche, convention ou avenant).
+# Clé de référence du texte qui porte chaque grille du tableau des grilles hors séries
+# continues : (branche, convention ou avenant). Les avenants des séries continues sont
+# cités, grille par grille, dans l'annexe des conventions collectives.
 _CC_CLES = {
     ("textile", "convention"): "convention-textile-1974",
     ("textile", "avenant n° 3"): "avenants-1990-textile-btp",
-    ("textile", "avenant n° 5"): "avenant5-textile-1994",
-    ("textile", "avenant n° 6"): "avenant6-textile-1996",
-    ("textile", "avenant n° 7"): "avenant7-textile-1999",
-    ("textile", "avenant n° 8"): "avenant8-textile-2002",
-    ("textile", "avenant n° 9"): "avenant9-textile-2006",
-    ("textile", "avenant n° 10"): "avenant10-textile-2009",
-    ("textile", "avenant n° 11"): "avenant11-textile-2011",
-    ("textile", "avenant n° 12"): "avenant12-textile-2013",
-    ("textile", "avenant n° 13"): "avenants-2014-textile-btp",
-    ("textile", "avenant n° 14"): "avenant14-textile-2016",
-    ("textile", "avenant n° 15"): "avenant15-textile-2017",
-    ("textile", "avenant n° 16"): "avenant16-textile-2019",
-    ("textile", "avenant n° 17"): "avenant17-textile-2022",
-    ("textile", "avenant n° 18"): "avenant18-textile-2024",
     ("bâtiment et travaux publics", "convention"): "convention-btp-1975",
     ("bâtiment et travaux publics", "avenant n° 3"): "avenants-1990-textile-btp",
-    ("bâtiment et travaux publics", "avenant n° 5"): "avenant5-btp-1996",
-    ("bâtiment et travaux publics", "avenant n° 6"): "avenant6-btp-1999",
-    ("bâtiment et travaux publics", "avenant n° 7"): "avenant7-btp-2002",
-    ("bâtiment et travaux publics", "avenant n° 8"): "avenant8-btp-2006",
-    ("bâtiment et travaux publics", "avenant n° 9"): "avenant9-btp-2009",
-    ("bâtiment et travaux publics", "avenant n° 16"): "avenant16-btp-2022",
-    ("bâtiment et travaux publics", "avenant n° 10"): "avenant10-btp-2011",
-    ("bâtiment et travaux publics", "avenant n° 11"): "avenant11-btp-2013",
-    ("bâtiment et travaux publics", "avenant n° 12"): "avenants-2014-textile-btp",
-    ("bâtiment et travaux publics", "avenant n° 13"): "avenant13-btp-2016",
-    ("bâtiment et travaux publics", "avenant n° 14"): "avenant14-btp-2017",
-    ("bâtiment et travaux publics", "avenant n° 15"): "avenant15-btp-2018",
 }
 # Dates repères du tableau court : (branche, date d'effet ; None pour la convention d'origine).
 _CC_REPERES = [
@@ -1765,12 +1725,14 @@ figtools.register_provenance(SERIE_CC_GRILLES, **{
     "titre_ar": ("أجر الساعة عند الدخول في اتفاقيتي النسيج (1974-2026) والبناء والأشغال العامة "
                  "(1974-2024)، حسب تاريخ سريان جداول الأجور، ونسبته إلى الأجر الأدنى المضمون "
                  "بالساعة لنظام 48 ساعة"),
-    # Sous la figure, deux clés et un renvoi : chaque grille a sa référence au tableau des
-    # grilles, et la liste entière reste à l'onglet « Sources » et dans le figdata.
+    # Sous la figure, deux clés et deux renvois : chaque grille a sa référence dans l'annexe
+    # des conventions collectives ou, pour celles que l'annexe ne porte pas, au tableau des
+    # grilles hors séries ; la liste entière reste à l'onglet « Sources » et dans le figdata.
     "source_ligne": ("conventions du textile et du bâtiment et des travaux publics "
                      "[@convention-textile-1974; @convention-btp-1975] et leurs avenants de "
-                     "1990 à 2024, chacun cité avec sa grille (@tbl-mt-cc-grilles ; liste à "
-                     "l'onglet « Sources »)"),
+                     "1990 à 2024, chacun cité avec sa grille — grilles d'origine et de 1990 "
+                     "à 1992 : @tbl-mt-cc-grilles-hors-series ; grilles suivantes : "
+                     "@sec-mt-cc-annexe ; liste à l'onglet « Sources »"),
     "source_ligne_ar": ("اتفاقيتا النسيج والبناء والأشغال العامة "
                         "[@convention-textile-1974; @convention-btp-1975] وملاحقهما التعديلية "
                         "من 1990 إلى 2024 (القائمة في تبويب « المصادر »)"),
@@ -2061,7 +2023,7 @@ def _cc_grilles():
             "haut": float(r.salaire_horaire_haut),  # lu à toutes les dates
             "comparable": comparable, "smig": float(r.smig_48h_horaire),
             "rapport": float(r.rapport_bas_smig) if comparable else None,
-            "texte": r.avenant, "cle": _CC_CLES[(r.branche, r.avenant)],
+            "texte": r.avenant,
             "journal": (f"n° {int(r.jort_numero)} " + _cc_date_fascicule(r.jort_date_mention)
                         + f", p. {int(r.jort_page)}"),
             "origine": _CC_ORIGINES[r.origine_lecture][0],
@@ -2240,30 +2202,34 @@ def tableau_cc_reperes() -> str:
         l = next(l for l in r if l["branche"] == branche
                  and (l["origine_convention"] if effet is None else l["jour"].isoformat() == effet))
         lignes.append([_cc_branche(l), _cc_effet(l), _cc_texte(l)] + _cc_ligne_montants(l))
-    entetes = ["Branche", "Date d'effet de la grille", "Convention ou avenant", "Salaire horaire d'entrée (dinars)",
-               "SMIG horaire, régime de 48 heures (dinars)", "Salaire d'entrée, en SMIG"]
+    entetes = ["Branche", "Date d'effet de la grille", "Convention ou avenant",
+               "Salaire horaire d'entrée<br>(dinars)",
+               "SMIG horaire, régime de 48 heures<br>(dinars)", "Salaire d'entrée<br>(en SMIG)"]
     sortie = ["| " + " | ".join(entetes) + " |", "|:---|:---|:---|---:|---:|---:|"]
     sortie += ["| " + " | ".join(l) + " |" for l in lignes]
     return "\n".join(sortie)
 
 
-def tableau_cc_grilles() -> str:
-    """Tableau Markdown de toutes les grilles de la série, avec leur texte et leur fascicule."""
-    r = _cc_grilles()
-    lignes = []
-    for l in r:
-        bas, smig, rapport = _cc_ligne_montants(l)
-        lignes.append([_cc_branche(l), _cc_effet(l), bas, _fr(l["haut"], 3), smig, rapport,
-                       _cc_texte(l), l["journal"], l["edition"],
-                       f"[@{l['cle']}; @{_CC_CLE_COPIE}]" if l["origine"] == "copie"
-                       else f"[@{l['cle']}]",
-                       l["reserve"] or "—"])
-    entetes = ["Branche", "Date d'effet de la grille", "Salaire horaire d'entrée (dinars)",
-               "Haut de la grille (dinars par heure)", "SMIG horaire, régime de 48 heures (dinars)",
-               "Salaire d'entrée, en SMIG", "Convention ou avenant", "*Journal officiel* de la grille",
-               "Édition du *Journal officiel*", "Référence", "Réserve"]
-    sortie = ["| " + " | ".join(entetes) + " |",
-              "|:---|:---|---:|---:|---:|---:|:---|:---|:---|:---|:---|"]
+def tableau_cc_grilles_hors_series() -> str:
+    """Tableau Markdown des grilles que l'annexe des conventions collectives ne porte pas :
+    les deux grilles d'origine et les grilles hors indemnité complémentaire provisoire, avec
+    leur texte et la page de leur fascicule."""
+    r = [l for l in _cc_grilles() if l["origine_convention"] or not l["comparable"]]
+    # Les grilles d'origine de 1974 et celles de 1990 à 1992 : aucune des séries continues.
+    assert [(l["branche"], l["jour"].year) for l in r] == [
+        ("textile", 1974), ("textile", 1990), ("textile", 1991), ("textile", 1992),
+        ("bâtiment et travaux publics", 1974), ("bâtiment et travaux publics", 1990)], r
+    lignes = [[_cc_branche(l),
+               "[" + _cc_effet(l).replace("1er ", "1^er^ ") + "]{.insecable}",
+               _fr(l["bas"], 3), _fr(l["haut"], 3),
+               f"{_cc_texte(l)} [@{_CC_CLES[(l['branche'], l['texte'])]}] ; "
+               f"*Journal officiel* {l['journal']}",
+               l["reserve"]]
+              for l in r]
+    entetes = ["Branche", "Date d'effet de la grille", "Salaire horaire d'entrée<br>(dinars)",
+               "Haut de la grille<br>(dinars par heure)",
+               "Convention ou avenant, et page de la grille", "Précision"]
+    sortie = ["| " + " | ".join(entetes) + " |", "|:---|:---|---:|---:|:---|:---|"]
     sortie += ["| " + " | ".join(l) + " |" for l in lignes]
     return "\n".join(sortie)
 
