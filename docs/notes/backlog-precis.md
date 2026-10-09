@@ -1230,28 +1230,37 @@ Ligne éditoriale rappelée par l'humain : le précis vise l'**impact économiqu
 
 `precis/fr/marche_travail/_annexe_conventions.qmd` (`#sec-mt-cc-annexe`), déclarée dans les
 `appendices` du `_quarto.yml` français, avant le glossaire. Décision du propriétaire du 8 octobre
-2026 (canevas, « Destination »). Elle est **engendrée** : `scripts/generate_conventions_collectives_tables.py`
+2026 (canevas, « Destination »). Décision du propriétaire du 9 octobre 2026 : **l'annexe ne
+reproduit plus les grilles** — ni tableaux par case, ni tableaux aux dates repères. Elle garde,
+par branche, la création, la description de la grille, la figure en escalier et le registre des
+avenants, et renvoie pour chaque grille à sa vue en tableau sur le site de la base législative
+(`…/parameters/<nœud de la grille>/table/`). `scripts/generate_conventions_collectives_tables.py`
 (appelé par `generate_marche_travail_tables.py`, donc gardé par le contrôle de fraîcheur) parcourt
-`marche_travail/conventions_collectives` d'`openfisca-tunisia` 0.122 sans nommer de branche, et
-écrit `tables/cc_*.md`, leurs `.liens.yml`, `tables/cc_index.yml` et les séries
-`_seriescache/cc-grille-<branche>.csv`. Trois branches, huit cases, 212 valeurs, 6 dates sans
-valeur (« non publiée », au 1er janvier 2026, bâtiment et assurances). La création de chaque
-convention et la suite des avenants viennent des notes, non des paramètres.
+`marche_travail/conventions_collectives` d'`openfisca-tunisia` 0.122 sans nommer de branche ni de
+grille, et écrit `tables/cc_index.yml`, `tables/cc_<branche>_grilles.liens.yml` (un lien par
+grille, contrôlé par `scripts/verifier_liens_base_legislative.py`) et les séries
+`_seriescache/cc-grille-<branche>.csv`. La grille d'une case se déduit des chemins : le nœud le
+plus profond commun aux cases de même grandeur et de même unité de la branche (`grilles`). Trois
+branches, huit cases, 212 valeurs, 6 dates sans valeur (« non publiée », au 1er janvier 2026,
+bâtiment et assurances). La création de chaque convention et la suite des avenants viennent des
+notes, non des paramètres.
 
 Ce qui lui manque :
 
-- **les pages de la base législative** : les liens des onglets « Base législative » répondent
-  (contrôle `scripts/verifier_liens_base_legislative.py` du 8 octobre 2026, 22 h 36 : 1 128 liens,
-  aucun mort) ; une heure plus tôt, avant le redéploiement du site des paramètres sur la 0.122,
-  ils rendaient 404 ;
+- **les pages de la base législative** : les trois vues de grille répondent (9 octobre 2026) —
+  `textile.salaire_base.agents_payes_a_l_heure`, `batiment.salaire_base.personnel_occasionnel`,
+  `assurances.salaire_base`, en français et en arabe. Elles ne donnent que les cases versées en
+  amont : le renvoi de l'annexe dit « les cases de la grille », non « la grille entière » ;
 - **les grilles entières** : chaque branche n'a que deux à quatre cases (bas et haut). Restent
   toutes les autres catégories et échelons, la grille mensuelle du textile (17 catégories) et celle
-  du bâtiment (19 catégories, 11 échelons), les 21 échelles des assurances ; à verser en amont, la
-  page suit sans changement ;
+  du bâtiment (19 catégories, 11 échelons), les 21 échelles des assurances ; à verser en amont : la
+  vue de la grille les montre alors sans que l'annexe change, et la figure garde le bas et le
+  haut. Si une branche n'a qu'une case d'une unité donnée, sa grille est prise au nœud qui
+  contient la case — à revoir si ce nœud est une catégorie et non la grille ;
 - **les indemnités** (transport, présence, assiduité) : relevées en partie dans les notes, pas
   dans les paramètres ; le générateur les prendra sous un nœud frère de `salaire_base` ;
 - **les autres branches** : commerce, industrie hôtelière, mécanique et électricité d'abord
-  (canevas, « Par où commencer »). Une branche versée en amont a ses tableaux à la régénération,
+  (canevas, « Par où commencer »). Une branche versée en amont a son index et ses liens à la régénération,
   mais sa section (création, grille, avenants) reste à écrire dans l'annexe ;
 - **textile et bâtiment avant 1990** : sentence arbitrale de 1983, avenants n° 2 et n° 4 du textile,
   avenants n° 1, n° 2 et n° 4 du bâtiment — sans clé bibliographique, grilles non établies ;
@@ -1274,20 +1283,21 @@ Ce qui lui manque :
   avenants, dit encore la grille de 2014 « annoncée, non imprimée » : correction attendue de la PR
   qui y reporte les relectures ;
 - **côté arabe** : l'annexe n'est **pas** déclarée dans `precis/ar/marche_travail/_quarto.yml` —
-  à faire à la livraison de sa traduction. Les tableaux arabes sont engendrés, en-têtes et
-  mentions en arabe, mais les noms des branches et des cases y restent en français (les
-  `short_label` du modèle n'existent qu'en français) et le lien garde l'édition que cite la page :
-  à trancher avec le relecteur de l'arabe ;
+  à faire à la livraison de sa traduction. L'index et les liens arabes sont engendrés, mentions
+  en arabe, mais les noms des branches, des grilles et des cases y restent en français (les
+  `short_label` du modèle n'existent qu'en français) : à trancher avec le relecteur de l'arabe,
+  comme l'intitulé arabe du renvoi (`INTRO_BASE` de `figures/conventions.py`,
+  `cases` de `MOTS` dans le générateur) ;
 - **figures** : une figure en escalier par branche, par le composant commun. Chaque figure
   trace, par unité, la case la plus basse et la plus haute d'après leur dernière valeur
   (`_tracees` de `figures/conventions.py`) : dans celle des assurances, l'échelle 1, échelon 1,
-  et le quatorzième échelon de l'échelle 21 ; les douzième et treizième échelons restent dans
-  les tableaux. La légende de chaque figure est écrite d'après `cc_index.yml`. Pas de lecture
+  et le quatorzième échelon de l'échelle 21 ; les douzième et treizième échelons ne se lisent
+  qu'à la vue de la grille. La légende de chaque figure est écrite d'après `cc_index.yml`. Pas de lecture
   en dinars constants ni de rapport au SMIG dans l'annexe ;
 - **prose de l'annexe** (9 octobre 2026) : ni compte ni montant saisi — les nombres d'avenants,
-  de cases et de dates d'effet, et les montants, ne sont que dans les tableaux et figures
-  engendrés ; le tableau d'ouverture ne porte plus que la création (signature, agrément, date
-  d'effet) et les cases de l'index. Les tableaux des avenants du textile et du bâtiment restent
+  de cases et de dates d'effet, et les montants, ne sont que dans les figures
+  engendrées ; le tableau d'ouverture ne porte plus que la création (signature, agrément, date
+  d'effet) et les cases tracées. Les tableaux des avenants du textile et du bâtiment restent
   faits main, avec leur titre de bloc et leurs bornes : à engendrer quand les avenants seront
   versés en amont ;
 - **chapitre** (9 octobre 2026) : le tableau replié `@tbl-mt-cc-grilles` (62 grilles, 1974-2026)
@@ -1301,11 +1311,16 @@ Ce qui lui manque :
   dans l'annexe. À verser en amont : les grilles de 1974 et de 1990-1992, pour que ce dernier
   tableau rejoigne l'annexe.
 - **largeur des tableaux repliés** (mesure du 9 octobre 2026, fenêtre de 1 300 px) : les deux
-  tableaux faits main des avenants (`tbl-cc-textile-avenants`, `tbl-cc-btp-avenants`) dépassent
-  leur bloc de 62 et 58 px, et l'inventaire des 57 branches du chapitre (`tbl-mt-cc-inventaire`)
-  de 142 px ; aucun dépassement à 1 800 px. Les dates insécables fixent la largeur minimale : à
-  régler dans le thème commun (`precis/legendes.scss`, défilement horizontal du bloc replié),
-  ce qui fait rendre tous les livres.
+  tableaux faits main des avenants (`tbl-cc-textile-avenants`, `tbl-cc-btp-avenants`) tiennent
+  dans leur bloc — largeurs de colonnes à proportion des dates insécables et classe `.sm` de la
+  légende (marges de cellule resserrées), la somme des largeurs minimales dépassant sinon le
+  bloc. Reste l'inventaire des 57 branches du chapitre (`tbl-mt-cc-inventaire`), qui dépasse de
+  142 px ; aucun dépassement à 1 800 px. À régler dans le thème commun (`precis/legendes.scss`,
+  défilement horizontal du bloc replié), ce qui fait rendre tous les livres.
+- **figure en escalier, dernière année écrite deux fois** (9 octobre 2026) : corrigé dans
+  `figtools.fig_escalier` — une date d'effet au 1er janvier de la dernière année tracée ne
+  reçoit plus une seconde graduation. Les figures des taux de TVA et des déductions pour
+  charges de famille, sans date d'effet à cette place, sortent à l'identique.
 
 Volume créé le 5 octobre 2026 (branche `docs/marche-travail-volume`), sept chapitres : présentation,
 notions, institutions, salaire minimum, conventions collectives, négociations salariales, longue

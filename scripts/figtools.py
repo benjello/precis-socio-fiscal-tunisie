@@ -715,9 +715,17 @@ def fig_escalier(series_id: str, courbes: dict, *, fin: int, colonne: str = "par
                                    label=ft(libelle)))
     # Les graduations sont les dates d'effet elles-mêmes, et la dernière année tracée.
     graduations = sorted(dates)
-    ax.set_xticks([abscisse_date(g) for g in graduations] + [fin])
-    ax.set_xticklabels([ft((etiquettes_x or {}).get(g, g[:4])) for g in graduations]
-                       + [str(fin)])
+    positions = [abscisse_date(g) for g in graduations]
+    etiquettes = [ft((etiquettes_x or {}).get(g, g[:4])) for g in graduations]
+    if fin in positions:
+        # Une date d'effet au 1er janvier de la dernière année : une seule graduation. Deux
+        # graduations au même point recevraient la même étiquette, écrite deux fois.
+        etiquettes[positions.index(fin)] = str(fin)
+    else:
+        positions.append(fin)
+        etiquettes.append(str(fin))
+    ax.set_xticks(positions)
+    ax.set_xticklabels(etiquettes)
     for g in graduations:
         ax.axvline(abscisse_date(g), color="#8b949e", lw=0.6, ls=(0, (1, 3)), zorder=1)
     if xlim is None:

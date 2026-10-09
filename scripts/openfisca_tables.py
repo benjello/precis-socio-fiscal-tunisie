@@ -1377,29 +1377,13 @@ class ParametreDate:
                 « millimes », « entier » —, qui porte l'unité dans la case (« 17 % », « 150 D »).
     `format`  : fonction `(valeur, langue) -> texte`, quand aucun formateur commun ne convient.
     `lien`    : {langue: libellé du lien « Base législative »} ; à défaut, le libellé de ligne.
-    `sans_valeur` : {langue: mention} d'une date d'effet SANS VALEUR — la valeur change ce
-                jour-là sans qu'un texte en publie le montant (« non publiée »). À défaut,
-                une telle date se rend par « — », comme une abrogation : c'est le sens d'une
-                valeur nulle pour un taux ou un montant que la loi supprime.
     """
 
     def __init__(self, cle: str, chemin: str, libelle: dict[str, str], unite: str = "taux",
                  format: Callable[[float, str], str] | None = None,
-                 lien: dict[str, str] | None = None,
-                 sans_valeur: dict[str, str] | None = None):
+                 lien: dict[str, str] | None = None):
         self.cle, self.chemin, self.libelle, self.unite = cle, chemin, libelle, unite
-        self.format, self.lien, self.sans_valeur = format, lien or libelle, sans_valeur
-
-    def case(self, serie, date: str, langue: str) -> str:
-        """La case du paramètre à `date` : sa valeur, « — », ou la mention `sans_valeur`.
-
-        « — » avant la première date d'effet ; la mention, si elle est déclarée, à compter
-        d'une date d'effet sans valeur.
-        """
-        point = en_vigueur(serie, date)
-        if point is not None and point[1] is None and self.sans_valeur:
-            return self.sans_valeur[langue]
-        return self.rendre(None if point is None else point[1], langue)
+        self.format, self.lien = format, lien or libelle
 
     def rendre(self, valeur: float | None, langue: str) -> str:
         """La case : la valeur dans son unité, ou « — » quand le paramètre n'existe pas."""
@@ -1529,7 +1513,7 @@ def tableau_dates_reperes(
         ligne = {entete: p.libelle[langue]}
         for date in dates:
             colonne = (entetes_dates or {}).get(date) or formate_date(date, langue)
-            ligne[colonne] = p.case(serie, date, langue)
+            ligne[colonne] = p.rendre(etat_a_la_date(serie, date), langue)
         lignes.append(ligne)
     return pd.DataFrame(lignes)
 

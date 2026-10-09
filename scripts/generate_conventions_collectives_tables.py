@@ -1,4 +1,4 @@
-"""Régénère les tableaux de l'annexe « Les conventions collectives, branche par branche ».
+"""Régénère ce que lit l'annexe « Les conventions collectives, branche par branche ».
 
 Appelé par `generate_marche_travail_tables.py`, que lance le contrôle de fraîcheur ; peut
 aussi tourner seul :
@@ -17,27 +17,32 @@ Une case peut être un fichier (`…/personnel_occasionnel/manoeuvre_ordinaire.y
 d'un fichier de nœud (`…/salaire_base/echelle_1.yaml`, clé `echelon_1`) : le parcours descend
 dans les deux, et désigne la case par le chemin de sa page publique.
 
-CE QUI EST ENGENDRÉ, dans `precis/{fr,ar}/marche_travail/tables/` :
-  - `cc_<branche>_<chemin de la case>.md` : la case date par date — date d'effet, montant,
-    texte, Journal officiel — et son `.liens.yml` ;
-  - `cc_<branche>_dates_reperes.md` : les cases de la branche à des dates repères — une
-    date par ligne, une case par colonne —, et ses liens ;
-  - `cc_index.yml` : la liste des branches et de leurs cases (libellés, unité, fichiers,
-    période, comptes), que l'annexe parcourt pour s'écrire — elle non plus ne nomme aucune case.
-Et dans `precis/_seriescache/` : `cc-grille-<branche>.csv`, la série longue que trace la
-figure en escalier de la branche, et ses liens en deux langues.
+L'ANNEXE NE REPRODUIT PAS LES GRILLES : elle en trace quelques cases et renvoie, pour chaque
+grille, à sa page publique, qui en donne les cases versées à toutes leurs dates avec leurs
+références. LA GRILLE D'UNE CASE SE DÉDUIT DES CHEMINS (`grilles`) : c'est le nœud le plus
+profond qui contient toutes les cases de même grandeur et de même unité de la branche — celui
+qui regroupe les catégories ou les échelles —, sans qu'aucune grille soit nommée ici.
+
+CE QUI EST ENGENDRÉ :
+  - `precis/{fr,ar}/marche_travail/tables/cc_index.yml` : la liste des branches, de leurs
+    grilles et de leurs cases (libellés, unité, période, comptes), que l'annexe parcourt
+    pour s'écrire — elle non plus ne nomme aucune case ;
+  - `precis/{fr,ar}/marche_travail/tables/cc_<branche>_grilles.liens.yml` : le lien « Base
+    législative » de chaque grille de la branche, au schéma commun (`libelle`, `parametre`,
+    `url`), que garde `verifier_liens_base_legislative.py` ;
+  - `precis/_seriescache/cc-grille-<branche>.csv` : la série longue que trace la figure en
+    escalier de la branche, et les liens de ses cases en deux langues.
 
 UNE DATE SANS VALEUR N'EST NI ZÉRO NI LA VALEUR PRÉCÉDENTE. Une date d'effet dont la valeur
 est vide est une date à laquelle le salaire change sans qu'un texte en publie le montant :
-la case rend « non publiée ».
+la série garde la case vide, et la figure y arrête son trait.
 
-Les libellés des nœuds n'existent qu'en français : les tableaux arabes ont leurs en-têtes et
-leurs mentions en arabe, et gardent en français les noms des branches et des cases.
+Les libellés des nœuds n'existent qu'en français : les liens arabes ont leurs mentions en
+arabe, et gardent en français les noms des branches et des grilles.
 """
 
 from __future__ import annotations
 
-import re
 import sys
 from pathlib import Path
 
@@ -57,21 +62,13 @@ INDEX = f"{PREFIXE}_index.yml"
 # Clés d'un nœud ou d'un paramètre qui ne sont pas des enfants.
 RESERVEES = ("description", "metadata", "documentation", "values", "brackets")
 
-# Dates repères communes à toutes les branches, après la première grille de chacune : des
-# CONSTANTES — une date mobile ferait différer le snapshot d'une semaine à l'autre.
-REPERES = ("2000-01-01", "2010-01-01", "2020-01-01", "2025-01-01", "2026-01-01")
-
 MOTS = {
     "fr": {
-        "effet": "Date d'effet", "texte": "Texte", "journal": "*Journal officiel*",
-        "repere": "Date repère", "sans_valeur": "non publiée",
-        "currency": "dinars", "par": "par",
+        "cases": "cases de la grille", "currency": "dinars", "par": "par",
         "periodes": {"heure": "heure", "jour": "jour", "mois": "mois", "an": "an"},
     },
     "ar": {
-        "effet": "تاريخ النفاذ", "texte": "النصّ", "journal": "الرائد الرسمي",
-        "repere": "التاريخ المرجعي", "sans_valeur": "غير منشورة",
-        "currency": "دينار", "par": "في",
+        "cases": "خانات الشبكة", "currency": "دينار", "par": "في",
         "periodes": {"heure": "الساعة", "jour": "اليوم", "mois": "الشهر", "an": "السنة"},
     },
 }
@@ -155,86 +152,11 @@ def serie(parametre: dict) -> list[tuple[str, float | None, str, str, str]]:
     return sortie
 
 
-# -------------------------------------------------------------------- cellules et tableau
-
-_JOURNAL = re.compile(r"^JORT\s+(n°\s.+?,\s+pp?\.\s+\d[\d\s–-]*\d|n°\s.+?,\s+pp?\.\s+\d)\.")
-
-
-def journal(note: str) -> str:
-    """« n° 72 du 24 septembre 1993, édition française, p. 1600 », tiré de la note. Pure.
-
-    Seule la localisation au Journal officiel, par laquelle la note commence, passe dans le
-    tableau : le reste de la note décrit le relevé, non le texte. « — » si la note ne
-    commence pas par elle.
-    """
-    trouve = _JOURNAL.match(note or "")
-    return trouve.group(1) if trouve else ot.VIDE
-
-
-def montant(valeur: float | None, langue: str = "fr") -> str:
-    """Trois décimales, comme le Journal officiel écrit les salaires ; « non publiée » à vide."""
-    if valeur is None:
-        return MOTS[langue]["sans_valeur"]
-    return f"{valeur:,.3f}".replace(",", " ").replace(".", ",")
-
-
-def date_insecable(date_iso: str, langue: str = "fr") -> str:
-    """Une date ne se coupe pas : « [1^er^ juin 1993]{.insecable} »."""
-    return f"[{ot.formate_date(date_iso, langue)}]{{.insecable}}"
-
-
-def entete_valeur(grandeur: str, parametre: dict, langue: str = "fr") -> str:
-    """Le nom de la grandeur, et son unité entre parenthèses à la ligne."""
-    u = unite(parametre, langue)
-    return f"{grandeur}<br>({u})" if u else grandeur
-
-
-def lignes_case(parametre: dict, langue: str = "fr") -> list[list[str]]:
-    """Les lignes du tableau d'une case : date d'effet, montant, texte, Journal officiel. Pure."""
-    # Le lien reste celui que la valeur porte, dans les deux langues : la colonne voisine
-    # donne la page dans l'édition que ce lien ouvre, et l'autre édition n'a pas la même.
-    return [[date_insecable(date, langue), montant(valeur, langue),
-             ot.lien_reference(titre, lien) or ot.VIDE, journal(note)]
-            for date, valeur, titre, lien, note in serie(parametre)]
-
-
-def markdown(entetes: list[str], lignes: list[list[str]], a_droite: tuple[int, ...] = ()) -> str:
-    """Tableau Markdown à barres ; `a_droite` : rangs des colonnes alignées à droite. Pure."""
-    sortie = ["| " + " | ".join(entetes) + " |",
-              "|" + "|".join("---:" if i in a_droite else "---"
-                             for i in range(len(entetes))) + "|"]
-    sortie += ["| " + " | ".join(ligne) + " |" for ligne in lignes]
-    return "\n".join(sortie)
-
-
-def tableau_case(grandeur: str, parametre: dict, langue: str = "fr") -> str:
-    m = MOTS[langue]
-    return markdown([m["effet"], entete_valeur(grandeur, parametre, langue), m["texte"],
-                     m["journal"]], lignes_case(parametre, langue), a_droite=(1,))
-
-
-def reperes(series: list[list[tuple]]) -> list[str]:
-    """Dates repères d'une branche : sa première date d'effet, puis les dates communes. Pure."""
-    debut = min(s[0][0] for s in series if s)
-    return [debut] + [d for d in REPERES if d > debut]
-
-
-def lignes_reperes(parametres: list, series: list[list[tuple]], dates: list[str],
-                   langue: str = "fr") -> list[list[str]]:
-    """L'état des cases aux dates repères : UNE DATE PAR LIGNE, une case par colonne. Pure.
-
-    À l'inverse du tableau commun (`ot.tableau_dates_reperes`, un paramètre par ligne) : une
-    grille a peu de cases et des montants longs, et six colonnes de dates insécables
-    débordent de la page. La case vient du même composant, `ParametreDate.case` : « — »
-    avant la première grille, la mention « non publiée » à compter d'une date sans valeur.
-    """
-    return [[date_insecable(date, langue)] + [p.case(s, date, langue)
-                                               for p, s in zip(parametres, series)]
-            for date in dates]
+# ---------------------------------------------------------------------- index et liens
 
 
 def fiche_case(chemin: tuple[str, ...], lignee: tuple[dict, ...], langue: str = "fr") -> dict:
-    """L'entrée d'une case dans l'index : libellés, unité, fichier, période, comptes. Pure.
+    """L'entrée d'une case dans l'index : libellés, unité, période, comptes. Pure.
 
     `chemin` : (branche, grandeur, …, case). `lignée` : les nœuds de mêmes rangs.
     """
@@ -247,7 +169,6 @@ def fiche_case(chemin: tuple[str, ...], lignee: tuple[dict, ...], langue: str = 
         "grandeur": libelle(lignee[1]),
         "unite": unite(parametre, langue),
         "description": (parametre.get("description") or "").strip(),
-        "tableau": f"{PREFIXE}_{'_'.join(chemin)}.md",
         "parametre": f"{NOEUD}/{'/'.join(chemin)}.yaml",
         "debut": s[0][0] if s else None,
         "derniere_valeur": valuees[-1] if valuees else None,
@@ -257,12 +178,63 @@ def fiche_case(chemin: tuple[str, ...], lignee: tuple[dict, ...], langue: str = 
     }
 
 
+def _minuscule(texte: str) -> str:
+    return texte[:1].lower() + texte[1:]
+
+
 def libelle_lien(branche: str, fiche: dict) -> str:
     """Libellé du lien « Base législative » : la branche, la case, la grandeur et son unité."""
-    case = fiche["libelle"][:1].lower() + fiche["libelle"][1:]
-    grandeur = fiche["grandeur"][:1].lower() + fiche["grandeur"][1:]
     suffixe = f" ({fiche['unite']})" if fiche["unite"] else ""
-    return f"{branche} — {case} : {grandeur}{suffixe}"
+    return (f"{branche} — {_minuscule(fiche['libelle'])} : "
+            f"{_minuscule(fiche['grandeur'])}{suffixe}")
+
+
+def grilles(trouvees: list[tuple[tuple[str, ...], tuple[dict, ...]]], langue: str = "fr"
+            ) -> list[dict]:
+    """Les grilles d'une branche, déduites des chemins de ses cases. Pure.
+
+    `trouvees` : les cases de la branche, telles que `cases` les rend — chemin (branche,
+    grandeur, …, case) et lignée de mêmes rangs. Une grille est le nœud LE PLUS PROFOND
+    commun à toutes les cases de même grandeur et de même unité : celui qui regroupe les
+    catégories ou les échelles — `…salaire_base.agents_payes_a_l_heure` quand la grandeur
+    porte plusieurs grilles, `…salaire_base` quand elle n'en porte qu'une. Une case seule de
+    son espèce a pour grille le nœud qui la contient. L'ordre est celui des cases.
+
+    Chaque grille : sa clé pointée sous la branche, son libellé (vide quand la grille est la
+    grandeur elle-même), la grandeur, l'unité, le chemin de sa page publique et les clés de
+    ses cases.
+    """
+    groupes: dict[tuple[str, str], list] = {}
+    for chemin, lignee in trouvees:
+        groupes.setdefault((chemin[1], unite(lignee[-1], langue)), []).append((chemin, lignee))
+    sortie = []
+    for (_grandeur, u), membres in groupes.items():
+        chemins = [c for c, _l in membres]
+        commun = len(chemins[0]) - 1
+        for chemin in chemins[1:]:
+            rang = 0
+            while rang < min(commun, len(chemin) - 1) and chemin[rang] == chemins[0][rang]:
+                rang += 1
+            commun = rang
+        commun = max(commun, 2)  # jamais au-dessus de la grandeur
+        chemin, lignee = membres[0]
+        sortie.append({
+            "cle": ".".join(chemin[1:commun]),
+            "libelle": libelle_case(lignee[2:commun]),
+            "grandeur": libelle(lignee[1]),
+            "unite": u,
+            "parametre": f"{NOEUD}/{'/'.join(chemin[:commun])}",
+            "cases": [".".join(c[1:]) for c in chemins],
+        })
+    return sortie
+
+
+def libelle_lien_grille(branche: str, grille: dict, langue: str = "fr") -> str:
+    """« Textile — agents payés à l'heure : salaire de base, cases de la grille (dinars par heure) »."""
+    tete = f"{branche} — {_minuscule(grille['libelle'])}" if grille["libelle"] else branche
+    suffixe = f" ({grille['unite']})" if grille["unite"] else ""
+    return (f"{tete} : {_minuscule(grille['grandeur'])}, "
+            f"{MOTS[langue]['cases']}{suffixe}")
 
 
 # --------------------------------------------------------------------------- lecture
@@ -289,61 +261,48 @@ def charge_arbre(chemin_noeud: str) -> dict:
 # --------------------------------------------------------------------------- écriture
 
 
-def _entete(parametres: list[str]) -> str:
-    return (f"<!-- Généré par scripts/{Path(__file__).name} — ne pas éditer à la main.\n"
-            f"     Paramètres : {', '.join(parametres)} -->\n\n")
-
-
 def _nettoie(dossier: Path, motif: str, ecrits: set[Path]) -> None:
-    """Retire les snapshots d'une case qui n'existe plus : ils survivraient sans être gardés."""
+    """Retire les fichiers engendrés que plus rien n'écrit : ils survivraient sans être gardés."""
     for ancien in dossier.glob(motif):
         if ancien not in ecrits:
             ancien.unlink()
 
 
 def ecrire_branche(branche: str, noeud: dict, langue: str, ecrits: set[Path]) -> dict | None:
-    """Écrit les tableaux d'une branche dans une langue ; rend son entrée d'index, ou None."""
+    """Écrit les liens des grilles d'une branche dans une langue ; rend son entrée d'index."""
     tables = RACINE / langue / LIVRE / "tables"
     tables.mkdir(parents=True, exist_ok=True)
     trouvees = cases(noeud, (branche,), (noeud,))
     if not trouvees:
         return None
     nom_branche = libelle(noeud)
-    fiches = []
-    for chemin, lignee in trouvees:
-        fiche = fiche_case(chemin, lignee, langue)
+    fiches = [fiche_case(chemin, lignee, langue) for chemin, lignee in trouvees]
+    for fiche in fiches:
         if not fiche["dates"]:
-            print(f"✗ {langue}/{fiche['tableau']} : paramètre sans valeur datée.")
+            print(f"✗ {langue}/{branche}, {fiche['cle']} : paramètre sans valeur datée.")
             return None
-        fichier = tables / fiche["tableau"]
-        fichier.write_text(_entete([fiche["parametre"]])
-                           + tableau_case(fiche["grandeur"], lignee[-1], langue) + "\n",
-                           encoding="utf-8")
-        ot.ecrire_liens(fichier, [(fiche["parametre"], libelle_lien(nom_branche, fiche))], langue)
-        ecrits |= {fichier, fichier.with_suffix(".liens.yml")}
-        fiches.append(fiche)
-    dates = reperes([serie(lignee[-1]) for _c, lignee in trouvees])
-    entree = {
+    trouvees_grilles = grilles(trouvees, langue)
+    liens = tables / f"{PREFIXE}_{branche}_grilles.liens.yml"
+    ot.ecrire_fichier_liens(
+        liens, [(g["parametre"], libelle_lien_grille(nom_branche, g, langue))
+                for g in trouvees_grilles], langue)
+    ecrits.add(liens)
+    return {
         "branche": branche,
         "libelle": nom_branche,
         "description": (noeud.get("description") or "").strip(),
         "serie": f"{PREFIXE_SERIE}-{branche}",
-        "reperes": f"{PREFIXE}_{branche}_dates_reperes.md",
-        "dates_reperes": dates,
+        "liens_grilles": liens.name,
+        "grilles": trouvees_grilles,
         "cases": fiches,
     }
-    ecrits |= {tables / entree["reperes"],
-               (tables / entree["reperes"]).with_suffix(".liens.yml")}
-    return entree
 
 
 def parametres_dates(entree: dict) -> list:
-    """Les cases d'une branche, déclarées pour la série longue et le tableau aux dates repères."""
+    """Les cases d'une branche, déclarées pour la série longue que trace sa figure."""
     return [ot.ParametreDate(
         f["cle"], f["parametre"], {l: f["libelle"] for l in LANGUES},
-        format=montant,
-        lien={l: libelle_lien(entree["libelle"], f) for l in LANGUES},
-        sans_valeur={l: MOTS[l]["sans_valeur"] for l in LANGUES}) for f in entree["cases"]]
+        lien={l: libelle_lien(entree["libelle"], f) for l in LANGUES}) for f in entree["cases"]]
 
 
 def main() -> int:
@@ -379,21 +338,6 @@ def main() -> int:
                                        avec_textes=avec_textes))
         if code:
             return code
-        series = [p.serie() for p in parametres]
-        for langue in LANGUES:
-            fiches = index[langue][-1]["cases"]
-            entetes = [MOTS[langue]["repere"]] + [
-                f"{f['libelle']}<br>({f['unite']})" if f["unite"] else f["libelle"]
-                for f in fiches]
-            fichier = RACINE / langue / LIVRE / "tables" / entree["reperes"]
-            fichier.write_text(
-                f"<!-- Généré par scripts/{Path(__file__).name} — ne pas éditer à la main.\n"
-                f"     État en vigueur aux dates : {', '.join(entree['dates_reperes'])}.\n"
-                f"     Paramètres : {', '.join(p.chemin for p in parametres)} -->\n\n"
-                + markdown(entetes, lignes_reperes(parametres, series,
-                                                   entree["dates_reperes"], langue),
-                           a_droite=tuple(range(1, len(entetes)))) + "\n", encoding="utf-8")
-            ot.ecrire_liens(fichier, [(p.chemin, p.lien[langue]) for p in parametres], langue)
         series_ecrites |= {CACHE / f"{entree['serie']}.csv",
                            *(CACHE / f"{entree['serie']}.liens.{l}.yml" for l in LANGUES)}
     for langue in LANGUES:
@@ -402,7 +346,7 @@ def main() -> int:
             "# Généré par scripts/generate_conventions_collectives_tables.py — ne pas éditer "
             "à la main.\n" + yaml.safe_dump(index[langue], allow_unicode=True, sort_keys=False),
             encoding="utf-8")
-        _nettoie(tables, f"{PREFIXE}_*.md", ecrits)
+        _nettoie(tables, f"{PREFIXE}_*.md", ecrits)  # tableaux d'une version antérieure
         _nettoie(tables, f"{PREFIXE}_*.liens.yml", ecrits)
     _nettoie(CACHE, f"{PREFIXE_SERIE}-*", series_ecrites)
     n_cases = sum(len(e["cases"]) for e in index["fr"])

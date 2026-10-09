@@ -1,11 +1,16 @@
-"""Annexe « Les conventions collectives, branche par branche » : tableaux et figures.
+"""Annexe « Les conventions collectives, branche par branche » : figures et renvois.
 
 L'annexe ne nomme aucune case de grille : elle lit `tables/cc_index.yml`, que
-`scripts/generate_conventions_collectives_tables.py` engendre avec les tableaux, et déroule
-pour chaque branche ses cases dans l'ordre de l'index. Une case ajoutée en amont entre dans
-la page à la régénération, sans que l'annexe change.
+`scripts/generate_conventions_collectives_tables.py` engendre, et déroule pour chaque branche
+ses grilles et ses cases dans l'ordre de l'index. Une case ajoutée en amont entre dans la
+page à la régénération, sans que l'annexe change.
 
-Ce module ne lit que des fichiers versionnés — l'index, les tableaux, la série longue de
+Elle ne reproduit pas les grilles : pour chaque branche, une figure en escalier trace la plus
+basse et la plus haute des cases de l'index, et un renvoi « Base législative » mène à la page
+de chaque grille — ses cases, à toutes leurs dates, avec leurs références. Ce renvoi
+est engendré avec l'index (`tables/cc_<branche>_grilles.liens.yml`), jamais écrit ici.
+
+Ce module ne lit que des fichiers versionnés — l'index, les liens, la série longue de
 `_seriescache/` : le build du site n'importe pas le générateur.
 """
 
@@ -24,7 +29,6 @@ matplotlib.use("Agg")
 sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "scripts"))
 
 import figtools  # noqa: E402
-import openfisca_tables as ot  # noqa: E402
 
 TABLES = Path.cwd() / "tables"
 
@@ -65,58 +69,50 @@ def tableau_branches(faits: dict[str, tuple[str, str, str]]) -> str:
     """Le tableau d'ouverture : une ligne par branche de l'index.
 
     `faits` : branche -> (convention, agrément, date d'effet) — la création de la convention,
-    que l'index ne porte pas, écrite dans l'annexe avec ses références. Les cases données et
-    leur période viennent de l'index. Rien n'y est dit des avenants : leur suite est au
-    tableau de chaque branche.
+    que l'index ne porte pas, écrite dans l'annexe avec ses références. Les cases tracées et
+    leur période viennent de l'index et de la série. Rien n'y est dit des avenants : leur
+    suite est au tableau de chaque branche.
     """
     lignes = ["| Branche | Convention | Arrêté d'agrément | Date d'effet | "
-              "Cases de la grille données ici |", "|:---|:---|:---|:---|:---|"]
+              "Cases de la grille tracées |", "|:---|:---|:---|:---|:---|"]
     # L'ordre des lignes est celui de l'annexe ; une branche que l'annexe ne décrit pas
     # encore suit, avec ses cases et des tirets.
     rang = {nom: i for i, nom in enumerate(faits)}
     for entree in sorted(index(), key=lambda e: rang.get(e["branche"], len(rang))):
         convention, agrement, effet = faits.get(entree["branche"], ("—",) * 3)
-        cases = "<br>".join(f"{_minuscule(c['libelle'])}, {_periode(c)}"
-                            for c in entree["cases"])
+        tracees = _tracees(entree, figtools.series(entree["serie"]))
+        cases = "<br>".join(f"{_minuscule(c['libelle'])}, {_periode(c)}" for c in tracees)
         lignes.append(f"| [{entree['libelle']}](#sec-mt-cc-annexe-{entree['branche']}) | "
                       f"{convention} | {agrement} | {effet} | {cases} |")
     return "\n".join(lignes)
 
 
-def reperes(nom: str) -> str:
-    """Les cases de la branche à ses dates repères, avec l'onglet « Base législative »."""
-    entree = branche(nom)
-    dates = entree["dates_reperes"]
-    legende = (f"{entree['libelle']} : salaire de base en vigueur dans les cases données, "
-               f"en {_unites(entree)}, à {len(dates)} dates repères, "
-               f"{dates[0][:4]}-{dates[-1][:4]}")
-    return ot.markdown_avec_legende(TABLES / entree["reperes"], legende,
-                                    f"tbl-cc-{nom}-reperes")
+INTRO_BASE = {
+    "fr": "⚖️ Les cases de la grille, date par date, avec leurs références, dans la base "
+          "législative :",
+    "ar": "⚖️ خانات الشبكة، تاريخًا بتاريخ، مع مراجعها، في القاعدة التشريعية:",
+}
 
 
-def cases(nom: str) -> str:
-    """Un bloc replié par case : son tableau entier, date d'effet par date d'effet."""
-    entree = branche(nom)
-    blocs = []
-    for case in entree["cases"]:
-        slug = case["cle"].replace(".", "-").replace("_", "-")
-        grandeur = _minuscule(case["grandeur"])
-        titre = (f"{entree['libelle']}, {_minuscule(case['libelle'])} : {grandeur} aux "
-                 f"{case['valeurs']} dates d'effet de la grille, {_periode(case)} — montant "
-                 f"en {case['unite']}, texte et page du Journal officiel")
-        legende = (f"{entree['libelle']}, {_minuscule(case['libelle'])} : {grandeur} par "
-                   f"date d'effet, en {case['unite']}, {_periode(case)}")
-        tableau = ot.markdown_avec_legende(
-            TABLES / case["tableau"], legende, f"tbl-cc-{nom}-{slug}",
-            colonnes='tbl-colwidths="[17,13,45,25]"')
-        blocs.append(f':::: {{.chronologie-repliable titre="{titre}"}}\n\n{tableau}\n::::\n')
-    return "\n".join(blocs)
+def base_legislative(nom: str) -> str:
+    """Le renvoi « Base législative » des grilles de la branche, sous sa figure.
+
+    Un lien par grille, lu dans le fichier de liens que l'index désigne : la page publique de
+    la grille, qui en donne les cases versées à toutes leurs dates. Le renvoi se présente
+    comme la base législative, à la manière de l'onglet du même nom des tableaux engendrés.
+    """
+    import yaml
+
+    langue = figtools.lang()
+    liens = yaml.safe_load((TABLES / branche(nom)["liens_grilles"]).read_text(encoding="utf-8"))
+    items = "\n".join(f"- [{e['libelle']}]({e['url']})" for e in liens or [])
+    return f"{INTRO_BASE[langue]}\n\n{items}\n"
 
 
 def _tracees(entree: dict, d) -> list[dict]:
     """Les cases que la figure trace : pour chaque unité, la plus basse et la plus haute,
     d'après leur dernière valeur. Une case située entre les deux — un échelon voisin du
-    sommet, dont le trait se confondrait avec lui — reste dans les tableaux."""
+    sommet, dont le trait se confondrait avec lui — se lit à la page de la grille."""
     derniere = {}
     for case in entree["cases"]:
         s = d[(d["case"] == case["cle"]) & d["valeur"].notna()].sort_values("date_effet")
@@ -160,8 +156,8 @@ def figure(nom: str, sources: list[str], note_lecture: str | None = None,
     Une marche par date d'effet ; seules la première et la dernière valeur de chaque case
     sont écrites, et une graduation sur cinq : une grille change chaque année ou presque.
     Le cercle creux marque la date à compter de laquelle le montant n'est pas publié.
-    La figure trace la plus basse et la plus haute des cases données (`_tracees`) ; sa légende est écrite
-    d'après l'index, sauf si `caption` la donne.
+    La figure trace la plus basse et la plus haute des cases de l'index (`_tracees`) ; sa
+    légende est écrite d'après l'index, sauf si `caption` la donne.
     """
     entree = branche(nom)
     serie = entree["serie"]

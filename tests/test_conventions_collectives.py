@@ -2,10 +2,9 @@
 
 Le générateur ne nomme aucune branche : il parcourt un nœud de paramètres. Sont donc figés
 ici le parcours — ordre de l'index, descente dans les clés d'un fichier de nœud comme dans
-les dossiers — et les trois règles qui, mal tenues, imprimeraient un chiffre faux sans rien
-faire échouer : une date sans valeur ne rend ni zéro ni la valeur précédente ; un montant
-garde ses trois décimales ; la note d'un relevé ne passe pas dans le tableau, hors sa
-localisation au Journal officiel.
+les dossiers —, la déduction de la grille d'une case d'après les chemins, d'où vient
+l'adresse de sa page publique, et la règle qui, mal tenue, tracerait un chiffre faux sans
+rien faire échouer : une date sans valeur ne rend ni zéro ni la valeur précédente.
 
 Fonctions PURES seulement, sur des dictionnaires déjà chargés : le job de tests n'installe
 ni PyYAML ni pandas, et le modèle n'est pas là.
@@ -118,9 +117,9 @@ class LibellesTest(unittest.TestCase):
         self.assertEqual(cc.libelle_lien("Assurances", f),
                          "Assurances — échelle 1, échelon 1 : salaire de base (dinars par mois)")
 
-    def test_chemin_de_la_page_publique_et_nom_du_tableau(self):
+    def test_chemin_de_la_page_publique(self):
         f = self.fiche("salaire_base", "echelle_1", "echelon_1")
-        self.assertEqual(f["tableau"], "cc_assurances_salaire_base_echelle_1_echelon_1.md")
+        self.assertNotIn("tableau", f)
         self.assertTrue(ot.url_parametre(f["parametre"]).endswith(
             "/marche_travail.conventions_collectives.assurances.salaire_base.echelle_1."
             "echelon_1/table/"))
@@ -138,107 +137,105 @@ class LibellesTest(unittest.TestCase):
         self.assertEqual(cc.unite({"metadata": {"unit": "/1"}}), "")
 
 
-class CellulesTest(unittest.TestCase):
+class SerieTest(unittest.TestCase):
 
     def test_une_date_sans_valeur_n_est_ni_zéro_ni_la_précédente(self):
         p = BRANCHE["salaire_base"]["echelle_1"]["echelon_1"]
-        lignes = cc.lignes_case(p)
-        self.assertEqual([l[1] for l in lignes], ["181,137", "192,877", "non publiée"])
-        self.assertEqual(cc.montant(None, "ar"), "غير منشورة")
-        self.assertEqual(cc.montant(0.0), "0,000")
+        self.assertEqual([(d, v) for d, v, *_ in cc.serie(p)],
+                         [("1993-06-01", 181.137), ("1994-06-01", 192.877),
+                          ("2026-01-01", None)])
 
-    def test_trois_décimales_toujours(self):
-        self.assertEqual(cc.montant(0.95), "0,950")
-        self.assertEqual(cc.montant(2.41), "2,410")
-        self.assertEqual(cc.montant(1598.617), "1 598,617")
-        self.assertEqual(cc.montant(1002.9), "1 002,900")
-
-    def test_la_date_ne_se_coupe_pas(self):
-        self.assertEqual(cc.date_insecable("1993-06-01"), "[1^er^ juin 1993]{.insecable}")
-        self.assertEqual(cc.date_insecable("2005-06-15"), "[15 juin 2005]{.insecable}")
-
-    def test_seule_la_localisation_passe_de_la_note_au_tableau(self):
-        cas = {
-            "JORT n° 72 du 24 septembre 1993, édition française, p. 1600. La grille prend "
-            "effet le 1er juin 1993 ; valeur relevée.":
-                "n° 72 du 24 septembre 1993, édition française, p. 1600",
-            "JORT n° 44 du 30 avril 2026, pp. 838-839. Article premier : hausse de 5 %.":
-                "n° 44 du 30 avril 2026, pp. 838-839",
-            "JORT n° 4 du 13 janvier 2015, édition arabe, p. 151. Suite.":
-                "n° 4 du 13 janvier 2015, édition arabe, p. 151",
-            "JORT n° 7 du 24 janvier 2006, édition arabe, p. 7.": "n° 7 du 24 janvier 2006, "
-                                                                  "édition arabe, p. 7",
-            "Valeur relevée sur une copie.": "—",
-            "": "—",
-        }
-        for note, attendu in cas.items():
-            self.assertEqual(cc.journal(note), attendu, note)
-
-    def test_le_texte_porte_son_lien_ou_reste_nu(self):
-        avec = cc.lignes_case(BRANCHE["salaire_base"]["echelle_1"]["echelon_1"])[0]
-        self.assertEqual(avec[2], f"[Avenant du 1993-06-01]({PIST})")
-        sans = cc.lignes_case(BRANCHE["salaire_base"]["grille_b"]["manoeuvre"])[0]
-        self.assertEqual(sans[2], "Avenant du 1996-05-01")
-
-    def test_tableau_d_une_case(self):
-        p = BRANCHE["salaire_base"]["grille_b"]["manoeuvre"]
-        texte = cc.tableau_case("Salaire de base", p).splitlines()
-        self.assertEqual(texte[0], "| Date d'effet | Salaire de base<br>(dinars par heure) | "
-                                   "Texte | *Journal officiel* |")
-        self.assertEqual(texte[1], "|---|---:|---|---|")
-        self.assertEqual(len(texte), 3)
-
-    def test_dates_repères(self):
-        s1 = cc.serie(BRANCHE["salaire_base"]["echelle_1"]["echelon_1"])
-        s2 = cc.serie(BRANCHE["salaire_base"]["echelle_1"]["echelon_2"])
-        self.assertEqual(cc.reperes([s2, s1]),
-                         ["1993-06-01", "2000-01-01", "2010-01-01", "2020-01-01",
-                          "2025-01-01", "2026-01-01"])
-        tardive = [("2012-05-01", 1.0, "", "", "")]
-        self.assertEqual(cc.reperes([tardive]),
-                         ["2012-05-01", "2020-01-01", "2025-01-01", "2026-01-01"])
+    def test_le_texte_et_son_lien_suivent_la_date(self):
+        avec = cc.serie(BRANCHE["salaire_base"]["echelle_1"]["echelon_1"])[0]
+        self.assertEqual(avec[2:4], ("Avenant du 1993-06-01", PIST))
+        sans = cc.serie(BRANCHE["salaire_base"]["grille_b"]["manoeuvre"])[0]
+        self.assertEqual(sans[2:4], ("Avenant du 1996-05-01", ""))
 
 
-class TableauAuxDatesReperesTest(unittest.TestCase):
-    """Une date par ligne, une case par colonne ; trois états distincts dans une case."""
-
-    def test_tiret_valeur_et_mention(self):
-        ancienne = [("1993-06-01", 642.206, "t", PIST), ("2026-01-01", None, "t", PIST)]
-        recente = [("1999-06-01", 839.9, "t", PIST), ("2026-01-01", None, "t", PIST)]
-        parametres = [ot.ParametreDate(c, "x.yaml", {"fr": c}, format=cc.montant,
-                                       sans_valeur={"fr": "non publiée"}) for c in "ab"]
-        lignes = cc.lignes_reperes(parametres, [ancienne, recente],
-                                   ["1993-06-01", "2025-01-01", "2026-01-01"])
-        self.assertEqual(lignes, [
-            ["[1^er^ juin 1993]{.insecable}", "642,206", "—"],
-            ["[1^er^ janvier 2025]{.insecable}", "642,206", "839,900"],
-            ["[1^er^ janvier 2026]{.insecable}", "non publiée", "non publiée"],
-        ])
+def branche(nom, grandeur):
+    """Une branche à une grandeur, `salaire_base`, de structure donnée."""
+    return (nom, {"metadata": {"short_label": nom.capitalize()},
+                  "salaire_base": {"metadata": {"short_label": "Salaire de base"}, **grandeur}})
 
 
-class CaseAuxDatesReperesTest(unittest.TestCase):
-    """`ParametreDate.case` : la mention d'une date sans valeur, quand elle est déclarée."""
+def case(unite="currency/heure", court="Échelon 0"):
+    return parametre({"1996-05-01": 1.0}, unite=unite, court=court)
 
-    SERIE = [("1999-06-01", 839.9, "t", PIST), ("2026-01-01", None, "t", PIST)]
 
-    def setUp(self):
-        self.declare = ot.ParametreDate("c", "x.yaml", {"fr": "Case"}, unite="millimes",
-                                        sans_valeur={"fr": "non publiée"})
-        self.defaut = ot.ParametreDate("c", "x.yaml", {"fr": "Case"}, unite="millimes")
+def noeud(court, **enfants):
+    return {"metadata": {"short_label": court}, **enfants}
 
-    def test_avant_la_création_un_tiret(self):
-        self.assertEqual(self.declare.case(self.SERIE, "1993-06-01", "fr"), "—")
 
-    def test_la_valeur_en_vigueur(self):
-        self.assertEqual(self.declare.case(self.SERIE, "2025-12-31", "fr"), "839,900 D")
+class GrillesTest(unittest.TestCase):
+    """La grille d'une case se déduit des chemins : aucune n'est nommée dans le générateur.
 
-    def test_la_mention_à_compter_de_la_date_sans_valeur(self):
-        self.assertEqual(self.declare.case(self.SERIE, "2026-01-01", "fr"), "non publiée")
-        self.assertEqual(self.declare.case(self.SERIE, "2027-06-01", "fr"), "non publiée")
+    Les trois formes sont celles des branches versées — une grandeur à plusieurs grilles de
+    catégories à échelons, une grille de catégories sans échelon, une grandeur qui est
+    elle-même la grille de ses échelles.
+    """
 
-    def test_sans_déclaration_le_tiret_de_l_abrogation_est_gardé(self):
-        self.assertEqual(self.defaut.case(self.SERIE, "2026-01-01", "fr"), "—")
-        self.assertEqual(self.defaut.case(self.SERIE, "2025-12-31", "fr"), "839,900 D")
+    BASE = ("https://parameters.tn.tax-benefit.org/parameters/"
+            "marche_travail.conventions_collectives.")
+
+    def grilles(self, nom, grandeur, langue="fr"):
+        nom, arbre = branche(nom, grandeur)
+        return cc.grilles(cc.cases(arbre, (nom,), (arbre,)), langue)
+
+    def test_catégories_à_échelons_sous_une_grille_nommée(self):
+        g, = self.grilles("textile", {"agents_payes_a_l_heure": noeud(
+            "Agents payés à l'heure",
+            categorie_1=noeud("Catégorie I", echelon_0=case()),
+            categorie_4_2=noeud("Catégorie IV-2", echelon_0=case()))})
+        self.assertEqual(g["cle"], "salaire_base.agents_payes_a_l_heure")
+        self.assertEqual(ot.url_parametre(g["parametre"]),
+                         self.BASE + "textile.salaire_base.agents_payes_a_l_heure/table/")
+        self.assertEqual(g["cases"], ["salaire_base.agents_payes_a_l_heure.categorie_1.echelon_0",
+                                      "salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_0"])
+        self.assertEqual(cc.libelle_lien_grille("Textile", g),
+                         "Textile — agents payés à l'heure : salaire de base, cases de la grille "
+                         "(dinars par heure)")
+
+    def test_catégories_sans_échelon(self):
+        g, = self.grilles("batiment", {"personnel_occasionnel": noeud(
+            "Personnel occasionnel", manoeuvre_ordinaire=case(court="Manœuvre ordinaire"),
+            chef_equipe_3e_degre=case(court="Chef d'équipe du 3e degré"))})
+        self.assertEqual(ot.url_parametre(g["parametre"]),
+                         self.BASE + "batiment.salaire_base.personnel_occasionnel/table/")
+
+    def test_la_grandeur_est_la_grille_de_ses_échelles(self):
+        g, = self.grilles("assurances", {
+            "echelle_1": noeud("Échelle 1", echelon_1=case("currency/mois")),
+            "echelle_21": noeud("Échelle 21", echelon_12=case("currency/mois"),
+                                echelon_14=case("currency/mois"))})
+        self.assertEqual(ot.url_parametre(g["parametre"], "ar"),
+                         self.BASE.replace("/parameters/", "/ar/parameters/")
+                         + "assurances.salaire_base/table/")
+        self.assertEqual(g["libelle"], "")
+        self.assertEqual(cc.libelle_lien_grille("Assurances", g),
+                         "Assurances : salaire de base, cases de la grille (dinars par mois)")
+
+    def test_deux_unités_deux_grilles(self):
+        horaire, mensuelle = self.grilles("textile", {
+            "agents_payes_a_l_heure": noeud(
+                "Agents payés à l'heure",
+                categorie_1=noeud("Catégorie I", echelon_0=case()),
+                categorie_4_2=noeud("Catégorie IV-2", echelon_0=case())),
+            "agents_payes_au_mois": noeud(
+                "Agents payés au mois",
+                categorie_1=noeud("Catégorie 1", echelon_0=case("currency/mois")),
+                categorie_17=noeud("Catégorie 17", echelon_0=case("currency/mois")))})
+        self.assertEqual(horaire["cle"], "salaire_base.agents_payes_a_l_heure")
+        self.assertEqual(mensuelle["cle"], "salaire_base.agents_payes_au_mois")
+        self.assertEqual(mensuelle["unite"], "dinars par mois")
+
+    def test_une_case_seule_a_pour_grille_le_nœud_qui_la_contient(self):
+        g, = self.grilles("batiment", {"personnel_occasionnel": noeud(
+            "Personnel occasionnel", manoeuvre_ordinaire=case())})
+        self.assertEqual(g["cle"], "salaire_base.personnel_occasionnel")
+
+    def test_jamais_au_dessus_de_la_grandeur(self):
+        g, = self.grilles("x", {"taux_unique": case()})
+        self.assertEqual(g["cle"], "salaire_base")
 
 
 if __name__ == "__main__":
