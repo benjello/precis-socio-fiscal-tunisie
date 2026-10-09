@@ -1911,6 +1911,63 @@ traduction n'a pas livré `index.qmd`.
   endettement des communes non encore suivis (données présentes) ; définitions du ratio
   d'autonomie et du taux de recouvrement de la TIB publiés par la DGCT ; explication de la TIB
   de 2019 (76 MD) ; écart DGCT / somme des communes sur les dépenses 2018-2019.
+- **Impôts sur les immeubles — converti au format « ruptures au premier plan, détail replié »
+  le 9 octobre 2026** (`_impots_immeubles.qmd`, `#sec-fl-immeubles`, `.domicile-unique`),
+  d'après `docs/notes/finances-locales-impots-plan-architecte.md` : vue d'ensemble ; mise en
+  place de 1997 ; deux grandes réformes, toutes deux de perception (2002, 2006-2009) ; état du
+  droit en 2025 ; quatre dispositions (dégrèvement, contribution au fonds de l'habitat,
+  pénalité, abandons) ; longue période, avec deux figures nouvelles sur le seul budgétaire
+  (`fig-fl-immeubles-rendement`, `fig-fl-immeubles-recouvrement`). Treize blocs repliés, dont
+  dix registres à ancres `r-fl-imm-…` ; barèmes au premier plan, une colonne par grandeur et
+  par date. Réorganisation sans fait nouveau : les seuls ajouts viennent de la note
+  documentaire (pages du JORT, clauses d'effet des lois de finances, conditions des abandons
+  de 2019, 2024 et 2025) et de calculs sur les valeurs déjà publiées (hausses en % des
+  barèmes, parts des recettes de fonctionnement). **Tâches closes** : la phrase qui promettait
+  les chiffres « au chapitre de la longue période » ; la section « Notations » ; la double
+  occurrence de l'ancre `r-cfl-prix-reference-1998-2006` (une seule, à
+  `#sec-fl-immeubles-etat-du-droit`, `docs/recherches.yml` mis à jour).
+  **Lacunes nouvelles ou maintenues**, toutes **lisibles dans le corpus** sauf mention :
+  - rubriques des lois de finances (« ce que la loi cherche ») : celle de l'art. 33 de la LF
+    2009 n'est connue que par la note, avec des sigles ; celles des art. 53, 56 et 57 de la LF
+    2006 ne sont pas relevées — la réforme de 2006-2009 est paraphrasée, non citée (ticket du
+    plan de l'architecte, § 8, A) ;
+  - état du droit dit pour 2025 : la LF 2026 (JORT n° 148 de 2025, édition arabe) est à
+    inventorier pour tous les articles du code avant de passer le titre à 2026 (§ 8, H) ;
+  - art. 3 du code : la note annonce six exonérations et en énumère cinq — à relire (JORT
+    n° 11 de 1997, p. 173) ;
+  - pages des art. 72 (LF 2019), 59 (LF 2023), 59 (LF 2024) et 76 (LF 2025) : la note ne les
+    donne que dans l'édition arabe, et deux d'entre elles sont presque identiques dans deux
+    fascicules — laissées hors du registre, à confirmer ;
+  - LF 2002, art. 88 (pénalité des commissionnaires, 0,75 %) à relire en regard de l'art. 87
+    (1 %) ;
+  - condition de l'abandon des pénalités des personnes morales (LF 2024, art. 59) : non
+    relevée ;
+  - taxe au profit du Fonds national d'amélioration de l'habitat avant 2005 (décret beylical
+    du 23 août 1956) : taux et régime non lus ; produit de la contribution depuis 2005 :
+    aucune série identifiée — **à obtenir** ;
+  - décrets de 1902, 1919, 1920 et 1948 (taxes d'avant le code), arrêtés communaux du prix de
+    référence (**hors corpus**), portée du § 10 de l'art. 59 du décret-loi n° 2022-79 :
+    inchangés ;
+  - frise de tête : non faite, le tableau des réformes en tient lieu.
+- **Figures des impôts locaux — scindées le 9 octobre 2026** (`figures/finances_locales.py`) :
+  `vues_impots()` et `table_impots()` reçoivent la liste des impôts, les sources et l'option
+  du recouvrement (sans argument : la figure d'origine, inchangée) ; `vues_immeubles_rendement()`,
+  `fig_immeubles_recouvrement()` et leurs tables servent le chapitre des immeubles ;
+  `vues_activite_rendement()` et `table_activite_rendement()` sont **prêtes et non insérées** :
+  elles attendent la conversion de `_impots_activite.qmd`. Les marques des textes (trait
+  rouge, sans lien de cause) sont déclarées dans `MARQUES_IMMEUBLES` et `MARQUES_ACTIVITE`.
+  `#sec-fl-lp-impots` est allégée : la vue du recouvrement et les lectures des deux taxes sur
+  les immeubles sont parties au chapitre 6 ; **il y reste, jusqu'à la conversion du
+  chapitre 7**, les lectures de 2008-2023 de la taxe sur les établissements et de la taxe
+  hôtelière, puis seulement la figure à quatre impôts et les points de 1990-1996 du rapport de
+  la Banque mondiale (seconde vague). La ligne « taxe sur les immeubles bâtis, 2006-2007 » de
+  `tbl-fl-lp-ecarts` (évaluation de la Banque mondiale) reste à la longue période ; le
+  chapitre 6 y renvoie.
+- **À reprendre aux chapitres 7 et 8, non touchés ici** : `_impots_activite.qmd`, l. 5, dit
+  suivre « le même plan que le précédent », ce qui n'est plus vrai tant qu'il n'est pas
+  converti ; ses renvois « objet d'un chapitre à venir » et les promesses de chiffres « au
+  chapitre de la longue période » des chapitres 7 et 8 sont périmés (plan de l'architecte,
+  § 7, points 4 et 5).
 - **Livre arabe** : `_transferts.qmd` et `_longue_periode.qmd` déclarés en commentaire dans
   `precis/ar/finances_locales/_quarto.yml`. Glossaire : `fonds-commun-collectivites-locales`,
   `reserve-fonds-commun`, `cpscl` (termes arabes du JORT).
