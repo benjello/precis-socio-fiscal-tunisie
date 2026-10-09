@@ -111,7 +111,7 @@ Sur 2018-2023, le ratio le plus large, $a$, va de 53 % (2018) à 40 % (2021), pu
 
 ## Le rendement des impôts locaux {#sec-fl-lp-impots}
 
-Cette section compare les quatre impôts locaux des communes et porte les seuls points antérieurs à 2008, tirés d'un rapport de la Banque mondiale. Le produit de la taxe sur les immeubles bâtis et de la taxe sur les terrains non bâtis, et le taux de recouvrement de la première, sont lus au chapitre des impôts sur les immeubles (@sec-fl-immeubles-rendement, @sec-fl-immeubles-recouvrement-donnees).
+Cette section compare les quatre impôts locaux des communes et porte les seuls points antérieurs à 2008, tirés d'un rapport de la Banque mondiale. Le produit de la taxe sur les immeubles bâtis et de la taxe sur les terrains non bâtis, et le taux de recouvrement de la première, sont lus au chapitre des impôts sur les immeubles (@sec-fl-immeubles-rendement, @sec-fl-immeubles-recouvrement-donnees) ; celui de la taxe sur les établissements et de la taxe hôtelière, de 2008 à 2023, au chapitre des impôts sur l'activité (@sec-fl-activite-longue-periode).
 
 La Direction générale publie de 2008 à 2019 le produit de la taxe sur les immeubles bâtis, de la taxe sur les terrains non bâtis, de la taxe sur les établissements à caractère industriel, commercial ou professionnel et de la taxe hôtelière [@dgct-donnees-ouvertes] ; les budgets par commune les donnent à l'article pour 2022 et 2023 (articles 1101, 1102, 1201 et 1202). Le rapport de 1997 donne les deux taxes sur l'activité pour cinq années de 1990 à 1996 ; la ligne de la taxe locative, devenue taxe sur les immeubles bâtis en 1997, manque à son tableau imprimé [@wb-mdp2-1997, annexe 4, tabl. 2].
 
@@ -137,11 +137,9 @@ figtools.figure_tabs(
 )
 ```
 
-La taxe sur les établissements domine et croît le plus vite : de 8 % des recettes courantes des communes en 1990 à 13 % en 1996 selon le rapport de 1997, puis de 19 % en 2008 à 28 % en 2017 selon la Direction générale, et 26 % à 28 % en 2022-2023 selon les budgets par commune ; rapportée au PIB, de 0,16 % en 2008 à 0,27 % en 2023. Les deux impôts sur les immeubles restent faibles, chacun sous 8 % des recettes de fonctionnement sur toute la période ; leur évolution est décrite au chapitre qui les traite (@sec-fl-immeubles-rendement). La taxe hôtelière, de 3,4 % à 4,6 % des recettes de fonctionnement de 1990 à 2010, tombe à 2,1 % en 2011 et reste ensuite entre 1,5 % et 2,7 %.
+Selon le rapport de 1997, la taxe sur les établissements passe de 8 % des recettes courantes des communes en 1990 à 13 % en 1996, et la taxe hôtelière se tient entre 3,4 % et 4,3 %.
 
-En 2011, toutes les taxes reculent en montant : la taxe hôtelière passe de 22 à 12 MD, la taxe sur les immeubles bâtis de 39 à 20 MD (@sec-fl-immeubles-rendement).
-
-<!-- TODO (rédacteur) : à la conversion du chapitre des impôts sur l'activité, les lectures de 2008-2023 de la taxe sur les établissements et de la taxe hôtelière partent à `@sec-fl-activite-longue-periode` (fonctions `fl.vues_activite_rendement()` et `fl.table_activite_rendement()`, déjà prêtes) ; il ne reste alors ici que la figure à quatre impôts et la phrase sur 1990-1996 (plan de l'architecte, § 5.1). -->
+Les lectures de 2008 à 2023, sur les seules sources budgétaires, sont aux deux chapitres qui traitent ces impôts (@sec-fl-activite-longue-periode, @sec-fl-immeubles-rendement).
 
 ## Le fonds commun et la dotation qui lui succède {#sec-fl-lp-fccl}
 

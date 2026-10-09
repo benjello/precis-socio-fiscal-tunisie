@@ -1953,21 +1953,67 @@ traduction n'a pas livré `index.qmd`.
   `vues_impots()` et `table_impots()` reçoivent la liste des impôts, les sources et l'option
   du recouvrement (sans argument : la figure d'origine, inchangée) ; `vues_immeubles_rendement()`,
   `fig_immeubles_recouvrement()` et leurs tables servent le chapitre des immeubles ;
-  `vues_activite_rendement()` et `table_activite_rendement()` sont **prêtes et non insérées** :
-  elles attendent la conversion de `_impots_activite.qmd`. Les marques des textes (trait
-  rouge, sans lien de cause) sont déclarées dans `MARQUES_IMMEUBLES` et `MARQUES_ACTIVITE`.
-  `#sec-fl-lp-impots` est allégée : la vue du recouvrement et les lectures des deux taxes sur
-  les immeubles sont parties au chapitre 6 ; **il y reste, jusqu'à la conversion du
-  chapitre 7**, les lectures de 2008-2023 de la taxe sur les établissements et de la taxe
-  hôtelière, puis seulement la figure à quatre impôts et les points de 1990-1996 du rapport de
-  la Banque mondiale (seconde vague). La ligne « taxe sur les immeubles bâtis, 2006-2007 » de
-  `tbl-fl-lp-ecarts` (évaluation de la Banque mondiale) reste à la longue période ; le
-  chapitre 6 y renvoie.
-- **À reprendre aux chapitres 7 et 8, non touchés ici** : `_impots_activite.qmd`, l. 5, dit
-  suivre « le même plan que le précédent », ce qui n'est plus vrai tant qu'il n'est pas
-  converti ; ses renvois « objet d'un chapitre à venir » et les promesses de chiffres « au
-  chapitre de la longue période » des chapitres 7 et 8 sont périmés (plan de l'architecte,
-  § 7, points 4 et 5).
+  `vues_activite_rendement()` et `table_activite_rendement()` sont **insérées** au chapitre des
+  impôts sur l'activité (`fig-fl-activite-rendement`, slug `fig_fl_activite_rendement`). Les
+  marques des textes (trait rouge, sans lien de cause) sont déclarées dans `MARQUES_IMMEUBLES`
+  et `MARQUES_ACTIVITE`. `#sec-fl-lp-impots` est allégée : il n'y reste que la figure à quatre
+  impôts, les points de 1990-1996 du rapport de la Banque mondiale et deux renvois (seconde
+  vague). La ligne « taxe sur les immeubles bâtis, 2006-2007 » de `tbl-fl-lp-ecarts`
+  (évaluation de la Banque mondiale) reste à la longue période ; le chapitre 6 y renvoie.
+- **Impôts sur l'activité — chapitre converti le 9 octobre 2026** (`_impots_activite.qmd`,
+  `.domicile-unique`) : vue d'ensemble, mise en place en deux temps (lois n° 75-39 et 75-34 de
+  1975, code de 1997), deux grandes réformes (2012-2013, 2013-2014) avec les rubriques des
+  lois de finances, état du droit **en 2026**, cinq sections de dispositions (taxe hôtelière,
+  forfaits, partage, déclaration, amnisties), longue période avec `fig-fl-activite-rendement`.
+  Lectures : `docs/notes/finances-locales-impots-lectures-2026-10-09.md` ; clés `loi75-34` et
+  `loi75-39` versées (FR et AR). **Tâches closes** : « même plan que le précédent » ; « objet
+  d'un chapitre à venir » ; la promesse de chiffres « au chapitre de la longue période » ;
+  « ne sont pas exposés » et « ne sont pas détaillées ici » ; la section « Notations » ; le
+  tableau des taux qui mêlait la taxe hôtelière et l'auto-entrepreneur ; rubriques des lois de
+  2012 à 2014 ; sens du mot « local » ; seuil « pour chaque établissement » ; inventaire de la
+  loi de finances pour 2026 ; LF 2014, art. 49 et 50, relus sur la couche texte du JORT n° 105
+  de 2013 (quatre catégories au taux de 0,1 %, quatre régimes d'exonération d'où la taxe est
+  retirée, et non trois comme l'écrivait la note du 4 octobre). `docs/recherches.yml` : `ou` de `r-cfl-minimum-tcl-apres-2017` et
+  de `r-cfl-prix-reference-1998-2006` à `#sec-fl-activite-etat-du-droit`, de
+  `r-cfl-taxe-hoteliere-modificatifs` à `#sec-fl-taxe-hoteliere-1997`.
+  **Lacunes nouvelles ou maintenues** :
+  - loi n° 75-34, art. 9 : année de la date d'effet à confirmer sur l'édition arabe du JORT
+    n° 34 de 1975 (**à lire à l'image** ; fascicule scanné) — la date n'est pas écrite ;
+  - plafond de la taxe de 1976 à 1996 : décret d'application de 1975-1976 (n° 75-485, 75-782
+    ou 76-2) et lois de finances pour 1976, 1980 et 1992 **non lus**, lisibles au corpus à
+    l'image ;
+  - unité du maximum dans les décrets n° 2003-1345 et 2006-3360 (« par année » seul, comme en
+    1997 ?) : **lisible dans le corpus**, non relue ;
+  - doctrine administrative sur le chiffre d'affaires brut « local », 1997-2013 : **à
+    obtenir** (notes communes de la Direction générale des impôts, archives du web) ;
+  - nom français du fonds de 2021 : le chapitre des transferts (`#sec-fl-fccl-2018`) le
+    traduit de l'arabe, le chapitre 7 cite la rubrique française de la LF 2021, art. 13 — à
+    aligner à la seconde vague ;
+  - produit de la taxe et écrêtement : rien n'établit si l'article 1201 des budgets communaux
+    et l'agrégat de la Direction générale comptent, depuis 2013, la part au-delà de 100 000 D
+    affectée au fonds ; aucune série du montant écrêté — **à obtenir** ;
+  - amnisties de 2012, 2019, 2024 et 2025 : ce qui est abandonné, années et conditions non
+    relevés (2019 à 2025 : édition arabe seule) ; loi n° 2006-25 et décret-loi n° 2006-1 non
+    lus ; arrêté de calendrier de l'amnistie de 2026 (JORT n° 155 de 2025) : intitulé et page
+    non relevés — **lisibles dans le corpus** ;
+  - pages françaises des art. 37 (LF 2016), 42 (LF 2019), 52 et 57 (LF 2023), 67 et 69
+    (LF 2024) : éditions arabes seules, pages laissées hors des registres ;
+  - LF 1993, art. 39, rédaction initiale, et décrets des zones municipales touristiques
+    (n° 94-822 et compléments) ; art. 7 initial du décret-loi n° 2020-33 : inchangés ;
+  - tableaux faits main (`tbl-fl-tcl-minimum`, `tbl-fl-tcl-maximum`, `tbl-fl-tcl-taux`) : à
+    engendrer après versement des valeurs dans la base de paramètres ; frise de tête non
+    faite ;
+  - premier plan : 3 595 → 5 208 mots (+ 45 %), dont 410 pour la longue période venue de
+    `_longue_periode.qmd` et 330 pour les lois de 1975.
+- **À reprendre au chapitre 6 après les lectures du 9 octobre 2026, non touché ici** : l'état
+  du droit y est dit pour 2025 avec un TODO de confirmation, alors que la loi de finances pour
+  2026 est inventoriée (aucun article du code modifié, aucun abandon d'arriérés) ; le TODO sur
+  l'art. 88 de la LF 2002 est levé par la note (1 % à l'art. 87, 0,75 % à l'art. 88, taux à
+  relire à l'image) ; rubriques de la LF 2006 (art. 53, 56, 57) et de la LF 2009 (art. 33)
+  relevées mot pour mot.
+- **À reprendre au chapitre 8, non touché ici** : ses renvois « objet d'un chapitre à venir »
+  et sa promesse de chiffres « au chapitre de la longue période » sont périmés (plan de
+  l'architecte, § 7, points 4 et 5) ; la note du 9 octobre 2026 (§ D et E) répond au ticket.
 - **Livre arabe** : `_transferts.qmd` et `_longue_periode.qmd` déclarés en commentaire dans
   `precis/ar/finances_locales/_quarto.yml`. Glossaire : `fonds-commun-collectivites-locales`,
   `reserve-fonds-commun`, `cpscl` (termes arabes du JORT).

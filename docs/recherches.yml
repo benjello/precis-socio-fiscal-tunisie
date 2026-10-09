@@ -1017,7 +1017,7 @@
 
 - id: r-cfl-minimum-tcl-apres-2017
   objet: décret fixant, après le décret gouvernemental n° 2017-395, la taxe par mètre carré de référence servant au minimum de la taxe sur les établissements à caractère industriel, commercial ou professionnel (code de la fiscalité locale, art. 38 § II, « tous les trois ans »)
-  ou: [precis/fr/finances_locales/_impots_activite.qmd#sec-fl-tcl-minimum]
+  ou: [precis/fr/finances_locales/_impots_activite.qmd#sec-fl-activite-etat-du-droit]
   requetes:
     titres_fts: [المرجعي, المربع]
     plein_texte: [المتر المربع المرجعي, مجلة الجباية المحلية, taxe par metre carre]
@@ -1035,7 +1035,7 @@
   objet: décret fixant le prix de référence de la taxe sur les immeubles bâtis, le tarif de la taxe sur les terrains non bâtis ou le minimum de la taxe sur les établissements entre les décrets du 3 mars 1997 et ceux du 14 mai 2007 (« tous les trois ans »)
   ou:
   - precis/fr/finances_locales/_impots_immeubles.qmd#sec-fl-immeubles-etat-du-droit
-  - precis/fr/finances_locales/_impots_activite.qmd#sec-fl-tcl-minimum
+  - precis/fr/finances_locales/_impots_activite.qmd#sec-fl-activite-etat-du-droit
   requetes:
     titres_fts: ['"prix de reference"', '"terrains non batis"']
     titres_like: ['%prix de reference%', '%terrains non batis%']
@@ -1055,7 +1055,7 @@
 
 - id: r-cfl-taxe-hoteliere-modificatifs
   objet: texte modifiant les articles 41 à 45 du code de la fiscalité locale (taxe hôtelière)
-  ou: [precis/fr/finances_locales/_impots_activite.qmd#sec-fl-taxe-hoteliere-reformes]
+  ou: [precis/fr/finances_locales/_impots_activite.qmd#sec-fl-taxe-hoteliere-1997]
   requetes:
     titres_fts: ['"taxe hoteliere"', '"fiscalite locale"']
     titres_like: ['%taxe hoteliere%', '%fiscalite locale%']
