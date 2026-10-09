@@ -90,11 +90,22 @@ PAQUETS = {
         # sectorielles — textile, bâtiment et travaux publics, assurances —, sous
         # `marche_travail/conventions_collectives/` (openfisca-tunisia PR #482) : en deçà, ce
         # nœud n'existe pas, et l'annexe « Les conventions collectives, branche par branche »
-        # du volume « Marché du travail » ne pourrait être engendrée. La 0.125 verse les
-        # paramètres de la fiscalité locale — taxe sur les immeubles bâtis et taxe sur les
-        # terrains non bâtis, sous `fiscalite_locale/` (openfisca-tunisia PR #485) : en deçà,
-        # ce nœud n'existe pas, et les barèmes du chapitre « Les impôts sur les immeubles » du
-        # volume « Finances locales » ne pourraient être engendrés.
+        # du volume « Marché du travail » ne pourrait être engendrée. La 0.123 verse la grille
+        # horaire du textile en entier (7 catégories, 21 échelons, 147 cases ; PR #486) : en
+        # deçà, l'index de l'annexe n'en connaît que deux. La 0.123.1 et la 0.124 datent
+        # l'Amen social du 25 mai 2020, jour où ses textes deviennent exécutoires, et non du
+        # 20 mai, jour de leur publication ; elles datent du même jour et sourcent les plafonds
+        # de ressources de l'article 5 du décret gouvernemental n° 2020-317 (PR #483), versent
+        # le palier de 280 D du transfert au 1er janvier 2026 et l'allocation familiale des 6 à
+        # 18 ans (`prestations/non_contributives/allocation_familiale_6_18`) : en deçà, les
+        # tableaux de l'Amen social du volume « Prestations sociales » publieraient le 20 mai
+        # 2020, s'arrêteraient à 260 D, et le tableau des plafonds de ressources ne pourrait
+        # être engendré. La borne est la 0.125, dernière version publiée, celle dont les
+        # snapshots sont tirés.
+        # Elle verse aussi les paramètres de la fiscalité locale — taxe sur les immeubles
+        # bâtis et taxe sur les terrains non bâtis, sous `fiscalite_locale/` (PR #485) :
+        # en deçà, ce nœud n'existe pas, et les barèmes du chapitre « Les impôts sur les
+        # immeubles » du volume « Finances locales » ne pourraient être engendrés.
         "version_minimale": (0, 125),
     },
 }

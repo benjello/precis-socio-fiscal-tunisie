@@ -105,7 +105,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et un chapitre transversal sur les dépenses fiscales et les régimes d'incitation (6 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
-| Prestations sociales | Dispositifs décrits ; PNAFN historique sans sources pour ses onze dates et montants | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
+| Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; plan de conversion du volume dans `docs/notes/prestations-sociales-plan-architecte.md` | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
 | Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences à convertir | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
 
@@ -616,9 +616,36 @@ liste qui suit le tableau, citations comprises. Restent :
   régionaux des cartes AMG et le décret d'application du fonds contre la perte
   d'emploi de la LF 2025 restent à identifier (`docs/recherches.yml`).
 - **Aides occasionnelles de l'AMEN** : le modificatif du 10 juillet 2025 est lu dans
-  l'édition arabe du JORT n° 88, pp. 2058-2059. Il relève de 50 à 100 D l'aide de rentrée
-  scolaire, avec effet au 1er septembre 2024, élargit les cas couverts et interdit le cumul
-  avec des aides publiques au même titre. L'édition française reste à vérifier.
+  l'édition arabe du JORT n° 88, pp. 2058-2059 (relu le 9 octobre 2026). Il relève de 50 à
+  100 D l'aide de rentrée scolaire, avec effet au 1er septembre 2024, élargit les cas couverts
+  et interdit le cumul avec des aides publiques au même titre. C'est la même aide à deux dates :
+  le chapitre le dit, et garde un tableau fait main d'une ligne à côté du tableau engendré des
+  cinq aides (état de 2022) tant que le palier de 100 D n'est pas versé en amont
+  (`backlog-modele.md`). L'édition française reste à obtenir : le fichier local
+  `2025/fr/Jo0882025.pdf` est l'édition arabe, octet pour octet.
+- **Amen social et aide permanente mis à jour le 9 octobre 2026** (`_non_contributives.qmd`,
+  correction bornée, chapitre non converti) :
+  - **fait** : tableaux `amen_base`, `amen_supplement_enfant`, `amen_vs_afnc` régénérés (état
+    initial au 25 mai 2020, date exécutoire ; palier de 280 D au 1er janvier 2026 ; allocation
+    familiale des 6 à 18 ans, 30 D au 9 novembre 2025) ; tableau des plafonds de ressources de
+    l'article 5 engendré (`amen_plafonds_ressources`, `tbl-amen-plafonds`) ; arrêté du 5 août
+    2026 sur le PNAFN intégré ; trois clés créées, textes lus dans les deux éditions, fascicules
+    **locaux et textuels** : `arrete-2026-04-21-transferts` (`2026/fr/Jo0402026.pdf`, p. 786),
+    `decret-2025-426-allocation-familiale-6-18` (`2025/fr/Jo1212025.pdf`, p. 2518),
+    `arrete-2025-11-03-allocation-familiale-6-18` (`2025/fr/Jo1322025.pdf`, p. 2963) ;
+  - **reste, pour le documentaliste** (TODO du chapitre) : la portée de la majoration pour
+    handicap lourd de l'article 5 (les quatre paliers ou le premier seul ; décret lisible dans
+    `2020/fr/Jo0452020.pdf`, p. 1093, et dans l'édition arabe) ; le cumul de l'allocation des
+    6 à 18 ans avec le supplément de 10 D par enfant, qu'aucun texte lu ne règle ; ce qui est dû
+    de janvier à novembre 2025 (institution au 1er janvier 2025, montant exécutoire le
+    9 novembre) ; le fondement des enfants de 6 à 18 ans aidés en 2023 selon le rapport du
+    ministère ; le seuil de score (circulaire n° 12 du 12 mai 2022, hors *Journal officiel*, à
+    obtenir) : il n'est pas au chapitre ;
+  - **reste, pour le terminologue** : la définition de « allocation familiale non
+    contributive » au glossaire ne connaît que les moins de six ans ;
+  - **non fait ici** (conversion du chapitre, `docs/notes/prestations-sociales-plan-architecte.md`) :
+    figures de l'aide permanente, des bénéficiaires et des crédits ; séries du rapport de suivi
+    du ministère pour 2023, à instantaner ; rapports extérieurs rangés mais non dépouillés.
 
 - **Tableau engendré — fait le 3 octobre 2026** : les indemnités familiales du secteur public
   (`tbl-indemnites-familiales-public`) sont désormais le tableau du livre « Retraites », émis
@@ -2166,8 +2193,22 @@ jour le 9 octobre 2026 avec la dissolution de la longue période** : ses renvois
 aux écarts de 1990 visent le chapitre des budgets (`@sec-fl-lp-sources`,
 `@tbl-fl-lp-ecarts-bm`). **Lacunes**, lisibles dans le corpus sauf mention :
 - décrets de répartition de la réserve de 1993 à 2013 (vingt-deux, connus par leur intitulé) ;
-- montant du fonds, LF par LF, de 1987 à 2017 (seul 1990 est lu) et montant annuel des
-  subventions depuis 2018 ; LF 1977-1979 et arrêtés de 1975-1983 ; montants de 1990-1991 au
+- montant du fonds, LF par LF : **versé de 1976 à 1995 sauf 1979** (série
+  `finances-locales-fccl-lois-de-finances`, snapshotée le 9 octobre 2026 et tracée dans
+  `fig-fl-lp-fccl` en famille à part, deux segments séparés par la rupture de définition de
+  1987 ; grandeur retenue pour 1987-1995 : le total des recettes du fonds, non la seule
+  subvention). **Restent** : 1979 (tableau des fonds spéciaux de la loi n° 78-59 non localisé,
+  numérisation dégradée — OCR ou relecture à l'image) ; 1996-2017, où le tableau n'imprime plus
+  le montant (1996 et 1997 lus, 1998-2010 à vérifier dans le corpus) : à chercher au budget du
+  ministère de l'Intérieur par chapitre, aux lois de règlement et aux décrets de répartition ;
+  exécution de 1976-1982 aux rapports annuels de la Banque centrale, repérée, non versée. La
+  série votée n'a **pas de vue au PIB** : `cnat-pib-nominal` commence en 2001, et avant 1992
+  le seul PIB courant du cache (`pib-courant-enchaine`, variante accolée) est d'une base non
+  dite ; la base 1983 publiée ne couvre que 1992-1995. La série a vingt et une clés de loi de
+  finances au catalogue des données, absentes de la bibliographie du volume : le module de
+  figures déclare sa provenance avec une ligne de source unique (**à verser par le
+  bibliographe** si l'on veut les citer une à une) ;
+- montant annuel des subventions depuis 2018 ; LF 1977-1979 et arrêtés de 1975-1983 ; montants de 1990-1991 au
   profit de la caisse à relire à l'image ; les tableaux des LF de 2022 à 2026 semblent en
   image — **OCR à prévoir** ;
 - décret n° 2013-2797 (fonds de coopération) et LF 2013, art. 13-15, sans clé pour le décret ;
@@ -2178,7 +2219,17 @@ aux écarts de 1990 visent le chapitre des budgets (`@sec-fl-lp-sources`,
 - décrets et arrêtés de la caisse (n° 77-212 … 2016-367, loi n° 2001-56) ;
 - subventions d'investissement, programmes d'investissement communal et régionaux, dotation
   exceptionnelle de 2011-2012 : aucune source primaire lue ;
-- divergence 82 / 50,8 MD du fonds en 1990 : non tranchée (le JORT donne 80 MD votés).
+- divergence 82 / 50,8 MD du fonds en 1990 : non tranchée (le JORT donne 80 MD votés) ; le
+  rapport de 1997 vaut de 63,5 % à 65,1 % des montants votés en 1990, 1992, 1994 et 1995,
+  ordre de grandeur de la part légale des communes (75 % × 86 %) — constat dit au chapitre,
+  clé non vérifiée ;
+- l'onglet « Sources » de `fig-fl-lp-fccl` reprend les réserves du catalogue des données pour
+  `finances-locales-communes-agregats` (« réserve à 18 % jusqu'en 2017, 15 % ensuite ») et
+  pour `finances-locales-bm-1985-2012` (« vraisemblablement fonds total contre quote-part des
+  communes ») : à accorder, dans le dépôt des données, avec le chapitre, qui dit que la ligne
+  de 2018-2019 n'est plus la réserve et ne tranche pas l'écart de 1990 ;
+- vue au PIB de `fig-fl-lp-fccl` : le libellé « PIB : base 2015 » chevauche les courbes de
+  2012-2014 (antérieur à l'ajout de la série votée) ;
 - code des collectivités locales, art. 146-151 et 392 : lus en arabe seulement ;
 - contenu des articles 6101 et 8002 des budgets communaux de 2022-2023 au regard des parts de
   90 % et 10 % : non établi (modèle annexé au décret n° 2020-52, non lu).
@@ -2298,7 +2349,8 @@ généraliser : `finances_locales/figures/finances_locales.py` (`_pib`, `_pib_pa
   `fig-fl-lp-ressources`, `fig-fl-lp-impots` et `fig-fl-lp-ins` disent la base par segment. Les
   points de 1985-1991 de `fig-fl-lp-fccl` (chapitre des transferts) restent rapportés au PIB d'un
   rapport de la Banque mondiale de 1992 dont la base n'est pas dite — la note de lecture et le
-  tableau des sources le disent. Les deux figures nouvelles des dépenses et des rémunérations
+  tableau des sources le disent. Les montants votés de 1976-1995, ajoutés à cette figure le
+  9 octobre 2026, n'y sont tracés qu'en dinars courants, faute de PIB à base dite avant 1992. Les deux figures nouvelles des dépenses et des rémunérations
   n'ont pas de vue au PIB.
 - **Marché du travail** : aucun emploi du PIB relevé.
 
