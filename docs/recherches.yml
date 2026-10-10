@@ -616,6 +616,12 @@
     couverture: 'chaîne des lois modifiant la loi n° 60-30 que jort_cache recense, seize lois de 1961 à 2007, chacune ouverte et lue : après la loi n° 88-38, aucune ne touche les articles 52 et 61 (lois n° 95-101, 96-65, 97-4, 97-58, 98-91 et 2007-51). Requêtes non consignées par la note ; celle-ci est reconstruite depuis l''objet. Aucune passe sur les textes de 2007 à 2026 (ticket D12 de la fiche de l''architecte, non traité le 9 octobre 2026). Note : docs/notes/prestations-contributif.md, § 0 (R2).'
     couvert_jusqu_au: 2007-07-23
     resultat: aucun
+  - date: 2026-10-10
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache, intitulés seuls, FR et AR : lois dont l''intitulé contient « 60-30 » ou « عدد 30 لسنة 1960 », signées depuis le 1er janvier 2007 : la seule loi n° 2007-51 du 23 juillet 2007 (art. 105 et 45, lue) ; intitulés depuis le 1er octobre 1996 sur les allocations familiales, la majoration pour salaire unique et les crèches : aucun texte de taux ni d''assiette après le décret n° 96-1906. Limites : une modification par une loi de finances ou par une loi dont l''intitulé ne nomme pas la loi n° 60-30 échappe à ces requêtes ; lois de finances de 2007 à 2026 non dépouillées. Note : docs/notes/prestations-sociales-lectures-2026-10-10.md, § 5.5.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
   a_faire:
   - prolonger le dépouillement des lois modifiant les articles 52, 54 et 61 de la loi n° 60-30 de 2007 à 2026 (D12)
   - 'requêtes de la passe d''origine non consignées : rejouer celle-ci et l''élargir'
@@ -640,6 +646,12 @@
     couverture: 'jort_cache, LIKE « perte d%emploi », 2024-2025 : aucun résultat. Note : docs/notes/cotisations-dossier-prive.md, § 1.7 et 10 D.'
     couvert_jusqu_au: 2025-12-31
     resultat: aucun
+  - date: 2026-10-10
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache, intitulés FR et AR publiés du 10 décembre 2024 au 2 octobre 2026 : « perte », « licenci », « فقدان », plus « صندوق » croisé avec « الشغل » ou « التأمين », « fonds d''assurance », « motifs économiques » : deux notices d''articles de lois de finances (art. 17 de la loi n° 2024-48 ; art. 76 de la loi n° 2025-17, fonds du repos biologique dans la pêche), aucun décret. Aucun fascicule lu. Requêtes rejouées à la main sur l''index ; note : docs/notes/prestations-sociales-lectures-2026-10-10.md, § 5.4.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
   a_faire: ['lire les fascicules FR et AR postérieurs au 10 avril 2026 (corpus local, pist.tn)']
 
 - id: r-loi2024-44-application
@@ -654,6 +666,12 @@
     role: rédacteur
     sources: [jort_cache]
     couverture: 'jort_cache, titres et objets des textes publiés du 12 août 2024 au 2 octobre 2026 (dernière date de l''index), motifs LIKE « 2024-44 », « maternit », « paternit », « allaitement », « couches » et, en arabe, « الأمومة », « الأبوة », « 44 لسنة 2024 » : seule la loi n° 2024-44 elle-même répond. Lacunes : aucun fascicule lu en plein texte ; aucune circulaire de la CNSS ou de la CNRPS consultée ; les articles de la loi sont connus par la note docs/notes/prestations-contributif.md, § 3.2 (lacune L3).'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  - date: 2026-10-10
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache, intitulés FR et AR publiés du 12 août 2024 au 2 octobre 2026, requêtes de la fiche rejouées à la main (« 2024-44 », « maternit », « paternit », « allaitement », « couches », « الأمومة », « الأبوة », « 44 لسنة 2024 ») : un seul résultat, la loi elle-même. Aucun fascicule lu. Note : docs/notes/prestations-sociales-lectures-2026-10-10.md, § 8.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
   a_faire:
@@ -696,8 +714,8 @@
   - obtenir les circulaires et le formulaire de demande du ministère des affaires sociales
 
 - id: r-amen-seuil-score-circulaires
-  objet: circulaire du ministre des affaires sociales fixant le seuil de score ouvrant le transfert monétaire permanent de l'Amen social — circulaire n° 12 de mai 2022 (datée du 12 mai par une première mention, du 10 mai par une seconde, aucune des deux vérifiée), puis circulaire d'octobre 2025 révisant les critères (« Circular No. 5 on October 3, 2025 » selon le rapport de suivi ISR04716 de la Banque mondiale, « Ministerial Circular No. 53, issued in October 2025 » selon le document PPIAF000292)
-  ou: [precis/fr/prestations_sociales/_non_contributives.qmd]
+  objet: circulaire du ministre des affaires sociales fixant le seuil de score ouvrant le transfert monétaire permanent de l'Amen social — circulaire n° 12 du 10 mai 2022 (date donnée par la page des textes du ministère, capture du 24 septembre 2022 ; une première mention la datait à tort du 12 mai), puis circulaire d'octobre 2025 révisant les critères (« Circular No. 5 on October 3, 2025 » selon le rapport de suivi ISR04716 de la Banque mondiale, « Ministerial Circular No. 53, issued in October 2025 » selon le document PPIAF000292)
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd#sec-nc-eligibilite]
   requetes:
     titres_like: ['%AMEN SOCIAL%', '%modèle de scor%']
     iort_ar: [الأمان الاجتماعي, أنموذج التنقيط]
@@ -709,10 +727,15 @@
     couverture: 'Journal officiel : titres français et arabes de jort_cache 2019-2026 (index au 2 octobre 2026) ; lus : loi organique n° 2019-10, art. 2 ; arrêté du 19 mai 2020 sur le modèle de score (édition arabe, p. 1251) ; décret gouvernemental n° 2020-317, art. 9 — aucun seuil, aucune pondération. Hors Journal officiel : http://www.ijtimaia.tn/fileadmin/Nouveau%20dossier/Circulaire12.PDF, redirection 302 vers une adresse mal formée ; https://www.social.gov.tn/fileadmin/Nouveau%20dossier/Circulaire12.PDF, certificat non vérifiable (non contourné) ; archives du web, 404 sur l''adresse directe et 429 sur l''interface de disponibilité ; rubrique « التشريعات » du site du ministère non ouverte (certificat). Lacunes : aucune circulaire lue ; fascicules inconnus de jort_cache non parcourus en plein texte. Note : docs/notes/prestations-sociales-lectures-2026-10-09.md, § 4 et § 8.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-10
+    role: documentaliste
+    sources: [web]
+    couverture: 'Circulaire n° 12 datée du 10 mai 2022 par la page « التشريعات » du site du ministère des Affaires sociales (capture des archives du web du 24 septembre 2022), qui la liste sans lien de téléchargement et en donne l''objet : procédures pratiques du bénéfice de l''allocation mensuelle permanente, des soins gratuits et des soins à tarif réduit. Adresse ijtimaia.tn : redirection mal formée. Index des captures des archives du web parcouru sur trois préfixes de social.gov.tn (fileadmin/Nouveau dossier ; fileadmin filtré sur « irculaire » ; sites/default/files depuis 2022) : circulaire absente. Rapport de suivi du ministère pour 2022, p. 17-19 : la circulaire fixe les règles de ciblage du transfert, le classement dans le premier décile rend éligible sous réserve des conditions préalables ; ni seuil chiffré ni coefficient. Résumé CRES-Banque mondiale de 2021 : ni seuil ni coefficient. Circulaire d''octobre 2025 non cherchée. Note : docs/notes/prestations-sociales-lectures-2026-10-10.md, § 6.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
   a_faire:
-  - 'la règle est connue : le transfert est ouvert aux ménages dont le score se situe dans le premier décile (confirmation du propriétaire, 10 octobre 2026 ; Banque mondiale, PAD4815, § 34, « score below the first decile ») ; restent inconnus, et non publics : les coefficients du modèle (la régression du test des moyens approximé) et la valeur du score qui borne ce décile'
-  - les circulaires de mai 2022 (non consultée) et d'octobre 2025 ne se cherchent ni au Journal officiel ni sur le web ; à obtenir auprès du ministère des affaires sociales ; établir alors la date de la première (10 ou 12 mai), le numéro de la seconde (5 ou 53) et ce que celle-ci révise (modèle, décile ou autres critères)
-  - vérifier l'adresse de la circulaire n° 12 de mai 2022 (http://www.ijtimaia.tn/fileadmin/Nouveau%20dossier/Circulaire12.PDF, redirigée vers social.gov.tn)
+  - 'la règle est connue : le transfert est ouvert aux ménages dont le score se situe dans le premier décile (rapport de suivi du ministère pour 2022, p. 18 ; Banque mondiale, PAD4815, § 34, « score below the first decile » ; confirmation du propriétaire, 10 octobre 2026) ; restent inconnus, et non publics : les coefficients du modèle (la régression du test des moyens approximé) et la valeur du score qui borne ce décile'
+  - les circulaires du 10 mai 2022 (non obtenue) et d'octobre 2025 (non cherchée) ne se trouvent ni au Journal officiel ni sur le web ; à obtenir auprès du ministère des affaires sociales ; établir alors le numéro de la seconde (5 ou 53) et ce que celle-ci révise (modèle, décile ou autres critères)
 
 - id: r-amen-cumul-supplement-6-18
   objet: texte, circulaire ou document du ministère disant si le supplément de 10 dinars par enfant de 6 à 18 ans (arrêté conjoint du 19 mai 2020, art. 2, alinéa 2 dans sa rédaction de l'arrêté du 1er avril 2022) se cumule avec l'allocation familiale de 30 dinars des 6 à 18 ans (décret n° 2025-426 ; arrêté conjoint du 3 novembre 2025), ou tout arrêté abrogeant ou modifiant cet alinéa 2
@@ -731,6 +754,108 @@
   a_faire:
   - jouer les termes arabes sur le miroir iort et sur les titres de jort_cache, 2022-2026
   - obtenir les rapports annuels de l'Amen social pour 2024 et 2025 et les circulaires du ministère des affaires sociales
+
+- id: r-ar-etat-2026-modificatifs
+  objet: texte postérieur modifiant les art. 71 à 90 de la loi n° 60-30 (indemnités de maladie, de couches et de décès), l'art. 35 de la loi n° 94-28 (indemnité journalière des deux tiers) ou le décret n° 93-308 (capital-décès)
+  ou: [precis/fr/prestations_sociales/_autres_risques.qmd#sec-ar-etat-du-droit]
+  requetes:
+    titres_like: ['%60-30%', '%94-28 %', '%93-308%']
+    iort_ar: [عدد 30 لسنة 1960, عدد 28 لسنة 1994, عدد 308 لسنة 1993]
+    depuis: 1994-03-01
+  passes:
+  - date: 2026-10-10
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Intitulés FR et AR. Loi n° 60-30 : lois signées depuis le 1er janvier 2007 seulement (un résultat, loi n° 2007-51, lue : art. 105 et 45). Loi n° 94-28 : depuis le 1er mars 1994 (loi n° 95-103, lue : art. 7 ; décret gouvernemental n° 2019-1130, non lu). Décret n° 93-308 : aucun résultat. Lacunes : modifications de la loi n° 60-30 antérieures à 2007 non rejouées ici (registre du chapitre) ; textes dont l''intitulé ne nomme pas le texte modifié ; lois de finances non dépouillées. Note : docs/notes/prestations-sociales-lectures-2026-10-10.md, § 1.3.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - lire le décret gouvernemental n° 2019-1130 (JORT n° 99 de 2019, p. 4532-4533)
+  - rejouer la requête 60-30 depuis 1960 sur les décrets et arrêtés
+
+- id: r-am-extension-loi2002-32
+  objet: décret étendant la loi n° 2004-71 (assurance maladie) au régime de la loi n° 2002-32, en application de l'art. 2 du décret n° 2007-1366
+  ou:
+  - precis/fr/prestations_sociales/_autres_risques.qmd#sec-ar-assurance-maladie
+  - precis/fr/prestations_sociales/_matrice.qmd#sec-matrice-lecture
+  requetes:
+    titres_like: ['%2004-71%', '%2002-32 %', '%2002-32,%', '%2007-1366%']
+    iort_ar: [عدد 71 لسنة 2004, عدد 32 لسنة 2002, عدد 1366 لسنة 2007]
+    depuis: 2007-06-12
+  passes:
+  - date: 2026-10-10
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Intitulés FR et AR depuis le 12 juin 2007. « 2004-71 » : loi n° 2017-47 seule. « 2002-32 » (depuis le 12 mars 2002) : décret n° 2002-916, deux arrêtés du 23 juillet 2002, arrêté du 19 juin 2019 (pièces d''affiliation), aucun sur l''assurance maladie. « 2007-1366 » : décrets n° 2007-1367, 2008-756, 2021-318. Lu : décret n° 2007-1366 en entier. Lacune : un décret d''extension dont l''intitulé ne citerait aucun de ces numéros. Note : docs/notes/prestations-sociales-lectures-2026-10-10.md, § 1.12.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - lire l'arrêté du 19 juin 2019 (JORT n° 52 de 2019, p. 2109-2110) et le décret n° 2002-916, art. sur les soins
+
+- id: r-amen-carte-arrete-cahier-des-charges
+  objet: arrêté conjoint (technologies de la communication, affaires sociales, santé) approuvant le cahier des charges de la « CARTE AMEN » — décret n° 2022-919, art. 9
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd#sec-nc-soins-2022]
+  requetes:
+    titres_like: ['%CARTE AMEN%', '%soins AMEN%', '%soins électronique%', '%soins electronique%', '%2022-919%']
+    iort_ar: [بطاقة أمان, منظومة العلاج, عدد 919 لسنة 2022]
+    depuis: 2022-11-29
+  passes:
+  - date: 2026-10-10
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés FR et AR publiés du 29 novembre 2022 au 2 octobre 2026 : le décret seul. Lacune : un arrêté intitulé par le seul « cahier des charges » sans nommer la carte ; requête « كراس الشروط » croisée avec « أمان » lancée, sans résultat. Note : docs/notes/prestations-sociales-lectures-2026-10-10.md, § 3.3.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-amen-cumul-af-contributive
+  objet: texte, circulaire ou document du ministère réglant le cumul de l'allocation familiale de l'Amen social (30 D) avec les allocations familiales de la loi n° 60-30 pour une famille des catégories pauvres affiliée à un régime
+  ou: [precis/fr/prestations_sociales/_matrice.qmd#sec-matrice-frontiere]
+  requetes:
+    titres_like: ['%allocation familiale%AMEN%', '%AMEN SOCIAL%']
+    iort_ar: [المنحة العائلية]
+    depuis: 2022-01-31
+  passes:
+  - date: 2026-10-10
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Lus en entier : décret-loi n° 2022-8 (art. 11 bis), arrêté conjoint du 1er avril 2022 (quatre articles), arrêté conjoint du 3 novembre 2025, décret n° 2025-426, décret gouvernemental n° 2020-317 (art. 3 à 12). Aucun ne règle le cumul pour les catégories pauvres ; l''art. 55, alinéa 3, de la loi n° 60-30 ne règle que le concours des allocations dues au père et à la mère. Les requêtes d''intitulés ci-dessus n''ont PAS été lancées dans cette passe : la couverture est celle des textes lus. Circulaire n° 12 du 10 mai 2022 non obtenue. Note : docs/notes/prestations-sociales-lectures-2026-10-10.md, § 4.1.'
+    couvert_jusqu_au: 2025-11-04
+    resultat: aucun
+  a_faire: [lancer les requêtes d'intitulés, obtenir la circulaire n° 12 du 10 mai 2022 et celle d'octobre 2025]
+
+- id: r-loi96-101-extension
+  objet: texte étendant la loi n° 96-101 (protection sociale des travailleurs licenciés) aux régimes agricoles ou aux agents contractuels
+  ou: [precis/fr/prestations_sociales/_matrice.qmd#sec-matrice-lecture]
+  requetes:
+    titres_like: ['%96-101%']
+    iort_ar: [عدد 101 لسنة 1996]
+    depuis: 1996-11-18
+  passes:
+  - date: 2026-10-10
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Intitulés FR et AR depuis le 18 novembre 1996 : la loi, son rectificatif (n° 7 de 1997), la loi n° 2002-24 (lue). Lus : loi n° 96-101, loi n° 2002-24, décrets n° 97-1925 et n° 97-1926, décrets n° 2002-886, n° 2002-887 et n° 2006-1025 qui les modifient (trouvés par l''intitulé « interventions sociales en faveur des travailleurs » et par les numéros des décrets de 1997) : champ limité aux travailleurs des entreprises affiliées à la CNSS et régis par la loi n° 60-30. Lacune : les décrets d''application ne citent pas la loi dans leur intitulé — la requête par numéro ne les rend pas ; un texte d''extension pourrait être dans le même cas. Note : docs/notes/prestations-sociales-lectures-2026-10-10.md, § 4.2.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - 'chercher par objet : « protection sociale des travailleurs », « الإحاطة الاجتماعية بالعمال »'
+  - chercher un modificatif des décrets n° 97-1925 et n° 97-1926 postérieur à 2006
+
+- id: r-pf-taux-apres-1996
+  objet: décret fixant les taux des indemnités à caractère familial ou des allocations familiales postérieur au décret n° 96-1906 du 16 octobre 1996
+  ou: [precis/fr/prestations_sociales/_prestations_familiales.qmd#sec-pf-secteur-public]
+  requetes:
+    titres_like: ['%allocations familiales%', '%indemnites a caractere familial%', '%salaire unique%', '%creche%', '%crèche%']
+    iort_ar: [المنح العائلية, الأجر الوحيد, المحاضن]
+    depuis: 1996-10-01
+  passes:
+  - date: 2026-10-10
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés FR et AR depuis le 1er octobre 1996 : décret n° 96-1906, circulaire n° 42 du 25 octobre 1996, décret n° 2001-1909 relatif aux crèches, trois arrêtés de cahiers des charges ; aucun texte de taux. Lacune : intitulés accentués (« caractère », « indemnités ») non essayés séparément ; lois de finances non dépouillées. Note : docs/notes/prestations-sociales-lectures-2026-10-10.md, § 2.3.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [rejouer avec les formes accentuées, lire le décret n° 75-952 et la circulaire n° 42]
 
 - id: r-lf2025-art15-decret
   objet: décret fixant les modalités de fonctionnement du fonds de protection sociale des travailleuses agricoles et les conditions de ses interventions (loi n° 2024-48, loi de finances pour 2025, art. 15, 1), al. 2)
