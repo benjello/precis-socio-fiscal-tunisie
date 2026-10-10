@@ -1367,7 +1367,37 @@
     couverture: 'requête de titres lancée sur 2011 et 2012 seulement (décrets de nomination et de prorogation, aucun texte général) ; lus : art. 12 et 13 de la loi organique de 1975 (image), art. 13 nouveau de la loi organique n° 95-68 (couche texte), loi organique n° 2006-48 (couche texte, ne récrit pas l''article). Lu aussi : art. 16 du décret-loi n° 2011-14 (couche texte), qui ne fixe aucune durée. Non lus : art. 161 du code électoral (non trouvé par recherche de « 161 » dans la couche texte du JORT n° 30 de 2009 ; à lire à l''image), loi organique n° 91-24. Note : docs/notes/finances-locales-institutions-lectures-2026-10-10.md § 1.4.'
     couvert_jusqu_au: 2011-12-30
     resultat: aucun
-  a_faire: [lire l'art. 161 du code électoral dans sa rédaction en vigueur en 2011, lire la loi organique n° 91-24]
+  - date: 2026-10-10
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'loi organique n° 91-24 du 30 avril 1991 lue en entier (JORT n° 30 du 3 mai 1991, p. 947, OCR relu, titre et article unique à l''image) : elle ne remplace que les art. 48 et 90 de la loi organique des communes et ne traite ni de la dissolution ni de la délégation spéciale. Aucune requête rejouée. Non lu : art. 161 du code électoral. Note : docs/notes/finances-locales-approbation-1975-2018.md § 3.'
+    couvert_jusqu_au: 2011-12-30
+    resultat: aucun
+  a_faire: [lire l'art. 161 du code électoral dans sa rédaction en vigueur en 2011]
+
+- id: r-fl-ccp-art66-modificatifs
+  objet: texte modifiant ou abrogeant, entre 1985 et 2018, l'article 66 du code de la comptabilité publique dans sa rédaction de la loi n° 85-47 du 25 avril 1985 (autorisation des emprunts des collectivités locales par décret ou par arrêté conjoint)
+  ou: [precis/fr/finances_locales/_competences.qmd#sec-fl-comp-communes-1975]
+  requetes:
+    titres_fts: [code AND comptabilite AND publique]
+    titres_like: ['%article 66 du code de la comptabilit%']
+    iort_ar: [مجلة المحاسبة العمومية]
+    depuis: 1985-04-30
+  periode:
+    jusqu_au: 2018-12-31
+    motif: la question porte sur le régime antérieur au code des collectivités locales (loi organique n° 2018-29 du 9 mai 2018), dont les règles budgétaires valent pour les communes à partir des budgets de 2019
+  passes:
+  - date: 2026-10-10
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'titres de jort_cache, lois de 1985 à 2018 : 68 lois répondent à la requête FTS ; parmi elles, six ont un titre portant 65, 66, « emprunt » ou « dette » (lois n° 85-47, 85-109, 96-86, 99-101, 2015-53, 2017-66) ; seule la loi n° 85-47 porte sur l''article 66 du code (les « Art. 61 à 66 » de la loi n° 85-109 sont des articles de la loi de finances, non ouverts ; la loi n° 96-86 énumère les articles qu''elle modifie, sans le 66). Lacunes : aucun texte ouvert hors la loi n° 85-47 ; pas de plein texte ; le terme arabe « مجلة المحاسبة العمومية », inscrit depuis aux requêtes, n''a pas été joué, alors que les titres de 2015 à 2018 sont en arabe ; lois de finances modifiant le code sans le dire dans leur titre non couvertes. Note : docs/notes/finances-locales-approbation-1975-2018.md § 11.'
+    couvert_jusqu_au: 2018-12-31
+    resultat: aucun
+  a_faire:
+  - ouvrir la loi n° 85-109 (JORT n° 91 de 1985, p. 1739-1740)
+  - relancer avec le terme arabe sur 2011-2018
+  - lire l'art. 66 d'origine (JORT n° 51 de 1973, p. 2268-2269)
+  - chercher une édition consolidée du code
 
 - id: r-fl-conseil-superieur-collectivites
   objet: texte de mise en place du Conseil supérieur des collectivités locales (code de 2018, art. 47 à 60) — composition, élection ou nomination de ses membres
