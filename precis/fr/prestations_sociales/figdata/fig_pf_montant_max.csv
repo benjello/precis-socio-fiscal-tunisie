@@ -1,0 +1,71 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-09
+# séries (tunisia_data) : prestations-familiales-parametres, ipc-longue-periode, bct-ipc-base2015
+# sources (citation) : @loi60-30, @loi75-82, @loi80-36, @loi86-75, @loi88-38, @loi88-39, @loi94-88, @decret95-114, @decret86-611, @decret88-1136, @decret96-1906, @bct-ra, @ins-annuaire
+# fiches : sources/bct-archives.md
+# méthode/hypothèses : Chaque valeur court de sa date d'effet au texte suivant ; aucun texte modifiant ces grandeurs n'est identifié après le dernier cité. Les indemnités du secteur public antérieures au 1er mai 1986 ne sont pas connues., DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Allocation familiale maximale par trimestre, pour le premier enfant et pour un foyer de trois ou de quatre enfants, en dinars de 2025 et en dinars courants, 1962-2025
+Année,"Plafond de l'assiette, moyenne annuelle (D courants par trimestre)","Maximum, enfant de rang 1 (D courants par trimestre)","Maximum, enfant de rang 2 (D courants par trimestre)","Maximum, enfant de rang 3 (D courants par trimestre)","Maximum, enfant de rang 4 (D courants par trimestre)","Maximum, foyer de 3 enfants (D courants par trimestre)","Maximum, foyer de 4 enfants (D courants par trimestre)","Indice des prix, base 100 en 1970","Maximum, premier enfant (D de 2025 par trimestre)","Maximum, foyer de 3 enfants (D de 2025 par trimestre)","Maximum, foyer de 4 enfants (D de 2025 par trimestre)"
+1962,52.5,7.875,7.875,7.875,7.875,23.625,31.5,76.0,216.9,650.6,867.5
+1963,52.5,7.875,7.875,7.875,7.875,23.625,31.5,77.9,211.6,634.7,846.3
+1964,52.5,7.875,7.875,7.875,7.875,23.625,31.5,81.3,202.7,608.0,810.7
+1965,52.5,7.875,7.875,7.875,7.875,23.625,31.5,86.7,190.1,570.2,760.3
+1966,52.5,7.875,7.875,7.875,7.875,23.625,31.5,90.0,183.0,549.0,732.0
+1967,52.5,7.875,7.875,7.875,7.875,23.625,31.5,92.7,177.8,533.3,711.0
+1968,52.5,7.875,7.875,7.875,7.875,23.625,31.5,95.0,173.5,520.5,694.0
+1969,52.5,7.875,7.875,7.875,7.875,23.625,31.5,98.9,166.6,499.7,666.3
+1970,52.5,7.875,7.875,7.875,7.875,23.625,31.5,100.0,164.8,494.4,659.2
+1971,52.5,7.875,7.875,7.875,7.875,23.625,31.5,106.0,155.5,466.4,621.9
+1972,52.5,7.875,7.875,7.875,7.875,23.625,31.5,108.0,152.6,457.8,610.4
+1973,52.5,7.875,7.875,7.875,7.875,23.625,31.5,113.1,145.7,437.1,582.9
+1974,52.5,7.875,7.875,7.875,7.875,23.625,31.5,117.7,140.0,420.1,560.1
+1975,52.5,7.875,7.875,7.875,7.875,23.625,31.5,128.9,127.9,383.6,511.4
+1976,72.0,12.96,11.52,10.08,8.64,34.56,43.2,135.8,199.7,532.6,665.7
+1977,72.0,12.96,11.52,10.08,8.64,34.56,43.2,144.9,187.2,499.1,623.9
+1978,72.0,12.96,11.52,10.08,8.64,34.56,43.2,153.0,177.3,472.7,590.9
+1979,72.0,12.96,11.52,10.08,8.64,34.56,43.2,165.9,163.5,436.0,544.9
+1980,72.0,12.96,11.52,10.08,8.64,34.56,43.2,180.7,150.1,400.2,500.3
+1981,72.0,12.96,11.52,10.08,8.64,34.56,43.2,197.5,137.3,366.2,457.7
+1982,72.0,12.96,11.52,10.08,8.64,34.56,43.2,225.3,120.4,321.0,401.3
+1983,72.0,12.96,11.52,10.08,8.64,34.56,43.2,246.8,109.9,293.0,366.3
+1984,72.0,12.96,11.52,10.08,8.64,34.56,43.2,268.0,101.2,269.9,337.3
+1985,72.0,12.96,11.52,10.08,8.64,34.56,43.2,288.0,94.2,251.1,313.9
+1986,105.333,18.96,16.853,14.747,12.64,50.56,63.2,306.0,129.7,345.8,432.2
+1987,122.0,21.96,19.52,17.08,14.64,58.56,73.2,330.9,138.9,370.4,462.9
+1988,122.0,21.96,19.52,17.08,14.64,58.56,73.2,354.8,129.5,345.4,431.8
+1989,122.0,21.96,19.52,17.08,,58.56,,382.2,120.2,320.6,
+1990,122.0,21.96,19.52,17.08,,58.56,,407.4,112.8,300.8,
+1991,122.0,21.96,19.52,17.08,,58.56,,439.0,104.7,279.2,
+1992,122.0,21.96,19.52,17.08,,58.56,,463.4,99.2,264.5,
+1993,122.0,21.96,19.52,17.08,,58.56,,482.9,95.2,253.8,
+1994,122.0,21.96,19.52,17.08,,58.56,,504.5,91.1,242.9,
+1995,122.0,21.96,19.52,17.08,,58.56,,536.0,85.7,228.6,
+1996,122.0,21.96,19.52,17.08,,58.56,,555.9,82.7,220.5,
+1997,122.0,21.96,19.52,17.08,,58.56,,576.5,79.7,212.6,
+1998,122.0,21.96,19.52,17.08,,58.56,,594.5,77.3,206.1,
+1999,122.0,21.96,19.52,17.08,,58.56,,610.5,75.3,200.7,
+2000,122.0,21.96,19.52,17.08,,58.56,,628.3,73.1,195.0,
+2001,122.0,21.96,19.52,17.08,,58.56,,640.5,71.8,191.3,
+2002,122.0,21.96,19.52,17.08,,58.56,,658.6,69.8,186.1,
+2003,122.0,21.96,19.52,17.08,,58.56,,676.5,67.9,181.2,
+2004,122.0,21.96,19.52,17.08,,58.56,,701.0,65.6,174.8,
+2005,122.0,21.96,19.52,17.08,,58.56,,715.3,64.2,171.3,
+2006,122.0,21.96,19.52,17.08,,58.56,,745.0,61.7,164.5,
+2007,122.0,21.96,19.52,17.08,,58.56,,770.6,59.6,159.0,
+2008,122.0,21.96,19.52,17.08,,58.56,,808.4,56.8,151.6,
+2009,122.0,21.96,19.52,17.08,,58.56,,837.0,54.9,146.4,
+2010,122.0,21.96,19.52,17.08,,58.56,,873.9,52.6,140.2,
+2011,122.0,21.96,19.52,17.08,,58.56,,904.8,50.8,135.4,
+2012,122.0,21.96,19.52,17.08,,58.56,,955.1,48.1,128.3,
+2013,122.0,21.96,19.52,17.08,,58.56,,1013.5,45.3,120.9,
+2014,122.0,21.96,19.52,17.08,,58.56,,1069.0,43.0,114.6,
+2015,122.0,21.96,19.52,17.08,,58.56,,1119.5,41.1,109.5,
+2016,122.0,21.96,19.52,17.08,,58.56,,1161.2,39.6,105.5,
+2017,122.0,21.96,19.52,17.08,,58.56,,1223.0,37.6,100.2,
+2018,122.0,21.96,19.52,17.08,,58.56,,1314.2,35.0,93.3,
+2019,122.0,21.96,19.52,17.08,,58.56,,1403.5,32.7,87.3,
+2020,122.0,21.96,19.52,17.08,,58.56,,1482.6,31.0,82.7,
+2021,122.0,21.96,19.52,17.08,,58.56,,1567.2,29.3,78.2,
+2022,122.0,21.96,19.52,17.08,,58.56,,1697.4,27.1,72.2,
+2023,122.0,21.96,19.52,17.08,,58.56,,1855.7,24.8,66.0,
+2024,122.0,21.96,19.52,17.08,,58.56,,1986.0,23.1,61.7,
+2025,122.0,21.96,19.52,17.08,,58.56,,2092.7,22.0,58.6,

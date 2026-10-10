@@ -1,0 +1,42 @@
+- libelle: Allocations familiales — taux pour le 1ᵉʳ enfant
+  parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf1.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.af.taux.enf1/table/
+- libelle: Allocations familiales — taux pour le 2ᵉ enfant
+  parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf2.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.af.taux.enf2/table/
+- libelle: Allocations familiales — taux pour le 3ᵉ enfant
+  parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf3.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.af.taux.enf3/table/
+- libelle: Allocations familiales — taux pour le 4ᵉ enfant
+  parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf4.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.af.taux.enf4/table/
+- libelle: Allocations familiales — plafond de l'assiette trimestrielle
+  parametre: parameters/prestations/contributives/prestations_familiales/af/plaf_trim.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.af.plaf_trim/table/
+- libelle: Allocations familiales — nombre de rangs servis
+  parametre: parameters/prestations/contributives/prestations_familiales/af/nb_enfants_max.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.af.nb_enfants_max/table/
+- libelle: Majoration pour salaire unique — 1 enfant(s) à charge
+  parametre: parameters/prestations/contributives/prestations_familiales/salaire_unique/enf1.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.salaire_unique.enf1/table/
+- libelle: Majoration pour salaire unique — 2 enfant(s) à charge
+  parametre: parameters/prestations/contributives/prestations_familiales/salaire_unique/enf2.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.salaire_unique.enf2/table/
+- libelle: Majoration pour salaire unique — 3 et plus enfant(s) à charge
+  parametre: parameters/prestations/contributives/prestations_familiales/salaire_unique/enf3.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.salaire_unique.enf3/table/
+- libelle: Contribution aux frais de crèche — montant par enfant et par mois
+  parametre: parameters/prestations/contributives/prestations_familiales/creche/montant.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.contributives.prestations_familiales.creche.montant/table/
+- libelle: Indemnité à caractère familial du secteur public — 1ᵉʳ enfant
+  parametre: parameters/retraite/cnrps/accessoires/indemnites_familiales/rang_1.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.accessoires.indemnites_familiales.rang_1/table/
+- libelle: Indemnité à caractère familial du secteur public — 2ᵉ enfant
+  parametre: parameters/retraite/cnrps/accessoires/indemnites_familiales/rang_2.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.accessoires.indemnites_familiales.rang_2/table/
+- libelle: Indemnité à caractère familial du secteur public — 3ᵉ enfant
+  parametre: parameters/retraite/cnrps/accessoires/indemnites_familiales/rang_3.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.accessoires.indemnites_familiales.rang_3/table/
+- libelle: Indemnité à caractère familial du secteur public — 4ᵉ enfant
+  parametre: parameters/retraite/cnrps/accessoires/indemnites_familiales/rang_4.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.accessoires.indemnites_familiales.rang_4/table/

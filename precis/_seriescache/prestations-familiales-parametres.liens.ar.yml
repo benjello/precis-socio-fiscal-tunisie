@@ -1,0 +1,42 @@
+- libelle: المنح العائلية — النسبة للطفل الأوّل
+  parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf1.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.taux.enf1/table/
+- libelle: المنح العائلية — النسبة للطفل الثاني
+  parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf2.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.taux.enf2/table/
+- libelle: المنح العائلية — النسبة للطفل الثالث
+  parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf3.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.taux.enf3/table/
+- libelle: المنح العائلية — النسبة للطفل الرابع
+  parametre: parameters/prestations/contributives/prestations_familiales/af/taux/enf4.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.taux.enf4/table/
+- libelle: المنح العائلية — الحدّ الأقصى للوعاء الثلاثي
+  parametre: parameters/prestations/contributives/prestations_familiales/af/plaf_trim.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.plaf_trim/table/
+- libelle: المنح العائلية — عدد الترتيبات المصروفة
+  parametre: parameters/prestations/contributives/prestations_familiales/af/nb_enfants_max.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.af.nb_enfants_max/table/
+- libelle: الزيادة بعنوان الأجر الوحيد — 1 طفل متكفَّل به
+  parametre: parameters/prestations/contributives/prestations_familiales/salaire_unique/enf1.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.salaire_unique.enf1/table/
+- libelle: الزيادة بعنوان الأجر الوحيد — 2 طفل متكفَّل به
+  parametre: parameters/prestations/contributives/prestations_familiales/salaire_unique/enf2.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.salaire_unique.enf2/table/
+- libelle: الزيادة بعنوان الأجر الوحيد — 3 et plus طفل متكفَّل به
+  parametre: parameters/prestations/contributives/prestations_familiales/salaire_unique/enf3.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.salaire_unique.enf3/table/
+- libelle: المساهمة في مصاريف المحاضن — المبلغ عن كلّ طفل وكلّ شهر
+  parametre: parameters/prestations/contributives/prestations_familiales/creche/montant.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prestations.contributives.prestations_familiales.creche.montant/table/
+- libelle: المنحة ذات الصبغة العائلية بالقطاع العمومي — الطفل الأوّل
+  parametre: parameters/retraite/cnrps/accessoires/indemnites_familiales/rang_1.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.accessoires.indemnites_familiales.rang_1/table/
+- libelle: المنحة ذات الصبغة العائلية بالقطاع العمومي — الطفل الثاني
+  parametre: parameters/retraite/cnrps/accessoires/indemnites_familiales/rang_2.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.accessoires.indemnites_familiales.rang_2/table/
+- libelle: المنحة ذات الصبغة العائلية بالقطاع العمومي — الطفل الثالث
+  parametre: parameters/retraite/cnrps/accessoires/indemnites_familiales/rang_3.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.accessoires.indemnites_familiales.rang_3/table/
+- libelle: المنحة ذات الصبغة العائلية بالقطاع العمومي — الطفل الرابع
+  parametre: parameters/retraite/cnrps/accessoires/indemnites_familiales/rang_4.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.accessoires.indemnites_familiales.rang_4/table/

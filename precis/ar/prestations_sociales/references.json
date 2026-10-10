@@ -1086,6 +1086,86 @@
       "note": "citation-key: ins-annuaire\nمجموعة من طبعات نشرية سنوية للمعهد الوطني للإحصاء. الطبعات المستخدمة لمؤشر أسعار الاستهلاك: 1995-2001 و1998-2002 و1999-2003 و2019-2023."
     },
     {
+      "id": "bct-ra",
+      "type": "dataset",
+      "note": "citation-key: bct-ra\nTitre relevé en couverture des fascicules (« Rapport Annuel 2024 ») et confirmé sur bct.gov.tn ; les métadonnées PDF portent un code de service interne, inutilisable. Publication annuelle depuis 1959. Le tableau « Principaux indicateurs de l'emploi » ne figure toutefois que dans 14 rapports sur 66, d'où une série d'emploi limitée à 2007-2024.",
+      "publisher": "Banque Centrale de Tunisie",
+      "title": "Rapport Annuel",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/page.jsp?id=77",
+      "author": [
+        {
+          "literal": "Banque Centrale de Tunisie (BCT)"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      }
+    },
+    {
+      "id": "decret61-145",
+      "type": "legislation",
+      "title": "Décret n° 61-145 du 30 mars 1961, portant relèvement général des salaires",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "12",
+      "page": "445-446",
+      "issued": {
+        "date-parts": [
+          [
+            1961,
+            3,
+            30
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1961/1961A/Ja01261.pdf",
+      "note": "citation-key: decret61-145\nJORT n° 12 des 28-31 mars 1961, pp. 445-446. Art. 6 : minimum horaire de 76 millimes (Tunis, Bizerte, Sousse, Sfax et banlieues) et de 60 millimes ailleurs ; effet le 1er avril 1961. URL tirée de jort_cache.db (recid 106591, champ pdf_ar).",
+      "title-short": "Décret n° 61-145 du 30 mars 1961"
+    },
+    {
+      "id": "decret74-63",
+      "type": "legislation",
+      "title": "Décret n° 74-63 du 31 janvier 1974, fixant le salaire minimum interprofessionnel garanti dans le secteur non agricole régi par le code du travail",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "10",
+      "page": "283",
+      "issued": {
+        "date-parts": [
+          [
+            1974,
+            1,
+            31
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1974/1974A/Ja01074.pdf",
+      "note": "citation-key: decret74-63\nJORT n° 10 du 8 février 1974, p. 283. SMIG de 130 millimes l'heure, indemnité de cherté de vie comprise (art. 1) ; variation selon le coût de la vie par arrêté, après avis de la commission nationale (art. 4) ; effet le 1er janvier 1974 (art. 5). URL tirée de jort_cache.db (recid 102444, champ pdf_ar).",
+      "title-short": "Décret n° 74-63 du 31 janvier 1974"
+    },
+    {
+      "id": "decret74-571",
+      "type": "legislation",
+      "title": "Décret n° 74-571 du 22 mai 1974, fixant le salaire minimum agricole garanti",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "36",
+      "page": "1116",
+      "issued": {
+        "date-parts": [
+          [
+            1974,
+            5,
+            22
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1974/1974A/Ja03674.pdf",
+      "note": "citation-key: decret74-571\nJORT n° 36 du 24 mai 1974, p. 1116. SMAG de 800 millimes par jour (art. 1) ; effet le 1er juin 1974 (art. 8). URL tirée de jort_cache.db (recid 102268, champ pdf_ar).",
+      "title-short": "Décret n° 74-571 du 22 mai 1974"
+    },
+    {
       "id": "loi86-86",
       "type": "legislation",
       "container-title": "Journal officiel de la République tunisienne",

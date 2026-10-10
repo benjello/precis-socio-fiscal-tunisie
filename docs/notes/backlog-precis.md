@@ -588,7 +588,35 @@ liste qui suit le tableau, citations comprises. Restent :
 - **La compensation est sortie du volume le 6 octobre 2026** : `_compensation.qmd` est supprimé,
   son texte forme le volume IX (rubrique « La compensation » ci-dessous) ; le plan du volume
   (`index.qmd`) y renvoie par un lien entre livres.
-- **Dépense des allocations familiales, 1990-2004 — fait le 3 octobre 2026** (`#fig-cnss-allocations-familiales`, `#sec-pf-longue-periode`), tirée de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026), déflatée par l'IPC des annuaires de l'INS (`ins-annuaire-ipc`). Restent : allocataires, enfants, montant moyen, dépense avant 1990 et après 2004 (TODO du chapitre). **221 valeurs de 1999** (et quelques-unes de 2000) masquées par la reliure restent à lire sur l'original papier (tunisia-data#26) ; en attendant, la figure trace des estimations hachurées ou creuses. Quand le classeur revient : réinjecter dans tunisia-data, relancer `figtools.refresh_cache("cnss-retrospective-ressources-emplois")`, puis relire la note de lecture, qui cite des montants. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches).
+- **Chapitre des prestations familiales converti le 9 octobre 2026** (`_prestations_familiales.qmd`,
+  « ruptures au premier plan, détail replié », section `.domicile-unique`, 42 lignes de registre
+  `#r-pf-…`, huit blocs repliés) : vue d'ensemble, mise en place 1944-1961, grandes réformes
+  (1980, 1989, 1994 ; 1976 et 1986 dans l'entre-temps), état du droit en 2026, une section par
+  prestation adjointe, secteur public, longue période. Trois figures nouvelles, tirées de la
+  série `prestations-familiales-parametres` (écrite par `generate_prestations_tables.py`) :
+  `#fig-pf-montant-max`, `#fig-pf-plafond-smig`, `#fig-pf-msu-creche-reel` ; dinars de 2025 par
+  `scripts/dinars_constants.py`, le déflateur du marché du travail remonté dans `scripts/`
+  (`marche_travail/figures/deflateur.py` le réexporte). Aucun tableau de cotisations dans ce
+  chapitre : le financement renvoie à `cotisations_sociales/_autres_branches.html#sec-cot-famille`.
+  **Restent, par disponibilité :**
+  - *lisible au corpus* : la **date d'effet de la loi n° 96-65** (fin de l'article unique à relire,
+    JORT n° 60 du 26 juillet 1996, déposé le 30 juillet : 4 août 1996 si l'article ne dit rien) et
+    celle de la **loi n° 96-101** (mention de dépôt du JORT n° 94 de 1996 à relever à l'image,
+    rectificatif au JORT n° 7 de 1997, p. 114) — le chapitre dit « non établie ici » ; la **loi
+    n° 82-71** du 15 août 1982 (JORT n° 55, p. 1737), lue partiellement, sans clé de
+    bibliographie : ligne de registre sans ancre ni citation ;
+  - *à dépouiller* : les lois modifiant les articles 52, 54 et 61 de la loi n° 60-30 **de 2007 à
+    2026** (fiche `r-pf-art61-apres-1988`, couverte jusqu'au 23 juillet 2007) ; un éventuel décret
+    de fixation des indemnités familiales du secteur public **postérieur à 1996** (aucune passe
+    documentée, pas de fiche) ;
+  - *à obtenir* : le décret du 8 juin 1944 et ses modificatifs (hors de la couverture de
+    `jort_cache.db`) ;
+  - *arabe* : le chapitre arabe garde l'ancien plan et la légende « constants de 1990 » de
+    `fig-cnss-allocations-familiales`, dont le module trace désormais des dinars de 2025
+    (traduction différée) ;
+  - *tableau fait main* : `tbl-pf-ages` (âges limites, art. 54), faute de grandeur à la base des
+    tableaux (`backlog-modele.md`).
+- **Dépense des allocations familiales, 1990-2004 — fait le 3 octobre 2026** (`#fig-cnss-allocations-familiales`, `#sec-pf-longue-periode`), tirée de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026), déflatée, depuis le 9 octobre 2026, par l'indice du précis en **dinars de 2025** (`scripts/dinars_constants.py` ; 346 MD de 2025 en 1990, 209 en 2004 — avant : IPC des annuaires de l'INS, base 1990). Restent : allocataires, enfants, montant moyen, dépense avant 1990 et après 2004 (TODO du chapitre). **221 valeurs de 1999** (et quelques-unes de 2000) masquées par la reliure restent à lire sur l'original papier (tunisia-data#26) ; en attendant, la figure trace des estimations hachurées ou creuses. Quand le classeur revient : réinjecter dans tunisia-data, relancer `figtools.refresh_cache("cnss-retrospective-ressources-emplois")`, puis relire la note de lecture, qui cite des montants. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches). Depuis le 9 octobre 2026, une quatrième vue donne les millions de dinars de 2025, à part des dinars courants.
 - **Onze paliers de l'allocation** entre 1987 et 2018 n'ont aucun fondement textuel publié.
   Les décisions ou circulaires de la direction générale de la promotion sociale et
   les rapports administratifs sont à chercher **hors du JORT**. L'arrêté de 2024
@@ -1745,8 +1773,10 @@ en donnait trois.
     2025 (`#fig-augmentations-reel`, `#fig-salaires-categories-reel`) ; texte, légendes et
     libellés des modules mis d'accord, les bornes des libellés de `salaires_categories.py` étant
     lues dans les séries ;
-  - **`prestations_sociales`, non touché** : ses modules gardent leurs propres années de base
-    (`cnss_allocations_familiales.py` : 1990 ; `pnafn.py` : 1987) et ne lisent pas cette série.
+  - **`prestations_sociales`** : `cnss_allocations_familiales.py` et le module nouveau
+    `prestations_familiales.py` sont passés aux dinars de 2025 le 9 octobre 2026, par
+    `scripts/dinars_constants.py` (le déflateur de ce volume, remonté dans `scripts/`) ;
+    `pnafn.py` garde sa base 1987 et ne lit pas cette série.
 
 ## La compensation
 

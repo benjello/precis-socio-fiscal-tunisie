@@ -1,10 +1,11 @@
 """Figure « allocations familiales versées par la CNSS, 1990-2004 » (source CNSS).
 
     from figures import cnss_allocations_familiales as caf
-    caf.fig_allocations()   # composantes en MD courants, total en MD constants de 1990
+    caf.fig_allocations()   # composantes en MD courants
+    caf.fig_allocations("reel")        # composantes en MD de 2025
     caf.fig_allocations("pib")         # composantes en % du PIB
     caf.fig_allocations("ressources")  # en % des ressources de la CNSS, toutes branches
-    caf.vues()              # les trois, pour figtools.figure_tabs
+    caf.vues()              # les quatre, pour figtools.figure_tabs
     caf.table()             # les montants et les ratios de la figure (onglet Données)
 
 D'OÙ VIENNENT LES DONNÉES. La Rétrospective financière 1990-2004 de la CNSS (série
@@ -23,10 +24,13 @@ milliers de dinars courants convertis en millions :
 Les congés de naissance (0,1 MD par an au plus) et les actions sociales de la branche ne sont
 pas des allocations et ne sont pas tracés.
 
-LE DÉFLATEUR. L'indice général des prix à la consommation familiale de l'INS, base 100 en
-1970, lu dans les annuaires statistiques (série `ins-annuaire-ipc`, lignes retenues), ramené
-à 1990. Le document de la CNSS ne compte ni les allocataires ni les enfants : le total
-déflaté mesure la dépense, non le montant par enfant.
+LE DÉFLATEUR. Celui du précis (`scripts/dinars_constants.py`) : l'indice des prix à la
+consommation de longue période, base 100 en 1970 (série `ipc-longue-periode`), prolongé
+jusqu'à l'année de base par l'indice que relaie la Banque centrale (`bct-ipc-base2015`) ;
+dinars de 2025 = montant × IPC(2025) / IPC(année). Les dinars courants et les dinars de 2025
+ont chacun leur vue : un facteur de trois à cinq les sépare sur la période, et un seul axe
+écraserait les premiers. Le document de la CNSS ne compte ni les allocataires ni les
+enfants : le total déflaté mesure la dépense, non le montant par enfant.
 
 LES DÉNOMINATEURS DES VUES EN POURCENTAGE. Elles se passent de déflateur : numérateur et
 dénominateur sont en dinars courants de la même année.
@@ -61,19 +65,18 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "scripts"))
 import figtools  # noqa: E402
+import dinars_constants  # noqa: E402
+from dinars_constants import ANNEE_BASE, SERIES_IPC  # noqa: E402, F401
 
 SERIE = "cnss-retrospective-ressources-emplois"
-SERIE_PRIX = "ins-annuaire-ipc"
-ANNEE_BASE = 1990
 PAGE_CAISSE = 78  # ensemble des régimes, toutes branches, avec CTF et RC
 SERIE_PIB = "irpp-ratios"
 RUPTURE_PIB = 1997  # base 1983 → base 1997 des comptes nationaux (voir l'en-tête)
-MESURES = ("md", "pib", "ressources")
+MESURES = ("md", "reel", "pib", "ressources")
 
 BLEU, ORANGE, GRIS, VERT, VIOLET = "#08519c", "#bc4c00", "#6e7781", "#1a7f37", "#8250df"
 BLEU_CLAIR = "#6baed6"
@@ -94,12 +97,15 @@ _L = {
                     "la CNSS, 1990-2004",
               "ar": "المنح العائلية والزيادة بعنوان الأجر الوحيد التي صرفها الصندوق الوطني "
                     "للضمان الاجتماعي، 1990-2004"},
-    "y": {"fr": "Millions de dinars (barres : courants ; courbe : constants de 1990)",
-          "ar": "بملايين الدنانير (الأعمدة: جارية؛ المنحنى: ثابتة لسنة 1990)"},
+    "y": {"fr": "Millions de dinars courants", "ar": "بملايين الدنانير الجارية"},
+    "y_reel": {"fr": f"Millions de dinars de {ANNEE_BASE}",
+               "ar": f"بملايين دنانير سنة {ANNEE_BASE}"},
     "y_pib": {"fr": "% du PIB", "ar": "% من الناتج المحلي الإجمالي"},
     "y_ressources": {"fr": "% des ressources de la CNSS",
                      "ar": "% من موارد الصندوق الوطني للضمان الاجتماعي"},
-    "vue_md": {"fr": "Millions de dinars", "ar": "بملايين الدنانير"},
+    "vue_md": {"fr": "Millions de dinars courants", "ar": "بملايين الدنانير الجارية"},
+    "vue_reel": {"fr": f"Millions de dinars de {ANNEE_BASE}",
+                 "ar": f"بملايين دنانير سنة {ANNEE_BASE}"},
     "vue_pib": {"fr": "% du PIB", "ar": "% من الناتج المحلي الإجمالي"},
     "vue_ressources": {"fr": "% des ressources de la CNSS",
                        "ar": "% من موارد الصندوق الوطني للضمان الاجتماعي"},
@@ -108,7 +114,8 @@ _L = {
     "x": {"fr": "Année", "ar": "السنة"},
     "af_rsna": {"fr": "Allocations familiales, régime des salariés non agricoles",
                 "ar": "المنح العائلية، نظام الأجراء غير الفلاحيين"},
-    "af_autres": {"fr": "Allocations familiales, régime agricole amélioré et étudiants",
+    "af_autres": {"fr": "Allocations familiales, régime dit « agricole amélioré » dans les "
+                        "comptes de la caisse, et étudiants",
                   "ar": "المنح العائلية، النظام الفلاحي المحسّن والطلبة"},
     "msu": {"fr": "Majoration pour salaire unique",
             "ar": "الزيادة بعنوان الأجر الوحيد"},
@@ -118,16 +125,14 @@ _L = {
                             "الجرايات إلى سنة 1994"},
     "af_ctf": {"fr": "Allocations familiales, convention tuniso-française",
                "ar": "المنح العائلية، الاتفاقية التونسية الفرنسية"},
-    "reel": {"fr": "Total en dinars constants de 1990",
-             "ar": "المجموع بالدينار الثابت لسنة 1990"},
     "estime": {"fr": "{annees} : valeur en partie estimée (reliure du document)",
                "ar": "{annees}: قيمة مقدّرة جزئياً (تجليد الوثيقة)"},
     "col_annee": {"fr": "Année", "ar": "السنة"},
     "col_total": {"fr": "Total, dinars courants (MD)", "ar": "المجموع، بالدينار الجاري (م.د)"},
-    "col_indice": {"fr": "Indice des prix, base 100 en 1990",
-                   "ar": "الرقم القياسي للأسعار، أساس 100 سنة 1990"},
-    "col_reel": {"fr": "Total, dinars constants de 1990 (MD)",
-                 "ar": "المجموع، بالدينار الثابت لسنة 1990 (م.د)"},
+    "col_indice": {"fr": f"Indice des prix, base 100 en {ANNEE_BASE}",
+                   "ar": f"الرقم القياسي للأسعار، أساس 100 سنة {ANNEE_BASE}"},
+    "col_reel": {"fr": f"Total, dinars de {ANNEE_BASE} (MD)",
+                 "ar": f"المجموع، بدينار سنة {ANNEE_BASE} (م.د)"},
     "col_estimations": {"fr": "Estimations provisoires (MD)", "ar": "تقديرات مؤقّتة (م.د)"},
     "col_pib": {"fr": "PIB, ministère des Finances (MD)",
                 "ar": "الناتج المحلي الإجمالي، وزارة المالية (م.د)"},
@@ -202,11 +207,16 @@ def _pib() -> dict[int, float]:
 def _ratios(g: dict, mesure: str) -> dict:
     """Les grandeurs `g` ({nom: {année: (MD, estimé ?)}}) dans l'unité `mesure`.
 
-    "md" : inchangées ; "pib" : en % du PIB ; "ressources" : en % du total des ressources de
-    la caisse. Un ratio est estimé si son numérateur ou son dénominateur l'est.
+    "md" : inchangées ; "reel" : en dinars de l'année de base ; "pib" : en % du PIB ;
+    "ressources" : en % du total des ressources de la caisse. Un ratio est estimé si son
+    numérateur ou son dénominateur l'est.
     """
     if mesure == "md":
         return g
+    if mesure == "reel":
+        ind = _indice()
+        return {nom: {a: (100 * v / ind[a], est) for a, (v, est) in s.items()}
+                for nom, s in g.items()}
     if mesure == "pib":
         den = {a: (v, False) for a, v in _pib().items()}
     elif mesure == "ressources":
@@ -218,10 +228,8 @@ def _ratios(g: dict, mesure: str) -> dict:
 
 
 def _indice() -> dict[int, float]:
-    """IPC annuel ramené à 100 en ANNEE_BASE (lignes retenues des annuaires de l'INS)."""
-    d = figtools.series(SERIE_PRIX)
-    d = d[d["retenu"] == "oui"]
-    ipc = {int(r.annee): float(r.indice_base1970) for r in d.itertuples()}
+    """IPC annuel du précis, ramené à 100 en ANNEE_BASE."""
+    ipc = dinars_constants.ipc()
     return {a: 100 * v / ipc[ANNEE_BASE] for a, v in ipc.items()}
 
 
@@ -272,14 +280,14 @@ def table():
 
 
 def vues() -> list[tuple[str, object]]:
-    """Les trois vues de la figure, pour `figtools.figure_tabs`."""
+    """Les quatre vues de la figure, pour `figtools.figure_tabs`."""
     return [(_lab(f"vue_{m}"), fig_allocations(m)) for m in MESURES]
 
 
 def fig_allocations(mesure: str = "md"):
-    """Composantes empilées ; `mesure` : "md" (millions de dinars courants, avec le total en
-    dinars constants de 1990), "pib" (% du PIB) ou "ressources" (% du total des ressources
-    de la CNSS, toutes branches)."""
+    """Composantes empilées ; `mesure` : "md" (millions de dinars courants), "reel" (millions
+    de dinars de l'année de base), "pib" (% du PIB) ou "ressources" (% du total des
+    ressources de la CNSS, toutes branches)."""
     figtools.apply_lang_font()
     ft = figtools.fig_text
     g, ind, ans, tot = _totaux()
@@ -287,7 +295,7 @@ def fig_allocations(mesure: str = "md"):
         r = _ratios({**g, "total": tot}, mesure)
         tot = r.pop("total")
         g = r
-    dec = {"md": 1, "pib": 3, "ressources": 1}[mesure]
+    dec = {"md": 1, "reel": 1, "pib": 3, "ressources": 1}[mesure]
     fig, ax = plt.subplots(figsize=(9.5, 6.4))
 
     bas = {a: 0.0 for a in ans}
@@ -301,20 +309,9 @@ def fig_allocations(mesure: str = "md"):
             bas[a] += v
         poignees.append(Patch(color=couleur, label=ft(_lab(nom))))
 
-    if mesure == "md":  # le total en dinars constants : vue en dinars seulement
-        reel = {a: 100 * tot[a][0] / ind[a] for a in ans}
-        ax.plot(ans, [reel[a] for a in ans], "-", color=ORANGE, lw=2)
-        for a in ans:
-            ax.plot([a], [reel[a]], "o", color=ORANGE, ms=4.5,
-                    mfc="white" if tot[a][1] else ORANGE)
-        poignees.append(Line2D([], [], color=ORANGE, marker="o", lw=2,
-                               label=ft(_lab("reel"))))
     for a in (ans[0], ans[-1]):
         ax.annotate(_nombre(tot[a][0], dec), (a, tot[a][0]), textcoords="offset points",
                     xytext=(0, 4), ha="center", fontsize=8, color="#24292f")
-        if mesure == "md" and a != ANNEE_BASE:  # l'année de base : même montant que la barre
-            ax.annotate(_nombre(reel[a]), (a, reel[a]), textcoords="offset points",
-                        xytext=(0, -13), ha="center", fontsize=8, color=ORANGE)
     estimees = [a for a in ans if tot[a][1]]
     if estimees:
         poignees.append(Patch(facecolor="white", edgecolor=GRIS, hatch="////",
