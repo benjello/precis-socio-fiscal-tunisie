@@ -1,156 +1,390 @@
-# Histoire des collectivités et de leurs finances {#sec-fl-histoire}
+# Les collectivités locales, de 1957 à 2026 {#sec-fl-histoire .domicile-unique}
 
-Ce chapitre retrace, texte par texte, comment les collectivités locales tunisiennes ont été instituées, organisées et financées. Il mobilise les notions du chapitre des notions. La [déconcentration](#g-deconcentration) fait exécuter les décisions du centre par des antennes qui lui sont subordonnées ; la [décentralisation](#g-decentralisation) transfère des compétences à des [collectivités locales](#g-collectivite-locale), par délégation ou par dévolution (@sec-fl-trois-volets). La [libre administration](#g-libre-administration) suppose des organes élus (@sec-fl-libre-administration) ; la [tutelle](#g-tutelle) est le contrôle du centre sur les décisions locales (@sec-fl-tutelle). Deux questions reviennent ainsi d'un texte à l'autre : les conseils sont-ils élus ou nommés ? leurs décisions, notamment budgétaires, sont-elles approuvées d'avance ou contrôlées après coup ?
+Ce chapitre suit, de 1957 à 2026, qui sont les [collectivités locales](#g-collectivite-locale) tunisiennes, comment leurs conseils sont désignés et qui contrôle leurs décisions. Quatre notions du chapitre des notions y servent. La [libre administration](#g-libre-administration) suppose des organes élus (@sec-fl-libre-administration) ; la [tutelle](#g-tutelle) est le contrôle du centre sur les décisions locales (@sec-fl-tutelle). La [décentralisation](#g-decentralisation) transfère des compétences à des collectivités ; la [déconcentration](#g-deconcentration) fait exécuter les décisions du centre par ses antennes (@sec-fl-trois-volets).
 
-Le chapitre va de l'indépendance à 2025. Les compétences et l'organisation que fixe le code de 2018 sont détaillées au chapitre suivant (@sec-fl-competences), les règles budgétaires au chapitre des budgets (@sec-fl-budgets-comptes). Les textes qui ne sont publiés qu'en arabe sont cités dans cette édition ; les passages qui en sont repris sont traduits par nous.
+Pour chaque réforme, le chapitre donne ce que la loi cherche, dans ses mots, ce qui change et les étapes de sa mise en œuvre. Ce que font les collectivités, et l'état du droit, sont au chapitre des compétences (@sec-fl-competences) ; les règles budgétaires au chapitre des budgets (@sec-fl-budgets-comptes). Le code des collectivités locales de 2018, la Constitution de 2022, les décrets-lois de 2023 et de 2026 et la loi constituante de 2011 n'ont d'édition identifiée qu'en arabe : leur traduction, sans guillemets, est la nôtre.
 
-## Avant l'indépendance {#sec-fl-hist-avant-1956}
+## Vue d'ensemble {#sec-fl-hist-vue-ensemble}
 
-Les textes beylicaux et ceux du protectorat ne sont connus ici que par les visas et les abrogations des textes postérieurs. La loi municipale de 1957 vise un décret du 15 septembre 1945 relatif à l'élection du conseil municipal de Tunis et un décret du 20 décembre 1952 relatif à l'organisation et au fonctionnement des municipalités, tous deux modifiés le 4 mars 1954, qu'elle abroge [@decret1957-loi-municipale, visas et art. 117]. La loi de 1957 sur les conseils de gouvernorat vise les décrets du 13 juillet 1922 et du 20 décembre 1952 relatifs aux conseils de caïdat, et un décret du 8 novembre 1945 portant organisation des finances locales [@loi57-12, visas]. La loi de 1997 qui promulgue le code de la fiscalité locale abroge enfin les décrets qui avaient institué, de 1902 à 1948, les taxes locales sur les immeubles (@sec-fl-immeubles-origines).
+Depuis 1957, les conseils des collectivités locales sont tour à tour élus, nommés ou dissous ; le budget communal, arrêté ou approuvé d'avance par l'État de 1957 à 2018, s'exécute sans approbation sous le code de 2018 (@tbl-fl-hist-chronologie).
 
-## Les institutions de l'indépendance, 1957-1975 {#sec-fl-hist-1957}
+| Réforme | Ce que la loi cherche | Avant → après | Mise en œuvre |
+|---|---|---|---|
+| [**1957 — la mise en place**](#r-fl-hist-1957-statut) | des « collectivités de droit public dotées de la personnalité civile et de l'autonomie financière et chargées de la gestion des intérêts municipaux » | décrets de 1945 à 1954 → communes à conseil élu, budget arrêté par deux ministres ; auprès du gouverneur, un conseil nommé | loi municipale publiée le [15 mars 1957]{.insecable} ; conseils de gouvernorat en août 1957 |
+| [**1975 — six lois du même jour**](#r-fl-hist-1975-communes) | la commune participe, « dans le cadre du plan national de développement », à la promotion de la localité | loi municipale de 1957 → loi organique des communes, loi organique du budget, fonds commun, caisse de prêts et de soutien, deux taxes sur l'activité | [22 mai 1975]{.insecable} pour la loi organique des communes ; [1^er^ janvier 1976]{.insecable} pour le budget, le fonds et la caisse |
+| [**2018 — le code des collectivités locales**](#r-fl-hist-2018-objet) | organiser les structures du pouvoir local en vue de réaliser la décentralisation et le développement global, équitable et durable dans le cadre de l'unité de l'État | conseils municipaux élus, délibérations sous approbation préalable → communes, régions et districts à conseils élus, libre administration, contrôle par le juge | par étapes : élections municipales du [6 mai 2018]{.insecable}, budgets communaux de 2019 ; aucune élection régionale |
+| [**2023-2025 — conseils municipaux dissous, nouveaux conseils**](#r-fl-hist-2023-dissolution) | le décret-loi de dissolution n'énonce aucun but ; selon la loi de 2025, les nouveaux conseils « œuvrent à la réalisation de l'inclusion économique et sociale globale et équitable » | communes, régions et districts du code → communes sans conseil, gérées par leur secrétaire général sous la supervision du gouverneur ; conseils locaux, régionaux et de districts | [14 mars 2023]{.insecable} ; élection des conseils locaux le [24 décembre 2023]{.insecable} ; [18 mars 2025]{.insecable} |
+| [**2026 — un décret-loi publié, non entré en vigueur**](#r-fl-hist-2026-objet) | au conseil municipal, fournir des services au citoyen et gérer les intérêts municipaux dans le cadre de l'unité de l'État | code de 2018, délibérations exécutoires sous le contrôle du juge → code abrogé ; délibérations sur le budget et les droits soumises à l'approbation du gouverneur | après la proclamation des résultats des prochaines élections municipales ; jusque-là, le décret-loi de 2023 reste applicable |
 
-### La loi municipale de 1957 {#sec-fl-hist-loi-municipale}
+: Les collectivités locales : mise en place et quatre grandes réformes, de 1957 à 2026 ; entre guillemets, les mots des lois ; l'objet des textes de 2018 et de 2026, parus en arabe, est traduit {#tbl-fl-hist-chronologie}
 
-Le décret du 14 mars 1957 portant loi municipale, publié au *Journal officiel tunisien* du 15 mars 1957, définit les communes comme « des collectivités de droit public dotées de la personnalité civile et de l'autonomie financière et chargées de la gestion des intérêts municipaux » [@decret1957-loi-municipale, art. 1]. Elles sont créées ou supprimées par décret [@decret1957-loi-municipale, art. 3] ; leur conseil est élu au suffrage universel direct [@decret1957-loi-municipale, art. 6]. Un tableau annexé énumère 94 communes [@decret1957-loi-municipale, tableau annexé].
+- **Deux questions reviennent d'un texte à l'autre.** Les conseils sont-ils élus ou nommés ? Leurs décisions, notamment budgétaires, sont-elles approuvées d'avance ou contrôlées après coup ?
+- **Entre les réformes, deux étapes.** Le conseil régional de 1989 (@sec-fl-hist-modifications) ; les dissolutions de 2011 (@sec-fl-hist-2011).
+- **Les finances suivent.** En 1975, le budget (@sec-fl-budg-1975), le fonds commun et la caisse de prêts (@sec-fl-transferts-1975), deux taxes sur l'activité (@sec-fl-activite-code) ; en 1997, le code de la fiscalité locale (@sec-fl-code-1997) ; en 2018, le budget (@sec-fl-budg-ccl) et le pouvoir de fixer les droits (@sec-fl-ccl-2018).
+- **Aucune commune n'a de conseil élu depuis le 14 mars 2023.** L'état du droit est au chapitre des compétences (@sec-fl-comp-depuis-2023).
 
-Le budget communal est déjà soumis à une tutelle *a priori*. Le président le propose, le conseil le vote, mais il est « arrêté » conjointement par les ministres de l'Intérieur et des Finances, qui peuvent rejeter ou réduire les dépenses sans pouvoir les augmenter, et inscrire d'office les dépenses obligatoires [@decret1957-loi-municipale, art. 107, 111 et 112]. Un budget voté en déséquilibre est renvoyé en seconde délibération, puis arrêté par les deux ministres ; un déficit d'exécution d'au moins 20 % des ressources ordinaires oblige la commune à des mesures de redressement, que les ministres arrêtent à défaut, sans pouvoir créer d'impositions nouvelles [@decret1957-loi-municipale, art. 108-109]. Le président est seul ordonnateur, un comptable seul chargé des encaissements et des paiements [@decret1957-loi-municipale, art. 114-115].
+<!-- TODO (rédacteur) : frise des réformes et des étapes, de 1957 à 2026 (1957, 1959, 1963, 1975, 1989, 1997, 2011, 2014, 2018, 2022, 2023, 2025, 2026). -->
 
-Les ressources de la commune sont des taxes locales spéciales, une quote-part des « divers fonds communs institués par la réglementation en vigueur », les revenus de son patrimoine et de ses services payants, et éventuellement des subventions de l'État [@decret1957-loi-municipale, art. 106]. Le texte distingue un budget ordinaire, de recettes et de dépenses permanentes, et un budget extraordinaire, pour les dépenses de premier établissement couvertes par l'excédent ordinaire ou par des recettes temporaires [@decret1957-loi-municipale, art. 104].
+:::: {.chronologie-repliable titre="Dates d'application des textes des collectivités locales : la règle générale et les clauses propres, 1957-2026"}
 
-### Les conseils de gouvernorat {#sec-fl-hist-conseils-gouvernorat}
+| Date d'effet | Texte et article | Ce que le texte dit de sa date, ou le calcul |
+|---------|---------------|---------------------------|
+| []{#r-fl-hist-dates-1956}règle générale, avant 1993 | décret du 13 septembre 1956 [@decret-1956-09-13-publication] | un texte sans clause d'effet devient exécutoire un jour franc après sa publication au *Journal officiel* |
+| []{#r-fl-hist-dates-1993}règle générale, depuis 1993 | loi n° 93-64 [@loi93-64, art. 2] | un texte sans clause d'effet devient exécutoire cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis, jour du dépôt non compté |
+| []{#r-fl-hist-dates-1957}publication du [15 mars 1957]{.insecable} | décret du 14 mars 1957 portant loi municipale [@decret1957-loi-municipale, p. 296-305] | la clause finale de la loi municipale n'est pas établie ici : seule la date de publication est donnée |
+| []{#r-fl-hist-dates-1975}[22 mai 1975]{.insecable} | loi n° 75-33 du 14 mai 1975 [@loi75-33, p. 1056-1065] | sans clause : ni les deux articles de la loi, ni la loi organique, qui s'achève à l'article 151, ne fixent de date ; publiée le 20 mai 1975, la loi est exécutoire un jour franc après. Un rectificatif d'août 1975 corrige des mots, sans date d'effet |
+| []{#r-fl-hist-dates-1976}[1^er^ janvier 1976]{.insecable} | loi n° 75-35 du 14 mai 1975 [@loi75-35, art. 28] | clause propre ; les dates des cinq autres lois du même jour sont dans les chapitres qui les exposent |
+| []{#r-fl-hist-dates-2011}[10 décembre 2011]{.insecable} | loi constituante n° 2011-6 du 16 décembre 2011 [@loi-constituante2011-6, art. 28, p. 3115] | clause propre : la loi entre en vigueur dès son adoption par l'Assemblée nationale constituante, qui a lieu le 10 décembre 2011 selon la note des travaux (p. 3111) ; elle est signée le 16 décembre et publiée les 20 et 23 décembre 2011 |
+| []{#r-fl-hist-dates-2018}après les élections de chaque catégorie de collectivités | code des collectivités locales [@loi-org-2018-29-ccl, art. 383, p. 1759] | clause propre : voir [le registre du code](#r-fl-hist-2018-vigueur) |
+| []{#r-fl-hist-dates-2023}[14 mars 2023]{.insecable} | décrets-lois n° 2023-9 et n° 2023-10 du 8 mars 2023 [@decretloi2023-9 ; @decretloi2023-10] | sans clause : le *Journal officiel* du 9 mars 2023 est déposé le même jour, et les décrets-lois sont exécutoires cinq jours plus tard |
+| []{#r-fl-hist-dates-2025}[18 mars 2025]{.insecable} | loi organique n° 2025-4 du 12 mars 2025 [@loi-org2025-4] | sans clause : le *Journal officiel* est déposé le 13 mars 2025, et la loi est exécutoire cinq jours plus tard |
+| []{#r-fl-hist-dates-2026}après les prochaines élections municipales | décret-loi n° 2026-4 du 30 septembre 2026 [@decretloi2026-4, art. 136, p. 2074] | clause propre : entrée en vigueur dès la proclamation des résultats définitifs des premières élections municipales organisées après sa publication |
 
-La loi n° 57-12 du 17 août 1957 crée un conseil de gouvernorat auprès de chaque gouverneur [@loi57-12, art. 1]. Il est présidé par le gouverneur et composé de membres nommés par arrêté du secrétaire d'État à l'Intérieur, pour trois ans [@loi57-12, art. 2-3]. La région est dotée de la personnalité civile et de l'autonomie financière ; le gouverneur en ordonnance le budget, que le secrétaire d'État à l'Intérieur approuve [@loi57-12, art. 16 et 18]. Ses ressources sont des taxes régionales spéciales, une quote-part des fonds communs, les revenus de son patrimoine et des subventions ; l'État recouvre les taxes régionales et en retient 5 % du produit pour sa rémunération [@loi57-12, art. 19 et 23].
+: Dates d'application des textes des collectivités locales {#tbl-fl-hist-dates}
 
-La loi n° 63-54 du 30 décembre 1963 la remplace et l'abroge [@loi63-54, art. 39]. Le conseil de gouvernorat devient « une collectivité publique, dotée de la personnalité civile et de l'autonomie financière », qui gère les intérêts régionaux [@loi63-54, art. 1]. Il n'a toujours pas de membres élus comme tels : il réunit, sous la présidence du gouverneur, les membres du comité régional de coordination du parti, un représentant de chaque organisation nationale et les présidents des syndicats de communes [@loi63-54, art. 2]. Le gouverneur établit le budget, qui n'est exécutoire qu'après approbation du secrétaire d'État à l'Intérieur, autorité de tutelle [@loi63-54, art. 12 et 31]. Les recettes ordinaires comprennent la taxe sur la valeur locative, la taxe d'entretien et d'assainissement, des taxes sur les débits de boissons, les véhicules et les spectacles, et des quotes-parts des fonds communs des collectivités locales ; leur taux et leur assiette sont fixés par décret [@loi63-54, art. 15-16].
+Les pages sont celles de l'édition française du *Journal officiel*, sauf pour les textes parus en arabe seulement, cités dans l'édition arabe : le code de 2018, la Constitution de 2022, les décrets-lois et les décrets de 2023, le décret-loi de 2026, la loi constituante de 2011 et deux décrets de novembre 2011.
 
-### La Constitution de 1959 {#sec-fl-hist-1959}
+::::
 
-La Constitution promulguée le 1er juin 1959 consacre aux collectivités locales un chapitre d'un seul article : « les conseils municipaux et les conseils régionaux gèrent les affaires locales dans les conditions prévues par la loi » [@constitution1959, ch. VIII]. Devenu l'article 71, cet article est récrit par la loi constitutionnelle n° 2002-51 du 1er juin 2002, qui y ajoute « les structures auxquelles la loi confère la qualité de collectivité locale » [@loiconst2002-51, art. 71 nouveau]. Ni l'une ni l'autre rédaction ne dresse de liste de compétences ni ne pose de principe d'autonomie.
+## La mise en place, 1957-1963 {#sec-fl-hist-1957}
 
-## Les lois de 1975 et leurs réformes {#sec-fl-hist-1975}
+En 1957, deux textes instituent la commune, à conseil élu, et le conseil de gouvernorat, à membres nommés.
 
-### Les lois du 14 mai 1975 {#sec-fl-hist-lois-1975}
+### Ce que la loi municipale remplace {#sec-fl-hist-avant-1956}
 
-Six lois du 14 mai 1975, publiées au même *Journal officiel* du 20 mai 1975, refondent ensemble l'organisation et les finances locales :
+Les textes beylicaux et ceux du protectorat ne sont connus ici que par les visas et les abrogations des textes postérieurs : [la loi municipale de 1957](#r-fl-hist-avant-municipalites) et [la loi de 1957 sur les conseils de gouvernorat](#r-fl-hist-avant-caidats) visent des décrets de 1922 à 1954, et [la loi de 1997](#r-fl-hist-avant-taxes) qui promulgue le code de la fiscalité locale abroge les décrets qui avaient institué, de 1902 à 1948, les taxes locales sur les immeubles (@sec-fl-immeubles-origines).
 
-- la loi n° 75-33 promulgue la loi organique des communes, qui abroge la loi municipale de 1957 [@loi75-33, art. 2 de la loi] ;
-- la loi n° 75-34 institue une taxe hôtelière au profit des communes et des conseils de gouvernorat, et la loi n° 75-39 une taxe sur les établissements à caractère industriel, professionnel ou commercial, toutes deux reprises en 1997 par le code de la fiscalité locale (@sec-fl-activite) ;
-- la loi n° 75-35 porte loi organique du budget des collectivités publiques locales (@sec-fl-budg-1975) [@loi75-35] ;
-- la loi n° 75-36 est relative au fonds commun des collectivités locales [@loi75-36] ;
-- la loi n° 75-37 transforme la caisse des prêts aux communes en une caisse des prêts et de soutien des collectivités locales [@loi75-37, art. 1] ;
+:::: {.chronologie-repliable titre="Textes antérieurs à 1957 visés ou abrogés par les lois de 1957 et de 1997 : décrets de 1922 à 1954"}
+
+| Texte antérieur | Objet | Texte qui le vise ou l'abroge |
+|------------------|---------------|------------------|
+| []{#r-fl-hist-avant-municipalites}décret du [15 septembre 1945]{.insecable} ; décret du [20 décembre 1952]{.insecable} ; tous deux modifiés le [4 mars 1954]{.insecable} | élection du conseil municipal de Tunis ; organisation et fonctionnement des municipalités | visés et abrogés par la loi municipale de 1957 [@decret1957-loi-municipale, visas et art. 117] |
+| []{#r-fl-hist-avant-caidats}décrets du [13 juillet 1922]{.insecable} et du [20 décembre 1952]{.insecable} ; décret du [8 novembre 1945]{.insecable} | conseils de caïdat ; organisation des finances locales | visés par la loi n° 57-12 [@loi57-12, visas] |
+| []{#r-fl-hist-avant-taxes}décrets de 1902 à 1948 | taxes locales sur les immeubles | abrogés par la loi n° 97-11 du 3 février 1997 [@loi97-11] ; leur liste est au chapitre des impôts sur les immeubles (@sec-fl-immeubles-origines) |
+
+: Les textes antérieurs à 1957 que visent ou abrogent les lois de 1957 et de 1997 {#tbl-fl-hist-avant-1957}
+
+::::
+
+### La commune de 1957 {#sec-fl-hist-loi-municipale}
+
+La commune de 1957 est une collectivité à conseil élu, dont le budget est arrêté par deux ministres. [Le décret du 14 mars 1957 portant loi municipale](#r-fl-hist-1957-statut) définit les communes comme « des collectivités de droit public dotées de la personnalité civile et de l'autonomie financière et chargées de la gestion des intérêts municipaux ».
+
+- **Statut.** Les communes sont créées ou supprimées par décret ; leur conseil est élu au suffrage universel direct. Un tableau annexé en énumère 94 (@tbl-fl-hist-communes).
+- **Budget.** Le conseil le vote, mais il est « arrêté » conjointement par les ministres de l'Intérieur et des Finances, qui peuvent réduire les dépenses sans pouvoir les augmenter : c'est [une tutelle *a priori*](#r-fl-hist-1957-tutelle).
+- **Ressources.** Des taxes locales spéciales, une quote-part des « divers fonds communs institués par la réglementation en vigueur », les revenus du patrimoine et des services payants, et éventuellement [des subventions de l'État](#r-fl-hist-1957-ressources).
+
+:::: {.chronologie-repliable titre="Loi municipale du 14 mars 1957 : statut, budget, tutelle et ressources, article par article"}
+
+| Objet | Article | Ce que dit le texte |
+|---------|------------|------------------------------|
+| []{#r-fl-hist-1957-statut}Statut de la commune | décret du 14 mars 1957 portant loi municipale [@decret1957-loi-municipale, art. 1, 3 et 6, et tableau annexé, p. 296 et 304-305] | définition de la commune (art. 1) ; création, délimitation et suppression par décret (art. 3) ; conseillers élus au suffrage universel direct (art. 6) ; le tableau annexé énumère 94 communes, avec le nombre de leurs conseillers et de leurs adjoints. Publié au *Journal officiel tunisien* du 15 mars 1957 |
+| []{#r-fl-hist-1957-budget}Budget ordinaire et extraordinaire | [@decret1957-loi-municipale, art. 104] | budget ordinaire : recettes et dépenses annuelles et permanentes ; budget extraordinaire : dépenses de construction et de premier établissement, couvertes par l'excédent ordinaire ou par des recettes temporaires |
+| []{#r-fl-hist-1957-ressources}Ressources | [@decret1957-loi-municipale, art. 106] | taxes locales spéciales ; quote-part de l'actif des « divers fonds communs institués par la réglementation en vigueur » ; revenus du patrimoine et des services publics payants ; éventuellement, subventions pour emprunts imputables aux fonds communs et subventions en capital de l'État |
+| []{#r-fl-hist-1957-tutelle}Vote et arrêt du budget | [@decret1957-loi-municipale, art. 107, 111 et 112] | budget proposé par le président, voté par le conseil, arrêté conjointement par les ministres de l'Intérieur et des Finances (art. 107) ; l'arrêté peut rejeter ou réduire les dépenses, non les augmenter (art. 111) ; inscription d'office des dépenses obligatoires (art. 112) |
+| []{#r-fl-hist-1957-desequilibre}Déséquilibre et redressement | [@decret1957-loi-municipale, art. 108-109] | un budget voté en déséquilibre est renvoyé en seconde délibération, puis arrêté par les deux ministres ; un déficit d'exécution d'au moins 20 % des ressources ordinaires oblige la commune à des mesures de redressement, que les ministres arrêtent à défaut, sans pouvoir créer d'impositions nouvelles |
+| []{#r-fl-hist-1957-ordonnateur}Ordonnateur et comptable | [@decret1957-loi-municipale, art. 114-115] | le président est seul ordonnateur ; un comptable est seul chargé des encaissements et des paiements |
+
+: La loi municipale du 14 mars 1957, par objet {#tbl-fl-hist-loi-municipale}
+
+::::
+
+### Les conseils de gouvernorat et la Constitution de 1959 {#sec-fl-hist-conseils-gouvernorat}
+
+Auprès de chaque gouverneur, la loi crée en 1957 un conseil nommé, qui devient une collectivité en 1963 ; la Constitution de 1959 consacre les deux niveaux en un article.
+
+- **1957.** [La loi n° 57-12 du 17 août 1957](#r-fl-hist-1957-gouvernorat) crée auprès de chaque gouverneur un conseil qu'il préside, dont les membres sont nommés pour trois ans. Le gouverneur ordonnance le budget de la région, que le secrétaire d'État à l'Intérieur approuve.
+- **1963.** [La loi n° 63-54 du 30 décembre 1963](#r-fl-hist-1963) fait du conseil de gouvernorat « une collectivité publique, dotée de la personnalité civile et de l'autonomie financière ». Ses membres siègent ès qualités sous la présidence du gouverneur, sans élection propre ; son budget reste soumis à l'approbation du secrétaire d'État à l'Intérieur.
+- []{#sec-fl-hist-1959}**1959, puis 2002.** [La Constitution du 1^er^ juin 1959](#r-fl-hist-1959) tient en un article : les conseils municipaux et les conseils régionaux gèrent les affaires locales dans les conditions prévues par la loi. [La révision de 2002](#r-fl-hist-2002) y ajoute « les structures auxquelles la loi confère la qualité de collectivité locale ». Aucune des deux rédactions ne dresse de liste de compétences ni ne pose de principe d'autonomie.
+
+:::: {.chronologie-repliable titre="Conseils de gouvernorat et Constitution de 1959 : lois n° 57-12 et 63-54, chapitre VIII, article 71 de 2002 — articles et pages"}
+
+| Date du texte | Portée | Texte et article | Ce que dit le texte |
+|---------|------|---------------|------------------------------------|
+| []{#r-fl-hist-1957-gouvernorat}[17 août 1957]{.insecable} | mise en place | loi n° 57-12, portant création de conseils de gouvernorat [@loi57-12, art. 1-3, 16 et 18, p. 80-82] | un conseil de gouvernorat auprès de chaque gouverneur (art. 1), présidé par lui et composé de membres nommés par arrêté du secrétaire d'État à l'Intérieur (art. 2), pour trois ans (art. 3) ; « chacune des Régions est dotée de l'autonomie financière et de la personnalité civile », et le gouverneur est ordonnateur de son budget (art. 16) ; budget approuvé par arrêté du secrétaire d'État à l'Intérieur (art. 18) |
+| []{#r-fl-hist-1957-gouvernorat-ressources}[17 août 1957]{.insecable} | mise en place | loi n° 57-12 [@loi57-12, art. 19 et 23] | ressources : taxes régionales spéciales, quote-part des fonds communs, revenus du patrimoine, subventions (art. 19) ; l'État recouvre les taxes régionales et retient 5 % de leur produit pour sa rémunération (art. 23) |
+| []{#r-fl-hist-1959}[1^er^ juin 1959]{.insecable} | étape | Constitution, chapitre VIII [@constitution1959, ch. VIII] | un article, le 59^e^ dans la numérotation de 1959, sur les conseils municipaux et les conseils régionaux ; édition arabe : « الجماعات المحلية » |
+| []{#r-fl-hist-1963}[30 décembre 1963]{.insecable} | étape | loi n° 63-54, relative aux conseils de gouvernorat [@loi63-54, art. 1, 2, 12, 31 et 39, p. 1873-1875] | « Le Conseil de Gouvernorat est une collectivité publique, dotée de la personnalité civile et de l'autonomie financière », qui gère les intérêts régionaux (art. 1) ; composition : gouverneur, comité régional de coordination du parti, représentants des organisations nationales, présidents des syndicats de communes (art. 2) ; budget établi par le gouverneur, exécutoire après approbation du secrétaire d'État à l'Intérieur (art. 12), autorité de tutelle (art. 31) ; abrogation de la loi n° 57-12 (art. 39) |
+| []{#r-fl-hist-1963-recettes}[30 décembre 1963]{.insecable} | étape | loi n° 63-54 [@loi63-54, art. 15-16] | recettes ordinaires : taxe sur la valeur locative, taxe d'entretien et d'assainissement, taxes sur les débits de boissons, les véhicules et les spectacles, quotes-parts des fonds communs des collectivités locales (art. 15) ; taux et assiette fixés par décret (art. 16) |
+| []{#r-fl-hist-2002}[1^er^ juin 2002]{.insecable} | ajustement | loi constitutionnelle n° 2002-51 [@loiconst2002-51, art. 71 nouveau, p. 1306] | l'article, devenu le 71^e^, est récrit : « Les conseils municipaux, les conseils régionaux et les structures auxquelles la loi confère la qualité de collectivité locale gèrent les affaires locales dans les conditions prévues par la loi » |
+
+: Les conseils de gouvernorat et la Constitution de 1959, texte par texte {#tbl-fl-hist-gouvernorat}
+
+::::
+
+## Les grandes réformes {#sec-fl-hist-reformes}
+
+Quatre réformes changent qui sont les collectivités, comment leurs conseils sont désignés ou qui contrôle leurs décisions ; deux étapes s'y intercalent, en 1989 et en 2011.
+
+### 1975 : six lois refondent l'organisation et les finances {#sec-fl-hist-lois-1975}
+
+[]{#sec-fl-hist-1975}Six lois du 14 mai 1975, publiées au même *Journal officiel* du 20 mai 1975, refondent ensemble la commune, son budget, le fonds commun, la caisse de prêts et deux taxes :
+
+- [la loi n° 75-33](#r-fl-hist-1975-communes) promulgue la loi organique des communes, qui abroge la loi municipale de 1957 ;
+- [la loi n° 75-34](#r-fl-hist-1975-taxes) institue une taxe hôtelière au profit des communes et des conseils de gouvernorat, et la loi n° 75-39 une taxe sur les établissements à caractère industriel, professionnel ou commercial, toutes deux reprises en 1997 par le code de la fiscalité locale (@sec-fl-activite) ;
+- [la loi n° 75-35](#r-fl-hist-1975-budget) porte loi organique du budget des collectivités publiques locales (@sec-fl-budg-1975) ;
+- [la loi n° 75-36](#r-fl-hist-1975-fonds) est relative au fonds commun des collectivités locales (@sec-fl-transferts-1975) ;
+- [la loi n° 75-37](#r-fl-hist-1975-caisse) transforme la caisse des prêts aux communes en une caisse des prêts et de soutien des collectivités locales (@sec-fl-cpscl) ;
 - la loi n° 75-38 allège la dette des communes et des conseils de gouvernorat envers cette caisse.
 
-La loi organique des communes définit la commune comme « une collectivité publique locale, dotée de la personnalité civile et de l'autonomie financière et chargée de la gestion des intérêts municipaux », et lui assigne de participer, « dans le cadre du plan national de développement », à la promotion de la localité [@loi75-33, art. 1]. Le conseil dissous est remplacé par une [délégation spéciale](#g-delegation-speciale) nommée par décret [@loi75-33, art. 13]. Les attributions du conseil et la tutelle étendue que la loi organise sont exposées au chapitre suivant (@sec-fl-comp-communes-1975). Le fonds commun et la caisse des prêts relèvent du chapitre des transferts de l'État.
+Trois traits de la loi organique des communes comptent pour la suite.
 
-### Les conseils régionaux de 1989 {#sec-fl-hist-1989}
+- **La commune et le plan.** La commune participe, « dans le cadre du plan national de développement », à la promotion de la localité.
+- **La dissolution.** Le conseil municipal ne peut être dissous que par un décret motivé ; une [délégation spéciale](#g-delegation-speciale) nommée par décret le remplace alors. Ce sont [les articles 12 et 13 de 1975](#r-fl-hist-1975-dissolution), devenus les articles 11 et 12 en 2006.
+- **La tutelle.** Les attributions du conseil et l'approbation préalable de ses délibérations sont exposées au chapitre des compétences (@sec-fl-comp-communes-1975).
 
-La loi organique n° 89-11 du 4 février 1989 remplace les conseils de gouvernorat par des conseils régionaux et abroge la loi de 1963 [@loi-org89-11, art. 59]. Le gouvernorat y est à la fois une circonscription administrative de l'État et une collectivité publique dotée de la personnalité morale et de l'autonomie financière, « gérée par un conseil régional et soumise à la tutelle du ministre de l'intérieur » [@loi-org89-11, art. 1]. Le conseil n'a pas d'élection propre : il réunit, sous la présidence du gouverneur, les députés du gouvernorat, les présidents des communes et ceux des conseils ruraux [@loi-org89-11, art. 6]. Le patrimoine des anciens conseils de gouvernorat passe au gouvernorat [@loi-org89-11, art. 57]. Le détail de ses attributions est au chapitre suivant (@sec-fl-comp-conseils-regionaux).
+:::: {.chronologie-repliable titre="Lois du 14 mai 1975 : les six lois, articles et pages"}
 
-### Les modifications jusqu'en 2011 {#sec-fl-hist-modifications}
+| Loi | Objet | Référence | Ce que dit le texte |
+|------|------------|------------|------------------------------|
+| []{#r-fl-hist-1975-communes}n° 75-33 | loi organique des communes | [@loi75-33, art. 2 de la loi et art. 1 de la loi organique, p. 1056] | la loi de promulgation abroge notamment le décret du 14 mars 1957 portant loi municipale (art. 2). Art. 1 de la loi organique : « La commune est une collectivité publique locale, dotée de la personnalité civile et de l'autonomie financière et chargée de la gestion des intérêts municipaux. Elle participe dans le cadre du plan national de développement à la promotion économique, sociale et culturelle de la localité. » Exécutoire le [22 mai 1975](#r-fl-hist-dates-1975) |
+| []{#r-fl-hist-1975-dissolution}n° 75-33 | dissolution et délégation spéciale | [@loi75-33, art. 12 et 13, p. 1056] | « Le Conseil Municipal ne peut être dissous que par un décret motivé » ; en cas d'urgence, suspension par arrêté motivé du ministre de l'Intérieur, deux mois au plus (art. 12). En cas de dissolution ou de démission de tous les membres, « une délégation spéciale en remplit les fonctions » ; elle est nommée par décret dans le mois qui suit, compte au moins six membres et a les attributions du conseil (art. 13). Aucune durée maximale. Articles renumérotés 11 et 12 [en 2006](#r-fl-hist-2006) |
+| []{#r-fl-hist-1975-taxes}n° 75-34 et n° 75-39 | taxe hôtelière ; taxe sur les établissements à caractère industriel, professionnel ou commercial | [@loi75-34, p. 1065 ; @loi75-39, p. 1069] | deux taxes au profit des communes et des conseils de gouvernorat ; voir le chapitre des impôts sur l'activité (@sec-fl-activite-code) |
+| []{#r-fl-hist-1975-budget}n° 75-35 | loi organique du budget des collectivités publiques locales | [@loi75-35, art. 28, p. 1065-1067] | deux titres, votés en équilibre ; approbation par le gouverneur ou par les ministres, selon un seuil de recettes (@tbl-fl-budg-seuils) ; effet au 1^er^ janvier 1976 (art. 28) |
+| []{#r-fl-hist-1975-fonds}n° 75-36 | fonds commun des collectivités locales | [@loi75-36, p. 1067-1068] | voir le chapitre des transferts (@sec-fl-transferts-1975) |
+| []{#r-fl-hist-1975-caisse}n° 75-37 | caisse des prêts et de soutien des collectivités locales | [@loi75-37, art. 1, p. 1068] | la caisse des prêts aux communes devient caisse des prêts et de soutien des collectivités locales (@sec-fl-cpscl) |
+| n° 75-38 | allègement de la dette des communes et des conseils de gouvernorat | même *Journal officiel* | seul l'intitulé de cette loi est connu ici |
 
-La loi organique des communes est modifiée à cinq reprises, comme le rappelle la dernière de ces lois (@tbl-fl-hist-modifs-communes) ; la loi organique du budget l'est en parallèle (@tbl-fl-budg-modifications).
+: Les six lois du 14 mai 1975, publiées au *Journal officiel* n° 34 du 20 mai 1975 {#tbl-fl-hist-lois-1975}
 
-| Texte | *Journal officiel* | Objet |
-|---|---|---|
-| Loi organique n° 85-43 du 25 avril 1985 | n° 34 du 30 avril 1985 | modification de la loi organique des communes |
-| Loi organique n° 91-24 du 30 avril 1991 | n° 30 du 3 mai 1991 | idem |
-| Loi organique n° 95-68 du 24 juillet 1995 | n° 59 du 25 juillet 1995 | modification et complément |
-| Loi organique n° 2006-48 du 17 juillet 2006 | n° 59 du 25 juillet 2006 | idem |
-| Loi organique n° 2008-57 du 4 août 2008 | n° 64 du 8 août 2008 | présidents de commune à plein temps au chef-lieu de gouvernorat, ou au-delà de seuils fixés par décret |
+::::
 
-: Les modifications de la loi organique des communes, de 1985 à 2008 {#tbl-fl-hist-modifs-communes}
+### De 1975 à 2011 : le conseil régional, et cinq retouches {#sec-fl-hist-modifications}
 
-Source : @loi-org2008-57, art. 1.
+[]{#sec-fl-hist-1989}En 1989, un conseil régional sans élection propre remplace le conseil de gouvernorat ; de 1985 à 2008, cinq lois organiques retouchent la loi organique des communes, dont l'approbation préalable des délibérations demeure (@tbl-fl-hist-modifs-communes).
 
-Seul l'objet des quatre premières lois est rappelé ici ; Dafflon et Gilbert tiennent celle de 2006 pour la refonte la plus importante [@dafflon-gilbert-2018, p. 35].
+- **1989 : le gouvernorat, circonscription et collectivité.** Selon [la loi organique n° 89-11](#r-fl-hist-1989), le gouvernorat est à la fois une circonscription administrative de l'État et une collectivité publique, « gérée par un conseil régional et soumise à la tutelle du ministre de l'intérieur ». Le gouverneur préside ce conseil, composé de députés et de présidents de communes et de conseils ruraux (@sec-fl-comp-conseils-regionaux).
+- **1985 : le gouverneur approuve.** Selon [la loi organique n° 85-43](#r-fl-hist-1985), le gouverneur approuve les délibérations, hors celles que la loi réserve aux ministres ; son silence pendant quinze jours vaut approbation.
+- **1995 et 2006 : la liste des matières approuvées.** [La loi de 1995](#r-fl-hist-1995) énumère neuf matières, le budget en tête ; [celle de 2006](#r-fl-hist-2006) en compte onze et renumérote la loi : cette liste passe de l'article 42 à l'article 25, la dissolution des articles 12 et 13 aux articles 11 et 12. Dafflon et Gilbert tiennent la loi de 2006 pour la refonte la plus importante [@dafflon-gilbert-2018, p. 35].
+- **1991 et 2008.** Seul l'intitulé de la loi organique n° 91-24 est connu ici ; [celle de 2008](#r-fl-hist-2008) met à plein temps les présidents de certaines communes.
 
-<!-- TODO (documentaliste) : lire les lois organiques n° 85-43, 91-24, 95-68 et 2006-48 (JORT n° 34 de 1985, n° 30 de 1991, n° 59 de 1995, n° 59 de 2006) pour dire ce qu'elles changent. -->
+La loi organique du budget est modifiée en parallèle (@tbl-fl-budg-modifications).
 
-## La décentralisation constitutionnelle, 2011-2022 {#sec-fl-hist-2011-2022}
+:::: {.chronologie-repliable titre="Loi organique des communes et conseils régionaux : textes, date par date, avec leur portée, 1985-2008"}
 
-### 2011 : dissolutions et délégations spéciales {#sec-fl-hist-2011}
+| Date du texte | Portée | Texte et article | Ce qui change |
+|---------|------|---------------|------------------------------------|
+| []{#r-fl-hist-1985}[25 avril 1985]{.insecable} | ajustement | loi organique n° 85-43 [@loi-org85-43, article unique, p. 642] | quatorze articles de la loi organique des communes remplacés. Art. 43 (nouveau) : les délibérations de l'article 42 « sont approuvées par le Gouverneur », sous réserve de l'article 24 de la loi n° 75-35 ; celles des « paragraphes 2 - 10 et 12 de l'article 42 » le sont par les ministres de l'Intérieur et des Finances. Art. 45 (nouveau) : sans décision du gouverneur dans les quinze jours du dépôt, la délibération « est considérée comme approuvée » ; en cas de refus, recours du conseil devant le ministre de l'Intérieur. Art. 46 (nouveau) : les autres délibérations sont exécutoires de plein droit quinze jours après leur dépôt au siège du gouvernorat. Art. 48 (nouveau) : président et adjoints élus parmi les membres du conseil ; le président de la commune de Tunis est désigné par décret parmi eux. L'autorité qui approuvait avant 1985 n'est pas établie ici |
+| []{#r-fl-hist-1989}[4 février 1989]{.insecable} | étape | loi organique n° 89-11, relative aux conseils régionaux [@loi-org89-11, art. 1, 6, 57 et 59, p. 218-221] | « Le gouvernorat est une circonscription territoriale administrative de l'État. Il est, en outre, une collectivité publique dotée de la personnalité morale et de l'autonomie financière, gérée par un conseil régional et soumise à la tutelle du ministre de l'intérieur » (art. 1) ; conseil régional : le gouverneur, président, les députés élus dans le gouvernorat, les présidents des communes et des conseils ruraux (art. 6) ; le patrimoine des conseils de gouvernorat passe au gouvernorat (art. 57) ; abrogation de la loi n° 63-54 (art. 59) |
+| [30 avril 1991]{.insecable} | — | loi organique n° 91-24, *Journal officiel* n° 30 du 3 mai 1991 | seul l'intitulé de cette loi est connu ici : elle modifie la loi organique des communes |
+| []{#r-fl-hist-1995}[24 juillet 1995]{.insecable} | ajustement | loi organique n° 95-68 [@loi-org95-68, art. 7, 13, 41 à 43, 48 et 49 nouveaux, p. 1563-1566] | trente-cinq articles remplacés. Art. 42 (nouveau) : ne deviennent exécutoires « qu'après leur approbation par l'autorité de tutelle » les délibérations sur neuf matières — le budget ; les aliénations et échanges d'immeubles ; les baux de plus de trois ans ; les transactions au-delà d'un montant fixé par décret ; la dénomination et le classement des rues ; l'intervention de la commune par exploitation directe ou participation financière ; les règlements généraux ; le jumelage et la coopération extérieure. Art. 43 (nouveau) : le gouverneur les approuve. Art. 41 (nouveau) : annulation par arrêté motivé du gouverneur. Art. 48 et 49 (nouveaux) : président et adjoints élus par le conseil au scrutin secret, à la majorité absolue ; président de la commune de Tunis désigné par décret. Art. 7 et 13 (nouveaux) : dissolution de plein droit en cas de fusion ou de scindement ; délégation spéciale nommée dans le mois, d'au moins six membres, sans durée maximale. La rédaction de l'article 42 antérieure à 1995 n'est pas établie ici |
+| []{#r-fl-hist-2006}[17 juillet 2006]{.insecable} | ajustement | loi organique n° 2006-48 [@loi-org2006-48, art. 3, 4 et 6, et art. 9, 38, 40 et 42 nouveaux, p. 1923-1930] | art. 42 (nouveau) : onze matières soumises à approbation au lieu de neuf — s'ajoutent le changement d'adresse de la commune et « les modalités et les projets de coopération intercommunale » — ; baux : plus de trois ans → plus de deux ans. Art. 38 (nouveau) : nullité de droit déclarée par le gouverneur dans les deux mois du dépôt. Art. 40 (nouveau) : annulation dans les quinze jours. Art. 9 (nouveau) : le conseil régional se substitue à la commune supprimée. Art. 4 : conseil municipal des enfants. Art. 6 : renumérotation générale — les articles 12 et 13 deviennent 11 et 12, l'article 42 devient l'article 25 |
+| []{#r-fl-hist-2008}[4 août 2008]{.insecable} | ajustement | loi organique n° 2008-57 [@loi-org2008-57, art. 1, p. 2413] | présidents de commune à plein temps au chef-lieu de gouvernorat, ou au-delà de seuils de recettes ou d'habitants fixés par décret ; l'article 1^er^ énumère les quatre lois organiques précédentes |
 
-Après la révolution, le décret n° 2011-383 du 8 avril 2011 dissout les conseils municipaux de plusieurs communes, parmi lesquelles Tunis, Sfax, Kairouan, Gabès et Kasserine ; il vise l'organisation provisoire des pouvoirs publics instituée par le décret-loi n° 2011-14 du 23 mars 2011 et un rapport du ministre de l'Intérieur sur « la situation actuelle des communes » [@decret2011-383]. Un décret du même jour nomme des délégations spéciales pour remplir les fonctions des conseils « pendant une durée maximale d'une année » [@decret2011-384, art. 1]. D'autres décrets de dissolution suivent jusqu'en 2012, et un décret du 10 août 2012 nomme des délégations spéciales pour l'ensemble des conseils régionaux [@decret2012-1122]. Le nombre total des conseils municipaux dissous n'est pas établi ici.
+: La loi organique des communes et les conseils régionaux, de 1985 à 2008 {#tbl-fl-hist-modifs-communes}
+
+Les lois de 1985 à 2008 sont datées de leur signature : leur clause d'effet n'est pas établie ici.
+
+<!-- TODO (documentaliste) : loi organique n° 91-24 (JORT n° 30 du 3 mai 1991, page à vérifier : 947 selon la base, 581-582 pour d'autres notices du fascicule) à lire ; loi organique n° 85-43, p. 643-644 à lire, et sens de « paragraphes 2 - 10 et 12 » à trancher sur l'édition arabe ; art. 42, 43, 45, 46 et 48 de 1975 dans leur rédaction d'origine à relever, pour l'avant → après de 1985 et de 1995 ; clauses d'effet des cinq lois ; loi organique n° 2011-1 du 3 janvier 2011 (composition des conseils régionaux, JORT n° 2 de 2011, p. 45) : sans clé, non reprise. Note : docs/notes/finances-locales-institutions-lectures-2026-10-10.md, § 6. -->
+
+::::
+
+### 2011 : conseils dissous, délégations spéciales nommées {#sec-fl-hist-2011}
+
+[]{#sec-fl-hist-2011-2022}En 2011, des décrets dissolvent des conseils municipaux, puis tous les conseils régionaux, et nomment à leur place des [délégations spéciales](#g-delegation-speciale) : la procédure est celle de la loi organique des communes de 1975, et le fondement de ce pouvoir change le 10 décembre 2011.
+
+- **Dix-huit décrets, du 8 avril au 28 novembre 2011.** Chacun dissout, par un tableau de communes classées par gouvernorat, de 3 à 36 conseils municipaux. La somme de ces tableaux est de 212 conseils : 35 en avril, 97 en juin, 7 en juillet, 32 en août, 19 en septembre, 14 en octobre, 8 en novembre (@tbl-fl-hist-dissolutions-2011). Une commune inscrite dans deux décrets y compterait deux fois, et le nombre de communes existant en 2011 n'est pas établi ici : ce total ne se rapporte à aucun effectif d'ensemble.
+- **Le fondement : la loi de 1975.** [Les dix-huit décrets](#r-fl-hist-2011-dissolutions) portent les mêmes cinq visas et aucun considérant. Ils visent les « articles 11 et 12 » de la loi organique des communes, c'est-à-dire [les articles 12 et 13 de 1975](#r-fl-hist-1975-dissolution), renumérotés en 2006, et [l'article 16 du décret-loi du 23 mars 2011](#r-fl-hist-2011-dl14), qui renvoie à la loi pour la gestion des affaires locales. Le seul motif énoncé est un rapport du ministre de l'Intérieur du 22 mars 2011 « portant exposé de la situation actuelle des communes du territoire tunisien », le même d'avril à novembre.
+- **Les conseils régionaux.** [Un décret du 24 novembre 2011](#r-fl-hist-2011-regionaux) dissout tous les conseils régionaux ; [un décret du 10 août 2012](#r-fl-hist-2012-regionaux) nomme des délégations spéciales à leur place.
+- **Des délégations nommées pour un an au plus.** Chaque décret de dissolution est suivi, au même numéro du *Journal officiel*, d'un décret qui nomme une délégation spéciale dans chacune des communes, « pendant une durée maximale d'une année, à partir de la date du présent décret ». La formule figure dans les dix décrets de nomination dont le dispositif est connu ici. Le texte qui fixe cette durée n'est pas identifié ici : ni l'article 13 de 1975, ni sa rédaction de 1995, ni le décret-loi du 23 mars 2011 ne bornent la durée d'une délégation.
+
+<!-- RECHERCHE r-fl-duree-delegation-speciale : texte qui fixe à un an la durée maximale des délégations spéciales nommées en 2011 (voir docs/recherches.yml) -->
+
+**10 décembre 2011 : un pouvoir du chef du gouvernement.** [La loi constituante n° 2011-6](#r-fl-hist-2011-constituante), portant organisation provisoire des pouvoirs publics, entre en vigueur dès son adoption par l'Assemblée nationale constituante, le 10 décembre 2011. Selon son article 21, les conseils et les délégations exercent leurs fonctions selon la loi, jusqu'à sa révision par l'Assemblée ; le chef du gouvernement, après consultation du président de la République, du président de l'Assemblée et des députés de la région, peut dissoudre les conseils ou les délégations en place, nommer de nouvelles délégations ou proroger celles qui existent, chaque fois que nécessaire. Ce pouvoir s'ajoute à la procédure de la loi organique des communes : décret motivé, délégation nommée dans le mois.
+
+**2012.** Les décrets de 2012 dont le texte est connu ici se fondent sur cet article 21 et ne visent plus la loi organique des communes. [Deux décrets du 19 mai 2012](#r-fl-hist-2012-dissolutions) dissolvent cinq conseils municipaux ; [un décret du 8 juin 2012](#r-fl-hist-2012-prorogation) proroge de trois mois, à partir du 8 avril 2012, la durée de délégations nommées un an plus tôt. Le nombre des conseils dissous en 2012 et celui des délégations prorogées ne sont pas établis ici.
 
 <!-- RECHERCHE r-fl-dissolutions-2011 : liste et nombre des conseils municipaux dissous et des délégations spéciales nommées en 2011-2012 (voir docs/recherches.yml) -->
 
-### La Constitution de 2014 {#sec-fl-hist-2014}
+:::: {.chronologie-repliable titre="Dissolutions de conseils municipaux et délégations spéciales : les dix-huit décrets de 2011, avec le nombre de conseils dissous, la page et le décret de nomination ; conseils régionaux, loi constituante et décrets de 2012"}
 
-La Constitution, adoptée par l'Assemblée nationale constituante le 26 janvier 2014 et scellée le 27 janvier, est publiée, selon la décision qui l'ordonne, dans un numéro spécial du *Journal officiel* du 10 février 2014 [@decision-anc-2014]. Ce numéro spécial n'est pas identifié ici ; le chapitre VII, « Le pouvoir local », est cité d'après la traduction que reproduisent Dafflon et Gilbert [@dafflon-gilbert-2018, p. 267-286].
+| Décret de dissolution | Date | *Journal officiel* | Page | Conseils dissous | Décret de nomination |
+|------------|------------|---------------|------|------|------------------|
+| []{#r-fl-hist-2011-dissolutions}n° 2011-383 [@decret2011-383, p. 468-469] | [8 avril 2011]{.insecable} | [n° 26 du 15 avril 2011](https://www.pist.tn/jort/2011/2011F/Jo0262011.pdf) | 468-469 | 22 | n° 2011-384, p. 469 [@decret2011-384, art. 1] : un an au plus |
+| n° 2011-394 | [12 avril 2011]{.insecable} | [n° 27 du 19 avril 2011](https://www.pist.tn/jort/2011/2011F/Jo0272011.pdf) | 494 | 13 | n° 2011-395 |
+| n° 2011-659 | [2 juin 2011]{.insecable} | [n° 41 du 7 juin 2011](https://www.pist.tn/jort/2011/2011F/Jo0412011.pdf) | 846-847 | 18 | n° 2011-660, p. 847 : un an au plus |
+| n° 2011-661 | [2 juin 2011]{.insecable} | [n° 41 du 7 juin 2011](https://www.pist.tn/jort/2011/2011F/Jo0412011.pdf) | 851-852 | 26 | n° 2011-662, p. 852 : un an au plus |
+| n° 2011-777 | [25 juin 2011]{.insecable} | [n° 47 du 28 juin 2011](https://www.pist.tn/jort/2011/2011F/Jo0472011.pdf) | 1063 | 36 | n° 2011-778 |
+| n° 2011-779 | [25 juin 2011]{.insecable} | [n° 47 du 28 juin 2011](https://www.pist.tn/jort/2011/2011F/Jo0472011.pdf) | 1069-1070 | 9 | n° 2011-780, p. 1070 : un an au plus |
+| n° 2011-830 | [30 juin 2011]{.insecable} | [n° 49 du 5 juillet 2011](https://www.pist.tn/jort/2011/2011F/Jo0492011.pdf) | 1132 | 8 | n° 2011-831 |
+| n° 2011-860 | [7 juillet 2011]{.insecable} | [n° 50 du 8 juillet 2011](https://www.pist.tn/jort/2011/2011F/Jo0502011.pdf) | 1172 | 7 | n° 2011-861, p. 1172 |
+| n° 2011-1091 | [6 août 2011]{.insecable} | [n° 59 du 9 août 2011](https://www.pist.tn/jort/2011/2011F/Jo0592011.pdf) | 1447-1448 | 13 | n° 2011-1092, p. 1448 : un an au plus |
+| n° 2011-1137 | [10 août 2011]{.insecable} | [n° 61 du 16 août 2011](https://www.pist.tn/jort/2011/2011F/Jo0612011.pdf) | 1548 | 8 | n° 2011-1138 |
+| n° 2011-1183 | [23 août 2011]{.insecable} | [n° 64 du 26 août 2011](https://www.pist.tn/jort/2011/2011F/Jo0642011.pdf) | 1623 | 3 | n° 2011-1184, p. 1623 : un an au plus |
+| n° 2011-1207 | [27 août 2011]{.insecable} | [n° 67 du 6 septembre 2011](https://www.pist.tn/jort/2011/2011F/Jo0672011.pdf) | 1710 | 8 | n° 2011-1208 |
+| n° 2011-2407 | [21 septembre 2011]{.insecable} | [n° 74 du 30 septembre 2011](https://www.pist.tn/jort/2011/2011F/Jo0742011.pdf) | 1988-1989 | 8 | n° 2011-2408, p. 1989 : un an au plus |
+| n° 2011-2409 | [23 septembre 2011]{.insecable} | [n° 74 du 30 septembre 2011](https://www.pist.tn/jort/2011/2011F/Jo0742011.pdf) | 1990-1991 | 11 | n° 2011-2410, p. 1991 : un an au plus |
+| n° 2011-2907 | [10 octobre 2011]{.insecable} | [n° 78 du 14 octobre 2011](https://www.pist.tn/jort/2011/2011F/Jo0782011.pdf) | 2164 | 8 | n° 2011-2908, p. 2164 |
+| n° 2011-3292 | [27 octobre 2011]{.insecable} | [n° 84 du 4 novembre 2011](https://www.pist.tn/jort/2011/2011F/Jo0842011.pdf) | 2444 | 6 | n° 2011-3293, p. 2444 |
+| n° 2011-3388 | [1^er^ novembre 2011]{.insecable} | [n° 86 du 11 novembre 2011](https://www.pist.tn/jort/2011/2011F/Jo0862011.pdf) | 2501-2502 | 3 | n° 2011-3389, p. 2502 : un an au plus |
+| n° 2011-4253 | [28 novembre 2011]{.insecable} | n° 92 du 2 décembre 2011, édition arabe | 2943 | 5 | n° 2011-4254, p. 2943-2944 : un an au plus |
+| **Total** | | | | **212** | dix-huit décrets |
+
+: Les dix-huit décrets de dissolution de conseils municipaux de 2011 et leurs décrets de nomination de délégations spéciales {#tbl-fl-hist-dissolutions-2011}
+
+Le nombre de conseils est celui des lignes du tableau de l'article 1^er^ de chaque décret ; une ligne qui joint deux noms compte pour une commune. « Un an au plus » : le décret de nomination nomme les délégations « pendant une durée maximale d'une année » ; pour les huit autres, le dispositif n'est pas connu ici. Le *Journal officiel* n° 59 imprime « Décret n° 2012-1091 du 6 août 2011 » et « n° 2012-1092 » : le millésime est 2011. Le décret n° 2011-3389 vise le décret n° 2011-3388 à la date du 31 octobre 2011 ; celui-ci est daté du 1^er^ novembre.
+
+| Date | Portée | Texte et article | Ce que dit le texte |
+|---------|------|---------------|------------------------------------|
+| []{#r-fl-hist-2011-dl14}[23 mars 2011]{.insecable} | fondement visé | décret-loi n° 2011-14, portant organisation provisoire des pouvoirs publics [@decretloi2011-14, art. 16, p. 365] | « Les conseils municipaux, les conseils régionaux et les structures auxquelles la loi confère la qualité de collectivité locale gèrent les affaires locales dans les conditions prévues par la loi » : aucun pouvoir de dissolution propre, aucune durée |
+| []{#r-fl-hist-2011-regionaux}[24 novembre 2011]{.insecable} | étape | décret n° 2011-4252, relatif à la dissolution de tous les conseils régionaux [@decret2011-4252, art. 1, p. 2942-2943] | intitulé arabe : « يتعلق بحل كافة المجالس الجهوية ». Visas : loi organique n° 89-11, notamment son article 9 ; décret-loi n° 2011-14 ; rapport du ministre de l'Intérieur du 14 septembre 2011 exposant les motifs de la dissolution. Art. 1 : les conseils régionaux en place sur tout le territoire de la République sont dissous |
+| []{#r-fl-hist-2011-constituante}[10 décembre 2011]{.insecable} | étape — fondement nouveau | loi constituante n° 2011-6 du 16 décembre 2011 [@loi-constituante2011-6, art. 21, 27 et 28, p. 3114-3115] | art. 21, sous l'intitulé « الجماعات المحلية » : les conseils municipaux, les délégations spéciales, les conseils régionaux et les structures auxquelles la loi donne la qualité de collectivité locale exercent leurs fonctions selon la loi, jusqu'à sa révision par l'Assemblée ; le chef du gouvernement, après consultation du président de la République, du président de l'Assemblée et des députés de la région, peut dissoudre les conseils ou les délégations en place, nommer de nouvelles délégations ou proroger celles qui existent, chaque fois que nécessaire (« كلما دعت الحاجة إلى ذلك »). Art. 27 : fin de l'application du décret-loi n° 2011-14. Art. 28 : [entrée en vigueur dès l'adoption](#r-fl-hist-dates-2011) |
+| []{#r-fl-hist-2012-dissolutions}[19 mai 2012]{.insecable} | étape | décrets n° 2012-385 et n° 2012-387, portant dissolution de certains conseils municipaux [@decret2012-385, p. 1197] | décret du chef du gouvernement, au visa de l'article 21 de la loi constituante et du rapport du 22 mars 2011, « après consultation du Président de la République » et « du président de l'assemblée nationale constituante et les députés des régions concernées » : deux conseils dissous par le premier, trois par le second (p. 1198). Le décret n° 2012-386 nomme les délégations du premier, encore « pendant une durée maximale d'une année » |
+| []{#r-fl-hist-2012-prorogation}[8 juin 2012]{.insecable} | étape | décret n° 2012-578, portant prorogation de la durée de nomination de délégations spéciales [@decret2012-578, p. 1420-1421] | même fondement : « Est prorogé de trois mois le délai de nomination de délégations spéciales communales », à partir du 8 avril 2012 pour les premières |
+| []{#r-fl-hist-2012-regionaux}[10 août 2012]{.insecable} | étape | décret n° 2012-1122 [@decret2012-1122, p. 1900-1901] | seul l'intitulé de ce décret est connu ici : il porte nomination des délégations spéciales de l'ensemble des conseils régionaux |
+
+: Les dissolutions de 2011 et de 2012 : fondements, conseils régionaux et prorogation {#tbl-fl-hist-2011-fondements}
+
+<!-- TODO (documentaliste) : 2012 — décrets n° 2012-910, 2012-1122, 2012-2007, 2012-2536 à 2012-2538, 2012-2771, 2012-2885, 2012-2895, 2012-2943 à lire, total de l'année à établir ; doublons de communes entre les dix-huit décrets de 2011 et nombre de communes en 2011 ; dispositif des huit décrets de nomination restants (n° 2011-395, 778, 831, 861, 1138, 1208, 2908, 3293) ; art. 161 du code électoral ; décrets de 2012 à 2017 pour ce qui relie les prorogations aux élections de 2018 : rien n'en est dit au chapitre. Le compte « dix décrets de nomination » suit l'énumération du § 1.3 de la note du 10 octobre 2026 (n° 2011-384 et neuf autres), dont le résumé dit « neuf » : à trancher. -->
+
+::::
+
+### 2018 : le code des collectivités locales {#sec-fl-hist-code-2018}
+
+Le code des collectivités locales fait des communes, des régions et des [districts](#g-district) des collectivités à conseils élus, sous le contrôle du juge. [La loi organique n° 2018-29 du 9 mai 2018](#r-fl-hist-2018-objet) le promulgue ; il paraît au *Journal officiel* du 15 mai 2018 sous le titre « مجلة الجماعات المحلية ».
+
+- **Ce que le code cherche.** Il organise les structures du pouvoir local (« هياكل السلطة المحلية ») en vue de réaliser la décentralisation et le développement global, équitable et durable dans le cadre de l'unité de l'État.
+- **Trois catégories, libre administration, conseils élus.** Ce sont [les catégories et les principes](#r-fl-hist-2018-principes) de la Constitution de 2014.
+- **Ce que le code change ailleurs.** Les compétences (@sec-fl-comp-code-2018), le budget (@sec-fl-budg-ccl), le pouvoir de fixer les droits (@sec-fl-ccl-2018).
+
+Le code n'abroge expressément ni la loi organique des communes ni celle du budget.
+
+:::: {.chronologie-repliable titre="Code des collectivités locales de 2018 : principes, catégories de collectivités et entrée en vigueur (art. 1, 2, 4, 5, 383 et 384), édition arabe ; élections de 2018 et Haute instance des finances locales"}
+
+| Date | Portée | Texte et article | Ce que dit le texte |
+|---------|------|---------------|------------------------------------|
+| []{#r-fl-hist-2017-convocation}[19 décembre 2017]{.insecable} | étape | décret présidentiel n° 2017-254 [@decret-pres2017-254, art. 1, p. 4453] | les électeurs sont convoqués aux élections municipales « le dimanche 6 mai 2018 » |
+| []{#r-fl-hist-2018-objet}[9 mai 2018]{.insecable} | grande réforme | loi organique n° 2018-29, relative au code des collectivités locales [@loi-org-2018-29-ccl, art. 1, p. 1710] | objet : les règles d'organisation des structures du pouvoir local, de leurs compétences et de leur fonctionnement, « بما يحقّق اللامركزية والتنمية الشاملة والعادلة والمستدامة في إطار وحدة الدولة ». *Journal officiel* n° 39 du 15 mai 2018, édition arabe, p. 1710-1767 |
+| []{#r-fl-hist-2018-principes}[9 mai 2018]{.insecable} | grande réforme | code des collectivités locales [@loi-org-2018-29-ccl, art. 2, 4 et 5, et annexes, p. 1710 et 1761-1767] | les collectivités locales, personnes publiques dotées de la personnalité juridique et de l'autonomie administrative et financière, sont les communes, les régions et les districts, chaque catégorie couvrant tout le territoire (art. 2) ; libre administration, « مبدأ التدبير الحر » (art. 4) ; conseils élus (art. 5) ; annexe A : liste des communes ; annexe B : vingt-quatre régions |
+| []{#r-fl-hist-2018-vigueur}après les élections de chaque catégorie | grande réforme — entrée en vigueur | code des collectivités locales [@loi-org-2018-29-ccl, art. 383 et 384, p. 1759] | les dispositions du code s'appliquent à chaque catégorie de collectivités après la proclamation des résultats définitifs de ses élections, et celles qui portent sur la préparation et l'adoption du budget au 1^er^ janvier de l'année qui suit (art. 383) ; jusqu'à l'installation de conseils régionaux élus, la région agit par les conseils régionaux de la loi organique n° 89-11 (art. 384). Aucun article des dispositions transitoires (art. 383 à 400) n'abroge expressément la loi n° 75-33 ni la loi n° 75-35 |
+| []{#r-fl-hist-2018-resultats}à partir du [17 mai 2018]{.insecable} | étape | décisions de l'Instance supérieure indépendante pour les élections [@isie2018-resultats-municipales] | proclamation des résultats définitifs des élections municipales, commune par commune |
+| []{#r-fl-hist-2019-instance}[10 avril 2019]{.insecable} | étape | décret gouvernemental n° 2019-351 [@decret-gouv2019-351, p. 1043] | désignation des membres de la Haute instance des finances locales, que l'édition française nomme « instance supérieure des finances locales » : une présidente, juge financier, et sept membres |
+| []{#r-fl-hist-2020-instance}[16 janvier 2020]{.insecable} | étape | décret gouvernemental n° 2020-31 [@decret-gouv2020-31, p. 301-302] | indemnités et avantages du président et des membres de la Haute instance, au visa des articles 63 à 65 du code |
+
+: Le code des collectivités locales de 2018 : principes, entrée en vigueur et étapes de sa mise en œuvre {#tbl-fl-hist-code-2018}
+
+::::
+
+#### Le fondement : la Constitution de 2014 {#sec-fl-hist-2014}
+
+Le chapitre VII de la Constitution de 2014, « Le pouvoir local », fonde ce pouvoir sur la [décentralisation](#g-decentralisation). Adoptée le 26 janvier 2014, la Constitution est publiée, selon [la décision qui l'ordonne](#r-fl-hist-2014-publication), dans un numéro spécial du *Journal officiel* du 10 février 2014. Ce numéro spécial n'est pas identifié ici ; le chapitre VII est cité d'après la traduction que reproduisent Dafflon et Gilbert [@dafflon-gilbert-2018, p. 267-286].
 
 <!-- RECHERCHE r-fl-constitution-2014-numero-special : numéro spécial du JORT du 10 février 2014 publiant la Constitution, et sa traduction française (voir docs/recherches.yml) -->
 
-Le chapitre fonde le pouvoir local sur la décentralisation, exercée par des communes, des régions et des districts couvrant chacun tout le territoire [@constitution2014, art. 131]. Les collectivités ont la personnalité juridique et l'autonomie administrative et financière, et gèrent les intérêts locaux selon le principe de libre administration [@constitution2014, art. 132]. Leurs conseils sont élus, au suffrage universel direct pour les communes et les régions, par les membres de ces conseils pour les districts [@constitution2014, art. 133]. Elles ont des compétences propres, des compétences partagées avec l'autorité centrale et des compétences déléguées par elle, réparties selon le principe de subsidiarité [@constitution2014, art. 134] ; des ressources propres et des ressources déléguées par l'autorité centrale, adaptées à leurs attributions, tout transfert de compétence s'accompagnant des ressources correspondantes [@constitution2014, art. 135]. L'autorité centrale leur alloue des ressources complémentaires selon la solidarité et la péréquation [@constitution2014, art. 136]. Elles ne sont soumises, pour la légalité de leurs actes, qu'à un contrôle *a posteriori* [@constitution2014, art. 138]. Un Haut Conseil des collectivités locales les représente [@constitution2014, art. 141].
+- **Collectivités et libre administration.** Des communes, des régions et des districts couvrent chacun tout le territoire ; ils ont la personnalité juridique et l'autonomie administrative et financière, et gèrent les intérêts locaux selon le principe de [libre administration](#r-fl-hist-2014-collectivites) (@sec-fl-libre-administration).
+- **Conseils élus.** Au suffrage universel direct pour les communes et les régions, [par les membres de ces conseils](#r-fl-hist-2014-conseils) pour les districts.
+- **Compétences et ressources.** Des compétences propres, partagées ou déléguées, réparties selon le principe de [subsidiarité](#g-subsidiarite) ; des ressources propres et déléguées, tout transfert de compétence s'accompagnant [des ressources correspondantes](#r-fl-hist-2014-ressources).
+- **Contrôle.** Pour la légalité de leurs actes, les collectivités ne sont soumises qu'à [un contrôle *a posteriori*](#r-fl-hist-2014-controle) (@sec-fl-tutelle).
 
-Au regard des notions, la Constitution de 2014 retient la libre administration, la subsidiarité et la tutelle de légalité *a posteriori* que décrivent Dafflon et Gilbert.
+:::: {.chronologie-repliable titre="Constitution de 2014, chapitre VII « Le pouvoir local » : articles 131 à 141, d'après la traduction reproduite par Dafflon et Gilbert"}
 
-### La carte communale et les élections de 2018 {#sec-fl-hist-carte}
+| Objet | Article | Ce que dit le texte |
+|---------|------------|------------------------------|
+| []{#r-fl-hist-2014-publication}Publication | décision du président de l'Assemblée nationale constituante du 31 janvier 2014 [@decision-anc-2014] | la Constitution, adoptée le 26 janvier 2014 et scellée le 27 janvier, est publiée dans un numéro spécial du *Journal officiel* le lundi 10 février 2014 |
+| []{#r-fl-hist-2014-collectivites}Collectivités et libre administration | [@constitution2014, art. 131 et 132] | le pouvoir local est fondé sur la décentralisation ; communes, régions et districts, chaque catégorie couvrant tout le territoire (art. 131) ; personnalité juridique, autonomie administrative et financière, gestion des intérêts locaux selon le principe de la libre administration (art. 132) |
+| []{#r-fl-hist-2014-conseils}Conseils élus | [@constitution2014, art. 133] | conseils municipaux et régionaux élus au suffrage universel direct ; conseils de district élus par les membres des conseils municipaux et régionaux |
+| []{#r-fl-hist-2014-competences}Compétences | [@constitution2014, art. 134] | compétences propres, partagées avec l'autorité centrale et déléguées par elle ; répartition selon le principe de subsidiarité |
+| []{#r-fl-hist-2014-ressources}Ressources | [@constitution2014, art. 135 et 136] | ressources propres et ressources déléguées par l'autorité centrale, adaptées aux attributions ; tout transfert de compétence accompagné des ressources correspondantes (art. 135) ; ressources complémentaires de l'autorité centrale selon la solidarité et la péréquation (art. 136) |
+| []{#r-fl-hist-2014-controle}Contrôle | [@constitution2014, art. 138] | contrôle *a posteriori* de la légalité des actes |
+| []{#r-fl-hist-2014-haut-conseil}Représentation | [@constitution2014, art. 141] | un Haut Conseil des collectivités locales les représente |
 
-Avant les premières élections municipales tenues sous la Constitution de 2014, la carte communale est étendue à tout le territoire. Selon Dafflon et Gilbert, une série de décrets de 2015 à 2017 crée 86 communes nouvelles, ce qui porte leur nombre de 264 en 2014 à 350 à la fin de 2017 [@dafflon-gilbert-2018, p. 34-37] (@tbl-fl-hist-communes).
+: Le chapitre VII de la Constitution de 2014, par objet {#tbl-fl-hist-constitution-2014}
+
+Les pages de la traduction suivie sont dans l'ouvrage de Dafflon et Gilbert [@dafflon-gilbert-2018, p. 267-286].
+
+::::
+
+#### Communes nouvelles, élections et entrée en vigueur par étapes {#sec-fl-hist-carte}
+
+Le territoire est entièrement couvert de communes avant les élections municipales du 6 mai 2018 ; le code s'applique ensuite par étapes.
+
+- **Des communes nouvelles.** Selon Dafflon et Gilbert, une série de décrets de 2015 à 2017 crée 86 communes, ce qui porte leur nombre de 264 en 2014 à 350 à la fin de 2017 [@dafflon-gilbert-2018, p. 34-37] (@tbl-fl-hist-communes).
+- **Les élections.** [Les électeurs sont convoqués](#r-fl-hist-2017-convocation) le dimanche 6 mai 2018 ; [les résultats définitifs](#r-fl-hist-2018-resultats) sont proclamés commune par commune à partir du 17 mai 2018.
+- **L'entrée en vigueur.** [Le code s'applique](#r-fl-hist-2018-vigueur) à chaque catégorie de collectivités après la proclamation des résultats définitifs de ses élections, et ses règles budgétaires au 1^er^ janvier de l'année qui suit : pour les communes, à partir des budgets de 2019 (@sec-fl-budg-ccl-vigueur). Aucune élection régionale n'a lieu sous le code ; la région agit entre-temps par les conseils régionaux de 1989.
+- **Les instances nationales.** Les membres de la Haute instance des finances locales [sont désignés en avril 2019](#r-fl-hist-2019-instance), et [leurs indemnités fixées en janvier 2020](#r-fl-hist-2020-instance) (@sec-fl-comp-instances). Aucun texte de mise en place du Conseil supérieur des collectivités locales n'est identifié ici.
+
+<!-- RECHERCHE r-fl-conseil-superieur-collectivites : texte de mise en place du Conseil supérieur des collectivités locales, code de 2018, art. 47 à 60 (voir docs/recherches.yml) -->
+
+### 2023-2025 : conseils municipaux dissous, nouveaux conseils {#sec-fl-hist-2023-2025}
+
+[]{#sec-fl-hist-apres-2022}Les conseils municipaux sont dissous le 14 mars 2023 ; des [conseils locaux](#g-conseil-local), régionaux et de districts sont élus de proche en proche, puis qualifiés de collectivités locales par une loi organique de 2025.
+
+#### La Constitution de 2022 {#sec-fl-hist-2022}
+
+La Constitution de 2022 traite des collectivités en un article et crée une seconde chambre élue par les conseils régionaux et de districts. Elle est [promulguée le 17 août 2022](#r-fl-hist-2022-promulgation) et publiée en arabe le lendemain.
+
+- **Un article.** Selon [l'article unique du chapitre VII](#r-fl-hist-2022-art133), les conseils municipaux, les conseils régionaux, les conseils de districts et les structures auxquelles la loi confère la qualité de collectivité locale gèrent les intérêts locaux et régionaux dans les conditions fixées par la loi. La rédaction reprend la trame de l'article de 1959 et de celui de 2002, en y ajoutant les districts ; elle n'emploie ni l'expression « pouvoir local » ni celle de « libre administration ».
+- **Une seconde chambre.** [Le Conseil national des régions et des districts](#r-fl-hist-2022-conseil-national) est élu par les conseils régionaux et de districts ; les projets de budget de l'État et de plans de développement lui sont obligatoirement soumis.
+
+#### Les décrets-lois de 2023 et la loi organique de 2025 {#sec-fl-hist-2023-textes}
+
+Des décrets-lois du 8 mars 2023, exécutoires le 14 mars, dissolvent les conseils municipaux et organisent trois niveaux de conseils nouveaux ; une loi organique, exécutoire le 18 mars 2025, fait de ces conseils des collectivités locales.
+
+- **La dissolution.** [Le décret-loi n° 2023-9](#r-fl-hist-2023-dissolution) dissout tous les conseils municipaux jusqu'à l'élection de nouveaux conseils et confie les affaires courantes de chaque commune au chargé du secrétariat général, sous la supervision du gouverneur (@sec-fl-comp-dissolution-2023). Il ne porte ni visa ni considérant et n'énonce aucun but.
+- **Trois niveaux de conseils.** [Le décret-loi n° 2023-10](#r-fl-hist-2023-conseils) dit son objet à l'article 1^er^ : organiser l'élection des conseils locaux et fixer la composition des conseils régionaux et des conseils de districts. Les électeurs des *imadas* élisent les conseils locaux, dont les membres élisent le conseil régional, dont les membres élisent le conseil de district ; les mandats sont de cinq ans. Le décret-loi abroge les dispositions contraires, notamment celles du code de 2018.
+- **L'élection et les districts.** Les conseils locaux [sont élus le 24 décembre 2023](#r-fl-hist-2023-convocation) ; [un décret](#r-fl-hist-2023-districts) délimite cinq districts de quatre à six gouvernorats.
+- **2025 : le statut.** Selon [la loi organique n° 2025-4](#r-fl-hist-2025), ces conseils « sont considérés comme des collectivités locales » ; ils « œuvrent à la réalisation de l'inclusion économique et sociale globale et équitable » et délibèrent sur les projets de plans de développement (@sec-fl-comp-conseils-2025). La loi abroge les dispositions du code de 2018 relatives à la région et au district, et la loi organique de 1989 ; elle ne vise pas celles qui portent sur la commune, dont les conseils restent dissous.
+
+:::: {.chronologie-repliable titre="Constitution de 2022, décrets-lois de 2023 et loi organique de 2025 : articles, dates et pages"}
+
+| Date d'effet | Portée | Texte et article | Ce que dit le texte |
+|---------|------|---------------|------------------------------------|
+| []{#r-fl-hist-2022-promulgation}[17 août 2022]{.insecable} | fondement | décret présidentiel n° 2022-691, portant promulgation de la Constitution [@decret-pres2022-691, p. 2473] | article unique : promulgation, et publication dans un numéro spécial du *Journal officiel* ; au visa des résultats définitifs du référendum du 25 juillet 2022 ; la Constitution paraît en arabe dans un numéro spécial du *Journal officiel* du 18 août 2022 |
+| []{#r-fl-hist-2022-art133}[18 août 2022]{.insecable}, date de publication | fondement | Constitution, chapitre VII, « الجماعات المحلية والجهوية », les collectivités locales et régionales [@constitution2022, art. 133] | article unique du chapitre : « تمارس المجالس البلدية والمجالس الجهوية ومجالس الأقاليم والهياكل التي يمنحها القانون صفة الجماعة المحلية، المصالح المحلية والجهوية حسبما يضبطه القانون » |
+| []{#r-fl-hist-2022-conseil-national}[18 août 2022]{.insecable}, date de publication | fondement | Constitution [@constitution2022, art. 81 et 84] | Conseil national des régions et des districts, « المجلس الوطني للجهات والأقاليم », élu par les conseils régionaux et de districts (art. 81) ; les projets relatifs au budget de l'État et aux plans de développement régionaux, de district et nationaux lui sont obligatoirement soumis (art. 84) |
+| []{#r-fl-hist-2023-dissolution}[14 mars 2023]{.insecable} | grande réforme | décret-loi n° 2023-9 du 8 mars 2023, relatif à la dissolution des conseils municipaux [@decretloi2023-9, art. 1-3, p. 694] | préambule sans visa de texte ni considérant. Art. 1 : dissolution de tous les conseils municipaux « إلى حين انتخاب مجالس بلدية جديدة » ; art. 2 : gestion des affaires courantes de la commune confiée au chargé du secrétariat général, « تحت إشراف والي الجهة » ; art. 3 : abrogation des dispositions contraires |
+| []{#r-fl-hist-2023-conseils}[14 mars 2023]{.insecable} | grande réforme | décret-loi n° 2023-10 du 8 mars 2023 [@decretloi2023-10, art. 1, 3, 6-8 et 43, p. 694-698] | art. 1 : objet — organisation des élections des conseils locaux, composition des conseils régionaux et des conseils de districts ; ces conseils sont des collectivités locales et régionales conformément au chapitre VII de la Constitution. Art. 3 : mandats de cinq ans. Art. 6 à 8 : électeurs des *imadas* pour le conseil local ; membres des conseils locaux pour le conseil régional, dont le territoire est celui du gouvernorat ; membres des conseils régionaux pour le conseil de district. Art. 43 : abrogation des dispositions contraires, notamment celles du code des collectivités locales |
+| [14 mars 2023]{.insecable} | étape | décret-loi n° 2023-8 du 8 mars 2023, même *Journal officiel*, édition arabe, p. 691-694 | modifie la loi organique relative aux élections, notamment pour les élections municipales ; son article 6 abroge les dispositions contraires, notamment celles du code des collectivités locales |
+| []{#r-fl-hist-2023-convocation}[21 septembre 2023]{.insecable}, date du texte | étape | décret n° 2023-588 [@decret2023-588, art. 1, p. 5097-5098] | convocation des électeurs à l'élection des membres des conseils locaux, le dimanche 24 décembre 2023 |
+| []{#r-fl-hist-2023-districts}[21 septembre 2023]{.insecable}, date du texte | étape | décret n° 2023-589 [@decret2023-589, art. 1, p. 5097-5098] | cinq districts, qui regroupent chacun quatre à six gouvernorats |
+| []{#r-fl-hist-2025}[18 mars 2025]{.insecable} | grande réforme — second temps | loi organique n° 2025-4 du 12 mars 2025, relative aux conseils locaux, conseils régionaux et conseils de districts [@loi-org2025-4, art. 1 et 8 à 10, p. 706-707] | art. 1 : ces conseils « sont considérés comme des collectivités locales jouissant de la personnalité juridique et de l'autonomie administrative et financière » ; ils « œuvrent à la réalisation de l'inclusion économique et sociale globale et équitable, et délibèrent sur les projets de plans de développement locaux, régionaux et de districts, dans le cadre de l'unité de l'État ». Art. 8 : budget régi par la loi organique n° 75-35. Art. 9 : biens des conseils régionaux de 1989 transférés à l'État. Art. 10 : abrogation des dispositions du code de 2018 relatives à la région et au district, de la loi organique n° 89-11 et de la loi n° 94-87 |
+
+: La Constitution de 2022, les décrets-lois de 2023 et la loi organique de 2025, texte par texte {#tbl-fl-hist-2023-2025}
+
+::::
+
+### 2026 : un décret-loi en attente d'élections {#sec-fl-hist-2026}
+
+Un décret-loi relatif aux conseils municipaux, publié le 30 septembre 2026, abroge le code de 2018 ; il n'entre en vigueur qu'après les prochaines élections municipales.
+
+- **Ce que le texte cherche.** Selon [son article 1^er^](#r-fl-hist-2026-objet), le conseil municipal — et non la commune — est une collectivité locale ; il lui revient de fournir des services au citoyen et de gérer les intérêts municipaux dans le cadre de l'unité de l'État.
+- **L'entrée en vigueur.** [Le décret-loi s'applique](#r-fl-hist-2026-vigueur) dès la proclamation des résultats définitifs des premières élections municipales organisées après sa publication ; jusque-là, le décret-loi n° 2023-9 reste applicable.
+- **Ce qui change alors.** Le code de 2018 est abrogé ; [les délibérations](#r-fl-hist-2026-approbation) sur le budget, l'emprunt, les droits municipaux, les aliénations ou les plans d'aménagement ne sont exécutoires qu'après l'approbation du gouverneur (@sec-fl-moduler-droits).
+- **Dissolution et intérim.** [Le conseil est dissous de plein droit](#r-fl-hist-2026-dissolution) s'il n'adopte pas le budget dans le délai ou en cas de démission collective ; il peut l'être par décret pour manquement grave à la loi. Le secrétaire général gère alors les affaires courantes sous la supervision du gouverneur, jusqu'à la nomination d'une commission provisoire de gestion.
+
+Aucune commune n'a de conseil élu depuis le 14 mars 2023 : l'état du droit est au chapitre des compétences (@sec-fl-comp-depuis-2023).
+
+:::: {.chronologie-repliable titre="Décret-loi n° 2026-4 relatif aux conseils municipaux : articles 1, 2, 12, 29, 30, 51, 52, 55, 56, 136, 137 et 139, édition arabe"}
+
+| Objet | Article | Ce que dit le texte |
+|---------|------------|------------------------------|
+| []{#r-fl-hist-2026-objet}Le conseil municipal, collectivité locale | décret-loi n° 2026-4 du 30 septembre 2026 [@decretloi2026-4, art. 1 et 2, p. 2058] | préambule : après délibération du conseil des ministres et information de la commission de législation générale de l'Assemblée des représentants du peuple ; ni visa de texte ni considérant. Art. 1 : « المجلس البلدي، جماعة محلية، يتمتع بالشخصية القانونية والاستقلالية الإدارية والمالية حسب ما يضبطه القانون » ; il lui revient de fournir des services au citoyen et de gérer les intérêts municipaux « في إطار وحدة الدولة ». Art. 2 : la zone municipale (« المنطقة البلدية ») est créée par décret |
+| []{#r-fl-hist-2026-approbation}Délibérations et approbation | [@decretloi2026-4, art. 12, 29 et 30, p. 2059 et 2062] | art. 12 : matières sur lesquelles le conseil délibère, dont les droits, redevances et taxes ; art. 29 : délibérations exécutoires un mois après leur dépôt au siège du gouvernorat, sous réserve des articles 30 et 31 ; art. 30 : les délibérations sur les plans d'aménagement, le budget, l'emprunt, les aliénations et les droits municipaux, entre autres, ne sont exécutoires qu'après l'approbation du gouverneur |
+| []{#r-fl-hist-2026-dissolution}Suspension, dissolution, intérim | [@decretloi2026-4, art. 51, 52, 55 et 56, p. 2065] | art. 51 et 52 : suspension, trois mois au plus, et révocation du président ou d'un adjoint par arrêté motivé du ministre de l'Intérieur. Art. 55 : dissolution de plein droit en cas de démission collective ou simultanée rendant le remplacement impossible, ou de non-adoption du budget dans le délai de l'article 79. Art. 56 : dissolution par décret pour manquement grave à la loi ou entrave manifeste au fonctionnement des services municipaux ou aux intérêts des habitants, après audition des membres par le gouverneur ; en cas d'urgence, suspension par le ministre de l'Intérieur, deux mois au plus ; gestion des affaires courantes par le secrétaire général « تحت إشراف الوالي », jusqu'à la fin de la suspension ou à la nomination d'une commission provisoire de gestion (« لجنة مؤقتة للتسيير ») |
+| []{#r-fl-hist-2026-vigueur}Entrée en vigueur et abrogation | [@decretloi2026-4, art. 136, 137 et 139, p. 2074] | art. 136 : entrée en vigueur directement après la proclamation des résultats définitifs des premières élections des conseils municipaux organisées après sa publication, le décret-loi n° 2023-9 restant applicable jusque-là ; art. 137 : comptabilité en partie double au plus tard en 2030 ; art. 139 : abrogation de la loi organique n° 2018-29 et des textes contraires |
+
+: Le décret-loi n° 2026-4 du 30 septembre 2026, par objet ; *Journal officiel* n° 96 du 30 septembre 2026, édition arabe, p. 2058-2074 {#tbl-fl-hist-2026}
+
+<!-- TODO (documentaliste) : décret-loi n° 2026-4 — art. 14 à 27, 35 à 48 et 100 à 131 à lire ; intitulés des titres III et suivants ; mode de nomination de la commission provisoire de gestion ; édition française à obtenir. Note : docs/notes/finances-locales-institutions-lectures-2026-10-10.md, § 3. -->
+
+::::
+
+## La longue période : le nombre de communes {#sec-fl-hist-longue-periode}
+
+Le nombre de communes passe de 94 en 1957 à 350 à la fin de 2017 (@tbl-fl-hist-communes).
 
 | Date | Nombre de communes | Source |
 |---|---|---|
-| 15 mars 1957 | 94 | tableau annexé à la loi municipale |
+| [15 mars 1957]{.insecable} | 94 | [tableau annexé à la loi municipale](#r-fl-hist-1957-statut) |
 | 2014 | 264 | Dafflon et Gilbert |
 | fin 2017 | 350 | Dafflon et Gilbert |
 
 : Le nombre de communes, de 1957 à 2017 {#tbl-fl-hist-communes}
 
-Sources : @decret1957-loi-municipale, tableau annexé ; @dafflon-gilbert-2018, p. 34-37.
+Source des deux dernières lignes : @dafflon-gilbert-2018, p. 34-37.
 
-Les états intermédiaires entre 1957 et 2014 ne sont pas établis ici.
+Le nombre de communes aux dates intermédiaires, de 1957 à 2014, n'est pas établi ici.
 
 <!-- RECHERCHE r-fl-nombre-communes : nombre de communes à des dates intermédiaires entre 1957 et 2014 (voir docs/recherches.yml) -->
-
-Les électeurs sont convoqués aux élections municipales le dimanche 6 mai 2018 [@decret-pres2017-254, art. 1]. L'Instance supérieure indépendante pour les élections en proclame les résultats définitifs commune par commune, par des décisions prises à partir du 17 mai 2018 [@isie2018-resultats-municipales].
-
-### Le code des collectivités locales {#sec-fl-hist-code-2018}
-
-La loi organique n° 2018-29 du 9 mai 2018 promulgue le code des collectivités locales (« مجلة الجماعات المحلية »), publié au *Journal officiel* du 15 mai 2018 en édition arabe. Le code organise les « structures du pouvoir local » (« هياكل السلطة المحلية ») « en vue de réaliser la décentralisation et le développement global, équitable et durable dans le cadre de l'unité de l'État » [@loi-org-2018-29-ccl, art. 1]. Il reprend les catégories et les principes de la Constitution de 2014 : communes, régions et districts [@loi-org-2018-29-ccl, art. 2], libre administration [@loi-org-2018-29-ccl, art. 4], conseils élus [@loi-org-2018-29-ccl, art. 5]. Ses annexes énumèrent les communes et les vingt-quatre régions [@loi-org-2018-29-ccl, annexes].
-
-Le code entre en vigueur par étapes : ses dispositions s'appliquent à chaque catégorie de collectivités après la proclamation des résultats définitifs de ses élections, et ses règles budgétaires au 1er janvier de l'année qui suit [@loi-org-2018-29-ccl, art. 383]. Pour les communes élues en mai 2018, elles s'appliquent donc à partir des budgets de 2019 (@sec-fl-budg-ccl-vigueur). En attendant l'élection des conseils régionaux, la région agit par les conseils régionaux de la loi de 1989 [@loi-org-2018-29-ccl, art. 384] ; aucune élection régionale n'a lieu sous le code. Le code n'abroge expressément ni la loi organique des communes ni celle du budget.
-
-## Depuis 2022 {#sec-fl-hist-apres-2022}
-
-### La Constitution de 2022 {#sec-fl-hist-2022}
-
-La Constitution soumise au référendum du 25 juillet 2022 est promulguée par le décret présidentiel n° 2022-691 du 17 août 2022 et publiée dans un numéro spécial du *Journal officiel* du 18 août 2022, en arabe [@decret-pres2022-691 ; @constitution2022]. Son chapitre VII, « les collectivités locales et régionales » (« الجماعات المحلية والجهوية »), tient en un article : « les conseils municipaux, les conseils régionaux, les conseils de districts et les structures auxquelles la loi confère la qualité de collectivité locale gèrent les intérêts locaux et régionaux dans les conditions fixées par la loi » [@constitution2022, art. 133]. La rédaction reprend la trame de l'article 59 de 1959 et de l'article 71 de 2002, en y ajoutant les districts ; elle n'emploie ni l'expression « pouvoir local » ni celle de « libre administration ».
-
-La Constitution crée par ailleurs une seconde chambre, le Conseil national des régions et des districts (« المجلس الوطني للجهات والأقاليم »), élu par les conseils régionaux et de districts [@constitution2022, art. 81]. Les projets relatifs au budget de l'État et aux plans de développement régionaux, de district et nationaux lui sont obligatoirement soumis [@constitution2022, art. 84].
-
-### Dissolution des conseils municipaux et nouveaux conseils {#sec-fl-hist-2023-2025}
-
-Trois décrets-lois du 8 mars 2023, publiés en arabe au *Journal officiel* du 9 mars et exécutoires le 14 mars 2023, réorganisent les collectivités.
-
-- Le décret-loi n° 2023-9 dissout tous les conseils municipaux « jusqu'à l'élection de nouveaux conseils municipaux » et confie la gestion des affaires courantes de chaque commune au chargé du secrétariat général, « sous la supervision du gouverneur » [@decretloi2023-9, art. 1-2].
-- Le décret-loi n° 2023-10 organise l'élection des conseils locaux et la composition des conseils régionaux et des conseils de districts, qu'il qualifie de « collectivités locales et régionales conformément au chapitre VII de la Constitution » [@decretloi2023-10, art. 1]. Les conseils locaux sont élus par les électeurs des *imadas* ; les membres des conseils locaux élisent le conseil régional, dont le territoire est celui du gouvernorat ; les membres des conseils régionaux élisent le conseil de district [@decretloi2023-10, art. 6-8]. Les mandats sont de cinq ans [@decretloi2023-10, art. 3]. Le décret-loi abroge les dispositions contraires, notamment celles du code des collectivités locales [@decretloi2023-10, art. 43].
-
-Un décret du 21 septembre 2023 convoque les électeurs à l'élection des conseils locaux le 24 décembre 2023 [@decret2023-588, art. 1] ; un autre délimite cinq districts, qui regroupent chacun quatre à six gouvernorats [@decret2023-589, art. 1].
-
-La loi organique n° 2025-4 du 12 mars 2025, exécutoire le 18 mars 2025, considère les conseils locaux, régionaux et de districts comme des collectivités locales dotées de la personnalité juridique et de l'autonomie administrative et financière, qui délibèrent sur les projets de plans de développement [@loi-org2025-4, art. 1]. Elle soumet leur budget à la loi organique de 1975 [@loi-org2025-4, art. 8], transfère à l'État les biens des anciens conseils régionaux [@loi-org2025-4, art. 9] et abroge les dispositions du code de 2018 relatives à la région et au district, ainsi que la loi organique de 1989 [@loi-org2025-4, art. 10]. Les dispositions du code relatives à la commune ne sont pas visées par cette abrogation expresse ; les conseils municipaux restent dissous.
-
-Aucun texte convoquant l'élection de nouveaux conseils municipaux n'est identifié ici.
-
-<!-- RECHERCHE r-fl-elections-municipales-apres-2023 : texte convoquant ou organisant l'élection de nouveaux conseils municipaux après le décret-loi n° 2023-9 (voir docs/recherches.yml) -->
-
-## La longue période {#sec-fl-hist-longue-periode}
-
-Le @tbl-fl-hist-chronologie résume, pour les textes fondateurs, le statut des collectivités, la désignation de leurs conseils et la tutelle de leur budget.
-
-| Date du texte | Texte | Collectivités | Conseils | Budget |
-|---|---|---|---|---|
-| 14 mars 1957 | loi municipale | communes | élus au suffrage universel direct | arrêté par les ministres de l'Intérieur et des Finances |
-| 17 août 1957 | loi n° 57-12 | régions (gouvernorats) | nommés | approuvé par le secrétaire d'État à l'Intérieur |
-| 30 décembre 1963 | loi n° 63-54 | conseils de gouvernorat | désignés ès qualités, sous la présidence du gouverneur | approuvé par le secrétaire d'État à l'Intérieur |
-| 14 mai 1975 | lois n° 75-33 et 75-35 | communes et conseils de gouvernorat | conseils municipaux élus | approuvé par le gouverneur ou les ministres, selon un seuil de recettes (@tbl-fl-budg-seuils) |
-| 4 février 1989 | loi organique n° 89-11 | gouvernorat, circonscription et collectivité | désignés ès qualités, sous la présidence du gouverneur | approuvé par le ministre de l'Intérieur |
-| 9 mai 2018 | code des collectivités locales | communes, régions, districts | élus | voté sans approbation ; recours devant la Cour des comptes |
-| 8 mars 2023 | décret-loi n° 2023-9 | communes | dissous ; secrétaire général sous la supervision du gouverneur | — |
-| 12 mars 2025 | loi organique n° 2025-4 | conseils locaux, régionaux et de districts | élus, au suffrage direct pour les conseils locaux | loi organique du budget de 1975 |
-
-: Les textes fondateurs des collectivités locales, de 1957 à 2025 {#tbl-fl-hist-chronologie}
-
-Sources : @decret1957-loi-municipale ; @loi57-12 ; @loi63-54 ; @loi75-33 ; @loi75-35 ; @loi-org89-11 ; @loi-org-2018-29-ccl, art. 383 ; @decretloi2023-9 ; @decretloi2023-10 ; @loi-org2025-4. Les règles budgétaires de 1975 prennent effet le 1er janvier 1976 [@loi75-35, art. 28] ; celles du code, pour les communes élues en 2018, avec les budgets de 2019.
 
 Les recettes et les dépenses des communes, et l'épargne et l'investissement des collectivités locales dans les comptes de la nation, sont suivis au chapitre des budgets (@sec-fl-budg-longue-periode).

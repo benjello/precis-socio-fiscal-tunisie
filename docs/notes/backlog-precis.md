@@ -107,7 +107,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; plan de conversion du volume dans `docs/notes/prestations-sociales-plan-architecte.md` | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
-| Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences à convertir | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
+| Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire convertie le 10 octobre 2026 ; compétences à convertir | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
 
 Les `TODO` des `.qmd` détaillent chaque lacune, y compris celles que ce tableau ne peut pas
 résumer. Ici, **lisible** veut dire que le fascicule est présent avec une couche texte
@@ -2124,7 +2124,7 @@ chapitre ci-dessous, dans l'ordre du volume ; les `TODO` des `.qmd` détaillent 
 replié », avec domicile unique des références : budgets (ch. 5), impôts sur les immeubles
 (ch. 6), impôts sur l'activité (ch. 7), taxes et redevances (ch. 8), transferts (ch. 9).
 Resserré le même jour, sans registre (il ne cite aucune loi) : notions (ch. 2).
-**Non convertis** (troisième vague) : histoire (ch. 3), compétences (ch. 4).
+Converti le 10 octobre 2026 (troisième vague) : histoire (ch. 3). **Non converti** : compétences (ch. 4).
 Plans : `finances-locales-impots-plan-architecte.md`,
 `finances-locales-transferts-budgets-plan-architecte.md` ; lectures du 9 octobre 2026 :
 `finances-locales-impots-lectures-2026-10-09.md`,
@@ -2148,8 +2148,11 @@ figures nouvelles restent à traduire.
   celui des budgets (`#sec-fl-budg-etat-du-droit`, ligne `r-fl-budg-2026` : art. 30, 71, 136,
   137 et 139). **Reste** : relever pour le chapitre des budgets les art. 57 à 99 (budget,
   équilibre, emprunt, exécution, comptes), lus mais non relevés ; rien n'est dit au chapitre
-  des transferts de l'art. 134 (fonds de 2021 maintenu et renommé) ; les chapitres d'histoire
-  et des compétences ne le mentionnent pas (troisième vague) ; sort du code de la fiscalité
+  des transferts de l'art. 134 (fonds de 2021 maintenu et renommé) ; le chapitre d'histoire
+  le porte depuis le 10 octobre 2026 comme réforme publiée, non entrée en vigueur
+  (`#sec-fl-hist-2026` : art. 1, 2, 12, 29, 30, 51, 52, 55, 56, 136, 137 et 139 ; p. 2058 et
+  2065 lues à l'image le 10 octobre, art. 14 à 27, 35 à 48 et 100 à 131 à lire) ; celui des
+  compétences ne le mentionne pas ; sort du code de la fiscalité
   locale et du décret de tarifs n° 2016-805 à son entrée en vigueur, que le texte ne règle
   pas. **Corpus** : fascicule arabe lisible (`PDFs/JORT/2026/ar/Ja0962026.pdf`) ; édition
   française **à obtenir** (le fichier « fr » est l'arabe) ; absent de `jort_cache.db`. À
@@ -2248,17 +2251,53 @@ glossaire sont inchangés.
 - **Livre arabe** : le chapitre traduit date d'avant le resserrement ; les cinq attributs
   `titre` des blocs sont à traduire.
 
-### Chapitre 3 — Histoire (`_histoire.qmd`) — non converti
+### Chapitre 3 — Les collectivités locales, de 1957 à 2026 (`_histoire.qmd`) — converti le 10 octobre 2026
 
-Rédigé le 5 octobre 2026 (note `finances-locales-histoire.md`). **Mis à jour le 9 octobre
-2026** sur un seul point : sa longue période renvoie au chapitre des budgets
-(`@sec-fl-budg-longue-periode`) au lieu de promettre un chapitre. Quatre fiches RECHERCHE :
-`r-fl-dissolutions-2011`, `r-fl-constitution-2014-numero-special`, `r-fl-nombre-communes`,
-`r-fl-elections-municipales-apres-2023`. **Lacunes**, lisibles dans le corpus sauf mention :
-lois organiques n° 85-43, 91-24, 95-68 et 2006-48 (modificatifs de la loi organique des
-communes) ; numéro spécial du JORT du 10 février 2014 (Constitution), **à obtenir** ; nombre
-des conseils dissous en 2011-2012 et nombre de communes de 1957 à 2014 ; texte arabe de la
-Constitution de 2014 ; décrets d'avant 1956, **à obtenir**.
+Rédigé le 5 octobre 2026 (note `finances-locales-histoire.md`) ; **converti le 10 octobre 2026**
+au format « ruptures au premier plan, détail replié », avec domicile unique des références,
+d'après la fiche `finances-locales-histoire-competences-notions-plan-architecte.md` et les
+lectures `finances-locales-institutions-lectures-2026-10-10.md`, qui la corrigent. Le chapitre
+est celui des grandes réformes du volume : tableau de tête de cinq lignes (1957, 1975, 2018,
+2023-2025, 2026), une section et un registre replié par réforme ; 1989 et 2011 sont des étapes ;
+il ne porte pas d'état du droit (renvoi à `@sec-fl-comp-depuis-2023`). Onze blocs repliés, dix
+clés versées en français et en arabe (`decretloi2011-14`, `decret2011-4252`,
+`loi-constituante2011-6`, `decret2012-385`, `decret2012-578`, `loi-org85-43`, `loi-org95-68`,
+`loi-org2006-48`, `decret-gouv2019-351`, `decret-gouv2020-31`). Cinq identifiants de section ne
+sont plus des titres mais des ancres (`sec-fl-hist-1959`, `-1975`, `-1989`, `-2011-2022`,
+`-apres-2022`) : ils ne répondent plus à un renvoi `@`.
+
+**Fiches RECHERCHE ancrées au chapitre** : `r-fl-dissolutions-2011` (2011 établi : dix-huit
+décrets, 212 conseils en somme de tableaux ; 2012 ouvert), `r-fl-duree-delegation-speciale`
+(nouvelle), `r-fl-constitution-2014-numero-special`, `r-fl-conseil-superieur-collectivites`
+(nouvelle, ancrée ici à `#sec-fl-hist-carte` ; le chapitre des compétences peut y ajouter la
+sienne), `r-fl-nombre-communes` (déplacée à `#sec-fl-hist-longue-periode`).
+`r-fl-elections-municipales-apres-2023` n'est plus ancrée qu'au chapitre des compétences.
+
+**Lacunes**, lisibles dans le corpus sauf mention :
+
+- 2012 : décrets n° 2012-910, 2012-1122, 2012-2007, 2012-2536 à 2012-2538, 2012-2771, 2012-2885,
+  2012-2895 et 2012-2943 à lire ; aucun total pour l'année ; décrets de 2012 à 2017 à lire avant
+  de dire ce qui relie les prorogations aux élections de 2018 (le chapitre n'en dit rien) ;
+- 2011 : doublons de communes entre les dix-huit décrets, nombre de communes existant en 2011 ;
+  dispositif de huit décrets de nomination (n° 2011-395, 778, 831, 861, 1138, 1208, 2908, 3293) ;
+  le chapitre écrit « dix décrets de nomination » d'après l'énumération du § 1.3 de la note du
+  10 octobre, dont le résumé dit « neuf » : **à trancher** ;
+- source de la durée d'un an des délégations spéciales : art. 161 du code électoral (JORT n° 30
+  de 2009), fascicule sans couche texte utile, **OCR ou lecture à l'image** ;
+- loi organique n° 91-24 (JORT n° 30 de 1991, fascicule scanné, **OCR**, page à vérifier) ; loi
+  organique n° 85-43, p. 643-644, et sens de « paragraphes 2 - 10 et 12 » (édition arabe) ;
+  art. 42, 43, 45, 46 et 48 de la loi organique des communes dans leur rédaction de 1975 ;
+  clauses d'effet des lois organiques de 1985 à 2008 ; loi n° 75-38 (intitulé seul, sans clé) ;
+- loi municipale de 1957 : clause finale (fascicule du 15 mars 1957 absent du corpus, sur
+  pist.tn) ; décrets d'avant 1956, **à obtenir** ;
+- numéro spécial du JORT du 10 février 2014 (Constitution), **à obtenir** ; texte arabe de la
+  Constitution de 2014 ;
+- nombre de communes de 1957 à 2014 ; texte de mise en place du Conseil supérieur des
+  collectivités locales ; activité de la Haute instance des finances locales ;
+- décret-loi n° 2026-4 : art. 14 à 27, 35 à 48 et 100 à 131, intitulés des titres III et
+  suivants, mode de nomination de la commission provisoire de gestion ;
+- frise des réformes en tête du chapitre (`TODO (rédacteur)`) ; onze attributs `titre` à
+  traduire quand le chapitre le sera.
 
 ### Chapitre 4 — Compétences (`_competences.qmd`) — non converti
 
