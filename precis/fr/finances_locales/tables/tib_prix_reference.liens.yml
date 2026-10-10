@@ -1,0 +1,33 @@
+- libelle: Superficie couverte maximale de la catégorie 1
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/seuils_superficie/categorie_1.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_immeubles_batis.seuils_superficie.categorie_1/table/
+- libelle: Superficie couverte maximale de la catégorie 2
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/seuils_superficie/categorie_2.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_immeubles_batis.seuils_superficie.categorie_2/table/
+- libelle: Superficie couverte maximale de la catégorie 3
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/seuils_superficie/categorie_3.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_immeubles_batis.seuils_superficie.categorie_3/table/
+- libelle: Minimum du prix de référence du mètre carré couvert — catégorie 1
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/prix_reference/categorie_1/minimum.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_immeubles_batis.prix_reference.categorie_1.minimum/table/
+- libelle: Maximum du prix de référence du mètre carré couvert — catégorie 1
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/prix_reference/categorie_1/maximum.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_immeubles_batis.prix_reference.categorie_1.maximum/table/
+- libelle: Minimum du prix de référence du mètre carré couvert — catégorie 2
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/prix_reference/categorie_2/minimum.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_immeubles_batis.prix_reference.categorie_2.minimum/table/
+- libelle: Maximum du prix de référence du mètre carré couvert — catégorie 2
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/prix_reference/categorie_2/maximum.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_immeubles_batis.prix_reference.categorie_2.maximum/table/
+- libelle: Minimum du prix de référence du mètre carré couvert — catégorie 3
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/prix_reference/categorie_3/minimum.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_immeubles_batis.prix_reference.categorie_3.minimum/table/
+- libelle: Maximum du prix de référence du mètre carré couvert — catégorie 3
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/prix_reference/categorie_3/maximum.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_immeubles_batis.prix_reference.categorie_3.maximum/table/
+- libelle: Minimum du prix de référence du mètre carré couvert — catégorie 4
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/prix_reference/categorie_4/minimum.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_immeubles_batis.prix_reference.categorie_4.minimum/table/
+- libelle: Maximum du prix de référence du mètre carré couvert — catégorie 4
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/prix_reference/categorie_4/maximum.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_immeubles_batis.prix_reference.categorie_4.maximum/table/

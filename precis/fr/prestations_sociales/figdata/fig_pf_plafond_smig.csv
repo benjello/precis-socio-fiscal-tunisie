@@ -1,0 +1,61 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-09
+# séries (tunisia_data) : prestations-familiales-parametres, marche-travail-smig-smag
+# sources (citation) : @loi60-30, @loi75-82, @loi80-36, @loi86-75, @loi88-38, @loi88-39, @loi94-88, @decret95-114, @decret86-611, @decret88-1136, @decret96-1906, @decret61-145, @decret74-63, @decret74-571, @decret81-437, @decret92-1299, @decret2026-66, @decret2026-67
+# fiches : 
+# méthode/hypothèses : Chaque valeur court de sa date d'effet au texte suivant ; aucun texte modifiant ces grandeurs n'est identifié après le dernier cité. Les indemnités du secteur public antérieures au 1er mai 1986 ne sont pas connues., Avant le 1er mai 1968, minimum de la première zone seulement. De 1971 à 1973, l'indemnité de cherté de vie de 0,020 D l'heure, servie en sus du minimum, n'est pas comprise ; le SMIG l'intègre le 1er janvier 1974. Avant 1974, les montants mensuels sont la conversion du minimum horaire, à 208 heures par mois.
+# note : Plafond de l'assiette trimestrielle des allocations familiales, rapporté au salaire minimum d'un trimestre (régime de 48 heures), 1961-2026
+Date d'effet,Plafond de l'assiette (D par trimestre),"SMIG, régime de 48 heures (D par mois)",SMIG trimestriel (D),Plafond ÷ SMIG trimestriel,Ce qui change à cette date
+1961-04-01,52.5,15.808,47.424,1.107,plafond ; SMIG
+1966-01-01,52.5,17.472,52.416,1.002,SMIG
+1974-01-01,52.5,27.04,81.12,0.647,SMIG
+1975-06-01,52.5,30.16,90.48,0.58,SMIG
+1976-01-01,72.0,30.16,90.48,0.796,plafond
+1977-02-01,72.0,40.16,120.48,0.598,SMIG
+1978-05-01,72.0,44.58,133.74,0.538,SMIG
+1979-05-01,72.0,48.256,144.768,0.497,SMIG
+1980-02-01,72.0,49.703,149.109,0.483,SMIG
+1980-05-01,72.0,54.704,164.112,0.439,SMIG
+1981-04-01,72.0,64.704,194.112,0.371,SMIG
+1982-02-01,72.0,85.072,255.216,0.282,SMIG
+1983-01-01,72.0,95.056,285.168,0.252,SMIG
+1986-05-01,122.0,95.056,285.168,0.428,plafond
+1986-07-01,122.0,100.048,300.144,0.406,SMIG
+1987-11-01,122.0,105.04,315.12,0.387,SMIG
+1988-04-01,122.0,110.032,330.096,0.37,SMIG
+1990-01-01,122.0,120.016,360.048,0.339,SMIG
+1992-05-01,122.0,132.912,398.736,0.306,SMIG
+1992-08-01,122.0,134.992,404.976,0.301,SMIG
+1993-05-01,122.0,142.896,428.688,0.285,SMIG
+1993-08-01,122.0,144.976,434.928,0.281,SMIG
+1994-08-01,122.0,147.056,441.168,0.277,SMIG
+1995-05-01,122.0,154.128,462.384,0.264,SMIG
+1996-05-01,122.0,160.16,480.48,0.254,SMIG
+1996-09-09,122.0,162.24,486.72,0.251,SMIG
+1997-07-20,122.0,164.32,492.96,0.247,SMIG
+1997-11-07,122.0,170.352,511.056,0.239,SMIG
+1998-08-20,122.0,172.848,518.544,0.235,SMIG
+1999-05-01,122.0,178.88,536.64,0.227,SMIG
+1999-08-19,122.0,180.96,542.88,0.225,SMIG
+2000-05-01,122.0,186.992,560.976,0.217,SMIG
+2001-07-01,122.0,195.52,586.56,0.208,SMIG
+2002-07-01,122.0,202.592,607.776,0.201,SMIG
+2003-07-01,122.0,211.12,633.36,0.193,SMIG
+2004-07-01,122.0,218.192,654.576,0.186,SMIG
+2005-09-01,122.0,224.224,672.672,0.181,SMIG
+2006-07-01,122.0,231.296,693.888,0.176,SMIG
+2007-07-01,122.0,239.824,719.472,0.17,SMIG
+2008-07-01,122.0,251.888,755.664,0.161,SMIG
+2009-08-01,122.0,260.624,781.872,0.156,SMIG
+2010-07-01,122.0,272.48,817.44,0.149,SMIG
+2011-05-01,122.0,286.0,858.0,0.142,SMIG
+2012-07-01,122.0,301.808,905.424,0.135,SMIG
+2014-05-01,122.0,319.904,959.712,0.127,SMIG
+2015-05-01,122.0,338.0,1014.0,0.12,SMIG
+2016-08-01,122.0,357.136,1071.408,0.114,SMIG
+2018-05-01,122.0,378.56,1135.68,0.107,SMIG
+2019-05-01,122.0,403.104,1209.312,0.101,SMIG
+2020-10-01,122.0,429.312,1287.936,0.095,SMIG
+2022-10-01,122.0,459.264,1377.792,0.089,SMIG
+2024-05-01,122.0,491.504,1474.512,0.083,SMIG
+2025-01-01,122.0,528.32,1584.96,0.077,SMIG
+2026-01-01,122.0,554.736,1664.208,0.073,SMIG

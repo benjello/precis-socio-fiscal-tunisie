@@ -585,7 +585,9 @@
 
 - id: r-majoration-creche-revalorisation
   objet: texte revalorisant les montants de la majoration pour salaire unique (loi n° 80-36, art. 65 bis — 9,375, 18,750 et 23,475 dinars) ou de la contribution aux frais de crèche (décret n° 95-114 — 15 dinars)
-  ou: [precis/fr/prestations_sociales/_prestations_familiales.qmd]
+  ou:
+  - precis/fr/prestations_sociales/_prestations_familiales.qmd#sec-pf-salaire-unique
+  - precis/fr/prestations_sociales/_prestations_familiales.qmd#sec-pf-creche
   requetes:
     titres_fts: ['"80-36"', '"94-88" OR "95-114"']
     depuis: 1980-05-27
@@ -601,9 +603,26 @@
   - vérifier les décrets pris sur le fondement de l'article 65 bis de la loi n° 60-30 et de la loi n° 94-88
   - interroger les rapports annuels de la CNSS et le ministère des affaires sociales
 
+- id: r-pf-art61-apres-1988
+  objet: texte modifiant, après la loi n° 88-38 du 6 mai 1988, les taux par rang, le plafond de l'assiette trimestrielle ou le nombre d'enfants servis des allocations familiales (loi n° 60-30, art. 52 et 61)
+  ou: [precis/fr/prestations_sociales/_prestations_familiales.qmd#sec-pf-etat-du-droit]
+  requetes:
+    titres_fts: ['"60-30"']
+    depuis: 1988-05-13
+  passes:
+  - date: 2026-09-08
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'chaîne des lois modifiant la loi n° 60-30 que jort_cache recense, seize lois de 1961 à 2007, chacune ouverte et lue : après la loi n° 88-38, aucune ne touche les articles 52 et 61 (lois n° 95-101, 96-65, 97-4, 97-58, 98-91 et 2007-51). Requêtes non consignées par la note ; celle-ci est reconstruite depuis l''objet. Aucune passe sur les textes de 2007 à 2026 (ticket D12 de la fiche de l''architecte, non traité le 9 octobre 2026). Note : docs/notes/prestations-contributif.md, § 0 (R2).'
+    couvert_jusqu_au: 2007-07-23
+    resultat: aucun
+  a_faire:
+  - prolonger le dépouillement des lois modifiant les articles 52, 54 et 61 de la loi n° 60-30 de 2007 à 2026 (D12)
+  - 'requêtes de la passe d''origine non consignées : rejouer celle-ci et l''élargir'
+
 - id: r-lf2025-art17-decret
   objet: décret fixant les conditions et procédures de gestion du fonds d'assurance contre la perte de postes de travail pour raisons économiques (loi n° 2024-48, loi de finances pour 2025, art. 17)
-  ou: [precis/fr/prestations_sociales/_autres_risques.qmd]
+  ou: [precis/fr/prestations_sociales/_autres_risques.qmd#sec-ar-cessation-2025]
   requetes:
     titres_like: ['%perte%', '%licenci%', '%perte d%emploi%']
     iort_ar: [فقدان]
@@ -622,6 +641,24 @@
     couvert_jusqu_au: 2025-12-31
     resultat: aucun
   a_faire: ['lire les fascicules FR et AR postérieurs au 10 avril 2026 (corpus local, pist.tn)']
+
+- id: r-loi2024-44-application
+  objet: texte d'application de la loi n° 2024-44 du 12 août 2024 (congés de maternité et de paternité), ou texte modifiant l'article 78 de la loi n° 60-30, réglant l'articulation des durées de congé de 2024 avec le stage exigé pour l'indemnité de couches (un an d'immatriculation, 150 jours de travail)
+  ou: [precis/fr/prestations_sociales/_autres_risques.qmd#sec-ar-conges-2024]
+  requetes:
+    titres_like: ['%2024-44%', '%maternit%', '%paternit%', '%allaitement%', '%couches%']
+    iort_ar: [الأمومة, الأبوة, 44 لسنة 2024]
+    depuis: 2024-08-12
+  passes:
+  - date: 2026-10-09
+    role: rédacteur
+    sources: [jort_cache]
+    couverture: 'jort_cache, titres et objets des textes publiés du 12 août 2024 au 2 octobre 2026 (dernière date de l''index), motifs LIKE « 2024-44 », « maternit », « paternit », « allaitement », « couches » et, en arabe, « الأمومة », « الأبوة », « 44 لسنة 2024 » : seule la loi n° 2024-44 elle-même répond. Lacunes : aucun fascicule lu en plein texte ; aucune circulaire de la CNSS ou de la CNRPS consultée ; les articles de la loi sont connus par la note docs/notes/prestations-contributif.md, § 3.2 (lacune L3).'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - chercher en plein texte, dans les fascicules postérieurs au 12 août 2024, les visas de la loi n° 2024-44
+  - consulter les circulaires et notes de la CNSS et de la CNRPS sur l'application des congés de 2024
 
 - id: r-amg-cartes-quotas
   objet: arrêtés conjoints des ministres des affaires sociales et de la santé publique fixant le nombre global des cartes de soins gratuits (décret n° 98-1812, art. 2) et à tarifs réduits, et les quotas régionaux

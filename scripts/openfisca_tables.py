@@ -101,8 +101,20 @@ PAQUETS = {
         # tableaux de l'Amen social du volume « Prestations sociales » publieraient le 20 mai
         # 2020, s'arrêteraient à 260 D, et le tableau des plafonds de ressources ne pourrait
         # être engendré. La borne est la 0.125, dernière version publiée, celle dont les
-        # snapshots sont tirés.
-        "version_minimale": (0, 125),
+        # snapshots sont tirés. Les 0.126 à 0.128 versent en entier les grilles des trois
+        # conventions (openfisca-tunisia PR #487, #488 et #489) : la grille des assurances
+        # (22 lignes, 14 échelons), les deux grilles du bâtiment (personnel occasionnel ;
+        # personnel administratif et technique à traitement mensuel) et la grille mensuelle
+        # du textile (`agents_payes_au_mois`, 18 lignes, stage et 20 échelons) ; une case
+        # illisible y porte une valeur vide à sa date. En deçà, l'index de l'annexe ne connaît
+        # que quelques cases des assurances et du bâtiment et ignore trois grilles : l'annexe,
+        # qui décrit et trace chaque grille, ne pourrait être engendrée. La borne passe à la
+        # 0.128, dernière version publiée le 9 octobre 2026, dont les snapshots sont tirés.
+        # La 0.125 verse aussi les paramètres de la fiscalité locale — taxe sur les
+        # immeubles bâtis et taxe sur les terrains non bâtis, sous `fiscalite_locale/`
+        # (PR #485) : en deçà, les barèmes du chapitre « Les impôts sur les immeubles »
+        # du volume « Finances locales » ne pourraient être engendrés.
+        "version_minimale": (0, 128),
     },
 }
 

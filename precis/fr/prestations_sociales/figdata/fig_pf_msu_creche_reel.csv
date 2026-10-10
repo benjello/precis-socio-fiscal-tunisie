@@ -1,0 +1,212 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-09
+# séries (tunisia_data) : prestations-familiales-parametres, ipc-longue-periode, bct-ipc-base2015
+# sources (citation) : @loi60-30, @loi75-82, @loi80-36, @loi86-75, @loi88-38, @loi88-39, @loi94-88, @decret95-114, @decret86-611, @decret88-1136, @decret96-1906, @bct-ra, @ins-annuaire
+# fiches : sources/bct-archives.md
+# méthode/hypothèses : Chaque valeur court de sa date d'effet au texte suivant ; aucun texte modifiant ces grandeurs n'est identifié après le dernier cité. Les indemnités du secteur public antérieures au 1er mai 1986 ne sont pas connues., DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Majoration pour salaire unique, contribution aux frais de crèche et indemnité à caractère familial du secteur public, par mois, en dinars de 2025 et en dinars courants, 1981-2025
+Grandeur,Année,Moyenne annuelle (D courants par mois),"Indice des prix, base 100 en 1970",Montant (D de 2025 par mois)
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1981,7.825,197.5,82.9
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1982,7.825,225.3,72.7
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1983,7.825,246.8,66.4
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1984,7.825,268.0,61.1
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1985,7.825,288.0,56.9
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1986,7.825,306.0,53.5
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1987,7.825,330.9,49.5
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1988,7.825,354.8,46.2
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1989,7.825,382.2,42.8
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1990,7.825,407.4,40.2
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1991,7.825,439.0,37.3
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1992,7.825,463.4,35.3
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1993,7.825,482.9,33.9
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1994,7.825,504.5,32.5
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1995,7.825,536.0,30.6
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1996,7.825,555.9,29.5
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1997,7.825,576.5,28.4
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1998,7.825,594.5,27.5
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",1999,7.825,610.5,26.8
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2000,7.825,628.3,26.1
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2001,7.825,640.5,25.6
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2002,7.825,658.6,24.9
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2003,7.825,676.5,24.2
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2004,7.825,701.0,23.4
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2005,7.825,715.3,22.9
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2006,7.825,745.0,22.0
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2007,7.825,770.6,21.3
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2008,7.825,808.4,20.3
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2009,7.825,837.0,19.6
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2010,7.825,873.9,18.7
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2011,7.825,904.8,18.1
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2012,7.825,955.1,17.1
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2013,7.825,1013.5,16.2
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2014,7.825,1069.0,15.3
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2015,7.825,1119.5,14.6
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2016,7.825,1161.2,14.1
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2017,7.825,1223.0,13.4
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2018,7.825,1314.2,12.5
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2019,7.825,1403.5,11.7
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2020,7.825,1482.6,11.0
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2021,7.825,1567.2,10.4
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2022,7.825,1697.4,9.6
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2023,7.825,1855.7,8.8
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2024,7.825,1986.0,8.2
+"Majoration pour salaire unique, foyer de trois enfants et plus (montant trimestriel ÷ 3)",2025,7.825,2092.7,7.8
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1981,6.25,197.5,66.2
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1982,6.25,225.3,58.1
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1983,6.25,246.8,53.0
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1984,6.25,268.0,48.8
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1985,6.25,288.0,45.4
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1986,6.25,306.0,42.7
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1987,6.25,330.9,39.5
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1988,6.25,354.8,36.9
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1989,6.25,382.2,34.2
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1990,6.25,407.4,32.1
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1991,6.25,439.0,29.8
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1992,6.25,463.4,28.2
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1993,6.25,482.9,27.1
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1994,6.25,504.5,25.9
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1995,6.25,536.0,24.4
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1996,6.25,555.9,23.5
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1997,6.25,576.5,22.7
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1998,6.25,594.5,22.0
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",1999,6.25,610.5,21.4
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2000,6.25,628.3,20.8
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2001,6.25,640.5,20.4
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2002,6.25,658.6,19.9
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2003,6.25,676.5,19.3
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2004,6.25,701.0,18.7
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2005,6.25,715.3,18.3
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2006,6.25,745.0,17.6
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2007,6.25,770.6,17.0
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2008,6.25,808.4,16.2
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2009,6.25,837.0,15.6
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2010,6.25,873.9,15.0
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2011,6.25,904.8,14.5
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2012,6.25,955.1,13.7
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2013,6.25,1013.5,12.9
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2014,6.25,1069.0,12.2
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2015,6.25,1119.5,11.7
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2016,6.25,1161.2,11.3
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2017,6.25,1223.0,10.7
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2018,6.25,1314.2,10.0
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2019,6.25,1403.5,9.3
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2020,6.25,1482.6,8.8
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2021,6.25,1567.2,8.3
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2022,6.25,1697.4,7.7
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2023,6.25,1855.7,7.0
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2024,6.25,1986.0,6.6
+"Majoration pour salaire unique, foyer de deux enfants (÷ 3)",2025,6.25,2092.7,6.2
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1981,3.125,197.5,33.1
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1982,3.125,225.3,29.0
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1983,3.125,246.8,26.5
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1984,3.125,268.0,24.4
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1985,3.125,288.0,22.7
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1986,3.125,306.0,21.4
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1987,3.125,330.9,19.8
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1988,3.125,354.8,18.4
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1989,3.125,382.2,17.1
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1990,3.125,407.4,16.1
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1991,3.125,439.0,14.9
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1992,3.125,463.4,14.1
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1993,3.125,482.9,13.5
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1994,3.125,504.5,13.0
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1995,3.125,536.0,12.2
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1996,3.125,555.9,11.8
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1997,3.125,576.5,11.3
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1998,3.125,594.5,11.0
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",1999,3.125,610.5,10.7
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2000,3.125,628.3,10.4
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2001,3.125,640.5,10.2
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2002,3.125,658.6,9.9
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2003,3.125,676.5,9.7
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2004,3.125,701.0,9.3
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2005,3.125,715.3,9.1
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2006,3.125,745.0,8.8
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2007,3.125,770.6,8.5
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2008,3.125,808.4,8.1
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2009,3.125,837.0,7.8
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2010,3.125,873.9,7.5
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2011,3.125,904.8,7.2
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2012,3.125,955.1,6.8
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2013,3.125,1013.5,6.5
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2014,3.125,1069.0,6.1
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2015,3.125,1119.5,5.8
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2016,3.125,1161.2,5.6
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2017,3.125,1223.0,5.3
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2018,3.125,1314.2,5.0
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2019,3.125,1403.5,4.7
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2020,3.125,1482.6,4.4
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2021,3.125,1567.2,4.2
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2022,3.125,1697.4,3.9
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2023,3.125,1855.7,3.5
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2024,3.125,1986.0,3.3
+"Majoration pour salaire unique, foyer d'un enfant (÷ 3)",2025,3.125,2092.7,3.1
+"Contribution aux frais de crèche, par enfant",1995,15.0,536.0,58.6
+"Contribution aux frais de crèche, par enfant",1996,15.0,555.9,56.5
+"Contribution aux frais de crèche, par enfant",1997,15.0,576.5,54.5
+"Contribution aux frais de crèche, par enfant",1998,15.0,594.5,52.8
+"Contribution aux frais de crèche, par enfant",1999,15.0,610.5,51.4
+"Contribution aux frais de crèche, par enfant",2000,15.0,628.3,50.0
+"Contribution aux frais de crèche, par enfant",2001,15.0,640.5,49.0
+"Contribution aux frais de crèche, par enfant",2002,15.0,658.6,47.7
+"Contribution aux frais de crèche, par enfant",2003,15.0,676.5,46.4
+"Contribution aux frais de crèche, par enfant",2004,15.0,701.0,44.8
+"Contribution aux frais de crèche, par enfant",2005,15.0,715.3,43.9
+"Contribution aux frais de crèche, par enfant",2006,15.0,745.0,42.1
+"Contribution aux frais de crèche, par enfant",2007,15.0,770.6,40.7
+"Contribution aux frais de crèche, par enfant",2008,15.0,808.4,38.8
+"Contribution aux frais de crèche, par enfant",2009,15.0,837.0,37.5
+"Contribution aux frais de crèche, par enfant",2010,15.0,873.9,35.9
+"Contribution aux frais de crèche, par enfant",2011,15.0,904.8,34.7
+"Contribution aux frais de crèche, par enfant",2012,15.0,955.1,32.9
+"Contribution aux frais de crèche, par enfant",2013,15.0,1013.5,31.0
+"Contribution aux frais de crèche, par enfant",2014,15.0,1069.0,29.4
+"Contribution aux frais de crèche, par enfant",2015,15.0,1119.5,28.0
+"Contribution aux frais de crèche, par enfant",2016,15.0,1161.2,27.0
+"Contribution aux frais de crèche, par enfant",2017,15.0,1223.0,25.7
+"Contribution aux frais de crèche, par enfant",2018,15.0,1314.2,23.9
+"Contribution aux frais de crèche, par enfant",2019,15.0,1403.5,22.4
+"Contribution aux frais de crèche, par enfant",2020,15.0,1482.6,21.2
+"Contribution aux frais de crèche, par enfant",2021,15.0,1567.2,20.0
+"Contribution aux frais de crèche, par enfant",2022,15.0,1697.4,18.5
+"Contribution aux frais de crèche, par enfant",2023,15.0,1855.7,16.9
+"Contribution aux frais de crèche, par enfant",2024,15.0,1986.0,15.8
+"Contribution aux frais de crèche, par enfant",2025,15.0,2092.7,15.0
+"Indemnité à caractère familial du secteur public, premier enfant",1987,7.6,330.9,48.1
+"Indemnité à caractère familial du secteur public, premier enfant",1988,7.6,354.8,44.8
+"Indemnité à caractère familial du secteur public, premier enfant",1989,7.6,382.2,41.6
+"Indemnité à caractère familial du secteur public, premier enfant",1990,7.6,407.4,39.0
+"Indemnité à caractère familial du secteur public, premier enfant",1991,7.6,439.0,36.2
+"Indemnité à caractère familial du secteur public, premier enfant",1992,7.6,463.4,34.3
+"Indemnité à caractère familial du secteur public, premier enfant",1993,7.6,482.9,32.9
+"Indemnité à caractère familial du secteur public, premier enfant",1994,7.6,504.5,31.5
+"Indemnité à caractère familial du secteur public, premier enfant",1995,7.6,536.0,29.7
+"Indemnité à caractère familial du secteur public, premier enfant",1996,7.553,555.9,28.4
+"Indemnité à caractère familial du secteur public, premier enfant",1997,7.32,576.5,26.6
+"Indemnité à caractère familial du secteur public, premier enfant",1998,7.32,594.5,25.8
+"Indemnité à caractère familial du secteur public, premier enfant",1999,7.32,610.5,25.1
+"Indemnité à caractère familial du secteur public, premier enfant",2000,7.32,628.3,24.4
+"Indemnité à caractère familial du secteur public, premier enfant",2001,7.32,640.5,23.9
+"Indemnité à caractère familial du secteur public, premier enfant",2002,7.32,658.6,23.3
+"Indemnité à caractère familial du secteur public, premier enfant",2003,7.32,676.5,22.6
+"Indemnité à caractère familial du secteur public, premier enfant",2004,7.32,701.0,21.9
+"Indemnité à caractère familial du secteur public, premier enfant",2005,7.32,715.3,21.4
+"Indemnité à caractère familial du secteur public, premier enfant",2006,7.32,745.0,20.6
+"Indemnité à caractère familial du secteur public, premier enfant",2007,7.32,770.6,19.9
+"Indemnité à caractère familial du secteur public, premier enfant",2008,7.32,808.4,18.9
+"Indemnité à caractère familial du secteur public, premier enfant",2009,7.32,837.0,18.3
+"Indemnité à caractère familial du secteur public, premier enfant",2010,7.32,873.9,17.5
+"Indemnité à caractère familial du secteur public, premier enfant",2011,7.32,904.8,16.9
+"Indemnité à caractère familial du secteur public, premier enfant",2012,7.32,955.1,16.0
+"Indemnité à caractère familial du secteur public, premier enfant",2013,7.32,1013.5,15.1
+"Indemnité à caractère familial du secteur public, premier enfant",2014,7.32,1069.0,14.3
+"Indemnité à caractère familial du secteur public, premier enfant",2015,7.32,1119.5,13.7
+"Indemnité à caractère familial du secteur public, premier enfant",2016,7.32,1161.2,13.2
+"Indemnité à caractère familial du secteur public, premier enfant",2017,7.32,1223.0,12.5
+"Indemnité à caractère familial du secteur public, premier enfant",2018,7.32,1314.2,11.7
+"Indemnité à caractère familial du secteur public, premier enfant",2019,7.32,1403.5,10.9
+"Indemnité à caractère familial du secteur public, premier enfant",2020,7.32,1482.6,10.3
+"Indemnité à caractère familial du secteur public, premier enfant",2021,7.32,1567.2,9.8
+"Indemnité à caractère familial du secteur public, premier enfant",2022,7.32,1697.4,9.0
+"Indemnité à caractère familial du secteur public, premier enfant",2023,7.32,1855.7,8.3
+"Indemnité à caractère familial du secteur public, premier enfant",2024,7.32,1986.0,7.7
+"Indemnité à caractère familial du secteur public, premier enfant",2025,7.32,2092.7,7.3
