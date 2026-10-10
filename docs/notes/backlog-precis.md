@@ -701,7 +701,59 @@ liste qui suit le tableau, citations comprises. Restent :
   dans ce livre ; le montant de l'enfant handicapé (1996), sans paramètre, est passé dans la
   ligne « Sources ». Les taux qui financent l'assurance maladie des agents et des pensionnés
   de la CNRPS et le fonds de perte d'emploi de 2025 viennent aussi du livre « Cotisations
-  sociales » (`tbl-cnrps-maladie`, `tbl-prevoyance-pensionnes`, `tbl-perte-emploi`).
+  sociales » (`tbl-cnrps-maladie`, `tbl-prevoyance-pensionnes`, `tbl-perte-emploi`) :
+  **depuis le 9 octobre 2026, `_autres_risques.qmd` ne les émet plus** et y renvoie par des
+  liens entre livres (voir ci-dessous).
+
+- **`_autres_risques.qmd` converti le 9 octobre 2026** (« ruptures au premier plan, détail
+  replié » ; fiche `docs/notes/prestations-sociales-plan-architecte.md`, § 3.4 et 4.4, corrigée
+  par `prestations-sociales-lectures-2026-10-09.md`, D6 et D9). Un seul fichier, chapitre
+  `.domicile-unique` : vue d'ensemble (`#sec-ar-vue-ensemble`, tableaux `tbl-ar-risques` et
+  `tbl-ar-reformes`, registre `tbl-ar-textes`), mise en place 1960-1961, quatre réformes
+  (1995-1996, 1996, 2007, 2024), état du droit en 2026 (`tbl-ar-etat-2026`), une section par
+  risque, longue période (`#sec-ar-longue-periode`, cinq années des comptes de la CNSS et
+  liens vers `fig-cnss-assurances-sociales` et `fig-cnss-atmp-pst` du volume des caisses).
+  `#sec-perte-emploi` est gardé, la section est titrée d'après l'article premier de la loi
+  n° 96-101. Clé `loi95-101` ajoutée aux `references.json` du livre (français et arabe),
+  recopiée du livre des cotisations.
+  - **Fait** : les trois tableaux de cotisations retirés (voir ci-dessus) ; fiche de recherche
+    `r-loi2024-44-application` créée (une passe sur `jort_cache`, index au 2 octobre 2026).
+  - **Générateur à nettoyer** (non touché ici) : `scripts/generate_cotisations_tables.py`
+    écrit toujours `cnrps_maladie`, `prevoyance_pensionnes` et `perte_emploi` (`.md` et
+    `.liens.yml`) dans `precis/*/prestations_sociales/tables/`, où plus rien ne les lit ;
+    retirer ces trois destinations et les six fichiers par langue.
+  - **Tableaux faits main** (`TODO (rédacteur)` dans le chapitre) : `tbl-ar-etat-2026`,
+    `tbl-ar-indemnites`, `tbl-ar-assiette`, `tbl-ar-conges-2024`, `tbl-ar-deces-multiplicateurs`,
+    `tbl-ar-atmp-prestations` — aucun paramètre en amont (`backlog-modele.md`) ;
+    `tbl-ar-capital-deces-age` — les grandeurs existent sous `retraite/cnrps/capital_deces/`,
+    il manque la fonction du générateur.
+  - **Dates d'application non établies** (D9, non écrites comme établies) : loi n° 96-101
+    (mention de dépôt du JORT n° 94 de 1996 à relever à l'image, fascicule au corpus ;
+    rectificatif du JORT n° 7 de 1997, p. 114, non lu) ; loi n° 2024-44 (aucune clause,
+    mention de dépôt non relevée) ; décret-loi n° 2024-4, loi n° 2002-32, loi n° 95-101,
+    loi n° 2017-47 (à confirmer ou à calculer). L'article final de la loi de finances pour
+    2025 n'est pas cité pour la date du 1er janvier 2025.
+  - **À relire à l'image** : loi n° 2004-71, art. 1er (couche texte décodée : l'article n'est
+    pas cité entre guillemets, le tableau des réformes ne donne que l'intitulé) ; loi
+    n° 95-101, alinéa ajouté à l'article 111 (prescription) ; loi n° 60-30, p. 1609-1610
+    (art. 76 à 98).
+  - **À lire** : article 17 de la loi de finances pour 2025 dans l'édition française (le
+    chapitre le donne d'après l'édition arabe) ; loi n° 94-28, art. 39 à 43 et 48 à 53 (taux
+    des rentes, non donnés) ; loi n° 2002-24 modifiant la loi n° 96-101 ; décret du 6 avril
+    1950 sur la période légale de couches, sans clé.
+  - **Non établi** : qui gère en 2026 la réparation des accidents du travail des agents
+    publics (loi n° 95-56, art. 5, et loi n° 2004-71, art. 8, donnés côte à côte) ; ce que
+    recouvrent les lignes « Capital-décès » et « Indemnité de décès » des comptes de la CNSS ;
+    l'absence de texte postérieur modifiant les taux de 1960 et de 1994 (l'état du droit est
+    dit « en 2026 », avec un `TODO (documentaliste)`).
+  - **Non traités** (D7, D8, D10, D12, D13 du ticket) : en particulier les prestations de
+    soins du régime de base (D13) et la relance de `r-lf2025-art17-decret` (D10).
+  - **À obtenir** : séries postérieures à 2004 (CNAM pour la maladie, les couches et les
+    accidents du travail ; CNRPS pour le capital-décès) et effectifs de bénéficiaires.
+  - **Pour le terminologue** : le terme de `g-indemnite-perte-emploi`, « Protection contre la
+    perte d'emploi », n'est pas dans la loi n° 96-101.
+  - **Hors de ce chapitre** : `index.qmd` nomme encore le chapitre par « la perte d'emploi »
+    (plan du volume) ; à accorder avec le nouveau titre.
 
 ## Rémunérations publiques
 
