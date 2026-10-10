@@ -2,2025 +2,314 @@
 - branche: assurances
   libelle: Assurances
   description: Convention collective nationale, puis sectorielle, des assurances
-  serie: cc-grille-assurances
   liens_grilles: cc_assurances_grilles.liens.yml
+  cases: 308
+  cases_vides: 1
   grilles:
   - cle: salaire_base
     libelle: ''
     grandeur: Salaire de base
     unite: dinars par mois
     parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base
-    cases:
-    - salaire_base.echelle_1.echelon_1
-    - salaire_base.echelle_21.echelon_12
-    - salaire_base.echelle_21.echelon_13
-    - salaire_base.echelle_21.echelon_14
-  cases:
-  - cle: salaire_base.echelle_1.echelon_1
-    libelle: Échelle 1, échelon 1
-    grandeur: Salaire de base
-    unite: dinars par mois
-    description: 'Assurances - échelle 1, échelon 1 : salaire mensuel de base'
-    parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_1/echelon_1.yaml
+    lignes: 22
+    colonnes: 14
+    cases: 308
+    formes:
+    - depuis: '1993-06-01'
+      jusqu_a: '1998-06-01'
+      lignes: 22
+      colonnes: 12
+      cases: 264
+    - depuis: '1999-06-01'
+      jusqu_a: '2021-06-01'
+      lignes: 22
+      colonnes: 14
+      cases: 308
+    dates: 28
     debut: '1993-06-01'
-    derniere_valeur: '2021-06-01'
-    dates: 29
-    valeurs: 28
-    sans_valeur: 1
-  - cle: salaire_base.echelle_21.echelon_12
-    libelle: Échelle 21, échelon 12
-    grandeur: Salaire de base
-    unite: dinars par mois
-    description: 'Assurances - échelle 21, 12e échelon : salaire mensuel de base'
-    parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_21/echelon_12.yaml
-    debut: '1993-06-01'
-    derniere_valeur: '2021-06-01'
-    dates: 29
-    valeurs: 28
-    sans_valeur: 1
-  - cle: salaire_base.echelle_21.echelon_13
-    libelle: Échelle 21, échelon 13
-    grandeur: Salaire de base
-    unite: dinars par mois
-    description: 'Assurances - échelle 21, 13e échelon : salaire mensuel de base'
-    parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_21/echelon_13.yaml
-    debut: '1999-06-01'
-    derniere_valeur: '2021-06-01'
-    dates: 23
-    valeurs: 22
-    sans_valeur: 1
-  - cle: salaire_base.echelle_21.echelon_14
-    libelle: Échelle 21, échelon 14
-    grandeur: Salaire de base
-    unite: dinars par mois
-    description: 'Assurances - échelle 21, 14e échelon : salaire mensuel de base'
-    parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_21/echelon_14.yaml
-    debut: '1999-06-01'
-    derniere_valeur: '2021-06-01'
-    dates: 23
-    valeurs: 22
-    sans_valeur: 1
+    fin: '2021-06-01'
+    cloture: '2026-01-01'
+    valeurs: 8359
+    cases_vides: 1
+    dates_cases_vides:
+    - '1996-06-01'
+    lignes_closes: 0
+    hors_rang: []
+    bas:
+      cle: salaire_base.echelle_1.echelon_1
+      libelle: Échelle 1, échelon 1
+      grandeur: Salaire de base
+      unite: dinars par mois
+      description: 'Assurances - échelle 1, échelon 1 : salaire mensuel de base'
+      parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_1/echelon_1.yaml
+      debut: '1993-06-01'
+      derniere_valeur: '2021-06-01'
+      dates: 29
+      valeurs: 28
+      sans_valeur: 1
+    haut:
+      cle: salaire_base.echelle_21.echelon_14
+      libelle: Échelle 21, échelon 14
+      grandeur: Salaire de base
+      unite: dinars par mois
+      description: 'Assurances - échelle 21, 14e échelon : salaire mensuel de base'
+      parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_21/echelon_14.yaml
+      debut: '1999-06-01'
+      derniere_valeur: '2021-06-01'
+      dates: 23
+      valeurs: 22
+      sans_valeur: 1
+    tracee: true
+    motif: courante
+    serie: cc-grille-assurances-salaire-base
 - branche: batiment
   libelle: Bâtiment et travaux publics
   description: Convention collective nationale, puis sectorielle, du bâtiment et des
     travaux publics
-  serie: cc-grille-batiment
   liens_grilles: cc_batiment_grilles.liens.yml
+  cases: 220
+  cases_vides: 16
   grilles:
   - cle: salaire_base.personnel_occasionnel
     libelle: Personnel occasionnel
     grandeur: Salaire de base
     unite: dinars par heure
     parametre: parameters/marche_travail/conventions_collectives/batiment/salaire_base/personnel_occasionnel
-    cases:
-    - salaire_base.personnel_occasionnel.manoeuvre_ordinaire
-    - salaire_base.personnel_occasionnel.chef_equipe_3e_degre
-  cases:
-  - cle: salaire_base.personnel_occasionnel.manoeuvre_ordinaire
-    libelle: Personnel occasionnel, manœuvre ordinaire
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Bâtiment et travaux publics - personnel occasionnel - manœuvre ordinaire
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/batiment/salaire_base/personnel_occasionnel/manoeuvre_ordinaire.yaml
+    lignes: 11
+    colonnes: 0
+    cases: 11
+    formes:
+    - depuis: '1996-05-01'
+      jusqu_a: '2007-05-01'
+      lignes: 9
+      colonnes: 1
+      cases: 9
+    - depuis: '2008-05-01'
+      jusqu_a: '2024-01-01'
+      lignes: 10
+      colonnes: 1
+      cases: 10
+    dates: 26
     debut: '1996-05-01'
-    derniere_valeur: '2024-01-01'
-    dates: 27
-    valeurs: 26
-    sans_valeur: 1
-  - cle: salaire_base.personnel_occasionnel.chef_equipe_3e_degre
-    libelle: Personnel occasionnel, chef d'équipe du 3e degré
+    fin: '2024-01-01'
+    cloture: '2026-01-01'
+    valeurs: 248
+    cases_vides: 0
+    dates_cases_vides: []
+    lignes_closes: 1
+    hors_rang: []
+    bas:
+      cle: salaire_base.personnel_occasionnel.manoeuvre_ordinaire
+      libelle: Personnel occasionnel, manœuvre ordinaire
+      grandeur: Salaire de base
+      unite: dinars par heure
+      description: 'Bâtiment et travaux publics - personnel occasionnel - manœuvre
+        ordinaire : salaire horaire de base'
+      parametre: parameters/marche_travail/conventions_collectives/batiment/salaire_base/personnel_occasionnel/manoeuvre_ordinaire.yaml
+      debut: '1996-05-01'
+      derniere_valeur: '2024-01-01'
+      dates: 27
+      valeurs: 26
+      sans_valeur: 1
+    haut:
+      cle: salaire_base.personnel_occasionnel.chef_equipe_3e_degre
+      libelle: Personnel occasionnel, chef d'équipe du 3e degré
+      grandeur: Salaire de base
+      unite: dinars par heure
+      description: 'Bâtiment et travaux publics - personnel occasionnel - chef d''équipe
+        du 3e degré : salaire horaire de base'
+      parametre: parameters/marche_travail/conventions_collectives/batiment/salaire_base/personnel_occasionnel/chef_equipe_3e_degre.yaml
+      debut: '1996-05-01'
+      derniere_valeur: '2024-01-01'
+      dates: 27
+      valeurs: 26
+      sans_valeur: 1
+    tracee: true
+    motif: courante
+    serie: cc-grille-batiment-salaire-base-personnel-occasionnel
+  - cle: salaire_base.personnel_administratif_technique
+    libelle: Personnel administratif et technique
     grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Bâtiment et travaux publics - personnel occasionnel - chef d''équipe
-      du 3e degré : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/batiment/salaire_base/personnel_occasionnel/chef_equipe_3e_degre.yaml
+    unite: dinars par mois
+    parametre: parameters/marche_travail/conventions_collectives/batiment/salaire_base/personnel_administratif_technique
+    lignes: 19
+    colonnes: 11
+    cases: 209
+    formes:
+    - depuis: '1996-05-01'
+      jusqu_a: '2024-01-01'
+      lignes: 19
+      colonnes: 11
+      cases: 209
+    dates: 26
     debut: '1996-05-01'
-    derniere_valeur: '2024-01-01'
-    dates: 27
-    valeurs: 26
-    sans_valeur: 1
+    fin: '2024-01-01'
+    cloture: '2026-01-01'
+    valeurs: 5418
+    cases_vides: 16
+    dates_cases_vides:
+    - '1996-05-01'
+    - '1998-05-01'
+    - '2001-05-01'
+    - '2002-05-01'
+    - '2003-05-01'
+    - '2004-05-01'
+    lignes_closes: 0
+    hors_rang: []
+    bas:
+      cle: salaire_base.personnel_administratif_technique.categorie_1.echelon_1
+      libelle: Personnel administratif et technique, catégorie 1, échelon 1
+      grandeur: Salaire de base
+      unite: dinars par mois
+      description: 'Bâtiment et travaux publics - personnel administratif et technique
+        - catégorie 1, échelon 1 : salaire mensuel de base'
+      parametre: parameters/marche_travail/conventions_collectives/batiment/salaire_base/personnel_administratif_technique/categorie_1/echelon_1.yaml
+      debut: '1996-05-01'
+      derniere_valeur: '2024-01-01'
+      dates: 27
+      valeurs: 26
+      sans_valeur: 1
+    haut:
+      cle: salaire_base.personnel_administratif_technique.categorie_19.echelon_11
+      libelle: Personnel administratif et technique, catégorie 19, échelon 11
+      grandeur: Salaire de base
+      unite: dinars par mois
+      description: 'Bâtiment et travaux publics - personnel administratif et technique
+        - catégorie 19, échelon 11 : salaire mensuel de base'
+      parametre: parameters/marche_travail/conventions_collectives/batiment/salaire_base/personnel_administratif_technique/categorie_19/echelon_11.yaml
+      debut: '1996-05-01'
+      derniere_valeur: '2024-01-01'
+      dates: 27
+      valeurs: 26
+      sans_valeur: 1
+    tracee: true
+    motif: courante
+    serie: cc-grille-batiment-salaire-base-personnel-administratif-technique
 - branche: textile
   libelle: Textile
   description: Convention collective nationale, puis sectorielle, du textile
-  serie: cc-grille-textile
   liens_grilles: cc_textile_grilles.liens.yml
+  cases: 525
+  cases_vides: 127
   grilles:
   - cle: salaire_base.agents_payes_a_l_heure
     libelle: Agents payés à l'heure
     grandeur: Salaire de base
     unite: dinars par heure
     parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure
-    cases:
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_0
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_1
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_2
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_3
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_4
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_5
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_6
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_7
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_8
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_9
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_10
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_11
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_12
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_13
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_14
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_15
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_16
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_17
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_18
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_19
-    - salaire_base.agents_payes_a_l_heure.categorie_1.echelon_20
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_0
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_1
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_2
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_3
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_4
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_5
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_6
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_7
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_8
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_9
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_10
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_11
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_12
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_13
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_14
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_15
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_16
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_17
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_18
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_19
-    - salaire_base.agents_payes_a_l_heure.categorie_2.echelon_20
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_0
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_1
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_2
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_3
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_4
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_5
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_6
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_7
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_8
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_9
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_10
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_11
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_12
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_13
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_14
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_15
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_16
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_17
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_18
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_19
-    - salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_20
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_0
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_1
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_2
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_3
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_4
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_5
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_6
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_7
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_8
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_9
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_10
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_11
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_12
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_13
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_14
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_15
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_16
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_17
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_18
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_19
-    - salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_20
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_0
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_1
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_2
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_3
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_4
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_5
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_6
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_7
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_8
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_9
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_10
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_11
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_12
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_13
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_14
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_15
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_16
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_17
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_18
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_19
-    - salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_20
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_0
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_1
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_2
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_3
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_4
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_5
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_6
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_7
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_8
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_9
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_10
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_11
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_12
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_13
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_14
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_15
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_16
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_17
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_18
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_19
-    - salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_20
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_0
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_1
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_2
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_3
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_4
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_5
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_6
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_7
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_8
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_9
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_10
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_11
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_12
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_13
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_14
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_15
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_16
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_17
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_18
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_19
-    - salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_20
-  cases:
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_0
-    libelle: Agents payés à l'heure, catégorie I, échelon 0
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 0 (confirmation)
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_0.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_1
-    libelle: Agents payés à l'heure, catégorie I, échelon 1
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 1 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_1.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_2
-    libelle: Agents payés à l'heure, catégorie I, échelon 2
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 2 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_2.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_3
-    libelle: Agents payés à l'heure, catégorie I, échelon 3
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 3 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_3.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_4
-    libelle: Agents payés à l'heure, catégorie I, échelon 4
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 4 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_4.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_5
-    libelle: Agents payés à l'heure, catégorie I, échelon 5
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 5 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_5.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_6
-    libelle: Agents payés à l'heure, catégorie I, échelon 6
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 6 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_6.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_7
-    libelle: Agents payés à l'heure, catégorie I, échelon 7
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 7 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_7.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_8
-    libelle: Agents payés à l'heure, catégorie I, échelon 8
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 8 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_8.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_9
-    libelle: Agents payés à l'heure, catégorie I, échelon 9
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 9 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_9.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_10
-    libelle: Agents payés à l'heure, catégorie I, échelon 10
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 10 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_10.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_11
-    libelle: Agents payés à l'heure, catégorie I, échelon 11
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 11 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_11.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_12
-    libelle: Agents payés à l'heure, catégorie I, échelon 12
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 12 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_12.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_13
-    libelle: Agents payés à l'heure, catégorie I, échelon 13
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 13 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_13.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_14
-    libelle: Agents payés à l'heure, catégorie I, échelon 14
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 14 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_14.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_15
-    libelle: Agents payés à l'heure, catégorie I, échelon 15
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 15 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_15.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_16
-    libelle: Agents payés à l'heure, catégorie I, échelon 16
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 16 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_16.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_17
-    libelle: Agents payés à l'heure, catégorie I, échelon 17
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 17 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_17.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_18
-    libelle: Agents payés à l'heure, catégorie I, échelon 18
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 18 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_18.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_19
-    libelle: Agents payés à l'heure, catégorie I, échelon 19
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 19 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_19.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_20
-    libelle: Agents payés à l'heure, catégorie I, échelon 20
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie I, échelon 20 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_20.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_0
-    libelle: Agents payés à l'heure, catégorie II, échelon 0
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 0 (confirmation)
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_0.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_1
-    libelle: Agents payés à l'heure, catégorie II, échelon 1
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 1 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_1.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_2
-    libelle: Agents payés à l'heure, catégorie II, échelon 2
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 2 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_2.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_3
-    libelle: Agents payés à l'heure, catégorie II, échelon 3
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 3 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_3.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_4
-    libelle: Agents payés à l'heure, catégorie II, échelon 4
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 4 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_4.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_5
-    libelle: Agents payés à l'heure, catégorie II, échelon 5
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 5 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_5.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_6
-    libelle: Agents payés à l'heure, catégorie II, échelon 6
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 6 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_6.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_7
-    libelle: Agents payés à l'heure, catégorie II, échelon 7
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 7 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_7.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_8
-    libelle: Agents payés à l'heure, catégorie II, échelon 8
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 8 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_8.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_9
-    libelle: Agents payés à l'heure, catégorie II, échelon 9
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 9 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_9.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_10
-    libelle: Agents payés à l'heure, catégorie II, échelon 10
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 10 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_10.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_11
-    libelle: Agents payés à l'heure, catégorie II, échelon 11
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 11 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_11.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_12
-    libelle: Agents payés à l'heure, catégorie II, échelon 12
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 12 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_12.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_13
-    libelle: Agents payés à l'heure, catégorie II, échelon 13
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 13 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_13.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_14
-    libelle: Agents payés à l'heure, catégorie II, échelon 14
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 14 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_14.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_15
-    libelle: Agents payés à l'heure, catégorie II, échelon 15
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 15 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_15.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_16
-    libelle: Agents payés à l'heure, catégorie II, échelon 16
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 16 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_16.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_17
-    libelle: Agents payés à l'heure, catégorie II, échelon 17
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 17 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_17.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_18
-    libelle: Agents payés à l'heure, catégorie II, échelon 18
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 18 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_18.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_19
-    libelle: Agents payés à l'heure, catégorie II, échelon 19
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 19 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_19.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_2.echelon_20
-    libelle: Agents payés à l'heure, catégorie II, échelon 20
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie II, échelon 20 : salaire
-      horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_2/echelon_20.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_0
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 0
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 0 (confirmation)
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_0.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_1
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 1
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 1 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_1.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_2
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 2
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 2 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_2.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_3
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 3
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 3 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_3.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_4
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 4
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 4 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_4.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_5
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 5
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 5 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_5.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_6
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 6
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 6 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_6.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_7
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 7
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 7 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_7.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_8
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 8
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 8 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_8.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_9
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 9
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 9 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_9.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_10
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 10
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 10
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_10.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_11
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 11
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 11
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_11.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_12
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 12
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 12
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_12.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_13
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 13
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 13
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_13.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_14
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 14
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 14
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_14.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_15
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 15
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 15
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_15.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_16
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 16
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 16
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_16.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_17
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 17
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 17
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_17.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_18
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 18
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 18
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_18.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_19
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 19
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 19
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_19.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_1.echelon_20
-    libelle: Agents payés à l'heure, catégorie III-1, échelon 20
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-1, échelon 20
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_1/echelon_20.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_0
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 0
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 0 (confirmation)
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_0.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_1
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 1
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 1 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_1.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_2
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 2
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 2 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_2.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_3
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 3
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 3 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_3.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_4
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 4
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 4 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_4.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_5
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 5
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 5 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_5.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_6
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 6
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 6 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_6.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_7
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 7
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 7 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_7.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_8
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 8
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 8 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_8.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_9
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 9
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 9 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_9.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_10
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 10
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 10
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_10.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_11
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 11
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 11
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_11.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_12
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 12
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 12
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_12.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_13
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 13
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 13
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_13.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_14
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 14
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 14
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_14.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_15
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 15
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 15
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_15.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_16
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 16
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 16
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_16.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_17
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 17
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 17
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_17.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_18
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 18
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 18
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_18.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_19
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 19
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 19
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_19.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_2.echelon_20
-    libelle: Agents payés à l'heure, catégorie III-2, échelon 20
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-2, échelon 20
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_2/echelon_20.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_0
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 0
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 0 (confirmation)
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_0.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_1
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 1
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 1 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_1.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_2
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 2
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 2 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_2.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_3
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 3
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 3 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_3.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_4
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 4
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 4 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_4.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_5
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 5
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 5 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_5.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_6
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 6
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 6 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_6.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_7
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 7
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 7 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_7.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_8
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 8
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 8 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_8.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_9
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 9
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 9 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_9.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_10
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 10
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 10
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_10.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_11
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 11
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 11
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_11.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_12
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 12
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 12
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_12.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_13
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 13
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 13
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_13.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_14
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 14
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 14
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_14.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_15
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 15
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 15
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_15.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_16
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 16
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 16
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_16.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_17
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 17
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 17
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_17.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_18
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 18
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 18
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_18.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_19
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 19
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 19
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_19.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_3_3.echelon_20
-    libelle: Agents payés à l'heure, catégorie III-3, échelon 20
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie III-3, échelon 20
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_3_3/echelon_20.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_0
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 0
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 0 (confirmation)
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_0.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_1
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 1
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 1 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_1.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_2
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 2
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 2 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_2.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_3
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 3
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 3 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_3.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_4
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 4
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 4 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_4.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_5
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 5
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 5 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_5.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_6
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 6
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 6 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_6.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_7
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 7
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 7 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_7.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_8
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 8
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 8 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_8.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_9
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 9
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 9 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_9.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_10
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 10
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 10 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_10.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_11
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 11
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 11 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_11.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_12
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 12
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 12 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_12.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_13
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 13
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 13 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_13.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_14
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 14
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 14 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_14.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_15
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 15
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 15 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_15.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_16
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 16
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 16 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_16.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_17
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 17
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 17 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_17.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_18
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 18
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 18 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_18.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_19
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 19
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 19 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_19.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_1.echelon_20
-    libelle: Agents payés à l'heure, catégorie IV-1, échelon 20
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-1, échelon 20 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_1/echelon_20.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_0
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 0
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 0 (confirmation)
-      : salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_0.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_1
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 1
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 1 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_1.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_2
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 2
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 2 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_2.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_3
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 3
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 3 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_3.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_4
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 4
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 4 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_4.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_5
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 5
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 5 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_5.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_6
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 6
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 6 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_6.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_7
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 7
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 7 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_7.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_8
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 8
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 8 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_8.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_9
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 9
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 9 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_9.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_10
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 10
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 10 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_10.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_11
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 11
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 11 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_11.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_12
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 12
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 12 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_12.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_13
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 13
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 13 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_13.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_14
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 14
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 14 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_14.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_15
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 15
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 15 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_15.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_16
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 16
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 16 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_16.yaml
-    debut: '1994-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 30
-    valeurs: 30
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_17
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 17
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 17 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_17.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_18
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 18
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 18 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_18.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_19
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 19
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 19 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_19.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
-  - cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_20
-    libelle: Agents payés à l'heure, catégorie IV-2, échelon 20
-    grandeur: Salaire de base
-    unite: dinars par heure
-    description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 20 :
-      salaire horaire de base'
-    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_20.yaml
-    debut: '1999-05-01'
-    derniere_valeur: '2026-01-01'
-    dates: 25
-    valeurs: 25
-    sans_valeur: 0
+    lignes: 7
+    colonnes: 21
+    cases: 147
+    formes:
+    - depuis: '1994-05-01'
+      jusqu_a: '1998-05-01'
+      lignes: 7
+      colonnes: 17
+      cases: 119
+    - depuis: '1999-05-01'
+      jusqu_a: '2026-01-01'
+      lignes: 7
+      colonnes: 21
+      cases: 147
+    dates: 30
+    debut: '1994-05-01'
+    fin: '2026-01-01'
+    cloture: null
+    valeurs: 4270
+    cases_vides: 0
+    dates_cases_vides: []
+    lignes_closes: 0
+    hors_rang: []
+    bas:
+      cle: salaire_base.agents_payes_a_l_heure.categorie_1.echelon_0
+      libelle: Agents payés à l'heure, catégorie I, échelon 0
+      grandeur: Salaire de base
+      unite: dinars par heure
+      description: 'Textile - agents payés à l''heure - catégorie I, échelon 0 (confirmation)
+        : salaire horaire de base'
+      parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_1/echelon_0.yaml
+      debut: '1994-05-01'
+      derniere_valeur: '2026-01-01'
+      dates: 30
+      valeurs: 30
+      sans_valeur: 0
+    haut:
+      cle: salaire_base.agents_payes_a_l_heure.categorie_4_2.echelon_20
+      libelle: Agents payés à l'heure, catégorie IV-2, échelon 20
+      grandeur: Salaire de base
+      unite: dinars par heure
+      description: 'Textile - agents payés à l''heure - catégorie IV-2, échelon 20
+        : salaire horaire de base'
+      parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure/categorie_4_2/echelon_20.yaml
+      debut: '1999-05-01'
+      derniere_valeur: '2026-01-01'
+      dates: 25
+      valeurs: 25
+      sans_valeur: 0
+    tracee: true
+    motif: courante
+    serie: cc-grille-textile-salaire-base-agents-payes-a-l-heure
+  - cle: salaire_base.agents_payes_au_mois
+    libelle: Agents payés au mois
+    grandeur: Salaire de base
+    unite: dinars par mois
+    parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois
+    lignes: 18
+    colonnes: 21
+    cases: 378
+    formes:
+    - depuis: '1994-05-01'
+      jusqu_a: '1998-05-01'
+      lignes: 18
+      colonnes: 17
+      cases: 306
+    - depuis: '1999-05-01'
+      jusqu_a: '2026-01-01'
+      lignes: 18
+      colonnes: 21
+      cases: 378
+    dates: 30
+    debut: '1994-05-01'
+    fin: '2026-01-01'
+    cloture: null
+    valeurs: 10853
+    cases_vides: 127
+    dates_cases_vides:
+    - '1994-05-01'
+    - '1999-05-01'
+    - '2000-05-01'
+    - '2002-05-01'
+    - '2003-05-01'
+    - '2004-05-01'
+    lignes_closes: 0
+    hors_rang:
+    - Stage
+    bas:
+      cle: salaire_base.agents_payes_au_mois.categorie_1a.echelon_1
+      libelle: Agents payés au mois, catégorie 1A, échelon 1
+      grandeur: Salaire de base
+      unite: dinars par mois
+      description: 'Textile - agents payés au mois - catégorie 1A, échelon 1 (confirmation)
+        : salaire mensuel de base'
+      parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_1a/echelon_1.yaml
+      debut: '1994-05-01'
+      derniere_valeur: '2026-01-01'
+      dates: 30
+      valeurs: 30
+      sans_valeur: 0
+    haut:
+      cle: salaire_base.agents_payes_au_mois.categorie_17.echelon_20
+      libelle: Agents payés au mois, catégorie 17, échelon 20
+      grandeur: Salaire de base
+      unite: dinars par mois
+      description: 'Textile - agents payés au mois - catégorie 17, échelon 20 : salaire
+        mensuel de base'
+      parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_17/echelon_20.yaml
+      debut: '1999-05-01'
+      derniere_valeur: '2026-01-01'
+      dates: 25
+      valeurs: 25
+      sans_valeur: 0
+    tracee: true
+    motif: courante
+    serie: cc-grille-textile-salaire-base-agents-payes-au-mois
